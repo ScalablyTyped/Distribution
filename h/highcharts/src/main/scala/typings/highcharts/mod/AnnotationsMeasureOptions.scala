@@ -2,18 +2,16 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsMeasureOptions extends StObject {
   
-  var controlPointOptions: js.UndefOr[AnnotationsMeasureControlPointOptions] = js.native
+  var controlPointOptions: js.UndefOr[AnnotationsMeasureControlPointOptions] = js.undefined
   
   /**
     * (Highstock) Additional options for an annotation with the type.
     */
-  var typeOptions: js.UndefOr[AnnotationsMeasureTypeOptions] = js.native
+  var typeOptions: js.UndefOr[AnnotationsMeasureTypeOptions] = js.undefined
 }
 object AnnotationsMeasureOptions {
   

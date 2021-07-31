@@ -12,7 +12,7 @@ fs.readdir with sync, async, and streaming APIs + filtering, recursion, absolute
 | Keywords           | fs, readdir, stream, event, recursive, deep, filter, absolute |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 247924282 |
+| # downloads        | 293224003 |
 | # stars            | 0 |
 
 ## Links

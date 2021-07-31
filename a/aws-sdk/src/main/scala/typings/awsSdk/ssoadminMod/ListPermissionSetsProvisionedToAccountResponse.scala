@@ -2,21 +2,19 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPermissionSetsProvisionedToAccountResponse extends StObject {
   
   /**
     * The pagination token for the list API. Initially the value is null. Use the output of previous API calls to make subsequent calls.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * Defines the level of access that an AWS account has.
     */
-  var PermissionSets: js.UndefOr[PermissionSetList] = js.native
+  var PermissionSets: js.UndefOr[PermissionSetList] = js.undefined
 }
 object ListPermissionSetsProvisionedToAccountResponse {
   

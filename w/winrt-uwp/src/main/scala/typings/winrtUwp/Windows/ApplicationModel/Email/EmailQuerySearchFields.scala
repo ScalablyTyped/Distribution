@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object EmailQuerySearchFields extends StObject {
   
   /** Search by all searchable fields. */
   @js.native
-  sealed trait all extends EmailQuerySearchFields
+  sealed trait all
+    extends StObject
+       with EmailQuerySearchFields
   
   /** No search field defined. */
   @js.native
-  sealed trait none extends EmailQuerySearchFields
+  sealed trait none
+    extends StObject
+       with EmailQuerySearchFields
   
   /** Search by preview text field. */
   @js.native
-  sealed trait preview extends EmailQuerySearchFields
+  sealed trait preview
+    extends StObject
+       with EmailQuerySearchFields
   
   /** Search by members of the recipient list. */
   @js.native
-  sealed trait recipients extends EmailQuerySearchFields
+  sealed trait recipients
+    extends StObject
+       with EmailQuerySearchFields
   
   /** Search by sender field. */
   @js.native
-  sealed trait sender extends EmailQuerySearchFields
+  sealed trait sender
+    extends StObject
+       with EmailQuerySearchFields
   
   /** Search by subject field. */
   @js.native
-  sealed trait subject extends EmailQuerySearchFields
+  sealed trait subject
+    extends StObject
+       with EmailQuerySearchFields
 }

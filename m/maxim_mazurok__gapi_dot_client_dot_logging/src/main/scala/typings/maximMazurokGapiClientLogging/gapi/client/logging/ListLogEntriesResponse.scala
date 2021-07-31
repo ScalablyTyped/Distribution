@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLogEntriesResponse extends StObject {
   
   /** A list of log entries. If entries is empty, nextPageToken may still be returned, indicating that more entries may exist. See nextPageToken for more information. */
-  var entries: js.UndefOr[js.Array[LogEntry]] = js.native
+  var entries: js.UndefOr[js.Array[LogEntry]] = js.undefined
   
   /**
     * If there might be more results than those appearing in this response, then nextPageToken is included. To get the next set of results, call this method again using the value of
@@ -17,7 +15,7 @@ trait ListLogEntriesResponse extends StObject {
     * search all the possible log entries. Retry the method with this value for page_token to continue the search. Alternatively, consider speeding up the search by changing your filter
     * to specify a single log name or resource type, or to narrow the time range of the search.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListLogEntriesResponse {
   

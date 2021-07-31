@@ -2,66 +2,64 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficMirrorFilterRule extends StObject {
   
   /**
     * The description of the Traffic Mirror rule.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The destination CIDR block assigned to the Traffic Mirror rule.
     */
-  var DestinationCidrBlock: js.UndefOr[String] = js.native
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The destination port range assigned to the Traffic Mirror rule.
     */
-  var DestinationPortRange: js.UndefOr[TrafficMirrorPortRange] = js.native
+  var DestinationPortRange: js.UndefOr[TrafficMirrorPortRange] = js.undefined
   
   /**
     * The protocol assigned to the Traffic Mirror rule.
     */
-  var Protocol: js.UndefOr[Integer] = js.native
+  var Protocol: js.UndefOr[Integer] = js.undefined
   
   /**
     * The action assigned to the Traffic Mirror rule.
     */
-  var RuleAction: js.UndefOr[TrafficMirrorRuleAction] = js.native
+  var RuleAction: js.UndefOr[TrafficMirrorRuleAction] = js.undefined
   
   /**
     * The rule number of the Traffic Mirror rule.
     */
-  var RuleNumber: js.UndefOr[Integer] = js.native
+  var RuleNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * The source CIDR block assigned to the Traffic Mirror rule.
     */
-  var SourceCidrBlock: js.UndefOr[String] = js.native
+  var SourceCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The source port range assigned to the Traffic Mirror rule.
     */
-  var SourcePortRange: js.UndefOr[TrafficMirrorPortRange] = js.native
+  var SourcePortRange: js.UndefOr[TrafficMirrorPortRange] = js.undefined
   
   /**
     * The traffic direction assigned to the Traffic Mirror rule.
     */
-  var TrafficDirection: js.UndefOr[typings.awsSdk.ec2Mod.TrafficDirection] = js.native
+  var TrafficDirection: js.UndefOr[typings.awsSdk.ec2Mod.TrafficDirection] = js.undefined
   
   /**
     * The ID of the Traffic Mirror filter that the rule is associated with.
     */
-  var TrafficMirrorFilterId: js.UndefOr[String] = js.native
+  var TrafficMirrorFilterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Traffic Mirror rule.
     */
-  var TrafficMirrorFilterRuleId: js.UndefOr[String] = js.native
+  var TrafficMirrorFilterRuleId: js.UndefOr[String] = js.undefined
 }
 object TrafficMirrorFilterRule {
   

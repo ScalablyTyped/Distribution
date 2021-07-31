@@ -2,14 +2,12 @@ package typings.hlsParser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<hls-parser.hls-parser.Options> */
-@js.native
 trait PartialOptions extends StObject {
   
-  var strictMode: js.UndefOr[Boolean] = js.native
+  var strictMode: js.UndefOr[Boolean] = js.undefined
 }
 object PartialOptions {
   

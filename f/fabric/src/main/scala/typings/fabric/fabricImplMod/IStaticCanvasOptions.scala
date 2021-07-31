@@ -4,24 +4,22 @@ import typings.fabric.anon.Tl
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStaticCanvasOptions extends StObject {
   
   /**
     * Indicates whether the browser can be scrolled when using a touchscreen and dragging on the canvas
     * @type Boolean
     */
-  var allowTouchScrolling: js.UndefOr[Boolean] = js.native
+  var allowTouchScrolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Background color of canvas instance.
     * Should be set via {@link fabric.StaticCanvas#setBackgroundColor}.
     * @type {(String|fabric.Pattern)}
     */
-  var backgroundColor: js.UndefOr[String | Pattern] = js.native
+  var backgroundColor: js.UndefOr[String | Pattern] = js.undefined
   
   /**
     * Background image of canvas instance.
@@ -34,14 +32,14 @@ trait IStaticCanvasOptions extends StObject {
     * vale. As an alternative you can disable image objectCaching
     * @type fabric.Image
     */
-  var backgroundImage: js.UndefOr[Image | String] = js.native
+  var backgroundImage: js.UndefOr[Image | String] = js.undefined
   
   /**
     * if set to false background image is not affected by viewport transform
     * @since 1.6.3
     * @type Boolean
     */
-  var backgroundVpt: js.UndefOr[Boolean] = js.native
+  var backgroundVpt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a fabricObject that, without stroke define a clipping area with their shape. filled in black
@@ -50,7 +48,7 @@ trait IStaticCanvasOptions extends StObject {
     * clipPath will clip away controls, if you do not want this to happen use controlsAboveOverlay = true
     * @type fabric.Object
     */
-  var clipPath: js.UndefOr[Object] = js.native
+  var clipPath: js.UndefOr[Object] = js.undefined
   
   /**
     * Function that determines clipping of entire canvas area
@@ -61,31 +59,31 @@ trait IStaticCanvasOptions extends StObject {
     * @deprecated since 2.0.0
     * @type Function
     */
-  var clipTo: js.UndefOr[js.Function1[/* context */ CanvasRenderingContext2D, Unit]] = js.native
+  var clipTo: js.UndefOr[js.Function1[/* context */ CanvasRenderingContext2D, Unit]] = js.undefined
   
   /**
     * Indicates whether object controls (borders/controls) are rendered above overlay image
     * @type Boolean
     */
-  var controlsAboveOverlay: js.UndefOr[Boolean] = js.native
+  var controlsAboveOverlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, canvas is scaled by devicePixelRatio for better rendering on retina screens
     * @type Boolean
     */
-  var enableRetinaScaling: js.UndefOr[Boolean] = js.native
+  var enableRetinaScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether this canvas will use image smoothing, this is on by default in browsers
     */
-  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether toObject/toDatalessObject should include default values
     * if set to false, takes precedence over the object value.
     * @type Boolean
     */
-  var includeDefaultValues: js.UndefOr[Boolean] = js.native
+  var includeDefaultValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Overlay color of canvas instance.
@@ -93,7 +91,7 @@ trait IStaticCanvasOptions extends StObject {
     * @since 1.3.9
     * @type {(String|fabric.Pattern)}
     */
-  var overlayColor: js.UndefOr[String | Pattern] = js.native
+  var overlayColor: js.UndefOr[String | Pattern] = js.undefined
   
   /**
     * Overlay image of canvas instance.
@@ -106,14 +104,14 @@ trait IStaticCanvasOptions extends StObject {
     * vale. As an alternative you can disable image objectCaching
     * @type fabric.Image
     */
-  var overlayImage: js.UndefOr[Image] = js.native
+  var overlayImage: js.UndefOr[Image] = js.undefined
   
   /**
     * if set to false overlay image is not affected by viewport transform
     * @since 1.6.3
     * @type Boolean
     */
-  var overlayVpt: js.UndefOr[Boolean] = js.native
+  var overlayVpt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether {@link fabric.Collection.add}, {@link fabric.Collection.insertAt} and {@link fabric.Collection.remove},
@@ -124,7 +122,7 @@ trait IStaticCanvasOptions extends StObject {
     * Left default to true to do not break documentation and old app, fiddles.
     * @type Boolean
     */
-  var renderOnAddRemove: js.UndefOr[Boolean] = js.native
+  var renderOnAddRemove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Based on vptCoords and object.aCoords, skip rendering of objects that
@@ -135,25 +133,25 @@ trait IStaticCanvasOptions extends StObject {
     * @memberOf fabric.StaticCanvas.prototype
     * @type Boolean
     */
-  var skipOffscreen: js.UndefOr[Boolean] = js.native
+  var skipOffscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether objects' state should be saved
     * @type Boolean
     */
-  var stateful: js.UndefOr[Boolean] = js.native
+  var stateful: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, getSvgTransform() will apply the StaticCanvas.viewportTransform to the SVG transformation. When true,
     * a zoomed canvas will then produce zoomed SVG output.
     * @type Boolean
     */
-  var svgViewportTransformation: js.UndefOr[Boolean] = js.native
+  var svgViewportTransformation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The transformation (in the format of Canvas transform) which focuses the viewport
     */
-  var viewportTransform: js.UndefOr[js.Array[Double]] = js.native
+  var viewportTransform: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Describe canvas element extension over design
@@ -164,7 +162,7 @@ trait IStaticCanvasOptions extends StObject {
     * The coordinates get updated with @method calcViewportBoundaries.
     * @memberOf fabric.StaticCanvas.prototype
     */
-  var vptCoords: js.UndefOr[Tl] = js.native
+  var vptCoords: js.UndefOr[Tl] = js.undefined
 }
 object IStaticCanvasOptions {
   

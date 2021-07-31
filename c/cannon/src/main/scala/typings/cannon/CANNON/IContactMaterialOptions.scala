@@ -2,23 +2,21 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContactMaterialOptions extends StObject {
   
-  var contactEquationRelaxation: js.UndefOr[Double] = js.native
+  var contactEquationRelaxation: js.UndefOr[Double] = js.undefined
   
-  var contactEquationStiffness: js.UndefOr[Double] = js.native
+  var contactEquationStiffness: js.UndefOr[Double] = js.undefined
   
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
-  var frictionEquationRelaxation: js.UndefOr[Double] = js.native
+  var frictionEquationRelaxation: js.UndefOr[Double] = js.undefined
   
-  var frictionEquationStiffness: js.UndefOr[Double] = js.native
+  var frictionEquationStiffness: js.UndefOr[Double] = js.undefined
   
-  var restitution: js.UndefOr[Double] = js.native
+  var restitution: js.UndefOr[Double] = js.undefined
 }
 object IContactMaterialOptions {
   

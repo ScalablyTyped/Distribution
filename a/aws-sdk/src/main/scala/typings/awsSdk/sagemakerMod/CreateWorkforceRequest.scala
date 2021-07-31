@@ -2,33 +2,31 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorkforceRequest extends StObject {
   
   /**
     * Use this parameter to configure an Amazon Cognito private workforce. A single Cognito workforce is created using and corresponds to a single  Amazon Cognito user pool. Do not use OidcConfig if you specify values for CognitoConfig.
     */
-  var CognitoConfig: js.UndefOr[typings.awsSdk.sagemakerMod.CognitoConfig] = js.native
+  var CognitoConfig: js.UndefOr[typings.awsSdk.sagemakerMod.CognitoConfig] = js.undefined
   
   /**
     * Use this parameter to configure a private workforce using your own OIDC Identity Provider. Do not use CognitoConfig if you specify values for OidcConfig.
     */
-  var OidcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.OidcConfig] = js.native
+  var OidcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.OidcConfig] = js.undefined
   
-  var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.native
+  var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.undefined
   
   /**
     * An array of key-value pairs that contain metadata to help you categorize and organize our workforce. Each tag consists of a key and a value, both of which you define.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The name of the private workforce.
     */
-  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
+  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
 }
 object CreateWorkforceRequest {
   

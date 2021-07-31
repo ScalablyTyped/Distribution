@@ -14,10 +14,13 @@ import typings.ionic.definitionsMod.SSHKey
 import typings.ionic.httpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libSshMod {
+  
+  @JSImport("ionic/lib/ssh", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/ssh", "ERROR_SSH_INVALID_PRIVKEY")
   @js.native
@@ -43,6 +46,9 @@ object libSshMod {
     
     var client: IClient = js.native
     
+    /* CompleteClass */
+    override def create(details: SSHKeyCreateDetails): js.Promise[SSHKey] = js.native
+    
     def load(id: String): js.Promise[SSHKey] = js.native
     
     def paginate(args: PartialPaginateArgsResponMax): IPaginator[Response[js.Array[SSHKey]], PaginatorState] = js.native
@@ -52,33 +58,27 @@ object libSshMod {
     var user: IdNumber = js.native
   }
   
-  @JSImport("ionic/lib/ssh", "getGeneratedPrivateKeyPath")
-  @js.native
-  def getGeneratedPrivateKeyPath(): js.Promise[String] = js.native
-  @JSImport("ionic/lib/ssh", "getGeneratedPrivateKeyPath")
-  @js.native
-  def getGeneratedPrivateKeyPath(userId: Double): js.Promise[String] = js.native
+  @scala.inline
+  def getGeneratedPrivateKeyPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedPrivateKeyPath")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getGeneratedPrivateKeyPath(userId: Double): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneratedPrivateKeyPath")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("ionic/lib/ssh", "parsePublicKey")
-  @js.native
-  def parsePublicKey(pubkey: String): js.Tuple4[String, String, String, String] = js.native
+  @scala.inline
+  def parsePublicKey(pubkey: String): js.Tuple4[String, String, String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePublicKey")(pubkey.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[String, String, String, String]]
   
-  @JSImport("ionic/lib/ssh", "parsePublicKeyFile")
-  @js.native
-  def parsePublicKeyFile(pubkeyPath: String): js.Promise[js.Tuple4[String, String, String, String]] = js.native
+  @scala.inline
+  def parsePublicKeyFile(pubkeyPath: String): js.Promise[js.Tuple4[String, String, String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePublicKeyFile")(pubkeyPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple4[String, String, String, String]]]
   
-  @JSImport("ionic/lib/ssh", "validatePrivateKey")
-  @js.native
-  def validatePrivateKey(keyPath: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def validatePrivateKey(keyPath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePrivateKey")(keyPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait SSHKeyClientDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
     
-    val token: String = js.native
+    val token: String
     
-    val user: IdNumber = js.native
+    val user: IdNumber
   }
   object SSHKeyClientDeps {
     
@@ -102,10 +102,9 @@ object libSshMod {
     }
   }
   
-  @js.native
   trait SSHKeyCreateDetails extends StObject {
     
-    var pubkey: String = js.native
+    var pubkey: String
   }
   object SSHKeyCreateDetails {
     

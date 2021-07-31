@@ -5,33 +5,31 @@ import typings.nodeForge.mod.md.MessageDigest
 import typings.nodeForge.mod.pki.Certificate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
-  var cipherSuite: CipherSuite | Null = js.native
+  var cipherSuite: CipherSuite | Null
   
-  var clientCertificate: Certificate | Null = js.native
+  var clientCertificate: Certificate | Null
   
-  var compressionMethod: CompressionMethod | Null = js.native
+  var compressionMethod: CompressionMethod | Null
   
-  var extensions: StringDictionary[js.Object] = js.native
+  var extensions: StringDictionary[js.Object]
   
-  var md5: MessageDigest = js.native
+  var md5: MessageDigest
   
-  var serverCertificate: Certificate | Null = js.native
+  var serverCertificate: Certificate | Null
   
-  var sha1: MessageDigest = js.native
+  var sha1: MessageDigest
   
-  var version: ProtocolVersion | Null = js.native
+  var version: ProtocolVersion | Null
 }
 object Session {
   
   @scala.inline
   def apply(extensions: StringDictionary[js.Object], md5: MessageDigest, sha1: MessageDigest): Session = {
-    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any], cipherSuite = null, clientCertificate = null, compressionMethod = null, serverCertificate = null, version = null)
     __obj.asInstanceOf[Session]
   }
   

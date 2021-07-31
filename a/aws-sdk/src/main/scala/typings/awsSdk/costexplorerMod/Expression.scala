@@ -2,41 +2,39 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expression extends StObject {
   
   /**
     * Return results that match both Dimension objects.
     */
-  var And: js.UndefOr[Expressions] = js.native
+  var And: js.UndefOr[Expressions] = js.undefined
   
   /**
     * The filter based on CostCategory values.
     */
-  var CostCategories: js.UndefOr[CostCategoryValues] = js.native
+  var CostCategories: js.UndefOr[CostCategoryValues] = js.undefined
   
   /**
     * The specific Dimension to use for Expression.
     */
-  var Dimensions: js.UndefOr[DimensionValues] = js.native
+  var Dimensions: js.UndefOr[DimensionValues] = js.undefined
   
   /**
     * Return results that don't match a Dimension object.
     */
-  var Not: js.UndefOr[Expression] = js.native
+  var Not: js.UndefOr[Expression] = js.undefined
   
   /**
     * Return results that match either Dimension object.
     */
-  var Or: js.UndefOr[Expressions] = js.native
+  var Or: js.UndefOr[Expressions] = js.undefined
   
   /**
     * The specific Tag to use for Expression.
     */
-  var Tags: js.UndefOr[TagValues] = js.native
+  var Tags: js.UndefOr[TagValues] = js.undefined
 }
 object Expression {
   

@@ -2,41 +2,41 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base type for all the objects included in the client-side object model.
   */
-@js.native
-trait ASPxClientControl extends ASPxClientControlBase {
+trait ASPxClientControl
+  extends StObject
+     with ASPxClientControlBase {
   
   /**
     * Modifies the control's size against the control's container.
     */
-  def AdjustControl(): Unit = js.native
+  def AdjustControl(): Unit
   
   /**
     * Returns the control's height.
     */
-  def GetHeight(): Double = js.native
+  def GetHeight(): Double
   
   /**
     * Returns the control's width.
     */
-  def GetWidth(): Double = js.native
+  def GetWidth(): Double
   
   /**
     * Specifies the control's height.  Note that this method is not in effect for some controls.
     * @param height An integer value that specifies the control's height.
     */
-  def SetHeight(height: Double): Unit = js.native
+  def SetHeight(height: Double): Unit
   
   /**
     * Specifies the control's width in pixels.
     * @param width An integer value that specifies the control's width, in pixels.
     */
-  def SetWidth(width: Double): Unit = js.native
+  def SetWidth(width: Double): Unit
 }
 object ASPxClientControl {
   

@@ -5,21 +5,19 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.single_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AscendingText extends StObject {
   
-  var ascendingText: js.UndefOr[String] = js.native
+  var ascendingText: js.UndefOr[String] = js.undefined
   
-  var clearText: js.UndefOr[String] = js.native
+  var clearText: js.UndefOr[String] = js.undefined
   
-  var descendingText: js.UndefOr[String] = js.native
+  var descendingText: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[multiple | none | single_] = js.native
+  var mode: js.UndefOr[multiple | none | single_] = js.undefined
   
-  var showSortIndexes: js.UndefOr[Boolean] = js.native
+  var showSortIndexes: js.UndefOr[Boolean] = js.undefined
 }
 object AscendingText {
   

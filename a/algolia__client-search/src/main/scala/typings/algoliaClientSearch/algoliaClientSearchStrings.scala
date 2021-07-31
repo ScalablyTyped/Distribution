@@ -7,7 +7,6 @@ import typings.algoliaClientSearch.mod.StrategyType
 import typings.algoliaClientSearch.mod.SynonymType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algoliaClientSearchStrings {
@@ -29,7 +28,8 @@ object algoliaClientSearchStrings {
   
   @js.native
   sealed trait addObject
-    extends ApiKeyACLType
+    extends StObject
+       with ApiKeyACLType
        with BatchActionType
   @scala.inline
   def addObject: addObject = "addObject".asInstanceOf[addObject]
@@ -50,17 +50,23 @@ object algoliaClientSearchStrings {
   def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
-  sealed trait altCorrection1 extends SynonymType
+  sealed trait altCorrection1
+    extends StObject
+       with SynonymType
   @scala.inline
   def altCorrection1: altCorrection1 = "altCorrection1".asInstanceOf[altCorrection1]
   
   @js.native
-  sealed trait altCorrection2 extends SynonymType
+  sealed trait altCorrection2
+    extends StObject
+       with SynonymType
   @scala.inline
   def altCorrection2: altCorrection2 = "altCorrection2".asInstanceOf[altCorrection2]
   
   @js.native
-  sealed trait analytics extends ApiKeyACLType
+  sealed trait analytics
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def analytics: analytics = "analytics".asInstanceOf[analytics]
   
@@ -70,12 +76,16 @@ object algoliaClientSearchStrings {
   def attribute: attribute = "attribute".asInstanceOf[attribute]
   
   @js.native
-  sealed trait browse extends ApiKeyACLType
+  sealed trait browse
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def browse: browse = "browse".asInstanceOf[browse]
   
   @js.native
-  sealed trait clear extends BatchActionType
+  sealed trait clear
+    extends StObject
+       with BatchActionType
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
@@ -90,24 +100,31 @@ object algoliaClientSearchStrings {
   def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait delete extends BatchActionType
+  sealed trait delete
+    extends StObject
+       with BatchActionType
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait deleteIndex extends ApiKeyACLType
+  sealed trait deleteIndex
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def deleteIndex: deleteIndex = "deleteIndex".asInstanceOf[deleteIndex]
   
   @js.native
   sealed trait deleteObject
-    extends ApiKeyACLType
+    extends StObject
+       with ApiKeyACLType
        with BatchActionType
   @scala.inline
   def deleteObject: deleteObject = "deleteObject".asInstanceOf[deleteObject]
   
   @js.native
-  sealed trait editSettings extends ApiKeyACLType
+  sealed trait editSettings
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def editSettings: editSettings = "editSettings".asInstanceOf[editSettings]
   
@@ -152,12 +169,16 @@ object algoliaClientSearchStrings {
   def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
   
   @js.native
-  sealed trait listIndexes extends ApiKeyACLType
+  sealed trait listIndexes
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def listIndexes: listIndexes = "listIndexes".asInstanceOf[listIndexes]
   
   @js.native
-  sealed trait logs extends ApiKeyACLType
+  sealed trait logs
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def logs: logs = "logs".asInstanceOf[logs]
   
@@ -172,12 +193,16 @@ object algoliaClientSearchStrings {
   def multiWordsSynonym: multiWordsSynonym = "multiWordsSynonym".asInstanceOf[multiWordsSynonym]
   
   @js.native
-  sealed trait none extends StrategyType
+  sealed trait none
+    extends StObject
+       with StrategyType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait oneWaySynonym extends SynonymType
+  sealed trait oneWaySynonym
+    extends StObject
+       with SynonymType
   @scala.inline
   def oneWaySynonym: oneWaySynonym = "oneWaySynonym".asInstanceOf[oneWaySynonym]
   
@@ -187,17 +212,23 @@ object algoliaClientSearchStrings {
   def partial: partial = "partial".asInstanceOf[partial]
   
   @js.native
-  sealed trait partialUpdateObject extends BatchActionType
+  sealed trait partialUpdateObject
+    extends StObject
+       with BatchActionType
   @scala.inline
   def partialUpdateObject: partialUpdateObject = "partialUpdateObject".asInstanceOf[partialUpdateObject]
   
   @js.native
-  sealed trait partialUpdateObjectNoCreate extends BatchActionType
+  sealed trait partialUpdateObjectNoCreate
+    extends StObject
+       with BatchActionType
   @scala.inline
   def partialUpdateObjectNoCreate: partialUpdateObjectNoCreate = "partialUpdateObjectNoCreate".asInstanceOf[partialUpdateObjectNoCreate]
   
   @js.native
-  sealed trait placeholder extends SynonymType
+  sealed trait placeholder
+    extends StObject
+       with SynonymType
   @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
@@ -217,7 +248,9 @@ object algoliaClientSearchStrings {
   def prefixNone: prefixNone = "prefixNone".asInstanceOf[prefixNone]
   
   @js.native
-  sealed trait recommendation extends ApiKeyACLType
+  sealed trait recommendation
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def recommendation: recommendation = "recommendation".asInstanceOf[recommendation]
   
@@ -232,23 +265,30 @@ object algoliaClientSearchStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait rules extends ScopeType
+  sealed trait rules
+    extends StObject
+       with ScopeType
   @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
   
   @js.native
-  sealed trait search extends ApiKeyACLType
+  sealed trait search
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait seeUnretrievableAttributes extends ApiKeyACLType
+  sealed trait seeUnretrievableAttributes
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def seeUnretrievableAttributes: seeUnretrievableAttributes = "seeUnretrievableAttributes".asInstanceOf[seeUnretrievableAttributes]
   
   @js.native
   sealed trait settings
-    extends ApiKeyACLType
+    extends StObject
+       with ApiKeyACLType
        with ScopeType
   @scala.inline
   def settings: settings = "settings".asInstanceOf[settings]
@@ -264,7 +304,9 @@ object algoliaClientSearchStrings {
   def startsWith: startsWith = "startsWith".asInstanceOf[startsWith]
   
   @js.native
-  sealed trait stopIfEnoughMatches extends StrategyType
+  sealed trait stopIfEnoughMatches
+    extends StObject
+       with StrategyType
   @scala.inline
   def stopIfEnoughMatches: stopIfEnoughMatches = "stopIfEnoughMatches".asInstanceOf[stopIfEnoughMatches]
   
@@ -274,22 +316,30 @@ object algoliaClientSearchStrings {
   def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait synonym extends SynonymType
+  sealed trait synonym
+    extends StObject
+       with SynonymType
   @scala.inline
   def synonym: synonym = "synonym".asInstanceOf[synonym]
   
   @js.native
-  sealed trait synonyms extends ScopeType
+  sealed trait synonyms
+    extends StObject
+       with ScopeType
   @scala.inline
   def synonyms: synonyms = "synonyms".asInstanceOf[synonyms]
   
   @js.native
-  sealed trait updateObject extends BatchActionType
+  sealed trait updateObject
+    extends StObject
+       with BatchActionType
   @scala.inline
   def updateObject: updateObject = "updateObject".asInstanceOf[updateObject]
   
   @js.native
-  sealed trait usage extends ApiKeyACLType
+  sealed trait usage
+    extends StObject
+       with ApiKeyACLType
   @scala.inline
   def usage: usage = "usage".asInstanceOf[usage]
   

@@ -2,19 +2,17 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Update job request.
   */
-@js.native
 trait SchemaUpdateJobRequest extends StObject {
   
   /**
     * Required.  The Job to be updated.
     */
-  var job: js.UndefOr[SchemaJob] = js.native
+  var job: js.UndefOr[SchemaJob] = js.undefined
   
   /**
     * Optional but strongly recommended to be provided for the best service
@@ -23,7 +21,7 @@ trait SchemaUpdateJobRequest extends StObject {
     * restrict the fields that are updated. Only top level fields of Job are
     * supported.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateJobRequest {
   

@@ -5,14 +5,15 @@ import typings.node.NodeJS.Timeout
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobxCookieMod {
   
   @JSImport("mobx-cookie/dist-types/mobx-cookie", JSImport.Default)
   @js.native
-  class default protected () extends MobxCookie {
+  class default protected ()
+    extends StObject
+       with MobxCookie {
     def this(name: String) = this()
   }
   

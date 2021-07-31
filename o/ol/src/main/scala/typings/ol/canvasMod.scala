@@ -13,18 +13,20 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasMod {
+  
+  @JSImport("ol/render/canvas", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/render/canvas", "checkedFonts")
   @js.native
   val checkedFonts: default = js.native
   
-  @JSImport("ol/render/canvas", "createTransformString")
-  @js.native
-  def createTransformString(transform: Transform): String = js.native
+  @scala.inline
+  def createTransformString(transform: Transform): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformString")(transform.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ol/render/canvas", "defaultFillStyle")
   @js.native
@@ -74,8 +76,7 @@ object canvasMod {
   @js.native
   val defaultTextBaseline: String = js.native
   
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
@@ -88,9 +89,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
@@ -103,9 +103,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
@@ -118,9 +117,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Null,
@@ -133,9 +131,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
@@ -148,9 +145,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
@@ -163,9 +159,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
@@ -178,9 +173,8 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
-  @JSImport("ol/render/canvas", "drawImageOrLabel")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawImageOrLabel(
     context: CanvasRenderingContext2D,
     transform: Transform,
@@ -193,44 +187,37 @@ object canvasMod {
     x: Double,
     y: Double,
     scale: Size
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawImageOrLabel")(context.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], labelOrImage.asInstanceOf[js.Any], originX.asInstanceOf[js.Any], originY.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ol/render/canvas", "labelCache")
   @js.native
   val labelCache: js.Any = js.native
   
-  @JSImport("ol/render/canvas", "measureAndCacheTextWidth")
-  @js.native
-  def measureAndCacheTextWidth(font: String, text: String, cache: StringDictionary[Double]): Double = js.native
+  @scala.inline
+  def measureAndCacheTextWidth(font: String, text: String, cache: StringDictionary[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndCacheTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/render/canvas", "measureTextHeight")
-  @js.native
-  def measureTextHeight(font: String): Size = js.native
+  @scala.inline
+  def measureTextHeight(font: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("measureTextHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Size]
   
-  @JSImport("ol/render/canvas", "measureTextWidth")
-  @js.native
-  def measureTextWidth(font: String, text: String): Double = js.native
+  @scala.inline
+  def measureTextWidth(font: String, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidth")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/render/canvas", "measureTextWidths")
-  @js.native
-  def measureTextWidths(font: String, lines: js.Array[String], widths: js.Array[Double]): Double = js.native
+  @scala.inline
+  def measureTextWidths(font: String, lines: js.Array[String], widths: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("measureTextWidths")(font.asInstanceOf[js.Any], lines.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/render/canvas", "registerFont")
-  @js.native
-  def registerFont(fontSpec: String): Unit = js.native
+  @scala.inline
+  def registerFont(fontSpec: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")(fontSpec.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ol/render/canvas", "rotateAtOffset")
-  @js.native
-  def rotateAtOffset(context: CanvasRenderingContext2D, rotation: Double, offsetX: Double, offsetY: Double): Unit = js.native
+  @scala.inline
+  def rotateAtOffset(context: CanvasRenderingContext2D, rotation: Double, offsetX: Double, offsetY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAtOffset")(context.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type DeclutterGroup = js.Array[js.Any]
   
   type DeclutterGroups = js.Array[DeclutterGroup]
   
-  @js.native
   trait FillState extends StObject {
     
-    var fillStyle: ColorLike = js.native
+    var fillStyle: ColorLike
   }
   object FillState {
     
@@ -248,42 +235,41 @@ object canvasMod {
     }
   }
   
-  @js.native
   trait FillStrokeState extends StObject {
     
-    var currentFillStyle: js.UndefOr[ColorLike] = js.native
+    var currentFillStyle: js.UndefOr[ColorLike] = js.undefined
     
-    var currentLineCap: js.UndefOr[CanvasLineCap] = js.native
+    var currentLineCap: js.UndefOr[CanvasLineCap] = js.undefined
     
-    var currentLineDash: js.Array[Double] = js.native
+    var currentLineDash: js.Array[Double]
     
-    var currentLineDashOffset: js.UndefOr[Double] = js.native
+    var currentLineDashOffset: js.UndefOr[Double] = js.undefined
     
-    var currentLineJoin: js.UndefOr[CanvasLineJoin] = js.native
+    var currentLineJoin: js.UndefOr[CanvasLineJoin] = js.undefined
     
-    var currentLineWidth: js.UndefOr[Double] = js.native
+    var currentLineWidth: js.UndefOr[Double] = js.undefined
     
-    var currentMiterLimit: js.UndefOr[Double] = js.native
+    var currentMiterLimit: js.UndefOr[Double] = js.undefined
     
-    var currentStrokeStyle: js.UndefOr[ColorLike] = js.native
+    var currentStrokeStyle: js.UndefOr[ColorLike] = js.undefined
     
-    var fillStyle: js.UndefOr[ColorLike] = js.native
+    var fillStyle: js.UndefOr[ColorLike] = js.undefined
     
-    var lastStroke: js.UndefOr[Double] = js.native
+    var lastStroke: js.UndefOr[Double] = js.undefined
     
-    var lineCap: js.UndefOr[CanvasLineCap] = js.native
+    var lineCap: js.UndefOr[CanvasLineCap] = js.undefined
     
-    var lineDash: js.Array[Double] = js.native
+    var lineDash: js.Array[Double]
     
-    var lineDashOffset: js.UndefOr[Double] = js.native
+    var lineDashOffset: js.UndefOr[Double] = js.undefined
     
-    var lineJoin: js.UndefOr[CanvasLineJoin] = js.native
+    var lineJoin: js.UndefOr[CanvasLineJoin] = js.undefined
     
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
-    var miterLimit: js.UndefOr[Double] = js.native
+    var miterLimit: js.UndefOr[Double] = js.undefined
     
-    var strokeStyle: js.UndefOr[ColorLike] = js.native
+    var strokeStyle: js.UndefOr[ColorLike] = js.undefined
   }
   object FillStrokeState {
     
@@ -400,14 +386,13 @@ object canvasMod {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var contextInstructions: js.Array[String | Double] = js.native
+    var contextInstructions: js.Array[String | Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Label {
     
@@ -434,22 +419,21 @@ object canvasMod {
     }
   }
   
-  @js.native
   trait StrokeState extends StObject {
     
-    var lineCap: CanvasLineCap = js.native
+    var lineCap: CanvasLineCap
     
-    var lineDash: js.Array[Double] = js.native
+    var lineDash: js.Array[Double]
     
-    var lineDashOffset: Double = js.native
+    var lineDashOffset: Double
     
-    var lineJoin: CanvasLineJoin = js.native
+    var lineJoin: CanvasLineJoin
     
-    var lineWidth: Double = js.native
+    var lineWidth: Double
     
-    var miterLimit: Double = js.native
+    var miterLimit: Double
     
-    var strokeStyle: ColorLike = js.native
+    var strokeStyle: ColorLike
   }
   object StrokeState {
     
@@ -496,28 +480,27 @@ object canvasMod {
     }
   }
   
-  @js.native
   trait TextState extends StObject {
     
-    var backgroundFill: js.UndefOr[typings.ol.fillMod.default] = js.native
+    var backgroundFill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
     
-    var backgroundStroke: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var backgroundStroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
     
-    var font: String = js.native
+    var font: String
     
-    var maxAngle: js.UndefOr[Double] = js.native
+    var maxAngle: js.UndefOr[Double] = js.undefined
     
-    var overflow: js.UndefOr[Boolean] = js.native
+    var overflow: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[js.Array[Double]] = js.native
+    var padding: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var scale: js.UndefOr[Size] = js.native
+    var scale: js.UndefOr[Size] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textBaseline: String = js.native
+    var textBaseline: String
   }
   object TextState {
     

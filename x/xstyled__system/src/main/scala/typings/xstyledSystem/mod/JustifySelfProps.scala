@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JustifySelfProps extends StObject {
   
   val justifySelf: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object JustifySelfProps {
   
@@ -28,7 +26,7 @@ object JustifySelfProps {
     @scala.inline
     def setJustifySelf(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any
         ]
     ): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object JustifySelfProps {
     def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
     
     @scala.inline
-    def setJustifySelfVarargs(value: js.Any*): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
+    def setJustifySelfVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any)*
+    ): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
   }
 }

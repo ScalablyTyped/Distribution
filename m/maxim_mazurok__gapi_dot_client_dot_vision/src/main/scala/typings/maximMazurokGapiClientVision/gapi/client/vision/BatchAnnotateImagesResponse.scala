@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAnnotateImagesResponse extends StObject {
   
   /** Individual responses to image annotation requests within the batch. */
-  var responses: js.UndefOr[js.Array[AnnotateImageResponse]] = js.native
+  var responses: js.UndefOr[js.Array[AnnotateImageResponse]] = js.undefined
 }
 object BatchAnnotateImagesResponse {
   

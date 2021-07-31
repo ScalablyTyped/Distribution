@@ -10,9 +10,9 @@ Easy RabbitMQ for node
 | ------------------ | :-------------: |
 | Full name          | jackrabbit |
 | Keywords           | amqp, rabbit, job, jobs, queue, task, resqueue |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 153468 |
+| # downloads        | 167367 |
 | # stars            | 4 |
 
 ## Links

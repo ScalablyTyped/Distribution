@@ -2,51 +2,49 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportSnapshotRecord extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the export snapshot record.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date when the export snapshot record was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * A list of objects describing the destination of the export snapshot record.
     */
-  var destinationInfo: js.UndefOr[DestinationInfo] = js.native
+  var destinationInfo: js.UndefOr[DestinationInfo] = js.undefined
   
   /**
     * The AWS Region and Availability Zone where the export snapshot record is located.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The export snapshot record name.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., ExportSnapshotRecord).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * A list of objects describing the source of the export snapshot record.
     */
-  var sourceInfo: js.UndefOr[ExportSnapshotRecordSourceInfo] = js.native
+  var sourceInfo: js.UndefOr[ExportSnapshotRecordSourceInfo] = js.undefined
   
   /**
     * The state of the export snapshot record.
     */
-  var state: js.UndefOr[RecordState] = js.native
+  var state: js.UndefOr[RecordState] = js.undefined
 }
 object ExportSnapshotRecord {
   

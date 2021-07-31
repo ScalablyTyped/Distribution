@@ -2,23 +2,21 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntelligentTieringFilter extends StObject {
   
   /**
     * A conjunction (logical AND) of predicates, which is used in evaluating a metrics filter. The operator must have at least two predicates, and an object must match all of the predicates in order for the filter to apply.
     */
-  var And: js.UndefOr[IntelligentTieringAndOperator] = js.native
+  var And: js.UndefOr[IntelligentTieringAndOperator] = js.undefined
   
   /**
     * An object key name prefix that identifies the subset of objects to which the rule applies.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
-  var Tag: js.UndefOr[typings.awsSdk.s3Mod.Tag] = js.native
+  var Tag: js.UndefOr[typings.awsSdk.s3Mod.Tag] = js.undefined
 }
 object IntelligentTieringFilter {
   

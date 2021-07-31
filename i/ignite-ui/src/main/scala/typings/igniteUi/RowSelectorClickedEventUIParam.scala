@@ -2,46 +2,44 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowSelectorClickedEventUIParam extends StObject {
   
   /**
     * Gets reference to the fixed row the clicked row selector resides in(if there are fixed columns).
     */
-  var fixedRow: js.UndefOr[String] = js.native
+  var fixedRow: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the grid the RowSelectors are initialized for.
     */
-  var grid: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to RowSelectors.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to the row the clicked row selector resides in.
     */
-  var row: js.UndefOr[String] = js.native
+  var row: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the index of the row the clicked row selector resides in.
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the key of the row the clicked row selector resides in.
     */
-  var rowKey: js.UndefOr[String] = js.native
+  var rowKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the row selector cell.
     */
-  var rowSelector: js.UndefOr[String] = js.native
+  var rowSelector: js.UndefOr[String] = js.undefined
 }
 object RowSelectorClickedEventUIParam {
   

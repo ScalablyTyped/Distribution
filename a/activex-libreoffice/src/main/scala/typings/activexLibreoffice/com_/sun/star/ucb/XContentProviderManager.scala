@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,28 +13,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentProvider
   * @version 1.0
   */
-@js.native
-trait XContentProviderManager extends XInterface {
+trait XContentProviderManager
+  extends StObject
+     with XInterface {
   
   /**
     * deregisters a content provider.
     * @param Provider a content provider to deregister.
     * @param Scheme the URL scheme for the provided contents. More generally, this may not only be a URL scheme, but a URL template (see {@link registerConten
     */
-  def deregisterContentProvider(Provider: XContentProvider, Scheme: String): Unit = js.native
+  def deregisterContentProvider(Provider: XContentProvider, Scheme: String): Unit
   
   /**
     * returns the currently active content provider for a content identifier.
     * @param Identifier a content identifier (i.e., a URL).
     * @returns a content provider, or null.
     */
-  def queryContentProvider(Identifier: String): XContentProvider = js.native
+  def queryContentProvider(Identifier: String): XContentProvider
   
   /**
     * returns a list of information on all registered content providers.
     * @returns a list information on content providers.
     */
-  def queryContentProviders(): SafeArray[ContentProviderInfo] = js.native
+  def queryContentProviders(): SafeArray[ContentProviderInfo]
   
   /**
     * registers a content provider for a specific URL template.
@@ -45,7 +45,7 @@ trait XContentProviderManager extends XInterface {
     * @returns the replaced content provider, if there was one.
     * @see XContentIdentifier
     */
-  def registerContentProvider(Provider: XContentProvider, Scheme: String, ReplaceExisting: Boolean): XContentProvider = js.native
+  def registerContentProvider(Provider: XContentProvider, Scheme: String, ReplaceExisting: Boolean): XContentProvider
 }
 object XContentProviderManager {
   

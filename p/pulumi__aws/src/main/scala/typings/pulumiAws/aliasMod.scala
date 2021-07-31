@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aliasMod {
@@ -55,6 +54,10 @@ object aliasMod {
   /* static members */
   object Alias {
     
+    @JSImport("@pulumi/aws/gamelift/alias", "Alias")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Alias resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,50 +67,44 @@ object aliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/gamelift/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Alias = js.native
-    @JSImport("@pulumi/aws/gamelift/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Alias = js.native
-    @JSImport("@pulumi/aws/gamelift/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AliasState): Alias = js.native
-    @JSImport("@pulumi/aws/gamelift/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AliasState): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
     
     /**
       * Returns true if the given object is an instance of Alias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/gamelift/alias", "Alias.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/alias.Alias */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/alias.Alias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/gamelift/alias.Alias */ Boolean]
   }
   
-  @js.native
   trait AliasArgs extends StObject {
     
     /**
       * Description of the alias.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the alias.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the fleet and/or routing type to use for the alias.
       */
-    val routingStrategy: Input[typings.pulumiAws.inputMod.gamelift.AliasRoutingStrategy] = js.native
+    val routingStrategy: Input[typings.pulumiAws.inputMod.gamelift.AliasRoutingStrategy]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AliasArgs {
     
@@ -143,33 +140,32 @@ object aliasMod {
     }
   }
   
-  @js.native
   trait AliasState extends StObject {
     
     /**
       * Alias ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the alias.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the alias.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the fleet and/or routing type to use for the alias.
       */
-    val routingStrategy: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.AliasRoutingStrategy]] = js.native
+    val routingStrategy: js.UndefOr[Input[typings.pulumiAws.inputMod.gamelift.AliasRoutingStrategy]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AliasState {
     

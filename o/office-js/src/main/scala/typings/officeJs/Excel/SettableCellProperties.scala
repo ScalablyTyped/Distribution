@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait SettableCellProperties extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SettableCellProperties extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var format: js.UndefOr[CellPropertiesFormat] = js.native
+  var format: js.UndefOr[CellPropertiesFormat] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait SettableCellProperties extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var hyperlink: js.UndefOr[RangeHyperlink] = js.native
+  var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait SettableCellProperties extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object SettableCellProperties {
   

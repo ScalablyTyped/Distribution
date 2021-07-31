@@ -2,88 +2,86 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Grid/Grid.GridClassKey>> */
-@js.native
 trait PartialClassNameMapGridCl extends StObject {
   
-  var `align-content-xs-center`: js.UndefOr[String] = js.native
+  var `align-content-xs-center`: js.UndefOr[String] = js.undefined
   
-  var `align-content-xs-flex-end`: js.UndefOr[String] = js.native
+  var `align-content-xs-flex-end`: js.UndefOr[String] = js.undefined
   
-  var `align-content-xs-flex-start`: js.UndefOr[String] = js.native
+  var `align-content-xs-flex-start`: js.UndefOr[String] = js.undefined
   
-  var `align-content-xs-space-around`: js.UndefOr[String] = js.native
+  var `align-content-xs-space-around`: js.UndefOr[String] = js.undefined
   
-  var `align-content-xs-space-between`: js.UndefOr[String] = js.native
+  var `align-content-xs-space-between`: js.UndefOr[String] = js.undefined
   
-  var `align-items-xs-baseline`: js.UndefOr[String] = js.native
+  var `align-items-xs-baseline`: js.UndefOr[String] = js.undefined
   
-  var `align-items-xs-center`: js.UndefOr[String] = js.native
+  var `align-items-xs-center`: js.UndefOr[String] = js.undefined
   
-  var `align-items-xs-flex-end`: js.UndefOr[String] = js.native
+  var `align-items-xs-flex-end`: js.UndefOr[String] = js.undefined
   
-  var `align-items-xs-flex-start`: js.UndefOr[String] = js.native
+  var `align-items-xs-flex-start`: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var `direction-xs-column`: js.UndefOr[String] = js.native
+  var `direction-xs-column`: js.UndefOr[String] = js.undefined
   
-  var `direction-xs-column-reverse`: js.UndefOr[String] = js.native
+  var `direction-xs-column-reverse`: js.UndefOr[String] = js.undefined
   
-  var `direction-xs-row-reverse`: js.UndefOr[String] = js.native
+  var `direction-xs-row-reverse`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-1`: js.UndefOr[String] = js.native
+  var `grid-xs-1`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-10`: js.UndefOr[String] = js.native
+  var `grid-xs-10`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-11`: js.UndefOr[String] = js.native
+  var `grid-xs-11`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-12`: js.UndefOr[String] = js.native
+  var `grid-xs-12`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-2`: js.UndefOr[String] = js.native
+  var `grid-xs-2`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-3`: js.UndefOr[String] = js.native
+  var `grid-xs-3`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-4`: js.UndefOr[String] = js.native
+  var `grid-xs-4`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-5`: js.UndefOr[String] = js.native
+  var `grid-xs-5`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-6`: js.UndefOr[String] = js.native
+  var `grid-xs-6`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-7`: js.UndefOr[String] = js.native
+  var `grid-xs-7`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-8`: js.UndefOr[String] = js.native
+  var `grid-xs-8`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-9`: js.UndefOr[String] = js.native
+  var `grid-xs-9`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-auto`: js.UndefOr[String] = js.native
+  var `grid-xs-auto`: js.UndefOr[String] = js.undefined
   
-  var `grid-xs-true`: js.UndefOr[String] = js.native
+  var `grid-xs-true`: js.UndefOr[String] = js.undefined
   
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
-  var `justify-xs-center`: js.UndefOr[String] = js.native
+  var `justify-xs-center`: js.UndefOr[String] = js.undefined
   
-  var `justify-xs-flex-end`: js.UndefOr[String] = js.native
+  var `justify-xs-flex-end`: js.UndefOr[String] = js.undefined
   
-  var `justify-xs-space-around`: js.UndefOr[String] = js.native
+  var `justify-xs-space-around`: js.UndefOr[String] = js.undefined
   
-  var `justify-xs-space-between`: js.UndefOr[String] = js.native
+  var `justify-xs-space-between`: js.UndefOr[String] = js.undefined
   
-  var `spacing-xs-16`: js.UndefOr[String] = js.native
+  var `spacing-xs-16`: js.UndefOr[String] = js.undefined
   
-  var `spacing-xs-24`: js.UndefOr[String] = js.native
+  var `spacing-xs-24`: js.UndefOr[String] = js.undefined
   
-  var `spacing-xs-40`: js.UndefOr[String] = js.native
+  var `spacing-xs-40`: js.UndefOr[String] = js.undefined
   
-  var `spacing-xs-8`: js.UndefOr[String] = js.native
+  var `spacing-xs-8`: js.UndefOr[String] = js.undefined
   
-  var `wrap-xs-nowrap`: js.UndefOr[String] = js.native
+  var `wrap-xs-nowrap`: js.UndefOr[String] = js.undefined
   
-  var `wrap-xs-wrap-reverse`: js.UndefOr[String] = js.native
+  var `wrap-xs-wrap-reverse`: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapGridCl {
   

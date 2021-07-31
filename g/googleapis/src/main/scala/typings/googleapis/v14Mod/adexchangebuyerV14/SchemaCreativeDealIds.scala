@@ -3,24 +3,22 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 import typings.googleapis.anon.ArcStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The external deal ids associated with a creative.
   */
-@js.native
 trait SchemaCreativeDealIds extends StObject {
   
   /**
     * A list of external deal ids and ARC approval status.
     */
-  var dealStatuses: js.UndefOr[js.Array[ArcStatus]] = js.native
+  var dealStatuses: js.UndefOr[js.Array[ArcStatus]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeDealIds {
   

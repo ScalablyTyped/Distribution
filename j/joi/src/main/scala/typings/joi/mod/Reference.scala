@@ -2,24 +2,22 @@ package typings.joi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped joi.joi.ReferenceOptions extends 'prefix' ? never : joi.joi.ReferenceOptions */ @js.native
-trait Reference extends StObject {
+- Dropped joi.joi.ReferenceOptions extends 'prefix' ? never : joi.joi.ReferenceOptions */ trait Reference extends StObject {
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var display: String = js.native
+  var display: String
   
-  var key: String = js.native
+  var key: String
   
-  var path: js.Array[String] = js.native
+  var path: js.Array[String]
   
-  var root: String = js.native
+  var root: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Reference {
   

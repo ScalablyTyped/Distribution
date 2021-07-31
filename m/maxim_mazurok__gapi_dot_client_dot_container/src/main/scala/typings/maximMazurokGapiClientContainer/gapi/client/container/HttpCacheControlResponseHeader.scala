@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpCacheControlResponseHeader extends StObject {
   
   /** 14.6 response cache age, in seconds since the response is generated */
-  var age: js.UndefOr[String] = js.native
+  var age: js.UndefOr[String] = js.undefined
   
   /** 14.9 request and response directives */
-  var directive: js.UndefOr[String] = js.native
+  var directive: js.UndefOr[String] = js.undefined
   
   /** 14.21 response cache expires, in RFC 1123 date format */
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
 }
 object HttpCacheControlResponseHeader {
   

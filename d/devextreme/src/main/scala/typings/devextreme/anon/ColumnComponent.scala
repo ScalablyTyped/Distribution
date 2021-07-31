@@ -7,23 +7,21 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnComponent extends StObject {
   
-  var column: js.UndefOr[dxDataGridColumn] = js.native
+  var column: js.UndefOr[dxDataGridColumn] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
 }
 object ColumnComponent {
   

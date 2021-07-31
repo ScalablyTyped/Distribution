@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inactive extends StObject {
   
-  var active: scala.Double = js.native
+  var active: scala.Double
   
-  var inactive: scala.Double = js.native
+  var inactive: scala.Double
 }
 object Inactive {
   

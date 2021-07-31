@@ -12,7 +12,6 @@ import typings.storybookComponents.anon.Disabled
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionBarMod {
@@ -29,10 +28,9 @@ object actionBarMod {
     Theme
   ] = js.native
   
-  @js.native
   trait ActionBarProps extends StObject {
     
-    var actionItems: js.Array[ActionItem] = js.native
+    var actionItems: js.Array[ActionItem]
   }
   object ActionBarProps {
     
@@ -53,14 +51,13 @@ object actionBarMod {
     }
   }
   
-  @js.native
   trait ActionItem extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    def onClick(e: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit = js.native
+    def onClick(e: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit
     
-    var title: String | Element = js.native
+    var title: String | Element
   }
   object ActionItem {
     

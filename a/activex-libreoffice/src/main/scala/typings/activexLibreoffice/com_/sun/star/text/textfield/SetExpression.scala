@@ -13,65 +13,65 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of an expression text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait SetExpression extends DependentTextField {
+trait SetExpression
+  extends StObject
+     with DependentTextField {
   
   /** contains the textual content of the field. */
-  var Content: String = js.native
+  var Content: String
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /** contains an informational text that is displayed at the user interface if it's an input field. */
-  var Hint: String = js.native
+  var Hint: String
   
   /**
     * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
     * language.
     * @since OOo 1.1.2
     */
-  var IsFixedLanguage: Boolean = js.native
+  var IsFixedLanguage: Boolean
   
   /** determines whether this field is an input field. */
-  var IsInput: Boolean = js.native
+  var IsInput: Boolean
   
   /** determines whether the content is displayed or evaluated. */
-  var IsShowFormula: Boolean = js.native
+  var IsShowFormula: Boolean
   
   /** determines whether the field is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /**
     * this is the number format for this field.
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
   
   /** specifies the type of the numbering as {@link com.sun.star.style.NumberingType} */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
   
   /** contains the sequence value when this field is used as sequence field. */
-  var SequenceValue: Double = js.native
+  var SequenceValue: Double
   
   /** determines the type of the variable as described in {@link com.sun.star.text.SetVariableType} */
-  var SubType: Double = js.native
+  var SubType: Double
   
   /** contains the numerical value of the field. */
-  var Value: Double = js.native
+  var Value: Double
   
   /** contains the name of the set expression field master this field is connected to. */
-  var VariableName: String = js.native
+  var VariableName: String
 }
 object SetExpression {
   

@@ -2,18 +2,18 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoundaryEvent extends CatchEvent {
+trait BoundaryEvent
+  extends StObject
+     with CatchEvent {
   
-  var attachedToRef: Activity = js.native
+  var attachedToRef: Activity
   
   /**
     * @default true
     */
-  var cancelActivity: Boolean = js.native
+  var cancelActivity: Boolean
 }
 object BoundaryEvent {
   

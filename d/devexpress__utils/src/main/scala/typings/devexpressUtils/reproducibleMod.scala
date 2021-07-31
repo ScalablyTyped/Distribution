@@ -3,19 +3,17 @@ package typings.devexpressUtils
 import typings.devexpressUtils.constMod.ConstInterval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reproducibleMod {
   
-  @js.native
   trait IReproducibleInterval[T /* <: ConstInterval */] extends StObject {
     
-    def makeByLengthEnd(length: Double, end: Double): T = js.native
+    def makeByLengthEnd(length: Double, end: Double): T
     
-    def makeByStartEnd(start: Double, end: Double): T = js.native
+    def makeByStartEnd(start: Double, end: Double): T
     
-    def makeByStartLength(start: Double, length: Double): T = js.native
+    def makeByStartLength(start: Double, length: Double): T
   }
   object IReproducibleInterval {
     
@@ -30,7 +28,7 @@ object reproducibleMod {
     }
     
     @scala.inline
-    implicit class IReproducibleIntervalMutableBuilder[Self <: IReproducibleInterval[_], T /* <: ConstInterval */] (val x: Self with IReproducibleInterval[T]) extends AnyVal {
+    implicit class IReproducibleIntervalMutableBuilder[Self <: IReproducibleInterval[?], T /* <: ConstInterval */] (val x: Self & IReproducibleInterval[T]) extends AnyVal {
       
       @scala.inline
       def setMakeByLengthEnd(value: (Double, Double) => T): Self = StObject.set(x, "makeByLengthEnd", js.Any.fromFunction2(value))

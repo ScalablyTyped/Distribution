@@ -2,41 +2,41 @@ package typings.timezoneSupport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseFormatMod {
   
-  @JSImport("timezone-support/dist/parse-format", "formatZonedTime")
+  @JSImport("timezone-support/dist/parse-format", JSImport.Namespace)
   @js.native
-  def formatZonedTime(time: Time, format: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("timezone-support/dist/parse-format", "parseZonedTime")
-  @js.native
-  def parseZonedTime(input: String, format: String): Time = js.native
+  @scala.inline
+  def formatZonedTime(time: Time, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatZonedTime")(time.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parseZonedTime(input: String, format: String): Time = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZonedTime")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Time]
+  
   trait Time extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var dayOfWeek: js.UndefOr[Double] = js.native
+    var dayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var epoch: js.UndefOr[Double] = js.native
+    var epoch: js.UndefOr[Double] = js.undefined
     
-    var hours: Double = js.native
+    var hours: Double
     
-    var milliseconds: js.UndefOr[Double] = js.native
+    var milliseconds: js.UndefOr[Double] = js.undefined
     
-    var minutes: Double = js.native
+    var minutes: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var seconds: js.UndefOr[Double] = js.native
+    var seconds: js.UndefOr[Double] = js.undefined
     
-    var year: Double = js.native
+    var year: Double
     
-    var zone: js.UndefOr[TimeZoneOffset] = js.native
+    var zone: js.UndefOr[TimeZoneOffset] = js.undefined
   }
   object Time {
     
@@ -96,12 +96,11 @@ object parseFormatMod {
     }
   }
   
-  @js.native
   trait TimeZoneOffset extends StObject {
     
-    var abbreviation: js.UndefOr[String] = js.native
+    var abbreviation: js.UndefOr[String] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object TimeZoneOffset {
     

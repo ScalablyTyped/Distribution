@@ -12,7 +12,6 @@ import typings.twilioSync.mod.SyncClient
 import typings.twilioSync.mod.SyncList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
@@ -58,8 +57,8 @@ object messagesMod {
       * @param {any} attributes Message attributes
       * @returns Returns promise which can fail
       */
-    def send(message: String): js.Promise[_] = js.native
-    def send(message: String, attributes: js.Any): js.Promise[_] = js.native
+    def send(message: String): js.Promise[js.Any] = js.native
+    def send(message: String, attributes: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * Send Media Message to the channel
@@ -67,10 +66,10 @@ object messagesMod {
       * @param {any} attributes Message attributes
       * @returns Returns promise which can fail
       */
-    def sendMedia(mediaContent: FormData): js.Promise[_] = js.native
-    def sendMedia(mediaContent: FormData, attributes: js.Any): js.Promise[_] = js.native
-    def sendMedia(mediaContent: SendMediaOptions): js.Promise[_] = js.native
-    def sendMedia(mediaContent: SendMediaOptions, attributes: js.Any): js.Promise[_] = js.native
+    def sendMedia(mediaContent: FormData): js.Promise[js.Any] = js.native
+    def sendMedia(mediaContent: FormData, attributes: js.Any): js.Promise[js.Any] = js.native
+    def sendMedia(mediaContent: SendMediaOptions): js.Promise[js.Any] = js.native
+    def sendMedia(mediaContent: SendMediaOptions, attributes: js.Any): js.Promise[js.Any] = js.native
     
     val services: js.Any = js.native
     
@@ -86,14 +85,13 @@ object messagesMod {
     var wrapPaginator: js.Any = js.native
   }
   
-  @js.native
   trait MessagesServices extends StObject {
     
-    var mcsClient: McsClient = js.native
+    var mcsClient: McsClient
     
-    var session: Session = js.native
+    var session: Session
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
   }
   object MessagesServices {
     

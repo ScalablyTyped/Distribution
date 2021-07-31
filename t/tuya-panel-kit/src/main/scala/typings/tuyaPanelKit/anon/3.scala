@@ -3,19 +3,17 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var canPreventDefault: `true` = js.native
+  var canPreventDefault: `true`
 }
 object `3` {
   
   @scala.inline
-  def apply(canPreventDefault: `true`): `3` = {
-    val __obj = js.Dynamic.literal(canPreventDefault = canPreventDefault.asInstanceOf[js.Any])
+  def apply(): `3` = {
+    val __obj = js.Dynamic.literal(canPreventDefault = true)
     __obj.asInstanceOf[`3`]
   }
   

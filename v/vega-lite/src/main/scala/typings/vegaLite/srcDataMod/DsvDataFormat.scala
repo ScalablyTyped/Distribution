@@ -3,12 +3,11 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.vegaLiteStrings.dsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DsvDataFormat
-  extends DataFormatBase
+  extends StObject
+     with DataFormatBase
      with DataFormat {
   
   /**
@@ -17,10 +16,10 @@ trait DsvDataFormat
     * @minLength 1
     * @maxLength 1
     */
-  var delimiter: String = js.native
+  var delimiter: String
   
   @JSName("type")
-  var type_DsvDataFormat: js.UndefOr[dsv] = js.native
+  var type_DsvDataFormat: js.UndefOr[dsv] = js.undefined
 }
 object DsvDataFormat {
   

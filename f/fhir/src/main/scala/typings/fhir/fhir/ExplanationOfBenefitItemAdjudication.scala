@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adjudication details
   */
-@js.native
-trait ExplanationOfBenefitItemAdjudication extends BackboneElement {
+trait ExplanationOfBenefitItemAdjudication
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * Monetary amount
     */
-  var amount: js.UndefOr[Money] = js.native
+  var amount: js.UndefOr[Money] = js.undefined
   
   /**
     * Adjudication category such as co-pay, eligible, benefit, etc.
     */
-  var category: CodeableConcept = js.native
+  var category: CodeableConcept
   
   /**
     * Explanation of Adjudication outcome
     */
-  var reason: js.UndefOr[CodeableConcept] = js.native
+  var reason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Non-monitory value
     */
-  var value: js.UndefOr[decimal] = js.native
+  var value: js.UndefOr[decimal] = js.undefined
 }
 object ExplanationOfBenefitItemAdjudication {
   

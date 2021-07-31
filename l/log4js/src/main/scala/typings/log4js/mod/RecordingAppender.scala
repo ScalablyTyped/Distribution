@@ -3,20 +3,20 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.recording
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RecordingAppender extends Appender {
+trait RecordingAppender
+  extends StObject
+     with Appender {
   
-  var `type`: recording = js.native
+  var `type`: recording
 }
 object RecordingAppender {
   
   @scala.inline
-  def apply(`type`: recording): RecordingAppender = {
+  def apply(): RecordingAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("recording")
     __obj.asInstanceOf[RecordingAppender]
   }
   

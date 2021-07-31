@@ -10,10 +10,10 @@ Modern copy to clipboard. No Flash. Just 2kb
 | ------------------ | :-------------: |
 | Full name          | clipboard |
 | Keywords           | clipboard, copy, cut |
-| # releases         | 6 |
-| # dependents       | 864 |
-| # downloads        | 116761060 |
-| # stars            | 60 |
+| # releases         | 3 |
+| # dependents       | 1007 |
+| # downloads        | 142440728 |
+| # stars            | 61 |
 
 ## Links
 - [Homepage](https://github.com/zenorocha/clipboard.js#readme)

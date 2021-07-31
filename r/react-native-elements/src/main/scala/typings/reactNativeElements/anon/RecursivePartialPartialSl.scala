@@ -11,56 +11,54 @@ import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.SliderProps>> */
-@js.native
 trait RecursivePartialPartialSl extends StObject {
   
-  var allowTouchTrack: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var allowTouchTrack: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var animateTransitions: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var animateTransitions: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var animationConfig: js.UndefOr[RecursivePartial[js.UndefOr[TimingAnimationConfig | SpringAnimationConfig]]] = js.native
+  var animationConfig: js.UndefOr[RecursivePartial[js.UndefOr[TimingAnimationConfig | SpringAnimationConfig]]] = js.undefined
   
-  var animationType: js.UndefOr[RecursivePartial[js.UndefOr[spring | timing]]] = js.native
+  var animationType: js.UndefOr[RecursivePartial[js.UndefOr[spring | timing]]] = js.undefined
   
-  var debugTouchArea: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var debugTouchArea: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var maximumTrackTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var maximumTrackTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var maximumValue: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var maximumValue: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var minimumTrackTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var minimumTrackTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var minimumValue: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var minimumValue: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var onSlidingComplete: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.native
+  var onSlidingComplete: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.undefined
   
-  var onSlidingStart: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.native
+  var onSlidingStart: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.undefined
   
-  var onValueChange: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.native
+  var onValueChange: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* value */ Double, Unit]]]] = js.undefined
   
-  var orientation: js.UndefOr[RecursivePartial[js.UndefOr[horizontal | vertical]]] = js.native
+  var orientation: js.UndefOr[RecursivePartial[js.UndefOr[horizontal | vertical]]] = js.undefined
   
-  var step: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var step: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var thumbProps: js.UndefOr[RecursivePartial[js.UndefOr[_]]] = js.native
+  var thumbProps: js.UndefOr[RecursivePartial[js.UndefOr[js.Any]]] = js.undefined
   
-  var thumbStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var thumbStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var thumbTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var thumbTintColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var thumbTouchSize: js.UndefOr[RecursivePartial[js.UndefOr[Height]]] = js.native
+  var thumbTouchSize: js.UndefOr[RecursivePartial[js.UndefOr[Height]]] = js.undefined
   
-  var trackStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var trackStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var value: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var value: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
 }
 object RecursivePartialPartialSl {
   
@@ -170,7 +168,7 @@ object RecursivePartialPartialSl {
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setThumbProps(value: RecursivePartial[js.UndefOr[_]]): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
+    def setThumbProps(value: RecursivePartial[js.UndefOr[js.Any]]): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setThumbPropsUndefined: Self = StObject.set(x, "thumbProps", js.undefined)

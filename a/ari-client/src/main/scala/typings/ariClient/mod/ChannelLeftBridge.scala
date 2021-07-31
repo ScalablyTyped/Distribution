@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelLeftBridge extends Event {
+trait ChannelLeftBridge
+  extends StObject
+     with Event {
   
   /**
     * Bridge.
     */
-  var bridge: Bridge = js.native
+  var bridge: Bridge
   
   /**
     * Channel.
     */
-  var channel: Channel = js.native
+  var channel: Channel
 }
 object ChannelLeftBridge {
   

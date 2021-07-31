@@ -7,21 +7,19 @@ import typings.amapJsApiDriving.amapJsApiDrivingStrings.start
 import typings.amapJsApiDriving.amapJsApiDrivingStrings.waypoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Destination extends StObject {
     
-    var destination: LocationValue = js.native
+    var destination: LocationValue
     
-    var destinationName: js.UndefOr[String] = js.native
+    var destinationName: js.UndefOr[String] = js.undefined
     
-    var origin: LocationValue = js.native
+    var origin: LocationValue
     
-    var originName: js.UndefOr[String] = js.native
+    var originName: js.UndefOr[String] = js.undefined
   }
   object Destination {
     
@@ -54,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Info extends StObject {
     
-    var info: String = js.native
+    var info: String
   }
   object Info {
     
@@ -75,10 +72,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsWaypoint extends StObject {
     
-    var isWaypoint: Boolean = js.native
+    var isWaypoint: Boolean
   }
   object IsWaypoint {
     
@@ -97,16 +93,15 @@ object anon {
   }
   
   /* Inlined amap-js-api-driving.AMap.Driving.Poi & {  isWaypoint :boolean} */
-  @js.native
   trait PoiisWaypointboolean extends StObject {
     
-    var isWaypoint: Boolean = js.native
+    var isWaypoint: Boolean
     
-    var location: LngLat = js.native
+    var location: LngLat
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: start | end | waypoint = js.native
+    var `type`: start | end | waypoint
   }
   object PoiisWaypointboolean {
     

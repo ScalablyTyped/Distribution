@@ -2,37 +2,35 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocaleDateTimeFormatDescriptor extends StObject {
   
-  var AMPMS: js.Array[String] = js.native
+  var AMPMS: js.Array[String]
   
-  var DAY: js.Array[String] = js.native
+  var DAY: js.Array[String]
   
-  var MONTH: js.Array[String] = js.native
+  var MONTH: js.Array[String]
   
-  var SHORTDAY: js.Array[String] = js.native
+  var SHORTDAY: js.Array[String]
   
-  var SHORTMONTH: js.Array[String] = js.native
+  var SHORTMONTH: js.Array[String]
   
-  var fullDate: String = js.native
+  var fullDate: String
   
-  var longDate: String = js.native
+  var longDate: String
   
-  var medium: String = js.native
+  var medium: String
   
-  var mediumDate: String = js.native
+  var mediumDate: String
   
-  var mediumTime: String = js.native
+  var mediumTime: String
   
-  var short: String = js.native
+  var short: String
   
-  var shortDate: String = js.native
+  var shortDate: String
   
-  var shortTime: String = js.native
+  var shortTime: String
 }
 object ILocaleDateTimeFormatDescriptor {
   

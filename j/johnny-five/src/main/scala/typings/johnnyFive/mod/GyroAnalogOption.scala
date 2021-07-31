@@ -2,17 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GyroAnalogOption extends GyroGeneralOption {
+trait GyroAnalogOption
+  extends StObject
+     with GyroGeneralOption {
   
-  var pins: js.Array[String] = js.native
+  var pins: js.Array[String]
   
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
   
-  var sensitivity: Double = js.native
+  var sensitivity: Double
 }
 object GyroAnalogOption {
   

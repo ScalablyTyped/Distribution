@@ -2,81 +2,79 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestedServiceQuotaChange extends StObject {
   
   /**
     * The case Id for the service quota increase request.
     */
-  var CaseId: js.UndefOr[CustomerServiceEngagementId] = js.native
+  var CaseId: js.UndefOr[CustomerServiceEngagementId] = js.undefined
   
   /**
     * The date and time when the service quota increase request was received and the case Id was created. 
     */
-  var Created: js.UndefOr[DateTime] = js.native
+  var Created: js.UndefOr[DateTime] = js.undefined
   
   /**
     * New increased value for the service quota.
     */
-  var DesiredValue: js.UndefOr[QuotaValue] = js.native
+  var DesiredValue: js.UndefOr[QuotaValue] = js.undefined
   
   /**
     * Identifies if the quota is global.
     */
-  var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.native
+  var GlobalQuota: js.UndefOr[typings.awsSdk.servicequotasMod.GlobalQuota] = js.undefined
   
   /**
     * The unique identifier of a requested service quota change.
     */
-  var Id: js.UndefOr[RequestId] = js.native
+  var Id: js.UndefOr[RequestId] = js.undefined
   
   /**
     * The date and time of the most recent change in the service quota increase request.
     */
-  var LastUpdated: js.UndefOr[DateTime] = js.native
+  var LastUpdated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the service quota.
     */
-  var QuotaArn: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaArn] = js.native
+  var QuotaArn: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaArn] = js.undefined
   
   /**
     * Specifies the service quota that you want to use.
     */
-  var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.native
+  var QuotaCode: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaCode] = js.undefined
   
   /**
     * Name of the service quota.
     */
-  var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.native
+  var QuotaName: js.UndefOr[typings.awsSdk.servicequotasMod.QuotaName] = js.undefined
   
   /**
     * The IAM identity who submitted the service quota increase request.
     */
-  var Requester: js.UndefOr[typings.awsSdk.servicequotasMod.Requester] = js.native
+  var Requester: js.UndefOr[typings.awsSdk.servicequotasMod.Requester] = js.undefined
   
   /**
     * Specifies the service that you want to use.
     */
-  var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.native
+  var ServiceCode: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceCode] = js.undefined
   
   /**
     * The name of the AWS service specified in the increase request. 
     */
-  var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.native
+  var ServiceName: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceName] = js.undefined
   
   /**
     * State of the service quota increase request.
     */
-  var Status: js.UndefOr[RequestStatus] = js.native
+  var Status: js.UndefOr[RequestStatus] = js.undefined
   
   /**
     * Specifies the unit used for the quota.
     */
-  var Unit: js.UndefOr[QuotaUnit] = js.native
+  var Unit: js.UndefOr[QuotaUnit] = js.undefined
 }
 object RequestedServiceQuotaChange {
   

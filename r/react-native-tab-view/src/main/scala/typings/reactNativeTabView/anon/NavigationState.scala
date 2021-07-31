@@ -1,34 +1,25 @@
 package typings.reactNativeTabView.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationState[T /* <: typings.reactNativeTabView.typesMod.Route */] extends js.Object {
-  var navigationState: typings.reactNativeTabView.typesMod.NavigationState[T] = js.native
+trait NavigationState[T /* <: typings.reactNativeTabView.typesMod.Route */] extends StObject {
+  
+  var navigationState: typings.reactNativeTabView.typesMod.NavigationState[T]
 }
-
 object NavigationState {
+  
   @scala.inline
-  def apply[/* <: typings.reactNativeTabView.typesMod.Route */ T](navigationState: typings.reactNativeTabView.typesMod.NavigationState[T]): NavigationState[T] = {
+  def apply[T /* <: typings.reactNativeTabView.typesMod.Route */](navigationState: typings.reactNativeTabView.typesMod.NavigationState[T]): NavigationState[T] = {
     val __obj = js.Dynamic.literal(navigationState = navigationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationState[T]]
   }
-  @scala.inline
-  implicit class NavigationStateOps[Self <: NavigationState[_], /* <: typings.reactNativeTabView.typesMod.Route */ T] (val x: Self with NavigationState[T]) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setNavigationState(value: typings.reactNativeTabView.typesMod.NavigationState[T]): Self = this.set("navigationState", value.asInstanceOf[js.Any])
-  }
   
+  @scala.inline
+  implicit class NavigationStateMutableBuilder[Self <: NavigationState[?], T /* <: typings.reactNativeTabView.typesMod.Route */] (val x: Self & NavigationState[T]) extends AnyVal {
+    
+    @scala.inline
+    def setNavigationState(value: typings.reactNativeTabView.typesMod.NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -2,19 +2,17 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var value: typings.storybookUi.storybookUiNumbers.`1` = js.native
+  var value: typings.storybookUi.storybookUiNumbers.`1`
 }
 object `0` {
   
   @scala.inline
-  def apply(value: typings.storybookUi.storybookUiNumbers.`1`): `0` = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(value = 1)
     __obj.asInstanceOf[`0`]
   }
   

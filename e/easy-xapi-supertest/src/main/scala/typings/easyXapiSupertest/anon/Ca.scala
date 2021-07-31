@@ -2,17 +2,15 @@ package typings.easyXapiSupertest.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ca extends StObject {
   
-  var ca: String = js.native
+  var ca: String
   
-  var cert: String = js.native
+  var cert: String
   
-  var key: String = js.native
+  var key: String
 }
 object Ca {
   

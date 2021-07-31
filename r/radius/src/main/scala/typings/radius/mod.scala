@@ -3,46 +3,41 @@ package typings.radius
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("radius", "add_dictionary")
+  @JSImport("radius", JSImport.Namespace)
   @js.native
-  def addDictionary(path: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("radius", "decode")
-  @js.native
-  def decode(args: DecodeArgsWithSecret): RadiusPacket = js.native
+  @scala.inline
+  def addDictionary(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add_dictionary")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("radius", "decode_without_secret")
-  @js.native
-  def decodeWithoutSecret(args: DecodeArgs): RadiusPacket = js.native
+  @scala.inline
+  def decode(args: DecodeArgsWithSecret): RadiusPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(args.asInstanceOf[js.Any]).asInstanceOf[RadiusPacket]
   
-  @JSImport("radius", "encode")
-  @js.native
-  def encode(args: EncodeArgs): Buffer = js.native
+  @scala.inline
+  def decodeWithoutSecret(args: DecodeArgs): RadiusPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_without_secret")(args.asInstanceOf[js.Any]).asInstanceOf[RadiusPacket]
   
-  @JSImport("radius", "encode_response")
-  @js.native
-  def encodeResponse(args: EncodeResponseArgs): Buffer = js.native
+  @scala.inline
+  def encode(args: EncodeArgs): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("radius", "unload_dictionaries")
-  @js.native
-  def unloadDictionaries(): Unit = js.native
+  @scala.inline
+  def encodeResponse(args: EncodeResponseArgs): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_response")(args.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("radius", "verify_response")
-  @js.native
-  def verifyResponse(args: VerifyResponseArgs): Boolean = js.native
+  @scala.inline
+  def unloadDictionaries(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload_dictionaries")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def verifyResponse(args: VerifyResponseArgs): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify_response")(args.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * {@link https://github.com/retailnext/node-radius#radiusdecode_without_secretargs} for more info.
     **/
-  @js.native
   trait DecodeArgs extends StObject {
     
-    var packet: Buffer = js.native
+    var packet: Buffer
   }
   object DecodeArgs {
     
@@ -63,10 +58,11 @@ object mod {
   /**
     * {@link https://github.com/retailnext/node-radius#radiusdecodeargs} for more info.
     **/
-  @js.native
-  trait DecodeArgsWithSecret extends DecodeArgs {
+  trait DecodeArgsWithSecret
+    extends StObject
+       with DecodeArgs {
     
-    var secret: String = js.native
+    var secret: String
   }
   object DecodeArgsWithSecret {
     
@@ -87,10 +83,9 @@ object mod {
   /**
     * {@link https://github.com/retailnext/node-radius#radiusencodeargs} for more info.
     **/
-  @js.native
   trait EncodeArgs extends StObject {
     
-    var add_message_authenticator: js.UndefOr[Boolean] = js.native
+    var add_message_authenticator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This can be an object: { attribute_name: attribute_value, ... }, 
@@ -99,13 +94,13 @@ object mod {
       * 
       * Tag field-attributes can be specified like so: [ [ attribute_name, tag_number, attribute_value ] ... ]
       **/
-    var attributes: js.UndefOr[js.Any] = js.native
+    var attributes: js.UndefOr[js.Any] = js.undefined
     
-    var code: String = js.native
+    var code: String
     
-    var identifier: js.UndefOr[Double] = js.native
+    var identifier: js.UndefOr[Double] = js.undefined
     
-    var secret: String = js.native
+    var secret: String
   }
   object EncodeArgs {
     
@@ -147,16 +142,15 @@ object mod {
   /**
     * {@link https://github.com/retailnext/node-radius#radiusencode_responseargs} for more info.
     **/
-  @js.native
   trait EncodeResponseArgs extends StObject {
     
-    var attributes: js.UndefOr[js.Any] = js.native
+    var attributes: js.UndefOr[js.Any] = js.undefined
     
-    var code: String = js.native
+    var code: String
     
-    var packet: RadiusPacket = js.native
+    var packet: RadiusPacket
     
-    var secret: String = js.native
+    var secret: String
   }
   object EncodeResponseArgs {
     
@@ -186,18 +180,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RadiusPacket extends StObject {
     
-    var attributes: js.Any = js.native
+    var attributes: js.Any
     
-    var code: String = js.native
+    var code: String
     
-    var identifier: Double = js.native
+    var identifier: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var raw_attributes: js.Array[js.Array[_]] = js.native
+    var raw_attributes: js.Array[js.Array[js.Any]]
   }
   object RadiusPacket {
     
@@ -207,7 +200,7 @@ object mod {
       code: String,
       identifier: Double,
       length: Double,
-      raw_attributes: js.Array[js.Array[_]]
+      raw_attributes: js.Array[js.Array[js.Any]]
     ): RadiusPacket = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], raw_attributes = raw_attributes.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadiusPacket]
@@ -229,7 +222,7 @@ object mod {
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRaw_attributes(value: js.Array[js.Array[_]]): Self = StObject.set(x, "raw_attributes", value.asInstanceOf[js.Any])
+      def setRaw_attributes(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "raw_attributes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRaw_attributesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "raw_attributes", js.Array(value :_*))
@@ -239,14 +232,13 @@ object mod {
   /**
     * {@link https://github.com/retailnext/node-radius#radiusverify_responseargs} for more info.
     **/
-  @js.native
   trait VerifyResponseArgs extends StObject {
     
-    var request: Buffer = js.native
+    var request: Buffer
     
-    var response: Buffer = js.native
+    var response: Buffer
     
-    var secret: String = js.native
+    var secret: String
   }
   object VerifyResponseArgs {
     

@@ -10,9 +10,9 @@ Framebus allows you to easily send messages across frames (and iframes) with a s
 | ------------------ | :-------------: |
 | Full name          | framebus |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 8 |
-| # downloads        | 5648718 |
+| # downloads        | 6852750 |
 | # stars            | 0 |
 
 ## Links

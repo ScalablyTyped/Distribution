@@ -3,15 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XCodeNameQuery extends StObject {
   
-  def getCodeNameForContainer(aObj: XInterface): String = js.native
+  def getCodeNameForContainer(aObj: XInterface): String
   
-  def getCodeNameForObject(aObj: XInterface): String = js.native
+  def getCodeNameForObject(aObj: XInterface): String
 }
 object XCodeNameQuery {
   

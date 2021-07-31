@@ -3,45 +3,43 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a particular function to invoke.
   */
-@js.native
 trait SchemaSeqMapTask extends StObject {
   
   /**
     * Information about each of the inputs.
     */
-  var inputs: js.UndefOr[js.Array[SchemaSideInputInfo]] = js.native
+  var inputs: js.UndefOr[js.Array[SchemaSideInputInfo]] = js.undefined
   
   /**
     * The user-provided name of the SeqDo operation.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Information about each of the outputs.
     */
-  var outputInfos: js.UndefOr[js.Array[SchemaSeqMapTaskOutputInfo]] = js.native
+  var outputInfos: js.UndefOr[js.Array[SchemaSeqMapTaskOutputInfo]] = js.undefined
   
   /**
     * System-defined name of the stage containing the SeqDo operation. Unique
     * across the workflow.
     */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /**
     * System-defined name of the SeqDo operation. Unique across the workflow.
     */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
   
   /**
     * The user function to invoke.
     */
-  var userFn: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var userFn: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaSeqMapTask {
   

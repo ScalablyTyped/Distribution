@@ -53,7 +53,6 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -88,6 +87,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[More information]{@link https://developer.chrome.com/apps/fileSystemProvider}
   */
 object fileSystemProvider {
+  
+  @JSGlobal("chrome.fileSystemProvider")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Type of a change detected on the observed directory. */
   object ChangeType {
@@ -280,17 +283,15 @@ object fileSystemProvider {
     * @since Chrome 42.
     * @param callback Callback to receive the result of get function.
     */
-  @JSGlobal("chrome.fileSystemProvider.get")
-  @js.native
-  def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = js.native
+  @scala.inline
+  def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(fileSystemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns all file systems mounted by the app.
     * @param callback Callback to receive the result of getAll function.
     */
-  @JSGlobal("chrome.fileSystemProvider.getAll")
-  @js.native
-  def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   ///\/\/|\/\/\\\
   /// METHODS \\\
@@ -308,12 +309,10 @@ object fileSystemProvider {
     *
     * @param callback A generic result callback to indicate success or failure.
     */
-  @JSGlobal("chrome.fileSystemProvider.mount")
-  @js.native
-  def mount(options: MountOptions): Unit = js.native
-  @JSGlobal("chrome.fileSystemProvider.mount")
-  @js.native
-  def mount(options: MountOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def mount(options: MountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mount(options: MountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @requires Manifest: 'file_system_provider.notify' = true
@@ -343,9 +342,8 @@ object fileSystemProvider {
     * @param callback A generic result callback to indicate success or failure.
     * @since Chrome 45.
     */
-  @JSGlobal("chrome.fileSystemProvider.notify")
-  @js.native
-  def notify_(options: NotificationOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def notify_(options: NotificationOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Raised when aborting an operation with operationRequestId is requested.
@@ -902,12 +900,10 @@ object fileSystemProvider {
     *
     * @param callback A generic result callback to indicate success or failure.
     */
-  @JSGlobal("chrome.fileSystemProvider.unmount")
-  @js.native
-  def unmount(options: UnmountOptions): Unit = js.native
-  @JSGlobal("chrome.fileSystemProvider.unmount")
-  @js.native
-  def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def unmount(options: UnmountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Internal interfaces, not for use

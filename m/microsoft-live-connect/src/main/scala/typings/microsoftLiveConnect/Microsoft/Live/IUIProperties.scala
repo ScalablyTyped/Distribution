@@ -2,27 +2,25 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.ui method.
   */
-@js.native
 trait IUIProperties extends StObject {
   
   /**
     * The value of the id attribute of the <div> tag to display the button
     * in.
     */
-  var element: String = js.native
+  var element: String
   
   /**
     * Specifies the type of button to display. Specify "signin" to display
     * the Live Connect sign-in button. Specify "skydrivepicker" to display
     * the SkyDrive button.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Windows Store apps using JavaScript: not applicable.
@@ -35,7 +33,7 @@ trait IUIProperties extends StObject {
     * section.
     * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object IUIProperties {
   

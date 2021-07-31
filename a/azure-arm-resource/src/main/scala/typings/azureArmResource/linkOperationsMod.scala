@@ -9,7 +9,6 @@ import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkOperationsMod {

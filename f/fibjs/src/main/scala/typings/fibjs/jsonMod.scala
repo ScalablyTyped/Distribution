@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object jsonMod {
   
-  @JSImport("json", "decode")
+  @JSImport("json", JSImport.Namespace)
   @js.native
-  def decode(data: String): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("json", "encode")
-  @js.native
-  def encode(data: js.Any): String = js.native
+  @scala.inline
+  def decode(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def encode(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

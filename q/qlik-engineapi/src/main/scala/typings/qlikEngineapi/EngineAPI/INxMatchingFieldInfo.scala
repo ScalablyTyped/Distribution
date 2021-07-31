@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxMatchingFieldInfo...
   */
-@js.native
 trait INxMatchingFieldInfo extends StObject {
   
   /**
     * Name of the field
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * List of tags
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object INxMatchingFieldInfo {
   

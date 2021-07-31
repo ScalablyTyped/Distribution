@@ -6,7 +6,6 @@ import typings.firebaseLogger.loggerMod.LogLevelString
 import typings.firebaseLogger.loggerMod.LogOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,12 +36,11 @@ object mod {
     var options: FirebaseOptions = js.native
   }
   
-  @js.native
   trait FirebaseAppConfig extends StObject {
     
-    var automaticDataCollectionEnabled: js.UndefOr[Boolean] = js.native
+    var automaticDataCollectionEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object FirebaseAppConfig {
     
@@ -118,24 +116,23 @@ object mod {
     def setLogLevel(logLevel: LogLevelString): Unit = js.native
   }
   
-  @js.native
   trait FirebaseOptions extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var authDomain: js.UndefOr[String] = js.native
+    var authDomain: js.UndefOr[String] = js.undefined
     
-    var databaseURL: js.UndefOr[String] = js.native
+    var databaseURL: js.UndefOr[String] = js.undefined
     
-    var measurementId: js.UndefOr[String] = js.native
+    var measurementId: js.UndefOr[String] = js.undefined
     
-    var messagingSenderId: js.UndefOr[String] = js.native
+    var messagingSenderId: js.UndefOr[String] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
-    var storageBucket: js.UndefOr[String] = js.native
+    var storageBucket: js.UndefOr[String] = js.undefined
   }
   object FirebaseOptions {
     
@@ -198,12 +195,11 @@ object mod {
     }
   }
   
-  @js.native
   trait VersionService extends StObject {
     
-    var library: String = js.native
+    var library: String
     
-    var version: String = js.native
+    var version: String
   }
   object VersionService {
     
@@ -226,14 +222,13 @@ object mod {
   
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var app: FirebaseApp = js.native
+      var app: FirebaseApp
       
-      var `app-version`: VersionService = js.native
+      var `app-version`: VersionService
       
-      var `platform-identifier`: VersionService = js.native
+      var `platform-identifier`: VersionService
     }
     object NameServiceMapping {
       

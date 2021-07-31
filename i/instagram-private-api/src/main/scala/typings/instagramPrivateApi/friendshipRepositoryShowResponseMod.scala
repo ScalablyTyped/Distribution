@@ -2,35 +2,33 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object friendshipRepositoryShowResponseMod {
   
-  @js.native
   trait FriendshipRepositoryShowResponseRootObject extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var followed_by: Boolean = js.native
+    var followed_by: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_blocking_reel: Boolean = js.native
+    var is_blocking_reel: Boolean
     
-    var is_muting_reel: Boolean = js.native
+    var is_muting_reel: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var muting: Boolean = js.native
+    var muting: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
     
-    var status: String = js.native
+    var status: String
   }
   object FriendshipRepositoryShowResponseRootObject {
     

@@ -2,48 +2,46 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a contest that appears on a voter&#39;s ballot.
   */
-@js.native
 trait SchemaContest extends StObject {
   
   /**
     * A number specifying the position of this contest on the voter&#39;s
     * ballot.
     */
-  var ballotPlacement: js.UndefOr[String] = js.native
+  var ballotPlacement: js.UndefOr[String] = js.undefined
   
   /**
     * The official title on the ballot for this contest, only where available.
     */
-  var ballotTitle: js.UndefOr[String] = js.native
+  var ballotTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The candidate choices for this contest.
     */
-  var candidates: js.UndefOr[js.Array[SchemaCandidate]] = js.native
+  var candidates: js.UndefOr[js.Array[SchemaCandidate]] = js.undefined
   
   /**
     * Information about the electoral district that this contest is in.
     */
-  var district: js.UndefOr[SchemaElectoralDistrict] = js.native
+  var district: js.UndefOr[SchemaElectoralDistrict] = js.undefined
   
   /**
     * A description of any additional eligibility requirements for voting in
     * this contest.
     */
-  var electorateSpecifications: js.UndefOr[String] = js.native
+  var electorateSpecifications: js.UndefOr[String] = js.undefined
   
   /**
     * An ID for this object. IDs may change in future requests and should not
     * be cached. Access to this field requires special access that can be
     * requested from the Request more link on the Quotas page.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The levels of government of the office for this contest. There may be
@@ -52,27 +50,27 @@ trait SchemaContest extends StObject {
     * Columbia acts at &quot;locality&quot; level, but also effectively at both
     * &quot;administrative-area-2&quot; and &quot;administrative-area-1&quot;.
     */
-  var level: js.UndefOr[js.Array[String]] = js.native
+  var level: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The number of candidates that will be elected to office in this contest.
     */
-  var numberElected: js.UndefOr[String] = js.native
+  var numberElected: js.UndefOr[String] = js.undefined
   
   /**
     * The number of candidates that a voter may vote for in this contest.
     */
-  var numberVotingFor: js.UndefOr[String] = js.native
+  var numberVotingFor: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the office for this contest.
     */
-  var office: js.UndefOr[String] = js.native
+  var office: js.UndefOr[String] = js.undefined
   
   /**
     * If this is a partisan election, the name of the party it is for.
     */
-  var primaryParty: js.UndefOr[String] = js.native
+  var primaryParty: js.UndefOr[String] = js.undefined
   
   /**
     * The set of ballot responses for the referendum. A ballot response
@@ -80,83 +78,83 @@ trait SchemaContest extends StObject {
     * &quot;yes&quot; or &quot;no&quot; for referenda. This field is only
     * populated for contests of type &#39;Referendum&#39;.
     */
-  var referendumBallotResponses: js.UndefOr[js.Array[String]] = js.native
+  var referendumBallotResponses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies a short summary of the referendum that is typically on the
     * ballot below the title but above the text. This field is only populated
     * for contests of type &#39;Referendum&#39;.
     */
-  var referendumBrief: js.UndefOr[String] = js.native
+  var referendumBrief: js.UndefOr[String] = js.undefined
   
   /**
     * A statement in opposition to the referendum. It does not necessarily
     * appear on the ballot. This field is only populated for contests of type
     * &#39;Referendum&#39;.
     */
-  var referendumConStatement: js.UndefOr[String] = js.native
+  var referendumConStatement: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies what effect abstaining (not voting) on the proposition will
     * have (i.e. whether abstaining is considered a vote against it). This
     * field is only populated for contests of type &#39;Referendum&#39;.
     */
-  var referendumEffectOfAbstain: js.UndefOr[String] = js.native
+  var referendumEffectOfAbstain: js.UndefOr[String] = js.undefined
   
   /**
     * The threshold of votes that the referendum needs in order to pass, e.g.
     * &quot;two-thirds&quot;. This field is only populated for contests of type
     * &#39;Referendum&#39;.
     */
-  var referendumPassageThreshold: js.UndefOr[String] = js.native
+  var referendumPassageThreshold: js.UndefOr[String] = js.undefined
   
   /**
     * A statement in favor of the referendum. It does not necessarily appear on
     * the ballot. This field is only populated for contests of type
     * &#39;Referendum&#39;.
     */
-  var referendumProStatement: js.UndefOr[String] = js.native
+  var referendumProStatement: js.UndefOr[String] = js.undefined
   
   /**
     * A brief description of the referendum. This field is only populated for
     * contests of type &#39;Referendum&#39;.
     */
-  var referendumSubtitle: js.UndefOr[String] = js.native
+  var referendumSubtitle: js.UndefOr[String] = js.undefined
   
   /**
     * The full text of the referendum. This field is only populated for
     * contests of type &#39;Referendum&#39;.
     */
-  var referendumText: js.UndefOr[String] = js.native
+  var referendumText: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the referendum (e.g. &#39;Proposition 42&#39;). This field
     * is only populated for contests of type &#39;Referendum&#39;.
     */
-  var referendumTitle: js.UndefOr[String] = js.native
+  var referendumTitle: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the referendum. This field is only populated for contests of
     * type &#39;Referendum&#39;.
     */
-  var referendumUrl: js.UndefOr[String] = js.native
+  var referendumUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The roles which this office fulfills.
     */
-  var roles: js.UndefOr[js.Array[String]] = js.native
+  var roles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of sources for this contest. If multiple sources are listed, the
     * data has been aggregated from those sources.
     */
-  var sources: js.UndefOr[js.Array[SchemaSource]] = js.native
+  var sources: js.UndefOr[js.Array[SchemaSource]] = js.undefined
   
   /**
     * &quot;Yes&quot; or &quot;No&quot; depending on whether this a contest
     * being held outside the normal election cycle.
     */
-  var special: js.UndefOr[String] = js.native
+  var special: js.UndefOr[String] = js.undefined
   
   /**
     * The type of contest. Usually this will be &#39;General&#39;,
@@ -164,7 +162,7 @@ trait SchemaContest extends StObject {
     * referenda this will be &#39;Referendum&#39;. For Retention contests this
     * will typically be &#39;Retention&#39;.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaContest {
   

@@ -5,7 +5,6 @@ import typings.materialUiLab.materialUiLabStrings.div
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonSkeletonMod {
@@ -66,27 +65,26 @@ object skeletonSkeletonMod {
     def withChildren: typings.materialUiLab.materialUiLabStrings.withChildren = "withChildren".asInstanceOf[typings.materialUiLab.materialUiLabStrings.withChildren]
   }
   
-  type SkeletonProps[D /* <: ElementType[_] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<SkeletonTypeMap<P, D>, D> */ js.Any
+  type SkeletonProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<SkeletonTypeMap<P, D>, D> */ js.Any
   
-  @js.native
-  trait SkeletonTypeMap[P, D /* <: ElementType[_] */] extends StObject {
+  trait SkeletonTypeMap[P, D /* <: ElementType[js.Any] */] extends StObject {
     
-    var classKey: SkeletonClassKey = js.native
+    var classKey: SkeletonClassKey
     
-    var defaultComponent: div = js.native
+    var defaultComponent: div
     
-    var props: P with Animation = js.native
+    var props: P & Animation
   }
   object SkeletonTypeMap {
     
     @scala.inline
-    def apply[P, D /* <: ElementType[_] */](classKey: SkeletonClassKey, defaultComponent: div, props: P with Animation): SkeletonTypeMap[P, D] = {
-      val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+    def apply[P, D /* <: ElementType[js.Any] */](classKey: SkeletonClassKey, props: P & Animation): SkeletonTypeMap[P, D] = {
+      val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = "div", props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkeletonTypeMap[P, D]]
     }
     
     @scala.inline
-    implicit class SkeletonTypeMapMutableBuilder[Self <: SkeletonTypeMap[_, _], P, D /* <: ElementType[_] */] (val x: Self with (SkeletonTypeMap[P, D])) extends AnyVal {
+    implicit class SkeletonTypeMapMutableBuilder[Self <: SkeletonTypeMap[?, ?], P, D /* <: ElementType[js.Any] */] (val x: Self & (SkeletonTypeMap[P, D])) extends AnyVal {
       
       @scala.inline
       def setClassKey(value: SkeletonClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
@@ -95,7 +93,7 @@ object skeletonSkeletonMod {
       def setDefaultComponent(value: div): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProps(value: P with Animation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      def setProps(value: P & Animation): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,108 +33,105 @@ import typings.sdpTransform.sdpTransformStrings.sendonly
 import typings.sdpTransform.sdpTransformStrings.sendrecv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sdp-transform", "parse")
+  @JSImport("sdp-transform", JSImport.Namespace)
   @js.native
-  def parse(description: String): SessionDescription = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sdp-transform", "parseImageAttributes")
-  @js.native
-  def parseImageAttributes(params: String): js.Array[ParamMap] = js.native
+  @scala.inline
+  def parse(description: String): SessionDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(description.asInstanceOf[js.Any]).asInstanceOf[SessionDescription]
   
-  @JSImport("sdp-transform", "parseParams")
-  @js.native
-  def parseParams(params: String): ParamMap = js.native
+  @scala.inline
+  def parseImageAttributes(params: String): js.Array[ParamMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseImageAttributes")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[ParamMap]]
   
-  @JSImport("sdp-transform", "parsePayloads")
-  @js.native
-  def parsePayloads(payloads: String): js.Array[Double] = js.native
+  @scala.inline
+  def parseParams(params: String): ParamMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parseParams")(params.asInstanceOf[js.Any]).asInstanceOf[ParamMap]
   
-  @JSImport("sdp-transform", "parseRemoteCandidates")
-  @js.native
-  def parseRemoteCandidates(candidates: String): js.Array[Component] = js.native
+  @scala.inline
+  def parsePayloads(payloads: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePayloads")(payloads.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("sdp-transform", "parseSimulcastStreamList")
-  @js.native
-  def parseSimulcastStreamList(streams: String): js.Array[Paused] = js.native
+  @scala.inline
+  def parseRemoteCandidates(candidates: String): js.Array[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRemoteCandidates")(candidates.asInstanceOf[js.Any]).asInstanceOf[js.Array[Component]]
   
-  @JSImport("sdp-transform", "write")
-  @js.native
-  def write(description: SessionDescription): String = js.native
+  @scala.inline
+  def parseSimulcastStreamList(streams: String): js.Array[Paused] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSimulcastStreamList")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Array[Paused]]
   
-  @js.native
-  trait MediaAttributes extends SharedAttributes {
+  @scala.inline
+  def write(description: SessionDescription): String = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(description.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  trait MediaAttributes
+    extends StObject
+       with SharedAttributes {
     
     // a=candidate
-    var candidates: js.UndefOr[js.Array[Foundation]] = js.native
+    var candidates: js.UndefOr[js.Array[Foundation]] = js.undefined
     
     // a=crypto
-    var crypto: js.UndefOr[Id] = js.native
+    var crypto: js.UndefOr[Id] = js.undefined
     
     // a=end-of-candidates
-    var endOfCandidates: js.UndefOr[String] = js.native
+    var endOfCandidates: js.UndefOr[String] = js.undefined
     
     // a=fmtp
-    var fmtp: js.Array[Config] = js.native
+    var fmtp: js.Array[Config]
     
     // a=framerate
-    var framerate: js.UndefOr[Double | String] = js.native
+    var framerate: js.UndefOr[Double | String] = js.undefined
     
     // a=imageattr
-    var imageattrs: js.UndefOr[js.Array[Attrs1]] = js.native
+    var imageattrs: js.UndefOr[js.Array[Attrs1]] = js.undefined
     
     // a=maxptime
-    var maxptime: js.UndefOr[Double] = js.native
+    var maxptime: js.UndefOr[Double] = js.undefined
     
     // a=mid
-    var mid: js.UndefOr[String] = js.native
+    var mid: js.UndefOr[String] = js.undefined
     
     // a=msid
-    var msid: js.UndefOr[String] = js.native
+    var msid: js.UndefOr[String] = js.undefined
     
-    var ptime: js.UndefOr[Double] = js.native
+    var ptime: js.UndefOr[Double] = js.undefined
     
     // a=remote-candidates
-    var remoteCandidates: js.UndefOr[String] = js.native
+    var remoteCandidates: js.UndefOr[String] = js.undefined
     
     // a=rid
-    var rids: js.UndefOr[js.Array[Direction]] = js.native
+    var rids: js.UndefOr[js.Array[Direction]] = js.undefined
     
-    var rtcp: js.UndefOr[IpVer] = js.native
+    var rtcp: js.UndefOr[IpVer] = js.undefined
     
     // a=rtcp-fb:98 nack rpsi
-    var rtcpFb: js.UndefOr[js.Array[Payload]] = js.native
+    var rtcpFb: js.UndefOr[js.Array[Payload]] = js.undefined
     
     // a=rtcp-fb:98 trr-int 100
-    var rtcpFbTrrInt: js.UndefOr[js.Array[Value]] = js.native
+    var rtcpFbTrrInt: js.UndefOr[js.Array[Value]] = js.undefined
     
     // a=rtcp-mux
-    var rtcpMux: js.UndefOr[String] = js.native
+    var rtcpMux: js.UndefOr[String] = js.undefined
     
     // a=rtcp-rsize
-    var rtcpRsize: js.UndefOr[String] = js.native
+    var rtcpRsize: js.UndefOr[String] = js.undefined
     
-    var rtp: js.Array[Codec] = js.native
+    var rtp: js.Array[Codec]
     
     // a=sctpmap
-    var sctpmap: js.UndefOr[App] = js.native
+    var sctpmap: js.UndefOr[App] = js.undefined
     
-    var simulcast: js.UndefOr[Dir1] = js.native
+    var simulcast: js.UndefOr[Dir1] = js.undefined
     
-    var simulcast_03: js.UndefOr[ValueString] = js.native
+    var simulcast_03: js.UndefOr[ValueString] = js.undefined
     
     // a=ssrc-group:
-    var ssrcGroups: js.UndefOr[js.Array[Semantics]] = js.native
+    var ssrcGroups: js.UndefOr[js.Array[Semantics]] = js.undefined
     
     // a=ssrc:
-    var ssrcs: js.UndefOr[js.Array[Attribute]] = js.native
+    var ssrcs: js.UndefOr[js.Array[Attribute]] = js.undefined
     
     // a=x-google-flag
-    var xGoogleFlag: js.UndefOr[String] = js.native
+    var xGoogleFlag: js.UndefOr[String] = js.undefined
   }
   object MediaAttributes {
     
@@ -314,10 +311,10 @@ object mod {
     }
   }
   
-  @js.native
   trait MediaDescription
-    extends MediaAttributes
+    extends StObject
        with SharedDescriptionFields
+       with MediaAttributes
   object MediaDescription {
     
     @scala.inline
@@ -329,19 +326,20 @@ object mod {
   
   type ParamMap = StringDictionary[Double | String]
   
-  @js.native
-  trait SessionAttributes extends SharedAttributes {
+  trait SessionAttributes
+    extends StObject
+       with SharedAttributes {
     
     // a=group:BUNDLE audio video
-    var groups: js.UndefOr[js.Array[Mids]] = js.native
+    var groups: js.UndefOr[js.Array[Mids]] = js.undefined
     
     // a=ice-options:google-ice
-    var iceOptions: js.UndefOr[String] = js.native
+    var iceOptions: js.UndefOr[String] = js.undefined
     
-    var icelite: js.UndefOr[String] = js.native
+    var icelite: js.UndefOr[String] = js.undefined
     
     // a=msid-semantic: WMS Jvlam5X3SX1OP6pn20zWogvaKJz5Hjf9OnlV
-    var msidSemantic: js.UndefOr[Semantic] = js.native
+    var msidSemantic: js.UndefOr[Semantic] = js.undefined
   }
   object SessionAttributes {
     
@@ -383,39 +381,39 @@ object mod {
     }
   }
   
-  @js.native
   trait SessionDescription
-    extends SessionAttributes
-       with SharedDescriptionFields {
+    extends StObject
+       with SharedDescriptionFields
+       with SessionAttributes {
     
     // e=
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     // m=
-    var media: js.Array[typestringportnumberproto] = js.native
+    var media: js.Array[typestringportnumberproto]
     
     // s=
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     // o=
-    var origin: js.UndefOr[Address] = js.native
+    var origin: js.UndefOr[Address] = js.undefined
     
     // p=
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
     // r=
-    var repeats: js.UndefOr[String] = js.native
+    var repeats: js.UndefOr[String] = js.undefined
     
     // z=
-    var timezones: js.UndefOr[String] = js.native
+    var timezones: js.UndefOr[String] = js.undefined
     
     // t=0 0
-    var timing: js.UndefOr[Start] = js.native
+    var timing: js.UndefOr[Start] = js.undefined
     
     // u=
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object SessionDescription {
     
@@ -490,34 +488,33 @@ object mod {
     }
   }
   
-  @js.native
   trait SharedAttributes extends StObject {
     
     // a=control
-    var control: js.UndefOr[String] = js.native
+    var control: js.UndefOr[String] = js.undefined
     
     // a=sendrecv
     // a=recvonly
     // a=sendonly
     // a=inactive
-    var direction: js.UndefOr[sendrecv | recvonly | sendonly | inactive] = js.native
+    var direction: js.UndefOr[sendrecv | recvonly | sendonly | inactive] = js.undefined
     
     // a=extmap
-    var ext: js.UndefOr[js.Array[Uri]] = js.native
+    var ext: js.UndefOr[js.Array[Uri]] = js.undefined
     
-    var fingerprint: js.UndefOr[Hash] = js.native
+    var fingerprint: js.UndefOr[Hash] = js.undefined
     
-    var icePwd: js.UndefOr[String] = js.native
+    var icePwd: js.UndefOr[String] = js.undefined
     
-    var iceUfrag: js.UndefOr[String] = js.native
+    var iceUfrag: js.UndefOr[String] = js.undefined
     
-    var invalid: js.UndefOr[js.Array[ValueString]] = js.native
+    var invalid: js.UndefOr[js.Array[ValueString]] = js.undefined
     
     // a=setup
-    var setup: js.UndefOr[String] = js.native
+    var setup: js.UndefOr[String] = js.undefined
     
     // a=source-filter: incl IN IP4 239.5.2.31 10.1.15.5
-    var sourceFilter: js.UndefOr[AddressTypes] = js.native
+    var sourceFilter: js.UndefOr[AddressTypes] = js.undefined
   }
   object SharedAttributes {
     
@@ -592,17 +589,16 @@ object mod {
     }
   }
   
-  @js.native
   trait SharedDescriptionFields extends StObject {
     
     // b=AS:4000
-    var bandwidth: js.UndefOr[js.Array[Limit]] = js.native
+    var bandwidth: js.UndefOr[js.Array[Limit]] = js.undefined
     
     // c=IN IP4 10.47.197.26
-    var connection: js.UndefOr[Ip] = js.native
+    var connection: js.UndefOr[Ip] = js.undefined
     
     // i=
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object SharedDescriptionFields {
     

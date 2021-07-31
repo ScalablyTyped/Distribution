@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesisanalyticsv2ApplicationMod {
@@ -91,6 +90,10 @@ object kinesisanalyticsv2ApplicationMod {
   /* static members */
   object Application {
     
+    @JSImport("@pulumi/aws/kinesisanalyticsv2/application", "Application")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Application resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,29 +103,23 @@ object kinesisanalyticsv2ApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kinesisanalyticsv2/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Application = js.native
-    @JSImport("@pulumi/aws/kinesisanalyticsv2/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Application = js.native
-    @JSImport("@pulumi/aws/kinesisanalyticsv2/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState): Application = js.native
-    @JSImport("@pulumi/aws/kinesisanalyticsv2/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kinesisanalyticsv2/application", "Application.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean]
   }
   
-  @js.native
   trait ApplicationArgs extends StObject {
     
     /**
@@ -132,7 +129,7 @@ object kinesisanalyticsv2ApplicationMod {
         Input[
           typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationApplicationConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A [CloudWatch log stream](https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_stream.html) to monitor application configuration errors.
@@ -141,32 +138,32 @@ object kinesisanalyticsv2ApplicationMod {
         Input[
           typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationCloudwatchLoggingOptions
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A summary description of the application.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the application.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The runtime environment for the application. Valid values: `SQL-1_0`, `FLINK-1_6`, `FLINK-1_8`.
       */
-    val runtimeEnvironment: Input[String] = js.native
+    val runtimeEnvironment: Input[String]
     
     /**
       * The ARN of the [IAM role](https://www.terraform.io/docs/providers/aws/r/iam_role.html) used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
       */
-    val serviceExecutionRole: Input[String] = js.native
+    val serviceExecutionRole: Input[String]
     
     /**
       * A map of tags to assign to the application.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ApplicationArgs {
     
@@ -225,7 +222,6 @@ object kinesisanalyticsv2ApplicationMod {
     }
   }
   
-  @js.native
   trait ApplicationState extends StObject {
     
     /**
@@ -235,12 +231,12 @@ object kinesisanalyticsv2ApplicationMod {
         Input[
           typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationApplicationConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN of the application.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A [CloudWatch log stream](https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_stream.html) to monitor application configuration errors.
@@ -249,52 +245,52 @@ object kinesisanalyticsv2ApplicationMod {
         Input[
           typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationCloudwatchLoggingOptions
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The current timestamp when the application was created.
       */
-    val createTimestamp: js.UndefOr[Input[String]] = js.native
+    val createTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A summary description of the application.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The current timestamp when the application was last updated.
       */
-    val lastUpdateTimestamp: js.UndefOr[Input[String]] = js.native
+    val lastUpdateTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the application.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The runtime environment for the application. Valid values: `SQL-1_0`, `FLINK-1_6`, `FLINK-1_8`.
       */
-    val runtimeEnvironment: js.UndefOr[Input[String]] = js.native
+    val runtimeEnvironment: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the [IAM role](https://www.terraform.io/docs/providers/aws/r/iam_role.html) used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
       */
-    val serviceExecutionRole: js.UndefOr[Input[String]] = js.native
+    val serviceExecutionRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the application.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the application.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The current application version. Kinesis Data Analytics updates the `versionId` each time the application is updated.
       */
-    val versionId: js.UndefOr[Input[Double]] = js.native
+    val versionId: js.UndefOr[Input[Double]] = js.undefined
   }
   object ApplicationState {
     

@@ -4,10 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.pan
 import typings.arcgisJsApi.arcgisJsApiStrings.rotate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationToggleViewModelProperties extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait NavigationToggleViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#navigationMode)
     */
-  var navigationMode: js.UndefOr[pan | rotate] = js.native
+  var navigationMode: js.UndefOr[pan | rotate] = js.undefined
   
   /**
     * The view associated with the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object NavigationToggleViewModelProperties {
   

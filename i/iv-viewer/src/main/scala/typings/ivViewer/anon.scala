@@ -4,27 +4,25 @@ import typings.ivViewer.mod.IVImage
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Container extends StObject {
     
-    var container: Element | Null = js.native
+    var container: Element | Null
     
-    var domElement: Element | Null = js.native
+    var domElement: Element | Null
     
-    var hiResImageSrc: IVImage = js.native
+    var hiResImageSrc: IVImage
     
-    var imageSrc: IVImage = js.native
+    var imageSrc: IVImage
   }
   object Container {
     
     @scala.inline
     def apply(): Container = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(container = null, domElement = null, hiResImageSrc = null, imageSrc = null)
       __obj.asInstanceOf[Container]
     }
     
@@ -57,12 +55,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

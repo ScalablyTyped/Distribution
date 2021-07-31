@@ -2,12 +2,12 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToolbarBuilder
-  extends ContainerBuilder[ToolbarContainer, ToolbarLayout, js.Any] {
+  extends StObject
+     with ContainerBuilder[ToolbarContainer, ToolbarLayout, js.Any] {
   
   /**
     * Creates a child component and adds it to this container.
@@ -23,5 +23,5 @@ trait ToolbarBuilder
     */
   def addToolbarItems(toolbarComponents: js.Array[ToolbarComponent]): Unit = js.native
   
-  def withToolbarItems(components: js.Array[ToolbarComponent]): ContainerBuilder[ToolbarContainer, ToolbarLayout, _] = js.native
+  def withToolbarItems(components: js.Array[ToolbarComponent]): ContainerBuilder[ToolbarContainer, ToolbarLayout, js.Any] = js.native
 }

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryLogMod {
@@ -38,6 +37,10 @@ object queryLogMod {
   /* static members */
   object QueryLog {
     
+    @JSImport("@pulumi/aws/route53/queryLog", "QueryLog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing QueryLog resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object queryLogMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/queryLog", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID]): QueryLog = js.native
-    @JSImport("@pulumi/aws/route53/queryLog", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): QueryLog = js.native
-    @JSImport("@pulumi/aws/route53/queryLog", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueryLogState): QueryLog = js.native
-    @JSImport("@pulumi/aws/route53/queryLog", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): QueryLog = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueryLogState): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[QueryLog]
     
     /**
       * Returns true if the given object is an instance of QueryLog.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/queryLog", "QueryLog.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean]
   }
   
-  @js.native
   trait QueryLogArgs extends StObject {
     
     /**
       * CloudWatch log group ARN to send query logs.
       */
-    val cloudwatchLogGroupArn: Input[String] = js.native
+    val cloudwatchLogGroupArn: Input[String]
     
     /**
       * Route53 hosted zone ID to enable query logs.
       */
-    val zoneId: Input[String] = js.native
+    val zoneId: Input[String]
   }
   object QueryLogArgs {
     
@@ -101,18 +98,17 @@ object queryLogMod {
     }
   }
   
-  @js.native
   trait QueryLogState extends StObject {
     
     /**
       * CloudWatch log group ARN to send query logs.
       */
-    val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.native
+    val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Route53 hosted zone ID to enable query logs.
       */
-    val zoneId: js.UndefOr[Input[String]] = js.native
+    val zoneId: js.UndefOr[Input[String]] = js.undefined
   }
   object QueryLogState {
     

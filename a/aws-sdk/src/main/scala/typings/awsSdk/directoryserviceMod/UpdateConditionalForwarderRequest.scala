@@ -2,26 +2,24 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConditionalForwarderRequest extends StObject {
   
   /**
     * The directory ID of the AWS directory for which to update the conditional forwarder.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The updated IP addresses of the remote DNS server associated with the conditional forwarder.
     */
-  var DnsIpAddrs: typings.awsSdk.directoryserviceMod.DnsIpAddrs = js.native
+  var DnsIpAddrs: typings.awsSdk.directoryserviceMod.DnsIpAddrs
   
   /**
     * The fully qualified domain name (FQDN) of the remote domain with which you will set up a trust relationship.
     */
-  var RemoteDomainName: typings.awsSdk.directoryserviceMod.RemoteDomainName = js.native
+  var RemoteDomainName: typings.awsSdk.directoryserviceMod.RemoteDomainName
 }
 object UpdateConditionalForwarderRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplySecurityGroupsToLoadBalancerOutput extends StObject {
   
   /**
     * The IDs of the security groups associated with the load balancer.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.elbMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.elbMod.SecurityGroups] = js.undefined
 }
 object ApplySecurityGroupsToLoadBalancerOutput {
   

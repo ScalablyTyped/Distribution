@@ -1,15 +1,20 @@
 package typings.reactNavigationDrawer
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Context
+import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation-drawer/lib/typescript/src/utils/DrawerProgressContext", JSImport.Namespace)
-@js.native
-object drawerProgressContextMod extends js.Object {
-  val default: Context[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
-  ] = js.native
+object drawerProgressContextMod extends Shortcut {
+  
+  @JSImport("react-navigation-drawer/lib/typescript/src/utils/DrawerProgressContext", JSImport.Default)
+  @js.native
+  val default: Context[Node | Null] = js.native
+  
+  type _To = Context[Node | Null]
+  
+  /* This means you don't have to write `default`, but can instead just say `drawerProgressContextMod.foo` */
+  override def _to: Context[Node | Null] = default
 }
-

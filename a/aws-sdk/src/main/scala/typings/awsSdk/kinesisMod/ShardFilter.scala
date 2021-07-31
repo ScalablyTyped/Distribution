@@ -2,17 +2,15 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShardFilter extends StObject {
   
-  var ShardId: js.UndefOr[typings.awsSdk.kinesisMod.ShardId] = js.native
+  var ShardId: js.UndefOr[typings.awsSdk.kinesisMod.ShardId] = js.undefined
   
-  var Timestamp: js.UndefOr[typings.awsSdk.kinesisMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.kinesisMod.Timestamp] = js.undefined
   
-  var Type: ShardFilterType = js.native
+  var Type: ShardFilterType
 }
 object ShardFilter {
   

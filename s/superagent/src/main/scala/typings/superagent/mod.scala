@@ -28,7 +28,6 @@ import typings.superagent.superagentStrings.response
 import typings.superagent.superagentStrings.upload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -41,16 +40,17 @@ object mod extends Shortcut {
   
   type CallbackHandler = js.Function2[/* err */ js.Any, /* res */ Response, Unit]
   
-  @js.native
-  trait HTTPError extends Error {
+  trait HTTPError
+    extends StObject
+       with Error {
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var status: Double = js.native
+    var status: Double
     
-    var text: String = js.native
+    var text: String
   }
   object HTTPError {
     
@@ -91,16 +91,15 @@ object mod extends Shortcut {
   
   type Plugin = js.Function1[/* req */ SuperAgentRequest, Unit]
   
-  @js.native
   trait ProgressEvent extends StObject {
     
-    var direction: download | upload = js.native
+    var direction: download | upload
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
   }
   object ProgressEvent {
     
@@ -211,9 +210,9 @@ object mod extends Shortcut {
     def responseType(`type`: String): this.type = js.native
     
     def retry(): this.type = js.native
-    def retry(count: js.UndefOr[scala.Nothing], callback: CallbackHandler): this.type = js.native
     def retry(count: Double): this.type = js.native
     def retry(count: Double, callback: CallbackHandler): this.type = js.native
+    def retry(count: Unit, callback: CallbackHandler): this.type = js.native
     
     def send(): this.type = js.native
     def send(data: String): this.type = js.native
@@ -247,7 +246,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Response extends ReadableStream {
+  trait Response
+    extends StObject
+       with ReadableStream {
     
     var accepted: Boolean = js.native
     
@@ -304,12 +305,13 @@ object mod extends Shortcut {
     var xhr: XMLHttpRequest = js.native
   }
   
-  @js.native
-  trait ResponseError extends Error {
+  trait ResponseError
+    extends StObject
+       with Error {
     
-    var response: js.UndefOr[Response] = js.native
+    var response: js.UndefOr[Response] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object ResponseError {
     
@@ -446,7 +448,7 @@ object mod extends Shortcut {
     def apply(method: String, url: String): SuperAgentRequest = js.native
     def apply(url: String): SuperAgentRequest = js.native
     
-    def agent(): this.type with Request = js.native
+    def agent(): this.type & Request = js.native
     
     var parse: StringDictionary[Parser] = js.native
     

@@ -2,29 +2,27 @@ package typings.logkitty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DEBUG extends StObject {
     
-    var DEBUG: Double = js.native
+    var DEBUG: Double
     
-    var ERROR: Double = js.native
+    var ERROR: Double
     
-    var FATAL: Double = js.native
+    var FATAL: Double
     
-    var INFO: Double = js.native
+    var INFO: Double
     
-    var SILENT: Double = js.native
+    var SILENT: Double
     
-    var UNKNOWN: Double = js.native
+    var UNKNOWN: Double
     
-    var VERBOSE: Double = js.native
+    var VERBOSE: Double
     
-    var WARN: Double = js.native
+    var WARN: Double
   }
   object DEBUG {
     
@@ -72,16 +70,15 @@ object anon {
     }
   }
   
-  @js.native
   trait DEFAULT extends StObject {
     
-    var DEBUG: Double = js.native
+    var DEBUG: Double
     
-    var DEFAULT: Double = js.native
+    var DEFAULT: Double
     
-    var ERROR: Double = js.native
+    var ERROR: Double
     
-    var INFO: Double = js.native
+    var INFO: Double
   }
   object DEFAULT {
     
@@ -108,10 +105,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FromName extends StObject {
     
-    def fromName(key: js.Any): Double = js.native
+    def fromName(key: js.Any): Double
   }
   object FromName {
     

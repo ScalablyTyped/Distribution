@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEventSourcesRequest extends StObject {
   
   /**
     * Specifying this limits the number of results returned by this operation. The operation also returns a NextToken which you can use in a subsequent operation to retrieve the next set of results.
     */
-  var Limit: js.UndefOr[LimitMax100] = js.native
+  var Limit: js.UndefOr[LimitMax100] = js.undefined
   
   /**
     * Specifying this limits the results to only those partner event sources with names that start with the specified prefix.
     */
-  var NamePrefix: js.UndefOr[EventSourceNamePrefix] = js.native
+  var NamePrefix: js.UndefOr[EventSourceNamePrefix] = js.undefined
   
   /**
     * The token returned by a previous call to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.undefined
 }
 object ListEventSourcesRequest {
   

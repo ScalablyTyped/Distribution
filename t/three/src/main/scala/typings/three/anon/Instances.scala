@@ -2,17 +2,15 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instances extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var instances: Double = js.native
+  var instances: Double
   
-  var start: Double = js.native
+  var start: Double
 }
 object Instances {
   

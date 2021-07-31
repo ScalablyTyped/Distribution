@@ -4,7 +4,6 @@ import typings.ckeditorCkeditor5Engine.anon.Shallow
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/treewalker
@@ -20,7 +19,7 @@ class TreeWalker protected () extends StObject {
   val ignoreElementEnd: Boolean = js.native
   
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[TreeWalkerValue, _, js.UndefOr[scala.Nothing]]] = js.native
+  var iterator: js.Function0[Iterator[TreeWalkerValue, js.Any, Unit]] = js.native
   
   def next(): TreeWalkerValue = js.native
   

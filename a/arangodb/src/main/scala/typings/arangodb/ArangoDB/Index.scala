@@ -2,33 +2,31 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index[T /* <: js.Object */] extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var deduplicate: Boolean = js.native
+  var deduplicate: Boolean
   
-  var expireAfter: js.UndefOr[Double] = js.native
+  var expireAfter: js.UndefOr[Double] = js.undefined
   
-  var fields: js.Array[/* keyof T */ String] = js.native
+  var fields: js.Array[/* keyof T */ String]
   
-  var id: String = js.native
+  var id: String
   
-  var isNewlyCreated: Boolean = js.native
+  var isNewlyCreated: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var selectivityEstimate: Double = js.native
+  var selectivityEstimate: Double
   
-  var sparse: Boolean = js.native
+  var sparse: Boolean
   
-  var `type`: IndexType = js.native
+  var `type`: IndexType
   
-  var unique: Boolean = js.native
+  var unique: Boolean
 }
 object Index {
   
@@ -51,7 +49,7 @@ object Index {
   }
   
   @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index[_], T /* <: js.Object */] (val x: Self with Index[T]) extends AnyVal {
+  implicit class IndexMutableBuilder[Self <: Index[?], T /* <: js.Object */] (val x: Self & Index[T]) extends AnyVal {
     
     @scala.inline
     def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])

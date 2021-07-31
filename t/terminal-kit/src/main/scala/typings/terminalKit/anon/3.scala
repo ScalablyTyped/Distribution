@@ -3,13 +3,11 @@ package typings.terminalKit.anon
 import typings.terminalKit.terminalMod.GridMenuResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var promise: js.Promise[GridMenuResponse] = js.native
+  var promise: js.Promise[GridMenuResponse]
 }
 object `3` {
   

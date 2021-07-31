@@ -2,23 +2,21 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoundingBox extends StObject {
   
   /** The height. */
-  var height: Double = js.native
+  var height: Double
   
   /** The width. */
-  var width: Double = js.native
+  var width: Double
   
   /** The x-coordinate of top-left corner. */
-  var x: Double = js.native
+  var x: Double
   
   /** The y-coordinate of top-left corner. */
-  var y: Double = js.native
+  var y: Double
 }
 object BoundingBox {
   

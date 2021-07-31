@@ -5,7 +5,6 @@ import typings.googleapis.v1beta1Mod.alertcenterV1beta1.Alertcenter
 import typings.googleapis.v1beta1Mod.alertcenterV1beta1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

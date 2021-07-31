@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptStackTraceElement extends StObject {
   
   /** The name of the function that failed. */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /** The line number where the script failed. */
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
 }
 object ScriptStackTraceElement {
   

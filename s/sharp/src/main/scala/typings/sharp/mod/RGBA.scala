@@ -2,19 +2,17 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RGBA extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var b: js.UndefOr[Double] = js.native
+  var b: js.UndefOr[Double] = js.undefined
   
-  var g: js.UndefOr[Double] = js.native
+  var g: js.UndefOr[Double] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
 }
 object RGBA {
   

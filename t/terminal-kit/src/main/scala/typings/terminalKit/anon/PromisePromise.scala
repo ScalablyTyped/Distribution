@@ -3,13 +3,11 @@ package typings.terminalKit.anon
 import typings.terminalKit.terminalMod.SingleLineMenuResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromisePromise extends StObject {
   
-  var promise: js.Promise[SingleLineMenuResponse] = js.native
+  var promise: js.Promise[SingleLineMenuResponse]
 }
 object PromisePromise {
   

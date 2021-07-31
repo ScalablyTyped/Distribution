@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NamespaceSpec describes the attributes on a Namespace.
   */
-@js.native
 trait NamespaceSpec extends StObject {
   
   /**
     * Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
     */
-  var finalizers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var finalizers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object NamespaceSpec {
   

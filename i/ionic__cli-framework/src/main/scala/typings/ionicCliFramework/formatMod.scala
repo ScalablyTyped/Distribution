@@ -3,46 +3,40 @@ package typings.ionicCliFramework
 import typings.stringWidth.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatMod {
+  
+  @JSImport("@ionic/cli-framework/utils/format", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/utils/format", "TTY_WIDTH")
   @js.native
   val TTY_WIDTH: Double = js.native
   
-  @JSImport("@ionic/cli-framework/utils/format", "columnar")
-  @js.native
-  def columnar(rows: js.Array[js.Array[String]], hasHsepVsepHeaders: ColumnarOptions): String = js.native
+  @scala.inline
+  def columnar(rows: js.Array[js.Array[String]], hasHsepVsepHeaders: ColumnarOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("columnar")(rows.asInstanceOf[js.Any], hasHsepVsepHeaders.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/utils/format", "expandPath")
-  @js.native
-  def expandPath(p: String): String = js.native
+  @scala.inline
+  def expandPath(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("expandPath")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/utils/format", "generateFillSpaceStringList")
-  @js.native
-  def generateFillSpaceStringList(list: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@ionic/cli-framework/utils/format", "generateFillSpaceStringList")
-  @js.native
-  def generateFillSpaceStringList(list: js.Array[String], optimalLength: js.UndefOr[scala.Nothing], fillCharacter: String): js.Array[String] = js.native
-  @JSImport("@ionic/cli-framework/utils/format", "generateFillSpaceStringList")
-  @js.native
-  def generateFillSpaceStringList(list: js.Array[String], optimalLength: Double): js.Array[String] = js.native
-  @JSImport("@ionic/cli-framework/utils/format", "generateFillSpaceStringList")
-  @js.native
-  def generateFillSpaceStringList(list: js.Array[String], optimalLength: Double, fillCharacter: String): js.Array[String] = js.native
+  @scala.inline
+  def generateFillSpaceStringList(list: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFillSpaceStringList")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def generateFillSpaceStringList(list: js.Array[String], optimalLength: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateFillSpaceStringList")(list.asInstanceOf[js.Any], optimalLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def generateFillSpaceStringList(list: js.Array[String], optimalLength: Double, fillCharacter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateFillSpaceStringList")(list.asInstanceOf[js.Any], optimalLength.asInstanceOf[js.Any], fillCharacter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def generateFillSpaceStringList(list: js.Array[String], optimalLength: Unit, fillCharacter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateFillSpaceStringList")(list.asInstanceOf[js.Any], optimalLength.asInstanceOf[js.Any], fillCharacter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@ionic/cli-framework/utils/format", "indent")
-  @js.native
-  def indent(): String = js.native
-  @JSImport("@ionic/cli-framework/utils/format", "indent")
-  @js.native
-  def indent(n: Double): String = js.native
+  @scala.inline
+  def indent(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("indent")().asInstanceOf[String]
+  @scala.inline
+  def indent(n: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("indent")(n.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/utils/format", "prettyPath")
-  @js.native
-  def prettyPath(p: String): String = js.native
+  @scala.inline
+  def prettyPath(p: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPath")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object stringWidth {
     
@@ -60,9 +54,8 @@ object formatMod {
     	//=> 2
     	```
     	*/
-    @JSImport("@ionic/cli-framework/utils/format", "stringWidth.<apply>")
-    @js.native
-    def apply(string: String): Double = js.native
+    @scala.inline
+    def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     @JSImport("@ionic/cli-framework/utils/format", "stringWidth")
     @js.native
@@ -91,29 +84,25 @@ object formatMod {
     // TODO: remove this in the next major version, refactor the whole definition to:
     // declare function stringWidth(string: string): number;
     // export = stringWidth;
-    @JSImport("@ionic/cli-framework/utils/format", "stringWidth.default")
-    @js.native
-    def default(string: String): Double = js.native
+    @scala.inline
+    def default(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
     @scala.inline
     def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@ionic/cli-framework/utils/format", "stripAnsi")
-  @js.native
-  def stripAnsi(string: String): String = js.native
+  @scala.inline
+  def stripAnsi(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripAnsi")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/utils/format", "wordWrap")
-  @js.native
-  def wordWrap(msg: String, hasWidthIndentationAppend: WordWrapOptions): String = js.native
+  @scala.inline
+  def wordWrap(msg: String, hasWidthIndentationAppend: WordWrapOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(msg.asInstanceOf[js.Any], hasWidthIndentationAppend.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait ColumnarOptions extends StObject {
     
-    var headers: js.UndefOr[js.Array[String]] = js.native
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hsep: js.UndefOr[String] = js.native
+    var hsep: js.UndefOr[String] = js.undefined
     
-    var vsep: js.UndefOr[String] = js.native
+    var vsep: js.UndefOr[String] = js.undefined
   }
   object ColumnarOptions {
     
@@ -149,14 +138,13 @@ object formatMod {
     }
   }
   
-  @js.native
   trait WordWrapOptions extends StObject {
     
-    var append: js.UndefOr[String] = js.native
+    var append: js.UndefOr[String] = js.undefined
     
-    var indentation: js.UndefOr[Double] = js.native
+    var indentation: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object WordWrapOptions {
     

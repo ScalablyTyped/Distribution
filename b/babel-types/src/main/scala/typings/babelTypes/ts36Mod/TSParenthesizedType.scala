@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSParenthesizedType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSParenthesizedType: typings.babelTypes.babelTypesStrings.TSParenthesizedType = js.native
+  var type_TSParenthesizedType: typings.babelTypes.babelTypesStrings.TSParenthesizedType
 }
 object TSParenthesizedType {
   

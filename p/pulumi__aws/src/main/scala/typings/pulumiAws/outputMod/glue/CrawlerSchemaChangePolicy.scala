@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawlerSchemaChangePolicy extends StObject {
   
   /**
     * The deletion behavior when the crawler finds a deleted object. Valid values: `LOG`, `DELETE_FROM_DATABASE`, or `DEPRECATE_IN_DATABASE`. Defaults to `DEPRECATE_IN_DATABASE`.
     */
-  var deleteBehavior: js.UndefOr[String] = js.native
+  var deleteBehavior: js.UndefOr[String] = js.undefined
   
   /**
     * The update behavior when the crawler finds a changed schema. Valid values: `LOG` or `UPDATE_IN_DATABASE`. Defaults to `UPDATE_IN_DATABASE`.
     */
-  var updateBehavior: js.UndefOr[String] = js.native
+  var updateBehavior: js.UndefOr[String] = js.undefined
 }
 object CrawlerSchemaChangePolicy {
   

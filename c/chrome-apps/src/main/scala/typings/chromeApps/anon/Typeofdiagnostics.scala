@@ -2,14 +2,12 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofdiagnostics extends StObject {
   
   /** @todo TODO PROPER DOCS */
-  def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit = js.native
+  def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit
 }
 object Typeofdiagnostics {
   

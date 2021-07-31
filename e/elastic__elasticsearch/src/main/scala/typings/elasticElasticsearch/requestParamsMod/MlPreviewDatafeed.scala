@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlPreviewDatafeed extends Generic {
+trait MlPreviewDatafeed
+  extends StObject
+     with Generic {
   
-  var datafeed_id: String = js.native
+  var datafeed_id: String
 }
 object MlPreviewDatafeed {
   

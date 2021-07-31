@@ -2,22 +2,20 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --电量
-@js.native
 trait BatteryInfo extends StObject {
   
   /**
     * 是否正在充电
     */
-  var isCharging: Boolean = js.native
+  var isCharging: Boolean
   
   /**
     * 设备电量，范围 1 - 100
     */
-  var level: String = js.native
+  var level: String
 }
 object BatteryInfo {
   

@@ -2,19 +2,17 @@ package typings.mapsjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait repositionStatsObj extends StObject {
   
-  var centerX: Double = js.native
+  var centerX: Double
   
-  var centerY: Double = js.native
+  var centerY: Double
   
-  var mapUnitsPerPixel: Double = js.native
+  var mapUnitsPerPixel: Double
   
-  var zoomLevel: Double = js.native
+  var zoomLevel: Double
 }
 object repositionStatsObj {
   

@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementNotStatementStatementOrStatementStatementNotStatementStatementXssMatchStatement extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementNotStatementSt
     Input[
       WebAclRuleStatementNotStatementStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatch
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. See Text Transformation below for details.
@@ -27,7 +25,7 @@ trait WebAclRuleStatementNotStatementStatementOrStatementStatementNotStatementSt
         WebAclRuleStatementNotStatementStatementOrStatementStatementNotStatementStatementXssMatchStatementTextTransformation
       ]
     ]
-  ] = js.native
+  ]
 }
 object WebAclRuleStatementNotStatementStatementOrStatementStatementNotStatementStatementXssMatchStatement {
   

@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,11 +33,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.Text")
 @js.native
 class Text protected ()
-  extends typings.pixiJs.PIXI.Text {
+  extends StObject
+     with typings.pixiJs.PIXI.Text {
   def this(text: String) = this()
   def this(text: String, style: js.Any) = this()
   def this(text: String, style: typings.pixiJs.PIXI.TextStyle) = this()
-  def this(text: String, style: js.UndefOr[scala.Nothing], canvas: HTMLCanvasElement) = this()
   def this(text: String, style: js.Any, canvas: HTMLCanvasElement) = this()
+  def this(text: String, style: Unit, canvas: HTMLCanvasElement) = this()
   def this(text: String, style: typings.pixiJs.PIXI.TextStyle, canvas: HTMLCanvasElement) = this()
 }

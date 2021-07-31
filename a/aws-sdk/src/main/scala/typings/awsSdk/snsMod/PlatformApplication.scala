@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlatformApplication extends StObject {
   
   /**
     * Attributes for platform application object.
     */
-  var Attributes: js.UndefOr[MapStringToString] = js.native
+  var Attributes: js.UndefOr[MapStringToString] = js.undefined
   
   /**
     * PlatformApplicationArn for platform application object.
     */
-  var PlatformApplicationArn: js.UndefOr[String] = js.native
+  var PlatformApplicationArn: js.UndefOr[String] = js.undefined
 }
 object PlatformApplication {
   

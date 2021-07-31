@@ -3,23 +3,21 @@ package typings.reactNativeElements.mod
 import typings.reactNative.mod.ModalProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomSheetProps extends StObject {
   
   /**
     * To show or hide the Bottom Sheet Component
     * @default false
     */
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
   /**
     * props of react native modal https://reactnative.dev/docs/modal#props
     * @default {}
     */
-  var modalProps: ModalProps = js.native
+  var modalProps: ModalProps
 }
 object BottomSheetProps {
   

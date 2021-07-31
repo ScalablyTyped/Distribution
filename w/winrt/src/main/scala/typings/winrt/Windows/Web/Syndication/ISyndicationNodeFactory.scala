@@ -2,13 +2,11 @@ package typings.winrt.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyndicationNodeFactory extends StObject {
   
-  def createSyndicationNode(nodeName: String, nodeNamespace: String, nodeValue: String): SyndicationNode = js.native
+  def createSyndicationNode(nodeName: String, nodeNamespace: String, nodeValue: String): SyndicationNode
 }
 object ISyndicationNodeFactory {
   

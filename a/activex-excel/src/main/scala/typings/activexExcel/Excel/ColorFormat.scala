@@ -5,32 +5,30 @@ import typings.activexOffice.Office.MsoRGBType
 import typings.activexOffice.Office.MsoThemeColorIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Brightness: Double = js.native
+  var Brightness: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Excel.ColorFormat_typekey")
-  var ExcelDotColorFormat_typekey: ColorFormat = js.native
+  var ExcelDotColorFormat_typekey: ColorFormat
   
-  var ObjectThemeColor: MsoThemeColorIndex = js.native
+  var ObjectThemeColor: MsoThemeColorIndex
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RGB: MsoRGBType = js.native
+  var RGB: MsoRGBType
   
-  var SchemeColor: Double = js.native
+  var SchemeColor: Double
   
-  var TintAndShade: Double = js.native
+  var TintAndShade: Double
   
-  val Type: MsoColorType = js.native
+  val Type: MsoColorType
 }
 object ColorFormat {
   

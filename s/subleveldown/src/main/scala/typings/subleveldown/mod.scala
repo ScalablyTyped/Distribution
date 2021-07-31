@@ -8,7 +8,6 @@ import typings.levelCodec.mod.CodecOptions
 import typings.levelup.mod.LevelUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,32 +21,38 @@ object mod {
     * @param opts
     * @see {@link https://github.com/Level/subleveldown#api subleveldown API}
     */
-  @JSImport("subleveldown", JSImport.Namespace)
-  @js.native
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
-  @JSImport("subleveldown", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  @scala.inline
+  def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  @scala.inline
   def apply[K, V](
-    db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]],
-    prefix: js.UndefOr[scala.Nothing],
+    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
+    prefix: String,
     opts: String
-  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
-  @JSImport("subleveldown", JSImport.Namespace)
-  @js.native
+  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  @scala.inline
   def apply[K, V](
-    db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]],
-    prefix: js.UndefOr[scala.Nothing],
+    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
+    prefix: String,
     opts: SubDownOptions
-  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
+  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  @scala.inline
+  def apply[K, V](
+    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
+    prefix: Unit,
+    opts: String
+  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  @scala.inline
+  def apply[K, V](
+    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
+    prefix: Unit,
+    opts: SubDownOptions
+  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  
   @JSImport("subleveldown", JSImport.Namespace)
   @js.native
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
-  @JSImport("subleveldown", JSImport.Namespace)
-  @js.native
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String, opts: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
-  @JSImport("subleveldown", JSImport.Namespace)
-  @js.native
-  def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String, opts: SubDownOptions): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
+  val ^ : js.Any = js.native
   
   /** @see {@link SubDownOptions#open} */
   type SubDownOpenHook = js.Function1[/* callback */ ErrorCallback, Unit]
@@ -56,9 +61,9 @@ object mod {
     * Any other options are passed along to the underlying `levelup` and `encoding-down` constructors.
     * {@link https://github.com/Level/subleveldown#api See their documentation for further details}.
     */
-  @js.native
   trait SubDownOptions
-    extends CodecOptions
+    extends StObject
+       with CodecOptions
        with // TODO: Remove and inherit from constructor options from levelup package
   /* key */ StringDictionary[js.Any] {
     
@@ -66,13 +71,13 @@ object mod {
       * Optional open hook called when the underlying `levelup` instance has been opened.
       * The hook receives a callback which must be called to finish opening.
       */
-    var open: js.UndefOr[SubDownOpenHook] = js.native
+    var open: js.UndefOr[SubDownOpenHook] = js.undefined
     
     /**
       * Character for separating sublevel prefixes from user keys and each other. Should be outside the character (or byte) range of user keys.
       * @default '!'
       */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object SubDownOptions {
     

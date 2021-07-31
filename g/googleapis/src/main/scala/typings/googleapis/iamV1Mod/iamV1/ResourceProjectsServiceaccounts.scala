@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Projects$Serviceaccounts")
@@ -31,7 +30,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaServiceAccount] = js.native
   def create(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def create(params: ParamsResourceProjectsServiceaccountsCreate): GaxiosPromise[SchemaServiceAccount] = js.native
   def create(
     params: ParamsResourceProjectsServiceaccountsCreate,
@@ -63,7 +62,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsServiceaccountsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsServiceaccountsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -93,7 +92,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def disable(): GaxiosPromise[SchemaEmpty] = js.native
   def disable(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def disable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def disable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def disable(params: ParamsResourceProjectsServiceaccountsDisable): GaxiosPromise[SchemaEmpty] = js.native
   def disable(params: ParamsResourceProjectsServiceaccountsDisable, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def disable(
@@ -123,7 +122,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def enable(): GaxiosPromise[SchemaEmpty] = js.native
   def enable(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def enable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def enable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def enable(params: ParamsResourceProjectsServiceaccountsEnable): GaxiosPromise[SchemaEmpty] = js.native
   def enable(params: ParamsResourceProjectsServiceaccountsEnable, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def enable(
@@ -152,7 +151,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(params: ParamsResourceProjectsServiceaccountsGet): GaxiosPromise[SchemaServiceAccount] = js.native
   def get(
     params: ParamsResourceProjectsServiceaccountsGet,
@@ -194,7 +193,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsServiceaccountsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsServiceaccountsGetiampolicy,
@@ -230,7 +229,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServiceAccountsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServiceAccountsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServiceAccountsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServiceAccountsResponse] = js.native
   def list(params: ParamsResourceProjectsServiceaccountsList): GaxiosPromise[SchemaListServiceAccountsResponse] = js.native
   def list(
     params: ParamsResourceProjectsServiceaccountsList,
@@ -266,7 +265,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaServiceAccount] = js.native
   def patch(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def patch(params: ParamsResourceProjectsServiceaccountsPatch): GaxiosPromise[SchemaServiceAccount] = js.native
   def patch(
     params: ParamsResourceProjectsServiceaccountsPatch,
@@ -310,7 +309,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsServiceaccountsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsServiceaccountsSetiampolicy,
@@ -347,7 +346,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def signBlob(): GaxiosPromise[SchemaSignBlobResponse] = js.native
   def signBlob(callback: BodyResponseCallback[SchemaSignBlobResponse]): Unit = js.native
-  def signBlob(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignBlobResponse] = js.native
+  def signBlob(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSignBlobResponse] = js.native
   def signBlob(params: ParamsResourceProjectsServiceaccountsSignblob): GaxiosPromise[SchemaSignBlobResponse] = js.native
   def signBlob(
     params: ParamsResourceProjectsServiceaccountsSignblob,
@@ -387,7 +386,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def signJwt(): GaxiosPromise[SchemaSignJwtResponse] = js.native
   def signJwt(callback: BodyResponseCallback[SchemaSignJwtResponse]): Unit = js.native
-  def signJwt(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignJwtResponse] = js.native
+  def signJwt(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSignJwtResponse] = js.native
   def signJwt(params: ParamsResourceProjectsServiceaccountsSignjwt): GaxiosPromise[SchemaSignJwtResponse] = js.native
   def signJwt(
     params: ParamsResourceProjectsServiceaccountsSignjwt,
@@ -421,7 +420,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsServiceaccountsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsServiceaccountsTestiampermissions,
@@ -455,7 +454,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def undelete(): GaxiosPromise[SchemaUndeleteServiceAccountResponse] = js.native
   def undelete(callback: BodyResponseCallback[SchemaUndeleteServiceAccountResponse]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUndeleteServiceAccountResponse] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUndeleteServiceAccountResponse] = js.native
   def undelete(params: ParamsResourceProjectsServiceaccountsUndelete): GaxiosPromise[SchemaUndeleteServiceAccountResponse] = js.native
   def undelete(
     params: ParamsResourceProjectsServiceaccountsUndelete,
@@ -491,7 +490,7 @@ class ResourceProjectsServiceaccounts protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaServiceAccount] = js.native
   def update(callback: BodyResponseCallback[SchemaServiceAccount]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServiceAccount] = js.native
   def update(params: ParamsResourceProjectsServiceaccountsUpdate): GaxiosPromise[SchemaServiceAccount] = js.native
   def update(
     params: ParamsResourceProjectsServiceaccountsUpdate,

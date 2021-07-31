@@ -18,21 +18,19 @@ import typings.activexLibreoffice.com_.sun.star.xml.dom.XNode
 import typings.activexLibreoffice.com_.sun.star.xml.dom.XNodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xpath {
   
-  @js.native
   trait Libxml2ExtensionHandle extends StObject {
     
-    var functionData: Double = js.native
+    var functionData: Double
     
-    var functionLookupFunction: Double = js.native
+    var functionLookupFunction: Double
     
-    var variableData: Double = js.native
+    var variableData: Double
     
-    var variableLookupFunction: Double = js.native
+    var variableLookupFunction: Double
   }
   object Libxml2ExtensionHandle {
     
@@ -73,10 +71,11 @@ object xpath {
     */
   type XPathException = Exception
   
-  @js.native
-  trait XPathExtension extends XXPathExtension {
+  trait XPathExtension
+    extends StObject
+       with XXPathExtension {
     
-    def createWithModel(Model: XModel, ContextNode: XNode): Unit = js.native
+    def createWithModel(Model: XModel, ContextNode: XNode): Unit
   }
   object XPathExtension {
     
@@ -147,8 +146,9 @@ object xpath {
     def XPATH_XSLT_TREE: `9` = 9.asInstanceOf[`9`]
   }
   
-  @js.native
-  trait XXPathAPI extends XInterface {
+  trait XXPathAPI
+    extends StObject
+       with XInterface {
     
     /**
       * Evaluate XPath Expression.
@@ -158,7 +158,7 @@ object xpath {
       * @see XXPathObject
       * @throws XPathException if the expression is malformed, or evaluation fails
       */
-    def eval(contextNode: XNode, expr: String): XXPathObject = js.native
+    def eval(contextNode: XNode, expr: String): XXPathObject
     
     /**
       * Evaluate XPath Expression.
@@ -169,13 +169,13 @@ object xpath {
       * @see XXPathObject
       * @throws XPathException if the expression is malformed, or evaluation fails
       */
-    def evalNS(contextNode: XNode, expr: String, namespaceNode: XNode): XXPathObject = js.native
+    def evalNS(contextNode: XNode, expr: String, namespaceNode: XNode): XXPathObject
     
-    def registerExtension(serviceName: String): Unit = js.native
+    def registerExtension(serviceName: String): Unit
     
-    def registerExtensionInstance(aExtension: XXPathExtension): Unit = js.native
+    def registerExtensionInstance(aExtension: XXPathExtension): Unit
     
-    def registerNS(prefix: String, url: String): Unit = js.native
+    def registerNS(prefix: String, url: String): Unit
     
     /**
       * Evaluate an XPath expression to select a list of nodes.
@@ -185,7 +185,7 @@ object xpath {
       * @see XNodeList
       * @throws XPathException if the expression is malformed, or evaluation fails
       */
-    def selectNodeList(contextNode: XNode, expr: String): XNodeList = js.native
+    def selectNodeList(contextNode: XNode, expr: String): XNodeList
     
     /**
       * Evaluate an XPath expression to select a list of nodes.
@@ -196,7 +196,7 @@ object xpath {
       * @see XNodeList
       * @throws XPathException if the expression is malformed, or evaluation fails
       */
-    def selectNodeListNS(contextNode: XNode, expr: String, namespaceNode: XNode): XNodeList = js.native
+    def selectNodeListNS(contextNode: XNode, expr: String, namespaceNode: XNode): XNodeList
     
     /**
       * Evaluate an XPath expression to select a single node.
@@ -205,7 +205,7 @@ object xpath {
       * @returns result of the XPath evaluation: a single node
       * @throws XPathException if the expression is malformed, or evaluation fails
       */
-    def selectSingleNode(contextNode: XNode, expr: String): XNode = js.native
+    def selectSingleNode(contextNode: XNode, expr: String): XNode
     
     /**
       * Evaluate an XPath expression to select a single node.
@@ -215,9 +215,9 @@ object xpath {
       * @returns result of the XPath evaluation: a single node
       * @throws XPathException if the expression is malformed, or evaluation fails
       */
-    def selectSingleNodeNS(contextNode: XNode, expr: String, namespaceNode: XNode): XNode = js.native
+    def selectSingleNodeNS(contextNode: XNode, expr: String, namespaceNode: XNode): XNode
     
-    def unregisterNS(prefix: String, url: String): Unit = js.native
+    def unregisterNS(prefix: String, url: String): Unit
   }
   object XXPathAPI {
     
@@ -276,12 +276,13 @@ object xpath {
     }
   }
   
-  @js.native
-  trait XXPathExtension extends XInterface {
+  trait XXPathExtension
+    extends StObject
+       with XInterface {
     
-    val Libxml2ExtensionHandle: typings.activexLibreoffice.com_.sun.star.xml.xpath.Libxml2ExtensionHandle = js.native
+    val Libxml2ExtensionHandle: typings.activexLibreoffice.com_.sun.star.xml.xpath.Libxml2ExtensionHandle
     
-    def getLibxml2ExtensionHandle(): typings.activexLibreoffice.com_.sun.star.xml.xpath.Libxml2ExtensionHandle = js.native
+    def getLibxml2ExtensionHandle(): typings.activexLibreoffice.com_.sun.star.xml.xpath.Libxml2ExtensionHandle
   }
   object XXPathExtension {
     
@@ -308,68 +309,69 @@ object xpath {
     }
   }
   
-  @js.native
-  trait XXPathObject extends XInterface {
+  trait XXPathObject
+    extends StObject
+       with XInterface {
     
     /** get value of a boolean object */
-    val Boolean: scala.Boolean = js.native
+    val Boolean: scala.Boolean
     
     /** get number as byte */
-    val Byte: scala.Double = js.native
+    val Byte: scala.Double
     
     /** get number as double */
-    val Double: scala.Double = js.native
+    val Double: scala.Double
     
     /** get number as float */
-    val Float: scala.Double = js.native
+    val Float: scala.Double
     
     /** get number as hyper */
-    val Hyper: scala.Double = js.native
+    val Hyper: scala.Double
     
     /** get number as long */
-    val Long: scala.Double = js.native
+    val Long: scala.Double
     
     /** get the nodes from a node list type object */
-    val NodeList: XNodeList = js.native
+    val NodeList: XNodeList
     
     /** get object type */
-    val ObjectType: XPathObjectType = js.native
+    val ObjectType: XPathObjectType
     
     /** get number as short */
-    val Short: scala.Double = js.native
+    val Short: scala.Double
     
     /** get string value */
-    val String: java.lang.String = js.native
+    val String: java.lang.String
     
     /** get value of a boolean object */
-    def getBoolean(): scala.Boolean = js.native
+    def getBoolean(): scala.Boolean
     
     /** get number as byte */
-    def getByte(): scala.Double = js.native
+    def getByte(): scala.Double
     
     /** get number as double */
-    def getDouble(): scala.Double = js.native
+    def getDouble(): scala.Double
     
     /** get number as float */
-    def getFloat(): scala.Double = js.native
+    def getFloat(): scala.Double
     
     /** get number as hyper */
-    def getHyper(): scala.Double = js.native
+    def getHyper(): scala.Double
     
     /** get number as long */
-    def getLong(): scala.Double = js.native
+    def getLong(): scala.Double
     
     /** get the nodes from a node list type object */
-    def getNodeList(): XNodeList = js.native
+    def getNodeList(): XNodeList
     
     /** get object type */
-    def getObjectType(): XPathObjectType = js.native
+    def getObjectType(): XPathObjectType
     
     /** get number as short */
-    def getShort(): scala.Double = js.native
+    def getShort(): scala.Double
     
     /** get string value */
-    def getString(): java.lang.String = js.native
+    def getString(): java.lang.String
   }
   object XXPathObject {
     

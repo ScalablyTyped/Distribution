@@ -2,31 +2,29 @@ package typings.instabugReactnative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Report extends StObject {
   
-  def addFileAttachmentWithData(data: String, filename: String): Unit = js.native
+  def addFileAttachmentWithData(data: String, filename: String): Unit
   
-  def addFileAttachmentWithUrl(url: String, filename: String): Unit = js.native
+  def addFileAttachmentWithUrl(url: String, filename: String): Unit
   
-  def appendConsoleLog(consoleLog: String): Unit = js.native
+  def appendConsoleLog(consoleLog: String): Unit
   
-  def appendTag(tag: String): Unit = js.native
+  def appendTag(tag: String): Unit
   
-  def logDebug(log: String): Unit = js.native
+  def logDebug(log: String): Unit
   
-  def logError(log: String): Unit = js.native
+  def logError(log: String): Unit
   
-  def logInfo(log: String): Unit = js.native
+  def logInfo(log: String): Unit
   
-  def logVerbose(log: String): Unit = js.native
+  def logVerbose(log: String): Unit
   
-  def logWarn(log: String): Unit = js.native
+  def logWarn(log: String): Unit
   
-  def setUserAttribute(key: String, value: String): Unit = js.native
+  def setUserAttribute(key: String, value: String): Unit
 }
 object Report {
   

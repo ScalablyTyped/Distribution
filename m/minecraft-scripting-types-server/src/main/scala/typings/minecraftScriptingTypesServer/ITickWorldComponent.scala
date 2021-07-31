@@ -3,34 +3,32 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.IEntityTickingArea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The tick world component is a read-only component that allows users to access the ticking areas on entities as well as the ticking area's data.
   */
-@js.native
 trait ITickWorldComponent extends StObject {
   
   /**
     * distance_to_players
     */
-  var distance_to_players: Double = js.native
+  var distance_to_players: Double
   
   /**
     * Whether or not this ticking area will despawn when a player is out of range
     */
-  var never_despawn: Boolean = js.native
+  var never_despawn: Boolean
   
   /**
     * The radius in chunks of the ticking area
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * The ticking area entity that is attached to this entity
     */
-  var ticking_area: IEntityTickingArea = js.native
+  var ticking_area: IEntityTickingArea
 }
 object ITickWorldComponent {
   

@@ -4,42 +4,36 @@ import typings.std.Element
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsPlumb {
   
-  @JSImport("jsplumb", "jsPlumb.addClass")
+  @JSImport("jsplumb", "jsPlumb")
   @js.native
-  def addClass(el: NodeListOf[Element], clazz: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsplumb", "jsPlumb.extend")
-  @js.native
-  def extend(target: js.Object, source: js.Object): js.Any = js.native
+  @scala.inline
+  def addClass(el: NodeListOf[Element], clazz: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(el.asInstanceOf[js.Any], clazz.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsplumb", "jsPlumb.getInstance")
-  @js.native
-  def getInstance(): jsPlumbInstance = js.native
-  @JSImport("jsplumb", "jsPlumb.getInstance")
-  @js.native
-  def getInstance(_defaults: Defaults): jsPlumbInstance = js.native
+  @scala.inline
+  def extend(target: js.Object, source: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jsplumb", "jsPlumb.off")
-  @js.native
-  def off(el: js.Any, event: String, handler: js.Function): Unit = js.native
+  @scala.inline
+  def getInstance(): jsPlumbInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[jsPlumbInstance]
+  @scala.inline
+  def getInstance(_defaults: Defaults): jsPlumbInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(_defaults.asInstanceOf[js.Any]).asInstanceOf[jsPlumbInstance]
   
-  @JSImport("jsplumb", "jsPlumb.on")
-  @js.native
-  def on(el: js.Any, event: String, delegateSelector: String, handler: js.Function): Unit = js.native
-  @JSImport("jsplumb", "jsPlumb.on")
-  @js.native
-  def on(el: js.Any, event: String, handler: js.Function): Unit = js.native
+  @scala.inline
+  def off(el: js.Any, event: String, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsplumb", "jsPlumb.removeClass")
-  @js.native
-  def removeClass(el: NodeListOf[Element], clazz: String): Unit = js.native
+  @scala.inline
+  def on(el: js.Any, event: String, delegateSelector: String, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], delegateSelector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def on(el: js.Any, event: String, handler: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(el.asInstanceOf[js.Any], event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jsplumb", "jsPlumb.revalidate")
-  @js.native
-  def revalidate(el: Element): Unit = js.native
+  @scala.inline
+  def removeClass(el: NodeListOf[Element], clazz: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(el.asInstanceOf[js.Any], clazz.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def revalidate(el: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revalidate")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

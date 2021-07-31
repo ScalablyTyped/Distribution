@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLStyleMedia extends StObject {
   
   @JSName("MSHTML.IHTMLStyleMedia_typekey")
-  var MSHTMLDotIHTMLStyleMedia_typekey: IHTMLStyleMedia = js.native
+  var MSHTMLDotIHTMLStyleMedia_typekey: IHTMLStyleMedia
   
-  def matchMedium(mediaQuery: String): Boolean = js.native
+  def matchMedium(mediaQuery: String): Boolean
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object IHTMLStyleMedia {
   

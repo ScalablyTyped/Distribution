@@ -4,23 +4,23 @@ import typings.express.mod.Handler
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ghost-storage-base", JSImport.Namespace)
   @js.native
-  abstract class ^ () extends StorageBase
+  abstract class ^ ()
+    extends StObject
+       with StorageBase
   
-  @js.native
   trait Image extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Image {
     
@@ -45,10 +45,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ReadOptions extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object ReadOptions {
     

@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Editors extends StObject {
   
-  def Add(EditorID: js.Any): Editor = js.native
+  def Add(EditorID: js.Any): Editor
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): Editor = js.native
+  def Item(Index: js.Any): Editor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.Editors_typekey")
-  var WordDotEditors_typekey: Editors = js.native
+  var WordDotEditors_typekey: Editors
 }
 object Editors {
   

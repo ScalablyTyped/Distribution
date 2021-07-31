@@ -2,26 +2,24 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workspace extends StObject {
   
   // number of collections that are immediate children of workspace
-  var collection_count: js.UndefOr[Double] = js.native
+  var collection_count: js.UndefOr[Double] = js.undefined
   
   // ISO-8601 date of when workspace was created
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
   // email of user who created the workspace
-  var created_by: js.UndefOr[String] = js.native
+  var created_by: js.UndefOr[String] = js.undefined
   
   // longer explanation for the workspace
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   // descriptive label and unique identifier
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Workspace {
   

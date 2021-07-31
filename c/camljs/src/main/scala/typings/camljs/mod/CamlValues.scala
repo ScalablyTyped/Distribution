@@ -2,7 +2,6 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("camljs", "CamlValues")
@@ -161,9 +160,8 @@ object CamlValues {
   
   /** Dynamic value that represents current date with specified offset (may be negative) */
   /* static member */
-  @JSImport("camljs", "CamlValues.TodayWithOffset")
-  @js.native
-  def TodayWithOffset(offsetDays: Double): String = js.native
+  @scala.inline
+  def TodayWithOffset(offsetDays: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("TodayWithOffset")(offsetDays.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @scala.inline
   def Today_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Today")(x.asInstanceOf[js.Any])

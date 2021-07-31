@@ -33,7 +33,6 @@ import typings.node.streamMod.Transform
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publisherClientMod {
@@ -175,7 +174,7 @@ object publisherClientMod {
     def getIamPolicy(request: GetIamPolicyRequest): js.Promise[Policy] = js.native
     def getIamPolicy(
       request: GetIamPolicyRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Policy, js.UndefOr[GetIamPolicyRequest | Null], js.UndefOr[js.Object | Null]]
     ): js.Promise[Policy] = js.native
     def getIamPolicy(
@@ -195,7 +194,7 @@ object publisherClientMod {
     ): js.Promise[Policy] = js.native
     
     def getProjectId(): js.Promise[String] = js.native
-    def getProjectId(callback: Callback[String, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]): Unit = js.native
+    def getProjectId(callback: Callback[String, Unit, Unit]): Unit = js.native
     
     def getTopic(request: IGetTopicRequest): js.Promise[js.Tuple3[ITopic, js.UndefOr[IGetTopicRequest], js.UndefOr[js.Object]]] = js.native
     def getTopic(
@@ -264,7 +263,7 @@ object publisherClientMod {
       *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
       */
     def listTopicSnapshotsAsync(): AsyncIterable[String] = js.native
-    def listTopicSnapshotsAsync(request: js.UndefOr[scala.Nothing], options: CallOptions): AsyncIterable[String] = js.native
+    def listTopicSnapshotsAsync(request: Unit, options: CallOptions): AsyncIterable[String] = js.native
     def listTopicSnapshotsAsync(request: IListTopicSnapshotsRequest): AsyncIterable[String] = js.native
     def listTopicSnapshotsAsync(request: IListTopicSnapshotsRequest, options: CallOptions): AsyncIterable[String] = js.native
     
@@ -298,7 +297,7 @@ object publisherClientMod {
       *   An object stream which emits an object representing string on 'data' event.
       */
     def listTopicSnapshotsStream(): Transform = js.native
-    def listTopicSnapshotsStream(request: js.UndefOr[scala.Nothing], options: CallOptions): Transform = js.native
+    def listTopicSnapshotsStream(request: Unit, options: CallOptions): Transform = js.native
     def listTopicSnapshotsStream(request: IListTopicSnapshotsRequest): Transform = js.native
     def listTopicSnapshotsStream(request: IListTopicSnapshotsRequest, options: CallOptions): Transform = js.native
     
@@ -356,7 +355,7 @@ object publisherClientMod {
       *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
       */
     def listTopicSubscriptionsAsync(): AsyncIterable[String] = js.native
-    def listTopicSubscriptionsAsync(request: js.UndefOr[scala.Nothing], options: CallOptions): AsyncIterable[String] = js.native
+    def listTopicSubscriptionsAsync(request: Unit, options: CallOptions): AsyncIterable[String] = js.native
     def listTopicSubscriptionsAsync(request: IListTopicSubscriptionsRequest): AsyncIterable[String] = js.native
     def listTopicSubscriptionsAsync(request: IListTopicSubscriptionsRequest, options: CallOptions): AsyncIterable[String] = js.native
     
@@ -390,7 +389,7 @@ object publisherClientMod {
       *   An object stream which emits an object representing string on 'data' event.
       */
     def listTopicSubscriptionsStream(): Transform = js.native
-    def listTopicSubscriptionsStream(request: js.UndefOr[scala.Nothing], options: CallOptions): Transform = js.native
+    def listTopicSubscriptionsStream(request: Unit, options: CallOptions): Transform = js.native
     def listTopicSubscriptionsStream(request: IListTopicSubscriptionsRequest): Transform = js.native
     def listTopicSubscriptionsStream(request: IListTopicSubscriptionsRequest, options: CallOptions): Transform = js.native
     
@@ -428,7 +427,7 @@ object publisherClientMod {
       *   An iterable Object that conforms to @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols.
       */
     def listTopicsAsync(): AsyncIterable[ITopic] = js.native
-    def listTopicsAsync(request: js.UndefOr[scala.Nothing], options: CallOptions): AsyncIterable[ITopic] = js.native
+    def listTopicsAsync(request: Unit, options: CallOptions): AsyncIterable[ITopic] = js.native
     def listTopicsAsync(request: IListTopicsRequest): AsyncIterable[ITopic] = js.native
     def listTopicsAsync(request: IListTopicsRequest, options: CallOptions): AsyncIterable[ITopic] = js.native
     
@@ -462,7 +461,7 @@ object publisherClientMod {
       *   An object stream which emits an object representing [Topic]{@link google.pubsub.v1.Topic} on 'data' event.
       */
     def listTopicsStream(): Transform = js.native
-    def listTopicsStream(request: js.UndefOr[scala.Nothing], options: CallOptions): Transform = js.native
+    def listTopicsStream(request: Unit, options: CallOptions): Transform = js.native
     def listTopicsStream(request: IListTopicsRequest): Transform = js.native
     def listTopicsStream(request: IListTopicsRequest, options: CallOptions): Transform = js.native
     
@@ -595,7 +594,7 @@ object publisherClientMod {
     def setIamPolicy(request: SetIamPolicyRequest): js.Promise[Policy] = js.native
     def setIamPolicy(
       request: SetIamPolicyRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Policy, js.UndefOr[SetIamPolicyRequest | Null], js.UndefOr[js.Object | Null]]
     ): js.Promise[Policy] = js.native
     def setIamPolicy(
@@ -666,7 +665,7 @@ object publisherClientMod {
     def testIamPermissions(request: TestIamPermissionsRequest): js.Promise[TestIamPermissionsResponse] = js.native
     def testIamPermissions(
       request: TestIamPermissionsRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[
           TestIamPermissionsResponse, 
           js.UndefOr[TestIamPermissionsRequest | Null], 

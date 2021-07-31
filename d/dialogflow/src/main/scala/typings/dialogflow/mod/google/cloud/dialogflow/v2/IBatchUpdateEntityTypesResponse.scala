@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a BatchUpdateEntityTypesResponse. */
-@js.native
 trait IBatchUpdateEntityTypesResponse extends StObject {
   
   /** BatchUpdateEntityTypesResponse entityTypes */
-  var entityTypes: js.UndefOr[js.Array[IEntityType] | Null] = js.native
+  var entityTypes: js.UndefOr[js.Array[IEntityType] | Null] = js.undefined
 }
 object IBatchUpdateEntityTypesResponse {
   

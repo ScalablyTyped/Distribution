@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ListSnapshotsRequest. */
@@ -24,18 +23,20 @@ class ListSnapshotsRequest ()
 }
 object ListSnapshotsRequest {
   
+  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ListSnapshotsRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ListSnapshotsRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.create")
-  @js.native
-  def create(): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.create")
-  @js.native
-  def create(properties: IListSnapshotsRequest): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
+  @scala.inline
+  def create(): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
+  @scala.inline
+  def create(properties: IListSnapshotsRequest): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
   
   /**
     * Decodes a ListSnapshotsRequest message from the specified reader or buffer.
@@ -46,18 +47,14 @@ object ListSnapshotsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.decode")
-  @js.native
-  def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
   
   /**
     * Decodes a ListSnapshotsRequest message from the specified reader or buffer, length delimited.
@@ -67,12 +64,10 @@ object ListSnapshotsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
   
   /**
     * Encodes the specified ListSnapshotsRequest message. Does not implicitly {@link google.pubsub.v1.ListSnapshotsRequest.verify|verify} messages.
@@ -81,12 +76,10 @@ object ListSnapshotsRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.encode")
-  @js.native
-  def encode(message: IListSnapshotsRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.encode")
-  @js.native
-  def encode(message: IListSnapshotsRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IListSnapshotsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IListSnapshotsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListSnapshotsRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.ListSnapshotsRequest.verify|verify} messages.
@@ -95,12 +88,10 @@ object ListSnapshotsRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListSnapshotsRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListSnapshotsRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IListSnapshotsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IListSnapshotsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListSnapshotsRequest message from a plain object. Also converts values to their respective internal types.
@@ -108,9 +99,8 @@ object ListSnapshotsRequest {
     * @returns ListSnapshotsRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest]
   
   /**
     * Creates a plain object from a ListSnapshotsRequest message. Also converts values to other types if specified.
@@ -119,15 +109,13 @@ object ListSnapshotsRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.toObject")
-  @js.native
-  def toObject(message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.googleCloudPubsub.protosMod.google.pubsub.v1.ListSnapshotsRequest,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListSnapshotsRequest message.
@@ -135,7 +123,6 @@ object ListSnapshotsRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.pubsub.v1.ListSnapshotsRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

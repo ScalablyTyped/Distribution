@@ -2,38 +2,36 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ami extends StObject {
   
   /**
     *  The account ID of the owner of the AMI. 
     */
-  var accountId: js.UndefOr[NonEmptyString] = js.native
+  var accountId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The description of the EC2 AMI. Minimum and maximum length are in characters.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The AMI ID of the EC2 AMI. 
     */
-  var image: js.UndefOr[NonEmptyString] = js.native
+  var image: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the EC2 AMI. 
     */
-  var name: js.UndefOr[NonEmptyString] = js.native
+  var name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The AWS Region of the EC2 AMI. 
     */
-  var region: js.UndefOr[NonEmptyString] = js.native
+  var region: js.UndefOr[NonEmptyString] = js.undefined
   
-  var state: js.UndefOr[ImageState] = js.native
+  var state: js.UndefOr[ImageState] = js.undefined
 }
 object Ami {
   

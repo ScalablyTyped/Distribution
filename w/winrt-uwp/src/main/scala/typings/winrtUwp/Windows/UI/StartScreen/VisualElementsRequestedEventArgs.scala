@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.StartScreen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Passed to the SecondaryTile.VisualElementsRequested event handler to provide the visual elements details. */
-@js.native
 trait VisualElementsRequestedEventArgs extends StObject {
   
   /** Gets the VisualElementsRequest object for the event. */
-  var request: VisualElementsRequest = js.native
+  var request: VisualElementsRequest
 }
 object VisualElementsRequestedEventArgs {
   

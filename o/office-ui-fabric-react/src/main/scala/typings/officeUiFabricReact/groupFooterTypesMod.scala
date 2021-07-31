@@ -7,18 +7,18 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupFooterTypesMod {
   
-  @js.native
-  trait IGroupFooterProps extends IGroupDividerProps {
+  trait IGroupFooterProps
+    extends StObject
+       with IGroupDividerProps {
     
     /**
       * Style function to be passed in to override the themed or default styles
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupFooterStyleProps, IGroupFooterStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupFooterStyleProps, IGroupFooterStyles]] = js.undefined
   }
   object IGroupFooterProps {
     
@@ -43,17 +43,16 @@ object groupFooterTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupFooter.types.IGroupFooterProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupFooter.types.IGroupFooterProps, 'selected' | 'className'> & {  isCollapsed :boolean | undefined} */
-  @js.native
   trait IGroupFooterStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether the footer is collapsed */
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IGroupFooterStyleProps {
     
@@ -89,10 +88,9 @@ object groupFooterTypesMod {
     }
   }
   
-  @js.native
   trait IGroupFooterStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IGroupFooterStyles {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2DatastoreOptions extends StObject {
   
   /** The kind to process. */
-  var kind: js.UndefOr[GooglePrivacyDlpV2KindExpression] = js.native
+  var kind: js.UndefOr[GooglePrivacyDlpV2KindExpression] = js.undefined
   
   /** A partition ID identifies a grouping of entities. The grouping is always by project and namespace, however the namespace ID may be empty. */
-  var partitionId: js.UndefOr[GooglePrivacyDlpV2PartitionId] = js.native
+  var partitionId: js.UndefOr[GooglePrivacyDlpV2PartitionId] = js.undefined
 }
 object GooglePrivacyDlpV2DatastoreOptions {
   

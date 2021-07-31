@@ -2,36 +2,34 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a reference to a single cell. */
-@js.native
 trait SingleReference extends StObject {
   
   /** is the absolute column number. */
-  var Column: Double = js.native
+  var Column: Double
   
   /**
     * contains flags.
     * @see ReferenceFlags
     */
-  var Flags: Double = js.native
+  var Flags: Double
   
   /** is the relative column number. */
-  var RelativeColumn: Double = js.native
+  var RelativeColumn: Double
   
   /** is the relative row number. */
-  var RelativeRow: Double = js.native
+  var RelativeRow: Double
   
   /** is the relative sheet number. */
-  var RelativeSheet: Double = js.native
+  var RelativeSheet: Double
   
   /** is the absolute row number. */
-  var Row: Double = js.native
+  var Row: Double
   
   /** is the absolute sheet number. */
-  var Sheet: Double = js.native
+  var Sheet: Double
 }
 object SingleReference {
   

@@ -3,10 +3,13 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.amapJsApiStrings.other
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Browser {
+  
+  @JSGlobal("AMap.Browser")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 是否安卓设备
@@ -186,9 +189,8 @@ object Browser {
   /**
     * 判断是否支持webgl
     */
-  @JSGlobal("AMap.Browser.isWebGL")
-  @js.native
-  def isWebGL(): Boolean = js.native
+  @scala.inline
+  def isWebGL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGL")().asInstanceOf[Boolean]
   
   /**
     * 是否支持WebSocket

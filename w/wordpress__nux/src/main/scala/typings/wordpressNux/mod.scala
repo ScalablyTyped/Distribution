@@ -8,7 +8,6 @@ import typings.wordpressNux.dotTipMod.DotTip.Props
 import typings.wordpressNux.wordpressNuxStrings.coreSlashnux
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,12 +27,14 @@ object mod {
   /* augmented module */
   object wordpressDataAugmentingMod {
     
-    @JSImport("@wordpress/data", "dispatch")
+    @JSImport("@wordpress/data", JSImport.Namespace)
     @js.native
-    def dispatch_corenux(key: coreSlashnux): TypeofimportedActions = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/data", "select")
-    @js.native
-    def select_corenux(key: coreSlashnux): TypeofimportedSelectors = js.native
+    @scala.inline
+    def dispatch_corenux(key: coreSlashnux): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    
+    @scala.inline
+    def select_corenux(key: coreSlashnux): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
 }

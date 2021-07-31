@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colMod {
@@ -19,50 +18,51 @@ object colMod {
   trait Col
     extends Component[ColProps, js.Object, js.Any]
   
-  @js.native
-  trait ColProps extends HTMLProps[Col] {
+  trait ColProps
+    extends StObject
+       with HTMLProps[Col] {
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var lg: js.UndefOr[Double] = js.native
+    var lg: js.UndefOr[Double] = js.undefined
     
-    var lgHidden: js.UndefOr[Boolean] = js.native
+    var lgHidden: js.UndefOr[Boolean] = js.undefined
     
-    var lgOffset: js.UndefOr[Double] = js.native
+    var lgOffset: js.UndefOr[Double] = js.undefined
     
-    var lgPull: js.UndefOr[Double] = js.native
+    var lgPull: js.UndefOr[Double] = js.undefined
     
-    var lgPush: js.UndefOr[Double] = js.native
+    var lgPush: js.UndefOr[Double] = js.undefined
     
-    var md: js.UndefOr[Double] = js.native
+    var md: js.UndefOr[Double] = js.undefined
     
-    var mdHidden: js.UndefOr[Boolean] = js.native
+    var mdHidden: js.UndefOr[Boolean] = js.undefined
     
-    var mdOffset: js.UndefOr[Double] = js.native
+    var mdOffset: js.UndefOr[Double] = js.undefined
     
-    var mdPull: js.UndefOr[Double] = js.native
+    var mdPull: js.UndefOr[Double] = js.undefined
     
-    var mdPush: js.UndefOr[Double] = js.native
+    var mdPush: js.UndefOr[Double] = js.undefined
     
-    var sm: js.UndefOr[Double] = js.native
+    var sm: js.UndefOr[Double] = js.undefined
     
-    var smHidden: js.UndefOr[Boolean] = js.native
+    var smHidden: js.UndefOr[Boolean] = js.undefined
     
-    var smOffset: js.UndefOr[Double] = js.native
+    var smOffset: js.UndefOr[Double] = js.undefined
     
-    var smPull: js.UndefOr[Double] = js.native
+    var smPull: js.UndefOr[Double] = js.undefined
     
-    var smPush: js.UndefOr[Double] = js.native
+    var smPush: js.UndefOr[Double] = js.undefined
     
-    var xs: js.UndefOr[Double] = js.native
+    var xs: js.UndefOr[Double] = js.undefined
     
-    var xsHidden: js.UndefOr[Boolean] = js.native
+    var xsHidden: js.UndefOr[Boolean] = js.undefined
     
-    var xsOffset: js.UndefOr[Double] = js.native
+    var xsOffset: js.UndefOr[Double] = js.undefined
     
-    var xsPull: js.UndefOr[Double] = js.native
+    var xsPull: js.UndefOr[Double] = js.undefined
     
-    var xsPush: js.UndefOr[Double] = js.native
+    var xsPush: js.UndefOr[Double] = js.undefined
   }
   object ColProps {
     
@@ -76,7 +76,7 @@ object colMod {
     implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

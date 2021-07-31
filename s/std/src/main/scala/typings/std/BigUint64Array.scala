@@ -3,7 +3,6 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait BigUint64Array
-  extends /* index */ NumberDictionary[js.BigInt] {
+  extends StObject
+     with /* index */ NumberDictionary[js.BigInt] {
   
   /** The size in bytes of each element in the array. */
   val BYTES_PER_ELEMENT: Double = js.native
@@ -66,9 +66,9 @@ trait BigUint64Array
     * length+end.
     */
   def fill(value: js.BigInt): this.type = js.native
-  def fill(value: js.BigInt, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: js.BigInt, start: Double): this.type = js.native
   def fill(value: js.BigInt, start: Double, end: Double): this.type = js.native
+  def fill(value: js.BigInt, start: Unit, end: Double): this.type = js.native
   
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
@@ -77,9 +77,9 @@ trait BigUint64Array
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, _]): BigUint64Array = js.native
+  def filter(predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, js.Any]): BigUint64Array = js.native
   def filter(
-    predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, _],
+    predicate: js.Function3[/* value */ js.BigInt, /* index */ Double, /* array */ this.type, js.Any],
     thisArg: js.Any
   ): BigUint64Array = js.native
   
@@ -286,9 +286,9 @@ trait BigUint64Array
     * @param end The end of the specified portion of the array.
     */
   def slice(): BigUint64Array = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): BigUint64Array = js.native
   def slice(start: Double): BigUint64Array = js.native
   def slice(start: Double, end: Double): BigUint64Array = js.native
+  def slice(start: Unit, end: Double): BigUint64Array = js.native
   
   /**
     * Determines whether the specified callback function returns true for any element of an array.
@@ -320,9 +320,9 @@ trait BigUint64Array
     * @param end The index of the end of the array.
     */
   def subarray(): BigUint64Array = js.native
-  def subarray(begin: js.UndefOr[scala.Nothing], end: Double): BigUint64Array = js.native
   def subarray(begin: Double): BigUint64Array = js.native
   def subarray(begin: Double, end: Double): BigUint64Array = js.native
+  def subarray(begin: Unit, end: Double): BigUint64Array = js.native
   
   @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.BigUint64Array = js.native

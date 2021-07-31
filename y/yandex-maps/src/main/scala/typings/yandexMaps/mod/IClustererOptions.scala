@@ -2,35 +2,33 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClustererOptions extends StObject {
   
-  var gridSize: js.UndefOr[Double] = js.native
+  var gridSize: js.UndefOr[Double] = js.undefined
   
-  var groupByCoordinates: js.UndefOr[Boolean] = js.native
+  var groupByCoordinates: js.UndefOr[Boolean] = js.undefined
   
-  var hasBalloon: js.UndefOr[Boolean] = js.native
+  var hasBalloon: js.UndefOr[Boolean] = js.undefined
   
-  var hasHint: js.UndefOr[Boolean] = js.native
+  var hasHint: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var margin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
   
-  var maxZoom: js.UndefOr[js.Array[Double] | Double] = js.native
+  var maxZoom: js.UndefOr[js.Array[Double] | Double] = js.undefined
   
-  var minClusterSize: js.UndefOr[Double] = js.native
+  var minClusterSize: js.UndefOr[Double] = js.undefined
   
-  var preset: js.UndefOr[PresetKey] = js.native
+  var preset: js.UndefOr[PresetKey] = js.undefined
   
-  var showInAlphabeticalOrder: js.UndefOr[Boolean] = js.native
+  var showInAlphabeticalOrder: js.UndefOr[Boolean] = js.undefined
   
-  var useMapMargin: js.UndefOr[Boolean] = js.native
+  var useMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var viewportMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var viewportMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
   
-  var zoomMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var zoomMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
 }
 object IClustererOptions {
   

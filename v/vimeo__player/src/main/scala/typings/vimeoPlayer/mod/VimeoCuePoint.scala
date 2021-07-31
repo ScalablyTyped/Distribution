@@ -2,17 +2,15 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VimeoCuePoint extends StObject {
   
-  var data: VimeoCuePointData = js.native
+  var data: VimeoCuePointData
   
-  var id: String = js.native
+  var id: String
   
-  var time: Double = js.native
+  var time: Double
 }
 object VimeoCuePoint {
   

@@ -4,14 +4,15 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("s3rver", JSImport.Namespace)
   @js.native
-  class ^ protected () extends S3rver {
+  class ^ protected ()
+    extends StObject
+       with S3rver {
     def this(options: S3rverOptions) = this()
   }
   
@@ -47,12 +48,11 @@ object mod {
     def setSilent(silent: Boolean): S3rver = js.native
   }
   
-  @js.native
   trait S3rverBucketConfig extends StObject {
     
-    var configs: js.Array[Buffer | String] = js.native
+    var configs: js.Array[Buffer | String]
     
-    var name: String = js.native
+    var name: String
   }
   object S3rverBucketConfig {
     
@@ -76,30 +76,29 @@ object mod {
     }
   }
   
-  @js.native
   trait S3rverOptions extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var cert: js.UndefOr[String | Buffer] = js.native
+    var cert: js.UndefOr[String | Buffer] = js.undefined
     
-    var configureBuckets: js.UndefOr[js.Array[S3rverBucketConfig]] = js.native
+    var configureBuckets: js.UndefOr[js.Array[S3rverBucketConfig]] = js.undefined
     
-    var directory: String = js.native
+    var directory: String
     
-    var errorDocument: js.UndefOr[String] = js.native
+    var errorDocument: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var indexDocument: js.UndefOr[String] = js.native
+    var indexDocument: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String | Buffer] = js.native
+    var key: js.UndefOr[String | Buffer] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var resetOnClose: js.UndefOr[Boolean] = js.native
+    var resetOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object S3rverOptions {
     

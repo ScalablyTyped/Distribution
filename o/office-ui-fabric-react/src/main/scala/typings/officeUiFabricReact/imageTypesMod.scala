@@ -8,7 +8,6 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageTypesMod {
@@ -20,21 +19,25 @@ object imageTypesMod {
   object ImageCoverStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ImageCoverStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[ImageCoverStyle & Double] = js.native
     
     /**
       * The image will be shown at 100% height of container and the width will be scaled accordingly
       */
     @js.native
-    sealed trait landscape extends ImageCoverStyle
-    /* 0 */ val landscape: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.landscape with Double = js.native
+    sealed trait landscape
+      extends StObject
+         with ImageCoverStyle
+    /* 0 */ val landscape: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.landscape & Double = js.native
     
     /**
       * The image will be shown at 100% width of container and the height will be scaled accordingly
       */
     @js.native
-    sealed trait portrait extends ImageCoverStyle
-    /* 1 */ val portrait: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.portrait with Double = js.native
+    sealed trait portrait
+      extends StObject
+         with ImageCoverStyle
+    /* 1 */ val portrait: typings.officeUiFabricReact.imageTypesMod.ImageCoverStyle.portrait & Double = js.native
   }
   
   @js.native
@@ -44,14 +47,16 @@ object imageTypesMod {
   object ImageFit extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ImageFit with Double] = js.native
+    def apply(value: Double): js.UndefOr[ImageFit & Double] = js.native
     
     /**
       * The image is not scaled. The image is centered and cropped within the content box.
       */
     @js.native
-    sealed trait center extends ImageFit
-    /* 0 */ val center: typings.officeUiFabricReact.imageTypesMod.ImageFit.center with Double = js.native
+    sealed trait center
+      extends StObject
+         with ImageFit
+    /* 0 */ val center: typings.officeUiFabricReact.imageTypesMod.ImageFit.center & Double = js.native
     
     /**
       * The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
@@ -59,8 +64,10 @@ object imageTypesMod {
       * but if either natural height or width are larger than the frame it will behave as ImageFit.contain.
       */
     @js.native
-    sealed trait centerContain extends ImageFit
-    /* 5 */ val centerContain: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerContain with Double = js.native
+    sealed trait centerContain
+      extends StObject
+         with ImageFit
+    /* 5 */ val centerContain: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerContain & Double = js.native
     
     /**
       * The image will be centered horizontally and vertically within the frame and maintains its aspect ratio. It will
@@ -68,8 +75,10 @@ object imageTypesMod {
       * but if both natural height and width are larger than the frame it will behave as ImageFit.cover.
       */
     @js.native
-    sealed trait centerCover extends ImageFit
-    /* 4 */ val centerCover: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerCover with Double = js.native
+    sealed trait centerCover
+      extends StObject
+         with ImageFit
+    /* 4 */ val centerCover: typings.officeUiFabricReact.imageTypesMod.ImageFit.centerCover & Double = js.native
     
     /**
       * The image is scaled to maintain its aspect ratio while being fully contained within the frame. The image will
@@ -77,24 +86,30 @@ object imageTypesMod {
       * the frame will be empty depending on the difference in aspect ratio between the image and the frame.
       */
     @js.native
-    sealed trait contain extends ImageFit
-    /* 1 */ val contain: typings.officeUiFabricReact.imageTypesMod.ImageFit.contain with Double = js.native
+    sealed trait contain
+      extends StObject
+         with ImageFit
+    /* 1 */ val contain: typings.officeUiFabricReact.imageTypesMod.ImageFit.contain & Double = js.native
     
     /**
       * The image is scaled to maintain its aspect ratio while filling the frame. Portions of the image will be cropped
       * from the top and bottom, or the sides, depending on the difference in aspect ratio between the image and the frame.
       */
     @js.native
-    sealed trait cover extends ImageFit
-    /* 2 */ val cover: typings.officeUiFabricReact.imageTypesMod.ImageFit.cover with Double = js.native
+    sealed trait cover
+      extends StObject
+         with ImageFit
+    /* 2 */ val cover: typings.officeUiFabricReact.imageTypesMod.ImageFit.cover & Double = js.native
     
     /**
       * Neither the image nor the frame are scaled. If their sizes do not match, the image will either be cropped or the
       * frame will have empty space.
       */
     @js.native
-    sealed trait none extends ImageFit
-    /* 3 */ val none: typings.officeUiFabricReact.imageTypesMod.ImageFit.none with Double = js.native
+    sealed trait none
+      extends StObject
+         with ImageFit
+    /* 3 */ val none: typings.officeUiFabricReact.imageTypesMod.ImageFit.none & Double = js.native
   }
   
   @js.native
@@ -104,14 +119,16 @@ object imageTypesMod {
   object ImageLoadState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ImageLoadState with Double] = js.native
+    def apply(value: Double): js.UndefOr[ImageLoadState & Double] = js.native
     
     /**
       * An error has been encountered while loading the image.
       */
     @js.native
-    sealed trait error extends ImageLoadState
-    /* 2 */ val error: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.error with Double = js.native
+    sealed trait error
+      extends StObject
+         with ImageLoadState
+    /* 2 */ val error: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.error & Double = js.native
     
     /**
       * Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead
@@ -120,36 +137,42 @@ object imageTypesMod {
       * and rerender the Image with a difference src.
       */
     @js.native
-    sealed trait errorLoaded extends ImageLoadState
-    /* 3 */ val errorLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.errorLoaded with Double = js.native
+    sealed trait errorLoaded
+      extends StObject
+         with ImageLoadState
+    /* 3 */ val errorLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.errorLoaded & Double = js.native
     
     /**
       * The image has been loaded successfully.
       */
     @js.native
-    sealed trait loaded extends ImageLoadState
-    /* 1 */ val loaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.loaded with Double = js.native
+    sealed trait loaded
+      extends StObject
+         with ImageLoadState
+    /* 1 */ val loaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.loaded & Double = js.native
     
     /**
       * The image has not yet been loaded, and there is no error yet.
       */
     @js.native
-    sealed trait notLoaded extends ImageLoadState
-    /* 0 */ val notLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.notLoaded with Double = js.native
+    sealed trait notLoaded
+      extends StObject
+         with ImageLoadState
+    /* 0 */ val notLoaded: typings.officeUiFabricReact.imageTypesMod.ImageLoadState.notLoaded & Double = js.native
   }
   
-  @js.native
   trait IImage extends StObject
   
-  @js.native
-  trait IImageProps extends ImgHTMLAttributes[HTMLImageElement] {
+  trait IImageProps
+    extends StObject
+       with ImgHTMLAttributes[HTMLImageElement] {
     
     /**
       * Specifies the cover style to be used for this image. If not
       * specified, this will be dynamically calculated based on the
       * aspect ratio for the image.
       */
-    var coverStyle: js.UndefOr[ImageCoverStyle] = js.native
+    var coverStyle: js.UndefOr[ImageCoverStyle] = js.undefined
     
     /**
       * Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and
@@ -157,7 +180,7 @@ object imageTypesMod {
       * @deprecated Use `onLoadingStateChange` instead and
       * rerender the Image with a difference src.
       */
-    var errorSrc: js.UndefOr[String] = js.native
+    var errorSrc: js.UndefOr[String] = js.undefined
     
     /**
       * Used to determine how the image is scaled and cropped to fit the frame.
@@ -165,41 +188,41 @@ object imageTypesMod {
       * @defaultvalue If both dimensions are provided, then the image is fit using ImageFit.scale.
       * Otherwise, the image won't be scaled or cropped.
       */
-    var imageFit: js.UndefOr[ImageFit] = js.native
+    var imageFit: js.UndefOr[ImageFit] = js.undefined
     
     /**
       * If true, the image frame will expand to fill its parent container.
       */
-    var maximizeFrame: js.UndefOr[Boolean] = js.native
+    var maximizeFrame: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional callback method for when the image load state has changed.
       * The 'loadState' parameter indicates the current state of the Image.
       */
-    var onLoadingStateChange: js.UndefOr[js.Function1[/* loadState */ ImageLoadState, Unit]] = js.native
+    var onLoadingStateChange: js.UndefOr[js.Function1[/* loadState */ ImageLoadState, Unit]] = js.undefined
     
     /**
       * If true, fades the image in when loaded.
       * @defaultvalue true
       */
-    var shouldFadeIn: js.UndefOr[Boolean] = js.native
+    var shouldFadeIn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until
       * it is successfully loaded. This disables shouldFadeIn.
       * @defaultvalue false;
       */
-    var shouldStartVisible: js.UndefOr[Boolean] = js.native
+    var shouldStartVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IImageStyleProps, IImageStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IImageStyleProps, IImageStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IImageProps {
     
@@ -271,81 +294,80 @@ object imageTypesMod {
     }
   }
   
-  @js.native
   trait IImageStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Image height value
       */
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
     /**
       * ImageFit booleans for center, cover, contain, centerContain, centerCover, none
       */
-    var isCenter: js.UndefOr[Boolean] = js.native
+    var isCenter: js.UndefOr[Boolean] = js.undefined
     
-    var isCenterContain: js.UndefOr[Boolean] = js.native
+    var isCenterContain: js.UndefOr[Boolean] = js.undefined
     
-    var isCenterCover: js.UndefOr[Boolean] = js.native
+    var isCenterCover: js.UndefOr[Boolean] = js.undefined
     
-    var isContain: js.UndefOr[Boolean] = js.native
+    var isContain: js.UndefOr[Boolean] = js.undefined
     
-    var isCover: js.UndefOr[Boolean] = js.native
+    var isCover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if true image load is in error
       */
-    var isError: js.UndefOr[Boolean] = js.native
+    var isError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true the image is coverStyle landscape instead of portrait
       */
-    var isLandscape: js.UndefOr[Boolean] = js.native
+    var isLandscape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the image is loaded
       */
-    var isLoaded: js.UndefOr[Boolean] = js.native
+    var isLoaded: js.UndefOr[Boolean] = js.undefined
     
-    var isNone: js.UndefOr[Boolean] = js.native
+    var isNone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if true, imageFit is undefined
       */
-    var isNotImageFit: js.UndefOr[Boolean] = js.native
+    var isNotImageFit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the image frame will expand to fill its parent container.
       */
-    var maximizeFrame: js.UndefOr[Boolean] = js.native
+    var maximizeFrame: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, fades the image in when loaded.
       * @defaultvalue true
       */
-    var shouldFadeIn: js.UndefOr[Boolean] = js.native
+    var shouldFadeIn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the image starts as visible and is hidden on error. Otherwise, the image is hidden until
       * it is successfully loaded. This disables shouldFadeIn.
       * @defaultvalue false;
       */
-    var shouldStartVisible: js.UndefOr[Boolean] = js.native
+    var shouldStartVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
     
     /**
       * Image width value
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object IImageStyleProps {
     
@@ -459,18 +481,17 @@ object imageTypesMod {
     }
   }
   
-  @js.native
   trait IImageStyles extends StObject {
     
     /**
       * Style set for the img element.
       */
-    var image: IStyle = js.native
+    var image: IStyle
     
     /**
       * Style set for the root div element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IImageStyles {
     

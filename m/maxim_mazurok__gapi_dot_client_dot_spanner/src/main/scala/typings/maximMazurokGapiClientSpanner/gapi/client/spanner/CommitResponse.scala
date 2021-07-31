@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitResponse extends StObject {
   
   /** The Cloud Spanner timestamp at which the transaction committed. */
-  var commitTimestamp: js.UndefOr[String] = js.native
+  var commitTimestamp: js.UndefOr[String] = js.undefined
 }
 object CommitResponse {
   

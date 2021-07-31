@@ -2,91 +2,89 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * The applications associated with the image.
     */
-  var Applications: js.UndefOr[typings.awsSdk.appstreamMod.Applications] = js.native
+  var Applications: js.UndefOr[typings.awsSdk.appstreamMod.Applications] = js.undefined
   
   /**
     * The version of the AppStream 2.0 agent to use for instances that are launched from this image. 
     */
-  var AppstreamAgentVersion: js.UndefOr[typings.awsSdk.appstreamMod.AppstreamAgentVersion] = js.native
+  var AppstreamAgentVersion: js.UndefOr[typings.awsSdk.appstreamMod.AppstreamAgentVersion] = js.undefined
   
   /**
     * The ARN of the image.
     */
-  var Arn: js.UndefOr[typings.awsSdk.appstreamMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.appstreamMod.Arn] = js.undefined
   
   /**
     * The ARN of the image from which this image was created.
     */
-  var BaseImageArn: js.UndefOr[Arn] = js.native
+  var BaseImageArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time the image was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.native
+  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description to display.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The image name to display.
     */
-  var DisplayName: js.UndefOr[String] = js.native
+  var DisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the image builder that was used to create the private image. If the image is shared, this value is null.
     */
-  var ImageBuilderName: js.UndefOr[String] = js.native
+  var ImageBuilderName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether an image builder can be launched from this image.
     */
-  var ImageBuilderSupported: js.UndefOr[Boolean] = js.native
+  var ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The permissions to provide to the destination AWS account for the specified image.
     */
-  var ImagePermissions: js.UndefOr[typings.awsSdk.appstreamMod.ImagePermissions] = js.native
+  var ImagePermissions: js.UndefOr[typings.awsSdk.appstreamMod.ImagePermissions] = js.undefined
   
   /**
     * The name of the image.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The operating system platform of the image.
     */
-  var Platform: js.UndefOr[PlatformType] = js.native
+  var Platform: js.UndefOr[PlatformType] = js.undefined
   
   /**
     * The release date of the public base image. For private images, this date is the release date of the base image from which the image was created.
     */
-  var PublicBaseImageReleasedDate: js.UndefOr[Timestamp] = js.native
+  var PublicBaseImageReleasedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The image starts in the PENDING state. If image creation succeeds, the state is AVAILABLE. If image creation fails, the state is FAILED.
     */
-  var State: js.UndefOr[ImageState] = js.native
+  var State: js.UndefOr[ImageState] = js.undefined
   
   /**
     * The reason why the last state change occurred.
     */
-  var StateChangeReason: js.UndefOr[ImageStateChangeReason] = js.native
+  var StateChangeReason: js.UndefOr[ImageStateChangeReason] = js.undefined
   
   /**
     * Indicates whether the image is public or private.
     */
-  var Visibility: js.UndefOr[VisibilityType] = js.native
+  var Visibility: js.UndefOr[VisibilityType] = js.undefined
 }
 object Image {
   

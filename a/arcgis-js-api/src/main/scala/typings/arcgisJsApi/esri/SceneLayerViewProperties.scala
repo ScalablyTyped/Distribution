@@ -2,32 +2,32 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneLayerViewProperties extends LayerViewProperties {
+trait SceneLayerViewProperties
+  extends StObject
+     with LayerViewProperties {
   
   /**
     * Applies a client-side [FeatureFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html) to the displayed data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#filter)
     */
-  var filter: js.UndefOr[FeatureFilterProperties] = js.native
+  var filter: js.UndefOr[FeatureFilterProperties] = js.undefined
   
   /**
     * The maximum number of features that can be displayed at a time.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#maximumNumberOfFeatures)
     */
-  var maximumNumberOfFeatures: js.UndefOr[Double] = js.native
+  var maximumNumberOfFeatures: js.UndefOr[Double] = js.undefined
   
   /**
     * Signifies whether the maximum number of features has been exceeded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html#maximumNumberOfFeaturesExceeded)
     */
-  var maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.native
+  var maximumNumberOfFeaturesExceeded: js.UndefOr[Boolean] = js.undefined
 }
 object SceneLayerViewProperties {
   

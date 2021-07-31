@@ -10,8 +10,8 @@ asynchronous file and directory operations for Node.js
 | Full name          | node-dir |
 | Keywords           | node-dir, directory, dir, subdir, file, asynchronous, Node.js, fs |
 | # releases         | 0 |
-| # dependents       | 470 |
-| # downloads        | 100340397 |
+| # dependents       | 491 |
+| # downloads        | 122533649 |
 | # stars            | 23 |
 
 ## Links

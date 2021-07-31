@@ -11,8 +11,8 @@ Dead simple animated typing, with no dependencies.
 | Full name          | ityped |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 27687 |
+| # dependents       | 1 |
+| # downloads        | 37248 |
 | # stars            | 1 |
 
 ## Links

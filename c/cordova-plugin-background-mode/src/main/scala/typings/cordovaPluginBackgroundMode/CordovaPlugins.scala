@@ -2,13 +2,11 @@ package typings.cordovaPluginBackgroundMode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
-  var backgroundMode: CordovaPluginBackgroundMode = js.native
+  var backgroundMode: CordovaPluginBackgroundMode
 }
 object CordovaPlugins {
   

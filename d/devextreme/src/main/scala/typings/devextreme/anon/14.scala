@@ -4,15 +4,13 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeList
 import typings.devextreme.mod.DevExpress.ui.dxTreeListRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `14` extends StObject {
   
-  var component: js.UndefOr[dxTreeList] = js.native
+  var component: js.UndefOr[dxTreeList] = js.undefined
   
-  var row: js.UndefOr[dxTreeListRowObject] = js.native
+  var row: js.UndefOr[dxTreeListRowObject] = js.undefined
 }
 object `14` {
   

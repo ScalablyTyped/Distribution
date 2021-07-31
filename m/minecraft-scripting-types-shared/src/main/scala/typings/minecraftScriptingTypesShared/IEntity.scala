@@ -4,26 +4,26 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.item_entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEntity extends _IMinecraftObject {
+trait IEntity
+  extends StObject
+     with _IMinecraftObject {
   
   /**
     * The identifier of the entity, e.g., "minecraft:sheep", or "minecraft:pumpkin_seeds"
     */
-  val __identifier__ : String = js.native
+  val __identifier__ : String
   
   /**
     * READ ONLY. The type of the entity
     */
-  val __type__ : entity | item_entity = js.native
+  val __type__ : entity | item_entity
   
   /**
     * READ ONLY. This is the unique identifier of the query
     */
-  val id: Double = js.native
+  val id: Double
 }
 object IEntity {
   

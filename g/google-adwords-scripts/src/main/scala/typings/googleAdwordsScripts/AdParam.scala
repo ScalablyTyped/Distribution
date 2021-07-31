@@ -2,24 +2,24 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Ad Param
-@js.native
-trait AdParam extends AdWordsEntity {
+trait AdParam
+  extends StObject
+     with AdWordsEntity {
   
-  def getAdGroup(): AdGroup = js.native
+  def getAdGroup(): AdGroup
   
-  def getInde(): Double = js.native
+  def getInde(): Double
   
-  def getInsertionText(): String = js.native
+  def getInsertionText(): String
   
-  def getKeyword(): Keyword = js.native
+  def getKeyword(): Keyword
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setInsertionText(insertionText: String): Unit = js.native
+  def setInsertionText(insertionText: String): Unit
 }
 object AdParam {
   

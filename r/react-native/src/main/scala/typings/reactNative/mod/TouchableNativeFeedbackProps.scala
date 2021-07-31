@@ -2,11 +2,11 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchableNativeFeedbackProps extends TouchableWithoutFeedbackProps {
+trait TouchableNativeFeedbackProps
+  extends StObject
+     with TouchableWithoutFeedbackProps {
   
   /**
     * Determines the type of background drawable that's going to be used to display feedback.
@@ -22,9 +22,9 @@ trait TouchableNativeFeedbackProps extends TouchableWithoutFeedbackProps {
     *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
     *         type is available on Android API level 21+
     */
-  var background: js.UndefOr[BackgroundPropType] = js.native
+  var background: js.UndefOr[BackgroundPropType] = js.undefined
   
-  var useForeground: js.UndefOr[Boolean] = js.native
+  var useForeground: js.UndefOr[Boolean] = js.undefined
 }
 object TouchableNativeFeedbackProps {
   

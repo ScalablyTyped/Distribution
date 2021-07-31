@@ -11,19 +11,17 @@ import typings.std.Range
 import typings.std.RequestInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClientHeight extends StObject {
     
-    var clientHeight: Double = js.native
+    var clientHeight: Double
     
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object ClientHeight {
     
@@ -48,60 +46,59 @@ object anon {
   }
   
   /* Inlined std.Partial<react-lazylog.react-lazylog/build/LazyLog.LazyLogProps> */
-  @js.native
   trait PartialLazyLogProps extends StObject {
     
-    var caseInsensitive: js.UndefOr[Boolean] = js.native
+    var caseInsensitive: js.UndefOr[Boolean] = js.undefined
     
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var enableSearch: js.UndefOr[Boolean] = js.native
+    var enableSearch: js.UndefOr[Boolean] = js.undefined
     
-    var extraLines: js.UndefOr[Double] = js.native
+    var extraLines: js.UndefOr[Double] = js.undefined
     
-    var fetchOptions: js.UndefOr[RequestInit] = js.native
+    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
     
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
-    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
     
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
-    var highlight: js.UndefOr[Double | js.Array[Double]] = js.native
+    var highlight: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var highlightLineClassName: js.UndefOr[String] = js.native
+    var highlightLineClassName: js.UndefOr[String] = js.undefined
     
-    var lineClassName: js.UndefOr[String] = js.native
+    var lineClassName: js.UndefOr[String] = js.undefined
     
-    var loadingComponent: js.UndefOr[js.Any] = js.native
+    var loadingComponent: js.UndefOr[js.Any] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
     
-    var onHighlight: js.UndefOr[js.Function1[/* range */ Range, _]] = js.native
+    var onHighlight: js.UndefOr[js.Function1[/* range */ Range, js.Any]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[_]] = js.native
+    var onLoad: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var overscanRowCount: js.UndefOr[Double] = js.native
+    var overscanRowCount: js.UndefOr[Double] = js.undefined
     
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
-    var scrollToLine: js.UndefOr[Double] = js.native
+    var scrollToLine: js.UndefOr[Double] = js.undefined
     
-    var selectableLines: js.UndefOr[Boolean] = js.native
+    var selectableLines: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var websocket: js.UndefOr[Boolean] = js.native
+    var websocket: js.UndefOr[Boolean] = js.undefined
     
-    var websocketOptions: js.UndefOr[WebsocketOptions] = js.native
+    var websocketOptions: js.UndefOr[WebsocketOptions] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object PartialLazyLogProps {
     
@@ -190,19 +187,19 @@ object anon {
       def setLoadingComponentUndefined: Self = StObject.set(x, "loadingComponent", js.undefined)
       
       @scala.inline
-      def setOnError(value: /* error */ js.Any => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      def setOnError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
       @scala.inline
-      def setOnHighlight(value: /* range */ Range => _): Self = StObject.set(x, "onHighlight", js.Any.fromFunction1(value))
+      def setOnHighlight(value: /* range */ Range => js.Any): Self = StObject.set(x, "onHighlight", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHighlightUndefined: Self = StObject.set(x, "onHighlight", js.undefined)
       
       @scala.inline
-      def setOnLoad(value: () => _): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      def setOnLoad(value: () => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
@@ -276,16 +273,15 @@ object anon {
   }
   
   /* Inlined std.Partial<react-lazylog.react-lazylog/build/LineContent.LineContentProps> */
-  @js.native
   trait PartialLineContentProps extends StObject {
     
-    var data: js.UndefOr[js.Array[Text]] = js.native
+    var data: js.UndefOr[js.Array[Text]] = js.undefined
     
-    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PartialLineContentProps {
     
@@ -328,16 +324,15 @@ object anon {
   }
   
   /* Inlined std.Partial<react-lazylog.react-lazylog/build/LineNumber.LineNumberProps> */
-  @js.native
   trait PartialLineNumberProps extends StObject {
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PartialLineNumberProps {
     
@@ -377,14 +372,13 @@ object anon {
   }
   
   /* Inlined std.Partial<react-lazylog.react-lazylog/build/LinePart.LinePartProps> */
-  @js.native
   trait PartialLinePartProps extends StObject {
     
-    var format: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+    var format: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
     
-    var part: js.UndefOr[Text] = js.native
+    var part: js.UndefOr[Text] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PartialLinePartProps {
     
@@ -418,26 +412,25 @@ object anon {
   }
   
   /* Inlined std.Partial<react-lazylog.react-lazylog/build/Line.LineProps> */
-  @js.native
   trait PartialLineProps extends StObject {
     
-    var data: js.UndefOr[js.Array[Text]] = js.native
+    var data: js.UndefOr[js.Array[Text]] = js.undefined
     
-    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.native
+    var formatPart: js.UndefOr[js.Function1[/* text */ String, ReactNode]] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var onLineNumberClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.native
+    var onLineNumberClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
     
-    var onRowClick: js.UndefOr[js.Function0[_]] = js.native
+    var onRowClick: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PartialLineProps {
     
@@ -484,7 +477,7 @@ object anon {
       def setOnLineNumberClickUndefined: Self = StObject.set(x, "onLineNumberClick", js.undefined)
       
       @scala.inline
-      def setOnRowClick(value: () => _): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
+      def setOnRowClick(value: () => js.Any): Self = StObject.set(x, "onRowClick", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
@@ -510,20 +503,19 @@ object anon {
   }
   
   /* Inlined std.Partial<react-lazylog.react-lazylog/build/SearchBar.SearchBarProps> */
-  @js.native
   trait PartialSearchBarProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var filterActive: js.UndefOr[Boolean] = js.native
+    var filterActive: js.UndefOr[Boolean] = js.undefined
     
-    var onClearSearch: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClearSearch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFilterLinesWithMatches: js.UndefOr[js.Function1[/* isFiltered */ Boolean, Unit]] = js.native
+    var onFilterLinesWithMatches: js.UndefOr[js.Function1[/* isFiltered */ Boolean, Unit]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* keyword */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* keyword */ String, Unit]] = js.undefined
     
-    var resultsCount: js.UndefOr[Double] = js.native
+    var resultsCount: js.UndefOr[Double] = js.undefined
   }
   object PartialSearchBarProps {
     
@@ -574,10 +566,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     

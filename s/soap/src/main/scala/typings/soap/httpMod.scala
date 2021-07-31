@@ -7,7 +7,6 @@ import typings.soap.typesMod.IHeaders
 import typings.soap.typesMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
@@ -28,7 +27,7 @@ object httpMod {
       * @returns {Object} The http request object for the `request` module
       */
     def buildRequest(rurl: String, data: js.Any): js.Any = js.native
-    def buildRequest(rurl: String, data: js.Any, exheaders: js.UndefOr[scala.Nothing], exoptions: IExOptions): js.Any = js.native
+    def buildRequest(rurl: String, data: js.Any, exheaders: Unit, exoptions: IExOptions): js.Any = js.native
     def buildRequest(rurl: String, data: js.Any, exheaders: IHeaders): js.Any = js.native
     def buildRequest(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions): js.Any = js.native
     
@@ -44,99 +43,120 @@ object httpMod {
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _]
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ]
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
-      exheaders: js.UndefOr[scala.Nothing],
-      exoptions: js.UndefOr[scala.Nothing],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
+      exheaders: Unit,
+      exoptions: Unit,
       caller: js.Any
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
-      exheaders: js.UndefOr[scala.Nothing],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
+      exheaders: Unit,
       exoptions: IExOptions
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
-      exheaders: js.UndefOr[scala.Nothing],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
+      exheaders: Unit,
       exoptions: IExOptions,
       caller: js.Any
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
       exheaders: IHeaders
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
       exheaders: IHeaders,
-      exoptions: js.UndefOr[scala.Nothing],
+      exoptions: Unit,
       caller: js.Any
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
       exheaders: IHeaders,
       exoptions: IExOptions
     ): typings.request.mod.Request = js.native
     def request(
       rurl: String,
       data: js.Any,
-      callback: js.Function3[/* error */ js.Any, /* res */ js.UndefOr[js.Any], /* body */ js.UndefOr[js.Any], _],
+      callback: js.Function3[
+          /* error */ js.Any, 
+          /* res */ js.UndefOr[js.Any], 
+          /* body */ js.UndefOr[js.Any], 
+          js.Any
+        ],
       exheaders: IHeaders,
       exoptions: IExOptions,
       caller: js.Any
     ): typings.request.mod.Request = js.native
     
     def requestStream(rurl: String, data: js.Any): typings.request.mod.Request = js.native
-    def requestStream(
-      rurl: String,
-      data: js.Any,
-      exheaders: js.UndefOr[scala.Nothing],
-      exoptions: js.UndefOr[scala.Nothing],
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: js.UndefOr[scala.Nothing], exoptions: IExOptions): typings.request.mod.Request = js.native
-    def requestStream(
-      rurl: String,
-      data: js.Any,
-      exheaders: js.UndefOr[scala.Nothing],
-      exoptions: IExOptions,
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
+    def requestStream(rurl: String, data: js.Any, exheaders: Unit, exoptions: Unit, caller: js.Any): typings.request.mod.Request = js.native
+    def requestStream(rurl: String, data: js.Any, exheaders: Unit, exoptions: IExOptions): typings.request.mod.Request = js.native
+    def requestStream(rurl: String, data: js.Any, exheaders: Unit, exoptions: IExOptions, caller: js.Any): typings.request.mod.Request = js.native
     def requestStream(rurl: String, data: js.Any, exheaders: IHeaders): typings.request.mod.Request = js.native
-    def requestStream(
-      rurl: String,
-      data: js.Any,
-      exheaders: IHeaders,
-      exoptions: js.UndefOr[scala.Nothing],
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
+    def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: Unit, caller: js.Any): typings.request.mod.Request = js.native
     def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions): typings.request.mod.Request = js.native
     def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions, caller: js.Any): typings.request.mod.Request = js.native
   }
   
-  @js.native
   trait IAttachment extends StObject {
     
-    var body: ReadableStream = js.native
+    var body: ReadableStream
     
-    var contentId: String = js.native
+    var contentId: String
     
-    var mimetype: String = js.native
+    var mimetype: String
     
-    var name: String = js.native
+    var name: String
   }
   object IAttachment {
     

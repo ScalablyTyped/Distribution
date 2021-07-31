@@ -10,7 +10,6 @@ import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.googleErrorMod.GoogleError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callMod {
@@ -43,23 +42,21 @@ object callMod {
     def call(func: SimpleCallbackFunction, argument: RequestType): Unit = js.native
     
     def callback(): Unit = js.native
-    def callback(
-      err: Null,
-      response: js.UndefOr[ResponseType],
-      next: js.UndefOr[NextPageRequestType],
-      rawResponse: RawResponseType
-    ): Unit = js.native
-    def callback(err: Null, response: js.UndefOr[ResponseType], next: NextPageRequestType): Unit = js.native
+    def callback(err: Null, response: Unit, next: Unit, rawResponse: RawResponseType): Unit = js.native
+    def callback(err: Null, response: Unit, next: NextPageRequestType): Unit = js.native
+    def callback(err: Null, response: Unit, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
     def callback(err: Null, response: ResponseType): Unit = js.native
+    def callback(err: Null, response: ResponseType, next: Unit, rawResponse: RawResponseType): Unit = js.native
+    def callback(err: Null, response: ResponseType, next: NextPageRequestType): Unit = js.native
+    def callback(err: Null, response: ResponseType, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
     def callback(err: GoogleError): Unit = js.native
-    def callback(
-      err: GoogleError,
-      response: js.UndefOr[ResponseType],
-      next: js.UndefOr[NextPageRequestType],
-      rawResponse: RawResponseType
-    ): Unit = js.native
-    def callback(err: GoogleError, response: js.UndefOr[ResponseType], next: NextPageRequestType): Unit = js.native
+    def callback(err: GoogleError, response: Unit, next: Unit, rawResponse: RawResponseType): Unit = js.native
+    def callback(err: GoogleError, response: Unit, next: NextPageRequestType): Unit = js.native
+    def callback(err: GoogleError, response: Unit, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
     def callback(err: GoogleError, response: ResponseType): Unit = js.native
+    def callback(err: GoogleError, response: ResponseType, next: Unit, rawResponse: RawResponseType): Unit = js.native
+    def callback(err: GoogleError, response: ResponseType, next: NextPageRequestType): Unit = js.native
+    def callback(err: GoogleError, response: ResponseType, next: NextPageRequestType, rawResponse: RawResponseType): Unit = js.native
     @JSName("callback")
     var callback_Original: APICallback = js.native
     

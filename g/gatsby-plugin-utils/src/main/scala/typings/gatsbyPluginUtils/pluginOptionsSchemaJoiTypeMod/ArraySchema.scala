@@ -2,12 +2,13 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod._Schema because Already inherited */ @js.native
-trait ArraySchema extends AnySchema {
+trait ArraySchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Verifies that an assertion passes for at least one item in the array, where:
@@ -83,9 +84,9 @@ trait ArraySchema extends AnySchema {
     * a performance penalty is to be expected for this kind of operation.
     */
   def unique(): this.type = js.native
-  def unique(comparator: js.UndefOr[scala.Nothing], options: ArrayUniqueOptions): this.type = js.native
   def unique(comparator: String): this.type = js.native
   def unique(comparator: String, options: ArrayUniqueOptions): this.type = js.native
+  def unique(comparator: Unit, options: ArrayUniqueOptions): this.type = js.native
   def unique(comparator: ComparatorFunction): this.type = js.native
   def unique(comparator: ComparatorFunction, options: ArrayUniqueOptions): this.type = js.native
 }

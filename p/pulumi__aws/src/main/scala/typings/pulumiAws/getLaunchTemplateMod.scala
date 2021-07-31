@@ -16,41 +16,39 @@ import typings.pulumiAws.outputMod.ec2.GetLaunchTemplateTagSpecification
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLaunchTemplateMod {
   
-  @JSImport("@pulumi/aws/ec2/getLaunchTemplate", "getLaunchTemplate")
+  @JSImport("@pulumi/aws/ec2/getLaunchTemplate", JSImport.Namespace)
   @js.native
-  def getLaunchTemplate(): js.Promise[GetLaunchTemplateResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLaunchTemplate", "getLaunchTemplate")
-  @js.native
-  def getLaunchTemplate(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLaunchTemplate", "getLaunchTemplate")
-  @js.native
-  def getLaunchTemplate(args: GetLaunchTemplateArgs): js.Promise[GetLaunchTemplateResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLaunchTemplate", "getLaunchTemplate")
-  @js.native
-  def getLaunchTemplate(args: GetLaunchTemplateArgs, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLaunchTemplate(): js.Promise[GetLaunchTemplateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")().asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  @scala.inline
+  def getLaunchTemplate(args: Unit, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  @scala.inline
+  def getLaunchTemplate(args: GetLaunchTemplateArgs): js.Promise[GetLaunchTemplateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  @scala.inline
+  def getLaunchTemplate(args: GetLaunchTemplateArgs, opts: InvokeOptions): js.Promise[GetLaunchTemplateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchTemplate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchTemplateResult]]
+  
   trait GetLaunchTemplateArgs extends StObject {
     
     /**
       * Configuration block(s) for filtering. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetLaunchTemplateFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetLaunchTemplateFilter]] = js.undefined
     
     /**
       * The name of the filter field. Valid values can be found in the [EC2 DescribeLaunchTemplates API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeLaunchTemplates.html).
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match a pair on the desired Launch Template.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLaunchTemplateArgs {
     
@@ -86,160 +84,159 @@ object getLaunchTemplateMod {
     }
   }
   
-  @js.native
   trait GetLaunchTemplateResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the launch template.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Specify volumes to attach to the instance besides the volumes specified by the AMI.
       */
-    val blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping] = js.native
+    val blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping]
     
     /**
       * Customize the credit specification of the instance. See Credit
       * Specification below for more details.
       */
-    val creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification] = js.native
+    val creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification]
     
     /**
       * The default version of the launch template.
       */
-    val defaultVersion: Double = js.native
+    val defaultVersion: Double
     
     /**
       * Description of the launch template.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * If `true`, enables [EC2 Instance
       * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
       */
-    val disableApiTermination: Boolean = js.native
+    val disableApiTermination: Boolean
     
     /**
       * If `true`, the launched EC2 instance will be EBS-optimized.
       */
-    val ebsOptimized: String = js.native
+    val ebsOptimized: String
     
     /**
       * The elastic GPU to attach to the instance. See Elastic GPU
       * below for more details.
       */
-    val elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification] = js.native
+    val elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLaunchTemplateFilter]] = js.undefined
     
     /**
       * The hibernation options for the instance.
       */
-    val hibernationOptions: js.Array[GetLaunchTemplateHibernationOption] = js.native
+    val hibernationOptions: js.Array[GetLaunchTemplateHibernationOption]
     
     /**
       * The IAM Instance Profile to launch the instance with. See Instance Profile
       * below for more details.
       */
-    val iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile] = js.native
+    val iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The AMI from which to launch the instance.
       */
-    val imageId: String = js.native
+    val imageId: String
     
     /**
       * Shutdown behavior for the instance. Can be `stop` or `terminate`.
       * (Default: `stop`).
       */
-    val instanceInitiatedShutdownBehavior: String = js.native
+    val instanceInitiatedShutdownBehavior: String
     
     /**
       * The market (purchasing) option for the instance.
       * below for details.
       */
-    val instanceMarketOptions: js.Array[GetLaunchTemplateInstanceMarketOption] = js.native
+    val instanceMarketOptions: js.Array[GetLaunchTemplateInstanceMarketOption]
     
     /**
       * The type of the instance.
       */
-    val instanceType: String = js.native
+    val instanceType: String
     
     /**
       * The kernel ID.
       */
-    val kernelId: String = js.native
+    val kernelId: String
     
     /**
       * The key name to use for the instance.
       */
-    val keyName: String = js.native
+    val keyName: String
     
     /**
       * The latest version of the launch template.
       */
-    val latestVersion: Double = js.native
+    val latestVersion: Double
     
     /**
       * The metadata options for the instance.
       */
-    val metadataOptions: js.Array[GetLaunchTemplateMetadataOption] = js.native
+    val metadataOptions: js.Array[GetLaunchTemplateMetadataOption]
     
     /**
       * The monitoring option for the instance.
       */
-    val monitorings: js.Array[GetLaunchTemplateMonitoring] = js.native
+    val monitorings: js.Array[GetLaunchTemplateMonitoring]
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * Customize network interfaces to be attached at instance boot time. See Network
       * Interfaces below for more details.
       */
-    val networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface] = js.native
+    val networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface]
     
     /**
       * The placement of the instance.
       */
-    val placements: js.Array[GetLaunchTemplatePlacement] = js.native
+    val placements: js.Array[GetLaunchTemplatePlacement]
     
     /**
       * The ID of the RAM disk.
       */
-    val ramDiskId: String = js.native
+    val ramDiskId: String
     
     /**
       * A list of security group names to associate with. If you are creating Instances in a VPC, use
       * `vpcSecurityGroupIds` instead.
       */
-    val securityGroupNames: js.Array[String] = js.native
+    val securityGroupNames: js.Array[String]
     
     /**
       * The tags to apply to the resources during launch.
       */
-    val tagSpecifications: js.Array[GetLaunchTemplateTagSpecification] = js.native
+    val tagSpecifications: js.Array[GetLaunchTemplateTagSpecification]
     
     /**
       * (Optional) A map of tags to assign to the launch template.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The Base64-encoded user data to provide when launching the instance.
       */
-    val userData: String = js.native
+    val userData: String
     
     /**
       * A list of security group IDs to associate with.
       */
-    val vpcSecurityGroupIds: js.Array[String] = js.native
+    val vpcSecurityGroupIds: js.Array[String]
   }
   object GetLaunchTemplateResult {
     

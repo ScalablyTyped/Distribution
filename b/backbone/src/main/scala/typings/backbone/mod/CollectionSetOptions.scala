@@ -2,23 +2,22 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionSetOptions
-  extends Parseable
+  extends StObject
+     with Parseable
      with Silenceable {
   
-  var add: js.UndefOr[Boolean] = js.native
+  var add: js.UndefOr[Boolean] = js.undefined
   
-  var at: js.UndefOr[Double] = js.native
+  var at: js.UndefOr[Double] = js.undefined
   
-  var merge: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.undefined
   
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object CollectionSetOptions {
   

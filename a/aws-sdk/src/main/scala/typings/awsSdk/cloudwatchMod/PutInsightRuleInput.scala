@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutInsightRuleInput extends StObject {
   
   /**
     * The definition of the rule, as a JSON object. For details on the valid syntax, see Contributor Insights Rule Syntax.
     */
-  var RuleDefinition: InsightRuleDefinition = js.native
+  var RuleDefinition: InsightRuleDefinition
   
   /**
     * A unique name for the rule.
     */
-  var RuleName: InsightRuleName = js.native
+  var RuleName: InsightRuleName
   
   /**
     * The state of the rule. Valid values are ENABLED and DISABLED.
     */
-  var RuleState: js.UndefOr[InsightRuleState] = js.native
+  var RuleState: js.UndefOr[InsightRuleState] = js.undefined
   
   /**
     * A list of key-value pairs to associate with the Contributor Insights rule. You can associate as many as 50 tags with a rule. Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only the resources that have certain tag values. To be able to associate tags with a rule, you must have the cloudwatch:TagResource permission in addition to the cloudwatch:PutInsightRule permission. If you are using this operation to update an existing Contributor Insights rule, any tags you specify in this parameter are ignored. To change the tags of an existing rule, use TagResource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object PutInsightRuleInput {
   

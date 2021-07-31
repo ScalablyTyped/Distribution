@@ -2,19 +2,17 @@ package typings.jqueryFiltertable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FilterTable {
   
-  @js.native
   trait FilterTableOptions extends StObject {
     
     /**
       * Makes the filter input field autofocused (not recommended for accessibility reasons)
       * Default: 'false'
       */
-    var autofocus: js.UndefOr[Boolean] = js.native
+    var autofocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback function after a filter is performed.
@@ -23,122 +21,122 @@ object FilterTable {
       * @param table table being filtered (JQuery object)
       * @returns {void} 
       */
-    var callback: js.UndefOr[js.Function2[/* term */ String, /* table */ JQuery, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* term */ String, /* table */ JQuery, Unit]] = js.undefined
     
     /**
       * Class applied to the main filter input container
       * Default: 'filter-table'
       */
-    var containerClass: js.UndefOr[String] = js.native
+    var containerClass: js.UndefOr[String] = js.undefined
     
     /**
       * Tag name of the main filter input container
       * Default: 'p'
       */
-    var containerTag: js.UndefOr[String] = js.native
+    var containerTag: js.UndefOr[String] = js.undefined
     
     /**
       * Controls whether the table's tfoot(s) will be hidden when the table is filtered
       * Default: 'false'
       */
-    var hideTFootOnFilter: js.UndefOr[Boolean] = js.native
+    var hideTFootOnFilter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class applied to cells containing the filter term
       * Default: 'alt'
       */
-    var highlightClass: js.UndefOr[String] = js.native
+    var highlightClass: js.UndefOr[String] = js.undefined
     
     /**
       * Ignore these columns (0-indexed) when filtering
       * Default: '[]'
       */
-    var ignoreColumns: js.UndefOr[js.Array[Double]] = js.native
+    var ignoreColumns: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Name attribute of the filter input field
       * Default: 'filter-table'
       */
-    var inputName: js.UndefOr[String] = js.native
+    var inputName: js.UndefOr[String] = js.undefined
     
     /**
       * Use this selector to find the filter input instead of creating a new one (only works if selector returns a single element)
       * Default: 'null'
       */
-    var inputSelector: js.UndefOr[String] = js.native
+    var inputSelector: js.UndefOr[String] = js.undefined
     
     /**
       * Tag name of the filter input itself
       * Default: 'search'
       */
-    var inputType: js.UndefOr[String] = js.native
+    var inputType: js.UndefOr[String] = js.undefined
     
     /**
       * Text to precede the filter input
       * Default: 'Filter:'
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Filter only when at least this number of characters are in the filter input field
       * Default: '1'
       */
-    var minChars: js.UndefOr[Double] = js.native
+    var minChars: js.UndefOr[Double] = js.undefined
     
     /**
       * Only show the filter on tables with this number of rows or more
       * Default: '8'
       */
-    var minRows: js.UndefOr[Double] = js.native
+    var minRows: js.UndefOr[Double] = js.undefined
     
     /**
       * HTML5 placeholder text for the filter input
       * Default: 'search this table'
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Trap the return key in the filter input field to prevent form submission
       * Default: 'true'
       */
-    var preventReturnKey: js.UndefOr[Boolean] = js.native
+    var preventReturnKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * List of clickable phrases to quick fill the search
       * Default: '[]'
       */
-    var quickList: js.UndefOr[js.Array[String]] = js.native
+    var quickList: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Class of each quick list item
       * Default: 'quick'
       */
-    var quickListClass: js.UndefOr[String] = js.native
+    var quickListClass: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the clear filtering quick list item (or none if blank)
       * Default: ''
       */
-    var quickListClear: js.UndefOr[String] = js.native
+    var quickListClear: js.UndefOr[String] = js.undefined
     
     /**
       * Tag name surrounding quick list items (e.g., ul)
       * Default: ''
       */
-    var quickListGroupTag: js.UndefOr[String] = js.native
+    var quickListGroupTag: js.UndefOr[String] = js.undefined
     
     /**
       * Tag name of each quick list item (e.g., a or li)
       * Default: 'a'
       */
-    var quickListTag: js.UndefOr[String] = js.native
+    var quickListTag: js.UndefOr[String] = js.undefined
     
     // "a" | "li"
     /**
       * Class applied to visible rows
       * Default: 'visible'
       */
-    var visibleClass: js.UndefOr[String] = js.native
+    var visibleClass: js.UndefOr[String] = js.undefined
   }
   object FilterTableOptions {
     

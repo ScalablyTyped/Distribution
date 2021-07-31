@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventNotificationConfig extends StObject {
   
   /** A Cloud Pub/Sub topic name. For example, `projects/myProject/topics/deviceEvents`. */
-  var pubsubTopicName: js.UndefOr[String] = js.native
+  var pubsubTopicName: js.UndefOr[String] = js.undefined
   
   /**
     * If the subfolder name matches this string exactly, this configuration will be used. The string must not include the leading '/' character. If empty, all strings are matched. This
     * field is used only for telemetry events; subfolders are not supported for state changes.
     */
-  var subfolderMatches: js.UndefOr[String] = js.native
+  var subfolderMatches: js.UndefOr[String] = js.undefined
 }
 object EventNotificationConfig {
   

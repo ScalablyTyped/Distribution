@@ -6,7 +6,6 @@ import typings.sha1.sha1Booleans.`true`
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,43 +17,40 @@ object mod {
     * @param options - an options object
     * @returns the resultant SHA1 hash of the given message
     */
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: String): String = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: String, options: Sha1AsBytesOptions): Uint8Array = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: String, options: Sha1AsStringOptions): String = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: String, options: Sha1Options): String | Uint8Array = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer): String = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer, options: Sha1AsBytesOptions): Uint8Array = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer, options: Sha1AsStringOptions): String = js.native
-  @JSImport("sha1", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer, options: Sha1Options): String | Uint8Array = js.native
+  @scala.inline
+  def apply(message: String): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(message: String, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def apply(message: String, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(message: String, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
+  @scala.inline
+  def apply(message: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(message: Buffer, options: Sha1AsBytesOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def apply(message: Buffer, options: Sha1AsStringOptions): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(message: Buffer, options: Sha1Options): String | Uint8Array = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Uint8Array]
   
+  @JSImport("sha1", JSImport.Namespace)
   @js.native
-  trait Sha1AsBytesOptions extends Sha1Options {
+  val ^ : js.Any = js.native
+  
+  trait Sha1AsBytesOptions
+    extends StObject
+       with Sha1Options {
     
-    var asBytes: `true` = js.native
+    var asBytes: `true`
     
-    var asString: js.UndefOr[`false`] = js.native
+    var asString: js.UndefOr[`false`] = js.undefined
   }
   object Sha1AsBytesOptions {
     
     @scala.inline
-    def apply(asBytes: `true`): Sha1AsBytesOptions = {
-      val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
+    def apply(): Sha1AsBytesOptions = {
+      val __obj = js.Dynamic.literal(asBytes = true)
       __obj.asInstanceOf[Sha1AsBytesOptions]
     }
     
@@ -72,12 +68,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait Sha1AsStringOptions extends Sha1Options {
+  trait Sha1AsStringOptions
+    extends StObject
+       with Sha1Options {
     
-    var asBytes: js.UndefOr[`false`] = js.native
+    var asBytes: js.UndefOr[`false`] = js.undefined
     
-    var asString: js.UndefOr[Boolean] = js.native
+    var asString: js.UndefOr[Boolean] = js.undefined
   }
   object Sha1AsStringOptions {
     
@@ -112,8 +109,8 @@ object mod {
   object Sha1Options {
     
     @scala.inline
-    def Sha1AsBytesOptions(asBytes: `true`): typings.sha1.mod.Sha1AsBytesOptions = {
-      val __obj = js.Dynamic.literal(asBytes = asBytes.asInstanceOf[js.Any])
+    def Sha1AsBytesOptions(): typings.sha1.mod.Sha1AsBytesOptions = {
+      val __obj = js.Dynamic.literal(asBytes = true)
       __obj.asInstanceOf[typings.sha1.mod.Sha1AsBytesOptions]
     }
     

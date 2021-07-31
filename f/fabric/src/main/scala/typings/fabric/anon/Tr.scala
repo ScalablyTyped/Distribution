@@ -3,19 +3,17 @@ package typings.fabric.anon
 import typings.fabric.fabricImplMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tr extends StObject {
   
-  var bl: Point = js.native
+  var bl: Point
   
-  var br: Point = js.native
+  var br: Point
   
-  var tl: Point = js.native
+  var tl: Point
   
-  var tr: Point = js.native
+  var tr: Point
 }
 object Tr {
   

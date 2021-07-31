@@ -2,13 +2,11 @@ package typings.knockoutPaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutPageGenerator extends StObject {
   
-  def generate[T](pagedObservable: KnockoutPagedObservableArray[T]): js.Array[Double] = js.native
+  def generate[T](pagedObservable: KnockoutPagedObservableArray[T]): js.Array[Double]
 }
 object KnockoutPageGenerator {
   

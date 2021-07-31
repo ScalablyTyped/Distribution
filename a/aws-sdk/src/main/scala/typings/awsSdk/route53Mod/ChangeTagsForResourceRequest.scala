@@ -2,31 +2,29 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeTagsForResourceRequest extends StObject {
   
   /**
     * A complex type that contains a list of the tags that you want to add to the specified health check or hosted zone and/or the tags that you want to edit Value for. You can add a maximum of 10 tags to a health check or a hosted zone.
     */
-  var AddTags: js.UndefOr[TagList] = js.native
+  var AddTags: js.UndefOr[TagList] = js.undefined
   
   /**
     * A complex type that contains a list of the tags that you want to delete from the specified health check or hosted zone. You can specify up to 10 keys.
     */
-  var RemoveTagKeys: js.UndefOr[TagKeyList] = js.native
+  var RemoveTagKeys: js.UndefOr[TagKeyList] = js.undefined
   
   /**
     * The ID of the resource for which you want to add, change, or delete tags.
     */
-  var ResourceId: TagResourceId = js.native
+  var ResourceId: TagResourceId
   
   /**
     * The type of the resource.   The resource type for health checks is healthcheck.   The resource type for hosted zones is hostedzone.  
     */
-  var ResourceType: TagResourceType = js.native
+  var ResourceType: TagResourceType
 }
 object ChangeTagsForResourceRequest {
   

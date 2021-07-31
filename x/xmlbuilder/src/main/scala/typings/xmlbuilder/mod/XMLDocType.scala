@@ -4,7 +4,6 @@ import typings.xmlbuilder.anon.NData
 import typings.xmlbuilder.anon.PubID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -130,11 +129,11 @@ class XMLDocType () extends StObject {
   def entity(name: String, value: String): XMLDocType = js.native
   def entity(name: String, value: NData): XMLDocType = js.native
   
-  def ins(array: js.Array[_]): XMLDocType = js.native
+  def ins(array: js.Array[js.Any]): XMLDocType = js.native
   def ins(obj: js.Object): XMLDocType = js.native
   def ins(target: String, value: js.Any): XMLDocType = js.native
   
-  def instruction(array: js.Array[_]): XMLDocType = js.native
+  def instruction(array: js.Array[js.Any]): XMLDocType = js.native
   def instruction(obj: js.Object): XMLDocType = js.native
   /**
     * Creates a new processing instruction node and appends it to the list 

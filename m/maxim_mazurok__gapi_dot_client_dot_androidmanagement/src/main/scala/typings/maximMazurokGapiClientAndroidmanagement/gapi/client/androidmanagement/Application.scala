@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
   /** Application tracks visible to the enterprise. */
-  var appTracks: js.UndefOr[js.Array[AppTrackInfo]] = js.native
+  var appTracks: js.UndefOr[js.Array[AppTrackInfo]] = js.undefined
   
   /** The set of managed properties available to be pre-configured for the app. */
-  var managedProperties: js.UndefOr[js.Array[ManagedProperty]] = js.native
+  var managedProperties: js.UndefOr[js.Array[ManagedProperty]] = js.undefined
   
   /** The name of the app in the form enterprises/{enterpriseId}/applications/{package_name}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The permissions required by the app. */
-  var permissions: js.UndefOr[js.Array[ApplicationPermission]] = js.native
+  var permissions: js.UndefOr[js.Array[ApplicationPermission]] = js.undefined
   
   /** The title of the app. Localized. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Application {
   

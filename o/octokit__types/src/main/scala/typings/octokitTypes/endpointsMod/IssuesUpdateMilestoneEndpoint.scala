@@ -4,37 +4,35 @@ import typings.octokitTypes.octokitTypesStrings.closed
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesUpdateMilestoneEndpoint extends StObject {
   
   /**
     * A description of the milestone.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The milestone due date. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var due_on: js.UndefOr[String] = js.native
+  var due_on: js.UndefOr[String] = js.undefined
   
-  var milestone_number: Double = js.native
+  var milestone_number: Double
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The state of the milestone. Either `open` or `closed`.
     */
-  var state: js.UndefOr[open | closed] = js.native
+  var state: js.UndefOr[open | closed] = js.undefined
   
   /**
     * The title of the milestone.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IssuesUpdateMilestoneEndpoint {
   

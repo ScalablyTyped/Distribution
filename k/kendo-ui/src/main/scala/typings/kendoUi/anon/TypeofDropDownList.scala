@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.DropDownList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDropDownList extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): DropDownList = js.native
+  def extend(proto: js.Object): DropDownList
   
   /* static member */
-  var fn: DropDownList = js.native
+  var fn: DropDownList
 }
 object TypeofDropDownList {
   

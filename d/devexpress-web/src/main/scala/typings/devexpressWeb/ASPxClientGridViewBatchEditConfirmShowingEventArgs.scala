@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.BatchEditConfirmShowing event.
   */
-@js.native
-trait ASPxClientGridViewBatchEditConfirmShowingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientGridViewBatchEditConfirmShowingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the client identifier of an object that initiates a send request.
     */
-  var requestTriggerID: String = js.native
+  var requestTriggerID: String
 }
 object ASPxClientGridViewBatchEditConfirmShowingEventArgs {
   

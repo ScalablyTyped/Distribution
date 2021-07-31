@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used when the value set is "expanded"
   */
-@js.native
-trait ValueSetExpansion extends BackboneElement {
+trait ValueSetExpansion
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'identifier'.
     */
-  var _identifier: js.UndefOr[Element] = js.native
+  var _identifier: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'offset'.
     */
-  var _offset: js.UndefOr[Element] = js.native
+  var _offset: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'timestamp'.
     */
-  var _timestamp: js.UndefOr[Element] = js.native
+  var _timestamp: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'total'.
     */
-  var _total: js.UndefOr[Element] = js.native
+  var _total: js.UndefOr[Element] = js.undefined
   
   /**
     * Codes in the value set
     */
-  var contains: js.UndefOr[js.Array[ValueSetExpansionContains]] = js.native
+  var contains: js.UndefOr[js.Array[ValueSetExpansionContains]] = js.undefined
   
   /**
     * Uniquely identifies this expansion
     */
-  var identifier: uri = js.native
+  var identifier: uri
   
   /**
     * Offset at which this resource starts
     */
-  var offset: js.UndefOr[integer] = js.native
+  var offset: js.UndefOr[integer] = js.undefined
   
   /**
     * Parameter that controlled the expansion process
     */
-  var parameter: js.UndefOr[js.Array[ValueSetExpansionParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[ValueSetExpansionParameter]] = js.undefined
   
   /**
     * Time ValueSet expansion happened
     */
-  var timestamp: dateTime = js.native
+  var timestamp: dateTime
   
   /**
     * Total number of codes in the expansion
     */
-  var total: js.UndefOr[integer] = js.native
+  var total: js.UndefOr[integer] = js.undefined
 }
 object ValueSetExpansion {
   

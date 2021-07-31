@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignmentExpression[TOperator /* <: AssignmentOperatorToken */] extends BinaryExpression {
+trait AssignmentExpression[TOperator /* <: AssignmentOperatorToken */]
+  extends StObject
+     with BinaryExpression {
   
   @JSName("left")
   val left_AssignmentExpression: LeftHandSideExpression = js.native

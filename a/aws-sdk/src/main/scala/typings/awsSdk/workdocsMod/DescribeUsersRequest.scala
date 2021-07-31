@@ -2,61 +2,59 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUsersRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * A comma-separated list of values. Specify "STORAGE_METADATA" to include the user storage quota and utilization information.
     */
-  var Fields: js.UndefOr[FieldNamesType] = js.native
+  var Fields: js.UndefOr[FieldNamesType] = js.undefined
   
   /**
     * The state of the users. Specify "ALL" to include inactive users.
     */
-  var Include: js.UndefOr[UserFilterType] = js.native
+  var Include: js.UndefOr[UserFilterType] = js.undefined
   
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[LimitType] = js.native
+  var Limit: js.UndefOr[LimitType] = js.undefined
   
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.native
+  var Marker: js.UndefOr[PageMarkerType] = js.undefined
   
   /**
     * The order for the results.
     */
-  var Order: js.UndefOr[OrderType] = js.native
+  var Order: js.UndefOr[OrderType] = js.undefined
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: js.UndefOr[IdType] = js.native
+  var OrganizationId: js.UndefOr[IdType] = js.undefined
   
   /**
     * A query to filter users by user name.
     */
-  var Query: js.UndefOr[SearchQueryType] = js.native
+  var Query: js.UndefOr[SearchQueryType] = js.undefined
   
   /**
     * The sorting criteria.
     */
-  var Sort: js.UndefOr[UserSortType] = js.native
+  var Sort: js.UndefOr[UserSortType] = js.undefined
   
   /**
     * The IDs of the users.
     */
-  var UserIds: js.UndefOr[UserIdsType] = js.native
+  var UserIds: js.UndefOr[UserIdsType] = js.undefined
 }
 object DescribeUsersRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCertificateAuthorityRequest extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the private CA that issued the certificate to be revoked. This must be of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012  
     */
-  var CertificateAuthorityArn: Arn = js.native
+  var CertificateAuthorityArn: Arn
   
   /**
     * Revocation information for your private CA.
     */
-  var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.native
+  var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.undefined
   
   /**
     * Status of your private CA.
     */
-  var Status: js.UndefOr[CertificateAuthorityStatus] = js.native
+  var Status: js.UndefOr[CertificateAuthorityStatus] = js.undefined
 }
 object UpdateCertificateAuthorityRequest {
   

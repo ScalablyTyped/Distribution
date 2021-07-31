@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployedClusterState extends StObject {
   
   /** The name of the cluster. */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
   
   /** The details about the Agones fleets and autoscalers created in the game server cluster. */
-  var fleetDetails: js.UndefOr[js.Array[DeployedFleetDetails]] = js.native
+  var fleetDetails: js.UndefOr[js.Array[DeployedFleetDetails]] = js.undefined
 }
 object DeployedClusterState {
   

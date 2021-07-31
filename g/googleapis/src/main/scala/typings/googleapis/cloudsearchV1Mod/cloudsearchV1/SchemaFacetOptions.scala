@@ -2,39 +2,37 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies operators to return facet results for. There will be one
   * FacetResult for every source_name/object_type/operator_name combination.
   */
-@js.native
 trait SchemaFacetOptions extends StObject {
   
   /**
     * Maximum number of facet buckets that should be returned for this facet.
     * Defaults to 10. Maximum value is 100.
     */
-  var numFacetBuckets: js.UndefOr[Double] = js.native
+  var numFacetBuckets: js.UndefOr[Double] = js.undefined
   
   /**
     * If object_type is set, only those objects of that type will be used to
     * compute facets. If empty, then all objects will be used to compute
     * facets.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the operator chosen for faceting. @see cloudsearch.SchemaPropertyOptions
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Source name to facet on. Format: datasources/{source_id} If empty, all
     * data sources will be used.
     */
-  var sourceName: js.UndefOr[String] = js.native
+  var sourceName: js.UndefOr[String] = js.undefined
 }
 object SchemaFacetOptions {
   

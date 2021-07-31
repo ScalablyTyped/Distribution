@@ -2,30 +2,28 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxActivityLogging Class */
-@js.native
 trait FaxActivityLogging extends StObject {
   
   /** Activity log database files path */
-  var DatabasePath: String = js.native
+  var DatabasePath: String
   
   @JSName("FAXCOMEXLib.FaxActivityLogging_typekey")
-  var FAXCOMEXLibDotFaxActivityLogging_typekey: FaxActivityLogging = js.native
+  var FAXCOMEXLibDotFaxActivityLogging_typekey: FaxActivityLogging
   
   /** Does the server log incoming fax activity */
-  var LogIncoming: Boolean = js.native
+  var LogIncoming: Boolean
   
   /** Does the server log outgoing fax activity */
-  var LogOutgoing: Boolean = js.native
+  var LogOutgoing: Boolean
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
 }
 object FaxActivityLogging {
   

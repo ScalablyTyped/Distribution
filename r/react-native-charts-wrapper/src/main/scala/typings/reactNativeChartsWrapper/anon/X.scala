@@ -2,15 +2,13 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  var x: js.UndefOr[Max] = js.native
+  var x: js.UndefOr[Max] = js.undefined
   
-  var y: js.UndefOr[Left] = js.native
+  var y: js.UndefOr[Left] = js.undefined
 }
 object X {
   

@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ResponsivePanel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofResponsivePanel extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ResponsivePanel = js.native
+  def extend(proto: js.Object): ResponsivePanel
   
   /* static member */
-  var fn: ResponsivePanel = js.native
+  var fn: ResponsivePanel
 }
 object TypeofResponsivePanel {
   

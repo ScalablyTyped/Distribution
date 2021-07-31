@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.NotEqualTo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait DateTimeDataValidation extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait DateTimeDataValidation extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var formula1: String | Date | Range = js.native
+  var formula1: String | Date | Range
   
   /**
     *
@@ -41,7 +39,7 @@ trait DateTimeDataValidation extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var formula2: js.UndefOr[String | Date | Range] = js.native
+  var formula2: js.UndefOr[String | Date | Range] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait DateTimeDataValidation extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var operator: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo = js.native
+  var operator: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo
 }
 object DateTimeDataValidation {
   

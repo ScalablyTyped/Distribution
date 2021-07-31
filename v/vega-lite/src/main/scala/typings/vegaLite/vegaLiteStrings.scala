@@ -57,68 +57,91 @@ import typings.vegaLite.typeMod._RangeType
 import typings.vegaLite.vegaSchemaMod.VgEncodeChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vegaLiteStrings {
   
   @js.native
-  sealed trait `-color` extends SortByChannelDesc
+  sealed trait `-color`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-color`: `-color` = "-color".asInstanceOf[`-color`]
   
   @js.native
-  sealed trait `-fill` extends SortByChannelDesc
+  sealed trait `-fill`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-fill`: `-fill` = "-fill".asInstanceOf[`-fill`]
   
   @js.native
-  sealed trait `-fillOpacity` extends SortByChannelDesc
+  sealed trait `-fillOpacity`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-fillOpacity`: `-fillOpacity` = "-fillOpacity".asInstanceOf[`-fillOpacity`]
   
   @js.native
-  sealed trait `-opacity` extends SortByChannelDesc
+  sealed trait `-opacity`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-opacity`: `-opacity` = "-opacity".asInstanceOf[`-opacity`]
   
   @js.native
-  sealed trait `-shape` extends SortByChannelDesc
+  sealed trait `-shape`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-shape`: `-shape` = "-shape".asInstanceOf[`-shape`]
   
   @js.native
-  sealed trait `-size` extends SortByChannelDesc
+  sealed trait `-size`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-size`: `-size` = "-size".asInstanceOf[`-size`]
   
   @js.native
-  sealed trait `-stroke` extends SortByChannelDesc
+  sealed trait `-stroke`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-stroke`: `-stroke` = "-stroke".asInstanceOf[`-stroke`]
   
   @js.native
-  sealed trait `-strokeOpacity` extends SortByChannelDesc
+  sealed trait `-strokeOpacity`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-strokeOpacity`: `-strokeOpacity` = "-strokeOpacity".asInstanceOf[`-strokeOpacity`]
   
   @js.native
-  sealed trait `-strokeWidth` extends SortByChannelDesc
+  sealed trait `-strokeWidth`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-strokeWidth`: `-strokeWidth` = "-strokeWidth".asInstanceOf[`-strokeWidth`]
   
   @js.native
-  sealed trait `-text` extends SortByChannelDesc
+  sealed trait `-text`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-text`: `-text` = "-text".asInstanceOf[`-text`]
   
   @js.native
-  sealed trait `-x` extends SortByChannelDesc
+  sealed trait `-x`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-x`: `-x` = "-x".asInstanceOf[`-x`]
   
   @js.native
-  sealed trait `-y` extends SortByChannelDesc
+  sealed trait `-y`
+    extends StObject
+       with SortByChannelDesc
   @scala.inline
   def `-y`: `-y` = "-y".asInstanceOf[`-y`]
   
@@ -128,7 +151,9 @@ object vegaLiteStrings {
   def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   
   @js.native
-  sealed trait E extends TupleStoreType
+  sealed trait E
+    extends StObject
+       with TupleStoreType
   @scala.inline
   def E: E = "E".asInstanceOf[E]
   
@@ -153,32 +178,44 @@ object vegaLiteStrings {
   def PartialIndex: PartialIndex = "PartialIndex".asInstanceOf[PartialIndex]
   
   @js.native
-  sealed trait R extends TupleStoreType
+  sealed trait R
+    extends StObject
+       with TupleStoreType
   @scala.inline
   def R: R = "R".asInstanceOf[R]
   
   @js.native
-  sealed trait `R-RE` extends TupleStoreType
+  sealed trait `R-RE`
+    extends StObject
+       with TupleStoreType
   @scala.inline
   def `R-RE`: `R-RE` = "R-RE".asInstanceOf[`R-RE`]
   
   @js.native
-  sealed trait _empty extends SplitParentProperty
+  sealed trait _empty
+    extends StObject
+       with SplitParentProperty
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait `aggregated-error` extends ErrorInputType
+  sealed trait `aggregated-error`
+    extends StObject
+       with ErrorInputType
   @scala.inline
   def `aggregated-error`: `aggregated-error` = "aggregated-error".asInstanceOf[`aggregated-error`]
   
   @js.native
-  sealed trait `aggregated-upper-lower` extends ErrorInputType
+  sealed trait `aggregated-upper-lower`
+    extends StObject
+       with ErrorInputType
   @scala.inline
   def `aggregated-upper-lower`: `aggregated-upper-lower` = "aggregated-upper-lower".asInstanceOf[`aggregated-upper-lower`]
   
   @js.native
-  sealed trait align extends VgEncodeChannel
+  sealed trait align
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def align: align = "align".asInstanceOf[align]
   
@@ -199,28 +236,37 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait angle
-    extends Channel
+    extends StObject
+       with Channel
        with VgEncodeChannel
   @scala.inline
   def angle: angle = "angle".asInstanceOf[angle]
   
   @js.native
-  sealed trait arc extends Mark
+  sealed trait arc
+    extends StObject
+       with Mark
   @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]
   
   @js.native
-  sealed trait area extends Mark
+  sealed trait area
+    extends StObject
+       with Mark
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait argmax extends Aggregate
+  sealed trait argmax
+    extends StObject
+       with Aggregate
   @scala.inline
   def argmax: argmax = "argmax".asInstanceOf[argmax]
   
   @js.native
-  sealed trait argmin extends Aggregate
+  sealed trait argmin
+    extends StObject
+       with Aggregate
   @scala.inline
   def argmin: argmin = "argmin".asInstanceOf[argmin]
   
@@ -240,7 +286,9 @@ object vegaLiteStrings {
   def ariaRoleDescription: ariaRoleDescription = "ariaRoleDescription".asInstanceOf[ariaRoleDescription]
   
   @js.native
-  sealed trait ascending extends SortOrder
+  sealed trait ascending
+    extends StObject
+       with SortOrder
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   
@@ -251,14 +299,16 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait average
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def average: average = "average".asInstanceOf[average]
   
   @js.native
   sealed trait axis
-    extends AxisPart
+    extends StObject
+       with AxisPart
        with SplitParentProperty
   @scala.inline
   def axis: axis = "axis".asInstanceOf[axis]
@@ -370,7 +420,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait band
-    extends ErrorBandPart
+    extends StObject
+       with ErrorBandPart
        with ScaleType
   @scala.inline
   def band: band = "band".asInstanceOf[band]
@@ -386,7 +437,9 @@ object vegaLiteStrings {
   def bandSize: bandSize = "bandSize".asInstanceOf[bandSize]
   
   @js.native
-  sealed trait bar extends Mark
+  sealed trait bar
+    extends StObject
+       with Mark
   @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
   
@@ -396,12 +449,16 @@ object vegaLiteStrings {
   def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait baseline extends VgEncodeChannel
+  sealed trait baseline
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait `bin-ordinal` extends ScaleType
+  sealed trait `bin-ordinal`
+    extends StObject
+       with ScaleType
   @scala.inline
   def `bin-ordinal`: `bin-ordinal` = "bin-ordinal".asInstanceOf[`bin-ordinal`]
   
@@ -411,7 +468,9 @@ object vegaLiteStrings {
   def binSpacing: binSpacing = "binSpacing".asInstanceOf[binSpacing]
   
   @js.native
-  sealed trait binned extends _Bin
+  sealed trait binned
+    extends StObject
+       with _Bin
   @scala.inline
   def binned: binned = "binned".asInstanceOf[binned]
   
@@ -426,12 +485,16 @@ object vegaLiteStrings {
   def blend: blend = "blend".asInstanceOf[blend]
   
   @js.native
-  sealed trait boolean extends _ParseValue
+  sealed trait boolean
+    extends StObject
+       with _ParseValue
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait borders extends ErrorBandPart
+  sealed trait borders
+    extends StObject
+       with ErrorBandPart
   @scala.inline
   def borders: borders = "borders".asInstanceOf[borders]
   
@@ -456,7 +519,9 @@ object vegaLiteStrings {
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait box extends BoxPlotPart
+  sealed trait box
+    extends StObject
+       with BoxPlotPart
   @scala.inline
   def box: box = "box".asInstanceOf[box]
   
@@ -466,41 +531,53 @@ object vegaLiteStrings {
   def boxplot: boxplot = "boxplot".asInstanceOf[boxplot]
   
   @js.native
-  sealed trait center extends StackOffset
+  sealed trait center
+    extends StObject
+       with StackOffset
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait childHeight extends LayoutSizeType
+  sealed trait childHeight
+    extends StObject
+       with LayoutSizeType
   @scala.inline
   def childHeight: childHeight = "childHeight".asInstanceOf[childHeight]
   
   @js.native
-  sealed trait childWidth extends LayoutSizeType
+  sealed trait childWidth
+    extends StObject
+       with LayoutSizeType
   @scala.inline
   def childWidth: childWidth = "childWidth".asInstanceOf[childWidth]
   
   @js.native
-  sealed trait ci extends ErrorBarExtent
+  sealed trait ci
+    extends StObject
+       with ErrorBarExtent
   @scala.inline
   def ci: ci = "ci".asInstanceOf[ci]
   
   @js.native
   sealed trait ci0
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def ci0: ci0 = "ci0".asInstanceOf[ci0]
   
   @js.native
   sealed trait ci1
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def ci1: ci1 = "ci1".asInstanceOf[ci1]
   
   @js.native
-  sealed trait circle extends Mark
+  sealed trait circle
+    extends StObject
+       with Mark
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
@@ -510,7 +587,9 @@ object vegaLiteStrings {
   def clamp: clamp = "clamp".asInstanceOf[clamp]
   
   @js.native
-  sealed trait clip extends VgEncodeChannel
+  sealed trait clip
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def clip: clip = "clip".asInstanceOf[clip]
   
@@ -521,15 +600,17 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait color
-    extends SortByChannel
+    extends StObject
        with Channel
        with ColorChannel
+       with SortByChannel
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait column
-    extends FacetChannel
+    extends StObject
+       with FacetChannel
        with HeaderChannel
   @scala.inline
   def column: column = "column".asInstanceOf[column]
@@ -545,7 +626,9 @@ object vegaLiteStrings {
   def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
-  sealed trait concat extends SpecType
+  sealed trait concat
+    extends StObject
+       with SpecType
   @scala.inline
   def concat: concat = "concat".asInstanceOf[concat]
   
@@ -555,7 +638,9 @@ object vegaLiteStrings {
   def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
-  sealed trait container extends _LayoutSize
+  sealed trait container
+    extends StObject
+       with _LayoutSize
   @scala.inline
   def container: container = "container".asInstanceOf[container]
   
@@ -565,7 +650,9 @@ object vegaLiteStrings {
   def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait continuous extends _RangeType
+  sealed trait continuous
+    extends StObject
+       with _RangeType
   @scala.inline
   def continuous: continuous = "continuous".asInstanceOf[continuous]
   
@@ -575,17 +662,23 @@ object vegaLiteStrings {
   def continuousBandSize: continuousBandSize = "continuousBandSize".asInstanceOf[continuousBandSize]
   
   @js.native
-  sealed trait cornerRadius extends VgEncodeChannel
+  sealed trait cornerRadius
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def cornerRadius: cornerRadius = "cornerRadius".asInstanceOf[cornerRadius]
   
   @js.native
-  sealed trait cornerRadiusBottomLeft extends VgEncodeChannel
+  sealed trait cornerRadiusBottomLeft
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def cornerRadiusBottomLeft: cornerRadiusBottomLeft = "cornerRadiusBottomLeft".asInstanceOf[cornerRadiusBottomLeft]
   
   @js.native
-  sealed trait cornerRadiusBottomRight extends VgEncodeChannel
+  sealed trait cornerRadiusBottomRight
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def cornerRadiusBottomRight: cornerRadiusBottomRight = "cornerRadiusBottomRight".asInstanceOf[cornerRadiusBottomRight]
   
@@ -595,34 +688,45 @@ object vegaLiteStrings {
   def cornerRadiusEnd: cornerRadiusEnd = "cornerRadiusEnd".asInstanceOf[cornerRadiusEnd]
   
   @js.native
-  sealed trait cornerRadiusTopLeft extends VgEncodeChannel
+  sealed trait cornerRadiusTopLeft
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def cornerRadiusTopLeft: cornerRadiusTopLeft = "cornerRadiusTopLeft".asInstanceOf[cornerRadiusTopLeft]
   
   @js.native
-  sealed trait cornerRadiusTopRight extends VgEncodeChannel
+  sealed trait cornerRadiusTopRight
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def cornerRadiusTopRight: cornerRadiusTopRight = "cornerRadiusTopRight".asInstanceOf[cornerRadiusTopRight]
   
   @js.native
   sealed trait count
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def count: count = "count".asInstanceOf[count]
   
   @js.native
-  sealed trait csv extends DataFormatType
+  sealed trait csv
+    extends StObject
+       with DataFormatType
   @scala.inline
   def csv: csv = "csv".asInstanceOf[csv]
   
   @js.native
-  sealed trait cume_dist extends WindowOnlyOp
+  sealed trait cume_dist
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def cume_dist: cume_dist = "cume_dist".asInstanceOf[cume_dist]
   
   @js.native
-  sealed trait cursor extends VgEncodeChannel
+  sealed trait cursor
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
   
@@ -633,7 +737,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait date
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
        with _ParseValue
   @scala.inline
@@ -651,58 +756,79 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait day
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait dayhours extends LocalMultiTimeUnit
+  sealed trait dayhours
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def dayhours: dayhours = "dayhours".asInstanceOf[dayhours]
   
   @js.native
-  sealed trait dayhoursminutes extends LocalMultiTimeUnit
+  sealed trait dayhoursminutes
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def dayhoursminutes: dayhoursminutes = "dayhoursminutes".asInstanceOf[dayhoursminutes]
   
   @js.native
-  sealed trait dayhoursminutesseconds extends LocalMultiTimeUnit
+  sealed trait dayhoursminutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def dayhoursminutesseconds: dayhoursminutesseconds = "dayhoursminutesseconds".asInstanceOf[dayhoursminutesseconds]
   
   @js.native
-  sealed trait dayofyear extends LocalSingleTimeUnit
+  sealed trait dayofyear
+    extends StObject
+       with LocalSingleTimeUnit
   @scala.inline
   def dayofyear: dayofyear = "dayofyear".asInstanceOf[dayofyear]
   
   @js.native
-  sealed trait defined extends VgEncodeChannel
+  sealed trait defined
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def defined: defined = "defined".asInstanceOf[defined]
   
   @js.native
-  sealed trait dense_rank extends WindowOnlyOp
+  sealed trait dense_rank
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def dense_rank: dense_rank = "dense_rank".asInstanceOf[dense_rank]
   
   @js.native
-  sealed trait descending extends SortOrder
+  sealed trait descending
+    extends StObject
+       with SortOrder
   @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
-  sealed trait description extends Channel
+  sealed trait description
+    extends StObject
+       with Channel
   @scala.inline
   def description: description = "description".asInstanceOf[description]
   
   @js.native
-  sealed trait detail extends Channel
+  sealed trait detail
+    extends StObject
+       with Channel
   @scala.inline
   def detail: detail = "detail".asInstanceOf[detail]
   
   @js.native
-  sealed trait dir extends VgEncodeChannel
+  sealed trait dir
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   
@@ -717,7 +843,9 @@ object vegaLiteStrings {
   def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait discrete extends _RangeType
+  sealed trait discrete
+    extends StObject
+       with _RangeType
   @scala.inline
   def discrete: discrete = "discrete".asInstanceOf[discrete]
   
@@ -733,13 +861,16 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait distinct
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def distinct: distinct = "distinct".asInstanceOf[distinct]
   
   @js.native
-  sealed trait domain extends AxisPart
+  sealed trait domain
+    extends StObject
+       with AxisPart
   @scala.inline
   def domain: domain = "domain".asInstanceOf[domain]
   
@@ -794,17 +925,23 @@ object vegaLiteStrings {
   def domains: domains = "domains".asInstanceOf[domains]
   
   @js.native
-  sealed trait dsv extends DataFormatType
+  sealed trait dsv
+    extends StObject
+       with DataFormatType
   @scala.inline
   def dsv: dsv = "dsv".asInstanceOf[dsv]
   
   @js.native
-  sealed trait dx extends VgEncodeChannel
+  sealed trait dx
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def dx: dx = "dx".asInstanceOf[dx]
   
   @js.native
-  sealed trait dy extends VgEncodeChannel
+  sealed trait dy
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def dy: dy = "dy".asInstanceOf[dy]
   
@@ -814,7 +951,9 @@ object vegaLiteStrings {
   def each: each = "each".asInstanceOf[each]
   
   @js.native
-  sealed trait ellipsis extends VgEncodeChannel
+  sealed trait ellipsis
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
@@ -834,7 +973,9 @@ object vegaLiteStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait endAngle extends VgEncodeChannel
+  sealed trait endAngle
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def endAngle: endAngle = "endAngle".asInstanceOf[endAngle]
   
@@ -865,16 +1006,18 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait facet
-    extends FacetChannel
+    extends StObject
+       with FacetChannel
        with SpecType
   @scala.inline
   def facet: facet = "facet".asInstanceOf[facet]
   
   @js.native
   sealed trait fill
-    extends SortByChannel
+    extends StObject
        with Channel
        with ColorChannel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
@@ -886,8 +1029,9 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait fillOpacity
-    extends SortByChannel
+    extends StObject
        with Channel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
@@ -903,33 +1047,40 @@ object vegaLiteStrings {
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait first_value extends WindowOnlyOp
+  sealed trait first_value
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def first_value: first_value = "first_value".asInstanceOf[first_value]
   
   @js.native
   sealed trait fit
-    extends AutosizeType
+    extends StObject
+       with AutosizeType
        with FitType
   @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
   sealed trait `fit-x`
-    extends AutosizeType
+    extends StObject
+       with AutosizeType
        with FitType
   @scala.inline
   def `fit-x`: `fit-x` = "fit-x".asInstanceOf[`fit-x`]
   
   @js.native
   sealed trait `fit-y`
-    extends AutosizeType
+    extends StObject
+       with AutosizeType
        with FitType
   @scala.inline
   def `fit-y`: `fit-y` = "fit-y".asInstanceOf[`fit-y`]
   
   @js.native
-  sealed trait flexible extends _RangeType
+  sealed trait flexible
+    extends StObject
+       with _RangeType
   @scala.inline
   def flexible: flexible = "flexible".asInstanceOf[flexible]
   
@@ -939,27 +1090,37 @@ object vegaLiteStrings {
   def flush: flush = "flush".asInstanceOf[flush]
   
   @js.native
-  sealed trait font extends VgEncodeChannel
+  sealed trait font
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   
   @js.native
-  sealed trait fontSize extends VgEncodeChannel
+  sealed trait fontSize
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   
   @js.native
-  sealed trait fontStyle extends VgEncodeChannel
+  sealed trait fontStyle
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
   
   @js.native
-  sealed trait fontWeight extends VgEncodeChannel
+  sealed trait fontWeight
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
   
   @js.native
-  sealed trait footer extends HeaderType
+  sealed trait footer
+    extends StObject
+       with HeaderType
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
   
@@ -990,18 +1151,23 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait geojson
-    extends Type
+    extends StObject
+       with Type
        with TypeForShape
   @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   
   @js.native
-  sealed trait geoshape extends Mark
+  sealed trait geoshape
+    extends StObject
+       with Mark
   @scala.inline
   def geoshape: geoshape = "geoshape".asInstanceOf[geoshape]
   
   @js.native
-  sealed trait global extends SelectionResolution
+  sealed trait global
+    extends StObject
+       with SelectionResolution
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   
@@ -1076,7 +1242,9 @@ object vegaLiteStrings {
   def greedy: greedy = "greedy".asInstanceOf[greedy]
   
   @js.native
-  sealed trait grid extends AxisPart
+  sealed trait grid
+    extends StObject
+       with AxisPart
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
@@ -1091,22 +1259,30 @@ object vegaLiteStrings {
   def gridCap: gridCap = "gridCap".asInstanceOf[gridCap]
   
   @js.native
-  sealed trait gridColor extends ConditionalAxisProp
+  sealed trait gridColor
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def gridColor: gridColor = "gridColor".asInstanceOf[gridColor]
   
   @js.native
-  sealed trait gridDash extends ConditionalAxisProp
+  sealed trait gridDash
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def gridDash: gridDash = "gridDash".asInstanceOf[gridDash]
   
   @js.native
-  sealed trait gridDashOffset extends ConditionalAxisProp
+  sealed trait gridDashOffset
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def gridDashOffset: gridDashOffset = "gridDashOffset".asInstanceOf[gridDashOffset]
   
   @js.native
-  sealed trait gridOpacity extends ConditionalAxisProp
+  sealed trait gridOpacity
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def gridOpacity: gridOpacity = "gridOpacity".asInstanceOf[gridOpacity]
   
@@ -1116,7 +1292,9 @@ object vegaLiteStrings {
   def gridScale: gridScale = "gridScale".asInstanceOf[gridScale]
   
   @js.native
-  sealed trait gridWidth extends ConditionalAxisProp
+  sealed trait gridWidth
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def gridWidth: gridWidth = "gridWidth".asInstanceOf[gridWidth]
   
@@ -1126,7 +1304,9 @@ object vegaLiteStrings {
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait header extends HeaderType
+  sealed trait header
+    extends StObject
+       with HeaderType
   @scala.inline
   def header: header = "header".asInstanceOf[header]
   
@@ -1147,7 +1327,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait height
-    extends LayoutSizeType
+    extends StObject
+       with LayoutSizeType
        with VgEncodeChannel
   @scala.inline
   def height: height = "height".asInstanceOf[height]
@@ -1164,35 +1345,45 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait hours
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
-  sealed trait `hours-minutes` extends TimeUnitFormat
+  sealed trait `hours-minutes`
+    extends StObject
+       with TimeUnitFormat
   @scala.inline
   def `hours-minutes`: `hours-minutes` = "hours-minutes".asInstanceOf[`hours-minutes`]
   
   @js.native
-  sealed trait hoursminutes extends LocalMultiTimeUnit
+  sealed trait hoursminutes
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def hoursminutes: hoursminutes = "hoursminutes".asInstanceOf[hoursminutes]
   
   @js.native
-  sealed trait hoursminutesseconds extends LocalMultiTimeUnit
+  sealed trait hoursminutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def hoursminutesseconds: hoursminutesseconds = "hoursminutesseconds".asInstanceOf[hoursminutesseconds]
   
   @js.native
   sealed trait href
-    extends Channel
+    extends StObject
+       with Channel
        with VgEncodeChannel
   @scala.inline
   def href: href = "href".asInstanceOf[href]
   
   @js.native
-  sealed trait identity extends ScaleType
+  sealed trait identity
+    extends StObject
+       with ScaleType
   @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   
@@ -1202,7 +1393,9 @@ object vegaLiteStrings {
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait image extends Mark
+  sealed trait image
+    extends StObject
+       with Mark
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
@@ -1212,27 +1405,37 @@ object vegaLiteStrings {
   def include: include = "include".asInstanceOf[include]
   
   @js.native
-  sealed trait independent extends ResolveMode
+  sealed trait independent
+    extends StObject
+       with ResolveMode
   @scala.inline
   def independent: independent = "independent".asInstanceOf[independent]
   
   @js.native
-  sealed trait innerRadius extends VgEncodeChannel
+  sealed trait innerRadius
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def innerRadius: innerRadius = "innerRadius".asInstanceOf[innerRadius]
   
   @js.native
-  sealed trait interpolate extends VgEncodeChannel
+  sealed trait interpolate
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def interpolate: interpolate = "interpolate".asInstanceOf[interpolate]
   
   @js.native
-  sealed trait intersect extends SelectionResolution
+  sealed trait intersect
+    extends StObject
+       with SelectionResolution
   @scala.inline
   def intersect: intersect = "intersect".asInstanceOf[intersect]
   
   @js.native
-  sealed trait interval extends SelectionType
+  sealed trait interval
+    extends StObject
+       with SelectionType
   @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
   
@@ -1242,7 +1445,9 @@ object vegaLiteStrings {
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
-  sealed trait iqr extends ErrorBarExtent
+  sealed trait iqr
+    extends StObject
+       with ErrorBarExtent
   @scala.inline
   def iqr: iqr = "iqr".asInstanceOf[iqr]
   
@@ -1252,17 +1457,23 @@ object vegaLiteStrings {
   def joinaggregate: joinaggregate = "joinaggregate".asInstanceOf[joinaggregate]
   
   @js.native
-  sealed trait json extends DataFormatType
+  sealed trait json
+    extends StObject
+       with DataFormatType
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait key extends Channel
+  sealed trait key
+    extends StObject
+       with Channel
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait labelAlign extends ConditionalAxisProp
+  sealed trait labelAlign
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelAlign: labelAlign = "labelAlign".asInstanceOf[labelAlign]
   
@@ -1277,7 +1488,9 @@ object vegaLiteStrings {
   def labelAngle: labelAngle = "labelAngle".asInstanceOf[labelAngle]
   
   @js.native
-  sealed trait labelBaseline extends ConditionalAxisProp
+  sealed trait labelBaseline
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelBaseline: labelBaseline = "labelBaseline".asInstanceOf[labelBaseline]
   
@@ -1287,7 +1500,9 @@ object vegaLiteStrings {
   def labelBound: labelBound = "labelBound".asInstanceOf[labelBound]
   
   @js.native
-  sealed trait labelColor extends ConditionalAxisProp
+  sealed trait labelColor
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelColor: labelColor = "labelColor".asInstanceOf[labelColor]
   
@@ -1307,22 +1522,30 @@ object vegaLiteStrings {
   def labelFlushOffset: labelFlushOffset = "labelFlushOffset".asInstanceOf[labelFlushOffset]
   
   @js.native
-  sealed trait labelFont extends ConditionalAxisProp
+  sealed trait labelFont
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelFont: labelFont = "labelFont".asInstanceOf[labelFont]
   
   @js.native
-  sealed trait labelFontSize extends ConditionalAxisProp
+  sealed trait labelFontSize
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelFontSize: labelFontSize = "labelFontSize".asInstanceOf[labelFontSize]
   
   @js.native
-  sealed trait labelFontStyle extends ConditionalAxisProp
+  sealed trait labelFontStyle
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelFontStyle: labelFontStyle = "labelFontStyle".asInstanceOf[labelFontStyle]
   
   @js.native
-  sealed trait labelFontWeight extends ConditionalAxisProp
+  sealed trait labelFontWeight
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelFontWeight: labelFontWeight = "labelFontWeight".asInstanceOf[labelFontWeight]
   
@@ -1337,12 +1560,16 @@ object vegaLiteStrings {
   def labelLineHeight: labelLineHeight = "labelLineHeight".asInstanceOf[labelLineHeight]
   
   @js.native
-  sealed trait labelOffset extends ConditionalAxisProp
+  sealed trait labelOffset
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelOffset: labelOffset = "labelOffset".asInstanceOf[labelOffset]
   
   @js.native
-  sealed trait labelOpacity extends ConditionalAxisProp
+  sealed trait labelOpacity
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelOpacity: labelOpacity = "labelOpacity".asInstanceOf[labelOpacity]
   
@@ -1357,7 +1584,9 @@ object vegaLiteStrings {
   def labelOverlap: labelOverlap = "labelOverlap".asInstanceOf[labelOverlap]
   
   @js.native
-  sealed trait labelPadding extends ConditionalAxisProp
+  sealed trait labelPadding
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def labelPadding: labelPadding = "labelPadding".asInstanceOf[labelPadding]
   
@@ -1367,23 +1596,30 @@ object vegaLiteStrings {
   def labelSeparation: labelSeparation = "labelSeparation".asInstanceOf[labelSeparation]
   
   @js.native
-  sealed trait labels extends AxisPart
+  sealed trait labels
+    extends StObject
+       with AxisPart
   @scala.inline
   def labels: labels = "labels".asInstanceOf[labels]
   
   @js.native
-  sealed trait lag extends WindowOnlyOp
+  sealed trait lag
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def lag: lag = "lag".asInstanceOf[lag]
   
   @js.native
-  sealed trait last_value extends WindowOnlyOp
+  sealed trait last_value
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def last_value: last_value = "last_value".asInstanceOf[last_value]
   
   @js.native
   sealed trait latitude
-    extends Channel
+    extends StObject
+       with Channel
        with GeoPositionChannel
        with _MainChannelOf[js.Any]
   @scala.inline
@@ -1391,7 +1627,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait latitude2
-    extends Channel
+    extends StObject
+       with Channel
        with GeoPositionChannel
        with SecondaryRangeChannel
        with _SecondaryChannelOf[js.Any]
@@ -1399,7 +1636,9 @@ object vegaLiteStrings {
   def latitude2: latitude2 = "latitude2".asInstanceOf[latitude2]
   
   @js.native
-  sealed trait layer extends SpecType
+  sealed trait layer
+    extends StObject
+       with SpecType
   @scala.inline
   def layer: layer = "layer".asInstanceOf[layer]
   
@@ -1409,7 +1648,9 @@ object vegaLiteStrings {
   def layout: layout = "layout".asInstanceOf[layout]
   
   @js.native
-  sealed trait lead extends WindowOnlyOp
+  sealed trait lead
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def lead: lead = "lead".asInstanceOf[lead]
   
@@ -1420,7 +1661,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait legend
-    extends LegendBinding
+    extends StObject
+       with LegendBinding
        with SplitParentProperty
   @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
@@ -1436,12 +1678,16 @@ object vegaLiteStrings {
   def legendY: legendY = "legendY".asInstanceOf[legendY]
   
   @js.native
-  sealed trait limit extends VgEncodeChannel
+  sealed trait limit
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def limit: limit = "limit".asInstanceOf[limit]
   
   @js.native
-  sealed trait line extends Mark
+  sealed trait line
+    extends StObject
+       with Mark
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   
@@ -1456,18 +1702,23 @@ object vegaLiteStrings {
   def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
   
   @js.native
-  sealed trait linear extends ScaleType
+  sealed trait linear
+    extends StObject
+       with ScaleType
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait log extends ScaleType
+  sealed trait log
+    extends StObject
+       with ScaleType
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait longitude
-    extends Channel
+    extends StObject
+       with Channel
        with GeoPositionChannel
        with _MainChannelOf[js.Any]
   @scala.inline
@@ -1475,7 +1726,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait longitude2
-    extends Channel
+    extends StObject
+       with Channel
        with GeoPositionChannel
        with SecondaryRangeChannel
        with _SecondaryChannelOf[js.Any]
@@ -1494,7 +1746,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait max
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def max: max = "max".asInstanceOf[max]
@@ -1506,7 +1759,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait mean
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with ErrorBarCenter
        with NonArgAggregateOp
   @scala.inline
@@ -1514,7 +1768,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait median
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with BoxPlotPart
        with ErrorBarCenter
        with NonArgAggregateOp
@@ -1522,7 +1777,9 @@ object vegaLiteStrings {
   def median: median = "median".asInstanceOf[median]
   
   @js.native
-  sealed trait merged extends _LayoutSize
+  sealed trait merged
+    extends StObject
+       with _LayoutSize
   @scala.inline
   def merged: merged = "merged".asInstanceOf[merged]
   
@@ -1538,14 +1795,16 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait milliseconds
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
   @js.native
   sealed trait min
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def min: min = "min".asInstanceOf[min]
@@ -1562,52 +1821,67 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait minutes
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait minutesseconds extends LocalMultiTimeUnit
+  sealed trait minutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def minutesseconds: minutesseconds = "minutesseconds".asInstanceOf[minutesseconds]
   
   @js.native
   sealed trait missing
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
   
   @js.native
   sealed trait month
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait monthdate extends LocalMultiTimeUnit
+  sealed trait monthdate
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def monthdate: monthdate = "monthdate".asInstanceOf[monthdate]
   
   @js.native
-  sealed trait monthdatehours extends LocalMultiTimeUnit
+  sealed trait monthdatehours
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def monthdatehours: monthdatehours = "monthdatehours".asInstanceOf[monthdatehours]
   
   @js.native
-  sealed trait monthdatehoursminutes extends LocalMultiTimeUnit
+  sealed trait monthdatehoursminutes
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def monthdatehoursminutes: monthdatehoursminutes = "monthdatehoursminutes".asInstanceOf[monthdatehoursminutes]
   
   @js.native
-  sealed trait monthdatehoursminutesseconds extends LocalMultiTimeUnit
+  sealed trait monthdatehoursminutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def monthdatehoursminutesseconds: monthdatehoursminutesseconds = "monthdatehoursminutesseconds".asInstanceOf[monthdatehoursminutesseconds]
   
   @js.native
-  sealed trait multi extends SelectionType
+  sealed trait multi
+    extends StObject
+       with SelectionType
   @scala.inline
   def multi: multi = "multi".asInstanceOf[multi]
   
@@ -1618,34 +1892,45 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait nominal
-    extends StandardType
+    extends StObject
+       with StandardType
        with Type
        with TypeForShape
   @scala.inline
   def nominal: nominal = "nominal".asInstanceOf[nominal]
   
   @js.native
-  sealed trait none extends AutosizeType
+  sealed trait none
+    extends StObject
+       with AutosizeType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normalize extends StackOffset
+  sealed trait normalize
+    extends StObject
+       with StackOffset
   @scala.inline
   def normalize: normalize = "normalize".asInstanceOf[normalize]
   
   @js.native
-  sealed trait nth_value extends WindowOnlyOp
+  sealed trait nth_value
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def nth_value: nth_value = "nth_value".asInstanceOf[nth_value]
   
   @js.native
-  sealed trait ntile extends WindowOnlyOp
+  sealed trait ntile
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def ntile: ntile = "ntile".asInstanceOf[ntile]
   
   @js.native
-  sealed trait number extends _ParseValue
+  sealed trait number
+    extends StObject
+       with _ParseValue
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -1661,20 +1946,24 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait opacity
-    extends SortByChannel
+    extends StObject
        with Channel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   
   @js.native
-  sealed trait order extends Channel
+  sealed trait order
+    extends StObject
+       with Channel
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   
   @js.native
   sealed trait ordinal
-    extends ScaleType
+    extends StObject
+       with ScaleType
        with StandardType
        with Type
        with TypeForShape
@@ -1687,22 +1976,30 @@ object vegaLiteStrings {
   def `ordinal-position`: `ordinal-position` = "ordinal-position".asInstanceOf[`ordinal-position`]
   
   @js.native
-  sealed trait orient extends VgEncodeChannel
+  sealed trait orient
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def orient: orient = "orient".asInstanceOf[orient]
   
   @js.native
-  sealed trait outerRadius extends VgEncodeChannel
+  sealed trait outerRadius
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def outerRadius: outerRadius = "outerRadius".asInstanceOf[outerRadius]
   
   @js.native
-  sealed trait outliers extends BoxPlotPart
+  sealed trait outliers
+    extends StObject
+       with BoxPlotPart
   @scala.inline
   def outliers: outliers = "outliers".asInstanceOf[outliers]
   
   @js.native
-  sealed trait pad extends AutosizeType
+  sealed trait pad
+    extends StObject
+       with AutosizeType
   @scala.inline
   def pad: pad = "pad".asInstanceOf[pad]
   
@@ -1737,12 +2034,16 @@ object vegaLiteStrings {
   def parity: parity = "parity".asInstanceOf[parity]
   
   @js.native
-  sealed trait path extends VgEncodeChannel
+  sealed trait path
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait percent_rank extends WindowOnlyOp
+  sealed trait percent_rank
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def percent_rank: percent_rank = "percent_rank".asInstanceOf[percent_rank]
   
@@ -1753,7 +2054,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait point
-    extends Mark
+    extends StObject
+       with Mark
        with ScaleType
   @scala.inline
   def point: point = "point".asInstanceOf[point]
@@ -1769,13 +2071,16 @@ object vegaLiteStrings {
   def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait pow extends ScaleType
+  sealed trait pow
+    extends StObject
+       with ScaleType
   @scala.inline
   def pow: pow = "pow".asInstanceOf[pow]
   
   @js.native
   sealed trait product
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def product: product = "product".asInstanceOf[product]
@@ -1787,14 +2092,16 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait q1
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def q1: q1 = "q1".asInstanceOf[q1]
   
   @js.native
   sealed trait q3
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def q3: q3 = "q3".asInstanceOf[q3]
@@ -1805,37 +2112,46 @@ object vegaLiteStrings {
   def quad: quad = "quad".asInstanceOf[quad]
   
   @js.native
-  sealed trait quantile extends ScaleType
+  sealed trait quantile
+    extends StObject
+       with ScaleType
   @scala.inline
   def quantile: quantile = "quantile".asInstanceOf[quantile]
   
   @js.native
   sealed trait quantitative
-    extends StandardType
+    extends StObject
+       with StandardType
        with Type
   @scala.inline
   def quantitative: quantitative = "quantitative".asInstanceOf[quantitative]
   
   @js.native
-  sealed trait quantize extends ScaleType
+  sealed trait quantize
+    extends StObject
+       with ScaleType
   @scala.inline
   def quantize: quantize = "quantize".asInstanceOf[quantize]
   
   @js.native
   sealed trait quarter
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
-  sealed trait quartermonth extends LocalMultiTimeUnit
+  sealed trait quartermonth
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def quartermonth: quartermonth = "quartermonth".asInstanceOf[quartermonth]
   
   @js.native
   sealed trait radius
-    extends Channel
+    extends StObject
+       with Channel
        with PolarPositionChannel
        with PolarPositionScaleChannel
        with VgEncodeChannel
@@ -1845,7 +2161,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait radius2
-    extends Channel
+    extends StObject
+       with Channel
        with PolarPositionChannel
        with SecondaryRangeChannel
        with _SecondaryChannelOf[js.Any]
@@ -1878,17 +2195,23 @@ object vegaLiteStrings {
   def rangeMin: rangeMin = "rangeMin".asInstanceOf[rangeMin]
   
   @js.native
-  sealed trait rank extends WindowOnlyOp
+  sealed trait rank
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def rank: rank = "rank".asInstanceOf[rank]
   
   @js.native
-  sealed trait raw extends ErrorInputType
+  sealed trait raw
+    extends StObject
+       with ErrorInputType
   @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait rect extends Mark
+  sealed trait rect
+    extends StObject
+       with Mark
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   
@@ -1914,7 +2237,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait row
-    extends FacetChannel
+    extends StObject
+       with FacetChannel
        with HeaderChannel
   @scala.inline
   def row: row = "row".asInstanceOf[row]
@@ -1925,30 +2249,39 @@ object vegaLiteStrings {
   def rowPadding: rowPadding = "rowPadding".asInstanceOf[rowPadding]
   
   @js.native
-  sealed trait row_number extends WindowOnlyOp
+  sealed trait row_number
+    extends StObject
+       with WindowOnlyOp
   @scala.inline
   def row_number: row_number = "row_number".asInstanceOf[row_number]
   
   @js.native
   sealed trait rule
-    extends BoxPlotPart
+    extends StObject
+       with BoxPlotPart
        with ErrorBarPart
        with Mark
   @scala.inline
   def rule: rule = "rule".asInstanceOf[rule]
   
   @js.native
-  sealed trait scale extends SplitParentProperty
+  sealed trait scale
+    extends StObject
+       with SplitParentProperty
   @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
-  sealed trait scaleX extends VgEncodeChannel
+  sealed trait scaleX
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def scaleX: scaleX = "scaleX".asInstanceOf[scaleX]
   
   @js.native
-  sealed trait scaleY extends VgEncodeChannel
+  sealed trait scaleY
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def scaleY: scaleY = "scaleY".asInstanceOf[scaleY]
   
@@ -1964,13 +2297,16 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait seconds
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   
   @js.native
-  sealed trait secondsmilliseconds extends LocalMultiTimeUnit
+  sealed trait secondsmilliseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def secondsmilliseconds: secondsmilliseconds = "secondsmilliseconds".asInstanceOf[secondsmilliseconds]
   
@@ -1980,32 +2316,40 @@ object vegaLiteStrings {
   def selections: selections = "selections".asInstanceOf[selections]
   
   @js.native
-  sealed trait sequential extends ScaleType
+  sealed trait sequential
+    extends StObject
+       with ScaleType
   @scala.inline
   def sequential: sequential = "sequential".asInstanceOf[sequential]
   
   @js.native
   sealed trait shape
-    extends SortByChannel
+    extends StObject
        with Channel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
   
   @js.native
-  sealed trait shared extends ResolveMode
+  sealed trait shared
+    extends StObject
+       with ResolveMode
   @scala.inline
   def shared: shared = "shared".asInstanceOf[shared]
   
   @js.native
-  sealed trait single extends SelectionType
+  sealed trait single
+    extends StObject
+       with SelectionType
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait size
-    extends SortByChannel
+    extends StObject
        with Channel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def size: size = "size".asInstanceOf[size]
@@ -2016,12 +2360,16 @@ object vegaLiteStrings {
   def smooth: smooth = "smooth".asInstanceOf[smooth]
   
   @js.native
-  sealed trait sqrt extends ScaleType
+  sealed trait sqrt
+    extends StObject
+       with ScaleType
   @scala.inline
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
   
   @js.native
-  sealed trait square extends Mark
+  sealed trait square
+    extends StObject
+       with Mark
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
@@ -2031,13 +2379,16 @@ object vegaLiteStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait startAngle extends VgEncodeChannel
+  sealed trait startAngle
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def startAngle: startAngle = "startAngle".asInstanceOf[startAngle]
   
   @js.native
   sealed trait stderr
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with ErrorBarExtent
        with NonArgAggregateOp
   @scala.inline
@@ -2045,7 +2396,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait stdev
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with ErrorBarExtent
        with NonArgAggregateOp
   @scala.inline
@@ -2053,32 +2405,40 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait stdevp
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def stdevp: stdevp = "stdevp".asInstanceOf[stdevp]
   
   @js.native
-  sealed trait step extends _LayoutSize
+  sealed trait step
+    extends StObject
+       with _LayoutSize
   @scala.inline
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait string extends _ParseValue
+  sealed trait string
+    extends StObject
+       with _ParseValue
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait stroke
-    extends SortByChannel
+    extends StObject
        with Channel
        with ColorChannel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   
   @js.native
-  sealed trait strokeCap extends VgEncodeChannel
+  sealed trait strokeCap
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def strokeCap: strokeCap = "strokeCap".asInstanceOf[strokeCap]
   
@@ -2089,48 +2449,61 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait strokeDash
-    extends Channel
+    extends StObject
+       with Channel
        with VgEncodeChannel
   @scala.inline
   def strokeDash: strokeDash = "strokeDash".asInstanceOf[strokeDash]
   
   @js.native
-  sealed trait strokeDashOffset extends VgEncodeChannel
+  sealed trait strokeDashOffset
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def strokeDashOffset: strokeDashOffset = "strokeDashOffset".asInstanceOf[strokeDashOffset]
   
   @js.native
-  sealed trait strokeForeground extends VgEncodeChannel
+  sealed trait strokeForeground
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def strokeForeground: strokeForeground = "strokeForeground".asInstanceOf[strokeForeground]
   
   @js.native
-  sealed trait strokeJoin extends VgEncodeChannel
+  sealed trait strokeJoin
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def strokeJoin: strokeJoin = "strokeJoin".asInstanceOf[strokeJoin]
   
   @js.native
-  sealed trait strokeMiterLimit extends VgEncodeChannel
+  sealed trait strokeMiterLimit
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def strokeMiterLimit: strokeMiterLimit = "strokeMiterLimit".asInstanceOf[strokeMiterLimit]
   
   @js.native
-  sealed trait strokeOffset extends VgEncodeChannel
+  sealed trait strokeOffset
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def strokeOffset: strokeOffset = "strokeOffset".asInstanceOf[strokeOffset]
   
   @js.native
   sealed trait strokeOpacity
-    extends SortByChannel
+    extends StObject
        with Channel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
   
   @js.native
   sealed trait strokeWidth
-    extends SortByChannel
+    extends StObject
        with Channel
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
@@ -2177,7 +2550,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait sum
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
@@ -2253,34 +2627,41 @@ object vegaLiteStrings {
   def symbolType: symbolType = "symbolType".asInstanceOf[symbolType]
   
   @js.native
-  sealed trait symlog extends ScaleType
+  sealed trait symlog
+    extends StObject
+       with ScaleType
   @scala.inline
   def symlog: symlog = "symlog".asInstanceOf[symlog]
   
   @js.native
   sealed trait temporal
-    extends StandardType
+    extends StObject
+       with StandardType
        with Type
   @scala.inline
   def temporal: temporal = "temporal".asInstanceOf[temporal]
   
   @js.native
-  sealed trait tension extends VgEncodeChannel
+  sealed trait tension
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def tension: tension = "tension".asInstanceOf[tension]
   
   @js.native
   sealed trait text
-    extends SortByChannel
+    extends StObject
        with Channel
        with Mark
+       with SortByChannel
        with VgEncodeChannel
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait theta
-    extends Channel
+    extends StObject
+       with Channel
        with PolarPositionChannel
        with PolarPositionScaleChannel
        with VgEncodeChannel
@@ -2290,7 +2671,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait theta2
-    extends Channel
+    extends StObject
+       with Channel
        with PolarPositionChannel
        with SecondaryRangeChannel
        with _SecondaryChannelOf[js.Any]
@@ -2313,12 +2695,16 @@ object vegaLiteStrings {
   def thickness: thickness = "thickness".asInstanceOf[thickness]
   
   @js.native
-  sealed trait threshold extends ScaleType
+  sealed trait threshold
+    extends StObject
+       with ScaleType
   @scala.inline
   def threshold: threshold = "threshold".asInstanceOf[threshold]
   
   @js.native
-  sealed trait tick extends Mark
+  sealed trait tick
+    extends StObject
+       with Mark
   @scala.inline
   def tick: tick = "tick".asInstanceOf[tick]
   
@@ -2333,7 +2719,9 @@ object vegaLiteStrings {
   def tickCap: tickCap = "tickCap".asInstanceOf[tickCap]
   
   @js.native
-  sealed trait tickColor extends ConditionalAxisProp
+  sealed trait tickColor
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def tickColor: tickColor = "tickColor".asInstanceOf[tickColor]
   
@@ -2343,12 +2731,16 @@ object vegaLiteStrings {
   def tickCount: tickCount = "tickCount".asInstanceOf[tickCount]
   
   @js.native
-  sealed trait tickDash extends ConditionalAxisProp
+  sealed trait tickDash
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def tickDash: tickDash = "tickDash".asInstanceOf[tickDash]
   
   @js.native
-  sealed trait tickDashOffset extends ConditionalAxisProp
+  sealed trait tickDashOffset
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def tickDashOffset: tickDashOffset = "tickDashOffset".asInstanceOf[tickDashOffset]
   
@@ -2368,7 +2760,9 @@ object vegaLiteStrings {
   def tickOffset: tickOffset = "tickOffset".asInstanceOf[tickOffset]
   
   @js.native
-  sealed trait tickOpacity extends ConditionalAxisProp
+  sealed trait tickOpacity
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def tickOpacity: tickOpacity = "tickOpacity".asInstanceOf[tickOpacity]
   
@@ -2378,25 +2772,32 @@ object vegaLiteStrings {
   def tickRound: tickRound = "tickRound".asInstanceOf[tickRound]
   
   @js.native
-  sealed trait tickSize extends ConditionalAxisProp
+  sealed trait tickSize
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def tickSize: tickSize = "tickSize".asInstanceOf[tickSize]
   
   @js.native
-  sealed trait tickWidth extends ConditionalAxisProp
+  sealed trait tickWidth
+    extends StObject
+       with ConditionalAxisProp
   @scala.inline
   def tickWidth: tickWidth = "tickWidth".asInstanceOf[tickWidth]
   
   @js.native
   sealed trait ticks
-    extends AxisPart
+    extends StObject
+       with AxisPart
        with BoxPlotPart
        with ErrorBarPart
   @scala.inline
   def ticks: ticks = "ticks".asInstanceOf[ticks]
   
   @js.native
-  sealed trait time extends ScaleType
+  sealed trait time
+    extends StObject
+       with ScaleType
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
@@ -2411,7 +2812,9 @@ object vegaLiteStrings {
   def timeUnitBandPosition: timeUnitBandPosition = "timeUnitBandPosition".asInstanceOf[timeUnitBandPosition]
   
   @js.native
-  sealed trait title extends AxisPart
+  sealed trait title
+    extends StObject
+       with AxisPart
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   
@@ -2497,7 +2900,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait tooltip
-    extends Channel
+    extends StObject
+       with Channel
        with VgEncodeChannel
   @scala.inline
   def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
@@ -2518,12 +2922,16 @@ object vegaLiteStrings {
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait topojson extends DataFormatType
+  sealed trait topojson
+    extends StObject
+       with DataFormatType
   @scala.inline
   def topojson: topojson = "topojson".asInstanceOf[topojson]
   
   @js.native
-  sealed trait trail extends Mark
+  sealed trait trail
+    extends StObject
+       with Mark
   @scala.inline
   def trail: trail = "trail".asInstanceOf[trail]
   
@@ -2538,7 +2946,9 @@ object vegaLiteStrings {
   def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
-  sealed trait tsv extends DataFormatType
+  sealed trait tsv
+    extends StObject
+       with DataFormatType
   @scala.inline
   def tsv: tsv = "tsv".asInstanceOf[tsv]
   
@@ -2553,17 +2963,23 @@ object vegaLiteStrings {
   def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
-  sealed trait unaggregated extends _Domain
+  sealed trait unaggregated
+    extends StObject
+       with _Domain
   @scala.inline
   def unaggregated: unaggregated = "unaggregated".asInstanceOf[unaggregated]
   
   @js.native
-  sealed trait union extends SelectionResolution
+  sealed trait union
+    extends StObject
+       with SelectionResolution
   @scala.inline
   def union: union = "union".asInstanceOf[union]
   
   @js.native
-  sealed trait unit extends SpecType
+  sealed trait unit
+    extends StObject
+       with SpecType
   @scala.inline
   def unit: unit = "unit".asInstanceOf[unit]
   
@@ -2574,240 +2990,327 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait url
-    extends Channel
+    extends StObject
+       with Channel
        with VgEncodeChannel
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait utc extends ScaleType
+  sealed trait utc
+    extends StObject
+       with ScaleType
   @scala.inline
   def utc: utc = "utc".asInstanceOf[utc]
   
   @js.native
-  sealed trait utcdate extends UtcSingleTimeUnit
+  sealed trait utcdate
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcdate: utcdate = "utcdate".asInstanceOf[utcdate]
   
   @js.native
-  sealed trait utcday extends UtcSingleTimeUnit
+  sealed trait utcday
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcday: utcday = "utcday".asInstanceOf[utcday]
   
   @js.native
-  sealed trait utcdayhours extends UtcMultiTimeUnit
+  sealed trait utcdayhours
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcdayhours: utcdayhours = "utcdayhours".asInstanceOf[utcdayhours]
   
   @js.native
-  sealed trait utcdayhoursminutes extends UtcMultiTimeUnit
+  sealed trait utcdayhoursminutes
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcdayhoursminutes: utcdayhoursminutes = "utcdayhoursminutes".asInstanceOf[utcdayhoursminutes]
   
   @js.native
-  sealed trait utcdayhoursminutesseconds extends UtcMultiTimeUnit
+  sealed trait utcdayhoursminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcdayhoursminutesseconds: utcdayhoursminutesseconds = "utcdayhoursminutesseconds".asInstanceOf[utcdayhoursminutesseconds]
   
   @js.native
-  sealed trait utcdayofyear extends UtcSingleTimeUnit
+  sealed trait utcdayofyear
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcdayofyear: utcdayofyear = "utcdayofyear".asInstanceOf[utcdayofyear]
   
   @js.native
-  sealed trait utchours extends UtcSingleTimeUnit
+  sealed trait utchours
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utchours: utchours = "utchours".asInstanceOf[utchours]
   
   @js.native
-  sealed trait utchoursminutes extends UtcMultiTimeUnit
+  sealed trait utchoursminutes
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utchoursminutes: utchoursminutes = "utchoursminutes".asInstanceOf[utchoursminutes]
   
   @js.native
-  sealed trait utchoursminutesseconds extends UtcMultiTimeUnit
+  sealed trait utchoursminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utchoursminutesseconds: utchoursminutesseconds = "utchoursminutesseconds".asInstanceOf[utchoursminutesseconds]
   
   @js.native
-  sealed trait utcmilliseconds extends UtcSingleTimeUnit
+  sealed trait utcmilliseconds
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcmilliseconds: utcmilliseconds = "utcmilliseconds".asInstanceOf[utcmilliseconds]
   
   @js.native
-  sealed trait utcminutes extends UtcSingleTimeUnit
+  sealed trait utcminutes
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcminutes: utcminutes = "utcminutes".asInstanceOf[utcminutes]
   
   @js.native
-  sealed trait utcminutesseconds extends UtcMultiTimeUnit
+  sealed trait utcminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcminutesseconds: utcminutesseconds = "utcminutesseconds".asInstanceOf[utcminutesseconds]
   
   @js.native
-  sealed trait utcmonth extends UtcSingleTimeUnit
+  sealed trait utcmonth
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcmonth: utcmonth = "utcmonth".asInstanceOf[utcmonth]
   
   @js.native
-  sealed trait utcmonthdate extends UtcMultiTimeUnit
+  sealed trait utcmonthdate
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcmonthdate: utcmonthdate = "utcmonthdate".asInstanceOf[utcmonthdate]
   
   @js.native
-  sealed trait utcmonthdatehours extends UtcMultiTimeUnit
+  sealed trait utcmonthdatehours
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcmonthdatehours: utcmonthdatehours = "utcmonthdatehours".asInstanceOf[utcmonthdatehours]
   
   @js.native
-  sealed trait utcmonthdatehoursminutes extends UtcMultiTimeUnit
+  sealed trait utcmonthdatehoursminutes
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcmonthdatehoursminutes: utcmonthdatehoursminutes = "utcmonthdatehoursminutes".asInstanceOf[utcmonthdatehoursminutes]
   
   @js.native
-  sealed trait utcmonthdatehoursminutesseconds extends UtcMultiTimeUnit
+  sealed trait utcmonthdatehoursminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcmonthdatehoursminutesseconds: utcmonthdatehoursminutesseconds = "utcmonthdatehoursminutesseconds".asInstanceOf[utcmonthdatehoursminutesseconds]
   
   @js.native
-  sealed trait utcquarter extends UtcSingleTimeUnit
+  sealed trait utcquarter
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcquarter: utcquarter = "utcquarter".asInstanceOf[utcquarter]
   
   @js.native
-  sealed trait utcquartermonth extends UtcMultiTimeUnit
+  sealed trait utcquartermonth
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcquartermonth: utcquartermonth = "utcquartermonth".asInstanceOf[utcquartermonth]
   
   @js.native
-  sealed trait utcseconds extends UtcSingleTimeUnit
+  sealed trait utcseconds
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcseconds: utcseconds = "utcseconds".asInstanceOf[utcseconds]
   
   @js.native
-  sealed trait utcsecondsmilliseconds extends UtcMultiTimeUnit
+  sealed trait utcsecondsmilliseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcsecondsmilliseconds: utcsecondsmilliseconds = "utcsecondsmilliseconds".asInstanceOf[utcsecondsmilliseconds]
   
   @js.native
-  sealed trait utcweek extends UtcSingleTimeUnit
+  sealed trait utcweek
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcweek: utcweek = "utcweek".asInstanceOf[utcweek]
   
   @js.native
-  sealed trait utcweekday extends UtcMultiTimeUnit
+  sealed trait utcweekday
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcweekday: utcweekday = "utcweekday".asInstanceOf[utcweekday]
   
   @js.native
-  sealed trait utcweekdayhoursminutes extends UtcMultiTimeUnit
+  sealed trait utcweekdayhoursminutes
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcweekdayhoursminutes: utcweekdayhoursminutes = "utcweekdayhoursminutes".asInstanceOf[utcweekdayhoursminutes]
   
   @js.native
-  sealed trait utcweekdayhoursminutesseconds extends UtcMultiTimeUnit
+  sealed trait utcweekdayhoursminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcweekdayhoursminutesseconds: utcweekdayhoursminutesseconds = "utcweekdayhoursminutesseconds".asInstanceOf[utcweekdayhoursminutesseconds]
   
   @js.native
-  sealed trait utcweeksdayhours extends UtcMultiTimeUnit
+  sealed trait utcweeksdayhours
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcweeksdayhours: utcweeksdayhours = "utcweeksdayhours".asInstanceOf[utcweeksdayhours]
   
   @js.native
-  sealed trait utcyear extends UtcSingleTimeUnit
+  sealed trait utcyear
+    extends StObject
+       with UtcSingleTimeUnit
   @scala.inline
   def utcyear: utcyear = "utcyear".asInstanceOf[utcyear]
   
   @js.native
-  sealed trait utcyeardayofyear extends UtcMultiTimeUnit
+  sealed trait utcyeardayofyear
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyeardayofyear: utcyeardayofyear = "utcyeardayofyear".asInstanceOf[utcyeardayofyear]
   
   @js.native
-  sealed trait utcyearmonth extends UtcMultiTimeUnit
+  sealed trait utcyearmonth
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearmonth: utcyearmonth = "utcyearmonth".asInstanceOf[utcyearmonth]
   
   @js.native
-  sealed trait utcyearmonthdate extends UtcMultiTimeUnit
+  sealed trait utcyearmonthdate
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearmonthdate: utcyearmonthdate = "utcyearmonthdate".asInstanceOf[utcyearmonthdate]
   
   @js.native
-  sealed trait utcyearmonthdatehours extends UtcMultiTimeUnit
+  sealed trait utcyearmonthdatehours
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearmonthdatehours: utcyearmonthdatehours = "utcyearmonthdatehours".asInstanceOf[utcyearmonthdatehours]
   
   @js.native
-  sealed trait utcyearmonthdatehoursminutes extends UtcMultiTimeUnit
+  sealed trait utcyearmonthdatehoursminutes
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearmonthdatehoursminutes: utcyearmonthdatehoursminutes = "utcyearmonthdatehoursminutes".asInstanceOf[utcyearmonthdatehoursminutes]
   
   @js.native
-  sealed trait utcyearmonthdatehoursminutesseconds extends UtcMultiTimeUnit
+  sealed trait utcyearmonthdatehoursminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearmonthdatehoursminutesseconds: utcyearmonthdatehoursminutesseconds = "utcyearmonthdatehoursminutesseconds".asInstanceOf[utcyearmonthdatehoursminutesseconds]
   
   @js.native
-  sealed trait utcyearquarter extends UtcMultiTimeUnit
+  sealed trait utcyearquarter
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearquarter: utcyearquarter = "utcyearquarter".asInstanceOf[utcyearquarter]
   
   @js.native
-  sealed trait utcyearquartermonth extends UtcMultiTimeUnit
+  sealed trait utcyearquartermonth
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearquartermonth: utcyearquartermonth = "utcyearquartermonth".asInstanceOf[utcyearquartermonth]
   
   @js.native
-  sealed trait utcyearweek extends UtcMultiTimeUnit
+  sealed trait utcyearweek
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearweek: utcyearweek = "utcyearweek".asInstanceOf[utcyearweek]
   
   @js.native
-  sealed trait utcyearweekday extends UtcMultiTimeUnit
+  sealed trait utcyearweekday
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearweekday: utcyearweekday = "utcyearweekday".asInstanceOf[utcyearweekday]
   
   @js.native
-  sealed trait utcyearweekdayhours extends UtcMultiTimeUnit
+  sealed trait utcyearweekdayhours
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearweekdayhours: utcyearweekdayhours = "utcyearweekdayhours".asInstanceOf[utcyearweekdayhours]
   
   @js.native
-  sealed trait utcyearweekdayhoursminutes extends UtcMultiTimeUnit
+  sealed trait utcyearweekdayhoursminutes
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearweekdayhoursminutes: utcyearweekdayhoursminutes = "utcyearweekdayhoursminutes".asInstanceOf[utcyearweekdayhoursminutes]
   
   @js.native
-  sealed trait utcyearweekdayhoursminutesseconds extends UtcMultiTimeUnit
+  sealed trait utcyearweekdayhoursminutesseconds
+    extends StObject
+       with UtcMultiTimeUnit
   @scala.inline
   def utcyearweekdayhoursminutesseconds: utcyearweekdayhoursminutesseconds = "utcyearweekdayhoursminutesseconds".asInstanceOf[utcyearweekdayhoursminutesseconds]
   
   @js.native
   sealed trait valid
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
   
   @js.native
   sealed trait values
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def values: values = "values".asInstanceOf[values]
   
   @js.native
   sealed trait variance
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def variance: variance = "variance".asInstanceOf[variance]
   
   @js.native
   sealed trait variancep
-    extends Aggregate
+    extends StObject
+       with Aggregate
        with NonArgAggregateOp
   @scala.inline
   def variancep: variancep = "variancep".asInstanceOf[variancep]
@@ -2819,44 +3322,55 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait week
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait weekday extends LocalMultiTimeUnit
+  sealed trait weekday
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
-  sealed trait weekdayhoursminutes extends LocalMultiTimeUnit
+  sealed trait weekdayhoursminutes
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def weekdayhoursminutes: weekdayhoursminutes = "weekdayhoursminutes".asInstanceOf[weekdayhoursminutes]
   
   @js.native
-  sealed trait weekdayhoursminutesseconds extends LocalMultiTimeUnit
+  sealed trait weekdayhoursminutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def weekdayhoursminutesseconds: weekdayhoursminutesseconds = "weekdayhoursminutesseconds".asInstanceOf[weekdayhoursminutesseconds]
   
   @js.native
-  sealed trait weeksdayhours extends LocalMultiTimeUnit
+  sealed trait weeksdayhours
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def weeksdayhours: weeksdayhours = "weeksdayhours".asInstanceOf[weeksdayhours]
   
   @js.native
   sealed trait width
-    extends LayoutSizeType
+    extends StObject
+       with LayoutSizeType
        with VgEncodeChannel
   @scala.inline
   def width: width = "width".asInstanceOf[width]
   
   @js.native
   sealed trait x
-    extends SortByChannel
+    extends StObject
        with Channel
        with PositionChannel
        with PositionScaleChannel
+       with SortByChannel
        with VgEncodeChannel
        with _MainChannelOf[js.Any]
   @scala.inline
@@ -2864,7 +3378,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait x2
-    extends Channel
+    extends StObject
+       with Channel
        with PositionChannel
        with SecondaryRangeChannel
        with VgEncodeChannel
@@ -2883,16 +3398,19 @@ object vegaLiteStrings {
   def xOffset: xOffset = "xOffset".asInstanceOf[xOffset]
   
   @js.native
-  sealed trait xc extends VgEncodeChannel
+  sealed trait xc
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def xc: xc = "xc".asInstanceOf[xc]
   
   @js.native
   sealed trait y
-    extends SortByChannel
+    extends StObject
        with Channel
        with PositionChannel
        with PositionScaleChannel
+       with SortByChannel
        with VgEncodeChannel
        with _MainChannelOf[js.Any]
   @scala.inline
@@ -2900,7 +3418,8 @@ object vegaLiteStrings {
   
   @js.native
   sealed trait y2
-    extends Channel
+    extends StObject
+       with Channel
        with PositionChannel
        with SecondaryRangeChannel
        with VgEncodeChannel
@@ -2919,94 +3438,129 @@ object vegaLiteStrings {
   def yOffset: yOffset = "yOffset".asInstanceOf[yOffset]
   
   @js.native
-  sealed trait yc extends VgEncodeChannel
+  sealed trait yc
+    extends StObject
+       with VgEncodeChannel
   @scala.inline
   def yc: yc = "yc".asInstanceOf[yc]
   
   @js.native
   sealed trait year
-    extends LocalSingleTimeUnit
+    extends StObject
+       with LocalSingleTimeUnit
        with TimeUnitFormat
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   
   @js.native
-  sealed trait `year-month` extends TimeUnitFormat
+  sealed trait `year-month`
+    extends StObject
+       with TimeUnitFormat
   @scala.inline
   def `year-month`: `year-month` = "year-month".asInstanceOf[`year-month`]
   
   @js.native
-  sealed trait `year-month-date` extends TimeUnitFormat
+  sealed trait `year-month-date`
+    extends StObject
+       with TimeUnitFormat
   @scala.inline
   def `year-month-date`: `year-month-date` = "year-month-date".asInstanceOf[`year-month-date`]
   
   @js.native
-  sealed trait yeardayofyear extends LocalMultiTimeUnit
+  sealed trait yeardayofyear
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yeardayofyear: yeardayofyear = "yeardayofyear".asInstanceOf[yeardayofyear]
   
   @js.native
-  sealed trait yearmonth extends LocalMultiTimeUnit
+  sealed trait yearmonth
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearmonth: yearmonth = "yearmonth".asInstanceOf[yearmonth]
   
   @js.native
-  sealed trait yearmonthdate extends LocalMultiTimeUnit
+  sealed trait yearmonthdate
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearmonthdate: yearmonthdate = "yearmonthdate".asInstanceOf[yearmonthdate]
   
   @js.native
-  sealed trait yearmonthdatehours extends LocalMultiTimeUnit
+  sealed trait yearmonthdatehours
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearmonthdatehours: yearmonthdatehours = "yearmonthdatehours".asInstanceOf[yearmonthdatehours]
   
   @js.native
-  sealed trait yearmonthdatehoursminutes extends LocalMultiTimeUnit
+  sealed trait yearmonthdatehoursminutes
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearmonthdatehoursminutes: yearmonthdatehoursminutes = "yearmonthdatehoursminutes".asInstanceOf[yearmonthdatehoursminutes]
   
   @js.native
-  sealed trait yearmonthdatehoursminutesseconds extends LocalMultiTimeUnit
+  sealed trait yearmonthdatehoursminutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearmonthdatehoursminutesseconds: yearmonthdatehoursminutesseconds = "yearmonthdatehoursminutesseconds".asInstanceOf[yearmonthdatehoursminutesseconds]
   
   @js.native
-  sealed trait yearquarter extends LocalMultiTimeUnit
+  sealed trait yearquarter
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearquarter: yearquarter = "yearquarter".asInstanceOf[yearquarter]
   
   @js.native
-  sealed trait yearquartermonth extends LocalMultiTimeUnit
+  sealed trait yearquartermonth
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearquartermonth: yearquartermonth = "yearquartermonth".asInstanceOf[yearquartermonth]
   
   @js.native
-  sealed trait yearweek extends LocalMultiTimeUnit
+  sealed trait yearweek
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearweek: yearweek = "yearweek".asInstanceOf[yearweek]
   
   @js.native
-  sealed trait yearweekday extends LocalMultiTimeUnit
+  sealed trait yearweekday
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearweekday: yearweekday = "yearweekday".asInstanceOf[yearweekday]
   
   @js.native
-  sealed trait yearweekdayhours extends LocalMultiTimeUnit
+  sealed trait yearweekdayhours
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearweekdayhours: yearweekdayhours = "yearweekdayhours".asInstanceOf[yearweekdayhours]
   
   @js.native
-  sealed trait yearweekdayhoursminutes extends LocalMultiTimeUnit
+  sealed trait yearweekdayhoursminutes
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearweekdayhoursminutes: yearweekdayhoursminutes = "yearweekdayhoursminutes".asInstanceOf[yearweekdayhoursminutes]
   
   @js.native
-  sealed trait yearweekdayhoursminutesseconds extends LocalMultiTimeUnit
+  sealed trait yearweekdayhoursminutesseconds
+    extends StObject
+       with LocalMultiTimeUnit
   @scala.inline
   def yearweekdayhoursminutesseconds: yearweekdayhoursminutesseconds = "yearweekdayhoursminutesseconds".asInstanceOf[yearweekdayhoursminutesseconds]
   
   @js.native
-  sealed trait zero extends StackOffset
+  sealed trait zero
+    extends StObject
+       with StackOffset
   @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]
   

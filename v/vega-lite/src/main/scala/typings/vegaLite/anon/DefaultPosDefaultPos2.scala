@@ -5,15 +5,13 @@ import typings.vegaLite.vegaLiteStrings.zeroOrMax
 import typings.vegaLite.vegaLiteStrings.zeroOrMin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultPosDefaultPos2 extends StObject {
   
-  var defaultPos: zeroOrMin | zeroOrMax | mid = js.native
+  var defaultPos: zeroOrMin | zeroOrMax | mid
   
-  var defaultPos2: zeroOrMin | zeroOrMax = js.native
+  var defaultPos2: zeroOrMin | zeroOrMax
 }
 object DefaultPosDefaultPos2 {
   

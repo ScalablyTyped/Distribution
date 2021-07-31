@@ -3,7 +3,6 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Service")
@@ -26,9 +25,9 @@ class Service protected () extends NamespaceBase {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   def create(rpcImpl: RPCImpl): typings.apolloProtobufjs.mod.rpc.Service = js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): typings.apolloProtobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.apolloProtobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.apolloProtobufjs.mod.rpc.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typings.apolloProtobufjs.mod.rpc.Service = js.native
   
   /** Service methods. */
   var methods: StringDictionary[js.UndefOr[Method]] = js.native
@@ -39,6 +38,10 @@ class Service protected () extends NamespaceBase {
 /* static members */
 object Service {
   
+  @JSImport("@apollo/protobufjs", "Service")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Constructs a service from a service descriptor.
     * @param name Service name
@@ -46,7 +49,6 @@ object Service {
     * @returns Created service
     * @throws {TypeError} If arguments are invalid
     */
-  @JSImport("@apollo/protobufjs", "Service.fromJSON")
-  @js.native
-  def fromJSON(name: String, json: IService): Service = js.native
+  @scala.inline
+  def fromJSON(name: String, json: IService): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Service]
 }

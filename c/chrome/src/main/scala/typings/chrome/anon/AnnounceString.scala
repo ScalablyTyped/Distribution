@@ -4,21 +4,19 @@ import typings.chrome.chrome.input.ime.AssistiveWindowButton
 import typings.chrome.chrome.input.ime.AssistiveWindowType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnounceString extends StObject {
   
-  var announceString: js.UndefOr[String] = js.native
+  var announceString: js.UndefOr[String] = js.undefined
   
-  var buttonID: AssistiveWindowButton = js.native
+  var buttonID: AssistiveWindowButton
   
-  var contextID: Double = js.native
+  var contextID: Double
   
-  var highlighted: Boolean = js.native
+  var highlighted: Boolean
   
-  var windowType: AssistiveWindowType = js.native
+  var windowType: AssistiveWindowType
 }
 object AnnounceString {
   

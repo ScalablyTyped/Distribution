@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyThreadRequest extends StObject {
   
   /** A list of IDs of labels to add to this thread. */
-  var addLabelIds: js.UndefOr[js.Array[String]] = js.native
+  var addLabelIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of IDs of labels to remove from this thread. */
-  var removeLabelIds: js.UndefOr[js.Array[String]] = js.native
+  var removeLabelIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModifyThreadRequest {
   

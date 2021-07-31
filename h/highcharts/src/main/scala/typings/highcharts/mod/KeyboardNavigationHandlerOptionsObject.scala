@@ -2,38 +2,36 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for the keyboard navigation handler.
   */
-@js.native
 trait KeyboardNavigationHandlerOptionsObject extends StObject {
   
   /**
     * Function to run on initialization of module.
     */
-  var init: js.Function = js.native
+  var init: js.Function
   
   /**
     * An array containing pairs of an array of keycodes, mapped to a
     * handler function. When the keycode is received, the handler is called
     * with the keycode as parameter.
     */
-  var keyCodeMap: js.Array[js.Tuple2[js.Array[Double], js.Function]] = js.native
+  var keyCodeMap: js.Array[js.Tuple2[js.Array[Double], js.Function]]
   
   /**
     * Function to run before moving to next/prev module. Receives moving
     * direction as parameter: +1 for next, -1 for previous.
     */
-  var terminate: js.UndefOr[js.Function] = js.native
+  var terminate: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Function to run to validate module. Should return false if module
     * should not run, true otherwise. Receives chart as parameter.
     */
-  var validate: js.UndefOr[js.Function] = js.native
+  var validate: js.UndefOr[js.Function] = js.undefined
 }
 object KeyboardNavigationHandlerOptionsObject {
   

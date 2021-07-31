@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingData extends StObject {
   
   /**
     * A Sagemaker GroundTruth manifest file that contains the training images (assets).
     */
-  var Assets: js.UndefOr[typings.awsSdk.rekognitionMod.Assets] = js.native
+  var Assets: js.UndefOr[typings.awsSdk.rekognitionMod.Assets] = js.undefined
 }
 object TrainingData {
   

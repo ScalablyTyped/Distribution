@@ -5,49 +5,47 @@ import typings.mfiles.MFiles.MFViewFlag
 import typings.mfiles.MFiles.MFViewType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IView extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  def Clone(): IView = js.native
+  def Clone(): IView
   
-  def CloneFrom(View: IView): Unit = js.native
+  def CloneFrom(View: IView): Unit
   
-  var Common: Boolean = js.native
+  var Common: Boolean
   
-  val GUID: String = js.native
+  val GUID: String
   
-  var HasParent: Boolean = js.native
+  var HasParent: Boolean
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Levels: IExpressionExs = js.native
+  var Levels: IExpressionExs
   
-  var LookInAllVersions: Boolean = js.native
+  var LookInAllVersions: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var Parent: Double = js.native
+  var Parent: Double
   
-  var ReturnLatestVisibleVersion: Boolean = js.native
+  var ReturnLatestVisibleVersion: Boolean
   
-  var SearchConditions: ISearchConditions = js.native
+  var SearchConditions: ISearchConditions
   
-  var SearchDef: ISearchDef = js.native
+  var SearchDef: ISearchDef
   
-  var SearchFlags: MFSearchFlags = js.native
+  var SearchFlags: MFSearchFlags
   
-  var ViewFlags: MFViewFlag = js.native
+  var ViewFlags: MFViewFlag
   
-  var ViewLocation: IViewLocation = js.native
+  var ViewLocation: IViewLocation
   
-  var ViewType: MFViewType = js.native
+  var ViewType: MFViewType
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object IView {
   

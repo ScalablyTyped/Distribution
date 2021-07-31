@@ -2,7 +2,6 @@ package typings.hexo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,10 +13,10 @@ trait View extends StObject {
     * Remove a View
     */
   def render(): js.Promise[String] = js.native
-  def render(fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[_] = js.native
-  def render(options: js.UndefOr[scala.Nothing], fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
+  def render(fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[js.Any] = js.native
   def render(options: js.Any): js.Promise[String] = js.native
   def render(options: js.Any, fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
+  def render(options: Unit, fn: js.Function2[/* err */ js.Any, /* result */ String, Unit]): js.Promise[String] = js.native
   
   /**
     * Remove a View synchronously.

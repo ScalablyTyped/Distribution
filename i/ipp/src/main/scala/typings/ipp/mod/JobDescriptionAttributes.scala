@@ -2,31 +2,29 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobDescriptionAttributes extends StObject {
   
-  var `current-page-order`: js.UndefOr[PageOrder] = js.native
+  var `current-page-order`: js.UndefOr[PageOrder] = js.undefined
   
-  var `document-metadata`: js.UndefOr[js.Array[String]] = js.native
+  var `document-metadata`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `job-charge-info`: js.UndefOr[String] = js.native
+  var `job-charge-info`: js.UndefOr[String] = js.undefined
   
   var `job-mandatory-attributes`: js.UndefOr[
     js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `job-message-from-operator`: js.UndefOr[String] = js.native
+  var `job-message-from-operator`: js.UndefOr[String] = js.undefined
   
-  var `job-message-to-operator-actual`: js.UndefOr[js.Array[String]] = js.native
+  var `job-message-to-operator-actual`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `job-name`: js.UndefOr[String] = js.native
+  var `job-name`: js.UndefOr[String] = js.undefined
   
-  var `job-save-printer-make-and-model`: js.UndefOr[String] = js.native
+  var `job-save-printer-make-and-model`: js.UndefOr[String] = js.undefined
 }
 object JobDescriptionAttributes {
   

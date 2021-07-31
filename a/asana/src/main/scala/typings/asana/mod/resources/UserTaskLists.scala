@@ -5,7 +5,6 @@ import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.UserTaskLists.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,10 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait UserTaskLists
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   def findById(userTaskList: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(userTaskList: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(userTaskList: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
@@ -35,12 +35,12 @@ trait UserTaskLists
     * @return {Promise} The requested resource
     */
   def findById(userTaskList: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(userTaskList: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(userTaskList: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(userTaskList: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
   def findByUser(user: String): typings.bluebird.mod.^[Type] = js.native
-  def findByUser(user: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findByUser(user: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   /**
@@ -54,12 +54,12 @@ trait UserTaskLists
     * @return {Promise} The requested resource
     */
   def findByUser(user: Double): typings.bluebird.mod.^[Type] = js.native
-  def findByUser(user: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findByUser(user: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findByUser(user: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
   def tasks(userTaskList: String): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def tasks(userTaskList: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def tasks(userTaskList: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: String, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   /**
@@ -88,7 +88,7 @@ trait UserTaskLists
     * @return {Promise} The response from the API
     */
   def tasks(userTaskList: Double): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def tasks(userTaskList: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def tasks(userTaskList: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: Double, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def tasks(userTaskList: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
 }
@@ -97,7 +97,9 @@ object UserTaskLists extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.UserTaskLists")
   @js.native
-  class ^ protected () extends UserTaskLists {
+  class ^ protected ()
+    extends StObject
+       with UserTaskLists {
     /**
       * @param dispatcher
       */
@@ -110,11 +112,12 @@ object UserTaskLists extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
-    var owner: typings.asana.mod.resources.Resource = js.native
+    var owner: Resource = js.native
     
-    var workspace: typings.asana.mod.resources.Resource = js.native
+    var workspace: Resource = js.native
   }
   
   type _To = UserTaskListsStatic

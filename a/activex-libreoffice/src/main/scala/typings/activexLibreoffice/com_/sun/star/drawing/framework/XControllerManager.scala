@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,32 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The {@link XControllerManager} interface is typically implemented by the same object that implements {@link com.sun.star.frame.XController} .
   */
-@js.native
 trait XControllerManager extends StObject {
   
   /**
     * Return the {@link XConfigurationController} object.
     * @returns The returned reference is never empty.
     */
-  val ConfigurationController: XConfigurationController = js.native
+  val ConfigurationController: XConfigurationController
   
   /**
     * Return the {@link XModuleController} object.
     * @returns The returned reference is never empty.
     */
-  val ModuleController: XModuleController = js.native
+  val ModuleController: XModuleController
   
   /**
     * Return the {@link XConfigurationController} object.
     * @returns The returned reference is never empty.
     */
-  def getConfigurationController(): XConfigurationController = js.native
+  def getConfigurationController(): XConfigurationController
   
   /**
     * Return the {@link XModuleController} object.
     * @returns The returned reference is never empty.
     */
-  def getModuleController(): XModuleController = js.native
+  def getModuleController(): XModuleController
 }
 object XControllerManager {
   

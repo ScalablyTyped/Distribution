@@ -5,27 +5,22 @@ import typings.yandexMaps.yandexMapsStrings.evenOdd
 import typings.yandexMaps.yandexMapsStrings.nonZero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometry {
   
   @JSImport("yandex-maps", "geometry.LineString")
   @js.native
-  class LineString () extends ILineStringGeometry {
+  class LineString ()
+    extends StObject
+       with ILineStringGeometry {
     def this(coordinates: js.Array[js.Array[Double]]) = this()
-    def this(coordinates: js.UndefOr[scala.Nothing], options: CoordRendering) = this()
     def this(coordinates: js.Array[js.Array[Double]], options: CoordRendering) = this()
+    def this(coordinates: Unit, options: CoordRendering) = this()
     
     def add(
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit]
-    ): this.type = js.native
-    def add(
-      types: String,
-      callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-      context: js.UndefOr[scala.Nothing],
-      priority: Double
     ): this.type = js.native
     def add(
       types: String,
@@ -36,6 +31,12 @@ object geometry {
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
       context: js.Object,
+      priority: Double
+    ): this.type = js.native
+    def add(
+      types: String,
+      callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
+      context: Unit,
       priority: Double
     ): this.type = js.native
     def add(
@@ -45,12 +46,6 @@ object geometry {
     def add(
       types: js.Array[js.Array[String] | String],
       callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
-      context: js.UndefOr[scala.Nothing],
-      priority: Double
-    ): this.type = js.native
-    def add(
-      types: js.Array[js.Array[String] | String],
-      callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
       context: js.Object
     ): this.type = js.native
     def add(
@@ -59,11 +54,26 @@ object geometry {
       context: js.Object,
       priority: Double
     ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[String] | String],
+      callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
+      context: Unit,
+      priority: Double
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def fire(`type`: String, eventobject: js.Object): this.type = js.native
     def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
     
+    /* CompleteClass */
+    override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+    
     def getParent(): js.Object | Null = js.native
+    
+    /* CompleteClass */
+    override def getType(): String = js.native
     
     def group(): IEventGroup = js.native
     
@@ -74,18 +84,18 @@ object geometry {
     def remove(
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-      context: js.UndefOr[scala.Nothing],
-      priority: Double
-    ): this.type = js.native
-    def remove(
-      types: String,
-      callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
       context: js.Object
     ): this.type = js.native
     def remove(
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
       context: js.Object,
+      priority: Double
+    ): this.type = js.native
+    def remove(
+      types: String,
+      callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
+      context: Unit,
       priority: Double
     ): this.type = js.native
     def remove(
@@ -95,18 +105,18 @@ object geometry {
     def remove(
       types: js.Array[js.Array[String] | String],
       callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
-      context: js.UndefOr[scala.Nothing],
-      priority: Double
-    ): this.type = js.native
-    def remove(
-      types: js.Array[js.Array[String] | String],
-      callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
       context: js.Object
     ): this.type = js.native
     def remove(
       types: js.Array[js.Array[String] | String],
       callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
       context: js.Object,
+      priority: Double
+    ): this.type = js.native
+    def remove(
+      types: js.Array[js.Array[String] | String],
+      callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
+      context: Unit,
       priority: Double
     ): this.type = js.native
     
@@ -115,51 +125,56 @@ object geometry {
   }
   object LineString {
     
-    /* static member */
-    @JSImport("yandex-maps", "geometry.LineString.fromEncodedCoordinates")
+    @JSImport("yandex-maps", "geometry.LineString")
     @js.native
-    def fromEncodedCoordinates(encodedCoordinates: String): LineString = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("yandex-maps", "geometry.LineString.toEncodedCoordinates")
-    @js.native
-    def toEncodedCoordinates(geometry: LineString): String = js.native
+    @scala.inline
+    def fromEncodedCoordinates(encodedCoordinates: String): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[LineString]
+    
+    /* static member */
+    @scala.inline
+    def toEncodedCoordinates(geometry: LineString): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("yandex-maps", "geometry.Point")
   @js.native
-  class Point () extends IPointGeometry {
+  class Point ()
+    extends StObject
+       with IPointGeometry {
     def this(coordinates: js.Array[Double]) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+    
+    /* CompleteClass */
+    override def getType(): String = js.native
   }
   
   @JSImport("yandex-maps", "geometry.Polygon")
   @js.native
-  class Polygon () extends IPolygonGeometry {
+  class Polygon ()
+    extends StObject
+       with IPolygonGeometry {
     def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-    def this(coordinates: js.UndefOr[scala.Nothing], fillRule: evenOdd) = this()
-    def this(coordinates: js.UndefOr[scala.Nothing], fillRule: nonZero) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
-    def this(coordinates: js.UndefOr[scala.Nothing], fillRule: js.UndefOr[scala.Nothing], options: js.Object) = this()
-    def this(coordinates: js.UndefOr[scala.Nothing], fillRule: evenOdd, options: js.Object) = this()
-    def this(coordinates: js.UndefOr[scala.Nothing], fillRule: nonZero, options: js.Object) = this()
-    def this(
-      coordinates: js.Array[js.Array[js.Array[Double]]],
-      fillRule: js.UndefOr[scala.Nothing],
-      options: js.Object
-    ) = this()
+    def this(coordinates: Unit, fillRule: evenOdd) = this()
+    def this(coordinates: Unit, fillRule: nonZero) = this()
+    def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: Unit, options: js.Object) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd, options: js.Object) = this()
     def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: Unit, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: evenOdd, options: js.Object) = this()
+    def this(coordinates: Unit, fillRule: nonZero, options: js.Object) = this()
     
     def add(
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit]
-    ): this.type = js.native
-    def add(
-      types: String,
-      callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-      context: js.UndefOr[scala.Nothing],
-      priority: Double
     ): this.type = js.native
     def add(
       types: String,
@@ -170,6 +185,12 @@ object geometry {
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
       context: js.Object,
+      priority: Double
+    ): this.type = js.native
+    def add(
+      types: String,
+      callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
+      context: Unit,
       priority: Double
     ): this.type = js.native
     def add(
@@ -179,12 +200,6 @@ object geometry {
     def add(
       types: js.Array[js.Array[String] | String],
       callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
-      context: js.UndefOr[scala.Nothing],
-      priority: Double
-    ): this.type = js.native
-    def add(
-      types: js.Array[js.Array[String] | String],
-      callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
       context: js.Object
     ): this.type = js.native
     def add(
@@ -193,11 +208,26 @@ object geometry {
       context: js.Object,
       priority: Double
     ): this.type = js.native
+    def add(
+      types: js.Array[js.Array[String] | String],
+      callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
+      context: Unit,
+      priority: Double
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def fire(`type`: String, eventobject: js.Object): this.type = js.native
     def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
     
+    /* CompleteClass */
+    override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+    
     def getParent(): js.Object | Null = js.native
+    
+    /* CompleteClass */
+    override def getType(): String = js.native
     
     def group(): IEventGroup = js.native
     
@@ -211,32 +241,30 @@ object geometry {
   }
   object Polygon {
     
-    /* static member */
-    @JSImport("yandex-maps", "geometry.Polygon.fromEncodedCoordinates")
+    @JSImport("yandex-maps", "geometry.Polygon")
     @js.native
-    def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.Polygon = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("yandex-maps", "geometry.Polygon.toEncodedCoordinates")
-    @js.native
-    def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.Polygon): String = js.native
+    @scala.inline
+    def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.Polygon]
+    
+    /* static member */
+    @scala.inline
+    def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object base {
     
     @JSImport("yandex-maps", "geometry.base.LineString")
     @js.native
-    class LineString () extends IBaseLineStringGeometry {
+    class LineString ()
+      extends StObject
+         with IBaseLineStringGeometry {
       
       def add(
         types: String,
         callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit]
-      ): this.type = js.native
-      def add(
-        types: String,
-        callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-        context: js.UndefOr[scala.Nothing],
-        priority: Double
       ): this.type = js.native
       def add(
         types: String,
@@ -247,6 +275,12 @@ object geometry {
         types: String,
         callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
         context: js.Object,
+        priority: Double
+      ): this.type = js.native
+      def add(
+        types: String,
+        callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
+        context: Unit,
         priority: Double
       ): this.type = js.native
       def add(
@@ -256,12 +290,6 @@ object geometry {
       def add(
         types: js.Array[js.Array[String] | String],
         callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
-        context: js.UndefOr[scala.Nothing],
-        priority: Double
-      ): this.type = js.native
-      def add(
-        types: js.Array[js.Array[String] | String],
-        callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
         context: js.Object
       ): this.type = js.native
       def add(
@@ -270,23 +298,58 @@ object geometry {
         context: js.Object,
         priority: Double
       ): this.type = js.native
+      def add(
+        types: js.Array[js.Array[String] | String],
+        callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
+        context: Unit,
+        priority: Double
+      ): this.type = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       def fire(`type`: String, eventobject: js.Object): this.type = js.native
       def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
       
+      /* CompleteClass */
+      override def freeze(): IFreezable = js.native
+      
+      /* CompleteClass */
+      override def get(index: Double): js.Array[Double] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getChildGeometry(index: Double): IPointGeometryAccess = js.native
+      
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[Double]] = js.native
+      
+      /* CompleteClass */
+      override def getLength(): Double = js.native
+      
       def getParent(): js.Object | Null = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
       
       def group(): IEventGroup = js.native
       
+      /* CompleteClass */
+      override def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
+      
+      /* CompleteClass */
+      override def isFrozen(): Boolean = js.native
+      
+      /* CompleteClass */
+      override def remove(index: Double): js.Array[Double] = js.native
       def remove(
         types: String,
         callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit]
-      ): this.type = js.native
-      def remove(
-        types: String,
-        callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
-        context: js.UndefOr[scala.Nothing],
-        priority: Double
       ): this.type = js.native
       def remove(
         types: String,
@@ -297,6 +360,12 @@ object geometry {
         types: String,
         callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
         context: js.Object,
+        priority: Double
+      ): this.type = js.native
+      def remove(
+        types: String,
+        callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit],
+        context: Unit,
         priority: Double
       ): this.type = js.native
       def remove(
@@ -306,12 +375,6 @@ object geometry {
       def remove(
         types: js.Array[js.Array[String] | String],
         callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
-        context: js.UndefOr[scala.Nothing],
-        priority: Double
-      ): this.type = js.native
-      def remove(
-        types: js.Array[js.Array[String] | String],
-        callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
         context: js.Object
       ): this.type = js.native
       def remove(
@@ -320,41 +383,81 @@ object geometry {
         context: js.Object,
         priority: Double
       ): this.type = js.native
+      def remove(
+        types: js.Array[js.Array[String] | String],
+        callback: js.Function1[(IEvent[js.Object, js.Object]) | js.Object, Unit],
+        context: Unit,
+        priority: Double
+      ): this.type = js.native
+      
+      /* CompleteClass */
+      override def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess = js.native
+      
+      /* CompleteClass */
+      override def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
       
       def setParent(): this.type = js.native
       def setParent(parent: IEventManager[js.Object]): this.type = js.native
+      
+      /* CompleteClass */
+      override def splice(index: Double, length: Double): js.Array[js.Array[Double]] = js.native
+      
+      /* CompleteClass */
+      override def unfreeze(): IFreezable = js.native
     }
     object LineString {
       
-      /* static member */
-      @JSImport("yandex-maps", "geometry.base.LineString.fromEncodedCoordinates")
+      @JSImport("yandex-maps", "geometry.base.LineString")
       @js.native
-      def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.LineString = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("yandex-maps", "geometry.base.LineString.toEncodedCoordinates")
-      @js.native
-      def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.LineString): String = js.native
+      @scala.inline
+      def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.LineString]
+      
+      /* static member */
+      @scala.inline
+      def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.LineString): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSImport("yandex-maps", "geometry.base.Point")
     @js.native
-    class Point () extends IBasePointGeometry
+    class Point ()
+      extends StObject
+         with IBasePointGeometry {
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+    }
     
     @JSImport("yandex-maps", "geometry.base.Polygon")
     @js.native
-    class Polygon () extends IBasePointGeometry {
+    class Polygon ()
+      extends StObject
+         with IBasePointGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
-      def this(coordinates: js.UndefOr[scala.Nothing], fillRule: evenOdd) = this()
-      def this(coordinates: js.UndefOr[scala.Nothing], fillRule: nonZero) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
+      def this(coordinates: Unit, fillRule: evenOdd) = this()
+      def this(coordinates: Unit, fillRule: nonZero) = this()
       
       def contains(position: js.Array[Double]): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
       
       def freeze(): IFreezable = js.native
       
       def get(index: Double): js.Array[js.Array[Double]] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
       
       def getChildGeometry(index: Double): ILinearRingGeometryAccess = js.native
       
@@ -363,6 +466,9 @@ object geometry {
       def getFillRule(): evenOdd | nonZero = js.native
       
       def getLength(): Double = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
       
       def insert(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
       
@@ -383,15 +489,17 @@ object geometry {
     }
     object Polygon {
       
-      /* static member */
-      @JSImport("yandex-maps", "geometry.base.Polygon.fromEncodedCoordinates")
+      @JSImport("yandex-maps", "geometry.base.Polygon")
       @js.native
-      def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.base.Polygon = js.native
+      val ^ : js.Any = js.native
       
       /* static member */
-      @JSImport("yandex-maps", "geometry.base.Polygon.toEncodedCoordinates")
-      @js.native
-      def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.base.Polygon): String = js.native
+      @scala.inline
+      def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.base.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.base.Polygon]
+      
+      /* static member */
+      @scala.inline
+      def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.base.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
     }
   }
   
@@ -399,30 +507,125 @@ object geometry {
     
     @JSImport("yandex-maps", "geometry.pixel.Circle")
     @js.native
-    class Circle protected () extends IPixelCircleGeometry {
+    class Circle protected ()
+      extends StObject
+         with IPixelCircleGeometry {
       def this(coordinates: js.Array[Double], radius: Double) = this()
       def this(coordinates: Null, radius: Double) = this()
       def this(coordinates: js.Array[Double], radius: Double, metaData: js.Object) = this()
       def this(coordinates: Null, radius: Double, metaData: js.Object) = this()
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[Double] = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getRadius(): Double = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
     
     @JSImport("yandex-maps", "geometry.pixel.LineString")
     @js.native
-    class LineString protected () extends IPixelLineStringGeometry {
+    class LineString protected ()
+      extends StObject
+         with IPixelLineStringGeometry {
       def this(coordinates: js.Array[js.Array[Double]]) = this()
       def this(coordinates: js.Array[js.Array[Double]], metaData: js.Object) = this()
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[Double]] = js.native
+      
+      /* CompleteClass */
+      override def getLength(): Double = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
     
     @JSImport("yandex-maps", "geometry.pixel.MultiLineString")
     @js.native
-    class MultiLineString protected () extends IPixelMultiLineGeometry {
+    class MultiLineString protected ()
+      extends StObject
+         with IPixelMultiLineGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], metaData: js.Object) = this()
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[js.Array[Double]]] = js.native
+      
+      /* CompleteClass */
+      override def getLength(): Double = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
     
     @JSImport("yandex-maps", "geometry.pixel.MultiPolygon")
     @js.native
-    class MultiPolygon protected () extends IPixelMultiPolygonGeometry {
+    class MultiPolygon protected ()
+      extends StObject
+         with IPixelMultiPolygonGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd) = this()
       def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: nonZero) = this()
       def this(
@@ -435,31 +638,160 @@ object geometry {
         fillRule: nonZero,
         metaData: js.Object
       ) = this()
+      
+      /* CompleteClass */
+      override def contains(position: js.Array[Double]): Boolean = js.native
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[js.Array[js.Array[Double]]]] = js.native
+      
+      /* CompleteClass */
+      override def getFillRule(): evenOdd | nonZero = js.native
+      
+      /* CompleteClass */
+      override def getLength(): Double = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
     
     @JSImport("yandex-maps", "geometry.pixel.Point")
     @js.native
-    class Point () extends IPixelPointGeometry {
+    class Point ()
+      extends StObject
+         with IPixelPointGeometry {
       def this(position: js.Array[Double]) = this()
       def this(position: js.Array[Double], metaData: js.Object) = this()
       def this(position: Null, metaData: js.Object) = this()
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[Double] = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
     
     @JSImport("yandex-maps", "geometry.pixel.Polygon")
     @js.native
-    class Polygon protected () extends IPixelPolygonGeometry {
+    class Polygon protected ()
+      extends StObject
+         with IPixelPolygonGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd, metaData: js.Object) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, metaData: js.Object) = this()
+      
+      /* CompleteClass */
+      override def contains(position: js.Array[Double]): Boolean = js.native
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[js.Array[Double]]] = js.native
+      
+      /* CompleteClass */
+      override def getFillRule(): evenOdd | nonZero = js.native
+      
+      /* CompleteClass */
+      override def getLength(): Double = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
     
     @JSImport("yandex-maps", "geometry.pixel.Rectangle")
     @js.native
-    class Rectangle () extends IPixelRectangleGeometry {
+    class Rectangle ()
+      extends StObject
+         with IPixelRectangleGeometry {
       def this(coordinates: js.Array[js.Array[Double]]) = this()
       def this(coordinates: js.Array[js.Array[Double]], metaData: js.Object) = this()
       def this(coordinates: Null, metaData: js.Object) = this()
+      
+      /* CompleteClass */
+      override def equals(geometry: IPixelGeometry): Boolean = js.native
+      
+      /* CompleteClass */
+      var events: IEventManager[js.Object] = js.native
+      
+      /* CompleteClass */
+      override def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+      
+      /* CompleteClass */
+      override def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getCoordinates(): js.Array[js.Array[Double]] = js.native
+      
+      /* CompleteClass */
+      override def getMetaData(): js.Object = js.native
+      
+      /* CompleteClass */
+      override def getType(): String = js.native
+      
+      /* CompleteClass */
+      override def scale(factor: Double): IPixelGeometry = js.native
+      
+      /* CompleteClass */
+      override def shift(offset: js.Array[Double]): IPixelGeometry = js.native
     }
   }
 }

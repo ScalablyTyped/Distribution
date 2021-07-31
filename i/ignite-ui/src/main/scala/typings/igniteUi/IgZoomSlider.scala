@@ -4,133 +4,132 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgZoomSlider
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var actualPixelScalingRatio: js.UndefOr[Double] = js.native
+  var actualPixelScalingRatio: js.UndefOr[Double] = js.undefined
   
-  var areThumbCalloutsEnabled: js.UndefOr[Boolean] = js.native
+  var areThumbCalloutsEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var barBrush: js.UndefOr[js.Any] = js.native
+  var barBrush: js.UndefOr[js.Any] = js.undefined
   
-  var barExtent: js.UndefOr[Double] = js.native
+  var barExtent: js.UndefOr[Double] = js.undefined
   
-  var barOutline: js.UndefOr[js.Any] = js.native
+  var barOutline: js.UndefOr[js.Any] = js.undefined
   
-  var barStrokeThickness: js.UndefOr[Double] = js.native
+  var barStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var endInset: js.UndefOr[Double] = js.native
+  var endInset: js.UndefOr[Double] = js.undefined
   
   /**
     * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var higherCalloutBrush: js.UndefOr[js.Any] = js.native
+  var higherCalloutBrush: js.UndefOr[js.Any] = js.undefined
   
-  var higherCalloutOutline: js.UndefOr[js.Any] = js.native
+  var higherCalloutOutline: js.UndefOr[js.Any] = js.undefined
   
-  var higherCalloutStrokeThickness: js.UndefOr[Double] = js.native
+  var higherCalloutStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var higherCalloutTextColor: js.UndefOr[js.Any] = js.native
+  var higherCalloutTextColor: js.UndefOr[js.Any] = js.undefined
   
-  var higherShadeBrush: js.UndefOr[js.Any] = js.native
+  var higherShadeBrush: js.UndefOr[js.Any] = js.undefined
   
-  var higherShadeOutline: js.UndefOr[js.Any] = js.native
+  var higherShadeOutline: js.UndefOr[js.Any] = js.undefined
   
-  var higherShadeStrokeThickness: js.UndefOr[Double] = js.native
+  var higherShadeStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var higherThumbBrush: js.UndefOr[js.Any] = js.native
+  var higherThumbBrush: js.UndefOr[js.Any] = js.undefined
   
-  var higherThumbHeight: js.UndefOr[Double] = js.native
+  var higherThumbHeight: js.UndefOr[Double] = js.undefined
   
-  var higherThumbOutline: js.UndefOr[js.Any] = js.native
+  var higherThumbOutline: js.UndefOr[js.Any] = js.undefined
   
-  var higherThumbRidgesBrush: js.UndefOr[js.Any] = js.native
+  var higherThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
   
-  var higherThumbStrokeThickness: js.UndefOr[Double] = js.native
+  var higherThumbStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var higherThumbWidth: js.UndefOr[Double] = js.native
+  var higherThumbWidth: js.UndefOr[Double] = js.undefined
   
-  var lowerCalloutBrush: js.UndefOr[js.Any] = js.native
+  var lowerCalloutBrush: js.UndefOr[js.Any] = js.undefined
   
-  var lowerCalloutOutline: js.UndefOr[js.Any] = js.native
+  var lowerCalloutOutline: js.UndefOr[js.Any] = js.undefined
   
-  var lowerCalloutStrokeThickness: js.UndefOr[Double] = js.native
+  var lowerCalloutStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var lowerCalloutTextColor: js.UndefOr[js.Any] = js.native
+  var lowerCalloutTextColor: js.UndefOr[js.Any] = js.undefined
   
-  var lowerShadeBrush: js.UndefOr[js.Any] = js.native
+  var lowerShadeBrush: js.UndefOr[js.Any] = js.undefined
   
-  var lowerShadeOutline: js.UndefOr[js.Any] = js.native
+  var lowerShadeOutline: js.UndefOr[js.Any] = js.undefined
   
-  var lowerShadeStrokeThickness: js.UndefOr[Double] = js.native
+  var lowerShadeStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var lowerThumbBrush: js.UndefOr[js.Any] = js.native
+  var lowerThumbBrush: js.UndefOr[js.Any] = js.undefined
   
-  var lowerThumbHeight: js.UndefOr[Double] = js.native
+  var lowerThumbHeight: js.UndefOr[Double] = js.undefined
   
-  var lowerThumbOutline: js.UndefOr[js.Any] = js.native
+  var lowerThumbOutline: js.UndefOr[js.Any] = js.undefined
   
-  var lowerThumbRidgesBrush: js.UndefOr[js.Any] = js.native
+  var lowerThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
   
-  var lowerThumbStrokeThickness: js.UndefOr[Double] = js.native
+  var lowerThumbStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var lowerThumbWidth: js.UndefOr[Double] = js.native
+  var lowerThumbWidth: js.UndefOr[Double] = js.undefined
   
-  var maxZoomWidth: js.UndefOr[Double] = js.native
+  var maxZoomWidth: js.UndefOr[Double] = js.undefined
   
-  var minZoomWidth: js.UndefOr[Double] = js.native
+  var minZoomWidth: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var panTransitionDuration: js.UndefOr[Double] = js.native
+  var panTransitionDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
-  var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.native
+  var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.undefined
   
-  var rangeThumbBrush: js.UndefOr[js.Any] = js.native
+  var rangeThumbBrush: js.UndefOr[js.Any] = js.undefined
   
-  var rangeThumbOutline: js.UndefOr[js.Any] = js.native
+  var rangeThumbOutline: js.UndefOr[js.Any] = js.undefined
   
-  var rangeThumbRidgesBrush: js.UndefOr[js.Any] = js.native
+  var rangeThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
   
-  var rangeThumbStrokeThickness: js.UndefOr[Double] = js.native
+  var rangeThumbStrokeThickness: js.UndefOr[Double] = js.undefined
   
-  var resolvingAxisValue: js.UndefOr[ResolvingAxisValueEvent] = js.native
+  var resolvingAxisValue: js.UndefOr[ResolvingAxisValueEvent] = js.undefined
   
-  var startInset: js.UndefOr[Double] = js.native
+  var startInset: js.UndefOr[Double] = js.undefined
   
-  var thumbCalloutTextStyle: js.UndefOr[js.Any] = js.native
+  var thumbCalloutTextStyle: js.UndefOr[js.Any] = js.undefined
   
-  var trackEndInset: js.UndefOr[Double] = js.native
+  var trackEndInset: js.UndefOr[Double] = js.undefined
   
-  var trackStartInset: js.UndefOr[Double] = js.native
+  var trackStartInset: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
-  var windowRect: js.UndefOr[js.Any] = js.native
+  var windowRect: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Occurs just after the current ZoomSlider's window rectangle is changed.
     */
-  var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.native
+  var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.undefined
 }
 object IgZoomSlider {
   

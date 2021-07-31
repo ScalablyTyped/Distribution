@@ -2,49 +2,47 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPalette extends StObject {
   
-  var `0`: js.UndefOr[String] = js.native
+  var `0`: js.UndefOr[String] = js.undefined
   
-  var `100`: js.UndefOr[String] = js.native
+  var `100`: js.UndefOr[String] = js.undefined
   
-  var `200`: js.UndefOr[String] = js.native
+  var `200`: js.UndefOr[String] = js.undefined
   
-  var `300`: js.UndefOr[String] = js.native
+  var `300`: js.UndefOr[String] = js.undefined
   
-  var `400`: js.UndefOr[String] = js.native
+  var `400`: js.UndefOr[String] = js.undefined
   
-  var `50`: js.UndefOr[String] = js.native
+  var `50`: js.UndefOr[String] = js.undefined
   
-  var `500`: js.UndefOr[String] = js.native
+  var `500`: js.UndefOr[String] = js.undefined
   
-  var `600`: js.UndefOr[String] = js.native
+  var `600`: js.UndefOr[String] = js.undefined
   
-  var `700`: js.UndefOr[String] = js.native
+  var `700`: js.UndefOr[String] = js.undefined
   
-  var `800`: js.UndefOr[String] = js.native
+  var `800`: js.UndefOr[String] = js.undefined
   
-  var `900`: js.UndefOr[String] = js.native
+  var `900`: js.UndefOr[String] = js.undefined
   
-  var A100: js.UndefOr[String] = js.native
+  var A100: js.UndefOr[String] = js.undefined
   
-  var A200: js.UndefOr[String] = js.native
+  var A200: js.UndefOr[String] = js.undefined
   
-  var A400: js.UndefOr[String] = js.native
+  var A400: js.UndefOr[String] = js.undefined
   
-  var A700: js.UndefOr[String] = js.native
+  var A700: js.UndefOr[String] = js.undefined
   
-  var contrastDarkColors: js.UndefOr[String | js.Array[String]] = js.native
+  var contrastDarkColors: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contrastDefaultColor: js.UndefOr[String] = js.native
+  var contrastDefaultColor: js.UndefOr[String] = js.undefined
   
-  var contrastLightColors: js.UndefOr[String | js.Array[String]] = js.native
+  var contrastLightColors: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contrastStrongLightColors: js.UndefOr[String | js.Array[String]] = js.native
+  var contrastStrongLightColors: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IPalette {
   

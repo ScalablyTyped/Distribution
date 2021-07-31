@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComputedEffectTiming extends EffectTiming {
+trait ComputedEffectTiming
+  extends StObject
+     with EffectTiming {
   
-  var activeDuration: js.UndefOr[Double] = js.native
+  var activeDuration: js.UndefOr[Double] = js.undefined
   
-  var currentIteration: js.UndefOr[Double | Null] = js.native
+  var currentIteration: js.UndefOr[Double | Null] = js.undefined
   
-  var endTime: js.UndefOr[Double] = js.native
+  var endTime: js.UndefOr[Double] = js.undefined
   
-  var localTime: js.UndefOr[Double | Null] = js.native
+  var localTime: js.UndefOr[Double | Null] = js.undefined
   
-  var progress: js.UndefOr[Double | Null] = js.native
+  var progress: js.UndefOr[Double | Null] = js.undefined
 }
 object ComputedEffectTiming {
   

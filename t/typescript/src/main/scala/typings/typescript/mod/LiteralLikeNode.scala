@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LiteralLikeNode extends Node {
+trait LiteralLikeNode
+  extends StObject
+     with Node {
   
   var hasExtendedUnicodeEscape: js.UndefOr[Boolean] = js.native
   

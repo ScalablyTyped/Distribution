@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XGridControl
   * @since OOo 3.1
   */
-@js.native
-trait XGridControlListener extends XEventListener {
+trait XGridControlListener
+  extends StObject
+     with XEventListener {
   
   /**
     * called when the current column in a grid control changed
     * @see XGrid.getCurrentColumnPosition
     */
-  def columnChanged(event: EventObject): Unit = js.native
+  def columnChanged(event: EventObject): Unit
 }
 object XGridControlListener {
   

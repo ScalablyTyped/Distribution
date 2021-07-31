@@ -3,10 +3,8 @@ package typings.nodeRedRuntime.mod
 import typings.nodeRedRuntime.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextModule extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ContextModule extends StObject {
     * @param opts.key - the context key
     * @param opts.req - the request to log (optional)
     */
-  def delete(opts: Id): js.Promise[Unit] = js.native
+  def delete(opts: Id): js.Promise[Unit]
   
   /**
     * Gets the info of an individual node set
@@ -29,7 +27,7 @@ trait ContextModule extends StObject {
     * @param opts.key - the context key
     * @param opts.req - the request to log (optional)
     */
-  def getValue(opts: Id): js.Promise[js.Object] = js.native
+  def getValue(opts: Id): js.Promise[js.Object]
 }
 object ContextModule {
   

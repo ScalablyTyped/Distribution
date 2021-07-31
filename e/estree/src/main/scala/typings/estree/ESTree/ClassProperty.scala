@@ -2,23 +2,21 @@ package typings.estree.ESTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassProperty extends StObject {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ js.Any = js.native
+  var key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ js.Any
   
-  var static: Boolean = js.native
+  var static: Boolean
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation | Null] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotation | Null] = js.undefined
   
   var value: js.UndefOr[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object ClassProperty {
   

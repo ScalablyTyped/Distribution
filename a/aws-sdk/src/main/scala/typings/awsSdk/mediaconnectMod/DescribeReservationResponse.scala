@@ -2,13 +2,11 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReservationResponse extends StObject {
   
-  var Reservation: js.UndefOr[typings.awsSdk.mediaconnectMod.Reservation] = js.native
+  var Reservation: js.UndefOr[typings.awsSdk.mediaconnectMod.Reservation] = js.undefined
 }
 object DescribeReservationResponse {
   

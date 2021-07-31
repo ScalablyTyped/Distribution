@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p4beta1FaceRecognitionResult extends StObject {
   
   /** The Celebrity that this face was matched to. */
-  var celebrity: js.UndefOr[GoogleCloudVisionV1p4beta1Celebrity] = js.native
+  var celebrity: js.UndefOr[GoogleCloudVisionV1p4beta1Celebrity] = js.undefined
   
   /** Recognition confidence. Range [0, 1]. */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVisionV1p4beta1FaceRecognitionResult {
   

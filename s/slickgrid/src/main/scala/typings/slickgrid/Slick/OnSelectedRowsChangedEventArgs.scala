@@ -2,13 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnSelectedRowsChangedEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnSelectedRowsChangedEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var rows: js.Array[Double] = js.native
+  var rows: js.Array[Double]
 }
 object OnSelectedRowsChangedEventArgs {
   
@@ -19,7 +19,7 @@ object OnSelectedRowsChangedEventArgs {
   }
   
   @scala.inline
-  implicit class OnSelectedRowsChangedEventArgsMutableBuilder[Self <: OnSelectedRowsChangedEventArgs[_], T /* <: SlickData */] (val x: Self with OnSelectedRowsChangedEventArgs[T]) extends AnyVal {
+  implicit class OnSelectedRowsChangedEventArgsMutableBuilder[Self <: OnSelectedRowsChangedEventArgs[?], T /* <: SlickData */] (val x: Self & OnSelectedRowsChangedEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setRows(value: js.Array[Double]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])

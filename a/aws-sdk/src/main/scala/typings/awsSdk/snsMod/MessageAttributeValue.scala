@@ -2,26 +2,24 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageAttributeValue extends StObject {
   
   /**
     * Binary type attributes can store any binary data, for example, compressed data, encrypted data, or images.
     */
-  var BinaryValue: js.UndefOr[Binary] = js.native
+  var BinaryValue: js.UndefOr[Binary] = js.undefined
   
   /**
     * Amazon SNS supports the following logical data types: String, String.Array, Number, and Binary. For more information, see Message Attribute Data Types.
     */
-  var DataType: String = js.native
+  var DataType: String
   
   /**
     * Strings are Unicode with UTF8 binary encoding. For a list of code values, see ASCII Printable Characters.
     */
-  var StringValue: js.UndefOr[String] = js.native
+  var StringValue: js.UndefOr[String] = js.undefined
 }
 object MessageAttributeValue {
   

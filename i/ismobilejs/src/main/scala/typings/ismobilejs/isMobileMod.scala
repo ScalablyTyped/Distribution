@@ -5,28 +5,28 @@ import typings.ismobilejs.anon.Device
 import typings.ismobilejs.anon.Phone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMobileMod {
   
-  @JSImport("ismobilejs/types/isMobile", JSImport.Default)
+  @JSImport("ismobilejs/types/isMobile", JSImport.Namespace)
   @js.native
-  def default(): isMobileResult = js.native
-  @JSImport("ismobilejs/types/isMobile", JSImport.Default)
-  @js.native
-  def default(param: IsMobileParameter): isMobileResult = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): isMobileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[isMobileResult]
+  @scala.inline
+  def default(param: IsMobileParameter): isMobileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param.asInstanceOf[js.Any]).asInstanceOf[isMobileResult]
   
   type IsMobileParameter = UserAgent | Navigator
   
-  @js.native
   trait Navigator extends StObject {
     
-    var maxTouchPoints: js.UndefOr[Double] = js.native
+    var maxTouchPoints: js.UndefOr[Double] = js.undefined
     
-    var platform: String = js.native
+    var platform: String
     
-    var userAgent: String = js.native
+    var userAgent: String
   }
   object Navigator {
     
@@ -55,24 +55,23 @@ object isMobileMod {
   
   type UserAgent = String
   
-  @js.native
   trait isMobileResult extends StObject {
     
-    var amazon: Phone = js.native
+    var amazon: Phone
     
-    var android: Phone = js.native
+    var android: Phone
     
-    var any: Boolean = js.native
+    var any: Boolean
     
-    var apple: Device = js.native
+    var apple: Device
     
-    var other: Blackberry = js.native
+    var other: Blackberry
     
-    var phone: Boolean = js.native
+    var phone: Boolean
     
-    var tablet: Boolean = js.native
+    var tablet: Boolean
     
-    var windows: Phone = js.native
+    var windows: Phone
   }
   object isMobileResult {
     

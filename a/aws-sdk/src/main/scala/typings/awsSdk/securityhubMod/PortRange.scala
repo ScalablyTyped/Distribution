@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortRange extends StObject {
   
   /**
     * The first port in the port range.
     */
-  var Begin: js.UndefOr[Integer] = js.native
+  var Begin: js.UndefOr[Integer] = js.undefined
   
   /**
     * The last port in the port range.
     */
-  var End: js.UndefOr[Integer] = js.native
+  var End: js.UndefOr[Integer] = js.undefined
 }
 object PortRange {
   

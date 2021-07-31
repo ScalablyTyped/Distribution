@@ -2,15 +2,13 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtentInfoValue extends StObject {
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  var `val`: String = js.native
+  var `val`: String
 }
 object ExtentInfoValue {
   

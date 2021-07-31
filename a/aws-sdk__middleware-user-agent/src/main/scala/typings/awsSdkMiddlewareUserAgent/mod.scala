@@ -8,24 +8,24 @@ import typings.awsSdkTypes.middlewareMod.BuildHandlerOptions
 import typings.awsSdkTypes.middlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/middleware-user-agent", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/middleware-user-agent", "getUserAgentMiddlewareOptions")
   @js.native
   val getUserAgentMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @JSImport("@aws-sdk/middleware-user-agent", "getUserAgentPlugin")
-  @js.native
-  def getUserAgentPlugin(config: UserAgentResolvedConfig): Pluggable[_, _] = js.native
+  @scala.inline
+  def getUserAgentPlugin(config: UserAgentResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserAgentPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @JSImport("@aws-sdk/middleware-user-agent", "resolveUserAgentConfig")
-  @js.native
-  def resolveUserAgentConfig[T](input: T with PreviouslyResolved with UserAgentInputConfig): T with UserAgentResolvedConfig = js.native
+  @scala.inline
+  def resolveUserAgentConfig[T](input: T & PreviouslyResolved & UserAgentInputConfig): T & UserAgentResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUserAgentConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & UserAgentResolvedConfig]
   
-  @JSImport("@aws-sdk/middleware-user-agent", "userAgentMiddleware")
-  @js.native
-  def userAgentMiddleware(options: UserAgentResolvedConfig): js.Function1[/* next */ BuildHandler[_, _], BuildHandler[_, _]] = js.native
+  @scala.inline
+  def userAgentMiddleware(options: UserAgentResolvedConfig): js.Function1[/* next */ BuildHandler[js.Any, js.Any], BuildHandler[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAgentMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* next */ BuildHandler[js.Any, js.Any], BuildHandler[js.Any, js.Any]]]
 }

@@ -5,13 +5,13 @@ import typings.react.mod.ReactInstance
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictkey extends /* key */ StringDictionary[ReactInstance] {
+trait Dictkey
+  extends StObject
+     with /* key */ StringDictionary[ReactInstance] {
   
-  var navigatedMonth: HTMLElement = js.native
+  var navigatedMonth: HTMLElement
 }
 object Dictkey {
   

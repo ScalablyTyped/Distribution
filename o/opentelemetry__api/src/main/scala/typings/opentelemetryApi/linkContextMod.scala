@@ -2,18 +2,16 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkContextMod {
   
   /* Inlined std.Pick<@opentelemetry/api.@opentelemetry/api/build/src/trace/span_context.SpanContext, 'traceId' | 'spanId'> */
-  @js.native
   trait LinkContext extends StObject {
     
-    var spanId: String = js.native
+    var spanId: String
     
-    var traceId: String = js.native
+    var traceId: String
   }
   object LinkContext {
     

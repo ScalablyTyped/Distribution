@@ -2,18 +2,16 @@ package typings.stylableWebpackPlugin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  autoInit :boolean,   getAutoInitModule :any | undefined,   globalInjection :(p : string): string | undefined}> */
-@js.native
 trait PartialautoInitbooleanget extends StObject {
   
-  var autoInit: js.UndefOr[Boolean] = js.native
+  var autoInit: js.UndefOr[Boolean] = js.undefined
   
-  var getAutoInitModule: js.UndefOr[js.Any] = js.native
+  var getAutoInitModule: js.UndefOr[js.Any] = js.undefined
   
-  var globalInjection: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
+  var globalInjection: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
 }
 object PartialautoInitbooleanget {
   

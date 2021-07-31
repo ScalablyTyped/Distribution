@@ -16,7 +16,6 @@ import typings.terminalKit.terminalKitStrings.y
 import typings.terminalKit.terminalMod.Terminal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenBufferMod {
@@ -26,25 +25,24 @@ object screenBufferMod {
   class ^ protected () extends ScreenBuffer {
     def this(options: Options) = this()
   }
+  @JSImport("terminal-kit/ScreenBuffer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "attr2object")
-  @js.native
-  def attr2object(attrFlags: Double): Unit = js.native
+  @scala.inline
+  def attr2object(attrFlags: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attr2object")(attrFlags.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "create")
-  @js.native
-  def create(options: Options): ScreenBuffer = js.native
+  @scala.inline
+  def create(options: Options): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "createFromString")
-  @js.native
-  def createFromString(options: Attr, str: String): ScreenBuffer = js.native
+  @scala.inline
+  def createFromString(options: Attr, str: String): ScreenBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromString")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "loadImage")
-  @js.native
+  @scala.inline
   def loadImage(
     url: String,
     calback: js.Function2[
@@ -52,62 +50,58 @@ object screenBufferMod {
       /* image */ js.UndefOr[typings.terminalKit.screenBufferHDMod.^], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "loadImage")
-  @js.native
+  @scala.inline
   def loadImage(
     url: String,
     options: Shrink,
     calback: js.Function2[/* error */ js.Any, /* image */ typings.terminalKit.screenBufferHDMod.^, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "loadSync")
-  @js.native
-  def loadSync(filepath: String): ScreenBuffer = js.native
+  @scala.inline
+  def loadSync(filepath: String): ScreenBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[ScreenBuffer]
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBuffer", "object2attr")
-  @js.native
-  def object2attr(attrObject: Attributes): Unit = js.native
+  @scala.inline
+  def object2attr(attrObject: Attributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("object2attr")(attrObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Attributes extends StObject {
     
-    var bgColor: js.UndefOr[Double] = js.native
+    var bgColor: js.UndefOr[Double] = js.undefined
     
-    var bgDefaultColor: js.UndefOr[Boolean] = js.native
+    var bgDefaultColor: js.UndefOr[Boolean] = js.undefined
     
-    var bgTransparency: js.UndefOr[Boolean] = js.native
+    var bgTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var blink: js.UndefOr[Boolean] = js.native
+    var blink: js.UndefOr[Boolean] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var charTransparency: js.UndefOr[Boolean] = js.native
+    var charTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
     
-    var defaultColor: js.UndefOr[Boolean] = js.native
+    var defaultColor: js.UndefOr[Boolean] = js.undefined
     
-    var dim: js.UndefOr[Boolean] = js.native
+    var dim: js.UndefOr[Boolean] = js.undefined
     
-    var fgTransparency: js.UndefOr[Boolean] = js.native
+    var fgTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var strike: js.UndefOr[Boolean] = js.native
+    var strike: js.UndefOr[Boolean] = js.undefined
     
-    var styleTransparency: js.UndefOr[Boolean] = js.native
+    var styleTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var transparency: js.UndefOr[Boolean] = js.native
+    var transparency: js.UndefOr[Boolean] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object Attributes {
     
@@ -224,26 +218,25 @@ object screenBufferMod {
     }
   }
   
-  @js.native
   trait DrawOptions extends StObject {
     
-    var blending: js.UndefOr[Boolean] = js.native
+    var blending: js.UndefOr[Boolean] = js.undefined
     
-    var delta: js.UndefOr[Boolean] = js.native
+    var delta: js.UndefOr[Boolean] = js.undefined
     
-    var dst: js.UndefOr[Terminal | ScreenBuffer] = js.native
+    var dst: js.UndefOr[Terminal | ScreenBuffer] = js.undefined
     
-    var dstClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.native
+    var dstClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.undefined
     
-    var srcClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.native
+    var srcClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.undefined
     
-    var tile: js.UndefOr[Boolean] = js.native
+    var tile: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean | x | y] = js.native
+    var wrap: js.UndefOr[Boolean | x | y] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object DrawOptions {
     
@@ -312,24 +305,23 @@ object screenBufferMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var blending: js.UndefOr[Boolean] = js.native
+    var blending: js.UndefOr[Boolean] = js.undefined
     
-    var dst: Terminal | ScreenBuffer = js.native
+    var dst: Terminal | ScreenBuffer
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var noFill: js.UndefOr[Boolean] = js.native
+    var noFill: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -389,22 +381,21 @@ object screenBufferMod {
     }
   }
   
-  @js.native
   trait PutOptions extends StObject {
     
-    var attr: Attributes | Double = js.native
+    var attr: Attributes | Double
     
-    var direction: js.UndefOr[right | left | up | down | Null] = js.native
+    var direction: js.UndefOr[right | left | up | down | Null] = js.undefined
     
-    var dx: Double = js.native
+    var dx: Double
     
-    var dy: Double = js.native
+    var dy: Double
     
-    var wrap: Boolean = js.native
+    var wrap: Boolean
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object PutOptions {
     

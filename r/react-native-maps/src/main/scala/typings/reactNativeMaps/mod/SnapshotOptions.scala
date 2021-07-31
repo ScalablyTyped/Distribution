@@ -6,29 +6,27 @@ import typings.reactNativeMaps.reactNativeMapsStrings.jpg
 import typings.reactNativeMaps.reactNativeMapsStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptions extends StObject {
   
   /** image formats, defaults to 'png' */
-  var format: js.UndefOr[png | jpg] = js.native
+  var format: js.UndefOr[png | jpg] = js.undefined
   
   /** optional, when omitted the view-height is used */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** image quality: 0..1 (only relevant for jpg, default: 1) */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /** __iOS only__, optional region to render */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
   
   /** result types, defaults to 'file' */
-  var result: js.UndefOr[file | base64] = js.native
+  var result: js.UndefOr[file | base64] = js.undefined
   
   /** optional, when omitted the view-width is used */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SnapshotOptions {
   

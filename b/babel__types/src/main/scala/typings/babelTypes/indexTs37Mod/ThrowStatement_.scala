@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ThrowStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ThrowStatement_
-  extends CompletionStatement
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ThrowStatement_
+  extends StObject
      with BaseNode
+     with CompletionStatement
      with Statement
      with Terminatorless {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_ThrowStatement_ : ThrowStatement = js.native
+  var type_ThrowStatement_ : ThrowStatement
 }
 object ThrowStatement_ {
   
   @scala.inline
-  def apply(argument: Expression, `type`: ThrowStatement): ThrowStatement_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: Expression): ThrowStatement_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[ThrowStatement_]
   }
   

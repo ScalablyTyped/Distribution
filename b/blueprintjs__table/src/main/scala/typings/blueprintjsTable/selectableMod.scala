@@ -9,7 +9,6 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectableMod {
@@ -83,7 +82,9 @@ object selectableMod {
   }
   
   @js.native
-  trait IDragSelectableProps extends ISelectableProps {
+  trait IDragSelectableProps
+    extends StObject
+       with ISelectableProps {
     
     /**
       * Whether the selection behavior is disabled.
@@ -111,7 +112,6 @@ object selectableMod {
     def locateDrag(event: MouseEvent, coords: ICoordinateData, returnEndOnly: Boolean): IRegion = js.native
   }
   
-  @js.native
   trait ISelectableProps extends StObject {
     
     /**
@@ -120,33 +120,33 @@ object selectableMod {
       * and a mouse drag will select the current column/row/cell only.
       * @default false
       */
-    var enableMultipleSelection: js.UndefOr[Boolean] = js.native
+    var enableMultipleSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The currently focused cell.
       */
-    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.native
+    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
     
     /**
       * When the user focuses something, this callback is called with new
       * focused cell coordinates. This should be considered the new focused cell
       * state for the entire table.
       */
-    def onFocusedCell(focusedCell: IFocusedCellCoordinates): Unit = js.native
+    def onFocusedCell(focusedCell: IFocusedCellCoordinates): Unit
     
     /**
       * When the user selects something, this callback is called with a new
       * array of `Region`s. This array should be considered the new selection
       * state for the entire table.
       */
-    def onSelection(regions: js.Array[IRegion]): Unit = js.native
+    def onSelection(regions: js.Array[IRegion]): Unit
     
     /**
       * An additional convenience callback invoked when the user releases the
       * mouse from either a click or a drag, indicating that the selection
       * interaction has ended.
       */
-    var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.native
+    var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.undefined
     
     /**
       * An optional transform function that will be applied to the located
@@ -156,13 +156,13 @@ object selectableMod {
       * `Region`s while maintaining the existing multi-select and meta-click
       * functionality.
       */
-    var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.native
+    var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.undefined
     
     /**
       * An array containing the table's selection Regions.
       * @default []
       */
-    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
   }
   object ISelectableProps {
     

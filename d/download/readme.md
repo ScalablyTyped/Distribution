@@ -11,8 +11,8 @@ Download and extract files
 | Full name          | download |
 | Keywords           | download, extract, http, request, url |
 | # releases         | 2 |
-| # dependents       | 988 |
-| # downloads        | 108692709 |
+| # dependents       | 1088 |
+| # downloads        | 160099134 |
 | # stars            | 99 |
 
 ## Links

@@ -2,45 +2,43 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Next Id: 7
   */
-@js.native
 trait SchemaTargetingValueCreativeSize extends StObject {
   
   /**
     * The formats allowed by the publisher.
     */
-  var allowedFormats: js.UndefOr[js.Array[String]] = js.native
+  var allowedFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For video size type, the list of companion sizes.
     */
-  var companionSizes: js.UndefOr[js.Array[SchemaTargetingValueSize]] = js.native
+  var companionSizes: js.UndefOr[js.Array[SchemaTargetingValueSize]] = js.undefined
   
   /**
     * The Creative size type.
     */
-  var creativeSizeType: js.UndefOr[String] = js.native
+  var creativeSizeType: js.UndefOr[String] = js.undefined
   
   /**
     * The native template for native ad.
     */
-  var nativeTemplate: js.UndefOr[String] = js.native
+  var nativeTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * For regular or video creative size type, specifies the size of the
     * creative.
     */
-  var size: js.UndefOr[SchemaTargetingValueSize] = js.native
+  var size: js.UndefOr[SchemaTargetingValueSize] = js.undefined
   
   /**
     * The skippable ad type for video size.
     */
-  var skippableAdType: js.UndefOr[String] = js.native
+  var skippableAdType: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetingValueCreativeSize {
   

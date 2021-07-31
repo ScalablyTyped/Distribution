@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.Barcode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofBarcode extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Barcode = js.native
+  def extend(proto: js.Object): Barcode
   
   /* static member */
-  var fn: Barcode = js.native
+  var fn: Barcode
 }
 object TypeofBarcode {
   

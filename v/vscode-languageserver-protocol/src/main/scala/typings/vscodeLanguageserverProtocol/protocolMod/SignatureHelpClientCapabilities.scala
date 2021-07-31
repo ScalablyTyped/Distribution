@@ -3,10 +3,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverProtocol.anon.DocumentationFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpClientCapabilities extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SignatureHelpClientCapabilities extends StObject {
     *
     * @since 3.15.0
     */
-  var contextSupport: js.UndefOr[Boolean] = js.native
+  var contextSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether signature help supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The client supports the following `SignatureInformation`
     * specific properties.
     */
-  var signatureInformation: js.UndefOr[DocumentationFormat] = js.native
+  var signatureInformation: js.UndefOr[DocumentationFormat] = js.undefined
 }
 object SignatureHelpClientCapabilities {
   

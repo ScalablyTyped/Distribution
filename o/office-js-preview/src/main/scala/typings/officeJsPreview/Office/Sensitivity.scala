@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.AppointmentSensitivityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,7 +64,7 @@ trait Sensitivity extends StObject {
   def setAsync(sensitivity: String): Unit = js.native
   def setAsync(
     sensitivity: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setAsync(sensitivity: String, options: AsyncContextOptions): Unit = js.native
@@ -96,7 +95,7 @@ trait Sensitivity extends StObject {
   def setAsync(sensitivity: AppointmentSensitivityType): Unit = js.native
   def setAsync(
     sensitivity: AppointmentSensitivityType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setAsync(sensitivity: AppointmentSensitivityType, options: AsyncContextOptions): Unit = js.native

@@ -8,7 +8,6 @@ import typings.semanticUiReact.breadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbMod {

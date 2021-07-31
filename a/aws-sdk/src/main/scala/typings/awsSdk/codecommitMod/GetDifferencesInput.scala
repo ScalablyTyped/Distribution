@@ -2,46 +2,44 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDifferencesInput extends StObject {
   
   /**
     * A non-zero, non-negative integer used to limit the number of returned results.
     */
-  var MaxResults: js.UndefOr[Limit] = js.native
+  var MaxResults: js.UndefOr[Limit] = js.undefined
   
   /**
     * An enumeration token that, when provided in a request, returns the next batch of the results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codecommitMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codecommitMod.NextToken] = js.undefined
   
   /**
     * The branch, tag, HEAD, or other fully qualified reference used to identify a commit.
     */
-  var afterCommitSpecifier: CommitName = js.native
+  var afterCommitSpecifier: CommitName
   
   /**
     * The file path in which to check differences. Limits the results to this path. Can also be used to specify the changed name of a directory or folder, if it has changed. If not specified, differences are shown for all paths.
     */
-  var afterPath: js.UndefOr[Path] = js.native
+  var afterPath: js.UndefOr[Path] = js.undefined
   
   /**
     * The branch, tag, HEAD, or other fully qualified reference used to identify a commit (for example, the full commit ID). Optional. If not specified, all changes before the afterCommitSpecifier value are shown. If you do not use beforeCommitSpecifier in your request, consider limiting the results with maxResults.
     */
-  var beforeCommitSpecifier: js.UndefOr[CommitName] = js.native
+  var beforeCommitSpecifier: js.UndefOr[CommitName] = js.undefined
   
   /**
     * The file path in which to check for differences. Limits the results to this path. Can also be used to specify the previous name of a directory or folder. If beforePath and afterPath are not specified, differences are shown for all paths.
     */
-  var beforePath: js.UndefOr[Path] = js.native
+  var beforePath: js.UndefOr[Path] = js.undefined
   
   /**
     * The name of the repository where you want to get differences.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object GetDifferencesInput {
   

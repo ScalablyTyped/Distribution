@@ -2,16 +2,14 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvokeDeviceMethodResponse extends StObject {
   
   /**
     * A JSON encoded string containing the device method response.
     */
-  var DeviceMethodResponse: js.UndefOr[string] = js.native
+  var DeviceMethodResponse: js.UndefOr[string] = js.undefined
 }
 object InvokeDeviceMethodResponse {
   

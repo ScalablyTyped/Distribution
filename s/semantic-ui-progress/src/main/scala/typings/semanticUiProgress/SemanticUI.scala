@@ -122,7 +122,6 @@ import typings.semanticUiProgress.semanticUiProgressStrings.verbose
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -250,73 +249,79 @@ object SemanticUI {
       * Resets progress to zero
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: autoSuccess, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: autoSuccess, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: autoSuccess, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-    def apply(behavior: setting, name: label, value: js.UndefOr[scala.Nothing]): percent | ratio = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+    def apply(behavior: setting, name: label, value: Unit): percent | ratio = js.native
     def apply(behavior: setting, name: label, value: percent): JQuery = js.native
     def apply(behavior: setting, name: label, value: ratio): JQuery = js.native
-    def apply(behavior: setting, name: limitValues, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: limitValues, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: limitValues, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
     def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onActive, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(
       behavior: setting,
       name: onActive,
       value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit] = js.native
+    def apply(behavior: setting, name: onActive, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
     def apply(
       behavior: setting,
       name: onChange,
       value: js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onError, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction3[/* this */ JQuery, /* percent */ Double, /* value */ Double, /* total */ Double, Unit] = js.native
     def apply(
       behavior: setting,
       name: onError,
       value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit] = js.native
+    def apply(behavior: setting, name: onError, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
     def apply(
       behavior: setting,
       name: onSuccess,
       value: js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onWarning, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
+    def apply(behavior: setting, name: onSuccess, value: Unit): js.ThisFunction1[/* this */ JQuery, /* total */ Double, Unit] = js.native
     def apply(
       behavior: setting,
       name: onWarning,
       value: js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onWarning, value: Unit): js.ThisFunction2[/* this */ JQuery, /* value */ Double, /* total */ Double, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: precision, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: precision, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: precision, value: Unit): Double = js.native
+    def apply(behavior: setting, name: random, value: Unit): RandomSettings = js.native
     def apply(behavior: setting, name: random, value: RandomSettings): JQuery = js.native
-    def apply(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
+    def apply(behavior: setting, name: regExp, value: Unit): RegExpSettings = js.native
     def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: showActivity, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: showActivity, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: showActivity, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: text, value: js.UndefOr[scala.Nothing]): TextSettings = js.native
-    def apply(behavior: setting, name: total, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: text, value: Unit): TextSettings = js.native
+    def apply(behavior: setting, name: text, value: TextSettings): JQuery = js.native
     def apply(behavior: setting, name: total, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: total, value: Unit): `false` | Double = js.native
     def apply(behavior: setting, name: total, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: value, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
     def apply(behavior: setting, name: value, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: value, value: Unit): `false` | Double = js.native
     def apply(behavior: setting, name: value, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: ProgressSettings): JQuery = js.native
     def apply(settings: ProgressSettings): JQuery = js.native
     
@@ -326,28 +331,27 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'error'
           */
-        var error: String = js.native
+        var error: String
         
         /**
           * @default 'success'
           */
-        var success: String = js.native
+        var success: String
         
         /**
           * @default 'warning'
           */
-        var warning: String = js.native
+        var warning: String
       }
       object Impl {
         
@@ -374,24 +378,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactiveActive | PickImplerrorErrorString | PickImplsuccessSuccess | PickImplwarningWarning) with PartialPickImplkeyofImplError
+      type Param = (PickImplactiveActive | PickImplerrorErrorString | PickImplsuccessSuccess | PickImplwarningWarning) & PartialPickImplkeyofImplError
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'Progress value is non numeric'
           */
-        var nonNumeric: String = js.native
+        var nonNumeric: String
       }
       object Impl {
         
@@ -412,29 +415,28 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplmethod | PickImplnonNumeric) with PartialPickImplkeyofImplMethod
+      type Param = (PickImplmethod | PickImplnonNumeric) & PartialPickImplkeyofImplMethod
     }
     type ErrorSettings = typings.semanticUiProgress.SemanticUI.Progress.ErrorSettings.Param
     
     object MetadataSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'percent'
           */
-        var percent: String = js.native
+        var percent: String
         
         /**
           * @default 'total'
           */
-        var total: String = js.native
+        var total: String
         
         /**
           * @default 'value'
           */
-        var value: String = js.native
+        var value: String
       }
       object Impl {
         
@@ -458,24 +460,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplpercentPercent | PickImpltotalTotal | PickImplvalueValue) with PartialPickImplkeyofImplPercent
+      type Param = (PickImplpercentPercent | PickImpltotalTotal | PickImplvalueValue) & PartialPickImplkeyofImplPercent
     }
     type MetadataSettings = typings.semanticUiProgress.SemanticUI.Progress.MetadataSettings.Param
     
     object RandomSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 5
           */
-        var max: Double = js.native
+        var max: Double
         
         /**
           * @default 2
           */
-        var min: Double = js.native
+        var min: Double
       }
       object Impl {
         
@@ -496,31 +497,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplmin | PickImplmax) with PartialPickImplkeyofImplMax
+      type Param = (PickImplmin | PickImplmax) & PartialPickImplkeyofImplMax
     }
     type RandomSettings = typings.semanticUiProgress.SemanticUI.Progress.RandomSettings.Param
     
     /* Inlined semantic-ui-progress.SemanticUI.Progress.RegExpSettings.Param */
-    @js.native
     trait RegExpSettings extends StObject {
       
-      var variable: RegExp with js.UndefOr[RegExp] = js.native
+      var variable: RegExp & js.UndefOr[RegExp]
     }
     object RegExpSettings {
       
       @scala.inline
-      def apply(variable: RegExp with js.UndefOr[RegExp]): RegExpSettings = {
+      def apply(variable: RegExp & js.UndefOr[RegExp]): RegExpSettings = {
         val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
         __obj.asInstanceOf[RegExpSettings]
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default /\{\$*[A-z0-9]+\}/g
           */
-        var variable: RegExp = js.native
+        var variable: RegExp
       }
       object Impl {
         
@@ -539,15 +538,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl, 'variable'> & std.Partial<std.Pick<semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl, keyof semantic-ui-progress.SemanticUI.Progress.RegExpSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var variable: RegExp with js.UndefOr[RegExp] = js.native
+        var variable: RegExp & js.UndefOr[RegExp]
       }
       object Param {
         
         @scala.inline
-        def apply(variable: RegExp with js.UndefOr[RegExp]): typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param = {
+        def apply(variable: RegExp & js.UndefOr[RegExp]): typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param = {
           val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param]
         }
@@ -556,7 +554,7 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setVariable(value: RegExp with js.UndefOr[RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+          def setVariable(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
         }
       }
       
@@ -564,29 +562,28 @@ object SemanticUI {
       implicit class RegExpSettingsMutableBuilder[Self <: RegExpSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setVariable(value: RegExp with js.UndefOr[RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+        def setVariable(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       }
     }
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '> .bar
           */
-        var bar: String = js.native
+        var bar: String
         
         /**
           * @default '> .label'
           */
-        var label: String = js.native
+        var label: String
         
         /**
           * @default '.bar > .progress'
           */
-        var progress: String = js.native
+        var progress: String
       }
       object Impl {
         
@@ -610,44 +607,43 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplbar | PickImpllabelLabel | PickImplprogress) with PartialPickImplkeyofImplBar
+      type Param = (PickImplbar | PickImpllabelLabel | PickImplprogress) & PartialPickImplkeyofImplBar
     }
     type SelectorSettings = typings.semanticUiProgress.SemanticUI.Progress.SelectorSettings.Param
     
     object TextSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default false
           */
-        var active: `false` | String = js.native
+        var active: `false` | String
         
         /**
           * @default false
           */
-        var error: `false` | String = js.native
+        var error: `false` | String
         
         /**
           * @default '{percent}%'
           */
-        var percent: `false` | String = js.native
+        var percent: `false` | String
         
         /**
           * @default '{value} of {total}'
           */
-        var ratio: `false` | String = js.native
+        var ratio: `false` | String
         
         /**
           * @default false
           */
-        var success: `false` | String = js.native
+        var success: `false` | String
         
         /**
           * @default false
           */
-        var warning: `false` | String = js.native
+        var warning: `false` | String
       }
       object Impl {
         
@@ -687,14 +683,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplerrorError | PickImplsuccess | PickImplwarning | PickImplpercent | PickImplratio) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplerrorError | PickImplsuccess | PickImplwarning | PickImplpercent | PickImplratio) & PartialPickImplkeyofImplActive
     }
     type TextSettings = typings.semanticUiProgress.SemanticUI.Progress.TextSettings.Param
   }
   
   object ProgressSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       // region Progress Settings
@@ -703,28 +698,28 @@ object SemanticUI {
         *
         * @default true
         */
-      var autoSuccess: Boolean = js.native
+      var autoSuccess: Boolean
       
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Can be set to either to display progress as percent or ratio. Matches up to corresponding text template with the same name.
         *
         * @default 'percent'
         */
-      var label: percent | ratio = js.native
+      var label: percent | ratio
       
       /**
         * When set to true, values that calculate to above 100% or below 0% will be adjusted.
@@ -732,19 +727,19 @@ object SemanticUI {
         *
         * @default true
         */
-      var limitValues: Boolean = js.native
+      var limitValues: Boolean
       
       /**
         * DOM metadata used by module
         */
-      var metadata: MetadataSettings = js.native
+      var metadata: MetadataSettings
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -752,99 +747,99 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Callback on active state
         */
-      def onActive(value: Double, total: Double): Unit = js.native
+      def onActive(value: Double, total: Double): Unit
       
       // endregion
       // region Callbacks
       /**
         * Callback on percentage change
         */
-      def onChange(percent: Double, value: Double, total: Double): Unit = js.native
+      def onChange(percent: Double, value: Double, total: Double): Unit
       
       /**
         * Callback on error state
         */
-      def onError(value: Double, total: Double): Unit = js.native
+      def onError(value: Double, total: Double): Unit
       
       /**
         * Callback on success state
         */
-      def onSuccess(total: Double): Unit = js.native
+      def onSuccess(total: Double): Unit
       
       /**
         * Callback on warning state
         */
-      def onWarning(value: Double, total: Double): Unit = js.native
+      def onWarning(value: Double, total: Double): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       /**
         * Decimal point precision for calculated progress
         *
         * @default 1
         */
-      var precision: Double = js.native
+      var precision: Double
       
       /**
         * When incrementing without value, sets range for random increment value
         */
-      var random: RandomSettings = js.native
+      var random: RandomSettings
       
       /**
         * Regular expressions used by module
         */
-      var regExp: RegExpSettings = js.native
+      var regExp: RegExpSettings
       
       /**
         * Selectors used by module
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Whether progress should automatically show activity when incremented
         *
         * @default true
         */
-      var showActivity: Boolean = js.native
+      var showActivity: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Text content for each state, uses simple templating with {percent}, {value}, {total}
         */
-      var text: TextSettings = js.native
+      var text: TextSettings
       
       /**
         * Setting a total value will make each call to increment get closer to this total (i.e. 1/20, 2/20 etc)
         *
         * @default false
         */
-      var total: `false` | Double = js.native
+      var total: `false` | Double
       
       /**
         * Sets current value, when total is specified, this is used to calculate a ratio of the total, with percent this should be the overall percent
         *
         * @default false
         */
-      var value: `false` | Double = js.native
+      var value: `false` | Double
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -960,7 +955,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplautoSuccess | PickImplshowActivity | PickImpllimitValues | PickImpllabel | PickImplrandom | PickImplprecision | PickImpltotal | PickImplvalue | PickImplonChange | PickImplonSuccess | PickImplonActive | PickImplonError | PickImplonWarning | PickImpltext | PickImplregExp | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplautoSuccess | PickImplshowActivity | PickImpllimitValues | PickImpllabel | PickImplrandom | PickImplprecision | PickImpltotal | PickImplvalue | PickImplonChange | PickImplonSuccess | PickImplonActive | PickImplonError | PickImplonWarning | PickImpltext | PickImplregExp | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/progress.html#/settings}

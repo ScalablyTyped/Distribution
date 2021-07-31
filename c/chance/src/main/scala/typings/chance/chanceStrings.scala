@@ -5,13 +5,14 @@ import typings.chance.Chance.LastNameNationalities
 import typings.chance.Chance._FalsyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chanceStrings {
   
   @js.native
-  sealed trait Asterisk extends LastNameNationalities
+  sealed trait Asterisk
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
@@ -76,7 +77,9 @@ object chanceStrings {
   def Wednesday: Wednesday = "Wednesday".asInstanceOf[Wednesday]
   
   @js.native
-  sealed trait _empty extends _FalsyType
+  sealed trait _empty
+    extends StObject
+       with _FalsyType
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -101,19 +104,24 @@ object chanceStrings {
   def currency_types: currency_types = "currency_types".asInstanceOf[currency_types]
   
   @js.native
-  sealed trait de extends LastNameNationalities
+  sealed trait de
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def de: de = "de".asInstanceOf[de]
   
   @js.native
   sealed trait en
-    extends FirstNameNationalities
+    extends StObject
+       with FirstNameNationalities
        with LastNameNationalities
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait es extends LastNameNationalities
+  sealed trait es
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   
@@ -128,19 +136,24 @@ object chanceStrings {
   def firstNames: firstNames = "firstNames".asInstanceOf[firstNames]
   
   @js.native
-  sealed trait fr extends LastNameNationalities
+  sealed trait fr
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
   sealed trait it
-    extends FirstNameNationalities
+    extends StObject
+       with FirstNameNationalities
        with LastNameNationalities
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   
   @js.native
-  sealed trait jp extends LastNameNationalities
+  sealed trait jp
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def jp: jp = "jp".asInstanceOf[jp]
   
@@ -165,7 +178,9 @@ object chanceStrings {
   def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait nl extends LastNameNationalities
+  sealed trait nl
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def nl: nl = "nl".asInstanceOf[nl]
   
@@ -185,7 +200,9 @@ object chanceStrings {
   def territories: territories = "territories".asInstanceOf[territories]
   
   @js.native
-  sealed trait uk extends LastNameNationalities
+  sealed trait uk
+    extends StObject
+       with LastNameNationalities
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
   

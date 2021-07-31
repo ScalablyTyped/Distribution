@@ -2,36 +2,34 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSVOutput extends StObject {
   
   /**
     * A value used to separate individual fields from each other within a record.
     */
-  var FieldDelimiter: js.UndefOr[String] = js.native
+  var FieldDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * A value used as an escape character where the field delimiter is part of the value.
     */
-  var QuoteCharacter: js.UndefOr[String] = js.native
+  var QuoteCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * A single character used for escaping the quotation-mark character inside an already escaped value.
     */
-  var QuoteEscapeCharacter: js.UndefOr[String] = js.native
+  var QuoteEscapeCharacter: js.UndefOr[String] = js.undefined
   
   /**
     * A value that indicates whether all output fields should be contained within quotation marks.
     */
-  var QuoteFields: js.UndefOr[typings.awsSdk.glacierMod.QuoteFields] = js.native
+  var QuoteFields: js.UndefOr[typings.awsSdk.glacierMod.QuoteFields] = js.undefined
   
   /**
     * A value used to separate individual records from each other.
     */
-  var RecordDelimiter: js.UndefOr[String] = js.native
+  var RecordDelimiter: js.UndefOr[String] = js.undefined
 }
 object CSVOutput {
   

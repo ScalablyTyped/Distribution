@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartOutboundVoiceContactResponse extends StObject {
   
   /**
     * The identifier of this contact within the Amazon Connect instance.
     */
-  var ContactId: js.UndefOr[typings.awsSdk.connectMod.ContactId] = js.native
+  var ContactId: js.UndefOr[typings.awsSdk.connectMod.ContactId] = js.undefined
 }
 object StartOutboundVoiceContactResponse {
   

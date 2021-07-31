@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointsResponse extends StObject {
   
   /**
     * List of endpoints
     */
-  var Endpoints: js.UndefOr[listOfEndpoint] = js.native
+  var Endpoints: js.UndefOr[listOfEndpoint] = js.undefined
   
   /**
     * Use this string to request the next batch of endpoints.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object DescribeEndpointsResponse {
   

@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a suggestionsrequested event that is associated with a searchPane object. */
-@js.native
 trait SearchPaneSuggestionsRequestedEventArgs extends StObject {
   
   /** The Internet Engineering Task Force (IETF) language tag (BCP 47 standard) that identifies the language currently associated with the user's text input device. */
-  var language: String = js.native
+  var language: String
   
   /** An object that provides linguistic information about query text that the user is entering through an Input Method Editor (IME). */
-  var linguisticDetails: SearchPaneQueryLinguisticDetails = js.native
+  var linguisticDetails: SearchPaneQueryLinguisticDetails
   
   /** The text that the app should provide suggestions for and that was in the search box when the suggestionsrequested event fired. */
-  var queryText: String = js.native
+  var queryText: String
   
   /** An object that stores suggestions and information about the request. */
-  var request: SearchPaneSuggestionsRequest = js.native
+  var request: SearchPaneSuggestionsRequest
 }
 object SearchPaneSuggestionsRequestedEventArgs {
   

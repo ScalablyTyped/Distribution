@@ -3,20 +3,19 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.ErrMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveImageToPhotosAlbumOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 图片的路径，可以是相对路径，临时文件路径，存储文件路径，网络图片路径
     */
-  var filePath: String = js.native
+  var filePath: String
   
   @JSName("success")
-  def success_MSaveImageToPhotosAlbumOptions(res: ErrMsg): Unit = js.native
+  def success_MSaveImageToPhotosAlbumOptions(res: ErrMsg): Unit
 }
 object SaveImageToPhotosAlbumOptions {
   

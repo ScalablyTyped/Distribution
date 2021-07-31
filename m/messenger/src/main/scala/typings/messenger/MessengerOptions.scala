@@ -2,26 +2,24 @@ package typings.messenger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessengerOptions extends StObject {
   
   /**
     * Extra classes to be appended to the container.
     */
-  var extraClasses: js.UndefOr[String] = js.native
+  var extraClasses: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of messages to show at once.
     */
-  var maxMessages: js.UndefOr[Double] = js.native
+  var maxMessages: js.UndefOr[Double] = js.undefined
   
   /**
     * Default options for created messages.
     */
-  var messageDefaults: js.UndefOr[MessageOptions] = js.native
+  var messageDefaults: js.UndefOr[MessageOptions] = js.undefined
   
   /**
     * Which locations should be tried when inserting the message container into the page.
@@ -30,12 +28,12 @@ trait MessengerOptions extends StObject {
     * not need to be changed unless you are inserting the messages into the flow of the
     * document, rather than using messenger-fixed.
     */
-  var parentLocations: js.UndefOr[js.Array[String]] = js.native
+  var parentLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * What theme are you using? Some themes have associated javascript, specifing this allows that js to run.
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object MessengerOptions {
   

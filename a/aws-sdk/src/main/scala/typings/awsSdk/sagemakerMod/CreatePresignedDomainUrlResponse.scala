@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresignedDomainUrlResponse extends StObject {
   
   /**
     * The presigned URL.
     */
-  var AuthorizedUrl: js.UndefOr[PresignedDomainUrl] = js.native
+  var AuthorizedUrl: js.UndefOr[PresignedDomainUrl] = js.undefined
 }
 object CreatePresignedDomainUrlResponse {
   

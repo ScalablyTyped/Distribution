@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTFLASH_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertFlashCommandArguments extends ASPxClientHtmlEditorChangeMediaElementCommandArguments {
+trait ASPxClientHtmlEditorInsertFlashCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorChangeMediaElementCommandArguments {
   
   /**
     * Determines if the target flash element can be displayed in the fullscreen mode.
     */
-  var allowFullscreen: Boolean = js.native
+  var allowFullscreen: Boolean
   
   /**
     * Determines if the target flash element will start playing automatically.
     */
-  var autoPlay: Boolean = js.native
+  var autoPlay: Boolean
   
   /**
     * Determines if the flash related items are displayed in the context menu of the target flash element.
     */
-  var enableFlashMenu: Boolean = js.native
+  var enableFlashMenu: Boolean
   
   /**
     * Defines if the target flash element repeats indefinitely, or stops when it reaches the last frame.
     */
-  var loop: Boolean = js.native
+  var loop: Boolean
   
   /**
     * Defines the rendering quality level used for the target flash element.
     */
-  var quality: String = js.native
+  var quality: String
 }
 object ASPxClientHtmlEditorInsertFlashCommandArguments {
   

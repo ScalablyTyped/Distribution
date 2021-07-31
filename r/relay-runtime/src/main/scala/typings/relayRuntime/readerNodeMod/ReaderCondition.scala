@@ -2,20 +2,20 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderCondition extends ReaderSelection {
+trait ReaderCondition
+  extends StObject
+     with ReaderSelection {
   
-  val condition: String = js.native
+  val condition: String
   
-  val kind: String = js.native
+  val kind: String
   
   // 'Condition';
-  val passingValue: Boolean = js.native
+  val passingValue: Boolean
   
-  val selections: js.Array[ReaderSelection] = js.native
+  val selections: js.Array[ReaderSelection]
 }
 object ReaderCondition {
   

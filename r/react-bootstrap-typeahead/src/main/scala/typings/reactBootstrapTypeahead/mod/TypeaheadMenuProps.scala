@@ -6,29 +6,27 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-bootstrap-typeahead.react-bootstrap-typeahead.MenuProps */
 /* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.AllTypeaheadOwnAndInjectedProps<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadMenuPropsPick> */
-@js.native
 trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var emptyLabel: js.UndefOr[String] = js.native
+  var emptyLabel: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var innerRef: js.UndefOr[LegacyRef[HTMLUListElement]] = js.native
+  var innerRef: js.UndefOr[LegacyRef[HTMLUListElement]] = js.undefined
   
-  var labelKey: js.UndefOr[TypeaheadLabelKey[T]] = js.native
+  var labelKey: js.UndefOr[TypeaheadLabelKey[T]] = js.undefined
   
-  var maxHeight: js.UndefOr[String] = js.native
+  var maxHeight: js.UndefOr[String] = js.undefined
   
-  var newSelectionPrefix: js.UndefOr[String] = js.native
+  var newSelectionPrefix: js.UndefOr[String] = js.undefined
   
-  var options: js.Array[T] = js.native
+  var options: js.Array[T]
   
   var renderMenuItemChildren: js.UndefOr[
     js.Function3[
@@ -37,11 +35,11 @@ trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends StObject {
       /* index */ Double, 
       ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TypeaheadMenuProps {
   
@@ -52,7 +50,7 @@ object TypeaheadMenuProps {
   }
   
   @scala.inline
-  implicit class TypeaheadMenuPropsMutableBuilder[Self <: TypeaheadMenuProps[_], T /* <: TypeaheadModel */] (val x: Self with TypeaheadMenuProps[T]) extends AnyVal {
+  implicit class TypeaheadMenuPropsMutableBuilder[Self <: TypeaheadMenuProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadMenuProps[T]) extends AnyVal {
     
     @scala.inline
     def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

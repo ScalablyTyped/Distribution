@@ -2,20 +2,18 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserContextEventObj extends StObject {
   
   /** Emitted when the url of a target inside the browser context changes. */
-  var targetchanged: Target = js.native
+  var targetchanged: Target
   
   /** Emitted when a target is created, for example when a new page is opened by `window.open` or `browserContext.newPage`. */
-  var targetcreated: Target = js.native
+  var targetcreated: Target
   
   /** Emitted when a target is destroyed, for example when a page is closed. */
-  var targetdestroyed: Target = js.native
+  var targetdestroyed: Target
 }
 object BrowserContextEventObj {
   

@@ -2,71 +2,69 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationDetail extends StObject {
   
   /**
     * ARN of the application.
     */
-  var ApplicationARN: ResourceARN = js.native
+  var ApplicationARN: ResourceARN
   
   /**
     * Returns the application code that you provided to perform data analysis on any of the in-application streams in your application.
     */
-  var ApplicationCode: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ApplicationCode] = js.native
+  var ApplicationCode: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ApplicationCode] = js.undefined
   
   /**
     * Description of the application.
     */
-  var ApplicationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ApplicationDescription] = js.native
+  var ApplicationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ApplicationDescription] = js.undefined
   
   /**
     * Name of the application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
   
   /**
     * Status of the application.
     */
-  var ApplicationStatus: typings.awsSdk.kinesisanalyticsMod.ApplicationStatus = js.native
+  var ApplicationStatus: typings.awsSdk.kinesisanalyticsMod.ApplicationStatus
   
   /**
     * Provides the current application version.
     */
-  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsMod.ApplicationVersionId = js.native
+  var ApplicationVersionId: typings.awsSdk.kinesisanalyticsMod.ApplicationVersionId
   
   /**
     * Describes the CloudWatch log streams that are configured to receive application messages. For more information about using CloudWatch log streams with Amazon Kinesis Analytics applications, see Working with Amazon CloudWatch Logs. 
     */
-  var CloudWatchLoggingOptionDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.CloudWatchLoggingOptionDescriptions] = js.native
+  var CloudWatchLoggingOptionDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.CloudWatchLoggingOptionDescriptions] = js.undefined
   
   /**
     * Time stamp when the application version was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Describes the application input configuration. For more information, see Configuring Application Input. 
     */
-  var InputDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputDescriptions] = js.native
+  var InputDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputDescriptions] = js.undefined
   
   /**
     * Time stamp when the application was last updated.
     */
-  var LastUpdateTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Describes the application output configuration. For more information, see Configuring Application Output. 
     */
-  var OutputDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.OutputDescriptions] = js.native
+  var OutputDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.OutputDescriptions] = js.undefined
   
   /**
     * Describes reference data sources configured for the application. For more information, see Configuring Application Input. 
     */
-  var ReferenceDataSourceDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ReferenceDataSourceDescriptions] = js.native
+  var ReferenceDataSourceDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ReferenceDataSourceDescriptions] = js.undefined
 }
 object ApplicationDetail {
   

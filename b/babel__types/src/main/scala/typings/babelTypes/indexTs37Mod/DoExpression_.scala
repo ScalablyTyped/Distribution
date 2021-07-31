@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.DoExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait DoExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait DoExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
   @JSName("type")
-  var type_DoExpression_ : DoExpression = js.native
+  var type_DoExpression_ : DoExpression
 }
 object DoExpression_ {
   
   @scala.inline
-  def apply(body: BlockStatement_, `type`: DoExpression): DoExpression_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: BlockStatement_): DoExpression_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DoExpression")
     __obj.asInstanceOf[DoExpression_]
   }
   

@@ -7,7 +7,6 @@ import typings.awsLambda.eventbridgeMod.EventBridgeEvent
 import typings.awsLambda.eventbridgeMod.EventBridgeHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codebuildCloudwatchStateMod {
@@ -30,11 +29,12 @@ object codebuildCloudwatchStateMod {
     def S3: typings.awsLambda.awsLambdaStrings.S3 = "S3".asInstanceOf[typings.awsLambda.awsLambdaStrings.S3]
   }
   
-  @js.native
-  trait CodeBuildCloudWatchStateEvent extends EventBridgeEvent[`CodeBuild Build State Change`, CodeBuildStateEventDetail] {
+  trait CodeBuildCloudWatchStateEvent
+    extends StObject
+       with EventBridgeEvent[`CodeBuild Build State Change`, CodeBuildStateEventDetail] {
     
     @JSName("source")
-    var source_CodeBuildCloudWatchStateEvent: awsDotcodebuild = js.native
+    var source_CodeBuildCloudWatchStateEvent: awsDotcodebuild
   }
   object CodeBuildCloudWatchStateEvent {
     
@@ -42,16 +42,14 @@ object codebuildCloudwatchStateMod {
     def apply(
       account: String,
       detail: CodeBuildStateEventDetail,
-      `detail-type`: `CodeBuild Build State Change`,
       id: String,
       region: String,
       resources: js.Array[String],
-      source: awsDotcodebuild,
       time: String,
       version: String
     ): CodeBuildCloudWatchStateEvent = {
-      val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.updateDynamic("detail-type")(`detail-type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], source = "aws.codebuild", time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.updateDynamic("detail-type")("CodeBuild Build State Change")
       __obj.asInstanceOf[CodeBuildCloudWatchStateEvent]
     }
     
@@ -255,22 +253,21 @@ object codebuildCloudwatchStateMod {
     def S3: typings.awsLambda.awsLambdaStrings.S3 = "S3".asInstanceOf[typings.awsLambda.awsLambdaStrings.S3]
   }
   
-  @js.native
   trait CodeBuildStateEventDetail extends StObject {
     
-    var `additional-information`: Artifact = js.native
+    var `additional-information`: Artifact
     
-    var `build-id`: String = js.native
+    var `build-id`: String
     
-    var `build-status`: CodeBuildStateType = js.native
+    var `build-status`: CodeBuildStateType
     
-    var `current-phase`: CodeBuildPhaseType = js.native
+    var `current-phase`: CodeBuildPhaseType
     
-    var `current-phase-context`: String = js.native
+    var `current-phase-context`: String
     
-    var `project-name`: String = js.native
+    var `project-name`: String
     
-    var version: String = js.native
+    var version: String
   }
   object CodeBuildStateEventDetail {
     

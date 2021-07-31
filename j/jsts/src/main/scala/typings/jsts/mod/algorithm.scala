@@ -4,7 +4,6 @@ import typings.jsts.jsts.geom.Coordinate
 import typings.jsts.jsts.geom.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algorithm {
@@ -12,12 +11,14 @@ object algorithm {
   @JSImport("jsts", "algorithm.BoundaryNodeRule")
   @js.native
   class BoundaryNodeRule ()
-    extends typings.jsts.jsts.algorithm.BoundaryNodeRule
+    extends StObject
+       with typings.jsts.jsts.algorithm.BoundaryNodeRule
   
   @JSImport("jsts", "algorithm.Orientation")
   @js.native
   class Orientation ()
-    extends typings.jsts.jsts.algorithm.Orientation
+    extends StObject
+       with typings.jsts.jsts.algorithm.Orientation
   /* static members */
   object Orientation {
     
@@ -61,12 +62,10 @@ object algorithm {
     @scala.inline
     def STRAIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRAIGHT")(x.asInstanceOf[js.Any])
     
-    @JSImport("jsts", "algorithm.Orientation.index")
-    @js.native
-    def index(p1: Point, p2: Point, q: Point): Double = js.native
+    @scala.inline
+    def index(p1: Point, p2: Point, q: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("jsts", "algorithm.Orientation.isCCW")
-    @js.native
-    def isCCW(ring: js.Array[Coordinate]): Boolean = js.native
+    @scala.inline
+    def isCCW(ring: js.Array[Coordinate]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCCW")(ring.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

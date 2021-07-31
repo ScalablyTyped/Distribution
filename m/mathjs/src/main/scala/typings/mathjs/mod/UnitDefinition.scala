@@ -2,19 +2,17 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitDefinition extends StObject {
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var definition: js.UndefOr[String | Unit] = js.native
+  var definition: js.UndefOr[String | Unit] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var prefixes: js.UndefOr[String] = js.native
+  var prefixes: js.UndefOr[String] = js.undefined
 }
 object UnitDefinition {
   

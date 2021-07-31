@@ -4,17 +4,17 @@ import typings.microsoftGraph.mod.IdentitySet
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParticipantEndpoint extends Endpoint {
+trait ParticipantEndpoint
+  extends StObject
+     with Endpoint {
   
   // The feedback provided by the user of this endpoint about the quality of the session.
-  var feedback: js.UndefOr[NullableOption[UserFeedback]] = js.native
+  var feedback: js.UndefOr[NullableOption[UserFeedback]] = js.undefined
   
   // Identity associated with the endpoint.
-  var identity: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var identity: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
 }
 object ParticipantEndpoint {
   

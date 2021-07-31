@@ -2,19 +2,19 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Number extends Value {
+trait Number
+  extends StObject
+     with Value {
   
-  def getUnit(): java.lang.String = js.native
+  def getUnit(): java.lang.String
   
-  def getValue(): Double = js.native
+  def getValue(): Double
   
-  def setUnit(u: java.lang.String): Unit = js.native
+  def setUnit(u: java.lang.String): Unit
   
-  def setValue(n: Double): Unit = js.native
+  def setValue(n: Double): Unit
 }
 object Number {
   

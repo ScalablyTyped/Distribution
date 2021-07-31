@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsInformationProtectionDesktopApp extends WindowsInformationProtectionApp {
+trait WindowsInformationProtectionDesktopApp
+  extends StObject
+     with WindowsInformationProtectionApp {
   
   // The binary name.
-  var binaryName: js.UndefOr[String] = js.native
+  var binaryName: js.UndefOr[String] = js.undefined
   
   // The high binary version.
-  var binaryVersionHigh: js.UndefOr[NullableOption[String]] = js.native
+  var binaryVersionHigh: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The lower binary version.
-  var binaryVersionLow: js.UndefOr[NullableOption[String]] = js.native
+  var binaryVersionLow: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsInformationProtectionDesktopApp {
   

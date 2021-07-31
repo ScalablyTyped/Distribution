@@ -9,11 +9,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapSpinEdit extends BootstrapClientEdit {
+trait BootstrapSpinEdit
+  extends StObject
+     with BootstrapClientEdit {
   
   def getButtonVisible(number: Double): Boolean = js.native
   

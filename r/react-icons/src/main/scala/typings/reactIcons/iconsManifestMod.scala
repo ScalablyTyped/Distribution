@@ -2,7 +2,6 @@ package typings.reactIcons
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconsManifestMod {
@@ -11,18 +10,17 @@ object iconsManifestMod {
   @js.native
   val icons: IconManifest = js.native
   
-  @js.native
   trait IconManifest extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var license: String = js.native
+    var license: String
     
-    var licenseUrl: String = js.native
+    var licenseUrl: String
     
-    var name: String = js.native
+    var name: String
     
-    var projectUrl: String = js.native
+    var projectUrl: String
   }
   object IconManifest {
     

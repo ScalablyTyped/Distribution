@@ -11,7 +11,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions")
@@ -19,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FieldOptions () extends Message {
   
   def addUninterpretedOption(): UninterpretedOption = js.native
-  def addUninterpretedOption(value: js.UndefOr[scala.Nothing], index: Double): UninterpretedOption = js.native
+  def addUninterpretedOption(value: Unit, index: Double): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption, index: Double): UninterpretedOption = js.native
   
@@ -91,19 +90,25 @@ object FieldOptions {
   object CType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CType with Double] = js.native
+    def apply(value: Double): js.UndefOr[CType & Double] = js.native
     
     @js.native
-    sealed trait CORD extends CType
-    /* 1 */ val CORD: typings.googleProtobuf.descriptorPbMod.FieldOptions.CType.CORD with Double = js.native
+    sealed trait CORD
+      extends StObject
+         with CType
+    /* 1 */ val CORD: typings.googleProtobuf.descriptorPbMod.FieldOptions.CType.CORD & Double = js.native
     
     @js.native
-    sealed trait STRING extends CType
-    /* 0 */ val STRING: typings.googleProtobuf.descriptorPbMod.FieldOptions.CType.STRING with Double = js.native
+    sealed trait STRING
+      extends StObject
+         with CType
+    /* 0 */ val STRING: typings.googleProtobuf.descriptorPbMod.FieldOptions.CType.STRING & Double = js.native
     
     @js.native
-    sealed trait STRING_PIECE extends CType
-    /* 2 */ val STRING_PIECE: typings.googleProtobuf.descriptorPbMod.FieldOptions.CType.STRING_PIECE with Double = js.native
+    sealed trait STRING_PIECE
+      extends StObject
+         with CType
+    /* 2 */ val STRING_PIECE: typings.googleProtobuf.descriptorPbMod.FieldOptions.CType.STRING_PIECE & Double = js.native
   }
   
   @js.native
@@ -113,28 +118,32 @@ object FieldOptions {
   object JSType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[JSType with Double] = js.native
+    def apply(value: Double): js.UndefOr[JSType & Double] = js.native
     
     @js.native
-    sealed trait JS_NORMAL extends JSType
-    /* 0 */ val JS_NORMAL: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_NORMAL with Double = js.native
+    sealed trait JS_NORMAL
+      extends StObject
+         with JSType
+    /* 0 */ val JS_NORMAL: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_NORMAL & Double = js.native
     
     @js.native
-    sealed trait JS_NUMBER extends JSType
-    /* 2 */ val JS_NUMBER: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_NUMBER with Double = js.native
+    sealed trait JS_NUMBER
+      extends StObject
+         with JSType
+    /* 2 */ val JS_NUMBER: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_NUMBER & Double = js.native
     
     @js.native
-    sealed trait JS_STRING extends JSType
-    /* 1 */ val JS_STRING: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_STRING with Double = js.native
+    sealed trait JS_STRING
+      extends StObject
+         with JSType
+    /* 1 */ val JS_STRING: typings.googleProtobuf.descriptorPbMod.FieldOptions.JSType.JS_STRING & Double = js.native
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): FieldOptions = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldOptions]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: FieldOptions, reader: BinaryReader): FieldOptions = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: FieldOptions, reader: BinaryReader): FieldOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldOptions]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.extensions")
   @js.native
@@ -149,30 +158,27 @@ object FieldOptions {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: FieldOptions, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: FieldOptions, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: FieldOptions): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: FieldOptions): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var ctype: js.UndefOr[CType] = js.native
+    var ctype: js.UndefOr[CType] = js.undefined
     
-    var deprecated: js.UndefOr[Boolean] = js.native
+    var deprecated: js.UndefOr[Boolean] = js.undefined
     
-    var jstype: js.UndefOr[JSType] = js.native
+    var jstype: js.UndefOr[JSType] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var packed: js.UndefOr[Boolean] = js.native
+    var packed: js.UndefOr[Boolean] = js.undefined
     
-    var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject] = js.native
+    var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
     
-    var weak: js.UndefOr[Boolean] = js.native
+    var weak: js.UndefOr[Boolean] = js.undefined
   }
   object AsObject {
     

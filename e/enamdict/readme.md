@@ -10,9 +10,9 @@ Efficiently query ENAMDICT using Node.js.
 | ------------------ | :-------------: |
 | Full name          | enamdict |
 | Keywords           | ja, jp, japanese, romaji, language |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 480 |
+| # downloads        | 746 |
 | # stars            | 1 |
 
 ## Links

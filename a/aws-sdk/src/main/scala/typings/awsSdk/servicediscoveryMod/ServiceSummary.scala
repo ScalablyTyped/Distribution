@@ -2,47 +2,45 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that AWS Cloud Map assigns to the service when you create it.
     */
-  var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.undefined
   
   /**
     * The date and time that the service was created.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.native
+  var CreateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description that you specify when you create the service.
     */
-  var Description: js.UndefOr[ResourceDescription] = js.native
+  var Description: js.UndefOr[ResourceDescription] = js.undefined
   
-  var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.native
+  var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.undefined
   
-  var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
+  var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.undefined
   
-  var HealthCheckCustomConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckCustomConfig] = js.native
+  var HealthCheckCustomConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckCustomConfig] = js.undefined
   
   /**
     * The ID that AWS Cloud Map assigned to the service when you created it.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The number of instances that are currently associated with the service. Instances that were previously associated with the service but that have been deleted are not included in the count. The count might not reflect pending registrations and deregistrations.
     */
-  var InstanceCount: js.UndefOr[ResourceCount] = js.native
+  var InstanceCount: js.UndefOr[ResourceCount] = js.undefined
   
   /**
     * The name of the service.
     */
-  var Name: js.UndefOr[ServiceName] = js.native
+  var Name: js.UndefOr[ServiceName] = js.undefined
 }
 object ServiceSummary {
   

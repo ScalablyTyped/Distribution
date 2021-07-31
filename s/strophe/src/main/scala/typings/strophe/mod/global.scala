@@ -6,7 +6,6 @@ import typings.std.Text
 import typings.strophe.mod.Strophe.Builder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -157,17 +156,17 @@ object global {
     object LogLevel extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.strophe.mod.Strophe.LogLevel with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.strophe.mod.Strophe.LogLevel & Double] = js.native
       
-      /* 0 */ val DEBUG: typings.strophe.mod.Strophe.LogLevel.DEBUG with Double = js.native
+      /* 0 */ val DEBUG: typings.strophe.mod.Strophe.LogLevel.DEBUG & Double = js.native
       
-      /* 3 */ val ERROR: typings.strophe.mod.Strophe.LogLevel.ERROR with Double = js.native
+      /* 3 */ val ERROR: typings.strophe.mod.Strophe.LogLevel.ERROR & Double = js.native
       
-      /* 4 */ val FATAL: typings.strophe.mod.Strophe.LogLevel.FATAL with Double = js.native
+      /* 4 */ val FATAL: typings.strophe.mod.Strophe.LogLevel.FATAL & Double = js.native
       
-      /* 1 */ val INFO: typings.strophe.mod.Strophe.LogLevel.INFO with Double = js.native
+      /* 1 */ val INFO: typings.strophe.mod.Strophe.LogLevel.INFO & Double = js.native
       
-      /* 2 */ val WARN: typings.strophe.mod.Strophe.LogLevel.WARN with Double = js.native
+      /* 2 */ val WARN: typings.strophe.mod.Strophe.LogLevel.WARN & Double = js.native
     }
     type LogLevel = typings.strophe.mod.Strophe.LogLevel
     
@@ -356,29 +355,29 @@ object global {
     object Status extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.strophe.mod.Strophe.Status with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.strophe.mod.Strophe.Status & Double] = js.native
       
-      /* 8 */ val ATTACHED: typings.strophe.mod.Strophe.Status.ATTACHED with Double = js.native
+      /* 8 */ val ATTACHED: typings.strophe.mod.Strophe.Status.ATTACHED & Double = js.native
       
-      /* 3 */ val AUTHENTICATING: typings.strophe.mod.Strophe.Status.AUTHENTICATING with Double = js.native
+      /* 3 */ val AUTHENTICATING: typings.strophe.mod.Strophe.Status.AUTHENTICATING & Double = js.native
       
-      /* 4 */ val AUTHFAIL: typings.strophe.mod.Strophe.Status.AUTHFAIL with Double = js.native
+      /* 4 */ val AUTHFAIL: typings.strophe.mod.Strophe.Status.AUTHFAIL & Double = js.native
       
-      /* 5 */ val CONNECTED: typings.strophe.mod.Strophe.Status.CONNECTED with Double = js.native
+      /* 5 */ val CONNECTED: typings.strophe.mod.Strophe.Status.CONNECTED & Double = js.native
       
-      /* 1 */ val CONNECTING: typings.strophe.mod.Strophe.Status.CONNECTING with Double = js.native
+      /* 1 */ val CONNECTING: typings.strophe.mod.Strophe.Status.CONNECTING & Double = js.native
       
-      /* 2 */ val CONNFAIL: typings.strophe.mod.Strophe.Status.CONNFAIL with Double = js.native
+      /* 2 */ val CONNFAIL: typings.strophe.mod.Strophe.Status.CONNFAIL & Double = js.native
       
-      /* 10 */ val CONNTIMEOUT: typings.strophe.mod.Strophe.Status.CONNTIMEOUT with Double = js.native
+      /* 10 */ val CONNTIMEOUT: typings.strophe.mod.Strophe.Status.CONNTIMEOUT & Double = js.native
       
-      /* 6 */ val DISCONNECTED: typings.strophe.mod.Strophe.Status.DISCONNECTED with Double = js.native
+      /* 6 */ val DISCONNECTED: typings.strophe.mod.Strophe.Status.DISCONNECTED & Double = js.native
       
-      /* 7 */ val DISCONNECTING: typings.strophe.mod.Strophe.Status.DISCONNECTING with Double = js.native
+      /* 7 */ val DISCONNECTING: typings.strophe.mod.Strophe.Status.DISCONNECTING & Double = js.native
       
-      /* 0 */ val ERROR: typings.strophe.mod.Strophe.Status.ERROR with Double = js.native
+      /* 0 */ val ERROR: typings.strophe.mod.Strophe.Status.ERROR & Double = js.native
       
-      /* 9 */ val REDIRECT: typings.strophe.mod.Strophe.Status.REDIRECT with Double = js.native
+      /* 9 */ val REDIRECT: typings.strophe.mod.Strophe.Status.REDIRECT & Double = js.native
     }
     type Status = typings.strophe.mod.Strophe.Status
     
@@ -399,9 +398,8 @@ object global {
       *    (String) name - The name of the extension.
       *    (Object) ptype - The plugin's prototype.
       */
-    @JSGlobal("Strophe.addConnectionPlugin")
-    @js.native
-    def addConnectionPlugin(name: String, ptype: js.Any): Unit = js.native
+    @scala.inline
+    def addConnectionPlugin(name: String, ptype: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addConnectionPlugin")(name.asInstanceOf[js.Any], ptype.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: addNamespace
       *  This function is used to extend the current namespaces in
@@ -415,9 +413,8 @@ object global {
       *      referenced under Strophe.NS
       *    (String) value - The actual namespace.
       */
-    @JSGlobal("Strophe.addNamespace")
-    @js.native
-    def addNamespace(name: String, value: String): Unit = js.native
+    @scala.inline
+    def addNamespace(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamespace")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: copyElement
       *  Copy an XML DOM element.
@@ -431,9 +428,8 @@ object global {
       *  Returns:
       *    A new, copied DOM element tree.
       */
-    @JSGlobal("Strophe.copyElement")
-    @js.native
-    def copyElement(elem: Element): Element = js.native
+    @scala.inline
+    def copyElement(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("copyElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /** Function: createHtml
       *  Copy an HTML DOM element into an XML DOM.
@@ -447,9 +443,8 @@ object global {
       *  Returns:
       *    A new, copied DOM element tree.
       */
-    @JSGlobal("Strophe.createHtml")
-    @js.native
-    def createHtml(elem: Element): Element = js.native
+    @scala.inline
+    def createHtml(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /** Functions: debug, info, warn, error
       *  Log a message at the appropriate Strophe.LogLevel
@@ -457,13 +452,11 @@ object global {
       *  Parameters:
       *    (String) msg - The log message.
       */
-    @JSGlobal("Strophe.debug")
-    @js.native
-    def debug(msg: String): Unit = js.native
+    @scala.inline
+    def debug(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Strophe.error")
-    @js.native
-    def error(msg: String): Unit = js.native
+    @scala.inline
+    def error(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: escapeNode
       *  Escape the node part (also called local part) of a JID.
@@ -474,13 +467,11 @@ object global {
       *  Returns:
       *    An escaped node (or local part).
       */
-    @JSGlobal("Strophe.escapeNode")
-    @js.native
-    def escapeNode(node: String): String = js.native
+    @scala.inline
+    def escapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("Strophe.fatal")
-    @js.native
-    def fatal(msg: String): Unit = js.native
+    @scala.inline
+    def fatal(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: forEachChild
       *  Map a function over some or all child elements of a given element.
@@ -496,9 +487,8 @@ object global {
       *    (Function) func - The function to apply to each child.  This
       *      function should take a single argument, a DOM element.
       */
-    @JSGlobal("Strophe.forEachChild")
-    @js.native
-    def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, _]): Unit = js.native
+    @scala.inline
+    def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachChild")(elem.asInstanceOf[js.Any], elemName.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: getBareJidFromJid
       *  Get the bare JID from a JID String.
@@ -509,9 +499,8 @@ object global {
       *  Returns:
       *    A String containing the bare JID.
       */
-    @JSGlobal("Strophe.getBareJidFromJid")
-    @js.native
-    def getBareJidFromJid(jid: String): String = js.native
+    @scala.inline
+    def getBareJidFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBareJidFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getDomainFromJid
       *  Get the domain portion of a JID String.
@@ -522,9 +511,8 @@ object global {
       *  Returns:
       *    A String containing the domain.
       */
-    @JSGlobal("Strophe.getDomainFromJid")
-    @js.native
-    def getDomainFromJid(jid: String): String = js.native
+    @scala.inline
+    def getDomainFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getNodeFromJid
       *  Get the node portion of a JID String.
@@ -535,9 +523,8 @@ object global {
       *  Returns:
       *    A String containing the node.
       */
-    @JSGlobal("Strophe.getNodeFromJid")
-    @js.native
-    def getNodeFromJid(jid: String): String = js.native
+    @scala.inline
+    def getNodeFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getResourceFromJid
       *  Get the resource portion of a JID String.
@@ -548,9 +535,8 @@ object global {
       *  Returns:
       *    A String containing the resource.
       */
-    @JSGlobal("Strophe.getResourceFromJid")
-    @js.native
-    def getResourceFromJid(jid: String): String = js.native
+    @scala.inline
+    def getResourceFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: getText
       *  Get the concatenation of all text children of an element.
@@ -561,13 +547,11 @@ object global {
       *  Returns:
       *    A String with the concatenated text of all text element children.
       */
-    @JSGlobal("Strophe.getText")
-    @js.native
-    def getText(elem: Element): String = js.native
+    @scala.inline
+    def getText(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("Strophe.info")
-    @js.native
-    def info(msg: String): Unit = js.native
+    @scala.inline
+    def info(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: isTagEqual
       *  Compare an element's tag name with a string.
@@ -582,9 +566,8 @@ object global {
       *    true if the element's tag name matches _el_, and false
       *    otherwise.
       */
-    @JSGlobal("Strophe.isTagEqual")
-    @js.native
-    def isTagEqual(el: Element, name: String): Boolean = js.native
+    @scala.inline
+    def isTagEqual(el: Element, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTagEqual")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Function: log
       *  User overrideable logging function.
@@ -615,9 +598,8 @@ object global {
       *      be one of the values in Strophe.LogLevel.
       *    (String) msg - The log message.
       */
-    @JSGlobal("Strophe.log")
-    @js.native
-    def log(level: typings.strophe.mod.Strophe.LogLevel, msg: String): Unit = js.native
+    @scala.inline
+    def log(level: typings.strophe.mod.Strophe.LogLevel, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Function: serialize
       *  Render a DOM element and all descendants to a String.
@@ -628,12 +610,10 @@ object global {
       *  Returns:
       *    The serialized element tree as a String.
       */
-    @JSGlobal("Strophe.serialize")
-    @js.native
-    def serialize(elem: Element): String = js.native
-    @JSGlobal("Strophe.serialize")
-    @js.native
-    def serialize(elem: typings.strophe.mod.Strophe.Builder): String = js.native
+    @scala.inline
+    def serialize(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def serialize(elem: typings.strophe.mod.Strophe.Builder): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Function: unescapeNode
       *  Unescape a node part (also called local part) of a JID.
@@ -644,13 +624,11 @@ object global {
       *  Returns:
       *    An unescaped node (or local part).
       */
-    @JSGlobal("Strophe.unescapeNode")
-    @js.native
-    def unescapeNode(node: String): String = js.native
+    @scala.inline
+    def unescapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("Strophe.warn")
-    @js.native
-    def warn(msg: String): Unit = js.native
+    @scala.inline
+    def warn(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Function: xmlElement
       *  Create an XML DOM element.
@@ -670,27 +648,20 @@ object global {
       *  Returns:
       *    A new XML DOM element.
       */
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String): Element = js.native
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String, attrs: js.Any): Element = js.native
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String, attrs: js.Any, text: String): Element = js.native
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String, text: String): Element = js.native
-    @JSGlobal("Strophe.xmlElement")
-    @js.native
-    def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
+    @scala.inline
+    def xmlElement(name: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def xmlElement(name: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def xmlElement(name: String, attrs: js.Any, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def xmlElement(name: String, attrs: Unit, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def xmlElement(name: String, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def xmlElement(name: String, text: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def xmlElement(name: String, text: Unit, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /** Function: xmlGenerator
       *  Get the DOM document to generate elements.
@@ -698,9 +669,8 @@ object global {
       *  Returns:
       *    The currently used DOM document.
       */
-    @JSGlobal("Strophe.xmlGenerator")
-    @js.native
-    def xmlGenerator(): Document = js.native
+    @scala.inline
+    def xmlGenerator(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlGenerator")().asInstanceOf[Document]
     
     /** Function: xmlHtmlNode
       *  Creates an XML DOM html node.
@@ -711,9 +681,8 @@ object global {
       *  Returns:
       *    A new XML DOM text node.
       */
-    @JSGlobal("Strophe.xmlHtmlNode")
-    @js.native
-    def xmlHtmlNode(html: String): Document = js.native
+    @scala.inline
+    def xmlHtmlNode(html: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHtmlNode")(html.asInstanceOf[js.Any]).asInstanceOf[Document]
     
     /** Function: xmlTextNode
       *  Creates an XML DOM text node.
@@ -726,9 +695,8 @@ object global {
       *  Returns:
       *    A new XML DOM text node.
       */
-    @JSGlobal("Strophe.xmlTextNode")
-    @js.native
-    def xmlTextNode(text: String): Text = js.native
+    @scala.inline
+    def xmlTextNode(text: String): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[Text]
     
     /*  Function: xmlescape
       *  Excapes invalid xml characters.
@@ -739,9 +707,8 @@ object global {
       *  Returns:
       *      Escaped text.
       */
-    @JSGlobal("Strophe.xmlescape")
-    @js.native
-    def xmlescape(text: String): String = js.native
+    @scala.inline
+    def xmlescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /*  Function: xmlunescape
       *  Unexcapes invalid xml characters.
@@ -752,9 +719,8 @@ object global {
       *  Returns:
       *      Unescaped text.
       */
-    @JSGlobal("Strophe.xmlunescape")
-    @js.native
-    def xmlunescape(text: String): String = js.native
+    @scala.inline
+    def xmlunescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlunescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
     type ConnectionOptions = typings.strophe.mod.Strophe.ConnectionOptions
     
@@ -762,34 +728,26 @@ object global {
   }
   
   /* was `typeof _$build` */
-  @JSGlobal("$build")
-  @js.native
-  def build(name: String): Builder = js.native
-  @JSGlobal("$build")
-  @js.native
-  def build(name: String, attrs: js.Any): Builder = js.native
+  @scala.inline
+  def build(name: String): Builder = js.Dynamic.global.applyDynamic("$build")(name.asInstanceOf[js.Any]).asInstanceOf[Builder]
+  @scala.inline
+  def build(name: String, attrs: js.Any): Builder = (js.Dynamic.global.applyDynamic("$build")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Builder]
   
   /* was `typeof _$iq` */
-  @JSGlobal("$iq")
-  @js.native
-  def iq(): Builder = js.native
-  @JSGlobal("$iq")
-  @js.native
-  def iq(attrs: js.Any): Builder = js.native
+  @scala.inline
+  def iq(): Builder = js.Dynamic.global.applyDynamic("$iq")().asInstanceOf[Builder]
+  @scala.inline
+  def iq(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$iq")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
   /* was `typeof _$msg` */
-  @JSGlobal("$msg")
-  @js.native
-  def msg(): Builder = js.native
-  @JSGlobal("$msg")
-  @js.native
-  def msg(attrs: js.Any): Builder = js.native
+  @scala.inline
+  def msg(): Builder = js.Dynamic.global.applyDynamic("$msg")().asInstanceOf[Builder]
+  @scala.inline
+  def msg(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$msg")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
   
   /* was `typeof _$pres` */
-  @JSGlobal("$pres")
-  @js.native
-  def pres(): Builder = js.native
-  @JSGlobal("$pres")
-  @js.native
-  def pres(attrs: js.Any): Builder = js.native
+  @scala.inline
+  def pres(): Builder = js.Dynamic.global.applyDynamic("$pres")().asInstanceOf[Builder]
+  @scala.inline
+  def pres(attrs: js.Any): Builder = js.Dynamic.global.applyDynamic("$pres")(attrs.asInstanceOf[js.Any]).asInstanceOf[Builder]
 }

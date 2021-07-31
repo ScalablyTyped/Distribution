@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dsv.mod.dsv.Dsv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,10 +24,10 @@ object mod extends Shortcut {
       
       /** Converts the specified array of rows into comma-separated values format, returning a string. This operation is the reverse of parse. Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes.
       Each row should be an object, and all object properties will be converted into fields. For greater control over which properties are converted, convert the rows into arrays containing only the properties that should be converted and use formatRows. */
-      def format(rows: js.Array[_]): String = js.native
+      def format(rows: js.Array[js.Any]): String = js.native
       
       /** Converts the specified array of rows into comma-separated values format, returning a string. This operation is the reverse of parseRows. Each row will be separated by a newline (\n), and each column within each row will be separated by a comma (,). Values that contain either commas, double-quotes (") or newlines will be escaped using double-quotes. */
-      def formatRows(rows: js.Array[_]): String = js.native
+      def formatRows(rows: js.Array[js.Any]): String = js.native
       
       /** Parses the specified string, which is the contents of a CSV file, returning an array of objects representing the parsed rows. 
         The string is assumed to be RFC4180-compliant. 

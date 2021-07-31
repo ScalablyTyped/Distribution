@@ -5,28 +5,26 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.anon.OutPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides generalized transformation functions. */
-@js.native
 trait IPointerPointTransform extends StObject {
   
   /** Gets the inverse of the specified transformation. */
-  var inverse: IPointerPointTransform = js.native
+  var inverse: IPointerPointTransform
   
   /**
     * Transforms the specified bounding rectangle.
     * @param rect The bounding rectangle to transform.
     * @return The smallest, axis-aligned bounding box that encloses rect after the transformation. (An axis-aligned bounding box is one which has all sides parallel to the coordinate axes.)
     */
-  def transformBounds(rect: Rect): Rect = js.native
+  def transformBounds(rect: Rect): Rect
   
   /**
     * Attempts to perform the transformation on the specified input point.
     * @param inPoint The original input point.
     */
-  def tryTransform(inPoint: Point): OutPoint = js.native
+  def tryTransform(inPoint: Point): OutPoint
 }
 object IPointerPointTransform {
   

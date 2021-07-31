@@ -2,31 +2,29 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogSettingsRequest extends StObject {
   
   /**
     * Where the logs will be delivered. Text logs are delivered to a CloudWatch Logs log group. Audio logs are delivered to an S3 bucket.
     */
-  var destination: Destination = js.native
+  var destination: Destination
   
   /**
     * The Amazon Resource Name (ARN) of the AWS KMS customer managed key for encrypting audio logs delivered to an S3 bucket. The key does not apply to CloudWatch Logs and is optional for S3 buckets.
     */
-  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.native
+  var kmsKeyArn: js.UndefOr[KmsKeyArn] = js.undefined
   
   /**
     * The type of logging to enable. Text logs are delivered to a CloudWatch Logs log group. Audio logs are delivered to an S3 bucket.
     */
-  var logType: LogType = js.native
+  var logType: LogType
   
   /**
     * The Amazon Resource Name (ARN) of the CloudWatch Logs log group or S3 bucket where the logs should be delivered.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
 }
 object LogSettingsRequest {
   

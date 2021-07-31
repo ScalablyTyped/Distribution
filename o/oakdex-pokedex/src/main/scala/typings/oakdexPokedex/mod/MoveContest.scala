@@ -2,19 +2,17 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveContest extends StObject {
   
-  var appeal: Double = js.native
+  var appeal: Double
   
-  var condition: String = js.native
+  var condition: String
   
-  var contest: String = js.native
+  var contest: String
   
-  var jam: Double = js.native
+  var jam: Double
 }
 object MoveContest {
   

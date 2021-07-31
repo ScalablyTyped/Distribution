@@ -5,36 +5,35 @@ import typings.reactPlayer.anon.Loaded
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactPlayerProps
-  extends /* otherProps */ StringDictionary[js.Any] {
+  extends StObject
+     with /* otherProps */ StringDictionary[js.Any] {
   
-  var config: js.UndefOr[Config] = js.native
+  var config: js.UndefOr[Config] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var light: js.UndefOr[Boolean | String] = js.native
+  var light: js.UndefOr[Boolean | String] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
-  var onBuffer: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBuffer: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onBufferEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBufferEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onDisablePIP: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDisablePIP: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onDuration: js.UndefOr[js.Function1[/* duration */ Double, Unit]] = js.native
+  var onDuration: js.UndefOr[js.Function1[/* duration */ Double, Unit]] = js.undefined
   
-  var onEnablePIP: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEnablePIP: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onEnded: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEnded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onError: js.UndefOr[
     js.Function4[
@@ -44,41 +43,41 @@ trait ReactPlayerProps
       /* hlsGlobal */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onPause: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onProgress: js.UndefOr[js.Function1[/* state */ Loaded, Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* state */ Loaded, Unit]] = js.undefined
   
-  var onReady: js.UndefOr[js.Function1[/* player */ ReactPlayer, Unit]] = js.native
+  var onReady: js.UndefOr[js.Function1[/* player */ ReactPlayer, Unit]] = js.undefined
   
-  var onSeek: js.UndefOr[js.Function1[/* seconds */ Double, Unit]] = js.native
+  var onSeek: js.UndefOr[js.Function1[/* seconds */ Double, Unit]] = js.undefined
   
-  var onStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var pip: js.UndefOr[Boolean] = js.native
+  var pip: js.UndefOr[Boolean] = js.undefined
   
-  var playbackRate: js.UndefOr[Double] = js.native
+  var playbackRate: js.UndefOr[Double] = js.undefined
   
-  var playing: js.UndefOr[Boolean] = js.native
+  var playing: js.UndefOr[Boolean] = js.undefined
   
-  var playsinline: js.UndefOr[Boolean] = js.native
+  var playsinline: js.UndefOr[Boolean] = js.undefined
   
-  var progressInterval: js.UndefOr[Double] = js.native
+  var progressInterval: js.UndefOr[Double] = js.undefined
   
-  var stopOnUnmount: js.UndefOr[Boolean] = js.native
+  var stopOnUnmount: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var url: js.UndefOr[String | (js.Array[SourceProps | String]) | MediaStream] = js.native
+  var url: js.UndefOr[String | (js.Array[SourceProps | String]) | MediaStream] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
-  var wrapper: js.UndefOr[js.Any] = js.native
+  var wrapper: js.UndefOr[js.Any] = js.undefined
 }
 object ReactPlayerProps {
   

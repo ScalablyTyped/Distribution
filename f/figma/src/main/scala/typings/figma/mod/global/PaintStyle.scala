@@ -3,16 +3,16 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.PAINT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaintStyle extends BaseStyle {
+trait PaintStyle
+  extends StObject
+     with BaseStyle {
   
-  var paints: js.Array[Paint] = js.native
+  var paints: js.Array[Paint]
   
   @JSName("type")
-  var type_PaintStyle: PAINT = js.native
+  var type_PaintStyle: PAINT
 }
 object PaintStyle {
   
@@ -24,11 +24,10 @@ object PaintStyle {
     name: String,
     paints: js.Array[Paint],
     remote: Boolean,
-    remove: () => Unit,
-    `type`: PAINT
+    remove: () => Unit
   ): PaintStyle = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], paints = paints.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PAINT")
     __obj.asInstanceOf[PaintStyle]
   }
   

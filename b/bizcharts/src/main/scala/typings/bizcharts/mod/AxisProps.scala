@@ -7,36 +7,35 @@ import typings.antvG2.mod.Styles.tickLine
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisProps
-  extends Props[js.Any] {
+  extends StObject
+     with Props[js.Any] {
   
-  var grid: js.UndefOr[AxisGrid | Null] = js.native
+  var grid: js.UndefOr[AxisGrid | Null] = js.undefined
   
-  var label: js.UndefOr[AxisLabel | Null] = js.native
+  var label: js.UndefOr[AxisLabel | Null] = js.undefined
   
-  var line: js.UndefOr[typings.antvG2.mod.Styles.line | Null] = js.native
+  var line: js.UndefOr[typings.antvG2.mod.Styles.line | Null] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
-  var subTickCount: js.UndefOr[Double] = js.native
+  var subTickCount: js.UndefOr[Double] = js.undefined
   
-  var subTickLine: js.UndefOr[tickLine] = js.native
+  var subTickLine: js.UndefOr[tickLine] = js.undefined
   
-  var tickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine | Null] = js.native
+  var tickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine | Null] = js.undefined
   
-  var title: js.UndefOr[typings.antvG2.mod.AxisTitle | Boolean | Null] = js.native
+  var title: js.UndefOr[typings.antvG2.mod.AxisTitle | Boolean | Null] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object AxisProps {
   

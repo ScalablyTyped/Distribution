@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValueListItemsWithPermissions extends StObject {
   
-  val Permissions: IAccessControlLists = js.native
+  val Permissions: IAccessControlLists
   
-  val ValueListItems: IValueListItems = js.native
+  val ValueListItems: IValueListItems
 }
 object IValueListItemsWithPermissions {
   

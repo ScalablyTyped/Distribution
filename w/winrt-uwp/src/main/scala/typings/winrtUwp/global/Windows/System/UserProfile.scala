@@ -1,5 +1,7 @@
 package typings.winrtUwp.global.Windows.System
 
+import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -7,14 +9,15 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Globalization.DayOfWeek
 import typings.winrtUwp.Windows.Storage.IStorageFile
+import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind
 import typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult
 import typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult
+import typings.winrtUwp.anon.Second
 import typings.winrtUwp.winrtUwpStrings.accountpicturechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables apps get information about users, set globalization preferences, and control the lock screen image. */
@@ -26,20 +29,21 @@ object UserProfile {
   object AccountPictureKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind & Double] = js.native
     
-    /* 1 */ val largeImage: typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind.largeImage with Double = js.native
+    /* 1 */ val largeImage: typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind.largeImage & Double = js.native
     
-    /* 0 */ val smallImage: typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind.smallImage with Double = js.native
+    /* 0 */ val smallImage: typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind.smallImage & Double = js.native
     
-    /* 2 */ val video: typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind.video with Double = js.native
+    /* 2 */ val video: typings.winrtUwp.Windows.System.UserProfile.AccountPictureKind.video & Double = js.native
   }
   
   /** Provides a property that lets the caller retrieve the advertising ID, which is an ID used to provide more relevant advertising by understanding which apps are used by the user and how they are used, and to improve quality of service by determining the frequency and effectiveness of ads and to detect fraud and security issues. */
   @JSGlobal("Windows.System.UserProfile.AdvertisingManager")
   @js.native
   abstract class AdvertisingManager ()
-    extends typings.winrtUwp.Windows.System.UserProfile.AdvertisingManager
+    extends StObject
+       with typings.winrtUwp.Windows.System.UserProfile.AdvertisingManager
   object AdvertisingManager {
     
     @JSGlobal("Windows.System.UserProfile.AdvertisingManager")
@@ -59,24 +63,63 @@ object UserProfile {
   @JSGlobal("Windows.System.UserProfile.FirstSignInSettings")
   @js.native
   abstract class FirstSignInSettings ()
-    extends typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings
+    extends StObject
+       with typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings {
+    
+    /**
+      * Returns an iterator for the items in the collection.
+      * @return The iterator.
+      */
+    /* CompleteClass */
+    override def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+    
+    /**
+      * Determines whether the map view contains the specified key.
+      * @param key The key to locate in the map view.
+      * @return true if the key is found; otherwise, false.
+      */
+    /* CompleteClass */
+    override def hasKey(key: String): Boolean = js.native
+    
+    /**
+      * Returns the item in the map view with the specified key.
+      * @param key The key to locate in the map view.
+      * @return The item associated with the specified key.
+      */
+    /* CompleteClass */
+    override def lookup(key: String): js.Any = js.native
+    
+    /** Returns the number of elements in the map. */
+    /* CompleteClass */
+    var size: Double = js.native
+    
+    /**
+      * Splits the map view into two views.
+      */
+    /* CompleteClass */
+    override def split(): Second = js.native
+  }
   object FirstSignInSettings {
+    
+    @JSGlobal("Windows.System.UserProfile.FirstSignInSettings")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets the default instance of the settings.
       * @return The default instance of the settings.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.FirstSignInSettings.getDefault")
-    @js.native
-    def getDefault(): typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings = js.native
+    @scala.inline
+    def getDefault(): typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings]
   }
   
   /** A static class for holding various user globalization preferences. */
   @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
   @js.native
   abstract class GlobalizationPreferences ()
-    extends typings.winrtUwp.Windows.System.UserProfile.GlobalizationPreferences
+    extends StObject
+       with typings.winrtUwp.Windows.System.UserProfile.GlobalizationPreferences
   object GlobalizationPreferences {
     
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
@@ -136,7 +179,8 @@ object UserProfile {
   @JSGlobal("Windows.System.UserProfile.LockScreen")
   @js.native
   abstract class LockScreen ()
-    extends typings.winrtUwp.Windows.System.UserProfile.LockScreen
+    extends StObject
+       with typings.winrtUwp.Windows.System.UserProfile.LockScreen
   object LockScreen {
     
     @JSGlobal("Windows.System.UserProfile.LockScreen")
@@ -148,9 +192,8 @@ object UserProfile {
       * @return The stream that contains the lock screen image data.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.LockScreen.getImageStream")
-    @js.native
-    def getImageStream(): IRandomAccessStream = js.native
+    @scala.inline
+    def getImageStream(): IRandomAccessStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageStream")().asInstanceOf[IRandomAccessStream]
     
     /** Gets the current lock screen image. */
     /* static member */
@@ -166,9 +209,8 @@ object UserProfile {
       * @return One of the SetImageFeedResult values.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.LockScreen.requestSetImageFeedAsync")
-    @js.native
-    def requestSetImageFeedAsync(syndicationFeedUri: Uri): IPromiseWithIAsyncOperation[SetImageFeedResult] = js.native
+    @scala.inline
+    def requestSetImageFeedAsync(syndicationFeedUri: Uri): IPromiseWithIAsyncOperation[SetImageFeedResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestSetImageFeedAsync")(syndicationFeedUri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetImageFeedResult]]
     
     /**
       * Sets the lock screen image from a StorageFile object.
@@ -176,9 +218,8 @@ object UserProfile {
       * @return The object used to set the image for the lock screen.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.LockScreen.setImageFileAsync")
-    @js.native
-    def setImageFileAsync(value: IStorageFile): IPromiseWithIAsyncAction = js.native
+    @scala.inline
+    def setImageFileAsync(value: IStorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageFileAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Sets the lock screen image from a data stream.
@@ -186,18 +227,16 @@ object UserProfile {
       * @return The object used to set the lock screen image.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.LockScreen.setImageStreamAsync")
-    @js.native
-    def setImageStreamAsync(value: IRandomAccessStream): IPromiseWithIAsyncAction = js.native
+    @scala.inline
+    def setImageStreamAsync(value: IRandomAccessStream): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageStreamAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Unregisters the image feed being used in the lock screen slideshow, stopping the slideshow. (Windows 8.1 only)
       * @return true if the image feed was disabled; otherwise, false.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.LockScreen.tryRemoveImageFeed")
-    @js.native
-    def tryRemoveImageFeed(): Boolean = js.native
+    @scala.inline
+    def tryRemoveImageFeed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRemoveImageFeed")().asInstanceOf[Boolean]
   }
   
   /** A result that is returned when you try to set the image for a user account. */
@@ -206,19 +245,19 @@ object UserProfile {
   object SetAccountPictureResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult & Double] = js.native
     
-    /* 1 */ val changeDisabled: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.changeDisabled with Double = js.native
+    /* 1 */ val changeDisabled: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.changeDisabled & Double = js.native
     
-    /* 5 */ val failure: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.failure with Double = js.native
+    /* 5 */ val failure: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.failure & Double = js.native
     
-    /* 4 */ val fileSizeError: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.fileSizeError with Double = js.native
+    /* 4 */ val fileSizeError: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.fileSizeError & Double = js.native
     
-    /* 2 */ val largeOrDynamicError: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.largeOrDynamicError with Double = js.native
+    /* 2 */ val largeOrDynamicError: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.largeOrDynamicError & Double = js.native
     
-    /* 0 */ val success: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.success with Double = js.native
+    /* 0 */ val success: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.success & Double = js.native
     
-    /* 3 */ val videoFrameSizeError: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.videoFrameSizeError with Double = js.native
+    /* 3 */ val videoFrameSizeError: typings.winrtUwp.Windows.System.UserProfile.SetAccountPictureResult.videoFrameSizeError & Double = js.native
   }
   
   /** Specifies the result of a call to LockScreen.RequestSetImageFeedAsync */
@@ -227,20 +266,21 @@ object UserProfile {
   object SetImageFeedResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult & Double] = js.native
     
-    /* 1 */ val changeDisabled: typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult.changeDisabled with Double = js.native
+    /* 1 */ val changeDisabled: typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult.changeDisabled & Double = js.native
     
-    /* 0 */ val success: typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult.success with Double = js.native
+    /* 0 */ val success: typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult.success & Double = js.native
     
-    /* 2 */ val userCanceled: typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult.userCanceled with Double = js.native
+    /* 2 */ val userCanceled: typings.winrtUwp.Windows.System.UserProfile.SetImageFeedResult.userCanceled & Double = js.native
   }
   
   /** Represents information about the user, such as name and account picture. */
   @JSGlobal("Windows.System.UserProfile.UserInformation")
   @js.native
   abstract class UserInformation ()
-    extends typings.winrtUwp.Windows.System.UserProfile.UserInformation
+    extends StObject
+       with typings.winrtUwp.Windows.System.UserProfile.UserInformation
   object UserInformation {
     
     @JSGlobal("Windows.System.UserProfile.UserInformation")
@@ -256,13 +296,12 @@ object UserProfile {
     def accountPictureChangeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountPictureChangeEnabled")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.addEventListener")
-    @js.native
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.addEventListener")
-    @js.native
-    def addEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def addEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the account picture for the user.
@@ -270,63 +309,56 @@ object UserProfile {
       * @return An object that contains the image.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getAccountPicture")
-    @js.native
-    def getAccountPicture(kind: AccountPictureKind): IStorageFile = js.native
+    @scala.inline
+    def getAccountPicture(kind: AccountPictureKind): IStorageFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountPicture")(kind.asInstanceOf[js.Any]).asInstanceOf[IStorageFile]
     
     /**
       * Gets the display name for the user account.
       * @return The display name for the user account.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getDisplayNameAsync")
-    @js.native
-    def getDisplayNameAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getDisplayNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the domain name for the user.
       * @return A string that represents the domain name for the user.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getDomainNameAsync")
-    @js.native
-    def getDomainNameAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getDomainNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the user's first name.
       * @return The user's first name.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getFirstNameAsync")
-    @js.native
-    def getFirstNameAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getFirstNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the user's last name.
       * @return The user's last name.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getLastNameAsync")
-    @js.native
-    def getLastNameAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getLastNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the principal name for the user. This name is the User Principal Name (typically the user's address, although this is not always true.)
       * @return The user's principal name.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getPrincipalNameAsync")
-    @js.native
-    def getPrincipalNameAsync(): IPromiseWithIAsyncOperation[String] = js.native
+    @scala.inline
+    def getPrincipalNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrincipalNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the Uniform Resource Identifier (URI) of the session initiation protocol for the user.
       * @return The URI of the session initiation protocol.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.getSessionInitiationProtocolUriAsync")
-    @js.native
-    def getSessionInitiationProtocolUriAsync(): IPromiseWithIAsyncOperation[Uri] = js.native
+    @scala.inline
+    def getSessionInitiationProtocolUriAsync(): IPromiseWithIAsyncOperation[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionInitiationProtocolUriAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Uri]]
     
     /** Allows you to see if your app is allowed to access the user's information. */
     /* static member */
@@ -345,13 +377,12 @@ object UserProfile {
     def onaccountpicturechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.removeEventListener")
-    @js.native
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.removeEventListener")
-    @js.native
-    def removeEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def removeEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the picture for the user's account using an IStorageFile object.
@@ -359,9 +390,8 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.setAccountPictureAsync")
-    @js.native
-    def setAccountPictureAsync(image: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = js.native
+    @scala.inline
+    def setAccountPictureAsync(image: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
     
     /**
       * Sets the picture for the user's account using an IRandomAccessStream object.
@@ -369,9 +399,8 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.setAccountPictureFromStreamAsync")
-    @js.native
-    def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = js.native
+    @scala.inline
+    def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureFromStreamAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
     
     /**
       * Sets the pictures for the user's account using an IStorageFile object. Supports adding a small image, large image, and video.
@@ -381,9 +410,8 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.setAccountPicturesAsync")
-    @js.native
-    def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = js.native
+    @scala.inline
+    def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
     
     /**
       * Sets the pictures for the user's account using an IRandomAccessStream object. Supports adding a small image, large image, and video.
@@ -393,16 +421,33 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserInformation.setAccountPicturesFromStreamsAsync")
-    @js.native
-    def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = js.native
+    @scala.inline
+    def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesFromStreamsAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
   }
   
   /** Provides properties and methods to manage the user's desktop wallpaper and lock screen background image. */
   @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings")
   @js.native
   abstract class UserProfilePersonalizationSettings ()
-    extends typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings
+    extends StObject
+       with typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings {
+    
+    /**
+      * Attempts to set the specified image file as the lock screen background image.
+      * @param imageFile The image to set as the lock screen background.
+      * @return The result of the async operation. true if the background image was set successfully; otherwise, false.
+      */
+    /* CompleteClass */
+    override def trySetLockScreenImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
+    
+    /**
+      * Attempts to set the specified image file as the desktop wallpaper image.
+      * @param imageFile The image to set as the desktop background.
+      * @return The result of the async operation. true if the background image was set successfully; otherwise, false.
+      */
+    /* CompleteClass */
+    override def trySetWallpaperImageAsync(imageFile: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
+  }
   object UserProfilePersonalizationSettings {
     
     @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings")
@@ -422,8 +467,7 @@ object UserProfile {
       * @return true if changing the desktop and lock screen images is supported; otherwise, false.
       */
     /* static member */
-    @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings.isSupported")
-    @js.native
-    def isSupported(): Boolean = js.native
+    @scala.inline
+    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
 }

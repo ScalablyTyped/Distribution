@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachFromIndexRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the directory the index and object exist in.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * A reference to the index object.
     */
-  var IndexReference: ObjectReference = js.native
+  var IndexReference: ObjectReference
   
   /**
     * A reference to the object being detached from the index.
     */
-  var TargetReference: ObjectReference = js.native
+  var TargetReference: ObjectReference
 }
 object DetachFromIndexRequest {
   

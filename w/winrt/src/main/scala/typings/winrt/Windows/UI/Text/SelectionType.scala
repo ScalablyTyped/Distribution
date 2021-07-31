@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait SelectionType extends StObject
 object SelectionType extends StObject {
   
   @js.native
-  sealed trait inlineShape extends SelectionType
+  sealed trait inlineShape
+    extends StObject
+       with SelectionType
   
   @js.native
-  sealed trait insertionPoint extends SelectionType
+  sealed trait insertionPoint
+    extends StObject
+       with SelectionType
   
   @js.native
-  sealed trait none extends SelectionType
+  sealed trait none
+    extends StObject
+       with SelectionType
   
   @js.native
-  sealed trait normal extends SelectionType
+  sealed trait normal
+    extends StObject
+       with SelectionType
   
   @js.native
-  sealed trait shape extends SelectionType
+  sealed trait shape
+    extends StObject
+       with SelectionType
 }

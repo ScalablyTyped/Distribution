@@ -7,7 +7,6 @@ import typings.std.DeviceMotionEvent
 import typings.std.DeviceRotationRate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceMotionDeviceMotionMod {
@@ -32,22 +31,21 @@ object deviceMotionDeviceMotionMod {
     def handleDeviceMotion(e: DeviceMotionEvent): Unit = js.native
   }
   
-  @js.native
   trait DeviceMotionProps extends StObject {
     
-    var acceleration: DeviceAcceleration | Null = js.native
+    var acceleration: DeviceAcceleration | Null
     
-    var accelerationIncludingGravity: DeviceAcceleration | Null = js.native
+    var accelerationIncludingGravity: DeviceAcceleration | Null
     
-    var interval: Double | Null = js.native
+    var interval: Double | Null
     
-    var rotationRate: DeviceRotationRate | Null = js.native
+    var rotationRate: DeviceRotationRate | Null
   }
   object DeviceMotionProps {
     
     @scala.inline
     def apply(): DeviceMotionProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(acceleration = null, accelerationIncludingGravity = null, interval = null, rotationRate = null)
       __obj.asInstanceOf[DeviceMotionProps]
     }
     

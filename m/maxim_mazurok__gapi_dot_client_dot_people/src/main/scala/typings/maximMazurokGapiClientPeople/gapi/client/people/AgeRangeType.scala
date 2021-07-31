@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgeRangeType extends StObject {
   
   /** The age range. */
-  var ageRange: js.UndefOr[String] = js.native
+  var ageRange: js.UndefOr[String] = js.undefined
   
   /** Metadata about the age range. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
 }
 object AgeRangeType {
   

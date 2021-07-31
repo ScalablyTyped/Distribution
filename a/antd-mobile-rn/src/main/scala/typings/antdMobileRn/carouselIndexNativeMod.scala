@@ -11,7 +11,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselIndexNativeMod {
@@ -80,12 +79,11 @@ object carouselIndexNativeMod {
     def updateIndex(offset: CarouselOffset): Unit = js.native
   }
   
-  @js.native
   trait CarouselOffset extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object CarouselOffset {
     
@@ -106,16 +104,17 @@ object carouselIndexNativeMod {
     }
   }
   
-  @js.native
-  trait CarouselProps extends CarouselPropsType {
+  trait CarouselProps
+    extends StObject
+       with CarouselPropsType {
     
-    var afterChange: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var afterChange: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var bounces: js.UndefOr[Boolean] = js.native
+    var bounces: js.UndefOr[Boolean] = js.undefined
     
-    var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     var onMomentumScrollEnd: js.UndefOr[
         js.Function3[
@@ -124,7 +123,7 @@ object carouselIndexNativeMod {
           /* carousel */ Carousel, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onScrollBeginDrag: js.UndefOr[
         js.Function3[
@@ -133,13 +132,13 @@ object carouselIndexNativeMod {
           /* carousel */ Carousel, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pagination: js.UndefOr[js.Function1[/* props */ PaginationProps, ReactNode]] = js.native
+    var pagination: js.UndefOr[js.Function1[/* props */ PaginationProps, ReactNode]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
   }
   object CarouselProps {
     
@@ -221,22 +220,21 @@ object carouselIndexNativeMod {
     }
   }
   
-  @js.native
   trait CarouselState extends StObject {
     
-    var autoplayEnd: Boolean = js.native
+    var autoplayEnd: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
     
-    var loopJump: Boolean = js.native
+    var loopJump: Boolean
     
-    var offset: CarouselOffset = js.native
+    var offset: CarouselOffset
     
-    var selectedIndex: Double = js.native
+    var selectedIndex: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object CarouselState {
     
@@ -280,20 +278,19 @@ object carouselIndexNativeMod {
     }
   }
   
-  @js.native
   trait PaginationProps extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var current: Double = js.native
+    var current: Double
     
-    var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.Any = js.native
+    var styles: js.Any
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object PaginationProps {
     

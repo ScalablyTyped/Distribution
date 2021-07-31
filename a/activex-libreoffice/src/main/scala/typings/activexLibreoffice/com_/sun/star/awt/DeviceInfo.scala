@@ -2,45 +2,43 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains information about a device. */
-@js.native
 trait DeviceInfo extends StObject {
   
   /** contains the color-depth of the device. */
-  var BitsPerPixel: Double = js.native
+  var BitsPerPixel: Double
   
   /** contains the inset from the bottom. */
-  var BottomInset: Double = js.native
+  var BottomInset: Double
   
   /**
     * specifies special operations which are possible on the device.
     * @see DeviceCapability
     */
-  var Capabilities: Double = js.native
+  var Capabilities: Double
   
   /** contains the height of the device in pixels. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** contains the inset from the left. */
-  var LeftInset: Double = js.native
+  var LeftInset: Double
   
   /** contains the X-axis resolution of the device in pixel/meter. */
-  var PixelPerMeterX: Double = js.native
+  var PixelPerMeterX: Double
   
   /** contains the Y-axis resolution of the device in pixel/meter. */
-  var PixelPerMeterY: Double = js.native
+  var PixelPerMeterY: Double
   
   /** contains the inset from the right. */
-  var RightInset: Double = js.native
+  var RightInset: Double
   
   /** contains the inset from the top. */
-  var TopInset: Double = js.native
+  var TopInset: Double
   
   /** contains the width of the device in pixels. */
-  var Width: Double = js.native
+  var Width: Double
 }
 object DeviceInfo {
   

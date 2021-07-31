@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getServiceQuotaMod {
   
-  @JSImport("@pulumi/aws/servicequotas/getServiceQuota", "getServiceQuota")
+  @JSImport("@pulumi/aws/servicequotas/getServiceQuota", JSImport.Namespace)
   @js.native
-  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = js.native
-  @JSImport("@pulumi/aws/servicequotas/getServiceQuota", "getServiceQuota")
-  @js.native
-  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getServiceQuota(args: GetServiceQuotaArgs): js.Promise[GetServiceQuotaResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceQuotaResult]]
+  @scala.inline
+  def getServiceQuota(args: GetServiceQuotaArgs, opts: InvokeOptions): js.Promise[GetServiceQuotaResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceQuota")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceQuotaResult]]
+  
   trait GetServiceQuotaArgs extends StObject {
     
     /**
       * Quota code within the service. When configured, the data source directly looks up the service quota. Available values can be found with the [AWS CLI service-quotas list-service-quotas command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html).
       */
-    val quotaCode: js.UndefOr[String] = js.native
+    val quotaCode: js.UndefOr[String] = js.undefined
     
     /**
       * Quota name within the service. When configured, the data source searches through all service quotas to find the matching quota name. Available values can be found with the [AWS CLI service-quotas list-service-quotas command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html).
       */
-    val quotaName: js.UndefOr[String] = js.native
+    val quotaName: js.UndefOr[String] = js.undefined
     
     /**
       * Service code for the quota. Available values can be found with the `aws.servicequotas.getService` data source or [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
       */
-    val serviceCode: String = js.native
+    val serviceCode: String
   }
   object GetServiceQuotaArgs {
     
@@ -61,49 +61,48 @@ object getServiceQuotaMod {
     }
   }
   
-  @js.native
   trait GetServiceQuotaResult extends StObject {
     
     /**
       * Whether the service quota is adjustable.
       */
-    val adjustable: Boolean = js.native
+    val adjustable: Boolean
     
     /**
       * Amazon Resource Name (ARN) of the service quota.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Default value of the service quota.
       */
-    val defaultValue: Double = js.native
+    val defaultValue: Double
     
     /**
       * Whether the service quota is global for the AWS account.
       */
-    val globalQuota: Boolean = js.native
+    val globalQuota: Boolean
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val quotaCode: String = js.native
+    val quotaCode: String
     
-    val quotaName: String = js.native
+    val quotaName: String
     
-    val serviceCode: String = js.native
+    val serviceCode: String
     
     /**
       * Name of the service.
       */
-    val serviceName: String = js.native
+    val serviceName: String
     
     /**
       * Current value of the service quota.
       */
-    val value: Double = js.native
+    val value: Double
   }
   object GetServiceQuotaResult {
     

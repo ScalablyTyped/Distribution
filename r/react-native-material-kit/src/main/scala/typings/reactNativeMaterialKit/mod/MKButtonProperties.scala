@@ -1,84 +1,139 @@
 package typings.reactNativeMaterialKit.mod
 
-import typings.reactNative.mod.GestureResponderEvent
-import typings.reactNative.mod.Insets
-import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.TargetedEvent
-import typings.reactNative.mod.TouchableWithoutFeedbackPropsAndroid
+import typings.reactNative.mod.GestureResponderHandlers
+import typings.reactNative.mod.Touchable
+import typings.reactNative.mod.TouchableWithoutFeedbackProps
+import typings.reactNative.mod.ViewPropsAndroid
+import typings.reactNative.reactNativeStrings.`box-none`
+import typings.reactNative.reactNativeStrings.`box-only`
+import typings.reactNative.reactNativeStrings.auto
+import typings.reactNative.reactNativeStrings.none
+import typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
 - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
-- typings.reactNative.mod.TouchableWithoutFeedbackPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined 
+- typings.reactNative.mod.TVViewPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined tvParallaxTiltAngle, tvParallaxMagnification, tvParallaxShiftDistanceY, isTVSelectable, tvParallaxShiftDistanceX
 - typings.reactNative.mod.AccessibilityProps because Already inherited
-- typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined onPress, onPressOut, onFocus, delayLongPress, onLongPress, onBlur, delayPressOut, disabled, pressRetentionOffset, delayPressIn, onPressIn */ @js.native
-trait MKButtonProperties
-  extends MKRippleProperties
-     with TouchableWithoutFeedbackPropsAndroid {
+- typings.reactNative.mod.ViewPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined shouldRasterizeIOS
+- typings.reactNative.mod.ViewProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined pointerEvents, removeClippedSubviews, nativeID
+- typings.reactNativeMaterialKit.mod.MKRippleProperties because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined rippleColor, rippleDuration, rippleLocation, maskEnabled, maskColor, maskBorderRadius, maskBorderRadiusInPercent, maskDuration, shadowAniEnabled */ trait MKButtonProperties
+  extends StObject
+     with TouchableWithoutFeedbackProps
+     with ViewPropsAndroid
+     with GestureResponderHandlers
+     with Touchable {
+  
+  var enabled: js.UndefOr[Boolean] = js.undefined
+  
+  var fab: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Delay in ms, from onPressIn, before onLongPress is called.
+    * *(Apple TV only)* When set to true, this view will be focusable
+    * and navigable using the Apple TV remote.
+    *
+    * @platform ios
     */
-  var delayLongPress: js.UndefOr[Double] = js.native
+  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
+  
+  var maskBorderRadius: js.UndefOr[Double] = js.undefined
+  
+  var maskBorderRadiusInPercent: js.UndefOr[Double] = js.undefined
+  
+  var maskColor: js.UndefOr[String] = js.undefined
+  
+  var maskDuration: js.UndefOr[Double] = js.undefined
+  
+  var maskEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Delay in ms, from the start of the touch, before onPressIn is called.
+    * Used to reference react managed views from native code.
     */
-  var delayPressIn: js.UndefOr[Double] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
   /**
-    * Delay in ms, from the release of the touch, before onPressOut is called.
+    *
+    * In the absence of auto property, none is much like CSS's none value. box-none is as if you had applied the CSS class:
+    *
+    * .box-none {
+    *   pointer-events: none;
+    * }
+    * .box-none * {
+    *   pointer-events: all;
+    * }
+    *
+    * box-only is the equivalent of
+    *
+    * .box-only {
+    *   pointer-events: all;
+    * }
+    * .box-only * {
+    *   pointer-events: none;
+    * }
+    *
+    * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
+    * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
     */
-  var delayPressOut: js.UndefOr[Double] = js.native
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
   /**
-    * If true, disable all interactions for this component.
+    *
+    * This is a special performance property exposed by RCTView and is useful for scrolling content when there are many subviews,
+    * most of which are offscreen. For this property to be effective, it must be applied to a view that contains many subviews that extend outside its bound.
+    * The subviews must also have overflow: hidden, as should the containing view (or one of its superviews).
     */
-  var disabled: js.UndefOr[Boolean | Null] = js.native
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
   
-  var fab: js.UndefOr[Boolean] = js.native
+  var rippleDuration: js.UndefOr[Double] = js.undefined
+  
+  var rippleLocation: js.UndefOr[typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation] = js.undefined
+  
+  var shadowAniEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `accessible` is true (which is the default) this may be called when
-    * the OS-specific concept of "blur" occurs, meaning the element lost focus.
-    * Some platforms may not have the concept of blur.
+    * Whether this view should be rendered as a bitmap before compositing.
+    *
+    * On iOS, this is useful for animations and interactions that do not modify this component's dimensions nor its children;
+    * for example, when translating the position of a static view, rasterization allows the renderer to reuse a cached bitmap of a static view
+    * and quickly composite it during each frame.
+    *
+    * Rasterization incurs an off-screen drawing pass and the bitmap consumes memory.
+    * Test and measure when using this property.
     */
-  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.native
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When `accessible` is true (which is the default) this may be called when
-    * the OS-specific concept of "focus" occurs. Some platforms may not have
-    * the concept of focus.
+    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
+    *
+    * @platform ios
     */
-  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.native
-  
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
   /**
-    * Called when the touch is released,
-    * but not if cancelled (e.g. by a scroll that steals the responder lock).
+    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
+    *
+    * @platform ios
     */
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
-  
-  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
-  
-  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   
   /**
-    * When the scroll view is disabled, this defines how far your
-    * touch may move off of the button, before deactivating the button.
-    * Once deactivated, try moving it back and you'll see that the button
-    * is once again reactivated! Move it back and forth several times
-    * while the scroll view is disabled. Ensure you pass in a constant
-    * to reduce memory allocations.
+    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
+    *
+    * @platform ios
     */
-  var pressRetentionOffset: js.UndefOr[Insets] = js.native
+  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 0.05.
+    *
+    * @platform ios
+    */
+  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
 }
 object MKButtonProperties {
   
@@ -90,33 +145,6 @@ object MKButtonProperties {
   
   @scala.inline
   implicit class MKButtonPropertiesMutableBuilder[Self <: MKButtonProperties] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
-    
-    @scala.inline
-    def setDelayPressIn(value: Double): Self = StObject.set(x, "delayPressIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelayPressInUndefined: Self = StObject.set(x, "delayPressIn", js.undefined)
-    
-    @scala.inline
-    def setDelayPressOut(value: Double): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
-    
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisabledNull: Self = StObject.set(x, "disabled", null)
-    
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
     def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
@@ -131,45 +159,111 @@ object MKButtonProperties {
     def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setIsTVSelectable(value: Boolean): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    def setMaskBorderRadius(value: Double): Self = StObject.set(x, "maskBorderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    def setMaskBorderRadiusInPercent(value: Double): Self = StObject.set(x, "maskBorderRadiusInPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+    def setMaskBorderRadiusInPercentUndefined: Self = StObject.set(x, "maskBorderRadiusInPercent", js.undefined)
     
     @scala.inline
-    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    def setMaskBorderRadiusUndefined: Self = StObject.set(x, "maskBorderRadius", js.undefined)
     
     @scala.inline
-    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+    def setMaskColorUndefined: Self = StObject.set(x, "maskColor", js.undefined)
     
     @scala.inline
-    def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    def setMaskDuration(value: Double): Self = StObject.set(x, "maskDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+    def setMaskDurationUndefined: Self = StObject.set(x, "maskDuration", js.undefined)
     
     @scala.inline
-    def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    def setMaskEnabled(value: Boolean): Self = StObject.set(x, "maskEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    def setMaskEnabledUndefined: Self = StObject.set(x, "maskEnabled", js.undefined)
     
     @scala.inline
-    def setPressRetentionOffset(value: Insets): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
+    def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressRetentionOffsetUndefined: Self = StObject.set(x, "pressRetentionOffset", js.undefined)
+    def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
+    @scala.inline
+    def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    
+    @scala.inline
+    def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
+    
+    @scala.inline
+    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    
+    @scala.inline
+    def setRippleDuration(value: Double): Self = StObject.set(x, "rippleDuration", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRippleDurationUndefined: Self = StObject.set(x, "rippleDuration", js.undefined)
+    
+    @scala.inline
+    def setRippleLocation(value: rippleLocation): Self = StObject.set(x, "rippleLocation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRippleLocationUndefined: Self = StObject.set(x, "rippleLocation", js.undefined)
+    
+    @scala.inline
+    def setShadowAniEnabled(value: Boolean): Self = StObject.set(x, "shadowAniEnabled", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShadowAniEnabledUndefined: Self = StObject.set(x, "shadowAniEnabled", js.undefined)
+    
+    @scala.inline
+    def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
+    
+    @scala.inline
+    def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
+    
+    @scala.inline
+    def setTvParallaxShiftDistanceX(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
+    
+    @scala.inline
+    def setTvParallaxShiftDistanceY(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
+    
+    @scala.inline
+    def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
   }
 }

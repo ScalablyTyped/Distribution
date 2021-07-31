@@ -2,15 +2,13 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDevice extends StObject {
   
-  var isChrome: js.UndefOr[Boolean] = js.native
+  var isChrome: js.UndefOr[Boolean] = js.undefined
   
-  var isMobile: js.UndefOr[Boolean] = js.native
+  var isMobile: js.UndefOr[Boolean] = js.undefined
 }
 object IDevice {
   

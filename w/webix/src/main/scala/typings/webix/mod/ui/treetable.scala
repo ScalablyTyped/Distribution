@@ -8,13 +8,13 @@ import typings.webix.mod.WebixCallback
 import typings.webix.mod.WebixTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.treetable")
 @js.native
 class treetable ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$customPrint")
   def $customPrint(args: js.Any*): js.Any = js.native
@@ -72,9 +72,9 @@ class treetable ()
   var $touch_Original: WebixCallback = js.native
   
   def add(obj: js.Any): String = js.native
-  def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native
   def add(obj: js.Any, index: Double): String = js.native
   def add(obj: js.Any, index: Double, parentId: String): String = js.native
+  def add(obj: js.Any, index: Unit, parentId: String): String = js.native
   
   def addCellCss(id: String, name: String, css: String): Unit = js.native
   
@@ -86,46 +86,18 @@ class treetable ()
   def addRowCss(id: String, css: String): Unit = js.native
   
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean): Unit = js.native
-  def addSelectArea(
-    start: js.Any,
-    end: js.Any,
-    preserve: Boolean,
-    area_name: js.UndefOr[scala.Nothing],
-    css: js.UndefOr[scala.Nothing],
-    handle: Boolean
-  ): Unit = js.native
-  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: js.UndefOr[scala.Nothing], css: String): Unit = js.native
-  def addSelectArea(
-    start: js.Any,
-    end: js.Any,
-    preserve: Boolean,
-    area_name: js.UndefOr[scala.Nothing],
-    css: String,
-    handle: Boolean
-  ): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String): Unit = js.native
-  def addSelectArea(
-    start: js.Any,
-    end: js.Any,
-    preserve: Boolean,
-    area_name: String,
-    css: js.UndefOr[scala.Nothing],
-    handle: Boolean
-  ): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: String): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: String, handle: Boolean): Unit = js.native
+  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: Unit, handle: Boolean): Unit = js.native
+  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: Unit, css: String): Unit = js.native
+  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: Unit, css: String, handle: Boolean): Unit = js.native
+  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: Unit, css: Unit, handle: Boolean): Unit = js.native
   
   def addSpan(id: js.Any, column: String, width: Double, height: Double): Unit = js.native
-  def addSpan(
-    id: js.Any,
-    column: String,
-    width: Double,
-    height: Double,
-    value: js.UndefOr[scala.Nothing],
-    css: String
-  ): Unit = js.native
   def addSpan(id: js.Any, column: String, width: Double, height: Double, value: String): Unit = js.native
   def addSpan(id: js.Any, column: String, width: Double, height: Double, value: String, css: String): Unit = js.native
+  def addSpan(id: js.Any, column: String, width: Double, height: Double, value: Unit, css: String): Unit = js.native
   
   def adjustColumn(id: String): Unit = js.native
   def adjustColumn(id: String, mode: String): Unit = js.native
@@ -133,16 +105,19 @@ class treetable ()
   def adjustColumn(id: Double, mode: String): Unit = js.native
   
   def adjustRowHeight(): Unit = js.native
-  def adjustRowHeight(columnId: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
   def adjustRowHeight(columnId: String): Unit = js.native
   def adjustRowHeight(columnId: String, silent: Boolean): Unit = js.native
+  def adjustRowHeight(columnId: Unit, silent: Boolean): Unit = js.native
   
   def attachEvent(`type`: treetableEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: treetableEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def checkAll(): Unit = js.native
   def checkAll(id: String): Unit = js.native
@@ -168,8 +143,8 @@ class treetable ()
   def closeSub(id: String): Unit = js.native
   def closeSub(id: Double): Unit = js.native
   
-  def collectValues(id: String, mode: js.Any): js.Array[_] = js.native
-  def collectValues(id: Double, mode: js.Any): js.Array[_] = js.native
+  def collectValues(id: String, mode: js.Any): js.Array[js.Any] = js.native
+  def collectValues(id: Double, mode: js.Any): js.Array[js.Any] = js.native
   
   def columnId(index: Double): String | Double = js.native
   
@@ -177,11 +152,11 @@ class treetable ()
   var config_treetable: treetableConfig = js.native
   
   def copy(sid: String, tindex: Double): Double = js.native
-  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
   def copy(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
-  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: Unit, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): Double = js.native
   
@@ -201,21 +176,21 @@ class treetable ()
   def editCancel(): Unit = js.native
   
   def editCell(row: String, col: String): Unit = js.native
-  def editCell(row: String, col: String, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: String, col: String, preserve: Boolean): Unit = js.native
   def editCell(row: String, col: String, preserve: Boolean, show: Boolean): Unit = js.native
+  def editCell(row: String, col: String, preserve: Unit, show: Boolean): Unit = js.native
   def editCell(row: String, col: Double): Unit = js.native
-  def editCell(row: String, col: Double, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: String, col: Double, preserve: Boolean): Unit = js.native
   def editCell(row: String, col: Double, preserve: Boolean, show: Boolean): Unit = js.native
+  def editCell(row: String, col: Double, preserve: Unit, show: Boolean): Unit = js.native
   def editCell(row: Double, col: String): Unit = js.native
-  def editCell(row: Double, col: String, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: Double, col: String, preserve: Boolean): Unit = js.native
   def editCell(row: Double, col: String, preserve: Boolean, show: Boolean): Unit = js.native
+  def editCell(row: Double, col: String, preserve: Unit, show: Boolean): Unit = js.native
   def editCell(row: Double, col: Double): Unit = js.native
-  def editCell(row: Double, col: Double, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: Double, col: Double, preserve: Boolean): Unit = js.native
   def editCell(row: Double, col: Double, preserve: Boolean, show: Boolean): Unit = js.native
+  def editCell(row: Double, col: Double, preserve: Unit, show: Boolean): Unit = js.native
   
   def editColumn(id: String): Unit = js.native
   
@@ -228,14 +203,18 @@ class treetable ()
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   
-  def filter(text: WebixCallback | WebixTemplate): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
-  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: String, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback): Unit = js.native
+  def filter(text: WebixCallback, value: String): Unit = js.native
+  def filter(text: WebixCallback, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate): Unit = js.native
+  def filter(text: WebixTemplate, value: String): Unit = js.native
+  def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
   def filterByAll(): Unit = js.native
   
@@ -253,7 +232,7 @@ class treetable ()
   def getBranchIndex(id: Double, parent: String): Double = js.native
   def getBranchIndex(id: Double, parent: Double): Double = js.native
   
-  def getChecked(): js.Array[_] = js.native
+  def getChecked(): js.Array[js.Any] = js.native
   
   def getColumnConfig(id: String): js.Any = js.native
   
@@ -268,11 +247,11 @@ class treetable ()
   def getEditState(): js.Any = js.native
   
   def getEditor(): js.Any = js.native
-  def getEditor(row: js.UndefOr[scala.Nothing], column: String): js.Any = js.native
-  def getEditor(row: js.UndefOr[scala.Nothing], column: Double): js.Any = js.native
   def getEditor(row: js.Any): js.Any = js.native
   def getEditor(row: js.Any, column: String): js.Any = js.native
   def getEditor(row: js.Any, column: Double): js.Any = js.native
+  def getEditor(row: Unit, column: String): js.Any = js.native
+  def getEditor(row: Unit, column: Double): js.Any = js.native
   
   def getEditorValue(): String = js.native
   
@@ -313,7 +292,7 @@ class treetable ()
   def getNextSiblingId(id: String): String | Double = js.native
   def getNextSiblingId(id: Double): String | Double = js.native
   
-  def getOpenItems(): js.Array[_] = js.native
+  def getOpenItems(): js.Array[js.Any] = js.native
   
   def getPage(): Double = js.native
   
@@ -337,7 +316,7 @@ class treetable ()
   def getSelectedItem(): js.Any = js.native
   def getSelectedItem(as_array: Boolean): js.Any = js.native
   
-  def getSpan(): js.Array[_] = js.native
+  def getSpan(): js.Array[js.Any] = js.native
   
   def getSpanNode(id: js.Any): HTMLElement = js.native
   
@@ -365,21 +344,21 @@ class treetable ()
   var headerContent: js.Any = js.native
   
   def hideColumn(id: String): Unit = js.native
-  def hideColumn(id: String, options: js.UndefOr[scala.Nothing], silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
-  def hideColumn(id: String, options: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
-  def hideColumn(id: String, options: js.UndefOr[scala.Nothing], silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: String, options: js.Any): Unit = js.native
-  def hideColumn(id: String, options: js.Any, silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
   def hideColumn(id: String, options: js.Any, silent: Boolean): Unit = js.native
   def hideColumn(id: String, options: js.Any, silent: Boolean, mode: Boolean): Unit = js.native
+  def hideColumn(id: String, options: js.Any, silent: Unit, mode: Boolean): Unit = js.native
+  def hideColumn(id: String, options: Unit, silent: Boolean): Unit = js.native
+  def hideColumn(id: String, options: Unit, silent: Boolean, mode: Boolean): Unit = js.native
+  def hideColumn(id: String, options: Unit, silent: Unit, mode: Boolean): Unit = js.native
   def hideColumn(id: Double): Unit = js.native
-  def hideColumn(id: Double, options: js.UndefOr[scala.Nothing], silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
-  def hideColumn(id: Double, options: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
-  def hideColumn(id: Double, options: js.UndefOr[scala.Nothing], silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: Double, options: js.Any): Unit = js.native
-  def hideColumn(id: Double, options: js.Any, silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
   def hideColumn(id: Double, options: js.Any, silent: Boolean): Unit = js.native
   def hideColumn(id: Double, options: js.Any, silent: Boolean, mode: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: js.Any, silent: Unit, mode: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: Unit, silent: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: Unit, silent: Boolean, mode: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: Unit, silent: Unit, mode: Boolean): Unit = js.native
   
   def hideOverlay(): Unit = js.native
   
@@ -400,15 +379,15 @@ class treetable ()
   def isSelected(id: String): Unit = js.native
   def isSelected(id: Double): Unit = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
-  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
-  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[_] = js.native
+  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
+  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
   
   def locate(node: Event): js.Any = js.native
   def locate(node: HTMLElement): js.Any = js.native
@@ -422,11 +401,11 @@ class treetable ()
   def markSorting(column_id: String, direction: String): Unit = js.native
   
   def move(sid: String, tindex: Double): String | Double = js.native
-  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: Unit, details: js.Any): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): String | Double = js.native
   def move(sid: Double, tindex: Double): String | Double = js.native
-  def move(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: Unit, details: js.Any): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: typings.webix.webix.ui.baseview, details: js.Any): String | Double = js.native
   
@@ -477,9 +456,9 @@ class treetable ()
   def refresh(id: Double): Unit = js.native
   
   def refreshColumns(): Unit = js.native
-  def refreshColumns(config: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
-  def refreshColumns(config: js.Array[_]): Unit = js.native
-  def refreshColumns(config: js.Array[_], reset: Boolean): Unit = js.native
+  def refreshColumns(config: js.Array[js.Any]): Unit = js.native
+  def refreshColumns(config: js.Array[js.Any], reset: Boolean): Unit = js.native
+  def refreshColumns(config: Unit, reset: Boolean): Unit = js.native
   
   def refreshFilter(id: String): Unit = js.native
   def refreshFilter(id: Double): Unit = js.native
@@ -489,7 +468,7 @@ class treetable ()
   def registerFilter(`object`: js.Any, config: js.Any, controller: js.Any): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[_]): Unit = js.native
+  def remove(id: js.Array[js.Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
   def removeCellCss(id: String, name: String, css_name: String): Unit = js.native
@@ -530,12 +509,12 @@ class treetable ()
   def selectRange(row_id: Double, end_row_id: Double): Unit = js.native
   def selectRange(row_id: Double, end_row_id: Double, preserve: Boolean): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(id: js.UndefOr[scala.Nothing], all: Boolean): js.Array[_] = js.native
-  def serialize(id: String): js.Array[_] = js.native
-  def serialize(id: String, all: Boolean): js.Array[_] = js.native
-  def serialize(id: Double): js.Array[_] = js.native
-  def serialize(id: Double, all: Boolean): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(id: String): js.Array[js.Any] = js.native
+  def serialize(id: String, all: Boolean): js.Array[js.Any] = js.native
+  def serialize(id: Double): js.Array[js.Any] = js.native
+  def serialize(id: Double, all: Boolean): js.Array[js.Any] = js.native
+  def serialize(id: Unit, all: Boolean): js.Array[js.Any] = js.native
   
   def setColumnWidth(id: String, width: Double): Unit = js.native
   def setColumnWidth(id: Double, width: Double): Unit = js.native
@@ -563,9 +542,9 @@ class treetable ()
   def showOverlay(message: String): Unit = js.native
   
   def sort(by: String): Unit = js.native
-  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
+  def sort(by: String, dir: Unit, as: String): Unit = js.native
   
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
@@ -596,7 +575,7 @@ class treetable ()
   def validateEditor(id: String): Boolean = js.native
   def validateEditor(id: Double): Boolean = js.native
   
-  var waitData: js.Promise[_] = js.native
+  var waitData: js.Promise[js.Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
 }

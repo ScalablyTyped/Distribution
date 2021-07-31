@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentalControlSettings extends StObject {
   
   /**
     * Specifies the two-letter ISO country codes. Access to the application will be blocked for minors from the countries
     * specified in this list.
     */
-  var countriesBlockedForMinors: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var countriesBlockedForMinors: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Specifies the legal age group rule that applies to users of the app. Can be set to one of the following values:
@@ -22,7 +20,7 @@ trait ParentalControlSettings extends StObject {
     * rules.RequireConsentForKidsRequires parental consent for ages below 14, regardless of country minor
     * rules.BlockMinorsBlocks minors from using the app.
     */
-  var legalAgeGroupRule: js.UndefOr[NullableOption[String]] = js.native
+  var legalAgeGroupRule: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ParentalControlSettings {
   

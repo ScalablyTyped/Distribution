@@ -3,33 +3,30 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.exportOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSLayerExportOptions extends StObject {
   
-  var _class: exportOptions = js.native
+  var _class: exportOptions
   
-  var exportFormats: js.Array[_] = js.native
+  var exportFormats: js.Array[js.Any]
   
-  var includedLayerIds: js.Array[_] = js.native
+  var includedLayerIds: js.Array[js.Any]
   
-  var layerOptions: Double = js.native
+  var layerOptions: Double
   
-  var shouldTrim: Boolean = js.native
+  var shouldTrim: Boolean
 }
 object SketchMSLayerExportOptions {
   
   @scala.inline
   def apply(
-    _class: exportOptions,
-    exportFormats: js.Array[_],
-    includedLayerIds: js.Array[_],
+    exportFormats: js.Array[js.Any],
+    includedLayerIds: js.Array[js.Any],
     layerOptions: Double,
     shouldTrim: Boolean
   ): SketchMSLayerExportOptions = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], exportFormats = exportFormats.asInstanceOf[js.Any], includedLayerIds = includedLayerIds.asInstanceOf[js.Any], layerOptions = layerOptions.asInstanceOf[js.Any], shouldTrim = shouldTrim.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "exportOptions", exportFormats = exportFormats.asInstanceOf[js.Any], includedLayerIds = includedLayerIds.asInstanceOf[js.Any], layerOptions = layerOptions.asInstanceOf[js.Any], shouldTrim = shouldTrim.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSLayerExportOptions]
   }
   
@@ -37,13 +34,13 @@ object SketchMSLayerExportOptions {
   implicit class SketchMSLayerExportOptionsMutableBuilder[Self <: SketchMSLayerExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExportFormats(value: js.Array[_]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
+    def setExportFormats(value: js.Array[js.Any]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExportFormatsVarargs(value: js.Any*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedLayerIds(value: js.Array[_]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
+    def setIncludedLayerIds(value: js.Array[js.Any]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIncludedLayerIdsVarargs(value: js.Any*): Self = StObject.set(x, "includedLayerIds", js.Array(value :_*))

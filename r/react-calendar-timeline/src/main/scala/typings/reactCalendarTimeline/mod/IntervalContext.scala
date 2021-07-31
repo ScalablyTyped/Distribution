@@ -3,15 +3,13 @@ package typings.reactCalendarTimeline.mod
 import typings.reactCalendarTimeline.anon.EndTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntervalContext extends StObject {
   
-  var interval: EndTime = js.native
+  var interval: EndTime
   
-  var intervalText: String = js.native
+  var intervalText: String
 }
 object IntervalContext {
   

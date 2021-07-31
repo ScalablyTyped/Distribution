@@ -11,8 +11,8 @@ A JSON file store for tough-cookie module
 | Full name          | tough-cookie-file-store |
 | Keywords           | HTTP, cookie, cookies, set-cookie, cookiejar, jar, RFC6265, RFC2965, store, file, json |
 | # releases         | 4 |
-| # dependents       | 33 |
-| # downloads        | 96562 |
+| # dependents       | 35 |
+| # downloads        | 134265 |
 | # stars            | 0 |
 
 ## Links

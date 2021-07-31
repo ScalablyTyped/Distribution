@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLayerVersionsResponse extends StObject {
   
   /**
     * A list of versions.
     */
-  var LayerVersions: js.UndefOr[LayerVersionsList] = js.native
+  var LayerVersions: js.UndefOr[LayerVersionsList] = js.undefined
   
   /**
     * A pagination token returned when the response doesn't contain all versions.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object ListLayerVersionsResponse {
   

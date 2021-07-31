@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,38 +14,62 @@ sealed trait ChartDataLabelPosition extends StObject
 object ChartDataLabelPosition extends StObject {
   
   @js.native
-  sealed trait bestFit extends ChartDataLabelPosition
+  sealed trait bestFit
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait bottom extends ChartDataLabelPosition
+  sealed trait bottom
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait callout extends ChartDataLabelPosition
+  sealed trait callout
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait center extends ChartDataLabelPosition
+  sealed trait center
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait insideBase extends ChartDataLabelPosition
+  sealed trait insideBase
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait insideEnd extends ChartDataLabelPosition
+  sealed trait insideEnd
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait invalid extends ChartDataLabelPosition
+  sealed trait invalid
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait left extends ChartDataLabelPosition
+  sealed trait left
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait none extends ChartDataLabelPosition
+  sealed trait none
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait outsideEnd extends ChartDataLabelPosition
+  sealed trait outsideEnd
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait right extends ChartDataLabelPosition
+  sealed trait right
+    extends StObject
+       with ChartDataLabelPosition
   
   @js.native
-  sealed trait top extends ChartDataLabelPosition
+  sealed trait top
+    extends StObject
+       with ChartDataLabelPosition
 }

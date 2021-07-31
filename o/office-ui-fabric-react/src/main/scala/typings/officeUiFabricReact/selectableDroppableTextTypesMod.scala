@@ -9,29 +9,29 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectableDroppableTextTypesMod {
   
-  @js.native
-  trait ISelectableDroppableTextProps[TComponent, TListenerElement] extends HTMLAttributes[TListenerElement] {
+  trait ISelectableDroppableTextProps[TComponent, TListenerElement]
+    extends StObject
+       with HTMLAttributes[TListenerElement] {
     
     /**
       * Aria Label for the ISelectableDroppableText for screen reader users.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Custom properties for ISelectableDroppableText's Callout used to render options.
       */
-    var calloutProps: js.UndefOr[ICalloutProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
       * Optional callback to access the ISelectableDroppableText interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[TComponent]] = js.native
+    var componentRef: js.UndefOr[IRefObject[TComponent]] = js.undefined
     
     /**
       * The key(s) that will be initially used to set a selected item.
@@ -39,74 +39,74 @@ object selectableDroppableTextTypesMod {
       * Mutually exclusive with `selectedKey`.
       * For Dropdown in multi-select mode, use `defaultSelectedKeys` instead.
       */
-    var defaultSelectedKey: js.UndefOr[String | Double | (js.Array[Double | String]) | Null] = js.native
+    var defaultSelectedKey: js.UndefOr[String | Double | (js.Array[Double | String]) | Null] = js.undefined
     
     /**
       * Whether or not the ISelectableDroppableText is disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Descriptive label for the ISelectableDroppableText Error Message
       */
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Descriptive label for the ISelectableDroppableText
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Optional prop that indicates if multi-choice selections are allowed or not.
       * @defaultvalue false
       */
-    var multiSelect: js.UndefOr[Boolean] = js.native
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback that is issued when the options callout is dismissed
       */
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional custom renderer for the ISelectableDroppableText container
       */
-    var onRenderContainer: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.native
+    var onRenderContainer: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.undefined
     
     /**
       * Optional custom renderer for the ISelectableDroppableText options
       */
-    var onRenderItem: js.UndefOr[IRenderFunction[ISelectableOption]] = js.native
+    var onRenderItem: js.UndefOr[IRenderFunction[ISelectableOption]] = js.undefined
     
     /**
       * Optional custom renderer for the ISelectableDroppableText list
       */
-    var onRenderList: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.native
+    var onRenderList: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.undefined
     
     /**
       * Optional custom renderer for the ISelectableDroppableText option content
       */
-    var onRenderOption: js.UndefOr[IRenderFunction[ISelectableOption]] = js.native
+    var onRenderOption: js.UndefOr[IRenderFunction[ISelectableOption]] = js.undefined
     
     /**
       * Whether or not the ComboBox/Dropdown should expand on keyboard focus.
       * @defaultvalue false
       */
-    var openOnKeyboardFocus: js.UndefOr[Boolean] = js.native
+    var openOnKeyboardFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Collection of options for this ISelectableDroppableText
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Custom properties for ISelectableDroppableText's Panel used to render options on small devices.
       */
-    var panelProps: js.UndefOr[IPanelProps] = js.native
+    var panelProps: js.UndefOr[IPanelProps] = js.undefined
     
     /**
       * Whether or not the ISelectableDroppableText is required.
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key(s) of the selected item. If you provide this, you must maintain selection
@@ -116,7 +116,7 @@ object selectableDroppableTextTypesMod {
       * Mutually exclusive with `defaultSelectedKey`.
       * For Dropdown in multi-select mode, use `selectedKeys` instead.
       */
-    var selectedKey: js.UndefOr[String | Double | (js.Array[Double | String]) | Null] = js.native
+    var selectedKey: js.UndefOr[String | Double | (js.Array[Double | String]) | Null] = js.undefined
   }
   object ISelectableDroppableTextProps {
     
@@ -127,7 +127,7 @@ object selectableDroppableTextTypesMod {
     }
     
     @scala.inline
-    implicit class ISelectableDroppableTextPropsMutableBuilder[Self <: ISelectableDroppableTextProps[_, _], TComponent, TListenerElement] (val x: Self with (ISelectableDroppableTextProps[TComponent, TListenerElement])) extends AnyVal {
+    implicit class ISelectableDroppableTextPropsMutableBuilder[Self <: ISelectableDroppableTextProps[?, ?], TComponent, TListenerElement] (val x: Self & (ISelectableDroppableTextProps[TComponent, TListenerElement])) extends AnyVal {
       
       @scala.inline
       def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])

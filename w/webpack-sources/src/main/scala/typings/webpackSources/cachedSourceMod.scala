@@ -3,7 +3,6 @@ package typings.webpackSources
 import typings.webpackSources.libMod.CachedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cachedSourceMod {

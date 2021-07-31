@@ -2,18 +2,16 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Inspector {
   
-  @js.native
   trait DetachedEvent extends StObject {
     
     /**
       * The reason why connection has been terminated.
       */
-    var reason: String = js.native
+    var reason: String
   }
   object DetachedEvent {
     

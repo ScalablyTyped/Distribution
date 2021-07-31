@@ -2,56 +2,56 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VppToken extends Entity {
+trait VppToken
+  extends StObject
+     with Entity {
   
   // The apple Id associated with the given Apple Volume Purchase Program Token.
-  var appleId: js.UndefOr[NullableOption[String]] = js.native
+  var appleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether or not apps for the VPP token will be automatically updated.
-  var automaticallyUpdateApps: js.UndefOr[Boolean] = js.native
+  var automaticallyUpdateApps: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not apps for the VPP token will be automatically updated.
-  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.native
+  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The expiration date time of the Apple Volume Purchase Program Token.
-  var expirationDateTime: js.UndefOr[String] = js.native
+  var expirationDateTime: js.UndefOr[String] = js.undefined
   
   // Last modification date time associated with the Apple Volume Purchase Program Token.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume
     * Purchase Program Token.
     */
-  var lastSyncDateTime: js.UndefOr[String] = js.native
+  var lastSyncDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token.
     * Possible values are: none, inProgress, completed, failed. Possible values are: none, inProgress, completed, failed.
     */
-  var lastSyncStatus: js.UndefOr[VppTokenSyncStatus] = js.native
+  var lastSyncStatus: js.UndefOr[VppTokenSyncStatus] = js.undefined
   
   // The organization associated with the Apple Volume Purchase Program Token
-  var organizationName: js.UndefOr[NullableOption[String]] = js.native
+  var organizationName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Current state of the Apple Volume Purchase Program Token. Possible values are: unknown, valid, expired, invalid,
     * assignedToExternalMDM. Possible values are: unknown, valid, expired, invalid, assignedToExternalMDM.
     */
-  var state: js.UndefOr[VppTokenState] = js.native
+  var state: js.UndefOr[VppTokenState] = js.undefined
   
   // The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
-  var token: js.UndefOr[NullableOption[String]] = js.native
+  var token: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible
     * values are: business, education. Possible values are: business, education.
     */
-  var vppTokenAccountType: js.UndefOr[VppTokenAccountType] = js.native
+  var vppTokenAccountType: js.UndefOr[VppTokenAccountType] = js.undefined
 }
 object VppToken {
   

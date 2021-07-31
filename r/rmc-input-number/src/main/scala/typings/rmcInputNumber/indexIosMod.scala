@@ -2,7 +2,6 @@ package typings.rmcInputNumber
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexIosMod {
@@ -36,19 +35,19 @@ object indexIosMod {
     def onPressOutUp(): Unit = js.native
   }
   
-  @js.native
   trait PropsType
-    extends typings.rmcInputNumber.baseMod.PropsType {
+    extends StObject
+       with typings.rmcInputNumber.baseMod.PropsType {
     
-    var downStyle: js.UndefOr[js.Any] = js.native
+    var downStyle: js.UndefOr[js.Any] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Any] = js.native
+    var inputStyle: js.UndefOr[js.Any] = js.undefined
     
-    var keyboardType: js.UndefOr[js.Any] = js.native
+    var keyboardType: js.UndefOr[js.Any] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
-    var upStyle: js.UndefOr[js.Any] = js.native
+    var upStyle: js.UndefOr[js.Any] = js.undefined
   }
   object PropsType {
     

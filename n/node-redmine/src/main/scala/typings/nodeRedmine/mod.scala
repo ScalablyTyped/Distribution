@@ -2,7 +2,6 @@ package typings.nodeRedmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,10 +39,9 @@ object mod {
     def upload(content: js.Any, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): UploadResult = js.native
   }
   
-  @js.native
   trait Issue extends StObject {
     
-    var issue: IssueRecord = js.native
+    var issue: IssueRecord
   }
   object Issue {
     
@@ -61,10 +59,9 @@ object mod {
     }
   }
   
-  @js.native
   trait IssueData extends StObject {
     
-    var issue: IssueParams = js.native
+    var issue: IssueParams
   }
   object IssueData {
     
@@ -82,30 +79,29 @@ object mod {
     }
   }
   
-  @js.native
   trait IssueParams extends StObject {
     
-    var assigned_to_id: js.UndefOr[Double] = js.native
+    var assigned_to_id: js.UndefOr[Double] = js.undefined
     
-    var category_id: js.UndefOr[Double] = js.native
+    var category_id: js.UndefOr[Double] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
-    var parent_issue_id: js.UndefOr[Double] = js.native
+    var parent_issue_id: js.UndefOr[Double] = js.undefined
     
-    var priority_id: js.UndefOr[Double] = js.native
+    var priority_id: js.UndefOr[Double] = js.undefined
     
-    var project_id: js.UndefOr[Double] = js.native
+    var project_id: js.UndefOr[Double] = js.undefined
     
-    var status_id: js.UndefOr[Double] = js.native
+    var status_id: js.UndefOr[Double] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var tracker_id: js.UndefOr[Double] = js.native
+    var tracker_id: js.UndefOr[Double] = js.undefined
     
-    var uploads: js.UndefOr[js.Array[UploadRecord]] = js.native
+    var uploads: js.UndefOr[js.Array[UploadRecord]] = js.undefined
   }
   object IssueParams {
     
@@ -189,44 +185,43 @@ object mod {
     }
   }
   
-  @js.native
   trait IssueRecord extends StObject {
     
-    var assigned_to: IssueRecordField = js.native
+    var assigned_to: IssueRecordField
     
-    var author: IssueRecordField = js.native
+    var author: IssueRecordField
     
-    var closed_on: String | Null = js.native
+    var closed_on: String | Null
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var description: String = js.native
+    var description: String
     
-    var done_ratio: Double = js.native
+    var done_ratio: Double
     
-    var due_date: String | Null = js.native
+    var due_date: String | Null
     
-    var id: Double = js.native
+    var id: Double
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var parent: js.UndefOr[IssueRecordField] = js.native
+    var parent: js.UndefOr[IssueRecordField] = js.undefined
     
-    var priority: IssueRecordField = js.native
+    var priority: IssueRecordField
     
-    var project: IssueRecordField = js.native
+    var project: IssueRecordField
     
-    var start_date: String | Null = js.native
+    var start_date: String | Null
     
-    var status: IssueRecordField = js.native
+    var status: IssueRecordField
     
-    var subject: String = js.native
+    var subject: String
     
-    var total_estimated_hours: Double | Null = js.native
+    var total_estimated_hours: Double | Null
     
-    var tracker: IssueRecordField = js.native
+    var tracker: IssueRecordField
     
-    var updated_at: String | Null = js.native
+    var updated_at: String | Null
   }
   object IssueRecord {
     
@@ -245,7 +240,7 @@ object mod {
       subject: String,
       tracker: IssueRecordField
     ): IssueRecord = {
-      val __obj = js.Dynamic.literal(assigned_to = assigned_to.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], done_ratio = done_ratio.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assigned_to = assigned_to.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], done_ratio = done_ratio.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_private = is_private.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], tracker = tracker.asInstanceOf[js.Any], closed_on = null, due_date = null, start_date = null, total_estimated_hours = null, updated_at = null)
       __obj.asInstanceOf[IssueRecord]
     }
     
@@ -326,12 +321,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IssueRecordField extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object IssueRecordField {
     
@@ -355,10 +349,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Issues extends StObject {
     
-    var issues: js.Array[IssueRecord] = js.native
+    var issues: js.Array[IssueRecord]
   }
   object Issues {
     
@@ -379,14 +372,13 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadRecord extends StObject {
     
-    var content_type: js.UndefOr[String] = js.native
+    var content_type: js.UndefOr[String] = js.undefined
     
-    var filename: String = js.native
+    var filename: String
     
-    var token: String = js.native
+    var token: String
   }
   object UploadRecord {
     
@@ -413,10 +405,9 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadResult extends StObject {
     
-    var upload: UploadRecord = js.native
+    var upload: UploadRecord
   }
   object UploadResult {
     

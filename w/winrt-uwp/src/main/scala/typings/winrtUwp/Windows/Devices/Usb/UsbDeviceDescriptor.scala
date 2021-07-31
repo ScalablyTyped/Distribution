@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Derives information from the USB device descriptor of the device. For an explanation of the device descriptor, see Table 9.8 in the Universal Serial Bus Specification. */
-@js.native
 trait UsbDeviceDescriptor extends StObject {
   
   /** Gets the bcdDeviceRevision field of the USB device descriptor. The value indicates the revision number defined by the device and is a binary-coded decimal number. */
-  var bcdDeviceRevision: Double = js.native
+  var bcdDeviceRevision: Double
   
   /** Gets the bcdUSB field of the USB device descriptor. The value indicates the version of the USB specification to which the device conforms. */
-  var bcdUsb: Double = js.native
+  var bcdUsb: Double
   
   /** Gets the bMaxPacketSize0 field of the USB device descriptor. The value indicates the maximum packet size, in bytes, for endpoint zero of the device. This value can be 8, 16, 32, or 64. */
-  var maxPacketSize0: Double = js.native
+  var maxPacketSize0: Double
   
   /** Gets the bNumConfigurations field of the USB device descriptor. The value indicates the total count of USB configurations supported by the device. */
-  var numberOfConfigurations: Double = js.native
+  var numberOfConfigurations: Double
   
   /** Gets the idProduct field of the USB device descriptor. This value indicates the device-specific product identifier and is assigned by the manufacturer. */
-  var productId: Double = js.native
+  var productId: Double
   
   /** Gets the idVendor field of the USB device descriptor. The value indicates the vendor identifier for the device as assigned by the USB specification committee. */
-  var vendorId: Double = js.native
+  var vendorId: Double
 }
 object UsbDeviceDescriptor {
   

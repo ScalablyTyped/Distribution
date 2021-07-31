@@ -2,26 +2,24 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn = js.native
+  var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
   /**
     * The ARN of the resource with the tags to be listed.
     */
-  var ResourceArn: GeneralArn = js.native
+  var ResourceArn: GeneralArn
   
   /**
     * A set of key-value pairs that are used to manage the resource.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

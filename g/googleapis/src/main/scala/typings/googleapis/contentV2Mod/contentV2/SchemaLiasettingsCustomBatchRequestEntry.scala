@@ -2,65 +2,63 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiasettingsCustomBatchRequestEntry extends StObject {
   
   /**
     * The ID of the account for which to get/update account shipping settings.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * Inventory validation contact email. Required only for
     * SetInventoryValidationContact.
     */
-  var contactEmail: js.UndefOr[String] = js.native
+  var contactEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Inventory validation contact name. Required only for
     * SetInventoryValidationContact.
     */
-  var contactName: js.UndefOr[String] = js.native
+  var contactName: js.UndefOr[String] = js.undefined
   
   /**
     * The country code. Required only for RequestInventoryVerification.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The GMB account. Required only for RequestGmbAccess.
     */
-  var gmbEmail: js.UndefOr[String] = js.native
+  var gmbEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The account Lia settings to update. Only defined if the method is update.
     */
-  var liaSettings: js.UndefOr[SchemaLiaSettings] = js.native
+  var liaSettings: js.UndefOr[SchemaLiaSettings] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of POS data provider. Required only for SetPosProvider.
     */
-  var posDataProviderId: js.UndefOr[String] = js.native
+  var posDataProviderId: js.UndefOr[String] = js.undefined
   
   /**
     * The account ID by which this merchant is known to the POS provider.
     */
-  var posExternalAccountId: js.UndefOr[String] = js.native
+  var posExternalAccountId: js.UndefOr[String] = js.undefined
 }
 object SchemaLiasettingsCustomBatchRequestEntry {
   

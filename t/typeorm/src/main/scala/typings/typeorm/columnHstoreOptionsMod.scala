@@ -2,19 +2,17 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnHstoreOptionsMod {
   
-  @js.native
   trait ColumnHstoreOptions extends StObject {
     
     /**
       * Return type of HSTORE column.
       * Returns value as string or as object.
       */
-    var hstoreType: js.UndefOr[String] = js.native
+    var hstoreType: js.UndefOr[String] = js.undefined
   }
   object ColumnHstoreOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRealtimeLogConfigsResult extends StObject {
   
   /**
     * A list of real-time log configurations.
     */
-  var RealtimeLogConfigs: js.UndefOr[typings.awsSdk.cloudfrontMod.RealtimeLogConfigs] = js.native
+  var RealtimeLogConfigs: js.UndefOr[typings.awsSdk.cloudfrontMod.RealtimeLogConfigs] = js.undefined
 }
 object ListRealtimeLogConfigsResult {
   

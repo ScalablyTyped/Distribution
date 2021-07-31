@@ -2,31 +2,29 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObserverHandle extends StObject {
   
   /**
   	 * Removes the listener or observer.j
   	 */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
   	 * @returns true if the callback is not going to be called
   	 */
-  def isSilenced(): Boolean = js.native
+  def isSilenced(): Boolean
   
   /**
   	 * Resume calling the callback with changes or events.
   	 */
-  def resume(): Unit = js.native
+  def resume(): Unit
   
   /**
   	 * Stops further firings of the callback. Any related observers will still stay up-to-date, so the old value will be updated as the data changes.
   	 */
-  def silence(): Unit = js.native
+  def silence(): Unit
 }
 object ObserverHandle {
   

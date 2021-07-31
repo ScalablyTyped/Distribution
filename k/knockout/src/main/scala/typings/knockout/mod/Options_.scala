@@ -2,19 +2,17 @@ package typings.knockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options_ extends StObject {
   
-  var createChildContextWithAs: Boolean = js.native
+  var createChildContextWithAs: Boolean
   
-  var deferUpdates: Boolean = js.native
+  var deferUpdates: Boolean
   
-  var foreachHidesDestroyed: Boolean = js.native
+  var foreachHidesDestroyed: Boolean
   
-  var useOnlyNativeEvents: Boolean = js.native
+  var useOnlyNativeEvents: Boolean
 }
 object Options_ {
   

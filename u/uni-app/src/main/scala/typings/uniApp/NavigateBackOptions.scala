@@ -12,16 +12,14 @@ import typings.uniApp.uniAppStrings.auto
 import typings.uniApp.uniAppStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateBackOptions extends StObject {
   
   /**
     * 窗口关闭动画的持续时间，单位为 ms
     */
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * 窗口关闭的动画类型
@@ -38,12 +36,12 @@ trait NavigateBackOptions extends StObject {
     */
   var animationType: js.UndefOr[
     auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * 返回的页面数，如果 delta 大于现有页面数，则返回到首页
     */
-  var delta: js.UndefOr[Double] = js.native
+  var delta: js.UndefOr[Double] = js.undefined
 }
 object NavigateBackOptions {
   

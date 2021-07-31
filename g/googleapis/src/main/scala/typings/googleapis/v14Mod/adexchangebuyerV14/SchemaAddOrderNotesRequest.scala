@@ -2,16 +2,14 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAddOrderNotesRequest extends StObject {
   
   /**
     * The list of notes to add.
     */
-  var notes: js.UndefOr[js.Array[SchemaMarketplaceNote]] = js.native
+  var notes: js.UndefOr[js.Array[SchemaMarketplaceNote]] = js.undefined
 }
 object SchemaAddOrderNotesRequest {
   

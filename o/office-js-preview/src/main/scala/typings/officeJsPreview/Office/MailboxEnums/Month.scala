@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,71 +23,95 @@ object Month extends StObject {
     * April
     */
   @js.native
-  sealed trait Apr extends Month
+  sealed trait Apr
+    extends StObject
+       with Month
   
   /**
     * August
     */
   @js.native
-  sealed trait Aug extends Month
+  sealed trait Aug
+    extends StObject
+       with Month
   
   /**
     * December
     */
   @js.native
-  sealed trait Dec extends Month
+  sealed trait Dec
+    extends StObject
+       with Month
   
   /**
     * February
     */
   @js.native
-  sealed trait Feb extends Month
+  sealed trait Feb
+    extends StObject
+       with Month
   
   /**
     * January
     */
   @js.native
-  sealed trait Jan extends Month
+  sealed trait Jan
+    extends StObject
+       with Month
   
   /**
     * July
     */
   @js.native
-  sealed trait Jul extends Month
+  sealed trait Jul
+    extends StObject
+       with Month
   
   /**
     * June
     */
   @js.native
-  sealed trait Jun extends Month
+  sealed trait Jun
+    extends StObject
+       with Month
   
   /**
     * March
     */
   @js.native
-  sealed trait Mar extends Month
+  sealed trait Mar
+    extends StObject
+       with Month
   
   /**
     * May
     */
   @js.native
-  sealed trait May extends Month
+  sealed trait May
+    extends StObject
+       with Month
   
   /**
     * November
     */
   @js.native
-  sealed trait Nov extends Month
+  sealed trait Nov
+    extends StObject
+       with Month
   
   /**
     * October
     */
   @js.native
-  sealed trait Oct extends Month
+  sealed trait Oct
+    extends StObject
+       with Month
   
   /**
     * September
     */
   @js.native
-  sealed trait Sep extends Month
+  sealed trait Sep
+    extends StObject
+       with Month
 }

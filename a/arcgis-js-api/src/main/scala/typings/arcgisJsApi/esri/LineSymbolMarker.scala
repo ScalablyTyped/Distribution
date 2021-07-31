@@ -12,11 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.square
 import typings.arcgisJsApi.arcgisJsApiStrings.x
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineSymbolMarker extends Accessor {
+trait LineSymbolMarker
+  extends StObject
+     with Accessor {
   
   /**
     * The color of the marker.

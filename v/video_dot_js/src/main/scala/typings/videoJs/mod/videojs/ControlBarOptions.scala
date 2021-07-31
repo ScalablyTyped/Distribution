@@ -2,15 +2,15 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ControlBarOptions extends ComponentOptions {
+trait ControlBarOptions
+  extends StObject
+     with ComponentOptions {
   
-  var fullscreenToggle: js.UndefOr[Boolean] = js.native
+  var fullscreenToggle: js.UndefOr[Boolean] = js.undefined
   
-  var volumePanel: js.UndefOr[VolumePanelOptions] = js.native
+  var volumePanel: js.UndefOr[VolumePanelOptions] = js.undefined
 }
 object ControlBarOptions {
   

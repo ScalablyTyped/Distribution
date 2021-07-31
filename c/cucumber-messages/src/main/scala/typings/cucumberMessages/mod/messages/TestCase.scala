@@ -9,7 +9,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a TestCase. */
@@ -25,6 +24,10 @@ class TestCase ()
 }
 object TestCase {
   
+  @JSImport("cucumber-messages", "messages.TestCase")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents a TestStep. */
   @JSImport("cucumber-messages", "messages.TestCase.TestStep")
   @js.native
@@ -38,18 +41,20 @@ object TestCase {
   }
   object TestStep {
     
+    @JSImport("cucumber-messages", "messages.TestCase.TestStep")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new TestStep instance using the specified properties.
       * @param [properties] Properties to set
       * @returns TestStep instance
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.create")
-    @js.native
-    def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.create")
-    @js.native
-    def create(properties: ITestStep): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
+    @scala.inline
+    def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
+    @scala.inline
+    def create(properties: ITestStep): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
     
     /**
       * Decodes a TestStep message from the specified reader or buffer.
@@ -60,18 +65,14 @@ object TestCase {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.decode")
-    @js.native
-    def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
     
     /**
       * Decodes a TestStep message from the specified reader or buffer, length delimited.
@@ -81,12 +82,10 @@ object TestCase {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
     
     /**
       * Encodes the specified TestStep message. Does not implicitly {@link io.cucumber.messages.TestCase.TestStep.verify|verify} messages.
@@ -95,12 +94,10 @@ object TestCase {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.encode")
-    @js.native
-    def encode(message: ITestStep): Writer = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.encode")
-    @js.native
-    def encode(message: ITestStep, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ITestStep): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ITestStep, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified TestStep message, length delimited. Does not implicitly {@link io.cucumber.messages.TestCase.TestStep.verify|verify} messages.
@@ -109,12 +106,10 @@ object TestCase {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ITestStep): Writer = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ITestStep, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ITestStep): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ITestStep, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a TestStep message from a plain object. Also converts values to their respective internal types.
@@ -122,9 +117,8 @@ object TestCase {
       * @returns TestStep
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep]
     
     /**
       * Creates a plain object from a TestStep message. Also converts values to other types if specified.
@@ -133,15 +127,13 @@ object TestCase {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.toObject")
-    @js.native
-    def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep): StringDictionary[js.Any] = js.native
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.toObject")
-    @js.native
+    @scala.inline
+    def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
     def toObject(
       message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase.TestStep,
       options: IConversionOptions
-    ): StringDictionary[js.Any] = js.native
+    ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a TestStep message.
@@ -149,9 +141,8 @@ object TestCase {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("cucumber-messages", "messages.TestCase.TestStep.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -160,12 +151,10 @@ object TestCase {
     * @returns TestCase instance
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.create")
-  @js.native
-  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.create")
-  @js.native
-  def create(properties: ITestCase): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
+  @scala.inline
+  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
+  @scala.inline
+  def create(properties: ITestCase): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
   
   /**
     * Decodes a TestCase message from the specified reader or buffer.
@@ -176,18 +165,14 @@ object TestCase {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.decode")
-  @js.native
-  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
   
   /**
     * Decodes a TestCase message from the specified reader or buffer, length delimited.
@@ -197,12 +182,10 @@ object TestCase {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
   
   /**
     * Encodes the specified TestCase message. Does not implicitly {@link io.cucumber.messages.TestCase.verify|verify} messages.
@@ -211,12 +194,10 @@ object TestCase {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.encode")
-  @js.native
-  def encode(message: ITestCase): Writer = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.encode")
-  @js.native
-  def encode(message: ITestCase, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ITestCase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ITestCase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified TestCase message, length delimited. Does not implicitly {@link io.cucumber.messages.TestCase.verify|verify} messages.
@@ -225,12 +206,10 @@ object TestCase {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITestCase): Writer = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITestCase, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ITestCase): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ITestCase, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a TestCase message from a plain object. Also converts values to their respective internal types.
@@ -238,9 +217,8 @@ object TestCase {
     * @returns TestCase
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase]
   
   /**
     * Creates a plain object from a TestCase message. Also converts values to other types if specified.
@@ -249,15 +227,13 @@ object TestCase {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.toObject")
-  @js.native
-  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages", "messages.TestCase.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCase,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a TestCase message.
@@ -265,7 +241,6 @@ object TestCase {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.TestCase.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

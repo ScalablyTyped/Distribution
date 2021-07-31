@@ -3,19 +3,17 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Source information used to create a Service Config
   */
-@js.native
 trait SchemaSourceInfo extends StObject {
   
   /**
     * All files used during config generation.
     */
-  var sourceFiles: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var sourceFiles: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
 }
 object SchemaSourceInfo {
   
@@ -29,7 +27,7 @@ object SchemaSourceInfo {
   implicit class SchemaSourceInfoMutableBuilder[Self <: SchemaSourceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setSourceFiles(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
+    def setSourceFiles(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)

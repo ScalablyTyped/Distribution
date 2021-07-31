@@ -2,33 +2,31 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Guid extends StObject {
   
-  var businessId: js.UndefOr[Double] = js.native
+  var businessId: js.UndefOr[Double] = js.undefined
   
-  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var noteStoreUrl: js.UndefOr[String] = js.native
+  var noteStoreUrl: js.UndefOr[String] = js.undefined
   
-  var shardId: js.UndefOr[String] = js.native
+  var shardId: js.UndefOr[String] = js.undefined
   
-  var shareKey: js.UndefOr[String] = js.native
+  var shareKey: js.UndefOr[String] = js.undefined
   
-  var shareName: js.UndefOr[String] = js.native
+  var shareName: js.UndefOr[String] = js.undefined
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var webApiUrlPrefix: js.UndefOr[String] = js.native
+  var webApiUrlPrefix: js.UndefOr[String] = js.undefined
 }
 object Guid {
   

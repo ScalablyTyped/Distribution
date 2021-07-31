@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGaugeGaugeArea extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[LinearGaugeGaugeAreaBorder] = js.native
+  var border: js.UndefOr[LinearGaugeGaugeAreaBorder] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Double | LinearGaugeGaugeAreaMargin] = js.native
+  var margin: js.UndefOr[Double | LinearGaugeGaugeAreaMargin] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object LinearGaugeGaugeArea {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Monitoredresourcedescriptors")
@@ -80,7 +79,7 @@ class ResourceProjectsMonitoredresourcedescriptors protected () extends StObject
     */
   def get(): GaxiosPromise[SchemaMonitoredResourceDescriptor] = js.native
   def get(callback: BodyResponseCallback[SchemaMonitoredResourceDescriptor]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMonitoredResourceDescriptor] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMonitoredResourceDescriptor] = js.native
   def get(params: ParamsResourceProjectsMonitoredresourcedescriptorsGet): GaxiosPromise[SchemaMonitoredResourceDescriptor] = js.native
   def get(
     params: ParamsResourceProjectsMonitoredresourcedescriptorsGet,
@@ -170,7 +169,7 @@ class ResourceProjectsMonitoredresourcedescriptors protected () extends StObject
     */
   def list(): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMonitoredResourceDescriptorsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
   def list(params: ParamsResourceProjectsMonitoredresourcedescriptorsList): GaxiosPromise[SchemaListMonitoredResourceDescriptorsResponse] = js.native
   def list(
     params: ParamsResourceProjectsMonitoredresourcedescriptorsList,

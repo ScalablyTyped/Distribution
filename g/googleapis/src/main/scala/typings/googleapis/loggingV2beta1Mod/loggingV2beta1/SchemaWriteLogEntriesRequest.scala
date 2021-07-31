@@ -3,13 +3,11 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The parameters to WriteLogEntries.
   */
-@js.native
 trait SchemaWriteLogEntriesRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaWriteLogEntriesRequest extends StObject {
     * the logging API endpoints are working properly before sending valuable
     * data.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The log entries to send to Logging. The order of log entries in
@@ -38,7 +36,7 @@ trait SchemaWriteLogEntriesRequest extends StObject {
     * entries.write, you should try to include several log entries in this
     * list, rather than calling this method for each individual log entry.
     */
-  var entries: js.UndefOr[js.Array[SchemaLogEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaLogEntry]] = js.undefined
   
   /**
     * Optional. Default labels that are added to the labels field of all log
@@ -46,7 +44,7 @@ trait SchemaWriteLogEntriesRequest extends StObject {
     * as a label in this parameter, then the log entry&#39;s label is not
     * changed. See LogEntry.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. A default log resource name that is assigned to all log entries
@@ -62,7 +60,7 @@ trait SchemaWriteLogEntriesRequest extends StObject {
     * receiving new log entries, whether the resource is specified in
     * &lt;code&gt;logName&lt;/code&gt; or in an individual log entry.
     */
-  var logName: js.UndefOr[String] = js.native
+  var logName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Whether valid entries should be written even if some other
@@ -71,7 +69,7 @@ trait SchemaWriteLogEntriesRequest extends StObject {
     * with one of the failed entries and the response includes error details
     * keyed by the entries&#39; zero-based index in the entries.write method.
     */
-  var partialSuccess: js.UndefOr[Boolean] = js.native
+  var partialSuccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. A default monitored resource object that is assigned to all log
@@ -80,7 +78,7 @@ trait SchemaWriteLogEntriesRequest extends StObject {
     * &quot;zone&quot;: &quot;us-central1-a&quot;, &quot;instance_id&quot;:
     * &quot;00000000000000000000&quot; }} See LogEntry.
     */
-  var resource: js.UndefOr[SchemaMonitoredResource] = js.native
+  var resource: js.UndefOr[SchemaMonitoredResource] = js.undefined
 }
 object SchemaWriteLogEntriesRequest {
   

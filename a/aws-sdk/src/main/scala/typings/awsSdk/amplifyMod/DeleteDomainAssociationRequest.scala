@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDomainAssociationRequest extends StObject {
   
   /**
     *  The unique id for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The name of the domain. 
     */
-  var domainName: DomainName = js.native
+  var domainName: DomainName
 }
 object DeleteDomainAssociationRequest {
   

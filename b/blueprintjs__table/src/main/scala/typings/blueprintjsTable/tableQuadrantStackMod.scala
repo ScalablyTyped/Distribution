@@ -13,7 +13,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableQuadrantStackMod {
@@ -184,24 +183,22 @@ object tableQuadrantStackMod {
   }
   
   @js.native
-  trait ITableQuadrantStackProps extends IProps {
+  trait ITableQuadrantStackProps
+    extends StObject
+       with IProps {
     
     /**
       * A callback that receives a `ref` to the main quadrant's table-body element.
       */
-    var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+    var bodyRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
     
     /**
       * A callback that renders either all of or just frozen sections of the table body.
       */
     def bodyRenderer(quadrantType: QuadrantType): Element = js.native
-    def bodyRenderer(
-      quadrantType: QuadrantType,
-      showFrozenRowsOnly: js.UndefOr[scala.Nothing],
-      showFrozenColumnsOnly: Boolean
-    ): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean): Element = js.native
     def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Boolean, showFrozenColumnsOnly: Boolean): Element = js.native
+    def bodyRenderer(quadrantType: QuadrantType, showFrozenRowsOnly: Unit, showFrozenColumnsOnly: Boolean): Element = js.native
     
     /**
       * A callback that renders either all of or just the frozen section of the column header.
@@ -362,12 +359,12 @@ object tableQuadrantStackMod {
     /**
       * A callback that receives a `ref` to the main quadrant's row-header container.
       */
-    var rowHeaderRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+    var rowHeaderRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
     
     /**
       * A callback that receives a `ref` to the main quadrant's scroll-container element.
       */
-    var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, _]] = js.native
+    var scrollContainerRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, js.Any]] = js.native
     
     /**
       * Whether "scroll" and "wheel" events should be throttled using

@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a data store that contains contact annotations. */
@@ -35,28 +34,28 @@ trait ContactAnnotationStore extends StObject {
     * Asynchronously gets the list of ContactAnnotationList objects for the app.
     * @return The list of ContactAnnotationList objects.
     */
-  def findAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAnnotationListsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Get the annotations for the specified Contact .
     * @param contact The Contact for which to retrieve annotations.
     * @return The list of ContactAnnotation objects.
     */
-  def findAnnotationsForContactAsync(contact: Contact): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findAnnotationsForContactAsync(contact: Contact): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets a list of Id values based on Contact objects with a specified email address.
     * @param emailAddress The email address used to find the contact Id values.
     * @return The list of Contact objects containing the specified emailAddress.
     */
-  def findContactIdsByEmailAsync(emailAddress: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findContactIdsByEmailAsync(emailAddress: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets a list of Id values based on Contact objects with a specified phone number.
     * @param phoneNumber The phone number used to find the contact Id values.
     * @return The list of Contact objects containing the specified phoneNumber.
     */
-  def findContactIdsByPhoneNumberAsync(phoneNumber: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findContactIdsByPhoneNumberAsync(phoneNumber: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously gets the ContactAnnotationList with the specified ID.

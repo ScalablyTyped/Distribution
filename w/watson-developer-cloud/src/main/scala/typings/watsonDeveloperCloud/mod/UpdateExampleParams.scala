@@ -2,31 +2,29 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateExample` operation. */
-@js.native
 trait UpdateExampleParams extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The intent name. */
-  var intent: String = js.native
+  var intent: String
   
   /** An array of contextual entity mentions. */
-  var new_mentions: js.UndefOr[js.Array[Mention]] = js.native
+  var new_mentions: js.UndefOr[js.Array[Mention]] = js.undefined
   
   /** The text of the user input example. This string must conform to the following restrictions: - It cannot contain carriage return, newline, or tab characters. - It cannot consist of only whitespace characters. - It must be no longer than 1024 characters. */
-  var new_text: js.UndefOr[String] = js.native
+  var new_text: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The text of the user input example. */
-  var text: String = js.native
+  var text: String
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object UpdateExampleParams {
   

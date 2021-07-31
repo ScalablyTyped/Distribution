@@ -10,9 +10,9 @@ React styling with base16 color scheme support
 | ------------------ | :-------------: |
 | Full name          | react-base16-styling |
 | Keywords           | react, theme, base16, styling |
-| # releases         | 1 |
-| # dependents       | 54 |
-| # downloads        | 14285467 |
+| # releases         | 3 |
+| # dependents       | 57 |
+| # downloads        | 17499117 |
 | # stars            | 0 |
 
 ## Links

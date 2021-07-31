@@ -8,91 +8,91 @@ import typings.recharts.rechartsStrings.number
 import typings.recharts.rechartsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YAxisProps extends EventAttributes {
+trait YAxisProps
+  extends StObject
+     with EventAttributes {
   
-  var allowDataOverflow: js.UndefOr[Boolean] = js.native
+  var allowDataOverflow: js.UndefOr[Boolean] = js.undefined
   
-  var allowDecimals: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
-  var allowDuplicatedCategory: js.UndefOr[Boolean] = js.native
+  var allowDuplicatedCategory: js.UndefOr[Boolean] = js.undefined
   
   // Rotation of tick labels
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var axisLine: js.UndefOr[Boolean | js.Object] = js.native
+  var axisLine: js.UndefOr[Boolean | js.Object] = js.undefined
   
   // The key of data displayed in the axis
-  var dataKey: js.UndefOr[DataKey] = js.native
+  var dataKey: js.UndefOr[DataKey] = js.undefined
   
-  var domain: js.UndefOr[js.Tuple2[AxisDomain, AxisDomain]] = js.native
+  var domain: js.UndefOr[js.Tuple2[AxisDomain, AxisDomain]] = js.undefined
   
   // X offset of tick label
-  var dx: js.UndefOr[Double] = js.native
+  var dx: js.UndefOr[Double] = js.undefined
   
   // Y offset of tick label
-  var dy: js.UndefOr[Double] = js.native
+  var dy: js.UndefOr[Double] = js.undefined
   
   // The height of axis which is usually calculated in Chart
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hide: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[Boolean] = js.undefined
   
-  var interval: js.UndefOr[AxisInterval] = js.native
+  var interval: js.UndefOr[AxisInterval] = js.undefined
   
   // see label section at http://recharts.org/#/en-US/api/YAxis
-  var label: js.UndefOr[String | Double | Label | LabelProps] = js.native
+  var label: js.UndefOr[String | Double | Label | LabelProps] = js.undefined
   
-  var minTickGap: js.UndefOr[Double] = js.native
+  var minTickGap: js.UndefOr[Double] = js.undefined
   
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
   // The name of data displayed in the axis
-  var name: js.UndefOr[String | Double] = js.native
+  var name: js.UndefOr[String | Double] = js.undefined
   
   // The orientation of axis
-  var orientation: js.UndefOr[left | right] = js.native
+  var orientation: js.UndefOr[left | right] = js.undefined
   
-  var padding: js.UndefOr[YPadding] = js.native
+  var padding: js.UndefOr[YPadding] = js.undefined
   
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
   
-  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.native
+  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
-  var tick: js.UndefOr[Boolean | ContentRenderer[_] | js.Object | ReactElement] = js.native
+  var tick: js.UndefOr[Boolean | ContentRenderer[js.Any] | js.Object | ReactElement] = js.undefined
   
   // The count of ticks
-  var tickCount: js.UndefOr[Double] = js.native
+  var tickCount: js.UndefOr[Double] = js.undefined
   
   // The formatter function of tick
-  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.native
+  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
   
-  var tickLine: js.UndefOr[Boolean | js.Object] = js.native
+  var tickLine: js.UndefOr[Boolean | js.Object] = js.undefined
   
   // The margin between tick line and the label
-  var tickMargin: js.UndefOr[Double] = js.native
+  var tickMargin: js.UndefOr[Double] = js.undefined
   
-  var tickSize: js.UndefOr[Double] = js.native
+  var tickSize: js.UndefOr[Double] = js.undefined
   
   // Ticks can be any type when the axis is the type of category
   // Ticks must be numbers when the axis is the type of number
-  var ticks: js.UndefOr[js.Array[_]] = js.native
+  var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var `type`: js.UndefOr[number | category] = js.native
+  var `type`: js.UndefOr[number | category] = js.undefined
   
   // The unit of data displayed in the axis
-  var unit: js.UndefOr[String | Double] = js.native
+  var unit: js.UndefOr[String | Double] = js.undefined
   
   // The width of axis, which need to be set by user
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   // The unique id of y-axis
-  var yAxisId: js.UndefOr[String | Double] = js.native
+  var yAxisId: js.UndefOr[String | Double] = js.undefined
 }
 object YAxisProps {
   
@@ -226,9 +226,6 @@ object YAxisProps {
     def setScale(value: ScaleType | RechartsFunction): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
-    
-    @scala.inline
     def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
@@ -238,7 +235,7 @@ object YAxisProps {
     def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def setTick(value: Boolean | ContentRenderer[_] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    def setTick(value: Boolean | ContentRenderer[js.Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
@@ -253,7 +250,7 @@ object YAxisProps {
     def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
     
     @scala.inline
-    def setTickFunction1(value: _ => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    def setTickFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTickLine(value: Boolean | js.Object): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
@@ -277,7 +274,7 @@ object YAxisProps {
     def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
     @scala.inline
-    def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)

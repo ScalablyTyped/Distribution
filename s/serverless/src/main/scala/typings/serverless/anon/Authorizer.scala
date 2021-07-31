@@ -3,21 +3,19 @@ package typings.serverless.anon
 import typings.serverless.validateMod.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorizer extends StObject {
   
-  var authorizer: js.UndefOr[js.Any] = js.native
+  var authorizer: js.UndefOr[js.Any] = js.undefined
   
-  var cors: js.UndefOr[js.Any] = js.native
+  var cors: js.UndefOr[js.Any] = js.undefined
   
-  var integration: js.UndefOr[String] = js.native
+  var integration: js.UndefOr[String] = js.undefined
   
-  var mehtod: HttpMethod = js.native
+  var mehtod: HttpMethod
   
-  var path: String = js.native
+  var path: String
 }
 object Authorizer {
   

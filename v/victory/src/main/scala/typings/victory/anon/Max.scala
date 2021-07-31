@@ -3,31 +3,29 @@ package typings.victory.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Max extends StObject {
   
-  var max: js.UndefOr[CSSProperties] = js.native
+  var max: js.UndefOr[CSSProperties] = js.undefined
   
-  var maxLabels: js.UndefOr[CSSProperties] = js.native
+  var maxLabels: js.UndefOr[CSSProperties] = js.undefined
   
-  var median: js.UndefOr[CSSProperties] = js.native
+  var median: js.UndefOr[CSSProperties] = js.undefined
   
-  var medianLabels: js.UndefOr[CSSProperties] = js.native
+  var medianLabels: js.UndefOr[CSSProperties] = js.undefined
   
-  var min: js.UndefOr[CSSProperties] = js.native
+  var min: js.UndefOr[CSSProperties] = js.undefined
   
-  var minLabels: js.UndefOr[CSSProperties] = js.native
+  var minLabels: js.UndefOr[CSSProperties] = js.undefined
   
-  var q1: js.UndefOr[CSSProperties] = js.native
+  var q1: js.UndefOr[CSSProperties] = js.undefined
   
-  var q1Labels: js.UndefOr[CSSProperties] = js.native
+  var q1Labels: js.UndefOr[CSSProperties] = js.undefined
   
-  var q3: js.UndefOr[CSSProperties] = js.native
+  var q3: js.UndefOr[CSSProperties] = js.undefined
   
-  var q3Labels: js.UndefOr[CSSProperties] = js.native
+  var q3Labels: js.UndefOr[CSSProperties] = js.undefined
 }
 object Max {
   

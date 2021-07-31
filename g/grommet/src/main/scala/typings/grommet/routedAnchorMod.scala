@@ -8,7 +8,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routedAnchorMod {
@@ -25,12 +24,11 @@ object routedAnchorMod {
   @js.native
   val RoutedAnchor: ComponentClass[RoutedAnchorPropsOmitAnch, ComponentState] = js.native
   
-  @js.native
   trait RoutedAnchorProps extends StObject {
     
-    var method: js.UndefOr[push | replace] = js.native
+    var method: js.UndefOr[push | replace] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object RoutedAnchorProps {
     

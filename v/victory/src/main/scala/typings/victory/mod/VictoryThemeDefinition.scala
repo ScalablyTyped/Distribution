@@ -10,41 +10,39 @@ import typings.victory.anon.styledataCSSPropertiesundColorScale
 import typings.victory.anon.stylemaxCSSPropertiesunde
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryThemeDefinition extends StObject {
   
-  var area: js.UndefOr[styledataCSSPropertiesund] = js.native
+  var area: js.UndefOr[styledataCSSPropertiesund] = js.undefined
   
-  var axis: js.UndefOr[styleaxisCSSPropertiesund] = js.native
+  var axis: js.UndefOr[styleaxisCSSPropertiesund] = js.undefined
   
-  var bar: js.UndefOr[styledataCSSPropertiesund] = js.native
+  var bar: js.UndefOr[styledataCSSPropertiesund] = js.undefined
   
-  var boxplot: js.UndefOr[stylemaxCSSPropertiesunde] = js.native
+  var boxplot: js.UndefOr[stylemaxCSSPropertiesunde] = js.undefined
   
-  var candlestick: js.UndefOr[styledataCSSPropertiesundCandleColors] = js.native
+  var candlestick: js.UndefOr[styledataCSSPropertiesundCandleColors] = js.undefined
   
-  var chart: js.UndefOr[ThemeBaseProps] = js.native
+  var chart: js.UndefOr[ThemeBaseProps] = js.undefined
   
-  var errorbar: js.UndefOr[borderWidthnumberundefine] = js.native
+  var errorbar: js.UndefOr[borderWidthnumberundefine] = js.undefined
   
-  var group: js.UndefOr[ThemeBaseProps] = js.native
+  var group: js.UndefOr[ThemeBaseProps] = js.undefined
   
-  var legend: js.UndefOr[gutternumberundefinedorie] = js.native
+  var legend: js.UndefOr[gutternumberundefinedorie] = js.undefined
   
-  var line: js.UndefOr[styledataCSSPropertiesund] = js.native
+  var line: js.UndefOr[styledataCSSPropertiesund] = js.undefined
   
-  var pie: js.UndefOr[styledataCSSPropertiesund] = js.native
+  var pie: js.UndefOr[styledataCSSPropertiesund] = js.undefined
   
-  var scatter: js.UndefOr[styledataCSSPropertiesund] = js.native
+  var scatter: js.UndefOr[styledataCSSPropertiesund] = js.undefined
   
-  var stack: js.UndefOr[ThemeBaseProps] = js.native
+  var stack: js.UndefOr[ThemeBaseProps] = js.undefined
   
-  var tooltip: js.UndefOr[CornerRadius] = js.native
+  var tooltip: js.UndefOr[CornerRadius] = js.undefined
   
-  var voronoi: js.UndefOr[styledataCSSPropertiesundColorScale] = js.native
+  var voronoi: js.UndefOr[styledataCSSPropertiesundColorScale] = js.undefined
 }
 object VictoryThemeDefinition {
   

@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.wordpressCustomizeBrowser.classMod.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
@@ -21,9 +20,9 @@ object notificationMod {
     var containerClasses: String = js.native
     
     def initialize(): Unit = js.native
-    def initialize(code: js.UndefOr[scala.Nothing], params: NotificationParams): Unit = js.native
     def initialize(code: String): Unit = js.native
     def initialize(code: String, params: NotificationParams): Unit = js.native
+    def initialize(code: Unit, params: NotificationParams): Unit = js.native
     
     def render(): JQuery[HTMLElement] = js.native
     
@@ -32,22 +31,21 @@ object notificationMod {
     var templateId: String = js.native
   }
   
-  @js.native
   trait NotificationParams extends StObject {
     
-    var containerClasses: js.UndefOr[String] = js.native
+    var containerClasses: js.UndefOr[String] = js.undefined
     
-    var dismissible: js.UndefOr[Boolean] = js.native
+    var dismissible: js.UndefOr[Boolean] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var setting: js.UndefOr[String] = js.native
+    var setting: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[js.Function1[/* data */ Notification, Unit]] = js.native
+    var template: js.UndefOr[js.Function1[/* data */ Notification, Unit]] = js.undefined
     
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NotificationParams {
     

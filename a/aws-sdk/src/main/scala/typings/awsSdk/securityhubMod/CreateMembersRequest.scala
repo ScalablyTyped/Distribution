@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMembersRequest extends StObject {
   
   /**
     * The list of accounts to associate with the Security Hub master account. For each account, the list includes the account ID and the email address.
     */
-  var AccountDetails: js.UndefOr[AccountDetailsList] = js.native
+  var AccountDetails: js.UndefOr[AccountDetailsList] = js.undefined
 }
 object CreateMembersRequest {
   

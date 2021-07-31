@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledInstancesPrivateIpAddressConfig extends StObject {
   
   /**
     * Indicates whether this is a primary IPv4 address. Otherwise, this is a secondary IPv4 address.
     */
-  var Primary: js.UndefOr[Boolean] = js.native
+  var Primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IPv4 address.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
 }
 object ScheduledInstancesPrivateIpAddressConfig {
   

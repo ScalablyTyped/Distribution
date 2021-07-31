@@ -2,19 +2,17 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PoiList extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var pageIndex: Double = js.native
+  var pageIndex: Double
   
-  var pageSize: Double = js.native
+  var pageSize: Double
   
-  var pois: js.Array[Poi] = js.native
+  var pois: js.Array[Poi]
 }
 object PoiList {
   

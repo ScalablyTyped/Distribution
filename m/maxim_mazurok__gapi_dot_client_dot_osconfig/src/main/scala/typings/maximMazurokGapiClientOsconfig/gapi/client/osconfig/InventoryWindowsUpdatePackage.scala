@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryWindowsUpdatePackage extends StObject {
   
   /** The categories that are associated with this update package. */
-  var categories: js.UndefOr[js.Array[InventoryWindowsUpdatePackageWindowsUpdateCategory]] = js.native
+  var categories: js.UndefOr[js.Array[InventoryWindowsUpdatePackageWindowsUpdateCategory]] = js.undefined
   
   /** The localized description of the update package. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** A collection of Microsoft Knowledge Base article IDs that are associated with the update package. */
-  var kbArticleIds: js.UndefOr[js.Array[String]] = js.native
+  var kbArticleIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The last published date of the update, in (UTC) date and time. */
-  var lastDeploymentChangeTime: js.UndefOr[String] = js.native
+  var lastDeploymentChangeTime: js.UndefOr[String] = js.undefined
   
   /** A collection of URLs that provide more information about the update package. */
-  var moreInfoUrls: js.UndefOr[js.Array[String]] = js.native
+  var moreInfoUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The revision number of this update package. */
-  var revisionNumber: js.UndefOr[Double] = js.native
+  var revisionNumber: js.UndefOr[Double] = js.undefined
   
   /** A hyperlink to the language-specific support information for the update. */
-  var supportUrl: js.UndefOr[String] = js.native
+  var supportUrl: js.UndefOr[String] = js.undefined
   
   /** The localized title of the update package. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Gets the identifier of an update package. Stays the same across revisions. */
-  var updateId: js.UndefOr[String] = js.native
+  var updateId: js.UndefOr[String] = js.undefined
 }
 object InventoryWindowsUpdatePackage {
   

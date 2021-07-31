@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * quantitative measurements. For example, the metric `ga:users` indicates the
   * total number of users for the requested time period.
   */
-@js.native
 trait SchemaMetric extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaMetric extends StObject {
     * complex expression which cannot be used in filtering and sorting. The
     * alias is also used in the response column header.
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * A metric expression in the request. An expression is constructed from one
@@ -32,13 +30,13 @@ trait SchemaMetric extends StObject {
     * mixed `MetricType` (E.g., `CURRENCY` + `PERCENTAGE`) metrics will result
     * in unexpected results.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how the metric expression should be formatted, for example
     * `INTEGER`.
     */
-  var formattingType: js.UndefOr[String] = js.native
+  var formattingType: js.UndefOr[String] = js.undefined
 }
 object SchemaMetric {
   

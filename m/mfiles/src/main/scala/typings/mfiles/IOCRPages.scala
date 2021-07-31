@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOCRPages extends StObject {
   
-  def Add(Index: Double, OCRPage: IOCRPage): Unit = js.native
+  def Add(Index: Double, OCRPage: IOCRPage): Unit
   
-  def Clone(): IOCRPages = js.native
+  def Clone(): IOCRPages
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IOCRPage = js.native
+  def Item(Index: Double): IOCRPage
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IOCRPages {
   

@@ -2,26 +2,24 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntitySpecification extends StObject {
   
   /** A Database. */
-  var db: Database = js.native
+  var db: Database
   
   /** Name of the loader that discovered the entity. */
-  var loader: String = js.native
+  var loader: String
   
   /** The entity's name. */
-  var name: String = js.native
+  var name: String
   
   /** Path to the entity, if a file. */
-  var path: String = js.native
+  var path: String
   
   /** Entity's owning schema, if a database object. */
-  var schema: String = js.native
+  var schema: String
 }
 object EntitySpecification {
   

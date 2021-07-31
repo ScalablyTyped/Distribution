@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PrintOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.PrintOrder with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.PrintOrder & String] = js.native
   
-  /* "DownThenOver" */ val downThenOver: typings.officeJs.Excel.PrintOrder.downThenOver with String = js.native
+  /* "DownThenOver" */ val downThenOver: typings.officeJs.Excel.PrintOrder.downThenOver & String = js.native
   
-  /* "OverThenDown" */ val overThenDown: typings.officeJs.Excel.PrintOrder.overThenDown with String = js.native
+  /* "OverThenDown" */ val overThenDown: typings.officeJs.Excel.PrintOrder.overThenDown & String = js.native
 }

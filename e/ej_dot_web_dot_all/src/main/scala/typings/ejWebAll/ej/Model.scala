@@ -2,39 +2,37 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
-  def bindTo(element: js.Any): Unit = js.native
+  def bindTo(element: js.Any): Unit
   
-  def changeState(state: Boolean, args: js.Any): Unit = js.native
+  def changeState(state: Boolean, args: js.Any): Unit
   
-  def computes(value: js.Any): Unit = js.native
+  def computes(value: js.Any): Unit
   
-  var formElements: js.Array[String] = js.native
+  var formElements: js.Array[String]
   
-  def get(field: String): js.Any = js.native
+  def get(field: String): js.Any
   
-  def markCommit(): Unit = js.native
+  def markCommit(): Unit
   
-  def markDelete(): Unit = js.native
+  def markDelete(): Unit
   
-  def off(eventName: String, handler: js.Any): Unit = js.native
+  def off(eventName: String, handler: js.Any): Unit
   
-  def on(eventName: String, handler: js.Any): Unit = js.native
+  def on(eventName: String, handler: js.Any): Unit
   
-  def properties(): js.Any = js.native
+  def properties(): js.Any
   
-  def revert(suspendEvent: js.Any): Unit = js.native
+  def revert(suspendEvent: js.Any): Unit
   
-  def save(dm: DataManager, key: String): Unit = js.native
+  def save(dm: DataManager, key: String): Unit
   
-  def set(field: String, value: js.Any): Unit = js.native
+  def set(field: String, value: js.Any): Unit
   
-  def unbind(element: js.Any): Unit = js.native
+  def unbind(element: js.Any): Unit
 }
 object Model {
   

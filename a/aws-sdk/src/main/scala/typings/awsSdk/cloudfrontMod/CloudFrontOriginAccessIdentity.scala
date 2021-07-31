@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFrontOriginAccessIdentity extends StObject {
   
   /**
     * The current configuration information for the identity. 
     */
-  var CloudFrontOriginAccessIdentityConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.CloudFrontOriginAccessIdentityConfig] = js.native
+  var CloudFrontOriginAccessIdentityConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.CloudFrontOriginAccessIdentityConfig] = js.undefined
   
   /**
     * The ID for the origin access identity, for example, E74FTE3AJFJ256A. 
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The Amazon S3 canonical user ID for the origin access identity, used when giving the origin access identity read permission to an object in Amazon S3. 
     */
-  var S3CanonicalUserId: String = js.native
+  var S3CanonicalUserId: String
 }
 object CloudFrontOriginAccessIdentity {
   

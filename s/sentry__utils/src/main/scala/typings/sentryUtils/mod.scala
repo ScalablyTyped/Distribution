@@ -13,10 +13,13 @@ import typings.sentryUtils.miscMod.SentryGlobal
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@sentry/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@sentry/utils", "Dsn")
   @js.native
@@ -57,310 +60,239 @@ object mod {
   }
   object SyncPromise {
     
-    /** JSDoc */
-    /* static member */
-    @JSImport("@sentry/utils", "SyncPromise.all")
+    @JSImport("@sentry/utils", "SyncPromise")
     @js.native
-    def all[U](collection: js.Array[U | js.Thenable[U]]): js.Thenable[js.Array[U]] = js.native
+    val ^ : js.Any = js.native
     
     /** JSDoc */
     /* static member */
-    @JSImport("@sentry/utils", "SyncPromise.reject")
-    @js.native
-    def reject[T](): js.Thenable[T] = js.native
-    @JSImport("@sentry/utils", "SyncPromise.reject")
-    @js.native
-    def reject[T](reason: js.Any): js.Thenable[T] = js.native
+    @scala.inline
+    def all[U](collection: js.Array[U | js.Thenable[U]]): js.Thenable[js.Array[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(collection.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[js.Array[U]]]
     
     /** JSDoc */
     /* static member */
-    @JSImport("@sentry/utils", "SyncPromise.resolve")
-    @js.native
-    def resolve[T](value: T): js.Thenable[T] = js.native
-    @JSImport("@sentry/utils", "SyncPromise.resolve")
-    @js.native
-    def resolve[T](value: js.Thenable[T]): js.Thenable[T] = js.native
+    @scala.inline
+    def reject[T](): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")().asInstanceOf[js.Thenable[T]]
+    @scala.inline
+    def reject[T](reason: js.Any): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+    
+    /** JSDoc */
+    /* static member */
+    @scala.inline
+    def resolve[T](value: T): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
+    @scala.inline
+    def resolve[T](value: js.Thenable[T]): js.Thenable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[T]]
   }
   
-  @JSImport("@sentry/utils", "addContextToFrame")
-  @js.native
-  def addContextToFrame(lines: js.Array[String], frame: StackFrame): Unit = js.native
-  @JSImport("@sentry/utils", "addContextToFrame")
-  @js.native
-  def addContextToFrame(lines: js.Array[String], frame: StackFrame, linesOfContext: Double): Unit = js.native
+  @scala.inline
+  def addContextToFrame(lines: js.Array[String], frame: StackFrame): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addContextToFrame(lines: js.Array[String], frame: StackFrame, linesOfContext: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addContextToFrame")(lines.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], linesOfContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils", "addExceptionMechanism")
-  @js.native
-  def addExceptionMechanism(event: Event): Unit = js.native
-  @JSImport("@sentry/utils", "addExceptionMechanism")
-  @js.native
-  def addExceptionMechanism(event: Event, mechanism: StringDictionary[js.Any]): Unit = js.native
+  @scala.inline
+  def addExceptionMechanism(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionMechanism")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionMechanism(event: Event, mechanism: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionMechanism")(event.asInstanceOf[js.Any], mechanism.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event): Unit = js.native
-  @JSImport("@sentry/utils", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event, value: js.UndefOr[scala.Nothing], `type`: String): Unit = js.native
-  @JSImport("@sentry/utils", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event, value: String): Unit = js.native
-  @JSImport("@sentry/utils", "addExceptionTypeValue")
-  @js.native
-  def addExceptionTypeValue(event: Event, value: String, `type`: String): Unit = js.native
+  @scala.inline
+  def addExceptionTypeValue(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionTypeValue(event: Event, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionTypeValue(event: Event, value: String, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addExceptionTypeValue(event: Event, value: Unit, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addExceptionTypeValue")(event.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils", "addInstrumentationHandler")
-  @js.native
-  def addInstrumentationHandler(handler: InstrumentHandler): Unit = js.native
+  @scala.inline
+  def addInstrumentationHandler(handler: InstrumentHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addInstrumentationHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils", "basename")
-  @js.native
-  def basename(path: String): String = js.native
-  @JSImport("@sentry/utils", "basename")
-  @js.native
-  def basename(path: String, ext: String): String = js.native
+  @scala.inline
+  def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@sentry/utils", "browserPerformanceTimeOrigin")
   @js.native
   val browserPerformanceTimeOrigin: js.UndefOr[Double] = js.native
   
-  @JSImport("@sentry/utils", "consoleSandbox")
-  @js.native
-  def consoleSandbox(callback: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def consoleSandbox(callback: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("consoleSandbox")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@sentry/utils", "dateTimestampInSeconds")
   @js.native
   val dateTimestampInSeconds: js.Any = js.native
   
-  @JSImport("@sentry/utils", "dirname")
-  @js.native
-  def dirname(path: String): String = js.native
+  @scala.inline
+  def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "dropUndefinedKeys")
-  @js.native
-  def dropUndefinedKeys[T](`val`: T): T = js.native
+  @scala.inline
+  def dropUndefinedKeys[T](`val`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("dropUndefinedKeys")(`val`.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@sentry/utils", "dynamicRequire")
-  @js.native
-  def dynamicRequire(mod: js.Any, request: String): js.Any = js.native
+  @scala.inline
+  def dynamicRequire(mod: js.Any, request: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dynamicRequire")(mod.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@sentry/utils", "extractExceptionKeysForMessage")
-  @js.native
-  def extractExceptionKeysForMessage(exception: js.Any): String = js.native
-  @JSImport("@sentry/utils", "extractExceptionKeysForMessage")
-  @js.native
-  def extractExceptionKeysForMessage(exception: js.Any, maxLength: Double): String = js.native
+  @scala.inline
+  def extractExceptionKeysForMessage(exception: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractExceptionKeysForMessage")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def extractExceptionKeysForMessage(exception: js.Any, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractExceptionKeysForMessage")(exception.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "extractNodeRequestData")
-  @js.native
-  def extractNodeRequestData(req: StringDictionary[js.Any]): ExtractedNodeRequestData = js.native
-  @JSImport("@sentry/utils", "extractNodeRequestData")
-  @js.native
-  def extractNodeRequestData(req: StringDictionary[js.Any], keys: js.Array[String]): ExtractedNodeRequestData = js.native
+  @scala.inline
+  def extractNodeRequestData(req: StringDictionary[js.Any]): ExtractedNodeRequestData = ^.asInstanceOf[js.Dynamic].applyDynamic("extractNodeRequestData")(req.asInstanceOf[js.Any]).asInstanceOf[ExtractedNodeRequestData]
+  @scala.inline
+  def extractNodeRequestData(req: StringDictionary[js.Any], keys: js.Array[String]): ExtractedNodeRequestData = (^.asInstanceOf[js.Dynamic].applyDynamic("extractNodeRequestData")(req.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[ExtractedNodeRequestData]
   
-  @JSImport("@sentry/utils", "fill")
-  @js.native
+  @scala.inline
   def fill(
     source: StringDictionary[js.Any],
     name: String,
-    replacement: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
+    replacement: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils", "forget")
-  @js.native
-  def forget(promise: js.Thenable[_]): Unit = js.native
+  @scala.inline
+  def forget(promise: js.Thenable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forget")(promise.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/utils", "getEventDescription")
-  @js.native
-  def getEventDescription(event: Event): String = js.native
+  @scala.inline
+  def getEventDescription(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventDescription")(event.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "getFunctionName")
-  @js.native
-  def getFunctionName(fn: js.Any): String = js.native
+  @scala.inline
+  def getFunctionName(fn: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "getGlobalObject")
-  @js.native
-  def getGlobalObject[T](): T with SentryGlobal = js.native
+  @scala.inline
+  def getGlobalObject[T](): T & SentryGlobal = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalObject")().asInstanceOf[T & SentryGlobal]
   
-  @JSImport("@sentry/utils", "getLocationHref")
-  @js.native
-  def getLocationHref(): String = js.native
+  @scala.inline
+  def getLocationHref(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationHref")().asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "htmlTreeAsString")
-  @js.native
-  def htmlTreeAsString(elem: js.Any): String = js.native
+  @scala.inline
+  def htmlTreeAsString(elem: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTreeAsString")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "isAbsolute")
-  @js.native
-  def isAbsolute(path: String): Boolean = js.native
+  @scala.inline
+  def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isDOMError")
-  @js.native
-  def isDOMError(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isDOMError(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMError")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isDOMException")
-  @js.native
-  def isDOMException(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isDOMException(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMException")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isElement")
-  @js.native
-  def isElement(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isElement(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isError")
-  @js.native
-  def isError(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isError(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isErrorEvent")
-  @js.native
-  def isErrorEvent(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isErrorEvent(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrorEvent")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isEvent")
-  @js.native
-  def isEvent(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isEvent(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isInstanceOf")
-  @js.native
-  def isInstanceOf(wat: js.Any, base: js.Any): Boolean = js.native
+  @scala.inline
+  def isInstanceOf(wat: js.Any, base: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOf")(wat.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isMatchingPattern")
-  @js.native
-  def isMatchingPattern(value: String, pattern: String): Boolean = js.native
-  @JSImport("@sentry/utils", "isMatchingPattern")
-  @js.native
-  def isMatchingPattern(value: String, pattern: RegExp): Boolean = js.native
+  @scala.inline
+  def isMatchingPattern(value: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatchingPattern")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatchingPattern(value: String, pattern: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatchingPattern")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isNodeEnv")
-  @js.native
-  def isNodeEnv(): Boolean = js.native
+  @scala.inline
+  def isNodeEnv(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeEnv")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isPlainObject")
-  @js.native
-  def isPlainObject(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isPlainObject(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isPrimitive")
-  @js.native
-  def isPrimitive(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isPrimitive(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isRegExp")
-  @js.native
-  def isRegExp(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isRegExp(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isString")
-  @js.native
-  def isString(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isString(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isSyntheticEvent")
-  @js.native
-  def isSyntheticEvent(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isSyntheticEvent(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyntheticEvent")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "isThenable")
-  @js.native
-  def isThenable(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isThenable(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThenable")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "join")
-  @js.native
-  def join(args: String*): String = js.native
+  @scala.inline
+  def join(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@sentry/utils", "logger")
   @js.native
   val logger: Logger_ = js.native
   
-  @JSImport("@sentry/utils", "normalize")
-  @js.native
-  def normalize(input: js.Any): js.Any = js.native
-  @JSImport("@sentry/utils", "normalize")
-  @js.native
-  def normalize(input: js.Any, depth: Double): js.Any = js.native
+  @scala.inline
+  def normalize(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def normalize(input: js.Any, depth: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@sentry/utils", "normalizePath")
-  @js.native
-  def normalizePath(path: String): String = js.native
+  @scala.inline
+  def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "normalizeToSize")
-  @js.native
-  def normalizeToSize[T](`object`: StringDictionary[js.Any]): T = js.native
-  @JSImport("@sentry/utils", "normalizeToSize")
-  @js.native
-  def normalizeToSize[T](`object`: StringDictionary[js.Any], depth: js.UndefOr[scala.Nothing], maxSize: Double): T = js.native
-  @JSImport("@sentry/utils", "normalizeToSize")
-  @js.native
-  def normalizeToSize[T](`object`: StringDictionary[js.Any], depth: Double): T = js.native
-  @JSImport("@sentry/utils", "normalizeToSize")
-  @js.native
-  def normalizeToSize[T](`object`: StringDictionary[js.Any], depth: Double, maxSize: Double): T = js.native
+  @scala.inline
+  def normalizeToSize[T](`object`: StringDictionary[js.Any]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeToSize")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def normalizeToSize[T](`object`: StringDictionary[js.Any], depth: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeToSize")(`object`.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def normalizeToSize[T](`object`: StringDictionary[js.Any], depth: Double, maxSize: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeToSize")(`object`.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def normalizeToSize[T](`object`: StringDictionary[js.Any], depth: Unit, maxSize: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeToSize")(`object`.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@sentry/utils", "parseRetryAfterHeader")
-  @js.native
-  def parseRetryAfterHeader(now: Double): Double = js.native
-  @JSImport("@sentry/utils", "parseRetryAfterHeader")
-  @js.native
-  def parseRetryAfterHeader(now: Double, header: String): Double = js.native
-  @JSImport("@sentry/utils", "parseRetryAfterHeader")
-  @js.native
-  def parseRetryAfterHeader(now: Double, header: Double): Double = js.native
+  @scala.inline
+  def parseRetryAfterHeader(now: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(now.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def parseRetryAfterHeader(now: Double, header: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(now.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def parseRetryAfterHeader(now: Double, header: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRetryAfterHeader")(now.asInstanceOf[js.Any], header.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@sentry/utils", "parseSemver")
-  @js.native
-  def parseSemver(input: String): SemVer = js.native
+  @scala.inline
+  def parseSemver(input: String): SemVer = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSemver")(input.asInstanceOf[js.Any]).asInstanceOf[SemVer]
   
-  @JSImport("@sentry/utils", "parseUrl")
-  @js.native
-  def parseUrl(url: String): Host = js.native
+  @scala.inline
+  def parseUrl(url: String): Host = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Host]
   
-  @JSImport("@sentry/utils", "relative")
-  @js.native
-  def relative(from: String, to: String): String = js.native
+  @scala.inline
+  def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "resolve")
-  @js.native
-  def resolve(args: String*): String = js.native
+  @scala.inline
+  def resolve(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "safeJoin")
-  @js.native
-  def safeJoin(input: js.Array[_]): String = js.native
-  @JSImport("@sentry/utils", "safeJoin")
-  @js.native
-  def safeJoin(input: js.Array[_], delimiter: String): String = js.native
+  @scala.inline
+  def safeJoin(input: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeJoin")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def safeJoin(input: js.Array[js.Any], delimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeJoin")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "snipLine")
-  @js.native
-  def snipLine(line: String, colno: Double): String = js.native
+  @scala.inline
+  def snipLine(line: String, colno: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("snipLine")(line.asInstanceOf[js.Any], colno.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "stripUrlQueryAndFragment")
-  @js.native
-  def stripUrlQueryAndFragment(urlPath: String): String = js.native
+  @scala.inline
+  def stripUrlQueryAndFragment(urlPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUrlQueryAndFragment")(urlPath.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "supportsDOMError")
-  @js.native
-  def supportsDOMError(): Boolean = js.native
+  @scala.inline
+  def supportsDOMError(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsDOMError")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsDOMException")
-  @js.native
-  def supportsDOMException(): Boolean = js.native
+  @scala.inline
+  def supportsDOMException(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsDOMException")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsErrorEvent")
-  @js.native
-  def supportsErrorEvent(): Boolean = js.native
+  @scala.inline
+  def supportsErrorEvent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsErrorEvent")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsFetch")
-  @js.native
-  def supportsFetch(): Boolean = js.native
+  @scala.inline
+  def supportsFetch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsFetch")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsHistory")
-  @js.native
-  def supportsHistory(): Boolean = js.native
+  @scala.inline
+  def supportsHistory(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsHistory")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsNativeFetch")
-  @js.native
-  def supportsNativeFetch(): Boolean = js.native
+  @scala.inline
+  def supportsNativeFetch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsNativeFetch")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsReferrerPolicy")
-  @js.native
-  def supportsReferrerPolicy(): Boolean = js.native
+  @scala.inline
+  def supportsReferrerPolicy(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsReferrerPolicy")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils", "supportsReportingObserver")
-  @js.native
-  def supportsReportingObserver(): Boolean = js.native
+  @scala.inline
+  def supportsReportingObserver(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsReportingObserver")().asInstanceOf[Boolean]
   
   @JSImport("@sentry/utils", "timestampInSeconds")
   @js.native
@@ -370,40 +302,27 @@ object mod {
   @js.native
   val timestampWithMs: js.Any = js.native
   
-  @JSImport("@sentry/utils", "truncate")
-  @js.native
-  def truncate(str: String): String = js.native
-  @JSImport("@sentry/utils", "truncate")
-  @js.native
-  def truncate(str: String, max: Double): String = js.native
+  @scala.inline
+  def truncate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def truncate(str: String, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "urlEncode")
-  @js.native
-  def urlEncode(`object`: StringDictionary[js.Any]): String = js.native
+  @scala.inline
+  def urlEncode(`object`: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@sentry/utils", "usingPerformanceAPI")
   @js.native
   val usingPerformanceAPI: Boolean = js.native
   
-  @JSImport("@sentry/utils", "uuid4")
-  @js.native
-  def uuid4(): String = js.native
+  @scala.inline
+  def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   
-  @JSImport("@sentry/utils", "walk")
-  @js.native
-  def walk(key: String, value: js.Any): js.Any = js.native
-  @JSImport("@sentry/utils", "walk")
-  @js.native
-  def walk(
-    key: String,
-    value: js.Any,
-    depth: js.UndefOr[scala.Nothing],
-    memo: typings.sentryUtils.memoMod.Memo
-  ): js.Any = js.native
-  @JSImport("@sentry/utils", "walk")
-  @js.native
-  def walk(key: String, value: js.Any, depth: Double): js.Any = js.native
-  @JSImport("@sentry/utils", "walk")
-  @js.native
-  def walk(key: String, value: js.Any, depth: Double, memo: typings.sentryUtils.memoMod.Memo): js.Any = js.native
+  @scala.inline
+  def walk(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def walk(key: String, value: js.Any, depth: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def walk(key: String, value: js.Any, depth: Double, memo: typings.sentryUtils.memoMod.Memo): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def walk(key: String, value: js.Any, depth: Unit, memo: typings.sentryUtils.memoMod.Memo): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], memo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

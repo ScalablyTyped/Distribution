@@ -2,16 +2,14 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteImageResult extends StObject {
   
   /**
     * Information about the image.
     */
-  var Image: js.UndefOr[typings.awsSdk.appstreamMod.Image] = js.native
+  var Image: js.UndefOr[typings.awsSdk.appstreamMod.Image] = js.undefined
 }
 object DeleteImageResult {
   

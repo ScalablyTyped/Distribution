@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdpConfig extends StObject {
   
   /** OAuth2 client ID. */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /** Whether this IDP is enabled. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** Percent of users who will be prompted/redirected federated login for this IDP. */
-  var experimentPercent: js.UndefOr[Double] = js.native
+  var experimentPercent: js.UndefOr[Double] = js.undefined
   
   /** OAuth2 provider. */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
   
   /** OAuth2 client secret. */
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
   /** Whitelisted client IDs for audience check. */
-  var whitelistedAudiences: js.UndefOr[js.Array[String]] = js.native
+  var whitelistedAudiences: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IdpConfig {
   

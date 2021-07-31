@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -57,9 +56,8 @@ object BasicParameterType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BasicParameterType.create")
-  @js.native
-  def create(model: IModel): BasicParameterType = js.native
+  @scala.inline
+  def create(model: IModel): BasicParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BasicParameterType]
   
   /**
     * Creates and returns a new BasicParameterType instance in the SDK and on the server.
@@ -70,9 +68,8 @@ object BasicParameterType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BasicParameterType.createIn")
-  @js.native
-  def createIn(container: JavaActionParameter): BasicParameterType = js.native
+  @scala.inline
+  def createIn(container: JavaActionParameter): BasicParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BasicParameterType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BasicParameterType.structureTypeName")

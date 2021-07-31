@@ -5,29 +5,29 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptOutputMod {
   
-  @js.native
-  trait EncryptOutput extends OutputTypesUnion {
+  trait EncryptOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The encrypted plaintext. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.</p>
       */
-    var CiphertextBlob: js.UndefOr[Uint8Array] = js.native
+    var CiphertextBlob: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * <p>The ID of the key used during encryption.</p>
       */
-    var KeyId: js.UndefOr[String] = js.native
+    var KeyId: js.UndefOr[String] = js.undefined
   }
   object EncryptOutput {
     

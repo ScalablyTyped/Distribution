@@ -2,51 +2,49 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentVersionInfo extends StObject {
   
   /**
     * The date the document was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.native
+  var CreatedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The document format, either JSON or YAML.
     */
-  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.native
+  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.undefined
   
   /**
     * The document version.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * An identifier for the default version of the document.
     */
-  var IsDefaultVersion: js.UndefOr[Boolean] = js.native
+  var IsDefaultVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The document name.
     */
-  var Name: js.UndefOr[DocumentName] = js.native
+  var Name: js.UndefOr[DocumentName] = js.undefined
   
   /**
     * The status of the Systems Manager document, such as Creating, Active, Failed, and Deleting.
     */
-  var Status: js.UndefOr[DocumentStatus] = js.native
+  var Status: js.UndefOr[DocumentStatus] = js.undefined
   
   /**
     * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
     */
-  var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.native
+  var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
   
   /**
     * The version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
     */
-  var VersionName: js.UndefOr[DocumentVersionName] = js.native
+  var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
 object DocumentVersionInfo {
   

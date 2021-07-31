@@ -7,7 +7,6 @@ import typings.tensorflowTfjsLayers.optimizerConfigMod.OptimizerSerialization
 import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trainingConfigMod {
@@ -16,20 +15,21 @@ object trainingConfigMod {
   
   type MetricsIdentifier = String
   
-  @js.native
-  trait TrainingConfig extends PyJsonDict {
+  trait TrainingConfig
+    extends StObject
+       with PyJsonDict {
     
-    var loss: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier] = js.native
+    var loss: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier]
     
-    var loss_weights: js.UndefOr[LossWeights] = js.native
+    var loss_weights: js.UndefOr[LossWeights] = js.undefined
     
-    var metrics: js.UndefOr[js.Array[MetricsIdentifier] | StringDictionary[MetricsIdentifier]] = js.native
+    var metrics: js.UndefOr[js.Array[MetricsIdentifier] | StringDictionary[MetricsIdentifier]] = js.undefined
     
-    var optimizer_config: OptimizerSerialization = js.native
+    var optimizer_config: OptimizerSerialization
     
-    var sample_weight_mode: js.UndefOr[SampleWeightMode] = js.native
+    var sample_weight_mode: js.UndefOr[SampleWeightMode] = js.undefined
     
-    var weighted_metrics: js.UndefOr[js.Array[MetricsIdentifier]] = js.native
+    var weighted_metrics: js.UndefOr[js.Array[MetricsIdentifier]] = js.undefined
   }
   object TrainingConfig {
     

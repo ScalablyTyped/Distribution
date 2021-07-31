@@ -2,7 +2,6 @@ package typings.webappsecCredentialManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,32 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link PasswordCredential} to be used in the {@code credentials} property.
   * All other properties are identical to {@link RequestInit}.
   */
-@js.native
 trait CMRequestInit extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var cache: js.UndefOr[String] = js.native
+  var cache: js.UndefOr[String] = js.undefined
   
-  var credentials: js.UndefOr[PasswordCredential | FederatedCredential | String] = js.native
+  var credentials: js.UndefOr[PasswordCredential | FederatedCredential | String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var integrity: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.undefined
   
-  var keepalive: js.UndefOr[Boolean] = js.native
+  var keepalive: js.UndefOr[Boolean] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var redirect: js.UndefOr[String] = js.native
+  var redirect: js.UndefOr[String] = js.undefined
   
-  var referrer: js.UndefOr[String] = js.native
+  var referrer: js.UndefOr[String] = js.undefined
   
-  var referrerPolicy: js.UndefOr[String] = js.native
+  var referrerPolicy: js.UndefOr[String] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.native
+  var window: js.UndefOr[js.Any] = js.undefined
 }
 object CMRequestInit {
   

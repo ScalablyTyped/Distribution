@@ -6,17 +6,15 @@ import typings.reactBootstrapTable2Paginator.mod.PaginationCtxOptions
 import typings.reactBootstrapTableNext.mod.BootstrapTableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    def children(childProps: PaginationProps): ReactElement | Null = js.native
+    def children(childProps: PaginationProps): ReactElement | Null
     
-    var pagination: js.UndefOr[PaginationCtxOptions] = js.native
+    var pagination: js.UndefOr[PaginationCtxOptions] = js.undefined
   }
   object Children {
     
@@ -40,17 +38,16 @@ object anon {
     }
   }
   
-  @js.native
   trait PaginationProps extends StObject {
     
-    var paginationProps: PaginationChildProps = js.native
+    var paginationProps: PaginationChildProps
     
-    var paginationTableProps: BootstrapTableProps[_, Double] = js.native
+    var paginationTableProps: BootstrapTableProps[js.Any, Double]
   }
   object PaginationProps {
     
     @scala.inline
-    def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[_, Double]): PaginationProps = {
+    def apply(paginationProps: PaginationChildProps, paginationTableProps: BootstrapTableProps[js.Any, Double]): PaginationProps = {
       val __obj = js.Dynamic.literal(paginationProps = paginationProps.asInstanceOf[js.Any], paginationTableProps = paginationTableProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
@@ -62,7 +59,7 @@ object anon {
       def setPaginationProps(value: PaginationChildProps): Self = StObject.set(x, "paginationProps", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPaginationTableProps(value: BootstrapTableProps[_, Double]): Self = StObject.set(x, "paginationTableProps", value.asInstanceOf[js.Any])
+      def setPaginationTableProps(value: BootstrapTableProps[js.Any, Double]): Self = StObject.set(x, "paginationTableProps", value.asInstanceOf[js.Any])
     }
   }
 }

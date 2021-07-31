@@ -6,54 +6,54 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePermissionsPatch extends StandardParameters {
+trait ParamsResourcePermissionsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID for the file or Team Drive.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID for the permission.
     */
-  var permissionId: js.UndefOr[String] = js.native
+  var permissionId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to remove the expiration date.
     */
-  var removeExpiration: js.UndefOr[Boolean] = js.native
+  var removeExpiration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaPermission] = js.native
+  var requestBody: js.UndefOr[SchemaPermission] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether changing a role to 'owner' downgrades the current owners to
     * writers. Does nothing if the specified role is not 'owner'.
     */
-  var transferOwnership: js.UndefOr[Boolean] = js.native
+  var transferOwnership: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Issue the request as a domain administrator; if set to true, then the
     * requester will be granted access if they are an administrator of the
     * domain to which the item belongs.
     */
-  var useDomainAdminAccess: js.UndefOr[Boolean] = js.native
+  var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourcePermissionsPatch {
   

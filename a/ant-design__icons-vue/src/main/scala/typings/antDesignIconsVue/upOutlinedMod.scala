@@ -3,19 +3,18 @@ package typings.antDesignIconsVue
 import typings.antDesignIconsVue.antdIconMod.AntdIconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object upOutlinedMod {
   
   object default {
     
-    @JSImport("@ant-design/icons-vue/lib/icons/UpOutlined", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       props: AntdIconProps,
       context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     @JSImport("@ant-design/icons-vue/lib/icons/UpOutlined", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native

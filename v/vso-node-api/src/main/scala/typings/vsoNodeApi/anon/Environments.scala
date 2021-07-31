@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environments extends StObject {
   
-  var details: scala.Double = js.native
+  var details: scala.Double
   
-  var environments: scala.Double = js.native
+  var environments: scala.Double
   
-  var issues: scala.Double = js.native
+  var issues: scala.Double
   
-  var releaseInfo: scala.Double = js.native
+  var releaseInfo: scala.Double
   
-  var testResults: scala.Double = js.native
+  var testResults: scala.Double
   
-  var workItems: scala.Double = js.native
+  var workItems: scala.Double
 }
 object Environments {
   

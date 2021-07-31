@@ -2,15 +2,13 @@ package typings.keenTracking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Created extends StObject {
     
-    var created: Boolean = js.native
+    var created: Boolean
   }
   object Created {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ProjectId extends StObject {
     
-    var projectId: String = js.native
+    var projectId: String
     
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
-    var writeKey: String = js.native
+    var writeKey: String
   }
   object ProjectId {
     

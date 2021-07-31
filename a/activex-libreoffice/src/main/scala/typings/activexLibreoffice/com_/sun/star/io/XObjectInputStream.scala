@@ -4,18 +4,18 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** reads {@link XPersistObject} implementations from a stream */
-@js.native
-trait XObjectInputStream extends XDataInputStream {
+trait XObjectInputStream
+  extends StObject
+     with XDataInputStream {
   
   /**
     * reads an object from the stream. In general, it reads the service name, instantiaties the object and calls read on the {@link XPersistObject}
     * interface with itself as argument.
     */
-  def readObject(): XPersistObject = js.native
+  def readObject(): XPersistObject
 }
 object XObjectInputStream {
   

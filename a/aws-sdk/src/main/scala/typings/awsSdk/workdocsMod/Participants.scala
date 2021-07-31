@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Participants extends StObject {
   
   /**
     * The list of user groups.
     */
-  var Groups: js.UndefOr[GroupMetadataList] = js.native
+  var Groups: js.UndefOr[GroupMetadataList] = js.undefined
   
   /**
     * The list of users.
     */
-  var Users: js.UndefOr[UserMetadataList] = js.native
+  var Users: js.UndefOr[UserMetadataList] = js.undefined
 }
 object Participants {
   

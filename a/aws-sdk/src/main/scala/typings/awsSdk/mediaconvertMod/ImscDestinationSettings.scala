@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImscDestinationSettings extends StObject {
   
   /**
     * Keep this setting enabled to have MediaConvert use the font style and position information from the captions source in the output. This option is available only when your input captions are IMSC, SMPTE-TT, or TTML. Disable this setting for simplified output captions.
     */
-  var StylePassthrough: js.UndefOr[ImscStylePassthrough] = js.native
+  var StylePassthrough: js.UndefOr[ImscStylePassthrough] = js.undefined
 }
 object ImscDestinationSettings {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2OutputStorageConfig extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait GooglePrivacyDlpV2OutputStorageConfig extends StObject {
     * available columns will be used for a new table or an (existing) table with no schema, and no changes will be made to an existing table that has a schema. Only for use with external
     * storage.
     */
-  var outputSchema: js.UndefOr[String] = js.native
+  var outputSchema: js.UndefOr[String] = js.undefined
   
   /**
     * Store findings in an existing table or a new table in an existing dataset. If table_id is not set a new one will be generated for you with the following format:
@@ -23,7 +21,7 @@ trait GooglePrivacyDlpV2OutputStorageConfig extends StObject {
     * same privacy metric and quasi-identifiers. Risk jobs that analyze the same table but compute a different privacy metric, or use different sets of quasi-identifiers, cannot store
     * their results in the same table.
     */
-  var table: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.native
+  var table: js.UndefOr[GooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object GooglePrivacyDlpV2OutputStorageConfig {
   

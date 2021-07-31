@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity
-  extends /* property */ StringDictionary[js.UndefOr[String | Double | Boolean | Date]] {
+  extends StObject
+     with /* property */ StringDictionary[js.UndefOr[String | Double | Boolean | Date]] {
   
-  var PartitionKey: String = js.native
+  var PartitionKey: String
   
-  var RowKey: String = js.native
+  var RowKey: String
   
-  var Timestamp: js.UndefOr[Date] = js.native
+  var Timestamp: js.UndefOr[Date] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object Entity {
   

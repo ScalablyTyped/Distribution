@@ -2,91 +2,89 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderLineItem extends StObject {
   
   /**
     * Annotations that are attached to the line item.
     */
-  var annotations: js.UndefOr[js.Array[SchemaOrderMerchantProvidedAnnotation]] = js.native
+  var annotations: js.UndefOr[js.Array[SchemaOrderMerchantProvidedAnnotation]] = js.undefined
   
   /**
     * Cancellations of the line item.
     */
-  var cancellations: js.UndefOr[js.Array[SchemaOrderCancellation]] = js.native
+  var cancellations: js.UndefOr[js.Array[SchemaOrderCancellation]] = js.undefined
   
   /**
     * The ID of the line item.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Total price for the line item. For example, if two items for $10 are
     * purchased, the total price will be $20.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Product data as seen by customer from the time of the order placement.
     * Note that certain attributes values (e.g. title or gtin) might be
     * reformatted and no longer match values submitted via product feed.
     */
-  var product: js.UndefOr[SchemaOrderLineItemProduct] = js.native
+  var product: js.UndefOr[SchemaOrderLineItemProduct] = js.undefined
   
   /**
     * Number of items canceled.
     */
-  var quantityCanceled: js.UndefOr[Double] = js.native
+  var quantityCanceled: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of items delivered.
     */
-  var quantityDelivered: js.UndefOr[Double] = js.native
+  var quantityDelivered: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of items ordered.
     */
-  var quantityOrdered: js.UndefOr[Double] = js.native
+  var quantityOrdered: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of items pending.
     */
-  var quantityPending: js.UndefOr[Double] = js.native
+  var quantityPending: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of items returned.
     */
-  var quantityReturned: js.UndefOr[Double] = js.native
+  var quantityReturned: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of items shipped.
     */
-  var quantityShipped: js.UndefOr[Double] = js.native
+  var quantityShipped: js.UndefOr[Double] = js.undefined
   
   /**
     * Details of the return policy for the line item.
     */
-  var returnInfo: js.UndefOr[SchemaOrderLineItemReturnInfo] = js.native
+  var returnInfo: js.UndefOr[SchemaOrderLineItemReturnInfo] = js.undefined
   
   /**
     * Returns of the line item.
     */
-  var returns: js.UndefOr[js.Array[SchemaOrderReturn]] = js.native
+  var returns: js.UndefOr[js.Array[SchemaOrderReturn]] = js.undefined
   
   /**
     * Details of the requested shipping for the line item.
     */
-  var shippingDetails: js.UndefOr[SchemaOrderLineItemShippingDetails] = js.native
+  var shippingDetails: js.UndefOr[SchemaOrderLineItemShippingDetails] = js.undefined
   
   /**
     * Total tax amount for the line item. For example, if two items are
     * purchased, and each have a cost tax of $2, the total tax amount will be
     * $4.
     */
-  var tax: js.UndefOr[SchemaPrice] = js.native
+  var tax: js.UndefOr[SchemaPrice] = js.undefined
 }
 object SchemaOrderLineItem {
   

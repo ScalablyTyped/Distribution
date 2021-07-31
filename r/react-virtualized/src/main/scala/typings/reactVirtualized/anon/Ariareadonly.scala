@@ -18,89 +18,72 @@ import typings.reactVirtualized.reactVirtualizedStrings.grid
 import typings.reactVirtualized.reactVirtualizedStrings.rowgroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ariareadonly extends StObject {
   
-  var `aria-label`: grid = js.native
+  var `aria-label`: grid
   
-  var `aria-readonly`: `true` = js.native
+  var `aria-readonly`: `true`
   
-  var autoContainerWidth: `false` = js.native
+  var autoContainerWidth: `false`
   
-  var autoHeight: `false` = js.native
+  var autoHeight: `false`
   
-  var autoWidth: `false` = js.native
+  var autoWidth: `false`
   
-  var cellRangeRenderer: GridCellRangeRenderer = js.native
+  var cellRangeRenderer: GridCellRangeRenderer
   
-  var containerRole: rowgroup = js.native
+  var containerRole: rowgroup
   
-  var estimatedColumnSize: `100` = js.native
+  var estimatedColumnSize: `100`
   
-  var estimatedRowSize: `30` = js.native
+  var estimatedRowSize: `30`
   
-  def getScrollbarSize(): Double = js.native
+  def getScrollbarSize(): Double
   
-  def noContentRenderer(): ReactNode = js.native
+  def noContentRenderer(): ReactNode
   
-  def onScroll(): Unit = js.native
+  def onScroll(): Unit
   
-  def onScrollbarPresenceChange(): Unit = js.native
+  def onScrollbarPresenceChange(): Unit
   
-  def onSectionRendered(): Unit = js.native
+  def onSectionRendered(): Unit
   
-  var overscanColumnCount: `0` = js.native
+  var overscanColumnCount: `0`
   
-  var overscanIndicesGetter: OverscanIndicesGetter = js.native
+  var overscanIndicesGetter: OverscanIndicesGetter
   
-  var overscanRowCount: `10` = js.native
+  var overscanRowCount: `10`
   
-  var role: grid = js.native
+  var role: grid
   
-  var scrollToAlignment: auto = js.native
+  var scrollToAlignment: auto
   
-  var scrollToColumn: `-1` = js.native
+  var scrollToColumn: `-1`
   
-  var scrollToRow: `-1` = js.native
+  var scrollToRow: `-1`
   
-  var scrollingResetTimeInterval: /* 150 */ Double = js.native
+  var scrollingResetTimeInterval: /* 150 */ Double
   
-  var tabIndex: `0` = js.native
+  var tabIndex: `0`
 }
 object Ariareadonly {
   
   @scala.inline
   def apply(
-    `aria-label`: grid,
-    `aria-readonly`: `true`,
-    autoContainerWidth: `false`,
-    autoHeight: `false`,
-    autoWidth: `false`,
     cellRangeRenderer: /* params */ GridCellRangeProps => js.Array[ReactNode],
-    containerRole: rowgroup,
-    estimatedColumnSize: `100`,
-    estimatedRowSize: `30`,
     getScrollbarSize: () => Double,
     noContentRenderer: () => ReactNode,
     onScroll: () => Unit,
     onScrollbarPresenceChange: () => Unit,
     onSectionRendered: () => Unit,
-    overscanColumnCount: `0`,
     overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices,
-    overscanRowCount: `10`,
-    role: grid,
-    scrollToAlignment: auto,
-    scrollToColumn: `-1`,
-    scrollToRow: `-1`,
-    scrollingResetTimeInterval: /* 150 */ Double,
-    tabIndex: `0`
+    scrollingResetTimeInterval: /* 150 */ Double
   ): Ariareadonly = {
-    val __obj = js.Dynamic.literal(autoContainerWidth = autoContainerWidth.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], cellRangeRenderer = js.Any.fromFunction1(cellRangeRenderer), containerRole = containerRole.asInstanceOf[js.Any], estimatedColumnSize = estimatedColumnSize.asInstanceOf[js.Any], estimatedRowSize = estimatedRowSize.asInstanceOf[js.Any], getScrollbarSize = js.Any.fromFunction0(getScrollbarSize), noContentRenderer = js.Any.fromFunction0(noContentRenderer), onScroll = js.Any.fromFunction0(onScroll), onScrollbarPresenceChange = js.Any.fromFunction0(onScrollbarPresenceChange), onSectionRendered = js.Any.fromFunction0(onSectionRendered), overscanColumnCount = overscanColumnCount.asInstanceOf[js.Any], overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], scrollToAlignment = scrollToAlignment.asInstanceOf[js.Any], scrollToColumn = scrollToColumn.asInstanceOf[js.Any], scrollToRow = scrollToRow.asInstanceOf[js.Any], scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoContainerWidth = false, autoHeight = false, autoWidth = false, cellRangeRenderer = js.Any.fromFunction1(cellRangeRenderer), containerRole = "rowgroup", estimatedColumnSize = 100, estimatedRowSize = 30, getScrollbarSize = js.Any.fromFunction0(getScrollbarSize), noContentRenderer = js.Any.fromFunction0(noContentRenderer), onScroll = js.Any.fromFunction0(onScroll), onScrollbarPresenceChange = js.Any.fromFunction0(onScrollbarPresenceChange), onSectionRendered = js.Any.fromFunction0(onSectionRendered), overscanColumnCount = 0, overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = 10, role = "grid", scrollToAlignment = "auto", scrollToColumn = -1, scrollToRow = -1, scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], tabIndex = 0)
+    __obj.updateDynamic("aria-label")("grid")
+    __obj.updateDynamic("aria-readonly")(true)
     __obj.asInstanceOf[Ariareadonly]
   }
   

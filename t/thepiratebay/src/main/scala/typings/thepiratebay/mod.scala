@@ -4,76 +4,61 @@ import typings.thepiratebay.anon.DictpropName
 import typings.thepiratebay.anon.Verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("thepiratebay", "getCategories")
+  @JSImport("thepiratebay", JSImport.Namespace)
   @js.native
-  def getCategories(): js.Promise[js.Array[CategoryGroup]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("thepiratebay", "getComments")
-  @js.native
-  def getComments(id: String): js.Promise[js.Array[Comment]] = js.native
-  @JSImport("thepiratebay", "getComments")
-  @js.native
-  def getComments(id: Double): js.Promise[js.Array[Comment]] = js.native
+  @scala.inline
+  def getCategories(): js.Promise[js.Array[CategoryGroup]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCategories")().asInstanceOf[js.Promise[js.Array[CategoryGroup]]]
   
-  @JSImport("thepiratebay", "getTorrent")
-  @js.native
-  def getTorrent(id: String): js.Promise[TorrentDetails] = js.native
-  @JSImport("thepiratebay", "getTorrent")
-  @js.native
-  def getTorrent(id: Double): js.Promise[TorrentDetails] = js.native
-  @JSImport("thepiratebay", "getTorrent")
-  @js.native
-  def getTorrent(id: DictpropName): js.Promise[TorrentDetails] = js.native
+  @scala.inline
+  def getComments(id: String): js.Promise[js.Array[Comment]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComments")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Comment]]]
+  @scala.inline
+  def getComments(id: Double): js.Promise[js.Array[Comment]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComments")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Comment]]]
   
-  @JSImport("thepiratebay", "getTvShow")
-  @js.native
-  def getTvShow(id: String): js.Promise[js.Array[TVSeason]] = js.native
-  @JSImport("thepiratebay", "getTvShow")
-  @js.native
-  def getTvShow(id: Double): js.Promise[js.Array[TVSeason]] = js.native
+  @scala.inline
+  def getTorrent(id: String): js.Promise[TorrentDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTorrent")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TorrentDetails]]
+  @scala.inline
+  def getTorrent(id: Double): js.Promise[TorrentDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTorrent")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TorrentDetails]]
+  @scala.inline
+  def getTorrent(id: DictpropName): js.Promise[TorrentDetails] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTorrent")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TorrentDetails]]
   
-  @JSImport("thepiratebay", "recentTorrents")
-  @js.native
-  def recentTorrents(): js.Promise[js.Array[TorrentSearchResult]] = js.native
+  @scala.inline
+  def getTvShow(id: String): js.Promise[js.Array[TVSeason]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTvShow")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TVSeason]]]
+  @scala.inline
+  def getTvShow(id: Double): js.Promise[js.Array[TVSeason]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTvShow")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TVSeason]]]
   
-  @JSImport("thepiratebay", "search")
-  @js.native
-  def search(): js.Promise[js.Array[TorrentSearchResult]] = js.native
-  @JSImport("thepiratebay", "search")
-  @js.native
-  def search(query: js.UndefOr[scala.Nothing], options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = js.native
-  @JSImport("thepiratebay", "search")
-  @js.native
-  def search(query: String): js.Promise[js.Array[TorrentSearchResult]] = js.native
-  @JSImport("thepiratebay", "search")
-  @js.native
-  def search(query: String, options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = js.native
+  @scala.inline
+  def recentTorrents(): js.Promise[js.Array[TorrentSearchResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("recentTorrents")().asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
   
-  @JSImport("thepiratebay", "topTorrents")
-  @js.native
-  def topTorrents(): js.Promise[js.Array[TorrentSearchResult]] = js.native
-  @JSImport("thepiratebay", "topTorrents")
-  @js.native
-  def topTorrents(category: Double): js.Promise[js.Array[TorrentSearchResult]] = js.native
+  @scala.inline
+  def search(): js.Promise[js.Array[TorrentSearchResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")().asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
+  @scala.inline
+  def search(query: String): js.Promise[js.Array[TorrentSearchResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
+  @scala.inline
+  def search(query: String, options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
+  @scala.inline
+  def search(query: Unit, options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
   
-  @JSImport("thepiratebay", "userTorrents")
-  @js.native
-  def userTorrents(user: String): js.Promise[js.Array[TorrentSearchResult]] = js.native
-  @JSImport("thepiratebay", "userTorrents")
-  @js.native
-  def userTorrents(user: String, options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = js.native
+  @scala.inline
+  def topTorrents(): js.Promise[js.Array[TorrentSearchResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("topTorrents")().asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
+  @scala.inline
+  def topTorrents(category: Double): js.Promise[js.Array[TorrentSearchResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("topTorrents")(category.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
   
-  @js.native
+  @scala.inline
+  def userTorrents(user: String): js.Promise[js.Array[TorrentSearchResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("userTorrents")(user.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
+  @scala.inline
+  def userTorrents(user: String, options: SearchOptions): js.Promise[js.Array[TorrentSearchResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("userTorrents")(user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[TorrentSearchResult]]]
+  
   trait Category extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Category {
     
@@ -94,10 +79,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait CategoryGroup extends Category {
+  trait CategoryGroup
+    extends StObject
+       with Category {
     
-    var subcategories: js.Array[Category] = js.native
+    var subcategories: js.Array[Category]
   }
   object CategoryGroup {
     
@@ -118,12 +104,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Comment extends StObject {
     
-    var comment: String = js.native
+    var comment: String
     
-    var user: String = js.native
+    var user: String
   }
   object Comment {
     
@@ -144,18 +129,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchOptions extends StObject {
     
-    var category: js.UndefOr[String | Double] = js.native
+    var category: js.UndefOr[String | Double] = js.undefined
     
-    var filter: js.UndefOr[Verified] = js.native
+    var filter: js.UndefOr[Verified] = js.undefined
     
-    var orderBy: js.UndefOr[String] = js.native
+    var orderBy: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var sortBy: js.UndefOr[String] = js.native
+    var sortBy: js.UndefOr[String] = js.undefined
   }
   object SearchOptions {
     
@@ -200,12 +184,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TVSeason extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var torrents: js.Array[TVTorrent] = js.native
+    var torrents: js.Array[TVTorrent]
   }
   object TVSeason {
     
@@ -229,14 +212,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TVTorrent extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var link: String = js.native
+    var link: String
     
-    var title: String = js.native
+    var title: String
   }
   object TVTorrent {
     
@@ -260,28 +242,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Torrent extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var leechers: String = js.native
+    var leechers: String
     
-    var link: String = js.native
+    var link: String
     
-    var magnetLink: String = js.native
+    var magnetLink: String
     
-    var name: String = js.native
+    var name: String
     
-    var seeders: String = js.native
+    var seeders: String
     
-    var size: String = js.native
+    var size: String
     
-    var uploadDate: String = js.native
+    var uploadDate: String
     
-    var uploader: String = js.native
+    var uploader: String
     
-    var uploaderLink: String = js.native
+    var uploaderLink: String
   }
   object Torrent {
     
@@ -337,10 +318,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait TorrentDetails extends Torrent {
+  trait TorrentDetails
+    extends StObject
+       with Torrent {
     
-    var description: String = js.native
+    var description: String
   }
   object TorrentDetails {
     
@@ -370,14 +352,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait TorrentSearchResult extends Torrent {
+  trait TorrentSearchResult
+    extends StObject
+       with Torrent {
     
-    var category: Category = js.native
+    var category: Category
     
-    var subcategory: Category = js.native
+    var subcategory: Category
     
-    var verified: Boolean = js.native
+    var verified: Boolean
   }
   object TorrentSearchResult {
     

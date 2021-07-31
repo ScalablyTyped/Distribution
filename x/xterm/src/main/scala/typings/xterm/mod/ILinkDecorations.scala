@@ -2,24 +2,22 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of decorations that can be applied to links.
   */
-@js.native
 trait ILinkDecorations extends StObject {
   
   /**
     * Whether the cursor is set to pointer.
     */
-  var pointerCursor: Boolean = js.native
+  var pointerCursor: Boolean
   
   /**
     * Whether the underline is visible
     */
-  var underline: Boolean = js.native
+  var underline: Boolean
 }
 object ILinkDecorations {
   

@@ -2,21 +2,19 @@ package typings.betterScroll.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WheelOption extends StObject {
   
-  var adjustTime: Double = js.native
+  var adjustTime: Double
   
-  var rotate: Double = js.native
+  var rotate: Double
   
-  var selectedIndex: Double = js.native
+  var selectedIndex: Double
   
-  var wheelItemClass: String = js.native
+  var wheelItemClass: String
   
-  var wheelWrapperClass: String = js.native
+  var wheelWrapperClass: String
 }
 object WheelOption {
   

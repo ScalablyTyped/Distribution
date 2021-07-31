@@ -23,69 +23,62 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@algolia/client-common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@algolia/client-common", "AuthMode")
   @js.native
   val AuthMode: Record[String, AuthModeType] = js.native
   
-  @JSImport("@algolia/client-common", "addMethods")
-  @js.native
-  def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase): AddedMethods[TBase, TMethods] = js.native
-  @JSImport("@algolia/client-common", "addMethods")
-  @js.native
-  def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase, methods: TMethods): AddedMethods[TBase, TMethods] = js.native
+  @scala.inline
+  def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase): AddedMethods[TBase, TMethods] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(base.asInstanceOf[js.Any]).asInstanceOf[AddedMethods[TBase, TMethods]]
+  @scala.inline
+  def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase, methods: TMethods): AddedMethods[TBase, TMethods] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(base.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[AddedMethods[TBase, TMethods]]
   
-  @JSImport("@algolia/client-common", "createAuth")
-  @js.native
-  def createAuth(authMode: AuthModeType, appId: String, apiKey: String): Auth = js.native
+  @scala.inline
+  def createAuth(authMode: AuthModeType, appId: String, apiKey: String): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuth")(authMode.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[Auth]
   
-  @JSImport("@algolia/client-common", "createRetryablePromise")
-  @js.native
-  def createRetryablePromise[TResponse](callback: js.Function1[/* retry */ js.Function0[js.Promise[TResponse]], js.Promise[TResponse]]): js.Promise[TResponse] = js.native
+  @scala.inline
+  def createRetryablePromise[TResponse](callback: js.Function1[/* retry */ js.Function0[js.Promise[TResponse]], js.Promise[TResponse]]): js.Promise[TResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRetryablePromise")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TResponse]]
   
-  @JSImport("@algolia/client-common", "createWaitablePromise")
-  @js.native
-  def createWaitablePromise[TResponse](promise: js.Promise[TResponse]): WaitablePromise[TResponse] = js.native
-  @JSImport("@algolia/client-common", "createWaitablePromise")
-  @js.native
-  def createWaitablePromise[TResponse](promise: js.Promise[TResponse], wait: Wait[TResponse]): WaitablePromise[TResponse] = js.native
+  @scala.inline
+  def createWaitablePromise[TResponse](promise: js.Promise[TResponse]): WaitablePromise[TResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWaitablePromise")(promise.asInstanceOf[js.Any]).asInstanceOf[WaitablePromise[TResponse]]
+  @scala.inline
+  def createWaitablePromise[TResponse](promise: js.Promise[TResponse], wait: Wait[TResponse]): WaitablePromise[TResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWaitablePromise")(promise.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[TResponse]]
   
-  @JSImport("@algolia/client-common", "destroy")
-  @js.native
-  def destroy(base: Transporter): js.Function0[ReadonlyPromisevoid] = js.native
+  @scala.inline
+  def destroy(base: Transporter): js.Function0[ReadonlyPromisevoid] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadonlyPromisevoid]]
   
-  @JSImport("@algolia/client-common", "encode")
-  @js.native
-  def encode(format: String, args: js.Any*): String = js.native
+  @scala.inline
+  def encode(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@algolia/client-common", "shuffle")
-  @js.native
-  def shuffle[TData](array: js.Array[TData]): js.Array[TData] = js.native
+  @scala.inline
+  def shuffle[TData](array: js.Array[TData]): js.Array[TData] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[TData]]
   
   @JSImport("@algolia/client-common", "version")
   @js.native
   val version: /* "4.8.0" */ String = js.native
   
-  type AddedMethods[TBase, TMethods /* <: Methods[TBase] */] = TBase with typings.algoliaClientCommon.algoliaClientCommonStrings.AddedMethods with TopLevel[TMethods]
+  type AddedMethods[TBase, TMethods /* <: Methods[TBase] */] = TBase & typings.algoliaClientCommon.algoliaClientCommonStrings.AddedMethods & TopLevel[TMethods]
   
-  @js.native
   trait Auth extends StObject {
     
     /**
       * Returns the headers related to auth. Should be
       * merged to the transporter headers.
       */
-    def headers(): Record[String, String] = js.native
+    def headers(): Record[String, String]
     
     /**
       * Returns the query parameters related to auth. Should be
       * merged to the query parameters headers.
       */
-    def queryParameters(): Record[String, String] = js.native
+    def queryParameters(): Record[String, String]
   }
   object Auth {
     
@@ -125,21 +118,21 @@ object mod {
     (Exclude[
       hostsCache | logger | requester | requestsCache | responsesCache | timeouts | hosts | headers | queryParameters | userAgent, 
       headers
-    ]) with (Exclude[
+    ]) & (Exclude[
       hostsCache | logger | requester | requestsCache | responsesCache | timeouts | hosts | headers | queryParameters | userAgent, 
       queryParameters
-    ]) with (Exclude[
+    ]) & (Exclude[
       hostsCache | logger | requester | requestsCache | responsesCache | timeouts | hosts | headers | queryParameters | userAgent, 
       hosts
     ])
-  ]) with Headers
+  ]) & Headers
   
   type CreateClient[TClient, TOptions] = js.Function1[
-    /* options */ TOptions with (typings.algoliaClientCommon.anon.Methods[
-      StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ _, _]]], 
+    /* options */ TOptions & (typings.algoliaClientCommon.anon.Methods[
+      StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]], 
       TClient
     ]), 
-    TClient with typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient with TopLevel[js.Any]
+    TClient & typings.algoliaClientCommon.algoliaClientCommonStrings.CreateClient & TopLevel[js.Any]
   ]
   
   type Methods[TBase] = StringDictionary[js.Function1[/* base */ TBase, js.Function1[/* repeated */ js.Any, js.Any]]]

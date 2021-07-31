@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditClickEventArgs extends EventArgs {
+trait EditClickEventArgs
+  extends StObject
+     with EventArgs {
   
-  val htmlElement: js.Any = js.native
+  val htmlElement: js.Any
   
-  val htmlEvent: js.Any = js.native
+  val htmlEvent: js.Any
 }
 object EditClickEventArgs {
   

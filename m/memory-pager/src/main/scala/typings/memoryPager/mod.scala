@@ -8,14 +8,13 @@ import typings.memoryPager.memoryPagerBooleans.`true`
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("memory-pager", JSImport.Namespace)
   @js.native
-  val ^ : Pager = js.native
+  val ^ : js.Object & Pager = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("memory-pager", JSImport.Namespace)
@@ -24,16 +23,17 @@ object mod extends Shortcut {
     * Create a new pager.
     * @param pageSize defaults to 1024.
     */
-  class Class () extends PagerInstance {
+  class Class ()
+    extends StObject
+       with PagerInstance {
     def this(pageSize: Double) = this()
   }
   
-  @js.native
   trait Page extends StObject {
     
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Page {
     
@@ -56,7 +56,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Pager
-    extends /**
+    extends StObject
+       with /**
     * Create a new pager.
     * @param pageSize defaults to 1024.
     */
@@ -106,8 +107,8 @@ object mod extends Shortcut {
     def updated(page: Page): Unit = js.native
   }
   
-  type _To = Pager
+  type _To = js.Object & Pager
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Pager = ^
+  override def _to: js.Object & Pager = ^
 }

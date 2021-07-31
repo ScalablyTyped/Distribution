@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamsAppDefinition extends Entity {
+trait TeamsAppDefinition
+  extends StObject
+     with Entity {
   
   // The name of the app provided by the app developer.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The ID from the Teams app manifest.
-  var teamsAppId: js.UndefOr[NullableOption[String]] = js.native
+  var teamsAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The version number of the application.
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TeamsAppDefinition {
   

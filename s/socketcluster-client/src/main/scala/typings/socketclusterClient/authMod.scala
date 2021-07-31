@@ -3,14 +3,15 @@ package typings.socketclusterClient
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authMod {
   
   @JSImport("socketcluster-client/lib/auth", JSImport.Namespace)
   @js.native
-  class ^ () extends AuthEngine
+  class ^ ()
+    extends StObject
+       with AuthEngine
   
   @js.native
   trait AGAuthEngine extends StObject {
@@ -26,7 +27,9 @@ object authMod {
   }
   
   @js.native
-  trait AuthEngine extends AGAuthEngine
+  trait AuthEngine
+    extends StObject
+       with AGAuthEngine
   
   type AuthToken = StringDictionary[js.Any]
   

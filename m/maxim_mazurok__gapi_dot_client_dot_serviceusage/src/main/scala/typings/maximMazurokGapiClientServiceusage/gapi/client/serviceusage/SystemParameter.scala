@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemParameter extends StObject {
   
   /** Define the HTTP header name to use for the parameter. It is case insensitive. */
-  var httpHeader: js.UndefOr[String] = js.native
+  var httpHeader: js.UndefOr[String] = js.undefined
   
   /** Define the name of the parameter, such as "api_key" . It is case sensitive. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Define the URL query parameter name to use for the parameter. It is case sensitive. */
-  var urlQueryParameter: js.UndefOr[String] = js.native
+  var urlQueryParameter: js.UndefOr[String] = js.undefined
 }
 object SystemParameter {
   

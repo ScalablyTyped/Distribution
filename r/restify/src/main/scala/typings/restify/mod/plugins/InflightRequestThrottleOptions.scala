@@ -3,17 +3,15 @@ package typings.restify.mod.plugins
 import typings.restify.mod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InflightRequestThrottleOptions extends StObject {
   
-  var err: js.Any = js.native
+  var err: js.Any
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var server: Server = js.native
+  var server: Server
 }
 object InflightRequestThrottleOptions {
   

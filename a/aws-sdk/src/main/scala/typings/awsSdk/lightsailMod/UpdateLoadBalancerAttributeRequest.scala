@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLoadBalancerAttributeRequest extends StObject {
   
   /**
     * The name of the attribute you want to update. Valid values are below.
     */
-  var attributeName: LoadBalancerAttributeName = js.native
+  var attributeName: LoadBalancerAttributeName
   
   /**
     * The value that you want to specify for the attribute name.
     */
-  var attributeValue: StringMax256 = js.native
+  var attributeValue: StringMax256
   
   /**
     * The name of the load balancer that you want to modify (e.g., my-load-balancer.
     */
-  var loadBalancerName: ResourceName = js.native
+  var loadBalancerName: ResourceName
 }
 object UpdateLoadBalancerAttributeRequest {
   

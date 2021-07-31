@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserDefinedFunctionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the function to be deleted is located. If none is supplied, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database where the function is located.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * The name of the function definition to be deleted.
     */
-  var FunctionName: NameString = js.native
+  var FunctionName: NameString
 }
 object DeleteUserDefinedFunctionRequest {
   

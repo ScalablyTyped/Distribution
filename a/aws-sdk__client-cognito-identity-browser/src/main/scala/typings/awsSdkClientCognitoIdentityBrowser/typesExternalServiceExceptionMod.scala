@@ -6,28 +6,25 @@ import typings.awsSdkClientCognitoIdentityBrowser.getOpenIdTokenExceptionsUnionM
 import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionMod.UnlinkIdentityExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesExternalServiceExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ExternalServiceExceptionDetails> * / any */ @js.native
-  trait ExternalServiceException
-    extends GetCredentialsForIdentityExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ExternalServiceExceptionDetails> * / any */ trait ExternalServiceException
+    extends StObject
+       with GetCredentialsForIdentityExceptionsUnion
        with GetIdExceptionsUnion
        with GetOpenIdTokenExceptionsUnion
        with UnlinkIdentityExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ExternalServiceException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ExternalServiceException
   }
   object ExternalServiceException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ExternalServiceException
-    ): ExternalServiceException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ExternalServiceException = {
+      val __obj = js.Dynamic.literal(name = "ExternalServiceException")
       __obj.asInstanceOf[ExternalServiceException]
     }
     
@@ -41,13 +38,12 @@ object typesExternalServiceExceptionMod {
     }
   }
   
-  @js.native
   trait ExternalServiceExceptionDetails extends StObject {
     
     /**
       * <p>The message returned by an ExternalServiceException</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ExternalServiceExceptionDetails {
     

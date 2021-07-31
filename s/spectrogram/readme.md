@@ -10,9 +10,9 @@ Audio spectrogram in canvas.
 | ------------------ | :-------------: |
 | Full name          | spectrogram |
 | Keywords           | audio, spectrogram, canvas |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1071 |
+| # downloads        | 1259 |
 | # stars            | 2 |
 
 ## Links

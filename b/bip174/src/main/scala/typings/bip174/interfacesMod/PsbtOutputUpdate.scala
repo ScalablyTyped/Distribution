@@ -2,17 +2,15 @@ package typings.bip174.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PsbtOutputUpdate extends StObject {
   
-  var bip32Derivation: js.UndefOr[js.Array[Bip32Derivation]] = js.native
+  var bip32Derivation: js.UndefOr[js.Array[Bip32Derivation]] = js.undefined
   
-  var redeemScript: js.UndefOr[RedeemScript] = js.native
+  var redeemScript: js.UndefOr[RedeemScript] = js.undefined
   
-  var witnessScript: js.UndefOr[WitnessScript] = js.native
+  var witnessScript: js.UndefOr[WitnessScript] = js.undefined
 }
 object PsbtOutputUpdate {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelStatementResponse extends StObject {
   
   /**
     * A value that indicates whether the cancel statement succeeded (true). 
     */
-  var Status: js.UndefOr[Boolean] = js.native
+  var Status: js.UndefOr[Boolean] = js.undefined
 }
 object CancelStatementResponse {
   

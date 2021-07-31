@@ -10,9 +10,9 @@ Another JSON Schema Validator
 | ------------------ | :-------------: |
 | Full name          | ajv |
 | Keywords           | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation |
-| # releases         | 30 |
-| # dependents       | 3585 |
-| # downloads        | 1505794413 |
+| # releases         | 36 |
+| # dependents       | 3829 |
+| # downloads        | 1711109236 |
 | # stars            | 101 |
 
 ## Links

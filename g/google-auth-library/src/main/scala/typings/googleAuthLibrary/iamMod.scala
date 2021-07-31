@@ -3,7 +3,6 @@ package typings.googleAuthLibrary
 import typings.googleAuthLibrary.anon.Xgoogiamauthorityselector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamMod {
@@ -30,12 +29,11 @@ object iamMod {
     var token: String = js.native
   }
   
-  @js.native
   trait RequestMetadata extends StObject {
     
-    var `x-goog-iam-authority-selector`: String = js.native
+    var `x-goog-iam-authority-selector`: String
     
-    var `x-goog-iam-authorization-token`: String = js.native
+    var `x-goog-iam-authorization-token`: String
   }
   object RequestMetadata {
     

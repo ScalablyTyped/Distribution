@@ -2,33 +2,31 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECCurveFp extends StObject {
   
-  var a: ECFieldElementFp = js.native
+  var a: ECFieldElementFp
   
-  var b: ECFieldElementFp = js.native
+  var b: ECFieldElementFp
   
-  def decodePointHex(): ECPointFp | Null = js.native
+  def decodePointHex(): ECPointFp | Null
   
-  def equals(): Boolean = js.native
+  def equals(): Boolean
   
-  def fromBigInteger(): ECFieldElementFp = js.native
+  def fromBigInteger(): ECFieldElementFp
   
-  def getA(): ECFieldElementFp = js.native
+  def getA(): ECFieldElementFp
   
-  def getB(): ECFieldElementFp = js.native
+  def getB(): ECFieldElementFp
   
-  def getInfinity(): ECPointFp = js.native
+  def getInfinity(): ECPointFp
   
-  def getQ(): BigInteger = js.native
+  def getQ(): BigInteger
   
-  var infinity: ECPointFp = js.native
+  var infinity: ECPointFp
   
-  var q: BigInteger = js.native
+  var q: BigInteger
 }
 object ECCurveFp {
   

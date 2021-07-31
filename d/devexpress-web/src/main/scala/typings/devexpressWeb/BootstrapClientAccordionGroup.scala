@@ -2,42 +2,42 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the Accordion's BootstrapAccordionGroup object.
   */
-@js.native
-trait BootstrapClientAccordionGroup extends ASPxClientNavBarGroup {
+trait BootstrapClientAccordionGroup
+  extends StObject
+     with ASPxClientNavBarGroup {
   
   /**
     * Gets the CSS class of the icon displayed within an accordion group header badge.
     */
-  def GetHeaderBadgeIconCssClass(): String = js.native
+  def GetHeaderBadgeIconCssClass(): String
   
   /**
     * Gets the text displayed within an accordion group header badge.
     */
-  def GetHeaderBadgeText(): String = js.native
+  def GetHeaderBadgeText(): String
   
   /**
     * Sets the CSS class of the icon displayed within an accordion group header badge.
     * @param cssClass A String containing the name of a CSS class.
     */
-  def SetHeaderBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetHeaderBadgeIconCssClass(cssClass: String): Unit
   
   /**
     * Sets the text displayed within an accordion group header badge.
     * @param text A String specifying the badge text.
     */
-  def SetHeaderBadgeText(text: String): Unit = js.native
+  def SetHeaderBadgeText(text: String): Unit
   
   /**
     * Gets the BootstrapClientAccordion object to which the current group belongs.
     */
   @JSName("navBar")
-  var navBar_BootstrapClientAccordionGroup: BootstrapClientAccordion = js.native
+  var navBar_BootstrapClientAccordionGroup: BootstrapClientAccordion
 }
 object BootstrapClientAccordionGroup {
   

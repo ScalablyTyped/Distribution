@@ -2,15 +2,13 @@ package typings.keycloakJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RedirectUri extends StObject {
     
-    var redirectUri: String = js.native
+    var redirectUri: String
   }
   object RedirectUri {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Rptendpoint extends StObject {
     
-    var rpt_endpoint: String = js.native
+    var rpt_endpoint: String
   }
   object Rptendpoint {
     

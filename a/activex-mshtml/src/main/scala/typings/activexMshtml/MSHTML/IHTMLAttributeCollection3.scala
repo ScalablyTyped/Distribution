@@ -2,24 +2,22 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLAttributeCollection3 extends StObject {
   
   @JSName("MSHTML.IHTMLAttributeCollection3_typekey")
-  var MSHTMLDotIHTMLAttributeCollection3_typekey: IHTMLAttributeCollection3 = js.native
+  var MSHTMLDotIHTMLAttributeCollection3_typekey: IHTMLAttributeCollection3
   
-  def getNamedItem(bstrName: String): IHTMLDOMAttribute = js.native
+  def getNamedItem(bstrName: String): IHTMLDOMAttribute
   
-  def item(index: Double): IHTMLDOMAttribute = js.native
+  def item(index: Double): IHTMLDOMAttribute
   
-  val length: Double = js.native
+  val length: Double
   
-  def removeNamedItem(bstrName: String): IHTMLDOMAttribute = js.native
+  def removeNamedItem(bstrName: String): IHTMLDOMAttribute
   
-  def setNamedItem(pNodeIn: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
+  def setNamedItem(pNodeIn: IHTMLDOMAttribute): IHTMLDOMAttribute
 }
 object IHTMLAttributeCollection3 {
   

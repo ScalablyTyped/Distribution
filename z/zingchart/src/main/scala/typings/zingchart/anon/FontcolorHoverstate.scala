@@ -2,36 +2,34 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontcolorHoverstate extends StObject {
   
   /**
     * Sets the background color of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the font color of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets how the context menu item appears when a user hovers over it. Use the backgroundColor and fontColor attributes. {...}
     */
-  var `hover-state`: js.UndefOr[js.Any] = js.native
+  var `hover-state`: js.UndefOr[js.Any] = js.undefined
 }
 object FontcolorHoverstate {
   

@@ -2,33 +2,28 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bcmulMod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: js.Any, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: Unit, rightOperand: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: Unit, rightOperand: js.Any, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(leftOperand: Unit, rightOperand: Unit, scale: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(leftOperand.asInstanceOf[js.Any], rightOperand.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.UndefOr[scala.Nothing], rightOperand: js.Any, scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.Any, rightOperand: js.UndefOr[scala.Nothing], scale: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.Any, rightOperand: js.Any): js.Any = js.native
-  @JSImport("locutus/php/bc/bcmul", JSImport.Namespace)
-  @js.native
-  def apply(leftOperand: js.Any, rightOperand: js.Any, scale: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
 }

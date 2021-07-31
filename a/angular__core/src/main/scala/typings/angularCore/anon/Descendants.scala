@@ -2,15 +2,13 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Descendants extends StObject {
   
-  var descendants: js.UndefOr[Boolean] = js.native
+  var descendants: js.UndefOr[Boolean] = js.undefined
   
-  var read: js.UndefOr[js.Any] = js.native
+  var read: js.UndefOr[js.Any] = js.undefined
 }
 object Descendants {
   

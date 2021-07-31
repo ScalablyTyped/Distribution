@@ -3,30 +3,28 @@ package typings.axeCore.mod
 import typings.axeCore.anon.Application
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spec extends StObject {
   
-  var axeVersion: js.UndefOr[String] = js.native
+  var axeVersion: js.UndefOr[String] = js.undefined
   
-  var branding: js.UndefOr[Application] = js.native
+  var branding: js.UndefOr[Application] = js.undefined
   
-  var checks: js.UndefOr[js.Array[Check]] = js.native
+  var checks: js.UndefOr[js.Array[Check]] = js.undefined
   
-  var disableOtherRules: js.UndefOr[Boolean] = js.native
+  var disableOtherRules: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
   
-  var reporter: js.UndefOr[ReporterVersion] = js.native
+  var reporter: js.UndefOr[ReporterVersion] = js.undefined
   
-  var rules: js.UndefOr[js.Array[Rule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   
-  var standards: js.UndefOr[Standards] = js.native
+  var standards: js.UndefOr[Standards] = js.undefined
   
   // Deprecated - do not use.
-  var ver: js.UndefOr[String] = js.native
+  var ver: js.UndefOr[String] = js.undefined
 }
 object Spec {
   

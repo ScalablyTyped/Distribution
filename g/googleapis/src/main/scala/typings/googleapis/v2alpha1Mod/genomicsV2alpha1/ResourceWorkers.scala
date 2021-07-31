@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v2alpha1", "genomics_v2alpha1.Resource$Workers")
@@ -30,7 +29,7 @@ class ResourceWorkers protected () extends StObject {
     */
   def checkIn(): GaxiosPromise[SchemaCheckInResponse] = js.native
   def checkIn(callback: BodyResponseCallback[SchemaCheckInResponse]): Unit = js.native
-  def checkIn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckInResponse] = js.native
+  def checkIn(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCheckInResponse] = js.native
   def checkIn(params: ParamsResourceWorkersCheckin): GaxiosPromise[SchemaCheckInResponse] = js.native
   def checkIn(params: ParamsResourceWorkersCheckin, callback: BodyResponseCallback[SchemaCheckInResponse]): Unit = js.native
   def checkIn(

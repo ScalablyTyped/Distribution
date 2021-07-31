@@ -2,45 +2,43 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticsMod {
   
-  @js.native
   trait StatisticsApi extends StObject {
     
-    def average(column: String): Double = js.native
+    def average(column: String): Double
     
-    def extent(column: String): Double = js.native
+    def extent(column: String): Double
     
-    def max(column: String): Double = js.native
+    def max(column: String): Double
     
-    def mean(column: String): Double = js.native
+    def mean(column: String): Double
     
-    def median(column: String): Double = js.native
+    def median(column: String): Double
     
-    def min(column: String): Double = js.native
+    def min(column: String): Double
     
-    def mode(column: String): Double = js.native
+    def mode(column: String): Double
     
-    def product(column: String): Double = js.native
+    def product(column: String): Double
     
-    def quantile(column: String, percent: Double): Double = js.native
+    def quantile(column: String, percent: Double): Double
     
-    def quantiles(column: String, percents: js.Array[Double]): js.Array[Double] = js.native
+    def quantiles(column: String, percents: js.Array[Double]): js.Array[Double]
     
-    def quantilesByFraction(column: String, fraction: Double): Double = js.native
+    def quantilesByFraction(column: String, fraction: Double): Double
     
-    def range(column: String): js.Tuple2[Double, Double] = js.native
+    def range(column: String): js.Tuple2[Double, Double]
     
-    def standardDeviation(column: String): Double = js.native
+    def standardDeviation(column: String): Double
     
-    def sum(column: String): Double = js.native
+    def sum(column: String): Double
     
-    def sumSimple(column: String): Double = js.native
+    def sumSimple(column: String): Double
     
-    def variance(column: String): Double = js.native
+    def variance(column: String): Double
   }
   object StatisticsApi {
     

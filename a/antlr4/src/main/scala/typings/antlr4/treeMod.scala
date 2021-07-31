@@ -5,7 +5,6 @@ import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.tokenMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -99,16 +98,15 @@ object treeMod {
     def this(symbol: Token) = this()
   }
   
-  @js.native
   trait ParseTreeListener extends StObject {
     
-    def enterEveryRule(node: ParserRuleContext): Unit = js.native
+    def enterEveryRule(node: ParserRuleContext): Unit
     
-    def exitEveryRule(node: ParserRuleContext): Unit = js.native
+    def exitEveryRule(node: ParserRuleContext): Unit
     
-    def visitErrorNode(node: ErrorNode): Unit = js.native
+    def visitErrorNode(node: ErrorNode): Unit
     
-    def visitTerminal(node: TerminalNode): Unit = js.native
+    def visitTerminal(node: TerminalNode): Unit
   }
   object ParseTreeListener {
     

@@ -3,29 +3,29 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellPaneContainerEvents extends IEvents {
+trait IShellPaneContainerEvents
+  extends StObject
+     with IEvents {
   
-  var OnHidePane: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnHidePane: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnMinimizedStateChanged: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnMinimizedStateChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnNewTab: js.UndefOr[js.Function1[/* tab */ IShellPaneTab, Unit]] = js.native
+  var OnNewTab: js.UndefOr[js.Function1[/* tab */ IShellPaneTab, Unit]] = js.undefined
   
-  var OnPaneResized: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnPaneResized: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnShowPane: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnShowPane: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnTabSelected: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnTabSelected: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnTabUnselected: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnTabUnselected: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IShellPaneContainerEvents {
   

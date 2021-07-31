@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IReportAccessCredentials extends StObject {
   
-  val Domain: String = js.native
+  val Domain: String
   
-  val ExtAccount: Boolean = js.native
+  val ExtAccount: Boolean
   
-  val Password: String = js.native
+  val Password: String
   
-  val UserName: String = js.native
+  val UserName: String
 }
 object IReportAccessCredentials {
   

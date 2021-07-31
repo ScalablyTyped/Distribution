@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.view.XPrintSettingsSupplier
 import typings.activexLibreoffice.com_.sun.star.view.XViewSettingsSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a service that provides access to the settings of a text module. */
-@js.native
 trait GlobalSettings
-  extends XPrintSettingsSupplier
+  extends StObject
+     with XPrintSettingsSupplier
      with XViewSettingsSupplier
 object GlobalSettings {
   

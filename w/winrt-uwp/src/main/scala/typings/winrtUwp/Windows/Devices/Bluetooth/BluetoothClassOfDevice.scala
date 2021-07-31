@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to determine the Bluetooth Class Of Device (Bluetooth COD) information for a device. */
-@js.native
 trait BluetoothClassOfDevice extends StObject {
   
   /** Gets the Major Class code of the Bluetooth device. */
-  var majorClass: BluetoothMajorClass = js.native
+  var majorClass: BluetoothMajorClass
   
   /** Gets the Minor Class code of the device. */
-  var minorClass: BluetoothMinorClass = js.native
+  var minorClass: BluetoothMinorClass
   
   /** Gets the Bluetooth Class Of Device information, represented as an integer value. */
-  var rawValue: Double = js.native
+  var rawValue: Double
   
   /** Gets the service capabilities of the device. */
-  var serviceCapabilities: BluetoothServiceCapabilities = js.native
+  var serviceCapabilities: BluetoothServiceCapabilities
 }
 object BluetoothClassOfDevice {
   

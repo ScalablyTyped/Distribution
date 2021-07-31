@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateSecurityKeyRequest extends StObject {
   
   /**
     * The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.
     */
-  var AssociationId: typings.awsSdk.connectMod.AssociationId = js.native
+  var AssociationId: typings.awsSdk.connectMod.AssociationId
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
 }
 object DisassociateSecurityKeyRequest {
   

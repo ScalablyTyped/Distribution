@@ -2,19 +2,17 @@ package typings.reactSlider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var value: Double | js.Array[Double] = js.native
+    var value: Double | js.Array[Double]
     
-    var valueNow: Double = js.native
+    var valueNow: Double
   }
   object Index {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var value: Double | js.Array[Double] = js.native
+    var value: Double | js.Array[Double]
   }
   object Value {
     

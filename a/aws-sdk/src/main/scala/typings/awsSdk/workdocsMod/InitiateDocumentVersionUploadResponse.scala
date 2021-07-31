@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitiateDocumentVersionUploadResponse extends StObject {
   
   /**
     * The document metadata.
     */
-  var Metadata: js.UndefOr[DocumentMetadata] = js.native
+  var Metadata: js.UndefOr[DocumentMetadata] = js.undefined
   
   /**
     * The upload metadata.
     */
-  var UploadMetadata: js.UndefOr[typings.awsSdk.workdocsMod.UploadMetadata] = js.native
+  var UploadMetadata: js.UndefOr[typings.awsSdk.workdocsMod.UploadMetadata] = js.undefined
 }
 object InitiateDocumentVersionUploadResponse {
   

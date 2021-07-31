@@ -2,7 +2,6 @@ package typings.paypalPayoutsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object payouts {
@@ -13,10 +12,15 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsGetRequest")
   @js.native
-  class PayoutsGetRequest protected () extends HttpRequest {
+  class PayoutsGetRequest protected ()
+    extends StObject
+       with HttpRequest {
     def this(payoutBatchId: String) = this()
     
     def fields(fields: String): this.type = js.native
+    
+    /* CompleteClass */
+    var headers: PaypalHeader = js.native
     
     def page(page: Double): this.type = js.native
     
@@ -33,8 +37,13 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsItemCancelRequest")
   @js.native
-  class PayoutsItemCancelRequest protected () extends HttpRequest {
+  class PayoutsItemCancelRequest protected ()
+    extends StObject
+       with HttpRequest {
     def this(payoutItemId: String) = this()
+    
+    /* CompleteClass */
+    var headers: PaypalHeader = js.native
   }
   
   /**
@@ -44,8 +53,13 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsItemGetRequest")
   @js.native
-  class PayoutsItemGetRequest protected () extends HttpRequest {
+  class PayoutsItemGetRequest protected ()
+    extends StObject
+       with HttpRequest {
     def this(payoutItemId: String) = this()
+    
+    /* CompleteClass */
+    var headers: PaypalHeader = js.native
   }
   
   /**
@@ -57,7 +71,12 @@ object payouts {
     */
   @JSImport("@paypal/payouts-sdk", "payouts.PayoutsPostRequest")
   @js.native
-  class PayoutsPostRequest () extends HttpRequest {
+  class PayoutsPostRequest ()
+    extends StObject
+       with HttpRequest {
+    
+    /* CompleteClass */
+    var headers: PaypalHeader = js.native
     
     def payPalPartnerAttributionId(payPalPartnerAttributionId: String): this.type = js.native
     

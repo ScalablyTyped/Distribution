@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains number values that represent the location and size of a rectangle. */
-@js.native
 trait Rect extends StObject {
   
   /** The height of the rectangle, in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** The width of the rectangle, in pixels. */
-  var width: Double = js.native
+  var width: Double
   
   /** The x-coordinate of the upper-left corner of the rectangle. */
-  var x: Double = js.native
+  var x: Double
   
   /** The y-coordinate of the upper-left corner of the rectangle. */
-  var y: Double = js.native
+  var y: Double
 }
 object Rect {
   

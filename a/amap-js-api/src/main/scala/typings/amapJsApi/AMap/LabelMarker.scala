@@ -2,11 +2,12 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelMarker[ExtraData] extends Overlay[ExtraData] {
+trait LabelMarker[ExtraData]
+  extends StObject
+     with Overlay[ExtraData] {
   
   // should be void
   // internal
@@ -109,28 +110,27 @@ object LabelMarker {
     def thin: typings.amapJsApi.amapJsApiStrings.thin = "thin".asInstanceOf[typings.amapJsApi.amapJsApiStrings.thin]
   }
   
-  @js.native
   trait IconOptions extends StObject {
     
-    var anchor: js.UndefOr[Anchor] = js.native
+    var anchor: js.UndefOr[Anchor] = js.undefined
     
     // internal
-    var angel: js.UndefOr[Double] = js.native
+    var angel: js.UndefOr[Double] = js.undefined
     
     // unsupport Pixel in v1.4.14
-    var clipOrigin: js.UndefOr[js.Array[Double] | Pixel] = js.native
+    var clipOrigin: js.UndefOr[js.Array[Double] | Pixel] = js.undefined
     
-    var clipSize: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var clipSize: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var retina: js.UndefOr[Boolean] = js.native
+    var retina: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[js.Array[Double] | Size] = js.native
+    var size: js.UndefOr[js.Array[Double] | Size] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object IconOptions {
     
@@ -205,26 +205,26 @@ object LabelMarker {
     }
   }
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
     
-    var icon: js.UndefOr[IconOptions] = js.native
+    var icon: js.UndefOr[IconOptions] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[String | LocationValue] = js.native
+    var position: js.UndefOr[String | LocationValue] = js.undefined
     
-    var rank: js.UndefOr[Double] = js.native
+    var rank: js.UndefOr[Double] = js.undefined
     
-    var text: js.UndefOr[TextOptions] = js.native
+    var text: js.UndefOr[TextOptions] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     // internal
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     
@@ -235,7 +235,7 @@ object LabelMarker {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setIcon(value: IconOptions): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
@@ -313,18 +313,17 @@ object LabelMarker {
     def top: typings.amapJsApi.amapJsApiStrings.top = "top".asInstanceOf[typings.amapJsApi.amapJsApiStrings.top]
   }
   
-  @js.native
   trait TextOptions extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[TextDirection] = js.native
+    var direction: js.UndefOr[TextDirection] = js.undefined
     
-    var offset: js.UndefOr[Pixel | (js.Tuple2[Double, Double])] = js.native
+    var offset: js.UndefOr[Pixel | (js.Tuple2[Double, Double])] = js.undefined
     
-    var style: js.UndefOr[TextStyle] = js.native
+    var style: js.UndefOr[TextStyle] = js.undefined
     
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object TextOptions {
     
@@ -369,20 +368,19 @@ object LabelMarker {
     }
   }
   
-  @js.native
   trait TextStyle extends StObject {
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontWeight: js.UndefOr[FontWeight] = js.native
+    var fontWeight: js.UndefOr[FontWeight] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object TextStyle {
     

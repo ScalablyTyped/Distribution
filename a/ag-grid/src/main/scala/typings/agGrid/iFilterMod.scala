@@ -8,17 +8,15 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iFilterMod {
   
-  @js.native
   trait IDoesFilterPassParams extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var node: RowNode = js.native
+    var node: RowNode
   }
   object IDoesFilterPassParams {
     
@@ -39,31 +37,30 @@ object iFilterMod {
     }
   }
   
-  @js.native
   trait IFilter extends StObject {
     
     /** The grid will ask each active filter, in turn, whether each row in the grid passes. If any
       filter fails, then the row will be excluded from the final set. The method is provided a
       params object with attributes node (the rodNode the grid creates that wraps the data) and data
       (the data object that you provided to the grid for that row). */
-    def doesFilterPass(params: IDoesFilterPassParams): Boolean = js.native
+    def doesFilterPass(params: IDoesFilterPassParams): Boolean
     
     /** If using React or Angular 2, returns the underlying component instance, so you can call methods
       * on it if you want. */
-    var getFrameworkComponentInstance: js.UndefOr[js.Function0[_]] = js.native
+    var getFrameworkComponentInstance: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** Gets the filter state for storing */
-    def getModel(): js.Any = js.native
+    def getModel(): js.Any
     
     /**
       * Optional method used by ag-Grid when rendering floating filters and there isn't a floating filter
       * associated for this filter, this will happen if you create a custom filter and NOT a custom floating
       * filter.
       */
-    var getModelAsString: js.UndefOr[js.Function1[/* model */ js.Any, String]] = js.native
+    var getModelAsString: js.UndefOr[js.Function1[/* model */ js.Any, String]] = js.undefined
     
     /** This is used to show the filter icon in the header. If true, the filter icon will be shown. */
-    def isFilterActive(): Boolean = js.native
+    def isFilterActive(): Boolean
     
     /**
       * Optional method used by ag-Grid when rendering floating filters.
@@ -79,14 +76,14 @@ object iFilterMod {
       *
       *     change: The exact same object passed on FloatingFilter.onFloatingFilterChanged
       */
-    var onFloatingFilterChanged: js.UndefOr[js.Function1[/* change */ js.Any, Unit]] = js.native
+    var onFloatingFilterChanged: js.UndefOr[js.Function1[/* change */ js.Any, Unit]] = js.undefined
     
     /** Gets called when new rows are inserted into the grid. If the filter needs to change it's state
       after rows are loaded, it can do it here. */
-    var onNewRowsLoaded: js.UndefOr[js.Function0[Unit]] = js.native
+    var onNewRowsLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Restores the filter state. */
-    def setModel(model: js.Any): Unit = js.native
+    def setModel(model: js.Any): Unit
   }
   object IFilter {
     
@@ -108,7 +105,7 @@ object iFilterMod {
       def setDoesFilterPass(value: IDoesFilterPassParams => Boolean): Self = StObject.set(x, "doesFilterPass", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetFrameworkComponentInstance(value: () => _): Self = StObject.set(x, "getFrameworkComponentInstance", js.Any.fromFunction0(value))
+      def setGetFrameworkComponentInstance(value: () => js.Any): Self = StObject.set(x, "getFrameworkComponentInstance", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFrameworkComponentInstanceUndefined: Self = StObject.set(x, "getFrameworkComponentInstance", js.undefined)
@@ -142,9 +139,9 @@ object iFilterMod {
     }
   }
   
-  @js.native
   trait IFilterComp
-    extends IFilter
+    extends StObject
+       with IFilter
        with IComponent[IFilterParams]
   object IFilterComp {
     
@@ -161,39 +158,38 @@ object iFilterMod {
     }
   }
   
-  @js.native
   trait IFilterParams extends StObject {
     
     @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: js.Any
     
-    var applyButton: js.UndefOr[Boolean] = js.native
+    var applyButton: js.UndefOr[Boolean] = js.undefined
     
-    var clearButton: js.UndefOr[Boolean] = js.native
+    var clearButton: js.UndefOr[Boolean] = js.undefined
     
-    var colDef: ColDef = js.native
+    var colDef: ColDef
     
-    var column: Column = js.native
+    var column: Column
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var defaultOption: js.UndefOr[String] = js.native
+    var defaultOption: js.UndefOr[String] = js.undefined
     
-    def doesRowPassOtherFilter(rowNode: RowNode): Boolean = js.native
+    def doesRowPassOtherFilter(rowNode: RowNode): Boolean
     
-    def filterChangedCallback(): Unit = js.native
+    def filterChangedCallback(): Unit
     
-    def filterModifiedCallback(): Unit = js.native
+    def filterModifiedCallback(): Unit
     
-    var filterOptions: js.UndefOr[js.Array[String]] = js.native
+    var filterOptions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var newRowsAction: js.UndefOr[String] = js.native
+    var newRowsAction: js.UndefOr[String] = js.undefined
     
-    var rowModel: IRowModel = js.native
+    var rowModel: IRowModel
     
-    var textFormatter: js.UndefOr[js.Function1[/* from */ String, String]] = js.native
+    var textFormatter: js.UndefOr[js.Function1[/* from */ String, String]] = js.undefined
     
-    def valueGetter(rowNode: RowNode): js.Any = js.native
+    def valueGetter(rowNode: RowNode): js.Any
   }
   object IFilterParams {
     
@@ -284,10 +280,9 @@ object iFilterMod {
     }
   }
   
-  @js.native
   trait SerializedFilter extends StObject {
     
-    var filterType: String = js.native
+    var filterType: String
   }
   object SerializedFilter {
     

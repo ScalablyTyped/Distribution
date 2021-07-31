@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortItem")
@@ -57,9 +56,8 @@ object GridSortItem {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortItem.create")
-  @js.native
-  def create(model: IModel): GridSortItem = js.native
+  @scala.inline
+  def create(model: IModel): GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridSortItem]
   
   /**
     * Creates and returns a new GridSortItem instance in the SDK and on the server.
@@ -67,9 +65,8 @@ object GridSortItem {
     * of the parent GridSortBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortItem.createIn")
-  @js.native
-  def createIn(container: GridSortBar): GridSortItem = js.native
+  @scala.inline
+  def createIn(container: GridSortBar): GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridSortItem]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSortItem.structureTypeName")

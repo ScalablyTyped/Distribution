@@ -2,7 +2,6 @@ package typings.urlencode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,66 +10,58 @@ object mod {
     * Encode string
     * @param str The string for encoding.
     */
+  @scala.inline
+  def apply(str: String): String = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(str: String, charset: String): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("urlencode", JSImport.Namespace)
   @js.native
-  def apply(str: String): String = js.native
-  @JSImport("urlencode", JSImport.Namespace)
-  @js.native
-  def apply(str: String, charset: String): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Decode string
     * @param encodedString The encoded string.
     */
-  @JSImport("urlencode", "decode")
-  @js.native
-  def decode(encodedString: String): String = js.native
-  @JSImport("urlencode", "decode")
-  @js.native
-  def decode(encodedString: String, charset: String): String = js.native
+  @scala.inline
+  def decode(encodedString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedString.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decode(encodedString: String, charset: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(encodedString.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Encode string
     * @param str The string for encoding.
     */
-  @JSImport("urlencode", "encode")
-  @js.native
-  def encode(str: String): String = js.native
-  @JSImport("urlencode", "encode")
-  @js.native
-  def encode(str: String, charset: String): String = js.native
+  @scala.inline
+  def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(str: String, charset: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Parse querystring
     * @param queryString Querystring
     * @param charsetParam The charset for parsing
     */
-  @JSImport("urlencode", "parse")
-  @js.native
-  def parse(queryString: String, charsetParam: charsetParam): js.Any = js.native
+  @scala.inline
+  def parse(queryString: String, charsetParam: charsetParam): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(queryString.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Stringify object
     * @param obj Query Object
     * @param charsetParam The charset for parsing
     */
-  @JSImport("urlencode", "stringify")
-  @js.native
-  def stringify(obj: js.Any): String = js.native
-  @JSImport("urlencode", "stringify")
-  @js.native
-  def stringify(obj: js.Any, prefix: js.UndefOr[scala.Nothing], charsetParam: charsetParam): String = js.native
-  @JSImport("urlencode", "stringify")
-  @js.native
-  def stringify(obj: js.Any, prefix: charsetParam): String = js.native
-  @JSImport("urlencode", "stringify")
-  @js.native
-  def stringify(obj: js.Any, prefix: charsetParam, charsetParam: charsetParam): String = js.native
+  @scala.inline
+  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, prefix: Unit, charsetParam: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, prefix: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, prefix: charsetParam, charsetParam: charsetParam): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], charsetParam.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait charsetParam extends StObject {
     
-    var charset: String = js.native
+    var charset: String
   }
   object charsetParam {
     

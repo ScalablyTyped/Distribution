@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeEvent extends StObject {
   
   /**
     * An envelope status for which your webhook should be called. Values: Draft, Sent, Delivered, Completed, Declined, or Voided.
     */
-  var envelopeEventStatusCode: js.UndefOr[String] = js.native
+  var envelopeEventStatusCode: js.UndefOr[String] = js.undefined
   
   /**
     * reserved
     */
-  var includeDocuments: js.UndefOr[String] = js.native
+  var includeDocuments: js.UndefOr[String] = js.undefined
 }
 object EnvelopeEvent {
   

@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.getFolderExceptionsUnionMod.GetFolderExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFolderDoesNotExistExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_FolderDoesNotExistExceptionDetails> * / any */ @js.native
-  trait FolderDoesNotExistException extends GetFolderExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_FolderDoesNotExistExceptionDetails> * / any */ trait FolderDoesNotExistException
+    extends StObject
+       with GetFolderExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FolderDoesNotExistException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FolderDoesNotExistException
   }
   object FolderDoesNotExistException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FolderDoesNotExistException
-    ): FolderDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): FolderDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "FolderDoesNotExistException")
       __obj.asInstanceOf[FolderDoesNotExistException]
     }
     
@@ -34,6 +32,5 @@ object typesFolderDoesNotExistExceptionMod {
     }
   }
   
-  @js.native
   trait FolderDoesNotExistExceptionDetails extends StObject
 }

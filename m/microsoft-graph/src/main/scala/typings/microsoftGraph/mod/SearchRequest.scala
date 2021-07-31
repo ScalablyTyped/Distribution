@@ -2,25 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchRequest extends StObject {
   
-  var contentSources: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var contentSources: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var enableTopResults: js.UndefOr[NullableOption[Boolean]] = js.native
+  var enableTopResults: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var entityTypes: js.UndefOr[NullableOption[js.Array[EntityType]]] = js.native
+  var entityTypes: js.UndefOr[NullableOption[js.Array[EntityType]]] = js.undefined
   
-  var fields: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var fields: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var query: js.UndefOr[SearchQuery] = js.native
+  var query: js.UndefOr[SearchQuery] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object SearchRequest {
   

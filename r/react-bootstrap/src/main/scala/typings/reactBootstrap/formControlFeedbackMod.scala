@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formControlFeedbackMod {
@@ -18,10 +17,11 @@ object formControlFeedbackMod {
   trait FormControlFeedback
     extends Component[FormControlFeedbackProps, js.Object, js.Any]
   
-  @js.native
-  trait FormControlFeedbackProps extends HTMLProps[FormControlFeedback] {
+  trait FormControlFeedbackProps
+    extends StObject
+       with HTMLProps[FormControlFeedback] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
   }
   object FormControlFeedbackProps {
     

@@ -10,56 +10,54 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a captured video frame. */
-@js.native
 trait CapturedFrame extends StObject {
   
   /** Gets a value that indicates if the captured frame can be read from. */
-  var canRead: Boolean = js.native
+  var canRead: Boolean
   
   /** Gets a value that indicates if the captured frame can be written to. */
-  var canWrite: Boolean = js.native
+  var canWrite: Boolean
   
   /**
     * Creates a copy of the stream.
     * @return The clone of the strem.
     */
-  def cloneStream(): IRandomAccessStream = js.native
+  def cloneStream(): IRandomAccessStream
   
   /** Closes the captured framed object. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets the content type of the captured frame. */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * Asynchronously commits and flushes all of the data of the CapturedFrame .
     * @return When this method completes, a boolean value is returned which specifies true if the operation completed successfully; otherwise, false.
     */
-  def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
   
   /**
     * Gets the input stream at the specified position.
     * @param position The position in the input stream.
     * @return The input stream.
     */
-  def getInputStreamAt(position: Double): IInputStream = js.native
+  def getInputStreamAt(position: Double): IInputStream
   
   /**
     * Gets the output stream at the specified position.
     * @param position The position in the output stream.
     * @return The output stream.
     */
-  def getOutputStreamAt(position: Double): IOutputStream = js.native
+  def getOutputStreamAt(position: Double): IOutputStream
   
   /** Gets the height of the captured frame */
-  var height: Double = js.native
+  var height: Double
   
   /** Gets the position of the captured frame. */
-  var position: Double = js.native
+  var position: Double
   
   /**
     * Returns an asynchronous byte reader object.
@@ -68,29 +66,29 @@ trait CapturedFrame extends StObject {
     * @param options Specifies the type of the asynchronous read operation.
     * @return The asynchronous operation.
     */
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   
   /**
     * Seeks the stream to the specified position.
     * @param position The position in the stream to seek too.
     */
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
   /** Gets the size of the captured frame in bytes. */
-  var size: Double = js.native
+  var size: Double
   
   /** Gets a SoftwareBitmap object representing the captured frame. */
-  var softwareBitmap: SoftwareBitmap = js.native
+  var softwareBitmap: SoftwareBitmap
   
   /** Gets the width of the captured frame. */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * Asynchronously writes the specified data to the stream.
     * @param buffer The data to write to the stream.
     * @return Represents an asynchronous operation that returns a result and reports progress.
     */
-  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object CapturedFrame {
   

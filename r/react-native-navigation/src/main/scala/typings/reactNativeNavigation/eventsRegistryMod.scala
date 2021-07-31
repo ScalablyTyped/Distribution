@@ -22,7 +22,6 @@ import typings.reactNativeNavigation.nativeEventsReceiverMod.NativeEventsReceive
 import typings.reactNativeNavigation.navigationComponentListenerMod.NavigationComponentListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsRegistryMod {
@@ -36,8 +35,8 @@ object eventsRegistryMod {
       componentEventsObserver: ComponentEventsObserver
     ) = this()
     
-    def bindComponent(component: Component[_, js.Object, _]): EventSubscription = js.native
-    def bindComponent(component: Component[_, js.Object, _], componentId: String): EventSubscription = js.native
+    def bindComponent(component: Component[js.Any, js.Object, js.Any]): EventSubscription = js.native
+    def bindComponent(component: Component[js.Any, js.Object, js.Any], componentId: String): EventSubscription = js.native
     
     var commandsObserver: js.Any = js.native
     

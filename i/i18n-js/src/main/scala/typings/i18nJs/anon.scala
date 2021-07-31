@@ -2,15 +2,13 @@ package typings.i18nJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var scope: typings.i18nJs.mod.Scope = js.native
+    var scope: typings.i18nJs.mod.Scope
   }
   object Scope {
     

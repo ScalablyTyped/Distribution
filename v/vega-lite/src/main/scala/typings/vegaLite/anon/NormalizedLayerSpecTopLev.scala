@@ -19,15 +19,13 @@ import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/spec.NormalizedLayerSpec & vega-lite.vega-lite/build/src/spec/toplevel.TopLevelProperties<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef> & {  $schema :string | undefined,   config :vega-lite.vega-lite/build/src/config.Config<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef> | undefined,   datasets :std.Record<string, vega-lite.vega-lite/build/src/data.InlineDataset> | undefined,   usermeta :std.Record<string, unknown> | undefined} & vega-lite.vega-lite/build/src/spec.LayoutSizeMixins */
-@js.native
 trait NormalizedLayerSpecTopLev extends StObject {
   
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.native
+  var $schema: js.UndefOr[String] = js.undefined
   
   /**
     * How the visualization size should be determined. If a string, should be one of `"pad"`, `"fit"` or `"none"`.
@@ -35,31 +33,31 @@ trait NormalizedLayerSpecTopLev extends StObject {
     *
     * __Default value__: `pad`
     */
-  var autosize: js.UndefOr[AutosizeType | AutoSizeParams] = js.native
+  var autosize: js.UndefOr[AutosizeType | AutoSizeParams] = js.undefined
   
   /**
     * CSS color property to use as the background of the entire view.
     *
     * __Default value:__ `"white"`
     */
-  var background: js.UndefOr[typings.vegaTypings.colorMod.Color | ExprOrSignalRef] = js.native
+  var background: js.UndefOr[typings.vegaTypings.colorMod.Color | ExprOrSignalRef] = js.undefined
   
   /**
     * Sets a custom logger.
     */
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprOrSignalRef]] = js.native
+  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprOrSignalRef]] = js.undefined
   
   /**
     * An object describing the data source. Set to `null` to ignore the parent's data source. If no data is set, it is derived from the parent.
     */
-  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data | Null] = js.native
+  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data | Null] = js.undefined
   
-  var datasets: js.UndefOr[Record[String, InlineDataset]] = js.native
+  var datasets: js.UndefOr[Record[String, InlineDataset]] = js.undefined
   
   /**
     * Description of this mark for commenting purpose.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The height of a visualization.
@@ -74,19 +72,19 @@ trait NormalizedLayerSpecTopLev extends StObject {
     *
     * __See also:__ [`height`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
   
   /**
     * Layer or single view specifications to be layered.
     *
     * __Note__: Specifications inside `layer` cannot use `row` and `column` channels as layering facet specifications is not allowed. Instead, use the [facet operator](https://vega.github.io/vega-lite/docs/facet.html) and place a layer inside a facet.
     */
-  var layer: js.Array[GenericLayerSpec[NormalizedUnitSpec] | NormalizedUnitSpec] = js.native
+  var layer: js.Array[GenericLayerSpec[NormalizedUnitSpec] | NormalizedUnitSpec]
   
   /**
     * Name of the visualization for later reference.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The default visualization padding, in pixels, from the edge of the visualization canvas to the data rectangle. If a number, specifies padding for all sides.
@@ -94,36 +92,36 @@ trait NormalizedLayerSpecTopLev extends StObject {
     *
     * __Default value__: `5`
     */
-  var padding: js.UndefOr[Padding | ExprOrSignalRef] = js.native
+  var padding: js.UndefOr[Padding | ExprOrSignalRef] = js.undefined
   
   /**
     * Dynamic variables that parameterize a visualization.
     */
-  var params: js.UndefOr[js.Array[Parameter]] = js.native
+  var params: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /**
     * Scale, axis, and legend resolutions for view composition specifications.
     */
-  var resolve: js.UndefOr[Resolve] = js.native
+  var resolve: js.UndefOr[Resolve] = js.undefined
   
   /**
     * Title for the plot.
     */
-  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.native
+  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.undefined
   
   /**
     * An array of data transformations such as filter and new field calculation.
     */
-  var transform: js.UndefOr[js.Array[Transform]] = js.native
+  var transform: js.UndefOr[js.Array[Transform]] = js.undefined
   
-  var usermeta: js.UndefOr[Record[String, _]] = js.native
+  var usermeta: js.UndefOr[Record[String, js.Any]] = js.undefined
   
   /**
     * An object defining the view background's fill and stroke.
     *
     * __Default value:__ none (transparent)
     */
-  var view: js.UndefOr[ViewBackground[ExprRef | SignalRef]] = js.native
+  var view: js.UndefOr[ViewBackground[ExprRef | SignalRef]] = js.undefined
   
   /**
     * The width of a visualization.
@@ -139,7 +137,7 @@ trait NormalizedLayerSpecTopLev extends StObject {
     *
     * __See also:__ [`width`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
 }
 object NormalizedLayerSpecTopLev {
   
@@ -255,7 +253,7 @@ object NormalizedLayerSpecTopLev {
     def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
     @scala.inline
-    def setUsermeta(value: Record[String, _]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+    def setUsermeta(value: Record[String, js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)

@@ -2,46 +2,44 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoContext extends StObject {
   
   /**
     * 退出全屏
     */
-  def exitFullScreen(): Unit = js.native
+  def exitFullScreen(): Unit
   
   /**
     * 暂停
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     * 播放
     */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /**
     * 设置倍速播放，支持的倍率有 0.5/0.8/1.0/1.25/1.5
     */
-  def playbackRate(): Unit = js.native
+  def playbackRate(): Unit
   
   /**
     * 进入全屏，可传入{direction}参数（1.7.0起支持），详见video组件文档
     */
-  def requestFullScreen(): Unit = js.native
+  def requestFullScreen(): Unit
   
   /**
     * 跳转到指定位置，单位 s
     */
-  def seek(): Unit = js.native
+  def seek(): Unit
   
   /**
     * 发送弹幕，danmu 包含两个属性 text, color。
     */
-  def sendDanmu(): Unit = js.native
+  def sendDanmu(): Unit
 }
 object VideoContext {
   

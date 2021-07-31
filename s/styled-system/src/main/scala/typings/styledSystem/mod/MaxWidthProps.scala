@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MaxWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
     */
-  var maxWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var maxWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object MaxWidthProps {
   
@@ -25,7 +23,7 @@ object MaxWidthProps {
   }
   
   @scala.inline
-  implicit class MaxWidthPropsMutableBuilder[Self <: MaxWidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (MaxWidthProps[ThemeType, TVal])) extends AnyVal {
+  implicit class MaxWidthPropsMutableBuilder[Self <: MaxWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MaxWidthProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setMaxWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])

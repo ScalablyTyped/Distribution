@@ -3,19 +3,17 @@ package typings.sipJs
 import typings.sipJs.notificationMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionDelegateMod {
   
-  @js.native
   trait SubscriptionDelegate extends StObject {
     
     /**
       * Called upon receiving an incoming NOTIFY request.
       * @param notification - A notification. See {@link Notification} for details.
       */
-    def onNotify(notification: Notification): Unit = js.native
+    def onNotify(notification: Notification): Unit
   }
   object SubscriptionDelegate {
     

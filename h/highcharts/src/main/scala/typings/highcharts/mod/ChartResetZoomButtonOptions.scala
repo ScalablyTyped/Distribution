@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartResetZoomButtonOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The position of the button.
     */
-  var position: js.UndefOr[AlignObject | ChartResetZoomButtonPositionOptions] = js.native
+  var position: js.UndefOr[AlignObject | ChartResetZoomButtonPositionOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) What frame the button placement
     * should be related to. Can be either `plotBox` or `spacingBox`.
     */
-  var relativeTo: js.UndefOr[ButtonRelativeToValue] = js.native
+  var relativeTo: js.UndefOr[ButtonRelativeToValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A collection of attributes for
@@ -26,7 +24,7 @@ trait ChartResetZoomButtonOptions extends StObject {
     * `style`, a collection of CSS properties for the text. Equivalent
     * attributes for the hover state are given in `theme.states.hover`.
     */
-  var theme: js.UndefOr[SVGAttributes] = js.native
+  var theme: js.UndefOr[SVGAttributes] = js.undefined
 }
 object ChartResetZoomButtonOptions {
   

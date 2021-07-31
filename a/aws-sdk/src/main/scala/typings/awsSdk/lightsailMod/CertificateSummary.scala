@@ -2,36 +2,34 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the certificate.
     */
-  var certificateArn: js.UndefOr[NonEmptyString] = js.native
+  var certificateArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * An object that describes a certificate in detail.
     */
-  var certificateDetail: js.UndefOr[Certificate] = js.native
+  var certificateDetail: js.UndefOr[Certificate] = js.undefined
   
   /**
     * The name of the certificate.
     */
-  var certificateName: js.UndefOr[CertificateName] = js.native
+  var certificateName: js.UndefOr[CertificateName] = js.undefined
   
   /**
     * The domain name of the certificate.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CertificateSummary {
   

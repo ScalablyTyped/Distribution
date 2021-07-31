@@ -8,14 +8,16 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usePanelsMod {
   
-  @JSImport("@react-md/expansion-panel/types/usePanels", "usePanels")
+  @JSImport("@react-md/expansion-panel/types/usePanels", JSImport.Namespace)
   @js.native
-  def usePanels(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex: UsePanelsOptions): ReturnValue = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def usePanels(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex: UsePanelsOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("usePanels")(hasIdPrefixCountMultiplePreventAllClosedDefaultExpandedIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   type CreateExpandById = js.Function1[/* panelId */ String, js.Function0[Unit]]
   
@@ -25,7 +27,6 @@ object usePanelsMod {
   
   type ExpansionPanelKeyDownHandler = KeyboardEventHandler[HTMLDivElement]
   
-  @js.native
   trait ProvidedPanelProps extends StObject {
     
     /**
@@ -33,12 +34,12 @@ object usePanelsMod {
       * be true when the `preventAllClosed` option has been enabled and the panel
       * is the last remaining expanded panel.
       */
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
     /**
       * Boolean if the panel is corrently expanded.
       */
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
     /**
       * A ref object for the panel. This is required so that the parent keyboard
@@ -47,23 +48,23 @@ object usePanelsMod {
       * keydown event handler isn't being used, this prop is not required to be
       * passed to the expansion panel.
       */
-    var headerRef: RefObject[HTMLButtonElement] = js.native
+    var headerRef: RefObject[HTMLButtonElement]
     
     /**
       * The DOM id for the panel which is really just `${idPrefix}-${index + 1}`.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * This will be `true` when the panel is expanded or the previous panel was
       * expanded and the panel is not the first panel in the list.
       */
-    var marginTop: Boolean = js.native
+    var marginTop: Boolean
     
     /**
       * A function that will toggle the expansion of this panel in the list.
       */
-    def onExpandClick(): Unit = js.native
+    def onExpandClick(): Unit
   }
   object ProvidedPanelProps {
     
@@ -111,7 +112,6 @@ object usePanelsMod {
     CreateExpandById
   ]
   
-  @js.native
   trait UsePanelsOptions extends StObject {
     
     /**
@@ -120,7 +120,7 @@ object usePanelsMod {
       * should be a number greater than 0 and will throw a `RangeError` if it is
       * not in development.
       */
-    var count: Double = js.native
+    var count: Double
     
     /**
       * Either the index that should be expanded by default, a list of indexes that
@@ -130,26 +130,26 @@ object usePanelsMod {
       * When this is omitted and `undefined`, no panels will be expanded by
       * default.
       */
-    var defaultExpandedIndex: js.UndefOr[Double | js.Array[Double]] = js.native
+    var defaultExpandedIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * The prefix to use for all of the panel ids. This is used to generate the id
       * for each panel as well as determine if a panel is expanded.
       */
-    var idPrefix: String = js.native
+    var idPrefix: String
     
     /**
       * Boolean if multiple panels can be expanded at a time. The default behavior
       * is to only allow one panel to be expanded and will close the previous panel
       * when a new one is expanded.
       */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the expansion logic should prevent all the panels from being
       * closed.
       */
-    var preventAllClosed: js.UndefOr[Boolean] = js.native
+    var preventAllClosed: js.UndefOr[Boolean] = js.undefined
   }
   object UsePanelsOptions {
     

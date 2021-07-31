@@ -10,9 +10,9 @@ server side compatible replacement for Window.matchMedia()
 | ------------------ | :-------------: |
 | Full name          | match-media-mock |
 | Keywords           | radium, matchMedia, isomorphic, server, mediaquery |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 189409 |
+| # downloads        | 217563 |
 | # stars            | 0 |
 
 ## Links

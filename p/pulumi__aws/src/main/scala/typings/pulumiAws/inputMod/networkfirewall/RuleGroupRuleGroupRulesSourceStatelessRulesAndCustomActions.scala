@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.networkfirewall
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions extends StObje
     Input[
       js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set of configuration blocks containing the stateless rules for use in the stateless rule group. See Stateless Rule below for details.
     */
   var statelessRules: Input[
     js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]]
-  ] = js.native
+  ]
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions {
   

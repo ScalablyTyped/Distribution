@@ -2,36 +2,34 @@ package typings.reactBootstrapTableNext.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageButtonRendererOptions extends StObject {
   
   /**
     * is this page the current page or not
     */
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     *  is this page disabled or not
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /**
     * call it when you need to change page
     */
-  def onPageChange(page: Double, sizePerPage: Double): Unit = js.native
+  def onPageChange(page: Double, sizePerPage: Double): Unit
   
   /**
     * page number
     */
-  var page: Double | String = js.native
+  var page: Double | String
   
   /**
     * page title
     */
-  var title: String = js.native
+  var title: String
 }
 object PageButtonRendererOptions {
   

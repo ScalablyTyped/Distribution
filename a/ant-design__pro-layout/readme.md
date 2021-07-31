@@ -10,9 +10,9 @@ Typings are for version 6.5.15
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-layout |
 | Keywords           | antd, admin, ant-design, ant-design-pro |
-| # releases         | 188 |
-| # dependents       | 52 |
-| # downloads        | 548911 |
+| # releases         | 225 |
+| # dependents       | 66 |
+| # downloads        | 650012 |
 | # stars            | 0 |
 
 ## Links

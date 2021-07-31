@@ -6,7 +6,6 @@ import typings.reactCopyToClipboard.reactCopyToClipboardStrings.textSlashhtml
 import typings.reactCopyToClipboard.reactCopyToClipboardStrings.textSlashplain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,14 +17,13 @@ object mod {
   
   type CopyToClipboard = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[textSlashhtml | textSlashplain] = js.native
+    var format: js.UndefOr[textSlashhtml | textSlashplain] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -58,16 +56,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var onCopy: js.UndefOr[js.Function2[/* text */ String, /* result */ Boolean, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function2[/* text */ String, /* result */ Boolean, Unit]] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object Props {
     

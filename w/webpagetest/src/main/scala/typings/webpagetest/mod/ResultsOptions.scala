@@ -2,32 +2,30 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultsOptions extends StObject {
   
   /** include the breakdown of requests and bytes by mime type */
-  var breakDown: js.UndefOr[Boolean] = js.native
+  var breakDown: js.UndefOr[Boolean] = js.undefined
   
   /** include the breakdown of requests and bytes by domain */
-  var domains: js.UndefOr[Boolean] = js.native
+  var domains: js.UndefOr[Boolean] = js.undefined
   
   /** set the metric used to calculate median for multiple runs tests (default: loadTime) */
-  var medianMetric: js.UndefOr[String] = js.native
+  var medianMetric: js.UndefOr[String] = js.undefined
   
   /** include the PageSpeed score in the response (may be slower) */
-  var pageSpeed: js.UndefOr[Boolean] = js.native
+  var pageSpeed: js.UndefOr[Boolean] = js.undefined
   
   /** set performance test suite reporter output: [dot]|spec|tap|xunit|list|progress|min|nyan|landing|json|doc|markdown|teamcity */
-  var reporter: js.UndefOr[String] = js.native
+  var reporter: js.UndefOr[String] = js.undefined
   
   /** include the request data in the response (slower and results in much larger responses) */
-  var requests: js.UndefOr[Boolean] = js.native
+  var requests: js.UndefOr[Boolean] = js.undefined
   
   /** set the specs for performance test suite */
-  var specs: js.UndefOr[String] = js.native
+  var specs: js.UndefOr[String] = js.undefined
 }
 object ResultsOptions {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnGatewayStatusVpnConnection extends StObject {
   
   /** URL reference to the peer external VPN gateways to which the VPN tunnels in this VPN connection are connected. This field is mutually exclusive with peer_gcp_gateway. */
-  var peerExternalGateway: js.UndefOr[String] = js.native
+  var peerExternalGateway: js.UndefOr[String] = js.undefined
   
   /** URL reference to the peer side VPN gateways to which the VPN tunnels in this VPN connection are connected. This field is mutually exclusive with peer_gcp_gateway. */
-  var peerGcpGateway: js.UndefOr[String] = js.native
+  var peerGcpGateway: js.UndefOr[String] = js.undefined
   
   /** HighAvailabilityRequirementState for the VPN connection. */
-  var state: js.UndefOr[VpnGatewayStatusHighAvailabilityRequirementState] = js.native
+  var state: js.UndefOr[VpnGatewayStatusHighAvailabilityRequirementState] = js.undefined
   
   /** List of VPN tunnels that are in this VPN connection. */
-  var tunnels: js.UndefOr[js.Array[VpnGatewayStatusTunnel]] = js.native
+  var tunnels: js.UndefOr[js.Array[VpnGatewayStatusTunnel]] = js.undefined
 }
 object VpnGatewayStatusVpnConnection {
   

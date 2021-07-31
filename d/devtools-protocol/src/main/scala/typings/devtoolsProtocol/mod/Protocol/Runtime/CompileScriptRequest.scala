@@ -2,32 +2,30 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileScriptRequest extends StObject {
   
   /**
     * Specifies in which execution context to perform script run. If the parameter is omitted the
     * evaluation will be performed in the context of the inspected page.
     */
-  var executionContextId: js.UndefOr[ExecutionContextId] = js.native
+  var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Expression to compile.
     */
-  var expression: String = js.native
+  var expression: String
   
   /**
     * Specifies whether the compiled script should be persisted.
     */
-  var persistScript: Boolean = js.native
+  var persistScript: Boolean
   
   /**
     * Source url to be set for the script.
     */
-  var sourceURL: String = js.native
+  var sourceURL: String
 }
 object CompileScriptRequest {
   

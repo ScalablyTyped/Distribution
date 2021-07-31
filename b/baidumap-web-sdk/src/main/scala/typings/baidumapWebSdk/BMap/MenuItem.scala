@@ -2,19 +2,17 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItem extends StObject {
   
-  def disable(): Unit = js.native
+  def disable(): Unit
   
-  def enable(): Unit = js.native
+  def enable(): Unit
   
-  def setIcon(iconUrl: String): Unit = js.native
+  def setIcon(iconUrl: String): Unit
   
-  def setText(text: String): Unit = js.native
+  def setText(text: String): Unit
 }
 object MenuItem {
   

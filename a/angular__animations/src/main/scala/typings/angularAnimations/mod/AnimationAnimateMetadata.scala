@@ -2,27 +2,27 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationAnimateMetadata extends AnimationMetadata {
+trait AnimationAnimateMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * A set of styles used in the step.
     */
-  var styles: AnimationStyleMetadata | AnimationKeyframesSequenceMetadata | Null = js.native
+  var styles: AnimationStyleMetadata | AnimationKeyframesSequenceMetadata | Null
   
   /**
     * The timing data for the step.
     */
-  var timings: String | Double | AnimateTimings = js.native
+  var timings: String | Double | AnimateTimings
 }
 object AnimationAnimateMetadata {
   
   @scala.inline
   def apply(timings: String | Double | AnimateTimings, `type`: AnimationMetadataType): AnimationAnimateMetadata = {
-    val __obj = js.Dynamic.literal(timings = timings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(timings = timings.asInstanceOf[js.Any], styles = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationAnimateMetadata]
   }

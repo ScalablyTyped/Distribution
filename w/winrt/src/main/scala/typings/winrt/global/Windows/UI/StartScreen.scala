@@ -6,7 +6,6 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.StartScreen.TileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StartScreen {
@@ -16,17 +15,18 @@ object StartScreen {
   object ForegroundText extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.StartScreen.ForegroundText with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.StartScreen.ForegroundText & Double] = js.native
     
-    /* 0 */ val dark: typings.winrt.Windows.UI.StartScreen.ForegroundText.dark with Double = js.native
+    /* 0 */ val dark: typings.winrt.Windows.UI.StartScreen.ForegroundText.dark & Double = js.native
     
-    /* 1 */ val light: typings.winrt.Windows.UI.StartScreen.ForegroundText.light with Double = js.native
+    /* 1 */ val light: typings.winrt.Windows.UI.StartScreen.ForegroundText.light & Double = js.native
   }
   
   @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
   @js.native
   class SecondaryTile ()
-    extends typings.winrt.Windows.UI.StartScreen.SecondaryTile {
+    extends StObject
+       with typings.winrt.Windows.UI.StartScreen.SecondaryTile {
     def this(tileId: String) = this()
     def this(
       tileId: String,
@@ -49,20 +49,20 @@ object StartScreen {
   /* static members */
   object SecondaryTile {
     
-    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.exists")
+    @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
     @js.native
-    def exists(tileId: String): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllAsync")
-    @js.native
-    def findAllAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = js.native
-    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllAsync")
-    @js.native
-    def findAllAsync(applicationId: String): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = js.native
+    @scala.inline
+    def exists(tileId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(tileId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("Windows.UI.StartScreen.SecondaryTile.findAllForPackageAsync")
-    @js.native
-    def findAllForPackageAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = js.native
+    @scala.inline
+    def findAllAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]]]
+    @scala.inline
+    def findAllAsync(applicationId: String): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]]]
+    
+    @scala.inline
+    def findAllForPackageAsync(): IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllForPackageAsync")().asInstanceOf[IAsyncOperation[IVectorView[typings.winrt.Windows.UI.StartScreen.SecondaryTile]]]
   }
   
   @JSGlobal("Windows.UI.StartScreen.TileOptions")
@@ -70,14 +70,14 @@ object StartScreen {
   object TileOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.StartScreen.TileOptions with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.UI.StartScreen.TileOptions & Double] = js.native
     
-    /* 3 */ val copyOnDeployment: typings.winrt.Windows.UI.StartScreen.TileOptions.copyOnDeployment with Double = js.native
+    /* 3 */ val copyOnDeployment: typings.winrt.Windows.UI.StartScreen.TileOptions.copyOnDeployment & Double = js.native
     
-    /* 0 */ val none: typings.winrt.Windows.UI.StartScreen.TileOptions.none with Double = js.native
+    /* 0 */ val none: typings.winrt.Windows.UI.StartScreen.TileOptions.none & Double = js.native
     
-    /* 1 */ val showNameOnLogo: typings.winrt.Windows.UI.StartScreen.TileOptions.showNameOnLogo with Double = js.native
+    /* 1 */ val showNameOnLogo: typings.winrt.Windows.UI.StartScreen.TileOptions.showNameOnLogo & Double = js.native
     
-    /* 2 */ val showNameOnWideLogo: typings.winrt.Windows.UI.StartScreen.TileOptions.showNameOnWideLogo with Double = js.native
+    /* 2 */ val showNameOnWideLogo: typings.winrt.Windows.UI.StartScreen.TileOptions.showNameOnWideLogo & Double = js.native
   }
 }

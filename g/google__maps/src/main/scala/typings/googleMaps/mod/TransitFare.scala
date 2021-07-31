@@ -2,20 +2,18 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitFare extends StObject {
   
   /** An [ISO 4217 currency code](https://en.wikipedia.org/wiki/ISO_4217) indicating the currency that the amount is expressed in. */
-  var currency: String = js.native
+  var currency: String
   
   /** The total fare amount, formatted in the requested language. */
-  var text: String = js.native
+  var text: String
   
   /** The total fare amount, in the currency specified above. */
-  var value: Double = js.native
+  var value: Double
 }
 object TransitFare {
   

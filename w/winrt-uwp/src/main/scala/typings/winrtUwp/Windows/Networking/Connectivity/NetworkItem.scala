@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a connected network. */
-@js.native
 trait NetworkItem extends StObject {
   
   /**
     * Gets a NetworkTypes value indicating the network type for a NetworkItem .
     * @return The type of a network.
     */
-  def getNetworkTypes(): NetworkTypes = js.native
+  def getNetworkTypes(): NetworkTypes
   
   /** Gets the network ID. */
-  var networkId: String = js.native
+  var networkId: String
 }
 object NetworkItem {
   

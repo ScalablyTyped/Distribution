@@ -2,29 +2,27 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for a StoredInfoType.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2StoredInfoTypeConfig extends StObject {
   
   /**
     * Description of the StoredInfoType (max 256 characters).
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Display name of the StoredInfoType (max 256 characters).
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * StoredInfoType where findings are defined by a dictionary of phrases.
     */
-  var largeCustomDictionary: js.UndefOr[SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig] = js.native
+  var largeCustomDictionary: js.UndefOr[SchemaGooglePrivacyDlpV2LargeCustomDictionaryConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2StoredInfoTypeConfig {
   

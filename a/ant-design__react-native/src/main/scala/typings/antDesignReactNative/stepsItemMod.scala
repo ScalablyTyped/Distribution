@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsItemMod {
@@ -13,14 +12,13 @@ object stepsItemMod {
   @js.native
   class default () extends StepsItem
   
-  @js.native
   trait RenderIconParams extends StObject {
     
-    var error: Boolean = js.native
+    var error: Boolean
     
-    var starting: Boolean = js.native
+    var starting: Boolean
     
-    var waiting: Boolean = js.native
+    var waiting: Boolean
   }
   object RenderIconParams {
     
@@ -48,34 +46,33 @@ object stepsItemMod {
   trait StepsItem
     extends Component[StepsItemProps, js.Any, js.Any]
   
-  @js.native
   trait StepsItemProps extends StObject {
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var errorTail: js.UndefOr[Double] = js.native
+    var errorTail: js.UndefOr[Double] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var last: js.UndefOr[Boolean] = js.native
+    var last: js.UndefOr[Boolean] = js.undefined
     
-    var renderIcon: js.UndefOr[js.Function1[/* params */ RenderIconParams, ReactNode]] = js.native
+    var renderIcon: js.UndefOr[js.Function1[/* params */ RenderIconParams, ReactNode]] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object StepsItemProps {
     

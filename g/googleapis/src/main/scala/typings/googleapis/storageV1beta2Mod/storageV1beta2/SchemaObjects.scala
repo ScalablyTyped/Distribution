@@ -2,37 +2,35 @@ package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of objects.
   */
-@js.native
 trait SchemaObjects extends StObject {
   
   /**
     * The list of items.
     */
-  var items: js.UndefOr[js.Array[SchemaObject]] = js.native
+  var items: js.UndefOr[js.Array[SchemaObject]] = js.undefined
   
   /**
     * The kind of item this is. For lists of objects, this is always
     * storage#objects.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, used to page through large result sets. Provide
     * this value in a subsequent request to return the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of prefixes of objects matching-but-not-listed up to and
     * including the requested delimiter.
     */
-  var prefixes: js.UndefOr[js.Array[String]] = js.native
+  var prefixes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaObjects {
   

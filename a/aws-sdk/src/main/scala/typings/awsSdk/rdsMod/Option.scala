@@ -2,56 +2,54 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Option extends StObject {
   
   /**
     * If the option requires access to a port, then this DB security group allows access to the port.
     */
-  var DBSecurityGroupMemberships: js.UndefOr[DBSecurityGroupMembershipList] = js.native
+  var DBSecurityGroupMemberships: js.UndefOr[DBSecurityGroupMembershipList] = js.undefined
   
   /**
     * The description of the option.
     */
-  var OptionDescription: js.UndefOr[String] = js.native
+  var OptionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the option.
     */
-  var OptionName: js.UndefOr[String] = js.native
+  var OptionName: js.UndefOr[String] = js.undefined
   
   /**
     * The option settings for this option.
     */
-  var OptionSettings: js.UndefOr[OptionSettingConfigurationList] = js.native
+  var OptionSettings: js.UndefOr[OptionSettingConfigurationList] = js.undefined
   
   /**
     * The version of the option.
     */
-  var OptionVersion: js.UndefOr[String] = js.native
+  var OptionVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicate if this option is permanent.
     */
-  var Permanent: js.UndefOr[Boolean] = js.native
+  var Permanent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate if this option is persistent.
     */
-  var Persistent: js.UndefOr[Boolean] = js.native
+  var Persistent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If required, the port configured for this option to use.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * If the option requires access to a port, then this VPC security group allows access to the port.
     */
-  var VpcSecurityGroupMemberships: js.UndefOr[VpcSecurityGroupMembershipList] = js.native
+  var VpcSecurityGroupMemberships: js.UndefOr[VpcSecurityGroupMembershipList] = js.undefined
 }
 object Option {
   

@@ -3,19 +3,20 @@ package typings.agGrid
 import typings.agGrid.utilsMod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleHttpRequestMod {
   
-  @JSImport("ag-grid/dist/lib/misc/simpleHttpRequest", "simpleHttpRequest")
+  @JSImport("ag-grid/dist/lib/misc/simpleHttpRequest", JSImport.Namespace)
   @js.native
-  def simpleHttpRequest(params: SimpleHttpRequestParams): Promise[_] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def simpleHttpRequest(params: SimpleHttpRequestParams): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleHttpRequest")(params.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  
   trait SimpleHttpRequestParams extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object SimpleHttpRequestParams {
     

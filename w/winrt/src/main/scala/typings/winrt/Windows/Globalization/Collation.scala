@@ -3,13 +3,13 @@ package typings.winrt.Windows.Globalization
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Collation {
   
-  @js.native
-  trait CharacterGrouping extends ICharacterGrouping
+  trait CharacterGrouping
+    extends StObject
+       with ICharacterGrouping
   object CharacterGrouping {
     
     @scala.inline
@@ -20,14 +20,15 @@ object Collation {
   }
   
   @js.native
-  trait CharacterGroupings extends ICharacterGroupings
+  trait CharacterGroupings
+    extends StObject
+       with ICharacterGroupings
   
-  @js.native
   trait ICharacterGrouping extends StObject {
     
-    var first: String = js.native
+    var first: String
     
-    var label: String = js.native
+    var label: String
   }
   object ICharacterGrouping {
     
@@ -49,7 +50,9 @@ object Collation {
   }
   
   @js.native
-  trait ICharacterGroupings extends IVectorView[CharacterGrouping] {
+  trait ICharacterGroupings
+    extends StObject
+       with IVectorView[CharacterGrouping] {
     
     def lookup(text: String): String = js.native
   }

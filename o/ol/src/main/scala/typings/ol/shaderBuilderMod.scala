@@ -10,10 +10,13 @@ import typings.ol.olStrings.vec4
 import typings.ol.pointsLayerMod.CustomAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shaderBuilderMod {
+  
+  @JSImport("ol/webgl/ShaderBuilder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/webgl/ShaderBuilder", "ShaderBuilder")
   @js.native
@@ -128,18 +131,16 @@ object shaderBuilderMod {
     def setTextureCoordinateExpression(expression: String): ShaderBuilder = js.native
   }
   
-  @JSImport("ol/webgl/ShaderBuilder", "parseLiteralStyle")
-  @js.native
-  def parseLiteralStyle(style: LiteralStyle): StyleParseResult = js.native
+  @scala.inline
+  def parseLiteralStyle(style: LiteralStyle): StyleParseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLiteralStyle")(style.asInstanceOf[js.Any]).asInstanceOf[StyleParseResult]
   
-  @js.native
   trait StyleParseResult extends StObject {
     
-    var attributes: js.Array[CustomAttribute] = js.native
+    var attributes: js.Array[CustomAttribute]
     
-    var builder: ShaderBuilder = js.native
+    var builder: ShaderBuilder
     
-    var uniforms: StringDictionary[UniformValue] = js.native
+    var uniforms: StringDictionary[UniformValue]
   }
   object StyleParseResult {
     
@@ -170,14 +171,13 @@ object shaderBuilderMod {
     }
   }
   
-  @js.native
   trait VaryingDescription extends StObject {
     
-    var expression: String = js.native
+    var expression: String
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object VaryingDescription {
     

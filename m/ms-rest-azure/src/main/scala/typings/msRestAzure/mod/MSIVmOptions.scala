@@ -2,16 +2,16 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MSIVmOptions extends MSIOptions {
+trait MSIVmOptions
+  extends StObject
+     with MSIOptions {
   
   /**
     * @prop {number} [port] - port on which the MSI service is running on the host VM. Default port is 50342
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object MSIVmOptions {
   

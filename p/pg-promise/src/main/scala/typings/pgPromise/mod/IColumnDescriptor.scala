@@ -2,19 +2,17 @@ package typings.pgPromise.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumnDescriptor[S] extends StObject {
   
-  var exists: Boolean = js.native
+  var exists: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var source: S = js.native
+  var source: S
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IColumnDescriptor {
   
@@ -25,7 +23,7 @@ object IColumnDescriptor {
   }
   
   @scala.inline
-  implicit class IColumnDescriptorMutableBuilder[Self <: IColumnDescriptor[_], S] (val x: Self with IColumnDescriptor[S]) extends AnyVal {
+  implicit class IColumnDescriptorMutableBuilder[Self <: IColumnDescriptor[?], S] (val x: Self & IColumnDescriptor[S]) extends AnyVal {
     
     @scala.inline
     def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])

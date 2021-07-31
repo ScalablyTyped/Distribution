@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reserved/read-only. A reserved/read-only key is forbidden in certain
   * documented contexts.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Key extends StObject {
   
   /**
     * Entities are partitioned into subsets, currently identified by a project
     * ID and namespace ID. Queries are scoped to a single partition.
     */
-  var partitionId: js.UndefOr[SchemaGooglePrivacyDlpV2PartitionId] = js.native
+  var partitionId: js.UndefOr[SchemaGooglePrivacyDlpV2PartitionId] = js.undefined
   
   /**
     * The entity path. An entity path consists of one or more elements composed
@@ -29,7 +27,7 @@ trait SchemaGooglePrivacyDlpV2Key extends StObject {
     * prefixes of the path are called the element&#39;s _ancestors_.  A path
     * can never be empty, and a path can have at most 100 elements.
     */
-  var path: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2PathElement]] = js.native
+  var path: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2PathElement]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Key {
   

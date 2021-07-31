@@ -2,29 +2,27 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var config: ContenttypeUrl = js.native
+  var config: ContenttypeUrl
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var ping_url: String = js.native
+  var ping_url: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object Config {
   

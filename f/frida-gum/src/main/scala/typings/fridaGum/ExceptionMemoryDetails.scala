@@ -2,21 +2,19 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionMemoryDetails extends StObject {
   
   /**
     * Address that was accessed when the exception occurred.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * The kind of operation that triggered the exception.
     */
-  var operation: MemoryOperation = js.native
+  var operation: MemoryOperation
 }
 object ExceptionMemoryDetails {
   

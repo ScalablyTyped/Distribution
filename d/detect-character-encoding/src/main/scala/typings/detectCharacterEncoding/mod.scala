@@ -3,21 +3,22 @@ package typings.detectCharacterEncoding
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(buf: Buffer): Result | Null = ^.asInstanceOf[js.Dynamic].apply(buf.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  
   @JSImport("detect-character-encoding", JSImport.Namespace)
   @js.native
-  def apply(buf: Buffer): Result | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Result extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var encoding: String = js.native
+    var encoding: String
   }
   object Result {
     

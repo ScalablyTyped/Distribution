@@ -16,46 +16,44 @@ import typings.swiper.swiperStrings.vertical
 import typings.swiper.swiperStrings.wrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwiperOptions extends StObject {
   
-  var a11y: js.UndefOr[A11yOptions | Boolean] = js.native
+  var a11y: js.UndefOr[A11yOptions | Boolean] = js.undefined
   
-  var allowSlideNext: js.UndefOr[Boolean] = js.native
+  var allowSlideNext: js.UndefOr[Boolean] = js.undefined
   
-  var allowSlidePrev: js.UndefOr[Boolean] = js.native
+  var allowSlidePrev: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If false, then the only way to switch the slide is use of external API functions like slidePrev or slideNext
     */
-  var allowTouchMove: js.UndefOr[Boolean] = js.native
+  var allowTouchMove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true and slider wrapper will adopt its height to the height of the currently active slide
     *
     * @default false
     */
-  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.undefined
   
-  var autoplay: js.UndefOr[AutoplayOptions | Boolean] = js.native
+  var autoplay: js.UndefOr[AutoplayOptions | Boolean] = js.undefined
   
   // Breakpoints
-  var breakpoints: js.UndefOr[NumberDictionary[SwiperOptions]] = js.native
+  var breakpoints: js.UndefOr[NumberDictionary[SwiperOptions]] = js.undefined
   
-  var breakpointsInverse: js.UndefOr[Boolean] = js.native
+  var breakpointsInverse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When enabled it center slides if the amount of slides less than `slidesPerView`. Not intended to be used loop mode and slidesPerColumn
     */
-  var centerInsufficientSlides: js.UndefOr[Boolean] = js.native
+  var centerInsufficientSlides: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, then active slide will be centered, not always on the left side.
     */
-  var centeredSlides: js.UndefOr[Boolean] = js.native
+  var centeredSlides: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, then active slide will be centered without adding gaps at the beginning and end of slider.
@@ -63,15 +61,15 @@ trait SwiperOptions extends StObject {
     *
     * @default false
     */
-  var centeredSlidesBounds: js.UndefOr[Boolean] = js.native
+  var centeredSlidesBounds: js.UndefOr[Boolean] = js.undefined
   
   // Namespace
-  var containerModifierClass: js.UndefOr[String] = js.native
+  var containerModifierClass: js.UndefOr[String] = js.undefined
   
   // Components
-  var controller: js.UndefOr[ControllerOptions | Boolean] = js.native
+  var controller: js.UndefOr[ControllerOptions | Boolean] = js.undefined
   
-  var coverflowEffect: js.UndefOr[CoverflowEffectOptions] = js.native
+  var coverflowEffect: js.UndefOr[CoverflowEffectOptions] = js.undefined
   
   // CSS Scroll Snap
   /**
@@ -80,54 +78,54 @@ trait SwiperOptions extends StObject {
     *
     * @default false
     */
-  var cssMode: js.UndefOr[Boolean] = js.native
+  var cssMode: js.UndefOr[Boolean] = js.undefined
   
-  var cubeEffect: js.UndefOr[CubeEffectOptions] = js.native
+  var cubeEffect: js.UndefOr[CubeEffectOptions] = js.undefined
   
   /**
     * Could be 'horizontal' or 'vertical' (for vertical slider).
     *
     * @default 'horizontal'
     */
-  var direction: js.UndefOr[horizontal | vertical] = js.native
+  var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * Tranisition effect. Could be "slide", "fade", "cube", "coverflow" or "flip"
     *
     * @default 'slide'
     */
-  var effect: js.UndefOr[slide | fade | cube | coverflow | flip] = js.native
+  var effect: js.UndefOr[slide | fade | cube | coverflow | flip] = js.undefined
   
-  var fadeEffect: js.UndefOr[FadeEffectOptions] = js.native
+  var fadeEffect: js.UndefOr[FadeEffectOptions] = js.undefined
   
-  var flipEffect: js.UndefOr[FlipEffectOptions] = js.native
+  var flipEffect: js.UndefOr[FlipEffectOptions] = js.undefined
   
   /**
     * If disabled, then slider will be animated only when you release it, it will not move while you hold your finger on it
     */
-  var followFinger: js.UndefOr[Boolean] = js.native
+  var followFinger: js.UndefOr[Boolean] = js.undefined
   
   // Freemode
-  var freeMode: js.UndefOr[Boolean] = js.native
+  var freeMode: js.UndefOr[Boolean] = js.undefined
   
-  var freeModeMinimumVelocity: js.UndefOr[Double] = js.native
+  var freeModeMinimumVelocity: js.UndefOr[Double] = js.undefined
   
-  var freeModeMomentum: js.UndefOr[Boolean] = js.native
+  var freeModeMomentum: js.UndefOr[Boolean] = js.undefined
   
-  var freeModeMomentumBounce: js.UndefOr[Boolean] = js.native
+  var freeModeMomentumBounce: js.UndefOr[Boolean] = js.undefined
   
-  var freeModeMomentumBounceRatio: js.UndefOr[Double] = js.native
+  var freeModeMomentumBounceRatio: js.UndefOr[Double] = js.undefined
   
-  var freeModeMomentumRatio: js.UndefOr[Double] = js.native
+  var freeModeMomentumRatio: js.UndefOr[Double] = js.undefined
   
-  var freeModeMomentumVelocityRatio: js.UndefOr[Double] = js.native
+  var freeModeMomentumVelocityRatio: js.UndefOr[Double] = js.undefined
   
-  var freeModeSticky: js.UndefOr[Boolean] = js.native
+  var freeModeSticky: js.UndefOr[Boolean] = js.undefined
   
   // Grab Cursor
-  var grabCursor: js.UndefOr[Boolean] = js.native
+  var grabCursor: js.UndefOr[Boolean] = js.undefined
   
-  var hashNavigation: js.UndefOr[HashNavigationOptions | Boolean] = js.native
+  var hashNavigation: js.UndefOr[HashNavigationOptions | Boolean] = js.undefined
   
   /**
     * Swiper height (in px). Parameter allows to force Swiper height.
@@ -135,19 +133,19 @@ trait SwiperOptions extends StObject {
     *
     * @note Setting this parameter will make Swiper not responsive
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var history: js.UndefOr[HistoryNavigationOptions | Boolean] = js.native
+  var history: js.UndefOr[HistoryNavigationOptions | Boolean] = js.undefined
   
   /**
     * Enable to release Swiper events for swipe-to-go-back work in iOS UIWebView
     */
-  var iOSEdgeSwipeDetection: js.UndefOr[Boolean] = js.native
+  var iOSEdgeSwipeDetection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Area (in px) from left edge of the screen to release touch events for swipe-to-go-back in iOS UIWebView
     */
-  var iOSEdgeSwipeThreshold: js.UndefOr[Double] = js.native
+  var iOSEdgeSwipeThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether Swiper should be initialised automatically when you create an instance.
@@ -155,46 +153,46 @@ trait SwiperOptions extends StObject {
     *
     * @default true
     */
-  var init: js.UndefOr[Boolean] = js.native
+  var init: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Index number of initial slide.
     *
     * @default 0
     */
-  var initialSlide: js.UndefOr[Double] = js.native
+  var initialSlide: js.UndefOr[Double] = js.undefined
   
-  var keyboard: js.UndefOr[KeyboardOptions | Boolean] = js.native
+  var keyboard: js.UndefOr[KeyboardOptions | Boolean] = js.undefined
   
-  var `lazy`: js.UndefOr[LazyOptions | Boolean] = js.native
+  var `lazy`: js.UndefOr[LazyOptions | Boolean] = js.undefined
   
   /**
     * Set to false if you want to disable long swipes
     */
-  var longSwipes: js.UndefOr[Boolean] = js.native
+  var longSwipes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Minimal duration (in ms) to trigger swipe to next/previous slide during long swipes
     */
-  var longSwipesMs: js.UndefOr[Double] = js.native
+  var longSwipesMs: js.UndefOr[Double] = js.undefined
   
   /**
     * Ratio to trigger swipe to next/previous slide during long swipes
     */
-  var longSwipesRatio: js.UndefOr[Double] = js.native
+  var longSwipesRatio: js.UndefOr[Double] = js.undefined
   
   // Loop
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var loopAdditionalSlides: js.UndefOr[Double] = js.native
+  var loopAdditionalSlides: js.UndefOr[Double] = js.undefined
   
-  var loopFillGroupWithBlank: js.UndefOr[Boolean] = js.native
+  var loopFillGroupWithBlank: js.UndefOr[Boolean] = js.undefined
   
-  var loopedSlides: js.UndefOr[Double] = js.native
+  var loopedSlides: js.UndefOr[Double] = js.undefined
   
-  var mousewheel: js.UndefOr[MousewheelOptions | Boolean] = js.native
+  var mousewheel: js.UndefOr[MousewheelOptions | Boolean] = js.undefined
   
-  var navigation: js.UndefOr[NavigationOptions] = js.native
+  var navigation: js.UndefOr[NavigationOptions] = js.undefined
   
   /**
     * Set to true on  Swiper for correct touch events interception. Use only on
@@ -202,20 +200,20 @@ trait SwiperOptions extends StObject {
     *
     * @default false
     */
-  var nested: js.UndefOr[Boolean] = js.native
+  var nested: js.UndefOr[Boolean] = js.undefined
   
-  var noSwiping: js.UndefOr[Boolean] = js.native
+  var noSwiping: js.UndefOr[Boolean] = js.undefined
   
-  var noSwipingClass: js.UndefOr[String] = js.native
+  var noSwipingClass: js.UndefOr[String] = js.undefined
   
-  var noSwipingSelector: js.UndefOr[String] = js.native
+  var noSwipingSelector: js.UndefOr[String] = js.undefined
   
   /**
     * Normalize slide index.
     */
-  var normalizeSlideIndex: js.UndefOr[Boolean] = js.native
+  var normalizeSlideIndex: js.UndefOr[Boolean] = js.undefined
   
-  var observeParents: js.UndefOr[Boolean] = js.native
+  var observeParents: js.UndefOr[Boolean] = js.undefined
   
   // Observer
   /**
@@ -223,46 +221,46 @@ trait SwiperOptions extends StObject {
     *
     * @default false
     */
-  var observeSlideChildren: js.UndefOr[Boolean] = js.native
+  var observeSlideChildren: js.UndefOr[Boolean] = js.undefined
   
-  var observer: js.UndefOr[Boolean] = js.native
+  var observer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Register event handlers.
     */
-  var on: js.UndefOr[keyinSwiperEventvoid] = js.native
+  var on: js.UndefOr[keyinSwiperEventvoid] = js.undefined
   
-  var pagination: js.UndefOr[PaginationOptions] = js.native
+  var pagination: js.UndefOr[PaginationOptions] = js.undefined
   
-  var parallax: js.UndefOr[Boolean] = js.native
+  var parallax: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Passive event listeners will be used by default where possible to improve scrolling performance on mobile devices.
     * But if you need to use `e.preventDefault` and you have conflict with it, then you should disable this parameter
     */
-  var passiveListeners: js.UndefOr[Boolean] = js.native
+  var passiveListeners: js.UndefOr[Boolean] = js.undefined
   
   // Images
-  var preloadImages: js.UndefOr[Boolean] = js.native
+  var preloadImages: js.UndefOr[Boolean] = js.undefined
   
   // Clicks
-  var preventClicks: js.UndefOr[Boolean] = js.native
+  var preventClicks: js.UndefOr[Boolean] = js.undefined
   
-  var preventClicksPropagation: js.UndefOr[Boolean] = js.native
+  var preventClicksPropagation: js.UndefOr[Boolean] = js.undefined
   
   // Swiping / No swiping
-  var preventInteractionOnTransition: js.UndefOr[Boolean] = js.native
+  var preventInteractionOnTransition: js.UndefOr[Boolean] = js.undefined
   
   // Touch Resistance
   /**
     * Set to false if you want to disable resistant bounds
     */
-  var resistance: js.UndefOr[Boolean] = js.native
+  var resistance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option allows you to control resistance ratio
     */
-  var resistanceRatio: js.UndefOr[Double] = js.native
+  var resistanceRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Set to true to round values of slides width and height to prevent blurry texts on usual
@@ -270,7 +268,7 @@ trait SwiperOptions extends StObject {
     *
     * @default false
     */
-  var roundLengths: js.UndefOr[Boolean] = js.native
+  var roundLengths: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Fire [Transition/SlideChange][Start/End] events on swiper initialization.
@@ -278,71 +276,71 @@ trait SwiperOptions extends StObject {
     *
     * @default true
     */
-  var runCallbacksOnInit: js.UndefOr[Boolean] = js.native
+  var runCallbacksOnInit: js.UndefOr[Boolean] = js.undefined
   
-  var scrollbar: js.UndefOr[ScrollbarOptions] = js.native
+  var scrollbar: js.UndefOr[ScrollbarOptions] = js.undefined
   
   /**
     * Enabled this option and plugin will set width/height on swiper wrapper equal to total size of all slides.
     * Mostly should be used as compatibility fallback option for browser that don't support flexbox layout well
     */
-  var setWrapperSize: js.UndefOr[Boolean] = js.native
+  var setWrapperSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to false if you want to disable short swipes
     */
-  var shortSwipes: js.UndefOr[Boolean] = js.native
+  var shortSwipes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, Swiper will accept mouse events like touch events (click and drag to change slides)
     */
-  var simulateTouch: js.UndefOr[Boolean] = js.native
+  var simulateTouch: js.UndefOr[Boolean] = js.undefined
   
-  var slideActiveClass: js.UndefOr[String] = js.native
+  var slideActiveClass: js.UndefOr[String] = js.undefined
   
-  var slideClass: js.UndefOr[String] = js.native
+  var slideClass: js.UndefOr[String] = js.undefined
   
-  var slideDuplicateActiveClass: js.UndefOr[String] = js.native
+  var slideDuplicateActiveClass: js.UndefOr[String] = js.undefined
   
-  var slideDuplicateClass: js.UndefOr[String] = js.native
+  var slideDuplicateClass: js.UndefOr[String] = js.undefined
   
-  var slideDuplicateNextClass: js.UndefOr[String] = js.native
+  var slideDuplicateNextClass: js.UndefOr[String] = js.undefined
   
-  var slideDuplicatePrevClass: js.UndefOr[String] = js.native
+  var slideDuplicatePrevClass: js.UndefOr[String] = js.undefined
   
-  var slideNextClass: js.UndefOr[String] = js.native
+  var slideNextClass: js.UndefOr[String] = js.undefined
   
-  var slidePrevClass: js.UndefOr[String] = js.native
+  var slidePrevClass: js.UndefOr[String] = js.undefined
   
-  var slideToClickedSlide: js.UndefOr[Boolean] = js.native
+  var slideToClickedSlide: js.UndefOr[Boolean] = js.undefined
   
-  var slideVisibleClass: js.UndefOr[String] = js.native
+  var slideVisibleClass: js.UndefOr[String] = js.undefined
   
   /**
     * Add (in px) additional slide offset in the end of the container (after all slides)
     */
-  var slidesOffsetAfter: js.UndefOr[Double] = js.native
+  var slidesOffsetAfter: js.UndefOr[Double] = js.undefined
   
   /**
     * Add (in px) additional slide offset in the beginning of the container (before all slides)
     */
-  var slidesOffsetBefore: js.UndefOr[Double] = js.native
+  var slidesOffsetBefore: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of slides per column, for multirow layout
     * slidesPerColumn > 1 is currently not compatible with loop mode (loop: true)
     */
-  var slidesPerColumn: js.UndefOr[Double] = js.native
+  var slidesPerColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * Could be 'column' or 'row'. Defines how slides should fill rows, by column or by row
     */
-  var slidesPerColumnFill: js.UndefOr[row | column] = js.native
+  var slidesPerColumnFill: js.UndefOr[row | column] = js.undefined
   
   /**
     * Set numbers of slides to define and enable group sliding. Useful to use with slidesPerView > 1
     */
-  var slidesPerGroup: js.UndefOr[Double] = js.native
+  var slidesPerGroup: js.UndefOr[Double] = js.undefined
   
   /**
     * The parameter works in the following way: If slidesPerGroupSkip equals 0 (default), no slides are excluded from grouping, and the resulting behaviour is the same as without this change.
@@ -350,73 +348,73 @@ trait SwiperOptions extends StObject {
     *
     * @default 0
     */
-  var slidesPerGroupSkip: js.UndefOr[Double] = js.native
+  var slidesPerGroupSkip: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of slides per view (slides visible at the same time on slider's container).
     * If you use it with "auto" value and along with loop: true then you need to specify loopedSlides parameter with amount of slides to loop (duplicate)
     * slidesPerView: 'auto' is currently not compatible with multirow mode, when slidesPerColumn > 1
     */
-  var slidesPerView: js.UndefOr[Double | auto] = js.native
+  var slidesPerView: js.UndefOr[Double | auto] = js.undefined
   
   // Slides grid
   /**
     * Distance between slides in px.
     */
-  var spaceBetween: js.UndefOr[Double] = js.native
+  var spaceBetween: js.UndefOr[Double] = js.undefined
   
   /**
     * Duration of transition between slides (in ms)
     *
     * @default 300
     */
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var swipeHandler: js.UndefOr[SelectableElement] = js.native
+  var swipeHandler: js.UndefOr[SelectableElement] = js.undefined
   
   /**
     * Threshold value in px. If "touch distance" will be lower than this value then swiper will not move
     */
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
   
-  var thumbs: js.UndefOr[ThumbsOptions] = js.native
+  var thumbs: js.UndefOr[ThumbsOptions] = js.undefined
   
   /**
     * Allowable angle (in degrees) to trigger touch move
     */
-  var touchAngle: js.UndefOr[Double] = js.native
+  var touchAngle: js.UndefOr[Double] = js.undefined
   
   // Touches
   /**
     * Target element to listen touch events on. Can be 'container' (to listen for touch events on swiper-container) or 'wrapper'
     * (to listen for touch events on swiper-wrapper)
     */
-  var touchEventsTarget: js.UndefOr[container | wrapper] = js.native
+  var touchEventsTarget: js.UndefOr[container | wrapper] = js.undefined
   
   /**
     * If enabled, then propagation of "touchmove" will be stopped
     */
-  var touchMoveStopPropagation: js.UndefOr[Boolean] = js.native
+  var touchMoveStopPropagation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Touch ratio
     */
-  var touchRatio: js.UndefOr[Double] = js.native
+  var touchRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable to release touch events on slider edge position (beginning, end) to allow for further page scrolling
     */
-  var touchReleaseOnEdges: js.UndefOr[Boolean] = js.native
+  var touchReleaseOnEdges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Force to always prevent default for `touchstart` (`mousedown`) event
     */
-  var touchStartForcePreventDefault: js.UndefOr[Boolean] = js.native
+  var touchStartForcePreventDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If disabled, `touchstart` (`mousedown`) event won't be prevented
     */
-  var touchStartPreventDefault: js.UndefOr[Boolean] = js.native
+  var touchStartPreventDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If enabled (by default) and navigation elements' parameters passed as a string (like ".pagination")
@@ -425,24 +423,24 @@ trait SwiperOptions extends StObject {
     *
     * @default true
     */
-  var uniqueNavElements: js.UndefOr[Boolean] = js.native
+  var uniqueNavElements: js.UndefOr[Boolean] = js.undefined
   
-  var updateOnImagesReady: js.UndefOr[Boolean] = js.native
+  var updateOnImagesReady: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Swiper will recalculate slides position on window resize (orientationchange)
     *
     * @default true
     */
-  var updateOnWindowResize: js.UndefOr[Boolean] = js.native
+  var updateOnWindowResize: js.UndefOr[Boolean] = js.undefined
   
-  var virtual: js.UndefOr[VirtualOptions | Boolean] = js.native
+  var virtual: js.UndefOr[VirtualOptions | Boolean] = js.undefined
   
   /**
     * Enabled this option and swiper will be operated as usual except it will not move, real translate values on wrapper will not be set.
     * Useful when you may need to create custom slide transition
     */
-  var virtualTranslate: js.UndefOr[Boolean] = js.native
+  var virtualTranslate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When enabled Swiper will be disabled and hide navigation buttons on
@@ -450,12 +448,12 @@ trait SwiperOptions extends StObject {
     *
     * @default false
     */
-  var watchOverflow: js.UndefOr[Boolean] = js.native
+  var watchOverflow: js.UndefOr[Boolean] = js.undefined
   
   // Progress
-  var watchSlidesProgress: js.UndefOr[Boolean] = js.native
+  var watchSlidesProgress: js.UndefOr[Boolean] = js.undefined
   
-  var watchSlidesVisibility: js.UndefOr[Boolean] = js.native
+  var watchSlidesVisibility: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Swiper width (in px). Parameter allows to force Swiper width.
@@ -463,11 +461,11 @@ trait SwiperOptions extends StObject {
     *
     * @note Setting this parameter will make Swiper not responsive
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var wrapperClass: js.UndefOr[String] = js.native
+  var wrapperClass: js.UndefOr[String] = js.undefined
   
-  var zoom: js.UndefOr[ZoomOptions | Boolean] = js.native
+  var zoom: js.UndefOr[ZoomOptions | Boolean] = js.undefined
 }
 object SwiperOptions {
   

@@ -2,53 +2,58 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryAxesSettingsMod {
   
   @JSImport("amcharts/CategoryAxesSettings", JSImport.Default)
   @js.native
-  class default () extends CategoryAxesSettings
-  
-  @js.native
-  trait CategoryAxesSettings extends StObject {
+  class default ()
+    extends StObject
+       with CategoryAxesSettings {
     
     /**
       * Specifies whether number of gridCount is specified automatically, according to the axis size.
       * @default true
       */
+    /* CompleteClass */
     var autoGridCount: Boolean = js.native
     
     /**
       * Axis opacity.
       */
+    /* CompleteClass */
     var axisAlpha: Double = js.native
     
     /**
       * Axis color.
       */
+    /* CompleteClass */
     var axisColor: String = js.native
     
     /**
       * Height of category axes. Set it to 0 if you set inside property to true.
       * @default 28
       */
+    /* CompleteClass */
     var axisHeight: Double = js.native
     
     /**
       * Thickness of the axis.
       */
+    /* CompleteClass */
     var axisThickness: Double = js.native
     
     /**
       * Text color.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Length of a dash.
       */
+    /* CompleteClass */
     var dashLength: Double = js.native
     
     /**
@@ -64,38 +69,45 @@ object categoryAxesSettingsMod {
       * YYYY - years
       * Check this page for date formatting strings.
       */
-    var dateFormats: js.Array[_] = js.native
+    /* CompleteClass */
+    var dateFormats: js.Array[js.Any] = js.native
     
     /**
       * If you want data points to be placed at equal intervals (omiting dates with no data),
       * set equalSpacing to true.
       */
+    /* CompleteClass */
     var equalSpacing: Boolean = js.native
     
     /**
       * Fill opacity. Every second space between grid lines can be filled with fillColor.
       */
+    /* CompleteClass */
     var fillAlpha: Double = js.native
     
     /**
       * Fill color. Every second space between grid lines can be filled with color.
       * Set fillAlpha to a value greater than 0 to see the fills.
       */
+    /* CompleteClass */
     var fillColor: String = js.native
     
     /**
       * Text size.
       */
+    /* CompleteClass */
     var fontSize: String = js.native
     
     /**
       * Opacity of grid lines.
       */
+    /* CompleteClass */
     var gridAlpha: Double = js.native
     
     /**
       * Color of grid lines.
       */
+    /* CompleteClass */
     var gridColor: String = js.native
     
     /**
@@ -103,11 +115,13 @@ object categoryAxesSettingsMod {
       * You should set autoGridCount to false in order this property not to be ignored.
       * @default 10
       */
+    /* CompleteClass */
     var gridCount: Double = js.native
     
     /**
       * Thickness of grid lines.
       */
+    /* CompleteClass */
     var gridThickness: Double = js.native
     
     /**
@@ -115,16 +129,19 @@ object categoryAxesSettingsMod {
       * the selected period than specified in maxSeries property.
       * ["ss", "10ss", "30ss", "mm", "10mm", "30mm", "hh", "DD", "WW", "MM", "YYYY"]
       */
-    var groupToPeriods: js.Array[_] = js.native
+    /* CompleteClass */
+    var groupToPeriods: js.Array[js.Any] = js.native
     
     /**
       * Specifies whether values should be placed inside or outside of plot area.
       */
+    /* CompleteClass */
     var inside: Boolean = js.native
     
     /**
       * Rotation angle of a label.
       */
+    /* CompleteClass */
     var labelRotation: Double = js.native
     
     /**
@@ -134,6 +151,7 @@ object categoryAxesSettingsMod {
       * and maxSeries is 150 - the chart will group data to weeks.
       * @default 150
       */
+    /* CompleteClass */
     var maxSeries: Double = js.native
     
     /**
@@ -147,11 +165,13 @@ object categoryAxesSettingsMod {
       * YYYY - year
       * @default "DD"
       */
+    /* CompleteClass */
     var minPeriod: String = js.native
     
     /**
       * top or "bottom".
       */
+    /* CompleteClass */
     var position: String = js.native
     
     /**
@@ -159,12 +179,169 @@ object categoryAxesSettingsMod {
       * In case you display columns, it is recommended to set this to false.
       * startOnAxis can be set to true only if equalSpacing is set to true.
       */
+    /* CompleteClass */
     var startOnAxis: Boolean = js.native
     
     /**
       * Tick length.
       */
+    /* CompleteClass */
     var tickLength: Double = js.native
+  }
+  
+  trait CategoryAxesSettings extends StObject {
+    
+    /**
+      * Specifies whether number of gridCount is specified automatically, according to the axis size.
+      * @default true
+      */
+    var autoGridCount: Boolean
+    
+    /**
+      * Axis opacity.
+      */
+    var axisAlpha: Double
+    
+    /**
+      * Axis color.
+      */
+    var axisColor: String
+    
+    /**
+      * Height of category axes. Set it to 0 if you set inside property to true.
+      * @default 28
+      */
+    var axisHeight: Double
+    
+    /**
+      * Thickness of the axis.
+      */
+    var axisThickness: Double
+    
+    /**
+      * Text color.
+      */
+    var color: String
+    
+    /**
+      * Length of a dash.
+      */
+    var dashLength: Double
+    
+    /**
+      * Date formats of different periods.
+      * Possible period values:
+      * fff - milliseconds,
+      * ss - seconds,
+      * mm - minutes,
+      * hh - hours,
+      * DD - days,
+      * MM - months,
+      * WW - weeks,
+      * YYYY - years
+      * Check this page for date formatting strings.
+      */
+    var dateFormats: js.Array[js.Any]
+    
+    /**
+      * If you want data points to be placed at equal intervals (omiting dates with no data),
+      * set equalSpacing to true.
+      */
+    var equalSpacing: Boolean
+    
+    /**
+      * Fill opacity. Every second space between grid lines can be filled with fillColor.
+      */
+    var fillAlpha: Double
+    
+    /**
+      * Fill color. Every second space between grid lines can be filled with color.
+      * Set fillAlpha to a value greater than 0 to see the fills.
+      */
+    var fillColor: String
+    
+    /**
+      * Text size.
+      */
+    var fontSize: String
+    
+    /**
+      * Opacity of grid lines.
+      */
+    var gridAlpha: Double
+    
+    /**
+      * Color of grid lines.
+      */
+    var gridColor: String
+    
+    /**
+      * Approximate number of grid lines.
+      * You should set autoGridCount to false in order this property not to be ignored.
+      * @default 10
+      */
+    var gridCount: Double
+    
+    /**
+      * Thickness of grid lines.
+      */
+    var gridThickness: Double
+    
+    /**
+      * Periods to which data will be gruoped in case there are more data items in
+      * the selected period than specified in maxSeries property.
+      * ["ss", "10ss", "30ss", "mm", "10mm", "30mm", "hh", "DD", "WW", "MM", "YYYY"]
+      */
+    var groupToPeriods: js.Array[js.Any]
+    
+    /**
+      * Specifies whether values should be placed inside or outside of plot area.
+      */
+    var inside: Boolean
+    
+    /**
+      * Rotation angle of a label.
+      */
+    var labelRotation: Double
+    
+    /**
+      * Maximum series shown at a time.
+      * In case there are more data points in the selection than maxSeries,
+      * the chart will group data to longer periods, for example - you have 250 days in the selection,
+      * and maxSeries is 150 - the chart will group data to weeks.
+      * @default 150
+      */
+    var maxSeries: Double
+    
+    /**
+      * Specifies the shortest period of your data.
+      * fff - millisecond,
+      * ss - second,
+      * mm - minute,
+      * hh - hour,
+      * DD - day,
+      * MM - month,
+      * YYYY - year
+      * @default "DD"
+      */
+    var minPeriod: String
+    
+    /**
+      * top or "bottom".
+      */
+    var position: String
+    
+    /**
+      * Specifies whether the graph should start on axis or not.
+      * In case you display columns, it is recommended to set this to false.
+      * startOnAxis can be set to true only if equalSpacing is set to true.
+      */
+    var startOnAxis: Boolean
+    
+    /**
+      * Tick length.
+      */
+    var tickLength: Double
   }
   object CategoryAxesSettings {
     
@@ -177,7 +354,7 @@ object categoryAxesSettingsMod {
       axisThickness: Double,
       color: String,
       dashLength: Double,
-      dateFormats: js.Array[_],
+      dateFormats: js.Array[js.Any],
       equalSpacing: Boolean,
       fillAlpha: Double,
       fillColor: String,
@@ -186,7 +363,7 @@ object categoryAxesSettingsMod {
       gridColor: String,
       gridCount: Double,
       gridThickness: Double,
-      groupToPeriods: js.Array[_],
+      groupToPeriods: js.Array[js.Any],
       inside: Boolean,
       labelRotation: Double,
       maxSeries: Double,
@@ -224,7 +401,7 @@ object categoryAxesSettingsMod {
       def setDashLength(value: Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDateFormats(value: js.Array[_]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
+      def setDateFormats(value: js.Array[js.Any]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDateFormatsVarargs(value: js.Any*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
@@ -254,7 +431,7 @@ object categoryAxesSettingsMod {
       def setGridThickness(value: Double): Self = StObject.set(x, "gridThickness", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupToPeriods(value: js.Array[_]): Self = StObject.set(x, "groupToPeriods", value.asInstanceOf[js.Any])
+      def setGroupToPeriods(value: js.Array[js.Any]): Self = StObject.set(x, "groupToPeriods", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupToPeriodsVarargs(value: js.Any*): Self = StObject.set(x, "groupToPeriods", js.Array(value :_*))

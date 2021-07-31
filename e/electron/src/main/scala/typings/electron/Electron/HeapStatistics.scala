@@ -2,29 +2,27 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeapStatistics extends StObject {
   
-  var doesZapGarbage: Boolean = js.native
+  var doesZapGarbage: Boolean
   
-  var heapSizeLimit: Double = js.native
+  var heapSizeLimit: Double
   
-  var mallocedMemory: Double = js.native
+  var mallocedMemory: Double
   
-  var peakMallocedMemory: Double = js.native
+  var peakMallocedMemory: Double
   
-  var totalAvailableSize: Double = js.native
+  var totalAvailableSize: Double
   
-  var totalHeapSize: Double = js.native
+  var totalHeapSize: Double
   
-  var totalHeapSizeExecutable: Double = js.native
+  var totalHeapSizeExecutable: Double
   
-  var totalPhysicalSize: Double = js.native
+  var totalPhysicalSize: Double
   
-  var usedHeapSize: Double = js.native
+  var usedHeapSize: Double
 }
 object HeapStatistics {
   

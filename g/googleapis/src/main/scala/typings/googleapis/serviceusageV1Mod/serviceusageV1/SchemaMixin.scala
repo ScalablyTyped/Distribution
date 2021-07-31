@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,19 +41,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * option (google.api.http).get = &quot;/v2/acls/{resource=**}:getAcl&quot;;
   * }       ...     }
   */
-@js.native
 trait SchemaMixin extends StObject {
   
   /**
     * The fully qualified name of the interface which is included.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If non-empty specifies a path under which inherited HTTP paths are
     * rooted.
     */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object SchemaMixin {
   

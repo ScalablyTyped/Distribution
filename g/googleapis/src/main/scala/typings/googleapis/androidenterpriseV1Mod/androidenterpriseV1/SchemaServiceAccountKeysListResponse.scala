@@ -2,16 +2,14 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaServiceAccountKeysListResponse extends StObject {
   
   /**
     * The service account credentials.
     */
-  var serviceAccountKey: js.UndefOr[js.Array[SchemaServiceAccountKey]] = js.native
+  var serviceAccountKey: js.UndefOr[js.Array[SchemaServiceAccountKey]] = js.undefined
 }
 object SchemaServiceAccountKeysListResponse {
   

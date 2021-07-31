@@ -2,7 +2,6 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as the `Arg` matchers are distinct. There may be only one function for a
   * given overload where all `Arg` values are `Arg.any_value`.
   */
-@js.native
 trait SchemaFunctionMock extends StObject {
   
   /**
@@ -22,18 +20,18 @@ trait SchemaFunctionMock extends StObject {
     * provided is the order in which they must appear in the function
     * invocation.
     */
-  var args: js.UndefOr[js.Array[SchemaArg]] = js.native
+  var args: js.UndefOr[js.Array[SchemaArg]] = js.undefined
   
   /**
     * The name of the function.  The function name must match one provided by a
     * service declaration.
     */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /**
     * The mock result of the function call.
     */
-  var result: js.UndefOr[SchemaResult] = js.native
+  var result: js.UndefOr[SchemaResult] = js.undefined
 }
 object SchemaFunctionMock {
   

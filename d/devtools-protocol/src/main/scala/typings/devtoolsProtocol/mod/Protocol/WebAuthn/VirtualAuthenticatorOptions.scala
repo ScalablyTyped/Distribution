@@ -2,44 +2,42 @@ package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualAuthenticatorOptions extends StObject {
   
   /**
     * If set to true, tests of user presence will succeed immediately.
     * Otherwise, they will not be resolved. Defaults to true.
     */
-  var automaticPresenceSimulation: js.UndefOr[Boolean] = js.native
+  var automaticPresenceSimulation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, the authenticator will support the largeBlob extension.
     * https://w3c.github.io/webauthn#largeBlob
     * Defaults to false.
     */
-  var hasLargeBlob: js.UndefOr[Boolean] = js.native
+  var hasLargeBlob: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to false.
     */
-  var hasResidentKey: js.UndefOr[Boolean] = js.native
+  var hasResidentKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to false.
     */
-  var hasUserVerification: js.UndefOr[Boolean] = js.native
+  var hasUserVerification: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether User Verification succeeds or fails for an authenticator.
     * Defaults to false.
     */
-  var isUserVerified: js.UndefOr[Boolean] = js.native
+  var isUserVerified: js.UndefOr[Boolean] = js.undefined
   
-  var protocol: AuthenticatorProtocol = js.native
+  var protocol: AuthenticatorProtocol
   
-  var transport: AuthenticatorTransport = js.native
+  var transport: AuthenticatorTransport
 }
 object VirtualAuthenticatorOptions {
   

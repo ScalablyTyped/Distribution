@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserIDsOptions extends StObject {
   
   /**
     * Number of users to retrieve per page.
     */
-  val hitsPerPage: js.UndefOr[Double] = js.native
+  val hitsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Page to fetch.
     */
-  val page: js.UndefOr[Double] = js.native
+  val page: js.UndefOr[Double] = js.undefined
 }
 object ListUserIDsOptions {
   

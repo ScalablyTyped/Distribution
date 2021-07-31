@@ -2,7 +2,6 @@ package typings.antDesignReactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antDesignReactNativeStrings {
@@ -918,9 +917,9 @@ object antDesignReactNativeStrings {
   def experiment: experiment = "experiment".asInstanceOf[experiment]
   
   @js.native
-  sealed trait export extends StObject
+  sealed trait `export` extends StObject
   @scala.inline
-  def export: export = "export".asInstanceOf[export]
+  def `export`: `export` = "export".asInstanceOf[`export`]
   
   @js.native
   sealed trait eye extends StObject

@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsS3BucketDestination extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the bucket to which data is exported.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account ID that owns the destination S3 bucket. If no account ID is provided, the owner is not validated before exporting data.   Although this value is optional, we strongly recommend that you set it to help prevent problems if the destination bucket ownership changes.  
     */
-  var BucketAccountId: js.UndefOr[AccountId] = js.native
+  var BucketAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Specifies the file format used when exporting data to Amazon S3.
     */
-  var Format: AnalyticsS3ExportFileFormat = js.native
+  var Format: AnalyticsS3ExportFileFormat
   
   /**
     * The prefix to use when exporting data. The prefix is prepended to all results.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
 }
 object AnalyticsS3BucketDestination {
   

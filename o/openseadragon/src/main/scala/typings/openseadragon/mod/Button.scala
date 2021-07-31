@@ -4,26 +4,22 @@ import typings.openseadragon.anon.Element
 import typings.std.EventSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Button")
 @js.native
-class Button protected () extends EventSource {
+class Button protected ()
+  extends StObject
+     with EventSource {
   def this(options: Element) = this()
   
   def addHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent]): Unit = js.native
   def addHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: js.Object): Unit = js.native
   
   def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent]): Unit = js.native
-  def addOnceHandler(
-    eventName: ButtonEventName,
-    handler: EventHandler[ButtonEvent],
-    userData: js.UndefOr[scala.Nothing],
-    times: Double
-  ): Unit = js.native
   def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: js.Object, times: Double): Unit = js.native
+  def addOnceHandler(eventName: ButtonEventName, handler: EventHandler[ButtonEvent], userData: Unit, times: Double): Unit = js.native
   
   var currentState: ButtonState = js.native
   

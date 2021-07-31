@@ -7,7 +7,6 @@ import typings.materialChips.foundationMod.MDCChipSetFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -15,7 +14,7 @@ object componentMod {
   @JSImport("@material/chips/chip-set/component", "MDCChipSet")
   @js.native
   class MDCChipSet protected () extends MDCComponent[MDCChipSetFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCChipSetFoundation, args: js.Any*) = this()
     
     /**
@@ -39,8 +38,11 @@ object componentMod {
   /* static members */
   object MDCChipSet {
     
-    @JSImport("@material/chips/chip-set/component", "MDCChipSet.attachTo")
+    @JSImport("@material/chips/chip-set/component", "MDCChipSet")
     @js.native
-    def attachTo(root: Element): MDCChipSet = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCChipSet]
   }
 }

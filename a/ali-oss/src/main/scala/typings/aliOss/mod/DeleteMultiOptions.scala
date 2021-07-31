@@ -2,16 +2,14 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMultiOptions extends StObject {
   
-  var quite: js.UndefOr[Boolean] = js.native
+  var quite: js.UndefOr[Boolean] = js.undefined
   
   // quite mode or verbose mode, default is false
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object DeleteMultiOptions {
   

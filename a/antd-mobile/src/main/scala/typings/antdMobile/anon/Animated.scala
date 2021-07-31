@@ -2,31 +2,29 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animated extends StObject {
   
-  var animated: Boolean = js.native
+  var animated: Boolean
   
-  var animationType: String = js.native
+  var animationType: String
   
-  var closable: Boolean = js.native
+  var closable: Boolean
   
-  var footer: js.Array[scala.Nothing] = js.native
+  var footer: js.Array[scala.Nothing]
   
-  def onShow(): Unit = js.native
+  def onShow(): Unit
   
-  var operation: Boolean = js.native
+  var operation: Boolean
   
-  var platform: String = js.native
+  var platform: String
   
-  var popup: Boolean = js.native
+  var popup: Boolean
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var transparent: Boolean = js.native
+  var transparent: Boolean
 }
 object Animated {
   

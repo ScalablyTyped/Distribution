@@ -2,183 +2,181 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobTemplateAttributes extends StObject {
   
-  var `chamber-humidity`: js.UndefOr[Double] = js.native
+  var `chamber-humidity`: js.UndefOr[Double] = js.undefined
   
-  var `chamber-temperature`: js.UndefOr[Double] = js.native
+  var `chamber-temperature`: js.UndefOr[Double] = js.undefined
   
-  var `confirmation-sheet-print`: js.UndefOr[Boolean] = js.native
+  var `confirmation-sheet-print`: js.UndefOr[Boolean] = js.undefined
   
-  var copies: js.UndefOr[Double] = js.native
+  var copies: js.UndefOr[Double] = js.undefined
   
-  var `cover-back`: js.UndefOr[Cover] = js.native
+  var `cover-back`: js.UndefOr[Cover] = js.undefined
   
-  var `cover-front`: js.UndefOr[Cover] = js.native
+  var `cover-front`: js.UndefOr[Cover] = js.undefined
   
-  var `cover-sheet-info`: js.UndefOr[CoverSheetInfo] = js.native
+  var `cover-sheet-info`: js.UndefOr[CoverSheetInfo] = js.undefined
   
-  var `destination-uris`: js.UndefOr[js.Array[DestinationUris]] = js.native
+  var `destination-uris`: js.UndefOr[js.Array[DestinationUris]] = js.undefined
   
-  var finishings: js.UndefOr[js.Array[Finishings]] = js.native
+  var finishings: js.UndefOr[js.Array[Finishings]] = js.undefined
   
-  var `finishings-col`: js.UndefOr[js.Array[FinishingsInterface]] = js.native
+  var `finishings-col`: js.UndefOr[js.Array[FinishingsInterface]] = js.undefined
   
-  var `font-name-requested`: js.UndefOr[String] = js.native
+  var `font-name-requested`: js.UndefOr[String] = js.undefined
   
-  var `font-size-requested`: js.UndefOr[Double] = js.native
+  var `font-size-requested`: js.UndefOr[Double] = js.undefined
   
-  var `force-front-side`: js.UndefOr[js.Array[Double]] = js.native
+  var `force-front-side`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `imposition-template`: js.UndefOr[ImpositionTemplate] = js.native
+  var `imposition-template`: js.UndefOr[ImpositionTemplate] = js.undefined
   
-  var `insert-sheet`: js.UndefOr[js.Array[InsertSheet]] = js.native
+  var `insert-sheet`: js.UndefOr[js.Array[InsertSheet]] = js.undefined
   
-  var `job-account-id`: js.UndefOr[String] = js.native
+  var `job-account-id`: js.UndefOr[String] = js.undefined
   
-  var `job-account-type`: js.UndefOr[JobAccountType] = js.native
+  var `job-account-type`: js.UndefOr[JobAccountType] = js.undefined
   
-  var `job-accounting-sheets`: js.UndefOr[JobAccontingSheets] = js.native
+  var `job-accounting-sheets`: js.UndefOr[JobAccontingSheets] = js.undefined
   
-  var `job-accounting-user-id`: js.UndefOr[String] = js.native
+  var `job-accounting-user-id`: js.UndefOr[String] = js.undefined
   
-  var `job-cancel-after`: js.UndefOr[Double] = js.native
+  var `job-cancel-after`: js.UndefOr[Double] = js.undefined
   
-  var `job-copies`: js.UndefOr[Double] = js.native
+  var `job-copies`: js.UndefOr[Double] = js.undefined
   
-  var `job-cover-back`: js.UndefOr[Cover] = js.native
+  var `job-cover-back`: js.UndefOr[Cover] = js.undefined
   
-  var `job-cover-front`: js.UndefOr[Cover] = js.native
+  var `job-cover-front`: js.UndefOr[Cover] = js.undefined
   
-  var `job-delay-output-until`: js.UndefOr[JobDelayOutputUntil] = js.native
+  var `job-delay-output-until`: js.UndefOr[JobDelayOutputUntil] = js.undefined
   
-  var `job-delay-output-until-time`: js.UndefOr[String] = js.native
+  var `job-delay-output-until-time`: js.UndefOr[String] = js.undefined
   
-  var `job-error-action`: js.UndefOr[JobErrorAction] = js.native
+  var `job-error-action`: js.UndefOr[JobErrorAction] = js.undefined
   
-  var `job-error-sheet`: js.UndefOr[JobErrorSheet] = js.native
+  var `job-error-sheet`: js.UndefOr[JobErrorSheet] = js.undefined
   
-  var `job-finishings`: js.UndefOr[js.Array[Finishings]] = js.native
+  var `job-finishings`: js.UndefOr[js.Array[Finishings]] = js.undefined
   
-  var `job-finishings-col`: js.UndefOr[FinishingsInterface] = js.native
+  var `job-finishings-col`: js.UndefOr[FinishingsInterface] = js.undefined
   
-  var `job-hold-until`: js.UndefOr[JobHoldUntil] = js.native
+  var `job-hold-until`: js.UndefOr[JobHoldUntil] = js.undefined
   
-  var `job-hold-until-time`: js.UndefOr[String] = js.native
+  var `job-hold-until-time`: js.UndefOr[String] = js.undefined
   
-  var `job-message-to-operator`: js.UndefOr[String] = js.native
+  var `job-message-to-operator`: js.UndefOr[String] = js.undefined
   
-  var `job-pages-per-set`: js.UndefOr[Double] = js.native
+  var `job-pages-per-set`: js.UndefOr[Double] = js.undefined
   
-  var `job-phone-number`: js.UndefOr[String] = js.native
+  var `job-phone-number`: js.UndefOr[String] = js.undefined
   
-  var `job-priority`: js.UndefOr[Double] = js.native
+  var `job-priority`: js.UndefOr[Double] = js.undefined
   
-  var `job-recipient-name`: js.UndefOr[String] = js.native
+  var `job-recipient-name`: js.UndefOr[String] = js.undefined
   
-  var `job-retain-until`: js.UndefOr[JobRetainUntil] = js.native
+  var `job-retain-until`: js.UndefOr[JobRetainUntil] = js.undefined
   
-  var `job-retain-until-interval`: js.UndefOr[Double] = js.native
+  var `job-retain-until-interval`: js.UndefOr[Double] = js.undefined
   
-  var `job-retain-until-time`: js.UndefOr[String] = js.native
+  var `job-retain-until-time`: js.UndefOr[String] = js.undefined
   
-  var `job-save-disposition`: js.UndefOr[JobSaveDisposition] = js.native
+  var `job-save-disposition`: js.UndefOr[JobSaveDisposition] = js.undefined
   
-  var `job-sheet-message`: js.UndefOr[String] = js.native
+  var `job-sheet-message`: js.UndefOr[String] = js.undefined
   
-  var `job-sheets`: js.UndefOr[JobSheets] = js.native
+  var `job-sheets`: js.UndefOr[JobSheets] = js.undefined
   
-  var `job-sheets-col`: js.UndefOr[JobSheetsInterface] = js.native
+  var `job-sheets-col`: js.UndefOr[JobSheetsInterface] = js.undefined
   
-  var `materials-col`: js.UndefOr[js.Array[Materials]] = js.native
+  var `materials-col`: js.UndefOr[js.Array[Materials]] = js.undefined
   
-  var media: js.UndefOr[Media] = js.native
+  var media: js.UndefOr[Media] = js.undefined
   
-  var `media-col`: js.UndefOr[MediaInterface] = js.native
+  var `media-col`: js.UndefOr[MediaInterface] = js.undefined
   
-  var `media-input-tray-check`: js.UndefOr[MediaIntputTray] = js.native
+  var `media-input-tray-check`: js.UndefOr[MediaIntputTray] = js.undefined
   
-  var `multiple-document-handling`: js.UndefOr[MultipleDocumentHandling] = js.native
+  var `multiple-document-handling`: js.UndefOr[MultipleDocumentHandling] = js.undefined
   
-  var `multiple-object-handling`: js.UndefOr[MultipleObjectHandling] = js.native
+  var `multiple-object-handling`: js.UndefOr[MultipleObjectHandling] = js.undefined
   
-  var `number-of-retries`: js.UndefOr[Double] = js.native
+  var `number-of-retries`: js.UndefOr[Double] = js.undefined
   
-  var `number-up`: js.UndefOr[Double] = js.native
+  var `number-up`: js.UndefOr[Double] = js.undefined
   
-  var `orientation-requested`: js.UndefOr[OrientationRequested] = js.native
+  var `orientation-requested`: js.UndefOr[OrientationRequested] = js.undefined
   
-  var `output-bin`: js.UndefOr[OutputBin] = js.native
+  var `output-bin`: js.UndefOr[OutputBin] = js.undefined
   
-  var `output-device`: js.UndefOr[String] = js.native
+  var `output-device`: js.UndefOr[String] = js.undefined
   
-  var overrides: js.UndefOr[js.Array[Overrides]] = js.native
+  var overrides: js.UndefOr[js.Array[Overrides]] = js.undefined
   
-  var `page-delivery`: js.UndefOr[PageDelivery] = js.native
+  var `page-delivery`: js.UndefOr[PageDelivery] = js.undefined
   
-  var `page-order-received`: js.UndefOr[PageOrder] = js.native
+  var `page-order-received`: js.UndefOr[PageOrder] = js.undefined
   
-  var `page-ranges`: js.UndefOr[String] = js.native
+  var `page-ranges`: js.UndefOr[String] = js.undefined
   
-  var `pages-per-subset`: js.UndefOr[js.Array[Double]] = js.native
+  var `pages-per-subset`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `pclm-source-resolution`: js.UndefOr[Resolution] = js.native
+  var `pclm-source-resolution`: js.UndefOr[Resolution] = js.undefined
   
-  var `pdl-init-file`: js.UndefOr[PdlInitFile] = js.native
+  var `pdl-init-file`: js.UndefOr[PdlInitFile] = js.undefined
   
-  var `platform-temperature`: js.UndefOr[Double] = js.native
+  var `platform-temperature`: js.UndefOr[Double] = js.undefined
   
-  var `presentation-direction-number-up`: js.UndefOr[PresentationDirectionNumberUp] = js.native
+  var `presentation-direction-number-up`: js.UndefOr[PresentationDirectionNumberUp] = js.undefined
   
-  var `print-accuracy`: js.UndefOr[PrintAccuracy] = js.native
+  var `print-accuracy`: js.UndefOr[PrintAccuracy] = js.undefined
   
-  var `print-base`: js.UndefOr[PrintBase] = js.native
+  var `print-base`: js.UndefOr[PrintBase] = js.undefined
   
-  var `print-color-mode`: js.UndefOr[PrintColorMode] = js.native
+  var `print-color-mode`: js.UndefOr[PrintColorMode] = js.undefined
   
-  var `print-content-optimize`: js.UndefOr[PrintContentOptimize] = js.native
+  var `print-content-optimize`: js.UndefOr[PrintContentOptimize] = js.undefined
   
-  var `print-objects`: js.UndefOr[js.Array[PrintObjects]] = js.native
+  var `print-objects`: js.UndefOr[js.Array[PrintObjects]] = js.undefined
   
-  var `print-quality`: js.UndefOr[PrintQuality] = js.native
+  var `print-quality`: js.UndefOr[PrintQuality] = js.undefined
   
-  var `print-rendering-intent`: js.UndefOr[PrintRenderingIntent] = js.native
+  var `print-rendering-intent`: js.UndefOr[PrintRenderingIntent] = js.undefined
   
-  var `print-scaling`: js.UndefOr[PrintScaling] = js.native
+  var `print-scaling`: js.UndefOr[PrintScaling] = js.undefined
   
-  var `print-supports`: js.UndefOr[PrintSupports] = js.native
+  var `print-supports`: js.UndefOr[PrintSupports] = js.undefined
   
-  var `printer-resolution`: js.UndefOr[Resolution] = js.native
+  var `printer-resolution`: js.UndefOr[Resolution] = js.undefined
   
-  var `proof-print`: js.UndefOr[ProofPrint] = js.native
+  var `proof-print`: js.UndefOr[ProofPrint] = js.undefined
   
-  var `retry-interval`: js.UndefOr[Double] = js.native
+  var `retry-interval`: js.UndefOr[Double] = js.undefined
   
-  var `retry-time-out`: js.UndefOr[Double] = js.native
+  var `retry-time-out`: js.UndefOr[Double] = js.undefined
   
-  var `separator-sheets`: js.UndefOr[SeparatorSheets] = js.native
+  var `separator-sheets`: js.UndefOr[SeparatorSheets] = js.undefined
   
-  var sides: js.UndefOr[Sides] = js.native
+  var sides: js.UndefOr[Sides] = js.undefined
   
-  var `x-image-position`: js.UndefOr[XImagePosition] = js.native
+  var `x-image-position`: js.UndefOr[XImagePosition] = js.undefined
   
-  var `x-image-shift`: js.UndefOr[Double] = js.native
+  var `x-image-shift`: js.UndefOr[Double] = js.undefined
   
-  var `x-side1-image-shift`: js.UndefOr[Double] = js.native
+  var `x-side1-image-shift`: js.UndefOr[Double] = js.undefined
   
-  var `x-side2-image-shift`: js.UndefOr[Double] = js.native
+  var `x-side2-image-shift`: js.UndefOr[Double] = js.undefined
   
-  var `y-image-position`: js.UndefOr[YImagePosition] = js.native
+  var `y-image-position`: js.UndefOr[YImagePosition] = js.undefined
   
-  var `y-image-shift`: js.UndefOr[Double] = js.native
+  var `y-image-shift`: js.UndefOr[Double] = js.undefined
   
-  var `y-side1-image-shift`: js.UndefOr[Double] = js.native
+  var `y-side1-image-shift`: js.UndefOr[Double] = js.undefined
   
-  var `y-side2-image-shift`: js.UndefOr[Double] = js.native
+  var `y-side2-image-shift`: js.UndefOr[Double] = js.undefined
 }
 object JobTemplateAttributes {
   

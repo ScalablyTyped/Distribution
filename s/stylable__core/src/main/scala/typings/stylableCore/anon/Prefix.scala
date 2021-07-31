@@ -3,15 +3,13 @@ package typings.stylableCore.anon
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Prefix extends StObject {
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var used: js.UndefOr[Map[String, Namespace]] = js.native
+  var used: js.UndefOr[Map[String, Namespace]] = js.undefined
 }
 object Prefix {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMessage extends StObject {
   
   /**
     * The content of the chat message.
     */
-  var Content: ChatContent = js.native
+  var Content: ChatContent
   
   /**
     * The type of the content. Supported types are text/plain.
     */
-  var ContentType: ChatContentType = js.native
+  var ContentType: ChatContentType
 }
 object ChatMessage {
   

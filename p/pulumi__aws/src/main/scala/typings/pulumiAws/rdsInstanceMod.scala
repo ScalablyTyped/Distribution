@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsInstanceMod {
@@ -410,6 +409,10 @@ object rdsInstanceMod {
   /* static members */
   object Instance {
     
+    @JSImport("@pulumi/aws/rds/instance", "Instance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Instance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -419,42 +422,36 @@ object rdsInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Instance = js.native
-    @JSImport("@pulumi/aws/rds/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Instance = js.native
-    @JSImport("@pulumi/aws/rds/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState): Instance = js.native
-    @JSImport("@pulumi/aws/rds/instance", "Instance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
     
     /**
       * Returns true if the given object is an instance of Instance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/instance", "Instance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/instance.Instance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/instance.Instance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/instance.Instance */ Boolean]
   }
   
-  @js.native
   trait InstanceArgs extends StObject {
     
     /**
       * The allocated storage in gibibytes. If `maxAllocatedStorage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.
       */
-    val allocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val allocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates that major version
       * upgrades are allowed. Changing this parameter does not result in an outage and
       * the change is asynchronously applied as soon as possible.
       */
-    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether any database modifications
@@ -462,37 +459,37 @@ object rdsInstanceMod {
       * `false`. See [Amazon RDS Documentation for more
       * information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Indicates that minor engine upgrades
       * will be applied automatically to the DB instance during the maintenance window.
       * Defaults to true.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AZ for the RDS instance.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The days to retain backups for. Must be
       * between `0` and `35`. Must be greater than `0` if the database is used as a source for a Read Replica. [See Read Replica][1].
       */
-    val backupRetentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val backupRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The daily time range (in UTC) during which
       * automated backups are created if they are enabled. Example: "09:46-10:16". Must
       * not overlap with `maintenanceWindow`.
       */
-    val backupWindow: js.UndefOr[Input[String]] = js.native
+    val backupWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the CA certificate for the DB instance.
       */
-    val caCertIdentifier: js.UndefOr[Input[String]] = js.native
+    val caCertIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The character set name to use for DB
@@ -500,12 +497,12 @@ object rdsInstanceMod {
       * Supported in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.OracleCharacterSets.html)
       * or [Server-Level Collation for Microsoft SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.CommonDBATasks.Collation.html) for more information.
       */
-    val characterSetName: js.UndefOr[Input[String]] = js.native
+    val characterSetName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Copy all Instance `tags` to snapshots. Default is `false`.
       */
-    val copyTagsToSnapshot: js.UndefOr[Input[Boolean]] = js.native
+    val copyTagsToSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Name of `DB subnet group`. DB instance will
@@ -516,32 +513,32 @@ object rdsInstanceMod {
       * action CreateDBInstanceReadReplica](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstanceReadReplica.html)
       * for additional read replica contraints.
       */
-    val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
+    val dbSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to remove automated backups immediately after the DB instance is deleted. Default is `true`.
       */
-    val deleteAutomatedBackups: js.UndefOr[Input[Boolean]] = js.native
+    val deleteAutomatedBackups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
       */
-    val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+    val deletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the Directory Service Active Directory domain to create the instance in.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IAM role to be used when making API calls to the Directory Service.
       */
-    val domainIamRoleName: js.UndefOr[Input[String]] = js.native
+    val domainIamRoleName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`). MySQL and MariaDB: `audit`, `error`, `general`, `slowquery`. PostgreSQL: `postgresql`, `upgrade`. MSSQL: `agent` , `error`. Oracle: `alert`, `audit`, `listener`, `trace`.
       */
-    val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
@@ -551,7 +548,7 @@ object rdsInstanceMod {
       * see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
       * in the Amazon RDS User Guide.
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The engine version to use. If `autoMinorVersionUpgrade`
@@ -560,56 +557,56 @@ object rdsInstanceMod {
       * For supported values, see the EngineVersion parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
       * Note that for Amazon Aurora instances the engine version must match the `DB cluster`'s engine version'.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of your final DB snapshot
       * when this DB instance is deleted. Must be provided if `skipFinalSnapshot` is
       * set to `false`.
       */
-    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether or
       * mappings of AWS Identity and Access Management (IAM) accounts to database
       * accounts is enabled.
       */
-    val iamDatabaseAuthenticationEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val iamDatabaseAuthenticationEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the RDS instance,
       * if omitted, this provider will assign a random, unique identifier.
       */
-    val identifier: js.UndefOr[Input[String]] = js.native
+    val identifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique
       * identifier beginning with the specified prefix. Conflicts with `identifier`.
       */
-    val identifierPrefix: js.UndefOr[Input[String]] = js.native
+    val identifierPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The instance type of the RDS instance.
       */
-    val instanceClass: Input[String | InstanceType] = js.native
+    val instanceClass: Input[String | InstanceType]
     
     /**
       * The amount of provisioned IOPS. Setting this implies a
       * storageType of "io1".
       */
-    val iops: js.UndefOr[Input[Double]] = js.native
+    val iops: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key. If creating an
       * encrypted replica, set this to the destination KMS ARN.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Optional, but required for some DB engines, i.e. Oracle
       * SE1) License model information for this DB instance.
       */
-    val licenseModel: js.UndefOr[Input[String]] = js.native
+    val licenseModel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The window to perform maintenance in.
@@ -618,12 +615,12 @@ object rdsInstanceMod {
       * docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html#AdjustingTheMaintenanceWindow)
       * for more information.
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocatedStorage`. Must be greater than or equal to `allocatedStorage` or `0` to disable Storage Autoscaling.
       */
-    val maxAllocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val maxAllocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The interval, in seconds, between points
@@ -631,7 +628,7 @@ object rdsInstanceMod {
       * collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid
       * Values: 0, 1, 5, 10, 15, 30, 60.
       */
-    val monitoringInterval: js.UndefOr[Input[Double]] = js.native
+    val monitoringInterval: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the IAM role that permits RDS
@@ -640,61 +637,61 @@ object rdsInstanceMod {
       * Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
       * what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
       */
-    val monitoringRoleArn: js.UndefOr[Input[String]] = js.native
+    val monitoringRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies if the RDS instance is multi-AZ
       */
-    val multiAz: js.UndefOr[Input[Boolean]] = js.native
+    val multiAz: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the [AWS documentation](http://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) for more details on what applies for those engines.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the DB option group to associate.
       */
-    val optionGroupName: js.UndefOr[Input[String]] = js.native
+    val optionGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the DB parameter group to
       * associate.
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
       * is provided) Password for the master DB user. Note that this may show up in
       * logs, and it will be stored in the state file.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether Performance Insights are enabled. Defaults to false.
       */
-    val performanceInsightsEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val performanceInsightsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performanceInsightsKmsKeyId`, `performanceInsightsEnabled` needs to be set to true. Once KMS key is set, it can never be changed.
       */
-    val performanceInsightsKmsKeyId: js.UndefOr[Input[String]] = js.native
+    val performanceInsightsKmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying `performanceInsightsRetentionPeriod`, `performanceInsightsEnabled` needs to be set to true. Defaults to '7'.
       */
-    val performanceInsightsRetentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val performanceInsightsRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The port on which the DB accepts connections.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Bool to control if instance is publicly
       * accessible. Default is `false`.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies that this resource is a Replicate
@@ -707,24 +704,24 @@ object rdsInstanceMod {
       * PostgreSQL and MySQL Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
       * for more information on using Replication.
       */
-    val replicateSourceDb: js.UndefOr[Input[String]] = js.native
+    val replicateSourceDb: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block for restoring a DB instance to an arbitrary point in time. Requires the `identifier` argument to be set with the name of the new DB instance to be created. See Restore To Point In Time below for details.
       */
-    val restoreToPointInTime: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceRestoreToPointInTime]] = js.native
+    val restoreToPointInTime: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceRestoreToPointInTime]] = js.undefined
     
     /**
       * Restore from a Percona Xtrabackup in S3.  See [Importing Data into an Amazon RDS MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
       */
-    val s3Import: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceS3Import]] = js.native
+    val s3Import: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceS3Import]] = js.undefined
     
     /**
       * List of DB Security Groups to
       * associate. Only used for [DB Instances on the _EC2-Classic_
       * Platform](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html#USER_VPC.FindDefaultVPC).
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Determines whether a final DB snapshot is
@@ -733,14 +730,14 @@ object rdsInstanceMod {
       * instance is deleted, using the value from `finalSnapshotIdentifier`. Default
       * is `false`.
       */
-    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.native
+    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether or not to create this
       * database from a snapshot. This correlates to the snapshot ID you'd find in the
       * RDS console, e.g: rds:production-2015-06-26-06-05.
       */
-    val snapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val snapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the DB instance is
@@ -748,19 +745,19 @@ object rdsInstanceMod {
       * is ignored and you should instead declare `kmsKeyId` with a valid ARN. The
       * default is `false` if not specified.
       */
-    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * One of "standard" (magnetic), "gp2" (general
       * purpose SSD), or "io1" (provisioned IOPS SSD). The default is "io1" if `iops` is
       * specified, "gp2" if not.
       */
-    val storageType: js.UndefOr[Input[String | StorageType]] = js.native
+    val storageType: js.UndefOr[Input[String | StorageType]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Time zone of the DB instance. `timezone` is currently
@@ -769,19 +766,19 @@ object rdsInstanceMod {
       * Guide](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html#SQLServer.Concepts.General.TimeZone)
       * for more information.
       */
-    val timezone: js.UndefOr[Input[String]] = js.native
+    val timezone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
       * is provided) Username for the master DB user.
       */
-    val username: js.UndefOr[Input[String]] = js.native
+    val username: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of VPC security groups to
       * associate.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object InstanceArgs {
     
@@ -1114,25 +1111,24 @@ object rdsInstanceMod {
     }
   }
   
-  @js.native
   trait InstanceState extends StObject {
     
     /**
       * The hostname of the RDS instance. See also `endpoint` and `port`.
       */
-    val address: js.UndefOr[Input[String]] = js.native
+    val address: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The allocated storage in gibibytes. If `maxAllocatedStorage` is configured, this argument represents the initial storage allocation and differences from the configuration will be ignored automatically when Storage Autoscaling occurs.
       */
-    val allocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val allocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates that major version
       * upgrades are allowed. Changing this parameter does not result in an outage and
       * the change is asynchronously applied as soon as possible.
       */
-    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val allowMajorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether any database modifications
@@ -1140,42 +1136,42 @@ object rdsInstanceMod {
       * `false`. See [Amazon RDS Documentation for more
       * information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
       */
-    val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+    val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the RDS instance.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates that minor engine upgrades
       * will be applied automatically to the DB instance during the maintenance window.
       * Defaults to true.
       */
-    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AZ for the RDS instance.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The days to retain backups for. Must be
       * between `0` and `35`. Must be greater than `0` if the database is used as a source for a Read Replica. [See Read Replica][1].
       */
-    val backupRetentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val backupRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The daily time range (in UTC) during which
       * automated backups are created if they are enabled. Example: "09:46-10:16". Must
       * not overlap with `maintenanceWindow`.
       */
-    val backupWindow: js.UndefOr[Input[String]] = js.native
+    val backupWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the CA certificate for the DB instance.
       */
-    val caCertIdentifier: js.UndefOr[Input[String]] = js.native
+    val caCertIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The character set name to use for DB
@@ -1183,12 +1179,12 @@ object rdsInstanceMod {
       * Supported in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.OracleCharacterSets.html)
       * or [Server-Level Collation for Microsoft SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.CommonDBATasks.Collation.html) for more information.
       */
-    val characterSetName: js.UndefOr[Input[String]] = js.native
+    val characterSetName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Copy all Instance `tags` to snapshots. Default is `false`.
       */
-    val copyTagsToSnapshot: js.UndefOr[Input[Boolean]] = js.native
+    val copyTagsToSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Name of `DB subnet group`. DB instance will
@@ -1199,37 +1195,37 @@ object rdsInstanceMod {
       * action CreateDBInstanceReadReplica](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstanceReadReplica.html)
       * for additional read replica contraints.
       */
-    val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
+    val dbSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to remove automated backups immediately after the DB instance is deleted. Default is `true`.
       */
-    val deleteAutomatedBackups: js.UndefOr[Input[Boolean]] = js.native
+    val deleteAutomatedBackups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
       */
-    val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+    val deletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the Directory Service Active Directory domain to create the instance in.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IAM role to be used when making API calls to the Directory Service.
       */
-    val domainIamRoleName: js.UndefOr[Input[String]] = js.native
+    val domainIamRoleName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`). MySQL and MariaDB: `audit`, `error`, `general`, `slowquery`. PostgreSQL: `postgresql`, `upgrade`. MSSQL: `agent` , `error`. Oracle: `alert`, `audit`, `listener`, `trace`.
       */
-    val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The connection endpoint in `address:port` format.
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
@@ -1239,7 +1235,7 @@ object rdsInstanceMod {
       * see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
       * in the Amazon RDS User Guide.
       */
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The engine version to use. If `autoMinorVersionUpgrade`
@@ -1248,67 +1244,67 @@ object rdsInstanceMod {
       * For supported values, see the EngineVersion parameter in [API action CreateDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html).
       * Note that for Amazon Aurora instances the engine version must match the `DB cluster`'s engine version'.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of your final DB snapshot
       * when this DB instance is deleted. Must be provided if `skipFinalSnapshot` is
       * set to `false`.
       */
-    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The canonical hosted zone ID of the DB instance (to be used
       * in a Route 53 Alias record).
       */
-    val hostedZoneId: js.UndefOr[Input[String]] = js.native
+    val hostedZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether or
       * mappings of AWS Identity and Access Management (IAM) accounts to database
       * accounts is enabled.
       */
-    val iamDatabaseAuthenticationEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val iamDatabaseAuthenticationEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the RDS instance,
       * if omitted, this provider will assign a random, unique identifier.
       */
-    val identifier: js.UndefOr[Input[String]] = js.native
+    val identifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique
       * identifier beginning with the specified prefix. Conflicts with `identifier`.
       */
-    val identifierPrefix: js.UndefOr[Input[String]] = js.native
+    val identifierPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The instance type of the RDS instance.
       */
-    val instanceClass: js.UndefOr[Input[String | InstanceType]] = js.native
+    val instanceClass: js.UndefOr[Input[String | InstanceType]] = js.undefined
     
     /**
       * The amount of provisioned IOPS. Setting this implies a
       * storageType of "io1".
       */
-    val iops: js.UndefOr[Input[Double]] = js.native
+    val iops: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key. If creating an
       * encrypted replica, set this to the destination KMS ARN.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The latest time, in UTC [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8), to which a database can be restored with point-in-time restore.
       */
-    val latestRestorableTime: js.UndefOr[Input[String]] = js.native
+    val latestRestorableTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Optional, but required for some DB engines, i.e. Oracle
       * SE1) License model information for this DB instance.
       */
-    val licenseModel: js.UndefOr[Input[String]] = js.native
+    val licenseModel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The window to perform maintenance in.
@@ -1317,12 +1313,12 @@ object rdsInstanceMod {
       * docs](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html#AdjustingTheMaintenanceWindow)
       * for more information.
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When configured, the upper limit to which Amazon RDS can automatically scale the storage of the DB instance. Configuring this will automatically ignore differences to `allocatedStorage`. Must be greater than or equal to `allocatedStorage` or `0` to disable Storage Autoscaling.
       */
-    val maxAllocatedStorage: js.UndefOr[Input[Double]] = js.native
+    val maxAllocatedStorage: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The interval, in seconds, between points
@@ -1330,7 +1326,7 @@ object rdsInstanceMod {
       * collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid
       * Values: 0, 1, 5, 10, 15, 30, 60.
       */
-    val monitoringInterval: js.UndefOr[Input[Double]] = js.native
+    val monitoringInterval: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN for the IAM role that permits RDS
@@ -1339,63 +1335,63 @@ object rdsInstanceMod {
       * Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
       * what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
       */
-    val monitoringRoleArn: js.UndefOr[Input[String]] = js.native
+    val monitoringRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies if the RDS instance is multi-AZ
       */
-    val multiAz: js.UndefOr[Input[Boolean]] = js.native
+    val multiAz: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the database to create when the DB instance is created. If this parameter is not specified, no database is created in the DB instance. Note that this does not apply for Oracle or SQL Server engines. See the [AWS documentation](http://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) for more details on what applies for those engines.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the DB option group to associate.
       */
-    val optionGroupName: js.UndefOr[Input[String]] = js.native
+    val optionGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the DB parameter group to
       * associate.
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
       * is provided) Password for the master DB user. Note that this may show up in
       * logs, and it will be stored in the state file.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether Performance Insights are enabled. Defaults to false.
       */
-    val performanceInsightsEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val performanceInsightsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performanceInsightsKmsKeyId`, `performanceInsightsEnabled` needs to be set to true. Once KMS key is set, it can never be changed.
       */
-    val performanceInsightsKmsKeyId: js.UndefOr[Input[String]] = js.native
+    val performanceInsightsKmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying `performanceInsightsRetentionPeriod`, `performanceInsightsEnabled` needs to be set to true. Defaults to '7'.
       */
-    val performanceInsightsRetentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val performanceInsightsRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The port on which the DB accepts connections.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Bool to control if instance is publicly
       * accessible. Default is `false`.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val replicas: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val replicas: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Specifies that this resource is a Replicate
@@ -1408,29 +1404,29 @@ object rdsInstanceMod {
       * PostgreSQL and MySQL Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
       * for more information on using Replication.
       */
-    val replicateSourceDb: js.UndefOr[Input[String]] = js.native
+    val replicateSourceDb: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The RDS Resource ID of this instance.
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block for restoring a DB instance to an arbitrary point in time. Requires the `identifier` argument to be set with the name of the new DB instance to be created. See Restore To Point In Time below for details.
       */
-    val restoreToPointInTime: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceRestoreToPointInTime]] = js.native
+    val restoreToPointInTime: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceRestoreToPointInTime]] = js.undefined
     
     /**
       * Restore from a Percona Xtrabackup in S3.  See [Importing Data into an Amazon RDS MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
       */
-    val s3Import: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceS3Import]] = js.native
+    val s3Import: js.UndefOr[Input[typings.pulumiAws.inputMod.rds.InstanceS3Import]] = js.undefined
     
     /**
       * List of DB Security Groups to
       * associate. Only used for [DB Instances on the _EC2-Classic_
       * Platform](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html#USER_VPC.FindDefaultVPC).
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Determines whether a final DB snapshot is
@@ -1439,19 +1435,19 @@ object rdsInstanceMod {
       * instance is deleted, using the value from `finalSnapshotIdentifier`. Default
       * is `false`.
       */
-    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.native
+    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether or not to create this
       * database from a snapshot. This correlates to the snapshot ID you'd find in the
       * RDS console, e.g: rds:production-2015-06-26-06-05.
       */
-    val snapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val snapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The RDS instance status.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the DB instance is
@@ -1459,19 +1455,19 @@ object rdsInstanceMod {
       * is ignored and you should instead declare `kmsKeyId` with a valid ARN. The
       * default is `false` if not specified.
       */
-    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * One of "standard" (magnetic), "gp2" (general
       * purpose SSD), or "io1" (provisioned IOPS SSD). The default is "io1" if `iops` is
       * specified, "gp2" if not.
       */
-    val storageType: js.UndefOr[Input[String | StorageType]] = js.native
+    val storageType: js.UndefOr[Input[String | StorageType]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Time zone of the DB instance. `timezone` is currently
@@ -1480,19 +1476,19 @@ object rdsInstanceMod {
       * Guide](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html#SQLServer.Concepts.General.TimeZone)
       * for more information.
       */
-    val timezone: js.UndefOr[Input[String]] = js.native
+    val timezone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * (Required unless a `snapshotIdentifier` or `replicateSourceDb`
       * is provided) Username for the master DB user.
       */
-    val username: js.UndefOr[Input[String]] = js.native
+    val username: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of VPC security groups to
       * associate.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object InstanceState {
     

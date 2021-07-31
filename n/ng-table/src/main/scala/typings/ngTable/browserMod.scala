@@ -17,7 +17,6 @@ import typings.ngTable.publicInterfacesMod.IFilterConfigValues
 import typings.ngTable.publicInterfacesMod.ITableInputAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
@@ -31,7 +30,7 @@ object browserMod {
       $timeout: ITimeoutService,
       $parse: IParseService,
       $compile: ICompileService,
-      $attrs: IAttributes with ITableInputAttributes,
+      $attrs: IAttributes & ITableInputAttributes,
       $element: IAugmentedJQuery,
       $document: IDocumentService,
       ngTableColumn: NgTableColumn[TCol],

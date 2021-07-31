@@ -3,22 +3,20 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGetImageDataSuccessCallbackResult extends StObject {
   
   /** 图像像素点数据，一维数组，每四项表示一个像素点的 rgba */
-  var data: Uint8ClampedArray = js.native
+  var data: Uint8ClampedArray
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 图像数据矩形的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 图像数据矩形的宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object CanvasGetImageDataSuccessCallbackResult {
   

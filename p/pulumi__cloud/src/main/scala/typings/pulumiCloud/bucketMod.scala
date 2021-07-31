@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketMod {
@@ -69,7 +68,9 @@ object bucketMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@pulumi/cloud/bucket", "Bucket")
   @js.native
-  class BucketCls protected () extends Bucket {
+  class BucketCls protected ()
+    extends StObject
+       with Bucket {
     /**
       * Creates a new Bucket.
       *
@@ -85,7 +86,8 @@ object bucketMod {
   
   @js.native
   trait BucketConstructor
-    extends /**
+    extends StObject
+       with /**
     * Creates a new Bucket.
     *
     * @param name A unique name for the bucket.
@@ -94,12 +96,11 @@ object bucketMod {
   Instantiable1[/* name */ String, Bucket]
        with Instantiable2[/* name */ String, /* opts */ ResourceOptions, Bucket]
   
-  @js.native
   trait BucketFilter extends StObject {
     
-    var keyPrefix: js.UndefOr[String] = js.native
+    var keyPrefix: js.UndefOr[String] = js.undefined
     
-    var keySuffix: js.UndefOr[String] = js.native
+    var keySuffix: js.UndefOr[String] = js.undefined
   }
   object BucketFilter {
     
@@ -128,23 +129,22 @@ object bucketMod {
   
   type BucketHandler = js.Function1[/* args */ BucketHandlerArgs, js.Promise[Unit]]
   
-  @js.native
   trait BucketHandlerArgs extends StObject {
     
     /**
       * The time (in ISO-8601 format) when the [put] or [delete] was completed.
       */
-    var eventTime: String = js.native
+    var eventTime: String
     
     /**
       * The key that was updated or deleted by the operation.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The size, in bytes, of the blob that was [put].
       */
-    var size: Double = js.native
+    var size: Double
   }
   object BucketHandlerArgs {
     

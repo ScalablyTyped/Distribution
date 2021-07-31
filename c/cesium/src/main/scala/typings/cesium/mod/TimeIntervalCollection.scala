@@ -5,7 +5,6 @@ import typings.cesium.mod.TimeInterval.DataComparer
 import typings.cesium.mod.TimeInterval.MergeCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "TimeIntervalCollection")
@@ -21,7 +20,7 @@ class TimeIntervalCollection () extends StObject {
   def contains(julianDate: JulianDate): Boolean = js.native
   
   def equals(): Boolean = js.native
-  def equals(right: js.UndefOr[scala.Nothing], dataComparer: DataComparer): Boolean = js.native
+  def equals(right: Unit, dataComparer: DataComparer): Boolean = js.native
   def equals(right: TimeIntervalCollection): Boolean = js.native
   def equals(right: TimeIntervalCollection, dataComparer: DataComparer): Boolean = js.native
   
@@ -37,11 +36,7 @@ class TimeIntervalCollection () extends StObject {
   def indexOf(date: JulianDate): Double = js.native
   
   def intersect(other: TimeIntervalCollection): TimeIntervalCollection = js.native
-  def intersect(
-    other: TimeIntervalCollection,
-    dataComparer: js.UndefOr[scala.Nothing],
-    mergeCallback: MergeCallback
-  ): TimeIntervalCollection = js.native
+  def intersect(other: TimeIntervalCollection, dataComparer: Unit, mergeCallback: MergeCallback): TimeIntervalCollection = js.native
   def intersect(other: TimeIntervalCollection, dataComparer: DataComparer): TimeIntervalCollection = js.native
   def intersect(other: TimeIntervalCollection, dataComparer: DataComparer, mergeCallback: MergeCallback): TimeIntervalCollection = js.native
   

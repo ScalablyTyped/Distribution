@@ -3,13 +3,14 @@ package typings.sequelize.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("sequelize", JSImport.Namespace)
 @js.native
-class ^ protected () extends Sequelize {
+class ^ protected ()
+  extends StObject
+     with Sequelize {
   /**
     * Instantiate sequelize with an options object which containing username, password, database
     * @name Sequelize
@@ -61,7 +62,138 @@ class ^ protected () extends Sequelize {
     */
   def this(database: String, username: String, password: String) = this()
   def this(database: String, username: String, password: String, options: Options) = this()
+  
+  /* CompleteClass */
+  override def AccessDeniedError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def AccessDeniedError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("AccessDeniedError")
+  var AccessDeniedError_Original: AccessDeniedError = js.native
+  
+  /* CompleteClass */
+  override def ConnectionError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ConnectionError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("ConnectionError")
+  var ConnectionError_Original: ConnectionError = js.native
+  
+  /* CompleteClass */
+  override def ConnectionRefusedError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ConnectionRefusedError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("ConnectionRefusedError")
+  var ConnectionRefusedError_Original: ConnectionRefusedError = js.native
+  
+  /* CompleteClass */
+  override def ConnectionTimedOutError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ConnectionTimedOutError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("ConnectionTimedOutError")
+  var ConnectionTimedOutError_Original: ConnectionTimedOutError = js.native
+  
+  /* CompleteClass */
+  override def DatabaseError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def DatabaseError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("DatabaseError")
+  var DatabaseError_Original: DatabaseError = js.native
+  
+  /* CompleteClass */
+  override def EmptyResultError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def EmptyResultError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("EmptyResultError")
+  var EmptyResultError_Original: EmptyResultError = js.native
+  
+  /* CompleteClass */
+  override def Error(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def Error(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("Error")
+  var Error_Original: BaseError = js.native
+  
+  /* CompleteClass */
+  override def ExclusionConstraintError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ExclusionConstraintError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("ExclusionConstraintError")
+  var ExclusionConstraintError_Original: ExclusionConstraintError = js.native
+  
+  /* CompleteClass */
+  override def ForeignKeyConstraintError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ForeignKeyConstraintError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("ForeignKeyConstraintError")
+  var ForeignKeyConstraintError_Original: ForeignKeyConstraintError = js.native
+  
+  /* CompleteClass */
+  override def HostNotFoundError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def HostNotFoundError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("HostNotFoundError")
+  var HostNotFoundError_Original: HostNotFoundError = js.native
+  
+  /* CompleteClass */
+  override def HostNotReachableError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def HostNotReachableError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("HostNotReachableError")
+  var HostNotReachableError_Original: HostNotReachableError = js.native
+  
+  /* CompleteClass */
+  override def InvalidConnectionError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def InvalidConnectionError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("InvalidConnectionError")
+  var InvalidConnectionError_Original: InvalidConnectionError = js.native
+  
+  /* CompleteClass */
+  override def TimeoutError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def TimeoutError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("TimeoutError")
+  var TimeoutError_Original: TimeoutError = js.native
+  
+  /* CompleteClass */
+  override def UniqueConstraintError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def UniqueConstraintError(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("UniqueConstraintError")
+  var UniqueConstraintError_Original: UniqueConstraintError = js.native
+  
+  /* CompleteClass */
+  override def ValidationError(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ValidationError(message: String): typings.std.Error = js.native
+  
+  /* CompleteClass */
+  override def ValidationErrorItem(): typings.std.Error = js.native
+  /* CompleteClass */
+  override def ValidationErrorItem(message: String): typings.std.Error = js.native
+  /* CompleteClass */
+  @JSName("ValidationErrorItem")
+  var ValidationErrorItem_Original: ValidationErrorItem = js.native
+  
+  /* CompleteClass */
+  @JSName("ValidationError")
+  var ValidationError_Original: ValidationError = js.native
 }
 @JSImport("sequelize", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[SequelizeStatic]
+object ^
+  extends StObject
+     with TopLevel[js.Object & SequelizeStatic]

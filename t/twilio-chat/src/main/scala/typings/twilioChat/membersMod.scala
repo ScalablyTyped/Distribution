@@ -11,7 +11,6 @@ import typings.twilioSync.mod.SyncClient
 import typings.twilioSync.mod.SyncMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object membersMod {
@@ -84,14 +83,13 @@ object membersMod {
     def upsertMember(memberSid: String, data: MemberDescriptor): js.Promise[Member] = js.native
   }
   
-  @js.native
   trait MembersServices extends StObject {
     
-    var session: Session = js.native
+    var session: Session
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
     
-    var users: Users = js.native
+    var users: Users
   }
   object MembersServices {
     

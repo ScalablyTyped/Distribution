@@ -12,7 +12,7 @@ scale an image.
 | Keywords           | - |
 | # releases         | 101 |
 | # dependents       | 1 |
-| # downloads        | 37764799 |
+| # downloads        | 42340303 |
 | # stars            | 0 |
 
 ## Links

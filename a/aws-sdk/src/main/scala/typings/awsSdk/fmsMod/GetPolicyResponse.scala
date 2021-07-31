@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyResponse extends StObject {
   
   /**
     * Information about the specified AWS Firewall Manager policy.
     */
-  var Policy: js.UndefOr[typings.awsSdk.fmsMod.Policy] = js.native
+  var Policy: js.UndefOr[typings.awsSdk.fmsMod.Policy] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the specified policy.
     */
-  var PolicyArn: js.UndefOr[ResourceArn] = js.native
+  var PolicyArn: js.UndefOr[ResourceArn] = js.undefined
 }
 object GetPolicyResponse {
   

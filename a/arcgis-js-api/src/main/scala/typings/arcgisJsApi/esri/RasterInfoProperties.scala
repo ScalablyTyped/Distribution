@@ -18,10 +18,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterInfoProperties extends StObject {
   
   /**
@@ -29,21 +27,21 @@ trait RasterInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#attributeTable)
     */
-  var attributeTable: js.UndefOr[FeatureSetProperties] = js.native
+  var attributeTable: js.UndefOr[FeatureSetProperties] = js.undefined
   
   /**
     * Raster band count.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#bandCount)
     */
-  var bandCount: js.UndefOr[Double] = js.native
+  var bandCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Raster colormap that can be used to display the imagery layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#colormap)
     */
-  var colormap: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var colormap: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /**
     * Raster data type controls how the data is rendered by default.
@@ -52,84 +50,84 @@ trait RasterInfoProperties extends StObject {
     */
   var dataType: js.UndefOr[
     generic | elevation | thematic | processed | scientific | `vector-uv` | `vector-magdir`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The minimum and maximum X and Y coordinates of a bounding box containing all the raster data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#extent)
     */
-  var extent: js.UndefOr[ExtentProperties] = js.native
+  var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * Raster height (row count) in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#height)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Raster histograms return basic name-value pairs for number of bins, min and max bounding values, counts of pixels in each bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#histograms)
     */
-  var histograms: js.UndefOr[js.Array[_]] = js.native
+  var histograms: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Raster key properties.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#keyProperties)
     */
-  var keyProperties: js.UndefOr[js.Any] = js.native
+  var keyProperties: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The multidimensional information associated with the raster.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#multidimensionalInfo)
     */
-  var multidimensionalInfo: js.UndefOr[js.Any] = js.native
+  var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The pixel value representing no available information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#noDataValue)
     */
-  var noDataValue: js.UndefOr[Double | js.Array[Double]] = js.native
+  var noDataValue: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * Raster pixel size.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelSize)
     */
-  var pixelSize: js.UndefOr[RasterInfoPixelSize] = js.native
+  var pixelSize: js.UndefOr[RasterInfoPixelSize] = js.undefined
   
   /**
     * Pixel type for the raster data source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#pixelType)
     */
-  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.native
+  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   
   /**
     * The spatial reference of the raster.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * Raster band statistics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#statistics)
     */
-  var statistics: js.UndefOr[js.Array[RasterInfoStatistics]] = js.native
+  var statistics: js.UndefOr[js.Array[RasterInfoStatistics]] = js.undefined
   
   /**
     * Raster width (column count) in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#width)
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object RasterInfoProperties {
   
@@ -182,7 +180,7 @@ object RasterInfoProperties {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHistograms(value: js.Array[_]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
+    def setHistograms(value: js.Array[js.Any]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistogramsUndefined: Self = StObject.set(x, "histograms", js.undefined)

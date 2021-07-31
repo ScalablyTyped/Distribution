@@ -2,21 +2,19 @@ package typings.antvGMath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MaxX extends StObject {
     
-    var maxX: js.Any = js.native
+    var maxX: js.Any
     
-    var maxY: js.Any = js.native
+    var maxY: js.Any
     
-    var minX: js.Any = js.native
+    var minX: js.Any
     
-    var minY: js.Any = js.native
+    var minY: js.Any
   }
   object MaxX {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

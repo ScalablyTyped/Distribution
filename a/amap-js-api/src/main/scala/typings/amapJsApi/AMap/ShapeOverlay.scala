@@ -17,11 +17,12 @@ import typings.amapJsApi.amapJsApiStrings.touchstart
 import typings.amapJsApi.anon.TargetI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShapeOverlay[ExtraData] extends Overlay[ExtraData] {
+trait ShapeOverlay[ExtraData]
+  extends StObject
+     with Overlay[ExtraData] {
   
   /**
     * 获得属性
@@ -57,17 +58,17 @@ trait ShapeOverlay[ExtraData] extends Overlay[ExtraData] {
 }
 object ShapeOverlay {
   
-  @js.native
   trait EventMap[I]
-    extends typings.amapJsApi.AMap.Overlay.EventMap[I] {
+    extends StObject
+       with typings.amapJsApi.AMap.Overlay.EventMap[I] {
     
-    var change: Event_[typings.amapJsApi.amapJsApiStrings.change, TargetI[I]] = js.native
+    var change: Event_[typings.amapJsApi.amapJsApiStrings.change, TargetI[I]]
     
-    var hide: Event_[typings.amapJsApi.amapJsApiStrings.hide, TargetI[I]] = js.native
+    var hide: Event_[typings.amapJsApi.amapJsApiStrings.hide, TargetI[I]]
     
-    var options: Event_[typings.amapJsApi.amapJsApiStrings.options, js.UndefOr[scala.Nothing]] = js.native
+    var options: Event_[typings.amapJsApi.amapJsApiStrings.options, Unit]
     
-    var show: Event_[typings.amapJsApi.amapJsApiStrings.show, TargetI[I]] = js.native
+    var show: Event_[typings.amapJsApi.amapJsApiStrings.show, TargetI[I]]
   }
   object EventMap {
     
@@ -81,7 +82,7 @@ object ShapeOverlay {
       mousemove: MapsEvent[mousemove, I],
       mouseover: MapsEvent[mouseover, I],
       mouseup: MapsEvent[mouseup, I],
-      options: Event_[options, js.UndefOr[scala.Nothing]],
+      options: Event_[options, Unit],
       rightclick: MapsEvent[rightclick, I],
       show: Event_[show, TargetI[I]],
       touchend: MapsEvent[touchend, I],
@@ -93,7 +94,7 @@ object ShapeOverlay {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setChange(value: Event_[change, TargetI[I]]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
@@ -102,65 +103,64 @@ object ShapeOverlay {
       def setHide(value: Event_[hide, TargetI[I]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOptions(value: Event_[options, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      def setOptions(value: Event_[options, Unit]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShow(value: Event_[show, TargetI[I]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait GetOptionsResult[ExtraData] extends StObject {
     
     /**
       * 事件是否穿透到地图
       */
-    var bubble: Boolean = js.native
+    var bubble: Boolean
     
     /**
       * 是否支持点击
       */
-    var clickable: Boolean = js.native
+    var clickable: Boolean
     
     /**
       * 自定义属性
       */
-    var extData: ExtraData | js.Object = js.native
+    var extData: ExtraData | js.Object
     
     /**
       * 所属地图
       */
-    var map: Map = js.native
+    var map: Map
     
     /**
       * 线条颜色
       */
-    var strokeColor: String = js.native
+    var strokeColor: String
     
     /**
       * 虚线的分段
       */
-    var strokeDasharray: js.Array[Double] = js.native
+    var strokeDasharray: js.Array[Double]
     
     /**
       * 线条透明度
       */
-    var strokeOpacity: Double = js.native
+    var strokeOpacity: Double
     
     /**
       * 线条样式，虚线或者实线
       */
-    var strokeStyle: StrokeStyle = js.native
+    var strokeStyle: StrokeStyle
     
     /**
       * 线条宽度
       */
-    var strokeWeight: Double = js.native
+    var strokeWeight: Double
     
     /**
       * 层级
       */
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object GetOptionsResult {
     
@@ -182,7 +182,7 @@ object ShapeOverlay {
     }
     
     @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[_], ExtraData] (val x: Self with GetOptionsResult[ExtraData]) extends AnyVal {
+    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBubble(value: Boolean): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])

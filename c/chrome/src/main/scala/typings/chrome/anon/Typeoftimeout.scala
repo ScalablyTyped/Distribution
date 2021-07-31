@@ -2,37 +2,35 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeoftimeout extends StObject {
   
-  var editTracksInfo: Double = js.native
+  var editTracksInfo: Double
   
-  var getStatus: Double = js.native
+  var getStatus: Double
   
-  var load: Double = js.native
+  var load: Double
   
-  var pause: Double = js.native
+  var pause: Double
   
-  var play: Double = js.native
+  var play: Double
   
-  var queueInsert: Double = js.native
+  var queueInsert: Double
   
-  var queueLoad: Double = js.native
+  var queueLoad: Double
   
-  var queueRemove: Double = js.native
+  var queueRemove: Double
   
-  var queueReorder: Double = js.native
+  var queueReorder: Double
   
-  var queueUpdate: Double = js.native
+  var queueUpdate: Double
   
-  var seek: Double = js.native
+  var seek: Double
   
-  var setVolume: Double = js.native
+  var setVolume: Double
   
-  var stop: Double = js.native
+  var stop: Double
 }
 object Typeoftimeout {
   

@@ -2,15 +2,15 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatAllocationParams extends CatCommonParams {
+trait CatAllocationParams
+  extends StObject
+     with CatCommonParams {
   
-  var bytes: js.UndefOr[CatBytes] = js.native
+  var bytes: js.UndefOr[CatBytes] = js.undefined
   
-  var nodeId: js.UndefOr[NameList] = js.native
+  var nodeId: js.UndefOr[NameList] = js.undefined
 }
 object CatAllocationParams {
   

@@ -14,75 +14,117 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-with-styles", "css")
+  @JSImport("react-with-styles", JSImport.Namespace)
   @js.native
-  def css(styles: js.Any*): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-with-styles", "withStyles")
-  @js.native
+  @scala.inline
+  def css(styles: js.Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  
+  @scala.inline
   def withStyles[T](): js.Function1[
-    /* component */ ComponentType[_], 
+    /* component */ ComponentType[js.Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[_]], 
+        ElementConfig[ComponentType[js.Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
-  ] = js.native
-  @JSImport("react-with-styles", "withStyles")
-  @js.native
-  def withStyles[T](styleFn: js.UndefOr[scala.Nothing], options: WithStylesOptions): js.Function1[
-    /* component */ ComponentType[_], 
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")().asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[_]], 
+        ElementConfig[ComponentType[js.Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
-  ] = js.native
-  @JSImport("react-with-styles", "withStyles")
-  @js.native
+  ]]
+  @scala.inline
   def withStyles[T](styleFn: js.Function1[/* theme */ T, Styles]): js.Function1[
-    /* component */ ComponentType[_], 
+    /* component */ ComponentType[js.Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[_]], 
+        ElementConfig[ComponentType[js.Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
-  ] = js.native
-  @JSImport("react-with-styles", "withStyles")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[
+      Omit[
+        ElementConfig[ComponentType[js.Any]], 
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
+      ], 
+      ComponentState
+    ]
+  ]]
+  @scala.inline
   def withStyles[T](styleFn: js.Function1[/* theme */ T, Styles], options: WithStylesOptions): js.Function1[
-    /* component */ ComponentType[_], 
+    /* component */ ComponentType[js.Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[_]], 
+        ElementConfig[ComponentType[js.Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
-  ] = js.native
-  @JSImport("react-with-styles", "withStyles")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[
+      Omit[
+        ElementConfig[ComponentType[js.Any]], 
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
+      ], 
+      ComponentState
+    ]
+  ]]
+  @scala.inline
   def withStyles[T](styleFn: Null, options: WithStylesOptions): js.Function1[
-    /* component */ ComponentType[_], 
+    /* component */ ComponentType[js.Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[_]], 
+        ElementConfig[ComponentType[js.Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[
+      Omit[
+        ElementConfig[ComponentType[js.Any]], 
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
+      ], 
+      ComponentState
+    ]
+  ]]
+  @scala.inline
+  def withStyles[T](styleFn: Unit, options: WithStylesOptions): js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[
+      Omit[
+        ElementConfig[ComponentType[js.Any]], 
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
+      ], 
+      ComponentState
+    ]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[
+      Omit[
+        ElementConfig[ComponentType[js.Any]], 
+        /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
+      ], 
+      ComponentState
+    ]
+  ]]
   
   /* Inlined prop-types.prop-types.ValidationMap<react-with-styles.react-with-styles.WithStylesProps<react-with-styles.react-with-styles.Theme>> */
   object withStylesPropTypes {
@@ -125,15 +167,13 @@ object mod {
   type Styles = StringDictionary[Nullable[CSSPropertiespseudoSelect]]
   
   // tslint:disable-next-line no-empty-interface
-  @js.native
   trait Theme extends StObject
   
-  @js.native
   trait WithStylesOptions extends StObject {
     
-    var flushBefore: js.UndefOr[Boolean] = js.native
+    var flushBefore: js.UndefOr[Boolean] = js.undefined
     
-    var pureComponent: js.UndefOr[Boolean] = js.native
+    var pureComponent: js.UndefOr[Boolean] = js.undefined
   }
   object WithStylesOptions {
     
@@ -160,7 +200,6 @@ object mod {
     }
   }
   
-  @js.native
   trait WithStylesProps[T] extends StObject {
     
     /**
@@ -168,11 +207,11 @@ object mod {
       * of these things. It returns an object with an opaque structure that must be spread into a
       * JSX element.
       */
-    def css(styles: js.Any*): js.Object = js.native
+    def css(styles: js.Any*): js.Object
     
-    var styles: StringDictionary[js.Object] = js.native
+    var styles: StringDictionary[js.Object]
     
-    var theme: T = js.native
+    var theme: T
   }
   object WithStylesProps {
     
@@ -183,7 +222,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class WithStylesPropsMutableBuilder[Self <: WithStylesProps[_], T] (val x: Self with WithStylesProps[T]) extends AnyVal {
+    implicit class WithStylesPropsMutableBuilder[Self <: WithStylesProps[?], T] (val x: Self & WithStylesProps[T]) extends AnyVal {
       
       @scala.inline
       def setCss(value: /* repeated */ js.Any => js.Object): Self = StObject.set(x, "css", js.Any.fromFunction1(value))

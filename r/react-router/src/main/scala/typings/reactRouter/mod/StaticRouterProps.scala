@@ -2,17 +2,15 @@ package typings.reactRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticRouterProps extends StObject {
   
-  var basename: js.UndefOr[String] = js.native
+  var basename: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[StaticRouterContext] = js.native
+  var context: js.UndefOr[StaticRouterContext] = js.undefined
   
-  var location: js.UndefOr[String | js.Object] = js.native
+  var location: js.UndefOr[String | js.Object] = js.undefined
 }
 object StaticRouterProps {
   

@@ -2,12 +2,16 @@ package typings.ionic
 
 import typings.ionic.angularMod.AngularProject
 import typings.ionic.definitionsMod.AngularServeOptions
+import typings.ionic.definitionsMod.IConfig
+import typings.ionic.definitionsMod.ILogger
+import typings.ionic.definitionsMod.IShell
+import typings.ionic.definitionsMod.IonicEnvironmentFlags
 import typings.ionic.libServeMod.ServeCLI
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionic.libServeMod.ServeRunnerDeps
+import typings.ionicCliFrameworkPrompts.mod.PromptModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularServeMod {
@@ -38,10 +42,33 @@ object angularServeMod {
     def platformToMode(platform: String): String = js.native
   }
   
-  @js.native
-  trait AngularServeRunnerDeps extends ServeRunnerDeps {
+  trait AngularServeRunnerDeps
+    extends StObject
+       with ServeRunnerDeps {
     
     @JSName("project")
-    val project_AngularServeRunnerDeps: AngularProject = js.native
+    val project_AngularServeRunnerDeps: AngularProject
+  }
+  object AngularServeRunnerDeps {
+    
+    @scala.inline
+    def apply(
+      config: IConfig,
+      flags: IonicEnvironmentFlags,
+      log: ILogger,
+      project: AngularProject,
+      prompt: PromptModule,
+      shell: IShell
+    ): AngularServeRunnerDeps = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AngularServeRunnerDeps]
+    }
+    
+    @scala.inline
+    implicit class AngularServeRunnerDepsMutableBuilder[Self <: AngularServeRunnerDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    }
   }
 }

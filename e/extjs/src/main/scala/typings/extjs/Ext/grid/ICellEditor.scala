@@ -3,11 +3,11 @@ package typings.extjs.Ext.grid
 import typings.extjs.Ext.IEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICellEditor extends IEditor
+trait ICellEditor
+  extends StObject
+     with IEditor
 object ICellEditor {
   
   @scala.inline

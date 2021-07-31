@@ -4,24 +4,22 @@ import typings.nodeRedEditorClient.anon.Container
 import typings.nodeRedEditorClient.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Library extends StObject {
   
-  def create(options: typings.nodeRedEditorClient.anon.Editor): Unit = js.native
+  def create(options: typings.nodeRedEditorClient.anon.Editor): Unit
   
-  def createBrowser(options: Container): Data = js.native
+  def createBrowser(options: Container): Data
   
-  def init(): Unit = js.native
+  def init(): Unit
   
   def loadLibraryFolder(
     library: String,
     `type`: String,
     root: String,
     done: js.Function1[/* items */ js.Array[js.Object], Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Library {
   

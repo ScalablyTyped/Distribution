@@ -6,16 +6,14 @@ import typings.blueprintjsCore.contextMod.Validator
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/common/context.ValidationMap<@blueprintjs/core.@blueprintjs/core/lib/esm/components/portal/portal.IPortalContext> */
-@js.native
 trait ValidationMapIPortalConte extends StObject {
   
   var blueprintPortalClassName: js.UndefOr[
     Validator[typings.blueprintjsCore.blueprintjsCoreStrings.blueprintPortalClassName]
-  ] = js.native
+  ] = js.undefined
 }
 object ValidationMapIPortalConte {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityGroupReference extends StObject {
   
   /**
     * The ID of your security group.
     */
-  var GroupId: js.UndefOr[String] = js.native
+  var GroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC with the referencing security group.
     */
-  var ReferencingVpcId: js.UndefOr[String] = js.native
+  var ReferencingVpcId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC peering connection.
     */
-  var VpcPeeringConnectionId: js.UndefOr[String] = js.native
+  var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
 }
 object SecurityGroupReference {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerEngineType extends StObject {
   
   /**
     * The type of broker engine.
     */
-  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.native
+  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
     * The list of engine versions.
     */
-  var EngineVersions: js.UndefOr[listOfEngineVersion] = js.native
+  var EngineVersions: js.UndefOr[listOfEngineVersion] = js.undefined
 }
 object BrokerEngineType {
   

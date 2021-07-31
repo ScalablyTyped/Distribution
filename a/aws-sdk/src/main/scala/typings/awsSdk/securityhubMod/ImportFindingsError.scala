@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportFindingsError extends StObject {
   
   /**
     * The code of the error returned by the BatchImportFindings operation.
     */
-  var ErrorCode: NonEmptyString = js.native
+  var ErrorCode: NonEmptyString
   
   /**
     * The message of the error returned by the BatchImportFindings operation.
     */
-  var ErrorMessage: NonEmptyString = js.native
+  var ErrorMessage: NonEmptyString
   
   /**
     * The identifier of the finding that could not be updated.
     */
-  var Id: NonEmptyString = js.native
+  var Id: NonEmptyString
 }
 object ImportFindingsError {
   

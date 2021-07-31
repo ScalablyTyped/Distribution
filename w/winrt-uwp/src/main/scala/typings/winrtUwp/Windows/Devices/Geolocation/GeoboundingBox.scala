@@ -2,36 +2,34 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a rectangle that defines a geographic area. */
-@js.native
 trait GeoboundingBox extends StObject {
   
   /** Gets the altitude reference system used by the GeoboundingBox . */
-  var altitudeReferenceSystem: AltitudeReferenceSystem = js.native
+  var altitudeReferenceSystem: AltitudeReferenceSystem
   
   /** Gets the center of the GeoboundingBox . */
-  var center: BasicGeoposition = js.native
+  var center: BasicGeoposition
   
   /** Gets the type of geographic shape represented by the GeoboundingBox . */
-  var geoshapeType: GeoshapeType = js.native
+  var geoshapeType: GeoshapeType
   
   /** Gets the altitude of the highest corner of the GeoboundingBox . */
-  var maxAltitude: Double = js.native
+  var maxAltitude: Double
   
   /** Gets the altitude of the lowest corner of the GeoboundingBox . */
-  var minAltitude: Double = js.native
+  var minAltitude: Double
   
   /** Gets the northwest corner of the GeoboundingBox . */
-  var northwestCorner: BasicGeoposition = js.native
+  var northwestCorner: BasicGeoposition
   
   /** Gets the southeast corner of the GeoboundingBox . */
-  var southeastCorner: BasicGeoposition = js.native
+  var southeastCorner: BasicGeoposition
   
   /** Gets the spatial reference ID (SRID) used by the GeoboundingBox . */
-  var spatialReferenceId: Double = js.native
+  var spatialReferenceId: Double
 }
 object GeoboundingBox {
   

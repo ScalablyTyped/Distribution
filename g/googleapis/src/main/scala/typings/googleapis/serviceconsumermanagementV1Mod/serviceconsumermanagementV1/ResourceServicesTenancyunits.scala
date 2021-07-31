@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/serviceconsumermanagement/v1", "serviceconsumermanagement_v1.Resource$Services$Tenancyunits")
@@ -33,7 +32,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def addProject(): GaxiosPromise[SchemaOperation] = js.native
   def addProject(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addProject(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addProject(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addProject(params: ParamsResourceServicesTenancyunitsAddproject): GaxiosPromise[SchemaOperation] = js.native
   def addProject(
     params: ParamsResourceServicesTenancyunitsAddproject,
@@ -78,7 +77,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def applyProjectConfig(): GaxiosPromise[SchemaOperation] = js.native
   def applyProjectConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def applyProjectConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def applyProjectConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def applyProjectConfig(params: ParamsResourceServicesTenancyunitsApplyprojectconfig): GaxiosPromise[SchemaOperation] = js.native
   def applyProjectConfig(
     params: ParamsResourceServicesTenancyunitsApplyprojectconfig,
@@ -120,7 +119,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def attachProject(): GaxiosPromise[SchemaOperation] = js.native
   def attachProject(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def attachProject(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def attachProject(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def attachProject(params: ParamsResourceServicesTenancyunitsAttachproject): GaxiosPromise[SchemaOperation] = js.native
   def attachProject(
     params: ParamsResourceServicesTenancyunitsAttachproject,
@@ -155,7 +154,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaTenancyUnit] = js.native
   def create(callback: BodyResponseCallback[SchemaTenancyUnit]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTenancyUnit] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTenancyUnit] = js.native
   def create(params: ParamsResourceServicesTenancyunitsCreate): GaxiosPromise[SchemaTenancyUnit] = js.native
   def create(
     params: ParamsResourceServicesTenancyunitsCreate,
@@ -189,7 +188,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceServicesTenancyunitsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceServicesTenancyunitsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -226,7 +225,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def deleteProject(): GaxiosPromise[SchemaOperation] = js.native
   def deleteProject(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deleteProject(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deleteProject(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteProject(params: ParamsResourceServicesTenancyunitsDeleteproject): GaxiosPromise[SchemaOperation] = js.native
   def deleteProject(
     params: ParamsResourceServicesTenancyunitsDeleteproject,
@@ -265,7 +264,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListTenancyUnitsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTenancyUnitsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTenancyUnitsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTenancyUnitsResponse] = js.native
   def list(params: ParamsResourceServicesTenancyunitsList): GaxiosPromise[SchemaListTenancyUnitsResponse] = js.native
   def list(
     params: ParamsResourceServicesTenancyunitsList,
@@ -304,7 +303,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def removeProject(): GaxiosPromise[SchemaOperation] = js.native
   def removeProject(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def removeProject(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeProject(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeProject(params: ParamsResourceServicesTenancyunitsRemoveproject): GaxiosPromise[SchemaOperation] = js.native
   def removeProject(
     params: ParamsResourceServicesTenancyunitsRemoveproject,
@@ -341,7 +340,7 @@ class ResourceServicesTenancyunits protected () extends StObject {
     */
   def undeleteProject(): GaxiosPromise[SchemaOperation] = js.native
   def undeleteProject(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def undeleteProject(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def undeleteProject(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def undeleteProject(params: ParamsResourceServicesTenancyunitsUndeleteproject): GaxiosPromise[SchemaOperation] = js.native
   def undeleteProject(
     params: ParamsResourceServicesTenancyunitsUndeleteproject,

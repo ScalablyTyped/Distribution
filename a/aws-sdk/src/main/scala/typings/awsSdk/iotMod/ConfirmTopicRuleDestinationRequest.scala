@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmTopicRuleDestinationRequest extends StObject {
   
   /**
     * The token used to confirm ownership or access to the topic rule confirmation URL.
     */
-  var confirmationToken: ConfirmationToken = js.native
+  var confirmationToken: ConfirmationToken
 }
 object ConfirmTopicRuleDestinationRequest {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inviteAccepterMod {
@@ -38,6 +37,10 @@ object inviteAccepterMod {
   /* static members */
   object InviteAccepter {
     
+    @JSImport("@pulumi/aws/guardduty/inviteAccepter", "InviteAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing InviteAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object inviteAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty/inviteAccepter", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): InviteAccepter = js.native
-    @JSImport("@pulumi/aws/guardduty/inviteAccepter", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InviteAccepter = js.native
-    @JSImport("@pulumi/aws/guardduty/inviteAccepter", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InviteAccepterState): InviteAccepter = js.native
-    @JSImport("@pulumi/aws/guardduty/inviteAccepter", "InviteAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InviteAccepterState, opts: CustomResourceOptions): InviteAccepter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InviteAccepterState): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InviteAccepterState, opts: CustomResourceOptions): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
     
     /**
       * Returns true if the given object is an instance of InviteAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty/inviteAccepter", "InviteAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean]
   }
   
-  @js.native
   trait InviteAccepterArgs extends StObject {
     
     /**
       * The detector ID of the member GuardDuty account.
       */
-    val detectorId: Input[String] = js.native
+    val detectorId: Input[String]
     
     /**
       * AWS account ID for primary account.
       */
-    val masterAccountId: Input[String] = js.native
+    val masterAccountId: Input[String]
   }
   object InviteAccepterArgs {
     
@@ -101,18 +98,17 @@ object inviteAccepterMod {
     }
   }
   
-  @js.native
   trait InviteAccepterState extends StObject {
     
     /**
       * The detector ID of the member GuardDuty account.
       */
-    val detectorId: js.UndefOr[Input[String]] = js.native
+    val detectorId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * AWS account ID for primary account.
       */
-    val masterAccountId: js.UndefOr[Input[String]] = js.native
+    val masterAccountId: js.UndefOr[Input[String]] = js.undefined
   }
   object InviteAccepterState {
     

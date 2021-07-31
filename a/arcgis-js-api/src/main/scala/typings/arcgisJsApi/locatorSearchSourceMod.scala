@@ -6,24 +6,33 @@ import typings.arcgisJsApi.esri.LocatorSearchSourceConstructor
 import typings.arcgisJsApi.esri.LocatorSearchSourceProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locatorSearchSourceMod extends Shortcut {
   
   @JSImport("esri/widgets/Search/LocatorSearchSource", JSImport.Namespace)
   @js.native
-  val ^ : LocatorSearchSourceConstructor = js.native
+  val ^ : js.Object & LocatorSearchSourceConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/Search/LocatorSearchSource", JSImport.Namespace)
   @js.native
-  class Class () extends LocatorSearchSource {
+  class Class ()
+    extends StObject
+       with LocatorSearchSource {
     def this(properties: LocatorSearchSourceProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = LocatorSearchSourceConstructor
+  type _To = js.Object & LocatorSearchSourceConstructor
   
   /* This means you don't have to write `^`, but can instead just say `locatorSearchSourceMod.foo` */
-  override def _to: LocatorSearchSourceConstructor = ^
+  override def _to: js.Object & LocatorSearchSourceConstructor = ^
 }

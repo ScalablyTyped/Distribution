@@ -2,71 +2,69 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageVersionDescription extends StObject {
   
   /**
     *  The name of the package that is displayed. The displayName varies depending on the package version's format. For example, if an npm package is named ui, is in the namespace vue, and has the format npm, then the displayName is @vue/ui. 
     */
-  var displayName: js.UndefOr[String255] = js.native
+  var displayName: js.UndefOr[String255] = js.undefined
   
   /**
     *  The format of the package version. The valid package formats are:     npm: A Node Package Manager (npm) package.     pypi: A Python Package Index (PyPI) package.     maven: A Maven package that contains compiled code in a distributable format, such as a JAR file.   
     */
-  var format: js.UndefOr[PackageFormat] = js.native
+  var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
     *  The homepage associated with the package. 
     */
-  var homePage: js.UndefOr[String] = js.native
+  var homePage: js.UndefOr[String] = js.undefined
   
   /**
     *  Information about licenses associated with the package version. 
     */
-  var licenses: js.UndefOr[LicenseInfoList] = js.native
+  var licenses: js.UndefOr[LicenseInfoList] = js.undefined
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The name of the requested package. 
     */
-  var packageName: js.UndefOr[PackageName] = js.native
+  var packageName: js.UndefOr[PackageName] = js.undefined
   
   /**
     *  A timestamp that contains the date and time the package version was published. 
     */
-  var publishedTime: js.UndefOr[Timestamp] = js.native
+  var publishedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The revision of the package version. 
     */
-  var revision: js.UndefOr[PackageVersionRevision] = js.native
+  var revision: js.UndefOr[PackageVersionRevision] = js.undefined
   
   /**
     *  The repository for the source code in the package version, or the source code used to build it. 
     */
-  var sourceCodeRepository: js.UndefOr[String] = js.native
+  var sourceCodeRepository: js.UndefOr[String] = js.undefined
   
   /**
     *  A string that contains the status of the package version. It can be one of the following:     Published     Unfinished     Unlisted     Archived     Disposed   
     */
-  var status: js.UndefOr[PackageVersionStatus] = js.native
+  var status: js.UndefOr[PackageVersionStatus] = js.undefined
   
   /**
     *  A summary of the package version. The summary is extracted from the package. The information in and detail level of the summary depends on the package version's format. 
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
   /**
     *  The version of the package. 
     */
-  var version: js.UndefOr[PackageVersion] = js.native
+  var version: js.UndefOr[PackageVersion] = js.undefined
 }
 object PackageVersionDescription {
   

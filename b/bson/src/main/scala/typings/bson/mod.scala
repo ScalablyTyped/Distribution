@@ -6,10 +6,13 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bson", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bson", "BSONRegExp")
   @js.native
@@ -137,10 +140,13 @@ object mod {
   /* static members */
   object Decimal128 {
     
-    /** Create a Decimal128 instance from a string representation. */
-    @JSImport("bson", "Decimal128.fromString")
+    @JSImport("bson", "Decimal128")
     @js.native
-    def fromString(s: String): Decimal128 = js.native
+    val ^ : js.Any = js.native
+    
+    /** Create a Decimal128 instance from a string representation. */
+    @scala.inline
+    def fromString(s: String): Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Decimal128]
   }
   
   @JSImport("bson", "Double")
@@ -159,149 +165,113 @@ object mod {
   
   object EJSON {
     
-    @JSImport("bson", "EJSON.deserialize")
+    @JSImport("bson", "EJSON")
     @js.native
-    def deserialize(ejson: js.Object): js.Object = js.native
-    @JSImport("bson", "EJSON.deserialize")
-    @js.native
-    def deserialize(ejson: js.Object, options: Relaxed): js.Object = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bson", "EJSON.parse")
-    @js.native
-    def parse(text: String): js.Object = js.native
-    @JSImport("bson", "EJSON.parse")
-    @js.native
-    def parse(text: String, options: Relaxed): js.Object = js.native
+    @scala.inline
+    def deserialize(ejson: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def deserialize(ejson: js.Object, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("bson", "EJSON.serialize")
-    @js.native
-    def serialize(bson: js.Object): js.Object = js.native
-    @JSImport("bson", "EJSON.serialize")
-    @js.native
-    def serialize(bson: js.Object, options: Relaxed): js.Object = js.native
+    @scala.inline
+    def parse(text: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def parse(text: String, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(
-      value: js.Object,
-      replacer: js.UndefOr[scala.Nothing],
-      indents: js.UndefOr[scala.Nothing],
-      options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.UndefOr[scala.Nothing], indents: String): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.UndefOr[scala.Nothing], indents: String, options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.UndefOr[scala.Nothing], indents: scala.Double): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.UndefOr[scala.Nothing], indents: scala.Double, options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.UndefOr[scala.Nothing], options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Array[scala.Double | String]): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(
-      value: js.Object,
-      replacer: js.Array[String | scala.Double],
-      indents: js.UndefOr[scala.Nothing],
-      options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String, options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: scala.Double): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
+    @scala.inline
+    def serialize(bson: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(bson.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def serialize(bson: js.Object, options: Relaxed): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(bson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    
+    @scala.inline
+    def stringify(value: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Array[scala.Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       value: js.Object,
       replacer: js.Array[String | scala.Double],
       indents: scala.Double,
       options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Array[String | scala.Double], options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       value: js.Object,
-      replacer: js.Function2[/* key */ String, /* value */ js.Any, _],
-      indents: js.UndefOr[scala.Nothing],
-      options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], indents: String): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
+      replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
+      indents: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       value: js.Object,
-      replacer: js.Function2[/* key */ String, /* value */ js.Any, _],
+      replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: String,
       options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       value: js.Object,
-      replacer: js.Function2[/* key */ String, /* value */ js.Any, _],
+      replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: scala.Double
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       value: js.Object,
-      replacer: js.Function2[/* key */ String, /* value */ js.Any, _],
+      replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       indents: scala.Double,
       options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def stringify(
       value: js.Object,
-      replacer: js.Function2[/* key */ String, /* value */ js.Any, _],
+      replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
+      indents: Unit,
       options: Relaxed
-    ): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: Null, indents: js.UndefOr[scala.Nothing], options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: Null, indents: String): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: Null, indents: String, options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: Null, indents: scala.Double): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: Null, indents: scala.Double, options: Relaxed): String = js.native
-    @JSImport("bson", "EJSON.stringify")
-    @js.native
-    def stringify(value: js.Object, replacer: Null, options: Relaxed): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(
+      value: js.Object,
+      replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any],
+      options: Relaxed
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Null, indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Null, indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Null, indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Null, indents: scala.Double, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Null, indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Null, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Unit, indents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Unit, indents: String, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Unit, indents: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Unit, indents: scala.Double, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Unit, indents: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], indents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def stringify(value: js.Object, replacer: Unit, options: Relaxed): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("bson", "Int32")
@@ -315,9 +285,15 @@ object mod {
   
   @JSImport("bson", "Long")
   @js.native
-  class Long () extends LongLike[Long]
+  class Long ()
+    extends StObject
+       with LongLike[Long]
   /* static members */
   object Long {
+    
+    @JSImport("bson", "Long")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bson", "Long.MAX_VALUE")
     @js.native
@@ -344,30 +320,25 @@ object mod {
       * @param lowBits The low 32-bits.
       * @param highBits The high 32-bits.
       */
-    @JSImport("bson", "Long.fromBits")
-    @js.native
-    def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = js.native
+    @scala.inline
+    def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
     
     /** Returns a Long representing the given (32-bit) integer value. */
-    @JSImport("bson", "Long.fromInt")
-    @js.native
-    def fromInt(i: scala.Double): Long = js.native
+    @scala.inline
+    def fromInt(i: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(i.asInstanceOf[js.Any]).asInstanceOf[Long]
     
     /** Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned. */
-    @JSImport("bson", "Long.fromNumber")
-    @js.native
-    def fromNumber(n: scala.Double): Long = js.native
+    @scala.inline
+    def fromNumber(n: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
     
     /**
       * Returns a Long representation of the given string
       * @param opt_radix The radix in which the text is written. {default:10}
       */
-    @JSImport("bson", "Long.fromString")
-    @js.native
-    def fromString(s: String): Long = js.native
-    @JSImport("bson", "Long.fromString")
-    @js.native
-    def fromString(s: String, opt_radix: scala.Double): Long = js.native
+    @scala.inline
+    def fromString(s: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[Long]
+    @scala.inline
+    def fromString(s: String, opt_radix: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Long]
   }
   
   @JSImport("bson", "MaxKey")
@@ -408,45 +379,38 @@ object mod {
       * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
       * @return {ObjectId} return the created ObjectId
       */
-    @JSImport("bson", "ObjectID.createFromHexString")
-    @js.native
-    def createFromHexString(hexString: String): ObjectId = js.native
+    @scala.inline
+    def createFromHexString(hexString: String): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
       * @param {number} time an integer number representing a number of seconds.
       * @return {ObjectId} return the created ObjectId
       */
-    @JSImport("bson", "ObjectID.createFromTime")
-    @js.native
-    def createFromTime(time: scala.Double): ObjectId = js.native
+    @scala.inline
+    def createFromTime(time: scala.Double): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Generate a 12 byte id string used in ObjectId's
       * @param {number} time optional parameter allowing to pass in a second based timestamp.
       * @return {string} return the 12 byte id binary string.
       */
-    @JSImport("bson", "ObjectID.generate")
-    @js.native
-    def generate(): Buffer = js.native
-    @JSImport("bson", "ObjectID.generate")
-    @js.native
-    def generate(time: scala.Double): Buffer = js.native
+    @scala.inline
+    def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
+    @scala.inline
+    def generate(time: scala.Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Checks if a value is a valid bson ObjectId
       *
       * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
       */
-    @JSImport("bson", "ObjectID.isValid")
-    @js.native
-    def isValid(id: String): Boolean = js.native
-    @JSImport("bson", "ObjectID.isValid")
-    @js.native
-    def isValid(id: scala.Double): Boolean = js.native
-    @JSImport("bson", "ObjectID.isValid")
-    @js.native
-    def isValid(id: ObjectId): Boolean = js.native
+    @scala.inline
+    def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isValid(id: scala.Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isValid(id: ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("bson", "ObjectId")
@@ -502,45 +466,38 @@ object mod {
       * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
       * @return {ObjectId} return the created ObjectId
       */
-    @JSImport("bson", "ObjectId.createFromHexString")
-    @js.native
-    def createFromHexString(hexString: String): ObjectId = js.native
+    @scala.inline
+    def createFromHexString(hexString: String): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
       * @param {number} time an integer number representing a number of seconds.
       * @return {ObjectId} return the created ObjectId
       */
-    @JSImport("bson", "ObjectId.createFromTime")
-    @js.native
-    def createFromTime(time: scala.Double): ObjectId = js.native
+    @scala.inline
+    def createFromTime(time: scala.Double): ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectId]
     
     /**
       * Generate a 12 byte id string used in ObjectId's
       * @param {number} time optional parameter allowing to pass in a second based timestamp.
       * @return {string} return the 12 byte id binary string.
       */
-    @JSImport("bson", "ObjectId.generate")
-    @js.native
-    def generate(): Buffer = js.native
-    @JSImport("bson", "ObjectId.generate")
-    @js.native
-    def generate(time: scala.Double): Buffer = js.native
+    @scala.inline
+    def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
+    @scala.inline
+    def generate(time: scala.Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Checks if a value is a valid bson ObjectId
       *
       * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
       */
-    @JSImport("bson", "ObjectId.isValid")
-    @js.native
-    def isValid(id: String): Boolean = js.native
-    @JSImport("bson", "ObjectId.isValid")
-    @js.native
-    def isValid(id: scala.Double): Boolean = js.native
-    @JSImport("bson", "ObjectId.isValid")
-    @js.native
-    def isValid(id: ObjectId): Boolean = js.native
+    @scala.inline
+    def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isValid(id: scala.Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isValid(id: ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("bson", "Symbol")
@@ -551,9 +508,15 @@ object mod {
   
   @JSImport("bson", "Timestamp")
   @js.native
-  class Timestamp () extends LongLike[Timestamp]
+  class Timestamp ()
+    extends StObject
+       with LongLike[Timestamp]
   /* static members */
   object Timestamp {
+    
+    @JSImport("bson", "Timestamp")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bson", "Timestamp.MAX_VALUE")
     @js.native
@@ -580,88 +543,72 @@ object mod {
       * @param lowBits The low 32-bits.
       * @param highBits The high 32-bits.
       */
-    @JSImport("bson", "Timestamp.fromBits")
-    @js.native
-    def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = js.native
+    @scala.inline
+    def fromBits(lowBits: scala.Double, highBits: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
     
     /** Returns a Timestamp represented by the given (32-bit) integer value */
-    @JSImport("bson", "Timestamp.fromInt")
-    @js.native
-    def fromInt(value: scala.Double): Timestamp = js.native
+    @scala.inline
+    def fromInt(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
     /** Returns a Timestamp representing the given number value, provided that it is a finite number. */
-    @JSImport("bson", "Timestamp.fromNumber")
-    @js.native
-    def fromNumber(value: scala.Double): Timestamp = js.native
+    @scala.inline
+    def fromNumber(value: scala.Double): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
     /**
       * Returns a Timestamp from the given string.
       * @param opt_radix The radix in which the text is written. {default:10}
       */
-    @JSImport("bson", "Timestamp.fromString")
-    @js.native
-    def fromString(str: String): Timestamp = js.native
-    @JSImport("bson", "Timestamp.fromString")
-    @js.native
-    def fromString(str: String, opt_radix: scala.Double): Timestamp = js.native
+    @scala.inline
+    def fromString(str: String): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+    @scala.inline
+    def fromString(str: String, opt_radix: scala.Double): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
   }
   
-  @JSImport("bson", "calculateObjectSize")
-  @js.native
-  def calculateObjectSize(`object`: js.Any): scala.Double = js.native
-  @JSImport("bson", "calculateObjectSize")
-  @js.native
-  def calculateObjectSize(`object`: js.Any, options: CalculateObjectSizeOptions): scala.Double = js.native
+  @scala.inline
+  def calculateObjectSize(`object`: js.Any): scala.Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateObjectSize")(`object`.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+  @scala.inline
+  def calculateObjectSize(`object`: js.Any, options: CalculateObjectSizeOptions): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateObjectSize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
   
-  @JSImport("bson", "deserialize")
-  @js.native
-  def deserialize(buffer: Buffer): js.Any = js.native
-  @JSImport("bson", "deserialize")
-  @js.native
-  def deserialize(buffer: Buffer, options: DeserializeOptions): js.Any = js.native
+  @scala.inline
+  def deserialize(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def deserialize(buffer: Buffer, options: DeserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("bson", "deserializeStream")
-  @js.native
+  @scala.inline
   def deserializeStream(
     data: Buffer,
     startIndex: scala.Double,
     numberOfDocuments: scala.Double,
-    documents: js.Array[_],
+    documents: js.Array[js.Any],
     docStartIndex: scala.Double
-  ): scala.Double = js.native
-  @JSImport("bson", "deserializeStream")
-  @js.native
+  ): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeStream")(data.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], numberOfDocuments.asInstanceOf[js.Any], documents.asInstanceOf[js.Any], docStartIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  @scala.inline
   def deserializeStream(
     data: Buffer,
     startIndex: scala.Double,
     numberOfDocuments: scala.Double,
-    documents: js.Array[_],
+    documents: js.Array[js.Any],
     docStartIndex: scala.Double,
     options: DeserializeOptions
-  ): scala.Double = js.native
+  ): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeStream")(data.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], numberOfDocuments.asInstanceOf[js.Any], documents.asInstanceOf[js.Any], docStartIndex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
   
-  @JSImport("bson", "serialize")
-  @js.native
-  def serialize(`object`: js.Any): Buffer = js.native
-  @JSImport("bson", "serialize")
-  @js.native
-  def serialize(`object`: js.Any, options: SerializeOptions): Buffer = js.native
+  @scala.inline
+  def serialize(`object`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def serialize(`object`: js.Any, options: SerializeOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bson", "serializeWithBufferAndIndex")
-  @js.native
-  def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer): scala.Double = js.native
-  @JSImport("bson", "serializeWithBufferAndIndex")
-  @js.native
-  def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer, options: SerializeWithBufferAndIndexOptions): scala.Double = js.native
+  @scala.inline
+  def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeWithBufferAndIndex")(`object`.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+  @scala.inline
+  def serializeWithBufferAndIndex(`object`: js.Any, buffer: Buffer, options: SerializeWithBufferAndIndexOptions): scala.Double = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeWithBufferAndIndex")(`object`.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
   
-  @js.native
   trait CalculateObjectSizeOptions extends StObject {
     
     /** {default:true}, ignore undefined fields. */
-    var ignoreUndefined: js.UndefOr[Boolean] = js.native
+    var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, serialize the javascript functions */
-    var serializeFunctions: js.UndefOr[Boolean] = js.native
+    var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   }
   object CalculateObjectSizeOptions {
     
@@ -688,17 +635,16 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonSerializeOptions extends StObject {
     
     /** {default:false}, the serializer will check if keys are valid. */
-    var checkKeys: js.UndefOr[Boolean] = js.native
+    var checkKeys: js.UndefOr[Boolean] = js.undefined
     
     /** {default:true}, ignore undefined fields. */
-    var ignoreUndefined: js.UndefOr[Boolean] = js.native
+    var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, serialize the javascript functions. */
-    var serializeFunctions: js.UndefOr[Boolean] = js.native
+    var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   }
   object CommonSerializeOptions {
     
@@ -731,35 +677,34 @@ object mod {
     }
   }
   
-  @js.native
   trait DeserializeOptions extends StObject {
     
     /** {default:false}, allows the buffer to be larger than the parsed BSON object. */
-    var allowObjectSmallerThanBufferSize: js.UndefOr[Boolean] = js.native
+    var allowObjectSmallerThanBufferSize: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, return BSON regular expressions as BSONRegExp instances. */
-    var bsonRegExp: js.UndefOr[Boolean] = js.native
+    var bsonRegExp: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, cache evaluated functions for reuse. */
-    var cacheFunctions: js.UndefOr[Boolean] = js.native
+    var cacheFunctions: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, use a crc32 code for caching, otherwise use the string of the function. */
-    var cacheFunctionsCrc32: js.UndefOr[Boolean] = js.native
+    var cacheFunctionsCrc32: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, evaluate functions in the BSON document scoped to the object deserialized. */
-    var evalFunctions: js.UndefOr[Boolean] = js.native
+    var evalFunctions: js.UndefOr[Boolean] = js.undefined
     
     /** {default:null}, allow to specify if there what fields we wish to return as unserialized raw buffer. */
-    var fieldsAsRaw: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var fieldsAsRaw: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
     /** {default:false}, deserialize Binary data directly into node.js Buffer object. */
-    var promoteBuffers: js.UndefOr[Boolean] = js.native
+    var promoteBuffers: js.UndefOr[Boolean] = js.undefined
     
     /** {default:true}, when deserializing a Long will fit it into a Number if it's smaller than 53 bits. */
-    var promoteLongs: js.UndefOr[Boolean] = js.native
+    var promoteLongs: js.UndefOr[Boolean] = js.undefined
     
     /** {default:false}, when deserializing will promote BSON values to their Node.js closest equivalent types. */
-    var promoteValues: js.UndefOr[Boolean] = js.native
+    var promoteValues: js.UndefOr[Boolean] = js.undefined
   }
   object DeserializeOptions {
     
@@ -938,11 +883,12 @@ object mod {
     def xor(other: T): T = js.native
   }
   
-  @js.native
-  trait SerializeOptions extends CommonSerializeOptions {
+  trait SerializeOptions
+    extends StObject
+       with CommonSerializeOptions {
     
     /** {default:1024*1024*17}, minimum size of the internal temporary serialization buffer. */
-    var minInternalBufferSize: js.UndefOr[scala.Double] = js.native
+    var minInternalBufferSize: js.UndefOr[scala.Double] = js.undefined
   }
   object SerializeOptions {
     
@@ -963,11 +909,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait SerializeWithBufferAndIndexOptions extends CommonSerializeOptions {
+  trait SerializeWithBufferAndIndexOptions
+    extends StObject
+       with CommonSerializeOptions {
     
     /** {default:0}, the index in the buffer where we wish to start serializing into. */
-    var index: js.UndefOr[scala.Double] = js.native
+    var index: js.UndefOr[scala.Double] = js.undefined
   }
   object SerializeWithBufferAndIndexOptions {
     

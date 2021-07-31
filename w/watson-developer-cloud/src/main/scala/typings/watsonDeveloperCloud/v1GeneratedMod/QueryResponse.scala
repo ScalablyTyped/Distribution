@@ -2,33 +2,31 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A response containing the documents and aggregations for the query. */
-@js.native
 trait QueryResponse extends StObject {
   
   /** Array of aggregation results for the query. */
-  var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[QueryAggregation]] = js.undefined
   
   /** The number of duplicate results removed. */
-  var duplicates_removed: js.UndefOr[Double] = js.native
+  var duplicates_removed: js.UndefOr[Double] = js.undefined
   
   /** The number of matching results for the query. */
-  var matching_results: js.UndefOr[Double] = js.native
+  var matching_results: js.UndefOr[Double] = js.undefined
   
   /** Array of passage results for the query. */
-  var passages: js.UndefOr[js.Array[QueryPassages]] = js.native
+  var passages: js.UndefOr[js.Array[QueryPassages]] = js.undefined
   
   /** Array of document results for the query. */
-  var results: js.UndefOr[js.Array[QueryResult]] = js.native
+  var results: js.UndefOr[js.Array[QueryResult]] = js.undefined
   
   /** An object contain retrieval type information. */
-  var retrieval_details: js.UndefOr[RetrievalDetails] = js.native
+  var retrieval_details: js.UndefOr[RetrievalDetails] = js.undefined
   
   /** The session token for this query. The session token can be used to add events associated with this query to the query and event log. **Important:** Session tokens are case sensitive. */
-  var session_token: js.UndefOr[String] = js.native
+  var session_token: js.UndefOr[String] = js.undefined
 }
 object QueryResponse {
   

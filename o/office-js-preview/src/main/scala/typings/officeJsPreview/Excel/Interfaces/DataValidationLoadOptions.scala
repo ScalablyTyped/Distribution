@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait DataValidationLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait DataValidationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var errorAlert: js.UndefOr[Boolean] = js.native
+  var errorAlert: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait DataValidationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var ignoreBlanks: js.UndefOr[Boolean] = js.native
+  var ignoreBlanks: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait DataValidationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var prompt: js.UndefOr[Boolean] = js.native
+  var prompt: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait DataValidationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var rule: js.UndefOr[Boolean] = js.native
+  var rule: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait DataValidationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait DataValidationLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
 }
 object DataValidationLoadOptions {
   

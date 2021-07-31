@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortRangeRequest extends StObject {
   
   /** The range to sort. */
-  var range: js.UndefOr[GridRange] = js.native
+  var range: js.UndefOr[GridRange] = js.undefined
   
   /** The sort order per column. Later specifications are used when values are equal in the earlier specifications. */
-  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
 }
 object SortRangeRequest {
   

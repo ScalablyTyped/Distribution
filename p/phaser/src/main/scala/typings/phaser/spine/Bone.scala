@@ -2,77 +2,77 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Bone extends Updatable {
+trait Bone
+  extends StObject
+     with Updatable {
   
-  var a: Double = js.native
+  var a: Double
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var appliedValid: Boolean = js.native
+  var appliedValid: Boolean
   
-  var arotation: Double = js.native
+  var arotation: Double
   
-  var ascaleX: Double = js.native
+  var ascaleX: Double
   
-  var ascaleY: Double = js.native
+  var ascaleY: Double
   
-  var ashearX: Double = js.native
+  var ashearX: Double
   
-  var ashearY: Double = js.native
+  var ashearY: Double
   
-  var ax: Double = js.native
+  var ax: Double
   
-  var ay: Double = js.native
+  var ay: Double
   
-  var b: Double = js.native
+  var b: Double
   
-  var c: Double = js.native
+  var c: Double
   
-  var children: js.Array[Bone] = js.native
+  var children: js.Array[Bone]
   
-  var d: Double = js.native
+  var d: Double
   
-  var data: BoneData = js.native
+  var data: BoneData
   
-  def getWorldRotationX(): Double = js.native
+  def getWorldRotationX(): Double
   
-  def getWorldRotationY(): Double = js.native
+  def getWorldRotationY(): Double
   
-  def getWorldScaleX(): Double = js.native
+  def getWorldScaleX(): Double
   
-  def getWorldScaleY(): Double = js.native
+  def getWorldScaleY(): Double
   
-  def localToWorld(local: Vector2): Vector2 = js.native
+  def localToWorld(local: Vector2): Vector2
   
-  def localToWorldRotation(localRotation: Double): Double = js.native
+  def localToWorldRotation(localRotation: Double): Double
   
-  var parent: Bone = js.native
+  var parent: Bone
   
-  def rotateWorld(degrees: Double): Unit = js.native
+  def rotateWorld(degrees: Double): Unit
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  def setToSetupPose(): Unit = js.native
+  def setToSetupPose(): Unit
   
-  var shearX: Double = js.native
+  var shearX: Double
   
-  var shearY: Double = js.native
+  var shearY: Double
   
-  var skeleton: Skeleton = js.native
+  var skeleton: Skeleton
   
-  var sorted: Boolean = js.native
+  var sorted: Boolean
   
-  def updateAppliedTransform(): Unit = js.native
+  def updateAppliedTransform(): Unit
   
-  def updateWorldTransform(): Unit = js.native
+  def updateWorldTransform(): Unit
   
   def updateWorldTransformWith(
     x: Double,
@@ -82,19 +82,19 @@ trait Bone extends Updatable {
     scaleY: Double,
     shearX: Double,
     shearY: Double
-  ): Unit = js.native
+  ): Unit
   
-  def worldToLocal(world: Vector2): Vector2 = js.native
+  def worldToLocal(world: Vector2): Vector2
   
-  def worldToLocalRotation(worldRotation: Double): Double = js.native
+  def worldToLocalRotation(worldRotation: Double): Double
   
-  var worldX: Double = js.native
+  var worldX: Double
   
-  var worldY: Double = js.native
+  var worldY: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Bone {
   

@@ -11,8 +11,8 @@ Check if a value is a regular expression
 | Full name          | is-regexp |
 | Keywords           | regex, regexp, regular, expression, regular expression, re, check, type, is |
 | # releases         | 2 |
-| # dependents       | 49 |
-| # downloads        | 244258748 |
+| # dependents       | 51 |
+| # downloads        | 305716338 |
 | # stars            | 1 |
 
 ## Links

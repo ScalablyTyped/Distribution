@@ -3,20 +3,20 @@ package typings.puppeteer.mod
 import typings.puppeteer.puppeteerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WaitForSelectorOptionsHidden extends WaitForSelectorOptions {
+trait WaitForSelectorOptionsHidden
+  extends StObject
+     with WaitForSelectorOptions {
   
   @JSName("hidden")
-  var hidden_WaitForSelectorOptionsHidden: `true` = js.native
+  var hidden_WaitForSelectorOptionsHidden: `true`
 }
 object WaitForSelectorOptionsHidden {
   
   @scala.inline
-  def apply(hidden: `true`): WaitForSelectorOptionsHidden = {
-    val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
+  def apply(): WaitForSelectorOptionsHidden = {
+    val __obj = js.Dynamic.literal(hidden = true)
     __obj.asInstanceOf[WaitForSelectorOptionsHidden]
   }
   

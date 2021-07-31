@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStandardsControlsRequest extends StObject {
   
   /**
     * The maximum number of security standard controls to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.undefined
   
   /**
     * The token that is required for pagination. On your first call to the DescribeStandardsControls operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
   
   /**
     * The ARN of a resource that represents your subscription to a supported standard.
     */
-  var StandardsSubscriptionArn: NonEmptyString = js.native
+  var StandardsSubscriptionArn: NonEmptyString
 }
 object DescribeStandardsControlsRequest {
   

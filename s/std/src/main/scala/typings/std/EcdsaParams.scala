@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EcdsaParams extends Algorithm {
+trait EcdsaParams
+  extends StObject
+     with Algorithm {
   
-  var hash: HashAlgorithmIdentifier = js.native
+  var hash: HashAlgorithmIdentifier
 }
 object EcdsaParams {
   

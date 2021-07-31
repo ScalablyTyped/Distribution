@@ -2,15 +2,13 @@ package typings.hlsParser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uri extends StObject {
   
-  var byterange: js.UndefOr[typings.hlsParser.mod.Byterange] = js.native
+  var byterange: js.UndefOr[typings.hlsParser.mod.Byterange] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
 }
 object Uri {
   

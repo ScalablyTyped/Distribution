@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDeletionResource extends StObject {
   
-  var userDeletionRequest: UserDeletionRequestResource = js.native
+  var userDeletionRequest: UserDeletionRequestResource
 }
 object UserDeletionResource {
   

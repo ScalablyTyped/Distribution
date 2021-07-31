@@ -1,16 +1,18 @@
 package typings.agGrid
 
 import typings.agGrid.iRowNodeStageMod.IRowNodeStage
+import typings.agGrid.iRowNodeStageMod.StageExecuteParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flattenStageMod {
   
   @JSImport("ag-grid/dist/lib/rowModels/clientSide/flattenStage", "FlattenStage")
   @js.native
-  class FlattenStage () extends IRowNodeStage {
+  class FlattenStage ()
+    extends StObject
+       with IRowNodeStage {
     
     /* private */ def addRowNodeToRowsToDisplay(rowNode: js.Any, result: js.Any, nextRowTop: js.Any, uiLevel: js.Any): js.Any = js.native
     
@@ -23,6 +25,9 @@ object flattenStageMod {
     /* private */ def ensureFooterNodeExists(groupNode: js.Any): js.Any = js.native
     
     var eventService: js.Any = js.native
+    
+    /* CompleteClass */
+    override def execute(params: StageExecuteParams): js.Any = js.native
     
     var gridOptionsWrapper: js.Any = js.native
     

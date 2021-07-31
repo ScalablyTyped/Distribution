@@ -2,45 +2,43 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about one postal address.
   */
-@js.native
 trait IPostalAddress extends StObject {
   
   /**
     * The city of the address, or null if one is not specified.
     */
-  var city: String = js.native
+  var city: String
   
   /**
     * The postal code of the address, or null if one is not specified.
     */
-  var postal_code: String = js.native
+  var postal_code: String
   
   /**
     * The region of the address, or null if one is not specified.
     */
-  var region: String = js.native
+  var region: String
   
   /**
     * The state of the address, or null if one is not specified.
     */
-  var state: String = js.native
+  var state: String
   
   /**
     * The street address, or null if one is not specified.
     */
-  var street: String = js.native
+  var street: String
   
   /**
     * The second line of the street address, or null if one is not
     * specified.
     */
-  var street_2: String = js.native
+  var street_2: String
 }
 object IPostalAddress {
   

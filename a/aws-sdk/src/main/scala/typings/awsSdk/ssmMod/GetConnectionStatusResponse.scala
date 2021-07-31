@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectionStatusResponse extends StObject {
   
   /**
     * The status of the connection to the instance. For example, 'Connected' or 'Not Connected'.
     */
-  var Status: js.UndefOr[ConnectionStatus] = js.native
+  var Status: js.UndefOr[ConnectionStatus] = js.undefined
   
   /**
     * The ID of the instance to check connection status. 
     */
-  var Target: js.UndefOr[SessionTarget] = js.native
+  var Target: js.UndefOr[SessionTarget] = js.undefined
 }
 object GetConnectionStatusResponse {
   

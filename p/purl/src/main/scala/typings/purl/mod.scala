@@ -3,7 +3,6 @@ package typings.purl
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,17 +10,19 @@ object mod {
   /**
     * Parse the current page URL
     */
-  @JSImport("purl", JSImport.Namespace)
-  @js.native
-  def apply(): Url = js.native
+  @scala.inline
+  def apply(): Url = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Url]
   /**
     * Pass in a URI as a string and parse that
     *
     * @param someUrl the url to be parsed
     */
+  @scala.inline
+  def apply(someUrl: String): Url = ^.asInstanceOf[js.Dynamic].apply(someUrl.asInstanceOf[js.Any]).asInstanceOf[Url]
+  
   @JSImport("purl", JSImport.Namespace)
   @js.native
-  def apply(someUrl: String): Url = js.native
+  val ^ : js.Any = js.native
   
   type ParameterMap = StringDictionary[String]
   

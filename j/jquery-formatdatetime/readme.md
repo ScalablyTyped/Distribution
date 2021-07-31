@@ -12,7 +12,7 @@ A jQuery plugin that converts a date object to a supplied format. It was forked 
 | Keywords           | format, date, time, datetime |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6584 |
+| # downloads        | 6629 |
 | # stars            | 0 |
 
 ## Links

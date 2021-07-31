@@ -4,49 +4,47 @@ import typings.geojson.mod.LineString
 import typings.geojson.mod.MultiLineString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
   /**
     * Float indicating the distance traveled in meters.
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * Float indicating the estimated travel time in seconds.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Depending on the geometries parameter this is a GeoJSON LineString or a Polyline string.
     * Depending on the overview parameter this is the complete route geometry (full), a simplified geometry
     * to the zoom level at which the route can be displayed in full (simplified), or is not included (false)
     */
-  var geometry: LineString | MultiLineString = js.native
+  var geometry: LineString | MultiLineString
   
   /**
     * Array of RouteLeg objects.
     */
-  var legs: js.Array[Leg] = js.native
+  var legs: js.Array[Leg]
   
   /**
     * String of the locale used for voice instructions. Defaults to en, and can be any accepted instruction language.
     */
-  var voiceLocale: js.UndefOr[String] = js.native
+  var voiceLocale: js.UndefOr[String] = js.undefined
   
   /**
     * Float indicating the weight in units described by weight_name
     */
-  var weight: Double = js.native
+  var weight: Double
   
   /**
     * String indicating which weight was used. The default is routability which is duration-based,
     * with additional penalties for less desirable maneuvers.
     */
-  var weight_name: String = js.native
+  var weight_name: String
 }
 object Route {
   

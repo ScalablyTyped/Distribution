@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,27 +16,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All properties are vetoable properties. If you change the properties between a call to {@link com.sun.star.awt.XPrinter.startPage()} and a call to
   * {@link com.sun.star.awt.XPrinter.endPage()} , a {@link com.sun.star.beans.PropertyVetoException} is thrown.
   */
-@js.native
-trait XPrinter extends XPrinterPropertySet {
+trait XPrinter
+  extends StObject
+     with XPrinterPropertySet {
   
   /**
     * notifies the printer spooler that the job is done and printing starts.
     * @see terminate
     */
-  def end(): Unit = js.native
+  def end(): Unit
   
   /** ends the current page. */
-  def endPage(): Unit = js.native
+  def endPage(): Unit
   
   /**
     * puts the job into the printer spooler.
     *
     * This call may block the thread. So release all resources (mutex, semaphore, etc.) before this call.
     */
-  def start(nJobName: String, nCopies: Double, nCollate: Boolean): Boolean = js.native
+  def start(nJobName: String, nCopies: Double, nCollate: Boolean): Boolean
   
   /** begins with a new page. */
-  def startPage(): XDevice = js.native
+  def startPage(): XDevice
   
   /**
     * stops the current print job.
@@ -47,7 +47,7 @@ trait XPrinter extends XPrinterPropertySet {
     * com.sun.star.awt.XPrinter.terminate()} returns `FALSE` . This call must not block the thread.
     * @see end
     */
-  def terminate(): Unit = js.native
+  def terminate(): Unit
 }
 object XPrinter {
   

@@ -20,7 +20,6 @@ import typings.intlRelativeformat.intlRelativeformatStrings.`year-narrow`
 import typings.intlRelativeformat.intlRelativeformatStrings.`year-short`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -127,14 +126,13 @@ object typesMod {
     def yearShort: `year-short` = "year-short".asInstanceOf[`year-short`]
   }
   
-  @js.native
   trait LocaleData extends StObject {
     
-    var fields: js.UndefOr[finDATAFIELDdisplayNamest] = js.native
+    var fields: js.UndefOr[finDATAFIELDdisplayNamest] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
     
-    var parentLocale: js.UndefOr[String] = js.native
+    var parentLocale: js.UndefOr[String] = js.undefined
   }
   object LocaleData {
     

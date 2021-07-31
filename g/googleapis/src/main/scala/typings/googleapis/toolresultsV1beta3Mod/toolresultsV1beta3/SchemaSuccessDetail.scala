@@ -2,16 +2,14 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSuccessDetail extends StObject {
   
   /**
     * If a native process other than the app crashed.
     */
-  var otherNativeCrash: js.UndefOr[Boolean] = js.native
+  var otherNativeCrash: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSuccessDetail {
   

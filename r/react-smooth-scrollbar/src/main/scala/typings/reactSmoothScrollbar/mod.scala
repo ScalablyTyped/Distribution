@@ -7,7 +7,6 @@ import typings.smoothScrollbar.scrollbarMod.ScrollStatus
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,43 +26,42 @@ object mod {
   }
   
   /* Inlined parent std.Partial<smooth-scrollbar.smooth-scrollbar/interfaces.ScrollbarOptions> */
-  @js.native
   trait ScrollbarProps extends StObject {
     
     /**
       * Keep scrollbar tracks visible whether it's scrolling or not
       * @default false
       */
-    var alwaysShowTracks: js.UndefOr[Boolean] = js.native
+    var alwaysShowTracks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var continuousScrolling: js.UndefOr[Boolean] = js.native
+    var continuousScrolling: js.UndefOr[Boolean] = js.undefined
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var delegateTo: js.UndefOr[EventTarget | Null] = js.native
+    var delegateTo: js.UndefOr[EventTarget | Null] = js.undefined
     
     /**
       * Pipe to scrollbar.addListener()
       */
-    var onScroll: js.UndefOr[js.Function2[/* status */ ScrollStatus, /* scrollbarInstance */ default, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function2[/* status */ ScrollStatus, /* scrollbarInstance */ default, Unit]] = js.undefined
     
-    var plugins: js.UndefOr[js.Any] = js.native
+    var plugins: js.UndefOr[js.Any] = js.undefined
     
-    var renderByPixels: js.UndefOr[Boolean] = js.native
+    var renderByPixels: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional style
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var thumbMinSize: js.UndefOr[Double] = js.native
+    var thumbMinSize: js.UndefOr[Double] = js.undefined
     
-    var wheelEventTarget: js.UndefOr[EventTarget | Null] = js.native
+    var wheelEventTarget: js.UndefOr[EventTarget | Null] = js.undefined
   }
   object ScrollbarProps {
     

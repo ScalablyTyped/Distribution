@@ -2,23 +2,21 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var height: Double | Null = js.native
+  var height: Double | Null
   
-  var url: String = js.native
+  var url: String
   
-  var width: Double | Null = js.native
+  var width: Double | Null
 }
 object Image {
   
   @scala.inline
   def apply(url: String): Image = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any], height = null, width = null)
     __obj.asInstanceOf[Image]
   }
   

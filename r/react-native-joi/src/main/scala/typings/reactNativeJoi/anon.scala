@@ -6,17 +6,15 @@ import typings.reactNativeJoi.mod.State
 import typings.reactNativeJoi.mod.ValidationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arrays extends StObject {
     
-    var arrays: js.UndefOr[Boolean] = js.native
+    var arrays: js.UndefOr[Boolean] = js.undefined
     
-    var objects: js.UndefOr[Boolean] = js.native
+    var objects: js.UndefOr[Boolean] = js.undefined
   }
   object Arrays {
     
@@ -43,7 +41,6 @@ object anon {
     }
   }
   
-  @js.native
   trait CreateError extends StObject {
     
     /**
@@ -54,7 +51,7 @@ object anon {
       * @param state - should the context passed into the `validate` function in a custom rule
       * @param options - should the context passed into the `validate` function in a custom rule
       */
-    def createError(`type`: String, context: Context, state: State, options: ValidationOptions): Err = js.native
+    def createError(`type`: String, context: Context, state: State, options: ValidationOptions): Err
   }
   object CreateError {
     
@@ -72,10 +69,9 @@ object anon {
     }
   }
   
-  @js.native
   trait WrapArrays extends StObject {
     
-    var wrapArrays: js.UndefOr[Boolean] = js.native
+    var wrapArrays: js.UndefOr[Boolean] = js.undefined
   }
   object WrapArrays {
     

@@ -2,13 +2,11 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instances extends StObject {
   
-  var instances: js.Array[js.Object] = js.native
+  var instances: js.Array[js.Object]
 }
 object Instances {
   

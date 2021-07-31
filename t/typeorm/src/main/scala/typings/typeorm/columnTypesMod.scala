@@ -6,7 +6,6 @@ import typings.std.NumberConstructor
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnTypesMod {
@@ -165,7 +164,7 @@ object columnTypesMod {
     - typings.typeorm.typeormStrings.tsrange
     - typings.typeorm.typeormStrings.tstzrange
     - typings.typeorm.typeormStrings.daterange
-    - typings.typeorm.typeormStrings.enum
+    - typings.typeorm.typeormStrings.`enum`
     - typings.typeorm.typeormStrings.set
     - typings.typeorm.typeormStrings.cidr
     - typings.typeorm.typeormStrings.inet
@@ -190,7 +189,9 @@ object columnTypesMod {
     - typings.typeorm.typeormStrings.cube
     - typings.typeorm.typeormStrings.ltree
   */
-  trait SimpleColumnType extends _ColumnType
+  trait SimpleColumnType
+    extends StObject
+       with _ColumnType
   object SimpleColumnType {
     
     @scala.inline
@@ -248,7 +249,7 @@ object columnTypesMod {
     def daterange: typings.typeorm.typeormStrings.daterange = "daterange".asInstanceOf[typings.typeorm.typeormStrings.daterange]
     
     @scala.inline
-    def enum: typings.typeorm.typeormStrings.enum = "enum".asInstanceOf[typings.typeorm.typeormStrings.enum]
+    def `enum`: typings.typeorm.typeormStrings.`enum` = "enum".asInstanceOf[typings.typeorm.typeormStrings.`enum`]
     
     @scala.inline
     def float: typings.typeorm.typeormStrings.float = "float".asInstanceOf[typings.typeorm.typeormStrings.float]
@@ -482,7 +483,9 @@ object columnTypesMod {
     - typings.typeorm.typeormStrings.st_geometry
     - typings.typeorm.typeormStrings.st_point
   */
-  trait SpatialColumnType extends _ColumnType
+  trait SpatialColumnType
+    extends StObject
+       with _ColumnType
   object SpatialColumnType {
     
     @scala.inline
@@ -519,7 +522,9 @@ object columnTypesMod {
     - typings.typeorm.typeormStrings.varbinary
     - typings.typeorm.typeormStrings.string
   */
-  trait WithLengthColumnType extends _ColumnType
+  trait WithLengthColumnType
+    extends StObject
+       with _ColumnType
   object WithLengthColumnType {
     
     @scala.inline
@@ -602,7 +607,9 @@ object columnTypesMod {
     - typings.typeorm.typeormStrings.`timestamp with time zone`
     - typings.typeorm.typeormStrings.`timestamp with local time zone`
   */
-  trait WithPrecisionColumnType extends _ColumnType
+  trait WithPrecisionColumnType
+    extends StObject
+       with _ColumnType
   object WithPrecisionColumnType {
     
     @scala.inline
@@ -673,7 +680,9 @@ object columnTypesMod {
     - typings.typeorm.typeormStrings.int
     - typings.typeorm.typeormStrings.bigint
   */
-  trait WithWidthColumnType extends _ColumnType
+  trait WithWidthColumnType
+    extends StObject
+       with _ColumnType
   object WithWidthColumnType {
     
     @scala.inline

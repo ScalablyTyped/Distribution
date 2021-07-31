@@ -2,41 +2,39 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TelemetryRecord extends StObject {
   
   /**
     * 
     */
-  var BackendConnectionErrors: js.UndefOr[typings.awsSdk.xrayMod.BackendConnectionErrors] = js.native
+  var BackendConnectionErrors: js.UndefOr[typings.awsSdk.xrayMod.BackendConnectionErrors] = js.undefined
   
   /**
     * 
     */
-  var SegmentsReceivedCount: js.UndefOr[NullableInteger] = js.native
+  var SegmentsReceivedCount: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * 
     */
-  var SegmentsRejectedCount: js.UndefOr[NullableInteger] = js.native
+  var SegmentsRejectedCount: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * 
     */
-  var SegmentsSentCount: js.UndefOr[NullableInteger] = js.native
+  var SegmentsSentCount: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * 
     */
-  var SegmentsSpilloverCount: js.UndefOr[NullableInteger] = js.native
+  var SegmentsSpilloverCount: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * 
     */
-  var Timestamp: typings.awsSdk.xrayMod.Timestamp = js.native
+  var Timestamp: typings.awsSdk.xrayMod.Timestamp
 }
 object TelemetryRecord {
   

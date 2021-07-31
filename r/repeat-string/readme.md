@@ -11,8 +11,8 @@ Repeat the given string n times. Fastest implementation for repeating a string.
 | Full name          | repeat-string |
 | Keywords           | fast, fastest, fill, left, left-pad, multiple, pad, padding, repeat, repeating, repetition, right, right-pad, string, times |
 | # releases         | 0 |
-| # dependents       | 241 |
-| # downloads        | 596525167 |
+| # dependents       | 281 |
+| # downloads        | 701853368 |
 | # stars            | 5 |
 
 ## Links

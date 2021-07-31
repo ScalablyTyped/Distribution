@@ -2,23 +2,33 @@ package typings.jsonnet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("jsonnet", JSImport.Namespace)
   @js.native
-  class ^ () extends Jsonnet
+  class ^ ()
+    extends StObject
+       with Jsonnet {
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def eval(code: String): js.Any = js.native
+    
+    /* CompleteClass */
+    override def evalFile(): js.Any = js.native
+  }
   
-  @js.native
   trait Jsonnet extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def eval(code: String): js.Any = js.native
+    def eval(code: String): js.Any
     
-    def evalFile(): js.Any = js.native
+    def evalFile(): js.Any
   }
   object Jsonnet {
     

@@ -2,46 +2,44 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatingSystem extends StObject {
   
   /**
     * Supported configuration manager name and versions for an AWS OpsWorks Stacks operating system.
     */
-  var ConfigurationManagers: js.UndefOr[OperatingSystemConfigurationManagers] = js.native
+  var ConfigurationManagers: js.UndefOr[OperatingSystemConfigurationManagers] = js.undefined
   
   /**
     * The ID of a supported operating system, such as Amazon Linux 2018.03.
     */
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the operating system, such as Amazon Linux 2018.03.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * A short name for the operating system manufacturer.
     */
-  var ReportedName: js.UndefOr[String] = js.native
+  var ReportedName: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the operating system, including the release and edition, if applicable.
     */
-  var ReportedVersion: js.UndefOr[String] = js.native
+  var ReportedVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that an operating system is not supported for new instances.
     */
-  var Supported: js.UndefOr[Boolean] = js.native
+  var Supported: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of a supported operating system, either Linux or Windows.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object OperatingSystem {
   

@@ -7,24 +7,30 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object ClipboardExt {
     
+    @JSImport("@lumino/domutils", "ClipboardExt")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Copy text to the system clipboard.
       *
       * @param text - The text to copy to the clipboard.
       */
-    @JSImport("@lumino/domutils", "ClipboardExt.copyText")
-    @js.native
-    def copyText(text: String): Unit = js.native
+    @scala.inline
+    def copyText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object ElementExt {
+    
+    @JSImport("@lumino/domutils", "ElementExt")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compute the box sizing for an element.
@@ -33,9 +39,8 @@ object mod {
       *
       * @returns The box sizing data for the specified element.
       */
-    @JSImport("@lumino/domutils", "ElementExt.boxSizing")
-    @js.native
-    def boxSizing(element: Element): IBoxSizing = js.native
+    @scala.inline
+    def boxSizing(element: Element): IBoxSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("boxSizing")(element.asInstanceOf[js.Any]).asInstanceOf[IBoxSizing]
     
     /**
       * Test whether a client position lies within an element.
@@ -48,9 +53,8 @@ object mod {
       *
       * @returns Whether the point is within the given element.
       */
-    @JSImport("@lumino/domutils", "ElementExt.hitTest")
-    @js.native
-    def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = js.native
+    @scala.inline
+    def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hitTest")(element.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Vertically scroll an element into view if needed.
@@ -68,9 +72,8 @@ object mod {
       * within the visible area, no scrolling will take place. Otherwise,
       * the nearest edges of the area and element are aligned.
       */
-    @JSImport("@lumino/domutils", "ElementExt.scrollIntoViewIfNeeded")
-    @js.native
-    def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = js.native
+    @scala.inline
+    def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewIfNeeded")(area.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Compute the size limits for an element.
@@ -79,12 +82,15 @@ object mod {
       *
       * @returns The size limit data for the specified element.
       */
-    @JSImport("@lumino/domutils", "ElementExt.sizeLimits")
-    @js.native
-    def sizeLimits(element: Element): ISizeLimits = js.native
+    @scala.inline
+    def sizeLimits(element: Element): ISizeLimits = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeLimits")(element.asInstanceOf[js.Any]).asInstanceOf[ISizeLimits]
   }
   
   object Platform {
+    
+    @JSImport("@lumino/domutils", "Platform")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A flag indicating whether the browser is Edge.
@@ -125,15 +131,17 @@ object mod {
       * On Mac the `accel` key is the command key. On all other
       * platforms the `accel` key is the control key.
       */
-    @JSImport("@lumino/domutils", "Platform.accelKey")
-    @js.native
-    def accelKey(event: KeyboardEvent): Boolean = js.native
-    @JSImport("@lumino/domutils", "Platform.accelKey")
-    @js.native
-    def accelKey(event: MouseEvent): Boolean = js.native
+    @scala.inline
+    def accelKey(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def accelKey(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object Selector {
+    
+    @JSImport("@lumino/domutils", "Selector")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Calculate the specificity of a single CSS selector.
@@ -160,9 +168,8 @@ object mod {
       * The computed result is cached, so subsequent calculations for the
       * same selector are extremely fast.
       */
-    @JSImport("@lumino/domutils", "Selector.calculateSpecificity")
-    @js.native
-    def calculateSpecificity(selector: String): Double = js.native
+    @scala.inline
+    def calculateSpecificity(selector: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateSpecificity")(selector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Test whether a selector is a valid CSS selector.
@@ -175,9 +182,8 @@ object mod {
       * The computed result is cached, so subsequent tests for the same
       * selector are extremely fast.
       */
-    @JSImport("@lumino/domutils", "Selector.isValid")
-    @js.native
-    def isValid(selector: String): Boolean = js.native
+    @scala.inline
+    def isValid(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Test whether an element matches a CSS selector.
@@ -192,8 +198,7 @@ object mod {
       * This function uses the builtin browser capabilities when possible,
       * falling back onto a document query otherwise.
       */
-    @JSImport("@lumino/domutils", "Selector.matches")
-    @js.native
-    def matches(element: Element, selector: String): Boolean = js.native
+    @scala.inline
+    def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

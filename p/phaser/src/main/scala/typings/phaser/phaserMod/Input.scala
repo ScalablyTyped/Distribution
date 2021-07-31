@@ -1,5 +1,6 @@
 package typings.phaser.phaserMod
 
+import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Input.Gamepad.Pad
@@ -10,7 +11,6 @@ import typings.phaser.Phaser.Types.Input.Keyboard.KeyComboConfig
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Input {
@@ -29,9 +29,8 @@ object Input {
     * @param hitArea The hit area for this Interactive Object. Typically a geometry shape, like a Rectangle or Circle.
     * @param hitAreaCallback The 'contains' check callback that the hit area shape will use for all hit tests.
     */
-  @JSImport("phaser", "Input.CreateInteractiveObject")
-  @js.native
-  def CreateInteractiveObject(gameObject: GameObject, hitArea: js.Any, hitAreaCallback: HitAreaCallback): InteractiveObject = js.native
+  @scala.inline
+  def CreateInteractiveObject(gameObject: GameObject, hitArea: js.Any, hitAreaCallback: HitAreaCallback): InteractiveObject = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateInteractiveObject")(gameObject.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[InteractiveObject]
   
   /**
     * Creates a new Pixel Perfect Handler function.
@@ -40,9 +39,8 @@ object Input {
     * @param textureManager A reference to the Texture Manager.
     * @param alphaTolerance The alpha level that the pixel should be above to be included as a successful interaction.
     */
-  @JSImport("phaser", "Input.CreatePixelPerfectHandler")
-  @js.native
-  def CreatePixelPerfectHandler(textureManager: TextureManager, alphaTolerance: integer): js.Function = js.native
+  @scala.inline
+  def CreatePixelPerfectHandler(textureManager: TextureManager, alphaTolerance: integer): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePixelPerfectHandler")(textureManager.asInstanceOf[js.Any], alphaTolerance.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   object Events {
     
@@ -843,13 +841,57 @@ object Input {
     @JSImport("phaser", "Input.Gamepad.Axis")
     @js.native
     class Axis protected ()
-      extends typings.phaser.Phaser.Input.Gamepad.Axis {
+      extends StObject
+         with typings.phaser.Phaser.Input.Gamepad.Axis {
       /**
         * 
         * @param pad A reference to the Gamepad that this Axis belongs to.
         * @param index The index of this Axis.
         */
       def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: integer) = this()
+      
+      /**
+        * Destroys this Axis instance and releases external references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * An event emitter to use to emit the axis events.
+        */
+      /* CompleteClass */
+      var events: EventEmitter = js.native
+      
+      /**
+        * Applies the `threshold` value to the axis and returns it.
+        */
+      /* CompleteClass */
+      override def getValue(): Double = js.native
+      
+      /**
+        * The index of this Axis.
+        */
+      /* CompleteClass */
+      var index: integer = js.native
+      
+      /**
+        * A reference to the Gamepad that this Axis belongs to.
+        */
+      /* CompleteClass */
+      var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+      
+      /**
+        * Movement tolerance threshold below which axis values are ignored in `getValue`.
+        */
+      /* CompleteClass */
+      var threshold: Double = js.native
+      
+      /**
+        * The raw axis value, between -1 and 1 with 0 being dead center.
+        * Use the method `getValue` to get a normalized value with the threshold applied.
+        */
+      /* CompleteClass */
+      var value: Double = js.native
     }
     
     /**
@@ -859,13 +901,57 @@ object Input {
     @JSImport("phaser", "Input.Gamepad.Button")
     @js.native
     class Button protected ()
-      extends typings.phaser.Phaser.Input.Gamepad.Button {
+      extends StObject
+         with typings.phaser.Phaser.Input.Gamepad.Button {
       /**
         * 
         * @param pad A reference to the Gamepad that this Button belongs to.
         * @param index The index of this Button.
         */
       def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: integer) = this()
+      
+      /**
+        * Destroys this Button instance and releases external references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * An event emitter to use to emit the button events.
+        */
+      /* CompleteClass */
+      var events: EventEmitter = js.native
+      
+      /**
+        * The index of this Button.
+        */
+      /* CompleteClass */
+      var index: integer = js.native
+      
+      /**
+        * A reference to the Gamepad that this Button belongs to.
+        */
+      /* CompleteClass */
+      var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+      
+      /**
+        * Is the Button being pressed down or not?
+        */
+      /* CompleteClass */
+      var pressed: Boolean = js.native
+      
+      /**
+        * Can be set for analogue buttons to enable a 'pressure' threshold,
+        * before a button is considered as being 'pressed'.
+        */
+      /* CompleteClass */
+      var threshold: Double = js.native
+      
+      /**
+        * Between 0 and 1.
+        */
+      /* CompleteClass */
+      var value: Double = js.native
     }
     
     object Configs {
@@ -1000,7 +1086,8 @@ object Input {
     @JSImport("phaser", "Input.Gamepad.Gamepad")
     @js.native
     class Gamepad protected ()
-      extends typings.phaser.Phaser.Input.Gamepad.Gamepad {
+      extends StObject
+         with typings.phaser.Phaser.Input.Gamepad.Gamepad {
       /**
         * 
         * @param manager A reference to the Gamepad Plugin.
@@ -1046,7 +1133,8 @@ object Input {
     @JSImport("phaser", "Input.Gamepad.GamepadPlugin")
     @js.native
     class GamepadPlugin protected ()
-      extends typings.phaser.Phaser.Input.Gamepad.GamepadPlugin {
+      extends StObject
+         with typings.phaser.Phaser.Input.Gamepad.GamepadPlugin {
       /**
         * 
         * @param sceneInputPlugin A reference to the Scene Input Plugin that the KeyboardPlugin belongs to.
@@ -1071,7 +1159,8 @@ object Input {
   @JSImport("phaser", "Input.InputManager")
   @js.native
   class InputManager protected ()
-    extends typings.phaser.Phaser.Input.InputManager {
+    extends StObject
+       with typings.phaser.Phaser.Input.InputManager {
     /**
       * 
       * @param game The Game instance that owns the Input Manager.
@@ -1112,7 +1201,8 @@ object Input {
   @JSImport("phaser", "Input.InputPlugin")
   @js.native
   class InputPlugin protected ()
-    extends typings.phaser.Phaser.Input.InputPlugin {
+    extends StObject
+       with typings.phaser.Phaser.Input.InputPlugin {
     /**
       * 
       * @param scene A reference to the Scene that this Input Plugin is responsible for.
@@ -1122,21 +1212,23 @@ object Input {
   
   object InputPluginCache {
     
+    @JSImport("phaser", "Input.InputPluginCache")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the input plugin object from the cache based on the given key.
       * @param key The key of the input plugin to get.
       */
-    @JSImport("phaser", "Input.InputPluginCache.getCore")
-    @js.native
-    def getCore(key: String): InputPluginContainer = js.native
+    @scala.inline
+    def getCore(key: String): InputPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[InputPluginContainer]
     
     /**
       * Installs all of the registered Input Plugins into the given target.
       * @param target The target InputPlugin to install the plugins into.
       */
-    @JSImport("phaser", "Input.InputPluginCache.install")
-    @js.native
-    def install(target: typings.phaser.Phaser.Input.InputPlugin): Unit = js.native
+    @scala.inline
+    def install(target: typings.phaser.Phaser.Input.InputPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Static method called directly by the Core internal Plugins.
@@ -1149,20 +1241,22 @@ object Input {
       * @param settingsKey The key in the Scene Settings to check to see if this plugin should install or not.
       * @param configKey The key in the Game Config to check to see if this plugin should install or not.
       */
-    @JSImport("phaser", "Input.InputPluginCache.register")
-    @js.native
-    def register(key: String, plugin: js.Function, mapping: String, settingsKey: String, configKey: String): Unit = js.native
+    @scala.inline
+    def register(key: String, plugin: js.Function, mapping: String, settingsKey: String, configKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], settingsKey.asInstanceOf[js.Any], configKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes an input plugin based on the given key.
       * @param key The key of the input plugin to remove.
       */
-    @JSImport("phaser", "Input.InputPluginCache.remove")
-    @js.native
-    def remove(key: String): Unit = js.native
+    @scala.inline
+    def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object Keyboard {
+    
+    @JSImport("phaser", "Input.Keyboard")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns `true` if the Key was pressed down within the `duration` value given, based on the current
@@ -1170,12 +1264,10 @@ object Input {
       * @param key The Key object to test.
       * @param duration The duration, in ms, within which the key must have been pressed down. Default 50.
       */
-    @JSImport("phaser", "Input.Keyboard.DownDuration")
-    @js.native
-    def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = js.native
-    @JSImport("phaser", "Input.Keyboard.DownDuration")
-    @js.native
-    def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = js.native
+    @scala.inline
+    def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     object Events {
       
@@ -1326,9 +1418,8 @@ object Input {
       * This allows you to use it in situations where you want to check if this key is down without using an event, such as in a core game loop.
       * @param key The Key to check to see if it's just down or not.
       */
-    @JSImport("phaser", "Input.Keyboard.JustDown")
-    @js.native
-    def JustDown(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = js.native
+    @scala.inline
+    def JustDown(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("JustDown")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * The justUp value allows you to test if this Key has just been released or not.
@@ -1339,9 +1430,8 @@ object Input {
       * This allows you to use it in situations where you want to check if this key is up without using an event, such as in a core game loop.
       * @param key The Key to check to see if it's just up or not.
       */
-    @JSImport("phaser", "Input.Keyboard.JustUp")
-    @js.native
-    def JustUp(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = js.native
+    @scala.inline
+    def JustUp(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("JustUp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * A generic Key object which can be passed to the Process functions (and so on)
@@ -1350,7 +1440,8 @@ object Input {
     @JSImport("phaser", "Input.Keyboard.Key")
     @js.native
     class Key protected ()
-      extends typings.phaser.Phaser.Input.Keyboard.Key {
+      extends StObject
+         with typings.phaser.Phaser.Input.Keyboard.Key {
       /**
         * 
         * @param plugin The Keyboard Plugin instance that owns this Key object.
@@ -2301,7 +2392,8 @@ object Input {
     @JSImport("phaser", "Input.Keyboard.KeyCombo")
     @js.native
     class KeyCombo protected ()
-      extends typings.phaser.Phaser.Input.Keyboard.KeyCombo {
+      extends StObject
+         with typings.phaser.Phaser.Input.Keyboard.KeyCombo {
       /**
         * 
         * @param keyboardPlugin A reference to the Keyboard Plugin.
@@ -2323,6 +2415,96 @@ object Input {
         keys: js.Array[js.Object | integer],
         config: KeyComboConfig
       ) = this()
+      
+      /**
+        * The current keyCode the combo is waiting for.
+        */
+      /* CompleteClass */
+      var current: integer = js.native
+      
+      /**
+        * If the combo matches, will it delete itself?
+        */
+      /* CompleteClass */
+      var deleteOnMatch: Boolean = js.native
+      
+      /**
+        * Destroys this Key Combo and all of its references.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * A flag that controls if this Key Combo is actively processing keys or not.
+        */
+      /* CompleteClass */
+      var enabled: Boolean = js.native
+      
+      /**
+        * The current index of the key being waited for in the 'keys' string.
+        */
+      /* CompleteClass */
+      var index: integer = js.native
+      
+      /**
+        * An array of the keycodes that comprise this combo.
+        */
+      /* CompleteClass */
+      var keyCodes: js.Array[js.Any] = js.native
+      
+      /**
+        * A reference to the Keyboard Manager
+        */
+      /* CompleteClass */
+      var manager: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin = js.native
+      
+      /**
+        * Has this Key Combo been matched yet?
+        */
+      /* CompleteClass */
+      var matched: Boolean = js.native
+      
+      /**
+        * The max delay in ms between each key press. Above this the combo is reset. 0 means disabled.
+        */
+      /* CompleteClass */
+      var maxKeyDelay: integer = js.native
+      
+      /**
+        * How far complete is this combo? A value between 0 and 1.
+        */
+      /* CompleteClass */
+      override val progress: Double = js.native
+      
+      /**
+        * If previously matched and they press the first key of the combo again, will it reset?
+        */
+      /* CompleteClass */
+      var resetOnMatch: Boolean = js.native
+      
+      /**
+        * If they press the wrong key do we reset the combo?
+        */
+      /* CompleteClass */
+      var resetOnWrongKey: Boolean = js.native
+      
+      /**
+        * The length of this combo (in keycodes)
+        */
+      /* CompleteClass */
+      var size: Double = js.native
+      
+      /**
+        * The time the previous key in the combo was matched.
+        */
+      /* CompleteClass */
+      var timeLastMatched: Double = js.native
+      
+      /**
+        * The time the entire combo was matched.
+        */
+      /* CompleteClass */
+      var timeMatched: Double = js.native
     }
     
     /**
@@ -2336,7 +2518,8 @@ object Input {
     @JSImport("phaser", "Input.Keyboard.KeyboardManager")
     @js.native
     class KeyboardManager protected ()
-      extends typings.phaser.Phaser.Input.Keyboard.KeyboardManager {
+      extends StObject
+         with typings.phaser.Phaser.Input.Keyboard.KeyboardManager {
       /**
         * 
         * @param inputManager A reference to the Input Manager.
@@ -2383,7 +2566,8 @@ object Input {
     @JSImport("phaser", "Input.Keyboard.KeyboardPlugin")
     @js.native
     class KeyboardPlugin protected ()
-      extends typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin {
+      extends StObject
+         with typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin {
       /**
         * 
         * @param sceneInputPlugin A reference to the Scene Input Plugin that the KeyboardPlugin belongs to.
@@ -2397,12 +2581,10 @@ object Input {
       * @param key The Key object to test.
       * @param duration The duration, in ms, within which the key must have been released. Default 50.
       */
-    @JSImport("phaser", "Input.Keyboard.UpDuration")
-    @js.native
-    def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = js.native
-    @JSImport("phaser", "Input.Keyboard.UpDuration")
-    @js.native
-    def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = js.native
+    @scala.inline
+    def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -2453,12 +2635,171 @@ object Input {
     @JSImport("phaser", "Input.Mouse.MouseManager")
     @js.native
     class MouseManager protected ()
-      extends typings.phaser.Phaser.Input.Mouse.MouseManager {
+      extends StObject
+         with typings.phaser.Phaser.Input.Mouse.MouseManager {
       /**
         * 
         * @param inputManager A reference to the Input Manager.
         */
       def this(inputManager: typings.phaser.Phaser.Input.InputManager) = this()
+      
+      /**
+        * If true the DOM mouse events will have event.preventDefault applied to them, if false they will propagate fully.
+        */
+      /* CompleteClass */
+      var capture: Boolean = js.native
+      
+      /**
+        * Destroys this Mouse Manager instance.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Attempts to disable the context menu from appearing if you right-click on the browser.
+        * 
+        * Works by listening for the `contextmenu` event and prevent defaulting it.
+        * 
+        * Use this if you need to enable right-button mouse support in your game, and the browser
+        * menu keeps getting in the way.
+        */
+      /* CompleteClass */
+      override def disableContextMenu(): this.type = js.native
+      
+      /**
+        * A boolean that controls if the Mouse Manager is enabled or not.
+        * Can be toggled on the fly.
+        */
+      /* CompleteClass */
+      var enabled: Boolean = js.native
+      
+      /**
+        * If the mouse has been pointer locked successfully this will be set to true.
+        */
+      /* CompleteClass */
+      var locked: Boolean = js.native
+      
+      /**
+        * A reference to the Input Manager.
+        */
+      /* CompleteClass */
+      var manager: typings.phaser.Phaser.Input.InputManager = js.native
+      
+      /**
+        * The Mouse Down Event handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseDown: js.Function = js.native
+      
+      /**
+        * The Mouse Down Event handler specifically for events on the Window.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseDownWindow: js.Function = js.native
+      
+      /**
+        * The Mouse Move Event handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseMove: js.Function = js.native
+      
+      /**
+        * The Mouse Out Event handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseOut: js.Function = js.native
+      
+      /**
+        * The Mouse Over Event handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseOver: js.Function = js.native
+      
+      /**
+        * The Mouse Up Event handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseUp: js.Function = js.native
+      
+      /**
+        * The Mouse Up Event handler specifically for events on the Window.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseUpWindow: js.Function = js.native
+      
+      /**
+        * The Mouse Wheel Event handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onMouseWheel: js.Function = js.native
+      
+      /**
+        * Internal pointerLockChange handler.
+        * This function is sent the native DOM MouseEvent.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var pointerLockChange: js.Function = js.native
+      
+      /**
+        * If the browser supports pointer lock, this will request that the pointer lock is released. If
+        * the browser successfully enters a locked state, a 'POINTER_LOCK_CHANGE_EVENT' will be
+        * dispatched - from the game's input manager - with an `isPointerLocked` property.
+        */
+      /* CompleteClass */
+      override def releasePointerLock(): Unit = js.native
+      
+      /**
+        * If the browser supports it, you can request that the pointer be locked to the browser window.
+        * 
+        * This is classically known as 'FPS controls', where the pointer can't leave the browser until
+        * the user presses an exit key.
+        * 
+        * If the browser successfully enters a locked state, a `POINTER_LOCK_CHANGE_EVENT` will be dispatched,
+        * from the games Input Manager, with an `isPointerLocked` property.
+        * 
+        * It is important to note that pointer lock can only be enabled after an 'engagement gesture',
+        * see: https://w3c.github.io/pointerlock/#dfn-engagement-gesture.
+        */
+      /* CompleteClass */
+      override def requestPointerLock(): Unit = js.native
+      
+      /**
+        * Starts the Mouse Event listeners running.
+        * This is called automatically and does not need to be manually invoked.
+        */
+      /* CompleteClass */
+      override def startListeners(): Unit = js.native
+      
+      /**
+        * Stops the Mouse Event listeners.
+        * This is called automatically and does not need to be manually invoked.
+        */
+      /* CompleteClass */
+      override def stopListeners(): Unit = js.native
+      
+      /**
+        * The Mouse target, as defined in the Game Config.
+        * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
+        */
+      /* CompleteClass */
+      var target: js.Any = js.native
     }
   }
   
@@ -2488,7 +2829,8 @@ object Input {
   @JSImport("phaser", "Input.Pointer")
   @js.native
   class Pointer protected ()
-    extends typings.phaser.Phaser.Input.Pointer {
+    extends StObject
+       with typings.phaser.Phaser.Input.Pointer {
     /**
       * 
       * @param manager A reference to the Input Manager.
@@ -2545,12 +2887,135 @@ object Input {
     @JSImport("phaser", "Input.Touch.TouchManager")
     @js.native
     class TouchManager protected ()
-      extends typings.phaser.Phaser.Input.Touch.TouchManager {
+      extends StObject
+         with typings.phaser.Phaser.Input.Touch.TouchManager {
       /**
         * 
         * @param inputManager A reference to the Input Manager.
         */
       def this(inputManager: typings.phaser.Phaser.Input.InputManager) = this()
+      
+      /**
+        * If true the DOM events will have event.preventDefault applied to them, if false they will propagate fully.
+        */
+      /* CompleteClass */
+      var capture: Boolean = js.native
+      
+      /**
+        * Destroys this Touch Manager instance.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Attempts to disable the context menu from appearing if you touch-hold on the browser.
+        * 
+        * Works by listening for the `contextmenu` event and prevent defaulting it.
+        * 
+        * Use this if you need to disable the OS context menu on mobile.
+        */
+      /* CompleteClass */
+      override def disableContextMenu(): this.type = js.native
+      
+      /**
+        * A boolean that controls if the Touch Manager is enabled or not.
+        * Can be toggled on the fly.
+        */
+      /* CompleteClass */
+      var enabled: Boolean = js.native
+      
+      /**
+        * A reference to the Input Manager.
+        */
+      /* CompleteClass */
+      var manager: typings.phaser.Phaser.Input.InputManager = js.native
+      
+      /**
+        * The Touch Cancel event handler function.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchCancel: js.Function = js.native
+      
+      /**
+        * The Touch Cancel event handler function specifically for events on the Window.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchCancelWindow: js.Function = js.native
+      
+      /**
+        * The Touch End event handler function.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchEnd: js.Function = js.native
+      
+      /**
+        * The Touch End event handler function specifically for events on the Window.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchEndWindow: js.Function = js.native
+      
+      /**
+        * The Touch Move event handler function.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchMove: js.Function = js.native
+      
+      /**
+        * The Touch Out event handler function.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchOut: js.Function = js.native
+      
+      /**
+        * The Touch Over event handler function.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchOver: js.Function = js.native
+      
+      /**
+        * The Touch Start event handler function.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchStart: js.Function = js.native
+      
+      /**
+        * The Touch Start event handler function specifically for events on the Window.
+        * Initially empty and bound in the `startListeners` method.
+        */
+      /* CompleteClass */
+      var onTouchStartWindow: js.Function = js.native
+      
+      /**
+        * Starts the Touch Event listeners running as long as an input target is set.
+        * 
+        * This method is called automatically if Touch Input is enabled in the game config,
+        * which it is by default. However, you can call it manually should you need to
+        * delay input capturing until later in the game.
+        */
+      /* CompleteClass */
+      override def startListeners(): Unit = js.native
+      
+      /**
+        * Stops the Touch Event listeners.
+        * This is called automatically and does not need to be manually invoked.
+        */
+      /* CompleteClass */
+      override def stopListeners(): Unit = js.native
+      
+      /**
+        * The Touch Event target, as defined in the Game Config.
+        * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
+        */
+      /* CompleteClass */
+      var target: js.Any = js.native
     }
   }
 }

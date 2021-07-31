@@ -2,36 +2,34 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/issue/
-@js.native
 trait Issue extends StObject {
   
-  var code: Double | String = js.native
+  var code: Double | String
   
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
-  var endColumn: js.UndefOr[Double] = js.native
+  var endColumn: js.UndefOr[Double] = js.undefined
   
-  var endLine: js.UndefOr[Double] = js.native
+  var endLine: js.UndefOr[Double] = js.undefined
   
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var severity: IssueSeverity = js.native
+  var severity: IssueSeverity
   
-  var source: String | Null = js.native
+  var source: String | Null
   
-  var textRange: js.UndefOr[Range] = js.native
+  var textRange: js.UndefOr[Range] = js.undefined
 }
 object Issue {
   
   @scala.inline
   def apply(code: Double | String, message: String, severity: IssueSeverity): Issue = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], source = null)
     __obj.asInstanceOf[Issue]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricToRetain extends StObject {
   
   /**
     * What is measured by the behavior.
     */
-  var metric: BehaviorMetric = js.native
+  var metric: BehaviorMetric
   
   /**
     * The dimension of a metric.
     */
-  var metricDimension: js.UndefOr[MetricDimension] = js.native
+  var metricDimension: js.UndefOr[MetricDimension] = js.undefined
 }
 object MetricToRetain {
   

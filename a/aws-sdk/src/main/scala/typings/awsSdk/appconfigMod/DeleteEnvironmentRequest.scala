@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEnvironmentRequest extends StObject {
   
   /**
     * The application ID that includes the environment you want to delete.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The ID of the environment you want to delete.
     */
-  var EnvironmentId: Id = js.native
+  var EnvironmentId: Id
 }
 object DeleteEnvironmentRequest {
   

@@ -2,15 +2,13 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Baseline extends StObject {
   
-  var baseline: Double = js.native
+  var baseline: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object Baseline {
   

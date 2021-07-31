@@ -2,20 +2,18 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the pricing information for a SKU at a single point of time.
   */
-@js.native
 trait SchemaPricingInfo extends StObject {
   
   /**
     * Aggregation Info. This can be left unspecified if the pricing expression
     * doesn&#39;t require aggregation.
     */
-  var aggregationInfo: js.UndefOr[SchemaAggregationInfo] = js.native
+  var aggregationInfo: js.UndefOr[SchemaAggregationInfo] = js.undefined
   
   /**
     * Conversion rate used for currency conversion, from USD to the currency
@@ -24,7 +22,7 @@ trait SchemaPricingInfo extends StObject {
     * request this defaults to 1.0. Example: USD * currency_conversion_rate =
     * JPY
     */
-  var currencyConversionRate: js.UndefOr[Double] = js.native
+  var currencyConversionRate: js.UndefOr[Double] = js.undefined
   
   /**
     * The timestamp from which this pricing was effective within the requested
@@ -34,18 +32,18 @@ trait SchemaPricingInfo extends StObject {
     * be equivalent to a time within the last 12 hours, indicating the latest
     * pricing info.
     */
-  var effectiveTime: js.UndefOr[String] = js.native
+  var effectiveTime: js.UndefOr[String] = js.undefined
   
   /**
     * Expresses the pricing formula. See `PricingExpression` for an example.
     */
-  var pricingExpression: js.UndefOr[SchemaPricingExpression] = js.native
+  var pricingExpression: js.UndefOr[SchemaPricingExpression] = js.undefined
   
   /**
     * An optional human readable summary of the pricing information, has a
     * maximum length of 256 characters.
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
 }
 object SchemaPricingInfo {
   

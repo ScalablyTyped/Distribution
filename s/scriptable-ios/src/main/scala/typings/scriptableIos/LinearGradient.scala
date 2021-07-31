@@ -2,14 +2,12 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Linear gradient._
   * @see https://docs.scriptable.app/lineargradient/#-new-lineargradient
   */
-@js.native
 trait LinearGradient extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait LinearGradient extends StObject {
     * The array of colors should include the same amount of elements as the gradients `locations` property.
     * @see https://docs.scriptable.app/lineargradient/#colors
     */
-  var colors: js.Array[Color] = js.native
+  var colors: js.Array[Color]
   
   /**
     * _Point to end the gradient._
@@ -27,7 +25,7 @@ trait LinearGradient extends StObject {
     * Defaults to (0, 1).
     * @see https://docs.scriptable.app/lineargradient/#endpoint
     */
-  var endPoint: Point = js.native
+  var endPoint: Point
   
   /**
     * _Locations of each color._
@@ -37,7 +35,7 @@ trait LinearGradient extends StObject {
     * The array of locations should include the same amount of elements as the gradients `colors` property.
     * @see https://docs.scriptable.app/lineargradient/#locations
     */
-  var locations: js.Array[Double] = js.native
+  var locations: js.Array[Double]
   
   /**
     * _Point to start the gradient._
@@ -46,7 +44,7 @@ trait LinearGradient extends StObject {
     * Defaults to (0, 1).
     * @see https://docs.scriptable.app/lineargradient/#startpoint
     */
-  var startPoint: Point = js.native
+  var startPoint: Point
 }
 object LinearGradient {
   

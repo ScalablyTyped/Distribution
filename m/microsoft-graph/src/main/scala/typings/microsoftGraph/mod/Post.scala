@@ -2,59 +2,59 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Post extends OutlookItem {
+trait Post
+  extends StObject
+     with OutlookItem {
   
   // Read-only. Nullable.
-  var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.native
+  var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.undefined
   
   // The contents of the post. This is a default property. This property can be null.
-  var body: js.UndefOr[NullableOption[ItemBody]] = js.native
+  var body: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   // Unique ID of the conversation. Read-only.
-  var conversationId: js.UndefOr[NullableOption[String]] = js.native
+  var conversationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique ID of the conversation thread. Read-only.
-  var conversationThreadId: js.UndefOr[NullableOption[String]] = js.native
+  var conversationThreadId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of open extensions defined for the post. Read-only. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   /**
     * Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default
     * property.
     */
-  var from: js.UndefOr[Recipient] = js.native
+  var from: js.UndefOr[Recipient] = js.undefined
   
   // Indicates whether the post has at least one attachment. This is a default property.
-  var hasAttachments: js.UndefOr[Boolean] = js.native
+  var hasAttachments: js.UndefOr[Boolean] = js.undefined
   
   // Read-only.
-  var inReplyTo: js.UndefOr[NullableOption[Post]] = js.native
+  var inReplyTo: js.UndefOr[NullableOption[Post]] = js.undefined
   
   // The collection of multi-value extended properties defined for the post. Read-only. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.native
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
   // Conversation participants that were added to the thread as part of this post.
-  var newParticipants: js.UndefOr[js.Array[Recipient]] = js.native
+  var newParticipants: js.UndefOr[js.Array[Recipient]] = js.undefined
   
   /**
     * Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601
     * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var receivedDateTime: js.UndefOr[String] = js.native
+  var receivedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the
     * case when Sender is not specified. This is a default property.
     */
-  var sender: js.UndefOr[NullableOption[Recipient]] = js.native
+  var sender: js.UndefOr[NullableOption[Recipient]] = js.undefined
   
   // The collection of single-value extended properties defined for the post. Read-only. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.native
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
 }
 object Post {
   

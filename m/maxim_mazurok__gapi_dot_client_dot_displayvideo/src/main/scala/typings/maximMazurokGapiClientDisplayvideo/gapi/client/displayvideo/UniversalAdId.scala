@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniversalAdId extends StObject {
   
   /** The unique creative identifier. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The registry provides unique creative identifiers. */
-  var registry: js.UndefOr[String] = js.native
+  var registry: js.UndefOr[String] = js.undefined
 }
 object UniversalAdId {
   

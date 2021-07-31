@@ -11,8 +11,8 @@ yet another unzip library for node
 | Full name          | yauzl |
 | Keywords           | unzip, zip, stream, archive, file |
 | # releases         | 0 |
-| # dependents       | 383 |
-| # downloads        | 291630985 |
+| # dependents       | 413 |
+| # downloads        | 372551434 |
 | # stars            | 28 |
 
 ## Links

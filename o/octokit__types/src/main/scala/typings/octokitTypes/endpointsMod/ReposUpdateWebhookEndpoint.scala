@@ -2,42 +2,40 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateWebhookEndpoint extends StObject {
   
   /**
     * Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines a list of events to be added to the list of events that the Hook triggers for.
     */
-  var add_events: js.UndefOr[js.Array[String]] = js.native
+  var add_events: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Key/value pairs to provide settings for this webhook. [These are defined below](https://developer.github.com/v3/repos/hooks/#create-hook-config-params).
     */
-  var config: js.UndefOr[ReposUpdateWebhookParamsConfig] = js.native
+  var config: js.UndefOr[ReposUpdateWebhookParamsConfig] = js.undefined
   
   /**
     * Determines what [events](https://developer.github.com/webhooks/event-payloads) the hook is triggered for. This replaces the entire array of events.
     */
-  var events: js.UndefOr[js.Array[String]] = js.native
+  var events: js.UndefOr[js.Array[String]] = js.undefined
   
-  var hook_id: Double = js.native
+  var hook_id: Double
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Determines a list of events to be removed from the list of events that the Hook triggers for.
     */
-  var remove_events: js.UndefOr[js.Array[String]] = js.native
+  var remove_events: js.UndefOr[js.Array[String]] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposUpdateWebhookEndpoint {
   

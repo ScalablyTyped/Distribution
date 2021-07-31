@@ -3,7 +3,6 @@ package typings.ot.mod
 import typings.ot.mod.Client.Synchronized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "Client")
@@ -63,12 +62,13 @@ object Client {
     * In the 'AwaitingConfirm' state, there's one operation the client has sent
     * to the server and is still waiting for an acknowledgement.
     */
-  @js.native
-  trait AwaitingConfirm extends Sync[AwaitingWithBuffer, AwaitingConfirm, Synchronized] {
+  trait AwaitingConfirm
+    extends StObject
+       with Sync[AwaitingWithBuffer, AwaitingConfirm, Synchronized] {
     
-    var outstanding: TextOperation = js.native
+    var outstanding: TextOperation
     
-    def resend(client: Client): Unit = js.native
+    def resend(client: Client): Unit
   }
   object AwaitingConfirm {
     
@@ -91,14 +91,15 @@ object Client {
     * In the 'AwaitingWithBuffer' state, the client is waiting for an operation
     * to be acknowledged by the server while buffering the edits the user makes
     */
-  @js.native
-  trait AwaitingWithBuffer extends Sync[AwaitingWithBuffer, AwaitingWithBuffer, AwaitingConfirm] {
+  trait AwaitingWithBuffer
+    extends StObject
+       with Sync[AwaitingWithBuffer, AwaitingWithBuffer, AwaitingConfirm] {
     
-    var buffer: TextOperation = js.native
+    var buffer: TextOperation
     
-    var outstanding: TextOperation = js.native
+    var outstanding: TextOperation
     
-    def resend(client: Client): Unit = js.native
+    def resend(client: Client): Unit
   }
   object AwaitingWithBuffer {
     
@@ -124,23 +125,25 @@ object Client {
     * In the 'Synchronized' state, there is no pending operation that the client
     * has sent to the server.
     */
-  @js.native
   trait Synchronized
-    extends Sync[AwaitingConfirm, Synchronized, scala.Nothing]
-  @JSImport("ot", "Client.Synchronized")
-  @js.native
-  def Synchronized(): Synchronized = js.native
+    extends StObject
+       with Sync[AwaitingConfirm, Synchronized, scala.Nothing]
+  object Synchronized {
+    
+    @JSImport("ot", "Client.Synchronized")
+    @js.native
+    def apply(): Synchronized = js.native
+  }
   
-  @js.native
   trait Sync[C, S, A] extends StObject {
     
-    def applyClient(client: Client, operation: TextOperation): C = js.native
+    def applyClient(client: Client, operation: TextOperation): C
     
-    def applyServer(client: Client, operation: TextOperation): S = js.native
+    def applyServer(client: Client, operation: TextOperation): S
     
-    def serverAck(): A = js.native
+    def serverAck(): A
     
-    def transformSelection(selection: Selection): Selection = js.native
+    def transformSelection(selection: Selection): Selection
   }
   object Sync {
     
@@ -156,7 +159,7 @@ object Client {
     }
     
     @scala.inline
-    implicit class SyncMutableBuilder[Self <: Sync[_, _, _], C, S, A] (val x: Self with (Sync[C, S, A])) extends AnyVal {
+    implicit class SyncMutableBuilder[Self <: Sync[?, ?, ?], C, S, A] (val x: Self & (Sync[C, S, A])) extends AnyVal {
       
       @scala.inline
       def setApplyClient(value: (Client, TextOperation) => C): Self = StObject.set(x, "applyClient", js.Any.fromFunction2(value))

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /** The user's display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Obfuscated domain information. */
-  var domainId: js.UndefOr[String] = js.native
+  var domainId: js.UndefOr[String] = js.undefined
   
   /** True when the user is deleted or the user's proifle is not visible. */
-  var isAnonymous: js.UndefOr[Boolean] = js.native
+  var isAnonymous: js.UndefOr[Boolean] = js.undefined
   
   /** Resource name, in the format "users/ *". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** User type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object User {
   

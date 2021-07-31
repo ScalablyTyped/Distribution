@@ -16,7 +16,6 @@ import typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest
 import typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcIamServiceMod {
@@ -57,7 +56,7 @@ object srcIamServiceMod {
     ): Unit = js.native
     def getIamPolicy(
       request: GetIamPolicyRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Policy, js.UndefOr[GetIamPolicyRequest | Null], js.UndefOr[js.Object | Null]]
     ): js.Promise[Policy] = js.native
     def getIamPolicy(
@@ -117,7 +116,7 @@ object srcIamServiceMod {
     ): Unit = js.native
     def setIamPolicy(
       request: SetIamPolicyRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[Policy, js.UndefOr[SetIamPolicyRequest | Null], js.UndefOr[js.Object | Null]]
     ): js.Promise[Policy] = js.native
     def setIamPolicy(
@@ -156,7 +155,7 @@ object srcIamServiceMod {
     ): Unit = js.native
     def testIamPermissions(
       request: TestIamPermissionsRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: Callback[
           TestIamPermissionsResponse, 
           js.UndefOr[TestIamPermissionsRequest | Null], 

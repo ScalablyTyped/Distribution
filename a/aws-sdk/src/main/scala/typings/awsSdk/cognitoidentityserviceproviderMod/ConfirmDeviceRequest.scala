@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmDeviceRequest extends StObject {
   
   /**
     * The access token.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
   
   /**
     * The device key.
     */
-  var DeviceKey: DeviceKeyType = js.native
+  var DeviceKey: DeviceKeyType
   
   /**
     * The device name.
     */
-  var DeviceName: js.UndefOr[DeviceNameType] = js.native
+  var DeviceName: js.UndefOr[DeviceNameType] = js.undefined
   
   /**
     * The configuration of the device secret verifier.
     */
-  var DeviceSecretVerifierConfig: js.UndefOr[DeviceSecretVerifierConfigType] = js.native
+  var DeviceSecretVerifierConfig: js.UndefOr[DeviceSecretVerifierConfigType] = js.undefined
 }
 object ConfirmDeviceRequest {
   

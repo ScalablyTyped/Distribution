@@ -2,17 +2,17 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PhoneMultiFactorSignInInfoOptions extends PhoneInfoOptions {
+trait PhoneMultiFactorSignInInfoOptions
+  extends StObject
+     with PhoneInfoOptions {
   
-  var multiFactorHint: js.UndefOr[MultiFactorInfo] = js.native
+  var multiFactorHint: js.UndefOr[MultiFactorInfo] = js.undefined
   
-  var multiFactorUid: js.UndefOr[String] = js.native
+  var multiFactorUid: js.UndefOr[String] = js.undefined
   
-  var session: MultiFactorSession = js.native
+  var session: MultiFactorSession
 }
 object PhoneMultiFactorSignInInfoOptions {
   

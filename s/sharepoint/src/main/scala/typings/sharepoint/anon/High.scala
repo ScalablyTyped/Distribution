@@ -2,15 +2,13 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait High extends StObject {
   
-  var High: Double = js.native
+  var High: Double
   
-  var Low: Double = js.native
+  var Low: Double
 }
 object High {
   

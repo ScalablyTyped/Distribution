@@ -2,15 +2,13 @@ package typings.winrt.Windows.Storage.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortEntry extends StObject {
   
-  var ascendingOrder: Boolean = js.native
+  var ascendingOrder: Boolean
   
-  var propertyName: String = js.native
+  var propertyName: String
 }
 object SortEntry {
   

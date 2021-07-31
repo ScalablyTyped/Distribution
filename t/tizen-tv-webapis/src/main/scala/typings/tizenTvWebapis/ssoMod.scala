@@ -3,7 +3,6 @@ package typings.tizenTvWebapis
 import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssoMod {
@@ -15,27 +14,30 @@ object ssoMod {
   object SsoLoginState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SsoLoginState with Double] = js.native
+    def apply(value: Double): js.UndefOr[SsoLoginState & Double] = js.native
     
     /**
       * Logged in
       */
     @js.native
-    sealed trait SSO_LOGIN extends SsoLoginState
-    /* 1 */ val SSO_LOGIN: typings.tizenTvWebapis.ssoMod.SsoLoginState.SSO_LOGIN with Double = js.native
+    sealed trait SSO_LOGIN
+      extends StObject
+         with SsoLoginState
+    /* 1 */ val SSO_LOGIN: typings.tizenTvWebapis.ssoMod.SsoLoginState.SSO_LOGIN & Double = js.native
     
     /**
       * Not logged in
       */
     @js.native
-    sealed trait SSO_NOT_LOGIN extends SsoLoginState
-    /* 0 */ val SSO_NOT_LOGIN: typings.tizenTvWebapis.ssoMod.SsoLoginState.SSO_NOT_LOGIN with Double = js.native
+    sealed trait SSO_NOT_LOGIN
+      extends StObject
+         with SsoLoginState
+    /* 0 */ val SSO_NOT_LOGIN: typings.tizenTvWebapis.ssoMod.SsoLoginState.SSO_NOT_LOGIN & Double = js.native
   }
   
-  @js.native
   trait SsoCallData extends StObject {
     
-    var status: String = js.native
+    var status: String
   }
   object SsoCallData {
     
@@ -55,18 +57,17 @@ object ssoMod {
   
   type SsoCallDataSuccessCallback = js.Function1[/* data */ SsoCallData, Unit]
   
-  @js.native
   trait SsoData extends StObject {
     
-    var authToken: String = js.native
+    var authToken: String
     
-    var bLogin: Boolean = js.native
+    var bLogin: Boolean
     
-    var guid: String = js.native
+    var guid: String
     
-    var id: String = js.native
+    var id: String
     
-    var uid: String = js.native
+    var uid: String
   }
   object SsoData {
     

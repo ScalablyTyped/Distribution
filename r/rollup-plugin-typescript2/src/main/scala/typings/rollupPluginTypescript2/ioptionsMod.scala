@@ -10,19 +10,17 @@ import typings.typescript.mod.Transformer
 import typings.typescript.mod.TransformerFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioptionsMod {
   
-  @js.native
   trait ICustomTransformer extends StObject {
     
-    var after: js.UndefOr[TransformerFactory[SourceFile]] = js.native
+    var after: js.UndefOr[TransformerFactory[SourceFile]] = js.undefined
     
-    var afterDeclarations: js.UndefOr[TransformerFactory[Bundle | SourceFile]] = js.native
+    var afterDeclarations: js.UndefOr[TransformerFactory[Bundle | SourceFile]] = js.undefined
     
-    var before: js.UndefOr[TransformerFactory[SourceFile]] = js.native
+    var before: js.UndefOr[TransformerFactory[SourceFile]] = js.undefined
   }
   object ICustomTransformer {
     
@@ -55,42 +53,41 @@ object ioptionsMod {
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
-    var abortOnError: Boolean = js.native
+    var abortOnError: Boolean
     
-    var cacheRoot: String = js.native
+    var cacheRoot: String
     
-    var check: Boolean = js.native
+    var check: Boolean
     
-    var clean: Boolean = js.native
+    var clean: Boolean
     
-    var cwd: String = js.native
+    var cwd: String
     
-    var exclude: String | js.Array[String] = js.native
+    var exclude: String | js.Array[String]
     
-    var include: String | js.Array[String] = js.native
+    var include: String | js.Array[String]
     
-    var objectHashIgnoreUnknownHack: Boolean = js.native
+    var objectHashIgnoreUnknownHack: Boolean
     
-    var rollupCommonJSResolveHack: Boolean = js.native
+    var rollupCommonJSResolveHack: Boolean
     
-    def sourceMapCallback(id: String, map: String): Unit = js.native
+    def sourceMapCallback(id: String, map: String): Unit
     
-    var transformers: js.Array[TransformerFactoryCreator] = js.native
+    var transformers: js.Array[TransformerFactoryCreator]
     
-    var tsconfig: js.UndefOr[String] = js.native
+    var tsconfig: js.UndefOr[String] = js.undefined
     
-    var tsconfigDefaults: js.Any = js.native
+    var tsconfigDefaults: js.Any
     
-    var tsconfigOverride: js.Any = js.native
+    var tsconfigOverride: js.Any
     
-    var typescript: TypeoftsTypes = js.native
+    var typescript: TypeoftsTypes
     
-    var useTsconfigDeclarationDir: Boolean = js.native
+    var useTsconfigDeclarationDir: Boolean
     
-    var verbosity: Double = js.native
+    var verbosity: Double
   }
   object IOptions {
     

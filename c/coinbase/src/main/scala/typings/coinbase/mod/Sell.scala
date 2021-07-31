@@ -4,12 +4,13 @@ import typings.coinbase.coinbaseStrings.sell
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "Sell")
 @js.native
-class Sell () extends Resource {
+class Sell ()
+  extends StObject
+     with Resource {
   
   /**
     * Amount in bitcoin, litecoin or ethereum
@@ -60,6 +61,11 @@ class Sell () extends Resource {
     */
   var payout_at: js.UndefOr[String] = js.native
   
+  /**
+    * Resource type
+    */
+  /* CompleteClass */
+  var resource: ResourceType = js.native
   /**
     * Constant "sell"
     */

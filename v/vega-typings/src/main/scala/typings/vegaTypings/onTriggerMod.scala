@@ -3,19 +3,17 @@ package typings.vegaTypings
 import typings.vegaTypings.exprMod.Expr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onTriggerMod {
   
-  @js.native
   trait OnMarkTrigger extends StObject {
     
-    var modify: js.UndefOr[Expr] = js.native
+    var modify: js.UndefOr[Expr] = js.undefined
     
-    var trigger: Expr = js.native
+    var trigger: Expr
     
-    var values: js.UndefOr[Expr] = js.native
+    var values: js.UndefOr[Expr] = js.undefined
   }
   object OnMarkTrigger {
     
@@ -45,20 +43,19 @@ object onTriggerMod {
     }
   }
   
-  @js.native
   trait OnTrigger extends StObject {
     
-    var insert: js.UndefOr[Expr] = js.native
+    var insert: js.UndefOr[Expr] = js.undefined
     
-    var modify: js.UndefOr[Expr] = js.native
+    var modify: js.UndefOr[Expr] = js.undefined
     
-    var remove: js.UndefOr[Boolean | Expr] = js.native
+    var remove: js.UndefOr[Boolean | Expr] = js.undefined
     
-    var toggle: js.UndefOr[Expr] = js.native
+    var toggle: js.UndefOr[Expr] = js.undefined
     
-    var trigger: Expr = js.native
+    var trigger: Expr
     
-    var values: js.UndefOr[Expr] = js.native
+    var values: js.UndefOr[Expr] = js.undefined
   }
   object OnTrigger {
     

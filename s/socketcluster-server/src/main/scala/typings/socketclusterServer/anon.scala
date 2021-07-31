@@ -3,17 +3,15 @@ package typings.socketclusterServer
 import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Algorithm extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var expiresIn: Double = js.native
+    var expiresIn: Double
   }
   object Algorithm {
     
@@ -37,10 +35,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Algorithms extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Algorithms {
     
@@ -64,16 +61,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Binary extends StObject {
     
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var fin: js.UndefOr[Boolean] = js.native
+    var fin: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
   }
   object Binary {
     
@@ -112,14 +108,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var target: ^ = js.native
+    var target: ^
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Data {
     
@@ -144,10 +139,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
   }
   object Error {
     
@@ -165,10 +159,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: Data = js.native
+    var message: Data
   }
   object Message {
     
@@ -186,10 +179,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RejectOnFailedDelivery extends StObject {
     
-    var rejectOnFailedDelivery: Boolean = js.native
+    var rejectOnFailedDelivery: Boolean
   }
   object RejectOnFailedDelivery {
     
@@ -207,10 +199,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SignedAuthToken extends StObject {
     
-    var signedAuthToken: String = js.native
+    var signedAuthToken: String
   }
   object SignedAuthToken {
     
@@ -228,10 +219,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Socket extends StObject {
     
-    var socket: typings.socketclusterServer.serversocketMod.^ = js.native
+    var socket: typings.socketclusterServer.serversocketMod.^
   }
   object Socket {
     
@@ -249,10 +239,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Warning extends StObject {
     
-    var warning: typings.std.Error = js.native
+    var warning: typings.std.Error
   }
   object Warning {
     

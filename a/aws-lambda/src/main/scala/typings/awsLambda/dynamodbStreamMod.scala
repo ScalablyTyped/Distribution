@@ -11,33 +11,31 @@ import typings.awsLambda.awsLambdaStrings.REMOVE
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamodbStreamMod {
   
-  @js.native
   trait AttributeValue extends StObject {
     
-    var B: js.UndefOr[String] = js.native
+    var B: js.UndefOr[String] = js.undefined
     
-    var BOOL: js.UndefOr[Boolean] = js.native
+    var BOOL: js.UndefOr[Boolean] = js.undefined
     
-    var BS: js.UndefOr[js.Array[String]] = js.native
+    var BS: js.UndefOr[js.Array[String]] = js.undefined
     
-    var L: js.UndefOr[js.Array[AttributeValue]] = js.native
+    var L: js.UndefOr[js.Array[AttributeValue]] = js.undefined
     
-    var M: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+    var M: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
     
-    var N: js.UndefOr[String] = js.native
+    var N: js.UndefOr[String] = js.undefined
     
-    var NS: js.UndefOr[js.Array[String]] = js.native
+    var NS: js.UndefOr[js.Array[String]] = js.undefined
     
-    var NULL: js.UndefOr[Boolean] = js.native
+    var NULL: js.UndefOr[Boolean] = js.undefined
     
-    var S: js.UndefOr[String] = js.native
+    var S: js.UndefOr[String] = js.undefined
     
-    var SS: js.UndefOr[js.Array[String]] = js.native
+    var SS: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AttributeValue {
     
@@ -124,24 +122,23 @@ object dynamodbStreamMod {
     }
   }
   
-  @js.native
   trait DynamoDBRecord extends StObject {
     
-    var awsRegion: js.UndefOr[String] = js.native
+    var awsRegion: js.UndefOr[String] = js.undefined
     
-    var dynamodb: js.UndefOr[StreamRecord] = js.native
+    var dynamodb: js.UndefOr[StreamRecord] = js.undefined
     
-    var eventID: js.UndefOr[String] = js.native
+    var eventID: js.UndefOr[String] = js.undefined
     
-    var eventName: js.UndefOr[INSERT | MODIFY | REMOVE] = js.native
+    var eventName: js.UndefOr[INSERT | MODIFY | REMOVE] = js.undefined
     
-    var eventSource: js.UndefOr[String] = js.native
+    var eventSource: js.UndefOr[String] = js.undefined
     
-    var eventSourceARN: js.UndefOr[String] = js.native
+    var eventSourceARN: js.UndefOr[String] = js.undefined
     
-    var eventVersion: js.UndefOr[String] = js.native
+    var eventVersion: js.UndefOr[String] = js.undefined
     
-    var userIdentity: js.UndefOr[js.Any] = js.native
+    var userIdentity: js.UndefOr[js.Any] = js.undefined
   }
   object DynamoDBRecord {
     
@@ -204,10 +201,9 @@ object dynamodbStreamMod {
     }
   }
   
-  @js.native
   trait DynamoDBStreamEvent extends StObject {
     
-    var Records: js.Array[DynamoDBRecord] = js.native
+    var Records: js.Array[DynamoDBRecord]
   }
   object DynamoDBStreamEvent {
     
@@ -230,22 +226,21 @@ object dynamodbStreamMod {
   
   type DynamoDBStreamHandler = Handler[DynamoDBStreamEvent, Unit]
   
-  @js.native
   trait StreamRecord extends StObject {
     
-    var ApproximateCreationDateTime: js.UndefOr[Double] = js.native
+    var ApproximateCreationDateTime: js.UndefOr[Double] = js.undefined
     
-    var Keys: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+    var Keys: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
     
-    var NewImage: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+    var NewImage: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
     
-    var OldImage: js.UndefOr[StringDictionary[AttributeValue]] = js.native
+    var OldImage: js.UndefOr[StringDictionary[AttributeValue]] = js.undefined
     
-    var SequenceNumber: js.UndefOr[String] = js.native
+    var SequenceNumber: js.UndefOr[String] = js.undefined
     
-    var SizeBytes: js.UndefOr[Double] = js.native
+    var SizeBytes: js.UndefOr[Double] = js.undefined
     
-    var StreamViewType: js.UndefOr[KEYS_ONLY | NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES] = js.native
+    var StreamViewType: js.UndefOr[KEYS_ONLY | NEW_IMAGE | OLD_IMAGE | NEW_AND_OLD_IMAGES] = js.undefined
   }
   object StreamRecord {
     

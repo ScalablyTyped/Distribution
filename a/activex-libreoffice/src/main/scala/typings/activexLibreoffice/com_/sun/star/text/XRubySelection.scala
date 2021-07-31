@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface enables the object to handle list of ruby lines (aka Furigana lines). */
-@js.native
-trait XRubySelection extends XInterface {
+trait XRubySelection
+  extends StObject
+     with XInterface {
   
   /**
     * returns a sequence of ruby elements.
@@ -22,13 +22,13 @@ trait XRubySelection extends XInterface {
     * @param Automatic if Automatic is set the selection is parsed for words and applied ruby attributes
     * @returns a sequence of ruby properties
     */
-  def getRubyList(Automatic: Boolean): SafeArray[PropertyValues] = js.native
+  def getRubyList(Automatic: Boolean): SafeArray[PropertyValues]
   
   /**
     * applies the RubyList to the current selection. The number of elements must be equal to the number of elements that are returned by getRubyList.
     * Automatic must be set equally, too.
     */
-  def setRubyList(RubyList: SeqEquiv[PropertyValues], Automatic: Boolean): Unit = js.native
+  def setRubyList(RubyList: SeqEquiv[PropertyValues], Automatic: Boolean): Unit
 }
 object XRubySelection {
   

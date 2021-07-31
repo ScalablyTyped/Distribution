@@ -9,10 +9,10 @@ A Solr client library for indexing, adding, deleting, committing, optimizing and
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | solr-client |
-| Keywords           | - |
-| # releases         | 2 |
+| Keywords           | solr, client, query, sdk |
+| # releases         | 3 |
 | # dependents       | 32 |
-| # downloads        | 627363 |
+| # downloads        | 603726 |
 | # stars            | 13 |
 
 ## Links

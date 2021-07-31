@@ -6,19 +6,17 @@ import typings.std.Node
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MaterialDesignLite {
   
-  @js.native
   trait ComponentConfigPublic extends StObject {
     
-    var classAsString: String = js.native
+    var classAsString: String
     
-    var cssClass: String = js.native
+    var cssClass: String
     
-    var widget: js.UndefOr[String | Boolean] = js.native
+    var widget: js.UndefOr[String | Boolean] = js.undefined
   }
   object ComponentConfigPublic {
     
@@ -84,7 +82,7 @@ object MaterialDesignLite {
       * upgrade. This function should expect 1 parameter - the HTMLElement which
       * got upgraded.
       */
-    def registerUpgradedCallback(jsClass: String, callback: js.Function1[/* element */ HTMLElement, _]): Unit = js.native
+    def registerUpgradedCallback(jsClass: String, callback: js.Function1[/* element */ HTMLElement, js.Any]): Unit = js.native
     
     /**
       * Upgrades all registered components found in the current DOM. This is

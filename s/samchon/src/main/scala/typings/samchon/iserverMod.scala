@@ -3,12 +3,10 @@ package typings.samchon
 import typings.samchon.iclientdriverMod.IClientDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iserverMod {
   
-  @js.native
   trait IServer extends StObject {
     
     /**
@@ -28,7 +26,7 @@ object iserverMod {
       *
       * @param driver A {@link ICommunicator communicator} with (newly connected) remote client.
       */
-    def addClient(driver: IClientDriver): Unit = js.native
+    def addClient(driver: IClientDriver): Unit
     
     /**
       * Close server.
@@ -36,14 +34,14 @@ object iserverMod {
       * Close opened server. All remote clients, have connected with this server, are also closed and their call back
       * functions, for closed connection, {@link IClientDriver.onClose} are also called.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Open server.
       *
       * @param port Port number to open.
       */
-    def open(port: Double): Unit = js.native
+    def open(port: Double): Unit
   }
   object IServer {
     

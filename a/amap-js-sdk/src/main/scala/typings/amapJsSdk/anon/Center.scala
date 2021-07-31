@@ -6,19 +6,17 @@ import typings.amapJsSdk.amapJsSdkStrings.EPSG3857
 import typings.amapJsSdk.amapJsSdkStrings.EPSG4326
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  var center: js.UndefOr[LngLat] = js.native
+  var center: js.UndefOr[LngLat] = js.undefined
   
-  var crs: js.UndefOr[EPSG3857 | EPSG3395 | EPSG4326] = js.native
+  var crs: js.UndefOr[EPSG3857 | EPSG3395 | EPSG4326] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object Center {
   

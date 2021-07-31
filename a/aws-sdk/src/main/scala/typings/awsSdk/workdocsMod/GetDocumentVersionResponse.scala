@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentVersionResponse extends StObject {
   
   /**
     * The custom metadata on the document version.
     */
-  var CustomMetadata: js.UndefOr[CustomMetadataMap] = js.native
+  var CustomMetadata: js.UndefOr[CustomMetadataMap] = js.undefined
   
   /**
     * The version metadata.
     */
-  var Metadata: js.UndefOr[DocumentVersionMetadata] = js.native
+  var Metadata: js.UndefOr[DocumentVersionMetadata] = js.undefined
 }
 object GetDocumentVersionResponse {
   

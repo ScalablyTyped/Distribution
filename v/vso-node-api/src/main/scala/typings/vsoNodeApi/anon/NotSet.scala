@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotSet extends StObject {
   
-  var abandoned: scala.Double = js.native
+  var abandoned: scala.Double
   
-  var active: scala.Double = js.native
+  var active: scala.Double
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var completed: scala.Double = js.native
+  var completed: scala.Double
   
-  var notSet: scala.Double = js.native
+  var notSet: scala.Double
 }
 object NotSet {
   

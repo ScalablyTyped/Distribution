@@ -3,10 +3,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDestinationTableProperties extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaDestinationTableProperties extends StObject {
     * exists and a value different than the current description is provided,
     * the job will fail.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The friendly name for the destination table. This will only be
@@ -23,7 +21,7 @@ trait SchemaDestinationTableProperties extends StObject {
     * exists and a value different than the current friendly name is provided,
     * the job will fail.
     */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The labels associated with this table. You can use these to
@@ -31,7 +29,7 @@ trait SchemaDestinationTableProperties extends StObject {
     * table is newly created. If the table already exists and labels are
     * different than the current labels are provided, the job will fail.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaDestinationTableProperties {
   

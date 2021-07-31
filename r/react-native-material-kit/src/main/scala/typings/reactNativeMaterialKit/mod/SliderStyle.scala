@@ -2,15 +2,13 @@ package typings.reactNativeMaterialKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderStyle extends StObject {
   
-  var lowerTrackColor: js.UndefOr[String] = js.native
+  var lowerTrackColor: js.UndefOr[String] = js.undefined
   
-  var upperTrackColor: js.UndefOr[String] = js.native
+  var upperTrackColor: js.UndefOr[String] = js.undefined
 }
 object SliderStyle {
   

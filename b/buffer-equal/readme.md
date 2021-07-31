@@ -11,8 +11,8 @@ return whether two buffers are equal
 | Full name          | buffer-equal |
 | Keywords           | buffer, equal |
 | # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 109670888 |
+| # dependents       | 83 |
+| # downloads        | 132676325 |
 | # stars            | 1 |
 
 ## Links

@@ -3,22 +3,20 @@ package typings.typescriptTuple.anon
 import typings.typescriptTuple.utilsMod.Reverse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Before[Tuple /* <: js.Array[_] */, Holder /* <: js.Array[_] */] extends StObject {
+trait Before[Tuple /* <: js.Array[js.Any] */, Holder /* <: js.Array[js.Any] */] extends StObject {
   
-  var before: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.SliceStartQuantity<typescript-tuple.typescript-tuple/lib/utils.Tail<Tuple>, Start, Quantity, Holder, typescript-tuple.typescript-tuple/lib/utils.Prepend<Count, Count['length']>> */ js.Object = js.native
+  var before: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.SliceStartQuantity<typescript-tuple.typescript-tuple/lib/utils.Tail<Tuple>, Start, Quantity, Holder, typescript-tuple.typescript-tuple/lib/utils.Prepend<Count, Count['length']>> */ js.Object
   
-  var end: Reverse[Holder, js.Array[js.Any]] = js.native
+  var end: Reverse[Holder, js.Array[js.Any]]
   
-  var start: js.Any = js.native
+  var start: js.Any
 }
 object Before {
   
   @scala.inline
-  def apply[Tuple /* <: js.Array[_] */, Holder /* <: js.Array[_] */](
+  def apply[Tuple /* <: js.Array[js.Any] */, Holder /* <: js.Array[js.Any] */](
     before: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.SliceStartQuantity<typescript-tuple.typescript-tuple/lib/utils.Tail<Tuple>, Start, Quantity, Holder, typescript-tuple.typescript-tuple/lib/utils.Prepend<Count, Count['length']>> */ js.Object,
     end: Reverse[Holder, js.Array[js.Any]],
     start: js.Any
@@ -28,7 +26,7 @@ object Before {
   }
   
   @scala.inline
-  implicit class BeforeMutableBuilder[Self <: Before[_, _], Tuple /* <: js.Array[_] */, Holder /* <: js.Array[_] */] (val x: Self with (Before[Tuple, Holder])) extends AnyVal {
+  implicit class BeforeMutableBuilder[Self <: Before[?, ?], Tuple /* <: js.Array[js.Any] */, Holder /* <: js.Array[js.Any] */] (val x: Self & (Before[Tuple, Holder])) extends AnyVal {
     
     @scala.inline
     def setBefore(

@@ -6,19 +6,20 @@ import typings.globalize.globalizeMod.Shared
 import typings.globalize.globalizeMod.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/message", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/message", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -33,10 +34,10 @@ object messageMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `messageMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
@@ -68,7 +69,6 @@ object messageMod extends Shortcut {
       def messageFormatter(path: js.Array[String]): js.Function1[/* variables */ js.UndefOr[String | js.Array[String] | js.Object], String] = js.native
     }
     
-    @js.native
     trait Static extends StObject {
       
       /**
@@ -76,7 +76,7 @@ object messageMod extends Shortcut {
         * @param {Object} json JSON object of messages data. Keys can use any character, except /, { and }. Values (i.e., the message content itself) can contain any character.
         * @returns {void}
         */
-      def loadMessages(json: js.Object): Unit = js.native
+      def loadMessages(json: js.Object): Unit
     }
     object Static {
       

@@ -7,10 +7,8 @@ import typings.typeorm.typeormStrings.SERIALIZABLE
 import typings.typeorm.typeormStrings.SNAPSHOT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortTransactionOnError extends StObject {
   
   /**
@@ -18,120 +16,120 @@ trait AbortTransactionOnError extends StObject {
     * the given transaction's execution. This sets the value for SET XACT_ABORT during the initial SQL phase
     * of a connection (documentation).
     */
-  val abortTransactionOnError: js.UndefOr[Boolean] = js.native
+  val abortTransactionOnError: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, controlling whether the column names returned will have the first letter converted to lower case
     * (true) or not. This value is ignored if you provide a columnNameReplacer. (default: false).
     */
-  val camelCaseColumns: js.UndefOr[Boolean] = js.native
+  val camelCaseColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of milliseconds before the cancel (abort) of a request is considered failed (default: 5000).
     */
-  val cancelTimeout: js.UndefOr[Double] = js.native
+  val cancelTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of milliseconds before the attempt to connect is considered failed (default: 15000).
     */
-  val connectTimeout: js.UndefOr[Double] = js.native
+  val connectTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * The default isolation level for new connections. All out-of-transaction queries are executed with this
     * setting. The isolation levels are available from require('tedious').ISOLATION_LEVEL .
     */
-  val connectionIsolationLevel: js.UndefOr[READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT] = js.native
+  val connectionIsolationLevel: js.UndefOr[READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT] = js.undefined
   
   /**
     * When encryption is used, an object may be supplied that will be used for the first argument when calling
     * tls.createSecurePair (default: {}).
     */
-  val cryptoCredentialsDetails: js.UndefOr[js.Any] = js.native
+  val cryptoCredentialsDetails: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Debug options
     */
-  val debug: js.UndefOr[Data] = js.native
+  val debug: js.UndefOr[Data] = js.undefined
   
   /**
     * A boolean, controlling whatever to disable RETURNING / OUTPUT statements.
     */
-  val disableOutputReturning: js.UndefOr[Boolean] = js.native
+  val disableOutputReturning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, SET ANSI_NULL_DFLT_ON ON will be set in the initial sql. This means new columns will be nullable by
     * default. See the T-SQL documentation for more details. (Default: true).
     */
-  val enableAnsiNullDefault: js.UndefOr[Boolean] = js.native
+  val enableAnsiNullDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, that when true will abort a query when an overflow or divide-by-zero error occurs during query execution.
     */
-  val enableArithAbort: js.UndefOr[Boolean] = js.native
+  val enableArithAbort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean determining whether or not the connection will be encrypted. Set to true if you're on
     * Windows Azure. (default: false).
     */
-  val encrypt: js.UndefOr[Boolean] = js.native
+  val encrypt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, if the database requestion by options.database cannot be accessed, the connection will fail with
     * an error. However, if options.fallbackToDefaultDb is set to true, then the user's default database will
     * be used instead (Default: false).
     */
-  val fallbackToDefaultDb: js.UndefOr[Boolean] = js.native
+  val fallbackToDefaultDb: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The default isolation level that transactions will be run with. The isolation levels are available
     * from require('tedious').ISOLATION_LEVEL. (default: READ_COMMITTED).
     */
-  val isolation: js.UndefOr[READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT] = js.native
+  val isolation: js.UndefOr[READ_UNCOMMITTED | READ_COMMITTED | REPEATABLE_READ | SERIALIZABLE | SNAPSHOT] = js.undefined
   
   /**
     * A string indicating which network interface (ip address) to use when connecting to SQL Server.
     */
-  val localAddress: js.UndefOr[String] = js.native
+  val localAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The size of TDS packets (subject to negotiation with the server). Should be a power of 2. (default: 4096).
     */
-  val packetSize: js.UndefOr[Double] = js.native
+  val packetSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A boolean, determining whether the connection will request read only access from a SQL Server
     * Availability Group. For more information, see here. (default: false).
     */
-  val readOnlyIntent: js.UndefOr[Boolean] = js.native
+  val readOnlyIntent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, that when true will expose received rows in Requests' done* events. See done, doneInProc and
     * doneProc. (default: false)
     * Caution: If many row are received, enabling this option could result in excessive memory usage.
     */
-  val rowCollectionOnDone: js.UndefOr[Boolean] = js.native
+  val rowCollectionOnDone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, that when true will expose received rows in Requests' completion callback. See new Request. (default: false)
     * Caution: If many row are received, enabling this option could result in excessive memory usage.
     */
-  val rowCollectionOnRequestCompletion: js.UndefOr[Boolean] = js.native
+  val rowCollectionOnRequestCompletion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The version of TDS to use. If server doesn't support specified version, negotiated version is used instead.
     * The versions are available from require('tedious').TDS_VERSION. (default: 7_4).
     */
-  val tdsVersion: js.UndefOr[String] = js.native
+  val tdsVersion: js.UndefOr[String] = js.undefined
   
   /**
     * A boolean determining whether to return rows as arrays or key-value collections. (default: false).
     */
-  val useColumnNames: js.UndefOr[Boolean] = js.native
+  val useColumnNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean determining whether to pass time values in UTC or local time. (default: true).
     */
-  val useUTC: js.UndefOr[Boolean] = js.native
+  val useUTC: js.UndefOr[Boolean] = js.undefined
 }
 object AbortTransactionOnError {
   

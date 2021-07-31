@@ -7,7 +7,6 @@ import typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1.Optio
 import typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1.Remotebuildexecution
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

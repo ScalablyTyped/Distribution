@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.recompose.mod.InferableComponentEnhancer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#onlyupdateforproptypes

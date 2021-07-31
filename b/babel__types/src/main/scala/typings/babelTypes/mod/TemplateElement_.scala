@@ -4,27 +4,26 @@ import typings.babelTypes.anon.Cooked
 import typings.babelTypes.babelTypesStrings.TemplateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateElement_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var tail: Boolean = js.native
+  var tail: Boolean
   
   @JSName("type")
-  var type_TemplateElement_ : TemplateElement = js.native
+  var type_TemplateElement_ : TemplateElement
   
-  var value: Cooked = js.native
+  var value: Cooked
 }
 object TemplateElement_ {
   
   @scala.inline
-  def apply(tail: Boolean, `type`: TemplateElement, value: Cooked): TemplateElement_ = {
-    val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(tail: Boolean, value: Cooked): TemplateElement_ = {
+    val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TemplateElement")
     __obj.asInstanceOf[TemplateElement_]
   }
   

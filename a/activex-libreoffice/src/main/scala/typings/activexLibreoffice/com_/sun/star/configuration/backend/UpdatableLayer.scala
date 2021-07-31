@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An updatable layer can be read or replaced with another layer.
   * @since OOo 1.1.2
   */
-@js.native
 trait UpdatableLayer
-  extends Layer
+  extends StObject
+     with Layer
      with XUpdatableLayer
 object UpdatableLayer {
   

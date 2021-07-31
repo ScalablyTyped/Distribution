@@ -10,9 +10,9 @@ TypeScript typings for Semantic Tile API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.vectortile |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 44 |
 | # dependents       | 1 |
-| # downloads        | 140 |
+| # downloads        | 3147 |
 | # stars            | 0 |
 
 ## Links

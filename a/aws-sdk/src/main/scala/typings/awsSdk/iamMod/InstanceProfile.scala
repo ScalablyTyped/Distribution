@@ -2,41 +2,39 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceProfile extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) specifying the instance profile. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
     */
-  var Arn: arnType = js.native
+  var Arn: arnType
   
   /**
     * The date when the instance profile was created.
     */
-  var CreateDate: dateType = js.native
+  var CreateDate: dateType
   
   /**
     *  The stable and unique string identifying the instance profile. For more information about IDs, see IAM Identifiers in the IAM User Guide. 
     */
-  var InstanceProfileId: idType = js.native
+  var InstanceProfileId: idType
   
   /**
     * The name identifying the instance profile.
     */
-  var InstanceProfileName: instanceProfileNameType = js.native
+  var InstanceProfileName: instanceProfileNameType
   
   /**
     *  The path to the instance profile. For more information about paths, see IAM Identifiers in the IAM User Guide. 
     */
-  var Path: pathType = js.native
+  var Path: pathType
   
   /**
     * The role associated with the instance profile.
     */
-  var Roles: roleListType = js.native
+  var Roles: roleListType
 }
 object InstanceProfile {
   

@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightOut extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var weightIn: js.UndefOr[Double] = js.native
+  var weightIn: js.UndefOr[Double] = js.undefined
   
-  var weightOut: js.UndefOr[Double] = js.native
+  var weightOut: js.UndefOr[Double] = js.undefined
 }
 object WeightOut {
   

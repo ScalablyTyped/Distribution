@@ -2,21 +2,21 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INodeOptions extends IOptions {
+trait INodeOptions
+  extends StObject
+     with IOptions {
   
-  var children: js.UndefOr[js.Array[Node]] = js.native
+  var children: js.UndefOr[js.Array[Node]] = js.undefined
   
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[Node] = js.native
+  var parent: js.UndefOr[Node] = js.undefined
   
-  var screen: js.UndefOr[Screen] = js.native
+  var screen: js.UndefOr[Screen] = js.undefined
 }
 object INodeOptions {
   

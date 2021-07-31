@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Versions$Files")
@@ -33,7 +32,7 @@ class ResourceSitesVersionsFiles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVersionFilesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
   def list(params: ParamsResourceSitesVersionsFilesList): GaxiosPromise[SchemaListVersionFilesResponse] = js.native
   def list(
     params: ParamsResourceSitesVersionsFilesList,

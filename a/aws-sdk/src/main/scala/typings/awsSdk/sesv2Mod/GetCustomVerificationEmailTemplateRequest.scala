@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCustomVerificationEmailTemplateRequest extends StObject {
   
   /**
     * The name of the custom verification email template that you want to retrieve.
     */
-  var TemplateName: EmailTemplateName = js.native
+  var TemplateName: EmailTemplateName
 }
 object GetCustomVerificationEmailTemplateRequest {
   

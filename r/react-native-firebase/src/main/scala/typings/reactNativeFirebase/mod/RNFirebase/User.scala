@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod.RNFirebase
 import typings.reactNativeFirebase.mod.AuthCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

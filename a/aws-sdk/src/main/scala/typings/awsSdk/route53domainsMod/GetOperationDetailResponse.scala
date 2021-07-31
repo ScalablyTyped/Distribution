@@ -2,41 +2,39 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOperationDetailResponse extends StObject {
   
   /**
     * The name of a domain.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.route53domainsMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.route53domainsMod.DomainName] = js.undefined
   
   /**
     * Detailed information on the status including possible errors.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.native
+  var Message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The identifier for the operation.
     */
-  var OperationId: js.UndefOr[typings.awsSdk.route53domainsMod.OperationId] = js.native
+  var OperationId: js.UndefOr[typings.awsSdk.route53domainsMod.OperationId] = js.undefined
   
   /**
     * The current status of the requested operation in the system.
     */
-  var Status: js.UndefOr[OperationStatus] = js.native
+  var Status: js.UndefOr[OperationStatus] = js.undefined
   
   /**
     * The date when the request was submitted.
     */
-  var SubmittedDate: js.UndefOr[Timestamp] = js.native
+  var SubmittedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of operation that was requested.
     */
-  var Type: js.UndefOr[OperationType] = js.native
+  var Type: js.UndefOr[OperationType] = js.undefined
 }
 object GetOperationDetailResponse {
   

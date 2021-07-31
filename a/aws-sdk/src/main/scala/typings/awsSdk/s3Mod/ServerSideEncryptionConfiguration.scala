@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerSideEncryptionConfiguration extends StObject {
   
   /**
     * Container for information about a particular server-side encryption configuration rule.
     */
-  var Rules: ServerSideEncryptionRules = js.native
+  var Rules: ServerSideEncryptionRules
 }
 object ServerSideEncryptionConfiguration {
   

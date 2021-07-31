@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,20 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * *p0* compared to items indexed with a value of *p1*. Without a specified
   * ranking order, the integer value has no effect on item ranking.
   */
-@js.native
 trait SchemaEnumValuePair extends StObject {
   
   /**
     * The integer value of the EnumValuePair which must be non-negative.
     * Optional.
     */
-  var integerValue: js.UndefOr[Double] = js.native
+  var integerValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The string value of the EnumValuePair. The maximum length is 32
     * characters.
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaEnumValuePair {
   

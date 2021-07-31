@@ -2,13 +2,11 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionSendInfoOptions extends StObject {
   
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SessionSendInfoOptions {
   

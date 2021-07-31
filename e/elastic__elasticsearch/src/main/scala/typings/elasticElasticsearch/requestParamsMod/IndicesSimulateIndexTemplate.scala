@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesSimulateIndexTemplate[T] extends Generic {
+trait IndicesSimulateIndexTemplate[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var cause: js.UndefOr[String] = js.native
+  var cause: js.UndefOr[String] = js.undefined
   
-  var create: js.UndefOr[Boolean] = js.native
+  var create: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object IndicesSimulateIndexTemplate {
   
@@ -27,7 +27,7 @@ object IndicesSimulateIndexTemplate {
   }
   
   @scala.inline
-  implicit class IndicesSimulateIndexTemplateMutableBuilder[Self <: IndicesSimulateIndexTemplate[_], T] (val x: Self with IndicesSimulateIndexTemplate[T]) extends AnyVal {
+  implicit class IndicesSimulateIndexTemplateMutableBuilder[Self <: IndicesSimulateIndexTemplate[?], T] (val x: Self & IndicesSimulateIndexTemplate[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRoomResponse extends StObject {
   
   /**
     * The room details.
     */
-  var Room: js.UndefOr[typings.awsSdk.chimeMod.Room] = js.native
+  var Room: js.UndefOr[typings.awsSdk.chimeMod.Room] = js.undefined
 }
 object CreateRoomResponse {
   

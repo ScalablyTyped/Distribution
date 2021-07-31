@@ -3,46 +3,44 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instruction that does a partial group-by-key. One input and one output.
   */
-@js.native
 trait SchemaPartialGroupByKeyInstruction extends StObject {
   
   /**
     * Describes the input to the partial group-by-key instruction.
     */
-  var input: js.UndefOr[SchemaInstructionInput] = js.native
+  var input: js.UndefOr[SchemaInstructionInput] = js.undefined
   
   /**
     * The codec to use for interpreting an element in the input PTable.
     */
-  var inputElementCodec: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var inputElementCodec: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * If this instruction includes a combining function this is the name of the
     * intermediate store between the GBK and the CombineValues.
     */
-  var originalCombineValuesInputStoreName: js.UndefOr[String] = js.native
+  var originalCombineValuesInputStoreName: js.UndefOr[String] = js.undefined
   
   /**
     * If this instruction includes a combining function, this is the name of
     * the CombineValues instruction lifted into this instruction.
     */
-  var originalCombineValuesStepName: js.UndefOr[String] = js.native
+  var originalCombineValuesStepName: js.UndefOr[String] = js.undefined
   
   /**
     * Zero or more side inputs.
     */
-  var sideInputs: js.UndefOr[js.Array[SchemaSideInputInfo]] = js.native
+  var sideInputs: js.UndefOr[js.Array[SchemaSideInputInfo]] = js.undefined
   
   /**
     * The value combining function to invoke.
     */
-  var valueCombiningFn: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var valueCombiningFn: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaPartialGroupByKeyInstruction {
   

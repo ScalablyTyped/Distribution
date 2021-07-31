@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Targetvpngateways")
@@ -99,7 +98,7 @@ class ResourceTargetvpngateways protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaTargetVpnGatewayAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaTargetVpnGatewayAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetVpnGatewayAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetVpnGatewayAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceTargetvpngatewaysAggregatedlist): GaxiosPromise[SchemaTargetVpnGatewayAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceTargetvpngatewaysAggregatedlist,
@@ -196,7 +195,7 @@ class ResourceTargetvpngateways protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetvpngatewaysDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetvpngatewaysDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -288,7 +287,7 @@ class ResourceTargetvpngateways protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTargetVpnGateway] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetVpnGateway]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetVpnGateway] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetVpnGateway] = js.native
   def get(params: ParamsResourceTargetvpngatewaysGet): GaxiosPromise[SchemaTargetVpnGateway] = js.native
   def get(params: ParamsResourceTargetvpngatewaysGet, callback: BodyResponseCallback[SchemaTargetVpnGateway]): Unit = js.native
   def get(
@@ -381,7 +380,7 @@ class ResourceTargetvpngateways protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetvpngatewaysInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetvpngatewaysInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -485,7 +484,7 @@ class ResourceTargetvpngateways protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTargetVpnGatewayList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetVpnGatewayList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetVpnGatewayList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetVpnGatewayList] = js.native
   def list(params: ParamsResourceTargetvpngatewaysList): GaxiosPromise[SchemaTargetVpnGatewayList] = js.native
   def list(
     params: ParamsResourceTargetvpngatewaysList,

@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRightMod {
@@ -18,10 +17,11 @@ object mediaRightMod {
   trait MediaRight
     extends Component[MediaRightProps, js.Object, js.Any]
   
-  @js.native
-  trait MediaRightProps extends HTMLProps[MediaRight] {
+  trait MediaRightProps
+    extends StObject
+       with HTMLProps[MediaRight] {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
   }
   object MediaRightProps {
     

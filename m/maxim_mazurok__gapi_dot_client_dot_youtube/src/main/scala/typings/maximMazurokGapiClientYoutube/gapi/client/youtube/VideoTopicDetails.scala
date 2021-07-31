@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoTopicDetails extends StObject {
   
   /**
     * Similar to topic_id, except that these topics are merely relevant to the video. These are topics that may be mentioned in, or appear in the video. You can retrieve information about
     * each topic using Freebase Topic API.
     */
-  var relevantTopicIds: js.UndefOr[js.Array[String]] = js.native
+  var relevantTopicIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of Wikipedia URLs that provide a high-level description of the video's content. */
-  var topicCategories: js.UndefOr[js.Array[String]] = js.native
+  var topicCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of Freebase topic IDs that are centrally associated with the video. These are topics that are centrally featured in the video, and it can be said that the video is mainly
     * about each of these. You can retrieve information about each topic using the < a href="http://wiki.freebase.com/wiki/Topic_API">Freebase Topic API.
     */
-  var topicIds: js.UndefOr[js.Array[String]] = js.native
+  var topicIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object VideoTopicDetails {
   

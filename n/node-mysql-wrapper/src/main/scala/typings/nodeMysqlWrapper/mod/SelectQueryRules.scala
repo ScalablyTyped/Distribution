@@ -2,7 +2,6 @@ package typings.nodeMysqlWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "SelectQueryRules")
@@ -72,24 +71,24 @@ class SelectQueryRules () extends StObject {
 }
 object SelectQueryRules {
   
+  @JSImport("node-mysql-wrapper", "SelectQueryRules")
+  @js.native
+  val ^ : js.Any = js.native
+  
   //auto den benei oute sto last, oute sto from.
   /* static member */
-  @JSImport("node-mysql-wrapper", "SelectQueryRules.build")
-  @js.native
-  def build(): SelectQueryRules = js.native
+  @scala.inline
+  def build(): SelectQueryRules = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[SelectQueryRules]
   
   /* static member */
-  @JSImport("node-mysql-wrapper", "SelectQueryRules.fromRawObject")
-  @js.native
-  def fromRawObject(obj: RawRules): SelectQueryRules = js.native
+  @scala.inline
+  def fromRawObject(obj: RawRules): SelectQueryRules = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawObject")(obj.asInstanceOf[js.Any]).asInstanceOf[SelectQueryRules]
   
   /* static member */
-  @JSImport("node-mysql-wrapper", "SelectQueryRules.toRawObject")
-  @js.native
-  def toRawObject(rules: SelectQueryRules): RawRules = js.native
+  @scala.inline
+  def toRawObject(rules: SelectQueryRules): RawRules = ^.asInstanceOf[js.Dynamic].applyDynamic("toRawObject")(rules.asInstanceOf[js.Any]).asInstanceOf[RawRules]
   
   /* static member */
-  @JSImport("node-mysql-wrapper", "SelectQueryRules.toString")
-  @js.native
-  def toString_(rules: SelectQueryRules): String = js.native
+  @scala.inline
+  def toString_(rules: SelectQueryRules): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(rules.asInstanceOf[js.Any]).asInstanceOf[String]
 }

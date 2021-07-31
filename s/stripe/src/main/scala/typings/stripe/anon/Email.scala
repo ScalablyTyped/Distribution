@@ -3,26 +3,24 @@ package typings.stripe.anon
 import typings.stripe.mod.IAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var address: IAddress | Null = js.native
+  var address: IAddress | Null
   
-  var email: String | Null = js.native
+  var email: String | Null
   
-  var name: String | Null = js.native
+  var name: String | Null
   
   /** Billing phone number (including extension). */
-  var phone: String | Null = js.native
+  var phone: String | Null
 }
 object Email {
   
   @scala.inline
   def apply(): Email = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(address = null, email = null, name = null, phone = null)
     __obj.asInstanceOf[Email]
   }
   

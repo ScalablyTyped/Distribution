@@ -7,7 +7,6 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.notificationsMod.NotificationEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
@@ -81,10 +80,9 @@ object notificationMod {
     var uuidOfProxiedApp: String = js.native
   }
   
-  @js.native
   trait NotificationCallback extends StObject {
     
-    var message: js.UndefOr[js.Any] = js.native
+    var message: js.UndefOr[js.Any] = js.undefined
   }
   object NotificationCallback {
     

@@ -5,11 +5,12 @@ import typings.breeze.breeze.core.IEnum
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataType extends IEnum {
+trait DataType
+  extends StObject
+     with IEnum {
   
   var Binary: DataTypeSymbol = js.native
   
@@ -47,7 +48,7 @@ trait DataType extends IEnum {
   
   def fromValue(`val`: js.Any): DataTypeSymbol = js.native
   
-  def getComparableFn(dataType: DataTypeSymbol): js.Function1[/* value */ js.Any, _] = js.native
+  def getComparableFn(dataType: DataTypeSymbol): js.Function1[/* value */ js.Any, js.Any] = js.native
   
   def parseDateAsUTC(source: js.Any): Date = js.native
   

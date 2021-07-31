@@ -6,24 +6,23 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to text blocks in a group.
   * @see com.sun.star.text.AutoTextContainer
   */
-@js.native
 trait AutoTextGroup
-  extends XAutoTextGroup
+  extends StObject
+     with XAutoTextGroup
      with XIndexAccess
      with XNamed {
   
   /** The path to the file containing the {@link AutoTextEntry} 's in this group */
-  var FilePath: String = js.native
+  var FilePath: String
   
   /** The title of this {@link AutoTextGroup} */
-  var Title: String = js.native
+  var Title: String
 }
 object AutoTextGroup {
   

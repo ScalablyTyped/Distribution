@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -86,7 +85,7 @@ trait DatePicker extends StObject {
     * Occurs when any of the controls are changed by the user.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onchange(eventInfo: CustomEvent[_]): Unit = js.native
+  def onchange(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Removes a listener for the specified event.

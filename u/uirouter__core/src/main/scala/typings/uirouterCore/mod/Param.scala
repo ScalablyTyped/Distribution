@@ -4,7 +4,6 @@ import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "Param")
@@ -22,6 +21,10 @@ class Param protected ()
 /* static members */
 object Param {
   
+  @JSImport("@uirouter/core", "Param")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Finds [[Param]] objects which have different param values
     *
@@ -33,22 +36,14 @@ object Param {
     *
     * @returns any Param objects whose values were different between values1 and values2
     */
-  @JSImport("@uirouter/core", "Param.changed")
-  @js.native
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  @JSImport("@uirouter/core", "Param.changed")
-  @js.native
-  def changed(
-    params: js.Array[typings.uirouterCore.paramMod.Param],
-    values1: js.UndefOr[scala.Nothing],
-    values2: RawParams
-  ): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  @JSImport("@uirouter/core", "Param.changed")
-  @js.native
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
-  @JSImport("@uirouter/core", "Param.changed")
-  @js.native
-  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = js.native
+  @scala.inline
+  def changed(params: js.Array[typings.uirouterCore.paramMod.Param]): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+  @scala.inline
+  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+  @scala.inline
+  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
+  @scala.inline
+  def changed(params: js.Array[typings.uirouterCore.paramMod.Param], values1: RawParams, values2: RawParams): js.Array[typings.uirouterCore.paramMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]
   
   /**
     * Checks if two param value objects are equal (for a set of [[Param]] objects)
@@ -59,35 +54,23 @@ object Param {
     *
     * @returns true if the param values in values1 and values2 are equal
     */
-  @JSImport("@uirouter/core", "Param.equals")
-  @js.native
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
-  @JSImport("@uirouter/core", "Param.equals")
-  @js.native
-  def equals(
-    params: js.Array[typings.uirouterCore.paramMod.Param],
-    values1: js.UndefOr[scala.Nothing],
-    values2: js.Object
-  ): Boolean = js.native
-  @JSImport("@uirouter/core", "Param.equals")
-  @js.native
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
-  @JSImport("@uirouter/core", "Param.equals")
-  @js.native
-  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = js.native
+  @scala.inline
+  def equals(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: js.Object, values2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals(params: js.Array[typings.uirouterCore.paramMod.Param], values1: Unit, values2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** Returns true if a the parameter values are valid, according to the Param definitions */
-  @JSImport("@uirouter/core", "Param.validates")
-  @js.native
-  def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = js.native
-  @JSImport("@uirouter/core", "Param.validates")
-  @js.native
-  def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = js.native
+  @scala.inline
+  def validates(params: js.Array[typings.uirouterCore.paramMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def validates(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@uirouter/core", "Param.values")
-  @js.native
-  def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = js.native
-  @JSImport("@uirouter/core", "Param.values")
-  @js.native
-  def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = js.native
+  @scala.inline
+  def values(params: js.Array[typings.uirouterCore.paramMod.Param]): RawParams = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any]).asInstanceOf[RawParams]
+  @scala.inline
+  def values(params: js.Array[typings.uirouterCore.paramMod.Param], values: RawParams): RawParams = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[RawParams]
 }

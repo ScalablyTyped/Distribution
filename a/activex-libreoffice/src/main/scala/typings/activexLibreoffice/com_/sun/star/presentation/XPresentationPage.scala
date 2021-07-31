@@ -6,27 +6,27 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.drawing.XShapes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a page from a presentation.
   * @see com.sun.star.drawing.DrawPage
   */
-@js.native
-trait XPresentationPage extends XShapes {
+trait XPresentationPage
+  extends StObject
+     with XShapes {
   
   /**
     * return the note page from the current page in the presentation, the name for the note page in the user interface note view, and one of the views from
     * a presentation page.
     */
-  val NotesPage: XDrawPage = js.native
+  val NotesPage: XDrawPage
   
   /**
     * return the note page from the current page in the presentation, the name for the note page in the user interface note view, and one of the views from
     * a presentation page.
     */
-  def getNotesPage(): XDrawPage = js.native
+  def getNotesPage(): XDrawPage
 }
 object XPresentationPage {
   

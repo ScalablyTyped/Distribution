@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedPrefixList extends StObject {
   
   /**
     * The IP address version.
     */
-  var AddressFamily: js.UndefOr[String] = js.native
+  var AddressFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of entries for the prefix list.
     */
-  var MaxEntries: js.UndefOr[Integer] = js.native
+  var MaxEntries: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the owner of the prefix list.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the prefix list.
     */
-  var PrefixListArn: js.UndefOr[ResourceArn] = js.native
+  var PrefixListArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The ID of the prefix list.
     */
-  var PrefixListId: js.UndefOr[PrefixListResourceId] = js.native
+  var PrefixListId: js.UndefOr[PrefixListResourceId] = js.undefined
   
   /**
     * The name of the prefix list.
     */
-  var PrefixListName: js.UndefOr[String] = js.native
+  var PrefixListName: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the prefix list.
     */
-  var State: js.UndefOr[PrefixListState] = js.native
+  var State: js.UndefOr[PrefixListState] = js.undefined
   
   /**
     * The state message.
     */
-  var StateMessage: js.UndefOr[String] = js.native
+  var StateMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The tags for the prefix list.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The version of the prefix list.
     */
-  var Version: js.UndefOr[Long] = js.native
+  var Version: js.UndefOr[Long] = js.undefined
 }
 object ManagedPrefixList {
   

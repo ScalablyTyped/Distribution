@@ -3,12 +3,12 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SelfDecorator
-  extends Instantiable0[typings.angularCore.mod.Self] {
+  extends StObject
+     with Instantiable0[Self] {
   
   /**
     * Parameter decorator to be used on constructor parameters,

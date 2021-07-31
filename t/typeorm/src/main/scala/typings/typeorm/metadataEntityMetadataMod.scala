@@ -24,7 +24,6 @@ import typings.typeorm.typesTableTypesMod.TableType
 import typings.typeorm.typesTreeTypesMod.TreeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataEntityMetadataMod {
@@ -204,7 +203,7 @@ object metadataEntityMetadataMod {
     var expression: js.UndefOr[
         String | (js.Function1[
           /* connection */ typings.typeorm.connectionConnectionMod.Connection, 
-          SelectQueryBuilder[_]
+          SelectQueryBuilder[js.Any]
         ])
       ] = js.native
     
@@ -212,7 +211,7 @@ object metadataEntityMetadataMod {
       * Iterates through entity and finds and extracts all values from relations in the entity.
       * If relation value is an array its being flattened.
       */
-    def extractRelationValuesFromEntity(entity: ObjectLiteral, relations: js.Array[RelationMetadata]): js.Array[js.Tuple3[RelationMetadata, _, EntityMetadata]] = js.native
+    def extractRelationValuesFromEntity(entity: ObjectLiteral, relations: js.Array[RelationMetadata]): js.Array[js.Tuple3[RelationMetadata, js.Any, EntityMetadata]] = js.native
     
     /**
       * Finds column with a given database name.
@@ -613,33 +612,32 @@ object metadataEntityMetadataMod {
   /* static members */
   object EntityMetadata {
     
+    @JSImport("typeorm/metadata/EntityMetadata", "EntityMetadata")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a property paths for a given entity.
       */
-    @JSImport("typeorm/metadata/EntityMetadata", "EntityMetadata.createPropertyPath")
-    @js.native
-    def createPropertyPath(metadata: EntityMetadata, entity: ObjectLiteral): js.Array[String] = js.native
-    @JSImport("typeorm/metadata/EntityMetadata", "EntityMetadata.createPropertyPath")
-    @js.native
-    def createPropertyPath(metadata: EntityMetadata, entity: ObjectLiteral, prefix: String): js.Array[String] = js.native
+    @scala.inline
+    def createPropertyPath(metadata: EntityMetadata, entity: ObjectLiteral): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyPath")(metadata.asInstanceOf[js.Any], entity.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def createPropertyPath(metadata: EntityMetadata, entity: ObjectLiteral, prefix: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPropertyPath")(metadata.asInstanceOf[js.Any], entity.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Finds difference between two entity id maps.
       * Returns items that exist in the first array and absent in the second array.
       */
-    @JSImport("typeorm/metadata/EntityMetadata", "EntityMetadata.difference")
-    @js.native
-    def difference(firstIdMaps: js.Array[ObjectLiteral], secondIdMaps: js.Array[ObjectLiteral]): js.Array[ObjectLiteral] = js.native
+    @scala.inline
+    def difference(firstIdMaps: js.Array[ObjectLiteral], secondIdMaps: js.Array[ObjectLiteral]): js.Array[ObjectLiteral] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(firstIdMaps.asInstanceOf[js.Any], secondIdMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[ObjectLiteral]]
     
     /**
       * Creates value map from the given values and columns.
       * Examples of usages are primary columns map and join columns map.
       */
-    @JSImport("typeorm/metadata/EntityMetadata", "EntityMetadata.getValueMap")
-    @js.native
-    def getValueMap(entity: ObjectLiteral, columns: js.Array[ColumnMetadata]): js.UndefOr[ObjectLiteral] = js.native
-    @JSImport("typeorm/metadata/EntityMetadata", "EntityMetadata.getValueMap")
-    @js.native
-    def getValueMap(entity: ObjectLiteral, columns: js.Array[ColumnMetadata], options: SkipNulls): js.UndefOr[ObjectLiteral] = js.native
+    @scala.inline
+    def getValueMap(entity: ObjectLiteral, columns: js.Array[ColumnMetadata]): js.UndefOr[ObjectLiteral] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueMap")(entity.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ObjectLiteral]]
+    @scala.inline
+    def getValueMap(entity: ObjectLiteral, columns: js.Array[ColumnMetadata], options: SkipNulls): js.UndefOr[ObjectLiteral] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueMap")(entity.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ObjectLiteral]]
   }
 }

@@ -3,20 +3,20 @@ package typings.lodashDecorators
 import typings.lodashDecorators.commonMod.LodashDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beforeAllMod {
   
-  @JSImport("lodash-decorators/beforeAll", JSImport.Default)
+  @JSImport("lodash-decorators/beforeAll", JSImport.Namespace)
   @js.native
-  def default(args: js.Any*): LodashDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators/beforeAll", "BeforeAll")
-  @js.native
-  def BeforeAll_(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def default(args: js.Any*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
   
-  @JSImport("lodash-decorators/beforeAll", "beforeAll")
-  @js.native
-  def beforeAll(n: Double): LodashDecorator = js.native
+  @scala.inline
+  def BeforeAll_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
+  
+  @scala.inline
+  def beforeAll(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
 }

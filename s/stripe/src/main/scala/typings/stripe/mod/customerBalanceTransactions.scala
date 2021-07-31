@@ -3,7 +3,6 @@ package typings.stripe.mod
 import typings.stripe.stripeStrings.customer_balance_transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customerBalanceTransactions {
@@ -42,72 +41,73 @@ object customerBalanceTransactions {
     def unspent_receiver_credit: typings.stripe.stripeStrings.unspent_receiver_credit = "unspent_receiver_credit".asInstanceOf[typings.stripe.stripeStrings.unspent_receiver_credit]
   }
   
-  @js.native
-  trait ICustomerBalanceTransaction extends IResourceObject {
+  trait ICustomerBalanceTransaction
+    extends StObject
+       with IResourceObject {
     
     /**
       * The amount of the transaction. A negative value is a credit for the customer’s balance, and a positive
       * value is a debit to the customer’s balance.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * The ID of the credit note (if any) related to the transaction. [Expandable]
       */
-    var credit_note: String | Null = js.native
+    var credit_note: String | Null
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The ID of the customer the transaction belongs to. [Expandable]
       */
-    var customer: String = js.native
+    var customer: String
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: String | Null = js.native
+    var description: String | Null
     
     /**
       * The customer’s balance after the transaction was applied. A negative value decreases the amount due
       * on the customer’s next invoice. A positive value increases the amount due on the customer’s next invoice.
       */
-    var ending_balance: Double = js.native
+    var ending_balance: Double
     
     /**
       * The ID of the invoice (if any) related to the transaction. [Expandable]
       */
-    var invoice: String | Null = js.native
+    var invoice: String | Null
     
     /**
       * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional
       * information about the object in a structured format.
       */
-    var metadata: IMetadata | Null = js.native
+    var metadata: IMetadata | Null
     
     /**
       * Value is "customer_balance_transaction"
       */
     @JSName("object")
-    var object_ICustomerBalanceTransaction: customer_balance_transaction = js.native
+    var object_ICustomerBalanceTransaction: customer_balance_transaction
     
     /**
       * Transaction type. See the Customer Balance page to learn more about transaction types.
       */
-    var `type`: CustomerBalanceTransactionType = js.native
+    var `type`: CustomerBalanceTransactionType
   }
   object ICustomerBalanceTransaction {
     
@@ -120,11 +120,10 @@ object customerBalanceTransactions {
       ending_balance: Double,
       id: String,
       livemode: Boolean,
-      `object`: customer_balance_transaction,
       `type`: CustomerBalanceTransactionType
     ): ICustomerBalanceTransaction = {
-      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], ending_balance = ending_balance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], customer = customer.asInstanceOf[js.Any], ending_balance = ending_balance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], credit_note = null, description = null, invoice = null, metadata = null)
+      __obj.updateDynamic("object")("customer_balance_transaction")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICustomerBalanceTransaction]
     }
@@ -182,31 +181,30 @@ object customerBalanceTransactions {
     }
   }
   
-  @js.native
   trait ICustomerBalanceTransactionCreationOptions extends StObject {
     
     /**
       * The integer amount in cents to apply to the customer’s balance. Pass a negative amount to credit the
       * customer’s balance, and pass in a positive amount to debit the customer’s balance.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Three-letter ISO currency code, in lowercase. Must be a supported currency. If the customer’s currency
       * is set, this value must match it. If the customer’s currency is not set, it will be updated to this value.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional
       * information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IMetadata] = js.native
+    var metadata: js.UndefOr[IMetadata] = js.undefined
   }
   object ICustomerBalanceTransactionCreationOptions {
     
@@ -239,19 +237,18 @@ object customerBalanceTransactions {
     }
   }
   
-  @js.native
   trait ICustomerBalanceTransactionUpdateOptions extends StObject {
     
     /**
       * An arbitrary string attached to the object. Often useful for displaying to users.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional
       * information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IMetadata] = js.native
+    var metadata: js.UndefOr[IMetadata] = js.undefined
   }
   object ICustomerBalanceTransactionUpdateOptions {
     

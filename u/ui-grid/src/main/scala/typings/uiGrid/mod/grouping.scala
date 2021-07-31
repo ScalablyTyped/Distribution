@@ -6,16 +6,14 @@ import typings.uiGrid.anon.AggregationChanged
 import typings.uiGrid.anon.GroupPriority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grouping {
   
-  @js.native
   trait IColumnDef extends StObject {
     
     /** Enable grouping on this column.  Defaults to true. */
-    var enableGrouping: js.UndefOr[Boolean] = js.native
+    var enableGrouping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the grouping for a column.
@@ -34,19 +32,19 @@ object grouping {
       * we'll renumber them to be sequential.
       * Defaults to undefined.
       */
-    var grouping: js.UndefOr[GroupPriority] = js.native
+    var grouping: js.UndefOr[GroupPriority] = js.undefined
     
     /**
       * Show the aggregation menu on this column.  Defaults to true
       * @default true
       */
-    var groupingShowAggregationMenu: js.UndefOr[Boolean] = js.native
+    var groupingShowAggregationMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the grouping (group and ungroup items) menu on this column.  Defaults to true
       * @default true
       */
-    var groupingShowGroupingMenu: js.UndefOr[Boolean] = js.native
+    var groupingShowGroupingMenu: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnDef {
     
@@ -85,8 +83,9 @@ object grouping {
     }
   }
   
-  @js.native
-  trait IGridExpandedHash extends /* key */ StringDictionary[IGridExpandedHash | String]
+  trait IGridExpandedHash
+    extends StObject
+       with /* key */ StringDictionary[IGridExpandedHash | String]
   object IGridExpandedHash {
     
     @scala.inline
@@ -160,23 +159,22 @@ object grouping {
     def ungroupColumn(columnName: String): Unit = js.native
   }
   
-  @js.native
   trait IGridGroupingConfiguration extends StObject {
     
     /**
       * Hash of currently expanded nodes
       */
-    var expandedState: js.UndefOr[IGridExpandedHash] = js.native
+    var expandedState: js.UndefOr[IGridExpandedHash] = js.undefined
     
     /**
       * GroupArray.  Sorted by groupPriority
       */
-    var grouping: js.Array[IGripGroup] = js.native
+    var grouping: js.Array[IGripGroup]
     
     /**
       * Array of aggregation objects
       */
-    var treeAggregations: js.Array[IGridTreeAggregations] = js.native
+    var treeAggregations: js.Array[IGridTreeAggregations]
   }
   object IGridGroupingConfiguration {
     
@@ -209,7 +207,6 @@ object grouping {
     }
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -217,14 +214,14 @@ object grouping {
       * Defaults to true
       * @default true
       */
-    var enableGroupHeaderSelection: js.UndefOr[Boolean] = js.native
+    var enableGroupHeaderSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows group header rows to be selected.
       * Defaults to false
       * @default false
       */
-    var enableGrouping: js.UndefOr[Boolean] = js.native
+    var enableGrouping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The string to use for the grouping header row label on rows which contain
@@ -232,7 +229,7 @@ object grouping {
       * Defaults to "Null"
       * @default 'Null'
       */
-    var groupingNullLabel: js.UndefOr[String] = js.native
+    var groupingNullLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Shows counts on the groupHeader rows.
@@ -241,7 +238,7 @@ object grouping {
       * groupingShowCounts enabled. Defaults to true except on columns of type 'date'
       * @default true
       */
-    var groupingShowCounts: js.UndefOr[Boolean] = js.native
+    var groupingShowCounts: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -280,14 +277,13 @@ object grouping {
     }
   }
   
-  @js.native
   trait IGridTreeAggregations extends StObject {
     
-    var aggregation: String = js.native
+    var aggregation: String
     
-    var colName: String = js.native
+    var colName: String
     
-    var field: String = js.native
+    var field: String
   }
   object IGridTreeAggregations {
     
@@ -311,14 +307,13 @@ object grouping {
     }
   }
   
-  @js.native
   trait IGripGroup extends StObject {
     
-    var colName: String = js.native
+    var colName: String
     
-    var field: String = js.native
+    var field: String
     
-    var groupPriority: Double = js.native
+    var groupPriority: Double
   }
   object IGripGroup {
     
@@ -347,10 +342,11 @@ object grouping {
     * These are manually copied as there isn't an easy way to include constants in another constants file, and we
     * don't want to make users include treeBase.
     */
-  @js.native
-  trait IUiGridGroupingConstants extends ISharedTreeConstants {
+  trait IUiGridGroupingConstants
+    extends StObject
+       with ISharedTreeConstants {
     
-    var featureName: String = js.native
+    var featureName: String
   }
   object IUiGridGroupingConstants {
     

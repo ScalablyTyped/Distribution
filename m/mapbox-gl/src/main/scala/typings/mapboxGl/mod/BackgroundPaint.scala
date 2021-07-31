@@ -2,23 +2,23 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackgroundPaint extends AnyPaint {
+trait BackgroundPaint
+  extends StObject
+     with AnyPaint {
   
-  var `background-color`: js.UndefOr[String | Expression] = js.native
+  var `background-color`: js.UndefOr[String | Expression] = js.undefined
   
-  var `background-color-transition`: js.UndefOr[Transition] = js.native
+  var `background-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `background-opacity`: js.UndefOr[Double | Expression] = js.native
+  var `background-opacity`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `background-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `background-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `background-pattern`: js.UndefOr[String] = js.native
+  var `background-pattern`: js.UndefOr[String] = js.undefined
   
-  var `background-pattern-transition`: js.UndefOr[Transition] = js.native
+  var `background-pattern-transition`: js.UndefOr[Transition] = js.undefined
 }
 object BackgroundPaint {
   

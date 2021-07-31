@@ -7,35 +7,36 @@ import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.right
 import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverGeometryMod {
   
-  @JSImport("react-native-modal-popover/lib/PopoverGeometry", "computeGeometry")
+  @JSImport("react-native-modal-popover/lib/PopoverGeometry", JSImport.Namespace)
   @js.native
-  def computeGeometry_auto(contentSize: Size, placement: auto, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = js.native
-  @JSImport("react-native-modal-popover/lib/PopoverGeometry", "computeGeometry")
-  @js.native
-  def computeGeometry_bottom(contentSize: Size, placement: bottom, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = js.native
-  @JSImport("react-native-modal-popover/lib/PopoverGeometry", "computeGeometry")
-  @js.native
-  def computeGeometry_left(contentSize: Size, placement: left, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = js.native
-  @JSImport("react-native-modal-popover/lib/PopoverGeometry", "computeGeometry")
-  @js.native
-  def computeGeometry_right(contentSize: Size, placement: right, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = js.native
-  @JSImport("react-native-modal-popover/lib/PopoverGeometry", "computeGeometry")
-  @js.native
-  def computeGeometry_top(contentSize: Size, placement: top, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def computeGeometry_auto(contentSize: Size, placement: auto, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
+  @scala.inline
+  def computeGeometry_bottom(contentSize: Size, placement: bottom, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
+  @scala.inline
+  def computeGeometry_left(contentSize: Size, placement: left, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
+  @scala.inline
+  def computeGeometry_right(contentSize: Size, placement: right, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
+  @scala.inline
+  def computeGeometry_top(contentSize: Size, placement: top, fromRect: Rect, displayArea: Rect, arrowSize: Size): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("computeGeometry")(contentSize.asInstanceOf[js.Any], placement.asInstanceOf[js.Any], fromRect.asInstanceOf[js.Any], displayArea.asInstanceOf[js.Any], arrowSize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
   trait Geometry extends StObject {
     
-    var anchor: Point = js.native
+    var anchor: Point
     
-    var origin: Point = js.native
+    var origin: Point
     
-    var placement: Placement = js.native
+    var placement: Placement
   }
   object Geometry {
     
@@ -81,12 +82,11 @@ object popoverGeometryMod {
     def top: typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top = "top".asInstanceOf[typings.reactNativeModalPopover.reactNativeModalPopoverStrings.top]
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -107,16 +107,15 @@ object popoverGeometryMod {
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Rect {
     
@@ -143,12 +142,11 @@ object popoverGeometryMod {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     

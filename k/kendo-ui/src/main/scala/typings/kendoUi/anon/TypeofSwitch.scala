@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Switch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSwitch extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Switch = js.native
+  def extend(proto: js.Object): Switch
   
   /* static member */
-  var fn: Switch = js.native
+  var fn: Switch
 }
 object TypeofSwitch {
   

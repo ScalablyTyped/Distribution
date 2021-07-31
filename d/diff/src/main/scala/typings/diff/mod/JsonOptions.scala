@@ -2,23 +2,23 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JsonOptions extends LinesOptions {
+trait JsonOptions
+  extends StObject
+     with LinesOptions {
   
   /**
     * Replacer used to stringify the properties of the passed objects.
     */
-  var stringifyReplacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+  var stringifyReplacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
   
   /**
     * The value to use when `undefined` values in the passed objects are encountered during stringification.
     * Will only be used if `stringifyReplacer` option wasn't specified.
     * @default undefined
     */
-  var undefinedReplacement: js.UndefOr[js.Any] = js.native
+  var undefinedReplacement: js.UndefOr[js.Any] = js.undefined
 }
 object JsonOptions {
   
@@ -32,7 +32,7 @@ object JsonOptions {
   implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setStringifyReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "stringifyReplacer", js.Any.fromFunction2(value))
+    def setStringifyReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "stringifyReplacer", js.Any.fromFunction2(value))
     
     @scala.inline
     def setStringifyReplacerUndefined: Self = StObject.set(x, "stringifyReplacer", js.undefined)

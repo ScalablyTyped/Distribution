@@ -6,17 +6,16 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface provides a merged single interface for the {@link ModuleManager} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XModuleManager2
-  extends XNameReplace
+  extends StObject
      with XModuleManager
+     with XNameReplace
 object XModuleManager2 {
   
   @scala.inline

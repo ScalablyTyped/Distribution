@@ -6,27 +6,27 @@ import typings.activexLibreoffice.com_.sun.star.beans.XIntrospectionAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Extension of {@link XInvocation} to provide additional information about the methods and properties that are accessible via {@link XInvocation} . */
-@js.native
-trait XInvocation2 extends XInvocation {
+trait XInvocation2
+  extends StObject
+     with XInvocation {
   
   /**
     * returns information items for all methods and properties accessible via {@link XInvocation} .
     * @see com.sun.star.script.Invocation
     */
-  val Info: SafeArray[InvocationInfo] = js.native
+  val Info: SafeArray[InvocationInfo]
   
   /** returns the names of all methods and properties accessible via {@link XInvocation} . */
-  val MemberNames: SafeArray[String] = js.native
+  val MemberNames: SafeArray[String]
   
   /**
     * returns information items for all methods and properties accessible via {@link XInvocation} .
     * @see com.sun.star.script.Invocation
     */
-  def getInfo(): SafeArray[InvocationInfo] = js.native
+  def getInfo(): SafeArray[InvocationInfo]
   
   /**
     * returns information item for the method or property defined by aName
@@ -35,10 +35,10 @@ trait XInvocation2 extends XInvocation {
     * @see com.sun.star.script.Invocation
     * @throws IllegalArgumentException if aName is not the name of a supported method or property
     */
-  def getInfoForName(aName: String, bExact: Boolean): InvocationInfo = js.native
+  def getInfoForName(aName: String, bExact: Boolean): InvocationInfo
   
   /** returns the names of all methods and properties accessible via {@link XInvocation} . */
-  def getMemberNames(): SafeArray[String] = js.native
+  def getMemberNames(): SafeArray[String]
 }
 object XInvocation2 {
   
@@ -55,7 +55,7 @@ object XInvocation2 {
     getValue: String => js.Any,
     hasMethod: String => Boolean,
     hasProperty: String => Boolean,
-    invoke: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
+    invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     setValue: (String, js.Any) => Unit

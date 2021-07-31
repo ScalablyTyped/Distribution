@@ -2,46 +2,44 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentRunFilter extends StObject {
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must inclusively match any value between the specified minimum and maximum values of the completedAt property of the AssessmentRun data type.
     */
-  var completionTimeRange: js.UndefOr[TimestampRange] = js.native
+  var completionTimeRange: js.UndefOr[TimestampRange] = js.undefined
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must inclusively match any value between the specified minimum and maximum values of the durationInSeconds property of the AssessmentRun data type.
     */
-  var durationRange: js.UndefOr[DurationRange] = js.native
+  var durationRange: js.UndefOr[DurationRange] = js.undefined
   
   /**
     * For a record to match a filter, an explicit value or a string containing a wildcard that is specified for this data type property must match the value of the assessmentRunName property of the AssessmentRun data type.
     */
-  var namePattern: js.UndefOr[NamePattern] = js.native
+  var namePattern: js.UndefOr[NamePattern] = js.undefined
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must be contained in the list of values of the rulesPackages property of the AssessmentRun data type.
     */
-  var rulesPackageArns: js.UndefOr[FilterRulesPackageArnList] = js.native
+  var rulesPackageArns: js.UndefOr[FilterRulesPackageArnList] = js.undefined
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must inclusively match any value between the specified minimum and maximum values of the startTime property of the AssessmentRun data type.
     */
-  var startTimeRange: js.UndefOr[TimestampRange] = js.native
+  var startTimeRange: js.UndefOr[TimestampRange] = js.undefined
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must match the stateChangedAt property of the AssessmentRun data type.
     */
-  var stateChangeTimeRange: js.UndefOr[TimestampRange] = js.native
+  var stateChangeTimeRange: js.UndefOr[TimestampRange] = js.undefined
   
   /**
     * For a record to match a filter, one of the values specified for this data type property must be the exact match of the value of the assessmentRunState property of the AssessmentRun data type.
     */
-  var states: js.UndefOr[AssessmentRunStateList] = js.native
+  var states: js.UndefOr[AssessmentRunStateList] = js.undefined
 }
 object AssessmentRunFilter {
   

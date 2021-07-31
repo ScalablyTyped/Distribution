@@ -3,13 +3,11 @@ package typings.openfin.shapesPlatformMod
 import typings.openfin.shapesIdentityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseViewPayload extends StObject {
   
-  var view: Identity = js.native
+  var view: Identity
 }
 object CloseViewPayload {
   

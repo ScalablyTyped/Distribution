@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopySheetToAnotherSpreadsheetRequest extends StObject {
   
   /** The ID of the spreadsheet to copy the sheet to. */
-  var destinationSpreadsheetId: js.UndefOr[String] = js.native
+  var destinationSpreadsheetId: js.UndefOr[String] = js.undefined
 }
 object CopySheetToAnotherSpreadsheetRequest {
   

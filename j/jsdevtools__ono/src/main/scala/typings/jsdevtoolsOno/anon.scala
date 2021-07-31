@@ -3,19 +3,17 @@ package typings.jsdevtoolsOno
 import typings.jsdevtoolsOno.typesMod.ErrorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message[E /* <: ErrorLike */, P /* <: js.Object */] extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var originalError: js.UndefOr[E] = js.native
+    var originalError: js.UndefOr[E] = js.undefined
     
-    var props: js.UndefOr[P] = js.native
+    var props: js.UndefOr[P] = js.undefined
   }
   object Message {
     
@@ -26,7 +24,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message[_, _], E /* <: ErrorLike */, P /* <: js.Object */] (val x: Self with (Message[E, P])) extends AnyVal {
+    implicit class MessageMutableBuilder[Self <: Message[?, ?], E /* <: ErrorLike */, P /* <: js.Object */] (val x: Self & (Message[E, P])) extends AnyVal {
       
       @scala.inline
       def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

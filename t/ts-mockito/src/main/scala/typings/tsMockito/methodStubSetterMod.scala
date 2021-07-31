@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.tsMockito.methodToStubMod.MethodToStub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodStubSetterMod {
@@ -20,7 +19,7 @@ object methodStubSetterMod {
     
     var methodToStub: js.Any = js.native
     
-    def thenCall(func: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+    def thenCall(func: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
     
     var thenDoNothing: js.Any = js.native
     

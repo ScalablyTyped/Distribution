@@ -3,16 +3,16 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitForkRef extends GitRef {
+trait GitForkRef
+  extends StObject
+     with GitRef {
   
   /**
     * The repository ID of the fork.
     */
-  var repository: GitRepository = js.native
+  var repository: GitRepository
 }
 object GitForkRef {
   

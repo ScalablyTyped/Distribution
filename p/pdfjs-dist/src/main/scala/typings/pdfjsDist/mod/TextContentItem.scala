@@ -2,25 +2,23 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextContentItem extends StObject {
   
-  var dir: String = js.native
+  var dir: String
   
   // Left-to-right (ltr), etc
-  var fontName: String = js.native
+  var fontName: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var str: String = js.native
+  var str: String
   
-  var transform: js.Array[Double] = js.native
+  var transform: js.Array[Double]
   
   // [0..5]   4=x, 5=y
-  var width: Double = js.native
+  var width: Double
 }
 object TextContentItem {
   

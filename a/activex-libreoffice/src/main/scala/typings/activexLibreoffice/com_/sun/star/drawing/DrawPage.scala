@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.form.XFormsSupplier
 import typings.activexLibreoffice.com_.sun.star.view.PaperOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see GenericDrawPage
   * @see DrawPages
   */
-@js.native
 trait DrawPage
-  extends GenericDrawPage
+  extends StObject
+     with GenericDrawPage
      with XMasterPageTarget
      with XFormsSupplier
 object DrawPage {

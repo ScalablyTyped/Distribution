@@ -4,31 +4,46 @@ import typings.urlParse.mod.QueryParser
 import typings.urlParse.mod.StringifyQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Parse extends StObject {
     
-    def parse(query: String): js.Object = js.native
+    def parse(query: String): js.Object
     @JSName("parse")
-    var parse_Original: QueryParser = js.native
+    var parse_Original: QueryParser
     
-    def stringify(query: js.Object): String = js.native
+    def stringify(query: js.Object): String
     @JSName("stringify")
-    var stringify_Original: StringifyQuery = js.native
+    var stringify_Original: StringifyQuery
+  }
+  object Parse {
+    
+    @scala.inline
+    def apply(parse: /* query */ String => js.Object, stringify: /* query */ js.Object => String): Parse = {
+      val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
+      __obj.asInstanceOf[Parse]
+    }
+    
+    @scala.inline
+    implicit class ParseMutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setParse(value: /* query */ String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setStringify(value: /* query */ js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Protocol extends StObject {
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var rest: String = js.native
+    var rest: String
     
-    var slashes: Boolean = js.native
+    var slashes: Boolean
   }
   object Protocol {
     

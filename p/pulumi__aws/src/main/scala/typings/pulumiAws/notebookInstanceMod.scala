@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notebookInstanceMod {
@@ -110,6 +109,10 @@ object notebookInstanceMod {
   /* static members */
   object NotebookInstance {
     
+    @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NotebookInstance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -119,96 +122,90 @@ object notebookInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NotebookInstance = js.native
-    @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NotebookInstance = js.native
-    @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotebookInstanceState): NotebookInstance = js.native
-    @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotebookInstanceState, opts: CustomResourceOptions): NotebookInstance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotebookInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotebookInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotebookInstanceState): NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotebookInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotebookInstanceState, opts: CustomResourceOptions): NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotebookInstance]
     
     /**
       * Returns true if the given object is an instance of NotebookInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ Boolean]
   }
   
-  @js.native
   trait NotebookInstanceArgs extends StObject {
     
     /**
       * An array of up to three Git repositories to associate with the notebook instance.
       * These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance.
       */
-    val additionalCodeRepositories: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val additionalCodeRepositories: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) or in any other Git repository.
       */
-    val defaultCodeRepository: js.UndefOr[Input[String]] = js.native
+    val defaultCodeRepository: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set to `Disabled` to disable internet access to notebook. Requires `securityGroups` and `subnetId` to be set. Supported values: `Enabled` (Default) or `Disabled`. If set to `Disabled`, the notebook instance will be able to access resources only in your VPC, and will not be able to connect to Amazon SageMaker training and endpoint services unless your configure a NAT Gateway in your VPC.
       */
-    val directInternetAccess: js.UndefOr[Input[String]] = js.native
+    val directInternetAccess: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of ML compute instance type.
       */
-    val instanceType: Input[String] = js.native
+    val instanceType: Input[String]
     
     /**
       * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of a lifecycle configuration to associate with the notebook instance.
       */
-    val lifecycleConfigName: js.UndefOr[Input[String]] = js.native
+    val lifecycleConfigName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the notebook instance (must be unique).
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM role to be used by the notebook instance which allows SageMaker to call other services on your behalf.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * Whether root access is `Enabled` or `Disabled` for users of the notebook instance. The default value is `Enabled`.
       */
-    val rootAccess: js.UndefOr[Input[String]] = js.native
+    val rootAccess: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The associated security groups.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The VPC subnet ID.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The size, in GB, of the ML storage volume to attach to the notebook instance. The default value is 5 GB.
       */
-    val volumeSize: js.UndefOr[Input[Double]] = js.native
+    val volumeSize: js.UndefOr[Input[Double]] = js.undefined
   }
   object NotebookInstanceArgs {
     
@@ -301,89 +298,88 @@ object notebookInstanceMod {
     }
   }
   
-  @js.native
   trait NotebookInstanceState extends StObject {
     
     /**
       * An array of up to three Git repositories to associate with the notebook instance.
       * These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance.
       */
-    val additionalCodeRepositories: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val additionalCodeRepositories: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) assigned by AWS to this notebook instance.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html) or in any other Git repository.
       */
-    val defaultCodeRepository: js.UndefOr[Input[String]] = js.native
+    val defaultCodeRepository: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set to `Disabled` to disable internet access to notebook. Requires `securityGroups` and `subnetId` to be set. Supported values: `Enabled` (Default) or `Disabled`. If set to `Disabled`, the notebook instance will be able to access resources only in your VPC, and will not be able to connect to Amazon SageMaker training and endpoint services unless your configure a NAT Gateway in your VPC.
       */
-    val directInternetAccess: js.UndefOr[Input[String]] = js.native
+    val directInternetAccess: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of ML compute instance type.
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of a lifecycle configuration to associate with the notebook instance.
       */
-    val lifecycleConfigName: js.UndefOr[Input[String]] = js.native
+    val lifecycleConfigName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the notebook instance (must be unique).
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The network interface ID that Amazon SageMaker created at the time of creating the instance. Only available when setting `subnetId`.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM role to be used by the notebook instance which allows SageMaker to call other services on your behalf.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether root access is `Enabled` or `Disabled` for users of the notebook instance. The default value is `Enabled`.
       */
-    val rootAccess: js.UndefOr[Input[String]] = js.native
+    val rootAccess: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The associated security groups.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The VPC subnet ID.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The URL that you use to connect to the Jupyter notebook that is running in your notebook instance.
       */
-    val url: js.UndefOr[Input[String]] = js.native
+    val url: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size, in GB, of the ML storage volume to attach to the notebook instance. The default value is 5 GB.
       */
-    val volumeSize: js.UndefOr[Input[Double]] = js.native
+    val volumeSize: js.UndefOr[Input[Double]] = js.undefined
   }
   object NotebookInstanceState {
     

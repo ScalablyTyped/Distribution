@@ -2,13 +2,11 @@ package typings.paypalRestSdk.mod.invoice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QrResponse extends StObject {
   
-  var image: String = js.native
+  var image: String
 }
 object QrResponse {
   

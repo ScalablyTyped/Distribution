@@ -4,41 +4,41 @@ import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Connection extends UIComponent {
+trait Connection
+  extends StObject
+     with UIComponent {
   
-  var endpoints: js.Tuple2[Endpoint, Endpoint] = js.native
+  var endpoints: js.Tuple2[Endpoint, Endpoint]
   
-  def getElement(): Connection = js.native
+  def getElement(): Connection
   
-  def getLabelOverlay(): Overlay = js.native
+  def getLabelOverlay(): Overlay
   
-  def getOverlay(s: String): Overlay = js.native
+  def getOverlay(s: String): Overlay
   
-  def getOverlays(): js.Object = js.native
+  def getOverlays(): js.Object
   
-  def hideOverlay(s: String): Unit = js.native
+  def hideOverlay(s: String): Unit
   
-  var id: ConnectionId = js.native
+  var id: ConnectionId
   
-  def repaint(): Unit = js.native
+  def repaint(): Unit
   
-  def setDetachable(detachable: Boolean): Unit = js.native
+  def setDetachable(detachable: Boolean): Unit
   
-  def setLabel(s: String): Unit = js.native
+  def setLabel(s: String): Unit
   
-  def showOverlay(s: String): Unit = js.native
+  def showOverlay(s: String): Unit
   
-  var source: Element = js.native
+  var source: Element
   
-  var sourceId: String = js.native
+  var sourceId: String
   
-  var target: Element = js.native
+  var target: Element
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object Connection {
   
@@ -50,14 +50,14 @@ object Connection {
     getOverlay: String => Overlay,
     getOverlays: () => js.Object,
     getParameter: String => js.Any,
-    getParameters: () => Record[String, _],
+    getParameters: () => Record[String, js.Any],
     hideOverlay: String => Unit,
     id: ConnectionId,
     repaint: () => Unit,
     setDetachable: Boolean => Unit,
     setLabel: String => Unit,
     setParameter: (String, js.Any) => Unit,
-    setParameters: Record[String, _] => Unit,
+    setParameters: Record[String, js.Any] => Unit,
     showOverlay: String => Unit,
     source: Element,
     sourceId: String,

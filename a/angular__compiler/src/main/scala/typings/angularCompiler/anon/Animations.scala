@@ -5,41 +5,39 @@ import typings.angularCompiler.coreMod.ViewEncapsulation
 import typings.angularCompiler.mlParserParserMod.ParseTreeResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animations extends StObject {
   
-  var animations: js.Array[_] = js.native
+  var animations: js.Array[js.Any]
   
-  var encapsulation: ViewEncapsulation | Null = js.native
+  var encapsulation: ViewEncapsulation | Null
   
-  var externalStylesheets: js.Array[CompileStylesheetMetadata] = js.native
+  var externalStylesheets: js.Array[CompileStylesheetMetadata]
   
-  var htmlAst: ParseTreeResult | Null = js.native
+  var htmlAst: ParseTreeResult | Null
   
-  var interpolation: (js.Tuple2[String, String]) | Null = js.native
+  var interpolation: (js.Tuple2[String, String]) | Null
   
-  var isInline: Boolean = js.native
+  var isInline: Boolean
   
-  var ngContentSelectors: js.Array[String] = js.native
+  var ngContentSelectors: js.Array[String]
   
-  var preserveWhitespaces: Boolean = js.native
+  var preserveWhitespaces: Boolean
   
-  var styleUrls: js.Array[String] = js.native
+  var styleUrls: js.Array[String]
   
-  var styles: js.Array[String] = js.native
+  var styles: js.Array[String]
   
-  var template: String | Null = js.native
+  var template: String | Null
   
-  var templateUrl: String | Null = js.native
+  var templateUrl: String | Null
 }
 object Animations {
   
   @scala.inline
   def apply(
-    animations: js.Array[_],
+    animations: js.Array[js.Any],
     externalStylesheets: js.Array[CompileStylesheetMetadata],
     isInline: Boolean,
     ngContentSelectors: js.Array[String],
@@ -47,7 +45,7 @@ object Animations {
     styleUrls: js.Array[String],
     styles: js.Array[String]
   ): Animations = {
-    val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], externalStylesheets = externalStylesheets.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], preserveWhitespaces = preserveWhitespaces.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], externalStylesheets = externalStylesheets.asInstanceOf[js.Any], isInline = isInline.asInstanceOf[js.Any], ngContentSelectors = ngContentSelectors.asInstanceOf[js.Any], preserveWhitespaces = preserveWhitespaces.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], encapsulation = null, htmlAst = null, interpolation = null, template = null, templateUrl = null)
     __obj.asInstanceOf[Animations]
   }
   
@@ -55,7 +53,7 @@ object Animations {
   implicit class AnimationsMutableBuilder[Self <: Animations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))

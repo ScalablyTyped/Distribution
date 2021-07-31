@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAccessPolicyRequest extends StObject {
   
   /**
     * The ID of the access policy.
     */
-  var accessPolicyId: ID = js.native
+  var accessPolicyId: ID
   
   /**
     * The identity for this access policy. Choose an AWS SSO user, an AWS SSO group, or an IAM user.
     */
-  var accessPolicyIdentity: Identity = js.native
+  var accessPolicyIdentity: Identity
   
   /**
     * The permission level for this access policy. Note that a project ADMINISTRATOR is also known as a project owner.
     */
-  var accessPolicyPermission: Permission = js.native
+  var accessPolicyPermission: Permission
   
   /**
     * The AWS IoT SiteWise Monitor resource for this access policy. Choose either a portal or a project.
     */
-  var accessPolicyResource: Resource = js.native
+  var accessPolicyResource: Resource
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
 }
 object UpdateAccessPolicyRequest {
   

@@ -4,29 +4,31 @@ import typings.iframeResizer.iframeResizerBooleans.`false`
 import typings.iframeResizer.iframeResizerStrings.auto
 import typings.iframeResizer.iframeResizerStrings.child
 import typings.iframeResizer.iframeResizerStrings.parent
+import typings.std.AddEventListenerOptions
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   // leave this declaration outside the namespace so the 'require'd import is still callable
-  @JSImport("iframe-resizer", JSImport.Namespace)
-  @js.native
-  def apply(options: IFrameOptions, target: String): js.Array[IFrameComponent] = js.native
-  @JSImport("iframe-resizer", JSImport.Namespace)
-  @js.native
-  def apply(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = js.native
+  @scala.inline
+  def apply(options: IFrameOptions, target: String): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
+  @scala.inline
+  def apply(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
   
-  @JSImport("iframe-resizer", "iframeResizer")
+  @JSImport("iframe-resizer", JSImport.Namespace)
   @js.native
-  def iframeResizer(options: IFrameOptions, target: String): js.Array[IFrameComponent] = js.native
-  @JSImport("iframe-resizer", "iframeResizer")
-  @js.native
-  def iframeResizer(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def iframeResizer(options: IFrameOptions, target: String): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("iframeResizer")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
+  @scala.inline
+  def iframeResizer(options: IFrameOptions, target: HTMLElement): js.Array[IFrameComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("iframeResizer")(options.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[IFrameComponent]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.iframeResizer.iframeResizerStrings.bodyOffset
@@ -72,18 +74,33 @@ object mod {
   
   // tslint:disable-next-line:interface-name
   @js.native
-  trait IFrameComponent extends HTMLIFrameElement {
+  trait IFrameComponent
+    extends StObject
+       with HTMLIFrameElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var iFrameResizer: IFrameObject = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IFrameMessageData extends StObject {
     
-    var iframe: IFrameComponent = js.native
+    var iframe: IFrameComponent
     
-    var message: js.Any = js.native
+    var message: js.Any
   }
   object IFrameMessageData {
     
@@ -119,113 +136,112 @@ object mod {
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IFrameOptions extends StObject {
     
     /**
       * When enabled changes to the Window size or the DOM will cause the iFrame to resize to the new content size.
       * Disable if using size method with custom dimensions.
       */
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Override the body background style in the iFrame.
       */
-    var bodyBackground: js.UndefOr[String] = js.native
+    var bodyBackground: js.UndefOr[String] = js.undefined
     
     /**
       * Override the default body margin style in the iFrame. A string can be any valid value for the
       * CSS margin attribute, for example '8px 3em'. A number value is converted into px.
       */
-    var bodyMargin: js.UndefOr[Double | String] = js.native
+    var bodyMargin: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Override the default body padding style in the iFrame. A string can be any valid value for the
       * CSS margin attribute, for example '8px 3em'. A number value is converted into px.
       */
-    var bodyPadding: js.UndefOr[Double | String] = js.native
+    var bodyPadding: js.UndefOr[Double | String] = js.undefined
     
     /**
       * When set to true, only allow incoming messages from the domain listed in the src property of the iFrame tag.
       * If your iFrame navigates between different domains, ports or protocols; then you will need to
       * provide an array of URLs or disable this option.
       */
-    var checkOrigin: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var checkOrigin: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Called when iFrame is closed via parentIFrame.close() or iframe.iframeResizer.close() methods.
       */
-    var closedCallback: js.UndefOr[js.Function1[/* iframeId */ String, Unit]] = js.native
+    var closedCallback: js.UndefOr[js.Function1[/* iframeId */ String, Unit]] = js.undefined
     
     /**
       * Height calculation method.
       */
-    var heightCalculationMethod: js.UndefOr[HeightCalculationMethod] = js.native
+    var heightCalculationMethod: js.UndefOr[HeightCalculationMethod] = js.undefined
     
     /**
       * Set iFrame Id
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * When enabled in page linking inside the iFrame and from the iFrame to the parent page will be enabled.
       */
-    var inPageLinks: js.UndefOr[Boolean] = js.native
+    var inPageLinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial setup callback function.
       */
-    var initCallback: js.UndefOr[js.Function1[/* iframe */ IFrameComponent, Unit]] = js.native
+    var initCallback: js.UndefOr[js.Function1[/* iframe */ IFrameComponent, Unit]] = js.undefined
     
     /**
       * In browsers that don't support mutationObserver, such as IE10, the library falls back to using
       * setInterval, to check for changes to the page size.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Setting the log option to true will make the scripts in both the host page and the iFrame output
       * everything they do to the JavaScript console so you can see the communication between the two scripts.
       */
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set maximum height of iFrame.
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Set maximum width of iFrame.
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Receive message posted from iFrame with the parentIFrame.sendMessage() method.
       */
-    var messageCallback: js.UndefOr[js.Function1[/* data */ IFrameMessageData, Unit]] = js.native
+    var messageCallback: js.UndefOr[js.Function1[/* data */ IFrameMessageData, Unit]] = js.undefined
     
     /**
       * Set minimum height of iFrame.
       */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Set minimum width of iFrame.
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Listen for resize events from the parent page, or the iFrame. Select the 'child' value if the iFrame
       * can be resized independently of the browser window. Selecting this value can cause issues with some
       * height calculation methods on mobile devices.
       */
-    var resizeFrom: js.UndefOr[parent | child] = js.native
+    var resizeFrom: js.UndefOr[parent | child] = js.undefined
     
     /**
       * Function called after iFrame resized. Passes in messageData object containing the iFrame, height, width
       * and the type of event that triggered the iFrame to resize.
       */
-    var resizedCallback: js.UndefOr[js.Function1[/* data */ IFrameResizedData, Unit]] = js.native
+    var resizedCallback: js.UndefOr[js.Function1[/* data */ IFrameResizedData, Unit]] = js.undefined
     
     /**
       * Called before the page is repositioned after a request from the iFrame, due to either an in page link,
@@ -233,32 +249,32 @@ object mod {
       * If this callback function returns false, it will stop the library from repositioning the page, so that
       * you can implement your own animated page scrolling instead.
       */
-    var scrollCallback: js.UndefOr[js.Function1[/* data */ IFrameScrollData, Boolean]] = js.native
+    var scrollCallback: js.UndefOr[js.Function1[/* data */ IFrameScrollData, Boolean]] = js.undefined
     
     /**
       * Enable scroll bars in iFrame.
       */
-    var scrolling: js.UndefOr[Boolean | auto] = js.native
+    var scrolling: js.UndefOr[Boolean | auto] = js.undefined
     
     /**
       * Resize iFrame to content height.
       */
-    var sizeHeight: js.UndefOr[Boolean] = js.native
+    var sizeHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Resize iFrame to content width.
       */
-    var sizeWidth: js.UndefOr[Boolean] = js.native
+    var sizeWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the number of pixels the iFrame content size has to change by, before triggering a resize of the iFrame.
       */
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * Width calculation method.
       */
-    var widthCalculationMethod: js.UndefOr[WidthCalculationMethod] = js.native
+    var widthCalculationMethod: js.UndefOr[WidthCalculationMethod] = js.undefined
   }
   object IFrameOptions {
     
@@ -495,40 +511,39 @@ object mod {
       * prevent auto resizing and enable the `sizeWidth` option if you wish to set the width.
       */
     def size(): Unit = js.native
-    def size(customHeight: js.UndefOr[scala.Nothing], customWidth: String): Unit = js.native
     def size(customHeight: String): Unit = js.native
     def size(customHeight: String, customWidth: String): Unit = js.native
+    def size(customHeight: Unit, customWidth: String): Unit = js.native
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IFramePageOptions extends StObject {
     
     /**
       * These option can be used to override the option set in the parent page
       */
-    var heightCalculationMethod: js.UndefOr[HeightCalculationMethod | js.Function0[Double]] = js.native
+    var heightCalculationMethod: js.UndefOr[HeightCalculationMethod | js.Function0[Double]] = js.undefined
     
     /**
       * Receive message posted from the parent page with the iframe.iFrameResizer.sendMessage() method.
       */
-    var messageCallback: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.native
+    var messageCallback: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
     
     /**
       * This function is called once iFrame-Resizer has been initialized after receiving a call from the parent page.
       */
-    var readyCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var readyCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * This option allows you to restrict the domain of the parent page,
       * to prevent other sites mimicking your parent page.
       */
-    var targetOrigin: js.UndefOr[String] = js.native
+    var targetOrigin: js.UndefOr[String] = js.undefined
     
     /**
       * These option can be used to override the option set in the parent page
       */
-    var widthCalculationMethod: js.UndefOr[WidthCalculationMethod | js.Function0[Double]] = js.native
+    var widthCalculationMethod: js.UndefOr[WidthCalculationMethod | js.Function0[Double]] = js.undefined
   }
   object IFramePageOptions {
     
@@ -580,16 +595,15 @@ object mod {
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IFrameResizedData extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var iframe: IFrameComponent = js.native
+    var iframe: IFrameComponent
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object IFrameResizedData {
     
@@ -618,12 +632,11 @@ object mod {
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait IFrameScrollData extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IFrameScrollData {
     
@@ -644,48 +657,47 @@ object mod {
     }
   }
   
-  @js.native
   trait PageInfo extends StObject {
     
     /**
       * The height of the viewport in pixels
       */
-    var clientHeight: Double = js.native
+    var clientHeight: Double
     
     /**
       * The width of the viewport in pixels
       */
-    var clientWidth: Double = js.native
+    var clientWidth: Double
     
     /**
       * The height of the iframe in pixels
       */
-    var iframeHeight: Double = js.native
+    var iframeHeight: Double
     
     /**
       * The width of the iframe in pixels
       */
-    var iframeWidth: Double = js.native
+    var iframeWidth: Double
     
     /**
       * The number of pixels between the left edge of the containing page and the left edge of the iframe
       */
-    var offsetLeft: Double = js.native
+    var offsetLeft: Double
     
     /**
       * The number of pixels between the top edge of the containing page and the top edge of the iframe
       */
-    var offsetTop: Double = js.native
+    var offsetTop: Double
     
     /**
       * The number of pixels between the left edge of the iframe and the left edge of the iframe viewport
       */
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
     /**
       * The number of pixels between the top edge of the iframe and the top edge of the iframe viewport
       */
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object PageInfo {
     

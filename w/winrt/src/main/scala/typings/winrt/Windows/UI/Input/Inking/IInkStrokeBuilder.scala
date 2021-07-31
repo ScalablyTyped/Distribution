@@ -5,21 +5,19 @@ import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.UI.Input.PointerPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkStrokeBuilder extends StObject {
   
-  def appendToStroke(pointerPoint: PointerPoint): PointerPoint = js.native
+  def appendToStroke(pointerPoint: PointerPoint): PointerPoint
   
-  def beginStroke(pointerPoint: PointerPoint): Unit = js.native
+  def beginStroke(pointerPoint: PointerPoint): Unit
   
-  def createStroke(points: IIterable[Point]): InkStroke = js.native
+  def createStroke(points: IIterable[Point]): InkStroke
   
-  def endStroke(pointerPoint: PointerPoint): InkStroke = js.native
+  def endStroke(pointerPoint: PointerPoint): InkStroke
   
-  def setDefaultDrawingAttributes(drawingAttributes: InkDrawingAttributes): Unit = js.native
+  def setDefaultDrawingAttributes(drawingAttributes: InkDrawingAttributes): Unit
 }
 object IInkStrokeBuilder {
   

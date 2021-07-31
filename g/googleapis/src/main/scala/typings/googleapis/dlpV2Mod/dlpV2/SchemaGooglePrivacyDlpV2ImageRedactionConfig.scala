@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for determining how redaction of images should occur.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ImageRedactionConfig extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait SchemaGooglePrivacyDlpV2ImageRedactionConfig extends StObject {
     * matches against all info_types that are found, but not specified in
     * another ImageRedactionConfig.
     */
-  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
   
   /**
     * If true, all text found in the image, regardless whether it matches an
     * info_type, is redacted. Only one should be provided.
     */
-  var redactAllText: js.UndefOr[Boolean] = js.native
+  var redactAllText: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The color to use when redacting content from an image. If not specified,
     * the default is black.
     */
-  var redactionColor: js.UndefOr[SchemaGooglePrivacyDlpV2Color] = js.native
+  var redactionColor: js.UndefOr[SchemaGooglePrivacyDlpV2Color] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ImageRedactionConfig {
   

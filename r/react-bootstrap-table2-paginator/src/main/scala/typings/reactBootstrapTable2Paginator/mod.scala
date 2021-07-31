@@ -8,25 +8,26 @@ import typings.reactBootstrapTable2Paginator.reactBootstrapTable2PaginatorString
 import typings.reactBootstrapTableNext.mod.PaginationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-bootstrap-table2-paginator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * declaration for table pagination sub module and factory
     */
-  @JSImport("react-bootstrap-table2-paginator", JSImport.Default)
-  @js.native
-  def default(options: PaginationOptions): PaginationCtxOptions = js.native
+  @scala.inline
+  def default(options: PaginationOptions): PaginationCtxOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PaginationCtxOptions]
   
   @JSImport("react-bootstrap-table2-paginator", "PaginationListStandalone")
   @js.native
   val PaginationListStandalone: FC[PaginationChildProps] = js.native
   
-  @JSImport("react-bootstrap-table2-paginator", "PaginationProvider")
-  @js.native
-  def PaginationProvider(props: Children): ReactElement | Null = js.native
+  @scala.inline
+  def PaginationProvider(props: Children): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("PaginationProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("react-bootstrap-table2-paginator", "PaginationTotalStandalone")
   @js.native
@@ -36,12 +37,13 @@ object mod {
   @js.native
   val SizePerPageDropdownStandalone: FC[SizePerPageDropdownStandaloneProps] = js.native
   
-  @js.native
-  trait PaginationChildProps extends PaginationOptions {
+  trait PaginationChildProps
+    extends StObject
+       with PaginationOptions {
     
-    var bootstrap4: js.UndefOr[Boolean] = js.native
+    var bootstrap4: js.UndefOr[Boolean] = js.undefined
     
-    var tableId: js.UndefOr[String] = js.native
+    var tableId: js.UndefOr[String] = js.undefined
   }
   object PaginationChildProps {
     
@@ -68,10 +70,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PaginationCtxOptions extends StObject {
     
-    var options: js.UndefOr[PaginationOptions] = js.native
+    var options: js.UndefOr[PaginationOptions] = js.undefined
   }
   object PaginationCtxOptions {
     
@@ -92,18 +93,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait SizePerPageDropdownStandaloneProps extends PaginationChildProps {
+  trait SizePerPageDropdownStandaloneProps
+    extends StObject
+       with PaginationChildProps {
     
-    var btnContextual: js.UndefOr[Boolean] = js.native
+    var btnContextual: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var variation: js.UndefOr[dropdown | dropup] = js.native
+    var variation: js.UndefOr[dropdown | dropup] = js.undefined
   }
   object SizePerPageDropdownStandaloneProps {
     

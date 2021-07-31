@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbsoluteDateRange extends StObject {
   
   /** The end date of the range (inclusive). Must be within the 30 days leading up to current date, and must be equal to or after start_date. */
-  var endDate: js.UndefOr[Date] = js.native
+  var endDate: js.UndefOr[Date] = js.undefined
   
   /** The start date of the range (inclusive). Must be within the 30 days leading up to current date, and must be equal to or before end_date. */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
 }
 object AbsoluteDateRange {
   

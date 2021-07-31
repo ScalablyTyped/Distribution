@@ -2,37 +2,35 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCloseBrackets extends StObject {
   
   /**
     * If the next character is in the string, opening a bracket should be auto-closed.
     */
-  var closeBefore: js.UndefOr[String] = js.native
+  var closeBefore: js.UndefOr[String] = js.undefined
   
   /**
     * explode should be a similar string that gives the pairs of characters that, when enter is pressed between them, should have the second character also moved to its own line.
     */
-  var explode: js.UndefOr[String] = js.native
+  var explode: js.UndefOr[String] = js.undefined
   
   /**
     * By default, if the active mode has a closeBrackets property, that overrides the configuration given in the option.
     * But you can add an override property with a truthy value to override mode-specific configuration.
     */
-  var `override`: js.UndefOr[Boolean] = js.native
+  var `override`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String containing pairs of matching characters.
     */
-  var pairs: js.UndefOr[String] = js.native
+  var pairs: js.UndefOr[String] = js.undefined
   
   /**
     * String containing chars that could do a triple quote.
     */
-  var triples: js.UndefOr[String] = js.native
+  var triples: js.UndefOr[String] = js.undefined
 }
 object AutoCloseBrackets {
   

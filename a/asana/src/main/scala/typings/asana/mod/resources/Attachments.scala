@@ -5,7 +5,6 @@ import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Attachments.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Attachments
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * Returns the full record for a single attachment.
@@ -31,11 +31,11 @@ trait Attachments
     * @return
     */
   def findById(attachment: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(attachment: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(attachment: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(attachment: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(attachment: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(attachment: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(attachment: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(attachment: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(attachment: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(attachment: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
@@ -51,11 +51,11 @@ trait Attachments
     * @return
     */
   def findByTask(task: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
 }
@@ -64,7 +64,9 @@ object Attachments extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Attachments")
   @js.native
-  class ^ protected () extends Attachments {
+  class ^ protected ()
+    extends StObject
+       with Attachments {
     /**
       * @param dispatcher
       */
@@ -77,7 +79,8 @@ object Attachments extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     val created_at: String = js.native
     
@@ -85,7 +88,7 @@ object Attachments extends Shortcut {
     
     val host: String = js.native
     
-    val parent: typings.asana.mod.resources.Resource = js.native
+    val parent: Resource = js.native
     
     val view_url: String = js.native
   }

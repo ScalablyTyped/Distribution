@@ -8,7 +8,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.horizontal
 import typings.wordpressComponents.wordpressComponentsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
@@ -27,15 +26,15 @@ object menuMod {
   
   object NavigableMenu {
     
-    @js.native
     trait Props
-      extends typings.wordpressComponents.tabbableMod.TabbableContainer.Props {
+      extends StObject
+         with typings.wordpressComponents.tabbableMod.TabbableContainer.Props {
       
       /**
         * The orientation of the menu.
         * @defaultValue "vertical"
         */
-      var orientation: js.UndefOr[vertical | horizontal | both] = js.native
+      var orientation: js.UndefOr[vertical | horizontal | both] = js.undefined
     }
     object Props {
       

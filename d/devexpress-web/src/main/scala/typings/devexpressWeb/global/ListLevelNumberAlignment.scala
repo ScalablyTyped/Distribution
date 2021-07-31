@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListLevelNumberAlignment extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ListLevelNumberAlignment with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ListLevelNumberAlignment & Double] = js.native
   
-  /* 1 */ val Center: typings.devexpressWeb.ListLevelNumberAlignment.Center with Double = js.native
+  /* 1 */ val Center: typings.devexpressWeb.ListLevelNumberAlignment.Center & Double = js.native
   
-  /* 0 */ val Left: typings.devexpressWeb.ListLevelNumberAlignment.Left with Double = js.native
+  /* 0 */ val Left: typings.devexpressWeb.ListLevelNumberAlignment.Left & Double = js.native
   
-  /* 2 */ val Right: typings.devexpressWeb.ListLevelNumberAlignment.Right with Double = js.native
+  /* 2 */ val Right: typings.devexpressWeb.ListLevelNumberAlignment.Right & Double = js.native
 }

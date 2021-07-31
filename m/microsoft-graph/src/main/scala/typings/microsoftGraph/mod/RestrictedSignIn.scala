@@ -2,13 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RestrictedSignIn extends SignIn {
+trait RestrictedSignIn
+  extends StObject
+     with SignIn {
   
-  var targetTenantId: js.UndefOr[NullableOption[String]] = js.native
+  var targetTenantId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object RestrictedSignIn {
   

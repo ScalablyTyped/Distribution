@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BackendTraceId extends StObject {
     
-    var backendTraceId: js.UndefOr[String] = js.native
+    var backendTraceId: js.UndefOr[String] = js.undefined
     
-    var componentStack: js.UndefOr[String] = js.native
+    var componentStack: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
+    var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
   }
   object BackendTraceId {
     
@@ -73,12 +71,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ComponentStack extends StObject {
     
-    var componentStack: js.UndefOr[String] = js.native
+    var componentStack: js.UndefOr[String] = js.undefined
     
-    var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
+    var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
   }
   object ComponentStack {
     

@@ -3,27 +3,27 @@ package typings.typescript.mod
 import typings.typescript.typescriptNumbers.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SynthesizedComment extends CommentRange {
+trait SynthesizedComment
+  extends StObject
+     with CommentRange {
   
   @JSName("end")
-  var end_SynthesizedComment: `-1` = js.native
+  var end_SynthesizedComment: `-1`
   
-  var hasLeadingNewline: js.UndefOr[Boolean] = js.native
+  var hasLeadingNewline: js.UndefOr[Boolean] = js.undefined
   
   @JSName("pos")
-  var pos_SynthesizedComment: `-1` = js.native
+  var pos_SynthesizedComment: `-1`
   
-  var text: java.lang.String = js.native
+  var text: java.lang.String
 }
 object SynthesizedComment {
   
   @scala.inline
-  def apply(end: `-1`, kind: CommentKind, pos: `-1`, text: java.lang.String): SynthesizedComment = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  def apply(kind: CommentKind, text: java.lang.String): SynthesizedComment = {
+    val __obj = js.Dynamic.literal(end = -1, kind = kind.asInstanceOf[js.Any], pos = -1, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizedComment]
   }
   

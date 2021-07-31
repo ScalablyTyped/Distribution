@@ -12,7 +12,6 @@ import typings.multibase.multibaseStrings.z_
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -23,6 +22,18 @@ object constantsMod {
     @JSImport("multibase/dist/src/constants", "codes")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("multibase/dist/src/constants", "codes.0")
+    @js.native
+    val `0`: typings.multibase.baseMod.^ = js.native
+    
+    @JSImport("multibase/dist/src/constants", "codes.7")
+    @js.native
+    val `7`: typings.multibase.baseMod.^ = js.native
+    
+    @JSImport("multibase/dist/src/constants", "codes.9")
+    @js.native
+    val `9`: typings.multibase.baseMod.^ = js.native
     
     @JSImport("multibase/dist/src/constants", "codes.B")
     @js.native
@@ -153,18 +164,6 @@ object constantsMod {
     def z: typings.multibase.baseMod.^ = js.native
     @scala.inline
     def z_=(x: typings.multibase.baseMod.^): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("z")(x.asInstanceOf[js.Any])
-    
-    @JSImport("multibase/dist/src/constants", "codes.0")
-    @js.native
-    val `0`: typings.multibase.baseMod.^ = js.native
-    
-    @JSImport("multibase/dist/src/constants", "codes.7")
-    @js.native
-    val `7`: typings.multibase.baseMod.^ = js.native
-    
-    @JSImport("multibase/dist/src/constants", "codes.9")
-    @js.native
-    val `9`: typings.multibase.baseMod.^ = js.native
   }
   
   /* Inlined std.Record<multibase.multibase/dist/src/constants.BaseName, multibase.multibase/dist/src/base.^> */
@@ -509,12 +508,11 @@ object constantsMod {
     def identity: typings.multibase.multibaseStrings.identity = "identity".asInstanceOf[typings.multibase.multibaseStrings.identity]
   }
   
-  @js.native
   trait Codec extends StObject {
     
-    def decode(hash: String): Uint8Array = js.native
+    def decode(hash: String): Uint8Array
     
-    def encode(buffer: Uint8Array): String = js.native
+    def encode(buffer: Uint8Array): String
   }
   object Codec {
     

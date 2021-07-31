@@ -5,30 +5,32 @@ import typings.express.mod.Application_
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-busboy", "extend")
+  @JSImport("express-busboy", JSImport.Namespace)
   @js.native
-  def extend(app: Application_): Application_ = js.native
-  @JSImport("express-busboy", "extend")
-  @js.native
-  def extend(app: Application_, options: ExpressBusboyOptions): Application_ = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ExpressBusboyOptions extends ConnectBusboyOptions {
+  @scala.inline
+  def extend(app: Application_): Application_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(app.asInstanceOf[js.Any]).asInstanceOf[Application_]
+  @scala.inline
+  def extend(app: Application_, options: ExpressBusboyOptions): Application_ = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Application_]
+  
+  trait ExpressBusboyOptions
+    extends StObject
+       with ConnectBusboyOptions {
     
-    var allowedPath: js.UndefOr[String | RegExp | (js.Function1[/* url */ String, Boolean])] = js.native
+    var allowedPath: js.UndefOr[String | RegExp | (js.Function1[/* url */ String, Boolean])] = js.undefined
     
-    var mimeTypeLimit: js.UndefOr[String | js.Array[String]] = js.native
+    var mimeTypeLimit: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var restrictMultiple: js.UndefOr[Boolean] = js.native
+    var restrictMultiple: js.UndefOr[Boolean] = js.undefined
     
-    var upload: js.UndefOr[Boolean] = js.native
+    var upload: js.UndefOr[Boolean] = js.undefined
   }
   object ExpressBusboyOptions {
     

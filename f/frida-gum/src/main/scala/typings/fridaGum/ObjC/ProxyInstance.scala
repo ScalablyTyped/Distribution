@@ -3,13 +3,11 @@ package typings.fridaGum.ObjC
 import typings.fridaGum.NativePointer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxyInstance extends StObject {
   
-  var handle: NativePointer = js.native
+  var handle: NativePointer
 }
 object ProxyInstance {
   

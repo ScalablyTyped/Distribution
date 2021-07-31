@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridGroupable extends StObject {
   
-  var compare: js.UndefOr[js.Function] = js.native
+  var compare: js.UndefOr[js.Function] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[GridGroupableMessages] = js.native
+  var messages: js.UndefOr[GridGroupableMessages] = js.undefined
   
-  var showFooter: js.UndefOr[Boolean] = js.native
+  var showFooter: js.UndefOr[Boolean] = js.undefined
 }
 object GridGroupable {
   

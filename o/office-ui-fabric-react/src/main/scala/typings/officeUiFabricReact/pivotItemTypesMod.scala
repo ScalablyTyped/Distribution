@@ -10,13 +10,13 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pivotItemTypesMod {
   
-  @js.native
-  trait IPivotItemProps extends HTMLAttributes[HTMLDivElement] {
+  trait IPivotItemProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Defines whether to always render the pivot item (regardless of whether it is selected or not).
@@ -24,65 +24,65 @@ object pivotItemTypesMod {
       *
       * @defaultvalue false
       */
-    var alwaysRender: js.UndefOr[Boolean] = js.native
+    var alwaysRender: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The aria label of each pivot link which will read by screen reader instead of linkText.
       *
       * Note that unless you have compelling requirements you should not override aria-label.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.native
+    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
     
     /**
       * Props for the header command button. This provides a way to pass in native props, such as data-* and aria-*,
       * for each pivot header/link element.
       */
-    var headerButtonProps: js.UndefOr[IButtonProps | (StringDictionary[String | Double | Boolean])] = js.native
+    var headerButtonProps: js.UndefOr[IButtonProps | (StringDictionary[String | Double | Boolean])] = js.undefined
     
     /**
       * The text displayed of each pivot link.
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /**
       * Defines an optional item count displayed in parentheses just after the `linkText`.
       *
       * Examples: completed (4), Unread (99+)
       */
-    var itemCount: js.UndefOr[Double | String] = js.native
+    var itemCount: js.UndefOr[Double | String] = js.undefined
     
     /**
       * An optional icon to show next to the pivot link.
       */
-    var itemIcon: js.UndefOr[String] = js.native
+    var itemIcon: js.UndefOr[String] = js.undefined
     
     /**
       * An required key to uniquely identify a pivot item.
       *
       * Note: The 'key' from react props cannot be used inside component.
       */
-    var itemKey: js.UndefOr[String] = js.native
+    var itemKey: js.UndefOr[String] = js.undefined
     
     /**
       * Optional keytip for this PivotItem.
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * The text displayed of each pivot link - renaming to `headerText`.
       * @deprecated Use `headerText` instead.
       */
-    var linkText: js.UndefOr[String] = js.native
+    var linkText: js.UndefOr[String] = js.undefined
     
     /**
       * Optional custom renderer for the pivot item link.
       */
-    var onRenderItemLink: js.UndefOr[IRenderFunction[IPivotItemProps]] = js.native
+    var onRenderItemLink: js.UndefOr[IRenderFunction[IPivotItemProps]] = js.undefined
   }
   object IPivotItemProps {
     

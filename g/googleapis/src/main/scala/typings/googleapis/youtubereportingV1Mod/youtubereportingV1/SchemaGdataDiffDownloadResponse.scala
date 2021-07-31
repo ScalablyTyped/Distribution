@@ -2,19 +2,17 @@ package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gdata
   */
-@js.native
 trait SchemaGdataDiffDownloadResponse extends StObject {
   
   /**
     * gdata
     */
-  var objectLocation: js.UndefOr[SchemaGdataCompositeMedia] = js.native
+  var objectLocation: js.UndefOr[SchemaGdataCompositeMedia] = js.undefined
 }
 object SchemaGdataDiffDownloadResponse {
   

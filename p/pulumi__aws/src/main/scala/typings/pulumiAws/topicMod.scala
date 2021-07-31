@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicMod {
@@ -30,7 +29,7 @@ object topicMod {
       */
     def this(name: String) = this()
     def this(name: String, args: TopicArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: TopicArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -113,12 +112,7 @@ object topicMod {
       * with options to control the behavior of the subscription.
       */
     def onEvent(name: String, handler: TopicEventHandler): TopicEventSubscription = js.native
-    def onEvent(
-      name: String,
-      handler: TopicEventHandler,
-      args: js.UndefOr[scala.Nothing],
-      opts: ComponentResourceOptions
-    ): TopicEventSubscription = js.native
+    def onEvent(name: String, handler: TopicEventHandler, args: Unit, opts: ComponentResourceOptions): TopicEventSubscription = js.native
     def onEvent(name: String, handler: TopicEventHandler, args: TopicEventSubscriptionArgs): TopicEventSubscription = js.native
     def onEvent(
       name: String,
@@ -155,6 +149,10 @@ object topicMod {
   /* static members */
   object Topic {
     
+    @JSImport("@pulumi/aws/sns/topic", "Topic")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Topic resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -164,125 +162,119 @@ object topicMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sns/topic", "Topic.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Topic = js.native
-    @JSImport("@pulumi/aws/sns/topic", "Topic.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Topic = js.native
-    @JSImport("@pulumi/aws/sns/topic", "Topic.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicState): Topic = js.native
-    @JSImport("@pulumi/aws/sns/topic", "Topic.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): Topic = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicState): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Topic]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): Topic = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Topic]
     
     /**
       * Returns true if the given object is an instance of Topic.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sns/topic", "Topic.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean]
   }
   
-  @js.native
   trait TopicArgs extends StObject {
     
     /**
       * IAM role for failure feedback
       */
-    val applicationFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val applicationFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val applicationSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val applicationSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val applicationSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val applicationSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The SNS delivery policy. More on [AWS documentation](https://docs.aws.amazon.com/sns/latest/dg/DeliveryPolicies.html)
       */
-    val deliveryPolicy: js.UndefOr[Input[String]] = js.native
+    val deliveryPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The display name for the SNS topic
       */
-    val displayName: js.UndefOr[Input[String]] = js.native
+    val displayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role for failure feedback
       */
-    val httpFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val httpFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val httpSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val httpSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val httpSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val httpSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ID of an AWS-managed customer master key (CMK) for Amazon SNS or a custom CMK. For more information, see [Key Terms](https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption.html#sse-key-terms)
       */
-    val kmsMasterKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsMasterKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role for failure feedback
       */
-    val lambdaFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val lambdaFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val lambdaSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val lambdaSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val lambdaSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val lambdaSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The friendly name for the SNS topic. By default generated by this provider.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The friendly name for the SNS topic. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fully-formed AWS policy as JSON.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role for failure feedback
       */
-    val sqsFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val sqsFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val sqsSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val sqsSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val sqsSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val sqsSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TopicArgs {
     
@@ -411,108 +403,107 @@ object topicMod {
     }
   }
   
-  @js.native
   trait TopicState extends StObject {
     
     /**
       * IAM role for failure feedback
       */
-    val applicationFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val applicationFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val applicationSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val applicationSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val applicationSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val applicationSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the SNS topic, as a more obvious property (clone of id)
       */
-    val arn: js.UndefOr[Input[ARN]] = js.native
+    val arn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * The SNS delivery policy. More on [AWS documentation](https://docs.aws.amazon.com/sns/latest/dg/DeliveryPolicies.html)
       */
-    val deliveryPolicy: js.UndefOr[Input[String]] = js.native
+    val deliveryPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The display name for the SNS topic
       */
-    val displayName: js.UndefOr[Input[String]] = js.native
+    val displayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role for failure feedback
       */
-    val httpFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val httpFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val httpSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val httpSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val httpSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val httpSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ID of an AWS-managed customer master key (CMK) for Amazon SNS or a custom CMK. For more information, see [Key Terms](https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption.html#sse-key-terms)
       */
-    val kmsMasterKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsMasterKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role for failure feedback
       */
-    val lambdaFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val lambdaFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val lambdaSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val lambdaSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val lambdaSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val lambdaSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The friendly name for the SNS topic. By default generated by this provider.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The friendly name for the SNS topic. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fully-formed AWS policy as JSON.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role for failure feedback
       */
-    val sqsFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val sqsFailureFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM role permitted to receive success feedback for this topic
       */
-    val sqsSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.native
+    val sqsSuccessFeedbackRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Percentage of success to sample
       */
-    val sqsSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
+    val sqsSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TopicState {
     

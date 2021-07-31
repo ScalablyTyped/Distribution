@@ -3,25 +3,23 @@ package typings.ionic.definitionsMod
 import typings.ionicUtilsNetwork.mod.NetworkInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServeDetails extends StObject {
   
-  var custom: Boolean = js.native
+  var custom: Boolean
   
-  var externalAddress: String = js.native
+  var externalAddress: String
   
-  var externalNetworkInterfaces: js.Array[NetworkInterface] = js.native
+  var externalNetworkInterfaces: js.Array[NetworkInterface]
   
-  var externallyAccessible: Boolean = js.native
+  var externallyAccessible: Boolean
   
-  var localAddress: String = js.native
+  var localAddress: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var protocol: String = js.native
+  var protocol: String
 }
 object ServeDetails {
   

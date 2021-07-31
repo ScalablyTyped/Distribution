@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPrintJob
   * @since OOo 1.1.2
   */
-@js.native
-trait XPrintJobListener extends XEventListener {
+trait XPrintJobListener
+  extends StObject
+     with XEventListener {
   
   /**
     * informs the user about the creation or the progress of a PrintJob
     * @param Event contains the {@link XPrintJob} having changed state and the new state.
     */
-  def printJobEvent(Event: PrintJobEvent): Unit = js.native
+  def printJobEvent(Event: PrintJobEvent): Unit
 }
 object XPrintJobListener {
   

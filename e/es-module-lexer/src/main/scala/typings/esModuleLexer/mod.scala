@@ -2,35 +2,35 @@ package typings.esModuleLexer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("es-module-lexer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("es-module-lexer", "init")
   @js.native
   val init: js.Promise[Unit] = js.native
   
-  @JSImport("es-module-lexer", "parse")
-  @js.native
-  def parse(source: String): js.Tuple2[js.Array[ImportSpecifier], js.Array[String]] = js.native
-  @JSImport("es-module-lexer", "parse")
-  @js.native
-  def parse(source: String, name: String): js.Tuple2[js.Array[ImportSpecifier], js.Array[String]] = js.native
+  @scala.inline
+  def parse(source: String): js.Tuple2[js.Array[ImportSpecifier], js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[ImportSpecifier], js.Array[String]]]
+  @scala.inline
+  def parse(source: String, name: String): js.Tuple2[js.Array[ImportSpecifier], js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ImportSpecifier], js.Array[String]]]
   
-  @js.native
   trait ImportSpecifier extends StObject {
     
     /**
       * If this import statement is a dynamic import, this is the start value.
       * Otherwise this is `-1`.
       */
-    var d: Double = js.native
+    var d: Double
     
     /**
       * End of module specifier
       */
-    var e: Double = js.native
+    var e: Double
     
     /**
       * Start of module specifier
@@ -40,12 +40,12 @@ object mod {
       * source.substring(imports[0].s, imports[0].e);
       * // Returns "asdf"
       */
-    var s: Double = js.native
+    var s: Double
     
     /**
       * End of import statement
       */
-    var se: Double = js.native
+    var se: Double
     
     /**
       * Start of import statement
@@ -55,7 +55,7 @@ object mod {
       * source.substring(imports[0].s, imports[0].e);
       * // Returns "import { a } from 'asdf';"
       */
-    var ss: Double = js.native
+    var ss: Double
   }
   object ImportSpecifier {
     

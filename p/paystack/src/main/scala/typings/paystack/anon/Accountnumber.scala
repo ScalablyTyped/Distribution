@@ -2,19 +2,17 @@ package typings.paystack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accountnumber extends StObject {
   
-  var account_number: String = js.native
+  var account_number: String
   
-  var business_name: String = js.native
+  var business_name: String
   
-  var percentage_charge: Double = js.native
+  var percentage_charge: Double
   
-  var settlement_bank: String = js.native
+  var settlement_bank: String
 }
 object Accountnumber {
   

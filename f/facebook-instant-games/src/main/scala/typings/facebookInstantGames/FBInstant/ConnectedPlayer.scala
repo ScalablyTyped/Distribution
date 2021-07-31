@@ -2,13 +2,11 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information about a player who is connected to the current player.
   */
-@js.native
 trait ConnectedPlayer extends StObject {
   
   /**
@@ -16,21 +14,21 @@ trait ConnectedPlayer extends StObject {
     *
     * @returns The ID of the connected player
     */
-  def getID(): String = js.native
+  def getID(): String
   
   /**
     * Get the player's full name.
     *
     * @returns The player's full name
     */
-  def getName(): String | Null = js.native
+  def getName(): String | Null
   
   /**
     * Get the player's public profile photo.
     *
     * @returns A url to the player's public profile photo
     */
-  def getPhoto(): String | Null = js.native
+  def getPhoto(): String | Null
 }
 object ConnectedPlayer {
   

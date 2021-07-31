@@ -4,41 +4,39 @@ import typings.lyricist.anon.Apipath
 import typings.lyricist.anon.Content
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescriptionAnnotation extends StObject {
   
-  var _type: String = js.native
+  var _type: String
   
-  var annotatable: Apipath = js.native
+  var annotatable: Apipath
   
-  var annotations: js.Array[Annotation] = js.native
+  var annotations: js.Array[Annotation]
   
-  var annotator_id: Double = js.native
+  var annotator_id: Double
   
-  var annotator_login: String = js.native
+  var annotator_login: String
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var classification: String = js.native
+  var classification: String
   
-  var fragment: String = js.native
+  var fragment: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var is_description: Boolean = js.native
+  var is_description: Boolean
   
-  var path: String = js.native
+  var path: String
   
-  var range: Content = js.native
+  var range: Content
   
-  var song_id: Double = js.native
+  var song_id: Double
   
-  var url: String = js.native
+  var url: String
   
-  var verified_annotator_ids: js.Array[_] = js.native
+  var verified_annotator_ids: js.Array[js.Any]
 }
 object DescriptionAnnotation {
   
@@ -58,7 +56,7 @@ object DescriptionAnnotation {
     range: Content,
     song_id: Double,
     url: String,
-    verified_annotator_ids: js.Array[_]
+    verified_annotator_ids: js.Array[js.Any]
   ): DescriptionAnnotation = {
     val __obj = js.Dynamic.literal(_type = _type.asInstanceOf[js.Any], annotatable = annotatable.asInstanceOf[js.Any], annotations = annotations.asInstanceOf[js.Any], annotator_id = annotator_id.asInstanceOf[js.Any], annotator_login = annotator_login.asInstanceOf[js.Any], api_path = api_path.asInstanceOf[js.Any], classification = classification.asInstanceOf[js.Any], fragment = fragment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_description = is_description.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], song_id = song_id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verified_annotator_ids = verified_annotator_ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescriptionAnnotation]
@@ -110,7 +108,7 @@ object DescriptionAnnotation {
     def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerified_annotator_ids(value: js.Array[_]): Self = StObject.set(x, "verified_annotator_ids", value.asInstanceOf[js.Any])
+    def setVerified_annotator_ids(value: js.Array[js.Any]): Self = StObject.set(x, "verified_annotator_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerified_annotator_idsVarargs(value: js.Any*): Self = StObject.set(x, "verified_annotator_ids", js.Array(value :_*))

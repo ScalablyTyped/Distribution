@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is deprecated. Use {@link XInvocationAdapterFactory2} .
   * @deprecated Deprecated
   */
-@js.native
-trait XInvocationAdapterFactory extends XInterface {
+trait XInvocationAdapterFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Creates an adapter interface of given type for calling the given {@link XInvocation} interface.
@@ -22,7 +22,7 @@ trait XInvocationAdapterFactory extends XInterface {
     * @param aType supported type of adapter
     * @returns adapter interface; this interface can be queried for XInterface and given type
     */
-  def createAdapter(Invocation: XInvocation, aType: `type`): XInterface = js.native
+  def createAdapter(Invocation: XInvocation, aType: `type`): XInterface
 }
 object XInvocationAdapterFactory {
   

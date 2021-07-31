@@ -4,21 +4,19 @@ import typings.ltijs.idTokenMod.IdToken
 import typings.ltijs.ltijsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deepLinkingMod {
   
-  @js.native
   trait ContentItem extends StObject {
     
-    var custom: js.UndefOr[js.Any] = js.native
+    var custom: js.UndefOr[js.Any] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ContentItem {
     
@@ -52,16 +50,15 @@ object deepLinkingMod {
     }
   }
   
-  @js.native
   trait DeepLinkingMessageOptions extends StObject {
     
-    var errlog: js.UndefOr[String] = js.native
+    var errlog: js.UndefOr[String] = js.undefined
     
-    var errmessage: js.UndefOr[String] = js.native
+    var errmessage: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[String] = js.native
+    var log: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object DeepLinkingMessageOptions {
     
@@ -100,12 +97,11 @@ object deepLinkingMod {
     }
   }
   
-  @js.native
   trait DeepLinkingService extends StObject {
     
-    def createDeepLinkingForm(idtoken: IdToken, contentItems: js.Array[ContentItem], options: DeepLinkingMessageOptions): js.Promise[String | `false`] = js.native
+    def createDeepLinkingForm(idtoken: IdToken, contentItems: js.Array[ContentItem], options: DeepLinkingMessageOptions): js.Promise[String | `false`]
     
-    def createDeepLinkingMessage(idtoken: IdToken, contentItems: js.Array[ContentItem], options: DeepLinkingMessageOptions): js.Promise[String | `false`] = js.native
+    def createDeepLinkingMessage(idtoken: IdToken, contentItems: js.Array[ContentItem], options: DeepLinkingMessageOptions): js.Promise[String | `false`]
   }
   object DeepLinkingService {
     

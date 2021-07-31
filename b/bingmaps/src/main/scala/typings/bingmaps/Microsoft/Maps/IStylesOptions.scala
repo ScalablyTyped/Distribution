@@ -2,20 +2,18 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStylesOptions extends StObject {
   
   /** Sets the options for all polygons. */
-  var polygonOptions: js.UndefOr[IPolygonOptions] = js.native
+  var polygonOptions: js.UndefOr[IPolygonOptions] = js.undefined
   
   /** Sets the options for all polylines. */
-  var polylineOptions: js.UndefOr[IPolylineOptions] = js.native
+  var polylineOptions: js.UndefOr[IPolylineOptions] = js.undefined
   
   /** Sets the options for all pushpins. */
-  var pushpinOptions: js.UndefOr[IPushpinOptions] = js.native
+  var pushpinOptions: js.UndefOr[IPushpinOptions] = js.undefined
 }
 object IStylesOptions {
   

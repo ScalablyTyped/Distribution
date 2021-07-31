@@ -2,57 +2,53 @@ package typings.reactNativeSharedGroupPreferences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("react-native-shared-group-preferences", "default.getItem")
+    @JSImport("react-native-shared-group-preferences", JSImport.Default)
     @js.native
-    def getItem(key: String, appGroup: String): js.Promise[_] = js.native
-    @JSImport("react-native-shared-group-preferences", "default.getItem")
-    @js.native
-    def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-shared-group-preferences", "default.isAppInstalledAndroid")
-    @js.native
-    def isAppInstalledAndroid(packageName: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def getItem(key: String, appGroup: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("react-native-shared-group-preferences", "default.setItem")
-    @js.native
-    def setItem(key: String, value: js.Any, appGroup: String): js.Promise[Unit] = js.native
-    @JSImport("react-native-shared-group-preferences", "default.setItem")
-    @js.native
-    def setItem(key: String, value: js.Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def isAppInstalledAndroid(packageName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAppInstalledAndroid")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    @scala.inline
+    def setItem(key: String, value: js.Any, appGroup: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def setItem(key: String, value: js.Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   object SharedGroupPreferences {
     
-    @JSImport("react-native-shared-group-preferences", "SharedGroupPreferences.getItem")
+    @JSImport("react-native-shared-group-preferences", "SharedGroupPreferences")
     @js.native
-    def getItem(key: String, appGroup: String): js.Promise[_] = js.native
-    @JSImport("react-native-shared-group-preferences", "SharedGroupPreferences.getItem")
-    @js.native
-    def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-shared-group-preferences", "SharedGroupPreferences.isAppInstalledAndroid")
-    @js.native
-    def isAppInstalledAndroid(packageName: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def getItem(key: String, appGroup: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def getItem(key: String, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(key.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("react-native-shared-group-preferences", "SharedGroupPreferences.setItem")
-    @js.native
-    def setItem(key: String, value: js.Any, appGroup: String): js.Promise[Unit] = js.native
-    @JSImport("react-native-shared-group-preferences", "SharedGroupPreferences.setItem")
-    @js.native
-    def setItem(key: String, value: js.Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = js.native
+    @scala.inline
+    def isAppInstalledAndroid(packageName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAppInstalledAndroid")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    @scala.inline
+    def setItem(key: String, value: js.Any, appGroup: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def setItem(key: String, value: js.Any, appGroup: String, options: SharedGroupPreferenceOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], appGroup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
-  @js.native
   trait SharedGroupPreferenceOptions extends StObject {
     
-    var useAndroidSharedPreferences: js.UndefOr[Boolean] = js.native
+    var useAndroidSharedPreferences: js.UndefOr[Boolean] = js.undefined
   }
   object SharedGroupPreferenceOptions {
     

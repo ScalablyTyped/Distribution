@@ -10,9 +10,9 @@ A WebGL interactive maps library
 | ------------------ | :-------------: |
 | Full name          | mapbox-gl |
 | Keywords           | - |
-| # releases         | 52 |
-| # dependents       | 337 |
-| # downloads        | 17176673 |
+| # releases         | 51 |
+| # dependents       | 375 |
+| # downloads        | 19130073 |
 | # stars            | 6 |
 
 ## Links

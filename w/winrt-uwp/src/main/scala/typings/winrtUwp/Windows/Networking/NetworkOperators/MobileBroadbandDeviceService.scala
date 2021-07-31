@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband device service. */
-@js.native
 trait MobileBroadbandDeviceService extends StObject {
   
   /** Gets the unique device service identity for the mobile broadband device service. */
-  var deviceServiceId: String = js.native
+  var deviceServiceId: String
   
   /**
     * Opens a new MobileBroadbandDeviceServiceCommandSession for the mobile broadband device service.
     * @return A new command session for the mobile broadband device service.
     */
-  def openCommandSession(): MobileBroadbandDeviceServiceCommandSession = js.native
+  def openCommandSession(): MobileBroadbandDeviceServiceCommandSession
   
   /**
     * Opens a new MobileBroadbandDeviceServiceDataSession for the mobile broadband device service.
     * @return A new data session for the Mobile Broadband device service.
     */
-  def openDataSession(): MobileBroadbandDeviceServiceDataSession = js.native
+  def openDataSession(): MobileBroadbandDeviceServiceDataSession
   
   /** Gets a list of supported device service commands for the mobile broadband device service. */
-  var supportedCommands: IVectorView[Double] = js.native
+  var supportedCommands: IVectorView[Double]
 }
 object MobileBroadbandDeviceService {
   

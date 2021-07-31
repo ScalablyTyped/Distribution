@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePipelineResponse extends StObject {
   
   /**
     * The ARN of the pipeline.
     */
-  var pipelineArn: js.UndefOr[PipelineArn] = js.native
+  var pipelineArn: js.UndefOr[PipelineArn] = js.undefined
   
   /**
     * The name of the pipeline.
     */
-  var pipelineName: js.UndefOr[PipelineName] = js.native
+  var pipelineName: js.UndefOr[PipelineName] = js.undefined
 }
 object CreatePipelineResponse {
   

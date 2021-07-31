@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -95,21 +94,23 @@ class Margin () extends StObject {
 }
 object Margin {
   
+  @JSImport("go", "Margin")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This static function can be used to read in a Margin from a string that was produced by Margin.stringify.
     * @param {string} str
     */
   /* static member */
-  @JSImport("go", "Margin.parse")
-  @js.native
-  def parse(str: String): Margin = js.native
+  @scala.inline
+  def parse(str: String): Margin = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Margin]
   
   /**
     * This static function can be used to write out a Margin as a string that can be read by Margin.parse.
     * @param {Margin} val
     */
   /* static member */
-  @JSImport("go", "Margin.stringify")
-  @js.native
-  def stringify(`val`: Margin): String = js.native
+  @scala.inline
+  def stringify(`val`: Margin): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

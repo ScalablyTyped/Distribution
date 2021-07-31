@@ -10,9 +10,9 @@ A framework for building GraphQL-driven React applications.
 | ------------------ | :-------------: |
 | Full name          | react-relay |
 | Keywords           | graphql, relay, react |
-| # releases         | 1252 |
-| # dependents       | 93 |
-| # downloads        | 7059637 |
+| # releases         | 1547 |
+| # dependents       | 94 |
+| # downloads        | 8362749 |
 | # stars            | 23 |
 
 ## Links

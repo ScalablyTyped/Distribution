@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities. */
 @js.native
 trait Navigator
-  extends MSFileSaver
+  extends StObject
+     with MSFileSaver
      with MSNavigatorDoNotTrack
      with NavigatorAutomationInformation
      with NavigatorBeacon
@@ -46,11 +46,7 @@ trait Navigator
   val mediaDevices: MediaDevices = js.native
   
   def msLaunchUri(uri: java.lang.String): Unit = js.native
-  def msLaunchUri(
-    uri: java.lang.String,
-    successCallback: js.UndefOr[scala.Nothing],
-    noHandlerCallback: MSLaunchUriCallback
-  ): Unit = js.native
+  def msLaunchUri(uri: java.lang.String, successCallback: Unit, noHandlerCallback: MSLaunchUriCallback): Unit = js.native
   def msLaunchUri(uri: java.lang.String, successCallback: MSLaunchUriCallback): Unit = js.native
   def msLaunchUri(
     uri: java.lang.String,

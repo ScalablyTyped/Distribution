@@ -2,10 +2,8 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Rule extends StObject {
     * ect of rules depends largely on the placement of the "rules": set within your JSON code. In the above example, the styling attribu
     * tes within each rule will be applied to the scale-y guide. "%c == 2" | "%v <= 0" | "%v > 0" | ...
     */
-  var rule: js.UndefOr[String] = js.native
+  var rule: js.UndefOr[String] = js.undefined
 }
 object Rule {
   

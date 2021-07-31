@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRibbon.ActiveTabChanged event.
   */
-@js.native
-trait ASPxClientRibbonTabEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRibbonTabEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the tab object related to the event.
     */
-  var tab: ASPxClientRibbonTab = js.native
+  var tab: ASPxClientRibbonTab
 }
 object ASPxClientRibbonTabEventArgs {
   

@@ -9,31 +9,29 @@ import typings.yandexMaps.yandexMapsStrings.right
 import typings.yandexMaps.yandexMapsStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdjustMapMargin extends StObject {
   
-  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var collapseOnBlur: js.UndefOr[Boolean] = js.native
+  var collapseOnBlur: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[none | left | right] = js.native
+  var float: js.UndefOr[none | left | right] = js.undefined
   
-  var floatIndex: js.UndefOr[Double] = js.native
+  var floatIndex: js.UndefOr[Double] = js.undefined
   
-  var popupAnimate: js.UndefOr[Boolean] = js.native
+  var popupAnimate: js.UndefOr[Boolean] = js.undefined
   
-  var popupFloat: js.UndefOr[auto | left | right] = js.native
+  var popupFloat: js.UndefOr[auto | left | right] = js.undefined
   
-  var popupWidth: js.UndefOr[String] = js.native
+  var popupWidth: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[Bottom] = js.native
+  var position: js.UndefOr[Bottom] = js.undefined
   
-  var size: js.UndefOr[auto | small | medium | large] = js.native
+  var size: js.UndefOr[auto | small | medium | large] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object AdjustMapMargin {
   

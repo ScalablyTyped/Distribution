@@ -3,29 +3,27 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseScale extends StObject {
   
-  var domain: js.UndefOr[(js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef] = js.native
+  var domain: js.UndefOr[(js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef] = js.undefined
   
-  var domainMax: js.UndefOr[Double | SignalRef] = js.native
+  var domainMax: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var domainMid: js.UndefOr[Double | SignalRef] = js.native
+  var domainMid: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var domainMin: js.UndefOr[Double | SignalRef] = js.native
+  var domainMin: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.native
+  var domainRaw: js.UndefOr[Null | js.Array[js.Any] | SignalRef] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var reverse: js.UndefOr[Boolean | SignalRef] = js.native
+  var reverse: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var round: js.UndefOr[Boolean | SignalRef] = js.native
+  var round: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var `type`: js.UndefOr[ScaleType] = js.native
+  var `type`: js.UndefOr[ScaleType] = js.undefined
 }
 object BaseScale {
   
@@ -60,7 +58,7 @@ object BaseScale {
     def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
     
     @scala.inline
-    def setDomainRaw(value: js.Array[_] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
+    def setDomainRaw(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDomainRawNull: Self = StObject.set(x, "domainRaw", null)

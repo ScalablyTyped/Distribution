@@ -2,17 +2,15 @@ package typings.autoprefixer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Browsers extends StObject {
     
-    var browsers: js.Any = js.native
+    var browsers: js.Any
     
-    var prefixes: js.Any = js.native
+    var prefixes: js.Any
   }
   object Browsers {
     

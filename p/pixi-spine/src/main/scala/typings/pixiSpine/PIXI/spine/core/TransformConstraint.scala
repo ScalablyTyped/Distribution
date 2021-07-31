@@ -2,40 +2,40 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformConstraint extends Updatable {
+trait TransformConstraint
+  extends StObject
+     with Updatable {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
   
-  def applyAbsoluteLocal(): Unit = js.native
+  def applyAbsoluteLocal(): Unit
   
-  def applyAbsoluteWorld(): Unit = js.native
+  def applyAbsoluteWorld(): Unit
   
-  def applyRelativeLocal(): Unit = js.native
+  def applyRelativeLocal(): Unit
   
-  def applyRelativeWorld(): Unit = js.native
+  def applyRelativeWorld(): Unit
   
-  var bones: js.Array[Bone] = js.native
+  var bones: js.Array[Bone]
   
-  var data: TransformConstraintData = js.native
+  var data: TransformConstraintData
   
-  var rotateMix: Double = js.native
+  var rotateMix: Double
   
-  var scaleMix: Double = js.native
+  var scaleMix: Double
   
-  var shearMix: Double = js.native
+  var shearMix: Double
   
-  var target: Bone = js.native
+  var target: Bone
   
-  var temp: Vector2 = js.native
+  var temp: Vector2
   
-  var translateMix: Double = js.native
+  var translateMix: Double
 }
 object TransformConstraint {
   

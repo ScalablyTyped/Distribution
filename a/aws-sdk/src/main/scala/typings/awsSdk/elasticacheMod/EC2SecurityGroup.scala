@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2SecurityGroup extends StObject {
   
   /**
     * The name of the Amazon EC2 security group.
     */
-  var EC2SecurityGroupName: js.UndefOr[String] = js.native
+  var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID of the Amazon EC2 security group owner.
     */
-  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.native
+  var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the Amazon EC2 security group.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object EC2SecurityGroup {
   

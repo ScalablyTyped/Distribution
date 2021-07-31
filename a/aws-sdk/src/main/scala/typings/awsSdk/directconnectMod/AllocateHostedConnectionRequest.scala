@@ -2,41 +2,39 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocateHostedConnectionRequest extends StObject {
   
   /**
     * The bandwidth of the connection. The possible values are 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps, and 10Gbps. Note that only those AWS Direct Connect Partners who have met specific requirements are allowed to create a 1Gbps, 2Gbps, 5Gbps or 10Gbps hosted connection. 
     */
-  var bandwidth: Bandwidth = js.native
+  var bandwidth: Bandwidth
   
   /**
     * The ID of the interconnect or LAG.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * The name of the hosted connection.
     */
-  var connectionName: ConnectionName = js.native
+  var connectionName: ConnectionName
   
   /**
     * The ID of the AWS account ID of the customer for the connection.
     */
-  var ownerAccount: OwnerAccount = js.native
+  var ownerAccount: OwnerAccount
   
   /**
     * The tags associated with the connection.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The dedicated VLAN provisioned to the hosted connection.
     */
-  var vlan: VLAN = js.native
+  var vlan: VLAN
 }
 object AllocateHostedConnectionRequest {
   

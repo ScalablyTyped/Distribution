@@ -2,40 +2,38 @@ package typings.franc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("franc", JSImport.Namespace)
-  @js.native
-  def apply(text: String): ISO6393 = js.native
-  @JSImport("franc", JSImport.Namespace)
-  @js.native
-  def apply(text: String, options: Options): ISO6393 = js.native
+  @scala.inline
+  def apply(text: String): ISO6393 = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[ISO6393]
+  @scala.inline
+  def apply(text: String, options: Options): ISO6393 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ISO6393]
   
-  @JSImport("franc", "all")
+  @JSImport("franc", JSImport.Namespace)
   @js.native
-  def all(text: String): js.Tuple2[ISO6393, Double] = js.native
-  @JSImport("franc", "all")
-  @js.native
-  def all(text: String, options: Options): js.Tuple2[ISO6393, Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def all(text: String): js.Tuple2[ISO6393, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(text.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[ISO6393, Double]]
+  @scala.inline
+  def all(text: String, options: Options): js.Tuple2[ISO6393, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ISO6393, Double]]
   
   // Range [0, 1]
   type Confidence = Double
   
   type ISO6393 = String
   
-  @js.native
   trait Options extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[ISO6393]] = js.native
+    var blacklist: js.UndefOr[js.Array[ISO6393]] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var only: js.UndefOr[js.Array[String]] = js.native
+    var only: js.UndefOr[js.Array[String]] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[ISO6393]] = js.native
+    var whitelist: js.UndefOr[js.Array[ISO6393]] = js.undefined
   }
   object Options {
     

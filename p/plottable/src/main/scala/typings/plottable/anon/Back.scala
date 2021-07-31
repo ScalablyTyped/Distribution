@@ -39,129 +39,89 @@ import typings.plottable.plottableStrings.sinInOut
 import typings.plottable.plottableStrings.sinOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Back extends StObject {
   
-  var back: typings.plottable.plottableStrings.back = js.native
+  var back: typings.plottable.plottableStrings.back
   
-  var backIn: typings.plottable.plottableStrings.backIn = js.native
+  var backIn: typings.plottable.plottableStrings.backIn
   
-  var backInOut: typings.plottable.plottableStrings.backInOut = js.native
+  var backInOut: typings.plottable.plottableStrings.backInOut
   
-  var backOut: typings.plottable.plottableStrings.backOut = js.native
+  var backOut: typings.plottable.plottableStrings.backOut
   
-  var bounce: typings.plottable.plottableStrings.bounce = js.native
+  var bounce: typings.plottable.plottableStrings.bounce
   
-  var bounceIn: typings.plottable.plottableStrings.bounceIn = js.native
+  var bounceIn: typings.plottable.plottableStrings.bounceIn
   
-  var bounceInOut: typings.plottable.plottableStrings.bounceInOut = js.native
+  var bounceInOut: typings.plottable.plottableStrings.bounceInOut
   
-  var bounceOut: typings.plottable.plottableStrings.bounceOut = js.native
+  var bounceOut: typings.plottable.plottableStrings.bounceOut
   
-  var circle: typings.plottable.plottableStrings.circle = js.native
+  var circle: typings.plottable.plottableStrings.circle
   
-  var circleIn: typings.plottable.plottableStrings.circleIn = js.native
+  var circleIn: typings.plottable.plottableStrings.circleIn
   
-  var circleInOut: typings.plottable.plottableStrings.circleInOut = js.native
+  var circleInOut: typings.plottable.plottableStrings.circleInOut
   
-  var circleOut: typings.plottable.plottableStrings.circleOut = js.native
+  var circleOut: typings.plottable.plottableStrings.circleOut
   
-  var cubic: typings.plottable.plottableStrings.cubic = js.native
+  var cubic: typings.plottable.plottableStrings.cubic
   
-  var cubicIn: typings.plottable.plottableStrings.cubicIn = js.native
+  var cubicIn: typings.plottable.plottableStrings.cubicIn
   
-  var cubicInOut: typings.plottable.plottableStrings.cubicInOut = js.native
+  var cubicInOut: typings.plottable.plottableStrings.cubicInOut
   
-  var cubicOut: typings.plottable.plottableStrings.cubicOut = js.native
+  var cubicOut: typings.plottable.plottableStrings.cubicOut
   
-  var elastic: typings.plottable.plottableStrings.elastic = js.native
+  var elastic: typings.plottable.plottableStrings.elastic
   
-  var elasticIn: typings.plottable.plottableStrings.elasticIn = js.native
+  var elasticIn: typings.plottable.plottableStrings.elasticIn
   
-  var elasticInOut: typings.plottable.plottableStrings.elasticInOut = js.native
+  var elasticInOut: typings.plottable.plottableStrings.elasticInOut
   
-  var elasticOut: typings.plottable.plottableStrings.elasticOut = js.native
+  var elasticOut: typings.plottable.plottableStrings.elasticOut
   
-  var exp: typings.plottable.plottableStrings.exp = js.native
+  var exp: typings.plottable.plottableStrings.exp
   
-  var expIn: typings.plottable.plottableStrings.expIn = js.native
+  var expIn: typings.plottable.plottableStrings.expIn
   
-  var expInOut: typings.plottable.plottableStrings.expInOut = js.native
+  var expInOut: typings.plottable.plottableStrings.expInOut
   
-  var expOut: typings.plottable.plottableStrings.expOut = js.native
+  var expOut: typings.plottable.plottableStrings.expOut
   
-  var linear: typings.plottable.plottableStrings.linear = js.native
+  var linear: typings.plottable.plottableStrings.linear
   
-  var poly: typings.plottable.plottableStrings.poly = js.native
+  var poly: typings.plottable.plottableStrings.poly
   
-  var polyIn: typings.plottable.plottableStrings.polyIn = js.native
+  var polyIn: typings.plottable.plottableStrings.polyIn
   
-  var polyInOut: typings.plottable.plottableStrings.polyInOut = js.native
+  var polyInOut: typings.plottable.plottableStrings.polyInOut
   
-  var polyOut: typings.plottable.plottableStrings.polyOut = js.native
+  var polyOut: typings.plottable.plottableStrings.polyOut
   
-  var quad: typings.plottable.plottableStrings.quad = js.native
+  var quad: typings.plottable.plottableStrings.quad
   
-  var quadIn: typings.plottable.plottableStrings.quadIn = js.native
+  var quadIn: typings.plottable.plottableStrings.quadIn
   
-  var quadInOut: typings.plottable.plottableStrings.quadInOut = js.native
+  var quadInOut: typings.plottable.plottableStrings.quadInOut
   
-  var quadOut: typings.plottable.plottableStrings.quadOut = js.native
+  var quadOut: typings.plottable.plottableStrings.quadOut
   
-  var sin: typings.plottable.plottableStrings.sin = js.native
+  var sin: typings.plottable.plottableStrings.sin
   
-  var sinIn: typings.plottable.plottableStrings.sinIn = js.native
+  var sinIn: typings.plottable.plottableStrings.sinIn
   
-  var sinInOut: typings.plottable.plottableStrings.sinInOut = js.native
+  var sinInOut: typings.plottable.plottableStrings.sinInOut
   
-  var sinOut: typings.plottable.plottableStrings.sinOut = js.native
+  var sinOut: typings.plottable.plottableStrings.sinOut
 }
 object Back {
   
   @scala.inline
-  def apply(
-    back: back,
-    backIn: backIn,
-    backInOut: backInOut,
-    backOut: backOut,
-    bounce: bounce,
-    bounceIn: bounceIn,
-    bounceInOut: bounceInOut,
-    bounceOut: bounceOut,
-    circle: circle,
-    circleIn: circleIn,
-    circleInOut: circleInOut,
-    circleOut: circleOut,
-    cubic: cubic,
-    cubicIn: cubicIn,
-    cubicInOut: cubicInOut,
-    cubicOut: cubicOut,
-    elastic: elastic,
-    elasticIn: elasticIn,
-    elasticInOut: elasticInOut,
-    elasticOut: elasticOut,
-    exp: exp,
-    expIn: expIn,
-    expInOut: expInOut,
-    expOut: expOut,
-    linear: linear,
-    poly: poly,
-    polyIn: polyIn,
-    polyInOut: polyInOut,
-    polyOut: polyOut,
-    quad: quad,
-    quadIn: quadIn,
-    quadInOut: quadInOut,
-    quadOut: quadOut,
-    sin: sin,
-    sinIn: sinIn,
-    sinInOut: sinInOut,
-    sinOut: sinOut
-  ): Back = {
-    val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], backIn = backIn.asInstanceOf[js.Any], backInOut = backInOut.asInstanceOf[js.Any], backOut = backOut.asInstanceOf[js.Any], bounce = bounce.asInstanceOf[js.Any], bounceIn = bounceIn.asInstanceOf[js.Any], bounceInOut = bounceInOut.asInstanceOf[js.Any], bounceOut = bounceOut.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], circleIn = circleIn.asInstanceOf[js.Any], circleInOut = circleInOut.asInstanceOf[js.Any], circleOut = circleOut.asInstanceOf[js.Any], cubic = cubic.asInstanceOf[js.Any], cubicIn = cubicIn.asInstanceOf[js.Any], cubicInOut = cubicInOut.asInstanceOf[js.Any], cubicOut = cubicOut.asInstanceOf[js.Any], elastic = elastic.asInstanceOf[js.Any], elasticIn = elasticIn.asInstanceOf[js.Any], elasticInOut = elasticInOut.asInstanceOf[js.Any], elasticOut = elasticOut.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], expIn = expIn.asInstanceOf[js.Any], expInOut = expInOut.asInstanceOf[js.Any], expOut = expOut.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], polyIn = polyIn.asInstanceOf[js.Any], polyInOut = polyInOut.asInstanceOf[js.Any], polyOut = polyOut.asInstanceOf[js.Any], quad = quad.asInstanceOf[js.Any], quadIn = quadIn.asInstanceOf[js.Any], quadInOut = quadInOut.asInstanceOf[js.Any], quadOut = quadOut.asInstanceOf[js.Any], sin = sin.asInstanceOf[js.Any], sinIn = sinIn.asInstanceOf[js.Any], sinInOut = sinInOut.asInstanceOf[js.Any], sinOut = sinOut.asInstanceOf[js.Any])
+  def apply(): Back = {
+    val __obj = js.Dynamic.literal(back = "back", backIn = "backIn", backInOut = "backInOut", backOut = "backOut", bounce = "bounce", bounceIn = "bounceIn", bounceInOut = "bounceInOut", bounceOut = "bounceOut", circle = "circle", circleIn = "circleIn", circleInOut = "circleInOut", circleOut = "circleOut", cubic = "cubic", cubicIn = "cubicIn", cubicInOut = "cubicInOut", cubicOut = "cubicOut", elastic = "elastic", elasticIn = "elasticIn", elasticInOut = "elasticInOut", elasticOut = "elasticOut", exp = "exp", expIn = "expIn", expInOut = "expInOut", expOut = "expOut", linear = "linear", poly = "poly", polyIn = "polyIn", polyInOut = "polyInOut", polyOut = "polyOut", quad = "quad", quadIn = "quadIn", quadInOut = "quadInOut", quadOut = "quadOut", sin = "sin", sinIn = "sinIn", sinInOut = "sinInOut", sinOut = "sinOut")
     __obj.asInstanceOf[Back]
   }
   

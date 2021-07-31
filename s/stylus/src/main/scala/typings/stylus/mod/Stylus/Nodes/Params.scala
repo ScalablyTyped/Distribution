@@ -3,20 +3,20 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Params extends Node {
+trait Params
+  extends StObject
+     with Node {
   
-  var length: Double = js.native
+  var length: Double
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
   
   /**
     * Push the given `node`.
     */
-  def push(node: Node): scala.Unit = js.native
+  def push(node: Node): scala.Unit
 }
 object Params {
   

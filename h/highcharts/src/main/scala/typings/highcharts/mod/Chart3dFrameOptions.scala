@@ -2,51 +2,49 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chart3dFrameOptions extends StObject {
   
   /**
     * (Highcharts) The back side of the frame around a 3D chart.
     */
-  var back: js.UndefOr[Chart3dFrameBackOptions] = js.native
+  var back: js.UndefOr[Chart3dFrameBackOptions] = js.undefined
   
   /**
     * (Highcharts) The bottom of the frame around a 3D chart.
     */
-  var bottom: js.UndefOr[Chart3dFrameBottomOptions] = js.native
+  var bottom: js.UndefOr[Chart3dFrameBottomOptions] = js.undefined
   
   /**
     * (Highcharts) The front of the frame around a 3D chart.
     */
-  var front: js.UndefOr[Chart3dFrameFrontOptions] = js.native
+  var front: js.UndefOr[Chart3dFrameFrontOptions] = js.undefined
   
   /**
     * (Highcharts) The left side of the frame around a 3D chart.
     */
-  var left: js.UndefOr[Chart3dFrameLeftOptions] = js.native
+  var left: js.UndefOr[Chart3dFrameLeftOptions] = js.undefined
   
   /**
     * (Highcharts) The right of the frame around a 3D chart.
     */
-  var right: js.UndefOr[Chart3dFrameRightOptions] = js.native
+  var right: js.UndefOr[Chart3dFrameRightOptions] = js.undefined
   
   /**
     * (Highcharts) General pixel thickness for the frame faces.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The top of the frame around a 3D chart.
     */
-  var top: js.UndefOr[Chart3dFrameTopOptions] = js.native
+  var top: js.UndefOr[Chart3dFrameTopOptions] = js.undefined
   
   /**
     * (Highcharts) Whether the frames are visible.
     */
-  var visible: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[String] = js.undefined
 }
 object Chart3dFrameOptions {
   

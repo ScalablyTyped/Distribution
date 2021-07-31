@@ -2,19 +2,20 @@ package typings.b2a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("b2a", "atob")
+  @JSImport("b2a", JSImport.Namespace)
   @js.native
-  def atob(base64: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def atob(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts text into base64 string
     */
-  @JSImport("b2a", "btoa")
-  @js.native
-  def btoa(text: String): String = js.native
+  @scala.inline
+  def btoa(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,38 +2,36 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SidenavOptions> * / any
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ @js.native
-trait Sidenav extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Openable * / any */ trait Sidenav extends StObject {
   
   /**
     * Closes Sidenav
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Describes if Sidenav is being dragged
     */
-  var isDragged: Boolean = js.native
+  var isDragged: Boolean
   
   /**
     * Describes if sidenav is fixed
     */
-  var isFixed: Boolean = js.native
+  var isFixed: Boolean
   
   /**
     * Describes open/close state of Sidenav
     */
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
   /**
     * Opens Sidenav
     */
-  def open(): Unit = js.native
+  def open(): Unit
 }
 object Sidenav {
   

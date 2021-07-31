@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object OnClickNothing {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickNothing.create")
-  @js.native
-  def create(model: IModel): OnClickNothing = js.native
+  @scala.inline
+  def create(model: IModel): OnClickNothing = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OnClickNothing]
   
   /**
     * Creates and returns a new OnClickNothing instance in the SDK and on the server.
@@ -52,9 +50,8 @@ object OnClickNothing {
     *  6.0.0 to 7.17.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickNothing.createIn")
-  @js.native
-  def createIn(container: DynamicImageViewer): OnClickNothing = js.native
+  @scala.inline
+  def createIn(container: DynamicImageViewer): OnClickNothing = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[OnClickNothing]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OnClickNothing.structureTypeName")

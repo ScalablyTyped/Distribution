@@ -17,7 +17,6 @@ import typings.std.Event
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -36,33 +35,32 @@ object ReactDataGrid {
   /**
     * Information about a copy paste
     */
-  @js.native
   trait CellCopyPasteEvent extends StObject {
     
     /**
       * The key of the column where the copy paste occurred.
       */
-    var cellKey: String = js.native
+    var cellKey: String
     
     /**
       * The row that was copied from.
       */
-    var fromRow: Double = js.native
+    var fromRow: Double
     
     /**
       * The row that was pasted to.
       */
-    var rowIdx: Double = js.native
+    var rowIdx: Double
     
     /**
       * The row that was pasted to.
       */
-    var toRow: Double = js.native
+    var toRow: Double
     
     /**
       * The value that was pasted.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object CellCopyPasteEvent {
     
@@ -95,28 +93,27 @@ object ReactDataGrid {
   /**
     * Information about a cell drag
     */
-  @js.native
   trait CellDragEvent extends StObject {
     
     /**
       * The name of the column that was dragged.
       */
-    var cellKey: String = js.native
+    var cellKey: String
     
     /**
       * The row where the drag began.
       */
-    var fromRow: Double = js.native
+    var fromRow: Double
     
     /**
       * The row where the drag ended.
       */
-    var toRow: Double = js.native
+    var toRow: Double
     
     /**
       * The value of the cell that was dragged.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object CellDragEvent {
     
@@ -146,28 +143,27 @@ object ReactDataGrid {
   /**
     *   Information about a cell expanded.
     */
-  @js.native
   trait CellExpandEvent[T] extends StObject {
     
     /**
       * Expand data.
       */
-    var expandArgs: js.Any = js.native
+    var expandArgs: js.Any
     
     /**
       * The column index where the cell is being expanded.
       */
-    var idx: Double = js.native
+    var idx: Double
     
     /**
       * The values of the row.
       */
-    var rowData: T = js.native
+    var rowData: T
     
     /**
       * The row index where the cell is being expanded.
       */
-    var rowIdx: Double = js.native
+    var rowIdx: Double
   }
   object CellExpandEvent {
     
@@ -178,7 +174,7 @@ object ReactDataGrid {
     }
     
     @scala.inline
-    implicit class CellExpandEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[_], T] (val x: Self with typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]) extends AnyVal {
+    implicit class CellExpandEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.CellExpandEvent[T]) extends AnyVal {
       
       @scala.inline
       def setExpandArgs(value: js.Any): Self = StObject.set(x, "expandArgs", value.asInstanceOf[js.Any])
@@ -197,25 +193,24 @@ object ReactDataGrid {
   /**
     * Information about a specific column to be rendered.
     */
-  @js.native
   trait Column[T] extends StObject {
     
     /**
       * A class name to be applied to the cells in the column
       */
-    var cellClass: js.UndefOr[String] = js.native
+    var cellClass: js.UndefOr[String] = js.undefined
     
     /**
       * Whether this column can be dragged (re-arranged).
       * @default false
       */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this column can be edited.
       * @default false
       */
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The editor for this column. Several editors are available in "react-data-grid/addons".
@@ -223,7 +218,7 @@ object ReactDataGrid {
       */
     var editor: js.UndefOr[
         ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | StatelessComponent[EditorBaseProps]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Events to be bound to the cells in this specific column.
@@ -231,23 +226,27 @@ object ReactDataGrid {
       * @example
       * function onXxx(ev :SyntheticEvent, (rowIdx, idx, name): args)
       */
-    var events: js.UndefOr[StringDictionary[ColumnEventCallback]] = js.native
+    var events: js.UndefOr[StringDictionary[ColumnEventCallback]] = js.undefined
     
     /**
       * A custom formatter for this column's filter.
       */
-    var filterRenderer: js.UndefOr[ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+    var filterRenderer: js.UndefOr[
+        ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+      ] = js.undefined
     
     /**
       * Whether the rows in the grid can be filtered by this column.
       * @default false
       */
-    var filterable: js.UndefOr[Boolean] = js.native
+    var filterable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom read-only formatter for this column. An image formatter is available in "react-data-grid/addons".
       */
-    var formatter: js.UndefOr[ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+    var formatter: js.UndefOr[
+        ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+      ] = js.undefined
     
     /**
       * Retrieve meta data about the row, optionally provide column as a second argument
@@ -256,49 +255,51 @@ object ReactDataGrid {
         js.Function2[
           /* rowdata */ T, 
           /* column */ js.UndefOr[typings.reactDataGrid.AdazzleReactDataGrid.Column[T]], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A custom formatter for this column's header.
       */
-    var headerRenderer: js.UndefOr[ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+    var headerRenderer: js.UndefOr[
+        ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
+      ] = js.undefined
     
     /**
       * A unique key for this column. Required.
       * Each row should have a property with this name, which contains this column's value.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Whether this column should stay fixed on the left as the user scrolls horizontally.
       * @default false
       */
-    var locked: js.UndefOr[Boolean] = js.native
+    var locked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This column's display name. Required.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Whether this column can be resized by the user.
       * @default false
       */
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the rows in the grid can be sorted by this column.
       * @default false
       */
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom width for this specific column.
       * @default minColumnWidth from the ReactDataGrid
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Column {
     
@@ -309,7 +310,7 @@ object ReactDataGrid {
     }
     
     @scala.inline
-    implicit class ColumnMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[_], T] (val x: Self with typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]) extends AnyVal {
+    implicit class ColumnMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.Column[T]) extends AnyVal {
       
       @scala.inline
       def setCellClass(value: String): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
@@ -344,7 +345,7 @@ object ReactDataGrid {
       def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
       @scala.inline
-      def setFilterRenderer(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
+      def setFilterRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterRendererUndefined: Self = StObject.set(x, "filterRenderer", js.undefined)
@@ -356,21 +357,21 @@ object ReactDataGrid {
       def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
       
       @scala.inline
-      def setFormatter(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      def setFormatter(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
       @scala.inline
       def setGetRowMetaData(
-        value: (/* rowdata */ T, /* column */ js.UndefOr[typings.reactDataGrid.AdazzleReactDataGrid.Column[T]]) => _
+        value: (/* rowdata */ T, /* column */ js.UndefOr[typings.reactDataGrid.AdazzleReactDataGrid.Column[T]]) => js.Any
       ): Self = StObject.set(x, "getRowMetaData", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetRowMetaDataUndefined: Self = StObject.set(x, "getRowMetaData", js.undefined)
       
       @scala.inline
-      def setHeaderRenderer(value: ReactElement | (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
+      def setHeaderRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)
@@ -411,42 +412,41 @@ object ReactDataGrid {
     * Information about a drag handle double click. Generic event type returns untyped row, use parameterized type with the row type as the parameter
     * @default T = any
     */
-  @js.native
   trait DragHandleDoubleClickEvent[T] extends StObject {
     
     /**
       * The double click event.
       */
-    var e: SyntheticEvent[_, Event] = js.native
+    var e: SyntheticEvent[js.Any, Event]
     
     /**
       * The column where the double click occurred.
       */
-    var idx: Double = js.native
+    var idx: Double
     
     /**
       * The values of the row.
       */
-    var rowData: T = js.native
+    var rowData: T
     
     /**
       * The row where the double click occurred.
       */
-    var rowIdx: Double = js.native
+    var rowIdx: Double
   }
   object DragHandleDoubleClickEvent {
     
     @scala.inline
-    def apply[T](e: SyntheticEvent[_, Event], idx: Double, rowData: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T] = {
+    def apply[T](e: SyntheticEvent[js.Any, Event], idx: Double, rowData: T, rowIdx: Double): typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T] = {
       val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]]
     }
     
     @scala.inline
-    implicit class DragHandleDoubleClickEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[_], T] (val x: Self with typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]) extends AnyVal {
+    implicit class DragHandleDoubleClickEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.DragHandleDoubleClickEvent[T]) extends AnyVal {
       
       @scala.inline
-      def setE(value: SyntheticEvent[_, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      def setE(value: SyntheticEvent[js.Any, Event]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
@@ -462,18 +462,17 @@ object ReactDataGrid {
   /**
     * Some filter to be applied to the grid's contents
     */
-  @js.native
   trait Filter extends StObject {
     
     /**
       * The key of the column being filtered.
       */
-    var columnKey: String = js.native
+    var columnKey: String
     
     /**
       * The term to filter by.
       */
-    var filterTerm: String = js.native
+    var filterTerm: String
   }
   object Filter {
     
@@ -498,34 +497,33 @@ object ReactDataGrid {
     * Information about some update to the grid's contents. Generic event type returns untyped row, use parameterized type with the row type as the parameter
     * @default T = any
     */
-  @js.native
   trait GridRowsUpdatedEvent[T] extends StObject {
     
     /**
       * The action that occurred to trigger this event.
       * One of 'cellUpdate', 'cellDrag', 'columnFill', or 'copyPaste'.
       */
-    var action: cellUpdate | cellDrag | columnFill | copyPaste = js.native
+    var action: cellUpdate | cellDrag | columnFill | copyPaste
     
     /**
       * The key of the column where the event occurred.
       */
-    var cellKey: String = js.native
+    var cellKey: String
     
     /**
       * The top row affected by the event.
       */
-    var fromRow: Double = js.native
+    var fromRow: Double
     
     /**
       * The bottom row affected by the event.
       */
-    var toRow: Double = js.native
+    var toRow: Double
     
     /**
       * The columns that were updated and their values.
       */
-    var updated: T = js.native
+    var updated: T
   }
   object GridRowsUpdatedEvent {
     
@@ -542,7 +540,7 @@ object ReactDataGrid {
     }
     
     @scala.inline
-    implicit class GridRowsUpdatedEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[_], T] (val x: Self with typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]) extends AnyVal {
+    implicit class GridRowsUpdatedEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.GridRowsUpdatedEvent[T]) extends AnyVal {
       
       @scala.inline
       def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
@@ -564,23 +562,22 @@ object ReactDataGrid {
   /**
     * Information about the row toggler
     */
-  @js.native
   trait OnRowExpandToggle extends StObject {
     
     /**
       * The name of the column group the row is in
       */
-    var columnGroupName: String = js.native
+    var columnGroupName: String
     
     /**
       * The name of the expanded row
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * If it should expand or not
       */
-    var shouldExpand: Boolean = js.native
+    var shouldExpand: Boolean
   }
   object OnRowExpandToggle {
     
@@ -610,28 +607,27 @@ object ReactDataGrid {
     * Information about a row update. Generic event type returns untyped row, use parameterized type with the row type as the parameter
     * @default T = any
     */
-  @js.native
   trait RowUpdateEvent[T] extends StObject {
     
     /**
       * The name of the column that was updated.
       */
-    var cellKey: String = js.native
+    var cellKey: String
     
     /**
       * The name of the key pressed to trigger the event ('Tab', 'Enter', etc.).
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The index of the updated row.
       */
-    var rowIdx: Double = js.native
+    var rowIdx: Double
     
     /**
       * The columns that were updated and their values.
       */
-    var updated: T = js.native
+    var updated: T
   }
   object RowUpdateEvent {
     
@@ -642,7 +638,7 @@ object ReactDataGrid {
     }
     
     @scala.inline
-    implicit class RowUpdateEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[_], T] (val x: Self with typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]) extends AnyVal {
+    implicit class RowUpdateEventMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.RowUpdateEvent[T]) extends AnyVal {
       
       @scala.inline
       def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
@@ -658,12 +654,11 @@ object ReactDataGrid {
     }
   }
   
-  @js.native
   trait SelectionParams[T] extends StObject {
     
-    var row: T = js.native
+    var row: T
     
-    var rowIdx: Double = js.native
+    var rowIdx: Double
   }
   object SelectionParams {
     
@@ -674,7 +669,7 @@ object ReactDataGrid {
     }
     
     @scala.inline
-    implicit class SelectionParamsMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[_], T] (val x: Self with typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]) extends AnyVal {
+    implicit class SelectionParamsMutableBuilder[Self <: typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[?], T] (val x: Self & typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.SelectionParams[T]) extends AnyVal {
       
       @scala.inline
       def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
@@ -688,7 +683,7 @@ object ReactDataGrid {
     
     @js.native
     trait EditorBase[P, S]
-      extends Component[P with EditorBaseProps, S, js.Any] {
+      extends Component[P & EditorBaseProps, S, js.Any] {
       
       def getInputNode(): Element | Null | Text = js.native
       

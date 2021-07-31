@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRequestPayload extends StObject {
   
   /** Third-party device IDs for which to get the device states. */
-  var devices: js.UndefOr[js.Array[AgentDeviceId]] = js.native
+  var devices: js.UndefOr[js.Array[AgentDeviceId]] = js.undefined
 }
 object QueryRequestPayload {
   

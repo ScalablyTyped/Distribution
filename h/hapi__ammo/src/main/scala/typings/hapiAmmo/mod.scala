@@ -3,10 +3,13 @@ package typings.hapiAmmo
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@hapi/ammo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@hapi/ammo", "Clip")
   @js.native
@@ -19,22 +22,20 @@ object mod {
     def this(range: Range) = this()
   }
   
-  @JSImport("@hapi/ammo", "header")
-  @js.native
-  def header(header: String, length: Double): Null | js.Array[Range] = js.native
+  @scala.inline
+  def header(header: String, length: Double): Null | js.Array[Range] = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(header.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Null | js.Array[Range]]
   
-  @js.native
   trait Range extends StObject {
     
     /**
       * The range start position (inclusive).
       */
-    val from: Double = js.native
+    val from: Double
     
     /**
       * The range end position (inclusive).
       */
-    val to: Double = js.native
+    val to: Double
   }
   object Range {
     

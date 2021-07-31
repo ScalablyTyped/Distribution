@@ -8,21 +8,21 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PROCESSING
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.SUCCESS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PayoutBatchHeader extends PayoutHeader {
+trait PayoutBatchHeader
+  extends StObject
+     with PayoutHeader {
   
-  var amount: js.UndefOr[Currency] = js.native
+  var amount: js.UndefOr[Currency] = js.undefined
   
-  var fees: js.UndefOr[Currency] = js.native
+  var fees: js.UndefOr[Currency] = js.undefined
   
-  var funding_source: js.UndefOr[BALANCE] = js.native
+  var funding_source: js.UndefOr[BALANCE] = js.undefined
   
-  var time_closed: js.UndefOr[String] = js.native
+  var time_closed: js.UndefOr[String] = js.undefined
   
-  var time_completed: js.UndefOr[String] = js.native
+  var time_completed: js.UndefOr[String] = js.undefined
 }
 object PayoutBatchHeader {
   

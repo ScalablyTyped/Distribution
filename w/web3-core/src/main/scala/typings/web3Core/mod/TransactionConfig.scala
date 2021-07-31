@@ -3,33 +3,31 @@ package typings.web3Core.mod
 import typings.bnJs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionConfig extends StObject {
   
-  var chain: js.UndefOr[String] = js.native
+  var chain: js.UndefOr[String] = js.undefined
   
-  var chainId: js.UndefOr[Double] = js.native
+  var chainId: js.UndefOr[Double] = js.undefined
   
-  var common: js.UndefOr[Common] = js.native
+  var common: js.UndefOr[Common] = js.undefined
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[String | Double] = js.native
+  var from: js.UndefOr[String | Double] = js.undefined
   
-  var gas: js.UndefOr[Double | String] = js.native
+  var gas: js.UndefOr[Double | String] = js.undefined
   
-  var gasPrice: js.UndefOr[Double | String | ^] = js.native
+  var gasPrice: js.UndefOr[Double | String | ^] = js.undefined
   
-  var hardfork: js.UndefOr[String] = js.native
+  var hardfork: js.UndefOr[String] = js.undefined
   
-  var nonce: js.UndefOr[Double] = js.native
+  var nonce: js.UndefOr[Double] = js.undefined
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double | String | ^] = js.native
+  var value: js.UndefOr[Double | String | ^] = js.undefined
 }
 object TransactionConfig {
   

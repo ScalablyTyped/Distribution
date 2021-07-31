@@ -2,19 +2,17 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an instance of an ad.
   */
-@js.native
 trait AdInstance extends StObject {
   
   /**
     * Return the Audience Network placement ID of this ad instance.
     */
-  def getPlacementID(): String = js.native
+  def getPlacementID(): String
   
   /**
     * Preload the ad. The returned promise resolves when the preload completes, and rejects if it failed.
@@ -23,7 +21,7 @@ trait AdInstance extends StObject {
     * @throws INVALID_PARAM
     * @throws NETWORK_FAILURE
     */
-  def loadAsync(): js.Promise[Unit] = js.native
+  def loadAsync(): js.Promise[Unit]
   
   /**
     * Present the ad. The returned promise resolves when user finished watching the ad, and rejects if it failed to present or was closed during the ad.
@@ -32,7 +30,7 @@ trait AdInstance extends StObject {
     * @throws NETWORK_FAILURE
     * @throws INVALID_OPERATION
     */
-  def showAsync(): js.Promise[Unit] = js.native
+  def showAsync(): js.Promise[Unit]
 }
 object AdInstance {
   

@@ -3,23 +3,22 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.vegaTypingsStrings.sqrt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqrtScale
-  extends NumericScale
+  extends StObject
+     with NumericScale
      with Scale {
   
   @JSName("type")
-  var type_SqrtScale: sqrt = js.native
+  var type_SqrtScale: sqrt
 }
 object SqrtScale {
   
   @scala.inline
-  def apply(name: String, `type`: sqrt): SqrtScale = {
+  def apply(name: String): SqrtScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sqrt")
     __obj.asInstanceOf[SqrtScale]
   }
   

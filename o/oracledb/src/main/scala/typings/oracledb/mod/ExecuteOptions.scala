@@ -4,13 +4,11 @@ import typings.oracledb.anon.Type
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used to control statement execution.
   */
-@js.native
 trait ExecuteOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ExecuteOptions extends StObject {
     *
     * @default false
     */
-  var autoCommit: js.UndefOr[Boolean] = js.native
+  var autoCommit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines whether additional metadata is available for queries and for REF CURSORs returned from PL/SQL blocks.
@@ -29,7 +27,7 @@ trait ExecuteOptions extends StObject {
     *
     * @default false
     */
-  var extendedMetaData: js.UndefOr[Boolean] = js.native
+  var extendedMetaData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property sets the size of an internal buffer used for fetching query rows from Oracle Database.
@@ -46,7 +44,7 @@ trait ExecuteOptions extends StObject {
     *
     * @default 100
     */
-  var fetchArraySize: js.UndefOr[Double] = js.native
+  var fetchArraySize: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines how query column data should be represented in JavaScript. It can be used in conjunction with,
@@ -59,7 +57,7 @@ trait ExecuteOptions extends StObject {
     *          "HIRE_DETAILS": { type: oracledb.DEFAULT }  // override fetchAsString or fetchAsBuffer
     *      }
     */
-  var fetchInfo: js.UndefOr[Record[String, Type]] = js.native
+  var fetchInfo: js.UndefOr[Record[String, Type]] = js.undefined
   
   /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
@@ -75,7 +73,7 @@ trait ExecuteOptions extends StObject {
     *
     * @default 0 (unlimited)
     */
-  var maxRows: js.UndefOr[Double] = js.native
+  var maxRows: js.UndefOr[Double] = js.undefined
   
   /**
     * The format of query rows fetched when using connection.execute() or connection.queryStream().
@@ -92,7 +90,7 @@ trait ExecuteOptions extends StObject {
     *
     * @default ARRAY
     */
-  var outFormat: js.UndefOr[Double] = js.native
+  var outFormat: js.UndefOr[Double] = js.undefined
   
   /**
     * This is a query tuning option to set the number of additional rows the underlying Oracle Client library fetches during
@@ -110,14 +108,14 @@ trait ExecuteOptions extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#rowfetching
     * @since 5.0
     */
-  var prefetchRows: js.UndefOr[Double] = js.native
+  var prefetchRows: js.UndefOr[Double] = js.undefined
   
   /**
     * Determines whether query results should be returned as a ResultSet object or directly.
     *
     * @default false
     */
-  var resultSet: js.UndefOr[Boolean] = js.native
+  var resultSet: js.UndefOr[Boolean] = js.undefined
 }
 object ExecuteOptions {
   

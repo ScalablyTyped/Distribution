@@ -2,7 +2,6 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Apps Script API. If the script function returns successfully, the response
   * body&#39;s response field contains this `ExecutionResponse` object.
   */
-@js.native
 trait SchemaExecutionResponse extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaExecutionResponse extends StObject {
     * `Calendar`); they can only return primitive types such as a `string`,
     * `number`, `array`, `object`, or `boolean`.
     */
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
 }
 object SchemaExecutionResponse {
   

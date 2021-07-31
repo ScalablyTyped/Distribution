@@ -7,7 +7,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object growGrowMod extends Shortcut {
@@ -17,40 +16,39 @@ object growGrowMod extends Shortcut {
   val default: ComponentType[GrowProps] = js.native
   
   /* Inlined parent @material-ui/core.@material-ui/core.Omit<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, 'timeout'> */
-  @js.native
   trait GrowProps extends StObject {
     
-    var addEndListener: js.UndefOr[js.Any] = js.native
+    var addEndListener: js.UndefOr[js.Any] = js.undefined
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[js.Any] = js.native
+    var in: js.UndefOr[js.Any] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.native
+    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExit: js.UndefOr[js.Any] = js.native
+    var onExit: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
     
-    var onExiting: js.UndefOr[js.Any] = js.native
+    var onExiting: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
     
-    var timeout: js.UndefOr[js.Any | auto] = js.native
+    var timeout: js.UndefOr[js.Any | auto] = js.undefined
     
-    var unmountOnExit: js.UndefOr[js.Any] = js.native
+    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
   }
   object GrowProps {
     

@@ -3,23 +3,21 @@ package typings.canvaskitWasm.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkFontMgrFactory extends StObject {
   
   /**
     * Create an SkFontMgr with the created font data. Returns null if buffers was empty.
     * @param buffers
     */
-  def FromData(buffers: ArrayBuffer*): SkFontMgr | Null = js.native
+  def FromData(buffers: ArrayBuffer*): SkFontMgr | Null
   
   /**
     * Return the default SkFontMgr. This will generally have 0 or 1 fonts in it, depending on if
     * the demo monospace font was compiled in.
     */
-  def RefDefault(): SkFontMgr = js.native
+  def RefDefault(): SkFontMgr
 }
 object SkFontMgrFactory {
   

@@ -21,7 +21,6 @@ import typings.hbs.anon.TypeofUtils
 import typings.hbs.anon.TypeofVM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -54,7 +53,7 @@ object mod extends Shortcut {
     
     var Visitor: Instantiable0[typings.handlebars.mod.Visitor] = js.native
     
-    def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
+    def blockParams(obj: js.Array[js.Any], ids: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     def compile[T](input: js.Any): HandlebarsTemplateDelegate[T] = js.native
     def compile[T](input: js.Any, options: CompileOptions): HandlebarsTemplateDelegate[T] = js.native
@@ -91,8 +90,8 @@ object mod extends Shortcut {
     def registerHelper(name: String, fn: HelperDelegate): Unit = js.native
     def registerHelper(name: HelperDeclareSpec): Unit = js.native
     
-    def registerPartial(name: String, fn: Template[_]): Unit = js.native
-    def registerPartial(spec: StringDictionary[HandlebarsTemplateDelegate[_]]): Unit = js.native
+    def registerPartial(name: String, fn: Template[js.Any]): Unit = js.native
+    def registerPartial(spec: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Unit = js.native
     
     def template[T](precompilation: TemplateSpecification): HandlebarsTemplateDelegate[T] = js.native
     
@@ -108,13 +107,13 @@ object mod extends Shortcut {
   @js.native
   trait hbsModule extends StObject {
     
-    def __express(filename: String, options: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+    def __express(filename: String, options: js.Any, cb: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
     
     val handlebars: handlebarsModule = js.native
     
     def localsAsTemplateData(app: js.Any): Unit = js.native
     
-    def registerHelper(helperName: String, helperFunction: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def registerHelper(helperName: String, helperFunction: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
     
     def registerPartial(partialName: String, partialValue: String): Unit = js.native
     
@@ -123,7 +122,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait hbsModuleWithCreate extends hbsModule {
+  trait hbsModuleWithCreate
+    extends StObject
+       with hbsModule {
     
     def create(): hbsModule = js.native
     def create(handlebars: handlebarsModule): hbsModule = js.native

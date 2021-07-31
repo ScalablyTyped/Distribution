@@ -3,17 +3,15 @@ package typings.rollupPluginPostcss
 import typings.rollupPluginPostcss.rollupPluginPostcssStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ctx extends StObject {
     
-    var ctx: js.Any = js.native
+    var ctx: js.Any
     
-    var path: String = js.native
+    var path: String
   }
   object Ctx {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait InsertAt extends StObject {
     
-    var insertAt: js.UndefOr[top | String] = js.native
+    var insertAt: js.UndefOr[top | String] = js.undefined
   }
   object InsertAt {
     

@@ -5,7 +5,6 @@ import typings.tslint.walkContextMod.WalkContext
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object walkerWalkerMod {
@@ -16,16 +15,24 @@ object walkerWalkerMod {
     extends WalkContext[T]
        with IWalker {
     def this(sourceFile: SourceFile, ruleName: String, options: T) = this()
+    
+    /* CompleteClass */
+    override def getFailures(): js.Array[RuleFailure] = js.native
+    
+    /* CompleteClass */
+    override def getSourceFile(): SourceFile = js.native
+    
+    /* CompleteClass */
+    override def walk(sourceFile: SourceFile): Unit = js.native
   }
   
-  @js.native
   trait IWalker extends StObject {
     
-    def getFailures(): js.Array[RuleFailure] = js.native
+    def getFailures(): js.Array[RuleFailure]
     
-    def getSourceFile(): SourceFile = js.native
+    def getSourceFile(): SourceFile
     
-    def walk(sourceFile: SourceFile): Unit = js.native
+    def walk(sourceFile: SourceFile): Unit
   }
   object IWalker {
     

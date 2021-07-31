@@ -5,25 +5,24 @@ import typings.nightwatch.nightwatchNumbers.`1`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchCallbackResultError
-  extends NightwatchCallbackResult[js.Any] {
+  extends StObject
+     with NightwatchCallbackResult[js.Any] {
   
-  var state: Error | String = js.native
+  var state: Error | String
   
-  var status: `1` = js.native
+  var status: `1`
   
   // we cannot use `number` so giving it a "symbolic" value allows to disjoint the union
-  var value: Class = js.native
+  var value: Class
 }
 object NightwatchCallbackResultError {
   
   @scala.inline
-  def apply(state: Error | String, status: `1`, value: Class): NightwatchCallbackResultError = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(state: Error | String, value: Class): NightwatchCallbackResultError = {
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = 1, value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchCallbackResultError]
   }
   

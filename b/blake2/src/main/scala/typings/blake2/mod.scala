@@ -6,10 +6,13 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("blake2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("blake2", "Hash")
   @js.native
@@ -39,19 +42,15 @@ object mod {
     def update(buf: Buffer): this.type = js.native
   }
   
-  @JSImport("blake2", "createHash")
-  @js.native
-  def createHash(algorithm: Blake2Algorithm): Hash = js.native
-  @JSImport("blake2", "createHash")
-  @js.native
-  def createHash(algorithm: Blake2Algorithm, options: Blake2Options): Hash = js.native
+  @scala.inline
+  def createHash(algorithm: Blake2Algorithm): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  @scala.inline
+  def createHash(algorithm: Blake2Algorithm, options: Blake2Options): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
-  @JSImport("blake2", "createKeyedHash")
-  @js.native
-  def createKeyedHash(algorithm: Blake2Algorithm, key: Buffer): KeyedHash = js.native
-  @JSImport("blake2", "createKeyedHash")
-  @js.native
-  def createKeyedHash(algorithm: Blake2Algorithm, key: Buffer, options: Blake2Options): KeyedHash = js.native
+  @scala.inline
+  def createKeyedHash(algorithm: Blake2Algorithm, key: Buffer): KeyedHash = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyedHash")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[KeyedHash]
+  @scala.inline
+  def createKeyedHash(algorithm: Blake2Algorithm, key: Buffer, options: Blake2Options): KeyedHash = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyedHash")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KeyedHash]
   
   /* Rewritten from type alias, can be one of: 
     - typings.blake2.blake2Strings.blake2b
@@ -79,10 +78,11 @@ object mod {
     def bypass: typings.blake2.blake2Strings.bypass = "bypass".asInstanceOf[typings.blake2.blake2Strings.bypass]
   }
   
-  @js.native
-  trait Blake2Options extends TransformOptions {
+  trait Blake2Options
+    extends StObject
+       with TransformOptions {
     
-    var digestLength: Double = js.native
+    var digestLength: Double
   }
   object Blake2Options {
     

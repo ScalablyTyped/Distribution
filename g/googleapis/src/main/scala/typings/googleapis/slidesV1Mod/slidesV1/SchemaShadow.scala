@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,30 +10,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * parent, the fields will default to the value used for new page elements
   * created in the Slides editor, which may depend on the page element kind.
   */
-@js.native
 trait SchemaShadow extends StObject {
   
   /**
     * The alignment point of the shadow, that sets the origin for translate,
     * scale and skew of the shadow. This property is read-only.
     */
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
   /**
     * The alpha of the shadow&#39;s color, from 0.0 to 1.0.
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * The radius of the shadow blur. The larger the radius, the more diffuse
     * the shadow becomes.
     */
-  var blurRadius: js.UndefOr[SchemaDimension] = js.native
+  var blurRadius: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The shadow color value.
     */
-  var color: js.UndefOr[SchemaOpaqueColor] = js.native
+  var color: js.UndefOr[SchemaOpaqueColor] = js.undefined
   
   /**
     * The shadow property state.  Updating the shadow on a page element will
@@ -43,24 +41,24 @@ trait SchemaShadow extends StObject {
     * this field to `NOT_RENDERED`. In this case, any other shadow fields set
     * in the same request will be ignored.
     */
-  var propertyState: js.UndefOr[String] = js.native
+  var propertyState: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the shadow should rotate with the shape. This property is
     * read-only.
     */
-  var rotateWithShape: js.UndefOr[Boolean] = js.native
+  var rotateWithShape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Transform that encodes the translate, scale, and skew of the shadow,
     * relative to the alignment position.
     */
-  var transform: js.UndefOr[SchemaAffineTransform] = js.native
+  var transform: js.UndefOr[SchemaAffineTransform] = js.undefined
   
   /**
     * The type of the shadow. This property is read-only.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaShadow {
   

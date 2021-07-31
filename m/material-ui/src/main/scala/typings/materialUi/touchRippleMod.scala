@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchRippleMod {
@@ -19,18 +18,19 @@ object touchRippleMod {
   trait TouchRipple
     extends Component[TouchRippleProps, js.Object, js.Any]
   
-  @js.native
-  trait TouchRippleProps extends Props[TouchRipple] {
+  trait TouchRippleProps
+    extends StObject
+       with Props[TouchRipple] {
     
-    var abortOnScroll: js.UndefOr[Boolean] = js.native
+    var abortOnScroll: js.UndefOr[Boolean] = js.undefined
     
-    var centerRipple: js.UndefOr[Boolean] = js.native
+    var centerRipple: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TouchRippleProps {
     

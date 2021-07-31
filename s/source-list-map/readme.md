@@ -10,9 +10,9 @@ Fast line to line SourceMap generator.
 | ------------------ | :-------------: |
 | Full name          | source-list-map |
 | Keywords           | source-map |
-| # releases         | 2 |
-| # dependents       | 81 |
-| # downloads        | 445546906 |
+| # releases         | 0 |
+| # dependents       | 91 |
+| # downloads        | 515004429 |
 | # stars            | 0 |
 
 ## Links

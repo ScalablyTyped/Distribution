@@ -3,15 +3,13 @@ package typings.nextAuth.anon
 import typings.nextAuth.adaptersMod.TypeORMUserModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelSchema[U /* <: TypeORMUserModel */] extends StObject {
   
-  var model: U = js.native
+  var model: U
   
-  var schema: typings.nextAuth.adaptersMod.Schema[U] = js.native
+  var schema: typings.nextAuth.adaptersMod.Schema[U]
 }
 object ModelSchema {
   
@@ -22,7 +20,7 @@ object ModelSchema {
   }
   
   @scala.inline
-  implicit class ModelSchemaMutableBuilder[Self <: ModelSchema[_], U /* <: TypeORMUserModel */] (val x: Self with ModelSchema[U]) extends AnyVal {
+  implicit class ModelSchemaMutableBuilder[Self <: ModelSchema[?], U /* <: TypeORMUserModel */] (val x: Self & ModelSchema[U]) extends AnyVal {
     
     @scala.inline
     def setModel(value: U): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])

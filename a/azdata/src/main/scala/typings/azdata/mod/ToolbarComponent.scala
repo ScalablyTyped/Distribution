@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarComponent extends StObject {
   
-  var component: Component = js.native
+  var component: Component
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var toolbarSeparatorAfter: js.UndefOr[Boolean] = js.native
+  var toolbarSeparatorAfter: js.UndefOr[Boolean] = js.undefined
 }
 object ToolbarComponent {
   

@@ -2,19 +2,19 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HexbinSeriesProps extends AbstractSeriesProps[ContourSeriesPoint] {
+trait HexbinSeriesProps
+  extends StObject
+     with AbstractSeriesProps[ContourSeriesPoint] {
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var sizeHexagonsWithCount: js.UndefOr[Boolean] = js.native
+  var sizeHexagonsWithCount: js.UndefOr[Boolean] = js.undefined
   
-  var xOffset: js.UndefOr[Double] = js.native
+  var xOffset: js.UndefOr[Double] = js.undefined
   
-  var yOffset: js.UndefOr[Double] = js.native
+  var yOffset: js.UndefOr[Double] = js.undefined
 }
 object HexbinSeriesProps {
   

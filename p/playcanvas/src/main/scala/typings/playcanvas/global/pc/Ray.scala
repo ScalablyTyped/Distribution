@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Ray")
 @js.native
 class Ray ()
-  extends typings.playcanvas.pc.Ray {
+  extends StObject
+     with typings.playcanvas.pc.Ray {
   def this(origin: typings.playcanvas.pc.Vec3) = this()
-  def this(origin: js.UndefOr[scala.Nothing], direction: typings.playcanvas.pc.Vec3) = this()
+  def this(origin: Unit, direction: typings.playcanvas.pc.Vec3) = this()
   def this(origin: typings.playcanvas.pc.Vec3, direction: typings.playcanvas.pc.Vec3) = this()
+  
+  /**
+    * The direction of the ray.
+    */
+  /* CompleteClass */
+  var direction: typings.playcanvas.pc.Vec3 = js.native
+  
+  /**
+    * The starting point of the ray.
+    */
+  /* CompleteClass */
+  var origin: typings.playcanvas.pc.Vec3 = js.native
+  
+  /**
+    * Sets origin and direction to the supplied vector values.
+    * @param origin - The starting point of the ray.
+    * @param direction - The direction of the ray.
+    * @returns Self for chaining.
+    */
+  /* CompleteClass */
+  override def set(origin: typings.playcanvas.pc.Vec3, direction: typings.playcanvas.pc.Vec3): typings.playcanvas.pc.Ray = js.native
 }

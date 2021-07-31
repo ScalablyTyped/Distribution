@@ -2,15 +2,13 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vary extends StObject {
   
-  var vary: Boolean = js.native
+  var vary: Boolean
   
-  var weak: Boolean = js.native
+  var weak: Boolean
 }
 object Vary {
   

@@ -7,33 +7,31 @@ import typings.loadjs.mod.ReadyOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined loadjs.loadjs.LoadOptions & {  returnPromise :true} */
-  @js.native
   trait LoadOptionsreturnPromiset extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.native
+    var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.undefined
     
     // Arguments provided are different in case of returnPromise: true / false
-    var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.undefined
     
-    var numRetries: js.UndefOr[Double] = js.native
+    var numRetries: js.UndefOr[Double] = js.undefined
     
-    var returnPromise: `true` = js.native
+    var returnPromise: `true`
     
-    var success: js.UndefOr[js.Function0[Unit]] = js.native
+    var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object LoadOptionsreturnPromiset {
     
     @scala.inline
-    def apply(returnPromise: `true`): LoadOptionsreturnPromiset = {
-      val __obj = js.Dynamic.literal(returnPromise = returnPromise.asInstanceOf[js.Any])
+    def apply(): LoadOptionsreturnPromiset = {
+      val __obj = js.Dynamic.literal(returnPromise = true)
       __obj.asInstanceOf[LoadOptionsreturnPromiset]
     }
     

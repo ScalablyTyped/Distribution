@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesWindbarbDataDragDropGuideBoxOptions extends StObject {
   
   /**
     * (Highcharts, Highstock) Style options for the guide box default state.
     */
-  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.native
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
 object SeriesWindbarbDataDragDropGuideBoxOptions {
   

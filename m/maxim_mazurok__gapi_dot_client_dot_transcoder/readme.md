@@ -10,9 +10,9 @@ TypeScript typings for Transcoder API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.transcoder |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 631 |
+| # downloads        | 776 |
 | # stars            | 0 |
 
 ## Links

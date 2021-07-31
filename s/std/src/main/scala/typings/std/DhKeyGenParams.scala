@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DhKeyGenParams extends Algorithm {
+trait DhKeyGenParams
+  extends StObject
+     with Algorithm {
   
-  var generator: Uint8Array = js.native
+  var generator: Uint8Array
   
-  var prime: Uint8Array = js.native
+  var prime: Uint8Array
 }
 object DhKeyGenParams {
   

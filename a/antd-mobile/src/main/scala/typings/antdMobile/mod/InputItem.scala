@@ -5,7 +5,6 @@ import typings.antdMobile.inputItemMod.default
 import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "InputItem")
@@ -48,9 +47,9 @@ object InputItem {
     
     @JSImport("antd-mobile", "InputItem.defaultProps.disabledKeys")
     @js.native
-    def disabledKeys: Null = js.native
+    def disabledKeys: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def disabledKeys_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabledKeys")(x.asInstanceOf[js.Any])
+    def disabledKeys_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabledKeys")(x.asInstanceOf[js.Any])
     
     @scala.inline
     def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
@@ -87,9 +86,9 @@ object InputItem {
     
     @JSImport("antd-mobile", "InputItem.defaultProps.moneyKeyboardHeader")
     @js.native
-    def moneyKeyboardHeader: Null = js.native
+    def moneyKeyboardHeader: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def moneyKeyboardHeader_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moneyKeyboardHeader")(x.asInstanceOf[js.Any])
+    def moneyKeyboardHeader_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moneyKeyboardHeader")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile", "InputItem.defaultProps.onBlur")
     @js.native
@@ -145,14 +144,14 @@ object InputItem {
     @scala.inline
     def prefixListCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixListCls")(x.asInstanceOf[js.Any])
     
+    @JSImport("antd-mobile", "InputItem.defaultProps.type")
+    @js.native
+    val `type`: String = js.native
+    
     @JSImport("antd-mobile", "InputItem.defaultProps.updatePlaceholder")
     @js.native
     def updatePlaceholder: Boolean = js.native
     @scala.inline
     def updatePlaceholder_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updatePlaceholder")(x.asInstanceOf[js.Any])
-    
-    @JSImport("antd-mobile", "InputItem.defaultProps.type")
-    @js.native
-    val `type`: String = js.native
   }
 }

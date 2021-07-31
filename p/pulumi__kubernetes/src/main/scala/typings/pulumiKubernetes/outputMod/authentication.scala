@@ -3,7 +3,6 @@ package typings.pulumiKubernetes.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authentication {
@@ -13,28 +12,27 @@ object authentication {
     /**
       * BoundObjectReference is a reference to an object that a token is bound to.
       */
-    @js.native
     trait BoundObjectReference extends StObject {
       
       /**
         * API version of the referent.
         */
-      var apiVersion: String = js.native
+      var apiVersion: String
       
       /**
         * Kind of the referent. Valid kinds are 'Pod' and 'Secret'.
         */
-      var kind: String = js.native
+      var kind: String
       
       /**
         * Name of the referent.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * UID of the referent.
         */
-      var uid: String = js.native
+      var uid: String
     }
     object BoundObjectReference {
       
@@ -64,23 +62,22 @@ object authentication {
     /**
       * TokenRequestSpec contains client provided parameters of a token request.
       */
-    @js.native
     trait TokenRequestSpec extends StObject {
       
       /**
         * Audiences are the intendend audiences of the token. A recipient of a token must identitfy themself with an identifier in the list of audiences of the token, and otherwise should reject the token. A token issued for multiple audiences may be used to authenticate against any of the audiences listed but implies a high degree of trust between the target audiences.
         */
-      var audiences: js.Array[String] = js.native
+      var audiences: js.Array[String]
       
       /**
         * BoundObjectRef is a reference to an object that the token will be bound to. The token will only be valid for as long as the bound object exists. NOTE: The API server's TokenReview endpoint will validate the BoundObjectRef, but other audiences may not. Keep ExpirationSeconds small if you want prompt revocation.
         */
-      var boundObjectRef: BoundObjectReference = js.native
+      var boundObjectRef: BoundObjectReference
       
       /**
         * ExpirationSeconds is the requested duration of validity of the request. The token issuer may return a token with a different validity duration so a client needs to check the 'expiration' field in a response.
         */
-      var expirationSeconds: Double = js.native
+      var expirationSeconds: Double
     }
     object TokenRequestSpec {
       
@@ -110,18 +107,17 @@ object authentication {
     /**
       * TokenRequestStatus is the result of a token request.
       */
-    @js.native
     trait TokenRequestStatus extends StObject {
       
       /**
         * ExpirationTimestamp is the time of expiration of the returned token.
         */
-      var expirationTimestamp: String = js.native
+      var expirationTimestamp: String
       
       /**
         * Token is the opaque bearer token.
         */
-      var token: String = js.native
+      var token: String
     }
     object TokenRequestStatus {
       
@@ -145,18 +141,17 @@ object authentication {
     /**
       * TokenReviewSpec is a description of the token authentication request.
       */
-    @js.native
     trait TokenReviewSpec extends StObject {
       
       /**
         * Audiences is a list of the identifiers that the resource server presented with the token identifies as. Audience-aware token authenticators will verify that the token was intended for at least one of the audiences in this list. If no audiences are provided, the audience will default to the audience of the Kubernetes apiserver.
         */
-      var audiences: js.Array[String] = js.native
+      var audiences: js.Array[String]
       
       /**
         * Token is the opaque bearer token.
         */
-      var token: String = js.native
+      var token: String
     }
     object TokenReviewSpec {
       
@@ -183,28 +178,27 @@ object authentication {
     /**
       * TokenReviewStatus is the result of the token authentication request.
       */
-    @js.native
     trait TokenReviewStatus extends StObject {
       
       /**
         * Audiences are audience identifiers chosen by the authenticator that are compatible with both the TokenReview and token. An identifier is any identifier in the intersection of the TokenReviewSpec audiences and the token's audiences. A client of the TokenReview API that sets the spec.audiences field should validate that a compatible audience identifier is returned in the status.audiences field to ensure that the TokenReview server is audience aware. If a TokenReview returns an empty status.audience field where status.authenticated is "true", the token is valid against the audience of the Kubernetes API server.
         */
-      var audiences: js.Array[String] = js.native
+      var audiences: js.Array[String]
       
       /**
         * Authenticated indicates that the token was associated with a known user.
         */
-      var authenticated: Boolean = js.native
+      var authenticated: Boolean
       
       /**
         * Error indicates that the token couldn't be checked
         */
-      var error: String = js.native
+      var error: String
       
       /**
         * User is the UserInfo associated with the provided token.
         */
-      var user: UserInfo = js.native
+      var user: UserInfo
     }
     object TokenReviewStatus {
       
@@ -237,28 +231,27 @@ object authentication {
     /**
       * UserInfo holds the information about the user needed to implement the user.Info interface.
       */
-    @js.native
     trait UserInfo extends StObject {
       
       /**
         * Any additional information provided by the authenticator.
         */
-      var extra: StringDictionary[js.Array[String]] = js.native
+      var extra: StringDictionary[js.Array[String]]
       
       /**
         * The names of groups this user is a part of.
         */
-      var groups: js.Array[String] = js.native
+      var groups: js.Array[String]
       
       /**
         * A unique value that identifies this user across time. If this user is deleted and another user by the same name is added, they will have different UIDs.
         */
-      var uid: String = js.native
+      var uid: String
       
       /**
         * The name that uniquely identifies this user among all active users.
         */
-      var username: String = js.native
+      var username: String
     }
     object UserInfo {
       
@@ -294,18 +287,17 @@ object authentication {
     /**
       * TokenReviewSpec is a description of the token authentication request.
       */
-    @js.native
     trait TokenReviewSpec extends StObject {
       
       /**
         * Audiences is a list of the identifiers that the resource server presented with the token identifies as. Audience-aware token authenticators will verify that the token was intended for at least one of the audiences in this list. If no audiences are provided, the audience will default to the audience of the Kubernetes apiserver.
         */
-      var audiences: js.Array[String] = js.native
+      var audiences: js.Array[String]
       
       /**
         * Token is the opaque bearer token.
         */
-      var token: String = js.native
+      var token: String
     }
     object TokenReviewSpec {
       
@@ -332,28 +324,27 @@ object authentication {
     /**
       * TokenReviewStatus is the result of the token authentication request.
       */
-    @js.native
     trait TokenReviewStatus extends StObject {
       
       /**
         * Audiences are audience identifiers chosen by the authenticator that are compatible with both the TokenReview and token. An identifier is any identifier in the intersection of the TokenReviewSpec audiences and the token's audiences. A client of the TokenReview API that sets the spec.audiences field should validate that a compatible audience identifier is returned in the status.audiences field to ensure that the TokenReview server is audience aware. If a TokenReview returns an empty status.audience field where status.authenticated is "true", the token is valid against the audience of the Kubernetes API server.
         */
-      var audiences: js.Array[String] = js.native
+      var audiences: js.Array[String]
       
       /**
         * Authenticated indicates that the token was associated with a known user.
         */
-      var authenticated: Boolean = js.native
+      var authenticated: Boolean
       
       /**
         * Error indicates that the token couldn't be checked
         */
-      var error: String = js.native
+      var error: String
       
       /**
         * User is the UserInfo associated with the provided token.
         */
-      var user: UserInfo = js.native
+      var user: UserInfo
     }
     object TokenReviewStatus {
       
@@ -386,28 +377,27 @@ object authentication {
     /**
       * UserInfo holds the information about the user needed to implement the user.Info interface.
       */
-    @js.native
     trait UserInfo extends StObject {
       
       /**
         * Any additional information provided by the authenticator.
         */
-      var extra: StringDictionary[js.Array[String]] = js.native
+      var extra: StringDictionary[js.Array[String]]
       
       /**
         * The names of groups this user is a part of.
         */
-      var groups: js.Array[String] = js.native
+      var groups: js.Array[String]
       
       /**
         * A unique value that identifies this user across time. If this user is deleted and another user by the same name is added, they will have different UIDs.
         */
-      var uid: String = js.native
+      var uid: String
       
       /**
         * The name that uniquely identifies this user among all active users.
         */
-      var username: String = js.native
+      var username: String
     }
     object UserInfo {
       

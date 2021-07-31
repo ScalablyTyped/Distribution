@@ -4,7 +4,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables apps to get information about the system. */
@@ -14,7 +13,8 @@ object Profile {
   @JSGlobal("Windows.System.Profile.AnalyticsInfo")
   @js.native
   abstract class AnalyticsInfo ()
-    extends typings.winrtUwp.Windows.System.Profile.AnalyticsInfo
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.AnalyticsInfo
   object AnalyticsInfo {
     
     @JSGlobal("Windows.System.Profile.AnalyticsInfo")
@@ -42,14 +42,29 @@ object Profile {
   @JSGlobal("Windows.System.Profile.AnalyticsVersionInfo")
   @js.native
   abstract class AnalyticsVersionInfo ()
-    extends typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.AnalyticsVersionInfo {
+    
+    /** Gets the device family. */
+    /* CompleteClass */
+    var deviceFamily: String = js.native
+    
+    /** Gets the version within the device family. */
+    /* CompleteClass */
+    var deviceFamilyVersion: String = js.native
+  }
   
   /** Provides the ability to obtain a hardware identifier that represents the current hardware. */
   @JSGlobal("Windows.System.Profile.HardwareIdentification")
   @js.native
   abstract class HardwareIdentification ()
-    extends typings.winrtUwp.Windows.System.Profile.HardwareIdentification
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.HardwareIdentification
   object HardwareIdentification {
+    
+    @JSGlobal("Windows.System.Profile.HardwareIdentification")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets a hardware identifier ( ASHWID) that represents the current hardware. The returned ASHWID will be different for each application package. In other words, this API will return different identifiers when called by two apps from different packages. It will return the same identifier when called by two apps that are part of the same package.
@@ -57,22 +72,36 @@ object Profile {
       * @return The hardware Id information.
       */
     /* static member */
-    @JSGlobal("Windows.System.Profile.HardwareIdentification.getPackageSpecificToken")
-    @js.native
-    def getPackageSpecificToken(nonce: IBuffer): typings.winrtUwp.Windows.System.Profile.HardwareToken = js.native
+    @scala.inline
+    def getPackageSpecificToken(nonce: IBuffer): typings.winrtUwp.Windows.System.Profile.HardwareToken = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageSpecificToken")(nonce.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.Profile.HardwareToken]
   }
   
   /** Represents a token that contains a hardware based identification that is sufficiently unique. */
   @JSGlobal("Windows.System.Profile.HardwareToken")
   @js.native
   abstract class HardwareToken ()
-    extends typings.winrtUwp.Windows.System.Profile.HardwareToken
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.HardwareToken {
+    
+    /** Gets the certificate that is used to sign the Id and is used to help verify the authenticity of the Id. */
+    /* CompleteClass */
+    var certificate: IBuffer = js.native
+    
+    /** Gets the hardware identifier that identifies the device. */
+    /* CompleteClass */
+    var id: IBuffer = js.native
+    
+    /** Gets the digital signature of hardware Id that helps verify the authenticity of returned Id. */
+    /* CompleteClass */
+    var signature: IBuffer = js.native
+  }
   
   /** Identifies the string keys that might exist within the RetailInfo.Properties map of retail-demo relevant property values. */
   @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties")
   @js.native
   abstract class KnownRetailInfoProperties ()
-    extends typings.winrtUwp.Windows.System.Profile.KnownRetailInfoProperties
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.KnownRetailInfoProperties
   object KnownRetailInfoProperties {
     
     @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties")
@@ -293,7 +322,8 @@ object Profile {
   @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
   @js.native
   abstract class PlatformDiagnosticsAndUsageDataSettings ()
-    extends typings.winrtUwp.Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings
   object PlatformDiagnosticsAndUsageDataSettings {
     
     @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
@@ -344,7 +374,8 @@ object Profile {
   @JSGlobal("Windows.System.Profile.RetailInfo")
   @js.native
   abstract class RetailInfo ()
-    extends typings.winrtUwp.Windows.System.Profile.RetailInfo
+    extends StObject
+       with typings.winrtUwp.Windows.System.Profile.RetailInfo
   object RetailInfo {
     
     @JSGlobal("Windows.System.Profile.RetailInfo")
@@ -375,7 +406,8 @@ object Profile {
     @JSGlobal("Windows.System.Profile.SystemManufacturers.SmbiosInformation")
     @js.native
     abstract class SmbiosInformation ()
-      extends typings.winrtUwp.Windows.System.Profile.SystemManufacturers.SmbiosInformation
+      extends StObject
+         with typings.winrtUwp.Windows.System.Profile.SystemManufacturers.SmbiosInformation
     object SmbiosInformation {
       
       @JSGlobal("Windows.System.Profile.SystemManufacturers.SmbiosInformation")

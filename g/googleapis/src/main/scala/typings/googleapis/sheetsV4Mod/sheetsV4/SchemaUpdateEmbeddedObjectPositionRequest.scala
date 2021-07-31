@@ -2,14 +2,12 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update an embedded object&#39;s position (such as a moving or resizing a
   * chart or image).
   */
-@js.native
 trait SchemaUpdateEmbeddedObjectPositionRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaUpdateEmbeddedObjectPositionRequest extends StObject {
     * `newPosition.overlayPosition` is implied and should not be specified. A
     * single `&quot;*&quot;` can be used as short-hand for listing every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * An explicit position to move the embedded object to. If
@@ -27,12 +25,12 @@ trait SchemaUpdateEmbeddedObjectPositionRequest extends StObject {
     * newPosition.newSheet is set to true, a new sheet will be created with an
     * ID that will be chosen for you.
     */
-  var newPosition: js.UndefOr[SchemaEmbeddedObjectPosition] = js.native
+  var newPosition: js.UndefOr[SchemaEmbeddedObjectPosition] = js.undefined
   
   /**
     * The ID of the object to moved.
     */
-  var objectId: js.UndefOr[Double] = js.native
+  var objectId: js.UndefOr[Double] = js.undefined
 }
 object SchemaUpdateEmbeddedObjectPositionRequest {
   

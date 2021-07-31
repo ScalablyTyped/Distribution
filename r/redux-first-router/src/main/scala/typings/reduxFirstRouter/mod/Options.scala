@@ -5,29 +5,27 @@ import typings.redux.mod.Dispatch
 import typings.reduxFirstRouter.anon.Pathname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options[TKeys, TState] extends StObject {
   
   /**
     * A prefix that will be prepended to the URL. For example, using a basename of '/playground',
     * a route with the path '/home' would correspond to the URL path '/playground/home'.
     */
-  var basename: js.UndefOr[String] = js.native
+  var basename: js.UndefOr[String] = js.undefined
   
   /**
     * A function returning a history object compatible with the popular `history` package.
     */
-  var createHistory: js.UndefOr[js.Function0[History[typings.history.mod.LocationState]]] = js.native
+  var createHistory: js.UndefOr[js.Function0[History[typings.history.mod.LocationState]]] = js.undefined
   
   /**
     * A function receiving `message` and `callback` when navigation is blocked with `confirmLeave`.
     * The message is the return value from `confirmLeave`.
     * The callback can be called with `true` to unblock the navigation, or with `false` to cancel the navigation.
     */
-  var displayConfirmLeave: js.UndefOr[DisplayConfirmLeave] = js.native
+  var displayConfirmLeave: js.UndefOr[DisplayConfirmLeave] = js.undefined
   
   /**
     * An optional value that will be passed as part of the third `bag` argument to all options callbacks and routes thunk.
@@ -36,35 +34,35 @@ trait Options[TKeys, TState] extends StObject {
     * For example, you could pass an instance of an API client initialised with authentication cookies,
     * or a function `addReducer` to inject new code split reducers into the store.
     */
-  var extra: js.UndefOr[js.Any] = js.native
+  var extra: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Can be set to false to bypass the initial dispatch, so you can do it manually, perhaps after running sagas.
     */
-  var initialDispatch: js.UndefOr[Boolean] = js.native
+  var initialDispatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of entries to initialise history object. Useful for server side rendering and tests.
     */
-  var initialEntries: js.UndefOr[HistoryEntries] = js.native
+  var initialEntries: js.UndefOr[HistoryEntries] = js.undefined
   
   /**
     * The name of the state key or a selector function to specify where in your Redux state tree
     * Redux First Router should expect your page location reducer to be attached to.
     */
-  var location: js.UndefOr[String | (SelectLocationState_[TKeys, TState])] = js.native
+  var location: js.UndefOr[String | (SelectLocationState_[TKeys, TState])] = js.undefined
   
   /**
     * A map of of your Redux state keys to _React Navigation_ navigators.
     */
-  var navigators: js.UndefOr[NavigatorsConfig[TKeys, TState]] = js.native
+  var navigators: js.UndefOr[NavigatorsConfig[TKeys, TState]] = js.undefined
   
   /**
     * The path where users may be redirected in 2 situations: when you dispatch an action with no matching path,
     *  or if you manually call dispatch(redirect({ type: NOT_FOUND })), where NOT_FOUND is an export from this package.
     *  The type in actions and state will be NOT_FOUND, which you can use to show a 404 page.
     */
-  var notFoundPath: js.UndefOr[String] = js.native
+  var notFoundPath: js.UndefOr[String] = js.undefined
   
   /**
     * A simple function that will be called after the routes change.
@@ -72,8 +70,13 @@ trait Options[TKeys, TState] extends StObject {
     * as well as the `bag` object as a third parameter, which contains the dispatched `action` and the configured `extra` value.
     */
   var onAfterChange: js.UndefOr[
-    js.Function3[/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag, Unit]
-  ] = js.native
+    js.Function3[
+      /* dispatch */ Dispatch[js.Any], 
+      /* getState */ StateGetter[TState], 
+      /* bag */ Bag, 
+      Unit
+    ]
+  ] = js.undefined
   
   /**
     * A simple function that will be called whenever the user uses the browser back/next buttons.
@@ -82,8 +85,13 @@ trait Options[TKeys, TState] extends StObject {
     * and the configured `extra` value. Actions with kinds `back`, `next`, and `pop` trigger this.
     */
   var onBackNext: js.UndefOr[
-    js.Function3[/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag, Unit]
-  ] = js.native
+    js.Function3[
+      /* dispatch */ Dispatch[js.Any], 
+      /* getState */ StateGetter[TState], 
+      /* bag */ Bag, 
+      Unit
+    ]
+  ] = js.undefined
   
   /**
     * A simple function that will be called before the routes change.
@@ -91,38 +99,43 @@ trait Options[TKeys, TState] extends StObject {
     * as well as the `bag` object as a third parameter, which contains the dispatched `action` and the configured `extra` value.
     */
   var onBeforeChange: js.UndefOr[
-    js.Function3[/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag, Unit]
-  ] = js.native
+    js.Function3[
+      /* dispatch */ Dispatch[js.Any], 
+      /* getState */ StateGetter[TState], 
+      /* bag */ Bag, 
+      Unit
+    ]
+  ] = js.undefined
   
   /**
     * An object with parse and stringify methods, such as the `query-string` or `qs` libraries (or anything handmade).
     * This will be used to handle querystrings. Without this option, query strings are ignored silently.
     */
-  var querySerializer: js.UndefOr[QuerySerializer] = js.native
+  var querySerializer: js.UndefOr[QuerySerializer] = js.undefined
   
   /**
     * A function to update window/elements scroll position.
     */
   var restoreScroll: js.UndefOr[
     js.Function1[/* history */ History[typings.history.mod.LocationState], ScrollBehavior_]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Whether or not window.scrollTo(0, 0) should be run on route changes so the user starts each page at the top.
     */
-  var scrollTop: js.UndefOr[Boolean] = js.native
+  var scrollTop: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Whether or not a trailing delimiter is allowed when matching path.
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the state key or a selector function to specify where in your Redux state tree
     * Redux First Router should expect your page title reducer to be attached to.
     * This can be omitted if you attach the reducer at state.title.
     */
-  var title: js.UndefOr[String | SelectTitleState[TState]] = js.native
+  var title: js.UndefOr[String | SelectTitleState[TState]] = js.undefined
 }
 object Options {
   
@@ -133,7 +146,7 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[_, _], TKeys, TState] (val x: Self with (Options[TKeys, TState])) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[?, ?], TKeys, TState] (val x: Self & (Options[TKeys, TState])) extends AnyVal {
     
     @scala.inline
     def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
@@ -196,19 +209,25 @@ object Options {
     def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
     
     @scala.inline
-    def setOnAfterChange(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction3(value))
+    def setOnAfterChange(
+      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
+    ): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
     
     @scala.inline
-    def setOnBackNext(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onBackNext", js.Any.fromFunction3(value))
+    def setOnBackNext(
+      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
+    ): Self = StObject.set(x, "onBackNext", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnBackNextUndefined: Self = StObject.set(x, "onBackNext", js.undefined)
     
     @scala.inline
-    def setOnBeforeChange(value: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction3(value))
+    def setOnBeforeChange(
+      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
+    ): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)

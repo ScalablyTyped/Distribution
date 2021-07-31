@@ -11,8 +11,8 @@ JavaScript implementation of the Money value object.
 | Full name          | js-money |
 | Keywords           | money, javascript, currency |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 262655 |
+| # dependents       | 11 |
+| # downloads        | 254847 |
 | # stars            | 4 |
 
 ## Links

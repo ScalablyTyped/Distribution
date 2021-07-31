@@ -2,13 +2,11 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialAnchorRawCoordinateSystemAdjustedEventArgs extends StObject {
   
-  var oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any = js.native
+  var oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any
 }
 object SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
   

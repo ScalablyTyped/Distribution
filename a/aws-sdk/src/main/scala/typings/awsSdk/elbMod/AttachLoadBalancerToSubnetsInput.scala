@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachLoadBalancerToSubnetsInput extends StObject {
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
   
   /**
     * The IDs of the subnets to add. You can add only one subnet per Availability Zone.
     */
-  var Subnets: typings.awsSdk.elbMod.Subnets = js.native
+  var Subnets: typings.awsSdk.elbMod.Subnets
 }
 object AttachLoadBalancerToSubnetsInput {
   

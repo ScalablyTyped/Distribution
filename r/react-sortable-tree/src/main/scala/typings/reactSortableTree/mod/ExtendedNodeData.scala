@@ -2,19 +2,19 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedNodeData extends NodeData {
+trait ExtendedNodeData
+  extends StObject
+     with NodeData {
   
-  var isSearchFocus: Boolean = js.native
+  var isSearchFocus: Boolean
   
-  var isSearchMatch: Boolean = js.native
+  var isSearchMatch: Boolean
   
-  var lowerSiblingCounts: js.Array[Double] = js.native
+  var lowerSiblingCounts: js.Array[Double]
   
-  var parentNode: TreeItem = js.native
+  var parentNode: TreeItem
 }
 object ExtendedNodeData {
   

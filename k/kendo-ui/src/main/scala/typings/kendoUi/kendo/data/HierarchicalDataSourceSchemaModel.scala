@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HierarchicalDataSourceSchemaModel extends DataSourceSchemaModel {
+trait HierarchicalDataSourceSchemaModel
+  extends StObject
+     with DataSourceSchemaModel {
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var hasChildren: js.UndefOr[js.Any] = js.native
+  var hasChildren: js.UndefOr[js.Any] = js.undefined
 }
 object HierarchicalDataSourceSchemaModel {
   

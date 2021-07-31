@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Targetableremarketinglists")
@@ -31,7 +30,7 @@ class ResourceTargetableremarketinglists protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetableRemarketingList]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
   def get(params: ParamsResourceTargetableremarketinglistsGet): GaxiosPromise[SchemaTargetableRemarketingList] = js.native
   def get(
     params: ParamsResourceTargetableremarketinglistsGet,
@@ -71,7 +70,7 @@ class ResourceTargetableremarketinglists protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetableRemarketingListsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
   def list(params: ParamsResourceTargetableremarketinglistsList): GaxiosPromise[SchemaTargetableRemarketingListsListResponse] = js.native
   def list(
     params: ParamsResourceTargetableremarketinglistsList,

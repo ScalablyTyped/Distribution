@@ -2,21 +2,19 @@ package typings.restfulJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var headers: typings.restfulJs.mod.Headers = js.native
+    var headers: typings.restfulJs.mod.Headers
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object Data {
     
@@ -27,7 +25,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -43,16 +41,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers[T] extends StObject {
     
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
-    var headers: typings.restfulJs.mod.Headers = js.native
+    var headers: typings.restfulJs.mod.Headers
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object Headers {
     
@@ -63,7 +60,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers[_], T] (val x: Self with Headers[T]) extends AnyVal {
+    implicit class HeadersMutableBuilder[Self <: Headers[?], T] (val x: Self & Headers[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

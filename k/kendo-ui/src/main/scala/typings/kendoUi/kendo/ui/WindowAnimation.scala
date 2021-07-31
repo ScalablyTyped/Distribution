@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowAnimation extends StObject {
   
-  var close: js.UndefOr[WindowAnimationClose] = js.native
+  var close: js.UndefOr[WindowAnimationClose] = js.undefined
   
-  var open: js.UndefOr[WindowAnimationOpen] = js.native
+  var open: js.UndefOr[WindowAnimationOpen] = js.undefined
 }
 object WindowAnimation {
   

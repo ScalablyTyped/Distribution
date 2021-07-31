@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetVariableResult extends StObject {
   
   /**
     * The errors from the request.
     */
-  var errors: js.UndefOr[BatchGetVariableErrorList] = js.native
+  var errors: js.UndefOr[BatchGetVariableErrorList] = js.undefined
   
   /**
     * The returned variables.
     */
-  var variables: js.UndefOr[VariableList] = js.native
+  var variables: js.UndefOr[VariableList] = js.undefined
 }
 object BatchGetVariableResult {
   

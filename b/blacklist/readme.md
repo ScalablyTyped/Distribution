@@ -11,8 +11,8 @@ Returns a shallow copy of an object without blacklisted properties
 | Full name          | blacklist |
 | Keywords           | blacklist, filter, object, utility |
 | # releases         | 0 |
-| # dependents       | 135 |
-| # downloads        | 3402361 |
+| # dependents       | 136 |
+| # downloads        | 4017643 |
 | # stars            | 1 |
 
 ## Links

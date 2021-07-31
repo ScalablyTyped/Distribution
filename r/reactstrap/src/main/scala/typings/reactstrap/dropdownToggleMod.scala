@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownToggleMod {
@@ -20,31 +19,31 @@ object dropdownToggleMod {
   
   type DropdownToggle = Component[DropdownToggleProps, js.Object, js.Any]
   
-  @js.native
   trait DropdownToggleProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
     @JSName("aria-haspopup")
-    var `aria-haspopup_DropdownToggleProps`: js.UndefOr[Boolean] = js.native
+    var `aria-haspopup_DropdownToggleProps`: js.UndefOr[Boolean] = js.undefined
     
-    var caret: js.UndefOr[Boolean] = js.native
+    var caret: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var `data-toggle`: js.UndefOr[String] = js.native
+    var `data-toggle`: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var nav: js.UndefOr[Boolean] = js.native
+    var nav: js.UndefOr[Boolean] = js.undefined
     
-    var outline: js.UndefOr[Boolean] = js.native
+    var outline: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var split: js.UndefOr[Boolean] = js.native
+    var split: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object DropdownToggleProps {
     
@@ -112,7 +111,7 @@ object dropdownToggleMod {
       def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

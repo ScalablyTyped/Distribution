@@ -5,31 +5,29 @@ import typings.typedGithubApi.anon.Name
 import typings.typedGithubApi.ownerRefMod.OwnerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationMod {
   
-  @js.native
   trait MyOrganization extends StObject {
     
-    var billingEmail: String = js.native
+    var billingEmail: String
     
-    var collaborators: Double = js.native
+    var collaborators: Double
     
-    var defaultRepositorySettings: String = js.native
+    var defaultRepositorySettings: String
     
-    var diskUsage: Double = js.native
+    var diskUsage: Double
     
-    var membersCanCreateRepositories: Boolean = js.native
+    var membersCanCreateRepositories: Boolean
     
-    var plan: Name = js.native
+    var plan: Name
     
-    var privateGists: Double = js.native
+    var privateGists: Double
     
-    var privateReposOwned: Double = js.native
+    var privateReposOwned: Double
     
-    var privateReposTotal: Double = js.native
+    var privateReposTotal: Double
   }
   object MyOrganization {
     
@@ -82,7 +80,9 @@ object organizationMod {
   }
   
   @js.native
-  trait Organization extends OrganizationSummary {
+  trait Organization
+    extends StObject
+       with OrganizationSummary {
     
     var blog: String = js.native
     
@@ -114,7 +114,9 @@ object organizationMod {
   }
   
   @js.native
-  trait OrganizationSummary extends OwnerRef {
+  trait OrganizationSummary
+    extends StObject
+       with OwnerRef {
     
     var avatarUri: String = js.native
     

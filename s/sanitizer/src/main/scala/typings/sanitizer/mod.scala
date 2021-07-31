@@ -2,49 +2,46 @@ package typings.sanitizer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sanitizer", "escape")
+  @JSImport("sanitizer", JSImport.Namespace)
   @js.native
-  def escape(s: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sanitizer", "makeSaxParser")
-  @js.native
-  def makeSaxParser(yourHandler: ISaxHandler): js.Function1[/* repeated */ js.Any, _] = js.native
+  @scala.inline
+  def escape(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("sanitizer", "normalizeRCData")
-  @js.native
-  def normalizeRCData(s: String): String = js.native
+  @scala.inline
+  def makeSaxParser(yourHandler: ISaxHandler): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSaxParser")(yourHandler.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @JSImport("sanitizer", "sanitize")
-  @js.native
-  def sanitize(s: String): String = js.native
+  @scala.inline
+  def normalizeRCData(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRCData")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("sanitizer", "unescapeEntities")
-  @js.native
-  def unescapeEntities(s: String): String = js.native
+  @scala.inline
+  def sanitize(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def unescapeEntities(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeEntities")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait ISaxHandler extends StObject {
     
-    def cdata(text: String, param: js.Any): Unit = js.native
+    def cdata(text: String, param: js.Any): Unit
     
-    def comment(text: String, param: js.Any): Unit = js.native
+    def comment(text: String, param: js.Any): Unit
     
-    def endDoc(param: js.Any): Unit = js.native
+    def endDoc(param: js.Any): Unit
     
-    def endTag(name: String, param: js.Any): Unit = js.native
+    def endTag(name: String, param: js.Any): Unit
     
-    def pcdata(text: String, param: js.Any): Unit = js.native
+    def pcdata(text: String, param: js.Any): Unit
     
-    def rcdata(text: String, param: js.Any): Unit = js.native
+    def rcdata(text: String, param: js.Any): Unit
     
-    def startDoc(param: js.Any): Unit = js.native
+    def startDoc(param: js.Any): Unit
     
-    def startTag(name: String, attribs: js.Array[String], param: js.Any): Unit = js.native
+    def startTag(name: String, attribs: js.Array[String], param: js.Any): Unit
   }
   object ISaxHandler {
     

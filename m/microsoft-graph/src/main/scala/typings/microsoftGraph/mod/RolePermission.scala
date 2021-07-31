@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RolePermission extends StObject {
   
   // Actions
-  var resourceActions: js.UndefOr[NullableOption[js.Array[ResourceAction]]] = js.native
+  var resourceActions: js.UndefOr[NullableOption[js.Array[ResourceAction]]] = js.undefined
 }
 object RolePermission {
   

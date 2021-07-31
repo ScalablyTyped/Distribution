@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsEntity. */
-@js.native
 trait QueryRelationsEntity extends StObject {
   
   /** If false, implicit querying is performed. The default is `false`. */
-  var exact: js.UndefOr[Boolean] = js.native
+  var exact: js.UndefOr[Boolean] = js.undefined
   
   /** Entity text content. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The type of the specified entity. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryRelationsEntity {
   

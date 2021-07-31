@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeviceResponse extends StObject {
   
   /**
     * The details of the device requested. Required.
     */
-  var Device: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Device] = js.native
+  var Device: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Device] = js.undefined
 }
 object GetDeviceResponse {
   

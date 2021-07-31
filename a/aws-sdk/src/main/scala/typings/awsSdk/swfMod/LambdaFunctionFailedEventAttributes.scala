@@ -2,31 +2,29 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionFailedEventAttributes extends StObject {
   
   /**
     * The details of the failure.
     */
-  var details: js.UndefOr[Data] = js.native
+  var details: js.UndefOr[Data] = js.undefined
   
   /**
     * The reason provided for the failure.
     */
-  var reason: js.UndefOr[FailureReason] = js.native
+  var reason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The ID of the LambdaFunctionScheduled event that was recorded when this activity task was scheduled. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var scheduledEventId: EventId = js.native
+  var scheduledEventId: EventId
   
   /**
     * The ID of the LambdaFunctionStarted event recorded when this activity task started. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
 }
 object LambdaFunctionFailedEventAttributes {
   

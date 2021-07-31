@@ -10,9 +10,9 @@ The Carbon Design System is IBM’s open-source design system for products and e
 | ------------------ | :-------------: |
 | Full name          | carbon-components |
 | Keywords           | carbon, component, components, css, html, ibm, javascript, js, library, pattern, patterns, sass, scss, style guide, eyeglass-module, carbon-design-system, react |
-| # releases         | 536 |
-| # dependents       | 59 |
-| # downloads        | 3359295 |
+| # releases         | 356 |
+| # dependents       | 67 |
+| # downloads        | 4027109 |
 | # stars            | 3 |
 
 ## Links

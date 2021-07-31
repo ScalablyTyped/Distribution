@@ -2,17 +2,15 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitAlertOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | String] = js.native
+  var animation: js.UndefOr[Boolean | String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var `sel-close`: js.UndefOr[String] = js.native
+  var `sel-close`: js.UndefOr[String] = js.undefined
 }
 object UIkitAlertOptions {
   

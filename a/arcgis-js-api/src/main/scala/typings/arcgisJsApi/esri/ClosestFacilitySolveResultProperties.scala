@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClosestFacilitySolveResultProperties extends StObject {
   
   /**
@@ -13,56 +11,56 @@ trait ClosestFacilitySolveResultProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#directions)
     */
-  var directions: js.UndefOr[js.Array[DirectionsFeatureSetProperties]] = js.native
+  var directions: js.UndefOr[js.Array[DirectionsFeatureSetProperties]] = js.undefined
   
   /**
     * An array of points representing facilities.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#facilities)
     */
-  var facilities: js.UndefOr[js.Array[PointProperties]] = js.native
+  var facilities: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
     * An array of points representing incidents.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#incidents)
     */
-  var incidents: js.UndefOr[js.Array[PointProperties]] = js.native
+  var incidents: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
     * Message received when the solve is complete.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#messages)
     */
-  var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.native
+  var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.undefined
   
   /**
     * The point barriers are an array of points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#pointBarriers)
     */
-  var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.native
+  var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
     * The polygon barriers are an array of polygons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#polygonBarriers)
     */
-  var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.native
+  var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
   
   /**
     * The polyline barriers are an array of polylines.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#polylineBarriers)
     */
-  var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.native
+  var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
   
   /**
     * The array of graphics representing routes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#routes)
     */
-  var routes: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var routes: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
 object ClosestFacilitySolveResultProperties {
   

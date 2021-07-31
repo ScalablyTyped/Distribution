@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The message returned from the DetectIntent method.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse extends StObject {
     * intents are supported, at which point those additional results will be
     * surfaced here.
     */
-  var alternativeQueryResults: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1QueryResult]] = js.native
+  var alternativeQueryResults: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1QueryResult]] = js.undefined
   
   /**
     * The audio data bytes encoded as specified in the request. Note: The
@@ -31,31 +29,31 @@ trait SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse extends StObject {
     * generating audio. If no default platform text responses exist, the
     * generated audio content will be empty.
     */
-  var outputAudio: js.UndefOr[String] = js.native
+  var outputAudio: js.UndefOr[String] = js.undefined
   
   /**
     * Instructs the speech synthesizer how to generate the output audio. This
     * field is populated from the agent-level speech synthesizer configuration,
     * if enabled.
     */
-  var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig] = js.native
+  var outputAudioConfig: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1OutputAudioConfig] = js.undefined
   
   /**
     * The selected results of the conversational query or event processing. See
     * `alternative_query_results` for additional potential results.
     */
-  var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryResult] = js.native
+  var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryResult] = js.undefined
   
   /**
     * The unique identifier of the response. It can be used to locate a
     * response in the training example set or for reporting issues.
     */
-  var responseId: js.UndefOr[String] = js.native
+  var responseId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the status of the webhook request.
     */
-  var webhookStatus: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var webhookStatus: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse {
   

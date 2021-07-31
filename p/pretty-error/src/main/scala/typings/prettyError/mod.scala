@@ -3,14 +3,18 @@ package typings.prettyError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("pretty-error", JSImport.Namespace)
   @js.native
-  class ^ () extends PrettyError
+  class ^ ()
+    extends StObject
+       with PrettyError
+  @JSImport("pretty-error", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pretty-error", "ParsedError")
   @js.native
@@ -18,20 +22,17 @@ object mod {
     def this(error: Error) = this()
   }
   
-  @JSImport("pretty-error", "start")
-  @js.native
-  def start(): js.Any = js.native
+  @scala.inline
+  def start(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Any]
   
-  @JSImport("pretty-error", "stop")
-  @js.native
-  def stop(): js.Any = js.native
+  @scala.inline
+  def stop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[js.Any]
   
-  @js.native
   trait Callback extends StObject {
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var traceLine: js.Object | js.Any = js.native
+    var traceLine: js.Object | js.Any
   }
   object Callback {
     
@@ -52,25 +53,24 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigObject extends StObject {
     
-    var aliases: js.UndefOr[Boolean | js.Object] = js.native
+    var aliases: js.UndefOr[Boolean | js.Object] = js.undefined
     
     // assuming this is optional
-    var filters: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.native
+    var filters: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.undefined
     
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
-    var parsedErrorFilters: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.native
+    var parsedErrorFilters: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.undefined
     
-    var skip: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.native
+    var skip: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.undefined
     
-    var skipNodeFiles: js.UndefOr[Boolean | js.Any] = js.native
+    var skipNodeFiles: js.UndefOr[Boolean | js.Any] = js.undefined
     
-    var skipPackages: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var skipPackages: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var skipPaths: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var skipPaths: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   }
   object ConfigObject {
     
@@ -176,9 +176,9 @@ object mod {
     def removeParsedErrorFilter(callbacks: Callback): PrettyError = js.native
     
     def render(e: ParsedError): String = js.native
-    def render(e: ParsedError, logIt: js.UndefOr[scala.Nothing], useColors: Boolean): String = js.native
     def render(e: ParsedError, logIt: Boolean): String = js.native
     def render(e: ParsedError, logIt: Boolean, useColors: Boolean): String = js.native
+    def render(e: ParsedError, logIt: Unit, useColors: Boolean): String = js.native
     
     def setMaxItems(maxItems: Double): PrettyError = js.native
     

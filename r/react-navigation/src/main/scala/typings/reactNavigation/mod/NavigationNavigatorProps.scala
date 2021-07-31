@@ -3,21 +3,19 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.`no-preference`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationNavigatorProps[Options, State, ScreenProps] extends StObject {
   
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
-  var navigation: js.UndefOr[NavigationProp[State]] = js.native
+  var navigation: js.UndefOr[NavigationProp[State]] = js.undefined
   
-  var navigationOptions: js.UndefOr[Options] = js.native
+  var navigationOptions: js.UndefOr[Options] = js.undefined
   
-  var screenProps: js.UndefOr[ScreenProps] = js.native
+  var screenProps: js.UndefOr[ScreenProps] = js.undefined
   
-  var theme: js.UndefOr[SupportedThemes | `no-preference`] = js.native
+  var theme: js.UndefOr[SupportedThemes | `no-preference`] = js.undefined
 }
 object NavigationNavigatorProps {
   
@@ -28,7 +26,7 @@ object NavigationNavigatorProps {
   }
   
   @scala.inline
-  implicit class NavigationNavigatorPropsMutableBuilder[Self <: NavigationNavigatorProps[_, _, _], Options, State, ScreenProps] (val x: Self with (NavigationNavigatorProps[Options, State, ScreenProps])) extends AnyVal {
+  implicit class NavigationNavigatorPropsMutableBuilder[Self <: NavigationNavigatorProps[?, ?, ?], Options, State, ScreenProps] (val x: Self & (NavigationNavigatorProps[Options, State, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])

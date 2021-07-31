@@ -5,7 +5,6 @@ import typings.std.EventListener
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * released.
   */
 @js.native
-trait WakeLockSentinel extends EventTarget {
+trait WakeLockSentinel
+  extends StObject
+     with EventTarget {
   
   /**
     * Called when the WakeLockSentinel's handle is released. Note that the
@@ -34,7 +35,7 @@ trait WakeLockSentinel extends EventTarget {
   var onrelease_Original: EventListener = js.native
   
   /** Releases the WakeLockSentinel's lock on the screen. */
-  def release(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def release(): js.Promise[Unit] = js.native
   
   /** Whether the WakeLockSentinel's handle has been released. */
   val released: Boolean = js.native

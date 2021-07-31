@@ -9,11 +9,9 @@ import typings.officeJs.officeJsStrings.Polynomial
 import typings.officeJs.officeJsStrings.Power
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartTrendline.toJSON()`. */
-@js.native
 trait ChartTrendlineData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var backwardPeriod: js.UndefOr[Double] = js.native
+  var backwardPeriod: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var format: js.UndefOr[ChartTrendlineFormatData] = js.native
+  var format: js.UndefOr[ChartTrendlineFormatData] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var forwardPeriod: js.UndefOr[Double] = js.native
+  var forwardPeriod: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var intercept: js.UndefOr[js.Any] = js.native
+  var intercept: js.UndefOr[js.Any] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var label: js.UndefOr[ChartTrendlineLabelData] = js.native
+  var label: js.UndefOr[ChartTrendlineLabelData] = js.undefined
   
   /**
     *
@@ -62,7 +60,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var movingAveragePeriod: js.UndefOr[Double] = js.native
+  var movingAveragePeriod: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -70,7 +68,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -78,7 +76,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var polynomialOrder: js.UndefOr[Double] = js.native
+  var polynomialOrder: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showEquation: js.UndefOr[Boolean] = js.native
+  var showEquation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -94,7 +92,7 @@ trait ChartTrendlineData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showRSquared: js.UndefOr[Boolean] = js.native
+  var showRSquared: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -104,7 +102,7 @@ trait ChartTrendlineData extends StObject {
     */
   var `type`: js.UndefOr[
     ChartTrendlineType | Linear | Exponential | Logarithmic | MovingAverage | Polynomial | Power
-  ] = js.native
+  ] = js.undefined
 }
 object ChartTrendlineData {
   

@@ -2,33 +2,31 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAnnotations extends StObject {
   
   /**
     * A list of annotations.
     */
-  var items: js.UndefOr[js.Array[SchemaAnnotation]] = js.native
+  var items: js.UndefOr[js.Array[SchemaAnnotation]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token to pass in for pagination for the next page. This will not be
     * present if this request does not have more results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of annotations found. This may be greater than the number of
     * notes returned in this response if results have been paginated.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaAnnotations {
   

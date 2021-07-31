@@ -9,43 +9,41 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends StObject {
   
-  var `aria-activedescendant`: String = js.native
+  var `aria-activedescendant`: String
   
-  var `aria-autocomplete`: list | both = js.native
+  var `aria-autocomplete`: list | both
   
-  var `aria-expanded`: Boolean = js.native
+  var `aria-expanded`: Boolean
   
-  var `aria-haspopup`: listbox = js.native
+  var `aria-haspopup`: listbox
   
-  var `aria-owns`: String = js.native
+  var `aria-owns`: String
   
-  var autoComplete: String = js.native
+  var autoComplete: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var inputRef: LegacyRef[HTMLInputElement] = js.native
+  var inputRef: LegacyRef[HTMLInputElement]
   
-  def onBlur(e: Event): Unit = js.native
+  def onBlur(e: Event): Unit
   
-  def onChange(selected: js.Array[T]): Unit = js.native
+  def onChange(selected: js.Array[T]): Unit
   
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event): Unit
   
-  def onFocus(e: Event): Unit = js.native
+  def onFocus(e: Event): Unit
   
-  def onKeyDown(e: Event): Unit = js.native
+  def onKeyDown(e: Event): Unit
   
-  var placeholder: String | Null = js.native
+  var placeholder: String | Null
   
-  var role: combobox = js.native
+  var role: combobox
   
-  var value: String = js.native
+  var value: String
 }
 object InputContainerPropsSingle {
   
@@ -54,7 +52,6 @@ object InputContainerPropsSingle {
     `aria-activedescendant`: String,
     `aria-autocomplete`: list | both,
     `aria-expanded`: Boolean,
-    `aria-haspopup`: listbox,
     `aria-owns`: String,
     autoComplete: String,
     disabled: Boolean,
@@ -63,20 +60,19 @@ object InputContainerPropsSingle {
     onClick: Event => Unit,
     onFocus: Event => Unit,
     onKeyDown: Event => Unit,
-    role: combobox,
     value: String
   ): InputContainerPropsSingle[T] = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = role.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = "combobox", value = value.asInstanceOf[js.Any], inputRef = null, placeholder = null)
     __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-haspopup")("listbox")
     __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputContainerPropsSingle[T]]
   }
   
   @scala.inline
-  implicit class InputContainerPropsSingleMutableBuilder[Self <: InputContainerPropsSingle[_], T /* <: TypeaheadModel */] (val x: Self with InputContainerPropsSingle[T]) extends AnyVal {
+  implicit class InputContainerPropsSingleMutableBuilder[Self <: InputContainerPropsSingle[?], T /* <: TypeaheadModel */] (val x: Self & InputContainerPropsSingle[T]) extends AnyVal {
     
     @scala.inline
     def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])

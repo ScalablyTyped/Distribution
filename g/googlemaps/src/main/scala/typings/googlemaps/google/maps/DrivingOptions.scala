@@ -3,15 +3,13 @@ package typings.googlemaps.google.maps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrivingOptions extends StObject {
   
-  var departureTime: Date = js.native
+  var departureTime: Date
   
-  var trafficModel: js.UndefOr[TrafficModel] = js.native
+  var trafficModel: js.UndefOr[TrafficModel] = js.undefined
 }
 object DrivingOptions {
   

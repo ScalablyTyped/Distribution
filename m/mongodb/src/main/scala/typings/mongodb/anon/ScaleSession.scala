@@ -3,15 +3,13 @@ package typings.mongodb.anon
 import typings.mongodb.mod.ClientSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleSession extends StObject {
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
 }
 object ScaleSession {
   

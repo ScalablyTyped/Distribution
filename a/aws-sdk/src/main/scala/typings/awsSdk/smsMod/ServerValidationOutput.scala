@@ -2,13 +2,11 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerValidationOutput extends StObject {
   
-  var server: js.UndefOr[Server] = js.native
+  var server: js.UndefOr[Server] = js.undefined
 }
 object ServerValidationOutput {
   

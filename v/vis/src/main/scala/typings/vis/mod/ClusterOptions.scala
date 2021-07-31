@@ -2,10 +2,8 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ClusterOptions extends StObject {
     * If none are provided, the options from the edges that are replaced are used.
     * If undefined, default edge options will be used.
     */
-  var clusterEdgeProperties: js.UndefOr[EdgeOptions] = js.native
+  var clusterEdgeProperties: js.UndefOr[EdgeOptions] = js.undefined
   
   /**
     * Optional.
@@ -26,7 +24,7 @@ trait ClusterOptions extends StObject {
     * This is also the style object that is provided in the processProperties function for fine tuning.
     * If undefined, default node options will be used.
     */
-  var clusterNodeProperties: js.UndefOr[NodeOptions] = js.native
+  var clusterNodeProperties: js.UndefOr[NodeOptions] = js.undefined
   
   /**
     * Optional for all but the cluster method.
@@ -35,7 +33,7 @@ trait ClusterOptions extends StObject {
     * this node will be added to the cluster. You have access to all options (including the default)
     * as well as any custom fields you may have added to the node to determine whether or not to include it in the cluster.
     */
-  var joinCondition: js.UndefOr[js.Function1[/* nodeOptions */ js.Any, Boolean]] = js.native
+  var joinCondition: js.UndefOr[js.Function1[/* nodeOptions */ js.Any, Boolean]] = js.undefined
   
   /**
     * Optional.
@@ -47,11 +45,11 @@ trait ClusterOptions extends StObject {
   var processProperties: js.UndefOr[
     js.Function3[
       /* clusterOptions */ js.Any, 
-      /* childNodesOptions */ js.Array[_], 
-      /* childEdgesOptions */ js.Array[_], 
-      _
+      /* childNodesOptions */ js.Array[js.Any], 
+      /* childEdgesOptions */ js.Array[js.Any], 
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ClusterOptions {
   
@@ -84,7 +82,7 @@ object ClusterOptions {
     
     @scala.inline
     def setProcessProperties(
-      value: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[_], /* childEdgesOptions */ js.Array[_]) => _
+      value: (/* clusterOptions */ js.Any, /* childNodesOptions */ js.Array[js.Any], /* childEdgesOptions */ js.Array[js.Any]) => js.Any
     ): Self = StObject.set(x, "processProperties", js.Any.fromFunction3(value))
     
     @scala.inline

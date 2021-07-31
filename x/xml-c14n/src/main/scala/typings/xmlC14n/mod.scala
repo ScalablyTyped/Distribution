@@ -3,23 +3,24 @@ package typings.xmlC14n
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): CanonizationFactory = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CanonizationFactory]
+  
   @JSImport("xml-c14n", JSImport.Namespace)
   @js.native
-  def apply(): CanonizationFactory = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Canonicalize extends StObject {
     
-    def _processInner(node: Node): String = js.native
+    def _processInner(node: Node): String
     
-    def canonicalise(node: Node, cb: canonicaliseCb): Unit = js.native
+    def canonicalise(node: Node, cb: canonicaliseCb): Unit
     
-    def name(): String = js.native
+    def name(): String
   }
   object Canonicalize {
     
@@ -54,12 +55,11 @@ object mod {
     def registerAlgorithm(uri: String, implementation: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var includeComments: js.UndefOr[Boolean] = js.native
+    var includeComments: js.UndefOr[Boolean] = js.undefined
     
-    var inclusiveNamespaces: js.UndefOr[Boolean] = js.native
+    var inclusiveNamespaces: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

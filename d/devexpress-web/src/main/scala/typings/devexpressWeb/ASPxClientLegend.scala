@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the Legend class.
   */
-@js.native
-trait ASPxClientLegend extends ASPxClientWebChartElement {
+trait ASPxClientLegend
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Returns a collection of custom legend items of the legend.
     */
-  var customItems: js.Array[ASPxClientCustomLegendItem] = js.native
+  var customItems: js.Array[ASPxClientCustomLegendItem]
   
   /**
     * Returns the name of the legend.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Returns a value which determines whether to use checkboxes instead of markers on a chart legend for all legend items.
     */
-  var useCheckBoxes: Boolean = js.native
+  var useCheckBoxes: Boolean
 }
 object ASPxClientLegend {
   

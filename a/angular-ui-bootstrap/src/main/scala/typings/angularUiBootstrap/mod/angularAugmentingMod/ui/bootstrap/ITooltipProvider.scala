@@ -3,21 +3,21 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 import typings.angular.mod.IServiceProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITooltipProvider extends IServiceProvider {
+trait ITooltipProvider
+  extends StObject
+     with IServiceProvider {
   
   /**
     * Provide a set of defaults for certain tooltip and popover attributes.
     */
-  def options(value: ITooltipOptions): Unit = js.native
+  def options(value: ITooltipOptions): Unit
   
   /**
     * Extends the default trigger mappings with mappings of your own. E.g. `{ 'openTrigger': 'closeTrigger' }`.
     */
-  def setTriggers(triggers: js.Object): Unit = js.native
+  def setTriggers(triggers: js.Object): Unit
 }
 object ITooltipProvider {
   

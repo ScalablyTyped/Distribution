@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `auth.tenantManager().authForTenant(tenantId)`.
   */
 @js.native
-trait TenantAwareAuth extends BaseAuth {
+trait TenantAwareAuth
+  extends StObject
+     with BaseAuth {
   
   /**
     * The tenant identifier corresponding to this `TenantAwareAuth` instance.

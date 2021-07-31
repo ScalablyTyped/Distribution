@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * hidden sheet is composed of the URL of the external document and the external sheet name.
   * @since OOo 3.0
   */
-@js.native
-trait XExternalSheetName extends XInterface {
+trait XExternalSheetName
+  extends StObject
+     with XInterface {
   
   /**
     * sets an external name at the sheet.
@@ -25,7 +25,7 @@ trait XExternalSheetName extends XInterface {
     * @param aSheetName the name of the sheet in the external document.
     * @throws com::sun::star::container::ElementExistException a sheet with that external name already exists in this document
     */
-  def setExternalName(aUrl: String, aSheetName: String): Unit = js.native
+  def setExternalName(aUrl: String, aSheetName: String): Unit
 }
 object XExternalSheetName {
   

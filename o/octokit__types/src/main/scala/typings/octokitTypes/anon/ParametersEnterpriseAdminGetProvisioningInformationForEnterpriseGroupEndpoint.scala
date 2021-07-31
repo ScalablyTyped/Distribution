@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminGetProvisioningInformati
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint = js.native
+  var parameters: EnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint
   
-  var request: EnterpriseAdminGetProvisioningInformationForEnterpriseGroupRequestOptions = js.native
+  var request: EnterpriseAdminGetProvisioningInformationForEnterpriseGroupRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminGetProvisioningInformationForEnterpriseGroupResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminGetProvisioningInformationForEnterpriseGroupResponseData]
 }
 object ParametersEnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint {
   

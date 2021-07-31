@@ -2,16 +2,16 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEventCollision[T] extends IEventTimestamped[T] {
+trait IEventCollision[T]
+  extends StObject
+     with IEventTimestamped[T] {
   
   /**
     * The collision pair
     */
-  var pairs: js.Array[IPair] = js.native
+  var pairs: js.Array[IPair]
 }
 object IEventCollision {
   
@@ -22,7 +22,7 @@ object IEventCollision {
   }
   
   @scala.inline
-  implicit class IEventCollisionMutableBuilder[Self <: IEventCollision[_], T] (val x: Self with IEventCollision[T]) extends AnyVal {
+  implicit class IEventCollisionMutableBuilder[Self <: IEventCollision[?], T] (val x: Self & IEventCollision[T]) extends AnyVal {
     
     @scala.inline
     def setPairs(value: js.Array[IPair]): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])

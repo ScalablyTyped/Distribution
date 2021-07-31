@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Details about the resource usage and capacity of the environment. */
-@js.native
 trait IndexCapacity extends StObject {
   
   /** Summary of the collection usage in the environment. */
-  var collections: js.UndefOr[CollectionUsage] = js.native
+  var collections: js.UndefOr[CollectionUsage] = js.undefined
   
   /** Summary of the disk usage statistics for the environment. */
-  var disk_usage: js.UndefOr[DiskUsage] = js.native
+  var disk_usage: js.UndefOr[DiskUsage] = js.undefined
   
   /** Summary of the document usage statistics for the environment. */
-  var documents: js.UndefOr[EnvironmentDocuments] = js.native
+  var documents: js.UndefOr[EnvironmentDocuments] = js.undefined
 }
 object IndexCapacity {
   

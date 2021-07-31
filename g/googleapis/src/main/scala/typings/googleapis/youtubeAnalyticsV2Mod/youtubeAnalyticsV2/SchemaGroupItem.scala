@@ -2,30 +2,28 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A group item.
   */
-@js.native
 trait SchemaGroupItem extends StObject {
   
   /**
     * Apiary error details
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * The Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the group that contains the
     * item.
     */
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the `channel`, `video`,
@@ -36,19 +34,19 @@ trait SchemaGroupItem extends StObject {
     * `resource.id` property&#39;s value specifies the unique channel, video,
     * playlist, or asset ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the API resource&#39;s type. The value will be
     * `youtube#groupItem`.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The `resource` object contains information that identifies the item being
     * added to the group.
     */
-  var resource: js.UndefOr[SchemaGroupItemResource] = js.native
+  var resource: js.UndefOr[SchemaGroupItemResource] = js.undefined
 }
 object SchemaGroupItem {
   

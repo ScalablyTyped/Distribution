@@ -4,25 +4,26 @@ import typings.githubLabelSync.anon.Diff
 import typings.githubLabelSync.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("github-label-sync", JSImport.Default)
+  @JSImport("github-label-sync", JSImport.Namespace)
   @js.native
-  def default(options: Options): js.Promise[js.Array[LabelDiff]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(options: Options): js.Promise[js.Array[LabelDiff]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LabelDiff]]]
   
   @JSImport("github-label-sync", "defaults")
   @js.native
   val defaults: DefaultOptions = js.native
   
-  @js.native
   trait BasicLabel extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var name: String = js.native
+    var name: String
   }
   object BasicLabel {
     
@@ -44,24 +45,23 @@ object mod {
   }
   
   /* Inlined parent std.Required<github-label-sync.github-label-sync.OptionsBase> */
-  @js.native
   trait DefaultOptions extends StObject {
     
-    var accessToken: Null = js.native
+    var accessToken: Null
     
-    var allowAddedLabels: Boolean = js.native
+    var allowAddedLabels: Boolean
     
-    var dryRun: Boolean = js.native
+    var dryRun: Boolean
     
-    var endpoint: Null = js.native
+    var endpoint: Null
     
-    var format: Diff = js.native
+    var format: Diff
     
-    var labels: js.Array[LabelInfo] = js.native
+    var labels: js.Array[LabelInfo]
     
-    var log: Info = js.native
+    var log: Info
     
-    var repo: Null = js.native
+    var repo: Null
   }
   object DefaultOptions {
     
@@ -112,16 +112,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LabelDiff extends StObject {
     
-    var actual: js.UndefOr[BasicLabel] = js.native
+    var actual: js.UndefOr[BasicLabel] = js.undefined
     
-    var expected: js.UndefOr[BasicLabel] = js.native
+    var expected: js.UndefOr[BasicLabel] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object LabelDiff {
     
@@ -155,12 +154,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait LabelInfo extends BasicLabel {
+  trait LabelInfo
+    extends StObject
+       with BasicLabel {
     
-    var aliases: js.UndefOr[js.Array[String]] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object LabelInfo {
     
@@ -190,14 +190,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends OptionsBase {
+  trait Options
+    extends StObject
+       with OptionsBase {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var repo: String = js.native
+    var repo: String
   }
   object Options {
     
@@ -224,18 +225,17 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionsBase extends StObject {
     
-    var allowAddedLabels: js.UndefOr[Boolean] = js.native
+    var allowAddedLabels: js.UndefOr[Boolean] = js.undefined
     
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Diff] = js.native
+    var format: js.UndefOr[Diff] = js.undefined
     
-    var labels: js.Array[LabelInfo] = js.native
+    var labels: js.Array[LabelInfo]
     
-    var log: js.UndefOr[Info] = js.native
+    var log: js.UndefOr[Info] = js.undefined
   }
   object OptionsBase {
     

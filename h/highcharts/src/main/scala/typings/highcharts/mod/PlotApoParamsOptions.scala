@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotApoParamsOptions extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait PlotApoParamsOptions extends StObject {
     * index is set to 3 which means that the ema indicator will be calculated
     * using Close values.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Periods for Absolute Price Oscillator calculations.
     */
-  var periods: js.UndefOr[js.Array[Double]] = js.native
+  var periods: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object PlotApoParamsOptions {
   

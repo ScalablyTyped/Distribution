@@ -6,46 +6,44 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.current
 import typings.atlassianConnectJs.atlassianConnectJsStrings.page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<atlassian-connect-js.AP.navigator.NavigatorContext> */
-@js.native
 trait PartialNavigatorContext extends StObject {
   
-  var absoluteUrl: js.UndefOr[String] = js.native
+  var absoluteUrl: js.UndefOr[String] = js.undefined
   
-  var addonKey: js.UndefOr[String] = js.native
+  var addonKey: js.UndefOr[String] = js.undefined
   
-  var adminPageKey: js.UndefOr[String] = js.native
+  var adminPageKey: js.UndefOr[String] = js.undefined
   
-  var contentId: js.UndefOr[String] = js.native
+  var contentId: js.UndefOr[String] = js.undefined
   
-  var contentType: js.UndefOr[page | blogpost] = js.native
+  var contentType: js.UndefOr[page | blogpost] = js.undefined
   
-  var customData: js.UndefOr[String] = js.native
+  var customData: js.UndefOr[String] = js.undefined
   
-  var dashboardId: js.UndefOr[String] = js.native
+  var dashboardId: js.UndefOr[String] = js.undefined
   
-  var embeddedContentRender: js.UndefOr[current | `version-at-save`] = js.native
+  var embeddedContentRender: js.UndefOr[current | `version-at-save`] = js.undefined
   
-  var issueKey: js.UndefOr[String] = js.native
+  var issueKey: js.UndefOr[String] = js.undefined
   
-  var moduleKey: js.UndefOr[String] = js.native
+  var moduleKey: js.UndefOr[String] = js.undefined
   
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
-  var projectKey: js.UndefOr[String] = js.native
+  var projectKey: js.UndefOr[String] = js.undefined
   
-  var relativeUrl: js.UndefOr[String] = js.native
+  var relativeUrl: js.UndefOr[String] = js.undefined
   
-  var spaceKey: js.UndefOr[String] = js.native
+  var spaceKey: js.UndefOr[String] = js.undefined
   
-  var userAccountId: js.UndefOr[String] = js.native
+  var userAccountId: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var versionOverride: js.UndefOr[String] = js.native
+  var versionOverride: js.UndefOr[String] = js.undefined
 }
 object PartialNavigatorContext {
   

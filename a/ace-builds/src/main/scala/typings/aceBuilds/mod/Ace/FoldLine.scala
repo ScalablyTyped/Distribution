@@ -2,7 +2,6 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,7 +32,7 @@ trait FoldLine extends StObject {
   var start: Point = js.native
   
   def walk(callback: js.Function): Unit = js.native
-  def walk(callback: js.Function, endRow: js.UndefOr[scala.Nothing], endColumn: Double): Unit = js.native
   def walk(callback: js.Function, endRow: Double): Unit = js.native
   def walk(callback: js.Function, endRow: Double, endColumn: Double): Unit = js.native
+  def walk(callback: js.Function, endRow: Unit, endColumn: Double): Unit = js.native
 }

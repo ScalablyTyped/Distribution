@@ -4,21 +4,19 @@ import typings.antdMobile.antdMobileStrings.fixed
 import typings.antdMobile.antdMobileStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressPropsTypeMod {
   
-  @js.native
   trait ProgressPropsType extends StObject {
     
-    var appearTransition: js.UndefOr[Boolean] = js.native
+    var appearTransition: js.UndefOr[Boolean] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[fixed | normal] = js.native
+    var position: js.UndefOr[fixed | normal] = js.undefined
     
-    var unfilled: js.UndefOr[Boolean] = js.native
+    var unfilled: js.UndefOr[Boolean] = js.undefined
   }
   object ProgressPropsType {
     

@@ -2,12 +2,14 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publishLastMod {
   
-  @JSImport("rxjs-compat/operators/publishLast", "publishLast")
+  @JSImport("rxjs-compat/operators/publishLast", JSImport.Namespace)
   @js.native
-  def publishLast[T](): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def publishLast[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("publishLast")().asInstanceOf[js.Any]
 }

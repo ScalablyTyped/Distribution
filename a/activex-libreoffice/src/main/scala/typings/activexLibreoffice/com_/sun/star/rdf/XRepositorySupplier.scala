@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.0
   */
-@js.native
 trait XRepositorySupplier extends StObject {
   
   /**
     * provides the RDF {@link Repository} associated with this object.
     * @returns an object of type {@link XRepository}
     */
-  val RDFRepository: XRepository = js.native
+  val RDFRepository: XRepository
   
   /**
     * provides the RDF {@link Repository} associated with this object.
     * @returns an object of type {@link XRepository}
     */
-  def getRDFRepository(): XRepository = js.native
+  def getRDFRepository(): XRepository
 }
 object XRepositorySupplier {
   

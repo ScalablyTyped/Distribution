@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UngroupResourcesInput extends StObject {
   
   /**
     * The name or the ARN of the resource group from which to remove the resources.
     */
-  var Group: GroupString = js.native
+  var Group: GroupString
   
   /**
     * The ARNs of the resources to be removed from the group.
     */
-  var ResourceArns: ResourceArnList = js.native
+  var ResourceArns: ResourceArnList
 }
 object UngroupResourcesInput {
   

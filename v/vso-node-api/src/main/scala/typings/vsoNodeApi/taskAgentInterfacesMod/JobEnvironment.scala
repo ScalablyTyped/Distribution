@@ -3,26 +3,24 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobEnvironment extends StObject {
   
-  var endpoints: js.Array[ServiceEndpoint] = js.native
+  var endpoints: js.Array[ServiceEndpoint]
   
-  var mask: js.Array[MaskHint] = js.native
+  var mask: js.Array[MaskHint]
   
-  var options: StringDictionary[JobOption] = js.native
+  var options: StringDictionary[JobOption]
   
-  var secureFiles: js.Array[SecureFile] = js.native
+  var secureFiles: js.Array[SecureFile]
   
   /**
     * Gets or sets the endpoint used for communicating back to the calling service.
     */
-  var systemConnection: ServiceEndpoint = js.native
+  var systemConnection: ServiceEndpoint
   
-  var variables: StringDictionary[String] = js.native
+  var variables: StringDictionary[String]
 }
 object JobEnvironment {
   

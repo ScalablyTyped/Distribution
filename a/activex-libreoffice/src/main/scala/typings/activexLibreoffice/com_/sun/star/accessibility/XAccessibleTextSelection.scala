@@ -5,25 +5,25 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAccessibleTextSelection extends XInterface {
+trait XAccessibleTextSelection
+  extends StObject
+     with XInterface {
   
-  val SelectedPortionCount: Double = js.native
+  val SelectedPortionCount: Double
   
-  def addSelection(selectionIndex: Double, startOffset: Double, endOffset: Double): Double = js.native
+  def addSelection(selectionIndex: Double, startOffset: Double, endOffset: Double): Double
   
-  def getSelectedPortionCount(): Double = js.native
+  def getSelectedPortionCount(): Double
   
-  def getSeletedPositionEnd(nSelectedPortionIndex: Double): Double = js.native
+  def getSeletedPositionEnd(nSelectedPortionIndex: Double): Double
   
-  def getSeletedPositionStart(nSelectedPortionIndex: Double): Double = js.native
+  def getSeletedPositionStart(nSelectedPortionIndex: Double): Double
   
-  def removeSelection(selectionIndex: Double): Boolean = js.native
+  def removeSelection(selectionIndex: Double): Boolean
   
-  def scrollToPosition(aPoint: Point, isLeftTop: Boolean): Boolean = js.native
+  def scrollToPosition(aPoint: Point, isLeftTop: Boolean): Boolean
 }
 object XAccessibleTextSelection {
   

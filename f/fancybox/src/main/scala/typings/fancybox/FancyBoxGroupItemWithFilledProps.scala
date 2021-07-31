@@ -2,20 +2,20 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FancyBoxGroupItemWithFilledProps extends FancyBoxGroupItem {
+trait FancyBoxGroupItemWithFilledProps
+  extends StObject
+     with FancyBoxGroupItem {
   
   @JSName("$thumb")
-  var $thumb: js.UndefOr[JQuery] = js.native
+  var $thumb: js.UndefOr[JQuery] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var thumb: js.UndefOr[js.Any] = js.native
+  var thumb: js.UndefOr[js.Any] = js.undefined
 }
 object FancyBoxGroupItemWithFilledProps {
   

@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwaitExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_AwaitExpression: typings.estree.estreeStrings.AwaitExpression = js.native
+  var type_AwaitExpression: typings.estree.estreeStrings.AwaitExpression
 }
 object AwaitExpression {
   
   @scala.inline
-  def apply(argument: Expression, `type`: typings.estree.estreeStrings.AwaitExpression): AwaitExpression = {
+  def apply(argument: Expression): AwaitExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AwaitExpression")
     __obj.asInstanceOf[AwaitExpression]
   }
   

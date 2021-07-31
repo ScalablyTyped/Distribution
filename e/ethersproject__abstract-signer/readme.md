@@ -10,9 +10,9 @@ An Abstract Class for desribing an Ethereum Signer for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/abstract-signer |
 | Keywords           | Ethereum, ethers |
-| # releases         | 36 |
-| # dependents       | 29 |
-| # downloads        | 684355 |
+| # releases         | 41 |
+| # dependents       | 37 |
+| # downloads        | 1889465 |
 | # stars            | 0 |
 
 ## Links

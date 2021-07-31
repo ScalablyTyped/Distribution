@@ -2,47 +2,45 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseUser extends StObject {
   
-  var account_badges: js.UndefOr[js.Array[_]] = js.native
+  var account_badges: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var can_be_reported_as_fraud: js.UndefOr[Boolean] = js.native
+  var can_be_reported_as_fraud: js.UndefOr[Boolean] = js.undefined
   
-  var friendship_status: js.UndefOr[TopicalExploreFeedResponseFriendshipStatus] = js.native
+  var friendship_status: js.UndefOr[TopicalExploreFeedResponseFriendshipStatus] = js.undefined
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+  var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
   
-  var is_favorite: js.UndefOr[Boolean] = js.native
+  var is_favorite: js.UndefOr[Boolean] = js.undefined
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_unpublished: js.UndefOr[Boolean] = js.native
+  var is_unpublished: js.UndefOr[Boolean] = js.undefined
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var latest_reel_media: js.UndefOr[Double] = js.native
+  var latest_reel_media: js.UndefOr[Double] = js.undefined
   
-  var merchant_checkout_style: js.UndefOr[String] = js.native
+  var merchant_checkout_style: js.UndefOr[String] = js.undefined
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: js.UndefOr[String] = js.native
+  var profile_pic_id: js.UndefOr[String] = js.undefined
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var seller_shoppable_feed_type: js.UndefOr[String] = js.native
+  var seller_shoppable_feed_type: js.UndefOr[String] = js.undefined
   
-  var shoppable_posts_count: js.UndefOr[Double] = js.native
+  var shoppable_posts_count: js.UndefOr[Double] = js.undefined
   
-  var show_shoppable_feed: js.UndefOr[Boolean] = js.native
+  var show_shoppable_feed: js.UndefOr[Boolean] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object TopicalExploreFeedResponseUser {
   
@@ -63,7 +61,7 @@ object TopicalExploreFeedResponseUser {
   implicit class TopicalExploreFeedResponseUserMutableBuilder[Self <: TopicalExploreFeedResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAccount_badges(value: js.Array[_]): Self = StObject.set(x, "account_badges", value.asInstanceOf[js.Any])
+    def setAccount_badges(value: js.Array[js.Any]): Self = StObject.set(x, "account_badges", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAccount_badgesUndefined: Self = StObject.set(x, "account_badges", js.undefined)

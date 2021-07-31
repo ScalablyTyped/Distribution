@@ -11,14 +11,15 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.agGrid.valueServiceMod.ValueService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridSerializerMod {
   
   @JSImport("ag-grid/dist/lib/gridSerializer", "BaseGridSerializingSession")
   @js.native
-  abstract class BaseGridSerializingSession[T] protected () extends GridSerializingSession[T] {
+  abstract class BaseGridSerializingSession[T] protected ()
+    extends StObject
+       with GridSerializingSession[T] {
     def this(
       columnController: ColumnController,
       valueService: ValueService,
@@ -34,13 +35,6 @@ object gridSerializerMod {
       columnController: ColumnController,
       valueService: ValueService,
       gridOptionsWrapper: GridOptionsWrapper,
-      processCellCallback: js.UndefOr[scala.Nothing],
-      processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String]
-    ) = this()
-    def this(
-      columnController: ColumnController,
-      valueService: ValueService,
-      gridOptionsWrapper: GridOptionsWrapper,
       processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
       processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String]
     ) = this()
@@ -48,25 +42,8 @@ object gridSerializerMod {
       columnController: ColumnController,
       valueService: ValueService,
       gridOptionsWrapper: GridOptionsWrapper,
-      processCellCallback: js.UndefOr[scala.Nothing],
-      processHeaderCallback: js.UndefOr[scala.Nothing],
-      cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
-    ) = this()
-    def this(
-      columnController: ColumnController,
-      valueService: ValueService,
-      gridOptionsWrapper: GridOptionsWrapper,
-      processCellCallback: js.UndefOr[scala.Nothing],
-      processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String],
-      cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
-    ) = this()
-    def this(
-      columnController: ColumnController,
-      valueService: ValueService,
-      gridOptionsWrapper: GridOptionsWrapper,
-      processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
-      processHeaderCallback: js.UndefOr[scala.Nothing],
-      cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
+      processCellCallback: Unit,
+      processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String]
     ) = this()
     def this(
       columnController: ColumnController,
@@ -76,6 +53,39 @@ object gridSerializerMod {
       processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String],
       cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
     ) = this()
+    def this(
+      columnController: ColumnController,
+      valueService: ValueService,
+      gridOptionsWrapper: GridOptionsWrapper,
+      processCellCallback: js.Function1[/* params */ ProcessCellForExportParams, String],
+      processHeaderCallback: Unit,
+      cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
+    ) = this()
+    def this(
+      columnController: ColumnController,
+      valueService: ValueService,
+      gridOptionsWrapper: GridOptionsWrapper,
+      processCellCallback: Unit,
+      processHeaderCallback: js.Function1[/* params */ ProcessHeaderForExportParams, String],
+      cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
+    ) = this()
+    def this(
+      columnController: ColumnController,
+      valueService: ValueService,
+      gridOptionsWrapper: GridOptionsWrapper,
+      processCellCallback: Unit,
+      processHeaderCallback: Unit,
+      cellAndHeaderEscaper: js.Function1[/* rawValue */ String, String]
+    ) = this()
+    
+    /* CompleteClass */
+    override def addCustomFooter(customFooter: T): Unit = js.native
+    
+    /**
+      * ROW METHODS
+      */
+    /* CompleteClass */
+    override def addCustomHeader(customHeader: T): Unit = js.native
     
     def cellAndHeaderEscaper(rawValue: String): String = js.native
     
@@ -91,6 +101,27 @@ object gridSerializerMod {
     /* private */ def getHeaderName(callback: js.Any, column: js.Any): js.Any = js.native
     
     var gridOptionsWrapper: GridOptionsWrapper = js.native
+    
+    /* CompleteClass */
+    override def onNewBodyRow(): RowAccumulator = js.native
+    
+    /* CompleteClass */
+    override def onNewHeaderGroupingRow(): RowSpanningAccumulator = js.native
+    
+    /* CompleteClass */
+    override def onNewHeaderRow(): RowAccumulator = js.native
+    
+    /**
+      * FINAL RESULT
+      */
+    /* CompleteClass */
+    override def parse(): String = js.native
+    
+    /**
+      * INITIAL METHOD
+      */
+    /* CompleteClass */
+    override def prepare(columnsToExport: js.Array[Column]): Unit = js.native
     
     /* private */ def processCell(rowNode: js.Any, column: js.Any, value: js.Any, processCellCallback: js.Any, `type`: js.Any): js.Any = js.native
     
@@ -134,46 +165,51 @@ object gridSerializerMod {
   object RowType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RowType with Double] = js.native
+    def apply(value: Double): js.UndefOr[RowType & Double] = js.native
     
     @js.native
-    sealed trait BODY extends RowType
-    /* 2 */ val BODY: typings.agGrid.gridSerializerMod.RowType.BODY with Double = js.native
+    sealed trait BODY
+      extends StObject
+         with RowType
+    /* 2 */ val BODY: typings.agGrid.gridSerializerMod.RowType.BODY & Double = js.native
     
     @js.native
-    sealed trait HEADER extends RowType
-    /* 1 */ val HEADER: typings.agGrid.gridSerializerMod.RowType.HEADER with Double = js.native
+    sealed trait HEADER
+      extends StObject
+         with RowType
+    /* 1 */ val HEADER: typings.agGrid.gridSerializerMod.RowType.HEADER & Double = js.native
     
     @js.native
-    sealed trait HEADER_GROUPING extends RowType
-    /* 0 */ val HEADER_GROUPING: typings.agGrid.gridSerializerMod.RowType.HEADER_GROUPING with Double = js.native
+    sealed trait HEADER_GROUPING
+      extends StObject
+         with RowType
+    /* 0 */ val HEADER_GROUPING: typings.agGrid.gridSerializerMod.RowType.HEADER_GROUPING & Double = js.native
   }
   
-  @js.native
   trait GridSerializingSession[T] extends StObject {
     
-    def addCustomFooter(customFooter: T): Unit = js.native
+    def addCustomFooter(customFooter: T): Unit
     
     /**
       * ROW METHODS
       */
-    def addCustomHeader(customHeader: T): Unit = js.native
+    def addCustomHeader(customHeader: T): Unit
     
-    def onNewBodyRow(): RowAccumulator = js.native
+    def onNewBodyRow(): RowAccumulator
     
-    def onNewHeaderGroupingRow(): RowSpanningAccumulator = js.native
+    def onNewHeaderGroupingRow(): RowSpanningAccumulator
     
-    def onNewHeaderRow(): RowAccumulator = js.native
+    def onNewHeaderRow(): RowAccumulator
     
     /**
       * FINAL RESULT
       */
-    def parse(): String = js.native
+    def parse(): String
     
     /**
       * INITIAL METHOD
       */
-    def prepare(columnsToExport: js.Array[Column]): Unit = js.native
+    def prepare(columnsToExport: js.Array[Column]): Unit
   }
   object GridSerializingSession {
     
@@ -192,7 +228,7 @@ object gridSerializerMod {
     }
     
     @scala.inline
-    implicit class GridSerializingSessionMutableBuilder[Self <: GridSerializingSession[_], T] (val x: Self with GridSerializingSession[T]) extends AnyVal {
+    implicit class GridSerializingSessionMutableBuilder[Self <: GridSerializingSession[?], T] (val x: Self & GridSerializingSession[T]) extends AnyVal {
       
       @scala.inline
       def setAddCustomFooter(value: T => Unit): Self = StObject.set(x, "addCustomFooter", js.Any.fromFunction1(value))
@@ -224,10 +260,9 @@ object gridSerializerMod {
     def onColumn(column: Column, index: Double, node: RowNode): Unit = js.native
   }
   
-  @js.native
   trait RowSpanningAccumulator extends StObject {
     
-    def onColumn(header: String, index: Double, span: Double): Unit = js.native
+    def onColumn(header: String, index: Double, span: Double): Unit
   }
   object RowSpanningAccumulator {
     

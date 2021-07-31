@@ -3,47 +3,45 @@ package typings.mapboxMapboxSdk
 import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapiResponseMod {
   
-  @js.native
   trait MapiResponse extends StObject {
     
     /**
       * The response body, parsed as JSON.
       */
-    var body: js.Any = js.native
+    var body: js.Any
     
-    def hasNextPage(): Boolean = js.native
+    def hasNextPage(): Boolean
     
     /**
       * The parsed response headers.
       */
-    var headers: js.Any = js.native
+    var headers: js.Any
     
     /**
       * The parsed response links
       */
-    var links: js.Any = js.native
+    var links: js.Any
     
-    def nextPage(): MapiRequest = js.native
+    def nextPage(): MapiRequest
     
     /**
       * The raw response body.
       */
-    var rawBody: String = js.native
+    var rawBody: String
     
     /**
       * The response's originating MapiRequest.
       */
-    var request: MapiRequest = js.native
+    var request: MapiRequest
     
     /**
       * The response's status code.
       */
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object MapiResponse {
     

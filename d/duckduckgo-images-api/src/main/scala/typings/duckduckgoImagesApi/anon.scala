@@ -2,21 +2,19 @@ package typings.duckduckgoImagesApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Iterations extends StObject {
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var moderate: js.UndefOr[Boolean] = js.native
+    var moderate: js.UndefOr[Boolean] = js.undefined
     
-    var query: String = js.native
+    var query: String
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object Iterations {
     

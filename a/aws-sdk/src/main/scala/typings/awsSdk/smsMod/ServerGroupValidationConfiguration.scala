@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerGroupValidationConfiguration extends StObject {
   
   /**
     * The ID of the server group.
     */
-  var serverGroupId: js.UndefOr[ServerGroupId] = js.native
+  var serverGroupId: js.UndefOr[ServerGroupId] = js.undefined
   
   /**
     * The validation configuration.
     */
-  var serverValidationConfigurations: js.UndefOr[ServerValidationConfigurations] = js.native
+  var serverValidationConfigurations: js.UndefOr[ServerValidationConfigurations] = js.undefined
 }
 object ServerGroupValidationConfiguration {
   

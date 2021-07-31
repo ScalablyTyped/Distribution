@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLayersResponse extends StObject {
   
   /**
     * A list of function layers.
     */
-  var Layers: js.UndefOr[LayersList] = js.native
+  var Layers: js.UndefOr[LayersList] = js.undefined
   
   /**
     * A pagination token returned when the response doesn't contain all layers.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object ListLayersResponse {
   

@@ -2,25 +2,23 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetGridProperties extends StObject {
   
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
-  var columnGroupControlAfter: js.UndefOr[Boolean] = js.native
+  var columnGroupControlAfter: js.UndefOr[Boolean] = js.undefined
   
-  var frozenColumnCount: js.UndefOr[Double] = js.native
+  var frozenColumnCount: js.UndefOr[Double] = js.undefined
   
-  var frozenRowCount: js.UndefOr[Double] = js.native
+  var frozenRowCount: js.UndefOr[Double] = js.undefined
   
-  var hideGridlines: js.UndefOr[Boolean] = js.native
+  var hideGridlines: js.UndefOr[Boolean] = js.undefined
   
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
-  var rowGroupControlAfter: js.UndefOr[Boolean] = js.native
+  var rowGroupControlAfter: js.UndefOr[Boolean] = js.undefined
 }
 object WorksheetGridProperties {
   

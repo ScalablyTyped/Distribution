@@ -10,9 +10,9 @@ import typings.arcgisJsApi.esri.SimpleRendererConstructor
 import typings.arcgisJsApi.esri.SimpleRendererProperties
 import typings.arcgisJsApi.esri.UniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.UniqueValueRendererProperties
+import typings.arcgisJsApi.esri.VisualVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderersMod {
@@ -30,8 +30,25 @@ object renderersMod {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html)
     */
   class ClassBreaksRendererCls ()
-    extends typings.arcgisJsApi.esri.ClassBreaksRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.ClassBreaksRenderer {
     def this(properties: ClassBreaksRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /**
+      * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
+      */
+    /* CompleteClass */
+    var visualVariables: js.Array[VisualVariable] = js.native
   }
   
   @JSImport("esri/renderers", "DotDensityRenderer")
@@ -47,8 +64,17 @@ object renderersMod {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html)
     */
   class DotDensityRendererCls ()
-    extends typings.arcgisJsApi.esri.DotDensityRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.DotDensityRenderer {
     def this(properties: DotDensityRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSImport("esri/renderers", "HeatmapRenderer")
@@ -64,8 +90,17 @@ object renderersMod {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html)
     */
   class HeatmapRendererCls ()
-    extends typings.arcgisJsApi.esri.HeatmapRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.HeatmapRenderer {
     def this(properties: HeatmapRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSImport("esri/renderers", "SimpleRenderer")
@@ -81,8 +116,25 @@ object renderersMod {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html)
     */
   class SimpleRendererCls ()
-    extends typings.arcgisJsApi.esri.SimpleRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.SimpleRenderer {
     def this(properties: SimpleRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /**
+      * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
+      */
+    /* CompleteClass */
+    var visualVariables: js.Array[VisualVariable] = js.native
   }
   
   @JSImport("esri/renderers", "UniqueValueRenderer")
@@ -98,7 +150,24 @@ object renderersMod {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html)
     */
   class UniqueValueRendererCls ()
-    extends typings.arcgisJsApi.esri.UniqueValueRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.UniqueValueRenderer {
     def this(properties: UniqueValueRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /**
+      * An array of [VisualVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-VisualVariable.html) objects.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
+      */
+    /* CompleteClass */
+    var visualVariables: js.Array[VisualVariable] = js.native
   }
 }

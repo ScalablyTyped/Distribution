@@ -13,7 +13,6 @@ import typings.stripe.mod.transferReversals.IReversalCreationOptions
 import typings.stripe.mod.transferReversals.IReversalUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.TransferReversals")

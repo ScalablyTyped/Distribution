@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisassociateScramSecretResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait BatchDisassociateScramSecretResponse extends StObject {
     The Amazon Resource Name (ARN) of the cluster.
     
     */
-  var ClusterArn: js.UndefOr[string] = js.native
+  var ClusterArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     List of errors when disassociating secrets to cluster.
     
     */
-  var UnprocessedScramSecrets: js.UndefOr[listOfUnprocessedScramSecret] = js.native
+  var UnprocessedScramSecrets: js.UndefOr[listOfUnprocessedScramSecret] = js.undefined
 }
 object BatchDisassociateScramSecretResponse {
   

@@ -3,24 +3,24 @@ package typings.dotenvParseVariables
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dotenv-parse-variables", JSImport.Namespace)
-  @js.native
-  def apply(parsed: Parsed): ParsedVariables = js.native
-  @JSImport("dotenv-parse-variables", JSImport.Namespace)
-  @js.native
-  def apply(parsed: Parsed, options: Options): ParsedVariables = js.native
+  @scala.inline
+  def apply(parsed: Parsed): ParsedVariables = ^.asInstanceOf[js.Dynamic].apply(parsed.asInstanceOf[js.Any]).asInstanceOf[ParsedVariables]
+  @scala.inline
+  def apply(parsed: Parsed, options: Options): ParsedVariables = (^.asInstanceOf[js.Dynamic].apply(parsed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedVariables]
   
+  @JSImport("dotenv-parse-variables", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var assignToProcessEnv: js.UndefOr[Boolean] = js.native
+    var assignToProcessEnv: js.UndefOr[Boolean] = js.undefined
     
-    var overrideProcessEnv: js.UndefOr[Boolean] = js.native
+    var overrideProcessEnv: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

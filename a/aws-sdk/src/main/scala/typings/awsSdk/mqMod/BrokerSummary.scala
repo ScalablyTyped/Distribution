@@ -2,51 +2,49 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the broker.
     */
-  var BrokerArn: js.UndefOr[string] = js.native
+  var BrokerArn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: js.UndefOr[string] = js.native
+  var BrokerId: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the broker. This value must be unique in your AWS account, 1-50 characters long, must contain only letters, numbers, dashes, and underscores, and must not contain whitespaces, brackets, wildcard characters, or special characters.
     */
-  var BrokerName: js.UndefOr[string] = js.native
+  var BrokerName: js.UndefOr[string] = js.undefined
   
   /**
     * The status of the broker.
     */
-  var BrokerState: js.UndefOr[typings.awsSdk.mqMod.BrokerState] = js.native
+  var BrokerState: js.UndefOr[typings.awsSdk.mqMod.BrokerState] = js.undefined
   
   /**
     * The time when the broker was created.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.native
+  var Created: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Required. The deployment mode of the broker.
     */
-  var DeploymentMode: js.UndefOr[typings.awsSdk.mqMod.DeploymentMode] = js.native
+  var DeploymentMode: js.UndefOr[typings.awsSdk.mqMod.DeploymentMode] = js.undefined
   
   /**
     * Required. The type of broker engine.
     */
-  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.native
+  var EngineType: js.UndefOr[typings.awsSdk.mqMod.EngineType] = js.undefined
   
   /**
     * The broker's instance type.
     */
-  var HostInstanceType: js.UndefOr[string] = js.native
+  var HostInstanceType: js.UndefOr[string] = js.undefined
 }
 object BrokerSummary {
   

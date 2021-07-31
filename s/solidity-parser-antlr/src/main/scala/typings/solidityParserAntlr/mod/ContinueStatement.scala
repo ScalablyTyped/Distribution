@@ -2,24 +2,23 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
   @JSName("type")
-  var type_ContinueStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement = js.native
+  var type_ContinueStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement
 }
 object ContinueStatement {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ContinueStatement): ContinueStatement = {
+  def apply(): ContinueStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[ContinueStatement]
   }
   

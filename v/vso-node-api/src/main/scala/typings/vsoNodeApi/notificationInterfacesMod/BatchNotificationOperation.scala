@@ -2,15 +2,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchNotificationOperation extends StObject {
   
-  var notificationOperation: NotificationOperation = js.native
+  var notificationOperation: NotificationOperation
   
-  var notificationQueryConditions: js.Array[NotificationQueryCondition] = js.native
+  var notificationQueryConditions: js.Array[NotificationQueryCondition]
 }
 object BatchNotificationOperation {
   

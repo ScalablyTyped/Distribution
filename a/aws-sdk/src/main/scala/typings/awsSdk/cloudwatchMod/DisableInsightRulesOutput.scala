@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableInsightRulesOutput extends StObject {
   
   /**
     * An array listing the rules that could not be disabled. You cannot disable built-in rules.
     */
-  var Failures: js.UndefOr[BatchFailures] = js.native
+  var Failures: js.UndefOr[BatchFailures] = js.undefined
 }
 object DisableInsightRulesOutput {
   

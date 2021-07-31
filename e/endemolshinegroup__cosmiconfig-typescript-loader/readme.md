@@ -11,8 +11,8 @@ A TypeScript loader for Cosmiconfig
 | Full name          | @endemolshinegroup/cosmiconfig-typescript-loader |
 | Keywords           | cosmiconfig, cosmiconfig-loader, typescript |
 | # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 20990909 |
+| # dependents       | 15 |
+| # downloads        | 30702660 |
 | # stars            | 0 |
 
 ## Links

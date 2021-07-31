@@ -8,23 +8,21 @@ import typings.chrome.chrome.omnibox.OmniboxSuggestionDeletedEvent
 import typings.chrome.chrome.omnibox.Suggestion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofomnibox extends StObject {
   
-  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
+  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent
   
-  var onInputCancelled: OmniboxInputCancelledEvent = js.native
+  var onInputCancelled: OmniboxInputCancelledEvent
   
-  var onInputChanged: OmniboxInputChangedEvent = js.native
+  var onInputChanged: OmniboxInputChangedEvent
   
-  var onInputEntered: OmniboxInputEnteredEvent = js.native
+  var onInputEntered: OmniboxInputEnteredEvent
   
-  var onInputStarted: OmniboxInputStartedEvent = js.native
+  var onInputStarted: OmniboxInputStartedEvent
   
-  def setDefaultSuggestion(suggestion: Suggestion): Unit = js.native
+  def setDefaultSuggestion(suggestion: Suggestion): Unit
 }
 object Typeofomnibox {
   

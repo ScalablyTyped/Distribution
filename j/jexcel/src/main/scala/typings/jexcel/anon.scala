@@ -3,17 +3,15 @@ package typings.jexcel
 import typings.jexcel.mod.CellValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Colspan extends StObject {
     
-    var colspan: js.UndefOr[Double] = js.native
+    var colspan: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[CellValue] = js.native
+    var title: js.UndefOr[CellValue] = js.undefined
   }
   object Colspan {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: CellValue = js.native
+    var id: CellValue
     
-    var name: CellValue = js.native
+    var name: CellValue
   }
   object Id {
     

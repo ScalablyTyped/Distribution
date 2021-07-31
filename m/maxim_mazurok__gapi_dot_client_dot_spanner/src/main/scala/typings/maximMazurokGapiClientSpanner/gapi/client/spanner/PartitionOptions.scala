@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionOptions extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait PartitionOptions extends StObject {
     * of workers available. The default for this option is currently 10,000. The maximum value is currently 200,000. This is only a hint. The actual number of partitions returned may be
     * smaller or larger than this maximum count request.
     */
-  var maxPartitions: js.UndefOr[String] = js.native
+  var maxPartitions: js.UndefOr[String] = js.undefined
   
   /**
     * **Note:** This hint is currently ignored by PartitionQuery and PartitionRead requests. The desired data size for each partition generated. The default for this option is currently 1
     * GiB. This is only a hint. The actual size of each partition may be smaller or larger than this size request.
     */
-  var partitionSizeBytes: js.UndefOr[String] = js.native
+  var partitionSizeBytes: js.UndefOr[String] = js.undefined
 }
 object PartitionOptions {
   

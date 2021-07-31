@@ -15,15 +15,15 @@ import typings.qiniuJs.qiniuJsStrings.webp
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Dictkey extends /* key */ StringDictionary[String] {
+  trait Dictkey
+    extends StObject
+       with /* key */ StringDictionary[String] {
     
-    var creation_time: String = js.native
+    var creation_time: String
   }
   object Dictkey {
     
@@ -41,16 +41,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Dist extends StObject {
     
-    var dist: Blob = js.native
+    var dist: Blob
     
     // 压缩后的图片宽度
-    var height: Double = js.native
+    var height: Double
     
     // 压缩后输出的 blob 对象，或原始的 file，具体看下面的 options 配置
-    var width: Double = js.native
+    var width: Double
   }
   object Dist {
     
@@ -74,16 +73,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Loaded extends StObject {
     
-    var loaded: Double = js.native
+    var loaded: Double
     
     // 本次上传的总量控制信息，单位为字节，注意这里的 total 跟文件大小并不一致。
-    var percent: Double = js.native
+    var percent: Double
     
     // 已上传大小，单位为字节。
-    var total: Double = js.native
+    var total: Double
   }
   object Loaded {
     
@@ -108,16 +106,15 @@ object anon {
   }
   
   /* Inlined std.Partial<qiniu-js.qiniu-js.CompressOptions> */
-  @js.native
   trait PartialCompressOptions extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidh: js.UndefOr[Double] = js.native
+    var maxWidh: js.UndefOr[Double] = js.undefined
     
-    var noCompressIfLarger: js.UndefOr[Boolean] = js.native
+    var noCompressIfLarger: js.UndefOr[Boolean] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
   }
   object PartialCompressOptions {
     
@@ -157,24 +154,23 @@ object anon {
   }
   
   /* Inlined std.Partial<qiniu-js.qiniu-js.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var checkByMD5: js.UndefOr[Boolean] = js.native
+    var checkByMD5: js.UndefOr[Boolean] = js.undefined
     
-    var concurrentRequestLimit: js.UndefOr[Double] = js.native
+    var concurrentRequestLimit: js.UndefOr[Double] = js.undefined
     
-    var disableStatisticsReport: js.UndefOr[Boolean] = js.native
+    var disableStatisticsReport: js.UndefOr[Boolean] = js.undefined
     
-    var forceDirect: js.UndefOr[Boolean] = js.native
+    var forceDirect: js.UndefOr[Boolean] = js.undefined
     
-    var region: js.UndefOr[Region_ | String] = js.native
+    var region: js.UndefOr[Region_ | String] = js.undefined
     
-    var retryCount: js.UndefOr[Double] = js.native
+    var retryCount: js.UndefOr[Double] = js.undefined
     
-    var uphost: js.UndefOr[String] = js.native
+    var uphost: js.UndefOr[String] = js.undefined
     
-    var useCdnDomain: js.UndefOr[Boolean] = js.native
+    var useCdnDomain: js.UndefOr[Boolean] = js.undefined
   }
   object PartialConfig {
     
@@ -238,14 +234,13 @@ object anon {
   }
   
   /* Inlined std.Partial<qiniu-js.qiniu-js.Extra> */
-  @js.native
   trait PartialExtra extends StObject {
     
-    var fname: js.UndefOr[String] = js.native
+    var fname: js.UndefOr[String] = js.undefined
     
-    var mimeType: js.UndefOr[js.Array[String] | Null] = js.native
+    var mimeType: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object PartialExtra {
     
@@ -285,26 +280,25 @@ object anon {
   }
   
   /* Inlined std.Partial<qiniu-js.qiniu-js.ImageMogr2Options> */
-  @js.native
   trait PartialImageMogr2Options extends StObject {
     
-    var `auto-orient`: js.UndefOr[Boolean] = js.native
+    var `auto-orient`: js.UndefOr[Boolean] = js.undefined
     
-    var blur: js.UndefOr[String] = js.native
+    var blur: js.UndefOr[String] = js.undefined
     
-    var crop: js.UndefOr[String] = js.native
+    var crop: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gravity: js.UndefOr[String] = js.native
+    var gravity: js.UndefOr[String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var strip: js.UndefOr[Boolean] = js.native
+    var strip: js.UndefOr[Boolean] = js.undefined
     
-    var thumbnail: js.UndefOr[String] = js.native
+    var thumbnail: js.UndefOr[String] = js.undefined
   }
   object PartialImageMogr2Options {
     
@@ -374,18 +368,17 @@ object anon {
   }
   
   /* Inlined std.Partial<qiniu-js.qiniu-js.ImageView2Options> */
-  @js.native
   trait PartialImageView2Options extends StObject {
     
-    var format: js.UndefOr[jpg | gif | png | webp | String] = js.native
+    var format: js.UndefOr[jpg | gif | png | webp | String] = js.undefined
     
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5`] = js.native
+    var mode: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5`] = js.undefined
     
-    var q: js.UndefOr[Double] = js.native
+    var q: js.UndefOr[Double] = js.undefined
     
-    var w: js.UndefOr[Double] = js.native
+    var w: js.UndefOr[Double] = js.undefined
   }
   object PartialImageView2Options {
     
@@ -430,12 +423,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var `val`: String = js.native
+    var `val`: String
   }
   object Type {
     

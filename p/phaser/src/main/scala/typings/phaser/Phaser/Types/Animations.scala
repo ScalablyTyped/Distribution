@@ -3,73 +3,71 @@ package typings.phaser.Phaser.Types
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Animations {
   
-  @js.native
   trait Animation extends StObject {
     
     /**
       * The key of the texture all frames of the animation will use. Can be overridden on a per frame basis.
       */
-    var defaultTextureKey: js.UndefOr[String] = js.native
+    var defaultTextureKey: js.UndefOr[String] = js.undefined
     
     /**
       * Delay before starting playback. Value given in milliseconds.
       */
-    var delay: js.UndefOr[integer] = js.native
+    var delay: js.UndefOr[integer] = js.undefined
     
     /**
       * How long the animation should play for in milliseconds. If not given its derived from frameRate.
       */
-    var duration: js.UndefOr[integer] = js.native
+    var duration: js.UndefOr[integer] = js.undefined
     
     /**
       * The frame rate of playback in frames per second (default 24 if duration is null)
       */
-    var frameRate: js.UndefOr[integer] = js.native
+    var frameRate: js.UndefOr[integer] = js.undefined
     
     /**
       * An object containing data used to generate the frames for the animation
       */
-    var frames: js.UndefOr[js.Array[AnimationFrame]] = js.native
+    var frames: js.UndefOr[js.Array[AnimationFrame]] = js.undefined
     
     /**
       * Should sprite.visible = false when the animation finishes?
       */
-    var hideOnComplete: js.UndefOr[Boolean] = js.native
+    var hideOnComplete: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key that the animation will be associated with. i.e. sprite.animations.play(key)
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Number of times to repeat the animation (-1 for infinity)
       */
-    var repeat: js.UndefOr[integer] = js.native
+    var repeat: js.UndefOr[integer] = js.undefined
     
     /**
       * Delay before the animation repeats. Value given in milliseconds.
       */
-    var repeatDelay: js.UndefOr[integer] = js.native
+    var repeatDelay: js.UndefOr[integer] = js.undefined
     
     /**
       * Should sprite.visible = true when the animation starts to play?
       */
-    var showOnStart: js.UndefOr[Boolean] = js.native
+    var showOnStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Skip frames if the time lags, or always advanced anyway?
       */
-    var skipMissedFrames: js.UndefOr[Boolean] = js.native
+    var skipMissedFrames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should the animation yoyo? (reverse back down to the start) before repeating?
       */
-    var yoyo: js.UndefOr[Boolean] = js.native
+    var yoyo: js.UndefOr[Boolean] = js.undefined
   }
   object Animation {
     
@@ -159,28 +157,27 @@ object Animations {
     }
   }
   
-  @js.native
   trait AnimationFrame extends StObject {
     
     /**
       * The duration, in ms, of this frame of the animation.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * The key, or index number, of the frame within the animation.
       */
-    var frame: String | Double = js.native
+    var frame: String | Double
     
     /**
       * The key that the animation will be associated with. i.e. sprite.animations.play(key)
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Should the parent Game Object be visible during this frame of the animation?
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AnimationFrame {
     
@@ -213,43 +210,42 @@ object Animations {
     }
   }
   
-  @js.native
   trait GenerateFrameNames extends StObject {
     
     /**
       * If `frames` is not provided, the number of the last frame to return.
       */
-    var end: js.UndefOr[integer] = js.native
+    var end: js.UndefOr[integer] = js.undefined
     
     /**
       * If provided as an array, the range defined by `start` and `end` will be ignored and these frame numbers will be used.
       */
-    var frames: js.UndefOr[Boolean | js.Array[integer]] = js.native
+    var frames: js.UndefOr[Boolean | js.Array[integer]] = js.undefined
     
     /**
       * The array to append the created configuration objects to.
       */
-    var outputArray: js.UndefOr[js.Array[AnimationFrame]] = js.native
+    var outputArray: js.UndefOr[js.Array[AnimationFrame]] = js.undefined
     
     /**
       * The string to append to every resulting frame name if using a range or an array of `frames`.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * If `frames` is not provided, the number of the first frame to return.
       */
-    var start: js.UndefOr[integer] = js.native
+    var start: js.UndefOr[integer] = js.undefined
     
     /**
       * The string to append to every resulting frame name if using a range or an array of `frames`.
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * The minimum expected lengths of each resulting frame's number. Numbers will be left-padded with zeroes until they are this long, then prepended and appended to create the resulting frame name.
       */
-    var zeroPad: js.UndefOr[integer] = js.native
+    var zeroPad: js.UndefOr[integer] = js.undefined
   }
   object GenerateFrameNames {
     
@@ -312,33 +308,32 @@ object Animations {
     }
   }
   
-  @js.native
   trait GenerateFrameNumbers extends StObject {
     
     /**
       * The ending frame of the animation.
       */
-    var end: js.UndefOr[integer] = js.native
+    var end: js.UndefOr[integer] = js.undefined
     
     /**
       * A frame to put at the beginning of the animation, before `start` or `outputArray` or `frames`.
       */
-    var first: js.UndefOr[Boolean | integer] = js.native
+    var first: js.UndefOr[Boolean | integer] = js.undefined
     
     /**
       * A custom sequence of frames.
       */
-    var frames: js.UndefOr[Boolean | js.Array[integer]] = js.native
+    var frames: js.UndefOr[Boolean | js.Array[integer]] = js.undefined
     
     /**
       * An array to concatenate the output onto.
       */
-    var outputArray: js.UndefOr[js.Array[AnimationFrame]] = js.native
+    var outputArray: js.UndefOr[js.Array[AnimationFrame]] = js.undefined
     
     /**
       * The starting frame of the animation.
       */
-    var start: js.UndefOr[integer] = js.native
+    var start: js.UndefOr[integer] = js.undefined
   }
   object GenerateFrameNumbers {
     
@@ -389,68 +384,67 @@ object Animations {
     }
   }
   
-  @js.native
   trait JSONAnimation extends StObject {
     
     /**
       * Delay before starting playback. Value given in milliseconds.
       */
-    var delay: integer = js.native
+    var delay: integer
     
     /**
       * How long the animation should play for in milliseconds. If not given its derived from frameRate.
       */
-    var duration: integer = js.native
+    var duration: integer
     
     /**
       * The frame rate of playback in frames per second (default 24 if duration is null)
       */
-    var frameRate: integer = js.native
+    var frameRate: integer
     
     /**
       * An array of the AnimationFrame objects inside this Animation.
       */
-    var frames: js.Array[JSONAnimationFrame] = js.native
+    var frames: js.Array[JSONAnimationFrame]
     
     /**
       * Should sprite.visible = false when the animation finishes?
       */
-    var hideOnComplete: Boolean = js.native
+    var hideOnComplete: Boolean
     
     /**
       * The key that the animation will be associated with. i.e. sprite.animations.play(key)
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Number of times to repeat the animation (-1 for infinity)
       */
-    var repeat: integer = js.native
+    var repeat: integer
     
     /**
       * Delay before the animation repeats. Value given in milliseconds.
       */
-    var repeatDelay: integer = js.native
+    var repeatDelay: integer
     
     /**
       * Should sprite.visible = true when the animation starts to play?
       */
-    var showOnStart: Boolean = js.native
+    var showOnStart: Boolean
     
     /**
       * Skip frames if the time lags, or always advanced anyway?
       */
-    var skipMissedFrames: Boolean = js.native
+    var skipMissedFrames: Boolean
     
     /**
       * A frame based animation (as opposed to a bone based animation)
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Should the animation yoyo? (reverse back down to the start) before repeating?
       */
-    var yoyo: Boolean = js.native
+    var yoyo: Boolean
   }
   object JSONAnimation {
     
@@ -518,23 +512,22 @@ object Animations {
     }
   }
   
-  @js.native
   trait JSONAnimationFrame extends StObject {
     
     /**
       * Additional time (in ms) that this frame should appear for during playback.
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * The key of the Frame within the Texture that this AnimationFrame uses.
       */
-    var frame: String | integer = js.native
+    var frame: String | integer
     
     /**
       * The key of the Texture this AnimationFrame uses.
       */
-    var key: String = js.native
+    var key: String
   }
   object JSONAnimationFrame {
     
@@ -558,18 +551,17 @@ object Animations {
     }
   }
   
-  @js.native
   trait JSONAnimations extends StObject {
     
     /**
       * An array of all Animations added to the Animation Manager.
       */
-    var anims: js.Array[JSONAnimation] = js.native
+    var anims: js.Array[JSONAnimation]
     
     /**
       * The global time scale of the Animation Manager.
       */
-    var globalTimeScale: Double = js.native
+    var globalTimeScale: Double
   }
   object JSONAnimations {
     

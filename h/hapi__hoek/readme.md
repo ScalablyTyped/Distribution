@@ -10,9 +10,9 @@ General purpose node utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/hoek |
 | Keywords           | utilities |
-| # releases         | 31 |
-| # dependents       | 250 |
-| # downloads        | 196123070 |
+| # releases         | 33 |
+| # dependents       | 274 |
+| # downloads        | 258998598 |
 | # stars            | 0 |
 
 ## Links

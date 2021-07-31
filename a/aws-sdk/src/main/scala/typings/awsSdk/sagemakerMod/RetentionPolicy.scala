@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionPolicy extends StObject {
   
   /**
     * The default is Retain, which specifies to keep the data stored on the EFS volume. Specify Delete to delete the data stored on the EFS volume.
     */
-  var HomeEfsFileSystem: js.UndefOr[RetentionType] = js.native
+  var HomeEfsFileSystem: js.UndefOr[RetentionType] = js.undefined
 }
 object RetentionPolicy {
   

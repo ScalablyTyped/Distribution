@@ -3,15 +3,15 @@ package typings.waterline.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Attributes extends /* index */ StringDictionary[Attribute] {
+trait Attributes
+  extends StObject
+     with /* index */ StringDictionary[Attribute] {
   
-  var toJSON: js.UndefOr[js.Function0[String]] = js.native
+  var toJSON: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var toObject: js.UndefOr[js.Function0[_]] = js.native
+  var toObject: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object Attributes {
   
@@ -31,7 +31,7 @@ object Attributes {
     def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     
     @scala.inline
-    def setToObject(value: () => _): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+    def setToObject(value: () => js.Any): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     
     @scala.inline
     def setToObjectUndefined: Self = StObject.set(x, "toObject", js.undefined)

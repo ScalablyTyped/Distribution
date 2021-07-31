@@ -3,25 +3,23 @@ package typings.offlineJs
 import typings.offlineJs.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfflineOptions extends StObject {
   
   // TODO Should these types be `boolean|Function`?
   // The project documentation is not clear here.
-  var checkOnLoad: js.UndefOr[Boolean] = js.native
+  var checkOnLoad: js.UndefOr[Boolean] = js.undefined
   
-  var checks: js.UndefOr[OfflineChecks] = js.native
+  var checks: js.UndefOr[OfflineChecks] = js.undefined
   
-  var game: js.UndefOr[Boolean] = js.native
+  var game: js.UndefOr[Boolean] = js.undefined
   
-  var interceptRequests: js.UndefOr[Boolean] = js.native
+  var interceptRequests: js.UndefOr[Boolean] = js.undefined
   
-  var reconnect: Delay = js.native
+  var reconnect: Delay
   
-  var requests: js.UndefOr[Boolean] = js.native
+  var requests: js.UndefOr[Boolean] = js.undefined
 }
 object OfflineOptions {
   

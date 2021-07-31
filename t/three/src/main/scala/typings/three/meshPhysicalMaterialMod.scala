@@ -7,7 +7,6 @@ import typings.three.textureMod.Texture
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshPhysicalMaterialMod {
@@ -73,30 +72,31 @@ object meshPhysicalMaterialMod {
     var transmissionMap: Texture | Null = js.native
   }
   
-  @js.native
-  trait MeshPhysicalMaterialParameters extends MeshStandardMaterialParameters {
+  trait MeshPhysicalMaterialParameters
+    extends StObject
+       with MeshStandardMaterialParameters {
     
-    var clearcoat: js.UndefOr[Double] = js.native
+    var clearcoat: js.UndefOr[Double] = js.undefined
     
-    var clearcoatMap: js.UndefOr[Texture | Null] = js.native
+    var clearcoatMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var clearcoatNormalMap: js.UndefOr[Texture | Null] = js.native
+    var clearcoatNormalMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var clearcoatNormalScale: js.UndefOr[Vector2] = js.native
+    var clearcoatNormalScale: js.UndefOr[Vector2] = js.undefined
     
-    var clearcoatRoughness: js.UndefOr[Double] = js.native
+    var clearcoatRoughness: js.UndefOr[Double] = js.undefined
     
-    var clearcoatRoughnessMap: js.UndefOr[Texture | Null] = js.native
+    var clearcoatRoughnessMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var ior: js.UndefOr[Double] = js.native
+    var ior: js.UndefOr[Double] = js.undefined
     
-    var reflectivity: js.UndefOr[Double] = js.native
+    var reflectivity: js.UndefOr[Double] = js.undefined
     
-    var sheen: js.UndefOr[Color] = js.native
+    var sheen: js.UndefOr[Color] = js.undefined
     
-    var transmission: js.UndefOr[Double] = js.native
+    var transmission: js.UndefOr[Double] = js.undefined
     
-    var transmissionMap: js.UndefOr[Texture | Null] = js.native
+    var transmissionMap: js.UndefOr[Texture | Null] = js.undefined
   }
   object MeshPhysicalMaterialParameters {
     

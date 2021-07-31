@@ -15,7 +15,6 @@ import typings.std.Window
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,32 +23,31 @@ object mod extends Shortcut {
   @js.native
   val ^ : HelloJSStatic = js.native
   
-  @js.native
   trait HelloJSAuthResponse extends StObject {
     
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var display: js.UndefOr[HelloJSDisplayType] = js.native
+    var display: js.UndefOr[HelloJSDisplayType] = js.undefined
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var expires_in: js.UndefOr[Double] = js.native
+    var expires_in: js.UndefOr[Double] = js.undefined
     
-    var id_token: js.UndefOr[String] = js.native
+    var id_token: js.UndefOr[String] = js.undefined
     
-    var network: js.UndefOr[String] = js.native
+    var network: js.UndefOr[String] = js.undefined
     
-    var redirect_uri: js.UndefOr[String] = js.native
+    var redirect_uri: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var session_state: js.UndefOr[String] = js.native
+    var session_state: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var token_type: js.UndefOr[String] = js.native
+    var token_type: js.UndefOr[String] = js.undefined
   }
   object HelloJSAuthResponse {
     
@@ -154,18 +152,17 @@ object mod extends Shortcut {
     def popup: typings.hellojs.hellojsStrings.popup = "popup".asInstanceOf[typings.hellojs.hellojsStrings.popup]
   }
   
-  @js.native
   trait HelloJSEvent extends StObject {
     
-    def emit(event: String, data: js.Any): HelloJSStatic = js.native
+    def emit(event: String, data: js.Any): HelloJSStatic
     
-    def emitAfter(): HelloJSStatic = js.native
+    def emitAfter(): HelloJSStatic
     
-    def findEvents(event: String, callback: js.Function2[/* name */ String, /* index */ Double, Unit]): Unit = js.native
+    def findEvents(event: String, callback: js.Function2[/* name */ String, /* index */ Double, Unit]): Unit
     
-    def off(event: String, callback: js.Function1[/* auth */ HelloJSEventArgument, Unit]): HelloJSStatic = js.native
+    def off(event: String, callback: js.Function1[/* auth */ HelloJSEventArgument, Unit]): HelloJSStatic
     
-    def on(event: String, callback: js.Function1[/* auth */ HelloJSEventArgument, Unit]): HelloJSStatic = js.native
+    def on(event: String, callback: js.Function1[/* auth */ HelloJSEventArgument, Unit]): HelloJSStatic
   }
   object HelloJSEvent {
     
@@ -201,12 +198,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HelloJSEventArgument extends StObject {
     
-    var authResponse: js.UndefOr[HelloJSAuthResponse] = js.native
+    var authResponse: js.UndefOr[HelloJSAuthResponse] = js.undefined
     
-    var network: String = js.native
+    var network: String
   }
   object HelloJSEventArgument {
     
@@ -230,14 +226,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HelloJSLoginEventArguement extends StObject {
     
-    var authResponse: js.UndefOr[HelloJSAuthResponse] = js.native
+    var authResponse: js.UndefOr[HelloJSAuthResponse] = js.undefined
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var network: String = js.native
+    var network: String
   }
   object HelloJSLoginEventArguement {
     
@@ -267,28 +262,27 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HelloJSLoginOptions extends StObject {
     
-    var default_service: js.UndefOr[String] = js.native
+    var default_service: js.UndefOr[String] = js.undefined
     
-    var display: js.UndefOr[HelloJSDisplayType] = js.native
+    var display: js.UndefOr[HelloJSDisplayType] = js.undefined
     
-    var force: js.UndefOr[Boolean | Null] = js.native
+    var force: js.UndefOr[Boolean | Null] = js.undefined
     
-    var oauth_proxy: js.UndefOr[String] = js.native
+    var oauth_proxy: js.UndefOr[String] = js.undefined
     
-    var popup: js.UndefOr[HelloJSPopupOptions] = js.native
+    var popup: js.UndefOr[HelloJSPopupOptions] = js.undefined
     
-    var redirect_uri: js.UndefOr[String] = js.native
+    var redirect_uri: js.UndefOr[String] = js.undefined
     
-    var response_type: js.UndefOr[HelloJSTokenResponseType] = js.native
+    var response_type: js.UndefOr[HelloJSTokenResponseType] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object HelloJSLoginOptions {
     
@@ -366,10 +360,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HelloJSLogoutOptions extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object HelloJSLogoutOptions {
     
@@ -390,12 +383,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HelloJSOAuth1Def extends HelloJSOAuthDef {
+  trait HelloJSOAuth1Def
+    extends StObject
+       with HelloJSOAuthDef {
     
-    var request: js.UndefOr[String] = js.native
+    var request: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object HelloJSOAuth1Def {
     
@@ -422,12 +416,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HelloJSOAuth2Def extends HelloJSOAuthDef {
+  trait HelloJSOAuth2Def
+    extends StObject
+       with HelloJSOAuthDef {
     
-    var grant: js.UndefOr[String] = js.native
+    var grant: js.UndefOr[String] = js.undefined
     
-    var response_type: js.UndefOr[HelloJSTokenResponseType] = js.native
+    var response_type: js.UndefOr[HelloJSTokenResponseType] = js.undefined
   }
   object HelloJSOAuth2Def {
     
@@ -454,12 +449,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HelloJSOAuthDef extends StObject {
     
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var version: String | Double = js.native
+    var version: String | Double
   }
   object HelloJSOAuthDef {
     
@@ -483,16 +477,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HelloJSPopupOptions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var resizable: Double = js.native
+    var resizable: Double
     
-    var scrollbars: Double = js.native
+    var scrollbars: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object HelloJSPopupOptions {
     
@@ -521,46 +514,45 @@ object mod extends Shortcut {
   
   type HelloJSResponseCallback = js.Function2[/* r */ js.Any, /* headers */ js.Any, Unit]
   
-  @js.native
   trait HelloJSServiceDef extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var del: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.native
+    var del: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var form: js.UndefOr[(js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean] = js.native
+    var form: js.UndefOr[(js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean] = js.undefined
     
-    var get: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.native
+    var get: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var jsonp: js.UndefOr[(js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean] = js.native
+    var jsonp: js.UndefOr[(js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean] = js.undefined
     
-    var login: js.UndefOr[js.Function1[/* p */ js.Any, Unit]] = js.native
+    var login: js.UndefOr[js.Function1[/* p */ js.Any, Unit]] = js.undefined
     
-    var logout: js.UndefOr[(js.Function1[/* callback */ js.Function0[Unit | String], Unit]) | String] = js.native
+    var logout: js.UndefOr[(js.Function1[/* callback */ js.Function0[Unit | String], Unit]) | String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var oauth: HelloJSOAuth2Def | HelloJSOAuth1Def = js.native
+    var oauth: HelloJSOAuth2Def | HelloJSOAuth1Def
     
-    var patch: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.native
+    var patch: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var post: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.native
+    var post: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var put: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.native
+    var put: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var refresh: js.UndefOr[Boolean] = js.native
+    var refresh: js.UndefOr[Boolean] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[StringDictionary[String]] = js.native
+    var scope: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var scope_delim: js.UndefOr[String] = js.native
+    var scope_delim: js.UndefOr[String] = js.undefined
     
     var wrap: js.UndefOr[
         StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, Unit]]
-      ] = js.native
+      ] = js.undefined
     
-    var xhr: js.UndefOr[js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]] = js.native
+    var xhr: js.UndefOr[js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]] = js.undefined
   }
   object HelloJSServiceDef {
     
@@ -690,39 +682,14 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait HelloJSStatic extends HelloJSEvent {
+  trait HelloJSStatic
+    extends StObject
+       with HelloJSEvent {
     
     def apply(network: String): HelloJSStatic = js.native
     
-    def api(): js.Thenable[_] = js.native
-    def api(options: js.Object): js.Thenable[_] = js.native
-    def api(
-      path: js.UndefOr[scala.Nothing],
-      method: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
-    def api(path: js.UndefOr[scala.Nothing], method: js.UndefOr[scala.Nothing], data: js.Object): js.Thenable[_] = js.native
-    def api(
-      path: js.UndefOr[scala.Nothing],
-      method: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
-    def api(path: js.UndefOr[scala.Nothing], method: String): js.Thenable[_] = js.native
-    def api(
-      path: js.UndefOr[scala.Nothing],
-      method: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
-    def api(path: js.UndefOr[scala.Nothing], method: String, data: js.Object): js.Thenable[_] = js.native
-    def api(
-      path: js.UndefOr[scala.Nothing],
-      method: String,
-      data: js.Object,
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
+    def api(): js.Thenable[js.Any] = js.native
+    def api(options: js.Object): js.Thenable[js.Any] = js.native
     def api(
       path: js.UndefOr[String],
       query: js.UndefOr[js.Object],
@@ -730,30 +697,22 @@ object mod extends Shortcut {
       data: js.UndefOr[js.Object],
       timeout: js.UndefOr[Double],
       callback: js.UndefOr[js.Function1[/* json */ js.Any, Unit]]
-    ): js.Thenable[_] = js.native
-    def api(path: String): js.Thenable[_] = js.native
-    def api(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
-    def api(path: String, method: js.UndefOr[scala.Nothing], data: js.Object): js.Thenable[_] = js.native
-    def api(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
-    def api(path: String, method: String): js.Thenable[_] = js.native
-    def api(
-      path: String,
-      method: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* json */ js.Any, Unit]
-    ): js.Thenable[_] = js.native
-    def api(path: String, method: String, data: js.Object): js.Thenable[_] = js.native
-    def api(path: String, method: String, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[_] = js.native
+    ): js.Thenable[js.Any] = js.native
+    def api(path: String): js.Thenable[js.Any] = js.native
+    def api(path: String, method: String): js.Thenable[js.Any] = js.native
+    def api(path: String, method: String, data: js.Object): js.Thenable[js.Any] = js.native
+    def api(path: String, method: String, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: String, method: String, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: String, method: Unit, data: js.Object): js.Thenable[js.Any] = js.native
+    def api(path: String, method: Unit, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: String, method: Unit, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: String): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: String, data: js.Object): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: String, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: String, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: Unit, data: js.Object): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: Unit, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+    def api(path: Unit, method: Unit, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
     
     def getAuthResponse(): HelloJSAuthResponse = js.native
     def getAuthResponse(network: String): HelloJSAuthResponse = js.native
@@ -763,37 +722,29 @@ object mod extends Shortcut {
     
     def login(): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(
-      network: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: js.UndefOr[scala.Nothing], options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: js.UndefOr[scala.Nothing], options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(network: String): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(network: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
+    def login(network: String, options: Unit, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(network: String, options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(network: String, options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
-    def login(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
+    def login(network: Unit, options: Unit, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
+    def login(network: Unit, options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
+    def login(network: Unit, options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
+    def login(options: Unit, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
     
-    def logout(): js.Thenable[_] = js.native
-    def logout(callback: js.Function0[Unit]): js.Thenable[_] = js.native
-    def logout(
-      network: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): js.Thenable[_] = js.native
-    def logout(network: js.UndefOr[scala.Nothing], options: HelloJSLogoutOptions): js.Thenable[_] = js.native
-    def logout(network: js.UndefOr[scala.Nothing], options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[_] = js.native
-    def logout(network: String): js.Thenable[_] = js.native
-    def logout(network: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Thenable[_] = js.native
-    def logout(network: String, options: HelloJSLogoutOptions): js.Thenable[_] = js.native
-    def logout(network: String, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[_] = js.native
-    def logout(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Thenable[_] = js.native
-    def logout(options: HelloJSLogoutOptions): js.Thenable[_] = js.native
-    def logout(options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[_] = js.native
+    def logout(): js.Thenable[js.Any] = js.native
+    def logout(callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(network: String): js.Thenable[js.Any] = js.native
+    def logout(network: String, options: Unit, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(network: String, options: HelloJSLogoutOptions): js.Thenable[js.Any] = js.native
+    def logout(network: String, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(network: Unit, options: Unit, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(network: Unit, options: HelloJSLogoutOptions): js.Thenable[js.Any] = js.native
+    def logout(network: Unit, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(options: Unit, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(options: HelloJSLogoutOptions): js.Thenable[js.Any] = js.native
+    def logout(options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
     
     var settings: HelloJSLoginOptions = js.native
     
@@ -846,18 +797,18 @@ object mod extends Shortcut {
     
     var Event: HelloJSEvent = js.native
     
-    def append(node: String, attr: js.UndefOr[scala.Nothing], target: String): HTMLElement = js.native
-    def append(node: String, attr: js.UndefOr[scala.Nothing], target: HTMLElement): HTMLElement = js.native
     def append(node: String, attr: js.Object, target: String): HTMLElement = js.native
     def append(node: String, attr: js.Object, target: HTMLElement): HTMLElement = js.native
     def append(node: String, attr: Null, target: String): HTMLElement = js.native
     def append(node: String, attr: Null, target: HTMLElement): HTMLElement = js.native
-    def append(node: HTMLElement, attr: js.UndefOr[scala.Nothing], target: String): HTMLElement = js.native
-    def append(node: HTMLElement, attr: js.UndefOr[scala.Nothing], target: HTMLElement): HTMLElement = js.native
+    def append(node: String, attr: Unit, target: String): HTMLElement = js.native
+    def append(node: String, attr: Unit, target: HTMLElement): HTMLElement = js.native
     def append(node: HTMLElement, attr: js.Object, target: String): HTMLElement = js.native
     def append(node: HTMLElement, attr: js.Object, target: HTMLElement): HTMLElement = js.native
     def append(node: HTMLElement, attr: Null, target: String): HTMLElement = js.native
     def append(node: HTMLElement, attr: Null, target: HTMLElement): HTMLElement = js.native
+    def append(node: HTMLElement, attr: Unit, target: String): HTMLElement = js.native
+    def append(node: HTMLElement, attr: Unit, target: HTMLElement): HTMLElement = js.native
     
     def args(o: js.Object, args: js.Object): js.Any | `false` = js.native
     
@@ -865,9 +816,9 @@ object mod extends Shortcut {
     
     def dataToJSON(p: js.Any): js.Any = js.native
     
-    def diff(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
+    def diff(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = js.native
     
-    def diffKey(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
+    def diffKey(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     def domInstance(`type`: String, data: js.Any): Boolean = js.native
     
@@ -888,9 +839,9 @@ object mod extends Shortcut {
     def isEmpty(obj: js.Any): Boolean = js.native
     
     def jsonp(url: String, callback: js.Function0[Unit]): Unit = js.native
-    def jsonp(url: String, callback: js.Function0[Unit], callbackID: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
     def jsonp(url: String, callback: js.Function0[Unit], callbackID: String): Unit = js.native
     def jsonp(url: String, callback: js.Function0[Unit], callbackID: String, timeout: Double): Unit = js.native
+    def jsonp(url: String, callback: js.Function0[Unit], callbackID: Unit, timeout: Double): Unit = js.native
     
     def merge(a: js.Any*): js.Any = js.native
     
@@ -899,22 +850,14 @@ object mod extends Shortcut {
     def param(o: js.Object): String = js.native
     def param(o: js.Object, formatFunction: js.Function1[/* param */ js.Any, String]): String = js.native
     def param(s: String): js.Any = js.native
-    def param(s: String, formatFunction: js.Function1[/* param */ String, _]): js.Any = js.native
+    def param(s: String, formatFunction: js.Function1[/* param */ String, js.Any]): js.Any = js.native
     
     def popup(url: String): Window | js.Any = js.native
-    def popup(url: String, redirectUri: js.UndefOr[scala.Nothing], options: js.Object): Window | js.Any = js.native
     def popup(url: String, redirectUri: String): Window | js.Any = js.native
     def popup(url: String, redirectUri: String, options: js.Object): Window | js.Any = js.native
+    def popup(url: String, redirectUri: Unit, options: js.Object): Window | js.Any = js.native
     
     def post(url: String, data: js.Any, options: js.Object, callback: HelloJSResponseCallback): Unit = js.native
-    def post(
-      url: String,
-      data: js.Any,
-      options: js.Object,
-      callback: HelloJSResponseCallback,
-      callbackID: js.UndefOr[scala.Nothing],
-      timeout: Double
-    ): Unit = js.native
     def post(
       url: String,
       data: js.Any,
@@ -930,15 +873,19 @@ object mod extends Shortcut {
       callbackID: String,
       timeout: Double
     ): Unit = js.native
+    def post(
+      url: String,
+      data: js.Any,
+      options: js.Object,
+      callback: HelloJSResponseCallback,
+      callbackID: Unit,
+      timeout: Double
+    ): Unit = js.native
     
     def qs(url: String): String = js.native
-    def qs(
-      url: String,
-      params: js.UndefOr[scala.Nothing],
-      formatFunction: js.Function1[/* param */ js.Any, String]
-    ): String = js.native
     def qs(url: String, params: js.Object): String = js.native
     def qs(url: String, params: js.Object, formatFunction: js.Function1[/* param */ js.Any, String]): String = js.native
+    def qs(url: String, params: Unit, formatFunction: js.Function1[/* param */ js.Any, String]): String = js.native
     
     def request(p: js.Object, callback: HelloJSResponseCallback): Unit = js.native
     
@@ -948,13 +895,13 @@ object mod extends Shortcut {
     def responseHandler(window: Window, parent: js.Any): Unit = js.native
     
     def store(): js.Any = js.native
-    def store(name: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
     def store(name: String): js.Any = js.native
     def store(name: String, value: js.Any): js.Any = js.native
+    def store(name: Unit, value: js.Any): js.Any = js.native
     
     def toBlob(dataURI: String): Blob | String = js.native
     
-    def unique(a: js.Array[_]): js.Array[_] = js.native
+    def unique(a: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     def url(): Location = js.native
     def url(path: String): URL | HTMLAnchorElement = js.native

@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,6 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.XrInputSource")
 @js.native
 class XrInputSource protected ()
-  extends typings.playcanvas.pc.XrInputSource {
+  extends StObject
+     with typings.playcanvas.pc.XrInputSource {
   def this(manager: typings.playcanvas.pc.XrManager, xrInputSource: js.Any) = this()
 }

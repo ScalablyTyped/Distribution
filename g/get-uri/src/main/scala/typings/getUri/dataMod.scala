@@ -5,20 +5,23 @@ import typings.node.streamMod.Readable
 import typings.node.urlMod.UrlWithStringQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataMod {
   
-  @JSImport("get-uri/dist/data", JSImport.Default)
+  @JSImport("get-uri/dist/data", JSImport.Namespace)
   @js.native
-  def default(hasHref: UrlWithStringQuery, hasCache: DataOptions): js.Promise[Readable] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait DataOptions extends GetUriOptions {
+  @scala.inline
+  def default(hasUri: UrlWithStringQuery, hasCache: DataOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], hasCache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  
+  trait DataOptions
+    extends StObject
+       with GetUriOptions {
     
     @JSName("cache")
-    var cache_DataOptions: js.UndefOr[DataReadable] = js.native
+    var cache_DataOptions: js.UndefOr[DataReadable] = js.undefined
   }
   object DataOptions {
     

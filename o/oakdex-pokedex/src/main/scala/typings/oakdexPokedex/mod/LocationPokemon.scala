@@ -2,29 +2,27 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationPokemon extends StObject {
   
-  var day_times: js.UndefOr[js.Array[String]] = js.native
+  var day_times: js.UndefOr[js.Array[String]] = js.undefined
   
-  var games: js.Array[String] = js.native
+  var games: js.Array[String]
   
-  var location: String = js.native
+  var location: String
   
-  var max_level: Double = js.native
+  var max_level: Double
   
-  var min_level: Double = js.native
+  var min_level: Double
   
-  var pokemon: String = js.native
+  var pokemon: String
   
-  var rarity: String = js.native
+  var rarity: String
   
-  var seasons: js.UndefOr[js.Array[String]] = js.native
+  var seasons: js.UndefOr[js.Array[String]] = js.undefined
   
-  var variation: js.UndefOr[String] = js.native
+  var variation: js.UndefOr[String] = js.undefined
 }
 object LocationPokemon {
   

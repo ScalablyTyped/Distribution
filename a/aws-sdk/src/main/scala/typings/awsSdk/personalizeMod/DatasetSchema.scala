@@ -2,36 +2,34 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetSchema extends StObject {
   
   /**
     * The date and time (in Unix time) that the schema was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time (in Unix time) that the schema was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The schema.
     */
-  var schema: js.UndefOr[AvroSchema] = js.native
+  var schema: js.UndefOr[AvroSchema] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the schema.
     */
-  var schemaArn: js.UndefOr[Arn] = js.native
+  var schemaArn: js.UndefOr[Arn] = js.undefined
 }
 object DatasetSchema {
   

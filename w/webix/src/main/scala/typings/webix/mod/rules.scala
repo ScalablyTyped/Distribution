@@ -2,19 +2,17 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait rules extends StObject {
   
-  def isChecked(): Boolean = js.native
+  def isChecked(): Boolean
   
-  def isEmail(): Boolean = js.native
+  def isEmail(): Boolean
   
-  def isNotEmpty(): Boolean = js.native
+  def isNotEmpty(): Boolean
   
-  def isNumber(): Boolean = js.native
+  def isNumber(): Boolean
 }
 object rules {
   

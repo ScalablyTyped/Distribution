@@ -2,19 +2,18 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEncoderStream
-  extends GenericTransformStream
+  extends StObject
+     with GenericTransformStream
      with TextEncoderCommon {
   
   @JSName("readable")
-  val readable_TextEncoderStream: ReadableStream[Uint8Array] = js.native
+  val readable_TextEncoderStream: ReadableStream[Uint8Array]
   
   @JSName("writable")
-  val writable_TextEncoderStream: WritableStream[java.lang.String] = js.native
+  val writable_TextEncoderStream: WritableStream[java.lang.String]
 }
 object TextEncoderStream {
   

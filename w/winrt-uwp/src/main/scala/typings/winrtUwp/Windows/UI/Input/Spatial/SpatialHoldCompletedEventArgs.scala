@@ -2,13 +2,11 @@ package typings.winrtUwp.Windows.UI.Input.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialHoldCompletedEventArgs extends StObject {
   
-  var interactionSourceKind: js.Any = js.native
+  var interactionSourceKind: js.Any
 }
 object SpatialHoldCompletedEventArgs {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdministrationRegion extends StObject {
   
   /** The election administration body for this area. */
-  var electionAdministrationBody: js.UndefOr[AdministrativeBody] = js.native
+  var electionAdministrationBody: js.UndefOr[AdministrativeBody] = js.undefined
   
   /** The city or county that provides election information for this voter. This object can have the same elements as state. */
-  var local_jurisdiction: js.UndefOr[AdministrationRegion] = js.native
+  var local_jurisdiction: js.UndefOr[AdministrationRegion] = js.undefined
   
   /** The name of the jurisdiction. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A list of sources for this area. If multiple sources are listed the data has been aggregated from those sources. */
-  var sources: js.UndefOr[js.Array[Source]] = js.native
+  var sources: js.UndefOr[js.Array[Source]] = js.undefined
 }
 object AdministrationRegion {
   

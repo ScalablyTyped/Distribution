@@ -3,17 +3,15 @@ package typings.cfb
 import typings.cfb.mod.CFBBlob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Header extends StObject {
     
-    var header: CFBBlob = js.native
+    var header: CFBBlob
     
-    var sectors: js.Array[CFBBlob] = js.native
+    var sectors: js.Array[CFBBlob]
   }
   object Header {
     

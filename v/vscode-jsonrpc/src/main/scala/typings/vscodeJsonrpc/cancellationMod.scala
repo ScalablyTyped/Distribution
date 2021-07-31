@@ -3,7 +3,6 @@ package typings.vscodeJsonrpc
 import typings.vscodeJsonrpc.eventsMod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cancellationMod {
@@ -19,16 +18,20 @@ object cancellationMod {
     /**
       * An [event](#Event) which fires upon cancellation.
       */
-    def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+    def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
+    def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
     def onCancellationRequested(
-      listener: js.Function1[/* e */ js.Any, _],
-      thisArgs: js.UndefOr[scala.Nothing],
+      listener: js.Function1[/* e */ js.Any, js.Any],
+      thisArgs: js.Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
-    def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-    def onCancellationRequested(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   }
   object CancellationToken {
+    
+    @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationToken")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationToken.Cancelled")
     @js.native
@@ -38,9 +41,8 @@ object cancellationMod {
     @js.native
     val None: CancellationToken = js.native
     
-    @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationToken.is")
-    @js.native
-    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = js.native
+    @scala.inline
+    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/cancellation.CancellationToken */ Boolean]
   }
   
   @JSImport("vscode-jsonrpc/lib/cancellation", "CancellationTokenSource")

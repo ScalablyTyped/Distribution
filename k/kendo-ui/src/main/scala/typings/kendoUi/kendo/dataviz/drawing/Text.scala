@@ -3,12 +3,12 @@ package typings.kendoUi.kendo.dataviz.drawing
 import typings.kendoUi.kendo.geometry.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Text
-  extends typings.kendoUi.kendo.drawing.Element {
+  extends StObject
+     with typings.kendoUi.kendo.drawing.Element {
   
   def content(): String = js.native
   def content(value: String): Unit = js.native
@@ -23,7 +23,7 @@ trait Text
   def position(value: Point): Unit = js.native
   
   def stroke(color: String): typings.kendoUi.kendo.drawing.Text = js.native
-  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): typings.kendoUi.kendo.drawing.Text = js.native
   def stroke(color: String, width: Double): typings.kendoUi.kendo.drawing.Text = js.native
   def stroke(color: String, width: Double, opacity: Double): typings.kendoUi.kendo.drawing.Text = js.native
+  def stroke(color: String, width: Unit, opacity: Double): typings.kendoUi.kendo.drawing.Text = js.native
 }

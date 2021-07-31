@@ -3,15 +3,13 @@ package typings.yandexMoneySdk
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Allowed extends StObject {
     
-    var allowed: Boolean = js.native
+    var allowed: Boolean
   }
   object Allowed {
     
@@ -29,26 +27,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Amount extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var datetime: String = js.native
+    var datetime: String
     
-    var direction: String = js.native
+    var direction: String
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var operation_id: String = js.native
+    var operation_id: String
     
-    var pattern_id: js.UndefOr[String] = js.native
+    var pattern_id: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Amount {
     
@@ -106,12 +103,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Article extends StObject {
     
-    var article: js.Array[MerchantArticleId] = js.native
+    var article: js.Array[MerchantArticleId]
     
-    var bonus: js.Array[Secret] = js.native
+    var bonus: js.Array[Secret]
   }
   object Article {
     
@@ -138,20 +134,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Available extends StObject {
     
-    var available: Double = js.native
+    var available: Double
     
-    var blocked: js.UndefOr[Double] = js.native
+    var blocked: js.UndefOr[Double] = js.undefined
     
-    var debt: js.UndefOr[Double] = js.native
+    var debt: js.UndefOr[Double] = js.undefined
     
-    var deposition_pending: js.UndefOr[Double] = js.native
+    var deposition_pending: js.UndefOr[Double] = js.undefined
     
-    var hold: js.UndefOr[Double] = js.native
+    var hold: js.UndefOr[Double] = js.undefined
     
-    var total: Double = js.native
+    var total: Double
   }
   object Available {
     
@@ -196,12 +191,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cards extends StObject {
     
-    var cards: js.UndefOr[Cscrequired] = js.native
+    var cards: js.UndefOr[Cscrequired] = js.undefined
     
-    var wallet: js.UndefOr[Allowed] = js.native
+    var wallet: js.UndefOr[Allowed] = js.undefined
   }
   object Cards {
     
@@ -228,14 +222,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Cscrequired extends StObject {
     
-    var allowed: Boolean = js.native
+    var allowed: Boolean
     
-    var csc_required: Boolean = js.native
+    var csc_required: Boolean
     
-    var items: js.Array[Id] = js.native
+    var items: js.Array[Id]
   }
   object Cscrequired {
     
@@ -262,13 +255,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var MD: String = js.native
+    var MD: String
     
-    var PaReq: String = js.native
+    var PaReq: String
   }
   object Dictkey {
     
@@ -289,14 +282,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var pan_fragment: String = js.native
+    var pan_fragment: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Id {
     
@@ -321,14 +313,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MerchantArticleId extends StObject {
     
-    var merchantArticleId: String = js.native
+    var merchantArticleId: String
     
-    var secret: String = js.native
+    var secret: String
     
-    var serial: String = js.native
+    var serial: String
   }
   object MerchantArticleId {
     
@@ -352,16 +343,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Moneysourcetoken extends StObject {
     
-    var money_source_token: js.UndefOr[String] = js.native
+    var money_source_token: js.UndefOr[String] = js.undefined
     
-    var pan_fragment: js.UndefOr[String] = js.native
+    var pan_fragment: js.UndefOr[String] = js.undefined
     
-    var payment_card_type: String = js.native
+    var payment_card_type: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Moneysourcetoken {
     
@@ -395,12 +385,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Panfragment extends StObject {
     
-    var pan_fragment: js.UndefOr[String] = js.native
+    var pan_fragment: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Panfragment {
     
@@ -427,12 +416,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Secret extends StObject {
     
-    var secret: String = js.native
+    var secret: String
     
-    var serial: String = js.native
+    var serial: String
   }
   object Secret {
     
@@ -453,12 +441,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Ts extends StObject {
     
-    var ts: String = js.native
+    var ts: String
     
-    var url: String = js.native
+    var url: String
   }
   object Ts {
     

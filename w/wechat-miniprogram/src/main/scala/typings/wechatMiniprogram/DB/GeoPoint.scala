@@ -3,22 +3,22 @@ package typings.wechatMiniprogram.DB
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoPoint extends GeoInstance {
+trait GeoPoint
+  extends StObject
+     with GeoInstance {
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  def toJSON(): Record[String, _] = js.native
+  def toJSON(): Record[String, js.Any]
 }
 object GeoPoint {
   
   @scala.inline
-  def apply(latitude: Double, longitude: Double, toJSON: () => Record[String, _]): GeoPoint = {
+  def apply(latitude: Double, longitude: Double, toJSON: () => Record[String, js.Any]): GeoPoint = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[GeoPoint]
   }
@@ -33,6 +33,6 @@ object GeoPoint {
     def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToJSON(value: () => Record[String, _]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => Record[String, js.Any]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

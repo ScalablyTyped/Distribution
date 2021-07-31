@@ -2,14 +2,12 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareTickets extends StObject {
   
   /** 每一项是一个 shareTicket ，对应一个转发对象 */
-  var shareTickets: js.Array[String] = js.native
+  var shareTickets: js.Array[String]
 }
 object ShareTickets {
   

@@ -4,15 +4,13 @@ import typings.octokitTypes.anon.Committer
 import typings.octokitTypes.anon.Downloadurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateOrUpdateFileContentsResponse201Data extends StObject {
   
-  var commit: Committer = js.native
+  var commit: Committer
   
-  var content: Downloadurl = js.native
+  var content: Downloadurl
 }
 object ReposCreateOrUpdateFileContentsResponse201Data {
   

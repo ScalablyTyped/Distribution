@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateLicenseSpecification extends StObject {
   
   /**
     * ARN of the license configuration.
     */
-  var licenseConfigurationArn: Input[String] = js.native
+  var licenseConfigurationArn: Input[String]
 }
 object LaunchTemplateLicenseSpecification {
   

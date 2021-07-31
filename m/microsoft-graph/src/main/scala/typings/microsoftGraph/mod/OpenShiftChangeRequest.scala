@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenShiftChangeRequest extends ScheduleChangeRequest {
+trait OpenShiftChangeRequest
+  extends StObject
+     with ScheduleChangeRequest {
   
   // ID for the open shift.
-  var openShiftId: js.UndefOr[NullableOption[String]] = js.native
+  var openShiftId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OpenShiftChangeRequest {
   

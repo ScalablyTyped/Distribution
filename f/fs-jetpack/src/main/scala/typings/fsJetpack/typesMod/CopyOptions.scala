@@ -2,17 +2,15 @@ package typings.fsJetpack.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyOptions extends StObject {
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var matching: js.UndefOr[String | js.Array[String]] = js.native
+  var matching: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var overwrite: js.UndefOr[Boolean | OverwriteFunction] = js.native
+  var overwrite: js.UndefOr[Boolean | OverwriteFunction] = js.undefined
 }
 object CopyOptions {
   

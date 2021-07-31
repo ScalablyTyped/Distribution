@@ -10,13 +10,13 @@ Simple library to convert accents (diacritics) from strings to latin characters.
 | ------------------ | :-------------: |
 | Full name          | latinize |
 | Keywords           | string, latinize, latinise, accents, diacritics |
-| # releases         | 2 |
-| # dependents       | 35 |
-| # downloads        | 3210473 |
+| # releases         | 3 |
+| # dependents       | 36 |
+| # downloads        | 3416058 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](http://github.com/dundalek/latinize)
+- [Homepage](https://github.com/dundalek/latinize)
 - [Bugs](https://github.com/dundalek/latinize/issues)
 - [Repository](https://github.com/dundalek/latinize)
 - [Npm](https://www.npmjs.com/package/latinize)

@@ -2,17 +2,15 @@ package typings.googleCloudFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clientemail extends StObject {
     
-    var client_email: js.UndefOr[String] = js.native
+    var client_email: js.UndefOr[String] = js.undefined
     
-    var private_key: js.UndefOr[String] = js.native
+    var private_key: js.UndefOr[String] = js.undefined
   }
   object Clientemail {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InitialOpsPerSecond extends StObject {
     
-    var initialOpsPerSecond: js.UndefOr[Double] = js.native
+    var initialOpsPerSecond: js.UndefOr[Double] = js.undefined
     
-    var maxOpsPerSecond: js.UndefOr[Double] = js.native
+    var maxOpsPerSecond: js.UndefOr[Double] = js.undefined
   }
   object InitialOpsPerSecond {
     
@@ -71,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxAttempts extends StObject {
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
   }
   object MaxAttempts {
     

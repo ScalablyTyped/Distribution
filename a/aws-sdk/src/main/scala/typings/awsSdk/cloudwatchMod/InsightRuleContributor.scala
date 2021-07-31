@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightRuleContributor extends StObject {
   
   /**
     * An approximation of the aggregate value that comes from this contributor.
     */
-  var ApproximateAggregateValue: InsightRuleUnboundDouble = js.native
+  var ApproximateAggregateValue: InsightRuleUnboundDouble
   
   /**
     * An array of the data points where this contributor is present. Only the data points when this contributor appeared are included in the array.
     */
-  var Datapoints: InsightRuleContributorDatapoints = js.native
+  var Datapoints: InsightRuleContributorDatapoints
   
   /**
     * One of the log entry field keywords that is used to define contributors for this rule.
     */
-  var Keys: InsightRuleContributorKeys = js.native
+  var Keys: InsightRuleContributorKeys
 }
 object InsightRuleContributor {
   

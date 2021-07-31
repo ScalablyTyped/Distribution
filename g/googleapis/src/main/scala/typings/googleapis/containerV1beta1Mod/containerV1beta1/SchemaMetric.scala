@@ -2,35 +2,33 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Progress metric is (string, int|float|string) pair.
   */
-@js.native
 trait SchemaMetric extends StObject {
   
   /**
     * For metrics with floating point value.
     */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /**
     * For metrics with integer value.
     */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metric name, required. e.g., &quot;nodes total&quot;, &quot;percent
     * done&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * For metrics with custom values (ratios, visual progress, etc.).
     */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
 }
 object SchemaMetric {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait SheetVisibility extends StObject
 object SheetVisibility extends StObject {
   
   @js.native
-  sealed trait hidden extends SheetVisibility
+  sealed trait hidden
+    extends StObject
+       with SheetVisibility
   
   @js.native
-  sealed trait veryHidden extends SheetVisibility
+  sealed trait veryHidden
+    extends StObject
+       with SheetVisibility
   
   @js.native
-  sealed trait visible extends SheetVisibility
+  sealed trait visible
+    extends StObject
+       with SheetVisibility
 }

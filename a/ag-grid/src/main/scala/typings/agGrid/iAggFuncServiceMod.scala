@@ -5,21 +5,19 @@ import typings.agGrid.colDefMod.IAggFunc
 import typings.agGrid.columnMod.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iAggFuncServiceMod {
   
-  @js.native
   trait IAggFuncService extends StObject {
     
-    def addAggFunc(key: String, aggFunc: IAggFunc): Unit = js.native
+    def addAggFunc(key: String, aggFunc: IAggFunc): Unit
     
-    def addAggFuncs(aggFuncs: StringDictionary[IAggFunc]): Unit = js.native
+    def addAggFuncs(aggFuncs: StringDictionary[IAggFunc]): Unit
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def getDefaultAggFunc(column: Column): String = js.native
+    def getDefaultAggFunc(column: Column): String
   }
   object IAggFuncService {
     

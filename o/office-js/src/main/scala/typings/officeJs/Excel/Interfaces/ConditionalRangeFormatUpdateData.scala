@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ... })`. */
-@js.native
 trait ConditionalRangeFormatUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConditionalRangeFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var borders: js.UndefOr[ConditionalRangeBorderCollectionUpdateData] = js.native
+  var borders: js.UndefOr[ConditionalRangeBorderCollectionUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ConditionalRangeFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var fill: js.UndefOr[ConditionalRangeFillUpdateData] = js.native
+  var fill: js.UndefOr[ConditionalRangeFillUpdateData] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ConditionalRangeFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var font: js.UndefOr[ConditionalRangeFontUpdateData] = js.native
+  var font: js.UndefOr[ConditionalRangeFontUpdateData] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ConditionalRangeFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var numberFormat: js.UndefOr[js.Any] = js.native
+  var numberFormat: js.UndefOr[js.Any] = js.undefined
 }
 object ConditionalRangeFormatUpdateData {
   

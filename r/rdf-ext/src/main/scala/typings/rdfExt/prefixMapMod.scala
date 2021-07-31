@@ -7,47 +7,69 @@ import typings.rdfJs.mod.Stream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prefixMapMod {
   
   @JSImport("rdf-ext/lib/PrefixMap", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PrefixMap {
+  class ^ protected ()
+    extends StObject
+       with PrefixMap {
     def this(factory: DataFactory[Quad, Quad], prefixes: Prefixes) = this()
-  }
-  
-  @js.native
-  trait PrefixMap extends StObject {
     
-    def addAll(prefixes: PrefixesRecord): this.type = js.native
+    /* CompleteClass */
+    override def addAll(prefixes: PrefixesRecord): this.type = js.native
     
-    def export(stream: Stream[Quad]): this.type = js.native
+    /* CompleteClass */
+    override def `export`(stream: Stream[Quad]): this.type = js.native
     
+    /* CompleteClass */
     var factory: DataFactory[Quad, Quad] = js.native
     
-    def `import`(stream: Stream[Quad]): js.Promise[this.type] = js.native
+    /* CompleteClass */
+    override def `import`(stream: Stream[Quad]): js.Promise[this.type] = js.native
     
+    /* CompleteClass */
     var map: Record[String, NamedNode[String]] = js.native
     
-    def resolve(curie: String): NamedNode[String] = js.native
+    /* CompleteClass */
+    override def resolve(curie: String): NamedNode[String] = js.native
     
-    def shrink(iri: String): NamedNode[String] = js.native
+    /* CompleteClass */
+    override def shrink(iri: String): NamedNode[String] = js.native
+  }
+  
+  trait PrefixMap extends StObject {
+    
+    def addAll(prefixes: PrefixesRecord): this.type
+    
+    def `export`(stream: Stream[Quad]): this.type
+    
+    var factory: DataFactory[Quad, Quad]
+    
+    def `import`(stream: Stream[Quad]): js.Promise[this.type]
+    
+    var map: Record[String, NamedNode[String]]
+    
+    def resolve(curie: String): NamedNode[String]
+    
+    def shrink(iri: String): NamedNode[String]
   }
   object PrefixMap {
     
     @scala.inline
     def apply(
       addAll: PrefixesRecord => PrefixMap,
-      export: Stream[Quad] => PrefixMap,
+      `export`: Stream[Quad] => PrefixMap,
       factory: DataFactory[Quad, Quad],
       `import`: Stream[Quad] => js.Promise[PrefixMap],
       map: Record[String, NamedNode[String]],
       resolve: String => NamedNode[String],
       shrink: String => NamedNode[String]
     ): PrefixMap = {
-      val __obj = js.Dynamic.literal(addAll = js.Any.fromFunction1(addAll), export = js.Any.fromFunction1(export), factory = factory.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve), shrink = js.Any.fromFunction1(shrink))
+      val __obj = js.Dynamic.literal(addAll = js.Any.fromFunction1(addAll), factory = factory.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], resolve = js.Any.fromFunction1(resolve), shrink = js.Any.fromFunction1(shrink))
+      __obj.updateDynamic("export")(js.Any.fromFunction1(`export`))
       __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
       __obj.asInstanceOf[PrefixMap]
     }

@@ -11,7 +11,6 @@ import typings.nwJs.mod.global.nw.Shell
 import typings.nwJs.mod.global.nw.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nwGuiAugmentingMod {

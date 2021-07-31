@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFViewerDplProcessing extends StObject {
   
-  var download: js.UndefOr[PDFViewerDplProcessingDownload] = js.native
+  var download: js.UndefOr[PDFViewerDplProcessingDownload] = js.undefined
   
-  var loadOnDemand: js.UndefOr[Boolean] = js.native
+  var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
-  var read: js.UndefOr[PDFViewerDplProcessingRead] = js.native
+  var read: js.UndefOr[PDFViewerDplProcessingRead] = js.undefined
   
-  var upload: js.UndefOr[PDFViewerDplProcessingUpload] = js.native
+  var upload: js.UndefOr[PDFViewerDplProcessingUpload] = js.undefined
 }
 object PDFViewerDplProcessing {
   

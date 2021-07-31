@@ -3,24 +3,22 @@ package typings.rcMenu.anon
 import typings.rcMotion.cssmotionMod.CSSMotionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{[ key in rc-menu.rc-menu/es/interface.MenuMode | 'other' ]: rc-motion.rc-motion.CSSMotionProps}> */
-@js.native
 trait PartialkeyinMenuModeother extends StObject {
   
-  var horizontal: js.UndefOr[CSSMotionProps] = js.native
+  var horizontal: js.UndefOr[CSSMotionProps] = js.undefined
   
-  var `inline`: js.UndefOr[CSSMotionProps] = js.native
+  var `inline`: js.UndefOr[CSSMotionProps] = js.undefined
   
-  var other: js.UndefOr[CSSMotionProps] = js.native
+  var other: js.UndefOr[CSSMotionProps] = js.undefined
   
-  var vertical: js.UndefOr[CSSMotionProps] = js.native
+  var vertical: js.UndefOr[CSSMotionProps] = js.undefined
   
-  var `vertical-left`: js.UndefOr[CSSMotionProps] = js.native
+  var `vertical-left`: js.UndefOr[CSSMotionProps] = js.undefined
   
-  var `vertical-right`: js.UndefOr[CSSMotionProps] = js.native
+  var `vertical-right`: js.UndefOr[CSSMotionProps] = js.undefined
 }
 object PartialkeyinMenuModeother {
   

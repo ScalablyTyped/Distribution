@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * defined by one or more dimension/metric conditions. Multiple steps can be
   * combined with special sequence operators.
   */
-@js.native
 trait SchemaSequenceSegment extends StObject {
   
   /**
     * If set, first step condition must match the first hit of the visitor (in
     * the date range).
     */
-  var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.native
+  var firstStepShouldMatchFirstHit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The list of steps in the sequence.
     */
-  var segmentSequenceSteps: js.UndefOr[js.Array[SchemaSegmentSequenceStep]] = js.native
+  var segmentSequenceSteps: js.UndefOr[js.Array[SchemaSegmentSequenceStep]] = js.undefined
 }
 object SchemaSequenceSegment {
   

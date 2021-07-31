@@ -7,21 +7,22 @@ import typings.mobx.observablearrayMod.IArrayWillChange
 import typings.mobx.observablearrayMod.IArrayWillSplice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sendListChangeDeltasMod {
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/sendListChangeDeltas", "sendListChangeDeltas")
+  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/sendListChangeDeltas", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def sendListChangeDeltas[T, P](
-    property: (AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
+    property: (AbstractProperty[js.Array[T], IList[P]]) & ToRawChangeValue[P],
     change: IArrayWillChange[P]
-  ): Unit = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/properties/sendListChangeDeltas", "sendListChangeDeltas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendListChangeDeltas")(property.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendListChangeDeltas[T, P](
-    property: (AbstractProperty[js.Array[T], IList[P]]) with ToRawChangeValue[P],
+    property: (AbstractProperty[js.Array[T], IList[P]]) & ToRawChangeValue[P],
     change: IArrayWillSplice[P]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendListChangeDeltas")(property.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

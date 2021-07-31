@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityVendorInformation extends StObject {
   
   // Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  var provider: js.UndefOr[NullableOption[String]] = js.native
+  var provider: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Version of the provider or subprovider, if it exists, that generated the alert. Required
-  var providerVersion: js.UndefOr[NullableOption[String]] = js.native
+  var providerVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  var subProvider: js.UndefOr[NullableOption[String]] = js.native
+  var subProvider: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
-  var vendor: js.UndefOr[NullableOption[String]] = js.native
+  var vendor: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SecurityVendorInformation {
   

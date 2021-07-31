@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 import typings.activexLibreoffice.com_.sun.star.frame.XController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for the slide sorter regardless of which pane it is used in.`private:resource/view/PresentationView` for the slide
   * show.`private:resource/view/TaskPane` for the task pane.
   */
-@js.native
-trait BasicViewFactory extends XResourceFactory {
+trait BasicViewFactory
+  extends StObject
+     with XResourceFactory {
   
   /** Give the controller to new instances so that they have access to the drawing framework controllers. */
-  def create(xController: XController): Unit = js.native
+  def create(xController: XController): Unit
 }
 object BasicViewFactory {
   

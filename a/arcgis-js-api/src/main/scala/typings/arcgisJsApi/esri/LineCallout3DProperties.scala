@@ -3,34 +3,34 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineCallout3DProperties extends Callout3DProperties {
+trait LineCallout3DProperties
+  extends StObject
+     with Callout3DProperties {
   
   /**
     * The border settings of the callout line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#border)
     */
-  var border: js.UndefOr[LineCallout3DBorderProperties] = js.native
+  var border: js.UndefOr[LineCallout3DBorderProperties] = js.undefined
   
   /**
     * The color of the callout line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#color)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The width of the callout line in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html#size)
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: js.UndefOr[line] = js.native
+  var `type`: js.UndefOr[line] = js.undefined
 }
 object LineCallout3DProperties {
   

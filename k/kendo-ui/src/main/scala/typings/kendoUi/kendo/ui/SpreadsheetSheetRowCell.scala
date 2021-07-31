@@ -3,55 +3,53 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpreadsheetSheetRowCell extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
-  var borderBottom: js.UndefOr[SpreadsheetSheetRowCellBorderBottom] = js.native
+  var borderBottom: js.UndefOr[SpreadsheetSheetRowCellBorderBottom] = js.undefined
   
-  var borderLeft: js.UndefOr[SpreadsheetSheetRowCellBorderLeft] = js.native
+  var borderLeft: js.UndefOr[SpreadsheetSheetRowCellBorderLeft] = js.undefined
   
-  var borderRight: js.UndefOr[SpreadsheetSheetRowCellBorderRight] = js.native
+  var borderRight: js.UndefOr[SpreadsheetSheetRowCellBorderRight] = js.undefined
   
-  var borderTop: js.UndefOr[SpreadsheetSheetRowCellBorderTop] = js.native
+  var borderTop: js.UndefOr[SpreadsheetSheetRowCellBorderTop] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
-  var validation: js.UndefOr[SpreadsheetSheetRowCellValidation] = js.native
+  var validation: js.UndefOr[SpreadsheetSheetRowCellValidation] = js.undefined
   
-  var value: js.UndefOr[Double | String | Boolean | Date] = js.native
+  var value: js.UndefOr[Double | String | Boolean | Date] = js.undefined
   
-  var verticalAlign: js.UndefOr[String] = js.native
+  var verticalAlign: js.UndefOr[String] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object SpreadsheetSheetRowCell {
   

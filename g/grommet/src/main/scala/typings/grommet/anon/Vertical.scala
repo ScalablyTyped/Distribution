@@ -3,15 +3,13 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.EdgeSizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vertical extends StObject {
   
-  var horizontal: js.UndefOr[EdgeSizeType] = js.native
+  var horizontal: js.UndefOr[EdgeSizeType] = js.undefined
   
-  var vertical: js.UndefOr[EdgeSizeType] = js.native
+  var vertical: js.UndefOr[EdgeSizeType] = js.undefined
 }
 object Vertical {
   

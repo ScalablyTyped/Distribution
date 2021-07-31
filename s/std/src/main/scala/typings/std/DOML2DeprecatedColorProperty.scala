@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOML2DeprecatedColorProperty extends StObject {
   
-  var color: java.lang.String = js.native
+  var color: java.lang.String
 }
 object DOML2DeprecatedColorProperty {
   

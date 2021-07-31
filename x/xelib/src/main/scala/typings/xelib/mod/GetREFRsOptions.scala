@@ -2,29 +2,27 @@ package typings.xelib.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetREFRsOptions extends StObject {
   
   /**
     * Pass true to exclude deleted REFRs.
     * @default false
     */
-  var excludeDeleted: js.UndefOr[Boolean] = js.native
+  var excludeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Pass true to exclude disabled REFRs.
     * @default false
     */
-  var excludeDisabled: js.UndefOr[Boolean] = js.native
+  var excludeDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Pass true to exclude REFRs which have an XESP element.
     * @default false
     */
-  var excludeXESP: js.UndefOr[Boolean] = js.native
+  var excludeXESP: js.UndefOr[Boolean] = js.undefined
 }
 object GetREFRsOptions {
   

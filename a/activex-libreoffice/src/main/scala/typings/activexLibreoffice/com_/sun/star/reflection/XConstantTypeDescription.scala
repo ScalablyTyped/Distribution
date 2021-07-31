@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XConstantsTypeDescription
   * @since OOo 1.1.2
   */
-@js.native
-trait XConstantTypeDescription extends XTypeDescription {
+trait XConstantTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /** @returns the value of the constant.  Following types are allowed for constants: booleanbyteshortunsigned shortlongunsigned longhyperunsigned hyperfloatdouble */
-  val ConstantValue: js.Any = js.native
+  val ConstantValue: js.Any
   
   /** @returns the value of the constant.  Following types are allowed for constants: booleanbyteshortunsigned shortlongunsigned longhyperunsigned hyperfloatdouble */
-  def getConstantValue(): js.Any = js.native
+  def getConstantValue(): js.Any
 }
 object XConstantTypeDescription {
   

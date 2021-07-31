@@ -2,15 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Consumer extends StObject {
   
-  var consumerId: Double = js.native
+  var consumerId: Double
   
-  var consumerName: String = js.native
+  var consumerName: String
 }
 object Consumer {
   

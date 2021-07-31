@@ -3,17 +3,15 @@ package typings.webappsecCredentialManagement
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type definitions for webauthn
 // Spec: https://w3c.github.io/webauthn/
-@js.native
 trait txAuthGenericArg extends StObject {
   
-  var content: ArrayBuffer = js.native
+  var content: ArrayBuffer
   
-  var contentType: String = js.native
+  var contentType: String
 }
 object txAuthGenericArg {
   

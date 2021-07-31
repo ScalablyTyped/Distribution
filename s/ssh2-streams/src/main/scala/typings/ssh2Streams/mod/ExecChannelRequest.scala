@@ -3,25 +3,25 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.exec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecChannelRequest extends ChannelRequest {
+trait ExecChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var command: String = js.native
+  var command: String
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: exec = js.native
+  var request: exec
   
-  var wantReply: Boolean = js.native
+  var wantReply: Boolean
 }
 object ExecChannelRequest {
   
   @scala.inline
-  def apply(command: String, recipient: Double, request: exec, wantReply: Boolean): ExecChannelRequest = {
-    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
+  def apply(command: String, recipient: Double, wantReply: Boolean): ExecChannelRequest = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "exec", wantReply = wantReply.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecChannelRequest]
   }
   

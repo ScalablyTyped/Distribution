@@ -2,69 +2,67 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    VoxImplant SDK Configuration
   */
-@js.native
 trait Config extends StObject {
   
   /**
     *    XSS protection for inbound instant messages that can contain HTML content
     */
-  var imXSSprotection: js.UndefOr[Boolean] = js.native
+  var imXSSprotection: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    If set to true microphone access dialog will be shown and all functions will become available only after user allowed access
     */
-  var micRequired: js.UndefOr[Boolean] = js.native
+  var micRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    Automatically plays progress tone by means of SDK according to specified progressToneCountry
     */
-  var progressTone: js.UndefOr[Boolean] = js.native
+  var progressTone: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    Country code for progress tone generated automatically if progressTone set to true
     */
-  var progressToneCountry: js.UndefOr[String] = js.native
+  var progressToneCountry: js.UndefOr[String] = js.undefined
   
   /**
     *    Show debug info in console
     */
-  var showDebugInfo: js.UndefOr[Boolean] = js.native
+  var showDebugInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    Show Flash Settings panel instead of standard Allow/Deny dialog (in Flash mode)
     */
-  var showFlashSettings: js.UndefOr[Boolean] = js.native
+  var showFlashSettings: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    Id of HTMLElement that will be used as container for Flash component of SDK (Mic/cam access dialog will appear in the container). If micRequired set to true element should have size not less than 215x138 (px) for access dialog to be shown
     */
-  var swfContainer: js.UndefOr[String] = js.native
+  var swfContainer: js.UndefOr[String] = js.undefined
   
   /**
     *    Force VoxImplant to use Flash (WebRTC is used if available by default)
     */
-  var useFlashOnly: js.UndefOr[Boolean] = js.native
+  var useFlashOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    Force VoxImplant to use WebRTC (WebRTC is used if available by default). Error will be thrown if WebRTC in unavailable
     */
-  var useRTCOnly: js.UndefOr[Boolean] = js.native
+  var useRTCOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *    Default constraints that will be applied while the next attachRecordingDevice function call or if micRequired set to true
     */
-  var videoConstraints: js.UndefOr[VideoSettings | Boolean] = js.native
+  var videoConstraints: js.UndefOr[VideoSettings | Boolean] = js.undefined
   
   /**
     *    Video support
     */
-  var videoSupport: js.UndefOr[Boolean] = js.native
+  var videoSupport: js.UndefOr[Boolean] = js.undefined
 }
 object Config {
   

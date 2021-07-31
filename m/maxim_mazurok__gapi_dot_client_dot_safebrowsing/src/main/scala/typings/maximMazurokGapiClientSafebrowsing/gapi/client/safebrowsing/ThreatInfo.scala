@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreatInfo extends StObject {
   
   /** The platform types to be checked. */
-  var platformTypes: js.UndefOr[js.Array[String]] = js.native
+  var platformTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The threat entries to be checked. */
-  var threatEntries: js.UndefOr[js.Array[ThreatEntry]] = js.native
+  var threatEntries: js.UndefOr[js.Array[ThreatEntry]] = js.undefined
   
   /** The entry types to be checked. */
-  var threatEntryTypes: js.UndefOr[js.Array[String]] = js.native
+  var threatEntryTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The threat types to be checked. */
-  var threatTypes: js.UndefOr[js.Array[String]] = js.native
+  var threatTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ThreatInfo {
   

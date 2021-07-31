@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * maps strings to anys.
   * @since OOo 2.3
   */
-@js.native
 trait XStringKeyMap extends StObject {
   
   /** the number of elements in the map. */
-  var Count: Double = js.native
+  var Count: Double
   
   /**
     * obtains the key of an element by index.
@@ -21,7 +19,7 @@ trait XStringKeyMap extends StObject {
     * @returns the key string matching the given index.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the specified index is greater than the number of elements
     */
-  def getKeyByIndex(nIndex: Double): String = js.native
+  def getKeyByIndex(nIndex: Double): String
   
   /**
     * reads data from the map.
@@ -29,7 +27,7 @@ trait XStringKeyMap extends StObject {
     * @returns the value matching aKey.
     * @throws com::sun::star::container::NoSuchElementException if an element under aKey does not exist.
     */
-  def getValue(aKey: String): js.Any = js.native
+  def getValue(aKey: String): js.Any
   
   /**
     * obtains the value of an element by index.
@@ -37,14 +35,14 @@ trait XStringKeyMap extends StObject {
     * @returns the value matching the given index.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the specified index is greater than the number of elements
     */
-  def getValueByIndex(nIndex: Double): js.Any = js.native
+  def getValueByIndex(nIndex: Double): js.Any
   
   /**
     * checks for element existence.
     * @param aKey The key string which should be searched for.
     * @returns true if an element with key aKey exists.
     */
-  def hasValue(aKey: String): Boolean = js.native
+  def hasValue(aKey: String): Boolean
   
   /**
     * writes data to the map.
@@ -53,7 +51,7 @@ trait XStringKeyMap extends StObject {
     * @throws com::sun::star::lang::IllegalArgumentException if the element could not be inserted.
     * @throws com::sun::star::container::ElementExistException if there is already a value stored under the key aKey.
     */
-  def insertValue(aKey: String, aValue: js.Any): Unit = js.native
+  def insertValue(aKey: String, aValue: js.Any): Unit
 }
 object XStringKeyMap {
   

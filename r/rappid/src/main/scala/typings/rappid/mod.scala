@@ -9,7 +9,6 @@ import typings.jointjs.mod.dia.Paper
 import typings.rappid.anon.Graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,14 +42,13 @@ object mod {
       def startSelecting(evt: js.Any): Unit = js.native
     }
     
-    @js.native
     trait Handle extends StObject {
       
-      var icon: String = js.native
+      var icon: String
       
-      var name: String = js.native
+      var name: String
       
-      var position: String = js.native
+      var position: String
     }
     object Handle {
       

@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ImageryLayerCollection")
@@ -25,13 +24,13 @@ class ImageryLayerCollection () extends StObject {
   
   def isDestroyed(): Boolean = js.native
   
-  var layerAdded: Event[js.Array[_]] = js.native
+  var layerAdded: Event[js.Array[js.Any]] = js.native
   
-  var layerMoved: Event[js.Array[_]] = js.native
+  var layerMoved: Event[js.Array[js.Any]] = js.native
   
-  var layerRemoved: Event[js.Array[_]] = js.native
+  var layerRemoved: Event[js.Array[js.Any]] = js.native
   
-  var layerShownOrHidden: Event[js.Array[_]] = js.native
+  var layerShownOrHidden: Event[js.Array[js.Any]] = js.native
   
   var length: Double = js.native
   

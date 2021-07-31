@@ -3,30 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSLiteralType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSLiteralType_
-  extends TSBaseType
+- typings.babelTypes.mod._Node because Already inherited */ trait TSLiteralType_
+  extends StObject
      with BaseNode
+     with TSBaseType
      with TSType {
   
-  var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ = js.native
+  var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_
   
   @JSName("type")
-  var type_TSLiteralType_ : TSLiteralType = js.native
+  var type_TSLiteralType_ : TSLiteralType
 }
 object TSLiteralType_ {
   
   @scala.inline
-  def apply(
-    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_,
-    `type`: TSLiteralType
-  ): TSLiteralType_ = {
-    val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_): TSLiteralType_ = {
+    val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSLiteralType")
     __obj.asInstanceOf[TSLiteralType_]
   }
   

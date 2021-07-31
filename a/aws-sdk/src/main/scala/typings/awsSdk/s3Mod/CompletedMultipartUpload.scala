@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletedMultipartUpload extends StObject {
   
   /**
     * Array of CompletedPart data types.
     */
-  var Parts: js.UndefOr[CompletedPartList] = js.native
+  var Parts: js.UndefOr[CompletedPartList] = js.undefined
 }
 object CompletedMultipartUpload {
   

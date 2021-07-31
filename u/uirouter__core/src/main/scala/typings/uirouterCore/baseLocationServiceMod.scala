@@ -6,14 +6,15 @@ import typings.uirouterCore.vanillaInterfaceMod.HistoryLike
 import typings.uirouterCore.vanillaInterfaceMod.LocationLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseLocationServiceMod {
   
   @JSImport("@uirouter/core/lib/vanilla/baseLocationService", "BaseLocationServices")
   @js.native
-  abstract class BaseLocationServices protected () extends LocationServices {
+  abstract class BaseLocationServices protected ()
+    extends StObject
+       with LocationServices {
     def this(router: UIRouter, fireAfterUpdate: Boolean) = this()
     
     /**

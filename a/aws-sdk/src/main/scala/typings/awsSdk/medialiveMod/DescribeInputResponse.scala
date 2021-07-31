@@ -2,82 +2,80 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInputResponse extends StObject {
   
   /**
     * The Unique ARN of the input (generated, immutable).
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * A list of channel IDs that that input is attached to (currently an input can only be attached to one channel).
     */
-  var AttachedChannels: js.UndefOr[listOfString] = js.native
+  var AttachedChannels: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A list of the destinations of the input (PUSH-type).
     */
-  var Destinations: js.UndefOr[listOfInputDestination] = js.native
+  var Destinations: js.UndefOr[listOfInputDestination] = js.undefined
   
   /**
     * The generated ID of the input (unique for user account, immutable).
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * STANDARD - MediaLive expects two sources to be connected to this input. If the channel is also STANDARD, both sources will be ingested. If the channel is SINGLE_PIPELINE, only the first source will be ingested; the second source will always be ignored, even if the first source fails.
   SINGLE_PIPELINE - You can connect only one source to this input. If the ChannelClass is also  SINGLE_PIPELINE, this value is valid. If the ChannelClass is STANDARD, this value is not valid because the channel requires two sources in the input.
     */
-  var InputClass: js.UndefOr[typings.awsSdk.medialiveMod.InputClass] = js.native
+  var InputClass: js.UndefOr[typings.awsSdk.medialiveMod.InputClass] = js.undefined
   
   /**
     * Settings for the input devices.
     */
-  var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.native
+  var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.undefined
   
   /**
     * Certain pull input sources can be dynamic, meaning that they can have their URL's dynamically changes
   during input switch actions. Presently, this functionality only works with MP4_FILE inputs.
     */
-  var InputSourceType: js.UndefOr[typings.awsSdk.medialiveMod.InputSourceType] = js.native
+  var InputSourceType: js.UndefOr[typings.awsSdk.medialiveMod.InputSourceType] = js.undefined
   
   /**
     * A list of MediaConnect Flows for this input.
     */
-  var MediaConnectFlows: js.UndefOr[listOfMediaConnectFlow] = js.native
+  var MediaConnectFlows: js.UndefOr[listOfMediaConnectFlow] = js.undefined
   
   /**
     * The user-assigned name (This is a mutable value).
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
   
   /**
     * A list of IDs for all the Input Security Groups attached to the input.
     */
-  var SecurityGroups: js.UndefOr[listOfString] = js.native
+  var SecurityGroups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A list of the sources of the input (PULL-type).
     */
-  var Sources: js.UndefOr[listOfInputSource] = js.native
+  var Sources: js.UndefOr[listOfInputSource] = js.undefined
   
-  var State: js.UndefOr[InputState] = js.native
+  var State: js.UndefOr[InputState] = js.undefined
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
   
-  var Type: js.UndefOr[InputType] = js.native
+  var Type: js.UndefOr[InputType] = js.undefined
 }
 object DescribeInputResponse {
   

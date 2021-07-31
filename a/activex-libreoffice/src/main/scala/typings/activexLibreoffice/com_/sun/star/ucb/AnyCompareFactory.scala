@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a factory to get {@link XAnyCompare} service implementations.
   * @since OOo 1.1.2
   */
-@js.native
-trait AnyCompareFactory extends XAnyCompareFactory {
+trait AnyCompareFactory
+  extends StObject
+     with XAnyCompareFactory {
   
-  def createWithLocale(aLocale: Locale): Unit = js.native
+  def createWithLocale(aLocale: Locale): Unit
 }
 object AnyCompareFactory {
   

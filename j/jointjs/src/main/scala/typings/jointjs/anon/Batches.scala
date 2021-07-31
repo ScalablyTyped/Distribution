@@ -2,15 +2,13 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Batches extends StObject {
   
-  var batches: Double = js.native
+  var batches: Double
   
-  var updated: Double = js.native
+  var updated: Double
 }
 object Batches {
   

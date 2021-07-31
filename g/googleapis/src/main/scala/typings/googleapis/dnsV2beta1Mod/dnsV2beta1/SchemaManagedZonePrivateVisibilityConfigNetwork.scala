@@ -2,19 +2,17 @@ package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedZonePrivateVisibilityConfigNetwork extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#managedZonePrivateVisibilityConfigNetwork&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var networkUrl: js.UndefOr[String] = js.native
+  var networkUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedZonePrivateVisibilityConfigNetwork {
   

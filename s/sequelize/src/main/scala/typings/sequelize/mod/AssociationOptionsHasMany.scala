@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Association class hasMany method
   */
-@js.native
-trait AssociationOptionsHasMany extends AssociationOptionsManyToMany {
+trait AssociationOptionsHasMany
+  extends StObject
+     with AssociationOptionsManyToMany {
   
   /**
     * A string or a data type to represent the identifier in the table
     */
-  var keyType: js.UndefOr[DataTypeAbstract] = js.native
+  var keyType: js.UndefOr[DataTypeAbstract] = js.undefined
   
   /**
     * A string to represent the name of the field to use as the key for an 1 to many association in the source table.
@@ -24,7 +24,7 @@ trait AssociationOptionsHasMany extends AssociationOptionsManyToMany {
     * @see http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-hasMany
     * @see https://github.com/sequelize/sequelize/blob/b4fd46426db9cdbb97074bea121203d565e4195d/lib/associations/has-many.js#L81
     */
-  var sourceKey: js.UndefOr[String] = js.native
+  var sourceKey: js.UndefOr[String] = js.undefined
 }
 object AssociationOptionsHasMany {
   

@@ -4,36 +4,34 @@ import typings.exceljs.mod.QuoteColumns
 import typings.exceljs.mod.RowTransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.FastCsvFormatterOptionsArgs> */
-@js.native
 trait PartialFastCsvFormatterOp extends StObject {
   
-  var alwaysWriteHeaders: js.UndefOr[Boolean] = js.native
+  var alwaysWriteHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var escape: js.UndefOr[String] = js.native
+  var escape: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[Null | Boolean | js.Array[String]] = js.native
+  var headers: js.UndefOr[Null | Boolean | js.Array[String]] = js.undefined
   
-  var includeEndRowDelimiter: js.UndefOr[Boolean] = js.native
+  var includeEndRowDelimiter: js.UndefOr[Boolean] = js.undefined
   
-  var objectMode: js.UndefOr[Boolean] = js.native
+  var objectMode: js.UndefOr[Boolean] = js.undefined
   
-  var quote: js.UndefOr[String | Boolean] = js.native
+  var quote: js.UndefOr[String | Boolean] = js.undefined
   
-  var quoteColumns: js.UndefOr[QuoteColumns] = js.native
+  var quoteColumns: js.UndefOr[QuoteColumns] = js.undefined
   
-  var quoteHeaders: js.UndefOr[QuoteColumns] = js.native
+  var quoteHeaders: js.UndefOr[QuoteColumns] = js.undefined
   
-  var rowDelimiter: js.UndefOr[String] = js.native
+  var rowDelimiter: js.UndefOr[String] = js.undefined
   
-  var transform: js.UndefOr[RowTransformFunction] = js.native
+  var transform: js.UndefOr[RowTransformFunction] = js.undefined
   
-  var writeBOM: js.UndefOr[Boolean] = js.native
+  var writeBOM: js.UndefOr[Boolean] = js.undefined
 }
 object PartialFastCsvFormatterOp {
   

@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,13 +26,13 @@ trait IParseProvider extends StObject {
     * @param identifierContinue The function that will decide whether the given character is a valid identifier continue character.
     **/
   def setIdentifierFns(): Unit = js.native
-  def setIdentifierFns(
-    identifierStart: js.UndefOr[scala.Nothing],
-    identifierContinue: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]
-  ): Unit = js.native
   def setIdentifierFns(identifierStart: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]): Unit = js.native
   def setIdentifierFns(
     identifierStart: js.Function2[/* character */ String, /* codePoint */ Double, Boolean],
+    identifierContinue: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]
+  ): Unit = js.native
+  def setIdentifierFns(
+    identifierStart: Unit,
     identifierContinue: js.Function2[/* character */ String, /* codePoint */ Double, Boolean]
   ): Unit = js.native
   

@@ -3,22 +3,20 @@ package typings.jqueryui.JQueryUI
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Button //////////////////////////////////////////////////
-@js.native
 trait ButtonOptions extends StObject {
   
-  var click: js.UndefOr[js.Function1[/* event */ js.UndefOr[Event], Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* event */ js.UndefOr[Event], Unit]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String | Boolean] = js.native
+  var text: js.UndefOr[String | Boolean] = js.undefined
 }
 object ButtonOptions {
   

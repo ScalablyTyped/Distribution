@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object security {
@@ -81,9 +80,8 @@ object security {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.DemoUser.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.DemoUser = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.DemoUser = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.DemoUser]
     
     /**
       * Creates and returns a new DemoUser instance in the SDK and on the server.
@@ -91,9 +89,8 @@ object security {
       * of the parent ProjectSecurity element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.DemoUser.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.DemoUser = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.DemoUser = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.DemoUser]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.DemoUser.structureTypeName")
@@ -135,9 +132,8 @@ object security {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.FileDocumentAccessRuleContainer.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer]
     
     /**
       * Creates and returns a new FileDocumentAccessRuleContainer instance in the SDK and on the server.
@@ -145,9 +141,8 @@ object security {
       * of the parent ProjectSecurity element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.FileDocumentAccessRuleContainer.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.FileDocumentAccessRuleContainer]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.FileDocumentAccessRuleContainer.structureTypeName")
@@ -189,9 +184,8 @@ object security {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ImageAccessRuleContainer.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.ImageAccessRuleContainer = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.ImageAccessRuleContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.ImageAccessRuleContainer]
     
     /**
       * Creates and returns a new ImageAccessRuleContainer instance in the SDK and on the server.
@@ -199,9 +193,8 @@ object security {
       * of the parent ProjectSecurity element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ImageAccessRuleContainer.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.ImageAccessRuleContainer = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.ImageAccessRuleContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.ImageAccessRuleContainer]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ImageAccessRuleContainer.structureTypeName")
@@ -246,9 +239,8 @@ object security {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ModuleRole.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.ModuleRole = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.ModuleRole = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.ModuleRole]
     
     /**
       * Creates and returns a new ModuleRole instance in the SDK and on the server.
@@ -256,9 +248,8 @@ object security {
       * of the parent ModuleSecurity element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ModuleRole.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.securityMod.security.ModuleSecurity): typings.mendixmodelsdk.securityMod.security.ModuleRole = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.securityMod.security.ModuleSecurity): typings.mendixmodelsdk.securityMod.security.ModuleRole = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.ModuleRole]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ModuleRole.structureTypeName")
@@ -301,9 +292,8 @@ object security {
       * Expects one argument, the projects.IModule in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ModuleSecurity.createIn")
-    @js.native
-    def createIn(container: IModule): typings.mendixmodelsdk.securityMod.security.ModuleSecurity = js.native
+    @scala.inline
+    def createIn(container: IModule): typings.mendixmodelsdk.securityMod.security.ModuleSecurity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.ModuleSecurity]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ModuleSecurity.structureTypeName")
@@ -348,9 +338,8 @@ object security {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.PasswordPolicySettings.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.PasswordPolicySettings = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.PasswordPolicySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.PasswordPolicySettings]
     
     /**
       * Creates and returns a new PasswordPolicySettings instance in the SDK and on the server.
@@ -358,9 +347,8 @@ object security {
       * of the parent ProjectSecurity element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.PasswordPolicySettings.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.PasswordPolicySettings = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.PasswordPolicySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.PasswordPolicySettings]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.PasswordPolicySettings.structureTypeName")
@@ -403,9 +391,8 @@ object security {
       * Expects one argument, the projects.IProject in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ProjectSecurity.createIn")
-    @js.native
-    def createIn(container: IProject): typings.mendixmodelsdk.securityMod.security.ProjectSecurity = js.native
+    @scala.inline
+    def createIn(container: IProject): typings.mendixmodelsdk.securityMod.security.ProjectSecurity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.ProjectSecurity]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.ProjectSecurity.structureTypeName")
@@ -484,9 +471,8 @@ object security {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.UserRole.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.UserRole = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.securityMod.security.UserRole = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.UserRole]
     
     /**
       * Creates and returns a new UserRole instance in the SDK and on the server.
@@ -494,9 +480,8 @@ object security {
       * of the parent ProjectSecurity element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.UserRole.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.UserRole = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.securityMod.security.ProjectSecurity): typings.mendixmodelsdk.securityMod.security.UserRole = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.securityMod.security.UserRole]
     
     /* static member */
     @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "security.UserRole.structureTypeName")

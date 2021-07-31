@@ -4,7 +4,6 @@ import typings.angular.mod.IRootScopeService
 import typings.angularUiTree.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AngularUITree {
@@ -16,34 +15,59 @@ object AngularUITree {
     Boolean
   ]
   
-  @js.native
   trait ICallbacks extends StObject {
     
-    def accept(source: ITreeNodeScope, destination: ITreeNodeScope, destinationIndex: Double): Boolean = js.native
+    def accept(source: ITreeNodeScope, destination: ITreeNodeScope, destinationIndex: Double): Boolean
     @JSName("accept")
-    var accept_Original: IAcceptCallback = js.native
+    var accept_Original: IAcceptCallback
     
-    def dragStart(eventInfo: IEventInfo): Unit = js.native
+    def dragStart(eventInfo: IEventInfo): Unit
     @JSName("dragStart")
-    var dragStart_Original: IDroppedCallback = js.native
+    var dragStart_Original: IDroppedCallback
     
-    def dropped(eventInfo: IEventInfo): Unit = js.native
+    def dropped(eventInfo: IEventInfo): Unit
     @JSName("dropped")
-    var dropped_Original: IDroppedCallback = js.native
+    var dropped_Original: IDroppedCallback
+  }
+  object ICallbacks {
+    
+    @scala.inline
+    def apply(
+      accept: (/* source */ ITreeNodeScope, /* destination */ ITreeNodeScope, /* destinationIndex */ Double) => Boolean,
+      dragStart: /* eventInfo */ IEventInfo => Unit,
+      dropped: /* eventInfo */ IEventInfo => Unit
+    ): ICallbacks = {
+      val __obj = js.Dynamic.literal(accept = js.Any.fromFunction3(accept), dragStart = js.Any.fromFunction1(dragStart), dropped = js.Any.fromFunction1(dropped))
+      __obj.asInstanceOf[ICallbacks]
+    }
+    
+    @scala.inline
+    implicit class ICallbacksMutableBuilder[Self <: ICallbacks] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAccept(
+        value: (/* source */ ITreeNodeScope, /* destination */ ITreeNodeScope, /* destinationIndex */ Double) => Boolean
+      ): Self = StObject.set(x, "accept", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setDragStart(value: /* eventInfo */ IEventInfo => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDropped(value: /* eventInfo */ IEventInfo => Unit): Self = StObject.set(x, "dropped", js.Any.fromFunction1(value))
+    }
   }
   
   type IDroppedCallback = js.Function1[/* eventInfo */ IEventInfo, Unit]
   
-  @js.native
   trait IEventInfo extends StObject {
     
-    var dest: Index = js.native
+    var dest: Index
     
-    var elements: js.Any = js.native
+    var elements: js.Any
     
-    var pos: IPosition = js.native
+    var pos: IPosition
     
-    var source: IEventSourceInfo = js.native
+    var source: IEventSourceInfo
   }
   object IEventInfo {
     
@@ -70,16 +94,15 @@ object AngularUITree {
     }
   }
   
-  @js.native
   trait IEventSourceInfo extends StObject {
     
-    var cloneModel: js.Any = js.native
+    var cloneModel: js.Any
     
-    var index: Double = js.native
+    var index: Double
     
-    var nodeScope: ITreeNodeScope = js.native
+    var nodeScope: ITreeNodeScope
     
-    var nodesScope: ITreeNodeScope = js.native
+    var nodesScope: ITreeNodeScope
   }
   object IEventSourceInfo {
     
@@ -107,49 +130,50 @@ object AngularUITree {
   }
   
   @js.native
-  trait IParentTreeNodeScope extends ITreeNodeScope {
+  trait IParentTreeNodeScope
+    extends StObject
+       with ITreeNodeScope {
     
     def isParent(nodeScope: ITreeNodeScope): Boolean = js.native
   }
   
-  @js.native
   trait IPosition extends StObject {
     
-    var dirAx: Double = js.native
+    var dirAx: Double
     
-    var dirX: Double = js.native
+    var dirX: Double
     
-    var dirY: Double = js.native
+    var dirY: Double
     
-    var distAxX: Double = js.native
+    var distAxX: Double
     
-    var distAxY: Double = js.native
+    var distAxY: Double
     
-    var distX: Double = js.native
+    var distX: Double
     
-    var distY: Double = js.native
+    var distY: Double
     
-    var lastDirX: Double = js.native
+    var lastDirX: Double
     
-    var lastDirY: Double = js.native
+    var lastDirY: Double
     
-    var lastX: Double = js.native
+    var lastX: Double
     
-    var lastY: Double = js.native
+    var lastY: Double
     
-    var moving: Boolean = js.native
+    var moving: Boolean
     
-    var nowX: Double = js.native
+    var nowX: Double
     
-    var nowY: Double = js.native
+    var nowY: Double
     
-    var offsetX: Double = js.native
+    var offsetX: Double
     
-    var offsetY: Double = js.native
+    var offsetY: Double
     
-    var startX: Double = js.native
+    var startX: Double
     
-    var startY: Double = js.native
+    var startY: Double
   }
   object IPosition {
     
@@ -240,14 +264,13 @@ object AngularUITree {
   /**
     * Node in list
     */
-  @js.native
   trait ITreeNode extends StObject {
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var nodes: js.Array[ITreeNode] = js.native
+    var nodes: js.Array[ITreeNode]
     
-    var title: String = js.native
+    var title: String
   }
   object ITreeNode {
     
@@ -278,7 +301,9 @@ object AngularUITree {
     * Internal representation of node in the UI
     */
   @js.native
-  trait ITreeNodeScope extends IRootScopeService {
+  trait ITreeNodeScope
+    extends StObject
+       with IRootScopeService {
     
     var node: ITreeNode = js.native
   }

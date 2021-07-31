@@ -3,23 +3,33 @@ package typings.storybookUi
 import typings.storybookAddons.typesMod.Types_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
   
   @JSImport("@storybook/ui/dist/provider", JSImport.Default)
   @js.native
-  class default () extends Provider
+  class default ()
+    extends StObject
+       with Provider {
+    
+    /* CompleteClass */
+    override def getConfig(): js.Object = js.native
+    
+    /* CompleteClass */
+    override def getElements(_type: Types_): Unit = js.native
+    
+    /* CompleteClass */
+    override def handleAPI(_api: js.Any): Unit = js.native
+  }
   
-  @js.native
   trait Provider extends StObject {
     
-    def getConfig(): js.Object = js.native
+    def getConfig(): js.Object
     
-    def getElements(_type: Types_): Unit = js.native
+    def getElements(_type: Types_): Unit
     
-    def handleAPI(_api: js.Any): Unit = js.native
+    def handleAPI(_api: js.Any): Unit
   }
   object Provider {
     

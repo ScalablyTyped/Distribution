@@ -2,7 +2,6 @@ package typings.findVersions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,21 +17,22 @@ object mod {
   //=> ['8.22.0']
   ```
   */
-  @JSImport("find-versions", JSImport.Namespace)
-  @js.native
-  def apply(stringWithVersions: String): js.Array[String] = js.native
-  @JSImport("find-versions", JSImport.Namespace)
-  @js.native
-  def apply(stringWithVersions: String, options: Options): js.Array[String] = js.native
+  @scala.inline
+  def apply(stringWithVersions: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(stringWithVersions.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(stringWithVersions: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(stringWithVersions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
+  @JSImport("find-versions", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Also match non-semver versions like `1.88`. They're coerced into semver compliant versions.
     		@default false
     		*/
-    val loose: js.UndefOr[Boolean] = js.native
+    val loose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

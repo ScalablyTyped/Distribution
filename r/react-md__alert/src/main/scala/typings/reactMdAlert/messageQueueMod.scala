@@ -11,16 +11,18 @@ import typings.reactMdAlert.useMessageQueueMod.MessageQueueOptions
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageQueueMod {
   
   object MessageQueue {
     
+    @scala.inline
+    def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTimeoutDuplicatesDefaultQueueChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/alert/types/MessageQueue", "MessageQueue")
     @js.native
-    def apply[M /* <: ToastMessage */](hasTimeoutDuplicatesDefaultQueueChildrenProps: MessageQueueProps[M]): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -60,10 +62,10 @@ object messageQueueMod {
     }
   }
   
-  @js.native
   trait MessageQueueProps[M /* <: ToastMessage */]
-    extends SnackbarProps
-       with MessageQueueOptions[M] {
+    extends StObject
+       with MessageQueueOptions[M]
+       with SnackbarProps {
     
     /**
       * The children are required in this component since the message queue relies
@@ -71,14 +73,14 @@ object messageQueueMod {
       * queue. If there are no children, the message queue will not work.
       */
     @JSName("children")
-    var children_MessageQueueProps: ReactNode = js.native
+    var children_MessageQueueProps: ReactNode
     
     /**
       * An optional function to call when the action button is clicked. This will
       * be applied to **all** toasts that appear in this message queue. You will be
       * provided the current message followed by the click event.
       */
-    var onActionClick: js.UndefOr[ActionEventHandler[M]] = js.native
+    var onActionClick: js.UndefOr[ActionEventHandler[M]] = js.undefined
   }
   object MessageQueueProps {
     
@@ -89,7 +91,7 @@ object messageQueueMod {
     }
     
     @scala.inline
-    implicit class MessageQueuePropsMutableBuilder[Self <: MessageQueueProps[_], M /* <: ToastMessage */] (val x: Self with MessageQueueProps[M]) extends AnyVal {
+    implicit class MessageQueuePropsMutableBuilder[Self <: MessageQueueProps[?], M /* <: ToastMessage */] (val x: Self & MessageQueueProps[M]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

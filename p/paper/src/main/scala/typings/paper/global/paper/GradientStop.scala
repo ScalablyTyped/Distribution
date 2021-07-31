@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -19,8 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * assignment.
   */
 class GradientStop ()
-  extends typings.paper.paper.GradientStop {
+  extends StObject
+     with typings.paper.paper.GradientStop {
   def this(color: typings.paper.paper.Color) = this()
-  def this(color: js.UndefOr[scala.Nothing], offset: Double) = this()
+  def this(color: Unit, offset: Double) = this()
   def this(color: typings.paper.paper.Color, offset: Double) = this()
+  
+  /** 
+    * The color of the gradient stop.
+    */
+  /* CompleteClass */
+  var color: typings.paper.paper.Color = js.native
+  
+  /** 
+    * The ramp-point of the gradient stop as a value between `0` and `1`.
+    */
+  /* CompleteClass */
+  var offset: Double = js.native
 }

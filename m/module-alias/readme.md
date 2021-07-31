@@ -10,9 +10,9 @@ Create aliases of directories and register custom module paths
 | ------------------ | :-------------: |
 | Full name          | module-alias |
 | Keywords           | extend, modules, node, path, resolve |
-| # releases         | 4 |
-| # dependents       | 338 |
-| # downloads        | 7856620 |
+| # releases         | 3 |
+| # dependents       | 421 |
+| # downloads        | 10757904 |
 | # stars            | 15 |
 
 ## Links

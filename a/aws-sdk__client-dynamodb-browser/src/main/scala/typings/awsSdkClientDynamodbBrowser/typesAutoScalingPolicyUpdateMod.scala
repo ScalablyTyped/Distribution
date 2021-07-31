@@ -4,23 +4,21 @@ import typings.awsSdkClientDynamodbBrowser.typesAutoScalingTargetTrackingScaling
 import typings.awsSdkClientDynamodbBrowser.typesAutoScalingTargetTrackingScalingPolicyConfigurationUpdateMod.UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAutoScalingPolicyUpdateMod {
   
-  @js.native
   trait AutoScalingPolicyUpdate extends StObject {
     
     /**
       * <p>The name of the scaling policy.</p>
       */
-    var PolicyName: js.UndefOr[String] = js.native
+    var PolicyName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Represents a target tracking scaling policy configuration.</p>
       */
-    var TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = js.native
+    var TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate
   }
   object AutoScalingPolicyUpdate {
     
@@ -46,14 +44,15 @@ object typesAutoScalingPolicyUpdateMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAutoScalingPolicyUpdate extends AutoScalingPolicyUpdate {
+  trait UnmarshalledAutoScalingPolicyUpdate
+    extends StObject
+       with AutoScalingPolicyUpdate {
     
     /**
       * <p>Represents a target tracking scaling policy configuration.</p>
       */
     @JSName("TargetTrackingScalingPolicyConfiguration")
-    var TargetTrackingScalingPolicyConfiguration_UnmarshalledAutoScalingPolicyUpdate: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationUpdate = js.native
+    var TargetTrackingScalingPolicyConfiguration_UnmarshalledAutoScalingPolicyUpdate: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationUpdate
   }
   object UnmarshalledAutoScalingPolicyUpdate {
     

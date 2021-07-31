@@ -11,8 +11,8 @@ filter in array tree
 | Full name          | array-tree-filter |
 | Keywords           | array, tree, filter |
 | # releases         | 0 |
-| # dependents       | 359 |
-| # downloads        | 17527682 |
+| # dependents       | 410 |
+| # downloads        | 21723581 |
 | # stars            | 2 |
 
 ## Links

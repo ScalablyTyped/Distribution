@@ -2,21 +2,21 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElementLocation extends StartTagLocation {
+trait ElementLocation
+  extends StObject
+     with StartTagLocation {
   
   /**
     * Element's end tag location info.
     */
-  var endTag: Location = js.native
+  var endTag: Location
   
   /**
     * Element's start tag location info.
     */
-  var startTag: StartTagLocation = js.native
+  var startTag: StartTagLocation
 }
 object ElementLocation {
   

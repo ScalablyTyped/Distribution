@@ -2,43 +2,41 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePortalRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The AWS administrator's contact email address.
     */
-  var portalContactEmail: Email = js.native
+  var portalContactEmail: Email
   
   /**
     * A new description for the portal.
     */
-  var portalDescription: js.UndefOr[Description] = js.native
+  var portalDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the portal to update.
     */
-  var portalId: ID = js.native
+  var portalId: ID
   
-  var portalLogoImage: js.UndefOr[Image] = js.native
+  var portalLogoImage: js.UndefOr[Image] = js.undefined
   
   /**
     * A new friendly name for the portal.
     */
-  var portalName: Name = js.native
+  var portalName: Name
   
   /**
     * The ARN of a service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
     */
-  var roleArn: ARN = js.native
+  var roleArn: ARN
 }
 object UpdatePortalRequest {
   

@@ -2,7 +2,6 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,37 +11,53 @@ sealed trait TfvcVersionType extends StObject
 object TfvcVersionType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TfvcVersionType with Double] = js.native
+  def apply(value: Double): js.UndefOr[TfvcVersionType & Double] = js.native
   
   @js.native
-  sealed trait Change extends TfvcVersionType
-  /* 3 */ val Change: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Change with Double = js.native
+  sealed trait Change
+    extends StObject
+       with TfvcVersionType
+  /* 3 */ val Change: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Change & Double = js.native
   
   @js.native
-  sealed trait Changeset extends TfvcVersionType
-  /* 1 */ val Changeset: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Changeset with Double = js.native
+  sealed trait Changeset
+    extends StObject
+       with TfvcVersionType
+  /* 1 */ val Changeset: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Changeset & Double = js.native
   
   @js.native
-  sealed trait Date extends TfvcVersionType
-  /* 4 */ val Date: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Date with Double = js.native
+  sealed trait Date
+    extends StObject
+       with TfvcVersionType
+  /* 4 */ val Date: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Date & Double = js.native
   
   @js.native
-  sealed trait Latest extends TfvcVersionType
-  /* 5 */ val Latest: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Latest with Double = js.native
+  sealed trait Latest
+    extends StObject
+       with TfvcVersionType
+  /* 5 */ val Latest: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Latest & Double = js.native
   
   @js.native
-  sealed trait MergeSource extends TfvcVersionType
-  /* 7 */ val MergeSource: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.MergeSource with Double = js.native
+  sealed trait MergeSource
+    extends StObject
+       with TfvcVersionType
+  /* 7 */ val MergeSource: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.MergeSource & Double = js.native
   
   @js.native
-  sealed trait None extends TfvcVersionType
-  /* 0 */ val None: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.None with Double = js.native
+  sealed trait None
+    extends StObject
+       with TfvcVersionType
+  /* 0 */ val None: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.None & Double = js.native
   
   @js.native
-  sealed trait Shelveset extends TfvcVersionType
-  /* 2 */ val Shelveset: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Shelveset with Double = js.native
+  sealed trait Shelveset
+    extends StObject
+       with TfvcVersionType
+  /* 2 */ val Shelveset: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Shelveset & Double = js.native
   
   @js.native
-  sealed trait Tip extends TfvcVersionType
-  /* 6 */ val Tip: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Tip with Double = js.native
+  sealed trait Tip
+    extends StObject
+       with TfvcVersionType
+  /* 6 */ val Tip: typings.vsoNodeApi.tfvcInterfacesMod.TfvcVersionType.Tip & Double = js.native
 }

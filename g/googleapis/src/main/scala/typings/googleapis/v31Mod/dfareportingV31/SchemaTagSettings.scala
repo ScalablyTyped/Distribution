@@ -2,24 +2,22 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dynamic and Image Tag Settings.
   */
-@js.native
 trait SchemaTagSettings extends StObject {
   
   /**
     * Whether dynamic floodlight tags are enabled.
     */
-  var dynamicTagEnabled: js.UndefOr[Boolean] = js.native
+  var dynamicTagEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether image tags are enabled.
     */
-  var imageTagEnabled: js.UndefOr[Boolean] = js.native
+  var imageTagEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTagSettings {
   

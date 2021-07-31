@@ -8,51 +8,25 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Called extends StObject {
-    
-    var called: js.UndefOr[Boolean] = js.native
-  }
-  object Called {
-    
-    @scala.inline
-    def apply(): Called = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Called]
-    }
-    
-    @scala.inline
-    implicit class CalledMutableBuilder[Self <: Called] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCalledUndefined: Self = StObject.set(x, "called", js.undefined)
-    }
-  }
-  
-  @js.native
   trait Name extends StObject {
     
     /** An event name on which we will subscribe. */
-    var name: Validator[String] = js.native
+    var name: Validator[String]
     
     /** An event handler or array of event handlers. */
     var on: Validator[
-        (js.Function1[/* repeated */ _, _]) | (js.Array[(js.Function1[/* repeated */ _, _]) | Null])
-      ] = js.native
+        (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
+      ]
     
     /** A name of pool. */
-    var pool: Requireable[String] = js.native
+    var pool: Requireable[String]
     
     /** A DOM element on which we will subscribe. */
-    var target: Requireable[js.Object] = js.native
+    var target: Requireable[js.Object]
   }
   object Name {
     
@@ -60,7 +34,7 @@ object anon {
     def apply(
       name: Validator[String],
       on: Validator[
-          (js.Function1[/* repeated */ _, _]) | (js.Array[(js.Function1[/* repeated */ _, _]) | Null])
+          (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
         ],
       pool: Requireable[String],
       target: Requireable[js.Object]
@@ -78,7 +52,7 @@ object anon {
       @scala.inline
       def setOn(
         value: Validator[
-              (js.Function1[/* repeated */ _, _]) | (js.Array[(js.Function1[/* repeated */ _, _]) | Null])
+              (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
             ]
       ): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
@@ -90,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pool extends StObject {
     
-    var pool: String = js.native
+    var pool: String
     
-    var target: String = js.native
+    var target: String
   }
   object Pool {
     
@@ -117,16 +90,15 @@ object anon {
   }
   
   /* Inlined std.Readonly<@semantic-ui-react/event-stack.@semantic-ui-react/event-stack/lib/types/EventStack.EventStackProps> */
-  @js.native
   trait ReadonlyEventStackProps extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val on: InputEventListener = js.native
+    val on: InputEventListener
     
-    val pool: js.UndefOr[String] = js.native
+    val pool: js.UndefOr[String] = js.undefined
     
-    val target: js.UndefOr[InputTargetElement] = js.native
+    val target: js.UndefOr[InputTargetElement] = js.undefined
   }
   object ReadonlyEventStackProps {
     

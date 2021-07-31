@@ -2,17 +2,15 @@ package typings.firefoxWebextBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var rangeData: js.UndefOr[js.Array[EndOffset]] = js.native
+  var rangeData: js.UndefOr[js.Array[EndOffset]] = js.undefined
   
-  var rectData: js.UndefOr[js.Array[RectsAndTexts]] = js.native
+  var rectData: js.UndefOr[js.Array[RectsAndTexts]] = js.undefined
 }
 object Count {
   

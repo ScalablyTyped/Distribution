@@ -5,7 +5,6 @@ import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -22,33 +21,35 @@ object providerMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ProviderArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
+    def this(name: String, args: Unit, opts: ResourceOptions) = this()
     def this(name: String, args: ProviderArgs, opts: ResourceOptions) = this()
   }
   /* static members */
   object Provider {
     
+    @JSImport("@pulumi/kubernetes/provider", "Provider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns true if the given object is an instance of Provider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/provider", "Provider.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean]
   }
   
-  @js.native
   trait ProviderArgs extends StObject {
     
     /**
       * If present, the name of the kubeconfig cluster to use.
       */
-    val cluster: js.UndefOr[Input[String]] = js.native
+    val cluster: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If present, the name of the kubeconfig context to use.
       */
-    val context: js.UndefOr[Input[String]] = js.native
+    val context: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * BETA FEATURE - If present and set to true, enable server-side diff calculations.
@@ -58,12 +59,12 @@ object providerMod {
       * 1. This `enableDryRun` parameter.
       * 2. The `PULUMI_K8S_ENABLE_DRY_RUN` environment variable.
       */
-    val enableDryRun: js.UndefOr[Input[Boolean]] = js.native
+    val enableDryRun: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The contents of a kubeconfig file or the path to a kubeconfig file. If this is set, this config will be used instead of $KUBECONFIG.
       */
-    val kubeconfig: js.UndefOr[Input[String]] = js.native
+    val kubeconfig: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If present, the default namespace to use. This flag is ignored for cluster-scoped resources.
@@ -73,7 +74,7 @@ object providerMod {
       * 2. This `namespace` parameter.
       * 3. `namespace` set for the active context in the kubeconfig.
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * BETA FEATURE - If present, render resource manifests to this directory. In this mode, resources will not
@@ -85,7 +86,7 @@ object providerMod {
       * and may result in an error if they are referenced by other resources. Also note that any secret values
       * used in these resources will be rendered in plaintext to the resulting YAML.
       */
-    val renderYamlToDirectory: js.UndefOr[Input[String]] = js.native
+    val renderYamlToDirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If present and set to true, suppress apiVersion deprecation warnings from the CLI.
@@ -94,7 +95,7 @@ object providerMod {
       * 1. This `suppressDeprecationWarnings` parameter.
       * 2. The `PULUMI_K8S_SUPPRESS_DEPRECATION_WARNINGS` environment variable.
       */
-    val suppressDeprecationWarnings: js.UndefOr[Input[Boolean]] = js.native
+    val suppressDeprecationWarnings: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ProviderArgs {
     

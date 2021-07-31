@@ -2,35 +2,33 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WalkContext extends StObject {
   
-  var atrule: Atrule | Null = js.native
+  var atrule: Atrule | Null
   
-  var atrulePrelude: AtrulePrelude | Null = js.native
+  var atrulePrelude: AtrulePrelude | Null
   
-  var block: Block | Null = js.native
+  var block: Block | Null
   
-  var declaration: Declaration | Null = js.native
+  var declaration: Declaration | Null
   
-  var function: FunctionNode | PseudoClassSelector | PseudoElementSelector | Null = js.native
+  var function: FunctionNode | PseudoClassSelector | PseudoElementSelector | Null
   
-  var root: CssNode = js.native
+  var root: CssNode
   
-  var rule: Rule | Null = js.native
+  var rule: Rule | Null
   
-  var selector: SelectorList | Null = js.native
+  var selector: SelectorList | Null
   
-  var stylesheet: StyleSheet | Null = js.native
+  var stylesheet: StyleSheet | Null
 }
 object WalkContext {
   
   @scala.inline
   def apply(root: CssNode): WalkContext = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any], atrule = null, atrulePrelude = null, block = null, declaration = null, function = null, rule = null, selector = null, stylesheet = null)
     __obj.asInstanceOf[WalkContext]
   }
   

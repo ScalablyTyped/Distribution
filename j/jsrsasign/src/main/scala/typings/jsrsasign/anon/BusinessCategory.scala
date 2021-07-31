@@ -2,47 +2,45 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessCategory extends StObject {
   
-  var C: String = js.native
+  var C: String
   
-  var CN: String = js.native
+  var CN: String
   
-  var DC: String = js.native
+  var DC: String
   
-  var DN: String = js.native
+  var DN: String
   
-  var E: String = js.native
+  var E: String
   
-  var L: String = js.native
+  var L: String
   
-  var O: String = js.native
+  var O: String
   
-  var OU: String = js.native
+  var OU: String
   
-  var SN: String = js.native
+  var SN: String
   
-  var ST: String = js.native
+  var ST: String
   
-  var STREET: String = js.native
+  var STREET: String
   
-  var UID: String = js.native
+  var UID: String
   
-  var businessCategory: String = js.native
+  var businessCategory: String
   
-  var jurisdictionOfIncorporationC: String = js.native
+  var jurisdictionOfIncorporationC: String
   
-  var jurisdictionOfIncorporationL: String = js.native
+  var jurisdictionOfIncorporationL: String
   
-  var jurisdictionOfIncorporationSP: String = js.native
+  var jurisdictionOfIncorporationSP: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var serialNumber: String = js.native
+  var serialNumber: String
 }
 object BusinessCategory {
   

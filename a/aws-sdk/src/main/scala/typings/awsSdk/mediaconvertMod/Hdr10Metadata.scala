@@ -2,71 +2,69 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hdr10Metadata extends StObject {
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var BluePrimaryX: js.UndefOr[integerMin0Max50000] = js.native
+  var BluePrimaryX: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var BluePrimaryY: js.UndefOr[integerMin0Max50000] = js.native
+  var BluePrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var GreenPrimaryX: js.UndefOr[integerMin0Max50000] = js.native
+  var GreenPrimaryX: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var GreenPrimaryY: js.UndefOr[integerMin0Max50000] = js.native
+  var GreenPrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * Maximum light level among all samples in the coded video sequence, in units of candelas per square meter.  This setting doesn't have a default value; you must specify a value that is suitable for the content.
     */
-  var MaxContentLightLevel: js.UndefOr[integerMin0Max65535] = js.native
+  var MaxContentLightLevel: js.UndefOr[integerMin0Max65535] = js.undefined
   
   /**
     * Maximum average light level of any frame in the coded video sequence, in units of candelas per square meter. This setting doesn't have a default value; you must specify a value that is suitable for the content.
     */
-  var MaxFrameAverageLightLevel: js.UndefOr[integerMin0Max65535] = js.native
+  var MaxFrameAverageLightLevel: js.UndefOr[integerMin0Max65535] = js.undefined
   
   /**
     * Nominal maximum mastering display luminance in units of of 0.0001 candelas per square meter.
     */
-  var MaxLuminance: js.UndefOr[integerMin0Max2147483647] = js.native
+  var MaxLuminance: js.UndefOr[integerMin0Max2147483647] = js.undefined
   
   /**
     * Nominal minimum mastering display luminance in units of of 0.0001 candelas per square meter
     */
-  var MinLuminance: js.UndefOr[integerMin0Max2147483647] = js.native
+  var MinLuminance: js.UndefOr[integerMin0Max2147483647] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var RedPrimaryX: js.UndefOr[integerMin0Max50000] = js.native
+  var RedPrimaryX: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var RedPrimaryY: js.UndefOr[integerMin0Max50000] = js.native
+  var RedPrimaryY: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var WhitePointX: js.UndefOr[integerMin0Max50000] = js.native
+  var WhitePointX: js.UndefOr[integerMin0Max50000] = js.undefined
   
   /**
     * HDR Master Display Information must be provided by a color grader, using color grading tools. Range is 0 to 50,000, each increment represents 0.00002 in CIE1931 color coordinate. Note that this setting is not for color correction.
     */
-  var WhitePointY: js.UndefOr[integerMin0Max50000] = js.native
+  var WhitePointY: js.UndefOr[integerMin0Max50000] = js.undefined
 }
 object Hdr10Metadata {
   

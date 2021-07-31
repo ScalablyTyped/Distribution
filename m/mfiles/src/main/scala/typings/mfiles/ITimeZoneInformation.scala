@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITimeZoneInformation extends StObject {
   
-  def LoadTimeZoneByName(TimeZoneName: String): Unit = js.native
+  def LoadTimeZoneByName(TimeZoneName: String): Unit
   
-  def LoadWithCurrentTimeZone(): Unit = js.native
+  def LoadWithCurrentTimeZone(): Unit
   
-  val StandardName: String = js.native
+  val StandardName: String
 }
 object ITimeZoneInformation {
   

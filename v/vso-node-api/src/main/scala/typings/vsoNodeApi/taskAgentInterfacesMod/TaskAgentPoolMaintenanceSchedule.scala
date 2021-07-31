@@ -2,36 +2,34 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentPoolMaintenanceSchedule extends StObject {
   
   /**
     * Days for a build (flags enum for days of the week)
     */
-  var daysToBuild: TaskAgentPoolMaintenanceScheduleDays = js.native
+  var daysToBuild: TaskAgentPoolMaintenanceScheduleDays
   
   /**
     * The Job Id of the Scheduled job that will queue the pool maintenance job.
     */
-  var scheduleJobId: String = js.native
+  var scheduleJobId: String
   
   /**
     * Local timezone hour to start
     */
-  var startHours: Double = js.native
+  var startHours: Double
   
   /**
     * Local timezone minute to start
     */
-  var startMinutes: Double = js.native
+  var startMinutes: Double
   
   /**
     * Time zone of the build schedule (string representation of the time zone id)
     */
-  var timeZoneId: String = js.native
+  var timeZoneId: String
 }
 object TaskAgentPoolMaintenanceSchedule {
   

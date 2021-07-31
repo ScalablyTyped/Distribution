@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationErrors extends StObject {
   
   /** The list of errors encountered while processing this operation. */
-  var errors: js.UndefOr[js.Array[OperationError]] = js.native
+  var errors: js.UndefOr[js.Array[OperationError]] = js.undefined
   
   /** This is always *sql#operationErrors*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object OperationErrors {
   

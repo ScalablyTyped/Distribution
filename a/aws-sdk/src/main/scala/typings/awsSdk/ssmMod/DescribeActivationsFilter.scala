@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeActivationsFilter extends StObject {
   
   /**
     * The name of the filter.
     */
-  var FilterKey: js.UndefOr[DescribeActivationsFilterKeys] = js.native
+  var FilterKey: js.UndefOr[DescribeActivationsFilterKeys] = js.undefined
   
   /**
     * The filter values.
     */
-  var FilterValues: js.UndefOr[StringList] = js.native
+  var FilterValues: js.UndefOr[StringList] = js.undefined
 }
 object DescribeActivationsFilter {
   

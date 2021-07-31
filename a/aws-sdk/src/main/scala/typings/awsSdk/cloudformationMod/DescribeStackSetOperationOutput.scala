@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackSetOperationOutput extends StObject {
   
   /**
     * The specified stack set operation.
     */
-  var StackSetOperation: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetOperation] = js.native
+  var StackSetOperation: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetOperation] = js.undefined
 }
 object DescribeStackSetOperationOutput {
   

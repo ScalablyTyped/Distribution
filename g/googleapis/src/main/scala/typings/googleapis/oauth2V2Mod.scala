@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oauth2V2Mod {
@@ -56,7 +55,7 @@ object oauth2V2Mod {
         */
       def getCertForOpenIdConnect(): GaxiosPromise[SchemaJwk] = js.native
       def getCertForOpenIdConnect(callback: BodyResponseCallback[SchemaJwk]): Unit = js.native
-      def getCertForOpenIdConnect(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJwk] = js.native
+      def getCertForOpenIdConnect(params: Unit, options: MethodOptions): GaxiosPromise[SchemaJwk] = js.native
       def getCertForOpenIdConnect(params: ParamsGetcertforopenidconnect): GaxiosPromise[SchemaJwk] = js.native
       def getCertForOpenIdConnect(params: ParamsGetcertforopenidconnect, callback: BodyResponseCallback[SchemaJwk]): Unit = js.native
       def getCertForOpenIdConnect(
@@ -86,7 +85,7 @@ object oauth2V2Mod {
         */
       def tokeninfo(): GaxiosPromise[SchemaTokeninfo] = js.native
       def tokeninfo(callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
-      def tokeninfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTokeninfo] = js.native
+      def tokeninfo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTokeninfo] = js.native
       def tokeninfo(params: ParamsTokeninfo): GaxiosPromise[SchemaTokeninfo] = js.native
       def tokeninfo(params: ParamsTokeninfo, callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
       def tokeninfo(
@@ -119,7 +118,7 @@ object oauth2V2Mod {
         */
       def get(): GaxiosPromise[SchemaUserinfoplus] = js.native
       def get(callback: BodyResponseCallback[SchemaUserinfoplus]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserinfoplus] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserinfoplus] = js.native
       def get(params: ParamsResourceUserinfoGet): GaxiosPromise[SchemaUserinfoplus] = js.native
       def get(params: ParamsResourceUserinfoGet, callback: BodyResponseCallback[SchemaUserinfoplus]): Unit = js.native
       def get(
@@ -166,7 +165,7 @@ object oauth2V2Mod {
         */
       def get(): GaxiosPromise[SchemaUserinfoplus] = js.native
       def get(callback: BodyResponseCallback[SchemaUserinfoplus]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserinfoplus] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserinfoplus] = js.native
       def get(params: ParamsResourceUserinfoV2MeGet): GaxiosPromise[SchemaUserinfoplus] = js.native
       def get(params: ParamsResourceUserinfoV2MeGet, callback: BodyResponseCallback[SchemaUserinfoplus]): Unit = js.native
       def get(
@@ -182,16 +181,17 @@ object oauth2V2Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v2 = js.native
+      var version: v2
     }
     object Options {
       
       @scala.inline
-      def apply(version: v2): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v2")
         __obj.asInstanceOf[Options]
       }
       
@@ -203,13 +203,14 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
-    trait ParamsGetcertforopenidconnect extends StandardParameters {
+    trait ParamsGetcertforopenidconnect
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
     }
     object ParamsGetcertforopenidconnect {
       
@@ -230,13 +231,14 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUserinfoGet extends StandardParameters {
+    trait ParamsResourceUserinfoGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
     }
     object ParamsResourceUserinfoGet {
       
@@ -257,13 +259,14 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUserinfoV2MeGet extends StandardParameters {
+    trait ParamsResourceUserinfoV2MeGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
     }
     object ParamsResourceUserinfoV2MeGet {
       
@@ -284,28 +287,29 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
-    trait ParamsTokeninfo extends StandardParameters {
+    trait ParamsTokeninfo
+      extends StObject
+         with StandardParameters {
       
       /**
         *
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         *
         */
-      var id_token: js.UndefOr[String] = js.native
+      var id_token: js.UndefOr[String] = js.undefined
       
       /**
         *
         */
-      var token_handle: js.UndefOr[String] = js.native
+      var token_handle: js.UndefOr[String] = js.undefined
     }
     object ParamsTokeninfo {
       
@@ -344,10 +348,9 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
     trait SchemaJwk extends StObject {
       
-      var keys: js.UndefOr[js.Array[Alg]] = js.native
+      var keys: js.UndefOr[js.Array[Alg]] = js.undefined
     }
     object SchemaJwk {
       
@@ -371,56 +374,55 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
     trait SchemaTokeninfo extends StObject {
       
       /**
         * The access type granted with this token. It can be offline or online.
         */
-      var access_type: js.UndefOr[String] = js.native
+      var access_type: js.UndefOr[String] = js.undefined
       
       /**
         * Who is the intended audience for this token. In general the same as
         * issued_to.
         */
-      var audience: js.UndefOr[String] = js.native
+      var audience: js.UndefOr[String] = js.undefined
       
       /**
         * The email address of the user. Present only if the email scope is present
         * in the request.
         */
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
       /**
         * The expiry time of the token, as number of seconds left until expiry.
         */
-      var expires_in: js.UndefOr[Double] = js.native
+      var expires_in: js.UndefOr[Double] = js.undefined
       
       /**
         * To whom was the token issued to. In general the same as audience.
         */
-      var issued_to: js.UndefOr[String] = js.native
+      var issued_to: js.UndefOr[String] = js.undefined
       
       /**
         * The space separated list of scopes granted to this token.
         */
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
       /**
         * The token handle associated with this token.
         */
-      var token_handle: js.UndefOr[String] = js.native
+      var token_handle: js.UndefOr[String] = js.undefined
       
       /**
         * The obfuscated user id.
         */
-      var user_id: js.UndefOr[String] = js.native
+      var user_id: js.UndefOr[String] = js.undefined
       
       /**
         * Boolean flag which is true if the email address is verified. Present only
         * if the email scope is present in the request.
         */
-      var verified_email: js.UndefOr[Boolean] = js.native
+      var verified_email: js.UndefOr[Boolean] = js.undefined
     }
     object SchemaTokeninfo {
       
@@ -489,64 +491,63 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
     trait SchemaUserinfoplus extends StObject {
       
       /**
         * The user&#39;s email address.
         */
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
       /**
         * The user&#39;s last name.
         */
-      var family_name: js.UndefOr[String] = js.native
+      var family_name: js.UndefOr[String] = js.undefined
       
       /**
         * The user&#39;s gender.
         */
-      var gender: js.UndefOr[String] = js.native
+      var gender: js.UndefOr[String] = js.undefined
       
       /**
         * The user&#39;s first name.
         */
-      var given_name: js.UndefOr[String] = js.native
+      var given_name: js.UndefOr[String] = js.undefined
       
       /**
         * The hosted domain e.g. example.com if the user is Google apps user.
         */
-      var hd: js.UndefOr[String] = js.native
+      var hd: js.UndefOr[String] = js.undefined
       
       /**
         * The obfuscated ID of the user.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * URL of the profile page.
         */
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
       /**
         * The user&#39;s preferred locale.
         */
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
       /**
         * The user&#39;s full name.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * URL of the user&#39;s picture image.
         */
-      var picture: js.UndefOr[String] = js.native
+      var picture: js.UndefOr[String] = js.undefined
       
       /**
         * Boolean flag which is true if the email address is verified. Always
         * verified because we only return the user&#39;s primary email address.
         */
-      var verified_email: js.UndefOr[Boolean] = js.native
+      var verified_email: js.UndefOr[Boolean] = js.undefined
     }
     object SchemaUserinfoplus {
       
@@ -627,46 +628,45 @@ object oauth2V2Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,9 +16,8 @@ object mod {
     * @param {FetchCallback} callback Callback function
     * @returns {undefined}
     */
-  @JSImport("@protobufjs/fetch", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, options: FetchOptions, callback: FetchCallback): Unit = js.native
+  @scala.inline
+  def apply(filename: String, options: FetchOptions, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Fetches the contents of a file.
     * @name util.fetch
@@ -29,9 +27,8 @@ object mod {
     * @returns {Promise<string|Uint8Array>} Promise
     * @variation 3
     */
-  @JSImport("@protobufjs/fetch", JSImport.Namespace)
-  @js.native
-  def apply(path: String): js.Promise[String | Uint8Array] = js.native
+  @scala.inline
+  def apply(path: String): js.Promise[String | Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Uint8Array]]
   /**
     * Fetches the contents of a file.
     * @name util.fetch
@@ -41,12 +38,14 @@ object mod {
     * @returns {undefined}
     * @variation 2
     */
+  @scala.inline
+  def apply(path: String, callback: FetchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: String, options: FetchOptions): js.Promise[String | Uint8Array] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Uint8Array]]
+  
   @JSImport("@protobufjs/fetch", JSImport.Namespace)
   @js.native
-  def apply(path: String, callback: FetchCallback): Unit = js.native
-  @JSImport("@protobufjs/fetch", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: FetchOptions): js.Promise[String | Uint8Array] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Node-style callback as used by {@link util.fetch}.
@@ -65,12 +64,11 @@ object mod {
     * @property {boolean} [binary=false] Whether expecting a binary response
     * @property {boolean} [xhr=false] If `true`, forces the use of XMLHttpRequest
     */
-  @js.native
   trait FetchOptions extends StObject {
     
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
-    var xhr: js.UndefOr[Boolean] = js.native
+    var xhr: js.UndefOr[Boolean] = js.undefined
   }
   object FetchOptions {
     

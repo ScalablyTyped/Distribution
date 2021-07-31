@@ -12,10 +12,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceMeasurement2DViewModelProperties extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait DistanceMeasurement2DViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#geodesicDistanceThreshold)
     */
-  var geodesicDistanceThreshold: js.UndefOr[Double] = js.native
+  var geodesicDistanceThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the distance values.
@@ -32,7 +30,7 @@ trait DistanceMeasurement2DViewModelProperties extends StObject {
     */
   var unit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of available units and unit systems (imperial, metric) for displaying the distance values.
@@ -43,14 +41,14 @@ trait DistanceMeasurement2DViewModelProperties extends StObject {
     js.Array[
       metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
 }
 object DistanceMeasurement2DViewModelProperties {
   

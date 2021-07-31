@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -15,10 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Abstract Deferrable interface. Use this if you want to create an interface that has a value any of the
   * Deferrables that Sequelize supports.
   */
-@js.native
 trait DeferrableAbstract extends StObject {
   
-  def toSql(): String = js.native
+  def toSql(): String
 }
 object DeferrableAbstract {
   

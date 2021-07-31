@@ -3,13 +3,13 @@ package typings.c3.mod
 import typings.c3.anon.Interval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YTickConfigurationWithTime extends YTickConfiguration {
+trait YTickConfigurationWithTime
+  extends StObject
+     with YTickConfiguration {
   
-  var time: js.UndefOr[Interval] = js.native
+  var time: js.UndefOr[Interval] = js.undefined
 }
 object YTickConfigurationWithTime {
   

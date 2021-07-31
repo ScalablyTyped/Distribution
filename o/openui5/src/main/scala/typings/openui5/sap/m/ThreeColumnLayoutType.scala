@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ThreeColumnLayoutType extends StObject
 object ThreeColumnLayoutType extends StObject {
   
   @js.native
-  sealed trait EndColumnEmphasized extends ThreeColumnLayoutType
+  sealed trait EndColumnEmphasized
+    extends StObject
+       with ThreeColumnLayoutType
   
   @js.native
-  sealed trait MidColumnEmphasized extends ThreeColumnLayoutType
+  sealed trait MidColumnEmphasized
+    extends StObject
+       with ThreeColumnLayoutType
 }

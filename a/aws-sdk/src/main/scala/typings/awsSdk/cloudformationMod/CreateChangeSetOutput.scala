@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChangeSetOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the change set.
     */
-  var Id: js.UndefOr[ChangeSetId] = js.native
+  var Id: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
     * The unique ID of the stack.
     */
-  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
 }
 object CreateChangeSetOutput {
   

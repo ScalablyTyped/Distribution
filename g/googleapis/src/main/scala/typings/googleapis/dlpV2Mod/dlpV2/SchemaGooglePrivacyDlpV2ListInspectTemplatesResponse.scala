@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListInspectTemplates.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse extends StObject {
   
   /**
     * List of inspectTemplates, up to page_size in ListInspectTemplatesRequest.
     */
-  var inspectTemplates: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectTemplate]] = js.native
+  var inspectTemplates: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InspectTemplate]] = js.undefined
   
   /**
     * If the next page is available then the next page token to be used in
     * following ListInspectTemplates request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListInspectTemplatesResponse {
   

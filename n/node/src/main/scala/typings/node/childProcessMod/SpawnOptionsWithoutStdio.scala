@@ -3,14 +3,14 @@ package typings.node.childProcessMod
 import typings.node.nodeStrings.pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpawnOptionsWithoutStdio extends SpawnOptions {
+trait SpawnOptionsWithoutStdio
+  extends StObject
+     with SpawnOptions {
   
   @JSName("stdio")
-  var stdio_SpawnOptionsWithoutStdio: js.UndefOr[pipe | (js.Array[js.UndefOr[Null | pipe]])] = js.native
+  var stdio_SpawnOptionsWithoutStdio: js.UndefOr[pipe | (js.Array[js.UndefOr[Null | pipe]])] = js.undefined
 }
 object SpawnOptionsWithoutStdio {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsResponse extends StObject {
   
   /**
     * Information about the tags.
     */
-  var resourceTags: js.UndefOr[ResourceTagList] = js.native
+  var resourceTags: js.UndefOr[ResourceTagList] = js.undefined
 }
 object DescribeTagsResponse {
   

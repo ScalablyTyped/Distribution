@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the base material used for manufacturing certain objects in the 3D model. */
-@js.native
 trait Printing3DBaseMaterial extends StObject {
   
   /** Gets or sets the color of the base material. */
-  var color: Printing3DColorMaterial = js.native
+  var color: Printing3DColorMaterial
   
   /** Gets or sets the name of the base material. */
-  var name: String = js.native
+  var name: String
 }
 object Printing3DBaseMaterial {
   

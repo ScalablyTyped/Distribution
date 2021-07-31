@@ -3,13 +3,11 @@ package typings.wegameApi.anon
 import typings.wegameApi.UserGameData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var data: js.Array[UserGameData] = js.native
+  var data: js.Array[UserGameData]
 }
 object `2` {
   

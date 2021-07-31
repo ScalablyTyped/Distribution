@@ -6,47 +6,47 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMyconfigRequestaccess extends StandardParameters {
+trait ParamsResourceMyconfigRequestaccess
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The device/version ID from which to request the restrictions.
     */
-  var cpksver: js.UndefOr[String] = js.native
+  var cpksver: js.UndefOr[String] = js.undefined
   
   /**
     * The type of access license to request. If not specified, the default is
     * BOTH.
     */
-  var licenseTypes: js.UndefOr[String] = js.native
+  var licenseTypes: js.UndefOr[String] = js.undefined
   
   /**
     * ISO-639-1, ISO-3166-1 codes for message localization, i.e. en_US.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The client nonce value.
     */
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The volume to request concurrent/download restrictions for.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMyconfigRequestaccess {
   

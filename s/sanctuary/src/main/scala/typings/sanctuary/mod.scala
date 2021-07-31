@@ -22,7 +22,6 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,8 +32,9 @@ object mod extends Shortcut {
   
   type Alt[A] = Functor[A]
   
-  @js.native
-  trait Alternative[A] extends Functor[A]
+  trait Alternative[A]
+    extends StObject
+       with Functor[A]
   
   type Applicative[A] = Apply[A]
   
@@ -50,25 +50,23 @@ object mod extends Shortcut {
   
   type Comonad[A] = Extend[A]
   
-  @js.native
   trait Contravariant[A] extends StObject
   
-  @js.native
   trait Either[A, B] extends StObject {
     
-    var `@@type`: sanctuarySlashEither = js.native
+    var `@@type`: sanctuarySlashEither
   }
   object Either {
     
     @scala.inline
-    def apply[A, B](`@@type`: sanctuarySlashEither): Either[A, B] = {
+    def apply[A, B](): Either[A, B] = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("@@type")(`@@type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("@@type")("sanctuary/Either")
       __obj.asInstanceOf[Either[A, B]]
     }
     
     @scala.inline
-    implicit class EitherMutableBuilder[Self <: Either[_, _], A, B] (val x: Self with (Either[A, B])) extends AnyVal {
+    implicit class EitherMutableBuilder[Self <: Either[?, ?], A, B] (val x: Self & (Either[A, B])) extends AnyVal {
       
       @scala.inline
       def `set@@type`(value: sanctuarySlashEither): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
@@ -106,10 +104,8 @@ object mod extends Shortcut {
   
   type Fn5_[A, B, C, D, E, F] = js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]
   
-  @js.native
   trait Foldable[A] extends StObject
   
-  @js.native
   trait Functor[A] extends StObject
   
   type Integer = Double
@@ -121,12 +117,11 @@ object mod extends Shortcut {
     def apply[A](xs: js.Array[A]): Maybe[js.Array[A]] = js.native
   }
   
-  @js.native
   trait MatchObj extends StObject {
     
-    var groups: js.Array[Maybe[String]] = js.native
+    var groups: js.Array[Maybe[String]]
     
-    var `match`: String = js.native
+    var `match`: String
   }
   object MatchObj {
     
@@ -151,30 +146,30 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Maybe[A] extends StObject {
     
-    var `@@type`: sanctuarySlashMaybe = js.native
+    var `@@type`: sanctuarySlashMaybe
   }
   object Maybe {
     
     @scala.inline
-    def apply[A](`@@type`: sanctuarySlashMaybe): Maybe[A] = {
+    def apply[A](): Maybe[A] = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("@@type")(`@@type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("@@type")("sanctuary/Maybe")
       __obj.asInstanceOf[Maybe[A]]
     }
     
     @scala.inline
-    implicit class MaybeMutableBuilder[Self <: Maybe[_], A] (val x: Self with Maybe[A]) extends AnyVal {
+    implicit class MaybeMutableBuilder[Self <: Maybe[?], A] (val x: Self & Maybe[A]) extends AnyVal {
       
       @scala.inline
       def `set@@type`(value: sanctuarySlashMaybe): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait Monad[A] extends Functor[A]
+  trait Monad[A]
+    extends StObject
+       with Functor[A]
   
   type Monoid[A] = Semigroup[A]
   
@@ -186,22 +181,21 @@ object mod extends Shortcut {
   
   type Ord[A] = Setoid[A]
   
-  @js.native
   trait Pair[A, B] extends StObject {
     
-    var `@@type`: sanctuarySlashPair = js.native
+    var `@@type`: sanctuarySlashPair
   }
   object Pair {
     
     @scala.inline
-    def apply[A, B](`@@type`: sanctuarySlashPair): Pair[A, B] = {
+    def apply[A, B](): Pair[A, B] = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("@@type")(`@@type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("@@type")("sanctuary/Pair")
       __obj.asInstanceOf[Pair[A, B]]
     }
     
     @scala.inline
-    implicit class PairMutableBuilder[Self <: Pair[_, _], A, B] (val x: Self with (Pair[A, B])) extends AnyVal {
+    implicit class PairMutableBuilder[Self <: Pair[?, ?], A, B] (val x: Self & (Pair[A, B])) extends AnyVal {
       
       @scala.inline
       def `set@@type`(value: sanctuarySlashPair): Self = StObject.set(x, "@@type", value.asInstanceOf[js.Any])
@@ -217,11 +211,13 @@ object mod extends Shortcut {
   object Sanctuary {
     
     @js.native
-    trait Environment extends Static {
+    trait Environment
+      extends StObject
+         with Static {
       
       def create(opts: CheckTypes): Static = js.native
       
-      var env: js.Array[_] = js.native
+      var env: js.Array[js.Any] = js.native
       
       var unchecked: Static = js.native
     }
@@ -238,18 +234,18 @@ object mod extends Shortcut {
       
       def K[A](x: A): js.Function1[/* y */ js.Any, A] = js.native
       
-      def Left[A](x: A): Either[A, _] = js.native
+      def Left[A](x: A): Either[A, js.Any] = js.native
       
       var Maybe: TypeRep = js.native
       
-      var Nothing: Maybe[_] = js.native
+      var Nothing: Maybe[js.Any] = js.native
       
       // Pair
-      def Pair[A](a: A): js.Function1[/* b */ js.Any, typings.sanctuary.mod.Pair[A, _]] = js.native
+      def Pair[A](a: A): js.Function1[/* b */ js.Any, typings.sanctuary.mod.Pair[A, js.Any]] = js.native
       
-      def Right[A](x: A): Either[_, A] = js.native
+      def Right[A](x: A): Either[js.Any, A] = js.native
       
-      def T[A](x: A): js.Function1[/* f */ Fn[A, _], _] = js.native
+      def T[A](x: A): js.Function1[/* f */ Fn[A, js.Any], js.Any] = js.native
       
       def add(p: FiniteNumber): js.Function1[/* q */ FiniteNumber, FiniteNumber] = js.native
       
@@ -264,9 +260,9 @@ object mod extends Shortcut {
       
       def ap[A, B](p: Apply[Fn[A, B]]): js.Function1[/* q */ Apply[A], Apply[B]] = js.native
       
-      def apFirst[A](x: Apply[A]): js.Function1[/* y */ Apply[_], Apply[A]] = js.native
+      def apFirst[A](x: Apply[A]): js.Function1[/* y */ Apply[js.Any], Apply[A]] = js.native
       
-      def apSecond(x: Apply[_]): js.Function1[/* y */ Apply[_], Apply[_]] = js.native
+      def apSecond(x: Apply[js.Any]): js.Function1[/* y */ Apply[js.Any], Apply[js.Any]] = js.native
       
       //  Array
       //  TODO: Fantasyland overloads, non-curried versions
@@ -275,7 +271,10 @@ object mod extends Shortcut {
       //  List
       def array[A, B](p: B): js.Function1[/* q */ Fn2[A, js.Array[A], B], js.Function1[/* r */ js.Array[A], B]] = js.native
       
-      def bimap[A, B](p: Fn[A, B]): js.Function1[/* q */ Fn[_, _], js.Function1[/* r */ Bifunctor[A, _], Bifunctor[B, _]]] = js.native
+      def bimap[A, B](p: Fn[A, B]): js.Function1[
+            /* q */ Fn[js.Any, js.Any], 
+            js.Function1[/* r */ Bifunctor[A, js.Any], Bifunctor[B, js.Any]]
+          ] = js.native
       
       def boolean[A](p: A): js.Function1[/* q */ A, js.Function1[/* b */ Boolean, A]] = js.native
       
@@ -291,8 +290,8 @@ object mod extends Shortcut {
       def complement[A](p: Predicate[A]): Predicate[A] = js.native
       
       //  Composition
-      def compose[B, C](f: Fn[B, C]): js.Function1[/* g */ Fn[_, B], Fn[_, C]] = js.native
-      def compose[B, C](x: Semigroupoid[B, C]): js.Function1[/* y */ Semigroupoid[_, B], Semigroupoid[_, C]] = js.native
+      def compose[B, C](f: Fn[B, C]): js.Function1[/* g */ Fn[js.Any, B], Fn[js.Any, C]] = js.native
+      def compose[B, C](x: Semigroupoid[B, C]): js.Function1[/* y */ Semigroupoid[js.Any, B], Semigroupoid[js.Any, C]] = js.native
       
       def concat(x: String): js.Function1[/* y */ String, String] = js.native
       def concat[A](x: js.Array[A]): js.Function1[/* y */ js.Array[A], js.Array[A]] = js.native
@@ -323,13 +322,13 @@ object mod extends Shortcut {
       def duplicate[A](comonad: Maybe[A]): Maybe[Maybe[A]] = js.native
       def duplicate[A, B](comonad: Pair[A, B]): Pair[A, Pair[A, B]] = js.native
       
-      def either[A, C](p: Fn[A, C]): js.Function1[/* q */ Fn[_, C], js.Function1[/* r */ Either[A, _], C]] = js.native
+      def either[A, C](p: Fn[A, C]): js.Function1[/* q */ Fn[js.Any, C], js.Function1[/* r */ Either[A, js.Any], C]] = js.native
       
-      def eitherToMaybe[B](p: Either[_, B]): Maybe[B] = js.native
+      def eitherToMaybe[B](p: Either[js.Any, B]): Maybe[B] = js.native
       
       def elem[A](p: A): js.Function1[/* q */ Foldable[A] | StrMap[A] | js.Array[A], Boolean] = js.native
       
-      def empty(p: TypeRep): Monoid[_] = js.native
+      def empty(p: TypeRep): Monoid[js.Any] = js.native
       
       def encase[E, A, B](throwing: Fn[A, B]): js.Function1[/* a */ A, Either[E, B]] = js.native
       
@@ -346,23 +345,23 @@ object mod extends Shortcut {
       
       def flip[A, B, C](f: Fn2[A, B, C]): Fn2[B, A, C] = js.native
       
-      def foldMap[A, M](t: TypeRep): js.Function1[/* f */ Fn[_, _], js.Function1[/* g */ Foldable[_], _]] = js.native
+      def foldMap[A, M](t: TypeRep): js.Function1[/* f */ Fn[js.Any, js.Any], js.Function1[/* g */ Foldable[js.Any], js.Any]] = js.native
       
-      def fromEither[B](p: B): js.Function1[/* q */ Either[_, B], B] = js.native
+      def fromEither[B](p: B): js.Function1[/* q */ Either[js.Any, B], B] = js.native
       
-      def fromLeft[A](p: A): js.Function1[/* q */ Either[A, _], A] = js.native
+      def fromLeft[A](p: A): js.Function1[/* q */ Either[A, js.Any], A] = js.native
       
       def fromMaybe[A](p: A): js.Function1[/* q */ Maybe[A], A] = js.native
       
       def fromMaybe_[A](p: Thunk[A]): js.Function1[/* q */ Maybe[A], A] = js.native
       
-      def fromRight[B](p: B): js.Function1[/* q */ Either[_, B], B] = js.native
+      def fromRight[B](p: B): js.Function1[/* q */ Either[js.Any, B], B] = js.native
       
       def fst[A, B](p: Pair[A, B]): A = js.native
       
-      def get(p: Predicate[_]): js.Function1[/* q */ String, js.Function1[/* r */ _, Maybe[_]]] = js.native
+      def get(p: Predicate[js.Any]): js.Function1[/* q */ String, js.Function1[/* r */ js.Any, Maybe[js.Any]]] = js.native
       
-      def gets(p: Predicate[_]): js.Function1[/* q */ js.Array[String], js.Function1[/* r */ _, Maybe[_]]] = js.native
+      def gets(p: Predicate[js.Any]): js.Function1[/* q */ js.Array[String], js.Function1[/* r */ js.Any, Maybe[js.Any]]] = js.native
       
       def groupBy[A](f: Fn2[A, A, Boolean]): js.Function1[/* xs */ js.Array[A], js.Array[js.Array[A]]] = js.native
       
@@ -373,7 +372,7 @@ object mod extends Shortcut {
       def head(xs: String): Maybe[String] = js.native
       def head[A](xs: js.Array[A]): Maybe[A] = js.native
       
-      def id[A](p: TypeRep): (Fn[A, A]) | Category[_] = js.native
+      def id[A](p: TypeRep): (Fn[A, A]) | Category[js.Any] = js.native
       
       def ifElse[A, B](p: Predicate[A]): js.Function1[/* q */ Fn[A, B], js.Function1[/* r */ Fn[A, B], Fn[A, B]]] = js.native
       
@@ -387,12 +386,12 @@ object mod extends Shortcut {
       def isJust[A](p: Maybe[A]): Boolean = js.native
       
       // Either
-      def isLeft(p: Either[_, _]): Boolean = js.native
+      def isLeft(p: Either[js.Any, js.Any]): Boolean = js.native
       
       //  Maybe
       def isNothing[A](p: Maybe[A]): Boolean = js.native
       
-      def isRight(p: Either[_, _]): Boolean = js.native
+      def isRight(p: Either[js.Any, js.Any]): Boolean = js.native
       
       def join[A](chain_ : js.Array[js.Array[A]]): js.Array[A] = js.native
       def join[A](chain_ : Chain[Chain[A]]): Chain[A] = js.native
@@ -403,12 +402,12 @@ object mod extends Shortcut {
       
       def justs[A](p: js.Array[Maybe[A]]): js.Array[A] = js.native
       
-      def keys(p: StrMap[_]): js.Array[String] = js.native
+      def keys(p: StrMap[js.Any]): js.Array[String] = js.native
       
       def last(xs: String): Maybe[String] = js.native
       def last[A](xs: js.Array[A]): Maybe[A] = js.native
       
-      def lefts[A](p: js.Array[Either[A, _]]): js.Array[A] = js.native
+      def lefts[A](p: js.Array[Either[A, js.Any]]): js.Array[A] = js.native
       
       def lift2[A, B, C](f: Fn2[A, B, C]): FnCallX[A, B, C] = js.native
       
@@ -424,7 +423,7 @@ object mod extends Shortcut {
       
       def mapLeft[A, B](p: Fn[A, B]): FnCallQ[B] = js.native
       
-      def mapMaybe[A](p: Fn[A, Maybe[_]]): js.Function1[/* q */ js.Array[A], js.Array[A]] = js.native
+      def mapMaybe[A](p: Fn[A, Maybe[js.Any]]): js.Function1[/* q */ js.Array[A], js.Array[A]] = js.native
       
       def `match`(pattern: RegExp): js.Function1[/* q */ String, js.Array[Maybe[MatchObj]]] = js.native
       
@@ -432,13 +431,13 @@ object mod extends Shortcut {
       
       def max[A](x: A): js.Function1[/* y */ A, A] = js.native
       
-      def maybe[B](p: B): js.Function1[/* q */ Fn[_, B], js.Function1[/* r */ Maybe[_], B]] = js.native
+      def maybe[B](p: B): js.Function1[/* q */ Fn[js.Any, B], js.Function1[/* r */ Maybe[js.Any], B]] = js.native
       
-      def maybeToEither[A](p: A): js.Function1[/* q */ Maybe[_], Either[A, _]] = js.native
+      def maybeToEither[A](p: A): js.Function1[/* q */ Maybe[js.Any], Either[A, js.Any]] = js.native
       
       def maybeToNullable[A](p: Maybe[A]): Nullable[A] = js.native
       
-      def maybe_[B](p: Thunk[B]): js.Function1[/* q */ Fn[_, B], js.Function1[/* r */ Maybe[_], B]] = js.native
+      def maybe_[B](p: Thunk[B]): js.Function1[/* q */ Fn[js.Any, B], js.Function1[/* r */ Maybe[js.Any], B]] = js.native
       
       def mean(p: js.Array[FiniteNumber]): Maybe[FiniteNumber] = js.native
       def mean(p: Foldable[FiniteNumber]): Maybe[FiniteNumber] = js.native
@@ -456,7 +455,7 @@ object mod extends Shortcut {
       
       def odd(n: Integer): Boolean = js.native
       
-      def of[A](typeRep: TypeRep): js.Function1[/* x */ A, Fn[_, A]] = js.native
+      def of[A](typeRep: TypeRep): js.Function1[/* x */ A, Fn[js.Any, A]] = js.native
       
       def on[A, B, C](p: Fn2[B, B, C]): js.Function1[/* q */ Fn[A, B], js.Function1[/* r */ A, Fn[A, C]]] = js.native
       
@@ -473,15 +472,15 @@ object mod extends Shortcut {
       
       def parseInt(p: Integer): js.Function1[/* q */ String, Maybe[Integer]] = js.native
       
-      def parseJson(p: Predicate[_]): js.Function1[/* q */ String, Maybe[_]] = js.native
+      def parseJson(p: Predicate[js.Any]): js.Function1[/* q */ String, Maybe[js.Any]] = js.native
       
-      def pipe(fs: js.Array[Fn[_, _]]): js.Function1[/* x */ js.Any, _] = js.native
+      def pipe(fs: js.Array[Fn[js.Any, js.Any]]): js.Function1[/* x */ js.Any, js.Any] = js.native
       def pipe[A, B, C](fs: js.Tuple2[Fn[A, B], Fn[B, C]]): js.Function1[/* x */ A, C] = js.native
       def pipe[A, B, C, D](fs: js.Tuple3[Fn[A, B], Fn[B, C], Fn[C, D]]): js.Function1[/* x */ A, D] = js.native
       def pipe[A, B, C, D, E](fs: js.Tuple4[Fn[A, B], Fn[B, C], Fn[C, D], Fn[D, E]]): js.Function1[/* x */ A, E] = js.native
       def pipe[A, B, C, D, E, F](fs: js.Tuple5[Fn[A, B], Fn[B, C], Fn[C, D], Fn[D, E], Fn[E, F]]): js.Function1[/* x */ A, F] = js.native
       
-      def pipeK[B](fs: js.Array[Fn[_, Chain[_]]]): js.Function1[/* chain_ */ Chain[_], Chain[B]] = js.native
+      def pipeK[B](fs: js.Array[Fn[js.Any, Chain[js.Any]]]): js.Function1[/* chain_ */ Chain[js.Any], Chain[B]] = js.native
       
       @JSName("pipe")
       def pipe_AB[A, B](fs: js.Array[Fn[A, B]]): js.Function1[/* x */ A, B] = js.native
@@ -493,18 +492,18 @@ object mod extends Shortcut {
       def product(p: js.Array[FiniteNumber]): FiniteNumber = js.native
       def product(p: Foldable[FiniteNumber]): FiniteNumber = js.native
       
-      def promap[A, B](p: Fn[A, B]): js.Function1[/* q */ Fn[_, _], FnCallR[B, _, A, _]] = js.native
+      def promap[A, B](p: Fn[A, B]): js.Function1[/* q */ Fn[js.Any, js.Any], FnCallR[B, js.Any, A, js.Any]] = js.native
       
       //  Object
-      def prop(p: String): js.Function1[/* q */ js.Any, _] = js.native
+      def prop(p: String): js.Function1[/* q */ js.Any, js.Any] = js.native
       
-      def props(p: js.Array[String]): js.Function1[/* q */ js.Any, _] = js.native
+      def props(p: js.Array[String]): js.Function1[/* q */ js.Any, js.Any] = js.native
       
       def range(from: Integer): js.Function1[/* to */ Integer, js.Array[Integer]] = js.native
       
       def reduce[A, B](p: Fn2[B, A, B]): js.Function1[
             /* q */ B, 
-            js.Function1[/* r */ js.Array[A] | StrMap[A] | Maybe[A] | (Either[_, A]) | Foldable[A], B]
+            js.Function1[/* r */ js.Array[A] | StrMap[A] | Maybe[A] | (Either[js.Any, A]) | Foldable[A], B]
           ] = js.native
       
       //  RegExp
@@ -517,9 +516,12 @@ object mod extends Shortcut {
       def reverse[A](foldable: js.Array[A]): js.Array[A] = js.native
       def reverse[A](foldable: Foldable[A]): Foldable[A] = js.native
       
-      def rights[B](p: js.Array[Either[_, B]]): js.Array[B] = js.native
+      def rights[B](p: js.Array[Either[js.Any, B]]): js.Array[B] = js.native
       
-      def sequence(typeRep: TypeRep): js.Function1[/* traversable */ Traversable[Applicative[_]], Applicative[Traversable[_]]] = js.native
+      def sequence(typeRep: TypeRep): js.Function1[
+            /* traversable */ Traversable[Applicative[js.Any]], 
+            Applicative[Traversable[js.Any]]
+          ] = js.native
       
       //  Showable
       def show(x: js.Any): String = js.native
@@ -529,7 +531,7 @@ object mod extends Shortcut {
       def sort[A](foldable: js.Array[A]): js.Array[A] = js.native
       def sort[A](foldable: Foldable[A]): Foldable[A] = js.native
       
-      def sortBy[A](f: Fn[A, Ord[_]]): FnCallFoldable[A] = js.native
+      def sortBy[A](f: Fn[A, Ord[js.Any]]): FnCallFoldable[A] = js.native
       
       def splitOn(separator: String): js.Function1[/* q */ String, js.Array[String]] = js.native
       
@@ -565,8 +567,8 @@ object mod extends Shortcut {
       def toUpper(s: String): String = js.native
       
       def traverse(typeRep: TypeRep): js.Function1[
-            /* f */ Fn[_, Applicative[_]], 
-            js.Function1[/* traversable */ Traversable[_], Applicative[Traversable[_]]]
+            /* f */ Fn[js.Any, Applicative[js.Any]], 
+            js.Function1[/* traversable */ Traversable[js.Any], Applicative[Traversable[js.Any]]]
           ] = js.native
       
       def trim(s: String): String = js.native
@@ -591,33 +593,29 @@ object mod extends Shortcut {
       
       def words(s: String): js.Array[String] = js.native
       
-      def zero(p: TypeRep): Plus[_] = js.native
+      def zero(p: TypeRep): Plus[js.Any] = js.native
       
-      def zip[A](p: js.Array[A]): js.Function1[/* q */ js.Array[_], js.Array[Pair[A, _]]] = js.native
+      def zip[A](p: js.Array[A]): js.Function1[/* q */ js.Array[js.Any], js.Array[Pair[A, js.Any]]] = js.native
       
-      def zipWith[A, B, C](f: Fn2[A, B, C]): js.Function1[/* p */ js.Array[_], js.Function1[/* q */ js.Array[_], js.Array[C]]] = js.native
+      def zipWith[A, B, C](f: Fn2[A, B, C]): js.Function1[/* p */ js.Array[js.Any], js.Function1[/* q */ js.Array[js.Any], js.Array[C]]] = js.native
     }
   }
   
-  @js.native
   trait Semigroup[A] extends StObject
   
-  @js.native
   trait Semigroupoid[A, B] extends StObject
   
-  @js.native
   trait Setoid[A] extends StObject
   
   type StrMap[A] = StringDictionary[A]
   
   type Thunk[A] = js.Function0[A]
   
-  @js.native
   trait Traversable[A]
-    extends Functor[A]
+    extends StObject
+       with Functor[A]
        with Foldable[A]
   
-  @js.native
   trait TypeRep extends StObject
   
   type ValidNumber = Double

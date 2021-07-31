@@ -2,29 +2,27 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISensorRotationMatrix extends StObject {
   
-  var m11: Double = js.native
+  var m11: Double
   
-  var m12: Double = js.native
+  var m12: Double
   
-  var m13: Double = js.native
+  var m13: Double
   
-  var m21: Double = js.native
+  var m21: Double
   
-  var m22: Double = js.native
+  var m22: Double
   
-  var m23: Double = js.native
+  var m23: Double
   
-  var m31: Double = js.native
+  var m31: Double
   
-  var m32: Double = js.native
+  var m32: Double
   
-  var m33: Double = js.native
+  var m33: Double
 }
 object ISensorRotationMatrix {
   

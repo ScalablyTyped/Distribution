@@ -2,18 +2,16 @@ package typings.eventIterator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<event-iterator.event-iterator/lib/event-iterator.EventIteratorOptions> */
-  @js.native
   trait PartialEventIteratorOptio extends StObject {
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var lowWaterMark: js.UndefOr[Double] = js.native
+    var lowWaterMark: js.UndefOr[Double] = js.undefined
   }
   object PartialEventIteratorOptio {
     

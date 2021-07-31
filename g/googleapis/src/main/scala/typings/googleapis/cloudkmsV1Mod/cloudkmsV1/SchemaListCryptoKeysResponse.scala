@@ -2,30 +2,28 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for KeyManagementService.ListCryptoKeys.
   */
-@js.native
 trait SchemaListCryptoKeysResponse extends StObject {
   
   /**
     * The list of CryptoKeys.
     */
-  var cryptoKeys: js.UndefOr[js.Array[SchemaCryptoKey]] = js.native
+  var cryptoKeys: js.UndefOr[js.Array[SchemaCryptoKey]] = js.undefined
   
   /**
     * A token to retrieve next page of results. Pass this value in
     * ListCryptoKeysRequest.page_token to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of CryptoKeys that matched the query.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaListCryptoKeysResponse {
   

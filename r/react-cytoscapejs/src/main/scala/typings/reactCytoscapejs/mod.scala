@@ -10,7 +10,6 @@ import typings.react.mod.Component
 import typings.reactCytoscapejs.anon.Edges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,53 +20,54 @@ object mod {
     extends Component[CytoscapeComponentProps, js.Object, js.Any]
   object default {
     
-    @JSImport("react-cytoscapejs", "default.normalizeElements")
+    @JSImport("react-cytoscapejs", JSImport.Default)
     @js.native
-    def normalizeElements(data: js.Array[ElementDefinition]): js.Array[ElementDefinition] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def normalizeElements(data: js.Array[ElementDefinition]): js.Array[ElementDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeElements")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[ElementDefinition]]
     /* static member */
-    @JSImport("react-cytoscapejs", "default.normalizeElements")
-    @js.native
-    def normalizeElements(data: Edges): js.Array[ElementDefinition] = js.native
+    @scala.inline
+    def normalizeElements(data: Edges): js.Array[ElementDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeElements")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[ElementDefinition]]
   }
   
   type CytoscapeComponent = Component[CytoscapeComponentProps, js.Object, js.Any]
   
-  @js.native
   trait CytoscapeComponentProps extends StObject {
     
-    var autoungrabify: js.UndefOr[Boolean] = js.native
+    var autoungrabify: js.UndefOr[Boolean] = js.undefined
     
-    var autounselectify: js.UndefOr[Boolean] = js.native
+    var autounselectify: js.UndefOr[Boolean] = js.undefined
     
-    var boxSelectionEnabled: js.UndefOr[Boolean] = js.native
+    var boxSelectionEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cy: js.UndefOr[js.Function1[/* cy */ Core, Unit]] = js.native
+    var cy: js.UndefOr[js.Function1[/* cy */ Core, Unit]] = js.undefined
     
-    var elements: js.Array[ElementDefinition] = js.native
+    var elements: js.Array[ElementDefinition]
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[LayoutOptions] = js.native
+    var layout: js.UndefOr[LayoutOptions] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var pan: js.UndefOr[Position] = js.native
+    var pan: js.UndefOr[Position] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var stylesheet: js.UndefOr[Stylesheet | js.Array[Stylesheet] | String] = js.native
+    var stylesheet: js.UndefOr[Stylesheet | js.Array[Stylesheet] | String] = js.undefined
     
-    var userZoomingEnabled: js.UndefOr[Boolean] = js.native
+    var userZoomingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var wheelSensitivity: js.UndefOr[Double] = js.native
+    var wheelSensitivity: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
     
-    var zoomingEnabled: js.UndefOr[Boolean] = js.native
+    var zoomingEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object CytoscapeComponentProps {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRelationalDatabaseSnapshotRequest extends StObject {
   
   /**
     * The name of the database on which to base your new snapshot.
     */
-  var relationalDatabaseName: ResourceName = js.native
+  var relationalDatabaseName: ResourceName
   
   /**
     * The name for your new database snapshot. Constraints:   Must contain from 2 to 255 alphanumeric characters, or hyphens.   The first and last character must be a letter or number.  
     */
-  var relationalDatabaseSnapshotName: ResourceName = js.native
+  var relationalDatabaseSnapshotName: ResourceName
   
   /**
     * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateRelationalDatabaseSnapshotRequest {
   

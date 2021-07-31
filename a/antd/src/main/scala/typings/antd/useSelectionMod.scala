@@ -13,17 +13,18 @@ import typings.std.HTMLElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useSelectionMod {
   
-  @JSImport("antd/lib/table/hooks/useSelection", JSImport.Default)
+  @JSImport("antd/lib/table/hooks/useSelection", JSImport.Namespace)
   @js.native
-  def default[RecordType](rowSelection: js.UndefOr[scala.Nothing], config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = js.native
-  @JSImport("antd/lib/table/hooks/useSelection", JSImport.Default)
-  @js.native
-  def default[RecordType](rowSelection: TableRowSelection[RecordType], config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[RecordType](rowSelection: Unit, config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rowSelection.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TransformColumns[RecordType], Set[Key]]]
+  @scala.inline
+  def default[RecordType](rowSelection: TableRowSelection[RecordType], config: UseSelectionConfig[RecordType]): js.Tuple2[TransformColumns[RecordType], Set[Key]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rowSelection.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TransformColumns[RecordType], Set[Key]]]
   
   @JSImport("antd/lib/table/hooks/useSelection", "SELECTION_ALL")
   @js.native
@@ -40,28 +41,27 @@ object useSelectionMod {
   */
   trait INTERNAL_SELECTION_ITEM extends StObject
   
-  @js.native
   trait UseSelectionConfig[RecordType] extends StObject {
     
-    var childrenColumnName: String = js.native
+    var childrenColumnName: String
     
-    var data: js.Array[RecordType] = js.native
+    var data: js.Array[RecordType]
     
-    var expandIconColumnIndex: js.UndefOr[Double] = js.native
+    var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
     
-    var expandType: ExpandType = js.native
+    var expandType: ExpandType
     
-    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.native
+    var getPopupContainer: js.UndefOr[GetPopupContainer] = js.undefined
     
-    def getRecordByKey(key: Key): RecordType = js.native
+    def getRecordByKey(key: Key): RecordType
     
-    var getRowKey: GetRowKey[RecordType] = js.native
+    var getRowKey: GetRowKey[RecordType]
     
-    var locale: TableLocale = js.native
+    var locale: TableLocale
     
-    var pageData: js.Array[RecordType] = js.native
+    var pageData: js.Array[RecordType]
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object UseSelectionConfig {
     
@@ -75,12 +75,12 @@ object useSelectionMod {
       pageData: js.Array[RecordType],
       prefixCls: String
     ): UseSelectionConfig[RecordType] = {
-      val __obj = js.Dynamic.literal(childrenColumnName = childrenColumnName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getRecordByKey = js.Any.fromFunction1(getRecordByKey), getRowKey = js.Any.fromFunction2(getRowKey), locale = locale.asInstanceOf[js.Any], pageData = pageData.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(childrenColumnName = childrenColumnName.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getRecordByKey = js.Any.fromFunction1(getRecordByKey), getRowKey = js.Any.fromFunction2(getRowKey), locale = locale.asInstanceOf[js.Any], pageData = pageData.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], expandType = null)
       __obj.asInstanceOf[UseSelectionConfig[RecordType]]
     }
     
     @scala.inline
-    implicit class UseSelectionConfigMutableBuilder[Self <: UseSelectionConfig[_], RecordType] (val x: Self with UseSelectionConfig[RecordType]) extends AnyVal {
+    implicit class UseSelectionConfigMutableBuilder[Self <: UseSelectionConfig[?], RecordType] (val x: Self & UseSelectionConfig[RecordType]) extends AnyVal {
       
       @scala.inline
       def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])

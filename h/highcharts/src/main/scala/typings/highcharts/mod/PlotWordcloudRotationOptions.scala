@@ -2,28 +2,26 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotWordcloudRotationOptions extends StObject {
   
   /**
     * (Highcharts) The smallest degree of rotation for a word.
     */
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The number of possible orientations for a word, within the
     * range of `rotation.from` and `rotation.to`. Must be a number larger than
     * 0.
     */
-  var orientations: js.UndefOr[Double] = js.native
+  var orientations: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The largest degree of rotation for a word.
     */
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
 }
 object PlotWordcloudRotationOptions {
   

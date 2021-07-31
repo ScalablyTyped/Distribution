@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ConditionalFormatDirection extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalFormatDirection with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ConditionalFormatDirection & String] = js.native
   
-  /* "Bottom" */ val bottom: typings.officeJsPreview.Excel.ConditionalFormatDirection.bottom with String = js.native
+  /* "Bottom" */ val bottom: typings.officeJsPreview.Excel.ConditionalFormatDirection.bottom & String = js.native
   
-  /* "Top" */ val top: typings.officeJsPreview.Excel.ConditionalFormatDirection.top with String = js.native
+  /* "Top" */ val top: typings.officeJsPreview.Excel.ConditionalFormatDirection.top & String = js.native
 }

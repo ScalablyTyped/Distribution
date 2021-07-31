@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadSizeEvidence extends StObject {
   
   /** Download size broken down by URLs with the top download size. */
-  var topUrlDownloadSizeBreakdowns: js.UndefOr[js.Array[UrlDownloadSize]] = js.native
+  var topUrlDownloadSizeBreakdowns: js.UndefOr[js.Array[UrlDownloadSize]] = js.undefined
   
   /** Total download size (in kilobytes) for all the resources in the creative. */
-  var totalDownloadSizeKb: js.UndefOr[Double] = js.native
+  var totalDownloadSizeKb: js.UndefOr[Double] = js.undefined
 }
 object DownloadSizeEvidence {
   

@@ -2,17 +2,15 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
   /**
     * (ID of a file) An icon for the account. Must be square and at
     * least 128px x 128px.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * (ID of a file) A logo for the account that will be used in
@@ -20,12 +18,12 @@ trait Icon extends StObject {
     * if provided. Must be at least 128px x 128px. This can be unset by
     * updating the value to null and then saving.
     */
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
   /**
     * A CSS hex color value representing the primary branding color for this account.
     */
-  var primary_color: js.UndefOr[String] = js.native
+  var primary_color: js.UndefOr[String] = js.undefined
 }
 object Icon {
   

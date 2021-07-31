@@ -2,58 +2,58 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of a tab control's BootstrapTab or a page control's BootstrapTabPage object.
   */
-@js.native
-trait BootstrapClientTab extends ASPxClientTab {
+trait BootstrapClientTab
+  extends StObject
+     with ASPxClientTab {
   
   /**
     * Gets the CSS class of an icon displayed by the tab when it is active.
     */
-  def GetActiveIconCssClass(): String = js.native
+  def GetActiveIconCssClass(): String
   
   /**
     * Gets the CSS class of the icon displayed within the tab badge.
     */
-  def GetBadgeIconCssClass(): String = js.native
+  def GetBadgeIconCssClass(): String
   
   /**
     * Gets the text displayed within the tab badge.
     */
-  def GetBadgeText(): String = js.native
+  def GetBadgeText(): String
   
   /**
     * Gets the CSS class of the icon displayed by the tab.
     */
-  def GetIconCssClass(): String = js.native
+  def GetIconCssClass(): String
   
   /**
     * Sets the CSS class of an icon displayed by the tab when it is active.
     * @param cssClass A String containing the name of a CSS class.
     */
-  def SetActiveIconCssClass(cssClass: String): Unit = js.native
+  def SetActiveIconCssClass(cssClass: String): Unit
   
   /**
     * Sets the CSS class of the icon displayed within the tab badge.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetBadgeIconCssClass(cssClass: String): Unit
   
   /**
     * Sets the text displayed within the tab badge.
     * @param text A String specifying the badge text.
     */
-  def SetBadgeText(text: String): Unit = js.native
+  def SetBadgeText(text: String): Unit
   
   /**
     * Sets the CSS class of the icon displayed by the tab.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetIconCssClass(cssClass: String): Unit = js.native
+  def SetIconCssClass(cssClass: String): Unit
 }
 object BootstrapClientTab {
   

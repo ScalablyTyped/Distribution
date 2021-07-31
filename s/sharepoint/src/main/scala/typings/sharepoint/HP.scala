@@ -2,61 +2,59 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HP extends StObject {
   
-  def Close(): Unit = js.native
+  def Close(): Unit
   
-  var CommonActions: String = js.native
+  var CommonActions: String
   
-  var CommonBody: String = js.native
+  var CommonBody: String
   
-  var CommonHeader: String = js.native
+  var CommonHeader: String
   
-  def Follow(): Unit = js.native
+  def Follow(): Unit
   
-  def GetAuthorsHtml(): String = js.native
+  def GetAuthorsHtml(): String
   
-  def GetBodySectionContent(): String = js.native
+  def GetBodySectionContent(): String
   
-  def GetBodySectionHeading(): String = js.native
+  def GetBodySectionHeading(): String
   
-  def GetEmailLink(title: String, path: String, client: String, url: String): String = js.native
+  def GetEmailLink(title: String, path: String, client: String, url: String): String
   
-  def GetFriendlyNameForFileType(fileType: js.Any): String = js.native
+  def GetFriendlyNameForFileType(fileType: js.Any): String
   
-  def GetNowDateTimeDifference(): String = js.native
+  def GetNowDateTimeDifference(): String
   
-  def GetPeopleFollowingControl(): String = js.native
+  def GetPeopleFollowingControl(): String
   
-  def Hide(): Unit = js.native
+  def Hide(): Unit
   
-  def Init(): Unit = js.native
+  def Init(): Unit
   
-  def InitPostLoad(): Unit = js.native
+  def InitPostLoad(): Unit
   
-  def IsNumeric(): Boolean = js.native
+  def IsNumeric(): Boolean
   
-  def Resize(): Unit = js.native
+  def Resize(): Unit
   
-  def SetPreviewOnHideCallback(): Unit = js.native
+  def SetPreviewOnHideCallback(): Unit
   
-  def SetWidth(width: Double): Unit = js.native
+  def SetWidth(width: Double): Unit
   
-  def Show(): Unit = js.native
+  def Show(): Unit
   
-  def ViewDuplicates(): Boolean = js.native
+  def ViewDuplicates(): Boolean
   
-  def getDateString(): String = js.native
+  def getDateString(): String
   
-  def getStringFromDate(): String = js.native
+  def getStringFromDate(): String
   
-  var ids: HPIds = js.native
+  var ids: HPIds
   
-  def loadSiteViewer(id: String, idinner: String, idviewer: String, path: String, idglass: String): Unit = js.native
+  def loadSiteViewer(id: String, idinner: String, idviewer: String, path: String, idglass: String): Unit
   
   def loadViewer(
     id: String,
@@ -65,9 +63,9 @@ trait HP extends StObject {
     idpreview: String,
     embedUrl: String,
     previewUrl: String
-  ): Unit = js.native
+  ): Unit
   
-  var postActionEventName: String = js.native
+  var postActionEventName: String
 }
 object HP {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlanOfferingRate extends StObject {
   
   /**
     * The specific AWS operation for the line item in the billing report.
     */
-  var operation: js.UndefOr[SavingsPlanRateOperation] = js.native
+  var operation: js.UndefOr[SavingsPlanRateOperation] = js.undefined
   
   /**
     * The product type.
     */
-  var productType: js.UndefOr[SavingsPlanProductType] = js.native
+  var productType: js.UndefOr[SavingsPlanProductType] = js.undefined
   
   /**
     * The properties.
     */
-  var properties: js.UndefOr[SavingsPlanOfferingRatePropertyList] = js.native
+  var properties: js.UndefOr[SavingsPlanOfferingRatePropertyList] = js.undefined
   
   /**
     * The Savings Plan rate.
     */
-  var rate: js.UndefOr[SavingsPlanRatePricePerUnit] = js.native
+  var rate: js.UndefOr[SavingsPlanRatePricePerUnit] = js.undefined
   
   /**
     * The Savings Plan offering.
     */
-  var savingsPlanOffering: js.UndefOr[ParentSavingsPlanOffering] = js.native
+  var savingsPlanOffering: js.UndefOr[ParentSavingsPlanOffering] = js.undefined
   
   /**
     * The service.
     */
-  var serviceCode: js.UndefOr[SavingsPlanRateServiceCode] = js.native
+  var serviceCode: js.UndefOr[SavingsPlanRateServiceCode] = js.undefined
   
   /**
     * The unit.
     */
-  var unit: js.UndefOr[SavingsPlanRateUnit] = js.native
+  var unit: js.UndefOr[SavingsPlanRateUnit] = js.undefined
   
   /**
     * The usage details of the line item in the billing report.
     */
-  var usageType: js.UndefOr[SavingsPlanRateUsageType] = js.native
+  var usageType: js.UndefOr[SavingsPlanRateUsageType] = js.undefined
 }
 object SavingsPlanOfferingRate {
   

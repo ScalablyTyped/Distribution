@@ -2,15 +2,13 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Intval extends StObject {
   
-  var int_val: Double = js.native
+  var int_val: Double
   
-  var root_index: Double = js.native
+  var root_index: Double
 }
 object Intval {
   

@@ -2,15 +2,13 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShaderDescriptor[T /* <: Shader */] extends StObject {
   
-  var Shader: ShaderConstructor[T] = js.native
+  var Shader: ShaderConstructor[T]
   
-  var schema: Schema_[js.Object] = js.native
+  var schema: Schema_[js.Object]
 }
 object ShaderDescriptor {
   
@@ -21,7 +19,7 @@ object ShaderDescriptor {
   }
   
   @scala.inline
-  implicit class ShaderDescriptorMutableBuilder[Self <: ShaderDescriptor[_], T /* <: Shader */] (val x: Self with ShaderDescriptor[T]) extends AnyVal {
+  implicit class ShaderDescriptorMutableBuilder[Self <: ShaderDescriptor[?], T /* <: Shader */] (val x: Self & ShaderDescriptor[T]) extends AnyVal {
     
     @scala.inline
     def setSchema(value: Schema_[js.Object]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])

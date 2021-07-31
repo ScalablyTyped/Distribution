@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metric extends StObject {
   
   /**
     * The dimensions for the metric.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
     * The name of the metric. This is a required field.
     */
-  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.native
+  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.undefined
   
   /**
     * The namespace of the metric.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.undefined
 }
 object Metric {
   

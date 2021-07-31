@@ -2,22 +2,20 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialAnchorStore extends StObject {
   
-  var clear: js.Any = js.native
+  var clear: js.Any
   
   /* unmapped type */
-  var getAllSavedAnchors: js.Any = js.native
+  var getAllSavedAnchors: js.Any
   
   /* unmapped type */
-  var remove: js.Any = js.native
+  var remove: js.Any
   
   /* unmapped type */
-  var trySave: js.Any = js.native
+  var trySave: js.Any
 }
 object SpatialAnchorStore {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAnomalyDetectorInput extends StObject {
   
   /**
     * The configuration specifies details about how the anomaly detection model is to be trained, including time ranges to exclude when training and updating the model. You can specify as many as 10 time ranges. The configuration can also include the time zone to use for the metric.
     */
-  var Configuration: js.UndefOr[AnomalyDetectorConfiguration] = js.native
+  var Configuration: js.UndefOr[AnomalyDetectorConfiguration] = js.undefined
   
   /**
     * The metric dimensions to create the anomaly detection model for.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
     * The name of the metric to create the anomaly detection model for.
     */
-  var MetricName: typings.awsSdk.cloudwatchMod.MetricName = js.native
+  var MetricName: typings.awsSdk.cloudwatchMod.MetricName
   
   /**
     * The namespace of the metric to create the anomaly detection model for.
     */
-  var Namespace: typings.awsSdk.cloudwatchMod.Namespace = js.native
+  var Namespace: typings.awsSdk.cloudwatchMod.Namespace
   
   /**
     * The statistic to use for the metric and the anomaly detection model.
     */
-  var Stat: AnomalyDetectorMetricStat = js.native
+  var Stat: AnomalyDetectorMetricStat
 }
 object PutAnomalyDetectorInput {
   

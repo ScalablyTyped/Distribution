@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data about each cell in a row.
   */
-@js.native
 trait SchemaRowData extends StObject {
   
   /**
     * The values in the row, one per column.
     */
-  var values: js.UndefOr[js.Array[SchemaCellData]] = js.native
+  var values: js.UndefOr[js.Array[SchemaCellData]] = js.undefined
 }
 object SchemaRowData {
   

@@ -12,7 +12,7 @@ A react-leaflet plugin for leaflet-sidebar-v2
 | Keywords           | react, leaflet, sidebar |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 10525 |
+| # downloads        | 12926 |
 | # stars            | 0 |
 
 ## Links

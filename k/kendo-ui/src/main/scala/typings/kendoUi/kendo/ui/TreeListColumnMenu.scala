@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListColumnMenu extends StObject {
   
-  var columns: js.UndefOr[Boolean] = js.native
+  var columns: js.UndefOr[Boolean] = js.undefined
   
-  var filterable: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[TreeListColumnMenuMessages] = js.native
+  var messages: js.UndefOr[TreeListColumnMenuMessages] = js.undefined
   
-  var sortable: js.UndefOr[Boolean] = js.native
+  var sortable: js.UndefOr[Boolean] = js.undefined
 }
 object TreeListColumnMenu {
   

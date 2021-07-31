@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDomainNameRequest extends StObject {
   
   /**
     * The domain name.
     */
-  var DomainName: StringWithLengthBetween1And512 = js.native
+  var DomainName: StringWithLengthBetween1And512
   
   /**
     * The domain name configurations.
     */
-  var DomainNameConfigurations: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameConfigurations] = js.native
+  var DomainNameConfigurations: js.UndefOr[typings.awsSdk.apigatewayv2Mod.DomainNameConfigurations] = js.undefined
   
   /**
     * The mutual TLS authentication configuration for a custom domain name.
     */
-  var MutualTlsAuthentication: js.UndefOr[MutualTlsAuthenticationInput] = js.native
+  var MutualTlsAuthentication: js.UndefOr[MutualTlsAuthenticationInput] = js.undefined
   
   /**
     * The collection of tags associated with a domain name.
     */
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
 }
 object CreateDomainNameRequest {
   

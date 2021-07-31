@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainNodeToNodeEncryption extends StObject {
   
   /**
     * Whether node to node encryption is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object GetDomainNodeToNodeEncryption {
   

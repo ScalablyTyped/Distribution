@@ -2,13 +2,13 @@ package typings.reactMdl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FABButtonProps extends ButtonProps {
+trait FABButtonProps
+  extends StObject
+     with ButtonProps {
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
 }
 object FABButtonProps {
   

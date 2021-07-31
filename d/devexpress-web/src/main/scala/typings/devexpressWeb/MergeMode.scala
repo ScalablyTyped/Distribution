@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,17 +17,23 @@ object MergeMode extends StObject {
     * Enables you to join rows, which result from a mail merge involving a table with merged fields, into a whole table.
     */
   @js.native
-  sealed trait JoinTables extends MergeMode
+  sealed trait JoinTables
+    extends StObject
+       with MergeMode
   
   /**
     * Specifies that the next merged range starts with a new paragraph.
     */
   @js.native
-  sealed trait NewParagraph extends MergeMode
+  sealed trait NewParagraph
+    extends StObject
+       with MergeMode
   
   /**
     * Specifies that the next merged range starts with a new section. The section break type is obtained from the previous section break or set to the NextPage by default. For headers and footers, it is the only allowed option.
     */
   @js.native
-  sealed trait NewSection extends MergeMode
+  sealed trait NewSection
+    extends StObject
+       with MergeMode
 }

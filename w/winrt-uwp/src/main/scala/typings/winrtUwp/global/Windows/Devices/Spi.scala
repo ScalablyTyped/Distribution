@@ -1,11 +1,12 @@
 package typings.winrtUwp.global.Windows.Devices
 
 import typings.winrtUwp.Windows.Devices.Spi.Provider.ISpiProvider
+import typings.winrtUwp.Windows.Devices.Spi.SpiMode
+import typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SPI is a high speed interface used to communicate among integrated components on the same board. */
@@ -17,7 +18,28 @@ object Spi {
     @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings")
     @js.native
     abstract class ProviderSpiConnectionSettings ()
-      extends typings.winrtUwp.Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings
+      extends StObject
+         with typings.winrtUwp.Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings {
+      
+      /* CompleteClass */
+      var chipSelectLine: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var clockFrequency: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var dataBitLength: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var mode: js.Any = js.native
+      
+      /* unmapped type */
+      /* CompleteClass */
+      var sharingMode: js.Any = js.native
+    }
     
     object ProviderSpiMode {
       
@@ -78,26 +100,79 @@ object Spi {
   @JSGlobal("Windows.Devices.Spi.SpiBusInfo")
   @js.native
   abstract class SpiBusInfo ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo {
+    
+    /** Gets the number of chip select lines available on the bus. */
+    /* CompleteClass */
+    var chipSelectLineCount: Double = js.native
+    
+    /** Maximum clock cycle frequency of the bus. */
+    /* CompleteClass */
+    var maxClockFrequency: Double = js.native
+    
+    /** Minimum clock cycle frequency of the bus. */
+    /* CompleteClass */
+    var minClockFrequency: Double = js.native
+    
+    /** Gets the bit lengths that can be used on the bus for transmitting data. */
+    /* CompleteClass */
+    var supportedDataBitLengths: IVectorView[Double] = js.native
+  }
   
   /** Represents the settings for the connection with a device. */
   @JSGlobal("Windows.Devices.Spi.SpiConnectionSettings")
   @js.native
   class SpiConnectionSettings protected ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings {
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings {
     /**
       * Initializes new instance of SpiConnectionSettings .
       * @param chipSelectLine The chip select line on which the connection will be made.
       */
     def this(chipSelectLine: Double) = this()
+    
+    /** Gets or sets the chip select line for the connection to the SPI device. */
+    /* CompleteClass */
+    var chipSelectLine: Double = js.native
+    
+    /** Gets or sets the clock frequency for the connection. */
+    /* CompleteClass */
+    var clockFrequency: Double = js.native
+    
+    /** Gets or sets the bit length for data on this connection. */
+    /* CompleteClass */
+    var dataBitLength: Double = js.native
+    
+    /** Gets or sets the SpiMode for this connection. */
+    /* CompleteClass */
+    var mode: SpiMode = js.native
+    
+    /** Gets or sets the sharing mode for the SPI connection. */
+    /* CompleteClass */
+    var sharingMode: SpiSharingMode = js.native
   }
   
   /** Represents the SPI controller on the system. */
   @JSGlobal("Windows.Devices.Spi.SpiController")
   @js.native
   abstract class SpiController ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiController
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Spi.SpiController {
+    
+    /**
+      * Gets the SPI device with the specified settings.
+      * @param settings The desired connection settings.
+      * @return The SPI device.
+      */
+    /* CompleteClass */
+    override def getDevice(settings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings): typings.winrtUwp.Windows.Devices.Spi.SpiDevice = js.native
+  }
   object SpiController {
+    
+    @JSGlobal("Windows.Devices.Spi.SpiController")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets all the SPI controllers that are on the system.
@@ -105,26 +180,72 @@ object Spi {
       * @return When the method completes successfully, it returns a list of values that represent the available SPI controllers on the system.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Spi.SpiController.getControllersAsync")
-    @js.native
-    def getControllersAsync(provider: ISpiProvider): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    @scala.inline
+    def getControllersAsync(provider: ISpiProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets the default SPI controller on the system.
       * @return The default SPI controller on the system, or null if the system has no SPI controller.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Spi.SpiController.getDefaultAsync")
-    @js.native
-    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController] = js.native
+    @scala.inline
+    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiController]]
   }
   
   /** Represents a device connected through the SPI bus. */
   @JSGlobal("Windows.Devices.Spi.SpiDevice")
   @js.native
   abstract class SpiDevice ()
-    extends typings.winrtUwp.Windows.Devices.Spi.SpiDevice
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Spi.SpiDevice {
+    
+    /** Closes the connection to the device. */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /** Gets the connection settings for the device. */
+    /* CompleteClass */
+    var connectionSettings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings = js.native
+    
+    /** Gets the unique ID associated with the device. */
+    /* CompleteClass */
+    var deviceId: String = js.native
+    
+    /**
+      * Reads from the connected device.
+      * @return Array containing data read from the device.
+      */
+    /* CompleteClass */
+    override def read(): js.Array[Double] = js.native
+    
+    /**
+      * Transfer data using a full duplex communication system. Full duplex allows both the master and the slave to communicate simultaneously.
+      * @param writeBuffer Array containing data to write to the device.
+      * @return Array containing data read from the device.
+      */
+    /* CompleteClass */
+    override def transferFullDuplex(writeBuffer: js.Array[Double]): js.Array[Double] = js.native
+    
+    /**
+      * Transfer data sequentially to the device.
+      * @param writeBuffer Array containing data to write to the device.
+      * @return Array containing data read from the device.
+      */
+    /* CompleteClass */
+    override def transferSequential(writeBuffer: js.Array[Double]): js.Array[Double] = js.native
+    
+    /**
+      * Writes to the connected device.
+      * @param buffer Array containing the data to write to the device.
+      */
+    /* CompleteClass */
+    override def write(buffer: js.Array[Double]): Unit = js.native
+  }
   object SpiDevice {
+    
+    @JSGlobal("Windows.Devices.Spi.SpiDevice")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Opens a device with the connection settings provided.
@@ -133,9 +254,8 @@ object Spi {
       * @return The SPI device requested.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Spi.SpiDevice.fromIdAsync")
-    @js.native
-    def fromIdAsync(busId: String, settings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice] = js.native
+    @scala.inline
+    def fromIdAsync(busId: String, settings: typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(busId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Spi.SpiDevice]]
     
     /**
       * Retrieves the info about a certain bus.
@@ -143,27 +263,24 @@ object Spi {
       * @return The bus info requested.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Spi.SpiDevice.getBusInfo")
-    @js.native
-    def getBusInfo(busId: String): typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo = js.native
+    @scala.inline
+    def getBusInfo(busId: String): typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getBusInfo")(busId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Spi.SpiBusInfo]
     
     /**
       * Gets all the SPI buses found on the system.
       * @return String containing all the buses found on the system.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Spi.SpiDevice.getDeviceSelector")
-    @js.native
-    def getDeviceSelector(): String = js.native
+    @scala.inline
+    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     /**
       * Gets all the SPI buses found on the system that match the input parameter.
       * @param friendlyName Input parameter specifying an identifying name for the desired bus. This usually corresponds to a name on the schematic.
       * @return String containing all the buses that have the input in the name.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Spi.SpiDevice.getDeviceSelector")
-    @js.native
-    def getDeviceSelector(friendlyName: String): String = js.native
+    @scala.inline
+    def getDeviceSelector(friendlyName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(friendlyName.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Defines the SPI communication mode. The communication mode defines the clock edge on which the master out line toggles, the master in line samples, and the signal clock's signal steady level (named SCLK). Each mode is defined with a pair of parameters called clock polarity (CPOL) and clock phase (CPHA). */
@@ -172,15 +289,15 @@ object Spi {
   object SpiMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Spi.SpiMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Spi.SpiMode & Double] = js.native
     
-    /* 0 */ val mode0: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode0 with Double = js.native
+    /* 0 */ val mode0: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode0 & Double = js.native
     
-    /* 1 */ val mode1: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode1 with Double = js.native
+    /* 1 */ val mode1: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode1 & Double = js.native
     
-    /* 2 */ val mode2: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode2 with Double = js.native
+    /* 2 */ val mode2: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode2 & Double = js.native
     
-    /* 3 */ val mode3: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode3 with Double = js.native
+    /* 3 */ val mode3: typings.winrtUwp.Windows.Devices.Spi.SpiMode.mode3 & Double = js.native
   }
   
   /** Defines the sharing mode for the SPI bus. */
@@ -189,10 +306,10 @@ object Spi {
   object SpiSharingMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode & Double] = js.native
     
-    /* 0 */ val exclusive: typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode.exclusive with Double = js.native
+    /* 0 */ val exclusive: typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode.exclusive & Double = js.native
     
-    /* 1 */ val shared: typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode.shared with Double = js.native
+    /* 1 */ val shared: typings.winrtUwp.Windows.Devices.Spi.SpiSharingMode.shared & Double = js.native
   }
 }

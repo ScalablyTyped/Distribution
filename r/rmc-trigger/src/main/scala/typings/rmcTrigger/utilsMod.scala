@@ -2,20 +2,20 @@ package typings.rmcTrigger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("rmc-trigger/lib/utils", "getAlignFromPlacement")
+  @JSImport("rmc-trigger/lib/utils", JSImport.Namespace)
   @js.native
-  def getAlignFromPlacement(builtinPlacements: js.Any, placementStr: js.Any, align: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rmc-trigger/lib/utils", "getPopupClassNameFromAlign")
-  @js.native
-  def getPopupClassNameFromAlign(builtinPlacements: js.Any, prefixCls: js.Any, align: js.Any): String = js.native
+  @scala.inline
+  def getAlignFromPlacement(builtinPlacements: js.Any, placementStr: js.Any, align: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlignFromPlacement")(builtinPlacements.asInstanceOf[js.Any], placementStr.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rmc-trigger/lib/utils", "saveRef")
-  @js.native
-  def saveRef(name: js.Any, component: js.Any): Unit = js.native
+  @scala.inline
+  def getPopupClassNameFromAlign(builtinPlacements: js.Any, prefixCls: js.Any, align: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPopupClassNameFromAlign")(builtinPlacements.asInstanceOf[js.Any], prefixCls.asInstanceOf[js.Any], align.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def saveRef(name: js.Any, component: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveRef")(name.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

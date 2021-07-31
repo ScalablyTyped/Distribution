@@ -3,35 +3,35 @@ package typings.tuyaPanelKit.mod
 import typings.tuyaPanelKit.anon.MaxValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DoubleProps extends ProgressProps {
+trait DoubleProps
+  extends StObject
+     with ProgressProps {
   
-  var endColor: js.UndefOr[String] = js.native
+  var endColor: js.UndefOr[String] = js.undefined
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minThumbFill: js.UndefOr[String] = js.native
+  var minThumbFill: js.UndefOr[String] = js.undefined
   
-  var minThumbStroke: js.UndefOr[String] = js.native
+  var minThumbStroke: js.UndefOr[String] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
-  var onSlidingComplete: js.UndefOr[js.Function1[/* argus */ MaxValue, Unit]] = js.native
+  var onSlidingComplete: js.UndefOr[js.Function1[/* argus */ MaxValue, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* argus */ MaxValue, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* argus */ MaxValue, Unit]] = js.undefined
   
-  var startColor: js.UndefOr[String] = js.native
+  var startColor: js.UndefOr[String] = js.undefined
   
-  var thumbFill: js.UndefOr[String] = js.native
+  var thumbFill: js.UndefOr[String] = js.undefined
   
-  var thumbRadius: js.UndefOr[Double] = js.native
+  var thumbRadius: js.UndefOr[Double] = js.undefined
   
-  var thumbStroke: js.UndefOr[String] = js.native
+  var thumbStroke: js.UndefOr[String] = js.undefined
   
-  var thumbStrokeWidth: js.UndefOr[Double] = js.native
+  var thumbStrokeWidth: js.UndefOr[Double] = js.undefined
 }
 object DoubleProps {
   

@@ -2,91 +2,89 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePipeline extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date on which this image pipeline was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date on which this image pipeline was last run.
     */
-  var dateLastRun: js.UndefOr[DateTime] = js.native
+  var dateLastRun: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date on which this image pipeline will next be run.
     */
-  var dateNextRun: js.UndefOr[DateTime] = js.native
+  var dateNextRun: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date on which this image pipeline was last updated.
     */
-  var dateUpdated: js.UndefOr[DateTime] = js.native
+  var dateUpdated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the image pipeline.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the distribution configuration associated with this image pipeline.
     */
-  var distributionConfigurationArn: js.UndefOr[Arn] = js.native
+  var distributionConfigurationArn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
     */
-  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image recipe associated with this image pipeline.
     */
-  var imageRecipeArn: js.UndefOr[Arn] = js.native
+  var imageRecipeArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The image tests configuration of the image pipeline.
     */
-  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.native
+  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration associated with this image pipeline.
     */
-  var infrastructureConfigurationArn: js.UndefOr[Arn] = js.native
+  var infrastructureConfigurationArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the image pipeline.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The platform of the image pipeline.
     */
-  var platform: js.UndefOr[Platform] = js.native
+  var platform: js.UndefOr[Platform] = js.undefined
   
   /**
     * The schedule of the image pipeline.
     */
-  var schedule: js.UndefOr[Schedule] = js.native
+  var schedule: js.UndefOr[Schedule] = js.undefined
   
   /**
     * The status of the image pipeline.
     */
-  var status: js.UndefOr[PipelineStatus] = js.native
+  var status: js.UndefOr[PipelineStatus] = js.undefined
   
   /**
     * The tags of this image pipeline.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object ImagePipeline {
   

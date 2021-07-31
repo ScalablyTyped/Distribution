@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an error that occurred. */
-@js.native
 trait ErrorDetails extends StObject {
   
   /** Gets a short description of the error. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the address to a help page about the error. */
-  var helpUri: Uri = js.native
+  var helpUri: Uri
   
   /** Gets a detailed description of the error. */
-  var longDescription: String = js.native
+  var longDescription: String
 }
 object ErrorDetails {
   

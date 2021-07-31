@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.SymbolDefinition")
 @js.native
 class SymbolDefinition protected ()
-  extends typings.paper.paper.SymbolDefinition {
+  extends StObject
+     with typings.paper.paper.SymbolDefinition {
   /** 
     * Creates a Symbol definition.
     * 

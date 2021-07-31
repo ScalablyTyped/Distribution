@@ -91,7 +91,6 @@ import typings.semanticUiEmbed.semanticUiEmbedStrings.url
 import typings.semanticUiEmbed.semanticUiEmbedStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -140,63 +139,68 @@ object SemanticUI {
       * Removes embed and shows placeholder content if available
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: autoplay, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
     def apply(behavior: setting, name: autoplay, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: autoplay, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: autoplay, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: brandedUI, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: brandedUI, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: color, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: brandedUI, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: color, value: String): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: color, value: Unit): String = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-    def apply(behavior: setting, name: hd, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
     def apply(behavior: setting, name: hd, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: icon, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: hd, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: icon, value: String): JQuery = js.native
+    def apply(behavior: setting, name: icon, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: icon, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: id, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
     def apply(behavior: setting, name: id, value: String): JQuery = js.native
+    def apply(behavior: setting, name: id, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: id, value: `false`): JQuery = js.native
+    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
     def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onCreate, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(
       behavior: setting,
       name: onCreate,
       value: js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onDisplay, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onCreate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit] = js.native
     def apply(behavior: setting, name: onDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onEmbed, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings] = js.native
+    def apply(behavior: setting, name: onDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onEmbed,
       value: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onPlaceholderDisplay, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onEmbed, value: Unit): js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings] = js.native
     def apply(behavior: setting, name: onPlaceholderDisplay, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: parameters, value: js.UndefOr[scala.Nothing]): `false` | ParametersSettings = js.native
+    def apply(behavior: setting, name: onPlaceholderDisplay, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: parameters, value: Unit): `false` | ParametersSettings = js.native
     def apply(behavior: setting, name: parameters, value: ParametersSettings): JQuery = js.native
     def apply(behavior: setting, name: parameters, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: source, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: source, value: String): JQuery = js.native
+    def apply(behavior: setting, name: source, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: source, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: templates, value: js.UndefOr[scala.Nothing]): TemplatesSettings = js.native
-    def apply(behavior: setting, name: url, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: templates, value: Unit): TemplatesSettings = js.native
+    def apply(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
     def apply(behavior: setting, name: url, value: String): JQuery = js.native
+    def apply(behavior: setting, name: url, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: url, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: EmbedSettings): JQuery = js.native
     /**
       * Shows embed content
@@ -210,18 +214,17 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'embed'
           */
-        var embed: String = js.native
+        var embed: String
       }
       object Impl {
         
@@ -242,24 +245,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplembed) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplembed) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'No URL specified'
           */
-        var noURL: String = js.native
+        var noURL: String
       }
       object Impl {
         
@@ -280,39 +282,38 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplnoURL | PickImplmethod) with PartialPickImplkeyofImplMethod
+      type Param = (PickImplnoURL | PickImplmethod) & PartialPickImplkeyofImplMethod
     }
     type ErrorSettings = typings.semanticUiEmbed.SemanticUI.Embed.ErrorSettings.Param
     
     object MetadataSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'icon'
           */
-        var icon: String = js.native
+        var icon: String
         
         /**
           * @default 'id'
           */
-        var id: String = js.native
+        var id: String
         
         /**
           * @default 'placeholder'
           */
-        var placeholder: String = js.native
+        var placeholder: String
         
         /**
           * @default 'source'
           */
-        var source: String = js.native
+        var source: String
         
         /**
           * @default 'url'
           */
-        var url: String = js.native
+        var url: String
       }
       object Impl {
         
@@ -342,7 +343,7 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplidId | PickImpliconIcon | PickImplplaceholder | PickImplsourceSource | PickImplurlUrl) with PartialPickImplkeyofImplIcon
+      type Param = (PickImplidId | PickImpliconIcon | PickImplplaceholder | PickImplsourceSource | PickImplurlUrl) & PartialPickImplkeyofImplIcon
     }
     type MetadataSettings = typings.semanticUiEmbed.SemanticUI.Embed.MetadataSettings.Param
     
@@ -356,23 +357,22 @@ object SemanticUI {
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.embed'
           */
-        var embed: String = js.native
+        var embed: String
         
         /**
           * @default '.placeholder'
           */
-        var placeholder: String = js.native
+        var placeholder: String
         
         /**
           * @default '.play'
           */
-        var play: String = js.native
+        var play: String
       }
       object Impl {
         
@@ -396,24 +396,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplembed | PickImplplaceholder | PickImplplay) with PartialPickImplkeyofImplEmbed
+      type Param = (PickImplembed | PickImplplaceholder | PickImplplay) & PartialPickImplkeyofImplEmbed
     }
     type SelectorSettings = typings.semanticUiEmbed.SemanticUI.Embed.SelectorSettings.Param
     
     object TemplatesSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * returns html for iframe
           */
-        def iframe(url: String, parameters: String): String = js.native
+        def iframe(url: String, parameters: String): String
         
         /**
           * returns html for placeholder element
           */
-        def placeholder(image: String, icon: String): String = js.native
+        def placeholder(image: String, icon: String): String
       }
       object Impl {
         
@@ -434,14 +433,13 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpliframe | PickImplplaceholderPlaceholder) with PartialPickImplkeyofImplIframe
+      type Param = (PickImpliframe | PickImplplaceholderPlaceholder) & PartialPickImplkeyofImplIframe
     }
     type TemplatesSettings = typings.semanticUiEmbed.SemanticUI.Embed.TemplatesSettings.Param
   }
   
   object EmbedSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       // endregion
@@ -451,42 +449,42 @@ object SemanticUI {
         *
         * @default 'auto'
         */
-      var autoplay: auto | Boolean = js.native
+      var autoplay: auto | Boolean
       
       /**
         * Whether to show networks branded UI like title cards, or after video calls to action.
         *
         * @default false
         */
-      var brandedUI: Boolean = js.native
+      var brandedUI: Boolean
       
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Specifies a default chrome color with Vimeo or YouTube.
         *
         * @default '#444444'
         */
-      var color: String = js.native
+      var color: String
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether to prefer HD content
         *
         * @default true
         */
-      var hd: Boolean = js.native
+      var hd: Boolean
       
       // region Embed Settings
       /**
@@ -494,26 +492,26 @@ object SemanticUI {
         *
         * @default false
         */
-      var icon: `false` | String = js.native
+      var icon: `false` | String
       
       /**
         * Specifies an id value to replace with the {id} value found in templated urls
         *
         * @default false
         */
-      var id: `false` | String = js.native
+      var id: `false` | String
       
       /**
         * HTML Data attributes used to store data
         */
-      var metadata: MetadataSettings = js.native
+      var metadata: MetadataSettings
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -521,74 +519,74 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       // endregion
       // region Callbacks
       /**
         * Callback when iframe is generated
         */
-      def onCreate(url: String): Unit = js.native
+      def onCreate(url: String): Unit
       
       /**
         * Whenever an iframe contents is shown
         */
-      def onDisplay(): Unit = js.native
+      def onDisplay(): Unit
       
       /**
         * Callback when module parameters are determined. Allows you to adjust parameters at run time by returning a new parameters object.
         */
-      def onEmbed(parameters: ParametersSettings): ParametersSettings = js.native
+      def onEmbed(parameters: ParametersSettings): ParametersSettings
       
       /**
         * Callback immediately before Embed is removed from DOM
         */
-      def onPlaceholderDisplay(): Unit = js.native
+      def onPlaceholderDisplay(): Unit
       
       /**
         * Specify an object containing key/value pairs to add to the iframes GET parameters
         *
         * @default false
         */
-      var parameters: `false` | ParametersSettings = js.native
+      var parameters: `false` | ParametersSettings
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * DOM Selectors used internally
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * Specifies a source to use, if no source is provided it will be determined from the domain of a specified url.
         *
         * @default false
         */
-      var source: `false` | String = js.native
+      var source: `false` | String
       
-      var templates: TemplatesSettings = js.native
+      var templates: TemplatesSettings
       
       /**
         * Specifies a url to use for embed
         *
         * @default false
         */
-      var url: `false` | String = js.native
+      var url: `false` | String
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -700,7 +698,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplurl | PickImplicon | PickImplsource | PickImplid | PickImplparameters | PickImplautoplay | PickImplcolor | PickImplhd | PickImplbrandedUI | PickImplonCreate | PickImplonDisplay | PickImplonPlaceholderDisp | PickImplonEmbed | PickImplselector | PickImplmetadata | PickImplclassName | PickImpltemplates | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplurl | PickImplicon | PickImplsource | PickImplid | PickImplparameters | PickImplautoplay | PickImplcolor | PickImplhd | PickImplbrandedUI | PickImplonCreate | PickImplonDisplay | PickImplonPlaceholderDisp | PickImplonEmbed | PickImplselector | PickImplmetadata | PickImplclassName | PickImpltemplates | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/embed.html#/settings}

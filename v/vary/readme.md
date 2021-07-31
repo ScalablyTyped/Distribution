@@ -11,8 +11,8 @@ Manipulate the HTTP Vary header
 | Full name          | vary |
 | Keywords           | http, res, vary |
 | # releases         | 0 |
-| # dependents       | 288 |
-| # downloads        | 555462533 |
+| # dependents       | 329 |
+| # downloads        | 657909221 |
 | # stars            | 8 |
 
 ## Links

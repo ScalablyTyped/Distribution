@@ -2,33 +2,31 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base Auth provider configuration interface.
   */
-@js.native
 trait AuthProviderConfig extends StObject {
   
   /**
     * The user-friendly display name to the current configuration. This name is
     * also used as the provider label in the Cloud Console.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the provider configuration is enabled or disabled. A user
     * cannot sign in using a disabled provider.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * The provider ID defined by the developer.
     * For a SAML provider, this is always prefixed by `saml.`.
     * For an OIDC provider, this is always prefixed by `oidc.`.
     */
-  var providerId: String = js.native
+  var providerId: String
 }
 object AuthProviderConfig {
   

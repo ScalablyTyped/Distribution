@@ -2,36 +2,34 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NeighborConnectionDetail extends StObject {
   
   /**
     * The number of open network connections with the neighboring server.
     */
-  var connectionsCount: Long = js.native
+  var connectionsCount: Long
   
   /**
     * The destination network port for the connection.
     */
-  var destinationPort: js.UndefOr[BoxedInteger] = js.native
+  var destinationPort: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * The ID of the server that accepted the network connection.
     */
-  var destinationServerId: ConfigurationId = js.native
+  var destinationServerId: ConfigurationId
   
   /**
     * The ID of the server that opened the network connection.
     */
-  var sourceServerId: ConfigurationId = js.native
+  var sourceServerId: ConfigurationId
   
   /**
     * The network protocol used for the connection.
     */
-  var transportProtocol: js.UndefOr[String] = js.native
+  var transportProtocol: js.UndefOr[String] = js.undefined
 }
 object NeighborConnectionDetail {
   

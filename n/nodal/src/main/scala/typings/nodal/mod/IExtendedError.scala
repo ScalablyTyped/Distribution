@@ -3,15 +3,15 @@ package typings.nodal.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IExtendedError extends Error {
+trait IExtendedError
+  extends StObject
+     with Error {
   
-  var details: js.UndefOr[js.Object] = js.native
+  var details: js.UndefOr[js.Object] = js.undefined
   
-  var notFound: js.UndefOr[Boolean] = js.native
+  var notFound: js.UndefOr[Boolean] = js.undefined
 }
 object IExtendedError {
   

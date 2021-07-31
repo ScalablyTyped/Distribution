@@ -7,25 +7,26 @@ import typings.singleSpaReact.anon.TypeofReactDOM
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: Options): Lifecycles = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Lifecycles]
+  
   @JSImport("single-spa-react", JSImport.Namespace)
   @js.native
-  def apply(opts: Options): Lifecycles = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Lifecycles extends StObject {
     
-    def bootstrap(props: js.Any): js.Promise[Unit] = js.native
+    def bootstrap(props: js.Any): js.Promise[Unit]
     
-    def mount(props: js.Any): js.Promise[Unit] = js.native
+    def mount(props: js.Any): js.Promise[Unit]
     
-    def unmount(props: js.Any): js.Promise[Unit] = js.native
+    def unmount(props: js.Any): js.Promise[Unit]
     
-    var update: js.UndefOr[js.Function1[/* props */ js.Any, js.Promise[Unit]]] = js.native
+    var update: js.UndefOr[js.Function1[/* props */ js.Any, js.Promise[Unit]]] = js.undefined
   }
   object Lifecycles {
     
@@ -59,22 +60,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var React: TypeofReact = js.native
+    var React: TypeofReact
     
-    var ReactDOM: TypeofReactDOM = js.native
+    var ReactDOM: TypeofReactDOM
     
-    var domElementGetter: js.UndefOr[js.Function0[Element]] = js.native
+    var domElementGetter: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var loadRootComponent: js.UndefOr[js.Function0[js.Promise[(ComponentClass[_, _]) | FunctionComponent[_]]]] = js.native
+    var loadRootComponent: js.UndefOr[
+        js.Function0[js.Promise[(ComponentClass[js.Any, js.Any]) | FunctionComponent[js.Any]]]
+      ] = js.undefined
     
-    var parcelCanUpdate: js.UndefOr[Boolean] = js.native
+    var parcelCanUpdate: js.UndefOr[Boolean] = js.undefined
     
-    var rootComponent: js.UndefOr[(ComponentClass[_, _]) | FunctionComponent[_]] = js.native
+    var rootComponent: js.UndefOr[(ComponentClass[js.Any, js.Any]) | FunctionComponent[js.Any]] = js.undefined
     
-    var suppressComponentDidCatchWarning: js.UndefOr[Boolean] = js.native
+    var suppressComponentDidCatchWarning: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -94,7 +96,7 @@ object mod {
       def setDomElementGetterUndefined: Self = StObject.set(x, "domElementGetter", js.undefined)
       
       @scala.inline
-      def setLoadRootComponent(value: () => js.Promise[(ComponentClass[_, _]) | FunctionComponent[_]]): Self = StObject.set(x, "loadRootComponent", js.Any.fromFunction0(value))
+      def setLoadRootComponent(value: () => js.Promise[(ComponentClass[js.Any, js.Any]) | FunctionComponent[js.Any]]): Self = StObject.set(x, "loadRootComponent", js.Any.fromFunction0(value))
       
       @scala.inline
       def setLoadRootComponentUndefined: Self = StObject.set(x, "loadRootComponent", js.undefined)
@@ -112,7 +114,7 @@ object mod {
       def setReactDOM(value: TypeofReactDOM): Self = StObject.set(x, "ReactDOM", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRootComponent(value: (ComponentClass[_, _]) | FunctionComponent[_]): Self = StObject.set(x, "rootComponent", value.asInstanceOf[js.Any])
+      def setRootComponent(value: (ComponentClass[js.Any, js.Any]) | FunctionComponent[js.Any]): Self = StObject.set(x, "rootComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRootComponentUndefined: Self = StObject.set(x, "rootComponent", js.undefined)

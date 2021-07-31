@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupSetting extends Entity {
+trait GroupSetting
+  extends StObject
+     with Entity {
   
   // Display name of this group of settings, which comes from the associated template.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique identifier for the template used to create this group of settings. Read-only.
-  var templateId: js.UndefOr[NullableOption[String]] = js.native
+  var templateId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Collection of name value pairs. Must contain and set all the settings defined in the template.
-  var values: js.UndefOr[js.Array[SettingValue]] = js.native
+  var values: js.UndefOr[js.Array[SettingValue]] = js.undefined
 }
 object GroupSetting {
   

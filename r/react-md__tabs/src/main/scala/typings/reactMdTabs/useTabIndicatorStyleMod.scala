@@ -12,44 +12,48 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTabIndicatorStyleMod {
+  
+  @JSImport("@react-md/tabs/types/useTabIndicatorStyle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/tabs/types/useTabIndicatorStyle", "UpdateIndicatorStylesProvider")
   @js.native
   val UpdateIndicatorStylesProvider: Provider[UpdateIndicatorStyles] = js.native
   
-  @JSImport("@react-md/tabs/types/useTabIndicatorStyle", "useTabIndicatorStyle")
-  @js.native
-  def useTabIndicatorStyle(hasStyleRefAlignItemRefsTotalTabsActiveIndex: Options): ReturnValue = js.native
+  @scala.inline
+  def useTabIndicatorStyle(hasStylePropRefAlignItemRefsTotalTabsActiveIndex: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabIndicatorStyle")(hasStylePropRefAlignItemRefsTotalTabsActiveIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
-  @JSImport("@react-md/tabs/types/useTabIndicatorStyle", "useUpdateIndicatorStyles")
-  @js.native
-  def useUpdateIndicatorStyles(): UpdateIndicatorStyles = js.native
+  @scala.inline
+  def useUpdateIndicatorStyles(): UpdateIndicatorStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("useUpdateIndicatorStyles")().asInstanceOf[UpdateIndicatorStyles]
   
-  type CSSProperties = typings.react.mod.CSSProperties with CSSVariables
+  @js.native
+  trait CSSProperties
+    extends StObject
+       with typings.react.mod.CSSProperties
+       with CSSVariables
   
   @js.native
   trait CSSVariables extends StObject
   
   type MergedTabRef = js.Function1[/* instance */ HTMLDivElement | Null, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
-    var align: left | center | right = js.native
+    var align: left | center | right
     
-    var itemRefs: ItemRefList[HTMLElement] = js.native
+    var itemRefs: ItemRefList[HTMLElement]
     
-    var ref: js.UndefOr[Ref[HTMLDivElement | Null]] = js.native
+    var ref: js.UndefOr[Ref[HTMLDivElement | Null]] = js.undefined
     
-    var style: js.UndefOr[typings.react.mod.CSSProperties] = js.native
+    var style: js.UndefOr[typings.react.mod.CSSProperties] = js.undefined
     
-    var totalTabs: Double = js.native
+    var totalTabs: Double
   }
   object Options {
     

@@ -15,7 +15,6 @@ import typings.devtoolsProtocol.mod.Protocol.DOMStorage.RemoveDOMStorageItemRequ
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.SetDOMStorageItemRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,17 +2,15 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinLength extends StObject {
   
-  var maxLength: Double = js.native
+  var maxLength: Double
   
-  var messageTemplate: js.UndefOr[String] = js.native
+  var messageTemplate: js.UndefOr[String] = js.undefined
   
-  var minLength: Double = js.native
+  var minLength: Double
 }
 object MinLength {
   

@@ -2,33 +2,31 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The response sent by the workspace, including the output text, detected intents and entities, and context. */
-@js.native
 trait MessageResponse extends StObject {
   
   /** An array of objects describing any actions requested by the dialog node. */
-  var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.native
+  var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.undefined
   
   /** Whether to return more than one intent. A value of `true` indicates that all matching intents are returned. */
-  var alternate_intents: js.UndefOr[Boolean] = js.native
+  var alternate_intents: js.UndefOr[Boolean] = js.undefined
   
   /** State information for the conversation. To maintain state, include the context from the previous response. */
-  var context: Context = js.native
+  var context: Context
   
   /** An array of entities identified in the user input. */
-  var entities: js.Array[RuntimeEntity] = js.native
+  var entities: js.Array[RuntimeEntity]
   
   /** An input object that includes the input text. */
-  var input: MessageInput = js.native
+  var input: MessageInput
   
   /** An array of intents recognized in the user input, sorted in descending order of confidence. */
-  var intents: js.Array[RuntimeIntent] = js.native
+  var intents: js.Array[RuntimeIntent]
   
   /** An output object that includes the response to the user, the dialog nodes that were triggered, and messages from the log. */
-  var output: OutputData = js.native
+  var output: OutputData
 }
 object MessageResponse {
   

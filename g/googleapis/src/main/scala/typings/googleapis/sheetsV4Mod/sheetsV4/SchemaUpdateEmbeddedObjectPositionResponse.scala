@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of updating an embedded object&#39;s position.
   */
-@js.native
 trait SchemaUpdateEmbeddedObjectPositionResponse extends StObject {
   
   /**
     * The new position of the embedded object.
     */
-  var position: js.UndefOr[SchemaEmbeddedObjectPosition] = js.native
+  var position: js.UndefOr[SchemaEmbeddedObjectPosition] = js.undefined
 }
 object SchemaUpdateEmbeddedObjectPositionResponse {
   

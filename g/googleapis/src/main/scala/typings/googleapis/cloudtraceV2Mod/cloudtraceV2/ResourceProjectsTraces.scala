@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudtrace/v2", "cloudtrace_v2.Resource$Projects$Traces")
@@ -30,7 +29,7 @@ class ResourceProjectsTraces protected () extends StObject {
     */
   def batchWrite(): GaxiosPromise[SchemaEmpty] = js.native
   def batchWrite(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def batchWrite(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def batchWrite(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def batchWrite(params: ParamsResourceProjectsTracesBatchwrite): GaxiosPromise[SchemaEmpty] = js.native
   def batchWrite(params: ParamsResourceProjectsTracesBatchwrite, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def batchWrite(

@@ -3,7 +3,6 @@ package typings.jsfl
 import typings.jsfl.anon.Keyframe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -76,7 +75,7 @@ trait FlashFL extends StObject {
   def findObjectInDocByName(instanceName: String, document: FlashDocument): js.Array[Keyframe] = js.native
   
   /** elementType = "shape", "text", "instance", or "shapeObj". */
-  def findObjectInDocByType(elementType: String, document: FlashDocument): js.Array[_] = js.native
+  def findObjectInDocByType(elementType: String, document: FlashDocument): js.Array[js.Any] = js.native
   
   var flexSDKPath: String = js.native
   
@@ -93,7 +92,7 @@ trait FlashFL extends StObject {
   //getProject();
   def getSwfPanel(): js.Any = js.native
   
-  var installedPlayers: js.Array[_] = js.native
+  var installedPlayers: js.Array[js.Any] = js.native
   
   def isFontInstalled(): js.Any = js.native
   
@@ -115,9 +114,9 @@ trait FlashFL extends StObject {
   
   //openProject();
   def openScript(fileURI: String): Unit = js.native
-  def openScript(fileURI: String, createExtension: js.UndefOr[scala.Nothing], className: String): Unit = js.native
   def openScript(fileURI: String, createExtension: String): Unit = js.native
   def openScript(fileURI: String, createExtension: String, className: String): Unit = js.native
+  def openScript(fileURI: String, createExtension: Unit, className: String): Unit = js.native
   
   var outputPanel: FlashOutputPanel = js.native
   
@@ -150,9 +149,9 @@ trait FlashFL extends StObject {
   
   //revertDocumentToLastVersion();
   def runScript(fileURI: String): js.Any = js.native
-  def runScript(fileURI: String, funcName: js.UndefOr[scala.Nothing], args: js.Array[_]): js.Any = js.native
   def runScript(fileURI: String, funcName: js.Function): js.Any = js.native
-  def runScript(fileURI: String, funcName: js.Function, args: js.Array[_]): js.Any = js.native
+  def runScript(fileURI: String, funcName: js.Function, args: js.Array[js.Any]): js.Any = js.native
+  def runScript(fileURI: String, funcName: Unit, args: js.Array[js.Any]): js.Any = js.native
   
   def saveAll(): Unit = js.native
   

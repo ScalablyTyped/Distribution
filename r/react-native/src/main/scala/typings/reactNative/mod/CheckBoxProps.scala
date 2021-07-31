@@ -2,31 +2,31 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckBoxProps extends ViewProps {
+trait CheckBoxProps
+  extends StObject
+     with ViewProps {
   
   /**
     * If true the user won't be able to toggle the checkbox. Default value is false.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used in case the props change removes the component.
     */
-  var onChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
   
   /**
     * Invoked with the new value when the value changes.
     */
-  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
   
   /**
     * The value of the checkbox. If true the checkbox will be turned on. Default value is false.
     */
-  var value: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Boolean] = js.undefined
 }
 object CheckBoxProps {
   

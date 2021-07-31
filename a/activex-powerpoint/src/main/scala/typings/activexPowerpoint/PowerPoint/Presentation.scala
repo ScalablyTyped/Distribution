@@ -25,7 +25,6 @@ import typings.activexOffice.Office.WorkflowTasks
 import typings.activexOffice.Office.WorkflowTemplates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,51 +54,31 @@ trait Presentation extends StObject {
   
   /** @param boolean [SaveChanges=true] */
   def CheckIn(): Unit = js.native
-  def CheckIn(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: js.Any): Unit = js.native
   def CheckIn(SaveChanges: Boolean): Unit = js.native
-  def CheckIn(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any): Unit = js.native
   def CheckIn(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
   def CheckIn(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any): Unit = js.native
   
   /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Comments: js.UndefOr[scala.Nothing],
-    MakePublic: js.UndefOr[scala.Nothing],
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Comments: js.UndefOr[scala.Nothing],
-    MakePublic: js.Any,
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Comments: js.Any,
-    MakePublic: js.UndefOr[scala.Nothing],
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: Boolean,
-    Comments: js.UndefOr[scala.Nothing],
-    MakePublic: js.UndefOr[scala.Nothing],
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any, VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.UndefOr[scala.Nothing], VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
   
   def Close(): Unit = js.native
   
@@ -131,192 +110,12 @@ trait Presentation extends StObject {
     * @param number [Quality=85]
     */
   def CreateVideo(FileName: String): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double,
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double,
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double,
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(FileName: String, UseTimingsAndNarrations: js.UndefOr[scala.Nothing], DefaultSlideDuration: Double): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: Double,
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: Double,
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: js.UndefOr[scala.Nothing],
-    DefaultSlideDuration: Double,
-    VertResolution: Double,
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
   def CreateVideo(FileName: String, UseTimingsAndNarrations: Boolean): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double,
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double,
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: js.UndefOr[scala.Nothing],
-    VertResolution: Double,
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
   def CreateVideo(FileName: String, UseTimingsAndNarrations: Boolean, DefaultSlideDuration: Double): Unit = js.native
   def CreateVideo(
     FileName: String,
     UseTimingsAndNarrations: Boolean,
     DefaultSlideDuration: Double,
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: Double,
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: Double,
-    VertResolution: js.UndefOr[scala.Nothing],
-    FramesPerSecond: Double,
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: Double,
     VertResolution: Double
   ): Unit = js.native
   def CreateVideo(
@@ -324,14 +123,6 @@ trait Presentation extends StObject {
     UseTimingsAndNarrations: Boolean,
     DefaultSlideDuration: Double,
     VertResolution: Double,
-    FramesPerSecond: js.UndefOr[scala.Nothing],
-    Quality: Double
-  ): Unit = js.native
-  def CreateVideo(
-    FileName: String,
-    UseTimingsAndNarrations: Boolean,
-    DefaultSlideDuration: Double,
-    VertResolution: Double,
     FramesPerSecond: Double
   ): Unit = js.native
   def CreateVideo(
@@ -340,6 +131,194 @@ trait Presentation extends StObject {
     DefaultSlideDuration: Double,
     VertResolution: Double,
     FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Double,
+    VertResolution: Double,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Double,
+    VertResolution: Unit,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Double,
+    VertResolution: Unit,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Double,
+    VertResolution: Unit,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Unit,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Unit,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Boolean,
+    DefaultSlideDuration: Unit,
+    VertResolution: Unit,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(FileName: String, UseTimingsAndNarrations: Unit, DefaultSlideDuration: Double): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Double,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Double,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Double,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Unit,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Unit,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Double,
+    VertResolution: Unit,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Double,
+    FramesPerSecond: Unit,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Unit,
+    FramesPerSecond: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Unit,
+    FramesPerSecond: Double,
+    Quality: Double
+  ): Unit = js.native
+  def CreateVideo(
+    FileName: String,
+    UseTimingsAndNarrations: Unit,
+    DefaultSlideDuration: Unit,
+    VertResolution: Unit,
+    FramesPerSecond: Unit,
     Quality: Double
   ): Unit = js.native
   
@@ -387,9 +366,9 @@ trait Presentation extends StObject {
     * @param number [ScaleHeight=0]
     */
   def Export(Path: String, FilterName: String): Unit = js.native
-  def Export(Path: String, FilterName: String, ScaleWidth: js.UndefOr[scala.Nothing], ScaleHeight: Double): Unit = js.native
   def Export(Path: String, FilterName: String, ScaleWidth: Double): Unit = js.native
   def Export(Path: String, FilterName: String, ScaleWidth: Double, ScaleHeight: Double): Unit = js.native
+  def Export(Path: String, FilterName: String, ScaleWidth: Unit, ScaleHeight: Double): Unit = js.native
   
   /**
     * @param PowerPoint.PpFixedFormatIntent [Intent=1]
@@ -534,147 +513,37 @@ trait Presentation extends StObject {
     * @param Office.MsoTriState [Collate=-99]
     */
   def PrintOut(): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: js.UndefOr[scala.Nothing], PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double, PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double, PrintToFile: String, Copies: Double): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: String,
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: Double, To: js.UndefOr[scala.Nothing], PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: Double, To: js.UndefOr[scala.Nothing], PrintToFile: String, Copies: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double, To: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: Double, To: Double, PrintToFile: js.UndefOr[scala.Nothing], Copies: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: Double,
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Double): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
   
   val PublishObjects: typings.activexPowerpoint.PowerPoint.PublishObjects = js.native
   
@@ -683,9 +552,9 @@ trait Presentation extends StObject {
     * @param boolean [UseSlideOrder=false]
     */
   def PublishSlides(SlideLibraryUrl: String): Unit = js.native
-  def PublishSlides(SlideLibraryUrl: String, Overwrite: js.UndefOr[scala.Nothing], UseSlideOrder: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean, UseSlideOrder: Boolean): Unit = js.native
+  def PublishSlides(SlideLibraryUrl: String, Overwrite: Unit, UseSlideOrder: Boolean): Unit = js.native
   
   val ReadOnly: MsoTriState = js.native
   
@@ -712,7 +581,7 @@ trait Presentation extends StObject {
     * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
     */
   def SaveAs(FileName: String): Unit = js.native
-  def SaveAs(FileName: String, FileFormat: js.UndefOr[scala.Nothing], EmbedTrueTypeFonts: MsoTriState): Unit = js.native
+  def SaveAs(FileName: String, FileFormat: Unit, EmbedTrueTypeFonts: MsoTriState): Unit = js.native
   def SaveAs(FileName: String, FileFormat: PpSaveAsFileType): Unit = js.native
   def SaveAs(FileName: String, FileFormat: PpSaveAsFileType, EmbedTrueTypeFonts: MsoTriState): Unit = js.native
   
@@ -721,7 +590,7 @@ trait Presentation extends StObject {
     * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
     */
   def SaveCopyAs(FileName: String): Unit = js.native
-  def SaveCopyAs(FileName: String, FileFormat: js.UndefOr[scala.Nothing], EmbedTrueTypeFonts: MsoTriState): Unit = js.native
+  def SaveCopyAs(FileName: String, FileFormat: Unit, EmbedTrueTypeFonts: MsoTriState): Unit = js.native
   def SaveCopyAs(FileName: String, FileFormat: PpSaveAsFileType): Unit = js.native
   def SaveCopyAs(FileName: String, FileFormat: PpSaveAsFileType, EmbedTrueTypeFonts: MsoTriState): Unit = js.native
   
@@ -737,13 +606,13 @@ trait Presentation extends StObject {
     * @param boolean [ShowMessage=false]
     */
   def SendFaxOverInternet(): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: String): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: String, ShowMessage: Boolean): Unit = js.native
   def SendFaxOverInternet(Recipients: String): Unit = js.native
-  def SendFaxOverInternet(Recipients: String, Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
   def SendFaxOverInternet(Recipients: String, Subject: String): Unit = js.native
   def SendFaxOverInternet(Recipients: String, Subject: String, ShowMessage: Boolean): Unit = js.native
+  def SendFaxOverInternet(Recipients: String, Subject: Unit, ShowMessage: Boolean): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: String): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: String, ShowMessage: Boolean): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: Unit, ShowMessage: Boolean): Unit = js.native
   
   /**
     * @param string [Recipients='']
@@ -751,56 +620,21 @@ trait Presentation extends StObject {
     * @param boolean [ShowMessage=true]
     */
   def SendForReview(): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: js.Any
-  ): Unit = js.native
-  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: Boolean,
-    IncludeAttachment: js.Any
-  ): Unit = js.native
-  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: String): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: String,
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: js.Any
-  ): Unit = js.native
-  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: String, ShowMessage: Boolean): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: String,
-    ShowMessage: Boolean,
-    IncludeAttachment: js.Any
-  ): Unit = js.native
   def SendForReview(Recipients: String): Unit = js.native
-  def SendForReview(
-    Recipients: String,
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: js.Any
-  ): Unit = js.native
-  def SendForReview(Recipients: String, Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
-  def SendForReview(
-    Recipients: String,
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: Boolean,
-    IncludeAttachment: js.Any
-  ): Unit = js.native
   def SendForReview(Recipients: String, Subject: String): Unit = js.native
-  def SendForReview(
-    Recipients: String,
-    Subject: String,
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: js.Any
-  ): Unit = js.native
   def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean): Unit = js.native
   def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: String, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
   
   def ServerPolicy(Index: String): PolicyItem = js.native
   def ServerPolicy(Index: Double): PolicyItem = js.native

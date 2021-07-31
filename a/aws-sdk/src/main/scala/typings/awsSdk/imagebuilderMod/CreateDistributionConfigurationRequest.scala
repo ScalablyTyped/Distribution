@@ -2,36 +2,34 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDistributionConfigurationRequest extends StObject {
   
   /**
     *  The idempotency token of the distribution configuration. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     *  The description of the distribution configuration. 
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The distributions of the distribution configuration. 
     */
-  var distributions: DistributionList = js.native
+  var distributions: DistributionList
   
   /**
     *  The name of the distribution configuration. 
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
   
   /**
     *  The tags of the distribution configuration. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateDistributionConfigurationRequest {
   

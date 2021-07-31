@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentHtmlDefinitionOriginal extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait DocumentHtmlDefinitionOriginal extends StObject {
     * The values `1`, `2`, `3`, and so on are typically used to identify the first few documents in an envelope. Tab definitions include a `documentId`
     * property that specifies the document on which to place the tab.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID of the document.
     */
-  var documentIdGuid: js.UndefOr[String] = js.native
+  var documentIdGuid: js.UndefOr[String] = js.undefined
   
   var htmlDefinition: js.UndefOr[
     /* Holds the properties that define how to generate the responsive-formatted HTML for the document. */ DocumentHtmlDefinition
-  ] = js.native
+  ] = js.undefined
 }
 object DocumentHtmlDefinitionOriginal {
   

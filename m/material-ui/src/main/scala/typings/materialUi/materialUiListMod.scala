@@ -10,10 +10,13 @@ import typings.react.mod.ComponentState
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiListMod {
+  
+  @JSImport("material-ui/List", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("material-ui/List", JSImport.Default)
   @js.native
@@ -29,7 +32,6 @@ object materialUiListMod {
   class ListItem ()
     extends Component[ListItemProps, js.Object, js.Any]
   
-  @JSImport("material-ui/List", "makeSelectable")
-  @js.native
-  def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) with SelectableProps, ComponentState] = js.native
+  @scala.inline
+  def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState]]
 }

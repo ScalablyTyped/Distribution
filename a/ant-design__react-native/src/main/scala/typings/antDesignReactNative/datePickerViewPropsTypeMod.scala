@@ -3,17 +3,17 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.datePickerPropsTypeMod.DatePickerPropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerViewPropsTypeMod {
   
-  @js.native
-  trait DatePickerProps extends DatePickerPropsType {
+  trait DatePickerProps
+    extends StObject
+       with DatePickerPropsType {
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
-    var triggerTypes: js.UndefOr[String] = js.native
+    var triggerTypes: js.UndefOr[String] = js.undefined
   }
   object DatePickerProps {
     

@@ -2,13 +2,11 @@ package typings.yogaLayout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layout extends StObject {
   
-  val bottom: Double = js.native
+  val bottom: Double
   
   def fromJs(
     expose: js.Function6[
@@ -18,19 +16,19 @@ trait Layout extends StObject {
       /* bottom */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      _
+      js.Any
     ]
-  ): Unit = js.native
+  ): Unit
   
-  val height: Double = js.native
+  val height: Double
   
-  val left: Double = js.native
+  val left: Double
   
-  val right: Double = js.native
+  val right: Double
   
-  val top: Double = js.native
+  val top: Double
   
-  val width: Double = js.native
+  val width: Double
 }
 object Layout {
   
@@ -44,7 +42,7 @@ object Layout {
       /* bottom */ Double, 
       /* width */ Double, 
       /* height */ Double, 
-      _
+      js.Any
     ] => Unit,
     height: Double,
     left: Double,
@@ -71,7 +69,7 @@ object Layout {
           /* bottom */ Double, 
           /* width */ Double, 
           /* height */ Double, 
-          _
+          js.Any
         ] => Unit
     ): Self = StObject.set(x, "fromJs", js.Any.fromFunction1(value))
     

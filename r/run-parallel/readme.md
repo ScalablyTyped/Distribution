@@ -10,9 +10,9 @@ Run an array of functions in parallel
 | ------------------ | :-------------: |
 | Full name          | run-parallel |
 | Keywords           | parallel, async, function, callback, asynchronous, run, array, run parallel |
-| # releases         | 0 |
-| # dependents       | 226 |
-| # downloads        | 170152433 |
+| # releases         | 1 |
+| # dependents       | 253 |
+| # downloads        | 301031720 |
 | # stars            | 18 |
 
 ## Links

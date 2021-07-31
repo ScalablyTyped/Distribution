@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountLevel extends StObject {
   
   /**
     * A container for the S3 Storage Lens activity metrics.
     */
-  var ActivityMetrics: js.UndefOr[typings.awsSdk.s3controlMod.ActivityMetrics] = js.native
+  var ActivityMetrics: js.UndefOr[typings.awsSdk.s3controlMod.ActivityMetrics] = js.undefined
   
   /**
     * A container for the S3 Storage Lens bucket-level configuration.
     */
-  var BucketLevel: typings.awsSdk.s3controlMod.BucketLevel = js.native
+  var BucketLevel: typings.awsSdk.s3controlMod.BucketLevel
 }
 object AccountLevel {
   

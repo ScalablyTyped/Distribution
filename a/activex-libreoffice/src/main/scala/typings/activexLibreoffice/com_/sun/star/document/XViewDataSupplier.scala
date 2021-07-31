@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,26 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and restored later. These states can also be made persistent so that a document loader can create all views of the correct types and restore their
   * state to the state when the document was saved.
   */
-@js.native
-trait XViewDataSupplier extends XInterface {
+trait XViewDataSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * retrieve information about currently opened view to restore it later
     * @returns a {@link com.sun.star.container.XIndexAccess} , that gives access to a list of {@link com.sun.star.beans.PropertyValue} for every open view. May
     */
-  var ViewData: XIndexAccess = js.native
+  var ViewData: XIndexAccess
   
   /**
     * retrieve information about currently opened view to restore it later
     * @returns a {@link com.sun.star.container.XIndexAccess} , that gives access to a list of {@link com.sun.star.beans.PropertyValue} for every open view. May
     */
-  def getViewData(): XIndexAccess = js.native
+  def getViewData(): XIndexAccess
   
   /**
     * restore all views which will be represented by given data argument
     * @param Data a list of {@link com.sun.star.beans.PropertyValues} with information about last opened views to restore it `NULL` isn't allowed here.
     */
-  def setViewData(Data: XIndexAccess): Unit = js.native
+  def setViewData(Data: XIndexAccess): Unit
 }
 object XViewDataSupplier {
   

@@ -7,51 +7,52 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelBodyMod {
   
-  @JSImport("rc-picker/es/panels/PanelBody", JSImport.Default)
+  @JSImport("rc-picker/es/panels/PanelBody", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[DateType](
     hasPrefixClsDisabledDateOnSelectPickerRowNumColNumPrefixColumnRowClassNameBaseDateGetCellClassNameGetCellTextGetCellNodeGetCellDateGenerateConfigTitleCellHeaderCells: PanelBodyProps[DateType]
-  ): Element = js.native
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsDisabledDateOnSelectPickerRowNumColNumPrefixColumnRowClassNameBaseDateGetCellClassNameGetCellTextGetCellNodeGetCellDateGenerateConfigTitleCellHeaderCells.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait PanelBodyProps[DateType] extends StObject {
     
-    var baseDate: DateType = js.native
+    var baseDate: DateType
     
-    var colNum: Double = js.native
+    var colNum: Double
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    def getCellClassName(date: DateType): Record[String, js.UndefOr[Boolean]] = js.native
+    def getCellClassName(date: DateType): Record[String, js.UndefOr[Boolean]]
     
-    def getCellDate(date: DateType, offset: Double): DateType = js.native
+    def getCellDate(date: DateType, offset: Double): DateType
     
-    var getCellNode: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var getCellNode: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    def getCellText(date: DateType): ReactNode = js.native
+    def getCellText(date: DateType): ReactNode
     
-    var headerCells: js.UndefOr[ReactNode] = js.native
+    var headerCells: js.UndefOr[ReactNode] = js.undefined
     
-    def onSelect(value: DateType): Unit = js.native
+    def onSelect(value: DateType): Unit
     
-    var picker: js.UndefOr[PanelMode] = js.native
+    var picker: js.UndefOr[PanelMode] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var rowClassName: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.native
+    var rowClassName: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.undefined
     
-    var rowNum: Double = js.native
+    var rowNum: Double
     
-    var titleCell: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.native
+    var titleCell: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.undefined
   }
   object PanelBodyProps {
     
@@ -72,7 +73,7 @@ object panelBodyMod {
     }
     
     @scala.inline
-    implicit class PanelBodyPropsMutableBuilder[Self <: PanelBodyProps[_], DateType] (val x: Self with PanelBodyProps[DateType]) extends AnyVal {
+    implicit class PanelBodyPropsMutableBuilder[Self <: PanelBodyProps[?], DateType] (val x: Self & PanelBodyProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setBaseDate(value: DateType): Self = StObject.set(x, "baseDate", value.asInstanceOf[js.Any])

@@ -2,32 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapRangeSelector control.
   */
-@js.native
-trait BootstrapClientRangeSelector extends BootstrapUIWidgetBase {
+trait BootstrapClientRangeSelector
+  extends StObject
+     with BootstrapUIWidgetBase {
   
   /**
     * Gets the Range Selector's selected value range.
     */
-  def GetValue(): js.Array[_] = js.native
+  def GetValue(): js.Array[js.Any]
   
   /**
     * Gets the Range Selector's selected value range.
     * @param value An array containing the value range.
     */
-  def SetValue(value: js.Array[_]): Unit = js.native
+  def SetValue(value: js.Array[js.Any]): Unit
   
   /**
     * Fires after the selected range has been changed by moving one of the sliders.
     */
   var ValueChanged: ASPxClientEvent[
     BootstrapClientRangeSelectorValueChangedEventHandler[BootstrapClientRangeSelector]
-  ] = js.native
+  ]
 }
 object BootstrapClientRangeSelector {
   
@@ -47,7 +47,7 @@ object BootstrapClientRangeSelector {
     GetInstance: () => js.Any,
     GetMainElement: () => js.Any,
     GetParentControl: () => js.Any,
-    GetValue: () => js.Array[_],
+    GetValue: () => js.Array[js.Any],
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -61,7 +61,7 @@ object BootstrapClientRangeSelector {
     SetEnabled: Boolean => Unit,
     SetHeight: Double => Unit,
     SetOptions: js.Any => Unit,
-    SetValue: js.Array[_] => Unit,
+    SetValue: js.Array[js.Any] => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     ValueChanged: ASPxClientEvent[
@@ -77,10 +77,10 @@ object BootstrapClientRangeSelector {
   implicit class BootstrapClientRangeSelectorMutableBuilder[Self <: BootstrapClientRangeSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetValue(value: () => js.Array[_]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetValue(value: js.Array[_] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    def setSetValue(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setValueChanged(

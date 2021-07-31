@@ -8,7 +8,6 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issuesStatisticsMod {
@@ -19,6 +18,6 @@ object issuesStatisticsMod {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) with BaseRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: (ProjectId | GroupId | js.Object) & BaseRequestOptions): js.Promise[GetResponse] = js.native
   }
 }

@@ -2,15 +2,15 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait String extends Value {
+trait String
+  extends StObject
+     with Value {
   
-  def getValue(): java.lang.String = js.native
+  def getValue(): java.lang.String
   
-  def setValue(s: java.lang.String): Unit = js.native
+  def setValue(s: java.lang.String): Unit
 }
 object String {
   

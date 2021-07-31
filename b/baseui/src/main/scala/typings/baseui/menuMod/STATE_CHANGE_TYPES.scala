@@ -10,27 +10,25 @@ import typings.baseui.baseuiStrings.moveUp
 import typings.baseui.baseuiStrings.reset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait STATE_CHANGE_TYPES extends StObject {
   
-  var character: typings.baseui.baseuiStrings.character = js.native
+  var character: typings.baseui.baseuiStrings.character
   
-  var click: typings.baseui.baseuiStrings.click = js.native
+  var click: typings.baseui.baseuiStrings.click
   
-  var enter: enter_ = js.native
+  var enter: enter_
   
-  var focus: typings.baseui.baseuiStrings.focus = js.native
+  var focus: typings.baseui.baseuiStrings.focus
   
-  var mouseEnter: typings.baseui.baseuiStrings.mouseEnter = js.native
+  var mouseEnter: typings.baseui.baseuiStrings.mouseEnter
   
-  var moveDown: typings.baseui.baseuiStrings.moveDown = js.native
+  var moveDown: typings.baseui.baseuiStrings.moveDown
   
-  var moveUp: typings.baseui.baseuiStrings.moveUp = js.native
+  var moveUp: typings.baseui.baseuiStrings.moveUp
   
-  var reset: typings.baseui.baseuiStrings.reset = js.native
+  var reset: typings.baseui.baseuiStrings.reset
 }
 object STATE_CHANGE_TYPES {
   

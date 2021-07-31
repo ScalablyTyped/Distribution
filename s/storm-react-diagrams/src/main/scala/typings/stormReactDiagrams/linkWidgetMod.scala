@@ -7,7 +7,6 @@ import typings.stormReactDiagrams.linkModelMod.LinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModelListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkWidgetMod {
@@ -21,14 +20,15 @@ object linkWidgetMod {
     def shouldComponentUpdate_MLinkWidget(): Boolean = js.native
   }
   
-  @js.native
-  trait LinkProps extends BaseWidgetProps {
+  trait LinkProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var diagramEngine: DiagramEngine = js.native
+    var diagramEngine: DiagramEngine
     
-    var link: LinkModel[LinkModelListener] = js.native
+    var link: LinkModel[LinkModelListener]
   }
   object LinkProps {
     
@@ -55,6 +55,5 @@ object linkWidgetMod {
     }
   }
   
-  @js.native
   trait LinkState extends StObject
 }

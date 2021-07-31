@@ -10,14 +10,13 @@ import typings.typescript.mod.SolutionBuilderWithWatchHost
 import typings.typescript.mod.WatchCompilerHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptExtensionMod {
   
-  @js.native
   trait TypeScriptExtension
-    extends TypeScriptHostExtension
+    extends StObject
+       with TypeScriptHostExtension
        with TypeScriptReporterExtension
   object TypeScriptExtension {
     
@@ -28,7 +27,6 @@ object typeScriptExtensionMod {
     }
   }
   
-  @js.native
   trait TypeScriptHostExtension extends StObject {
     
     var extendCompilerHost: js.UndefOr[
@@ -37,9 +35,9 @@ object typeScriptExtensionMod {
           /* parsedCommandLine */ js.UndefOr[ParsedCommandLine], 
           CompilerHost
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var extendParseConfigFileHost: js.UndefOr[js.Function1[/* host */ ParseConfigFileHost, ParseConfigFileHost]] = js.native
+    var extendParseConfigFileHost: js.UndefOr[js.Function1[/* host */ ParseConfigFileHost, ParseConfigFileHost]] = js.undefined
     
     var extendWatchCompilerHost: js.UndefOr[
         js.Function2[
@@ -47,7 +45,7 @@ object typeScriptExtensionMod {
           /* parsedCommandLine */ js.UndefOr[ParsedCommandLine], 
           WatchCompilerHost[BuilderProgram]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var extendWatchSolutionBuilderHost: js.UndefOr[
         js.Function2[
@@ -55,7 +53,7 @@ object typeScriptExtensionMod {
           /* parsedCommandLine */ js.UndefOr[ParsedCommandLine], 
           SolutionBuilderWithWatchHost[BuilderProgram]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object TypeScriptHostExtension {
     
@@ -100,12 +98,11 @@ object typeScriptExtensionMod {
     }
   }
   
-  @js.native
   trait TypeScriptReporterExtension extends StObject {
     
-    var extendDependencies: js.UndefOr[js.Function1[/* dependencies */ Dependencies, Dependencies]] = js.native
+    var extendDependencies: js.UndefOr[js.Function1[/* dependencies */ Dependencies, Dependencies]] = js.undefined
     
-    var extendIssues: js.UndefOr[js.Function1[/* issues */ js.Array[Issue], js.Array[Issue]]] = js.native
+    var extendIssues: js.UndefOr[js.Function1[/* issues */ js.Array[Issue], js.Array[Issue]]] = js.undefined
   }
   object TypeScriptReporterExtension {
     

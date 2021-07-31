@@ -2,29 +2,27 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGLContextAttributes extends StObject {
   
-  var alpha: js.UndefOr[scala.Boolean] = js.native
+  var alpha: js.UndefOr[scala.Boolean] = js.undefined
   
-  var antialias: js.UndefOr[scala.Boolean] = js.native
+  var antialias: js.UndefOr[scala.Boolean] = js.undefined
   
-  var depth: js.UndefOr[scala.Boolean] = js.native
+  var depth: js.UndefOr[scala.Boolean] = js.undefined
   
-  var desynchronized: js.UndefOr[scala.Boolean] = js.native
+  var desynchronized: js.UndefOr[scala.Boolean] = js.undefined
   
-  var failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.native
+  var failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined
   
-  var powerPreference: js.UndefOr[WebGLPowerPreference] = js.native
+  var powerPreference: js.UndefOr[WebGLPowerPreference] = js.undefined
   
-  var premultipliedAlpha: js.UndefOr[scala.Boolean] = js.native
+  var premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined
   
-  var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.native
+  var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
   
-  var stencil: js.UndefOr[scala.Boolean] = js.native
+  var stencil: js.UndefOr[scala.Boolean] = js.undefined
 }
 object WebGLContextAttributes {
   

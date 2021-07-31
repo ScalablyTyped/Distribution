@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,20 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XLinguServiceManager
   * @see com.sun.star.linguistic2.XLinguServiceEventListener
   */
-@js.native
-trait XLinguServiceEventBroadcaster extends XInterface {
+trait XLinguServiceEventBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * @param xLstnr the listener to be added.
     * @returns `TRUE` if the listener was successfully added, `FALSE` otherwise.
     */
-  def addLinguServiceEventListener(xLstnr: XLinguServiceEventListener): Boolean = js.native
+  def addLinguServiceEventListener(xLstnr: XLinguServiceEventListener): Boolean
   
   /**
     * @param xLstnr the listener to be removed.
     * @returns `TRUE` if the listener was successfully removed, `FALSE` otherwise.
     */
-  def removeLinguServiceEventListener(xLstnr: XLinguServiceEventListener): Boolean = js.native
+  def removeLinguServiceEventListener(xLstnr: XLinguServiceEventListener): Boolean
 }
 object XLinguServiceEventBroadcaster {
   

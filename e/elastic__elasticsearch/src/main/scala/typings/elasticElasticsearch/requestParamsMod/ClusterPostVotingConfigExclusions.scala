@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterPostVotingConfigExclusions extends Generic {
+trait ClusterPostVotingConfigExclusions
+  extends StObject
+     with Generic {
   
-  var node_ids: js.UndefOr[String] = js.native
+  var node_ids: js.UndefOr[String] = js.undefined
   
-  var node_names: js.UndefOr[String] = js.native
+  var node_names: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object ClusterPostVotingConfigExclusions {
   

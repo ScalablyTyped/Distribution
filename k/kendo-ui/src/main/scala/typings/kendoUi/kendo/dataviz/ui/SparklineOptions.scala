@@ -2,79 +2,77 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var axisDefaults: js.UndefOr[js.Any] = js.native
+  var axisDefaults: js.UndefOr[js.Any] = js.undefined
   
-  var axisLabelClick: js.UndefOr[js.Function1[/* e */ SparklineAxisLabelClickEvent, Unit]] = js.native
+  var axisLabelClick: js.UndefOr[js.Function1[/* e */ SparklineAxisLabelClickEvent, Unit]] = js.undefined
   
-  var categoryAxis: js.UndefOr[SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]] = js.native
+  var categoryAxis: js.UndefOr[SparklineCategoryAxisItem | js.Array[SparklineCategoryAxisItem]] = js.undefined
   
-  var chartArea: js.UndefOr[SparklineChartArea] = js.native
+  var chartArea: js.UndefOr[SparklineChartArea] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ SparklineEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ SparklineEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ SparklineDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ SparklineDragEvent, Unit]] = js.undefined
   
-  var dragEnd: js.UndefOr[js.Function1[/* e */ SparklineDragEndEvent, Unit]] = js.native
+  var dragEnd: js.UndefOr[js.Function1[/* e */ SparklineDragEndEvent, Unit]] = js.undefined
   
-  var dragStart: js.UndefOr[js.Function1[/* e */ SparklineDragStartEvent, Unit]] = js.native
+  var dragStart: js.UndefOr[js.Function1[/* e */ SparklineDragStartEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var paneRender: js.UndefOr[js.Function1[/* e */ SparklinePaneRenderEvent, Unit]] = js.native
+  var paneRender: js.UndefOr[js.Function1[/* e */ SparklinePaneRenderEvent, Unit]] = js.undefined
   
-  var plotArea: js.UndefOr[SparklinePlotArea] = js.native
+  var plotArea: js.UndefOr[SparklinePlotArea] = js.undefined
   
-  var plotAreaClick: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaClickEvent, Unit]] = js.native
+  var plotAreaClick: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaClickEvent, Unit]] = js.undefined
   
-  var plotAreaHover: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaHoverEvent, Unit]] = js.native
+  var plotAreaHover: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaHoverEvent, Unit]] = js.undefined
   
-  var plotAreaLeave: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaLeaveEvent, Unit]] = js.native
+  var plotAreaLeave: js.UndefOr[js.Function1[/* e */ SparklinePlotAreaLeaveEvent, Unit]] = js.undefined
   
-  var pointWidth: js.UndefOr[Double] = js.native
+  var pointWidth: js.UndefOr[Double] = js.undefined
   
-  var renderAs: js.UndefOr[String] = js.native
+  var renderAs: js.UndefOr[String] = js.undefined
   
-  var series: js.UndefOr[js.Array[SparklineSeriesItem]] = js.native
+  var series: js.UndefOr[js.Array[SparklineSeriesItem]] = js.undefined
   
-  var seriesClick: js.UndefOr[js.Function1[/* e */ SparklineSeriesClickEvent, Unit]] = js.native
+  var seriesClick: js.UndefOr[js.Function1[/* e */ SparklineSeriesClickEvent, Unit]] = js.undefined
   
-  var seriesColors: js.UndefOr[js.Any] = js.native
+  var seriesColors: js.UndefOr[js.Any] = js.undefined
   
-  var seriesDefaults: js.UndefOr[SparklineSeriesDefaults] = js.native
+  var seriesDefaults: js.UndefOr[SparklineSeriesDefaults] = js.undefined
   
-  var seriesHover: js.UndefOr[js.Function1[/* e */ SparklineSeriesHoverEvent, Unit]] = js.native
+  var seriesHover: js.UndefOr[js.Function1[/* e */ SparklineSeriesHoverEvent, Unit]] = js.undefined
   
-  var seriesLeave: js.UndefOr[js.Function1[/* e */ SparklineSeriesLeaveEvent, Unit]] = js.native
+  var seriesLeave: js.UndefOr[js.Function1[/* e */ SparklineSeriesLeaveEvent, Unit]] = js.undefined
   
-  var seriesOver: js.UndefOr[js.Function1[/* e */ SparklineSeriesOverEvent, Unit]] = js.native
+  var seriesOver: js.UndefOr[js.Function1[/* e */ SparklineSeriesOverEvent, Unit]] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[SparklineTooltip] = js.native
+  var tooltip: js.UndefOr[SparklineTooltip] = js.undefined
   
-  var transitions: js.UndefOr[Boolean] = js.native
+  var transitions: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var valueAxis: js.UndefOr[SparklineValueAxisItem | js.Array[SparklineValueAxisItem]] = js.native
+  var valueAxis: js.UndefOr[SparklineValueAxisItem | js.Array[SparklineValueAxisItem]] = js.undefined
   
-  var zoom: js.UndefOr[js.Function1[/* e */ SparklineZoomEvent, Unit]] = js.native
+  var zoom: js.UndefOr[js.Function1[/* e */ SparklineZoomEvent, Unit]] = js.undefined
   
-  var zoomEnd: js.UndefOr[js.Function1[/* e */ SparklineZoomEndEvent, Unit]] = js.native
+  var zoomEnd: js.UndefOr[js.Function1[/* e */ SparklineZoomEndEvent, Unit]] = js.undefined
   
-  var zoomStart: js.UndefOr[js.Function1[/* e */ SparklineZoomStartEvent, Unit]] = js.native
+  var zoomStart: js.UndefOr[js.Function1[/* e */ SparklineZoomStartEvent, Unit]] = js.undefined
 }
 object SparklineOptions {
   

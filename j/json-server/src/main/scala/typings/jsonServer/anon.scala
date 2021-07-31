@@ -2,15 +2,13 @@ package typings.jsonServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ForeignKeySuffix extends StObject {
     
-    var foreignKeySuffix: String = js.native
+    var foreignKeySuffix: String
   }
   object ForeignKeySuffix {
     

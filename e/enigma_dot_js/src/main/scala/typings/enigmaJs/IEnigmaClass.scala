@@ -4,13 +4,11 @@ import typings.enigmaJs.enigmaJS.IConfig
 import typings.enigmaJs.enigmaJS.ISession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // declare const enigmaJS: IEnigmaClass;
 // export = enigmaJS;
 // export as namespace enigmaJS;
-@js.native
 trait IEnigmaClass extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait IEnigmaClass extends StObject {
     * @returns - Returns a session.
     * Note: See Configuration for the configuration options.
     */
-  def create(config: IConfig): ISession = js.native
+  def create(config: IConfig): ISession
 }
 object IEnigmaClass {
   

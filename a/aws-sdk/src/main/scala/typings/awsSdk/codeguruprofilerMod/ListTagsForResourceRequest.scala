@@ -2,16 +2,14 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the resource that contains the tags to return. 
     */
-  var resourceArn: ProfilingGroupArn = js.native
+  var resourceArn: ProfilingGroupArn
 }
 object ListTagsForResourceRequest {
   

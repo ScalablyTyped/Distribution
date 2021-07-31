@@ -3,16 +3,14 @@ package typings.weixinApp.anon
 import typings.weixinApp.wx.AuthModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportMode extends StObject {
   
   // 该设备支持的可被SOTER识别的生物识别方式
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var supportMode: js.Array[AuthModes] = js.native
+  var supportMode: js.Array[AuthModes]
 }
 object SupportMode {
   

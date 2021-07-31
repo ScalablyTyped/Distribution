@@ -2,60 +2,58 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointStatesSelectOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) Enable or disable visible feedback for selection.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The fill color of the point marker.
     */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the marker's fixed height on select state.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The number of pixels to increase the height of
     * the hovered point.
     */
-  var heightPlus: js.UndefOr[Double] = js.native
+  var heightPlus: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The color of the point marker's outline. When
     * `undefined`, the series' or point's color is used.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) The width of the point marker's outline.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The radius of the point marker. In hover state,
     * it defaults to the normal state's radius + 2.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the marker's fixed width on select state.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The number of pixels to increase the width of the
     * hovered point.
     */
-  var widthPlus: js.UndefOr[Double] = js.native
+  var widthPlus: js.UndefOr[Double] = js.undefined
 }
 object PointStatesSelectOptionsObject {
   

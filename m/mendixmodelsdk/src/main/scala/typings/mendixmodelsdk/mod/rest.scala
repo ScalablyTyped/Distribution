@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rest {
@@ -48,9 +47,8 @@ object rest {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ConsumedODataService.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.ConsumedODataService = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.ConsumedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ConsumedODataService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.ConsumedODataService.structureTypeName")
@@ -97,9 +95,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.CorsConfiguration.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.CorsConfiguration = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.CorsConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.CorsConfiguration]
     
     /**
       * Creates and returns a new CorsConfiguration instance in the SDK and on the server.
@@ -110,9 +107,8 @@ object rest {
       *  7.18.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.CorsConfiguration.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.CorsConfiguration = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.CorsConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.CorsConfiguration]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.CorsConfiguration.structureTypeName")
@@ -157,9 +153,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.MetadataReference.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.MetadataReference]
     
     /**
       * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -170,9 +165,8 @@ object rest {
       *  8.6.0 to 8.7.0
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.MetadataReference.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.MetadataReference]
     
     /**
       * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -183,9 +177,8 @@ object rest {
       *  8.11.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.MetadataReference.createInConsumedKafkaServiceUnderMetadataReferences")
-    @js.native
-    def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+    @scala.inline
+    def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): typings.mendixmodelsdk.restMod.rest.MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedKafkaServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.MetadataReference]
     
     /**
       * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -196,9 +189,8 @@ object rest {
       *  8.6.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.MetadataReference.createInConsumedODataServiceUnderMetadataReferences")
-    @js.native
-    def createInConsumedODataServiceUnderMetadataReferences(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+    @scala.inline
+    def createInConsumedODataServiceUnderMetadataReferences(container: typings.mendixmodelsdk.restMod.rest.ConsumedODataService): typings.mendixmodelsdk.restMod.rest.MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.MetadataReference]
     
     /**
       * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -209,9 +201,8 @@ object rest {
       *  8.8.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.MetadataReference.createInMetadataReferenceUnderMetadataReferences")
-    @js.native
-    def createInMetadataReferenceUnderMetadataReferences(container: typings.mendixmodelsdk.restMod.rest.MetadataReference): typings.mendixmodelsdk.restMod.rest.MetadataReference = js.native
+    @scala.inline
+    def createInMetadataReferenceUnderMetadataReferences(container: typings.mendixmodelsdk.restMod.rest.MetadataReference): typings.mendixmodelsdk.restMod.rest.MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMetadataReferenceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.MetadataReference]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.MetadataReference.structureTypeName")
@@ -260,9 +251,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataKey.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataKey = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataKey = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataKey]
     
     /**
       * Creates and returns a new ODataKey instance in the SDK and on the server.
@@ -273,9 +263,8 @@ object rest {
       *  8.11.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataKey.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource): typings.mendixmodelsdk.restMod.rest.ODataKey = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource): typings.mendixmodelsdk.restMod.rest.ODataKey = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataKey]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.ODataKey.structureTypeName")
@@ -324,9 +313,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataKeyPart.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataKeyPart = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataKeyPart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataKeyPart]
     
     /**
       * Creates and returns a new ODataKeyPart instance in the SDK and on the server.
@@ -337,9 +325,8 @@ object rest {
       *  8.9.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataKeyPart.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataKey): typings.mendixmodelsdk.restMod.rest.ODataKeyPart = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.ODataKey): typings.mendixmodelsdk.restMod.rest.ODataKeyPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataKeyPart]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.ODataKeyPart.structureTypeName")
@@ -384,9 +371,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataMappedValue.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataMappedValue = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataMappedValue]
     
     /**
       * Creates and returns a new ODataMappedValue instance in the SDK and on the server.
@@ -397,9 +383,8 @@ object rest {
       *  8.10.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataMappedValue.createIn")
-    @js.native
-    def createIn(container: Attribute): typings.mendixmodelsdk.restMod.rest.ODataMappedValue = js.native
+    @scala.inline
+    def createIn(container: Attribute): typings.mendixmodelsdk.restMod.rest.ODataMappedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataMappedValue]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.ODataMappedValue.structureTypeName")
@@ -444,9 +429,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataRemoteAssociationSource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource]
     
     /**
       * Creates and returns a new ODataRemoteAssociationSource instance in the SDK and on the server.
@@ -457,9 +441,8 @@ object rest {
       *  8.10.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataRemoteAssociationSource.createIn")
-    @js.native
-    def createIn(container: AssociationBase): typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource = js.native
+    @scala.inline
+    def createIn(container: AssociationBase): typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataRemoteAssociationSource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.ODataRemoteAssociationSource.structureTypeName")
@@ -504,9 +487,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataRemoteEntitySource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource]
     
     /**
       * Creates and returns a new ODataRemoteEntitySource instance in the SDK and on the server.
@@ -517,9 +499,8 @@ object rest {
       *  8.10.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.ODataRemoteEntitySource.createIn")
-    @js.native
-    def createIn(container: Entity): typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource = js.native
+    @scala.inline
+    def createIn(container: Entity): typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.ODataRemoteEntitySource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.ODataRemoteEntitySource.structureTypeName")
@@ -596,9 +577,8 @@ object rest {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedODataService.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.PublishedODataService = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.PublishedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedODataService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.PublishedODataService.structureTypeName")
@@ -643,9 +623,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestResource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestResource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestResource]
     
     /**
       * Creates and returns a new PublishedRestResource instance in the SDK and on the server.
@@ -653,9 +632,8 @@ object rest {
       * of the parent PublishedODataService element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestResource.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedODataService): typings.mendixmodelsdk.restMod.rest.PublishedRestResource = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedODataService): typings.mendixmodelsdk.restMod.rest.PublishedRestResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestResource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.PublishedRestResource.structureTypeName")
@@ -701,9 +679,8 @@ object rest {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestService.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.PublishedRestService = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.restMod.rest.PublishedRestService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestService]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.PublishedRestService.structureTypeName")
@@ -751,9 +728,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestServiceOperation.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation]
     
     /**
       * Creates and returns a new PublishedRestServiceOperation instance in the SDK and on the server.
@@ -764,9 +740,8 @@ object rest {
       *  7.7.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestServiceOperation.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.PublishedRestServiceOperation.structureTypeName")
@@ -814,9 +789,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestServiceResource.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource]
     
     /**
       * Creates and returns a new PublishedRestServiceResource instance in the SDK and on the server.
@@ -827,9 +801,8 @@ object rest {
       *  7.7.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.PublishedRestServiceResource.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.PublishedRestServiceResource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.PublishedRestServiceResource.structureTypeName")
@@ -923,9 +896,8 @@ object rest {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.RestOperationParameter.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.RestOperationParameter]
     
     /**
       * Creates and returns a new RestOperationParameter instance in the SDK and on the server.
@@ -936,9 +908,8 @@ object rest {
       *  7.17.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.RestOperationParameter.createInPublishedRestServiceOperationUnderParameters")
-    @js.native
-    def createInPublishedRestServiceOperationUnderParameters(container: typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = js.native
+    @scala.inline
+    def createInPublishedRestServiceOperationUnderParameters(container: typings.mendixmodelsdk.restMod.rest.PublishedRestServiceOperation): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceOperationUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.RestOperationParameter]
     
     /**
       * Creates and returns a new RestOperationParameter instance in the SDK and on the server.
@@ -949,9 +920,8 @@ object rest {
       *  7.17.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "rest.RestOperationParameter.createInPublishedRestServiceUnderParameters")
-    @js.native
-    def createInPublishedRestServiceUnderParameters(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = js.native
+    @scala.inline
+    def createInPublishedRestServiceUnderParameters(container: typings.mendixmodelsdk.restMod.rest.PublishedRestService): typings.mendixmodelsdk.restMod.rest.RestOperationParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedRestServiceUnderParameters")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.restMod.rest.RestOperationParameter]
     
     /* static member */
     @JSImport("mendixmodelsdk", "rest.RestOperationParameter.structureTypeName")

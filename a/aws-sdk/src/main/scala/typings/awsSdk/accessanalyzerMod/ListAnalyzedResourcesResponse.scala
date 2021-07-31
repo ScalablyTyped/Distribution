@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAnalyzedResourcesResponse extends StObject {
   
   /**
     * A list of resources that were analyzed.
     */
-  var analyzedResources: AnalyzedResourcesList = js.native
+  var analyzedResources: AnalyzedResourcesList
   
   /**
     * A token used for pagination of results returned.
     */
-  var nextToken: js.UndefOr[Token] = js.native
+  var nextToken: js.UndefOr[Token] = js.undefined
 }
 object ListAnalyzedResourcesResponse {
   

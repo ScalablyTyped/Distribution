@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Devices.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides static properties of infrared frame sources. */
 @JSGlobal("Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties")
 @js.native
 abstract class KnownPerceptionInfraredFrameSourceProperties ()
-  extends typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties
+  extends StObject
+     with typings.winrtUwp.Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties
 object KnownPerceptionInfraredFrameSourceProperties {
   
   @JSGlobal("Windows.Devices.Perception.KnownPerceptionInfraredFrameSourceProperties")

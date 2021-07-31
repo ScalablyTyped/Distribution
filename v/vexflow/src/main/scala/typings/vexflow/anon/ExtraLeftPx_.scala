@@ -2,25 +2,23 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraLeftPx_ extends StObject {
   
-  var extraLeftPx: Double = js.native
+  var extraLeftPx: Double
   
-  var extraRightPx: Double = js.native
+  var extraRightPx: Double
   
-  var left_shift: Double = js.native
+  var left_shift: Double
   
-  var modLeftPx: Double = js.native
+  var modLeftPx: Double
   
-  var modRightPx: Double = js.native
+  var modRightPx: Double
   
-  var noteWidth: Double = js.native
+  var noteWidth: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object ExtraLeftPx_ {
   

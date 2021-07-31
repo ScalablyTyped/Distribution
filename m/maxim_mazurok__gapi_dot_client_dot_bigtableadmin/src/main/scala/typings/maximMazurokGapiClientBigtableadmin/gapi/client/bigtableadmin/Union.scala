@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Union extends StObject {
   
   /** Delete cells which would be deleted by any element of `rules`. */
-  var rules: js.UndefOr[js.Array[GcRule]] = js.native
+  var rules: js.UndefOr[js.Array[GcRule]] = js.undefined
 }
 object Union {
   

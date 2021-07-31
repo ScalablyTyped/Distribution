@@ -11,20 +11,19 @@ import typings.winrtUwp.winrtUwpStrings.gattserviceschanged
 import typings.winrtUwp.winrtUwpStrings.namechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Bluetooth LE device. */
 @js.native
 trait BluetoothLEDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothLEDevice, _]): Unit = js.native
+  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothLEDevice, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_gattserviceschanged(`type`: gattserviceschanged, listener: TypedEventHandler[BluetoothLEDevice, _]): Unit = js.native
+  def addEventListener_gattserviceschanged(`type`: gattserviceschanged, listener: TypedEventHandler[BluetoothLEDevice, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothLEDevice, _]): Unit = js.native
+  def addEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothLEDevice, js.Any]): Unit = js.native
   
   /** Gets the BluetoothLEAppearance object for the Bluetooth LE device. */
   var appearance: BluetoothLEAppearance = js.native
@@ -61,28 +60,28 @@ trait BluetoothLEDevice extends StObject {
   var name: String = js.native
   
   /** Occurs when the connection status for the device has changed. */
-  def onconnectionstatuschanged(ev: js.Any with WinRTEvent[BluetoothLEDevice]): Unit = js.native
+  def onconnectionstatuschanged(ev: js.Any & WinRTEvent[BluetoothLEDevice]): Unit = js.native
   /** Occurs when the connection status for the device has changed. */
   @JSName("onconnectionstatuschanged")
-  var onconnectionstatuschanged_Original: TypedEventHandler[BluetoothLEDevice, _] = js.native
+  var onconnectionstatuschanged_Original: TypedEventHandler[BluetoothLEDevice, js.Any] = js.native
   
   /** Occurs when the list of GATT services supported by the device has changed. */
-  def ongattserviceschanged(ev: js.Any with WinRTEvent[BluetoothLEDevice]): Unit = js.native
+  def ongattserviceschanged(ev: js.Any & WinRTEvent[BluetoothLEDevice]): Unit = js.native
   /** Occurs when the list of GATT services supported by the device has changed. */
   @JSName("ongattserviceschanged")
-  var ongattserviceschanged_Original: TypedEventHandler[BluetoothLEDevice, _] = js.native
+  var ongattserviceschanged_Original: TypedEventHandler[BluetoothLEDevice, js.Any] = js.native
   
   /** Occurs when the name of the device has changed. */
-  def onnamechanged(ev: js.Any with WinRTEvent[BluetoothLEDevice]): Unit = js.native
+  def onnamechanged(ev: js.Any & WinRTEvent[BluetoothLEDevice]): Unit = js.native
   /** Occurs when the name of the device has changed. */
   @JSName("onnamechanged")
-  var onnamechanged_Original: TypedEventHandler[BluetoothLEDevice, _] = js.native
+  var onnamechanged_Original: TypedEventHandler[BluetoothLEDevice, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothLEDevice, _]): Unit = js.native
+  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothLEDevice, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_gattserviceschanged(`type`: gattserviceschanged, listener: TypedEventHandler[BluetoothLEDevice, _]): Unit = js.native
+  def removeEventListener_gattserviceschanged(`type`: gattserviceschanged, listener: TypedEventHandler[BluetoothLEDevice, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothLEDevice, _]): Unit = js.native
+  def removeEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothLEDevice, js.Any]): Unit = js.native
 }

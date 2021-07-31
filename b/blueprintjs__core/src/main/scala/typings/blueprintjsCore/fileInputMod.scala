@@ -10,7 +10,6 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLLabelElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileInputMod {
@@ -45,32 +44,33 @@ object fileInputMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.blueprintjsCore.propsMod.IProps because var conflicts: className. Inlined  */ @js.native
-  trait IFileInputProps extends LabelHTMLAttributes[HTMLLabelElement] {
+  - typings.blueprintjsCore.propsMod.IProps because var conflicts: className. Inlined  */ trait IFileInputProps
+    extends StObject
+       with LabelHTMLAttributes[HTMLLabelElement] {
     
     /**
       * The button text.
       * @default "Browse"
       */
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the file input is non-interactive.
       * Setting this to `true` will automatically disable the child input too.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the file input should take up the full width of its container.
       */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the user has made a selection in the input. This will affect the component's
       * text styling. Make sure to set a non-empty value for the text prop as well.
       * @default false
       */
-    var hasSelection: js.UndefOr[Boolean] = js.native
+    var hasSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The props to pass to the child input.
@@ -78,12 +78,12 @@ object fileInputMod {
       * `type` will be ignored, because the input _must_ be `type="file"`.
       * Pass `onChange` here to be notified when the user selects a file.
       */
-    var inputProps: js.UndefOr[HTMLProps[HTMLInputElement]] = js.native
+    var inputProps: js.UndefOr[HTMLProps[HTMLInputElement]] = js.undefined
     
     /**
       * Whether the file input should appear with large styling.
       */
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback invoked on `<input>` `change` events.
@@ -94,13 +94,13 @@ object fileInputMod {
       * __Note:__ The top-level `onChange` prop is passed to the wrapping
       * `<label>` rather than the `<input>`, which may not be what you expect.
       */
-    var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
     /**
       * The text to display.
       * @default "Choose file..."
       */
-    var text: js.UndefOr[ReactNode] = js.native
+    var text: js.UndefOr[ReactNode] = js.undefined
   }
   object IFileInputProps {
     

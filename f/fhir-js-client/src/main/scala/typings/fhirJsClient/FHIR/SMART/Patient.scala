@@ -2,31 +2,29 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Patient in context
   */
-@js.native
 trait Patient extends StObject {
   
   /**
     * Patient scoped fhir.js FHIR API interface. This will ensure that the 'patient' query parameter is passed
     * along with all the API calls which needs a patient context.
     */
-  var api: Api = js.native
+  var api: Api
   
   /**
     * Patient ID
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Get the Patient resource in context
     * GET BASEURL/Patient/{id}
     */
-  def read(): js.Promise[Response] = js.native
+  def read(): js.Promise[Response]
 }
 object Patient {
   

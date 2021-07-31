@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAuditTaskResponse extends StObject {
   
   /**
     * Detailed information about each check performed during this audit.
     */
-  var auditDetails: js.UndefOr[AuditDetails] = js.native
+  var auditDetails: js.UndefOr[AuditDetails] = js.undefined
   
   /**
     * The name of the scheduled audit (only if the audit was a scheduled audit).
     */
-  var scheduledAuditName: js.UndefOr[ScheduledAuditName] = js.native
+  var scheduledAuditName: js.UndefOr[ScheduledAuditName] = js.undefined
   
   /**
     * The time the audit started.
     */
-  var taskStartTime: js.UndefOr[Timestamp] = js.native
+  var taskStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Statistical information about the audit.
     */
-  var taskStatistics: js.UndefOr[TaskStatistics] = js.native
+  var taskStatistics: js.UndefOr[TaskStatistics] = js.undefined
   
   /**
     * The status of the audit: one of "IN_PROGRESS", "COMPLETED", "FAILED", or "CANCELED".
     */
-  var taskStatus: js.UndefOr[AuditTaskStatus] = js.native
+  var taskStatus: js.UndefOr[AuditTaskStatus] = js.undefined
   
   /**
     * The type of audit: "ON_DEMAND_AUDIT_TASK" or "SCHEDULED_AUDIT_TASK".
     */
-  var taskType: js.UndefOr[AuditTaskType] = js.native
+  var taskType: js.UndefOr[AuditTaskType] = js.undefined
 }
 object DescribeAuditTaskResponse {
   

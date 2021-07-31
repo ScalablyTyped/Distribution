@@ -2,28 +2,27 @@ package typings.ionic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectMod {
   
-  @JSImport("ionic/lib/integrations/cordova/project", "getPackagePath")
+  @JSImport("ionic/lib/integrations/cordova/project", JSImport.Namespace)
   @js.native
-  def getPackagePath(appName: String, platform: String): js.Promise[String] = js.native
-  @JSImport("ionic/lib/integrations/cordova/project", "getPackagePath")
-  @js.native
-  def getPackagePath(appName: String, platform: String, hasEmulatorRelease: GetPackagePathOptions): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ionic/lib/integrations/cordova/project", "getPlatforms")
-  @js.native
-  def getPlatforms(projectDir: String): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def getPackagePath(appName: String, platform: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getPackagePath(appName: String, platform: String, hasEmulatorRelease: GetPackagePathOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], hasEmulatorRelease.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def getPlatforms(projectDir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  
   trait GetPackagePathOptions extends StObject {
     
-    var emulator: js.UndefOr[Boolean] = js.native
+    var emulator: js.UndefOr[Boolean] = js.undefined
     
-    var release: js.UndefOr[Boolean] = js.native
+    var release: js.UndefOr[Boolean] = js.undefined
   }
   object GetPackagePathOptions {
     

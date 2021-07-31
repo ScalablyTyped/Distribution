@@ -3,7 +3,6 @@ package typings.nano.mod
 import typings.node.processMod.global.NodeJS.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,16 +21,10 @@ trait DocumentScope[D] extends StObject {
   def auth(username: String, userpass: String): js.Promise[DatabaseAuthResponse] = js.native
   def auth(username: String, userpass: String, callback: Callback[DatabaseAuthResponse]): js.Promise[DatabaseAuthResponse] = js.native
   
-  def baseView[V](designname: String, viewname: String, meta: js.Any): js.Promise[_] = js.native
-  def baseView[V](
-    designname: String,
-    viewname: String,
-    meta: js.Any,
-    params: js.UndefOr[scala.Nothing],
-    callback: Callback[_]
-  ): js.Promise[_] = js.native
-  def baseView[V](designname: String, viewname: String, meta: js.Any, params: js.Any): js.Promise[_] = js.native
-  def baseView[V](designname: String, viewname: String, meta: js.Any, params: js.Any, callback: Callback[_]): js.Promise[_] = js.native
+  def baseView[V](designname: String, viewname: String, meta: js.Any): js.Promise[js.Any] = js.native
+  def baseView[V](designname: String, viewname: String, meta: js.Any, params: js.Any): js.Promise[js.Any] = js.native
+  def baseView[V](designname: String, viewname: String, meta: js.Any, params: js.Any, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
+  def baseView[V](designname: String, viewname: String, meta: js.Any, params: Unit, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   def bulk(docs: BulkModifyDocsWrapper): js.Promise[js.Array[DocumentBulkResponse]] = js.native
   def bulk(docs: BulkModifyDocsWrapper, callback: Callback[js.Array[DocumentBulkResponse]]): js.Promise[js.Array[DocumentBulkResponse]] = js.native
@@ -88,28 +81,28 @@ trait DocumentScope[D] extends StObject {
   def find(query: MangoQuery, callback: Callback[MangoResponse[D]]): js.Promise[MangoResponse[D]] = js.native
   
   // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
-  def get(docname: String): js.Promise[DocumentGetResponse with D] = js.native
-  def get(docname: String, callback: Callback[DocumentGetResponse with D]): js.Promise[DocumentGetResponse with D] = js.native
-  def get(docname: String, params: js.UndefOr[scala.Nothing], callback: Callback[DocumentGetResponse with D]): js.Promise[DocumentGetResponse with D] = js.native
-  def get(docname: String, params: DocumentGetParams): js.Promise[DocumentGetResponse with D] = js.native
-  def get(docname: String, params: DocumentGetParams, callback: Callback[DocumentGetResponse with D]): js.Promise[DocumentGetResponse with D] = js.native
+  def get(docname: String): js.Promise[DocumentGetResponse & D] = js.native
+  def get(docname: String, callback: Callback[DocumentGetResponse & D]): js.Promise[DocumentGetResponse & D] = js.native
+  def get(docname: String, params: Unit, callback: Callback[DocumentGetResponse & D]): js.Promise[DocumentGetResponse & D] = js.native
+  def get(docname: String, params: DocumentGetParams): js.Promise[DocumentGetResponse & D] = js.native
+  def get(docname: String, params: DocumentGetParams, callback: Callback[DocumentGetResponse & D]): js.Promise[DocumentGetResponse & D] = js.native
   
   // http://docs.couchdb.org/en/latest/api/document/common.html#head--db-docid
-  def head(docname: String): js.Promise[_] = js.native
-  def head(docname: String, callback: Callback[_]): js.Promise[_] = js.native
+  def head(docname: String): js.Promise[js.Any] = js.native
+  def head(docname: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   // http://docs.couchdb.org/en/latest/api/database/common.html#get--db
   def info(): js.Promise[DatabaseGetResponse] = js.native
   def info(callback: Callback[DatabaseGetResponse]): js.Promise[DatabaseGetResponse] = js.native
   
-  def insert(document: D with MaybeDocument): js.Promise[DocumentInsertResponse] = js.native
-  def insert(document: D with MaybeDocument, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
-  def insert(document: D with MaybeDocument, params: String): js.Promise[DocumentInsertResponse] = js.native
-  def insert(document: D with MaybeDocument, params: String, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
-  def insert(document: D with MaybeDocument, params: Null, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
-  def insert(document: D with MaybeDocument, params: DocumentInsertParams): js.Promise[DocumentInsertResponse] = js.native
+  def insert(document: D & MaybeDocument): js.Promise[DocumentInsertResponse] = js.native
+  def insert(document: D & MaybeDocument, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
+  def insert(document: D & MaybeDocument, params: String): js.Promise[DocumentInsertResponse] = js.native
+  def insert(document: D & MaybeDocument, params: String, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
+  def insert(document: D & MaybeDocument, params: Null, callback: Callback[DocumentInsertResponse]): js.Promise[DocumentInsertResponse] = js.native
+  def insert(document: D & MaybeDocument, params: DocumentInsertParams): js.Promise[DocumentInsertResponse] = js.native
   def insert(
-    document: D with MaybeDocument,
+    document: D & MaybeDocument,
     params: DocumentInsertParams,
     callback: Callback[DocumentInsertResponse]
   ): js.Promise[DocumentInsertResponse] = js.native
@@ -151,11 +144,7 @@ trait DocumentScope[D] extends StObject {
   def partitionedFindAsStream(partitionKey: String, query: MangoQuery): ReadStream = js.native
   
   def partitionedList(partitionKey: String): js.Promise[DocumentListResponse[D]] = js.native
-  def partitionedList(
-    partitionKey: String,
-    params: js.UndefOr[scala.Nothing],
-    callback: Callback[DocumentListResponse[D]]
-  ): js.Promise[DocumentListResponse[D]] = js.native
+  def partitionedList(partitionKey: String, params: Unit, callback: Callback[DocumentListResponse[D]]): js.Promise[DocumentListResponse[D]] = js.native
   def partitionedList(partitionKey: String, params: DocumentFetchParams): js.Promise[DocumentListResponse[D]] = js.native
   def partitionedList(partitionKey: String, params: DocumentFetchParams, callback: Callback[DocumentListResponse[D]]): js.Promise[DocumentListResponse[D]] = js.native
   
@@ -212,11 +201,11 @@ trait DocumentScope[D] extends StObject {
   def session(callback: Callback[DatabaseSessionResponse]): js.Promise[DatabaseSessionResponse] = js.native
   
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#get--db-_design-ddoc-_show-func
-  def show(designname: String, showname: String, doc_id: String): js.Promise[_] = js.native
-  def show(designname: String, showname: String, doc_id: String, callback: Callback[_]): js.Promise[_] = js.native
+  def show(designname: String, showname: String, doc_id: String): js.Promise[js.Any] = js.native
+  def show(designname: String, showname: String, doc_id: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#get--db-_design-ddoc-_show-func
-  def show(designname: String, showname: String, doc_id: String, params: js.Any): js.Promise[_] = js.native
-  def show(designname: String, showname: String, doc_id: String, params: js.Any, callback: Callback[_]): js.Promise[_] = js.native
+  def show(designname: String, showname: String, doc_id: String, params: js.Any): js.Promise[js.Any] = js.native
+  def show(designname: String, showname: String, doc_id: String, params: js.Any, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#put--db-_design-ddoc-_update-func-docid
   def updateWithHandler(designname: String, updatename: String, docname: String): js.Promise[OkResponse] = js.native
@@ -253,28 +242,28 @@ trait DocumentScope[D] extends StObject {
   def viewAsStream[V](designname: String, viewname: String, params: DocumentViewParams): ReadStream = js.native
   
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#db-design-design-doc-list-list-name-view-name
-  def viewWithList(designname: String, viewname: String, listname: String): js.Promise[_] = js.native
-  def viewWithList(designname: String, viewname: String, listname: String, callback: Callback[_]): js.Promise[_] = js.native
+  def viewWithList(designname: String, viewname: String, listname: String): js.Promise[js.Any] = js.native
+  def viewWithList(designname: String, viewname: String, listname: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#db-design-design-doc-list-list-name-view-name
-  def viewWithList(designname: String, viewname: String, listname: String, params: DocumentViewParams): js.Promise[_] = js.native
+  def viewWithList(designname: String, viewname: String, listname: String, params: DocumentViewParams): js.Promise[js.Any] = js.native
   def viewWithList(
     designname: String,
     viewname: String,
     listname: String,
     params: DocumentViewParams,
-    callback: Callback[_]
-  ): js.Promise[_] = js.native
+    callback: Callback[js.Any]
+  ): js.Promise[js.Any] = js.native
   
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#db-design-design-doc-list-list-name-view-name
-  def viewWithListAsStream(designname: String, viewname: String, listname: String): js.Promise[_] = js.native
-  def viewWithListAsStream(designname: String, viewname: String, listname: String, callback: Callback[_]): js.Promise[_] = js.native
+  def viewWithListAsStream(designname: String, viewname: String, listname: String): js.Promise[js.Any] = js.native
+  def viewWithListAsStream(designname: String, viewname: String, listname: String, callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#db-design-design-doc-list-list-name-view-name
-  def viewWithListAsStream(designname: String, viewname: String, listname: String, params: DocumentViewParams): js.Promise[_] = js.native
+  def viewWithListAsStream(designname: String, viewname: String, listname: String, params: DocumentViewParams): js.Promise[js.Any] = js.native
   def viewWithListAsStream(
     designname: String,
     viewname: String,
     listname: String,
     params: DocumentViewParams,
-    callback: Callback[_]
-  ): js.Promise[_] = js.native
+    callback: Callback[js.Any]
+  ): js.Promise[js.Any] = js.native
 }

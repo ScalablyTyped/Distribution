@@ -2,18 +2,16 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains data uploaded in a URL request. */
-@js.native
 trait UploadData extends StObject {
   
   /** An ArrayBuffer with a copy of the data. */
-  var bytes: js.UndefOr[js.Any] = js.native
+  var bytes: js.UndefOr[js.Any] = js.undefined
   
   /** A string with the file's path and name. */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
 }
 object UploadData {
   

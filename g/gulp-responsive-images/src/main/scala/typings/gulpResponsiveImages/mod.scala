@@ -8,14 +8,16 @@ import typings.gulpRename.mod.ParsedPath
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(configs: Matchers): Transform = ^.asInstanceOf[js.Dynamic].apply(configs.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("gulp-responsive-images", JSImport.Namespace)
   @js.native
-  def apply(configs: Matchers): Transform = js.native
+  val ^ : js.Any = js.native
   
   type Matchers = StringDictionary[js.Array[Settings]]
   
@@ -23,36 +25,35 @@ object mod {
   
   type SamplingFactor = js.Tuple2[Double, Double]
   
-  @js.native
   trait Settings extends StObject {
     
-    var crop: js.UndefOr[Boolean] = js.native
+    var crop: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[FilterType] = js.native
+    var filter: js.UndefOr[FilterType] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gravity: js.UndefOr[GravityDirection] = js.native
+    var gravity: js.UndefOr[GravityDirection] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var rename: js.UndefOr[Rename] = js.native
+    var rename: js.UndefOr[Rename] = js.undefined
     
-    var samplingFactor: js.UndefOr[SamplingFactor] = js.native
+    var samplingFactor: js.UndefOr[SamplingFactor] = js.undefined
     
-    var sharpen: js.UndefOr[Boolean] = js.native
+    var sharpen: js.UndefOr[Boolean] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var upscale: js.UndefOr[Boolean] = js.native
+    var upscale: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Settings {
     

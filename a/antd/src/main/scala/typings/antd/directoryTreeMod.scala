@@ -7,19 +7,19 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directoryTreeMod extends Shortcut {
   
   @JSImport("antd/lib/tree/DirectoryTree", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[DirectoryTreeProps with RefAttributes[typings.rcTree.mod.default]] = js.native
+  val default: ForwardRefExoticComponent[DirectoryTreeProps & RefAttributes[typings.rcTree.mod.default]] = js.native
   
-  @js.native
-  trait DirectoryTreeProps extends TreeProps {
+  trait DirectoryTreeProps
+    extends StObject
+       with TreeProps {
     
-    var expandAction: js.UndefOr[ExpandAction] = js.native
+    var expandAction: js.UndefOr[ExpandAction] = js.undefined
   }
   object DirectoryTreeProps {
     
@@ -40,12 +40,11 @@ object directoryTreeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DirectoryTreeState extends StObject {
     
-    var expandedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var expandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var selectedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var selectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
   }
   object DirectoryTreeState {
     
@@ -96,8 +95,8 @@ object directoryTreeMod extends Shortcut {
     def `false`: typings.antd.antdBooleans.`false` = false.asInstanceOf[typings.antd.antdBooleans.`false`]
   }
   
-  type _To = ForwardRefExoticComponent[DirectoryTreeProps with RefAttributes[typings.rcTree.mod.default]]
+  type _To = ForwardRefExoticComponent[DirectoryTreeProps & RefAttributes[typings.rcTree.mod.default]]
   
   /* This means you don't have to write `default`, but can instead just say `directoryTreeMod.foo` */
-  override def _to: ForwardRefExoticComponent[DirectoryTreeProps with RefAttributes[typings.rcTree.mod.default]] = default
+  override def _to: ForwardRefExoticComponent[DirectoryTreeProps & RefAttributes[typings.rcTree.mod.default]] = default
 }

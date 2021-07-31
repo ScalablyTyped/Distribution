@@ -9,14 +9,14 @@ Detect if a device is mouse only, touch only, or hybrid
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | detect-it |
-| Keywords           | detect, device, mouse, touch, hybrid, passive events |
-| # releases         | 4 |
-| # dependents       | 39 |
-| # downloads        | 1382215 |
+| Keywords           | detect, device, mouse, touch, hybrid, passive events, pointer events |
+| # releases         | 6 |
+| # dependents       | 41 |
+| # downloads        | 1551951 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/rafgraph/detect-it#readme)
+- [Homepage](https://detect-it.rafgraph.dev)
 - [Bugs](https://github.com/rafgraph/detect-it/issues)
 - [Repository](https://github.com/rafgraph/detect-it)
 - [Npm](https://www.npmjs.com/package/detect-it)

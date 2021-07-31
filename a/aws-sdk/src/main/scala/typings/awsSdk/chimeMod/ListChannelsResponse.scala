@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelsResponse extends StObject {
   
   /**
     * The information about each channel.
     */
-  var Channels: js.UndefOr[ChannelSummaryList] = js.native
+  var Channels: js.UndefOr[ChannelSummaryList] = js.undefined
   
   /**
     * The token returned from previous API requests until the number of channels is reached.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelsResponse {
   

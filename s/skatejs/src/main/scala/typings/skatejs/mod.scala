@@ -18,10 +18,13 @@ import typings.std.PropertyDecorator
 import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("skatejs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("skatejs", "CustomElement")
   @js.native
@@ -66,142 +69,108 @@ object mod {
   @js.native
   class WithUpdate_[P, S] () extends WithUpdate[P, S]
   
-  @JSImport("skatejs", "define")
-  @js.native
-  def define[T /* <: HTMLElementClass */](ctor: T): T = js.native
+  @scala.inline
+  def define[T /* <: HTMLElementClass */](ctor: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(ctor.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("skatejs", "emit")
-  @js.native
-  def emit(elem: HTMLElementClass, eventName: String): Boolean = js.native
-  @JSImport("skatejs", "emit")
-  @js.native
-  def emit(elem: HTMLElementClass, eventName: String, eventOptions: EventOptions): Boolean = js.native
-  @JSImport("skatejs", "emit")
-  @js.native
-  def emit(elem: EventTarget, eventName: String): Boolean = js.native
-  @JSImport("skatejs", "emit")
-  @js.native
-  def emit(elem: EventTarget, eventName: String, eventOptions: EventOptions): Boolean = js.native
+  @scala.inline
+  def emit(elem: HTMLElementClass, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def emit(elem: HTMLElementClass, eventName: String, eventOptions: EventOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def emit(elem: EventTarget, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def emit(elem: EventTarget, eventName: String, eventOptions: EventOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(elem.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("skatejs", "link")
-  @js.native
-  def link(elem: typings.skatejs.typesMod.CustomElement): js.Function1[/* e */ ComposedCustomEvent, Unit] = js.native
-  @JSImport("skatejs", "link")
-  @js.native
-  def link(elem: typings.skatejs.typesMod.CustomElement, target: String): js.Function1[/* e */ ComposedCustomEvent, Unit] = js.native
+  @scala.inline
+  def link(elem: typings.skatejs.typesMod.CustomElement): js.Function1[/* e */ ComposedCustomEvent, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(elem.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* e */ ComposedCustomEvent, Unit]]
+  @scala.inline
+  def link(elem: typings.skatejs.typesMod.CustomElement, target: String): js.Function1[/* e */ ComposedCustomEvent, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(elem.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* e */ ComposedCustomEvent, Unit]]
   
-  @JSImport("skatejs", "name")
-  @js.native
-  def name(): String = js.native
-  @JSImport("skatejs", "name")
-  @js.native
-  def name(componentName: String): String = js.native
+  @scala.inline
+  def name(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")().asInstanceOf[String]
+  @scala.inline
+  def name(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("skatejs", "prop")
-  @js.native
-  def prop(): PropertyDecorator with PropOptions[_] = js.native
-  @JSImport("skatejs", "prop")
-  @js.native
-  def prop(ops: PropOptions[_]): PropertyDecorator with PropOptions[_] = js.native
+  @scala.inline
+  def prop(): PropertyDecorator & PropOptions[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")().asInstanceOf[PropertyDecorator & PropOptions[js.Any]]
+  @scala.inline
+  def prop(ops: PropOptions[js.Any]): PropertyDecorator & PropOptions[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("prop")(ops.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator & PropOptions[js.Any]]
   
   /* Inlined std.Readonly<{  any :skatejs.skatejs/types.PropOptions<any> & std.PropertyDecorator,   array :skatejs.skatejs/types.PropOptions<std.Array<any>> & std.PropertyDecorator,   boolean :skatejs.skatejs/types.PropOptions<boolean> & std.PropertyDecorator,   number :skatejs.skatejs/types.PropOptions<number> & std.PropertyDecorator,   object :skatejs.skatejs/types.PropOptions<object> & std.PropertyDecorator,   string :skatejs.skatejs/types.PropOptions<string> & std.PropertyDecorator}> */
   object props {
     
-    @JSImport("skatejs", "props.any")
+    @JSImport("skatejs", "props")
     @js.native
-    def any(target: js.Object, propertyKey: String): Unit = js.native
-    @JSImport("skatejs", "props.any")
-    @js.native
-    def any(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("skatejs", "props.array")
-    @js.native
-    def array(target: js.Object, propertyKey: String): Unit = js.native
-    @JSImport("skatejs", "props.array")
-    @js.native
-    def array(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    @scala.inline
+    def any(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def any(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("skatejs", "props.boolean")
-    @js.native
-    def boolean(target: js.Object, propertyKey: String): Unit = js.native
-    @JSImport("skatejs", "props.boolean")
-    @js.native
-    def boolean(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    @scala.inline
+    def array(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def array(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("skatejs", "props.number")
-    @js.native
-    def number(target: js.Object, propertyKey: String): Unit = js.native
-    @JSImport("skatejs", "props.number")
-    @js.native
-    def number(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    @scala.inline
+    def boolean(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def boolean(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("skatejs", "props.string")
-    @js.native
-    def string(target: js.Object, propertyKey: String): Unit = js.native
-    @JSImport("skatejs", "props.string")
-    @js.native
-    def string(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    @scala.inline
+    def number(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def number(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("skatejs", "props.object")
-    @js.native
-    def `object`(target: js.Object, propertyKey: String): Unit = js.native
-    @JSImport("skatejs", "props.object")
-    @js.native
-    def `object`(target: js.Object, propertyKey: js.Symbol): Unit = js.native
+    @scala.inline
+    def `object`(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def `object`(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def string(target: js.Object, propertyKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("string")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def string(target: js.Object, propertyKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("string")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("skatejs", "shadow")
-  @js.native
-  def shadow(elem: typings.skatejs.typesMod.CustomElement): ShadowRoot = js.native
-  @JSImport("skatejs", "shadow")
-  @js.native
-  def shadow(elem: HTMLElement): ShadowRoot = js.native
+  @scala.inline
+  def shadow(elem: typings.skatejs.typesMod.CustomElement): ShadowRoot = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(elem.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot]
+  @scala.inline
+  def shadow(elem: HTMLElement): ShadowRoot = ^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(elem.asInstanceOf[js.Any]).asInstanceOf[ShadowRoot]
   
-  @JSImport("skatejs", "withChildren")
-  @js.native
-  def withChildren[T /* <: Constructor[HTMLElement] */](): Constructor[WithChildren] with T = js.native
-  @JSImport("skatejs", "withChildren")
-  @js.native
-  def withChildren[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithChildren] with T = js.native
+  @scala.inline
+  def withChildren[T /* <: Constructor[HTMLElement] */](): Constructor[WithChildren] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withChildren")().asInstanceOf[Constructor[WithChildren] & T]
+  @scala.inline
+  def withChildren[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithChildren] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withChildren")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithChildren] & T]
   
-  @JSImport("skatejs", "withComponent")
-  @js.native
-  def withComponent[T /* <: Constructor[HTMLElement] */](): TypeofWithComponent = js.native
-  @JSImport("skatejs", "withComponent")
-  @js.native
-  def withComponent[T /* <: Constructor[HTMLElement] */](Base: T): TypeofWithComponent = js.native
-  @JSImport("skatejs", "withComponent")
-  @js.native
-  def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) with T = js.native
-  @JSImport("skatejs", "withComponent")
-  @js.native
-  def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithComponent[P, S, C]]) with T = js.native
+  @scala.inline
+  def withComponent[T /* <: Constructor[HTMLElement] */](): TypeofWithComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[TypeofWithComponent]
+  @scala.inline
+  def withComponent[T /* <: Constructor[HTMLElement] */](Base: T): TypeofWithComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[TypeofWithComponent]
   
-  @JSImport("skatejs", "withContext")
-  @js.native
-  def withContext[C, T /* <: Constructor[HTMLElement] */](): Constructor[WithContext[C]] with T = js.native
-  @JSImport("skatejs", "withContext")
-  @js.native
-  def withContext[C, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithContext[C]] with T = js.native
+  @scala.inline
+  def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")().asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
+  @scala.inline
+  def withComponent_PSCT_ConstructorHTMLElement_Intersection[P, S, C, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithComponent[P, S, C]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withComponent")(Base.asInstanceOf[js.Any]).asInstanceOf[(Constructor[WithComponent[P, S, C]]) & T]
   
-  @JSImport("skatejs", "withLifecycle")
-  @js.native
-  def withLifecycle[T /* <: Constructor[HTMLElement] */](): Constructor[WithLifecycle] with T = js.native
-  @JSImport("skatejs", "withLifecycle")
-  @js.native
-  def withLifecycle[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithLifecycle] with T = js.native
+  @scala.inline
+  def withContext[C, T /* <: Constructor[HTMLElement] */](): Constructor[WithContext[C]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withContext")().asInstanceOf[Constructor[WithContext[C]] & T]
+  @scala.inline
+  def withContext[C, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithContext[C]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithContext[C]] & T]
   
-  @JSImport("skatejs", "withRenderer")
-  @js.native
-  def withRenderer[O, T /* <: Constructor[HTMLElement] */](): Constructor[WithRenderer[O]] with T = js.native
-  @JSImport("skatejs", "withRenderer")
-  @js.native
-  def withRenderer[O, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithRenderer[O]] with T = js.native
+  @scala.inline
+  def withLifecycle[T /* <: Constructor[HTMLElement] */](): Constructor[WithLifecycle] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withLifecycle")().asInstanceOf[Constructor[WithLifecycle] & T]
+  @scala.inline
+  def withLifecycle[T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithLifecycle] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withLifecycle")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithLifecycle] & T]
   
-  @JSImport("skatejs", "withUpdate")
-  @js.native
-  def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](): (Constructor[WithUpdate[P, S]]) with T = js.native
-  @JSImport("skatejs", "withUpdate")
-  @js.native
-  def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithUpdate[P, S]]) with T = js.native
+  @scala.inline
+  def withRenderer[O, T /* <: Constructor[HTMLElement] */](): Constructor[WithRenderer[O]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withRenderer")().asInstanceOf[Constructor[WithRenderer[O]] & T]
+  @scala.inline
+  def withRenderer[O, T /* <: Constructor[HTMLElement] */](Base: T): Constructor[WithRenderer[O]] & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withRenderer")(Base.asInstanceOf[js.Any]).asInstanceOf[Constructor[WithRenderer[O]] & T]
+  
+  @scala.inline
+  def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](): (Constructor[WithUpdate[P, S]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withUpdate")().asInstanceOf[(Constructor[WithUpdate[P, S]]) & T]
+  @scala.inline
+  def withUpdate[P, S, T /* <: Constructor[HTMLElement] */](Base: T): (Constructor[WithUpdate[P, S]]) & T = ^.asInstanceOf[js.Dynamic].applyDynamic("withUpdate")(Base.asInstanceOf[js.Any]).asInstanceOf[(Constructor[WithUpdate[P, S]]) & T]
 }

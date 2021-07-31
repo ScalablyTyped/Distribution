@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudprofilerV2Mod {
@@ -88,7 +87,7 @@ object cloudprofilerV2Mod {
         */
       def create(): GaxiosPromise[SchemaProfile] = js.native
       def create(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
-      def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
+      def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
       def create(params: ParamsResourceProjectsProfilesCreate): GaxiosPromise[SchemaProfile] = js.native
       def create(params: ParamsResourceProjectsProfilesCreate, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
       def create(
@@ -120,7 +119,7 @@ object cloudprofilerV2Mod {
         */
       def createOffline(): GaxiosPromise[SchemaProfile] = js.native
       def createOffline(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
-      def createOffline(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
+      def createOffline(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
       def createOffline(params: ParamsResourceProjectsProfilesCreateoffline): GaxiosPromise[SchemaProfile] = js.native
       def createOffline(params: ParamsResourceProjectsProfilesCreateoffline, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
       def createOffline(
@@ -154,7 +153,7 @@ object cloudprofilerV2Mod {
         */
       def patch(): GaxiosPromise[SchemaProfile] = js.native
       def patch(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
-      def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
+      def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
       def patch(params: ParamsResourceProjectsProfilesPatch): GaxiosPromise[SchemaProfile] = js.native
       def patch(params: ParamsResourceProjectsProfilesPatch, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
       def patch(
@@ -170,16 +169,17 @@ object cloudprofilerV2Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v2 = js.native
+      var version: v2
     }
     object Options {
       
       @scala.inline
-      def apply(version: v2): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v2")
         __obj.asInstanceOf[Options]
       }
       
@@ -191,23 +191,24 @@ object cloudprofilerV2Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsProfilesCreate extends StandardParameters {
+    trait ParamsResourceProjectsProfilesCreate
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Parent project to create the profile in.
         */
-      var parent: js.UndefOr[String] = js.native
+      var parent: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaCreateProfileRequest] = js.native
+      var requestBody: js.UndefOr[SchemaCreateProfileRequest] = js.undefined
     }
     object ParamsResourceProjectsProfilesCreate {
       
@@ -240,23 +241,24 @@ object cloudprofilerV2Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsProfilesCreateoffline extends StandardParameters {
+    trait ParamsResourceProjectsProfilesCreateoffline
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Parent project to create the profile in.
         */
-      var parent: js.UndefOr[String] = js.native
+      var parent: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaProfile] = js.native
+      var requestBody: js.UndefOr[SchemaProfile] = js.undefined
     }
     object ParamsResourceProjectsProfilesCreateoffline {
       
@@ -289,23 +291,24 @@ object cloudprofilerV2Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceProjectsProfilesPatch extends StandardParameters {
+    trait ParamsResourceProjectsProfilesPatch
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Output only. Opaque, server-assigned, unique ID for this profile.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaProfile] = js.native
+      var requestBody: js.UndefOr[SchemaProfile] = js.undefined
       
       /**
         * Field mask used to specify the fields to be overwritten. Currently only
@@ -313,7 +316,7 @@ object cloudprofilerV2Mod {
         * those fields can be specified in the mask. When no mask is provided, all
         * fields are overwritten.
         */
-      var updateMask: js.UndefOr[String] = js.native
+      var updateMask: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceProjectsProfilesPatch {
       
@@ -358,18 +361,17 @@ object cloudprofilerV2Mod {
       * of profile types supported by the agent. The creation call will hang until
       * a profile of one of these types needs to be collected.
       */
-    @js.native
     trait SchemaCreateProfileRequest extends StObject {
       
       /**
         * Deployment details.
         */
-      var deployment: js.UndefOr[SchemaDeployment] = js.native
+      var deployment: js.UndefOr[SchemaDeployment] = js.undefined
       
       /**
         * One or more profile types that the agent is capable of providing.
         */
-      var profileType: js.UndefOr[js.Array[String]] = js.native
+      var profileType: js.UndefOr[js.Array[String]] = js.undefined
     }
     object SchemaCreateProfileRequest {
       
@@ -402,7 +404,6 @@ object cloudprofilerV2Mod {
     /**
       * Deployment contains the deployment identification information.
       */
-    @js.native
     trait SchemaDeployment extends StObject {
       
       /**
@@ -419,13 +420,13 @@ object cloudprofilerV2Mod {
         * a zone is &quot;us-central1-a&quot;, an example of a region is
         * &quot;us-central1&quot; or &quot;us-central&quot;.
         */
-      var labels: js.UndefOr[StringDictionary[String]] = js.native
+      var labels: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /**
         * Project ID is the ID of a cloud project. Validation regex:
         * `^a-z{4,61}[a-z0-9]$`.
         */
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
       /**
         * Target is the service name used to group related deployments: * Service
@@ -433,7 +434,7 @@ object cloudprofilerV2Mod {
         * User-specified string for direct GCE profiling (e.g. Java). * Job name
         * for Dataflow. Validation regex: `^[a-z]([-a-z0-9_.]{0,253}[a-z0-9])?$`.
         */
-      var target: js.UndefOr[String] = js.native
+      var target: js.UndefOr[String] = js.undefined
     }
     object SchemaDeployment {
       
@@ -469,13 +470,12 @@ object cloudprofilerV2Mod {
     /**
       * Profile resource.
       */
-    @js.native
     trait SchemaProfile extends StObject {
       
       /**
         * Deployment this profile corresponds to.
         */
-      var deployment: js.UndefOr[SchemaDeployment] = js.native
+      var deployment: js.UndefOr[SchemaDeployment] = js.undefined
       
       /**
         * Duration of the profiling session. Input (for the offline mode) or output
@@ -485,32 +485,32 @@ object cloudprofilerV2Mod {
         * immediately (e.g. in case stopping the profiling is handled
         * asynchronously).
         */
-      var duration: js.UndefOr[String] = js.native
+      var duration: js.UndefOr[String] = js.undefined
       
       /**
         * Input only. Labels associated to this specific profile. These labels will
         * get merged with the deployment labels for the final data set.  See
         * documentation on deployment labels for validation rules and limits.
         */
-      var labels: js.UndefOr[StringDictionary[String]] = js.native
+      var labels: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /**
         * Output only. Opaque, server-assigned, unique ID for this profile.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Input only. Profile bytes, as a gzip compressed serialized proto, the
         * format is
         * https://github.com/google/pprof/blob/master/proto/profile.proto.
         */
-      var profileBytes: js.UndefOr[String] = js.native
+      var profileBytes: js.UndefOr[String] = js.undefined
       
       /**
         * Type of profile. For offline mode, this must be specified when creating
         * the profile. For online mode it is assigned and returned by the server.
         */
-      var profileType: js.UndefOr[String] = js.native
+      var profileType: js.UndefOr[String] = js.undefined
     }
     object SchemaProfile {
       
@@ -561,68 +561,67 @@ object cloudprofilerV2Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * V1 error format.
         */
       @JSName("$.xgafv")
-      var $Dotxgafv: js.UndefOr[String] = js.native
+      var $Dotxgafv: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth access token.
         */
-      var access_token: js.UndefOr[String] = js.native
+      var access_token: js.UndefOr[String] = js.undefined
       
       /**
         * Data format for response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * JSONP
         */
-      var callback: js.UndefOr[String] = js.native
+      var callback: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Available to use for quota purposes for server-side applications. Can be
         * any arbitrary string assigned to a user, but should not exceed 40
         * characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Legacy upload protocol for media (e.g. "media", "multipart").
         */
-      var uploadType: js.UndefOr[String] = js.native
+      var uploadType: js.UndefOr[String] = js.undefined
       
       /**
         * Upload protocol for media (e.g. "raw", "multipart").
         */
-      var upload_protocol: js.UndefOr[String] = js.native
+      var upload_protocol: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

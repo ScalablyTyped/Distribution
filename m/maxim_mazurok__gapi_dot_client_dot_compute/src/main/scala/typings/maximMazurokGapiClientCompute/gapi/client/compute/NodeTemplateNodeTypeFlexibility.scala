@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTemplateNodeTypeFlexibility extends StObject {
   
-  var cpus: js.UndefOr[String] = js.native
+  var cpus: js.UndefOr[String] = js.undefined
   
-  var localSsd: js.UndefOr[String] = js.native
+  var localSsd: js.UndefOr[String] = js.undefined
   
-  var memory: js.UndefOr[String] = js.native
+  var memory: js.UndefOr[String] = js.undefined
 }
 object NodeTemplateNodeTypeFlexibility {
   

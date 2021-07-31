@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReimageNodeRequest extends StObject {
   
   /** The version for reimage to create. */
-  var tensorflowVersion: js.UndefOr[String] = js.native
+  var tensorflowVersion: js.UndefOr[String] = js.undefined
 }
 object ReimageNodeRequest {
   

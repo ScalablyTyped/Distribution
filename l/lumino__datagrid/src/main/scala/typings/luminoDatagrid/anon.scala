@@ -2,33 +2,31 @@ package typings.luminoDatagrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color1 extends StObject {
     
     /**
       * The first color stop for the shadow.
       */
-    val color1: String = js.native
+    val color1: String
     
     /**
       * The second color stop for the shadow.
       */
-    val color2: String = js.native
+    val color2: String
     
     /**
       * The third color stop for the shadow.
       */
-    val color3: String = js.native
+    val color3: String
     
     /**
       * The size of the shadow, in pixels.
       */
-    val size: Double = js.native
+    val size: Double
   }
   object Color1 {
     
@@ -55,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lx extends StObject {
     
-    var lx: Double = js.native
+    var lx: Double
     
-    var ly: Double = js.native
+    var ly: Double
   }
   object Lx {
     
@@ -81,12 +78,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Vx extends StObject {
     
-    var vx: Double = js.native
+    var vx: Double
     
-    var vy: Double = js.native
+    var vy: Double
   }
   object Vx {
     

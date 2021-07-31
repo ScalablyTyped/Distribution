@@ -10,9 +10,9 @@ Automated semver compliant package publishing
 | ------------------ | :-------------: |
 | Full name          | semantic-release |
 | Keywords           | author, automation, changelog, module, package, publish, release, semver, version |
-| # releases         | 109 |
-| # dependents       | 299 |
-| # downloads        | 12416253 |
+| # releases         | 90 |
+| # dependents       | 327 |
+| # downloads        | 14839307 |
 | # stars            | 83 |
 
 ## Links

@@ -2,19 +2,17 @@ package typings.sinonMongoose
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait SinonStub extends StObject {
     
     /**
       * When called, the stub will create a new stub to represent a mongoose chained function.
       */
-    def chain(name: String): SinonStub = js.native
+    def chain(name: String): SinonStub
   }
   object SinonStub {
     

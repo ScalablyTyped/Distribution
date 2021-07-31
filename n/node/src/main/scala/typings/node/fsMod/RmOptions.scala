@@ -2,17 +2,15 @@ package typings.node.fsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RmOptions extends StObject {
   
   /**
     * When `true`, exceptions will be ignored if `path` does not exist.
     * @default false
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If an `EBUSY`, `EMFILE`, `ENFILE`, `ENOTEMPTY`, or
@@ -22,7 +20,7 @@ trait RmOptions extends StObject {
     * `true`.
     * @default 0
     */
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true`, perform a recursive directory removal. In
@@ -30,14 +28,14 @@ trait RmOptions extends StObject {
     * operations are retried on failure.
     * @default false
     */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The amount of time in milliseconds to wait between retries.
     * This option is ignored if the `recursive` option is not `true`.
     * @default 100
     */
-  var retryDelay: js.UndefOr[Double] = js.native
+  var retryDelay: js.UndefOr[Double] = js.undefined
 }
 object RmOptions {
   

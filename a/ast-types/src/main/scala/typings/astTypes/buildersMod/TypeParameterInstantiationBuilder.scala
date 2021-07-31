@@ -5,7 +5,6 @@ import typings.astTypes.kindsMod.FlowTypeKind
 import typings.astTypes.namedTypesMod.namedTypes.TypeParameterInstantiation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -6,7 +6,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMod {
@@ -24,30 +23,29 @@ object tabMod {
     def renderIcon(): Element = js.native
   }
   
-  @js.native
   trait TabProps extends StObject {
     
-    var badge: js.UndefOr[String | Double] = js.native
+    var badge: js.UndefOr[String | Double] = js.undefined
     
-    var dataAttrs: js.UndefOr[StringDictionary[String]] = js.native
+    var dataAttrs: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[TabIcon] = js.native
+    var icon: js.UndefOr[TabIcon] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var selectedIcon: js.UndefOr[TabIcon] = js.native
+    var selectedIcon: js.UndefOr[TabIcon] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var unselectedTintColor: js.UndefOr[String] = js.native
+    var unselectedTintColor: js.UndefOr[String] = js.undefined
   }
   object TabProps {
     

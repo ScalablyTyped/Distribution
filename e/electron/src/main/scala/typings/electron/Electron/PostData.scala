@@ -5,50 +5,48 @@ import typings.electron.electronStrings.file
 import typings.electron.electronStrings.rawData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostData extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/post-data
   /**
     * The `UUID` of the `Blob` being uploaded. Required for the `blob` type.
     */
-  var blobUUID: js.UndefOr[String] = js.native
+  var blobUUID: js.UndefOr[String] = js.undefined
   
   /**
     * The raw bytes of the post data in a `Buffer`. Required for the `rawData` type.
     */
-  var bytes: js.UndefOr[String] = js.native
+  var bytes: js.UndefOr[String] = js.undefined
   
   /**
     * The path of the file being uploaded. Required for the `file` type.
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /**
     * The length of the file being uploaded, in bytes. If set to `-1`, the whole file
     * will be uploaded. Only valid for `file` types.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The modification time of the file represented by a double, which is the number
     * of seconds since the `UNIX Epoch` (Jan 1, 1970). Only valid for `file` types.
     */
-  var modificationTime: js.UndefOr[Double] = js.native
+  var modificationTime: js.UndefOr[Double] = js.undefined
   
   /**
     * The offset from the beginning of the file being uploaded, in bytes. Only valid
     * for `file` types.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * One of the following:
     */
-  var `type`: rawData | file | blob = js.native
+  var `type`: rawData | file | blob
 }
 object PostData {
   

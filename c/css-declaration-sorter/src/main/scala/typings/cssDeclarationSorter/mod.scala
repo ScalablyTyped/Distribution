@@ -10,7 +10,6 @@ import typings.cssDeclarationSorter.cssDeclarationSorterStrings.smacss
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,7 +37,6 @@ object mod extends Shortcut {
   
   type CssDeclarationSorter = Plugin_[Options]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -46,13 +44,13 @@ object mod extends Shortcut {
       * (also taking into account vendor prefixes) this option can enabled.
       * For example `animation-name: some; animation: greeting;` will be kept in this order when `keepOverrides` is `true`.
       */
-    var keepOverrides: js.UndefOr[Boolean] = js.native
+    var keepOverrides: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide the name of one of the built-in sort orders or a comparison function that is passed to `Array.sort`.
       * @default 'alphabetical'
       */
-    var order: js.UndefOr[SortOrder | SortFunction] = js.native
+    var order: js.UndefOr[SortOrder | SortFunction] = js.undefined
   }
   object Options {
     

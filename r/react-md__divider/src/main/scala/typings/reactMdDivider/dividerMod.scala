@@ -7,19 +7,19 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLHRElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dividerMod {
   
   @JSImport("@react-md/divider/types/Divider", "Divider")
   @js.native
-  val Divider: ForwardRefExoticComponent[DividerProps with RefAttributes[DividerElement]] = js.native
+  val Divider: ForwardRefExoticComponent[DividerProps & RefAttributes[DividerElement]] = js.native
   
   type DividerElement = HTMLHRElement | HTMLDivElement
   
-  @js.native
-  trait DividerProps extends HTMLAttributes[DividerElement] {
+  trait DividerProps
+    extends StObject
+       with HTMLAttributes[DividerElement] {
     
     /**
       * Boolean if the divider should appear inset instead of full width. This
@@ -29,7 +29,7 @@ object dividerMod {
       * use the `rmd-divider-theme-update-var` mixin instead to update the
       * `max-size` of the divider.
       */
-    var inset: js.UndefOr[Boolean] = js.native
+    var inset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the divider should be vertical instead of horizontal. This will
@@ -40,7 +40,7 @@ object dividerMod {
       * non-percentage number OR use the `VerticalDivider` component instead to
       * automagically create a valid percentage height.
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object DividerProps {
     

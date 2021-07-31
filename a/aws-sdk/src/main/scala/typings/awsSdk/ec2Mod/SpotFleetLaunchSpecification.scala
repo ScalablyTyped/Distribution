@@ -2,101 +2,99 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotFleetLaunchSpecification extends StObject {
   
   /**
     * Deprecated.
     */
-  var AddressingType: js.UndefOr[String] = js.native
+  var AddressingType: js.UndefOr[String] = js.undefined
   
   /**
     * One or more block devices that are mapped to the Spot Instances. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
     */
-  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
     * Indicates whether the instances are optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance. Default: false 
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.native
+  var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The ID of the kernel.
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
   /**
     * Enable or disable monitoring for the instances.
     */
-  var Monitoring: js.UndefOr[SpotFleetMonitoring] = js.native
+  var Monitoring: js.UndefOr[SpotFleetMonitoring] = js.undefined
   
   /**
     * One or more network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.   SpotFleetLaunchSpecification currently does not support Elastic Fabric Adapter (EFA). To specify an EFA, you must use LaunchTemplateConfig. 
     */
-  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.native
+  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   
   /**
     * The placement information.
     */
-  var Placement: js.UndefOr[SpotPlacement] = js.native
+  var Placement: js.UndefOr[SpotPlacement] = js.undefined
   
   /**
     * The ID of the RAM disk. Some kernels require additional drivers at launch. Check the kernel requirements for information about whether you need to specify a RAM disk. To find kernel requirements, refer to the AWS Resource Center and search for the kernel ID.
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[String] = js.undefined
   
   /**
     * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
     */
-  var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.native
+  var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * The maximum price per unit hour that you are willing to pay for a Spot Instance. If this value is not specified, the default is the Spot price specified for the fleet. To determine the Spot price per unit hour, divide the Spot price by the value of WeightedCapacity.
     */
-  var SpotPrice: js.UndefOr[String] = js.native
+  var SpotPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the subnets in which to launch the instances. To specify multiple subnets, separate them using commas; for example, "subnet-1234abcdeexample1, subnet-0987cdef6example2".
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * The tags to apply during creation.
     */
-  var TagSpecifications: js.UndefOr[SpotFleetTagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[SpotFleetTagSpecificationList] = js.undefined
   
   /**
     * The Base64-encoded user data that instances use when starting up.
     */
-  var UserData: js.UndefOr[String] = js.native
+  var UserData: js.UndefOr[String] = js.undefined
   
   /**
     * The number of units provided by the specified instance type. These are the same units that you chose to set the target capacity in terms of instances, or a performance characteristic such as vCPUs, memory, or I/O. If the target capacity divided by this value is not a whole number, Amazon EC2 rounds the number of instances to the next whole number. If this value is not specified, the default is 1.
     */
-  var WeightedCapacity: js.UndefOr[Double] = js.native
+  var WeightedCapacity: js.UndefOr[Double] = js.undefined
 }
 object SpotFleetLaunchSpecification {
   

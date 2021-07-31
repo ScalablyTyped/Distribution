@@ -2,19 +2,17 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a batch image annotation request.
   */
-@js.native
 trait SchemaBatchAnnotateImagesResponse extends StObject {
   
   /**
     * Individual responses to image annotation requests within the batch.
     */
-  var responses: js.UndefOr[js.Array[SchemaAnnotateImageResponse]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaAnnotateImageResponse]] = js.undefined
 }
 object SchemaBatchAnnotateImagesResponse {
   

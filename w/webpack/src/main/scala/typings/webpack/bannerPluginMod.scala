@@ -4,7 +4,6 @@ import typings.std.RegExp
 import typings.webpack.anon.Basename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bannerPluginMod {
@@ -13,38 +12,37 @@ object bannerPluginMod {
   
   type BannerPluginArgument = BannerPluginOptions | BannerFunction | String
   
-  @js.native
   trait BannerPluginOptions extends StObject {
     
     /**
     	 * Specifies the banner
     	 */
-    var banner: BannerFunction | String = js.native
+    var banner: BannerFunction | String
     
     /**
     	 * If true, the banner will only be added to the entry chunks
     	 */
-    var entryOnly: js.UndefOr[Boolean] = js.native
+    var entryOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Exclude all modules matching any of these conditions
     	 */
-    var exclude: js.UndefOr[Rules] = js.native
+    var exclude: js.UndefOr[Rules] = js.undefined
     
     /**
     	 * Include all modules matching any of these conditions
     	 */
-    var include: js.UndefOr[Rules] = js.native
+    var include: js.UndefOr[Rules] = js.undefined
     
     /**
     	 * If true, banner will not be wrapped in a comment
     	 */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Include all modules that pass test assertion
     	 */
-    var test: js.UndefOr[Rules] = js.native
+    var test: js.UndefOr[Rules] = js.undefined
   }
   object BannerPluginOptions {
     

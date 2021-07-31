@@ -5,13 +5,11 @@ import typings.reactSelect.typesMod.KeyboardEventHandler
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnKeyDown extends StObject {
   
-  var onKeyDown: KeyboardEventHandler = js.native
+  var onKeyDown: KeyboardEventHandler
 }
 object OnKeyDown {
   

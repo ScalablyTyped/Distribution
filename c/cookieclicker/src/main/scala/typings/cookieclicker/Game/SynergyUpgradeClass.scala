@@ -3,11 +3,12 @@ package typings.cookieclicker.Game
 import typings.cookieclicker.cookieclickerStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SynergyUpgradeClass[Tier /* <: String | Double */] extends Upgrade {
+trait SynergyUpgradeClass[Tier /* <: String | Double */]
+  extends StObject
+     with Upgrade {
   
   var buildingTie1: GameObject = js.native
   

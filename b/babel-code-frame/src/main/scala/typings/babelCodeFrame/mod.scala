@@ -2,7 +2,6 @@ package typings.babelCodeFrame
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,14 +16,15 @@ object mod {
     *
     * @returns Framed code
     */
-  @JSImport("babel-code-frame", JSImport.Namespace)
-  @js.native
-  def apply(rawLines: String, lineNumber: Double, colNumber: Double): String = js.native
-  @JSImport("babel-code-frame", JSImport.Namespace)
-  @js.native
-  def apply(rawLines: String, lineNumber: Double, colNumber: Double, options: BabelCodeFrameOptions): String = js.native
+  @scala.inline
+  def apply(rawLines: String, lineNumber: Double, colNumber: Double): String = (^.asInstanceOf[js.Dynamic].apply(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(rawLines: String, lineNumber: Double, colNumber: Double, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].apply(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("babel-code-frame", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait BabelCodeFrameOptions extends StObject {
     
     /**
@@ -32,16 +32,16 @@ object mod {
       * overrides highlightCode.
       * default: false
       */
-    var forceColor: js.UndefOr[Boolean] = js.native
+    var forceColor: js.UndefOr[Boolean] = js.undefined
     
     /** Syntax highlight the code as JavaScript for terminals. default: false */
-    var highlightCode: js.UndefOr[Boolean] = js.native
+    var highlightCode: js.UndefOr[Boolean] = js.undefined
     
     /**  The number of lines to show below the error. default: 3 */
-    var linesAbove: js.UndefOr[Double] = js.native
+    var linesAbove: js.UndefOr[Double] = js.undefined
     
     /**  The number of lines to show above the error. default: 2 */
-    var linesBelow: js.UndefOr[Double] = js.native
+    var linesBelow: js.UndefOr[Double] = js.undefined
   }
   object BabelCodeFrameOptions {
     

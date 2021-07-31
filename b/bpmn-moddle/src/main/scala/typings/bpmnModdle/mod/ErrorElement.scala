@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorElement extends BaseElement {
+trait ErrorElement
+  extends StObject
+     with BaseElement {
   
-  var errorCode: String = js.native
+  var errorCode: String
   
-  var name: String = js.native
+  var name: String
   
-  var structureRef: ItemDefinition = js.native
+  var structureRef: ItemDefinition
 }
 object ErrorElement {
   

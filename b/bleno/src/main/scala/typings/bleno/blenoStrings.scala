@@ -4,7 +4,6 @@ import typings.bleno.mod.Property
 import typings.bleno.mod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blenoStrings {
@@ -35,7 +34,9 @@ object blenoStrings {
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
-  sealed trait indicate extends Property
+  sealed trait indicate
+    extends StObject
+       with Property
   @scala.inline
   def indicate: indicate = "indicate".asInstanceOf[indicate]
   
@@ -45,25 +46,35 @@ object blenoStrings {
   def mtuChange: mtuChange = "mtuChange".asInstanceOf[mtuChange]
   
   @js.native
-  sealed trait notify extends Property
+  sealed trait notify
+    extends StObject
+       with Property
   
   @js.native
-  sealed trait poweredOff extends State
+  sealed trait poweredOff
+    extends StObject
+       with State
   @scala.inline
   def poweredOff: poweredOff = "poweredOff".asInstanceOf[poweredOff]
   
   @js.native
-  sealed trait poweredOn extends State
+  sealed trait poweredOn
+    extends StObject
+       with State
   @scala.inline
   def poweredOn: poweredOn = "poweredOn".asInstanceOf[poweredOn]
   
   @js.native
-  sealed trait read extends Property
+  sealed trait read
+    extends StObject
+       with Property
   @scala.inline
   def read: read = "read".asInstanceOf[read]
   
   @js.native
-  sealed trait resetting extends State
+  sealed trait resetting
+    extends StObject
+       with State
   @scala.inline
   def resetting: resetting = "resetting".asInstanceOf[resetting]
   
@@ -88,27 +99,37 @@ object blenoStrings {
   def stateChange: stateChange = "stateChange".asInstanceOf[stateChange]
   
   @js.native
-  sealed trait unauthorized extends State
+  sealed trait unauthorized
+    extends StObject
+       with State
   @scala.inline
   def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
   
   @js.native
-  sealed trait unknown extends State
+  sealed trait unknown
+    extends StObject
+       with State
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait unsupported extends State
+  sealed trait unsupported
+    extends StObject
+       with State
   @scala.inline
   def unsupported: unsupported = "unsupported".asInstanceOf[unsupported]
   
   @js.native
-  sealed trait write extends Property
+  sealed trait write
+    extends StObject
+       with Property
   @scala.inline
   def write: write = "write".asInstanceOf[write]
   
   @js.native
-  sealed trait writeWithoutResponse extends Property
+  sealed trait writeWithoutResponse
+    extends StObject
+       with Property
   @scala.inline
   def writeWithoutResponse: writeWithoutResponse = "writeWithoutResponse".asInstanceOf[writeWithoutResponse]
 }

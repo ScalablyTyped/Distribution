@@ -2,28 +2,26 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domain {
   
-  @JSGlobal("KSR.domain.is_domain_local")
+  @JSGlobal("KSR.domain")
   @js.native
-  def isDomainLocal(sdomain: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.domain.is_from_local")
-  @js.native
-  def isFromLocal(): Double = js.native
+  @scala.inline
+  def isDomainLocal(sdomain: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_domain_local")(sdomain.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.domain.is_uri_host_local")
-  @js.native
-  def isUriHostLocal(): Double = js.native
+  @scala.inline
+  def isFromLocal(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_from_local")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.domain.lookup_domain")
-  @js.native
-  def lookupDomain(_sdomain: String): Double = js.native
+  @scala.inline
+  def isUriHostLocal(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_uri_host_local")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.domain.lookup_domain_prefix")
-  @js.native
-  def lookupDomainPrefix(_sdomain: String, _sprefix: String): Double = js.native
+  @scala.inline
+  def lookupDomain(_sdomain: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup_domain")(_sdomain.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def lookupDomainPrefix(_sdomain: String, _sprefix: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_domain_prefix")(_sdomain.asInstanceOf[js.Any], _sprefix.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

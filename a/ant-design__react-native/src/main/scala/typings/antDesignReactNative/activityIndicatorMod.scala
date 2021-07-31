@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activityIndicatorMod {
@@ -31,21 +30,22 @@ object activityIndicatorMod {
     def defaultProps_=(x: Animating): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ActivityIndicatorNativeProps extends WithThemeStyles[ActivityIndicatorStyle] {
+  trait ActivityIndicatorNativeProps
+    extends StObject
+       with WithThemeStyles[ActivityIndicatorStyle] {
     
-    var animating: js.UndefOr[Boolean] = js.native
+    var animating: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
     
     @JSName("styles")
-    var styles_ActivityIndicatorNativeProps: js.UndefOr[ActivityIndicatorStyle] = js.native
+    var styles_ActivityIndicatorNativeProps: js.UndefOr[ActivityIndicatorStyle] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var toast: js.UndefOr[Boolean] = js.native
+    var toast: js.UndefOr[Boolean] = js.undefined
   }
   object ActivityIndicatorNativeProps {
     

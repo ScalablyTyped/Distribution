@@ -6,14 +6,15 @@ import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Descriptions {
   
-  @JSImport("antd", "Descriptions")
-  @js.native
-  def apply(hasPrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize: DescriptionsProps): Element = js.native
+  @scala.inline
+  def apply(
+    hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize: DescriptionsProps
+  ): Element = ^.asInstanceOf[js.Dynamic].apply(hasCustomizePrefixClsTitleExtraColumnColonBorderedLayoutChildrenClassNameStyleSize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("antd", "Descriptions")
   @js.native
   val ^ : js.Any = js.native

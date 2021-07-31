@@ -2,40 +2,39 @@ package typings.mediaTyper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("media-typer", "format")
+  @JSImport("media-typer", JSImport.Namespace)
   @js.native
-  def format(mediaTypeDescriptor: MediaType): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("media-typer", "parse")
-  @js.native
-  def parse(mediaType: String): MediaType = js.native
+  @scala.inline
+  def format(mediaTypeDescriptor: MediaType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(mediaTypeDescriptor.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("media-typer", "test")
-  @js.native
-  def test(mediaType: String): Boolean = js.native
+  @scala.inline
+  def parse(mediaType: String): MediaType = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(mediaType.asInstanceOf[js.Any]).asInstanceOf[MediaType]
   
-  @js.native
+  @scala.inline
+  def test(mediaType: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(mediaType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait MediaType extends StObject {
     
     /**
       * The subtype of the media type (always lower case). Example: `svg`
       */
-    var subtype: String = js.native
+    var subtype: String
     
     /**
       * The suffix of the media type (always lower case). Example: `xml`
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the media type (always lower case). Example: `image`
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object MediaType {
     

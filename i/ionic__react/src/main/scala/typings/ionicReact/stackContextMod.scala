@@ -5,7 +5,6 @@ import typings.react.mod.Context
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackContextMod {
@@ -14,17 +13,16 @@ object stackContextMod {
   @js.native
   val StackContext: Context[StackContextState] = js.native
   
-  @js.native
   trait StackContextState extends StObject {
     
-    def isInOutlet(): Boolean = js.native
+    def isInOutlet(): Boolean
     
-    def registerIonPage(page: HTMLElement, routeInfo: RouteInfo[_]): Unit = js.native
+    def registerIonPage(page: HTMLElement, routeInfo: RouteInfo[js.Any]): Unit
   }
   object StackContextState {
     
     @scala.inline
-    def apply(isInOutlet: () => Boolean, registerIonPage: (HTMLElement, RouteInfo[_]) => Unit): StackContextState = {
+    def apply(isInOutlet: () => Boolean, registerIonPage: (HTMLElement, RouteInfo[js.Any]) => Unit): StackContextState = {
       val __obj = js.Dynamic.literal(isInOutlet = js.Any.fromFunction0(isInOutlet), registerIonPage = js.Any.fromFunction2(registerIonPage))
       __obj.asInstanceOf[StackContextState]
     }
@@ -36,7 +34,7 @@ object stackContextMod {
       def setIsInOutlet(value: () => Boolean): Self = StObject.set(x, "isInOutlet", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setRegisterIonPage(value: (HTMLElement, RouteInfo[_]) => Unit): Self = StObject.set(x, "registerIonPage", js.Any.fromFunction2(value))
+      def setRegisterIonPage(value: (HTMLElement, RouteInfo[js.Any]) => Unit): Self = StObject.set(x, "registerIonPage", js.Any.fromFunction2(value))
     }
   }
 }

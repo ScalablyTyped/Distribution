@@ -11,8 +11,8 @@ Client/server side PDF printing in pure JavaScript
 | Full name          | pdfmake |
 | Keywords           | pdf, javascript, printing, layout |
 | # releases         | 23 |
-| # dependents       | 126 |
-| # downloads        | 11695801 |
+| # dependents       | 143 |
+| # downloads        | 14725768 |
 | # stars            | 29 |
 
 ## Links

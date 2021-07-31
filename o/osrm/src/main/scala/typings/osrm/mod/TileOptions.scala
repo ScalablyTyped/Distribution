@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#tile
   */
-@js.native
-trait TileOptions extends Options {
+trait TileOptions
+  extends StObject
+     with Options {
   
   /**
     * Array an array consisting of x, y, and z values representing tile coordinates like wiki.openstreetmap.org/wiki/Slippy_map_tilenames
     * and are supported by vector tile viewers like Mapbox GL JS.
     */
-  var ZXY: js.UndefOr[Tile] = js.native
+  var ZXY: js.UndefOr[Tile] = js.undefined
 }
 object TileOptions {
   

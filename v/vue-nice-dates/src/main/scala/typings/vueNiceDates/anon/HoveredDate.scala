@@ -2,23 +2,21 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoveredDate extends StObject {
   
-  var hoveredDate: typings.std.Date | Null = js.native
+  var hoveredDate: typings.std.Date | Null
   
-  var receivedEndDate: String | typings.std.Date | Null = js.native
+  var receivedEndDate: String | typings.std.Date | Null
   
-  var receivedStartDate: String | typings.std.Date | Null = js.native
+  var receivedStartDate: String | typings.std.Date | Null
 }
 object HoveredDate {
   
   @scala.inline
   def apply(): HoveredDate = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(hoveredDate = null, receivedEndDate = null, receivedStartDate = null)
     __obj.asInstanceOf[HoveredDate]
   }
   

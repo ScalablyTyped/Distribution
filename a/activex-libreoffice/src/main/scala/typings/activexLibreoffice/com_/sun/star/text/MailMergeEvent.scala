@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.MailMerge
   * @since OOo 1.1.2
   */
-@js.native
-trait MailMergeEvent extends EventObject {
+trait MailMergeEvent
+  extends StObject
+     with EventObject {
   
   /** The model of the document to be processed next. */
-  var Model: XModel = js.native
+  var Model: XModel
 }
 object MailMergeEvent {
   

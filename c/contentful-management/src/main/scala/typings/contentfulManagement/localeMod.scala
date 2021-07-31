@@ -13,27 +13,28 @@ import typings.contentfulManagement.contentfulManagementStrings.optional
 import typings.typeFest.setOptionalMod.SetOptional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
   
-  @JSImport("contentful-management/dist/typings/entities/locale", "wrapLocale")
+  @JSImport("contentful-management/dist/typings/entities/locale", JSImport.Namespace)
   @js.native
-  def wrapLocale(http: AxiosInstance, data: LocaleProps): Locale = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/locale", "wrapLocaleCollection")
-  @js.native
-  def wrapLocaleCollection(http: AxiosInstance, data: CollectionProp[LocaleProps]): Collection[Locale, LocaleProps] = js.native
+  @scala.inline
+  def wrapLocale(http: AxiosInstance, data: LocaleProps): Locale = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLocale")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Locale]
+  
+  @scala.inline
+  def wrapLocaleCollection(http: AxiosInstance, data: CollectionProp[LocaleProps]): Collection[Locale, LocaleProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapLocaleCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Locale, LocaleProps]]
   
   type CreateLocaleProps = SetOptional[
     ExceptLocalePropssys, 
     optional | contentManagementApi | default | contentDeliveryApi
   ]
   
-  @js.native
   trait Locale
-    extends LocaleProps
+    extends StObject
+       with LocaleProps
        with DefaultElements[LocaleProps] {
     
     /**
@@ -53,7 +54,7 @@ object localeMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -75,7 +76,7 @@ object localeMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[Locale] = js.native
+    def update(): js.Promise[Locale]
   }
   object Locale {
     
@@ -108,45 +109,44 @@ object localeMod {
     }
   }
   
-  @js.native
   trait LocaleProps extends StObject {
     
     /**
       * If this is the default locale
       */
-    var default: Boolean = js.native
+    var default: Boolean
     
     /**
       * Locale code (example: en-us)
       */
-    var code: String = js.native
+    var code: String
     
     /**
       *  If the content under this locale should be available on the CDA (for public reading)
       */
-    var contentDeliveryApi: Boolean = js.native
+    var contentDeliveryApi: Boolean
     
     /**
       * If the content under this locale should be available on the CMA (for editing)
       */
-    var contentManagementApi: Boolean = js.native
+    var contentManagementApi: Boolean
     
     /**
       * Locale code to fallback to when there is not content for the current locale
       */
-    var fallbackCode: String = js.native
+    var fallbackCode: String
     
     /**
       * Locale name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * If the locale needs to be filled in on entries or not
       */
-    var optional: Boolean = js.native
+    var optional: Boolean
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object LocaleProps {
     

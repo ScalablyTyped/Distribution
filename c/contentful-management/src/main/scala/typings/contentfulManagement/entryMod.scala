@@ -12,22 +12,23 @@ import typings.contentfulManagement.snapshotMod.SnapshotProps
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryMod {
   
-  @JSImport("contentful-management/dist/typings/entities/entry", "wrapEntry")
+  @JSImport("contentful-management/dist/typings/entities/entry", JSImport.Namespace)
   @js.native
-  def wrapEntry(http: AxiosInstance, data: EntryProp): Entry = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/entry", "wrapEntryCollection")
-  @js.native
-  def wrapEntryCollection(http: AxiosInstance, data: CollectionProp[EntryProp]): Collection[Entry, EntryProp] = js.native
+  @scala.inline
+  def wrapEntry(http: AxiosInstance, data: EntryProp): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEntry")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Entry]
   
-  @js.native
+  @scala.inline
+  def wrapEntryCollection(http: AxiosInstance, data: CollectionProp[EntryProp]): Collection[Entry, EntryProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEntryCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Entry, EntryProp]]
+  
   trait Entry
-    extends EntryProp
+    extends StObject
+       with EntryProp
        with DefaultElements[EntryProp]
        with EntryApi
   object Entry {
@@ -36,7 +37,7 @@ object entryMod {
     def apply(
       archive: () => js.Promise[Entry],
       delete: () => js.Promise[Unit],
-      fields: Record[String, _],
+      fields: Record[String, js.Any],
       getSnapshot: String => js.Promise[Snapshot[EntryProp]],
       getSnapshots: () => js.Promise[Collection[Snapshot[EntryProp], SnapshotProps[EntryProp]]],
       isArchived: () => Boolean,
@@ -55,7 +56,6 @@ object entryMod {
     }
   }
   
-  @js.native
   trait EntryApi extends StObject {
     
     /**
@@ -75,7 +75,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def archive(): js.Promise[Entry] = js.native
+    def archive(): js.Promise[Entry]
     
     /**
       * Deletes this object on the server.
@@ -94,7 +94,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Gets a snapshot of an entry
@@ -113,7 +113,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def getSnapshot(id: String): js.Promise[Snapshot[EntryProp]] = js.native
+    def getSnapshot(id: String): js.Promise[Snapshot[EntryProp]]
     
     /**
       * Gets all snapshots of an entry
@@ -131,27 +131,27 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def getSnapshots(): js.Promise[Collection[Snapshot[EntryProp], SnapshotProps[EntryProp]]] = js.native
+    def getSnapshots(): js.Promise[Collection[Snapshot[EntryProp], SnapshotProps[EntryProp]]]
     
     /**
       * Checks if entry is archived. This means it's not exposed to the Delivery/Preview APIs.
       */
-    def isArchived(): Boolean = js.native
+    def isArchived(): Boolean
     
     /**
       * Checks if the entry is in draft mode. This means it is not published.
       */
-    def isDraft(): Boolean = js.native
+    def isDraft(): Boolean
     
     /**
       * Checks if the entry is published. A published entry might have unpublished changes
       */
-    def isPublished(): Boolean = js.native
+    def isPublished(): Boolean
     
     /**
       * Checks if the entry is updated. This means the entry was previously published but has unpublished changes.
       */
-    def isUpdated(): Boolean = js.native
+    def isUpdated(): Boolean
     
     /**
       * Publishes the object
@@ -170,7 +170,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def publish(): js.Promise[Entry] = js.native
+    def publish(): js.Promise[Entry]
     
     /**
       * Unarchives the object
@@ -189,7 +189,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def unarchive(): js.Promise[Entry] = js.native
+    def unarchive(): js.Promise[Entry]
     
     /**
       * Unpublishes the object
@@ -208,7 +208,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def unpublish(): js.Promise[Entry] = js.native
+    def unpublish(): js.Promise[Entry]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -230,7 +230,7 @@ object entryMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[Entry] = js.native
+    def update(): js.Promise[Entry]
   }
   object EntryApi {
     
@@ -294,19 +294,18 @@ object entryMod {
     }
   }
   
-  @js.native
   trait EntryProp extends StObject {
     
-    var fields: Record[String, _] = js.native
+    var fields: Record[String, js.Any]
     
-    var metadata: js.UndefOr[MetadataProps] = js.native
+    var metadata: js.UndefOr[MetadataProps] = js.undefined
     
-    var sys: EntrySys = js.native
+    var sys: EntrySys
   }
   object EntryProp {
     
     @scala.inline
-    def apply(fields: Record[String, _], sys: EntrySys): EntryProp = {
+    def apply(fields: Record[String, js.Any], sys: EntrySys): EntryProp = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryProp]
     }
@@ -315,7 +314,7 @@ object entryMod {
     implicit class EntryPropMutableBuilder[Self <: EntryProp] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFields(value: Record[String, _]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
@@ -328,20 +327,21 @@ object entryMod {
     }
   }
   
-  @js.native
-  trait EntrySys extends MetaSysProps {
+  trait EntrySys
+    extends StObject
+       with MetaSysProps {
     
-    var contentType: Sys = js.native
+    var contentType: Sys
     
-    var environment: Sys = js.native
+    var environment: Sys
     
-    var firstPublishedAt: js.UndefOr[String] = js.native
+    var firstPublishedAt: js.UndefOr[String] = js.undefined
     
-    var publishedAt: js.UndefOr[String] = js.native
+    var publishedAt: js.UndefOr[String] = js.undefined
     
-    var publishedBy: js.UndefOr[Sys] = js.native
+    var publishedBy: js.UndefOr[Sys] = js.undefined
     
-    var publishedCounter: js.UndefOr[Double] = js.native
+    var publishedCounter: js.UndefOr[Double] = js.undefined
   }
   object EntrySys {
     

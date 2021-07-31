@@ -2,17 +2,15 @@ package typings.mapsjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeometryFieldName extends StObject {
   
-  var bleedRatio: js.UndefOr[Double] = js.native
+  var bleedRatio: js.UndefOr[Double] = js.undefined
   
-  var geometryFieldName: String = js.native
+  var geometryFieldName: String
   
-  var valueFieldNames: js.Array[String] = js.native
+  var valueFieldNames: js.Array[String]
 }
 object GeometryFieldName {
   

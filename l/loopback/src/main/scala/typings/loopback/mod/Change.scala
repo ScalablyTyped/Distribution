@@ -4,7 +4,6 @@ import typings.loopback.anon.HashAlgorithm
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -107,15 +106,18 @@ class Change protected () extends PersistedModel {
 }
 object Change {
   
+  @JSImport("loopback", "Change")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Are both changes deletes?
     * @param  {Change} a
     * @param  {Change} b
     */
   /* static member */
-  @JSImport("loopback", "Change.bothDeleted")
-  @js.native
-  def bothDeleted(a: Change, b: Change): Unit = js.native
+  @scala.inline
+  def bothDeleted(a: Change, b: Change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bothDeleted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Determine the differences for a given model since a given checkpoint.
@@ -157,21 +159,19 @@ object Change {
     * @end
     */
   /* static member */
-  @JSImport("loopback", "Change.findOrCreateChange")
-  @js.native
+  @scala.inline
   def findOrCreateChange(
     modelName: String,
     modelId: String,
     callback: js.Function2[/* err */ Error, /* change */ Change, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreateChange")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the checkpoint model.
     */
   /* static member */
-  @JSImport("loopback", "Change.getCheckpointModel")
-  @js.native
-  def getCheckpointModel(): Unit = js.native
+  @scala.inline
+  def getCheckpointModel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCheckpointModel")().asInstanceOf[Unit]
   
   /**
     * Create a hash of the given `string` with the `options.hashAlgorithm`.
@@ -179,9 +179,8 @@ object Change {
     * @param  {string} str The string to be hashed
     */
   /* static member */
-  @JSImport("loopback", "Change.hash")
-  @js.native
-  def hash(str: String): Unit = js.native
+  @scala.inline
+  def hash(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Get an identifier for a given model
@@ -189,18 +188,16 @@ object Change {
     * @param  {string} modelId
     */
   /* static member */
-  @JSImport("loopback", "Change.idForModel")
-  @js.native
-  def idForModel(modelName: String, modelId: String): Unit = js.native
+  @scala.inline
+  def idForModel(modelName: String, modelId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("idForModel")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Correct all change list entries.
     * @param {() => void} c
     */
   /* static member */
-  @JSImport("loopback", "Change.rectifyAll")
-  @js.native
-  def rectifyAll(cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def rectifyAll(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyAll")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Track the recent change of the given modelIds
@@ -211,20 +208,18 @@ object Change {
     * @param {Array} changes Changes that were tracke
     */
   /* static member */
-  @JSImport("loopback", "Change.rectifyModelChanges")
-  @js.native
+  @scala.inline
   def rectifyModelChanges(
     modelName: String,
-    modelIds: js.Array[_],
-    callback: js.Function2[/* err */ Error, /* changes */ js.Array[_], Unit]
-  ): Unit = js.native
+    modelIds: js.Array[js.Any],
+    callback: js.Function2[/* err */ Error, /* changes */ js.Array[js.Any], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyModelChanges")(modelName.asInstanceOf[js.Any], modelIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get the revision string for the given object
     * @param  {any} inst The data to get the revision string for
     */
   /* static member */
-  @JSImport("loopback", "Change.revisionForInst")
-  @js.native
-  def revisionForInst(inst: js.Any): Unit = js.native
+  @scala.inline
+  def revisionForInst(inst: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revisionForInst")(inst.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

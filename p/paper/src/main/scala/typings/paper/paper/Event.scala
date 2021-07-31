@@ -2,14 +2,12 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The Event object is the base class for any of the other event types,
   * such as {@link MouseEvent}, {@link ToolEvent} and {@link KeyEvent}.
   */
-@js.native
 trait Event extends StObject {
   
   /** 
@@ -17,13 +15,13 @@ trait Event extends StObject {
     * 
     * @see Key.modifiers
     */
-  val modifiers: js.Any = js.native
+  val modifiers: js.Any
   
   /** 
     * Cancels the event if it is cancelable, without stopping further
     * propagation of the event.
     */
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
   /** 
     * Cancels the event if it is cancelable, and stops stopping further
@@ -33,17 +31,17 @@ trait Event extends StObject {
     * Any handler can also return `false` to indicate that `stop()` should be
     * called right after.
     */
-  def stop(): Unit = js.native
+  def stop(): Unit
   
   /** 
     * Prevents further propagation of the current event.
     */
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
   /** 
     * The time at which the event was created, in milliseconds since the epoch.
     */
-  val timeStamp: Double = js.native
+  val timeStamp: Double
 }
 object Event {
   

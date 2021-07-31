@@ -10,9 +10,9 @@ Utilities and Classes for parsing, formatting and managing Ethereum ABIs.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/abi |
 | Keywords           | Ethereum, ethers |
-| # releases         | 49 |
-| # dependents       | 40 |
-| # downloads        | 1793117 |
+| # releases         | 53 |
+| # dependents       | 49 |
+| # downloads        | 3268884 |
 | # stars            | 0 |
 
 ## Links

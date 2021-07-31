@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsInformationProtectionResourceCollection extends StObject {
   
   // Display name
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // Collection of resources
-  var resources: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var resources: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object WindowsInformationProtectionResourceCollection {
   

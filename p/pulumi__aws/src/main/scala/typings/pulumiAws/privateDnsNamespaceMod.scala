@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object privateDnsNamespaceMod {
@@ -59,6 +58,10 @@ object privateDnsNamespaceMod {
   /* static members */
   object PrivateDnsNamespace {
     
+    @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PrivateDnsNamespace resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,50 +71,44 @@ object privateDnsNamespaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PrivateDnsNamespace = js.native
-    @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PrivateDnsNamespace = js.native
-    @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState): PrivateDnsNamespace = js.native
-    @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState, opts: CustomResourceOptions): PrivateDnsNamespace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PrivateDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PrivateDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState): PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrivateDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState, opts: CustomResourceOptions): PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PrivateDnsNamespace]
     
     /**
       * Returns true if the given object is an instance of PrivateDnsNamespace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ Boolean]
   }
   
-  @js.native
   trait PrivateDnsNamespaceArgs extends StObject {
     
     /**
       * The description that you specify for the namespace when you create it.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the namespace.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the namespace.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of VPC that you want to associate the namespace with.
       */
-    val vpc: Input[String] = js.native
+    val vpc: Input[String]
   }
   object PrivateDnsNamespaceArgs {
     
@@ -147,38 +144,37 @@ object privateDnsNamespaceMod {
     }
   }
   
-  @js.native
   trait PrivateDnsNamespaceState extends StObject {
     
     /**
       * The ARN that Amazon Route 53 assigns to the namespace when you create it.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description that you specify for the namespace when you create it.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID for the hosted zone that Amazon Route 53 creates when you create a namespace.
       */
-    val hostedZone: js.UndefOr[Input[String]] = js.native
+    val hostedZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the namespace.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the namespace.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of VPC that you want to associate the namespace with.
       */
-    val vpc: js.UndefOr[Input[String]] = js.native
+    val vpc: js.UndefOr[Input[String]] = js.undefined
   }
   object PrivateDnsNamespaceState {
     

@@ -3,12 +3,13 @@ package typings.forgeApis.mod
 import typings.forgeApis.anon.Refreshtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "AuthClientThreeLegged")
 @js.native
-class AuthClientThreeLegged protected () extends AuthClient {
+class AuthClientThreeLegged protected ()
+  extends StObject
+     with AuthClient {
   def this(
     clientId: String,
     clientSecret: String,

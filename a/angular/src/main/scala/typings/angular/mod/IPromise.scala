@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,43 +40,10 @@ trait IPromise[T] extends StObject {
     */
   def `then`[TResult1, TResult2](): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
-  ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[
-      /* reason */ js.Any, 
-      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
-    ]
-  ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[
-      /* reason */ js.Any, 
-      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
-    ],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
-  ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: Null,
-    notifyCallback: js.Function1[/* state */ js.Any, _]
-  ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
     successCallback: js.Function1[
       /* value */ T, 
       (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
     ]
-  ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    successCallback: js.Function1[
-      /* value */ T, 
-      (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
-    ],
-    errorCallback: js.UndefOr[scala.Nothing],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: js.Function1[
@@ -98,7 +64,7 @@ trait IPromise[T] extends StObject {
       /* reason */ js.Any, 
       (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
     ],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: js.Function1[
@@ -106,12 +72,15 @@ trait IPromise[T] extends StObject {
       (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
     ],
     errorCallback: Null,
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    successCallback: Null,
-    errorCallback: js.UndefOr[scala.Nothing],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    successCallback: js.Function1[
+      /* value */ T, 
+      (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
+    ],
+    errorCallback: Unit,
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: Null,
@@ -126,7 +95,41 @@ trait IPromise[T] extends StObject {
       /* reason */ js.Any, 
       (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
     ],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
   ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](successCallback: Null, errorCallback: Null, notifyCallback: js.Function1[/* state */ js.Any, _]): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    successCallback: Null,
+    errorCallback: Null,
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+  ): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    successCallback: Null,
+    errorCallback: Unit,
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+  ): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    successCallback: Unit,
+    errorCallback: js.Function1[
+      /* reason */ js.Any, 
+      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
+    ]
+  ): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    successCallback: Unit,
+    errorCallback: js.Function1[
+      /* reason */ js.Any, 
+      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
+    ],
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+  ): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    successCallback: Unit,
+    errorCallback: Null,
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+  ): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    successCallback: Unit,
+    errorCallback: Unit,
+    notifyCallback: js.Function1[/* state */ js.Any, js.Any]
+  ): IPromise[TResult1 | TResult2] = js.native
 }

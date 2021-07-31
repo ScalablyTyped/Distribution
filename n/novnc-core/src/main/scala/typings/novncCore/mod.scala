@@ -13,14 +13,15 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("novnc-core", JSImport.Default)
   @js.native
-  class default () extends RFB {
+  class default ()
+    extends StObject
+       with RFB {
     def this(defaults: NvRFBDefaults) = this()
   }
   
@@ -46,20 +47,19 @@ object mod {
     def disconnecting: typings.novncCore.novncCoreStrings.disconnecting = "disconnecting".asInstanceOf[typings.novncCore.novncCoreStrings.disconnecting]
   }
   
-  @js.native
   trait NvFBU extends StObject {
     
-    var encoding: Double = js.native
+    var encoding: Double
     
-    var encodingName: String = js.native
+    var encodingName: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object NvFBU {
     
@@ -92,30 +92,29 @@ object mod {
     }
   }
   
-  @js.native
   trait NvRFBDefaults extends StObject {
     
-    var disconnectTimeout: js.UndefOr[Double] = js.native
+    var disconnectTimeout: js.UndefOr[Double] = js.undefined
     
-    var encrypt: js.UndefOr[Boolean] = js.native
+    var encrypt: js.UndefOr[Boolean] = js.undefined
     
-    var focusContainer: js.UndefOr[HTMLElement] = js.native
+    var focusContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var local_cursor: js.UndefOr[Boolean] = js.native
+    var local_cursor: js.UndefOr[Boolean] = js.undefined
     
-    var onBell: js.UndefOr[js.Function1[/* rfb */ RFB, Unit]] = js.native
+    var onBell: js.UndefOr[js.Function1[/* rfb */ RFB, Unit]] = js.undefined
     
-    var onClipboard: js.UndefOr[js.Function2[/* rfb */ RFB, /* text */ String, Unit]] = js.native
+    var onClipboard: js.UndefOr[js.Function2[/* rfb */ RFB, /* text */ String, Unit]] = js.undefined
     
-    var onDesktopName: js.UndefOr[js.Function2[/* rfb */ RFB, /* name */ String, Unit]] = js.native
+    var onDesktopName: js.UndefOr[js.Function2[/* rfb */ RFB, /* name */ String, Unit]] = js.undefined
     
-    var onDisconnected: js.UndefOr[js.Function2[/* rfb */ RFB, /* reason */ js.UndefOr[String], Unit]] = js.native
+    var onDisconnected: js.UndefOr[js.Function2[/* rfb */ RFB, /* reason */ js.UndefOr[String], Unit]] = js.undefined
     
-    var onFBResize: js.UndefOr[js.Function3[/* rfb */ RFB, /* width */ Double, /* height */ Double, Unit]] = js.native
+    var onFBResize: js.UndefOr[js.Function3[/* rfb */ RFB, /* width */ Double, /* height */ Double, Unit]] = js.undefined
     
-    var onFBUComplete: js.UndefOr[js.Function2[/* rfb */ RFB, /* fbu */ NvFBU, Unit]] = js.native
+    var onFBUComplete: js.UndefOr[js.Function2[/* rfb */ RFB, /* fbu */ NvFBU, Unit]] = js.undefined
     
-    var onFBUReceive: js.UndefOr[js.Function2[/* rfb */ RFB, /* fbu */ NvFBU, Unit]] = js.native
+    var onFBUReceive: js.UndefOr[js.Function2[/* rfb */ RFB, /* fbu */ NvFBU, Unit]] = js.undefined
     
     var onNotification: js.UndefOr[
         js.Function4[
@@ -125,29 +124,29 @@ object mod {
           /* options */ js.UndefOr[StringDictionary[js.Any]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onPasswordRequired: js.UndefOr[js.Function2[/* rfb */ RFB, /* msg */ js.UndefOr[String], Unit]] = js.native
+    var onPasswordRequired: js.UndefOr[js.Function2[/* rfb */ RFB, /* msg */ js.UndefOr[String], Unit]] = js.undefined
     
     var onUpdateState: js.UndefOr[
         js.Function3[/* rfb */ RFB, /* state */ NvConnectionState, /* oldstate */ NvConnectionState, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onXvpInit: js.UndefOr[js.Function1[/* version */ Double, Unit]] = js.native
+    var onXvpInit: js.UndefOr[js.Function1[/* version */ Double, Unit]] = js.undefined
     
-    var repeaterID: js.UndefOr[String] = js.native
+    var repeaterID: js.UndefOr[String] = js.undefined
     
-    var shared: js.UndefOr[Boolean] = js.native
+    var shared: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[HTMLCanvasElement] = js.native
+    var target: js.UndefOr[HTMLCanvasElement] = js.undefined
     
-    var view_only: js.UndefOr[Boolean] = js.native
+    var view_only: js.UndefOr[Boolean] = js.undefined
     
-    var viewportDrag: js.UndefOr[Boolean] = js.native
+    var viewportDrag: js.UndefOr[Boolean] = js.undefined
     
-    var wsProtocols: js.UndefOr[js.Array[String]] = js.native
+    var wsProtocols: js.UndefOr[js.Array[String]] = js.undefined
     
-    var xvp_password_sep: js.UndefOr[String] = js.native
+    var xvp_password_sep: js.UndefOr[String] = js.undefined
   }
   object NvRFBDefaults {
     
@@ -323,9 +322,9 @@ object mod {
     def clipboardPasteFrom(text: String): Unit = js.native
     
     def connect(host: String, port: Double): Boolean = js.native
-    def connect(host: String, port: Double, password: js.UndefOr[scala.Nothing], path: String): Boolean = js.native
     def connect(host: String, port: Double, password: String): Boolean = js.native
     def connect(host: String, port: Double, password: String, path: String): Boolean = js.native
+    def connect(host: String, port: Double, password: Unit, path: String): Boolean = js.native
     
     def disconnect(): Unit = js.native
     

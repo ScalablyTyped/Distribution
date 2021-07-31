@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object Header {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.Header.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Header = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Header = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object Header {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.Header.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplate): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Header = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DocumentTemplate): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.Header]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.Header.structureTypeName")

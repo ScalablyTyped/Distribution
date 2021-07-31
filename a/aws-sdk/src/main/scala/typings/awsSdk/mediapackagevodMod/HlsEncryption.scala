@@ -2,24 +2,22 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsEncryption extends StObject {
   
   /**
     * A constant initialization vector for encryption (optional).
   When not specified the initialization vector will be periodically rotated.
     */
-  var ConstantInitializationVector: js.UndefOr[string] = js.native
+  var ConstantInitializationVector: js.UndefOr[string] = js.undefined
   
   /**
     * The encryption method to use.
     */
-  var EncryptionMethod: js.UndefOr[typings.awsSdk.mediapackagevodMod.EncryptionMethod] = js.native
+  var EncryptionMethod: js.UndefOr[typings.awsSdk.mediapackagevodMod.EncryptionMethod] = js.undefined
   
-  var SpekeKeyProvider: typings.awsSdk.mediapackagevodMod.SpekeKeyProvider = js.native
+  var SpekeKeyProvider: typings.awsSdk.mediapackagevodMod.SpekeKeyProvider
 }
 object HlsEncryption {
   

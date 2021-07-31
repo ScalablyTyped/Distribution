@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Jobtriggers")
@@ -30,7 +29,7 @@ class ResourceProjectsJobtriggers protected () extends StObject {
     */
   def activate(): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def activate(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DlpJob]): Unit = js.native
-  def activate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
+  def activate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def activate(params: ParamsResourceProjectsJobtriggersActivate): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def activate(
     params: ParamsResourceProjectsJobtriggersActivate,
@@ -67,7 +66,7 @@ class ResourceProjectsJobtriggers protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def create(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2JobTrigger]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def create(params: ParamsResourceProjectsJobtriggersCreate): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def create(
     params: ParamsResourceProjectsJobtriggersCreate,
@@ -100,7 +99,7 @@ class ResourceProjectsJobtriggers protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsJobtriggersDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsJobtriggersDelete,
@@ -133,7 +132,7 @@ class ResourceProjectsJobtriggers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def get(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2JobTrigger]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def get(params: ParamsResourceProjectsJobtriggersGet): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def get(
     params: ParamsResourceProjectsJobtriggersGet,
@@ -170,7 +169,7 @@ class ResourceProjectsJobtriggers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListJobTriggersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListJobTriggersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListJobTriggersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListJobTriggersResponse] = js.native
   def list(params: ParamsResourceProjectsJobtriggersList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListJobTriggersResponse] = js.native
   def list(
     params: ParamsResourceProjectsJobtriggersList,
@@ -204,7 +203,7 @@ class ResourceProjectsJobtriggers protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def patch(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2JobTrigger]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def patch(params: ParamsResourceProjectsJobtriggersPatch): GaxiosPromise[SchemaGooglePrivacyDlpV2JobTrigger] = js.native
   def patch(
     params: ParamsResourceProjectsJobtriggersPatch,

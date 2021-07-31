@@ -2,7 +2,6 @@ package typings.multimatch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,56 +18,51 @@ object mod {
   //=> ['unicorn', 'rainbows']
   ```
   */
+  @scala.inline
+  def apply(paths: String, patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: String, patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: String, patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: String, patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: js.Array[String], patterns: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: js.Array[String], patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(paths: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(paths.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   @JSImport("multimatch", JSImport.Namespace)
   @js.native
-  def apply(paths: String, patterns: String): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: String, patterns: String, options: Options): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: String, patterns: js.Array[String]): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: String, patterns: js.Array[String], options: Options): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: js.Array[String], patterns: String): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: js.Array[String], patterns: String, options: Options): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
-  @JSImport("multimatch", JSImport.Namespace)
-  @js.native
-  def apply(paths: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Readonly<minimatch.minimatch.IOptions> */
-  @js.native
   trait Options extends StObject {
     
-    val debug: js.UndefOr[Boolean] = js.native
+    val debug: js.UndefOr[Boolean] = js.undefined
     
-    val dot: js.UndefOr[Boolean] = js.native
+    val dot: js.UndefOr[Boolean] = js.undefined
     
-    val flipNegate: js.UndefOr[Boolean] = js.native
+    val flipNegate: js.UndefOr[Boolean] = js.undefined
     
-    val matchBase: js.UndefOr[Boolean] = js.native
+    val matchBase: js.UndefOr[Boolean] = js.undefined
     
-    val nobrace: js.UndefOr[Boolean] = js.native
+    val nobrace: js.UndefOr[Boolean] = js.undefined
     
-    val nocase: js.UndefOr[Boolean] = js.native
+    val nocase: js.UndefOr[Boolean] = js.undefined
     
-    val nocomment: js.UndefOr[Boolean] = js.native
+    val nocomment: js.UndefOr[Boolean] = js.undefined
     
-    val noext: js.UndefOr[Boolean] = js.native
+    val noext: js.UndefOr[Boolean] = js.undefined
     
-    val noglobstar: js.UndefOr[Boolean] = js.native
+    val noglobstar: js.UndefOr[Boolean] = js.undefined
     
-    val nonegate: js.UndefOr[Boolean] = js.native
+    val nonegate: js.UndefOr[Boolean] = js.undefined
     
-    val nonull: js.UndefOr[Boolean] = js.native
+    val nonull: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

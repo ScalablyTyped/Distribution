@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 import typings.ibmCloudSdkCore.mod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -57,8 +56,8 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def analyze(params: AnalyzeParams): js.Promise[_] | Unit = js.native
-  def analyze(params: AnalyzeParams, callback: Callback[AnalysisResults]): js.Promise[_] | Unit = js.native
+  def analyze(params: AnalyzeParams): js.Promise[js.Any] | Unit = js.native
+  def analyze(params: AnalyzeParams, callback: Callback[AnalysisResults]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * manageModels
@@ -74,8 +73,8 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteModel(params: DeleteModelParams): js.Promise[_] | Unit = js.native
-  def deleteModel(params: DeleteModelParams, callback: Callback[DeleteModelResults]): js.Promise[_] | Unit = js.native
+  def deleteModel(params: DeleteModelParams): js.Promise[js.Any] | Unit = js.native
+  def deleteModel(params: DeleteModelParams, callback: Callback[DeleteModelResults]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List models.
@@ -89,8 +88,8 @@ trait NaturalLanguageUnderstandingV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listModels(): js.Promise[_] | Unit = js.native
-  def listModels(params: js.UndefOr[scala.Nothing], callback: Callback[ListModelsResults]): js.Promise[_] | Unit = js.native
-  def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
-  def listModels(params: ListModelsParams, callback: Callback[ListModelsResults]): js.Promise[_] | Unit = js.native
+  def listModels(): js.Promise[js.Any] | Unit = js.native
+  def listModels(params: Unit, callback: Callback[ListModelsResults]): js.Promise[js.Any] | Unit = js.native
+  def listModels(params: ListModelsParams): js.Promise[js.Any] | Unit = js.native
+  def listModels(params: ListModelsParams, callback: Callback[ListModelsResults]): js.Promise[js.Any] | Unit = js.native
 }

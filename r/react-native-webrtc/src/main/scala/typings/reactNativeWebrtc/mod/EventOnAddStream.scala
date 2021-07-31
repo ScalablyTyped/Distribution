@@ -2,13 +2,11 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventOnAddStream extends StObject {
   
-  var stream: MediaStream = js.native
+  var stream: MediaStream
 }
 object EventOnAddStream {
   

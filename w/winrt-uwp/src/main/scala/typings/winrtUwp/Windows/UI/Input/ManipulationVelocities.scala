@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.UI.Input
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the velocities of the accumulated transformations for the current interaction. */
-@js.native
 trait ManipulationVelocities extends StObject {
   
   /** The rotational velocity in degrees per millisecond. */
-  var angular: Double = js.native
+  var angular: Double
   
   /** The expansion, or scaling, velocity in DIPs per millisecond. */
-  var expansion: Double = js.native
+  var expansion: Double
   
   /** The straight line velocity in DIPs per millisecond. */
-  var linear: Point = js.native
+  var linear: Point
 }
 object ManipulationVelocities {
   

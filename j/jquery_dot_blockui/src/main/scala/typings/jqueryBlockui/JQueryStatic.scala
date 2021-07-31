@@ -2,17 +2,15 @@ package typings.jqueryBlockui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
   /** block user activity for the page */
-  var blockUI: js.UndefOr[JQBlockUIStatic] = js.native
+  var blockUI: js.UndefOr[JQBlockUIStatic] = js.undefined
   
   /** unblock the page */
-  var unblockUI: js.UndefOr[JQBlockUIStatic] = js.native
+  var unblockUI: js.UndefOr[JQBlockUIStatic] = js.undefined
 }
 object JQueryStatic {
   

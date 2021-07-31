@@ -3,27 +3,25 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultsFilter extends StObject {
   
-  var automatedTestName: String = js.native
+  var automatedTestName: String
   
-  var branch: String = js.native
+  var branch: String
   
-  var groupBy: String = js.native
+  var groupBy: String
   
-  var maxCompleteDate: Date = js.native
+  var maxCompleteDate: Date
   
-  var resultsCount: Double = js.native
+  var resultsCount: Double
   
-  var testCaseReferenceIds: js.Array[Double] = js.native
+  var testCaseReferenceIds: js.Array[Double]
   
-  var testResultsContext: TestResultsContext = js.native
+  var testResultsContext: TestResultsContext
   
-  var trendDays: Double = js.native
+  var trendDays: Double
 }
 object ResultsFilter {
   

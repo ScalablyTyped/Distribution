@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Mobilecarriers")
@@ -31,7 +30,7 @@ class ResourceMobilecarriers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMobileCarrier] = js.native
   def get(callback: BodyResponseCallback[SchemaMobileCarrier]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileCarrier] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMobileCarrier] = js.native
   def get(params: ParamsResourceMobilecarriersGet): GaxiosPromise[SchemaMobileCarrier] = js.native
   def get(params: ParamsResourceMobilecarriersGet, callback: BodyResponseCallback[SchemaMobileCarrier]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourceMobilecarriers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMobileCarriersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
   def list(params: ParamsResourceMobilecarriersList): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
   def list(
     params: ParamsResourceMobilecarriersList,

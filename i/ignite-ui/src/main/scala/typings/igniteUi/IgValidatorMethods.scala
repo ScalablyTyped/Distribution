@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -44,8 +43,8 @@ trait IgValidatorMethods extends StObject {
     *
     * @param field Optional field object, selector or zero-based index for a single field to get error message for.
     */
-  def getErrorMessages(): js.Array[_] = js.native
-  def getErrorMessages(field: js.Object): js.Array[_] = js.native
+  def getErrorMessages(): js.Array[js.Any] = js.native
+  def getErrorMessages(field: js.Object): js.Array[js.Any] = js.native
   
   /**
     * Hide any possible message(s) (either messageTarget or igNotifier).

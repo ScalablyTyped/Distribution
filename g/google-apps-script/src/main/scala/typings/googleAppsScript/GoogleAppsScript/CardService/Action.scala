@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,16 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *             .setFunctionName("handleImageClick")
   *             .setParameters({imageSrc: 'carImage'}));
   */
-@js.native
 trait Action extends StObject {
   
-  def setFunctionName(functionName: String): Action = js.native
+  def setFunctionName(functionName: String): Action
   
-  def setLoadIndicator(loadIndicator: LoadIndicator): Action = js.native
+  def setLoadIndicator(loadIndicator: LoadIndicator): Action
   
-  /** @deprecated DO NOT USE */ def setMethodName(functionName: String): Action = js.native
+  /** @deprecated DO NOT USE */ def setMethodName(functionName: String): Action
   
-  def setParameters(parameters: StringDictionary[String]): Action = js.native
+  def setParameters(parameters: StringDictionary[String]): Action
 }
 object Action {
   

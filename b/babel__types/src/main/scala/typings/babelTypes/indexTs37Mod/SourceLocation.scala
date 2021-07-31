@@ -3,15 +3,13 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceLocation extends StObject {
   
-  var end: Column = js.native
+  var end: Column
   
-  var start: Column = js.native
+  var start: Column
 }
 object SourceLocation {
   

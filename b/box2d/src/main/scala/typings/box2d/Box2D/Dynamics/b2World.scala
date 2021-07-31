@@ -11,7 +11,6 @@ import typings.box2d.Box2D.Dynamics.Joints.b2Joint
 import typings.box2d.Box2D.Dynamics.Joints.b2JointDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

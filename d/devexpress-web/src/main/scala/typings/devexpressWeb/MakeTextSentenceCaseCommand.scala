@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to convert the text of all selected sentences to sentence case.
   */
-@js.native
-trait MakeTextSentenceCaseCommand extends CommandWithSimpleStateBase {
+trait MakeTextSentenceCaseCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the MakeTextSentenceCaseCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object MakeTextSentenceCaseCommand {
   

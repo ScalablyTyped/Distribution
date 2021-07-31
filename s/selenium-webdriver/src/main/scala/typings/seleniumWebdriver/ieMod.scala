@@ -8,7 +8,6 @@ import typings.seleniumWebdriver.remoteMod.DriverService
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ieMod {
@@ -36,6 +35,10 @@ object ieMod {
   /* static members */
   object Driver {
     
+    @JSImport("selenium-webdriver/ie", "Driver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new session for Microsoft's Internet Explorer.
       *
@@ -44,24 +47,18 @@ object ieMod {
       *   to start the IEDriverServer in a child process, optionally.
       * @return {!Driver} A new driver instance.
       */
-    @JSImport("selenium-webdriver/ie", "Driver.createSession")
-    @js.native
-    def createSession(): Driver = js.native
-    @JSImport("selenium-webdriver/ie", "Driver.createSession")
-    @js.native
-    def createSession(options: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/ie", "Driver.createSession")
-    @js.native
-    def createSession(options: Options): Driver = js.native
-    @JSImport("selenium-webdriver/ie", "Driver.createSession")
-    @js.native
-    def createSession(options: Options, opt_service: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/ie", "Driver.createSession")
-    @js.native
-    def createSession(options: Capabilities): Driver = js.native
-    @JSImport("selenium-webdriver/ie", "Driver.createSession")
-    @js.native
-    def createSession(options: Capabilities, opt_service: DriverService): Driver = js.native
+    @scala.inline
+    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    @scala.inline
+    def createSession(options: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(options: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(options: Options, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(options: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(options: Capabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(options.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/ie", "Options")

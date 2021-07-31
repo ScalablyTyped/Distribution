@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MetricValueStatus holds the current value for a metric
   */
-@js.native
 trait MetricValueStatus extends StObject {
   
   /**
     * currentAverageUtilization is the current value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods.
     */
-  var averageUtilization: js.UndefOr[Input[Double]] = js.native
+  var averageUtilization: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * averageValue is the current value of the average of the metric across all relevant pods (as a quantity)
     */
-  var averageValue: js.UndefOr[Input[String]] = js.native
+  var averageValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * value is the current value of the metric (as a quantity).
     */
-  var value: js.UndefOr[Input[String]] = js.native
+  var value: js.UndefOr[Input[String]] = js.undefined
 }
 object MetricValueStatus {
   

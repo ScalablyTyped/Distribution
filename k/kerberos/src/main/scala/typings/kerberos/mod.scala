@@ -2,10 +2,13 @@ package typings.kerberos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("kerberos", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("kerberos", "GSS_C_ANON_FLAG")
   @js.native
@@ -82,7 +85,7 @@ object mod {
       * @return returns Promise if no callback passed
       */
     def step(challenge: String): js.Promise[String] = js.native
-    def step(challenge: String, callback: js.Function2[/* err */ String, /* clientResponse */ String, _]): Unit = js.native
+    def step(challenge: String, callback: js.Function2[/* err */ String, /* clientResponse */ String, js.Any]): Unit = js.native
     
     /**
       * Perform the client side kerberos unwrap step
@@ -92,7 +95,10 @@ object mod {
       * @return returns Promise if no callback passed
       */
     def unwrap(challenge: String): js.Promise[String] = js.native
-    def unwrap(challenge: String, callback: js.Function2[/* err */ String, /* challengeResponse */ String, _]): Unit = js.native
+    def unwrap(
+      challenge: String,
+      callback: js.Function2[/* err */ String, /* challengeResponse */ String, js.Any]
+    ): Unit = js.native
     
     /**
       * @description The username used for authentication
@@ -108,12 +114,15 @@ object mod {
       * @return returns Promise if no callback passed
       */
     def wrap(challenge: String): js.Promise[String] = js.native
-    def wrap(challenge: String, callback: js.Function2[/* err */ String, /* challengeResponse */ String, _]): Unit = js.native
+    def wrap(
+      challenge: String,
+      callback: js.Function2[/* err */ String, /* challengeResponse */ String, js.Any]
+    ): Unit = js.native
     def wrap(challenge: String, options: WrapOptions): js.Promise[String] = js.native
     def wrap(
       challenge: String,
       options: WrapOptions,
-      callback: js.Function2[/* err */ String, /* challengeResponse */ String, _]
+      callback: js.Function2[/* err */ String, /* challengeResponse */ String, js.Any]
     ): Unit = js.native
   }
   
@@ -139,7 +148,7 @@ object mod {
       * @return returns Promise if no callback passed
       */
     def step(challenge: String): js.Promise[String] = js.native
-    def step(challenge: String, callback: js.Function2[/* err */ String, /* serverResponse */ String, _]): Unit = js.native
+    def step(challenge: String, callback: js.Function2[/* err */ String, /* serverResponse */ String, js.Any]): Unit = js.native
     
     /**
       * @description The target used for authentication
@@ -152,77 +161,64 @@ object mod {
     var username: String = js.native
   }
   
-  @JSImport("kerberos", "checkPassword")
-  @js.native
-  def checkPassword(name: String, password: String, service: String): js.Promise[Unit] = js.native
-  @JSImport("kerberos", "checkPassword")
-  @js.native
-  def checkPassword(name: String, password: String, service: String, callback: js.Function1[/* err */ String, _]): Unit = js.native
-  @JSImport("kerberos", "checkPassword")
-  @js.native
-  def checkPassword(name: String, password: String, service: String, defaultRealm: String): js.Promise[Unit] = js.native
-  @JSImport("kerberos", "checkPassword")
-  @js.native
+  @scala.inline
+  def checkPassword(name: String, password: String, service: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def checkPassword(name: String, password: String, service: String, callback: js.Function1[/* err */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkPassword(name: String, password: String, service: String, defaultRealm: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], defaultRealm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def checkPassword(
     name: String,
     password: String,
     service: String,
     defaultRealm: String,
-    callback: js.Function1[/* err */ String, _]
-  ): Unit = js.native
+    callback: js.Function1[/* err */ String, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], defaultRealm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("kerberos", "initializeClient")
-  @js.native
-  def initializeClient(service: String): js.Promise[KerberosClient] = js.native
-  @JSImport("kerberos", "initializeClient")
-  @js.native
-  def initializeClient(service: String, callback: js.Function2[/* err */ String, /* client */ KerberosClient, _]): Unit = js.native
-  @JSImport("kerberos", "initializeClient")
-  @js.native
-  def initializeClient(service: String, options: InitializeClientOptions): js.Promise[KerberosClient] = js.native
-  @JSImport("kerberos", "initializeClient")
-  @js.native
+  @scala.inline
+  def initializeClient(service: String): js.Promise[KerberosClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KerberosClient]]
+  @scala.inline
+  def initializeClient(service: String, callback: js.Function2[/* err */ String, /* client */ KerberosClient, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def initializeClient(service: String, options: InitializeClientOptions): js.Promise[KerberosClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KerberosClient]]
+  @scala.inline
   def initializeClient(
     service: String,
     options: InitializeClientOptions,
-    callback: js.Function2[/* err */ String, /* client */ KerberosClient, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ String, /* client */ KerberosClient, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("kerberos", "initializeServer")
-  @js.native
-  def initializeServer(service: String): js.Promise[KerberosServer] = js.native
-  @JSImport("kerberos", "initializeServer")
-  @js.native
-  def initializeServer(service: String, callback: js.Function2[/* err */ String, /* server */ KerberosServer, _]): Unit = js.native
+  @scala.inline
+  def initializeServer(service: String): js.Promise[KerberosServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeServer")(service.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KerberosServer]]
+  @scala.inline
+  def initializeServer(service: String, callback: js.Function2[/* err */ String, /* server */ KerberosServer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeServer")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("kerberos", "principalDetails")
-  @js.native
-  def principalDetails(service: String, hostname: String): js.Promise[String] = js.native
-  @JSImport("kerberos", "principalDetails")
-  @js.native
+  @scala.inline
+  def principalDetails(service: String, hostname: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("principalDetails")(service.asInstanceOf[js.Any], hostname.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def principalDetails(
     service: String,
     hostname: String,
-    callback: js.Function2[/* err */ String, /* details */ String, _]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ String, /* details */ String, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("principalDetails")(service.asInstanceOf[js.Any], hostname.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait InitializeClientOptions extends StObject {
     
     /**
       * @description Optional integer used to set GSS flags. (e.g. GSS_C_DELEG_FLAG|GSS_C_MUTUAL_FLAG|GSS_C_SEQUENCE_FLAG will allow for forwarding credentials to the remote host)
       */
-    var gssFlag: js.UndefOr[Double] = js.native
+    var gssFlag: js.UndefOr[Double] = js.undefined
     
     /**
       * @description Optional GSS mech OID. Defaults to None (GSS_C_NO_OID). Other possible values are `GSS_MECH_OID_KRB5`, `GSS_MECH_OID_SPNEGO`
       */
-    var mechOID: js.UndefOr[Double] = js.native
+    var mechOID: js.UndefOr[Double] = js.undefined
     
     /**
       * @description Optional string containing the client principal in the form '`user@realm`'
       */
-    var principal: js.UndefOr[String] = js.native
+    var principal: js.UndefOr[String] = js.undefined
   }
   object InitializeClientOptions {
     
@@ -255,13 +251,12 @@ object mod {
     }
   }
   
-  @js.native
   trait WrapOptions extends StObject {
     
     /**
       * @description The user to authorize
       */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object WrapOptions {
     

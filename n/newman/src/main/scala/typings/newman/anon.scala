@@ -4,31 +4,29 @@ import typings.newman.mod.NewmanRunStat
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Assertions extends StObject {
     
-    var assertions: NewmanRunStat = js.native
+    var assertions: NewmanRunStat
     
-    var items: NewmanRunStat = js.native
+    var items: NewmanRunStat
     
-    var iterations: NewmanRunStat = js.native
+    var iterations: NewmanRunStat
     
-    var prerequestScripts: NewmanRunStat = js.native
+    var prerequestScripts: NewmanRunStat
     
-    var prerequests: NewmanRunStat = js.native
+    var prerequests: NewmanRunStat
     
-    var requests: NewmanRunStat = js.native
+    var requests: NewmanRunStat
     
-    var scripts: NewmanRunStat = js.native
+    var scripts: NewmanRunStat
     
-    var testScripts: NewmanRunStat = js.native
+    var testScripts: NewmanRunStat
     
-    var tests: NewmanRunStat = js.native
+    var tests: NewmanRunStat
   }
   object Assertions {
     
@@ -80,12 +78,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Http extends StObject {
     
-    var http: js.UndefOr[Agent] = js.native
+    var http: js.UndefOr[Agent] = js.undefined
     
-    var https: js.UndefOr[Agent] = js.native
+    var https: js.UndefOr[Agent] = js.undefined
   }
   object Http {
     
@@ -112,10 +109,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref extends StObject {
     
-    var ref: String = js.native
+    var ref: String
   }
   object Ref {
     

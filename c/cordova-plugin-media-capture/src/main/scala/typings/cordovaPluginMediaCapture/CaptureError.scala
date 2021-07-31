@@ -2,11 +2,9 @@ package typings.cordovaPluginMediaCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates the error code resulting from a failed media capture operation. */
-@js.native
 trait CaptureError extends StObject {
   
   /**
@@ -22,9 +20,9 @@ trait CaptureError extends StObject {
     *     CaptureError.CAPTURE_NOT_SUPPORTED
     *         The requested capture operation is not supported.
     */
-  var code: Double = js.native
+  var code: Double
   
-  var message: String = js.native
+  var message: String
 }
 object CaptureError {
   

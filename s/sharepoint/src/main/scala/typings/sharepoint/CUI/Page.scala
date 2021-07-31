@@ -2,15 +2,13 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Page {
   
-  @js.native
   trait CommandDispatcher extends StObject {
     
-    def executeCommand(commandId: String, properties: js.Any): js.Any = js.native
+    def executeCommand(commandId: String, properties: js.Any): js.Any
   }
   object CommandDispatcher {
     
@@ -28,18 +26,18 @@ object Page {
     }
   }
   
-  @js.native
   trait FocusManager
-    extends CommandDispatcher
+    extends StObject
+       with CommandDispatcher
        with ICommandHandler {
     
-    def getFocusedComponents(): js.Array[Component] = js.native
+    def getFocusedComponents(): js.Array[Component]
     
-    def releaseAllFoci(): Boolean = js.native
+    def releaseAllFoci(): Boolean
     
-    def releaseFocusFromComponent(component: Component): js.Any = js.native
+    def releaseFocusFromComponent(component: Component): js.Any
     
-    def requestFocusForComponent(component: Component): js.Any = js.native
+    def requestFocusForComponent(component: Component): js.Any
   }
   object FocusManager {
     
@@ -74,12 +72,11 @@ object Page {
     }
   }
   
-  @js.native
   trait ICommandHandler extends StObject {
     
-    def canHandleCommand(commandId: String): Boolean = js.native
+    def canHandleCommand(commandId: String): Boolean
     
-    def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean
   }
   object ICommandHandler {
     
@@ -100,22 +97,23 @@ object Page {
     }
   }
   
-  @js.native
-  trait PageComponent extends ICommandHandler {
+  trait PageComponent
+    extends StObject
+       with ICommandHandler {
     
-    def getFocusedCommands(): js.Array[String] = js.native
+    def getFocusedCommands(): js.Array[String]
     
-    def getGlobalCommands(): js.Array[String] = js.native
+    def getGlobalCommands(): js.Array[String]
     
-    def getId(): String = js.native
+    def getId(): String
     
-    def init(): scala.Unit = js.native
+    def init(): scala.Unit
     
-    def isFocusable(): Boolean = js.native
+    def isFocusable(): Boolean
     
-    def receiveFocus(): Boolean = js.native
+    def receiveFocus(): Boolean
     
-    def yieldFocus(): Boolean = js.native
+    def yieldFocus(): Boolean
   }
   object PageComponent {
     
@@ -161,19 +159,19 @@ object Page {
     }
   }
   
-  @js.native
   trait PageManager
-    extends RootUser
+    extends StObject
+       with RootUser
        with ICommandHandler
        with IRootBuildClient {
     
-    def add_ribbonInited(value: js.Function0[scala.Unit]): js.Any = js.native
+    def add_ribbonInited(value: js.Function0[scala.Unit]): js.Any
     
-    def get_commandDispatcher(): CommandDispatcher = js.native
+    def get_commandDispatcher(): CommandDispatcher
     
-    def get_focusManager(): FocusManager = js.native
+    def get_focusManager(): FocusManager
     
-    def get_undoManager(): UndoManager = js.native
+    def get_undoManager(): UndoManager
   }
   object PageManager {
     
@@ -207,8 +205,9 @@ object Page {
     }
   }
   
-  @js.native
-  trait UndoManager extends ICommandHandler
+  trait UndoManager
+    extends StObject
+       with ICommandHandler
   object UndoManager {
     
     @scala.inline

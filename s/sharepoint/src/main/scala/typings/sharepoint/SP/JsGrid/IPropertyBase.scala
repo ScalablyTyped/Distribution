@@ -2,24 +2,22 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyBase extends StObject {
   
-  def Clone(): IPropertyBase = js.native
+  def Clone(): IPropertyBase
   
-  def GetData(): js.Any = js.native
+  def GetData(): js.Any
   
-  def GetLocalized(): String = js.native
+  def GetLocalized(): String
   
-  def HasDataValue(): Boolean = js.native
+  def HasDataValue(): Boolean
   
-  def HasLocalizedValue(): Boolean = js.native
+  def HasLocalizedValue(): Boolean
   
   /** dataValue actually is cloned */
-  def Update(dataValue: js.Any, localizedValue: String): Unit = js.native
+  def Update(dataValue: js.Any, localizedValue: String): Unit
 }
 object IPropertyBase {
   

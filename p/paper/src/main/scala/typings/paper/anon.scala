@@ -20,12 +20,10 @@ import typings.paper.paper.Size
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofColor extends StObject {
     
     /** 
@@ -35,7 +33,7 @@ object anon {
       * @return the newly created color object
       */
     /* static member */
-    def random(): Color = js.native
+    def random(): Color
   }
   object TypeofColor {
     
@@ -53,7 +51,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofKey extends StObject {
     
     /** 
@@ -67,7 +64,7 @@ object anon {
       * @return true if the key is pressed
       */
     /* static member */
-    def isDown(key: String): Boolean = js.native
+    def isDown(key: String): Boolean
     
     /** 
       * The current state of the keyboard modifiers.
@@ -90,7 +87,7 @@ object anon {
       *     on Mac, or the control key is pressed on Windows and Linux}.
       */
     /* static member */
-    var modifiers: js.Any = js.native
+    var modifiers: js.Any
   }
   object TypeofKey {
     
@@ -111,14 +108,13 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofPaperScope extends StObject {
     
     /** 
       * Retrieves a PaperScope object with the given scope id.
       */
     /* static member */
-    def get(id: js.Any): PaperScope = js.native
+    def get(id: js.Any): PaperScope
   }
   object TypeofPaperScope {
     
@@ -200,29 +196,28 @@ object anon {
     def load(script: HTMLScriptElement): PaperScope = js.native
   }
   
-  @js.native
   trait TypeofPath extends StObject {
     
-    var Arc: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, typings.paper.paper.Path.Arc] = js.native
+    var Arc: Instantiable3[/* from */ Point, /* through */ Point, /* to */ Point, typings.paper.paper.Path.Arc]
     
-    var Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Path.Circle] = js.native
+    var Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Path.Circle]
     
-    var Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Path.Ellipse] = js.native
+    var Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Path.Ellipse]
     
-    var Line: Instantiable2[/* from */ Point, /* to */ Point, typings.paper.paper.Path.Line] = js.native
+    var Line: Instantiable2[/* from */ Point, /* to */ Point, typings.paper.paper.Path.Line]
     
     var Rectangle: Instantiable2[
         /* rectangle */ typings.paper.paper.Rectangle, 
         /* radius */ js.UndefOr[Size], 
         typings.paper.paper.Path.Rectangle
-      ] = js.native
+      ]
     
     var RegularPolygon: Instantiable3[
         /* center */ Point, 
         /* sides */ Double, 
         /* radius */ Double, 
         typings.paper.paper.Path.RegularPolygon
-      ] = js.native
+      ]
     
     var Star: Instantiable4[
         /* center */ Point, 
@@ -230,7 +225,7 @@ object anon {
         /* radius1 */ Double, 
         /* radius2 */ Double, 
         typings.paper.paper.Path.Star
-      ] = js.native
+      ]
   }
   object TypeofPath {
     
@@ -337,7 +332,6 @@ object anon {
     def create(segments: js.Array[js.Array[Double]]): Path | CompoundPath = js.native
   }
   
-  @js.native
   trait TypeofPoint extends StObject {
     
     /** 
@@ -347,7 +341,7 @@ object anon {
       * @return the newly created point object
       */
     /* static member */
-    def max(point1: Point, point2: Point): Point = js.native
+    def max(point1: Point, point2: Point): Point
     
     /** 
       * Returns a new point object with the smallest {@link #x} and
@@ -356,7 +350,7 @@ object anon {
       * @return the newly created point object
       */
     /* static member */
-    def min(point1: Point, point2: Point): Point = js.native
+    def min(point1: Point, point2: Point): Point
     
     /** 
       * Returns a point object with random {@link #x} and {@link #y} values
@@ -365,7 +359,7 @@ object anon {
       * @return the newly created point object
       */
     /* static member */
-    def random(): Point = js.native
+    def random(): Point
   }
   object TypeofPoint {
     
@@ -389,18 +383,17 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofShape extends StObject {
     
-    var Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle] = js.native
+    var Circle: Instantiable2[/* center */ Point, /* radius */ Double, typings.paper.paper.Shape.Circle]
     
-    var Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse] = js.native
+    var Ellipse: Instantiable1[/* rectangle */ Rectangle, typings.paper.paper.Shape.Ellipse]
     
     var Rectangle: Instantiable2[
         /* rectangle */ typings.paper.paper.Rectangle, 
         /* radius */ js.UndefOr[Size], 
         typings.paper.paper.Shape.Rectangle
-      ] = js.native
+      ]
   }
   object TypeofShape {
     
@@ -438,7 +431,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofSize extends StObject {
     
     /** 
@@ -448,7 +440,7 @@ object anon {
       * @return the newly created size object
       */
     /* static member */
-    def max(size1: Size, size2: Size): Size = js.native
+    def max(size1: Size, size2: Size): Size
     
     /** 
       * Returns a new size object with the smallest {@link #width} and
@@ -457,7 +449,7 @@ object anon {
       * @return the newly created size object
       */
     /* static member */
-    def min(size1: Size, size2: Size): Size = js.native
+    def min(size1: Size, size2: Size): Size
     
     /** 
       * Returns a size object with random {@link #width} and {@link #height}
@@ -466,7 +458,7 @@ object anon {
       * @return the newly created size object
       */
     /* static member */
-    def random(): Size = js.native
+    def random(): Size
   }
   object TypeofSize {
     

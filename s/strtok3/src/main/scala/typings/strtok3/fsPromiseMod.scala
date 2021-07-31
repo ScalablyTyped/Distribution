@@ -7,68 +7,57 @@ import typings.node.fsMod.ReadStream
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsPromiseMod {
   
-  @JSImport("strtok3/lib/FsPromise", "close")
+  @JSImport("strtok3/lib/FsPromise", JSImport.Namespace)
   @js.native
-  def close(fd: Double): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("strtok3/lib/FsPromise", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike): ReadStream = js.native
-  @JSImport("strtok3/lib/FsPromise", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike, options: String): ReadStream = js.native
-  @JSImport("strtok3/lib/FsPromise", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike, options: AutoClose): ReadStream = js.native
+  @scala.inline
+  def close(fd: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("strtok3/lib/FsPromise", "open")
-  @js.native
-  def open(path: PathLike): js.Promise[Double] = js.native
-  @JSImport("strtok3/lib/FsPromise", "open")
-  @js.native
-  def open(path: PathLike, mode: String): js.Promise[Double] = js.native
+  @scala.inline
+  def createReadStream(path: PathLike): ReadStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any]).asInstanceOf[ReadStream]
+  @scala.inline
+  def createReadStream(path: PathLike, options: String): ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
+  @scala.inline
+  def createReadStream(path: PathLike, options: AutoClose): ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadStream]
+  
+  @scala.inline
+  def open(path: PathLike): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def open(path: PathLike, mode: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
   @JSImport("strtok3/lib/FsPromise", "pathExists")
   @js.native
   val pathExists: js.Function1[/* path */ PathLike, Boolean] = js.native
   
-  @JSImport("strtok3/lib/FsPromise", "read")
-  @js.native
-  def read(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): js.Promise[IReadResult] = js.native
+  @scala.inline
+  def read(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): js.Promise[IReadResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReadResult]]
   
-  @JSImport("strtok3/lib/FsPromise", "readFile")
-  @js.native
-  def readFile(path: PathLike): js.Promise[Buffer] = js.native
+  @scala.inline
+  def readFile(path: PathLike): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   
-  @JSImport("strtok3/lib/FsPromise", "stat")
-  @js.native
-  def stat(path: PathLike): js.Promise[Stats] = js.native
+  @scala.inline
+  def stat(path: PathLike): js.Promise[Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stats]]
   
-  @JSImport("strtok3/lib/FsPromise", "writeFile")
-  @js.native
-  def writeFile(path: PathLike, data: String): js.Promise[Unit] = js.native
-  @JSImport("strtok3/lib/FsPromise", "writeFile")
-  @js.native
-  def writeFile(path: PathLike, data: Buffer): js.Promise[Unit] = js.native
+  @scala.inline
+  def writeFile(path: PathLike, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def writeFile(path: PathLike, data: Buffer): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("strtok3/lib/FsPromise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: PathLike, data: String): Unit = js.native
-  @JSImport("strtok3/lib/FsPromise", "writeFileSync")
-  @js.native
-  def writeFileSync(path: PathLike, data: Buffer): Unit = js.native
+  @scala.inline
+  def writeFileSync(path: PathLike, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: PathLike, data: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait IReadResult extends StObject {
     
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
-    var bytesRead: Double = js.native
+    var bytesRead: Double
   }
   object IReadResult {
     

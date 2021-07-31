@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OverconstrainedError extends Error {
+trait OverconstrainedError
+  extends StObject
+     with Error {
   
-  var constraint: java.lang.String = js.native
+  var constraint: java.lang.String
 }
 object OverconstrainedError {
   

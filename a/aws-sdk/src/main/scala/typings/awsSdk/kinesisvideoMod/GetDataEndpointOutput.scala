@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataEndpointOutput extends StObject {
   
   /**
     * The endpoint value. To read data from the stream or to write data to it, specify this endpoint in your application.
     */
-  var DataEndpoint: js.UndefOr[typings.awsSdk.kinesisvideoMod.DataEndpoint] = js.native
+  var DataEndpoint: js.UndefOr[typings.awsSdk.kinesisvideoMod.DataEndpoint] = js.undefined
 }
 object GetDataEndpointOutput {
   

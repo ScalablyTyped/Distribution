@@ -3,15 +3,13 @@ package typings.awsSdkNodeHttpHandler
 import typings.awsSdkProtocolHttp.mod.HttpResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HandlerProtocol extends StObject {
     
-    var handlerProtocol: String = js.native
+    var handlerProtocol: String
   }
   object HandlerProtocol {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var response: HttpResponse = js.native
+    var response: HttpResponse
   }
   object Response {
     

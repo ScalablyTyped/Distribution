@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsDiscriminatorValueMetadataArgsMod {
   
-  @js.native
   trait DiscriminatorValueMetadataArgs extends StObject {
     
     /**
       * Class to which discriminator name is applied.
       */
-    val target: js.Function | String = js.native
+    val target: js.Function | String
     
     /**
       * Discriminator value.
       */
-    val value: js.Any = js.native
+    val value: js.Any
   }
   object DiscriminatorValueMetadataArgs {
     

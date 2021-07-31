@@ -5,7 +5,6 @@ import typings.rpiGpio.mod.MODE
 import typings.rpiGpio.mod.PinDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -37,7 +36,7 @@ object anon {
       * @see {@link Gpio.destroy}
       * @returns Promise
       */
-    def destroy(): js.Promise[_] = js.native
+    def destroy(): js.Promise[js.Any] = js.native
     
     /**
       * @see {@link Gpio.read}
@@ -62,6 +61,6 @@ object anon {
       * @param value
       * @returns Promise
       */
-    def write(channel: Double, value: Boolean): js.Promise[_] = js.native
+    def write(channel: Double, value: Boolean): js.Promise[js.Any] = js.native
   }
 }

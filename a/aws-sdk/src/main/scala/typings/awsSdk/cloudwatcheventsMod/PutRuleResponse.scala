@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRuleResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var RuleArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RuleArn] = js.native
+  var RuleArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RuleArn] = js.undefined
 }
 object PutRuleResponse {
   

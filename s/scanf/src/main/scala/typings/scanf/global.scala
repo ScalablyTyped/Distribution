@@ -8,7 +8,6 @@ import typings.scanf.scanfStrings.Percentsigns
 import typings.scanf.scanfStrings.Percentsignx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -28,9 +27,8 @@ object global {
       	 * @param format The format contains a sequence of characters that control how characters extracted from the stream are tread.
       	 * @return An array containing data constructed from stdin with the <i>format</i>.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: String): js.Array[Double | String] = js.native
+      @scala.inline
+      def apply(format: String): js.Array[Double | String] = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | String]]
       /**
       	 * <p> Reads formatted data from stdin. </p>
       	 * 
@@ -41,9 +39,8 @@ object global {
       	 * 
       	 * @return A JSON object containing data constructed from stdin with the <i>format</i> and following <i>names</i>.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: String, names: String*): js.Object = js.native
+      @scala.inline
+      def apply(format: String, names: String*): js.Object = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       /**
       	 * <p> Read formatted line from stdin. </p>
       	 * 
@@ -52,9 +49,8 @@ object global {
       	 * @param format The format represents a word.
       	 * @return A word.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: PercentsignS): String = js.native
+      @scala.inline
+      def apply(format: PercentsignS): String = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[String]
       /**
       	 * <p> Read formatted integer from stdin. </p>
       	 * 
@@ -63,9 +59,8 @@ object global {
       	 * @param format The format represents an integer value.
       	 * @return An integer.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: Percentsignd): Double = js.native
+      @scala.inline
+      def apply(format: Percentsignd): Double = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Double]
       /**
       	 * <p> Read formatted float from stdin. </p>
       	 * 
@@ -74,9 +69,8 @@ object global {
       	 * @param format The format represents an float value.
       	 * @return A float.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: Percentsignf): Double = js.native
+      @scala.inline
+      def apply(format: Percentsignf): Double = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Double]
       /**
       	 * <p> Read formatted octal from stdin. </p>
       	 * 
@@ -85,9 +79,8 @@ object global {
       	 * @param format The format represents an octal value.
       	 * @return An octal.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: Percentsigno): Double = js.native
+      @scala.inline
+      def apply(format: Percentsigno): Double = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Double]
       /* ------------------------------------------------------------
       		SCANF - FROM STDIN
       	------------------------------------------------------------ */
@@ -99,9 +92,8 @@ object global {
       	 * @param format The format represents a word.
       	 * @return A word.
       	 */
-      @JSGlobal("__node_scanf.scanf")
-      @js.native
-      def apply(format: Percentsigns): String = js.native
+      @scala.inline
+      def apply(format: Percentsigns): String = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[String]
       /**
       	 * <p> Read formatted hex from stdin. </p>
       	 * 
@@ -110,9 +102,12 @@ object global {
       	 * @param format The format represents a hex value.
       	 * @return A hex.
       	 */
+      @scala.inline
+      def apply(format: Percentsignx): Double = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[Double]
+      
       @JSGlobal("__node_scanf.scanf")
       @js.native
-      def apply(format: Percentsignx): Double = js.native
+      val ^ : js.Any = js.native
       
       /**
       		 * <p> Reads formatted data from string. </p>
@@ -124,9 +119,8 @@ object global {
       		 * 
       		 * @return An array containing data constructed from string with the <i>format</i>.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf(source: String, format: String): js.Array[Double | String] = js.native
+      @scala.inline
+      def sscanf(source: String, format: String): js.Array[Double | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double | String]]
       /**
       		 * <p> Reads formatted data from string. </p>
       		 * 
@@ -138,9 +132,9 @@ object global {
       		 * 
       		 * @return A JSON object containing data constructed from string with the <i>format</i> and following <i>names</i>.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf(source: String, format: String, names: String*): js.Object = js.native
+      @scala.inline
+      def sscanf(source: String, format: String, names: String*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      
       /**
       		 * <p> Read formatted line from string. </p>
       		 * 
@@ -151,9 +145,9 @@ object global {
       		 * 
       		 * @return A word.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf_S(source: String, format: PercentsignS): String = js.native
+      @scala.inline
+      def sscanf_S(source: String, format: PercentsignS): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+      
       /**
       		 * <p> Read formatted integer from string. </p>
       		 * 
@@ -164,9 +158,9 @@ object global {
       		 * 
       		 * @return An integer.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf_d(source: String, format: Percentsignd): Double = js.native
+      @scala.inline
+      def sscanf_d(source: String, format: Percentsignd): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+      
       /**
       		 * <p> Read formatted float from string. </p>
       		 * 
@@ -177,9 +171,9 @@ object global {
       		 * 
       		 * @return A float.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf_f(source: String, format: Percentsignf): Double = js.native
+      @scala.inline
+      def sscanf_f(source: String, format: Percentsignf): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+      
       /**
       		 * <p> Read formatted octal from string. </p>
       		 * 
@@ -190,9 +184,9 @@ object global {
       		 * 
       		 * @return An octal.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf_o(source: String, format: Percentsigno): Double = js.native
+      @scala.inline
+      def sscanf_o(source: String, format: Percentsigno): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+      
       /**
       		 * <p> Read formatted word from string. </p>
       		 * 
@@ -203,9 +197,9 @@ object global {
       		 * 
       		 * @return A word.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf_s(source: String, format: Percentsigns): String = js.native
+      @scala.inline
+      def sscanf_s(source: String, format: Percentsigns): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+      
       /**
       		 * <p> Read formatted hex from string. </p>
       		 * 
@@ -216,9 +210,8 @@ object global {
       		 * 
       		 * @return A hex.
       		 */
-      @JSGlobal("__node_scanf.scanf.sscanf")
-      @js.native
-      def sscanf_x(source: String, format: Percentsignx): Double = js.native
+      @scala.inline
+      def sscanf_x(source: String, format: Percentsignx): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sscanf")(source.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
     }
   }
 }

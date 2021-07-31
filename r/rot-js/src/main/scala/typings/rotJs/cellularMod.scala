@@ -8,7 +8,6 @@ import typings.rotJs.rotJsNumbers.`6`
 import typings.rotJs.rotJsNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cellularMod {
@@ -103,14 +102,13 @@ object cellularMod {
   
   type ConnectionCallback = js.Function2[/* from */ Point, /* to */ Point, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var born: js.Array[Double] = js.native
+    var born: js.Array[Double]
     
-    var survive: js.Array[Double] = js.native
+    var survive: js.Array[Double]
     
-    var topology: `4` | `6` | `8` = js.native
+    var topology: `4` | `6` | `8`
   }
   object Options {
     

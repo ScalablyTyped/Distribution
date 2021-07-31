@@ -2,25 +2,23 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Size List Response
   */
-@js.native
 trait SchemaSizesListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#sizesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Size collection.
     */
-  var sizes: js.UndefOr[js.Array[SchemaSize]] = js.native
+  var sizes: js.UndefOr[js.Array[SchemaSize]] = js.undefined
 }
 object SchemaSizesListResponse {
   

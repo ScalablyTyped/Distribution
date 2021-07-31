@@ -2,41 +2,39 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseBlueprint extends StObject {
   
   /**
     * The ID for the database blueprint.
     */
-  var blueprintId: js.UndefOr[String] = js.native
+  var blueprintId: js.UndefOr[String] = js.undefined
   
   /**
     * The database software of the database blueprint (for example, MySQL).
     */
-  var engine: js.UndefOr[RelationalDatabaseEngine] = js.native
+  var engine: js.UndefOr[RelationalDatabaseEngine] = js.undefined
   
   /**
     * The description of the database engine for the database blueprint.
     */
-  var engineDescription: js.UndefOr[String] = js.native
+  var engineDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The database engine version for the database blueprint (for example, 5.7.23).
     */
-  var engineVersion: js.UndefOr[String] = js.native
+  var engineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the database engine version for the database blueprint.
     */
-  var engineVersionDescription: js.UndefOr[String] = js.native
+  var engineVersionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value indicating whether the engine version is the default for the database blueprint.
     */
-  var isEngineDefault: js.UndefOr[Boolean] = js.native
+  var isEngineDefault: js.UndefOr[Boolean] = js.undefined
 }
 object RelationalDatabaseBlueprint {
   

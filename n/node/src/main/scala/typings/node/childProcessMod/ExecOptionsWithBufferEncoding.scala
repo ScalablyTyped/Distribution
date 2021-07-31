@@ -3,19 +3,19 @@ package typings.node.childProcessMod
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecOptionsWithBufferEncoding extends ExecOptions {
+trait ExecOptionsWithBufferEncoding
+  extends StObject
+     with ExecOptions {
   
-  var encoding: BufferEncoding | Null = js.native
+  var encoding: BufferEncoding | Null
 }
 object ExecOptionsWithBufferEncoding {
   
   @scala.inline
   def apply(): ExecOptionsWithBufferEncoding = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(encoding = null)
     __obj.asInstanceOf[ExecOptionsWithBufferEncoding]
   }
   

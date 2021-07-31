@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadMod extends Shortcut {
@@ -15,10 +14,11 @@ object uploadMod extends Shortcut {
   @js.native
   val default: SFC[UploadProps] = js.native
   
-  @js.native
-  trait UploadProps extends SVGAttributes[SVGElement] {
+  trait UploadProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object UploadProps {
     

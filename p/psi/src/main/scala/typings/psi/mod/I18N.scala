@@ -2,14 +2,12 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name I18N is established convention
-@js.native
 trait I18N extends StObject {
   
-  var rendererFormattedStrings: RendererFormattedStrings = js.native
+  var rendererFormattedStrings: RendererFormattedStrings
 }
 object I18N {
   

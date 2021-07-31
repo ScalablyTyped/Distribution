@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotApplicable extends StObject {
   
-  var error: scala.Double = js.native
+  var error: scala.Double
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var notApplicable: scala.Double = js.native
+  var notApplicable: scala.Double
   
-  var notSet: scala.Double = js.native
+  var notSet: scala.Double
   
-  var pending: scala.Double = js.native
+  var pending: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
 }
 object NotApplicable {
   

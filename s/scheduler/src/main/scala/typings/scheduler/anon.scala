@@ -2,15 +2,13 @@ package typings.scheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object Cancel {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Delay {
     
@@ -60,10 +57,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any = js.native
+    var `type`: /* import warning: importer.ImportType#apply Failed type conversion: infer BuildType */ js.Any
   }
   object Type {
     

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -44,9 +43,8 @@ object DataViewControlBar {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar.create")
-  @js.native
-  def create(model: IModel): DataViewControlBar = js.native
+  @scala.inline
+  def create(model: IModel): DataViewControlBar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataViewControlBar]
   
   /**
     * Creates and returns a new DataViewControlBar instance in the SDK and on the server.
@@ -57,9 +55,8 @@ object DataViewControlBar {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar.createIn")
-  @js.native
-  def createIn(container: DataView): DataViewControlBar = js.native
+  @scala.inline
+  def createIn(container: DataView): DataViewControlBar = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewControlBar]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewControlBar.structureTypeName")

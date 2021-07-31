@@ -3,33 +3,31 @@ package typings.scratchEnv
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** All the metadata needed to register an extension. */
-@js.native
 trait ExtensionMetadata extends StObject {
   
   /** URI for an image to be placed on each block in this extension. Data URI ok. */
-  var blockIconURI: js.UndefOr[String] = js.native
+  var blockIconURI: js.UndefOr[String] = js.undefined
   
   /** The blocks provided by this extension and the separators. */
-  var blocks: js.Array[ExtensionBlockMetadata | String] = js.native
+  var blocks: js.Array[ExtensionBlockMetadata | String]
   
   /** Link to documentation content for this extension. */
-  var docsURI: js.UndefOr[String] = js.native
+  var docsURI: js.UndefOr[String] = js.undefined
   
   /** A unique alphanumeric identifier for this extension. No special characters allowed. */
-  var id: String = js.native
+  var id: String
   
   /** URI for an image to be placed on this extension's category menu item. Data URI ok. */
-  var menuIconURI: js.UndefOr[String] = js.native
+  var menuIconURI: js.UndefOr[String] = js.undefined
   
   /** Map of menu name to metadata for each of this extension's menus. */
-  var menus: js.UndefOr[Record[String, ExtensionMenuMetadata]] = js.native
+  var menus: js.UndefOr[Record[String, ExtensionMenuMetadata]] = js.undefined
   
   /** The human-readable name of this extension. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ExtensionMetadata {
   

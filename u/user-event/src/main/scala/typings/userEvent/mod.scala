@@ -4,60 +4,50 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("user-event", "default.click")
+    @JSImport("user-event", JSImport.Default)
     @js.native
-    def click(element: Element): Unit = js.native
-    @JSImport("user-event", "default.click")
-    @js.native
-    def click(element: Window): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("user-event", "default.dblClick")
-    @js.native
-    def dblClick(element: Element): Unit = js.native
-    @JSImport("user-event", "default.dblClick")
-    @js.native
-    def dblClick(element: Window): Unit = js.native
+    @scala.inline
+    def click(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def click(element: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("click")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: Element, values: String): Unit = js.native
-    @JSImport("user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: Element, values: js.Array[String]): Unit = js.native
-    @JSImport("user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: Window, values: String): Unit = js.native
-    @JSImport("user-event", "default.selectOptions")
-    @js.native
-    def selectOptions(element: Window, values: js.Array[String]): Unit = js.native
+    @scala.inline
+    def dblClick(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dblClick")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def dblClick(element: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dblClick")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("user-event", "default.type")
-    @js.native
-    def `type`(element: Element, text: String): js.Promise[Unit] = js.native
-    @JSImport("user-event", "default.type")
-    @js.native
-    def `type`(element: Element, text: String, userOpts: UserOpts): js.Promise[Unit] = js.native
-    @JSImport("user-event", "default.type")
-    @js.native
-    def `type`(element: Window, text: String): js.Promise[Unit] = js.native
-    @JSImport("user-event", "default.type")
-    @js.native
-    def `type`(element: Window, text: String, userOpts: UserOpts): js.Promise[Unit] = js.native
+    @scala.inline
+    def selectOptions(element: Element, values: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: Element, values: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: Window, values: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def selectOptions(element: Window, values: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectOptions")(element.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def `type`(element: Element, text: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def `type`(element: Element, text: String, userOpts: UserOpts): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], userOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def `type`(element: Window, text: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def `type`(element: Window, text: String, userOpts: UserOpts): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("type")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any], userOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
-  @js.native
   trait UserOpts extends StObject {
     
-    var allAtOnce: js.UndefOr[Boolean] = js.native
+    var allAtOnce: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
   }
   object UserOpts {
     

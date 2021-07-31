@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | light-sdk |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 34 |
 | # dependents       | 2 |
-| # downloads        | 5237 |
+| # downloads        | 4554 |
 | # stars            | 0 |
 
 ## Links

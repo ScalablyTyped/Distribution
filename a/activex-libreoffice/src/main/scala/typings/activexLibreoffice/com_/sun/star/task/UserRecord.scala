@@ -3,15 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserRecord extends StObject {
   
-  var Passwords: SafeArray[String] = js.native
+  var Passwords: SafeArray[String]
   
-  var UserName: String = js.native
+  var UserName: String
 }
 object UserRecord {
   

@@ -2,34 +2,32 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Customitems extends StObject {
   
-  var button: js.UndefOr[Maxchars] = js.native
+  var button: js.UndefOr[Maxchars] = js.undefined
   
-  var `custom-items`: js.UndefOr[js.Array[Function]] = js.native
+  var `custom-items`: js.UndefOr[js.Array[Function]] = js.undefined
   
   /**
     * To fix the position of the context menu to one side of the chart. true | false
     */
-  var docked: js.UndefOr[Boolean] = js.native
+  var docked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Empties all default context-menu items, leaving just the "About ZingChart" button. true | false | 1 | 0
     */
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var gear: js.UndefOr[Offsety] = js.native
+  var gear: js.UndefOr[Offsety] = js.undefined
   
-  var item: js.UndefOr[FontcolorHoverstate] = js.native
+  var item: js.UndefOr[FontcolorHoverstate] = js.undefined
   
   /**
     * To position the context menu button on the left or right side of the chart. left | right
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object Customitems {
   

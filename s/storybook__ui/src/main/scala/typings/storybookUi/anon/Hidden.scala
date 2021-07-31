@@ -3,15 +3,13 @@ package typings.storybookUi.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hidden extends StObject {
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var position: CSSProperties = js.native
+  var position: CSSProperties
 }
 object Hidden {
   

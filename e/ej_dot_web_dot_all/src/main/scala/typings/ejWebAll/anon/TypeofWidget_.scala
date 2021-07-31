@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofWidget_ extends StObject {
   
   /* static member */
-  def extend(widget: Widget_): js.Any = js.native
+  def extend(widget: Widget_): js.Any
   
   /* static member */
-  var fn: Widget_ = js.native
+  var fn: Widget_
 }
 object TypeofWidget_ {
   

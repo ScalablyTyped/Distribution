@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderDescription extends StObject {
   
   /**
     * The date the provider was added to the user pool.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The date the provider was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The identity provider name.
     */
-  var ProviderName: js.UndefOr[ProviderNameType] = js.native
+  var ProviderName: js.UndefOr[ProviderNameType] = js.undefined
   
   /**
     * The identity provider type.
     */
-  var ProviderType: js.UndefOr[IdentityProviderTypeType] = js.native
+  var ProviderType: js.UndefOr[IdentityProviderTypeType] = js.undefined
 }
 object ProviderDescription {
   

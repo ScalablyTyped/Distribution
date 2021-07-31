@@ -11,7 +11,6 @@ import typings.html5plus.html5plusStrings.jpg
 import typings.html5plus.html5plusStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
   */
-@js.native
 trait PlusZipCompressImageOptions extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var clip: js.UndefOr[PlusZipClipImageOptions] = js.native
+  var clip: js.UndefOr[PlusZipClipImageOptions] = js.undefined
   
   /**
     * 压缩转换目标图片的路径
@@ -47,7 +45,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var dst: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.native
+  var dst: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   
   /**
     * 压缩转换后的图片格式
@@ -57,7 +55,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var format: js.UndefOr[jpg | png] = js.native
+  var format: js.UndefOr[jpg | png] = js.undefined
   
   /**
     * 缩放图片的高度
@@ -67,7 +65,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 覆盖生成新文件
@@ -78,7 +76,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 压缩图片的质量
@@ -87,7 +85,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * 旋转图片的角度
@@ -99,7 +97,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var rotate: js.UndefOr[`90` | `180` | `270`] = js.native
+  var rotate: js.UndefOr[`90` | `180` | `270`] = js.undefined
   
   /**
     * 压缩转换原始图片的路径
@@ -115,7 +113,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var src: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.native
+  var src: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   
   /**
     * 缩放图片的宽度
@@ -125,7 +123,7 @@ trait PlusZipCompressImageOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/zip.html](http://www.html5plus.org/doc/zh_cn/zip.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PlusZipCompressImageOptions {
   

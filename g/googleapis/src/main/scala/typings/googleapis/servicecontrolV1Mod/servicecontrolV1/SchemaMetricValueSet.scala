@@ -2,7 +2,6 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the set should have a unique combination of start time, end time, and label
   * values.
   */
-@js.native
 trait SchemaMetricValueSet extends StObject {
   
   /**
     * The metric name defined in the service configuration.
     */
-  var metricName: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.undefined
   
   /**
     * The values in this metric.
     */
-  var metricValues: js.UndefOr[js.Array[SchemaMetricValue]] = js.native
+  var metricValues: js.UndefOr[js.Array[SchemaMetricValue]] = js.undefined
 }
 object SchemaMetricValueSet {
   

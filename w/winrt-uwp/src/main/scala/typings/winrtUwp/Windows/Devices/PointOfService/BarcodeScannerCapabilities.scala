@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the barcode scanner capabilities. */
-@js.native
 trait BarcodeScannerCapabilities extends StObject {
   
   /** Indicates whether the barcode scanner supports image preview. */
-  var isImagePreviewSupported: Boolean = js.native
+  var isImagePreviewSupported: Boolean
   
   /** Indicates whether the barcode scanner supports the software trigger functionality. */
-  var isSoftwareTriggerSupported: Boolean = js.native
+  var isSoftwareTriggerSupported: Boolean
   
   /** Indicates whether the barcode scanner supports reporting of usage statistics. */
-  var isStatisticsReportingSupported: Boolean = js.native
+  var isStatisticsReportingSupported: Boolean
   
   /** Indicates whether the barcode scanner supports updating or resetting of usage statistics. */
-  var isStatisticsUpdatingSupported: Boolean = js.native
+  var isStatisticsUpdatingSupported: Boolean
   
   /** Gets the power reporting type for the barcode scanner. */
-  var powerReportingType: UnifiedPosPowerReportingType = js.native
+  var powerReportingType: UnifiedPosPowerReportingType
 }
 object BarcodeScannerCapabilities {
   

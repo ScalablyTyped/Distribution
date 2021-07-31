@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,42 +14,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addParagraphTextItem();
   *     item.setTitle('What is your address?');
   */
-@js.native
 trait ParagraphTextItem extends StObject {
   
-  def clearValidation(): ParagraphTextItem = js.native
+  def clearValidation(): ParagraphTextItem
   
-  def createResponse(response: String): ItemResponse = js.native
+  def createResponse(response: String): ItemResponse
   
-  def duplicate(): ParagraphTextItem = js.native
+  def duplicate(): ParagraphTextItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setGeneralFeedback(feedback: QuizFeedback): ParagraphTextItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): ParagraphTextItem
   
-  def setHelpText(text: String): ParagraphTextItem = js.native
+  def setHelpText(text: String): ParagraphTextItem
   
-  def setPoints(points: Integer): ParagraphTextItem = js.native
+  def setPoints(points: Integer): ParagraphTextItem
   
-  def setRequired(enabled: Boolean): ParagraphTextItem = js.native
+  def setRequired(enabled: Boolean): ParagraphTextItem
   
-  def setTitle(title: String): ParagraphTextItem = js.native
+  def setTitle(title: String): ParagraphTextItem
   
-  def setValidation(validation: ParagraphTextValidation): ParagraphTextItem = js.native
+  def setValidation(validation: ParagraphTextValidation): ParagraphTextItem
 }
 object ParagraphTextItem {
   

@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobConfiguration extends StObject {
   
   /** [Pick one] Copies a table. */
-  var copy: js.UndefOr[JobConfigurationTableCopy] = js.native
+  var copy: js.UndefOr[JobConfigurationTableCopy] = js.undefined
   
   /**
     * [Optional] If set, don't actually run this job. A valid query will return a mostly empty response with some processing statistics, while an invalid query will return the same error
     * it would if it wasn't a dry run. Behavior of non-query jobs is undefined.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** [Pick one] Configures an extract job. */
-  var extract: js.UndefOr[JobConfigurationExtract] = js.native
+  var extract: js.UndefOr[JobConfigurationExtract] = js.undefined
   
   /** [Optional] Job timeout in milliseconds. If this time limit is exceeded, BigQuery may attempt to terminate the job. */
-  var jobTimeoutMs: js.UndefOr[String] = js.native
+  var jobTimeoutMs: js.UndefOr[String] = js.undefined
   
   /** [Output-only] The type of the job. Can be QUERY, LOAD, EXTRACT, COPY or UNKNOWN. */
-  var jobType: js.UndefOr[String] = js.native
+  var jobType: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this job. You can use these to organize and group your jobs. Label keys and values can be no longer than 63 characters, can only contain lowercase
@@ -35,14 +33,14 @@ trait JobConfiguration extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfiguration with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfiguration & TopLevel[js.Any]
+  ] = js.undefined
   
   /** [Pick one] Configures a load job. */
-  var load: js.UndefOr[JobConfigurationLoad] = js.native
+  var load: js.UndefOr[JobConfigurationLoad] = js.undefined
   
   /** [Pick one] Configures a query job. */
-  var query: js.UndefOr[JobConfigurationQuery] = js.native
+  var query: js.UndefOr[JobConfigurationQuery] = js.undefined
 }
 object JobConfiguration {
   
@@ -89,7 +87,7 @@ object JobConfiguration {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfiguration with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfiguration & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

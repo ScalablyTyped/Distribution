@@ -9,7 +9,6 @@ import typings.fineUploader.coreMod.ResumableFileObject
 import typings.fineUploader.mod.UIOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object azureMod {
@@ -94,7 +93,6 @@ object azureMod {
     
     type AzureBlobPropertyNameFunction = js.Function1[/* id */ Double, PromiseOptions | String]
     
-    @js.native
     trait AzureBlobPropertyOptions extends StObject {
       
       /**
@@ -110,7 +108,7 @@ object azureMod {
         *
         * @default `'uuid'`
         */
-      var name: js.UndefOr[String | AzureBlobPropertyNameFunction] = js.native
+      var name: js.UndefOr[String | AzureBlobPropertyNameFunction] = js.undefined
     }
     object AzureBlobPropertyOptions {
       
@@ -134,15 +132,16 @@ object azureMod {
       }
     }
     
-    @js.native
-    trait AzureChunkingOptions extends ChunkingOptions {
+    trait AzureChunkingOptions
+      extends StObject
+         with ChunkingOptions {
       
       /**
         * Files smaller than this value will not be chunked.
         *
         * @default `4000001`
         */
-      var minFileSize: js.UndefOr[Double] = js.native
+      var minFileSize: js.UndefOr[Double] = js.undefined
       
       /**
         * The maximum size of each part, in bytes
@@ -150,7 +149,7 @@ object azureMod {
         * @default `5242880`
         */
       @JSName("partSize")
-      var partSize_AzureChunkingOptions: js.UndefOr[Double] = js.native
+      var partSize_AzureChunkingOptions: js.UndefOr[Double] = js.undefined
     }
     object AzureChunkingOptions {
       
@@ -177,41 +176,42 @@ object azureMod {
       }
     }
     
-    @js.native
-    trait AzureCoreOptions extends CoreOptions {
+    trait AzureCoreOptions
+      extends StObject
+         with CoreOptions {
       
       /**
         * blobProperties
         */
-      var blobProperties: js.UndefOr[AzureBlobPropertyOptions] = js.native
+      var blobProperties: js.UndefOr[AzureBlobPropertyOptions] = js.undefined
       
       /**
         * chunking options
         */
       @JSName("chunking")
-      var chunking_AzureCoreOptions: js.UndefOr[AzureChunkingOptions] = js.native
+      var chunking_AzureCoreOptions: js.UndefOr[AzureChunkingOptions] = js.undefined
       
       /**
         * cors options
         */
       @JSName("cors")
-      var cors_AzureCoreOptions: js.UndefOr[AzureCorsOptions] = js.native
+      var cors_AzureCoreOptions: js.UndefOr[AzureCorsOptions] = js.undefined
       
       /**
         * RequestOptions
         */
       @JSName("request")
-      var request_AzureCoreOptions: js.UndefOr[AzureRequestOptions] = js.native
+      var request_AzureCoreOptions: js.UndefOr[AzureRequestOptions] = js.undefined
       
       /**
         * AzureSignatureOptions
         */
-      var signature: js.UndefOr[AzureSignatureOptions] = js.native
+      var signature: js.UndefOr[AzureSignatureOptions] = js.undefined
       
       /**
         * AzureUploadSuccessOptions
         */
-      var uploadSuccess: js.UndefOr[AzureUploadSuccessOptions] = js.native
+      var uploadSuccess: js.UndefOr[AzureUploadSuccessOptions] = js.undefined
     }
     object AzureCoreOptions {
       
@@ -262,8 +262,9 @@ object azureMod {
       }
     }
     
-    @js.native
-    trait AzureCorsOptions extends CorsOptions
+    trait AzureCorsOptions
+      extends StObject
+         with CorsOptions
     object AzureCorsOptions {
       
       @scala.inline
@@ -275,7 +276,6 @@ object azureMod {
     
     type AzureCustomHeaderFunction = js.Function1[/* id */ Double, Unit]
     
-    @js.native
     trait AzureFailedUploadTextDisplayOptions extends StObject {
       
       /**
@@ -283,7 +283,7 @@ object azureMod {
         *
         * @default `'custom'`
         */
-      var mode: js.UndefOr[String] = js.native
+      var mode: js.UndefOr[String] = js.undefined
     }
     object AzureFailedUploadTextDisplayOptions {
       
@@ -304,15 +304,16 @@ object azureMod {
       }
     }
     
-    @js.native
-    trait AzureRequestOptions extends RequestOptions {
+    trait AzureRequestOptions
+      extends StObject
+         with RequestOptions {
       
       /**
         * URL for your Azure Blob Storage container
         *
         * @default `null`
         */
-      var containerUrl: js.UndefOr[String] = js.native
+      var containerUrl: js.UndefOr[String] = js.undefined
     }
     object AzureRequestOptions {
       
@@ -333,13 +334,14 @@ object azureMod {
       }
     }
     
-    @js.native
-    trait AzureResumableFileObject extends ResumableFileObject {
+    trait AzureResumableFileObject
+      extends StObject
+         with ResumableFileObject {
       
       /**
         * The associated file's blob name in Azure Blob Storage
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
     }
     object AzureResumableFileObject {
       
@@ -360,7 +362,6 @@ object azureMod {
       }
     }
     
-    @js.native
     trait AzureSignatureOptions extends StObject {
       
       /**
@@ -370,7 +371,7 @@ object azureMod {
         *
         * @default `{}`
         */
-      var customHeaders: js.UndefOr[js.Any | AzureCustomHeaderFunction] = js.native
+      var customHeaders: js.UndefOr[js.Any | AzureCustomHeaderFunction] = js.undefined
       
       /**
         * The endpoint that Fine Uploader can use to send GET for a SAS before sending requests off to Azure.
@@ -379,7 +380,7 @@ object azureMod {
         *
         * @default `null`
         */
-      var endpoint: js.UndefOr[String] = js.native
+      var endpoint: js.UndefOr[String] = js.undefined
     }
     object AzureSignatureOptions {
       
@@ -411,47 +412,48 @@ object azureMod {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.fineUploader.coreMod.CoreOptions because Already inherited
-    - typings.fineUploader.azureMod.azure.AzureCoreOptions because var conflicts: autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds. Inlined blobProperties, signature, uploadSuccess */ @js.native
-    trait AzureUIOptions extends UIOptions {
+    - typings.fineUploader.azureMod.azure.AzureCoreOptions because var conflicts: autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds. Inlined blobProperties, signature, uploadSuccess */ trait AzureUIOptions
+      extends StObject
+         with UIOptions {
       
       /**
         * blobProperties
         */
-      var blobProperties: js.UndefOr[AzureBlobPropertyOptions] = js.native
+      var blobProperties: js.UndefOr[AzureBlobPropertyOptions] = js.undefined
       
       /**
         * chunking options
         */
       @JSName("chunking")
-      var chunking_AzureUIOptions: js.UndefOr[AzureChunkingOptions] = js.native
+      var chunking_AzureUIOptions: js.UndefOr[AzureChunkingOptions] = js.undefined
       
       /**
         * cors options
         */
       @JSName("cors")
-      var cors_AzureUIOptions: js.UndefOr[AzureCorsOptions] = js.native
+      var cors_AzureUIOptions: js.UndefOr[AzureCorsOptions] = js.undefined
       
       /**
         * failedUploadText options
         */
       @JSName("failedUploadTextDisplay")
-      var failedUploadTextDisplay_AzureUIOptions: js.UndefOr[AzureFailedUploadTextDisplayOptions] = js.native
+      var failedUploadTextDisplay_AzureUIOptions: js.UndefOr[AzureFailedUploadTextDisplayOptions] = js.undefined
       
       /**
         * RequestOptions
         */
       @JSName("request")
-      var request_AzureUIOptions: js.UndefOr[AzureRequestOptions] = js.native
+      var request_AzureUIOptions: js.UndefOr[AzureRequestOptions] = js.undefined
       
       /**
         * AzureSignatureOptions
         */
-      var signature: js.UndefOr[AzureSignatureOptions] = js.native
+      var signature: js.UndefOr[AzureSignatureOptions] = js.undefined
       
       /**
         * AzureUploadSuccessOptions
         */
-      var uploadSuccess: js.UndefOr[AzureUploadSuccessOptions] = js.native
+      var uploadSuccess: js.UndefOr[AzureUploadSuccessOptions] = js.undefined
     }
     object AzureUIOptions {
       
@@ -508,7 +510,6 @@ object azureMod {
       }
     }
     
-    @js.native
     trait AzureUploadSuccessOptions extends StObject {
       
       /**
@@ -516,21 +517,21 @@ object azureMod {
         *
         * @default `{}`
         */
-      var customHeaders: js.UndefOr[js.Any] = js.native
+      var customHeaders: js.UndefOr[js.Any] = js.undefined
       
       /**
         * An endpoint that Fine Uploader should POST to when a file has been successfully uploaded to Azure Blob Storage.
         *
         * @default `null`
         */
-      var endpoint: js.UndefOr[String] = js.native
+      var endpoint: js.UndefOr[String] = js.undefined
       
       /**
         * The request method (i.e. POST/PUT)
         *
         * @default `POST`
         */
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
       /**
         * Any additional parameters to attach to upload success file requests.
@@ -540,7 +541,7 @@ object azureMod {
         *
         * @default `{}`
         */
-      var params: js.UndefOr[js.Any] = js.native
+      var params: js.UndefOr[js.Any] = js.undefined
     }
     object AzureUploadSuccessOptions {
       

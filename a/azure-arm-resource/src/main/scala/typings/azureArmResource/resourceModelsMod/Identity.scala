@@ -3,34 +3,32 @@ package typings.azureArmResource.resourceModelsMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
   /**
     * The principal ID of resource identity.
     */
-  val principalId: js.UndefOr[String] = js.native
+  val principalId: js.UndefOr[String] = js.undefined
   
   /**
     * The tenant ID of resource.
     */
-  val tenantId: js.UndefOr[String] = js.native
+  val tenantId: js.UndefOr[String] = js.undefined
   
   /**
     * The identity type. Possible values include: 'SystemAssigned', 'UserAssigned', 'SystemAssigned,
     * UserAssigned', 'None'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The list of user identities associated with the resource. The user identity dictionary key
     * references will be ARM resource ids in the form:
     * '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
     */
-  var userAssignedIdentities: js.UndefOr[StringDictionary[IdentityUserAssignedIdentitiesValue]] = js.native
+  var userAssignedIdentities: js.UndefOr[StringDictionary[IdentityUserAssignedIdentitiesValue]] = js.undefined
 }
 object Identity {
   

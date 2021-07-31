@@ -3,26 +3,26 @@ package typings.yaml.parseCstMod.CST
 import typings.yaml.utilMod.Type.COMMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Comment extends Node {
+trait Comment
+  extends StObject
+     with Node {
   
   @JSName("anchor")
-  val anchor_Comment: Null = js.native
+  val anchor_Comment: Null
   
   @JSName("comment")
-  val comment_Comment: String = js.native
+  val comment_Comment: String
   
   @JSName("rawValue")
-  val rawValue_Comment: Null = js.native
+  val rawValue_Comment: Null
   
   @JSName("tag")
-  val tag_Comment: Null = js.native
+  val tag_Comment: Null
   
   @JSName("type")
-  var type_Comment: COMMENT = js.native
+  var type_Comment: COMMENT
 }
 object Comment {
   
@@ -39,7 +39,7 @@ object Comment {
     `type`: COMMENT,
     valueRangeContainsNewline: Boolean
   ): Comment = {
-    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], context = null, error = null, range = null, value = null, valueRange = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }

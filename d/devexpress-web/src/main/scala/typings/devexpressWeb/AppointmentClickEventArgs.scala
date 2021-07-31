@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentClick and the ASPxClientScheduler.AppointmentDoubleClick events.
   */
-@js.native
-trait AppointmentClickEventArgs extends ASPxClientEventArgs {
+trait AppointmentClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the client appointment ID for the appointment being clicked.
     */
-  var appointmentId: String = js.native
+  var appointmentId: String
   
   /**
     * Gets or sets whether an event is handled, and that default actions are not required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
 }
 object AppointmentClickEventArgs {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerParameter extends StObject {
   
   /**
     * The name of the integer parameter.
     */
-  var Name: NonEmptyString = js.native
+  var Name: NonEmptyString
   
   /**
     * The values for the integer parameter.
     */
-  var Values: LongList = js.native
+  var Values: LongList
 }
 object IntegerParameter {
   

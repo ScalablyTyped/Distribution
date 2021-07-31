@@ -2,60 +2,58 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --设置
-@js.native
 trait AuthSetting extends StObject {
   
   /**
     * 通讯地址，对应接口 wx.chooseAddress
     */
   @JSName("scope.address")
-  var scopeDotaddress: js.UndefOr[Boolean] = js.native
+  var scopeDotaddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 摄像头 wx.camera
     */
   @JSName("scope.camera")
-  var scopeDotcamera: js.UndefOr[Boolean] = js.native
+  var scopeDotcamera: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 发票抬头，对应接口 wx.chooseInvoiceTitle
     */
   @JSName("scope.invoiceTitle")
-  var scopeDotinvoiceTitle: js.UndefOr[Boolean] = js.native
+  var scopeDotinvoiceTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 录音功能，对应接口 wx.startRecord
     */
   @JSName("scope.record")
-  var scopeDotrecord: js.UndefOr[Boolean] = js.native
+  var scopeDotrecord: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 用户信息，对应接口 wx.getUserInfo
     */
   @JSName("scope.userInfo")
-  var scopeDotuserInfo: js.UndefOr[Boolean] = js.native
+  var scopeDotuserInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 地理位置，对应接口 wx.getLocation wx.chooseLocation
     */
   @JSName("scope.userLocation")
-  var scopeDotuserLocation: js.UndefOr[Boolean] = js.native
+  var scopeDotuserLocation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 微信运动步数，对应接口 wx.getWeRunData
     */
   @JSName("scope.werun")
-  var scopeDotwerun: js.UndefOr[Boolean] = js.native
+  var scopeDotwerun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 保存到相册 wx.saveImageToPhotosAlbum, wx.saveVideoToPhotosAlbum
     */
   @JSName("scope.writePhotosAlbum")
-  var scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.native
+  var scopeDotwritePhotosAlbum: js.UndefOr[Boolean] = js.undefined
 }
 object AuthSetting {
   

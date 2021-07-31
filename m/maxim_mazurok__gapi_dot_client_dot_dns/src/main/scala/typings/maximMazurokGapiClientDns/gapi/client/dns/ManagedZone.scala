@@ -3,68 +3,66 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZone extends StObject {
   
   /** The time that this resource was created on the server. This is in RFC3339 text format. Output only. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** A mutable string of at most 1024 characters associated with this resource for the user's convenience. Has no effect on the managed zone's function. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The DNS name of this managed zone, for instance "example.com.". */
-  var dnsName: js.UndefOr[String] = js.native
+  var dnsName: js.UndefOr[String] = js.undefined
   
   /** DNSSEC configuration. */
-  var dnssecConfig: js.UndefOr[ManagedZoneDnsSecConfig] = js.native
+  var dnssecConfig: js.UndefOr[ManagedZoneDnsSecConfig] = js.undefined
   
   /** The presence for this field indicates that outbound forwarding is enabled for this zone. The value of this field contains the set of destinations to forward to. */
-  var forwardingConfig: js.UndefOr[ManagedZoneForwardingConfig] = js.native
+  var forwardingConfig: js.UndefOr[ManagedZoneForwardingConfig] = js.undefined
   
   /** Unique identifier for the resource; defined by the server (output only) */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** User labels. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * User assigned name for this resource. Must be unique within the project. The name must be 1-63 characters long, must begin with a letter, end with a letter or digit, and only
     * contain lowercase letters, digits or dashes.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally specifies the NameServerSet for this ManagedZone. A NameServerSet is a set of DNS name servers that all host the same ManagedZones. Most users will leave this field
     * unset.
     */
-  var nameServerSet: js.UndefOr[String] = js.native
+  var nameServerSet: js.UndefOr[String] = js.undefined
   
   /** Delegate your managed_zone to these virtual name servers; defined by the server (output only) */
-  var nameServers: js.UndefOr[js.Array[String]] = js.native
+  var nameServers: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The presence of this field indicates that DNS Peering is enabled for this zone. The value of this field contains the network to peer with. */
-  var peeringConfig: js.UndefOr[ManagedZonePeeringConfig] = js.native
+  var peeringConfig: js.UndefOr[ManagedZonePeeringConfig] = js.undefined
   
   /** For privately visible zones, the set of Virtual Private Cloud resources that the zone is visible from. */
-  var privateVisibilityConfig: js.UndefOr[ManagedZonePrivateVisibilityConfig] = js.native
+  var privateVisibilityConfig: js.UndefOr[ManagedZonePrivateVisibilityConfig] = js.undefined
   
   /**
     * The presence of this field indicates that this is a managed reverse lookup zone and Cloud DNS will resolve reverse lookup queries using automatically configured records for VPC
     * resources. This only applies to networks listed under private_visibility_config.
     */
-  var reverseLookupConfig: js.UndefOr[ManagedZoneReverseLookupConfig] = js.native
+  var reverseLookupConfig: js.UndefOr[ManagedZoneReverseLookupConfig] = js.undefined
   
   /** The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources. */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object ManagedZone {
   
@@ -123,7 +121,7 @@ object ManagedZone {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDns.maximMazurokGapiClientDnsStrings.ManagedZone & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

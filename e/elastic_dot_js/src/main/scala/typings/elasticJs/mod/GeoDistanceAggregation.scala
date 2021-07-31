@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoDistanceAggregation")
 @js.native
-class GeoDistanceAggregation protected () extends Aggregation {
+class GeoDistanceAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that works on geo_point fields and conceptually works very
     similar to the range aggregation.

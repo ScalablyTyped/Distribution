@@ -2,21 +2,19 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Additional information returned to client, such as debugging
   * information.
   */
-@js.native
 trait SchemaResponseMetadata extends StObject {
   
   /**
     * A unique id associated with this call. This id is logged for tracking
     * purposes.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object SchemaResponseMetadata {
   

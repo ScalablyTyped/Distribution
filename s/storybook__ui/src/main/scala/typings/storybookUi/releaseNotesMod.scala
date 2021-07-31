@@ -4,7 +4,6 @@ import typings.react.mod.FunctionComponent
 import typings.storybookUi.anon.OmitReleaseNotesPropsisLo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object releaseNotesMod {
@@ -17,16 +16,15 @@ object releaseNotesMod {
   @js.native
   val ReleaseNotesScreen: FunctionComponent[OmitReleaseNotesPropsisLo] = js.native
   
-  @js.native
   trait ReleaseNotesProps extends StObject {
     
-    var didHitMaxWaitTime: Boolean = js.native
+    var didHitMaxWaitTime: Boolean
     
-    var isLoaded: Boolean = js.native
+    var isLoaded: Boolean
     
-    def setLoaded(isLoaded: Boolean): Unit = js.native
+    def setLoaded(isLoaded: Boolean): Unit
     
-    var version: String = js.native
+    var version: String
   }
   object ReleaseNotesProps {
     

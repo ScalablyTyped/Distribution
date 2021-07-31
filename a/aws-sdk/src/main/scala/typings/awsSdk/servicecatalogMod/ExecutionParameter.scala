@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionParameter extends StObject {
   
   /**
     * The default values for the execution parameter.
     */
-  var DefaultValues: js.UndefOr[ExecutionParameterValueList] = js.native
+  var DefaultValues: js.UndefOr[ExecutionParameterValueList] = js.undefined
   
   /**
     * The name of the execution parameter.
     */
-  var Name: js.UndefOr[ExecutionParameterKey] = js.native
+  var Name: js.UndefOr[ExecutionParameterKey] = js.undefined
   
   /**
     * The execution parameter type.
     */
-  var Type: js.UndefOr[ExecutionParameterType] = js.native
+  var Type: js.UndefOr[ExecutionParameterType] = js.undefined
 }
 object ExecutionParameter {
   

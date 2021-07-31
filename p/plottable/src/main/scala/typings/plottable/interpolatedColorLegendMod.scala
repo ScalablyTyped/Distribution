@@ -5,7 +5,6 @@ import typings.plottable.formattersMod.Formatter
 import typings.plottable.scalesMod.InterpolatedColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interpolatedColorLegendMod {
@@ -115,8 +114,7 @@ object interpolatedColorLegendMod {
     @scala.inline
     def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend._ensureOrientation")
-    @js.native
-    def _ensureOrientation(orientation: js.Any): js.Any = js.native
+    @scala.inline
+    def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

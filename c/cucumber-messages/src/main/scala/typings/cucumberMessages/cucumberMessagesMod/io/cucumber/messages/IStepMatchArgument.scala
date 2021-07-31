@@ -3,21 +3,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.StepMatchArgument.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StepMatchArgument. */
-@js.native
 trait IStepMatchArgument extends StObject {
   
   /**
     * Represents the outermost capture group of an argument. This message closely matches the
     * `Group` class in the `cucumber-expressions` library.
     */
-  var group: js.UndefOr[IGroup | Null] = js.native
+  var group: js.UndefOr[IGroup | Null] = js.undefined
   
   /** StepMatchArgument parameterTypeName */
-  var parameterTypeName: js.UndefOr[String | Null] = js.native
+  var parameterTypeName: js.UndefOr[String | Null] = js.undefined
 }
 object IStepMatchArgument {
   

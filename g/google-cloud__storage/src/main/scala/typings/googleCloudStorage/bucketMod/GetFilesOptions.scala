@@ -2,35 +2,33 @@ package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFilesOptions extends StObject {
   
-  var autoPaginate: js.UndefOr[Boolean] = js.native
+  var autoPaginate: js.UndefOr[Boolean] = js.undefined
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var directory: js.UndefOr[String] = js.native
+  var directory: js.UndefOr[String] = js.undefined
   
-  var endOffset: js.UndefOr[String] = js.native
+  var endOffset: js.UndefOr[String] = js.undefined
   
-  var includeTrailingDelimiter: js.UndefOr[Boolean] = js.native
+  var includeTrailingDelimiter: js.UndefOr[Boolean] = js.undefined
   
-  var maxApiCalls: js.UndefOr[Double] = js.native
+  var maxApiCalls: js.UndefOr[Double] = js.undefined
   
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var startOffset: js.UndefOr[String] = js.native
+  var startOffset: js.UndefOr[String] = js.undefined
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
   
-  var versions: js.UndefOr[Boolean] = js.native
+  var versions: js.UndefOr[Boolean] = js.undefined
 }
 object GetFilesOptions {
   

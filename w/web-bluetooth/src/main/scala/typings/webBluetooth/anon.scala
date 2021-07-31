@@ -2,17 +2,17 @@ package typings.webBluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait AcceptAllDevices extends RequestDeviceOptions {
+  trait AcceptAllDevices
+    extends StObject
+       with RequestDeviceOptions {
     
-    var acceptAllDevices: Boolean = js.native
+    var acceptAllDevices: Boolean
     
-    var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.native
+    var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
   }
   object AcceptAllDevices {
     
@@ -39,12 +39,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Filters extends RequestDeviceOptions {
+  trait Filters
+    extends StObject
+       with RequestDeviceOptions {
     
-    var filters: js.Array[BluetoothRequestDeviceFilter] = js.native
+    var filters: js.Array[BluetoothRequestDeviceFilter]
     
-    var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.native
+    var optionalServices: js.UndefOr[js.Array[BluetoothServiceUUID]] = js.undefined
   }
   object Filters {
     

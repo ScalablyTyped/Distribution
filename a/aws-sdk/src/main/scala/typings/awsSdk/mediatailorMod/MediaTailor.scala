@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MediaTailor extends Service {
   
   @JSName("config")
-  var config_MediaTailor: ConfigBase with ClientConfiguration = js.native
+  var config_MediaTailor: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Deletes the playback configuration for the specified name. 

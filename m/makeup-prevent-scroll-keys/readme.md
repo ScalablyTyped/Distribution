@@ -12,13 +12,10 @@ Prevents default scroll event when pressing down arrow, page down, spacebar, etc
 | Keywords           | makeup, ebay, accessibility, a11y |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 3502 |
+| # downloads        | 3883 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/makeup/makeup-js#readme)
-- [Bugs](https://github.com/makeup/makeup-js/issues)
-- [Repository](https://github.com/makeup/makeup-js)
 - [Npm](https://www.npmjs.com/package/makeup-prevent-scroll-keys)
     
 

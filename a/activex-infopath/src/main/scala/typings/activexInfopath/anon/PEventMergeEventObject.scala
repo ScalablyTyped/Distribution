@@ -3,13 +3,11 @@ package typings.activexInfopath.anon
 import typings.activexInfopath.InfoPath.MergeEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PEventMergeEventObject extends StObject {
   
-  val pEvent: MergeEventObject = js.native
+  val pEvent: MergeEventObject
 }
 object PEventMergeEventObject {
   

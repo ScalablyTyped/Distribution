@@ -2,15 +2,16 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringMod {
   
-  @JSImport("locutus/python/string", "capwords")
+  @JSImport("locutus/python/string", JSImport.Namespace)
   @js.native
-  def capwords(): js.Any = js.native
-  @JSImport("locutus/python/string", "capwords")
-  @js.native
-  def capwords(str: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def capwords(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")().asInstanceOf[js.Any]
+  @scala.inline
+  def capwords(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("capwords")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

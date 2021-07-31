@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCertificateResult extends StObject {
   
   /**
     * An object that describes the certificate created.
     */
-  var certificate: js.UndefOr[CertificateSummary] = js.native
+  var certificate: js.UndefOr[CertificateSummary] = js.undefined
   
   /**
     * An array of objects that describe the result of the action, such as the status of the request, the timestamp of the request, and the resources affected by the request.
     */
-  var operations: js.UndefOr[OperationList] = js.native
+  var operations: js.UndefOr[OperationList] = js.undefined
 }
 object CreateCertificateResult {
   

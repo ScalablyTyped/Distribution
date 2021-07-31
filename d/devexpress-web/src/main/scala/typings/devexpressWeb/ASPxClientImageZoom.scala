@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxImageZoom object.
   */
-@js.native
-trait ASPxClientImageZoom extends ASPxClientControl {
+trait ASPxClientImageZoom
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Sets the properties on an image displayed in the image zoom control.
@@ -25,7 +25,7 @@ trait ASPxClientImageZoom extends ASPxClientControl {
     zoomWindowText: String,
     expandWindowText: String,
     alternateText: String
-  ): Unit = js.native
+  ): Unit
 }
 object ASPxClientImageZoom {
   

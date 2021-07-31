@@ -2,27 +2,28 @@ package typings.modularScale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("modular-scale", JSImport.Default)
+  @JSImport("modular-scale", JSImport.Namespace)
   @js.native
-  def default(options: ModularScaleOptions): typings.modularScale.mod.modularScale = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(options: ModularScaleOptions): typings.modularScale.mod.modularScale = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[typings.modularScale.mod.modularScale]
   
   @JSImport("modular-scale", "ratios")
   @js.native
   val ratios: ModularScaleRatio = js.native
   
-  @js.native
   trait ModularScaleOptions extends StObject {
     
     /** The base font size (in pixels) to use for the type scale. Defaults to 16 */
-    var base: js.UndefOr[Double | String] = js.native
+    var base: js.UndefOr[Double | String] = js.undefined
     
     /** The ratio to use in the generated type scale function. Defaults to ModularScaleRatio.goldenSection */
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
   }
   object ModularScaleOptions {
     
@@ -49,42 +50,41 @@ object mod {
     }
   }
   
-  @js.native
   trait ModularScaleRatio extends StObject {
     
-    var augFourth: Double = js.native
+    var augFourth: Double
     
-    var doubleOctave: Double = js.native
+    var doubleOctave: Double
     
-    var goldenSection: Double = js.native
+    var goldenSection: Double
     
-    var majorEleventh: Double = js.native
+    var majorEleventh: Double
     
-    var majorSecond: Double = js.native
+    var majorSecond: Double
     
-    var majorSeventh: Double = js.native
+    var majorSeventh: Double
     
-    var majorSixth: Double = js.native
+    var majorSixth: Double
     
-    var majorTenth: Double = js.native
+    var majorTenth: Double
     
-    var majorThird: Double = js.native
+    var majorThird: Double
     
-    var majorTwelfth: Double = js.native
+    var majorTwelfth: Double
     
-    var minorSecond: Double = js.native
+    var minorSecond: Double
     
-    var minorSeventh: Double = js.native
+    var minorSeventh: Double
     
-    var minorSixth: Double = js.native
+    var minorSixth: Double
     
-    var minorThird: Double = js.native
+    var minorThird: Double
     
-    var octave: Double = js.native
+    var octave: Double
     
-    var perfectFifth: Double = js.native
+    var perfectFifth: Double
     
-    var perfectFourth: Double = js.native
+    var perfectFourth: Double
   }
   object ModularScaleRatio {
     

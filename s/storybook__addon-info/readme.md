@@ -10,9 +10,9 @@ A Storybook addon to show additional information for your stories.
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-info |
 | Keywords           | addon, storybook |
-| # releases         | 394 |
+| # releases         | 318 |
 | # dependents       | 105 |
-| # downloads        | 17054907 |
+| # downloads        | 16795808 |
 | # stars            | 1 |
 
 ## Links

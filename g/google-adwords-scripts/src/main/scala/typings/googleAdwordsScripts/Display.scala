@@ -2,19 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
-  def audiences(): AdWordsSelector[Audience] = js.native
+  def audiences(): AdWordsSelector[Audience]
   
-  def keywords(): AdWordsSelector[DisplayKeyword] = js.native
+  def keywords(): AdWordsSelector[DisplayKeyword]
   
-  def placements(): AdWordsSelector[Placement] = js.native
+  def placements(): AdWordsSelector[Placement]
   
-  def topics(): AdWordsSelector[Topic] = js.native
+  def topics(): AdWordsSelector[Topic]
 }
 object Display {
   

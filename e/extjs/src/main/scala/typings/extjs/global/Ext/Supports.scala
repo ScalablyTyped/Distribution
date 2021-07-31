@@ -2,13 +2,13 @@ package typings.extjs.global.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Supports")
 @js.native
 class Supports ()
-  extends typings.extjs.Ext.Supports
+  extends StObject
+     with typings.extjs.Ext.Supports
 /* static members */
 object Supports {
   

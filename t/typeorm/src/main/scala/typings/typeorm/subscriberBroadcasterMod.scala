@@ -9,7 +9,6 @@ import typings.typeorm.subscriberBroadcasterResultMod.BroadcasterResult
 import typings.typeorm.subscriberEntitySubscriberInterfaceMod.EntitySubscriberInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberBroadcasterMod {
@@ -39,12 +38,7 @@ object subscriberBroadcasterMod {
       * Note: this method has a performance-optimized code organization, do not change code structure.
       */
     def broadcastAfterRemoveEvent(result: BroadcasterResult, metadata: EntityMetadata): Unit = js.native
-    def broadcastAfterRemoveEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: ObjectLiteral
-    ): Unit = js.native
+    def broadcastAfterRemoveEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: Unit, databaseEntity: ObjectLiteral): Unit = js.native
     def broadcastAfterRemoveEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: ObjectLiteral): Unit = js.native
     def broadcastAfterRemoveEvent(
       result: BroadcasterResult,
@@ -80,53 +74,48 @@ object subscriberBroadcasterMod {
     def broadcastAfterUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: js.UndefOr[scala.Nothing],
-      updatedColumns: js.UndefOr[scala.Nothing],
-      updatedRelations: js.Array[RelationMetadata]
-    ): Unit = js.native
-    def broadcastAfterUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: js.UndefOr[scala.Nothing],
+      entity: Unit,
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: js.UndefOr[scala.Nothing],
+      entity: Unit,
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata],
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: ObjectLiteral
-    ): Unit = js.native
-    def broadcastAfterUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: ObjectLiteral,
-      updatedColumns: js.UndefOr[scala.Nothing],
+      entity: Unit,
+      databaseEntity: Unit,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
+    def broadcastAfterUpdateEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: Unit, databaseEntity: ObjectLiteral): Unit = js.native
     def broadcastAfterUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
+      entity: Unit,
       databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
+      entity: Unit,
       databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata],
+      updatedRelations: js.Array[RelationMetadata]
+    ): Unit = js.native
+    def broadcastAfterUpdateEvent(
+      result: BroadcasterResult,
+      metadata: EntityMetadata,
+      entity: Unit,
+      databaseEntity: ObjectLiteral,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: ObjectLiteral): Unit = js.native
@@ -134,23 +123,23 @@ object subscriberBroadcasterMod {
       result: BroadcasterResult,
       metadata: EntityMetadata,
       entity: ObjectLiteral,
-      databaseEntity: js.UndefOr[scala.Nothing],
-      updatedColumns: js.UndefOr[scala.Nothing],
-      updatedRelations: js.Array[RelationMetadata]
-    ): Unit = js.native
-    def broadcastAfterUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: ObjectLiteral,
-      databaseEntity: js.UndefOr[scala.Nothing],
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
       entity: ObjectLiteral,
-      databaseEntity: js.UndefOr[scala.Nothing],
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata],
+      updatedRelations: js.Array[RelationMetadata]
+    ): Unit = js.native
+    def broadcastAfterUpdateEvent(
+      result: BroadcasterResult,
+      metadata: EntityMetadata,
+      entity: ObjectLiteral,
+      databaseEntity: Unit,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(
@@ -164,14 +153,6 @@ object subscriberBroadcasterMod {
       metadata: EntityMetadata,
       entity: ObjectLiteral,
       databaseEntity: ObjectLiteral,
-      updatedColumns: js.UndefOr[scala.Nothing],
-      updatedRelations: js.Array[RelationMetadata]
-    ): Unit = js.native
-    def broadcastAfterUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: ObjectLiteral,
-      databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastAfterUpdateEvent(
@@ -180,6 +161,14 @@ object subscriberBroadcasterMod {
       entity: ObjectLiteral,
       databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata],
+      updatedRelations: js.Array[RelationMetadata]
+    ): Unit = js.native
+    def broadcastAfterUpdateEvent(
+      result: BroadcasterResult,
+      metadata: EntityMetadata,
+      entity: ObjectLiteral,
+      databaseEntity: ObjectLiteral,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     
@@ -203,12 +192,7 @@ object subscriberBroadcasterMod {
       * Note: this method has a performance-optimized code organization, do not change code structure.
       */
     def broadcastBeforeRemoveEvent(result: BroadcasterResult, metadata: EntityMetadata): Unit = js.native
-    def broadcastBeforeRemoveEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: ObjectLiteral
-    ): Unit = js.native
+    def broadcastBeforeRemoveEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: Unit, databaseEntity: ObjectLiteral): Unit = js.native
     def broadcastBeforeRemoveEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: ObjectLiteral): Unit = js.native
     def broadcastBeforeRemoveEvent(
       result: BroadcasterResult,
@@ -244,53 +228,48 @@ object subscriberBroadcasterMod {
     def broadcastBeforeUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: js.UndefOr[scala.Nothing],
-      updatedColumns: js.UndefOr[scala.Nothing],
-      updatedRelations: js.Array[RelationMetadata]
-    ): Unit = js.native
-    def broadcastBeforeUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: js.UndefOr[scala.Nothing],
+      entity: Unit,
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: js.UndefOr[scala.Nothing],
+      entity: Unit,
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata],
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: ObjectLiteral
-    ): Unit = js.native
-    def broadcastBeforeUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
-      databaseEntity: ObjectLiteral,
-      updatedColumns: js.UndefOr[scala.Nothing],
+      entity: Unit,
+      databaseEntity: Unit,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
+    def broadcastBeforeUpdateEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: Unit, databaseEntity: ObjectLiteral): Unit = js.native
     def broadcastBeforeUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
+      entity: Unit,
       databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
-      entity: js.UndefOr[scala.Nothing],
+      entity: Unit,
       databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata],
+      updatedRelations: js.Array[RelationMetadata]
+    ): Unit = js.native
+    def broadcastBeforeUpdateEvent(
+      result: BroadcasterResult,
+      metadata: EntityMetadata,
+      entity: Unit,
+      databaseEntity: ObjectLiteral,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(result: BroadcasterResult, metadata: EntityMetadata, entity: ObjectLiteral): Unit = js.native
@@ -298,23 +277,23 @@ object subscriberBroadcasterMod {
       result: BroadcasterResult,
       metadata: EntityMetadata,
       entity: ObjectLiteral,
-      databaseEntity: js.UndefOr[scala.Nothing],
-      updatedColumns: js.UndefOr[scala.Nothing],
-      updatedRelations: js.Array[RelationMetadata]
-    ): Unit = js.native
-    def broadcastBeforeUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: ObjectLiteral,
-      databaseEntity: js.UndefOr[scala.Nothing],
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(
       result: BroadcasterResult,
       metadata: EntityMetadata,
       entity: ObjectLiteral,
-      databaseEntity: js.UndefOr[scala.Nothing],
+      databaseEntity: Unit,
       updatedColumns: js.Array[ColumnMetadata],
+      updatedRelations: js.Array[RelationMetadata]
+    ): Unit = js.native
+    def broadcastBeforeUpdateEvent(
+      result: BroadcasterResult,
+      metadata: EntityMetadata,
+      entity: ObjectLiteral,
+      databaseEntity: Unit,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(
@@ -328,14 +307,6 @@ object subscriberBroadcasterMod {
       metadata: EntityMetadata,
       entity: ObjectLiteral,
       databaseEntity: ObjectLiteral,
-      updatedColumns: js.UndefOr[scala.Nothing],
-      updatedRelations: js.Array[RelationMetadata]
-    ): Unit = js.native
-    def broadcastBeforeUpdateEvent(
-      result: BroadcasterResult,
-      metadata: EntityMetadata,
-      entity: ObjectLiteral,
-      databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata]
     ): Unit = js.native
     def broadcastBeforeUpdateEvent(
@@ -344,6 +315,14 @@ object subscriberBroadcasterMod {
       entity: ObjectLiteral,
       databaseEntity: ObjectLiteral,
       updatedColumns: js.Array[ColumnMetadata],
+      updatedRelations: js.Array[RelationMetadata]
+    ): Unit = js.native
+    def broadcastBeforeUpdateEvent(
+      result: BroadcasterResult,
+      metadata: EntityMetadata,
+      entity: ObjectLiteral,
+      databaseEntity: ObjectLiteral,
+      updatedColumns: Unit,
       updatedRelations: js.Array[RelationMetadata]
     ): Unit = js.native
     
@@ -357,12 +336,12 @@ object subscriberBroadcasterMod {
       */
     def broadcastLoadEventsForAll(result: BroadcasterResult, metadata: EntityMetadata, entities: js.Array[ObjectLiteral]): Unit = js.native
     
-    /* protected */ def isAllowedSubscriber(subscriber: EntitySubscriberInterface[_], target: String): Boolean = js.native
+    /* protected */ def isAllowedSubscriber(subscriber: EntitySubscriberInterface[js.Any], target: String): Boolean = js.native
     /**
       * Checks if subscriber's methods can be executed by checking if its don't listen to the particular entity,
       * or listens our entity.
       */
-    /* protected */ def isAllowedSubscriber(subscriber: EntitySubscriberInterface[_], target: js.Function): Boolean = js.native
+    /* protected */ def isAllowedSubscriber(subscriber: EntitySubscriberInterface[js.Any], target: js.Function): Boolean = js.native
     
     var queryRunner: js.Any = js.native
   }

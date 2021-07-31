@@ -7,82 +7,129 @@ import typings.baconjs.replyMod.Reply
 import typings.baconjs.typesMod.EventSink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferMod {
   
-  @JSImport("baconjs/types/buffer", "buffer")
+  @JSImport("baconjs/types/buffer", JSImport.Namespace)
   @js.native
-  def buffer[V](src: EventStream[V]): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "buffer")
-  @js.native
-  def buffer[V](src: EventStream[V], onInput: js.UndefOr[scala.Nothing], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "buffer")
-  @js.native
-  def buffer[V](src: EventStream[V], onInput: BufferHandler[V]): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "buffer")
-  @js.native
-  def buffer[V](src: EventStream[V], onInput: BufferHandler[V], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/buffer", "bufferWithCount")
-  @js.native
-  def bufferWithCount[V](src: EventStream[V], count: Double): EventStream[js.Array[V]] = js.native
+  @scala.inline
+  def buffer[V](src: EventStream[V]): EventStream[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(src.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def buffer[V](src: EventStream[V], onInput: Unit, onFlush: BufferHandler[V]): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(src.asInstanceOf[js.Any], onInput.asInstanceOf[js.Any], onFlush.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def buffer[V](src: EventStream[V], onInput: BufferHandler[V]): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(src.asInstanceOf[js.Any], onInput.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def buffer[V](src: EventStream[V], onInput: BufferHandler[V], onFlush: BufferHandler[V]): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(src.asInstanceOf[js.Any], onInput.asInstanceOf[js.Any], onFlush.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
   
-  @JSImport("baconjs/types/buffer", "bufferWithTime")
-  @js.native
-  def bufferWithTime[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "bufferWithTime")
-  @js.native
-  def bufferWithTime[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = js.native
+  @scala.inline
+  def bufferWithCount[V](src: EventStream[V], count: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithCount")(src.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
   
-  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
-  @js.native
-  def bufferWithTimeOrCount[V](src: EventStream[V]): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
-  @js.native
-  def bufferWithTimeOrCount[V](src: EventStream[V], delay: js.UndefOr[scala.Nothing], count: Double): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
-  @js.native
-  def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
-  @js.native
-  def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double, count: Double): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
-  @js.native
-  def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = js.native
-  @JSImport("baconjs/types/buffer", "bufferWithTimeOrCount")
-  @js.native
-  def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction, count: Double): EventStream[js.Array[V]] = js.native
+  @scala.inline
+  def bufferWithTime[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTime")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def bufferWithTime[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTime")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  
+  @scala.inline
+  def bufferWithTimeOrCount[V](src: EventStream[V]): EventStream[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def bufferWithTimeOrCount[V](src: EventStream[V], delay: Double, count: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def bufferWithTimeOrCount[V](src: EventStream[V], delay: Unit, count: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
+  @scala.inline
+  def bufferWithTimeOrCount[V](src: EventStream[V], delay: DelayFunction, count: Double): EventStream[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferWithTimeOrCount")(src.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[V]]]
   
   type BufferHandler[V] = js.Function1[/* buffer */ Buffer_[V], js.Any]
   
-  @js.native
   trait Buffer_[V] extends StObject {
     
-    var delay: js.UndefOr[DelayFunction] = js.native
+    var delay: js.UndefOr[DelayFunction] = js.undefined
     
-    var end: js.UndefOr[End] = js.native
+    var end: js.UndefOr[End] = js.undefined
     
-    def flush(): js.Any = js.native
+    def flush(): js.Any
     
-    def onFlush(buffer: Buffer_[V]): js.Any = js.native
+    def onFlush(buffer: Buffer_[V]): js.Any
     @JSName("onFlush")
-    var onFlush_Original: BufferHandler[V] = js.native
+    var onFlush_Original: BufferHandler[V]
     
-    def onInput(buffer: Buffer_[V]): js.Any = js.native
+    def onInput(buffer: Buffer_[V]): js.Any
     @JSName("onInput")
-    var onInput_Original: BufferHandler[V] = js.native
+    var onInput_Original: BufferHandler[V]
     
-    def push(event: Event[js.Array[V]]): Reply = js.native
+    def push(event: Event[js.Array[V]]): Reply
     @JSName("push")
-    var push_Original: EventSink[js.Array[V]] = js.native
+    var push_Original: EventSink[js.Array[V]]
     
-    def schedule(delay: DelayFunction): js.Any = js.native
+    def schedule(delay: DelayFunction): js.Any
     
-    var scheduled: Double | Null = js.native
+    var scheduled: Double | Null
     
-    var values: js.Array[V] = js.native
+    var values: js.Array[V]
+  }
+  object Buffer_ {
+    
+    @scala.inline
+    def apply[V](
+      flush: () => js.Any,
+      onFlush: /* buffer */ Buffer_[V] => js.Any,
+      onInput: /* buffer */ Buffer_[V] => js.Any,
+      push: /* event */ Event[js.Array[V]] => Reply,
+      schedule: DelayFunction => js.Any,
+      values: js.Array[V]
+    ): Buffer_[V] = {
+      val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush), onFlush = js.Any.fromFunction1(onFlush), onInput = js.Any.fromFunction1(onInput), push = js.Any.fromFunction1(push), schedule = js.Any.fromFunction1(schedule), values = values.asInstanceOf[js.Any], scheduled = null)
+      __obj.asInstanceOf[Buffer_[V]]
+    }
+    
+    @scala.inline
+    implicit class Buffer_MutableBuilder[Self <: Buffer_[?], V] (val x: Self & Buffer_[V]) extends AnyVal {
+      
+      @scala.inline
+      def setDelay(value: /* f */ VoidFunction => js.Any): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      @scala.inline
+      def setEnd(value: End): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      
+      @scala.inline
+      def setFlush(value: () => js.Any): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setOnFlush(value: /* buffer */ Buffer_[V] => js.Any): Self = StObject.set(x, "onFlush", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnInput(value: /* buffer */ Buffer_[V] => js.Any): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setPush(value: /* event */ Event[js.Array[V]] => Reply): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSchedule(value: DelayFunction => js.Any): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setScheduled(value: Double): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScheduledNull: Self = StObject.set(x, "scheduled", null)
+      
+      @scala.inline
+      def setValues(value: js.Array[V]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValuesVarargs(value: V*): Self = StObject.set(x, "values", js.Array(value :_*))
+    }
   }
   
   type DelayFunction = js.Function1[/* f */ VoidFunction, js.Any]

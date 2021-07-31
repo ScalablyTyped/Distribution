@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Query options for Drive holds.
   */
-@js.native
 trait SchemaHeldDriveQuery extends StObject {
   
   /**
     * If true, include files in Team Drives in the hold.
     */
-  var includeTeamDriveFiles: js.UndefOr[Boolean] = js.native
+  var includeTeamDriveFiles: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHeldDriveQuery {
   

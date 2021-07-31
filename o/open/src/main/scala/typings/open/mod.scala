@@ -3,7 +3,6 @@ package typings.open
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,14 +29,15 @@ object mod {
   })();
   ```
   */
-  @JSImport("open", JSImport.Namespace)
-  @js.native
-  def apply(target: String): js.Promise[ChildProcess] = js.native
-  @JSImport("open", JSImport.Namespace)
-  @js.native
-  def apply(target: String, options: Options): js.Promise[ChildProcess] = js.native
+  @scala.inline
+  def apply(target: String): js.Promise[ChildProcess] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ChildProcess]]
+  @scala.inline
+  def apply(target: String, options: Options): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
   
+  @JSImport("open", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -46,27 +46,27 @@ object mod {
     		We do not recommend setting this option. The convention for success is exit code zero.
     		@default false
     		*/
-    val allowNonzeroExitCode: js.UndefOr[Boolean] = js.native
+    val allowNonzeroExitCode: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Specify the app to open the `target` with, or an array with the app and app arguments.
     		The app name is platform dependent. Don't hard code it in reusable modules. For example, Chrome is `google chrome` on macOS, `google-chrome` on Linux and `chrome` on Windows.
     		You may also pass in the app's full path. For example on WSL, this can be `/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe` for the Windows installation of Chrome.
     		*/
-    val app: js.UndefOr[String | js.Array[String]] = js.native
+    val app: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
     		__macOS only__
     		Do not bring the app to the foreground.
     		@default false
     		*/
-    val background: js.UndefOr[Boolean] = js.native
+    val background: js.UndefOr[Boolean] = js.undefined
     
     /**
     		__deprecated__
     		This option will be removed in the next major release.
     		*/
-    val url: js.UndefOr[Boolean] = js.native
+    val url: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Wait for the opened app to exit before fulfilling the promise. If `false` it's fulfilled immediately when opening the app.
@@ -75,7 +75,7 @@ object mod {
     		@default false
     		*/
     @JSName("wait")
-    val wait_FOptions: js.UndefOr[Boolean] = js.native
+    val wait_FOptions: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

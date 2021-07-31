@@ -2,17 +2,17 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetPublicKeyParams extends CommonParams {
+trait GetPublicKeyParams
+  extends StObject
+     with CommonParams {
   
-  var coin: js.UndefOr[String] = js.native
+  var coin: js.UndefOr[String] = js.undefined
   
-  var crossChain: js.UndefOr[Boolean] = js.native
+  var crossChain: js.UndefOr[Boolean] = js.undefined
   
-  var path: String = js.native
+  var path: String
 }
 object GetPublicKeyParams {
   

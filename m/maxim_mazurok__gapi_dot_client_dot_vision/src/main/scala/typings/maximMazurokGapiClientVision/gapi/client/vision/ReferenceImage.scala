@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceImage extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait ReferenceImage extends StObject {
     * polygons will be used. The provided shape is converted into a non-rotated rectangle. Once converted, the small edge of the rectangle must be greater than or equal to 300 pixels. The
     * aspect ratio must be 1:4 or less (i.e. 1:3 is ok; 1:5 is not).
     */
-  var boundingPolys: js.UndefOr[js.Array[BoundingPoly]] = js.native
+  var boundingPolys: js.UndefOr[js.Array[BoundingPoly]] = js.undefined
   
   /**
     * The resource name of the reference image. Format is: `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID/referenceImages/IMAGE_ID`. This field is ignored when creating a
     * reference image.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The Google Cloud Storage URI of the reference image. The URI must start with `gs://`. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object ReferenceImage {
   

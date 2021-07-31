@@ -2,25 +2,23 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var as: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var binWidth: js.UndefOr[Double] = js.native
+    var binWidth: js.UndefOr[Double] = js.undefined
     
-    var bins: js.UndefOr[Double] = js.native
+    var bins: js.UndefOr[Double] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var groupBy: js.UndefOr[js.Array[String]] = js.native
+    var groupBy: js.UndefOr[js.Array[String]] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -21,7 +21,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleauthMod {
@@ -280,18 +279,17 @@ object googleauthMod {
     Unit
   ]
   
-  @js.native
   trait ADCResponse extends StObject {
     
-    var credential: OAuth2Client = js.native
+    var credential: OAuth2Client
     
-    var projectId: String | Null = js.native
+    var projectId: String | Null
   }
   object ADCResponse {
     
     @scala.inline
     def apply(credential: OAuth2Client): ADCResponse = {
-      val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], projectId = null)
       __obj.asInstanceOf[ADCResponse]
     }
     
@@ -311,41 +309,39 @@ object googleauthMod {
   
   type CredentialCallback = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[UserRefreshClient | JWT], Unit]
   
-  @js.native
   trait DeprecatedGetClientOptions extends StObject
   
-  @js.native
   trait GoogleAuthOptions extends StObject {
     
     /**
       * Options object passed to the constructor of the client
       */
-    var clientOptions: js.UndefOr[JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions] = js.native
+    var clientOptions: js.UndefOr[JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions] = js.undefined
     
     /**
       * Object containing client_email and private_key properties
       */
-    var credentials: js.UndefOr[CredentialBody] = js.native
+    var credentials: js.UndefOr[CredentialBody] = js.undefined
     
     /**
       * Path to a .json, .pem, or .p12 key file
       */
-    var keyFile: js.UndefOr[String] = js.native
+    var keyFile: js.UndefOr[String] = js.undefined
     
     /**
       * Path to a .json, .pem, or .p12 key file
       */
-    var keyFilename: js.UndefOr[String] = js.native
+    var keyFilename: js.UndefOr[String] = js.undefined
     
     /**
       * Your project ID.
       */
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
     /**
       * Required scopes for the desired API request
       */
-    var scopes: js.UndefOr[String | js.Array[String]] = js.native
+    var scopes: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object GoogleAuthOptions {
     
@@ -401,12 +397,11 @@ object googleauthMod {
   
   type ProjectIdCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* projectId */ js.UndefOr[String | Null], Unit]
   
-  @js.native
   trait SignBlobResponse extends StObject {
     
-    var keyId: String = js.native
+    var keyId: String
     
-    var signedBlob: String = js.native
+    var signedBlob: String
   }
   object SignBlobResponse {
     

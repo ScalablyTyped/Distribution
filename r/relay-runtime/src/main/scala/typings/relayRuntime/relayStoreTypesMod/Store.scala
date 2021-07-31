@@ -6,7 +6,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -52,7 +51,7 @@ trait Store extends StObject {
     */
   def lookupInvalidationState(dataIDs: js.Array[DataID]): InvalidationState = js.native
   
-  def notify(sourceOperation: js.UndefOr[scala.Nothing], invalidateStore: Boolean): js.Array[RequestDescriptor] = js.native
+  def notify(sourceOperation: Unit, invalidateStore: Boolean): js.Array[RequestDescriptor] = js.native
   def notify(sourceOperation: OperationDescriptor): js.Array[RequestDescriptor] = js.native
   def notify(sourceOperation: OperationDescriptor, invalidateStore: Boolean): js.Array[RequestDescriptor] = js.native
   

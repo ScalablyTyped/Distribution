@@ -1,63 +1,60 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/EDrawMode", JSImport.Namespace)
-@js.native
-object edrawmodeMod extends js.Object {
-  @js.native
-  sealed trait EDrawMode extends js.Object
+object edrawmodeMod {
   
   @js.native
-  object EDrawMode extends js.Object {
-    @js.native
-    sealed trait LINES extends EDrawMode
-    
-    @js.native
-    sealed trait LINE_LOOP extends EDrawMode
-    
-    @js.native
-    sealed trait LINE_STRIP extends EDrawMode
-    
-    @js.native
-    sealed trait POINTS extends EDrawMode
-    
-    @js.native
-    sealed trait TRANGLE_FAN extends EDrawMode
-    
-    @js.native
-    sealed trait TRIANGLES extends EDrawMode
-    
-    @js.native
-    sealed trait TRIANGLE_STRIP extends EDrawMode
+  sealed trait EDrawMode extends StObject
+  @JSImport("wonder.js/dist/es2015/renderer/EDrawMode", "EDrawMode")
+  @js.native
+  object EDrawMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EDrawMode with Double] = js.native
-    /* 1 */ @js.native
-    object LINES extends TopLevel[LINES with Double]
+    def apply(value: Double): js.UndefOr[EDrawMode & Double] = js.native
     
-    /* 2 */ @js.native
-    object LINE_LOOP extends TopLevel[LINE_LOOP with Double]
+    @js.native
+    sealed trait LINES
+      extends StObject
+         with EDrawMode
+    /* 1 */ val LINES: typings.wonderJs.edrawmodeMod.EDrawMode.LINES & Double = js.native
     
-    /* 3 */ @js.native
-    object LINE_STRIP extends TopLevel[LINE_STRIP with Double]
+    @js.native
+    sealed trait LINE_LOOP
+      extends StObject
+         with EDrawMode
+    /* 2 */ val LINE_LOOP: typings.wonderJs.edrawmodeMod.EDrawMode.LINE_LOOP & Double = js.native
     
-    /* 0 */ @js.native
-    object POINTS extends TopLevel[POINTS with Double]
+    @js.native
+    sealed trait LINE_STRIP
+      extends StObject
+         with EDrawMode
+    /* 3 */ val LINE_STRIP: typings.wonderJs.edrawmodeMod.EDrawMode.LINE_STRIP & Double = js.native
     
-    /* 6 */ @js.native
-    object TRANGLE_FAN extends TopLevel[TRANGLE_FAN with Double]
+    @js.native
+    sealed trait POINTS
+      extends StObject
+         with EDrawMode
+    /* 0 */ val POINTS: typings.wonderJs.edrawmodeMod.EDrawMode.POINTS & Double = js.native
     
-    /* 4 */ @js.native
-    object TRIANGLES extends TopLevel[TRIANGLES with Double]
+    @js.native
+    sealed trait TRANGLE_FAN
+      extends StObject
+         with EDrawMode
+    /* 6 */ val TRANGLE_FAN: typings.wonderJs.edrawmodeMod.EDrawMode.TRANGLE_FAN & Double = js.native
     
-    /* 5 */ @js.native
-    object TRIANGLE_STRIP extends TopLevel[TRIANGLE_STRIP with Double]
+    @js.native
+    sealed trait TRIANGLES
+      extends StObject
+         with EDrawMode
+    /* 4 */ val TRIANGLES: typings.wonderJs.edrawmodeMod.EDrawMode.TRIANGLES & Double = js.native
     
+    @js.native
+    sealed trait TRIANGLE_STRIP
+      extends StObject
+         with EDrawMode
+    /* 5 */ val TRIANGLE_STRIP: typings.wonderJs.edrawmodeMod.EDrawMode.TRIANGLE_STRIP & Double = js.native
   }
-  
 }
-

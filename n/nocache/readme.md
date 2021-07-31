@@ -11,8 +11,8 @@ Middleware to destroy caching
 | Full name          | nocache |
 | Keywords           | helmet, security, express, connect, nocache, caching, cache |
 | # releases         | 2 |
-| # dependents       | 45 |
-| # downloads        | 40412200 |
+| # dependents       | 57 |
+| # downloads        | 46432457 |
 | # stars            | 2 |
 
 ## Links

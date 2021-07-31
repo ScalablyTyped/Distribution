@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartStreamProcessorRequest extends StObject {
   
   /**
     * The name of the stream processor to start processing.
     */
-  var Name: StreamProcessorName = js.native
+  var Name: StreamProcessorName
 }
 object StartStreamProcessorRequest {
   

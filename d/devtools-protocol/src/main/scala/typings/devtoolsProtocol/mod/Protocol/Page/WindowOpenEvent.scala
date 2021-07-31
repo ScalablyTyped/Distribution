@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowOpenEvent extends StObject {
   
   /**
     * The URL for the new window.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Whether or not it was triggered by user gesture.
     */
-  var userGesture: Boolean = js.native
+  var userGesture: Boolean
   
   /**
     * An array of enabled window features.
     */
-  var windowFeatures: js.Array[String] = js.native
+  var windowFeatures: js.Array[String]
   
   /**
     * Window name.
     */
-  var windowName: String = js.native
+  var windowName: String
 }
 object WindowOpenEvent {
   

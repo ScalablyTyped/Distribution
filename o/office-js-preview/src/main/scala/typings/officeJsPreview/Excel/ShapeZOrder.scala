@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,14 +17,22 @@ sealed trait ShapeZOrder extends StObject
 object ShapeZOrder extends StObject {
   
   @js.native
-  sealed trait bringForward extends ShapeZOrder
+  sealed trait bringForward
+    extends StObject
+       with ShapeZOrder
   
   @js.native
-  sealed trait bringToFront extends ShapeZOrder
+  sealed trait bringToFront
+    extends StObject
+       with ShapeZOrder
   
   @js.native
-  sealed trait sendBackward extends ShapeZOrder
+  sealed trait sendBackward
+    extends StObject
+       with ShapeZOrder
   
   @js.native
-  sealed trait sendToBack extends ShapeZOrder
+  sealed trait sendToBack
+    extends StObject
+       with ShapeZOrder
 }

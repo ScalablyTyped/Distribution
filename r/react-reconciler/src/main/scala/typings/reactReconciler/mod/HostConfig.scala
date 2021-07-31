@@ -3,7 +3,6 @@ package typings.reactReconciler.mod
 import typings.reactReconciler.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -263,8 +262,8 @@ trait HostConfig[Type, Props, Container, Instance, TextInstance, HydratableInsta
   
   var resetTextContent: js.UndefOr[js.Function1[/* instance */ Instance, Unit]] = js.native
   
-  def scheduleDeferredCallback(callback: js.Function0[_]): js.Any = js.native
-  def scheduleDeferredCallback(callback: js.Function0[_], options: Timeout): js.Any = js.native
+  def scheduleDeferredCallback(callback: js.Function0[js.Any]): js.Any = js.native
+  def scheduleDeferredCallback(callback: js.Function0[js.Any], options: Timeout): js.Any = js.native
   
   def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): TimeoutHandle | NoTimeout = js.native
   

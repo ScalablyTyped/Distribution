@@ -3,16 +3,14 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extensions extends StObject {
   
-  var extensions: js.UndefOr[js.Array[Asterisk | String | Includedirectories]] = js.native
+  var extensions: js.UndefOr[js.Array[Asterisk | String | Includedirectories]] = js.undefined
   
   /** File types to handle */
-  var types: js.UndefOr[js.Array[Asterisk | String | Includedirectories]] = js.native
+  var types: js.UndefOr[js.Array[Asterisk | String | Includedirectories]] = js.undefined
 }
 object Extensions {
   

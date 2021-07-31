@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterResult extends StObject {
   
   /**
     * The automatically generated ID for a cluster.
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.snowballMod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.snowballMod.ClusterId] = js.undefined
 }
 object CreateClusterResult {
   

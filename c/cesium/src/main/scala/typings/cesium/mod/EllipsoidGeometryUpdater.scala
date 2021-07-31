@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EllipsoidGeometryUpdater")
@@ -10,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class EllipsoidGeometryUpdater protected () extends GeometryUpdater {
   def this(entity: Entity, scene: Scene) = this()
   
-  def createFillGeometryInstance(time: JulianDate, skipModelMatrix: js.UndefOr[scala.Nothing], modelMatrixResult: Matrix4): GeometryInstance = js.native
   def createFillGeometryInstance(time: JulianDate, skipModelMatrix: Boolean): GeometryInstance = js.native
   def createFillGeometryInstance(time: JulianDate, skipModelMatrix: Boolean, modelMatrixResult: Matrix4): GeometryInstance = js.native
+  def createFillGeometryInstance(time: JulianDate, skipModelMatrix: Unit, modelMatrixResult: Matrix4): GeometryInstance = js.native
   
-  def createOutlineGeometryInstance(time: JulianDate, skipModelMatrix: js.UndefOr[scala.Nothing], modelMatrixResult: Matrix4): GeometryInstance = js.native
   def createOutlineGeometryInstance(time: JulianDate, skipModelMatrix: Boolean): GeometryInstance = js.native
   def createOutlineGeometryInstance(time: JulianDate, skipModelMatrix: Boolean, modelMatrixResult: Matrix4): GeometryInstance = js.native
+  def createOutlineGeometryInstance(time: JulianDate, skipModelMatrix: Unit, modelMatrixResult: Matrix4): GeometryInstance = js.native
 }

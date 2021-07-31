@@ -4,37 +4,35 @@ import typings.googleGax.iamServiceMod.google.protobuf.UninterpretedOption.IName
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UninterpretedOption. */
-@js.native
 trait IUninterpretedOption extends StObject {
   
   /** UninterpretedOption aggregateValue */
-  var aggregateValue: js.UndefOr[String | Null] = js.native
+  var aggregateValue: js.UndefOr[String | Null] = js.undefined
   
   /** UninterpretedOption doubleValue */
-  var doubleValue: js.UndefOr[Double | Null] = js.native
+  var doubleValue: js.UndefOr[Double | Null] = js.undefined
   
   /** UninterpretedOption identifierValue */
-  var identifierValue: js.UndefOr[String | Null] = js.native
+  var identifierValue: js.UndefOr[String | Null] = js.undefined
   
   /** UninterpretedOption name */
-  var name: js.UndefOr[js.Array[INamePart] | Null] = js.native
+  var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
   
   /** UninterpretedOption negativeIntValue */
   var negativeIntValue: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** UninterpretedOption positiveIntValue */
   var positiveIntValue: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** UninterpretedOption stringValue */
-  var stringValue: js.UndefOr[Uint8Array | Null] = js.native
+  var stringValue: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IUninterpretedOption {
   

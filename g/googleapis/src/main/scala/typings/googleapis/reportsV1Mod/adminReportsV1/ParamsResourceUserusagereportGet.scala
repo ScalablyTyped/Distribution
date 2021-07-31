@@ -6,60 +6,60 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUserusagereportGet extends StandardParameters {
+trait ParamsResourceUserusagereportGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Represents the customer for which the data is to be fetched.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the date in yyyy-mm-dd format for which the data is to be
     * fetched.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the set of filters including parameter operator value.
     */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return. Maximum allowed is 1000
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * the organizational unit's ID to filter usage parameters from users
     * belonging to a specific OU or one of its sub-OU(s).
     */
-  var orgUnitID: js.UndefOr[String] = js.native
+  var orgUnitID: js.UndefOr[String] = js.undefined
   
   /**
     * Token to specify next page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the application name, parameter name pairs to fetch in csv as
     * app_name1:param_name1, app_name2:param_name2.
     */
-  var parameters: js.UndefOr[String] = js.native
+  var parameters: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the profile id or the user email for which the data should be
     * filtered.
     */
-  var userKey: js.UndefOr[String] = js.native
+  var userKey: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUserusagereportGet {
   

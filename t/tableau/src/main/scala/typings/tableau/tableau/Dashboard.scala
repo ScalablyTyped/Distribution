@@ -2,28 +2,28 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dashboard extends Sheet {
+trait Dashboard
+  extends StObject
+     with Sheet {
   
   /** Gets the collection of objects. */
-  def getObjects(): js.Array[DashboardObject] = js.native
+  def getObjects(): js.Array[DashboardObject]
   
   /**
     * Returns the StoryPoint object to which this Dashboard belongs (if it’s on a story sheet).
     * Otherwise, it returns null.
     * If the Dashboard instance does not come from a call to StoryPoint.getContainedSheet(), it also returns null.
     */
-  def getParentStoryPoint(): StoryPoint = js.native
+  def getParentStoryPoint(): StoryPoint
   
   /**
     * Gets the collection of worksheets contained in the dashboard.
     * Note that this is a helper method and is equivalent to looping through getObjects() and collecting all of
     * the DashboardObject.Worksheet pointers when DashboardObject.getType() === tableau.DashboardObjectType.WORKSHEET.
     */
-  def getWorksheets(): js.Array[Worksheet] = js.native
+  def getWorksheets(): js.Array[Worksheet]
 }
 object Dashboard {
   

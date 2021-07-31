@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,21 +48,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.lang.XMultiComponentFactory
   * @since OOo 2.0.3
   */
-@js.native
-trait ObjectInspector extends XObjectInspector {
+trait ObjectInspector
+  extends StObject
+     with XObjectInspector {
   
   /**
     * creates a default instance of the {@link ObjectInspector}
     * @since OOo 2.2
     */
-  def createDefault(): Unit = js.native
+  def createDefault(): Unit
   
   /**
     * creates an instance of the {@link ObjectInspector} , using a given {@link ObjectInspectorModel}
     * @since OOo 2.2
     * @throws com::sun::star::lang::IllegalArgumentException if Model is `NULL` .
     */
-  def createWithModel(Model: XObjectInspectorModel): Unit = js.native
+  def createWithModel(Model: XObjectInspectorModel): Unit
 }
 object ObjectInspector {
   

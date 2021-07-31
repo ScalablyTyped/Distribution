@@ -2,10 +2,8 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardShorthandPropertiesFallback[TLength] extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/all
     */
-  var all: js.UndefOr[Globals | js.Array[Globals]] = js.native
+  var all: js.UndefOr[Globals | js.Array[Globals]] = js.undefined
   
   /**
     * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
@@ -35,7 +33,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation
     */
-  var animation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.native
+  var animation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
   
   /**
     * The **`background`** shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method.
@@ -48,7 +46,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/background
     */
-  var background: js.UndefOr[BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]]] = js.native
+  var background: js.UndefOr[BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]]] = js.undefined
   
   /**
     * The **`border`** CSS property sets an element's border. It's a shorthand for `border-width`, `border-style`, and `border-color`.
@@ -61,7 +59,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border
     */
-  var border: js.UndefOr[BorderProperty[TLength] | js.Array[BorderProperty[TLength]]] = js.native
+  var border: js.UndefOr[BorderProperty[TLength] | js.Array[BorderProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-block`** CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet.
@@ -74,7 +72,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block
     */
-  var borderBlock: js.UndefOr[BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]]] = js.native
+  var borderBlock: js.UndefOr[BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
@@ -87,7 +85,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end
     */
-  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]]] = js.native
+  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-block-start`** CSS property is a shorthand property for setting the individual logical block-start border property values in a single place in the style sheet.
@@ -100,7 +98,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start
     */
-  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]]] = js.native
+  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-bottom`** CSS property is a shorthand that sets the values of `border-bottom-width`, `border-bottom-style` and `border-bottom-color`. These properties set an element's bottom border.
@@ -113,7 +111,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-bottom
     */
-  var borderBottom: js.UndefOr[BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]]] = js.native
+  var borderBottom: js.UndefOr[BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-color`** shorthand CSS property sets the color of all sides of an element's border.
@@ -126,7 +124,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-color
     */
-  var borderColor: js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]] = js.native
+  var borderColor: js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]] = js.undefined
   
   /**
     * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
@@ -140,7 +138,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-image
     */
-  var borderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.native
+  var borderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
   
   /**
     * The **`border-inline`** CSS property is a shorthand property for setting the individual logical inline border property values in a single place in the style sheet.
@@ -153,7 +151,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline
     */
-  var borderInline: js.UndefOr[BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]]] = js.native
+  var borderInline: js.UndefOr[BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
@@ -166,7 +164,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end
     */
-  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]]] = js.native
+  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-inline-start`** CSS property is a shorthand property for setting the individual logical inline-start border property values in a single place in the style sheet.
@@ -181,7 +179,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     */
   var borderInlineStart: js.UndefOr[
     BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`border-left`** CSS property is a shorthand that sets the values of `border-left-width`, `border-left-style` and `border-left-color`. These properties set an element's left border.
@@ -194,7 +192,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-left
     */
-  var borderLeft: js.UndefOr[BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]]] = js.native
+  var borderLeft: js.UndefOr[BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
@@ -208,7 +206,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-radius
     */
-  var borderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.native
+  var borderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-right`** CSS property is a shorthand that sets the values of `border-right-width`, `border-right-style` and `border-right-color`. These properties set an element's right border.
@@ -221,7 +219,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-right
     */
-  var borderRight: js.UndefOr[BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]]] = js.native
+  var borderRight: js.UndefOr[BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-style`** CSS property is a shorthand property that sets the line style for all four sides of an element's border.
@@ -234,7 +232,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-style
     */
-  var borderStyle: js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]] = js.native
+  var borderStyle: js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]] = js.undefined
   
   /**
     * The **`border-top`** CSS property is a shorthand that sets the values of `border-top-width`, `border-top-style` and `border-top-color`. These properties set an element's top border.
@@ -247,7 +245,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-top
     */
-  var borderTop: js.UndefOr[BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]]] = js.native
+  var borderTop: js.UndefOr[BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]]] = js.undefined
   
   /**
     * The **`border-width`** shorthand CSS property sets the widths of all four sides of an element's border.
@@ -260,7 +258,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-width
     */
-  var borderWidth: js.UndefOr[BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]]] = js.native
+  var borderWidth: js.UndefOr[BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]]] = js.undefined
   
   /**
     * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
@@ -274,7 +272,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule
     */
-  var columnRule: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.native
+  var columnRule: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
   
   /**
     * The **`columns`** CSS property sets the column width and column count of an element.
@@ -288,7 +286,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/columns
     */
-  var columns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.native
+  var columns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
   
   /**
     * The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
@@ -302,7 +300,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex
     */
-  var flex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.native
+  var flex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
   
   /**
     * The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties.
@@ -316,7 +314,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-flow
     */
-  var flexFlow: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.native
+  var flexFlow: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
   
   /**
     * The **`font`** CSS property is a shorthand for `font-style`, `font-variant`, `font-weight`, `font-size`, `line-height`, and `font-family`. Alternatively, it sets an element's font to a system font.
@@ -329,7 +327,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font
     */
-  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.native
+  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.undefined
   
   /**
     * The **`gap`** CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
@@ -365,7 +363,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/gap
     */
-  var gap: js.UndefOr[GapProperty[TLength] | js.Array[GapProperty[TLength]]] = js.native
+  var gap: js.UndefOr[GapProperty[TLength] | js.Array[GapProperty[TLength]]] = js.undefined
   
   /**
     * The **`grid`** CSS property is a shorthand property that sets all of the explicit grid properties (`grid-template-rows`, `grid-template-columns`, and `grid-template-areas`), and all the implicit grid properties (`grid-auto-rows`, `grid-auto-columns`, and `grid-auto-flow`), in a single declaration.
@@ -378,7 +376,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid
     */
-  var grid: js.UndefOr[GridProperty | js.Array[GridProperty]] = js.native
+  var grid: js.UndefOr[GridProperty | js.Array[GridProperty]] = js.undefined
   
   /**
     * The **`grid-area`** CSS property is a shorthand property for `grid-row-start`, `grid-column-start`, `grid-row-end` and `grid-column-end`, specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.
@@ -391,7 +389,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-area
     */
-  var gridArea: js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]] = js.native
+  var gridArea: js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]] = js.undefined
   
   /**
     * The **`grid-column`** CSS property is a shorthand property for `grid-column-start` and `grid-column-end` specifying a grid item's size and location within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
@@ -404,7 +402,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-column
     */
-  var gridColumn: js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]] = js.native
+  var gridColumn: js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]] = js.undefined
   
   /**
     * The **`grid-row`** CSS property is a shorthand property for `grid-row-start` and `grid-row-end` specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
@@ -417,7 +415,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-row
     */
-  var gridRow: js.UndefOr[GridRowProperty | js.Array[GridRowProperty]] = js.native
+  var gridRow: js.UndefOr[GridRowProperty | js.Array[GridRowProperty]] = js.undefined
   
   /**
     * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
@@ -430,14 +428,14 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-template
     */
-  var gridTemplate: js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]] = js.native
+  var gridTemplate: js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]] = js.undefined
   
   /**
     * **Syntax**: `none | <integer>`
     *
     * **Initial value**: `none`
     */
-  var lineClamp: js.UndefOr[LineClampProperty | js.Array[LineClampProperty]] = js.native
+  var lineClamp: js.UndefOr[LineClampProperty | js.Array[LineClampProperty]] = js.undefined
   
   /**
     * The **`list-style`** CSS property is a shorthand to set list style properties `list-style-type`, `list-style-image`, and `list-style-position`.
@@ -450,7 +448,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/list-style
     */
-  var listStyle: js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]] = js.native
+  var listStyle: js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]] = js.undefined
   
   /**
     * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
@@ -463,7 +461,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin
     */
-  var margin: js.UndefOr[MarginProperty[TLength] | js.Array[MarginProperty[TLength]]] = js.native
+  var margin: js.UndefOr[MarginProperty[TLength] | js.Array[MarginProperty[TLength]]] = js.undefined
   
   /**
     * The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points.
@@ -476,14 +474,14 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask
     */
-  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.native
+  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
   
   /**
     * The **`mask-border`** CSS property lets you create a mask along the edge of an element's border.
     *
     * **Syntax**: `<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>`
     */
-  var maskBorder: js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]] = js.native
+  var maskBorder: js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]] = js.undefined
   
   /**
     * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
@@ -497,7 +495,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
     */
-  var motion: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.native
+  var motion: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
   
   /**
     * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
@@ -511,7 +509,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
     */
-  var offset: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.native
+  var offset: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
   
   /**
     * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
@@ -524,7 +522,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/outline
     */
-  var outline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.native
+  var outline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.undefined
   
   /**
     * The **`overflow`** CSS property sets what to do when an element's content is too big to fit in its block formatting context. It is a shorthand for `overflow-x` and `overflow-y`.
@@ -539,7 +537,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow
     */
-  var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.native
+  var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
   
   /**
     * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
@@ -552,7 +550,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding
     */
-  var padding: js.UndefOr[PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]]] = js.native
+  var padding: js.UndefOr[PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]]] = js.undefined
   
   /**
     * The CSS **`place-items`** shorthand property sets the `align-items` and `justify-items` properties, respectively. If the second value is not set, the first value is also used for it.
@@ -579,7 +577,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/place-items
     */
-  var placeItems: js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]] = js.native
+  var placeItems: js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]] = js.undefined
   
   /**
     * The **`place-self`** CSS property is a shorthand property sets both the `align-self` and `justify-self` properties. The first value is the `align-self` property value, the second the `justify-self` one. If the second value is not present, the first value is also used for it.
@@ -606,7 +604,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/place-self
     */
-  var placeSelf: js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]] = js.native
+  var placeSelf: js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]] = js.undefined
   
   /**
     * The **`text-decoration`** CSS property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, and `text-decoration-style`.
@@ -619,7 +617,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration
     */
-  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.native
+  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
   
   /**
     * The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`.
@@ -632,7 +630,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis
     */
-  var textEmphasis: js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]] = js.native
+  var textEmphasis: js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]] = js.undefined
   
   /**
     * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
@@ -646,7 +644,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition
     */
-  var transition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.native
+  var transition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
 }
 object StandardShorthandPropertiesFallback {
   
@@ -657,7 +655,7 @@ object StandardShorthandPropertiesFallback {
   }
   
   @scala.inline
-  implicit class StandardShorthandPropertiesFallbackMutableBuilder[Self <: StandardShorthandPropertiesFallback[_], TLength] (val x: Self with StandardShorthandPropertiesFallback[TLength]) extends AnyVal {
+  implicit class StandardShorthandPropertiesFallbackMutableBuilder[Self <: StandardShorthandPropertiesFallback[?], TLength] (val x: Self & StandardShorthandPropertiesFallback[TLength]) extends AnyVal {
     
     @scala.inline
     def setAll(value: Globals | js.Array[Globals]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])

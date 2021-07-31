@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveRecipient extends StObject {
   
   // The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
-  var alias: js.UndefOr[NullableOption[String]] = js.native
+  var alias: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The email address for the recipient, if the recipient has an associated email address.
-  var email: js.UndefOr[NullableOption[String]] = js.native
+  var email: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the recipient in the directory.
-  var objectId: js.UndefOr[NullableOption[String]] = js.native
+  var objectId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DriveRecipient {
   

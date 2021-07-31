@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Matrix")
 @js.native
 class Matrix protected ()
-  extends typings.pixiJs.PIXI.Matrix {
+  extends StObject
+     with typings.pixiJs.PIXI.Matrix {
   def this(
     a: js.UndefOr[Double],
     b: js.UndefOr[Double],

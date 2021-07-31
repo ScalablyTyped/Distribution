@@ -2,17 +2,15 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisualQualityParam extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var mode: String = js.native
+  var mode: String
   
-  var reason: String = js.native
+  var reason: String
 }
 object VisualQualityParam {
   

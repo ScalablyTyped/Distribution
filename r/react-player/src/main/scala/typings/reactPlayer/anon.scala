@@ -2,21 +2,19 @@ package typings.reactPlayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Loaded extends StObject {
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var loadedSeconds: Double = js.native
+    var loadedSeconds: Double
     
-    var played: Double = js.native
+    var played: Double
     
-    var playedSeconds: Double = js.native
+    var playedSeconds: Double
   }
   object Loaded {
     

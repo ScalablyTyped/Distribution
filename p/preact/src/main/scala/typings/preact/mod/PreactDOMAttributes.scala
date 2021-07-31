@@ -3,15 +3,13 @@ package typings.preact.mod
 import typings.preact.anon.Html
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreactDOMAttributes extends StObject {
   
-  var children: js.UndefOr[ComponentChildren] = js.native
+  var children: js.UndefOr[ComponentChildren] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
 }
 object PreactDOMAttributes {
   

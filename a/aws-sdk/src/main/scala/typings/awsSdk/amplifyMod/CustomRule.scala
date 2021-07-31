@@ -2,31 +2,29 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomRule extends StObject {
   
   /**
     *  The condition for a URL rewrite or redirect rule, such as a country code. 
     */
-  var condition: js.UndefOr[Condition] = js.native
+  var condition: js.UndefOr[Condition] = js.undefined
   
   /**
     *  The source pattern for a URL rewrite or redirect rule. 
     */
-  var source: Source = js.native
+  var source: Source
   
   /**
     *  The status code for a URL rewrite or redirect rule.   200  Represents a 200 rewrite rule.  301  Represents a 301 (moved pemanently) redirect rule. This and all future requests should be directed to the target URL.   302  Represents a 302 temporary redirect rule.  404  Represents a 404 redirect rule.  404-200  Represents a 404 rewrite rule.  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     *  The target pattern for a URL rewrite or redirect rule. 
     */
-  var target: Target = js.native
+  var target: Target
 }
 object CustomRule {
   

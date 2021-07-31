@@ -2,41 +2,39 @@ package typings.wordpressApiFetch.mod.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var date_format: String = js.native
+  var date_format: String
   
-  var default_category: Double = js.native
+  var default_category: Double
   
-  var default_comment_status: OpenOrClosed = js.native
+  var default_comment_status: OpenOrClosed
   
-  var default_ping_status: OpenOrClosed = js.native
+  var default_ping_status: OpenOrClosed
   
-  var default_post_format: String = js.native
+  var default_post_format: String
   
-  var description: String = js.native
+  var description: String
   
-  var email: String = js.native
+  var email: String
   
-  var language: String = js.native
+  var language: String
   
-  var posts_per_page: Double = js.native
+  var posts_per_page: Double
   
-  var start_of_week: Double = js.native
+  var start_of_week: Double
   
-  var time_format: String = js.native
+  var time_format: String
   
-  var timezone: String = js.native
+  var timezone: String
   
-  var title: String = js.native
+  var title: String
   
-  var url: String = js.native
+  var url: String
   
-  var use_smilies: Boolean = js.native
+  var use_smilies: Boolean
 }
 object Settings {
   

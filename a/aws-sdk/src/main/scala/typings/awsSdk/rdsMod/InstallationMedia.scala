@@ -2,51 +2,49 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallationMedia extends StObject {
   
   /**
     * The custom Availability Zone (AZ) that contains the installation media.
     */
-  var CustomAvailabilityZoneId: js.UndefOr[String] = js.native
+  var CustomAvailabilityZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The DB engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the installation medium for the DB engine.
     */
-  var EngineInstallationMediaPath: js.UndefOr[String] = js.native
+  var EngineInstallationMediaPath: js.UndefOr[String] = js.undefined
   
   /**
     * The engine version of the DB engine.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * If an installation media failure occurred, the cause of the failure.
     */
-  var FailureCause: js.UndefOr[InstallationMediaFailureCause] = js.native
+  var FailureCause: js.UndefOr[InstallationMediaFailureCause] = js.undefined
   
   /**
     * The installation medium ID.
     */
-  var InstallationMediaId: js.UndefOr[String] = js.native
+  var InstallationMediaId: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the installation medium for the operating system associated with the DB engine.
     */
-  var OSInstallationMediaPath: js.UndefOr[String] = js.native
+  var OSInstallationMediaPath: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the installation medium.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object InstallationMedia {
   

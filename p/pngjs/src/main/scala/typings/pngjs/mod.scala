@@ -18,7 +18,6 @@ import typings.pngjs.pngjsStrings.parsed
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -72,12 +71,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("pngjs", "PNG.adjustGamma")
-    @js.native
-    def adjustGamma(src: PNG): Unit = js.native
+    @scala.inline
+    def adjustGamma(src: PNG): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustGamma")(src.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("pngjs", "PNG.bitblt")
-    @js.native
+    @scala.inline
     def bitblt(
       src: PNG,
       dst: PNG,
@@ -87,7 +84,7 @@ object mod {
       height: js.UndefOr[Double],
       deltaX: js.UndefOr[Double],
       deltaY: js.UndefOr[Double]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bitblt")(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], srcX.asInstanceOf[js.Any], srcY.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("pngjs", "PNG.sync")
     @js.native
@@ -96,14 +93,13 @@ object mod {
     def sync_=(x: Read): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BaseOptions extends StObject {
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object BaseOptions {
     
@@ -172,26 +168,25 @@ object mod {
     def `6`: typings.pngjs.pngjsNumbers.`6` = 6.asInstanceOf[typings.pngjs.pngjsNumbers.`6`]
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var alpha: Boolean = js.native
+    var alpha: Boolean
     
-    var bpp: `1` | `2` | `3` | `4` = js.native
+    var bpp: `1` | `2` | `3` | `4`
     
-    var color: Boolean = js.native
+    var color: Boolean
     
-    var colorType: ColorType = js.native
+    var colorType: ColorType
     
-    var depth: `1` | `2` | `4` | `8` | `16` = js.native
+    var depth: `1` | `2` | `4` | `8` | `16`
     
-    var height: Double = js.native
+    var height: Double
     
-    var interlace: Boolean = js.native
+    var interlace: Boolean
     
-    var palette: Boolean = js.native
+    var palette: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object Metadata {
     
@@ -243,32 +238,60 @@ object mod {
     }
   }
   
-  type PNGOptions = BaseOptions with ParserOptions with PackerOptions
+  trait PNGOptions
+    extends StObject
+       with BaseOptions
+       with ParserOptions
+       with PackerOptions
+  object PNGOptions {
+    
+    @scala.inline
+    def apply(): PNGOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PNGOptions]
+    }
+  }
   
-  type PNGWithMetadata = PNG with Metadata
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.pngjs.mod.Metadata because var conflicts: height, width. Inlined alpha, bpp, color, colorType, depth, interlace, palette */ @js.native
+  trait PNGWithMetadata extends PNG {
+    
+    var alpha: Boolean = js.native
+    
+    var bpp: `1` | `2` | `3` | `4` = js.native
+    
+    var color: Boolean = js.native
+    
+    var colorType: ColorType = js.native
+    
+    var depth: `1` | `2` | `4` | `8` | `16` = js.native
+    
+    var interlace: Boolean = js.native
+    
+    var palette: Boolean = js.native
+  }
   
-  @js.native
   trait PackerOptions extends StObject {
     
-    var bgColor: js.UndefOr[Blue] = js.native
+    var bgColor: js.UndefOr[Blue] = js.undefined
     
-    var bitDepth: js.UndefOr[BitDepth] = js.native
+    var bitDepth: js.UndefOr[BitDepth] = js.undefined
     
-    var colorType: js.UndefOr[ColorType] = js.native
+    var colorType: js.UndefOr[ColorType] = js.undefined
     
-    var deflateChunkSize: js.UndefOr[Double] = js.native
+    var deflateChunkSize: js.UndefOr[Double] = js.undefined
     
-    var deflateFactory: js.UndefOr[FnCall] = js.native
+    var deflateFactory: js.UndefOr[FnCall] = js.undefined
     
-    var deflateLevel: js.UndefOr[Double] = js.native
+    var deflateLevel: js.UndefOr[Double] = js.undefined
     
-    var deflateStrategy: js.UndefOr[Double] = js.native
+    var deflateStrategy: js.UndefOr[Double] = js.undefined
     
-    var filterType: js.UndefOr[Double | js.Array[Double]] = js.native
+    var filterType: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var inputColorType: js.UndefOr[ColorType] = js.native
+    var inputColorType: js.UndefOr[ColorType] = js.undefined
     
-    var inputHasAlpha: js.UndefOr[Boolean] = js.native
+    var inputHasAlpha: js.UndefOr[Boolean] = js.undefined
   }
   object PackerOptions {
     
@@ -346,10 +369,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var checkCRC: js.UndefOr[Boolean] = js.native
+    var checkCRC: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     

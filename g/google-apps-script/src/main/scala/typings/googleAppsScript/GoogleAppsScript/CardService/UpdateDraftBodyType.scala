@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,5 +14,7 @@ sealed trait UpdateDraftBodyType extends StObject
 object UpdateDraftBodyType extends StObject {
   
   @js.native
-  sealed trait IN_PLACE_INSERT extends UpdateDraftBodyType
+  sealed trait IN_PLACE_INSERT
+    extends StObject
+       with UpdateDraftBodyType
 }

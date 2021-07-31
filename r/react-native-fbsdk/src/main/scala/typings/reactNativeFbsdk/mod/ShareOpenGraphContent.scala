@@ -3,42 +3,42 @@ package typings.reactNativeFbsdk.mod
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.`open-graph`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareOpenGraphContent extends ShareContent {
+trait ShareOpenGraphContent
+  extends StObject
+     with ShareContent {
   
   /**
     * Open Graph Action to be shared.
     */
-  var action: ShareOpenGraphAction = js.native
+  var action: ShareOpenGraphAction
   
   /**
     * Common parameters for share content;
     */
-  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.native
+  var commonParameters: js.UndefOr[ShareContentCommonParameters] = js.undefined
   
   /**
     * The type of content to be shared is open graph content.
     */
-  var contentType: `open-graph` = js.native
+  var contentType: `open-graph`
   
   /**
     * URL for the content being shared.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Property name that points to the primary Open Graph Object in the action.
     */
-  var previewPropertyName: String = js.native
+  var previewPropertyName: String
 }
 object ShareOpenGraphContent {
   
   @scala.inline
-  def apply(action: ShareOpenGraphAction, contentType: `open-graph`, previewPropertyName: String): ShareOpenGraphContent = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], previewPropertyName = previewPropertyName.asInstanceOf[js.Any])
+  def apply(action: ShareOpenGraphAction, previewPropertyName: String): ShareOpenGraphContent = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], contentType = "open-graph", previewPropertyName = previewPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOpenGraphContent]
   }
   

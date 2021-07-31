@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomError extends StObject {
   
   /** The list of custom error rules that apply to individual API messages. **NOTE:** All service configuration rules follow "last one wins" order. */
-  var rules: js.UndefOr[js.Array[CustomErrorRule]] = js.native
+  var rules: js.UndefOr[js.Array[CustomErrorRule]] = js.undefined
   
   /** The list of custom error detail types, e.g. 'google.foo.v1.CustomError'. */
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CustomError {
   

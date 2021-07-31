@@ -2,16 +2,14 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DataStudioApp allows scripts to interact with developer-oriented features for Data Studio.
   */
-@js.native
 trait DataStudioApp extends StObject {
   
-  def createCommunityConnector(): CommunityConnector = js.native
+  def createCommunityConnector(): CommunityConnector
 }
 object DataStudioApp {
   

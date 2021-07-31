@@ -6,23 +6,22 @@ import typings.wordpressBlocks.mod.BlockIconNormalized
 import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@wordpress/blocks/api/utils", "isUnmodifiedDefaultBlock")
+  @JSImport("@wordpress/blocks/api/utils", JSImport.Namespace)
   @js.native
-  def isUnmodifiedDefaultBlock(block: BlockInstance[StringDictionary[_]]): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/blocks/api/utils", "isValidIcon")
-  @js.native
-  def isValidIcon(icon: js.Any): Boolean = js.native
+  @scala.inline
+  def isUnmodifiedDefaultBlock(block: BlockInstance[StringDictionary[js.Any]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnmodifiedDefaultBlock")(block.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/blocks/api/utils", "normalizeIconObject")
-  @js.native
-  def normalizeIconObject(): BlockIconNormalized = js.native
-  @JSImport("@wordpress/blocks/api/utils", "normalizeIconObject")
-  @js.native
-  def normalizeIconObject(icon: BlockIcon): BlockIconNormalized = js.native
+  @scala.inline
+  def isValidIcon(icon: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidIcon")(icon.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def normalizeIconObject(): BlockIconNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeIconObject")().asInstanceOf[BlockIconNormalized]
+  @scala.inline
+  def normalizeIconObject(icon: BlockIcon): BlockIconNormalized = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeIconObject")(icon.asInstanceOf[js.Any]).asInstanceOf[BlockIconNormalized]
 }

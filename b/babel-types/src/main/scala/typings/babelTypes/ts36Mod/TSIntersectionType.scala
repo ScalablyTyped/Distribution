@@ -2,18 +2,17 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSIntersectionType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
   @JSName("type")
-  var type_TSIntersectionType: typings.babelTypes.babelTypesStrings.TSIntersectionType = js.native
+  var type_TSIntersectionType: typings.babelTypes.babelTypesStrings.TSIntersectionType
   
-  var types: js.Array[TSType] = js.native
+  var types: js.Array[TSType]
 }
 object TSIntersectionType {
   

@@ -2,56 +2,54 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Binding extends StObject {
   
   /**
     * Connects the binding to a scope.
     */
-  def bind(source: Scope): Unit = js.native
+  def bind(source: Scope): Unit
   
   /**
     * Calls the source method with the specified args object. This method is present in event bindings like trigger/delegate.
     */
-  var callSource: js.UndefOr[js.Function1[/* event */ js.Any, _]] = js.native
+  var callSource: js.UndefOr[js.Function1[/* event */ js.Any, js.Any]] = js.undefined
   
   /**
     * Whether the binding is data-bound.
     */
-  var isBound: Boolean = js.native
+  var isBound: Boolean
   
   /**
     * The directionality of the binding.
     */
-  var mode: js.UndefOr[bindingMode] = js.native
+  var mode: js.UndefOr[bindingMode] = js.undefined
   
   /**
     * The binding's source.
     */
-  var source: Scope = js.native
+  var source: Scope
   
   /**
     * The expression to access/assign/connect the binding source property.
     */
-  var sourceExpression: js.UndefOr[Expression] = js.native
+  var sourceExpression: js.UndefOr[Expression] = js.undefined
   
   /**
     * Disconnects the binding from a scope.
     */
-  def unbind(): Unit = js.native
+  def unbind(): Unit
   
   /**
     * Assigns a value to the source.
     */
-  var updateSource: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+  var updateSource: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
   
   /**
     * Assigns a value to the target.
     */
-  var updateTarget: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+  var updateTarget: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
 }
 object Binding {
   
@@ -68,7 +66,7 @@ object Binding {
     def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallSource(value: /* event */ js.Any => _): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
+    def setCallSource(value: /* event */ js.Any => js.Any): Self = StObject.set(x, "callSource", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCallSourceUndefined: Self = StObject.set(x, "callSource", js.undefined)

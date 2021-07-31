@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a ConnectionRequested event on a WiFiDirectConnectionListener . */
-@js.native
 trait WiFiDirectConnectionRequestedEventArgs extends StObject {
   
   /**
     * Retrieves the WiFiDirectConnectionRequest received on a ConnectionRequested event by a WiFiDirectConnectionListener .
     * @return The Wi-FI Direct connection request.
     */
-  def getConnectionRequest(): WiFiDirectConnectionRequest = js.native
+  def getConnectionRequest(): WiFiDirectConnectionRequest
 }
 object WiFiDirectConnectionRequestedEventArgs {
   

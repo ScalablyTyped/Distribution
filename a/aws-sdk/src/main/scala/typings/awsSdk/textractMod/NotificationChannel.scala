@@ -2,21 +2,19 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationChannel extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that gives Amazon Textract publishing permissions to the Amazon SNS topic. 
     */
-  var RoleArn: typings.awsSdk.textractMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.textractMod.RoleArn
   
   /**
     * The Amazon SNS topic that Amazon Textract posts the completion status to.
     */
-  var SNSTopicArn: typings.awsSdk.textractMod.SNSTopicArn = js.native
+  var SNSTopicArn: typings.awsSdk.textractMod.SNSTopicArn
 }
 object NotificationChannel {
   

@@ -2,25 +2,23 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityManagerOptions extends StObject {
   
-  var dataService: js.UndefOr[DataService] = js.native
+  var dataService: js.UndefOr[DataService] = js.undefined
   
-  var keyGeneratorCtor: js.UndefOr[js.Function] = js.native
+  var keyGeneratorCtor: js.UndefOr[js.Function] = js.undefined
   
-  var metadataStore: js.UndefOr[MetadataStore] = js.native
+  var metadataStore: js.UndefOr[MetadataStore] = js.undefined
   
-  var queryOptions: js.UndefOr[QueryOptions] = js.native
+  var queryOptions: js.UndefOr[QueryOptions] = js.undefined
   
-  var saveOptions: js.UndefOr[SaveOptions] = js.native
+  var saveOptions: js.UndefOr[SaveOptions] = js.undefined
   
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
-  var validationOptions: js.UndefOr[ValidationOptions] = js.native
+  var validationOptions: js.UndefOr[ValidationOptions] = js.undefined
 }
 object EntityManagerOptions {
   

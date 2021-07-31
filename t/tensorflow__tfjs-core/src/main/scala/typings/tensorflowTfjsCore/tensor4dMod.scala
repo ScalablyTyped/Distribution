@@ -5,21 +5,20 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike4D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensor4dMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor4d", "tensor4d")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor4d", JSImport.Namespace)
   @js.native
-  def tensor4d(values: TensorLike4D): Tensor4D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor4d", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor4D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor4d", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double]): Tensor4D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/tensor4d", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double], dtype: DataType): Tensor4D = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def tensor4d(values: TensorLike4D): Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor4D]
+  @scala.inline
+  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double]): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  @scala.inline
+  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double], dtype: DataType): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  @scala.inline
+  def tensor4d(values: TensorLike4D, shape: Unit, dtype: DataType): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
 }

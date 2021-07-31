@@ -2,23 +2,22 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementAlongLineSameSize
-  extends CIMMarkerPlacementAlongLine
+  extends StObject
+     with CIMMarkerPlacementAlongLine
      with CIMMarkerPlacementType {
   
   @JSName("type")
-  var type_CIMMarkerPlacementAlongLineSameSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize = js.native
+  var type_CIMMarkerPlacementAlongLineSameSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize
 }
 object CIMMarkerPlacementAlongLineSameSize {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize): CIMMarkerPlacementAlongLineSameSize = {
+  def apply(): CIMMarkerPlacementAlongLineSameSize = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineSameSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineSameSize]
   }
   

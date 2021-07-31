@@ -2,15 +2,13 @@ package typings.reactNativeFirebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var fromEmail: js.UndefOr[String] = js.native
+  var fromEmail: js.UndefOr[String] = js.undefined
 }
 object Email {
   

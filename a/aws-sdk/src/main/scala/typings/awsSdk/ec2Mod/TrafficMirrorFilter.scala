@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficMirrorFilter extends StObject {
   
   /**
     * The description of the Traffic Mirror filter.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the egress rules that are associated with the Traffic Mirror filter.
     */
-  var EgressFilterRules: js.UndefOr[TrafficMirrorFilterRuleList] = js.native
+  var EgressFilterRules: js.UndefOr[TrafficMirrorFilterRuleList] = js.undefined
   
   /**
     * Information about the ingress rules that are associated with the Traffic Mirror filter.
     */
-  var IngressFilterRules: js.UndefOr[TrafficMirrorFilterRuleList] = js.native
+  var IngressFilterRules: js.UndefOr[TrafficMirrorFilterRuleList] = js.undefined
   
   /**
     * The network service traffic that is associated with the Traffic Mirror filter.
     */
-  var NetworkServices: js.UndefOr[TrafficMirrorNetworkServiceList] = js.native
+  var NetworkServices: js.UndefOr[TrafficMirrorNetworkServiceList] = js.undefined
   
   /**
     * The tags assigned to the Traffic Mirror filter.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the Traffic Mirror filter.
     */
-  var TrafficMirrorFilterId: js.UndefOr[String] = js.native
+  var TrafficMirrorFilterId: js.UndefOr[String] = js.undefined
 }
 object TrafficMirrorFilter {
   

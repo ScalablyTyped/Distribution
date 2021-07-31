@@ -2,23 +2,21 @@ package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformCaller extends StObject {
   
   // the only required property
-  var name: String = js.native
+  var name: String
   
-  var supportsDynamicImport: js.UndefOr[Boolean] = js.native
+  var supportsDynamicImport: js.UndefOr[Boolean] = js.undefined
   
-  var supportsExportNamespaceFrom: js.UndefOr[Boolean] = js.native
+  var supportsExportNamespaceFrom: js.UndefOr[Boolean] = js.undefined
   
   // e.g. set to true by `babel-loader` and false by `babel-jest`
-  var supportsStaticESM: js.UndefOr[Boolean] = js.native
+  var supportsStaticESM: js.UndefOr[Boolean] = js.undefined
   
-  var supportsTopLevelAwait: js.UndefOr[Boolean] = js.native
+  var supportsTopLevelAwait: js.UndefOr[Boolean] = js.undefined
 }
 object TransformCaller {
   

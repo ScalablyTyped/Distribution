@@ -2,15 +2,15 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SDPCodec extends SDPCodecParameters {
+trait SDPCodec
+  extends StObject
+     with SDPCodecParameters {
   
-  var parameters: js.UndefOr[SDPCodecAdditionalParameters] = js.native
+  var parameters: js.UndefOr[SDPCodecAdditionalParameters] = js.undefined
   
-  var rtcpFeedback: js.UndefOr[js.Array[SDPFeedbackParameter]] = js.native
+  var rtcpFeedback: js.UndefOr[js.Array[SDPFeedbackParameter]] = js.undefined
 }
 object SDPCodec {
   

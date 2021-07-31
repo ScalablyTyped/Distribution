@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a description of media that is supported by a video profile. */
-@js.native
 trait MediaCaptureVideoProfileMediaDescription extends StObject {
   
   /** Gets the frame rate of the media description. */
-  var frameRate: Double = js.native
+  var frameRate: Double
   
   /** Gets the height of the media description. */
-  var height: Double = js.native
+  var height: Double
   
   /** Gets a value indicating if the media description includes HDR video support. */
-  var isHdrVideoSupported: Boolean = js.native
+  var isHdrVideoSupported: Boolean
   
   /** Gets a value indicating if the media description includes variable photo sequence support. */
-  var isVariablePhotoSequenceSupported: Boolean = js.native
+  var isVariablePhotoSequenceSupported: Boolean
   
   /** Gets the height of the media description. */
-  var width: Double = js.native
+  var width: Double
 }
 object MediaCaptureVideoProfileMediaDescription {
   

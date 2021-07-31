@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileUploadURLRequest extends StObject {
   
   /**
     * The ID of the assignment that contains the question with a FileUploadAnswer.
     */
-  var AssignmentId: EntityId = js.native
+  var AssignmentId: EntityId
   
   /**
     * The identifier of the question with a FileUploadAnswer, as specified in the QuestionForm of the HIT.
     */
-  var QuestionIdentifier: String = js.native
+  var QuestionIdentifier: String
 }
 object GetFileUploadURLRequest {
   

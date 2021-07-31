@@ -21,15 +21,13 @@ import typings.googleOneTap.googleOneTapStrings.unregistered_origin
 import typings.googleOneTap.googleOneTapStrings.user_cancel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait accounts extends StObject {
     
-    var id: Cancel = js.native
+    var id: Cancel
   }
   object accounts {
     
@@ -45,14 +43,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CredentialResponse extends StObject {
     
-    var client_id: String = js.native
+    var client_id: String
     
-    var credential: String = js.native
+    var credential: String
     
-    var select_by: String = js.native
+    var select_by: String
   }
   object CredentialResponse {
     
@@ -76,26 +73,25 @@ object mod {
     }
   }
   
-  @js.native
   trait IdConfiguration extends StObject {
     
-    var auto_select: js.UndefOr[Boolean] = js.native
+    var auto_select: js.UndefOr[Boolean] = js.undefined
     
-    var callback: js.UndefOr[js.Function1[/* credentialResponse */ CredentialResponse, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* credentialResponse */ CredentialResponse, Unit]] = js.undefined
     
-    var cancel_on_tap_outside: js.UndefOr[Boolean] = js.native
+    var cancel_on_tap_outside: js.UndefOr[Boolean] = js.undefined
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var native_callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var native_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var prompt_parent_id: js.UndefOr[String] = js.native
+    var prompt_parent_id: js.UndefOr[String] = js.undefined
     
-    var state_cookie_domain: js.UndefOr[String] = js.native
+    var state_cookie_domain: js.UndefOr[String] = js.undefined
   }
   object IdConfiguration {
     
@@ -164,26 +160,25 @@ object mod {
     }
   }
   
-  @js.native
   trait PromptMomentNotification extends StObject {
     
-    def getDismissedReason(): credential_returned | cancel_called | flow_restarted = js.native
+    def getDismissedReason(): credential_returned | cancel_called | flow_restarted
     
-    def getMomentType(): display | skipped | dismissed = js.native
+    def getMomentType(): display | skipped | dismissed
     
-    def getNotDisplayedReason(): browser_not_supported | invalid_client | missing_client_id | opt_out_or_no_session | secure_http_required | suppressed_by_user | unregistered_origin | unknown_reason = js.native
+    def getNotDisplayedReason(): browser_not_supported | invalid_client | missing_client_id | opt_out_or_no_session | secure_http_required | suppressed_by_user | unregistered_origin | unknown_reason
     
-    def getSkippedReason(): auto_cancel | user_cancel | tap_outside | issuing_failed = js.native
+    def getSkippedReason(): auto_cancel | user_cancel | tap_outside | issuing_failed
     
-    def isDismissedMoment(): Boolean = js.native
+    def isDismissedMoment(): Boolean
     
-    def isDisplayMoment(): Boolean = js.native
+    def isDisplayMoment(): Boolean
     
-    def isDisplayed(): Boolean = js.native
+    def isDisplayed(): Boolean
     
-    def isNotDisplayed(): Boolean = js.native
+    def isNotDisplayed(): Boolean
     
-    def isSkippedMoment(): Boolean = js.native
+    def isSkippedMoment(): Boolean
   }
   object PromptMomentNotification {
     

@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JWT configuration for origin authentication.
   */
-@js.native
 trait SchemaJwt extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait SchemaJwt extends StObject {
     * bookstore_android.apps.googleusercontent.com,
     * bookstore_web.apps.googleusercontent.com
     */
-  var audiences: js.UndefOr[js.Array[String]] = js.native
+  var audiences: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Identifies the issuer that issued the JWT, which is usually a URL or an
     * email address. Examples: https://securetoken.google.com,
     * 1234567-compute@developer.gserviceaccount.com
     */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
   
   /**
     * The provider?s public key set to validate the signature of the JWT.
     */
-  var jwksPublicKeys: js.UndefOr[String] = js.native
+  var jwksPublicKeys: js.UndefOr[String] = js.undefined
   
   /**
     * jwt_headers and jwt_params define where to extract the JWT from an HTTP
@@ -43,14 +41,14 @@ trait SchemaJwt extends StObject {
     * For example, if `header=x-goog-iap-jwt-assertion`, the header format will
     * be x-goog-iap-jwt-assertion: .
     */
-  var jwtHeaders: js.UndefOr[js.Array[SchemaJwtHeader]] = js.native
+  var jwtHeaders: js.UndefOr[js.Array[SchemaJwtHeader]] = js.undefined
   
   /**
     * This field is set if JWT is sent in a query parameter. This field
     * specifies the query parameter name. For example, if jwt_params[0] is
     * jwt_token, the JWT format in the query parameter is /path?jwt_token=.
     */
-  var jwtParams: js.UndefOr[js.Array[String]] = js.native
+  var jwtParams: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaJwt {
   

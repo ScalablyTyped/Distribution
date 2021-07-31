@@ -5,29 +5,31 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@hapi/code", "count")
+  @JSImport("@hapi/code", JSImport.Namespace)
   @js.native
-  def count(): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
   
   object expect {
     
+    @scala.inline
+    def apply[T](value: T): Assertion[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T]]
+    @scala.inline
+    def apply[T](value: T, prefix: String): Assertion[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T]]
+    @scala.inline
+    def apply[T](value: js.Array[T]): Assertion[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Assertion[T]]
+    @scala.inline
+    def apply[T](value: js.Array[T], prefix: String): Assertion[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Assertion[T]]
+    
     @JSImport("@hapi/code", "expect")
     @js.native
-    def apply[T](value: T): Assertion[T] = js.native
-    @JSImport("@hapi/code", "expect")
-    @js.native
-    def apply[T](value: T, prefix: String): Assertion[T] = js.native
-    @JSImport("@hapi/code", "expect")
-    @js.native
-    def apply[T](value: js.Array[T]): Assertion[T] = js.native
-    @JSImport("@hapi/code", "expect")
-    @js.native
-    def apply[T](value: js.Array[T], prefix: String): Assertion[T] = js.native
+    val ^ : js.Any = js.native
     
     @js.native
     trait Assertion[T] extends StObject {
@@ -542,16 +544,13 @@ object mod {
     }
   }
   
-  @JSImport("@hapi/code", "fail")
-  @js.native
-  def fail(): Unit = js.native
-  @JSImport("@hapi/code", "fail")
-  @js.native
-  def fail(message: String): Unit = js.native
+  @scala.inline
+  def fail(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")().asInstanceOf[Unit]
+  @scala.inline
+  def fail(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@hapi/code", "incomplete")
-  @js.native
-  def incomplete(): js.Array[String] | Null = js.native
+  @scala.inline
+  def incomplete(): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("incomplete")().asInstanceOf[js.Array[String] | Null]
   
   @JSImport("@hapi/code", "settings")
   @js.native
@@ -559,21 +558,22 @@ object mod {
   
   object thrownAt {
     
-    @JSImport("@hapi/code", "thrownAt")
-    @js.native
-    def apply(): Location = js.native
-    @JSImport("@hapi/code", "thrownAt")
-    @js.native
-    def apply(error: Error): Location = js.native
+    @scala.inline
+    def apply(): Location = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Location]
+    @scala.inline
+    def apply(error: Error): Location = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[Location]
     
+    @JSImport("@hapi/code", "thrownAt")
     @js.native
+    val ^ : js.Any = js.native
+    
     trait Location extends StObject {
       
-      var column: String = js.native
+      var column: String
       
-      var filename: String = js.native
+      var filename: String
       
-      var line: String = js.native
+      var line: String
     }
     object Location {
       
@@ -598,7 +598,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings_ extends StObject {
     
     /**
@@ -606,14 +605,14 @@ object mod {
       * 
       * @defaults false
       */
-    var comparePrototypes: js.UndefOr[Boolean] = js.native
+    var comparePrototypes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Truncate long assertion error messages for readability.
       * 
       * @default false
       */
-    var truncateMessages: js.UndefOr[Boolean] = js.native
+    var truncateMessages: js.UndefOr[Boolean] = js.undefined
   }
   object Settings_ {
     

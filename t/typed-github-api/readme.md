@@ -12,7 +12,7 @@ Client for GitHub API written in Typescript. Includes support for WebHooks using
 | Keywords           | GitHub, Typescript, WebHook, API |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1798 |
+| # downloads        | 1598 |
 | # stars            | 0 |
 
 ## Links

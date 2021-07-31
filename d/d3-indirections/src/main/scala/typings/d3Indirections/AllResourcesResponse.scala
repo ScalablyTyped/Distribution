@@ -2,17 +2,17 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response from a GET all resource of type request.
   */
-@js.native
-trait AllResourcesResponse[T /* <: ResourceType */] extends ResponseBase {
+trait AllResourcesResponse[T /* <: ResourceType */]
+  extends StObject
+     with ResponseBase {
   
   @JSName("result")
-  var result_AllResourcesResponse: js.Array[Resource[T]] = js.native
+  var result_AllResourcesResponse: js.Array[Resource[T]]
 }
 object AllResourcesResponse {
   
@@ -23,7 +23,7 @@ object AllResourcesResponse {
   }
   
   @scala.inline
-  implicit class AllResourcesResponseMutableBuilder[Self <: AllResourcesResponse[_], T /* <: ResourceType */] (val x: Self with AllResourcesResponse[T]) extends AnyVal {
+  implicit class AllResourcesResponseMutableBuilder[Self <: AllResourcesResponse[?], T /* <: ResourceType */] (val x: Self & AllResourcesResponse[T]) extends AnyVal {
     
     @scala.inline
     def setResult(value: js.Array[Resource[T]]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])

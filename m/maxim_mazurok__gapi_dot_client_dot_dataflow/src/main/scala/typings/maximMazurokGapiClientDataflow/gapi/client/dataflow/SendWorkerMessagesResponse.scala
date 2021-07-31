@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendWorkerMessagesResponse extends StObject {
   
   /** The servers response to the worker messages. */
-  var workerMessageResponses: js.UndefOr[js.Array[WorkerMessageResponse]] = js.native
+  var workerMessageResponses: js.UndefOr[js.Array[WorkerMessageResponse]] = js.undefined
 }
 object SendWorkerMessagesResponse {
   

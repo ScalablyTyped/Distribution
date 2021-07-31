@@ -3,39 +3,37 @@ package typings.googleapis.reportsV1Mod.adminReportsV1
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a collection of usage reports.
   */
-@js.native
 trait SchemaUsageReports extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of object.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token for retrieving the next page
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Various application parameter records.
     */
-  var usageReports: js.UndefOr[js.Array[SchemaUsageReport]] = js.native
+  var usageReports: js.UndefOr[js.Array[SchemaUsageReport]] = js.undefined
   
   /**
     * Warnings if any.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
 }
 object SchemaUsageReports {
   

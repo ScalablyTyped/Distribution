@@ -9,63 +9,61 @@ import typings.auth0Js.auth0JsStrings.sms
 import typings.auth0Js.auth0JsStrings.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audience extends StObject {
     
     /** identifier of the resource server who will consume the access token issued after Auth */
-    var audience: js.UndefOr[String] = js.native
+    var audience: js.UndefOr[String] = js.undefined
     
     /** your Auth0 client identifier obtained when creating the client in the Auth0 Dashboard */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * identity provider whose login page will be displayed in the popup.
       * If omitted the hosted login page is used.
       * {@link https://auth0.com/docs/identityproviders}
       */
-    var connection: js.UndefOr[String] = js.native
+    var connection: js.UndefOr[String] = js.undefined
     
     /** your Auth0 domain */
-    var domain: String = js.native
+    var domain: String
     
     /**
       * value used to mitigate replay attacks when using Implicit Grant.
       * {@link https://auth0.com/docs/api-auth/tutorials/nonce}
       */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
     /** determines if Auth0 should render the relay page or not and the caller is responsible of handling the response. */
-    var owp: js.UndefOr[Boolean] = js.native
+    var owp: js.UndefOr[Boolean] = js.undefined
     
     /** url that the Auth0 will redirect after Auth with the Authorization Response */
-    var redirectUri: String = js.native
+    var redirectUri: String
     
     /**
       * how the Auth response is encoded and redirected back to the client.
       * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0.html#ResponseModes}
       */
-    var responseMode: js.UndefOr[query | fragment | form_post] = js.native
+    var responseMode: js.UndefOr[query | fragment | form_post] = js.undefined
     
     /**
       * type of the response used by OAuth 2.0 flow.
       * It can be any space separated list of the values `code`, `token`, `id_token`.
       * {@link https://openid.net/specs/oauth-v2-multiple-response-types-1_0}
       */
-    var responseType: String = js.native
+    var responseType: String
     
     /** scopes to be requested during Auth. e.g. `openid email` */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /**
       * value used to mitigate XSRF attacks.
       * {@link https://auth0.com/docs/protocols/oauth2/oauth-state}
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Audience {
     
@@ -137,17 +135,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
     /** name of the connection where the user will be created */
-    var connection: String = js.native
+    var connection: String
     
     /** user email address */
-    var email: String = js.native
+    var email: String
     
     /** user password */
-    var password: String = js.native
+    var password: String
   }
   object Connection {
     
@@ -171,10 +168,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CountryCode extends StObject {
     
-    var countryCode: String = js.native
+    var countryCode: String
   }
   object CountryCode {
     
@@ -192,22 +188,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
     /** the connection name */
-    var connection: String = js.native
+    var connection: String
     
     /** only if type = email */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**  only if type = sms */
-    var phoneNumber: js.UndefOr[String] = js.native
+    var phoneNumber: js.UndefOr[String] = js.undefined
     
-    var `type`: sms | email = js.native
+    var `type`: sms | email
     
     /** the TOTP code */
-    var verificationCode: String = js.native
+    var verificationCode: String
   }
   object Email {
     
@@ -244,26 +239,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Hash extends StObject {
     
     /**
       * makes parseHash perform or skip `id_token` verification.
       * We **strongly** recommend validating the `id_token` yourself if you disable the verification.
       */
-    var _idTokenVerification: js.UndefOr[String] = js.native
+    var _idTokenVerification: js.UndefOr[String] = js.undefined
     
     /**
       * the url hash.
       * @default window.location.hash
       */
-    var hash: String = js.native
+    var hash: String
     
     /** value originally sent in `nonce` parameter to {@link authorize} to prevent replay attacks */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
     /** value originally sent in `state` parameter to {@link authorize} to mitigate XSRF */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Hash {
     
@@ -299,14 +293,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Jwksuri extends StObject {
     
-    var __jwks_uri: js.UndefOr[String] = js.native
+    var __jwks_uri: js.UndefOr[String] = js.undefined
     
-    var __tenant: js.UndefOr[String] = js.native
+    var __tenant: js.UndefOr[String] = js.undefined
     
-    var __token_issuer: js.UndefOr[String] = js.native
+    var __token_issuer: js.UndefOr[String] = js.undefined
   }
   object Jwksuri {
     
@@ -339,12 +332,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var strategy: js.UndefOr[String] = js.native
+    var strategy: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -368,20 +360,19 @@ object anon {
     }
   }
   
-  @js.native
   trait RedirectUri extends StObject {
     
     /** url that the Auth0 will redirect after Auth with the Authorization Response */
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
     /** how the AuthN response is encoded and redirected back to the client. */
-    var responseMode: js.UndefOr[query | fragment] = js.native
+    var responseMode: js.UndefOr[query | fragment] = js.undefined
     
     /** type of the response used. It can be any of the values `code` and `token` */
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
     /** scopes to be requested during AuthN. e.g. `openid email` */
-    var scope: String = js.native
+    var scope: String
   }
   object RedirectUri {
     
@@ -417,20 +408,19 @@ object anon {
     }
   }
   
-  @js.native
   trait ResponseMode extends StObject {
     
     /** url that the Auth0 will redirect after Auth with the Authorization Response */
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
     /** how the AuthN response is encoded and redirected back to the client. */
-    var responseMode: js.UndefOr[query | fragment] = js.native
+    var responseMode: js.UndefOr[query | fragment] = js.undefined
     
     /** type of the response used. */
-    var responseType: js.UndefOr[code | token] = js.native
+    var responseType: js.UndefOr[code | token] = js.undefined
     
     /** scopes to be requested during AuthN. e.g. `openid email` */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object ResponseMode {
     

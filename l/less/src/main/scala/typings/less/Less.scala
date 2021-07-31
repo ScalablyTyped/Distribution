@@ -10,15 +10,13 @@ import typings.less.lessStrings.strict
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Less {
   
-  @js.native
   trait ImportManager extends StObject {
     
-    var contents: StringDictionary[String] = js.native
+    var contents: StringDictionary[String]
   }
   object ImportManager {
     
@@ -43,67 +41,66 @@ object Less {
     *
     * @interface Options
     */
-  @js.native
   trait Options extends StObject {
     
     /** @deprecated If false, No color in compiling. */
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated If true, compress using less built-in compression. */
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var depends: js.UndefOr[Boolean] = js.native
+    var depends: js.UndefOr[Boolean] = js.undefined
     
     /** Whether output file information and line numbers in compiled CSS code. */
-    var dumpLineNumbers: js.UndefOr[comment | String] = js.native
+    var dumpLineNumbers: js.UndefOr[comment | String] = js.undefined
     
     /** Filename of the main file to be passed to less.render() */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Defines a variable that can be referenced by the file. */
-    var globalVars: js.UndefOr[StringDictionary[String]] = js.native
+    var globalVars: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** @deprecated False by default. */
-    var ieCompat: js.UndefOr[Boolean] = js.native
+    var ieCompat: js.UndefOr[Boolean] = js.undefined
     
     /** If true, allow imports from insecure https hosts. */
-    var insecure: js.UndefOr[Boolean] = js.native
+    var insecure: js.UndefOr[Boolean] = js.undefined
     
     /** @deprecated If true, enable evaluation of JavaScript inline in `.less` files. */
-    var javascriptEnabled: js.UndefOr[Boolean] = js.native
+    var javascriptEnabled: js.UndefOr[Boolean] = js.undefined
     
     /** True, if run the less parser and just reports errors without any output. */
-    var lint: js.UndefOr[Boolean] = js.native
+    var lint: js.UndefOr[Boolean] = js.undefined
     
     /** Math mode options for avoiding symbol conficts on math expressions. */
-    var math: js.UndefOr[always | strict | `parens-division` | parens | `strict-legacy` | Double] = js.native
+    var math: js.UndefOr[always | strict | `parens-division` | parens | `strict-legacy` | Double] = js.undefined
     
-    var maxLineLen: js.UndefOr[Double] = js.native
+    var maxLineLen: js.UndefOr[Double] = js.undefined
     
     /** Puts Var declaration at the end of base file. */
-    var modifyVars: js.UndefOr[StringDictionary[String]] = js.native
+    var modifyVars: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** The locations for less looking for files in @import rules */
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Pre-load global Less.js plugins */
-    var plugins: js.UndefOr[js.Array[Plugin]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
     
     /** Add a path to every generated import and url in output css files. */
-    var rootpath: js.UndefOr[String] = js.native
+    var rootpath: js.UndefOr[String] = js.undefined
     
     /** If true, stops any warnings from being shown. */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var sourceMap: js.UndefOr[SourceMapOption] = js.native
+    var sourceMap: js.UndefOr[SourceMapOption] = js.undefined
     
-    var strictImports: js.UndefOr[Boolean] = js.native
+    var strictImports: js.UndefOr[Boolean] = js.undefined
     
     /** Without this option, Less attempts to guess at the output unit when it does maths. */
-    var strictUnits: js.UndefOr[Boolean] = js.native
+    var strictUnits: js.UndefOr[Boolean] = js.undefined
     
     /** Read files synchronously in Node.js */
-    var syncImport: js.UndefOr[Boolean] = js.native
+    var syncImport: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -250,10 +247,9 @@ object Less {
     }
   }
   
-  @js.native
   trait Plugin extends StObject {
     
-    def install(less: LessStatic, pluginManager: PluginManager): Unit = js.native
+    def install(less: LessStatic, pluginManager: PluginManager): Unit
   }
   object Plugin {
     
@@ -278,10 +274,9 @@ object Less {
     def addPreProcessor(preProcessor: PreProcessor, priority: Double): Unit = js.native
   }
   
-  @js.native
   trait PreProcessor extends StObject {
     
-    def process(src: String, extra: PreProcessorExtraInfo): String = js.native
+    def process(src: String, extra: PreProcessorExtraInfo): String
   }
   object PreProcessor {
     
@@ -299,14 +294,13 @@ object Less {
     }
   }
   
-  @js.native
   trait PreProcessorExtraInfo extends StObject {
     
-    var context: typings.less.anon.PluginManager = js.native
+    var context: typings.less.anon.PluginManager
     
-    var fileInfo: RootFileInfo = js.native
+    var fileInfo: RootFileInfo
     
-    var imports: StringDictionary[js.Any] = js.native
+    var imports: StringDictionary[js.Any]
   }
   object PreProcessorExtraInfo {
     
@@ -334,16 +328,15 @@ object Less {
     }
   }
   
-  @js.native
   trait RefreshOutput extends StObject {
     
-    var endTime: Date = js.native
+    var endTime: Date
     
-    var sheets: Double = js.native
+    var sheets: Double
     
-    var startTime: Date = js.native
+    var startTime: Date
     
-    var totalMilliseconds: Double = js.native
+    var totalMilliseconds: Double
   }
   object RefreshOutput {
     
@@ -370,22 +363,21 @@ object Less {
     }
   }
   
-  @js.native
   trait RenderError extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var extract: js.Array[String] = js.native
+    var extract: js.Array[String]
     
-    var filename: String = js.native
+    var filename: String
     
-    var index: Double = js.native
+    var index: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object RenderError {
     
@@ -433,14 +425,13 @@ object Less {
     }
   }
   
-  @js.native
   trait RenderOutput extends StObject {
     
-    var css: String = js.native
+    var css: String
     
-    var imports: js.Array[String] = js.native
+    var imports: js.Array[String]
     
-    var map: String = js.native
+    var map: String
   }
   object RenderOutput {
     
@@ -468,31 +459,30 @@ object Less {
   }
   
   // https://github.com/less/less.js/blob/master/lib/less/import-manager.js#L10
-  @js.native
   trait RootFileInfo extends StObject {
     
     /** path to the current file, absolute */
-    var currentDirectory: String = js.native
+    var currentDirectory: String
     
     /** absolute path to the entry file */
-    var entryPath: String = js.native
+    var entryPath: String
     
     /** full resolved filename of current file */
-    var filename: String = js.native
+    var filename: String
     
     /** whether the file should not be output and only output parts that are referenced */
-    var reference: Boolean = js.native
+    var reference: Boolean
     
-    var relativeUrls: Boolean = js.native
+    var relativeUrls: Boolean
     
     /** whether to adjust URL's to be relative */
-    var rewriteUrls: js.UndefOr[Boolean] = js.native
+    var rewriteUrls: js.UndefOr[Boolean] = js.undefined
     
     /** filename of the base file */
-    var rootFilename: String = js.native
+    var rootFilename: String
     
     /** path to append to normal URLs for this node */
-    var rootpath: String = js.native
+    var rootpath: String
   }
   object RootFileInfo {
     
@@ -542,18 +532,17 @@ object Less {
     }
   }
   
-  @js.native
   trait SourceMapOption extends StObject {
     
-    var outputSourceFiles: js.UndefOr[Boolean] = js.native
+    var outputSourceFiles: js.UndefOr[Boolean] = js.undefined
     
-    var sourceMapBasepath: js.UndefOr[String] = js.native
+    var sourceMapBasepath: js.UndefOr[String] = js.undefined
     
-    var sourceMapFileInline: js.UndefOr[Boolean] = js.native
+    var sourceMapFileInline: js.UndefOr[Boolean] = js.undefined
     
-    var sourceMapRootpath: js.UndefOr[String] = js.native
+    var sourceMapRootpath: js.UndefOr[String] = js.undefined
     
-    var sourceMapURL: js.UndefOr[String] = js.native
+    var sourceMapURL: js.UndefOr[String] = js.undefined
   }
   object SourceMapOption {
     
@@ -598,14 +587,13 @@ object Less {
     }
   }
   
-  @js.native
   trait StaticOptions extends StObject {
     
-    var async: Boolean = js.native
+    var async: Boolean
     
-    var fileAsync: Boolean = js.native
+    var fileAsync: Boolean
     
-    var modifyVars: StringDictionary[String] = js.native
+    var modifyVars: StringDictionary[String]
   }
   object StaticOptions {
     

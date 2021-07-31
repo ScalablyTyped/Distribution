@@ -4,11 +4,12 @@ import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureTemplates extends Widget_ {
+trait FeatureTemplates
+  extends StObject
+     with Widget_ {
   
   /**
     * When `true`, displays the template [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterFunction).

@@ -2,14 +2,12 @@ package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the feeling associated with the entire text or entities in the
   * text.
   */
-@js.native
 trait SchemaSentiment extends StObject {
   
   /**
@@ -17,20 +15,20 @@ trait SchemaSentiment extends StObject {
     * absolute magnitude of sentiment regardless of score (positive or
     * negative).
     */
-  var magnitude: js.UndefOr[Double] = js.native
+  var magnitude: js.UndefOr[Double] = js.undefined
   
   /**
     * DEPRECATED FIELD - This field is being deprecated in favor of score.
     * Please refer to our documentation at
     * https://cloud.google.com/natural-language/docs for more information.
     */
-  var polarity: js.UndefOr[Double] = js.native
+  var polarity: js.UndefOr[Double] = js.undefined
   
   /**
     * Sentiment score between -1.0 (negative sentiment) and 1.0 (positive
     * sentiment).
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object SchemaSentiment {
   

@@ -2,14 +2,12 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration to automatically mirror a repository from another hosting
   * service, for example GitHub or Bitbucket.
   */
-@js.native
 trait SchemaMirrorConfig extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaMirrorConfig extends StObject {
     * from the other service would deauthorize Google Cloud Source Repositories
     * from mirroring.
     */
-  var deployKeyId: js.UndefOr[String] = js.native
+  var deployKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the main repository at the other hosting service.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the webhook listening to updates to trigger mirroring. Removing
@@ -30,7 +28,7 @@ trait SchemaMirrorConfig extends StObject {
     * Repositories from receiving notifications, and thereby disabling
     * mirroring.
     */
-  var webhookId: js.UndefOr[String] = js.native
+  var webhookId: js.UndefOr[String] = js.undefined
 }
 object SchemaMirrorConfig {
   

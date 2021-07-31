@@ -10,52 +10,49 @@ import typings.jsGravatar.jsGravatarStrings.robohash
 import typings.jsGravatar.jsGravatarStrings.wavatar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("js-gravatar", JSImport.Namespace)
   @js.native
-  def apply(): String = js.native
-  @JSImport("js-gravatar", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("js-gravatar", "buildQueryStringFromOptions")
-  @js.native
-  def buildQueryStringFromOptions(options: Options): String = js.native
+  @scala.inline
+  def buildQueryStringFromOptions(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryStringFromOptions")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("js-gravatar", "validateOptions")
-  @js.native
-  def validateOptions(): Unit = js.native
-  @JSImport("js-gravatar", "validateOptions")
-  @js.native
-  def validateOptions(options: Options): Unit = js.native
+  @scala.inline
+  def validateOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")().asInstanceOf[Unit]
+  @scala.inline
+  def validateOptions(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       *  What image should be used if email does not have a gravatar
       */
-    var defaultImage: js.UndefOr[`404` | mp | identicon | monsterid | wavatar | retro | robohash | blank] = js.native
+    var defaultImage: js.UndefOr[`404` | mp | identicon | monsterid | wavatar | retro | robohash | blank] = js.undefined
     
     /**
       * Email address of the user to generate gravatar for
       */
-    var email: String = js.native
+    var email: String
     
     /**
       *  Optional: MD5 hash of the email above.
       * If email is provided, md5hash will be ignored. If neither email nor md5hash is provided, the library will throw en error
       */
-    var md5Hash: js.UndefOr[String] = js.native
+    var md5Hash: js.UndefOr[String] = js.undefined
     
     /**
       * The size of the image to be displayed. Should be from 1 to 2048
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

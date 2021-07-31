@@ -2,20 +2,20 @@ package typings.reactHotkeys.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactHotkeys.mod._KeySequence because Already inherited */ @js.native
-trait ExtendedKeyMapOptions extends KeyMapOptions {
+- typings.reactHotkeys.mod._KeySequence because Already inherited */ trait ExtendedKeyMapOptions
+  extends StObject
+     with KeyMapOptions {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var sequences: js.Array[KeyMapOptions | MouseTrapKeySequence] = js.native
+  var sequences: js.Array[KeyMapOptions | MouseTrapKeySequence]
 }
 object ExtendedKeyMapOptions {
   

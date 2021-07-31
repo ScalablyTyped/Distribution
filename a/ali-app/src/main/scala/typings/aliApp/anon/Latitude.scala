@@ -2,15 +2,13 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Latitude extends StObject {
   
-  var latitude: String = js.native
+  var latitude: String
   
-  var longitude: String = js.native
+  var longitude: String
 }
 object Latitude {
   

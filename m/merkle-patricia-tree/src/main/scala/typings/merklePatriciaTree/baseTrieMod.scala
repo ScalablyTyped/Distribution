@@ -13,7 +13,6 @@ import typings.node.Buffer
 import typings.semaphoreAsyncAwait.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseTrieMod {
@@ -21,10 +20,10 @@ object baseTrieMod {
   @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie")
   @js.native
   class Trie () extends StObject {
-    def this(db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]) = this()
-    def this(db: js.UndefOr[scala.Nothing], root: Buffer) = this()
+    def this(db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]) = this()
     def this(db: Null, root: Buffer) = this()
-    def this(db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], root: Buffer) = this()
+    def this(db: Unit, root: Buffer) = this()
+    def this(db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], root: Buffer) = this()
     
     var EMPTY_TRIE_ROOT: Buffer = js.native
     
@@ -174,26 +173,27 @@ object baseTrieMod {
   /* static members */
   object Trie {
     
+    @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a proof from a trie and key that can be verified using [[Trie.verifyProof]].
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie.createProof")
-    @js.native
-    def createProof(trie: Trie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def createProof(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Saves the nodes from a proof into the trie. If no trie is provided a new one wil be instantiated.
       * @param {Proof} proof
       * @param {Trie} trie
       */
-    @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie.fromProof")
-    @js.native
-    def fromProof(proof: Proof): js.Promise[Trie] = js.native
-    @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie.fromProof")
-    @js.native
-    def fromProof(proof: Proof, trie: Trie): js.Promise[Trie] = js.native
+    @scala.inline
+    def fromProof(proof: Proof): js.Promise[Trie] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Trie]]
+    @scala.inline
+    def fromProof(proof: Proof, trie: Trie): js.Promise[Trie] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromProof")(proof.asInstanceOf[js.Any], trie.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Trie]]
     
     /**
       * prove has been renamed to [[Trie.createProof]].
@@ -201,9 +201,8 @@ object baseTrieMod {
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie.prove")
-    @js.native
-    def prove(trie: Trie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def prove(trie: Trie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Verifies a proof.
@@ -213,9 +212,8 @@ object baseTrieMod {
       * @throws If proof is found to be invalid.
       * @returns The value from the key.
       */
-    @JSImport("merkle-patricia-tree/dist/baseTrie", "Trie.verifyProof")
-    @js.native
-    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = js.native
+    @scala.inline
+    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyProof")(rootHash.asInstanceOf[js.Any], key.asInstanceOf[js.Any], proof.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | Null]]
   }
   
   type FoundNode = js.Function4[
@@ -226,20 +224,19 @@ object baseTrieMod {
     Unit
   ]
   
-  @js.native
   trait Path extends StObject {
     
-    var node: TrieNode | Null = js.native
+    var node: TrieNode | Null
     
-    var remaining: Nibbles = js.native
+    var remaining: Nibbles
     
-    var stack: js.Array[TrieNode] = js.native
+    var stack: js.Array[TrieNode]
   }
   object Path {
     
     @scala.inline
     def apply(remaining: Nibbles, stack: js.Array[TrieNode]): Path = {
-      val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any], node = null)
       __obj.asInstanceOf[Path]
     }
     

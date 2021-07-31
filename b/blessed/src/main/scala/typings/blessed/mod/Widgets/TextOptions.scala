@@ -3,23 +3,23 @@ package typings.blessed.mod.Widgets
 import typings.blessed.mod.Widgets.Types.TAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextOptions extends ElementOptions {
+trait TextOptions
+  extends StObject
+     with ElementOptions {
   
   /**
     * Text alignment: left, center, or right.
     */
   @JSName("align")
-  var align_TextOptions: js.UndefOr[TAlign] = js.native
+  var align_TextOptions: js.UndefOr[TAlign] = js.undefined
   
   /**
     * Fill the entire line with chosen bg until parent bg ends, even if there
     * is not enough text to fill the entire width.
     */
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
 }
 object TextOptions {
   

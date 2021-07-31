@@ -4,31 +4,31 @@ import typings.std.Record
 import typings.wordpressBlocks.wordpressBlocksStrings.shortcode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformShortcode[T /* <: Record[String, _] */] extends Transform[T] {
+trait TransformShortcode[T /* <: Record[String, js.Any] */]
+  extends StObject
+     with Transform[T] {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var tag: String = js.native
+  var tag: String
   
-  var `type`: shortcode = js.native
+  var `type`: shortcode
 }
 object TransformShortcode {
   
   @scala.inline
-  def apply[T /* <: Record[String, _] */](tag: String, `type`: shortcode): TransformShortcode[T] = {
+  def apply[T /* <: Record[String, js.Any] */](tag: String): TransformShortcode[T] = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("shortcode")
     __obj.asInstanceOf[TransformShortcode[T]]
   }
   
   @scala.inline
-  implicit class TransformShortcodeMutableBuilder[Self <: TransformShortcode[_], T /* <: Record[String, _] */] (val x: Self with TransformShortcode[T]) extends AnyVal {
+  implicit class TransformShortcodeMutableBuilder[Self <: TransformShortcode[?], T /* <: Record[String, js.Any] */] (val x: Self & TransformShortcode[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])

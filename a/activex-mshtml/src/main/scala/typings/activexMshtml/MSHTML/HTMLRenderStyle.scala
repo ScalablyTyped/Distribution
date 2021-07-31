@@ -2,32 +2,30 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLRenderStyle extends StObject {
   
   @JSName("MSHTML.HTMLRenderStyle_typekey")
-  var MSHTMLDotHTMLRenderStyle_typekey: HTMLRenderStyle = js.native
+  var MSHTMLDotHTMLRenderStyle_typekey: HTMLRenderStyle
   
-  var defaultTextSelection: String = js.native
+  var defaultTextSelection: String
   
-  var renderingPriority: Double = js.native
+  var renderingPriority: Double
   
-  var textBackgroundColor: js.Any = js.native
+  var textBackgroundColor: js.Any
   
-  var textColor: js.Any = js.native
+  var textColor: js.Any
   
-  var textDecoration: String = js.native
+  var textDecoration: String
   
-  var textDecorationColor: js.Any = js.native
+  var textDecorationColor: js.Any
   
-  var textEffect: String = js.native
+  var textEffect: String
   
-  var textLineThroughStyle: String = js.native
+  var textLineThroughStyle: String
   
-  var textUnderlineStyle: String = js.native
+  var textUnderlineStyle: String
 }
 object HTMLRenderStyle {
   

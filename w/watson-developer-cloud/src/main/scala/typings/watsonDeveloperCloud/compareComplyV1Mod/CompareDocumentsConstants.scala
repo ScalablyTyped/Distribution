@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `compareDocuments` operation. */
@@ -16,43 +15,61 @@ object CompareDocumentsConstants {
   object File1ContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[File1ContentType with String] = js.native
+    def apply(value: String): js.UndefOr[File1ContentType & String] = js.native
     
     @js.native
-    sealed trait APPLICATION_JSON extends File1ContentType
-    /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_JSON with String = js.native
+    sealed trait APPLICATION_JSON
+      extends StObject
+         with File1ContentType
+    /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_JSON & String = js.native
     
     @js.native
-    sealed trait APPLICATION_MSWORD extends File1ContentType
-    /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_MSWORD with String = js.native
+    sealed trait APPLICATION_MSWORD
+      extends StObject
+         with File1ContentType
+    /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_MSWORD & String = js.native
     
     @js.native
-    sealed trait APPLICATION_PDF extends File1ContentType
-    /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_PDF with String = js.native
+    sealed trait APPLICATION_PDF
+      extends StObject
+         with File1ContentType
+    /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_PDF & String = js.native
     
     @js.native
-    sealed trait APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT extends File1ContentType
-    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String = js.native
+    sealed trait APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT
+      extends StObject
+         with File1ContentType
+    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT & String = js.native
     
     @js.native
-    sealed trait IMAGE_BMP extends File1ContentType
-    /* "image/bmp" */ val IMAGE_BMP: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_BMP with String = js.native
+    sealed trait IMAGE_BMP
+      extends StObject
+         with File1ContentType
+    /* "image/bmp" */ val IMAGE_BMP: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_BMP & String = js.native
     
     @js.native
-    sealed trait IMAGE_GIF extends File1ContentType
-    /* "image/gif" */ val IMAGE_GIF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_GIF with String = js.native
+    sealed trait IMAGE_GIF
+      extends StObject
+         with File1ContentType
+    /* "image/gif" */ val IMAGE_GIF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_GIF & String = js.native
     
     @js.native
-    sealed trait IMAGE_JPEG extends File1ContentType
-    /* "image/jpeg" */ val IMAGE_JPEG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_JPEG with String = js.native
+    sealed trait IMAGE_JPEG
+      extends StObject
+         with File1ContentType
+    /* "image/jpeg" */ val IMAGE_JPEG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_JPEG & String = js.native
     
     @js.native
-    sealed trait IMAGE_PNG extends File1ContentType
-    /* "image/png" */ val IMAGE_PNG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_PNG with String = js.native
+    sealed trait IMAGE_PNG
+      extends StObject
+         with File1ContentType
+    /* "image/png" */ val IMAGE_PNG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_PNG & String = js.native
     
     @js.native
-    sealed trait IMAGE_TIFF extends File1ContentType
-    /* "image/tiff" */ val IMAGE_TIFF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_TIFF with String = js.native
+    sealed trait IMAGE_TIFF
+      extends StObject
+         with File1ContentType
+    /* "image/tiff" */ val IMAGE_TIFF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File1ContentType.IMAGE_TIFF & String = js.native
   }
   
   @js.native
@@ -63,43 +80,61 @@ object CompareDocumentsConstants {
   object File2ContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[File2ContentType with String] = js.native
+    def apply(value: String): js.UndefOr[File2ContentType & String] = js.native
     
     @js.native
-    sealed trait APPLICATION_JSON extends File2ContentType
-    /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_JSON with String = js.native
+    sealed trait APPLICATION_JSON
+      extends StObject
+         with File2ContentType
+    /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_JSON & String = js.native
     
     @js.native
-    sealed trait APPLICATION_MSWORD extends File2ContentType
-    /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_MSWORD with String = js.native
+    sealed trait APPLICATION_MSWORD
+      extends StObject
+         with File2ContentType
+    /* "application/msword" */ val APPLICATION_MSWORD: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_MSWORD & String = js.native
     
     @js.native
-    sealed trait APPLICATION_PDF extends File2ContentType
-    /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_PDF with String = js.native
+    sealed trait APPLICATION_PDF
+      extends StObject
+         with File2ContentType
+    /* "application/pdf" */ val APPLICATION_PDF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_PDF & String = js.native
     
     @js.native
-    sealed trait APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT extends File2ContentType
-    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT with String = js.native
+    sealed trait APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT
+      extends StObject
+         with File2ContentType
+    /* "application/vnd.openxmlformats-officedocument.wordprocessingml.document" */ val APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.APPLICATION_VND_OPENXMLFORMATS_OFFICEDOCUMENT_WORDPROCESSINGML_DOCUMENT & String = js.native
     
     @js.native
-    sealed trait IMAGE_BMP extends File2ContentType
-    /* "image/bmp" */ val IMAGE_BMP: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_BMP with String = js.native
+    sealed trait IMAGE_BMP
+      extends StObject
+         with File2ContentType
+    /* "image/bmp" */ val IMAGE_BMP: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_BMP & String = js.native
     
     @js.native
-    sealed trait IMAGE_GIF extends File2ContentType
-    /* "image/gif" */ val IMAGE_GIF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_GIF with String = js.native
+    sealed trait IMAGE_GIF
+      extends StObject
+         with File2ContentType
+    /* "image/gif" */ val IMAGE_GIF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_GIF & String = js.native
     
     @js.native
-    sealed trait IMAGE_JPEG extends File2ContentType
-    /* "image/jpeg" */ val IMAGE_JPEG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_JPEG with String = js.native
+    sealed trait IMAGE_JPEG
+      extends StObject
+         with File2ContentType
+    /* "image/jpeg" */ val IMAGE_JPEG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_JPEG & String = js.native
     
     @js.native
-    sealed trait IMAGE_PNG extends File2ContentType
-    /* "image/png" */ val IMAGE_PNG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_PNG with String = js.native
+    sealed trait IMAGE_PNG
+      extends StObject
+         with File2ContentType
+    /* "image/png" */ val IMAGE_PNG: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_PNG & String = js.native
     
     @js.native
-    sealed trait IMAGE_TIFF extends File2ContentType
-    /* "image/tiff" */ val IMAGE_TIFF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_TIFF with String = js.native
+    sealed trait IMAGE_TIFF
+      extends StObject
+         with File2ContentType
+    /* "image/tiff" */ val IMAGE_TIFF: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.File2ContentType.IMAGE_TIFF & String = js.native
   }
   
   @js.native
@@ -110,14 +145,18 @@ object CompareDocumentsConstants {
   object Model extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Model with String] = js.native
+    def apply(value: String): js.UndefOr[Model & String] = js.native
     
     @js.native
-    sealed trait CONTRACTS extends Model
-    /* "contracts" */ val CONTRACTS: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.Model.CONTRACTS with String = js.native
+    sealed trait CONTRACTS
+      extends StObject
+         with Model
+    /* "contracts" */ val CONTRACTS: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.Model.CONTRACTS & String = js.native
     
     @js.native
-    sealed trait TABLES extends Model
-    /* "tables" */ val TABLES: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.Model.TABLES with String = js.native
+    sealed trait TABLES
+      extends StObject
+         with Model
+    /* "tables" */ val TABLES: typings.watsonDeveloperCloud.compareComplyV1Mod.CompareDocumentsConstants.Model.TABLES & String = js.native
   }
 }

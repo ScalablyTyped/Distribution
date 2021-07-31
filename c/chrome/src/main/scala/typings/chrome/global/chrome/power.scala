@@ -2,7 +2,6 @@ package typings.chrome.global.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,11 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object power {
   
-  @JSGlobal("chrome.power.releaseKeepAwake")
+  @JSGlobal("chrome.power")
   @js.native
-  def releaseKeepAwake(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.power.requestKeepAwake")
-  @js.native
-  def requestKeepAwake(level: String): Unit = js.native
+  @scala.inline
+  def releaseKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseKeepAwake")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def requestKeepAwake(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestKeepAwake")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

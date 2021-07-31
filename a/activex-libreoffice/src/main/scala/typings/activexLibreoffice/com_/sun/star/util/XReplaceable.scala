@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * {{program example here, see documentation}}
   */
-@js.native
-trait XReplaceable extends XSearchable {
+trait XReplaceable
+  extends StObject
+     with XSearchable {
   
   /**
     * creates a descriptor which contains properties that specify a search in this container.
     * @see SearchDescriptor
     */
-  def createReplaceDescriptor(): XReplaceDescriptor = js.native
+  def createReplaceDescriptor(): XReplaceDescriptor
   
   /**
     * searches for all occurrences of whatever is specified.
     * @see SearchDescriptor
     */
-  def replaceAll(xDesc: XSearchDescriptor): Double = js.native
+  def replaceAll(xDesc: XSearchDescriptor): Double
 }
 object XReplaceable {
   

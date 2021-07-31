@@ -2,21 +2,19 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceSpecificParameterObject extends StObject {
   
-  var context_uri: js.UndefOr[String] = js.native
+  var context_uri: js.UndefOr[String] = js.undefined
   
-  var device_id: js.UndefOr[String] = js.native
+  var device_id: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[js.Object] = js.native
+  var offset: js.UndefOr[js.Object] = js.undefined
   
-  var position_ms: js.UndefOr[Double] = js.native
+  var position_ms: js.UndefOr[Double] = js.undefined
   
-  var uris: js.UndefOr[js.Array[String]] = js.native
+  var uris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DeviceSpecificParameterObject {
   

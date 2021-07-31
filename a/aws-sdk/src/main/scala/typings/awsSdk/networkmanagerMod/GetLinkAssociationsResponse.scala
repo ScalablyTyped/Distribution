@@ -2,21 +2,19 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLinkAssociationsResponse extends StObject {
   
   /**
     * The link associations.
     */
-  var LinkAssociations: js.UndefOr[LinkAssociationList] = js.native
+  var LinkAssociations: js.UndefOr[LinkAssociationList] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object GetLinkAssociationsResponse {
   

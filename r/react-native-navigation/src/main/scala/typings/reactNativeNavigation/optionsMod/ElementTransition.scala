@@ -2,31 +2,29 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementTransition extends StObject {
   
-  var alpha: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var alpha: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var rotationX: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var rotationX: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var rotationY: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var rotationY: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var scaleX: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var scaleX: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var scaleY: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var scaleY: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var translationX: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var translationX: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var translationY: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var translationY: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var x: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var x: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
   
-  var y: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.native
+  var y: js.UndefOr[AppearingElementAnimation | DisappearingElementAnimation] = js.undefined
 }
 object ElementTransition {
   

@@ -4,7 +4,6 @@ import typings.devexpressUtils.optionsMod.IDateFormatterOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateMod {
@@ -149,8 +148,11 @@ object dateMod {
   /* static members */
   object DateFormatter {
     
-    @JSImport("@devexpress/utils/lib/formatters/date", "DateFormatter.expandPredefinedFormat")
+    @JSImport("@devexpress/utils/lib/formatters/date", "DateFormatter")
     @js.native
-    def expandPredefinedFormat(format: String, options: IDateFormatterOptions): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def expandPredefinedFormat(format: String, options: IDateFormatterOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPredefinedFormat")(format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

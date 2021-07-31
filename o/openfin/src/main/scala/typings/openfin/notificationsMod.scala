@@ -10,23 +10,23 @@ import typings.openfin.openfinStrings.notification
 import typings.openfin.openfinStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsMod {
   
-  @js.native
-  trait NotificationEvents extends BaseEventMap {
+  trait NotificationEvents
+    extends StObject
+       with BaseEventMap {
     
-    var click: RuntimeEvent[notification, typings.openfin.openfinStrings.click] = js.native
+    var click: RuntimeEvent[notification, typings.openfin.openfinStrings.click]
     
-    var close: RuntimeEvent[notification, typings.openfin.openfinStrings.close] = js.native
+    var close: RuntimeEvent[notification, typings.openfin.openfinStrings.close]
     
-    var error: RuntimeEvent[notification, typings.openfin.openfinStrings.error] = js.native
+    var error: RuntimeEvent[notification, typings.openfin.openfinStrings.error]
     
-    var message: RuntimeEvent[notification, typings.openfin.openfinStrings.message] = js.native
+    var message: RuntimeEvent[notification, typings.openfin.openfinStrings.message]
     
-    var show: RuntimeEvent[notification, typings.openfin.openfinStrings.show] = js.native
+    var show: RuntimeEvent[notification, typings.openfin.openfinStrings.show]
   }
   object NotificationEvents {
     

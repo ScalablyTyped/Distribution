@@ -3,12 +3,11 @@ package typings.sharedb.sharedbMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONObject
-  extends /* name */ StringDictionary[JSONValue]
+  extends StObject
+     with /* name */ StringDictionary[JSONValue]
      with _JSONValue
 object JSONObject {
   

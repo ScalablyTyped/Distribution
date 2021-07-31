@@ -10,9 +10,9 @@ Parse HTML character references: fast, spec-compliant, positional information
 | ------------------ | :-------------: |
 | Full name          | parse-entities |
 | Keywords           | parse, html, character, reference, entity, entities |
-| # releases         | 5 |
-| # dependents       | 23 |
-| # downloads        | 160196611 |
+| # releases         | 4 |
+| # dependents       | 26 |
+| # downloads        | 227021777 |
 | # stars            | 0 |
 
 ## Links

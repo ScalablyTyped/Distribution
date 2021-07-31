@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "azure-mobile-apps" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "azure-mobile-apps" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

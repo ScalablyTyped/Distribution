@@ -3,21 +3,19 @@ package typings.reactBootstrapTable.anon
 import typings.reactBootstrapTable.mod.FilterComparator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comparator extends StObject {
   
   /**
     * Comparator value.
     */
-  var comparator: FilterComparator = js.native
+  var comparator: FilterComparator
   
   /**
     * Number value.
     */
-  var number: Double = js.native
+  var number: Double
 }
 object Comparator {
   

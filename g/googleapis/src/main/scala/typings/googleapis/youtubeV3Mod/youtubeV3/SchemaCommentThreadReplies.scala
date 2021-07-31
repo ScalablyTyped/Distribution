@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Comments written in (direct or indirect) reply to the top level comment.
   */
-@js.native
 trait SchemaCommentThreadReplies extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaCommentThreadReplies extends StObject {
     * total_reply_count in the snippet the returned replies are only a subset
     * of the total number of replies.
     */
-  var comments: js.UndefOr[js.Array[SchemaComment]] = js.native
+  var comments: js.UndefOr[js.Array[SchemaComment]] = js.undefined
 }
 object SchemaCommentThreadReplies {
   

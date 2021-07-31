@@ -3,35 +3,33 @@ package typings.jsFixtures
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fixtures extends StObject {
   
-  def appendLoad(urls: String*): Unit = js.native
+  def appendLoad(urls: String*): Unit
   
-  def appendSet(html: String): Unit = js.native
+  def appendSet(html: String): Unit
   
-  def body(): String = js.native
+  def body(): String
   
-  def cleanUp(): Unit = js.native
+  def cleanUp(): Unit
   
-  def clearCache(): Unit = js.native
+  def clearCache(): Unit
   
-  var containerId: String = js.native
+  var containerId: String
   
-  def load(urls: String*): Unit = js.native
+  def load(urls: String*): Unit
   
-  var path: String = js.native
+  var path: String
   
-  def preload(urls: String*): Unit = js.native
+  def preload(urls: String*): Unit
   
-  def read(urls: String*): String = js.native
+  def read(urls: String*): String
   
-  def set(html: String): Unit = js.native
+  def set(html: String): Unit
   
-  def window(): Window = js.native
+  def window(): Window
 }
 object Fixtures {
   

@@ -10,7 +10,6 @@ import typings.libraCore.transactionPbMod.SignedTransaction
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest")
@@ -45,13 +44,11 @@ object AddTransactionWithValidationRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationRequest = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AddTransactionWithValidationRequest]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: AddTransactionWithValidationRequest, reader: BinaryReader): AddTransactionWithValidationRequest = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: AddTransactionWithValidationRequest, reader: BinaryReader): AddTransactionWithValidationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AddTransactionWithValidationRequest]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.extensions")
   @js.native
@@ -66,24 +63,21 @@ object AddTransactionWithValidationRequest {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: AddTransactionWithValidationRequest, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: AddTransactionWithValidationRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationRequest.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: AddTransactionWithValidationRequest): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: AddTransactionWithValidationRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var accountBalance: String = js.native
+    var accountBalance: String
     
-    var latestSequenceNumber: String = js.native
+    var latestSequenceNumber: String
     
-    var maxGasCost: String = js.native
+    var maxGasCost: String
     
-    var signedTxn: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.native
+    var signedTxn: js.UndefOr[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.undefined
   }
   object AsObject {
     

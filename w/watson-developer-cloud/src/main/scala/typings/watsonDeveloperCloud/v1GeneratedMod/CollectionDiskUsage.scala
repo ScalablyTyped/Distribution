@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Summary of the disk usage statistics for this collection. */
-@js.native
 trait CollectionDiskUsage extends StObject {
   
   /** Number of bytes used by the collection. */
-  var used_bytes: js.UndefOr[Double] = js.native
+  var used_bytes: js.UndefOr[Double] = js.undefined
 }
 object CollectionDiskUsage {
   

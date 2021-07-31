@@ -4,7 +4,6 @@ import typings.activexWia.activexWiaNumbers.`131072`
 import typings.activexWia.activexWiaNumbers.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The WiaImageBias enumeration helps specify what type of data the image is intended to represent. */

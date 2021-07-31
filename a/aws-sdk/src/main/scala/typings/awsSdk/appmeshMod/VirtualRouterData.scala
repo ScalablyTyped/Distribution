@@ -2,36 +2,34 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRouterData extends StObject {
   
   /**
     * The name of the service mesh that the virtual router resides in.
     */
-  var meshName: ResourceName = js.native
+  var meshName: ResourceName
   
   /**
     * The associated metadata for the virtual router.
     */
-  var metadata: ResourceMetadata = js.native
+  var metadata: ResourceMetadata
   
   /**
     * The specifications of the virtual router.
     */
-  var spec: VirtualRouterSpec = js.native
+  var spec: VirtualRouterSpec
   
   /**
     * The current status of the virtual router.
     */
-  var status: VirtualRouterStatus = js.native
+  var status: VirtualRouterStatus
   
   /**
     * The name of the virtual router.
     */
-  var virtualRouterName: ResourceName = js.native
+  var virtualRouterName: ResourceName
 }
 object VirtualRouterData {
   

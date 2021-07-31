@@ -2,17 +2,15 @@ package typings.jshamcrest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AttachAssertions extends StObject {
     
-    var attachAssertions: js.UndefOr[Boolean] = js.native
+    var attachAssertions: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[js.Object] = js.native
+    var scope: js.UndefOr[js.Object] = js.undefined
   }
   object AttachAssertions {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var scope: js.UndefOr[js.Object] = js.native
+    var scope: js.UndefOr[js.Object] = js.undefined
   }
   object Scope {
     

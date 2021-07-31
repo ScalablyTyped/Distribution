@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledActionType extends StObject {
   
   /**
     * An action that runs a PauseCluster API operation. 
     */
-  var PauseCluster: js.UndefOr[PauseClusterMessage] = js.native
+  var PauseCluster: js.UndefOr[PauseClusterMessage] = js.undefined
   
   /**
     * An action that runs a ResizeCluster API operation. 
     */
-  var ResizeCluster: js.UndefOr[ResizeClusterMessage] = js.native
+  var ResizeCluster: js.UndefOr[ResizeClusterMessage] = js.undefined
   
   /**
     * An action that runs a ResumeCluster API operation. 
     */
-  var ResumeCluster: js.UndefOr[ResumeClusterMessage] = js.native
+  var ResumeCluster: js.UndefOr[ResumeClusterMessage] = js.undefined
 }
 object ScheduledActionType {
   

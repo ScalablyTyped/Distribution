@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMLEvaluationTaskRunResponse extends StObject {
   
   /**
     * The unique identifier associated with this run.
     */
-  var TaskRunId: js.UndefOr[HashString] = js.native
+  var TaskRunId: js.UndefOr[HashString] = js.undefined
 }
 object StartMLEvaluationTaskRunResponse {
   

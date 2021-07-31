@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedTransformList extends StObject {
   
   @JSName("MSHTML.SVGAnimatedTransformList_typekey")
-  var MSHTMLDotSVGAnimatedTransformList_typekey: SVGAnimatedTransformList = js.native
+  var MSHTMLDotSVGAnimatedTransformList_typekey: SVGAnimatedTransformList
   
-  var animVal: SVGTransformList = js.native
+  var animVal: SVGTransformList
   
-  var baseVal: SVGTransformList = js.native
+  var baseVal: SVGTransformList
 }
 object SVGAnimatedTransformList {
   

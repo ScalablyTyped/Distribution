@@ -11,8 +11,8 @@ Easy library for generating unique passwords.
 | Full name          | generate-password |
 | Keywords           | generate, password, generator, unique |
 | # releases         | 5 |
-| # dependents       | 106 |
-| # downloads        | 4126826 |
+| # dependents       | 117 |
+| # downloads        | 5058743 |
 | # stars            | 8 |
 
 ## Links

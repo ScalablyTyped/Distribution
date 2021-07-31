@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Perfsampleseries")
@@ -37,7 +36,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () exte
     */
   def create(): GaxiosPromise[SchemaPerfSampleSeries] = js.native
   def create(callback: BodyResponseCallback[SchemaPerfSampleSeries]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerfSampleSeries] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPerfSampleSeries] = js.native
   def create(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesCreate): GaxiosPromise[SchemaPerfSampleSeries] = js.native
   def create(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesCreate,
@@ -78,7 +77,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () exte
     */
   def get(): GaxiosPromise[SchemaPerfSampleSeries] = js.native
   def get(callback: BodyResponseCallback[SchemaPerfSampleSeries]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerfSampleSeries] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPerfSampleSeries] = js.native
   def get(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesGet): GaxiosPromise[SchemaPerfSampleSeries] = js.native
   def get(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesGet,
@@ -119,7 +118,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfsampleseries protected () exte
     */
   def list(): GaxiosPromise[SchemaListPerfSampleSeriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPerfSampleSeriesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPerfSampleSeriesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListPerfSampleSeriesResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList): GaxiosPromise[SchemaListPerfSampleSeriesResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesList,

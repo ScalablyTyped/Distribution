@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FootnoteOptions extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Location: WdFootnoteLocation = js.native
+  var Location: WdFootnoteLocation
   
-  var NumberStyle: WdNoteNumberStyle = js.native
+  var NumberStyle: WdNoteNumberStyle
   
-  var NumberingRule: WdNumberingRule = js.native
+  var NumberingRule: WdNumberingRule
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var StartingNumber: Double = js.native
+  var StartingNumber: Double
   
   @JSName("Word.FootnoteOptions_typekey")
-  var WordDotFootnoteOptions_typekey: FootnoteOptions = js.native
+  var WordDotFootnoteOptions_typekey: FootnoteOptions
 }
 object FootnoteOptions {
   

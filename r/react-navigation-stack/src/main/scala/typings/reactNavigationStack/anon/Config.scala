@@ -4,21 +4,21 @@ import typings.reactNavigationStack.reactNavigationStackStrings.timing
 import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Config extends TransitionSpec {
+trait Config
+  extends StObject
+     with TransitionSpec {
   
-  var animation: timing = js.native
+  var animation: timing
   
-  var config: OmitTimingAnimationConfig = js.native
+  var config: OmitTimingAnimationConfig
 }
 object Config {
   
   @scala.inline
-  def apply(animation: timing, config: OmitTimingAnimationConfig): Config = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
+  def apply(config: OmitTimingAnimationConfig): Config = {
+    val __obj = js.Dynamic.literal(animation = "timing", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   

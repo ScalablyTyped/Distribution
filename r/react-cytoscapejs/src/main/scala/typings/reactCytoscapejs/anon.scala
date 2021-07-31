@@ -3,17 +3,15 @@ package typings.reactCytoscapejs
 import typings.cytoscape.mod.ElementDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Edges extends StObject {
     
-    var edges: js.Array[ElementDefinition] = js.native
+    var edges: js.Array[ElementDefinition]
     
-    var nodes: js.Array[ElementDefinition] = js.native
+    var nodes: js.Array[ElementDefinition]
   }
   object Edges {
     

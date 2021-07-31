@@ -2,13 +2,13 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DrawerNavigationState extends NavigationState {
+trait DrawerNavigationState
+  extends StObject
+     with NavigationState {
   
-  var isDrawerOpen: Boolean = js.native
+  var isDrawerOpen: Boolean
 }
 object DrawerNavigationState {
   

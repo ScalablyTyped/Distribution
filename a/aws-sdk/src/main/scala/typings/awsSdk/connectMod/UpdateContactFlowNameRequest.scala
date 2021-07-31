@@ -2,31 +2,29 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateContactFlowNameRequest extends StObject {
   
   /**
     * The identifier of the contact flow.
     */
-  var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId = js.native
+  var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId
   
   /**
     * The description of the contact flow.
     */
-  var Description: js.UndefOr[ContactFlowDescription] = js.native
+  var Description: js.UndefOr[ContactFlowDescription] = js.undefined
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The name of the contact flow.
     */
-  var Name: js.UndefOr[ContactFlowName] = js.native
+  var Name: js.UndefOr[ContactFlowName] = js.undefined
 }
 object UpdateContactFlowNameRequest {
   

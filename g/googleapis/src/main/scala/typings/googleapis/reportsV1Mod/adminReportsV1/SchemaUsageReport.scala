@@ -4,39 +4,37 @@ import typings.googleapis.anon.CustomerId
 import typings.googleapis.anon.DatetimeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a usage report.
   */
-@js.native
 trait SchemaUsageReport extends StObject {
   
   /**
     * The date to which the record belongs.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the type of the item.
     */
-  var entity: js.UndefOr[CustomerId] = js.native
+  var entity: js.UndefOr[CustomerId] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of object.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Parameter value pairs for various applications.
     */
-  var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.native
+  var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.undefined
 }
 object SchemaUsageReport {
   

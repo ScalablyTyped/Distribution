@@ -6,7 +6,6 @@ import typings.std.Record
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchMod {
@@ -33,21 +32,17 @@ object touchMod {
     @scala.inline
     def documentTouchHandlers_=(x: Record[String, js.Array[EventListenerOrEventListenerObject]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("documentTouchHandlers")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.getEventX")
-    @js.native
-    def getEventX(evt: TouchEvent): Double = js.native
+    @scala.inline
+    def getEventX(evt: TouchEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventX")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.getEventY")
-    @js.native
-    def getEventY(evt: TouchEvent): Double = js.native
+    @scala.inline
+    def getEventY(evt: TouchEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventY")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.isTouchEvent")
-    @js.native
-    def isTouchEvent(evt: Event): /* is std.TouchEvent */ Boolean = js.native
+    @scala.inline
+    def isTouchEvent(evt: Event): /* is std.TouchEvent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[/* is std.TouchEvent */ Boolean]
     
-    @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.isTouchEventName")
-    @js.native
-    def isTouchEventName(eventName: String): Boolean = js.native
+    @scala.inline
+    def isTouchEventName(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEventName")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.msTouchDraggableClassName")
     @js.native
@@ -55,9 +50,8 @@ object touchMod {
     @scala.inline
     def msTouchDraggableClassName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("msTouchDraggableClassName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.onEventAttachingToDocument")
-    @js.native
-    def onEventAttachingToDocument(eventName: String, func: EventListenerOrEventListenerObject): Boolean = js.native
+    @scala.inline
+    def onEventAttachingToDocument(eventName: String, func: EventListenerOrEventListenerObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("onEventAttachingToDocument")(eventName.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/utils/touch", "TouchUtils.touchMouseDownEventName")
     @js.native

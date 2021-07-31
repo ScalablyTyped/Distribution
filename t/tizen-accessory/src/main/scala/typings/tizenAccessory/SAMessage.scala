@@ -3,17 +3,15 @@ package typings.tizenAccessory
 import typings.tizenAccessory.anon.Onsent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAMessage extends StObject {
   
-  def sendData(peerAgent: SAPeerAgent, data: String, callback: Onsent): Unit = js.native
+  def sendData(peerAgent: SAPeerAgent, data: String, callback: Onsent): Unit
   
-  def sendSecureData(peerAgent: SAPeerAgent, data: String, callback: Onsent): Unit = js.native
+  def sendSecureData(peerAgent: SAPeerAgent, data: String, callback: Onsent): Unit
   
-  def setMessageReceiveListener(receiveDataCallback: js.Function2[/* peerAgent */ SAPeerAgent, /* data */ String, Unit]): Unit = js.native
+  def setMessageReceiveListener(receiveDataCallback: js.Function2[/* peerAgent */ SAPeerAgent, /* data */ String, Unit]): Unit
 }
 object SAMessage {
   

@@ -2,13 +2,11 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseGroupByHooks[D /* <: js.Object */] extends StObject {
   
-  var getGroupByToggleProps: js.Array[HeaderGroupPropGetter[D]] = js.native
+  var getGroupByToggleProps: js.Array[HeaderGroupPropGetter[D]]
 }
 object UseGroupByHooks {
   
@@ -19,7 +17,7 @@ object UseGroupByHooks {
   }
   
   @scala.inline
-  implicit class UseGroupByHooksMutableBuilder[Self <: UseGroupByHooks[_], D /* <: js.Object */] (val x: Self with UseGroupByHooks[D]) extends AnyVal {
+  implicit class UseGroupByHooksMutableBuilder[Self <: UseGroupByHooks[?], D /* <: js.Object */] (val x: Self & UseGroupByHooks[D]) extends AnyVal {
     
     @scala.inline
     def setGetGroupByToggleProps(value: js.Array[HeaderGroupPropGetter[D]]): Self = StObject.set(x, "getGroupByToggleProps", value.asInstanceOf[js.Any])

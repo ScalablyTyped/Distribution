@@ -6,23 +6,23 @@ import typings.openfin.openfinNumbers.`1`
 import typings.openfin.openfinNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowBoundsChange[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowBoundsChange[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var changeType: `0` | `1` | `2` = js.native
+  var changeType: `0` | `1` | `2`
   
-  var deferred: Boolean = js.native
+  var deferred: Boolean
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object WindowBoundsChange {
   
@@ -45,7 +45,7 @@ object WindowBoundsChange {
   }
   
   @scala.inline
-  implicit class WindowBoundsChangeMutableBuilder[Self <: WindowBoundsChange[_, _], Topic, Type] (val x: Self with (WindowBoundsChange[Topic, Type])) extends AnyVal {
+  implicit class WindowBoundsChangeMutableBuilder[Self <: WindowBoundsChange[?, ?], Topic, Type] (val x: Self & (WindowBoundsChange[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setChangeType(value: `0` | `1` | `2`): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])

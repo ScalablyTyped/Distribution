@@ -3,15 +3,13 @@ package typings.expoConfigureSplashScreen.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertContent extends StObject {
   
-  var insertContent: String = js.native
+  var insertContent: String
   
-  var insertPattern: RegExp | String = js.native
+  var insertPattern: RegExp | String
 }
 object InsertContent {
   

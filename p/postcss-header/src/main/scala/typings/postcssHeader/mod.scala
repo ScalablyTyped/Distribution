@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,19 +14,18 @@ object mod extends Shortcut {
   
   type Header = Plugin_[Options]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The string which will be put at the beginning of the css file.
       */
-    var banner: js.UndefOr[String] = js.native
+    var banner: js.UndefOr[String] = js.undefined
     
     /**
       * The string which will be put at the beginning of the css file.
       * @default ''
       */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
   }
   object Options {
     

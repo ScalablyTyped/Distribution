@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object TetheringOperationalState extends StObject {
   
   /** The tethering feature is currently in transition between the On and Off states. */
   @js.native
-  sealed trait inTransition extends TetheringOperationalState
+  sealed trait inTransition
+    extends StObject
+       with TetheringOperationalState
   
   /** Tethering is off. */
   @js.native
-  sealed trait off extends TetheringOperationalState
+  sealed trait off
+    extends StObject
+       with TetheringOperationalState
   
   /** Tethering is on. */
   @js.native
-  sealed trait on extends TetheringOperationalState
+  sealed trait on
+    extends StObject
+       with TetheringOperationalState
   
   /** Current operational state is unknown. */
   @js.native
-  sealed trait unknown extends TetheringOperationalState
+  sealed trait unknown
+    extends StObject
+       with TetheringOperationalState
 }

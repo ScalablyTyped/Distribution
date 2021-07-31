@@ -2,47 +2,48 @@ package typings.formatjsEcma402Abstract
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluralRulesGetOperandsMod {
   
-  @JSImport("@formatjs/ecma402-abstract/PluralRules/GetOperands", "GetOperands")
+  @JSImport("@formatjs/ecma402-abstract/PluralRules/GetOperands", JSImport.Namespace)
   @js.native
-  def GetOperands(s: String): OperandsRecord = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def GetOperands(s: String): OperandsRecord = ^.asInstanceOf[js.Dynamic].applyDynamic("GetOperands")(s.asInstanceOf[js.Any]).asInstanceOf[OperandsRecord]
+  
   trait OperandsRecord extends StObject {
     
     /**
       * Number of visible fractional digits in [[Number]], with trailing zeroes.
       */
-    var FractionDigits: Double = js.native
+    var FractionDigits: Double
     
     /**
       * Number of visible fractional digits in [[Number]], without trailing zeroes.
       */
-    var FractionDigitsWithoutTrailing: Double = js.native
+    var FractionDigitsWithoutTrailing: Double
     
     /**
       * Number of digits of `number`
       */
-    var IntegerDigits: Double = js.native
+    var IntegerDigits: Double
     
     /**
       * Absolute value of the source number (integer and decimals)
       */
-    var Number: Double = js.native
+    var Number: Double
     
     /**
       * Number of visible fraction digits in [[Number]], with trailing zeroes.
       */
-    var NumberOfFractionDigits: Double = js.native
+    var NumberOfFractionDigits: Double
     
     /**
       * Number of visible fraction digits in [[Number]], without trailing zeroes.
       */
-    var NumberOfFractionDigitsWithoutTrailing: Double = js.native
+    var NumberOfFractionDigitsWithoutTrailing: Double
   }
   object OperandsRecord {
     

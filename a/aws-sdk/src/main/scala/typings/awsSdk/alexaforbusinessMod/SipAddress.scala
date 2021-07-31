@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SipAddress extends StObject {
   
   /**
     * The type of the SIP address.
     */
-  var Type: SipType = js.native
+  var Type: SipType
   
   /**
     * The URI for the SIP address.
     */
-  var Uri: SipUri = js.native
+  var Uri: SipUri
 }
 object SipAddress {
   

@@ -2,27 +2,25 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hash extends StObject {
   
-  var hash: String = js.native
+  var hash: String
   
-  var host: String = js.native
+  var host: String
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var href: String = js.native
+  var href: String
   
-  var pathname: String = js.native
+  var pathname: String
   
-  var port: String = js.native
+  var port: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var search: String = js.native
+  var search: String
 }
 object Hash {
   

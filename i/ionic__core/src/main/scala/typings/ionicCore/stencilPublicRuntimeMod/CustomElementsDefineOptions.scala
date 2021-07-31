@@ -7,10 +7,8 @@ import typings.std.EventTarget
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomElementsDefineOptions extends StObject {
   
   var ael: js.UndefOr[
@@ -21,17 +19,17 @@ trait CustomElementsDefineOptions extends StObject {
       /* options */ Boolean | AddEventListenerOptions, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var ce: js.UndefOr[
-    js.Function2[/* eventName */ String, /* opts */ js.UndefOr[js.Any], CustomEvent[_]]
-  ] = js.native
+    js.Function2[/* eventName */ String, /* opts */ js.UndefOr[js.Any], CustomEvent[js.Any]]
+  ] = js.undefined
   
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
-  var jmp: js.UndefOr[js.Function1[/* c */ js.Function, _]] = js.native
+  var jmp: js.UndefOr[js.Function1[/* c */ js.Function, js.Any]] = js.undefined
   
-  var raf: js.UndefOr[js.Function1[/* c */ FrameRequestCallback, Double]] = js.native
+  var raf: js.UndefOr[js.Function1[/* c */ FrameRequestCallback, Double]] = js.undefined
   
   var rel: js.UndefOr[
     js.Function4[
@@ -41,13 +39,13 @@ trait CustomElementsDefineOptions extends StObject {
       /* options */ Boolean | AddEventListenerOptions, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var resourcesUrl: js.UndefOr[String] = js.native
+  var resourcesUrl: js.UndefOr[String] = js.undefined
   
-  var syncQueue: js.UndefOr[Boolean] = js.native
+  var syncQueue: js.UndefOr[Boolean] = js.undefined
   
-  var transformTagName: js.UndefOr[js.Function1[/* tagName */ String, String]] = js.native
+  var transformTagName: js.UndefOr[js.Function1[/* tagName */ String, String]] = js.undefined
 }
 object CustomElementsDefineOptions {
   
@@ -69,7 +67,7 @@ object CustomElementsDefineOptions {
     def setAelUndefined: Self = StObject.set(x, "ael", js.undefined)
     
     @scala.inline
-    def setCe(value: (/* eventName */ String, /* opts */ js.UndefOr[js.Any]) => CustomEvent[_]): Self = StObject.set(x, "ce", js.Any.fromFunction2(value))
+    def setCe(value: (/* eventName */ String, /* opts */ js.UndefOr[js.Any]) => CustomEvent[js.Any]): Self = StObject.set(x, "ce", js.Any.fromFunction2(value))
     
     @scala.inline
     def setCeUndefined: Self = StObject.set(x, "ce", js.undefined)
@@ -84,7 +82,7 @@ object CustomElementsDefineOptions {
     def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
     @scala.inline
-    def setJmp(value: /* c */ js.Function => _): Self = StObject.set(x, "jmp", js.Any.fromFunction1(value))
+    def setJmp(value: /* c */ js.Function => js.Any): Self = StObject.set(x, "jmp", js.Any.fromFunction1(value))
     
     @scala.inline
     def setJmpUndefined: Self = StObject.set(x, "jmp", js.undefined)

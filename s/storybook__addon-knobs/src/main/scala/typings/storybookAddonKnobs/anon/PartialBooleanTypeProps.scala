@@ -4,16 +4,14 @@ import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnob
 import typings.storybookAddonKnobs.booleanMod.BooleanTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Boolean.BooleanTypeProps> */
-@js.native
 trait PartialBooleanTypeProps extends StObject {
   
-  var knob: js.UndefOr[BooleanTypeKnob] = js.native
+  var knob: js.UndefOr[BooleanTypeKnob] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* value */ BooleanTypeKnobValue, BooleanTypeKnobValue]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ BooleanTypeKnobValue, BooleanTypeKnobValue]] = js.undefined
 }
 object PartialBooleanTypeProps {
   

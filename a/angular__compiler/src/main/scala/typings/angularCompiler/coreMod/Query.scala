@@ -2,23 +2,21 @@ package typings.angularCompiler.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
-  var descendants: Boolean = js.native
+  var descendants: Boolean
   
-  var first: Boolean = js.native
+  var first: Boolean
   
-  var isViewQuery: Boolean = js.native
+  var isViewQuery: Boolean
   
-  var read: js.Any = js.native
+  var read: js.Any
   
-  var selector: js.Any = js.native
+  var selector: js.Any
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
 }
 object Query {
   

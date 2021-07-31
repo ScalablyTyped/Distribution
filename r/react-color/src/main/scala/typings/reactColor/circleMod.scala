@@ -8,7 +8,6 @@ import typings.reactColor.mod.ColorResult
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleMod {
@@ -22,21 +21,22 @@ object circleMod {
   trait CirclePicker
     extends Component[CirclePickerProps, js.Object, js.Any]
   
-  @js.native
-  trait CirclePickerProps extends ColorPickerProps[CirclePicker] {
+  trait CirclePickerProps
+    extends StObject
+       with ColorPickerProps[CirclePicker] {
     
-    var circleSize: js.UndefOr[Double] = js.native
+    var circleSize: js.UndefOr[Double] = js.undefined
     
-    var circleSpacing: js.UndefOr[Double] = js.native
+    var circleSpacing: js.UndefOr[Double] = js.undefined
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
     @JSName("styles")
-    var styles_CirclePickerProps: js.UndefOr[PartialClassesCirclePicke] = js.native
+    var styles_CirclePickerProps: js.UndefOr[PartialClassesCirclePicke] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object CirclePickerProps {
     
@@ -90,10 +90,9 @@ object circleMod {
     }
   }
   
-  @js.native
   trait CirclePickerStylesProps extends StObject {
     
-    var card: CSSProperties = js.native
+    var card: CSSProperties
   }
   object CirclePickerStylesProps {
     

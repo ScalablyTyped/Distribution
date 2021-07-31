@@ -8,13 +8,16 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object experimentalMod {
   
   /* augmented module */
   object reactDomAugmentingMod {
+    
+    @JSImport("react-dom", JSImport.Namespace)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Replaces `ReactDOM.render` when the `.render` method is called and enables Blocking Mode.
@@ -28,38 +31,33 @@ object experimentalMod {
       * @see https://reactjs.org/docs/concurrent-mode-adoption.html#migration-step-blocking-mode
       * @see https://reactjs.org/docs/concurrent-mode-reference.html#createblockingroot
       */
-    @JSImport("react-dom", "unstable_createBlockingRoot")
-    @js.native
-    def unstableCreateBlockingRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = js.native
+    @scala.inline
+    def unstableCreateBlockingRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createBlockingRoot")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
     
     /**
       * Replaces `ReactDOM.render` when the `.render` method is called and enables Concurrent Mode.
       *
       * @see https://reactjs.org/docs/concurrent-mode-reference.html#createroot
       */
-    @JSImport("react-dom", "unstable_createRoot")
-    @js.native
-    def unstableCreateRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = js.native
+    @scala.inline
+    def unstableCreateRoot(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createRoot")(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root]
     
-    @JSImport("react-dom", "unstable_flushControlled")
-    @js.native
-    def unstableFlushControlled(callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def unstableFlushControlled(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_flushControlled")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // enableSelectiveHydration feature
     /**
       * @see https://github.com/facebook/react/commit/3a2b5f148d450c69aab67f055fc441d294c23518
       */
-    @JSImport("react-dom", "unstable_scheduleHydration")
-    @js.native
-    def unstableScheduleHydration(target: Element | Document | DocumentFragment | Comment): Unit = js.native
+    @scala.inline
+    def unstableScheduleHydration(target: Element | Document | DocumentFragment | Comment): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_scheduleHydration")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // enableSuspenseServerRenderer feature
-    @js.native
     trait HydrationOptions extends StObject {
       
-      var onDeleted: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.native
+      var onDeleted: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.undefined
       
-      var onHydrated: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.native
+      var onHydrated: js.UndefOr[js.Function1[/* suspenseInstance */ Comment, Unit]] = js.undefined
     }
     object HydrationOptions {
       
@@ -99,12 +97,11 @@ object experimentalMod {
     }
     
     // exposeConcurrentModeAPIs features
-    @js.native
     trait RootOptions extends StObject {
       
-      var hydrate: js.UndefOr[Boolean] = js.native
+      var hydrate: js.UndefOr[Boolean] = js.undefined
       
-      var hydrationOptions: js.UndefOr[HydrationOptions] = js.native
+      var hydrationOptions: js.UndefOr[HydrationOptions] = js.undefined
     }
     object RootOptions {
       

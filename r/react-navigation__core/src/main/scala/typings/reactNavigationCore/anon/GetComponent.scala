@@ -4,20 +4,18 @@ import typings.react.mod.ReactNode
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetComponent[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
   /**
     * Render callback to render content of this screen.
     */
-  def children(props: Route[ParamList, RouteName]): ReactNode = js.native
+  def children(props: Route[ParamList, RouteName]): ReactNode
   
-  var component: js.UndefOr[scala.Nothing] = js.native
+  var component: js.UndefOr[scala.Nothing] = js.undefined
   
-  var getComponent: js.UndefOr[scala.Nothing] = js.native
+  var getComponent: js.UndefOr[scala.Nothing] = js.undefined
 }
 object GetComponent {
   
@@ -28,7 +26,7 @@ object GetComponent {
   }
   
   @scala.inline
-  implicit class GetComponentMutableBuilder[Self <: GetComponent[_, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self with (GetComponent[ParamList, RouteName])) extends AnyVal {
+  implicit class GetComponentMutableBuilder[Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (GetComponent[ParamList, RouteName])) extends AnyVal {
     
     @scala.inline
     def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

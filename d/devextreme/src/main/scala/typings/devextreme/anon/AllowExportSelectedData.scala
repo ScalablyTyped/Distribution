@@ -2,29 +2,27 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowExportSelectedData extends StObject {
   
-  var allowExportSelectedData: js.UndefOr[Boolean] = js.native
+  var allowExportSelectedData: js.UndefOr[Boolean] = js.undefined
   
-  var customizeExcelCell: js.UndefOr[js.Function1[/* options */ FillPatternColor, _]] = js.native
+  var customizeExcelCell: js.UndefOr[js.Function1[/* options */ FillPatternColor, js.Any]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var excelFilterEnabled: js.UndefOr[Boolean] = js.native
+  var excelFilterEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var excelWrapTextEnabled: js.UndefOr[Boolean] = js.native
+  var excelWrapTextEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var ignoreExcelErrors: js.UndefOr[Boolean] = js.native
+  var ignoreExcelErrors: js.UndefOr[Boolean] = js.undefined
   
-  var proxyUrl: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.undefined
   
-  var texts: js.UndefOr[ExportAll] = js.native
+  var texts: js.UndefOr[ExportAll] = js.undefined
 }
 object AllowExportSelectedData {
   
@@ -44,7 +42,7 @@ object AllowExportSelectedData {
     def setAllowExportSelectedDataUndefined: Self = StObject.set(x, "allowExportSelectedData", js.undefined)
     
     @scala.inline
-    def setCustomizeExcelCell(value: /* options */ FillPatternColor => _): Self = StObject.set(x, "customizeExcelCell", js.Any.fromFunction1(value))
+    def setCustomizeExcelCell(value: /* options */ FillPatternColor => js.Any): Self = StObject.set(x, "customizeExcelCell", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCustomizeExcelCellUndefined: Self = StObject.set(x, "customizeExcelCell", js.undefined)

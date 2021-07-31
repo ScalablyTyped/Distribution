@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynatraceConnectorProfileCredentials extends StObject {
   
   /**
     *  The API tokens used by Dynatrace API to authenticate various API calls. 
     */
-  var apiToken: ApiToken = js.native
+  var apiToken: ApiToken
 }
 object DynatraceConnectorProfileCredentials {
   

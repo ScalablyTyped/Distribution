@@ -6,11 +6,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.valueChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapClientEdit extends Control {
+trait BootstrapClientEdit
+  extends StObject
+     with Control {
   
   def focus(): Unit = js.native
   
@@ -29,7 +30,7 @@ trait BootstrapClientEdit extends Control {
   def getValue(): js.Any = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[EditValidationEventArgs | EventArgs | ProcessingModeEventArgs], 

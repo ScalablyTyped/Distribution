@@ -7,34 +7,40 @@ import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("katex", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("katex", "ParseError")
   @js.native
-  class ParseError protected () extends Error {
+  class ParseError protected ()
+    extends StObject
+       with Error {
     def this(message: String, lexer: js.Any, position: Double) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var position: Double = js.native
   }
   
-  @JSImport("katex", "render")
-  @js.native
-  def render(tex: String, element: HTMLElement): Unit = js.native
-  @JSImport("katex", "render")
-  @js.native
-  def render(tex: String, element: HTMLElement, options: KatexOptions): Unit = js.native
+  @scala.inline
+  def render(tex: String, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def render(tex: String, element: HTMLElement, options: KatexOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("katex", "renderToString")
-  @js.native
-  def renderToString(tex: String): String = js.native
-  @JSImport("katex", "renderToString")
-  @js.native
-  def renderToString(tex: String, options: KatexOptions): String = js.native
+  @scala.inline
+  def renderToString(tex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderToString(tex: String, options: KatexOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait KatexOptions extends StObject {
     
     /**
@@ -48,7 +54,7 @@ object mod {
       *
       * @default false
       */
-    var colorIsTextColor: js.UndefOr[Boolean] = js.native
+    var colorIsTextColor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, math will be rendered in display mode
@@ -57,12 +63,12 @@ object mod {
       * If `false`, math will be rendered in inline mode
       * @default false
       */
-    var displayMode: js.UndefOr[Boolean] = js.native
+    var displayMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A Color string given in format `#XXX` or `#XXXXXX`
       */
-    var errorColor: js.UndefOr[String] = js.native
+    var errorColor: js.UndefOr[String] = js.undefined
     
     /**
       * If `true`, display math renders flush left with a 2em left margin,
@@ -70,14 +76,14 @@ object mod {
       *
       * @default false
       */
-    var fleqn: js.UndefOr[Boolean] = js.native
+    var fleqn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Place KaTeX code in the global group.
       *
       * @default false
       */
-    var globalGroup: js.UndefOr[Boolean] = js.native
+    var globalGroup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, display math has \tags rendered on the left
@@ -85,14 +91,14 @@ object mod {
       *
       * @default false
       */
-    var leqno: js.UndefOr[Boolean] = js.native
+    var leqno: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A collection of custom macros.
       *
       * See `src/macros.js` for its usage
       */
-    var macros: js.UndefOr[js.Any] = js.native
+    var macros: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Limit the number of macro expansions to specified number
@@ -102,7 +108,7 @@ object mod {
       *
       * @default 1000
       */
-    var maxExpand: js.UndefOr[Double] = js.native
+    var maxExpand: js.UndefOr[Double] = js.undefined
     
     /**
       * All user-specified sizes will be caped to `maxSize` ems
@@ -112,7 +118,7 @@ object mod {
       *
       * @default Infinity
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies a minimum thickness, in ems, for fraction lines,
@@ -120,7 +126,7 @@ object mod {
       * \\underline, \overline, and the borders of \fbox, \boxed, and
       * \fcolorbox.
       */
-    var minRuleThickness: js.UndefOr[Double] = js.native
+    var minRuleThickness: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines the markup language of the output. The valid choices are:
@@ -131,7 +137,7 @@ object mod {
       *
       * @default 'htmlAndMathml'
       */
-    var output: js.UndefOr[html | mathml | htmlAndMathml] = js.native
+    var output: js.UndefOr[html | mathml | htmlAndMathml] = js.undefined
     
     /**
       * If `false` or `"ignore"`, allow features that make
@@ -143,7 +149,7 @@ object mod {
       *
       * @default "warn"
       */
-    var strict: js.UndefOr[Boolean | String | js.Function] = js.native
+    var strict: js.UndefOr[Boolean | String | js.Function] = js.undefined
     
     /**
       * If `true`, KaTeX will throw a `ParseError` when
@@ -154,7 +160,7 @@ object mod {
       * hover text giving the error, in color given by errorColor
       * @default true
       */
-    var throwOnError: js.UndefOr[Boolean] = js.native
+    var throwOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `false` (do not trust input), prevent any commands that could enable adverse behavior, rendering them instead in errorColor.
@@ -163,7 +169,7 @@ object mod {
       *
       * @default false
       */
-    var trust: js.UndefOr[Boolean | (js.Function1[/* context */ TrustContext, Boolean])] = js.native
+    var trust: js.UndefOr[Boolean | (js.Function1[/* context */ TrustContext, Boolean])] = js.undefined
   }
   object KatexOptions {
     
@@ -265,14 +271,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TrustContext extends StObject {
     
-    var command: String = js.native
+    var command: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var url: String = js.native
+    var url: String
   }
   object TrustContext {
     

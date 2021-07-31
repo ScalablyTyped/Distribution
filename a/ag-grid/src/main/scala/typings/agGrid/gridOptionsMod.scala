@@ -85,29 +85,27 @@ import typings.std.MouseEvent
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridOptionsMod {
   
   type GetContextMenuItems = js.Function1[/* params */ GetContextMenuItemsParams, js.Array[String | MenuItemDef]]
   
-  @js.native
   trait GetContextMenuItemsParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var defaultItems: js.Array[String] = js.native
+    var defaultItems: js.Array[String]
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object GetContextMenuItemsParams {
     
@@ -158,18 +156,17 @@ object gridOptionsMod {
   
   type GetMainMenuItems = js.Function1[/* params */ GetMainMenuItemsParams, js.Array[String | MenuItemDef]]
   
-  @js.native
   trait GetMainMenuItemsParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var column: Column = js.native
+    var column: Column
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var defaultItems: js.Array[String] = js.native
+    var defaultItems: js.Array[String]
   }
   object GetMainMenuItemsParams {
     
@@ -212,604 +209,605 @@ object gridOptionsMod {
   
   type GetRowNodeIdFunc = js.Function1[/* data */ js.Any, String]
   
-  @js.native
-  trait GridOptions extends ComponentHolder {
+  trait GridOptions
+    extends StObject
+       with ComponentHolder {
     
-    var accentedSort: js.UndefOr[Boolean] = js.native
+    var accentedSort: js.UndefOr[Boolean] = js.undefined
     
-    var aggFuncs: js.UndefOr[StringDictionary[IAggFunc]] = js.native
+    var aggFuncs: js.UndefOr[StringDictionary[IAggFunc]] = js.undefined
     
-    var aggregateOnlyChangedColumns: js.UndefOr[Boolean] = js.native
+    var aggregateOnlyChangedColumns: js.UndefOr[Boolean] = js.undefined
     
-    var alignedGrids: js.UndefOr[js.Array[GridOptions]] = js.native
+    var alignedGrids: js.UndefOr[js.Array[GridOptions]] = js.undefined
     
-    var allowContextMenuWithControlKey: js.UndefOr[Boolean] = js.native
+    var allowContextMenuWithControlKey: js.UndefOr[Boolean] = js.undefined
     
-    var alwaysShowStatusBar: js.UndefOr[Boolean] = js.native
+    var alwaysShowStatusBar: js.UndefOr[Boolean] = js.undefined
     
-    var angularCompileFilters: js.UndefOr[Boolean] = js.native
+    var angularCompileFilters: js.UndefOr[Boolean] = js.undefined
     
-    var angularCompileHeaders: js.UndefOr[Boolean] = js.native
+    var angularCompileHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var angularCompileRows: js.UndefOr[Boolean] = js.native
+    var angularCompileRows: js.UndefOr[Boolean] = js.undefined
     
-    var animateRows: js.UndefOr[Boolean] = js.native
-    
-    /****************************************************************
-      * Don't forget to update ComponentUtil if changing this class. *
-      ****************************************************************/
-    var api: js.UndefOr[GridApi] = js.native
-    
-    var autoGroupColumnDef: js.UndefOr[ColDef] = js.native
-    
-    var autoSizePadding: js.UndefOr[Double] = js.native
-    
-    var batchUpdateWaitMillis: js.UndefOr[Double] = js.native
-    
-    var cacheBlockSize: js.UndefOr[Double] = js.native
-    
-    var cacheOverflowSize: js.UndefOr[Double] = js.native
-    
-    var cacheQuickFilter: js.UndefOr[Boolean] = js.native
-    
-    var clipboardDeliminator: js.UndefOr[String] = js.native
-    
-    var colResizeDefault: js.UndefOr[String] = js.native
-    
-    var colWidth: js.UndefOr[Double] = js.native
-    
-    var columnApi: js.UndefOr[ColumnApi] = js.native
-    
-    var columnDefs: js.UndefOr[js.Array[ColDef | ColGroupDef]] = js.native
-    
-    var columnTypes: js.UndefOr[StringDictionary[ColDef]] = js.native
-    
-    var components: js.UndefOr[StringDictionary[AgGridRegisteredComponentInput[IComponent[_]]]] = js.native
+    var animateRows: js.UndefOr[Boolean] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. *
       ****************************************************************/
-    var context: js.UndefOr[js.Any] = js.native
+    var api: js.UndefOr[GridApi] = js.undefined
     
-    var contractColumnSelection: js.UndefOr[Boolean] = js.native
+    var autoGroupColumnDef: js.UndefOr[ColDef] = js.undefined
     
-    var datasource: js.UndefOr[IDatasource] = js.native
+    var autoSizePadding: js.UndefOr[Double] = js.undefined
     
-    var dateComponent: js.UndefOr[Instantiable] = js.native
+    var batchUpdateWaitMillis: js.UndefOr[Double] = js.undefined
     
-    var dateComponentFramework: js.UndefOr[js.Any] = js.native
+    var cacheBlockSize: js.UndefOr[Double] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var cacheOverflowSize: js.UndefOr[Double] = js.undefined
     
-    var defaultColDef: js.UndefOr[ColDef] = js.native
+    var cacheQuickFilter: js.UndefOr[Boolean] = js.undefined
     
-    var defaultColGroupDef: js.UndefOr[ColGroupDef] = js.native
+    var clipboardDeliminator: js.UndefOr[String] = js.undefined
     
-    var defaultExportParams: js.UndefOr[CsvExportParams] = js.native
+    var colResizeDefault: js.UndefOr[String] = js.undefined
     
-    var defaultGroupSortComparator: js.UndefOr[js.Function2[/* nodeA */ RowNode, /* nodeB */ RowNode, Double]] = js.native
+    var colWidth: js.UndefOr[Double] = js.undefined
     
-    var deltaRowDataMode: js.UndefOr[Boolean] = js.native
+    var columnApi: js.UndefOr[ColumnApi] = js.undefined
     
-    var detailCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
+    var columnDefs: js.UndefOr[js.Array[ColDef | ColGroupDef]] = js.undefined
     
-    var detailCellRendererFramework: js.UndefOr[js.Any] = js.native
+    var columnTypes: js.UndefOr[StringDictionary[ColDef]] = js.undefined
     
-    var detailCellRendererParams: js.UndefOr[js.Any] = js.native
-    
-    var detailRowHeight: js.UndefOr[Double] = js.native
-    
-    var doesDataFlower: js.UndefOr[js.Function1[/* dataItem */ js.Any, Boolean]] = js.native
-    
-    var doesExternalFilterPass: js.UndefOr[js.Function1[/* node */ RowNode, Boolean]] = js.native
-    
-    var domLayout: js.UndefOr[String] = js.native
-    
-    var editType: js.UndefOr[String] = js.native
-    
-    var embedFullWidthRows: js.UndefOr[Boolean] = js.native
-    
-    var enableCellChangeFlash: js.UndefOr[Boolean] = js.native
-    
-    var enableCellExpressions: js.UndefOr[Boolean] = js.native
-    
-    var enableColResize: js.UndefOr[Boolean] = js.native
-    
-    var enableFilter: js.UndefOr[Boolean] = js.native
-    
-    var enableGroupEdit: js.UndefOr[Boolean] = js.native
-    
-    var enableOldSetFilterModel: js.UndefOr[Boolean] = js.native
-    
-    var enableRangeSelection: js.UndefOr[Boolean] = js.native
-    
-    var enableRtl: js.UndefOr[Boolean] = js.native
-    
-    var enableServerSideFilter: js.UndefOr[Boolean] = js.native
-    
-    var enableServerSideSorting: js.UndefOr[Boolean] = js.native
-    
-    var enableSorting: js.UndefOr[Boolean] = js.native
-    
-    var enableStatusBar: js.UndefOr[Boolean] = js.native
-    
-    var ensureDomOrder: js.UndefOr[Boolean] = js.native
-    
-    var enterMovesDown: js.UndefOr[Boolean] = js.native
-    
-    var enterMovesDownAfterEdit: js.UndefOr[Boolean] = js.native
-    
-    var excelStyles: js.UndefOr[js.Array[_]] = js.native
-    
-    var floatingFilter: js.UndefOr[Boolean] = js.native
-    
-    var floatingFiltersHeight: js.UndefOr[Double] = js.native
-    
-    var forPrint: js.UndefOr[Boolean] = js.native
-    
-    var frameworkComponents: js.UndefOr[StringDictionary[InstantiableAny]] = js.native
-    
-    var fullWidthCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
-    
-    var fullWidthCellRendererFramework: js.UndefOr[js.Any] = js.native
-    
-    var fullWidthCellRendererParams: js.UndefOr[js.Any] = js.native
-    
-    var functionsPassive: js.UndefOr[Boolean] = js.native
-    
-    var functionsReadOnly: js.UndefOr[Boolean] = js.native
-    
-    var getBusinessKeyForNode: js.UndefOr[js.Function1[/* node */ RowNode, String]] = js.native
-    
-    var getChildCount: js.UndefOr[js.Function1[/* dataItem */ js.Any, Double]] = js.native
-    
-    var getContextMenuItems: js.UndefOr[GetContextMenuItems] = js.native
-    
-    var getDataPath: js.UndefOr[GetDataPath] = js.native
-    
-    var getDocument: js.UndefOr[js.Function0[Document]] = js.native
-    
-    var getMainMenuItems: js.UndefOr[GetMainMenuItems] = js.native
-    
-    var getNodeChildDetails: js.UndefOr[GetNodeChildDetails] = js.native
-    
-    var getRowClass: js.UndefOr[js.Function1[/* params */ js.Any, String | js.Array[String]]] = js.native
-    
-    var getRowHeight: js.UndefOr[js.Function] = js.native
-    
-    var getRowNodeId: js.UndefOr[GetRowNodeIdFunc] = js.native
-    
-    var getRowStyle: js.UndefOr[js.Function] = js.native
-    
-    var gridAutoHeight: js.UndefOr[Boolean] = js.native
-    
-    var groupColumnDef: js.UndefOr[ColDef] = js.native
-    
-    var groupDefaultExpanded: js.UndefOr[Double] = js.native
-    
-    var groupHeaderHeight: js.UndefOr[Double] = js.native
-    
-    var groupHideOpenParents: js.UndefOr[Boolean] = js.native
-    
-    var groupIncludeFooter: js.UndefOr[Boolean] = js.native
-    
-    var groupIncludeTotalFooter: js.UndefOr[Boolean] = js.native
-    
-    var groupMultiAutoColumn: js.UndefOr[Boolean] = js.native
-    
-    var groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.native
-    
-    var groupRemoveSingleChildren: js.UndefOr[Boolean] = js.native
-    
-    var groupRowAggNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], _]] = js.native
-    
-    var groupRowInnerRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
-    
-    var groupRowInnerRendererFramework: js.UndefOr[js.Any] = js.native
-    
-    var groupRowRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.native
-    
-    var groupRowRendererFramework: js.UndefOr[js.Any] = js.native
-    
-    var groupRowRendererParams: js.UndefOr[js.Any] = js.native
-    
-    var groupSelectsChildren: js.UndefOr[Boolean] = js.native
-    
-    var groupSelectsFiltered: js.UndefOr[Boolean] = js.native
+    var components: js.UndefOr[StringDictionary[AgGridRegisteredComponentInput[IComponent[js.Any]]]] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. *
       ****************************************************************/
-    var groupSuppressAutoColumn: js.UndefOr[Boolean] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var groupSuppressBlankHeader: js.UndefOr[Boolean] = js.native
+    var contractColumnSelection: js.UndefOr[Boolean] = js.undefined
     
-    var groupSuppressRow: js.UndefOr[Boolean] = js.native
+    var datasource: js.UndefOr[IDatasource] = js.undefined
     
-    var groupUseEntireRow: js.UndefOr[Boolean] = js.native
+    var dateComponent: js.UndefOr[Instantiable] = js.undefined
     
-    var headerHeight: js.UndefOr[Double] = js.native
+    var dateComponentFramework: js.UndefOr[js.Any] = js.undefined
     
-    var icons: js.UndefOr[js.Any] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var infiniteInitialRowCount: js.UndefOr[Double] = js.native
+    var defaultColDef: js.UndefOr[ColDef] = js.undefined
     
-    var isExternalFilterPresent: js.UndefOr[js.Function0[Boolean]] = js.native
+    var defaultColGroupDef: js.UndefOr[ColGroupDef] = js.undefined
     
-    var isFullWidthCell: js.UndefOr[js.Function1[/* rowNode */ RowNode, Boolean]] = js.native
+    var defaultExportParams: js.UndefOr[CsvExportParams] = js.undefined
     
-    var isRowMaster: js.UndefOr[IsRowMaster] = js.native
+    var defaultGroupSortComparator: js.UndefOr[js.Function2[/* nodeA */ RowNode, /* nodeB */ RowNode, Double]] = js.undefined
     
-    var isRowSelectable: js.UndefOr[IsRowSelectable] = js.native
+    var deltaRowDataMode: js.UndefOr[Boolean] = js.undefined
     
-    var loadingOverlayComponent: js.UndefOr[InstantiableILoadingOverlayComp | String] = js.native
+    var detailCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
     
-    var loadingOverlayComponentFramework: js.UndefOr[js.Any] = js.native
+    var detailCellRendererFramework: js.UndefOr[js.Any] = js.undefined
+    
+    var detailCellRendererParams: js.UndefOr[js.Any] = js.undefined
+    
+    var detailRowHeight: js.UndefOr[Double] = js.undefined
+    
+    var doesDataFlower: js.UndefOr[js.Function1[/* dataItem */ js.Any, Boolean]] = js.undefined
+    
+    var doesExternalFilterPass: js.UndefOr[js.Function1[/* node */ RowNode, Boolean]] = js.undefined
+    
+    var domLayout: js.UndefOr[String] = js.undefined
+    
+    var editType: js.UndefOr[String] = js.undefined
+    
+    var embedFullWidthRows: js.UndefOr[Boolean] = js.undefined
+    
+    var enableCellChangeFlash: js.UndefOr[Boolean] = js.undefined
+    
+    var enableCellExpressions: js.UndefOr[Boolean] = js.undefined
+    
+    var enableColResize: js.UndefOr[Boolean] = js.undefined
+    
+    var enableFilter: js.UndefOr[Boolean] = js.undefined
+    
+    var enableGroupEdit: js.UndefOr[Boolean] = js.undefined
+    
+    var enableOldSetFilterModel: js.UndefOr[Boolean] = js.undefined
+    
+    var enableRangeSelection: js.UndefOr[Boolean] = js.undefined
+    
+    var enableRtl: js.UndefOr[Boolean] = js.undefined
+    
+    var enableServerSideFilter: js.UndefOr[Boolean] = js.undefined
+    
+    var enableServerSideSorting: js.UndefOr[Boolean] = js.undefined
+    
+    var enableSorting: js.UndefOr[Boolean] = js.undefined
+    
+    var enableStatusBar: js.UndefOr[Boolean] = js.undefined
+    
+    var ensureDomOrder: js.UndefOr[Boolean] = js.undefined
+    
+    var enterMovesDown: js.UndefOr[Boolean] = js.undefined
+    
+    var enterMovesDownAfterEdit: js.UndefOr[Boolean] = js.undefined
+    
+    var excelStyles: js.UndefOr[js.Array[js.Any]] = js.undefined
+    
+    var floatingFilter: js.UndefOr[Boolean] = js.undefined
+    
+    var floatingFiltersHeight: js.UndefOr[Double] = js.undefined
+    
+    var forPrint: js.UndefOr[Boolean] = js.undefined
+    
+    var frameworkComponents: js.UndefOr[StringDictionary[InstantiableAny]] = js.undefined
+    
+    var fullWidthCellRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
+    
+    var fullWidthCellRendererFramework: js.UndefOr[js.Any] = js.undefined
+    
+    var fullWidthCellRendererParams: js.UndefOr[js.Any] = js.undefined
+    
+    var functionsPassive: js.UndefOr[Boolean] = js.undefined
+    
+    var functionsReadOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var getBusinessKeyForNode: js.UndefOr[js.Function1[/* node */ RowNode, String]] = js.undefined
+    
+    var getChildCount: js.UndefOr[js.Function1[/* dataItem */ js.Any, Double]] = js.undefined
+    
+    var getContextMenuItems: js.UndefOr[GetContextMenuItems] = js.undefined
+    
+    var getDataPath: js.UndefOr[GetDataPath] = js.undefined
+    
+    var getDocument: js.UndefOr[js.Function0[Document]] = js.undefined
+    
+    var getMainMenuItems: js.UndefOr[GetMainMenuItems] = js.undefined
+    
+    var getNodeChildDetails: js.UndefOr[GetNodeChildDetails] = js.undefined
+    
+    var getRowClass: js.UndefOr[js.Function1[/* params */ js.Any, String | js.Array[String]]] = js.undefined
+    
+    var getRowHeight: js.UndefOr[js.Function] = js.undefined
+    
+    var getRowNodeId: js.UndefOr[GetRowNodeIdFunc] = js.undefined
+    
+    var getRowStyle: js.UndefOr[js.Function] = js.undefined
+    
+    var gridAutoHeight: js.UndefOr[Boolean] = js.undefined
+    
+    var groupColumnDef: js.UndefOr[ColDef] = js.undefined
+    
+    var groupDefaultExpanded: js.UndefOr[Double] = js.undefined
+    
+    var groupHeaderHeight: js.UndefOr[Double] = js.undefined
+    
+    var groupHideOpenParents: js.UndefOr[Boolean] = js.undefined
+    
+    var groupIncludeFooter: js.UndefOr[Boolean] = js.undefined
+    
+    var groupIncludeTotalFooter: js.UndefOr[Boolean] = js.undefined
+    
+    var groupMultiAutoColumn: js.UndefOr[Boolean] = js.undefined
+    
+    var groupRemoveLowestSingleChildren: js.UndefOr[Boolean] = js.undefined
+    
+    var groupRemoveSingleChildren: js.UndefOr[Boolean] = js.undefined
+    
+    var groupRowAggNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], js.Any]] = js.undefined
+    
+    var groupRowInnerRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
+    
+    var groupRowInnerRendererFramework: js.UndefOr[js.Any] = js.undefined
+    
+    var groupRowRenderer: js.UndefOr[InstantiableICellRendererComp | ICellRendererFunc | String] = js.undefined
+    
+    var groupRowRendererFramework: js.UndefOr[js.Any] = js.undefined
+    
+    var groupRowRendererParams: js.UndefOr[js.Any] = js.undefined
+    
+    var groupSelectsChildren: js.UndefOr[Boolean] = js.undefined
+    
+    var groupSelectsFiltered: js.UndefOr[Boolean] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. *
       ****************************************************************/
-    var localeText: js.UndefOr[js.Any] = js.native
+    var groupSuppressAutoColumn: js.UndefOr[Boolean] = js.undefined
     
-    var localeTextFunc: js.UndefOr[js.Function] = js.native
+    var groupSuppressBlankHeader: js.UndefOr[Boolean] = js.undefined
     
-    var masterDetail: js.UndefOr[Boolean] = js.native
+    var groupSuppressRow: js.UndefOr[Boolean] = js.undefined
     
-    var maxBlocksInCache: js.UndefOr[Double] = js.native
+    var groupUseEntireRow: js.UndefOr[Boolean] = js.undefined
     
-    var maxColWidth: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
-    var maxConcurrentDatasourceRequests: js.UndefOr[Double] = js.native
+    var icons: js.UndefOr[js.Any] = js.undefined
     
-    var minColWidth: js.UndefOr[Double] = js.native
+    var infiniteInitialRowCount: js.UndefOr[Double] = js.undefined
     
-    var multiSortKey: js.UndefOr[String] = js.native
+    var isExternalFilterPresent: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var navigateToNextCell: js.UndefOr[js.Function1[/* params */ NavigateToNextCellParams, GridCellDef]] = js.native
+    var isFullWidthCell: js.UndefOr[js.Function1[/* rowNode */ RowNode, Boolean]] = js.undefined
     
-    var noRowsOverlayComponent: js.UndefOr[InstantiableINoRowsOverlayComp | String] = js.native
+    var isRowMaster: js.UndefOr[IsRowMaster] = js.undefined
     
-    var noRowsOverlayComponentFramework: js.UndefOr[js.Any] = js.native
+    var isRowSelectable: js.UndefOr[IsRowSelectable] = js.undefined
     
-    var onBodyScroll: js.UndefOr[js.Function1[/* event */ BodyScrollEvent, Unit]] = js.native
+    var loadingOverlayComponent: js.UndefOr[InstantiableILoadingOverlayComp | String] = js.undefined
     
-    var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.native
-    
-    var onCellContextMenu: js.UndefOr[js.Function1[/* event */ CellContextMenuEvent, Unit]] = js.native
-    
-    var onCellDoubleClicked: js.UndefOr[js.Function1[/* event */ CellDoubleClickedEvent, Unit]] = js.native
-    
-    var onCellEditingStarted: js.UndefOr[js.Function1[/* event */ CellEditingStartedEvent, Unit]] = js.native
-    
-    var onCellEditingStopped: js.UndefOr[js.Function1[/* event */ CellEditingStoppedEvent, Unit]] = js.native
-    
-    var onCellFocused: js.UndefOr[js.Function1[/* event */ CellFocusedEvent, Unit]] = js.native
-    
-    var onCellMouseDown: js.UndefOr[js.Function1[/* event */ CellMouseDownEvent, Unit]] = js.native
-    
-    var onCellMouseOut: js.UndefOr[js.Function1[/* event */ CellMouseOutEvent, Unit]] = js.native
-    
-    var onCellMouseOver: js.UndefOr[js.Function1[/* event */ CellMouseOverEvent, Unit]] = js.native
-    
-    var onCellValueChanged: js.UndefOr[js.Function1[/* event */ CellValueChangedEvent, Unit]] = js.native
-    
-    var onColumnAggFuncChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnAggFuncChangeRequestEvent, Unit]] = js.native
+    var loadingOverlayComponentFramework: js.UndefOr[js.Any] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. *
       ****************************************************************/
-    var onColumnEverythingChanged: js.UndefOr[js.Function1[/* event */ ColumnEverythingChangedEvent, Unit]] = js.native
+    var localeText: js.UndefOr[js.Any] = js.undefined
     
-    var onColumnGroupOpened: js.UndefOr[js.Function1[/* event */ ColumnGroupOpenedEvent, Unit]] = js.native
+    var localeTextFunc: js.UndefOr[js.Function] = js.undefined
     
-    var onColumnMoved: js.UndefOr[js.Function1[/* event */ ColumnMovedEvent, Unit]] = js.native
+    var masterDetail: js.UndefOr[Boolean] = js.undefined
     
-    var onColumnPinned: js.UndefOr[js.Function1[/* event */ ColumnPinnedEvent, Unit]] = js.native
+    var maxBlocksInCache: js.UndefOr[Double] = js.undefined
     
-    var onColumnPivotChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnPivotChangeRequestEvent, Unit]] = js.native
+    var maxColWidth: js.UndefOr[Double] = js.undefined
     
-    var onColumnPivotChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotChangedEvent, Unit]] = js.native
+    var maxConcurrentDatasourceRequests: js.UndefOr[Double] = js.undefined
     
-    var onColumnPivotModeChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotModeChangedEvent, Unit]] = js.native
+    var minColWidth: js.UndefOr[Double] = js.undefined
     
-    var onColumnResized: js.UndefOr[js.Function1[/* event */ ColumnResizedEvent, Unit]] = js.native
+    var multiSortKey: js.UndefOr[String] = js.undefined
     
-    var onColumnRowGroupChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangeRequestEvent, Unit]] = js.native
+    var navigateToNextCell: js.UndefOr[js.Function1[/* params */ NavigateToNextCellParams, GridCellDef]] = js.undefined
     
-    var onColumnRowGroupChanged: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangedEvent, Unit]] = js.native
+    var noRowsOverlayComponent: js.UndefOr[InstantiableINoRowsOverlayComp | String] = js.undefined
     
-    var onColumnValueChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnValueChangeRequestEvent, Unit]] = js.native
+    var noRowsOverlayComponentFramework: js.UndefOr[js.Any] = js.undefined
     
-    var onColumnValueChanged: js.UndefOr[js.Function1[/* event */ ColumnValueChangedEvent, Unit]] = js.native
+    var onBodyScroll: js.UndefOr[js.Function1[/* event */ BodyScrollEvent, Unit]] = js.undefined
     
-    var onColumnVisible: js.UndefOr[js.Function1[/* event */ ColumnVisibleEvent, Unit]] = js.native
+    var onCellClicked: js.UndefOr[js.Function1[/* event */ CellClickedEvent, Unit]] = js.undefined
     
-    var onDisplayedColumnsChanged: js.UndefOr[js.Function1[/* event */ DisplayedColumnsChangedEvent, Unit]] = js.native
+    var onCellContextMenu: js.UndefOr[js.Function1[/* event */ CellContextMenuEvent, Unit]] = js.undefined
     
-    var onDragStarted: js.UndefOr[js.Function1[/* event */ DragStartedEvent, Unit]] = js.native
+    var onCellDoubleClicked: js.UndefOr[js.Function1[/* event */ CellDoubleClickedEvent, Unit]] = js.undefined
     
-    var onDragStopped: js.UndefOr[js.Function1[/* event */ DragStoppedEvent, Unit]] = js.native
+    var onCellEditingStarted: js.UndefOr[js.Function1[/* event */ CellEditingStartedEvent, Unit]] = js.undefined
     
-    var onFilterChanged: js.UndefOr[js.Function1[/* event */ FilterChangedEvent, Unit]] = js.native
+    var onCellEditingStopped: js.UndefOr[js.Function1[/* event */ CellEditingStoppedEvent, Unit]] = js.undefined
     
-    var onFilterModified: js.UndefOr[js.Function1[/* event */ FilterModifiedEvent, Unit]] = js.native
+    var onCellFocused: js.UndefOr[js.Function1[/* event */ CellFocusedEvent, Unit]] = js.undefined
     
-    var onGridColumnsChanged: js.UndefOr[js.Function1[/* event */ GridColumnsChangedEvent, Unit]] = js.native
+    var onCellMouseDown: js.UndefOr[js.Function1[/* event */ CellMouseDownEvent, Unit]] = js.undefined
     
-    var onGridReady: js.UndefOr[js.Function1[/* event */ GridReadyEvent, Unit]] = js.native
+    var onCellMouseOut: js.UndefOr[js.Function1[/* event */ CellMouseOutEvent, Unit]] = js.undefined
     
-    var onGridSizeChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onCellMouseOver: js.UndefOr[js.Function1[/* event */ CellMouseOverEvent, Unit]] = js.undefined
     
-    var onModelUpdated: js.UndefOr[js.Function1[/* event */ ModelUpdatedEvent, Unit]] = js.native
+    var onCellValueChanged: js.UndefOr[js.Function1[/* event */ CellValueChangedEvent, Unit]] = js.undefined
     
-    var onNewColumnsLoaded: js.UndefOr[js.Function1[/* event */ NewColumnsLoadedEvent, Unit]] = js.native
-    
-    var onPaginationChanged: js.UndefOr[js.Function1[/* event */ PaginationChangedEvent, Unit]] = js.native
-    
-    var onPasteEnd: js.UndefOr[js.Function1[/* event */ PasteEndEvent, Unit]] = js.native
-    
-    var onPasteStart: js.UndefOr[js.Function1[/* event */ PasteStartEvent, Unit]] = js.native
-    
-    var onPinnedRowDataChanged: js.UndefOr[js.Function1[/* event */ PinnedRowDataChangedEvent, Unit]] = js.native
-    
-    var onRangeSelectionChanged: js.UndefOr[js.Function1[/* event */ RangeSelectionChangedEvent, Unit]] = js.native
-    
-    var onRowClicked: js.UndefOr[js.Function1[/* event */ RowClickedEvent, Unit]] = js.native
-    
-    var onRowDataChanged: js.UndefOr[js.Function1[/* event */ RowDataChangedEvent, Unit]] = js.native
-    
-    var onRowDataUpdated: js.UndefOr[js.Function1[/* event */ RowDataUpdatedEvent, Unit]] = js.native
-    
-    var onRowDoubleClicked: js.UndefOr[js.Function1[/* event */ RowDoubleClickedEvent, Unit]] = js.native
-    
-    var onRowDragEnd: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
-    
-    var onRowDragEnter: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
-    
-    var onRowDragLeave: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
-    
-    var onRowDragMove: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.native
-    
-    var onRowEditingStarted: js.UndefOr[js.Function1[/* event */ RowEditingStartedEvent, Unit]] = js.native
-    
-    var onRowEditingStopped: js.UndefOr[js.Function1[/* event */ RowEditingStoppedEvent, Unit]] = js.native
-    
-    var onRowGroupOpened: js.UndefOr[js.Function1[/* event */ RowGroupOpenedEvent, Unit]] = js.native
-    
-    var onRowSelected: js.UndefOr[js.Function1[/* event */ RowSelectedEvent, Unit]] = js.native
-    
-    var onRowValueChanged: js.UndefOr[js.Function1[/* event */ RowValueChangedEvent, Unit]] = js.native
-    
-    var onSelectionChanged: js.UndefOr[js.Function1[/* event */ SelectionChangedEvent, Unit]] = js.native
-    
-    var onSortChanged: js.UndefOr[js.Function1[/* event */ SortChangedEvent, Unit]] = js.native
-    
-    var onViewportChanged: js.UndefOr[js.Function1[/* event */ ViewportChangedEvent, Unit]] = js.native
-    
-    var onVirtualColumnsChanged: js.UndefOr[js.Function1[/* event */ VirtualColumnsChangedEvent, Unit]] = js.native
-    
-    var onVirtualRowRemoved: js.UndefOr[js.Function1[/* event */ VirtualRowRemovedEvent, Unit]] = js.native
-    
-    var overlayLoadingTemplate: js.UndefOr[String] = js.native
-    
-    var overlayNoRowsTemplate: js.UndefOr[String] = js.native
-    
-    var pagination: js.UndefOr[Boolean] = js.native
-    
-    var paginationAutoPageSize: js.UndefOr[Boolean] = js.native
+    var onColumnAggFuncChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnAggFuncChangeRequestEvent, Unit]] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. *
       ****************************************************************/
-    var paginationNumberFormatter: js.UndefOr[js.Function1[/* params */ PaginationNumberFormatterParams, String]] = js.native
+    var onColumnEverythingChanged: js.UndefOr[js.Function1[/* event */ ColumnEverythingChangedEvent, Unit]] = js.undefined
     
-    var paginationPageSize: js.UndefOr[Double] = js.native
+    var onColumnGroupOpened: js.UndefOr[js.Function1[/* event */ ColumnGroupOpenedEvent, Unit]] = js.undefined
     
-    var paginationStartPage: js.UndefOr[Double] = js.native
+    var onColumnMoved: js.UndefOr[js.Function1[/* event */ ColumnMovedEvent, Unit]] = js.undefined
     
-    var pinnedBottomRowData: js.UndefOr[js.Array[_]] = js.native
+    var onColumnPinned: js.UndefOr[js.Function1[/* event */ ColumnPinnedEvent, Unit]] = js.undefined
     
-    var pinnedTopRowData: js.UndefOr[js.Array[_]] = js.native
+    var onColumnPivotChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnPivotChangeRequestEvent, Unit]] = js.undefined
     
-    var pivotColumnGroupTotals: js.UndefOr[String] = js.native
+    var onColumnPivotChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotChangedEvent, Unit]] = js.undefined
     
-    var pivotGroupHeaderHeight: js.UndefOr[Double] = js.native
+    var onColumnPivotModeChanged: js.UndefOr[js.Function1[/* event */ ColumnPivotModeChangedEvent, Unit]] = js.undefined
     
-    var pivotHeaderHeight: js.UndefOr[Double] = js.native
+    var onColumnResized: js.UndefOr[js.Function1[/* event */ ColumnResizedEvent, Unit]] = js.undefined
     
-    var pivotMode: js.UndefOr[Boolean] = js.native
+    var onColumnRowGroupChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangeRequestEvent, Unit]] = js.undefined
     
-    var pivotPanelShow: js.UndefOr[String] = js.native
+    var onColumnRowGroupChanged: js.UndefOr[js.Function1[/* event */ ColumnRowGroupChangedEvent, Unit]] = js.undefined
     
-    var pivotRowTotals: js.UndefOr[String] = js.native
+    var onColumnValueChangeRequest: js.UndefOr[js.Function1[/* event */ ColumnValueChangeRequestEvent, Unit]] = js.undefined
     
-    var pivotTotals: js.UndefOr[Boolean] = js.native
+    var onColumnValueChanged: js.UndefOr[js.Function1[/* event */ ColumnValueChangedEvent, Unit]] = js.undefined
     
-    var popupParent: js.UndefOr[HTMLElement] = js.native
+    var onColumnVisible: js.UndefOr[js.Function1[/* event */ ColumnVisibleEvent, Unit]] = js.undefined
     
-    var postProcessPopup: js.UndefOr[js.Function1[/* params */ PostProcessPopupParams, Unit]] = js.native
+    var onDisplayedColumnsChanged: js.UndefOr[js.Function1[/* event */ DisplayedColumnsChangedEvent, Unit]] = js.undefined
     
-    var postSort: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], Unit]] = js.native
+    var onDragStarted: js.UndefOr[js.Function1[/* event */ DragStartedEvent, Unit]] = js.undefined
     
-    var processCellForClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, _]] = js.native
+    var onDragStopped: js.UndefOr[js.Function1[/* event */ DragStoppedEvent, Unit]] = js.undefined
     
-    var processCellFromClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, _]] = js.native
+    var onFilterChanged: js.UndefOr[js.Function1[/* event */ FilterChangedEvent, Unit]] = js.undefined
+    
+    var onFilterModified: js.UndefOr[js.Function1[/* event */ FilterModifiedEvent, Unit]] = js.undefined
+    
+    var onGridColumnsChanged: js.UndefOr[js.Function1[/* event */ GridColumnsChangedEvent, Unit]] = js.undefined
+    
+    var onGridReady: js.UndefOr[js.Function1[/* event */ GridReadyEvent, Unit]] = js.undefined
+    
+    var onGridSizeChanged: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    
+    var onModelUpdated: js.UndefOr[js.Function1[/* event */ ModelUpdatedEvent, Unit]] = js.undefined
+    
+    var onNewColumnsLoaded: js.UndefOr[js.Function1[/* event */ NewColumnsLoadedEvent, Unit]] = js.undefined
+    
+    var onPaginationChanged: js.UndefOr[js.Function1[/* event */ PaginationChangedEvent, Unit]] = js.undefined
+    
+    var onPasteEnd: js.UndefOr[js.Function1[/* event */ PasteEndEvent, Unit]] = js.undefined
+    
+    var onPasteStart: js.UndefOr[js.Function1[/* event */ PasteStartEvent, Unit]] = js.undefined
+    
+    var onPinnedRowDataChanged: js.UndefOr[js.Function1[/* event */ PinnedRowDataChangedEvent, Unit]] = js.undefined
+    
+    var onRangeSelectionChanged: js.UndefOr[js.Function1[/* event */ RangeSelectionChangedEvent, Unit]] = js.undefined
+    
+    var onRowClicked: js.UndefOr[js.Function1[/* event */ RowClickedEvent, Unit]] = js.undefined
+    
+    var onRowDataChanged: js.UndefOr[js.Function1[/* event */ RowDataChangedEvent, Unit]] = js.undefined
+    
+    var onRowDataUpdated: js.UndefOr[js.Function1[/* event */ RowDataUpdatedEvent, Unit]] = js.undefined
+    
+    var onRowDoubleClicked: js.UndefOr[js.Function1[/* event */ RowDoubleClickedEvent, Unit]] = js.undefined
+    
+    var onRowDragEnd: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
+    
+    var onRowDragEnter: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
+    
+    var onRowDragLeave: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
+    
+    var onRowDragMove: js.UndefOr[js.Function1[/* event */ RowDragEvent, Unit]] = js.undefined
+    
+    var onRowEditingStarted: js.UndefOr[js.Function1[/* event */ RowEditingStartedEvent, Unit]] = js.undefined
+    
+    var onRowEditingStopped: js.UndefOr[js.Function1[/* event */ RowEditingStoppedEvent, Unit]] = js.undefined
+    
+    var onRowGroupOpened: js.UndefOr[js.Function1[/* event */ RowGroupOpenedEvent, Unit]] = js.undefined
+    
+    var onRowSelected: js.UndefOr[js.Function1[/* event */ RowSelectedEvent, Unit]] = js.undefined
+    
+    var onRowValueChanged: js.UndefOr[js.Function1[/* event */ RowValueChangedEvent, Unit]] = js.undefined
+    
+    var onSelectionChanged: js.UndefOr[js.Function1[/* event */ SelectionChangedEvent, Unit]] = js.undefined
+    
+    var onSortChanged: js.UndefOr[js.Function1[/* event */ SortChangedEvent, Unit]] = js.undefined
+    
+    var onViewportChanged: js.UndefOr[js.Function1[/* event */ ViewportChangedEvent, Unit]] = js.undefined
+    
+    var onVirtualColumnsChanged: js.UndefOr[js.Function1[/* event */ VirtualColumnsChangedEvent, Unit]] = js.undefined
+    
+    var onVirtualRowRemoved: js.UndefOr[js.Function1[/* event */ VirtualRowRemovedEvent, Unit]] = js.undefined
+    
+    var overlayLoadingTemplate: js.UndefOr[String] = js.undefined
+    
+    var overlayNoRowsTemplate: js.UndefOr[String] = js.undefined
+    
+    var pagination: js.UndefOr[Boolean] = js.undefined
+    
+    var paginationAutoPageSize: js.UndefOr[Boolean] = js.undefined
+    
+    /****************************************************************
+      * Don't forget to update ComponentUtil if changing this class. *
+      ****************************************************************/
+    var paginationNumberFormatter: js.UndefOr[js.Function1[/* params */ PaginationNumberFormatterParams, String]] = js.undefined
+    
+    var paginationPageSize: js.UndefOr[Double] = js.undefined
+    
+    var paginationStartPage: js.UndefOr[Double] = js.undefined
+    
+    var pinnedBottomRowData: js.UndefOr[js.Array[js.Any]] = js.undefined
+    
+    var pinnedTopRowData: js.UndefOr[js.Array[js.Any]] = js.undefined
+    
+    var pivotColumnGroupTotals: js.UndefOr[String] = js.undefined
+    
+    var pivotGroupHeaderHeight: js.UndefOr[Double] = js.undefined
+    
+    var pivotHeaderHeight: js.UndefOr[Double] = js.undefined
+    
+    var pivotMode: js.UndefOr[Boolean] = js.undefined
+    
+    var pivotPanelShow: js.UndefOr[String] = js.undefined
+    
+    var pivotRowTotals: js.UndefOr[String] = js.undefined
+    
+    var pivotTotals: js.UndefOr[Boolean] = js.undefined
+    
+    var popupParent: js.UndefOr[HTMLElement] = js.undefined
+    
+    var postProcessPopup: js.UndefOr[js.Function1[/* params */ PostProcessPopupParams, Unit]] = js.undefined
+    
+    var postSort: js.UndefOr[js.Function1[/* nodes */ js.Array[RowNode], Unit]] = js.undefined
+    
+    var processCellForClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, js.Any]] = js.undefined
+    
+    var processCellFromClipboard: js.UndefOr[js.Function1[/* params */ ProcessCellForExportParams, js.Any]] = js.undefined
     
     var processDataFromClipboard: js.UndefOr[
         js.Function1[/* params */ ProcessDataFromClipboardParams, js.Array[js.Array[String]]]
-      ] = js.native
+      ] = js.undefined
     
-    var processHeaderForClipboard: js.UndefOr[js.Function1[/* params */ ProcessHeaderForExportParams, _]] = js.native
+    var processHeaderForClipboard: js.UndefOr[js.Function1[/* params */ ProcessHeaderForExportParams, js.Any]] = js.undefined
     
-    var processRowPostCreate: js.UndefOr[js.Function1[/* params */ ProcessRowParams, Unit]] = js.native
+    var processRowPostCreate: js.UndefOr[js.Function1[/* params */ ProcessRowParams, Unit]] = js.undefined
     
-    var processSecondaryColDef: js.UndefOr[js.Function1[/* colDef */ ColDef, Unit]] = js.native
+    var processSecondaryColDef: js.UndefOr[js.Function1[/* colDef */ ColDef, Unit]] = js.undefined
     
-    var processSecondaryColGroupDef: js.UndefOr[js.Function1[/* colGroupDef */ ColGroupDef, Unit]] = js.native
+    var processSecondaryColGroupDef: js.UndefOr[js.Function1[/* colGroupDef */ ColGroupDef, Unit]] = js.undefined
     
-    var purgeClosedRowNodes: js.UndefOr[Boolean] = js.native
+    var purgeClosedRowNodes: js.UndefOr[Boolean] = js.undefined
     
-    var quickFilterText: js.UndefOr[String] = js.native
+    var quickFilterText: js.UndefOr[String] = js.undefined
     
-    var rememberGroupStateWhenNewData: js.UndefOr[Boolean] = js.native
+    var rememberGroupStateWhenNewData: js.UndefOr[Boolean] = js.undefined
     
-    var rowBuffer: js.UndefOr[Double] = js.native
+    var rowBuffer: js.UndefOr[Double] = js.undefined
     
-    var rowClass: js.UndefOr[String | js.Array[String]] = js.native
+    var rowClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var rowClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.native
+    var rowClassRules: js.UndefOr[StringDictionary[js.Function | String]] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. *
       ****************************************************************/
-    var rowData: js.UndefOr[js.Array[_]] = js.native
+    var rowData: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var rowDeselection: js.UndefOr[Boolean] = js.native
+    var rowDeselection: js.UndefOr[Boolean] = js.undefined
     
     /****************************************************************
       * Don't forget to update ComponentUtil if changing this class. PLEASE!*
       ****************************************************************/
-    var rowDragManaged: js.UndefOr[Boolean] = js.native
+    var rowDragManaged: js.UndefOr[Boolean] = js.undefined
     
-    var rowGroupPanelShow: js.UndefOr[String] = js.native
+    var rowGroupPanelShow: js.UndefOr[String] = js.undefined
     
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
-    var rowModelType: js.UndefOr[String] = js.native
+    var rowModelType: js.UndefOr[String] = js.undefined
     
-    var rowMultiSelectWithClick: js.UndefOr[Boolean] = js.native
+    var rowMultiSelectWithClick: js.UndefOr[Boolean] = js.undefined
     
-    var rowSelection: js.UndefOr[String] = js.native
+    var rowSelection: js.UndefOr[String] = js.undefined
     
-    var rowStyle: js.UndefOr[js.Any] = js.native
+    var rowStyle: js.UndefOr[js.Any] = js.undefined
     
-    var scrollbarWidth: js.UndefOr[Double] = js.native
+    var scrollbarWidth: js.UndefOr[Double] = js.undefined
     
-    var sendToClipboard: js.UndefOr[js.Function1[/* params */ js.Any, Unit]] = js.native
+    var sendToClipboard: js.UndefOr[js.Function1[/* params */ js.Any, Unit]] = js.undefined
     
-    var serverSideDatasource: js.UndefOr[IServerSideDatasource] = js.native
+    var serverSideDatasource: js.UndefOr[IServerSideDatasource] = js.undefined
     
-    var serverSideSortingAlwaysResets: js.UndefOr[Boolean] = js.native
+    var serverSideSortingAlwaysResets: js.UndefOr[Boolean] = js.undefined
     
-    var showToolPanel: js.UndefOr[Boolean] = js.native
+    var showToolPanel: js.UndefOr[Boolean] = js.undefined
     
-    var singleClickEdit: js.UndefOr[Boolean] = js.native
+    var singleClickEdit: js.UndefOr[Boolean] = js.undefined
     
-    var slaveGrids: js.UndefOr[js.Array[GridOptions]] = js.native
+    var slaveGrids: js.UndefOr[js.Array[GridOptions]] = js.undefined
     
-    var sortingOrder: js.UndefOr[js.Array[String]] = js.native
+    var sortingOrder: js.UndefOr[js.Array[String]] = js.undefined
     
-    var stopEditingWhenGridLosesFocus: js.UndefOr[Boolean] = js.native
+    var stopEditingWhenGridLosesFocus: js.UndefOr[Boolean] = js.undefined
     
-    var suppressAggAtRootLevel: js.UndefOr[Boolean] = js.native
+    var suppressAggAtRootLevel: js.UndefOr[Boolean] = js.undefined
     
-    var suppressAggFuncInHeader: js.UndefOr[Boolean] = js.native
+    var suppressAggFuncInHeader: js.UndefOr[Boolean] = js.undefined
     
-    var suppressAnimationFrame: js.UndefOr[Boolean] = js.native
+    var suppressAnimationFrame: js.UndefOr[Boolean] = js.undefined
     
-    var suppressAsyncEvents: js.UndefOr[Boolean] = js.native
+    var suppressAsyncEvents: js.UndefOr[Boolean] = js.undefined
     
-    var suppressAutoSize: js.UndefOr[Boolean] = js.native
+    var suppressAutoSize: js.UndefOr[Boolean] = js.undefined
     
-    var suppressCellSelection: js.UndefOr[Boolean] = js.native
+    var suppressCellSelection: js.UndefOr[Boolean] = js.undefined
     
-    var suppressChangeDetection: js.UndefOr[Boolean] = js.native
+    var suppressChangeDetection: js.UndefOr[Boolean] = js.undefined
     
-    var suppressClickEdit: js.UndefOr[Boolean] = js.native
+    var suppressClickEdit: js.UndefOr[Boolean] = js.undefined
     
-    var suppressClipboardPaste: js.UndefOr[Boolean] = js.native
+    var suppressClipboardPaste: js.UndefOr[Boolean] = js.undefined
     
-    var suppressColumnMoveAnimation: js.UndefOr[Boolean] = js.native
+    var suppressColumnMoveAnimation: js.UndefOr[Boolean] = js.undefined
     
-    var suppressColumnVirtualisation: js.UndefOr[Boolean] = js.native
+    var suppressColumnVirtualisation: js.UndefOr[Boolean] = js.undefined
     
-    var suppressContextMenu: js.UndefOr[Boolean] = js.native
+    var suppressContextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var suppressCopyRowsToClipboard: js.UndefOr[Boolean] = js.native
+    var suppressCopyRowsToClipboard: js.UndefOr[Boolean] = js.undefined
     
-    var suppressCsvExport: js.UndefOr[Boolean] = js.native
+    var suppressCsvExport: js.UndefOr[Boolean] = js.undefined
     
-    var suppressDragLeaveHidesColumns: js.UndefOr[Boolean] = js.native
+    var suppressDragLeaveHidesColumns: js.UndefOr[Boolean] = js.undefined
     
-    var suppressEnterpriseResetOnNewColumns: js.UndefOr[Boolean] = js.native
+    var suppressEnterpriseResetOnNewColumns: js.UndefOr[Boolean] = js.undefined
     
-    var suppressExcelExport: js.UndefOr[Boolean] = js.native
+    var suppressExcelExport: js.UndefOr[Boolean] = js.undefined
     
-    var suppressFieldDotNotation: js.UndefOr[Boolean] = js.native
+    var suppressFieldDotNotation: js.UndefOr[Boolean] = js.undefined
     
-    var suppressFocusAfterRefresh: js.UndefOr[Boolean] = js.native
+    var suppressFocusAfterRefresh: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHorizontalScroll: js.UndefOr[Boolean] = js.native
+    var suppressHorizontalScroll: js.UndefOr[Boolean] = js.undefined
     
-    var suppressLoadingOverlay: js.UndefOr[Boolean] = js.native
+    var suppressLoadingOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var suppressMakeColumnVisibleAfterUnGroup: js.UndefOr[Boolean] = js.native
+    var suppressMakeColumnVisibleAfterUnGroup: js.UndefOr[Boolean] = js.undefined
     
-    var suppressMenuHide: js.UndefOr[Boolean] = js.native
+    var suppressMenuHide: js.UndefOr[Boolean] = js.undefined
     
-    var suppressMiddleClickScrolls: js.UndefOr[Boolean] = js.native
+    var suppressMiddleClickScrolls: js.UndefOr[Boolean] = js.undefined
     
-    var suppressMovableColumns: js.UndefOr[Boolean] = js.native
+    var suppressMovableColumns: js.UndefOr[Boolean] = js.undefined
     
-    var suppressMultiRangeSelection: js.UndefOr[Boolean] = js.native
+    var suppressMultiRangeSelection: js.UndefOr[Boolean] = js.undefined
     
-    var suppressMultiSort: js.UndefOr[Boolean] = js.native
+    var suppressMultiSort: js.UndefOr[Boolean] = js.undefined
     
-    var suppressNoRowsOverlay: js.UndefOr[Boolean] = js.native
+    var suppressNoRowsOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var suppressPaginationPanel: js.UndefOr[Boolean] = js.native
+    var suppressPaginationPanel: js.UndefOr[Boolean] = js.undefined
     
-    var suppressParentsInRowNodes: js.UndefOr[Boolean] = js.native
+    var suppressParentsInRowNodes: js.UndefOr[Boolean] = js.undefined
     
-    var suppressPreventDefaultOnMouseWheel: js.UndefOr[Boolean] = js.native
+    var suppressPreventDefaultOnMouseWheel: js.UndefOr[Boolean] = js.undefined
     
-    var suppressPropertyNamesCheck: js.UndefOr[Boolean] = js.native
+    var suppressPropertyNamesCheck: js.UndefOr[Boolean] = js.undefined
     
-    var suppressRowClickSelection: js.UndefOr[Boolean] = js.native
+    var suppressRowClickSelection: js.UndefOr[Boolean] = js.undefined
     
-    var suppressRowDrag: js.UndefOr[Boolean] = js.native
+    var suppressRowDrag: js.UndefOr[Boolean] = js.undefined
     
-    var suppressRowHoverHighlight: js.UndefOr[Boolean] = js.native
+    var suppressRowHoverHighlight: js.UndefOr[Boolean] = js.undefined
     
-    var suppressRowTransform: js.UndefOr[Boolean] = js.native
+    var suppressRowTransform: js.UndefOr[Boolean] = js.undefined
     
-    var suppressScrollOnNewData: js.UndefOr[Boolean] = js.native
+    var suppressScrollOnNewData: js.UndefOr[Boolean] = js.undefined
     
-    var suppressTabbing: js.UndefOr[Boolean] = js.native
+    var suppressTabbing: js.UndefOr[Boolean] = js.undefined
     
-    var suppressTouch: js.UndefOr[Boolean] = js.native
+    var suppressTouch: js.UndefOr[Boolean] = js.undefined
     
-    var tabToNextCell: js.UndefOr[js.Function1[/* params */ TabToNextCellParams, GridCellDef]] = js.native
+    var tabToNextCell: js.UndefOr[js.Function1[/* params */ TabToNextCellParams, GridCellDef]] = js.undefined
     
-    var toolPanelSuppressColumnExpandAll: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressColumnExpandAll: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressColumnFilter: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressColumnFilter: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressColumnSelectAll: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressColumnSelectAll: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressPivotMode: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressPivotMode: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressPivots: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressPivots: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressRowGroups: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressRowGroups: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressSideButtons: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressSideButtons: js.UndefOr[Boolean] = js.undefined
     
-    var toolPanelSuppressValues: js.UndefOr[Boolean] = js.native
+    var toolPanelSuppressValues: js.UndefOr[Boolean] = js.undefined
     
-    var treeData: js.UndefOr[Boolean] = js.native
+    var treeData: js.UndefOr[Boolean] = js.undefined
     
-    var unSortIcon: js.UndefOr[Boolean] = js.native
+    var unSortIcon: js.UndefOr[Boolean] = js.undefined
     
-    var valueCache: js.UndefOr[Boolean] = js.native
+    var valueCache: js.UndefOr[Boolean] = js.undefined
     
-    var valueCacheNeverExpires: js.UndefOr[Boolean] = js.native
+    var valueCacheNeverExpires: js.UndefOr[Boolean] = js.undefined
     
-    var viewportDatasource: js.UndefOr[IViewportDatasource] = js.native
+    var viewportDatasource: js.UndefOr[IViewportDatasource] = js.undefined
     
-    var viewportRowModelBufferSize: js.UndefOr[Double] = js.native
+    var viewportRowModelBufferSize: js.UndefOr[Double] = js.undefined
     
-    var viewportRowModelPageSize: js.UndefOr[Double] = js.native
+    var viewportRowModelPageSize: js.UndefOr[Double] = js.undefined
   }
   object GridOptions {
     
@@ -967,7 +965,7 @@ object gridOptionsMod {
       def setColumnTypesUndefined: Self = StObject.set(x, "columnTypes", js.undefined)
       
       @scala.inline
-      def setComponents(value: StringDictionary[AgGridRegisteredComponentInput[IComponent[_]]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      def setComponents(value: StringDictionary[AgGridRegisteredComponentInput[IComponent[js.Any]]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
@@ -1186,7 +1184,7 @@ object gridOptionsMod {
       def setEnterMovesDownUndefined: Self = StObject.set(x, "enterMovesDown", js.undefined)
       
       @scala.inline
-      def setExcelStyles(value: js.Array[_]): Self = StObject.set(x, "excelStyles", value.asInstanceOf[js.Any])
+      def setExcelStyles(value: js.Array[js.Any]): Self = StObject.set(x, "excelStyles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExcelStylesUndefined: Self = StObject.set(x, "excelStyles", js.undefined)
@@ -1378,7 +1376,7 @@ object gridOptionsMod {
       def setGroupRemoveSingleChildrenUndefined: Self = StObject.set(x, "groupRemoveSingleChildren", js.undefined)
       
       @scala.inline
-      def setGroupRowAggNodes(value: /* nodes */ js.Array[RowNode] => _): Self = StObject.set(x, "groupRowAggNodes", js.Any.fromFunction1(value))
+      def setGroupRowAggNodes(value: /* nodes */ js.Array[RowNode] => js.Any): Self = StObject.set(x, "groupRowAggNodes", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGroupRowAggNodesUndefined: Self = StObject.set(x, "groupRowAggNodes", js.undefined)
@@ -1966,7 +1964,7 @@ object gridOptionsMod {
       def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
       @scala.inline
-      def setPinnedBottomRowData(value: js.Array[_]): Self = StObject.set(x, "pinnedBottomRowData", value.asInstanceOf[js.Any])
+      def setPinnedBottomRowData(value: js.Array[js.Any]): Self = StObject.set(x, "pinnedBottomRowData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPinnedBottomRowDataUndefined: Self = StObject.set(x, "pinnedBottomRowData", js.undefined)
@@ -1975,7 +1973,7 @@ object gridOptionsMod {
       def setPinnedBottomRowDataVarargs(value: js.Any*): Self = StObject.set(x, "pinnedBottomRowData", js.Array(value :_*))
       
       @scala.inline
-      def setPinnedTopRowData(value: js.Array[_]): Self = StObject.set(x, "pinnedTopRowData", value.asInstanceOf[js.Any])
+      def setPinnedTopRowData(value: js.Array[js.Any]): Self = StObject.set(x, "pinnedTopRowData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPinnedTopRowDataUndefined: Self = StObject.set(x, "pinnedTopRowData", js.undefined)
@@ -2044,13 +2042,13 @@ object gridOptionsMod {
       def setPostSortUndefined: Self = StObject.set(x, "postSort", js.undefined)
       
       @scala.inline
-      def setProcessCellForClipboard(value: /* params */ ProcessCellForExportParams => _): Self = StObject.set(x, "processCellForClipboard", js.Any.fromFunction1(value))
+      def setProcessCellForClipboard(value: /* params */ ProcessCellForExportParams => js.Any): Self = StObject.set(x, "processCellForClipboard", js.Any.fromFunction1(value))
       
       @scala.inline
       def setProcessCellForClipboardUndefined: Self = StObject.set(x, "processCellForClipboard", js.undefined)
       
       @scala.inline
-      def setProcessCellFromClipboard(value: /* params */ ProcessCellForExportParams => _): Self = StObject.set(x, "processCellFromClipboard", js.Any.fromFunction1(value))
+      def setProcessCellFromClipboard(value: /* params */ ProcessCellForExportParams => js.Any): Self = StObject.set(x, "processCellFromClipboard", js.Any.fromFunction1(value))
       
       @scala.inline
       def setProcessCellFromClipboardUndefined: Self = StObject.set(x, "processCellFromClipboard", js.undefined)
@@ -2062,7 +2060,7 @@ object gridOptionsMod {
       def setProcessDataFromClipboardUndefined: Self = StObject.set(x, "processDataFromClipboard", js.undefined)
       
       @scala.inline
-      def setProcessHeaderForClipboard(value: /* params */ ProcessHeaderForExportParams => _): Self = StObject.set(x, "processHeaderForClipboard", js.Any.fromFunction1(value))
+      def setProcessHeaderForClipboard(value: /* params */ ProcessHeaderForExportParams => js.Any): Self = StObject.set(x, "processHeaderForClipboard", js.Any.fromFunction1(value))
       
       @scala.inline
       def setProcessHeaderForClipboardUndefined: Self = StObject.set(x, "processHeaderForClipboard", js.undefined)
@@ -2125,7 +2123,7 @@ object gridOptionsMod {
       def setRowClassVarargs(value: String*): Self = StObject.set(x, "rowClass", js.Array(value :_*))
       
       @scala.inline
-      def setRowData(value: js.Array[_]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      def setRowData(value: js.Array[js.Any]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
@@ -2577,26 +2575,25 @@ object gridOptionsMod {
   
   type IsRowSelectable = js.Function1[/* node */ RowNode, Boolean]
   
-  @js.native
   trait MenuItemDef extends StObject {
     
-    var action: js.UndefOr[js.Function0[Unit]] = js.native
+    var action: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var cssClasses: js.UndefOr[js.Array[String]] = js.native
+    var cssClasses: js.UndefOr[js.Array[String]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[HTMLElement | String] = js.native
+    var icon: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var shortcut: js.UndefOr[String] = js.native
+    var shortcut: js.UndefOr[String] = js.undefined
     
-    var subMenu: js.UndefOr[js.Array[MenuItemDef | String]] = js.native
+    var subMenu: js.UndefOr[js.Array[MenuItemDef | String]] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object MenuItemDef {
     
@@ -2668,16 +2665,15 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait NavigateToNextCellParams extends StObject {
     
-    var event: KeyboardEvent = js.native
+    var event: KeyboardEvent
     
-    var key: Double = js.native
+    var key: Double
     
-    var nextCellDef: GridCellDef = js.native
+    var nextCellDef: GridCellDef
     
-    var previousCellDef: GridCellDef = js.native
+    var previousCellDef: GridCellDef
   }
   object NavigateToNextCellParams {
     
@@ -2704,18 +2700,17 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait NodeChildDetails extends StObject {
     
-    var children: js.UndefOr[js.Array[_]] = js.native
+    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var group: Boolean = js.native
+    var group: Boolean
     
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
   }
   object NodeChildDetails {
     
@@ -2729,7 +2724,7 @@ object gridOptionsMod {
     implicit class NodeChildDetailsMutableBuilder[Self <: NodeChildDetails] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -2760,10 +2755,9 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait PaginationNumberFormatterParams extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object PaginationNumberFormatterParams {
     
@@ -2781,20 +2775,19 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait PostProcessPopupParams extends StObject {
     
-    var column: js.UndefOr[Column] = js.native
+    var column: js.UndefOr[Column] = js.undefined
     
-    var ePopup: HTMLElement = js.native
+    var ePopup: HTMLElement
     
-    var eventSource: js.UndefOr[HTMLElement] = js.native
+    var eventSource: js.UndefOr[HTMLElement] = js.undefined
     
-    var mouseEvent: js.UndefOr[MouseEvent | Touch] = js.native
+    var mouseEvent: js.UndefOr[MouseEvent | Touch] = js.undefined
     
-    var rowNode: js.UndefOr[RowNode] = js.native
+    var rowNode: js.UndefOr[RowNode] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object PostProcessPopupParams {
     
@@ -2840,10 +2833,9 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait ProcessDataFromClipboardParams extends StObject {
     
-    var data: js.Array[js.Array[String]] = js.native
+    var data: js.Array[js.Array[String]]
   }
   object ProcessDataFromClipboardParams {
     
@@ -2864,26 +2856,25 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait ProcessRowParams extends StObject {
     
-    def addRenderedRowListener(eventType: String, listener: js.Function): Unit = js.native
+    def addRenderedRowListener(eventType: String, listener: js.Function): Unit
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var ePinnedLeftRow: HTMLElement = js.native
+    var ePinnedLeftRow: HTMLElement
     
-    var ePinnedRightRow: HTMLElement = js.native
+    var ePinnedRightRow: HTMLElement
     
-    var eRow: HTMLElement = js.native
+    var eRow: HTMLElement
     
-    var node: RowNode = js.native
+    var node: RowNode
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
   }
   object ProcessRowParams {
     
@@ -2935,16 +2926,15 @@ object gridOptionsMod {
     }
   }
   
-  @js.native
   trait TabToNextCellParams extends StObject {
     
-    var backwards: Boolean = js.native
+    var backwards: Boolean
     
-    var editing: Boolean = js.native
+    var editing: Boolean
     
-    var nextCellDef: GridCellDef = js.native
+    var nextCellDef: GridCellDef
     
-    var previousCellDef: GridCellDef = js.native
+    var previousCellDef: GridCellDef
   }
   object TabToNextCellParams {
     

@@ -2,15 +2,13 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofvalidate9 extends StObject {
   
-  val options_19: Typeofoptions19 = js.native
+  val options_19: Typeofoptions19
   
-  val query_9: js.Any = js.native
+  val query_9: js.Any
 }
 object Typeofvalidate9 {
   

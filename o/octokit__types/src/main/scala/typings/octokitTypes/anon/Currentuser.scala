@@ -2,27 +2,25 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currentuser extends StObject {
   
-  var current_user: Href = js.native
+  var current_user: Href
   
-  var current_user_actor: Href = js.native
+  var current_user_actor: Href
   
-  var current_user_organization: Href = js.native
+  var current_user_organization: Href
   
-  var current_user_organizations: js.Array[Href] = js.native
+  var current_user_organizations: js.Array[Href]
   
-  var current_user_public: Href = js.native
+  var current_user_public: Href
   
-  var security_advisories: Href = js.native
+  var security_advisories: Href
   
-  var timeline: Href = js.native
+  var timeline: Href
   
-  var user: Href = js.native
+  var user: Href
 }
 object Currentuser {
   

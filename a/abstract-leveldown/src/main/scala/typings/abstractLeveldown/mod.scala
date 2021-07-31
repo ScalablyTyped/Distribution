@@ -7,13 +7,14 @@ import typings.abstractLeveldown.abstractLeveldownStrings.put
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
-  trait AbstractChainedBatch[K, V] extends AbstractOptions {
+  trait AbstractChainedBatch[K, V]
+    extends StObject
+       with AbstractOptions {
     
     def clear(): this.type = js.native
     
@@ -32,19 +33,21 @@ object mod {
   @JSImport("abstract-leveldown", "AbstractChainedBatch")
   @js.native
   class AbstractChainedBatchCls[K, V] protected ()
-    extends typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] {
+    extends StObject
+       with typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] {
     // tslint:disable-next-line no-unnecessary-generics
     def this(db: js.Any) = this()
   }
   
-  @js.native
-  trait AbstractIterator[K, V] extends AbstractOptions {
+  trait AbstractIterator[K, V]
+    extends StObject
+       with AbstractOptions {
     
-    var db: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] = js.native
+    var db: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V]
     
-    def end(cb: ErrorCallback): Unit = js.native
+    def end(cb: ErrorCallback): Unit
     
-    def next(cb: ErrorKeyValueCallback[K, V]): this.type = js.native
+    def next(cb: ErrorKeyValueCallback[K, V]): this.type
   }
   object AbstractIterator {
     
@@ -53,7 +56,7 @@ object mod {
     val ^ : AbstractIteratorConstructor = js.native
     
     @scala.inline
-    implicit class AbstractIteratorMutableBuilder[Self <: AbstractIterator[_, _], K, V] (val x: Self with (AbstractIterator[K, V])) extends AnyVal {
+    implicit class AbstractIteratorMutableBuilder[Self <: AbstractIterator[?, ?], K, V] (val x: Self & (AbstractIterator[K, V])) extends AnyVal {
       
       @scala.inline
       def setDb(value: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V]): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
@@ -69,13 +72,26 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("abstract-leveldown", "AbstractIterator")
   @js.native
-  class AbstractIteratorCls[K, V] protected () extends AbstractIterator[K, V] {
+  class AbstractIteratorCls[K, V] protected ()
+    extends StObject
+       with AbstractIterator[K, V] {
     // tslint:disable-next-line no-unnecessary-generics
     def this(db: js.Any) = this()
+    
+    /* CompleteClass */
+    var db: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] = js.native
+    
+    /* CompleteClass */
+    override def end(cb: ErrorCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def next(cb: ErrorKeyValueCallback[K, V]): this.type = js.native
   }
   
   @js.native
-  trait AbstractLevelDOWN[K, V] extends AbstractOptions {
+  trait AbstractLevelDOWN[K, V]
+    extends StObject
+       with AbstractOptions {
     
     def batch(): typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] = js.native
     def batch(array: js.Array[AbstractBatch[K, V]], cb: ErrorCallback): typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] = js.native
@@ -106,7 +122,8 @@ object mod {
   @JSImport("abstract-leveldown", "AbstractLevelDOWN")
   @js.native
   class AbstractLevelDOWNCls[K, V] protected ()
-    extends typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] {
+    extends StObject
+       with typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] {
     // tslint:disable-next-line no-unnecessary-generics
     def this(location: String) = this()
   }
@@ -119,23 +136,24 @@ object mod {
   object AbstractBatch {
     
     @scala.inline
-    def DelBatch[K, V](key: K, `type`: del): typings.abstractLeveldown.mod.DelBatch[K, V] = {
+    def DelBatch[K, V](key: K): typings.abstractLeveldown.mod.DelBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[typings.abstractLeveldown.mod.DelBatch[K, V]]
     }
     
     @scala.inline
-    def PutBatch[K, V](key: K, `type`: put, value: V): typings.abstractLeveldown.mod.PutBatch[K, V] = {
+    def PutBatch[K, V](key: K, value: V): typings.abstractLeveldown.mod.PutBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[typings.abstractLeveldown.mod.PutBatch[K, V]]
     }
   }
   
   @js.native
   trait AbstractChainedBatchConstructor
-    extends // tslint:disable-next-line no-unnecessary-generics
+    extends StObject
+       with // tslint:disable-next-line no-unnecessary-generics
   Instantiable1[
           /* db */ js.Any, 
           typings.abstractLeveldown.mod.AbstractChainedBatch[js.Object, js.Object]
@@ -145,10 +163,11 @@ object mod {
     def apply[K, V](db: js.Any): typings.abstractLeveldown.mod.AbstractChainedBatch[K, V] = js.native
   }
   
-  @js.native
-  trait AbstractGetOptions extends AbstractOptions {
+  trait AbstractGetOptions
+    extends StObject
+       with AbstractOptions {
     
-    var asBuffer: js.UndefOr[Boolean] = js.native
+    var asBuffer: js.UndefOr[Boolean] = js.undefined
   }
   object AbstractGetOptions {
     
@@ -171,35 +190,37 @@ object mod {
   
   @js.native
   trait AbstractIteratorConstructor
-    extends // tslint:disable-next-line no-unnecessary-generics
+    extends StObject
+       with // tslint:disable-next-line no-unnecessary-generics
   Instantiable1[/* db */ js.Any, AbstractIterator[js.Object, js.Object]] {
     
     // tslint:disable-next-line no-unnecessary-generics
     def apply[K, V](db: js.Any): AbstractIterator[K, V] = js.native
   }
   
-  @js.native
-  trait AbstractIteratorOptions[K] extends AbstractOptions {
+  trait AbstractIteratorOptions[K]
+    extends StObject
+       with AbstractOptions {
     
-    var gt: js.UndefOr[K] = js.native
+    var gt: js.UndefOr[K] = js.undefined
     
-    var gte: js.UndefOr[K] = js.native
+    var gte: js.UndefOr[K] = js.undefined
     
-    var keyAsBuffer: js.UndefOr[Boolean] = js.native
+    var keyAsBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[Boolean] = js.native
+    var keys: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var lt: js.UndefOr[K] = js.native
+    var lt: js.UndefOr[K] = js.undefined
     
-    var lte: js.UndefOr[K] = js.native
+    var lte: js.UndefOr[K] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var valueAsBuffer: js.UndefOr[Boolean] = js.native
+    var valueAsBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var values: js.UndefOr[Boolean] = js.native
+    var values: js.UndefOr[Boolean] = js.undefined
   }
   object AbstractIteratorOptions {
     
@@ -210,7 +231,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AbstractIteratorOptionsMutableBuilder[Self <: AbstractIteratorOptions[_], K] (val x: Self with AbstractIteratorOptions[K]) extends AnyVal {
+    implicit class AbstractIteratorOptionsMutableBuilder[Self <: AbstractIteratorOptions[?], K] (val x: Self & AbstractIteratorOptions[K]) extends AnyVal {
       
       @scala.inline
       def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
@@ -276,7 +297,8 @@ object mod {
   
   @js.native
   trait AbstractLevelDOWNConstructor
-    extends // tslint:disable-next-line no-unnecessary-generics
+    extends StObject
+       with // tslint:disable-next-line no-unnecessary-generics
   Instantiable1[
           /* location */ String, 
           typings.abstractLeveldown.mod.AbstractLevelDOWN[js.Object, js.Object]
@@ -286,12 +308,13 @@ object mod {
     def apply[K, V](location: String): typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V] = js.native
   }
   
-  @js.native
-  trait AbstractOpenOptions extends AbstractOptions {
+  trait AbstractOpenOptions
+    extends StObject
+       with AbstractOptions {
     
-    var createIfMissing: js.UndefOr[Boolean] = js.native
+    var createIfMissing: js.UndefOr[Boolean] = js.undefined
     
-    var errorIfExists: js.UndefOr[Boolean] = js.native
+    var errorIfExists: js.UndefOr[Boolean] = js.undefined
   }
   object AbstractOpenOptions {
     
@@ -320,24 +343,25 @@ object mod {
   
   type AbstractOptions = StringDictionary[js.Any]
   
-  @js.native
-  trait DelBatch[K, V] extends AbstractBatch[K, V] {
+  trait DelBatch[K, V]
+    extends StObject
+       with AbstractBatch[K, V] {
     
-    val key: K = js.native
+    val key: K
     
-    val `type`: del = js.native
+    val `type`: del
   }
   object DelBatch {
     
     @scala.inline
-    def apply[K, V](key: K, `type`: del): DelBatch[K, V] = {
+    def apply[K, V](key: K): DelBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("del")
       __obj.asInstanceOf[DelBatch[K, V]]
     }
     
     @scala.inline
-    implicit class DelBatchMutableBuilder[Self <: DelBatch[_, _], K, V] (val x: Self with (DelBatch[K, V])) extends AnyVal {
+    implicit class DelBatchMutableBuilder[Self <: DelBatch[?, ?], K, V] (val x: Self & (DelBatch[K, V])) extends AnyVal {
       
       @scala.inline
       def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -353,26 +377,27 @@ object mod {
   
   type ErrorValueCallback[V] = js.Function2[/* err */ js.UndefOr[Error], /* value */ V, Unit]
   
-  @js.native
-  trait PutBatch[K, V] extends AbstractBatch[K, V] {
+  trait PutBatch[K, V]
+    extends StObject
+       with AbstractBatch[K, V] {
     
-    val key: K = js.native
+    val key: K
     
-    val `type`: put = js.native
+    val `type`: put
     
-    val value: V = js.native
+    val value: V
   }
   object PutBatch {
     
     @scala.inline
-    def apply[K, V](key: K, `type`: put, value: V): PutBatch[K, V] = {
+    def apply[K, V](key: K, value: V): PutBatch[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("put")
       __obj.asInstanceOf[PutBatch[K, V]]
     }
     
     @scala.inline
-    implicit class PutBatchMutableBuilder[Self <: PutBatch[_, _], K, V] (val x: Self with (PutBatch[K, V])) extends AnyVal {
+    implicit class PutBatchMutableBuilder[Self <: PutBatch[?, ?], K, V] (val x: Self & (PutBatch[K, V])) extends AnyVal {
       
       @scala.inline
       def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

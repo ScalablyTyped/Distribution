@@ -2,19 +2,17 @@ package typings.nextAuth.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerificationRequest extends StObject {
   
-  var Account: String = js.native
+  var Account: String
   
-  var Session: String = js.native
+  var Session: String
   
-  var User: String = js.native
+  var User: String
   
-  var VerificationRequest: String = js.native
+  var VerificationRequest: String
 }
 object VerificationRequest {
   

@@ -3,46 +3,44 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecListenerHealthCheck extends StObject {
   
   /**
     * The number of consecutive successful health checks that must occur before declaring listener healthy.
     */
-  var healthyThreshold: Input[Double] = js.native
+  var healthyThreshold: Input[Double]
   
   /**
     * The time period in milliseconds between each health check execution.
     */
-  var intervalMillis: Input[Double] = js.native
+  var intervalMillis: Input[Double]
   
   /**
     * The destination path for the health check request. This is only required if the specified protocol is `http` or `http2`.
     */
-  var path: js.UndefOr[Input[String]] = js.native
+  var path: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The destination port for the health check request. This port must match the port defined in the `portMapping` for the listener.
     */
-  var port: js.UndefOr[Input[Double]] = js.native
+  var port: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The protocol for the health check request. Valid values are `http`, `http2`, `tcp` and `grpc`.
     */
-  var protocol: Input[String] = js.native
+  var protocol: Input[String]
   
   /**
     * The amount of time to wait when receiving a response from the health check, in milliseconds.
     */
-  var timeoutMillis: Input[Double] = js.native
+  var timeoutMillis: Input[Double]
   
   /**
     * The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy.
     */
-  var unhealthyThreshold: Input[Double] = js.native
+  var unhealthyThreshold: Input[Double]
 }
 object VirtualNodeSpecListenerHealthCheck {
   

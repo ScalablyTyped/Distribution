@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Orderpayments")
@@ -33,7 +32,7 @@ class ResourceOrderpayments protected () extends StObject {
     */
   def notifyauthapproved(): GaxiosPromise[SchemaOrderpaymentsNotifyAuthApprovedResponse] = js.native
   def notifyauthapproved(callback: BodyResponseCallback[SchemaOrderpaymentsNotifyAuthApprovedResponse]): Unit = js.native
-  def notifyauthapproved(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyAuthApprovedResponse] = js.native
+  def notifyauthapproved(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyAuthApprovedResponse] = js.native
   def notifyauthapproved(params: ParamsResourceOrderpaymentsNotifyauthapproved): GaxiosPromise[SchemaOrderpaymentsNotifyAuthApprovedResponse] = js.native
   def notifyauthapproved(
     params: ParamsResourceOrderpaymentsNotifyauthapproved,
@@ -67,7 +66,7 @@ class ResourceOrderpayments protected () extends StObject {
     */
   def notifyauthdeclined(): GaxiosPromise[SchemaOrderpaymentsNotifyAuthDeclinedResponse] = js.native
   def notifyauthdeclined(callback: BodyResponseCallback[SchemaOrderpaymentsNotifyAuthDeclinedResponse]): Unit = js.native
-  def notifyauthdeclined(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyAuthDeclinedResponse] = js.native
+  def notifyauthdeclined(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyAuthDeclinedResponse] = js.native
   def notifyauthdeclined(params: ParamsResourceOrderpaymentsNotifyauthdeclined): GaxiosPromise[SchemaOrderpaymentsNotifyAuthDeclinedResponse] = js.native
   def notifyauthdeclined(
     params: ParamsResourceOrderpaymentsNotifyauthdeclined,
@@ -101,7 +100,7 @@ class ResourceOrderpayments protected () extends StObject {
     */
   def notifycharge(): GaxiosPromise[SchemaOrderpaymentsNotifyChargeResponse] = js.native
   def notifycharge(callback: BodyResponseCallback[SchemaOrderpaymentsNotifyChargeResponse]): Unit = js.native
-  def notifycharge(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyChargeResponse] = js.native
+  def notifycharge(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyChargeResponse] = js.native
   def notifycharge(params: ParamsResourceOrderpaymentsNotifycharge): GaxiosPromise[SchemaOrderpaymentsNotifyChargeResponse] = js.native
   def notifycharge(
     params: ParamsResourceOrderpaymentsNotifycharge,
@@ -135,7 +134,7 @@ class ResourceOrderpayments protected () extends StObject {
     */
   def notifyrefund(): GaxiosPromise[SchemaOrderpaymentsNotifyRefundResponse] = js.native
   def notifyrefund(callback: BodyResponseCallback[SchemaOrderpaymentsNotifyRefundResponse]): Unit = js.native
-  def notifyrefund(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyRefundResponse] = js.native
+  def notifyrefund(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderpaymentsNotifyRefundResponse] = js.native
   def notifyrefund(params: ParamsResourceOrderpaymentsNotifyrefund): GaxiosPromise[SchemaOrderpaymentsNotifyRefundResponse] = js.native
   def notifyrefund(
     params: ParamsResourceOrderpaymentsNotifyrefund,

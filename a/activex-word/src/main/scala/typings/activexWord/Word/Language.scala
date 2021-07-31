@@ -2,40 +2,38 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Language extends StObject {
   
-  val ActiveGrammarDictionary: Dictionary = js.native
+  val ActiveGrammarDictionary: Dictionary
   
-  val ActiveHyphenationDictionary: Dictionary = js.native
+  val ActiveHyphenationDictionary: Dictionary
   
-  val ActiveSpellingDictionary: Dictionary = js.native
+  val ActiveSpellingDictionary: Dictionary
   
-  val ActiveThesaurusDictionary: Dictionary = js.native
+  val ActiveThesaurusDictionary: Dictionary
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DefaultWritingStyle: String = js.native
+  var DefaultWritingStyle: String
   
-  val ID: WdLanguageID = js.native
+  val ID: WdLanguageID
   
-  val Name: String = js.native
+  val Name: String
   
-  val NameLocal: String = js.native
+  val NameLocal: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var SpellingDictionaryType: WdDictionaryType = js.native
+  var SpellingDictionaryType: WdDictionaryType
   
   @JSName("Word.Language_typekey")
-  var WordDotLanguage_typekey: Language = js.native
+  var WordDotLanguage_typekey: Language
   
-  val WritingStyleList: js.Any = js.native
+  val WritingStyleList: js.Any
 }
 object Language {
   

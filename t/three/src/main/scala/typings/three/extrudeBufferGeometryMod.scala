@@ -7,7 +7,6 @@ import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extrudeBufferGeometryMod {
@@ -27,49 +26,48 @@ object extrudeBufferGeometryMod {
     def addShapeList(shapes: js.Array[Shape], options: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ExtrudeGeometryOptions extends StObject {
     
-    var UVGenerator: js.UndefOr[typings.three.extrudeBufferGeometryMod.UVGenerator] = js.native
+    var UVGenerator: js.UndefOr[typings.three.extrudeBufferGeometryMod.UVGenerator] = js.undefined
     
     /**
     	 * @default true
     	 */
-    var bevelEnabled: js.UndefOr[Boolean] = js.native
+    var bevelEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * @default 0
     	 */
-    var bevelOffset: js.UndefOr[Double] = js.native
+    var bevelOffset: js.UndefOr[Double] = js.undefined
     
     /**
     	 * @default 3
     	 */
-    var bevelSegments: js.UndefOr[Double] = js.native
+    var bevelSegments: js.UndefOr[Double] = js.undefined
     
-    var bevelSize: js.UndefOr[Double] = js.native
+    var bevelSize: js.UndefOr[Double] = js.undefined
     
     /**
     	 * @default 6
     	 */
-    var bevelThickness: js.UndefOr[Double] = js.native
+    var bevelThickness: js.UndefOr[Double] = js.undefined
     
     /**
     	 * @default 12
     	 */
-    var curveSegments: js.UndefOr[Double] = js.native
+    var curveSegments: js.UndefOr[Double] = js.undefined
     
     /**
     	 * @default 100
     	 */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var extrudePath: js.UndefOr[Curve[Vector3]] = js.native
+    var extrudePath: js.UndefOr[Curve[Vector3]] = js.undefined
     
     /**
     	 * @default 1
     	 */
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
   }
   object ExtrudeGeometryOptions {
     
@@ -144,7 +142,6 @@ object extrudeBufferGeometryMod {
     }
   }
   
-  @js.native
   trait UVGenerator extends StObject {
     
     def generateSideWallUV(
@@ -154,7 +151,7 @@ object extrudeBufferGeometryMod {
       indexB: Double,
       indexC: Double,
       indexD: Double
-    ): js.Array[Vector2] = js.native
+    ): js.Array[Vector2]
     
     def generateTopUV(
       geometry: ExtrudeBufferGeometry,
@@ -162,7 +159,7 @@ object extrudeBufferGeometryMod {
       indexA: Double,
       indexB: Double,
       indexC: Double
-    ): js.Array[Vector2] = js.native
+    ): js.Array[Vector2]
   }
   object UVGenerator {
     

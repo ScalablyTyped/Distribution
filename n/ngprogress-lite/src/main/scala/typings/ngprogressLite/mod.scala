@@ -2,7 +2,6 @@ package typings.ngprogressLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -10,20 +9,19 @@ object mod {
   
   object progressLite {
     
-    @js.native
     trait IConfigurationOptions extends StObject {
       
-      var ease: String = js.native
+      var ease: String
       
-      var minimum: Double = js.native
+      var minimum: Double
       
-      var speed: Double = js.native
+      var speed: Double
       
-      var template: String = js.native
+      var template: String
       
-      var trickleRate: Double = js.native
+      var trickleRate: Double
       
-      var trickleSpeed: Double = js.native
+      var trickleSpeed: Double
     }
     object IConfigurationOptions {
       
@@ -78,10 +76,9 @@ object mod {
       def start(): INgProgressLite = js.native
     }
     
-    @js.native
     trait INgProgressLiteProvider extends StObject {
       
-      var settings: IConfigurationOptions = js.native
+      var settings: IConfigurationOptions
     }
     object INgProgressLiteProvider {
       

@@ -2,21 +2,19 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpiresIn extends StObject {
   
-  var expiresAt: js.UndefOr[String] = js.native
+  var expiresAt: js.UndefOr[String] = js.undefined
   
-  var expiresIn: js.UndefOr[scala.Nothing] = js.native
+  var expiresIn: Unit
 }
 object ExpiresIn {
   
   @scala.inline
-  def apply(): ExpiresIn = {
-    val __obj = js.Dynamic.literal()
+  def apply(expiresIn: Unit): ExpiresIn = {
+    val __obj = js.Dynamic.literal(expiresIn = expiresIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpiresIn]
   }
   
@@ -28,5 +26,8 @@ object ExpiresIn {
     
     @scala.inline
     def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
+    
+    @scala.inline
+    def setExpiresIn(value: Unit): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
   }
 }

@@ -11,51 +11,45 @@ import typings.seleniumStandalone.seleniumStandaloneStrings.x64
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("selenium-standalone", "install")
+  @JSImport("selenium-standalone", JSImport.Namespace)
   @js.native
-  def install(cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = js.native
-  @JSImport("selenium-standalone", "install")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def install(cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def install(
     optsCb: js.Function2[/* error */ js.UndefOr[Error], /* fsPaths */ FsPaths, Unit],
     cb: js.Function2[/* error */ js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]
-  ): Unit = js.native
-  @JSImport("selenium-standalone", "install")
-  @js.native
-  def install(optsCb: InstallOpts): Unit = js.native
-  @JSImport("selenium-standalone", "install")
-  @js.native
-  def install(opts: InstallOpts, cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def install(optsCb: InstallOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def install(opts: InstallOpts, cb: js.Function2[js.UndefOr[Error], /* fsPaths */ FsPaths, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("selenium-standalone", "start")
-  @js.native
-  def start(cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = js.native
-  @JSImport("selenium-standalone", "start")
-  @js.native
+  @scala.inline
+  def start(cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def start(
     optsCb: js.Function2[/* error */ Error | Null, /* selenium */ ChildProcess, Unit],
     cb: js.Function2[/* error */ Error | Null, /* selenium */ ChildProcess, Unit]
-  ): Unit = js.native
-  @JSImport("selenium-standalone", "start")
-  @js.native
-  def start(optsCb: StartOpts): Unit = js.native
-  @JSImport("selenium-standalone", "start")
-  @js.native
-  def start(opts: StartOpts, cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def start(optsCb: StartOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(optsCb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def start(opts: StartOpts, cb: js.Function2[Error | Null, /* selenium */ ChildProcess, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait DriverOptions extends StObject {
     
-    var arch: js.UndefOr[String | ia32 | x64] = js.native
+    var arch: js.UndefOr[String | ia32 | x64] = js.undefined
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object DriverOptions {
     
@@ -88,19 +82,19 @@ object mod {
     }
   }
   
-  @js.native
   trait FsPaths
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var chrome: js.UndefOr[Dictx] = js.native
+    var chrome: js.UndefOr[Dictx] = js.undefined
     
-    var edge: js.UndefOr[Dictx] = js.native
+    var edge: js.UndefOr[Dictx] = js.undefined
     
-    var firefox: js.UndefOr[Dictx] = js.native
+    var firefox: js.UndefOr[Dictx] = js.undefined
     
-    var ie: js.UndefOr[Dictx] = js.native
+    var ie: js.UndefOr[Dictx] = js.undefined
     
-    var selenium: js.UndefOr[Dictx] = js.native
+    var selenium: js.UndefOr[Dictx] = js.undefined
   }
   object FsPaths {
     
@@ -145,26 +139,25 @@ object mod {
     }
   }
   
-  @js.native
   trait InstallOpts extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var cb: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var cb: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var drivers: js.UndefOr[StringDictionary[DriverOptions]] = js.native
+    var drivers: js.UndefOr[StringDictionary[DriverOptions]] = js.undefined
     
-    var logger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var logger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
     var progressCb: js.UndefOr[
         js.Function3[/* totalLength */ Double, /* progressLength */ Double, /* chunkLength */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var requestOpts: js.UndefOr[RequestOptions | String | URL_] = js.native
+    var requestOpts: js.UndefOr[RequestOptions | String | URL_] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object InstallOpts {
     
@@ -227,28 +220,27 @@ object mod {
     }
   }
   
-  @js.native
   trait StartOpts extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var cb: js.UndefOr[js.Function2[/* error */ Error, /* child */ ChildProcess, Unit]] = js.native
+    var cb: js.UndefOr[js.Function2[/* error */ Error, /* child */ ChildProcess, Unit]] = js.undefined
     
-    var drivers: js.UndefOr[StringDictionary[DriverOptions]] = js.native
+    var drivers: js.UndefOr[StringDictionary[DriverOptions]] = js.undefined
     
-    var javaArgs: js.UndefOr[js.Array[String]] = js.native
+    var javaArgs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var javaPath: js.UndefOr[String] = js.native
+    var javaPath: js.UndefOr[String] = js.undefined
     
-    var requestOpts: js.UndefOr[RequestOptions | String | URL_] = js.native
+    var requestOpts: js.UndefOr[RequestOptions | String | URL_] = js.undefined
     
-    var seleniumArgs: js.UndefOr[js.Array[String]] = js.native
+    var seleniumArgs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var spawnCb: js.UndefOr[js.Function1[/* selenium */ js.UndefOr[ChildProcess], Unit]] = js.native
+    var spawnCb: js.UndefOr[js.Function1[/* selenium */ js.UndefOr[ChildProcess], Unit]] = js.undefined
     
-    var spawnOptions: js.UndefOr[SpawnOptions] = js.native
+    var spawnOptions: js.UndefOr[SpawnOptions] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object StartOpts {
     

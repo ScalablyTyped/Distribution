@@ -13,7 +13,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateInputMod {
@@ -99,7 +98,8 @@ object dateInputMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsDatetime.dateFormatMod.IDateFormatProps because var conflicts: locale. Inlined invalidDateMessage, outOfRangeMessage, placeholder, formatDate, formatDate, parseDate, parseDate */ @js.native
   trait IDateInputProps
-    extends IDatePickerBaseProps
+    extends StObject
+       with IDatePickerBaseProps
        with IProps {
     
     /**
@@ -151,7 +151,7 @@ object dateInputMod {
       * `disabled` and `value` will be ignored in favor of the top-level props on this component.
       * `type` is fixed to "text" and `ref` is not supported; use `inputRef` instead.
       */
-    var inputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.native
+    var inputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.native
     
     /**
       * The error message to display when the date selected is invalid.
@@ -199,7 +199,7 @@ object dateInputMod {
       * Props to pass to the `Popover`.
       * Note that `content`, `autoFocus`, and `enforceFocus` cannot be changed.
       */
-    var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
     
     /**
       * Element to render on right side of input.
@@ -236,18 +236,17 @@ object dateInputMod {
     var value: js.UndefOr[Date | Null] = js.native
   }
   
-  @js.native
   trait IDateInputState extends StObject {
     
-    var isInputFocused: Boolean = js.native
+    var isInputFocused: Boolean
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var value: Date = js.native
+    var value: Date
     
-    var valueString: String = js.native
+    var valueString: String
   }
   object IDateInputState {
     

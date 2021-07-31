@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataRetrievalPolicyOutput extends StObject {
   
   /**
     * Contains the returned data retrieval policy in JSON format.
     */
-  var Policy: js.UndefOr[DataRetrievalPolicy] = js.native
+  var Policy: js.UndefOr[DataRetrievalPolicy] = js.undefined
 }
 object GetDataRetrievalPolicyOutput {
   

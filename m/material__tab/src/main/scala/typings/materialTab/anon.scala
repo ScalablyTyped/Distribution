@@ -3,15 +3,13 @@ package typings.materialTab
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIVE extends StObject {
     
-    var ACTIVE: String = js.native
+    var ACTIVE: String
   }
   object ACTIVE {
     
@@ -29,20 +27,19 @@ object anon {
     }
   }
   
-  @js.native
   trait ARIASELECTED extends StObject {
     
-    var ARIA_SELECTED: String = js.native
+    var ARIA_SELECTED: String
     
-    var CONTENT_SELECTOR: String = js.native
+    var CONTENT_SELECTOR: String
     
-    var INTERACTED_EVENT: String = js.native
+    var INTERACTED_EVENT: String
     
-    var RIPPLE_SELECTOR: String = js.native
+    var RIPPLE_SELECTOR: String
     
-    var TABINDEX: String = js.native
+    var TABINDEX: String
     
-    var TAB_INDICATOR_SELECTOR: String = js.native
+    var TAB_INDICATOR_SELECTOR: String
   }
   object ARIASELECTED {
     
@@ -83,32 +80,31 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tab.@material/tab/adapter.MDCTabAdapter> */
-  @js.native
   trait PartialMDCTabAdapter extends StObject {
     
-    var activateIndicator: js.UndefOr[js.Function1[/* previousIndicatorClientRect */ js.UndefOr[ClientRect], Unit]] = js.native
+    var activateIndicator: js.UndefOr[js.Function1[/* previousIndicatorClientRect */ js.UndefOr[ClientRect], Unit]] = js.undefined
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var deactivateIndicator: js.UndefOr[js.Function0[Unit]] = js.native
+    var deactivateIndicator: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var focus: js.UndefOr[js.Function0[Unit]] = js.native
+    var focus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getContentOffsetLeft: js.UndefOr[js.Function0[Double]] = js.native
+    var getContentOffsetLeft: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getContentOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getContentOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetLeft: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetLeft: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var notifyInteracted: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyInteracted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCTabAdapter {
     

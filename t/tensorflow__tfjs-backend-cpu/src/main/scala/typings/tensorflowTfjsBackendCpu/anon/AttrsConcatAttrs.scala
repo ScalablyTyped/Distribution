@@ -6,17 +6,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.ConcatInputs
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsConcatAttrs extends StObject {
   
-  var attrs: ConcatAttrs = js.native
+  var attrs: ConcatAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: ConcatInputs = js.native
+  var inputs: ConcatInputs
 }
 object AttrsConcatAttrs {
   

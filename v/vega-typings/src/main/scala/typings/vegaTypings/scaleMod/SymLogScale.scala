@@ -4,25 +4,24 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.symlog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymLogScale
-  extends NumericScale
+  extends StObject
+     with NumericScale
      with Scale {
   
-  var constant: js.UndefOr[Double | SignalRef] = js.native
+  var constant: js.UndefOr[Double | SignalRef] = js.undefined
   
   @JSName("type")
-  var type_SymLogScale: symlog = js.native
+  var type_SymLogScale: symlog
 }
 object SymLogScale {
   
   @scala.inline
-  def apply(name: String, `type`: symlog): SymLogScale = {
+  def apply(name: String): SymLogScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("symlog")
     __obj.asInstanceOf[SymLogScale]
   }
   

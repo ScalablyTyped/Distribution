@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SchedulerStatic
-  extends Instantiable4[
+  extends StObject
+     with Instantiable4[
       /* now */ js.Function0[Double], 
       /* schedule */ js.Function2[
         /* state */ js.Any, 

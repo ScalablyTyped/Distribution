@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchDevicesResponse extends StObject {
   
   /**
     * The devices that meet the specified set of filter criteria, in sort order.
     */
-  var Devices: js.UndefOr[DeviceDataList] = js.native
+  var Devices: js.UndefOr[DeviceDataList] = js.undefined
   
   /**
     * The token returned to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The total number of devices returned.
     */
-  var TotalCount: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TotalCount] = js.native
+  var TotalCount: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TotalCount] = js.undefined
 }
 object SearchDevicesResponse {
   

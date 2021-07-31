@@ -2,17 +2,15 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarDot extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var key: String = js.native
+  var key: String
   
-  var selectedDotColor: js.UndefOr[String] = js.native
+  var selectedDotColor: js.UndefOr[String] = js.undefined
 }
 object CalendarDot {
   

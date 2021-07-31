@@ -9,7 +9,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positioningContainerPositioningContainerMod {
@@ -133,19 +132,18 @@ object positioningContainerPositioningContainerMod {
     def defaultProps_=(x: IPositioningContainerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPositioningContainerState extends StObject {
     
     /**
       * Tracks the current height offset and updates during
       * the height animation when props.finalHeight is specified.
       */
-    var heightOffset: js.UndefOr[Double] = js.native
+    var heightOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Current set of calcualted positions for the outermost parent container.
       */
-    var positions: js.UndefOr[IPositionedData] = js.native
+    var positions: js.UndefOr[IPositionedData] = js.undefined
   }
   object IPositioningContainerState {
     

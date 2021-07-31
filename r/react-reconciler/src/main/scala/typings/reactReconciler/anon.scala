@@ -2,15 +2,13 @@ package typings.reactReconciler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait StringRef extends StObject {
     
-    var _stringRef: js.UndefOr[String | Null] = js.native
+    var _stringRef: js.UndefOr[String | Null] = js.undefined
   }
   object StringRef {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Timeout extends StObject {
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Timeout {
     

@@ -3,16 +3,14 @@ package typings.exceljs.anon
 import typings.exceljs.mod.BorderStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Border> */
-@js.native
 trait PartialBorder extends StObject {
   
-  var color: js.UndefOr[PartialColor] = js.native
+  var color: js.UndefOr[PartialColor] = js.undefined
   
-  var style: js.UndefOr[BorderStyle] = js.native
+  var style: js.UndefOr[BorderStyle] = js.undefined
 }
 object PartialBorder {
   

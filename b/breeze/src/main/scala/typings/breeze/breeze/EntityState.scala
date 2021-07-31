@@ -4,21 +4,21 @@ import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EntityState extends IEnum {
+trait EntityState
+  extends StObject
+     with IEnum {
   
-  var Added: EntityStateSymbol = js.native
+  var Added: EntityStateSymbol
   
-  var Deleted: EntityStateSymbol = js.native
+  var Deleted: EntityStateSymbol
   
-  var Detached: EntityStateSymbol = js.native
+  var Detached: EntityStateSymbol
   
-  var Modified: EntityStateSymbol = js.native
+  var Modified: EntityStateSymbol
   
-  var Unchanged: EntityStateSymbol = js.native
+  var Unchanged: EntityStateSymbol
 }
 object EntityState {
   

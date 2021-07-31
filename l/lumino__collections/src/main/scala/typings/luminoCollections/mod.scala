@@ -4,7 +4,6 @@ import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import typings.luminoCollections.linkedlistMod.LinkedList.INode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,6 +21,10 @@ object mod {
   }
   object BPlusTree {
     
+    @JSImport("@lumino/collections", "BPlusTree")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a new B+ tree populated with the given items.
       *
@@ -34,9 +37,8 @@ object mod {
       * #### Complexity
       * `O(n log32 n)`
       */
-    @JSImport("@lumino/collections", "BPlusTree.from")
-    @js.native
-    def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.bplustreeMod.BPlusTree[T] = js.native
+    @scala.inline
+    def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): typings.luminoCollections.bplustreeMod.BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[typings.luminoCollections.bplustreeMod.BPlusTree[T]]
   }
   
   @JSImport("@lumino/collections", "LinkedList")
@@ -47,6 +49,10 @@ object mod {
   class LinkedList[T] ()
     extends typings.luminoCollections.linkedlistMod.LinkedList[T]
   object LinkedList {
+    
+    @JSImport("@lumino/collections", "LinkedList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A forward iterator for nodes in a linked list.
@@ -118,8 +124,7 @@ object mod {
       * #### Complexity
       * Linear.
       */
-    @JSImport("@lumino/collections", "LinkedList.from")
-    @js.native
-    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = js.native
+    @scala.inline
+    def from[T](values: IterableOrArrayLike[T]): typings.luminoCollections.linkedlistMod.LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[typings.luminoCollections.linkedlistMod.LinkedList[T]]
   }
 }

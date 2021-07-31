@@ -2,58 +2,56 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration of the service.
   */
-@js.native
 trait SchemaServiceConfig extends StObject {
   
   /**
     * A list of API interfaces exported by this service. Contains only the
     * names, versions, and method names of the interfaces.
     */
-  var apis: js.UndefOr[js.Array[SchemaApi]] = js.native
+  var apis: js.UndefOr[js.Array[SchemaApi]] = js.undefined
   
   /**
     * Auth configuration. Contains only the OAuth rules.
     */
-  var authentication: js.UndefOr[SchemaAuthentication] = js.native
+  var authentication: js.UndefOr[SchemaAuthentication] = js.undefined
   
   /**
     * Additional API documentation. Contains only the summary and the
     * documentation URL.
     */
-  var documentation: js.UndefOr[SchemaDocumentation] = js.native
+  var documentation: js.UndefOr[SchemaDocumentation] = js.undefined
   
   /**
     * Configuration for network endpoints. Contains only the names and aliases
     * of the endpoints.
     */
-  var endpoints: js.UndefOr[js.Array[SchemaEndpoint]] = js.native
+  var endpoints: js.UndefOr[js.Array[SchemaEndpoint]] = js.undefined
   
   /**
     * The DNS address at which this service is available.  An example DNS
     * address would be: `calendar.googleapis.com`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Quota configuration.
     */
-  var quota: js.UndefOr[SchemaQuota] = js.native
+  var quota: js.UndefOr[SchemaQuota] = js.undefined
   
   /**
     * The product title for this service.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration controlling usage of this service.
     */
-  var usage: js.UndefOr[SchemaUsage] = js.native
+  var usage: js.UndefOr[SchemaUsage] = js.undefined
 }
 object SchemaServiceConfig {
   

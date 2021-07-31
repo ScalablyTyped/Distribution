@@ -8,12 +8,15 @@ import typings.leaflet.mod.PolylineOptions
 import typings.leaflet.mod.Polyline_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // geodesic
 /* augmented module */
 object leafletMod {
+  
+  @JSImport("leaflet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // tslint:disable-next-line:no-empty-interface
   @JSImport("leaflet", "GeodesicCircle")
@@ -40,11 +43,9 @@ object leafletMod {
     def this(latlngs: js.Array[js.Array[LatLngExpression] | LatLngExpression], options: PolylineOptions) = this()
   }
   
-  @JSImport("leaflet", "geodesicPolygon")
-  @js.native
-  def geodesicPolygon(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolygon_ = js.native
+  @scala.inline
+  def geodesicPolygon(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolygon_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geodesicPolygon")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeodesicPolygon_]
   
-  @JSImport("leaflet", "geodesicPolyline")
-  @js.native
-  def geodesicPolyline(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolyline_ = js.native
+  @scala.inline
+  def geodesicPolyline(latlngs: js.Array[LatLng_], options: js.UndefOr[PolylineOptions]): GeodesicPolyline_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geodesicPolyline")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeodesicPolyline_]
 }

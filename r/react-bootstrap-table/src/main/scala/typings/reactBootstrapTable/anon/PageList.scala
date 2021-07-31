@@ -5,26 +5,24 @@ import typings.reactBootstrapTable.mod.SizePerPageDropDown
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageList extends StObject {
   
   /**
     * The default list of page change buttons.
     */
-  var pageList: HTMLUListElement = js.native
+  var pageList: HTMLUListElement
   
   /**
     * Default sizePerPageDropdown component.
     */
-  var sizePerPageDropDown: SizePerPageDropDown = js.native
+  var sizePerPageDropDown: SizePerPageDropDown
   
   /**
     * Text/element to display when displaying the total number of rows.
     */
-  var totalText: String | ReactElement = js.native
+  var totalText: String | ReactElement
 }
 object PageList {
   

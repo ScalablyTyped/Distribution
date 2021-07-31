@@ -2,7 +2,6 @@ package typings.openpgp.mod.enums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ sealed trait aead extends StObject
 object aead extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[aead with Double] = js.native
+  def apply(value: Double): js.UndefOr[aead & Double] = js.native
   
   @js.native
-  sealed trait eax extends aead
-  /* 1 */ val eax: typings.openpgp.mod.enums.aead.eax with Double = js.native
+  sealed trait eax
+    extends StObject
+       with aead
+  /* 1 */ val eax: typings.openpgp.mod.enums.aead.eax & Double = js.native
   
   @js.native
-  sealed trait experimental_gcm extends aead
-  /* 100 */ val experimental_gcm: typings.openpgp.mod.enums.aead.experimental_gcm with Double = js.native
+  sealed trait experimental_gcm
+    extends StObject
+       with aead
+  /* 100 */ val experimental_gcm: typings.openpgp.mod.enums.aead.experimental_gcm & Double = js.native
   
   @js.native
-  sealed trait ocb extends aead
-  /* 2 */ val ocb: typings.openpgp.mod.enums.aead.ocb with Double = js.native
+  sealed trait ocb
+    extends StObject
+       with aead
+  /* 2 */ val ocb: typings.openpgp.mod.enums.aead.ocb & Double = js.native
 }

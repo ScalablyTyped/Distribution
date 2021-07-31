@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Advertisergroups")
@@ -31,7 +30,7 @@ class ResourceAdvertisergroups protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAdvertisergroupsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAdvertisergroupsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceAdvertisergroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaAdvertiserGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def get(params: ParamsResourceAdvertisergroupsGet): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def get(params: ParamsResourceAdvertisergroupsGet, callback: BodyResponseCallback[SchemaAdvertiserGroup]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceAdvertisergroups protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaAdvertiserGroup]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def insert(params: ParamsResourceAdvertisergroupsInsert): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def insert(
     params: ParamsResourceAdvertisergroupsInsert,
@@ -130,7 +129,7 @@ class ResourceAdvertisergroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAdvertiserGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAdvertiserGroupsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroupsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroupsListResponse] = js.native
   def list(params: ParamsResourceAdvertisergroupsList): GaxiosPromise[SchemaAdvertiserGroupsListResponse] = js.native
   def list(
     params: ParamsResourceAdvertisergroupsList,
@@ -165,7 +164,7 @@ class ResourceAdvertisergroups protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def patch(callback: BodyResponseCallback[SchemaAdvertiserGroup]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def patch(params: ParamsResourceAdvertisergroupsPatch): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def patch(params: ParamsResourceAdvertisergroupsPatch, callback: BodyResponseCallback[SchemaAdvertiserGroup]): Unit = js.native
   def patch(
@@ -195,7 +194,7 @@ class ResourceAdvertisergroups protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaAdvertiserGroup]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def update(params: ParamsResourceAdvertisergroupsUpdate): GaxiosPromise[SchemaAdvertiserGroup] = js.native
   def update(
     params: ParamsResourceAdvertisergroupsUpdate,

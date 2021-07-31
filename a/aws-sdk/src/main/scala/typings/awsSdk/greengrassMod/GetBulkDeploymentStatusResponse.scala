@@ -2,41 +2,39 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBulkDeploymentStatusResponse extends StObject {
   
   /**
     * Relevant metrics on input records processed during bulk deployment.
     */
-  var BulkDeploymentMetrics: js.UndefOr[typings.awsSdk.greengrassMod.BulkDeploymentMetrics] = js.native
+  var BulkDeploymentMetrics: js.UndefOr[typings.awsSdk.greengrassMod.BulkDeploymentMetrics] = js.undefined
   
   /**
     * The status of the bulk deployment.
     */
-  var BulkDeploymentStatus: js.UndefOr[typings.awsSdk.greengrassMod.BulkDeploymentStatus] = js.native
+  var BulkDeploymentStatus: js.UndefOr[typings.awsSdk.greengrassMod.BulkDeploymentStatus] = js.undefined
   
   /**
     * The time, in ISO format, when the deployment was created.
     */
-  var CreatedAt: js.UndefOr[string] = js.native
+  var CreatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * Error details
     */
-  var ErrorDetails: js.UndefOr[typings.awsSdk.greengrassMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.greengrassMod.ErrorDetails] = js.undefined
   
   /**
     * Error message
     */
-  var ErrorMessage: js.UndefOr[string] = js.native
+  var ErrorMessage: js.UndefOr[string] = js.undefined
   
   /**
     * Tag(s) attached to the resource arn.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object GetBulkDeploymentStatusResponse {
   

@@ -3,19 +3,17 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Third party identity principal.
   */
-@js.native
 trait SchemaThirdPartyPrincipal extends StObject {
   
   /**
     * Metadata about third party identity.
     */
-  var thirdPartyClaims: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var thirdPartyClaims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaThirdPartyPrincipal {
   

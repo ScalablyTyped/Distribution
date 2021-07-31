@@ -3,12 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`polygon-3d`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PolygonSymbol3D
-  extends Symbol3D
+  extends StObject
+     with Symbol3D
      with typings.arcgisJsApi.esri.symbols.Symbol2D3D
      with Symbol2D3D
      with typings.arcgisJsApi.esri.symbols.Symbol3D

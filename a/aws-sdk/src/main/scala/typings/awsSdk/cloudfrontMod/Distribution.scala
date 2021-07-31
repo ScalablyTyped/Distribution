@@ -2,61 +2,59 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distribution extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
     */
-  var ARN: String = js.native
+  var ARN: String
   
   /**
     * CloudFront automatically adds this field to the response if you’ve configured a cache behavior in this distribution to serve private content using key groups. This field contains a list of key groups and the public keys in each key group that CloudFront can use to verify the signatures of signed URLs or signed cookies.
     */
-  var ActiveTrustedKeyGroups: js.UndefOr[typings.awsSdk.cloudfrontMod.ActiveTrustedKeyGroups] = js.native
+  var ActiveTrustedKeyGroups: js.UndefOr[typings.awsSdk.cloudfrontMod.ActiveTrustedKeyGroups] = js.undefined
   
   /**
     *  We recommend using TrustedKeyGroups instead of TrustedSigners.  CloudFront automatically adds this field to the response if you’ve configured a cache behavior in this distribution to serve private content using trusted signers. This field contains a list of AWS account IDs and the active CloudFront key pairs in each account that CloudFront can use to verify the signatures of signed URLs or signed cookies.
     */
-  var ActiveTrustedSigners: js.UndefOr[typings.awsSdk.cloudfrontMod.ActiveTrustedSigners] = js.native
+  var ActiveTrustedSigners: js.UndefOr[typings.awsSdk.cloudfrontMod.ActiveTrustedSigners] = js.undefined
   
   /**
     * AWS services in China customers must file for an Internet Content Provider (ICP) recordal if they want to serve content publicly on an alternate domain name, also known as a CNAME, that they've added to CloudFront. AliasICPRecordal provides the ICP recordal status for CNAMEs associated with distributions. For more information about ICP recordals, see  Signup, Accounts, and Credentials in Getting Started with AWS services in China.
     */
-  var AliasICPRecordals: js.UndefOr[typings.awsSdk.cloudfrontMod.AliasICPRecordals] = js.native
+  var AliasICPRecordals: js.UndefOr[typings.awsSdk.cloudfrontMod.AliasICPRecordals] = js.undefined
   
   /**
     * The current configuration information for the distribution. Send a GET request to the /CloudFront API version/distribution ID/config resource.
     */
-  var DistributionConfig: typings.awsSdk.cloudfrontMod.DistributionConfig = js.native
+  var DistributionConfig: typings.awsSdk.cloudfrontMod.DistributionConfig
   
   /**
     * The domain name corresponding to the distribution, for example, d111111abcdef8.cloudfront.net. 
     */
-  var DomainName: String = js.native
+  var DomainName: String
   
   /**
     * The identifier for the distribution. For example: EDFDVBD632BHDS5. 
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The number of invalidation batches currently in progress. 
     */
-  var InProgressInvalidationBatches: integer = js.native
+  var InProgressInvalidationBatches: integer
   
   /**
     * The date and time the distribution was last modified. 
     */
-  var LastModifiedTime: timestamp = js.native
+  var LastModifiedTime: timestamp
   
   /**
     * This response element indicates the current status of the distribution. When the status is Deployed, the distribution's information is fully propagated to all CloudFront edge locations. 
     */
-  var Status: String = js.native
+  var Status: String
 }
 object Distribution {
   

@@ -2,16 +2,14 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentUnbind extends StObject {
   
   /**
     * Implement this hook if you want to perform custom logic after the component is detached and unbound.
     */
-  def unbind(): Unit = js.native
+  def unbind(): Unit
 }
 object ComponentUnbind {
   

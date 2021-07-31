@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Node.typesTagMod.UnmarshalledTag
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTaggingMod {
   
-  @js.native
   trait Tagging extends StObject {
     
     /**
       * _TagSet shape
       */
-    var TagSet: js.Array[Tag] | Iterable[Tag] = js.native
+    var TagSet: js.Array[Tag] | Iterable[Tag]
   }
   object Tagging {
     
@@ -37,14 +35,15 @@ object typesTaggingMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTagging extends Tagging {
+  trait UnmarshalledTagging
+    extends StObject
+       with Tagging {
     
     /**
       * _TagSet shape
       */
     @JSName("TagSet")
-    var TagSet_UnmarshalledTagging: js.Array[UnmarshalledTag] = js.native
+    var TagSet_UnmarshalledTagging: js.Array[UnmarshalledTag]
   }
   object UnmarshalledTagging {
     

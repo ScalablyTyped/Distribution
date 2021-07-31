@@ -2,13 +2,11 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for renewing a lease using RenewLease.
   */
-@js.native
 trait SchemaRenewLeaseRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRenewLeaseRequest extends StObject {
     * maximum lease duration is 1 week. `lease_duration` will be truncated to
     * the nearest second.
     */
-  var leaseDuration: js.UndefOr[String] = js.native
+  var leaseDuration: js.UndefOr[String] = js.undefined
   
   /**
     * The response_view specifies which subset of the Task will be returned. By
@@ -27,14 +25,14 @@ trait SchemaRenewLeaseRequest extends StObject {
     * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/)
     * permission on the Task resource.
     */
-  var responseView: js.UndefOr[String] = js.native
+  var responseView: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The task&#39;s current schedule time, available in the
     * schedule_time returned by LeaseTasks response or RenewLease response.
     * This restriction is to ensure that your worker currently holds the lease.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
 }
 object SchemaRenewLeaseRequest {
   

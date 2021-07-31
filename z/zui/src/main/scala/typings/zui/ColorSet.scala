@@ -2,13 +2,11 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorSet extends StObject {
   
-  def get(name: String): Color = js.native
+  def get(name: String): Color
 }
 object ColorSet {
   

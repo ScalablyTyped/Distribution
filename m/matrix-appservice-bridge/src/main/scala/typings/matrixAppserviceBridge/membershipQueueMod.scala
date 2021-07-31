@@ -5,7 +5,6 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.join
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.leave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object membershipQueueMod {
@@ -19,8 +18,6 @@ object membershipQueueMod {
     
     var hashRoomId: js.Any = js.native
     
-    def join(roomId: String, userId: js.UndefOr[scala.Nothing], req: ThinRequest): js.Promise[Unit] = js.native
-    def join(roomId: String, userId: js.UndefOr[scala.Nothing], req: ThinRequest, retry: Boolean): js.Promise[Unit] = js.native
     /**
       * Join a user to a room
       * @param roomId The roomId to join
@@ -30,6 +27,8 @@ object membershipQueueMod {
       */
     def join(roomId: String, userId: String, req: ThinRequest): js.Promise[Unit] = js.native
     def join(roomId: String, userId: String, req: ThinRequest, retry: Boolean): js.Promise[Unit] = js.native
+    def join(roomId: String, userId: Unit, req: ThinRequest): js.Promise[Unit] = js.native
+    def join(roomId: String, userId: Unit, req: ThinRequest, retry: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Leave OR kick a user from a room
@@ -41,34 +40,13 @@ object membershipQueueMod {
       * @param kickUser The user to be kicked. If left blank, this will be a leave.
       */
     def leave(roomId: String, userId: String, req: ThinRequest): js.Promise[Unit] = js.native
-    def leave(
-      roomId: String,
-      userId: String,
-      req: ThinRequest,
-      retry: js.UndefOr[scala.Nothing],
-      reason: js.UndefOr[scala.Nothing],
-      kickUser: String
-    ): js.Promise[Unit] = js.native
-    def leave(roomId: String, userId: String, req: ThinRequest, retry: js.UndefOr[scala.Nothing], reason: String): js.Promise[Unit] = js.native
-    def leave(
-      roomId: String,
-      userId: String,
-      req: ThinRequest,
-      retry: js.UndefOr[scala.Nothing],
-      reason: String,
-      kickUser: String
-    ): js.Promise[Unit] = js.native
     def leave(roomId: String, userId: String, req: ThinRequest, retry: Boolean): js.Promise[Unit] = js.native
-    def leave(
-      roomId: String,
-      userId: String,
-      req: ThinRequest,
-      retry: Boolean,
-      reason: js.UndefOr[scala.Nothing],
-      kickUser: String
-    ): js.Promise[Unit] = js.native
     def leave(roomId: String, userId: String, req: ThinRequest, retry: Boolean, reason: String): js.Promise[Unit] = js.native
     def leave(roomId: String, userId: String, req: ThinRequest, retry: Boolean, reason: String, kickUser: String): js.Promise[Unit] = js.native
+    def leave(roomId: String, userId: String, req: ThinRequest, retry: Boolean, reason: Unit, kickUser: String): js.Promise[Unit] = js.native
+    def leave(roomId: String, userId: String, req: ThinRequest, retry: Unit, reason: String): js.Promise[Unit] = js.native
+    def leave(roomId: String, userId: String, req: ThinRequest, retry: Unit, reason: String, kickUser: String): js.Promise[Unit] = js.native
+    def leave(roomId: String, userId: String, req: ThinRequest, retry: Unit, reason: Unit, kickUser: String): js.Promise[Unit] = js.native
     
     var opts: js.Any = js.native
     
@@ -81,16 +59,15 @@ object membershipQueueMod {
     var shouldRetry: js.Any = js.native
   }
   
-  @js.native
   trait MembershipQueueOpts extends StObject {
     
-    var concurrentRoomLimit: Double = js.native
+    var concurrentRoomLimit: Double
     
-    var joinDelayMs: Double = js.native
+    var joinDelayMs: Double
     
-    var maxAttempts: Double = js.native
+    var maxAttempts: Double
     
-    var maxJoinDelayMs: Double = js.native
+    var maxJoinDelayMs: Double
   }
   object MembershipQueueOpts {
     
@@ -117,24 +94,23 @@ object membershipQueueMod {
     }
   }
   
-  @js.native
   trait QueueUserItem extends StObject {
     
-    var attempts: Double = js.native
+    var attempts: Double
     
-    var kickUser: js.UndefOr[String] = js.native
+    var kickUser: js.UndefOr[String] = js.undefined
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var req: ThinRequest = js.native
+    var req: ThinRequest
     
-    var retry: Boolean = js.native
+    var retry: Boolean
     
-    var roomId: String = js.native
+    var roomId: String
     
-    var `type`: join | leave = js.native
+    var `type`: join | leave
     
-    var userId: String = js.native
+    var userId: String
   }
   object QueueUserItem {
     
@@ -187,10 +163,9 @@ object membershipQueueMod {
     }
   }
   
-  @js.native
   trait ThinRequest extends StObject {
     
-    def getId(): String = js.native
+    def getId(): String
   }
   object ThinRequest {
     

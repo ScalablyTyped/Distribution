@@ -12,44 +12,45 @@ import typings.reduxTestkit.anon.ToChangeInState
 import typings.reduxThunk.mod.ThunkAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("redux-testkit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object FlushThunks {
     
-    @JSImport("redux-testkit", "FlushThunks.createMiddleware")
+    @JSImport("redux-testkit", "FlushThunks")
     @js.native
-    def createMiddleware(): (Middleware[js.Object, _, Dispatch[AnyAction]]) with Flush = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createMiddleware(): (Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Flush = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[(Middleware[js.Object, js.Any, Dispatch[AnyAction]]) & Flush]
   }
   
-  @JSImport("redux-testkit", "Reducer")
-  @js.native
-  def Reducer(action: typings.redux.mod.Reducer[_, AnyAction]): ReducerTestkitwithStatest = js.native
+  @scala.inline
+  def Reducer(action: typings.redux.mod.Reducer[js.Any, AnyAction]): ReducerTestkitwithStatest = ^.asInstanceOf[js.Dynamic].applyDynamic("Reducer")(action.asInstanceOf[js.Any]).asInstanceOf[ReducerTestkitwithStatest]
   
-  @JSImport("redux-testkit", "Selector")
-  @js.native
-  def Selector(selector: js.Function2[/* state */ js.Any, /* action */ js.Any, _]): Execute = js.native
+  @scala.inline
+  def Selector(selector: js.Function2[/* state */ js.Any, /* action */ js.Any, js.Any]): Execute = ^.asInstanceOf[js.Dynamic].applyDynamic("Selector")(selector.asInstanceOf[js.Any]).asInstanceOf[Execute]
   
-  @JSImport("redux-testkit", "Thunk")
-  @js.native
-  def Thunk(thunkFunc: ThunkAction[_, _, _, _]): ThunkTestkitwithStatestat = js.native
-  @JSImport("redux-testkit", "Thunk")
-  @js.native
-  def Thunk(thunkFunc: ThunkAction[_, _, _, _], extraArg: js.Any): ThunkTestkitwithStatestat = js.native
+  @scala.inline
+  def Thunk(thunkFunc: ThunkAction[js.Any, js.Any, js.Any, js.Any]): ThunkTestkitwithStatestat = ^.asInstanceOf[js.Dynamic].applyDynamic("Thunk")(thunkFunc.asInstanceOf[js.Any]).asInstanceOf[ThunkTestkitwithStatestat]
+  @scala.inline
+  def Thunk(thunkFunc: ThunkAction[js.Any, js.Any, js.Any, js.Any], extraArg: js.Any): ThunkTestkitwithStatestat = (^.asInstanceOf[js.Dynamic].applyDynamic("Thunk")(thunkFunc.asInstanceOf[js.Any], extraArg.asInstanceOf[js.Any])).asInstanceOf[ThunkTestkitwithStatestat]
   
-  @js.native
   trait ReducerTestkit extends StObject {
     
-    def execute(action: Action[_]): js.Any = js.native
+    def execute(action: Action[js.Any]): js.Any
     
-    def expect(action: Action[_]): ToChangeInState = js.native
+    def expect(action: Action[js.Any]): ToChangeInState
   }
   object ReducerTestkit {
     
     @scala.inline
-    def apply(execute: Action[_] => js.Any, expect: Action[_] => ToChangeInState): ReducerTestkit = {
+    def apply(execute: Action[js.Any] => js.Any, expect: Action[js.Any] => ToChangeInState): ReducerTestkit = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), expect = js.Any.fromFunction1(expect))
       __obj.asInstanceOf[ReducerTestkit]
     }
@@ -58,17 +59,16 @@ object mod {
     implicit class ReducerTestkitMutableBuilder[Self <: ReducerTestkit] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExecute(value: Action[_] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      def setExecute(value: Action[js.Any] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setExpect(value: Action[_] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
+      def setExpect(value: Action[js.Any] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait ThunkTestkit extends StObject {
     
-    def execute(args: js.Any*): js.Any = js.native
+    def execute(args: js.Any*): js.Any
   }
   object ThunkTestkit {
     

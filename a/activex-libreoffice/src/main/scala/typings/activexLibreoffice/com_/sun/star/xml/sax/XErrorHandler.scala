@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,17 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is a slight adaption of the Java interface `org.xml.sax.ErrorHandler` . In IDL, no exception can be passed as an argument, so an `any`
   * serves as the container. The type of the exception is {@link SAXParseException} or an instance of a derived class.
   */
-@js.native
-trait XErrorHandler extends XInterface {
+trait XErrorHandler
+  extends StObject
+     with XInterface {
   
   /** receives notification of a recoverable error. */
-  def error(aSAXParseException: js.Any): Unit = js.native
+  def error(aSAXParseException: js.Any): Unit
   
   /** receives notification of a non-recoverable error. */
-  def fatalError(aSAXParseException: js.Any): Unit = js.native
+  def fatalError(aSAXParseException: js.Any): Unit
   
   /** receives notification of a warning. */
-  def warning(aSAXParseException: js.Any): Unit = js.native
+  def warning(aSAXParseException: js.Any): Unit
 }
 object XErrorHandler {
   

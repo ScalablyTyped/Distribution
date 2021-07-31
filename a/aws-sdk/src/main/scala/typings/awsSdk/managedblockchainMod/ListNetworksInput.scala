@@ -2,36 +2,34 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNetworksInput extends StObject {
   
   /**
     * An optional framework specifier. If provided, only networks of this framework type are listed.
     */
-  var Framework: js.UndefOr[typings.awsSdk.managedblockchainMod.Framework] = js.native
+  var Framework: js.UndefOr[typings.awsSdk.managedblockchainMod.Framework] = js.undefined
   
   /**
     * The maximum number of networks to list.
     */
-  var MaxResults: js.UndefOr[NetworkListMaxResults] = js.native
+  var MaxResults: js.UndefOr[NetworkListMaxResults] = js.undefined
   
   /**
     * The name of the network.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * An optional status specifier. If provided, only networks currently in this status are listed.
     */
-  var Status: js.UndefOr[NetworkStatus] = js.native
+  var Status: js.UndefOr[NetworkStatus] = js.undefined
 }
 object ListNetworksInput {
   

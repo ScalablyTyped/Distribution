@@ -5,17 +5,17 @@ import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoundRectangle extends IModel {
+trait RoundRectangle
+  extends StObject
+     with IModel {
   
   @JSName("origin")
-  var origin_RoundRectangle: IPoint = js.native
+  var origin_RoundRectangle: IPoint
   
   @JSName("paths")
-  var paths_RoundRectangle: IPathMap = js.native
+  var paths_RoundRectangle: IPathMap
 }
 object RoundRectangle {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataSourcesResponse extends StObject {
   
   /** A previously created data source. */
-  var dataSource: js.UndefOr[js.Array[DataSource]] = js.native
+  var dataSource: js.UndefOr[js.Array[DataSource]] = js.undefined
 }
 object ListDataSourcesResponse {
   

@@ -10,9 +10,9 @@ Renders an SVG slider
 | ------------------ | :-------------: |
 | Full name          | d3-simple-slider |
 | Keywords           | d3, d3-module, slider, visualization |
-| # releases         | 23 |
+| # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 29389 |
+| # downloads        | 41140 |
 | # stars            | 0 |
 
 ## Links

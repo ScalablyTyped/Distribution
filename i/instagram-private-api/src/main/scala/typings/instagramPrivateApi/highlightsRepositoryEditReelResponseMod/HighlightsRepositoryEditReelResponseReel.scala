@@ -2,45 +2,43 @@ package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryEditReelResponseReel extends StObject {
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var contains_stitched_media_blocked_by_rm: Boolean = js.native
+  var contains_stitched_media_blocked_by_rm: Boolean
   
-  var cover_media: HighlightsRepositoryEditReelResponseCoverMedia = js.native
+  var cover_media: HighlightsRepositoryEditReelResponseCoverMedia
   
-  var created_at: Double = js.native
+  var created_at: Double
   
-  var has_pride_media: Boolean = js.native
+  var has_pride_media: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var items: js.Array[HighlightsRepositoryEditReelResponseItemsItem] = js.native
+  var items: js.Array[HighlightsRepositoryEditReelResponseItemsItem]
   
-  var latest_reel_media: Double = js.native
+  var latest_reel_media: Double
   
-  var media_count: Double = js.native
+  var media_count: Double
   
-  var prefetch_count: Double = js.native
+  var prefetch_count: Double
   
-  var ranked_position: Double = js.native
+  var ranked_position: Double
   
-  var reel_type: String = js.native
+  var reel_type: String
   
-  var seen: Null = js.native
+  var seen: Null
   
-  var seen_ranked_position: Double = js.native
+  var seen_ranked_position: Double
   
-  var title: String = js.native
+  var title: String
   
-  var user: HighlightsRepositoryEditReelResponseUser = js.native
+  var user: HighlightsRepositoryEditReelResponseUser
 }
 object HighlightsRepositoryEditReelResponseReel {
   

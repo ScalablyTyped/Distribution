@@ -6,71 +6,64 @@ import typings.bashGlob.bashGlobStrings.files
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(pattern: Patterns, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pattern: Patterns, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("bash-glob", JSImport.Namespace)
   @js.native
-  def apply(pattern: Patterns, callback: Callback): Unit = js.native
-  @JSImport("bash-glob", JSImport.Namespace)
-  @js.native
-  def apply(pattern: Patterns, options: Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bash-glob", "each")
-  @js.native
-  def each(patterns: Patterns, callback: Callback): Unit = js.native
-  @JSImport("bash-glob", "each")
-  @js.native
-  def each(patterns: Patterns, options: Options, callback: Callback): Unit = js.native
+  @scala.inline
+  def each(patterns: Patterns, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(patterns.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def each(patterns: Patterns, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bash-glob", "on")
-  @js.native
-  def on_end(event: end, callback: js.Function1[/* files */ String, Unit]): Unit = js.native
-  @JSImport("bash-glob", "on")
-  @js.native
-  def on_files(event: files, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = js.native
-  @JSImport("bash-glob", "on")
-  @js.native
-  def on_match(event: `match`, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = js.native
+  @scala.inline
+  def on_end(event: end, callback: js.Function1[/* files */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bash-glob", "promise")
-  @js.native
-  def promise(patterns: Patterns): js.Promise[js.Array[String]] = js.native
-  @JSImport("bash-glob", "promise")
-  @js.native
-  def promise(patterns: Patterns, options: Options): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def on_files(event: files, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bash-glob", "sync")
-  @js.native
-  def sync(patterns: Patterns): js.Array[String] = js.native
-  @JSImport("bash-glob", "sync")
-  @js.native
-  def sync(patterns: Patterns, options: Options): js.Array[String] = js.native
+  @scala.inline
+  def on_match(event: `match`, callback: js.Function2[/* files */ String, /* cwd */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def promise(patterns: Patterns): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def promise(patterns: Patterns, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("promise")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  
+  @scala.inline
+  def sync(patterns: Patterns): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: Patterns, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   type Callback = js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var dotglob: js.UndefOr[Boolean] = js.native
+    var dotglob: js.UndefOr[Boolean] = js.undefined
     
-    var extglob: js.UndefOr[Boolean] = js.native
+    var extglob: js.UndefOr[Boolean] = js.undefined
     
-    var failglob: js.UndefOr[Boolean] = js.native
+    var failglob: js.UndefOr[Boolean] = js.undefined
     
-    var globstar: js.UndefOr[Boolean] = js.native
+    var globstar: js.UndefOr[Boolean] = js.undefined
     
-    var nocase: js.UndefOr[Boolean] = js.native
+    var nocase: js.UndefOr[Boolean] = js.undefined
     
-    var nocaseglob: js.UndefOr[Boolean] = js.native
+    var nocaseglob: js.UndefOr[Boolean] = js.undefined
     
-    var nullglob: js.UndefOr[Boolean] = js.native
+    var nullglob: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

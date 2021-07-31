@@ -2,19 +2,17 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Files extends StObject {
   
-  var files: js.Array[scala.Nothing] = js.native
+  var files: js.Array[scala.Nothing]
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onFail(): Unit = js.native
+  def onFail(): Unit
   
-  var selectable: Boolean = js.native
+  var selectable: Boolean
 }
 object Files {
   

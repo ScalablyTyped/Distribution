@@ -10,7 +10,6 @@ import typings.std.ArrayBuffer
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sound {
@@ -19,7 +18,9 @@ object Sound {
     * Class containing all the shared state and behavior of a sound object, independent of the implementation.
     */
   @js.native
-  trait BaseSound extends EventEmitter {
+  trait BaseSound
+    extends StObject
+       with EventEmitter {
     
     /**
       * Adds a marker into the current sound. A marker is represented by name, start time, duration, and optionally config object.
@@ -83,9 +84,9 @@ object Sound {
       * @param config Optional sound config object to be applied to this marker or entire sound if no marker name is provided. It gets memorized for future plays of current section of the sound.
       */
     def play(): Boolean = js.native
-    def play(markerName: js.UndefOr[scala.Nothing], config: SoundConfig): Boolean = js.native
     def play(markerName: String): Boolean = js.native
     def play(markerName: String, config: SoundConfig): Boolean = js.native
+    def play(markerName: Unit, config: SoundConfig): Boolean = js.native
     def play(markerName: SoundConfig): Boolean = js.native
     def play(markerName: SoundConfig, config: SoundConfig): Boolean = js.native
     
@@ -140,7 +141,9 @@ object Sound {
     * Base class for other Sound Manager classes.
     */
   @js.native
-  trait BaseSoundManager extends EventEmitter {
+  trait BaseSoundManager
+    extends StObject
+       with EventEmitter {
     
     /**
       * Adds a new sound into the sound manager.
@@ -329,7 +332,9 @@ object Sound {
     * HTML5 Audio implementation of the sound.
     */
   @js.native
-  trait HTML5AudioSound extends BaseSound {
+  trait HTML5AudioSound
+    extends StObject
+       with BaseSound {
     
     /**
       * The detune value of this Sound, given in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
@@ -413,7 +418,9 @@ object Sound {
     * HTML5AudioSoundManager
     */
   @js.native
-  trait HTML5AudioSoundManager extends BaseSoundManager {
+  trait HTML5AudioSoundManager
+    extends StObject
+       with BaseSoundManager {
     
     /**
       * Value representing time difference, in seconds, between calling
@@ -497,9 +504,9 @@ object Sound {
       * @param config Optional sound config object to be applied to this marker or entire sound if no marker name is provided. It gets memorized for future plays of current section of the sound.
       */
     def play(): Boolean = js.native
-    def play(markerName: js.UndefOr[scala.Nothing], config: SoundConfig): Boolean = js.native
     def play(markerName: String): Boolean = js.native
     def play(markerName: String, config: SoundConfig): Boolean = js.native
+    def play(markerName: Unit, config: SoundConfig): Boolean = js.native
     def play(markerName: SoundConfig): Boolean = js.native
     def play(markerName: SoundConfig, config: SoundConfig): Boolean = js.native
     
@@ -540,7 +547,9 @@ object Sound {
     * Web Audio API implementation of the sound.
     */
   @js.native
-  trait WebAudioSound extends BaseSound {
+  trait WebAudioSound
+    extends StObject
+       with BaseSound {
     
     /**
       * The detune value of this Sound, given in [cents](https://en.wikipedia.org/wiki/Cent_%28music%29).
@@ -628,7 +637,9 @@ object Sound {
     * There is a good guide to what's supported: [Cross-browser audio basics: Audio codec support](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
     */
   @js.native
-  trait WebAudioSoundManager extends BaseSoundManager {
+  trait WebAudioSoundManager
+    extends StObject
+       with BaseSoundManager {
     
     /**
       * Decode audio data into a format ready for playback via Web Audio.
@@ -647,14 +658,14 @@ object Sound {
       * @param audioData The audio data, either a base64 encoded string, an audio media-type data uri, or an ArrayBuffer instance.
       */
     def decodeAudio(): Unit = js.native
-    def decodeAudio(audioKey: js.UndefOr[scala.Nothing], audioData: String): Unit = js.native
-    def decodeAudio(audioKey: js.UndefOr[scala.Nothing], audioData: ArrayBuffer): Unit = js.native
     def decodeAudio(audioKey: String): Unit = js.native
     def decodeAudio(audioKey: String, audioData: String): Unit = js.native
     def decodeAudio(audioKey: String, audioData: ArrayBuffer): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig]): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: String): Unit = js.native
     def decodeAudio(audioKey: js.Array[DecodeAudioConfig], audioData: ArrayBuffer): Unit = js.native
+    def decodeAudio(audioKey: Unit, audioData: String): Unit = js.native
+    def decodeAudio(audioKey: Unit, audioData: ArrayBuffer): Unit = js.native
     
     /**
       * This method takes a new AudioContext reference and then sets

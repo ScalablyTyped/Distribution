@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Place extends Entity {
+trait Place
+  extends StObject
+     with Entity {
   
   // The street address of the place.
-  var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.native
+  var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
   // The name associated with the place.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // Specifies the place location in latitude, longitude and (optionally) altitude coordinates.
-  var geoCoordinates: js.UndefOr[NullableOption[OutlookGeoCoordinates]] = js.native
+  var geoCoordinates: js.UndefOr[NullableOption[OutlookGeoCoordinates]] = js.undefined
   
   // The phone number of the place.
-  var phone: js.UndefOr[NullableOption[String]] = js.native
+  var phone: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Place {
   

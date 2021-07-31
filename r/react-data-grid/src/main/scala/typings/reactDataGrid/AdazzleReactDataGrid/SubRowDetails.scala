@@ -2,42 +2,40 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about subrows.
   */
-@js.native
 trait SubRowDetails[T] extends StObject {
   
   /**
     * Determines if the cell can expand.
     */
-  var canExpand: js.UndefOr[Boolean] = js.native
+  var canExpand: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Children data.
     */
-  var children: js.UndefOr[js.Array[T]] = js.native
+  var children: js.UndefOr[js.Array[T]] = js.undefined
   
   /**
     * Determines if the row has already expanded.
     */
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
   /**
     * Sets the field/column that will be use to expand the subrows.
     */
-  var field: String = js.native
+  var field: String
   
-  var group: js.UndefOr[Boolean] = js.native
+  var group: js.UndefOr[Boolean] = js.undefined
   
-  var numberSiblings: js.UndefOr[Double] = js.native
+  var numberSiblings: js.UndefOr[Double] = js.undefined
   
-  var siblingIndex: js.UndefOr[Double] = js.native
+  var siblingIndex: js.UndefOr[Double] = js.undefined
   
-  var treeDepth: js.UndefOr[Double] = js.native
+  var treeDepth: js.UndefOr[Double] = js.undefined
 }
 object SubRowDetails {
   
@@ -48,7 +46,7 @@ object SubRowDetails {
   }
   
   @scala.inline
-  implicit class SubRowDetailsMutableBuilder[Self <: SubRowDetails[_], T] (val x: Self with SubRowDetails[T]) extends AnyVal {
+  implicit class SubRowDetailsMutableBuilder[Self <: SubRowDetails[?], T] (val x: Self & SubRowDetails[T]) extends AnyVal {
     
     @scala.inline
     def setCanExpand(value: Boolean): Self = StObject.set(x, "canExpand", value.asInstanceOf[js.Any])

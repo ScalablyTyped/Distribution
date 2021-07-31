@@ -3,14 +3,15 @@ package typings.jsMoney
 import typings.jsMoney.currencyMod.Currency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("js-money", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Money {
+  class ^ protected ()
+    extends StObject
+       with Money {
     def this(amount: Double, currency: String) = this()
     def this(amount: Double, currency: Currency) = this()
   }
@@ -860,32 +861,24 @@ object mod {
   def ZMK_=(x: Currency): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZMK")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-money", "fromDecimal")
-  @js.native
-  def fromDecimal(amount: Double, currency: String): Money = js.native
-  @JSImport("js-money", "fromDecimal")
-  @js.native
-  def fromDecimal(amount: Double, currency: String, rounder: RoundFunction): Money = js.native
-  @JSImport("js-money", "fromDecimal")
-  @js.native
-  def fromDecimal(amount: Double, currency: String, rounder: Rounders): Money = js.native
-  @JSImport("js-money", "fromDecimal")
-  @js.native
-  def fromDecimal(amount: Double, currency: Currency): Money = js.native
-  @JSImport("js-money", "fromDecimal")
-  @js.native
-  def fromDecimal(amount: Double, currency: Currency, rounder: RoundFunction): Money = js.native
-  @JSImport("js-money", "fromDecimal")
-  @js.native
-  def fromDecimal(amount: Double, currency: Currency, rounder: Rounders): Money = js.native
+  @scala.inline
+  def fromDecimal(amount: Double, currency: String): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any])).asInstanceOf[Money]
+  @scala.inline
+  def fromDecimal(amount: Double, currency: String, rounder: RoundFunction): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], rounder.asInstanceOf[js.Any])).asInstanceOf[Money]
+  @scala.inline
+  def fromDecimal(amount: Double, currency: String, rounder: Rounders): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], rounder.asInstanceOf[js.Any])).asInstanceOf[Money]
+  @scala.inline
+  def fromDecimal(amount: Double, currency: Currency): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any])).asInstanceOf[Money]
+  @scala.inline
+  def fromDecimal(amount: Double, currency: Currency, rounder: RoundFunction): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], rounder.asInstanceOf[js.Any])).asInstanceOf[Money]
+  @scala.inline
+  def fromDecimal(amount: Double, currency: Currency, rounder: Rounders): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDecimal")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any], rounder.asInstanceOf[js.Any])).asInstanceOf[Money]
   
   /* static member */
-  @JSImport("js-money", "fromInteger")
-  @js.native
-  def fromInteger(amount: Double, currency: String): Money = js.native
-  @JSImport("js-money", "fromInteger")
-  @js.native
-  def fromInteger(amount: Double, currency: Currency): Money = js.native
+  @scala.inline
+  def fromInteger(amount: Double, currency: String): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any])).asInstanceOf[Money]
+  @scala.inline
+  def fromInteger(amount: Double, currency: Currency): Money = (^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(amount.asInstanceOf[js.Any], currency.asInstanceOf[js.Any])).asInstanceOf[Money]
   
   @js.native
   trait Money extends StObject {
@@ -933,12 +926,11 @@ object mod {
     def toJSON(): MoneyObjectOut = js.native
   }
   
-  @js.native
   trait MoneyObjectOut extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var currency: String = js.native
+    var currency: String
   }
   object MoneyObjectOut {
     

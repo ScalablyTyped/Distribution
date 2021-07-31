@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * jagged, shapes.
   */
 @js.native
-trait Ellipse extends Shape {
+trait Ellipse
+  extends StObject
+     with Shape {
   
   /**
     * Sets the smoothness of the ellipse. The number of points used when rendering it.

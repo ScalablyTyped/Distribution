@@ -2,32 +2,30 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpekeKeyProvider extends StObject {
   
   /**
     * If you want your key provider to encrypt the content keys that it provides to MediaConvert, set up a certificate with a master key using AWS Certificate Manager. Specify the certificate's Amazon Resource Name (ARN) here.
     */
-  var CertificateArn: js.UndefOr[stringPatternArnAwsUsGovAcm] = js.native
+  var CertificateArn: js.UndefOr[stringPatternArnAwsUsGovAcm] = js.undefined
   
   /**
     * Specify the resource ID that your SPEKE-compliant key provider uses to identify this content.
     */
-  var ResourceId: js.UndefOr[string] = js.native
+  var ResourceId: js.UndefOr[string] = js.undefined
   
   /**
     * Relates to SPEKE implementation. DRM system identifiers. DASH output groups support a max of two system ids. Other group types support one system id. See
     https://dashif.org/identifiers/content_protection/ for more details.
     */
-  var SystemIds: js.UndefOr[listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12] = js.native
+  var SystemIds: js.UndefOr[listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12] = js.undefined
   
   /**
     * Specify the URL to the key server that your SPEKE-compliant DRM key provider uses to provide keys for encrypting your content.
     */
-  var Url: js.UndefOr[stringPatternHttps] = js.native
+  var Url: js.UndefOr[stringPatternHttps] = js.undefined
 }
 object SpekeKeyProvider {
   

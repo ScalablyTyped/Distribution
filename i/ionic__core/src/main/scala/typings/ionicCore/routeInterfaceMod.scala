@@ -2,17 +2,15 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeInterfaceMod {
   
   type NavigationHookCallback = js.Function0[NavigationHookResult | js.Promise[NavigationHookResult]]
   
-  @js.native
   trait NavigationHookOptions extends StObject {
     
-    var redirect: String = js.native
+    var redirect: String
   }
   object NavigationHookOptions {
     

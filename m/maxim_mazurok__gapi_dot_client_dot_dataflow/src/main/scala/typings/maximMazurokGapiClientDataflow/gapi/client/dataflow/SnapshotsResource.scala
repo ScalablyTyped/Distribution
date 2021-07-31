@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientDataflow.anon.UploadTypeUploadprotocol
 import typings.maximMazurokGapiClientDataflow.anon.UploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -3,7 +3,6 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoHyperlinkType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,147 +27,37 @@ trait Hyperlink extends StObject {
   val ExtraInfoRequired: Boolean = js.native
   
   def Follow(): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.Any,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.Any,
-    Method: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.Any,
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.Any,
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.Any,
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.Any,
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.Any, ExtraInfo: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.Any,
-    ExtraInfo: js.Any,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.UndefOr[scala.Nothing], AddHistory: js.Any, ExtraInfo: js.Any, Method: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.Any,
-    ExtraInfo: js.Any,
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
   def Follow(NewWindow: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any
-  ): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.Any, AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.Any,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.Any, AddHistory: js.UndefOr[scala.Nothing], ExtraInfo: js.Any, Method: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.Any,
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
   def Follow(NewWindow: js.Any, AddHistory: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.Any,
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
-  def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: js.UndefOr[scala.Nothing], Method: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.Any,
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.Any,
-    HeaderInfo: js.Any
-  ): Unit = js.native
   def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: js.Any): Unit = js.native
-  def Follow(
-    NewWindow: js.Any,
-    AddHistory: js.Any,
-    ExtraInfo: js.Any,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: js.Any
-  ): Unit = js.native
   def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: js.Any, Method: js.Any): Unit = js.native
   def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: js.Any, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: js.Any, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: Unit, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: Unit, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: js.Any, ExtraInfo: Unit, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: js.Any, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: js.Any, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: js.Any, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: Unit, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: Unit, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: js.Any, AddHistory: Unit, ExtraInfo: Unit, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: js.Any, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: js.Any, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: js.Any, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: Unit, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: Unit, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: js.Any, ExtraInfo: Unit, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: js.Any, Method: Unit, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Unit, Method: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Unit, Method: js.Any, HeaderInfo: js.Any): Unit = js.native
+  def Follow(NewWindow: Unit, AddHistory: Unit, ExtraInfo: Unit, Method: Unit, HeaderInfo: js.Any): Unit = js.native
   
   val Name: String = js.native
   

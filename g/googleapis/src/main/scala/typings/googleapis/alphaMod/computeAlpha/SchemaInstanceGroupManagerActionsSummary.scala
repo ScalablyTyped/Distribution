@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerActionsSummary extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaInstanceGroupManagerActionsSummary extends StObject {
     * that are scheduled to be abandoned. Abandoning an instance removes it
     * from the managed instance group without deleting it.
     */
-  var abandoning: js.UndefOr[Double] = js.native
+  var abandoning: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
@@ -23,7 +21,7 @@ trait SchemaInstanceGroupManagerActionsSummary extends StObject {
     * field will not be populated; instead, the creatingWithoutRetries field
     * will be populated.
     */
-  var creating: js.UndefOr[Double] = js.native
+  var creating: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances that the managed instance group
@@ -31,19 +29,19 @@ trait SchemaInstanceGroupManagerActionsSummary extends StObject {
     * once. If the group fails to create any of these instances, it decreases
     * the group&#39;s targetSize value accordingly.
     */
-  var creatingWithoutRetries: js.UndefOr[Double] = js.native
+  var creatingWithoutRetries: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are scheduled to be deleted or are currently being deleted.
     */
-  var deleting: js.UndefOr[Double] = js.native
+  var deleting: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are running and have no scheduled actions.
     */
-  var none: js.UndefOr[Double] = js.native
+  var none: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
@@ -52,7 +50,7 @@ trait SchemaInstanceGroupManagerActionsSummary extends StObject {
     * creates a new disk from the image that is defined in the instance
     * template.
     */
-  var recreating: js.UndefOr[Double] = js.native
+  var recreating: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
@@ -60,20 +58,20 @@ trait SchemaInstanceGroupManagerActionsSummary extends StObject {
     * recreate action. For example, setting or removing target pools for the
     * instance.
     */
-  var refreshing: js.UndefOr[Double] = js.native
+  var refreshing: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are scheduled to be restarted or are currently being restarted.
     */
-  var restarting: js.UndefOr[Double] = js.native
+  var restarting: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are being verified. See the managedInstances[].currentAction property in
     * the listManagedInstances method documentation.
     */
-  var verifying: js.UndefOr[Double] = js.native
+  var verifying: js.UndefOr[Double] = js.undefined
 }
 object SchemaInstanceGroupManagerActionsSummary {
   

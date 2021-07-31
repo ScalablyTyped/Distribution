@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountModificationsResult extends StObject {
   
   /**
     * The list of modifications to the configuration of BYOL.
     */
-  var AccountModifications: js.UndefOr[AccountModificationList] = js.native
+  var AccountModifications: js.UndefOr[AccountModificationList] = js.undefined
   
   /**
     * The token to use to retrieve the next set of results, or null if no more results are available.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object DescribeAccountModificationsResult {
   

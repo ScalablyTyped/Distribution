@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLogGroupsRequest extends StObject {
   
   /**
     * The maximum number of items returned. If you don't specify a value, the default is up to 50 items.
     */
-  var limit: js.UndefOr[DescribeLimit] = js.native
+  var limit: js.UndefOr[DescribeLimit] = js.undefined
   
   /**
     * The prefix to match.
     */
-  var logGroupNamePrefix: js.UndefOr[LogGroupName] = js.native
+  var logGroupNamePrefix: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeLogGroupsRequest {
   

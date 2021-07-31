@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofWindow extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Window = js.native
+  def extend(proto: js.Object): Window
   
   /* static member */
-  var fn: Window = js.native
+  var fn: Window
 }
 object TypeofWindow {
   

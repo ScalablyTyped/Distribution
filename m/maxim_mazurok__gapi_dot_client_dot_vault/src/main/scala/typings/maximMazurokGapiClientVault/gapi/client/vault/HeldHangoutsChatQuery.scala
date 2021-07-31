@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeldHangoutsChatQuery extends StObject {
   
   /** If true, include rooms the user has participated in. */
-  var includeRooms: js.UndefOr[Boolean] = js.native
+  var includeRooms: js.UndefOr[Boolean] = js.undefined
 }
 object HeldHangoutsChatQuery {
   

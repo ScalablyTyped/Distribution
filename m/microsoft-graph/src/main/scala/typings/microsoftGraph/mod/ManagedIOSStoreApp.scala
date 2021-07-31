@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedIOSStoreApp extends ManagedApp {
+trait ManagedIOSStoreApp
+  extends StObject
+     with ManagedApp {
   
   // The Apple AppStoreUrl.
-  var appStoreUrl: js.UndefOr[String] = js.native
+  var appStoreUrl: js.UndefOr[String] = js.undefined
   
   // The iOS architecture for which this app can run on.
-  var applicableDeviceType: js.UndefOr[IosDeviceType] = js.native
+  var applicableDeviceType: js.UndefOr[IosDeviceType] = js.undefined
   
   // The app's Bundle ID.
-  var bundleId: js.UndefOr[NullableOption[String]] = js.native
+  var bundleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The value for the minimum supported operating system.
-  var minimumSupportedOperatingSystem: js.UndefOr[IosMinimumOperatingSystem] = js.native
+  var minimumSupportedOperatingSystem: js.UndefOr[IosMinimumOperatingSystem] = js.undefined
 }
 object ManagedIOSStoreApp {
   

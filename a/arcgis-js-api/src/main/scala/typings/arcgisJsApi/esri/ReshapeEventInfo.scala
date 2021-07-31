@@ -7,12 +7,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReshapeEventInfo
-  extends Object
+  extends StObject
+     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -20,7 +19,7 @@ trait ReshapeEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ReshapeEventInfo)
     */
-  var `type`: `reshape-start` | reshape | `reshape-stop` = js.native
+  var `type`: `reshape-start` | reshape | `reshape-stop`
 }
 object ReshapeEventInfo {
   

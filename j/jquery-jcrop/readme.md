@@ -12,7 +12,7 @@ Jcrop Javascript Image Cropper
 | Keywords           | jcrop, image, cropping, ui |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 398695 |
+| # downloads        | 359801 |
 | # stars            | 0 |
 
 ## Links

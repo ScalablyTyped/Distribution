@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,11 +24,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The distance between the grid lines depends on the distance of the help or main tick marks, which may be set in {@link ChartAxis} .
   * @see ChartAxis
   */
-@js.native
 trait ChartGrid
-  extends XPropertySet
+  extends StObject
      with LineProperties
      with UserDefinedAttributesSupplier
+     with XPropertySet
 object ChartGrid {
   
   @scala.inline

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversionProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ConversionProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html#format)
     */
-  var format: js.UndefOr[FormatProperties] = js.native
+  var format: js.UndefOr[FormatProperties] = js.undefined
   
   /**
     * The position property contains the location information for this conversion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html#position)
     */
-  var position: js.UndefOr[ConversionPosition] = js.native
+  var position: js.UndefOr[ConversionPosition] = js.undefined
 }
 object ConversionProperties {
   

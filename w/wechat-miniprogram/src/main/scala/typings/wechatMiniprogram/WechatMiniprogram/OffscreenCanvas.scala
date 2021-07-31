@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffscreenCanvas extends StObject {
   
   /** [[RenderingContext](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/RenderingContext.html) OffscreenCanvas.getContext(string contextType)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/OffscreenCanvas.getContext.html)
@@ -17,7 +15,7 @@ trait OffscreenCanvas extends StObject {
     * 当前仅支持获取 WebGL 绘图上下文
     *
     * 最低基础库： `2.7.0` */
-  def getContext(contextType: String): js.Any = js.native
+  def getContext(contextType: String): js.Any
 }
 object OffscreenCanvas {
   

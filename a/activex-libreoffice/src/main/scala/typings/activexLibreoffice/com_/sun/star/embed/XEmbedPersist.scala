@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,28 +12,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The idea is that any usable embedded object should be initialized with an entry in the parent storage that will be used as persistent representation.
   */
-@js.native
-trait XEmbedPersist extends XCommonEmbedPersist {
+trait XEmbedPersist
+  extends StObject
+     with XCommonEmbedPersist {
   
   /**
     * allows to retrieve the current object entry name.
     * @returns the object entry name if any
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state ( has no entry )
     */
-  val EntryName: String = js.native
+  val EntryName: String
   
   /**
     * allows to retrieve the current object entry name.
     * @returns the object entry name if any
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state ( has no entry )
     */
-  def getEntryName(): String = js.native
+  def getEntryName(): String
   
   /**
     * allows to detect if the object has entry.
     * @returns `TRUE` if the object has own entry set `FALSE` otherwise
     */
-  def hasEntry(): Boolean = js.native
+  def hasEntry(): Boolean
   
   /**
     * specifies whether the object should use an old storage or a new one after "save as" operation.
@@ -42,7 +42,7 @@ trait XEmbedPersist extends XCommonEmbedPersist {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def saveCompleted(bUseNew: Boolean): Unit = js.native
+  def saveCompleted(bUseNew: Boolean): Unit
   
   /**
     * provides object with a parent storage and a name for object's entry.
@@ -70,7 +70,7 @@ trait XEmbedPersist extends XCommonEmbedPersist {
     nEntryConnectionMode: Double,
     aMediaArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * lets the object store itself to an entry in destination storage and prepare to use the new entry for own persistence.
@@ -92,7 +92,7 @@ trait XEmbedPersist extends XCommonEmbedPersist {
     sEntName: String,
     aMediaArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * lets the object store itself to an entry in destination storage, the own persistence entry is not changed.
@@ -110,7 +110,7 @@ trait XEmbedPersist extends XCommonEmbedPersist {
     sEntName: String,
     aMediaArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): Unit = js.native
+  ): Unit
 }
 object XEmbedPersist {
   

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToneInfo extends StObject {
   
   // An incremental identifier used for ordering DTMF events.
-  var sequenceId: js.UndefOr[Double] = js.native
+  var sequenceId: js.UndefOr[Double] = js.undefined
   
   // Possible values are: tone0, tone1, tone2, tone3, tone4, tone5, tone6, tone7, tone8, tone9, star, pound
-  var tone: js.UndefOr[Tone] = js.native
+  var tone: js.UndefOr[Tone] = js.undefined
 }
 object ToneInfo {
   

@@ -2,15 +2,13 @@ package typings.rollup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollInterval extends StObject {
   
-  var pollInterval: js.UndefOr[Double] = js.native
+  var pollInterval: js.UndefOr[Double] = js.undefined
   
-  var stabilityThreshold: js.UndefOr[Double] = js.native
+  var stabilityThreshold: js.UndefOr[Double] = js.undefined
 }
 object PollInterval {
   

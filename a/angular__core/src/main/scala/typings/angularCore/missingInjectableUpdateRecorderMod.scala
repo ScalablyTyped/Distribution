@@ -7,21 +7,21 @@ import typings.typescript.mod.NamedImports
 import typings.typescript.mod.ObjectLiteralExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object missingInjectableUpdateRecorderMod {
   
-  @js.native
-  trait UpdateRecorder extends ImportManagerUpdateRecorder {
+  trait UpdateRecorder
+    extends StObject
+       with ImportManagerUpdateRecorder {
     
-    def addClassDecorator(node: ClassDeclaration, text: String, className: String): Unit = js.native
+    def addClassDecorator(node: ClassDeclaration, text: String, className: String): Unit
     
-    def commitUpdate(): Unit = js.native
+    def commitUpdate(): Unit
     
-    def replaceDecorator(node: Decorator, newText: String, className: String): Unit = js.native
+    def replaceDecorator(node: Decorator, newText: String, className: String): Unit
     
-    def updateObjectLiteral(node: ObjectLiteralExpression, newText: String): Unit = js.native
+    def updateObjectLiteral(node: ObjectLiteralExpression, newText: String): Unit
   }
   object UpdateRecorder {
     

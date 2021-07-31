@@ -4,19 +4,17 @@ import typings.antvDataSet.antvDataSetStrings.group
 import typings.antvDataSet.antvDataSetStrings.order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fillRowsMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var fillBy: js.UndefOr[group | order] = js.native
+    var fillBy: js.UndefOr[group | order] = js.undefined
     
-    var groupBy: js.UndefOr[js.Array[String]] = js.native
+    var groupBy: js.UndefOr[js.Array[String]] = js.undefined
     
-    var orderBy: js.UndefOr[js.Array[String]] = js.native
+    var orderBy: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

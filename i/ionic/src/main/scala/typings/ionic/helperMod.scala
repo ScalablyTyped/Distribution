@@ -5,21 +5,22 @@ import typings.ionic.definitionsMod.IPCMessage
 import typings.ionic.definitionsMod.IonicContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperMod {
   
-  @JSImport("ionic/lib/helper", "sendMessage")
+  @JSImport("ionic/lib/helper", JSImport.Namespace)
   @js.native
-  def sendMessage(hasConfigCtx: SendMessageDeps, msg: IPCMessage): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sendMessage(hasConfigCtx: SendMessageDeps, msg: IPCMessage): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(hasConfigCtx.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait SendMessageDeps extends StObject {
     
-    var config: IConfig = js.native
+    var config: IConfig
     
-    var ctx: IonicContext = js.native
+    var ctx: IonicContext
   }
   object SendMessageDeps {
     

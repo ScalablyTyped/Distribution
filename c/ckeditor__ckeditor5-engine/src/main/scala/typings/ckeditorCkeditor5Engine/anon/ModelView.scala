@@ -5,17 +5,15 @@ import typings.ckeditorCkeditor5Engine.mod.view.MatcherPattern
 import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelView extends StObject {
   
-  var converterPriority: js.UndefOr[PriorityString] = js.native
+  var converterPriority: js.UndefOr[PriorityString] = js.undefined
   
-  var model: String | js.Function = js.native
+  var model: String | js.Function
   
-  var view: MatcherPattern = js.native
+  var view: MatcherPattern
 }
 object ModelView {
   

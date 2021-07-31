@@ -6,85 +6,75 @@ import typings.folderHash.folderHashStrings.hex
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("folder-hash", "hashElement")
+  @JSImport("folder-hash", JSImport.Namespace)
   @js.native
-  def hashElement(path: String): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(
-    path: String,
-    dir: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], _]
-  ): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(path: String, dir: js.UndefOr[scala.Nothing], options: HashElementOptions): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(
-    path: String,
-    dir: js.UndefOr[scala.Nothing],
-    options: HashElementOptions,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], _]
-  ): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(path: String, dir: String): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(
-    path: String,
-    dir: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], _]
-  ): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(path: String, dir: String, options: HashElementOptions): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(
-    path: String,
-    dir: String,
-    options: HashElementOptions,
-    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], _]
-  ): Unit = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement(path: String, options: HashElementOptions): js.Promise[HashElementNode] = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement_Promise(path: String): js.Promise[HashElementNode] = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement_Promise(path: String, dir: js.UndefOr[scala.Nothing], options: HashElementOptions): js.Promise[HashElementNode] = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement_Promise(path: String, dir: String): js.Promise[HashElementNode] = js.native
-  @JSImport("folder-hash", "hashElement")
-  @js.native
-  def hashElement_Promise(path: String, dir: String, options: HashElementOptions): js.Promise[HashElementNode] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def hashElement(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(path: String, dir: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(
+    path: String,
+    dir: String,
+    options: Unit,
+    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(path: String, dir: String, options: HashElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(
+    path: String,
+    dir: String,
+    options: HashElementOptions,
+    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(
+    path: String,
+    dir: Unit,
+    options: Unit,
+    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(path: String, dir: Unit, options: HashElementOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(
+    path: String,
+    dir: Unit,
+    options: HashElementOptions,
+    callback: js.Function2[/* error */ js.UndefOr[Error], /* result */ js.UndefOr[HashElementNode], js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hashElement(path: String, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  
+  @scala.inline
+  def hashElement_Promise(path: String): js.Promise[HashElementNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HashElementNode]]
+  @scala.inline
+  def hashElement_Promise(path: String, dir: String): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  @scala.inline
+  def hashElement_Promise(path: String, dir: String, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  @scala.inline
+  def hashElement_Promise(path: String, dir: Unit, options: HashElementOptions): js.Promise[HashElementNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashElement")(path.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HashElementNode]]
+  
   trait FolderAndFileOptions extends StObject {
     
-    var exclude: js.UndefOr[js.Array[String] | PathGlobFunction] = js.native
+    var exclude: js.UndefOr[js.Array[String] | PathGlobFunction] = js.undefined
     
-    var ignoreBasename: js.UndefOr[Boolean] = js.native
+    var ignoreBasename: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreRootName: js.UndefOr[Boolean] = js.native
+    var ignoreRootName: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[js.Array[String] | PathGlobFunction] = js.native
+    var include: js.UndefOr[js.Array[String] | PathGlobFunction] = js.undefined
     
-    var matchBasename: js.UndefOr[Boolean] = js.native
+    var matchBasename: js.UndefOr[Boolean] = js.undefined
     
-    var matchPath: js.UndefOr[Boolean] = js.native
+    var matchPath: js.UndefOr[Boolean] = js.undefined
   }
   object FolderAndFileOptions {
     
@@ -147,14 +137,13 @@ object mod {
     }
   }
   
-  @js.native
   trait HashElementNode extends StObject {
     
-    var children: js.Array[HashElementNode] = js.native
+    var children: js.Array[HashElementNode]
     
-    var hash: String = js.native
+    var hash: String
     
-    var name: String = js.native
+    var name: String
   }
   object HashElementNode {
     
@@ -181,19 +170,18 @@ object mod {
     }
   }
   
-  @js.native
   trait HashElementOptions extends StObject {
     
     // See crypto.getHashes() for options.
     // Defaults to 'sha1'.
-    var algo: js.UndefOr[String] = js.native
+    var algo: js.UndefOr[String] = js.undefined
     
     // Defaults to 'base64'
-    var encoding: js.UndefOr[base64 | hex | binary] = js.native
+    var encoding: js.UndefOr[base64 | hex | binary] = js.undefined
     
-    var files: js.UndefOr[FolderAndFileOptions] = js.native
+    var files: js.UndefOr[FolderAndFileOptions] = js.undefined
     
-    var folders: js.UndefOr[FolderAndFileOptions] = js.native
+    var folders: js.UndefOr[FolderAndFileOptions] = js.undefined
   }
   object HashElementOptions {
     

@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscrollPreserveFolds extends StObject {
   
-  var autoscroll: js.UndefOr[Boolean] = js.native
+  var autoscroll: js.UndefOr[Boolean] = js.undefined
   
-  var preserveFolds: js.UndefOr[Boolean] = js.native
+  var preserveFolds: js.UndefOr[Boolean] = js.undefined
 }
 object AutoscrollPreserveFolds {
   

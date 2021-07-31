@@ -2,14 +2,12 @@ package typings.semanticUiSticky.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.Sticky.ErrorSettings._Impl, 'invalidContext'> */
-@js.native
 trait PickImplinvalidContext extends StObject {
   
-  var invalidContext: String = js.native
+  var invalidContext: String
 }
 object PickImplinvalidContext {
   

@@ -3,13 +3,11 @@ package typings.uirouterCore.anon
 import typings.uirouterCore.stateInterfaceMod.StateOrName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Relative extends StObject {
   
-  var relative: js.UndefOr[StateOrName] = js.native
+  var relative: js.UndefOr[StateOrName] = js.undefined
 }
 object Relative {
   

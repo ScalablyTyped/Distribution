@@ -8,7 +8,6 @@ import typings.lodash.mod.ValueIteratee
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,12 +22,28 @@ trait LodashOrderBy3x4[T] extends StObject {
   ): LodashOrderBy4x5[T] = js.native
   def apply(
     iteratees: Many[
-      (js.Function1[
+      js.Function1[
         /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         NotVoid
-      ]) | (ValueIteratee[
+      ]
+    ]
+  ): LodashOrderBy3x5[T] = js.native
+  def apply(
+    iteratees: Many[
+      js.Function1[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+        NotVoid
+      ]
+    ],
+    orders: Many[Boolean | asc | desc]
+  ): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  def apply(
+    iteratees: Many[
+      ValueIteratee[
         /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-      ])
+      ]
     ],
     orders: Many[Boolean | asc | desc]
   ): js.Array[

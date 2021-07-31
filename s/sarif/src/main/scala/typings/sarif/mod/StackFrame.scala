@@ -2,36 +2,34 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackFrame extends StObject {
   
   /**
     * The location to which this stack frame refers.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * The name of the module that contains the code of this stack frame.
     */
-  var module: js.UndefOr[String] = js.native
+  var module: js.UndefOr[String] = js.undefined
   
   /**
     * The parameters of the call that is executing.
     */
-  var parameters: js.UndefOr[js.Array[String]] = js.native
+  var parameters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the stack frame.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The thread identifier of the stack frame.
     */
-  var threadId: js.UndefOr[Double] = js.native
+  var threadId: js.UndefOr[Double] = js.undefined
 }
 object StackFrame {
   

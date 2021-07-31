@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadDocumentsRequest extends StObject {
   
   /**
     * The format of the batch you are uploading. Amazon CloudSearch supports two document batch formats:  application/json application/xml 
     */
-  var contentType: ContentType = js.native
+  var contentType: ContentType
   
   /**
     * A batch of documents formatted in JSON or HTML.
     */
-  var documents: _Blob = js.native
+  var documents: _Blob
 }
 object UploadDocumentsRequest {
   

@@ -6,7 +6,6 @@ import typings.angularGridster.anon.Drag
 import typings.angularGridster.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,82 +24,81 @@ object mod extends Shortcut {
     
     object gridster {
       
-      @js.native
       trait GridsterConfig extends StObject {
         
         // width of grid columns. "auto" will divide the width of the grid evenly among the columns
-        var colWidth: js.UndefOr[String] = js.native
+        var colWidth: js.UndefOr[String] = js.undefined
         
         // number of columns in the grid
-        var columns: js.UndefOr[Double] = js.native
+        var columns: js.UndefOr[Double] = js.undefined
         
         // default width of an item in columns
-        var defaultSizeX: js.UndefOr[Double] = js.native
+        var defaultSizeX: js.UndefOr[Double] = js.undefined
         
         // default height of an item in rows
-        var defaultSizeY: js.UndefOr[Double] = js.native
+        var defaultSizeY: js.UndefOr[Double] = js.undefined
         
         // options to pass to draggable handler
-        var draggable: js.UndefOr[Drag] = js.native
+        var draggable: js.UndefOr[Drag] = js.undefined
         
         // whether to automatically float items up so they stack
-        var floating: js.UndefOr[Boolean] = js.native
+        var floating: js.UndefOr[Boolean] = js.undefined
         
         // toggle mobile view
-        var isMobile: js.UndefOr[Boolean] = js.native
+        var isMobile: js.UndefOr[Boolean] = js.undefined
         
         // margins in between grid items
-        var margins: js.UndefOr[js.Array[Double]] = js.native
+        var margins: js.UndefOr[js.Array[Double]] = js.undefined
         
         // maximum amount of rows in the grid
-        var maxRows: js.UndefOr[Double] = js.native
+        var maxRows: js.UndefOr[Double] = js.undefined
         
         // maximum column width of an item
-        var maxSizeX: js.UndefOr[Double] = js.native
+        var maxSizeX: js.UndefOr[Double] = js.undefined
         
         // maximum row height of an item
-        var maxSizeY: js.UndefOr[Double] = js.native
+        var maxSizeY: js.UndefOr[Double] = js.undefined
         
         // minimum amount of columns the grid can scale down to
-        var minColumns: js.UndefOr[Double] = js.native
+        var minColumns: js.UndefOr[Double] = js.undefined
         
         // minimum amount of rows to show if the grid is empty
-        var minRows: js.UndefOr[Double] = js.native
+        var minRows: js.UndefOr[Double] = js.undefined
         
         // minimum column width of an item
-        var minSizeX: js.UndefOr[Double] = js.native
+        var minSizeX: js.UndefOr[Double] = js.undefined
         
         // minumum row height of an item
-        var minSizeY: js.UndefOr[Double] = js.native
+        var minSizeY: js.UndefOr[Double] = js.undefined
         
         // width threshold to toggle mobile mode
-        var mobileBreakPoint: js.UndefOr[Double] = js.native
+        var mobileBreakPoint: js.UndefOr[Double] = js.undefined
         
         // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
-        var mobileModeEnabled: js.UndefOr[Boolean] = js.native
+        var mobileModeEnabled: js.UndefOr[Boolean] = js.undefined
         
         // whether to set the outer margin
-        var outerMargin: js.UndefOr[Boolean] = js.native
+        var outerMargin: js.UndefOr[Boolean] = js.undefined
         
         // whether to push other items out of the way
         // whether to push other items out of the way
-        var pushing: js.UndefOr[Boolean] = js.native
+        var pushing: js.UndefOr[Boolean] = js.undefined
         
         // grid item height in mobile display. true- to use the calculated height by sizeY given
         // options to pass to resizable handler
-        var resizable: js.UndefOr[Enabled] = js.native
+        var resizable: js.UndefOr[Enabled] = js.undefined
         
         // height of grid rows. 'match' will make it the same as the column width, a numeric value will be interpreted as pixels,
         // '/2' is half the column width, '*5' is five times the column width, etc.
-        var rowHeight: js.UndefOr[String] = js.native
+        var rowHeight: js.UndefOr[String] = js.undefined
         
-        var saveGridItemCalculatedHeightInMobile: js.UndefOr[Boolean] = js.native
+        var saveGridItemCalculatedHeightInMobile: js.UndefOr[Boolean] = js.undefined
         
         // whether or not to have items switch places instead of push down if they are the same size
-        var swapping: js.UndefOr[Boolean] = js.native
+        var swapping: js.UndefOr[Boolean] = js.undefined
         
         // width of the grid. "auto" will expand the grid to its parent container
-        var width: js.UndefOr[String] = js.native
+        var width: js.UndefOr[String] = js.undefined
       }
       object GridsterConfig {
         
@@ -262,20 +260,19 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait StandardGridsterItem extends StObject {
         
         // starting column where the item will be placed
-        var col: Double = js.native
+        var col: Double
         
         // starting row where the item will be placed
-        var row: Double = js.native
+        var row: Double
         
         // width of the item expressed in terms of number of columns it will occupy
-        var sizeX: Double = js.native
+        var sizeX: Double
         
         // height of the item expressed in terms of number of rows it will occupy
-        var sizeY: Double = js.native
+        var sizeY: Double
       }
       object StandardGridsterItem {
         

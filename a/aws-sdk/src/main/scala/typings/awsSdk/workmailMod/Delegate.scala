@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delegate extends StObject {
   
   /**
     * The identifier for the user or group associated as the resource's delegate.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The type of the delegate: user or group.
     */
-  var Type: MemberType = js.native
+  var Type: MemberType
 }
 object Delegate {
   

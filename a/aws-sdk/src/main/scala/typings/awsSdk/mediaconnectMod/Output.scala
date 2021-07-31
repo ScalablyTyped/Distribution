@@ -2,66 +2,64 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
   /**
     * Percentage from 0-100 of the data transfer cost to be billed to the subscriber.
     */
-  var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.native
+  var DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined
   
   /**
     * A description of the output.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The address where you want to send the output.
     */
-  var Destination: js.UndefOr[string] = js.native
+  var Destination: js.UndefOr[string] = js.undefined
   
   /**
     * The type of key used for the encryption. If no keyType is provided, the service will use the default setting (static-key).
     */
-  var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.native
+  var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.undefined
   
   /**
     * The ARN of the entitlement on the originator''s flow. This value is relevant only on entitled flows.
     */
-  var EntitlementArn: js.UndefOr[string] = js.native
+  var EntitlementArn: js.UndefOr[string] = js.undefined
   
   /**
     * The input ARN of the AWS Elemental MediaLive channel. This parameter is relevant only for outputs that were added by creating a MediaLive input.
     */
-  var MediaLiveInputArn: js.UndefOr[string] = js.native
+  var MediaLiveInputArn: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the output. This value must be unique within the current flow.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * The ARN of the output.
     */
-  var OutputArn: string = js.native
+  var OutputArn: string
   
   /**
     * The port to use when content is distributed to this output.
     */
-  var Port: js.UndefOr[integer] = js.native
+  var Port: js.UndefOr[integer] = js.undefined
   
   /**
     * Attributes related to the transport stream that are used in the output.
     */
-  var Transport: js.UndefOr[typings.awsSdk.mediaconnectMod.Transport] = js.native
+  var Transport: js.UndefOr[typings.awsSdk.mediaconnectMod.Transport] = js.undefined
   
   /**
     * The name of the VPC interface attachment to use for this output.
     */
-  var VpcInterfaceAttachment: js.UndefOr[typings.awsSdk.mediaconnectMod.VpcInterfaceAttachment] = js.native
+  var VpcInterfaceAttachment: js.UndefOr[typings.awsSdk.mediaconnectMod.VpcInterfaceAttachment] = js.undefined
 }
 object Output {
   

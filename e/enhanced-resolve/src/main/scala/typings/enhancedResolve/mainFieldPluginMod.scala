@@ -3,28 +3,41 @@ package typings.enhancedResolve
 import typings.enhancedResolve.anon.ForceRelative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainFieldPluginMod {
   
   @JSImport("enhanced-resolve/lib/MainFieldPlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MainFieldPlugin {
+  class ^ protected ()
+    extends StObject
+       with MainFieldPlugin {
     def this(source: String, options: ForceRelative, target: String) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    
+    /* CompleteClass */
+    var options: ForceRelative = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var target: String = js.native
   }
   
-  @js.native
   trait MainFieldPlugin extends StObject {
     
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
     
-    var options: ForceRelative = js.native
+    var options: ForceRelative
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object MainFieldPlugin {
     

@@ -2,14 +2,14 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StorageInfoOptions extends CommonCallbackOptions {
+trait StorageInfoOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   @JSName("success")
-  var success_StorageInfoOptions: js.UndefOr[StorageInfoCallback] = js.native
+  var success_StorageInfoOptions: js.UndefOr[StorageInfoCallback] = js.undefined
 }
 object StorageInfoOptions {
   

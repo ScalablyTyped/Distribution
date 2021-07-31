@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setResourceDisplayName("Example Resource")
   *       .throwException();
   */
-@js.native
 trait AuthorizationException extends StObject {
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setAuthorizationUrl(authUrl: String): AuthorizationException = js.native
+  def setAuthorizationUrl(authUrl: String): AuthorizationException
   
-  def setCustomUiCallback(callback: String): AuthorizationException = js.native
+  def setCustomUiCallback(callback: String): AuthorizationException
   
-  def setResourceDisplayName(name: String): AuthorizationException = js.native
+  def setResourceDisplayName(name: String): AuthorizationException
   
-  def throwException(): Unit = js.native
+  def throwException(): Unit
 }
 object AuthorizationException {
   

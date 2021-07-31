@@ -5,41 +5,41 @@ import typings.webpack.webpackOptionsMod.RuleSetConditions
 import typings.webpack.webpackOptionsMod._RuleSetCondition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait And extends _RuleSetCondition {
+trait And
+  extends StObject
+     with _RuleSetCondition {
   
   /**
   			 * Logical AND
   			 */
-  var and: js.UndefOr[RuleSetConditions] = js.native
+  var and: js.UndefOr[RuleSetConditions] = js.undefined
   
   /**
   			 * Exclude all modules matching any of these conditions
   			 */
-  var exclude: js.UndefOr[RuleSetConditionOrConditions] = js.native
+  var exclude: js.UndefOr[RuleSetConditionOrConditions] = js.undefined
   
   /**
   			 * Exclude all modules matching not any of these conditions
   			 */
-  var include: js.UndefOr[RuleSetConditionOrConditions] = js.native
+  var include: js.UndefOr[RuleSetConditionOrConditions] = js.undefined
   
   /**
   			 * Logical NOT
   			 */
-  var not: js.UndefOr[RuleSetConditions] = js.native
+  var not: js.UndefOr[RuleSetConditions] = js.undefined
   
   /**
   			 * Logical OR
   			 */
-  var or: js.UndefOr[RuleSetConditions] = js.native
+  var or: js.UndefOr[RuleSetConditions] = js.undefined
   
   /**
   			 * Exclude all modules matching any of these conditions
   			 */
-  var test: js.UndefOr[RuleSetConditionOrConditions] = js.native
+  var test: js.UndefOr[RuleSetConditionOrConditions] = js.undefined
 }
 object And {
   

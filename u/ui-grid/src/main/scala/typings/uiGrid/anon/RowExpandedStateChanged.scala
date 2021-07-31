@@ -4,10 +4,8 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.expandable.rowExpandedStateChangedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowExpandedStateChanged[TEntity] extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RowExpandedStateChanged[TEntity] extends StObject {
     * @param {ng.IScope} scope
     * @param {rowExpandedStateChangedHandler} handler
     */
-  def rowExpandedStateChanged(scope: IScope, handler: rowExpandedStateChangedHandler[TEntity]): Unit = js.native
+  def rowExpandedStateChanged(scope: IScope, handler: rowExpandedStateChangedHandler[TEntity]): Unit
 }
 object RowExpandedStateChanged {
   
@@ -26,7 +24,7 @@ object RowExpandedStateChanged {
   }
   
   @scala.inline
-  implicit class RowExpandedStateChangedMutableBuilder[Self <: RowExpandedStateChanged[_], TEntity] (val x: Self with RowExpandedStateChanged[TEntity]) extends AnyVal {
+  implicit class RowExpandedStateChangedMutableBuilder[Self <: RowExpandedStateChanged[?], TEntity] (val x: Self & RowExpandedStateChanged[TEntity]) extends AnyVal {
     
     @scala.inline
     def setRowExpandedStateChanged(value: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpandedStateChanged", js.Any.fromFunction2(value))

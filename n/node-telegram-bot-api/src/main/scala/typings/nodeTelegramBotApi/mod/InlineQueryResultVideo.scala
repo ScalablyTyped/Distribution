@@ -3,42 +3,41 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultVideo
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var mime_type: String = js.native
+  var mime_type: String
   
-  var thumb_url: String = js.native
+  var thumb_url: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: video = js.native
+  var `type`: video
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_height: js.UndefOr[Double] = js.native
+  var video_height: js.UndefOr[Double] = js.undefined
   
-  var video_url: String = js.native
+  var video_url: String
   
-  var video_width: js.UndefOr[Double] = js.native
+  var video_width: js.UndefOr[Double] = js.undefined
 }
 object InlineQueryResultVideo {
   
   @scala.inline
-  def apply(id: String, mime_type: String, thumb_url: String, title: String, `type`: video, video_url: String): InlineQueryResultVideo = {
+  def apply(id: String, mime_type: String, thumb_url: String, title: String, video_url: String): InlineQueryResultVideo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], thumb_url = thumb_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video_url = video_url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[InlineQueryResultVideo]
   }
   

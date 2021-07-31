@@ -6,29 +6,29 @@ import typings.elasticsearch.elasticsearchStrings.query_and_fetch
 import typings.elasticsearch.elasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchTemplateParams extends GenericParams {
+trait SearchTemplateParams
+  extends StObject
+     with GenericParams {
   
-  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
   
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: NameList = js.native
+  var index: NameList
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var routing: js.UndefOr[NameList] = js.native
+  var routing: js.UndefOr[NameList] = js.undefined
   
-  var scroll: js.UndefOr[TimeSpan] = js.native
+  var scroll: js.UndefOr[TimeSpan] = js.undefined
   
-  var searchType: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+  var searchType: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
   
-  var `type`: NameList = js.native
+  var `type`: NameList
 }
 object SearchTemplateParams {
   

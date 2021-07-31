@@ -2,19 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportOptionArguments extends StObject {
   
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
-  var includeZeroImpressions: js.UndefOr[Boolean] = js.native
+  var includeZeroImpressions: js.UndefOr[Boolean] = js.undefined
   
-  var resolveGeoNames: js.UndefOr[Boolean] = js.native
+  var resolveGeoNames: js.UndefOr[Boolean] = js.undefined
   
-  var returnMoneyInMicros: js.UndefOr[Boolean] = js.native
+  var returnMoneyInMicros: js.UndefOr[Boolean] = js.undefined
 }
 object ReportOptionArguments {
   

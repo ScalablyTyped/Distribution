@@ -6,37 +6,37 @@ import typings.vexdb.anon.Ttl
 import typings.vexdb.requestObjectsMod.RequestObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
-  @JSImport("vexdb/out/constants/settings", "header")
+  @JSImport("vexdb/out/constants/settings", JSImport.Namespace)
   @js.native
-  def header(headers: StringDictionary[String]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def header(headers: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(headers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("vexdb/out/constants/settings", "isBrowser")
   @js.native
   val isBrowser: js.Function = js.native
   
-  @JSImport("vexdb/out/constants/settings", "param")
-  @js.native
-  def param(params: RequestObject): Unit = js.native
+  @scala.inline
+  def param(params: RequestObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait settings extends StObject {
     
-    var baseURL: String = js.native
+    var baseURL: String
     
-    var cache: Ttl = js.native
+    var cache: Ttl
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var live: PollTime = js.native
+    var live: PollTime
     
-    var maxConcurrentRequests: Double = js.native
+    var maxConcurrentRequests: Double
     
-    var params: RequestObject = js.native
+    var params: RequestObject
   }
   object settings {
     

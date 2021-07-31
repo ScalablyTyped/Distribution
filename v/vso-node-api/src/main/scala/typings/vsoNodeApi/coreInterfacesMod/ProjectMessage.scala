@@ -2,17 +2,15 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectMessage extends StObject {
   
-  var project: ProjectInfo = js.native
+  var project: ProjectInfo
   
-  var projectChangeType: ProjectChangeType = js.native
+  var projectChangeType: ProjectChangeType
   
-  var shouldInvalidateSystemStore: Boolean = js.native
+  var shouldInvalidateSystemStore: Boolean
 }
 object ProjectMessage {
   

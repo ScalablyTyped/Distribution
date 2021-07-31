@@ -12,7 +12,7 @@ Embracing a distributed web
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 2125 |
+| # downloads        | 2657 |
 | # stars            | 2 |
 
 ## Links

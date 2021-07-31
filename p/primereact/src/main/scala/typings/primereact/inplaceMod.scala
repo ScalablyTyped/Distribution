@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inplaceMod {
@@ -46,26 +45,25 @@ object inplaceMod {
     def this(props: js.Object, context: js.Any) = this()
   }
   
-  @js.native
   trait InplaceProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ ValueBoolean, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* e */ ValueBoolean, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
   }
   object InplaceProps {
     

@@ -2,19 +2,17 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logs extends StObject {
   
-  var frameworkLambda: js.UndefOr[Boolean] = js.native
+  var frameworkLambda: js.UndefOr[Boolean] = js.undefined
   
-  var httpApi: js.UndefOr[Boolean | HttpApiLogs] = js.native
+  var httpApi: js.UndefOr[Boolean | HttpApiLogs] = js.undefined
   
-  var restApi: js.UndefOr[RestApiLogs] = js.native
+  var restApi: js.UndefOr[RestApiLogs] = js.undefined
   
-  var websocket: js.UndefOr[WebsocketLogs] = js.native
+  var websocket: js.UndefOr[WebsocketLogs] = js.undefined
 }
 object Logs {
   

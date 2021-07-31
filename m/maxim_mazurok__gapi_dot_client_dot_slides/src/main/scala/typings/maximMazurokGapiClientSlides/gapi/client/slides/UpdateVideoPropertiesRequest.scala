@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVideoPropertiesRequest extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait UpdateVideoPropertiesRequest extends StObject {
     * for listing every field. For example to update the video outline color, set `fields` to `"outline.outlineFill.solidFill.color"`. To reset a property to its default value, include
     * its field name in the field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The object ID of the video the updates are applied to. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /** The video properties to update. */
-  var videoProperties: js.UndefOr[VideoProperties] = js.native
+  var videoProperties: js.UndefOr[VideoProperties] = js.undefined
 }
 object UpdateVideoPropertiesRequest {
   

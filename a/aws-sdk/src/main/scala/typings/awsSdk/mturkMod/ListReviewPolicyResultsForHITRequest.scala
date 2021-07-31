@@ -2,41 +2,39 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReviewPolicyResultsForHITRequest extends StObject {
   
   /**
     * The unique identifier of the HIT to retrieve review results for.
     */
-  var HITId: EntityId = js.native
+  var HITId: EntityId
   
   /**
     * Limit the number of results returned.
     */
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The Policy Level(s) to retrieve review results for - HIT or Assignment. If omitted, the default behavior is to retrieve all data for both policy levels. For a list of all the described policies, see Review Policies. 
     */
-  var PolicyLevels: js.UndefOr[ReviewPolicyLevelList] = js.native
+  var PolicyLevels: js.UndefOr[ReviewPolicyLevelList] = js.undefined
   
   /**
     *  Specify if the operation should retrieve a list of the actions taken executing the Review Policies and their outcomes. 
     */
-  var RetrieveActions: js.UndefOr[Boolean] = js.native
+  var RetrieveActions: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specify if the operation should retrieve a list of the results computed by the Review Policies. 
     */
-  var RetrieveResults: js.UndefOr[Boolean] = js.native
+  var RetrieveResults: js.UndefOr[Boolean] = js.undefined
 }
 object ListReviewPolicyResultsForHITRequest {
   

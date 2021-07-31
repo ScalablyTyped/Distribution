@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosVersion extends StObject {
   
   /** An opaque id for this iOS version. Use this id to invoke the TestExecutionService. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** An integer representing the major iOS version. Examples: "8", "9". */
-  var majorVersion: js.UndefOr[Double] = js.native
+  var majorVersion: js.UndefOr[Double] = js.undefined
   
   /** An integer representing the minor iOS version. Examples: "1", "2". */
-  var minorVersion: js.UndefOr[Double] = js.native
+  var minorVersion: js.UndefOr[Double] = js.undefined
   
   /** The available Xcode versions for this version. */
-  var supportedXcodeVersionIds: js.UndefOr[js.Array[String]] = js.native
+  var supportedXcodeVersionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Tags for this dimension. Examples: "default", "preview", "deprecated". */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IosVersion {
   

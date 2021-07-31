@@ -3,7 +3,6 @@ package typings.estreeWalker
 import typings.estree.mod.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object walkerMod {
@@ -25,14 +24,13 @@ object walkerMod {
     var should_skip: Boolean = js.native
   }
   
-  @js.native
   trait WalkerContext extends StObject {
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def replace(node: BaseNode): Unit = js.native
+    def replace(node: BaseNode): Unit
     
-    def skip(): Unit = js.native
+    def skip(): Unit
   }
   object WalkerContext {
     

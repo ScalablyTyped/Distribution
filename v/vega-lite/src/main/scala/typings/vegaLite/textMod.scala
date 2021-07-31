@@ -19,87 +19,81 @@ import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "text")
+  @JSImport("vega-lite/build/src/compile/mark/encode/text", JSImport.Namespace)
   @js.native
-  def text(model: UnitModel): PartialRecordVgEncodeChan = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef(channelDef: js.UndefOr[TextDef[String]], config: Config[ExprRef | SignalRef]): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef(channelDef: js.Array[StringFieldDef[String]], config: Config[ExprRef | SignalRef]): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef(channelDef: Null, config: Config[ExprRef | SignalRef]): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef(channelDef: StringFieldDefWithCondition[String], config: Config[ExprRef | SignalRef]): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef(channelDef: StringValueDefWithCondition[String, StandardType], config: Config[ExprRef | SignalRef]): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef_datum(channelDef: js.UndefOr[TextDef[String]], config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef_datum(channelDef: js.Array[StringFieldDef[String]], config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef_datum(channelDef: Null, config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef_datum(channelDef: StringFieldDefWithCondition[String], config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
+  @scala.inline
+  def text(model: UnitModel): PartialRecordVgEncodeChan = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(model.asInstanceOf[js.Any]).asInstanceOf[PartialRecordVgEncodeChan]
+  
+  @scala.inline
+  def textRef(channelDef: js.Array[StringFieldDef[String]], config: Config[ExprRef | SignalRef]): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef(channelDef: Null, config: Config[ExprRef | SignalRef]): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef(channelDef: Unit, config: Config[ExprRef | SignalRef]): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef(channelDef: StringFieldDefWithCondition[String], config: Config[ExprRef | SignalRef]): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef(channelDef: StringValueDefWithCondition[String, StandardType], config: Config[ExprRef | SignalRef]): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef(channelDef: TextDef[String], config: Config[ExprRef | SignalRef]): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  
+  @scala.inline
+  def textRef_datum(channelDef: js.Array[StringFieldDef[String]], config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datum(channelDef: Null, config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datum(channelDef: Unit, config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datum(channelDef: StringFieldDefWithCondition[String], config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
   def textRef_datum(
     channelDef: StringValueDefWithCondition[String, StandardType],
     config: Config[ExprRef | SignalRef],
     expr: datum
-  ): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef_datumdatum(channelDef: js.UndefOr[TextDef[String]], config: Config[ExprRef | SignalRef], expr: datumDotdatum): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
+  ): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datum(channelDef: TextDef[String], config: Config[ExprRef | SignalRef], expr: datum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  
+  @scala.inline
   def textRef_datumdatum(
     channelDef: js.Array[StringFieldDef[String]],
     config: Config[ExprRef | SignalRef],
     expr: datumDotdatum
-  ): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
-  def textRef_datumdatum(channelDef: Null, config: Config[ExprRef | SignalRef], expr: datumDotdatum): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
+  ): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datumdatum(channelDef: Null, config: Config[ExprRef | SignalRef], expr: datumDotdatum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datumdatum(channelDef: Unit, config: Config[ExprRef | SignalRef], expr: datumDotdatum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
   def textRef_datumdatum(
     channelDef: StringFieldDefWithCondition[String],
     config: Config[ExprRef | SignalRef],
     expr: datumDotdatum
-  ): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "textRef")
-  @js.native
+  ): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
   def textRef_datumdatum(
     channelDef: StringValueDefWithCondition[String, StandardType],
     config: Config[ExprRef | SignalRef],
     expr: datumDotdatum
-  ): VgValueRef = js.native
+  ): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def textRef_datumdatum(channelDef: TextDef[String], config: Config[ExprRef | SignalRef], expr: datumDotdatum): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("textRef")(channelDef.asInstanceOf[js.Any], config.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "text")
-  @js.native
-  def text_description(model: UnitModel, channel: description): PartialRecordVgEncodeChan = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "text")
-  @js.native
-  def text_href(model: UnitModel, channel: href): PartialRecordVgEncodeChan = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "text")
-  @js.native
-  def text_text(model: UnitModel, channel: text): PartialRecordVgEncodeChan = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/text", "text")
-  @js.native
-  def text_url(model: UnitModel, channel: url): PartialRecordVgEncodeChan = js.native
+  @scala.inline
+  def text_description(model: UnitModel, channel: description): PartialRecordVgEncodeChan = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[PartialRecordVgEncodeChan]
+  
+  @scala.inline
+  def text_href(model: UnitModel, channel: href): PartialRecordVgEncodeChan = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[PartialRecordVgEncodeChan]
+  
+  @scala.inline
+  def text_text(model: UnitModel, channel: text): PartialRecordVgEncodeChan = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[PartialRecordVgEncodeChan]
+  
+  @scala.inline
+  def text_url(model: UnitModel, channel: url): PartialRecordVgEncodeChan = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[PartialRecordVgEncodeChan]
 }

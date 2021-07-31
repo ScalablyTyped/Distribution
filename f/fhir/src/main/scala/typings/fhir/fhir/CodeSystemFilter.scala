@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter that can be used in a value set
   */
-@js.native
-trait CodeSystemFilter extends BackboneElement {
+trait CodeSystemFilter
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'operator'.
     */
-  var _operator: js.UndefOr[js.Array[Element]] = js.native
+  var _operator: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * Code that identifies the filter
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * How or why the filter is used
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Operators that can be used with filter
     */
-  var operator: js.Array[code] = js.native
+  var operator: js.Array[code]
   
   /**
     * What to use for the value
     */
-  var value: String = js.native
+  var value: String
 }
 object CodeSystemFilter {
   

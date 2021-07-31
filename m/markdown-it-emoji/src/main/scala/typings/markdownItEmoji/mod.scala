@@ -7,7 +7,6 @@ import typings.markdownItEmoji.mod.MarkdownItEmoji.Options
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,14 +17,13 @@ object mod extends Shortcut {
   
   object MarkdownItEmoji {
     
-    @js.native
     trait Options extends StObject {
       
-      var defs: js.UndefOr[Record[String, String]] = js.native
+      var defs: js.UndefOr[Record[String, String]] = js.undefined
       
-      var enabled: js.UndefOr[js.Array[String]] = js.native
+      var enabled: js.UndefOr[js.Array[String]] = js.undefined
       
-      var shortcuts: js.UndefOr[Record[String, String | js.Array[String]]] = js.native
+      var shortcuts: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
     }
     object Options {
       

@@ -2,33 +2,31 @@ package typings.activexLibreoffice.com_.sun.star.chart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A {@link TimeIncrement} describes how tickmarks are positioned on the scale of a date-time axis.
   * @since OOo 3.4
   */
-@js.native
 trait TimeIncrement extends StObject {
   
   /**
     * if the any contains a struct of type {@link com.sun.star.chart.TimeInterval} this is used as a fixed distance value for the major tickmarks.
     * Otherwise, if the any is empty or contains an incompatible type, the distance between major tickmarks is calculated automatically by the application.
     */
-  var MajorTimeInterval: js.Any = js.native
+  var MajorTimeInterval: js.Any
   
   /**
     * if the any contains a struct of type {@link com.sun.star.chart.TimeInterval} this is used as a fixed distance value for the minor tickmarks.
     * Otherwise, if the any is empty or contains an incompatible type, the distance between minor tickmarks is calculated automatically by the application.
     */
-  var MinorTimeInterval: js.Any = js.native
+  var MinorTimeInterval: js.Any
   
   /**
     * if the any contains a constant of type {@link com.sun.star.chart.TimeUnit} this is the smallest time unit that is displayed on the date-time axis.
     * Otherwise, if the any is empty or contains an incompatible type, the resolution is chosen automatically by the application.
     */
-  var TimeResolution: js.Any = js.native
+  var TimeResolution: js.Any
 }
 object TimeIncrement {
   

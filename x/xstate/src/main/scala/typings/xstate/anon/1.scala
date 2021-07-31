@@ -3,19 +3,17 @@ package typings.xstate.anon
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var event: Asterisk = js.native
+  var event: Asterisk
 }
 object `1` {
   
   @scala.inline
-  def apply(event: Asterisk): `1` = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+  def apply(): `1` = {
+    val __obj = js.Dynamic.literal(event = "*")
     __obj.asInstanceOf[`1`]
   }
   

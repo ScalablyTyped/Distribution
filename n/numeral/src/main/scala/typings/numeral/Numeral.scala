@@ -2,7 +2,6 @@ package typings.numeral
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://numeraljs.com/#use-it
@@ -21,9 +20,9 @@ trait Numeral extends StObject {
   def divide(value: js.Any): Numeral = js.native
   
   def format(): String = js.native
-  def format(inputString: js.UndefOr[scala.Nothing], roundingFunction: RoundingFunction): String = js.native
   def format(inputString: String): String = js.native
   def format(inputString: String, roundingFunction: RoundingFunction): String = js.native
+  def format(inputString: Unit, roundingFunction: RoundingFunction): String = js.native
   
   var isNumeral: Boolean = js.native
   

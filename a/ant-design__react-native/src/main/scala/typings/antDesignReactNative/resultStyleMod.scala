@@ -6,35 +6,36 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/result/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/result/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): ResultStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): ResultStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ResultStyle]
+  
   trait ResultStyle extends StObject {
     
-    var button: ViewStyle = js.native
+    var button: ViewStyle
     
-    var buttonWrap: ViewStyle = js.native
+    var buttonWrap: ViewStyle
     
-    var img: ImageStyle = js.native
+    var img: ImageStyle
     
-    var imgWrap: ViewStyle = js.native
+    var imgWrap: ViewStyle
     
-    var message: ViewStyle = js.native
+    var message: ViewStyle
     
-    var messageText: TextStyle = js.native
+    var messageText: TextStyle
     
-    var result: ViewStyle = js.native
+    var result: ViewStyle
     
-    var title: ViewStyle = js.native
+    var title: ViewStyle
     
-    var titleText: TextStyle = js.native
+    var titleText: TextStyle
   }
   object ResultStyle {
     

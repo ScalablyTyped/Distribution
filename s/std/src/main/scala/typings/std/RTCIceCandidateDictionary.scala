@@ -2,31 +2,31 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCIceCandidateDictionary extends RTCIceGatherCandidate {
+trait RTCIceCandidateDictionary
+  extends StObject
+     with RTCIceGatherCandidate {
   
-  var foundation: js.UndefOr[java.lang.String] = js.native
+  var foundation: js.UndefOr[java.lang.String] = js.undefined
   
-  var ip: js.UndefOr[java.lang.String] = js.native
+  var ip: js.UndefOr[java.lang.String] = js.undefined
   
-  var msMTurnSessionId: js.UndefOr[java.lang.String] = js.native
+  var msMTurnSessionId: js.UndefOr[java.lang.String] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var protocol: js.UndefOr[RTCIceProtocol] = js.native
+  var protocol: js.UndefOr[RTCIceProtocol] = js.undefined
   
-  var relatedAddress: js.UndefOr[java.lang.String] = js.native
+  var relatedAddress: js.UndefOr[java.lang.String] = js.undefined
   
-  var relatedPort: js.UndefOr[Double] = js.native
+  var relatedPort: js.UndefOr[Double] = js.undefined
   
-  var tcpType: js.UndefOr[RTCIceTcpCandidateType] = js.native
+  var tcpType: js.UndefOr[RTCIceTcpCandidateType] = js.undefined
   
-  var `type`: js.UndefOr[RTCIceCandidateType] = js.native
+  var `type`: js.UndefOr[RTCIceCandidateType] = js.undefined
 }
 object RTCIceCandidateDictionary {
   

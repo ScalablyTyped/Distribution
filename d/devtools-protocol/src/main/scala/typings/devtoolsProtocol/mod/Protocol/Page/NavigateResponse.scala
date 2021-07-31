@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.Network.LoaderId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateResponse extends StObject {
   
   /**
     * User friendly error message, present if and only if navigation has failed.
     */
-  var errorText: js.UndefOr[String] = js.native
+  var errorText: js.UndefOr[String] = js.undefined
   
   /**
     * Frame id that has navigated (or failed to navigate)
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Loader identifier.
     */
-  var loaderId: js.UndefOr[LoaderId] = js.native
+  var loaderId: js.UndefOr[LoaderId] = js.undefined
 }
 object NavigateResponse {
   

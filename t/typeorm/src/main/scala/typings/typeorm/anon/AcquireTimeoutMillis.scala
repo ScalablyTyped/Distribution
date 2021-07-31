@@ -2,82 +2,80 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquireTimeoutMillis extends StObject {
   
   /**
     * Max milliseconds an acquire call will wait for a resource before timing out. (default no limit), if supplied should non-zero positive integer.
     */
-  val acquireTimeoutMillis: js.UndefOr[Double] = js.native
+  val acquireTimeoutMillis: js.UndefOr[Double] = js.undefined
   
   /**
     * Should the pool start creating resources etc once the constructor is called, (default true)
     */
-  val autostart: js.UndefOr[Double] = js.native
+  val autostart: js.UndefOr[Double] = js.undefined
   
-  val errorHandler: js.UndefOr[js.Function1[/* err */ js.Any, _]] = js.native
+  val errorHandler: js.UndefOr[js.Function1[/* err */ js.Any, js.Any]] = js.undefined
   
   /**
     * How often to run eviction checks. Default: 0 (does not run).
     */
-  val evictionRunIntervalMillis: js.UndefOr[Double] = js.native
+  val evictionRunIntervalMillis: js.UndefOr[Double] = js.undefined
   
   /**
     * If true the oldest resources will be first to be allocated. If false the most recently released resources will
     * be the first to be allocated. This in effect turns the pool's behaviour from a queue into a stack. boolean,
     * (default true)
     */
-  val fifo: js.UndefOr[Boolean] = js.native
+  val fifo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The minimum amount of time that an object may sit idle in the pool before it is eligible for eviction due
     * to idle time. Supercedes softIdleTimeoutMillis Default: 30000
     */
-  val idleTimeoutMillis: js.UndefOr[Double] = js.native
+  val idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of resources to create at any given time. (default=1)
     */
-  val max: js.UndefOr[Double] = js.native
+  val max: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of queued requests allowed, additional acquire calls will be callback with an err in a future
     * cycle of the event loop.
     */
-  val maxWaitingClients: js.UndefOr[Double] = js.native
+  val maxWaitingClients: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of resources to keep in pool at any given time. If this is set >= max, the pool will silently
     * set the min to equal max. (default=0)
     */
-  val min: js.UndefOr[Double] = js.native
+  val min: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of resources to check each eviction run. Default: 3.
     */
-  val numTestsPerRun: js.UndefOr[Double] = js.native
+  val numTestsPerRun: js.UndefOr[Double] = js.undefined
   
   /**
     * Int between 1 and x - if set, borrowers can specify their relative priority in the queue if no resources
     * are available. see example. (default 1)
     */
-  val priorityRange: js.UndefOr[Double] = js.native
+  val priorityRange: js.UndefOr[Double] = js.undefined
   
   /**
     * Amount of time an object may sit idle in the pool before it is eligible for eviction by the idle object
     * evictor (if any), with the extra condition that at least "min idle" object instances remain in the pool.
     * Default -1 (nothing can get evicted)
     */
-  val softIdleTimeoutMillis: js.UndefOr[Double] = js.native
+  val softIdleTimeoutMillis: js.UndefOr[Double] = js.undefined
   
   /**
     * Should the pool validate resources before giving them to clients. Requires that either factory.validate or
     * factory.validateAsync to be specified
     */
-  val testOnBorrow: js.UndefOr[Boolean] = js.native
+  val testOnBorrow: js.UndefOr[Boolean] = js.undefined
 }
 object AcquireTimeoutMillis {
   
@@ -103,7 +101,7 @@ object AcquireTimeoutMillis {
     def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
     
     @scala.inline
-    def setErrorHandler(value: /* err */ js.Any => _): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    def setErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
     def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)

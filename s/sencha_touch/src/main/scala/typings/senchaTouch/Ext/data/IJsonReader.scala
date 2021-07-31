@@ -2,38 +2,37 @@ package typings.senchaTouch.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonReader
-  extends typings.senchaTouch.Ext.data.reader.IReader {
+  extends StObject
+     with typings.senchaTouch.Ext.data.reader.IReader {
   
   /** [Method] Returns the value of record
     * @returns String
     */
-  var getRecord: js.UndefOr[js.Function0[String]] = js.native
+  var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of useSimpleAccessors
     * @returns Boolean
     */
-  var getUseSimpleAccessors: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseSimpleAccessors: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (String) */
-  var record: js.UndefOr[String] = js.native
+  var record: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of record
     * @param record String The new value.
     */
-  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.native
+  var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of useSimpleAccessors
     * @param useSimpleAccessors Boolean The new value.
     */
-  var setUseSimpleAccessors: js.UndefOr[js.Function1[/* useSimpleAccessors */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseSimpleAccessors: js.UndefOr[js.Function1[/* useSimpleAccessors */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useSimpleAccessors: js.UndefOr[Boolean] = js.native
+  var useSimpleAccessors: js.UndefOr[Boolean] = js.undefined
 }
 object IJsonReader {
   

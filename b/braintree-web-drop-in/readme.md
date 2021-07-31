@@ -4,15 +4,15 @@
 Typings are for version 1.22
 
 ## Library description:
-[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=MHNCQnJqZ042SFFUek9uZTFyV2dQZEppenhsdUVBQU9SMzBLRGxPUXZyaz0tLVNpUjlqUnlPUVVPOWswN1B1WWdySXc9PQ==--7517ca3a283b3a7e80dcf5de3f4270bc47eab891)](https://automate.browserstack.com/pu
+[![Build Status](https://github.com/braintree/braintree-web-drop-in/workflows/Unit%20Tests/badge.svg)](https://github.com/braintree/braintree-web-drop-in/actions?query=workflow%3A%22Unit+Tests%22) [![Build Status](https://github.com/braintree/braintree-we
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | braintree-web-drop-in |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 16 |
-| # downloads        | 1257240 |
+| # releases         | 17 |
+| # dependents       | 19 |
+| # downloads        | 1679684 |
 | # stars            | 0 |
 
 ## Links

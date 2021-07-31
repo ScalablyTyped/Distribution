@@ -2,61 +2,61 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectoryAudit extends Entity {
+trait DirectoryAudit
+  extends StObject
+     with Entity {
   
   /**
     * Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight
     * UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var activityDateTime: js.UndefOr[String] = js.native
+  var activityDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the activity name or the operation name (examples: 'Create User' and 'Add member to group'). For full list,
     * see Azure AD activity list.
     */
-  var activityDisplayName: js.UndefOr[String] = js.native
+  var activityDisplayName: js.UndefOr[String] = js.undefined
   
   // Indicates additional details on the activity.
-  var additionalDetails: js.UndefOr[NullableOption[js.Array[KeyValue]]] = js.native
+  var additionalDetails: js.UndefOr[NullableOption[js.Array[KeyValue]]] = js.undefined
   
   /**
     * Indicates which resource category that's targeted by the activity. (For example: User Management, Group Management
     * etc..)
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs
     * across services.
     */
-  var correlationId: js.UndefOr[NullableOption[String]] = js.native
+  var correlationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates information about the user or app initiated the activity.
-  var initiatedBy: js.UndefOr[AuditActivityInitiator] = js.native
+  var initiatedBy: js.UndefOr[AuditActivityInitiator] = js.undefined
   
   /**
     * Indicates information on which service initiated the activity (For example: Self-service Password Management, Core
     * Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.
     */
-  var loggedByService: js.UndefOr[NullableOption[String]] = js.native
+  var loggedByService: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var operationType: js.UndefOr[NullableOption[String]] = js.native
+  var operationType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the result of the activity. Possible values are: success, failure, timeout, unknownFutureValue.
-  var result: js.UndefOr[NullableOption[OperationResult]] = js.native
+  var result: js.UndefOr[NullableOption[OperationResult]] = js.undefined
   
   // Describes cause of 'failure' or 'timeout' results.
-  var resultReason: js.UndefOr[NullableOption[String]] = js.native
+  var resultReason: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates information on which resource was changed due to the activity. Target Resource Type can be User, Device,
     * Directory, App, Role, Group, Policy or Other.
     */
-  var targetResources: js.UndefOr[NullableOption[js.Array[TargetResource]]] = js.native
+  var targetResources: js.UndefOr[NullableOption[js.Array[TargetResource]]] = js.undefined
 }
 object DirectoryAudit {
   

@@ -25,7 +25,6 @@ import typings.std.HTMLInputElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinCodeMod {
@@ -57,56 +56,55 @@ object pinCodeMod {
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
   /* Inlined baseui.baseui/input.InputOverrides & {  Root :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> * / any | undefined,   Input :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> * / any | undefined} */
-  @js.native
   trait PinCodeOverrides extends StObject {
     
     var After: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Before: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ClearIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ClearIconContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var EndEnhancer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Input: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var InputContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var MaskToggleButton: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var MaskToggleHideIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var MaskToggleShowIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var StartEnhancer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PinCodeOverrides {
     
@@ -218,93 +216,92 @@ object pinCodeMod {
   }
   
   /* Inlined baseui.baseui/pin-code.Omit<baseui.baseui/input.InputProps, 'onChange' | 'value'> & {  overrides :baseui.baseui/pin-code.PinCodeOverrides | undefined,   values :std.Array<string>,   manageFocus :boolean | undefined,   mask :boolean | string | undefined, onChange (args : {  values :std.Array<string>,   event :react.react.FormEvent<std.HTMLInputElement>}): void} */
-  @js.native
   trait PinCodeProps extends StObject {
     
-    var adjoined: js.UndefOr[none | left | right | both] = js.native
+    var adjoined: js.UndefOr[none | left | right | both] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var clearOnEscape: js.UndefOr[Boolean] = js.native
+    var clearOnEscape: js.UndefOr[Boolean] = js.undefined
     
-    var clearable: js.UndefOr[Boolean] = js.native
+    var clearable: js.UndefOr[Boolean] = js.undefined
     
-    var `data-baseweb`: js.UndefOr[String] = js.native
+    var `data-baseweb`: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.native
+    var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputMode: js.UndefOr[String] = js.native
+    var inputMode: js.UndefOr[String] = js.undefined
     
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var manageFocus: js.UndefOr[Boolean] = js.native
+    var manageFocus: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean | String] = js.native
+    var mask: js.UndefOr[Boolean | String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    def onChange(args: Values): Unit = js.native
+    def onChange(args: Values): Unit
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[InputOverrides] with js.UndefOr[PinCodeOverrides] = js.native
+    var overrides: js.UndefOr[InputOverrides] & js.UndefOr[PinCodeOverrides]
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+    var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
     
-    var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.native
+    var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object PinCodeProps {
     
     @scala.inline
     def apply(
       onChange: Values => Unit,
-      overrides: js.UndefOr[InputOverrides] with js.UndefOr[PinCodeOverrides],
+      overrides: js.UndefOr[InputOverrides] & js.UndefOr[PinCodeOverrides],
       values: js.Array[String]
     ): PinCodeProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), overrides = overrides.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
@@ -489,7 +486,7 @@ object pinCodeMod {
       def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
       @scala.inline
-      def setOverrides(value: js.UndefOr[InputOverrides] with js.UndefOr[PinCodeOverrides]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      def setOverrides(value: js.UndefOr[InputOverrides] & js.UndefOr[PinCodeOverrides]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
@@ -556,10 +553,9 @@ object pinCodeMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object State {
     
@@ -580,16 +576,15 @@ object pinCodeMod {
     }
   }
   
-  @js.native
   trait StatefulContainerProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ Values, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ Values, Unit]] = js.undefined
     
-    var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.native
+    var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
   }
   object StatefulContainerProps {
     
@@ -629,99 +624,98 @@ object pinCodeMod {
   }
   
   /* Inlined std.Partial<baseui.baseui/pin-code.PinCodeProps> & baseui.baseui/pin-code.StatefulContainerProps & {  children :never | undefined,   overrides :baseui.baseui/pin-code.PinCodeOverrides | undefined} */
-  @js.native
   trait StatefulPinCodeProps extends StObject {
     
-    var adjoined: js.UndefOr[none | left | right | both] = js.native
+    var adjoined: js.UndefOr[none | left | right | both] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] with js.UndefOr[scala.Nothing] = js.native
+    var children: js.UndefOr[ReactNode] & js.UndefOr[scala.Nothing]
     
-    var clearOnEscape: js.UndefOr[Boolean] = js.native
+    var clearOnEscape: js.UndefOr[Boolean] = js.undefined
     
-    var clearable: js.UndefOr[Boolean] = js.native
+    var clearable: js.UndefOr[Boolean] = js.undefined
     
-    var `data-baseweb`: js.UndefOr[String] = js.native
+    var `data-baseweb`: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.native
+    var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var inputMode: js.UndefOr[String] = js.native
+    var inputMode: js.UndefOr[String] = js.undefined
     
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var manageFocus: js.UndefOr[Boolean] = js.native
+    var manageFocus: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean | String] = js.native
+    var mask: js.UndefOr[Boolean | String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ Values, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ Values, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[InputOverrides] with js.UndefOr[PinCodeOverrides] = js.native
+    var overrides: js.UndefOr[InputOverrides] & js.UndefOr[PinCodeOverrides]
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+    var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
     
-    var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.native
+    var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
     
-    var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.native
+    var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Array[String]] = js.native
+    var values: js.UndefOr[js.Array[String]] = js.undefined
   }
   object StatefulPinCodeProps {
     
     @scala.inline
     def apply(
-      children: js.UndefOr[ReactNode] with js.UndefOr[scala.Nothing],
-      overrides: js.UndefOr[InputOverrides] with js.UndefOr[PinCodeOverrides]
+      children: js.UndefOr[ReactNode] & js.UndefOr[scala.Nothing],
+      overrides: js.UndefOr[InputOverrides] & js.UndefOr[PinCodeOverrides]
     ): StatefulPinCodeProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulPinCodeProps]
@@ -773,7 +767,7 @@ object pinCodeMod {
       def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       @scala.inline
-      def setChildren(value: js.UndefOr[ReactNode] with js.UndefOr[scala.Nothing]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.UndefOr[ReactNode] & js.UndefOr[scala.Nothing]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClearOnEscape(value: Boolean): Self = StObject.set(x, "clearOnEscape", value.asInstanceOf[js.Any])
@@ -917,7 +911,7 @@ object pinCodeMod {
       def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
       @scala.inline
-      def setOverrides(value: js.UndefOr[InputOverrides] with js.UndefOr[PinCodeOverrides]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      def setOverrides(value: js.UndefOr[InputOverrides] & js.UndefOr[PinCodeOverrides]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])

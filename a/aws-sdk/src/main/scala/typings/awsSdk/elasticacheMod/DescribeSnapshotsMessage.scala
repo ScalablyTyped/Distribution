@@ -2,46 +2,44 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotsMessage extends StObject {
   
   /**
     * A user-supplied cluster identifier. If this parameter is specified, only snapshots associated with that specific cluster are described.
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 50 Constraints: minimum 20; maximum 50.
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A user-supplied replication group identifier. If this parameter is specified, only snapshots associated with that specific replication group are described.
     */
-  var ReplicationGroupId: js.UndefOr[String] = js.native
+  var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value which if true, the node group (shard) configuration is included in the snapshot description.
     */
-  var ShowNodeGroupConfig: js.UndefOr[BooleanOptional] = js.native
+  var ShowNodeGroupConfig: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * A user-supplied name of the snapshot. If this parameter is specified, only this snapshot are described.
     */
-  var SnapshotName: js.UndefOr[String] = js.native
+  var SnapshotName: js.UndefOr[String] = js.undefined
   
   /**
     * If set to system, the output shows snapshots that were automatically created by ElastiCache. If set to user the output shows snapshots that were manually created. If omitted, the output shows both automatically and manually created snapshots.
     */
-  var SnapshotSource: js.UndefOr[String] = js.native
+  var SnapshotSource: js.UndefOr[String] = js.undefined
 }
 object DescribeSnapshotsMessage {
   

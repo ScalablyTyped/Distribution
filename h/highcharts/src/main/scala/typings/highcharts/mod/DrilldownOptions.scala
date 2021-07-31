@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrilldownOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait DrilldownOptions extends StObject {
     * In styled mode, active label styles can be set with the
     * `.highcharts-drilldown-axis-label` class.
     */
-  var activeAxisLabelStyle: js.UndefOr[CSSObject] = js.native
+  var activeAxisLabelStyle: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Additional styles to apply to the data label of a
@@ -27,14 +25,14 @@ trait DrilldownOptions extends StObject {
     * In styled mode, active data label styles can be applied with the
     * `.highcharts-drilldown-data-label` class.
     */
-  var activeDataLabelStyle: js.UndefOr[CSSObject | DrilldownActiveDataLabelStyleOptions] = js.native
+  var activeDataLabelStyle: js.UndefOr[CSSObject | DrilldownActiveDataLabelStyleOptions] = js.undefined
   
   /**
     * (Highcharts) When this option is false, clicking a single point will
     * drill down all points in the same category, equivalent to clicking the X
     * axis label.
     */
-  var allowPointDrilldown: js.UndefOr[Boolean] = js.native
+  var allowPointDrilldown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Set the animation for all drilldown animations.
@@ -53,14 +51,14 @@ trait DrilldownOptions extends StObject {
     * - `easing`: A string reference to an easing function set on the `Math`
     * object. See the easing demo.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Options for the drill up button that appears when
     * drilling down on a series. The text for the button is defined in
     * lang.drillUpText.
     */
-  var drillUpButton: js.UndefOr[DrilldownDrillUpButtonOptions] = js.native
+  var drillUpButton: js.UndefOr[DrilldownDrillUpButtonOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) An array of series configurations for the drill
@@ -68,7 +66,7 @@ trait DrilldownOptions extends StObject {
     * set. These drilldown series are hidden by default. The drilldown series
     * is linked to the parent series' point by its `id`.
     */
-  var series: js.UndefOr[js.Array[SeriesOptionsType]] = js.native
+  var series: js.UndefOr[js.Array[SeriesOptionsType]] = js.undefined
 }
 object DrilldownOptions {
   

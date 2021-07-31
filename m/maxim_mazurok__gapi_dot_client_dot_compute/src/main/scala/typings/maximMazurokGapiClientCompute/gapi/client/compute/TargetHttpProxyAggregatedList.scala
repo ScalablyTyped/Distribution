@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetHttpProxyAggregatedList extends StObject {
   
   /** [Output Only] Unique identifier for the resource; defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** A list of TargetHttpProxiesScopedList resources. */
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[js.Any]
+  ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#targetHttpProxyAggregatedList for lists of Target HTTP Proxies. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for list requests. If the number of results is larger than maxResults, use the nextPageToken as a value for the
     * query parameter pageToken in the next list request. Subsequent list requests will have their own nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Unreachable resources. */
-  var unreachables: js.UndefOr[js.Array[String]] = js.native
+  var unreachables: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TargetHttpProxyAggregatedList {
   
@@ -55,7 +53,7 @@ object TargetHttpProxyAggregatedList {
     def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetHttpProxiesScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetHttpProxyAggregatedList & TopLevel[js.Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,10 +2,8 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionDescriptor extends StObject {
   
   /**
@@ -17,43 +15,43 @@ trait IActionDescriptor extends StObject {
     * You can also create your own group.
     * Defaults to null (don't show in context menu).
     */
-  var contextMenuGroupId: js.UndefOr[String] = js.native
+  var contextMenuGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Control the order in the context menu group.
     */
-  var contextMenuOrder: js.UndefOr[Double] = js.native
+  var contextMenuOrder: js.UndefOr[Double] = js.undefined
   
   /**
     * An unique identifier of the contributed action.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The keybinding rule (condition on top of precondition).
     */
-  var keybindingContext: js.UndefOr[String] = js.native
+  var keybindingContext: js.UndefOr[String] = js.undefined
   
   /**
     * An array of keybindings for the action.
     */
-  var keybindings: js.UndefOr[js.Array[Double]] = js.native
+  var keybindings: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * A label of the action that will be presented to the user.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Precondition rule.
     */
-  var precondition: js.UndefOr[String] = js.native
+  var precondition: js.UndefOr[String] = js.undefined
   
   /**
     * Method that will be executed when the action is triggered.
     * @param editor The editor instance is passed in as a convenience
     */
-  def run(editor: ICodeEditor, args: js.Any*): Unit | js.Promise[Unit] = js.native
+  def run(editor: ICodeEditor, args: js.Any*): Unit | js.Promise[Unit]
 }
 object IActionDescriptor {
   

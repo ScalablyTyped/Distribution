@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.framearrived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Reads color frames from a color frame source. */
 @js.native
 trait PerceptionColorFrameReader extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_framearrived(
     `type`: framearrived,
@@ -27,12 +26,12 @@ trait PerceptionColorFrameReader extends StObject {
   var isPaused: Boolean = js.native
   
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the color frame source. */
-  def onframearrived(ev: PerceptionColorFrameArrivedEventArgs with WinRTEvent[PerceptionColorFrameReader]): Unit = js.native
+  def onframearrived(ev: PerceptionColorFrameArrivedEventArgs & WinRTEvent[PerceptionColorFrameReader]): Unit = js.native
   /** Subscribes to the FrameArrived event. This event is fired whenever a new frame arrives from the color frame source. */
   @JSName("onframearrived")
   var onframearrived_Original: TypedEventHandler[PerceptionColorFrameReader, PerceptionColorFrameArrivedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_framearrived(
     `type`: framearrived,

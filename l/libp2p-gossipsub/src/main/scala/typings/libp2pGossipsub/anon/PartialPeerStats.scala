@@ -4,22 +4,20 @@ import typings.libp2pGossipsub.peerStatsMod.TopicStats
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-stats.PeerStats> */
-@js.native
 trait PartialPeerStats extends StObject {
   
-  var behaviourPenalty: js.UndefOr[Double] = js.native
+  var behaviourPenalty: js.UndefOr[Double] = js.undefined
   
-  var connected: js.UndefOr[Boolean] = js.native
+  var connected: js.UndefOr[Boolean] = js.undefined
   
-  var expire: js.UndefOr[Double] = js.native
+  var expire: js.UndefOr[Double] = js.undefined
   
-  var ips: js.UndefOr[js.Array[String]] = js.native
+  var ips: js.UndefOr[js.Array[String]] = js.undefined
   
-  var topics: js.UndefOr[Record[String, TopicStats]] = js.native
+  var topics: js.UndefOr[Record[String, TopicStats]] = js.undefined
 }
 object PartialPeerStats {
   

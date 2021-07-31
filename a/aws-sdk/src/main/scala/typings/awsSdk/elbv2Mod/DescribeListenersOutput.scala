@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeListenersOutput extends StObject {
   
   /**
     * Information about the listeners.
     */
-  var Listeners: js.UndefOr[typings.awsSdk.elbv2Mod.Listeners] = js.native
+  var Listeners: js.UndefOr[typings.awsSdk.elbv2Mod.Listeners] = js.undefined
   
   /**
     * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object DescribeListenersOutput {
   

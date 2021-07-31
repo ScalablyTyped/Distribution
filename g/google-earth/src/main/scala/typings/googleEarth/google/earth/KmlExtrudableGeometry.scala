@@ -2,31 +2,31 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlExtrudableGeometry extends KmlAltitudeGeometry {
+trait KmlExtrudableGeometry
+  extends StObject
+     with KmlAltitudeGeometry {
   
   /**
     * Specifies whether to connect the geometry to the ground.
     */
-  def getExtrude(): Boolean = js.native
+  def getExtrude(): Boolean
   
   /**
     * Specifies whether to allow the geometry to follow the terrain elevation.
     */
-  def getTessellate(): Boolean = js.native
+  def getTessellate(): Boolean
   
   /**
     * Specifies whether to connect the geometry to the ground.
     */
-  def setExtrude(extrude: Boolean): Unit = js.native
+  def setExtrude(extrude: Boolean): Unit
   
   /**
     * Specifies whether to allow the geometry to follow the terrain elevation.
     */
-  def setTessellate(tessellate: Boolean): Unit = js.native
+  def setTessellate(tessellate: Boolean): Unit
 }
 object KmlExtrudableGeometry {
   

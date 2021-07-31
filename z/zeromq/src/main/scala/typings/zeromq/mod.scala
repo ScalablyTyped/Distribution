@@ -5,7 +5,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -111,9 +110,9 @@ object mod {
       * @return for chaining
       */
     def monitor(): Socket_ = js.native
-    def monitor(interval: js.UndefOr[scala.Nothing], numOfEvents: Double): Socket_ = js.native
     def monitor(interval: Double): Socket_ = js.native
     def monitor(interval: Double, numOfEvents: Double): Socket_ = js.native
+    def monitor(interval: Unit, numOfEvents: Double): Socket_ = js.native
     
     def pause(): Unit = js.native
     
@@ -141,8 +140,8 @@ object mod {
       */
     def send(msg: String): Socket_ = js.native
     def send(msg: String, flags: Double): Socket_ = js.native
-    def send(msg: js.Array[_]): Socket_ = js.native
-    def send(msg: js.Array[_], flags: Double): Socket_ = js.native
+    def send(msg: js.Array[js.Any]): Socket_ = js.native
+    def send(msg: js.Array[js.Any], flags: Double): Socket_ = js.native
     def send(msg: Buffer): Socket_ = js.native
     def send(msg: Buffer, flags: Double): Socket_ = js.native
     
@@ -418,16 +417,13 @@ object mod {
   @js.native
   val ZMQ_ZAP_DOMAIN: Double = js.native
   
-  @JSImport("zeromq", "createSocket")
-  @js.native
-  def createSocket(`type`: String): Socket_ = js.native
-  @JSImport("zeromq", "createSocket")
-  @js.native
-  def createSocket(`type`: String, options: js.Any): Socket_ = js.native
+  @scala.inline
+  def createSocket(`type`: String): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
+  @scala.inline
+  def createSocket(`type`: String, options: js.Any): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Socket_]
   
-  @JSImport("zeromq", "curveKeypair")
-  @js.native
-  def curveKeypair(): CurveKeyPair_ = js.native
+  @scala.inline
+  def curveKeypair(): CurveKeyPair_ = ^.asInstanceOf[js.Dynamic].applyDynamic("curveKeypair")().asInstanceOf[CurveKeyPair_]
   
   @JSImport("zeromq", "options")
   @js.native
@@ -435,25 +431,19 @@ object mod {
   @scala.inline
   def options_=(x: SocketOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
-  @JSImport("zeromq", "proxy")
-  @js.native
-  def proxy(frontend: Socket_, backend: Socket_): Unit = js.native
-  @JSImport("zeromq", "proxy")
-  @js.native
-  def proxy(frontend: Socket_, backend: Socket_, capture: Socket_): Unit = js.native
+  @scala.inline
+  def proxy(frontend: Socket_, backend: Socket_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(frontend.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def proxy(frontend: Socket_, backend: Socket_, capture: Socket_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(frontend.asInstanceOf[js.Any], backend.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("zeromq", "socket")
-  @js.native
-  def socket(`type`: String): Socket_ = js.native
-  @JSImport("zeromq", "socket")
-  @js.native
-  def socket(`type`: String, options: js.Any): Socket_ = js.native
-  @JSImport("zeromq", "socket")
-  @js.native
-  def socket(`type`: Double): Socket_ = js.native
-  @JSImport("zeromq", "socket")
-  @js.native
-  def socket(`type`: Double, options: js.Any): Socket_ = js.native
+  @scala.inline
+  def socket(`type`: String): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
+  @scala.inline
+  def socket(`type`: String, options: js.Any): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Socket_]
+  @scala.inline
+  def socket(`type`: Double): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
+  @scala.inline
+  def socket(`type`: Double, options: js.Any): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Socket_]
   
   @JSImport("zeromq", "types")
   @js.native
@@ -467,20 +457,19 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait CurveKeyPair_ extends StObject {
     
     /**
       * A Z85 string denoting the public portion of the Curve25519 key.
       *
       */
-    var public: String = js.native
+    var public: String
     
     /**
       * A Z85 string denoting the private, secret portion of the Curve25519 key.
       *
       */
-    var secret: String = js.native
+    var secret: String
   }
   object CurveKeyPair_ {
     
@@ -501,62 +490,61 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var _fd: Double = js.native
+    var _fd: Double
     
-    var _ioevents: Double = js.native
+    var _ioevents: Double
     
-    var _receiveMore: Double = js.native
+    var _receiveMore: Double
     
-    var _subscribe: Double = js.native
+    var _subscribe: Double
     
-    var _unsubscribe: Double = js.native
+    var _unsubscribe: Double
     
-    var affinity: Double = js.native
+    var affinity: Double
     
-    var backlog: Double = js.native
+    var backlog: Double
     
-    var curve_publickey: Double = js.native
+    var curve_publickey: Double
     
-    var curve_secretkey: Double = js.native
+    var curve_secretkey: Double
     
-    var curve_server: Double = js.native
+    var curve_server: Double
     
-    var curve_serverkey: Double = js.native
+    var curve_serverkey: Double
     
-    var hwm: Double = js.native
+    var hwm: Double
     
-    var identity: Double = js.native
+    var identity: Double
     
-    var last_endpoint: Double = js.native
+    var last_endpoint: Double
     
-    var linger: Double = js.native
+    var linger: Double
     
-    var mcast_loop: Double = js.native
+    var mcast_loop: Double
     
-    var mechanism: Double = js.native
+    var mechanism: Double
     
-    var plain_password: Double = js.native
+    var plain_password: Double
     
-    var plain_server: Double = js.native
+    var plain_server: Double
     
-    var plain_username: Double = js.native
+    var plain_username: Double
     
-    var rate: Double = js.native
+    var rate: Double
     
-    var rcvbuf: Double = js.native
+    var rcvbuf: Double
     
-    var reconnect_ivl: Double = js.native
+    var reconnect_ivl: Double
     
-    var recovery_ivl: Double = js.native
+    var recovery_ivl: Double
     
-    var sndbuf: Double = js.native
+    var sndbuf: Double
     
-    var swap: Double = js.native
+    var swap: Double
     
-    var zap_domain: Double = js.native
+    var zap_domain: Double
   }
   object SocketOptions {
     
@@ -680,36 +668,35 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketTypes extends StObject {
     
-    var dealer: Double = js.native
+    var dealer: Double
     
-    var pair: Double = js.native
+    var pair: Double
     
-    var pub: Double = js.native
+    var pub: Double
     
-    var pull: Double = js.native
+    var pull: Double
     
-    var push: Double = js.native
+    var push: Double
     
-    var rep: Double = js.native
+    var rep: Double
     
-    var req: Double = js.native
+    var req: Double
     
-    var router: Double = js.native
+    var router: Double
     
-    var stream: Double = js.native
+    var stream: Double
     
-    var sub: Double = js.native
+    var sub: Double
     
-    var xpub: Double = js.native
+    var xpub: Double
     
-    var xrep: Double = js.native
+    var xrep: Double
     
-    var xreq: Double = js.native
+    var xreq: Double
     
-    var xsub: Double = js.native
+    var xsub: Double
   }
   object SocketTypes {
     

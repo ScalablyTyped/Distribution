@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerListViewModelTriggerActionEvent extends StObject {
   
-  var action: ActionButton | ActionToggle = js.native
+  var action: ActionButton | ActionToggle
   
-  var item: ListItem = js.native
+  var item: ListItem
 }
 object LayerListViewModelTriggerActionEvent {
   

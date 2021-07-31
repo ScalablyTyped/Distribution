@@ -22,7 +22,6 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -271,8 +270,8 @@ trait Bucket extends EventEmitter {
     */
   def query(query: N1qlQuery): N1qlQueryResponse = js.native
   def query(query: N1qlQuery, callback: N1qlQueryCallback): N1qlQueryResponse = js.native
-  def query(query: N1qlQuery, params: js.Array[_]): N1qlQueryResponse = js.native
-  def query(query: N1qlQuery, params: js.Array[_], callback: N1qlQueryCallback): N1qlQueryResponse = js.native
+  def query(query: N1qlQuery, params: js.Array[js.Any]): N1qlQueryResponse = js.native
+  def query(query: N1qlQuery, params: js.Array[js.Any], callback: N1qlQueryCallback): N1qlQueryResponse = js.native
   /**
     * Executes a previously prepared query object.
     * @param query The query to execute.
@@ -408,7 +407,6 @@ object Bucket {
     * The CAS value is a special object that indicates the current state of the item on the server. Each time an object is mutated on the server, the value is changed. CAS objects can be used in conjunction with mutation operations to ensure that the value on the server matches the local value retrieved by the client. This is useful when doing document updates on the server as you can ensure no changes were applied by other clients while you were in the process of mutating the document locally.
     * In the Node.js SDK, the CAS is represented as an opaque value. As such, you cannot generate CAS objects, but should rather use the values returned from a Bucket.OpCallback.
     */
-  @js.native
   trait CAS extends StObject
   
   /**
@@ -446,7 +444,7 @@ object Bucket {
     @JSName("addListener")
     def addListener_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[_], /* meta */ Meta, Unit]): this.type = js.native
+    def addListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("on")
     def on_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
@@ -455,7 +453,7 @@ object Bucket {
     @JSName("on")
     def on_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("on")
-    def on_rows(event: rows, listener: js.Function2[/* rows */ js.Array[_], /* meta */ Meta, Unit]): this.type = js.native
+    def on_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("once")
     def once_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
@@ -464,7 +462,7 @@ object Bucket {
     @JSName("once")
     def once_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("once")
-    def once_rows(event: rows, listener: js.Function2[/* rows */ js.Array[_], /* meta */ Meta, Unit]): this.type = js.native
+    def once_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("prependListener")
     def prependListener_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
@@ -473,7 +471,7 @@ object Bucket {
     @JSName("prependListener")
     def prependListener_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[_], /* meta */ Meta, Unit]): this.type = js.native
+    def prependListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_end(event: end, listener: js.Function1[/* meta */ Meta, Unit]): this.type = js.native
@@ -482,47 +480,46 @@ object Bucket {
     @JSName("prependOnceListener")
     def prependOnceListener_row(event: row, listener: js.Function2[/* row */ js.Any, /* meta */ Meta, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[_], /* meta */ Meta, Unit]): this.type = js.native
+    def prependOnceListener_rows(event: rows, listener: js.Function2[/* rows */ js.Array[js.Any], /* meta */ Meta, Unit]): this.type = js.native
   }
   object FtsQueryResponse {
     
     /**
       * The meta-information available from a search query response.
       */
-    @js.native
     trait Meta extends StObject {
       
       /**
         * Any non-fatal errors that occurred during query processing.
         */
-      var errors: js.Any = js.native
+      var errors: js.Any
       
       /**
         * The resulting facet information for any facets that were specified
         * in the search query.
         */
-      var facets: js.Any = js.native
+      var facets: js.Any
       
       /**
         * The maximum score out of all the results in this query.
         */
-      var maxScore: Double = js.native
+      var maxScore: Double
       
       /**
         * The status information for this query, includes properties
         * such as total, failed, and successful.
         */
-      var status: js.Any = js.native
+      var status: js.Any
       
       /**
         * The time spent processing this query.
         */
-      var took: Double = js.native
+      var took: Double
       
       /**
         * The total number of hits that were available for this search query.
         */
-      var totalHits: Double = js.native
+      var totalHits: Double
     }
     object Meta {
       
@@ -598,7 +595,7 @@ object Bucket {
     def addListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -624,7 +621,7 @@ object Bucket {
     def on_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -650,7 +647,7 @@ object Bucket {
     def once_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -676,7 +673,7 @@ object Bucket {
     def prependListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -702,7 +699,7 @@ object Bucket {
     def prependOnceListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta, 
           Unit
         ]
@@ -713,13 +710,12 @@ object Bucket {
     /**
       * The meta-information available from a view query response.
       */
-    @js.native
     trait Meta extends StObject {
       
       /**
         * The identifier for this query request.
         */
-      var requestID: Double = js.native
+      var requestID: Double
     }
     object Meta {
       
@@ -781,7 +777,7 @@ object Bucket {
     def addListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -807,7 +803,7 @@ object Bucket {
     def on_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -833,7 +829,7 @@ object Bucket {
     def once_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -859,7 +855,7 @@ object Bucket {
     def prependListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -885,7 +881,7 @@ object Bucket {
     def prependOnceListener_rows(
       event: rows,
       listener: js.Function2[
-          /* rows */ js.Array[_], 
+          /* rows */ js.Array[js.Any], 
           /* meta */ typings.couchbase.mod.Bucket.ViewQueryResponse.Meta, 
           Unit
         ]
@@ -896,13 +892,12 @@ object Bucket {
     /**
       * The meta-information available from a view query response.
       */
-    @js.native
     trait Meta extends StObject {
       
       /**
         * The total number of rows available in the index of the view that was queried.
         */
-      var total_rows: Double = js.native
+      var total_rows: Double
     }
     object Meta {
       

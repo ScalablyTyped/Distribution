@@ -5,32 +5,32 @@ import typings.mobx.observableobjectMod.IObjectDidChange
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Type[T] extends IObjectDidChange[T] {
+trait Type[T]
+  extends StObject
+     with IObjectDidChange[T] {
   
-  var name: PropertyKey = js.native
+  var name: PropertyKey
   
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
-  var `object`: T = js.native
+  var `object`: T
   
-  var `type`: add = js.native
+  var `type`: add
 }
 object Type {
   
   @scala.inline
-  def apply[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: add): Type[T] = {
+  def apply[T](name: PropertyKey, newValue: js.Any, `object`: T): Type[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("add")
     __obj.asInstanceOf[Type[T]]
   }
   
   @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[_], T] (val x: Self with Type[T]) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type[?], T] (val x: Self & Type[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

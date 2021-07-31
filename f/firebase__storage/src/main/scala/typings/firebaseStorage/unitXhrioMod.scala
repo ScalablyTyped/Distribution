@@ -7,7 +7,6 @@ import typings.std.ArrayBufferView
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitXhrioMod {
@@ -19,24 +18,32 @@ object unitXhrioMod {
   object State extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[State with Double] = js.native
+    def apply(value: Double): js.UndefOr[State & Double] = js.native
     
     @js.native
-    sealed trait DONE extends State
-    /* 2 */ val DONE: typings.firebaseStorage.unitXhrioMod.State.DONE with Double = js.native
+    sealed trait DONE
+      extends StObject
+         with State
+    /* 2 */ val DONE: typings.firebaseStorage.unitXhrioMod.State.DONE & Double = js.native
     
     @js.native
-    sealed trait SENT extends State
-    /* 1 */ val SENT: typings.firebaseStorage.unitXhrioMod.State.SENT with Double = js.native
+    sealed trait SENT
+      extends StObject
+         with State
+    /* 1 */ val SENT: typings.firebaseStorage.unitXhrioMod.State.SENT & Double = js.native
     
     @js.native
-    sealed trait START extends State
-    /* 0 */ val START: typings.firebaseStorage.unitXhrioMod.State.START with Double = js.native
+    sealed trait START
+      extends StObject
+         with State
+    /* 0 */ val START: typings.firebaseStorage.unitXhrioMod.State.START & Double = js.native
   }
   
   @JSImport("@firebase/storage/dist/test/unit/xhrio", "TestingXhrIo")
   @js.native
-  class TestingXhrIo () extends XhrIo {
+  class TestingXhrIo ()
+    extends StObject
+       with XhrIo {
     def this(sendHook: SendHook) = this()
     
     def addUploadProgressListener(): Unit = js.native

@@ -10,15 +10,15 @@ Is this value a JS regex? Works cross-realm/iframe, and despite ES6 @@toStringTa
 | ------------------ | :-------------: |
 | Full name          | is-regex |
 | Keywords           | regex, regexp, is, regular expression, regular, expression |
-| # releases         | 4 |
-| # dependents       | 93 |
-| # downloads        | 681494459 |
+| # releases         | 3 |
+| # dependents       | 131 |
+| # downloads        | 872005608 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/is-regex)
-- [Bugs](https://github.com/ljharb/is-regex/issues)
-- [Repository](https://github.com/ljharb/is-regex)
+- [Homepage](https://github.com/inspect-js/is-regex)
+- [Bugs](https://github.com/inspect-js/is-regex/issues)
+- [Repository](https://github.com/inspect-js/is-regex)
 - [Npm](https://www.npmjs.com/package/is-regex)
     
 

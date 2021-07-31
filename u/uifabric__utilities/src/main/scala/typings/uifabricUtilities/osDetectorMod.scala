@@ -2,15 +2,16 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osDetectorMod {
   
-  @JSImport("@uifabric/utilities/lib/osDetector", "isMac")
+  @JSImport("@uifabric/utilities/lib/osDetector", JSImport.Namespace)
   @js.native
-  def isMac(): Boolean = js.native
-  @JSImport("@uifabric/utilities/lib/osDetector", "isMac")
-  @js.native
-  def isMac(reset: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isMac(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")().asInstanceOf[Boolean]
+  @scala.inline
+  def isMac(reset: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMac")(reset.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

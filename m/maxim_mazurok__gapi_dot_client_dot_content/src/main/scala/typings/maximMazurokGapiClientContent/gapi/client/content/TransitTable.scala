@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitTable extends StObject {
   
   /**
     * A list of postal group names. The last value can be `"all other locations"`. Example: `["zone 1", "zone 2", "all other locations"]`. The referred postal code groups must match the
     * delivery country of the service.
     */
-  var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.native
+  var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var rows: js.UndefOr[js.Array[TransitTableTransitTimeRow]] = js.native
+  var rows: js.UndefOr[js.Array[TransitTableTransitTimeRow]] = js.undefined
   
   /** A list of transit time labels. The last value can be `"all other labels"`. Example: `["food", "electronics", "all other labels"]`. */
-  var transitTimeLabels: js.UndefOr[js.Array[String]] = js.native
+  var transitTimeLabels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TransitTable {
   

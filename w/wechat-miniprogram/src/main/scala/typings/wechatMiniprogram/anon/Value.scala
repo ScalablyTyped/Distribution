@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /** 选中的 checkbox 的 value 的数组 */
-  var value: js.Array[String] = js.native
+  var value: js.Array[String]
 }
 object Value {
   

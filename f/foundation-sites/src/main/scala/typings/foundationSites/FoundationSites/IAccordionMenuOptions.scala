@@ -2,15 +2,13 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccordionMenuOptions extends StObject {
   
-  var multiOpen: js.UndefOr[Boolean] = js.native
+  var multiOpen: js.UndefOr[Boolean] = js.undefined
   
-  var slideSpeed: js.UndefOr[Double] = js.native
+  var slideSpeed: js.UndefOr[Double] = js.undefined
 }
 object IAccordionMenuOptions {
   

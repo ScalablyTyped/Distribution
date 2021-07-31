@@ -9,39 +9,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.triangle
 import typings.arcgisJsApi.arcgisJsApiStrings.x
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleMarkerSymbolProperties extends MarkerSymbolProperties {
+trait SimpleMarkerSymbolProperties
+  extends StObject
+     with MarkerSymbolProperties {
   
   /**
     * The outline of the marker symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline)
     */
-  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.native
+  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
     * The SVG path of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the marker in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
     */
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The marker style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
     */
-  var style: js.UndefOr[circle | square | cross | x | diamond | triangle | path] = js.native
+  var style: js.UndefOr[circle | square | cross | x | diamond | triangle | path] = js.undefined
 }
 object SimpleMarkerSymbolProperties {
   

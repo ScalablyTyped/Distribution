@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSchemaRequest extends StObject {
   
   /**
     * The name for the schema.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * A schema in Avro JSON format.
     */
-  var schema: AvroSchema = js.native
+  var schema: AvroSchema
 }
 object CreateSchemaRequest {
   

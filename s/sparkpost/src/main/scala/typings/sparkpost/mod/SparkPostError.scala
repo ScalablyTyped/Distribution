@@ -3,29 +3,24 @@ package typings.sparkpost.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SparkPostError extends Error {
+trait SparkPostError
+  extends StObject
+     with Error {
   
-  var errors: js.Array[ErrorWithDescription | ErrorWithParam] = js.native
+  var errors: js.Array[ErrorWithDescription | ErrorWithParam]
   
   @JSName("name")
-  var name_SparkPostError: typings.sparkpost.sparkpostStrings.SparkPostError = js.native
+  var name_SparkPostError: typings.sparkpost.sparkpostStrings.SparkPostError
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object SparkPostError {
   
   @scala.inline
-  def apply(
-    errors: js.Array[ErrorWithDescription | ErrorWithParam],
-    message: String,
-    name: typings.sparkpost.sparkpostStrings.SparkPostError,
-    statusCode: Double
-  ): SparkPostError = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+  def apply(errors: js.Array[ErrorWithDescription | ErrorWithParam], message: String, statusCode: Double): SparkPostError = {
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = "SparkPostError", statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparkPostError]
   }
   

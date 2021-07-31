@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientSMSAuthentication extends StObject {
   
   /**
     * An array containing a list of phone numbers that the recipient can use for SMS text authentication.
     */
-  var senderProvidedNumbers: js.UndefOr[js.Array[String]] = js.native
+  var senderProvidedNumbers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Metadata that indicates whether the `senderProvidedNumbers` property can be edited.
     */
-  var senderProvidedNumbersMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var senderProvidedNumbersMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object RecipientSMSAuthentication {
   

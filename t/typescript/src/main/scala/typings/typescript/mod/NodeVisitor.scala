@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -10,26 +9,15 @@ trait NodeVisitor extends StObject {
   
   def apply[T /* <: Node */](): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](nodes: T): T = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = js.native
   def apply[T /* <: Node */](
     nodes: T,
-    visitor: js.UndefOr[scala.Nothing],
-    test: js.UndefOr[scala.Nothing],
-    lift: js.Function1[/* node */ NodeArray[Node], T]
-  ): T = js.native
-  def apply[T /* <: Node */](nodes: T, visitor: js.UndefOr[scala.Nothing], test: js.Function1[/* node */ Node, Boolean]): T = js.native
-  def apply[T /* <: Node */](
-    nodes: T,
-    visitor: js.UndefOr[scala.Nothing],
+    visitor: Unit,
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): T = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ NodeArray[Node], T]): T = js.native
   def apply[T /* <: Node */](nodes: T, visitor: Visitor): T = js.native
-  def apply[T /* <: Node */](
-    nodes: T,
-    visitor: Visitor,
-    test: js.UndefOr[scala.Nothing],
-    lift: js.Function1[/* node */ NodeArray[Node], T]
-  ): T = js.native
   def apply[T /* <: Node */](nodes: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = js.native
   def apply[T /* <: Node */](
     nodes: T,
@@ -37,35 +25,22 @@ trait NodeVisitor extends StObject {
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): T = js.native
+  def apply[T /* <: Node */](nodes: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ NodeArray[Node], T]): T = js.native
+  def apply[T /* <: Node */](nodes: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
-    visitor: js.UndefOr[scala.Nothing],
-    test: js.UndefOr[scala.Nothing],
-    lift: js.Function1[/* node */ NodeArray[Node], T]
-  ): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
-    visitor: js.UndefOr[scala.Nothing],
-    test: js.Function1[/* node */ Node, Boolean]
-  ): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
-    visitor: js.UndefOr[scala.Nothing],
+    nodes: Unit,
+    visitor: Unit,
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, lift: js.Function1[/* node */ NodeArray[Node], T]): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: Unit, visitor: Visitor): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
   def apply[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
-    visitor: Visitor,
-    test: js.UndefOr[scala.Nothing],
-    lift: js.Function1[/* node */ NodeArray[Node], T]
-  ): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](nodes: js.UndefOr[scala.Nothing], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
-  def apply[T /* <: Node */](
-    nodes: js.UndefOr[scala.Nothing],
+    nodes: Unit,
     visitor: Visitor,
     test: js.Function1[/* node */ Node, Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): js.UndefOr[T] = js.native
+  def apply[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ NodeArray[Node], T]): js.UndefOr[T] = js.native
 }

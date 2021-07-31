@@ -2,16 +2,16 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlColorStyle extends KmlObject {
+trait KmlColorStyle
+  extends StObject
+     with KmlObject {
   
   /**
     * Color and opacity (alpha) values.
     */
-  def getColor(): KmlColor = js.native
+  def getColor(): KmlColor
   
   /**
     * Specifies which color mode effect to apply to the base color.
@@ -22,7 +22,7 @@ trait KmlColorStyle extends KmlObject {
     * * GEPlugin.COLOR_INHERIT
     * * GEPlugin.COLOR_RANDOM
     */
-  def getColorMode(): KmlColorModeEnum = js.native
+  def getColorMode(): KmlColorModeEnum
   
   /**
     * Specifies which color mode effect to apply to the base color.
@@ -33,7 +33,7 @@ trait KmlColorStyle extends KmlObject {
     * * GEPlugin.COLOR_INHERIT
     * * GEPlugin.COLOR_RANDOM
     */
-  def setColorMode(colorMode: KmlColorModeEnum): Unit = js.native
+  def setColorMode(colorMode: KmlColorModeEnum): Unit
 }
 object KmlColorStyle {
   

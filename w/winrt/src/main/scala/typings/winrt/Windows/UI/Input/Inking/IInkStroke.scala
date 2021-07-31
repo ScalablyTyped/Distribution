@@ -4,21 +4,19 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkStroke extends StObject {
   
-  var boundingRect: Rect = js.native
+  var boundingRect: Rect
   
-  var drawingAttributes: InkDrawingAttributes = js.native
+  var drawingAttributes: InkDrawingAttributes
   
-  def getRenderingSegments(): IVectorView[InkStrokeRenderingSegment] = js.native
+  def getRenderingSegments(): IVectorView[InkStrokeRenderingSegment]
   
-  var recognized: Boolean = js.native
+  var recognized: Boolean
   
-  var selected: Boolean = js.native
+  var selected: Boolean
 }
 object IInkStroke {
   

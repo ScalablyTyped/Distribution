@@ -6,55 +6,53 @@ import typings.chrome.chrome.serial.DeviceInfo
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofserial extends StObject {
   
-  val DataBits: EIGHT = js.native
+  val DataBits: EIGHT
   
-  val ParityBit: EVEN = js.native
+  val ParityBit: EVEN
   
-  val StopBits: ONE = js.native
+  val StopBits: ONE
   
-  def clearBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  def clearBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit
   
   def connect(
     path: String,
     options: ConnectionOptions,
     callback: js.Function1[/* connectionInfo */ ConnectionInfo, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  def disconnect(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  def disconnect(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit
   
-  def flush(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  def flush(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit
   
-  def getConnections(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit = js.native
+  def getConnections(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit
   
-  def getControlSignals(connectionId: Double, callback: js.Function1[/* signals */ js.Object, Unit]): Unit = js.native
+  def getControlSignals(connectionId: Double, callback: js.Function1[/* signals */ js.Object, Unit]): Unit
   
-  def getDevices(callback: js.Function1[/* ports */ js.Array[DeviceInfo], Unit]): Unit = js.native
+  def getDevices(callback: js.Function1[/* ports */ js.Array[DeviceInfo], Unit]): Unit
   
-  def getInfo(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit = js.native
+  def getInfo(callback: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit]): Unit
   
-  val onReceive: TypeofonReceive = js.native
+  val onReceive: TypeofonReceive
   
-  val onReceiveError: TypeofonReceiveError = js.native
+  val onReceiveError: TypeofonReceiveError
   
-  def send(connectionId: Double, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ js.Object, Unit]): Unit = js.native
+  def send(connectionId: Double, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ js.Object, Unit]): Unit
   
-  def setBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  def setBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit
   
-  def setControlSignals(connectionId: Double, signals: js.Object, callback: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  def setControlSignals(connectionId: Double, signals: js.Object, callback: js.Function1[/* result */ Boolean, Unit]): Unit
   
-  def setPaused(connectionId: Double, paused: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  def setPaused(connectionId: Double, paused: Boolean, callback: js.Function0[Unit]): Unit
   
   def update(
     connectionId: Double,
     options: ConnectionOptions,
     callback: js.Function1[/* result */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object Typeofserial {
   

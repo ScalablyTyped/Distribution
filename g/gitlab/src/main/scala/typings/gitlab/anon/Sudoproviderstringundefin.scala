@@ -2,16 +2,14 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined gitlab.gitlab/dist/types/core/infrastructure.Sudo & {  provider :string | undefined} */
-@js.native
 trait Sudoproviderstringundefin extends StObject {
   
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object Sudoproviderstringundefin {
   

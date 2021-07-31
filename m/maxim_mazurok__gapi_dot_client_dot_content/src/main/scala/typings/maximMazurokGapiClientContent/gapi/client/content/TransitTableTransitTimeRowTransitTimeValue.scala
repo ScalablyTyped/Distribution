@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitTableTransitTimeRowTransitTimeValue extends StObject {
   
   /** Must be greater than or equal to `minTransitTimeInDays`. */
-  var maxTransitTimeInDays: js.UndefOr[Double] = js.native
+  var maxTransitTimeInDays: js.UndefOr[Double] = js.undefined
   
   /** Transit time range (min-max) in business days. 0 means same day delivery, 1 means next day delivery. */
-  var minTransitTimeInDays: js.UndefOr[Double] = js.native
+  var minTransitTimeInDays: js.UndefOr[Double] = js.undefined
 }
 object TransitTableTransitTimeRowTransitTimeValue {
   

@@ -3,15 +3,13 @@ package typings.googleAuthLibrary.oauth2clientMod
 import typings.gaxios.commonMod.GaxiosResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessTokenResponse extends StObject {
   
-  var res: js.UndefOr[GaxiosResponse[_] | Null] = js.native
+  var res: js.UndefOr[GaxiosResponse[js.Any] | Null] = js.undefined
   
-  var token: js.UndefOr[String | Null] = js.native
+  var token: js.UndefOr[String | Null] = js.undefined
 }
 object GetAccessTokenResponse {
   
@@ -25,7 +23,7 @@ object GetAccessTokenResponse {
   implicit class GetAccessTokenResponseMutableBuilder[Self <: GetAccessTokenResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setRes(value: GaxiosResponse[_]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResNull: Self = StObject.set(x, "res", null)

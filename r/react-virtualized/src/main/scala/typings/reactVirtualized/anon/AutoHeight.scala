@@ -10,45 +10,38 @@ import typings.reactVirtualized.reactVirtualizedNumbers.`30`
 import typings.reactVirtualized.reactVirtualizedStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHeight extends StObject {
   
-  var autoHeight: `false` = js.native
+  var autoHeight: `false`
   
-  var estimatedRowSize: `30` = js.native
+  var estimatedRowSize: `30`
   
-  def noRowsRenderer(): Null = js.native
+  def noRowsRenderer(): Null
   
-  def onRowsRendered(): Unit = js.native
+  def onRowsRendered(): Unit
   
-  def onScroll(): Unit = js.native
+  def onScroll(): Unit
   
-  var overscanIndicesGetter: OverscanIndicesGetter = js.native
+  var overscanIndicesGetter: OverscanIndicesGetter
   
-  var overscanRowCount: `10` = js.native
+  var overscanRowCount: `10`
   
-  var scrollToAlignment: auto = js.native
+  var scrollToAlignment: auto
   
-  var scrollToIndex: `-1` = js.native
+  var scrollToIndex: `-1`
 }
 object AutoHeight {
   
   @scala.inline
   def apply(
-    autoHeight: `false`,
-    estimatedRowSize: `30`,
     noRowsRenderer: () => Null,
     onRowsRendered: () => Unit,
     onScroll: () => Unit,
-    overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices,
-    overscanRowCount: `10`,
-    scrollToAlignment: auto,
-    scrollToIndex: `-1`
+    overscanIndicesGetter: /* params */ OverscanIndicesGetterParams => OverscanIndices
   ): AutoHeight = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], estimatedRowSize = estimatedRowSize.asInstanceOf[js.Any], noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = overscanRowCount.asInstanceOf[js.Any], scrollToAlignment = scrollToAlignment.asInstanceOf[js.Any], scrollToIndex = scrollToIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoHeight = false, estimatedRowSize = 30, noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanIndicesGetter = js.Any.fromFunction1(overscanIndicesGetter), overscanRowCount = 10, scrollToAlignment = "auto", scrollToIndex = -1)
     __obj.asInstanceOf[AutoHeight]
   }
   

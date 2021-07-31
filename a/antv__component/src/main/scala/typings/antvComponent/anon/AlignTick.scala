@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignTick extends StObject {
   
-  var alignTick: Boolean = js.native
+  var alignTick: Boolean
   
-  var displayWithLabel: Boolean = js.native
+  var displayWithLabel: Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  var style: Stroke = js.native
+  var style: Stroke
 }
 object AlignTick {
   

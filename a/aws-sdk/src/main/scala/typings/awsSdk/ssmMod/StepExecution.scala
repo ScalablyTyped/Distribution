@@ -2,121 +2,119 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepExecution extends StObject {
   
   /**
     * The action this step performs. The action determines the behavior of the step.
     */
-  var Action: js.UndefOr[AutomationActionName] = js.native
+  var Action: js.UndefOr[AutomationActionName] = js.undefined
   
   /**
     * If a step has finished execution, this contains the time the execution ended. If the step has not yet concluded, this field is not populated.
     */
-  var ExecutionEndTime: js.UndefOr[DateTime] = js.native
+  var ExecutionEndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * If a step has begun execution, this contains the time the step started. If the step is in Pending status, this field is not populated.
     */
-  var ExecutionStartTime: js.UndefOr[DateTime] = js.native
+  var ExecutionStartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Information about the Automation failure.
     */
-  var FailureDetails: js.UndefOr[typings.awsSdk.ssmMod.FailureDetails] = js.native
+  var FailureDetails: js.UndefOr[typings.awsSdk.ssmMod.FailureDetails] = js.undefined
   
   /**
     * If a step failed, this message explains why the execution failed.
     */
-  var FailureMessage: js.UndefOr[String] = js.native
+  var FailureMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Fully-resolved values passed into the step before execution.
     */
-  var Inputs: js.UndefOr[NormalStringMap] = js.native
+  var Inputs: js.UndefOr[NormalStringMap] = js.undefined
   
   /**
     * The flag which can be used to help decide whether the failure of current step leads to the Automation failure.
     */
-  var IsCritical: js.UndefOr[Boolean] = js.native
+  var IsCritical: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The flag which can be used to end automation no matter whether the step succeeds or fails.
     */
-  var IsEnd: js.UndefOr[Boolean] = js.native
+  var IsEnd: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of tries to run the action of the step. The default value is 1.
     */
-  var MaxAttempts: js.UndefOr[Integer] = js.native
+  var MaxAttempts: js.UndefOr[Integer] = js.undefined
   
   /**
     * The next step after the step succeeds.
     */
-  var NextStep: js.UndefOr[String] = js.native
+  var NextStep: js.UndefOr[String] = js.undefined
   
   /**
     * The action to take if the step fails. The default value is Abort.
     */
-  var OnFailure: js.UndefOr[String] = js.native
+  var OnFailure: js.UndefOr[String] = js.undefined
   
   /**
     * Returned values from the execution of the step.
     */
-  var Outputs: js.UndefOr[AutomationParameterMap] = js.native
+  var Outputs: js.UndefOr[AutomationParameterMap] = js.undefined
   
   /**
     * A user-specified list of parameters to override when running a step.
     */
-  var OverriddenParameters: js.UndefOr[AutomationParameterMap] = js.native
+  var OverriddenParameters: js.UndefOr[AutomationParameterMap] = js.undefined
   
   /**
     * A message associated with the response code for an execution.
     */
-  var Response: js.UndefOr[String] = js.native
+  var Response: js.UndefOr[String] = js.undefined
   
   /**
     * The response code returned by the execution of the step.
     */
-  var ResponseCode: js.UndefOr[String] = js.native
+  var ResponseCode: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of a step execution.
     */
-  var StepExecutionId: js.UndefOr[String] = js.native
+  var StepExecutionId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this execution step.
     */
-  var StepName: js.UndefOr[String] = js.native
+  var StepName: js.UndefOr[String] = js.undefined
   
   /**
     * The execution status for this step.
     */
-  var StepStatus: js.UndefOr[AutomationExecutionStatus] = js.native
+  var StepStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
   
   /**
     * The combination of AWS Regions and accounts targeted by the current Automation execution.
     */
-  var TargetLocation: js.UndefOr[typings.awsSdk.ssmMod.TargetLocation] = js.native
+  var TargetLocation: js.UndefOr[typings.awsSdk.ssmMod.TargetLocation] = js.undefined
   
   /**
     * The targets for the step execution.
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
   /**
     * The timeout seconds of the step.
     */
-  var TimeoutSeconds: js.UndefOr[Long] = js.native
+  var TimeoutSeconds: js.UndefOr[Long] = js.undefined
   
   /**
     * Strategies used when step fails, we support Continue and Abort. Abort will fail the automation when the step fails. Continue will ignore the failure of current step and allow automation to run the next step. With conditional branching, we add step:stepName to support the automation to go to another specific step.
     */
-  var ValidNextSteps: js.UndefOr[ValidNextStepList] = js.native
+  var ValidNextSteps: js.UndefOr[ValidNextStepList] = js.undefined
 }
 object StepExecution {
   

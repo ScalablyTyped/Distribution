@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationDnsKeyContext extends StObject {
   
   /** The post-operation DnsKey resource. */
-  var newValue: js.UndefOr[DnsKey] = js.native
+  var newValue: js.UndefOr[DnsKey] = js.undefined
   
   /** The pre-operation DnsKey resource. */
-  var oldValue: js.UndefOr[DnsKey] = js.native
+  var oldValue: js.UndefOr[DnsKey] = js.undefined
 }
 object OperationDnsKeyContext {
   

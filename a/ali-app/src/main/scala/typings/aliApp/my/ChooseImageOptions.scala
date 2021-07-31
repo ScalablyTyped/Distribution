@@ -3,22 +3,21 @@ package typings.aliApp.my
 import typings.aliApp.anon.ApFilePaths
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseImageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 最大可选照片数，默认1张 */
-  var count: Double = js.native
+  var count: Double
   
   /** 相册选取或者拍照，默认 [‘camera’,‘album’] */
-  var sourceType: js.Array[ImageSourceType] = js.native
+  var sourceType: js.Array[ImageSourceType]
   
   /** 成功则返回图片的本地文件路径列表 tempFilePaths */
   @JSName("success")
-  def success_MChooseImageOptions(res: ApFilePaths): Unit = js.native
+  def success_MChooseImageOptions(res: ApFilePaths): Unit
 }
 object ChooseImageOptions {
   

@@ -2,19 +2,19 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameter to be passed to the vread API method
   */
-@js.native
-trait VersionReadParams extends ReadParams {
+trait VersionReadParams
+  extends StObject
+     with ReadParams {
   
   /**
     * Version ID of the resource to be fetched
     */
-  var versionId: String = js.native
+  var versionId: String
 }
 object VersionReadParams {
   

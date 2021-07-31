@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SchedulingGroup extends ChangeTrackedEntity {
+trait SchedulingGroup
+  extends StObject
+     with ChangeTrackedEntity {
   
   // The display name for the schedulingGroup. Required.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether the schedulingGroup can be used when creating new entities or updating existing ones. Required.
-  var isActive: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isActive: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The list of user IDs that are a member of the schedulingGroup. Required.
-  var userIds: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var userIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object SchedulingGroup {
   

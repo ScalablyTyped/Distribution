@@ -2,13 +2,11 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortHandle[TReturn] extends StObject {
   
-  def abort(): TReturn = js.native
+  def abort(): TReturn
 }
 object AbortHandle {
   
@@ -19,7 +17,7 @@ object AbortHandle {
   }
   
   @scala.inline
-  implicit class AbortHandleMutableBuilder[Self <: AbortHandle[_], TReturn] (val x: Self with AbortHandle[TReturn]) extends AnyVal {
+  implicit class AbortHandleMutableBuilder[Self <: AbortHandle[?], TReturn] (val x: Self & AbortHandle[TReturn]) extends AnyVal {
     
     @scala.inline
     def setAbort(value: () => TReturn): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))

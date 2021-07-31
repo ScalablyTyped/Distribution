@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessageEventInit[T] extends EventInit {
+trait MessageEventInit[T]
+  extends StObject
+     with EventInit {
   
-  var data: js.UndefOr[T] = js.native
+  var data: js.UndefOr[T] = js.undefined
   
-  var lastEventId: js.UndefOr[java.lang.String] = js.native
+  var lastEventId: js.UndefOr[java.lang.String] = js.undefined
   
-  var origin: js.UndefOr[java.lang.String] = js.native
+  var origin: js.UndefOr[java.lang.String] = js.undefined
   
-  var ports: js.UndefOr[js.Array[MessagePort]] = js.native
+  var ports: js.UndefOr[js.Array[MessagePort]] = js.undefined
   
-  var source: js.UndefOr[MessageEventSource | Null] = js.native
+  var source: js.UndefOr[MessageEventSource | Null] = js.undefined
 }
 object MessageEventInit {
   
@@ -27,7 +27,7 @@ object MessageEventInit {
   }
   
   @scala.inline
-  implicit class MessageEventInitMutableBuilder[Self <: MessageEventInit[_], T] (val x: Self with MessageEventInit[T]) extends AnyVal {
+  implicit class MessageEventInitMutableBuilder[Self <: MessageEventInit[?], T] (val x: Self & MessageEventInit[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

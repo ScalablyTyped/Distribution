@@ -2,31 +2,29 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRepositoryPermissionsPolicyRequest extends StObject {
   
   /**
     *  The name of the domain that contains the repository associated with the resource policy to be deleted. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The revision of the repository's resource policy to be deleted. This revision is used for optimistic locking, which prevents others from accidentally overwriting your changes to the repository's resource policy. 
     */
-  var policyRevision: js.UndefOr[PolicyRevision] = js.native
+  var policyRevision: js.UndefOr[PolicyRevision] = js.undefined
   
   /**
     *  The name of the repository that is associated with the resource policy to be deleted 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
 }
 object DeleteRepositoryPermissionsPolicyRequest {
   

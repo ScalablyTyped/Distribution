@@ -10,7 +10,6 @@ import typings.expoWebBrowser.expoWebBrowserStrings.success
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webBrowserTypesMod {
@@ -51,10 +50,9 @@ object webBrowserTypesMod {
     val OPENED: opened = js.native
   }
   
-  @js.native
   trait RedirectEvent extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object RedirectEvent {
     
@@ -72,10 +70,9 @@ object webBrowserTypesMod {
     }
   }
   
-  @js.native
   trait ServiceActionResult extends StObject {
     
-    var servicePackage: js.UndefOr[String] = js.native
+    var servicePackage: js.UndefOr[String] = js.undefined
   }
   object ServiceActionResult {
     
@@ -104,9 +101,9 @@ object webBrowserTypesMod {
   object WebBrowserAuthSessionResult {
     
     @scala.inline
-    def WebBrowserRedirectResult(`type`: success, url: String): typings.expoWebBrowser.webBrowserTypesMod.WebBrowserRedirectResult = {
+    def WebBrowserRedirectResult(url: String): typings.expoWebBrowser.webBrowserTypesMod.WebBrowserRedirectResult = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[typings.expoWebBrowser.webBrowserTypesMod.WebBrowserRedirectResult]
     }
     
@@ -120,16 +117,15 @@ object webBrowserTypesMod {
   
   type WebBrowserCoolDownResult = ServiceActionResult
   
-  @js.native
   trait WebBrowserCustomTabsResults extends StObject {
     
-    var browserPackages: js.Array[String] = js.native
+    var browserPackages: js.Array[String]
     
-    var defaultBrowserPackage: js.UndefOr[String] = js.native
+    var defaultBrowserPackage: js.UndefOr[String] = js.undefined
     
-    var preferredBrowserPackage: js.UndefOr[String] = js.native
+    var preferredBrowserPackage: js.UndefOr[String] = js.undefined
     
-    var servicePackages: js.Array[String] = js.native
+    var servicePackages: js.Array[String]
   }
   object WebBrowserCustomTabsResults {
     
@@ -170,56 +166,55 @@ object webBrowserTypesMod {
   
   type WebBrowserMayInitWithUrlResult = ServiceActionResult
   
-  @js.native
   trait WebBrowserOpenOptions extends StObject {
     
-    var browserPackage: js.UndefOr[String] = js.native
+    var browserPackage: js.UndefOr[String] = js.undefined
     
     /** iOS only */
-    var controlsColor: js.UndefOr[String] = js.native
+    var controlsColor: js.UndefOr[String] = js.undefined
     
-    var dismissButtonStyle: js.UndefOr[done | close | cancel] = js.native
+    var dismissButtonStyle: js.UndefOr[done | close | cancel] = js.undefined
     
     /**
       * Whether the toolbar should be hiding when a user scrolls the website.
       */
-    var enableBarCollapsing: js.UndefOr[Boolean] = js.native
+    var enableBarCollapsing: js.UndefOr[Boolean] = js.undefined
     
-    var enableDefaultShareMenuItem: js.UndefOr[Boolean] = js.native
+    var enableDefaultShareMenuItem: js.UndefOr[Boolean] = js.undefined
     
-    var readerMode: js.UndefOr[Boolean] = js.native
+    var readerMode: js.UndefOr[Boolean] = js.undefined
     
     /** Android only */
     /**
       * Color of the secondary toolbar in either #AARRGGBB or #RRGGBB format.
       */
-    var secondaryToolbarColor: js.UndefOr[String] = js.native
+    var secondaryToolbarColor: js.UndefOr[String] = js.undefined
     
     /**
       * Whether browsed website should be shown as separate entry in Android recents/multitasking view.
       * Default: `false`
       */
-    var showInRecents: js.UndefOr[Boolean] = js.native
+    var showInRecents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the browser should show the title of website on the toolbar.
       */
-    var showTitle: js.UndefOr[Boolean] = js.native
+    var showTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color of the toolbar in either #AARRGGBB or #RRGGBB format.
       */
-    var toolbarColor: js.UndefOr[String] = js.native
+    var toolbarColor: js.UndefOr[String] = js.undefined
     
     /**
       * **Web:** features to use with `window.open()`
       */
-    var windowFeatures: js.UndefOr[String | WebBrowserWindowFeatures] = js.native
+    var windowFeatures: js.UndefOr[String | WebBrowserWindowFeatures] = js.undefined
     
     /**
       * **Web:** name to assign to the popup window.
       */
-    var windowName: js.UndefOr[String] = js.native
+    var windowName: js.UndefOr[String] = js.undefined
   }
   object WebBrowserOpenOptions {
     
@@ -306,19 +301,20 @@ object webBrowserTypesMod {
     }
   }
   
-  @js.native
-  trait WebBrowserRedirectResult extends WebBrowserAuthSessionResult {
+  trait WebBrowserRedirectResult
+    extends StObject
+       with WebBrowserAuthSessionResult {
     
-    var `type`: success = js.native
+    var `type`: success
     
-    var url: String = js.native
+    var url: String
   }
   object WebBrowserRedirectResult {
     
     @scala.inline
-    def apply(`type`: success, url: String): WebBrowserRedirectResult = {
+    def apply(url: String): WebBrowserRedirectResult = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[WebBrowserRedirectResult]
     }
     
@@ -333,10 +329,11 @@ object webBrowserTypesMod {
     }
   }
   
-  @js.native
-  trait WebBrowserResult extends WebBrowserAuthSessionResult {
+  trait WebBrowserResult
+    extends StObject
+       with WebBrowserAuthSessionResult {
     
-    var `type`: WebBrowserResultType = js.native
+    var `type`: WebBrowserResultType
   }
   object WebBrowserResult {
     

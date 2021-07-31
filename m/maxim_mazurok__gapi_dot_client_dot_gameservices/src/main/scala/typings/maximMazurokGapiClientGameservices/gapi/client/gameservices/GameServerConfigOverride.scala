@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameServerConfigOverride extends StObject {
   
   /** The game server config for this override. */
-  var configVersion: js.UndefOr[String] = js.native
+  var configVersion: js.UndefOr[String] = js.undefined
   
   /** Selector for choosing applicable realms. */
-  var realmsSelector: js.UndefOr[RealmSelector] = js.native
+  var realmsSelector: js.UndefOr[RealmSelector] = js.undefined
 }
 object GameServerConfigOverride {
   

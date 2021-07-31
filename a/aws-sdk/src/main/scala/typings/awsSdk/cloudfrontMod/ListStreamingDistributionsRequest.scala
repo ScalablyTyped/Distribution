@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamingDistributionsRequest extends StObject {
   
   /**
     * The value that you provided for the Marker request parameter.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * The value that you provided for the MaxItems request parameter.
     */
-  var MaxItems: js.UndefOr[String] = js.native
+  var MaxItems: js.UndefOr[String] = js.undefined
 }
 object ListStreamingDistributionsRequest {
   

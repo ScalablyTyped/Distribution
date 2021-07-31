@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIdleOverrideRequest extends StObject {
   
   /**
     * Mock isScreenUnlocked
     */
-  var isScreenUnlocked: Boolean = js.native
+  var isScreenUnlocked: Boolean
   
   /**
     * Mock isUserActive
     */
-  var isUserActive: Boolean = js.native
+  var isUserActive: Boolean
 }
 object SetIdleOverrideRequest {
   

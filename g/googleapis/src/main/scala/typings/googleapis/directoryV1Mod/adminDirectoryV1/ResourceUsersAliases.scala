@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Users$Aliases")
@@ -31,7 +30,7 @@ class ResourceUsersAliases protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersAliasesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersAliasesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceUsersAliases protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAlias] = js.native
   def insert(callback: BodyResponseCallback[SchemaAlias]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlias] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAlias] = js.native
   def insert(params: ParamsResourceUsersAliasesInsert): GaxiosPromise[SchemaAlias] = js.native
   def insert(params: ParamsResourceUsersAliasesInsert, callback: BodyResponseCallback[SchemaAlias]): Unit = js.native
   def insert(
@@ -91,7 +90,7 @@ class ResourceUsersAliases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAliases] = js.native
   def list(callback: BodyResponseCallback[SchemaAliases]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAliases] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAliases] = js.native
   def list(params: ParamsResourceUsersAliasesList): GaxiosPromise[SchemaAliases] = js.native
   def list(params: ParamsResourceUsersAliasesList, callback: BodyResponseCallback[SchemaAliases]): Unit = js.native
   def list(
@@ -122,7 +121,7 @@ class ResourceUsersAliases protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceUsersAliasesWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceUsersAliasesWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

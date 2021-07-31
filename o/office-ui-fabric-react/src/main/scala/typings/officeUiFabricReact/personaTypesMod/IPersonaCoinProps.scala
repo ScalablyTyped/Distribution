@@ -5,21 +5,21 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPersonaCoinProps extends IPersonaSharedProps {
+trait IPersonaCoinProps
+  extends StObject
+     with IPersonaSharedProps {
   
   /**
     * Gets the component ref.
     */
-  var componentRef: js.UndefOr[IRefObject[js.Object]] = js.native
+  var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
   
   /**
     * Call to provide customized styling that will layer on top of the variant rules
     */
-  var styles: js.UndefOr[IStyleFunctionOrObject[IPersonaCoinStyleProps, IPersonaCoinStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IPersonaCoinStyleProps, IPersonaCoinStyles]] = js.undefined
 }
 object IPersonaCoinProps {
   

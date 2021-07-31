@@ -3,18 +3,34 @@ package typings.rsocketCore
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wellKnownMimeTypeMod {
   
   @JSImport("rsocket-core/WellKnownMimeType", JSImport.Default)
   @js.native
-  class default protected () extends WellKnownMimeType {
+  class default protected ()
+    extends StObject
+       with WellKnownMimeType {
     def this(str: String, identifier: Double) = this()
+    
+    /** @return the byte identifier of the mime type, guaranteed to be positive or zero. */
+    /* CompleteClass */
+    override val identifier: Double = js.native
+    
+    /**
+      * @return the mime type represented as a {@link String}, which is made of US_ASCII compatible
+      *     characters only
+      */
+    /* CompleteClass */
+    override val string: String = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("rsocket-core/WellKnownMimeType", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Find the {@link WellKnownMimeType} for the given identifier (as an {@code int}). Valid
@@ -30,9 +46,8 @@ object wellKnownMimeTypeMod {
       *     of the specification's range, or {@link #UNKNOWN_RESERVED_MIME_TYPE} if the id is one that
       *     is merely reserved but unknown to this implementation.
       */
-    @JSImport("rsocket-core/WellKnownMimeType", "default.fromIdentifier")
-    @js.native
-    def fromIdentifier(id: Double): WellKnownMimeType = js.native
+    @scala.inline
+    def fromIdentifier(id: Double): WellKnownMimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdentifier")(id.asInstanceOf[js.Any]).asInstanceOf[WellKnownMimeType]
     
     /**
       * Find the {@link WellKnownMimeType} for the given {@link String} representation. If the
@@ -42,9 +57,8 @@ object wellKnownMimeTypeMod {
       * @param mimeType the looked up mime type
       * @return the matching {@link WellKnownMimeType}, or {@link #UNPARSEABLE_MIME_TYPE} if none matches
       */
-    @JSImport("rsocket-core/WellKnownMimeType", "default.fromString")
-    @js.native
-    def fromString(mimeType: String): WellKnownMimeType = js.native
+    @scala.inline
+    def fromString(mimeType: String): WellKnownMimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(mimeType.asInstanceOf[js.Any]).asInstanceOf[WellKnownMimeType]
   }
   
   @JSImport("rsocket-core/WellKnownMimeType", "APPLICATION_AVRO")
@@ -239,17 +253,16 @@ object wellKnownMimeTypeMod {
   @js.native
   val VIDEO_VP8: WellKnownMimeType = js.native
   
-  @js.native
   trait WellKnownMimeType extends StObject {
     
     /** @return the byte identifier of the mime type, guaranteed to be positive or zero. */
-    val identifier: Double = js.native
+    val identifier: Double
     
     /**
       * @return the mime type represented as a {@link String}, which is made of US_ASCII compatible
       *     characters only
       */
-    val string: String = js.native
+    val string: String
   }
   object WellKnownMimeType {
     

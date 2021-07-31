@@ -3,17 +3,15 @@ package typings.d3Collection
 import typings.d3Collection.mod.NestedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key[T] extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: T = js.native
+    var value: T
   }
   object Key {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[_], T] (val x: Self with Key[T]) extends AnyVal {
+    implicit class KeyMutableBuilder[Self <: Key[?], T] (val x: Self & Key[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait KeyValue[RollupType] extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: js.UndefOr[RollupType] = js.native
+    var value: js.UndefOr[RollupType] = js.undefined
     
-    var values: js.Any = js.native
+    var values: js.Any
   }
   object KeyValue {
     
@@ -52,7 +49,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeyValueMutableBuilder[Self <: KeyValue[_], RollupType] (val x: Self with KeyValue[RollupType]) extends AnyVal {
+    implicit class KeyValueMutableBuilder[Self <: KeyValue[?], RollupType] (val x: Self & KeyValue[RollupType]) extends AnyVal {
       
       @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -68,12 +65,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Value {
     
@@ -94,14 +90,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Values[Datum, RollupType] extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: js.UndefOr[RollupType] = js.native
+    var value: js.UndefOr[RollupType] = js.undefined
     
-    var values: js.UndefOr[(NestedArray[Datum, RollupType]) | js.Array[Datum]] = js.native
+    var values: js.UndefOr[(NestedArray[Datum, RollupType]) | js.Array[Datum]] = js.undefined
   }
   object Values {
     
@@ -112,7 +107,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValuesMutableBuilder[Self <: Values[_, _], Datum, RollupType] (val x: Self with (Values[Datum, RollupType])) extends AnyVal {
+    implicit class ValuesMutableBuilder[Self <: Values[?, ?], Datum, RollupType] (val x: Self & (Values[Datum, RollupType])) extends AnyVal {
       
       @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

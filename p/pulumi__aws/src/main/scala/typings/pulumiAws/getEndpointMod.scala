@@ -3,31 +3,29 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getEndpointMod {
   
-  @JSImport("@pulumi/aws/iot/getEndpoint", "getEndpoint")
+  @JSImport("@pulumi/aws/iot/getEndpoint", JSImport.Namespace)
   @js.native
-  def getEndpoint(): js.Promise[GetEndpointResult] = js.native
-  @JSImport("@pulumi/aws/iot/getEndpoint", "getEndpoint")
-  @js.native
-  def getEndpoint(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetEndpointResult] = js.native
-  @JSImport("@pulumi/aws/iot/getEndpoint", "getEndpoint")
-  @js.native
-  def getEndpoint(args: GetEndpointArgs): js.Promise[GetEndpointResult] = js.native
-  @JSImport("@pulumi/aws/iot/getEndpoint", "getEndpoint")
-  @js.native
-  def getEndpoint(args: GetEndpointArgs, opts: InvokeOptions): js.Promise[GetEndpointResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEndpoint(): js.Promise[GetEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")().asInstanceOf[js.Promise[GetEndpointResult]]
+  @scala.inline
+  def getEndpoint(args: Unit, opts: InvokeOptions): js.Promise[GetEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEndpointResult]]
+  @scala.inline
+  def getEndpoint(args: GetEndpointArgs): js.Promise[GetEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEndpointResult]]
+  @scala.inline
+  def getEndpoint(args: GetEndpointArgs, opts: InvokeOptions): js.Promise[GetEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEndpointResult]]
+  
   trait GetEndpointArgs extends StObject {
     
     /**
       * Endpoint type. Valid values: `iot:CredentialProvider`, `iot:Data`, `iot:Data-ATS`, `iot:Job`.
       */
-    val endpointType: js.UndefOr[String] = js.native
+    val endpointType: js.UndefOr[String] = js.undefined
   }
   object GetEndpointArgs {
     
@@ -48,7 +46,6 @@ object getEndpointMod {
     }
   }
   
-  @js.native
   trait GetEndpointResult extends StObject {
     
     /**
@@ -59,14 +56,14 @@ object getEndpointMod {
       * * `iot:Data-ATS`: `IDENTIFIER-ats.iot.REGION.amazonaws.com`
       * * `iot:Job`: `IDENTIFIER.jobs.iot.REGION.amazonaws.com`
       */
-    val endpointAddress: String = js.native
+    val endpointAddress: String
     
-    val endpointType: js.UndefOr[String] = js.native
+    val endpointType: js.UndefOr[String] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetEndpointResult {
     

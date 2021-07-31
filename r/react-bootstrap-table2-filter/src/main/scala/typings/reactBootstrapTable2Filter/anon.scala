@@ -10,17 +10,15 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Comparator extends StObject {
     
-    var comparator: typings.reactBootstrapTable2Filter.mod.Comparator = js.native
+    var comparator: typings.reactBootstrapTable2Filter.mod.Comparator
     
-    var number: Double = js.native
+    var number: Double
   }
   object Comparator {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Date extends StObject {
     
-    var comparator: typings.reactBootstrapTable2Filter.mod.Comparator = js.native
+    var comparator: typings.reactBootstrapTable2Filter.mod.Comparator
     
-    var date: typings.std.Date = js.native
+    var date: typings.std.Date
   }
   object Date {
     
@@ -67,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Label {
     
@@ -94,30 +90,29 @@ object anon {
   }
   
   /* Inlined std.Partial<react-bootstrap-table2-filter.react-bootstrap-table2-filter.MultiSelectFilterProps<any>> */
-  @js.native
   trait PartialMultiSelectFilterP extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.native
+    var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.native
+    var getFilter: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[_]]] = js.native
+    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[js.Any]]] = js.undefined
     
-    var options: js.UndefOr[MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]] = js.native
+    var options: js.UndefOr[MultiSelectFilterOptions | js.Function0[MultiSelectFilterOptions]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var withoutEmptyOption: js.UndefOr[Boolean] = js.native
+    var withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
   }
   object PartialMultiSelectFilterP {
     
@@ -167,7 +162,7 @@ object anon {
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       @scala.inline
-      def setOnFilter(value: /* filterValue */ String => Unit | js.Array[_]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      def setOnFilter(value: /* filterValue */ String => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
@@ -202,40 +197,41 @@ object anon {
   }
   
   /* Inlined std.Partial<react-bootstrap-table2-filter.react-bootstrap-table2-filter.NumberFilterProps<any>> */
-  @js.native
   trait PartialNumberFilterPropsa extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var comparatorClassName: js.UndefOr[String] = js.native
+    var comparatorClassName: js.UndefOr[String] = js.undefined
     
-    var comparatorStyle: js.UndefOr[CSSProperties] = js.native
+    var comparatorStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var comparators: js.UndefOr[js.Array[typings.reactBootstrapTable2Filter.mod.Comparator]] = js.native
+    var comparators: js.UndefOr[js.Array[typings.reactBootstrapTable2Filter.mod.Comparator]] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[Comparator] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[_, _], Unit]] = js.native
+    var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[js.Any, js.Any], Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var numberClassName: js.UndefOr[String] = js.native
+    var numberClassName: js.UndefOr[String] = js.undefined
     
-    var numberStyle: js.UndefOr[CSSProperties] = js.native
+    var numberStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filterValue */ TableColumnFilterProps[_, _], Unit | js.Array[_]]] = js.native
+    var onFilter: js.UndefOr[
+        js.Function1[/* filterValue */ TableColumnFilterProps[js.Any, js.Any], Unit | js.Array[js.Any]]
+      ] = js.undefined
     
-    var options: js.UndefOr[js.Array[Double]] = js.native
+    var options: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.native
+    var withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined
     
-    var withoutEmptyNumberOption: js.UndefOr[Boolean] = js.native
+    var withoutEmptyNumberOption: js.UndefOr[Boolean] = js.undefined
   }
   object PartialNumberFilterPropsa {
     
@@ -276,7 +272,7 @@ object anon {
       def setComparatorsVarargs(value: typings.reactBootstrapTable2Filter.mod.Comparator*): Self = StObject.set(x, "comparators", js.Array(value :_*))
       
       @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      def setDefaultValue(value: Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
@@ -288,7 +284,7 @@ object anon {
       def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       @scala.inline
-      def setGetFilter(value: /* filter */ TableColumnFilterProps[_, _] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      def setGetFilter(value: /* filter */ TableColumnFilterProps[js.Any, js.Any] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
@@ -312,7 +308,7 @@ object anon {
       def setNumberStyleUndefined: Self = StObject.set(x, "numberStyle", js.undefined)
       
       @scala.inline
-      def setOnFilter(value: /* filterValue */ TableColumnFilterProps[_, _] => Unit | js.Array[_]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      def setOnFilter(value: /* filterValue */ TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
@@ -353,32 +349,31 @@ object anon {
   }
   
   /* Inlined std.Partial<react-bootstrap-table2-filter.react-bootstrap-table2-filter.SelectFilterProps<any>> */
-  @js.native
   trait PartialSelectFilterPropsa extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.native
+    var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.native
+    var getFilter: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[_]]] = js.native
+    var onFilter: js.UndefOr[js.Function1[/* filterValue */ String, Unit | js.Array[js.Any]]] = js.undefined
     
     var options: js.UndefOr[
-        SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[_, _], SelectFilterOptions])
-      ] = js.native
+        SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[js.Any, js.Any], SelectFilterOptions])
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var withoutEmptyOption: js.UndefOr[Boolean] = js.native
+    var withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
   }
   object PartialSelectFilterPropsa {
     
@@ -428,18 +423,18 @@ object anon {
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       @scala.inline
-      def setOnFilter(value: /* filterValue */ String => Unit | js.Array[_]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      def setOnFilter(value: /* filterValue */ String => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
       @scala.inline
       def setOptions(
-        value: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[_, _], SelectFilterOptions])
+        value: SelectFilterOptions | (js.Function1[/* column */ ColumnDescription[js.Any, js.Any], SelectFilterOptions])
       ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOptionsFunction1(value: /* column */ ColumnDescription[_, _] => SelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      def setOptionsFunction1(value: /* column */ ColumnDescription[js.Any, js.Any] => SelectFilterOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
@@ -468,30 +463,31 @@ object anon {
   }
   
   /* Inlined std.Partial<react-bootstrap-table2-filter.react-bootstrap-table2-filter.TextFilterProps<any>> */
-  @js.native
   trait PartialTextFilterPropsany extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.native
+    var comparator: js.UndefOr[typings.reactBootstrapTable2Filter.mod.Comparator] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[_, _], Unit]] = js.native
+    var getFilter: js.UndefOr[js.Function1[/* filter */ TableColumnFilterProps[js.Any, js.Any], Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* filterValue */ TableColumnFilterProps[_, _], Unit | js.Array[_]]] = js.native
+    var onFilter: js.UndefOr[
+        js.Function1[/* filterValue */ TableColumnFilterProps[js.Any, js.Any], Unit | js.Array[js.Any]]
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PartialTextFilterPropsany {
     
@@ -535,7 +531,7 @@ object anon {
       def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       @scala.inline
-      def setGetFilter(value: /* filter */ TableColumnFilterProps[_, _] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
+      def setGetFilter(value: /* filter */ TableColumnFilterProps[js.Any, js.Any] => Unit): Self = StObject.set(x, "getFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetFilterUndefined: Self = StObject.set(x, "getFilter", js.undefined)
@@ -553,7 +549,7 @@ object anon {
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnFilter(value: /* filterValue */ TableColumnFilterProps[_, _] => Unit | js.Array[_]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      def setOnFilter(value: /* filterValue */ TableColumnFilterProps[js.Any, js.Any] => Unit | js.Array[js.Any]): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)

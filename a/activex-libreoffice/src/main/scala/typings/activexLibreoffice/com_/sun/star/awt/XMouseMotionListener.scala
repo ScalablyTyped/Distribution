@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive mouse motion events on a window. */
-@js.native
-trait XMouseMotionListener extends XEventListener {
+trait XMouseMotionListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a mouse button is pressed on a window and then dragged.
@@ -18,10 +18,10 @@ trait XMouseMotionListener extends XEventListener {
     * Mouse drag events will continue to be delivered to the window where the first event originated until the mouse button is released (regardless of
     * whether the mouse position is within the bounds of the window).
     */
-  def mouseDragged(e: MouseEvent): Unit = js.native
+  def mouseDragged(e: MouseEvent): Unit
   
   /** is invoked when the mouse pointer has been moved on a window (with no buttons down). */
-  def mouseMoved(e: MouseEvent): Unit = js.native
+  def mouseMoved(e: MouseEvent): Unit
 }
 object XMouseMotionListener {
   

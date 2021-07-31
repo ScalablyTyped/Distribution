@@ -2,41 +2,39 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetInstance extends StObject {
   
   /**
     *  The currency code that AWS used to calculate the costs for this instance.
     */
-  var CurrencyCode: js.UndefOr[GenericString] = js.native
+  var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Indicates whether this recommendation is the defaulted AWS recommendation.
     */
-  var DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.native
+  var DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
     *  Expected cost to operate this instance type on a monthly basis.
     */
-  var EstimatedMonthlyCost: js.UndefOr[GenericString] = js.native
+  var EstimatedMonthlyCost: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Estimated savings resulting from modification, on a monthly basis.
     */
-  var EstimatedMonthlySavings: js.UndefOr[GenericString] = js.native
+  var EstimatedMonthlySavings: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Expected utilization metrics for target instance type.
     */
-  var ExpectedResourceUtilization: js.UndefOr[ResourceUtilization] = js.native
+  var ExpectedResourceUtilization: js.UndefOr[ResourceUtilization] = js.undefined
   
   /**
     *  Details on the target instance type. 
     */
-  var ResourceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ResourceDetails] = js.native
+  var ResourceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ResourceDetails] = js.undefined
 }
 object TargetInstance {
   

@@ -2,19 +2,17 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * nw.Window.get().on('navigation') callback policy argument object
   */
-@js.native
 trait WinNavigationPolicy extends StObject {
   
   /**
     * Ignore the request, navigation won’t happen.
     */
-  def ignore(): Unit = js.native
+  def ignore(): Unit
 }
 object WinNavigationPolicy {
   

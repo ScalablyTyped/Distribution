@@ -2,17 +2,15 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageAriaSettings extends StObject {
   
-  var paginate: js.UndefOr[LanguagePaginateSettings] = js.native
+  var paginate: js.UndefOr[LanguagePaginateSettings] = js.undefined
   
-  var sortAscending: String = js.native
+  var sortAscending: String
   
-  var sortDescending: String = js.native
+  var sortDescending: String
 }
 object LanguageAriaSettings {
   

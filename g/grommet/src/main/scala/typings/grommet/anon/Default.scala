@@ -8,41 +8,39 @@ import typings.grommet.utilsMod.ColorType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
-  var default: js.UndefOr[ButtonKindType] = js.native
+  var default: js.UndefOr[ButtonKindType] = js.undefined
   
-  var active: js.UndefOr[ButtonKindTypedefaultButt] = js.native
+  var active: js.UndefOr[ButtonKindTypedefaultButt] = js.undefined
   
-  var border: js.UndefOr[ColorRadius] = js.native
+  var border: js.UndefOr[ColorRadius] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var disabled: js.UndefOr[ButtonKindTypeopacityOpac] = js.native
+  var disabled: js.UndefOr[ButtonKindTypeopacityOpac] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var hover: js.UndefOr[ButtonKindTypedefaultButt] = js.native
+  var hover: js.UndefOr[ButtonKindTypedefaultButt] = js.undefined
   
-  var maxWidth: js.UndefOr[String] = js.native
+  var maxWidth: js.UndefOr[String] = js.undefined
   
-  var minWidth: js.UndefOr[String] = js.native
+  var minWidth: js.UndefOr[String] = js.undefined
   
-  var option: js.UndefOr[ButtonKindType] = js.native
+  var option: js.UndefOr[ButtonKindType] = js.undefined
   
-  var padding: js.UndefOr[HorizontalVertical] = js.native
+  var padding: js.UndefOr[HorizontalVertical] = js.undefined
   
-  var primary: js.UndefOr[ButtonKindType] = js.native
+  var primary: js.UndefOr[ButtonKindType] = js.undefined
   
-  var secondary: js.UndefOr[ButtonKindType] = js.native
+  var secondary: js.UndefOr[ButtonKindType] = js.undefined
   
-  var size: js.UndefOr[Small] = js.native
+  var size: js.UndefOr[Small] = js.undefined
   
-  var transition: js.UndefOr[Properties] = js.native
+  var transition: js.UndefOr[Properties] = js.undefined
 }
 object Default {
   
@@ -86,10 +84,10 @@ object Default {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

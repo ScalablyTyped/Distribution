@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contains extends StObject {
   
-  var contains: scala.Double = js.native
+  var contains: scala.Double
   
-  var exact: scala.Double = js.native
+  var exact: scala.Double
   
-  var startsWith: scala.Double = js.native
+  var startsWith: scala.Double
 }
 object Contains {
   

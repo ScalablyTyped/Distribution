@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetCacheParameterGroupMessage extends StObject {
   
   /**
     * The name of the cache parameter group to reset.
     */
-  var CacheParameterGroupName: String = js.native
+  var CacheParameterGroupName: String
   
   /**
     * An array of parameter names to reset to their default values. If ResetAllParameters is true, do not use ParameterNameValues. If ResetAllParameters is false, you must specify the name of at least one parameter to reset.
     */
-  var ParameterNameValues: js.UndefOr[ParameterNameValueList] = js.native
+  var ParameterNameValues: js.UndefOr[ParameterNameValueList] = js.undefined
   
   /**
     * If true, all parameters in the cache parameter group are reset to their default values. If false, only the parameters listed by ParameterNameValues are reset to their default values. Valid values: true | false 
     */
-  var ResetAllParameters: js.UndefOr[Boolean] = js.native
+  var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
 }
 object ResetCacheParameterGroupMessage {
   

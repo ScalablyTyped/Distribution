@@ -3,7 +3,6 @@ package typings.web3CoreHelpers.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core-helpers", "errors")
@@ -12,116 +11,91 @@ class errors () extends StObject
 /* static members */
 object errors {
   
-  @JSImport("web3-core-helpers", "errors.ConnectionCloseError")
+  @JSImport("web3-core-helpers", "errors")
   @js.native
-  def ConnectionCloseError(event: Boolean): Error | ConnectionError = js.native
-  @JSImport("web3-core-helpers", "errors.ConnectionCloseError")
-  @js.native
-  def ConnectionCloseError(event: WebSocketEvent): Error | ConnectionError = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("web3-core-helpers", "errors.ConnectionError")
-  @js.native
-  def ConnectionError(msg: String): typings.web3CoreHelpers.mod.ConnectionError = js.native
-  @JSImport("web3-core-helpers", "errors.ConnectionError")
-  @js.native
-  def ConnectionError(msg: String, event: WebSocketEvent): typings.web3CoreHelpers.mod.ConnectionError = js.native
+  @scala.inline
+  def ConnectionCloseError(event: Boolean): Error | ConnectionError = ^.asInstanceOf[js.Dynamic].applyDynamic("ConnectionCloseError")(event.asInstanceOf[js.Any]).asInstanceOf[Error | ConnectionError]
+  @scala.inline
+  def ConnectionCloseError(event: WebSocketEvent): Error | ConnectionError = ^.asInstanceOf[js.Dynamic].applyDynamic("ConnectionCloseError")(event.asInstanceOf[js.Any]).asInstanceOf[Error | ConnectionError]
   
-  @JSImport("web3-core-helpers", "errors.ConnectionNotOpenError")
-  @js.native
-  def ConnectionNotOpenError(): Error = js.native
+  @scala.inline
+  def ConnectionError(msg: String): typings.web3CoreHelpers.mod.ConnectionError = ^.asInstanceOf[js.Dynamic].applyDynamic("ConnectionError")(msg.asInstanceOf[js.Any]).asInstanceOf[typings.web3CoreHelpers.mod.ConnectionError]
+  @scala.inline
+  def ConnectionError(msg: String, event: WebSocketEvent): typings.web3CoreHelpers.mod.ConnectionError = (^.asInstanceOf[js.Dynamic].applyDynamic("ConnectionError")(msg.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[typings.web3CoreHelpers.mod.ConnectionError]
   
-  @JSImport("web3-core-helpers", "errors.ConnectionTimeout")
-  @js.native
-  def ConnectionTimeout(ms: String): Error = js.native
+  @scala.inline
+  def ConnectionNotOpenError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConnectionNotOpenError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractCodeNotStoredError")
-  @js.native
-  def ContractCodeNotStoredError(receipt: js.Object): TransactionError = js.native
+  @scala.inline
+  def ConnectionTimeout(ms: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ConnectionTimeout")(ms.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractEventDoesNotExistError")
-  @js.native
-  def ContractEventDoesNotExistError(eventName: String): Error = js.native
+  @scala.inline
+  def ContractCodeNotStoredError(receipt: js.Object): TransactionError = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractCodeNotStoredError")(receipt.asInstanceOf[js.Any]).asInstanceOf[TransactionError]
   
-  @JSImport("web3-core-helpers", "errors.ContractMissingABIError")
-  @js.native
-  def ContractMissingABIError(): Error = js.native
+  @scala.inline
+  def ContractEventDoesNotExistError(eventName: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractEventDoesNotExistError")(eventName.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractMissingDeployDataError")
-  @js.native
-  def ContractMissingDeployDataError(): Error = js.native
+  @scala.inline
+  def ContractMissingABIError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractMissingABIError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractNoAddressDefinedError")
-  @js.native
-  def ContractNoAddressDefinedError(): Error = js.native
+  @scala.inline
+  def ContractMissingDeployDataError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractMissingDeployDataError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractNoFromAddressDefinedError")
-  @js.native
-  def ContractNoFromAddressDefinedError(): Error = js.native
+  @scala.inline
+  def ContractNoAddressDefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractNoAddressDefinedError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractOnceRequiresCallbackError")
-  @js.native
-  def ContractOnceRequiresCallbackError(): Error = js.native
+  @scala.inline
+  def ContractNoFromAddressDefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractNoFromAddressDefinedError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ContractReservedEventError")
-  @js.native
-  def ContractReservedEventError(`type`: String): Error = js.native
+  @scala.inline
+  def ContractOnceRequiresCallbackError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractOnceRequiresCallbackError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.ErrorResponse")
-  @js.native
-  def ErrorResponse(result: Error): Error = js.native
+  @scala.inline
+  def ContractReservedEventError(`type`: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ContractReservedEventError")(`type`.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.InvalidConnection")
-  @js.native
-  def InvalidConnection(host: String): ConnectionError = js.native
-  @JSImport("web3-core-helpers", "errors.InvalidConnection")
-  @js.native
-  def InvalidConnection(host: String, event: WebSocketEvent): ConnectionError = js.native
+  @scala.inline
+  def ErrorResponse(result: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ErrorResponse")(result.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.InvalidNumberOfParams")
-  @js.native
-  def InvalidNumberOfParams(got: Double, expected: Double, method: String): Error = js.native
+  @scala.inline
+  def InvalidConnection(host: String): ConnectionError = ^.asInstanceOf[js.Dynamic].applyDynamic("InvalidConnection")(host.asInstanceOf[js.Any]).asInstanceOf[ConnectionError]
+  @scala.inline
+  def InvalidConnection(host: String, event: WebSocketEvent): ConnectionError = (^.asInstanceOf[js.Dynamic].applyDynamic("InvalidConnection")(host.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[ConnectionError]
   
-  @JSImport("web3-core-helpers", "errors.InvalidProvider")
-  @js.native
-  def InvalidProvider(): Error = js.native
+  @scala.inline
+  def InvalidNumberOfParams(got: Double, expected: Double, method: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("InvalidNumberOfParams")(got.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.InvalidResponse")
-  @js.native
-  def InvalidResponse(result: Error): Error = js.native
+  @scala.inline
+  def InvalidProvider(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("InvalidProvider")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.MaxAttemptsReachedOnReconnectingError")
-  @js.native
-  def MaxAttemptsReachedOnReconnectingError(): Error = js.native
+  @scala.inline
+  def InvalidResponse(result: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("InvalidResponse")(result.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.NoContractAddressFoundError")
-  @js.native
-  def NoContractAddressFoundError(receipt: js.Object): TransactionError = js.native
+  @scala.inline
+  def MaxAttemptsReachedOnReconnectingError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxAttemptsReachedOnReconnectingError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.PendingRequestsOnReconnectingError")
-  @js.native
-  def PendingRequestsOnReconnectingError(): Error = js.native
+  @scala.inline
+  def NoContractAddressFoundError(receipt: js.Object): TransactionError = ^.asInstanceOf[js.Dynamic].applyDynamic("NoContractAddressFoundError")(receipt.asInstanceOf[js.Any]).asInstanceOf[TransactionError]
   
-  @JSImport("web3-core-helpers", "errors.ResolverMethodMissingError")
-  @js.native
-  def ResolverMethodMissingError(address: String, name: String): Error = js.native
+  @scala.inline
+  def PendingRequestsOnReconnectingError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("PendingRequestsOnReconnectingError")().asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.RevertInstructionError")
-  @js.native
-  def RevertInstructionError(reason: String, signature: String): typings.web3CoreHelpers.mod.RevertInstructionError = js.native
+  @scala.inline
+  def ResolverMethodMissingError(address: String, name: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("ResolverMethodMissingError")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("web3-core-helpers", "errors.TransactionError")
-  @js.native
-  def TransactionError(message: String, receipt: js.Object): typings.web3CoreHelpers.mod.TransactionError = js.native
+  @scala.inline
+  def RevertInstructionError(reason: String, signature: String): typings.web3CoreHelpers.mod.RevertInstructionError = (^.asInstanceOf[js.Dynamic].applyDynamic("RevertInstructionError")(reason.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[typings.web3CoreHelpers.mod.RevertInstructionError]
   
-  @JSImport("web3-core-helpers", "errors.TransactionOutOfGasError")
-  @js.native
-  def TransactionOutOfGasError(receipt: js.Object): TransactionError = js.native
+  @scala.inline
+  def TransactionError(message: String, receipt: js.Object): typings.web3CoreHelpers.mod.TransactionError = (^.asInstanceOf[js.Dynamic].applyDynamic("TransactionError")(message.asInstanceOf[js.Any], receipt.asInstanceOf[js.Any])).asInstanceOf[typings.web3CoreHelpers.mod.TransactionError]
   
-  @JSImport("web3-core-helpers", "errors.TransactionRevertInstructionError")
-  @js.native
-  def TransactionRevertInstructionError(reason: String, signature: String, receipt: js.Object): typings.web3CoreHelpers.mod.TransactionRevertInstructionError = js.native
+  @scala.inline
+  def TransactionOutOfGasError(receipt: js.Object): TransactionError = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionOutOfGasError")(receipt.asInstanceOf[js.Any]).asInstanceOf[TransactionError]
   
-  @JSImport("web3-core-helpers", "errors.TransactionRevertedWithoutReasonError")
-  @js.native
-  def TransactionRevertedWithoutReasonError(receipt: js.Object): TransactionError = js.native
+  @scala.inline
+  def TransactionRevertInstructionError(reason: String, signature: String, receipt: js.Object): typings.web3CoreHelpers.mod.TransactionRevertInstructionError = (^.asInstanceOf[js.Dynamic].applyDynamic("TransactionRevertInstructionError")(reason.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], receipt.asInstanceOf[js.Any])).asInstanceOf[typings.web3CoreHelpers.mod.TransactionRevertInstructionError]
+  
+  @scala.inline
+  def TransactionRevertedWithoutReasonError(receipt: js.Object): TransactionError = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionRevertedWithoutReasonError")(receipt.asInstanceOf[js.Any]).asInstanceOf[TransactionError]
 }

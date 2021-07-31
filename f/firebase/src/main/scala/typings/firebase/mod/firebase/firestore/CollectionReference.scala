@@ -2,11 +2,12 @@ package typings.firebase.mod.firebase.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionReference[T] extends Query[T] {
+trait CollectionReference[T]
+  extends StObject
+     with Query[T] {
   
   /**
     * Add a new document to this collection with the specified data, assigning

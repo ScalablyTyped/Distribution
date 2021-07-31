@@ -5,23 +5,20 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMapMod {
   
-  @JSImport("rxjs/internal/operators/switchMap", "switchMap")
+  @JSImport("rxjs/internal/operators/switchMap", JSImport.Namespace)
   @js.native
-  def switchMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/switchMap", "switchMap")
-  @js.native
-  def switchMap[T, O /* <: ObservableInput[_] */](
-    project: js.Function2[/* value */ T, /* index */ Double, O],
-    resultSelector: js.UndefOr[scala.Nothing]
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/switchMap", "switchMap")
-  @js.native
-  def switchMap[T, R, O /* <: ObservableInput[_] */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def switchMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def switchMap[T, O /* <: ObservableInput[js.Any] */](project: js.Function2[/* value */ T, /* index */ Double, O], resultSelector: Unit): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def switchMap[T, R, O /* <: ObservableInput[js.Any] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -30,5 +27,5 @@ object switchMapMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMap")(project.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
 }

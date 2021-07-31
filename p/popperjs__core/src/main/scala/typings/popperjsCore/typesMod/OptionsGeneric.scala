@@ -4,19 +4,17 @@ import typings.popperjsCore.anon.PartialState
 import typings.popperjsCore.enumsMod.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsGeneric[TModifier] extends StObject {
   
-  var modifiers: js.Array[TModifier] = js.native
+  var modifiers: js.Array[TModifier]
   
-  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.native
+  var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
   
-  var placement: Placement = js.native
+  var placement: Placement
   
-  var strategy: PositioningStrategy = js.native
+  var strategy: PositioningStrategy
 }
 object OptionsGeneric {
   
@@ -27,7 +25,7 @@ object OptionsGeneric {
   }
   
   @scala.inline
-  implicit class OptionsGenericMutableBuilder[Self <: OptionsGeneric[_], TModifier] (val x: Self with OptionsGeneric[TModifier]) extends AnyVal {
+  implicit class OptionsGenericMutableBuilder[Self <: OptionsGeneric[?], TModifier] (val x: Self & OptionsGeneric[TModifier]) extends AnyVal {
     
     @scala.inline
     def setModifiers(value: js.Array[TModifier]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])

@@ -2,41 +2,39 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HystrixConfig_ extends StObject {
   
-  def circuitBreakerErrorThresholdPercentage(): Double = js.native
+  def circuitBreakerErrorThresholdPercentage(): Double
   
-  def circuitBreakerForceClosed(): Boolean = js.native
+  def circuitBreakerForceClosed(): Boolean
   
-  def circuitBreakerForceOpened(): Boolean = js.native
+  def circuitBreakerForceOpened(): Boolean
   
-  def circuitBreakerRequestVolumeThreshold(): Double = js.native
+  def circuitBreakerRequestVolumeThreshold(): Double
   
-  def circuitBreakerRequestVolumeThresholdForceOverride(): Boolean = js.native
+  def circuitBreakerRequestVolumeThresholdForceOverride(): Boolean
   
-  def circuitBreakerRequestVolumeThresholdOverride(): Double = js.native
+  def circuitBreakerRequestVolumeThresholdOverride(): Double
   
-  def circuitBreakerSleepWindowInMilliseconds(): Double = js.native
+  def circuitBreakerSleepWindowInMilliseconds(): Double
   
-  def executionTimeoutInMilliseconds(): Double = js.native
+  def executionTimeoutInMilliseconds(): Double
   
-  def init(properties: HystrixProperties): Unit = js.native
+  def init(properties: HystrixProperties): Unit
   
-  def metricsPercentileWindowBuckets(): Double = js.native
+  def metricsPercentileWindowBuckets(): Double
   
-  def metricsPercentileWindowInMilliseconds(): Double = js.native
+  def metricsPercentileWindowInMilliseconds(): Double
   
-  def metricsStatisticalWindowBuckets(): Double = js.native
+  def metricsStatisticalWindowBuckets(): Double
   
-  def metricsStatisticalWindowInMilliseconds(): Double = js.native
+  def metricsStatisticalWindowInMilliseconds(): Double
   
-  def requestVolumeRejectionThreshold(): Double = js.native
+  def requestVolumeRejectionThreshold(): Double
   
-  def resetProperties(): Unit = js.native
+  def resetProperties(): Unit
 }
 object HystrixConfig_ {
   

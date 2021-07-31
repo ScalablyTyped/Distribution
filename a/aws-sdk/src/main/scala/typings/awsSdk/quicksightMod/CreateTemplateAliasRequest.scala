@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTemplateAliasRequest extends StObject {
   
   /**
     * The name that you want to give to the template alias that you're creating. Don't start the alias name with the $ character. Alias names that start with $ are reserved by QuickSight. 
     */
-  var AliasName: typings.awsSdk.quicksightMod.AliasName = js.native
+  var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
     * The ID of the AWS account that contains the template that you creating an alias for.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * An ID for the template.
     */
-  var TemplateId: RestrictiveResourceId = js.native
+  var TemplateId: RestrictiveResourceId
   
   /**
     * The version number of the template.
     */
-  var TemplateVersionNumber: VersionNumber = js.native
+  var TemplateVersionNumber: VersionNumber
 }
 object CreateTemplateAliasRequest {
   

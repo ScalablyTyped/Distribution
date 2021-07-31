@@ -2,30 +2,28 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Group List Response
   */
-@js.native
 trait SchemaCreativeGroupsListResponse extends StObject {
   
   /**
     * Creative group collection.
     */
-  var creativeGroups: js.UndefOr[js.Array[SchemaCreativeGroup]] = js.native
+  var creativeGroups: js.UndefOr[js.Array[SchemaCreativeGroup]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#creativeGroupsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeGroupsListResponse {
   

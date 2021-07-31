@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the AppointmentType enumeration.
   */
-@js.native
 trait ASPxAppointmentType extends StObject {
   
   /**
     * Gets a string representation equivalent of AppointmentType.ChangedOccurrence enumeration for use in client scripts.
     */
-  var ChangedOccurrence: String = js.native
+  var ChangedOccurrence: String
   
   /**
     * Gets a string representation equivalent of ASPxAppointmentType.DeletedOccurrence enumeration for use in client scripts.
     */
-  var DeletedOccurrence: String = js.native
+  var DeletedOccurrence: String
   
   /**
     * Gets a string representation equivalent of ASPxAppointmentType.Normal enumeration for use in client scripts.
     */
-  var Normal: String = js.native
+  var Normal: String
   
   /**
     * Gets a string representation equivalent of ASPxAppointmentType.Occurrence enumeration for use in client scripts.
     */
-  var Occurrence: String = js.native
+  var Occurrence: String
   
   /**
     * Gets a string representation equivalent of ASPxAppointmentType.Pattern enumeration for use in client scripts.
     */
-  var Pattern: String = js.native
+  var Pattern: String
 }
 object ASPxAppointmentType {
   

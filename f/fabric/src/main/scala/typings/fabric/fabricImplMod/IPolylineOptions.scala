@@ -2,16 +2,16 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPolylineOptions extends IObjectOptions {
+trait IPolylineOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * Points array
     */
-  var points: js.UndefOr[js.Array[Point]] = js.native
+  var points: js.UndefOr[js.Array[Point]] = js.undefined
 }
 object IPolylineOptions {
   

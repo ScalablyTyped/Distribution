@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDocumentResult extends StObject {
   
   /**
     * Information about the Systems Manager document.
     */
-  var DocumentDescription: js.UndefOr[typings.awsSdk.ssmMod.DocumentDescription] = js.native
+  var DocumentDescription: js.UndefOr[typings.awsSdk.ssmMod.DocumentDescription] = js.undefined
 }
 object CreateDocumentResult {
   

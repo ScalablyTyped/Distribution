@@ -2,33 +2,31 @@ package typings.googleapis.v1Dot4Mod.adsenseV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUrlChannels extends StObject {
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The URL channels returned in this list response.
     */
-  var items: js.UndefOr[js.Array[SchemaUrlChannel]] = js.native
+  var items: js.UndefOr[js.Array[SchemaUrlChannel]] = js.undefined
   
   /**
     * Kind of list this is, in this case adsense#urlChannels.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token used to page through URL channels. To retrieve the
     * next page of results, set the next request&#39;s &quot;pageToken&quot;
     * value to this.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlChannels {
   

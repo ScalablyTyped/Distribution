@@ -2,19 +2,17 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryGroup extends StObject {
   
-  var dataProvider: DataProvider = js.native
+  var dataProvider: DataProvider
   
-  var displays: js.Array[DisplayControl] = js.native
+  var displays: js.Array[DisplayControl]
   
-  var name: String = js.native
+  var name: String
   
-  var searchBoxes: js.Array[Refinement] = js.native
+  var searchBoxes: js.Array[Refinement]
 }
 object QueryGroup {
   

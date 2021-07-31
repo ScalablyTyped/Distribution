@@ -14,7 +14,6 @@ import typings.gravatarUrl.gravatarUrlStrings.x
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,14 +28,15 @@ object mod {
   //=> 'https://gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?size=200'
   ```
   */
-  @JSImport("gravatar-url", JSImport.Namespace)
-  @js.native
-  def apply(identifier: String): String = js.native
-  @JSImport("gravatar-url", JSImport.Namespace)
-  @js.native
-  def apply(identifier: String, options: Options): String = js.native
+  @scala.inline
+  def apply(identifier: String): String = ^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(identifier: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("gravatar-url", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -45,19 +45,19 @@ object mod {
     		*/
     val default: js.UndefOr[
         LiteralUnion[`404` | mm | identicon | monsterid | wavatar | retro | blank, String]
-      ] = js.native
+      ] = js.undefined
     
     /**
     		Allowed [rating](https://en.gravatar.com/site/implement/images/#rating) of the image.
     		@default 'g'
     		*/
-    val rating: js.UndefOr[g | pg | r | x] = js.native
+    val rating: js.UndefOr[g | pg | r | x] = js.undefined
     
     /**
     		[Size](https://en.gravatar.com/site/implement/images/#size) of the image. Values: `1..2048`.
     		@default 80
     		*/
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

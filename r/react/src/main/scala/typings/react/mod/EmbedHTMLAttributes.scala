@@ -2,19 +2,19 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmbedHTMLAttributes[T] extends HTMLAttributes[T] {
+trait EmbedHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object EmbedHTMLAttributes {
   
@@ -25,7 +25,7 @@ object EmbedHTMLAttributes {
   }
   
   @scala.inline
-  implicit class EmbedHTMLAttributesMutableBuilder[Self <: EmbedHTMLAttributes[_], T] (val x: Self with EmbedHTMLAttributes[T]) extends AnyVal {
+  implicit class EmbedHTMLAttributesMutableBuilder[Self <: EmbedHTMLAttributes[?], T] (val x: Self & EmbedHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

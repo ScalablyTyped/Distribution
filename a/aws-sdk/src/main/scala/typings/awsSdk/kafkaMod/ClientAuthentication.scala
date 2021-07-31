@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientAuthentication extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ClientAuthentication extends StObject {
     Details for ClientAuthentication using SASL.
     
     */
-  var Sasl: js.UndefOr[typings.awsSdk.kafkaMod.Sasl] = js.native
+  var Sasl: js.UndefOr[typings.awsSdk.kafkaMod.Sasl] = js.undefined
   
   /**
     * 
     Details for ClientAuthentication using TLS.
     
     */
-  var Tls: js.UndefOr[typings.awsSdk.kafkaMod.Tls] = js.native
+  var Tls: js.UndefOr[typings.awsSdk.kafkaMod.Tls] = js.undefined
 }
 object ClientAuthentication {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIpAddressTypeOutput extends StObject {
   
   /**
     * The IP address type.
     */
-  var IpAddressType: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddressType] = js.native
+  var IpAddressType: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddressType] = js.undefined
 }
 object SetIpAddressTypeOutput {
   

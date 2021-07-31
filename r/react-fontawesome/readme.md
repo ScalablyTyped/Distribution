@@ -11,8 +11,8 @@ A React component for the font-awesome icon library.
 | Full name          | react-fontawesome |
 | Keywords           | react, font-awesome, fontawesome, bootstrap, icons, fonts, icon, danawoodman, big, style, jsx, react-component, component |
 | # releases         | 3 |
-| # dependents       | 248 |
-| # downloads        | 2881472 |
+| # dependents       | 254 |
+| # downloads        | 2950820 |
 | # stars            | 25 |
 
 ## Links

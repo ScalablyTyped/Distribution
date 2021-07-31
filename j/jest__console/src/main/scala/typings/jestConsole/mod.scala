@@ -10,10 +10,13 @@ import typings.jestSourceMap.typesMod.SourceMapRegistry
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@jest/console", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@jest/console", "BufferedConsole")
   @js.native
@@ -23,39 +26,38 @@ object mod {
   /* static members */
   object BufferedConsole {
     
-    @JSImport("@jest/console", "BufferedConsole.write")
+    @JSImport("@jest/console", "BufferedConsole")
     @js.native
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console", "BufferedConsole.write")
-    @js.native
-    def write(
-      buffer: ConsoleBuffer,
-      `type`: LogType,
-      message: LogMessage,
-      level: js.UndefOr[scala.Nothing],
-      sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console", "BufferedConsole.write")
-    @js.native
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console", "BufferedConsole.write")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
+    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
     def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
       level: Double,
       sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
-    @JSImport("@jest/console", "BufferedConsole.write")
-    @js.native
+    ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
     def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
       level: Null,
       sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
+    ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    @scala.inline
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: Unit,
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
   }
   
   @JSImport("@jest/console", "CustomConsole")
@@ -71,7 +73,6 @@ object mod {
   class NullConsole ()
     extends typings.jestConsole.nullConsoleMod.default
   
-  @JSImport("@jest/console", "getConsoleOutput")
-  @js.native
-  def getConsoleOutput(root: String, verbose: Boolean, buffer: js.Array[LogEntry]): String = js.native
+  @scala.inline
+  def getConsoleOutput(root: String, verbose: Boolean, buffer: js.Array[LogEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConsoleOutput")(root.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[String]
 }

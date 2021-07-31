@@ -2,13 +2,11 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YoutubeActorInfo extends StObject {
   
-  var youtubeActorInfo: js.UndefOr[ChannelId] = js.native
+  var youtubeActorInfo: js.UndefOr[ChannelId] = js.undefined
 }
 object YoutubeActorInfo {
   

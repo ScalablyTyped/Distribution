@@ -3,7 +3,6 @@ package typings.pTry
 import typings.pTry.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,12 +27,11 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-try", JSImport.Namespace)
-  @js.native
-  def apply[ValueType, ArgumentsType /* <: js.Array[_] */](
+  @scala.inline
+  def apply[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
-  ): js.Promise[ValueType] = js.native
+  ): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
   
   @JSImport("p-try", JSImport.Namespace)
   @js.native
@@ -74,12 +72,11 @@ object mod {
   //	...arguments: ArgumentsType
   // ): Promise<ValueType>;
   // export = pTry;
-  @JSImport("p-try", "default")
-  @js.native
-  def default[ValueType, ArgumentsType /* <: js.Array[_] */](
+  @scala.inline
+  def default[ValueType, ArgumentsType /* <: js.Array[js.Any] */](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
-  ): js.Promise[ValueType] = js.native
+  ): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

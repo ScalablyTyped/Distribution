@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactBodyClassname.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,14 +31,12 @@ object mod {
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("react-body-classname", "peek")
-  @js.native
-  def peek(): js.Any = js.native
+  @scala.inline
+  def peek(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("react-body-classname", "rewind")
-  @js.native
-  def rewind(): js.Any = js.native
+  @scala.inline
+  def rewind(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[js.Any]
   
   type BodyClassName = Component[ClassName, js.Object, js.Any]
 }

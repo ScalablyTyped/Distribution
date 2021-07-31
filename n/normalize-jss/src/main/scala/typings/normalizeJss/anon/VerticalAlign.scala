@@ -2,15 +2,13 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerticalAlign extends StObject {
   
-  var borderStyle: String = js.native
+  var borderStyle: String
   
-  var verticalAlign: String = js.native
+  var verticalAlign: String
 }
 object VerticalAlign {
   

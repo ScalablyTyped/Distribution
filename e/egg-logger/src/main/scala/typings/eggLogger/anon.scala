@@ -2,15 +2,13 @@ package typings.eggLogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Excludes extends StObject {
     
-    var excludes: js.UndefOr[js.Array[String]] = js.native
+    var excludes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Excludes {
     

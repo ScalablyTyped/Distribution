@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderByElement extends StObject {
   
   /**
     * The field on which to order.
     */
-  var fieldName: String = js.native
+  var fieldName: String
   
   /**
     * Ordering direction.
     */
-  var sortOrder: js.UndefOr[orderString] = js.native
+  var sortOrder: js.UndefOr[orderString] = js.undefined
 }
 object OrderByElement {
   

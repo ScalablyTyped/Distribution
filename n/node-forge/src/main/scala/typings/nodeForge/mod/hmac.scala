@@ -4,14 +4,16 @@ import typings.node.Buffer
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hmac {
   
-  @JSImport("node-forge", "hmac.create")
+  @JSImport("node-forge", "hmac")
   @js.native
-  def create(): HMAC = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): HMAC = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HMAC]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.nodeForgeStrings.sha1

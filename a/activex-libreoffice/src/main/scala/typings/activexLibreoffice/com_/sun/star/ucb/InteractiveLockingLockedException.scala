@@ -4,22 +4,22 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error indicating that the resource is locked.
   * @since OOo 3.3
   */
-@js.native
-trait InteractiveLockingLockedException extends InteractiveLockingException {
+trait InteractiveLockingLockedException
+  extends StObject
+     with InteractiveLockingException {
   
   /**
     * The owner of the lock.
     *
     * `TRUE` , the lock has been obtained by this OOo session. `FALSE` the lock has been obtained by another principal.
     */
-  var SelfOwned: Boolean = js.native
+  var SelfOwned: Boolean
 }
 object InteractiveLockingLockedException {
   

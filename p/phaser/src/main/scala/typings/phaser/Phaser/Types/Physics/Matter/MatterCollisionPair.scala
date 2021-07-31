@@ -4,91 +4,89 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterCollisionPair extends StObject {
   
   /**
     * An array containing all of the active contacts between bodies A and B.
     */
-  var activeContacts: js.Array[Vector] = js.native
+  var activeContacts: js.Array[Vector]
   
   /**
     * A reference to the first body involved in the collision.
     */
-  var bodyA: BodyType = js.native
+  var bodyA: BodyType
   
   /**
     * A reference to the second body involved in the collision.
     */
-  var bodyB: BodyType = js.native
+  var bodyB: BodyType
   
   /**
     * The collision data object.
     */
-  var collision: MatterCollisionData = js.native
+  var collision: MatterCollisionData
   
   /**
     * Has Matter determined the collision are being active yet?
     */
-  var confirmedActive: Boolean = js.native
+  var confirmedActive: Boolean
   
   /**
     * The resulting friction from the collision.
     */
-  var friction: Double = js.native
+  var friction: Double
   
   /**
     * The resulting static friction from the collision.
     */
-  var frictionStatic: Double = js.native
+  var frictionStatic: Double
   
   /**
     * The unique auto-generated collision pair id. A combination of the body A and B IDs.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The resulting inverse mass from the collision.
     */
-  var inverseMass: Double = js.native
+  var inverseMass: Double
   
   /**
     * Is the collision still active or not?
     */
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
   /**
     * Is either body A or B a sensor?
     */
-  var isSensor: Boolean = js.native
+  var isSensor: Boolean
   
   /**
     * The resulting restitution from the collision.
     */
-  var restitution: Double = js.native
+  var restitution: Double
   
   /**
     * The amount of separation that occured between bodies A and B.
     */
-  var separation: Double = js.native
+  var separation: Double
   
   /**
     * The resulting slop from the collision.
     */
-  var slop: Double = js.native
+  var slop: Double
   
   /**
     * The timestamp when the collision pair was created.
     */
-  var timeCreated: Double = js.native
+  var timeCreated: Double
   
   /**
     * The timestamp when the collision pair was most recently updated.
     */
-  var timeUpdated: Double = js.native
+  var timeUpdated: Double
 }
 object MatterCollisionPair {
   

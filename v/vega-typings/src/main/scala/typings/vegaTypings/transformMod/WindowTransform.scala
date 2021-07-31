@@ -6,36 +6,36 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowTransform extends _Transforms {
+trait WindowTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   
-  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.native
+  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.undefined
   
-  var frame: js.UndefOr[(Vector2[Double | SignalRef | Null]) | SignalRef] = js.native
+  var frame: js.UndefOr[(Vector2[Double | SignalRef | Null]) | SignalRef] = js.undefined
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var ignorePeers: js.UndefOr[Boolean | SignalRef] = js.native
+  var ignorePeers: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var ops: js.UndefOr[js.Array[AggregateOp | WindowOnlyOp | SignalRef]] = js.native
+  var ops: js.UndefOr[js.Array[AggregateOp | WindowOnlyOp | SignalRef]] = js.undefined
   
-  var params: js.UndefOr[(js.Array[Double | SignalRef | Null]) | SignalRef] = js.native
+  var params: js.UndefOr[(js.Array[Double | SignalRef | Null]) | SignalRef] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: window = js.native
+  var `type`: window
 }
 object WindowTransform {
   
   @scala.inline
-  def apply(`type`: window): WindowTransform = {
+  def apply(): WindowTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("window")
     __obj.asInstanceOf[WindowTransform]
   }
   

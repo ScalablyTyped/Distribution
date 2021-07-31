@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait InputQuestion[T /* <: Answers */] extends InputQuestionOptions[T] {
+trait InputQuestion[T /* <: Answers */]
+  extends StObject
+     with InputQuestionOptions[T] {
   
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_InputQuestion: js.UndefOr[input] = js.native
+  var type_InputQuestion: js.UndefOr[input] = js.undefined
 }
 object InputQuestion {
   
@@ -30,7 +30,7 @@ object InputQuestion {
   }
   
   @scala.inline
-  implicit class InputQuestionMutableBuilder[Self <: InputQuestion[_], T /* <: Answers */] (val x: Self with InputQuestion[T]) extends AnyVal {
+  implicit class InputQuestionMutableBuilder[Self <: InputQuestion[?], T /* <: Answers */] (val x: Self & InputQuestion[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: input): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

@@ -2,34 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogicalExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var operator: LogicalOperator = js.native
+  var operator: LogicalOperator
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_LogicalExpression: typings.estree.estreeStrings.LogicalExpression = js.native
+  var type_LogicalExpression: typings.estree.estreeStrings.LogicalExpression
 }
 object LogicalExpression {
   
   @scala.inline
-  def apply(
-    left: Expression,
-    operator: LogicalOperator,
-    right: Expression,
-    `type`: typings.estree.estreeStrings.LogicalExpression
-  ): LogicalExpression = {
+  def apply(left: Expression, operator: LogicalOperator, right: Expression): LogicalExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[LogicalExpression]
   }
   

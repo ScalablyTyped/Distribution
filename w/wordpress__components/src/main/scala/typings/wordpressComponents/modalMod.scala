@@ -9,7 +9,6 @@ import typings.wordpressComponents.anon.Describedby
 import typings.wordpressComponents.modalMod.Modal.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -28,37 +27,38 @@ object modalMod {
   
   object Modal {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLDivElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLDivElement] {
       
-      var aria: js.UndefOr[Describedby] = js.native
+      var aria: js.UndefOr[Describedby] = js.undefined
       
       /**
         * `className` that is applied to the `document.body` while the modal is open.
         * @defaultValue "modal-open"
         */
-      var bodyOpenClassName: js.UndefOr[String] = js.native
+      var bodyOpenClassName: js.UndefOr[String] = js.undefined
       
       @JSName("children")
-      var children_Props: ReactNode = js.native
+      var children_Props: ReactNode
       
       /**
         * Label for the close button.
         * @defaultValue "Close dialog"
         */
-      var closeButtonLabel: js.UndefOr[String] = js.native
+      var closeButtonLabel: js.UndefOr[String] = js.undefined
       
       /**
         * If this property is true, it will focus the first tabbable element
         * rendered in the modal.
         * @defaultValue true
         */
-      var focusOnMount: js.UndefOr[Boolean] = js.native
+      var focusOnMount: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Icon component to render before the title.
         */
-      var icon: js.UndefOr[ReactNode] = js.native
+      var icon: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * If this property is set to false, the modal will not display a close
@@ -66,25 +66,25 @@ object modalMod {
         * @defaultValue true
         * @deprecated Use isDismissible
         */
-      var isDismissable: js.UndefOr[Boolean] = js.native
+      var isDismissable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If this property is set to false, the modal will not display a close
         * icon and cannot be dismissed.
         * @defaultValue true
         */
-      var isDismissible: js.UndefOr[Boolean] = js.native
+      var isDismissible: js.UndefOr[Boolean] = js.undefined
       
       /**
         * This function is called to indicate that the modal should be closed.
         */
-      def onRequestClose(): Unit = js.native
+      def onRequestClose(): Unit
       
       /**
         * If this property is added, it will an additional class name to the
         * modal overlay div.
         */
-      var overlayClassName: js.UndefOr[String] = js.native
+      var overlayClassName: js.UndefOr[String] = js.undefined
       
       /**
         * If this property is added, it will determine whether the modal
@@ -92,21 +92,21 @@ object modalMod {
         * content.
         * @defaultValue true
         */
-      var shouldCloseOnClickOutside: js.UndefOr[Boolean] = js.native
+      var shouldCloseOnClickOutside: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If this property is added, it will determine whether the modal
         * requests to close when the escape key is pressed.
         * @defaultValue true
         */
-      var shouldCloseOnEsc: js.UndefOr[Boolean] = js.native
+      var shouldCloseOnEsc: js.UndefOr[Boolean] = js.undefined
       
       /**
         * This property is used as the modal header's title. It is required
         * for a11y reasons.
         */
       @JSName("title")
-      var title_Props: String = js.native
+      var title_Props: String
     }
     object Props {
       

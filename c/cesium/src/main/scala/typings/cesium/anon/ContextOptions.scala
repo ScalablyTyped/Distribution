@@ -6,35 +6,33 @@ import typings.std.Element
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextOptions extends StObject {
   
-  var canvas: HTMLCanvasElement = js.native
+  var canvas: HTMLCanvasElement
   
-  var contextOptions: js.UndefOr[js.Any] = js.native
+  var contextOptions: js.UndefOr[js.Any] = js.undefined
   
-  var creditContainer: js.UndefOr[Element] = js.native
+  var creditContainer: js.UndefOr[Element] = js.undefined
   
-  var creditViewport: js.UndefOr[Element] = js.native
+  var creditViewport: js.UndefOr[Element] = js.undefined
   
-  var mapMode2D: js.UndefOr[MapMode2D] = js.native
+  var mapMode2D: js.UndefOr[MapMode2D] = js.undefined
   
-  var mapProjection: js.UndefOr[MapProjection] = js.native
+  var mapProjection: js.UndefOr[MapProjection] = js.undefined
   
-  var maximumRenderTimeChange: js.UndefOr[Double] = js.native
+  var maximumRenderTimeChange: js.UndefOr[Double] = js.undefined
   
-  var orderIndependentTranslucency: js.UndefOr[Boolean] = js.native
+  var orderIndependentTranslucency: js.UndefOr[Boolean] = js.undefined
   
-  var requestRenderMode: js.UndefOr[Boolean] = js.native
+  var requestRenderMode: js.UndefOr[Boolean] = js.undefined
   
-  var scene3DOnly: js.UndefOr[Boolean] = js.native
+  var scene3DOnly: js.UndefOr[Boolean] = js.undefined
   
-  var shadows: js.UndefOr[Boolean] = js.native
+  var shadows: js.UndefOr[Boolean] = js.undefined
   
-  var terrainExaggeration: js.UndefOr[Double] = js.native
+  var terrainExaggeration: js.UndefOr[Double] = js.undefined
 }
 object ContextOptions {
   

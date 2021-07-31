@@ -2,7 +2,6 @@ package typings.antdMobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBarPropsTypeMod {
@@ -68,38 +67,37 @@ object searchBarPropsTypeMod {
     def showCancelButton_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showCancelButton")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait SearchBarPropsType extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var cancelText: js.UndefOr[String] = js.native
+    var cancelText: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onClear: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onClear: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var showCancelButton: js.UndefOr[Boolean] = js.native
+    var showCancelButton: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SearchBarPropsType {
     
@@ -204,14 +202,13 @@ object searchBarPropsTypeMod {
     }
   }
   
-  @js.native
   trait SearchBarState extends StObject {
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SearchBarState {
     

@@ -3,7 +3,6 @@ package typings.officeJs.Excel
 import typings.officeJs.officeJsStrings.WorksheetSingleClicked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.10]
   */
-@js.native
 trait WorksheetSingleClickedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait WorksheetSingleClickedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -29,7 +27,7 @@ trait WorksheetSingleClickedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /**
     *
@@ -37,7 +35,7 @@ trait WorksheetSingleClickedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var offsetY: Double = js.native
+  var offsetY: Double
   
   /**
     *
@@ -45,7 +43,7 @@ trait WorksheetSingleClickedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var `type`: WorksheetSingleClicked = js.native
+  var `type`: WorksheetSingleClicked
   
   /**
     *
@@ -53,20 +51,14 @@ trait WorksheetSingleClickedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetSingleClickedEventArgs {
   
   @scala.inline
-  def apply(
-    address: String,
-    offsetX: Double,
-    offsetY: Double,
-    `type`: WorksheetSingleClicked,
-    worksheetId: String
-  ): WorksheetSingleClickedEventArgs = {
+  def apply(address: String, offsetX: Double, offsetY: Double, worksheetId: String): WorksheetSingleClickedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetSingleClicked")
     __obj.asInstanceOf[WorksheetSingleClickedEventArgs]
   }
   

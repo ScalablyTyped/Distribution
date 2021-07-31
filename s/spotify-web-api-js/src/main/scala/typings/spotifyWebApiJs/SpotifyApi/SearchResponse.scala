@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,20 +16,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<spotify-web-api-js.SpotifyApi.PlaylistSearchResponse> */
 /* Inlined parent std.Partial<spotify-web-api-js.SpotifyApi.ShowSearchResponse> */
 /* Inlined parent std.Partial<spotify-web-api-js.SpotifyApi.EpisodeSearchResponse> */
-@js.native
 trait SearchResponse extends StObject {
   
-  var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.native
+  var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.undefined
   
-  var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.native
+  var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.undefined
   
-  var episodes: js.UndefOr[PagingObject[EpisodeObjectSimplified]] = js.native
+  var episodes: js.UndefOr[PagingObject[EpisodeObjectSimplified]] = js.undefined
   
-  var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.native
+  var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.undefined
   
-  var shows: js.UndefOr[PagingObject[ShowObjectSimplified]] = js.native
+  var shows: js.UndefOr[PagingObject[ShowObjectSimplified]] = js.undefined
   
-  var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.native
+  var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.undefined
 }
 object SearchResponse {
   

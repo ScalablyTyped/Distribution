@@ -2,36 +2,34 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a stream of data, either as input to be processed or as output of
   * a streaming Dataflow job.
   */
-@js.native
 trait SchemaStreamLocation extends StObject {
   
   /**
     * The stream is a custom source.
     */
-  var customSourceLocation: js.UndefOr[SchemaCustomSourceLocation] = js.native
+  var customSourceLocation: js.UndefOr[SchemaCustomSourceLocation] = js.undefined
   
   /**
     * The stream is a pubsub stream.
     */
-  var pubsubLocation: js.UndefOr[SchemaPubsubLocation] = js.native
+  var pubsubLocation: js.UndefOr[SchemaPubsubLocation] = js.undefined
   
   /**
     * The stream is a streaming side input.
     */
-  var sideInputLocation: js.UndefOr[SchemaStreamingSideInputLocation] = js.native
+  var sideInputLocation: js.UndefOr[SchemaStreamingSideInputLocation] = js.undefined
   
   /**
     * The stream is part of another computation within the current streaming
     * Dataflow job.
     */
-  var streamingStageLocation: js.UndefOr[SchemaStreamingStageLocation] = js.native
+  var streamingStageLocation: js.UndefOr[SchemaStreamingStageLocation] = js.undefined
 }
 object SchemaStreamLocation {
   

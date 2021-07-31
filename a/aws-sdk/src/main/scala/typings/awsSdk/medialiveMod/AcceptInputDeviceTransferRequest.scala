@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptInputDeviceTransferRequest extends StObject {
   
   /**
     * The unique ID of the input device to accept. For example, hd-123456789abcdef.
     */
-  var InputDeviceId: string = js.native
+  var InputDeviceId: string
 }
 object AcceptInputDeviceTransferRequest {
   

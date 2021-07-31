@@ -7,7 +7,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fillerMod extends Shortcut {
@@ -17,22 +16,21 @@ object fillerMod extends Shortcut {
     */
   @JSImport("rc-virtual-list/es/Filler", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[FillerProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[FillerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
   trait FillerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /** Virtual filler height. Should be `count * itemMinHeight` */
-    var height: Double = js.native
+    var height: Double
     
     /** Set offset of visible items. Should be the top of start item position */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var onInnerResize: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInnerResize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object FillerProps {
     
@@ -74,8 +72,8 @@ object fillerMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[FillerProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[FillerProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `fillerMod.foo` */
-  override def _to: ForwardRefExoticComponent[FillerProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[FillerProps & RefAttributes[HTMLDivElement]] = default
 }

@@ -3,22 +3,20 @@ package typings.leafletRoutingMachine.mod.Routing_
 import typings.leaflet.mod.LatLng_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
-@js.native
 trait IRoute extends StObject {
   
-  var coordinates: js.UndefOr[js.Array[LatLng_]] = js.native
+  var coordinates: js.UndefOr[js.Array[LatLng_]] = js.undefined
   
-  var instructions: js.UndefOr[js.Array[IInstruction]] = js.native
+  var instructions: js.UndefOr[js.Array[IInstruction]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var summary: js.UndefOr[IRouteSummary] = js.native
+  var summary: js.UndefOr[IRouteSummary] = js.undefined
   
-  var waypoints: js.UndefOr[js.Array[LatLng_]] = js.native
+  var waypoints: js.UndefOr[js.Array[LatLng_]] = js.undefined
 }
 object IRoute {
   

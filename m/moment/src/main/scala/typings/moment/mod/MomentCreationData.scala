@@ -2,21 +2,19 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentCreationData extends StObject {
   
-  var format: js.UndefOr[MomentFormatSpecification] = js.native
+  var format: js.UndefOr[MomentFormatSpecification] = js.undefined
   
-  var input: MomentInput = js.native
+  var input: MomentInput
   
-  var isUTC: Boolean = js.native
+  var isUTC: Boolean
   
-  var locale: Locale_ = js.native
+  var locale: Locale_
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object MomentCreationData {
   

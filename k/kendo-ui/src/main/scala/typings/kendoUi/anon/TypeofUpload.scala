@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Upload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofUpload extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Upload = js.native
+  def extend(proto: js.Object): Upload
   
   /* static member */
-  var fn: Upload = js.native
+  var fn: Upload
 }
 object TypeofUpload {
   

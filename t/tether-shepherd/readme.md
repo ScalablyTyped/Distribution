@@ -12,7 +12,7 @@ Guide your users through a tour of your app.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 279964 |
+| # downloads        | 239938 |
 | # stars            | 9 |
 
 ## Links

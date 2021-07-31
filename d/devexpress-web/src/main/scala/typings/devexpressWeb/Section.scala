@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a section in the document.
   */
-@js.native
 trait Section extends StObject {
   
   /**
     * Provides access to the section's footers.
     */
-  val footers: js.Array[HeaderFooter] = js.native
+  val footers: js.Array[HeaderFooter]
   
   /**
     * Provides access to the section's headers.
     */
-  val headers: js.Array[HeaderFooter] = js.native
+  val headers: js.Array[HeaderFooter]
   
   /**
     * Gets the text buffer interval occupied by the current section element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Gets the section's character length.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Gets the section's start position in the document.
     */
-  val start: Double = js.native
+  val start: Double
 }
 object Section {
   

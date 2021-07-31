@@ -2,29 +2,29 @@ package typings.nodejsLicenseFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nodejs-license-file", "generate")
+  @JSImport("nodejs-license-file", JSImport.Namespace)
   @js.native
-  def generate(options: GenerateOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodejs-license-file", "parse")
-  @js.native
-  def parse(options: ParseOptions): License = js.native
+  @scala.inline
+  def generate(options: GenerateOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parse(options: ParseOptions): License = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[License]
+  
   trait GenerateOptions extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var privateKey: js.UndefOr[String] = js.native
+    var privateKey: js.UndefOr[String] = js.undefined
     
-    var privateKeyPath: js.UndefOr[String] = js.native
+    var privateKeyPath: js.UndefOr[String] = js.undefined
     
-    var template: String = js.native
+    var template: String
   }
   object GenerateOptions {
     
@@ -57,14 +57,13 @@ object mod {
     }
   }
   
-  @js.native
   trait License extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var serial: String = js.native
+    var serial: String
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object License {
     
@@ -88,18 +87,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var licenseFile: js.UndefOr[String] = js.native
+    var licenseFile: js.UndefOr[String] = js.undefined
     
-    var licenseFilePath: js.UndefOr[String] = js.native
+    var licenseFilePath: js.UndefOr[String] = js.undefined
     
-    var publicKey: js.UndefOr[String] = js.native
+    var publicKey: js.UndefOr[String] = js.undefined
     
-    var publicKeyPath: js.UndefOr[String] = js.native
+    var publicKeyPath: js.UndefOr[String] = js.undefined
     
-    var template: String = js.native
+    var template: String
   }
   object ParseOptions {
     

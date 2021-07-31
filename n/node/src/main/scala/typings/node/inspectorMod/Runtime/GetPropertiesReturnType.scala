@@ -2,26 +2,24 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPropertiesReturnType extends StObject {
   
   /**
     * Exception details.
     */
-  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.native
+  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   
   /**
     * Internal object properties (only of the element itself).
     */
-  var internalProperties: js.UndefOr[js.Array[InternalPropertyDescriptor]] = js.native
+  var internalProperties: js.UndefOr[js.Array[InternalPropertyDescriptor]] = js.undefined
   
   /**
     * Object properties.
     */
-  var result: js.Array[PropertyDescriptor] = js.native
+  var result: js.Array[PropertyDescriptor]
 }
 object GetPropertiesReturnType {
   

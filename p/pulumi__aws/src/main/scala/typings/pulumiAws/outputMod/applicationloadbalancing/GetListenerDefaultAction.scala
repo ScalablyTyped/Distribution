@@ -2,25 +2,23 @@ package typings.pulumiAws.outputMod.applicationloadbalancing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetListenerDefaultAction extends StObject {
   
-  var authenticateCognitos: js.Array[GetListenerDefaultActionAuthenticateCognito] = js.native
+  var authenticateCognitos: js.Array[GetListenerDefaultActionAuthenticateCognito]
   
-  var authenticateOidcs: js.Array[GetListenerDefaultActionAuthenticateOidc] = js.native
+  var authenticateOidcs: js.Array[GetListenerDefaultActionAuthenticateOidc]
   
-  var fixedResponses: js.Array[GetListenerDefaultActionFixedResponse] = js.native
+  var fixedResponses: js.Array[GetListenerDefaultActionFixedResponse]
   
-  var order: Double = js.native
+  var order: Double
   
-  var redirects: js.Array[GetListenerDefaultActionRedirect] = js.native
+  var redirects: js.Array[GetListenerDefaultActionRedirect]
   
-  var targetGroupArn: String = js.native
+  var targetGroupArn: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GetListenerDefaultAction {
   

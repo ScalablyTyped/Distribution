@@ -3,54 +3,52 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputs extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Kinesis Firehose configuration for the streaming source. Conflicts with `kinesisStream`.
     * See Kinesis Firehose below for more details.
     */
-  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationInputsKinesisFirehose]] = js.native
+  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationInputsKinesisFirehose]] = js.undefined
   
   /**
     * The Kinesis Stream configuration for the streaming source. Conflicts with `kinesisFirehose`.
     * See Kinesis Stream below for more details.
     */
-  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationInputsKinesisStream]] = js.native
+  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationInputsKinesisStream]] = js.undefined
   
   /**
     * The Name Prefix to use when creating an in-application stream.
     */
-  var namePrefix: Input[String] = js.native
+  var namePrefix: Input[String]
   
   /**
     * The number of Parallel in-application streams to create.
     * See Parallelism below for more details.
     */
-  var parallelism: js.UndefOr[Input[AnalyticsApplicationInputsParallelism]] = js.native
+  var parallelism: js.UndefOr[Input[AnalyticsApplicationInputsParallelism]] = js.undefined
   
   /**
     * The Processing Configuration to transform records as they are received from the stream.
     * See Processing Configuration below for more details.
     */
-  var processingConfiguration: js.UndefOr[Input[AnalyticsApplicationInputsProcessingConfiguration]] = js.native
+  var processingConfiguration: js.UndefOr[Input[AnalyticsApplicationInputsProcessingConfiguration]] = js.undefined
   
   /**
     * The Schema format of the data in the streaming source. See Source Schema below for more details.
     */
-  var schema: Input[AnalyticsApplicationInputsSchema] = js.native
+  var schema: Input[AnalyticsApplicationInputsSchema]
   
-  var startingPositionConfigurations: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]] = js.native
+  var startingPositionConfigurations: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]] = js.undefined
   
-  var streamNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var streamNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object AnalyticsApplicationInputs {
   

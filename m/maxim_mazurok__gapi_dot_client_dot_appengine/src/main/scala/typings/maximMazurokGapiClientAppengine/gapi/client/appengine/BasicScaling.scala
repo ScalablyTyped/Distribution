@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicScaling extends StObject {
   
   /** Duration of time after the last request that an instance must wait before the instance is shut down. */
-  var idleTimeout: js.UndefOr[String] = js.native
+  var idleTimeout: js.UndefOr[String] = js.undefined
   
   /** Maximum number of instances to create for this version. */
-  var maxInstances: js.UndefOr[Double] = js.native
+  var maxInstances: js.UndefOr[Double] = js.undefined
 }
 object BasicScaling {
   

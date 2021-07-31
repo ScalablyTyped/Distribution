@@ -10,12 +10,15 @@ A foreign function interface (FFI) for Node.js, N-API style
 | ------------------ | :-------------: |
 | Full name          | ffi-napi |
 | Keywords           | foreign, function, interface, ffi, libffi, binding, c, napi, stable |
-| # releases         | 8 |
-| # dependents       | 94 |
-| # downloads        | 395521 |
+| # releases         | 9 |
+| # dependents       | 122 |
+| # downloads        | 614977 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](http://github.com/node-ffi-napi/node-ffi-napi)
+- [Bugs](http://github.com/node-ffi-napi/node-ffi-napi/issues)
+- [Repository](https://github.com/node-ffi-napi/node-ffi-napi)
 - [Npm](https://www.npmjs.com/package/ffi-napi)
     
 

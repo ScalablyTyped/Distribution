@@ -4,19 +4,17 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.core.template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoExpandAll extends StObject {
   
-  var autoExpandAll: js.UndefOr[Boolean] = js.native
+  var autoExpandAll: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* detailElement */ dxElement, /* detailInfo */ Watch, _])
-  ] = js.native
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* detailElement */ dxElement, /* detailInfo */ Watch, js.Any])
+  ] = js.undefined
 }
 object AutoExpandAll {
   
@@ -42,10 +40,10 @@ object AutoExpandAll {
     def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def setTemplate(value: template | (js.Function2[/* detailElement */ dxElement, /* detailInfo */ Watch, _])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    def setTemplate(value: template | (js.Function2[/* detailElement */ dxElement, /* detailInfo */ Watch, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateFunction2(value: (/* detailElement */ dxElement, /* detailInfo */ Watch) => _): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    def setTemplateFunction2(value: (/* detailElement */ dxElement, /* detailInfo */ Watch) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
     @scala.inline
     def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)

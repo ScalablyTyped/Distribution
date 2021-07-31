@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait PropertySet
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XFastPropertySet
      with XMultiPropertySet
      with XPropertyAccess

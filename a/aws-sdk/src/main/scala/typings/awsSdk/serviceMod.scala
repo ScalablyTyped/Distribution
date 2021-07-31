@@ -10,7 +10,6 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
@@ -28,7 +27,7 @@ object serviceMod {
       */
     var apiVersions: js.Array[String] = js.native
     
-    var config: ConfigBase with ServiceConfigurationOptions = js.native
+    var config: ConfigBase & ServiceConfigurationOptions = js.native
     
     /**
       * Defines a new Service class using a service identifier and list of versions including an optional set of features (functions) to apply to the class prototype.
@@ -51,18 +50,18 @@ object serviceMod {
       * @param {string} operation - the name of the operation to call on the service.
       * @param {map} params - a map of input options for the operation. 
       */
-    def makeRequest(operation: String): Request[_, AWSError] = js.native
-    def makeRequest(
-      operation: String,
-      params: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[_, AWSError] = js.native
-    def makeRequest(operation: String, params: StringDictionary[js.Any]): Request[_, AWSError] = js.native
+    def makeRequest(operation: String): Request[js.Any, AWSError] = js.native
+    def makeRequest(operation: String, params: StringDictionary[js.Any]): Request[js.Any, AWSError] = js.native
     def makeRequest(
       operation: String,
       params: StringDictionary[js.Any],
       callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[_, AWSError] = js.native
+    ): Request[js.Any, AWSError] = js.native
+    def makeRequest(
+      operation: String,
+      params: Unit,
+      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
+    ): Request[js.Any, AWSError] = js.native
     
     /**
       * Calls an operation on a service with the given input parameters, without any authentication data.
@@ -70,40 +69,36 @@ object serviceMod {
       * @param {string} operation - the name of the operation to call on the service.
       * @param {map} params - a map of input options for the operation. 
       */
-    def makeUnauthenticatedRequest(operation: String): Request[_, AWSError] = js.native
-    def makeUnauthenticatedRequest(
-      operation: String,
-      params: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[_, AWSError] = js.native
-    def makeUnauthenticatedRequest(operation: String, params: StringDictionary[js.Any]): Request[_, AWSError] = js.native
+    def makeUnauthenticatedRequest(operation: String): Request[js.Any, AWSError] = js.native
+    def makeUnauthenticatedRequest(operation: String, params: StringDictionary[js.Any]): Request[js.Any, AWSError] = js.native
     def makeUnauthenticatedRequest(
       operation: String,
       params: StringDictionary[js.Any],
       callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[_, AWSError] = js.native
+    ): Request[js.Any, AWSError] = js.native
+    def makeUnauthenticatedRequest(
+      operation: String,
+      params: Unit,
+      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
+    ): Request[js.Any, AWSError] = js.native
     
     /**
       * Override this method to setup any custom request listeners for each new request to the service.
       */
-    def setupRequestListeners(request: Request[_, AWSError]): Unit = js.native
+    def setupRequestListeners(request: Request[js.Any, AWSError]): Unit = js.native
     
     /**
       * Waits for a given state.
       */
-    def waitFor(state: String): Request[_, AWSError] = js.native
-    def waitFor(state: String, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[_, AWSError] = js.native
-    def waitFor(
-      state: String,
-      params: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[_, AWSError] = js.native
-    def waitFor(state: String, params: Dictkey): Request[_, AWSError] = js.native
+    def waitFor(state: String): Request[js.Any, AWSError] = js.native
+    def waitFor(state: String, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[js.Any, AWSError] = js.native
+    def waitFor(state: String, params: Unit, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[js.Any, AWSError] = js.native
+    def waitFor(state: String, params: Dictkey): Request[js.Any, AWSError] = js.native
     def waitFor(
       state: String,
       params: Dictkey,
       callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
-    ): Request[_, AWSError] = js.native
+    ): Request[js.Any, AWSError] = js.native
   }
   
   @js.native
@@ -122,18 +117,17 @@ object serviceMod {
     var params: js.UndefOr[StringDictionary[js.Any]] = js.native
   }
   
-  @js.native
   trait WaiterConfiguration extends StObject {
     
     /**
       * The number of seconds to wait between requests
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of requests to send while waiting
       */
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
   }
   object WaiterConfiguration {
     

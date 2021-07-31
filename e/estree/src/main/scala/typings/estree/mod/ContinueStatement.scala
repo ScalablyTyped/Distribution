@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var label: js.UndefOr[Identifier | Null] = js.native
+  var label: js.UndefOr[Identifier | Null] = js.undefined
   
   @JSName("type")
-  var type_ContinueStatement: typings.estree.estreeStrings.ContinueStatement = js.native
+  var type_ContinueStatement: typings.estree.estreeStrings.ContinueStatement
 }
 object ContinueStatement {
   
   @scala.inline
-  def apply(`type`: typings.estree.estreeStrings.ContinueStatement): ContinueStatement = {
+  def apply(): ContinueStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[ContinueStatement]
   }
   

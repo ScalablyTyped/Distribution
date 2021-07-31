@@ -4,17 +4,15 @@ import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod.ComplexFormatterOp
 import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod.FormatterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterOptionsMod {
   
-  @js.native
   trait ComplexFormatterPreferences[T /* <: FormatterType */] extends StObject {
     
-    var options: js.UndefOr[ComplexFormatterOptions[T]] = js.native
+    var options: js.UndefOr[ComplexFormatterOptions[T]] = js.undefined
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object ComplexFormatterPreferences {
     
@@ -26,7 +24,7 @@ object formatterOptionsMod {
     }
     
     @scala.inline
-    implicit class ComplexFormatterPreferencesMutableBuilder[Self <: ComplexFormatterPreferences[_], T /* <: FormatterType */] (val x: Self with ComplexFormatterPreferences[T]) extends AnyVal {
+    implicit class ComplexFormatterPreferencesMutableBuilder[Self <: ComplexFormatterPreferences[?], T /* <: FormatterType */] (val x: Self & ComplexFormatterPreferences[T]) extends AnyVal {
       
       @scala.inline
       def setOptions(value: ComplexFormatterOptions[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

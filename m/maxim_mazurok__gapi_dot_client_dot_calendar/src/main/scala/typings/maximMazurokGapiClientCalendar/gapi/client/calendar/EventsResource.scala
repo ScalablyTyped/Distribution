@@ -16,7 +16,6 @@ import typings.maximMazurokGapiClientCalendar.anon.SupportsAttachments
 import typings.maximMazurokGapiClientCalendar.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

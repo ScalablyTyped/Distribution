@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,21 +19,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Kai Sommerfeld
   * @version 1.0
   */
-@js.native
-trait NameClashResolveRequest extends ClassifiedInteractionRequest {
+trait NameClashResolveRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** contains the clashing name. */
-  var ClashingName: String = js.native
+  var ClashingName: String
   
   /**
     * contains a proposal for a new new, non-clashing name.
     *
     * This field may be left empty if the implementation is not able to suggest a new name.
     */
-  var ProposedNewName: String = js.native
+  var ProposedNewName: String
   
   /** contains the URL of the folder that contains the clashing resource. */
-  var TargetFolderURL: String = js.native
+  var TargetFolderURL: String
 }
 object NameClashResolveRequest {
   

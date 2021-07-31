@@ -2,18 +2,16 @@ package typings.expressValidator.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<express-validator.express-validator/src/matched-data.MatchedDataOptions> */
-@js.native
 trait PartialMatchedDataOptions extends StObject {
   
-  var includeOptionals: js.UndefOr[Boolean] = js.native
+  var includeOptionals: js.UndefOr[Boolean] = js.undefined
   
-  var locations: js.UndefOr[js.Array[typings.expressValidator.baseMod.Location]] = js.native
+  var locations: js.UndefOr[js.Array[typings.expressValidator.baseMod.Location]] = js.undefined
   
-  var onlyValidData: js.UndefOr[Boolean] = js.native
+  var onlyValidData: js.UndefOr[Boolean] = js.undefined
 }
 object PartialMatchedDataOptions {
   

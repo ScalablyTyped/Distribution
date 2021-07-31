@@ -2,31 +2,29 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GravityEnum extends StObject {
   
-  var center: Double = js.native
+  var center: Double
   
-  var centre: Double = js.native
+  var centre: Double
   
-  var east: Double = js.native
+  var east: Double
   
-  var north: Double = js.native
+  var north: Double
   
-  var northeast: Double = js.native
+  var northeast: Double
   
-  var northwest: Double = js.native
+  var northwest: Double
   
-  var south: Double = js.native
+  var south: Double
   
-  var southeast: Double = js.native
+  var southeast: Double
   
-  var southwest: Double = js.native
+  var southwest: Double
   
-  var west: Double = js.native
+  var west: Double
 }
 object GravityEnum {
   

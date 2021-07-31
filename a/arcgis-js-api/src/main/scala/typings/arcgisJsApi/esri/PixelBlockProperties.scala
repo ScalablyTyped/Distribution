@@ -20,10 +20,8 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PixelBlockProperties extends StObject {
   
   /**
@@ -31,28 +29,28 @@ trait PixelBlockProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#height)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of nodata mask.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#mask)
     */
-  var mask: js.UndefOr[js.Array[Double] | Uint8Array] = js.native
+  var mask: js.UndefOr[js.Array[Double] | Uint8Array] = js.undefined
   
   /**
     * Indicates whether mask should be used as alpha values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#maskIsAlpha)
     */
-  var maskIsAlpha: js.UndefOr[Boolean] = js.native
+  var maskIsAlpha: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The pixel type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixelType)
     */
-  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.native
+  var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   
   /**
     * A two dimensional array representing the pixels from the Image Service displayed on the client.
@@ -61,28 +59,28 @@ trait PixelBlockProperties extends StObject {
     */
   var pixels: js.UndefOr[
     js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of objects containing numeric statistical properties.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#statistics)
     */
-  var statistics: js.UndefOr[js.Array[PixelBlockStatistics]] = js.native
+  var statistics: js.UndefOr[js.Array[PixelBlockStatistics]] = js.undefined
   
   /**
     * Number of valid pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#validPixelCount)
     */
-  var validPixelCount: js.UndefOr[Double] = js.native
+  var validPixelCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The width (or number of columns) of the PixelBlock in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#width)
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PixelBlockProperties {
   

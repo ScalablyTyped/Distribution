@@ -4,27 +4,25 @@ import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderErro
 import typings.winrtUwp.Windows.Security.Credentials.WebAccount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a delete account operation. */
-@js.native
 trait WebAccountProviderDeleteAccountOperation extends StObject {
   
   /** Gets the kind of web account provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
   
   /** Informs the activating app that the operation completed successfully. */
-  def reportCompleted(): Unit = js.native
+  def reportCompleted(): Unit
   
   /**
     * Informs the activating app that the operation encountered an error.
     * @param value The type of error encountered.
     */
-  def reportError(value: WebProviderError): Unit = js.native
+  def reportError(value: WebProviderError): Unit
   
   /** Gets the web account to delete. */
-  var webAccount: WebAccount = js.native
+  var webAccount: WebAccount
 }
 object WebAccountProviderDeleteAccountOperation {
   

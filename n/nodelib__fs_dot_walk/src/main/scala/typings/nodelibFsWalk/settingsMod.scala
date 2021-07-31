@@ -5,15 +5,40 @@ import typings.nodelibFsWalk.typesMod.Entry
 import typings.nodelibFsWalk.typesMod.Errno
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settingsMod {
   
   @JSImport("@nodelib/fs.walk/out/settings", JSImport.Default)
   @js.native
-  class default () extends Settings {
+  class default ()
+    extends StObject
+       with Settings {
     def this(_options: Options) = this()
+    
+    /* CompleteClass */
+    var _getValue: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _options: js.Any = js.native
+    
+    /* CompleteClass */
+    override val concurrency: Double = js.native
+    
+    /* CompleteClass */
+    override val deepFilter: DeepFilterFunction | Null = js.native
+    
+    /* CompleteClass */
+    override val entryFilter: EntryFilterFunction | Null = js.native
+    
+    /* CompleteClass */
+    override val errorFilter: ErrorFilterFunction | Null = js.native
+    
+    /* CompleteClass */
+    override val fsScandirSettings: typings.nodelibFsScandir.mod.Settings = js.native
+    
+    /* CompleteClass */
+    override val pathSegmentSeparator: String = js.native
   }
   
   type DeepFilterFunction = FilterFunction[Entry]
@@ -24,28 +49,27 @@ object settingsMod {
   
   type FilterFunction[T] = js.Function1[/* value */ T, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var deepFilter: js.UndefOr[DeepFilterFunction] = js.native
+    var deepFilter: js.UndefOr[DeepFilterFunction] = js.undefined
     
-    var entryFilter: js.UndefOr[EntryFilterFunction] = js.native
+    var entryFilter: js.UndefOr[EntryFilterFunction] = js.undefined
     
-    var errorFilter: js.UndefOr[ErrorFilterFunction] = js.native
+    var errorFilter: js.UndefOr[ErrorFilterFunction] = js.undefined
     
-    var followSymbolicLinks: js.UndefOr[Boolean] = js.native
+    var followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
     
-    var fs: js.UndefOr[PartialFileSystemAdapter] = js.native
+    var fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
     
-    var pathSegmentSeparator: js.UndefOr[String] = js.native
+    var pathSegmentSeparator: js.UndefOr[String] = js.undefined
     
-    var stats: js.UndefOr[Boolean] = js.native
+    var stats: js.UndefOr[Boolean] = js.undefined
     
-    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.native
+    var throwErrorOnBrokenSymbolicLink: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -120,26 +144,25 @@ object settingsMod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var _getValue: js.Any = js.native
+    var _getValue: js.Any
     
-    val _options: js.Any = js.native
+    val _options: js.Any
     
-    val basePath: js.UndefOr[String] = js.native
+    val basePath: js.UndefOr[String] = js.undefined
     
-    val concurrency: Double = js.native
+    val concurrency: Double
     
-    val deepFilter: DeepFilterFunction | Null = js.native
+    val deepFilter: DeepFilterFunction | Null
     
-    val entryFilter: EntryFilterFunction | Null = js.native
+    val entryFilter: EntryFilterFunction | Null
     
-    val errorFilter: ErrorFilterFunction | Null = js.native
+    val errorFilter: ErrorFilterFunction | Null
     
-    val fsScandirSettings: typings.nodelibFsScandir.mod.Settings = js.native
+    val fsScandirSettings: typings.nodelibFsScandir.mod.Settings
     
-    val pathSegmentSeparator: String = js.native
+    val pathSegmentSeparator: String
   }
   object Settings {
     
@@ -151,7 +174,7 @@ object settingsMod {
       fsScandirSettings: typings.nodelibFsScandir.mod.Settings,
       pathSegmentSeparator: String
     ): Settings = {
-      val __obj = js.Dynamic.literal(_getValue = _getValue.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], concurrency = concurrency.asInstanceOf[js.Any], fsScandirSettings = fsScandirSettings.asInstanceOf[js.Any], pathSegmentSeparator = pathSegmentSeparator.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_getValue = _getValue.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], concurrency = concurrency.asInstanceOf[js.Any], fsScandirSettings = fsScandirSettings.asInstanceOf[js.Any], pathSegmentSeparator = pathSegmentSeparator.asInstanceOf[js.Any], deepFilter = null, entryFilter = null, errorFilter = null)
       __obj.asInstanceOf[Settings]
     }
     

@@ -7,27 +7,27 @@ import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BezierCurve extends IModel {
+trait BezierCurve
+  extends StObject
+     with IModel {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
   @JSName("models")
-  var models_BezierCurve: IModelMap = js.native
+  var models_BezierCurve: IModelMap
   
   @JSName("origin")
-  var origin_BezierCurve: IPoint = js.native
+  var origin_BezierCurve: IPoint
   
   @JSName("paths")
-  var paths_BezierCurve: IPathMap = js.native
+  var paths_BezierCurve: IPathMap
   
-  var seed: IPathBezierSeed = js.native
+  var seed: IPathBezierSeed
   
   @JSName("type")
-  var type_BezierCurve: String = js.native
+  var type_BezierCurve: String
 }
 object BezierCurve {
   

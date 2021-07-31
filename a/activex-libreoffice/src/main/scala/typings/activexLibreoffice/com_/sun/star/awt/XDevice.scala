@@ -5,55 +5,55 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides information about a graphical output device and offers a factory for the **graphics** which provides write operations on the device. */
-@js.native
-trait XDevice extends XInterface {
+trait XDevice
+  extends StObject
+     with XInterface {
   
   /** returns the list of available font descriptors. */
-  val FontDescriptors: SafeArray[FontDescriptor] = js.native
+  val FontDescriptors: SafeArray[FontDescriptor]
   
   /** returns information about the device. */
-  val Info: DeviceInfo = js.native
+  val Info: DeviceInfo
   
   /**
     * creates a bitmap with the current device depth.
     *
     * If the specified area does not lie entirely in the device, the bits outside are not specified.
     */
-  def createBitmap(nX: Double, nY: Double, nWidth: Double, nHeight: Double): XBitmap = js.native
+  def createBitmap(nX: Double, nY: Double, nWidth: Double, nHeight: Double): XBitmap
   
   /**
     * creates a new device which is compatible with this one.
     *
     * If the device does not support the GETBITS device capability, this method returns `NULL` .
     */
-  def createDevice(nWidth: Double, nHeight: Double): XDevice = js.native
+  def createDevice(nWidth: Double, nHeight: Double): XDevice
   
   /**
     * creates a device compatible bitmap.
     *
     * The data of the bitmap is in process memory instead of in the device, so that the output operation is fast.
     */
-  def createDisplayBitmap(Bitmap: XBitmap): XDisplayBitmap = js.native
+  def createDisplayBitmap(Bitmap: XBitmap): XDisplayBitmap
   
   /** creates a new graphics whose output operation is directed to this device. */
-  def createGraphics(): XGraphics = js.native
+  def createGraphics(): XGraphics
   
   /**
     * returns information about a font offered by this device.
     * @param aDescriptor specifies the description of a font. The unit of measure is pixel for this device.
     * @returns the font of this device.
     */
-  def getFont(aDescriptor: FontDescriptor): XFont = js.native
+  def getFont(aDescriptor: FontDescriptor): XFont
   
   /** returns the list of available font descriptors. */
-  def getFontDescriptors(): SafeArray[FontDescriptor] = js.native
+  def getFontDescriptors(): SafeArray[FontDescriptor]
   
   /** returns information about the device. */
-  def getInfo(): DeviceInfo = js.native
+  def getInfo(): DeviceInfo
 }
 object XDevice {
   

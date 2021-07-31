@@ -2,41 +2,39 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSimulationApplicationRequest extends StObject {
   
   /**
     * The application information for the simulation application.
     */
-  var application: Arn = js.native
+  var application: Arn
   
   /**
     * The revision id for the robot application.
     */
-  var currentRevisionId: js.UndefOr[RevisionId] = js.native
+  var currentRevisionId: js.UndefOr[RevisionId] = js.undefined
   
   /**
     * The rendering engine for the simulation application.
     */
-  var renderingEngine: js.UndefOr[RenderingEngine] = js.native
+  var renderingEngine: js.UndefOr[RenderingEngine] = js.undefined
   
   /**
     * Information about the robot software suite (ROS distribution).
     */
-  var robotSoftwareSuite: RobotSoftwareSuite = js.native
+  var robotSoftwareSuite: RobotSoftwareSuite
   
   /**
     * The simulation software suite used by the simulation application.
     */
-  var simulationSoftwareSuite: SimulationSoftwareSuite = js.native
+  var simulationSoftwareSuite: SimulationSoftwareSuite
   
   /**
     * The sources of the simulation application.
     */
-  var sources: SourceConfigs = js.native
+  var sources: SourceConfigs
 }
 object UpdateSimulationApplicationRequest {
   

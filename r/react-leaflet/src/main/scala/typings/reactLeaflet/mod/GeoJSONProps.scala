@@ -10,14 +10,14 @@ import typings.leaflet.mod.PathOptions
 import typings.leaflet.mod.StyleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.LayerOptions because Already inherited
 - typings.leaflet.mod.GeoJSONOptions because var conflicts: attribution, pane. Inlined style, pointToLayer, onEachFeature, coordsToLatLng, filter
-- typings.reactLeaflet.mod.FeatureGroupEvents because var conflicts: onclick, oncontextmenu, ondblclick, onmouseout, onmouseover. Inlined onlayeradd, onlayerremove */ @js.native
-trait GeoJSONProps extends PathProps {
+- typings.reactLeaflet.mod.FeatureGroupEvents because var conflicts: onclick, oncontextmenu, ondblclick, onmouseout, onmouseover. Inlined onlayeradd, onlayerremove */ trait GeoJSONProps
+  extends StObject
+     with PathProps {
   
   /**
     * A Function that will be used for converting GeoJSON coordinates to LatLngs.
@@ -28,9 +28,9 @@ trait GeoJSONProps extends PathProps {
       /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]), 
       LatLng_
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var data: GeoJsonObject | js.Array[GeoJsonObject] = js.native
+  var data: GeoJsonObject | js.Array[GeoJsonObject]
   
   /**
     * A Function that will be used to decide whether to show a feature or not.
@@ -43,7 +43,7 @@ trait GeoJSONProps extends PathProps {
     * }
     * ```
     */
-  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, js.Any], Boolean]] = js.native
+  var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, js.Any], Boolean]] = js.undefined
   
   /**
     * A Function that will be called once for each created Feature, after it
@@ -57,11 +57,11 @@ trait GeoJSONProps extends PathProps {
     */
   var onEachFeature: js.UndefOr[
     js.Function2[/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onlayeradd: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.native
+  var onlayeradd: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.undefined
   
-  var onlayerremove: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.native
+  var onlayerremove: js.UndefOr[js.Function1[/* event */ LayerEvent, Unit]] = js.undefined
   
   /**
     * A Function defining how GeoJSON points spawn Leaflet layers.
@@ -82,7 +82,7 @@ trait GeoJSONProps extends PathProps {
       /* latlng */ LatLng_, 
       Layer
     ]
-  ] = js.native
+  ] = js.undefined
   
   // should import GeoJSON typings
   /**
@@ -97,7 +97,7 @@ trait GeoJSONProps extends PathProps {
     * }
     * ```
     */
-  var style: js.UndefOr[PathOptions | StyleFunction[js.Any]] = js.native
+  var style: js.UndefOr[PathOptions | StyleFunction[js.Any]] = js.undefined
 }
 object GeoJSONProps {
   

@@ -3,27 +3,27 @@ package typings.tslint
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lintErrorMod {
   
-  @JSImport("tslint/lib/verify/lintError", "errorComparator")
+  @JSImport("tslint/lib/verify/lintError", JSImport.Namespace)
   @js.native
-  def errorComparator(err1: LintError, err2: LintError): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tslint/lib/verify/lintError", "lintSyntaxError")
-  @js.native
-  def lintSyntaxError(message: String): Error = js.native
+  @scala.inline
+  def errorComparator(err1: LintError, err2: LintError): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("errorComparator")(err1.asInstanceOf[js.Any], err2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def lintSyntaxError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("lintSyntaxError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  
   trait LintError extends StObject {
     
-    var endPos: PositionInFile = js.native
+    var endPos: PositionInFile
     
-    var message: String = js.native
+    var message: String
     
-    var startPos: PositionInFile = js.native
+    var startPos: PositionInFile
   }
   object LintError {
     
@@ -47,12 +47,11 @@ object lintErrorMod {
     }
   }
   
-  @js.native
   trait PositionInFile extends StObject {
     
-    var col: Double = js.native
+    var col: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object PositionInFile {
     

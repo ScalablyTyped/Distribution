@@ -4,27 +4,27 @@ import typings.auth0Lock.anon.Hint
 import typings.auth0Lock.auth0LockStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Auth0LockAdditionalSelectSignUpField extends Auth0LockAdditionalSignUpField {
+trait Auth0LockAdditionalSelectSignUpField
+  extends StObject
+     with Auth0LockAdditionalSignUpField {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   var options: js.UndefOr[
     js.Array[Auth0LockAdditionalSignUpFieldOption] | Auth0LockAdditionalSignUpFieldOptionsFunction
-  ] = js.native
+  ] = js.undefined
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var prefill: js.UndefOr[String | Auth0LockAdditionalSignUpFieldPrefillFunction] = js.native
+  var prefill: js.UndefOr[String | Auth0LockAdditionalSignUpFieldPrefillFunction] = js.undefined
   
-  var `type`: js.UndefOr[select] = js.native
+  var `type`: js.UndefOr[select] = js.undefined
   
-  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.native
+  var validator: js.UndefOr[js.Function1[/* input */ String, Hint]] = js.undefined
 }
 object Auth0LockAdditionalSelectSignUpField {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSubscriptionsResponse extends StObject {
   
   /**
     * Token to pass along to the next ListSubscriptions request. This element is returned if there are more subscriptions to retrieve.
     */
-  var NextToken: js.UndefOr[nextToken] = js.native
+  var NextToken: js.UndefOr[nextToken] = js.undefined
   
   /**
     * A list of subscriptions.
     */
-  var Subscriptions: js.UndefOr[SubscriptionsList] = js.native
+  var Subscriptions: js.UndefOr[SubscriptionsList] = js.undefined
 }
 object ListSubscriptionsResponse {
   

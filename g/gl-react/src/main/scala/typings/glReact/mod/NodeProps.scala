@@ -5,35 +5,33 @@ import typings.glReact.anon.Color
 import typings.glReact.anon.Dst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeProps extends StObject {
   
-  var backbuffering: js.UndefOr[Boolean] = js.native
+  var backbuffering: js.UndefOr[Boolean] = js.undefined
   
-  var blendFunc: js.UndefOr[Dst] = js.native
+  var blendFunc: js.UndefOr[Dst] = js.undefined
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var clear: js.UndefOr[Color] = js.native
+  var clear: js.UndefOr[Color] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var ignoreUnusedUniforms: js.UndefOr[js.Array[String] | Boolean] = js.native
+  var ignoreUnusedUniforms: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   
-  var onDraw: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDraw: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var shader: ShaderIdentifier | ShaderDefinition = js.native
+  var shader: ShaderIdentifier | ShaderDefinition
   
-  var sync: js.UndefOr[Boolean] = js.native
+  var sync: js.UndefOr[Boolean] = js.undefined
   
-  var uniforms: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var uniforms: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var uniformsOptions: js.UndefOr[js.Any] = js.native
+  var uniformsOptions: js.UndefOr[js.Any] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object NodeProps {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Third Party Authentication Token
   */
-@js.native
 trait SchemaThirdPartyAuthenticationToken extends StObject {
   
   /**
     * Name of the third-party authentication token.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the third-party authentication token. This is a read-only,
     * auto-generated field.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaThirdPartyAuthenticationToken {
   

@@ -5,19 +5,19 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for execution where information for execution may be required from the user. */
-@js.native
-trait XCompletedExecution extends XInterface {
+trait XCompletedExecution
+  extends StObject
+     with XInterface {
   
   /**
     * completes necessary information before execution, for example parameter values.
     * @param handler will be asked when more information is needed
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def executeWithCompletion(handler: XInteractionHandler): Unit = js.native
+  def executeWithCompletion(handler: XInteractionHandler): Unit
 }
 object XCompletedExecution {
   

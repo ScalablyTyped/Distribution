@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Breaks extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): Break = js.native
+  def Item(Index: Double): Break
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.Breaks_typekey")
-  var WordDotBreaks_typekey: Breaks = js.native
+  var WordDotBreaks_typekey: Breaks
 }
 object Breaks {
   

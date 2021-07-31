@@ -9,7 +9,6 @@ import typings.luminoWidgets.widgetMod.Widget
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitlayoutMod {
@@ -144,6 +143,10 @@ object splitlayoutMod {
   }
   object SplitLayout {
     
+    @JSImport("@lumino/widgets/types/splitlayout", "SplitLayout")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the split layout stretch factor for the given widget.
       *
@@ -151,9 +154,8 @@ object splitlayoutMod {
       *
       * @returns The split layout stretch factor for the widget.
       */
-    @JSImport("@lumino/widgets/types/splitlayout", "SplitLayout.getStretch")
-    @js.native
-    def getStretch(widget: Widget): Double = js.native
+    @scala.inline
+    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the split layout stretch factor for the given widget.
@@ -162,9 +164,8 @@ object splitlayoutMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @JSImport("@lumino/widgets/types/splitlayout", "SplitLayout.setStretch")
-    @js.native
-    def setStretch(widget: Widget, value: Double): Unit = js.native
+    @scala.inline
+    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a split layout alignment.
@@ -194,7 +195,6 @@ object splitlayoutMod {
     /**
       * An options object for initializing a split layout.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -202,26 +202,26 @@ object splitlayoutMod {
         *
         * The default is `'start'`.
         */
-      var alignment: js.UndefOr[Alignment] = js.native
+      var alignment: js.UndefOr[Alignment] = js.undefined
       
       /**
         * The orientation of the layout.
         *
         * The default is `'horizontal'`.
         */
-      var orientation: js.UndefOr[Orientation] = js.native
+      var orientation: js.UndefOr[Orientation] = js.undefined
       
       /**
         * The renderer to use for the split layout.
         */
-      var renderer: IRenderer = js.native
+      var renderer: IRenderer
       
       /**
         * The spacing between items in the layout.
         *
         * The default is `4`.
         */
-      var spacing: js.UndefOr[Double] = js.native
+      var spacing: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       
@@ -260,7 +260,6 @@ object splitlayoutMod {
     /**
       * A renderer for use with a split layout.
       */
-    @js.native
     trait IRenderer extends StObject {
       
       /**
@@ -268,7 +267,7 @@ object splitlayoutMod {
         *
         * @returns A new handle element.
         */
-      def createHandle(): HTMLDivElement = js.native
+      def createHandle(): HTMLDivElement
     }
     object IRenderer {
       

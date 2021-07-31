@@ -2,46 +2,44 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePortfolioInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The tags to add.
     */
-  var AddTags: js.UndefOr[typings.awsSdk.servicecatalogMod.AddTags] = js.native
+  var AddTags: js.UndefOr[typings.awsSdk.servicecatalogMod.AddTags] = js.undefined
   
   /**
     * The updated description of the portfolio.
     */
-  var Description: js.UndefOr[PortfolioDescription] = js.native
+  var Description: js.UndefOr[PortfolioDescription] = js.undefined
   
   /**
     * The name to use for display purposes.
     */
-  var DisplayName: js.UndefOr[PortfolioDisplayName] = js.native
+  var DisplayName: js.UndefOr[PortfolioDisplayName] = js.undefined
   
   /**
     * The portfolio identifier.
     */
-  var Id: typings.awsSdk.servicecatalogMod.Id = js.native
+  var Id: typings.awsSdk.servicecatalogMod.Id
   
   /**
     * The updated name of the portfolio provider.
     */
-  var ProviderName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProviderName] = js.native
+  var ProviderName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProviderName] = js.undefined
   
   /**
     * The tags to remove.
     */
-  var RemoveTags: js.UndefOr[TagKeys] = js.native
+  var RemoveTags: js.UndefOr[TagKeys] = js.undefined
 }
 object UpdatePortfolioInput {
   

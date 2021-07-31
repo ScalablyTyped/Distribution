@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "richText.toJSON()". */
-@js.native
 trait RichTextData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RichTextData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait RichTextData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var languageId: js.UndefOr[String] = js.native
+  var languageId: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait RichTextData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object RichTextData {
   

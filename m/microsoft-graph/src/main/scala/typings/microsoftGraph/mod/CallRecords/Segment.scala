@@ -4,35 +4,35 @@ import typings.microsoftGraph.mod.Entity
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Segment extends Entity {
+trait Segment
+  extends StObject
+     with Entity {
   
   // Endpoint that answered this segment.
-  var callee: js.UndefOr[NullableOption[Endpoint]] = js.native
+  var callee: js.UndefOr[NullableOption[Endpoint]] = js.undefined
   
   // Endpoint that initiated this segment.
-  var caller: js.UndefOr[NullableOption[Endpoint]] = js.native
+  var caller: js.UndefOr[NullableOption[Endpoint]] = js.undefined
   
   /**
     * UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and
     * is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var endDateTime: js.UndefOr[String] = js.native
+  var endDateTime: js.UndefOr[String] = js.undefined
   
   // Failure information associated with the segment if it failed.
-  var failureInfo: js.UndefOr[NullableOption[FailureInfo]] = js.native
+  var failureInfo: js.UndefOr[NullableOption[FailureInfo]] = js.undefined
   
   // Media associated with this segment.
-  var media: js.UndefOr[NullableOption[js.Array[Media]]] = js.native
+  var media: js.UndefOr[NullableOption[js.Array[Media]]] = js.undefined
   
   /**
     * UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format
     * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var startDateTime: js.UndefOr[String] = js.native
+  var startDateTime: js.UndefOr[String] = js.undefined
 }
 object Segment {
   

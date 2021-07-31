@@ -4,7 +4,6 @@ import typings.angularCore.mod.SanitizerFn
 import typings.angularCore.mod.ɵNOCHANGE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

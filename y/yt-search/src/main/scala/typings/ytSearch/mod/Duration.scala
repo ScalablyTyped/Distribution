@@ -2,15 +2,13 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
-  var seconds: Double = js.native
+  var seconds: Double
   
-  var timestamp: String = js.native
+  var timestamp: String
 }
 object Duration {
   

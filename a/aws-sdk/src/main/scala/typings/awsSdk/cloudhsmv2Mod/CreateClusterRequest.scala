@@ -2,36 +2,34 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterRequest extends StObject {
   
   /**
     * A policy that defines how the service retains backups.
     */
-  var BackupRetentionPolicy: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupRetentionPolicy] = js.native
+  var BackupRetentionPolicy: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupRetentionPolicy] = js.undefined
   
   /**
     * The type of HSM to use in the cluster. Currently the only allowed value is hsm1.medium.
     */
-  var HsmType: typings.awsSdk.cloudhsmv2Mod.HsmType = js.native
+  var HsmType: typings.awsSdk.cloudhsmv2Mod.HsmType
   
   /**
     * The identifier (ID) of the cluster backup to restore. Use this value to restore the cluster from a backup instead of creating a new cluster. To find the backup ID, use DescribeBackups.
     */
-  var SourceBackupId: js.UndefOr[BackupId] = js.native
+  var SourceBackupId: js.UndefOr[BackupId] = js.undefined
   
   /**
     * The identifiers (IDs) of the subnets where you are creating the cluster. You must specify at least one subnet. If you specify multiple subnets, they must meet the following criteria:   All subnets must be in the same virtual private cloud (VPC).   You can specify only one subnet per Availability Zone.  
     */
-  var SubnetIds: typings.awsSdk.cloudhsmv2Mod.SubnetIds = js.native
+  var SubnetIds: typings.awsSdk.cloudhsmv2Mod.SubnetIds
   
   /**
     * Tags to apply to the CloudHSM cluster during creation.
     */
-  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.undefined
 }
 object CreateClusterRequest {
   

@@ -10,9 +10,9 @@ jQuery plugin that activates areas in HTML imagemaps with support for highlighti
 | ------------------ | :-------------: |
 | Full name          | imagemapster |
 | Keywords           | jquery, imagemapster, activate, area, html, plugin, maps, image, imagemap, canvas, highlight, select, resize, tooltip |
-| # releases         | 12 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 542 |
+| # downloads        | 652 |
 | # stars            | 0 |
 
 ## Links

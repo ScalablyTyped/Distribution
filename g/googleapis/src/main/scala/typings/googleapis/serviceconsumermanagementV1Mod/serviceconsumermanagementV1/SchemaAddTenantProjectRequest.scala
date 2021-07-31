@@ -2,26 +2,24 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to add a newly created and configured tenant project to a tenancy
   * unit.
   */
-@js.native
 trait SchemaAddTenantProjectRequest extends StObject {
   
   /**
     * Configuration of the new tenant project to be added to tenancy unit
     * resources.
     */
-  var projectConfig: js.UndefOr[SchemaTenantProjectConfig] = js.native
+  var projectConfig: js.UndefOr[SchemaTenantProjectConfig] = js.undefined
   
   /**
     * Tag of the added project. Must be less than 128 characters. Required.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaAddTenantProjectRequest {
   

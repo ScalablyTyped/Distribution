@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatch
   * @since OOo 1.1.2
   */
-@js.native
-trait XDispatchHelper extends XInterface {
+trait XDispatchHelper
+  extends StObject
+     with XInterface {
   
   /**
     * executes the dispatch.
@@ -35,7 +35,7 @@ trait XDispatchHelper extends XInterface {
     TargetFrameName: String,
     SearchFlags: Double,
     Arguments: SeqEquiv[PropertyValue]
-  ): js.Any = js.native
+  ): js.Any
 }
 object XDispatchHelper {
   

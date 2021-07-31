@@ -3,7 +3,6 @@ package typings.wepy
 import typings.wepy.appMod.AddOn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wepyStrings {
@@ -94,7 +93,9 @@ object wepyStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait promisify extends AddOn
+  sealed trait promisify
+    extends StObject
+       with AddOn
   @scala.inline
   def promisify: promisify = "promisify".asInstanceOf[promisify]
   
@@ -104,7 +105,9 @@ object wepyStrings {
   def redirectTo: redirectTo = "redirectTo".asInstanceOf[redirectTo]
   
   @js.native
-  sealed trait requestfix extends AddOn
+  sealed trait requestfix
+    extends StObject
+       with AddOn
   @scala.inline
   def requestfix: requestfix = "requestfix".asInstanceOf[requestfix]
   

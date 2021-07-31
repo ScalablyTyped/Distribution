@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait ListDataValidationFailureReason extends StObject
 object ListDataValidationFailureReason extends StObject {
   
   @js.native
-  sealed trait dataFailure extends ListDataValidationFailureReason
+  sealed trait dataFailure
+    extends StObject
+       with ListDataValidationFailureReason
   
   @js.native
-  sealed trait formulaError extends ListDataValidationFailureReason
+  sealed trait formulaError
+    extends StObject
+       with ListDataValidationFailureReason
 }

@@ -8,7 +8,6 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.FULLSTRING
 import typings.tizenCommonWeb.tizenCommonWebStrings.STARTSWITH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/tizen", "AttributeFilter")
@@ -22,7 +21,7 @@ class AttributeFilter protected () extends AbstractFilter {
   def this(attributeName: String, matchFlag: FULLSTRING) = this()
   def this(attributeName: String, matchFlag: STARTSWITH) = this()
   def this(attributeName: String, matchFlag: FilterMatchFlag) = this()
-  def this(attributeName: String, matchFlag: js.UndefOr[scala.Nothing], matchValue: js.Any) = this()
+  def this(attributeName: String, matchFlag: Unit, matchValue: js.Any) = this()
   def this(attributeName: String, matchFlag: CONTAINS, matchValue: js.Any) = this()
   def this(attributeName: String, matchFlag: ENDSWITH, matchValue: js.Any) = this()
   def this(attributeName: String, matchFlag: EXACTLY, matchValue: js.Any) = this()

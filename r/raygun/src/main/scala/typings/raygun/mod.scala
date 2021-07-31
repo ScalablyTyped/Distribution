@@ -19,7 +19,6 @@ import typings.raygun.typesMod.Transport
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,7 +32,9 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("raygun", "default.Client")
     @js.native
-    class Client () extends Raygun
+    class Client ()
+      extends StObject
+         with Raygun
     @JSImport("raygun", "default.Client")
     @js.native
     def Client: Instantiable0[Raygun] = js.native
@@ -44,7 +45,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("raygun", "Client")
   @js.native
-  class Client () extends Raygun
+  class Client ()
+    extends StObject
+       with Raygun
   @JSImport("raygun", "Client")
   @js.native
   val Client: Instantiable0[Raygun] = js.native
@@ -88,9 +91,14 @@ object mod {
     
     var _version: String = js.native
     
-    def expressCustomData(error: Error, request: Request_[ParamsDictionary, _, _, Query]): js.Object = js.native
+    def expressCustomData(error: Error, request: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Object = js.native
     
-    def expressHandler(err: Error, req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): Unit = js.native
+    def expressHandler(
+      err: Error,
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      res: Response_[js.Any],
+      next: NextFunction
+    ): Unit = js.native
     
     def groupingKey(groupingKey: Hook[String]): this.type = js.native
     
@@ -106,179 +114,147 @@ object mod {
     def online(callback: SendCB): Unit = js.native
     
     def send(exception: String): Message = js.native
+    def send(exception: String, customData: Unit, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
     def send(
       exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      request: js.UndefOr[scala.Nothing],
+      customData: Unit,
+      callback: js.Function1[/* err */ Error | Null, Unit],
+      request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
       exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query]
+      customData: Unit,
+      callback: js.Function1[/* err */ Error | Null, Unit],
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     ): Message = js.native
     def send(
       exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query],
+      customData: Unit,
+      callback: js.Function1[/* err */ Error | Null, Unit],
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
       tags: js.Array[Tag]
     ): Message = js.native
+    def send(exception: String, customData: Unit, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
     def send(
       exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit]
+      customData: Unit,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     ): Message = js.native
     def send(
       exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: js.UndefOr[scala.Nothing],
-      tags: js.Array[Tag]
-    ): Message = js.native
-    def send(
-      exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query]
-    ): Message = js.native
-    def send(
-      exception: String,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query],
+      customData: Unit,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
       tags: js.Array[Tag]
     ): Message = js.native
     def send(exception: String, customData: CustomData): Message = js.native
-    def send(
-      exception: String,
-      customData: CustomData,
-      callback: js.UndefOr[scala.Nothing],
-      request: js.UndefOr[scala.Nothing],
-      tags: js.Array[Tag]
-    ): Message = js.native
-    def send(
-      exception: String,
-      customData: CustomData,
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query]
-    ): Message = js.native
-    def send(
-      exception: String,
-      customData: CustomData,
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query],
-      tags: js.Array[Tag]
-    ): Message = js.native
     def send(exception: String, customData: CustomData, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
       callback: js.Function1[/* err */ Error | Null, Unit],
-      request: js.UndefOr[scala.Nothing],
+      request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
       callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query]
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     ): Message = js.native
     def send(
       exception: String,
       customData: CustomData,
       callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query],
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      tags: js.Array[Tag]
+    ): Message = js.native
+    def send(exception: String, customData: CustomData, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
+    def send(
+      exception: String,
+      customData: CustomData,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+    ): Message = js.native
+    def send(
+      exception: String,
+      customData: CustomData,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
       tags: js.Array[Tag]
     ): Message = js.native
     def send(exception: Error): Message = js.native
+    def send(exception: Error, customData: Unit, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
     def send(
       exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      request: js.UndefOr[scala.Nothing],
+      customData: Unit,
+      callback: js.Function1[/* err */ Error | Null, Unit],
+      request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
       exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query]
+      customData: Unit,
+      callback: js.Function1[/* err */ Error | Null, Unit],
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     ): Message = js.native
     def send(
       exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query],
+      customData: Unit,
+      callback: js.Function1[/* err */ Error | Null, Unit],
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
       tags: js.Array[Tag]
     ): Message = js.native
+    def send(exception: Error, customData: Unit, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
     def send(
       exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit]
+      customData: Unit,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     ): Message = js.native
     def send(
       exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: js.UndefOr[scala.Nothing],
-      tags: js.Array[Tag]
-    ): Message = js.native
-    def send(
-      exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query]
-    ): Message = js.native
-    def send(
-      exception: Error,
-      customData: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query],
+      customData: Unit,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
       tags: js.Array[Tag]
     ): Message = js.native
     def send(exception: Error, customData: CustomData): Message = js.native
-    def send(
-      exception: Error,
-      customData: CustomData,
-      callback: js.UndefOr[scala.Nothing],
-      request: js.UndefOr[scala.Nothing],
-      tags: js.Array[Tag]
-    ): Message = js.native
-    def send(
-      exception: Error,
-      customData: CustomData,
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query]
-    ): Message = js.native
-    def send(
-      exception: Error,
-      customData: CustomData,
-      callback: js.UndefOr[scala.Nothing],
-      request: Request_[ParamsDictionary, _, _, Query],
-      tags: js.Array[Tag]
-    ): Message = js.native
     def send(exception: Error, customData: CustomData, callback: js.Function1[/* err */ Error | Null, Unit]): Message = js.native
     def send(
       exception: Error,
       customData: CustomData,
       callback: js.Function1[/* err */ Error | Null, Unit],
-      request: js.UndefOr[scala.Nothing],
+      request: Unit,
       tags: js.Array[Tag]
     ): Message = js.native
     def send(
       exception: Error,
       customData: CustomData,
       callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query]
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     ): Message = js.native
     def send(
       exception: Error,
       customData: CustomData,
       callback: js.Function1[/* err */ Error | Null, Unit],
-      request: Request_[ParamsDictionary, _, _, Query],
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      tags: js.Array[Tag]
+    ): Message = js.native
+    def send(exception: Error, customData: CustomData, callback: Unit, request: Unit, tags: js.Array[Tag]): Message = js.native
+    def send(
+      exception: Error,
+      customData: CustomData,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query]
+    ): Message = js.native
+    def send(
+      exception: Error,
+      customData: CustomData,
+      callback: Unit,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
       tags: js.Array[Tag]
     ): Message = js.native
     
@@ -292,7 +268,7 @@ object mod {
     
     def transport(): Transport = js.native
     
-    def user(req: Request_[ParamsDictionary, _, _, Query]): RawUserData | Null = js.native
+    def user(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): RawUserData | Null = js.native
   }
   
   type SendCB = js.Function2[/* error */ Error | Null, /* items */ js.UndefOr[js.Array[String]], Unit]

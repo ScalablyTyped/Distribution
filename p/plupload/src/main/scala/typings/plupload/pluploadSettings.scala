@@ -2,58 +2,56 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pluploadSettings extends StObject {
   
   /** Required Options */
-  var browse_button: js.Any = js.native
+  var browse_button: js.Any
   
   /** Chunk */
-  var chunk_size: js.UndefOr[Double | String] = js.native
+  var chunk_size: js.UndefOr[Double | String] = js.undefined
   
-  var container: js.UndefOr[js.Any] = js.native
+  var container: js.UndefOr[js.Any] = js.undefined
   
   /** Drag&Drop Files from the Desktop */
-  var drop_element: js.UndefOr[String] = js.native
+  var drop_element: js.UndefOr[String] = js.undefined
   
-  var file_data_name: js.UndefOr[String] = js.native
+  var file_data_name: js.UndefOr[String] = js.undefined
   
   /** Filters */
-  var filters: js.UndefOr[pluploadFilters] = js.native
+  var filters: js.UndefOr[pluploadFilters] = js.undefined
   
-  var flash_swf_url: js.UndefOr[String] = js.native
+  var flash_swf_url: js.UndefOr[String] = js.undefined
   
   /** Control the request */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /** Events */
-  var init: js.UndefOr[pluploadEvents] = js.native
+  var init: js.UndefOr[pluploadEvents] = js.undefined
   
-  var max_retries: js.UndefOr[Double] = js.native
+  var max_retries: js.UndefOr[Double] = js.undefined
   
   /** Useful Options */
-  var multi_selection: js.UndefOr[Boolean] = js.native
+  var multi_selection: js.UndefOr[Boolean] = js.undefined
   
-  var multipart: js.UndefOr[Boolean] = js.native
+  var multipart: js.UndefOr[Boolean] = js.undefined
   
-  var multipart_params: js.UndefOr[js.Any] = js.native
+  var multipart_params: js.UndefOr[js.Any] = js.undefined
   
-  var required_features: js.UndefOr[String | js.Any] = js.native
+  var required_features: js.UndefOr[String | js.Any] = js.undefined
   
   /** Client-Side Image Resize */
-  var resize: js.UndefOr[pluploadResize] = js.native
+  var resize: js.UndefOr[pluploadResize] = js.undefined
   
   /** Optional */
-  var runtimes: js.UndefOr[String] = js.native
+  var runtimes: js.UndefOr[String] = js.undefined
   
-  var silverlight_xap_url: js.UndefOr[String] = js.native
+  var silverlight_xap_url: js.UndefOr[String] = js.undefined
   
-  var unique_names: js.UndefOr[Boolean] = js.native
+  var unique_names: js.UndefOr[Boolean] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object pluploadSettings {
   

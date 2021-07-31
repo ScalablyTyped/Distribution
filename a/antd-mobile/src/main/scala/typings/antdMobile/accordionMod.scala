@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionMod {
@@ -38,18 +37,19 @@ object accordionMod {
   trait Accordion
     extends Component[AccordionProps, js.Any, js.Any]
   
-  @js.native
-  trait AccordionProps extends AccordionPropsTypes {
+  trait AccordionProps
+    extends StObject
+       with AccordionPropsTypes {
     
-    var accordion: js.UndefOr[Boolean] = js.native
+    var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var openAnimation: js.UndefOr[js.Any] = js.native
+    var openAnimation: js.UndefOr[js.Any] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AccordionProps {
     

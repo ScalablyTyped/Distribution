@@ -5,32 +5,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchResource extends Object {
+trait FetchResource
+  extends StObject
+     with Object {
   
   /**
     * When the resource was created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResource)
     */
-  var created: Date = js.native
+  var created: Date
   
   /**
     * The fetched resources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResource)
     */
-  var resource: PortalItemResource = js.native
+  var resource: PortalItemResource
   
   /**
     * The size of the resource in bytes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResource)
     */
-  var size: Double = js.native
+  var size: Double
 }
 object FetchResource {
   

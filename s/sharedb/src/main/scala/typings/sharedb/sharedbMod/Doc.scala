@@ -13,7 +13,6 @@ import typings.sharedb.sharedbStrings.load
 import typings.sharedb.sharedbStrings.op
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb/lib/sharedb", "Doc")
@@ -44,18 +43,13 @@ class Doc () extends EventEmitter {
   
   def create(data: js.Any): Unit = js.native
   def create(data: js.Any, callback: Callback): Unit = js.native
-  def create(data: js.Any, `type`: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
-  def create(
-    data: js.Any,
-    `type`: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    callback: Callback
-  ): Unit = js.native
-  def create(data: js.Any, `type`: js.UndefOr[scala.Nothing], options: ShareDBSourceOptions): Unit = js.native
-  def create(data: js.Any, `type`: js.UndefOr[scala.Nothing], options: ShareDBSourceOptions, callback: Callback): Unit = js.native
+  def create(data: js.Any, `type`: Unit, callback: Callback): Unit = js.native
+  def create(data: js.Any, `type`: Unit, options: Unit, callback: Callback): Unit = js.native
+  def create(data: js.Any, `type`: Unit, options: ShareDBSourceOptions): Unit = js.native
+  def create(data: js.Any, `type`: Unit, options: ShareDBSourceOptions, callback: Callback): Unit = js.native
   def create(data: js.Any, `type`: OTType): Unit = js.native
   def create(data: js.Any, `type`: OTType, callback: Callback): Unit = js.native
-  def create(data: js.Any, `type`: OTType, options: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
+  def create(data: js.Any, `type`: OTType, options: Unit, callback: Callback): Unit = js.native
   def create(data: js.Any, `type`: OTType, options: ShareDBSourceOptions): Unit = js.native
   def create(data: js.Any, `type`: OTType, options: ShareDBSourceOptions, callback: Callback): Unit = js.native
   
@@ -89,7 +83,7 @@ class Doc () extends EventEmitter {
   def on_op(event: op, callback: js.Function2[/* ops */ js.Array[Op], /* source */ Boolean, Unit]): this.type = js.native
   
   def submitOp(data: js.Array[Op]): Unit = js.native
-  def submitOp(data: js.Array[Op], options: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
+  def submitOp(data: js.Array[Op], options: Unit, callback: Callback): Unit = js.native
   def submitOp(data: js.Array[Op], options: ShareDBSourceOptions): Unit = js.native
   def submitOp(data: js.Array[Op], options: ShareDBSourceOptions, callback: Callback): Unit = js.native
   

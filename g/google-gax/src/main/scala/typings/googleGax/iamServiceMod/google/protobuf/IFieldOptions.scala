@@ -6,41 +6,39 @@ import typings.googleGax.iamServiceMod.google.protobuf.FieldOptions.CType
 import typings.googleGax.iamServiceMod.google.protobuf.FieldOptions.JSType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a FieldOptions. */
-@js.native
 trait IFieldOptions extends StObject {
   
   /** FieldOptions .google.api.fieldBehavior */
   @JSName(".google.api.fieldBehavior")
-  var DotgoogleDotapiDotfieldBehavior: js.UndefOr[js.Array[FieldBehavior] | Null] = js.native
+  var DotgoogleDotapiDotfieldBehavior: js.UndefOr[js.Array[FieldBehavior] | Null] = js.undefined
   
   /** FieldOptions .google.api.resourceReference */
   @JSName(".google.api.resourceReference")
-  var DotgoogleDotapiDotresourceReference: js.UndefOr[IResourceReference | Null] = js.native
+  var DotgoogleDotapiDotresourceReference: js.UndefOr[IResourceReference | Null] = js.undefined
   
   /** FieldOptions ctype */
-  var ctype: js.UndefOr[CType | Null] = js.native
+  var ctype: js.UndefOr[CType | Null] = js.undefined
   
   /** FieldOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FieldOptions jstype */
-  var jstype: js.UndefOr[JSType | Null] = js.native
+  var jstype: js.UndefOr[JSType | Null] = js.undefined
   
   /** FieldOptions lazy */
-  var `lazy`: js.UndefOr[Boolean | Null] = js.native
+  var `lazy`: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FieldOptions packed */
-  var packed: js.UndefOr[Boolean | Null] = js.native
+  var packed: js.UndefOr[Boolean | Null] = js.undefined
   
   /** FieldOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
   
   /** FieldOptions weak */
-  var weak: js.UndefOr[Boolean | Null] = js.native
+  var weak: js.UndefOr[Boolean | Null] = js.undefined
 }
 object IFieldOptions {
   

@@ -3,47 +3,43 @@ package typings.authHeader
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("auth-header", "format")
+  @JSImport("auth-header", JSImport.Namespace)
   @js.native
-  def format(scheme: String): String = js.native
-  @JSImport("auth-header", "format")
-  @js.native
-  def format(scheme: String, token: js.UndefOr[scala.Nothing], params: Params): String = js.native
-  @JSImport("auth-header", "format")
-  @js.native
-  def format(scheme: String, token: String): String = js.native
-  @JSImport("auth-header", "format")
-  @js.native
-  def format(scheme: String, token: String, params: Params): String = js.native
-  @JSImport("auth-header", "format")
-  @js.native
-  def format(token: TokenOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("auth-header", "parse")
-  @js.native
-  def parse(header: String): Token = js.native
+  @scala.inline
+  def format(scheme: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(scheme.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(scheme: String, token: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(scheme.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(scheme: String, token: String, params: Params): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(scheme.asInstanceOf[js.Any], token.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(scheme: String, token: Unit, params: Params): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(scheme.asInstanceOf[js.Any], token.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(token: TokenOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def parse(header: String): Token = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(header.asInstanceOf[js.Any]).asInstanceOf[Token]
   
   type Params = (js.Array[js.Tuple2[String, String | js.Array[String]]]) | (StringDictionary[String | js.Array[String]])
   
-  @js.native
   trait Token extends StObject {
     
-    var params: StringDictionary[String | js.Array[String]] = js.native
+    var params: StringDictionary[String | js.Array[String]]
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var token: Null | String | js.Array[String] = js.native
+    var token: Null | String | js.Array[String]
   }
   object Token {
     
     @scala.inline
     def apply(params: StringDictionary[String | js.Array[String]], scheme: String): Token = {
-      val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], token = null)
       __obj.asInstanceOf[Token]
     }
     
@@ -67,14 +63,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenOptions extends StObject {
     
-    var params: js.UndefOr[Params] = js.native
+    var params: js.UndefOr[Params] = js.undefined
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object TokenOptions {
     

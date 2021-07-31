@@ -2,31 +2,29 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainContactRequest extends StObject {
   
   /**
     * Provides detailed contact information.
     */
-  var AdminContact: js.UndefOr[ContactDetail] = js.native
+  var AdminContact: js.UndefOr[ContactDetail] = js.undefined
   
   /**
     * The name of the domain that you want to update contact information for.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
   
   /**
     * Provides detailed contact information.
     */
-  var RegistrantContact: js.UndefOr[ContactDetail] = js.native
+  var RegistrantContact: js.UndefOr[ContactDetail] = js.undefined
   
   /**
     * Provides detailed contact information.
     */
-  var TechContact: js.UndefOr[ContactDetail] = js.native
+  var TechContact: js.UndefOr[ContactDetail] = js.undefined
 }
 object UpdateDomainContactRequest {
   

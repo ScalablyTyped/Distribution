@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource you want to remove the tags from.
     */
-  var ResourceARN: typings.awsSdk.storagegatewayMod.ResourceARN = js.native
+  var ResourceARN: typings.awsSdk.storagegatewayMod.ResourceARN
   
   /**
     * The keys of the tags you want to remove from the specified resource. A tag is composed of a key-value pair.
     */
-  var TagKeys: typings.awsSdk.storagegatewayMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.storagegatewayMod.TagKeys
 }
 object RemoveTagsFromResourceInput {
   

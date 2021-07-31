@@ -3,19 +3,17 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.anon.Lat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<mapbox-gl.mapbox-gl.CameraOptions, 'zoom' | 'bearing'>> & {  center :{  lng :number,   lat :number}} */
-@js.native
 trait CameraForBoundsResult extends StObject {
   
-  var bearing: Double = js.native
+  var bearing: Double
   
   /** Map center */
-  var center: Lat = js.native
+  var center: Lat
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object CameraForBoundsResult {
   

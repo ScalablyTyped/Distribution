@@ -11,8 +11,8 @@ NUID - A highly performant unique identifier generator.
 | Full name          | nuid |
 | Keywords           | unique, identifier, generator |
 | # releases         | 7 |
-| # dependents       | 14 |
-| # downloads        | 3521293 |
+| # dependents       | 15 |
+| # downloads        | 3233221 |
 | # stars            | 0 |
 
 ## Links

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aggregateAuthorizationMod {
@@ -49,6 +48,10 @@ object aggregateAuthorizationMod {
   /* static members */
   object AggregateAuthorization {
     
+    @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AggregateAuthorization resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,45 +61,39 @@ object aggregateAuthorizationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AggregateAuthorization = js.native
-    @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AggregateAuthorization = js.native
-    @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AggregateAuthorizationState): AggregateAuthorization = js.native
-    @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AggregateAuthorizationState, opts: CustomResourceOptions): AggregateAuthorization = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AggregateAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AggregateAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AggregateAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AggregateAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AggregateAuthorizationState): AggregateAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AggregateAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AggregateAuthorizationState, opts: CustomResourceOptions): AggregateAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AggregateAuthorization]
     
     /**
       * Returns true if the given object is an instance of AggregateAuthorization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/aggregateAuthorization.AggregateAuthorization */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/aggregateAuthorization.AggregateAuthorization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/aggregateAuthorization.AggregateAuthorization */ Boolean]
   }
   
-  @js.native
   trait AggregateAuthorizationArgs extends StObject {
     
     /**
       * Account ID
       */
-    val accountId: Input[String] = js.native
+    val accountId: Input[String]
     
     /**
       * Region
       */
-    val region: Input[String] = js.native
+    val region: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AggregateAuthorizationArgs {
     
@@ -123,28 +120,27 @@ object aggregateAuthorizationMod {
     }
   }
   
-  @js.native
   trait AggregateAuthorizationState extends StObject {
     
     /**
       * Account ID
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the authorization
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Region
       */
-    val region: js.UndefOr[Input[String]] = js.native
+    val region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AggregateAuthorizationState {
     

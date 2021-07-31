@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyCacheSubnetGroupMessage extends StObject {
   
   /**
     * A description of the cache subnet group.
     */
-  var CacheSubnetGroupDescription: js.UndefOr[String] = js.native
+  var CacheSubnetGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name for the cache subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters or hyphens. Example: mysubnetgroup 
     */
-  var CacheSubnetGroupName: String = js.native
+  var CacheSubnetGroupName: String
   
   /**
     * The EC2 subnet IDs for the cache subnet group.
     */
-  var SubnetIds: js.UndefOr[SubnetIdentifierList] = js.native
+  var SubnetIds: js.UndefOr[SubnetIdentifierList] = js.undefined
 }
 object ModifyCacheSubnetGroupMessage {
   

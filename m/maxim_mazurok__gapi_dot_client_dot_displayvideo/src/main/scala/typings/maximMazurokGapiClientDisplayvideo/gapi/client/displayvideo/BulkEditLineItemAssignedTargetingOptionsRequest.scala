@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditLineItemAssignedTargetingOptionsRequest extends StObject {
   
   /** The assigned targeting options to create in batch, specified as a list of `CreateAssignedTargetingOptionsRequest`. */
-  var createRequests: js.UndefOr[js.Array[CreateAssignedTargetingOptionsRequest]] = js.native
+  var createRequests: js.UndefOr[js.Array[CreateAssignedTargetingOptionsRequest]] = js.undefined
   
   /** The assigned targeting options to delete in batch, specified as a list of `DeleteAssignedTargetingOptionsRequest`. */
-  var deleteRequests: js.UndefOr[js.Array[DeleteAssignedTargetingOptionsRequest]] = js.native
+  var deleteRequests: js.UndefOr[js.Array[DeleteAssignedTargetingOptionsRequest]] = js.undefined
 }
 object BulkEditLineItemAssignedTargetingOptionsRequest {
   

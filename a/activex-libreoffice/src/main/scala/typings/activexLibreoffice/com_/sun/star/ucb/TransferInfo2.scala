@@ -2,15 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends {@link TransferInfo} structure to give some additional parameters for transfers. */
-@js.native
-trait TransferInfo2 extends TransferInfo {
+trait TransferInfo2
+  extends StObject
+     with TransferInfo {
   
   /** contains the MIME type of the source of the action */
-  var MimeType: String = js.native
+  var MimeType: String
 }
 object TransferInfo2 {
   

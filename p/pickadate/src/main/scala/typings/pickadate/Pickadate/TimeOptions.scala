@@ -2,11 +2,11 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeOptions extends Options {
+trait TimeOptions
+  extends StObject
+     with Options {
   
   /**
     * Disable a specific or arbitrary set of times selectable on the picker.
@@ -16,28 +16,28 @@ trait TimeOptions extends Options {
     * collection. Enable times that fall within a range of disabled times by
     * adding an `inverted` parameter to the item within the collection.
     */
-  var disable: js.UndefOr[js.Array[_]] = js.native
+  var disable: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The formatLabel option is unique. It can contain HTML and it can
     * also be a function if you want to create the label during run-time.
     */
-  var formatLabel: js.UndefOr[String | (js.Function1[/* time */ TimeItem, String])] = js.native
+  var formatLabel: js.UndefOr[String | (js.Function1[/* time */ TimeItem, String])] = js.undefined
   
   /**
     * Choose the interval in minutes between each time in the list.
     * Default is 30.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   // Classes
-  var klass: js.UndefOr[TimeKlassOptions] = js.native
+  var klass: js.UndefOr[TimeKlassOptions] = js.undefined
   
   /**
     * Set the maximum selectable time on the picker.
     * Accepts the same values as the `min` property.
     */
-  var max: js.UndefOr[MinOrMaxTimeOption] = js.native
+  var max: js.UndefOr[MinOrMaxTimeOption] = js.undefined
   
   /**
     * Set the minimum selectable time on the picker. Accepts a Date object,
@@ -45,7 +45,7 @@ trait TimeOptions extends Options {
     * for a time relative to now, or a boolean (`true` sets it to now, and
     * `false` removes any limit).
     */
-  var min: js.UndefOr[MinOrMaxTimeOption] = js.native
+  var min: js.UndefOr[MinOrMaxTimeOption] = js.undefined
 }
 object TimeOptions {
   
@@ -59,7 +59,7 @@ object TimeOptions {
   implicit class TimeOptionsMutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDisable(value: js.Array[_]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)

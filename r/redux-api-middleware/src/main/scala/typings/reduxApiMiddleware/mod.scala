@@ -25,16 +25,26 @@ import typings.std.Response
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("redux-api-middleware", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("redux-api-middleware", "ApiError")
   @js.native
-  class ApiError[T] protected () extends Error {
+  class ApiError[T] protected ()
+    extends StObject
+       with Error {
     def this(status: Double, statusText: String, response: T) = this()
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_ApiError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.ApiError = js.native
     
@@ -47,21 +57,34 @@ object mod {
   
   @JSImport("redux-api-middleware", "InternalError")
   @js.native
-  class InternalError protected () extends Error {
+  class InternalError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_InternalError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.InternalError = js.native
   }
   
   @JSImport("redux-api-middleware", "InvalidRSAA")
   @js.native
-  class InvalidRSAA protected () extends Error {
+  class InvalidRSAA protected ()
+    extends StObject
+       with Error {
     def this(validationErrors: js.Array[String]) = this()
     
+    /* CompleteClass */
+    var message: String = js.native
     @JSName("message")
     var message_InvalidRSAA: `Invalid RSAA` = js.native
     
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_InvalidRSAA: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.InvalidRSAA = js.native
     
@@ -74,50 +97,48 @@ object mod {
   
   @JSImport("redux-api-middleware", "RequestError")
   @js.native
-  class RequestError protected () extends Error {
+  class RequestError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_RequestError: typings.reduxApiMiddleware.reduxApiMiddlewareStrings.RequestError = js.native
   }
   
-  @JSImport("redux-api-middleware", "apiMiddleware")
-  @js.native
-  def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], _]): ReturnType[Middleware[js.Object, _, Dispatch[AnyAction]]] = js.native
+  @scala.inline
+  def apiMiddleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("apiMiddleware")(api.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]]
   
-  @JSImport("redux-api-middleware", "createAction")
-  @js.native
-  def createAction[State, Payload, Meta](clientCall: RSAACall[State, Payload, Meta]): RSAAAction[State, Payload, Meta] = js.native
+  @scala.inline
+  def createAction[State, Payload, Meta](clientCall: RSAACall[State, Payload, Meta]): RSAAAction[State, Payload, Meta] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(clientCall.asInstanceOf[js.Any]).asInstanceOf[RSAAAction[State, Payload, Meta]]
   
-  @JSImport("redux-api-middleware", "createMiddleware")
-  @js.native
-  def createMiddleware(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-api-middleware", "createMiddleware")
-  @js.native
-  def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  @scala.inline
+  def createMiddleware(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def createMiddleware(options: CreateMiddlewareOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
-  @JSImport("redux-api-middleware", "getJSON")
-  @js.native
-  def getJSON(res: Response): js.Promise[_] = js.native
+  @scala.inline
+  def getJSON(res: Response): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJSON")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("redux-api-middleware", "isRSAA")
-  @js.native
-  def isRSAA(action: js.Object): Boolean = js.native
+  @scala.inline
+  def isRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("redux-api-middleware", "isValidRSAA")
-  @js.native
-  def isValidRSAA(action: js.Object): Boolean = js.native
+  @scala.inline
+  def isValidRSAA(action: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("redux-api-middleware", "validateRSAA")
-  @js.native
-  def validateRSAA(action: js.Object): js.Array[String] = js.native
+  @scala.inline
+  def validateRSAA(action: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRSAA")(action.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait CreateMiddlewareOptions extends StObject {
     
-    var fetch: js.UndefOr[FnCall] = js.native
+    var fetch: js.UndefOr[FnCall] = js.undefined
     
-    var ok: js.UndefOr[js.Function1[/* res */ Response, Boolean]] = js.native
+    var ok: js.UndefOr[js.Function1[/* res */ Response, Boolean]] = js.undefined
   }
   object CreateMiddlewareOptions {
     
@@ -144,26 +165,25 @@ object mod {
     }
   }
   
-  @js.native
   trait InvalidAction[Payload] extends StObject {
     
-    var error: `true` = js.native
+    var error: `true`
     
-    var payload: Payload = js.native
+    var payload: Payload
     
-    var `type`: String | js.Symbol = js.native
+    var `type`: String | js.Symbol
   }
   object InvalidAction {
     
     @scala.inline
-    def apply[Payload](error: `true`, payload: Payload, `type`: String | js.Symbol): InvalidAction[Payload] = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    def apply[Payload](payload: Payload, `type`: String | js.Symbol): InvalidAction[Payload] = {
+      val __obj = js.Dynamic.literal(error = true, payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvalidAction[Payload]]
     }
     
     @scala.inline
-    implicit class InvalidActionMutableBuilder[Self <: InvalidAction[_], Payload] (val x: Self with InvalidAction[Payload]) extends AnyVal {
+    implicit class InvalidActionMutableBuilder[Self <: InvalidAction[?], Payload] (val x: Self & InvalidAction[Payload]) extends AnyVal {
       
       @scala.inline
       def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -181,33 +201,32 @@ object mod {
   
   type RSAAActions = (RSAARequestAction[scala.Nothing, scala.Nothing]) | (RSAAResultAction[scala.Nothing, scala.Nothing])
   
-  @js.native
   trait RSAACall[State, Payload, Meta] extends StObject {
     
-    var bailout: js.UndefOr[TypeOrResolver[State, Boolean]] = js.native
+    var bailout: js.UndefOr[TypeOrResolver[State, Boolean]] = js.undefined
     
-    var body: js.UndefOr[TypeOrResolver[State, BodyInit | Null]] = js.native
+    var body: js.UndefOr[TypeOrResolver[State, BodyInit | Null]] = js.undefined
     
-    var credentials: js.UndefOr[RequestCredentials] = js.native
+    var credentials: js.UndefOr[RequestCredentials] = js.undefined
     
-    var endpoint: TypeOrResolver[State, String] = js.native
+    var endpoint: TypeOrResolver[State, String]
     
-    var fetch: js.UndefOr[FnCall] = js.native
+    var fetch: js.UndefOr[FnCall] = js.undefined
     
-    var headers: js.UndefOr[TypeOrResolver[State, HeadersInit]] = js.native
+    var headers: js.UndefOr[TypeOrResolver[State, HeadersInit]] = js.undefined
     
     // `redux-api-middleware` strictly allows only this methods
-    var method: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS = js.native
+    var method: GET | HEAD | POST | PUT | PATCH | DELETE | OPTIONS
     
-    var ok: js.UndefOr[js.Function1[/* res */ Response, Boolean]] = js.native
+    var ok: js.UndefOr[js.Function1[/* res */ Response, Boolean]] = js.undefined
     
-    var options: js.UndefOr[TypeOrResolver[State, RequestInit]] = js.native
+    var options: js.UndefOr[TypeOrResolver[State, RequestInit]] = js.undefined
     
     var types: js.Tuple3[
         RSAARequestType[State, Payload, Meta], 
         RSAASuccessType[State, Payload, Meta], 
         RSAAFailureType[State, Payload, Meta]
-      ] = js.native
+      ]
   }
   object RSAACall {
     
@@ -226,7 +245,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RSAACallMutableBuilder[Self <: RSAACall[_, _, _], State, Payload, Meta] (val x: Self with (RSAACall[State, Payload, Meta])) extends AnyVal {
+    implicit class RSAACallMutableBuilder[Self <: RSAACall[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAACall[State, Payload, Meta])) extends AnyVal {
       
       @scala.inline
       def setBailout(value: TypeOrResolver[State, Boolean]): Self = StObject.set(x, "bailout", value.asInstanceOf[js.Any])
@@ -312,28 +331,27 @@ object mod {
   
   type RSAAFailureType[State, Payload, Meta] = String | js.Symbol | (RSAAFailureTypeDescriptor[State, Payload, Meta])
   
-  @js.native
   trait RSAAFailureTypeDescriptor[State, Payload, Meta] extends StObject {
     
     var meta: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[_, _, _], 
+          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
           /* state */ State, 
           /* res */ Response, 
           Meta | js.Promise[Meta]
         ]) | Meta
-      ] = js.native
+      ] = js.undefined
     
     var payload: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[_, _, _], 
+          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
           /* state */ State, 
           /* res */ Response, 
           Payload | js.Promise[Payload]
         ]) | Payload
-      ] = js.native
+      ] = js.undefined
     
-    var `type`: String | js.Symbol = js.native
+    var `type`: String | js.Symbol
   }
   object RSAAFailureTypeDescriptor {
     
@@ -345,12 +363,12 @@ object mod {
     }
     
     @scala.inline
-    implicit class RSAAFailureTypeDescriptorMutableBuilder[Self <: RSAAFailureTypeDescriptor[_, _, _], State, Payload, Meta] (val x: Self with (RSAAFailureTypeDescriptor[State, Payload, Meta])) extends AnyVal {
+    implicit class RSAAFailureTypeDescriptorMutableBuilder[Self <: RSAAFailureTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAAFailureTypeDescriptor[State, Payload, Meta])) extends AnyVal {
       
       @scala.inline
       def setMeta(
         value: (js.Function3[
-              /* action */ RSAAAction[_, _, _], 
+              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
               /* res */ Response, 
               Meta | js.Promise[Meta]
@@ -359,7 +377,7 @@ object mod {
       
       @scala.inline
       def setMetaFunction3(
-        value: (/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
+        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -368,7 +386,7 @@ object mod {
       @scala.inline
       def setPayload(
         value: (js.Function3[
-              /* action */ RSAAAction[_, _, _], 
+              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
               /* res */ Response, 
               Payload | js.Promise[Payload]
@@ -377,7 +395,7 @@ object mod {
       
       @scala.inline
       def setPayloadFunction3(
-        value: (/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
+        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -392,18 +410,25 @@ object mod {
   
   type RSAARequestType[State, Payload, Meta] = String | js.Symbol | (RSAARequestTypeDescriptor[State, Payload, Meta])
   
-  @js.native
   trait RSAARequestTypeDescriptor[State, Payload, Meta] extends StObject {
     
     var meta: js.UndefOr[
-        (js.Function2[/* action */ RSAAAction[_, _, _], /* state */ State, Meta | js.Promise[Meta]]) | Meta
-      ] = js.native
+        (js.Function2[
+          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* state */ State, 
+          Meta | js.Promise[Meta]
+        ]) | Meta
+      ] = js.undefined
     
     var payload: js.UndefOr[
-        (js.Function2[/* action */ RSAAAction[_, _, _], /* state */ State, Payload | js.Promise[Payload]]) | Payload
-      ] = js.native
+        (js.Function2[
+          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+          /* state */ State, 
+          Payload | js.Promise[Payload]
+        ]) | Payload
+      ] = js.undefined
     
-    var `type`: String | js.Symbol = js.native
+    var `type`: String | js.Symbol
   }
   object RSAARequestTypeDescriptor {
     
@@ -415,26 +440,38 @@ object mod {
     }
     
     @scala.inline
-    implicit class RSAARequestTypeDescriptorMutableBuilder[Self <: RSAARequestTypeDescriptor[_, _, _], State, Payload, Meta] (val x: Self with (RSAARequestTypeDescriptor[State, Payload, Meta])) extends AnyVal {
+    implicit class RSAARequestTypeDescriptorMutableBuilder[Self <: RSAARequestTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAARequestTypeDescriptor[State, Payload, Meta])) extends AnyVal {
       
       @scala.inline
       def setMeta(
-        value: (js.Function2[/* action */ RSAAAction[_, _, _], /* state */ State, Meta | js.Promise[Meta]]) | Meta
+        value: (js.Function2[
+              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* state */ State, 
+              Meta | js.Promise[Meta]
+            ]) | Meta
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMetaFunction2(value: (/* action */ RSAAAction[_, _, _], /* state */ State) => Meta | js.Promise[Meta]): Self = StObject.set(x, "meta", js.Any.fromFunction2(value))
+      def setMetaFunction2(
+        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State) => Meta | js.Promise[Meta]
+      ): Self = StObject.set(x, "meta", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
       @scala.inline
       def setPayload(
-        value: (js.Function2[/* action */ RSAAAction[_, _, _], /* state */ State, Payload | js.Promise[Payload]]) | Payload
+        value: (js.Function2[
+              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
+              /* state */ State, 
+              Payload | js.Promise[Payload]
+            ]) | Payload
       ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPayloadFunction2(value: (/* action */ RSAAAction[_, _, _], /* state */ State) => Payload | js.Promise[Payload]): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
+      def setPayloadFunction2(
+        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State) => Payload | js.Promise[Payload]
+      ): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
@@ -450,28 +487,27 @@ object mod {
   
   type RSAASuccessType[State, Payload, Meta] = String | js.Symbol | (RSAASuccessTypeDescriptor[State, Payload, Meta])
   
-  @js.native
   trait RSAASuccessTypeDescriptor[State, Payload, Meta] extends StObject {
     
     var meta: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[_, _, _], 
+          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
           /* state */ State, 
           /* res */ Response, 
           Meta | js.Promise[Meta]
         ]) | Meta
-      ] = js.native
+      ] = js.undefined
     
     var payload: js.UndefOr[
         (js.Function3[
-          /* action */ RSAAAction[_, _, _], 
+          /* action */ RSAAAction[js.Any, js.Any, js.Any], 
           /* state */ State, 
           /* res */ Response, 
           Payload | js.Promise[Payload]
         ]) | Payload
-      ] = js.native
+      ] = js.undefined
     
-    var `type`: String | js.Symbol = js.native
+    var `type`: String | js.Symbol
   }
   object RSAASuccessTypeDescriptor {
     
@@ -483,12 +519,12 @@ object mod {
     }
     
     @scala.inline
-    implicit class RSAASuccessTypeDescriptorMutableBuilder[Self <: RSAASuccessTypeDescriptor[_, _, _], State, Payload, Meta] (val x: Self with (RSAASuccessTypeDescriptor[State, Payload, Meta])) extends AnyVal {
+    implicit class RSAASuccessTypeDescriptorMutableBuilder[Self <: RSAASuccessTypeDescriptor[?, ?, ?], State, Payload, Meta] (val x: Self & (RSAASuccessTypeDescriptor[State, Payload, Meta])) extends AnyVal {
       
       @scala.inline
       def setMeta(
         value: (js.Function3[
-              /* action */ RSAAAction[_, _, _], 
+              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
               /* res */ Response, 
               Meta | js.Promise[Meta]
@@ -497,7 +533,7 @@ object mod {
       
       @scala.inline
       def setMetaFunction3(
-        value: (/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
+        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Meta | js.Promise[Meta]
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -506,7 +542,7 @@ object mod {
       @scala.inline
       def setPayload(
         value: (js.Function3[
-              /* action */ RSAAAction[_, _, _], 
+              /* action */ RSAAAction[js.Any, js.Any, js.Any], 
               /* state */ State, 
               /* res */ Response, 
               Payload | js.Promise[Payload]
@@ -515,7 +551,7 @@ object mod {
       
       @scala.inline
       def setPayloadFunction3(
-        value: (/* action */ RSAAAction[_, _, _], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
+        value: (/* action */ RSAAAction[js.Any, js.Any, js.Any], /* state */ State, /* res */ Response) => Payload | js.Promise[Payload]
       ): Self = StObject.set(x, "payload", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -528,7 +564,7 @@ object mod {
   
   type TypeOrResolver[Arg, Type] = Type | (js.Function1[/* arg */ Arg, Type | js.Promise[Type]])
   
-  type ValidAction[Payload, Meta] = typings.reduxApiMiddleware.anon.Error with (PayloadPayload[Payload] | js.Object) with (MetaMeta[Meta] | js.Object)
+  type ValidAction[Payload, Meta] = typings.reduxApiMiddleware.anon.Error & (PayloadPayload[Payload] | js.Object) & (MetaMeta[Meta] | js.Object)
   
   /**
     * Redux behaviour changed by middleware, so overloads here
@@ -544,7 +580,7 @@ object mod {
     trait Dispatch extends StObject {
       
       // `Promise<undefined> is returned in case of RSAA validation errors or user bails out
-      def apply(action: RSAAAction[_, _, _]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+      def apply(action: RSAAAction[js.Any, js.Any, js.Any]): js.Promise[Unit] = js.native
     }
   }
 }

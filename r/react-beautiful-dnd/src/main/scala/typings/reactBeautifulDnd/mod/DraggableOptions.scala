@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableOptions extends StObject {
   
-  var canDragInteractiveElements: Boolean = js.native
+  var canDragInteractiveElements: Boolean
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var shouldRespectForcePress: Boolean = js.native
+  var shouldRespectForcePress: Boolean
 }
 object DraggableOptions {
   

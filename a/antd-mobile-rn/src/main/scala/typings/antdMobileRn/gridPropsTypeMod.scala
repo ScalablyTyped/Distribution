@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridPropsTypeMod {
   
-  @js.native
   trait DataItem
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var icon: js.UndefOr[js.Any] = js.native
+    var icon: js.UndefOr[js.Any] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.native
+    var text: js.UndefOr[js.Any] = js.undefined
   }
   object DataItem {
     
@@ -42,24 +41,23 @@ object gridPropsTypeMod {
     }
   }
   
-  @js.native
   trait GridPropsType extends StObject {
     
-    var carouselMaxRow: js.UndefOr[Double] = js.native
+    var carouselMaxRow: js.UndefOr[Double] = js.undefined
     
-    var columnNum: js.UndefOr[Double] = js.native
+    var columnNum: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Array[js.UndefOr[DataItem]]] = js.native
+    var data: js.UndefOr[js.Array[js.UndefOr[DataItem]]] = js.undefined
     
-    var hasLine: js.UndefOr[Boolean] = js.native
+    var hasLine: js.UndefOr[Boolean] = js.undefined
     
-    var isCarousel: js.UndefOr[Boolean] = js.native
+    var isCarousel: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[js.Function2[/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function2[/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double, Unit]] = js.undefined
     
     var renderItem: js.UndefOr[
         js.Function2[/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double, ReactElement]
-      ] = js.native
+      ] = js.undefined
   }
   object GridPropsType {
     

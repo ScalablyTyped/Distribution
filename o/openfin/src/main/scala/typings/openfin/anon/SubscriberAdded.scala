@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriberAdded extends StObject {
   
-  var subscriberAdded: String = js.native
+  var subscriberAdded: String
   
-  var subscriberRemoved: String = js.native
+  var subscriberRemoved: String
 }
 object SubscriberAdded {
   

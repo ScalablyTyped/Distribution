@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceAccessLevelsResponse extends StObject {
   
   /** List of the Access Level instances. */
-  var accessLevels: js.UndefOr[js.Array[AccessLevel]] = js.native
+  var accessLevels: js.UndefOr[js.Array[AccessLevel]] = js.undefined
 }
 object ReplaceAccessLevelsResponse {
   

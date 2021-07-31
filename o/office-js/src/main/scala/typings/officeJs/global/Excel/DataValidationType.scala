@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,25 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DataValidationType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.DataValidationType with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.DataValidationType & String] = js.native
   
-  /* "Custom" */ val custom: typings.officeJs.Excel.DataValidationType.custom with String = js.native
+  /* "Custom" */ val custom: typings.officeJs.Excel.DataValidationType.custom & String = js.native
   
-  /* "Date" */ val date: typings.officeJs.Excel.DataValidationType.date with String = js.native
+  /* "Date" */ val date: typings.officeJs.Excel.DataValidationType.date & String = js.native
   
-  /* "Decimal" */ val decimal: typings.officeJs.Excel.DataValidationType.decimal with String = js.native
+  /* "Decimal" */ val decimal: typings.officeJs.Excel.DataValidationType.decimal & String = js.native
   
-  /* "Inconsistent" */ val inconsistent: typings.officeJs.Excel.DataValidationType.inconsistent with String = js.native
+  /* "Inconsistent" */ val inconsistent: typings.officeJs.Excel.DataValidationType.inconsistent & String = js.native
   
-  /* "List" */ val list: typings.officeJs.Excel.DataValidationType.list with String = js.native
+  /* "List" */ val list: typings.officeJs.Excel.DataValidationType.list & String = js.native
   
-  /* "MixedCriteria" */ val mixedCriteria: typings.officeJs.Excel.DataValidationType.mixedCriteria with String = js.native
+  /* "MixedCriteria" */ val mixedCriteria: typings.officeJs.Excel.DataValidationType.mixedCriteria & String = js.native
   
-  /* "None" */ val none: typings.officeJs.Excel.DataValidationType.none with String = js.native
+  /* "None" */ val none: typings.officeJs.Excel.DataValidationType.none & String = js.native
   
-  /* "TextLength" */ val textLength: typings.officeJs.Excel.DataValidationType.textLength with String = js.native
+  /* "TextLength" */ val textLength: typings.officeJs.Excel.DataValidationType.textLength & String = js.native
   
-  /* "Time" */ val time: typings.officeJs.Excel.DataValidationType.time with String = js.native
+  /* "Time" */ val time: typings.officeJs.Excel.DataValidationType.time & String = js.native
   
-  /* "WholeNumber" */ val wholeNumber: typings.officeJs.Excel.DataValidationType.wholeNumber with String = js.native
+  /* "WholeNumber" */ val wholeNumber: typings.officeJs.Excel.DataValidationType.wholeNumber & String = js.native
 }

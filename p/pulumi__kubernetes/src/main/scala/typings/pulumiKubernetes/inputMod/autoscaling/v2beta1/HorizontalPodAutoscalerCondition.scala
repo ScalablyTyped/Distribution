@@ -3,39 +3,37 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HorizontalPodAutoscalerCondition describes the state of a HorizontalPodAutoscaler at a certain point.
   */
-@js.native
 trait HorizontalPodAutoscalerCondition extends StObject {
   
   /**
     * lastTransitionTime is the last time the condition transitioned from one status to another
     */
-  var lastTransitionTime: js.UndefOr[Input[String]] = js.native
+  var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * message is a human-readable explanation containing details about the transition
     */
-  var message: js.UndefOr[Input[String]] = js.native
+  var message: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * reason is the reason for the condition's last transition.
     */
-  var reason: js.UndefOr[Input[String]] = js.native
+  var reason: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * status is the status of the condition (True, False, Unknown)
     */
-  var status: Input[String] = js.native
+  var status: Input[String]
   
   /**
     * type describes the current condition
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object HorizontalPodAutoscalerCondition {
   

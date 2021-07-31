@@ -2,66 +2,64 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slot extends StObject {
   
   /**
     * A list of default values for the slot. Default values are used when Amazon Lex hasn't determined a value for a slot. You can specify default values from context variables, session attributes, and defined values.
     */
-  var defaultValueSpec: js.UndefOr[SlotDefaultValueSpec] = js.native
+  var defaultValueSpec: js.UndefOr[SlotDefaultValueSpec] = js.undefined
   
   /**
     * A description of the slot.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The name of the slot.
     */
-  var name: SlotName = js.native
+  var name: SlotName
   
   /**
     * Determines whether a slot is obfuscated in conversation logs and stored utterances. When you obfuscate a slot, the value is replaced by the slot name in curly braces ({}). For example, if the slot name is "full_name", obfuscated values are replaced with "{full_name}". For more information, see  Slot Obfuscation . 
     */
-  var obfuscationSetting: js.UndefOr[ObfuscationSetting] = js.native
+  var obfuscationSetting: js.UndefOr[ObfuscationSetting] = js.undefined
   
   /**
     *  Directs Amazon Lex the order in which to elicit this slot value from the user. For example, if the intent has two slots with priorities 1 and 2, AWS Amazon Lex first elicits a value for the slot with priority 1. If multiple slots share the same priority, the order in which Amazon Lex elicits values is arbitrary.
     */
-  var priority: js.UndefOr[Priority] = js.native
+  var priority: js.UndefOr[Priority] = js.undefined
   
   /**
     *  A set of possible responses for the slot type used by text-based clients. A user chooses an option from the response card, instead of using text to reply. 
     */
-  var responseCard: js.UndefOr[ResponseCard] = js.native
+  var responseCard: js.UndefOr[ResponseCard] = js.undefined
   
   /**
     *  If you know a specific pattern with which users might respond to an Amazon Lex request for a slot value, you can provide those utterances to improve accuracy. This is optional. In most cases, Amazon Lex is capable of understanding user utterances. 
     */
-  var sampleUtterances: js.UndefOr[SlotUtteranceList] = js.native
+  var sampleUtterances: js.UndefOr[SlotUtteranceList] = js.undefined
   
   /**
     * Specifies whether the slot is required or optional. 
     */
-  var slotConstraint: SlotConstraint = js.native
+  var slotConstraint: SlotConstraint
   
   /**
     * The type of the slot, either a custom slot type that you defined or one of the built-in slot types.
     */
-  var slotType: js.UndefOr[CustomOrBuiltinSlotTypeName] = js.native
+  var slotType: js.UndefOr[CustomOrBuiltinSlotTypeName] = js.undefined
   
   /**
     * The version of the slot type.
     */
-  var slotTypeVersion: js.UndefOr[Version] = js.native
+  var slotTypeVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The prompt that Amazon Lex uses to elicit the slot value from the user.
     */
-  var valueElicitationPrompt: js.UndefOr[Prompt] = js.native
+  var valueElicitationPrompt: js.UndefOr[Prompt] = js.undefined
 }
 object Slot {
   

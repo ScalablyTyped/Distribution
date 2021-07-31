@@ -10,28 +10,28 @@ import typings.jsreportPhantomPdf.jsreportPhantomPdfStrings.landscape
 import typings.jsreportPhantomPdf.jsreportPhantomPdfStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsreport-phantom-pdf", JSImport.Namespace)
-  @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-phantom-pdf", JSImport.Namespace)
-  @js.native
-  def apply(options: PartialOptions): ExtensionDefinition = js.native
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
+  @JSImport("jsreport-phantom-pdf", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Margin extends StObject {
     
-    var bottom: Double | String = js.native
+    var bottom: Double | String
     
-    var left: Double | String = js.native
+    var left: Double | String
     
-    var right: Double | String = js.native
+    var right: Double | String
     
-    var top: Double | String = js.native
+    var top: Double | String
   }
   object Margin {
     
@@ -62,17 +62,16 @@ object mod {
   //   dedicatedProcess = 'dedicated-process',
   //   phantomServer = 'phantom-server'
   // }
-  @js.native
   trait Options extends StObject {
     
-    var allowLocalFilesAccess: Boolean = js.native
+    var allowLocalFilesAccess: Boolean
     
     // appDirectory: string;
-    var defaultPhantomjsVersion: String = js.native
+    var defaultPhantomjsVersion: String
     
-    var strategy: `dedicated-process` | `phantom-server` = js.native
+    var strategy: `dedicated-process` | `phantom-server`
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Options {
     
@@ -104,38 +103,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Phantom extends StObject {
     
-    var blockJavaScript: Boolean = js.native
+    var blockJavaScript: Boolean
     
-    var customPhantomJS: Boolean = js.native
+    var customPhantomJS: Boolean
     
-    var fitToPage: Boolean = js.native
+    var fitToPage: Boolean
     
-    var footer: String = js.native
+    var footer: String
     
-    var footerHeight: String = js.native
+    var footerHeight: String
     
-    var format: String = js.native
+    var format: String
     
-    var header: String = js.native
+    var header: String
     
-    var headerHeight: String = js.native
+    var headerHeight: String
     
-    var height: String = js.native
+    var height: String
     
-    var margin: String | Margin = js.native
+    var margin: String | Margin
     
-    var orientation: portrait | landscape = js.native
+    var orientation: portrait | landscape
     
-    var phantomjsVersion: String = js.native
+    var phantomjsVersion: String
     
-    var resourceTimeout: Double = js.native
+    var resourceTimeout: Double
     
-    var waitForJS: Boolean = js.native
+    var waitForJS: Boolean
     
-    var width: String = js.native
+    var width: String
   }
   object Phantom {
     
@@ -214,12 +212,11 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    @js.native
     trait Template extends StObject {
       
-      var phantom: js.UndefOr[PartialPhantom] = js.native
+      var phantom: js.UndefOr[PartialPhantom] = js.undefined
       
-      var recipe: `phantom-pdf` | String = js.native
+      var recipe: `phantom-pdf` | String
     }
     object Template {
       

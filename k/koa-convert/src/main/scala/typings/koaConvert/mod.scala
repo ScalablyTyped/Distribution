@@ -8,12 +8,14 @@ import typings.koa.mod.Next
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(mw: js.Function2[/* context */ Context, /* next */ Next, Generator[js.Any, js.Any, js.Any]]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(mw.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-convert", JSImport.Namespace)
   @js.native
-  def apply(mw: js.Function2[/* context */ Context, /* next */ Next, Generator[_, _, _]]): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
 }

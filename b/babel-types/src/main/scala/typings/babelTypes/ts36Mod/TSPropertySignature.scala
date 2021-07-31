@@ -2,28 +2,27 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSPropertySignature
-  extends Node
+  extends StObject
+     with Node
      with TSTypeElement {
   
-  var computed: Boolean | Null = js.native
+  var computed: Boolean | Null
   
-  var initializer: Expression | Null = js.native
+  var initializer: Expression | Null
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var typeAnnotation: TSTypeAnnotation | Null = js.native
+  var typeAnnotation: TSTypeAnnotation | Null
   
   @JSName("type")
-  var type_TSPropertySignature: typings.babelTypes.babelTypesStrings.TSPropertySignature = js.native
+  var type_TSPropertySignature: typings.babelTypes.babelTypesStrings.TSPropertySignature
 }
 object TSPropertySignature {
   
@@ -32,7 +31,7 @@ object TSPropertySignature {
   def apply(key: Expression): TSPropertySignature = js.native
   @JSImport("babel-types/ts3.6", "TSPropertySignature")
   @js.native
-  def apply(key: Expression, typeAnnotation: js.UndefOr[scala.Nothing], initializer: Expression): TSPropertySignature = js.native
+  def apply(key: Expression, typeAnnotation: Unit, initializer: Expression): TSPropertySignature = js.native
   @JSImport("babel-types/ts3.6", "TSPropertySignature")
   @js.native
   def apply(key: Expression, typeAnnotation: TSTypeAnnotation): TSPropertySignature = js.native

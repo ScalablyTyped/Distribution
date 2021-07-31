@@ -5,7 +5,6 @@ import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.iComponentMod.IComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noRowsOverlayComponentMod {
@@ -35,6 +34,5 @@ object noRowsOverlayComponentMod {
   
   type INoRowsOverlayComp = IComponent[INoRowsOverlayParams]
   
-  @js.native
   trait INoRowsOverlayParams extends StObject
 }

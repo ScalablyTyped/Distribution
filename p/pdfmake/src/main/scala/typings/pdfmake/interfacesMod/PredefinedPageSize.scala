@@ -2,7 +2,6 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -55,7 +54,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pdfmake.pdfmakeStrings.LETTER
   - typings.pdfmake.pdfmakeStrings.TABLOID
 */
-trait PredefinedPageSize extends PageSize
+trait PredefinedPageSize
+  extends StObject
+     with PageSize
 object PredefinedPageSize {
   
   @scala.inline

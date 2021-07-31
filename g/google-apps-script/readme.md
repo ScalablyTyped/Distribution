@@ -10,9 +10,9 @@ gas, the complete CLI for Google Apps Script
 | ------------------ | :-------------: |
 | Full name          | google-apps-script |
 | Keywords           | google-apps-script, googleappsscript, gas, export, import, download, upload, Google, apps, script, CLI, drive, script.google.com |
-| # releases         | 13 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 3153 |
+| # downloads        | 3423 |
 | # stars            | 5 |
 
 ## Links

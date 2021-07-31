@@ -3,27 +3,25 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNativeMaterialKit.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardStyle extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var shadowColor: js.UndefOr[String] = js.native
+  var shadowColor: js.UndefOr[String] = js.undefined
   
-  var shadowOffset: js.UndefOr[Height] = js.native
+  var shadowOffset: js.UndefOr[Height] = js.undefined
   
-  var shadowOpacity: js.UndefOr[Double] = js.native
+  var shadowOpacity: js.UndefOr[Double] = js.undefined
   
-  var shadowRadius: js.UndefOr[Double] = js.native
+  var shadowRadius: js.UndefOr[Double] = js.undefined
 }
 object CardStyle {
   

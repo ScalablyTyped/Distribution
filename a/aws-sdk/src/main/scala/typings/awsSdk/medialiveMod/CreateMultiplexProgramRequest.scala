@@ -2,32 +2,30 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMultiplexProgramRequest extends StObject {
   
   /**
     * ID of the multiplex where the program is to be created.
     */
-  var MultiplexId: string = js.native
+  var MultiplexId: string
   
   /**
     * The settings for this multiplex program.
     */
-  var MultiplexProgramSettings: typings.awsSdk.medialiveMod.MultiplexProgramSettings = js.native
+  var MultiplexProgramSettings: typings.awsSdk.medialiveMod.MultiplexProgramSettings
   
   /**
     * Name of multiplex program.
     */
-  var ProgramName: string = js.native
+  var ProgramName: string
   
   /**
     * Unique request ID. This prevents retries from creating multiple
   resources.
     */
-  var RequestId: string = js.native
+  var RequestId: string
 }
 object CreateMultiplexProgramRequest {
   

@@ -2,21 +2,19 @@ package typings.eggMultipart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EggFile extends StObject {
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var field: String = js.native
+  var field: String
   
-  var filename: String = js.native
+  var filename: String
   
-  var filepath: String = js.native
+  var filepath: String
   
-  var mime: String = js.native
+  var mime: String
 }
 object EggFile {
   

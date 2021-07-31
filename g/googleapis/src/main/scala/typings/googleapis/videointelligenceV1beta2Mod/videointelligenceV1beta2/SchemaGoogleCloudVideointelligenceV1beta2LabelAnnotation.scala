@@ -2,13 +2,11 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Label annotation.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation extends StObject {
   
   /**
@@ -16,22 +14,22 @@ trait SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation extends StObject 
     * `Terrier` the category is likely `dog`. And in some cases there might be
     * more than one categories e.g. `Terrier` could also be a `pet`.
     */
-  var categoryEntities: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2Entity]] = js.native
+  var categoryEntities: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2Entity]] = js.undefined
   
   /**
     * Detected entity.
     */
-  var entity: js.UndefOr[SchemaGoogleCloudVideointelligenceV1beta2Entity] = js.native
+  var entity: js.UndefOr[SchemaGoogleCloudVideointelligenceV1beta2Entity] = js.undefined
   
   /**
     * All video frames where a label was detected.
     */
-  var frames: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2LabelFrame]] = js.native
+  var frames: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2LabelFrame]] = js.undefined
   
   /**
     * All video segments where a label was detected.
     */
-  var segments: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2LabelSegment]] = js.native
+  var segments: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2LabelSegment]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1beta2LabelAnnotation {
   

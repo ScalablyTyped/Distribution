@@ -6,44 +6,38 @@ import typings.callstackReactThemeProvider.callstackReactThemeProviderBooleans.`
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoistNonReactStaticsMod {
   
-  @JSImport("@callstack/react-theme-provider/typings/hoist-non-react-statics", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: ComponentType[_] */, S /* <: ComponentType[_] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S): T with (NonReactStatics[S, C]) = js.native
-  @JSImport("@callstack/react-theme-provider/typings/hoist-non-react-statics", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: ComponentType[_] */, S /* <: ComponentType[_] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S, customStatic: C): T with (NonReactStatics[S, C]) = js.native
+  @scala.inline
+  def apply[T /* <: ComponentType[js.Any] */, S /* <: ComponentType[js.Any] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].apply(TargetComponent.asInstanceOf[js.Any], SourceComponent.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
+  @scala.inline
+  def apply[T /* <: ComponentType[js.Any] */, S /* <: ComponentType[js.Any] */, C /* <: StringDictionary[`true`] */](TargetComponent: T, SourceComponent: S, customStatic: C): T & (NonReactStatics[S, C]) = (^.asInstanceOf[js.Dynamic].apply(TargetComponent.asInstanceOf[js.Any], SourceComponent.asInstanceOf[js.Any], customStatic.asInstanceOf[js.Any])).asInstanceOf[T & (NonReactStatics[S, C])]
   
+  @JSImport("@callstack/react-theme-provider/typings/hoist-non-react-statics", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FORWARD_REF_STATICS extends StObject {
     
     @JSName("$$typeof")
-    var DollarDollartypeof: `true` = js.native
+    var DollarDollartypeof: `true`
     
-    var defaultProps: `true` = js.native
+    var defaultProps: `true`
     
-    var displayName: `true` = js.native
+    var displayName: `true`
     
-    var propTypes: `true` = js.native
+    var propTypes: `true`
     
-    var render: `true` = js.native
+    var render: `true`
   }
   object FORWARD_REF_STATICS {
     
     @scala.inline
-    def apply(
-      DollarDollartypeof: `true`,
-      defaultProps: `true`,
-      displayName: `true`,
-      propTypes: `true`,
-      render: `true`
-    ): FORWARD_REF_STATICS = {
-      val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], propTypes = propTypes.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
-      __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
+    def apply(): FORWARD_REF_STATICS = {
+      val __obj = js.Dynamic.literal(defaultProps = true, displayName = true, propTypes = true, render = true)
+      __obj.updateDynamic("$$typeof")(true)
       __obj.asInstanceOf[FORWARD_REF_STATICS]
     }
     
@@ -67,26 +61,25 @@ object hoistNonReactStaticsMod {
     }
   }
   
-  @js.native
   trait KNOWN_STATICS extends StObject {
     
-    var arguments: `true` = js.native
+    var arguments: `true`
     
-    var arity: `true` = js.native
+    var arity: `true`
     
-    var callee: `true` = js.native
+    var callee: `true`
     
-    var caller: `true` = js.native
+    var caller: `true`
     
-    var length: `true` = js.native
+    var length: `true`
     
-    var name: `true` = js.native
+    var name: `true`
   }
   object KNOWN_STATICS {
     
     @scala.inline
-    def apply(arguments: `true`, arity: `true`, callee: `true`, caller: `true`, length: `true`, name: `true`): KNOWN_STATICS = {
-      val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], arity = arity.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], caller = caller.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(): KNOWN_STATICS = {
+      val __obj = js.Dynamic.literal(arguments = true, arity = true, callee = true, caller = true, length = true, name = true)
       __obj.asInstanceOf[KNOWN_STATICS]
     }
     
@@ -113,36 +106,28 @@ object hoistNonReactStaticsMod {
     }
   }
   
-  @js.native
   trait MEMO_STATICS extends StObject {
     
     @JSName("$$typeof")
-    var DollarDollartypeof: `true` = js.native
+    var DollarDollartypeof: `true`
     
-    var compare: `true` = js.native
+    var compare: `true`
     
-    var defaultProps: `true` = js.native
+    var defaultProps: `true`
     
-    var displayName: `true` = js.native
+    var displayName: `true`
     
-    var propTypes: `true` = js.native
+    var propTypes: `true`
     
-    var `type`: `true` = js.native
+    var `type`: `true`
   }
   object MEMO_STATICS {
     
     @scala.inline
-    def apply(
-      DollarDollartypeof: `true`,
-      compare: `true`,
-      defaultProps: `true`,
-      displayName: `true`,
-      propTypes: `true`,
-      `type`: `true`
-    ): MEMO_STATICS = {
-      val __obj = js.Dynamic.literal(compare = compare.asInstanceOf[js.Any], defaultProps = defaultProps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], propTypes = propTypes.asInstanceOf[js.Any])
-      __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): MEMO_STATICS = {
+      val __obj = js.Dynamic.literal(compare = true, defaultProps = true, displayName = true, propTypes = true)
+      __obj.updateDynamic("$$typeof")(true)
+      __obj.updateDynamic("type")(true)
       __obj.asInstanceOf[MEMO_STATICS]
     }
     
@@ -169,53 +154,40 @@ object hoistNonReactStaticsMod {
     }
   }
   
-  type NonReactStatics[S /* <: ComponentType[_] */, C /* <: StringDictionary[`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type NonReactStatics[S /* <: ComponentType[js.Any] */, C /* <: StringDictionary[`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in std.Exclude<keyof S, S extends react.react.MemoExoticComponent<any>? '$$typeof' | 'compare' | 'defaultProps' | 'displayName' | 'propTypes' | 'type' | keyof C : S extends react.react.ForwardRefExoticComponent<any>? '$$typeof' | 'render' | 'defaultProps' | 'displayName' | 'propTypes' | keyof C : 'childContextTypes' | 'contextType' | 'contextTypes' | 'defaultProps' | 'displayName' | 'getDefaultProps' | 'getDerivedStateFromError' | 'getDerivedStateFromProps' | 'mixins' | 'propTypes' | 'type' | 'name' | 'length' | 'prototype' | 'caller' | 'callee' | 'arguments' | 'arity' | keyof C> ]: S[key]}
-    */ typings.callstackReactThemeProvider.callstackReactThemeProviderStrings.NonReactStatics with TopLevel[S]
+    */ typings.callstackReactThemeProvider.callstackReactThemeProviderStrings.NonReactStatics & TopLevel[S]
   
-  @js.native
   trait REACT_STATICS extends StObject {
     
-    var childContextTypes: `true` = js.native
+    var childContextTypes: `true`
     
-    var contextType: `true` = js.native
+    var contextType: `true`
     
-    var contextTypes: `true` = js.native
+    var contextTypes: `true`
     
-    var defaultProps: `true` = js.native
+    var defaultProps: `true`
     
-    var displayName: `true` = js.native
+    var displayName: `true`
     
-    var getDefaultProps: `true` = js.native
+    var getDefaultProps: `true`
     
-    var getDerivedStateFromError: `true` = js.native
+    var getDerivedStateFromError: `true`
     
-    var getDerivedStateFromProps: `true` = js.native
+    var getDerivedStateFromProps: `true`
     
-    var mixins: `true` = js.native
+    var mixins: `true`
     
-    var propTypes: `true` = js.native
+    var propTypes: `true`
     
-    var `type`: `true` = js.native
+    var `type`: `true`
   }
   object REACT_STATICS {
     
     @scala.inline
-    def apply(
-      childContextTypes: `true`,
-      contextType: `true`,
-      contextTypes: `true`,
-      defaultProps: `true`,
-      displayName: `true`,
-      getDefaultProps: `true`,
-      getDerivedStateFromError: `true`,
-      getDerivedStateFromProps: `true`,
-      mixins: `true`,
-      propTypes: `true`,
-      `type`: `true`
-    ): REACT_STATICS = {
-      val __obj = js.Dynamic.literal(childContextTypes = childContextTypes.asInstanceOf[js.Any], contextType = contextType.asInstanceOf[js.Any], contextTypes = contextTypes.asInstanceOf[js.Any], defaultProps = defaultProps.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], getDefaultProps = getDefaultProps.asInstanceOf[js.Any], getDerivedStateFromError = getDerivedStateFromError.asInstanceOf[js.Any], getDerivedStateFromProps = getDerivedStateFromProps.asInstanceOf[js.Any], mixins = mixins.asInstanceOf[js.Any], propTypes = propTypes.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(): REACT_STATICS = {
+      val __obj = js.Dynamic.literal(childContextTypes = true, contextType = true, contextTypes = true, defaultProps = true, displayName = true, getDefaultProps = true, getDerivedStateFromError = true, getDerivedStateFromProps = true, mixins = true, propTypes = true)
+      __obj.updateDynamic("type")(true)
       __obj.asInstanceOf[REACT_STATICS]
     }
     

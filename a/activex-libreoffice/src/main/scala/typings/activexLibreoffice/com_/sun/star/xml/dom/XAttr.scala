@@ -3,38 +3,38 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAttr extends XNode {
+trait XAttr
+  extends StObject
+     with XNode {
   
   /** Returns the name of this attribute. */
-  val Name: String = js.native
+  val Name: String
   
   /** The Element node this attribute is attached to or null if this attribute is not in use. */
-  val OwnerElement: XElement = js.native
+  val OwnerElement: XElement
   
   /** If this attribute was explicitly given a value in the original document, this is true; otherwise, it is false. */
-  val Specified: Boolean = js.native
+  val Specified: Boolean
   
   /** On retrieval, the value of the attribute is returned as a string. */
-  var Value: String = js.native
+  var Value: String
   
   /** Returns the name of this attribute. */
-  def getName(): String = js.native
+  def getName(): String
   
   /** The Element node this attribute is attached to or null if this attribute is not in use. */
-  def getOwnerElement(): XElement = js.native
+  def getOwnerElement(): XElement
   
   /** If this attribute was explicitly given a value in the original document, this is true; otherwise, it is false. */
-  def getSpecified(): Boolean = js.native
+  def getSpecified(): Boolean
   
   /** On retrieval, the value of the attribute is returned as a string. */
-  def getValue(): String = js.native
+  def getValue(): String
   
   /** Sets the value of the attribute from a string. Throws: {@link DOMException} - NO_MODIFICATION_ALLOWED_ERR: Raised when the node is readonly. */
-  def setValue(value: String): Unit = js.native
+  def setValue(value: String): Unit
 }
 object XAttr {
   

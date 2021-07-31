@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devEndpointMod {
@@ -29,7 +28,7 @@ object devEndpointMod {
     /**
       * A map of arguments used to configure the endpoint.
       */
-    val arguments: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+    val arguments: Output_[js.UndefOr[StringDictionary[js.Any]]] = js.native
     
     /**
       * The ARN of the endpoint.
@@ -149,6 +148,10 @@ object devEndpointMod {
   /* static members */
   object DevEndpoint {
     
+    @JSImport("@pulumi/aws/glue/devEndpoint", "DevEndpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DevEndpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -158,105 +161,99 @@ object devEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/devEndpoint", "DevEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DevEndpoint = js.native
-    @JSImport("@pulumi/aws/glue/devEndpoint", "DevEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DevEndpoint = js.native
-    @JSImport("@pulumi/aws/glue/devEndpoint", "DevEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DevEndpointState): DevEndpoint = js.native
-    @JSImport("@pulumi/aws/glue/devEndpoint", "DevEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DevEndpointState, opts: CustomResourceOptions): DevEndpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DevEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DevEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DevEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DevEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DevEndpointState): DevEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DevEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DevEndpointState, opts: CustomResourceOptions): DevEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DevEndpoint]
     
     /**
       * Returns true if the given object is an instance of DevEndpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/devEndpoint", "DevEndpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/devEndpoint.DevEndpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/devEndpoint.DevEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/devEndpoint.DevEndpoint */ Boolean]
   }
   
-  @js.native
   trait DevEndpointArgs extends StObject {
     
     /**
       * A map of arguments used to configure the endpoint.
       */
-    val arguments: js.UndefOr[Input[StringDictionary[_]]] = js.native
+    val arguments: js.UndefOr[Input[StringDictionary[js.Any]]] = js.undefined
     
     /**
       * Path to one or more Java Jars in an S3 bucket that should be loaded in this endpoint.
       */
-    val extraJarsS3Path: js.UndefOr[Input[String]] = js.native
+    val extraJarsS3Path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path(s) to one or more Python libraries in an S3 bucket that should be loaded in this endpoint. Multiple values must be complete paths separated by a comma.
       */
-    val extraPythonLibsS3Path: js.UndefOr[Input[String]] = js.native
+    val extraPythonLibsS3Path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * -  Specifies the versions of Python and Apache Spark to use. Defaults to AWS Glue version 0.9.
       */
-    val glueVersion: js.UndefOr[Input[String]] = js.native
+    val glueVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of this endpoint. It must be unique in your account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of AWS Glue Data Processing Units (DPUs) to allocate to this endpoint. Conflicts with `workerType`.
       */
-    val numberOfNodes: js.UndefOr[Input[Double]] = js.native
+    val numberOfNodes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of workers of a defined worker type that are allocated to this endpoint. This field is available only when you choose worker type G.1X or G.2X.
       */
-    val numberOfWorkers: js.UndefOr[Input[Double]] = js.native
+    val numberOfWorkers: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The public key to be used by this endpoint for authentication.
       */
-    val publicKey: js.UndefOr[Input[String]] = js.native
+    val publicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of public keys to be used by this endpoint for authentication.
       */
-    val publicKeys: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val publicKeys: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The IAM role for this endpoint.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * The name of the Security Configuration structure to be used with this endpoint.
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Security group IDs for the security groups to be used by this endpoint.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The subnet ID for the new endpoint to use.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of predefined worker that is allocated to this endpoint. Accepts a value of Standard, G.1X, or G.2X.
       */
-    val workerType: js.UndefOr[Input[String]] = js.native
+    val workerType: js.UndefOr[Input[String]] = js.undefined
   }
   object DevEndpointArgs {
     
@@ -270,7 +267,7 @@ object devEndpointMod {
     implicit class DevEndpointArgsMutableBuilder[Self <: DevEndpointArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArguments(value: Input[StringDictionary[_]]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      def setArguments(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
@@ -364,128 +361,127 @@ object devEndpointMod {
     }
   }
   
-  @js.native
   trait DevEndpointState extends StObject {
     
     /**
       * A map of arguments used to configure the endpoint.
       */
-    val arguments: js.UndefOr[Input[StringDictionary[_]]] = js.native
+    val arguments: js.UndefOr[Input[StringDictionary[js.Any]]] = js.undefined
     
     /**
       * The ARN of the endpoint.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS availability zone where this endpoint is located.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path to one or more Java Jars in an S3 bucket that should be loaded in this endpoint.
       */
-    val extraJarsS3Path: js.UndefOr[Input[String]] = js.native
+    val extraJarsS3Path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path(s) to one or more Python libraries in an S3 bucket that should be loaded in this endpoint. Multiple values must be complete paths separated by a comma.
       */
-    val extraPythonLibsS3Path: js.UndefOr[Input[String]] = js.native
+    val extraPythonLibsS3Path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The reason for a current failure in this endpoint.
       */
-    val failureReason: js.UndefOr[Input[String]] = js.native
+    val failureReason: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * -  Specifies the versions of Python and Apache Spark to use. Defaults to AWS Glue version 0.9.
       */
-    val glueVersion: js.UndefOr[Input[String]] = js.native
+    val glueVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of this endpoint. It must be unique in your account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of AWS Glue Data Processing Units (DPUs) to allocate to this endpoint. Conflicts with `workerType`.
       */
-    val numberOfNodes: js.UndefOr[Input[Double]] = js.native
+    val numberOfNodes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of workers of a defined worker type that are allocated to this endpoint. This field is available only when you choose worker type G.1X or G.2X.
       */
-    val numberOfWorkers: js.UndefOr[Input[Double]] = js.native
+    val numberOfWorkers: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A private IP address to access the endpoint within a VPC, if this endpoint is created within one.
       */
-    val privateAddress: js.UndefOr[Input[String]] = js.native
+    val privateAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public IP address used by this endpoint. The PublicAddress field is present only when you create a non-VPC endpoint.
       */
-    val publicAddress: js.UndefOr[Input[String]] = js.native
+    val publicAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public key to be used by this endpoint for authentication.
       */
-    val publicKey: js.UndefOr[Input[String]] = js.native
+    val publicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of public keys to be used by this endpoint for authentication.
       */
-    val publicKeys: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val publicKeys: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The IAM role for this endpoint.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Security Configuration structure to be used with this endpoint.
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Security group IDs for the security groups to be used by this endpoint.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The current status of this endpoint.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The subnet ID for the new endpoint to use.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * he ID of the VPC used by this endpoint.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of predefined worker that is allocated to this endpoint. Accepts a value of Standard, G.1X, or G.2X.
       */
-    val workerType: js.UndefOr[Input[String]] = js.native
+    val workerType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The YARN endpoint address used by this endpoint.
       */
-    val yarnEndpointAddress: js.UndefOr[Input[String]] = js.native
+    val yarnEndpointAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Apache Zeppelin port for the remote Apache Spark interpreter.
       */
-    val zeppelinRemoteSparkInterpreterPort: js.UndefOr[Input[Double]] = js.native
+    val zeppelinRemoteSparkInterpreterPort: js.UndefOr[Input[Double]] = js.undefined
   }
   object DevEndpointState {
     
@@ -499,7 +495,7 @@ object devEndpointMod {
     implicit class DevEndpointStateMutableBuilder[Self <: DevEndpointState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArguments(value: Input[StringDictionary[_]]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      def setArguments(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)

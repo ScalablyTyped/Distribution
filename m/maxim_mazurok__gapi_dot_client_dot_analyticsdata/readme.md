@@ -10,9 +10,9 @@ TypeScript typings for Google Analytics Data API v1alpha
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.analyticsdata |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 34 |
 | # dependents       | 1 |
-| # downloads        | 158 |
+| # downloads        | 2271 |
 | # stars            | 0 |
 
 ## Links

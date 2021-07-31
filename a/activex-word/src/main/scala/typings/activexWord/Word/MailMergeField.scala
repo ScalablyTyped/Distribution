@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailMergeField extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Code: Range = js.native
+  var Code: Range
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  val Next: MailMergeField = js.native
+  val Next: MailMergeField
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Previous: MailMergeField = js.native
+  val Previous: MailMergeField
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  val Type: WdFieldType = js.native
+  val Type: WdFieldType
   
   @JSName("Word.MailMergeField_typekey")
-  var WordDotMailMergeField_typekey: MailMergeField = js.native
+  var WordDotMailMergeField_typekey: MailMergeField
 }
 object MailMergeField {
   

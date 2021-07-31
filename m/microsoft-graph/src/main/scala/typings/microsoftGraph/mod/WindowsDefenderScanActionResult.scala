@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsDefenderScanActionResult extends DeviceActionResult {
+trait WindowsDefenderScanActionResult
+  extends StObject
+     with DeviceActionResult {
   
   // Scan type either full scan or quick scan
-  var scanType: js.UndefOr[NullableOption[String]] = js.native
+  var scanType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsDefenderScanActionResult {
   

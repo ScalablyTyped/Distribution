@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceAttribute extends StObject {
   
   /**
     * Type of resource.
     */
-  var Type: ResourceAttributeType = js.native
+  var Type: ResourceAttributeType
   
   /**
     * Value of the resource type.
     */
-  var Value: ResourceAttributeValue = js.native
+  var Value: ResourceAttributeValue
 }
 object ResourceAttribute {
   

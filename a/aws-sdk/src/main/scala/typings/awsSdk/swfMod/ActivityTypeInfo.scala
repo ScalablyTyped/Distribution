@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTypeInfo extends StObject {
   
   /**
     * The ActivityType type structure representing the activity type.
     */
-  var activityType: ActivityType = js.native
+  var activityType: ActivityType
   
   /**
     * The date and time this activity type was created through RegisterActivityType.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
   
   /**
     * If DEPRECATED, the date and time DeprecateActivityType was called.
     */
-  var deprecationDate: js.UndefOr[Timestamp] = js.native
+  var deprecationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the activity type provided in RegisterActivityType.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The current status of the activity type.
     */
-  var status: RegistrationStatus = js.native
+  var status: RegistrationStatus
 }
 object ActivityTypeInfo {
   

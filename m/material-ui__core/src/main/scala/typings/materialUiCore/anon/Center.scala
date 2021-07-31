@@ -2,13 +2,11 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
 }
 object Center {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItem extends StObject {
   
   /**
@@ -13,29 +11,29 @@ trait ListItem extends StObject {
     *
     * Only one selection can be set as the default.
     */
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `selected` property is editable.
     */
-  var selectedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var selectedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the text that is shown in the dropdown list.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var textMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var textMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the value that is used when the list item is selected.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `value` property is editable.
     */
-  var valueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var valueMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object ListItem {
   

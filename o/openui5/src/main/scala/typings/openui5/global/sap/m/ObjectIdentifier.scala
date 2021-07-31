@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.ObjectIdentifier")
 @js.native
 class ObjectIdentifier protected ()
-  extends typings.openui5.sap.m.ObjectIdentifier {
+  extends StObject
+     with typings.openui5.sap.m.ObjectIdentifier {
   /**
     * Constructor for a new ObjectIdentifier.Accepts an object literal <code>mSettings</code> that defines
     * initialproperty values, aggregated and associated objects as well as event handlers.See {@link

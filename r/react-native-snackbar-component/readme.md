@@ -10,9 +10,9 @@ A snackbar component for Android and iOS
 | ------------------ | :-------------: |
 | Full name          | react-native-snackbar-component |
 | Keywords           | snackbar, material, design, android, ios, notifications, react-native |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 59729 |
+| # downloads        | 72675 |
 | # stars            | 1 |
 
 ## Links

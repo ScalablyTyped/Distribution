@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelClusterRequest extends StObject {
   
   /**
     * The 39-character ID for the cluster that you want to cancel, for example CID123e4567-e89b-12d3-a456-426655440000.
     */
-  var ClusterId: typings.awsSdk.snowballMod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.snowballMod.ClusterId
 }
 object CancelClusterRequest {
   

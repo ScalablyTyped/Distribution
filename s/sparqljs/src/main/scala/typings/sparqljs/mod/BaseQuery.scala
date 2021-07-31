@@ -4,28 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseQuery extends StObject {
   
-  var base: js.UndefOr[String] = js.native
+  var base: js.UndefOr[String] = js.undefined
   
-  var prefixes: StringDictionary[String] = js.native
+  var prefixes: StringDictionary[String]
   
-  var `type`: query = js.native
+  var `type`: query
   
-  var values: js.UndefOr[js.Array[ValuePatternRow]] = js.native
+  var values: js.UndefOr[js.Array[ValuePatternRow]] = js.undefined
   
-  var where: js.UndefOr[js.Array[Pattern]] = js.native
+  var where: js.UndefOr[js.Array[Pattern]] = js.undefined
 }
 object BaseQuery {
   
   @scala.inline
-  def apply(prefixes: StringDictionary[String], `type`: query): BaseQuery = {
+  def apply(prefixes: StringDictionary[String]): BaseQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[BaseQuery]
   }
   

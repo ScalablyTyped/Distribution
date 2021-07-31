@@ -2,31 +2,29 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuDetail extends StObject {
   
-  var guest: String = js.native
+  var guest: String
   
-  var guest_nice: String = js.native
+  var guest_nice: String
   
-  var idle: String = js.native
+  var idle: String
   
-  var iowait: String = js.native
+  var iowait: String
   
-  var irq: String = js.native
+  var irq: String
   
-  var nice: String = js.native
+  var nice: String
   
-  var softirq: String = js.native
+  var softirq: String
   
-  var steal: String = js.native
+  var steal: String
   
-  var system: String = js.native
+  var system: String
   
-  var user: String = js.native
+  var user: String
 }
 object CpuDetail {
   

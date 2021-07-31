@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * such as Paragraph, inherit from ContainerElement.
   */
 @js.native
-trait ContainerElement extends Element {
+trait ContainerElement
+  extends StObject
+     with Element {
   
   def clear(): ContainerElement = js.native
   

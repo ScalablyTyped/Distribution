@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsMeasureTypeLabelOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait AnnotationsMeasureTypeLabelOptions extends StObject {
     *
     * Defaults to true.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Formatter function for the label text.
@@ -23,12 +21,12 @@ trait AnnotationsMeasureTypeLabelOptions extends StObject {
     *
     *  (see online documentation for example)
     */
-  var formatter: js.UndefOr[js.Function] = js.native
+  var formatter: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highstock) CSS styles for the measure label.
     */
-  var style: js.UndefOr[AnnotationsMeasureTypeLabelStyleOptions | CSSObject] = js.native
+  var style: js.UndefOr[AnnotationsMeasureTypeLabelStyleOptions | CSSObject] = js.undefined
 }
 object AnnotationsMeasureTypeLabelOptions {
   

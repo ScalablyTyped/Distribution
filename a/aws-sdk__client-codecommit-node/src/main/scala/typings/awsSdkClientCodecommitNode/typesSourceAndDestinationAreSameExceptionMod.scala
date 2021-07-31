@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.createPullRequestExceptionsUnionMod.CreatePullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSourceAndDestinationAreSameExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_SourceAndDestinationAreSameExceptionDetails> * / any */ @js.native
-  trait SourceAndDestinationAreSameException extends CreatePullRequestExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_SourceAndDestinationAreSameExceptionDetails> * / any */ trait SourceAndDestinationAreSameException
+    extends StObject
+       with CreatePullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SourceAndDestinationAreSameException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SourceAndDestinationAreSameException
   }
   object SourceAndDestinationAreSameException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SourceAndDestinationAreSameException
-    ): SourceAndDestinationAreSameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): SourceAndDestinationAreSameException = {
+      val __obj = js.Dynamic.literal(name = "SourceAndDestinationAreSameException")
       __obj.asInstanceOf[SourceAndDestinationAreSameException]
     }
     
@@ -34,6 +32,5 @@ object typesSourceAndDestinationAreSameExceptionMod {
     }
   }
   
-  @js.native
   trait SourceAndDestinationAreSameExceptionDetails extends StObject
 }

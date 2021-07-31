@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateTargetsWithJobResponse extends StObject {
   
   /**
     * A short text description of the job.
     */
-  var description: js.UndefOr[JobDescription] = js.native
+  var description: js.UndefOr[JobDescription] = js.undefined
   
   /**
     * An ARN identifying the job.
     */
-  var jobArn: js.UndefOr[JobArn] = js.native
+  var jobArn: js.UndefOr[JobArn] = js.undefined
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
 }
 object AssociateTargetsWithJobResponse {
   

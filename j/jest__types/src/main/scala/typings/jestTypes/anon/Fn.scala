@@ -7,22 +7,56 @@ import typings.jestTypes.globalMod.DoneFn
 import typings.jestTypes.jestTypesStrings.add_hook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Fn extends SyncEvent {
+trait Fn
+  extends StObject
+     with SyncEvent {
   
-  var asyncError: typings.std.Error = js.native
+  var asyncError: typings.std.Error
   
-  def fn(): js.UndefOr[(js.Promise[js.UndefOr[Unit | _]]) | Unit] = js.native
-  def fn(done: DoneFn): js.UndefOr[(js.Promise[js.UndefOr[Unit | _]]) | Unit] = js.native
+  def fn(): js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]
+  def fn(done: DoneFn): js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]
   @JSName("fn")
-  var fn_Original: HookFn = js.native
+  var fn_Original: HookFn
   
-  var hookType: HookType = js.native
+  var hookType: HookType
   
-  var name: add_hook = js.native
+  var name: add_hook
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
+}
+object Fn {
+  
+  @scala.inline
+  def apply(
+    asyncError: typings.std.Error,
+    fn: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
+    hookType: HookType
+  ): Fn = {
+    val __obj = js.Dynamic.literal(asyncError = asyncError.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn), hookType = hookType.asInstanceOf[js.Any], name = "add_hook")
+    __obj.asInstanceOf[Fn]
+  }
+  
+  @scala.inline
+  implicit class FnMutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFn(value: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setHookType(value: HookType): Self = StObject.set(x, "hookType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: add_hook): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }

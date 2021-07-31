@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to import resources.
   */
-@js.native
 trait SchemaImportResourcesRequest extends StObject {
   
   /**
     * The content structure in the source location. The default is BUNDLE.
     */
-  var contentStructure: js.UndefOr[String] = js.native
+  var contentStructure: js.UndefOr[String] = js.undefined
   
   /**
     * Cloud Storage source data location and import configuration.  The Cloud
@@ -26,7 +24,7 @@ trait SchemaImportResourcesRequest extends StObject {
     * can select all of the objects using the uri as the prefix. The maximum
     * number of objects is 1,000.
     */
-  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirRestGcsSource] = js.native
+  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirRestGcsSource] = js.undefined
 }
 object SchemaImportResourcesRequest {
   

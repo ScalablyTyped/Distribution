@@ -3,22 +3,22 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterPattern extends Pattern {
+trait FilterPattern
+  extends StObject
+     with Pattern {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var `type`: filter = js.native
+  var `type`: filter
 }
 object FilterPattern {
   
   @scala.inline
-  def apply(expression: Expression, `type`: filter): FilterPattern = {
+  def apply(expression: Expression): FilterPattern = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("filter")
     __obj.asInstanceOf[FilterPattern]
   }
   

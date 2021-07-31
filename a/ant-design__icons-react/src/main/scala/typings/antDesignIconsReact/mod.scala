@@ -5,7 +5,6 @@ import typings.antDesignIconsReact.iconMod.TwoToneColorPaletteSetter
 import typings.antDesignIconsReact.utilsMod.MiniMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,16 +20,14 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib", "default.add")
-    @js.native
+    @scala.inline
     def add(
       icons: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any)*
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib", "default.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     /* static member */
     @JSImport("@ant-design/icons-react/lib", "default.definitions")
@@ -53,35 +50,37 @@ object mod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib", "default.get")
-    @js.native
+    @scala.inline
     def get(): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
-    @JSImport("@ant-design/icons-react/lib", "default.get")
-    @js.native
-    def get(key: js.UndefOr[scala.Nothing], colors: TwoToneColorPalette): js.UndefOr[
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
-    @JSImport("@ant-design/icons-react/lib", "default.get")
-    @js.native
+      ]]
+    @scala.inline
     def get(key: String): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
-    @JSImport("@ant-design/icons-react/lib", "default.get")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ]]
+    @scala.inline
     def get(key: String, colors: TwoToneColorPalette): js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ]]
+    @scala.inline
+    def get(key: Unit, colors: TwoToneColorPalette): js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], colors.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconDefinition */ js.Any
+      ]]
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib", "default.getTwoToneColors")
-    @js.native
-    def getTwoToneColors(): TwoToneColorPalette = js.native
+    @scala.inline
+    def getTwoToneColors(): TwoToneColorPalette = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColors")().asInstanceOf[TwoToneColorPalette]
     
     /* static member */
-    @JSImport("@ant-design/icons-react/lib", "default.setTwoToneColors")
-    @js.native
-    def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = js.native
+    @scala.inline
+    def setTwoToneColors(hasPrimaryColorSecondaryColor: TwoToneColorPaletteSetter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColors")(hasPrimaryColorSecondaryColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

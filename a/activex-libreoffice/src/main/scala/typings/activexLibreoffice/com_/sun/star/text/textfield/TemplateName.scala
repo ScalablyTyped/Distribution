@@ -12,18 +12,18 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service text field that displays the name of the template the document has been created from.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait TemplateName extends TextField_ {
+trait TemplateName
+  extends StObject
+     with TextField_ {
   
   /** determines the format the template file name is displayed as specified in {@link com.sun.star.text.FilenameDisplayFormat} . */
-  var FileFormat: Double = js.native
+  var FileFormat: Double
 }
 object TemplateName {
   

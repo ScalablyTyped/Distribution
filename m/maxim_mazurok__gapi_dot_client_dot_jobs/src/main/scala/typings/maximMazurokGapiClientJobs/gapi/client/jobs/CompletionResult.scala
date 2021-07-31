@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionResult extends StObject {
   
   /** The URI of the company image for CompletionType.COMPANY_NAME. */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /** The suggestion for the query. */
-  var suggestion: js.UndefOr[String] = js.native
+  var suggestion: js.UndefOr[String] = js.undefined
   
   /** The completion topic. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CompletionResult {
   

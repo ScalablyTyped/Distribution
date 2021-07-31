@@ -3,7 +3,6 @@ package typings.samchon
 import typings.samchon.externalSystemMod.ExternalSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iexternalserverMod {

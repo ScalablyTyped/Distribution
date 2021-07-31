@@ -5,32 +5,28 @@ import typings.typedRestClient.interfacesMod.IHttpClientResponse
 import typings.typedRestClient.interfacesMod.IRequestQueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("typed-rest-client/Util", "decompressGzippedContent")
+  @JSImport("typed-rest-client/Util", JSImport.Namespace)
   @js.native
-  def decompressGzippedContent(buffer: Buffer): js.Promise[String] = js.native
-  @JSImport("typed-rest-client/Util", "decompressGzippedContent")
-  @js.native
-  def decompressGzippedContent(buffer: Buffer, charset: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typed-rest-client/Util", "getUrl")
-  @js.native
-  def getUrl(resource: String): String = js.native
-  @JSImport("typed-rest-client/Util", "getUrl")
-  @js.native
-  def getUrl(resource: String, baseUrl: js.UndefOr[scala.Nothing], queryParams: IRequestQueryParams): String = js.native
-  @JSImport("typed-rest-client/Util", "getUrl")
-  @js.native
-  def getUrl(resource: String, baseUrl: String): String = js.native
-  @JSImport("typed-rest-client/Util", "getUrl")
-  @js.native
-  def getUrl(resource: String, baseUrl: String, queryParams: IRequestQueryParams): String = js.native
+  @scala.inline
+  def decompressGzippedContent(buffer: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressGzippedContent")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def decompressGzippedContent(buffer: Buffer, charset: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decompressGzippedContent")(buffer.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("typed-rest-client/Util", "obtainContentCharset")
-  @js.native
-  def obtainContentCharset(response: IHttpClientResponse): String = js.native
+  @scala.inline
+  def getUrl(resource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getUrl(resource: String, baseUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(resource.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getUrl(resource: String, baseUrl: String, queryParams: IRequestQueryParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(resource.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getUrl(resource: String, baseUrl: Unit, queryParams: IRequestQueryParams): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(resource.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def obtainContentCharset(response: IHttpClientResponse): String = ^.asInstanceOf[js.Dynamic].applyDynamic("obtainContentCharset")(response.asInstanceOf[js.Any]).asInstanceOf[String]
 }

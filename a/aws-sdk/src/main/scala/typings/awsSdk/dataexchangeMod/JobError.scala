@@ -2,43 +2,41 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobError extends StObject {
   
   /**
     * The code for the job error.
     */
-  var Code: typings.awsSdk.dataexchangeMod.Code = js.native
+  var Code: typings.awsSdk.dataexchangeMod.Code
   
-  var Details: js.UndefOr[typings.awsSdk.dataexchangeMod.Details] = js.native
+  var Details: js.UndefOr[typings.awsSdk.dataexchangeMod.Details] = js.undefined
   
   /**
     * The name of the limit that was reached.
     */
-  var LimitName: js.UndefOr[JobErrorLimitName] = js.native
+  var LimitName: js.UndefOr[JobErrorLimitName] = js.undefined
   
   /**
     * The value of the exceeded limit.
     */
-  var LimitValue: js.UndefOr[double] = js.native
+  var LimitValue: js.UndefOr[double] = js.undefined
   
   /**
     * The message related to the job error.
     */
-  var Message: string = js.native
+  var Message: string
   
   /**
     * The unique identifier for the resource related to the error.
     */
-  var ResourceId: js.UndefOr[string] = js.native
+  var ResourceId: js.UndefOr[string] = js.undefined
   
   /**
     * The type of resource related to the error.
     */
-  var ResourceType: js.UndefOr[JobErrorResourceTypes] = js.native
+  var ResourceType: js.UndefOr[JobErrorResourceTypes] = js.undefined
 }
 object JobError {
   

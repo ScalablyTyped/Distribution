@@ -16,25 +16,25 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compressMod {
   
-  @JSImport("brotli/compress", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer): Uint8Array = js.native
-  @JSImport("brotli/compress", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer, options: CompressOptions): Uint8Array = js.native
+  @scala.inline
+  def apply(buffer: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def apply(buffer: Buffer, options: CompressOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
+  @JSImport("brotli/compress", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CompressOptions extends StObject {
     
     /**
       * The LZ77 window size, default is 22.
       */
-    var lgwin: js.UndefOr[Double] = js.native
+    var lgwin: js.UndefOr[Double] = js.undefined
     
     /**
       * The Brotli compression mode. Possible modes are:
@@ -42,12 +42,12 @@ object compressMod {
       * 1 - text (for UTF-8 format text input)
       * 2 - font (WOFF2)
       */
-    var mode: js.UndefOr[`0` | `1` | `2`] = js.native
+    var mode: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /**
       * The Brotli quality level, possible levels are 0-11. The default level is 11.
       */
-    var quality: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`] = js.native
+    var quality: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`] = js.undefined
   }
   object CompressOptions {
     

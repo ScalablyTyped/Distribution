@@ -2,46 +2,44 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailMessage extends StObject {
   
   /**
     * The body of the email message.
     */
-  var Body: js.UndefOr[string] = js.native
+  var Body: js.UndefOr[string] = js.undefined
   
   /**
     * The email address to forward bounces and complaints to, if feedback forwarding is enabled.
     */
-  var FeedbackForwardingAddress: js.UndefOr[string] = js.native
+  var FeedbackForwardingAddress: js.UndefOr[string] = js.undefined
   
   /**
     * The verified email address to send the email message from. The default value is the FromAddress specified for the email channel.
     */
-  var FromAddress: js.UndefOr[string] = js.native
+  var FromAddress: js.UndefOr[string] = js.undefined
   
   /**
     * The email message, represented as a raw MIME message.
     */
-  var RawEmail: js.UndefOr[typings.awsSdk.pinpointMod.RawEmail] = js.native
+  var RawEmail: js.UndefOr[typings.awsSdk.pinpointMod.RawEmail] = js.undefined
   
   /**
     * The reply-to email address(es) for the email message. If a recipient replies to the email, each reply-to address receives the reply.
     */
-  var ReplyToAddresses: js.UndefOr[ListOfString] = js.native
+  var ReplyToAddresses: js.UndefOr[ListOfString] = js.undefined
   
   /**
     * The email message, composed of a subject, a text part, and an HTML part.
     */
-  var SimpleEmail: js.UndefOr[typings.awsSdk.pinpointMod.SimpleEmail] = js.native
+  var SimpleEmail: js.UndefOr[typings.awsSdk.pinpointMod.SimpleEmail] = js.undefined
   
   /**
     * The default message variables to use in the email message. You can override the default variables with individual address variables.
     */
-  var Substitutions: js.UndefOr[MapOfListOfString] = js.native
+  var Substitutions: js.UndefOr[MapOfListOfString] = js.undefined
 }
 object EmailMessage {
   

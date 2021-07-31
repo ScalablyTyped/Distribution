@@ -2,12 +2,11 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VendorPropertiesFallback[TLength]
-  extends VendorLonghandPropertiesFallback[TLength]
+  extends StObject
+     with VendorLonghandPropertiesFallback[TLength]
      with VendorShorthandPropertiesFallback[TLength]
 object VendorPropertiesFallback {
   

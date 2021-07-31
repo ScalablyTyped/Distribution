@@ -6,17 +6,14 @@ import typings.linkifyIssues.linkifyIssuesStrings.string
 import typings.std.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("linkify-issues", JSImport.Namespace)
-  @js.native
-  def apply(string: String): String = js.native
-  @JSImport("linkify-issues", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: Options): String = js.native
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
   Linkify GitHub issue references.
   @param string - String with issue references to linkify.
@@ -46,28 +43,30 @@ object mod {
   document.body.appendChild(fragment);
   ```
   */
+  @scala.inline
+  def apply(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  
   @JSImport("linkify-issues", JSImport.Namespace)
   @js.native
-  def apply(string: String, options: TypeDomOptions): DocumentFragment = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		HTML attributes to add to the link.
     		*/
-    var attributes: js.UndefOr[StringDictionary[String | Double | Boolean | js.Array[String]]] = js.native
+    var attributes: js.UndefOr[StringDictionary[String | Double | Boolean | js.Array[String]]] = js.undefined
     
     /**
     		Base URL.
     		@default 'https://github.com'
     		*/
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     /**
     		GitHub repository.
     		*/
-    var repository: String = js.native
+    var repository: String
     
     /**
     		Format of the generated content.
@@ -75,12 +74,12 @@ object mod {
     		`'dom'` will return it as a `DocumentFragment` ready to be appended in a DOM safely, like `DocumentFragment(TextNode('See '), HTMLAnchorElement('#143'))`. This type only works in the browser.
     		@default 'string'
     		*/
-    var `type`: js.UndefOr[string | dom] = js.native
+    var `type`: js.UndefOr[string | dom] = js.undefined
     
     /**
     		GitHub user.
     		*/
-    var user: String = js.native
+    var user: String
   }
   object Options {
     
@@ -119,18 +118,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait TypeDomOptions extends Options {
+  trait TypeDomOptions
+    extends StObject
+       with Options {
     
     @JSName("type")
-    var type_TypeDomOptions: dom = js.native
+    var type_TypeDomOptions: dom
   }
   object TypeDomOptions {
     
     @scala.inline
-    def apply(repository: String, `type`: dom, user: String): TypeDomOptions = {
+    def apply(repository: String, user: String): TypeDomOptions = {
       val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dom")
       __obj.asInstanceOf[TypeDomOptions]
     }
     

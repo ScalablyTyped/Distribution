@@ -2,36 +2,34 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fragment extends StObject {
   
   /**
     * The playback duration or other time value associated with the fragment.
     */
-  var FragmentLengthInMilliseconds: js.UndefOr[Long] = js.native
+  var FragmentLengthInMilliseconds: js.UndefOr[Long] = js.undefined
   
   /**
     * The unique identifier of the fragment. This value monotonically increases based on the ingestion order.
     */
-  var FragmentNumber: js.UndefOr[FragmentNumberString] = js.native
+  var FragmentNumber: js.UndefOr[FragmentNumberString] = js.undefined
   
   /**
     * The total fragment size, including information about the fragment and contained media data.
     */
-  var FragmentSizeInBytes: js.UndefOr[Long] = js.native
+  var FragmentSizeInBytes: js.UndefOr[Long] = js.undefined
   
   /**
     * The timestamp from the producer corresponding to the fragment.
     */
-  var ProducerTimestamp: js.UndefOr[Timestamp] = js.native
+  var ProducerTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The timestamp from the AWS server corresponding to the fragment.
     */
-  var ServerTimestamp: js.UndefOr[Timestamp] = js.native
+  var ServerTimestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object Fragment {
   

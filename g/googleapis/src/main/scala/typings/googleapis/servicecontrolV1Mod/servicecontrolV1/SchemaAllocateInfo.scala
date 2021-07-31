@@ -2,10 +2,8 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAllocateInfo extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaAllocateInfo extends StObject {
     * window, the caller can choose to ignore these labels in the requests to
     * achieve better client-side cache hits and quota aggregation.
     */
-  var unusedArguments: js.UndefOr[js.Array[String]] = js.native
+  var unusedArguments: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAllocateInfo {
   

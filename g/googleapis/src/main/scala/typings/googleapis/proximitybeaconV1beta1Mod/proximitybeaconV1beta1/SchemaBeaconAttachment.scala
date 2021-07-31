@@ -2,13 +2,11 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Project-specific data associated with a beacon.
   */
-@js.native
 trait SchemaBeaconAttachment extends StObject {
   
   /**
@@ -16,20 +14,20 @@ trait SchemaBeaconAttachment extends StObject {
     * &lt;code&gt;beacons/&lt;var&gt;beacon_id&lt;/var&gt;/attachments/&lt;var&gt;attachment_id&lt;/var&gt;&lt;/code&gt;.
     * Leave this empty on creation.
     */
-  var attachmentName: js.UndefOr[String] = js.native
+  var attachmentName: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC time when this attachment was created, in milliseconds since the
     * UNIX epoch.
     */
-  var creationTimeMs: js.UndefOr[String] = js.native
+  var creationTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * An opaque data container for client-provided data. Must be
     * [base64](http://tools.ietf.org/html/rfc4648#section-4) encoded in HTTP
     * requests, and will be so encoded (with padding) in responses. Required.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The distance away from the beacon at which this attachment should be
@@ -44,7 +42,7 @@ trait SchemaBeaconAttachment extends StObject {
     * beacon&#39;s outer limit of detection.  Negative values are invalid and
     * return an error.
     */
-  var maxDistanceMeters: js.UndefOr[Double] = js.native
+  var maxDistanceMeters: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies what kind of attachment this is. Tells a client how to
@@ -53,7 +51,7 @@ trait SchemaBeaconAttachment extends StObject {
     * between clients. Type describes the type of `data`, for use by the client
     * when parsing the `data` field. Required.
     */
-  var namespacedType: js.UndefOr[String] = js.native
+  var namespacedType: js.UndefOr[String] = js.undefined
 }
 object SchemaBeaconAttachment {
   

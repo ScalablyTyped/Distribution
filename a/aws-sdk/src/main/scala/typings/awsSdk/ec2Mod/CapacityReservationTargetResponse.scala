@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapacityReservationTargetResponse extends StObject {
   
   /**
     * The ID of the targeted Capacity Reservation.
     */
-  var CapacityReservationId: js.UndefOr[String] = js.native
+  var CapacityReservationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the targeted Capacity Reservation group.
     */
-  var CapacityReservationResourceGroupArn: js.UndefOr[String] = js.native
+  var CapacityReservationResourceGroupArn: js.UndefOr[String] = js.undefined
 }
 object CapacityReservationTargetResponse {
   

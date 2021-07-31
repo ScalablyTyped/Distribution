@@ -2,33 +2,31 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextOptions extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String | js.Array[Double]] = js.native
+  var color: js.UndefOr[String | js.Array[Double]] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var highlight: js.UndefOr[Boolean] = js.native
+  var highlight: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var rotationOrigin: js.UndefOr[js.Array[Double]] = js.native
+  var rotationOrigin: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var strikeOut: js.UndefOr[Boolean] = js.native
+  var strikeOut: js.UndefOr[Boolean] = js.undefined
   
-  var textBox: js.UndefOr[TextBox] = js.native
+  var textBox: js.UndefOr[TextBox] = js.undefined
   
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
 }
 object TextOptions {
   

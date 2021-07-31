@@ -23,10 +23,13 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionDecisionValueSpec
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperMod {
+  
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "Carousel")
   @js.native
@@ -228,7 +231,6 @@ object helperMod {
     def this(options: UpdatePermissionOptions) = this()
   }
   
-  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper", "convert")
-  @js.native
-  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
+  @scala.inline
+  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
 }

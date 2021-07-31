@@ -2,13 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityContainer extends Entity {
+trait IdentityContainer
+  extends StObject
+     with Entity {
   
-  var conditionalAccess: js.UndefOr[NullableOption[ConditionalAccessRoot]] = js.native
+  var conditionalAccess: js.UndefOr[NullableOption[ConditionalAccessRoot]] = js.undefined
 }
 object IdentityContainer {
   

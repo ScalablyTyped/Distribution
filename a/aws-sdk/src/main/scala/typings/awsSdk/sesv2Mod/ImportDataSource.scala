@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDataSource extends StObject {
   
   /**
     * The data format of the import job's data source.
     */
-  var DataFormat: typings.awsSdk.sesv2Mod.DataFormat = js.native
+  var DataFormat: typings.awsSdk.sesv2Mod.DataFormat
   
   /**
     * An Amazon S3 URL in the format s3://&lt;bucket_name&gt;/&lt;object&gt;.
     */
-  var S3Url: typings.awsSdk.sesv2Mod.S3Url = js.native
+  var S3Url: typings.awsSdk.sesv2Mod.S3Url
 }
 object ImportDataSource {
   

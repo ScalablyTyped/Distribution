@@ -10,7 +10,6 @@ import typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus")
@@ -68,36 +67,44 @@ object ExecutionStatus {
   object ExecutionStatusCase extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ExecutionStatusCase with Double] = js.native
+    def apply(value: Double): js.UndefOr[ExecutionStatusCase & Double] = js.native
     
     @js.native
-    sealed trait ARITHMETIC_ERROR extends ExecutionStatusCase
-    /* 3 */ val ARITHMETIC_ERROR: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.ARITHMETIC_ERROR with Double = js.native
+    sealed trait ARITHMETIC_ERROR
+      extends StObject
+         with ExecutionStatusCase
+    /* 3 */ val ARITHMETIC_ERROR: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.ARITHMETIC_ERROR & Double = js.native
     
     @js.native
-    sealed trait ASSERTION_FAILURE extends ExecutionStatusCase
-    /* 2 */ val ASSERTION_FAILURE: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.ASSERTION_FAILURE with Double = js.native
+    sealed trait ASSERTION_FAILURE
+      extends StObject
+         with ExecutionStatusCase
+    /* 2 */ val ASSERTION_FAILURE: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.ASSERTION_FAILURE & Double = js.native
     
     @js.native
-    sealed trait EXECUTIONSTATUS_NOT_SET extends ExecutionStatusCase
-    /* 0 */ val EXECUTIONSTATUS_NOT_SET: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.EXECUTIONSTATUS_NOT_SET with Double = js.native
+    sealed trait EXECUTIONSTATUS_NOT_SET
+      extends StObject
+         with ExecutionStatusCase
+    /* 0 */ val EXECUTIONSTATUS_NOT_SET: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.EXECUTIONSTATUS_NOT_SET & Double = js.native
     
     @js.native
-    sealed trait REFERENCE_ERROR extends ExecutionStatusCase
-    /* 4 */ val REFERENCE_ERROR: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.REFERENCE_ERROR with Double = js.native
+    sealed trait REFERENCE_ERROR
+      extends StObject
+         with ExecutionStatusCase
+    /* 4 */ val REFERENCE_ERROR: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.REFERENCE_ERROR & Double = js.native
     
     @js.native
-    sealed trait RUNTIME_STATUS extends ExecutionStatusCase
-    /* 1 */ val RUNTIME_STATUS: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.RUNTIME_STATUS with Double = js.native
+    sealed trait RUNTIME_STATUS
+      extends StObject
+         with ExecutionStatusCase
+    /* 1 */ val RUNTIME_STATUS: typings.libraCore.vmErrorsPbMod.ExecutionStatus.ExecutionStatusCase.RUNTIME_STATUS & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): ExecutionStatus = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): ExecutionStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ExecutionStatus]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: ExecutionStatus, reader: BinaryReader): ExecutionStatus = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: ExecutionStatus, reader: BinaryReader): ExecutionStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ExecutionStatus]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.extensions")
   @js.native
@@ -112,24 +119,21 @@ object ExecutionStatus {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: ExecutionStatus, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: ExecutionStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "ExecutionStatus.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: ExecutionStatus): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: ExecutionStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var arithmeticError: js.UndefOr[typings.libraCore.vmErrorsPbMod.ArithmeticError.AsObject] = js.native
+    var arithmeticError: js.UndefOr[typings.libraCore.vmErrorsPbMod.ArithmeticError.AsObject] = js.undefined
     
-    var assertionFailure: js.UndefOr[typings.libraCore.vmErrorsPbMod.AssertionFailure.AsObject] = js.native
+    var assertionFailure: js.UndefOr[typings.libraCore.vmErrorsPbMod.AssertionFailure.AsObject] = js.undefined
     
-    var referenceError: js.UndefOr[typings.libraCore.vmErrorsPbMod.DynamicReferenceError.AsObject] = js.native
+    var referenceError: js.UndefOr[typings.libraCore.vmErrorsPbMod.DynamicReferenceError.AsObject] = js.undefined
     
-    var runtimeStatus: RuntimeStatus = js.native
+    var runtimeStatus: RuntimeStatus
   }
   object AsObject {
     

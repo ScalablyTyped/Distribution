@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecureScore extends Entity {
+trait SecureScore
+  extends StObject
+     with Entity {
   
   // Active user count of the given tenant.
-  var activeUserCount: js.UndefOr[NullableOption[Double]] = js.native
+  var activeUserCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Average score by different scopes (for example, average by industry, average by seating) and control category
     * (Identity, Data, Device, Apps, Infrastructure) within the scope.
     */
-  var averageComparativeScores: js.UndefOr[NullableOption[js.Array[AverageComparativeScore]]] = js.native
+  var averageComparativeScores: js.UndefOr[NullableOption[js.Array[AverageComparativeScore]]] = js.undefined
   
   // GUID string for tenant ID.
-  var azureTenantId: js.UndefOr[String] = js.native
+  var azureTenantId: js.UndefOr[String] = js.undefined
   
   // Contains tenant scores for a set of controls.
-  var controlScores: js.UndefOr[NullableOption[js.Array[ControlScore]]] = js.native
+  var controlScores: js.UndefOr[NullableOption[js.Array[ControlScore]]] = js.undefined
   
   // The date when the entity is created.
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Tenant current attained score on specified date.
-  var currentScore: js.UndefOr[NullableOption[Double]] = js.native
+  var currentScore: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
-  var enabledServices: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var enabledServices: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Licensed user count of the given tenant.
-  var licensedUserCount: js.UndefOr[NullableOption[Double]] = js.native
+  var licensedUserCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Tenant maximum possible score on specified date.
-  var maxScore: js.UndefOr[NullableOption[Double]] = js.native
+  var maxScore: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Complex type containing details about the security product/service vendor, provider, and subprovider (for example,
     * vendor=Microsoft; provider=SecureScore). Required.
     */
-  var vendorInformation: js.UndefOr[NullableOption[SecurityVendorInformation]] = js.native
+  var vendorInformation: js.UndefOr[NullableOption[SecurityVendorInformation]] = js.undefined
 }
 object SecureScore {
   

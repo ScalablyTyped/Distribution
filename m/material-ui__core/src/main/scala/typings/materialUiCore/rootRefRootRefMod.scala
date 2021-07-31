@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rootRefRootRefMod extends Shortcut {
@@ -14,10 +13,9 @@ object rootRefRootRefMod extends Shortcut {
   @js.native
   val default: ComponentType[RootRefProps[js.Any]] = js.native
   
-  @js.native
   trait RootRefProps[T] extends StObject {
     
-    var rootRef: js.UndefOr[(js.Function1[/* instance */ T | Null, Unit]) | RefObject[T]] = js.native
+    var rootRef: js.UndefOr[(js.Function1[/* instance */ T | Null, Unit]) | RefObject[T]] = js.undefined
   }
   object RootRefProps {
     
@@ -28,7 +26,7 @@ object rootRefRootRefMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class RootRefPropsMutableBuilder[Self <: RootRefProps[_], T] (val x: Self with RootRefProps[T]) extends AnyVal {
+    implicit class RootRefPropsMutableBuilder[Self <: RootRefProps[?], T] (val x: Self & RootRefProps[T]) extends AnyVal {
       
       @scala.inline
       def setRootRef(value: (js.Function1[/* instance */ T | Null, Unit]) | RefObject[T]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])

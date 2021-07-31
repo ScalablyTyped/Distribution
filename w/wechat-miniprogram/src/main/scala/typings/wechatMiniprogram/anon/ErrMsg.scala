@@ -6,10 +6,8 @@ import typings.wechatMiniprogram.wechatMiniprogramNumbers.`3`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrMsg extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ErrMsg extends StObject {
     * - 3 解码错误
     * - 4 不合适资源
     */
-  var errMsg: `1` | `2` | `3` | `4` = js.native
+  var errMsg: `1` | `2` | `3` | `4`
 }
 object ErrMsg {
   

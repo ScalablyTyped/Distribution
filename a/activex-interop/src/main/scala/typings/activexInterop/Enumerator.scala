@@ -2,37 +2,35 @@ package typings.activexInterop
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows enumerating over a COM collection, which may not have indexed item access.
   */
-@js.native
 trait Enumerator[T] extends StObject {
   
   /**
     * Returns true if the current item is the last one in the collection, or the collection is empty,
     * or the current item is undefined.
     */
-  def atEnd(): Boolean = js.native
+  def atEnd(): Boolean
   
   /**
     * Returns the current item in the collection
     */
-  def item(): T = js.native
+  def item(): T
   
   /**
     * Resets the current item in the collection to the first item. If there are no items in the collection,
     * the current item is set to undefined.
     */
-  def moveFirst(): Unit = js.native
+  def moveFirst(): Unit
   
   /**
     * Moves the current item to the next item in the collection. If the enumerator is at the end of
     * the collection or the collection is empty, the current item is set to undefined.
     */
-  def moveNext(): Unit = js.native
+  def moveNext(): Unit
 }
 object Enumerator {
   
@@ -43,7 +41,7 @@ object Enumerator {
   }
   
   @scala.inline
-  implicit class EnumeratorMutableBuilder[Self <: Enumerator[_], T] (val x: Self with Enumerator[T]) extends AnyVal {
+  implicit class EnumeratorMutableBuilder[Self <: Enumerator[?], T] (val x: Self & Enumerator[T]) extends AnyVal {
     
     @scala.inline
     def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))

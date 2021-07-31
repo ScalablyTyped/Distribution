@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLifecycleConfigurationRequest extends StObject {
   
   /**
     * The ID of the file system whose LifecycleConfiguration object you want to retrieve (String).
     */
-  var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.efsMod.FileSystemId
 }
 object DescribeLifecycleConfigurationRequest {
   

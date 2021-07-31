@@ -2,41 +2,39 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Summary extends StObject {
   
   /**
     * The timestamp that shows when this summary was generated in this Region. 
     */
-  var LastUpdated: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.LastUpdated] = js.native
+  var LastUpdated: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.LastUpdated] = js.undefined
   
   /**
     * The count of noncompliant resources.
     */
-  var NonCompliantResources: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.NonCompliantResources] = js.native
+  var NonCompliantResources: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.NonCompliantResources] = js.undefined
   
   /**
     * The AWS Region that the summary applies to.
     */
-  var Region: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.Region] = js.native
+  var Region: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.Region] = js.undefined
   
   /**
     * The AWS resource type.
     */
-  var ResourceType: js.UndefOr[AmazonResourceType] = js.native
+  var ResourceType: js.UndefOr[AmazonResourceType] = js.undefined
   
   /**
     * The account identifier or the root identifier of the organization. If you don't know the root ID, you can call the AWS Organizations ListRoots API.
     */
-  var TargetId: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.TargetId] = js.native
+  var TargetId: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.TargetId] = js.undefined
   
   /**
     * Whether the target is an account, an OU, or the organization root.
     */
-  var TargetIdType: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.TargetIdType] = js.native
+  var TargetIdType: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.TargetIdType] = js.undefined
 }
 object Summary {
   

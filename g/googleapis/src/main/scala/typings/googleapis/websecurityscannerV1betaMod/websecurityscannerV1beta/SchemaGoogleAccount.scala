@@ -2,13 +2,11 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes authentication configuration that uses a Google account.
   */
-@js.native
 trait SchemaGoogleAccount extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaGoogleAccount extends StObject {
     * is stored encrypted and not returned in any response nor included in
     * audit logs.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The user name of the Google account.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleAccount {
   

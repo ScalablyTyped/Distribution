@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresignedNotebookInstanceUrlOutput extends StObject {
   
   /**
     * A JSON object that contains the URL string. 
     */
-  var AuthorizedUrl: js.UndefOr[NotebookInstanceUrl] = js.native
+  var AuthorizedUrl: js.UndefOr[NotebookInstanceUrl] = js.undefined
 }
 object CreatePresignedNotebookInstanceUrlOutput {
   

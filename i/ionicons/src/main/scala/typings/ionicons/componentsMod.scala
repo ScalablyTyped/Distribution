@@ -2,14 +2,20 @@ package typings.ionicons
 
 import typings.ionicons.componentsMod.Components.IonIcon
 import typings.ionicons.componentsMod.global.HTMLIonIconElement
-import typings.ionicons.stencilPublicRuntimeMod.HTMLStencilElement
 import typings.ionicons.stencilPublicRuntimeMod.JSXBase.HTMLAttributes
 import typings.std.AddEventListenerOptions
+import typings.std.CSSStyleDeclaration
+import typings.std.DocumentAndElementEventHandlers
+import typings.std.Element
+import typings.std.ElementCSSInlineStyle
+import typings.std.ElementContentEditable
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.GlobalEventHandlers
+import typings.std.HTMLOrSVGElement
+import typings.std.HTMLSlotElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
@@ -19,12 +25,80 @@ object componentsMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("HTMLIonIconElement")
     @js.native
-    class HTMLIonIconElementCls () extends HTMLIonIconElement
+    class HTMLIonIconElementCls ()
+      extends StObject
+         with HTMLIonIconElement {
+      
+      /* InferMemberOverrides */
+      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+      /* InferMemberOverrides */
+      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+      /* InferMemberOverrides */
+      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+      
+      /* CompleteClass */
+      override val assignedSlot: HTMLSlotElement | Null = js.native
+      
+      /* CompleteClass */
+      var contentEditable: String = js.native
+      
+      /* CompleteClass */
+      var enterKeyHint: String = js.native
+      
+      /* CompleteClass */
+      var innerHTML: String = js.native
+      
+      /* CompleteClass */
+      var inputMode: String = js.native
+      
+      /* CompleteClass */
+      override val isContentEditable: Boolean = js.native
+      
+      /**
+        * If enabled, ion-icon will be loaded lazily when it's visible in the viewport. Default, `false`.
+        */
+      /* CompleteClass */
+      var `lazy`: Boolean = js.native
+      
+      /**
+        * The mode determines which platform styles to use.
+        */
+      /* CompleteClass */
+      var mode: String = js.native
+      
+      /**
+        * Returns the first following sibling that is an element, and null otherwise.
+        */
+      /* CompleteClass */
+      override val nextElementSibling: Element | Null = js.native
+      
+      /**
+        * Returns the first preceding sibling that is an element, and null otherwise.
+        */
+      /* CompleteClass */
+      override val previousElementSibling: Element | Null = js.native
+      
+      /* InferMemberOverrides */
+      override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+      /* InferMemberOverrides */
+      override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+      /* InferMemberOverrides */
+      override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+      
+      /**
+        * When set to `false`, SVG content that is HTTP fetched will not be checked if the response SVG content has any `<script>` elements, or any attributes that start with `on`, such as `onclick`.
+        * @default true
+        */
+      /* CompleteClass */
+      var sanitize: Boolean = js.native
+      
+      /* CompleteClass */
+      override val style: CSSStyleDeclaration = js.native
+    }
     
-    @js.native
     trait HTMLElementTagNameMap extends StObject {
       
-      var `ion-icon`: HTMLIonIconElement = js.native
+      var `ion-icon`: HTMLIonIconElement
     }
     object HTMLElementTagNameMap {
       
@@ -43,10 +117,26 @@ object componentsMod {
       }
     }
     
-    @js.native
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+    - scala.AnyRef because Inheritance from two classes. Inlined 
+    - js.Any because Inheritance from two classes. Inlined 
+    - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+    - typings.std.HTMLElement because Inheritance from two classes. Inlined accessKeyLabel, offsetWidth, accessKey, spellcheck, offsetTop, innerText, offsetLeft, offsetParent, lang, translate, autocapitalize, dir, draggable, hidden, title, offsetHeight, click, addEventListener, addEventListener, removeEventListener, removeEventListener, addEventListener, removeEventListener
+    - typings.ionicons.stencilPublicRuntimeMod.HTMLStencilElement because Inheritance from two classes. Inlined componentOnReady, forceUpdate */ @js.native
     trait HTMLIonIconElement
-      extends HTMLStencilElement
-         with IonIcon {
+      extends StObject
+         with IonIcon
+         with Element
+         with DocumentAndElementEventHandlers
+         with ElementCSSInlineStyle
+         with ElementContentEditable
+         with GlobalEventHandlers
+         with HTMLOrSVGElement {
+      
+      var accessKey: String = js.native
+      
+      val accessKeyLabel: String = js.native
       
       /* InferMemberOverrides */
       override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -55,85 +145,119 @@ object componentsMod {
       /* InferMemberOverrides */
       override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
       
+      var autocapitalize: String = js.native
+      
+      def click(): Unit = js.native
+      
+      def componentOnReady(): js.Promise[this.type] = js.native
+      
+      var dir: String = js.native
+      
+      var draggable: Boolean = js.native
+      
+      /** @deprecated */
+      def forceUpdate(): Unit = js.native
+      
+      var hidden: Boolean = js.native
+      
+      var innerText: String = js.native
+      
+      var lang: String = js.native
+      
+      val offsetHeight: Double = js.native
+      
+      val offsetLeft: Double = js.native
+      
+      val offsetParent: Element | Null = js.native
+      
+      val offsetTop: Double = js.native
+      
+      val offsetWidth: Double = js.native
+      
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+      
+      var spellcheck: Boolean = js.native
+      
+      var title: String = js.native
+      
+      var translate: Boolean = js.native
     }
   }
   
   object Components {
     
-    @js.native
     trait IonIcon extends StObject {
       
       /**
         * Set the icon to hidden, respectively `true`, to remove it from the accessibility tree.
         */
-      var ariaHidden: js.UndefOr[String] = js.native
+      var ariaHidden: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the label to use for accessibility. Defaults to the icon name.
         */
-      var ariaLabel: js.UndefOr[String] = js.native
+      var ariaLabel: js.UndefOr[String] = js.undefined
       
       /**
         * The color to use for the background of the item.
         */
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies whether the icon should horizontally flip when `dir` is `"rtl"`.
         */
-      var flipRtl: js.UndefOr[Boolean] = js.native
+      var flipRtl: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A combination of both `name` and `src`. If a `src` url is detected it will set the `src` property. Otherwise it assumes it's a built-in named SVG and set the `name` property.
         */
-      var icon: js.UndefOr[js.Any] = js.native
+      var icon: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Specifies which icon to use on `ios` mode.
         */
-      var ios: js.UndefOr[String] = js.native
+      var ios: js.UndefOr[String] = js.undefined
       
       /**
         * If enabled, ion-icon will be loaded lazily when it's visible in the viewport. Default, `false`.
         */
-      var `lazy`: Boolean = js.native
+      var `lazy`: Boolean
       
       /**
         * Specifies which icon to use on `md` mode.
         */
-      var md: js.UndefOr[String] = js.native
+      var md: js.UndefOr[String] = js.undefined
       
       /**
         * The mode determines which platform styles to use.
         */
-      var mode: String = js.native
+      var mode: String
       
       /**
         * Specifies which icon to use from the built-in set of icons.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * When set to `false`, SVG content that is HTTP fetched will not be checked if the response SVG content has any `<script>` elements, or any attributes that start with `on`, such as `onclick`.
         * @default true
         */
-      var sanitize: Boolean = js.native
+      var sanitize: Boolean
       
       /**
         * The size of the icon. Available options are: `"small"` and `"large"`.
         */
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the exact `src` of an SVG file to use.
         */
-      var src: js.UndefOr[String] = js.native
+      var src: js.UndefOr[String] = js.undefined
     }
     object IonIcon {
       
@@ -221,10 +345,9 @@ object componentsMod {
   
   object LocalJSX {
     
-    @js.native
     trait IntrinsicElements extends StObject {
       
-      var `ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon = js.native
+      var `ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon
     }
     object IntrinsicElements {
       
@@ -243,74 +366,73 @@ object componentsMod {
       }
     }
     
-    @js.native
     trait IonIcon extends StObject {
       
       /**
         * Set the icon to hidden, respectively `true`, to remove it from the accessibility tree.
         */
-      var ariaHidden: js.UndefOr[String] = js.native
+      var ariaHidden: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the label to use for accessibility. Defaults to the icon name.
         */
-      var ariaLabel: js.UndefOr[String] = js.native
+      var ariaLabel: js.UndefOr[String] = js.undefined
       
       /**
         * The color to use for the background of the item.
         */
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies whether the icon should horizontally flip when `dir` is `"rtl"`.
         */
-      var flipRtl: js.UndefOr[Boolean] = js.native
+      var flipRtl: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A combination of both `name` and `src`. If a `src` url is detected it will set the `src` property. Otherwise it assumes it's a built-in named SVG and set the `name` property.
         */
-      var icon: js.UndefOr[js.Any] = js.native
+      var icon: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Specifies which icon to use on `ios` mode.
         */
-      var ios: js.UndefOr[String] = js.native
+      var ios: js.UndefOr[String] = js.undefined
       
       /**
         * If enabled, ion-icon will be loaded lazily when it's visible in the viewport. Default, `false`.
         */
-      var `lazy`: js.UndefOr[Boolean] = js.native
+      var `lazy`: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specifies which icon to use on `md` mode.
         */
-      var md: js.UndefOr[String] = js.native
+      var md: js.UndefOr[String] = js.undefined
       
       /**
         * The mode determines which platform styles to use.
         */
-      var mode: js.UndefOr[String] = js.native
+      var mode: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies which icon to use from the built-in set of icons.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * When set to `false`, SVG content that is HTTP fetched will not be checked if the response SVG content has any `<script>` elements, or any attributes that start with `on`, such as `onclick`.
         * @default true
         */
-      var sanitize: js.UndefOr[Boolean] = js.native
+      var sanitize: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The size of the icon. Available options are: `"small"` and `"large"`.
         */
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the exact `src` of an SVG file to use.
         */
-      var src: js.UndefOr[String] = js.native
+      var src: js.UndefOr[String] = js.undefined
     }
     object IonIcon {
       
@@ -408,17 +530,14 @@ object componentsMod {
     
     object JSX {
       
-      @js.native
       trait IntrinsicElements extends StObject {
         
-        var `ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon with HTMLAttributes[HTMLIonIconElement] = js.native
+        var `ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]
       }
       object IntrinsicElements {
         
         @scala.inline
-        def apply(
-          `ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon with HTMLAttributes[HTMLIonIconElement]
-        ): IntrinsicElements = {
+        def apply(`ion-icon`: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]): IntrinsicElements = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("ion-icon")(`ion-icon`.asInstanceOf[js.Any])
           __obj.asInstanceOf[IntrinsicElements]
@@ -428,7 +547,7 @@ object componentsMod {
         implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def `setIon-icon`(value: typings.ionicons.componentsMod.LocalJSX.IonIcon with HTMLAttributes[HTMLIonIconElement]): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
+          def `setIon-icon`(value: typings.ionicons.componentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
         }
       }
     }

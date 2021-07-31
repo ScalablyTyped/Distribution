@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * supports. Of course that includes a "flat" detection before. The combination of both ones should produce stable results every time.
   * @see TypeDetection
   */
-@js.native
-trait XTypeDetection extends XInterface {
+trait XTypeDetection
+  extends StObject
+     with XInterface {
   
   /**
     * make a "deep" detection or optional a "flat" detection by using a {@link MediaDescriptor}
@@ -35,7 +35,7 @@ trait XTypeDetection extends XInterface {
     * @param AllowDeep if it is set to `TRUE` a "deep" detection will be follow a "flat" detection ;  if it is set to `FALSE` a "flat" detection will be made only
     * @returns an internal type name which represent the detected format ;  or an empty value for unknown ones
     */
-  def queryTypeByDescriptor(Descriptor: js.Array[SeqEquiv[PropertyValue]], AllowDeep: Boolean): String = js.native
+  def queryTypeByDescriptor(Descriptor: js.Array[SeqEquiv[PropertyValue]], AllowDeep: Boolean): String
   
   /**
     * make a "flat" detection by using the URL of the document
@@ -44,7 +44,7 @@ trait XTypeDetection extends XInterface {
     * @param URL specify the document by name
     * @returns an internal type name which represent the detected format ;  or an empty value for unknown ones
     */
-  def queryTypeByURL(URL: String): String = js.native
+  def queryTypeByURL(URL: String): String
 }
 object XTypeDetection {
   

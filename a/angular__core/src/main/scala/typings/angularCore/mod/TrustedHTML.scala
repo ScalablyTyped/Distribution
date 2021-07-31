@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,16 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/trusted-types/index.d.ts
   * but restricted to the API surface used within Angular.
   */
-@js.native
 trait TrustedHTML extends StObject {
   
-  var __brand__ : typings.angularCore.angularCoreStrings.TrustedHTML = js.native
+  var __brand__ : typings.angularCore.angularCoreStrings.TrustedHTML
 }
 object TrustedHTML {
   
   @scala.inline
-  def apply(__brand__ : typings.angularCore.angularCoreStrings.TrustedHTML): TrustedHTML = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
+  def apply(): TrustedHTML = {
+    val __obj = js.Dynamic.literal(__brand__ = "TrustedHTML")
     __obj.asInstanceOf[TrustedHTML]
   }
   

@@ -1,12 +1,13 @@
 package typings.reactNative
 
 import typings.reactNative.anon.DictoptionName
+import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Error
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +18,21 @@ object global {
     * Initialize this controller.
     */
   class AbortController ()
-    extends typings.reactNative.AbortController
+    extends StObject
+       with typings.reactNative.AbortController {
+    
+    /**
+      * Abort and signal to any observers that the associated activity is to be aborted.
+      */
+    /* CompleteClass */
+    override def abort(): Unit = js.native
+    
+    /**
+      * Returns the `AbortSignal` object associated with this object.
+      */
+    /* CompleteClass */
+    override val signal: typings.reactNative.AbortSignal = js.native
+  }
   
   @JSGlobal("AbortSignal")
   @js.native
@@ -25,67 +40,212 @@ object global {
     * AbortSignal cannot be constructed directly.
     */
   class AbortSignal ()
-    extends typings.reactNative.AbortSignal
+    extends StObject
+       with typings.reactNative.AbortSignal {
+    
+    /**
+      * Returns `true` if this `AbortSignal`'s `AbortController` has signaled to abort, and `false` otherwise.
+      */
+    /* CompleteClass */
+    override val aborted: Boolean = js.native
+    
+    /* CompleteClass */
+    override def onabort(event: AbortEvent): Unit = js.native
+  }
   
   @JSGlobal("FormData")
   @js.native
   class FormData ()
-    extends typings.reactNative.FormData
+    extends StObject
+       with typings.reactNative.FormData {
+    
+    /* CompleteClass */
+    override def append(name: String, value: js.Any): Unit = js.native
+  }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Headers")
   @js.native
   class Headers ()
-    extends typings.reactNative.Headers {
+    extends StObject
+       with typings.reactNative.Headers {
     def this(init: HeadersInit) = this()
   }
   
   @JSGlobal("MessageQueue")
   @js.native
   class MessageQueue ()
-    extends typings.reactNative.MessageQueue
+    extends StObject
+       with typings.reactNative.MessageQueue {
+    
+    /* CompleteClass */
+    override def getCallableModule(name: String): js.Object = js.native
+    
+    /* CompleteClass */
+    override def registerCallableModule(name: String, module: js.Object): Unit = js.native
+    
+    /* CompleteClass */
+    override def registerLazyCallableModule(name: String, factory: js.Function0[js.Object]): Unit = js.native
+  }
   object MessageQueue {
     
-    @JSGlobal("MessageQueue.spy")
+    @JSGlobal("MessageQueue")
     @js.native
-    def spy(spyOrToggle: js.Function1[/* data */ SpyData, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def spy(spyOrToggle: js.Function1[/* data */ SpyData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /* static member */
-    @JSGlobal("MessageQueue.spy")
-    @js.native
-    def spy(spyOrToggle: Boolean): Unit = js.native
+    @scala.inline
+    def spy(spyOrToggle: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Request")
   @js.native
   class Request protected ()
-    extends typings.reactNative.Request {
+    extends StObject
+       with typings.reactNative.Request {
     def this(input: String) = this()
     def this(input: typings.reactNative.Request) = this()
     def this(input: String, init: RequestInit) = this()
     def this(input: typings.reactNative.Request, init: RequestInit) = this()
+    
+    /* CompleteClass */
+    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    
+    /* CompleteClass */
+    override def blob(): js.Promise[Blob] = js.native
+    
+    /* CompleteClass */
+    override val bodyUsed: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /* CompleteClass */
+    override val credentials: RequestCredentials = js.native
+    
+    /* CompleteClass */
+    override def formData(): js.Promise[typings.reactNative.FormData] = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /* CompleteClass */
+    override val headers: typings.reactNative.Headers = js.native
+    
+    /* CompleteClass */
+    override def json(): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    override val method: String = js.native
+    
+    /* CompleteClass */
+    override val mode: RequestMode = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
+    
+    /* CompleteClass */
+    override val referrer: String = js.native
+    
+    /* CompleteClass */
+    override def text(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override val url: String = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Response")
   @js.native
   class Response ()
-    extends typings.reactNative.Response {
+    extends StObject
+       with typings.reactNative.Response {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
+    
+    /* CompleteClass */
+    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    
+    /* CompleteClass */
+    override def blob(): js.Promise[Blob] = js.native
+    
+    /* CompleteClass */
+    override val bodyUsed: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /* CompleteClass */
+    override def formData(): js.Promise[typings.reactNative.FormData] = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /* CompleteClass */
+    override val headers: typings.reactNative.Headers = js.native
+    
+    /* CompleteClass */
+    override def json(): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    override val ok: Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
+    
+    /* CompleteClass */
+    override val redirected: Boolean = js.native
+    
+    /* CompleteClass */
+    override val status: Double = js.native
+    
+    /* CompleteClass */
+    override val statusText: String = js.native
+    
+    /* CompleteClass */
+    override def text(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override val `type`: ResponseType = js.native
+    
+    /* CompleteClass */
+    override val url: String = js.native
   }
   object Response {
     
-    @JSGlobal("Response.error")
+    @JSGlobal("Response")
     @js.native
-    def error(): typings.reactNative.Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("Response.redirect")
-    @js.native
-    def redirect(url: String): typings.reactNative.Response = js.native
-    @JSGlobal("Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): typings.reactNative.Response = js.native
+    @scala.inline
+    def error(): typings.reactNative.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.reactNative.Response]
+    
+    @scala.inline
+    def redirect(url: String): typings.reactNative.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.Response]
+    @scala.inline
+    def redirect(url: String, status: Double): typings.reactNative.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.Response]
   }
   
   /**
@@ -96,21 +256,63 @@ object global {
   @JSGlobal("URL")
   @js.native
   class URL protected ()
-    extends typings.reactNative.URL {
+    extends StObject
+       with typings.reactNative.URL {
     def this(url: String) = this()
     def this(url: String, base: String) = this()
+    
+    /* CompleteClass */
+    var hash: String = js.native
+    
+    /* CompleteClass */
+    var host: String = js.native
+    
+    /* CompleteClass */
+    var hostname: String = js.native
+    
+    /* CompleteClass */
+    var href: String = js.native
+    
+    /* CompleteClass */
+    override val origin: String = js.native
+    
+    /* CompleteClass */
+    var password: String = js.native
+    
+    /* CompleteClass */
+    var pathname: String = js.native
+    
+    /* CompleteClass */
+    var port: String = js.native
+    
+    /* CompleteClass */
+    var protocol: String = js.native
+    
+    /* CompleteClass */
+    var search: String = js.native
+    
+    /* CompleteClass */
+    override val searchParams: typings.reactNative.URLSearchParams = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): String = js.native
+    
+    /* CompleteClass */
+    var username: String = js.native
   }
   object URL {
     
-    /* static member */
-    @JSGlobal("URL.createObjectURL")
+    @JSGlobal("URL")
     @js.native
-    def createObjectURL(blob: Blob): String = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("URL.revokeObjectURL")
-    @js.native
-    def revokeObjectURL(url: String): Unit = js.native
+    @scala.inline
+    def createObjectURL(blob: Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
+    def revokeObjectURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -119,7 +321,8 @@ object global {
   @JSGlobal("URLSearchParams")
   @js.native
   class URLSearchParams ()
-    extends typings.reactNative.URLSearchParams {
+    extends StObject
+       with typings.reactNative.URLSearchParams {
     def this(init: String) = this()
     def this(init: js.Array[js.Array[String]]) = this()
     def this(init: typings.reactNative.URLSearchParams) = this()
@@ -130,14 +333,15 @@ object global {
   @JSGlobal("WebSocket")
   @js.native
   class WebSocket protected ()
-    extends typings.reactNative.WebSocket {
+    extends StObject
+       with typings.reactNative.WebSocket {
     def this(uri: String) = this()
     def this(uri: String, protocols: String) = this()
     def this(uri: String, protocols: js.Array[String]) = this()
-    def this(uri: String, protocols: js.UndefOr[scala.Nothing], options: DictoptionName) = this()
     def this(uri: String, protocols: String, options: DictoptionName) = this()
     def this(uri: String, protocols: js.Array[String], options: DictoptionName) = this()
     def this(uri: String, protocols: Null, options: DictoptionName) = this()
+    def this(uri: String, protocols: Unit, options: DictoptionName) = this()
   }
   object WebSocket {
     
@@ -162,7 +366,8 @@ object global {
   @JSGlobal("XMLHttpRequest")
   @js.native
   class XMLHttpRequest ()
-    extends typings.reactNative.XMLHttpRequest
+    extends StObject
+       with typings.reactNative.XMLHttpRequest
   object XMLHttpRequest {
     
     @JSGlobal("XMLHttpRequest.DONE")
@@ -190,60 +395,46 @@ object global {
   @JSGlobal("XMLHttpRequestUpload")
   @js.native
   class XMLHttpRequestUpload ()
-    extends typings.reactNative.XMLHttpRequestUpload
+    extends StObject
+       with typings.reactNative.XMLHttpRequestUpload
   
-  @JSGlobal("cancelAnimationFrame")
-  @js.native
-  def cancelAnimationFrame(handle: Double): Unit = js.native
+  @scala.inline
+  def cancelAnimationFrame(handle: Double): Unit = js.Dynamic.global.applyDynamic("cancelAnimationFrame")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("clearImmediate")
-  @js.native
-  def clearImmediate(handle: Double): Unit = js.native
+  @scala.inline
+  def clearImmediate(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("clearInterval")
-  @js.native
-  def clearInterval(handle: Double): Unit = js.native
+  @scala.inline
+  def clearInterval(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("clearTimeout")
-  @js.native
-  def clearTimeout(handle: Double): Unit = js.native
+  @scala.inline
+  def clearTimeout(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("fetch")
-  @js.native
-  def fetch(input: RequestInfo): js.Promise[typings.reactNative.Response] = js.native
-  @JSGlobal("fetch")
-  @js.native
-  def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.reactNative.Response] = js.native
+  @scala.inline
+  def fetch(input: RequestInfo): js.Promise[typings.reactNative.Response] = js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.reactNative.Response]]
+  @scala.inline
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.reactNative.Response] = (js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.reactNative.Response]]
   
-  @JSGlobal("fetchBundle")
-  @js.native
-  def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  @scala.inline
+  def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = (js.Dynamic.global.applyDynamic("fetchBundle")(bundleId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("requestAnimationFrame")
-  @js.native
-  def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): Double = js.native
+  @scala.inline
+  def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("setImmediate")
-  @js.native
-  def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.native
+  @scala.inline
+  def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.Dynamic.global.applyDynamic("setImmediate")(handler.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("setInterval")
-  @js.native
-  def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
-  @JSGlobal("setInterval")
-  @js.native
-  def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-  @JSGlobal("setInterval")
-  @js.native
-  def setInterval(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = js.native
+  @scala.inline
+  def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def setInterval(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("setTimeout")
-  @js.native
-  def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
-  @JSGlobal("setTimeout")
-  @js.native
-  def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-  @JSGlobal("setTimeout")
-  @js.native
-  def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = js.native
+  @scala.inline
+  def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

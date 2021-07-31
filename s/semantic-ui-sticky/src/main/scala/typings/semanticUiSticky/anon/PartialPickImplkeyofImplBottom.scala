@@ -2,22 +2,20 @@ package typings.semanticUiSticky.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sticky.SemanticUI.Sticky.ClassNameSettings._Impl, keyof semantic-ui-sticky.SemanticUI.Sticky.ClassNameSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplBottom extends StObject {
   
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
-  var bound: js.UndefOr[String] = js.native
+  var bound: js.UndefOr[String] = js.undefined
   
-  var fixed: js.UndefOr[String] = js.native
+  var fixed: js.UndefOr[String] = js.undefined
   
-  var supported: js.UndefOr[String] = js.native
+  var supported: js.UndefOr[String] = js.undefined
   
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplBottom {
   

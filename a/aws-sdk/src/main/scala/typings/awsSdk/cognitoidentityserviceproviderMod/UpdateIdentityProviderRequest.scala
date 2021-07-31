@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateIdentityProviderRequest extends StObject {
   
   /**
     * The identity provider attribute mapping to be changed.
     */
-  var AttributeMapping: js.UndefOr[AttributeMappingType] = js.native
+  var AttributeMapping: js.UndefOr[AttributeMappingType] = js.undefined
   
   /**
     * A list of identity provider identifiers.
     */
-  var IdpIdentifiers: js.UndefOr[IdpIdentifiersListType] = js.native
+  var IdpIdentifiers: js.UndefOr[IdpIdentifiersListType] = js.undefined
   
   /**
     * The identity provider details to be updated, such as MetadataURL and MetadataFile.
     */
-  var ProviderDetails: js.UndefOr[ProviderDetailsType] = js.native
+  var ProviderDetails: js.UndefOr[ProviderDetailsType] = js.undefined
   
   /**
     * The identity provider name.
     */
-  var ProviderName: ProviderNameType = js.native
+  var ProviderName: ProviderNameType
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object UpdateIdentityProviderRequest {
   

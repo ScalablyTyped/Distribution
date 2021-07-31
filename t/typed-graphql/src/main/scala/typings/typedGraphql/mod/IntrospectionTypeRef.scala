@@ -1,10 +1,7 @@
 package typings.typedGraphql.mod
 
-import typings.typedGraphql.typedGraphqlStrings.LIST
-import typings.typedGraphql.typedGraphqlStrings.NON_NULL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,8 +13,8 @@ trait IntrospectionTypeRef extends StObject
 object IntrospectionTypeRef {
   
   @scala.inline
-  def IntrospectionListTypeRef(kind: LIST): typings.typedGraphql.mod.IntrospectionListTypeRef = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def IntrospectionListTypeRef(): typings.typedGraphql.mod.IntrospectionListTypeRef = {
+    val __obj = js.Dynamic.literal(kind = "LIST")
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionListTypeRef]
   }
   
@@ -28,8 +25,8 @@ object IntrospectionTypeRef {
   }
   
   @scala.inline
-  def IntrospectionNonNullTypeRef(kind: NON_NULL): typings.typedGraphql.mod.IntrospectionNonNullTypeRef = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def IntrospectionNonNullTypeRef(): typings.typedGraphql.mod.IntrospectionNonNullTypeRef = {
+    val __obj = js.Dynamic.literal(kind = "NON_NULL")
     __obj.asInstanceOf[typings.typedGraphql.mod.IntrospectionNonNullTypeRef]
   }
 }

@@ -2,45 +2,53 @@ package typings.workerbApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workerbApiStrings {
   
   @js.native
   sealed trait by_id
-    extends clickQueryMethods
+    extends StObject
+       with clickQueryMethods
        with getAttributeQueryMethods
        with typeQueryMethods
   @scala.inline
   def by_id: by_id = "by_id".asInstanceOf[by_id]
   
   @js.native
-  sealed trait by_label extends typeQueryMethods
+  sealed trait by_label
+    extends StObject
+       with typeQueryMethods
   @scala.inline
   def by_label: by_label = "by_label".asInstanceOf[by_label]
   
   @js.native
-  sealed trait by_placeholder extends typeQueryMethods
+  sealed trait by_placeholder
+    extends StObject
+       with typeQueryMethods
   @scala.inline
   def by_placeholder: by_placeholder = "by_placeholder".asInstanceOf[by_placeholder]
   
   @js.native
   sealed trait by_query_selector
-    extends clickQueryMethods
+    extends StObject
+       with clickQueryMethods
        with getAttributeQueryMethods
        with typeQueryMethods
   @scala.inline
   def by_query_selector: by_query_selector = "by_query_selector".asInstanceOf[by_query_selector]
   
   @js.native
-  sealed trait by_query_selector_all extends getAttributeQueryMethods
+  sealed trait by_query_selector_all
+    extends StObject
+       with getAttributeQueryMethods
   @scala.inline
   def by_query_selector_all: by_query_selector_all = "by_query_selector_all".asInstanceOf[by_query_selector_all]
   
   @js.native
   sealed trait by_regex
-    extends clickQueryMethods
+    extends StObject
+       with clickQueryMethods
        with getAttributeQueryMethods
        with typeQueryMethods
   @scala.inline
@@ -48,7 +56,8 @@ object workerbApiStrings {
   
   @js.native
   sealed trait by_text
-    extends clickQueryMethods
+    extends StObject
+       with clickQueryMethods
        with getAttributeQueryMethods
        with typeQueryMethods
   @scala.inline
@@ -56,7 +65,8 @@ object workerbApiStrings {
   
   @js.native
   sealed trait by_xpath
-    extends clickQueryMethods
+    extends StObject
+       with clickQueryMethods
        with getAttributeQueryMethods
        with typeQueryMethods
   @scala.inline

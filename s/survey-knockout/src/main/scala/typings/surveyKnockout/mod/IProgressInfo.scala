@@ -2,19 +2,17 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProgressInfo extends StObject {
   
-  var answeredQuestionCount: Double = js.native
+  var answeredQuestionCount: Double
   
-  var questionCount: Double = js.native
+  var questionCount: Double
   
-  var requiredAnsweredQuestionCount: Double = js.native
+  var requiredAnsweredQuestionCount: Double
   
-  var requiredQuestionCount: Double = js.native
+  var requiredQuestionCount: Double
 }
 object IProgressInfo {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagColumnOperation extends StObject {
   
   /**
     * The column that this operation acts on.
     */
-  var ColumnName: typings.awsSdk.quicksightMod.ColumnName = js.native
+  var ColumnName: typings.awsSdk.quicksightMod.ColumnName
   
   /**
     * The dataset column tag, currently only used for geospatial type tagging. .  This is not tags for the AWS tagging feature. . 
     */
-  var Tags: ColumnTagList = js.native
+  var Tags: ColumnTagList
 }
 object TagColumnOperation {
   

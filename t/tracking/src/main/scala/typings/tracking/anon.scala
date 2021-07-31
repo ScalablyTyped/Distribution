@@ -2,17 +2,15 @@ package typings.tracking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audio extends StObject {
     
-    var audio: js.UndefOr[Boolean] = js.native
+    var audio: js.UndefOr[Boolean] = js.undefined
     
-    var camera: js.UndefOr[Boolean] = js.native
+    var camera: js.UndefOr[Boolean] = js.undefined
   }
   object Audio {
     

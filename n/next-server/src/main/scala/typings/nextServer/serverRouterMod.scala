@@ -7,31 +7,43 @@ import typings.node.httpMod.ServerResponse
 import typings.node.urlMod.UrlWithParsedQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverRouterMod {
   
+  @JSImport("next-server/dist/server/router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("next-server/dist/server/router", JSImport.Default)
   @js.native
-  class default () extends Router {
+  class default ()
+    extends StObject
+       with Router {
     def this(routes: js.Array[Route_]) = this()
+    
+    /* CompleteClass */
+    override def add(route: Route_): Unit = js.native
+    
+    /* CompleteClass */
+    override def `match`(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.UndefOr[js.Function0[Unit]] = js.native
+    
+    /* CompleteClass */
+    var routes: js.Array[Route_] = js.native
   }
   
-  @JSImport("next-server/dist/server/router", "route")
-  @js.native
-  def route(path: String): js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], _] = js.native
+  @scala.inline
+  def route(path: String): js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any]]
   
   type Params = StringDictionary[js.Any]
   
   type RouteMatch = js.Function1[/* pathname */ js.UndefOr[String], `false` | Params]
   
-  @js.native
   trait Route_ extends StObject {
     
-    def fn(req: IncomingMessage, res: ServerResponse, params: Params, parsedUrl: UrlWithParsedQuery): Unit = js.native
+    def fn(req: IncomingMessage, res: ServerResponse, params: Params, parsedUrl: UrlWithParsedQuery): Unit
     
-    var `match`: RouteMatch = js.native
+    var `match`: RouteMatch
   }
   object Route_ {
     
@@ -56,14 +68,13 @@ object serverRouterMod {
     }
   }
   
-  @js.native
   trait Router extends StObject {
     
-    def add(route: Route_): Unit = js.native
+    def add(route: Route_): Unit
     
-    def `match`(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.UndefOr[js.Function0[Unit]] = js.native
+    def `match`(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.UndefOr[js.Function0[Unit]]
     
-    var routes: js.Array[Route_] = js.native
+    var routes: js.Array[Route_]
   }
   object Router {
     

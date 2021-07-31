@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEngineTimingOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait IEngineTimingOptions extends StObject {
     * @type number
     * @default 1
     */
-  var timeScale: Double = js.native
+  var timeScale: Double
   
   /**
     * A `Number` that specifies the current simulation-time in milliseconds starting from `0`.
@@ -28,7 +26,7 @@ trait IEngineTimingOptions extends StObject {
     * @type number
     * @default 0
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object IEngineTimingOptions {
   

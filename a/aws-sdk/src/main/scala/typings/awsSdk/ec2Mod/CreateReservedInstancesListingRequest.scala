@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReservedInstancesListingRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier you provide to ensure idempotency of your listings. This helps avoid duplicate listings. For more information, see Ensuring Idempotency.
     */
-  var ClientToken: String = js.native
+  var ClientToken: String
   
   /**
     * The number of instances that are a part of a Reserved Instance account to be listed in the Reserved Instance Marketplace. This number should be less than or equal to the instance count associated with the Reserved Instance ID specified in this call.
     */
-  var InstanceCount: Integer = js.native
+  var InstanceCount: Integer
   
   /**
     * A list specifying the price of the Standard Reserved Instance for each month remaining in the Reserved Instance term.
     */
-  var PriceSchedules: PriceScheduleSpecificationList = js.native
+  var PriceSchedules: PriceScheduleSpecificationList
   
   /**
     * The ID of the active Standard Reserved Instance.
     */
-  var ReservedInstancesId: ReservationId = js.native
+  var ReservedInstancesId: ReservationId
 }
 object CreateReservedInstancesListingRequest {
   

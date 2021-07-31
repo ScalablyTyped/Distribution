@@ -2,54 +2,52 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the settings to define the table cell formatting.
   */
-@js.native
 trait TableCellFormattingSettings extends StObject {
   
   /**
     * Gets or sets a table cell's bottom margin in twips.
     */
-  var marginBottom: Double = js.native
+  var marginBottom: Double
   
   /**
     * Gets or sets a table cell's left margin in twips.
     */
-  var marginLeft: Double = js.native
+  var marginLeft: Double
   
   /**
     * Gets or sets a table cell's right margin in twips.
     */
-  var marginRight: Double = js.native
+  var marginRight: Double
   
   /**
     * Gets or sets a table cell's top margin in twips.
     */
-  var marginTop: Double = js.native
+  var marginTop: Double
   
   /**
     * Specifies whether a table cell's margins are inherited from the table level settings.
     */
-  var marginsSameAsTable: Boolean = js.native
+  var marginsSameAsTable: Boolean
   
   /**
     * Sspecifies whether text is wrapped in a table cell.
     */
-  var noWrap: Boolean = js.native
+  var noWrap: Boolean
   
   /**
     * Gets or sets a table cell's preferred width.
     */
-  var preferredWidth: TableWidthUnit = js.native
+  var preferredWidth: TableWidthUnit
   
   /**
     * Gets or sets the vertical alignment of a table cell's content.
     */
-  var verticalAlignment: TableCellVerticalAlignment = js.native
+  var verticalAlignment: TableCellVerticalAlignment
 }
 object TableCellFormattingSettings {
   

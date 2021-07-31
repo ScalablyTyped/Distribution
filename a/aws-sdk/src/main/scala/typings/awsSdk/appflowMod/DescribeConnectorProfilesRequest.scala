@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectorProfilesRequest extends StObject {
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in the AWS account. 
     */
-  var connectorProfileNames: js.UndefOr[ConnectorProfileNameList] = js.native
+  var connectorProfileNames: js.UndefOr[ConnectorProfileNameList] = js.undefined
   
   /**
     *  The type of connector, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorType: js.UndefOr[ConnectorType] = js.native
+  var connectorType: js.UndefOr[ConnectorType] = js.undefined
   
   /**
     *  Specifies the maximum number of items that should be returned in the result set. The default for maxResults is 20 (for all paginated API operations). 
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     *  The pagination token for the next page of data. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeConnectorProfilesRequest {
   

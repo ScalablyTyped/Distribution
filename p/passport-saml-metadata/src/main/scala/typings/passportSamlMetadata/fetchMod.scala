@@ -4,23 +4,24 @@ import typings.passportSamlMetadata.anon.Get
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchMod {
   
-  @JSImport("passport-saml-metadata/src/fetch", "fetch")
+  @JSImport("passport-saml-metadata/src/fetch", JSImport.Namespace)
   @js.native
-  def fetch(config: FetchConfig): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def fetch(config: FetchConfig): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  
   trait FetchAxiosConfig extends StObject {
     
-    var backupStore: Map[String, String] = js.native
+    var backupStore: Map[String, String]
     
-    var responseType: String = js.native
+    var responseType: String
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object FetchAxiosConfig {
     
@@ -45,18 +46,17 @@ object fetchMod {
   }
   
   /* Inlined {  client :{get (url : string, params : std.Partial<passport-saml-metadata.passport-saml-metadata/src/fetch.FetchAxiosConfig> | undefined): std.Promise<{  data :string}>} | undefined,   url :string} & std.Partial<passport-saml-metadata.passport-saml-metadata/src/fetch.FetchAxiosConfig> */
-  @js.native
   trait FetchConfig extends StObject {
     
-    var backupStore: js.UndefOr[Map[String, String]] = js.native
+    var backupStore: js.UndefOr[Map[String, String]] = js.undefined
     
-    var client: js.UndefOr[Get] = js.native
+    var client: js.UndefOr[Get] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object FetchConfig {
     

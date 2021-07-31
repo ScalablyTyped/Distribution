@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Severity extends StObject {
   
   /**
     * The qualitative representation of the finding's severity, ranging from Low (least severe) to High (most severe).
     */
-  var description: js.UndefOr[SeverityDescription] = js.native
+  var description: js.UndefOr[SeverityDescription] = js.undefined
   
   /**
     * The numerical representation of the finding's severity, ranging from 1 (least severe) to 3 (most severe).
     */
-  var score: js.UndefOr[long] = js.native
+  var score: js.UndefOr[long] = js.undefined
 }
 object Severity {
   

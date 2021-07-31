@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XScaling extends XInterface {
+trait XScaling
+  extends StObject
+     with XInterface {
   
   /**
     * Get an interface object that conforms to a scaling rule that is the reverse of the original scaling rule.
     * @returns internface object that represents the reversed scaling rule.
     */
-  val InverseScaling: XScaling = js.native
+  val InverseScaling: XScaling
   
   /**
     * Given a numeric value, return the scaled value that conforms to a predefined scaling rule. For instance, for linear scaling, given a x value, the
@@ -22,13 +22,13 @@ trait XScaling extends XInterface {
     * @param value input value from which to calculate the scaled value.
     * @returns scaled value based on a predefined scaling rule.
     */
-  def doScaling(value: Double): Double = js.native
+  def doScaling(value: Double): Double
   
   /**
     * Get an interface object that conforms to a scaling rule that is the reverse of the original scaling rule.
     * @returns internface object that represents the reversed scaling rule.
     */
-  def getInverseScaling(): XScaling = js.native
+  def getInverseScaling(): XScaling
 }
 object XScaling {
   

@@ -7,27 +7,26 @@ import typings.typescriptServices.TypeScript.IReferenceResolverHost
 import typings.typescriptServices.TypeScript.IScriptSnapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanguageServiceHost
-  extends ILogger
+  extends StObject
+     with ILogger
      with IReferenceResolverHost {
   
-  def getCompilationSettings(): CompilationSettings = js.native
+  def getCompilationSettings(): CompilationSettings
   
-  def getDiagnosticsObject(): ILanguageServicesDiagnostics = js.native
+  def getDiagnosticsObject(): ILanguageServicesDiagnostics
   
-  def getLocalizedDiagnosticMessages(): js.Any = js.native
+  def getLocalizedDiagnosticMessages(): js.Any
   
-  def getScriptByteOrderMark(fileName: String): ByteOrderMark = js.native
+  def getScriptByteOrderMark(fileName: String): ByteOrderMark
   
-  def getScriptFileNames(): js.Array[String] = js.native
+  def getScriptFileNames(): js.Array[String]
   
-  def getScriptIsOpen(fileName: String): Boolean = js.native
+  def getScriptIsOpen(fileName: String): Boolean
   
-  def getScriptVersion(fileName: String): Double = js.native
+  def getScriptVersion(fileName: String): Double
 }
 object ILanguageServiceHost {
   

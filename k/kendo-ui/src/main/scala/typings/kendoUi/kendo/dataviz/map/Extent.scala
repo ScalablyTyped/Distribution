@@ -3,33 +3,33 @@ package typings.kendoUi.kendo.dataviz.map
 import typings.kendoUi.kendo.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Extent extends Class {
+trait Extent
+  extends StObject
+     with Class {
   
-  def center(): Location = js.native
+  def center(): Location
   
-  def contains(location: Location): Boolean = js.native
+  def contains(location: Location): Boolean
   
-  def containsAny(locations: js.Any): Boolean = js.native
+  def containsAny(locations: js.Any): Boolean
   
-  def edges(): js.Any = js.native
+  def edges(): js.Any
   
-  def include(location: Location): Unit = js.native
+  def include(location: Location): Unit
   
-  def includeAll(locations: js.Any): Unit = js.native
+  def includeAll(locations: js.Any): Unit
   
-  var nw: Location = js.native
+  var nw: Location
   
-  var options: ExtentOptions = js.native
+  var options: ExtentOptions
   
-  def overlaps(extent: Extent): Boolean = js.native
+  def overlaps(extent: Extent): Boolean
   
-  var se: Location = js.native
+  var se: Location
   
-  def toArray(): js.Any = js.native
+  def toArray(): js.Any
 }
 object Extent {
   

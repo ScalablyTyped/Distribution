@@ -1,26 +1,33 @@
 package typings.wonderFrp
 
 import typings.wonderFrp.idisposableMod.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/Disposable/InnerSubscriptionGroup", JSImport.Namespace)
-@js.native
-object innerSubscriptionGroupMod extends js.Object {
+object innerSubscriptionGroupMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/Disposable/InnerSubscriptionGroup", "InnerSubscriptionGroup")
   @js.native
-  class InnerSubscriptionGroup () extends IDisposable {
+  class InnerSubscriptionGroup ()
+    extends StObject
+       with IDisposable {
+    
     var _container: js.Any = js.native
+    
     def addChild(child: IDisposable): Unit = js.native
+    
     /* CompleteClass */
     override def dispose(): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object InnerSubscriptionGroup extends js.Object {
-    def create(): InnerSubscriptionGroup = js.native
+  object InnerSubscriptionGroup {
+    
+    @JSImport("wonder-frp/dist/commonjs/Disposable/InnerSubscriptionGroup", "InnerSubscriptionGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): InnerSubscriptionGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[InnerSubscriptionGroup]
   }
-  
 }
-

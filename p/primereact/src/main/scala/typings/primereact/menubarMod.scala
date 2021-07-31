@@ -4,7 +4,6 @@ import typings.primereact.menuItemMod.MenuItem
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menubarMod {
@@ -21,20 +20,19 @@ object menubarMod {
     def this(props: MenubarProps, context: js.Any) = this()
   }
   
-  @js.native
   trait MenubarProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var end: js.UndefOr[js.Function1[/* props */ js.Object, _]] = js.native
+    var end: js.UndefOr[js.Function1[/* props */ js.Object, js.Any]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var model: js.UndefOr[js.Array[MenuItem]] = js.native
+    var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
     
-    var start: js.UndefOr[js.Function1[/* props */ js.Object, _]] = js.native
+    var start: js.UndefOr[js.Function1[/* props */ js.Object, js.Any]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object MenubarProps {
     
@@ -54,7 +52,7 @@ object menubarMod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setEnd(value: /* props */ js.Object => _): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      def setEnd(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -75,7 +73,7 @@ object menubarMod {
       def setModelVarargs(value: MenuItem*): Self = StObject.set(x, "model", js.Array(value :_*))
       
       @scala.inline
-      def setStart(value: /* props */ js.Object => _): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      def setStart(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)

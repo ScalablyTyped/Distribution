@@ -2,19 +2,19 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
-trait Http2Client extends Http_ {
+trait Http2Client
+  extends StObject
+     with Http_ {
   
   /**
     * Use the remote endpoint host as the service name instead of the default.
     *
     * @default false
     */
-  var splitByDomain: js.UndefOr[Boolean] = js.native
+  var splitByDomain: js.UndefOr[Boolean] = js.undefined
 }
 object Http2Client {
   

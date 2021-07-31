@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * instances, by simply ignoring the newly pushed instance (it will not
   * overwrite).
   */
-@js.native
 trait SchemaImportDicomDataRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaImportDicomDataRequest extends StObject {
     * Storage location requires the `roles/storage.objectViewer` Cloud IAM
     * role.
     */
-  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1alpha2DicomGcsSource] = js.native
+  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1alpha2DicomGcsSource] = js.undefined
 }
 object SchemaImportDicomDataRequest {
   

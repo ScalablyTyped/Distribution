@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddInspectedHeapObjectRequest extends StObject {
   
   /**
     * Heap snapshot object id to be accessible by means of $x command line API.
     */
-  var heapObjectId: HeapSnapshotObjectId = js.native
+  var heapObjectId: HeapSnapshotObjectId
 }
 object AddInspectedHeapObjectRequest {
   

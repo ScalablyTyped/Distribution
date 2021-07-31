@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Module extends StObject {
   
   /** A unique identifier for the module, usually a hash of its contents (up to 128 bytes). */
-  var buildId: js.UndefOr[TruncatableString] = js.native
+  var buildId: js.UndefOr[TruncatableString] = js.undefined
   
   /** For example: main binary, kernel modules, and dynamic libraries such as libc.so, sharedlib.so (up to 256 bytes). */
-  var module: js.UndefOr[TruncatableString] = js.native
+  var module: js.UndefOr[TruncatableString] = js.undefined
 }
 object Module {
   

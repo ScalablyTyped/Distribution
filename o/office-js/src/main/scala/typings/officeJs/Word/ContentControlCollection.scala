@@ -7,7 +7,6 @@ import typings.officeJs.Word.Interfaces.ContentControlCollectionData
 import typings.officeJs.Word.Interfaces.ContentControlCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait ContentControlCollection extends ClientObject {
+trait ContentControlCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -100,7 +101,7 @@ trait ContentControlCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ContentControlCollection = js.native
-  def load(options: ContentControlCollectionLoadOptions with CollectionLoadOptions): ContentControlCollection = js.native
+  def load(options: ContentControlCollectionLoadOptions & CollectionLoadOptions): ContentControlCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ContentControlCollection = js.native
   def load(propertyNames: String): ContentControlCollection = js.native
   def load(propertyNames: js.Array[String]): ContentControlCollection = js.native

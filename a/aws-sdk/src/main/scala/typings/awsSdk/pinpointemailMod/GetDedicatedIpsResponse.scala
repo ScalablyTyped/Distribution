@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDedicatedIpsResponse extends StObject {
   
   /**
     * A list of dedicated IP addresses that are reserved for use by your Amazon Pinpoint account.
     */
-  var DedicatedIps: js.UndefOr[DedicatedIpList] = js.native
+  var DedicatedIps: js.UndefOr[DedicatedIpList] = js.undefined
   
   /**
     * A token that indicates that there are additional dedicated IP addresses to list. To view additional addresses, issue another request to GetDedicatedIps, passing this token in the NextToken parameter.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.pinpointemailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.pinpointemailMod.NextToken] = js.undefined
 }
 object GetDedicatedIpsResponse {
   

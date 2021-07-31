@@ -2,17 +2,17 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Rule extends Node {
+trait Rule
+  extends StObject
+     with Node {
   
   /** Array of nodes with the types declaration and comment. */
-  var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.native
+  var declarations: js.UndefOr[js.Array[Declaration | Comment]] = js.undefined
   
   /** The list of selectors of the rule, split on commas. Each selector is trimmed from whitespace and comments. */
-  var selectors: js.UndefOr[js.Array[String]] = js.native
+  var selectors: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Rule {
   

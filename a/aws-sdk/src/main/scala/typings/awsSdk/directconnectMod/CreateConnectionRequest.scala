@@ -2,41 +2,39 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConnectionRequest extends StObject {
   
   /**
     * The bandwidth of the connection.
     */
-  var bandwidth: Bandwidth = js.native
+  var bandwidth: Bandwidth
   
   /**
     * The name of the connection.
     */
-  var connectionName: ConnectionName = js.native
+  var connectionName: ConnectionName
   
   /**
     * The ID of the LAG.
     */
-  var lagId: js.UndefOr[LagId] = js.native
+  var lagId: js.UndefOr[LagId] = js.undefined
   
   /**
     * The location of the connection.
     */
-  var location: LocationCode = js.native
+  var location: LocationCode
   
   /**
     * The name of the service provider associated with the requested connection.
     */
-  var providerName: js.UndefOr[ProviderName] = js.native
+  var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
     * The tags to associate with the lag.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateConnectionRequest {
   

@@ -2,29 +2,27 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketUdpPermission extends StObject {
   
   /**
     * The host:port pattern for bind operations.
     * *:* are allowed
     */
-  var bind: js.UndefOr[String | js.Array[String]] = js.native
+  var bind: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * The host:port pattern for joinGroup operations.
     * *:* are allowed
     */
-  var multicastMembership: js.UndefOr[String | js.Array[String]] = js.native
+  var multicastMembership: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * The host:port pattern for send operations.
     * *:* are allowed
     */
-  var send: js.UndefOr[String | js.Array[String]] = js.native
+  var send: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SocketUdpPermission {
   

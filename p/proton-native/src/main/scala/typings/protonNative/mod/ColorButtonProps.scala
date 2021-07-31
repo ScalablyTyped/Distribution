@@ -3,24 +3,23 @@ package typings.protonNative.mod
 import typings.protonNative.anon.A
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorButtonProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
   
   /**
     * The initial color for the ColorButton. Can be passed as standard color seen in CSS (a color name, hex, rgb, rgba, hsl, hsla).
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Called when the color is changed for the ColorButton. The current color is passed as an object of RGBA.
     */
-  var onChange: js.UndefOr[js.Function1[/* color */ A, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* color */ A, Unit]] = js.undefined
 }
 object ColorButtonProps {
   

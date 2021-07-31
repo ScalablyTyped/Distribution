@@ -3,22 +3,20 @@ package typings.awsSdkBuildTypes.customizationMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceCustomizationDefinition extends StObject {
   
   /**
     * The customization definitions that should be applied to a service client.
     */
-  var client: js.Array[CustomizationDefinition] = js.native
+  var client: js.Array[CustomizationDefinition]
   
   /**
     * The customization definitions that should be applied to individual
     * operations within a service client.
     */
-  var commands: StringDictionary[js.Array[CustomizationDefinition]] = js.native
+  var commands: StringDictionary[js.Array[CustomizationDefinition]]
 }
 object ServiceCustomizationDefinition {
   

@@ -2,7 +2,6 @@ package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * formula where the first 20GB is free, the next 80GB is priced at $10 per GB
   * followed by $5 per GB for additional usage.
   */
-@js.native
 trait SchemaPricingExpression extends StObject {
   
   /**
     * The base unit for the SKU which is the unit used in usage exports.
     * Example: &quot;By&quot;
     */
-  var baseUnit: js.UndefOr[String] = js.native
+  var baseUnit: js.UndefOr[String] = js.undefined
   
   /**
     * Conversion factor for converting from price per usage_unit to price per
@@ -28,12 +26,12 @@ trait SchemaPricingExpression extends StObject {
     * start_usage_amount * base_unit_conversion_factor = start_usage_amount in
     * base_unit.
     */
-  var baseUnitConversionFactor: js.UndefOr[Double] = js.native
+  var baseUnitConversionFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * The base unit in human readable form. Example: &quot;byte&quot;.
     */
-  var baseUnitDescription: js.UndefOr[String] = js.native
+  var baseUnitDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The recommended quantity of units for displaying pricing info. When
@@ -45,26 +43,26 @@ trait SchemaPricingExpression extends StObject {
     * recommended way of displaying the pricing info is &quot;0.10 USD per 1000
     * GB&quot;
     */
-  var displayQuantity: js.UndefOr[Double] = js.native
+  var displayQuantity: js.UndefOr[Double] = js.undefined
   
   /**
     * The list of tiered rates for this pricing. The total cost is computed by
     * applying each of the tiered rates on usage. This repeated list is sorted
     * by ascending order of start_usage_amount.
     */
-  var tieredRates: js.UndefOr[js.Array[SchemaTierRate]] = js.native
+  var tieredRates: js.UndefOr[js.Array[SchemaTierRate]] = js.undefined
   
   /**
     * The short hand for unit of usage this pricing is specified in. Example:
     * usage_unit of &quot;GiBy&quot; means that usage is specified in
     * &quot;Gibi Byte&quot;.
     */
-  var usageUnit: js.UndefOr[String] = js.native
+  var usageUnit: js.UndefOr[String] = js.undefined
   
   /**
     * The unit of usage in human readable form. Example: &quot;gibi byte&quot;.
     */
-  var usageUnitDescription: js.UndefOr[String] = js.native
+  var usageUnitDescription: js.UndefOr[String] = js.undefined
 }
 object SchemaPricingExpression {
   

@@ -2,17 +2,15 @@ package typings.sharepoint.Srch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryState extends StObject {
   
-  var e: Double = js.native
+  var e: Double
   
-  var k: String = js.native
+  var k: String
   
-  var r: js.Array[RefinementCategory] = js.native
+  var r: js.Array[RefinementCategory]
 }
 object QueryState {
   

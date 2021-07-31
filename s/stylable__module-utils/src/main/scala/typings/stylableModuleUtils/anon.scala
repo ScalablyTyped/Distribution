@@ -4,24 +4,22 @@ import typings.stylableModuleUtils.stylableModuleUtilsStrings.module
 import typings.stylableModuleUtils.stylableModuleUtilsStrings.namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@stylable/module-utils.@stylable/module-utils/cjs/module-factory.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var injectCSS: js.UndefOr[Boolean] = js.native
+    var injectCSS: js.UndefOr[Boolean] = js.undefined
     
-    var renderableOnly: js.UndefOr[Boolean] = js.native
+    var renderableOnly: js.UndefOr[Boolean] = js.undefined
     
-    var runtimePath: js.UndefOr[String] = js.native
+    var runtimePath: js.UndefOr[String] = js.undefined
     
-    var runtimeStylesheetId: js.UndefOr[module | namespace] = js.native
+    var runtimeStylesheetId: js.UndefOr[module | namespace] = js.undefined
     
-    var staticImports: js.UndefOr[js.Array[String]] = js.native
+    var staticImports: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PartialOptions {
     

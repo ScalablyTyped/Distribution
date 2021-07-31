@@ -3,19 +3,17 @@ package typings.asyncPolling
 import typings.asyncPolling.mod.EventName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait On extends StObject {
     
-    def on(eventName: EventName, listener: js.Function): js.Any = js.native
+    def on(eventName: EventName, listener: js.Function): js.Any
     
-    def run(): js.Any = js.native
+    def run(): js.Any
     
-    def stop(): js.Any = js.native
+    def stop(): js.Any
   }
   object On {
     

@@ -4,7 +4,6 @@ import typings.breeze.anon.Name
 import typings.breeze.breeze.core.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,18 +16,18 @@ trait MetadataStore extends StObject {
   
   def exportMetadata(): String = js.native
   
-  def fetchMetadata(dataService: String): js.Promise[_] = js.native
-  def fetchMetadata(dataService: String, callback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): js.Promise[_] = js.native
-  def fetchMetadata(dataService: String, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[_] = js.native
-  def fetchMetadata(dataService: String, callback: js.Function1[/* data */ js.Any, Unit], errorCallback: ErrorCallback): js.Promise[_] = js.native
-  def fetchMetadata(dataService: DataService): js.Promise[_] = js.native
-  def fetchMetadata(dataService: DataService, callback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): js.Promise[_] = js.native
-  def fetchMetadata(dataService: DataService, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[_] = js.native
+  def fetchMetadata(dataService: String): js.Promise[js.Any] = js.native
+  def fetchMetadata(dataService: String, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+  def fetchMetadata(dataService: String, callback: js.Function1[/* data */ js.Any, Unit], errorCallback: ErrorCallback): js.Promise[js.Any] = js.native
+  def fetchMetadata(dataService: String, callback: Unit, errorCallback: ErrorCallback): js.Promise[js.Any] = js.native
+  def fetchMetadata(dataService: DataService): js.Promise[js.Any] = js.native
+  def fetchMetadata(dataService: DataService, callback: js.Function1[/* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
   def fetchMetadata(
     dataService: DataService,
     callback: js.Function1[/* data */ js.Any, Unit],
     errorCallback: ErrorCallback
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
+  def fetchMetadata(dataService: DataService, callback: Unit, errorCallback: ErrorCallback): js.Promise[js.Any] = js.native
   
   def getDataService(serviceName: String): DataService = js.native
   
@@ -52,18 +51,18 @@ trait MetadataStore extends StObject {
   def registerEntityTypeCtor(
     entityTypeName: String,
     entityCtor: js.Function,
-    initializationFn: js.UndefOr[scala.Nothing],
-    noTrackingFn: js.Function2[/* node */ js.Object, /* entityType */ EntityType, js.Object]
-  ): Unit = js.native
-  def registerEntityTypeCtor(
-    entityTypeName: String,
-    entityCtor: js.Function,
     initializationFn: js.Function1[/* entity */ Entity, Unit]
   ): Unit = js.native
   def registerEntityTypeCtor(
     entityTypeName: String,
     entityCtor: js.Function,
     initializationFn: js.Function1[/* entity */ Entity, Unit],
+    noTrackingFn: js.Function2[/* node */ js.Object, /* entityType */ EntityType, js.Object]
+  ): Unit = js.native
+  def registerEntityTypeCtor(
+    entityTypeName: String,
+    entityCtor: js.Function,
+    initializationFn: Unit,
     noTrackingFn: js.Function2[/* node */ js.Object, /* entityType */ EntityType, js.Object]
   ): Unit = js.native
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.animations.XAnimationNode
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,35 +13,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XShapeEventListener
   * @since OOo 3.0
   */
-@js.native
-trait XSlideShowListener extends XAnimationListener {
+trait XSlideShowListener
+  extends StObject
+     with XAnimationListener {
   
   /**
     * Notifies that a hyperlink has been clicked.
     * @param hyperLink hyperlink URL
     */
-  def hyperLinkClicked(hyperLink: String): Unit = js.native
+  def hyperLinkClicked(hyperLink: String): Unit
   
   /** Notify that the slide show is paused */
-  def paused(): Unit = js.native
+  def paused(): Unit
   
   /** Notify that the slide show is resumed from a paused state */
-  def resumed(): Unit = js.native
+  def resumed(): Unit
   
   /** Notify that the last animation from the main sequence of the current slide has ended. */
-  def slideAnimationsEnded(): Unit = js.native
+  def slideAnimationsEnded(): Unit
   
   /**
     * Notify that the current slide has ended, e.g. the user has clicked on the slide. Calling displaySlide() twice will not issue this event.
     * @param reverse For the default order (forward) this flag is `FALSE` . When the main sequence was traversed in reverse order then this flag is `TRUE` .
     */
-  def slideEnded(reverse: Boolean): Unit = js.native
+  def slideEnded(reverse: Boolean): Unit
   
   /** Notify that the slide transition of the current slide ended. */
-  def slideTransitionEnded(): Unit = js.native
+  def slideTransitionEnded(): Unit
   
   /** Notify that a new slide starts to become visible. */
-  def slideTransitionStarted(): Unit = js.native
+  def slideTransitionStarted(): Unit
 }
 object XSlideShowListener {
   

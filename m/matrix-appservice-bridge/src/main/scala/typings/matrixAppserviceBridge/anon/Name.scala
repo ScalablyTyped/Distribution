@@ -3,17 +3,15 @@ package typings.matrixAppserviceBridge.anon
 import typings.matrixAppserviceBridge.usersRemoteMod.RemoteUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var remote: js.UndefOr[RemoteUser] = js.native
+  var remote: js.UndefOr[RemoteUser] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Name {
   

@@ -4,24 +4,24 @@ import typings.metascraper.mod.Rule
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("metascraper-media-provider", JSImport.Namespace)
-  @js.native
-  def apply(): Rule = js.native
-  @JSImport("metascraper-media-provider", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Rule = js.native
+  @scala.inline
+  def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
+  @scala.inline
+  def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
+  @JSImport("metascraper-media-provider", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait GetProxyData extends StObject {
     
-    var retryCount: Double = js.native
+    var retryCount: Double
     
-    var url: String = js.native
+    var url: String
   }
   object GetProxyData {
     
@@ -46,32 +46,31 @@ object mod {
   
   type OnErrorFunction = js.Function2[/* url */ String, /* error */ Error, Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * It specifies cache based on file system to be used by
       * [youtube-dl](https://github.com/microlinkhq/metascraper/blob/master/packages/metascraper-media-provider/youtube-dl).
       */
-    var cacheDir: js.UndefOr[String] = js.native
+    var cacheDir: js.UndefOr[String] = js.undefined
     
     /**
       * It will be called to determinate if a proxy should be used for
       * resolving the next request URL.
       */
-    var getProxy: js.UndefOr[GetProxyFunction] = js.native
+    var getProxy: js.UndefOr[GetProxyFunction] = js.undefined
     
     /** A function to be called when something wrong happens. */
-    var onError: js.UndefOr[OnErrorFunction] = js.native
+    var onError: js.UndefOr[OnErrorFunction] = js.undefined
     
     /**
       * The maximum time allowed to wait until considering the request as
       * timed out. Default is `30000`.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** It specifies a custom user agent. */
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
   }
   object Options {
     

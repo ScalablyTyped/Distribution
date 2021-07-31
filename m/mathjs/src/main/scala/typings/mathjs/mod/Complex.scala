@@ -2,11 +2,12 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Complex extends _MathType {
+trait Complex
+  extends StObject
+     with _MathType {
   
   def compare(a: Complex, b: Complex): Double = js.native
   

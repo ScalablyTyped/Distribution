@@ -2,7 +2,6 @@ package typings.openui5.sap.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -129,23 +128,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param vFactory the module value or a function that calculates the value
   * @param bExport whether an export to global names is required - should be used by SAP-owned code only
   */
-@js.native
 trait ComponentConfig extends StObject {
   
   //     initial data of the Component (@see sap.ui.core.Component#getComponentData)
-  var componentData: js.UndefOr[js.Any] = js.native
+  var componentData: js.UndefOr[js.Any] = js.undefined
   
   //     the sId of the new Component
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   //     the name of the Component to load
-  var name: String = js.native
+  var name: String
   
   //    the mSettings of the new Component
-  var settings: js.UndefOr[js.Any] = js.native
+  var settings: js.UndefOr[js.Any] = js.undefined
   
   //     an alternate location from where to load the Component
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ComponentConfig {
   

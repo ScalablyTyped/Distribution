@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PersistentBrowserSessionControl extends ConditionalAccessSessionControl {
+trait PersistentBrowserSessionControl
+  extends StObject
+     with ConditionalAccessSessionControl {
   
   // Possible values are: always, never.
-  var mode: js.UndefOr[NullableOption[PersistentBrowserSessionMode]] = js.native
+  var mode: js.UndefOr[NullableOption[PersistentBrowserSessionMode]] = js.undefined
 }
 object PersistentBrowserSessionControl {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineObjectProperties extends StObject {
   
   /** The embedded object of this inline object. */
-  var embeddedObject: js.UndefOr[EmbeddedObject] = js.native
+  var embeddedObject: js.UndefOr[EmbeddedObject] = js.undefined
 }
 object InlineObjectProperties {
   

@@ -2,13 +2,11 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Application related details of a job posting.
   */
-@js.native
 trait SchemaApplicationInfo extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaApplicationInfo extends StObject {
     * or applications can be sent.  The maximum number of allowed characters
     * for each entry is 255.
     */
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional but at least one of uris, emails or instruction must be
@@ -27,7 +25,7 @@ trait SchemaApplicationInfo extends StObject {
     * bold, italic, ordered list, and unordered list markup tags.  The maximum
     * number of allowed characters is 3,000.
     */
-  var instruction: js.UndefOr[String] = js.native
+  var instruction: js.UndefOr[String] = js.undefined
   
   /**
     * Optional but at least one of uris, emails or instruction must be
@@ -35,7 +33,7 @@ trait SchemaApplicationInfo extends StObject {
     * example to link to an online application form.  The maximum number of
     * allowed characters for each entry is 2,000.
     */
-  var uris: js.UndefOr[js.Array[String]] = js.native
+  var uris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaApplicationInfo {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteKeyPairRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[KeyPairName] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.undefined
   
   /**
     * The ID of the key pair.
     */
-  var KeyPairId: js.UndefOr[typings.awsSdk.ec2Mod.KeyPairId] = js.native
+  var KeyPairId: js.UndefOr[typings.awsSdk.ec2Mod.KeyPairId] = js.undefined
 }
 object DeleteKeyPairRequest {
   

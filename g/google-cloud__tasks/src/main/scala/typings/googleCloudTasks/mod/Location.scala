@@ -3,21 +3,19 @@ package typings.googleCloudTasks.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var labels: StringDictionary[String] = js.native
+  var labels: StringDictionary[String]
   
-  var locationId: String = js.native
+  var locationId: String
   
-  var metadata: js.Object = js.native
+  var metadata: js.Object
   
-  var name: String = js.native
+  var name: String
 }
 object Location {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityBatchInfo extends StObject {
   
-  var descriptors: js.Array[IdentityDescriptor] = js.native
+  var descriptors: js.Array[IdentityDescriptor]
   
-  var identityIds: js.Array[String] = js.native
+  var identityIds: js.Array[String]
   
-  var includeRestrictedVisibility: Boolean = js.native
+  var includeRestrictedVisibility: Boolean
   
-  var propertyNames: js.Array[String] = js.native
+  var propertyNames: js.Array[String]
   
-  var queryMembership: QueryMembership = js.native
+  var queryMembership: QueryMembership
 }
 object IdentityBatchInfo {
   

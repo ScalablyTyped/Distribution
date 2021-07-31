@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Storage.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object IndexerOption extends StObject {
   
   /** Access the file system directly; don't use the system index. */
   @js.native
-  sealed trait doNotUseIndexer extends IndexerOption
+  sealed trait doNotUseIndexer
+    extends StObject
+       with IndexerOption
   
   /** Use only indexed content and ignore content that has not been indexed. */
   @js.native
-  sealed trait onlyUseIndexer extends IndexerOption
+  sealed trait onlyUseIndexer
+    extends StObject
+       with IndexerOption
   
   /** Use the system index for content that has been indexed and use the file system directly for content that has not been indexed. */
   @js.native
-  sealed trait useIndexerWhenAvailable extends IndexerOption
+  sealed trait useIndexerWhenAvailable
+    extends StObject
+       with IndexerOption
 }

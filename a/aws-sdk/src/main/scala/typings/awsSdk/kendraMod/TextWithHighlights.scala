@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextWithHighlights extends StObject {
   
   /**
     * The beginning and end of the text that should be highlighted.
     */
-  var Highlights: js.UndefOr[HighlightList] = js.native
+  var Highlights: js.UndefOr[HighlightList] = js.undefined
   
   /**
     * The text to display to the user.
     */
-  var Text: js.UndefOr[String] = js.native
+  var Text: js.UndefOr[String] = js.undefined
 }
 object TextWithHighlights {
   

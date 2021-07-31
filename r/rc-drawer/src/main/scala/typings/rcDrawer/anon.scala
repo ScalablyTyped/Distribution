@@ -6,17 +6,15 @@ import typings.rcDrawer.idrawerproptypesMod.IDrawerProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Open extends StObject {
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var prevProps: IDrawerProps = js.native
+    var prevProps: IDrawerProps
   }
   object Open {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PrevProps extends StObject {
     
-    var _self: DrawerChild = js.native
+    var _self: DrawerChild
     
-    var prevProps: IDrawerChildProps = js.native
+    var prevProps: IDrawerChildProps
   }
   object PrevProps {
     
@@ -66,10 +63,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PrevPropsIDrawerChildProps extends StObject {
     
-    var prevProps: IDrawerChildProps = js.native
+    var prevProps: IDrawerChildProps
   }
   object PrevPropsIDrawerChildProps {
     
@@ -87,10 +83,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PrevPropsIDrawerProps extends StObject {
     
-    var prevProps: IDrawerProps = js.native
+    var prevProps: IDrawerProps
   }
   object PrevPropsIDrawerProps {
     
@@ -108,12 +103,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var target: HTMLElement = js.native
+    var target: HTMLElement
   }
   object Target {
     

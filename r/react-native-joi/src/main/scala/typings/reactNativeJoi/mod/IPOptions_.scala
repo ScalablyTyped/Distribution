@@ -2,15 +2,13 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPOptions_ extends StObject {
   
-  var cidr: js.UndefOr[String] = js.native
+  var cidr: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[js.Array[String]] = js.native
+  var version: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IPOptions_ {
   

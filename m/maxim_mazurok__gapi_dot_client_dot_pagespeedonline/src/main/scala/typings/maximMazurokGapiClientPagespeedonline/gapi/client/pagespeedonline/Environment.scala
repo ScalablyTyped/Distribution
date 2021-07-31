@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /** The benchmark index number that indicates rough device class. */
-  var benchmarkIndex: js.UndefOr[Double] = js.native
+  var benchmarkIndex: js.UndefOr[Double] = js.undefined
   
   /** The user agent string of the version of Chrome used. */
-  var hostUserAgent: js.UndefOr[String] = js.native
+  var hostUserAgent: js.UndefOr[String] = js.undefined
   
   /** The user agent string that was sent over the network. */
-  var networkUserAgent: js.UndefOr[String] = js.native
+  var networkUserAgent: js.UndefOr[String] = js.undefined
 }
 object Environment {
   

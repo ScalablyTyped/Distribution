@@ -10,9 +10,9 @@ insert the same globals browserify does
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-node-globals |
 | Keywords           | rollup-plugin |
-| # releases         | 3 |
-| # dependents       | 140 |
-| # downloads        | 2018742 |
+| # releases         | 0 |
+| # dependents       | 155 |
+| # downloads        | 2532815 |
 | # stars            | 0 |
 
 ## Links

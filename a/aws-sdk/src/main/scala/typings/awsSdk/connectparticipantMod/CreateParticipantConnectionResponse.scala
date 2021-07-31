@@ -2,21 +2,19 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateParticipantConnectionResponse extends StObject {
   
   /**
     * Creates the participant's connection credentials. The authentication token associated with the participant's connection.
     */
-  var ConnectionCredentials: js.UndefOr[typings.awsSdk.connectparticipantMod.ConnectionCredentials] = js.native
+  var ConnectionCredentials: js.UndefOr[typings.awsSdk.connectparticipantMod.ConnectionCredentials] = js.undefined
   
   /**
     * Creates the participant's websocket connection.
     */
-  var Websocket: js.UndefOr[typings.awsSdk.connectparticipantMod.Websocket] = js.native
+  var Websocket: js.UndefOr[typings.awsSdk.connectparticipantMod.Websocket] = js.undefined
 }
 object CreateParticipantConnectionResponse {
   

@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.TeamsListIdPGroupsInOrgResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsListIdPGroupsInOrgEndpoint extends StObject {
   
-  var parameters: TeamsListIdPGroupsInOrgEndpoint = js.native
+  var parameters: TeamsListIdPGroupsInOrgEndpoint
   
-  var response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7` = js.native
+  var response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`
 }
 object ParametersTeamsListIdPGroupsInOrgEndpoint {
   
   @scala.inline
   def apply(
     parameters: TeamsListIdPGroupsInOrgEndpoint,
-    response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`
+    response: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`
   ): ParametersTeamsListIdPGroupsInOrgEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersTeamsListIdPGroupsInOrgEndpoint]
@@ -33,6 +31,6 @@ object ParametersTeamsListIdPGroupsInOrgEndpoint {
     def setParameters(value: TeamsListIdPGroupsInOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] with `7`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[TeamsListIdPGroupsInOrgResponseData] & `7`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the sensor reading–changed event. */
-@js.native
 trait SimpleOrientationSensorOrientationChangedEventArgs extends StObject {
   
   /** Gets the current sensor orientation. */
-  var orientation: SimpleOrientation = js.native
+  var orientation: SimpleOrientation
   
   /** Gets the time of the current sensor reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object SimpleOrientationSensorOrientationChangedEventArgs {
   

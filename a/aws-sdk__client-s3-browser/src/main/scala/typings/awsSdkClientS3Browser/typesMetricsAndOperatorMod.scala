@@ -5,23 +5,21 @@ import typings.awsSdkClientS3Browser.typesTagMod.UnmarshalledTag
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMetricsAndOperatorMod {
   
-  @js.native
   trait MetricsAndOperator extends StObject {
     
     /**
       * <p>The prefix used when evaluating an AND predicate.</p>
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The list of tags used when evaluating an AND predicate.</p>
       */
-    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.native
+    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.undefined
   }
   object MetricsAndOperator {
     
@@ -51,14 +49,15 @@ object typesMetricsAndOperatorMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMetricsAndOperator extends MetricsAndOperator {
+  trait UnmarshalledMetricsAndOperator
+    extends StObject
+       with MetricsAndOperator {
     
     /**
       * <p>The list of tags used when evaluating an AND predicate.</p>
       */
     @JSName("Tags")
-    var Tags_UnmarshalledMetricsAndOperator: js.UndefOr[js.Array[UnmarshalledTag]] = js.native
+    var Tags_UnmarshalledMetricsAndOperator: js.UndefOr[js.Array[UnmarshalledTag]] = js.undefined
   }
   object UnmarshalledMetricsAndOperator {
     

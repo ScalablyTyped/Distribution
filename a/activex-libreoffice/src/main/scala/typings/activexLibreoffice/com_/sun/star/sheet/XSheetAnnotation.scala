@@ -5,42 +5,42 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to query data of the annotation and to show and hide it.
   * @see com.sun.star.sheet.CellAnnotation
   */
-@js.native
-trait XSheetAnnotation extends XInterface {
+trait XSheetAnnotation
+  extends StObject
+     with XInterface {
   
   /** returns the name of the user who last changed the annotation. */
-  val Author: String = js.native
+  val Author: String
   
   /** returns a formatted string representing the date when the annotation was last changed. */
-  val Date: String = js.native
+  val Date: String
   
   /** returns, whether the annotation is permanently visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** returns the position of cell in the spreadsheet document that contains this annotation. */
-  val Position: CellAddress = js.native
+  val Position: CellAddress
   
   /** returns the name of the user who last changed the annotation. */
-  def getAuthor(): String = js.native
+  def getAuthor(): String
   
   /** returns a formatted string representing the date when the annotation was last changed. */
-  def getDate(): String = js.native
+  def getDate(): String
   
   /** returns, whether the annotation is permanently visible. */
-  def getIsVisible(): Boolean = js.native
+  def getIsVisible(): Boolean
   
   /** returns the position of cell in the spreadsheet document that contains this annotation. */
-  def getPosition(): CellAddress = js.native
+  def getPosition(): CellAddress
   
   /** specifies whether the annotation is permanently visible. */
-  def setIsVisible(bIsVisible: Boolean): Unit = js.native
+  def setIsVisible(bIsVisible: Boolean): Unit
 }
 object XSheetAnnotation {
   

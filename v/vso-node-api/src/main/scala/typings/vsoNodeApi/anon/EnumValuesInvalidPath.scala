@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesInvalidPath extends StObject {
   
-  var enumValues: InvalidPath = js.native
+  var enumValues: InvalidPath
 }
 object EnumValuesInvalidPath {
   

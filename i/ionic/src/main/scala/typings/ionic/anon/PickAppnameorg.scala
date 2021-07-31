@@ -3,23 +3,22 @@ package typings.ionic.anon
 import typings.ionic.definitionsMod.Org
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<ionic.ionic/definitions.App, 'name' | 'org'> */
-@js.native
 trait PickAppnameorg extends StObject {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("org")
-  var org_ : Null | Org = js.native
+  var org_ : Null | Org
 }
 object PickAppnameorg {
   
   @scala.inline
   def apply(name: String): PickAppnameorg = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("org")(null)
     __obj.asInstanceOf[PickAppnameorg]
   }
   

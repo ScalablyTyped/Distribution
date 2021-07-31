@@ -3,24 +3,22 @@ package typings.pollyjsNodeServer
 import typings.cors.mod.CorsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@pollyjs/node-server.@pollyjs/node-server.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var apiNamespace: js.UndefOr[String] = js.native
+    var apiNamespace: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var recordingSizeLimit: js.UndefOr[String] = js.native
+    var recordingSizeLimit: js.UndefOr[String] = js.undefined
     
-    var recordingsDir: js.UndefOr[String] = js.native
+    var recordingsDir: js.UndefOr[String] = js.undefined
   }
   object PartialConfig {
     
@@ -66,20 +64,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@pollyjs/node-server.@pollyjs/node-server.ServerConfig> */
-  @js.native
   trait PartialServerConfig extends StObject {
     
-    var apiNamespace: js.UndefOr[String] = js.native
+    var apiNamespace: js.UndefOr[String] = js.undefined
     
-    var corsOptions: js.UndefOr[CorsOptions] = js.native
+    var corsOptions: js.UndefOr[CorsOptions] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var recordingSizeLimit: js.UndefOr[String] = js.native
+    var recordingSizeLimit: js.UndefOr[String] = js.undefined
     
-    var recordingsDir: js.UndefOr[String] = js.native
+    var recordingsDir: js.UndefOr[String] = js.undefined
   }
   object PartialServerConfig {
     
@@ -131,10 +128,9 @@ object anon {
   }
   
   /* Inlined std.Pick<@pollyjs/node-server.@pollyjs/node-server.Config, 'recordingsDir'> */
-  @js.native
   trait PickConfigrecordingsDir extends StObject {
     
-    var recordingsDir: String = js.native
+    var recordingsDir: String
   }
   object PickConfigrecordingsDir {
     

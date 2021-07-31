@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsagePlanRequest extends StObject {
   
   /**
     * [Required] The identifier of the UsagePlan resource to be retrieved.
     */
-  var usagePlanId: String = js.native
+  var usagePlanId: String
 }
 object GetUsagePlanRequest {
   

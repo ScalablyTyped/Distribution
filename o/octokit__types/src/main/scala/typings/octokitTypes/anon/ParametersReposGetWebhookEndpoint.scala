@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetWebhookResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetWebhookEndpoint extends StObject {
   
-  var parameters: ReposGetWebhookEndpoint = js.native
+  var parameters: ReposGetWebhookEndpoint
   
-  var request: ReposGetWebhookRequestOptions = js.native
+  var request: ReposGetWebhookRequestOptions
   
-  var response: OctokitResponse[ReposGetWebhookResponseData] = js.native
+  var response: OctokitResponse[ReposGetWebhookResponseData]
 }
 object ParametersReposGetWebhookEndpoint {
   

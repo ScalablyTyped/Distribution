@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oleautomation {
@@ -55,11 +54,10 @@ object oleautomation {
     * struct.
     * @since OOo 1.1.2
     */
-  @js.native
   trait Currency extends StObject {
     
     /** corresponds to the Automation type `CY` . */
-    var Value: Double = js.native
+    var Value: Double
   }
   object Currency {
     
@@ -87,11 +85,10 @@ object oleautomation {
     * When calling Automation objects from UNO the distinction between `double` and date type is important. Therefore {@link Date} is declared as struct.
     * @since OOo 1.1.2
     */
-  @js.native
   trait Date extends StObject {
     
     /** corresponds to the Automation type `DATE` . */
-    var Value: Double = js.native
+    var Value: Double
   }
   object Date {
     
@@ -113,23 +110,22 @@ object oleautomation {
     * is the UNO representation of the Automation type `DECIMAL` .
     * @since OOo 1.1.2
     */
-  @js.native
   trait Decimal extends StObject {
     
     /** corresponds to `DECIMAL.Hi32` . */
-    var HighValue: Double = js.native
+    var HighValue: Double
     
     /** corresponds to `DECIMAL.Lo32` . */
-    var LowValue: Double = js.native
+    var LowValue: Double
     
     /** corresponds to `DECIMAL.Mid32` . */
-    var MiddleValue: Double = js.native
+    var MiddleValue: Double
     
     /** corresponds to `DECIMAL.scale` . */
-    var Scale: Double = js.native
+    var Scale: Double
     
     /** corresponds to `DECIMAL.sign` . */
-    var Sign: Double = js.native
+    var Sign: Double
   }
   object Decimal {
     
@@ -180,14 +176,13 @@ object oleautomation {
     * Automation object being called must support named arguments, otherwise the call fails.
     * @since OOo 1.1.2
     */
-  @js.native
   trait NamedArgument extends StObject {
     
     /** The name of the argument, for which {@link NamedArgument.Value} is intended. */
-    var Name: String = js.native
+    var Name: String
     
     /** The value of the argument whoose name is the one as contained in the member {@link Name} . */
-    var Value: js.Any = js.native
+    var Value: js.Any
   }
   object NamedArgument {
     
@@ -220,11 +215,10 @@ object oleautomation {
     * PropertyPutArgument} or PropertyGetArgument as arguments to com::sun::star::script::XInvocation::Invoke.
     * @since OOo 1.1.2
     */
-  @js.native
   trait PropertyPutArgument extends StObject {
     
     /** contains the actual argument. */
-    var Value: js.Any = js.native
+    var Value: js.Any
   }
   object PropertyPutArgument {
     
@@ -252,10 +246,9 @@ object oleautomation {
     * When calling Automation objects from UNO the distinction between error type and `long` is important. Therefore the Scode is declared as struct.
     * @since OOo 1.1.2
     */
-  @js.native
   trait SCode extends StObject {
     
-    var Value: Double = js.native
+    var Value: Double
   }
   object SCode {
     

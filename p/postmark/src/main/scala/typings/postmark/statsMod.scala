@@ -12,18 +12,17 @@ import typings.postmark.anon.SpamComplaint
 import typings.postmark.anon.Tracked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statsMod {
   
   type BounceCounts = StringDictionary[js.Any]
   
-  @js.native
   trait BrowserUsageCounts
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var Days: js.Array[Dictkey] = js.native
+    var Days: js.Array[Dictkey]
   }
   object BrowserUsageCounts {
     
@@ -44,14 +43,13 @@ object statsMod {
     }
   }
   
-  @js.native
   trait ClickCounts extends StObject {
     
-    var Clicks: Double = js.native
+    var Clicks: Double
     
-    var Days: js.Array[Clicks] = js.native
+    var Days: js.Array[Clicks]
     
-    var Unique: Double = js.native
+    var Unique: Double
   }
   object ClickCounts {
     
@@ -78,14 +76,13 @@ object statsMod {
     }
   }
   
-  @js.native
   trait ClickLocationCounts extends StObject {
     
-    var Days: js.Array[HTML] = js.native
+    var Days: js.Array[HTML]
     
-    var HTML: Double = js.native
+    var HTML: Double
     
-    var Text: Double = js.native
+    var Text: Double
   }
   object ClickLocationCounts {
     
@@ -112,16 +109,15 @@ object statsMod {
     }
   }
   
-  @js.native
   trait ClickPlaformUsageCounts extends StObject {
     
-    var Days: js.Array[Mobile] = js.native
+    var Days: js.Array[Mobile]
     
-    var Desktop: Double = js.native
+    var Desktop: Double
     
-    var Mobile: Double = js.native
+    var Mobile: Double
     
-    var Unknown: Double = js.native
+    var Unknown: Double
   }
   object ClickPlaformUsageCounts {
     
@@ -151,11 +147,11 @@ object statsMod {
     }
   }
   
-  @js.native
   trait EmailClientUsageCounts
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var Days: js.Array[Dictkey] = js.native
+    var Days: js.Array[Dictkey]
   }
   object EmailClientUsageCounts {
     
@@ -176,18 +172,17 @@ object statsMod {
     }
   }
   
-  @js.native
   trait EmailPlaformUsageCounts extends StObject {
     
-    var Days: js.Array[Desktop] = js.native
+    var Days: js.Array[Desktop]
     
-    var Desktop: js.UndefOr[Double] = js.native
+    var Desktop: js.UndefOr[Double] = js.undefined
     
-    var Mobile: js.UndefOr[Double] = js.native
+    var Mobile: js.UndefOr[Double] = js.undefined
     
-    var Unknown: js.UndefOr[Double] = js.native
+    var Unknown: js.UndefOr[Double] = js.undefined
     
-    var WebMail: js.UndefOr[Double] = js.native
+    var WebMail: js.UndefOr[Double] = js.undefined
   }
   object EmailPlaformUsageCounts {
     
@@ -232,11 +227,11 @@ object statsMod {
     }
   }
   
-  @js.native
   trait EmailReadTimesCounts
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var Days: js.Array[Dictkey] = js.native
+    var Days: js.Array[Dictkey]
   }
   object EmailReadTimesCounts {
     
@@ -257,14 +252,13 @@ object statsMod {
     }
   }
   
-  @js.native
   trait OpenCounts extends StObject {
     
-    var Days: js.Array[Opens] = js.native
+    var Days: js.Array[Opens]
     
-    var Opens: Double = js.native
+    var Opens: Double
     
-    var Unique: Double = js.native
+    var Unique: Double
   }
   object OpenCounts {
     
@@ -291,42 +285,41 @@ object statsMod {
     }
   }
   
-  @js.native
   trait OutboundStatistics extends StObject {
     
-    var BounceRate: Double = js.native
+    var BounceRate: Double
     
-    var Bounced: Double = js.native
+    var Bounced: Double
     
-    var Opens: Double = js.native
+    var Opens: Double
     
-    var SMTPApiErrors: Double = js.native
+    var SMTPApiErrors: Double
     
-    var Sent: Double = js.native
+    var Sent: Double
     
-    var SpamComplaints: Double = js.native
+    var SpamComplaints: Double
     
-    var SpamComplaintsRate: Double = js.native
+    var SpamComplaintsRate: Double
     
-    var TotalClicks: Double = js.native
+    var TotalClicks: Double
     
-    var TotalTrackedLinksSent: Double = js.native
+    var TotalTrackedLinksSent: Double
     
-    var Tracked: Double = js.native
+    var Tracked: Double
     
-    var UniqueLinksClicked: Double = js.native
+    var UniqueLinksClicked: Double
     
-    var UniqueOpens: Double = js.native
+    var UniqueOpens: Double
     
-    var WithClientRecorded: Double = js.native
+    var WithClientRecorded: Double
     
-    var WithLinkTracking: Double = js.native
+    var WithLinkTracking: Double
     
-    var WithOpenTracking: Double = js.native
+    var WithOpenTracking: Double
     
-    var WithPlatformRecorded: Double = js.native
+    var WithPlatformRecorded: Double
     
-    var WithReadTimeRecorded: Double = js.native
+    var WithReadTimeRecorded: Double
   }
   object OutboundStatistics {
     
@@ -410,12 +403,11 @@ object statsMod {
     }
   }
   
-  @js.native
   trait SentCounts extends StObject {
     
-    var Days: js.Array[Date] = js.native
+    var Days: js.Array[Date]
     
-    var Sent: Double = js.native
+    var Sent: Double
   }
   object SentCounts {
     
@@ -439,12 +431,11 @@ object statsMod {
     }
   }
   
-  @js.native
   trait SpamCounts extends StObject {
     
-    var Days: js.Array[SpamComplaint] = js.native
+    var Days: js.Array[SpamComplaint]
     
-    var SpamComplaint: Double = js.native
+    var SpamComplaint: Double
   }
   object SpamCounts {
     
@@ -468,12 +459,11 @@ object statsMod {
     }
   }
   
-  @js.native
   trait TrackedEmailCounts extends StObject {
     
-    var Days: js.Array[Tracked] = js.native
+    var Days: js.Array[Tracked]
     
-    var Tracked: Double = js.native
+    var Tracked: Double
   }
   object TrackedEmailCounts {
     

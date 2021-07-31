@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,8 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * // SHA256withRSA and set parameter empty by force
   * algId = new KJUR.asn1.x509.AlgorithmIdentifier({name: "SHA256withRSA", paramempty: true});
   */
-@js.native
-trait AlgorithmIdentifier extends ASN1Object
+trait AlgorithmIdentifier
+  extends StObject
+     with ASN1Object
 object AlgorithmIdentifier {
   
   @scala.inline

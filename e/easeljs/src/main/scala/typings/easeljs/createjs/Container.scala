@@ -2,11 +2,12 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Container extends DisplayObject {
+trait Container
+  extends StObject
+     with DisplayObject {
   
   def addChild(children: DisplayObject*): DisplayObject = js.native
   def addChild[T /* <: DisplayObject */](child0: DisplayObject, child1: DisplayObject, child2: DisplayObject, lastChild: T): T = js.native

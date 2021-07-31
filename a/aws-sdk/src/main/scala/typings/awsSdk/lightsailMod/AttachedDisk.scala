@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachedDisk extends StObject {
   
   /**
     * The path of the disk (e.g., /dev/xvdf).
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the disk in GB.
     */
-  var sizeInGb: js.UndefOr[integer] = js.native
+  var sizeInGb: js.UndefOr[integer] = js.undefined
 }
 object AttachedDisk {
   

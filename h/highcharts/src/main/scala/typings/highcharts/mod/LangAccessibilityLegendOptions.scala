@@ -2,15 +2,13 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityLegendOptions extends StObject {
   
-  var legendItem: js.UndefOr[String] = js.native
+  var legendItem: js.UndefOr[String] = js.undefined
   
-  var legendLabel: js.UndefOr[String] = js.native
+  var legendLabel: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityLegendOptions {
   

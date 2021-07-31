@@ -6,7 +6,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object whiteSpaceIndexNativeMod {
@@ -35,10 +34,11 @@ object whiteSpaceIndexNativeMod {
   trait WhiteSpace
     extends Component[WhiteSpaceProps, js.Any, js.Any]
   
-  @js.native
-  trait WhiteSpaceProps extends WhiteSpacePropsType {
+  trait WhiteSpaceProps
+    extends StObject
+       with WhiteSpacePropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object WhiteSpaceProps {
     

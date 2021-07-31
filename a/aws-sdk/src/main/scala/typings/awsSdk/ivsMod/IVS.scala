@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait IVS extends Service {
   ): Request[BatchGetStreamKeyResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_IVS: ConfigBase with ClientConfiguration = js.native
+  var config_IVS: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new channel and an associated stream key to start streaming.

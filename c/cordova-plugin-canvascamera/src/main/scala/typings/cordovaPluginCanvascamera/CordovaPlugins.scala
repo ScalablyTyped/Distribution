@@ -2,16 +2,14 @@ package typings.cordovaPluginCanvascamera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CordovaPlugins extends StObject {
   
   /**
     * cordova-plugin-device-name interface
     */
-  var CanvasCamera: typings.cordovaPluginCanvascamera.CanvasCamera = js.native
+  var CanvasCamera: typings.cordovaPluginCanvascamera.CanvasCamera
 }
 object CordovaPlugins {
   

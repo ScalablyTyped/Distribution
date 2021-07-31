@@ -6,42 +6,42 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsServicesVersionsPatch extends StandardParameters {
+trait ParamsResourceAppsServicesVersionsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Part of `name`. Name of the resource to update. Example:
     * apps/myapp/services/default/versions/1.
     */
-  var appsId: js.UndefOr[String] = js.native
+  var appsId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaVersion] = js.native
+  var requestBody: js.UndefOr[SchemaVersion] = js.undefined
   
   /**
     * Part of `name`. See documentation of `appsId`.
     */
-  var servicesId: js.UndefOr[String] = js.native
+  var servicesId: js.UndefOr[String] = js.undefined
   
   /**
     * Standard field mask for the set of fields to be updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /**
     * Part of `name`. See documentation of `appsId`.
     */
-  var versionsId: js.UndefOr[String] = js.native
+  var versionsId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAppsServicesVersionsPatch {
   

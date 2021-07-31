@@ -1,17 +1,15 @@
 organization := "org.scalablytyped"
 name := "fastify"
-version := "3.8.0-5c81ea"
-scalaVersion := "2.13.3"
+version := "3.8.0-b9c5fb"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "ajv" % "6.12.6-44caf4",
-  "org.scalablytyped" %%% "fastify-error" % "0.2.0-fcd567",
-  "org.scalablytyped" %%% "light-my-request" % "4.3.0-daaec0",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-50d3d9",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "ajv" % "6.12.6-9ca4f0",
+  "org.scalablytyped" %%% "fastify-error" % "0.2.0-9cda31",
+  "org.scalablytyped" %%% "light-my-request" % "4.3.0-a45283",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-814aa8",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

@@ -2,15 +2,16 @@ package typings.mobxReactLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useObserverMod {
   
-  @JSImport("mobx-react-lite/dist/useObserver", "useObserver")
+  @JSImport("mobx-react-lite/dist/useObserver", JSImport.Namespace)
   @js.native
-  def useObserver[T](fn: js.Function0[T]): T = js.native
-  @JSImport("mobx-react-lite/dist/useObserver", "useObserver")
-  @js.native
-  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useObserver[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any], baseComponentName.asInstanceOf[js.Any])).asInstanceOf[T]
 }

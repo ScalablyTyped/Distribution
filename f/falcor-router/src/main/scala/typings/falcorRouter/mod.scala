@@ -10,7 +10,6 @@ import typings.falcorJsonGraph.mod.PathValue_
 import typings.rx.Rx.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,6 +20,9 @@ object mod {
     def this(routes: js.Array[RouteDefinition]) = this()
     def this(routes: js.Array[RouteDefinition], options: RouterOptions) = this()
   }
+  @JSImport("falcor-router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("falcor-router", "CreatedRouter")
   @js.native
@@ -29,25 +31,23 @@ object mod {
   }
   
   /* static member */
-  @JSImport("falcor-router", "createClass")
-  @js.native
-  def createClass(): js.Any = js.native
-  @JSImport("falcor-router", "createClass")
-  @js.native
-  def createClass(routes: js.Array[RouteDefinition]): js.Any = js.native
+  @scala.inline
+  def createClass(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")().asInstanceOf[js.Any]
+  @scala.inline
+  def createClass(routes: js.Array[RouteDefinition]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClass")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait CallRoute
-    extends Route
+    extends StObject
+       with Route
        with RouteDefinition {
     
-    def call(callPath: RoutePathSet, args: js.Array[_]): CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult] = js.native
+    def call(callPath: RoutePathSet, args: js.Array[js.Any]): CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
   }
   object CallRoute {
     
     @scala.inline
     def apply(
-      call: (RoutePathSet, js.Array[_]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
+      call: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
       route: String
     ): CallRoute = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call), route = route.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object mod {
       
       @scala.inline
       def setCall(
-        value: (RoutePathSet, js.Array[_]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
+        value: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult]
       ): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
     }
   }
@@ -76,12 +76,12 @@ object mod {
     def routeUnhandledPathsTo(dataSource: DataSource): Unit = js.native
   }
   
-  @js.native
   trait GetRoute
-    extends Route
+    extends StObject
+       with Route
        with RouteDefinition {
     
-    def get(pathset: RoutePathSet): RouteResult | js.Promise[RouteResult] | Observable[RouteResult] = js.native
+    def get(pathset: RoutePathSet): RouteResult | js.Promise[RouteResult] | Observable[RouteResult]
   }
   object GetRoute {
     
@@ -102,10 +102,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Route extends StObject {
     
-    var route: String = js.native
+    var route: String
   }
   object Route {
     
@@ -133,7 +132,7 @@ object mod {
     
     @scala.inline
     def CallRoute(
-      call: (RoutePathSet, js.Array[_]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
+      call: (RoutePathSet, js.Array[js.Any]) => CallRouteResult | js.Promise[CallRouteResult] | Observable[CallRouteResult],
       route: String
     ): typings.falcorRouter.mod.CallRoute = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call), route = route.asInstanceOf[js.Any])
@@ -160,14 +159,13 @@ object mod {
   
   type RouteResult = PathValue_ | js.Array[PathValue_] | JSONEnvelope[js.Any]
   
-  @js.native
   trait RouterOptions extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var maxPaths: js.UndefOr[Double] = js.native
+    var maxPaths: js.UndefOr[Double] = js.undefined
     
-    var maxRefFollow: js.UndefOr[Double] = js.native
+    var maxRefFollow: js.UndefOr[Double] = js.undefined
   }
   object RouterOptions {
     
@@ -200,12 +198,12 @@ object mod {
     }
   }
   
-  @js.native
   trait SetRoute
-    extends Route
+    extends StObject
+       with Route
        with RouteDefinition {
     
-    def set(jsonGraph: JSONGraph): RouteResult | js.Promise[RouteResult] | Observable[RouteResult] = js.native
+    def set(jsonGraph: JSONGraph): RouteResult | js.Promise[RouteResult] | Observable[RouteResult]
   }
   object SetRoute {
     

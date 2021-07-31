@@ -2,21 +2,19 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Spacer element shown in widget._
   * @see https://docs.scriptable.app/widgetspacer
   */
-@js.native
 trait WidgetSpacer extends StObject {
   
   /**
     * _Amount of space this spacer consumes._
     * @see https://docs.scriptable.app/widgetspacer/#length
     */
-  var length: Double = js.native
+  var length: Double
 }
 object WidgetSpacer {
   

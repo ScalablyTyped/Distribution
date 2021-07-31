@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputsSchemaRecordFormatMappingParameters extends StObject {
   
   /**
     * Mapping information when the record format uses delimiters.
     * See CSV Mapping Parameters below for more details.
     */
-  var csv: js.UndefOr[Input[AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv]] = js.native
+  var csv: js.UndefOr[Input[AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv]] = js.undefined
   
   /**
     * Mapping information when JSON is the record format on the streaming source.
     * See JSON Mapping Parameters below for more details.
     */
-  var json: js.UndefOr[Input[AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson]] = js.native
+  var json: js.UndefOr[Input[AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson]] = js.undefined
 }
 object AnalyticsApplicationInputsSchemaRecordFormatMappingParameters {
   

@@ -2,32 +2,26 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Color")
 @js.native
 class Color () extends StObject {
   def this(r: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double) = this()
   def this(r: Double, g: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: js.UndefOr[scala.Nothing], b: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double, b: Double) = this()
-  def this(r: Double, g: js.UndefOr[scala.Nothing], b: Double) = this()
+  def this(r: Unit, g: Double) = this()
   def this(r: Double, g: Double, b: Double) = this()
-  def this(
-    r: js.UndefOr[scala.Nothing],
-    g: js.UndefOr[scala.Nothing],
-    b: js.UndefOr[scala.Nothing],
-    a: Double
-  ) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
-  def this(r: js.UndefOr[scala.Nothing], g: Double, b: Double, a: Double) = this()
-  def this(r: Double, g: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], a: Double) = this()
-  def this(r: Double, g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
-  def this(r: Double, g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
+  def this(r: Double, g: Unit, b: Double) = this()
+  def this(r: Unit, g: Double, b: Double) = this()
+  def this(r: Unit, g: Unit, b: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
+  def this(r: Double, g: Double, b: Unit, a: Double) = this()
+  def this(r: Double, g: Unit, b: Double, a: Double) = this()
+  def this(r: Double, g: Unit, b: Unit, a: Double) = this()
+  def this(r: Unit, g: Double, b: Double, a: Double) = this()
+  def this(r: Unit, g: Double, b: Unit, a: Double) = this()
+  def this(r: Unit, g: Unit, b: Double, a: Double) = this()
+  def this(r: Unit, g: Unit, b: Unit, a: Double) = this()
   
   var a: Double = js.native
   
@@ -36,9 +30,9 @@ class Color () extends StObject {
   var b: Double = js.native
   
   def clamp(): this.type = js.native
-  def clamp(min: js.UndefOr[scala.Nothing], max: Double): this.type = js.native
   def clamp(min: Double): this.type = js.native
   def clamp(min: Double, max: Double): this.type = js.native
+  def clamp(min: Unit, max: Double): this.type = js.native
   
   def copy(): this.type = js.native
   

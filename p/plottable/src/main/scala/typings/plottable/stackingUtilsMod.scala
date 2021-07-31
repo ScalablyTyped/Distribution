@@ -9,10 +9,13 @@ import typings.plottable.plottableStrings.topdown
 import typings.plottable.utilsMod.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackingUtilsMod {
+  
+  @JSImport("plottable/build/src/utils/stackingUtils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* keyof plottable.anon.Bottomup */ /* Rewritten from type alias, can be one of: 
     - typings.plottable.plottableStrings.topdown
@@ -40,42 +43,37 @@ object stackingUtilsMod {
   
   @JSImport("plottable/build/src/utils/stackingUtils", "normalizeKey")
   @js.native
-  val normalizeKey: (js.Function1[/* key */ js.Any, String]) with MemoizedFunction = js.native
+  val normalizeKey: (js.Function1[/* key */ js.Any, String]) & MemoizedFunction = js.native
   
-  @JSImport("plottable/build/src/utils/stackingUtils", "stack")
-  @js.native
-  def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[_], valueAccessor: IAccessor[Double]): StackingResult = js.native
-  @JSImport("plottable/build/src/utils/stackingUtils", "stack")
-  @js.native
+  @scala.inline
+  def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[js.Any], valueAccessor: IAccessor[Double]): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
+  @scala.inline
   def stack(
     datasets: js.Array[Dataset],
-    keyAccessor: IAccessor[_],
+    keyAccessor: IAccessor[js.Any],
     valueAccessor: IAccessor[Double],
     stackingOrder: IStackingOrder
-  ): StackingResult = js.native
+  ): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any], stackingOrder.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
   
-  @JSImport("plottable/build/src/utils/stackingUtils", "stackedExtent")
-  @js.native
-  def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[_], filter: IAccessor[Boolean]): js.Array[Double] = js.native
+  @scala.inline
+  def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[js.Any], filter: IAccessor[Boolean]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtent")(stackingResult.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plottable/build/src/utils/stackingUtils", "stackedExtents")
-  @js.native
-  def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = js.native
+  @scala.inline
+  def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtents")(stackingResult.asInstanceOf[js.Any]).asInstanceOf[MaximumExtents[D]]
   
-  @js.native
   trait GenericStackedDatum[D] extends StObject {
     
-    var axisValue: D = js.native
+    var axisValue: D
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var originalDataset: Dataset = js.native
+    var originalDataset: Dataset
     
-    var originalDatum: js.Any = js.native
+    var originalDatum: js.Any
     
-    var originalIndex: Double = js.native
+    var originalIndex: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object GenericStackedDatum {
     
@@ -93,7 +91,7 @@ object stackingUtilsMod {
     }
     
     @scala.inline
-    implicit class GenericStackedDatumMutableBuilder[Self <: GenericStackedDatum[_], D] (val x: Self with GenericStackedDatum[D]) extends AnyVal {
+    implicit class GenericStackedDatumMutableBuilder[Self <: GenericStackedDatum[?], D] (val x: Self & GenericStackedDatum[D]) extends AnyVal {
       
       @scala.inline
       def setAxisValue(value: D): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
@@ -117,14 +115,13 @@ object stackingUtilsMod {
   
   type GenericStackingResult[D] = Map[Dataset, Map[String | Double, GenericStackedDatum[D]]]
   
-  @js.native
   trait StackExtent[D] extends StObject {
     
-    var axisValue: D = js.native
+    var axisValue: D
     
-    var extent: Double = js.native
+    var extent: Double
     
-    var stackedDatum: GenericStackedDatum[D] = js.native
+    var stackedDatum: GenericStackedDatum[D]
   }
   object StackExtent {
     
@@ -135,7 +132,7 @@ object stackingUtilsMod {
     }
     
     @scala.inline
-    implicit class StackExtentMutableBuilder[Self <: StackExtent[_], D] (val x: Self with StackExtent[D]) extends AnyVal {
+    implicit class StackExtentMutableBuilder[Self <: StackExtent[?], D] (val x: Self & StackExtent[D]) extends AnyVal {
       
       @scala.inline
       def setAxisValue(value: D): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])

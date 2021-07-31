@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceFolderPickOptions extends StObject {
   
   /**
     * Set to `true` to keep the picker open when focus moves to another part of the editor or to another window.
     */
-  var ignoreFocusOut: js.UndefOr[Boolean] = js.native
+  var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional string to show as placeholder in the input box to guide the user what to pick on.
     */
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
 }
 object WorkspaceFolderPickOptions {
   

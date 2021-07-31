@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTerminologyRequest extends StObject {
   
   /**
     * The name of the custom terminology being retrieved.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * The data format of the custom terminology being retrieved, either CSV or TMX.
     */
-  var TerminologyDataFormat: typings.awsSdk.translateMod.TerminologyDataFormat = js.native
+  var TerminologyDataFormat: typings.awsSdk.translateMod.TerminologyDataFormat
 }
 object GetTerminologyRequest {
   

@@ -8,7 +8,6 @@ import typings.std.Blob
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -28,15 +27,15 @@ object anon {
     val size: Double = js.native
     
     def slice(): Blob = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): Blob = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double, contentType: String): Blob = js.native
     def slice(start: Double): Blob = js.native
-    def slice(start: Double, end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
     def slice(start: Double, end: Double): Blob = js.native
     def slice(start: Double, end: Double, contentType: String): Blob = js.native
+    def slice(start: Double, end: Unit, contentType: String): Blob = js.native
+    def slice(start: Unit, end: Double): Blob = js.native
+    def slice(start: Unit, end: Double, contentType: String): Blob = js.native
+    def slice(start: Unit, end: Unit, contentType: String): Blob = js.native
     
-    def stream(): ReadableStream[_] = js.native
+    def stream(): ReadableStream[js.Any] = js.native
     
     def text(): js.Promise[String] = js.native
     

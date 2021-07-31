@@ -2,15 +2,13 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionExecutionConfig extends StObject {
   
-  var IsolationMode: js.UndefOr[FunctionIsolationMode] = js.native
+  var IsolationMode: js.UndefOr[FunctionIsolationMode] = js.undefined
   
-  var RunAs: js.UndefOr[FunctionRunAsConfig] = js.native
+  var RunAs: js.UndefOr[FunctionRunAsConfig] = js.undefined
 }
 object FunctionExecutionConfig {
   

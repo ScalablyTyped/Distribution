@@ -2,19 +2,17 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthConfig extends StObject {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var serveraddress: String = js.native
+  var serveraddress: String
   
-  var username: String = js.native
+  var username: String
 }
 object AuthConfig {
   

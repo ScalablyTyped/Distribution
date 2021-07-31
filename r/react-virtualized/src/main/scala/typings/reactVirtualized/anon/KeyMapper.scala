@@ -9,45 +9,39 @@ import typings.reactVirtualized.reactVirtualizedNumbers.`20`
 import typings.reactVirtualized.reactVirtualizedStrings.grid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyMapper extends StObject {
   
-  var autoHeight: `false` = js.native
+  var autoHeight: `false`
   
-  var keyMapper: identity = js.native
+  var keyMapper: identity
   
-  var onCellsRendered: noop = js.native
+  var onCellsRendered: noop
   
-  var onScroll: noop = js.native
+  var onScroll: noop
   
-  var overscanByPixels: `20` = js.native
+  var overscanByPixels: `20`
   
-  var role: grid = js.native
+  var role: grid
   
-  var scrollingResetTimeInterval: /* 150 */ Double = js.native
+  var scrollingResetTimeInterval: /* 150 */ Double
   
-  var style: emptyObject = js.native
+  var style: emptyObject
   
-  var tabIndex: `0` = js.native
+  var tabIndex: `0`
 }
 object KeyMapper {
   
   @scala.inline
   def apply(
-    autoHeight: `false`,
     keyMapper: /* value */ js.Any => js.Any,
     onCellsRendered: () => Unit,
     onScroll: () => Unit,
-    overscanByPixels: `20`,
-    role: grid,
     scrollingResetTimeInterval: /* 150 */ Double,
-    style: emptyObject,
-    tabIndex: `0`
+    style: emptyObject
   ): KeyMapper = {
-    val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], keyMapper = js.Any.fromFunction1(keyMapper), onCellsRendered = js.Any.fromFunction0(onCellsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanByPixels = overscanByPixels.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoHeight = false, keyMapper = js.Any.fromFunction1(keyMapper), onCellsRendered = js.Any.fromFunction0(onCellsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanByPixels = 20, role = "grid", scrollingResetTimeInterval = scrollingResetTimeInterval.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], tabIndex = 0)
     __obj.asInstanceOf[KeyMapper]
   }
   

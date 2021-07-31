@@ -2,17 +2,15 @@ package typings.ydnDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullTextCatalog extends StObject {
   
-  var lang: String = js.native
+  var lang: String
   
-  var name: String = js.native
+  var name: String
   
-  var sources: js.Array[FullTextSource] = js.native
+  var sources: js.Array[FullTextSource]
 }
 object FullTextCatalog {
   

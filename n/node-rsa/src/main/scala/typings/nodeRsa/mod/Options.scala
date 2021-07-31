@@ -4,26 +4,24 @@ import typings.nodeRsa.nodeRsaStrings.browser
 import typings.nodeRsa.nodeRsaStrings.node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Padding scheme for encrypt/decrypt. Default is 'pkcs1_oaep'.
     */
-  var encryptionScheme: js.UndefOr[EncryptionScheme | AdvancedEncryptionScheme] = js.native
+  var encryptionScheme: js.UndefOr[EncryptionScheme | AdvancedEncryptionScheme] = js.undefined
   
   /**
     * Working environment. (auto detects by default)
     */
-  var environment: js.UndefOr[browser | node] = js.native
+  var environment: js.UndefOr[browser | node] = js.undefined
   
   /**
     * scheme used for signing and verifying.. Default 'pkcs1-sha256', or, if chosen pss: 'pss-sha1'.
     */
-  var signingScheme: js.UndefOr[SigningScheme | SigningSchemeHash | AdvancedSigningScheme] = js.native
+  var signingScheme: js.UndefOr[SigningScheme | SigningSchemeHash | AdvancedSigningScheme] = js.undefined
 }
 object Options {
   

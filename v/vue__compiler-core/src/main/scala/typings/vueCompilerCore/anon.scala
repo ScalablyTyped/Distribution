@@ -9,22 +9,20 @@ import typings.vueCompilerCore.vueCompilerCoreStrings.function
 import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @vue/compiler-core.@vue/compiler-core.CodegenOptions & {  onContextCreated :(context : @vue/compiler-core.@vue/compiler-core.CodegenContext): void | undefined} */
-  @js.native
   trait CodegenOptionsonContextCr extends StObject {
     
-    var bindingMetadata: js.UndefOr[BindingMetadata] = js.native
+    var bindingMetadata: js.UndefOr[BindingMetadata] = js.undefined
     
     /**
       * Filename for source map generation.
       * @default 'template.vue.html'
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * - `module` mode will generate ES module import statements for helpers
@@ -35,44 +33,44 @@ object anon {
       * used with `new Function(code)()` to generate a render function at runtime.
       * @default 'function'
       */
-    var mode: js.UndefOr[module | function] = js.native
+    var mode: js.UndefOr[module | function] = js.undefined
     
-    var onContextCreated: js.UndefOr[js.Function1[/* context */ CodegenContext, Unit]] = js.native
+    var onContextCreated: js.UndefOr[js.Function1[/* context */ CodegenContext, Unit]] = js.undefined
     
     /**
       * Option to optimize helper import bindings via variable assignment
       * (only used for webpack code-split)
       * @default false
       */
-    var optimizeImports: js.UndefOr[Boolean] = js.native
+    var optimizeImports: js.UndefOr[Boolean] = js.undefined
     
-    var prefixIdentifiers: js.UndefOr[Boolean] = js.native
+    var prefixIdentifiers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customize the global variable name of `Vue` to get helpers from
       * in function mode
       * @default 'Vue'
       */
-    var runtimeGlobalName: js.UndefOr[String] = js.native
+    var runtimeGlobalName: js.UndefOr[String] = js.undefined
     
     /**
       * Customize where to import runtime helpers from.
       * @default 'vue'
       */
-    var runtimeModuleName: js.UndefOr[String] = js.native
+    var runtimeModuleName: js.UndefOr[String] = js.undefined
     
     /**
       * SFC scoped styles ID
       */
-    var scopeId: js.UndefOr[String | Null] = js.native
+    var scopeId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Generate source map?
       * @default false
       */
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
     
-    var ssr: js.UndefOr[Boolean] = js.native
+    var ssr: js.UndefOr[Boolean] = js.undefined
   }
   object CodegenOptionsonContextCr {
     
@@ -156,16 +154,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Directives extends StObject {
     
-    var directives: js.Array[DirectiveNode] = js.native
+    var directives: js.Array[DirectiveNode]
     
-    var dynamicPropNames: js.Array[String] = js.native
+    var dynamicPropNames: js.Array[String]
     
-    var patchFlag: Double = js.native
+    var patchFlag: Double
     
-    var props: js.UndefOr[PropsExpression] = js.native
+    var props: js.UndefOr[PropsExpression] = js.undefined
   }
   object Directives {
     
@@ -201,12 +198,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HasDynamicSlots extends StObject {
     
-    var hasDynamicSlots: Boolean = js.native
+    var hasDynamicSlots: Boolean
     
-    var slots: SlotsExpression = js.native
+    var slots: SlotsExpression
   }
   object HasDynamicSlots {
     
@@ -227,16 +223,15 @@ object anon {
     }
   }
   
-  @js.native
   trait VFor extends StObject {
     
-    var vFor: Double = js.native
+    var vFor: Double
     
-    var vOnce: Double = js.native
+    var vOnce: Double
     
-    var vPre: Double = js.native
+    var vPre: Double
     
-    var vSlot: Double = js.native
+    var vSlot: Double
   }
   object VFor {
     

@@ -10,9 +10,9 @@ TypeScript typings for Security Command Center API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.securitycenter |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 976 |
+| # downloads        | 1079 |
 | # stars            | 0 |
 
 ## Links

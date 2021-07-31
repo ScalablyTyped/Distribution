@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String | js.Function] = js.native
+  var content: js.UndefOr[String | js.Function] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hideDelay: js.UndefOr[Double] = js.native
+  var hideDelay: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var shared: js.UndefOr[Boolean] = js.native
+  var shared: js.UndefOr[Boolean] = js.undefined
   
-  var showAfter: js.UndefOr[Double] = js.native
+  var showAfter: js.UndefOr[Double] = js.undefined
   
-  var showOn: js.UndefOr[String] = js.native
+  var showOn: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object TooltipOptions {
   

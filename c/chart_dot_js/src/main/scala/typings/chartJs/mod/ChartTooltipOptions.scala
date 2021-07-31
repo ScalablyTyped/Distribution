@@ -5,63 +5,61 @@ import typings.chartJs.chartJsStrings.xy
 import typings.chartJs.chartJsStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltipOptions extends StObject {
   
-  var axis: js.UndefOr[x | y | xy] = js.native
+  var axis: js.UndefOr[x | y | xy] = js.undefined
   
-  var backgroundColor: js.UndefOr[ChartColor] = js.native
+  var backgroundColor: js.UndefOr[ChartColor] = js.undefined
   
-  var bodyAlign: js.UndefOr[TextAlignment] = js.native
+  var bodyAlign: js.UndefOr[TextAlignment] = js.undefined
   
-  var bodyFontColor: js.UndefOr[ChartColor] = js.native
+  var bodyFontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var bodyFontFamily: js.UndefOr[String] = js.native
+  var bodyFontFamily: js.UndefOr[String] = js.undefined
   
-  var bodyFontSize: js.UndefOr[Double] = js.native
+  var bodyFontSize: js.UndefOr[Double] = js.undefined
   
-  var bodyFontStyle: js.UndefOr[String] = js.native
+  var bodyFontStyle: js.UndefOr[String] = js.undefined
   
-  var bodySpacing: js.UndefOr[Double] = js.native
+  var bodySpacing: js.UndefOr[Double] = js.undefined
   
-  var borderColor: js.UndefOr[ChartColor] = js.native
+  var borderColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var callbacks: js.UndefOr[ChartTooltipCallback] = js.native
+  var callbacks: js.UndefOr[ChartTooltipCallback] = js.undefined
   
-  var caretPadding: js.UndefOr[Double] = js.native
+  var caretPadding: js.UndefOr[Double] = js.undefined
   
-  var caretSize: js.UndefOr[Double] = js.native
+  var caretSize: js.UndefOr[Double] = js.undefined
   
-  var cornerRadius: js.UndefOr[Double] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.undefined
   
-  var custom: js.UndefOr[js.Function1[/* tooltipModel */ ChartTooltipModel, Unit]] = js.native
+  var custom: js.UndefOr[js.Function1[/* tooltipModel */ ChartTooltipModel, Unit]] = js.undefined
   
-  var displayColors: js.UndefOr[Boolean] = js.native
+  var displayColors: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[js.Function2[/* item */ ChartTooltipItem, /* data */ ChartData, Boolean]] = js.native
+  var filter: js.UndefOr[js.Function2[/* item */ ChartTooltipItem, /* data */ ChartData, Boolean]] = js.undefined
   
-  var footerAlign: js.UndefOr[TextAlignment] = js.native
+  var footerAlign: js.UndefOr[TextAlignment] = js.undefined
   
-  var footerFontColor: js.UndefOr[ChartColor] = js.native
+  var footerFontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var footerFontFamily: js.UndefOr[String] = js.native
+  var footerFontFamily: js.UndefOr[String] = js.undefined
   
-  var footerFontSize: js.UndefOr[Double] = js.native
+  var footerFontSize: js.UndefOr[Double] = js.undefined
   
-  var footerFontStyle: js.UndefOr[String] = js.native
+  var footerFontStyle: js.UndefOr[String] = js.undefined
   
-  var footerMarginTop: js.UndefOr[Double] = js.native
+  var footerMarginTop: js.UndefOr[Double] = js.undefined
   
-  var footerSpacing: js.UndefOr[Double] = js.native
+  var footerSpacing: js.UndefOr[Double] = js.undefined
   
-  var intersect: js.UndefOr[Boolean] = js.native
+  var intersect: js.UndefOr[Boolean] = js.undefined
   
   var itemSort: js.UndefOr[
     js.Function3[
@@ -70,35 +68,35 @@ trait ChartTooltipOptions extends StObject {
       /* data */ js.UndefOr[ChartData], 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var mode: js.UndefOr[InteractionMode] = js.native
+  var mode: js.UndefOr[InteractionMode] = js.undefined
   
-  var multiKeyBackground: js.UndefOr[String] = js.native
+  var multiKeyBackground: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
-  var textDirection: js.UndefOr[String] = js.native
+  var textDirection: js.UndefOr[String] = js.undefined
   
-  var titleAlign: js.UndefOr[TextAlignment] = js.native
+  var titleAlign: js.UndefOr[TextAlignment] = js.undefined
   
-  var titleFontColor: js.UndefOr[ChartColor] = js.native
+  var titleFontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var titleFontFamily: js.UndefOr[String] = js.native
+  var titleFontFamily: js.UndefOr[String] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.undefined
   
-  var titleFontStyle: js.UndefOr[String] = js.native
+  var titleFontStyle: js.UndefOr[String] = js.undefined
   
-  var titleMarginBottom: js.UndefOr[Double] = js.native
+  var titleMarginBottom: js.UndefOr[Double] = js.undefined
   
-  var titleSpacing: js.UndefOr[Double] = js.native
+  var titleSpacing: js.UndefOr[Double] = js.undefined
   
-  var xPadding: js.UndefOr[Double] = js.native
+  var xPadding: js.UndefOr[Double] = js.undefined
   
-  var yPadding: js.UndefOr[Double] = js.native
+  var yPadding: js.UndefOr[Double] = js.undefined
 }
 object ChartTooltipOptions {
   

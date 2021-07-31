@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [y] - The y value.
   * @param [z] - The z value.
   */
-@js.native
 trait Vec3 extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait Vec3 extends StObject {
     * @param rhs - The vector to add to the specified vector.
     * @returns Self for chaining.
     */
-  def add(rhs: Vec3): Vec3 = js.native
+  def add(rhs: Vec3): Vec3
   
   /**
     * Adds two 3-dimensional vectors together and returns the result.
@@ -46,7 +44,7 @@ trait Vec3 extends StObject {
     * @param rhs - The second vector operand for the addition.
     * @returns Self for chaining.
     */
-  def add2(lhs: Vec3, rhs: Vec3): Vec3 = js.native
+  def add2(lhs: Vec3, rhs: Vec3): Vec3
   
   /**
     * Copied the contents of a source 3-dimensional vector to a destination 3-dimensional vector.
@@ -60,7 +58,7 @@ trait Vec3 extends StObject {
     * @param rhs - A vector to copy to the specified vector.
     * @returns Self for chaining.
     */
-  def copy(rhs: Vec3): Vec3 = js.native
+  def copy(rhs: Vec3): Vec3
   
   /**
     * Returns the result of a cross product operation performed on the two specified 3-dimensional vectors.
@@ -73,7 +71,7 @@ trait Vec3 extends StObject {
     * @param rhs - The second 3-dimensional vector operand of the cross product.
     * @returns Self for chaining.
     */
-  def cross(lhs: Vec3, rhs: Vec3): Vec3 = js.native
+  def cross(lhs: Vec3, rhs: Vec3): Vec3
   
   /**
     * Returns the distance between the two specified 3-dimensional vectors.
@@ -85,7 +83,7 @@ trait Vec3 extends StObject {
     * @param rhs - The second 3-dimensional vector to test.
     * @returns The distance between the two vectors.
     */
-  def distance(rhs: Vec3): Double = js.native
+  def distance(rhs: Vec3): Double
   
   /**
     * Returns the result of a dot product operation performed on the two specified 3-dimensional vectors.
@@ -97,7 +95,7 @@ trait Vec3 extends StObject {
     * @param rhs - The second 3-dimensional vector operand of the dot product.
     * @returns The result of the dot product operation.
     */
-  def dot(rhs: Vec3): Double = js.native
+  def dot(rhs: Vec3): Double
   
   /**
     * Reports whether two vectors are equal.
@@ -108,7 +106,7 @@ trait Vec3 extends StObject {
     * @param rhs - The vector to compare to the specified vector.
     * @returns True if the vectors are equal and false otherwise.
     */
-  def equals(rhs: Vec3): Boolean = js.native
+  def equals(rhs: Vec3): Boolean
   
   /**
     * Returns the magnitude of the specified 3-dimensional vector.
@@ -119,7 +117,7 @@ trait Vec3 extends StObject {
     console.log("The length of the vector is: " + len);
     * @returns The magnitude of the specified 3-dimensional vector.
     */
-  def length(): Double = js.native
+  def length(): Double
   
   /**
     * Returns the magnitude squared of the specified 3-dimensional vector.
@@ -130,7 +128,7 @@ trait Vec3 extends StObject {
     console.log("The length squared of the vector is: " + len);
     * @returns The magnitude of the specified 3-dimensional vector.
     */
-  def lengthSq(): Double = js.native
+  def lengthSq(): Double
   
   /**
     * Returns the result of a linear interpolation between two specified 3-dimensional vectors.
@@ -149,7 +147,7 @@ trait Vec3 extends StObject {
     a ray extrapolated from this line.
     * @returns Self for chaining.
     */
-  def lerp(lhs: Vec3, rhs: Vec3, alpha: Double): Vec3 = js.native
+  def lerp(lhs: Vec3, rhs: Vec3, alpha: Double): Vec3
   
   /**
     * Multiplies a 3-dimensional vector to another in place.
@@ -164,7 +162,7 @@ trait Vec3 extends StObject {
     * @param rhs - The 3-dimensional vector used as the second multiplicand of the operation.
     * @returns Self for chaining.
     */
-  def mul(rhs: Vec3): Vec3 = js.native
+  def mul(rhs: Vec3): Vec3
   
   /**
     * Returns the result of multiplying the specified 3-dimensional vectors together.
@@ -181,7 +179,7 @@ trait Vec3 extends StObject {
     * @param rhs - The 3-dimensional vector used as the second multiplicand of the operation.
     * @returns Self for chaining.
     */
-  def mul2(lhs: Vec3, rhs: Vec3): Vec3 = js.native
+  def mul2(lhs: Vec3, rhs: Vec3): Vec3
   
   /**
     * Returns this 3-dimensional vector converted to a unit vector in place.
@@ -195,7 +193,7 @@ trait Vec3 extends StObject {
     console.log("The result of the vector normalization is: " + v.toString());
     * @returns Self for chaining.
     */
-  def normalize(): Vec3 = js.native
+  def normalize(): Vec3
   
   /**
     * Projects this 3-dimensional vector onto the specified vector.
@@ -210,7 +208,7 @@ trait Vec3 extends StObject {
     * @param rhs - The vector onto which the original vector will be projected on.
     * @returns Self for chaining.
     */
-  def project(rhs: Vec3): Vec3 = js.native
+  def project(rhs: Vec3): Vec3
   
   /**
     * Scales each dimension of the specified 3-dimensional vector by the supplied
@@ -229,7 +227,7 @@ trait Vec3 extends StObject {
     * @param scalar - The value by which each vector component is multiplied.
     * @returns Self for chaining.
     */
-  def scale(scalar: Double): Vec3 = js.native
+  def scale(scalar: Double): Vec3
   
   /**
     * Sets the specified 3-dimensional vector to the supplied numerical values.
@@ -244,7 +242,7 @@ trait Vec3 extends StObject {
     * @param z - The value to set on the third component of the vector.
     * @returns Self for chaining.
     */
-  def set(x: Double, y: Double, z: Double): Vec3 = js.native
+  def set(x: Double, y: Double, z: Double): Vec3
   
   /**
     * Subtracts a 3-dimensional vector from another in place.
@@ -259,7 +257,7 @@ trait Vec3 extends StObject {
     * @param rhs - The vector to add to the specified vector.
     * @returns Self for chaining.
     */
-  def sub(rhs: Vec3): Vec3 = js.native
+  def sub(rhs: Vec3): Vec3
   
   /**
     * Subtracts two 3-dimensional vectors from one another and returns the result.
@@ -276,7 +274,7 @@ trait Vec3 extends StObject {
     * @param rhs - The second vector operand for the addition.
     * @returns Self for chaining.
     */
-  def sub2(lhs: Vec3, rhs: Vec3): Vec3 = js.native
+  def sub2(lhs: Vec3, rhs: Vec3): Vec3
   
   /**
     * The first component of the vector.
@@ -289,7 +287,7 @@ trait Vec3 extends StObject {
     // Set x
     vec.x = 0;
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The second component of the vector.
@@ -302,7 +300,7 @@ trait Vec3 extends StObject {
     // Set y
     vec.y = 0;
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * The third component of the vector.
@@ -315,7 +313,7 @@ trait Vec3 extends StObject {
     // Set z
     vec.z = 0;
     */
-  var z: Double = js.native
+  var z: Double
 }
 object Vec3 {
   

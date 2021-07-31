@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTensorFlowVersionsResponse extends StObject {
   
   /** The next page token or empty if none. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The listed nodes. */
-  var tensorflowVersions: js.UndefOr[js.Array[TensorFlowVersion]] = js.native
+  var tensorflowVersions: js.UndefOr[js.Array[TensorFlowVersion]] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListTensorFlowVersionsResponse {
   

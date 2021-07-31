@@ -2,69 +2,67 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data describing the type and additional information of an action.
   */
-@js.native
 trait SchemaActionDetail extends StObject {
   
   /**
     * A change about comments was made.
     */
-  var comment: js.UndefOr[SchemaComment] = js.native
+  var comment: js.UndefOr[SchemaComment] = js.undefined
   
   /**
     * An object was created.
     */
-  var create: js.UndefOr[SchemaCreate] = js.native
+  var create: js.UndefOr[SchemaCreate] = js.undefined
   
   /**
     * An object was deleted.
     */
-  var delete: js.UndefOr[SchemaDelete] = js.native
+  var delete: js.UndefOr[SchemaDelete] = js.undefined
   
   /**
     * A change happened in data leak prevention status.
     */
-  var dlpChange: js.UndefOr[SchemaDataLeakPreventionChange] = js.native
+  var dlpChange: js.UndefOr[SchemaDataLeakPreventionChange] = js.undefined
   
   /**
     * An object was edited.
     */
-  var edit: js.UndefOr[SchemaEdit] = js.native
+  var edit: js.UndefOr[SchemaEdit] = js.undefined
   
   /**
     * An object was moved.
     */
-  var move: js.UndefOr[SchemaMove] = js.native
+  var move: js.UndefOr[SchemaMove] = js.undefined
   
   /**
     * The permission on an object was changed.
     */
-  var permissionChange: js.UndefOr[SchemaPermissionChange] = js.native
+  var permissionChange: js.UndefOr[SchemaPermissionChange] = js.undefined
   
   /**
     * An object was referenced in an application outside of Drive/Docs.
     */
-  var reference: js.UndefOr[SchemaApplicationReference] = js.native
+  var reference: js.UndefOr[SchemaApplicationReference] = js.undefined
   
   /**
     * An object was renamed.
     */
-  var rename: js.UndefOr[SchemaRename] = js.native
+  var rename: js.UndefOr[SchemaRename] = js.undefined
   
   /**
     * A deleted object was restored.
     */
-  var restore: js.UndefOr[SchemaRestore] = js.native
+  var restore: js.UndefOr[SchemaRestore] = js.undefined
   
   /**
     * Settings were changed.
     */
-  var settingsChange: js.UndefOr[SchemaSettingsChange] = js.native
+  var settingsChange: js.UndefOr[SchemaSettingsChange] = js.undefined
 }
 object SchemaActionDetail {
   

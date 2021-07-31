@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.model
 import typings.openui5.anon.TypeofFilterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeBinding extends Binding {
+trait TreeBinding
+  extends StObject
+     with Binding {
   
   /**
     * Attach event-handler <code>fnFunction</code> to the '_filter' event of this
@@ -49,8 +50,8 @@ trait TreeBinding extends Binding {
     * @param iLength determines how many contexts to retrieve beginning from the start index.
     * @returns the array of child contexts for the given node
     */
-  def getNodeContexts(oContext: js.Any, iStartIndex: Double, iLength: Double): js.Array[_] = js.native
-  def getNodeContexts(oContext: js.Any, iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[_] = js.native
+  def getNodeContexts(oContext: js.Any, iStartIndex: Double, iLength: Double): js.Array[js.Any] = js.native
+  def getNodeContexts(oContext: js.Any, iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[js.Any] = js.native
   
   /**
     * Returns the current value of the bound target
@@ -58,7 +59,7 @@ trait TreeBinding extends Binding {
     * @param iLength determines how many contexts to retrieve beginning from the start index.
     * @returns the array of child contexts for the root node
     */
-  def getRootContexts(iStartIndex: Double, iLength: Double): js.Array[_] = js.native
+  def getRootContexts(iStartIndex: Double, iLength: Double): js.Array[js.Any] = js.native
   
   /**
     * Returns if the node has child nodes

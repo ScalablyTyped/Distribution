@@ -2,39 +2,39 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Icon extends Overlay {
+trait Icon
+  extends StObject
+     with Overlay {
   
-  var anchor: Size = js.native
+  var anchor: Size
   
-  var imageOffset: Size = js.native
+  var imageOffset: Size
   
-  var imageSize: Size = js.native
+  var imageSize: Size
   
-  var imageUrl: Size = js.native
+  var imageUrl: Size
   
-  var infoWindowAnchor: Size = js.native
+  var infoWindowAnchor: Size
   
-  var printImageUrl: String = js.native
+  var printImageUrl: String
   
-  def setAnchor(anchor: Size): Unit = js.native
+  def setAnchor(anchor: Size): Unit
   
-  def setImageOffset(offset: Size): Unit = js.native
+  def setImageOffset(offset: Size): Unit
   
-  def setImageSize(offset: Size): Unit = js.native
+  def setImageSize(offset: Size): Unit
   
-  def setImageUrl(imageUrl: String): Unit = js.native
+  def setImageUrl(imageUrl: String): Unit
   
-  def setInfoWindowAnchor(anchor: Size): Unit = js.native
+  def setInfoWindowAnchor(anchor: Size): Unit
   
-  def setPrintImageUrl(url: String): Unit = js.native
+  def setPrintImageUrl(url: String): Unit
   
-  def setSize(size: Size): Unit = js.native
+  def setSize(size: Size): Unit
   
-  var size: Size = js.native
+  var size: Size
 }
 object Icon {
   

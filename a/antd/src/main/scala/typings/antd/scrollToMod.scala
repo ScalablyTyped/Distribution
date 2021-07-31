@@ -5,29 +5,29 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollToMod {
   
-  @JSImport("antd/lib/_util/scrollTo", JSImport.Default)
+  @JSImport("antd/lib/_util/scrollTo", JSImport.Namespace)
   @js.native
-  def default(y: Double): Unit = js.native
-  @JSImport("antd/lib/_util/scrollTo", JSImport.Default)
-  @js.native
-  def default(y: Double, options: ScrollToOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(y: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(y.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(y: Double, options: ScrollToOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(y.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait ScrollToOptions extends StObject {
     
     /** Scroll end callback */
-    var callback: js.UndefOr[js.Function0[_]] = js.native
+    var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** Animation duration, default as 450 */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /** Scroll container, default as window */
-    var getContainer: js.UndefOr[js.Function0[HTMLElement | Window | Document]] = js.native
+    var getContainer: js.UndefOr[js.Function0[HTMLElement | Window | Document]] = js.undefined
   }
   object ScrollToOptions {
     
@@ -41,7 +41,7 @@ object scrollToMod {
     implicit class ScrollToOptionsMutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
       @scala.inline
       def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingPunching extends StObject {
   
-  var `punching-locations`: js.UndefOr[js.Array[Double]] = js.native
+  var `punching-locations`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `punching-offset`: js.UndefOr[Double] = js.native
+  var `punching-offset`: js.UndefOr[Double] = js.undefined
   
-  var `punching-reference-edge`: js.UndefOr[ReferenceEdge] = js.native
+  var `punching-reference-edge`: js.UndefOr[ReferenceEdge] = js.undefined
 }
 object FinishingPunching {
   

@@ -3,37 +3,35 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoWindowOptions extends StObject {
   
-  var anchorColor: js.UndefOr[String] = js.native
+  var anchorColor: js.UndefOr[String] = js.undefined
   
-  var anchorSize: js.UndefOr[Size | SizeLiteral] = js.native
+  var anchorSize: js.UndefOr[Size | SizeLiteral] = js.undefined
   
-  var anchorSkew: js.UndefOr[Boolean] = js.native
+  var anchorSkew: js.UndefOr[Boolean] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var content: String | HTMLElement = js.native
+  var content: String | HTMLElement
   
-  var disableAnchor: js.UndefOr[Boolean] = js.native
+  var disableAnchor: js.UndefOr[Boolean] = js.undefined
   
-  var disableAutoPan: js.UndefOr[Boolean] = js.native
+  var disableAutoPan: js.UndefOr[Boolean] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var pixelOffset: js.UndefOr[Point | PointLiteral] = js.native
+  var pixelOffset: js.UndefOr[Point | PointLiteral] = js.undefined
   
-  var position: js.UndefOr[Coord | CoordLiteral] = js.native
+  var position: js.UndefOr[Coord | CoordLiteral] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object InfoWindowOptions {
   

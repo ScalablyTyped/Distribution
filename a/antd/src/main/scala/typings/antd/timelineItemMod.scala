@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineItemMod extends Shortcut {
@@ -15,10 +14,11 @@ object timelineItemMod extends Shortcut {
   @js.native
   val default: FC[TimelineItemProps] = js.native
   
-  @js.native
-  trait TimeLineItemProps_ extends TimelineItemProps {
+  trait TimeLineItemProps_
+    extends StObject
+       with TimelineItemProps {
     
-    var __deprecated_do_not_use_it__ : js.UndefOr[js.Any] = js.native
+    var __deprecated_do_not_use_it__ : js.UndefOr[js.Any] = js.undefined
   }
   object TimeLineItemProps_ {
     
@@ -39,24 +39,23 @@ object timelineItemMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TimelineItemProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var dot: js.UndefOr[ReactNode] = js.native
+    var dot: js.UndefOr[ReactNode] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var pending: js.UndefOr[Boolean] = js.native
+    var pending: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TimelineItemProps {
     

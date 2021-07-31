@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XConnectionPoint
   * @see com.sun.star.uno.XWeak
   */
-@js.native
-trait XConnectionPointContainer extends XInterface {
+trait XConnectionPointContainer
+  extends StObject
+     with XInterface {
   
   /** @returns a sequence of all outgoing types; specifies which are supported by this connectable object. */
-  val ConnectionPointTypes: SafeArray[`type`] = js.native
+  val ConnectionPointTypes: SafeArray[`type`]
   
   /**
     * creates a connection between this object and a client's sink, where the sink implements the outgoing interface specified with ID.
@@ -31,22 +31,22 @@ trait XConnectionPointContainer extends XInterface {
     * does not matter that the outgoing interface is not supported.
     * @see XConnectionPoint.advise
     */
-  def advise(aType: `type`, xListener: XInterface): Unit = js.native
+  def advise(aType: `type`, xListener: XInterface): Unit
   
   /** @returns a sequence of all outgoing types; specifies which are supported by this connectable object. */
-  def getConnectionPointTypes(): SafeArray[`type`] = js.native
+  def getConnectionPointTypes(): SafeArray[`type`]
   
   /**
     * @param aType specifies the connection point's type.
     * @returns an {@link XConnectionPoint} interface of a connection point for a specified type if that type describes a supported outgoing interface. It is NUL
     */
-  def queryConnectionPoint(aType: `type`): XConnectionPoint = js.native
+  def queryConnectionPoint(aType: `type`): XConnectionPoint
   
   /**
     * terminates a notification previously set up with advise at the container or at the suitable connection point.
     * @see XConnectionPoint.unadvise
     */
-  def unadvise(aType: `type`, xListener: XInterface): Unit = js.native
+  def unadvise(aType: `type`, xListener: XInterface): Unit
 }
 object XConnectionPointContainer {
   

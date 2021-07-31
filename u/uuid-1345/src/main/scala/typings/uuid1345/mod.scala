@@ -15,17 +15,18 @@ import typings.uuid1345.anon.`2`
 import typings.uuid1345.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("uuid-1345", "check")
+  @JSImport("uuid-1345", JSImport.Namespace)
   @js.native
-  def check(uuid: String): Format = js.native
-  @JSImport("uuid-1345", "check")
-  @js.native
-  def check(uuid: Buffer): Format = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def check(uuid: String): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(uuid.asInstanceOf[js.Any]).asInstanceOf[Format]
+  @scala.inline
+  def check(uuid: Buffer): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(uuid.asInstanceOf[js.Any]).asInstanceOf[Format]
   
   object namespace {
     
@@ -58,144 +59,100 @@ object mod {
     def x500_=(x: UUID): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x500")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("uuid-1345", "parse")
-  @js.native
-  def parse(uuid: String): Buffer = js.native
+  @scala.inline
+  def parse(uuid: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(uuid.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("uuid-1345", "stringify")
-  @js.native
-  def stringify(uuid: Buffer): String = js.native
+  @scala.inline
+  def stringify(uuid: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(uuid.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(): String = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: Encoding): String = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: EncodingMac): Buffer = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: EncodingMac, callback: BinaryCallback): Unit = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: Encoding, callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: Mac): String = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: Mac, callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: `0`): UUID = js.native
-  @JSImport("uuid-1345", "v1")
-  @js.native
-  def v1(options: `0`, callback: ObjectCallback): Unit = js.native
+  @scala.inline
+  def v1(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[String]
+  @scala.inline
+  def v1(callback: ASCIICallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def v1(options: Encoding): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v1(options: EncodingMac): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def v1(options: EncodingMac, callback: BinaryCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v1(options: Encoding, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v1(options: Mac): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v1(options: Mac, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v1(options: `0`): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  @scala.inline
+  def v1(options: `0`, callback: ObjectCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: EncodingName): Buffer = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: EncodingName, callback: BinaryCallback): Unit = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: Name): String = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: NameNamespace): UUID = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: NameNamespace, callback: ObjectCallback): Unit = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: Name, callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: Namespace): String = js.native
-  @JSImport("uuid-1345", "v3")
-  @js.native
-  def v3(options: Namespace, callback: ASCIICallback): Unit = js.native
+  @scala.inline
+  def v3(options: EncodingName): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def v3(options: EncodingName, callback: BinaryCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v3(options: Name): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v3(options: NameNamespace): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  @scala.inline
+  def v3(options: NameNamespace, callback: ObjectCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v3(options: Name, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v3(options: Namespace): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v3(options: Namespace, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v3")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(): String = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(options: `1`): String = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(options: `1`, callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(options: `2`): Buffer = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(options: `2`, callback: BinaryCallback): Unit = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(options: `3`): UUID = js.native
-  @JSImport("uuid-1345", "v4")
-  @js.native
-  def v4(options: `3`, callback: ObjectCallback): Unit = js.native
+  @scala.inline
+  def v4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[String]
+  @scala.inline
+  def v4(callback: ASCIICallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def v4(options: `1`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v4(options: `1`, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v4(options: `2`): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def v4(options: `2`, callback: BinaryCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v4(options: `3`): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  @scala.inline
+  def v4(options: `3`, callback: ObjectCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(): String = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(options: `1`): String = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(options: `1`, callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(options: `2`): Buffer = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(options: `2`, callback: BinaryCallback): Unit = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(options: `3`): UUID = js.native
-  @JSImport("uuid-1345", "v4fast")
-  @js.native
-  def v4fast(options: `3`, callback: ObjectCallback): Unit = js.native
+  @scala.inline
+  def v4fast(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")().asInstanceOf[String]
+  @scala.inline
+  def v4fast(callback: ASCIICallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def v4fast(options: `1`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v4fast(options: `1`, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v4fast(options: `2`): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def v4fast(options: `2`, callback: BinaryCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v4fast(options: `3`): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(options.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  @scala.inline
+  def v4fast(options: `3`, callback: ObjectCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v4fast")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: EncodingName): Buffer = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: EncodingName, callback: BinaryCallback): Unit = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: Name): String = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: NameNamespace): UUID = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: NameNamespace, callback: ObjectCallback): Unit = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: Name, callback: ASCIICallback): Unit = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: Namespace): String = js.native
-  @JSImport("uuid-1345", "v5")
-  @js.native
-  def v5(options: Namespace, callback: ASCIICallback): Unit = js.native
+  @scala.inline
+  def v5(options: EncodingName): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def v5(options: EncodingName, callback: BinaryCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v5(options: Name): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v5(options: NameNamespace): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  @scala.inline
+  def v5(options: NameNamespace, callback: ObjectCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v5(options: Name, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def v5(options: Namespace): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def v5(options: Namespace, callback: ASCIICallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ASCIICallback = js.Function2[/* error */ String, /* result */ String, Unit]
   
@@ -203,14 +160,13 @@ object mod {
   
   type ObjectCallback = js.Function2[/* error */ String, /* result */ UUID, Unit]
   
-  @js.native
   trait UUID extends StObject {
     
-    def toBuffer(): Buffer = js.native
+    def toBuffer(): Buffer
     
-    var variant: String = js.native
+    var variant: String
     
-    var version: String = js.native
+    var version: String
   }
   object UUID {
     

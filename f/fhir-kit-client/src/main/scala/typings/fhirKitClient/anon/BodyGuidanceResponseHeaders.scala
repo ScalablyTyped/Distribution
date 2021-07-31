@@ -3,31 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.GuidanceResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyGuidanceResponseHeaders extends StObject {
   
-  var body: GuidanceResponse = js.native
+  var body: GuidanceResponse
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.GuidanceResponse = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.GuidanceResponse
 }
 object BodyGuidanceResponseHeaders {
   
   @scala.inline
-  def apply(
-    body: GuidanceResponse,
-    id: String,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.GuidanceResponse
-  ): BodyGuidanceResponseHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: GuidanceResponse, id: String): BodyGuidanceResponseHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "GuidanceResponse")
     __obj.asInstanceOf[BodyGuidanceResponseHeaders]
   }
   

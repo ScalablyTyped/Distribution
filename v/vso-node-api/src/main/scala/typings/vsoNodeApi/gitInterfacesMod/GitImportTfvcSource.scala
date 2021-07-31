@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitImportTfvcSource extends StObject {
   
   /**
     * Set true to import History, false otherwise
     */
-  var importHistory: Boolean = js.native
+  var importHistory: Boolean
   
   /**
     * Get history for last n days (max allowed value is 180 days)
     */
-  var importHistoryDurationInDays: Double = js.native
+  var importHistoryDurationInDays: Double
   
   /**
     * Path which we want to import (this can be copied from Path Control in Explorer)
     */
-  var path: String = js.native
+  var path: String
 }
 object GitImportTfvcSource {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectConnectGateway extends StObject {
   
   /**
     * The autonomous system number (ASN) for the Amazon side of the connection.
     */
-  var amazonSideAsn: js.UndefOr[LongAsn] = js.native
+  var amazonSideAsn: js.UndefOr[LongAsn] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.native
+  var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
     * The name of the Direct Connect gateway.
     */
-  var directConnectGatewayName: js.UndefOr[DirectConnectGatewayName] = js.native
+  var directConnectGatewayName: js.UndefOr[DirectConnectGatewayName] = js.undefined
   
   /**
     * The state of the Direct Connect gateway. The following are the possible values:    pending: The initial state after calling CreateDirectConnectGateway.    available: The Direct Connect gateway is ready for use.    deleting: The initial state after calling DeleteDirectConnectGateway.    deleted: The Direct Connect gateway is deleted and cannot pass traffic.  
     */
-  var directConnectGatewayState: js.UndefOr[DirectConnectGatewayState] = js.native
+  var directConnectGatewayState: js.UndefOr[DirectConnectGatewayState] = js.undefined
   
   /**
     * The ID of the AWS account that owns the Direct Connect gateway.
     */
-  var ownerAccount: js.UndefOr[OwnerAccount] = js.native
+  var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
     * The error message if the state of an object failed to advance.
     */
-  var stateChangeError: js.UndefOr[StateChangeError] = js.native
+  var stateChangeError: js.UndefOr[StateChangeError] = js.undefined
 }
 object DirectConnectGateway {
   

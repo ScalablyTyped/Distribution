@@ -2,22 +2,20 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoldableProps extends StObject {
   
   /** @see defineHold */
-  var config: js.UndefOr[HoldableConfig] = js.native
+  var config: js.UndefOr[HoldableConfig] = js.undefined
   
-  var onHoldComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHoldComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onHoldProgress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHoldProgress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMouseDown: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object HoldableProps {
   

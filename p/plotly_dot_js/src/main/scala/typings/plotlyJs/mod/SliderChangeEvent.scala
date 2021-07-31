@@ -2,19 +2,17 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderChangeEvent extends StObject {
   
-  var interaction: Boolean = js.native
+  var interaction: Boolean
   
-  var previousActive: Double = js.native
+  var previousActive: Double
   
-  var slider: Slider = js.native
+  var slider: Slider
   
-  var step: SliderStep = js.native
+  var step: SliderStep
 }
 object SliderChangeEvent {
   

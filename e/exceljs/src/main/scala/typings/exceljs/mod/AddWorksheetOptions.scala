@@ -6,21 +6,19 @@ import typings.exceljs.anon.PartialWorksheetPropertie
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddWorksheetOptions extends StObject {
   
-  var headerFooter: PartialHeaderFooter = js.native
+  var headerFooter: PartialHeaderFooter
   
-  var pageSetup: PartialPageSetup = js.native
+  var pageSetup: PartialPageSetup
   
-  var properties: PartialWorksheetPropertie = js.native
+  var properties: PartialWorksheetPropertie
   
-  var state: WorksheetState = js.native
+  var state: WorksheetState
   
-  var views: js.Array[Partial[WorksheetView]] = js.native
+  var views: js.Array[Partial[WorksheetView]]
 }
 object AddWorksheetOptions {
   

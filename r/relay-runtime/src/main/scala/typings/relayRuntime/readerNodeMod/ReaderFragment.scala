@@ -5,29 +5,28 @@ import typings.relayRuntime.relayConcreteNodeMod.GeneratedNode
 import typings.relayRuntime.relayModernGraphQLTagMod._GraphQLTaggedNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReaderFragment
-  extends GeneratedNode
+  extends StObject
+     with GeneratedNode
      with ReaderSelectableNode
      with _GraphQLTaggedNode {
   
-  val abstractKey: js.UndefOr[String | Null] = js.native
+  val abstractKey: js.UndefOr[String | Null] = js.undefined
   
-  val argumentDefinitions: js.Array[ReaderArgumentDefinition] = js.native
+  val argumentDefinitions: js.Array[ReaderArgumentDefinition]
   
-  val kind: String = js.native
+  val kind: String
   
-  val metadata: js.UndefOr[Connection | Null] = js.native
+  val metadata: js.UndefOr[Connection | Null] = js.undefined
   
   // 'Fragment';
-  val name: String = js.native
+  val name: String
   
-  val selections: js.Array[ReaderSelection] = js.native
+  val selections: js.Array[ReaderSelection]
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object ReaderFragment {
   

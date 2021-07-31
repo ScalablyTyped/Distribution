@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait Orientation extends StObject
 object Orientation extends StObject {
   
   @js.native
-  sealed trait HORIZONTAL extends Orientation
+  sealed trait HORIZONTAL
+    extends StObject
+       with Orientation
   
   @js.native
-  sealed trait VERTICAL extends Orientation
+  sealed trait VERTICAL
+    extends StObject
+       with Orientation
 }

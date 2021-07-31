@@ -12,7 +12,7 @@ Load configs with ease
 | Keywords           | config, environment, overload, default |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 204986 |
+| # downloads        | 130362 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,16 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Directory extends Entity {
+trait Directory
+  extends StObject
+     with Entity {
   
-  var administrativeUnits: js.UndefOr[NullableOption[js.Array[AdministrativeUnit]]] = js.native
+  var administrativeUnits: js.UndefOr[NullableOption[js.Array[AdministrativeUnit]]] = js.undefined
   
   // Recently deleted items. Read-only. Nullable.
-  var deletedItems: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var deletedItems: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
 }
 object Directory {
   

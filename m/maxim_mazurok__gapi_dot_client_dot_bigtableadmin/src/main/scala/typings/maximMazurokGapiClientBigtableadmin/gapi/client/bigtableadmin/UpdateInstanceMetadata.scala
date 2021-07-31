@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInstanceMetadata extends StObject {
   
   /** The time at which the operation failed or was completed successfully. */
-  var finishTime: js.UndefOr[String] = js.native
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /** The request that prompted the initiation of this UpdateInstance operation. */
-  var originalRequest: js.UndefOr[PartialUpdateInstanceRequest] = js.native
+  var originalRequest: js.UndefOr[PartialUpdateInstanceRequest] = js.undefined
   
   /** The time at which the original request was received. */
-  var requestTime: js.UndefOr[String] = js.native
+  var requestTime: js.UndefOr[String] = js.undefined
 }
 object UpdateInstanceMetadata {
   

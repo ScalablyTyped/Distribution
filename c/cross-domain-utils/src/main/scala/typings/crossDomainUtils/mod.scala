@@ -14,10 +14,13 @@ import typings.std.HTMLElement
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cross-domain-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object PROTOCOL {
     
@@ -71,280 +74,208 @@ object mod {
     def POPUP_=(x: popup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POPUP")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("cross-domain-utils", "assertSameDomain")
-  @js.native
-  def assertSameDomain(win: CrossDomainWindowType): SameDomainWindowType = js.native
-  @JSImport("cross-domain-utils", "assertSameDomain")
-  @js.native
-  def assertSameDomain(win: SameDomainWindowType): SameDomainWindowType = js.native
+  @scala.inline
+  def assertSameDomain(win: CrossDomainWindowType): SameDomainWindowType = ^.asInstanceOf[js.Dynamic].applyDynamic("assertSameDomain")(win.asInstanceOf[js.Any]).asInstanceOf[SameDomainWindowType]
+  @scala.inline
+  def assertSameDomain(win: SameDomainWindowType): SameDomainWindowType = ^.asInstanceOf[js.Dynamic].applyDynamic("assertSameDomain")(win.asInstanceOf[js.Any]).asInstanceOf[SameDomainWindowType]
   
-  @JSImport("cross-domain-utils", "canReadFromWindow")
-  @js.native
-  def canReadFromWindow(win: CrossDomainWindowType): Boolean = js.native
-  @JSImport("cross-domain-utils", "canReadFromWindow")
-  @js.native
-  def canReadFromWindow(win: SameDomainWindowType): Boolean = js.native
+  @scala.inline
+  def canReadFromWindow(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFromWindow")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def canReadFromWindow(win: SameDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFromWindow")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "closeWindow")
-  @js.native
-  def closeWindow(win: CrossDomainWindowType): Unit = js.native
+  @scala.inline
+  def closeWindow(win: CrossDomainWindowType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeWindow")(win.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("cross-domain-utils", "findChildFrameByName")
-  @js.native
-  def findChildFrameByName(win: CrossDomainWindowType, name: String): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def findChildFrameByName(win: CrossDomainWindowType, name: String): js.UndefOr[CrossDomainWindowType] = (^.asInstanceOf[js.Dynamic].applyDynamic("findChildFrameByName")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "findFrameByName")
-  @js.native
-  def findFrameByName(win: CrossDomainWindowType, name: String): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def findFrameByName(win: CrossDomainWindowType, name: String): js.UndefOr[CrossDomainWindowType] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrameByName")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getActualDomain")
-  @js.native
-  def getActualDomain(): String = js.native
-  @JSImport("cross-domain-utils", "getActualDomain")
-  @js.native
-  def getActualDomain(win: SameDomainWindowType): String = js.native
+  @scala.inline
+  def getActualDomain(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getActualDomain")().asInstanceOf[String]
+  @scala.inline
+  def getActualDomain(win: SameDomainWindowType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getActualDomain")(win.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cross-domain-utils", "getAllChildFrames")
-  @js.native
-  def getAllChildFrames(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getAllChildFrames(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllChildFrames")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getAllFramesInWindow")
-  @js.native
-  def getAllFramesInWindow(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getAllFramesInWindow(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllFramesInWindow")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getAllWindows")
-  @js.native
-  def getAllWindows(): js.Array[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getAllWindows")
-  @js.native
-  def getAllWindows(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getAllWindows(): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWindows")().asInstanceOf[js.Array[CrossDomainWindowType]]
+  @scala.inline
+  def getAllWindows(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllWindows")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getAncestor")
-  @js.native
-  def getAncestor(): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getAncestor")
-  @js.native
-  def getAncestor(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getAncestor(): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAncestor")().asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getAncestor(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAncestor")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getAncestors")
-  @js.native
-  def getAncestors(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getAncestors(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAncestors")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getDistanceFromTop")
-  @js.native
-  def getDistanceFromTop(win: CrossDomainWindowType): Double = js.native
+  @scala.inline
+  def getDistanceFromTop(win: CrossDomainWindowType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceFromTop")(win.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("cross-domain-utils", "getDomain")
-  @js.native
-  def getDomain(): String = js.native
-  @JSImport("cross-domain-utils", "getDomain")
-  @js.native
-  def getDomain(win: SameDomainWindowType): String = js.native
+  @scala.inline
+  def getDomain(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")().asInstanceOf[String]
+  @scala.inline
+  def getDomain(win: SameDomainWindowType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(win.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cross-domain-utils", "getDomainFromUrl")
-  @js.native
-  def getDomainFromUrl(url: String): String = js.native
+  @scala.inline
+  def getDomainFromUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainFromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cross-domain-utils", "getFrameByName")
-  @js.native
-  def getFrameByName(win: CrossDomainWindowType, name: String): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getFrameByName(win: CrossDomainWindowType, name: String): js.UndefOr[CrossDomainWindowType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFrameByName")(win.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getFrameForWindow")
-  @js.native
-  def getFrameForWindow(win: CrossDomainWindowType): js.UndefOr[HTMLElement] = js.native
+  @scala.inline
+  def getFrameForWindow(win: CrossDomainWindowType): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameForWindow")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement]]
   
-  @JSImport("cross-domain-utils", "getFrames")
-  @js.native
-  def getFrames(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getFrames(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrames")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getNextOpener")
-  @js.native
-  def getNextOpener(): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getNextOpener")
-  @js.native
-  def getNextOpener(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getNextOpener(): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextOpener")().asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getNextOpener(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextOpener")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getNthParent")
-  @js.native
-  def getNthParent(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getNthParent")
-  @js.native
-  def getNthParent(win: CrossDomainWindowType, n: Double): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getNthParent(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNthParent")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getNthParent(win: CrossDomainWindowType, n: Double): js.UndefOr[CrossDomainWindowType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNthParent")(win.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getNthParentFromTop")
-  @js.native
-  def getNthParentFromTop(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getNthParentFromTop")
-  @js.native
-  def getNthParentFromTop(win: CrossDomainWindowType, n: Double): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getNthParentFromTop(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNthParentFromTop")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getNthParentFromTop(win: CrossDomainWindowType, n: Double): js.UndefOr[CrossDomainWindowType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNthParentFromTop")(win.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getOpener")
-  @js.native
-  def getOpener(): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getOpener")
-  @js.native
-  def getOpener(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getOpener(): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpener")().asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getOpener(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpener")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getParent")
-  @js.native
-  def getParent(): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getParent")
-  @js.native
-  def getParent(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getParent(): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")().asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getParent(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getParents")
-  @js.native
-  def getParents(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getParents(win: CrossDomainWindowType): js.Array[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParents")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getTop")
-  @js.native
-  def getTop(): js.UndefOr[CrossDomainWindowType] = js.native
-  @JSImport("cross-domain-utils", "getTop")
-  @js.native
-  def getTop(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = js.native
+  @scala.inline
+  def getTop(): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.UndefOr[CrossDomainWindowType]]
+  @scala.inline
+  def getTop(win: CrossDomainWindowType): js.UndefOr[CrossDomainWindowType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")(win.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CrossDomainWindowType]]
   
-  @JSImport("cross-domain-utils", "getUltimateTop")
-  @js.native
-  def getUltimateTop(): CrossDomainWindowType = js.native
-  @JSImport("cross-domain-utils", "getUltimateTop")
-  @js.native
-  def getUltimateTop(win: CrossDomainWindowType): CrossDomainWindowType = js.native
+  @scala.inline
+  def getUltimateTop(): CrossDomainWindowType = ^.asInstanceOf[js.Dynamic].applyDynamic("getUltimateTop")().asInstanceOf[CrossDomainWindowType]
+  @scala.inline
+  def getUltimateTop(win: CrossDomainWindowType): CrossDomainWindowType = ^.asInstanceOf[js.Dynamic].applyDynamic("getUltimateTop")(win.asInstanceOf[js.Any]).asInstanceOf[CrossDomainWindowType]
   
-  @JSImport("cross-domain-utils", "getUserAgent")
-  @js.native
-  def getUserAgent(win: SameDomainWindowType): String = js.native
+  @scala.inline
+  def getUserAgent(win: SameDomainWindowType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserAgent")(win.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cross-domain-utils", "isAboutProtocol")
-  @js.native
-  def isAboutProtocol(win: SameDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isAboutProtocol(win: SameDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAboutProtocol")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isActuallySameDomain")
-  @js.native
-  def isActuallySameDomain(win: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isActuallySameDomain(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActuallySameDomain")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isAncestor")
-  @js.native
-  def isAncestor(parent: CrossDomainWindowType, child: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isAncestor(parent: CrossDomainWindowType, child: CrossDomainWindowType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isAncestorParent")
-  @js.native
-  def isAncestorParent(parent: CrossDomainWindowType, child: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isAncestorParent(parent: CrossDomainWindowType, child: CrossDomainWindowType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAncestorParent")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isBlankDomain")
-  @js.native
-  def isBlankDomain(win: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isBlankDomain(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankDomain")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isBrowser")
-  @js.native
-  def isBrowser(): Boolean = js.native
+  @scala.inline
+  def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isCurrentDomain")
-  @js.native
-  def isCurrentDomain(domain: String): Boolean = js.native
+  @scala.inline
+  def isCurrentDomain(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCurrentDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isFileProtocol")
-  @js.native
-  def isFileProtocol(win: SameDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isFileProtocol(win: SameDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFileProtocol")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isFrameWindowClosed")
-  @js.native
-  def isFrameWindowClosed(frame: HTMLIFrameElement): Boolean = js.native
+  @scala.inline
+  def isFrameWindowClosed(frame: HTMLIFrameElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFrameWindowClosed")(frame.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isFullpage")
-  @js.native
-  def isFullpage(): Boolean = js.native
-  @JSImport("cross-domain-utils", "isFullpage")
-  @js.native
-  def isFullpage(win: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isFullpage(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullpage")().asInstanceOf[Boolean]
+  @scala.inline
+  def isFullpage(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullpage")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isIframe")
-  @js.native
-  def isIframe(): Boolean = js.native
-  @JSImport("cross-domain-utils", "isIframe")
-  @js.native
-  def isIframe(win: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isIframe(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIframe")().asInstanceOf[Boolean]
+  @scala.inline
+  def isIframe(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIframe")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isMockDomain")
-  @js.native
-  def isMockDomain(domain: String): Boolean = js.native
+  @scala.inline
+  def isMockDomain(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMockDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isOpener")
-  @js.native
-  def isOpener(parent: CrossDomainWindowType, child: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isOpener(parent: CrossDomainWindowType, child: CrossDomainWindowType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOpener")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isParent")
-  @js.native
-  def isParent(win: CrossDomainWindowType, frame: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isParent(win: CrossDomainWindowType, frame: CrossDomainWindowType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isParent")(win.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isPopup")
-  @js.native
-  def isPopup(): Boolean = js.native
-  @JSImport("cross-domain-utils", "isPopup")
-  @js.native
-  def isPopup(win: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isPopup(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPopup")().asInstanceOf[Boolean]
+  @scala.inline
+  def isPopup(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPopup")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isSameDomain")
-  @js.native
-  def isSameDomain(win: CrossDomainWindowType): Boolean = js.native
-  @JSImport("cross-domain-utils", "isSameDomain")
-  @js.native
-  def isSameDomain(win: SameDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isSameDomain(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameDomain")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isSameDomain(win: SameDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSameDomain")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isSameTopWindow")
-  @js.native
-  def isSameTopWindow(win1: CrossDomainWindowType, win2: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isSameTopWindow(win1: CrossDomainWindowType, win2: CrossDomainWindowType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameTopWindow")(win1.asInstanceOf[js.Any], win2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isTop")
-  @js.native
-  def isTop(win: CrossDomainWindowType): Boolean = js.native
+  @scala.inline
+  def isTop(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTop")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isWindow")
-  @js.native
-  def isWindow(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isWindow(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindow")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "isWindowClosed")
-  @js.native
-  def isWindowClosed(win: CrossDomainWindowType): Boolean = js.native
-  @JSImport("cross-domain-utils", "isWindowClosed")
-  @js.native
-  def isWindowClosed(win: CrossDomainWindowType, allowMock: Boolean): Boolean = js.native
+  @scala.inline
+  def isWindowClosed(win: CrossDomainWindowType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWindowClosed")(win.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isWindowClosed(win: CrossDomainWindowType, allowMock: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWindowClosed")(win.asInstanceOf[js.Any], allowMock.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "linkFrameWindow")
-  @js.native
-  def linkFrameWindow(frame: HTMLIFrameElement): Unit = js.native
+  @scala.inline
+  def linkFrameWindow(frame: HTMLIFrameElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("linkFrameWindow")(frame.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("cross-domain-utils", "matchDomain")
-  @js.native
-  def matchDomain(pattern: DomainMatcher, origin: DomainMatcher): Boolean = js.native
+  @scala.inline
+  def matchDomain(pattern: DomainMatcher, origin: DomainMatcher): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchDomain")(pattern.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cross-domain-utils", "normalizeMockUrl")
-  @js.native
-  def normalizeMockUrl(url: String): String = js.native
+  @scala.inline
+  def normalizeMockUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeMockUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cross-domain-utils", "onCloseWindow")
-  @js.native
-  def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ js.Any, _]): Cancel = js.native
-  @JSImport("cross-domain-utils", "onCloseWindow")
-  @js.native
+  @scala.inline
+  def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ js.Any, js.Any]): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  @scala.inline
+  def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ js.Any, js.Any], delay: Double): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  @scala.inline
   def onCloseWindow(
     win: CrossDomainWindowType,
-    callback: js.Function1[/* repeated */ js.Any, _],
-    delay: js.UndefOr[scala.Nothing],
-    maxtime: Double
-  ): Cancel = js.native
-  @JSImport("cross-domain-utils", "onCloseWindow")
-  @js.native
-  def onCloseWindow(win: CrossDomainWindowType, callback: js.Function1[/* repeated */ js.Any, _], delay: Double): Cancel = js.native
-  @JSImport("cross-domain-utils", "onCloseWindow")
-  @js.native
-  def onCloseWindow(
-    win: CrossDomainWindowType,
-    callback: js.Function1[/* repeated */ js.Any, _],
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
     delay: Double,
     maxtime: Double
-  ): Cancel = js.native
+  ): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], maxtime.asInstanceOf[js.Any])).asInstanceOf[Cancel]
+  @scala.inline
+  def onCloseWindow(
+    win: CrossDomainWindowType,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    delay: Unit,
+    maxtime: Double
+  ): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("onCloseWindow")(win.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], maxtime.asInstanceOf[js.Any])).asInstanceOf[Cancel]
   
-  @JSImport("cross-domain-utils", "stringifyDomainPattern")
-  @js.native
-  def stringifyDomainPattern(pattern: DomainMatcher): String = js.native
+  @scala.inline
+  def stringifyDomainPattern(pattern: DomainMatcher): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyDomainPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
 }

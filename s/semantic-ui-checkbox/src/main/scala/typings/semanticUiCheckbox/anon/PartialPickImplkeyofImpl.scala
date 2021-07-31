@@ -8,60 +8,58 @@ import typings.semanticUiCheckbox.semanticUiCheckboxStrings.auto
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, keyof semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var beforeChecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.native
+  var beforeChecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.undefined
   
-  var beforeDeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.native
+  var beforeDeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.undefined
   
-  var beforeIndeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.native
+  var beforeIndeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.undefined
   
-  var beforeUnchecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.native
+  var beforeUnchecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit | `false`]] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fireOnInit: js.UndefOr[Boolean] = js.native
+  var fireOnInit: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onChange: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onChecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onChecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onDeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onDeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onDisable: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onDisable: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onDisabled: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onDisabled: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onEnable: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onEnable: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onEnabled: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onEnabled: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onIndeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onIndeterminate: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var onUnchecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.native
+  var onUnchecked: js.UndefOr[js.ThisFunction0[/* this */ HTMLInputElement, Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var uncheckable: js.UndefOr[auto | Boolean] = js.native
+  var uncheckable: js.UndefOr[auto | Boolean] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

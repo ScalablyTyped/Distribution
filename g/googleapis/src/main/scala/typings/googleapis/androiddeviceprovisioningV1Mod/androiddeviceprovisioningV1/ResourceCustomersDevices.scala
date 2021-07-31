@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androiddeviceprovisioning/v1", "androiddeviceprovisioning_v1.Resource$Customers$Devices")
@@ -32,7 +31,7 @@ class ResourceCustomersDevices protected () extends StObject {
     */
   def applyConfiguration(): GaxiosPromise[SchemaEmpty] = js.native
   def applyConfiguration(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def applyConfiguration(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def applyConfiguration(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def applyConfiguration(params: ParamsResourceCustomersDevicesApplyconfiguration): GaxiosPromise[SchemaEmpty] = js.native
   def applyConfiguration(
     params: ParamsResourceCustomersDevicesApplyconfiguration,
@@ -66,7 +65,7 @@ class ResourceCustomersDevices protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDevice] = js.native
   def get(callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourceCustomersDevicesGet): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourceCustomersDevicesGet, callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
   def get(
@@ -97,7 +96,7 @@ class ResourceCustomersDevices protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCustomerListDevicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomerListDevicesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomerListDevicesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomerListDevicesResponse] = js.native
   def list(params: ParamsResourceCustomersDevicesList): GaxiosPromise[SchemaCustomerListDevicesResponse] = js.native
   def list(
     params: ParamsResourceCustomersDevicesList,
@@ -130,7 +129,7 @@ class ResourceCustomersDevices protected () extends StObject {
     */
   def removeConfiguration(): GaxiosPromise[SchemaEmpty] = js.native
   def removeConfiguration(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def removeConfiguration(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def removeConfiguration(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def removeConfiguration(params: ParamsResourceCustomersDevicesRemoveconfiguration): GaxiosPromise[SchemaEmpty] = js.native
   def removeConfiguration(
     params: ParamsResourceCustomersDevicesRemoveconfiguration,
@@ -165,7 +164,7 @@ class ResourceCustomersDevices protected () extends StObject {
     */
   def unclaim(): GaxiosPromise[SchemaEmpty] = js.native
   def unclaim(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def unclaim(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def unclaim(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def unclaim(params: ParamsResourceCustomersDevicesUnclaim): GaxiosPromise[SchemaEmpty] = js.native
   def unclaim(params: ParamsResourceCustomersDevicesUnclaim, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def unclaim(

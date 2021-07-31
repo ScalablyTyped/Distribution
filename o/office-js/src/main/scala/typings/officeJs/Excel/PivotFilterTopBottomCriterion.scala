@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,23 +17,37 @@ sealed trait PivotFilterTopBottomCriterion extends StObject
 object PivotFilterTopBottomCriterion extends StObject {
   
   @js.native
-  sealed trait bottomItems extends PivotFilterTopBottomCriterion
+  sealed trait bottomItems
+    extends StObject
+       with PivotFilterTopBottomCriterion
   
   @js.native
-  sealed trait bottomPercent extends PivotFilterTopBottomCriterion
+  sealed trait bottomPercent
+    extends StObject
+       with PivotFilterTopBottomCriterion
   
   @js.native
-  sealed trait bottomSum extends PivotFilterTopBottomCriterion
+  sealed trait bottomSum
+    extends StObject
+       with PivotFilterTopBottomCriterion
   
   @js.native
-  sealed trait invalid extends PivotFilterTopBottomCriterion
+  sealed trait invalid
+    extends StObject
+       with PivotFilterTopBottomCriterion
   
   @js.native
-  sealed trait topItems extends PivotFilterTopBottomCriterion
+  sealed trait topItems
+    extends StObject
+       with PivotFilterTopBottomCriterion
   
   @js.native
-  sealed trait topPercent extends PivotFilterTopBottomCriterion
+  sealed trait topPercent
+    extends StObject
+       with PivotFilterTopBottomCriterion
   
   @js.native
-  sealed trait topSum extends PivotFilterTopBottomCriterion
+  sealed trait topSum
+    extends StObject
+       with PivotFilterTopBottomCriterion
 }

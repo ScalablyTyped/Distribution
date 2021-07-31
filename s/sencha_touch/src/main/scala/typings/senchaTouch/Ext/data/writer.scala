@@ -4,66 +4,65 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writer {
   
-  @js.native
   trait IJson
-    extends typings.senchaTouch.Ext.data.writer.IWriter {
+    extends StObject
+       with typings.senchaTouch.Ext.data.writer.IWriter {
     
     /** [Config Option] (Boolean) */
-    var allowSingle: js.UndefOr[Boolean] = js.native
+    var allowSingle: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var encode: js.UndefOr[Boolean] = js.native
+    var encode: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of allowSingle
       * @returns Boolean
       */
-    var getAllowSingle: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAllowSingle: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of encode
       * @returns Boolean
       */
-    var getEncode: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getEncode: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of encodeRequest
       * @returns Boolean
       */
-    var getEncodeRequest: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getEncodeRequest: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of rootProperty
       * @returns String
       */
-    var getRootProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var rootProperty: js.UndefOr[String] = js.native
+    var rootProperty: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of allowSingle
       * @param allowSingle Boolean The new value.
       */
-    var setAllowSingle: js.UndefOr[js.Function1[/* allowSingle */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAllowSingle: js.UndefOr[js.Function1[/* allowSingle */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of encode
       * @param encode Boolean The new value.
       */
-    var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[Boolean], Unit]] = js.native
+    var setEncode: js.UndefOr[js.Function1[/* encode */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of encodeRequest
       * @param encodeRequest Boolean The new value.
       */
-    var setEncodeRequest: js.UndefOr[js.Function1[/* encodeRequest */ js.UndefOr[Boolean], Unit]] = js.native
+    var setEncodeRequest: js.UndefOr[js.Function1[/* encodeRequest */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of rootProperty
       * @param rootProperty String The new value.
       */
-    var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.native
+    var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IJson {
     
@@ -150,46 +149,47 @@ object writer {
     }
   }
   
-  @js.native
-  trait IWriter extends IBase {
+  trait IWriter
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of nameProperty
       * @returns String
       */
-    var getNameProperty: js.UndefOr[js.Function0[String]] = js.native
+    var getNameProperty: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Formats the data for each record before sending it to the server
       * @param record Object The record that we are writing to the server.
       * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
       */
-    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], _]] = js.native
+    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Returns the value of writeAllFields
       * @returns Boolean
       */
-    var getWriteAllFields: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getWriteAllFields: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var nameProperty: js.UndefOr[String] = js.native
+    var nameProperty: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of nameProperty
       * @param nameProperty String The new value.
       */
-    var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[String], Unit]] = js.native
+    var setNameProperty: js.UndefOr[js.Function1[/* nameProperty */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of writeAllFields
       * @param writeAllFields Boolean The new value.
       */
-    var setWriteAllFields: js.UndefOr[js.Function1[/* writeAllFields */ js.UndefOr[Boolean], Unit]] = js.native
+    var setWriteAllFields: js.UndefOr[js.Function1[/* writeAllFields */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Prepares a Proxy s Ext data Request object
       * @param request Ext.data.Request The request object.
       * @returns Ext.data.Request The modified request object.
       */
-    var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.native
+    var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var writeAllFields: js.UndefOr[Boolean] = js.native
+    var writeAllFields: js.UndefOr[Boolean] = js.undefined
   }
   object IWriter {
     
@@ -209,7 +209,7 @@ object writer {
       def setGetNamePropertyUndefined: Self = StObject.set(x, "getNameProperty", js.undefined)
       
       @scala.inline
-      def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
+      def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
@@ -252,68 +252,70 @@ object writer {
     }
   }
   
-  @js.native
   trait IXml
-    extends typings.senchaTouch.Ext.data.writer.IWriter {
+    extends StObject
+       with typings.senchaTouch.Ext.data.writer.IWriter {
     
     /** [Config Option] (String) */
-    var defaultDocumentRoot: js.UndefOr[String] = js.native
+    var defaultDocumentRoot: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var documentRoot: js.UndefOr[String] = js.native
+    var documentRoot: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of defaultDocumentRoot
       * @returns String
       */
-    var getDefaultDocumentRoot: js.UndefOr[js.Function0[String]] = js.native
+    var getDefaultDocumentRoot: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of documentRoot
       * @returns String
       */
-    var getDocumentRoot: js.UndefOr[js.Function0[String]] = js.native
+    var getDocumentRoot: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of header
       * @returns String
       */
-    var getHeader: js.UndefOr[js.Function0[String]] = js.native
+    var getHeader: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of record
       * @returns String
       */
-    var getRecord: js.UndefOr[js.Function0[String]] = js.native
+    var getRecord: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var record: js.UndefOr[String] = js.native
+    var record: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of defaultDocumentRoot
       * @param defaultDocumentRoot String The new value.
       */
-    var setDefaultDocumentRoot: js.UndefOr[js.Function1[/* defaultDocumentRoot */ js.UndefOr[String], Unit]] = js.native
+    var setDefaultDocumentRoot: js.UndefOr[js.Function1[/* defaultDocumentRoot */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of documentRoot
       * @param documentRoot String The new value.
       */
-    var setDocumentRoot: js.UndefOr[js.Function1[/* documentRoot */ js.UndefOr[String], Unit]] = js.native
+    var setDocumentRoot: js.UndefOr[js.Function1[/* documentRoot */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of header
       * @param header String The new value.
       */
-    var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[String], Unit]] = js.native
+    var setHeader: js.UndefOr[js.Function1[/* header */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of record
       * @param record String The new value.
       */
-    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.native
+    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method]
       * @param request Object
       * @param data Array
       * @returns Object
       */
-    var writeRecords: js.UndefOr[js.Function2[/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array], _]] = js.native
+    var writeRecords: js.UndefOr[
+        js.Function2[/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array], js.Any]
+      ] = js.undefined
   }
   object IXml {
     
@@ -399,7 +401,7 @@ object writer {
       def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
       
       @scala.inline
-      def setWriteRecords(value: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array]) => _): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
+      def setWriteRecords(value: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
       
       @scala.inline
       def setWriteRecordsUndefined: Self = StObject.set(x, "writeRecords", js.undefined)

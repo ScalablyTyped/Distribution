@@ -2,11 +2,9 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Paragraph object, for use in "paragraph.set({ ... })". */
-@js.native
 trait ParagraphUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ParagraphUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var image: js.UndefOr[ImageUpdateData] = js.native
+  var image: js.UndefOr[ImageUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ParagraphUpdateData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var table: js.UndefOr[TableUpdateData] = js.native
+  var table: js.UndefOr[TableUpdateData] = js.undefined
 }
 object ParagraphUpdateData {
   

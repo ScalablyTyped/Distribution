@@ -10,9 +10,9 @@ Decompress a HTTP response if needed
 | ------------------ | :-------------: |
 | Full name          | decompress-response |
 | Keywords           | decompress, response, http, https, zlib, gzip, zip, deflate, unzip, ungzip, incoming, message, stream, compressed, brotli |
-| # releases         | 7 |
-| # dependents       | 40 |
-| # downloads        | 264068113 |
+| # releases         | 5 |
+| # dependents       | 57 |
+| # downloads        | 494453773 |
 | # stars            | 1 |
 
 ## Links

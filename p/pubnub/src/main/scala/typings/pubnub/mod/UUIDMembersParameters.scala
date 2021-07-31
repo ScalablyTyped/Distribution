@@ -4,21 +4,19 @@ import typings.pubnub.anon.CustomUUIDFields
 import typings.pubnub.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UUIDMembersParameters extends StObject {
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var include: js.UndefOr[CustomUUIDFields] = js.native
+  var include: js.UndefOr[CustomUUIDFields] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var page: js.UndefOr[Next] = js.native
+  var page: js.UndefOr[Next] = js.undefined
   
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
 }
 object UUIDMembersParameters {
   

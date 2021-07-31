@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * unapproved, its group license remains. This allows enterprise admins to
   * keep track of any remaining entitlements for the product.
   */
-@js.native
 trait SchemaGroupLicense extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait SchemaGroupLicense extends StObject {
     * licenses for this product; otherwise, the value is &quot;free&quot; (for
     * free products).
     */
-  var acquisitionKind: js.UndefOr[String] = js.native
+  var acquisitionKind: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the product to which this group license relates is currently
@@ -38,19 +36,19 @@ trait SchemaGroupLicense extends StObject {
     * via Google Play. Unapproved products will not be visible to end users in
     * collections, and new entitlements to them should not normally be created.
     */
-  var approval: js.UndefOr[String] = js.native
+  var approval: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#groupLicense&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of provisioned licenses for this product. Returned by
     * read operations, but ignored in write operations.
     */
-  var numProvisioned: js.UndefOr[Double] = js.native
+  var numProvisioned: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of purchased licenses (possibly in multiple purchases). If
@@ -58,7 +56,7 @@ trait SchemaGroupLicense extends StObject {
     * that can be provisioned (for example, if the acquisition kind is
     * &quot;free&quot;).
     */
-  var numPurchased: js.UndefOr[Double] = js.native
+  var numPurchased: js.UndefOr[Double] = js.undefined
   
   /**
     * The permission approval status of the product. This field is only set if
@@ -73,13 +71,13 @@ trait SchemaGroupLicense extends StObject {
     * permissions are approved and any future permission updates will be
     * automatically approved without administrator review.
     */
-  var permissions: js.UndefOr[String] = js.native
+  var permissions: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product that the license is for. For example,
     * &quot;app:com.google.android.gm&quot;.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupLicense {
   

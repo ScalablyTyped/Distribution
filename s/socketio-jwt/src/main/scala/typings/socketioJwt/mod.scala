@@ -4,43 +4,51 @@ import typings.socketIo.mod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("socketio-jwt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("socketio-jwt", "UnauthorizedError")
   @js.native
-  class UnauthorizedError protected () extends Error {
+  class UnauthorizedError protected ()
+    extends StObject
+       with Error {
     def this(code: String, error: Error) = this()
     
     var data: JwtData = js.native
     
     var inner: Error = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @JSImport("socketio-jwt", "authorize")
-  @js.native
-  def authorize(options: JwtAuthOptions): js.Function1[/* socket */ Socket, Unit] = js.native
-  @JSImport("socketio-jwt", "authorize")
-  @js.native
-  def authorize(options: JwtAuthOptions, callback: JwtAuthorizeCallback): js.Function1[/* socket */ Socket, Unit] = js.native
+  @scala.inline
+  def authorize(options: JwtAuthOptions): js.Function1[/* socket */ Socket, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
+  @scala.inline
+  def authorize(options: JwtAuthOptions, callback: JwtAuthorizeCallback): js.Function1[/* socket */ Socket, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
   
-  @js.native
   trait JwtAuthOptions extends StObject {
     
     // In milliseconds to handle the second round trip.
-    var callback: js.UndefOr[Boolean] = js.native
+    var callback: js.UndefOr[Boolean] = js.undefined
     
     // To disconnect socket server-side without a client-side callback if no valid token.
-    var decodedPropertyName: js.UndefOr[String] = js.native
+    var decodedPropertyName: js.UndefOr[String] = js.undefined
     
     // Property to store the decoded token to.
-    var handshake: js.UndefOr[Boolean] = js.native
+    var handshake: js.UndefOr[Boolean] = js.undefined
     
-    var secret: String | JwtSecretFunc = js.native
+    var secret: String | JwtSecretFunc
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object JwtAuthOptions {
     
@@ -87,14 +95,13 @@ object mod {
   
   type JwtAuthorizeCallback = js.Function0[Unit]
   
-  @js.native
   trait JwtData extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var message: String = js.native
+    var message: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object JwtData {
     

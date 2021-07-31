@@ -3,7 +3,6 @@ package typings.lilUri
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,22 +12,23 @@ object mod {
     *
     * @param the URI string to parse.
     */
+  @scala.inline
+  def apply(): URI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URI]
+  @scala.inline
+  def apply(uri: String): URI = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[URI]
+  
   @JSImport("lil-uri", JSImport.Namespace)
   @js.native
-  def apply(): URI = js.native
-  @JSImport("lil-uri", JSImport.Namespace)
-  @js.native
-  def apply(uri: String): URI = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Credentials map
     */
-  @js.native
   trait Credentials extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var user: String = js.native
+    var user: String
   }
   object Credentials {
     
@@ -196,32 +196,31 @@ object mod {
   /**
     * URI parts
     */
-  @js.native
   trait URIParts extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var hash: String = js.native
+    var hash: String
     
-    var host: String = js.native
+    var host: String
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var password: String = js.native
+    var password: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: String = js.native
+    var port: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var query: QueryString = js.native
+    var query: QueryString
     
-    var search: String = js.native
+    var search: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var user: String = js.native
+    var user: String
   }
   object URIParts {
     

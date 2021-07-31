@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsEntity extends StObject {
   
   /**
     * The data returned by the query.
     */
-  var Data: js.UndefOr[OpsEntityItemMap] = js.native
+  var Data: js.UndefOr[OpsEntityItemMap] = js.undefined
   
   /**
     * The query ID.
     */
-  var Id: js.UndefOr[OpsEntityId] = js.native
+  var Id: js.UndefOr[OpsEntityId] = js.undefined
 }
 object OpsEntity {
   

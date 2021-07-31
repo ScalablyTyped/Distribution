@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionStorageDescriptorSortColumn extends StObject {
   
   /**
     * The name of the column.
     */
-  var column: Input[String] = js.native
+  var column: Input[String]
   
   /**
     * Indicates that the column is sorted in ascending order (== 1), or in descending order (==0).
     */
-  var sortOrder: Input[Double] = js.native
+  var sortOrder: Input[Double]
 }
 object PartitionStorageDescriptorSortColumn {
   

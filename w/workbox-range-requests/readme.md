@@ -10,9 +10,9 @@ This library creates a new Response, given a source Response and a Range header 
 | ------------------ | :-------------: |
 | Full name          | workbox-range-requests |
 | Keywords           | workbox, workboxjs, service worker, sw, caching, cache, range, media, workbox-plugin |
-| # releases         | 31 |
-| # dependents       | 4 |
-| # downloads        | 102111222 |
+| # releases         | 29 |
+| # dependents       | 7 |
+| # downloads        | 117920656 |
 | # stars            | 0 |
 
 ## Links

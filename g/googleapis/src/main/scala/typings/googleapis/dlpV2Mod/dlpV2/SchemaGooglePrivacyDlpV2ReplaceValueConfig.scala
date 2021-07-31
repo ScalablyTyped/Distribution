@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Replace each input value with a given `Value`.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ReplaceValueConfig extends StObject {
   
   /**
     * Value to replace it with.
     */
-  var newValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var newValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ReplaceValueConfig {
   

@@ -4,39 +4,37 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BootstrapDialog {
   
-  @js.native
   trait DialogButton extends StObject {
     
     /**
       * If provided, the callback will be invoked after the button is clicked, and the dialog instance
       * will be passed to the callback function.
       */
-    var action: js.UndefOr[js.Function1[/* dialog */ DialogContext, Unit]] = js.native
+    var action: js.UndefOr[js.Function1[/* dialog */ DialogContext, Unit]] = js.undefined
     
     /**  If it's true, after clicked the button a spinning icon appears. */
-    var autospin: js.UndefOr[Boolean] = js.native
+    var autospin: js.UndefOr[Boolean] = js.undefined
     
     /** Additional css class to be added to the button. */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object containing data attributes to be added to the button. */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Hotkey char code */
-    var hotkey: js.UndefOr[Double] = js.native
+    var hotkey: js.UndefOr[Double] = js.undefined
     
     /** If set, the specified icon will be added to the button. */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** If id is set, you can use dialogInstance.getButton(id) to get the button later. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
   }
   object DialogButton {
     
@@ -99,24 +97,23 @@ object BootstrapDialog {
     }
   }
   
-  @js.native
   trait DialogButtonInstance extends StObject {
     
     /** Equals to $button.toggleEnable(false); */
-    def disable(): Unit = js.native
+    def disable(): Unit
     
     /** Equals to $button.toggleEnable(true); */
-    def enable(): Unit = js.native
+    def enable(): Unit
     
     /** Equals to $button.toggleSpin(true); */
-    def spin(): Unit = js.native
+    def spin(): Unit
     
     /** Equals to $button.toggleSpin(false); */
-    def stopSpin(): Unit = js.native
+    def stopSpin(): Unit
     
-    def toggleEnable(enabled: Boolean): Unit = js.native
+    def toggleEnable(enabled: Boolean): Unit
     
-    def toggleSpin(spin: Boolean): Unit = js.native
+    def toggleSpin(spin: Boolean): Unit
   }
   object DialogButtonInstance {
     
@@ -156,64 +153,63 @@ object BootstrapDialog {
     }
   }
   
-  @js.native
   trait DialogContext extends StObject {
     
     /**      Close the dialog. Usage: dialogInstance.close() */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /** Disable all buttons in dialog footer when it's false, enable all when it's true. */
-    def enableButtons(enable: Boolean): Unit = js.native
+    def enableButtons(enable: Boolean): Unit
     
-    def getButton(buttonId: String): JQuery[HTMLElement] = js.native
+    def getButton(buttonId: String): JQuery[HTMLElement]
     
     /** Get data entry according to the given key, returns null if no data entry found. */
-    def getData(dataName: String): js.Any = js.native
+    def getData(dataName: String): js.Any
     
     /** Return the raw modal, equivalent to $('<div class='modal fade'...></div>') */
-    def getModal(): JQuery[HTMLElement] = js.native
+    def getModal(): JQuery[HTMLElement]
     
     /** Return the raw modal body. */
-    def getModalBody(): JQuery[HTMLElement] = js.native
+    def getModalBody(): JQuery[HTMLElement]
     
     /** Return the raw modal content. */
-    def getModalContent(): JQuery[HTMLElement] = js.native
+    def getModalContent(): JQuery[HTMLElement]
     
     /** Return the raw modal dialog. */
-    def getModalDialog(): JQuery[HTMLElement] = js.native
+    def getModalDialog(): JQuery[HTMLElement]
     
     /** Return the raw modal footer. */
-    def getModalFooter(): JQuery[HTMLElement] = js.native
+    def getModalFooter(): JQuery[HTMLElement]
     
     /** Return the raw modal header. */
-    def getModalHeader(): JQuery[HTMLElement] = js.native
+    def getModalHeader(): JQuery[HTMLElement]
     
-    def getTitle(): String = js.native
+    def getTitle(): String
     
     /** Open the dialog. Usage: dialogInstance.open() */
-    def open(): Unit = js.native
+    def open(): Unit
     
     /**
       * Calling dialog.open() will automatically get this method called first, but if you want to do something on your dialog
       * before it's shown, you can manually call dialog.realize() before calling dialog.open().
       */
-    def realize(): Unit = js.native
+    def realize(): Unit
     
     /**
       * When set to true (default), dialog can be closed by clicking close icon in dialog header,
       * or by clicking outside the dialog, or, ESC key is pressed.
       */
-    def setClosable(closable: Boolean): Unit = js.native
+    def setClosable(closable: Boolean): Unit
     
     /** Bind data entry to dialog instance, value can be any types that javascript supports. */
-    def setData(dataName: String, value: js.Any): Unit = js.native
+    def setData(dataName: String, value: js.Any): Unit
     
-    def setMessage(message: String): Unit = js.native
+    def setMessage(message: String): Unit
     
-    def setTitle(title: String): Unit = js.native
+    def setTitle(title: String): Unit
     
     /** See BootstrapDialog.TYPE_xxx constants. */
-    def setType(dialogType: String): Unit = js.native
+    def setType(dialogType: String): Unit
   }
   object DialogContext {
     
@@ -301,30 +297,29 @@ object BootstrapDialog {
     }
   }
   
-  @js.native
   trait DialogInstance extends StObject {
     
     @JSName("$modal")
-    var $modal: JQuery[HTMLElement] = js.native
+    var $modal: JQuery[HTMLElement]
     
     @JSName("$modalBody")
-    var $modalBody: JQuery[HTMLElement] = js.native
+    var $modalBody: JQuery[HTMLElement]
     
     @JSName("$modalContent")
-    var $modalContent: JQuery[HTMLElement] = js.native
+    var $modalContent: JQuery[HTMLElement]
     
     @JSName("$modalDialog")
-    var $modalDialog: JQuery[HTMLElement] = js.native
+    var $modalDialog: JQuery[HTMLElement]
     
     @JSName("$modalFooter")
-    var $modalFooter: JQuery[HTMLElement] = js.native
+    var $modalFooter: JQuery[HTMLElement]
     
     @JSName("$modalHeader")
-    var $modalHeader: JQuery[HTMLElement] = js.native
+    var $modalHeader: JQuery[HTMLElement]
     
-    var opened: Boolean = js.native
+    var opened: Boolean
     
-    var options: DialogOptions = js.native
+    var options: DialogOptions
   }
   object DialogInstance {
     
@@ -372,35 +367,34 @@ object BootstrapDialog {
     }
   }
   
-  @js.native
   trait DialogOptions extends StObject {
     
     /** Whether fade-out background while showing the dialog. TRUE by default. */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When it's true, all modal stuff will be removed from the DOM tree after the dialog is popped down,
       * set it to false if you need your dialog (same instance) pups up and down again and again.
       * Default is true.
       */
-    var autodestroy: js.UndefOr[Boolean] = js.native
+    var autodestroy: js.UndefOr[Boolean] = js.undefined
     
     /** 'Cancel' by default. */
-    var btnCancelLabel: js.UndefOr[String] = js.native
+    var btnCancelLabel: js.UndefOr[String] = js.undefined
     
     /** If you didn't specify it, dialog type will be used. */
-    var btnOKClass: js.UndefOr[String] = js.native
+    var btnOKClass: js.UndefOr[String] = js.undefined
     
     /** 'OK' by default. */
-    var btnOKLabel: js.UndefOr[String] = js.native
+    var btnOKLabel: js.UndefOr[String] = js.undefined
     
     /** Default button title. OK by default. */
-    var buttonLabel: js.UndefOr[String] = js.native
+    var buttonLabel: js.UndefOr[String] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[DialogButton]] = js.native
+    var buttons: js.UndefOr[js.Array[DialogButton]] = js.undefined
     
     /** Result will be true if button was click, while it will be false if users close the dialog directly. */
-    var callback: js.UndefOr[js.Function1[/* result */ Boolean, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* result */ Boolean, Unit]] = js.undefined
     
     /**
       * When set to true, you can close the dialog by:
@@ -410,66 +404,66 @@ object BootstrapDialog {
       *
       * FALSE by default.
       */
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
     /** Whether dialog will close by clicking outside of it. */
-    var closeByBackdrop: js.UndefOr[Boolean] = js.native
+    var closeByBackdrop: js.UndefOr[Boolean] = js.undefined
     
     /** Whether dialog will close by ESC. */
-    var closeByKeyboard: js.UndefOr[Boolean] = js.native
+    var closeByKeyboard: js.UndefOr[Boolean] = js.undefined
     
     /** Additional css classes that will be added to your dialog. */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Data to be bound to the dialog. */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If provided, 'aria-describedby' attribute will be added to the dialog with the description string as its value. This can improve accessibility, as the description can be read by screen
       * readers.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** Whether dialog could be dragged by its header. Cursor could be changed (see doc)! FALSE by default. */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /** Dialog message. Either string, JQuery element, or function that returns either string or JQuery element. */
     var message: js.UndefOr[
         String | JQuery[HTMLElement] | (js.Function1[/* dialog */ js.UndefOr[DialogContext], String | JQuery[HTMLElement]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Automatically convert line breaking character to <br /> if it's set to true,
       * everything keeps original if it's false.
       */
-    var nl2br: js.UndefOr[Boolean] = js.native
+    var nl2br: js.UndefOr[Boolean] = js.undefined
     
     /** If provided, it will be invoked when the dialog is popped down. */
-    var onhidden: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.native
+    var onhidden: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.undefined
     
     /**
       * If provided, it will be invoked when the dialog is popping down.
       * Return FALSE to don`t close the dialog. Don`t return anything by default.
       */
-    var onhide: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], _]] = js.native
+    var onhide: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], js.Any]] = js.undefined
     
     /** If provided, it will be invoked when the dialog is popping up. */
-    var onshow: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.native
+    var onshow: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.undefined
     
     /** If provided, it will be invoked when the dialog is popped up. */
-    var onshown: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.native
+    var onshown: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.undefined
     
     /** Text size. See BootstrapDialog.SIZE_xxx constants. By default - SIZE_NORMAL */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** Icon class name, for example 'glyphicon glyphicon-check'. */
-    var spinicon: js.UndefOr[String] = js.native
+    var spinicon: js.UndefOr[String] = js.undefined
     
     /** Dialog title. Either string or JQuery element. */
-    var title: js.UndefOr[String | JQuery[HTMLElement]] = js.native
+    var title: js.UndefOr[String | JQuery[HTMLElement]] = js.undefined
     
     /** Dialog header type. See BootstrapDialog.TYPE_xxx constants. */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DialogOptions {
     
@@ -599,7 +593,7 @@ object BootstrapDialog {
       def setOnhiddenUndefined: Self = StObject.set(x, "onhidden", js.undefined)
       
       @scala.inline
-      def setOnhide(value: /* dialog */ js.UndefOr[DialogContext] => _): Self = StObject.set(x, "onhide", js.Any.fromFunction1(value))
+      def setOnhide(value: /* dialog */ js.UndefOr[DialogContext] => js.Any): Self = StObject.set(x, "onhide", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnhideUndefined: Self = StObject.set(x, "onhide", js.undefined)

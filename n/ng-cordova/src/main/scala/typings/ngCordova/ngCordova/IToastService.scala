@@ -2,25 +2,23 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToastService extends StObject {
   
-  def show(message: String, duration: String, position: String): js.Any = js.native
+  def show(message: String, duration: String, position: String): js.Any
   
-  def showLongBottom(message: String): js.Any = js.native
+  def showLongBottom(message: String): js.Any
   
-  def showLongCenter(message: String): js.Any = js.native
+  def showLongCenter(message: String): js.Any
   
-  def showLongTop(message: String): js.Any = js.native
+  def showLongTop(message: String): js.Any
   
-  def showShortBottom(message: String): js.Any = js.native
+  def showShortBottom(message: String): js.Any
   
-  def showShortCenter(message: String): js.Any = js.native
+  def showShortCenter(message: String): js.Any
   
-  def showShortTop(message: String): js.Any = js.native
+  def showShortTop(message: String): js.Any
 }
 object IToastService {
   

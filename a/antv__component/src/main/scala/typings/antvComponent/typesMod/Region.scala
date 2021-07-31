@@ -3,23 +3,21 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
   /**
     * 结束点
     * @type {Point}
     */
-  var end: Point = js.native
+  var end: Point
   
   /**
     * 起始点
     * @type {Point}
     */
-  var start: Point = js.native
+  var start: Point
 }
 object Region {
   

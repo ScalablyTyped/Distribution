@@ -7,29 +7,27 @@ import typings.gestalt.gestaltStrings.sm
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetProps extends StObject {
   
-  var accessibilityDismissButtonLabel: String = js.native
+  var accessibilityDismissButtonLabel: String
   
-  var accessibilitySheetLabel: String = js.native
+  var accessibilitySheetLabel: String
   
-  var children: js.UndefOr[SheetNodeOrRenderProp] = js.native
+  var children: js.UndefOr[SheetNodeOrRenderProp] = js.undefined
   
-  var closeOnOutsideClick: js.UndefOr[Boolean] = js.native
+  var closeOnOutsideClick: js.UndefOr[Boolean] = js.undefined
   
-  var footer: js.UndefOr[SheetNodeOrRenderProp] = js.native
+  var footer: js.UndefOr[SheetNodeOrRenderProp] = js.undefined
   
-  var heading: js.UndefOr[String] = js.native
+  var heading: js.UndefOr[String] = js.undefined
   
-  def onDismiss(): Unit = js.native
+  def onDismiss(): Unit
   
-  var size: js.UndefOr[sm | md | lg] = js.native
+  var size: js.UndefOr[sm | md | lg] = js.undefined
   
-  var subHeading: js.UndefOr[SheetNodeOrRenderProp] = js.native
+  var subHeading: js.UndefOr[SheetNodeOrRenderProp] = js.undefined
 }
 object SheetProps {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcEndpointConnection extends StObject {
   
   /**
     * The date and time that the VPC endpoint was created.
     */
-  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.native
+  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The DNS entries for the VPC endpoint.
     */
-  var DnsEntries: js.UndefOr[DnsEntrySet] = js.native
+  var DnsEntries: js.UndefOr[DnsEntrySet] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the Gateway Load Balancers for the service.
     */
-  var GatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var GatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the network load balancers for the service.
     */
-  var NetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var NetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ID of the service to which the endpoint is connected.
     */
-  var ServiceId: js.UndefOr[String] = js.native
+  var ServiceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC endpoint.
     */
-  var VpcEndpointId: js.UndefOr[String] = js.native
+  var VpcEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID of the owner of the VPC endpoint.
     */
-  var VpcEndpointOwner: js.UndefOr[String] = js.native
+  var VpcEndpointOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the VPC endpoint.
     */
-  var VpcEndpointState: js.UndefOr[State] = js.native
+  var VpcEndpointState: js.UndefOr[State] = js.undefined
 }
 object VpcEndpointConnection {
   

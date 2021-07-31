@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,26 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The **nScriptDirection** parameters are of type {@link ScriptDirection}
   * @since OOo 1.1.2
   */
-@js.native
-trait XScriptTypeDetector extends XInterface {
+trait XScriptTypeDetector
+  extends StObject
+     with XInterface {
   
   /** @returns the position where the specified CTL Script Type starts. */
-  def beginOfCTLScriptType(aText: String, nPos: Double): Double = js.native
+  def beginOfCTLScriptType(aText: String, nPos: Double): Double
   
   /** @returns the position where the specified Script Direction starts. */
-  def beginOfScriptDirection(aText: String, nPos: Double, nScriptDirection: Double): Double = js.native
+  def beginOfScriptDirection(aText: String, nPos: Double, nScriptDirection: Double): Double
   
   /** @returns the position where the specified CTL Script Type ends. */
-  def endOfCTLScriptType(aText: String, nPos: Double): Double = js.native
+  def endOfCTLScriptType(aText: String, nPos: Double): Double
   
   /** @returns the position where the specified Script Direction ends. */
-  def endOfScriptDirection(aText: String, nPos: Double, nScriptDirection: Double): Double = js.native
+  def endOfScriptDirection(aText: String, nPos: Double, nScriptDirection: Double): Double
   
   /** @returns the CTL script type of the current position. ;  One of {@link CTLScriptType} constants. */
-  def getCTLScriptType(aText: String, nPos: Double): Double = js.native
+  def getCTLScriptType(aText: String, nPos: Double): Double
   
   /** @returns the Script Direction of the current position. */
-  def getScriptDirection(aText: String, nPos: Double, nDefaultScriptDirection: Double): Double = js.native
+  def getScriptDirection(aText: String, nPos: Double, nDefaultScriptDirection: Double): Double
 }
 object XScriptTypeDetector {
   

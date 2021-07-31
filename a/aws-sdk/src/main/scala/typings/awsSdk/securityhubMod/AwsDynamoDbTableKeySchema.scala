@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableKeySchema extends StObject {
   
   /**
     * The name of the key schema attribute.
     */
-  var AttributeName: js.UndefOr[NonEmptyString] = js.native
+  var AttributeName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of key used for the key schema attribute.
     */
-  var KeyType: js.UndefOr[NonEmptyString] = js.native
+  var KeyType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableKeySchema {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteQueryResponse extends StObject {
   
   /** Results of the matching job/company candidates. */
-  var completionResults: js.UndefOr[js.Array[CompletionResult]] = js.native
+  var completionResults: js.UndefOr[js.Array[CompletionResult]] = js.undefined
   
   /** Additional information for the API invocation, such as the request tracking id. */
-  var metadata: js.UndefOr[ResponseMetadata] = js.native
+  var metadata: js.UndefOr[ResponseMetadata] = js.undefined
 }
 object CompleteQueryResponse {
   

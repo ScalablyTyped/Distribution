@@ -2,26 +2,24 @@ package typings.reactNativeShare.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // iOS 11 or later
-@js.native
 trait LinkMetadata extends StObject {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var originalUrl: js.UndefOr[String] = js.native
+  var originalUrl: js.UndefOr[String] = js.undefined
   
-  var remoteVideoUrl: js.UndefOr[String] = js.native
+  var remoteVideoUrl: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var video: js.UndefOr[String] = js.native
+  var video: js.UndefOr[String] = js.undefined
 }
 object LinkMetadata {
   

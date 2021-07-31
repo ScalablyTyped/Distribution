@@ -2,18 +2,17 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagedObjectsResponse[DataType]
-  extends ObjectsResponse[js.Array[DataType]] {
+  extends StObject
+     with ObjectsResponse[js.Array[DataType]] {
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var prev: js.UndefOr[String] = js.native
+  var prev: js.UndefOr[String] = js.undefined
   
-  var totalCount: js.UndefOr[Double] = js.native
+  var totalCount: js.UndefOr[Double] = js.undefined
 }
 object PagedObjectsResponse {
   
@@ -24,7 +23,7 @@ object PagedObjectsResponse {
   }
   
   @scala.inline
-  implicit class PagedObjectsResponseMutableBuilder[Self <: PagedObjectsResponse[_], DataType] (val x: Self with PagedObjectsResponse[DataType]) extends AnyVal {
+  implicit class PagedObjectsResponseMutableBuilder[Self <: PagedObjectsResponse[?], DataType] (val x: Self & PagedObjectsResponse[DataType]) extends AnyVal {
     
     @scala.inline
     def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])

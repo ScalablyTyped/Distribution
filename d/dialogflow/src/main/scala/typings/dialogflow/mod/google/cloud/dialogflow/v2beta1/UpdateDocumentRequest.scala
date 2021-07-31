@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an UpdateDocumentRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new UpdateDocumentRequest.
   * @param [properties] Properties to set
   */
-class UpdateDocumentRequest () extends IUpdateDocumentRequest {
+class UpdateDocumentRequest ()
+  extends StObject
+     with IUpdateDocumentRequest {
   def this(properties: IUpdateDocumentRequest) = this()
   
   /**
@@ -28,18 +29,20 @@ class UpdateDocumentRequest () extends IUpdateDocumentRequest {
 }
 object UpdateDocumentRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new UpdateDocumentRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns UpdateDocumentRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.create")
-  @js.native
-  def create(): UpdateDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.create")
-  @js.native
-  def create(properties: IUpdateDocumentRequest): UpdateDocumentRequest = js.native
+  @scala.inline
+  def create(): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[UpdateDocumentRequest]
+  @scala.inline
+  def create(properties: IUpdateDocumentRequest): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[UpdateDocumentRequest]
   
   /**
     * Decodes an UpdateDocumentRequest message from the specified reader or buffer.
@@ -50,18 +53,14 @@ object UpdateDocumentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.decode")
-  @js.native
-  def decode(reader: Reader): UpdateDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): UpdateDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): UpdateDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): UpdateDocumentRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateDocumentRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): UpdateDocumentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UpdateDocumentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateDocumentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): UpdateDocumentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UpdateDocumentRequest]
   
   /**
     * Decodes an UpdateDocumentRequest message from the specified reader or buffer, length delimited.
@@ -71,12 +70,10 @@ object UpdateDocumentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): UpdateDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): UpdateDocumentRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateDocumentRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateDocumentRequest]
   
   /**
     * Encodes the specified UpdateDocumentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.verify|verify} messages.
@@ -85,12 +82,10 @@ object UpdateDocumentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.encode")
-  @js.native
-  def encode(message: IUpdateDocumentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.encode")
-  @js.native
-  def encode(message: IUpdateDocumentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IUpdateDocumentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IUpdateDocumentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified UpdateDocumentRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.verify|verify} messages.
@@ -99,12 +94,10 @@ object UpdateDocumentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IUpdateDocumentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IUpdateDocumentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IUpdateDocumentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IUpdateDocumentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an UpdateDocumentRequest message from a plain object. Also converts values to their respective internal types.
@@ -112,9 +105,8 @@ object UpdateDocumentRequest {
     * @returns UpdateDocumentRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): UpdateDocumentRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): UpdateDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UpdateDocumentRequest]
   
   /**
     * Creates a plain object from an UpdateDocumentRequest message. Also converts values to other types if specified.
@@ -123,12 +115,10 @@ object UpdateDocumentRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.toObject")
-  @js.native
-  def toObject(message: UpdateDocumentRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.toObject")
-  @js.native
-  def toObject(message: UpdateDocumentRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: UpdateDocumentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: UpdateDocumentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an UpdateDocumentRequest message.
@@ -136,7 +126,6 @@ object UpdateDocumentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.UpdateDocumentRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -2,15 +2,13 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageIntermediary extends StObject {
   
-  var records: UsageRecordResource = js.native
+  var records: UsageRecordResource
   
-  var triggers: UsageTriggerResource = js.native
+  var triggers: UsageTriggerResource
 }
 object UsageIntermediary {
   

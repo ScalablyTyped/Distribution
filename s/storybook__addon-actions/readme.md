@@ -4,15 +4,15 @@
 Typings are for version 6.1.2
 
 ## Library description:
-Action Logger addon for storybook
+Get UI feedback when an action is performed on an interactive element
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-actions |
 | Keywords           | storybook |
-| # releases         | 562 |
-| # dependents       | 273 |
-| # downloads        | 68193223 |
+| # releases         | 551 |
+| # dependents       | 285 |
+| # downloads        | 77792615 |
 | # stars            | 1 |
 
 ## Links

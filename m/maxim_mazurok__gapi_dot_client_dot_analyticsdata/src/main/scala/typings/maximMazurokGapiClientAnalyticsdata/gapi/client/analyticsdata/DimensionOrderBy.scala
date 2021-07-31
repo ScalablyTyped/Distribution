@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionOrderBy extends StObject {
   
   /** A dimension name in the request to order by. */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /** Controls the rule for dimension value ordering. */
-  var orderType: js.UndefOr[String] = js.native
+  var orderType: js.UndefOr[String] = js.undefined
 }
 object DimensionOrderBy {
   

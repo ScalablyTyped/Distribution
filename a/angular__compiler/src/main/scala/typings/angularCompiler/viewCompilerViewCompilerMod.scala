@@ -8,10 +8,13 @@ import typings.angularCompiler.srcUtilMod.OutputContext
 import typings.angularCompiler.templateAstMod.TemplateAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewCompilerViewCompilerMod {
+  
+  @JSImport("@angular/compiler/src/view_compiler/view_compiler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/view_compiler/view_compiler", "ViewCompileResult")
   @js.native
@@ -39,10 +42,8 @@ object viewCompilerViewCompilerMod {
     ): ViewCompileResult = js.native
   }
   
-  @JSImport("@angular/compiler/src/view_compiler/view_compiler", "elementEventFullName")
-  @js.native
-  def elementEventFullName(target: String, name: String): String = js.native
-  @JSImport("@angular/compiler/src/view_compiler/view_compiler", "elementEventFullName")
-  @js.native
-  def elementEventFullName(target: Null, name: String): String = js.native
+  @scala.inline
+  def elementEventFullName(target: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("elementEventFullName")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def elementEventFullName(target: Null, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("elementEventFullName")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
 }

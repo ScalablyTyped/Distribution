@@ -3,21 +3,19 @@ package typings.carbonThemes
 import typings.carbonThemes.mod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait G10 extends StObject {
     
-    var g10: Theme = js.native
+    var g10: Theme
     
-    var g100: Theme = js.native
+    var g100: Theme
     
-    var g90: Theme = js.native
+    var g90: Theme
     
-    var white: Theme = js.native
+    var white: Theme
   }
   object G10 {
     

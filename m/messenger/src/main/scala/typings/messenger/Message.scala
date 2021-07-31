@@ -2,31 +2,29 @@ package typings.messenger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /**
     * If the message is associated with an ajax request or is counting down to retry, cancel it.
     */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
     * Hide the message, if it's hidden.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * Show the message, if it's hidden.
     */
-  def show(): Unit = js.native
+  def show(): Unit
   
   /**
     * Update the message with the provided options.
     */
-  def update(options: MessageOptions): Unit = js.native
+  def update(options: MessageOptions): Unit
 }
 object Message {
   

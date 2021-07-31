@@ -3,7 +3,6 @@ package typings.rcProgress
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -30,32 +29,31 @@ object interfaceMod {
     def top: typings.rcProgress.rcProgressStrings.top = "top".asInstanceOf[typings.rcProgress.rcProgressStrings.top]
   }
   
-  @js.native
   trait ProgressProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var gapDegree: js.UndefOr[Double] = js.native
+    var gapDegree: js.UndefOr[Double] = js.undefined
     
-    var gapPosition: js.UndefOr[GapPositionType] = js.native
+    var gapPosition: js.UndefOr[GapPositionType] = js.undefined
     
-    var percent: js.UndefOr[Double | js.Array[Double]] = js.native
+    var percent: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var strokeColor: js.UndefOr[StrokeColorType] = js.native
+    var strokeColor: js.UndefOr[StrokeColorType] = js.undefined
     
-    var strokeLinecap: js.UndefOr[StrokeLinecapType] = js.native
+    var strokeLinecap: js.UndefOr[StrokeLinecapType] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var trailColor: js.UndefOr[String] = js.native
+    var trailColor: js.UndefOr[String] = js.undefined
     
-    var trailWidth: js.UndefOr[Double] = js.native
+    var trailWidth: js.UndefOr[Double] = js.undefined
     
-    var transition: js.UndefOr[String] = js.native
+    var transition: js.UndefOr[String] = js.undefined
   }
   object ProgressProps {
     

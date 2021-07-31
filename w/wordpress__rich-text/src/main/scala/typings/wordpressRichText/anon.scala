@@ -5,27 +5,25 @@ import typings.wordpressRichText.mod.NamedFormatConfiguration
 import typings.wordpressRichText.mod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Element extends StObject {
     
-    var element: typings.std.Element = js.native
+    var element: typings.std.Element
     
     var multilineTag: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var multilineWrapperTags: js.UndefOr[
         js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var range: js.UndefOr[Range] = js.native
+    var range: js.UndefOr[Range] = js.undefined
   }
   object Element {
     
@@ -70,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var html: String = js.native
+    var html: String
   }
   object Html {
     
@@ -91,14 +88,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MultilineTag extends StObject {
     
     var multilineTag: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var value: Value = js.native
+    var value: Value
   }
   object MultilineTag {
     
@@ -122,10 +118,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     
@@ -153,18 +148,17 @@ object anon {
     def removeFormatTypes(names: js.Array[String]): Unit = js.native
   }
   
-  @js.native
   trait TypeofimportedSelectors extends StObject {
     
-    def getFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = js.native
+    def getFormatType(name: String): js.UndefOr[NamedFormatConfiguration]
     
     def getFormatTypeForBareElement(
       bareElementTagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
-    ): js.UndefOr[NamedFormatConfiguration] = js.native
+    ): js.UndefOr[NamedFormatConfiguration]
     
-    def getFormatTypeForClassName(elementClassName: String): js.UndefOr[NamedFormatConfiguration] = js.native
+    def getFormatTypeForClassName(elementClassName: String): js.UndefOr[NamedFormatConfiguration]
     
-    def getFormatTypes(): js.Array[NamedFormatConfiguration] = js.native
+    def getFormatTypes(): js.Array[NamedFormatConfiguration]
   }
   object TypeofimportedSelectors {
     

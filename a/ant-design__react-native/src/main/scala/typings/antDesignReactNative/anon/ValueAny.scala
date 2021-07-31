@@ -2,13 +2,11 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueAny extends StObject {
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ValueAny {
   

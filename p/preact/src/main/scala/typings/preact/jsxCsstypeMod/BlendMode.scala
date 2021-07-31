@@ -2,7 +2,6 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.screen
   - typings.preact.preactStrings.`soft-light`
 */
-trait BlendMode extends _BackgroundBlendModeProperty
+trait BlendMode
+  extends StObject
+     with _BackgroundBlendModeProperty
 object BlendMode {
   
   @scala.inline

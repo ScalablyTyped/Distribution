@@ -8,14 +8,15 @@ import typings.ethereumjsVm.stateMod.StateManager
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interpreterMod {
   
   @JSImport("ethereumjs-vm/dist/evm/interpreter", JSImport.Default)
   @js.native
-  class default protected () extends Interpreter {
+  class default protected ()
+    extends StObject
+       with Interpreter {
     def this(vm: js.Any, eei: typings.ethereumjsVm.eeiMod.default) = this()
   }
   
@@ -55,10 +56,9 @@ object interpreterMod {
     def runStep(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait InterpreterOpts extends StObject {
     
-    var pc: js.UndefOr[Double] = js.native
+    var pc: js.UndefOr[Double] = js.undefined
   }
   object InterpreterOpts {
     
@@ -79,12 +79,11 @@ object interpreterMod {
     }
   }
   
-  @js.native
   trait InterpreterResult extends StObject {
     
-    var exceptionError: js.UndefOr[VmError] = js.native
+    var exceptionError: js.UndefOr[VmError] = js.undefined
     
-    var runState: js.UndefOr[RunState] = js.native
+    var runState: js.UndefOr[RunState] = js.undefined
   }
   object InterpreterResult {
     
@@ -111,30 +110,29 @@ object interpreterMod {
     }
   }
   
-  @js.native
   trait InterpreterStep extends StObject {
     
-    var account: typings.ethereumjsAccount.mod.default = js.native
+    var account: typings.ethereumjsAccount.mod.default
     
-    var address: Buffer = js.native
+    var address: Buffer
     
-    var codeAddress: Buffer = js.native
+    var codeAddress: Buffer
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var gasLeft: ^ = js.native
+    var gasLeft: ^
     
-    var memory: js.Array[Double] = js.native
+    var memory: js.Array[Double]
     
-    var memoryWordCount: ^ = js.native
+    var memoryWordCount: ^
     
-    var opcode: Opcode = js.native
+    var opcode: Opcode
     
-    var pc: Double = js.native
+    var pc: Double
     
-    var stack: js.Array[^] = js.native
+    var stack: js.Array[^]
     
-    var stateManager: StateManager = js.native
+    var stateManager: StateManager
   }
   object InterpreterStep {
     
@@ -200,30 +198,29 @@ object interpreterMod {
     }
   }
   
-  @js.native
   trait RunState extends StObject {
     
-    var _common: typings.ethereumjsCommon.mod.default = js.native
+    var _common: typings.ethereumjsCommon.mod.default
     
-    var code: Buffer = js.native
+    var code: Buffer
     
-    var eei: typings.ethereumjsVm.eeiMod.default = js.native
+    var eei: typings.ethereumjsVm.eeiMod.default
     
-    var highestMemCost: ^ = js.native
+    var highestMemCost: ^
     
-    var memory: typings.ethereumjsVm.memoryMod.default = js.native
+    var memory: typings.ethereumjsVm.memoryMod.default
     
-    var memoryWordCount: ^ = js.native
+    var memoryWordCount: ^
     
-    var opCode: Double = js.native
+    var opCode: Double
     
-    var programCounter: Double = js.native
+    var programCounter: Double
     
-    var stack: typings.ethereumjsVm.stackMod.default = js.native
+    var stack: typings.ethereumjsVm.stackMod.default
     
-    var stateManager: StateManager = js.native
+    var stateManager: StateManager
     
-    var validJumps: js.Array[Double] = js.native
+    var validJumps: js.Array[Double]
   }
   object RunState {
     

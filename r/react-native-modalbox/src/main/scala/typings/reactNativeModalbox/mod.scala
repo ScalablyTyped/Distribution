@@ -9,7 +9,6 @@ import typings.reactNativeModalbox.reactNativeModalboxStrings.center
 import typings.reactNativeModalbox.reactNativeModalboxStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,7 +36,6 @@ object mod {
     def open(): Unit = js.native
   }
   
-  @js.native
   trait ModalProps extends StObject {
     
     /**
@@ -46,7 +44,7 @@ object mod {
       * Default is 400ms
       *
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * (Android only) Close modal when receiving back button event
@@ -54,7 +52,7 @@ object mod {
       * Default is false
       *
       */
-    var backButtonClose: js.UndefOr[Boolean] = js.native
+    var backButtonClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If a backdrop is displayed behind the modal
@@ -62,7 +60,7 @@ object mod {
       * Default is true
       *
       */
-    var backdrop: js.UndefOr[Boolean] = js.native
+    var backdrop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Background color of the backdrop
@@ -70,7 +68,7 @@ object mod {
       * Default is black
       *
       */
-    var backdropColor: js.UndefOr[String] = js.native
+    var backdropColor: js.UndefOr[String] = js.undefined
     
     /**
       * Add an element in the backdrop (a close button for example)
@@ -78,7 +76,7 @@ object mod {
       * Default is null
       *
       */
-    var backdropContent: js.UndefOr[ReactNode] = js.native
+    var backdropContent: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Opacity of the backdrop
@@ -86,7 +84,7 @@ object mod {
       * Default is 0.5
       *
       */
-    var backdropOpacity: js.UndefOr[Double] = js.native
+    var backdropOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * If the modal can be closed by pressing on the backdrop
@@ -94,13 +92,13 @@ object mod {
       * Default is true
       *
       */
-    var backdropPressToClose: js.UndefOr[Boolean] = js.native
+    var backdropPressToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
       * Default is false
       */
-    var coverScreen: js.UndefOr[Boolean] = js.native
+    var coverScreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The direction modal enters from
@@ -108,7 +106,7 @@ object mod {
       * Default is bottom
       *
       */
-    var entry: js.UndefOr[top | bottom | String] = js.native
+    var entry: js.UndefOr[top | bottom | String] = js.undefined
     
     /**
       * Checks if the modal is disabled
@@ -116,7 +114,7 @@ object mod {
       * Default is false
       *
       */
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Checks if the modal is open
@@ -124,20 +122,20 @@ object mod {
       * Default is false
       *
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This property prevent the modal to cover the ios status bar when the modal is scrolling up because the keyboard is opening
       *
       * Default is ios:22, android:0
       */
-    var keyboardTopOffset: js.UndefOr[Double] = js.native
+    var keyboardTopOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Event fired when the modal is closed and the animation is complete
       *
       */
-    var onClosed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * When the state of the swipe to close feature has changed
@@ -145,13 +143,13 @@ object mod {
       *
       *
       */
-    var onClosingState: js.UndefOr[js.Function1[/* state */ Boolean, Unit]] = js.native
+    var onClosingState: js.UndefOr[js.Function1[/* state */ Boolean, Unit]] = js.undefined
     
     /**
       * Event fired when the modal is opened and the animation is complete
       *
       */
-    var onOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The final position of the modal.
@@ -160,7 +158,7 @@ object mod {
       * Default is center
       *
       */
-    var position: js.UndefOr[top | center | bottom | String] = js.native
+    var position: js.UndefOr[top | center | bottom | String] = js.undefined
     
     /**
       * If the modal should appear open without animation upon first mount
@@ -168,12 +166,12 @@ object mod {
       * Default is false
       *
       */
-    var startOpen: js.UndefOr[Boolean] = js.native
+    var startOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom styling for the content area
       */
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * The height in pixels of the swipeable area
@@ -181,7 +179,7 @@ object mod {
       * Default is the Window Height
       *
       */
-    var swipeArea: js.UndefOr[Double] = js.native
+    var swipeArea: js.UndefOr[Double] = js.undefined
     
     /**
       * The threshold to reach in pixels to close the modal
@@ -189,7 +187,7 @@ object mod {
       * Default is 50
       *
       */
-    var swipeThreshold: js.UndefOr[Double] = js.native
+    var swipeThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * If the modal can be closed by swiping
@@ -197,7 +195,7 @@ object mod {
       * Default is true
       *
       */
-    var swipeToClose: js.UndefOr[Boolean] = js.native
+    var swipeToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables the hardware acceleration to animate the modal. Please note that enabling this can cause some flashes in a weird way when animating
@@ -205,7 +203,7 @@ object mod {
       * Default is true
       *
       */
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object ModalProps {
     

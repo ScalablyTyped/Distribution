@@ -2,20 +2,18 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnAccelerometerChangeCallbackResult extends StObject {
   
   /** X 轴 */
-  var x: Double = js.native
+  var x: Double
   
   /** Y 轴 */
-  var y: Double = js.native
+  var y: Double
   
   /** Z 轴 */
-  var z: Double = js.native
+  var z: Double
 }
 object OnAccelerometerChangeCallbackResult {
   

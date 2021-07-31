@@ -2,19 +2,17 @@ package typings.gm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorStatistics extends StObject {
   
-  var Maximum: String = js.native
+  var Maximum: String
   
-  var Mean: String = js.native
+  var Mean: String
   
-  var Minimum: String = js.native
+  var Minimum: String
   
-  var `Standard Deviation`: String = js.native
+  var `Standard Deviation`: String
 }
 object ColorStatistics {
   

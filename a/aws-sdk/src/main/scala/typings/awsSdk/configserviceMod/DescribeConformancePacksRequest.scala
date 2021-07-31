@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConformancePacksRequest extends StObject {
   
   /**
     * Comma-separated list of conformance pack names for which you want details. If you do not specify any names, AWS Config returns details for all your conformance packs. 
     */
-  var ConformancePackNames: js.UndefOr[ConformancePackNamesList] = js.native
+  var ConformancePackNames: js.UndefOr[ConformancePackNamesList] = js.undefined
   
   /**
     * The maximum number of conformance packs returned on each page.
     */
-  var Limit: js.UndefOr[PageSizeLimit] = js.native
+  var Limit: js.UndefOr[PageSizeLimit] = js.undefined
   
   /**
     * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object DescribeConformancePacksRequest {
   

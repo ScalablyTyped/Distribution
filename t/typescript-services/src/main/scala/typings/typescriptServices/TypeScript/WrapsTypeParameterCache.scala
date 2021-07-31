@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WrapsTypeParameterCache extends StObject {
   
-  var _wrapsTypeParameterCache: js.Any = js.native
+  var _wrapsTypeParameterCache: js.Any
   
-  def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double = js.native
+  def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double
   
-  def setWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap, wrappingTypeParameterID: Double): Unit = js.native
+  def setWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap, wrappingTypeParameterID: Double): Unit
 }
 object WrapsTypeParameterCache {
   

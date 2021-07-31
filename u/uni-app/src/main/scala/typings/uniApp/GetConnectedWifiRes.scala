@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectedWifiRes extends StObject {
   
   /**
     * 接口调用成功的回调函数
     */
-  var wifi: js.UndefOr[WiFi] = js.native
+  var wifi: js.UndefOr[WiFi] = js.undefined
 }
 object GetConnectedWifiRes {
   

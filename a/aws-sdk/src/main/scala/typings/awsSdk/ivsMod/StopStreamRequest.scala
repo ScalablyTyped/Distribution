@@ -2,16 +2,14 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopStreamRequest extends StObject {
   
   /**
     * ARN of the channel for which the stream is to be stopped.
     */
-  var channelArn: ChannelArn = js.native
+  var channelArn: ChannelArn
 }
 object StopStreamRequest {
   

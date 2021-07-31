@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadWillBeginEvent extends StObject {
   
   /**
     * Id of the frame that caused download to begin.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Global unique identifier of the download.
     */
-  var guid: String = js.native
+  var guid: String
   
   /**
     * Suggested file name of the resource (the actual name of the file saved on disk may differ).
     */
-  var suggestedFilename: String = js.native
+  var suggestedFilename: String
   
   /**
     * URL of the resource being downloaded.
     */
-  var url: String = js.native
+  var url: String
 }
 object DownloadWillBeginEvent {
   

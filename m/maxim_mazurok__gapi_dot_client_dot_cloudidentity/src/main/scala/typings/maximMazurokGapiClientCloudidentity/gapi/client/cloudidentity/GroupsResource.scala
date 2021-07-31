@@ -11,7 +11,6 @@ import typings.maximMazurokGapiClientCloudidentity.anon.Query
 import typings.maximMazurokGapiClientCloudidentity.anon.UpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

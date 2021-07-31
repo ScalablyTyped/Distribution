@@ -10,9 +10,9 @@ A few useful functions for signing ethereum data
 | ------------------ | :-------------: |
 | Full name          | eth-sig-util |
 | Keywords           | ethereum, signature |
-| # releases         | 13 |
-| # dependents       | 183 |
-| # downloads        | 2599171 |
+| # releases         | 14 |
+| # dependents       | 224 |
+| # downloads        | 3175817 |
 | # stars            | 0 |
 
 ## Links

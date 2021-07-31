@@ -3,35 +3,33 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationJob extends StObject {
   
   /** Output only. The timestamp when the migration job resource was created. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z". */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Required. The resource name (URI) of the destination connection profile. */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /** The database engine type and provider of the destination. */
-  var destinationDatabase: js.UndefOr[DatabaseType] = js.native
+  var destinationDatabase: js.UndefOr[DatabaseType] = js.undefined
   
   /** The migration job display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The path to the dump file in Google Cloud Storage, in the format: (gs://[BUCKET_NAME]/[OBJECT_NAME]). */
-  var dumpPath: js.UndefOr[String] = js.native
+  var dumpPath: js.UndefOr[String] = js.undefined
   
   /** Output only. The duration of the migration job (in seconds). A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Output only. If the migration job is completed, the time when it was completed. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The error details in case of state FAILED. */
-  var error: js.UndefOr[Status] = js.native
+  var error: js.UndefOr[Status] = js.undefined
   
   /**
     * The resource labels for migration job to use to annotate any related underlying resources such as Compute Engine VMs. An object containing a list of "key": "value" pairs. Example:
@@ -40,41 +38,41 @@ trait MigrationJob extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The name (URI) of this migration job resource, in the form of: projects/{project}/locations/{location}/instances/{instance}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The current migration job phase. */
-  var phase: js.UndefOr[String] = js.native
+  var phase: js.UndefOr[String] = js.undefined
   
   /** The details needed to communicate to the source over Reverse SSH tunnel connectivity. */
-  var reverseSshConnectivity: js.UndefOr[ReverseSshConnectivity] = js.native
+  var reverseSshConnectivity: js.UndefOr[ReverseSshConnectivity] = js.undefined
   
   /** Required. The resource name (URI) of the source connection profile. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /** The database engine type and provider of the source. */
-  var sourceDatabase: js.UndefOr[DatabaseType] = js.native
+  var sourceDatabase: js.UndefOr[DatabaseType] = js.undefined
   
   /** The current migration job state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** static ip connectivity data (default, no additional details needed). */
-  var staticIpConnectivity: js.UndefOr[js.Any] = js.native
+  var staticIpConnectivity: js.UndefOr[js.Any] = js.undefined
   
   /** Required. The migration job type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The timestamp when the migration job resource was last updated. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example:
     * "2014-10-02T15:01:23.045123456Z".
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** The details of the VPC network that the source database is located in. */
-  var vpcPeeringConnectivity: js.UndefOr[VpcPeeringConnectivity] = js.native
+  var vpcPeeringConnectivity: js.UndefOr[VpcPeeringConnectivity] = js.undefined
 }
 object MigrationJob {
   
@@ -139,7 +137,7 @@ object MigrationJob {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

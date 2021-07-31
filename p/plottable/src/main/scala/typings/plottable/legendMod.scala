@@ -8,7 +8,6 @@ import typings.plottable.scalesMod.Color
 import typings.plottable.symbolFactoriesMod.SymbolFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legendMod {

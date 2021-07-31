@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait TextFrameLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoSizeSetting: js.UndefOr[Boolean] = js.native
+  var autoSizeSetting: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottomMargin: js.UndefOr[Boolean] = js.native
+  var bottomMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var hasText: js.UndefOr[Boolean] = js.native
+  var hasText: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.native
+  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalOverflow: js.UndefOr[Boolean] = js.native
+  var horizontalOverflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftMargin: js.UndefOr[Boolean] = js.native
+  var leftMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var orientation: js.UndefOr[Boolean] = js.native
+  var orientation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[Boolean] = js.native
+  var readingOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightMargin: js.UndefOr[Boolean] = js.native
+  var rightMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var textRange: js.UndefOr[TextRangeLoadOptions] = js.native
+  var textRange: js.UndefOr[TextRangeLoadOptions] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var topMargin: js.UndefOr[Boolean] = js.native
+  var topMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.native
+  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait TextFrameLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalOverflow: js.UndefOr[Boolean] = js.native
+  var verticalOverflow: js.UndefOr[Boolean] = js.undefined
 }
 object TextFrameLoadOptions {
   

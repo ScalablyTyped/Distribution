@@ -2,35 +2,33 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BroadPhase extends StObject {
   
-  def aabbQuery(world: World, aabb: AABB, result: js.Array[Body]): js.Array[Body] = js.native
+  def aabbQuery(world: World, aabb: AABB, result: js.Array[Body]): js.Array[Body]
   
-  def boundingSphereCheck(bodyA: Body, bodyB: Body): Boolean = js.native
+  def boundingSphereCheck(bodyA: Body, bodyB: Body): Boolean
   
-  def collisionPairs(world: World, p1: js.Array[Body], p2: js.Array[Body]): Unit = js.native
+  def collisionPairs(world: World, p1: js.Array[Body], p2: js.Array[Body]): Unit
   
-  var dirty: Boolean = js.native
+  var dirty: Boolean
   
-  def doBoundingBoxBroadphase(bodyA: Body, bodyB: Body, pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit = js.native
+  def doBoundingBoxBroadphase(bodyA: Body, bodyB: Body, pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit
   
-  def doBoundingSphereBroadphase(bodyA: Body, bodyB: Body, pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit = js.native
+  def doBoundingSphereBroadphase(bodyA: Body, bodyB: Body, pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit
   
-  def intersectionTest(bodyA: Body, bodyB: Body, pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit = js.native
+  def intersectionTest(bodyA: Body, bodyB: Body, pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit
   
-  def makePairsUnique(pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit = js.native
+  def makePairsUnique(pairs1: js.Array[Body], pairs2: js.Array[Body]): Unit
   
-  def needBroadphaseCollision(bodyA: Body, bodyB: Body): Boolean = js.native
+  def needBroadphaseCollision(bodyA: Body, bodyB: Body): Boolean
   
-  def setWorld(world: World): Unit = js.native
+  def setWorld(world: World): Unit
   
-  var useBoundingBoxes: Boolean = js.native
+  var useBoundingBoxes: Boolean
   
-  var world: World = js.native
+  var world: World
 }
 object BroadPhase {
   

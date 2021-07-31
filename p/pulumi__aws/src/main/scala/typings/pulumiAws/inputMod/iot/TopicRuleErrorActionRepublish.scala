@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionRepublish extends StObject {
   
   /**
     * The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.
     */
-  var qos: js.UndefOr[Input[Double]] = js.native
+  var qos: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * The name of the MQTT topic the message should be republished to.
     */
-  var topic: Input[String] = js.native
+  var topic: Input[String]
 }
 object TopicRuleErrorActionRepublish {
   

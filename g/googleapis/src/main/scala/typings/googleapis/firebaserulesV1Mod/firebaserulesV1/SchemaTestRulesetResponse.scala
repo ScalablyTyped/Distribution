@@ -2,27 +2,25 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for FirebaseRulesService.TestRuleset.
   */
-@js.native
 trait SchemaTestRulesetResponse extends StObject {
   
   /**
     * Syntactic and semantic `Source` issues of varying severity. Issues of
     * `ERROR` severity will prevent tests from executing.
     */
-  var issues: js.UndefOr[js.Array[SchemaIssue]] = js.native
+  var issues: js.UndefOr[js.Array[SchemaIssue]] = js.undefined
   
   /**
     * The set of test results given the test cases in the `TestSuite`. The
     * results will appear in the same order as the test cases appear in the
     * `TestSuite`.
     */
-  var testResults: js.UndefOr[js.Array[SchemaTestResult]] = js.native
+  var testResults: js.UndefOr[js.Array[SchemaTestResult]] = js.undefined
 }
 object SchemaTestRulesetResponse {
   

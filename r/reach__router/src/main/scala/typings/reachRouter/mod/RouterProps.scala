@@ -4,19 +4,17 @@ import typings.history.mod.LocationState
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterProps extends StObject {
   
-  var basepath: js.UndefOr[String] = js.native
+  var basepath: js.UndefOr[String] = js.undefined
   
-  var component: js.UndefOr[ComponentType[js.Object] | String] = js.native
+  var component: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
   
-  var location: js.UndefOr[WindowLocation[LocationState]] = js.native
+  var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
 }
 object RouterProps {
   

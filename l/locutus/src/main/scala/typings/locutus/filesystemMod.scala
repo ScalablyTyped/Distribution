@@ -2,207 +2,98 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesystemMod {
   
-  @JSImport("locutus/php/filesystem", "basename")
+  @JSImport("locutus/php/filesystem", JSImport.Namespace)
   @js.native
-  def basename(): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "basename")
-  @js.native
-  def basename(path: js.UndefOr[scala.Nothing], suffix: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "basename")
-  @js.native
-  def basename(path: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "basename")
-  @js.native
-  def basename(path: js.Any, suffix: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("locutus/php/filesystem", "dirname")
-  @js.native
-  def dirname(): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "dirname")
-  @js.native
-  def dirname(path: js.Any): js.Any = js.native
+  @scala.inline
+  def basename(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")().asInstanceOf[js.Any]
+  @scala.inline
+  def basename(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def basename(path: js.Any, suffix: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def basename(path: Unit, suffix: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    offset: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    offset: js.Any,
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.UndefOr[scala.Nothing],
-    context: js.Any,
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.UndefOr[scala.Nothing], context: js.Any, offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.UndefOr[scala.Nothing],
-    context: js.Any,
-    offset: js.Any,
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.Any,
-    context: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.Any, context: js.UndefOr[scala.Nothing], offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.Any,
-    context: js.UndefOr[scala.Nothing],
-    offset: js.Any,
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.Any, context: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.UndefOr[scala.Nothing],
-    flags: js.Any,
-    context: js.Any,
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.Any, context: js.Any, offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.UndefOr[scala.Nothing], flags: js.Any, context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.Any,
-    flags: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.Any,
-    flags: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    offset: js.Any,
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.Any,
-    flags: js.UndefOr[scala.Nothing],
-    context: js.Any,
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.UndefOr[scala.Nothing], context: js.Any, offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.UndefOr[scala.Nothing], context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(
-    url: js.Any,
-    flags: js.Any,
-    context: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    maxLen: js.Any
-  ): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any, context: js.UndefOr[scala.Nothing], offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any, context: js.UndefOr[scala.Nothing], offset: js.Any, maxLen: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any, offset: js.UndefOr[scala.Nothing], maxLen: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any, offset: js.Any): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "file_get_contents")
-  @js.native
-  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = js.native
+  @scala.inline
+  def dirname(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")().asInstanceOf[js.Any]
+  @scala.inline
+  def dirname(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/filesystem", "pathinfo")
-  @js.native
-  def pathinfo(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def fileGetContents(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")().asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: js.Any, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: Unit, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: js.Any, context: Unit, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: js.Any, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: Unit, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: js.Any, flags: Unit, context: Unit, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: js.Any, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: Unit, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: js.Any, context: Unit, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: js.Any, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: js.Any, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: js.Any, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: Unit, offset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: Unit, offset: js.Any, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def fileGetContents(url: Unit, flags: Unit, context: Unit, offset: Unit, maxLen: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("file_get_contents")(url.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], context.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], maxLen.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("locutus/php/filesystem", "realpath")
-  @js.native
-  def realpath(): js.Any = js.native
-  @JSImport("locutus/php/filesystem", "realpath")
-  @js.native
-  def realpath(path: js.Any): js.Any = js.native
+  @scala.inline
+  def pathinfo(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathinfo")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def realpath(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")().asInstanceOf[js.Any]
+  @scala.inline
+  def realpath(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

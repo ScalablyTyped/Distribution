@@ -99,7 +99,6 @@ import typings.escpos.escposStrings.`EscapeAsterisk `
 import typings.escpos.escposStrings.`EscapeExclamationmark `
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object command {
@@ -160,9 +159,8 @@ object command {
     def BARCODE_FONT_B_=(x: InformationseparatorthreefStartofheading): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BARCODE_FONT_B")(x.asInstanceOf[js.Any])
     
     // Font type B for HRI barcode chars
-    @JSImport("escpos", "command.BARCODE_FORMAT.BARCODE_HEIGHT")
-    @js.native
-    def BARCODE_HEIGHT(height: js.Any): js.Any = js.native
+    @scala.inline
+    def BARCODE_HEIGHT(height: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BARCODE_HEIGHT")(height.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("escpos", "command.BARCODE_FORMAT.BARCODE_HEIGHT_DEFAULT")
     @js.native
@@ -876,9 +874,8 @@ object command {
     def TXT_BOLD_ON_=(x: EscapeEStartofheading): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TXT_BOLD_ON")(x.asInstanceOf[js.Any])
     
     // Double width & height text
-    @JSImport("escpos", "command.TEXT_FORMAT.TXT_CUSTOM_SIZE")
-    @js.native
-    def TXT_CUSTOM_SIZE(width: js.Any, height: js.Any): js.Any = js.native
+    @scala.inline
+    def TXT_CUSTOM_SIZE(width: js.Any, height: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("TXT_CUSTOM_SIZE")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     // Italic font ON
     @JSImport("escpos", "command.TEXT_FORMAT.TXT_FONT_A")

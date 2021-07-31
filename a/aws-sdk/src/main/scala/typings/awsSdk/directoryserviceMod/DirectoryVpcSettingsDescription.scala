@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryVpcSettingsDescription extends StObject {
   
   /**
     * The list of Availability Zones that the directory is in.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsSdk.directoryserviceMod.AvailabilityZones] = js.native
+  var AvailabilityZones: js.UndefOr[typings.awsSdk.directoryserviceMod.AvailabilityZones] = js.undefined
   
   /**
     * The domain controller security group identifier for the directory.
     */
-  var SecurityGroupId: js.UndefOr[typings.awsSdk.directoryserviceMod.SecurityGroupId] = js.native
+  var SecurityGroupId: js.UndefOr[typings.awsSdk.directoryserviceMod.SecurityGroupId] = js.undefined
   
   /**
     * The identifiers of the subnets for the directory servers.
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.directoryserviceMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.directoryserviceMod.SubnetIds] = js.undefined
   
   /**
     * The identifier of the VPC that the directory is in.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.directoryserviceMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.directoryserviceMod.VpcId] = js.undefined
 }
 object DirectoryVpcSettingsDescription {
   

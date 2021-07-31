@@ -10,9 +10,9 @@ Actions on Google Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | actions-on-google |
 | Keywords           | google, google actions, google assistant, client library |
-| # releases         | 18 |
-| # dependents       | 55 |
-| # downloads        | 1546446 |
+| # releases         | 17 |
+| # dependents       | 57 |
+| # downloads        | 1640522 |
 | # stars            | 8 |
 
 ## Links

@@ -13,7 +13,6 @@ import typings.jqueryCycle2.jqueryCycle2Strings.stop
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryCycle2 {
@@ -112,95 +111,94 @@ object JQueryCycle2 {
     def apply(options: Options): JQuery = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var allowWrap: js.UndefOr[Boolean] = js.native
+    var allowWrap: js.UndefOr[Boolean] = js.undefined
     
-    var autoHeight: js.UndefOr[js.Any] = js.native
+    var autoHeight: js.UndefOr[js.Any] = js.undefined
     
     // number or string
-    var autoSelector: js.UndefOr[String] = js.native
+    var autoSelector: js.UndefOr[String] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var captionTemplate: js.UndefOr[String] = js.native
+    var captionTemplate: js.UndefOr[String] = js.undefined
     
-    var continueAuto: js.UndefOr[Boolean] = js.native
+    var continueAuto: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var disabledClass: js.UndefOr[String] = js.native
+    var disabledClass: js.UndefOr[String] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var fx: js.UndefOr[String] = js.native
+    var fx: js.UndefOr[String] = js.undefined
     
-    var hideNonActive: js.UndefOr[Boolean] = js.native
+    var hideNonActive: js.UndefOr[Boolean] = js.undefined
     
-    var loader: js.UndefOr[js.Any] = js.native
+    var loader: js.UndefOr[js.Any] = js.undefined
     
     // boolean or 'wait'
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
-    var loop: js.UndefOr[Double] = js.native
+    var loop: js.UndefOr[Double] = js.undefined
     
-    var manualSpeed: js.UndefOr[Double] = js.native
+    var manualSpeed: js.UndefOr[Double] = js.undefined
     
-    var manualTrump: js.UndefOr[Boolean] = js.native
+    var manualTrump: js.UndefOr[Boolean] = js.undefined
     
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
-    var nextEvent: js.UndefOr[String] = js.native
+    var nextEvent: js.UndefOr[String] = js.undefined
     
-    var overlay: js.UndefOr[String] = js.native
+    var overlay: js.UndefOr[String] = js.undefined
     
-    var overlayTemplate: js.UndefOr[String] = js.native
+    var overlayTemplate: js.UndefOr[String] = js.undefined
     
-    var pager: js.UndefOr[String] = js.native
+    var pager: js.UndefOr[String] = js.undefined
     
-    var pagerActivateClass: js.UndefOr[String] = js.native
+    var pagerActivateClass: js.UndefOr[String] = js.undefined
     
-    var pagerEvent: js.UndefOr[String] = js.native
+    var pagerEvent: js.UndefOr[String] = js.undefined
     
-    var pagerTemplate: js.UndefOr[String] = js.native
+    var pagerTemplate: js.UndefOr[String] = js.undefined
     
-    var pauseOnHover: js.UndefOr[js.Any] = js.native
+    var pauseOnHover: js.UndefOr[js.Any] = js.undefined
     
     // boolean or string
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
-    var prev: js.UndefOr[String] = js.native
+    var prev: js.UndefOr[String] = js.undefined
     
-    var prevEvent: js.UndefOr[String] = js.native
+    var prevEvent: js.UndefOr[String] = js.undefined
     
-    var progressive: js.UndefOr[String] = js.native
+    var progressive: js.UndefOr[String] = js.undefined
     
-    var random: js.UndefOr[Boolean] = js.native
+    var random: js.UndefOr[Boolean] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var slideActiveClass: js.UndefOr[String] = js.native
+    var slideActiveClass: js.UndefOr[String] = js.undefined
     
-    var slideClass: js.UndefOr[String] = js.native
+    var slideClass: js.UndefOr[String] = js.undefined
     
-    var slideCss: js.UndefOr[js.Any] = js.native
+    var slideCss: js.UndefOr[js.Any] = js.undefined
     
-    var slides: js.UndefOr[String] = js.native
+    var slides: js.UndefOr[String] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var startingSlide: js.UndefOr[Double] = js.native
+    var startingSlide: js.UndefOr[Double] = js.undefined
     
-    var swipe: js.UndefOr[Boolean] = js.native
+    var swipe: js.UndefOr[Boolean] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tmplRegex: js.UndefOr[String] = js.native
+    var tmplRegex: js.UndefOr[String] = js.undefined
     
-    var updateView: js.UndefOr[Double] = js.native
+    var updateView: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -467,21 +465,22 @@ object JQueryCycle2 {
     }
   }
   
-  @js.native
-  trait OptionsWithState extends Options {
+  trait OptionsWithState
+    extends StObject
+       with Options {
     
-    var busy: Boolean = js.native
+    var busy: Boolean
     
-    var currSlide: Double = js.native
+    var currSlide: Double
     
-    var nextSlide: Double = js.native
+    var nextSlide: Double
     
     @JSName("paused")
-    var paused_OptionsWithState: Boolean = js.native
+    var paused_OptionsWithState: Boolean
     
-    var slideCount: Double = js.native
+    var slideCount: Double
     
-    var slideNum: Double = js.native
+    var slideNum: Double
   }
   object OptionsWithState {
     
@@ -521,10 +520,9 @@ object JQueryCycle2 {
     }
   }
   
-  @js.native
   trait Transition extends StObject {
     
-    def before(opts: Options, curr: Element, next: Element, fwd: Boolean): Unit = js.native
+    def before(opts: Options, curr: Element, next: Element, fwd: Boolean): Unit
   }
   object Transition {
     

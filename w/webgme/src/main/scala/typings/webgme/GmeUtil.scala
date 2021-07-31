@@ -2,17 +2,15 @@ package typings.webgme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmeUtil {
   
-  @js.native
   trait Canon extends StObject {
     
-    def parse(thing: js.Any): String = js.native
+    def parse(thing: js.Any): String
     
-    def stringify(thing: js.Any): String = js.native
+    def stringify(thing: js.Any): String
   }
   object Canon {
     

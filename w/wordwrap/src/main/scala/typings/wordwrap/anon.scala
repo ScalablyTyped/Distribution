@@ -2,15 +2,13 @@ package typings.wordwrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mode extends StObject {
     
-    var mode: js.UndefOr[typings.wordwrap.mod.Mode] = js.native
+    var mode: js.UndefOr[typings.wordwrap.mod.Mode] = js.undefined
   }
   object Mode {
     

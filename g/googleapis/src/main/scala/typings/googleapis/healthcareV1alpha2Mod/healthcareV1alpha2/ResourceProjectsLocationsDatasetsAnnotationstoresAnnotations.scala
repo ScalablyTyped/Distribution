@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Annotationstores$Annotations")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     */
   def create(): GaxiosPromise[SchemaAnnotation] = js.native
   def create(callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
   def create(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsCreate): GaxiosPromise[SchemaAnnotation] = js.native
   def create(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsCreate,
@@ -70,7 +69,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsDelete,
@@ -106,7 +105,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     */
   def get(): GaxiosPromise[SchemaAnnotation] = js.native
   def get(callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsGet): GaxiosPromise[SchemaAnnotation] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsGet,
@@ -146,7 +145,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     */
   def list(): GaxiosPromise[SchemaListAnnotationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAnnotationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAnnotationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAnnotationsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsList): GaxiosPromise[SchemaListAnnotationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsList,
@@ -184,7 +183,7 @@ class ResourceProjectsLocationsDatasetsAnnotationstoresAnnotations protected () 
     */
   def patch(): GaxiosPromise[SchemaAnnotation] = js.native
   def patch(callback: BodyResponseCallback[SchemaAnnotation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAnnotation] = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsPatch): GaxiosPromise[SchemaAnnotation] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsAnnotationstoresAnnotationsPatch,

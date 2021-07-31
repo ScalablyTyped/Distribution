@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMessages extends StObject {
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var sendButton: js.UndefOr[String] = js.native
+  var sendButton: js.UndefOr[String] = js.undefined
   
-  var toggleButton: js.UndefOr[String] = js.native
+  var toggleButton: js.UndefOr[String] = js.undefined
 }
 object ChatMessages {
   

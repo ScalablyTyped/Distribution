@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p2beta1AnnotateVideoResponse extends StObject {
   
   /** Annotation results for all videos specified in `AnnotateVideoRequest`. */
-  var annotationResults: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults]] = js.native
+  var annotationResults: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults]] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p2beta1AnnotateVideoResponse {
   

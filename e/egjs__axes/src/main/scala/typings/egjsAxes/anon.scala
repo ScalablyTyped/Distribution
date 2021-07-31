@@ -9,17 +9,15 @@ import typings.egjsAxes.panInputMod.PanInputOption
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DestPos extends StObject {
     
-    var destPos: Axis = js.native
+    var destPos: Axis
     
-    var duration: Double = js.native
+    var duration: Double
   }
   object DestPos {
     
@@ -42,7 +40,8 @@ object anon {
   
   @js.native
   trait TypeofPanInput
-    extends Instantiable1[(/* el */ HTMLElement) | (/* el */ String), PanInput]
+    extends StObject
+       with Instantiable1[(/* el */ HTMLElement) | (/* el */ String), PanInput]
        with Instantiable2[(/* el */ HTMLElement) | (/* el */ String), /* options */ PanInputOption, PanInput] {
     
     def getDirectionByAngle(angle: Double, thresholdAngle: Double): DIRECTION = js.native

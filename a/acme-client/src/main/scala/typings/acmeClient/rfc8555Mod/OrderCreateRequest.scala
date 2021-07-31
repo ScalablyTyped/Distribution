@@ -2,17 +2,15 @@ package typings.acmeClient.rfc8555Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderCreateRequest extends StObject {
   
-  var identifiers: js.Array[Identifier] = js.native
+  var identifiers: js.Array[Identifier]
   
-  var notAfter: js.UndefOr[String] = js.native
+  var notAfter: js.UndefOr[String] = js.undefined
   
-  var notBefore: js.UndefOr[String] = js.native
+  var notBefore: js.UndefOr[String] = js.undefined
 }
 object OrderCreateRequest {
   

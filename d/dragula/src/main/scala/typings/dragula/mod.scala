@@ -15,7 +15,6 @@ import typings.dragula.dragulaStrings.shadow
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -34,7 +33,6 @@ object mod extends Shortcut {
     def apply(options: DragulaOptions): Drake = js.native
   }
   
-  @js.native
   trait DragulaOptions extends StObject {
     
     var accepts: js.UndefOr[
@@ -45,27 +43,27 @@ object mod extends Shortcut {
           /* sibling */ js.UndefOr[Element], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var containers: js.UndefOr[js.Array[Element]] = js.native
+    var containers: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var copy: js.UndefOr[(js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean] = js.native
+    var copy: js.UndefOr[(js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean] = js.undefined
     
-    var copySortSource: js.UndefOr[Boolean] = js.native
+    var copySortSource: js.UndefOr[Boolean] = js.undefined
     
-    var delay: js.UndefOr[Boolean | Double] = js.native
+    var delay: js.UndefOr[Boolean | Double] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var ignoreInputTextSelection: js.UndefOr[Boolean] = js.native
+    var ignoreInputTextSelection: js.UndefOr[Boolean] = js.undefined
     
     var invalid: js.UndefOr[
         js.Function2[/* el */ js.UndefOr[Element], /* target */ js.UndefOr[Element], Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var isContainer: js.UndefOr[js.Function1[/* el */ js.UndefOr[Element], Boolean]] = js.native
+    var isContainer: js.UndefOr[js.Function1[/* el */ js.UndefOr[Element], Boolean]] = js.undefined
     
-    var mirrorContainer: js.UndefOr[Element] = js.native
+    var mirrorContainer: js.UndefOr[Element] = js.undefined
     
     var moves: js.UndefOr[
         js.Function4[
@@ -75,11 +73,11 @@ object mod extends Shortcut {
           /* sibling */ js.UndefOr[Element], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var removeOnSpill: js.UndefOr[Boolean] = js.native
+    var removeOnSpill: js.UndefOr[Boolean] = js.undefined
     
-    var revertOnSpill: js.UndefOr[Boolean] = js.native
+    var revertOnSpill: js.UndefOr[Boolean] = js.undefined
   }
   object DragulaOptions {
     

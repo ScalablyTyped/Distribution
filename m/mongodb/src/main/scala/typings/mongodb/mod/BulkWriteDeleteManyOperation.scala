@@ -2,13 +2,13 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BulkWriteDeleteManyOperation[TSchema] extends BulkWriteOperation[TSchema] {
+trait BulkWriteDeleteManyOperation[TSchema]
+  extends StObject
+     with BulkWriteOperation[TSchema] {
   
-  var deleteMany: BulkWriteDeleteOperation[TSchema] = js.native
+  var deleteMany: BulkWriteDeleteOperation[TSchema]
 }
 object BulkWriteDeleteManyOperation {
   
@@ -19,7 +19,7 @@ object BulkWriteDeleteManyOperation {
   }
   
   @scala.inline
-  implicit class BulkWriteDeleteManyOperationMutableBuilder[Self <: BulkWriteDeleteManyOperation[_], TSchema] (val x: Self with BulkWriteDeleteManyOperation[TSchema]) extends AnyVal {
+  implicit class BulkWriteDeleteManyOperationMutableBuilder[Self <: BulkWriteDeleteManyOperation[?], TSchema] (val x: Self & BulkWriteDeleteManyOperation[TSchema]) extends AnyVal {
     
     @scala.inline
     def setDeleteMany(value: BulkWriteDeleteOperation[TSchema]): Self = StObject.set(x, "deleteMany", value.asInstanceOf[js.Any])

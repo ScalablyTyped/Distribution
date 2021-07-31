@@ -40,13 +40,15 @@ import typings.reactPrimitives.reactPrimitivesStrings.diskSlashmemory
 import typings.reactPrimitives.reactPrimitivesStrings.memory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object Animated {
     
+    @JSImport("react-primitives", "Animated")
+    @js.native
+    val ^ : js.Any = js.native
     @JSImport("react-primitives", "Animated.Animated")
     @js.native
     class Animated ()
@@ -146,87 +148,65 @@ object mod {
     @js.native
     val View: AnimatedComponent[TypeofView] = js.native
     
-    @JSImport("react-primitives", "Animated.add")
-    @js.native
-    def add(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedAddition = js.native
+    @scala.inline
+    def add(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedAddition = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedAddition]
     
-    @JSImport("react-primitives", "Animated.createAnimatedComponent")
-    @js.native
-    def createAnimatedComponent[T /* <: ComponentType[_] */](component: T): AnimatedComponent[T] = js.native
+    @scala.inline
+    def createAnimatedComponent[T /* <: ComponentType[js.Any] */](component: T): AnimatedComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[AnimatedComponent[T]]
     
-    @JSImport("react-primitives", "Animated.decay")
-    @js.native
-    def decay(value: AnimatedValueXY, config: DecayAnimationConfig): CompositeAnimation = js.native
-    @JSImport("react-primitives", "Animated.decay")
-    @js.native
-    def decay(value: AnimatedValue, config: DecayAnimationConfig): CompositeAnimation = js.native
+    @scala.inline
+    def decay(value: AnimatedValueXY, config: DecayAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("decay")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
+    @scala.inline
+    def decay(value: AnimatedValue, config: DecayAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("decay")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.delay")
-    @js.native
-    def delay(time: Double): CompositeAnimation = js.native
+    @scala.inline
+    def delay(time: Double): CompositeAnimation = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.diffClamp")
-    @js.native
-    def diffClamp(a: typings.reactNative.mod.Animated.Animated, min: Double, max: Double): typings.reactNative.mod.Animated.AnimatedDiffClamp = js.native
+    @scala.inline
+    def diffClamp(a: typings.reactNative.mod.Animated.Animated, min: Double, max: Double): typings.reactNative.mod.Animated.AnimatedDiffClamp = (^.asInstanceOf[js.Dynamic].applyDynamic("diffClamp")(a.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedDiffClamp]
     
-    @JSImport("react-primitives", "Animated.divide")
-    @js.native
-    def divide(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedDivision = js.native
+    @scala.inline
+    def divide(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedDivision = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedDivision]
     
-    @JSImport("react-primitives", "Animated.event")
-    @js.native
-    def event[T](argMapping: js.Array[Mapping | Null]): js.Function1[/* repeated */ js.Any, Unit] = js.native
-    @JSImport("react-primitives", "Animated.event")
-    @js.native
-    def event[T](argMapping: js.Array[Mapping | Null], config: EventConfig[T]): js.Function1[/* repeated */ js.Any, Unit] = js.native
+    @scala.inline
+    def event[T](argMapping: js.Array[Mapping | Null]): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+    @scala.inline
+    def event[T](argMapping: js.Array[Mapping | Null], config: EventConfig[T]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
     
-    @JSImport("react-primitives", "Animated.loop")
-    @js.native
-    def loop(animation: CompositeAnimation): CompositeAnimation = js.native
-    @JSImport("react-primitives", "Animated.loop")
-    @js.native
-    def loop(animation: CompositeAnimation, config: LoopAnimationConfig): CompositeAnimation = js.native
+    @scala.inline
+    def loop(animation: CompositeAnimation): CompositeAnimation = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(animation.asInstanceOf[js.Any]).asInstanceOf[CompositeAnimation]
+    @scala.inline
+    def loop(animation: CompositeAnimation, config: LoopAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(animation.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.modulo")
-    @js.native
-    def modulo(a: typings.reactNative.mod.Animated.Animated, modulus: Double): typings.reactNative.mod.Animated.AnimatedModulo = js.native
+    @scala.inline
+    def modulo(a: typings.reactNative.mod.Animated.Animated, modulus: Double): typings.reactNative.mod.Animated.AnimatedModulo = (^.asInstanceOf[js.Dynamic].applyDynamic("modulo")(a.asInstanceOf[js.Any], modulus.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedModulo]
     
-    @JSImport("react-primitives", "Animated.multiply")
-    @js.native
-    def multiply(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedMultiplication = js.native
+    @scala.inline
+    def multiply(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedMultiplication = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedMultiplication]
     
-    @JSImport("react-primitives", "Animated.parallel")
-    @js.native
-    def parallel(animations: js.Array[CompositeAnimation]): CompositeAnimation = js.native
-    @JSImport("react-primitives", "Animated.parallel")
-    @js.native
-    def parallel(animations: js.Array[CompositeAnimation], config: ParallelConfig): CompositeAnimation = js.native
+    @scala.inline
+    def parallel(animations: js.Array[CompositeAnimation]): CompositeAnimation = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(animations.asInstanceOf[js.Any]).asInstanceOf[CompositeAnimation]
+    @scala.inline
+    def parallel(animations: js.Array[CompositeAnimation], config: ParallelConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(animations.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.sequence")
-    @js.native
-    def sequence(animations: js.Array[CompositeAnimation]): CompositeAnimation = js.native
+    @scala.inline
+    def sequence(animations: js.Array[CompositeAnimation]): CompositeAnimation = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(animations.asInstanceOf[js.Any]).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.spring")
-    @js.native
-    def spring(value: AnimatedValueXY, config: SpringAnimationConfig): CompositeAnimation = js.native
-    @JSImport("react-primitives", "Animated.spring")
-    @js.native
-    def spring(value: AnimatedValue, config: SpringAnimationConfig): CompositeAnimation = js.native
+    @scala.inline
+    def spring(value: AnimatedValueXY, config: SpringAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("spring")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
+    @scala.inline
+    def spring(value: AnimatedValue, config: SpringAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("spring")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.stagger")
-    @js.native
-    def stagger(time: Double, animations: js.Array[CompositeAnimation]): CompositeAnimation = js.native
+    @scala.inline
+    def stagger(time: Double, animations: js.Array[CompositeAnimation]): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(time.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
     
-    @JSImport("react-primitives", "Animated.subtract")
-    @js.native
-    def subtract(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedSubtraction = js.native
+    @scala.inline
+    def subtract(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedSubtraction = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedSubtraction]
     
-    @JSImport("react-primitives", "Animated.timing")
-    @js.native
-    def timing(value: AnimatedValueXY, config: TimingAnimationConfig): CompositeAnimation = js.native
-    @JSImport("react-primitives", "Animated.timing")
-    @js.native
-    def timing(value: AnimatedValue, config: TimingAnimationConfig): CompositeAnimation = js.native
+    @scala.inline
+    def timing(value: AnimatedValueXY, config: TimingAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
+    @scala.inline
+    def timing(value: AnimatedValue, config: TimingAnimationConfig): CompositeAnimation = (^.asInstanceOf[js.Dynamic].applyDynamic("timing")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[CompositeAnimation]
   }
   
   @JSImport("react-primitives", "Dimensions")
@@ -262,36 +242,31 @@ object mod {
     @scala.inline
     def abortPrefetch_=(x: js.UndefOr[js.Function1[/* requestId */ Double, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("abortPrefetch")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-primitives", "Image.getSize")
-    @js.native
-    def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): js.Any = js.native
-    @JSImport("react-primitives", "Image.getSize")
-    @js.native
+    @scala.inline
+    def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def getSize(
       uri: String,
       success: js.Function2[/* width */ Double, /* height */ Double, Unit],
       failure: js.Function1[/* error */ js.Any, Unit]
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(uri.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("react-primitives", "Image.getSizeWithHeaders")
-    @js.native
+    @scala.inline
     def getSizeWithHeaders(
       uri: String,
       headers: StringDictionary[String],
       success: js.Function2[/* width */ Double, /* height */ Double, Unit]
-    ): js.Any = js.native
-    @JSImport("react-primitives", "Image.getSizeWithHeaders")
-    @js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def getSizeWithHeaders(
       uri: String,
       headers: StringDictionary[String],
       success: js.Function2[/* width */ Double, /* height */ Double, Unit],
       failure: js.Function1[/* error */ js.Any, Unit]
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeWithHeaders")(uri.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("react-primitives", "Image.prefetch")
-    @js.native
-    def prefetch(url: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def prefetch(url: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefetch")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     @JSImport("react-primitives", "Image.queryCache")
     @js.native
@@ -314,9 +289,8 @@ object mod {
     /**
       * @see https://reactnative.dev/docs/image#resolveassetsource
       */
-    @JSImport("react-primitives", "Image.resolveAssetSource")
-    @js.native
-    def resolveAssetSource(source: ImageSourcePropType): ImageResolvedAssetSource = js.native
+    @scala.inline
+    def resolveAssetSource(source: ImageSourcePropType): ImageResolvedAssetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveAssetSource")(source.asInstanceOf[js.Any]).asInstanceOf[ImageResolvedAssetSource]
   }
   
   @JSImport("react-primitives", "PixelRatio")
@@ -329,6 +303,10 @@ object mod {
   
   object StyleSheet {
     
+    @JSImport("react-primitives", "StyleSheet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("react-primitives", "StyleSheet.absoluteFill")
     @js.native
     val absoluteFill: RegisteredStyle[AbsoluteFillStyle] = js.native
@@ -337,40 +315,31 @@ object mod {
     @js.native
     val absoluteFillObject: AbsoluteFillStyle = js.native
     
-    @JSImport("react-primitives", "StyleSheet.compose")
-    @js.native
-    def compose[T](style1: js.Array[StyleProp[T]], style2: js.Array[StyleProp[T]]): StyleProp[T] = js.native
-    @JSImport("react-primitives", "StyleSheet.compose")
-    @js.native
-    def compose[T](style1: js.Array[StyleProp[T]], style2: StyleProp[T]): StyleProp[T] = js.native
-    @JSImport("react-primitives", "StyleSheet.compose")
-    @js.native
-    def compose[T](style1: StyleProp[T], style2: js.Array[StyleProp[T]]): StyleProp[T] = js.native
-    @JSImport("react-primitives", "StyleSheet.compose")
-    @js.native
-    def compose[T](style1: StyleProp[T], style2: StyleProp[T]): StyleProp[T] = js.native
+    @scala.inline
+    def compose[T](style1: js.Array[StyleProp[T]], style2: js.Array[StyleProp[T]]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
+    @scala.inline
+    def compose[T](style1: js.Array[StyleProp[T]], style2: StyleProp[T]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
+    @scala.inline
+    def compose[T](style1: StyleProp[T], style2: js.Array[StyleProp[T]]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
+    @scala.inline
+    def compose[T](style1: StyleProp[T], style2: StyleProp[T]): StyleProp[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(style1.asInstanceOf[js.Any], style2.asInstanceOf[js.Any])).asInstanceOf[StyleProp[T]]
     
-    @JSImport("react-primitives", "StyleSheet.create")
-    @js.native
-    def create[T /* <: NamedStyles[_ | T] */](styles: T): T = js.native
-    @JSImport("react-primitives", "StyleSheet.create")
-    @js.native
-    def create[T /* <: NamedStyles[_ | T] */](styles: NamedStyles[T]): T = js.native
+    @scala.inline
+    def create[T /* <: NamedStyles[js.Any | T] */](styles: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def create[T /* <: NamedStyles[js.Any | T] */](styles: NamedStyles[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(styles.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("react-primitives", "StyleSheet.flatten")
-    @js.native
-    def flatten[T](): T = js.native
-    @JSImport("react-primitives", "StyleSheet.flatten")
-    @js.native
-    def flatten[T](style: StyleProp[T]): T = js.native
+    @scala.inline
+    def flatten[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[T]
+    @scala.inline
+    def flatten[T](style: StyleProp[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(style.asInstanceOf[js.Any]).asInstanceOf[T]
     
     @JSImport("react-primitives", "StyleSheet.hairlineWidth")
     @js.native
     val hairlineWidth: Double = js.native
     
-    @JSImport("react-primitives", "StyleSheet.setStyleAttributePreprocessor")
-    @js.native
-    def setStyleAttributePreprocessor(property: String, process: js.Function1[/* nextProp */ js.Any, _]): Unit = js.native
+    @scala.inline
+    def setStyleAttributePreprocessor(property: String, process: js.Function1[/* nextProp */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyleAttributePreprocessor")(property.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -427,19 +396,18 @@ object mod {
   */
   type PlatformOSType = _PlatformOSType | typings.reactNative.mod.PlatformOSType
   
-  @js.native
   trait PlatformStatic extends StObject {
     
-    var OS: PlatformOSType = js.native
+    var OS: PlatformOSType
     
-    var Version: Double | String = js.native
+    var Version: Double | String
     
     @JSName("select")
     def select_default[T](
       specifics: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-      */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with TopLevel[js.Any]
-    ): T = js.native
+      */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic & TopLevel[js.Any]
+    ): T
   }
   object PlatformStatic {
     
@@ -449,7 +417,7 @@ object mod {
       Version: Double | String,
       select: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-      */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with TopLevel[js.Any] => js.Any
+      */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic & TopLevel[js.Any] => js.Any
     ): PlatformStatic = {
       val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any], select = js.Any.fromFunction1(select))
       __obj.asInstanceOf[PlatformStatic]
@@ -465,7 +433,7 @@ object mod {
       def setSelect(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
-        */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic with TopLevel[js.Any] => js.Any
+        */ typings.reactPrimitives.reactPrimitivesStrings.PlatformStatic & TopLevel[js.Any] => js.Any
       ): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       @scala.inline

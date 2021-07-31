@@ -11,8 +11,8 @@ Electron clipboard extended with event handler for Text and Image change
 | Full name          | electron-clipboard-extended |
 | Keywords           | electron, clipboard |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1503 |
+| # dependents       | 1 |
+| # downloads        | 1471 |
 | # stars            | 2 |
 
 ## Links

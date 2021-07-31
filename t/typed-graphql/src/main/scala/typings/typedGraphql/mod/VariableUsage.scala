@@ -2,15 +2,13 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableUsage extends StObject {
   
-  var node: Variable = js.native
+  var node: Variable
   
-  var `type`: GraphQLInputType = js.native
+  var `type`: GraphQLInputType
 }
 object VariableUsage {
   

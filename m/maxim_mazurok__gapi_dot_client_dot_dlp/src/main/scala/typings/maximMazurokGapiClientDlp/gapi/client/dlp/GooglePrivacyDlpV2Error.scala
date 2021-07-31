@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Error extends StObject {
   
   /** Detailed error codes and messages. */
-  var details: js.UndefOr[GoogleRpcStatus] = js.native
+  var details: js.UndefOr[GoogleRpcStatus] = js.undefined
   
   /** The times the error occurred. */
-  var timestamps: js.UndefOr[js.Array[String]] = js.native
+  var timestamps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GooglePrivacyDlpV2Error {
   

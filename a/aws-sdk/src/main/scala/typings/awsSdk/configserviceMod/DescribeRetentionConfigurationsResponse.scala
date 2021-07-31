@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRetentionConfigurationsResponse extends StObject {
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
   
   /**
     * Returns a retention configuration object.
     */
-  var RetentionConfigurations: js.UndefOr[RetentionConfigurationList] = js.native
+  var RetentionConfigurations: js.UndefOr[RetentionConfigurationList] = js.undefined
 }
 object DescribeRetentionConfigurationsResponse {
   

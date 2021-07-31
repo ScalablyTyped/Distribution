@@ -2,7 +2,6 @@ package typings.chromeApps.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object dns {
   
-  @js.native
   trait ResolveCallbackResolveInfo extends StObject {
     
     /**
@@ -26,10 +24,10 @@ object dns {
       * Supplied only if resultCode indicates success.
       * Note that we presently return only IPv4 addresses.
       */
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
     /** The result code. Zero indicates success. */
-    var resultCode: integer = js.native
+    var resultCode: integer
   }
   object ResolveCallbackResolveInfo {
     

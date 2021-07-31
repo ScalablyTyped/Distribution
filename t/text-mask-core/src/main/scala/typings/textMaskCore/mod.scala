@@ -4,31 +4,32 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("text-mask-core", "createTextMaskInputElement")
+  @JSImport("text-mask-core", JSImport.Namespace)
   @js.native
-  def createTextMaskInputElement(config: CreateTextMaskConfig): TextMaskInputElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createTextMaskInputElement(config: CreateTextMaskConfig): TextMaskInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createTextMaskInputElement")(config.asInstanceOf[js.Any]).asInstanceOf[TextMaskInputElement]
+  
   trait CreateTextMaskConfig extends StObject {
     
-    var guide: js.UndefOr[String] = js.native
+    var guide: js.UndefOr[String] = js.undefined
     
-    var inputElement: HTMLInputElement = js.native
+    var inputElement: HTMLInputElement
     
-    var keepCharPositions: js.UndefOr[Boolean] = js.native
+    var keepCharPositions: js.UndefOr[Boolean] = js.undefined
     
-    var mask: Mask = js.native
+    var mask: Mask
     
-    var pipe: js.UndefOr[Pipe] = js.native
+    var pipe: js.UndefOr[Pipe] = js.undefined
     
-    var placeholderChar: js.UndefOr[String] = js.native
+    var placeholderChar: js.UndefOr[String] = js.undefined
     
-    var showMask: js.UndefOr[Boolean] = js.native
+    var showMask: js.UndefOr[Boolean] = js.undefined
   }
   object CreateTextMaskConfig {
     
@@ -86,12 +87,13 @@ object mod {
   
   type Pipe = js.Function2[/* conformedValue */ String, /* config */ js.Any, PipeResult]
   
-  @js.native
-  trait PipeAddResult extends _PipeResult {
+  trait PipeAddResult
+    extends StObject
+       with _PipeResult {
     
-    var indexesOfPipedChars: js.Array[Double] = js.native
+    var indexesOfPipedChars: js.Array[Double]
     
-    var value: String = js.native
+    var value: String
   }
   object PipeAddResult {
     

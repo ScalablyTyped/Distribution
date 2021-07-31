@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to delete the selected table cells with a horizontal shift.
   */
-@js.native
-trait DeleteTableCellsWithShiftHorizontallyCommand extends CommandWithSimpleStateBase {
+trait DeleteTableCellsWithShiftHorizontallyCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DeleteTableCellsWithShiftHorizontallyCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DeleteTableCellsWithShiftHorizontallyCommand {
   

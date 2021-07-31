@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XNameAccess
   * @see XEnumerationAccess
   */
-@js.native
-trait XContainer extends XInterface {
+trait XContainer
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive events when elements are inserted or removed.
@@ -28,7 +28,7 @@ trait XContainer extends XInterface {
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     * @see XContainerListener
     */
-  def addContainerListener(xListener: XContainerListener): Unit = js.native
+  def addContainerListener(xListener: XContainerListener): Unit
   
   /**
     * removes the specified listener so it does not receive any events from this container.
@@ -36,7 +36,7 @@ trait XContainer extends XInterface {
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     * @see XContainerListener
     */
-  def removeContainerListener(xListener: XContainerListener): Unit = js.native
+  def removeContainerListener(xListener: XContainerListener): Unit
 }
 object XContainer {
   

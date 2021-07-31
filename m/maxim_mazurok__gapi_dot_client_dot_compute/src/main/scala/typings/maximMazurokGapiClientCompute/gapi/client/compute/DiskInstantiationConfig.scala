@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskInstantiationConfig extends StObject {
   
   /** Specifies whether the disk will be auto-deleted when the instance is deleted (but not when the disk is detached from the instance). */
-  var autoDelete: js.UndefOr[Boolean] = js.native
+  var autoDelete: js.UndefOr[Boolean] = js.undefined
   
   /** The custom source image to be used to restore this disk when instantiating this instance template. */
-  var customImage: js.UndefOr[String] = js.native
+  var customImage: js.UndefOr[String] = js.undefined
   
   /** Specifies the device name of the disk to which the configurations apply to. */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether to include the disk and what image to use. Possible values are:
@@ -25,7 +23,7 @@ trait DiskInstantiationConfig extends StObject {
     * - attach-read-only: to attach a read-only disk. Applicable to read-only disks.
     * - do-not-include: to exclude a disk from the template. Applicable to additional read-write disks, local SSDs, and read-only disks.
     */
-  var instantiateFrom: js.UndefOr[String] = js.native
+  var instantiateFrom: js.UndefOr[String] = js.undefined
 }
 object DiskInstantiationConfig {
   

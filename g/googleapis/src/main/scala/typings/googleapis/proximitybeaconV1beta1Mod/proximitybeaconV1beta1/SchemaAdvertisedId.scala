@@ -2,13 +2,11 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a unique identifier of a beacon as broadcast by the device.
   */
-@js.native
 trait SchemaAdvertisedId extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaAdvertisedId extends StObject {
     * encoding should be of the binary byte-stream and not any textual (such as
     * hex) representation thereof. Required.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the identifier type. Required.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAdvertisedId {
   

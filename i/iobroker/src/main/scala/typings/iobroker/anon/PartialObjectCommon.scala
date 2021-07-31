@@ -4,22 +4,20 @@ import typings.iobroker.iobrokerBooleans.`true`
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.ObjectCommon> */
-@js.native
 trait PartialObjectCommon extends StObject {
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[StringOrTranslated] = js.native
+  var name: js.UndefOr[StringOrTranslated] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object PartialObjectCommon {
   

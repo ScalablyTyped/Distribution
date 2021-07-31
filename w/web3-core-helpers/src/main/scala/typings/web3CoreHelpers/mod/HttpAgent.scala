@@ -3,17 +3,15 @@ package typings.web3CoreHelpers.mod
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpAgent extends StObject {
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var http: js.UndefOr[Agent] = js.native
+  var http: js.UndefOr[Agent] = js.undefined
   
-  var https: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+  var https: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
 }
 object HttpAgent {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSuiteCloneRequest extends StObject {
   
-  var cloneOptions: CloneOptions = js.native
+  var cloneOptions: CloneOptions
   
-  var destinationSuiteId: Double = js.native
+  var destinationSuiteId: Double
   
-  var destinationSuiteProjectName: String = js.native
+  var destinationSuiteProjectName: String
 }
 object TestSuiteCloneRequest {
   

@@ -11,65 +11,74 @@ import typings.reactBootstrapTable2Toolkit.anon.OnExport
 import typings.reactBootstrapTableNext.mod.ColumnDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-bootstrap-table2-toolkit", JSImport.Default)
+  @JSImport("react-bootstrap-table2-toolkit", JSImport.Namespace)
   @js.native
-  def default(props: TableToolkitProps[_]): ReactElement | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: TableToolkitProps[js.Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   object CSVExport {
     
-    @JSImport("react-bootstrap-table2-toolkit", "CSVExport.ExportCSVButton")
+    @JSImport("react-bootstrap-table2-toolkit", "CSVExport")
     @js.native
-    def ExportCSVButton(props: ExportCSVButtonProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def ExportCSVButton(props: ExportCSVButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportCSVButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   object ColumnToggle {
     
-    @JSImport("react-bootstrap-table2-toolkit", "ColumnToggle.ToggleList")
+    @JSImport("react-bootstrap-table2-toolkit", "ColumnToggle")
     @js.native
-    def ToggleList(props: ToggleListProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def ToggleList(props: ToggleListProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleList")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   object Search {
     
-    @JSImport("react-bootstrap-table2-toolkit", "Search.ClearSearchButton")
+    @JSImport("react-bootstrap-table2-toolkit", "Search")
     @js.native
-    def ClearSearchButton(props: ClearSearchButtonProps): ReactElement | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-bootstrap-table2-toolkit", "Search.SearchBar")
-    @js.native
-    def SearchBar(props: SearchBarProps): ReactElement | Null = js.native
+    @scala.inline
+    def ClearSearchButton(props: ClearSearchButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearSearchButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @scala.inline
+    def SearchBar(props: SearchBarProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SearchBar")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   @JSImport("react-bootstrap-table2-toolkit", "ToolkitContext")
   @js.native
   val ToolkitContext: Context[ToolkitContextType] = js.native
   
-  @js.native
   trait CSVProps extends StObject {
     
     /**
       * default is text/plain;charset=utf-8
       */
-    var blobType: js.UndefOr[String] = js.native
+    var blobType: js.UndefOr[String] = js.undefined
     
-    var exportAll: js.UndefOr[Boolean] = js.native
+    var exportAll: js.UndefOr[Boolean] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var ignoreHeader: js.UndefOr[Boolean] = js.native
+    var ignoreHeader: js.UndefOr[Boolean] = js.undefined
     
-    var noAutoBOM: js.UndefOr[Boolean] = js.native
+    var noAutoBOM: js.UndefOr[Boolean] = js.undefined
     
-    var onlyExportFiltered: js.UndefOr[Boolean] = js.native
+    var onlyExportFiltered: js.UndefOr[Boolean] = js.undefined
     
-    var onlyExportSelection: js.UndefOr[Boolean] = js.native
+    var onlyExportSelection: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object CSVProps {
     
@@ -132,14 +141,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ClearSearchButtonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClear: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ClearSearchButtonProps {
     
@@ -172,16 +180,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ExportCSVButtonProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    def onExport(): Unit = js.native
+    def onExport(): Unit
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ExportCSVButtonProps {
     
@@ -217,14 +224,13 @@ object mod {
     }
   }
   
-  @js.native
   trait InjectedSearchProps extends StObject {
     
-    def onClear(): Unit = js.native
+    def onClear(): Unit
     
-    def onSearch(`val`: String): Unit = js.native
+    def onSearch(`val`: String): Unit
     
-    var searchText: String = js.native
+    var searchText: String
   }
   object InjectedSearchProps {
     
@@ -248,22 +254,21 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchBarProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    def onSearch(searchText: String): Unit = js.native
+    def onSearch(searchText: String): Unit
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var searchText: js.UndefOr[String] = js.native
+    var searchText: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tableId: js.UndefOr[String] = js.native
+    var tableId: js.UndefOr[String] = js.undefined
   }
   object SearchBarProps {
     
@@ -317,30 +322,29 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchMatchProps[T /* <: js.Object */] extends StObject {
     
-    var column: ColumnDescription[T, _] = js.native
+    var column: ColumnDescription[T, js.Any]
     
-    var row: T = js.native
+    var row: T
     
-    var searchText: String = js.native
+    var searchText: String
     
-    var value: String = js.native
+    var value: String
   }
   object SearchMatchProps {
     
     @scala.inline
-    def apply[T /* <: js.Object */](column: ColumnDescription[T, _], row: T, searchText: String, value: String): SearchMatchProps[T] = {
+    def apply[T /* <: js.Object */](column: ColumnDescription[T, js.Any], row: T, searchText: String, value: String): SearchMatchProps[T] = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchMatchProps[T]]
     }
     
     @scala.inline
-    implicit class SearchMatchPropsMutableBuilder[Self <: SearchMatchProps[_], T /* <: js.Object */] (val x: Self with SearchMatchProps[T]) extends AnyVal {
+    implicit class SearchMatchPropsMutableBuilder[Self <: SearchMatchProps[?], T /* <: js.Object */] (val x: Self & SearchMatchProps[T]) extends AnyVal {
       
       @scala.inline
-      def setColumn(value: ColumnDescription[T, _]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      def setColumn(value: ColumnDescription[T, js.Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
@@ -353,18 +357,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TableSearchProps[T /* <: js.Object */] extends StObject {
     
-    var customMatchFunc: js.UndefOr[js.Function1[/* props */ SearchMatchProps[T], Boolean]] = js.native
+    var customMatchFunc: js.UndefOr[js.Function1[/* props */ SearchMatchProps[T], Boolean]] = js.undefined
     
-    var defaultSearch: js.UndefOr[String] = js.native
+    var defaultSearch: js.UndefOr[String] = js.undefined
     
-    var onColumnMatch: js.UndefOr[js.Function1[/* props */ SearchMatchProps[T], Unit]] = js.native
+    var onColumnMatch: js.UndefOr[js.Function1[/* props */ SearchMatchProps[T], Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var searchFormatted: js.UndefOr[Boolean] = js.native
+    var searchFormatted: js.UndefOr[Boolean] = js.undefined
   }
   object TableSearchProps {
     
@@ -375,7 +378,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TableSearchPropsMutableBuilder[Self <: TableSearchProps[_], T /* <: js.Object */] (val x: Self with TableSearchProps[T]) extends AnyVal {
+    implicit class TableSearchPropsMutableBuilder[Self <: TableSearchProps[?], T /* <: js.Object */] (val x: Self & TableSearchProps[T]) extends AnyVal {
       
       @scala.inline
       def setCustomMatchFunc(value: /* props */ SearchMatchProps[T] => Boolean): Self = StObject.set(x, "customMatchFunc", js.Any.fromFunction1(value))
@@ -409,33 +412,32 @@ object mod {
     }
   }
   
-  @js.native
   trait TableToolkitProps[T /* <: js.Object */] extends StObject {
     
-    var bootstrap4: js.UndefOr[Boolean] = js.native
+    var bootstrap4: js.UndefOr[Boolean] = js.undefined
     
-    def children(props: ToolkitContextType): Element = js.native
+    def children(props: ToolkitContextType): Element
     
-    var columnToggle: js.UndefOr[Boolean] = js.native
+    var columnToggle: js.UndefOr[Boolean] = js.undefined
     
-    var columns: js.Array[ColumnDescription[T, _]] = js.native
+    var columns: js.Array[ColumnDescription[T, js.Any]]
     
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
-    var exportCSV: js.UndefOr[Boolean | CSVProps] = js.native
+    var exportCSV: js.UndefOr[Boolean | CSVProps] = js.undefined
     
-    var keyField: /* keyof T */ String = js.native
+    var keyField: /* keyof T */ String
     
-    var ref: js.UndefOr[js.Any] = js.native
+    var ref: js.UndefOr[js.Any] = js.undefined
     
-    var search: js.UndefOr[TableSearchProps[T] | Boolean] = js.native
+    var search: js.UndefOr[TableSearchProps[T] | Boolean] = js.undefined
   }
   object TableToolkitProps {
     
     @scala.inline
     def apply[T /* <: js.Object */](
       children: ToolkitContextType => Element,
-      columns: js.Array[ColumnDescription[T, _]],
+      columns: js.Array[ColumnDescription[T, js.Any]],
       data: js.Array[T],
       keyField: /* keyof T */ String
     ): TableToolkitProps[T] = {
@@ -444,7 +446,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TableToolkitPropsMutableBuilder[Self <: TableToolkitProps[_], T /* <: js.Object */] (val x: Self with TableToolkitProps[T]) extends AnyVal {
+    implicit class TableToolkitPropsMutableBuilder[Self <: TableToolkitProps[?], T /* <: js.Object */] (val x: Self & TableToolkitProps[T]) extends AnyVal {
       
       @scala.inline
       def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
@@ -462,7 +464,7 @@ object mod {
       def setColumnToggleUndefined: Self = StObject.set(x, "columnToggle", js.undefined)
       
       @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[T, _]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      def setColumns(value: js.Array[ColumnDescription[T, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnsVarargs(value: (ColumnDescription[T, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
@@ -496,29 +498,28 @@ object mod {
     }
   }
   
-  @js.native
   trait ToggleListProps extends StObject {
     
-    var btnClassName: js.UndefOr[String] = js.native
+    var btnClassName: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columns: js.Array[ColumnDescription[_, _]] = js.native
+    var columns: js.Array[ColumnDescription[js.Any, js.Any]]
     
-    var contextual: js.UndefOr[String] = js.native
+    var contextual: js.UndefOr[String] = js.undefined
     
-    def onColumnToggle(dataField: String): Unit = js.native
+    def onColumnToggle(dataField: String): Unit
     
     /**
       * array of toggled columns
       */
-    var toggles: js.Array[Boolean] = js.native
+    var toggles: js.Array[Boolean]
   }
   object ToggleListProps {
     
     @scala.inline
     def apply(
-      columns: js.Array[ColumnDescription[_, _]],
+      columns: js.Array[ColumnDescription[js.Any, js.Any]],
       onColumnToggle: String => Unit,
       toggles: js.Array[Boolean]
     ): ToggleListProps = {
@@ -542,7 +543,7 @@ object mod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[_, _]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
@@ -564,16 +565,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ToolkitContextType extends StObject {
     
-    var baseProps: Bootstrap4 = js.native
+    var baseProps: Bootstrap4
     
-    var columnToggleProps: Columns = js.native
+    var columnToggleProps: Columns
     
-    var csvProps: OnExport = js.native
+    var csvProps: OnExport
     
-    var searchProps: InjectedSearchProps = js.native
+    var searchProps: InjectedSearchProps
   }
   object ToolkitContextType {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorRootCause extends StObject {
   
   /**
     * A flag that denotes that the root cause impacts the trace client.
     */
-  var ClientImpacting: js.UndefOr[NullableBoolean] = js.native
+  var ClientImpacting: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * A list of services corresponding to an error. A service identifies a segment and it contains a name, account ID, type, and inferred flag.
     */
-  var Services: js.UndefOr[ErrorRootCauseServices] = js.native
+  var Services: js.UndefOr[ErrorRootCauseServices] = js.undefined
 }
 object ErrorRootCause {
   

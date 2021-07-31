@@ -3,19 +3,18 @@ package typings.backboneMarionette.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectOptions
-  extends RadioMixinOptions
+  extends StObject
+     with RadioMixinOptions
      with /* index */ StringDictionary[js.Any] {
   
   /**
     * Initialize is called immediately after the Object has been instantiated,
     * and is invoked with the same arguments that the constructor received.
     */
-  var initialize: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Unit]] = js.native
+  var initialize: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Unit]] = js.undefined
 }
 object ObjectOptions {
   

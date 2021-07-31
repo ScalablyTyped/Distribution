@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSnapshotsResponse extends StObject {
   
   /** If not empty, indicates that there may be more snapshot that match the request; this value should be passed in a new `ListSnapshotsRequest`. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The resulting snapshots. */
-  var snapshots: js.UndefOr[js.Array[Snapshot]] = js.native
+  var snapshots: js.UndefOr[js.Array[Snapshot]] = js.undefined
 }
 object ListSnapshotsResponse {
   

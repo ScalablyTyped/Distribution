@@ -11,8 +11,8 @@ An abstract class implementing Passport's strategy API.
 | Full name          | passport-strategy |
 | Keywords           | passport, strategy |
 | # releases         | 0 |
-| # dependents       | 482 |
-| # downloads        | 35835328 |
+| # dependents       | 497 |
+| # downloads        | 41917422 |
 | # stars            | 8 |
 
 ## Links

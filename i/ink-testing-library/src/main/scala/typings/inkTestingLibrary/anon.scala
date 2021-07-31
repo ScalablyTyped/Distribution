@@ -2,15 +2,13 @@ package typings.inkTestingLibrary
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Write extends StObject {
     
-    def write(data: js.Any): Boolean = js.native
+    def write(data: js.Any): Boolean
   }
   object Write {
     

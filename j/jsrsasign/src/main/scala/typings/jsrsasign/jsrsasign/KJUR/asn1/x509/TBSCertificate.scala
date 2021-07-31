@@ -11,7 +11,6 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  o.appendExtension(new KJUR.asn1.x509.KeyUsage({'bin':'11'}));
   */
 @js.native
-trait TBSCertificate extends ASN1Object {
+trait TBSCertificate
+  extends StObject
+     with ASN1Object {
   
   /* private */ def _initialize(): Unit = js.native
   

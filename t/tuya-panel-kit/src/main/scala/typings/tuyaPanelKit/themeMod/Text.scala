@@ -2,17 +2,15 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
-  var heading: TextThemeMap = js.native
+  var heading: TextThemeMap
   
-  var paragraph: TextThemeMap = js.native
+  var paragraph: TextThemeMap
   
-  var title: TextThemeMap = js.native
+  var title: TextThemeMap
 }
 object Text {
   

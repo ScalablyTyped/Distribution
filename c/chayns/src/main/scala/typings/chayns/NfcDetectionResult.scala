@@ -2,16 +2,14 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.startNfcDetection()
-@js.native
 trait NfcDetectionResult extends StObject {
   
-  var connected: Boolean = js.native
+  var connected: Boolean
   
-  var rfid: String = js.native
+  var rfid: String
 }
 object NfcDetectionResult {
   

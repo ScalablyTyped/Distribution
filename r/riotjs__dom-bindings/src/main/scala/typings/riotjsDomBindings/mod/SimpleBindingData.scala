@@ -2,15 +2,14 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleBindingData
-  extends BaseBindingData
+  extends StObject
+     with BaseBindingData
      with BindingData {
   
-  var expressions: js.Array[ExpressionData] = js.native
+  var expressions: js.Array[ExpressionData]
 }
 object SimpleBindingData {
   

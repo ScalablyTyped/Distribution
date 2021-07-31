@@ -3,19 +3,17 @@ package typings.reactNativeMaps.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgePadding extends StObject {
   
-  var bottom: Number = js.native
+  var bottom: Number
   
-  var left: Number = js.native
+  var left: Number
   
-  var right: Number = js.native
+  var right: Number
   
-  var top: Number = js.native
+  var top: Number
 }
 object EdgePadding {
   

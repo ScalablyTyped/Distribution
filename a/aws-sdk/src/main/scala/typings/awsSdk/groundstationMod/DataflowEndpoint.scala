@@ -2,31 +2,29 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataflowEndpoint extends StObject {
   
   /**
     * Socket address of a dataflow endpoint.
     */
-  var address: js.UndefOr[SocketAddress] = js.native
+  var address: js.UndefOr[SocketAddress] = js.undefined
   
   /**
     * Maximum transmission unit (MTU) size in bytes of a dataflow endpoint.
     */
-  var mtu: js.UndefOr[DataflowEndpointmtuInteger] = js.native
+  var mtu: js.UndefOr[DataflowEndpointmtuInteger] = js.undefined
   
   /**
     * Name of a dataflow endpoint.
     */
-  var name: js.UndefOr[SafeName] = js.native
+  var name: js.UndefOr[SafeName] = js.undefined
   
   /**
     * Status of a dataflow endpoint.
     */
-  var status: js.UndefOr[EndpointStatus] = js.native
+  var status: js.UndefOr[EndpointStatus] = js.undefined
 }
 object DataflowEndpoint {
   

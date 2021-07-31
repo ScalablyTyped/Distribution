@@ -14,7 +14,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskApiMod {
@@ -95,14 +94,6 @@ object taskApiMod {
     ): js.Promise[js.Array[TaskAttachment]] = js.native
     
     def getLog(scopeIdentifier: String, hubName: String, planId: String, logId: Double): js.Promise[js.Array[String]] = js.native
-    def getLog(
-      scopeIdentifier: String,
-      hubName: String,
-      planId: String,
-      logId: Double,
-      startLine: js.UndefOr[scala.Nothing],
-      endLine: Double
-    ): js.Promise[js.Array[String]] = js.native
     def getLog(scopeIdentifier: String, hubName: String, planId: String, logId: Double, startLine: Double): js.Promise[js.Array[String]] = js.native
     def getLog(
       scopeIdentifier: String,
@@ -110,6 +101,14 @@ object taskApiMod {
       planId: String,
       logId: Double,
       startLine: Double,
+      endLine: Double
+    ): js.Promise[js.Array[String]] = js.native
+    def getLog(
+      scopeIdentifier: String,
+      hubName: String,
+      planId: String,
+      logId: Double,
+      startLine: Unit,
       endLine: Double
     ): js.Promise[js.Array[String]] = js.native
     
@@ -120,7 +119,7 @@ object taskApiMod {
     def getPlanAttachments(scopeIdentifier: String, hubName: String, planId: String, `type`: String): js.Promise[js.Array[TaskAttachment]] = js.native
     
     def getQueuedPlanGroups(scopeIdentifier: String, hubName: String): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
-    def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: js.UndefOr[scala.Nothing], count: Double): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
+    def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: Unit, count: Double): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
     def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: PlanGroupStatusFilter): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
     def getQueuedPlanGroups(scopeIdentifier: String, hubName: String, statusFilter: PlanGroupStatusFilter, count: Double): js.Promise[js.Array[TaskOrchestrationQueuedPlanGroup]] = js.native
     
@@ -128,14 +127,6 @@ object taskApiMod {
     def getRecords(scopeIdentifier: String, hubName: String, planId: String, timelineId: String, changeId: Double): js.Promise[js.Array[TimelineRecord]] = js.native
     
     def getTimeline(scopeIdentifier: String, hubName: String, planId: String, timelineId: String): js.Promise[Timeline] = js.native
-    def getTimeline(
-      scopeIdentifier: String,
-      hubName: String,
-      planId: String,
-      timelineId: String,
-      changeId: js.UndefOr[scala.Nothing],
-      includeRecords: Boolean
-    ): js.Promise[Timeline] = js.native
     def getTimeline(scopeIdentifier: String, hubName: String, planId: String, timelineId: String, changeId: Double): js.Promise[Timeline] = js.native
     def getTimeline(
       scopeIdentifier: String,
@@ -143,6 +134,14 @@ object taskApiMod {
       planId: String,
       timelineId: String,
       changeId: Double,
+      includeRecords: Boolean
+    ): js.Promise[Timeline] = js.native
+    def getTimeline(
+      scopeIdentifier: String,
+      hubName: String,
+      planId: String,
+      timelineId: String,
+      changeId: Unit,
       includeRecords: Boolean
     ): js.Promise[Timeline] = js.native
     

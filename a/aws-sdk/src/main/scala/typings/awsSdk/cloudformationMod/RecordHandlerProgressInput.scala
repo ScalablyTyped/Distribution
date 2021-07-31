@@ -2,46 +2,44 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordHandlerProgressInput extends StObject {
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var BearerToken: ClientToken = js.native
+  var BearerToken: ClientToken
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.cloudformationMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.cloudformationMod.ClientRequestToken] = js.undefined
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var CurrentOperationStatus: js.UndefOr[OperationStatus] = js.native
+  var CurrentOperationStatus: js.UndefOr[OperationStatus] = js.undefined
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var ErrorCode: js.UndefOr[HandlerErrorCode] = js.native
+  var ErrorCode: js.UndefOr[HandlerErrorCode] = js.undefined
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var OperationStatus: typings.awsSdk.cloudformationMod.OperationStatus = js.native
+  var OperationStatus: typings.awsSdk.cloudformationMod.OperationStatus
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var ResourceModel: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceModel] = js.native
+  var ResourceModel: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceModel] = js.undefined
   
   /**
     * Reserved for use by the CloudFormation CLI.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.cloudformationMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.cloudformationMod.StatusMessage] = js.undefined
 }
 object RecordHandlerProgressInput {
   

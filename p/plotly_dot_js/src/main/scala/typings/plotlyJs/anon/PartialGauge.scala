@@ -8,28 +8,26 @@ import typings.plotlyJs.plotlyJsStrings.bullet
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Gauge> */
-@js.native
 trait PartialGauge extends StObject {
   
-  var axis: js.UndefOr[Partial[Axis]] = js.native
+  var axis: js.UndefOr[Partial[Axis]] = js.undefined
   
-  var bar: js.UndefOr[Partial[GaugeBar]] = js.native
+  var bar: js.UndefOr[Partial[GaugeBar]] = js.undefined
   
-  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var bordercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bordercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var borderwidth: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var shape: js.UndefOr[angular | bullet] = js.native
+  var shape: js.UndefOr[angular | bullet] = js.undefined
   
-  var steps: js.UndefOr[js.Array[Color]] = js.native
+  var steps: js.UndefOr[js.Array[Color]] = js.undefined
   
-  var threshold: js.UndefOr[Partial[Threshold]] = js.native
+  var threshold: js.UndefOr[Partial[Threshold]] = js.undefined
 }
 object PartialGauge {
   

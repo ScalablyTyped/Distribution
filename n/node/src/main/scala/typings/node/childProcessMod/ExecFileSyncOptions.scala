@@ -10,23 +10,23 @@ import typings.node.processMod.global.NodeJS.Signals
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecFileSyncOptions extends CommonOptions {
+trait ExecFileSyncOptions
+  extends StObject
+     with CommonOptions {
   
-  var encoding: js.UndefOr[BufferEncoding] = js.native
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
   
-  var input: js.UndefOr[String | ArrayBufferView] = js.native
+  var input: js.UndefOr[String | ArrayBufferView] = js.undefined
   
-  var killSignal: js.UndefOr[Signals | Double] = js.native
+  var killSignal: js.UndefOr[Signals | Double] = js.undefined
   
-  var maxBuffer: js.UndefOr[Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var shell: js.UndefOr[Boolean | String] = js.native
+  var shell: js.UndefOr[Boolean | String] = js.undefined
   
-  var stdio: js.UndefOr[StdioOptions] = js.native
+  var stdio: js.UndefOr[StdioOptions] = js.undefined
 }
 object ExecFileSyncOptions {
   

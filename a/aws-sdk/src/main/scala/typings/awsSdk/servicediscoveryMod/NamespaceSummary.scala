@@ -2,48 +2,46 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamespaceSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that AWS Cloud Map assigns to the namespace when you create it.
     */
-  var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.servicediscoveryMod.Arn] = js.undefined
   
   /**
     * The date and time that the namespace was created.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.native
+  var CreateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description for the namespace.
     */
-  var Description: js.UndefOr[ResourceDescription] = js.native
+  var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * The ID of the namespace.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The name of the namespace. When you create a namespace, AWS Cloud Map automatically creates a Route 53 hosted zone that has the same name as the namespace.
     */
-  var Name: js.UndefOr[NamespaceName] = js.native
+  var Name: js.UndefOr[NamespaceName] = js.undefined
   
-  var Properties: js.UndefOr[NamespaceProperties] = js.native
+  var Properties: js.UndefOr[NamespaceProperties] = js.undefined
   
   /**
     * The number of services that were created using the namespace.
     */
-  var ServiceCount: js.UndefOr[ResourceCount] = js.native
+  var ServiceCount: js.UndefOr[ResourceCount] = js.undefined
   
   /**
     * The type of the namespace, either public or private.
     */
-  var Type: js.UndefOr[NamespaceType] = js.native
+  var Type: js.UndefOr[NamespaceType] = js.undefined
 }
 object NamespaceSummary {
   

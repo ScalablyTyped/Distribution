@@ -10,37 +10,36 @@ import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.StateSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object patternsMod {
   
-  @JSImport("xstate/lib/patterns", "sequence")
+  @JSImport("xstate/lib/patterns", JSImport.Namespace)
   @js.native
-  def sequence_states[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sequence_states[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ]
-  ): Initial[TStateSchema, TEvent] = js.native
-  @JSImport("xstate/lib/patterns", "sequence")
-  @js.native
-  def sequence_states[TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
+  ): Initial[TStateSchema, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(items.asInstanceOf[js.Any]).asInstanceOf[Initial[TStateSchema, TEvent]]
+  @scala.inline
+  def sequence_states[TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](
     items: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
     ],
     options: Partial[SequencePatternOptions[TEvent]]
-  ): Initial[TStateSchema, TEvent] = js.native
+  ): Initial[TStateSchema, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(items.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Initial[TStateSchema, TEvent]]
   
-  @JSImport("xstate/lib/patterns", "toggle")
-  @js.native
-  def toggle[TEventType /* <: String */](onState: String, offState: String, eventType: TEventType): Record[String, AtomicStateNodeConfig[_, TypeTEventType[TEventType]]] = js.native
+  @scala.inline
+  def toggle[TEventType /* <: String */](onState: String, offState: String, eventType: TEventType): Record[String, AtomicStateNodeConfig[js.Any, TypeTEventType[TEventType]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(onState.asInstanceOf[js.Any], offState.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Record[String, AtomicStateNodeConfig[js.Any, TypeTEventType[TEventType]]]]
   
-  @js.native
   trait SequencePatternOptions[TEvent /* <: EventObject */] extends StObject {
     
-    var nextEvent: js.UndefOr[Event[TEvent]] = js.native
+    var nextEvent: js.UndefOr[Event[TEvent]] = js.undefined
     
-    var prevEvent: js.UndefOr[Event[TEvent]] = js.native
+    var prevEvent: js.UndefOr[Event[TEvent]] = js.undefined
   }
   object SequencePatternOptions {
     
@@ -51,7 +50,7 @@ object patternsMod {
     }
     
     @scala.inline
-    implicit class SequencePatternOptionsMutableBuilder[Self <: SequencePatternOptions[_], TEvent /* <: EventObject */] (val x: Self with SequencePatternOptions[TEvent]) extends AnyVal {
+    implicit class SequencePatternOptionsMutableBuilder[Self <: SequencePatternOptions[?], TEvent /* <: EventObject */] (val x: Self & SequencePatternOptions[TEvent]) extends AnyVal {
       
       @scala.inline
       def setNextEvent(value: Event[TEvent]): Self = StObject.set(x, "nextEvent", value.asInstanceOf[js.Any])

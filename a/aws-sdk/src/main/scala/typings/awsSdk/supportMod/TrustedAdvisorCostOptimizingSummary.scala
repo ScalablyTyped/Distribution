@@ -2,21 +2,19 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrustedAdvisorCostOptimizingSummary extends StObject {
   
   /**
     * The estimated monthly savings that might be realized if the recommended operations are taken.
     */
-  var estimatedMonthlySavings: Double = js.native
+  var estimatedMonthlySavings: Double
   
   /**
     * The estimated percentage of savings that might be realized if the recommended operations are taken.
     */
-  var estimatedPercentMonthlySavings: Double = js.native
+  var estimatedPercentMonthlySavings: Double
 }
 object TrustedAdvisorCostOptimizingSummary {
   

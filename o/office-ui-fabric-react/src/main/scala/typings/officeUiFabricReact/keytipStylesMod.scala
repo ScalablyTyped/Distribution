@@ -8,20 +8,20 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunction
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keytipStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/Keytip/Keytip.styles", "getCalloutOffsetStyles")
+  @JSImport("office-ui-fabric-react/lib/components/Keytip/Keytip.styles", JSImport.Namespace)
   @js.native
-  def getCalloutOffsetStyles(offset: Point): IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/Keytip/Keytip.styles", "getCalloutStyles")
-  @js.native
-  def getCalloutStyles(props: ICalloutContentStyleProps): ICalloutContentStyles = js.native
+  @scala.inline
+  def getCalloutOffsetStyles(offset: Point): IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalloutOffsetStyles")(offset.asInstanceOf[js.Any]).asInstanceOf[IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles]]
   
-  @JSImport("office-ui-fabric-react/lib/components/Keytip/Keytip.styles", "getStyles")
-  @js.native
-  def getStyles(props: IKeytipStyleProps): IKeytipStyles = js.native
+  @scala.inline
+  def getCalloutStyles(props: ICalloutContentStyleProps): ICalloutContentStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalloutStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICalloutContentStyles]
+  
+  @scala.inline
+  def getStyles(props: IKeytipStyleProps): IKeytipStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IKeytipStyles]
 }

@@ -3,15 +3,13 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateParam extends StObject {
   
-  var date: Date = js.native
+  var date: Date
   
-  var withMillis: js.UndefOr[Boolean] = js.native
+  var withMillis: js.UndefOr[Boolean] = js.undefined
 }
 object DateParam {
   

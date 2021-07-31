@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.background
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[BackgroundLayout] = js.native
+  var layout: js.UndefOr[BackgroundLayout] = js.undefined
   
-  var paint: js.UndefOr[BackgroundPaint] = js.native
+  var paint: js.UndefOr[BackgroundPaint] = js.undefined
   
-  var `type`: background = js.native
+  var `type`: background
 }
 object BackgroundLayer {
   
   @scala.inline
-  def apply(id: String, `type`: background): BackgroundLayer = {
+  def apply(id: String): BackgroundLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("background")
     __obj.asInstanceOf[BackgroundLayer]
   }
   

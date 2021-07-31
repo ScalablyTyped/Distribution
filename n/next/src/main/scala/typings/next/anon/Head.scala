@@ -2,19 +2,17 @@ package typings.next.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Head extends StObject {
   
-  var Head: js.UndefOr[Boolean] = js.native
+  var Head: js.UndefOr[Boolean] = js.undefined
   
-  var Html: js.UndefOr[Boolean] = js.native
+  var Html: js.UndefOr[Boolean] = js.undefined
   
-  var Main: js.UndefOr[Boolean] = js.native
+  var Main: js.UndefOr[Boolean] = js.undefined
   
-  var NextScript: js.UndefOr[Boolean] = js.native
+  var NextScript: js.UndefOr[Boolean] = js.undefined
 }
 object Head {
   

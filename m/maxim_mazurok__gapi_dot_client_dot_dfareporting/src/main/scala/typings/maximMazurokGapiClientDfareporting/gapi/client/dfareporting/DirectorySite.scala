@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectorySite extends StObject {
   
   /** ID of this directory site. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of this directory site. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Tag types for regular placements. Acceptable values are: - "STANDARD" - "IFRAME_JAVASCRIPT_INPAGE" - "INTERNAL_REDIRECT_INPAGE" - "JAVASCRIPT_INPAGE" */
-  var inpageTagFormats: js.UndefOr[js.Array[String]] = js.native
+  var inpageTagFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Tag types for interstitial placements. Acceptable values are: - "IFRAME_JAVASCRIPT_INTERSTITIAL" - "INTERNAL_REDIRECT_INTERSTITIAL" - "JAVASCRIPT_INTERSTITIAL" */
-  var interstitialTagFormats: js.UndefOr[js.Array[String]] = js.native
+  var interstitialTagFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#directorySite". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Name of this directory site. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Directory site settings. */
-  var settings: js.UndefOr[DirectorySiteSettings] = js.native
+  var settings: js.UndefOr[DirectorySiteSettings] = js.undefined
   
   /** URL of this directory site. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DirectorySite {
   

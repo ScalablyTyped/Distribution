@@ -2,7 +2,6 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait TableRowCollectionLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableRowCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cellCount: js.UndefOr[Boolean] = js.native
+  var cellCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableRowCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cells: js.UndefOr[TableCellCollectionLoadOptions] = js.native
+  var cells: js.UndefOr[TableCellCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableRowCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableRowCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentTable: js.UndefOr[TableLoadOptions] = js.native
+  var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait TableRowCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowIndex: js.UndefOr[Boolean] = js.native
+  var rowIndex: js.UndefOr[Boolean] = js.undefined
 }
 object TableRowCollectionLoadOptions {
   

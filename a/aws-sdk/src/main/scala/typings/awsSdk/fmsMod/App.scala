@@ -2,26 +2,24 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
   /**
     * The application's name.
     */
-  var AppName: ResourceName = js.native
+  var AppName: ResourceName
   
   /**
     * The application's port number, for example 80.
     */
-  var Port: IPPortNumber = js.native
+  var Port: IPPortNumber
   
   /**
     * The IP protocol name or number. The name can be one of tcp, udp, or icmp. For information on possible numbers, see Protocol Numbers.
     */
-  var Protocol: typings.awsSdk.fmsMod.Protocol = js.native
+  var Protocol: typings.awsSdk.fmsMod.Protocol
 }
 object App {
   

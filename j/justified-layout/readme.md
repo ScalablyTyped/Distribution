@@ -10,9 +10,9 @@ Pass in box sizes and get back sizes and coordinates for a justified layout
 | ------------------ | :-------------: |
 | Full name          | justified-layout |
 | Keywords           | justify, grid, photos, layout, boxes |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 12 |
-| # downloads        | 96834 |
+| # downloads        | 110772 |
 | # stars            | 1 |
 
 ## Links

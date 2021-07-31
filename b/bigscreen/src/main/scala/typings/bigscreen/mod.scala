@@ -4,10 +4,13 @@ import typings.std.Element
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bigscreen", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bigscreen", "element")
   @js.native
@@ -17,165 +20,131 @@ object mod {
   @js.native
   val enabled: Boolean = js.native
   
-  @JSImport("bigscreen", "exit")
-  @js.native
-  def exit(): Unit = js.native
+  @scala.inline
+  def exit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")().asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "onchange")
-  @js.native
-  def onchange(element: Element): Unit = js.native
+  @scala.inline
+  def onchange(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onchange")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "onenter")
-  @js.native
-  def onenter(element: Element): Unit = js.native
+  @scala.inline
+  def onenter(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onenter")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "onerror")
-  @js.native
-  def onerror(element: Element, reason: String): Unit = js.native
+  @scala.inline
+  def onerror(element: Element, reason: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onerror")(element.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "onexit")
-  @js.native
-  def onexit(): Unit = js.native
+  @scala.inline
+  def onexit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onexit")().asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(element: Element): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(
-    element: Element,
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(element: Element, onEnter: js.UndefOr[scala.Nothing], onExit: js.Function0[Unit]): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(
-    element: Element,
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.Function0[Unit],
-    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(element: Element, onEnter: js.Function1[/* element */ Element, Unit]): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(
-    element: Element,
-    onEnter: js.Function1[/* element */ Element, Unit],
-    onExit: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
-  def request(element: Element, onEnter: js.Function1[/* element */ Element, Unit], onExit: js.Function0[Unit]): Unit = js.native
-  @JSImport("bigscreen", "request")
-  @js.native
+  @scala.inline
+  def request(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def request(element: Element, onEnter: js.Function1[/* element */ Element, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(element: Element, onEnter: js.Function1[/* element */ Element, Unit], onExit: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def request(
     element: Element,
     onEnter: js.Function1[/* element */ Element, Unit],
     onExit: js.Function0[Unit],
     onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(
+    element: Element,
+    onEnter: js.Function1[/* element */ Element, Unit],
+    onExit: Unit,
+    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(element: Element, onEnter: Unit, onExit: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(
+    element: Element,
+    onEnter: Unit,
+    onExit: js.Function0[Unit],
+    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def request(
+    element: Element,
+    onEnter: Unit,
+    onExit: Unit,
+    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
+  @scala.inline
+  def toggle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Unit, onEnter: js.Function1[/* element */ Element, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Unit, onEnter: js.Function1[/* element */ Element, Unit], onExit: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def toggle(
-    element: js.UndefOr[scala.Nothing],
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(element: js.UndefOr[scala.Nothing], onEnter: js.UndefOr[scala.Nothing], onExit: js.Function0[Unit]): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(
-    element: js.UndefOr[scala.Nothing],
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.Function0[Unit],
-    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(element: js.UndefOr[scala.Nothing], onEnter: js.Function1[/* element */ Element, Unit]): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(
-    element: js.UndefOr[scala.Nothing],
-    onEnter: js.Function1[/* element */ Element, Unit],
-    onExit: js.UndefOr[scala.Nothing],
-    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(
-    element: js.UndefOr[scala.Nothing],
-    onEnter: js.Function1[/* element */ Element, Unit],
-    onExit: js.Function0[Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(
-    element: js.UndefOr[scala.Nothing],
+    element: Unit,
     onEnter: js.Function1[/* element */ Element, Unit],
     onExit: js.Function0[Unit],
     onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(element: Element): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def toggle(
-    element: Element,
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.UndefOr[scala.Nothing],
+    element: Unit,
+    onEnter: js.Function1[/* element */ Element, Unit],
+    onExit: Unit,
     onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(element: Element, onEnter: js.UndefOr[scala.Nothing], onExit: js.Function0[Unit]): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Unit, onEnter: Unit, onExit: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def toggle(
-    element: Element,
-    onEnter: js.UndefOr[scala.Nothing],
+    element: Unit,
+    onEnter: Unit,
     onExit: js.Function0[Unit],
     onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(element: Element, onEnter: js.Function1[/* element */ Element, Unit]): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def toggle(
-    element: Element,
-    onEnter: js.Function1[/* element */ Element, Unit],
-    onExit: js.UndefOr[scala.Nothing],
+    element: Unit,
+    onEnter: Unit,
+    onExit: Unit,
     onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
-  def toggle(element: Element, onEnter: js.Function1[/* element */ Element, Unit], onExit: js.Function0[Unit]): Unit = js.native
-  @JSImport("bigscreen", "toggle")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Element, onEnter: js.Function1[/* element */ Element, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Element, onEnter: js.Function1[/* element */ Element, Unit], onExit: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def toggle(
     element: Element,
     onEnter: js.Function1[/* element */ Element, Unit],
     onExit: js.Function0[Unit],
     onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(
+    element: Element,
+    onEnter: js.Function1[/* element */ Element, Unit],
+    onExit: Unit,
+    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(element: Element, onEnter: Unit, onExit: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(
+    element: Element,
+    onEnter: Unit,
+    onExit: js.Function0[Unit],
+    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toggle(
+    element: Element,
+    onEnter: Unit,
+    onExit: Unit,
+    onError: js.Function2[/* element */ Element, /* reason */ String, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(element.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("bigscreen", "videoEnabled")
-  @js.native
-  def videoEnabled(video: HTMLVideoElement): Boolean = js.native
+  @scala.inline
+  def videoEnabled(video: HTMLVideoElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("videoEnabled")(video.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

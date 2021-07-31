@@ -3,17 +3,15 @@ package typings.bigInteger
 import typings.bigInteger.mod.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Quotient extends StObject {
     
-    var quotient: BigInteger = js.native
+    var quotient: BigInteger
     
-    var remainder: BigInteger = js.native
+    var remainder: BigInteger
   }
   object Quotient {
     

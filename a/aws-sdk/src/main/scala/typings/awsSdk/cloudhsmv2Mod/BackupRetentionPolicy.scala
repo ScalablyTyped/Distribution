@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupRetentionPolicy extends StObject {
   
   /**
     * The type of backup retention policy. For the DAYS type, the value is the number of days to retain backups.
     */
-  var Type: js.UndefOr[BackupRetentionType] = js.native
+  var Type: js.UndefOr[BackupRetentionType] = js.undefined
   
   /**
     * Use a value between 7 - 379.
     */
-  var Value: js.UndefOr[BackupRetentionValue] = js.native
+  var Value: js.UndefOr[BackupRetentionValue] = js.undefined
 }
 object BackupRetentionPolicy {
   

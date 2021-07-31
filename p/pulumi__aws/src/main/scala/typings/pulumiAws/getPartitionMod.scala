@@ -3,35 +3,35 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPartitionMod {
   
-  @JSImport("@pulumi/aws/getPartition", "getPartition")
+  @JSImport("@pulumi/aws/getPartition", JSImport.Namespace)
   @js.native
-  def getPartition(): js.Promise[GetPartitionResult] = js.native
-  @JSImport("@pulumi/aws/getPartition", "getPartition")
-  @js.native
-  def getPartition(opts: InvokeOptions): js.Promise[GetPartitionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPartition(): js.Promise[GetPartitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPartition")().asInstanceOf[js.Promise[GetPartitionResult]]
+  @scala.inline
+  def getPartition(opts: InvokeOptions): js.Promise[GetPartitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPartition")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPartitionResult]]
+  
   trait GetPartitionResult extends StObject {
     
     /**
       * Base DNS domain name for the current partition (e.g. `amazonaws.com` in AWS Commercial, `amazonaws.com.cn` in AWS China).
       */
-    val dnsSuffix: String = js.native
+    val dnsSuffix: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Identifier of the current partition (e.g. `aws` in AWS Commercial, `aws-cn` in AWS China).
       */
-    val partition: String = js.native
+    val partition: String
   }
   object GetPartitionResult {
     

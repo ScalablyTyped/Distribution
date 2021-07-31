@@ -2,57 +2,55 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountRepositoryLoginResponseMod {
   
-  @js.native
   trait AccountRepositoryLoginResponseLoggedInUser extends StObject {
     
-    var account_type: Double = js.native
+    var account_type: Double
     
-    var allow_contacts_sync: Boolean = js.native
+    var allow_contacts_sync: Boolean
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var can_boost_post: Boolean = js.native
+    var can_boost_post: Boolean
     
-    var can_see_organic_insights: Boolean = js.native
+    var can_see_organic_insights: Boolean
     
-    var country_code: Double = js.native
+    var country_code: Double
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var has_placed_orders: Boolean = js.native
+    var has_placed_orders: Boolean
     
-    var is_business: Boolean = js.native
+    var is_business: Boolean
     
-    var is_call_to_action_enabled: Null = js.native
+    var is_call_to_action_enabled: Null
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var nametag: AccountRepositoryLoginResponseNametag = js.native
+    var nametag: AccountRepositoryLoginResponseNametag
     
-    var national_number: Double = js.native
+    var national_number: Double
     
-    var phone_number: String = js.native
+    var phone_number: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var show_insights_terms: Boolean = js.native
+    var show_insights_terms: Boolean
     
-    var username: String = js.native
+    var username: String
   }
   object AccountRepositoryLoginResponseLoggedInUser {
     
@@ -156,16 +154,15 @@ object accountRepositoryLoginResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryLoginResponseNametag extends StObject {
     
-    var emoji: String = js.native
+    var emoji: String
     
-    var gradient: String = js.native
+    var gradient: String
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var selfie_sticker: String = js.native
+    var selfie_sticker: String
   }
   object AccountRepositoryLoginResponseNametag {
     
@@ -192,12 +189,11 @@ object accountRepositoryLoginResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryLoginResponseRootObject extends StObject {
     
-    var logged_in_user: AccountRepositoryLoginResponseLoggedInUser = js.native
+    var logged_in_user: AccountRepositoryLoginResponseLoggedInUser
     
-    var status: String = js.native
+    var status: String
   }
   object AccountRepositoryLoginResponseRootObject {
     

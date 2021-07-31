@@ -10,33 +10,31 @@ import typings.azureSb.azureSbStrings.mpns
 import typings.azureSb.azureSbStrings.wns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationHubInstallation extends StObject {
   
-  val expirationTime: js.UndefOr[String] = js.native
+  val expirationTime: js.UndefOr[String] = js.undefined
   
-  val expiredPushChannel: js.UndefOr[String] = js.native
+  val expiredPushChannel: js.UndefOr[String] = js.undefined
   
-  var installationId: String = js.native
+  var installationId: String
   
-  val lastActiveOn: js.UndefOr[String] = js.native
+  val lastActiveOn: js.UndefOr[String] = js.undefined
   
-  val lastUpdate: js.UndefOr[String] = js.native
+  val lastUpdate: js.UndefOr[String] = js.undefined
   
-  var platform: apns | wns | mpns | adm | gcm = js.native
+  var platform: apns | wns | mpns | adm | gcm
   
-  var pushChannel: String = js.native
+  var pushChannel: String
   
-  var secondaryTile: js.UndefOr[StringDictionary[PushChannel]] = js.native
+  var secondaryTile: js.UndefOr[StringDictionary[PushChannel]] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var templates: js.UndefOr[StringDictionary[Body]] = js.native
+  var templates: js.UndefOr[StringDictionary[Body]] = js.undefined
   
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object NotificationHubInstallation {
   

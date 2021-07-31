@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSmartHomeAppliancesResponse extends StObject {
   
   /**
     * The tokens used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The smart home appliances.
     */
-  var SmartHomeAppliances: js.UndefOr[SmartHomeApplianceList] = js.native
+  var SmartHomeAppliances: js.UndefOr[SmartHomeApplianceList] = js.undefined
 }
 object ListSmartHomeAppliancesResponse {
   

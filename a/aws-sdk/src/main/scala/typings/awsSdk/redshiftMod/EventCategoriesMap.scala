@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventCategoriesMap extends StObject {
   
   /**
     * The events in the event category.
     */
-  var Events: js.UndefOr[EventInfoMapList] = js.native
+  var Events: js.UndefOr[EventInfoMapList] = js.undefined
   
   /**
     * The source type, such as cluster or cluster-snapshot, that the returned categories belong to.
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
 }
 object EventCategoriesMap {
   

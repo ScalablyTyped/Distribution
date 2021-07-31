@@ -3,10 +3,8 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
   
   // children.props.keyValidator
@@ -15,7 +13,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
     * than one column in the table.
     * Comes from TableHeader.autoValue.
     */
-  var autoValue: js.UndefOr[Boolean] = js.native
+  var autoValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom element to use for the Insert field element.
@@ -27,7 +25,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
     editorClass: String,
     ignoreEditable: Boolean,
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any
-  ): ReactElement | Boolean = js.native
+  ): ReactElement | Boolean
   
   // children.props.dataField,
   /**
@@ -40,13 +38,13 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
     /* rowIndex */ Double, 
     /* columnIndex */ Double, 
     Boolean | String | EditValidatorObject
-  ]) = js.native
+  ])
   
   /**
     * Field name for the column data.
     * Comes from TableHeader.dataField.
     */
-  var field: /* keyof TRow */ String = js.native
+  var field: /* keyof TRow */ String
   
   /**
     * Format function for the field. It is only present if there is more than one column in the table. Value is either
@@ -60,33 +58,33 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Flag to indicate whether this column should be hidden on the Insert Modal page.
     * Comes from TableHeader.hiddenOnInsert.
     */
-  var hiddenOnInsert: Boolean = js.native
+  var hiddenOnInsert: Boolean
   
   /**
     * Flag to indicate that this is the key field for the column. It is only present if there is more than
     * one column in the table.
     * Comes from TableHeader.isKey field.
     */
-  var isKey: js.UndefOr[Boolean] = js.native
+  var isKey: js.UndefOr[Boolean] = js.undefined
   
   // children.props.hiddenOnInsert,
   /**
     * Flag to indicate whether the table should check that a key does not already exist.
     * Comes from TableHeader.keyValidator.
     */
-  var keyValidator: Boolean = js.native
+  var keyValidator: Boolean
   
   /**
     * Header text/element for the column.
     * Comes from TableHeader.headerText or TableHeader.children.
     */
-  var name: String | ReactElement = js.native
+  var name: String | ReactElement
 }
 object InsertModalColumnDescription {
   
@@ -110,7 +108,7 @@ object InsertModalColumnDescription {
   }
   
   @scala.inline
-  implicit class InsertModalColumnDescriptionMutableBuilder[Self <: InsertModalColumnDescription[_], TRow /* <: js.Object */] (val x: Self with InsertModalColumnDescription[TRow]) extends AnyVal {
+  implicit class InsertModalColumnDescriptionMutableBuilder[Self <: InsertModalColumnDescription[?], TRow /* <: js.Object */] (val x: Self & InsertModalColumnDescription[TRow]) extends AnyVal {
     
     @scala.inline
     def setAutoValue(value: Boolean): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])

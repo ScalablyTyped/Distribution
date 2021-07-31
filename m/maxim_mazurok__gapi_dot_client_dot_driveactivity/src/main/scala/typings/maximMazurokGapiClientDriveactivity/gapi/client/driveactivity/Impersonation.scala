@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Impersonation extends StObject {
   
   /** The impersonated user. */
-  var impersonatedUser: js.UndefOr[User] = js.native
+  var impersonatedUser: js.UndefOr[User] = js.undefined
 }
 object Impersonation {
   

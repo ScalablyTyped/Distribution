@@ -7,19 +7,17 @@ import typings.std.HTMLElement
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryValidation {
   
   type ErrorDictionary = StringDictionary[String]
   
-  @js.native
   trait ErrorListItem extends StObject {
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var message: String = js.native
+    var message: String
   }
   object ErrorListItem {
     
@@ -46,7 +44,6 @@ object JQueryValidation {
   
   type ValidatePredicate = js.Function2[/* element */ HTMLElement, /* event */ JQueryEventObject, Unit]
   
-  @js.native
   trait ValidationOptions extends StObject {
     
     /**
@@ -55,19 +52,19 @@ object JQueryValidation {
       *
       * default: false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use this class to create error labels, to look for existing error labels and to add it to invalid elements.
       *
       * default: "error"
       */
-    var errorClass: js.UndefOr[String] = js.native
+    var errorClass: js.UndefOr[String] = js.undefined
     
     /**
       * Hide and show this container when validating.
       */
-    var errorContainer: js.UndefOr[String] = js.native
+    var errorContainer: js.UndefOr[String] = js.undefined
     
     /**
       * Use this element type to create error messages and to look for existing error messages. The default, "label",
@@ -75,19 +72,19 @@ object JQueryValidation {
       *
       * default: "label"
       */
-    var errorElement: js.UndefOr[String] = js.native
+    var errorElement: js.UndefOr[String] = js.undefined
     
     /**
       * Hide and show this container when validating. (eg "#messageBox")
       */
-    var errorLabelContainer: js.UndefOr[String] = js.native
+    var errorLabelContainer: js.UndefOr[String] = js.undefined
     
     /**
       * Customize placement of created error labels. First argument: The created error label as a jQuery object. Second argument: The invalid element as a jQuery object.
       *
       * default: Places the error label after the invalid element
       */
-    var errorPlacement: js.UndefOr[js.Function2[/* error */ JQuery, /* element */ JQuery, Unit]] = js.native
+    var errorPlacement: js.UndefOr[js.Function2[/* error */ JQuery, /* element */ JQuery, Unit]] = js.undefined
     
     /**
       * If enabled, removes the errorClass from the invalid elements and hides all error messages whenever the element is focused.
@@ -95,7 +92,7 @@ object JQueryValidation {
       *
       * default: false
       */
-    var focusCleanup: js.UndefOr[Boolean] = js.native
+    var focusCleanup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Focus the last active or first invalid element on submit via validator.focusInvalid(). The last active element is the one
@@ -104,13 +101,13 @@ object JQueryValidation {
       *
       * default: true
       */
-    var focusInvalid: js.UndefOr[Boolean] = js.native
+    var focusInvalid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify grouping of error messages. A group consists of an arbitrary group name as the key and a space separated list of
       * element names as the value. Use errorPlacement to control where the group message is placed.
       */
-    var groups: js.UndefOr[StringDictionary[String]] = js.native
+    var groups: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * How to highlight invalid fields. Override to decide which fields and how to highlight.
@@ -119,13 +116,13 @@ object JQueryValidation {
       */
     var highlight: js.UndefOr[
         js.Function3[/* element */ HTMLElement, /* errorClass */ String, /* validClass */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Elements to ignore when validating, simply filtering them out. jQuery's not-method is used, therefore everything that is
       * accepted by not() can be passed as this option. Inputs of type submit and reset are always ignored, so are disabled elements.
       */
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
     /**
       * Set to skip reading messages from the title attribute, helps to avoid issues with Google Toolbar; default is false for compability,
@@ -133,13 +130,13 @@ object JQueryValidation {
       *
       * default: false
       */
-    var ignoreTitle: js.UndefOr[Boolean] = js.native
+    var ignoreTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback for custom code when an invalid form is submitted. Called with an event object as the first argument, and the validator
       * as the second.
       */
-    var invalidHandler: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* validator */ Validator, Unit]] = js.native
+    var invalidHandler: js.UndefOr[js.Function2[/* event */ JQueryEventObject, /* validator */ Validator, Unit]] = js.undefined
     
     /**
       * Key/value pairs defining custom messages. Key is the name of an element, value the message to display for that element. Instead
@@ -150,9 +147,9 @@ object JQueryValidation {
       *
       * default: the default message for the method used
       */
-    var messages: js.UndefOr[js.Object] = js.native
+    var messages: js.UndefOr[js.Object] = js.undefined
     
-    var meta: js.UndefOr[String] = js.native
+    var meta: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean or Function. Validate checkboxes and radio buttons on click. Set to false to disable.
@@ -160,14 +157,14 @@ object JQueryValidation {
       * Set to a Function to decide for yourself when to run validation.
       * A boolean true is not a valid value.
       */
-    var onclick: js.UndefOr[ShouldValidatePredicate] = js.native
+    var onclick: js.UndefOr[ShouldValidatePredicate] = js.undefined
     
     /**
       * Function. Validate elements when user focuses in. If omitted hides all other fields marked as invalid.
       *
       * Set to a custom Function to decide for yourself when to run validation.
       */
-    var onfocusin: js.UndefOr[ValidatePredicate] = js.native
+    var onfocusin: js.UndefOr[ValidatePredicate] = js.undefined
     
     /**
       * Boolean or Function. Validate elements (except checkboxes/radio buttons) on blur. If nothing is entered, all rules are skipped, except when the field was already marked as invalid.
@@ -175,7 +172,7 @@ object JQueryValidation {
       * Set to a Function to decide for yourself when to run validation.
       * A boolean true is not a valid value.
       */
-    var onfocusout: js.UndefOr[ShouldValidatePredicate] = js.native
+    var onfocusout: js.UndefOr[ShouldValidatePredicate] = js.undefined
     
     /**
       * Boolean or Function. Validate elements on keyup. As long as the field is not marked as invalid, nothing happens.
@@ -184,7 +181,7 @@ object JQueryValidation {
       * Set to a Function to decide for yourself when to run validation.
       * A boolean true is not a valid value.
       */
-    var onkeyup: js.UndefOr[ShouldValidatePredicate] = js.native
+    var onkeyup: js.UndefOr[ShouldValidatePredicate] = js.undefined
     
     /**
       * Validate the form on submit. Set to false to use only other events for validation.
@@ -193,7 +190,7 @@ object JQueryValidation {
       *
       * default: true
       */
-    var onsubmit: js.UndefOr[Boolean] = js.native
+    var onsubmit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A custom message display handler. Gets the map of errors as the first argument and an array of errors as the second,
@@ -201,7 +198,7 @@ object JQueryValidation {
       * which can be a single element when doing validation onblur/keyup. You can trigger (in addition to your own messages)
       * the default behaviour by calling this.defaultShowErrors().
       */
-    var rules: js.UndefOr[RulesDictionary] = js.native
+    var rules: js.UndefOr[RulesDictionary] = js.undefined
     
     /**
       * A custom message display handler. Gets the map of errors as the first argument and an array of errors as the second,
@@ -211,7 +208,7 @@ object JQueryValidation {
       */
     var showErrors: js.UndefOr[
         js.Function2[/* errorMap */ ErrorDictionary, /* errorList */ js.Array[ErrorListItem], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback for handling the actual submit when the form is valid. Gets the form and the event object. Replaces the default submit.
@@ -219,7 +216,7 @@ object JQueryValidation {
       */
     var submitHandler: js.UndefOr[
         js.Function2[/* form */ HTMLFormElement, /* event */ js.UndefOr[JQueryEventObject], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * String or Function. If specified, the error label is displayed to show a valid element. If a String is given, it is added as
@@ -228,7 +225,7 @@ object JQueryValidation {
       */
     var success: js.UndefOr[
         String | (js.Function2[/* $label */ JQuery, /* validatedInput */ HTMLElement, Unit])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called to revert changes made by option highlight, same arguments as highlight.
@@ -237,21 +234,21 @@ object JQueryValidation {
       */
     var unhighlight: js.UndefOr[
         js.Function3[/* element */ HTMLElement, /* errorClass */ String, /* validClass */ String, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This class is added to an element after it was validated and considered valid.
       *
       * default: "valid"
       */
-    var validClass: js.UndefOr[String] = js.native
+    var validClass: js.UndefOr[String] = js.undefined
     
     /**
       * Wrap error labels with the specified element. Useful in combination with errorLabelContainer to create a list of error messages.
       *
       * default: window
       */
-    var wrapper: js.UndefOr[String] = js.native
+    var wrapper: js.UndefOr[String] = js.undefined
   }
   object ValidationOptions {
     

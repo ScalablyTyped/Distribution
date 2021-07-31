@@ -3,29 +3,27 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowMultiple extends StObject {
   
-  var allowMultiple: js.UndefOr[Boolean] = js.native
+  var allowMultiple: js.UndefOr[Boolean] = js.undefined
   
-  var colorExpr: js.UndefOr[String] = js.native
+  var colorExpr: js.UndefOr[String] = js.undefined
   
   var dataSource: js.UndefOr[
-    String | js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
-  ] = js.native
+    String | js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
+  ] = js.undefined
   
-  var displayExpr: js.UndefOr[String | (js.Function1[/* resource */ js.Any, String])] = js.native
+  var displayExpr: js.UndefOr[String | (js.Function1[/* resource */ js.Any, String])] = js.undefined
   
-  var fieldExpr: js.UndefOr[String] = js.native
+  var fieldExpr: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var useColorAsDefault: js.UndefOr[Boolean] = js.native
+  var useColorAsDefault: js.UndefOr[Boolean] = js.undefined
   
-  var valueExpr: js.UndefOr[String | js.Function] = js.native
+  var valueExpr: js.UndefOr[String | js.Function] = js.undefined
 }
 object AllowMultiple {
   
@@ -52,7 +50,7 @@ object AllowMultiple {
     
     @scala.inline
     def setDataSource(
-      value: String | js.Array[_] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
+      value: String | js.Array[js.Any] | typings.devextreme.mod.DevExpress.data.DataSource | DataSourceOptions
     ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline

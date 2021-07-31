@@ -4,29 +4,27 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.VectorXYZ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever a player stops destroying a block.
   */
-@js.native
 trait IBlockDestructionStoppedEventData extends StObject {
   
   /**
     * The position of the block that was being destroyed
     */
-  var block_position: VectorXYZ = js.native
+  var block_position: VectorXYZ
   
   /**
     * How far along the destruction was before it was stopped (0 - 1 range)
     */
-  var destruction_progress: Double = js.native
+  var destruction_progress: Double
   
   /**
     * The player that stopped destoying the block
     */
-  var player: IEntity = js.native
+  var player: IEntity
 }
 object IBlockDestructionStoppedEventData {
   

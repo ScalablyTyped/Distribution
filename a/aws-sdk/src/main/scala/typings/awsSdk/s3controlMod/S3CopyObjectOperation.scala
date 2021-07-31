@@ -2,91 +2,89 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3CopyObjectOperation extends StObject {
   
   /**
     * 
     */
-  var AccessControlGrants: js.UndefOr[S3GrantList] = js.native
+  var AccessControlGrants: js.UndefOr[S3GrantList] = js.undefined
   
   /**
     * 
     */
-  var CannedAccessControlList: js.UndefOr[S3CannedAccessControlList] = js.native
+  var CannedAccessControlList: js.UndefOr[S3CannedAccessControlList] = js.undefined
   
   /**
     * 
     */
-  var MetadataDirective: js.UndefOr[S3MetadataDirective] = js.native
+  var MetadataDirective: js.UndefOr[S3MetadataDirective] = js.undefined
   
   /**
     * 
     */
-  var ModifiedSinceConstraint: js.UndefOr[TimeStamp] = js.native
+  var ModifiedSinceConstraint: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * 
     */
-  var NewObjectMetadata: js.UndefOr[S3ObjectMetadata] = js.native
+  var NewObjectMetadata: js.UndefOr[S3ObjectMetadata] = js.undefined
   
   /**
     * 
     */
-  var NewObjectTagging: js.UndefOr[S3TagSet] = js.native
+  var NewObjectTagging: js.UndefOr[S3TagSet] = js.undefined
   
   /**
     * The legal hold status to be applied to all objects in the Batch Operations job.
     */
-  var ObjectLockLegalHoldStatus: js.UndefOr[S3ObjectLockLegalHoldStatus] = js.native
+  var ObjectLockLegalHoldStatus: js.UndefOr[S3ObjectLockLegalHoldStatus] = js.undefined
   
   /**
     * The retention mode to be applied to all objects in the Batch Operations job.
     */
-  var ObjectLockMode: js.UndefOr[S3ObjectLockMode] = js.native
+  var ObjectLockMode: js.UndefOr[S3ObjectLockMode] = js.undefined
   
   /**
     * The date when the applied object retention configuration expires on all objects in the Batch Operations job.
     */
-  var ObjectLockRetainUntilDate: js.UndefOr[TimeStamp] = js.native
+  var ObjectLockRetainUntilDate: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * Specifies an optional metadata property for website redirects, x-amz-website-redirect-location. Allows webpage redirects if the object is accessed through a website endpoint.
     */
-  var RedirectLocation: js.UndefOr[NonEmptyMaxLength2048String] = js.native
+  var RedirectLocation: js.UndefOr[NonEmptyMaxLength2048String] = js.undefined
   
   /**
     * 
     */
-  var RequesterPays: js.UndefOr[Boolean] = js.native
+  var RequesterPays: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 
     */
-  var SSEAwsKmsKeyId: js.UndefOr[KmsKeyArnString] = js.native
+  var SSEAwsKmsKeyId: js.UndefOr[KmsKeyArnString] = js.undefined
   
   /**
     * 
     */
-  var StorageClass: js.UndefOr[S3StorageClass] = js.native
+  var StorageClass: js.UndefOr[S3StorageClass] = js.undefined
   
   /**
     * Specifies the folder prefix into which you would like the objects to be copied. For example, to copy objects into a folder named "Folder1" in the destination bucket, set the TargetKeyPrefix to "Folder1/".
     */
-  var TargetKeyPrefix: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var TargetKeyPrefix: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * Specifies the destination bucket ARN for the batch copy operation. For example, to copy objects to a bucket named "destinationBucket", set the TargetResource to "arn:aws:s3:::destinationBucket".
     */
-  var TargetResource: js.UndefOr[S3BucketArnString] = js.native
+  var TargetResource: js.UndefOr[S3BucketArnString] = js.undefined
   
   /**
     * 
     */
-  var UnModifiedSinceConstraint: js.UndefOr[TimeStamp] = js.native
+  var UnModifiedSinceConstraint: js.UndefOr[TimeStamp] = js.undefined
 }
 object S3CopyObjectOperation {
   

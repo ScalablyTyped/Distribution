@@ -16,36 +16,31 @@ import typings.baseui.baseuiStrings.topLeft
 import typings.baseui.baseuiStrings.topRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrowOffset extends StObject {
   
-  var arrowOffset: Left = js.native
+  var arrowOffset: Left
   
-  var isAnimating: `false` = js.native
+  var isAnimating: `false`
   
-  var isLayerMounted: `false` = js.native
+  var isLayerMounted: `false`
   
-  var isMounted: `false` = js.native
+  var isMounted: `false`
   
-  var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = js.native
+  var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
   
-  var popoverOffset: Left = js.native
+  var popoverOffset: Left
 }
 object ArrowOffset {
   
   @scala.inline
   def apply(
     arrowOffset: Left,
-    isAnimating: `false`,
-    isLayerMounted: `false`,
-    isMounted: `false`,
     placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top,
     popoverOffset: Left
   ): ArrowOffset = {
-    val __obj = js.Dynamic.literal(arrowOffset = arrowOffset.asInstanceOf[js.Any], isAnimating = isAnimating.asInstanceOf[js.Any], isLayerMounted = isLayerMounted.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverOffset = popoverOffset.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arrowOffset = arrowOffset.asInstanceOf[js.Any], isAnimating = false, isLayerMounted = false, isMounted = false, placement = placement.asInstanceOf[js.Any], popoverOffset = popoverOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrowOffset]
   }
   

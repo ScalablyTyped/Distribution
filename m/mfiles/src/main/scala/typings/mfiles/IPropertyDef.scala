@@ -12,65 +12,63 @@ import typings.mfiles.MFiles.MFValidationType
 import typings.mfiles.MFiles.MFValueListSortingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyDef extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  var AllObjectTypes: Boolean = js.native
+  var AllObjectTypes: Boolean
   
-  var AllowedAsGroupingLevel: Boolean = js.native
+  var AllowedAsGroupingLevel: Boolean
   
-  var AutomaticValueDefinition: ITypedValue = js.native
+  var AutomaticValueDefinition: ITypedValue
   
-  var AutomaticValueType: MFAutomaticValueType = js.native
+  var AutomaticValueType: MFAutomaticValueType
   
-  var BasedOnValueList: Boolean = js.native
+  var BasedOnValueList: Boolean
   
-  def Clone(): IPropertyDef = js.native
+  def Clone(): IPropertyDef
   
-  var ContentType: MFContentType = js.native
+  var ContentType: MFContentType
   
-  var DataType: MFDataType = js.native
+  var DataType: MFDataType
   
-  var DependencyPD: Double = js.native
+  var DependencyPD: Double
   
-  var DependencyRelation: MFDependencyRelation = js.native
+  var DependencyRelation: MFDependencyRelation
   
-  var FormattingType: MFFormattingType = js.native
+  var FormattingType: MFFormattingType
   
-  val GUID: String = js.native
+  val GUID: String
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var ObjectType: MFBuiltInObjectType | Double = js.native
+  var ObjectType: MFBuiltInObjectType | Double
   
-  var OwnerPropertyDef: IOwnerPropertyDef = js.native
+  var OwnerPropertyDef: IOwnerPropertyDef
   
-  var Predefined: Boolean = js.native
+  var Predefined: Boolean
   
-  var SortAscending: Boolean = js.native
+  var SortAscending: Boolean
   
-  var StaticFilter: ISearchConditions = js.native
+  var StaticFilter: ISearchConditions
   
-  val ThisIsConflictPD: Boolean = js.native
+  val ThisIsConflictPD: Boolean
   
-  val ThisIsDefaultPD: Boolean = js.native
+  val ThisIsDefaultPD: Boolean
   
-  val ThisIsOwnerPD: Boolean = js.native
+  val ThisIsOwnerPD: Boolean
   
-  var UpdateType: MFUpdateType = js.native
+  var UpdateType: MFUpdateType
   
-  var ValidationType: MFValidationType = js.native
+  var ValidationType: MFValidationType
   
-  var ValueList: MFBuiltInValueList | Double = js.native
+  var ValueList: MFBuiltInValueList | Double
   
-  var ValueListSortingType: MFValueListSortingType = js.native
+  var ValueListSortingType: MFValueListSortingType
 }
 object IPropertyDef {
   

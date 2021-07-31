@@ -3,7 +3,6 @@ package typings.angularCommon.httpHttpMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @publicApi
   */
-@js.native
 trait HttpParamsOptions extends StObject {
   
   /** Encoding codec used to parse and serialize the parameters. */
-  var encoder: js.UndefOr[HttpParameterCodec] = js.native
+  var encoder: js.UndefOr[HttpParameterCodec] = js.undefined
   
   /** Object map of the HTTP parameters. Mutually exclusive with `fromString`. */
-  var fromObject: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+  var fromObject: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
   
   /**
     * String representation of the HTTP parameters in URL-query-string format.
     * Mutually exclusive with `fromObject`.
     */
-  var fromString: js.UndefOr[String] = js.native
+  var fromString: js.UndefOr[String] = js.undefined
 }
 object HttpParamsOptions {
   

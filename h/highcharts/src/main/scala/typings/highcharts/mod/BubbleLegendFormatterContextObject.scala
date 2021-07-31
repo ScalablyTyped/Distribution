@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BubbleLegendFormatterContextObject extends StObject {
   
   /**
     * The center y position of the range.
     */
-  var center: Double = js.native
+  var center: Double
   
   /**
     * The radius of the bubble range.
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * The bubble value.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object BubbleLegendFormatterContextObject {
   

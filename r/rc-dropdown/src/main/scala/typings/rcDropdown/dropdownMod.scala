@@ -13,64 +13,62 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod extends Shortcut {
   
   @JSImport("rc-dropdown/es/Dropdown", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[DropdownProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]] = js.native
   
   /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'getPopupContainer' | 'children' | 'mouseEnterDelay' | 'mouseLeaveDelay'> */
-  @js.native
   trait DropdownProps extends StObject {
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
-    var alignPoint: js.UndefOr[Boolean] = js.native
+    var alignPoint: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[AnimationType] = js.native
+    var animation: js.UndefOr[AnimationType] = js.undefined
     
-    var arrow: js.UndefOr[Boolean] = js.native
+    var arrow: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var hideAction: js.UndefOr[js.Array[ActionType]] = js.native
+    var hideAction: js.UndefOr[js.Array[ActionType]] = js.undefined
     
-    var minOverlayWidthMatchTrigger: js.UndefOr[Boolean] = js.native
+    var minOverlayWidthMatchTrigger: js.UndefOr[Boolean] = js.undefined
     
-    var mouseEnterDelay: js.UndefOr[Double] = js.native
+    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
-    var mouseLeaveDelay: js.UndefOr[Double] = js.native
+    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
-    var onOverlayClick: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onOverlayClick: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var openClassName: js.UndefOr[String] = js.native
+    var openClassName: js.UndefOr[String] = js.undefined
     
-    var overlay: js.UndefOr[js.Function0[ReactElement] | ReactElement] = js.native
+    var overlay: js.UndefOr[js.Function0[ReactElement] | ReactElement] = js.undefined
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var placements: js.UndefOr[BuildInPlacements] = js.native
+    var placements: js.UndefOr[BuildInPlacements] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showAction: js.UndefOr[js.Array[ActionType]] = js.native
+    var showAction: js.UndefOr[js.Array[ActionType]] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.native
+    var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownProps {
     
@@ -232,8 +230,8 @@ object dropdownMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[DropdownProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `dropdownMod.foo` */
-  override def _to: ForwardRefExoticComponent[DropdownProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[DropdownProps & RefAttributes[js.Any]] = default
 }

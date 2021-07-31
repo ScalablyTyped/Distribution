@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMasterAccountResponse extends StObject {
   
   /**
     * The master account details.
     */
-  var Master: typings.awsSdk.guarddutyMod.Master = js.native
+  var Master: typings.awsSdk.guarddutyMod.Master
 }
 object GetMasterAccountResponse {
   

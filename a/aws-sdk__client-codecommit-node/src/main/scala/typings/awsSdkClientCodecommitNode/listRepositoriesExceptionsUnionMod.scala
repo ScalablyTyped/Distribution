@@ -2,7 +2,6 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listRepositoriesExceptionsUnionMod {
@@ -16,22 +15,20 @@ object listRepositoriesExceptionsUnionMod {
   object ListRepositoriesExceptionsUnion {
     
     @scala.inline
-    def InvalidContinuationTokenException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException
-    ): typings.awsSdkClientCodecommitNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidContinuationTokenException(): typings.awsSdkClientCodecommitNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException = {
+      val __obj = js.Dynamic.literal(name = "InvalidContinuationTokenException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException]
     }
     
     @scala.inline
-    def InvalidOrderException(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException): typings.awsSdkClientCodecommitNode.typesInvalidOrderExceptionMod.InvalidOrderException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidOrderException(): typings.awsSdkClientCodecommitNode.typesInvalidOrderExceptionMod.InvalidOrderException = {
+      val __obj = js.Dynamic.literal(name = "InvalidOrderException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidOrderExceptionMod.InvalidOrderException]
     }
     
     @scala.inline
-    def InvalidSortByException(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSortByException): typings.awsSdkClientCodecommitNode.typesInvalidSortByExceptionMod.InvalidSortByException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidSortByException(): typings.awsSdkClientCodecommitNode.typesInvalidSortByExceptionMod.InvalidSortByException = {
+      val __obj = js.Dynamic.literal(name = "InvalidSortByException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidSortByExceptionMod.InvalidSortByException]
     }
   }

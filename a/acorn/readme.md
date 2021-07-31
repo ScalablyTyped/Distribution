@@ -11,8 +11,8 @@ ECMAScript parser
 | Full name          | acorn |
 | Keywords           | - |
 | # releases         | 24 |
-| # dependents       | 1520 |
-| # downloads        | 1623195626 |
+| # dependents       | 1643 |
+| # downloads        | 1875340031 |
 | # stars            | 33 |
 
 ## Links

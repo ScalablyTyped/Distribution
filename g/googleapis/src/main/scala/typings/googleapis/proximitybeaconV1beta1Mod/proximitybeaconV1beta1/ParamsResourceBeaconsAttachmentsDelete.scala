@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBeaconsAttachmentsDelete extends StandardParameters {
+trait ParamsResourceBeaconsAttachmentsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * The attachment name (`attachmentName`) of the attachment to remove. For
@@ -19,18 +19,18 @@ trait ParamsResourceBeaconsAttachmentsDelete extends StandardParameters {
     * Eddystone-EID beacons, the beacon ID portion (`3!893737abc9`) may be the
     * beacon's current EID, or its "stable" Eddystone-UID. Required.
     */
-  var attachmentName: js.UndefOr[String] = js.native
+  var attachmentName: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The project id of the attachment to delete. If not provided, the project
     * that is making the request is used. Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBeaconsAttachmentsDelete {
   

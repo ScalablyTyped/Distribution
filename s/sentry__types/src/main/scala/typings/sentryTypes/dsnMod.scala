@@ -2,13 +2,13 @@ package typings.sentryTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dsnMod {
   
-  @js.native
-  trait Dsn extends DsnComponents {
+  trait Dsn
+    extends StObject
+       with DsnComponents {
     
     /**
       * Renders the string representation of this Dsn.
@@ -19,7 +19,7 @@ object dsnMod {
       *
       * @param withPassword When set to true, the password will be included.
       */
-    def toString(withPassword: Boolean): String = js.native
+    def toString(withPassword: Boolean): String
   }
   object Dsn {
     
@@ -44,29 +44,28 @@ object dsnMod {
     }
   }
   
-  @js.native
   trait DsnComponents extends StObject {
     
     /** Hostname of the Sentry instance. */
-    var host: String = js.native
+    var host: String
     
     /** Private authorization key (deprecated, optional). */
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
     /** Sub path/ */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Port of the Sentry instance. */
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
     /** Project ID */
-    var projectId: String = js.native
+    var projectId: String
     
     /** Protocol used to connect to Sentry. */
-    var protocol: DsnProtocol = js.native
+    var protocol: DsnProtocol
     
     /** Public authorization key. */
-    var user: String = js.native
+    var user: String
   }
   object DsnComponents {
     

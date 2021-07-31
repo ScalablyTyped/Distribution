@@ -3,31 +3,29 @@ package typings.azdata.mod
 import typings.azdata.mod.connection.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskInfo extends StObject {
   
-  var connection: js.UndefOr[Connection] = js.native
+  var connection: js.UndefOr[Connection] = js.undefined
   
-  var databaseName: String = js.native
+  var databaseName: String
   
-  var description: String = js.native
+  var description: String
   
-  var isCancelable: Boolean = js.native
+  var isCancelable: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var providerName: String = js.native
+  var providerName: String
   
-  var serverName: String = js.native
+  var serverName: String
   
-  var status: TaskStatus = js.native
+  var status: TaskStatus
   
-  var taskExecutionMode: TaskExecutionMode = js.native
+  var taskExecutionMode: TaskExecutionMode
   
-  var taskId: String = js.native
+  var taskId: String
 }
 object TaskInfo {
   

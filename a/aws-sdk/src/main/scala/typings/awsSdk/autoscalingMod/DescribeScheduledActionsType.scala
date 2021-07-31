@@ -2,41 +2,39 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScheduledActionsType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.native
+  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The latest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.native
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The maximum number of items to return with this call. The default value is 50 and the maximum value is 100.
     */
-  var MaxRecords: js.UndefOr[typings.awsSdk.autoscalingMod.MaxRecords] = js.native
+  var MaxRecords: js.UndefOr[typings.awsSdk.autoscalingMod.MaxRecords] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The names of one or more scheduled actions. You can specify up to 50 actions. If you omit this parameter, all scheduled actions are described. If you specify an unknown scheduled action, it is ignored with no error.
     */
-  var ScheduledActionNames: js.UndefOr[typings.awsSdk.autoscalingMod.ScheduledActionNames] = js.native
+  var ScheduledActionNames: js.UndefOr[typings.awsSdk.autoscalingMod.ScheduledActionNames] = js.undefined
   
   /**
     * The earliest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.native
+  var StartTime: js.UndefOr[TimestampType] = js.undefined
 }
 object DescribeScheduledActionsType {
   

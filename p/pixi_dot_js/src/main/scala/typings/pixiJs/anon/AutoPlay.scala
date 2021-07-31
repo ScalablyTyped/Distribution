@@ -2,19 +2,17 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoPlay extends StObject {
   
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var crossorigin: js.UndefOr[Boolean] = js.native
+  var crossorigin: js.UndefOr[Boolean] = js.undefined
   
-  var updateFPS: js.UndefOr[Double] = js.native
+  var updateFPS: js.UndefOr[Double] = js.undefined
 }
 object AutoPlay {
   

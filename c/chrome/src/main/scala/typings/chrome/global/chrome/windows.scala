@@ -8,7 +8,6 @@ import typings.chrome.chrome.windows.WindowIdEvent
 import typings.chrome.chrome.windows.WindowReferenceEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -37,46 +36,34 @@ object windows {
   @scala.inline
   def WINDOW_ID_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOW_ID_NONE")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.windows.create")
-  @js.native
-  def create(): Unit = js.native
-  @JSGlobal("chrome.windows.create")
-  @js.native
-  def create(callback: js.Function1[/* window */ js.UndefOr[Window], Unit]): Unit = js.native
-  @JSGlobal("chrome.windows.create")
-  @js.native
-  def create(createData: CreateData): Unit = js.native
-  @JSGlobal("chrome.windows.create")
-  @js.native
-  def create(createData: CreateData, callback: js.Function1[/* window */ js.UndefOr[Window], Unit]): Unit = js.native
+  @scala.inline
+  def create(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Unit]
+  @scala.inline
+  def create(callback: js.Function1[/* window */ js.UndefOr[Window], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(createData: CreateData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(createData: CreateData, callback: js.Function1[/* window */ js.UndefOr[Window], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.windows.get")
-  @js.native
-  def get(windowId: Double, callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
-  @JSGlobal("chrome.windows.get")
-  @js.native
-  def get(windowId: Double, getInfo: GetInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
+  @scala.inline
+  def get(windowId: Double, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def get(windowId: Double, getInfo: GetInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any], getInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.windows.getAll")
-  @js.native
-  def getAll(callback: js.Function1[/* windows */ js.Array[Window], Unit]): Unit = js.native
-  @JSGlobal("chrome.windows.getAll")
-  @js.native
-  def getAll(getInfo: GetInfo, callback: js.Function1[/* windows */ js.Array[Window], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(callback: js.Function1[/* windows */ js.Array[Window], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getAll(getInfo: GetInfo, callback: js.Function1[/* windows */ js.Array[Window], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(getInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.windows.getCurrent")
-  @js.native
-  def getCurrent(callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
-  @JSGlobal("chrome.windows.getCurrent")
-  @js.native
-  def getCurrent(getInfo: GetInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
+  @scala.inline
+  def getCurrent(callback: js.Function1[/* window */ Window, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getCurrent(getInfo: GetInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(getInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.windows.getLastFocused")
-  @js.native
-  def getLastFocused(callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
-  @JSGlobal("chrome.windows.getLastFocused")
-  @js.native
-  def getLastFocused(getInfo: GetInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
+  @scala.inline
+  def getLastFocused(callback: js.Function1[/* window */ Window, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocused")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getLastFocused(getInfo: GetInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getLastFocused")(getInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.windows.onCreated")
   @js.native
@@ -96,17 +83,13 @@ object windows {
   @scala.inline
   def onRemoved_=(x: WindowIdEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.windows.remove")
-  @js.native
-  def remove(windowId: Double): Unit = js.native
-  @JSGlobal("chrome.windows.remove")
-  @js.native
-  def remove(windowId: Double, callback: js.Function): Unit = js.native
+  @scala.inline
+  def remove(windowId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(windowId: Double, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.windows.update")
-  @js.native
-  def update(windowId: Double, updateInfo: UpdateInfo): Unit = js.native
-  @JSGlobal("chrome.windows.update")
-  @js.native
-  def update(windowId: Double, updateInfo: UpdateInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = js.native
+  @scala.inline
+  def update(windowId: Double, updateInfo: UpdateInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(windowId: Double, updateInfo: UpdateInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,41 +2,39 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFilterableMessages extends StObject {
   
-  var and: js.UndefOr[String] = js.native
+  var and: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var checkAll: js.UndefOr[String] = js.native
+  var checkAll: js.UndefOr[String] = js.undefined
   
-  var clear: js.UndefOr[String] = js.native
+  var clear: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var info: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.undefined
   
-  var isFalse: js.UndefOr[String] = js.native
+  var isFalse: js.UndefOr[String] = js.undefined
   
-  var isTrue: js.UndefOr[String] = js.native
+  var isTrue: js.UndefOr[String] = js.undefined
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
-  var or: js.UndefOr[String] = js.native
+  var or: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var selectValue: js.UndefOr[String] = js.native
+  var selectValue: js.UndefOr[String] = js.undefined
   
-  var selectedItemsFormat: js.UndefOr[String] = js.native
+  var selectedItemsFormat: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object GridFilterableMessages {
   

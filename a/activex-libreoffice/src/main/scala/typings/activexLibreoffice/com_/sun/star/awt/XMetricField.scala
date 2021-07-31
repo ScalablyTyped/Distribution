@@ -4,72 +4,72 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and formatting of a metric field. */
-@js.native
-trait XMetricField extends XInterface {
+trait XMetricField
+  extends StObject
+     with XInterface {
   
   /** returns the currently set number of decimals. */
-  var DecimalDigits: Double = js.native
+  var DecimalDigits: Double
   
   /** returns the currently set increment value for the spin button. */
-  var SpinSize: Double = js.native
+  var SpinSize: Double
   
   /** returns the corrected value which is displayed in the metric field. */
-  def getCorrectedValue(FieldUnit: Double): Double = js.native
+  def getCorrectedValue(FieldUnit: Double): Double
   
   /** returns the currently set number of decimals. */
-  def getDecimalDigits(): Double = js.native
+  def getDecimalDigits(): Double
   
   /** returns the currently set first value which is set on POS1 key. */
-  def getFirst(FieldUnit: Double): Double = js.native
+  def getFirst(FieldUnit: Double): Double
   
   /** returns the currently set last value which is set on END key. */
-  def getLast(FieldUnit: Double): Double = js.native
+  def getLast(FieldUnit: Double): Double
   
   /** returns the currently set maximum value that can be entered by the user. */
-  def getMax(FieldUnit: Double): Double = js.native
+  def getMax(FieldUnit: Double): Double
   
   /** returns the currently set minimum value that can be entered by the user. */
-  def getMin(FieldUnit: Double): Double = js.native
+  def getMin(FieldUnit: Double): Double
   
   /** returns the currently set increment value for the spin button. */
-  def getSpinSize(): Double = js.native
+  def getSpinSize(): Double
   
   /** returns the value which is currently displayed in the metric field. */
-  def getValue(FieldUnit: Double): Double = js.native
+  def getValue(FieldUnit: Double): Double
   
   /** returns whether the format is currently checked during user input. */
-  def isStrictFormat(): Boolean = js.native
+  def isStrictFormat(): Boolean
   
   /** sets the number of decimals. */
-  def setDecimalDigits(nDigits: Double): Unit = js.native
+  def setDecimalDigits(nDigits: Double): Unit
   
   /** sets the first value to be set on POS1 key. */
-  def setFirst(Value: Double, FieldUnit: Double): Unit = js.native
+  def setFirst(Value: Double, FieldUnit: Double): Unit
   
   /** sets the last value to be set on END key. */
-  def setLast(Value: Double, FieldUnit: Double): Unit = js.native
+  def setLast(Value: Double, FieldUnit: Double): Unit
   
   /** sets the maximum value that can be entered by the user. */
-  def setMax(Value: Double, FieldUnit: Double): Unit = js.native
+  def setMax(Value: Double, FieldUnit: Double): Unit
   
   /** sets the minimum value that can be entered by the user. */
-  def setMin(Value: Double, FieldUnit: Double): Unit = js.native
+  def setMin(Value: Double, FieldUnit: Double): Unit
   
   /** sets the increment value for the spin button. */
-  def setSpinSize(Value: Double): Unit = js.native
+  def setSpinSize(Value: Double): Unit
   
   /** determines if the format is checked during user input. */
-  def setStrictFormat(bStrict: Boolean): Unit = js.native
+  def setStrictFormat(bStrict: Boolean): Unit
   
   /** sets the user value which is displayed in the metric field. */
-  def setUserValue(Value: Double, FieldUnit: Double): Unit = js.native
+  def setUserValue(Value: Double, FieldUnit: Double): Unit
   
   /** sets the value which is displayed in the metric field. */
-  def setValue(Value: Double, FieldUnit: Double): Unit = js.native
+  def setValue(Value: Double, FieldUnit: Double): Unit
 }
 object XMetricField {
   

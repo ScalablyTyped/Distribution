@@ -3,15 +3,13 @@ package typings.fsExtra.anon
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferDataViewBytesWrittenNumber extends StObject {
   
-  var buffer: DataView = js.native
+  var buffer: DataView
   
-  var bytesWritten: Double = js.native
+  var bytesWritten: Double
 }
 object BufferDataViewBytesWrittenNumber {
   

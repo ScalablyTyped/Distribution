@@ -2,31 +2,29 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trace extends StObject {
   
   /**
     * The length of time in seconds between the start time of the root segment and the end time of the last segment that completed.
     */
-  var Duration: js.UndefOr[NullableDouble] = js.native
+  var Duration: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * The unique identifier for the request that generated the trace's segments and subsegments.
     */
-  var Id: js.UndefOr[TraceId] = js.native
+  var Id: js.UndefOr[TraceId] = js.undefined
   
   /**
     * LimitExceeded is set to true when the trace has exceeded one of the defined quotas. For more information about quotas, see AWS X-Ray endpoints and quotas.
     */
-  var LimitExceeded: js.UndefOr[NullableBoolean] = js.native
+  var LimitExceeded: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Segment documents for the segments and subsegments that comprise the trace.
     */
-  var Segments: js.UndefOr[SegmentList] = js.native
+  var Segments: js.UndefOr[SegmentList] = js.undefined
 }
 object Trace {
   

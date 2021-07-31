@@ -12,7 +12,7 @@ a node port of Lazar Laszlo's `jsqrcode` qr code decoder
 | Keywords           | qr, code, qrcode, jsqrcode, decode, decoder, read, reader |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 6340 |
+| # downloads        | 8221 |
 | # stars            | 4 |
 
 ## Links

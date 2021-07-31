@@ -2,37 +2,37 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXmlElement extends IXmlNode {
+trait IXmlElement
+  extends StObject
+     with IXmlNode {
   
-  def getAttribute(attributeName: String): String = js.native
+  def getAttribute(attributeName: String): String
   
-  def getAttributeNS(namespaceUri: js.Any, localName: String): String = js.native
+  def getAttributeNS(namespaceUri: js.Any, localName: String): String
   
-  def getAttributeNode(attributeName: String): XmlAttribute = js.native
+  def getAttributeNode(attributeName: String): XmlAttribute
   
-  def getAttributeNodeNS(namespaceUri: js.Any, localName: String): XmlAttribute = js.native
+  def getAttributeNodeNS(namespaceUri: js.Any, localName: String): XmlAttribute
   
-  def getElementsByTagName(tagName: String): XmlNodeList = js.native
+  def getElementsByTagName(tagName: String): XmlNodeList
   
-  def removeAttribute(attributeName: String): Unit = js.native
+  def removeAttribute(attributeName: String): Unit
   
-  def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit = js.native
+  def removeAttributeNS(namespaceUri: js.Any, localName: String): Unit
   
-  def removeAttributeNode(attributeNode: XmlAttribute): XmlAttribute = js.native
+  def removeAttributeNode(attributeNode: XmlAttribute): XmlAttribute
   
-  def setAttribute(attributeName: String, attributeValue: String): Unit = js.native
+  def setAttribute(attributeName: String, attributeValue: String): Unit
   
-  def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit = js.native
+  def setAttributeNS(namespaceUri: js.Any, qualifiedName: String, value: String): Unit
   
-  def setAttributeNode(newAttribute: XmlAttribute): XmlAttribute = js.native
+  def setAttributeNode(newAttribute: XmlAttribute): XmlAttribute
   
-  def setAttributeNodeNS(newAttribute: XmlAttribute): XmlAttribute = js.native
+  def setAttributeNodeNS(newAttribute: XmlAttribute): XmlAttribute
   
-  var tagName: String = js.native
+  var tagName: String
 }
 object IXmlElement {
   

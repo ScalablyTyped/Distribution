@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceRecordingConfiguration extends StObject {
   
   /**
     * Identifies which track is being recorded.
     */
-  var VoiceRecordingTrack: js.UndefOr[typings.awsSdk.connectMod.VoiceRecordingTrack] = js.native
+  var VoiceRecordingTrack: js.UndefOr[typings.awsSdk.connectMod.VoiceRecordingTrack] = js.undefined
 }
 object VoiceRecordingConfiguration {
   

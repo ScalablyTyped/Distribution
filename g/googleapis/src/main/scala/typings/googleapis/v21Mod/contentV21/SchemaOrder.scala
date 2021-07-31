@@ -2,116 +2,114 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Order. All methods require the order manager role.
   */
-@js.native
 trait SchemaOrder extends StObject {
   
   /**
     * Whether the order was acknowledged.
     */
-  var acknowledged: js.UndefOr[Boolean] = js.native
+  var acknowledged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The billing address.
     */
-  var billingAddress: js.UndefOr[SchemaOrderAddress] = js.native
+  var billingAddress: js.UndefOr[SchemaOrderAddress] = js.undefined
   
   /**
     * The details of the customer who placed the order.
     */
-  var customer: js.UndefOr[SchemaOrderCustomer] = js.native
+  var customer: js.UndefOr[SchemaOrderCustomer] = js.undefined
   
   /**
     * The details for the delivery.
     */
-  var deliveryDetails: js.UndefOr[SchemaOrderDeliveryDetails] = js.native
+  var deliveryDetails: js.UndefOr[SchemaOrderDeliveryDetails] = js.undefined
   
   /**
     * The REST ID of the order. Globally unique.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#order&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Line items that are ordered.
     */
-  var lineItems: js.UndefOr[js.Array[SchemaOrderLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[SchemaOrderLineItem]] = js.undefined
   
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * Merchant-provided ID of the order.
     */
-  var merchantOrderId: js.UndefOr[String] = js.native
+  var merchantOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * The net amount for the order (price part). For example, if an order was
     * originally for $100 and a refund was issued for $20, the net amount will
     * be $80.
     */
-  var netPriceAmount: js.UndefOr[SchemaPrice] = js.native
+  var netPriceAmount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The net amount for the order (tax part). Note that in certain cases due
     * to taxable base adjustment netTaxAmount might not match to a sum of tax
     * field across all lineItems and refunds.
     */
-  var netTaxAmount: js.UndefOr[SchemaPrice] = js.native
+  var netTaxAmount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The status of the payment.
     */
-  var paymentStatus: js.UndefOr[String] = js.native
+  var paymentStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The date when the order was placed, in ISO 8601 format.
     */
-  var placedDate: js.UndefOr[String] = js.native
+  var placedDate: js.UndefOr[String] = js.undefined
   
   /**
     * Promotions associated with the order.
     */
-  var promotions: js.UndefOr[js.Array[SchemaOrderPromotion]] = js.native
+  var promotions: js.UndefOr[js.Array[SchemaOrderPromotion]] = js.undefined
   
   /**
     * Refunds for the order.
     */
-  var refunds: js.UndefOr[js.Array[SchemaOrderRefund]] = js.native
+  var refunds: js.UndefOr[js.Array[SchemaOrderRefund]] = js.undefined
   
   /**
     * Shipments of the order.
     */
-  var shipments: js.UndefOr[js.Array[SchemaOrderShipment]] = js.native
+  var shipments: js.UndefOr[js.Array[SchemaOrderShipment]] = js.undefined
   
   /**
     * The total cost of shipping for all items.
     */
-  var shippingCost: js.UndefOr[SchemaPrice] = js.native
+  var shippingCost: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The tax for the total shipping cost.
     */
-  var shippingCostTax: js.UndefOr[SchemaPrice] = js.native
+  var shippingCostTax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The status of the order.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The party responsible for collecting and remitting taxes.
     */
-  var taxCollector: js.UndefOr[String] = js.native
+  var taxCollector: js.UndefOr[String] = js.undefined
 }
 object SchemaOrder {
   

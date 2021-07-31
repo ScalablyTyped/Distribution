@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONPDataSourceSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,17 +16,17 @@ trait JSONPDataSourceSettings
     * Override the callback function name in a jsonp request. Sets option jsonp in $.ajax functionbool Setting the jsonp option to false prevents jQuery from adding the "?callback" string to the URL or attempting to use "=?" for transformation
     *
     */
-  var jsonp: js.UndefOr[String | Boolean] = js.native
+  var jsonp: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * Specify the callback function name for a JSONP request. Sets option jsonpCallback in $.ajax function
     */
-  var jsonpCallback: js.UndefOr[String | js.Function] = js.native
+  var jsonpCallback: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * Type of the data source.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object JSONPDataSourceSettings {
   

@@ -3,14 +3,15 @@ package typings.rotJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featuresMod {
   
   @JSImport("rot-js/lib/map/features", "Corridor")
   @js.native
-  class Corridor protected () extends Feature {
+  class Corridor protected ()
+    extends StObject
+       with Feature {
     def this(startX: Double, startY: Double, endX: Double, endY: Double) = this()
     
     var _endX: Double = js.native
@@ -23,23 +24,37 @@ object featuresMod {
     
     var _startY: Double = js.native
     
+    /* CompleteClass */
+    override def create(digCallback: DigCallback): Unit = js.native
+    
     def createPriorityWalls(priorityWallCallback: js.Function2[/* x */ Double, /* y */ Double, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def debug(): Unit = js.native
+    
+    /* CompleteClass */
+    override def isValid(isWallCallback: TestPositionCallback, canBeDugCallback: TestPositionCallback): Boolean = js.native
   }
   /* static members */
   object Corridor {
     
-    @JSImport("rot-js/lib/map/features", "Corridor.createRandomAt")
+    @JSImport("rot-js/lib/map/features", "Corridor")
     @js.native
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: CorridorOptions): Corridor = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: CorridorOptions): Corridor = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Corridor]
   }
   
   @JSImport("rot-js/lib/map/features", "Room")
   @js.native
-  class Room protected () extends Feature {
+  class Room protected ()
+    extends StObject
+       with Feature {
     def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
     def this(x1: Double, y1: Double, x2: Double, y2: Double, doorX: Double) = this()
-    def this(x1: Double, y1: Double, x2: Double, y2: Double, doorX: js.UndefOr[scala.Nothing], doorY: Double) = this()
     def this(x1: Double, y1: Double, x2: Double, y2: Double, doorX: Double, doorY: Double) = this()
+    def this(x1: Double, y1: Double, x2: Double, y2: Double, doorX: Unit, doorY: Double) = this()
     
     var _doors: StringDictionary[Double] = js.native
     
@@ -57,6 +72,12 @@ object featuresMod {
     
     def clearDoors(): this.type = js.native
     
+    /* CompleteClass */
+    override def create(digCallback: DigCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def debug(): Unit = js.native
+    
     def getBottom(): Double = js.native
     
     def getCenter(): js.Array[Double] = js.native
@@ -71,36 +92,39 @@ object featuresMod {
     def getRight(): Double = js.native
     
     def getTop(): Double = js.native
+    
+    /* CompleteClass */
+    override def isValid(isWallCallback: TestPositionCallback, canBeDugCallback: TestPositionCallback): Boolean = js.native
   }
   /* static members */
   object Room {
     
+    @JSImport("rot-js/lib/map/features", "Room")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Room of random size within a given dimensions
       */
-    @JSImport("rot-js/lib/map/features", "Room.createRandom")
-    @js.native
-    def createRandom(availWidth: Double, availHeight: Double, options: RoomOptions): Room = js.native
+    @scala.inline
+    def createRandom(availWidth: Double, availHeight: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(availWidth.asInstanceOf[js.Any], availHeight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
     
     /**
       * Room of random size, with a given doors and direction
       */
-    @JSImport("rot-js/lib/map/features", "Room.createRandomAt")
-    @js.native
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: RoomOptions): Room = js.native
+    @scala.inline
+    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
     
     /**
       * Room of random size, positioned around center coords
       */
-    @JSImport("rot-js/lib/map/features", "Room.createRandomCenter")
-    @js.native
-    def createRandomCenter(cx: Double, cy: Double, options: RoomOptions): Room = js.native
+    @scala.inline
+    def createRandomCenter(cx: Double, cy: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomCenter")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
   }
   
-  @js.native
   trait CorridorOptions extends StObject {
     
-    var corridorLength: js.Tuple2[Double, Double] = js.native
+    var corridorLength: js.Tuple2[Double, Double]
   }
   object CorridorOptions {
     
@@ -123,14 +147,13 @@ object featuresMod {
   /**
     * @class Dungeon feature; has own .create() method
     */
-  @js.native
   trait Feature extends StObject {
     
-    def create(digCallback: DigCallback): Unit = js.native
+    def create(digCallback: DigCallback): Unit
     
-    def debug(): Unit = js.native
+    def debug(): Unit
     
-    def isValid(isWallCallback: TestPositionCallback, canBeDugCallback: TestPositionCallback): Boolean = js.native
+    def isValid(isWallCallback: TestPositionCallback, canBeDugCallback: TestPositionCallback): Boolean
   }
   object Feature {
     
@@ -158,10 +181,9 @@ object featuresMod {
     }
   }
   
-  @js.native
   trait FeatureConstructor extends StObject {
     
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: FeatureOptions): Feature = js.native
+    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: FeatureOptions): Feature
   }
   object FeatureConstructor {
     
@@ -179,9 +201,9 @@ object featuresMod {
     }
   }
   
-  @js.native
   trait FeatureOptions
-    extends RoomOptions
+    extends StObject
+       with RoomOptions
        with CorridorOptions
   object FeatureOptions {
     
@@ -196,12 +218,11 @@ object featuresMod {
     }
   }
   
-  @js.native
   trait RoomOptions extends StObject {
     
-    var roomHeight: js.Tuple2[Double, Double] = js.native
+    var roomHeight: js.Tuple2[Double, Double]
     
-    var roomWidth: js.Tuple2[Double, Double] = js.native
+    var roomWidth: js.Tuple2[Double, Double]
   }
   object RoomOptions {
     

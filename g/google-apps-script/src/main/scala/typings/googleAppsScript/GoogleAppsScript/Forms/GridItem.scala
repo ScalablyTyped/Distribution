@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,42 +17,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setRows(['Cars', 'Computers', 'Celebrities'])
   *         .setColumns(['Boring', 'So-so', 'Interesting']);
   */
-@js.native
 trait GridItem extends StObject {
   
-  def clearValidation(): GridItem = js.native
+  def clearValidation(): GridItem
   
-  def createResponse(responses: js.Array[String]): ItemResponse = js.native
+  def createResponse(responses: js.Array[String]): ItemResponse
   
-  def duplicate(): GridItem = js.native
+  def duplicate(): GridItem
   
-  def getColumns(): js.Array[String] = js.native
+  def getColumns(): js.Array[String]
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getRows(): js.Array[String] = js.native
+  def getRows(): js.Array[String]
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setColumns(columns: js.Array[String]): GridItem = js.native
+  def setColumns(columns: js.Array[String]): GridItem
   
-  def setHelpText(text: String): GridItem = js.native
+  def setHelpText(text: String): GridItem
   
-  def setRequired(enabled: Boolean): GridItem = js.native
+  def setRequired(enabled: Boolean): GridItem
   
-  def setRows(rows: js.Array[String]): GridItem = js.native
+  def setRows(rows: js.Array[String]): GridItem
   
-  def setTitle(title: String): GridItem = js.native
+  def setTitle(title: String): GridItem
   
-  def setValidation(validation: GridValidation): GridItem = js.native
+  def setValidation(validation: GridValidation): GridItem
 }
 object GridItem {
   

@@ -2,12 +2,14 @@ package typings.popperjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateModifiersMod {
   
-  @JSImport("@popperjs/core/lib/utils/validateModifiers", JSImport.Default)
+  @JSImport("@popperjs/core/lib/utils/validateModifiers", JSImport.Namespace)
   @js.native
-  def default(modifiers: js.Array[_]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(modifiers: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,32 +2,30 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropCap extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DistanceFromText: Double = js.native
+  var DistanceFromText: Double
   
-  def Enable(): Unit = js.native
+  def Enable(): Unit
   
-  var FontName: String = js.native
+  var FontName: String
   
-  var LinesToDrop: Double = js.native
+  var LinesToDrop: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: WdDropPosition = js.native
+  var Position: WdDropPosition
   
   @JSName("Word.DropCap_typekey")
-  var WordDotDropCap_typekey: DropCap = js.native
+  var WordDotDropCap_typekey: DropCap
 }
 object DropCap {
   

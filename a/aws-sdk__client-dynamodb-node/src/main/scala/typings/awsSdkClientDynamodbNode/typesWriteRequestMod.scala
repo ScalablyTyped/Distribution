@@ -6,25 +6,25 @@ import typings.awsSdkClientDynamodbNode.typesPutRequestMod.PutRequest
 import typings.awsSdkClientDynamodbNode.typesPutRequestMod.UnmarshalledPutRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWriteRequestMod {
   
-  @js.native
-  trait UnmarshalledWriteRequest extends WriteRequest {
+  trait UnmarshalledWriteRequest
+    extends StObject
+       with WriteRequest {
     
     /**
       * <p>A request to perform a <code>DeleteItem</code> operation.</p>
       */
     @JSName("DeleteRequest")
-    var DeleteRequest_UnmarshalledWriteRequest: js.UndefOr[UnmarshalledDeleteRequest] = js.native
+    var DeleteRequest_UnmarshalledWriteRequest: js.UndefOr[UnmarshalledDeleteRequest] = js.undefined
     
     /**
       * <p>A request to perform a <code>PutItem</code> operation.</p>
       */
     @JSName("PutRequest")
-    var PutRequest_UnmarshalledWriteRequest: js.UndefOr[UnmarshalledPutRequest] = js.native
+    var PutRequest_UnmarshalledWriteRequest: js.UndefOr[UnmarshalledPutRequest] = js.undefined
   }
   object UnmarshalledWriteRequest {
     
@@ -51,18 +51,17 @@ object typesWriteRequestMod {
     }
   }
   
-  @js.native
   trait WriteRequest extends StObject {
     
     /**
       * <p>A request to perform a <code>DeleteItem</code> operation.</p>
       */
-    var DeleteRequest: js.UndefOr[typings.awsSdkClientDynamodbNode.typesDeleteRequestMod.DeleteRequest] = js.native
+    var DeleteRequest: js.UndefOr[typings.awsSdkClientDynamodbNode.typesDeleteRequestMod.DeleteRequest] = js.undefined
     
     /**
       * <p>A request to perform a <code>PutItem</code> operation.</p>
       */
-    var PutRequest: js.UndefOr[typings.awsSdkClientDynamodbNode.typesPutRequestMod.PutRequest] = js.native
+    var PutRequest: js.UndefOr[typings.awsSdkClientDynamodbNode.typesPutRequestMod.PutRequest] = js.undefined
   }
   object WriteRequest {
     

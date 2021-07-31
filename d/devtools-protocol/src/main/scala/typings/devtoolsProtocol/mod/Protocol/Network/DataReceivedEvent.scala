@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataReceivedEvent extends StObject {
   
   /**
     * Data chunk length.
     */
-  var dataLength: integer = js.native
+  var dataLength: integer
   
   /**
     * Actual bytes received (might be less than dataLength for compressed encodings).
     */
-  var encodedDataLength: integer = js.native
+  var encodedDataLength: integer
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
 }
 object DataReceivedEvent {
   

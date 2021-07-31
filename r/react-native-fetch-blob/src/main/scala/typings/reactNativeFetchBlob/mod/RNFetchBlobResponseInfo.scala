@@ -10,23 +10,21 @@ import typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.text
 import typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RNFetchBlobResponseInfo extends StObject {
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var respType: text | blob | _empty | json = js.native
+  var respType: text | blob | _empty | json
   
-  var rnfbEncode: path | base64 | ascii | utf8 = js.native
+  var rnfbEncode: path | base64 | ascii | utf8
   
-  var state: Double = js.native
+  var state: Double
   
-  var status: Double = js.native
+  var status: Double
   
-  var taskId: String = js.native
+  var taskId: String
 }
 object RNFetchBlobResponseInfo {
   

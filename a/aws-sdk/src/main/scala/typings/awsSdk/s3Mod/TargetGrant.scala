@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetGrant extends StObject {
   
   /**
     * Container for the person being granted permissions.
     */
-  var Grantee: js.UndefOr[typings.awsSdk.s3Mod.Grantee] = js.native
+  var Grantee: js.UndefOr[typings.awsSdk.s3Mod.Grantee] = js.undefined
   
   /**
     * Logging permissions assigned to the grantee for the bucket.
     */
-  var Permission: js.UndefOr[BucketLogsPermission] = js.native
+  var Permission: js.UndefOr[BucketLogsPermission] = js.undefined
 }
 object TargetGrant {
   

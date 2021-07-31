@@ -2,17 +2,15 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderDataPointOptions extends StObject {
   
-  var fillOpacity: Double = js.native
+  var fillOpacity: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var strokeOpacity: Double = js.native
+  var strokeOpacity: Double
 }
 object RenderDataPointOptions {
   

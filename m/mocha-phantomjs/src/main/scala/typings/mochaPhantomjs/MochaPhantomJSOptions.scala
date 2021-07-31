@@ -2,21 +2,19 @@ package typings.mochaPhantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MochaPhantomJSOptions extends StObject {
   
-  var cookies: js.UndefOr[js.Array[_]] = js.native
+  var cookies: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var viewportSize: js.UndefOr[Double] = js.native
+  var viewportSize: js.UndefOr[Double] = js.undefined
 }
 object MochaPhantomJSOptions {
   
@@ -30,7 +28,7 @@ object MochaPhantomJSOptions {
   implicit class MochaPhantomJSOptionsMutableBuilder[Self <: MochaPhantomJSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCookies(value: js.Array[_]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    def setCookies(value: js.Array[js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)

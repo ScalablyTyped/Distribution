@@ -2,25 +2,23 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuccessfulPayment extends StObject {
   
-  var currency: String = js.native
+  var currency: String
   
-  var invoice_payload: String = js.native
+  var invoice_payload: String
   
-  var order_info: js.UndefOr[OrderInfo] = js.native
+  var order_info: js.UndefOr[OrderInfo] = js.undefined
   
-  var provider_payment_charge_id: String = js.native
+  var provider_payment_charge_id: String
   
-  var shipping_option_id: js.UndefOr[String] = js.native
+  var shipping_option_id: js.UndefOr[String] = js.undefined
   
-  var telegram_payment_charge_id: String = js.native
+  var telegram_payment_charge_id: String
   
-  var total_amount: Double = js.native
+  var total_amount: Double
 }
 object SuccessfulPayment {
   

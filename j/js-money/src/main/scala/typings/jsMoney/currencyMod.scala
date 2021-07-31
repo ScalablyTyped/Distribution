@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object currencyMod extends Shortcut {
@@ -13,248 +12,249 @@ object currencyMod extends Shortcut {
   @js.native
   val ^ : Currencies = js.native
   
-  @js.native
-  trait Currencies extends /* key */ StringDictionary[Currency] {
+  trait Currencies
+    extends StObject
+       with /* key */ StringDictionary[Currency] {
     
-    var AED: Currency = js.native
+    var AED: Currency
     
-    var AFN: Currency = js.native
+    var AFN: Currency
     
-    var ALL: Currency = js.native
+    var ALL: Currency
     
-    var AMD: Currency = js.native
+    var AMD: Currency
     
-    var ARS: Currency = js.native
+    var ARS: Currency
     
-    var AUD: Currency = js.native
+    var AUD: Currency
     
-    var AZN: Currency = js.native
+    var AZN: Currency
     
-    var BAM: Currency = js.native
+    var BAM: Currency
     
-    var BDT: Currency = js.native
+    var BDT: Currency
     
-    var BGN: Currency = js.native
+    var BGN: Currency
     
-    var BHD: Currency = js.native
+    var BHD: Currency
     
-    var BIF: Currency = js.native
+    var BIF: Currency
     
-    var BND: Currency = js.native
+    var BND: Currency
     
-    var BOB: Currency = js.native
+    var BOB: Currency
     
-    var BRL: Currency = js.native
+    var BRL: Currency
     
-    var BTC: Currency = js.native
+    var BTC: Currency
     
-    var BWP: Currency = js.native
+    var BWP: Currency
     
-    var BYR: Currency = js.native
+    var BYR: Currency
     
-    var BZD: Currency = js.native
+    var BZD: Currency
     
-    var CAD: Currency = js.native
+    var CAD: Currency
     
-    var CDF: Currency = js.native
+    var CDF: Currency
     
-    var CHF: Currency = js.native
+    var CHF: Currency
     
-    var CLP: Currency = js.native
+    var CLP: Currency
     
-    var CNY: Currency = js.native
+    var CNY: Currency
     
-    var COP: Currency = js.native
+    var COP: Currency
     
-    var CRC: Currency = js.native
+    var CRC: Currency
     
-    var CVE: Currency = js.native
+    var CVE: Currency
     
-    var CZK: Currency = js.native
+    var CZK: Currency
     
-    var DJF: Currency = js.native
+    var DJF: Currency
     
-    var DKK: Currency = js.native
+    var DKK: Currency
     
-    var DOP: Currency = js.native
+    var DOP: Currency
     
-    var DZD: Currency = js.native
+    var DZD: Currency
     
-    var EEK: Currency = js.native
+    var EEK: Currency
     
-    var EGP: Currency = js.native
+    var EGP: Currency
     
-    var ERN: Currency = js.native
+    var ERN: Currency
     
-    var ETB: Currency = js.native
+    var ETB: Currency
     
-    var EUR: Currency = js.native
+    var EUR: Currency
     
-    var GBP: Currency = js.native
+    var GBP: Currency
     
-    var GEL: Currency = js.native
+    var GEL: Currency
     
-    var GHS: Currency = js.native
+    var GHS: Currency
     
-    var GNF: Currency = js.native
+    var GNF: Currency
     
-    var GTQ: Currency = js.native
+    var GTQ: Currency
     
-    var HKD: Currency = js.native
+    var HKD: Currency
     
-    var HNL: Currency = js.native
+    var HNL: Currency
     
-    var HRK: Currency = js.native
+    var HRK: Currency
     
-    var HUF: Currency = js.native
+    var HUF: Currency
     
-    var IDR: Currency = js.native
+    var IDR: Currency
     
-    var ILS: Currency = js.native
+    var ILS: Currency
     
-    var INR: Currency = js.native
+    var INR: Currency
     
-    var IQD: Currency = js.native
+    var IQD: Currency
     
-    var IRR: Currency = js.native
+    var IRR: Currency
     
-    var ISK: Currency = js.native
+    var ISK: Currency
     
-    var JMD: Currency = js.native
+    var JMD: Currency
     
-    var JOD: Currency = js.native
+    var JOD: Currency
     
-    var JPY: Currency = js.native
+    var JPY: Currency
     
-    var KES: Currency = js.native
+    var KES: Currency
     
-    var KHR: Currency = js.native
+    var KHR: Currency
     
-    var KMF: Currency = js.native
+    var KMF: Currency
     
-    var KRW: Currency = js.native
+    var KRW: Currency
     
-    var KWD: Currency = js.native
+    var KWD: Currency
     
-    var KZT: Currency = js.native
+    var KZT: Currency
     
-    var LAK: Currency = js.native
+    var LAK: Currency
     
-    var LBP: Currency = js.native
+    var LBP: Currency
     
-    var LKR: Currency = js.native
+    var LKR: Currency
     
-    var LTL: Currency = js.native
+    var LTL: Currency
     
-    var LVL: Currency = js.native
+    var LVL: Currency
     
-    var LYD: Currency = js.native
+    var LYD: Currency
     
-    var MAD: Currency = js.native
+    var MAD: Currency
     
-    var MDL: Currency = js.native
+    var MDL: Currency
     
-    var MGA: Currency = js.native
+    var MGA: Currency
     
-    var MKD: Currency = js.native
+    var MKD: Currency
     
-    var MMK: Currency = js.native
+    var MMK: Currency
     
-    var MOP: Currency = js.native
+    var MOP: Currency
     
-    var MUR: Currency = js.native
+    var MUR: Currency
     
-    var MXN: Currency = js.native
+    var MXN: Currency
     
-    var MYR: Currency = js.native
+    var MYR: Currency
     
-    var MZN: Currency = js.native
+    var MZN: Currency
     
-    var NAD: Currency = js.native
+    var NAD: Currency
     
-    var NGN: Currency = js.native
+    var NGN: Currency
     
-    var NIO: Currency = js.native
+    var NIO: Currency
     
-    var NOK: Currency = js.native
+    var NOK: Currency
     
-    var NPR: Currency = js.native
+    var NPR: Currency
     
-    var NZD: Currency = js.native
+    var NZD: Currency
     
-    var OMR: Currency = js.native
+    var OMR: Currency
     
-    var PAB: Currency = js.native
+    var PAB: Currency
     
-    var PEN: Currency = js.native
+    var PEN: Currency
     
-    var PHP: Currency = js.native
+    var PHP: Currency
     
-    var PKR: Currency = js.native
+    var PKR: Currency
     
-    var PLN: Currency = js.native
+    var PLN: Currency
     
-    var PYG: Currency = js.native
+    var PYG: Currency
     
-    var QAR: Currency = js.native
+    var QAR: Currency
     
-    var RON: Currency = js.native
+    var RON: Currency
     
-    var RSD: Currency = js.native
+    var RSD: Currency
     
-    var RUB: Currency = js.native
+    var RUB: Currency
     
-    var RWF: Currency = js.native
+    var RWF: Currency
     
-    var SAR: Currency = js.native
+    var SAR: Currency
     
-    var SDG: Currency = js.native
+    var SDG: Currency
     
-    var SEK: Currency = js.native
+    var SEK: Currency
     
-    var SGD: Currency = js.native
+    var SGD: Currency
     
-    var SOS: Currency = js.native
+    var SOS: Currency
     
-    var SYP: Currency = js.native
+    var SYP: Currency
     
-    var THB: Currency = js.native
+    var THB: Currency
     
-    var TND: Currency = js.native
+    var TND: Currency
     
-    var TOP: Currency = js.native
+    var TOP: Currency
     
-    var TRY: Currency = js.native
+    var TRY: Currency
     
-    var TTD: Currency = js.native
+    var TTD: Currency
     
-    var TWD: Currency = js.native
+    var TWD: Currency
     
-    var TZS: Currency = js.native
+    var TZS: Currency
     
-    var UAH: Currency = js.native
+    var UAH: Currency
     
-    var UGX: Currency = js.native
+    var UGX: Currency
     
-    var USD: Currency = js.native
+    var USD: Currency
     
-    var UYU: Currency = js.native
+    var UYU: Currency
     
-    var UZS: Currency = js.native
+    var UZS: Currency
     
-    var VEF: Currency = js.native
+    var VEF: Currency
     
-    var VND: Currency = js.native
+    var VND: Currency
     
-    var XAF: Currency = js.native
+    var XAF: Currency
     
-    var XOF: Currency = js.native
+    var XOF: Currency
     
-    var YER: Currency = js.native
+    var YER: Currency
     
-    var ZAR: Currency = js.native
+    var ZAR: Currency
     
-    var ZMK: Currency = js.native
+    var ZMK: Currency
   }
   object Currencies {
     
@@ -750,22 +750,21 @@ object currencyMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Currency extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var decimal_digits: Double = js.native
+    var decimal_digits: Double
     
-    var name: String = js.native
+    var name: String
     
-    var name_plural: String = js.native
+    var name_plural: String
     
-    var rounding: Double = js.native
+    var rounding: Double
     
-    var symbol: String = js.native
+    var symbol: String
     
-    var symbol_native: String = js.native
+    var symbol_native: String
   }
   object Currency {
     

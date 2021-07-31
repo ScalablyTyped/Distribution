@@ -35,45 +35,44 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This component integrates a view to a {@link DrawPages} or {@link MasterPage} from a {@link DrawingDocument} . */
-@js.native
 trait DrawingDocumentDrawView
-  extends Controller
+  extends StObject
+     with Controller
      with XWindow
      with XFormLayerAccess
      with XDrawView
      with XPropertySet {
   
   /** If the view is in layer mode, the user can modify the layer of the model of this view in the user interface. */
-  var IsLayerMode: Boolean = js.native
+  var IsLayerMode: Boolean
   
   /** If the view is in master page mode, the view shows the master pages of this model. */
-  var IsMasterPageMode: Boolean = js.native
+  var IsMasterPageMode: Boolean
   
   /**
     * defines the offset from the top left position of the displayed page to the top left position of the view area in 100th/mm.
     * @since OOo 1.1.2
     */
-  var ViewOffset: Point = js.native
+  var ViewOffset: Point
   
   /** This is the area that is currently visible. */
-  var VisibleArea: Rectangle = js.native
+  var VisibleArea: Rectangle
   
   /**
     * This property defines the zoom type for the document.
     * @see com.sun.star.view.DocumentZoomType Note: After setting other types then {@link com.sun.star.view.DocumentZoomType.BY_VALUE} , implementations may
     * @since OOo 1.1.2
     */
-  var ZoomType: Double = js.native
+  var ZoomType: Double
   
   /**
     * Defines the zoom value to use. Valid only if the ZoomType is set to {@link com.sun.star.view.DocumentZoomType.BY_VALUE} .
     * @since OOo 1.1.2
     */
-  var ZoomValue: Double = js.native
+  var ZoomValue: Double
 }
 object DrawingDocumentDrawView {
   

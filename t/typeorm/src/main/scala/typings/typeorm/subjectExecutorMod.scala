@@ -10,7 +10,6 @@ import typings.typeorm.typeormStrings.delete
 import typings.typeorm.typeormStrings.insert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subjectExecutorMod {
@@ -19,7 +18,7 @@ object subjectExecutorMod {
   @js.native
   class SubjectExecutor protected () extends StObject {
     def this(queryRunner: QueryRunner, subjects: js.Array[Subject]) = this()
-    def this(queryRunner: QueryRunner, subjects: js.Array[Subject], options: SaveOptions with RemoveOptions) = this()
+    def this(queryRunner: QueryRunner, subjects: js.Array[Subject], options: SaveOptions & RemoveOptions) = this()
     
     /**
       * All subjects that needs to be operated.
@@ -100,7 +99,7 @@ object subjectExecutorMod {
     /**
       * Persistence options.
       */
-    var options: js.UndefOr[SaveOptions with RemoveOptions] = js.native
+    var options: js.UndefOr[SaveOptions & RemoveOptions] = js.native
     
     /**
       * QueryRunner used to execute all queries with a given subjects.

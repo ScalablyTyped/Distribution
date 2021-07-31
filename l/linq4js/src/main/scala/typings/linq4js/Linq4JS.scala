@@ -3,7 +3,6 @@ package typings.linq4js
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Linq4JS {
@@ -15,20 +14,23 @@ object Linq4JS {
   object OrderDirection extends StObject {
     
     @js.native
-    sealed trait Ascending extends OrderDirection
+    sealed trait Ascending
+      extends StObject
+         with OrderDirection
     
     @js.native
-    sealed trait Descending extends OrderDirection
+    sealed trait Descending
+      extends StObject
+         with OrderDirection
   }
   
-  @js.native
   trait EvaluateCommand extends StObject {
     
-    var Command: String = js.native
+    var Command: String
     
-    var Finder: Array[RegExp] = js.native
+    var Finder: Array[RegExp]
     
-    var SplitRegex: Array[RegExp] = js.native
+    var SplitRegex: Array[RegExp]
   }
   object EvaluateCommand {
     
@@ -52,12 +54,11 @@ object Linq4JS {
     }
   }
   
-  @js.native
   trait EvaluateCommandResult extends StObject {
     
-    var Command: String = js.native
+    var Command: String
     
-    var DynamicFunction: String = js.native
+    var DynamicFunction: String
   }
   object EvaluateCommandResult {
     
@@ -78,12 +79,11 @@ object Linq4JS {
     }
   }
   
-  @js.native
   trait GeneratedEntity extends StObject {
     
-    var Id: Double = js.native
+    var Id: Double
     
-    var _GeneratedId_ : Double = js.native
+    var _GeneratedId_ : Double
   }
   object GeneratedEntity {
     
@@ -104,15 +104,13 @@ object Linq4JS {
     }
   }
   
-  @js.native
   trait Helper extends StObject
   
-  @js.native
   trait OrderEntry extends StObject {
     
-    var Direction: OrderDirection = js.native
+    var Direction: OrderDirection
     
-    def ValueSelector(item: js.Any): js.Any = js.native
+    def ValueSelector(item: js.Any): js.Any
   }
   object OrderEntry {
     
@@ -133,12 +131,11 @@ object Linq4JS {
     }
   }
   
-  @js.native
   trait SelectEntry extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var property: String = js.native
+    var property: String
   }
   object SelectEntry {
     

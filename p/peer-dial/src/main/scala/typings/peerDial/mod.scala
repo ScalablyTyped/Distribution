@@ -13,7 +13,6 @@ import typings.peerDial.anon.Icon
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -71,18 +70,17 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait App extends StObject {
     
-    var allowStop: Boolean = js.native
+    var allowStop: Boolean
     
-    def launch(launchData: String): Unit = js.native
+    def launch(launchData: String): Unit
     
-    var name: String = js.native
+    var name: String
     
-    var pid: String = js.native
+    var pid: String
     
-    var state: String = js.native
+    var state: String
   }
   object App {
     
@@ -112,18 +110,17 @@ object mod {
     }
   }
   
-  @js.native
   trait AppInfo extends StObject {
     
-    var dialVer: String = js.native
+    var dialVer: String
     
-    var name: String = js.native
+    var name: String
     
-    var options: AppInfoOptions = js.native
+    var options: AppInfoOptions
     
-    var state: String = js.native
+    var state: String
     
-    var xmlns: String = js.native
+    var xmlns: String
   }
   object AppInfo {
     
@@ -153,10 +150,9 @@ object mod {
     }
   }
   
-  @js.native
   trait AppInfoOptions extends StObject {
     
-    var allowStop: String = js.native
+    var allowStop: String
   }
   object AppInfoOptions {
     
@@ -174,14 +170,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CorsOptions extends StObject {
     
-    var exposedHeaders: js.Array[String] = js.native
+    var exposedHeaders: js.Array[String]
     
-    var methods: js.Array[String] = js.native
+    var methods: js.Array[String]
     
-    var origin: Boolean = js.native
+    var origin: Boolean
   }
   object CorsOptions {
     
@@ -211,14 +206,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Delegate extends StObject {
     
-    def getApp(appName: String): App = js.native
+    def getApp(appName: String): App
     
-    def launchApp(appName: String, launchData: String, callback: js.Function1[/* data */ String, Unit]): Unit = js.native
+    def launchApp(appName: String, launchData: String, callback: js.Function1[/* data */ String, Unit]): Unit
     
-    def stopApp(appName: String, pid: String, callback: js.Function1[/* data */ Boolean, Unit]): Unit = js.native
+    def stopApp(appName: String, pid: String, callback: js.Function1[/* data */ Boolean, Unit]): Unit
   }
   object Delegate {
     
@@ -246,24 +240,23 @@ object mod {
     }
   }
   
-  @js.native
   trait DeviceInfo extends StObject {
     
-    var UDN: String = js.native
+    var UDN: String
     
-    var applicationUrl: String = js.native
+    var applicationUrl: String
     
-    var descriptionUrl: String = js.native
+    var descriptionUrl: String
     
-    var deviceType: String = js.native
+    var deviceType: String
     
-    var friendlyName: String = js.native
+    var friendlyName: String
     
-    var iconList: js.Array[js.Object] | Icon = js.native
+    var iconList: js.Array[js.Object] | Icon
     
-    var manufacturer: String = js.native
+    var manufacturer: String
     
-    var modelName: String = js.native
+    var modelName: String
   }
   object DeviceInfo {
     
@@ -314,40 +307,110 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var corsAllowOrigins: String | Boolean = js.native
+    var corsAllowOrigins: String | Boolean
     
-    var delegate: Delegate = js.native
+    var delegate: Delegate
     
     /**
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def expressApp(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def expressApp(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def expressApp(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
-    def expressApp(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def expressApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
+    def expressApp(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
+    def expressApp(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
+    def expressApp(req: IncomingMessage, res: ServerResponse): js.Any
     @JSName("expressApp")
-    var expressApp_Original: Express = js.native
+    var expressApp_Original: Express
     
-    var extraHeaders: js.UndefOr[js.Object] = js.native
+    var extraHeaders: js.UndefOr[js.Object] = js.undefined
     
-    var friendlyName: js.UndefOr[String] = js.native
+    var friendlyName: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var manufacturer: String = js.native
+    var manufacturer: String
     
-    var maxContentLength: js.UndefOr[Double] = js.native
+    var maxContentLength: js.UndefOr[Double] = js.undefined
     
-    var modelName: String = js.native
+    var modelName: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var uuid: js.UndefOr[UUIDOptions] = js.native
+    var uuid: js.UndefOr[UUIDOptions] = js.undefined
+  }
+  object ServerOptions {
+    
+    @scala.inline
+    def apply(
+      corsAllowOrigins: String | Boolean,
+      delegate: Delegate,
+      expressApp: Express,
+      manufacturer: String,
+      modelName: String,
+      port: Double,
+      prefix: String
+    ): ServerOptions = {
+      val __obj = js.Dynamic.literal(corsAllowOrigins = corsAllowOrigins.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], expressApp = expressApp.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], modelName = modelName.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ServerOptions]
+    }
+    
+    @scala.inline
+    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCorsAllowOrigins(value: String | Boolean): Self = StObject.set(x, "corsAllowOrigins", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDelegate(value: Delegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExpressApp(value: Express): Self = StObject.set(x, "expressApp", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExtraHeaders(value: js.Object): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      
+      @scala.inline
+      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+      
+      @scala.inline
+      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      
+      @scala.inline
+      def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
+      
+      @scala.inline
+      def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUuid(value: UUIDOptions): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    }
   }
 }

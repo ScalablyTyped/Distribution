@@ -6,7 +6,6 @@ import typings.pusherChatkitClient.userMod.PusherUser
 import typings.pusherChatkitClient.userMod.PusherUserPresence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksMod {
@@ -15,10 +14,9 @@ object hooksMod {
   
   type RoomHook = js.Function1[/* room */ PusherRoom, Unit]
   
-  @js.native
   trait RoomParams extends StObject {
     
-    var roomId: String = js.native
+    var roomId: String
   }
   object RoomParams {
     
@@ -38,10 +36,11 @@ object hooksMod {
   
   type RoomUserHook = js.Function2[/* room */ PusherRoom, /* user */ PusherUser, Unit]
   
-  @js.native
-  trait UserAndRoomParams extends RoomParams {
+  trait UserAndRoomParams
+    extends StObject
+       with RoomParams {
     
-    var userId: String = js.native
+    var userId: String
   }
   object UserAndRoomParams {
     
@@ -61,10 +60,9 @@ object hooksMod {
   
   type UserHook = js.Function1[/* room */ PusherUser, Unit]
   
-  @js.native
   trait UserParams extends StObject {
     
-    var userId: String = js.native
+    var userId: String
   }
   object UserParams {
     
@@ -84,12 +82,11 @@ object hooksMod {
   
   type UserPresenceHook = js.Function2[/* state */ UserPresenceState, /* user */ PusherUser, Unit]
   
-  @js.native
   trait UserPresenceState extends StObject {
     
-    var current: PusherUserPresence = js.native
+    var current: PusherUserPresence
     
-    var previous: PusherUserPresence = js.native
+    var previous: PusherUserPresence
   }
   object UserPresenceState {
     

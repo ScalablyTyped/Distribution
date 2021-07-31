@@ -2,7 +2,6 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait NotebookCollectionLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var baseUrl: js.UndefOr[Boolean] = js.native
+  var baseUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var clientUrl: js.UndefOr[Boolean] = js.native
+  var clientUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.2]
     */
-  var isVirtual: js.UndefOr[Boolean] = js.native
+  var isVirtual: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var sectionGroups: js.UndefOr[SectionGroupCollectionLoadOptions] = js.native
+  var sectionGroups: js.UndefOr[SectionGroupCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait NotebookCollectionLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var sections: js.UndefOr[SectionCollectionLoadOptions] = js.native
+  var sections: js.UndefOr[SectionCollectionLoadOptions] = js.undefined
 }
 object NotebookCollectionLoadOptions {
   

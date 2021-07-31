@@ -2,19 +2,17 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var mask: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var stackable: js.UndefOr[Boolean] = js.native
+  var stackable: js.UndefOr[Boolean] = js.undefined
 }
 object Duration {
   

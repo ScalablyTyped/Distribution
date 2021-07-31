@@ -2,15 +2,13 @@ package typings.reactPlayer.lazyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceProps extends StObject {
   
-  var src: String = js.native
+  var src: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SourceProps {
   

@@ -3,17 +3,15 @@ package typings.next.anon
 import typings.next.loadCustomRoutesMod.Rewrite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildId extends StObject {
   
-  var buildId: String = js.native
+  var buildId: String
   
-  var modern: Boolean = js.native
+  var modern: Boolean
   
-  var rewrites: js.Array[Rewrite] = js.native
+  var rewrites: js.Array[Rewrite]
 }
 object BuildId {
   

@@ -12,13 +12,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service contains the interfaces to implement by objects returned by {@link XPropertySetRegistry.openPropertySet()} . */
-@js.native
 trait PersistentPropertySet
-  extends XPersistentPropertySet
+  extends StObject
+     with XPersistentPropertySet
      with XNamed
      with XPropertyContainer
      with XPropertyAccess

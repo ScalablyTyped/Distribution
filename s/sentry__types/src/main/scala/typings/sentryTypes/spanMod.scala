@@ -7,13 +7,14 @@ import typings.sentryTypes.anon.PickSpanContextExcludekey
 import typings.sentryTypes.transactionMod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spanMod {
   
   @js.native
-  trait Span extends SpanContext {
+  trait Span
+    extends StObject
+       with SpanContext {
     
     /**
       * Use {@link startChild}
@@ -113,64 +114,63 @@ object spanMod {
     var transaction: js.UndefOr[Transaction] = js.native
   }
   
-  @js.native
   trait SpanContext extends StObject {
     
     /**
       * Data of the Span.
       */
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Description of the Span.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Timestamp in seconds (epoch time) indicating when the span ended.
       */
-    var endTimestamp: js.UndefOr[Double] = js.native
+    var endTimestamp: js.UndefOr[Double] = js.undefined
     
     /**
       * Operation of the Span.
       */
-    var op: js.UndefOr[String] = js.native
+    var op: js.UndefOr[String] = js.undefined
     
     /**
       * Parent Span ID
       */
-    var parentSpanId: js.UndefOr[String] = js.native
+    var parentSpanId: js.UndefOr[String] = js.undefined
     
     /**
       * Was this span chosen to be sent as part of the sample?
       */
-    var sampled: js.UndefOr[Boolean] = js.native
+    var sampled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Span ID
       */
-    var spanId: js.UndefOr[String] = js.native
+    var spanId: js.UndefOr[String] = js.undefined
     
     /**
       * Timestamp in seconds (epoch time) indicating when the span started.
       */
-    var startTimestamp: js.UndefOr[Double] = js.native
+    var startTimestamp: js.UndefOr[Double] = js.undefined
     
     /**
       * Completion status of the Span.
       * See: {@sentry/tracing SpanStatus} for possible values
       */
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
     /**
       * Tags of the Span.
       */
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Trace ID
       */
-    var traceId: js.UndefOr[String] = js.native
+    var traceId: js.UndefOr[String] = js.undefined
   }
   object SpanContext {
     

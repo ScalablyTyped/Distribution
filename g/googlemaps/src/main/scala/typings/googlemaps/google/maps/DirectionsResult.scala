@@ -2,15 +2,13 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsResult extends StObject {
   
-  var geocoded_waypoints: js.Array[DirectionsGeocodedWaypoint] = js.native
+  var geocoded_waypoints: js.Array[DirectionsGeocodedWaypoint]
   
-  var routes: js.Array[DirectionsRoute] = js.native
+  var routes: js.Array[DirectionsRoute]
 }
 object DirectionsResult {
   

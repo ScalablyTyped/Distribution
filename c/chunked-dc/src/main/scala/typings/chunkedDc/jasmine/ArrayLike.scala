@@ -3,14 +3,14 @@ package typings.chunkedDc.jasmine
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // taken from TypeScript lib.core.es6.d.ts, applicable to CustomMatchers.contains()
-@js.native
-trait ArrayLike[T] extends /* n */ NumberDictionary[T] {
+trait ArrayLike[T]
+  extends StObject
+     with /* n */ NumberDictionary[T] {
   
-  var length: Double = js.native
+  var length: Double
 }
 object ArrayLike {
   
@@ -21,7 +21,7 @@ object ArrayLike {
   }
   
   @scala.inline
-  implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[_], T] (val x: Self with ArrayLike[T]) extends AnyVal {
+  implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
     
     @scala.inline
     def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])

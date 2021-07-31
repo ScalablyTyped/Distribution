@@ -79,194 +79,192 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-elemental.react-elemental.TextFieldProps & { readonly error :string | undefined,  readonly secondary :boolean | undefined,  readonly style :react.react.CSSProperties | undefined} */
-@js.native
 trait TextAreaProps extends StObject {
   
   // RDFa Attributes
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
-  var accept: js.UndefOr[String] = js.native
+  var accept: js.UndefOr[String] = js.undefined
   
   // Standard HTML Attributes
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
-  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
     * @see aria-pressed @see aria-selected.
     */
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
   /**
     * Defines the total number of columns in a table, grid, or treegrid.
     * @see aria-colindex.
     */
-  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
     * @see aria-colcount @see aria-colspan.
     */
-  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-colindex @see aria-rowspan.
     */
-  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies the element (or elements) whose contents or presence are controlled by the current element.
     * @see aria-owns.
     */
-  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.undefined
   
   /** Indicates the element that represents the current item within a container or set of related elements. */
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
   
   /**
     * Identifies the element (or elements) that describes the object.
     * @see aria-labelledby
     */
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the element that provides a detailed, extended description for the object.
     * @see aria-describedby.
     */
-  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
     * @see aria-hidden @see aria-readonly.
     */
-  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates what functions can be performed when a dragged object is released on the drop target.
     * @deprecated in ARIA 1.1
     */
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
   /**
     * Identifies the element that provides an error message for the object.
     * @see aria-invalid @see aria-describedby.
     */
-  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
     * allows assistive technology to override the general default of reading in document source order.
     */
-  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates an element's "grabbed" state in a drag-and-drop operation.
     * @deprecated in ARIA 1.1
     */
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
   /**
     * Indicates whether the element is exposed to an accessibility API.
     * @see aria-disabled.
     */
-  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the entered value does not conform to the format expected by the application.
     * @see aria-errormessage.
     */
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
   /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines a string value that labels the current element.
     * @see aria-labelledby.
     */
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the element (or elements) that labels the current element.
     * @see aria-describedby.
     */
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
   /** Defines the hierarchical level of an element within a structure. */
-  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.undefined
   
   /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
   /** Indicates whether an element is modal when displayed. */
-  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates that the user may select more than one item from the current selectable descendants. */
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
     * between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
     * @see aria-controls.
     */
-  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
     * A hint could be a sample value or a brief description of the expected format.
     */
-  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
     * @see aria-setsize.
     */
-  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the current "pressed" state of toggle buttons.
     * @see aria-checked @see aria-selected.
     */
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
   /**
     * Indicates that the element is not editable, but is otherwise operable.
     * @see aria-disabled.
     */
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -274,495 +272,495 @@ trait TextAreaProps extends StObject {
     */
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-  ] = js.native
+  ] = js.undefined
   
   /** Indicates that user input is required on the element before a form may be submitted. */
-  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.undefined
   
   /** Defines a human-readable, author-localized description for the role of an element. */
-  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the total number of rows in a table, grid, or treegrid.
     * @see aria-rowindex.
     */
-  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
     * @see aria-rowcount @see aria-rowspan.
     */
-  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-rowindex @see aria-colspan.
     */
-  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the current "selected" state of various widgets.
     * @see aria-checked @see aria-pressed.
     */
-  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
     * @see aria-posinset.
     */
-  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
   /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
   
   /** Defines the maximum allowed value for a range widget. */
-  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
   /** Defines the minimum allowed value for a range widget. */
-  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the current value for a range widget.
     * @see aria-valuetext.
     */
-  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
   
   /** Defines the human readable text alternative of aria-valuenow for a range widget. */
-  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
   // Non-standard Attributes
-  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.undefined
   
-  var autoComplete: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.undefined
   
-  var autoCorrect: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autoSave: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.native
+  var capture: js.UndefOr[Boolean | String] = js.undefined
   
   // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
-  var contextMenu: js.UndefOr[String] = js.native
+  var contextMenu: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
   // React-specific Attributes
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var dirName: js.UndefOr[String] = js.native
+  var dirName: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Booleanish] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   
-  var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+  var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
   
-  val error: js.UndefOr[String] = js.native
+  val error: js.UndefOr[String] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String] = js.undefined
   
-  var formEncType: js.UndefOr[String] = js.native
+  var formEncType: js.UndefOr[String] = js.undefined
   
-  var formMethod: js.UndefOr[String] = js.native
+  var formMethod: js.UndefOr[String] = js.undefined
   
-  var formNoValidate: js.UndefOr[Boolean] = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.undefined
   
-  var formTarget: js.UndefOr[String] = js.native
+  var formTarget: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
   // Living Standard
   /**
     * Hints at the type of data that might be entered by the user while editing the element or its contents
     * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
     */
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
   /**
     * Specify that a standard HTML element should behave like a defined custom built-in element
     * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
     */
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var itemID: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.undefined
   
-  var itemProp: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.undefined
   
-  var itemRef: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.undefined
   
-  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.undefined
   
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double | String] = js.native
+  var max: js.UndefOr[Double | String] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double | String] = js.native
+  var min: js.UndefOr[Double | String] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // Media Events
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]]
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]]
   
   // Animation Events
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]]
   
   // MouseEvents
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
   
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] with js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] & js.UndefOr[FocusEventHandler[HTMLInputElement]]
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onChange: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] with js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] & js.UndefOr[ChangeEventHandler[HTMLInputElement]]
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
   // Composition Events
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]]
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]]
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]]
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
   // Clipboard Events
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
   
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onDrag: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDrop: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onError: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
   // Focus Events
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] with js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] & js.UndefOr[FocusEventHandler[HTMLInputElement]]
   
-  var onInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
   
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
   
   // also a Media Event
   // Keyboard Events
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
   
   // Image Events
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
   
-  var onPause: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
   // Pointer Events
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
   
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
   
   // UI Events
-  var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] with js.UndefOr[UIEventHandler[HTMLInputElement]] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] & js.UndefOr[UIEventHandler[HTMLInputElement]]
   
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
   // Selection Events
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
   
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
   // Touch Events
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
   
   // Transition Events
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTextAreaElement]] with js.UndefOr[TransitionEventHandler[HTMLInputElement]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTextAreaElement]] & js.UndefOr[TransitionEventHandler[HTMLInputElement]]
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
   
   // Wheel Events
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] with js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] & js.UndefOr[WheelEventHandler[HTMLInputElement]]
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   // Unknown
-  var radioGroup: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  val secondary: js.UndefOr[Boolean] = js.native
+  val secondary: js.UndefOr[Boolean] = js.undefined
   
-  var security: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var step: js.UndefOr[Double | String] = js.native
+  var step: js.UndefOr[Double | String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  val textarea: js.UndefOr[Boolean] = js.native
+  val textarea: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.native
+  var translate: js.UndefOr[yes | no] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var typeof: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.native
+  var unselectable: js.UndefOr[on | off] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
   
-  var vocab: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var wrap: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[String] = js.undefined
 }
 object TextAreaProps {
   
   @scala.inline
   def apply(
-    onAbort: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]],
-    onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]],
-    onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]],
-    onAuxClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onBeforeInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]],
-    onBlur: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] with js.UndefOr[FocusEventHandler[HTMLInputElement]],
-    onCanPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onChange: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] with js.UndefOr[ChangeEventHandler[HTMLInputElement]],
-    onClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]],
-    onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]],
-    onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]],
-    onContextMenu: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onCopy: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]],
-    onCut: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]],
-    onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onDrag: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDragEnd: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDragEnter: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDragExit: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDragLeave: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDragOver: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDragStart: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDrop: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]],
-    onDurationChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onEmptied: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onEncrypted: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onEnded: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onError: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onFocus: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] with js.UndefOr[FocusEventHandler[HTMLInputElement]],
-    onInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]],
-    onInvalid: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]],
-    onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]],
-    onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]],
-    onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]],
-    onLoad: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onLoadStart: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onLoadedData: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onMouseDown: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onMouseMove: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onMouseOut: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onMouseOver: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onMouseUp: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]],
-    onPaste: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]],
-    onPause: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onPlaying: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerDown: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerMove: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerOut: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerOver: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onPointerUp: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]],
-    onProgress: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onRateChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]],
-    onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] with js.UndefOr[UIEventHandler[HTMLInputElement]],
-    onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onSeeking: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onSelect: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onStalled: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onSubmit: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]],
-    onSuspend: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]],
-    onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]],
-    onTouchMove: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]],
-    onTouchStart: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]],
-    onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTextAreaElement]] with js.UndefOr[TransitionEventHandler[HTMLInputElement]],
-    onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onWaiting: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]],
-    onWheel: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] with js.UndefOr[WheelEventHandler[HTMLInputElement]]
+    onAbort: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]],
+    onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]],
+    onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]],
+    onAuxClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onBeforeInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]],
+    onBlur: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] & js.UndefOr[FocusEventHandler[HTMLInputElement]],
+    onCanPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onChange: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] & js.UndefOr[ChangeEventHandler[HTMLInputElement]],
+    onClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]],
+    onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]],
+    onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]],
+    onContextMenu: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onCopy: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]],
+    onCut: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]],
+    onDoubleClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onDrag: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDragEnd: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDragEnter: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDragExit: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDragLeave: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDragOver: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDragStart: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDrop: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]],
+    onDurationChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onEmptied: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onEncrypted: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onEnded: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onError: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onFocus: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] & js.UndefOr[FocusEventHandler[HTMLInputElement]],
+    onInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]],
+    onInvalid: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]],
+    onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]],
+    onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]],
+    onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]],
+    onLoad: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onLoadStart: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onLoadedData: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onMouseDown: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onMouseEnter: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onMouseLeave: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onMouseMove: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onMouseOut: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onMouseOver: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onMouseUp: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]],
+    onPaste: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]],
+    onPause: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onPlaying: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onPointerCancel: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerDown: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerEnter: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerLeave: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerMove: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerOut: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerOver: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onPointerUp: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]],
+    onProgress: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onRateChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onReset: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]],
+    onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] & js.UndefOr[UIEventHandler[HTMLInputElement]],
+    onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onSeeking: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onSelect: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onStalled: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onSubmit: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]],
+    onSuspend: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onTouchCancel: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]],
+    onTouchEnd: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]],
+    onTouchMove: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]],
+    onTouchStart: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]],
+    onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLTextAreaElement]] & js.UndefOr[TransitionEventHandler[HTMLInputElement]],
+    onVolumeChange: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onWaiting: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]],
+    onWheel: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] & js.UndefOr[WheelEventHandler[HTMLInputElement]]
   ): TextAreaProps = {
     val __obj = js.Dynamic.literal(onAbort = onAbort.asInstanceOf[js.Any], onAnimationEnd = onAnimationEnd.asInstanceOf[js.Any], onAnimationIteration = onAnimationIteration.asInstanceOf[js.Any], onAnimationStart = onAnimationStart.asInstanceOf[js.Any], onAuxClick = onAuxClick.asInstanceOf[js.Any], onBeforeInput = onBeforeInput.asInstanceOf[js.Any], onBlur = onBlur.asInstanceOf[js.Any], onCanPlay = onCanPlay.asInstanceOf[js.Any], onCanPlayThrough = onCanPlayThrough.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], onCompositionEnd = onCompositionEnd.asInstanceOf[js.Any], onCompositionStart = onCompositionStart.asInstanceOf[js.Any], onCompositionUpdate = onCompositionUpdate.asInstanceOf[js.Any], onContextMenu = onContextMenu.asInstanceOf[js.Any], onCopy = onCopy.asInstanceOf[js.Any], onCut = onCut.asInstanceOf[js.Any], onDoubleClick = onDoubleClick.asInstanceOf[js.Any], onDrag = onDrag.asInstanceOf[js.Any], onDragEnd = onDragEnd.asInstanceOf[js.Any], onDragEnter = onDragEnter.asInstanceOf[js.Any], onDragExit = onDragExit.asInstanceOf[js.Any], onDragLeave = onDragLeave.asInstanceOf[js.Any], onDragOver = onDragOver.asInstanceOf[js.Any], onDragStart = onDragStart.asInstanceOf[js.Any], onDrop = onDrop.asInstanceOf[js.Any], onDurationChange = onDurationChange.asInstanceOf[js.Any], onEmptied = onEmptied.asInstanceOf[js.Any], onEncrypted = onEncrypted.asInstanceOf[js.Any], onEnded = onEnded.asInstanceOf[js.Any], onError = onError.asInstanceOf[js.Any], onFocus = onFocus.asInstanceOf[js.Any], onInput = onInput.asInstanceOf[js.Any], onInvalid = onInvalid.asInstanceOf[js.Any], onKeyDown = onKeyDown.asInstanceOf[js.Any], onKeyPress = onKeyPress.asInstanceOf[js.Any], onKeyUp = onKeyUp.asInstanceOf[js.Any], onLoad = onLoad.asInstanceOf[js.Any], onLoadStart = onLoadStart.asInstanceOf[js.Any], onLoadedData = onLoadedData.asInstanceOf[js.Any], onLoadedMetadata = onLoadedMetadata.asInstanceOf[js.Any], onMouseDown = onMouseDown.asInstanceOf[js.Any], onMouseEnter = onMouseEnter.asInstanceOf[js.Any], onMouseLeave = onMouseLeave.asInstanceOf[js.Any], onMouseMove = onMouseMove.asInstanceOf[js.Any], onMouseOut = onMouseOut.asInstanceOf[js.Any], onMouseOver = onMouseOver.asInstanceOf[js.Any], onMouseUp = onMouseUp.asInstanceOf[js.Any], onPaste = onPaste.asInstanceOf[js.Any], onPause = onPause.asInstanceOf[js.Any], onPlay = onPlay.asInstanceOf[js.Any], onPlaying = onPlaying.asInstanceOf[js.Any], onPointerCancel = onPointerCancel.asInstanceOf[js.Any], onPointerDown = onPointerDown.asInstanceOf[js.Any], onPointerEnter = onPointerEnter.asInstanceOf[js.Any], onPointerLeave = onPointerLeave.asInstanceOf[js.Any], onPointerMove = onPointerMove.asInstanceOf[js.Any], onPointerOut = onPointerOut.asInstanceOf[js.Any], onPointerOver = onPointerOver.asInstanceOf[js.Any], onPointerUp = onPointerUp.asInstanceOf[js.Any], onProgress = onProgress.asInstanceOf[js.Any], onRateChange = onRateChange.asInstanceOf[js.Any], onReset = onReset.asInstanceOf[js.Any], onScroll = onScroll.asInstanceOf[js.Any], onSeeked = onSeeked.asInstanceOf[js.Any], onSeeking = onSeeking.asInstanceOf[js.Any], onSelect = onSelect.asInstanceOf[js.Any], onStalled = onStalled.asInstanceOf[js.Any], onSubmit = onSubmit.asInstanceOf[js.Any], onSuspend = onSuspend.asInstanceOf[js.Any], onTimeUpdate = onTimeUpdate.asInstanceOf[js.Any], onTouchCancel = onTouchCancel.asInstanceOf[js.Any], onTouchEnd = onTouchEnd.asInstanceOf[js.Any], onTouchMove = onTouchMove.asInstanceOf[js.Any], onTouchStart = onTouchStart.asInstanceOf[js.Any], onTransitionEnd = onTransitionEnd.asInstanceOf[js.Any], onVolumeChange = onVolumeChange.asInstanceOf[js.Any], onWaiting = onWaiting.asInstanceOf[js.Any], onWheel = onWheel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAreaProps]
@@ -1384,397 +1382,397 @@ object TextAreaProps {
     
     @scala.inline
     def setOnAbort(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationEnd(
-      value: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]]
+      value: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationIteration(
-      value: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]]
+      value: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onAnimationIteration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationStart(
-      value: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] with js.UndefOr[AnimationEventHandler[HTMLInputElement]]
+      value: js.UndefOr[AnimationEventHandler[HTMLTextAreaElement]] & js.UndefOr[AnimationEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onAnimationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAuxClick(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onAuxClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnBeforeInput(
-      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onBeforeInput", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnBlur(
-      value: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] with js.UndefOr[FocusEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] & js.UndefOr[FocusEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCanPlay(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCanPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCanPlayThrough(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCanPlayThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnChange(
-      value: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] with js.UndefOr[ChangeEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ChangeEventHandler[HTMLTextAreaElement]] & js.UndefOr[ChangeEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClick(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompositionEnd(
-      value: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]]
+      value: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCompositionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompositionStart(
-      value: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]]
+      value: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCompositionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCompositionUpdate(
-      value: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] with js.UndefOr[CompositionEventHandler[HTMLInputElement]]
+      value: js.UndefOr[CompositionEventHandler[HTMLTextAreaElement]] & js.UndefOr[CompositionEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCompositionUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnContextMenu(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCopy(
-      value: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnCut(
-      value: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onCut", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDoubleClick(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDoubleClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDrag(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragEnd(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragEnter(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDragEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragExit(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDragExit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragLeave(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDragLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragOver(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDragStart(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDrop(
-      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] with js.UndefOr[DragEventHandler[HTMLInputElement]]
+      value: js.UndefOr[DragEventHandler[HTMLTextAreaElement]] & js.UndefOr[DragEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDurationChange(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onDurationChange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEmptied(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEncrypted(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnEnded(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnError(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnFocus(
-      value: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] with js.UndefOr[FocusEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FocusEventHandler[HTMLTextAreaElement]] & js.UndefOr[FocusEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnInput(
-      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnInvalid(
-      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnKeyDown(
-      value: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
+      value: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnKeyPress(
-      value: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
+      value: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onKeyPress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnKeyUp(
-      value: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
+      value: js.UndefOr[KeyboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[KeyboardEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onKeyUp", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoad(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadStart(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onLoadStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadedData(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onLoadedData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnLoadedMetadata(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onLoadedMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseDown(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseEnter(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseLeave(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMove(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseOut(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseOver(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseUp(
-      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] with js.UndefOr[MouseEventHandler[HTMLInputElement]]
+      value: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] & js.UndefOr[MouseEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPaste(
-      value: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] with js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ClipboardEventHandler[HTMLTextAreaElement]] & js.UndefOr[ClipboardEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPause(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPlay(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPlaying(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerCancel(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerDown(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerDown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerEnter(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerLeave(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerMove(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerOut(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerOut", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerOver(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerOver", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnPointerUp(
-      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] with js.UndefOr[PointerEventHandler[HTMLInputElement]]
+      value: js.UndefOr[PointerEventHandler[HTMLTextAreaElement]] & js.UndefOr[PointerEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onPointerUp", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnProgress(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnRateChange(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onRateChange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnReset(
-      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnScroll(
-      value: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] with js.UndefOr[UIEventHandler[HTMLInputElement]]
+      value: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] & js.UndefOr[UIEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSeeked(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSeeking(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSelect(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnStalled(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSubmit(
-      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] with js.UndefOr[FormEventHandler[HTMLInputElement]]
+      value: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] & js.UndefOr[FormEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSuspend(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTimeUpdate(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onTimeUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchCancel(
-      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]]
+      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchEnd(
-      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]]
+      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchMove(
-      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]]
+      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchStart(
-      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] with js.UndefOr[TouchEventHandler[HTMLInputElement]]
+      value: js.UndefOr[TouchEventHandler[HTMLTextAreaElement]] & js.UndefOr[TouchEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTransitionEnd(
-      value: js.UndefOr[TransitionEventHandler[HTMLTextAreaElement]] with js.UndefOr[TransitionEventHandler[HTMLInputElement]]
+      value: js.UndefOr[TransitionEventHandler[HTMLTextAreaElement]] & js.UndefOr[TransitionEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onTransitionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnVolumeChange(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onVolumeChange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnWaiting(
-      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] with js.UndefOr[ReactEventHandler[HTMLInputElement]]
+      value: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] & js.UndefOr[ReactEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnWheel(
-      value: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] with js.UndefOr[WheelEventHandler[HTMLInputElement]]
+      value: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] & js.UndefOr[WheelEventHandler[HTMLInputElement]]
     ): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
     
     @scala.inline

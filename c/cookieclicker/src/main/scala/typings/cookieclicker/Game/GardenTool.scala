@@ -2,53 +2,51 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GardenTool extends StObject {
   
   /**
     * An HTML string which describes the tool
     */
-  var desc: String = js.native
+  var desc: String
   
   /**
     * A function which generates the description for the tool
     */
-  var descFunc: js.UndefOr[js.Function0[String]] = js.native
+  var descFunc: js.UndefOr[js.Function0[String]] = js.undefined
   
   /**
     * Function which is called on usage of the tool
     */
-  def func(): Unit = js.native
+  def func(): Unit
   
   /**
     * The icon column of the tool in the plant icon sheet
     */
-  var icon: Double = js.native
+  var icon: Double
   
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Determines if the tool should be displayed
     */
-  var isDisplayed: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDisplayed: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /**
     * Determines if the tool should be displayed as currently in use
     */
-  var isOn: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isOn: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /**
     * The internal name of the tool
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The displayed name of the tool
     */
-  var name: String = js.native
+  var name: String
 }
 object GardenTool {
   

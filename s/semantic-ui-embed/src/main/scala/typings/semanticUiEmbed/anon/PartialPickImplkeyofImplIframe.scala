@@ -2,16 +2,14 @@ package typings.semanticUiEmbed.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-embed.SemanticUI.Embed.TemplatesSettings._Impl, keyof semantic-ui-embed.SemanticUI.Embed.TemplatesSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplIframe extends StObject {
   
-  var iframe: js.UndefOr[js.Function2[/* url */ String, /* parameters */ String, String]] = js.native
+  var iframe: js.UndefOr[js.Function2[/* url */ String, /* parameters */ String, String]] = js.undefined
   
-  var placeholder: js.UndefOr[js.Function2[/* image */ String, /* icon */ String, String]] = js.native
+  var placeholder: js.UndefOr[js.Function2[/* image */ String, /* icon */ String, String]] = js.undefined
 }
 object PartialPickImplkeyofImplIframe {
   

@@ -2,13 +2,11 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PricingPhoneNumberResource extends StObject {
   
-  var countries: CountryResource = js.native
+  var countries: CountryResource
 }
 object PricingPhoneNumberResource {
   

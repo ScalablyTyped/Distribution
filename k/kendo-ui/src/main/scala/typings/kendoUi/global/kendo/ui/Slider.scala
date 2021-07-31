@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.SliderOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Slider")
 @js.native
 class Slider protected ()
-  extends typings.kendoUi.kendo.ui.Slider {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Slider {
   def this(element: Element) = this()
   def this(element: Element, options: SliderOptions) = this()
 }
@@ -21,9 +21,8 @@ object Slider {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Slider.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Slider = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Slider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Slider]
   
   /* static member */
   @JSGlobal("kendo.ui.Slider.fn")

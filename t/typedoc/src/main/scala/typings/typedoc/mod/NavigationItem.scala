@@ -2,7 +2,6 @@ package typings.typedoc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "NavigationItem")
@@ -10,170 +9,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class NavigationItem ()
   extends typings.typedoc.navigationItemMod.NavigationItem {
   def this(title: String) = this()
-  def this(title: js.UndefOr[scala.Nothing], url: String) = this()
   def this(title: String, url: String) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: String,
-    parent: typings.typedoc.navigationItemMod.NavigationItem
-  ) = this()
-  def this(
-    title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem
-  ) = this()
+  def this(title: Unit, url: String) = this()
   def this(title: String, url: String, parent: typings.typedoc.navigationItemMod.NavigationItem) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: String
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: String,
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: String,
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: String
-  ) = this()
-  def this(
-    title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String
-  ) = this()
-  def this(
-    title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: String
-  ) = this()
-  def this(title: String, url: String, parent: js.UndefOr[scala.Nothing], cssClasses: String) = this()
+  def this(title: String, url: Unit, parent: typings.typedoc.navigationItemMod.NavigationItem) = this()
+  def this(title: Unit, url: String, parent: typings.typedoc.navigationItemMod.NavigationItem) = this()
+  def this(title: Unit, url: Unit, parent: typings.typedoc.navigationItemMod.NavigationItem) = this()
+  def this(title: String, url: String, parent: Unit, cssClasses: String) = this()
   def this(
     title: String,
     url: String,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
     cssClasses: String
   ) = this()
+  def this(title: String, url: Unit, parent: Unit, cssClasses: String) = this()
   def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String,
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
+    title: String,
+    url: Unit,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
+    cssClasses: String
   ) = this()
+  def this(title: Unit, url: String, parent: Unit, cssClasses: String) = this()
   def this(
-    title: js.UndefOr[scala.Nothing],
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: String,
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: String,
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
-    url: String,
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String,
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: js.UndefOr[scala.Nothing],
+    title: Unit,
     url: String,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
+    cssClasses: String
   ) = this()
+  def this(title: Unit, url: Unit, parent: Unit, cssClasses: String) = this()
   def this(
-    title: js.UndefOr[scala.Nothing],
-    url: String,
+    title: Unit,
+    url: Unit,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: String,
-    reflection: typings.typedoc.abstractMod.Reflection
+    cssClasses: String
   ) = this()
   def this(
     title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String,
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: String,
-    url: js.UndefOr[scala.Nothing],
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    url: String,
+    parent: Unit,
     cssClasses: String,
     reflection: typings.typedoc.abstractMod.Reflection
   ) = this()
   def this(
     title: String,
     url: String,
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: js.UndefOr[scala.Nothing],
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: String,
-    url: String,
-    parent: js.UndefOr[scala.Nothing],
-    cssClasses: String,
-    reflection: typings.typedoc.abstractMod.Reflection
-  ) = this()
-  def this(
-    title: String,
-    url: String,
-    parent: typings.typedoc.navigationItemMod.NavigationItem,
-    cssClasses: js.UndefOr[scala.Nothing],
+    parent: Unit,
+    cssClasses: Unit,
     reflection: typings.typedoc.abstractMod.Reflection
   ) = this()
   def this(
@@ -181,33 +62,120 @@ class NavigationItem ()
     url: String,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
     cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: String,
+    url: String,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: Unit,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: String,
+    url: Unit,
+    parent: Unit,
+    cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: String,
+    url: Unit,
+    parent: Unit,
+    cssClasses: Unit,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: String,
+    url: Unit,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: String,
+    url: Unit,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: Unit,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: String,
+    parent: Unit,
+    cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: String,
+    parent: Unit,
+    cssClasses: Unit,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: String,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: String,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: Unit,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: Unit,
+    parent: Unit,
+    cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: Unit,
+    parent: Unit,
+    cssClasses: Unit,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: Unit,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: String,
+    reflection: typings.typedoc.abstractMod.Reflection
+  ) = this()
+  def this(
+    title: Unit,
+    url: Unit,
+    parent: typings.typedoc.navigationItemMod.NavigationItem,
+    cssClasses: Unit,
     reflection: typings.typedoc.abstractMod.Reflection
   ) = this()
 }
 /* static members */
 object NavigationItem {
   
-  @JSImport("typedoc", "NavigationItem.create")
+  @JSImport("typedoc", "NavigationItem")
   @js.native
-  def create(reflection: typings.typedoc.abstractMod.Reflection): typings.typedoc.navigationItemMod.NavigationItem = js.native
-  @JSImport("typedoc", "NavigationItem.create")
-  @js.native
-  def create(
-    reflection: typings.typedoc.abstractMod.Reflection,
-    parent: js.UndefOr[scala.Nothing],
-    useShortNames: Boolean
-  ): typings.typedoc.navigationItemMod.NavigationItem = js.native
-  @JSImport("typedoc", "NavigationItem.create")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(reflection: typings.typedoc.abstractMod.Reflection): typings.typedoc.navigationItemMod.NavigationItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any]).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
+  @scala.inline
+  def create(reflection: typings.typedoc.abstractMod.Reflection, parent: Unit, useShortNames: Boolean): typings.typedoc.navigationItemMod.NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
+  @scala.inline
   def create(
     reflection: typings.typedoc.abstractMod.Reflection,
     parent: typings.typedoc.navigationItemMod.NavigationItem
-  ): typings.typedoc.navigationItemMod.NavigationItem = js.native
-  @JSImport("typedoc", "NavigationItem.create")
-  @js.native
+  ): typings.typedoc.navigationItemMod.NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
+  @scala.inline
   def create(
     reflection: typings.typedoc.abstractMod.Reflection,
     parent: typings.typedoc.navigationItemMod.NavigationItem,
     useShortNames: Boolean
-  ): typings.typedoc.navigationItemMod.NavigationItem = js.native
+  ): typings.typedoc.navigationItemMod.NavigationItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(reflection.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], useShortNames.asInstanceOf[js.Any])).asInstanceOf[typings.typedoc.navigationItemMod.NavigationItem]
 }

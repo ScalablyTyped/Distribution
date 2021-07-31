@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobManifestSpec extends StObject {
   
   /**
     * If the specified manifest object is in the S3BatchOperations_CSV_20180820 format, this element describes which columns contain the required data.
     */
-  var Fields: js.UndefOr[JobManifestFieldList] = js.native
+  var Fields: js.UndefOr[JobManifestFieldList] = js.undefined
   
   /**
     * Indicates which of the available formats the specified manifest uses.
     */
-  var Format: JobManifestFormat = js.native
+  var Format: JobManifestFormat
 }
 object JobManifestSpec {
   

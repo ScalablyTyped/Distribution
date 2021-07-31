@@ -2,13 +2,11 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkDoneProgressOptions extends StObject {
   
-  var workDoneProgress: js.UndefOr[Boolean] = js.native
+  var workDoneProgress: js.UndefOr[Boolean] = js.undefined
 }
 object WorkDoneProgressOptions {
   
@@ -18,13 +16,15 @@ object WorkDoneProgressOptions {
     __obj.asInstanceOf[WorkDoneProgressOptions]
   }
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "WorkDoneProgressOptions.hasWorkDoneProgress")
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "WorkDoneProgressOptions")
   @js.native
-  def hasWorkDoneProgress(value: js.Any): /* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "WorkDoneProgressOptions.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean = js.native
+  @scala.inline
+  def hasWorkDoneProgress(value: js.Any): /* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasWorkDoneProgress")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.anon.WorkDoneProgress */ Boolean]
+  
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.WorkDoneProgressOptions */ Boolean]
   
   @scala.inline
   implicit class WorkDoneProgressOptionsMutableBuilder[Self <: WorkDoneProgressOptions] (val x: Self) extends AnyVal {

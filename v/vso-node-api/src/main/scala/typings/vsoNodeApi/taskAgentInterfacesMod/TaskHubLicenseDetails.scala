@@ -2,29 +2,27 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskHubLicenseDetails extends StObject {
   
-  var enterpriseUsersCount: Double = js.native
+  var enterpriseUsersCount: Double
   
-  var freeLicenseCount: Double = js.native
+  var freeLicenseCount: Double
   
-  var hasLicenseCountEverUpdated: Boolean = js.native
+  var hasLicenseCountEverUpdated: Boolean
   
-  var hostedAgentMinutesFreeCount: Double = js.native
+  var hostedAgentMinutesFreeCount: Double
   
-  var hostedAgentMinutesUsedCount: Double = js.native
+  var hostedAgentMinutesUsedCount: Double
   
-  var msdnUsersCount: Double = js.native
+  var msdnUsersCount: Double
   
-  var purchasedHostedLicenseCount: Double = js.native
+  var purchasedHostedLicenseCount: Double
   
-  var purchasedLicenseCount: Double = js.native
+  var purchasedLicenseCount: Double
   
-  var totalLicenseCount: Double = js.native
+  var totalLicenseCount: Double
 }
 object TaskHubLicenseDetails {
   

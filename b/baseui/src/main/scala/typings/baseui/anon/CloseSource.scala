@@ -5,13 +5,11 @@ import typings.baseui.baseuiStrings.closeButton
 import typings.baseui.baseuiStrings.escape_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseSource extends StObject {
   
-  var closeSource: js.UndefOr[closeButton | backdrop | escape_] = js.native
+  var closeSource: js.UndefOr[closeButton | backdrop | escape_] = js.undefined
 }
 object CloseSource {
   

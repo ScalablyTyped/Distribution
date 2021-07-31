@@ -2,15 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendMessageOptions extends SendBasicOptions {
+trait SendMessageOptions
+  extends StObject
+     with SendBasicOptions {
   
-  var disable_web_page_preview: js.UndefOr[Boolean] = js.native
+  var disable_web_page_preview: js.UndefOr[Boolean] = js.undefined
   
-  var parse_mode: js.UndefOr[ParseMode] = js.native
+  var parse_mode: js.UndefOr[ParseMode] = js.undefined
 }
 object SendMessageOptions {
   

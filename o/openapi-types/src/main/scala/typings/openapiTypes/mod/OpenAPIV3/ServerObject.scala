@@ -3,17 +3,15 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerObject extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var variables: js.UndefOr[StringDictionary[ServerVariableObject]] = js.native
+  var variables: js.UndefOr[StringDictionary[ServerVariableObject]] = js.undefined
 }
 object ServerObject {
   

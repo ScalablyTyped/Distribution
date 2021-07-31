@@ -3,25 +3,23 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardDismissDelay extends StObject {
   
-  var cardDismissDelay: Double = js.native
+  var cardDismissDelay: Double
   
-  var cardOpenDelay: Double = js.native
+  var cardOpenDelay: Double
   
-  var expandedCardOpenDelay: Double = js.native
+  var expandedCardOpenDelay: Double
   
-  var instantOpenOnClick: Boolean = js.native
+  var instantOpenOnClick: Boolean
   
-  var openHotKey: Double = js.native
+  var openHotKey: Double
   
-  var setInitialFocus: Boolean = js.native
+  var setInitialFocus: Boolean
   
-  var `type`: HoverCardType = js.native
+  var `type`: HoverCardType
 }
 object CardDismissDelay {
   

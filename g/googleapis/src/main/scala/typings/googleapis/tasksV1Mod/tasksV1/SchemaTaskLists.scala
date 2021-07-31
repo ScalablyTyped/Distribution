@@ -2,31 +2,29 @@ package typings.googleapis.tasksV1Mod.tasksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTaskLists extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Collection of task lists.
     */
-  var items: js.UndefOr[js.Array[SchemaTaskList]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTaskList]] = js.undefined
   
   /**
     * Type of the resource. This is always &quot;tasks#taskLists&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token that can be used to request the next page of this result.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaTaskLists {
   

@@ -2,34 +2,32 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Captures the processing status for each device in the operation.
   */
-@js.native
 trait SchemaPerDeviceStatusInBatch extends StObject {
   
   /**
     * If processing succeeds, the device ID of the device.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * If processing fails, the error type.
     */
-  var errorIdentifier: js.UndefOr[String] = js.native
+  var errorIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * If processing fails, a developer message explaining what went wrong.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The result status of the device after processing.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaPerDeviceStatusInBatch {
   

@@ -2,37 +2,35 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportOptions extends StObject {
   
-  var destinationType: js.UndefOr[String] = js.native
+  var destinationType: js.UndefOr[String] = js.undefined
   
-  var excelExportAll: js.UndefOr[Boolean] = js.native
+  var excelExportAll: js.UndefOr[Boolean] = js.undefined
   
-  var excelSheetName: js.UndefOr[String] = js.native
+  var excelSheetName: js.UndefOr[String] = js.undefined
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var fontUrl: js.UndefOr[String] = js.native
+  var fontUrl: js.UndefOr[String] = js.undefined
   
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
-  var pageOrientation: js.UndefOr[String] = js.native
+  var pageOrientation: js.UndefOr[String] = js.undefined
   
-  var requestHeaders: js.UndefOr[js.Object] = js.native
+  var requestHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var showFilters: js.UndefOr[Boolean] = js.native
+  var showFilters: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var useCustomizeCellForData: js.UndefOr[Boolean] = js.native
+  var useCustomizeCellForData: js.UndefOr[Boolean] = js.undefined
   
-  var useOlapFormattingInExcel: js.UndefOr[Boolean] = js.native
+  var useOlapFormattingInExcel: js.UndefOr[Boolean] = js.undefined
 }
 object ExportOptions {
   

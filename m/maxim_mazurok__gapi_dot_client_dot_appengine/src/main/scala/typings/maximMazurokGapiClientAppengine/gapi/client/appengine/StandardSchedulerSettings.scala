@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardSchedulerSettings extends StObject {
   
   /** Maximum number of instances to run for this version. Set to zero to disable max_instances configuration. */
-  var maxInstances: js.UndefOr[Double] = js.native
+  var maxInstances: js.UndefOr[Double] = js.undefined
   
   /** Minimum number of instances to run for this version. Set to zero to disable min_instances configuration. */
-  var minInstances: js.UndefOr[Double] = js.native
+  var minInstances: js.UndefOr[Double] = js.undefined
   
   /** Target CPU utilization ratio to maintain when scaling. */
-  var targetCpuUtilization: js.UndefOr[Double] = js.native
+  var targetCpuUtilization: js.UndefOr[Double] = js.undefined
   
   /** Target throughput utilization ratio to maintain when scaling */
-  var targetThroughputUtilization: js.UndefOr[Double] = js.native
+  var targetThroughputUtilization: js.UndefOr[Double] = js.undefined
 }
 object StandardSchedulerSettings {
   

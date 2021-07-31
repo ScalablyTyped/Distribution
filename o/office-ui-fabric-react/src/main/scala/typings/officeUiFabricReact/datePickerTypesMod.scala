@@ -18,19 +18,17 @@ import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerTypesMod {
   
-  @js.native
   trait IDatePicker extends StObject {
     
     /** Sets focus to the text field */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /** Reset the state of the picker to the default */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object IDatePicker {
     
@@ -51,209 +49,209 @@ object datePickerTypesMod {
     }
   }
   
-  @js.native
   trait IDatePickerProps
-    extends HTMLAttributes[HTMLElement]
-       with IBaseProps[IDatePicker] {
+    extends StObject
+       with IBaseProps[IDatePicker]
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Allows all elements to be focused, including disabled ones
       * @defaultvalue false
       */
-    var allFocusable: js.UndefOr[Boolean] = js.native
+    var allFocusable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the DatePicker allows input a date string directly or not
       * @defaultvalue false
       */
-    var allowTextInput: js.UndefOr[Boolean] = js.native
+    var allowTextInput: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Aria Label for TextField of the DatePicker for screen reader users.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Determines if DatePicker has a border.
       * @defaultvalue false
       */
-    var borderless: js.UndefOr[Boolean] = js.native
+    var borderless: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom Calendar to be used for date picking
       */
-    var calendarAs: js.UndefOr[IComponentAs[ICalendarProps]] = js.native
+    var calendarAs: js.UndefOr[IComponentAs[ICalendarProps]] = js.undefined
     
     /**
       * Pass calendar props to calendar component
       */
-    var calendarProps: js.UndefOr[ICalendarProps] = js.native
+    var calendarProps: js.UndefOr[ICalendarProps] = js.undefined
     
     /**
       * Pass callout props to callout component
       */
-    var calloutProps: js.UndefOr[ICalloutProps] = js.native
+    var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
       * Apply additional formating to dates, for example localized date formatting.
       */
-    var dateTimeFormatter: js.UndefOr[ICalendarFormatDateCallbacks] = js.native
+    var dateTimeFormatter: js.UndefOr[ICalendarFormatDateCallbacks] = js.undefined
     
     /**
       * Whether the DatePicker should open automatically when the control is focused
       * @defaultvalue false
       */
-    var disableAutoFocus: js.UndefOr[Boolean] = js.native
+    var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disabled state of the DatePicker.
       * @defaultvalue false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The first day of the week for your locale.
       * @defaultvalue DayOfWeek.Sunday
       */
-    var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.native
+    var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
     
     /**
       * Defines when the first week of the year should start, FirstWeekOfYear.FirstDay,
       * FirstWeekOfYear.FirstFullWeek or FirstWeekOfYear.FirstFourDayWeek are the possible values
       * @defaultvalue FirstWeekOfYear.FirstFullWeek
       */
-    var firstWeekOfYear: js.UndefOr[FirstWeekOfYear] = js.native
+    var firstWeekOfYear: js.UndefOr[FirstWeekOfYear] = js.undefined
     
     /**
       * Optional method to format the chosen date to a string to display in the DatePicker
       * @defaultvalue date.toString()
       */
-    var formatDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], String]] = js.native
+    var formatDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], String]] = js.undefined
     
     /**
       * Whether the month picker should highlight the current month
       * @defaultvalue false
       */
-    var highlightCurrentMonth: js.UndefOr[Boolean] = js.native
+    var highlightCurrentMonth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the month picker should highlight the selected month
       * @defaultvalue false
       */
-    var highlightSelectedMonth: js.UndefOr[Boolean] = js.native
+    var highlightSelectedMonth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initially highlighted date in the calendar picker
       */
-    var initialPickerDate: js.UndefOr[Date] = js.native
+    var initialPickerDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Whether the month picker is shown beside the day picker or hidden.
       * @defaultvalue true
       */
-    var isMonthPickerVisible: js.UndefOr[Boolean] = js.native
+    var isMonthPickerVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the DatePicker is a required field or not
       * @defaultvalue false
       */
-    var isRequired: js.UndefOr[Boolean] = js.native
+    var isRequired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Label for the DatePicker
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum allowable date.
       */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /**
       * The minimum allowable date.
       */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Callback that runs after DatePicker's menu (Calendar) is closed
       */
-    var onAfterMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAfterMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback issued when a date is selected
       */
-    var onSelectDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date | Null], Unit]] = js.native
+    var onSelectDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date | Null], Unit]] = js.undefined
     
     /**
       * Optional method to parse the text input value to date, it is only useful when allowTextInput is set to true
       * @defaultvalue new Date(Date.parse(dateStr))
       */
-    var parseDateFromString: js.UndefOr[js.Function1[/* dateStr */ String, Date | Null]] = js.native
+    var parseDateFromString: js.UndefOr[js.Function1[/* dateStr */ String, Date | Null]] = js.undefined
     
     /**
       * Aria label for date picker popup for screen reader users.
       * @defaultvalue Calendar
       */
-    var pickerAriaLabel: js.UndefOr[String] = js.native
+    var pickerAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the CalendarDay close button should be shown or not.
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the "Go to today" link should be shown or not
       */
-    var showGoToToday: js.UndefOr[Boolean] = js.native
+    var showGoToToday: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show month picker on top of date picker when visible.
       * @defaultvalue false
       */
-    var showMonthPickerAsOverlay: js.UndefOr[Boolean] = js.native
+    var showMonthPickerAsOverlay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the calendar should show the week number (weeks 1 to 53) before each week row
       * @defaultvalue false
       */
-    var showWeekNumbers: js.UndefOr[Boolean] = js.native
+    var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Localized strings to use in the DatePicker
       */
-    var strings: js.UndefOr[IDatePickerStrings] = js.native
+    var strings: js.UndefOr[IDatePickerStrings] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDatePickerStyleProps, IDatePickerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDatePickerStyleProps, IDatePickerStyles]] = js.undefined
     
     /**
       * Pass textField props to textField component.
       * Prop name is "textField" for compatiblity with upcoming slots work.
       */
-    var textField: js.UndefOr[ITextFieldProps] = js.native
+    var textField: js.UndefOr[ITextFieldProps] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Value of today. If null, current time in client machine will be used.
       */
-    var today: js.UndefOr[Date] = js.native
+    var today: js.UndefOr[Date] = js.undefined
     
     /**
       * Whether or not the Textfield of the DatePicker is underlined.
       * @defaultvalue false
       */
-    var underlined: js.UndefOr[Boolean] = js.native
+    var underlined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default value of the DatePicker, if any
       */
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object IDatePickerProps {
     
@@ -487,23 +485,24 @@ object datePickerTypesMod {
     }
   }
   
-  @js.native
-  trait IDatePickerStrings extends ICalendarStrings {
+  trait IDatePickerStrings
+    extends StObject
+       with ICalendarStrings {
     
     /**
       * Error message to render for TextField if input date string parsing fails.
       */
-    var invalidInputErrorMessage: js.UndefOr[String] = js.native
+    var invalidInputErrorMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Error message to render for TextField if date boundary (minDate, maxDate) validation fails.
       */
-    var isOutOfBoundsErrorMessage: js.UndefOr[String] = js.native
+    var isOutOfBoundsErrorMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Error message to render for TextField if isRequired validation fails.
       */
-    var isRequiredErrorMessage: js.UndefOr[String] = js.native
+    var isRequiredErrorMessage: js.UndefOr[String] = js.undefined
   }
   object IDatePickerStrings {
     
@@ -542,24 +541,23 @@ object datePickerTypesMod {
     }
   }
   
-  @js.native
   trait IDatePickerStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isDatePickerShown: js.UndefOr[Boolean] = js.native
+    var isDatePickerShown: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[Boolean] = js.native
+    var label: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDatePickerStyleProps {
     
@@ -601,21 +599,20 @@ object datePickerTypesMod {
     }
   }
   
-  @js.native
   trait IDatePickerStyles extends StObject {
     
-    var callout: IStyle = js.native
+    var callout: IStyle
     
-    var icon: IStyle = js.native
+    var icon: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var textField: IStyle = js.native
+    var textField: IStyle
     
-    var wrapper: js.UndefOr[IStyle] = js.native
+    var wrapper: js.UndefOr[IStyle] = js.undefined
   }
   object IDatePickerStyles {
     

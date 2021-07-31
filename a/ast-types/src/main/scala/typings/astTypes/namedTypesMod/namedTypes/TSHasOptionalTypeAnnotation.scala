@@ -4,13 +4,11 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSHasOptionalTypeAnnotation extends StObject {
   
-  var typeAnnotation: js.UndefOr[TSTypeAnnotationKind | Null] = js.native
+  var typeAnnotation: js.UndefOr[TSTypeAnnotationKind | Null] = js.undefined
 }
 object TSHasOptionalTypeAnnotation {
   

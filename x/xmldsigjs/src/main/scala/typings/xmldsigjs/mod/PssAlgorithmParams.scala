@@ -3,7 +3,6 @@ package typings.xmldsigjs.mod
 import typings.xmldsigjs.rsaKeyMod.RsaPSSSignParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "PssAlgorithmParams")
@@ -15,7 +14,10 @@ class PssAlgorithmParams ()
 /* static members */
 object PssAlgorithmParams {
   
-  @JSImport("xmldsigjs", "PssAlgorithmParams.FromAlgorithm")
+  @JSImport("xmldsigjs", "PssAlgorithmParams")
   @js.native
-  def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams]
 }

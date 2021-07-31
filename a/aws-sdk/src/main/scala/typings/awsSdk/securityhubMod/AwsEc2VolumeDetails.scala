@@ -2,46 +2,44 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsEc2VolumeDetails extends StObject {
   
   /**
     * The volume attachments.
     */
-  var Attachments: js.UndefOr[AwsEc2VolumeAttachmentList] = js.native
+  var Attachments: js.UndefOr[AwsEc2VolumeAttachmentList] = js.undefined
   
   /**
     * Indicates when the volume was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateTime: js.UndefOr[NonEmptyString] = js.native
+  var CreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the volume is encrypted.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
     */
-  var KmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The size of the volume, in GiBs.
     */
-  var Size: js.UndefOr[Integer] = js.native
+  var Size: js.UndefOr[Integer] = js.undefined
   
   /**
     * The snapshot from which the volume was created.
     */
-  var SnapshotId: js.UndefOr[NonEmptyString] = js.native
+  var SnapshotId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The volume state.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsEc2VolumeDetails {
   

@@ -2,21 +2,19 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonDomSettings extends StObject {
   
-  var button: js.UndefOr[ButtonDomButtomButton] = js.native
+  var button: js.UndefOr[ButtonDomButtomButton] = js.undefined
   
-  var buttonContainer: js.UndefOr[ButtonDomButtomCommon] = js.native
+  var buttonContainer: js.UndefOr[ButtonDomButtomCommon] = js.undefined
   
-  var buttonLiner: js.UndefOr[ButtonDomButtomCommon] = js.native
+  var buttonLiner: js.UndefOr[ButtonDomButtomCommon] = js.undefined
   
-  var collection: js.UndefOr[ButtonDomButtomCommon] = js.native
+  var collection: js.UndefOr[ButtonDomButtomCommon] = js.undefined
   
-  var container: js.UndefOr[ButtonDomButtomCommon] = js.native
+  var container: js.UndefOr[ButtonDomButtomCommon] = js.undefined
 }
 object ButtonDomSettings {
   

@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -104,14 +103,13 @@ object privacy {
     }
     
     /** An object which describes TLS minimum and maximum versions. */
-    @js.native
     trait tlsVersionRestrictionConfig extends StObject {
       
       /** The maximum TLS version supported. */
-      var maximum: js.UndefOr[TlsVersionRestrictionConfigMaximum] = js.native
+      var maximum: js.UndefOr[TlsVersionRestrictionConfigMaximum] = js.undefined
       
       /** The minimum TLS version supported. */
-      var minimum: js.UndefOr[TlsVersionRestrictionConfigMinimum] = js.native
+      var minimum: js.UndefOr[TlsVersionRestrictionConfigMinimum] = js.undefined
     }
     object tlsVersionRestrictionConfig {
       
@@ -158,14 +156,13 @@ object privacy {
   object websites {
     
     /** The settings for cookies. */
-    @js.native
     trait CookieConfig extends StObject {
       
       /** The type of cookies to allow. */
-      var behavior: js.UndefOr[CookieConfigBehavior] = js.native
+      var behavior: js.UndefOr[CookieConfigBehavior] = js.undefined
       
       /** Whether to create all cookies as nonPersistent (i.e., session) cookies. */
-      var nonPersistentCookies: js.UndefOr[Boolean] = js.native
+      var nonPersistentCookies: js.UndefOr[Boolean] = js.undefined
     }
     object CookieConfig {
       

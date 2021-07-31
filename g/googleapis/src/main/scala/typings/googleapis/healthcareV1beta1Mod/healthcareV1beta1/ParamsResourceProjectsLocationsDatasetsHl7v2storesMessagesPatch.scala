@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesPatch extends StandardParameters {
+trait ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Resource name of the Message, of the form
     * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`.
     * Assigned by the server.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaMessage] = js.native
+  var requestBody: js.UndefOr[SchemaMessage] = js.undefined
   
   /**
     * The update mask applies to the resource. For the `FieldMask` definition,
@@ -37,7 +37,7 @@ trait ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesPatch extends St
     * request will be merged with the existing set of labels. Existing labels
     * with the same keys will be updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsDatasetsHl7v2storesMessagesPatch {
   

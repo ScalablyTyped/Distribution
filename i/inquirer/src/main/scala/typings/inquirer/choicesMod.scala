@@ -7,7 +7,6 @@ import typings.inquirer.mod.UnionToIntersection
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object choicesMod {
@@ -20,7 +19,9 @@ object choicesMod {
     */
   @JSImport("inquirer/lib/objects/choices", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Answers */] protected () extends Choices[T] {
+  class ^[T /* <: Answers */] protected ()
+    extends StObject
+       with Choices[T] {
     /**
       * Initializes a new instance of the `Choices` class.
       *

@@ -2,7 +2,6 @@ package typings.jsspecJsspec
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JSSpec {
@@ -10,7 +9,11 @@ object JSSpec {
   /**
     * Sync Function - with optional arguments
     */
-  type ArgFunc = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait ArgFunc extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   /**
     * Async Function
@@ -31,7 +34,6 @@ object JSSpec {
     def apply(title: String, options: ContextOptions, fn: Func): Unit = js.native
   }
   
-  @js.native
   trait ContextOptions extends StObject {
     
     /**
@@ -39,12 +41,12 @@ object JSSpec {
       * - Run in random order if `true`
       * - Run in definition order if `false`
       */
-    var random: js.UndefOr[Boolean] = js.native
+    var random: js.UndefOr[Boolean] = js.undefined
     
     /**
       * fail the test after _timeout_ milliseconds
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ContextOptions {
     
@@ -91,13 +93,12 @@ object JSSpec {
     def apply(title: String, option: ExampleOptions, fn: AsyncFunc | Func): Unit = js.native
   }
   
-  @js.native
   trait ExampleOptions extends StObject {
     
     /**
       * fail the test after _timeout_ milliseconds
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ExampleOptions {
     

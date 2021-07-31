@@ -2,13 +2,11 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authenticated extends StObject {
   
-  var authenticated: Boolean = js.native
+  var authenticated: Boolean
 }
 object Authenticated {
   

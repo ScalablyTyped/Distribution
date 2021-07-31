@@ -6,29 +6,29 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleContainerMod {
   
   @JSImport("@react-md/form/types/toggle/ToggleContainer", "ToggleContainer")
   @js.native
-  val ToggleContainer: ForwardRefExoticComponent[ToggleContainerProps with RefAttributes[HTMLDivElement]] = js.native
+  val ToggleContainer: ForwardRefExoticComponent[ToggleContainerProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait ToggleContainerProps extends HTMLAttributes[HTMLDivElement] {
+  trait ToggleContainerProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the input toggle should be rendered as `inline-flex` instead of
       * `flex`.
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the label should be stacked above/below the input toggle instead
       * of being rendered on the same line.
       */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
   }
   object ToggleContainerProps {
     

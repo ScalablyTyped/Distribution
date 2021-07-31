@@ -6,65 +6,65 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDirectorysitesList extends StandardParameters {
+trait ParamsResourceDirectorysitesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * This search filter is no longer supported and will have no effect on the
     * results returned.
     */
-  var acceptsInStreamVideoPlacements: js.UndefOr[Boolean] = js.native
+  var acceptsInStreamVideoPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This search filter is no longer supported and will have no effect on the
     * results returned.
     */
-  var acceptsInterstitialPlacements: js.UndefOr[Boolean] = js.native
+  var acceptsInterstitialPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only directory sites that accept publisher paid placements. This
     * field can be left blank.
     */
-  var acceptsPublisherPaidPlacements: js.UndefOr[Boolean] = js.native
+  var acceptsPublisherPaidPlacements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only active directory sites. Leave blank to retrieve both active
     * and inactive directory sites.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only directory sites with this Ad Manager network code.
     */
-  var dfpNetworkCode: js.UndefOr[String] = js.native
+  var dfpNetworkCode: js.UndefOr[String] = js.undefined
   
   /**
     * Select only directory sites with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for objects by name, ID or URL. Wildcards (*) are
@@ -75,17 +75,17 @@ trait ParamsResourceDirectorysitesList extends StandardParameters {
     * search string of "directory site" will match objects with name "my
     * directory site", "directory site 2015" or simply, "directory site".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceDirectorysitesList {
   

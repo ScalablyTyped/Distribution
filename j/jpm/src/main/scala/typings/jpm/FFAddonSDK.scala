@@ -29,14 +29,14 @@ import typings.jpm.toolbarMod.ToolbarItem
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FFAddonSDK {
   
   @js.native
   trait ActionButton
-    extends ActionButtonState
+    extends StObject
+       with ActionButtonState
        with ToolbarItem {
     
     def click(): Unit = js.native
@@ -44,10 +44,10 @@ object FFAddonSDK {
     def destroy(): Unit = js.native
     
     @JSName("on")
-    def on_click(event: click, handler: js.Function1[/* state */ ActionButtonState, _]): Unit = js.native
+    def on_click(event: click, handler: js.Function1[/* state */ ActionButtonState, js.Any]): Unit = js.native
     
     @JSName("once")
-    def once_click(event: click, handler: js.Function1[/* state */ ActionButtonState, _]): Unit = js.native
+    def once_click(event: click, handler: js.Function1[/* state */ ActionButtonState, js.Any]): Unit = js.native
     
     @JSName("removeListener")
     def removeListener_click(event: click, handler: js.Function): Unit = js.native
@@ -69,20 +69,19 @@ object FFAddonSDK {
     def state_window(target: window, state: Disabled): ActionButtonState = js.native
   }
   
-  @js.native
   trait ActionButtonState extends StObject {
     
-    var badge: String | Double = js.native
+    var badge: String | Double
     
-    var badgeColor: String = js.native
+    var badgeColor: String
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var icon: Icon = js.native
+    var icon: Icon
     
-    var id: String = js.native
+    var id: String
     
-    var label: String = js.native
+    var label: String
   }
   object ActionButtonState {
     
@@ -136,16 +135,18 @@ object FFAddonSDK {
   }
   
   @js.native
-  trait ContentWorker extends Instantiable1[/* options */ OnError, ContentWorker] {
+  trait ContentWorker
+    extends StObject
+       with Instantiable1[/* options */ OnError, ContentWorker] {
     
     def destroy(): Unit = js.native
     
     @JSName("on")
-    def on_detach(event: detach, handler: js.Function0[_]): Unit = js.native
+    def on_detach(event: detach, handler: js.Function0[js.Any]): Unit = js.native
     @JSName("on")
-    def on_error(event: error, handler: js.Function0[_]): Unit = js.native
+    def on_error(event: error, handler: js.Function0[js.Any]): Unit = js.native
     @JSName("on")
-    def on_message(event: message, handler: js.Function0[_]): Unit = js.native
+    def on_message(event: message, handler: js.Function0[js.Any]): Unit = js.native
     
     var port: Port = js.native
     
@@ -158,7 +159,9 @@ object FFAddonSDK {
   }
   
   @js.native
-  trait Frame extends ToolbarItem {
+  trait Frame
+    extends StObject
+       with ToolbarItem {
     
     def destroy(): Unit = js.native
     
@@ -174,26 +177,26 @@ object FFAddonSDK {
     def off_ready(event: ready, handler: js.Function): Unit = js.native
     
     @JSName("on")
-    def on_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def on_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("on")
-    def on_detach(event: detach, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def on_detach(event: detach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("on")
-    def on_load(event: load, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def on_load(event: load, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("on")
-    def on_message(event: message, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def on_message(event: message, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("on")
-    def on_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def on_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     
     @JSName("once")
-    def once_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def once_attach(event: attach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("once")
-    def once_detach(event: detach, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def once_detach(event: detach, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("once")
-    def once_load(event: load, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def once_load(event: load, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("once")
-    def once_message(event: message, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def once_message(event: message, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     @JSName("once")
-    def once_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, _]): Unit = js.native
+    def once_ready(event: ready, handler: js.Function1[/* event */ FrameEvent, js.Any]): Unit = js.native
     
     def postMessage(message: String, target: String): Unit = js.native
     
@@ -211,14 +214,13 @@ object FFAddonSDK {
     var url: URL = js.native
   }
   
-  @js.native
   trait FrameEvent extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var origin: String = js.native
+    var origin: String
     
-    var source: Frame = js.native
+    var source: Frame
   }
   object FrameEvent {
     
@@ -250,26 +252,25 @@ object FFAddonSDK {
   /**
     * @see [nsIException]{@link https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIException}
     */
-  @js.native
   trait NSIException extends StObject {
     
-    var columnNumber: Double = js.native
+    var columnNumber: Double
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var filename: String = js.native
+    var filename: String
     
-    var inner: js.UndefOr[NSIException] = js.native
+    var inner: js.UndefOr[NSIException] = js.undefined
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var location: js.UndefOr[js.Any] = js.native
+    var location: js.UndefOr[js.Any] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var result: js.Any = js.native
+    var result: js.Any
   }
   object NSIException {
     
@@ -335,37 +336,36 @@ object FFAddonSDK {
     def emit(event: String): Unit = js.native
     def emit(event: String, data: js.Any): Unit = js.native
     
-    def on(event: String, handler: js.Function1[/* data */ js.UndefOr[js.Any], _]): Unit = js.native
+    def on(event: String, handler: js.Function1[/* data */ js.UndefOr[js.Any], js.Any]): Unit = js.native
   }
   
-  @js.native
   trait SDKURL extends StObject {
     
-    var hash: String = js.native
+    var hash: String
     
-    var host: String = js.native
+    var host: String
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var href: String = js.native
+    var href: String
     
-    var origin: String = js.native
+    var origin: String
     
-    var path: String = js.native
+    var path: String
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var port: String = js.native
+    var port: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var search: String = js.native
+    var search: String
     
-    def toJSON(): String = js.native
+    def toJSON(): String
     
-    var userPass: String = js.native
+    var userPass: String
   }
   object SDKURL {
     
@@ -441,7 +441,7 @@ object FFAddonSDK {
     def attach(options: ContentScriptOptions): ContentWorker = js.native
     
     def close(): Unit = js.native
-    def close(afterClose: js.Function0[_]): Unit = js.native
+    def close(afterClose: js.Function0[js.Any]): Unit = js.native
     
     var contentType: String = js.native
     
@@ -456,17 +456,17 @@ object FFAddonSDK {
     var isPinned: Boolean = js.native
     
     @JSName("on")
-    def on_activate(event: activate, handler: js.Function1[/* tab */ this.type, _]): Unit = js.native
+    def on_activate(event: activate, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_close(event: close, handler: js.Function1[/* tab */ this.type, _]): Unit = js.native
+    def on_close(event: close, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_deactivate(event: deactivate, handler: js.Function1[/* tab */ this.type, _]): Unit = js.native
+    def on_deactivate(event: deactivate, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_load(event: load, handler: js.Function1[/* tab */ this.type, _]): Unit = js.native
+    def on_load(event: load, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_pageshow(event: pageshow, handler: js.Function1[/* tab */ this.type, _]): Unit = js.native
+    def on_pageshow(event: pageshow, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_ready(event: ready, handler: js.Function1[/* tab */ this.type, _]): Unit = js.native
+    def on_ready(event: ready, handler: js.Function1[/* tab */ this.type, js.Any]): Unit = js.native
     
     def pin(): Unit = js.native
     
@@ -485,7 +485,8 @@ object FFAddonSDK {
   
   @js.native
   trait ToggleButton
-    extends ToggleButtonState
+    extends StObject
+       with ToggleButtonState
        with PanelPosition
        with ToolbarItem {
     
@@ -494,14 +495,14 @@ object FFAddonSDK {
     def destroy(): Unit = js.native
     
     @JSName("on")
-    def on_change(event: change, handler: js.Function1[/* state */ ToggleButtonState, _]): Unit = js.native
+    def on_change(event: change, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
     @JSName("on")
-    def on_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, _]): Unit = js.native
+    def on_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
     
     @JSName("once")
-    def once_change(event: change, handler: js.Function1[/* state */ ToggleButtonState, _]): Unit = js.native
+    def once_change(event: change, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
     @JSName("once")
-    def once_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, _]): Unit = js.native
+    def once_click(event: click, handler: js.Function1[/* state */ ToggleButtonState, js.Any]): Unit = js.native
     
     def removeListener(event: String, handler: js.Function): Unit = js.native
     
@@ -521,18 +522,17 @@ object FFAddonSDK {
     def state_window(target: window, state: Checked): ToggleButtonState = js.native
   }
   
-  @js.native
   trait ToggleButtonState extends StObject {
     
-    var badge: String = js.native
+    var badge: String
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var label: String = js.native
+    var label: String
   }
   object ToggleButtonState {
     
@@ -562,6 +562,7 @@ object FFAddonSDK {
     }
   }
   
-  @js.native
-  trait Widget extends PanelPosition
+  trait Widget
+    extends StObject
+       with PanelPosition
 }

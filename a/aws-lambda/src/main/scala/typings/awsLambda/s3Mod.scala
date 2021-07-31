@@ -7,17 +7,15 @@ import typings.awsLambda.anon.Xamzid2
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3Mod {
   
   type S3CreateEvent = S3Event
   
-  @js.native
   trait S3Event extends StObject {
     
-    var Records: js.Array[S3EventRecord] = js.native
+    var Records: js.Array[S3EventRecord]
   }
   object S3Event {
     
@@ -38,28 +36,27 @@ object s3Mod {
     }
   }
   
-  @js.native
   trait S3EventRecord extends StObject {
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var eventName: String = js.native
+    var eventName: String
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventTime: String = js.native
+    var eventTime: String
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var glacierEventData: js.UndefOr[S3EventRecordGlacierEventData] = js.native
+    var glacierEventData: js.UndefOr[S3EventRecordGlacierEventData] = js.undefined
     
-    var requestParameters: SourceIPAddress = js.native
+    var requestParameters: SourceIPAddress
     
-    var responseElements: Xamzid2 = js.native
+    var responseElements: Xamzid2
     
-    var s3: Bucket = js.native
+    var s3: Bucket
     
-    var userIdentity: PrincipalId = js.native
+    var userIdentity: PrincipalId
   }
   object S3EventRecord {
     
@@ -117,10 +114,9 @@ object s3Mod {
     }
   }
   
-  @js.native
   trait S3EventRecordGlacierEventData extends StObject {
     
-    var restoreEventData: S3EventRecordGlacierRestoreEventData = js.native
+    var restoreEventData: S3EventRecordGlacierRestoreEventData
   }
   object S3EventRecordGlacierEventData {
     
@@ -138,12 +134,11 @@ object s3Mod {
     }
   }
   
-  @js.native
   trait S3EventRecordGlacierRestoreEventData extends StObject {
     
-    var lifecycleRestorationExpiryTime: String = js.native
+    var lifecycleRestorationExpiryTime: String
     
-    var lifecycleRestoreStorageClass: String = js.native
+    var lifecycleRestoreStorageClass: String
   }
   object S3EventRecordGlacierRestoreEventData {
     

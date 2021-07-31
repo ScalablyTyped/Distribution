@@ -6,18 +6,20 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadMod {
   
-  @JSImport("contentful-management/dist/typings/entities/upload", "wrapUpload")
+  @JSImport("contentful-management/dist/typings/entities/upload", JSImport.Namespace)
   @js.native
-  def wrapUpload(http: AxiosInstance, data: UploadProps): deletePromisevoidtoPlainO = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def wrapUpload(http: AxiosInstance, data: UploadProps): deletePromisevoidtoPlainO = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUpload")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[deletePromisevoidtoPlainO]
+  
   trait Upload
-    extends UploadProps
+    extends StObject
+       with UploadProps
        with DefaultElements[UploadProps] {
     
     /**
@@ -36,7 +38,7 @@ object uploadMod {
       * .then((upload) => console.log(`upload ${upload.sys.id} updated.`))
       * .catch(console.error)
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
   }
   object Upload {
     
@@ -54,13 +56,12 @@ object uploadMod {
     }
   }
   
-  @js.native
   trait UploadProps extends StObject {
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object UploadProps {
     

@@ -3,20 +3,18 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to instantiate a workflow template.
   */
-@js.native
 trait SchemaInstantiateWorkflowTemplateRequest extends StObject {
   
   /**
     * Optional. Map from parameter names to values that should be used for
     * those parameters. Values may not exceed 100 characters.
     */
-  var parameters: js.UndefOr[StringDictionary[String]] = js.native
+  var parameters: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. A tag that prevents multiple concurrent workflow instances with
@@ -26,7 +24,7 @@ trait SchemaInstantiateWorkflowTemplateRequest extends StObject {
     * tag must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
     * and hyphens (-). The maximum length is 40 characters.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The version of workflow template to instantiate. If specified,
@@ -34,7 +32,7 @@ trait SchemaInstantiateWorkflowTemplateRequest extends StObject {
     * workflow template has the supplied version.This option cannot be used to
     * instantiate a previous version of workflow template.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaInstantiateWorkflowTemplateRequest {
   

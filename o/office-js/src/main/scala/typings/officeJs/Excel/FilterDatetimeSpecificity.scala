@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,20 +14,32 @@ sealed trait FilterDatetimeSpecificity extends StObject
 object FilterDatetimeSpecificity extends StObject {
   
   @js.native
-  sealed trait day extends FilterDatetimeSpecificity
+  sealed trait day
+    extends StObject
+       with FilterDatetimeSpecificity
   
   @js.native
-  sealed trait hour extends FilterDatetimeSpecificity
+  sealed trait hour
+    extends StObject
+       with FilterDatetimeSpecificity
   
   @js.native
-  sealed trait minute extends FilterDatetimeSpecificity
+  sealed trait minute
+    extends StObject
+       with FilterDatetimeSpecificity
   
   @js.native
-  sealed trait month extends FilterDatetimeSpecificity
+  sealed trait month
+    extends StObject
+       with FilterDatetimeSpecificity
   
   @js.native
-  sealed trait second extends FilterDatetimeSpecificity
+  sealed trait second
+    extends StObject
+       with FilterDatetimeSpecificity
   
   @js.native
-  sealed trait year extends FilterDatetimeSpecificity
+  sealed trait year
+    extends StObject
+       with FilterDatetimeSpecificity
 }

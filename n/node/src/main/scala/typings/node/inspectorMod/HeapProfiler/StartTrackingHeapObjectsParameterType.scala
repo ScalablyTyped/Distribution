@@ -2,13 +2,11 @@ package typings.node.inspectorMod.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTrackingHeapObjectsParameterType extends StObject {
   
-  var trackAllocations: js.UndefOr[Boolean] = js.native
+  var trackAllocations: js.UndefOr[Boolean] = js.undefined
 }
 object StartTrackingHeapObjectsParameterType {
   

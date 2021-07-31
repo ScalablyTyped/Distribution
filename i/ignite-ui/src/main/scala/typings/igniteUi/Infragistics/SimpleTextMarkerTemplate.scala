@@ -2,17 +2,15 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleTextMarkerTemplate extends StObject {
   
-  def getText(item: js.Object, textDelegate: js.Object): Unit = js.native
+  def getText(item: js.Object, textDelegate: js.Object): Unit
   
-  def measure(measureInfo: js.Object): Unit = js.native
+  def measure(measureInfo: js.Object): Unit
   
-  def render(renderInfo: js.Object): Unit = js.native
+  def render(renderInfo: js.Object): Unit
 }
 object SimpleTextMarkerTemplate {
   

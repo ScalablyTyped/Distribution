@@ -5,14 +5,15 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
   @JSImport("libp2p-noise/dist/src/errors", "FailedIKError")
   @js.native
-  class FailedIKError protected () extends Error {
+  class FailedIKError protected ()
+    extends StObject
+       with Error {
     def this(initialMsg: String) = this()
     def this(initialMsg: ^) = this()
     def this(initialMsg: Buffer) = this()
@@ -21,5 +22,11 @@ object errorsMod {
     def this(initialMsg: Buffer, message: String) = this()
     
     var initialMsg: String | ^ | Buffer = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
 }

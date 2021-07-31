@@ -2,35 +2,33 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rule for determining which cells to delete during garbage collection.
   */
-@js.native
 trait SchemaGcRule extends StObject {
   
   /**
     * Delete cells that would be deleted by every nested rule.
     */
-  var intersection: js.UndefOr[SchemaIntersection] = js.native
+  var intersection: js.UndefOr[SchemaIntersection] = js.undefined
   
   /**
     * Delete cells in a column older than the given age. Values must be at
     * least one millisecond, and will be truncated to microsecond granularity.
     */
-  var maxAge: js.UndefOr[String] = js.native
+  var maxAge: js.UndefOr[String] = js.undefined
   
   /**
     * Delete all cells in a column except the most recent N.
     */
-  var maxNumVersions: js.UndefOr[Double] = js.native
+  var maxNumVersions: js.UndefOr[Double] = js.undefined
   
   /**
     * Delete cells that would be deleted by any nested rule.
     */
-  var union: js.UndefOr[SchemaUnion] = js.native
+  var union: js.UndefOr[SchemaUnion] = js.undefined
 }
 object SchemaGcRule {
   

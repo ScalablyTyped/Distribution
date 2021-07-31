@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait PrincipalSource extends StObject
 object PrincipalSource extends StObject {
   
   @js.native
-  sealed trait all extends PrincipalSource
+  sealed trait all
+    extends StObject
+       with PrincipalSource
   
   @js.native
-  sealed trait membershipProvider extends PrincipalSource
+  sealed trait membershipProvider
+    extends StObject
+       with PrincipalSource
   
   @js.native
-  sealed trait none extends PrincipalSource
+  sealed trait none
+    extends StObject
+       with PrincipalSource
   
   @js.native
-  sealed trait roleProvider extends PrincipalSource
+  sealed trait roleProvider
+    extends StObject
+       with PrincipalSource
   
   @js.native
-  sealed trait userInfoList extends PrincipalSource
+  sealed trait userInfoList
+    extends StObject
+       with PrincipalSource
   
   @js.native
-  sealed trait windows extends PrincipalSource
+  sealed trait windows
+    extends StObject
+       with PrincipalSource
 }

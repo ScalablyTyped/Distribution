@@ -3,7 +3,6 @@ package typings.eases
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,70 +11,69 @@ object mod extends Shortcut {
   @js.native
   val ^ : Eases = js.native
   
-  @js.native
   trait Eases extends StObject {
     
-    def backIn(t: Double): Double = js.native
+    def backIn(t: Double): Double
     
-    def backInOut(t: Double): Double = js.native
+    def backInOut(t: Double): Double
     
-    def backOut(t: Double): Double = js.native
+    def backOut(t: Double): Double
     
-    def bounceIn(t: Double): Double = js.native
+    def bounceIn(t: Double): Double
     
-    def bounceInOut(t: Double): Double = js.native
+    def bounceInOut(t: Double): Double
     
-    def bounceOut(t: Double): Double = js.native
+    def bounceOut(t: Double): Double
     
-    def circIn(t: Double): Double = js.native
+    def circIn(t: Double): Double
     
-    def circInOut(t: Double): Double = js.native
+    def circInOut(t: Double): Double
     
-    def circOut(t: Double): Double = js.native
+    def circOut(t: Double): Double
     
-    def cubicIn(t: Double): Double = js.native
+    def cubicIn(t: Double): Double
     
-    def cubicInOut(t: Double): Double = js.native
+    def cubicInOut(t: Double): Double
     
-    def cubicOut(t: Double): Double = js.native
+    def cubicOut(t: Double): Double
     
-    def elasticIn(t: Double): Double = js.native
+    def elasticIn(t: Double): Double
     
-    def elasticInOut(t: Double): Double = js.native
+    def elasticInOut(t: Double): Double
     
-    def elasticOut(t: Double): Double = js.native
+    def elasticOut(t: Double): Double
     
-    def expoIn(t: Double): Double = js.native
+    def expoIn(t: Double): Double
     
-    def expoInOut(t: Double): Double = js.native
+    def expoInOut(t: Double): Double
     
-    def expoOut(t: Double): Double = js.native
+    def expoOut(t: Double): Double
     
-    def linear(t: Double): Double = js.native
+    def linear(t: Double): Double
     
-    def quadIn(t: Double): Double = js.native
+    def quadIn(t: Double): Double
     
-    def quadInOut(t: Double): Double = js.native
+    def quadInOut(t: Double): Double
     
-    def quadOut(t: Double): Double = js.native
+    def quadOut(t: Double): Double
     
-    def quartIn(t: Double): Double = js.native
+    def quartIn(t: Double): Double
     
-    def quartInOut(t: Double): Double = js.native
+    def quartInOut(t: Double): Double
     
-    def quartOut(t: Double): Double = js.native
+    def quartOut(t: Double): Double
     
-    def quintIn(t: Double): Double = js.native
+    def quintIn(t: Double): Double
     
-    def quintInOut(t: Double): Double = js.native
+    def quintInOut(t: Double): Double
     
-    def quintOut(t: Double): Double = js.native
+    def quintOut(t: Double): Double
     
-    def sineIn(t: Double): Double = js.native
+    def sineIn(t: Double): Double
     
-    def sineInOut(t: Double): Double = js.native
+    def sineInOut(t: Double): Double
     
-    def sineOut(t: Double): Double = js.native
+    def sineOut(t: Double): Double
   }
   object Eases {
     

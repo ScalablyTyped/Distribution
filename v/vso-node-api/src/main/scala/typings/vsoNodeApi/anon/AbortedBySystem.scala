@@ -2,29 +2,27 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortedBySystem extends StObject {
   
-  var abortedBySystem: scala.Double = js.native
+  var abortedBySystem: scala.Double
   
-  var analyzed: scala.Double = js.native
+  var analyzed: scala.Double
   
-  var canceledByUser: scala.Double = js.native
+  var canceledByUser: scala.Double
   
-  var cancellationInProgress: scala.Double = js.native
+  var cancellationInProgress: scala.Double
   
-  var creatingEnvironment: scala.Double = js.native
+  var creatingEnvironment: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var pendingAnalysis: scala.Double = js.native
+  var pendingAnalysis: scala.Double
   
-  var runningTests: scala.Double = js.native
+  var runningTests: scala.Double
   
-  var timedOut: scala.Double = js.native
+  var timedOut: scala.Double
 }
 object AbortedBySystem {
   

@@ -1,6 +1,5 @@
 package typings.antDesignProProvider
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProProvider.anon.Intl
 import typings.react.mod.Consumer
@@ -9,10 +8,13 @@ import typings.react.mod.FC
 import typings.react.mod.ReactText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("@ant-design/pro-provider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ant-design/pro-provider", JSImport.Default)
   @js.native
@@ -39,9 +41,8 @@ object mod extends Shortcut {
     * @param locale
     * @param localeMap
     */
-  @JSImport("@ant-design/pro-provider", "createIntl")
-  @js.native
-  def createIntl(locale: String, localeMap: StringDictionary[js.Any]): IntlType = js.native
+  @scala.inline
+  def createIntl(locale: String, localeMap: StringDictionary[js.Any]): IntlType = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntl")(locale.asInstanceOf[js.Any], localeMap.asInstanceOf[js.Any])).asInstanceOf[IntlType]
   
   @JSImport("@ant-design/pro-provider", "enUSIntl")
   @js.native
@@ -181,9 +182,8 @@ object mod extends Shortcut {
   @js.native
   val ruRUIntl: IntlType = js.native
   
-  @JSImport("@ant-design/pro-provider", "useIntl")
-  @js.native
-  def useIntl(): IntlType = js.native
+  @scala.inline
+  def useIntl(): IntlType = ^.asInstanceOf[js.Dynamic].applyDynamic("useIntl")().asInstanceOf[IntlType]
   
   @JSImport("@ant-design/pro-provider", "viVNIntl")
   @js.native
@@ -197,12 +197,11 @@ object mod extends Shortcut {
   @js.native
   val zhTWIntl: IntlType = js.native
   
-  @js.native
   trait IntlType extends StObject {
     
-    def getMessage(id: String, defaultMessage: String): String = js.native
+    def getMessage(id: String, defaultMessage: String): String
     
-    var locale: String = js.native
+    var locale: String
   }
   object IntlType {
     
@@ -224,9 +223,4 @@ object mod extends Shortcut {
   }
   
   type ParamsType = StringDictionary[ReactText | js.Array[ReactText]]
-  
-  type _To = Context[Intl]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Context[Intl] = default
 }

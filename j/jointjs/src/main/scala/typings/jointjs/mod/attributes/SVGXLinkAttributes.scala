@@ -2,32 +2,30 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGXLinkAttributes extends StObject {
   
   @JSName("xlink:actuate")
-  var xlinkColonactuate: js.UndefOr[String] = js.native
+  var xlinkColonactuate: js.UndefOr[String] = js.undefined
   
   @JSName("xlink:arcrole")
-  var xlinkColonarcrole: js.UndefOr[String] = js.native
+  var xlinkColonarcrole: js.UndefOr[String] = js.undefined
   
   @JSName("xlink:href")
-  var xlinkColonhref: js.UndefOr[String] = js.native
+  var xlinkColonhref: js.UndefOr[String] = js.undefined
   
   @JSName("xlink:role")
-  var xlinkColonrole: js.UndefOr[String] = js.native
+  var xlinkColonrole: js.UndefOr[String] = js.undefined
   
   @JSName("xlink:show")
-  var xlinkColonshow: js.UndefOr[String] = js.native
+  var xlinkColonshow: js.UndefOr[String] = js.undefined
   
   @JSName("xlink:title")
-  var xlinkColontitle: js.UndefOr[String] = js.native
+  var xlinkColontitle: js.UndefOr[String] = js.undefined
   
   @JSName("xlink:type")
-  var xlinkColontype: js.UndefOr[String] = js.native
+  var xlinkColontype: js.UndefOr[String] = js.undefined
 }
 object SVGXLinkAttributes {
   

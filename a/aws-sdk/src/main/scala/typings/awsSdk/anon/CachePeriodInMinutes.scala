@@ -2,15 +2,13 @@ package typings.awsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CachePeriodInMinutes extends StObject {
   
-  var Address: js.UndefOr[String] = js.native
+  var Address: js.UndefOr[String] = js.undefined
   
-  var CachePeriodInMinutes: js.UndefOr[Double] = js.native
+  var CachePeriodInMinutes: js.UndefOr[Double] = js.undefined
 }
 object CachePeriodInMinutes {
   

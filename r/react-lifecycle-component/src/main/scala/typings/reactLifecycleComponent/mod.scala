@@ -8,26 +8,28 @@ import typings.reactRedux.mod.Connect_
 import typings.reactRedux.mod.DefaultRootState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-lifecycle-component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-lifecycle-component", "LifecycleComponent")
   @js.native
   class LifecycleComponent protected ()
     extends Component[Props[js.Any, js.Any], js.Any, js.Any] {
-    def this(props: Props[_, _]) = this()
+    def this(props: Props[js.Any, js.Any]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props[_, _], context: js.Any) = this()
+    def this(props: Props[js.Any, js.Any], context: js.Any) = this()
   }
   
-  @JSImport("react-lifecycle-component", "applyLifecycle")
-  @js.native
-  def applyLifecycle[P, S](component: ComponentClass[P, S]): ComponentClass[P with (LifecycleDispatchProps[P, S]), ComponentState] = js.native
+  @scala.inline
+  def applyLifecycle[P, S](component: ComponentClass[P, S]): ComponentClass[P & (LifecycleDispatchProps[P, S]), ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("applyLifecycle")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & (LifecycleDispatchProps[P, S]), ComponentState]]
   
   @JSImport("react-lifecycle-component", "connectWithLifecycle")
   @js.native
@@ -35,10 +37,9 @@ object mod {
   
   type LifecycleDispatchProps[P, S] = ComponentLifecycle[P, S, js.Any]
   
-  @js.native
   trait LifecycleStateProps[P, S] extends StObject {
     
-    var component: ComponentClass[P, S] = js.native
+    var component: ComponentClass[P, S]
   }
   object LifecycleStateProps {
     
@@ -49,17 +50,17 @@ object mod {
     }
     
     @scala.inline
-    implicit class LifecycleStatePropsMutableBuilder[Self <: LifecycleStateProps[_, _], P, S] (val x: Self with (LifecycleStateProps[P, S])) extends AnyVal {
+    implicit class LifecycleStatePropsMutableBuilder[Self <: LifecycleStateProps[?, ?], P, S] (val x: Self & (LifecycleStateProps[P, S])) extends AnyVal {
       
       @scala.inline
       def setComponent(value: ComponentClass[P, S]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Props[P, S]
-    extends ComponentLifecycle[P, S, js.Any]
+    extends StObject
        with LifecycleStateProps[P, S]
+       with ComponentLifecycle[P, S, js.Any]
   object Props {
     
     @scala.inline

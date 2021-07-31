@@ -4,17 +4,15 @@ import typings.forgeDi.constructorMod.Constructor
 import typings.forgeDi.dependencyMod.Dependency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inspectorMod {
   
-  @js.native
   trait Inspector extends StObject {
     
-    def findConstructor(func: Constructor): Constructor = js.native
+    def findConstructor(func: Constructor): Constructor
     
-    def getDependencies(func: js.Function): js.Array[Dependency] = js.native
+    def getDependencies(func: js.Function): js.Array[Dependency]
   }
   object Inspector {
     

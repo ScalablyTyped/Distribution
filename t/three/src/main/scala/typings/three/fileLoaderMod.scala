@@ -9,7 +9,6 @@ import typings.three.loaderMod.Loader
 import typings.three.loadingManagerMod.LoadingManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileLoaderMod {
@@ -20,33 +19,10 @@ object fileLoaderMod {
     def this(manager: LoadingManager) = this()
     
     def load(url: String): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
     def load(url: String, onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit]): js.Any = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
     ): js.Any = js.native
     def load(
@@ -55,6 +31,24 @@ object fileLoaderMod {
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* response */ String | ArrayBuffer, Unit],
+      onProgress: Unit,
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
+    ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): js.Any = js.native
+    def load(url: String, onLoad: Unit, onProgress: Unit, onError: js.Function1[/* event */ ErrorEvent, Unit]): js.Any = js.native
     
     var mimeType: js.UndefOr[MimeType] = js.native
     

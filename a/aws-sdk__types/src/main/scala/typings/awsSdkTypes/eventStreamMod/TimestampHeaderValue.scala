@@ -4,22 +4,22 @@ import typings.awsSdkTypes.awsSdkTypesStrings.timestamp
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimestampHeaderValue extends MessageHeaderValue {
+trait TimestampHeaderValue
+  extends StObject
+     with MessageHeaderValue {
   
-  var `type`: timestamp = js.native
+  var `type`: timestamp
   
-  var value: Date = js.native
+  var value: Date
 }
 object TimestampHeaderValue {
   
   @scala.inline
-  def apply(`type`: timestamp, value: Date): TimestampHeaderValue = {
+  def apply(value: Date): TimestampHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("timestamp")
     __obj.asInstanceOf[TimestampHeaderValue]
   }
   

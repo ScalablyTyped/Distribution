@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,21 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This continuation is typically used in conjunction with {@link AuthenticationRequest} .
   * @since OOo 3.2
   */
-@js.native
-trait XInteractionSupplyAuthentication2 extends XInteractionSupplyAuthentication {
+trait XInteractionSupplyAuthentication2
+  extends StObject
+     with XInteractionSupplyAuthentication {
   
   /**
     * Specifies if "system credentials" can be obtained and used by the issuer of the authentication request.
     * @param Default Returns the default behavior for system credentials handling (to be initially displayed to the user).
     * @returns `TRUE` if the issuer is able to obtain and use system credentials. `FALSE` otherwise.
     */
-  def canUseSystemCredentials(Default: js.Array[Boolean]): Boolean = js.native
+  def canUseSystemCredentials(Default: js.Array[Boolean]): Boolean
   
   /**
     * Set a new "use system credentials" value to hand back.
     * @param UseSystemCredentials `TRUE` means the request issuer shall obtain and use system credentials.
     */
-  def setUseSystemCredentials(UseSystemCredentials: Boolean): Unit = js.native
+  def setUseSystemCredentials(UseSystemCredentials: Boolean): Unit
 }
 object XInteractionSupplyAuthentication2 {
   

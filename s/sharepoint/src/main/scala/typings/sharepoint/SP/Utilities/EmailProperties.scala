@@ -5,39 +5,39 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmailProperties extends ClientValueObject {
+trait EmailProperties
+  extends StObject
+     with ClientValueObject {
   
-  def get_additionalHeaders(): js.Any = js.native
+  def get_additionalHeaders(): js.Any
   
-  def get_bCC(): js.Array[String] = js.native
+  def get_bCC(): js.Array[String]
   
-  def get_body(): String = js.native
+  def get_body(): String
   
-  def get_cC(): js.Array[String] = js.native
+  def get_cC(): js.Array[String]
   
-  def get_from(): String = js.native
+  def get_from(): String
   
-  def get_subject(): String = js.native
+  def get_subject(): String
   
-  def get_to(): js.Array[String] = js.native
+  def get_to(): js.Array[String]
   
-  def set_additionalHeaders(value: js.Any): Unit = js.native
+  def set_additionalHeaders(value: js.Any): Unit
   
-  def set_bCC(value: js.Array[String]): Unit = js.native
+  def set_bCC(value: js.Array[String]): Unit
   
-  def set_body(value: String): Unit = js.native
+  def set_body(value: String): Unit
   
-  def set_cC(value: js.Array[String]): Unit = js.native
+  def set_cC(value: js.Array[String]): Unit
   
-  def set_from(value: String): Unit = js.native
+  def set_from(value: String): Unit
   
-  def set_subject(value: String): Unit = js.native
+  def set_subject(value: String): Unit
   
-  def set_to(value: js.Array[String]): Unit = js.native
+  def set_to(value: js.Array[String]): Unit
 }
 object EmailProperties {
   

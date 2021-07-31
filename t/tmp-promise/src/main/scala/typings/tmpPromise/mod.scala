@@ -6,89 +6,74 @@ import typings.tmp.mod.FileOptions
 import typings.tmp.mod.TmpNameOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tmp-promise", "dir")
+  @JSImport("tmp-promise", JSImport.Namespace)
   @js.native
-  def dir(): js.Promise[DirectoryResult] = js.native
-  @JSImport("tmp-promise", "dir")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def dir(): js.Promise[DirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")().asInstanceOf[js.Promise[DirectoryResult]]
+  @scala.inline
   def dir(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any
-  ): js.Promise[DirectoryResult] = js.native
+  ): js.Promise[DirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DirectoryResult]]
   
-  @JSImport("tmp-promise", "dirSync")
-  @js.native
-  def dirSync(): DirResult = js.native
-  @JSImport("tmp-promise", "dirSync")
-  @js.native
-  def dirSync(options: DirOptions): DirResult = js.native
+  @scala.inline
+  def dirSync(): DirResult = ^.asInstanceOf[js.Dynamic].applyDynamic("dirSync")().asInstanceOf[DirResult]
+  @scala.inline
+  def dirSync(options: DirOptions): DirResult = ^.asInstanceOf[js.Dynamic].applyDynamic("dirSync")(options.asInstanceOf[js.Any]).asInstanceOf[DirResult]
   
-  @JSImport("tmp-promise", "file")
-  @js.native
-  def file(): js.Promise[FileResult] = js.native
-  @JSImport("tmp-promise", "file")
-  @js.native
+  @scala.inline
+  def file(): js.Promise[FileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[js.Promise[FileResult]]
+  @scala.inline
   def file(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any
-  ): js.Promise[FileResult] = js.native
+  ): js.Promise[FileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileResult]]
   
-  @JSImport("tmp-promise", "fileSync")
-  @js.native
-  def fileSync(): typings.tmp.mod.FileResult = js.native
-  @JSImport("tmp-promise", "fileSync")
-  @js.native
-  def fileSync(options: FileOptions): typings.tmp.mod.FileResult = js.native
+  @scala.inline
+  def fileSync(): typings.tmp.mod.FileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSync")().asInstanceOf[typings.tmp.mod.FileResult]
+  @scala.inline
+  def fileSync(options: FileOptions): typings.tmp.mod.FileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSync")(options.asInstanceOf[js.Any]).asInstanceOf[typings.tmp.mod.FileResult]
   
-  @JSImport("tmp-promise", "setGracefulCleanup")
-  @js.native
-  def setGracefulCleanup(): Unit = js.native
+  @scala.inline
+  def setGracefulCleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGracefulCleanup")().asInstanceOf[Unit]
   
-  @JSImport("tmp-promise", "tmpName")
-  @js.native
-  def tmpName(): js.Promise[String] = js.native
-  @JSImport("tmp-promise", "tmpName")
-  @js.native
+  @scala.inline
+  def tmpName(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpName")().asInstanceOf[js.Promise[String]]
+  @scala.inline
   def tmpName(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SimpleOptions */ js.Any
-  ): js.Promise[String] = js.native
+  ): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpName")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("tmp-promise", "tmpNameSync")
-  @js.native
-  def tmpNameSync(): String = js.native
-  @JSImport("tmp-promise", "tmpNameSync")
-  @js.native
-  def tmpNameSync(options: TmpNameOptions): String = js.native
+  @scala.inline
+  def tmpNameSync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpNameSync")().asInstanceOf[String]
+  @scala.inline
+  def tmpNameSync(options: TmpNameOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpNameSync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("tmp-promise", "withDir")
-  @js.native
-  def withDir[T](fn: js.Function1[/* results */ DirectoryResult, js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("tmp-promise", "withDir")
-  @js.native
+  @scala.inline
+  def withDir[T](fn: js.Function1[/* results */ DirectoryResult, js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDir")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
   def withDir[T](
     fn: js.Function1[/* results */ DirectoryResult, js.Promise[T]],
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any
-  ): js.Promise[T] = js.native
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withDir")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("tmp-promise", "withFile")
-  @js.native
-  def withFile[T](fn: js.Function1[/* result */ FileResult, js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("tmp-promise", "withFile")
-  @js.native
+  @scala.inline
+  def withFile[T](fn: js.Function1[/* result */ FileResult, js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFile")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
   def withFile[T](
     fn: js.Function1[/* result */ FileResult, js.Promise[T]],
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Options */ js.Any
-  ): js.Promise[T] = js.native
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("withFile")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @js.native
   trait DirectoryResult extends StObject {
     
-    def cleanup(): Unit = js.native
+    def cleanup(): Unit
     
-    var path: String = js.native
+    var path: String
   }
   object DirectoryResult {
     
@@ -109,10 +94,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FileResult extends DirectoryResult {
+  trait FileResult
+    extends StObject
+       with DirectoryResult {
     
-    var fd: Double = js.native
+    var fd: Double
   }
   object FileResult {
     

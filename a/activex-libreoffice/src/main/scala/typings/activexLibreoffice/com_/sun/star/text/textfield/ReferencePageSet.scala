@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,14 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextField
   * @see com.sun.star.text.textfield.ReferencePageGet
   */
-@js.native
-trait ReferencePageSet extends TextField_ {
+trait ReferencePageSet
+  extends StObject
+     with TextField_ {
   
   /** determines whether the {@link ReferencePageGet} text fields are displayed or not. */
-  var NameOn: Boolean = js.native
+  var NameOn: Boolean
   
   /** determines an offset value to change the displayed value of a {@link ReferencePageGet} text field. */
-  var Offset: Double = js.native
+  var Offset: Double
 }
 object ReferencePageSet {
   

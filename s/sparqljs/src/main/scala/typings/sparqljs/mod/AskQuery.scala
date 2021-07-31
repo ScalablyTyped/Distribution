@@ -2,25 +2,23 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sparqljs.sparqljsStrings.ASK
-import typings.sparqljs.sparqljsStrings.query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AskQuery
-  extends Query
-     with BaseQuery {
+  extends StObject
+     with BaseQuery
+     with Query {
   
-  var queryType: ASK = js.native
+  var queryType: ASK
 }
 object AskQuery {
   
   @scala.inline
-  def apply(prefixes: StringDictionary[String], queryType: ASK, `type`: query): AskQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(prefixes: StringDictionary[String]): AskQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "ASK")
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[AskQuery]
   }
   

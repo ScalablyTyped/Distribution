@@ -12,7 +12,6 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,26 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#glsl.
   */
-@js.native
-trait GLSLFile extends File {
+trait GLSLFile
+  extends StObject
+     with File {
   
   /**
     * Returns the name of the shader from the header block.
     * @param headerSource The header data.
     */
-  def getShaderName(headerSource: js.Array[String]): String = js.native
+  def getShaderName(headerSource: js.Array[String]): String
   
   /**
     * Returns the type of the shader from the header block.
     * @param headerSource The header data.
     */
-  def getShaderType(headerSource: js.Array[String]): String = js.native
+  def getShaderType(headerSource: js.Array[String]): String
   
   /**
     * Returns the shader uniforms from the header block.
     * @param headerSource The header data.
     */
-  def getShaderUniforms(headerSource: js.Array[String]): js.Any = js.native
+  def getShaderUniforms(headerSource: js.Array[String]): js.Any
 }
 object GLSLFile {
   

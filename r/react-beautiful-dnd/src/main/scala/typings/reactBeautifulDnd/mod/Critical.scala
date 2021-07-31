@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Critical extends StObject {
   
-  var draggable: DraggableDescriptor = js.native
+  var draggable: DraggableDescriptor
   
-  var droppable: DroppableDescriptor = js.native
+  var droppable: DroppableDescriptor
 }
 object Critical {
   

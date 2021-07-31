@@ -2,13 +2,11 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Managed Instance resource.
   */
-@js.native
 trait SchemaManagedInstance extends StObject {
   
   /**
@@ -33,36 +31,36 @@ trait SchemaManagedInstance extends StObject {
     * instance group has created the instance and it is in the process of being
     * verified.
     */
-  var currentAction: js.UndefOr[String] = js.native
+  var currentAction: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The unique identifier for this resource. This field is
     * empty when instance does not exist.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL of the instance. The URL can exist even if the
     * instance has not yet been created.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the instance. This field is empty when the
     * instance does not exist.
     */
-  var instanceStatus: js.UndefOr[String] = js.native
+  var instanceStatus: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Information about the last attempt to create or delete the
     * instance.
     */
-  var lastAttempt: js.UndefOr[SchemaManagedInstanceLastAttempt] = js.native
+  var lastAttempt: js.UndefOr[SchemaManagedInstanceLastAttempt] = js.undefined
   
   /**
     * [Output Only] Intended version of this instance.
     */
-  var version: js.UndefOr[SchemaManagedInstanceVersion] = js.native
+  var version: js.UndefOr[SchemaManagedInstanceVersion] = js.undefined
 }
 object SchemaManagedInstance {
   

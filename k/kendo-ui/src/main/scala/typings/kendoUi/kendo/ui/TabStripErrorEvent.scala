@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabStripErrorEvent extends TabStripEvent {
+trait TabStripErrorEvent
+  extends StObject
+     with TabStripEvent {
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var xhr: js.UndefOr[JQueryXHR] = js.native
+  var xhr: js.UndefOr[JQueryXHR] = js.undefined
 }
 object TabStripErrorEvent {
   

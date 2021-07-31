@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionSelectBase")
@@ -22,7 +21,7 @@ class QuestionSelectBase protected () extends Question {
     * The list of items. Every item has value and text. If text is empty, the value is rendered. The item text supports markdown.
     * @see choicesByUrl
     */
-  var choices: js.Array[_] = js.native
+  var choices: js.Array[js.Any] = js.native
   
   /**
     * Use this property to fill the choices from a restful service.
@@ -161,9 +160,9 @@ class QuestionSelectBase protected () extends Question {
   
   /* protected */ def rendredValueToDataCore(`val`: js.Any): js.Any = js.native
   
-  /* protected */ def runItemsCondition(values: HashTable[_], properties: HashTable[_]): Boolean = js.native
+  /* protected */ def runItemsCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): Boolean = js.native
   
-  /* protected */ def runItemsEnableCondition(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
+  /* protected */ def runItemsEnableCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): js.Any = js.native
   
   /* protected */ def setOtherValueIntoValue(newValue: js.Any): js.Any = js.native
   

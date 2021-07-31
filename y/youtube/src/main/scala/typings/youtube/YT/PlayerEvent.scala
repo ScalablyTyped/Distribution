@@ -2,16 +2,14 @@ package typings.youtube.YT
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayerEvent extends StObject {
   
   /**
     * Video player corresponding to the event.
     */
-  var target: Player = js.native
+  var target: Player
 }
 object PlayerEvent {
   

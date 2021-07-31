@@ -4,48 +4,46 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTargetRequest extends StObject {
   
   /**
     * Whether to create the target in background or foreground (chrome-only,
     * false by default).
     */
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The browser context to create the page in.
     */
-  var browserContextId: js.UndefOr[BrowserContextID] = js.native
+  var browserContextId: js.UndefOr[BrowserContextID] = js.undefined
   
   /**
     * Whether BeginFrames for this target will be controlled via DevTools (headless chrome only,
     * not supported on MacOS yet, false by default).
     */
-  var enableBeginFrameControl: js.UndefOr[Boolean] = js.native
+  var enableBeginFrameControl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Frame height in DIP (headless chrome only).
     */
-  var height: js.UndefOr[integer] = js.native
+  var height: js.UndefOr[integer] = js.undefined
   
   /**
     * Whether to create a new Window or Tab (chrome-only, false by default).
     */
-  var newWindow: js.UndefOr[Boolean] = js.native
+  var newWindow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The initial URL the page will be navigated to.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Frame width in DIP (headless chrome only).
     */
-  var width: js.UndefOr[integer] = js.native
+  var width: js.UndefOr[integer] = js.undefined
 }
 object CreateTargetRequest {
   

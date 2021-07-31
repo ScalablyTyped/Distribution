@@ -9,7 +9,6 @@ import typings.winrtUwp.Windows.Networking.Sockets.StreamSocketListener
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Windows.Devices.Bluetooth.Rfcomm namespace defines Windows Runtime classes that a Windows Store apps and desktop applications can use to communicate with Bluetooth devices. For more information, see Bluetooth */
@@ -35,13 +34,13 @@ object Rfcomm {
       * Gets the cached SDP attributes of the RFCOMM service instance.
       * @return The SDP attributes of the RFCOMM service instance.
       */
-    def getSdpRawAttributesAsync(): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+    def getSdpRawAttributesAsync(): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
     /**
       * Gets the SDP attributes of the RFCOMM service instance.
       * @param cacheMode Indicates whether SDP attributes should be retrieved from the cache or from the device.
       * @return The SDP attributes of the RFCOMM service instance.
       */
-    def getSdpRawAttributesAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+    def getSdpRawAttributesAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
     
     /** Gets the maximum SocketProtectionLevel supported by this RFCOMM service instance. */
     var maxProtectionLevel: SocketProtectionLevel = js.native
@@ -54,23 +53,22 @@ object Rfcomm {
   }
   
   /** Represents an RFCOMM service ID. */
-  @js.native
   trait RfcommServiceId extends StObject {
     
     /**
       * Converts the RfcommServiceId to a 32-bit service id if possible.
       * @return Returns the 32-bit service id if the RfcommServiceId represents a standardized service.
       */
-    def asShortId(): Double = js.native
+    def asShortId(): Double
     
     /**
       * Converts the RfcommServiceId to a string.
       * @return Returns the string representation of the 128-bit service id.
       */
-    def asString(): String = js.native
+    def asString(): String
     
     /** Retrieves the 128-bit service id. */
-    var uuid: String = js.native
+    var uuid: String
   }
   object RfcommServiceId {
     

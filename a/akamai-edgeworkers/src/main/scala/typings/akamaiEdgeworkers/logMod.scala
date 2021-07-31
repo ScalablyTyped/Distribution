@@ -2,7 +2,6 @@ package typings.akamaiEdgeworkers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ object logMod {
   @js.native
   val logger: Logger_ = js.native
   
-  @js.native
   trait Logger_ extends StObject {
     
     /**
@@ -42,7 +40,7 @@ object logMod {
     def log(
       format: String,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param values because its type any is not an array type */ values: js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object Logger_ {
     

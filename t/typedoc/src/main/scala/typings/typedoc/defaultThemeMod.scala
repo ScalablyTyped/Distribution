@@ -13,7 +13,6 @@ import typings.typedoc.themeMod.Theme
 import typings.typedoc.urlMappingMod.UrlMapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultThemeMod {
@@ -50,42 +49,32 @@ object defaultThemeMod {
     @scala.inline
     def URL_PREFIX_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL_PREFIX")(x.asInstanceOf[js.Any])
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.applyAnchorUrl")
-    @js.native
-    def applyAnchorUrl(reflection: Reflection, container: Reflection): Unit = js.native
+    @scala.inline
+    def applyAnchorUrl(reflection: Reflection, container: Reflection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAnchorUrl")(reflection.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.applyGroupClasses")
-    @js.native
-    def applyGroupClasses(group: ReflectionGroup): Unit = js.native
+    @scala.inline
+    def applyGroupClasses(group: ReflectionGroup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyGroupClasses")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.applyReflectionClasses")
-    @js.native
-    def applyReflectionClasses(reflection: DeclarationReflection): Unit = js.native
+    @scala.inline
+    def applyReflectionClasses(reflection: DeclarationReflection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyReflectionClasses")(reflection.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.buildUrls")
-    @js.native
-    def buildUrls(reflection: DeclarationReflection, urls: js.Array[UrlMapping]): js.Array[UrlMapping] = js.native
+    @scala.inline
+    def buildUrls(reflection: DeclarationReflection, urls: js.Array[UrlMapping]): js.Array[UrlMapping] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrls")(reflection.asInstanceOf[js.Any], urls.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlMapping]]
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.getMapping")
-    @js.native
-    def getMapping(reflection: DeclarationReflection): js.UndefOr[TemplateMapping] = js.native
+    @scala.inline
+    def getMapping(reflection: DeclarationReflection): js.UndefOr[TemplateMapping] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMapping")(reflection.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TemplateMapping]]
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.getUrl")
-    @js.native
-    def getUrl(reflection: Reflection): String = js.native
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.getUrl")
-    @js.native
-    def getUrl(reflection: Reflection, relative: js.UndefOr[scala.Nothing], separator: String): String = js.native
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.getUrl")
-    @js.native
-    def getUrl(reflection: Reflection, relative: Reflection): String = js.native
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.getUrl")
-    @js.native
-    def getUrl(reflection: Reflection, relative: Reflection, separator: String): String = js.native
+    @scala.inline
+    def getUrl(reflection: Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getUrl(reflection: Reflection, relative: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def getUrl(reflection: Reflection, relative: Reflection): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def getUrl(reflection: Reflection, relative: Reflection, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme.toStyleClass")
-    @js.native
-    def toStyleClass(str: String): String = js.native
+    @scala.inline
+    def toStyleClass(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStyleClass")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "NavigationBuilder")
@@ -111,16 +100,15 @@ object defaultThemeMod {
     /* protected */ def sortReflections(modules: js.Array[DeclarationReflection]): Unit = js.native
   }
   
-  @js.native
   trait TemplateMapping extends StObject {
     
-    var directory: String = js.native
+    var directory: String
     
-    var isLeaf: Boolean = js.native
+    var isLeaf: Boolean
     
-    var kind: js.Array[ReflectionKind] = js.native
+    var kind: js.Array[ReflectionKind]
     
-    var template: String = js.native
+    var template: String
   }
   object TemplateMapping {
     

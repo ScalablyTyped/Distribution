@@ -12,7 +12,6 @@ import typings.std.Map
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,10 @@ object mod {
     * @param addr - If String or Uint8Array, needs to adhere
     * to the address format of a [multiaddr](https://github.com/multiformats/multiaddr#string-format)
     */
-  @JSImport("multiaddr", JSImport.Namespace)
-  @js.native
-  def apply(): Multiaddr = js.native
-  @JSImport("multiaddr", JSImport.Namespace)
-  @js.native
-  def apply(input: MultiaddrInput): Multiaddr = js.native
+  @scala.inline
+  def apply(): Multiaddr = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Multiaddr]
+  @scala.inline
+  def apply(input: MultiaddrInput): Multiaddr = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Multiaddr]
   
   @JSImport("multiaddr", JSImport.Namespace)
   @js.native
@@ -40,30 +37,32 @@ object mod {
     * @param addr - If String or Uint8Array, needs to adhere
     * to the address format of a [multiaddr](https://github.com/multiformats/multiaddr#string-format)
     */
-  class ^ () extends Multiaddr {
+  class ^ ()
+    extends StObject
+       with Multiaddr {
     def this(addr: MultiaddrInput) = this()
   }
+  @JSImport("multiaddr", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a Multiaddr from a node-friendly address object
     */
-  @JSImport("multiaddr", "fromNodeAddress")
-  @js.native
-  def fromNodeAddress(addr: NodeAddress, transport: String): Multiaddr = js.native
+  @scala.inline
+  def fromNodeAddress(addr: NodeAddress, transport: String): Multiaddr = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeAddress")(addr.asInstanceOf[js.Any], transport.asInstanceOf[js.Any])).asInstanceOf[Multiaddr]
   
   /**
     * Returns if something is a Multiaddr
     */
-  @JSImport("multiaddr", "isMultiaddr")
-  @js.native
-  def isMultiaddr(addr: js.Any): /* is multiaddr.multiaddr.Multiaddr */ Boolean = js.native
+  @scala.inline
+  def isMultiaddr(addr: js.Any): /* is multiaddr.multiaddr.Multiaddr */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMultiaddr")(addr.asInstanceOf[js.Any]).asInstanceOf[/* is multiaddr.multiaddr.Multiaddr */ Boolean]
   
   /**
     * Returns if something is a Multiaddr that is a name
     */
-  @JSImport("multiaddr", "isName")
-  @js.native
-  def isName(addr: Multiaddr): Boolean = js.native
+  @scala.inline
+  def isName(addr: Multiaddr): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isName")(addr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Object containing table, names and codes of all supported protocols.
@@ -79,9 +78,8 @@ object mod {
   /**
     * Returns an array of multiaddrs, by resolving the multiaddr that is a name
     */
-  @JSImport("multiaddr", "resolve")
-  @js.native
-  def resolve(addr: Multiaddr): js.Promise[js.Array[Multiaddr]] = js.native
+  @scala.inline
+  def resolve(addr: Multiaddr): js.Promise[js.Array[Multiaddr]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Multiaddr]]]
   
   @JSImport("multiaddr", "resolvers")
   @js.native
@@ -197,16 +195,15 @@ object mod {
   
   type MultiaddrInput = String | Uint8Array | Multiaddr | Null
   
-  @js.native
   trait NetOptions extends StObject {
     
-    var family: ipv4_ | ipv6_ = js.native
+    var family: ipv4_ | ipv6_
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var transport: tcp | udp = js.native
+    var transport: tcp | udp
   }
   object NetOptions {
     
@@ -233,14 +230,13 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeAddress extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var family: IPv4 | IPv6 = js.native
+    var family: IPv4 | IPv6
     
-    var port: String = js.native
+    var port: String
   }
   object NodeAddress {
     
@@ -264,18 +260,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Protocol extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var name: String = js.native
+    var name: String
     
-    var path: js.UndefOr[Boolean] = js.native
+    var path: js.UndefOr[Boolean] = js.undefined
     
-    var resolvable: js.UndefOr[Boolean] = js.native
+    var resolvable: js.UndefOr[Boolean] = js.undefined
     
-    var size: Double = js.native
+    var size: Double
   }
   object Protocol {
     
@@ -319,9 +314,9 @@ object mod {
     var names: StringDictionary[Protocol] = js.native
     
     def `object`(code: Double, size: Double, name: String): Protocol = js.native
-    def `object`(code: Double, size: Double, name: String, resolvable: js.UndefOr[scala.Nothing], path: js.Any): Protocol = js.native
     def `object`(code: Double, size: Double, name: String, resolvable: js.Any): Protocol = js.native
     def `object`(code: Double, size: Double, name: String, resolvable: js.Any, path: js.Any): Protocol = js.native
+    def `object`(code: Double, size: Double, name: String, resolvable: Unit, path: js.Any): Protocol = js.native
     
     var table: NumberDictionary[Protocol] = js.native
   }

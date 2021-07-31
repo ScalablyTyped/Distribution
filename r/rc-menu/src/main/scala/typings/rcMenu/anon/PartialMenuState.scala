@@ -4,20 +4,18 @@ import typings.rcMenu.interfaceMod.MiniStore
 import typings.rcMenu.menuMod.MenuProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-menu.rc-menu/es/Menu.MenuState> */
-@js.native
 trait PartialMenuState extends StObject {
   
-  var inlineOpenKeys: js.UndefOr[js.Array[String]] = js.native
+  var inlineOpenKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var prevProps: js.UndefOr[MenuProps] = js.native
+  var prevProps: js.UndefOr[MenuProps] = js.undefined
   
-  var store: js.UndefOr[MiniStore] = js.native
+  var store: js.UndefOr[MiniStore] = js.undefined
   
-  var switchingModeFromInline: js.UndefOr[Boolean] = js.native
+  var switchingModeFromInline: js.UndefOr[Boolean] = js.undefined
 }
 object PartialMenuState {
   

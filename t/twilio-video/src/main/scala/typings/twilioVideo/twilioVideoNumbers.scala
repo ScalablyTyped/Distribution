@@ -3,23 +3,28 @@ package typings.twilioVideo
 import typings.twilioVideo.mod.NetworkQualityVerbosity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilioVideoNumbers {
   
   @js.native
-  sealed trait `0` extends NetworkQualityVerbosity
+  sealed trait `0`
+    extends StObject
+       with NetworkQualityVerbosity
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
-  sealed trait `1` extends NetworkQualityVerbosity
+  sealed trait `1`
+    extends StObject
+       with NetworkQualityVerbosity
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `2` extends NetworkQualityVerbosity
+  sealed trait `2`
+    extends StObject
+       with NetworkQualityVerbosity
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   
@@ -54,7 +59,9 @@ object twilioVideoNumbers {
   def `20107`: `20107` = 20107.asInstanceOf[`20107`]
   
   @js.native
-  sealed trait `3` extends NetworkQualityVerbosity
+  sealed trait `3`
+    extends StObject
+       with NetworkQualityVerbosity
   @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
   

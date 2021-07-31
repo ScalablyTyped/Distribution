@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,23 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * through multiple hits. These hits will be merged into one ECOMMERCE
   * Activity.
   */
-@js.native
 trait SchemaActivity extends StObject {
   
   /**
     * Timestamp of the activity.
     */
-  var activityTime: js.UndefOr[String] = js.native
+  var activityTime: js.UndefOr[String] = js.undefined
   
   /**
     * Type of this activity.
     */
-  var activityType: js.UndefOr[String] = js.native
+  var activityType: js.UndefOr[String] = js.undefined
   
   /**
     * This will be set if `activity_type` equals `SCREEN_VIEW`.
     */
-  var appview: js.UndefOr[SchemaScreenviewData] = js.native
+  var appview: js.UndefOr[SchemaScreenviewData] = js.undefined
   
   /**
     * For manual campaign tracking, it is the value of the utm_campaign
@@ -39,40 +37,40 @@ trait SchemaActivity extends StObject {
     * of the online ad campaign(s) you use for the property. If you use
     * neither, its value is (not set).
     */
-  var campaign: js.UndefOr[String] = js.native
+  var campaign: js.UndefOr[String] = js.undefined
   
   /**
     * The Channel Group associated with an end user&#39;s session for this View
     * (defined by the View&#39;s Channel Groupings).
     */
-  var channelGrouping: js.UndefOr[String] = js.native
+  var channelGrouping: js.UndefOr[String] = js.undefined
   
   /**
     * A list of all custom dimensions associated with this activity.
     */
-  var customDimension: js.UndefOr[js.Array[SchemaCustomDimension]] = js.native
+  var customDimension: js.UndefOr[js.Array[SchemaCustomDimension]] = js.undefined
   
   /**
     * This will be set if `activity_type` equals `ECOMMERCE`.
     */
-  var ecommerce: js.UndefOr[SchemaEcommerceData] = js.native
+  var ecommerce: js.UndefOr[SchemaEcommerceData] = js.undefined
   
   /**
     * This field contains all the details pertaining to an event and will be
     * set if `activity_type` equals `EVENT`.
     */
-  var event: js.UndefOr[SchemaEventData] = js.native
+  var event: js.UndefOr[SchemaEventData] = js.undefined
   
   /**
     * This field contains a list of all the goals that were reached in this
     * activity when `activity_type` equals `GOAL`.
     */
-  var goals: js.UndefOr[SchemaGoalSetData] = js.native
+  var goals: js.UndefOr[SchemaGoalSetData] = js.undefined
   
   /**
     * The hostname from which the tracking request was made.
     */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * For manual campaign tracking, it is the value of the utm_term campaign
@@ -83,12 +81,12 @@ trait SchemaActivity extends StObject {
     * display_keyword, site placement, boomuserlist, user_interest, age, or
     * gender. Otherwise its value is (not set).
     */
-  var keyword: js.UndefOr[String] = js.native
+  var keyword: js.UndefOr[String] = js.undefined
   
   /**
     * The first page in users&#39; sessions, or the landing page.
     */
-  var landingPagePath: js.UndefOr[String] = js.native
+  var landingPagePath: js.UndefOr[String] = js.undefined
   
   /**
     * The type of referrals. For manual campaign tracking, it is the value of
@@ -98,13 +96,13 @@ trait SchemaActivity extends StObject {
     * users came directly to the property and document.referrer is empty, its
     * value is (none).
     */
-  var medium: js.UndefOr[String] = js.native
+  var medium: js.UndefOr[String] = js.undefined
   
   /**
     * This will be set if `activity_type` equals `PAGEVIEW`. This field
     * contains all the details about the visitor and the page that was visited.
     */
-  var pageview: js.UndefOr[SchemaPageviewData] = js.native
+  var pageview: js.UndefOr[SchemaPageviewData] = js.undefined
   
   /**
     * The source of referrals. For manual campaign tracking, it is the value of
@@ -113,7 +111,7 @@ trait SchemaActivity extends StObject {
     * document.referrer) referring the users. It may also contain a port
     * address. If users arrived without a referrer, its value is (direct).
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaActivity {
   

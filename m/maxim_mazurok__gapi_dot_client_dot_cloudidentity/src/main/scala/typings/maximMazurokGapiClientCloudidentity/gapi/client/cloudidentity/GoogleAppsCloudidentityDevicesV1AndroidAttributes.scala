@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1AndroidAttributes extends StObject {
   
   /** Whether applications from unknown sources can be installed on device. */
-  var enabledUnknownSources: js.UndefOr[Boolean] = js.native
+  var enabledUnknownSources: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this account is on an owner/primary profile. For phones, only true for owner profiles. Android 4+ devices can have secondary or restricted user profiles. */
-  var ownerProfileAccount: js.UndefOr[Boolean] = js.native
+  var ownerProfileAccount: js.UndefOr[Boolean] = js.undefined
   
   /** Ownership privileges on device. */
-  var ownershipPrivilege: js.UndefOr[String] = js.native
+  var ownershipPrivilege: js.UndefOr[String] = js.undefined
   
   /** Whether device supports Android work profiles. If false, this service will not block access to corp data even if an administrator turns on the "Enforce Work Profile" policy. */
-  var supportsWorkProfile: js.UndefOr[Boolean] = js.native
+  var supportsWorkProfile: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1AndroidAttributes {
   

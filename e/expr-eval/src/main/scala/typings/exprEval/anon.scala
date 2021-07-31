@@ -2,105 +2,103 @@ package typings.exprEval
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Abs extends StObject {
     
-    var abs: js.UndefOr[Boolean] = js.native
+    var abs: js.UndefOr[Boolean] = js.undefined
     
-    var acos: js.UndefOr[Boolean] = js.native
+    var acos: js.UndefOr[Boolean] = js.undefined
     
-    var acosh: js.UndefOr[Boolean] = js.native
+    var acosh: js.UndefOr[Boolean] = js.undefined
     
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
-    var asin: js.UndefOr[Boolean] = js.native
+    var asin: js.UndefOr[Boolean] = js.undefined
     
-    var asinh: js.UndefOr[Boolean] = js.native
+    var asinh: js.UndefOr[Boolean] = js.undefined
     
-    var assignment: js.UndefOr[Boolean] = js.native
+    var assignment: js.UndefOr[Boolean] = js.undefined
     
-    var atan: js.UndefOr[Boolean] = js.native
+    var atan: js.UndefOr[Boolean] = js.undefined
     
-    var atanh: js.UndefOr[Boolean] = js.native
+    var atanh: js.UndefOr[Boolean] = js.undefined
     
-    var cbrt: js.UndefOr[Boolean] = js.native
+    var cbrt: js.UndefOr[Boolean] = js.undefined
     
-    var ceil: js.UndefOr[Boolean] = js.native
+    var ceil: js.UndefOr[Boolean] = js.undefined
     
-    var comparison: js.UndefOr[Boolean] = js.native
+    var comparison: js.UndefOr[Boolean] = js.undefined
     
-    var concatenate: js.UndefOr[Boolean] = js.native
+    var concatenate: js.UndefOr[Boolean] = js.undefined
     
-    var conditional: js.UndefOr[Boolean] = js.native
+    var conditional: js.UndefOr[Boolean] = js.undefined
     
-    var cos: js.UndefOr[Boolean] = js.native
+    var cos: js.UndefOr[Boolean] = js.undefined
     
-    var cosh: js.UndefOr[Boolean] = js.native
+    var cosh: js.UndefOr[Boolean] = js.undefined
     
-    var divide: js.UndefOr[Boolean] = js.native
+    var divide: js.UndefOr[Boolean] = js.undefined
     
-    var exp: js.UndefOr[Boolean] = js.native
+    var exp: js.UndefOr[Boolean] = js.undefined
     
-    var expm1: js.UndefOr[Boolean] = js.native
+    var expm1: js.UndefOr[Boolean] = js.undefined
     
-    var factorial: js.UndefOr[Boolean] = js.native
+    var factorial: js.UndefOr[Boolean] = js.undefined
     
-    var floor: js.UndefOr[Boolean] = js.native
+    var floor: js.UndefOr[Boolean] = js.undefined
     
-    var fndef: js.UndefOr[Boolean] = js.native
+    var fndef: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var length: js.UndefOr[Boolean] = js.native
+    var length: js.UndefOr[Boolean] = js.undefined
     
-    var lg: js.UndefOr[Boolean] = js.native
+    var lg: js.UndefOr[Boolean] = js.undefined
     
-    var ln: js.UndefOr[Boolean] = js.native
+    var ln: js.UndefOr[Boolean] = js.undefined
     
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
-    var log10: js.UndefOr[Boolean] = js.native
+    var log10: js.UndefOr[Boolean] = js.undefined
     
-    var log1p: js.UndefOr[Boolean] = js.native
+    var log1p: js.UndefOr[Boolean] = js.undefined
     
-    var log2: js.UndefOr[Boolean] = js.native
+    var log2: js.UndefOr[Boolean] = js.undefined
     
-    var logical: js.UndefOr[Boolean] = js.native
+    var logical: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Boolean] = js.native
+    var max: js.UndefOr[Boolean] = js.undefined
     
-    var min: js.UndefOr[Boolean] = js.native
+    var min: js.UndefOr[Boolean] = js.undefined
     
-    var multiply: js.UndefOr[Boolean] = js.native
+    var multiply: js.UndefOr[Boolean] = js.undefined
     
-    var power: js.UndefOr[Boolean] = js.native
+    var power: js.UndefOr[Boolean] = js.undefined
     
-    var random: js.UndefOr[Boolean] = js.native
+    var random: js.UndefOr[Boolean] = js.undefined
     
-    var remainder: js.UndefOr[Boolean] = js.native
+    var remainder: js.UndefOr[Boolean] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
-    var sign: js.UndefOr[Boolean] = js.native
+    var sign: js.UndefOr[Boolean] = js.undefined
     
-    var sin: js.UndefOr[Boolean] = js.native
+    var sin: js.UndefOr[Boolean] = js.undefined
     
-    var sinh: js.UndefOr[Boolean] = js.native
+    var sinh: js.UndefOr[Boolean] = js.undefined
     
-    var sqrt: js.UndefOr[Boolean] = js.native
+    var sqrt: js.UndefOr[Boolean] = js.undefined
     
-    var subtract: js.UndefOr[Boolean] = js.native
+    var subtract: js.UndefOr[Boolean] = js.undefined
     
-    var tan: js.UndefOr[Boolean] = js.native
+    var tan: js.UndefOr[Boolean] = js.undefined
     
-    var tanh: js.UndefOr[Boolean] = js.native
+    var tanh: js.UndefOr[Boolean] = js.undefined
     
-    var trunc: js.UndefOr[Boolean] = js.native
+    var trunc: js.UndefOr[Boolean] = js.undefined
   }
   object Abs {
     
@@ -391,10 +389,9 @@ object anon {
     }
   }
   
-  @js.native
   trait WithMembers extends StObject {
     
-    var withMembers: js.UndefOr[Boolean] = js.native
+    var withMembers: js.UndefOr[Boolean] = js.undefined
   }
   object WithMembers {
     

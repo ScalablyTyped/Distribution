@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.NullLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `238` extends StObject {
   
-  var `type`: NullLiteral = js.native
+  var `type`: NullLiteral
 }
 object `238` {
   
   @scala.inline
-  def apply(`type`: NullLiteral): `238` = {
+  def apply(): `238` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[`238`]
   }
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object WiFiDirectServiceAdvertisementStatus extends StObject {
   
   /** Advertiser has been aborted. The advertiser object's ServiceError property has a specific error code describing the reason. */
   @js.native
-  sealed trait aborted extends WiFiDirectServiceAdvertisementStatus
+  sealed trait aborted
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
   
   /** Advertiser has been created. */
   @js.native
-  sealed trait created extends WiFiDirectServiceAdvertisementStatus
+  sealed trait created
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
   
   /** Advertiser has been started. */
   @js.native
-  sealed trait started extends WiFiDirectServiceAdvertisementStatus
+  sealed trait started
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
   
   /** Advertiser has been stopped. */
   @js.native
-  sealed trait stopped extends WiFiDirectServiceAdvertisementStatus
+  sealed trait stopped
+    extends StObject
+       with WiFiDirectServiceAdvertisementStatus
 }

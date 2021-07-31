@@ -3,20 +3,25 @@ package typings.wonderJs
 import typings.std.HTMLElement
 import typings.wonderJs.entityObjectMod.EntityObject
 import typings.wonderJs.eventNameHandlerMod.EEventName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/structure/EventListenerMap", JSImport.Namespace)
-@js.native
-object eventListenerMapMod extends js.Object {
+object eventListenerMapMod {
+  
+  @JSImport("wonder.js/dist/es2015/event/structure/EventListenerMap", "EventListenerMap")
   @js.native
-  abstract class EventListenerMap () extends js.Object {
+  abstract class EventListenerMap () extends StObject {
+    
     def appendChild(args: js.Any*): Unit = js.native
+    
     /* protected */ def buildFirstLevelKey(target: HTMLElement): String = js.native
     /* protected */ def buildFirstLevelKey(target: EntityObject): String = js.native
+    
     /* protected */ def buildSecondLevelKey(eventName: EEventName): String = js.native
+    
     def clear(): Unit = js.native
+    
     def forEachAll(
       func: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
@@ -24,6 +29,7 @@ object eventListenerMapMod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     def forEachEventName(
       func: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
@@ -31,10 +37,11 @@ object eventListenerMapMod extends js.Object {
           Unit
         ]
     ): Unit = js.native
+    
     def getChild(args: js.Any*): js.Any = js.native
+    
     def hasChild(args: js.Any*): Boolean = js.native
+    
     def removeChild(args: js.Any*): js.Any = js.native
   }
-  
 }
-

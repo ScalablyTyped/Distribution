@@ -2,51 +2,49 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteOpResultObject extends StObject {
   
   /**
     * Number of documents deleted.
     */
-  var deletedCount: js.UndefOr[scala.Double] = js.native
+  var deletedCount: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Number of documents inserted.
     */
-  var insertedCount: js.UndefOr[scala.Double] = js.native
+  var insertedCount: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Inserted document generated Id's, hash key is the index of the originating operation.
     */
-  var insertedIds: js.UndefOr[js.Any] = js.native
+  var insertedIds: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Number of documents matched for update.
     */
-  var matchedCount: js.UndefOr[scala.Double] = js.native
+  var matchedCount: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Number of documents modified.
     */
-  var modifiedCount: js.UndefOr[scala.Double] = js.native
+  var modifiedCount: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The command result object.
     */
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Number of documents upserted.
     */
-  var upsertedCount: js.UndefOr[scala.Double] = js.native
+  var upsertedCount: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Upserted document generated Id's, hash key is the index of the originating operation.
     */
-  var upsertedIds: js.UndefOr[js.Any] = js.native
+  var upsertedIds: js.UndefOr[js.Any] = js.undefined
 }
 object BulkWriteOpResultObject {
   

@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalDataBarPositiveFormat.toJSON()`. */
-@js.native
 trait ConditionalDataBarPositiveFormatData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ConditionalDataBarPositiveFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait ConditionalDataBarPositiveFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait ConditionalDataBarPositiveFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var gradientFill: js.UndefOr[Boolean] = js.native
+  var gradientFill: js.UndefOr[Boolean] = js.undefined
 }
 object ConditionalDataBarPositiveFormatData {
   

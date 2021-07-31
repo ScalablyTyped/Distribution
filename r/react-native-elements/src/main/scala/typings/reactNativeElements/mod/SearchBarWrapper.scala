@@ -5,10 +5,8 @@ import typings.reactNativeElements.reactNativeElementsStrings.default
 import typings.reactNativeElements.reactNativeElementsStrings.ios
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchBarWrapper extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SearchBarWrapper extends StObject {
     *
     * @default is 'default
     */
-  var platform: js.UndefOr[default | ios | android] = js.native
+  var platform: js.UndefOr[default | ios | android] = js.undefined
 }
 object SearchBarWrapper {
   

@@ -3,17 +3,15 @@ package typings.awsSdkMiddlewareRetry
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Output[Ouput /* <: MetadataBearer */] extends StObject {
     
-    var output: Ouput = js.native
+    var output: Ouput
     
-    var response: js.Any = js.native
+    var response: js.Any
   }
   object Output {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output[_], Ouput /* <: MetadataBearer */] (val x: Self with Output[Ouput]) extends AnyVal {
+    implicit class OutputMutableBuilder[Self <: Output[?], Ouput /* <: MetadataBearer */] (val x: Self & Output[Ouput]) extends AnyVal {
       
       @scala.inline
       def setOutput(value: Ouput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])

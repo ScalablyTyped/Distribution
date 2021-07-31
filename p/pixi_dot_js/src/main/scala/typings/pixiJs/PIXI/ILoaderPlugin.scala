@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.PIXI.Loader.loaderMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {PIXI.Loader.loaderMiddleware} [use] - Middleware function to run after load, the
   *           arguments for this are `(resource, next)`
   */
-@js.native
 trait ILoaderPlugin extends StObject {
   
-  var add: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var add: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var pre: js.UndefOr[loaderMiddleware] = js.native
+  var pre: js.UndefOr[loaderMiddleware] = js.undefined
   
-  var use: js.UndefOr[loaderMiddleware] = js.native
+  var use: js.UndefOr[loaderMiddleware] = js.undefined
 }
 object ILoaderPlugin {
   
@@ -38,7 +36,7 @@ object ILoaderPlugin {
   implicit class ILoaderPluginMutableBuilder[Self <: ILoaderPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAdd(value: /* repeated */ js.Any => _): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
     def setAddUndefined: Self = StObject.set(x, "add", js.undefined)

@@ -11,8 +11,8 @@ convert textual words to numbers with optional fuzzy text matching
 | Full name          | words-to-numbers |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 247724 |
+| # dependents       | 21 |
+| # downloads        | 241059 |
 | # stars            | 0 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceInformation extends StObject {
   
   // Collection of the certification controls associated with certification
-  var certificationControls: js.UndefOr[NullableOption[js.Array[CertificationControl]]] = js.native
+  var certificationControls: js.UndefOr[NullableOption[js.Array[CertificationControl]]] = js.undefined
   
   // Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
-  var certificationName: js.UndefOr[NullableOption[String]] = js.native
+  var certificationName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ComplianceInformation {
   

@@ -2,25 +2,23 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Possible options for row locking. Used in conjuction with `find` calls:
   */
-@js.native
 trait TransactionLock extends StObject {
   
   // 'SHARE'
-  var KEY_SHARE: TransactionLockLevelKeyShare = js.native
+  var KEY_SHARE: TransactionLockLevelKeyShare
   
   // 'KEY SHARE'
-  var NO_KEY_UPDATE: TransactionLockLevelNoKeyUpdate = js.native
+  var NO_KEY_UPDATE: TransactionLockLevelNoKeyUpdate
   
   // 'UPDATE'
-  var SHARE: TransactionLockLevelShare = js.native
+  var SHARE: TransactionLockLevelShare
   
-  var UPDATE: TransactionLockLevelUpdate = js.native
+  var UPDATE: TransactionLockLevelUpdate
 }
 object TransactionLock {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateS3ResourcesRequest extends StObject {
   
   /**
     * The AWS ID of the Amazon Macie Classic member account whose S3 resources' classification types you want to update. 
     */
-  var memberAccountId: js.UndefOr[AWSAccountId] = js.native
+  var memberAccountId: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
     * The S3 resources whose classification types you want to update.
     */
-  var s3ResourcesUpdate: S3ResourcesClassificationUpdate = js.native
+  var s3ResourcesUpdate: S3ResourcesClassificationUpdate
 }
 object UpdateS3ResourcesRequest {
   

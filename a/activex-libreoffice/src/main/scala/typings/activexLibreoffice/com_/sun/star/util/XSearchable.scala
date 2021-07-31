@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,27 +14,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * {{program example here, see documentation}}
   */
-@js.native
-trait XSearchable extends XInterface {
+trait XSearchable
+  extends StObject
+     with XInterface {
   
   /**
     * creates a {@link SearchDescriptor} which contains properties that specify a search in this container.
     * @see SearchDescriptor
     */
-  def createSearchDescriptor(): XSearchDescriptor = js.native
+  def createSearchDescriptor(): XSearchDescriptor
   
   /**
     * searches the contained texts for all occurrences of whatever is specified.
     * @see SearchDescriptor
     */
-  def findAll(xDesc: XSearchDescriptor): XIndexAccess = js.native
+  def findAll(xDesc: XSearchDescriptor): XIndexAccess
   
   /**
     * searches the contained texts for the next occurrence of whatever is specified.
     * @returns the position within the component, e.g. a {@link com.sun.star.text.XTextRange} which determines the found elements.
     * @see SearchDescriptor
     */
-  def findFirst(xDesc: XSearchDescriptor): XInterface = js.native
+  def findFirst(xDesc: XSearchDescriptor): XInterface
   
   /**
     * searches the contained texts for the next occurrence of whatever is specified.
@@ -43,7 +43,7 @@ trait XSearchable extends XInterface {
     * @param xDesc the descriptor used for searching.
     * @see SearchDescriptor
     */
-  def findNext(xStartAt: XInterface, xDesc: XSearchDescriptor): XInterface = js.native
+  def findNext(xStartAt: XInterface, xDesc: XSearchDescriptor): XInterface
 }
 object XSearchable {
   

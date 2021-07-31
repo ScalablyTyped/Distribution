@@ -4,17 +4,15 @@ import typings.phaser.spine.TextureFilter
 import typings.phaser.spine.TextureWrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTexture extends StObject {
   
   /* static member */
-  def filterFromString(text: String): TextureFilter = js.native
+  def filterFromString(text: String): TextureFilter
   
   /* static member */
-  def wrapFromString(text: String): TextureWrap = js.native
+  def wrapFromString(text: String): TextureWrap
 }
 object TypeofTexture {
   

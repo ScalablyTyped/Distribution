@@ -2,7 +2,6 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,53 +9,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This resource is specifically for managing user profiles, whereas
   * UserProfiles is for accessing the API.
   */
-@js.native
 trait SchemaAccountUserProfile extends StObject {
   
   /**
     * Account ID of the user profile. This is a read-only field that can be
     * left blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this user profile is active. This defaults to false, and must be
     * set true on insert for the user profile to be usable.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Filter that describes which advertisers are visible to the user profile.
     */
-  var advertiserFilter: js.UndefOr[SchemaObjectFilter] = js.native
+  var advertiserFilter: js.UndefOr[SchemaObjectFilter] = js.undefined
   
   /**
     * Filter that describes which campaigns are visible to the user profile.
     */
-  var campaignFilter: js.UndefOr[SchemaObjectFilter] = js.native
+  var campaignFilter: js.UndefOr[SchemaObjectFilter] = js.undefined
   
   /**
     * Comments for this user profile.
     */
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
   /**
     * Email of the user profile. The email addresss must be linked to a Google
     * Account. This field is required on insertion and is read-only after
     * insertion.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the user profile. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#accountUserProfile&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Locale of the user profile. This is a required field. Acceptable values
@@ -69,46 +67,46 @@ trait SchemaAccountUserProfile extends StObject {
     * (Turkish)  - &quot;zh-CN&quot; (Chinese Simplified)  - &quot;zh-TW&quot;
     * (Chinese Traditional)
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the user profile. This is a required field. Must be less than 64
     * characters long, must be globally unique, and cannot contain whitespace
     * or any of the following characters: &quot;&amp;;&quot;#%,&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Filter that describes which sites are visible to the user profile.
     */
-  var siteFilter: js.UndefOr[SchemaObjectFilter] = js.native
+  var siteFilter: js.UndefOr[SchemaObjectFilter] = js.undefined
   
   /**
     * Subaccount ID of the user profile. This is a read-only field that can be
     * left blank.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Trafficker type of this user profile. This is a read-only field.
     */
-  var traffickerType: js.UndefOr[String] = js.native
+  var traffickerType: js.UndefOr[String] = js.undefined
   
   /**
     * User type of the user profile. This is a read-only field that can be left
     * blank.
     */
-  var userAccessType: js.UndefOr[String] = js.native
+  var userAccessType: js.UndefOr[String] = js.undefined
   
   /**
     * Filter that describes which user roles are visible to the user profile.
     */
-  var userRoleFilter: js.UndefOr[SchemaObjectFilter] = js.native
+  var userRoleFilter: js.UndefOr[SchemaObjectFilter] = js.undefined
   
   /**
     * User role ID of the user profile. This is a required field.
     */
-  var userRoleId: js.UndefOr[String] = js.native
+  var userRoleId: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountUserProfile {
   

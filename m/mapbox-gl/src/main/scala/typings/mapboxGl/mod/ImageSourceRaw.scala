@@ -3,24 +3,23 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.image_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageSourceRaw
-  extends Source
+  extends StObject
+     with Source
      with ImageSourceOptions
      with AnySourceData {
   
   @JSName("type")
-  var type_ImageSourceRaw: image_ = js.native
+  var type_ImageSourceRaw: image_
 }
 object ImageSourceRaw {
   
   @scala.inline
-  def apply(`type`: image_): ImageSourceRaw = {
+  def apply(): ImageSourceRaw = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageSourceRaw]
   }
   

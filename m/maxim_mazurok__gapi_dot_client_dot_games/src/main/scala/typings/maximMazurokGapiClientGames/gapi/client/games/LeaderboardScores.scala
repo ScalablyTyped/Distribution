@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaderboardScores extends StObject {
   
   /** The scores in the leaderboard. */
-  var items: js.UndefOr[js.Array[LeaderboardEntry]] = js.native
+  var items: js.UndefOr[js.Array[LeaderboardEntry]] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#leaderboardScores`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The pagination token for the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The total number of scores in the leaderboard. */
-  var numScores: js.UndefOr[String] = js.native
+  var numScores: js.UndefOr[String] = js.undefined
   
   /**
     * The score of the requesting player on the leaderboard. The player's score may appear both here and in the list of scores above. If you are viewing a public leaderboard and the
     * player is not sharing their gameplay information publicly, the `scoreRank`and `formattedScoreRank` values will not be present.
     */
-  var playerScore: js.UndefOr[LeaderboardEntry] = js.native
+  var playerScore: js.UndefOr[LeaderboardEntry] = js.undefined
   
   /** The pagination token for the previous page of results. */
-  var prevPageToken: js.UndefOr[String] = js.native
+  var prevPageToken: js.UndefOr[String] = js.undefined
 }
 object LeaderboardScores {
   

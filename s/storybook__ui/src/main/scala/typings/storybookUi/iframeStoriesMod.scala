@@ -7,10 +7,13 @@ import typings.storybookUi.anon.Chromatic
 import typings.storybookUi.iframeMod.IFrameProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iframeStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/preview/iframe.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -20,9 +23,9 @@ object iframeStoriesMod {
     
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "default.component")
     @js.native
-    def component: js.Function1[/* props */ IFrameProps with IframeHTMLAttributes[HTMLIFrameElement], Element] = js.native
+    def component: js.Function1[/* props */ IFrameProps & IframeHTMLAttributes[HTMLIFrameElement], Element] = js.native
     @scala.inline
-    def component_=(x: js.Function1[/* props */ IFrameProps with IframeHTMLAttributes[HTMLIFrameElement], Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    def component_=(x: js.Function1[/* props */ IFrameProps & IframeHTMLAttributes[HTMLIFrameElement], Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "default.title")
     @js.native
@@ -31,15 +34,14 @@ object iframeStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "missingStory")
-  @js.native
-  def missingStory(): Element = js.native
+  @scala.inline
+  def missingStory(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("missingStory")().asInstanceOf[Element]
   
   object workingStory {
     
-    @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "workingStory")
-    @js.native
-    def apply(): Element = js.native
+    @scala.inline
+    def apply(): Element = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Element]
+    
     @JSImport("@storybook/ui/dist/components/preview/iframe.stories", "workingStory")
     @js.native
     val ^ : js.Any = js.native

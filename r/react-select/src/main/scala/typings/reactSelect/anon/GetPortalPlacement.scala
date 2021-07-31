@@ -3,13 +3,11 @@ package typings.reactSelect.anon
 import typings.reactSelect.menuMod.MenuState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPortalPlacement extends StObject {
   
-  def getPortalPlacement(state: MenuState): Unit = js.native
+  def getPortalPlacement(state: MenuState): Unit
 }
 object GetPortalPlacement {
   

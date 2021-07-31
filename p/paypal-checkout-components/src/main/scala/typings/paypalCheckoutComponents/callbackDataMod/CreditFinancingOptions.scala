@@ -2,41 +2,39 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditFinancingOptions extends StObject {
   
   /**
     * Indicates whether the cart amount is editable after payer's acceptance on PayPal side.
     */
-  var cartAmountImmutable: Boolean = js.native
+  var cartAmountImmutable: Boolean
   
   /**
     * This is the estimated amount per month that the customer will need to pay including fees and interest.
     */
-  var monthlyPayment: CurrencyAmount = js.native
+  var monthlyPayment: CurrencyAmount
   
   /**
     * Status of whether the customer ultimately was approved for and chose to make the payment using the approved installment credit.
     */
-  var payerAcceptance: Boolean = js.native
+  var payerAcceptance: Boolean
   
   /**
     * Length of financing terms in months.
     */
-  var term: Double = js.native
+  var term: Double
   
   /**
     * This is the estimated total payment amount including interest and fees the user will pay during the lifetime of the loan.
     */
-  var totalCost: CurrencyAmount = js.native
+  var totalCost: CurrencyAmount
   
   /**
     * Estimated interest or fees amount the payer will have to pay during the lifetime of the loan.
     */
-  var totalInterest: CurrencyAmount = js.native
+  var totalInterest: CurrencyAmount
 }
 object CreditFinancingOptions {
   

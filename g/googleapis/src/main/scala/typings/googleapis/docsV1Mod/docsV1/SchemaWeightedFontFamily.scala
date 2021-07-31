@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a font family and weight of text.
   */
-@js.native
 trait SchemaWeightedFontFamily extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaWeightedFontFamily extends StObject {
     * Font menu in Docs or from [Google Fonts] (https://fonts.google.com/). If
     * the font name is unrecognized, the text is rendered in `Arial`.
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The weight of the font. This field can have any value that is a multiple
@@ -34,7 +32,7 @@ trait SchemaWeightedFontFamily extends StObject {
     * `700`, the rendered weight is   equal to the weight. * If the text is not
     * bold, the rendered weight is equal to the weight.
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object SchemaWeightedFontFamily {
   

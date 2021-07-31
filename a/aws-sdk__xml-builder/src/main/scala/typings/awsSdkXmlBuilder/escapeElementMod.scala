@@ -2,12 +2,14 @@ package typings.awsSdkXmlBuilder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object escapeElementMod {
   
-  @JSImport("@aws-sdk/xml-builder/dist/cjs/escape-element", "escapeElement")
+  @JSImport("@aws-sdk/xml-builder/dist/cjs/escape-element", JSImport.Namespace)
   @js.native
-  def escapeElement(value: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def escapeElement(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeElement")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

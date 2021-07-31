@@ -3,46 +3,44 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputConfig extends StObject {
   
   /**
     * The maximum number of touch pointers. See {@link Phaser.Input.InputManager#pointers}.
     */
-  var activePointers: js.UndefOr[integer] = js.native
+  var activePointers: js.UndefOr[integer] = js.undefined
   
   /**
     * Gamepad input configuration. `true` enables gamepad input.
     */
-  var gamepad: js.UndefOr[Boolean | GamepadInputConfig] = js.native
+  var gamepad: js.UndefOr[Boolean | GamepadInputConfig] = js.undefined
   
   /**
     * Keyboard input configuration. `true` uses the default configuration and `false` disables keyboard input.
     */
-  var keyboard: js.UndefOr[Boolean | KeyboardInputConfig] = js.native
+  var keyboard: js.UndefOr[Boolean | KeyboardInputConfig] = js.undefined
   
   /**
     * Mouse input configuration. `true` uses the default configuration and `false` disables mouse input.
     */
-  var mouse: js.UndefOr[Boolean | MouseInputConfig] = js.native
+  var mouse: js.UndefOr[Boolean | MouseInputConfig] = js.undefined
   
   /**
     * The smoothing factor to apply during Pointer movement. See {@link Phaser.Input.Pointer#smoothFactor}.
     */
-  var smoothFactor: js.UndefOr[Double] = js.native
+  var smoothFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Touch input configuration. `true` uses the default configuration and `false` disables touch input.
     */
-  var touch: js.UndefOr[Boolean | TouchInputConfig] = js.native
+  var touch: js.UndefOr[Boolean | TouchInputConfig] = js.undefined
   
   /**
     * Should Phaser listen for input events on the Window? If you disable this, events like 'POINTER_UP_OUTSIDE' will no longer fire.
     */
-  var windowEvents: js.UndefOr[Boolean] = js.native
+  var windowEvents: js.UndefOr[Boolean] = js.undefined
 }
 object InputConfig {
   

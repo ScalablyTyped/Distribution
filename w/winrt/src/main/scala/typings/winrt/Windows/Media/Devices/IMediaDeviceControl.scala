@@ -4,21 +4,19 @@ import typings.winrt.anon.SucceededBoolean
 import typings.winrt.anon.SucceededValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMediaDeviceControl extends StObject {
   
-  var capabilities: MediaDeviceControlCapabilities = js.native
+  var capabilities: MediaDeviceControlCapabilities
   
-  def tryGetAuto(): SucceededBoolean = js.native
+  def tryGetAuto(): SucceededBoolean
   
-  def tryGetValue(): SucceededValue = js.native
+  def tryGetValue(): SucceededValue
   
-  def trySetAuto(value: Boolean): Boolean = js.native
+  def trySetAuto(value: Boolean): Boolean
   
-  def trySetValue(value: Double): Boolean = js.native
+  def trySetValue(value: Double): Boolean
 }
 object IMediaDeviceControl {
   

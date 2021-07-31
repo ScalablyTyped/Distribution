@@ -4,27 +4,25 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexDotnativeMod {
   
-  @js.native
   trait AccordionStyle extends StObject {
     
-    var arrow: ViewStyle = js.native
+    var arrow: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: ViewStyle = js.native
+    var content: ViewStyle
     
-    var contentText: TextStyle = js.native
+    var contentText: TextStyle
     
-    var header: ViewStyle = js.native
+    var header: ViewStyle
     
-    var headerText: TextStyle = js.native
+    var headerText: TextStyle
     
-    var headerWrap: ViewStyle = js.native
+    var headerWrap: ViewStyle
   }
   object AccordionStyle {
     

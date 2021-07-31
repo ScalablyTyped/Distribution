@@ -2,14 +2,12 @@ package typings.semanticUiVisibility.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'initialCheck'> */
-@js.native
 trait PickImplinitialCheck extends StObject {
   
-  var initialCheck: Boolean = js.native
+  var initialCheck: Boolean
 }
 object PickImplinitialCheck {
   

@@ -14,10 +14,8 @@ import typings.angularRouter.angularRouterStrings.top
 import typings.std.URIError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraOptions extends StObject {
   
   /**
@@ -27,13 +25,13 @@ trait ExtraOptions extends StObject {
     * Anchor scrolling does not happen on 'popstate'. Instead, we restore the position
     * that we stored or scroll to the top.
     */
-  var anchorScrolling: js.UndefOr[disabled | enabled] = js.native
+  var anchorScrolling: js.UndefOr[disabled | enabled] = js.undefined
   
   /**
     * When true, log all internal navigation events to the console.
     * Use for debugging.
     */
-  var enableTracing: js.UndefOr[Boolean] = js.native
+  var enableTracing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A custom error handler for failed navigations.
@@ -41,7 +39,7 @@ trait ExtraOptions extends StObject {
     * If the handler throws an exception, the navigation Promise is rejected with the exception.
     *
     */
-  var errorHandler: js.UndefOr[ErrorHandler] = js.native
+  var errorHandler: js.UndefOr[ErrorHandler] = js.undefined
   
   /**
     * One of `enabled`, `enabledBlocking`, `enabledNonBlocking` or `disabled`.
@@ -54,7 +52,7 @@ trait ExtraOptions extends StObject {
     * root component gets created. Use if there is a reason to have more control over when the router
     * starts its initial navigation due to some complex initialization logic.
     */
-  var initialNavigation: js.UndefOr[InitialNavigation] = js.native
+  var initialNavigation: js.UndefOr[InitialNavigation] = js.undefined
   
   /**
     * A custom handler for malformed URI errors. The handler is invoked when `encodedURI` contains
@@ -68,7 +66,7 @@ trait ExtraOptions extends StObject {
     * */
   var malformedUriErrorHandler: js.UndefOr[
     js.Function3[/* error */ URIError, /* urlSerializer */ UrlSerializer, /* url */ String, UrlTree]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Define what the router should do if it receives a navigation request to the current URL.
@@ -77,7 +75,7 @@ trait ExtraOptions extends StObject {
     * Use this option to configure the behavior when navigating to the
     * current URL. Default is 'ignore'.
     */
-  var onSameUrlNavigation: js.UndefOr[reload | ignore] = js.native
+  var onSameUrlNavigation: js.UndefOr[reload | ignore] = js.undefined
   
   /**
     * Defines how the router merges parameters, data, and resolved data from parent to child
@@ -85,13 +83,13 @@ trait ExtraOptions extends StObject {
     * path-less or component-less routes.
     * Set to 'always' to enable unconditional inheritance of parent parameters.
     */
-  var paramsInheritanceStrategy: js.UndefOr[emptyOnly | always] = js.native
+  var paramsInheritanceStrategy: js.UndefOr[emptyOnly | always] = js.undefined
   
   /**
     * Configures a preloading strategy.
     * One of `PreloadAllModules` or `NoPreloading` (the default).
     */
-  var preloadingStrategy: js.UndefOr[js.Any] = js.native
+  var preloadingStrategy: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Enables a bug fix that corrects relative link resolution in components with empty paths.
@@ -122,7 +120,7 @@ trait ExtraOptions extends StObject {
     *
     * The default in v11 is `corrected`.
     */
-  var relativeLinkResolution: js.UndefOr[legacy | corrected] = js.native
+  var relativeLinkResolution: js.UndefOr[legacy | corrected] = js.undefined
   
   /**
     * Configures the scroll offset the router will use when scrolling to an element.
@@ -132,7 +130,7 @@ trait ExtraOptions extends StObject {
     * When given a function, the router invokes the function every time
     * it restores scroll position.
     */
-  var scrollOffset: js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])] = js.native
+  var scrollOffset: js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])] = js.undefined
   
   /**
     * Configures if the scroll position needs to be restored when navigating back.
@@ -167,7 +165,7 @@ trait ExtraOptions extends StObject {
     * }
     * ```
     */
-  var scrollPositionRestoration: js.UndefOr[disabled | enabled | top] = js.native
+  var scrollPositionRestoration: js.UndefOr[disabled | enabled | top] = js.undefined
   
   /**
     * Defines when the router updates the browser URL. By default ('deferred'),
@@ -176,13 +174,13 @@ trait ExtraOptions extends StObject {
     * Updating the URL early allows you to handle a failure of navigation by
     * showing an error message with the URL that failed.
     */
-  var urlUpdateStrategy: js.UndefOr[deferred | eager] = js.native
+  var urlUpdateStrategy: js.UndefOr[deferred | eager] = js.undefined
   
   /**
     * When true, enable the location strategy that uses the URL fragment
     * instead of the history API.
     */
-  var useHash: js.UndefOr[Boolean] = js.native
+  var useHash: js.UndefOr[Boolean] = js.undefined
 }
 object ExtraOptions {
   

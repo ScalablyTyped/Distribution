@@ -2,12 +2,13 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "DebugAdapterServer")
 @js.native
-class DebugAdapterServer protected () extends DebugAdapterDescriptor {
+class DebugAdapterServer protected ()
+  extends StObject
+     with DebugAdapterDescriptor {
   /**
     * Create a description for a debug adapter running as a socket based server.
     */

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureSet extends StObject {
   
   /**
@@ -15,47 +13,47 @@ trait FeatureSet extends StObject {
     js.Array[
       /* Information about the price and currency associated with the feature set. Reserved for internal DocuSign use only. */ CurrencyFeatureSetPrice
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var envelopeFee: js.UndefOr[String] = js.native
+  var envelopeFee: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var featureSetId: js.UndefOr[String] = js.native
+  var featureSetId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var fixedFee: js.UndefOr[String] = js.native
+  var fixedFee: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var is21CFRPart11: js.UndefOr[String] = js.native
+  var is21CFRPart11: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var isActive: js.UndefOr[String] = js.native
+  var isActive: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the feature set is actively enabled as part of the plan.
     */
-  var isEnabled: js.UndefOr[String] = js.native
+  var isEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var seatFee: js.UndefOr[String] = js.native
+  var seatFee: js.UndefOr[String] = js.undefined
 }
 object FeatureSet {
   

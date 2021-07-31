@@ -3,17 +3,17 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogHTMLAttributes[T] extends HTMLAttributes[T] {
+trait DialogHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var onClose: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
-  var returnValue: js.UndefOr[String] = js.native
+  var returnValue: js.UndefOr[String] = js.undefined
 }
 object DialogHTMLAttributes {
   
@@ -24,7 +24,7 @@ object DialogHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DialogHTMLAttributesMutableBuilder[Self <: DialogHTMLAttributes[_], T] (val x: Self with DialogHTMLAttributes[T]) extends AnyVal {
+  implicit class DialogHTMLAttributesMutableBuilder[Self <: DialogHTMLAttributes[?], T] (val x: Self & DialogHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setOnClose(value: /* event */ Event => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))

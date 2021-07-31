@@ -10,9 +10,9 @@ TypeScript typings for Google Play Android Developer API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.androidpublisher |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 43 |
 | # dependents       | 1 |
-| # downloads        | 176 |
+| # downloads        | 3156 |
 | # stars            | 0 |
 
 ## Links

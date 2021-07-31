@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "DomEventBinder")
 @js.native
 class DomEventBinder ()
   extends typings.wonderJs.domEventBinderMod.DomEventBinder
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "DomEventBinder")
-@js.native
-object DomEventBinder extends js.Object {
-  def getInstance(): js.Any = js.native
+object DomEventBinder {
+  
+  @JSImport("wonder.js/dist/es2015", "DomEventBinder")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
 }
-

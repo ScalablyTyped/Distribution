@@ -5,46 +5,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttachmentEditAttachment extends Object {
+trait AttachmentEditAttachment
+  extends StObject
+     with Object {
   
   /**
     * The content type of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The attachment data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var data: js.UndefOr[Blob | js.Any | String] = js.native
+  var data: js.UndefOr[Blob | js.Any | String] = js.undefined
   
   /**
     * The globalId of the attachment to be added or updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var globalId: String = js.native
+  var globalId: String
   
   /**
     * The name of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The id of pre-loaded attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var uploadId: js.UndefOr[String] = js.native
+  var uploadId: js.UndefOr[String] = js.undefined
 }
 object AttachmentEditAttachment {
   

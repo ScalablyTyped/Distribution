@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Table elements. For more information on document structure, see the guide to extending Google Docs.
   */
 @js.native
-trait FooterSection extends Element {
+trait FooterSection
+  extends StObject
+     with Element {
   
   def appendHorizontalRule(): HorizontalRule = js.native
   

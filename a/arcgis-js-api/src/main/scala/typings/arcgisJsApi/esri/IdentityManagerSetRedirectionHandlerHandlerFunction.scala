@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityManagerSetRedirectionHandlerHandlerFunction extends Object {
+trait IdentityManagerSetRedirectionHandlerHandlerFunction
+  extends StObject
+     with Object {
   
   /**
     * The URL of the secure resource that triggers the redirection to the ArcGIS.com sign-in page.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setRedirectionHandler)
     */
-  var resourceUrl: String = js.native
+  var resourceUrl: String
   
   /**
     * The application URL where the sign-in page redirects after a successful login.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setRedirectionHandler)
     */
-  var returnUrlParamName: String = js.native
+  var returnUrlParamName: String
   
   /**
     * The ServerInfo object describing the server where the secure resource is hosted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setRedirectionHandler)
     */
-  var serverInfo: ServerInfo = js.native
+  var serverInfo: ServerInfo
   
   /**
     * URL of the sign-in page where users will be redirected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setRedirectionHandler)
     */
-  var signInPage: String = js.native
+  var signInPage: String
 }
 object IdentityManagerSetRedirectionHandlerHandlerFunction {
   

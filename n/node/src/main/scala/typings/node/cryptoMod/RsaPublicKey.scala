@@ -2,15 +2,13 @@ package typings.node.cryptoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RsaPublicKey extends StObject {
   
-  var key: KeyLike = js.native
+  var key: KeyLike
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
 }
 object RsaPublicKey {
   

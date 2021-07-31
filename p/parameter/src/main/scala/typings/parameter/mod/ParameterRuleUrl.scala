@@ -4,20 +4,19 @@ import typings.parameter.parameterStrings.url
 import typings.parameter.parameterStrings.urlQuestionmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRuleUrl
-  extends ParameterRuleBase
+  extends StObject
+     with ParameterRuleBase
      with _ParameterRuleItem {
   
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_ParameterRuleUrl: url | urlQuestionmark = js.native
+  var type_ParameterRuleUrl: url | urlQuestionmark
 }
 object ParameterRuleUrl {
   

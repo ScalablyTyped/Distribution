@@ -14,7 +14,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,41 +23,74 @@ object mod extends Shortcut {
   val ^ : UtilModule = js.native
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait I18n extends StObject {
     
     /**
       * Perform a message catalog lookup.
       */
     @JSName("_")
-    def _underscore(id: String): String = js.native
+    def _underscore(id: String): String
     @JSName("_")
-    def _underscore(id: String, tplStrs: Record[String, String | Double]): String = js.native
+    def _underscore(id: String, tplStrs: Record[String, String | Double]): String
     /**
       * Perform a message catalog lookup.
       */
     @JSName("_")
-    var _underscore_Original: I18nTFunction = js.native
+    var _underscore_Original: I18nTFunction
     
     /**
       * Gets a list of languages a given catalog is available in.
       */
-    def availableLanguages(namespace: String): js.Array[String] = js.native
+    def availableLanguages(namespace: String): js.Array[String]
     
     /**
       * Gets a message catalog.
       */
-    def catalog(namespace: String, lang: String): MessageCatalog = js.native
+    def catalog(namespace: String, lang: String): MessageCatalog
     
     /**
       * Register a message catalog with i18n.
       */
-    def registerMessageCatalog(namespace: String, dir: String, file: String): js.Promise[Unit] = js.native
+    def registerMessageCatalog(namespace: String, dir: String, file: String): js.Promise[Unit]
     
     /**
       * Register multiple message catalogs with i18n.
       */
-    def registerMessageCatalogs(catalogs: js.Array[MessageCatalog]): js.Promise[js.Array[js.Object]] = js.native
+    def registerMessageCatalogs(catalogs: js.Array[MessageCatalog]): js.Promise[js.Array[js.Object]]
+  }
+  object I18n {
+    
+    @scala.inline
+    def apply(
+      _underscore: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String,
+      availableLanguages: String => js.Array[String],
+      catalog: (String, String) => MessageCatalog,
+      registerMessageCatalog: (String, String, String) => js.Promise[Unit],
+      registerMessageCatalogs: js.Array[MessageCatalog] => js.Promise[js.Array[js.Object]]
+    ): I18n = {
+      val __obj = js.Dynamic.literal(availableLanguages = js.Any.fromFunction1(availableLanguages), catalog = js.Any.fromFunction2(catalog), registerMessageCatalog = js.Any.fromFunction3(registerMessageCatalog), registerMessageCatalogs = js.Any.fromFunction1(registerMessageCatalogs))
+      __obj.updateDynamic("_")(js.Any.fromFunction2(_underscore))
+      __obj.asInstanceOf[I18n]
+    }
+    
+    @scala.inline
+    implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAvailableLanguages(value: String => js.Array[String]): Self = StObject.set(x, "availableLanguages", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCatalog(value: (String, String) => MessageCatalog): Self = StObject.set(x, "catalog", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRegisterMessageCatalog(value: (String, String, String) => js.Promise[Unit]): Self = StObject.set(x, "registerMessageCatalog", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setRegisterMessageCatalogs(value: js.Array[MessageCatalog] => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "registerMessageCatalogs", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
+    }
   }
   
   // tslint:disable-next-line:interface-name
@@ -159,18 +191,17 @@ object mod extends Shortcut {
   
   type LogMessage = js.Any
   
-  @js.native
   trait LogMessageObject extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var level: Double = js.native
+    var level: Double
     
-    var msg: js.UndefOr[LogMessage] = js.native
+    var msg: js.UndefOr[LogMessage] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LogMessageObject {
     
@@ -212,14 +243,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MessageCatalog extends StObject {
     
-    var dir: String = js.native
+    var dir: String
     
-    var file: String = js.native
+    var file: String
     
-    var namespace: String = js.native
+    var namespace: String
   }
   object MessageCatalog {
     
@@ -447,13 +477,12 @@ object mod extends Shortcut {
     def setObjectProperty(msg: js.Object, prop: String, value: js.Any, createMissing: Boolean): Boolean = js.native
   }
   
-  @js.native
   trait UtilModule extends StObject {
     
     /**
       * Internationalization utilities
       */
-    var i18n: I18n = js.native
+    var i18n: I18n
     
     /**
       * Initialise the module with the runtime settings
@@ -461,17 +490,17 @@ object mod extends Shortcut {
       */
     def init(
       settings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ js.Any
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Logging utilities
       */
-    var log: Log = js.native
+    var log: Log
     
     /**
       * General utilities
       */
-    var util: Util = js.native
+    var util: Util
   }
   object UtilModule {
     

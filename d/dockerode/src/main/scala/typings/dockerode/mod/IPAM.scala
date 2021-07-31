@@ -3,18 +3,16 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tslint:disable:interface-name */
-@js.native
 trait IPAM extends StObject {
   
-  var Config: js.UndefOr[js.Array[StringDictionary[String]]] = js.native
+  var Config: js.UndefOr[js.Array[StringDictionary[String]]] = js.undefined
   
-  var Driver: String = js.native
+  var Driver: String
   
-  var Options: js.UndefOr[StringDictionary[String]] = js.native
+  var Options: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object IPAM {
   

@@ -33,29 +33,23 @@ import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.none
 import typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BOTH extends StObject {
     
-    var BOTH: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH = js.native
+    var BOTH: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH
     
-    var HORIZONTAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL = js.native
+    var HORIZONTAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.HORIZONTAL
     
-    var VERTICAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL = js.native
+    var VERTICAL: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.VERTICAL
   }
   object BOTH {
     
     @scala.inline
-    def apply(
-      BOTH: typings.reactNativeSvgCharts.reactNativeSvgChartsStrings.BOTH,
-      HORIZONTAL: HORIZONTAL,
-      VERTICAL: VERTICAL
-    ): BOTH = {
-      val __obj = js.Dynamic.literal(BOTH = BOTH.asInstanceOf[js.Any], HORIZONTAL = HORIZONTAL.asInstanceOf[js.Any], VERTICAL = VERTICAL.asInstanceOf[js.Any])
+    def apply(): BOTH = {
+      val __obj = js.Dynamic.literal(BOTH = "BOTH", HORIZONTAL = "HORIZONTAL", VERTICAL = "VERTICAL")
       __obj.asInstanceOf[BOTH]
     }
     
@@ -73,16 +67,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Bottom {
     
@@ -121,24 +114,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Color[T] extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: String = js.native
+    var id: String
     
-    var index: Double = js.native
+    var index: Double
     
-    var key: /* keyof T */ String = js.native
+    var key: /* keyof T */ String
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Color {
     
@@ -158,7 +150,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color[_], T] (val x: Self with Color[T]) extends AnyVal {
+    implicit class ColorMutableBuilder[Self <: Color[?], T] (val x: Self & Color[T]) extends AnyVal {
       
       @scala.inline
       def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
@@ -186,12 +178,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CornerRadius extends StObject {
     
-    var cornerRadius: js.UndefOr[Double | String] = js.native
+    var cornerRadius: js.UndefOr[Double | String] = js.undefined
     
-    var outerRadius: js.UndefOr[Double | String] = js.native
+    var outerRadius: js.UndefOr[Double | String] = js.undefined
   }
   object CornerRadius {
     
@@ -218,10 +209,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -239,12 +229,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
   }
   object Left {
     
@@ -272,132 +261,131 @@ object anon {
   }
   
   /* Inlined std.Partial<react-native-svg.react-native-svg.LineProps> */
-  @js.native
   trait PartialLineProps extends StObject {
     
-    var clipPath: js.UndefOr[String] = js.native
+    var clipPath: js.UndefOr[String] = js.undefined
     
-    var clipRule: js.UndefOr[FillRule] = js.native
+    var clipRule: js.UndefOr[FillRule] = js.undefined
     
-    var delayLongPress: js.UndefOr[Double] = js.native
+    var delayLongPress: js.UndefOr[Double] = js.undefined
     
-    var delayPressIn: js.UndefOr[Double] = js.native
+    var delayPressIn: js.UndefOr[Double] = js.undefined
     
-    var delayPressOut: js.UndefOr[Double] = js.native
+    var delayPressOut: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.native
+    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
     
-    var fillOpacity: js.UndefOr[NumberProp] = js.native
+    var fillOpacity: js.UndefOr[NumberProp] = js.undefined
     
-    var fillRule: js.UndefOr[FillRule] = js.native
+    var fillRule: js.UndefOr[FillRule] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var marker: js.UndefOr[String] = js.native
+    var marker: js.UndefOr[String] = js.undefined
     
-    var markerEnd: js.UndefOr[String] = js.native
+    var markerEnd: js.UndefOr[String] = js.undefined
     
-    var markerMid: js.UndefOr[String] = js.native
+    var markerMid: js.UndefOr[String] = js.undefined
     
-    var markerStart: js.UndefOr[String] = js.native
+    var markerStart: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var opacity: js.UndefOr[NumberProp] = js.native
+    var opacity: js.UndefOr[NumberProp] = js.undefined
     
-    var origin: js.UndefOr[NumberArray] = js.native
+    var origin: js.UndefOr[NumberArray] = js.undefined
     
-    var originX: js.UndefOr[NumberProp] = js.native
+    var originX: js.UndefOr[NumberProp] = js.undefined
     
-    var originY: js.UndefOr[NumberProp] = js.native
+    var originY: js.UndefOr[NumberProp] = js.undefined
     
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
     
-    var rotation: js.UndefOr[NumberProp] = js.native
+    var rotation: js.UndefOr[NumberProp] = js.undefined
     
-    var scale: js.UndefOr[NumberArray] = js.native
+    var scale: js.UndefOr[NumberArray] = js.undefined
     
-    var scaleX: js.UndefOr[NumberProp] = js.native
+    var scaleX: js.UndefOr[NumberProp] = js.undefined
     
-    var scaleY: js.UndefOr[NumberProp] = js.native
+    var scaleY: js.UndefOr[NumberProp] = js.undefined
     
-    var skew: js.UndefOr[NumberArray] = js.native
+    var skew: js.UndefOr[NumberArray] = js.undefined
     
-    var skewX: js.UndefOr[NumberProp] = js.native
+    var skewX: js.UndefOr[NumberProp] = js.undefined
     
-    var skewY: js.UndefOr[NumberProp] = js.native
+    var skewY: js.UndefOr[NumberProp] = js.undefined
     
-    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.native
+    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
     
-    var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.native
+    var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[NumberProp] = js.native
+    var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeLinecap: js.UndefOr[Linecap] = js.native
+    var strokeLinecap: js.UndefOr[Linecap] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[Linejoin] = js.native
+    var strokeLinejoin: js.UndefOr[Linejoin] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[NumberProp] = js.native
+    var strokeMiterlimit: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeOpacity: js.UndefOr[NumberProp] = js.native
+    var strokeOpacity: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeWidth: js.UndefOr[NumberProp] = js.native
+    var strokeWidth: js.UndefOr[NumberProp] = js.undefined
     
-    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.native
+    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.undefined
     
-    var translate: js.UndefOr[NumberArray] = js.native
+    var translate: js.UndefOr[NumberArray] = js.undefined
     
-    var translateX: js.UndefOr[NumberProp] = js.native
+    var translateX: js.UndefOr[NumberProp] = js.undefined
     
-    var translateY: js.UndefOr[NumberProp] = js.native
+    var translateY: js.UndefOr[NumberProp] = js.undefined
     
-    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.native
+    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.undefined
     
-    var x: js.UndefOr[NumberArray] = js.native
+    var x: js.UndefOr[NumberArray] = js.undefined
     
-    var x1: js.UndefOr[NumberProp] = js.native
+    var x1: js.UndefOr[NumberProp] = js.undefined
     
-    var x2: js.UndefOr[NumberProp] = js.native
+    var x2: js.UndefOr[NumberProp] = js.undefined
     
-    var y: js.UndefOr[NumberArray] = js.native
+    var y: js.UndefOr[NumberArray] = js.undefined
     
-    var y1: js.UndefOr[NumberProp] = js.native
+    var y1: js.UndefOr[NumberProp] = js.undefined
     
-    var y2: js.UndefOr[NumberProp] = js.native
+    var y2: js.UndefOr[NumberProp] = js.undefined
   }
   object PartialLineProps {
     
@@ -812,126 +800,125 @@ object anon {
   }
   
   /* Inlined std.Partial<react-native-svg.react-native-svg.PathProps> */
-  @js.native
   trait PartialPathProps extends StObject {
     
-    var clipPath: js.UndefOr[String] = js.native
+    var clipPath: js.UndefOr[String] = js.undefined
     
-    var clipRule: js.UndefOr[FillRule] = js.native
+    var clipRule: js.UndefOr[FillRule] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var delayLongPress: js.UndefOr[Double] = js.native
+    var delayLongPress: js.UndefOr[Double] = js.undefined
     
-    var delayPressIn: js.UndefOr[Double] = js.native
+    var delayPressIn: js.UndefOr[Double] = js.undefined
     
-    var delayPressOut: js.UndefOr[Double] = js.native
+    var delayPressOut: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.native
+    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
     
-    var fillOpacity: js.UndefOr[NumberProp] = js.native
+    var fillOpacity: js.UndefOr[NumberProp] = js.undefined
     
-    var fillRule: js.UndefOr[FillRule] = js.native
+    var fillRule: js.UndefOr[FillRule] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var marker: js.UndefOr[String] = js.native
+    var marker: js.UndefOr[String] = js.undefined
     
-    var markerEnd: js.UndefOr[String] = js.native
+    var markerEnd: js.UndefOr[String] = js.undefined
     
-    var markerMid: js.UndefOr[String] = js.native
+    var markerMid: js.UndefOr[String] = js.undefined
     
-    var markerStart: js.UndefOr[String] = js.native
+    var markerStart: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var opacity: js.UndefOr[NumberProp] = js.native
+    var opacity: js.UndefOr[NumberProp] = js.undefined
     
-    var origin: js.UndefOr[NumberArray] = js.native
+    var origin: js.UndefOr[NumberArray] = js.undefined
     
-    var originX: js.UndefOr[NumberProp] = js.native
+    var originX: js.UndefOr[NumberProp] = js.undefined
     
-    var originY: js.UndefOr[NumberProp] = js.native
+    var originY: js.UndefOr[NumberProp] = js.undefined
     
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
     
-    var rotation: js.UndefOr[NumberProp] = js.native
+    var rotation: js.UndefOr[NumberProp] = js.undefined
     
-    var scale: js.UndefOr[NumberArray] = js.native
+    var scale: js.UndefOr[NumberArray] = js.undefined
     
-    var scaleX: js.UndefOr[NumberProp] = js.native
+    var scaleX: js.UndefOr[NumberProp] = js.undefined
     
-    var scaleY: js.UndefOr[NumberProp] = js.native
+    var scaleY: js.UndefOr[NumberProp] = js.undefined
     
-    var skew: js.UndefOr[NumberArray] = js.native
+    var skew: js.UndefOr[NumberArray] = js.undefined
     
-    var skewX: js.UndefOr[NumberProp] = js.native
+    var skewX: js.UndefOr[NumberProp] = js.undefined
     
-    var skewY: js.UndefOr[NumberProp] = js.native
+    var skewY: js.UndefOr[NumberProp] = js.undefined
     
-    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.native
+    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
     
-    var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.native
+    var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[NumberProp] = js.native
+    var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeLinecap: js.UndefOr[Linecap] = js.native
+    var strokeLinecap: js.UndefOr[Linecap] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[Linejoin] = js.native
+    var strokeLinejoin: js.UndefOr[Linejoin] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[NumberProp] = js.native
+    var strokeMiterlimit: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeOpacity: js.UndefOr[NumberProp] = js.native
+    var strokeOpacity: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeWidth: js.UndefOr[NumberProp] = js.native
+    var strokeWidth: js.UndefOr[NumberProp] = js.undefined
     
-    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.native
+    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.undefined
     
-    var translate: js.UndefOr[NumberArray] = js.native
+    var translate: js.UndefOr[NumberArray] = js.undefined
     
-    var translateX: js.UndefOr[NumberProp] = js.native
+    var translateX: js.UndefOr[NumberProp] = js.undefined
     
-    var translateY: js.UndefOr[NumberProp] = js.native
+    var translateY: js.UndefOr[NumberProp] = js.undefined
     
-    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.native
+    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.undefined
     
-    var x: js.UndefOr[NumberArray] = js.native
+    var x: js.UndefOr[NumberArray] = js.undefined
     
-    var y: js.UndefOr[NumberArray] = js.native
+    var y: js.UndefOr[NumberArray] = js.undefined
   }
   object PartialPathProps {
     
@@ -1328,174 +1315,173 @@ object anon {
   }
   
   /* Inlined std.Partial<react-native-svg.react-native-svg.TextProps> */
-  @js.native
   trait PartialTextProps extends StObject {
     
-    var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.native
+    var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
     
-    var baselineShift: js.UndefOr[BaselineShift] = js.native
+    var baselineShift: js.UndefOr[BaselineShift] = js.undefined
     
-    var clipPath: js.UndefOr[String] = js.native
+    var clipPath: js.UndefOr[String] = js.undefined
     
-    var clipRule: js.UndefOr[FillRule] = js.native
+    var clipRule: js.UndefOr[FillRule] = js.undefined
     
-    var delayLongPress: js.UndefOr[Double] = js.native
+    var delayLongPress: js.UndefOr[Double] = js.undefined
     
-    var delayPressIn: js.UndefOr[Double] = js.native
+    var delayPressIn: js.UndefOr[Double] = js.undefined
     
-    var delayPressOut: js.UndefOr[Double] = js.native
+    var delayPressOut: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dx: js.UndefOr[NumberArray] = js.native
+    var dx: js.UndefOr[NumberArray] = js.undefined
     
-    var dy: js.UndefOr[NumberArray] = js.native
+    var dy: js.UndefOr[NumberArray] = js.undefined
     
-    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.native
+    var fill: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
     
-    var fillOpacity: js.UndefOr[NumberProp] = js.native
+    var fillOpacity: js.UndefOr[NumberProp] = js.undefined
     
-    var fillRule: js.UndefOr[FillRule] = js.native
+    var fillRule: js.UndefOr[FillRule] = js.undefined
     
-    var font: js.UndefOr[FontObject] = js.native
+    var font: js.UndefOr[FontObject] = js.undefined
     
-    var fontData: js.UndefOr[Null | StringDictionary[js.Any]] = js.native
+    var fontData: js.UndefOr[Null | StringDictionary[js.Any]] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontFeatureSettings: js.UndefOr[String] = js.native
+    var fontFeatureSettings: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[NumberProp] = js.native
+    var fontSize: js.UndefOr[NumberProp] = js.undefined
     
-    var fontStretch: js.UndefOr[FontStretch] = js.native
+    var fontStretch: js.UndefOr[FontStretch] = js.undefined
     
-    var fontStyle: js.UndefOr[FontStyle] = js.native
+    var fontStyle: js.UndefOr[FontStyle] = js.undefined
     
-    var fontVariant: js.UndefOr[FontVariant] = js.native
+    var fontVariant: js.UndefOr[FontVariant] = js.undefined
     
-    var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.native
+    var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
     
-    var fontVariationSettings: js.UndefOr[String] = js.native
+    var fontVariationSettings: js.UndefOr[String] = js.undefined
     
-    var fontWeight: js.UndefOr[FontWeight] = js.native
+    var fontWeight: js.UndefOr[FontWeight] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inlineSize: js.UndefOr[NumberProp] = js.native
+    var inlineSize: js.UndefOr[NumberProp] = js.undefined
     
-    var kerning: js.UndefOr[NumberProp] = js.native
+    var kerning: js.UndefOr[NumberProp] = js.undefined
     
-    var lengthAdjust: js.UndefOr[LengthAdjust] = js.native
+    var lengthAdjust: js.UndefOr[LengthAdjust] = js.undefined
     
-    var letterSpacing: js.UndefOr[NumberProp] = js.native
+    var letterSpacing: js.UndefOr[NumberProp] = js.undefined
     
-    var marker: js.UndefOr[String] = js.native
+    var marker: js.UndefOr[String] = js.undefined
     
-    var markerEnd: js.UndefOr[String] = js.native
+    var markerEnd: js.UndefOr[String] = js.undefined
     
-    var markerMid: js.UndefOr[String] = js.native
+    var markerMid: js.UndefOr[String] = js.undefined
     
-    var markerStart: js.UndefOr[String] = js.native
+    var markerStart: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
-    var opacity: js.UndefOr[NumberProp] = js.native
+    var opacity: js.UndefOr[NumberProp] = js.undefined
     
-    var origin: js.UndefOr[NumberArray] = js.native
+    var origin: js.UndefOr[NumberArray] = js.undefined
     
-    var originX: js.UndefOr[NumberProp] = js.native
+    var originX: js.UndefOr[NumberProp] = js.undefined
     
-    var originY: js.UndefOr[NumberProp] = js.native
+    var originY: js.UndefOr[NumberProp] = js.undefined
     
-    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+    var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
     
-    var rotate: js.UndefOr[NumberArray] = js.native
+    var rotate: js.UndefOr[NumberArray] = js.undefined
     
-    var rotation: js.UndefOr[NumberProp] = js.native
+    var rotation: js.UndefOr[NumberProp] = js.undefined
     
-    var scale: js.UndefOr[NumberArray] = js.native
+    var scale: js.UndefOr[NumberArray] = js.undefined
     
-    var scaleX: js.UndefOr[NumberProp] = js.native
+    var scaleX: js.UndefOr[NumberProp] = js.undefined
     
-    var scaleY: js.UndefOr[NumberProp] = js.native
+    var scaleY: js.UndefOr[NumberProp] = js.undefined
     
-    var skew: js.UndefOr[NumberArray] = js.native
+    var skew: js.UndefOr[NumberArray] = js.undefined
     
-    var skewX: js.UndefOr[NumberProp] = js.native
+    var skewX: js.UndefOr[NumberProp] = js.undefined
     
-    var skewY: js.UndefOr[NumberProp] = js.native
+    var skewY: js.UndefOr[NumberProp] = js.undefined
     
-    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.native
+    var stroke: js.UndefOr[typings.reactNativeSvg.mod.Color] = js.undefined
     
-    var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.native
+    var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[NumberProp] = js.native
+    var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeLinecap: js.UndefOr[Linecap] = js.native
+    var strokeLinecap: js.UndefOr[Linecap] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[Linejoin] = js.native
+    var strokeLinejoin: js.UndefOr[Linejoin] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[NumberProp] = js.native
+    var strokeMiterlimit: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeOpacity: js.UndefOr[NumberProp] = js.native
+    var strokeOpacity: js.UndefOr[NumberProp] = js.undefined
     
-    var strokeWidth: js.UndefOr[NumberProp] = js.native
+    var strokeWidth: js.UndefOr[NumberProp] = js.undefined
     
-    var textAnchor: js.UndefOr[TextAnchor] = js.native
+    var textAnchor: js.UndefOr[TextAnchor] = js.undefined
     
-    var textDecoration: js.UndefOr[TextDecoration] = js.native
+    var textDecoration: js.UndefOr[TextDecoration] = js.undefined
     
-    var textLength: js.UndefOr[NumberProp] = js.native
+    var textLength: js.UndefOr[NumberProp] = js.undefined
     
-    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.native
+    var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.undefined
     
-    var translate: js.UndefOr[NumberArray] = js.native
+    var translate: js.UndefOr[NumberArray] = js.undefined
     
-    var translateX: js.UndefOr[NumberProp] = js.native
+    var translateX: js.UndefOr[NumberProp] = js.undefined
     
-    var translateY: js.UndefOr[NumberProp] = js.native
+    var translateY: js.UndefOr[NumberProp] = js.undefined
     
-    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.native
+    var vectorEffect: js.UndefOr[none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri] = js.undefined
     
-    var verticalAlign: js.UndefOr[NumberProp] = js.native
+    var verticalAlign: js.UndefOr[NumberProp] = js.undefined
     
-    var wordSpacing: js.UndefOr[NumberProp] = js.native
+    var wordSpacing: js.UndefOr[NumberProp] = js.undefined
     
-    var x: js.UndefOr[NumberArray] = js.native
+    var x: js.UndefOr[NumberArray] = js.undefined
     
-    var y: js.UndefOr[NumberArray] = js.native
+    var y: js.UndefOr[NumberArray] = js.undefined
   }
   object PartialTextProps {
     
@@ -2050,12 +2036,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Top extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Top {
     

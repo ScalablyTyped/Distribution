@@ -3,42 +3,35 @@ package typings.nspell
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(aff: String): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(aff: String, dic: String): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(aff: String, dic: Buffer): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(aff: Buffer): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(aff: Buffer, dic: String): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(aff: Buffer, dic: Buffer): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(dictionary: js.Array[Dictionary]): NSpell = js.native
-  @JSImport("nspell", JSImport.Namespace)
-  @js.native
-  def apply(dictionary: Dictionary): NSpell = js.native
+  @scala.inline
+  def apply(aff: String): NSpell = ^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(aff: String, dic: String): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(aff: String, dic: Buffer): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(aff: Buffer): NSpell = ^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(aff: Buffer, dic: String): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(aff: Buffer, dic: Buffer): NSpell = (^.asInstanceOf[js.Dynamic].apply(aff.asInstanceOf[js.Any], dic.asInstanceOf[js.Any])).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(dictionary: js.Array[Dictionary]): NSpell = ^.asInstanceOf[js.Dynamic].apply(dictionary.asInstanceOf[js.Any]).asInstanceOf[NSpell]
+  @scala.inline
+  def apply(dictionary: Dictionary): NSpell = ^.asInstanceOf[js.Dynamic].apply(dictionary.asInstanceOf[js.Any]).asInstanceOf[NSpell]
   
   /**
     * Describes instance of NSpell, which is returned by the default factory function.
     */
   @JSImport("nspell", JSImport.Namespace)
   @js.native
-  class ^ protected () extends NSpell {
+  class ^ protected ()
+    extends StObject
+       with NSpell {
     def this(aff: String) = this()
     def this(aff: Buffer) = this()
     def this(dictionary: js.Array[Dictionary]) = this()
@@ -48,13 +41,15 @@ object mod {
     def this(aff: Buffer, dic: String) = this()
     def this(aff: Buffer, dic: Buffer) = this()
   }
-  
+  @JSImport("nspell", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Dictionary extends StObject {
     
-    var aff: Buffer | String = js.native
+    var aff: Buffer | String
     
-    var dic: js.UndefOr[Buffer | String] = js.native
+    var dic: js.UndefOr[Buffer | String] = js.undefined
   }
   object Dictionary {
     
@@ -145,14 +140,13 @@ object mod {
     * @param - forbidden - Whether word is actually correct, but forbidden from showing up as such (often by the users wish)
     * @param warn - Whether word is correct, but should trigger a warning (rarely used in dictionaries)
     */
-  @js.native
   trait SpellCheck extends StObject {
     
-    var correct: Boolean = js.native
+    var correct: Boolean
     
-    var forbidden: Boolean = js.native
+    var forbidden: Boolean
     
-    var warn: Boolean = js.native
+    var warn: Boolean
   }
   object SpellCheck {
     

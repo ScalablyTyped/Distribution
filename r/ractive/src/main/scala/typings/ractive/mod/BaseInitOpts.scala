@@ -3,89 +3,89 @@ package typings.ractive.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseInitOpts[T /* <: Ractive[T] */] extends BaseParseOpts {
+trait BaseInitOpts[T /* <: Ractive[T] */]
+  extends StObject
+     with BaseParseOpts {
   
   /** Adaptors to be applied. */
-  var adapt: js.UndefOr[js.Array[Adaptor | String]] = js.native
+  var adapt: js.UndefOr[js.Array[Adaptor | String]] = js.undefined
   
   /** A map of adaptors. */
-  var adaptors: js.UndefOr[Registry[Adaptor]] = js.native
+  var adaptors: js.UndefOr[Registry[Adaptor]] = js.undefined
   
   /** If set to false, disallow expressions in the template. */
-  var allowExpressions: js.UndefOr[Boolean] = js.native
+  var allowExpressions: js.UndefOr[Boolean] = js.undefined
   
   /** If true, this instance can occupy the target element with other existing instances rather than cause them to unrender. */
-  var append: js.UndefOr[Boolean] = js.native
+  var append: js.UndefOr[Boolean] = js.undefined
   
   /* A map of components */
-  var components: js.UndefOr[Registry[Component]] = js.native
+  var components: js.UndefOr[Registry[Component]] = js.undefined
   
   /** A map of computations */
-  var computed: js.UndefOr[StringDictionary[Computation[T]]] = js.native
+  var computed: js.UndefOr[StringDictionary[Computation[T]]] = js.undefined
   
   /** A map of decorators */
-  var decorators: js.UndefOr[Registry[Decorator[T]]] = js.native
+  var decorators: js.UndefOr[Registry[Decorator[T]]] = js.undefined
   
   /** Whether or not to use event delegation around suitabe iterative sections. Defaults to true. */
-  var delegate: js.UndefOr[Boolean] = js.native
+  var delegate: js.UndefOr[Boolean] = js.undefined
   
   /** A map of easings */
-  var easing: js.UndefOr[Registry[Easing]] = js.native
+  var easing: js.UndefOr[Registry[Easing]] = js.undefined
   
   /** A map of custom events */
-  var events: js.UndefOr[Registry[EventPlugin[T]]] = js.native
+  var events: js.UndefOr[Registry[EventPlugin[T]]] = js.undefined
   
   /** A map of helper functions */
-  var helpers: js.UndefOr[Registry[Helper]] = js.native
+  var helpers: js.UndefOr[Registry[Helper]] = js.undefined
   
   /** A map of interpolators for use with animate */
-  var interpolators: js.UndefOr[Registry[Interpolator]] = js.native
+  var interpolators: js.UndefOr[Registry[Interpolator]] = js.undefined
   
   /** Whether or not twoway bindings default to lazy. */
-  var `lazy`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not an element can transition if one of its parent elements is also transitioning. */
-  var nestedTransitions: js.UndefOr[Boolean] = js.native
+  var nestedTransitions: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to skip element intro transitions when the instance is being renered initially. */
-  var noIntro: js.UndefOr[Boolean] = js.native
+  var noIntro: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to skip outro transitions when the instance is being unrendered. */
-  var noOutro: js.UndefOr[Boolean] = js.native
+  var noOutro: js.UndefOr[Boolean] = js.undefined
   
   /** A map of observers */
-  var observe: js.UndefOr[Registry[ObserverCallback[T] | ObserverDescriptor[T]]] = js.native
+  var observe: js.UndefOr[Registry[ObserverCallback[T] | ObserverDescriptor[T]]] = js.undefined
   
   /** A map of event listeners */
-  var on: js.UndefOr[Registry[ListenerCallback[T] | ListenerDescriptor[T]]] = js.native
+  var on: js.UndefOr[Registry[ListenerCallback[T] | ListenerDescriptor[T]]] = js.undefined
   
   /** A map of partials */
-  var partials: js.UndefOr[Registry[Partial]] = js.native
+  var partials: js.UndefOr[Registry[Partial]] = js.undefined
   
   /** Whether or not to consider instance memners like set when resolving values in the template. */
-  var resolveInstanceMembers: js.UndefOr[Boolean] = js.native
+  var resolveInstanceMembers: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to invalidate computation dependencies when a computed value or one of its children is set. */
-  var syncComputedChildren: js.UndefOr[Boolean] = js.native
+  var syncComputedChildren: js.UndefOr[Boolean] = js.undefined
   
   /** The template to use when rendering. */
-  var template: js.UndefOr[Template] = js.native
+  var template: js.UndefOr[Template] = js.undefined
   
   /** A map of transitions */
-  var transitions: js.UndefOr[Registry[Transition]] = js.native
+  var transitions: js.UndefOr[Registry[Transition]] = js.undefined
   
   /** Whether or not to use transitions as elements are added and removed from the DOM. */
-  var transitionsEnabled: js.UndefOr[Boolean] = js.native
+  var transitionsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to use twoway bindings by default. */
-  var twoway: js.UndefOr[Boolean] = js.native
+  var twoway: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to issue a warning when an ambiguous reference fails to resolve to the immediate context. */
-  var warnAboutAmbiguity: js.UndefOr[Boolean] = js.native
+  var warnAboutAmbiguity: js.UndefOr[Boolean] = js.undefined
 }
 object BaseInitOpts {
   
@@ -96,7 +96,7 @@ object BaseInitOpts {
   }
   
   @scala.inline
-  implicit class BaseInitOptsMutableBuilder[Self <: BaseInitOpts[_], T /* <: Ractive[T] */] (val x: Self with BaseInitOpts[T]) extends AnyVal {
+  implicit class BaseInitOptsMutableBuilder[Self <: BaseInitOpts[?], T /* <: Ractive[T] */] (val x: Self & BaseInitOpts[T]) extends AnyVal {
     
     @scala.inline
     def setAdapt(value: js.Array[Adaptor | String]): Self = StObject.set(x, "adapt", value.asInstanceOf[js.Any])

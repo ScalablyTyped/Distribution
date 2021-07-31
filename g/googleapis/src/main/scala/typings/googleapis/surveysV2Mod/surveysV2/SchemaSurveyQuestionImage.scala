@@ -2,30 +2,28 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container object for image data and alt_text.
   */
-@js.native
 trait SchemaSurveyQuestionImage extends StObject {
   
   /**
     * The alt text property used in image tags is required for all images.
     */
-  var altText: js.UndefOr[String] = js.native
+  var altText: js.UndefOr[String] = js.undefined
   
   /**
     * Inline jpeg, gif, tiff, bmp, or png image raw bytes for an image question
     * types.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only URL for the hosted images.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaSurveyQuestionImage {
   

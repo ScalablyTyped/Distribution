@@ -2,24 +2,24 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // SelectMenu //////////////////////////////////////////////////
-@js.native
-trait SelectMenuOptions extends SelectMenuEvents {
+trait SelectMenuOptions
+  extends StObject
+     with SelectMenuEvents {
   
-  var appendTo: js.UndefOr[String] = js.native
+  var appendTo: js.UndefOr[String] = js.undefined
   
-  var classes: js.UndefOr[SelectMenuClasses] = js.native
+  var classes: js.UndefOr[SelectMenuClasses] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var position: js.UndefOr[JQueryPositionOptions] = js.native
+  var position: js.UndefOr[JQueryPositionOptions] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SelectMenuOptions {
   

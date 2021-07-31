@@ -4,59 +4,59 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.ckeditorNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait dtdDefinition extends /* outerTagName */ StringDictionary[StringDictionary[`1`]] {
+trait dtdDefinition
+  extends StObject
+     with /* outerTagName */ StringDictionary[StringDictionary[`1`]] {
   
   @JSName("$block")
-  var $block: StringDictionary[`1`] = js.native
+  var $block: StringDictionary[`1`]
   
   @JSName("$blockLimit")
-  var $blockLimit: StringDictionary[`1`] = js.native
+  var $blockLimit: StringDictionary[`1`]
   
   @JSName("$cdata")
-  var $cdata: StringDictionary[`1`] = js.native
+  var $cdata: StringDictionary[`1`]
   
   @JSName("$editable")
-  var $editable: StringDictionary[`1`] = js.native
+  var $editable: StringDictionary[`1`]
   
   @JSName("$empty")
-  var $empty: StringDictionary[`1`] = js.native
+  var $empty: StringDictionary[`1`]
   
   @JSName("$inline")
-  var $inline: StringDictionary[`1`] = js.native
+  var $inline: StringDictionary[`1`]
   
   @JSName("$intermediate")
-  var $intermediate: StringDictionary[`1`] = js.native
+  var $intermediate: StringDictionary[`1`]
   
   @JSName("$list")
-  var $list: StringDictionary[`1`] = js.native
+  var $list: StringDictionary[`1`]
   
   @JSName("$listItem")
-  var $listItem: StringDictionary[`1`] = js.native
+  var $listItem: StringDictionary[`1`]
   
   @JSName("$nonBodyContent")
-  var $nonBodyContent: StringDictionary[`1`] = js.native
+  var $nonBodyContent: StringDictionary[`1`]
   
   @JSName("$nonEditable")
-  var $nonEditable: StringDictionary[`1`] = js.native
+  var $nonEditable: StringDictionary[`1`]
   
   @JSName("$object")
-  var $object: StringDictionary[`1`] = js.native
+  var $object: StringDictionary[`1`]
   
   @JSName("$removeEmpty")
-  var $removeEmpty: StringDictionary[`1`] = js.native
+  var $removeEmpty: StringDictionary[`1`]
   
   @JSName("$tabIndex")
-  var $tabIndex: StringDictionary[`1`] = js.native
+  var $tabIndex: StringDictionary[`1`]
   
   @JSName("$tableContent")
-  var $tableContent: StringDictionary[`1`] = js.native
+  var $tableContent: StringDictionary[`1`]
   
   @JSName("$transparent")
-  var $transparent: StringDictionary[`1`] = js.native
+  var $transparent: StringDictionary[`1`]
 }
 object dtdDefinition {
   

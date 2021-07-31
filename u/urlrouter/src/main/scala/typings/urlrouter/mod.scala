@@ -4,77 +4,76 @@ import typings.node.httpMod.IncomingMessage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(handler: js.Function1[/* app */ App, Unit]): HttpHandler = ^.asInstanceOf[js.Dynamic].apply(handler.asInstanceOf[js.Any]).asInstanceOf[HttpHandler]
+  
   @JSImport("urlrouter", JSImport.Namespace)
   @js.native
-  def apply(handler: js.Function1[/* app */ App, Unit]): HttpHandler = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("urlrouter", "_UrlRouterfunc")
-  @js.native
-  def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit]): Unit = js.native
-  @JSImport("urlrouter", "_UrlRouterfunc")
-  @js.native
-  def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit], options: js.Any): Unit = js.native
+  @scala.inline
+  def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_UrlRouterfunc")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def UrlRouterfunc(handler: js.Function1[/* app */ App, Unit], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_UrlRouterfunc")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait App extends StObject {
     
-    def all(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def all(urlpattern: String, handler: HttpHandler): Unit
     
-    def checkout(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def checkout(urlpattern: String, handler: HttpHandler): Unit
     
-    def copy(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def copy(urlpattern: String, handler: HttpHandler): Unit
     
-    def delete(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def delete(urlpattern: String, handler: HttpHandler): Unit
     
     // https://github.com/visionmedia/node-methods/blob/master/index.js
-    def get(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def get(urlpattern: String, handler: HttpHandler): Unit
     
-    def head(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def head(urlpattern: String, handler: HttpHandler): Unit
     
-    def lock(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def lock(urlpattern: String, handler: HttpHandler): Unit
     
-    def `m-search`(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def `m-search`(urlpattern: String, handler: HttpHandler): Unit
     
-    def merge(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def merge(urlpattern: String, handler: HttpHandler): Unit
     
-    def mkactivity(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def mkactivity(urlpattern: String, handler: HttpHandler): Unit
     
-    def mkcol(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def mkcol(urlpattern: String, handler: HttpHandler): Unit
     
-    def move(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def move(urlpattern: String, handler: HttpHandler): Unit
     
-    def notify(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def notify(urlpattern: String, handler: HttpHandler): Unit
     
-    def options(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def options(urlpattern: String, handler: HttpHandler): Unit
     
-    def patch(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def patch(urlpattern: String, handler: HttpHandler): Unit
     
-    def post(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def post(urlpattern: String, handler: HttpHandler): Unit
     
-    def propfind(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def propfind(urlpattern: String, handler: HttpHandler): Unit
     
-    def proppatch(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def proppatch(urlpattern: String, handler: HttpHandler): Unit
     
-    def put(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def put(urlpattern: String, handler: HttpHandler): Unit
     
-    def redirect(urlpattern: String, to: String): Unit = js.native
+    def redirect(urlpattern: String, to: String): Unit
     
-    def report(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def report(urlpattern: String, handler: HttpHandler): Unit
     
-    def search(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def search(urlpattern: String, handler: HttpHandler): Unit
     
-    def subscribe(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def subscribe(urlpattern: String, handler: HttpHandler): Unit
     
-    def trace(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def trace(urlpattern: String, handler: HttpHandler): Unit
     
-    def unlock(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def unlock(urlpattern: String, handler: HttpHandler): Unit
     
-    def unsubscribe(urlpattern: String, handler: HttpHandler): Unit = js.native
+    def unsubscribe(urlpattern: String, handler: HttpHandler): Unit
   }
   object App {
     
@@ -203,16 +202,15 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Options extends StObject {
     
     var errorHandler: js.UndefOr[
         js.Function3[/* err */ Error, /* req */ ServerRequest, /* res */ ServerResponse, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var pageNotFound: js.UndefOr[js.Function2[/* req */ ServerRequest, /* res */ ServerResponse, Unit]] = js.native
+    var pageNotFound: js.UndefOr[js.Function2[/* req */ ServerRequest, /* res */ ServerResponse, Unit]] = js.undefined
     
-    var paramsName: js.UndefOr[String] = js.native
+    var paramsName: js.UndefOr[String] = js.undefined
   }
   object Options {
     

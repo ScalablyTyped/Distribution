@@ -2,13 +2,11 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseResizeColumnsColumnOptions[D /* <: js.Object */] extends StObject {
   
-  var disableResizing: js.UndefOr[Boolean] = js.native
+  var disableResizing: js.UndefOr[Boolean] = js.undefined
 }
 object UseResizeColumnsColumnOptions {
   
@@ -19,7 +17,7 @@ object UseResizeColumnsColumnOptions {
   }
   
   @scala.inline
-  implicit class UseResizeColumnsColumnOptionsMutableBuilder[Self <: UseResizeColumnsColumnOptions[_], D /* <: js.Object */] (val x: Self with UseResizeColumnsColumnOptions[D]) extends AnyVal {
+  implicit class UseResizeColumnsColumnOptionsMutableBuilder[Self <: UseResizeColumnsColumnOptions[?], D /* <: js.Object */] (val x: Self & UseResizeColumnsColumnOptions[D]) extends AnyVal {
     
     @scala.inline
     def setDisableResizing(value: Boolean): Self = StObject.set(x, "disableResizing", value.asInstanceOf[js.Any])

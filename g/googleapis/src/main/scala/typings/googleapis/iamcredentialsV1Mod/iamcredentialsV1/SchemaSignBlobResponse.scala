@@ -2,21 +2,19 @@ package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSignBlobResponse extends StObject {
   
   /**
     * The ID of the key used to sign the blob.
     */
-  var keyId: js.UndefOr[String] = js.native
+  var keyId: js.UndefOr[String] = js.undefined
   
   /**
     * The signed blob.
     */
-  var signedBlob: js.UndefOr[String] = js.native
+  var signedBlob: js.UndefOr[String] = js.undefined
 }
 object SchemaSignBlobResponse {
   

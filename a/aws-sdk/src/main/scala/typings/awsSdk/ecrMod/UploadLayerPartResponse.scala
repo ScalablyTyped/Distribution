@@ -2,31 +2,29 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadLayerPartResponse extends StObject {
   
   /**
     * The integer value of the last byte received in the request.
     */
-  var lastByteReceived: js.UndefOr[PartSize] = js.native
+  var lastByteReceived: js.UndefOr[PartSize] = js.undefined
   
   /**
     * The registry ID associated with the request.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The repository name associated with the request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
   
   /**
     * The upload ID associated with the request.
     */
-  var uploadId: js.UndefOr[UploadId] = js.native
+  var uploadId: js.UndefOr[UploadId] = js.undefined
 }
 object UploadLayerPartResponse {
   

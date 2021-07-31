@@ -5,14 +5,15 @@ import typings.plottable.interfacesMod.IEntityBounds
 import typings.plottable.interfacesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityStoreMod {
   
   @JSImport("plottable/build/src/utils/entityStore", "EntityStore")
   @js.native
-  class EntityStore[T /* <: IPositionedEntity */] () extends IEntityStore[T] {
+  class EntityStore[T /* <: IPositionedEntity */] ()
+    extends StObject
+       with IEntityStore[T] {
     
     var _entities: js.Any = js.native
     
@@ -103,10 +104,9 @@ object entityStoreMod {
     def entityNearestY(point: Point): T = js.native
   }
   
-  @js.native
   trait IPositionedEntity extends StObject {
     
-    var position: Point = js.native
+    var position: Point
   }
   object IPositionedEntity {
     

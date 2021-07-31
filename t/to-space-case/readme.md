@@ -12,7 +12,7 @@ Convert a string to space case.
 | Keywords           | camel, case, slug, space, spacecase, string |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 28585116 |
+| # downloads        | 32104518 |
 | # stars            | 2 |
 
 ## Links

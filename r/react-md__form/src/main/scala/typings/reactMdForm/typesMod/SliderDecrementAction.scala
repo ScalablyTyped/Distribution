@@ -3,24 +3,23 @@ package typings.reactMdForm.typesMod
 import typings.reactMdForm.reactMdFormStrings.decrement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderDecrementAction
-  extends SliderStepParts
+  extends StObject
+     with SliderStepParts
      with SliderAction {
   
-  var dragging: Boolean = js.native
+  var dragging: Boolean
   
-  var `type`: decrement = js.native
+  var `type`: decrement
 }
 object SliderDecrementAction {
   
   @scala.inline
-  def apply(dragging: Boolean, max: Double, min: Double, step: Double, `type`: decrement): SliderDecrementAction = {
+  def apply(dragging: Boolean, max: Double, min: Double, step: Double): SliderDecrementAction = {
     val __obj = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("decrement")
     __obj.asInstanceOf[SliderDecrementAction]
   }
   

@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDirectoryLimitsResult extends StObject {
   
   /**
     * A DirectoryLimits object that contains the directory limits for the current rRegion.
     */
-  var DirectoryLimits: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryLimits] = js.native
+  var DirectoryLimits: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryLimits] = js.undefined
 }
 object GetDirectoryLimitsResult {
   

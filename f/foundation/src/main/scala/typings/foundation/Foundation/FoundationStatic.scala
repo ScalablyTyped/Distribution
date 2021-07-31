@@ -6,7 +6,6 @@ import typings.foundation.anon.Namespace
 import typings.std.CSSStyleSheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,7 +20,7 @@ trait FoundationStatic extends StObject {
   def init(scope: JQuery, libraries: String, method: Options): JQuery = js.native
   def init(scope: JQuery, libraries: Options): JQuery = js.native
   
-  def init_lib(lib: js.Any, args: js.Any): js.Function1[/* repeated */ js.Any, _] = js.native
+  def init_lib(lib: js.Any, args: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   
   var libs: js.Any = js.native
   

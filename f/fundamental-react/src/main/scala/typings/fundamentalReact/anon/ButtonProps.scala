@@ -3,23 +3,21 @@ package typings.fundamentalReact.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonProps extends StObject {
   
-  var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var labelProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
 }
 object ButtonProps {
   

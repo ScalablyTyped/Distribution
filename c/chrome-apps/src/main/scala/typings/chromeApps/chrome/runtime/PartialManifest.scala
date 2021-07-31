@@ -29,10 +29,8 @@ import typings.chromeApps.chromeAppsStrings.new_note_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialManifest extends StObject {
   
   //////////////
@@ -48,7 +46,7 @@ trait PartialManifest extends StObject {
     * @example
     * 'action_handlers': ['new_note']
     */
-  var action_handlers: js.UndefOr[js.Array[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]]] = js.native
+  var action_handlers: js.UndefOr[js.Array[ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]]]] = js.undefined
   
   //////////////
   // REQUIRED //
@@ -58,19 +56,19 @@ trait PartialManifest extends StObject {
     * Also used by hosted apps to specify the URLs that the app uses.
     * @required
     */
-  var app: Background = js.native
+  var app: Background
   
   /**
     * App author information
     * @see[Not implemented anywhere in code]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L46}
     */
-  var author: js.UndefOr[Email | js.Any] = js.native
+  var author: js.UndefOr[Email | js.Any] = js.undefined
   
   /**
     * Allows inspection of page contents, not enabled on stable anyways except for whitelist.
     * @see[Docs]{@link https://github.com/chromium/chromium/blob/master/extensions/common/manifest_handlers/automation.cc}
     */
-  var automation: js.UndefOr[AutomationOptions | Boolean] = js.native
+  var automation: js.UndefOr[AutomationOptions | Boolean] = js.undefined
   
   /**
     * Note: The 'bluetooth' manifest permission is used by the
@@ -78,18 +76,18 @@ trait PartialManifest extends StObject {
     * chrome.bluetoothLowEnergy APIs.
     * @requires Platforms: Chrome OS, Windows and Mac
     */
-  var bluetooth: js.UndefOr[Lowenergy] = js.native
+  var bluetooth: js.UndefOr[Lowenergy] = js.undefined
   
   /**
     * Use the commands API to add keyboard shortcuts that trigger actions in your app.
     * E.g. an action to open the browser action or send a command to the app.
     */
-  var commands: js.UndefOr[StringDictionary[Global]] = js.native
+  var commands: js.UndefOr[StringDictionary[Global]] = js.undefined
   
   /**
     * An implementation detail (actually written by Chrome, not the app author).
     */
-  val current_locale: js.UndefOr[String] = js.native
+  val current_locale: js.UndefOr[String] = js.undefined
   
   /////////////////
   // RECOMMENDED //
@@ -100,7 +98,7 @@ trait PartialManifest extends StObject {
     * apps that have no _locales directory. For details, see Internationalization:
     * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
     */
-  var default_locale: js.UndefOr[String] = js.native
+  var default_locale: js.UndefOr[String] = js.undefined
   
   /**
     * A plain text string (no HTML or other formatting; no more than 132 characters)
@@ -109,13 +107,13 @@ trait PartialManifest extends StObject {
     * locale-specific strings for this field; see Internationalization for details.
     * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Restricted to whitelist */
-  var display_in_launcher: js.UndefOr[Boolean] = js.native
+  var display_in_launcher: js.UndefOr[Boolean] = js.undefined
   
   /** Restricted to whitelist */
-  var display_in_new_tab_page: js.UndefOr[Boolean] = js.native
+  var display_in_new_tab_page: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The *event_rules* manifest property provides a mechanism to add rules that
@@ -124,30 +122,30 @@ trait PartialManifest extends StObject {
     * to read the page's content using **declarativeContent**.
     * @see[event_rules docs]{@link https://developer.chrome.com/extensions/manifest/event_rules}
     */
-  var event_rules: js.UndefOr[js.Array[Actions]] = js.native
+  var event_rules: js.UndefOr[js.Array[Actions]] = js.undefined
   
   /**
     * Declares which extensions, apps, and web pages can connect
     * to your extension via runtime.connect and runtime.sendMessage.
     */
-  var externally_connectable: Accepttlschannelid = js.native
+  var externally_connectable: Accepttlschannelid
   
   /**
     * @requires Permissions: 'fileBrowserHandle'
     * @requires Location': 'component'
     * You can specify locale-specific strings for the value of 'default_title'
     */
-  var file_browser_handlers: js.UndefOr[js.Array[Defaulticon]] = js.native
+  var file_browser_handlers: js.UndefOr[js.Array[Defaulticon]] = js.undefined
   
   /**
     * Triggers a launch of the app when one of these files are handled.
     */
-  var file_handlers: js.UndefOr[StringDictionary[Extensions]] = js.native
+  var file_handlers: js.UndefOr[StringDictionary[Extensions]] = js.undefined
   
   /**
     * Files app uses above information in order to render related UI elements approprietly.
     */
-  var file_system_provider_capabilities: js.UndefOr[Configurable] = js.native
+  var file_system_provider_capabilities: js.UndefOr[Configurable] = js.undefined
   
   /**
     * One or more icons that represent the extension, app, or theme.
@@ -170,16 +168,16 @@ trait PartialManifest extends StObject {
     *            '48': 'icon48.png',
     *            '128': 'icon128.png' },
     */
-  var icons: js.UndefOr[ManifestIcons] = js.native
+  var icons: js.UndefOr[ManifestIcons] = js.undefined
   
   /**
     * Import resources from another extension / app.
     * @see[Shared modules]{@link https://developer.chrome.com/apps/shared_modules}
     */
-  var `import`: js.UndefOr[js.Array[Id]] = js.native
+  var `import`: js.UndefOr[js.Array[Id]] = js.undefined
   
   /** This value can be used to control the unique ID of an app when it is loaded during development. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * One integer specifying the version of the manifest file format your package requires.
@@ -187,17 +185,17 @@ trait PartialManifest extends StObject {
     * @see[Manifest Version Info]{@link https://developer.chrome.com/apps/manifest/manifest_version}
     * @required
     */
-  var manifest_version: `2` = js.native
+  var manifest_version: `2`
   
   /**
     * The minimum version of Chrome that your app, if any.
     * @example
     * 'minimum_chrome_version': '33.0.1715.0'
     */
-  var minimum_chrome_version: js.UndefOr[String] = js.native
+  var minimum_chrome_version: js.UndefOr[String] = js.undefined
   
   /** One or more mappings from MIME types to the Native Client module that handles each type. */
-  var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.native
+  var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.undefined
   
   /**
     * The *name* (maximum of 45 characters) is the primary identifier
@@ -212,41 +210,41 @@ trait PartialManifest extends StObject {
     * @required
     * @requires string - Maximum 45 characters!
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Use the Chrome Identity API to authenticate users:
     * the getAuthToken for users logged into their Google Account
     * and the launchWebAuthFlow for users logged into a non-Google account.
     */
-  var oauth2: js.UndefOr[Clientid] = js.native
+  var oauth2: js.UndefOr[Clientid] = js.undefined
   
   /**
     * Whether the app is expected to work offline.
     * When Chrome detects that it is offline, apps with this field set to true will be highlighted on the New Tab page.
     */
-  var offline_enabled: js.UndefOr[Boolean] = js.native
+  var offline_enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use the chrome.permissions API to request declared optional permissions
     * at run time rather than install time, so users understand why the
     * permissions are needed and grant only those that are necessary.
     */
-  var optional_permissions: js.UndefOr[js.Array[js.Array[UrlMatches] | OptionalPermission | String]] = js.native
+  var optional_permissions: js.UndefOr[js.Array[js.Array[UrlMatches] | OptionalPermission | String]] = js.undefined
   
   /**
     * Permissions help to limit damage if your app is compromised by malware.
     * Some permissions are also displayed to users before installation,
     * as detailed in Permission Warnings.
     */
-  var permissions: js.UndefOr[js.Array[Permission | String]] = js.native
+  var permissions: js.UndefOr[js.Array[Permission | String]] = js.undefined
   
   /**
     * Native Client
     * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
     * @see[Chromium Source]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py}
     */
-  var platforms: js.UndefOr[js.Array[Naclarch]] = js.native
+  var platforms: js.UndefOr[js.Array[Naclarch]] = js.undefined
   
   /**
     * Technologies required by the app. Hosting sites such
@@ -256,7 +254,7 @@ trait PartialManifest extends StObject {
     * include '3D' and 'plugins'; additional requirements checks
     * may be added in the future.
     */
-  var requirements: js.UndefOr[`3D`] = js.native
+  var requirements: js.UndefOr[`3D`] = js.undefined
   
   /**
     * @deprecated
@@ -264,7 +262,7 @@ trait PartialManifest extends StObject {
     * (including embedded frames and scripts) inside sandboxed pages.
     * Please use a webview instead.
     */
-  var sandbox: js.UndefOr[Contentsecuritypolicy] = js.native
+  var sandbox: js.UndefOr[Contentsecuritypolicy] = js.undefined
   
   /**
     * The short_name (maximum of 12 characters recommended) is
@@ -278,16 +276,16 @@ trait PartialManifest extends StObject {
     * You can specify locale-specific strings, see Internationalization docs:
     * @see[Internationalization]{@see https://developer.chrome.com/extensions/i18n}
     */
-  var short_name: js.UndefOr[String] = js.native
+  var short_name: js.UndefOr[String] = js.undefined
   
   /** Doc missing. Declared as a feature, but unused. */
-  var signature: js.UndefOr[js.Any] = js.native
+  var signature: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The sockets manifest property declares which permissions are available
     * for the sockets.udp, sockets.tcp and sockets.tcpServer APIs.
     */
-  var sockets: js.UndefOr[Tcp] = js.native
+  var sockets: js.UndefOr[Tcp] = js.undefined
   
   /**
     * Unlike the local and sync storage areas,
@@ -302,7 +300,7 @@ trait PartialManifest extends StObject {
     * After declaring the policies they can be read from the storage.managed API.
     * It's up to the app to enforce the policies configured by the administrator.
     */
-  var storage: js.UndefOr[Managedschema] = js.native
+  var storage: js.UndefOr[Managedschema] = js.undefined
   
   // system_indicator?: any; // Deprecated / removed: https://bugs.chromium.org/p/chromium/issues/detail?id=142450
   /**
@@ -315,7 +313,7 @@ trait PartialManifest extends StObject {
     * (@see[Protecting Windows users from malicious extensions]{@link http://blog.chromium.org/2013/11/protecting-windows-users-from-malicious.html}).
     * @see[Documentation]{@link https://developer.chrome.com/apps/autoupdate}
     */
-  var update_url: js.UndefOr[String] = js.native
+  var update_url: js.UndefOr[String] = js.undefined
   
   /**
     * Used by packaged apps to specify URL patterns the app wants to intercept and handle.
@@ -332,10 +330,10 @@ trait PartialManifest extends StObject {
     * @see[Documentation]{@link https://developer.chrome.com/apps/manifest/url_handlers}
     *
     */
-  var url_handlers: js.UndefOr[StringDictionary[Matches]] = js.native
+  var url_handlers: js.UndefOr[StringDictionary[Matches]] = js.undefined
   
   /** The usbPrinters manifest property declares which USB printers are supported by an app using the printerProvider API. */
-  var usb_printers: js.UndefOr[FiltersArray] = js.native
+  var usb_printers: js.UndefOr[FiltersArray] = js.undefined
   
   /**
     * One to four dot-separated integers identifying the version of this app.
@@ -345,7 +343,7 @@ trait PartialManifest extends StObject {
     * @see[Manifest- Version Docs]{@link https://developer.chrome.com/apps/manifest/version}
     * @required
     */
-  var version: String = js.native
+  var version: String
   
   /**
     * version_name can be set to a descriptive version string and will be used for display purposes if present.
@@ -355,7 +353,7 @@ trait PartialManifest extends StObject {
     * 'version_name': 'build rc3'
     * 'version_name': 'Gold Edition'
     */
-  var version_name: js.UndefOr[String] = js.native
+  var version_name: js.UndefOr[String] = js.undefined
   
   /**
     * By default, webviews are prevented from loading any resources packaged with the app.
@@ -365,19 +363,13 @@ trait PartialManifest extends StObject {
     * contain the * wildcard.
     * @see[Accessing packaged resources]{@link https://developer.chrome.com/apps/tags/webview#local_resources}
     */
-  var webview: js.UndefOr[Partitions] = js.native
+  var webview: js.UndefOr[Partitions] = js.undefined
 }
 object PartialManifest {
   
   @scala.inline
-  def apply(
-    app: Background,
-    externally_connectable: Accepttlschannelid,
-    manifest_version: `2`,
-    name: String,
-    version: String
-  ): PartialManifest = {
-    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(app: Background, externally_connectable: Accepttlschannelid, name: String, version: String): PartialManifest = {
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], externally_connectable = externally_connectable.asInstanceOf[js.Any], manifest_version = 2, name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialManifest]
   }
   

@@ -4,33 +4,31 @@ import typings.doublearray.doublearray.DoubleArray
 import typings.kuromoji.anon.Tokeninfodictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictionaryBuilder_ extends StObject {
   
-  def addTokenInfoDictionary(text: String): DictionaryBuilder_ = js.native
+  def addTokenInfoDictionary(text: String): DictionaryBuilder_
   
-  def build(): DynamicDictionaries = js.native
+  def build(): DynamicDictionaries
   
-  def buildConnectionCosts(): ConnectionCosts = js.native
+  def buildConnectionCosts(): ConnectionCosts
   
-  def buildDoubleArray(): DoubleArray = js.native
+  def buildDoubleArray(): DoubleArray
   
-  def buildTokenInfoDictionary(): Tokeninfodictionary = js.native
+  def buildTokenInfoDictionary(): Tokeninfodictionary
   
-  def buildUnknownDictionary(): UnknownDictionary = js.native
+  def buildUnknownDictionary(): UnknownDictionary
   
-  def charDef(char_text: String): DictionaryBuilder_ = js.native
+  def charDef(char_text: String): DictionaryBuilder_
   
-  def costMatrix(matrix_text: String): DictionaryBuilder_ = js.native
+  def costMatrix(matrix_text: String): DictionaryBuilder_
   
-  var tid_entries: js.Array[String] = js.native
+  var tid_entries: js.Array[String]
   
-  def unkDef(text: String): DictionaryBuilder_ = js.native
+  def unkDef(text: String): DictionaryBuilder_
   
-  var unk_entries: js.Array[String] = js.native
+  var unk_entries: js.Array[String]
 }
 object DictionaryBuilder_ {
   

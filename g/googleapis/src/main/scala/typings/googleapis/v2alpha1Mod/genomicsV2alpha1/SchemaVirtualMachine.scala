@@ -3,19 +3,17 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Carries information about a Compute Engine VM resource.
   */
-@js.native
 trait SchemaVirtualMachine extends StObject {
   
   /**
     * The list of accelerators to attach to the VM.
     */
-  var accelerators: js.UndefOr[js.Array[SchemaAccelerator]] = js.native
+  var accelerators: js.UndefOr[js.Array[SchemaAccelerator]] = js.undefined
   
   /**
     * The size of the boot disk, in GB. The boot disk must be large enough to
@@ -23,7 +21,7 @@ trait SchemaVirtualMachine extends StObject {
     * the same time. If not specified, a small but reasonable default value is
     * used.
     */
-  var bootDiskSizeGb: js.UndefOr[Double] = js.native
+  var bootDiskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * The host operating system image to use.  Currently, only
@@ -36,7 +34,7 @@ trait SchemaVirtualMachine extends StObject {
     * Container-Optimized OS, use the value
     * `projects/cos-cloud/global/images/family/cos-beta`.
     */
-  var bootImage: js.UndefOr[String] = js.native
+  var bootImage: js.UndefOr[String] = js.undefined
   
   /**
     * The CPU platform to request. An instance based on a newer platform can be
@@ -47,12 +45,12 @@ trait SchemaVirtualMachine extends StObject {
     * more information about the effect of this parameter, see
     * https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform.
     */
-  var cpuPlatform: js.UndefOr[String] = js.native
+  var cpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * The list of disks to create and attach to the VM.
     */
-  var disks: js.UndefOr[js.Array[SchemaDisk]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaDisk]] = js.undefined
   
   /**
     * Optional set of labels to apply to the VM and any attached disk
@@ -61,7 +59,7 @@ trait SchemaVirtualMachine extends StObject {
     * the VM. Applied on a best-effort basis to attached disk resources shortly
     * after VM creation.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The machine type of the virtual machine to create. Must be the short name
@@ -73,12 +71,12 @@ trait SchemaVirtualMachine extends StObject {
     * type](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create)
     * for more specifications on creating a custom machine type.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The VM network configuration.
     */
-  var network: js.UndefOr[SchemaNetwork] = js.native
+  var network: js.UndefOr[SchemaNetwork] = js.undefined
   
   /**
     * The NVIDIA driver version to use when attaching an NVIDIA GPU
@@ -87,18 +85,18 @@ trait SchemaVirtualMachine extends StObject {
     * the drivers hosted in the `nvidia-drivers-us-public` bucket on Google
     * Cloud Storage.
     */
-  var nvidiaDriverVersion: js.UndefOr[String] = js.native
+  var nvidiaDriverVersion: js.UndefOr[String] = js.undefined
   
   /**
     * If true, allocate a preemptible VM.
     */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The service account to install on the VM. This account does not need any
     * permissions other than those required by the pipeline.
     */
-  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.native
+  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
 }
 object SchemaVirtualMachine {
   

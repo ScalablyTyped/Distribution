@@ -2,46 +2,44 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectNamesDialog extends StObject {
   
-  var AllowMultipleSelection: Boolean = js.native
+  var AllowMultipleSelection: Boolean
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  var BccLabel: String = js.native
+  var BccLabel: String
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var CcLabel: String = js.native
+  var CcLabel: String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def Display(): Boolean = js.native
+  def Display(): Boolean
   
-  var ForceResolution: Boolean = js.native
+  var ForceResolution: Boolean
   
-  var InitialAddressList: AddressList = js.native
+  var InitialAddressList: AddressList
   
-  var NumberOfRecipientSelectors: OlRecipientSelectors = js.native
+  var NumberOfRecipientSelectors: OlRecipientSelectors
   
   @JSName("Outlook.SelectNamesDialog_typekey")
-  var OutlookDotSelectNamesDialog_typekey: SelectNamesDialog = js.native
+  var OutlookDotSelectNamesDialog_typekey: SelectNamesDialog
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Recipients: typings.activexOutlook.Outlook.Recipients = js.native
+  var Recipients: typings.activexOutlook.Outlook.Recipients
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def SetDefaultDisplayMode(defaultMode: OlDefaultSelectNamesDisplayMode): Unit = js.native
+  def SetDefaultDisplayMode(defaultMode: OlDefaultSelectNamesDisplayMode): Unit
   
-  var ShowOnlyInitialAddressList: Boolean = js.native
+  var ShowOnlyInitialAddressList: Boolean
   
-  var ToLabel: String = js.native
+  var ToLabel: String
 }
 object SelectNamesDialog {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostOutput extends StObject {
   
   /**
     * The name of the requested host.
     */
-  var Name: js.UndefOr[HostName] = js.native
+  var Name: js.UndefOr[HostName] = js.undefined
   
   /**
     * The endpoint of the infrastructure represented by the requested host.
     */
-  var ProviderEndpoint: js.UndefOr[Url] = js.native
+  var ProviderEndpoint: js.UndefOr[Url] = js.undefined
   
   /**
     * The provider type of the requested host, such as GitHub Enterprise Server.
     */
-  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.native
+  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.undefined
   
   /**
     * The status of the requested host.
     */
-  var Status: js.UndefOr[HostStatus] = js.native
+  var Status: js.UndefOr[HostStatus] = js.undefined
   
   /**
     * The VPC configuration of the requested host.
     */
-  var VpcConfiguration: js.UndefOr[typings.awsSdk.codestarconnectionsMod.VpcConfiguration] = js.native
+  var VpcConfiguration: js.UndefOr[typings.awsSdk.codestarconnectionsMod.VpcConfiguration] = js.undefined
 }
 object GetHostOutput {
   

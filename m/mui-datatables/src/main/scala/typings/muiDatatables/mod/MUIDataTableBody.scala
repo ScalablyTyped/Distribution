@@ -3,45 +3,43 @@ package typings.muiDatatables.mod
 import typings.muiDatatables.anon.RowIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableBody extends StObject {
   
-  var classes: js.Object = js.native
+  var classes: js.Object
   
-  var columnOrder: js.UndefOr[js.Array[Double]] = js.native
+  var columnOrder: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var columns: js.Array[MUIDataTableColumnDef] = js.native
+  var columns: js.Array[MUIDataTableColumnDef]
   
-  var count: Double = js.native
+  var count: Double
   
-  var data: js.Array[js.Object | (js.Array[Double | String])] = js.native
+  var data: js.Array[js.Object | (js.Array[Double | String])]
   
-  var expandedRows: js.UndefOr[MUIDataTableStateRows] = js.native
+  var expandedRows: js.UndefOr[MUIDataTableStateRows] = js.undefined
   
-  var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
-  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.native
+  var onRowClick: js.UndefOr[js.Function2[/* rowData */ js.Array[String], /* rowMeta */ RowIndex, Unit]] = js.undefined
   
-  var options: MUIDataTableOptions = js.native
+  var options: MUIDataTableOptions
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var previousSelectedRow: js.UndefOr[Double | Null] = js.native
+  var previousSelectedRow: js.UndefOr[Double | Null] = js.undefined
   
-  var rowsPerPage: js.UndefOr[Double] = js.native
+  var rowsPerPage: js.UndefOr[Double] = js.undefined
   
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
   
-  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var selectRowUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var selectedRows: js.UndefOr[MUIDataTableStateRows] = js.native
+  var selectedRows: js.UndefOr[MUIDataTableStateRows] = js.undefined
   
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
   
-  var toggleExpandRow: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var toggleExpandRow: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
 }
 object MUIDataTableBody {
   
@@ -139,7 +137,7 @@ object MUIDataTableBody {
     def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def setSelectRowUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
+    def setSelectRowUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "selectRowUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSelectRowUpdateUndefined: Self = StObject.set(x, "selectRowUpdate", js.undefined)
@@ -157,7 +155,7 @@ object MUIDataTableBody {
     def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
     @scala.inline
-    def setToggleExpandRow(value: /* args */ js.Any => _): Self = StObject.set(x, "toggleExpandRow", js.Any.fromFunction1(value))
+    def setToggleExpandRow(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "toggleExpandRow", js.Any.fromFunction1(value))
     
     @scala.inline
     def setToggleExpandRowUndefined: Self = StObject.set(x, "toggleExpandRow", js.undefined)

@@ -7,41 +7,98 @@ import typings.std.Algorithm
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object envelopedDataMod {
   
   @JSImport("pkijs/src/EnvelopedData", JSImport.Default)
   @js.native
-  class default () extends EnvelopedData {
+  class default ()
+    extends StObject
+       with EnvelopedData {
     def this(params: js.Any) = this()
+    
+    /**
+      * Helpers function for filling "RecipientInfo" based on recipient's certificate.
+      * Problem with WebCrypto is that for RSA certificates we have only one option - "key transport" and
+      * for ECC certificates we also have one option - "key agreement". As soon as Google will implement
+      * DH algorithm it would be possible to use "key agreement" also for RSA certificates.
+      * @param {Certificate} [certificate] Recipient's certificate
+      * @param {*} [parameters] Additional parameters neccessary for "fine tunning" of encryption process
+      * @param {number} [variant] Variant = 1 is for "key transport", variant = 2 is for "key agreement". In fact the "variant" is unneccessary now because Google has no DH algorithm implementation. Thus key encryption scheme would be choosen by certificate type only: "key transport" for RSA and "key agreement" for ECC certificates.
+      */
+    /* CompleteClass */
+    override def addRecipientByCertificate(certificate: typings.pkijs.certificateMod.default, parameters: KdfAlgorithm, variant: Double): Boolean = js.native
+    
+    /**
+      * Add recipient based on pre-defined data like password or KEK
+      * @param {ArrayBuffer} preDefinedData ArrayBuffer with pre-defined data
+      * @param {*} parameters Additional parameters neccessary for "fine tunning" of encryption process
+      * @param {number} variant Variant = 1 for pre-defined "key encryption key" (KEK). Variant = 2 for password-based encryption.
+      */
+    /* CompleteClass */
+    override def addRecipientByPreDefinedData(preDefinedData: ArrayBuffer, parameters: HmacHashAlgorithm, variant: Double): Boolean = js.native
+    
+    /**
+      * Decrypt existing CMS Enveloped Data content
+      * @param {number} recipientIndex Index of recipient
+      * @param {*} parameters Additional parameters
+      * @returns {Promise}
+      */
+    /* CompleteClass */
+    override def decrypt(recipientIndex: Double, parameters: RecipientCertificate): js.Thenable[ArrayBuffer] = js.native
+    
+    /**
+      * Create a new CMS Enveloped Data content with encrypted data
+      * @param {Algorithm} contentEncryptionAlgorithm WebCrypto algorithm. For the moment here could be only "AES-CBC" or "AES-GCM" algorithms.
+      * @param {ArrayBuffer} contentToEncrypt Content to encrypt
+      * @returns {Promise}
+      */
+    /* CompleteClass */
+    override def encrypt(contentEncryptionAlgorithm: Algorithm, contentToEncrypt: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+    
+    /* CompleteClass */
+    var encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var recipientInfos: js.Array[typings.pkijs.recipientInfoMod.default] = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    var version: Double = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/EnvelopedData", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/EnvelopedData", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/EnvelopedData", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/EnvelopedData", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/EnvelopedData", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait EnvelopedData extends StObject {
     
     /**
@@ -53,7 +110,7 @@ object envelopedDataMod {
       * @param {*} [parameters] Additional parameters neccessary for "fine tunning" of encryption process
       * @param {number} [variant] Variant = 1 is for "key transport", variant = 2 is for "key agreement". In fact the "variant" is unneccessary now because Google has no DH algorithm implementation. Thus key encryption scheme would be choosen by certificate type only: "key transport" for RSA and "key agreement" for ECC certificates.
       */
-    def addRecipientByCertificate(certificate: typings.pkijs.certificateMod.default, parameters: KdfAlgorithm, variant: Double): Boolean = js.native
+    def addRecipientByCertificate(certificate: typings.pkijs.certificateMod.default, parameters: KdfAlgorithm, variant: Double): Boolean
     
     /**
       * Add recipient based on pre-defined data like password or KEK
@@ -61,7 +118,7 @@ object envelopedDataMod {
       * @param {*} parameters Additional parameters neccessary for "fine tunning" of encryption process
       * @param {number} variant Variant = 1 for pre-defined "key encryption key" (KEK). Variant = 2 for password-based encryption.
       */
-    def addRecipientByPreDefinedData(preDefinedData: ArrayBuffer, parameters: HmacHashAlgorithm, variant: Double): Boolean = js.native
+    def addRecipientByPreDefinedData(preDefinedData: ArrayBuffer, parameters: HmacHashAlgorithm, variant: Double): Boolean
     
     /**
       * Decrypt existing CMS Enveloped Data content
@@ -69,7 +126,7 @@ object envelopedDataMod {
       * @param {*} parameters Additional parameters
       * @returns {Promise}
       */
-    def decrypt(recipientIndex: Double, parameters: RecipientCertificate): js.Thenable[ArrayBuffer] = js.native
+    def decrypt(recipientIndex: Double, parameters: RecipientCertificate): js.Thenable[ArrayBuffer]
     
     /**
       * Create a new CMS Enveloped Data content with encrypted data
@@ -77,23 +134,23 @@ object envelopedDataMod {
       * @param {ArrayBuffer} contentToEncrypt Content to encrypt
       * @returns {Promise}
       */
-    def encrypt(contentEncryptionAlgorithm: Algorithm, contentToEncrypt: ArrayBuffer): js.Thenable[ArrayBuffer] = js.native
+    def encrypt(contentEncryptionAlgorithm: Algorithm, contentToEncrypt: ArrayBuffer): js.Thenable[ArrayBuffer]
     
-    var encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default = js.native
+    var encryptedContentInfo: typings.pkijs.encryptedContentInfoMod.default
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var originatorInfo: js.UndefOr[typings.pkijs.originatorInfoMod.default] = js.native
+    var originatorInfo: js.UndefOr[typings.pkijs.originatorInfoMod.default] = js.undefined
     
-    var recipientInfos: js.Array[typings.pkijs.recipientInfoMod.default] = js.native
+    var recipientInfos: js.Array[typings.pkijs.recipientInfoMod.default]
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var unprotectedAttrs: js.UndefOr[js.Array[typings.pkijs.attributeMod.default]] = js.native
+    var unprotectedAttrs: js.UndefOr[js.Array[typings.pkijs.attributeMod.default]] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object EnvelopedData {
     

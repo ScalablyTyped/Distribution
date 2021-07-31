@@ -3,15 +3,16 @@ package typings.paramCase
 import typings.noCase.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("param-case", "paramCase")
+  @JSImport("param-case", JSImport.Namespace)
   @js.native
-  def paramCase(input: String): String = js.native
-  @JSImport("param-case", "paramCase")
-  @js.native
-  def paramCase(input: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def paramCase(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def paramCase(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

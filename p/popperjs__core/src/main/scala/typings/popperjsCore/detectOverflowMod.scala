@@ -11,32 +11,32 @@ import typings.popperjsCore.typesMod.State
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detectOverflowMod {
   
-  @JSImport("@popperjs/core/lib/utils/detectOverflow", JSImport.Default)
+  @JSImport("@popperjs/core/lib/utils/detectOverflow", JSImport.Namespace)
   @js.native
-  def default(state: State): SideObject = js.native
-  @JSImport("@popperjs/core/lib/utils/detectOverflow", JSImport.Default)
-  @js.native
-  def default(state: State, options: PartialOptions): SideObject = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(state: State): SideObject = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[SideObject]
+  @scala.inline
+  def default(state: State, options: PartialOptions): SideObject = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SideObject]
+  
   trait Options extends StObject {
     
-    var altBoundary: Boolean = js.native
+    var altBoundary: Boolean
     
-    var boundary: Boundary = js.native
+    var boundary: Boundary
     
-    var elementContext: Context = js.native
+    var elementContext: Context
     
-    var padding: Padding = js.native
+    var padding: Padding
     
-    var placement: Placement = js.native
+    var placement: Placement
     
-    var rootBoundary: RootBoundary = js.native
+    var rootBoundary: RootBoundary
   }
   object Options {
     

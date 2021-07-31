@@ -6,7 +6,6 @@ import typings.reactNativeGoogleAnalyticsBridge.analyticsMod.TimingMetadata
 import typings.reactNativeGoogleAnalyticsBridge.customMod.CustomDimensionsFieldIndexMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleAnalyticsTrackerMod {
@@ -35,7 +34,9 @@ object googleAnalyticsTrackerMod {
     */
   @JSImport("react-native-google-analytics-bridge/dist/GoogleAnalyticsTracker", JSImport.Default)
   @js.native
-  class default protected () extends GoogleAnalyticsTracker {
+  class default protected ()
+    extends StObject
+       with GoogleAnalyticsTracker {
     /**
       * Save all tracker related data that is needed to call native methods with proper data.
       * @param {string} trackerId Your tracker id, something like: UA-12345-1
@@ -210,7 +211,7 @@ object googleAnalyticsTrackerMod {
       * @param  {HitPayload} payload (Optional) An object containing the hit payload
       */
     def trackEvent(category: String, action: String): Unit = js.native
-    def trackEvent(category: String, action: String, eventMetadata: js.UndefOr[scala.Nothing], payload: HitPayload): Unit = js.native
+    def trackEvent(category: String, action: String, eventMetadata: Unit, payload: HitPayload): Unit = js.native
     def trackEvent(category: String, action: String, eventMetadata: EventMetadata): Unit = js.native
     def trackEvent(category: String, action: String, eventMetadata: EventMetadata, payload: HitPayload): Unit = js.native
     
@@ -227,9 +228,9 @@ object googleAnalyticsTrackerMod {
       * @param  {HitPayload} payload (Optional) An object containing the hit payload
       */
     def trackException(error: String): Unit = js.native
-    def trackException(error: String, fatal: js.UndefOr[scala.Nothing], payload: HitPayload): Unit = js.native
     def trackException(error: String, fatal: Boolean): Unit = js.native
     def trackException(error: String, fatal: Boolean, payload: HitPayload): Unit = js.native
+    def trackException(error: String, fatal: Unit, payload: HitPayload): Unit = js.native
     
     /**
       * Track the current screen/view. Calling this will also set the "current view" for other calls.

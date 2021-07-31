@@ -7,19 +7,17 @@ import typings.openfin.openfinStrings.failed
 import typings.openfin.openfinStrings.succeeded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preloadScriptMod {
   
-  @js.native
   trait PreloadScript extends StObject {
     
-    var mandatory: js.UndefOr[Boolean] = js.native
+    var mandatory: js.UndefOr[Boolean] = js.undefined
     
-    var state: js.UndefOr[`load-started` | `load-failed` | `load-succeeded` | failed | succeeded] = js.native
+    var state: js.UndefOr[`load-started` | `load-failed` | `load-succeeded` | failed | succeeded] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object PreloadScript {
     

@@ -3,18 +3,17 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubMerchantAccountDeclinedNotification
-  extends BaseWebhookNotification
+  extends StObject
+     with BaseWebhookNotification
      with WebhookNotification {
   
   @JSName("kind")
-  var kind_SubMerchantAccountDeclinedNotification: SubMerchantAccountDeclinedNotificationKind = js.native
+  var kind_SubMerchantAccountDeclinedNotification: SubMerchantAccountDeclinedNotificationKind
   
-  var merchantAccount: MerchantAccount = js.native
+  var merchantAccount: MerchantAccount
 }
 object SubMerchantAccountDeclinedNotification {
   

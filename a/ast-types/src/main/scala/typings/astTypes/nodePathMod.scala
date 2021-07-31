@@ -9,17 +9,21 @@ import typings.astTypes.scopeMod.Scope
 import typings.astTypes.typesMod.ASTNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodePathMod {
   
-  @JSImport("ast-types/lib/node-path", JSImport.Default)
+  @JSImport("ast-types/lib/node-path", JSImport.Namespace)
   @js.native
-  def default(fork: Fork): NodePathConstructor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(fork: Fork): NodePathConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[NodePathConstructor]
   
   @js.native
-  trait NodePath[N, V] extends Path[V] {
+  trait NodePath[N, V]
+    extends StObject
+       with Path[V] {
     
     def _computeNode(): js.Any = js.native
     
@@ -41,18 +45,19 @@ object nodePathMod {
     def prune(args: js.Any*): js.Any = js.native
     
     @JSName("replace")
-    var replace_Original: js.Function2[/* replacement */ js.UndefOr[ASTNode], /* repeated */ ASTNode, _] = js.native
+    var replace_Original: js.Function2[/* replacement */ js.UndefOr[ASTNode], /* repeated */ ASTNode, js.Any] = js.native
     
     var scope: js.Any = js.native
   }
   
   @js.native
   trait NodePathConstructor
-    extends Instantiable1[/* value */ js.Any, NodePath[ASTNode, js.Object]]
+    extends StObject
+       with Instantiable1[/* value */ js.Any, NodePath[ASTNode, js.Object]]
        with Instantiable2[/* value */ js.Any, /* parentPath */ js.Any, NodePath[ASTNode, js.Object]]
        with Instantiable3[
           /* value */ js.Any, 
-          js.UndefOr[/* parentPath */ js.Any], 
+          (/* parentPath */ js.Any) | (/* parentPath */ Unit), 
           /* name */ js.Any, 
           NodePath[ASTNode, js.Object]
         ]

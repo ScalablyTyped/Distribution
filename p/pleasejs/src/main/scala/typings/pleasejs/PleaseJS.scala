@@ -2,19 +2,17 @@ package typings.pleasejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PleaseJS {
   
-  @js.native
   trait HSV extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
   }
   object HSV {
     
@@ -38,28 +36,27 @@ object PleaseJS {
     }
   }
   
-  @js.native
   trait MakeColorOption extends StObject {
     
-    var base_color: js.UndefOr[String] = js.native
+    var base_color: js.UndefOr[String] = js.undefined
     
-    var colors_returned: js.UndefOr[Double] = js.native
+    var colors_returned: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var full_random: js.UndefOr[Boolean] = js.native
+    var full_random: js.UndefOr[Boolean] = js.undefined
     
-    var golden: js.UndefOr[Boolean] = js.native
+    var golden: js.UndefOr[Boolean] = js.undefined
     
-    var grayscale: js.UndefOr[Boolean] = js.native
+    var grayscale: js.UndefOr[Boolean] = js.undefined
     
-    var greyscale: js.UndefOr[Boolean] = js.native
+    var greyscale: js.UndefOr[Boolean] = js.undefined
     
-    var hue: js.UndefOr[Double] = js.native
+    var hue: js.UndefOr[Double] = js.undefined
     
-    var saturation: js.UndefOr[Double] = js.native
+    var saturation: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MakeColorOption {
     
@@ -134,12 +131,11 @@ object PleaseJS {
     }
   }
   
-  @js.native
   trait MakeSchemeOption extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var scheme_type: String = js.native
+    var scheme_type: String
   }
   object MakeSchemeOption {
     
@@ -243,14 +239,13 @@ object PleaseJS {
     def make_scheme(base_color: HSV, options: MakeSchemeOption): js.Array[String | RGB | HSV] = js.native
   }
   
-  @js.native
   trait RGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGB {
     

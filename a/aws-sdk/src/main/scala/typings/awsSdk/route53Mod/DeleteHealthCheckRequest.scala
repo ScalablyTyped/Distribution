@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHealthCheckRequest extends StObject {
   
   /**
     * The ID of the health check that you want to delete.
     */
-  var HealthCheckId: typings.awsSdk.route53Mod.HealthCheckId = js.native
+  var HealthCheckId: typings.awsSdk.route53Mod.HealthCheckId
 }
 object DeleteHealthCheckRequest {
   

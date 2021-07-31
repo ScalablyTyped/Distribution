@@ -9,23 +9,23 @@ import typings.mixpanelBrowser.mod.VerboseResponse
 import typings.mixpanelBrowser.mod.XhrHeadersDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Error extends VerboseResponse {
+  trait Error
+    extends StObject
+       with VerboseResponse {
     
-    var error: Null = js.native
+    var error: Null
     
-    var status: `1` = js.native
+    var status: `1`
   }
   object Error {
     
     @scala.inline
-    def apply(error: Null, status: `1`): Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(error: Null): Error = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = 1)
       __obj.asInstanceOf[Error]
     }
     
@@ -41,18 +41,17 @@ object anon {
   }
   
   /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.ClearOptOutInOutOptions> */
-  @js.native
   trait PartialClearOptOutInOutOp extends StObject {
     
-    var cookie_expiration: js.UndefOr[Double] = js.native
+    var cookie_expiration: js.UndefOr[Double] = js.undefined
     
-    var cookie_prefix: js.UndefOr[String] = js.native
+    var cookie_prefix: js.UndefOr[String] = js.undefined
     
-    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.native
+    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var persistence_type: js.UndefOr[Persistence] = js.native
+    var persistence_type: js.UndefOr[Persistence] = js.undefined
     
-    var secure_cookie: js.UndefOr[Boolean] = js.native
+    var secure_cookie: js.UndefOr[Boolean] = js.undefined
   }
   object PartialClearOptOutInOutOp {
     
@@ -98,90 +97,89 @@ object anon {
   }
   
   /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var api_host: js.UndefOr[String] = js.native
+    var api_host: js.UndefOr[String] = js.undefined
     
-    var api_method: js.UndefOr[String] = js.native
+    var api_method: js.UndefOr[String] = js.undefined
     
-    var api_transport: js.UndefOr[String] = js.native
+    var api_transport: js.UndefOr[String] = js.undefined
     
-    var app_host: js.UndefOr[String] = js.native
+    var app_host: js.UndefOr[String] = js.undefined
     
-    var autotrack: js.UndefOr[Boolean] = js.native
+    var autotrack: js.UndefOr[Boolean] = js.undefined
     
-    var batch_flush_interval_ms: js.UndefOr[Double] = js.native
+    var batch_flush_interval_ms: js.UndefOr[Double] = js.undefined
     
-    var batch_request_timeout_ms: js.UndefOr[Double] = js.native
+    var batch_request_timeout_ms: js.UndefOr[Double] = js.undefined
     
-    var batch_requests: js.UndefOr[Boolean] = js.native
+    var batch_requests: js.UndefOr[Boolean] = js.undefined
     
-    var batch_size: js.UndefOr[Double] = js.native
+    var batch_size: js.UndefOr[Double] = js.undefined
     
-    var cdn: js.UndefOr[String] = js.native
+    var cdn: js.UndefOr[String] = js.undefined
     
-    var cookie_domain: js.UndefOr[String] = js.native
+    var cookie_domain: js.UndefOr[String] = js.undefined
     
-    var cookie_expiration: js.UndefOr[Double] = js.native
+    var cookie_expiration: js.UndefOr[Double] = js.undefined
     
-    var cookie_name: js.UndefOr[String] = js.native
+    var cookie_name: js.UndefOr[String] = js.undefined
     
-    var cross_site_cookie: js.UndefOr[Boolean] = js.native
+    var cross_site_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.native
+    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var disable_cookie: js.UndefOr[Boolean] = js.native
+    var disable_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var disable_notifications: js.UndefOr[Boolean] = js.native
+    var disable_notifications: js.UndefOr[Boolean] = js.undefined
     
-    var disable_persistence: js.UndefOr[Boolean] = js.native
+    var disable_persistence: js.UndefOr[Boolean] = js.undefined
     
-    var ignore_dnt: js.UndefOr[Boolean] = js.native
+    var ignore_dnt: js.UndefOr[Boolean] = js.undefined
     
-    var img: js.UndefOr[Boolean] = js.native
+    var img: js.UndefOr[Boolean] = js.undefined
     
-    var inapp_link_new_window: js.UndefOr[Boolean] = js.native
+    var inapp_link_new_window: js.UndefOr[Boolean] = js.undefined
     
-    var inapp_protocol: js.UndefOr[String] = js.native
+    var inapp_protocol: js.UndefOr[String] = js.undefined
     
-    var ip: js.UndefOr[Boolean] = js.native
+    var ip: js.UndefOr[Boolean] = js.undefined
     
-    var loaded: js.UndefOr[js.Function1[/* mixpanel */ this.type, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* mixpanel */ this.type, Unit]] = js.undefined
     
-    var opt_out_persistence_by_default: js.UndefOr[Boolean] = js.native
+    var opt_out_persistence_by_default: js.UndefOr[Boolean] = js.undefined
     
-    var opt_out_tracking_by_default: js.UndefOr[Boolean] = js.native
+    var opt_out_tracking_by_default: js.UndefOr[Boolean] = js.undefined
     
-    var opt_out_tracking_cookie_prefix: js.UndefOr[String] = js.native
+    var opt_out_tracking_cookie_prefix: js.UndefOr[String] = js.undefined
     
-    var opt_out_tracking_persistence_type: js.UndefOr[Persistence] = js.native
+    var opt_out_tracking_persistence_type: js.UndefOr[Persistence] = js.undefined
     
-    var persistence: js.UndefOr[Persistence] = js.native
+    var persistence: js.UndefOr[Persistence] = js.undefined
     
-    var persistence_name: js.UndefOr[String] = js.native
+    var persistence_name: js.UndefOr[String] = js.undefined
     
-    var property_blacklist: js.UndefOr[js.Array[String]] = js.native
+    var property_blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var save_referrer: js.UndefOr[Boolean] = js.native
+    var save_referrer: js.UndefOr[Boolean] = js.undefined
     
-    var secure_cookie: js.UndefOr[Boolean] = js.native
+    var secure_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var store_google: js.UndefOr[Boolean] = js.native
+    var store_google: js.UndefOr[Boolean] = js.undefined
     
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
     
-    var track_links_timeout: js.UndefOr[Double] = js.native
+    var track_links_timeout: js.UndefOr[Double] = js.undefined
     
-    var track_pageview: js.UndefOr[Boolean] = js.native
+    var track_pageview: js.UndefOr[Boolean] = js.undefined
     
-    var upgrade: js.UndefOr[Boolean] = js.native
+    var upgrade: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var xhr_headers: js.UndefOr[XhrHeadersDef] = js.native
+    var xhr_headers: js.UndefOr[XhrHeadersDef] = js.undefined
   }
   object PartialConfig {
     
@@ -446,90 +444,89 @@ object anon {
   }
   
   /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.Config> */
-  @js.native
   trait PartialConfigApihost extends StObject {
     
-    var api_host: js.UndefOr[String] = js.native
+    var api_host: js.UndefOr[String] = js.undefined
     
-    var api_method: js.UndefOr[String] = js.native
+    var api_method: js.UndefOr[String] = js.undefined
     
-    var api_transport: js.UndefOr[String] = js.native
+    var api_transport: js.UndefOr[String] = js.undefined
     
-    var app_host: js.UndefOr[String] = js.native
+    var app_host: js.UndefOr[String] = js.undefined
     
-    var autotrack: js.UndefOr[Boolean] = js.native
+    var autotrack: js.UndefOr[Boolean] = js.undefined
     
-    var batch_flush_interval_ms: js.UndefOr[Double] = js.native
+    var batch_flush_interval_ms: js.UndefOr[Double] = js.undefined
     
-    var batch_request_timeout_ms: js.UndefOr[Double] = js.native
+    var batch_request_timeout_ms: js.UndefOr[Double] = js.undefined
     
-    var batch_requests: js.UndefOr[Boolean] = js.native
+    var batch_requests: js.UndefOr[Boolean] = js.undefined
     
-    var batch_size: js.UndefOr[Double] = js.native
+    var batch_size: js.UndefOr[Double] = js.undefined
     
-    var cdn: js.UndefOr[String] = js.native
+    var cdn: js.UndefOr[String] = js.undefined
     
-    var cookie_domain: js.UndefOr[String] = js.native
+    var cookie_domain: js.UndefOr[String] = js.undefined
     
-    var cookie_expiration: js.UndefOr[Double] = js.native
+    var cookie_expiration: js.UndefOr[Double] = js.undefined
     
-    var cookie_name: js.UndefOr[String] = js.native
+    var cookie_name: js.UndefOr[String] = js.undefined
     
-    var cross_site_cookie: js.UndefOr[Boolean] = js.native
+    var cross_site_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.native
+    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var disable_cookie: js.UndefOr[Boolean] = js.native
+    var disable_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var disable_notifications: js.UndefOr[Boolean] = js.native
+    var disable_notifications: js.UndefOr[Boolean] = js.undefined
     
-    var disable_persistence: js.UndefOr[Boolean] = js.native
+    var disable_persistence: js.UndefOr[Boolean] = js.undefined
     
-    var ignore_dnt: js.UndefOr[Boolean] = js.native
+    var ignore_dnt: js.UndefOr[Boolean] = js.undefined
     
-    var img: js.UndefOr[Boolean] = js.native
+    var img: js.UndefOr[Boolean] = js.undefined
     
-    var inapp_link_new_window: js.UndefOr[Boolean] = js.native
+    var inapp_link_new_window: js.UndefOr[Boolean] = js.undefined
     
-    var inapp_protocol: js.UndefOr[String] = js.native
+    var inapp_protocol: js.UndefOr[String] = js.undefined
     
-    var ip: js.UndefOr[Boolean] = js.native
+    var ip: js.UndefOr[Boolean] = js.undefined
     
-    var loaded: js.UndefOr[js.Function1[/* mixpanel */ Mixpanel, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* mixpanel */ Mixpanel, Unit]] = js.undefined
     
-    var opt_out_persistence_by_default: js.UndefOr[Boolean] = js.native
+    var opt_out_persistence_by_default: js.UndefOr[Boolean] = js.undefined
     
-    var opt_out_tracking_by_default: js.UndefOr[Boolean] = js.native
+    var opt_out_tracking_by_default: js.UndefOr[Boolean] = js.undefined
     
-    var opt_out_tracking_cookie_prefix: js.UndefOr[String] = js.native
+    var opt_out_tracking_cookie_prefix: js.UndefOr[String] = js.undefined
     
-    var opt_out_tracking_persistence_type: js.UndefOr[Persistence] = js.native
+    var opt_out_tracking_persistence_type: js.UndefOr[Persistence] = js.undefined
     
-    var persistence: js.UndefOr[Persistence] = js.native
+    var persistence: js.UndefOr[Persistence] = js.undefined
     
-    var persistence_name: js.UndefOr[String] = js.native
+    var persistence_name: js.UndefOr[String] = js.undefined
     
-    var property_blacklist: js.UndefOr[js.Array[String]] = js.native
+    var property_blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var save_referrer: js.UndefOr[Boolean] = js.native
+    var save_referrer: js.UndefOr[Boolean] = js.undefined
     
-    var secure_cookie: js.UndefOr[Boolean] = js.native
+    var secure_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var store_google: js.UndefOr[Boolean] = js.native
+    var store_google: js.UndefOr[Boolean] = js.undefined
     
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
     
-    var track_links_timeout: js.UndefOr[Double] = js.native
+    var track_links_timeout: js.UndefOr[Double] = js.undefined
     
-    var track_pageview: js.UndefOr[Boolean] = js.native
+    var track_pageview: js.UndefOr[Boolean] = js.undefined
     
-    var upgrade: js.UndefOr[Boolean] = js.native
+    var upgrade: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var xhr_headers: js.UndefOr[XhrHeadersDef] = js.native
+    var xhr_headers: js.UndefOr[XhrHeadersDef] = js.undefined
   }
   object PartialConfigApihost {
     
@@ -794,12 +791,11 @@ object anon {
   }
   
   /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.HasOptedInOutOptions> */
-  @js.native
   trait PartialHasOptedInOutOptio extends StObject {
     
-    var cookie_prefix: js.UndefOr[String] = js.native
+    var cookie_prefix: js.UndefOr[String] = js.undefined
     
-    var persistence_type: js.UndefOr[Persistence] = js.native
+    var persistence_type: js.UndefOr[Persistence] = js.undefined
   }
   object PartialHasOptedInOutOptio {
     
@@ -827,24 +823,23 @@ object anon {
   }
   
   /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.InTrackingOptions> */
-  @js.native
   trait PartialInTrackingOptions extends StObject {
     
-    var cookie_expiration: js.UndefOr[Double] = js.native
+    var cookie_expiration: js.UndefOr[Double] = js.undefined
     
-    var cookie_prefix: js.UndefOr[String] = js.native
+    var cookie_prefix: js.UndefOr[String] = js.undefined
     
-    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.native
+    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var persistence_type: js.UndefOr[Persistence] = js.native
+    var persistence_type: js.UndefOr[Persistence] = js.undefined
     
-    var secure_cookie: js.UndefOr[Boolean] = js.native
+    var secure_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var track: js.UndefOr[js.Function0[Unit]] = js.native
+    var track: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var track_event_name: js.UndefOr[String] = js.native
+    var track_event_name: js.UndefOr[String] = js.undefined
     
-    var track_event_properties: js.UndefOr[Dict] = js.native
+    var track_event_properties: js.UndefOr[Dict] = js.undefined
   }
   object PartialInTrackingOptions {
     
@@ -908,20 +903,19 @@ object anon {
   }
   
   /* Inlined std.Partial<mixpanel-browser.mixpanel-browser.OutTrackingOptions> */
-  @js.native
   trait PartialOutTrackingOptions extends StObject {
     
-    var cookie_expiration: js.UndefOr[Double] = js.native
+    var cookie_expiration: js.UndefOr[Double] = js.undefined
     
-    var cookie_prefix: js.UndefOr[String] = js.native
+    var cookie_prefix: js.UndefOr[String] = js.undefined
     
-    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.native
+    var cross_subdomain_cookie: js.UndefOr[Boolean] = js.undefined
     
-    var delete_user: js.UndefOr[Boolean] = js.native
+    var delete_user: js.UndefOr[Boolean] = js.undefined
     
-    var persistence_type: js.UndefOr[Persistence] = js.native
+    var persistence_type: js.UndefOr[Persistence] = js.undefined
     
-    var secure_cookie: js.UndefOr[Boolean] = js.native
+    var secure_cookie: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOutTrackingOptions {
     
@@ -972,18 +966,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait Status extends VerboseResponse {
+  trait Status
+    extends StObject
+       with VerboseResponse {
     
-    var error: String = js.native
+    var error: String
     
-    var status: `0` = js.native
+    var status: `0`
   }
   object Status {
     
     @scala.inline
-    def apply(error: String, status: `0`): Status = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(error: String): Status = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = 0)
       __obj.asInstanceOf[Status]
     }
     

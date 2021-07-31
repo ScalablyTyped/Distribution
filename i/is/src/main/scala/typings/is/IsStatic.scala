@@ -3,7 +3,6 @@ package typings.is
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -480,7 +479,7 @@ trait IsStatic extends StObject {
   /**
     * Checks if the given array is sorted.
     */
-  def sorted(value: js.Array[_]): Boolean = js.native
+  def sorted(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is space.

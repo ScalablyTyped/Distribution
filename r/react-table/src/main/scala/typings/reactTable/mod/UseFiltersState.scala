@@ -3,13 +3,11 @@ package typings.reactTable.mod
 import typings.reactTable.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseFiltersState[D /* <: js.Object */] extends StObject {
   
-  var filters: Filters[D] = js.native
+  var filters: Filters[D]
 }
 object UseFiltersState {
   
@@ -20,7 +18,7 @@ object UseFiltersState {
   }
   
   @scala.inline
-  implicit class UseFiltersStateMutableBuilder[Self <: UseFiltersState[_], D /* <: js.Object */] (val x: Self with UseFiltersState[D]) extends AnyVal {
+  implicit class UseFiltersStateMutableBuilder[Self <: UseFiltersState[?], D /* <: js.Object */] (val x: Self & UseFiltersState[D]) extends AnyVal {
     
     @scala.inline
     def setFilters(value: Filters[D]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])

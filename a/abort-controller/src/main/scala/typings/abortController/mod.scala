@@ -4,7 +4,6 @@ import typings.abortController.abortControllerStrings.loose
 import typings.eventTargetShim.anon.AddEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,7 +52,9 @@ object mod {
   /**
     * AbortSignal cannot be constructed directly.
     */
-  class AbortSignal () extends AddEventListener[Events, loose] {
+  class AbortSignal ()
+    extends StObject
+       with AddEventListener[Events, loose] {
     
     /**
       * Returns `true` if this `AbortSignal`"s `AbortController` has signaled to abort, and `false` otherwise.
@@ -61,10 +62,9 @@ object mod {
     val aborted: Boolean = js.native
   }
   
-  @js.native
   trait EventAttributes extends StObject {
     
-    var onabort: js.Any = js.native
+    var onabort: js.Any
   }
   object EventAttributes {
     
@@ -82,10 +82,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    var abort: js.Any = js.native
+    var abort: js.Any
   }
   object Events {
     

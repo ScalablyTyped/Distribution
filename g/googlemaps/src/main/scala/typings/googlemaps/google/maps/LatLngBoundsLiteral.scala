@@ -3,7 +3,6 @@ package typings.googlemaps.google.maps
 import typings.googlemaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link LatLngBoundsLiteral#east east} must be set, otherwise an exception is thrown.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBoundsLiteral Maps JavaScript API}
   */
-@js.native
-trait LatLngBoundsLiteral extends _LocationBias {
+trait LatLngBoundsLiteral
+  extends StObject
+     with _LocationBias {
   
   /**
     * East longitude in degrees. Values outside the range [-180, 180] will be wrapped to the range [-180, 180]. For
@@ -22,21 +22,21 @@ trait LatLngBoundsLiteral extends _LocationBias {
     * the fact that longitudes wrap around the globe.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBoundsLiteral.east Maps JavaScript API}
     */
-  var east: Double = js.native
+  var east: Double
   
   /**
     * North latitude in degrees. Values will be clamped to the range [-90, 90]. This means that if the value
     * specified is less than -90, it will be set to -90. And if the value is greater than 90, it will be set to 90.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBoundsLiteral.north Maps JavaScript API}
     */
-  var north: Double = js.native
+  var north: Double
   
   /**
     * South latitude in degrees. Values will be clamped to the range [-90, 90]. This means that if the value
     * specified is less than -90, it will be set to -90. And if the value is greater than 90, it will be set to 90.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBoundsLiteral.south Maps JavaScript API}
     */
-  var south: Double = js.native
+  var south: Double
   
   /**
     * West longitude in degrees. Values outside the range [-180, 180] will be wrapped to the range [-180, 180]. For
@@ -44,7 +44,7 @@ trait LatLngBoundsLiteral extends _LocationBias {
     * the fact that longitudes wrap around the globe.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBoundsLiteral.west Maps JavaScript API}
     */
-  var west: Double = js.native
+  var west: Double
 }
 object LatLngBoundsLiteral {
   

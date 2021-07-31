@@ -2,21 +2,19 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlLoadSettings extends StObject {
   
-  var elementContentWhiteSpace: Boolean = js.native
+  var elementContentWhiteSpace: Boolean
   
-  var maxElementDepth: Double = js.native
+  var maxElementDepth: Double
   
-  var prohibitDtd: Boolean = js.native
+  var prohibitDtd: Boolean
   
-  var resolveExternals: Boolean = js.native
+  var resolveExternals: Boolean
   
-  var validateOnParse: Boolean = js.native
+  var validateOnParse: Boolean
 }
 object IXmlLoadSettings {
   

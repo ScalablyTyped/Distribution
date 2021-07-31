@@ -12,7 +12,6 @@ import typings.oauth.anon.AccessTokenHttpMethod
 import typings.oauth.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,7 +65,7 @@ object mod {
       version: String,
       authorize_callback: String,
       signatureMethod: String,
-      nonceSize: js.UndefOr[scala.Nothing],
+      nonceSize: Double,
       customHeaders: OutgoingHttpHeaders
     ) = this()
     def this(
@@ -77,18 +76,7 @@ object mod {
       version: String,
       authorize_callback: String,
       signatureMethod: String,
-      nonceSize: Double,
-      customHeaders: OutgoingHttpHeaders
-    ) = this()
-    def this(
-      requestUrl: String,
-      accessUrl: String,
-      consumerKey: String,
-      consumerSecret: String,
-      version: String,
-      authorize_callback: Null,
-      signatureMethod: String,
-      nonceSize: js.UndefOr[scala.Nothing],
+      nonceSize: Unit,
       customHeaders: OutgoingHttpHeaders
     ) = this()
     def this(
@@ -100,6 +88,17 @@ object mod {
       authorize_callback: Null,
       signatureMethod: String,
       nonceSize: Double,
+      customHeaders: OutgoingHttpHeaders
+    ) = this()
+    def this(
+      requestUrl: String,
+      accessUrl: String,
+      consumerKey: String,
+      consumerSecret: String,
+      version: String,
+      authorize_callback: Null,
+      signatureMethod: String,
+      nonceSize: Unit,
       customHeaders: OutgoingHttpHeaders
     ) = this()
     
@@ -157,72 +156,6 @@ object mod {
     var _oauthParameterSeperator: String = js.native
     
     /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String,
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.Any
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.Any,
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.Any,
-      post_content_type: String
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.UndefOr[scala.Nothing],
-      post_body: js.Any,
-      post_content_type: String,
-      callback: dataCallback
-    ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(oauth_token: String, oauth_token_secret: String, method: String, url: String, extra_params: js.Any): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
       oauth_token: String,
@@ -230,35 +163,6 @@ object mod {
       method: String,
       url: String,
       extra_params: js.Any,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.Any,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.Any,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String,
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.Any,
       post_body: js.Any
     ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
@@ -268,16 +172,6 @@ object mod {
       url: String,
       extra_params: js.Any,
       post_body: js.Any,
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _performSecureRequest(
-      oauth_token: String,
-      oauth_token_secret: String,
-      method: String,
-      url: String,
-      extra_params: js.Any,
-      post_body: js.Any,
       post_content_type: String
     ): ClientRequest = js.native
     /* protected */ def _performSecureRequest(
@@ -288,6 +182,111 @@ object mod {
       extra_params: js.Any,
       post_body: js.Any,
       post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: js.Any,
+      post_body: js.Any,
+      post_content_type: Unit,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: js.Any,
+      post_body: Unit,
+      post_content_type: String
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: js.Any,
+      post_body: Unit,
+      post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: js.Any,
+      post_body: Unit,
+      post_content_type: Unit,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: js.Any
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: js.Any,
+      post_content_type: String
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: js.Any,
+      post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: js.Any,
+      post_content_type: Unit,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: Unit,
+      post_content_type: String
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: Unit,
+      post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _performSecureRequest(
+      oauth_token: String,
+      oauth_token_secret: String,
+      method: String,
+      url: String,
+      extra_params: Unit,
+      post_body: Unit,
+      post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
     
@@ -299,32 +298,6 @@ object mod {
     var _protectedKey: String = js.native
     
     /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
-    /* protected */ def _putOrPost(
-      method: String,
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _putOrPost(
-      method: String,
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String
-    ): ClientRequest = js.native
-    /* protected */ def _putOrPost(
-      method: String,
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String,
-      callback: dataCallback
-    ): ClientRequest = js.native
     /* protected */ def _putOrPost(method: String, url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
     /* protected */ def _putOrPost(
       method: String,
@@ -332,15 +305,6 @@ object mod {
       oauth_token: String,
       oauth_token_secret: String,
       post_body: js.Any,
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    /* protected */ def _putOrPost(
-      method: String,
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.Any,
       post_content_type: String
     ): ClientRequest = js.native
     /* protected */ def _putOrPost(
@@ -350,6 +314,41 @@ object mod {
       oauth_token_secret: String,
       post_body: js.Any,
       post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _putOrPost(
+      method: String,
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: js.Any,
+      post_content_type: Unit,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _putOrPost(
+      method: String,
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: String
+    ): ClientRequest = js.native
+    /* protected */ def _putOrPost(
+      method: String,
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    /* protected */ def _putOrPost(
+      method: String,
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
     
@@ -392,43 +391,12 @@ object mod {
     ): Unit = js.native
     
     def post(url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
-    def post(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    def post(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String
-    ): ClientRequest = js.native
-    def post(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String,
-      callback: dataCallback
-    ): ClientRequest = js.native
     def post(url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
     def post(
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
       post_body: js.Any,
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    def post(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.Any,
       post_content_type: String
     ): ClientRequest = js.native
     def post(
@@ -437,47 +405,47 @@ object mod {
       oauth_token_secret: String,
       post_body: js.Any,
       post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    def post(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: js.Any,
+      post_content_type: Unit,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    def post(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: String
+    ): ClientRequest = js.native
+    def post(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    def post(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
     
     def put(url: String, oauth_token: String, oauth_token_secret: String): ClientRequest = js.native
-    def put(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    def put(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String
-    ): ClientRequest = js.native
-    def put(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.UndefOr[scala.Nothing],
-      post_content_type: String,
-      callback: dataCallback
-    ): ClientRequest = js.native
     def put(url: String, oauth_token: String, oauth_token_secret: String, post_body: js.Any): ClientRequest = js.native
     def put(
       url: String,
       oauth_token: String,
       oauth_token_secret: String,
       post_body: js.Any,
-      post_content_type: js.UndefOr[scala.Nothing],
-      callback: dataCallback
-    ): ClientRequest = js.native
-    def put(
-      url: String,
-      oauth_token: String,
-      oauth_token_secret: String,
-      post_body: js.Any,
       post_content_type: String
     ): ClientRequest = js.native
     def put(
@@ -486,6 +454,37 @@ object mod {
       oauth_token_secret: String,
       post_body: js.Any,
       post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    def put(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: js.Any,
+      post_content_type: Unit,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    def put(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: String
+    ): ClientRequest = js.native
+    def put(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: String,
+      callback: dataCallback
+    ): ClientRequest = js.native
+    def put(
+      url: String,
+      oauth_token: String,
+      oauth_token_secret: String,
+      post_body: Unit,
+      post_content_type: Unit,
       callback: dataCallback
     ): ClientRequest = js.native
     
@@ -504,13 +503,6 @@ object mod {
       clientId: String,
       clientSecret: String,
       baseSite: String,
-      authorizePath: js.UndefOr[scala.Nothing],
-      accessTokenPath: String
-    ) = this()
-    def this(
-      clientId: String,
-      clientSecret: String,
-      baseSite: String,
       authorizePath: String,
       accessTokenPath: String
     ) = this()
@@ -518,15 +510,14 @@ object mod {
       clientId: String,
       clientSecret: String,
       baseSite: String,
-      authorizePath: js.UndefOr[scala.Nothing],
-      accessTokenPath: js.UndefOr[scala.Nothing],
-      customHeaders: OutgoingHttpHeaders
+      authorizePath: Unit,
+      accessTokenPath: String
     ) = this()
     def this(
       clientId: String,
       clientSecret: String,
       baseSite: String,
-      authorizePath: js.UndefOr[scala.Nothing],
+      authorizePath: String,
       accessTokenPath: String,
       customHeaders: OutgoingHttpHeaders
     ) = this()
@@ -535,15 +526,23 @@ object mod {
       clientSecret: String,
       baseSite: String,
       authorizePath: String,
-      accessTokenPath: js.UndefOr[scala.Nothing],
+      accessTokenPath: Unit,
       customHeaders: OutgoingHttpHeaders
     ) = this()
     def this(
       clientId: String,
       clientSecret: String,
       baseSite: String,
-      authorizePath: String,
+      authorizePath: Unit,
       accessTokenPath: String,
+      customHeaders: OutgoingHttpHeaders
+    ) = this()
+    def this(
+      clientId: String,
+      clientSecret: String,
+      baseSite: String,
+      authorizePath: Unit,
+      accessTokenPath: Unit,
       customHeaders: OutgoingHttpHeaders
     ) = this()
     
@@ -656,7 +655,7 @@ object mod {
       consumerSecret: String,
       version: String,
       signatureMethod: String,
-      nonceSize: js.UndefOr[scala.Nothing],
+      nonceSize: Double,
       customHeaders: OutgoingHttpHeaders
     ) = this()
     def this(
@@ -666,7 +665,7 @@ object mod {
       consumerSecret: String,
       version: String,
       signatureMethod: String,
-      nonceSize: Double,
+      nonceSize: Unit,
       customHeaders: OutgoingHttpHeaders
     ) = this()
   }

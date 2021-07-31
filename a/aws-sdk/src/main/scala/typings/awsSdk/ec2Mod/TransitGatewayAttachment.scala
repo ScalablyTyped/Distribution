@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayAttachment extends StObject {
   
   /**
     * The association.
     */
-  var Association: js.UndefOr[TransitGatewayAttachmentAssociation] = js.native
+  var Association: js.UndefOr[TransitGatewayAttachmentAssociation] = js.undefined
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the resource.
     */
-  var ResourceOwnerId: js.UndefOr[String] = js.native
+  var ResourceOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The resource type. Note that the tgw-peering resource type has been deprecated.
     */
-  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.native
+  var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
   
   /**
     * The attachment state. Note that the initiating state has been deprecated.
     */
-  var State: js.UndefOr[TransitGatewayAttachmentState] = js.native
+  var State: js.UndefOr[TransitGatewayAttachmentState] = js.undefined
   
   /**
     * The tags for the attachment.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the attachment.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[String] = js.native
+  var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: js.UndefOr[String] = js.native
+  var TransitGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the transit gateway.
     */
-  var TransitGatewayOwnerId: js.UndefOr[String] = js.native
+  var TransitGatewayOwnerId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayAttachment {
   

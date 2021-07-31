@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IArrowFunctionExpressionSyntax extends IUnaryExpressionSyntax {
+trait IArrowFunctionExpressionSyntax
+  extends StObject
+     with IUnaryExpressionSyntax {
   
-  var block: BlockSyntax = js.native
+  var block: BlockSyntax
   
-  var equalsGreaterThanToken: ISyntaxToken = js.native
+  var equalsGreaterThanToken: ISyntaxToken
   
-  var expression: IExpressionSyntax = js.native
+  var expression: IExpressionSyntax
   
-  def isArrowFunctionExpression(): Boolean = js.native
+  def isArrowFunctionExpression(): Boolean
 }
 object IArrowFunctionExpressionSyntax {
   

@@ -3,15 +3,13 @@ package typings.winrt.Windows.Globalization
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICalendarFactory extends StObject {
   
-  def createCalendar(languages: IIterable[String], calendar: String, clock: String): Calendar = js.native
+  def createCalendar(languages: IIterable[String], calendar: String, clock: String): Calendar
   
-  def createCalendarDefaultCalendarAndClock(languages: IIterable[String]): Calendar = js.native
+  def createCalendarDefaultCalendarAndClock(languages: IIterable[String]): Calendar
 }
 object ICalendarFactory {
   

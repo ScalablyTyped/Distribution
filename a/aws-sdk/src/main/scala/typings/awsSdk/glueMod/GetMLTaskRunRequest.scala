@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLTaskRunRequest extends StObject {
   
   /**
     * The unique identifier of the task run.
     */
-  var TaskRunId: HashString = js.native
+  var TaskRunId: HashString
   
   /**
     * The unique identifier of the machine learning transform.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object GetMLTaskRunRequest {
   

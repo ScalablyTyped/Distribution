@@ -30,7 +30,6 @@ import typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions
 import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -42,16 +41,15 @@ object anon {
   }
   
   /* Inlined @testing-library/react.@testing-library/react.Omit<@testing-library/react.@testing-library/react.RenderOptions<{ readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute}>, 'queries'> */
-  @js.native
   trait OmitRenderOptionsreadonly extends StObject {
     
-    var baseElement: js.UndefOr[Element] = js.native
+    var baseElement: js.UndefOr[Element] = js.undefined
     
-    var container: js.UndefOr[Element] = js.native
+    var container: js.UndefOr[Element] = js.undefined
     
-    var hydrate: js.UndefOr[Boolean] = js.native
+    var hydrate: js.UndefOr[Boolean] = js.undefined
     
-    var wrapper: js.UndefOr[ComponentType[js.Object]] = js.native
+    var wrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   }
   object OmitRenderOptionsreadonly {
     
@@ -101,29 +99,21 @@ object anon {
     var container: Element = js.native
     
     def debug(): Unit = js.native
-    def debug(
-      baseElement: js.UndefOr[scala.Nothing],
-      maxLength: js.UndefOr[scala.Nothing],
-      options: OptionsReceived
-    ): Unit = js.native
-    def debug(baseElement: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-    def debug(baseElement: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
     def debug(baseElement: js.Array[Element | DocumentFragment]): Unit = js.native
-    def debug(
-      baseElement: js.Array[Element | DocumentFragment],
-      maxLength: js.UndefOr[scala.Nothing],
-      options: OptionsReceived
-    ): Unit = js.native
     def debug(baseElement: js.Array[Element | DocumentFragment], maxLength: Double): Unit = js.native
     def debug(baseElement: js.Array[Element | DocumentFragment], maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: js.Array[Element | DocumentFragment], maxLength: Unit, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Unit, maxLength: Double): Unit = js.native
+    def debug(baseElement: Unit, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Unit, maxLength: Unit, options: OptionsReceived): Unit = js.native
     def debug(baseElement: DocumentFragment): Unit = js.native
-    def debug(baseElement: DocumentFragment, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
     def debug(baseElement: DocumentFragment, maxLength: Double): Unit = js.native
     def debug(baseElement: DocumentFragment, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: DocumentFragment, maxLength: Unit, options: OptionsReceived): Unit = js.native
     def debug(baseElement: Element): Unit = js.native
-    def debug(baseElement: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
     def debug(baseElement: Element, maxLength: Double): Unit = js.native
     def debug(baseElement: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
+    def debug(baseElement: Element, maxLength: Unit, options: OptionsReceived): Unit = js.native
     
     var findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
     
@@ -226,104 +216,103 @@ object anon {
     def unmount(): Boolean = js.native
   }
   
-  @js.native
   trait Typeofqueries extends StObject {
     
-    val findAllByAltText: FindAllByBoundAttribute = js.native
+    val findAllByAltText: FindAllByBoundAttribute
     
-    val findAllByDisplayValue: FindAllByBoundAttribute = js.native
+    val findAllByDisplayValue: FindAllByBoundAttribute
     
-    val findAllByLabelText: FindAllByText_ = js.native
+    val findAllByLabelText: FindAllByText_
     
-    val findAllByPlaceholderText: FindAllByBoundAttribute = js.native
+    val findAllByPlaceholderText: FindAllByBoundAttribute
     
-    val findAllByRole: FindAllByRole_ = js.native
+    val findAllByRole: FindAllByRole_
     
-    val findAllByTestId: FindAllByBoundAttribute = js.native
+    val findAllByTestId: FindAllByBoundAttribute
     
-    val findAllByText: FindAllByText_ = js.native
+    val findAllByText: FindAllByText_
     
-    val findAllByTitle: FindAllByBoundAttribute = js.native
+    val findAllByTitle: FindAllByBoundAttribute
     
-    val findByAltText: FindByBoundAttribute = js.native
+    val findByAltText: FindByBoundAttribute
     
-    val findByDisplayValue: FindByBoundAttribute = js.native
+    val findByDisplayValue: FindByBoundAttribute
     
-    val findByLabelText: FindByText_ = js.native
+    val findByLabelText: FindByText_
     
-    val findByPlaceholderText: FindByBoundAttribute = js.native
+    val findByPlaceholderText: FindByBoundAttribute
     
-    val findByRole: FindByRole_ = js.native
+    val findByRole: FindByRole_
     
-    val findByTestId: FindByBoundAttribute = js.native
+    val findByTestId: FindByBoundAttribute
     
-    val findByText: FindByText_ = js.native
+    val findByText: FindByText_
     
-    val findByTitle: FindByBoundAttribute = js.native
+    val findByTitle: FindByBoundAttribute
     
-    val getAllByAltText: AllByBoundAttribute = js.native
+    val getAllByAltText: AllByBoundAttribute
     
-    val getAllByDisplayValue: AllByBoundAttribute = js.native
+    val getAllByDisplayValue: AllByBoundAttribute
     
-    val getAllByLabelText: AllByText = js.native
+    val getAllByLabelText: AllByText
     
-    val getAllByPlaceholderText: AllByBoundAttribute = js.native
+    val getAllByPlaceholderText: AllByBoundAttribute
     
-    val getAllByRole: AllByRole = js.native
+    val getAllByRole: AllByRole
     
-    val getAllByTestId: AllByBoundAttribute = js.native
+    val getAllByTestId: AllByBoundAttribute
     
-    val getAllByText: AllByText = js.native
+    val getAllByText: AllByText
     
-    val getAllByTitle: AllByBoundAttribute = js.native
+    val getAllByTitle: AllByBoundAttribute
     
-    val getByAltText: GetByBoundAttribute = js.native
+    val getByAltText: GetByBoundAttribute
     
-    val getByDisplayValue: GetByBoundAttribute = js.native
+    val getByDisplayValue: GetByBoundAttribute
     
-    val getByLabelText: GetByText_ = js.native
+    val getByLabelText: GetByText_
     
-    val getByPlaceholderText: GetByBoundAttribute = js.native
+    val getByPlaceholderText: GetByBoundAttribute
     
-    val getByRole: GetByRole_ = js.native
+    val getByRole: GetByRole_
     
-    val getByTestId: GetByBoundAttribute = js.native
+    val getByTestId: GetByBoundAttribute
     
-    val getByText: GetByText_ = js.native
+    val getByText: GetByText_
     
-    val getByTitle: GetByBoundAttribute = js.native
+    val getByTitle: GetByBoundAttribute
     
-    val queryAllByAltText: AllByBoundAttribute = js.native
+    val queryAllByAltText: AllByBoundAttribute
     
-    val queryAllByDisplayValue: AllByBoundAttribute = js.native
+    val queryAllByDisplayValue: AllByBoundAttribute
     
-    val queryAllByLabelText: AllByText = js.native
+    val queryAllByLabelText: AllByText
     
-    val queryAllByPlaceholderText: AllByBoundAttribute = js.native
+    val queryAllByPlaceholderText: AllByBoundAttribute
     
-    val queryAllByRole: AllByRole = js.native
+    val queryAllByRole: AllByRole
     
-    val queryAllByTestId: AllByBoundAttribute = js.native
+    val queryAllByTestId: AllByBoundAttribute
     
-    val queryAllByText: AllByText = js.native
+    val queryAllByText: AllByText
     
-    val queryAllByTitle: AllByBoundAttribute = js.native
+    val queryAllByTitle: AllByBoundAttribute
     
-    val queryByAltText: QueryByBoundAttribute = js.native
+    val queryByAltText: QueryByBoundAttribute
     
-    val queryByDisplayValue: QueryByBoundAttribute = js.native
+    val queryByDisplayValue: QueryByBoundAttribute
     
-    val queryByLabelText: QueryByText_ = js.native
+    val queryByLabelText: QueryByText_
     
-    val queryByPlaceholderText: QueryByBoundAttribute = js.native
+    val queryByPlaceholderText: QueryByBoundAttribute
     
-    val queryByRole: QueryByRole_ = js.native
+    val queryByRole: QueryByRole_
     
-    val queryByTestId: QueryByBoundAttribute = js.native
+    val queryByTestId: QueryByBoundAttribute
     
-    val queryByText: QueryByText_ = js.native
+    val queryByText: QueryByText_
     
-    val queryByTitle: QueryByBoundAttribute = js.native
+    val queryByTitle: QueryByBoundAttribute
   }
   object Typeofqueries {
     

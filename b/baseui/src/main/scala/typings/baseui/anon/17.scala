@@ -5,23 +5,21 @@ import typings.baseui.baseuiStrings.Bermuda
 import typings.baseui.baseuiStrings.Plussign1441
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `17` extends StObject {
   
-  var dialCode: Plussign1441 = js.native
+  var dialCode: Plussign1441
   
-  var id: BM = js.native
+  var id: BM
   
-  var label: Bermuda = js.native
+  var label: Bermuda
 }
 object `17` {
   
   @scala.inline
-  def apply(dialCode: Plussign1441, id: BM, label: Bermuda): `17` = {
-    val __obj = js.Dynamic.literal(dialCode = dialCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  def apply(): `17` = {
+    val __obj = js.Dynamic.literal(dialCode = "+1441", id = "BM", label = "Bermuda")
     __obj.asInstanceOf[`17`]
   }
   

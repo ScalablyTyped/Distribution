@@ -3,17 +3,15 @@ package typings.playable
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardControlTypesMod {
   
-  @js.native
   trait IKeyboardControl extends StObject {
     
-    def addKeyControl(key: Double, callback: EventListener): Unit = js.native
+    def addKeyControl(key: Double, callback: EventListener): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object IKeyboardControl {
     

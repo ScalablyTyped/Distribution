@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,5 +13,7 @@ object LocationTriggerType extends StObject {
   
   /** Indicates a geofence location trigger. */
   @js.native
-  sealed trait geofence extends LocationTriggerType
+  sealed trait geofence
+    extends StObject
+       with LocationTriggerType
 }

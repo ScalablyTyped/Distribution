@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventCategoriesMessage extends StObject {
   
   /**
     * A list of event categories descriptions.
     */
-  var EventCategoriesMapList: js.UndefOr[typings.awsSdk.redshiftMod.EventCategoriesMapList] = js.native
+  var EventCategoriesMapList: js.UndefOr[typings.awsSdk.redshiftMod.EventCategoriesMapList] = js.undefined
 }
 object EventCategoriesMessage {
   

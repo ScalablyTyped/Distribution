@@ -12,7 +12,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultStyleIndexNativeMod {
@@ -82,26 +81,25 @@ object resultStyleIndexNativeMod {
     def title_=(x: MarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IResultStyle extends StObject {
     
-    var button: ViewStyle = js.native
+    var button: ViewStyle
     
-    var buttonWrap: ViewStyle = js.native
+    var buttonWrap: ViewStyle
     
-    var img: ImageStyle = js.native
+    var img: ImageStyle
     
-    var imgWrap: ViewStyle = js.native
+    var imgWrap: ViewStyle
     
-    var message: ViewStyle = js.native
+    var message: ViewStyle
     
-    var messageText: TextStyle = js.native
+    var messageText: TextStyle
     
-    var result: ViewStyle = js.native
+    var result: ViewStyle
     
-    var title: ViewStyle = js.native
+    var title: ViewStyle
     
-    var titleText: TextStyle = js.native
+    var titleText: TextStyle
   }
   object IResultStyle {
     

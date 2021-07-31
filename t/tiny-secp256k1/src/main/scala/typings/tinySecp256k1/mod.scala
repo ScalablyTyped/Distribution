@@ -3,68 +3,55 @@ package typings.tinySecp256k1
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tiny-secp256k1", "isPoint")
+  @JSImport("tiny-secp256k1", JSImport.Namespace)
   @js.native
-  def isPoint(A: Buffer): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tiny-secp256k1", "isPointCompressed")
-  @js.native
-  def isPointCompressed(A: Buffer): Boolean = js.native
+  @scala.inline
+  def isPoint(A: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(A.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tiny-secp256k1", "isPrivate")
-  @js.native
-  def isPrivate(d: Buffer): Boolean = js.native
+  @scala.inline
+  def isPointCompressed(A: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPointCompressed")(A.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tiny-secp256k1", "pointAdd")
-  @js.native
-  def pointAdd(A: Buffer, B: Buffer): Buffer | Null = js.native
-  @JSImport("tiny-secp256k1", "pointAdd")
-  @js.native
-  def pointAdd(A: Buffer, B: Buffer, compressed: Boolean): Buffer | Null = js.native
+  @scala.inline
+  def isPrivate(d: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tiny-secp256k1", "pointAddScalar")
-  @js.native
-  def pointAddScalar(A: Buffer, tweak: Buffer): Buffer | Null = js.native
-  @JSImport("tiny-secp256k1", "pointAddScalar")
-  @js.native
-  def pointAddScalar(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = js.native
+  @scala.inline
+  def pointAdd(A: Buffer, B: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAdd")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  @scala.inline
+  def pointAdd(A: Buffer, B: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAdd")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @JSImport("tiny-secp256k1", "pointCompress")
-  @js.native
-  def pointCompress(A: Buffer, compressed: Boolean): Buffer = js.native
+  @scala.inline
+  def pointAddScalar(A: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAddScalar")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  @scala.inline
+  def pointAddScalar(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAddScalar")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @JSImport("tiny-secp256k1", "pointFromScalar")
-  @js.native
-  def pointFromScalar(d: Buffer): Buffer | Null = js.native
-  @JSImport("tiny-secp256k1", "pointFromScalar")
-  @js.native
-  def pointFromScalar(d: Buffer, compressed: Boolean): Buffer | Null = js.native
+  @scala.inline
+  def pointCompress(A: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pointCompress")(A.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("tiny-secp256k1", "pointMultiply")
-  @js.native
-  def pointMultiply(A: Buffer, tweak: Buffer): Buffer | Null = js.native
-  @JSImport("tiny-secp256k1", "pointMultiply")
-  @js.native
-  def pointMultiply(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = js.native
+  @scala.inline
+  def pointFromScalar(d: Buffer): Buffer | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("pointFromScalar")(d.asInstanceOf[js.Any]).asInstanceOf[Buffer | Null]
+  @scala.inline
+  def pointFromScalar(d: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointFromScalar")(d.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @JSImport("tiny-secp256k1", "privateAdd")
-  @js.native
-  def privateAdd(d: Buffer, tweak: Buffer): Buffer | Null = js.native
+  @scala.inline
+  def pointMultiply(A: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointMultiply")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
+  @scala.inline
+  def pointMultiply(A: Buffer, tweak: Buffer, compressed: Boolean): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointMultiply")(A.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @JSImport("tiny-secp256k1", "privateSub")
-  @js.native
-  def privateSub(d: Buffer, tweak: Buffer): Buffer | Null = js.native
+  @scala.inline
+  def privateAdd(d: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("privateAdd")(d.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @JSImport("tiny-secp256k1", "sign")
-  @js.native
-  def sign(message: Buffer, privateKey: Buffer): Buffer = js.native
+  @scala.inline
+  def privateSub(d: Buffer, tweak: Buffer): Buffer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("privateSub")(d.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Buffer | Null]
   
-  @JSImport("tiny-secp256k1", "verify")
-  @js.native
-  def verify(message: Buffer, publicKey: Buffer, signature: Buffer): Boolean = js.native
+  @scala.inline
+  def sign(message: Buffer, privateKey: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def verify(message: Buffer, publicKey: Buffer, signature: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

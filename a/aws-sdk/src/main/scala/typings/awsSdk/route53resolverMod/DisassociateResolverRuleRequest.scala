@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateResolverRuleRequest extends StObject {
   
   /**
     * The ID of the Resolver rule that you want to disassociate from the specified VPC.
     */
-  var ResolverRuleId: ResourceId = js.native
+  var ResolverRuleId: ResourceId
   
   /**
     * The ID of the VPC that you want to disassociate the Resolver rule from.
     */
-  var VPCId: ResourceId = js.native
+  var VPCId: ResourceId
 }
 object DisassociateResolverRuleRequest {
   

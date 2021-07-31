@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /** [Output-only] Reservation name or "unreserved" for on-demand resources usage. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Slot-milliseconds the job spent in the given reservation. */
-  var slotMs: js.UndefOr[String] = js.native
+  var slotMs: js.UndefOr[String] = js.undefined
 }
 object Name {
   

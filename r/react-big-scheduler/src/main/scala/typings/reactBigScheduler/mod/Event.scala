@@ -2,25 +2,23 @@ package typings.reactBigScheduler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var bgColor: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.undefined
   
-  var end: String = js.native
+  var end: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var resourceId: String = js.native
+  var resourceId: String
   
-  var rrule: js.UndefOr[String] = js.native
+  var rrule: js.UndefOr[String] = js.undefined
   
-  var start: String = js.native
+  var start: String
   
-  var title: String = js.native
+  var title: String
 }
 object Event {
   

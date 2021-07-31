@@ -6,29 +6,29 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.`21`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DialogConfirmProps extends DialogProps {
+trait DialogConfirmProps
+  extends StObject
+     with DialogProps {
   
-  var cancelAccessibilityLabel: js.UndefOr[String] = js.native
+  var cancelAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var cancelText: String = js.native
+  var cancelText: String
   
-  var cancelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var cancelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var confirmAccessibilityLabel: js.UndefOr[String] = js.native
+  var confirmAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var confirmText: String = js.native
+  var confirmText: String
   
-  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.native
+  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.undefined
 }
 object DialogConfirmProps {
   

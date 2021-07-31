@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domwrapMod {
@@ -75,28 +74,27 @@ object domwrapMod {
     def setChildrenWidthAndResize(): Unit = js.native
   }
   
-  @js.native
   trait DOMWrapProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactElement]] = js.native
+    var children: js.UndefOr[js.Array[ReactElement]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[MenuMode] = js.native
+    var mode: js.UndefOr[MenuMode] = js.undefined
     
-    var overflowedIndicator: js.UndefOr[ReactNode] = js.native
+    var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DOMWrapProps {
     
@@ -174,10 +172,9 @@ object domwrapMod {
     }
   }
   
-  @js.native
   trait DOMWrapState extends StObject {
     
-    var lastVisibleIndex: Double = js.native
+    var lastVisibleIndex: Double
   }
   object DOMWrapState {
     

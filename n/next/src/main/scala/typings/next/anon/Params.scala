@@ -2,15 +2,13 @@ package typings.next.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var params: js.Array[String] = js.native
+  var params: js.Array[String]
   
-  var result: String = js.native
+  var result: String
 }
 object Params {
   

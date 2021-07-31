@@ -7,7 +7,6 @@ import typings.tslint.tslintStrings.after
 import typings.tslint.tslintStrings.before
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typedefWhitespaceRuleMod {
@@ -24,12 +23,11 @@ object typedefWhitespaceRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/typedefWhitespaceRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING_after(option: String, location: after, `type`: String): String = js.native
-    @JSImport("tslint/lib/rules/typedefWhitespaceRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING_before(option: String, location: before, `type`: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_after(option: String, location: after, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(option.asInstanceOf[js.Any], location.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def FAILURE_STRING_before(option: String, location: before, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(option.asInstanceOf[js.Any], location.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/typedefWhitespaceRule", "Rule.metadata")
     @js.native

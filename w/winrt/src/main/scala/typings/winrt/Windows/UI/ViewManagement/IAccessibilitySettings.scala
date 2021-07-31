@@ -2,17 +2,15 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessibilitySettings extends StObject {
   
-  var highContrast: Boolean = js.native
+  var highContrast: Boolean
   
-  var highContrastScheme: String = js.native
+  var highContrastScheme: String
   
-  var onhighcontrastchanged: js.Any = js.native
+  var onhighcontrastchanged: js.Any
 }
 object IAccessibilitySettings {
   

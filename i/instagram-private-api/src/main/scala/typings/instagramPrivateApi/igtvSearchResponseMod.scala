@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igtvSearchResponseMod {
   
-  @js.native
   trait IgtvSearchResponseBiographyWithEntities extends StObject {
     
-    var entities: js.Array[IgtvSearchResponseEntitiesItem] = js.native
+    var entities: js.Array[IgtvSearchResponseEntitiesItem]
     
-    var raw_text: String = js.native
+    var raw_text: String
   }
   object IgtvSearchResponseBiographyWithEntities {
     
@@ -36,30 +34,29 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseChannel extends StObject {
     
-    var approx_total_videos: Null = js.native
+    var approx_total_videos: Null
     
-    var cover_photo_url: Null = js.native
+    var cover_photo_url: Null
     
-    var description: Null = js.native
+    var description: Null
     
-    var id: String = js.native
+    var id: String
     
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any]
     
-    var max_id: Null = js.native
+    var max_id: Null
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var seen_state: IgtvSearchResponseSeenState = js.native
+    var seen_state: IgtvSearchResponseSeenState
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var user_dict: IgtvSearchResponseUserDict = js.native
+    var user_dict: IgtvSearchResponseUserDict
   }
   object IgtvSearchResponseChannel {
     
@@ -69,7 +66,7 @@ object igtvSearchResponseMod {
       cover_photo_url: Null,
       description: Null,
       id: String,
-      items: js.Array[_],
+      items: js.Array[js.Any],
       max_id: Null,
       more_available: Boolean,
       seen_state: IgtvSearchResponseSeenState,
@@ -98,7 +95,7 @@ object igtvSearchResponseMod {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
@@ -123,12 +120,11 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseEntitiesItem extends StObject {
     
-    var hashtag: js.UndefOr[IgtvSearchResponseHashtag] = js.native
+    var hashtag: js.UndefOr[IgtvSearchResponseHashtag] = js.undefined
     
-    var user: js.UndefOr[IgtvSearchResponseUser] = js.native
+    var user: js.UndefOr[IgtvSearchResponseUser] = js.undefined
   }
   object IgtvSearchResponseEntitiesItem {
     
@@ -155,26 +151,25 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseFriendshipStatus extends StObject {
     
-    var blocking: js.UndefOr[Boolean] = js.native
+    var blocking: js.UndefOr[Boolean] = js.undefined
     
-    var followed_by: js.UndefOr[Boolean] = js.native
+    var followed_by: js.UndefOr[Boolean] = js.undefined
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var muting: js.UndefOr[Boolean] = js.native
+    var muting: js.UndefOr[Boolean] = js.undefined
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object IgtvSearchResponseFriendshipStatus {
     
@@ -232,12 +227,11 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseHashtag extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object IgtvSearchResponseHashtag {
     
@@ -258,14 +252,13 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseResultsItem extends StObject {
     
-    var channel: IgtvSearchResponseChannel = js.native
+    var channel: IgtvSearchResponseChannel
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var user: IgtvSearchResponseUser = js.native
+    var user: IgtvSearchResponseUser
   }
   object IgtvSearchResponseResultsItem {
     
@@ -290,18 +283,17 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseRootObject extends StObject {
     
-    var has_more: Boolean = js.native
+    var has_more: Boolean
     
-    var num_results: Double = js.native
+    var num_results: Double
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var results: js.Array[IgtvSearchResponseResultsItem] = js.native
+    var results: js.Array[IgtvSearchResponseResultsItem]
     
-    var status: String = js.native
+    var status: String
   }
   object IgtvSearchResponseRootObject {
     
@@ -340,45 +332,43 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseSeenState extends StObject
   
-  @js.native
   trait IgtvSearchResponseUser extends StObject {
     
-    var biography: js.UndefOr[String] = js.native
+    var biography: js.UndefOr[String] = js.undefined
     
-    var biography_with_entities: js.UndefOr[IgtvSearchResponseBiographyWithEntities] = js.native
+    var biography_with_entities: js.UndefOr[IgtvSearchResponseBiographyWithEntities] = js.undefined
     
-    var external_lynx_url: js.UndefOr[String] = js.native
+    var external_lynx_url: js.UndefOr[String] = js.undefined
     
-    var external_url: js.UndefOr[String] = js.native
+    var external_url: js.UndefOr[String] = js.undefined
     
-    var friendship_status: js.UndefOr[IgtvSearchResponseFriendshipStatus] = js.native
+    var friendship_status: js.UndefOr[IgtvSearchResponseFriendshipStatus] = js.undefined
     
-    var full_name: js.UndefOr[String] = js.native
+    var full_name: js.UndefOr[String] = js.undefined
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var has_biography_translation: js.UndefOr[Boolean] = js.native
+    var has_biography_translation: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
-    var is_private: js.UndefOr[Boolean] = js.native
+    var is_private: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: js.UndefOr[Boolean] = js.native
+    var is_verified: js.UndefOr[Boolean] = js.undefined
     
-    var latest_reel_media: js.UndefOr[Double] = js.native
+    var latest_reel_media: js.UndefOr[Double] = js.undefined
     
-    var mutual_followers_count: js.UndefOr[Double] = js.native
+    var mutual_followers_count: js.UndefOr[Double] = js.undefined
     
-    var pk: js.UndefOr[Double] = js.native
+    var pk: js.UndefOr[Double] = js.undefined
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: js.UndefOr[String] = js.native
+    var profile_pic_url: js.UndefOr[String] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object IgtvSearchResponseUser {
     
@@ -492,50 +482,49 @@ object igtvSearchResponseMod {
     }
   }
   
-  @js.native
   trait IgtvSearchResponseUserDict extends StObject {
     
-    var biography: String = js.native
+    var biography: String
     
-    var biography_with_entities: IgtvSearchResponseBiographyWithEntities = js.native
+    var biography_with_entities: IgtvSearchResponseBiographyWithEntities
     
-    var external_lynx_url: js.UndefOr[String] = js.native
+    var external_lynx_url: js.UndefOr[String] = js.undefined
     
-    var external_url: String = js.native
+    var external_url: String
     
-    var follower_count: Double = js.native
+    var follower_count: Double
     
-    var following_count: Double = js.native
+    var following_count: Double
     
-    var following_tag_count: Double = js.native
+    var following_tag_count: Double
     
-    var friendship_status: IgtvSearchResponseFriendshipStatus = js.native
+    var friendship_status: IgtvSearchResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var geo_media_count: js.UndefOr[Double] = js.native
+    var geo_media_count: js.UndefOr[Double] = js.undefined
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var has_biography_translation: js.UndefOr[Boolean] = js.native
+    var has_biography_translation: js.UndefOr[Boolean] = js.undefined
     
-    var has_igtv_series: Boolean = js.native
+    var has_igtv_series: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var media_count: Double = js.native
+    var media_count: Double
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var total_igtv_videos: Double = js.native
+    var total_igtv_videos: Double
     
-    var username: String = js.native
+    var username: String
   }
   object IgtvSearchResponseUserDict {
     

@@ -2,40 +2,38 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to a background task instance. */
-@js.native
 trait IBackgroundTaskInstance extends StObject {
   
   /**
     * Informs the system that the background task might continue to perform work after the IBackgroundTask.Run method returns.
     * @return A background task deferral.
     */
-  def getDeferral(): BackgroundTaskDeferral = js.native
+  def getDeferral(): BackgroundTaskDeferral
   
   /**
     * Retrieves the number of times the background task has been suspended for using too many resources.
     * @param counter Indicates the type of resource to include in the throttle count: network, CPU, or both.
     * @return This method returns the number of times the background task has been suspended for exceeding its quota of the indicated resource type.
     */
-  def getThrottleCount(counter: BackgroundTaskThrottleCounter): Double = js.native
+  def getThrottleCount(counter: BackgroundTaskThrottleCounter): Double
   
   /** Gets the instance ID of the background task instance. */
-  var instanceId: String = js.native
+  var instanceId: String
   
   /** Gets or sets progress status for a background task instance. */
-  var progress: Double = js.native
+  var progress: Double
   
   /** Gets the number of times resource management policy caused the background task to be suspended. */
-  var suspendedCount: Double = js.native
+  var suspendedCount: Double
   
   /** Gets access to the registered background task for this background task instance. */
-  var task: BackgroundTaskRegistration = js.native
+  var task: BackgroundTaskRegistration
   
   /** Gets additional information associated with a background task instance. */
-  var triggerDetails: js.Any = js.native
+  var triggerDetails: js.Any
 }
 object IBackgroundTaskInstance {
   

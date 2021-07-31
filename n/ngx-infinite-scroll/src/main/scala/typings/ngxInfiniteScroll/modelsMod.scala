@@ -4,19 +4,17 @@ import typings.angularCore.mod.ElementRef
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsMod {
   
   type ContainerRef = Window | ElementRef[js.Any] | js.Any
   
-  @js.native
   trait IInfiniteScrollAction extends StObject {
     
-    var payload: IInfiniteScrollEvent = js.native
+    var payload: IInfiniteScrollEvent
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IInfiniteScrollAction {
     
@@ -38,10 +36,9 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IInfiniteScrollEvent extends StObject {
     
-    var currentScrollPosition: Double = js.native
+    var currentScrollPosition: Double
   }
   object IInfiniteScrollEvent {
     
@@ -59,12 +56,11 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IPositionElements extends StObject {
     
-    var axis: js.Any = js.native
+    var axis: js.Any
     
-    var windowElement: ContainerRef = js.native
+    var windowElement: ContainerRef
   }
   object IPositionElements {
     
@@ -85,16 +81,15 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IPositionStats extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var isWindow: js.UndefOr[Boolean] = js.native
+    var isWindow: js.UndefOr[Boolean] = js.undefined
     
-    var scrolled: Double = js.native
+    var scrolled: Double
     
-    var totalToScroll: Double = js.native
+    var totalToScroll: Double
   }
   object IPositionStats {
     
@@ -124,14 +119,13 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IResolver extends StObject {
     
-    var axis: js.Any = js.native
+    var axis: js.Any
     
-    var container: ContainerRef = js.native
+    var container: ContainerRef
     
-    var isWindow: Boolean = js.native
+    var isWindow: Boolean
   }
   object IResolver {
     
@@ -155,14 +149,13 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IScrollParams extends StObject {
     
-    var fire: Boolean = js.native
+    var fire: Boolean
     
-    var scrollDown: Boolean = js.native
+    var scrollDown: Boolean
     
-    var stats: IPositionStats = js.native
+    var stats: IPositionStats
   }
   object IScrollParams {
     
@@ -186,12 +179,11 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IScrollRegisterConfig extends StObject {
     
-    var container: ContainerRef = js.native
+    var container: ContainerRef
     
-    var throttle: Double = js.native
+    var throttle: Double
   }
   object IScrollRegisterConfig {
     
@@ -212,16 +204,15 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IScrollState extends StObject {
     
-    var lastScrollPosition: Double = js.native
+    var lastScrollPosition: Double
     
-    var lastTotalToScroll: Double = js.native
+    var lastTotalToScroll: Double
     
-    var totalToScroll: Double = js.native
+    var totalToScroll: Double
     
-    var triggered: IScrollerDistance = js.native
+    var triggered: IScrollerDistance
   }
   object IScrollState {
     
@@ -253,28 +244,27 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IScroller extends StObject {
     
-    var alwaysCallback: Boolean = js.native
+    var alwaysCallback: Boolean
     
-    var disable: Boolean = js.native
+    var disable: Boolean
     
-    var downDistance: Double = js.native
+    var downDistance: Double
     
-    var element: ElementRef[_] = js.native
+    var element: ElementRef[js.Any]
     
-    var fromRoot: Boolean = js.native
+    var fromRoot: Boolean
     
-    var horizontal: Boolean = js.native
+    var horizontal: Boolean
     
-    var scrollContainer: String | ElementRef[_] = js.native
+    var scrollContainer: String | ElementRef[js.Any]
     
-    var scrollWindow: Boolean = js.native
+    var scrollWindow: Boolean
     
-    var throttle: Double = js.native
+    var throttle: Double
     
-    var upDistance: Double = js.native
+    var upDistance: Double
   }
   object IScroller {
     
@@ -283,10 +273,10 @@ object modelsMod {
       alwaysCallback: Boolean,
       disable: Boolean,
       downDistance: Double,
-      element: ElementRef[_],
+      element: ElementRef[js.Any],
       fromRoot: Boolean,
       horizontal: Boolean,
-      scrollContainer: String | ElementRef[_],
+      scrollContainer: String | ElementRef[js.Any],
       scrollWindow: Boolean,
       throttle: Double,
       upDistance: Double
@@ -308,7 +298,7 @@ object modelsMod {
       def setDownDistance(value: Double): Self = StObject.set(x, "downDistance", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setElement(value: ElementRef[_]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      def setElement(value: ElementRef[js.Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFromRoot(value: Boolean): Self = StObject.set(x, "fromRoot", value.asInstanceOf[js.Any])
@@ -317,7 +307,7 @@ object modelsMod {
       def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setScrollContainer(value: String | ElementRef[_]): Self = StObject.set(x, "scrollContainer", value.asInstanceOf[js.Any])
+      def setScrollContainer(value: String | ElementRef[js.Any]): Self = StObject.set(x, "scrollContainer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScrollWindow(value: Boolean): Self = StObject.set(x, "scrollWindow", value.asInstanceOf[js.Any])
@@ -330,12 +320,11 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait IScrollerDistance extends StObject {
     
-    var down: js.UndefOr[Double] = js.native
+    var down: js.UndefOr[Double] = js.undefined
     
-    var up: js.UndefOr[Double] = js.native
+    var up: js.UndefOr[Double] = js.undefined
   }
   object IScrollerDistance {
     

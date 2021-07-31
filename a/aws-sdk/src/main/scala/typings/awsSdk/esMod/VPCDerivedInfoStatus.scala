@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPCDerivedInfoStatus extends StObject {
   
   /**
     *  Specifies the VPC options for the specified Elasticsearch domain.
     */
-  var Options: VPCDerivedInfo = js.native
+  var Options: VPCDerivedInfo
   
   /**
     *  Specifies the status of the VPC options for the specified Elasticsearch domain.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object VPCDerivedInfoStatus {
   

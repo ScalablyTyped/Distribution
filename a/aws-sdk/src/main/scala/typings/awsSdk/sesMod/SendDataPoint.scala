@@ -2,36 +2,34 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendDataPoint extends StObject {
   
   /**
     * Number of emails that have bounced.
     */
-  var Bounces: js.UndefOr[Counter] = js.native
+  var Bounces: js.UndefOr[Counter] = js.undefined
   
   /**
     * Number of unwanted emails that were rejected by recipients.
     */
-  var Complaints: js.UndefOr[Counter] = js.native
+  var Complaints: js.UndefOr[Counter] = js.undefined
   
   /**
     * Number of emails that have been sent.
     */
-  var DeliveryAttempts: js.UndefOr[Counter] = js.native
+  var DeliveryAttempts: js.UndefOr[Counter] = js.undefined
   
   /**
     * Number of emails rejected by Amazon SES.
     */
-  var Rejects: js.UndefOr[Counter] = js.native
+  var Rejects: js.UndefOr[Counter] = js.undefined
   
   /**
     * Time of the data point.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.sesMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.sesMod.Timestamp] = js.undefined
 }
 object SendDataPoint {
   

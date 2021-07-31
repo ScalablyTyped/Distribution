@@ -11,25 +11,23 @@ import typings.electronPublish.mod.UploadTask
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packagerApiMod {
   
-  @js.native
   trait ArtifactBuildStarted extends StObject {
     
-    val arch: Arch | Null = js.native
+    val arch: Arch | Null
     
-    val file: String = js.native
+    val file: String
     
-    val targetPresentableName: String = js.native
+    val targetPresentableName: String
   }
   object ArtifactBuildStarted {
     
     @scala.inline
     def apply(file: String, targetPresentableName: String): ArtifactBuildStarted = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], targetPresentableName = targetPresentableName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], targetPresentableName = targetPresentableName.asInstanceOf[js.Any], arch = null)
       __obj.asInstanceOf[ArtifactBuildStarted]
     }
     
@@ -50,24 +48,25 @@ object packagerApiMod {
     }
   }
   
-  @js.native
-  trait ArtifactCreated extends UploadTask {
+  trait ArtifactCreated
+    extends StObject
+       with UploadTask {
     
-    val isWriteUpdateInfo: js.UndefOr[Boolean] = js.native
+    val isWriteUpdateInfo: js.UndefOr[Boolean] = js.undefined
     
-    val packager: PlatformPackager[_] = js.native
+    val packager: PlatformPackager[js.Any]
     
-    val publishConfig: js.UndefOr[PublishConfiguration | Null] = js.native
+    val publishConfig: js.UndefOr[PublishConfiguration | Null] = js.undefined
     
-    val target: Target | Null = js.native
+    val target: Target | Null
     
-    var updateInfo: js.UndefOr[js.Any] = js.native
+    var updateInfo: js.UndefOr[js.Any] = js.undefined
   }
   object ArtifactCreated {
     
     @scala.inline
-    def apply(file: String, packager: PlatformPackager[_]): ArtifactCreated = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any])
+    def apply(file: String, packager: PlatformPackager[js.Any]): ArtifactCreated = {
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], arch = null, target = null)
       __obj.asInstanceOf[ArtifactCreated]
     }
     
@@ -81,7 +80,7 @@ object packagerApiMod {
       def setIsWriteUpdateInfoUndefined: Self = StObject.set(x, "isWriteUpdateInfo", js.undefined)
       
       @scala.inline
-      def setPackager(value: PlatformPackager[_]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPublishConfig(value: PublishConfiguration): Self = StObject.set(x, "publishConfig", value.asInstanceOf[js.Any])
@@ -106,28 +105,27 @@ object packagerApiMod {
     }
   }
   
-  @js.native
   trait PackagerOptions extends StObject {
     
-    val config: js.UndefOr[Configuration | String | Null] = js.native
+    val config: js.UndefOr[Configuration | String | Null] = js.undefined
     
-    val effectiveOptionComputed: js.UndefOr[js.Function1[/* options */ js.Any, js.Promise[Boolean]]] = js.native
+    val effectiveOptionComputed: js.UndefOr[js.Function1[/* options */ js.Any, js.Promise[Boolean]]] = js.undefined
     
-    var linux: js.UndefOr[js.Array[String]] = js.native
+    var linux: js.UndefOr[js.Array[String]] = js.undefined
     
-    var mac: js.UndefOr[js.Array[String]] = js.native
+    var mac: js.UndefOr[js.Array[String]] = js.undefined
     
     var platformPackagerFactory: js.UndefOr[
-        (js.Function2[/* info */ Packager, /* platform */ Platform, PlatformPackager[_]]) | Null
-      ] = js.native
+        (js.Function2[/* info */ Packager, /* platform */ Platform, PlatformPackager[js.Any]]) | Null
+      ] = js.undefined
     
-    val prepackaged: js.UndefOr[String | Null] = js.native
+    val prepackaged: js.UndefOr[String | Null] = js.undefined
     
-    var projectDir: js.UndefOr[String | Null] = js.native
+    var projectDir: js.UndefOr[String | Null] = js.undefined
     
-    var targets: js.UndefOr[Map[Platform, Map[Arch, js.Array[String]]]] = js.native
+    var targets: js.UndefOr[Map[Platform, Map[Arch, js.Array[String]]]] = js.undefined
     
-    var win: js.UndefOr[js.Array[String]] = js.native
+    var win: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PackagerOptions {
     
@@ -174,7 +172,7 @@ object packagerApiMod {
       def setMacVarargs(value: String*): Self = StObject.set(x, "mac", js.Array(value :_*))
       
       @scala.inline
-      def setPlatformPackagerFactory(value: (/* info */ Packager, /* platform */ Platform) => PlatformPackager[_]): Self = StObject.set(x, "platformPackagerFactory", js.Any.fromFunction2(value))
+      def setPlatformPackagerFactory(value: (/* info */ Packager, /* platform */ Platform) => PlatformPackager[js.Any]): Self = StObject.set(x, "platformPackagerFactory", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPlatformPackagerFactoryNull: Self = StObject.set(x, "platformPackagerFactory", null)

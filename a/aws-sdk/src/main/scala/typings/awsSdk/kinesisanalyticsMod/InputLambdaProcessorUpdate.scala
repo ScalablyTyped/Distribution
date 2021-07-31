@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputLambdaProcessorUpdate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the new AWS Lambda function that is used to preprocess the records in the stream.  To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see Example ARNs: AWS Lambda  
     */
-  var ResourceARNUpdate: js.UndefOr[ResourceARN] = js.native
+  var ResourceARNUpdate: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The ARN of the new IAM role that is used to access the AWS Lambda function.
     */
-  var RoleARNUpdate: js.UndefOr[RoleARN] = js.native
+  var RoleARNUpdate: js.UndefOr[RoleARN] = js.undefined
 }
 object InputLambdaProcessorUpdate {
   

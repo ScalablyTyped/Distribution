@@ -3,16 +3,14 @@ package typings.protobufjs.mod.common
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Any message. */
-@js.native
 trait IAny extends StObject {
   
-  var bytes: js.UndefOr[Uint8Array] = js.native
+  var bytes: js.UndefOr[Uint8Array] = js.undefined
   
-  var typeUrl: js.UndefOr[String] = js.native
+  var typeUrl: js.UndefOr[String] = js.undefined
 }
 object IAny {
   

@@ -2,17 +2,15 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
-  var Browser: typings.jwplayer.jwplayer.Browser = js.native
+  var Browser: typings.jwplayer.jwplayer.Browser
   
-  var Features: typings.jwplayer.jwplayer.Features = js.native
+  var Features: typings.jwplayer.jwplayer.Features
   
-  var OS: typings.jwplayer.jwplayer.OS = js.native
+  var OS: typings.jwplayer.jwplayer.OS
 }
 object Environment {
   

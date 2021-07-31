@@ -2,14 +2,12 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.base.IColorSliderState> */
-@js.native
 trait ReadonlyIColorSliderState extends StObject {
   
-  val currentValue: Double = js.native
+  val currentValue: Double
 }
 object ReadonlyIColorSliderState {
   

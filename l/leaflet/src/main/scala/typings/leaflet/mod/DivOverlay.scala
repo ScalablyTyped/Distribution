@@ -3,14 +3,13 @@ package typings.leaflet.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "DivOverlay")
 @js.native
 abstract class DivOverlay () extends Layer {
   def this(options: DivOverlayOptions) = this()
-  def this(options: js.UndefOr[scala.Nothing], source: Layer) = this()
+  def this(options: Unit, source: Layer) = this()
   def this(options: DivOverlayOptions, source: Layer) = this()
   
   def bringToBack(): this.type = js.native

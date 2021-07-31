@@ -2,17 +2,15 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZipkinB3TextMapCodecOptions extends StObject {
   
-  var baggagePrefix: js.UndefOr[String] = js.native
+  var baggagePrefix: js.UndefOr[String] = js.undefined
   
-  var metrics: js.UndefOr[MetricsFactory] = js.native
+  var metrics: js.UndefOr[MetricsFactory] = js.undefined
   
-  var urlEncoding: js.UndefOr[Boolean] = js.native
+  var urlEncoding: js.UndefOr[Boolean] = js.undefined
 }
 object ZipkinB3TextMapCodecOptions {
   

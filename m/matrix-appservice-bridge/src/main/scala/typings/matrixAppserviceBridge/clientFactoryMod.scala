@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge
 import typings.matrixAppserviceBridge.requestMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientFactoryMod {
@@ -41,41 +40,21 @@ object clientFactoryMod {
       * resolved.
       */
     def getClientAs(): js.Any = js.native
-    def getClientAs(
-      userId: js.UndefOr[scala.Nothing],
-      request: js.UndefOr[scala.Nothing],
-      urlOverride: js.UndefOr[scala.Nothing],
-      usingE2E: Boolean
-    ): js.Any = js.native
-    def getClientAs(userId: js.UndefOr[scala.Nothing], request: js.UndefOr[scala.Nothing], urlOverride: String): js.Any = js.native
-    def getClientAs(
-      userId: js.UndefOr[scala.Nothing],
-      request: js.UndefOr[scala.Nothing],
-      urlOverride: String,
-      usingE2E: Boolean
-    ): js.Any = js.native
-    def getClientAs(userId: js.UndefOr[scala.Nothing], request: Request[_]): js.Any = js.native
-    def getClientAs(
-      userId: js.UndefOr[scala.Nothing],
-      request: Request[_],
-      urlOverride: js.UndefOr[scala.Nothing],
-      usingE2E: Boolean
-    ): js.Any = js.native
-    def getClientAs(userId: js.UndefOr[scala.Nothing], request: Request[_], urlOverride: String): js.Any = js.native
-    def getClientAs(userId: js.UndefOr[scala.Nothing], request: Request[_], urlOverride: String, usingE2E: Boolean): js.Any = js.native
     def getClientAs(userId: String): js.Any = js.native
-    def getClientAs(
-      userId: String,
-      request: js.UndefOr[scala.Nothing],
-      urlOverride: js.UndefOr[scala.Nothing],
-      usingE2E: Boolean
-    ): js.Any = js.native
-    def getClientAs(userId: String, request: js.UndefOr[scala.Nothing], urlOverride: String): js.Any = js.native
-    def getClientAs(userId: String, request: js.UndefOr[scala.Nothing], urlOverride: String, usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: String, request: Request[_]): js.Any = js.native
-    def getClientAs(userId: String, request: Request[_], urlOverride: js.UndefOr[scala.Nothing], usingE2E: Boolean): js.Any = js.native
-    def getClientAs(userId: String, request: Request[_], urlOverride: String): js.Any = js.native
-    def getClientAs(userId: String, request: Request[_], urlOverride: String, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: String, request: Unit, urlOverride: String): js.Any = js.native
+    def getClientAs(userId: String, request: Unit, urlOverride: String, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: String, request: Unit, urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: String, request: Request[js.Any]): js.Any = js.native
+    def getClientAs(userId: String, request: Request[js.Any], urlOverride: String): js.Any = js.native
+    def getClientAs(userId: String, request: Request[js.Any], urlOverride: String, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: String, request: Request[js.Any], urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: Unit, request: Unit, urlOverride: String): js.Any = js.native
+    def getClientAs(userId: Unit, request: Unit, urlOverride: String, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: Unit, request: Unit, urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: Unit, request: Request[js.Any]): js.Any = js.native
+    def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: String): js.Any = js.native
+    def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: String, usingE2E: Boolean): js.Any = js.native
+    def getClientAs(userId: Unit, request: Request[js.Any], urlOverride: Unit, usingE2E: Boolean): js.Any = js.native
     
     var sdk: js.Any = js.native
     
@@ -107,18 +86,17 @@ object clientFactoryMod {
     * returns a new client scheduler to use in place of the default event
     * scheduler that schedules events to be sent to the HS.
     */
-  @js.native
   trait ClientFactoryOpts extends StObject {
     
-    var appServiceUserId: js.UndefOr[String] = js.native
+    var appServiceUserId: js.UndefOr[String] = js.undefined
     
-    var clientSchedulerBuilder: js.UndefOr[js.Function0[_]] = js.native
+    var clientSchedulerBuilder: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var sdk: js.UndefOr[js.Any] = js.native
+    var sdk: js.UndefOr[js.Any] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ClientFactoryOpts {
     
@@ -138,7 +116,7 @@ object clientFactoryMod {
       def setAppServiceUserIdUndefined: Self = StObject.set(x, "appServiceUserId", js.undefined)
       
       @scala.inline
-      def setClientSchedulerBuilder(value: () => _): Self = StObject.set(x, "clientSchedulerBuilder", js.Any.fromFunction0(value))
+      def setClientSchedulerBuilder(value: () => js.Any): Self = StObject.set(x, "clientSchedulerBuilder", js.Any.fromFunction0(value))
       
       @scala.inline
       def setClientSchedulerBuilderUndefined: Self = StObject.set(x, "clientSchedulerBuilder", js.undefined)

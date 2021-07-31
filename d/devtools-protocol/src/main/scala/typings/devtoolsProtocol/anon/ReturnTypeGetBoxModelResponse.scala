@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetBoxModelRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetBoxModelResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetBoxModelResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetBoxModelRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetBoxModelRequest]]
   
-  var returnType: GetBoxModelResponse = js.native
+  var returnType: GetBoxModelResponse
 }
 object ReturnTypeGetBoxModelResponse {
   

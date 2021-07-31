@@ -2,56 +2,54 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCasesRequest extends StObject {
   
   /**
     * The start date for a filtered date search on support case communications. Case communications are available for 12 months after creation.
     */
-  var afterTime: js.UndefOr[AfterTime] = js.native
+  var afterTime: js.UndefOr[AfterTime] = js.undefined
   
   /**
     * The end date for a filtered date search on support case communications. Case communications are available for 12 months after creation.
     */
-  var beforeTime: js.UndefOr[BeforeTime] = js.native
+  var beforeTime: js.UndefOr[BeforeTime] = js.undefined
   
   /**
     * A list of ID numbers of the support cases you want returned. The maximum number of cases is 100.
     */
-  var caseIdList: js.UndefOr[CaseIdList] = js.native
+  var caseIdList: js.UndefOr[CaseIdList] = js.undefined
   
   /**
     * The ID displayed for a case in the AWS Support Center user interface.
     */
-  var displayId: js.UndefOr[DisplayId] = js.native
+  var displayId: js.UndefOr[DisplayId] = js.undefined
   
   /**
     * Specifies whether to include communications in the DescribeCases response. By default, communications are incuded.
     */
-  var includeCommunications: js.UndefOr[IncludeCommunications] = js.native
+  var includeCommunications: js.UndefOr[IncludeCommunications] = js.undefined
   
   /**
     * Specifies whether to include resolved support cases in the DescribeCases response. By default, resolved cases aren't included.
     */
-  var includeResolvedCases: js.UndefOr[IncludeResolvedCases] = js.native
+  var includeResolvedCases: js.UndefOr[IncludeResolvedCases] = js.undefined
   
   /**
     * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /**
     * The maximum number of results to return before paginating.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * A resumption point for pagination.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeCasesRequest {
   

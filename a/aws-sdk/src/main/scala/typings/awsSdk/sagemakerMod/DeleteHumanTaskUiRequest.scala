@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteHumanTaskUiRequest extends StObject {
   
   /**
     * The name of the human task user interface (work task template) you want to delete.
     */
-  var HumanTaskUiName: typings.awsSdk.sagemakerMod.HumanTaskUiName = js.native
+  var HumanTaskUiName: typings.awsSdk.sagemakerMod.HumanTaskUiName
 }
 object DeleteHumanTaskUiRequest {
   

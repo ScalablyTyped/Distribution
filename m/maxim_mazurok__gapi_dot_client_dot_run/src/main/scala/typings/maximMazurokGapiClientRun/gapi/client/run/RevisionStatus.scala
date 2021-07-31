@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevisionStatus extends StObject {
   
   /**
@@ -13,25 +11,25 @@ trait RevisionStatus extends StObject {
     * prepared, it will incrementally update conditions. Revision-specific conditions include: * "ResourcesAvailable": True when underlying resources have been provisioned. *
     * "ContainerHealthy": True when the Revision readiness check completes. * "Active": True when the Revision may receive traffic.
     */
-  var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.native
+  var conditions: js.UndefOr[js.Array[GoogleCloudRunV1Condition]] = js.undefined
   
   /**
     * ImageDigest holds the resolved digest for the image specified within .Spec.Container.Image. The digest is resolved during the creation of Revision. This field holds the digest value
     * regardless of whether a tag or digest was originally specified in the Container object.
     */
-  var imageDigest: js.UndefOr[String] = js.native
+  var imageDigest: js.UndefOr[String] = js.undefined
   
   /** Specifies the generated logging url for this particular revision based on the revision url template specified in the controller's config. +optional */
-  var logUrl: js.UndefOr[String] = js.native
+  var logUrl: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the 'Generation' of the Revision that was last processed by the controller. Clients polling for completed reconciliation should poll until observedGeneration =
     * metadata.generation, and the Ready condition's status is True or False.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
   
   /** Not currently used by Cloud Run. */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
 }
 object RevisionStatus {
   

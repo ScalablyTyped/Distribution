@@ -3,7 +3,6 @@ package typings.reactLoader
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,48 +12,47 @@ object mod {
   class ^ ()
     extends Component[LoaderProps, js.Object, js.Any]
   
-  @js.native
   trait LoaderOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var corners: js.UndefOr[Double] = js.native
+    var corners: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[Double] = js.native
+    var direction: js.UndefOr[Double] = js.undefined
     
-    var fps: js.UndefOr[Double] = js.native
+    var fps: js.UndefOr[Double] = js.undefined
     
-    var hwaccel: js.UndefOr[Boolean] = js.native
+    var hwaccel: js.UndefOr[Boolean] = js.undefined
     
-    var left: js.UndefOr[String] = js.native
+    var left: js.UndefOr[String] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var loadedClassName: js.UndefOr[String] = js.native
+    var loadedClassName: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var shadow: js.UndefOr[Boolean] = js.native
+    var shadow: js.UndefOr[Boolean] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
-    var trail: js.UndefOr[Double] = js.native
+    var trail: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object LoaderOptions {
     
@@ -189,14 +187,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait LoaderProps extends LoaderOptions {
+  trait LoaderProps
+    extends StObject
+       with LoaderOptions {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var loaded: Boolean = js.native
+    var loaded: Boolean
     
-    var options: js.UndefOr[LoaderOptions] = js.native
+    var options: js.UndefOr[LoaderOptions] = js.undefined
   }
   object LoaderProps {
     

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecatedindicates the type of change action on the data source. */
-@js.native
-trait ChangeEvent extends EventObject {
+trait ChangeEvent
+  extends StObject
+     with EventObject {
   
   /**
     * indicates the type of change.
     * @see com.sun.star.sdbc.ChangeAction
     */
-  var Action: Double = js.native
+  var Action: Double
   
   /** indicates the number of rows affected by the change. */
-  var Rows: Double = js.native
+  var Rows: Double
 }
 object ChangeEvent {
   

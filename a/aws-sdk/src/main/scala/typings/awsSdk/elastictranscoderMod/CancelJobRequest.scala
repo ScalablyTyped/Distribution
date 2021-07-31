@@ -2,16 +2,14 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelJobRequest extends StObject {
   
   /**
     * The identifier of the job that you want to cancel. To get a list of the jobs (including their jobId) that have a status of Submitted, use the ListJobsByStatus API action.
     */
-  var Id: typings.awsSdk.elastictranscoderMod.Id = js.native
+  var Id: typings.awsSdk.elastictranscoderMod.Id
 }
 object CancelJobRequest {
   

@@ -2,21 +2,19 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatorFunctionContext extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var messageTemplate: String = js.native
+  var messageTemplate: String
   
-  var validatorName: String = js.native
+  var validatorName: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ValidatorFunctionContext {
   

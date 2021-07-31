@@ -2,61 +2,59 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRuleResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var Arn: js.UndefOr[RuleArn] = js.native
+  var Arn: js.UndefOr[RuleArn] = js.undefined
   
   /**
     * The account ID of the user that created the rule. If you use PutRule to put a rule on an event bus in another account, the other account is the owner of the rule, and the rule ARN includes the account ID for that account. However, the value for CreatedBy is the account ID as the account that created the rule in the other account.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.CreatedBy] = js.undefined
   
   /**
     * The description of the rule.
     */
-  var Description: js.UndefOr[RuleDescription] = js.native
+  var Description: js.UndefOr[RuleDescription] = js.undefined
   
   /**
     * The name of the event bus associated with the rule.
     */
-  var EventBusName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventBusName] = js.native
+  var EventBusName: js.UndefOr[typings.awsSdk.eventbridgeMod.EventBusName] = js.undefined
   
   /**
     * The event pattern. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.
     */
-  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.native
+  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.undefined
   
   /**
     * If this is a managed rule, created by an AWS service on your behalf, this field displays the principal name of the AWS service that created the rule.
     */
-  var ManagedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.ManagedBy] = js.native
+  var ManagedBy: js.UndefOr[typings.awsSdk.eventbridgeMod.ManagedBy] = js.undefined
   
   /**
     * The name of the rule.
     */
-  var Name: js.UndefOr[RuleName] = js.native
+  var Name: js.UndefOr[RuleName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role associated with the rule.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.eventbridgeMod.RoleArn] = js.undefined
   
   /**
     * The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)".
     */
-  var ScheduleExpression: js.UndefOr[typings.awsSdk.eventbridgeMod.ScheduleExpression] = js.native
+  var ScheduleExpression: js.UndefOr[typings.awsSdk.eventbridgeMod.ScheduleExpression] = js.undefined
   
   /**
     * Specifies whether the rule is enabled or disabled.
     */
-  var State: js.UndefOr[RuleState] = js.native
+  var State: js.UndefOr[RuleState] = js.undefined
 }
 object DescribeRuleResponse {
   

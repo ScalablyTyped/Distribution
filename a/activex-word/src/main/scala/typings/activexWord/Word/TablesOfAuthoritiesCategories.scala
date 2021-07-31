@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TablesOfAuthoritiesCategories extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): TableOfAuthoritiesCategory = js.native
+  def Item(Index: js.Any): TableOfAuthoritiesCategory
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.TablesOfAuthoritiesCategories_typekey")
-  var WordDotTablesOfAuthoritiesCategories_typekey: TablesOfAuthoritiesCategories = js.native
+  var WordDotTablesOfAuthoritiesCategories_typekey: TablesOfAuthoritiesCategories
 }
 object TablesOfAuthoritiesCategories {
   

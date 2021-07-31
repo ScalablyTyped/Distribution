@@ -1,7 +1,7 @@
 package typings.walkdir
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.eventsMod.EventEmitterOptions
+import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.Stats
 import typings.std.Error
 import typings.walkdir.anon.WalkOptionsreturnobjectbo
@@ -24,156 +24,108 @@ import typings.walkdir.walkdirStrings.socket
 import typings.walkdir.walkdirStrings.targetdirectory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: syncfalseundefinedWalkOpt): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: syncfalseundefinedWalkOpt, eventListener: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: synctruereturnobjectfalse): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: synctruereturnobjectfalse, eventListener: WalkEventListener): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: synctruereturnobjecttrueW): StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: synctruereturnobjecttrueW, eventListener: WalkEventListener): StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: WalkOptions): WalkEmitter | js.Array[String] | StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: WalkOptions, eventListener: WalkEventListener): WalkEmitter | js.Array[String] | StringDictionary[Stats] = js.native
+  @scala.inline
+  def apply(path: String): WalkEmitter = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def apply(path: String, options: Unit, eventListener: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def apply(path: String, options: syncfalseundefinedWalkOpt): WalkEmitter = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def apply(path: String, options: syncfalseundefinedWalkOpt, eventListener: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def apply(path: String, options: synctruereturnobjectfalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(path: String, options: synctruereturnobjectfalse, eventListener: WalkEventListener): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(path: String, options: synctruereturnobjecttrueW): StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Stats]]
+  @scala.inline
+  def apply(path: String, options: synctruereturnobjecttrueW, eventListener: WalkEventListener): StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Stats]]
+  @scala.inline
+  def apply(path: String, options: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def apply(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def apply(path: String, options: WalkOptions): WalkEmitter | js.Array[String] | StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter | js.Array[String] | StringDictionary[Stats]]
+  @scala.inline
+  def apply(path: String, options: WalkOptions, eventListener: WalkEventListener): WalkEmitter | js.Array[String] | StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter | js.Array[String] | StringDictionary[Stats]]
   
-  @JSImport("walkdir/walkdir", "async")
+  @JSImport("walkdir/walkdir", JSImport.Namespace)
   @js.native
-  def async(path: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): js.Promise[js.Array[String]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: WalkOptionsreturnobjectbo): js.Promise[js.Array[String] | StringDictionary[Stats]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: WalkOptionsreturnobjectbo, eventListener: WalkEventListener): js.Promise[js.Array[String] | StringDictionary[Stats]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: WalkOptionsreturnobjectfa): js.Promise[js.Array[String]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: WalkOptionsreturnobjectfa, eventListener: WalkEventListener): js.Promise[js.Array[String]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: WalkOptionsreturnobjecttr): js.Promise[StringDictionary[Stats]] = js.native
-  @JSImport("walkdir/walkdir", "async")
-  @js.native
-  def async(path: String, options: WalkOptionsreturnobjecttr, eventListener: WalkEventListener): js.Promise[StringDictionary[Stats]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: syncfalseundefinedWalkOpt): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: syncfalseundefinedWalkOpt, eventListener: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: synctruereturnobjectfalse): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: synctruereturnobjectfalse, eventListener: WalkEventListener): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: synctruereturnobjecttrueW): StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: synctruereturnobjecttrueW, eventListener: WalkEventListener): StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: WalkEventListener): WalkEmitter = js.native
-  @JSImport("walkdir/walkdir", "find")
-  @js.native
-  def find(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = js.native
+  @scala.inline
+  def async(path: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def async(path: String, options: Unit, eventListener: WalkEventListener): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def async(path: String, options: WalkOptionsreturnobjectbo): js.Promise[js.Array[String] | StringDictionary[Stats]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String] | StringDictionary[Stats]]]
+  @scala.inline
+  def async(path: String, options: WalkOptionsreturnobjectbo, eventListener: WalkEventListener): js.Promise[js.Array[String] | StringDictionary[Stats]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String] | StringDictionary[Stats]]]
+  @scala.inline
+  def async(path: String, options: WalkOptionsreturnobjectfa): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def async(path: String, options: WalkOptionsreturnobjectfa, eventListener: WalkEventListener): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def async(path: String, options: WalkOptionsreturnobjecttr): js.Promise[StringDictionary[Stats]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stats]]]
+  @scala.inline
+  def async(path: String, options: WalkOptionsreturnobjecttr, eventListener: WalkEventListener): js.Promise[StringDictionary[Stats]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Stats]]]
   
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String): js.Array[String] | StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, eventListener: WalkEventListener): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): js.Array[String] | StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: WalkOptionsreturnobjectbo): js.Array[String] | StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: WalkOptionsreturnobjectbo, eventListener: WalkEventListener): js.Array[String] | StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: WalkOptionsreturnobjectfa): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: WalkOptionsreturnobjectfa, eventListener: WalkEventListener): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: WalkOptionsreturnobjecttr): StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync(path: String, options: WalkOptionsreturnobjecttr, eventListener: WalkEventListener): StringDictionary[Stats] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync_Array(path: String): js.Array[String] = js.native
-  @JSImport("walkdir/walkdir", "sync")
-  @js.native
-  def sync_Array(path: String, options: js.UndefOr[scala.Nothing], eventListener: WalkEventListener): js.Array[String] = js.native
+  @scala.inline
+  def find(path: String): WalkEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any]).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def find(path: String, options: Unit, eventListener: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def find(path: String, options: syncfalseundefinedWalkOpt): WalkEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def find(path: String, options: syncfalseundefinedWalkOpt, eventListener: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def find(path: String, options: synctruereturnobjectfalse): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def find(path: String, options: synctruereturnobjectfalse, eventListener: WalkEventListener): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def find(path: String, options: synctruereturnobjecttrueW): StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Stats]]
+  @scala.inline
+  def find(path: String, options: synctruereturnobjecttrueW, eventListener: WalkEventListener): StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Stats]]
+  @scala.inline
+  def find(path: String, options: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
+  @scala.inline
+  def find(path: String, options: WalkEventListener, eventListener: WalkEventListener): WalkEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[WalkEmitter]
   
-  /* Inlined node.events.EventEmitter & {end (): void, pause (): void, resume (): void, ignore (paths : string | std.Array<string>): void, on (event : 'error', listener : (error : std.Error): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'fail', listener : (path : string, error : std.Error): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'targetdirectory', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'empty', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'path', listener : (this : walkdir.walkdir/walkdir.WalkEmitter, path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'directory', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'file', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'link', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'socket', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'fifo', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'blockdevice', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter, on (event : 'characterdevice', listener : (path : string, stat : node.fs.Stats, depth : number): void): walkdir.walkdir/walkdir.WalkEmitter} */
+  @scala.inline
+  def sync(path: String): js.Array[String] | StringDictionary[Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | StringDictionary[Stats]]
+  @scala.inline
+  def sync(path: String, eventListener: WalkEventListener): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(path: String, options: Unit, eventListener: WalkEventListener): js.Array[String] | StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | StringDictionary[Stats]]
+  @scala.inline
+  def sync(path: String, options: WalkOptionsreturnobjectbo): js.Array[String] | StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | StringDictionary[Stats]]
+  @scala.inline
+  def sync(path: String, options: WalkOptionsreturnobjectbo, eventListener: WalkEventListener): js.Array[String] | StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | StringDictionary[Stats]]
+  @scala.inline
+  def sync(path: String, options: WalkOptionsreturnobjectfa): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(path: String, options: WalkOptionsreturnobjectfa, eventListener: WalkEventListener): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(path: String, options: WalkOptionsreturnobjecttr): StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Stats]]
+  @scala.inline
+  def sync(path: String, options: WalkOptionsreturnobjecttr, eventListener: WalkEventListener): StringDictionary[Stats] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Stats]]
+  
+  @scala.inline
+  def sync_Array(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync_Array(path: String, options: Unit, eventListener: WalkEventListener): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventListener.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   @js.native
-  trait WalkEmitter extends StObject {
-    
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+  trait WalkEmitter extends EventEmitter {
     
     /**
       * cancel a walk in progress 
       */
     def end(): Unit = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    def getMaxListeners(): Double = js.native
     
     /**
       * pass paths to ignore for the remainder of the walk. directories ignored will not have events emitted for any of their children.
@@ -182,17 +134,6 @@ object mod {
     def ignore(paths: String): Unit = js.native
     def ignore(paths: js.Array[String]): Unit = js.native
     
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     /**
       * found a block device / disk
       */
@@ -275,37 +216,15 @@ object mod {
       listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
     ): WalkEmitter = js.native
     
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
     /**
       * pause the walk
       */
     def pause(): Unit = js.native
     
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
     /**
       * resume the walk
       */
     def resume(): Unit = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
   }
   
   type WalkEventListener = js.ThisFunction3[
@@ -316,7 +235,6 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait WalkOptions extends StObject {
     
     /**
@@ -328,54 +246,54 @@ object mod {
           /* files */ js.Array[String], 
           js.Array[String] | js.Promise[js.Array[String]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /*** 
       * default True. if false this will use stat insteqad of lstat and not find links at all.
       */
-    var find_links: js.UndefOr[Boolean] = js.native
+    var find_links: js.UndefOr[Boolean] = js.undefined
     
     /**
       * follow symlinks. default FALSE
       */
-    var follow_symlinks: js.UndefOr[Boolean] = js.native
+    var follow_symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.native
+    var fs: js.UndefOr[js.Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
       */
-    var max_depth: js.UndefOr[Double] = js.native
+    var max_depth: js.UndefOr[Double] = js.undefined
     
     /**
       * only go one level deep. convenience param.
       */ 
-    var no_recurse: js.UndefOr[Boolean] = js.native
+    var no_recurse: js.UndefOr[Boolean] = js.undefined
     
     // if true the sync return will be in {path:stat} format instead of [path,path,...]
     /**
       * dont build up an internal list or object of all of the paths. this can be an important optimization for listing HUGE trees.
       */
-    var no_return: js.UndefOr[Boolean] = js.native
+    var no_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * return an object of {path:stat} instead of just the resolved path names
       */
-    var return_object: js.UndefOr[Boolean] = js.native
+    var return_object: js.UndefOr[Boolean] = js.undefined
     
     /**
       * make this syncronous. the same as calling walkdir.sync
       */
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * on filesystems where inodes are not unique like windows (or perhaps hardlinks) some files may not be emitted due to inode collision.
       * turning off this behavior may be required but at the same time may lead to hitting max_depth via link loop.
       */
-    var track_inodes: js.UndefOr[Boolean] = js.native
+    var track_inodes: js.UndefOr[Boolean] = js.undefined
   }
   object WalkOptions {
     

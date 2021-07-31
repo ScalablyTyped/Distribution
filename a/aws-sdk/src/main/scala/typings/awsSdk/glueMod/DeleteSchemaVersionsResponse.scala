@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSchemaVersionsResponse extends StObject {
   
   /**
     * A list of SchemaVersionErrorItem objects, each containing an error and schema version.
     */
-  var SchemaVersionErrors: js.UndefOr[SchemaVersionErrorList] = js.native
+  var SchemaVersionErrors: js.UndefOr[SchemaVersionErrorList] = js.undefined
 }
 object DeleteSchemaVersionsResponse {
   

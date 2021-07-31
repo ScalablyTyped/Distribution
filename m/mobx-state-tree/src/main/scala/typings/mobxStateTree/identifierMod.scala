@@ -4,10 +4,13 @@ import typings.mobxStateTree.typeMod.ISimpleType
 import typings.mobxStateTree.typeMod.IType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identifierMod {
+  
+  @JSImport("mobx-state-tree/dist/types/utility-types/identifier", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx-state-tree/dist/types/utility-types/identifier", "identifier")
   @js.native
@@ -17,9 +20,8 @@ object identifierMod {
   @js.native
   val identifierNumber: ISimpleType[Double] = js.native
   
-  @JSImport("mobx-state-tree/dist/types/utility-types/identifier", "isIdentifierType")
-  @js.native
-  def isIdentifierType(`type`: IType[Double | String, Double | String, Double | String]): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean = js.native
+  @scala.inline
+  def isIdentifierType(`type`: IType[Double | String, Double | String, Double | String]): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean]
   
   type ReferenceIdentifier = String | Double
 }

@@ -3,13 +3,11 @@ package typings.knockstrap
 import typings.knockstrap.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutTemplateSources extends StObject {
   
-  var stringTemplate: Instantiable = js.native
+  var stringTemplate: Instantiable
 }
 object KnockoutTemplateSources {
   

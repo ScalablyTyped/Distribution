@@ -17,7 +17,6 @@ import typings.std.RegExp
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,10 +25,9 @@ object mod extends Shortcut {
   @js.native
   val default: SimpleSchemaStatic = js.native
   
-  @js.native
   trait MongoObject extends StObject {
     
-    def expandKey(`val`: js.Any, key: String, obj: js.Any): Unit = js.native
+    def expandKey(`val`: js.Any, key: String, obj: js.Any): Unit
   }
   object MongoObject {
     
@@ -46,7 +44,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait SimpleSchema extends SimpleSchemaStatic {
+  trait SimpleSchema
+    extends StObject
+       with SimpleSchemaStatic {
     
     var debug: Boolean = js.native
   }
@@ -58,7 +58,8 @@ object mod extends Shortcut {
   @JSImport("simpl-schema", "SimpleSchema")
   @js.native
   class SimpleSchemaCls protected ()
-    extends typings.simplSchema.mod.SimpleSchema {
+    extends StObject
+       with typings.simplSchema.mod.SimpleSchema {
     def this(schema: SimpleSchemaDefinition) = this()
     def this(schema: SimpleSchemaDefinition, options: SimpleSchemaOptions) = this()
   }
@@ -71,29 +72,29 @@ object mod extends Shortcut {
   @JSImport("simpl-schema", JSImport.Default)
   @js.native
   class defaultCls protected ()
-    extends typings.simplSchema.mod.SimpleSchema {
+    extends StObject
+       with typings.simplSchema.mod.SimpleSchema {
     def this(schema: SimpleSchemaDefinition) = this()
     def this(schema: SimpleSchemaDefinition, options: SimpleSchemaOptions) = this()
   }
   
-  @js.native
   trait CleanOption extends StObject {
     
-    var autoConvert: js.UndefOr[Boolean] = js.native
+    var autoConvert: js.UndefOr[Boolean] = js.undefined
     
-    var extendAutoValueContext: js.UndefOr[Boolean] = js.native
+    var extendAutoValueContext: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
-    var getAutoValues: js.UndefOr[Boolean] = js.native
+    var getAutoValues: js.UndefOr[Boolean] = js.undefined
     
-    var isModifier: js.UndefOr[Boolean] = js.native
+    var isModifier: js.UndefOr[Boolean] = js.undefined
     
-    var removeEmptyStrings: js.UndefOr[Boolean] = js.native
+    var removeEmptyStrings: js.UndefOr[Boolean] = js.undefined
     
-    var removeNullsFromArrays: js.UndefOr[Boolean] = js.native
+    var removeNullsFromArrays: js.UndefOr[Boolean] = js.undefined
     
-    var trimStrings: js.UndefOr[Boolean] = js.native
+    var trimStrings: js.UndefOr[Boolean] = js.undefined
   }
   object CleanOption {
     
@@ -156,7 +157,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CustomValidationContext extends StObject {
     
     /**
@@ -165,41 +165,41 @@ object mod extends Shortcut {
       * return the error type string. If you do use this to add an error for the
       * current key, return false from your custom validation function.
       */
-    def addValidationErrors(errors: SimpleSchemaValidationError): js.Any = js.native
+    def addValidationErrors(errors: SimpleSchemaValidationError): js.Any
     
     /** The schema definition object. */
-    var definition: SchemaDefinition = js.native
+    var definition: SchemaDefinition
     
     /**
       * Use this method to get information about other fields. Pass a field name
       * (non-generic schema key) as the only argument. The return object will
       * have isSet, value, and operator properties for that field.
       */
-    def field(): js.Any = js.native
+    def field(): js.Any
     
     /** The generic name of the schema key (e.g., "addresses.$.street") */
-    var genericKey: String = js.native
+    var genericKey: String
     
     /** Does the object being validated have this key set? */
-    var isSet: Boolean = js.native
+    var isSet: Boolean
     
     /** The name of the schema key (e.g., "addresses.0.street") */
-    var key: String = js.native
+    var key: String
     
     /** The Mongo operator for which we're doing validation. Might be null. */
-    var operator: js.Any = js.native
+    var operator: js.Any
     
     /**
       * Use this method to get information about other fields that have the same
       * parent object. Works the same way as field(). This is helpful when you use
       * sub-schemas or when you're dealing with arrays of objects.
       */
-    def siblingField(): js.Any = js.native
+    def siblingField(): js.Any
     
-    var validationContext: ValidationContext = js.native
+    var validationContext: ValidationContext
     
     /** Value to validate */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object CustomValidationContext {
     
@@ -307,14 +307,13 @@ object mod extends Shortcut {
     def setValueForPosition(position: String, value: js.Any): Unit = js.native
   }
   
-  @js.native
   trait SchemaDefinition extends StObject {
     
-    var allowedValues: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.native
+    var allowedValues: js.UndefOr[js.Array[js.Any] | js.Function0[js.Array[js.Any]]] = js.undefined
     
-    var autoValue: js.UndefOr[js.Function0[_]] = js.native
+    var autoValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var blackbox: js.UndefOr[Boolean] = js.native
+    var blackbox: js.UndefOr[Boolean] = js.undefined
     
     /**
       * For custom validation function. If you use an arrow function the context
@@ -326,33 +325,33 @@ object mod extends Shortcut {
           /* this */ CustomValidationContext, 
           js.UndefOr[String | SimpleSchemaValidationError]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var decimal: js.UndefOr[Boolean] = js.native
+    var decimal: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var exclusiveMax: js.UndefOr[Boolean] = js.native
+    var exclusiveMax: js.UndefOr[Boolean] = js.undefined
     
-    var exclusiveMin: js.UndefOr[Boolean] = js.native
+    var exclusiveMin: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | js.Function0[String]] = js.native
+    var label: js.UndefOr[String | js.Function0[String]] = js.undefined
     
-    var max: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.native
+    var max: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.undefined
     
-    var maxCount: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var maxCount: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
-    var min: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.native
+    var min: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.undefined
     
-    var minCount: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var minCount: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
-    var optional: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+    var optional: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
     
-    var regEx: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+    var regEx: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
   }
   object SchemaDefinition {
     
@@ -367,10 +366,10 @@ object mod extends Shortcut {
     implicit class SchemaDefinitionMutableBuilder[Self <: SchemaDefinition] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAllowedValues(value: js.Array[_] | js.Function0[js.Array[_]]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+      def setAllowedValues(value: js.Array[js.Any] | js.Function0[js.Array[js.Any]]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAllowedValuesFunction0(value: () => js.Array[_]): Self = StObject.set(x, "allowedValues", js.Any.fromFunction0(value))
+      def setAllowedValuesFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "allowedValues", js.Any.fromFunction0(value))
       
       @scala.inline
       def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
@@ -379,7 +378,7 @@ object mod extends Shortcut {
       def setAllowedValuesVarargs(value: js.Any*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
       
       @scala.inline
-      def setAutoValue(value: () => _): Self = StObject.set(x, "autoValue", js.Any.fromFunction0(value))
+      def setAutoValue(value: () => js.Any): Self = StObject.set(x, "autoValue", js.Any.fromFunction0(value))
       
       @scala.inline
       def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
@@ -503,12 +502,11 @@ object mod extends Shortcut {
     SchemaDefinition | BooleanConstructor | StringConstructor | NumberConstructor | DateConstructor | ArrayConstructor | String | RegExp | typings.simplSchema.mod.SimpleSchema
   ]) | js.Array[js.Any]
   
-  @js.native
   trait SimpleSchemaError extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SimpleSchemaError {
     
@@ -530,20 +528,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SimpleSchemaOptions extends StObject {
     
-    var check: js.UndefOr[Boolean] = js.native
+    var check: js.UndefOr[Boolean] = js.undefined
     
-    var clean: js.UndefOr[CleanOption] = js.native
+    var clean: js.UndefOr[CleanOption] = js.undefined
     
-    var defaultLabel: js.UndefOr[String] = js.native
+    var defaultLabel: js.UndefOr[String] = js.undefined
     
-    var humanizeAutoLabels: js.UndefOr[Boolean] = js.native
+    var humanizeAutoLabels: js.UndefOr[Boolean] = js.undefined
     
-    var requiredByDefault: js.UndefOr[Boolean] = js.native
+    var requiredByDefault: js.UndefOr[Boolean] = js.undefined
     
-    var tracker: js.UndefOr[js.Any] = js.native
+    var tracker: js.UndefOr[js.Any] = js.undefined
   }
   object SimpleSchemaOptions {
     
@@ -596,7 +593,8 @@ object mod extends Shortcut {
   
   @js.native
   trait SimpleSchemaStatic
-    extends Instantiable1[/* schema */ SimpleSchemaDefinition, typings.simplSchema.mod.SimpleSchema]
+    extends StObject
+       with Instantiable1[/* schema */ SimpleSchemaDefinition, typings.simplSchema.mod.SimpleSchema]
        with Instantiable2[
           /* schema */ SimpleSchemaDefinition, 
           /* options */ SimpleSchemaOptions, 
@@ -622,9 +620,9 @@ object mod extends Shortcut {
     def extendOptions(options: js.Array[String]): Unit = js.native
     
     def getDefinition(key: String): js.Any = js.native
-    def getDefinition(key: String, propList: js.UndefOr[scala.Nothing], functionContext: js.Any): js.Any = js.native
     def getDefinition(key: String, propList: js.Any): js.Any = js.native
     def getDefinition(key: String, propList: js.Any, functionContext: js.Any): js.Any = js.native
+    def getDefinition(key: String, propList: Unit, functionContext: js.Any): js.Any = js.native
     
     def keyIsInBlackBox(key: String): Boolean = js.native
     
@@ -641,7 +639,7 @@ object mod extends Shortcut {
     
     def newContext(): ValidationContext = js.native
     
-    def objectKeys(keyPrefix: js.Any): js.Array[_] = js.native
+    def objectKeys(keyPrefix: js.Any): js.Array[js.Any] = js.native
     
     def omit(fields: String*): SimpleSchemaStatic = js.native
     
@@ -685,14 +683,13 @@ object mod extends Shortcut {
     def validateOne(doc: js.Any, keyName: String, options: ValidationOption): Boolean = js.native
   }
   
-  @js.native
   trait SimpleSchemaValidationContextStaticKeys extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object SimpleSchemaValidationContextStaticKeys {
     
@@ -720,10 +717,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SimpleSchemaValidationError extends /* key */ StringDictionary[Double | String] {
+  trait SimpleSchemaValidationError
+    extends StObject
+       with /* key */ StringDictionary[Double | String] {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SimpleSchemaValidationError {
     
@@ -743,7 +741,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait ValidationContext extends SimpleSchemaValidationContextStatic {
+  trait ValidationContext
+    extends StObject
+       with SimpleSchemaValidationContextStatic {
     
     def addValidationErrors(errors: js.Any): Unit = js.native
     
@@ -758,20 +758,19 @@ object mod extends Shortcut {
     def validationErrors(): js.Any = js.native
   }
   
-  @js.native
   trait ValidationOption extends StObject {
     
-    var clean: js.UndefOr[Boolean] = js.native
+    var clean: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[Boolean] = js.native
+    var filter: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[js.Array[String]] = js.native
+    var keys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var modifier: js.UndefOr[Boolean] = js.native
+    var modifier: js.UndefOr[Boolean] = js.undefined
     
-    var upsert: js.UndefOr[Boolean] = js.native
+    var upsert: js.UndefOr[Boolean] = js.undefined
     
-    var upsertextendedCustomContext: js.UndefOr[Boolean] = js.native
+    var upsertextendedCustomContext: js.UndefOr[Boolean] = js.undefined
   }
   object ValidationOption {
     

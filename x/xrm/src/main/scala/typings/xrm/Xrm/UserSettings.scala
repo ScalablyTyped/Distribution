@@ -3,87 +3,85 @@ package typings.xrm.Xrm
 import typings.xrm.Xrm.Collection.ItemCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds information about the current user settings.
   */
-@js.native
 trait UserSettings extends StObject {
   
   /**
     * Returns the date formatting information for the current user.
     */
-  var dateFormattingInfo: DateFormattingInfo = js.native
+  var dateFormattingInfo: DateFormattingInfo
   
   /**
     * Returns the ID of the default dashboard for the current user.
     */
-  var defaultDashboardId: String = js.native
+  var defaultDashboardId: String
   
   /**
     * Returns the difference in minutes between the local time and Coordinated Universal Time (UTC).
     */
-  def getTimeZoneOffsetMinutes(): Double = js.native
+  def getTimeZoneOffsetMinutes(): Double
   
   /**
     * Indicates whether guided help is enabled for the current user.
     */
-  var isGuidedHelpEnabled: Boolean = js.native
+  var isGuidedHelpEnabled: Boolean
   
   /**
     * Indicates whether high contrast is enabled for the current user.
     */
-  var isHighContrastEnabled: Boolean = js.native
+  var isHighContrastEnabled: Boolean
   
   /**
     * Indicates whether the language for the current user is a right-to-left (RTL) language.
     */
-  var isRTL: Boolean = js.native
+  var isRTL: Boolean
   
   /**
     * Returns the language ID for the current user.
     */
-  var languageId: Double = js.native
+  var languageId: Double
   
   /**
     * Returns a collection of lookup objects containing the GUID and display name of each of the security role or teams that the user is associated with.
     */
-  var roles: ItemCollection[LookupValue] = js.native
+  var roles: ItemCollection[LookupValue]
   
   /**
     * Returns an array of strings that represent the GUID values of each of the security role privilege that the user is associated with or any teams that the user is associated with.
     */
-  var securityRolePrivileges: js.Array[String] = js.native
+  var securityRolePrivileges: js.Array[String]
   
   /**
     * Returns an array of strings that represent the GUID values of each of the security role that the user is associated with or any teams that the user is associated with.
     * @deprecated Deprecated in v9.1; use {@link Xrm.UserSettings.roles globalContext.userSettings.roles} instead to display names of security roles or teams along with the ID.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
-  var securityRoles: js.Array[String] = js.native
+  var securityRoles: js.Array[String]
   
   /**
     * Returns a lookup object containing the ID, display name, and entity type of the transaction currency for the current user.
     */
-  var transactionCurrency: LookupValue = js.native
+  var transactionCurrency: LookupValue
   
   /**
     * Returns the transaction currency ID for the current user.
     * @deprecated Deprecated in v9.1; use {@link Xrm.UserSettings.transactionCurrency globalContext.userSettings.transactionCurrency} instead to display name along with the ID.
     */
-  var transactionCurrencyId: String = js.native
+  var transactionCurrencyId: String
   
   /**
     * Returns the GUID of the SystemUser.Id value for the current user.
     */
-  var userId: String = js.native
+  var userId: String
   
   /**
     * Returns the name of the current user.
     */
-  var userName: String = js.native
+  var userName: String
 }
 object UserSettings {
   

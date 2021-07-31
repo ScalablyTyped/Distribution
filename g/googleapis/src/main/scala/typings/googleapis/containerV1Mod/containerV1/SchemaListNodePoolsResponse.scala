@@ -2,19 +2,17 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListNodePoolsResponse is the result of ListNodePoolsRequest.
   */
-@js.native
 trait SchemaListNodePoolsResponse extends StObject {
   
   /**
     * A list of node pools for a cluster.
     */
-  var nodePools: js.UndefOr[js.Array[SchemaNodePool]] = js.native
+  var nodePools: js.UndefOr[js.Array[SchemaNodePool]] = js.undefined
 }
 object SchemaListNodePoolsResponse {
   

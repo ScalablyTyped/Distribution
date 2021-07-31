@@ -16,195 +16,193 @@ import typings.reactVis.reactVisStrings.y0
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractSeriesProps[T /* <: AbstractSeriesPoint */] extends StObject {
   
   var _colorValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_color'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var _opacityValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_opacity'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var _sizeValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_size'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var _xValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_x'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var _yValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_y'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String | Double] = js.undefined
   
   var colorBaseValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var colorDistance: js.UndefOr[Double] = js.native
+  var colorDistance: js.UndefOr[Double] = js.undefined
   
   var colorDomain: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var colorRange: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['color'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var colorType: js.UndefOr[Scale] = js.native
+  var colorType: js.UndefOr[Scale] = js.undefined
   
-  var data: js.UndefOr[js.Array[T | js.Array[_]]] = js.native
+  var data: js.UndefOr[js.Array[T | js.Array[js.Any]]] = js.undefined
   
-  var fill: js.UndefOr[String | Double] = js.native
+  var fill: js.UndefOr[String | Double] = js.undefined
   
-  var getColor: js.UndefOr[RVGet[T, color]] = js.native
+  var getColor: js.UndefOr[RVGet[T, color]] = js.undefined
   
-  var getColor0: js.UndefOr[RVGet[T, color0]] = js.native
+  var getColor0: js.UndefOr[RVGet[T, color0]] = js.undefined
   
-  var getOpacity: js.UndefOr[RVGet[T, opacity]] = js.native
+  var getOpacity: js.UndefOr[RVGet[T, opacity]] = js.undefined
   
-  var getOpacity0: js.UndefOr[RVGet[T, opacity0]] = js.native
+  var getOpacity0: js.UndefOr[RVGet[T, opacity0]] = js.undefined
   
-  var getSize: js.UndefOr[RVGet[T, size]] = js.native
+  var getSize: js.UndefOr[RVGet[T, size]] = js.undefined
   
-  var getSize0: js.UndefOr[RVGet[T, size0]] = js.native
+  var getSize0: js.UndefOr[RVGet[T, size0]] = js.undefined
   
-  var getX: js.UndefOr[RVGet[T, x]] = js.native
+  var getX: js.UndefOr[RVGet[T, x]] = js.undefined
   
-  var getX0: js.UndefOr[RVGet[T, x0]] = js.native
+  var getX0: js.UndefOr[RVGet[T, x0]] = js.undefined
   
-  var getY: js.UndefOr[RVGet[T, y]] = js.native
+  var getY: js.UndefOr[RVGet[T, y]] = js.undefined
   
-  var getY0: js.UndefOr[RVGet[T, y0]] = js.native
+  var getY0: js.UndefOr[RVGet[T, y0]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var onNearestX: js.UndefOr[RVNearestXEventHandler[T]] = js.native
+  var onNearestX: js.UndefOr[RVNearestXEventHandler[T]] = js.undefined
   
-  var onNearestXY: js.UndefOr[RVNearestXYEventHandler[T]] = js.native
+  var onNearestXY: js.UndefOr[RVNearestXYEventHandler[T]] = js.undefined
   
-  var onSeriesClick: js.UndefOr[RVMouseEventHandler] = js.native
+  var onSeriesClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onSeriesMouseOut: js.UndefOr[RVMouseEventHandler] = js.native
+  var onSeriesMouseOut: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onSeriesMouseOver: js.UndefOr[RVMouseEventHandler] = js.native
+  var onSeriesMouseOver: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onSeriesRightClick: js.UndefOr[RVMouseEventHandler] = js.native
+  var onSeriesRightClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onValueClick: js.UndefOr[RVValueEventHandler[T]] = js.native
+  var onValueClick: js.UndefOr[RVValueEventHandler[T]] = js.undefined
   
-  var onValueMouseOut: js.UndefOr[RVValueEventHandler[T]] = js.native
+  var onValueMouseOut: js.UndefOr[RVValueEventHandler[T]] = js.undefined
   
-  var onValueMouseOver: js.UndefOr[RVValueEventHandler[T]] = js.native
+  var onValueMouseOver: js.UndefOr[RVValueEventHandler[T]] = js.undefined
   
-  var onValueRightClick: js.UndefOr[RVValueEventHandler[T]] = js.native
+  var onValueRightClick: js.UndefOr[RVValueEventHandler[T]] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   var opacityBaseValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['opacity'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var opacityDistance: js.UndefOr[Double] = js.native
+  var opacityDistance: js.UndefOr[Double] = js.undefined
   
   var opacityDomain: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['opacity'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var opacityRange: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['opacity'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var opacityType: js.UndefOr[Scale] = js.native
+  var opacityType: js.UndefOr[Scale] = js.undefined
   
   var sizeBaseValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var sizeDistance: js.UndefOr[Double] = js.native
+  var sizeDistance: js.UndefOr[Double] = js.undefined
   
   var sizeDomain: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var sizeRange: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['size'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var sizeType: js.UndefOr[Scale] = js.native
+  var sizeType: js.UndefOr[Scale] = js.undefined
   
-  var stack: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var stroke: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   // default: {}
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   var xBaseValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var xDistance: js.UndefOr[Double] = js.native
+  var xDistance: js.UndefOr[Double] = js.undefined
   
   var xDomain: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var xRange: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['x'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var xType: js.UndefOr[Scale] = js.native
+  var xType: js.UndefOr[Scale] = js.undefined
   
   var yBaseValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var yDistance: js.UndefOr[Double] = js.native
+  var yDistance: js.UndefOr[Double] = js.undefined
   
   var yDomain: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var yRange: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T['y'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var yType: js.UndefOr[Scale] = js.native
+  var yType: js.UndefOr[Scale] = js.undefined
 }
 object AbstractSeriesProps {
   
@@ -215,7 +213,7 @@ object AbstractSeriesProps {
   }
   
   @scala.inline
-  implicit class AbstractSeriesPropsMutableBuilder[Self <: AbstractSeriesProps[_], T /* <: AbstractSeriesPoint */] (val x: Self with AbstractSeriesProps[T]) extends AnyVal {
+  implicit class AbstractSeriesPropsMutableBuilder[Self <: AbstractSeriesProps[?], T /* <: AbstractSeriesPoint */] (val x: Self & AbstractSeriesProps[T]) extends AnyVal {
     
     @scala.inline
     def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
@@ -284,7 +282,7 @@ object AbstractSeriesProps {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[T | js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[T | js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

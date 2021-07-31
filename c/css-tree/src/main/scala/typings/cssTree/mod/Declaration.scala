@@ -2,34 +2,28 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Declaration
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode {
   
-  var important: Boolean | String = js.native
+  var important: Boolean | String
   
-  var property: String = js.native
+  var property: String
   
   @JSName("type")
-  var type_Declaration: typings.cssTree.cssTreeStrings.Declaration = js.native
+  var type_Declaration: typings.cssTree.cssTreeStrings.Declaration
   
-  var value: Value | Raw = js.native
+  var value: Value | Raw
 }
 object Declaration {
   
   @scala.inline
-  def apply(
-    important: Boolean | String,
-    property: String,
-    `type`: typings.cssTree.cssTreeStrings.Declaration,
-    value: Value | Raw
-  ): Declaration = {
+  def apply(important: Boolean | String, property: String, value: Value | Raw): Declaration = {
     val __obj = js.Dynamic.literal(important = important.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Declaration")
     __obj.asInstanceOf[Declaration]
   }
   

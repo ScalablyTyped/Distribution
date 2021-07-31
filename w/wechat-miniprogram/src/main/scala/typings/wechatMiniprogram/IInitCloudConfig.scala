@@ -3,15 +3,13 @@ package typings.wechatMiniprogram
 import typings.wechatMiniprogram.anon.Database
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInitCloudConfig extends StObject {
   
-  var env: js.UndefOr[String | Database] = js.native
+  var env: js.UndefOr[String | Database] = js.undefined
   
-  var traceUser: js.UndefOr[Boolean] = js.native
+  var traceUser: js.UndefOr[Boolean] = js.undefined
 }
 object IInitCloudConfig {
   

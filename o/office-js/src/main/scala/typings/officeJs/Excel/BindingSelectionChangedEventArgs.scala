@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait BindingSelectionChangedEventArgs extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait BindingSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var binding: Binding = js.native
+  var binding: Binding
   
   /**
     *
@@ -30,7 +28,7 @@ trait BindingSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var columnCount: Double = js.native
+  var columnCount: Double
   
   /**
     *
@@ -38,7 +36,7 @@ trait BindingSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var rowCount: Double = js.native
+  var rowCount: Double
   
   /**
     *
@@ -46,7 +44,7 @@ trait BindingSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var startColumn: Double = js.native
+  var startColumn: Double
   
   /**
     *
@@ -54,7 +52,7 @@ trait BindingSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var startRow: Double = js.native
+  var startRow: Double
 }
 object BindingSelectionChangedEventArgs {
   

@@ -4,29 +4,29 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MKRippleProperties extends ViewProps {
+trait MKRippleProperties
+  extends StObject
+     with ViewProps {
   
-  var maskBorderRadius: js.UndefOr[Double] = js.native
+  var maskBorderRadius: js.UndefOr[Double] = js.undefined
   
-  var maskBorderRadiusInPercent: js.UndefOr[Double] = js.native
+  var maskBorderRadiusInPercent: js.UndefOr[Double] = js.undefined
   
-  var maskColor: js.UndefOr[String] = js.native
+  var maskColor: js.UndefOr[String] = js.undefined
   
-  var maskDuration: js.UndefOr[Double] = js.native
+  var maskDuration: js.UndefOr[Double] = js.undefined
   
-  var maskEnabled: js.UndefOr[Boolean] = js.native
+  var maskEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
   
-  var rippleDuration: js.UndefOr[Double] = js.native
+  var rippleDuration: js.UndefOr[Double] = js.undefined
   
-  var rippleLocation: js.UndefOr[typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation] = js.native
+  var rippleLocation: js.UndefOr[typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation] = js.undefined
   
-  var shadowAniEnabled: js.UndefOr[Boolean] = js.native
+  var shadowAniEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object MKRippleProperties {
   

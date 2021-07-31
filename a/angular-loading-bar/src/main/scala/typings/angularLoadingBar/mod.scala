@@ -3,7 +3,6 @@ package typings.angularLoadingBar
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,13 +19,12 @@ object mod extends Shortcut {
   /* augmented module */
   object angularAugmentingMod {
     
-    @js.native
     trait IRequestShortcutConfig extends StObject {
       
       /**
         * Indicates that the loading bar should be hidden.
         */
-      var ignoreLoadingBar: js.UndefOr[Boolean] = js.native
+      var ignoreLoadingBar: js.UndefOr[Boolean] = js.undefined
     }
     object IRequestShortcutConfig {
       
@@ -49,75 +47,74 @@ object mod extends Shortcut {
     
     object loadingBar {
       
-      @js.native
       trait ILoadingBarProvider extends StObject {
         
         /**
           * Give illusion that there's always progress
           */
-        var autoIncrement: js.UndefOr[Boolean] = js.native
+        var autoIncrement: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Complete the loading bar
           */
-        def complete(): Unit = js.native
+        def complete(): Unit
         
         /**
           * Increment the loading bar
           */
-        def inc(): Unit = js.native
+        def inc(): Unit
         
         /**
           * Turn the loading bar on or off
           */
-        var includeBar: js.UndefOr[Boolean] = js.native
+        var includeBar: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Turn the spinner on or off
           */
-        var includeSpinner: js.UndefOr[Boolean] = js.native
+        var includeSpinner: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Latency Threshold
           */
-        var latencyThreshold: js.UndefOr[Double] = js.native
+        var latencyThreshold: js.UndefOr[Double] = js.undefined
         
         /**
           * Loading bar template
           */
-        var loadingBarTemplate: js.UndefOr[String] = js.native
+        var loadingBarTemplate: js.UndefOr[String] = js.undefined
         
         /**
           * HTML element selector of parent
           */
-        var parentSelector: js.UndefOr[String] = js.native
+        var parentSelector: js.UndefOr[String] = js.undefined
         
         /**
           * Set the percentage completed
           * @param {number} n - number between 0 and 1
           */
-        def set(n: Double): Unit = js.native
+        def set(n: Double): Unit
         
         /**
           * HTML template
           */
-        var spinnerTemplate: js.UndefOr[String] = js.native
+        var spinnerTemplate: js.UndefOr[String] = js.undefined
         
         /**
           * Broadcast the start event
           */
-        def start(): Unit = js.native
+        def start(): Unit
         
         /**
           * Starting size
           */
-        var startSize: js.UndefOr[Double] = js.native
+        var startSize: js.UndefOr[Double] = js.undefined
         
         /**
           * Get the percentage completed
           * @returns {number}
           */
-        def status(): Double = js.native
+        def status(): Double
       }
       object ILoadingBarProvider {
         

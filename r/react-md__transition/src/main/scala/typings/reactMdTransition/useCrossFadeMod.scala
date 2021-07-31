@@ -7,49 +7,49 @@ import typings.reactMdTransition.useCSSTransitionMod.CSSTransitionReturnValue
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useCrossFadeMod {
   
-  @JSImport("@react-md/transition/types/useCrossFade", "useCrossFade")
+  @JSImport("@react-md/transition/types/useCrossFade", JSImport.Namespace)
   @js.native
-  def useCrossFade[E /* <: HTMLElement */](): CSSTransitionReturnValue[E] = js.native
-  @JSImport("@react-md/transition/types/useCrossFade", "useCrossFade")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useCrossFade[E /* <: HTMLElement */](): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")().asInstanceOf[CSSTransitionReturnValue[E]]
+  @scala.inline
   def useCrossFade[E /* <: HTMLElement */](
     hasAppearTemporaryTransitionInClassNameOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited: CrossFadeOptions[E]
-  ): CSSTransitionReturnValue[E] = js.native
+  ): CSSTransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCrossFade")(hasAppearTemporaryTransitionInClassNameOnEnterOnEnteringOnEnteredOnExitOnExitingOnExited.asInstanceOf[js.Any]).asInstanceOf[CSSTransitionReturnValue[E]]
   
   /* Inlined parent std.Omit<@react-md/transition.@react-md/transition/types/types.CSSTransitionOptions<E>, 'timeout' | 'classNames' | 'transitionIn'> */
-  @js.native
   trait CrossFadeOptions[E /* <: HTMLElement */] extends StObject {
     
-    var appear: js.UndefOr[Boolean] = js.native
+    var appear: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var enter: js.UndefOr[Boolean] = js.native
+    var enter: js.UndefOr[Boolean] = js.undefined
     
-    var exit: js.UndefOr[Boolean] = js.native
+    var exit: js.UndefOr[Boolean] = js.undefined
     
-    var onEnter: js.UndefOr[EnterHandler[E]] = js.native
+    var onEnter: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onEntered: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntered: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onEntering: js.UndefOr[EnterHandler[E]] = js.native
+    var onEntering: js.UndefOr[EnterHandler[E]] = js.undefined
     
-    var onExit: js.UndefOr[ExitHandler[E]] = js.native
+    var onExit: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var onExited: js.UndefOr[ExitHandler[E]] = js.native
+    var onExited: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var onExiting: js.UndefOr[ExitHandler[E]] = js.native
+    var onExiting: js.UndefOr[ExitHandler[E]] = js.undefined
     
-    var ref: js.UndefOr[Ref[E]] = js.native
+    var ref: js.UndefOr[Ref[E]] = js.undefined
     
-    var temporary: js.UndefOr[Boolean] = js.native
+    var temporary: js.UndefOr[Boolean] = js.undefined
     
-    var transitionIn: js.UndefOr[Boolean] = js.native
+    var transitionIn: js.UndefOr[Boolean] = js.undefined
   }
   object CrossFadeOptions {
     
@@ -60,7 +60,7 @@ object useCrossFadeMod {
     }
     
     @scala.inline
-    implicit class CrossFadeOptionsMutableBuilder[Self <: CrossFadeOptions[_], E /* <: HTMLElement */] (val x: Self with CrossFadeOptions[E]) extends AnyVal {
+    implicit class CrossFadeOptionsMutableBuilder[Self <: CrossFadeOptions[?], E /* <: HTMLElement */] (val x: Self & CrossFadeOptions[E]) extends AnyVal {
       
       @scala.inline
       def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])

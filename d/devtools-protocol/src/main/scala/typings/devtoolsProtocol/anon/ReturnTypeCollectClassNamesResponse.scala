@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.CollectClassNamesRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.CollectClassNamesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCollectClassNamesResponse extends StObject {
   
-  var paramsType: js.Array[CollectClassNamesRequest] = js.native
+  var paramsType: js.Array[CollectClassNamesRequest]
   
-  var returnType: CollectClassNamesResponse = js.native
+  var returnType: CollectClassNamesResponse
 }
 object ReturnTypeCollectClassNamesResponse {
   

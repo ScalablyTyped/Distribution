@@ -2,7 +2,6 @@ package typings.phaser.phaserMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("phaser", "FacebookInstantGamesPlugin")
 @js.native
 class FacebookInstantGamesPlugin protected ()
-  extends typings.phaser.Phaser.FacebookInstantGamesPlugin {
+  extends StObject
+     with typings.phaser.Phaser.FacebookInstantGamesPlugin {
   /**
     * 
     * @param game A reference to the Phaser.Game instance.

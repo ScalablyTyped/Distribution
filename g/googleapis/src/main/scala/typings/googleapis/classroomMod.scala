@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classroomMod {
+  
+  @JSImport("googleapis/build/src/apis/classroom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object classroomMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/classroom", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/classroom", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object classroomMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/classroom", "classroom")
-  @js.native
-  def classroom(options: Options): Classroom = js.native
-  @JSImport("googleapis/build/src/apis/classroom", "classroom")
-  @js.native
-  def classroom_v1(version: v1): Classroom = js.native
+  @scala.inline
+  def classroom(options: Options): Classroom = ^.asInstanceOf[js.Dynamic].applyDynamic("classroom")(options.asInstanceOf[js.Any]).asInstanceOf[Classroom]
+  
+  @scala.inline
+  def classroom_v1(version: v1): Classroom = ^.asInstanceOf[js.Dynamic].applyDynamic("classroom")(version.asInstanceOf[js.Any]).asInstanceOf[Classroom]
 }

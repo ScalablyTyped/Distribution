@@ -4,24 +4,22 @@ import typings.stripejs.elementMod.PaymentRequestButtonStyle
 import typings.stripejs.elementMod.StyleAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement */
-    var complete: js.UndefOr[String] = js.native
+    var complete: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement--complete */
-    var focus: String = js.native
+    var focus: String
     
     /** @default StripeElement--focus */
-    var invalid: String = js.native
+    var invalid: String
   }
   object Base {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Clientsecret extends StObject {
     
-    var client_secret: String = js.native
+    var client_secret: String
     
-    var id: String = js.native
+    var id: String
   }
   object Clientsecret {
     
@@ -80,18 +77,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Complete extends StObject {
     
-    var base: js.UndefOr[PaymentRequestButtonStyle] = js.native
+    var base: js.UndefOr[PaymentRequestButtonStyle] = js.undefined
     
-    var complete: js.UndefOr[PaymentRequestButtonStyle] = js.native
+    var complete: js.UndefOr[PaymentRequestButtonStyle] = js.undefined
     
-    var empty: js.UndefOr[PaymentRequestButtonStyle] = js.native
+    var empty: js.UndefOr[PaymentRequestButtonStyle] = js.undefined
     
-    var invalid: js.UndefOr[PaymentRequestButtonStyle] = js.native
+    var invalid: js.UndefOr[PaymentRequestButtonStyle] = js.undefined
     
-    var paymentRequestButton: js.UndefOr[PaymentRequestButtonStyle] = js.native
+    var paymentRequestButton: js.UndefOr[PaymentRequestButtonStyle] = js.undefined
   }
   object Complete {
     
@@ -136,25 +132,24 @@ object anon {
     }
   }
   
-  @js.native
   trait Empty extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement */
-    var complete: js.UndefOr[String] = js.native
+    var complete: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement--complete */
-    var empty: js.UndefOr[String] = js.native
+    var empty: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement--empty */
-    var focus: js.UndefOr[String] = js.native
+    var focus: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement--focus */
-    var invalid: js.UndefOr[String] = js.native
+    var invalid: js.UndefOr[String] = js.undefined
     
     /** @default StripeElement--invalid */
-    var webkitAutofill: js.UndefOr[String] = js.native
+    var webkitAutofill: js.UndefOr[String] = js.undefined
   }
   object Empty {
     
@@ -205,16 +200,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Invalid extends StObject {
     
-    var base: js.UndefOr[StyleAttributes] = js.native
+    var base: js.UndefOr[StyleAttributes] = js.undefined
     
-    var complete: js.UndefOr[StyleAttributes] = js.native
+    var complete: js.UndefOr[StyleAttributes] = js.undefined
     
-    var empty: js.UndefOr[StyleAttributes] = js.native
+    var empty: js.UndefOr[StyleAttributes] = js.undefined
     
-    var invalid: js.UndefOr[StyleAttributes] = js.native
+    var invalid: js.UndefOr[StyleAttributes] = js.undefined
   }
   object Invalid {
     
@@ -253,10 +247,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PreventDefault extends StObject {
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
   }
   object PreventDefault {
     

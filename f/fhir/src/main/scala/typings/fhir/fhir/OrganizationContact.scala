@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contact for the organization for a certain purpose
   */
-@js.native
-trait OrganizationContact extends BackboneElement {
+trait OrganizationContact
+  extends StObject
+     with BackboneElement {
   
   /**
     * Visiting or postal addresses for the contact
     */
-  var address: js.UndefOr[Address] = js.native
+  var address: js.UndefOr[Address] = js.undefined
   
   /**
     * A name associated with the contact
     */
-  var name: js.UndefOr[HumanName] = js.native
+  var name: js.UndefOr[HumanName] = js.undefined
   
   /**
     * The type of contact
     */
-  var purpose: js.UndefOr[CodeableConcept] = js.native
+  var purpose: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Contact details (telephone, email, etc.)  for a contact
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object OrganizationContact {
   

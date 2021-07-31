@@ -6,30 +6,30 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPanelsMod {
   
   @JSImport("@react-md/tabs/types/TabPanels", "TabPanels")
   @js.native
-  val TabPanels: ForwardRefExoticComponent[TabPanelsProps with RefAttributes[HTMLDivElement]] = js.native
+  val TabPanels: ForwardRefExoticComponent[TabPanelsProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait TabPanelsProps extends HTMLAttributes[HTMLDivElement] {
+  trait TabPanelsProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if this component should no longer automatically reset the scrolling
       * to the top when the panel changes.
       */
-    var disableScrollFix: js.UndefOr[Boolean] = js.native
+    var disableScrollFix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the swiping transition should be disabled. If you want to add
       * a custom transition, you'll need to wrap the `TabPanel`'s children in a
       * custom component that does appear and exit animations.
       */
-    var disableTransition: js.UndefOr[Boolean] = js.native
+    var disableTransition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the conditional rendering for the active tab panel only should
@@ -38,7 +38,7 @@ object tabPanelsMod {
       * panels will also be updated to ensure that inactive panels can not be
       * tab focusable.
       */
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object TabPanelsProps {
     

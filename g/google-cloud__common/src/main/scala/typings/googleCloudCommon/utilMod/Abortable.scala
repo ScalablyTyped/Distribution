@@ -2,13 +2,11 @@ package typings.googleCloudCommon.utilMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Abortable extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
 }
 object Abortable {
   

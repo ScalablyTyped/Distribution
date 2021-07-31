@@ -2,25 +2,23 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaygroundOptions extends StObject {
   
-  var disableCollision: js.UndefOr[Boolean] = js.native
+  var disableCollision: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var keyTracker: js.UndefOr[Boolean] = js.native
+  var keyTracker: js.UndefOr[Boolean] = js.undefined
   
-  var mouseTracker: js.UndefOr[Boolean] = js.native
+  var mouseTracker: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var refreshRate: js.UndefOr[Double] = js.native
+  var refreshRate: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PlaygroundOptions {
   

@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,29 +11,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * one kind of credential in a single request.  If a method doesn&#39;t have
   * any auth requirements, request credentials will be ignored.
   */
-@js.native
 trait SchemaAuthenticationRule extends StObject {
   
   /**
     * If true, the service accepts API keys without any other credential.
     */
-  var allowWithoutCredential: js.UndefOr[Boolean] = js.native
+  var allowWithoutCredential: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The requirements for OAuth credentials.
     */
-  var oauth: js.UndefOr[SchemaOAuthRequirements] = js.native
+  var oauth: js.UndefOr[SchemaOAuthRequirements] = js.undefined
   
   /**
     * Requirements for additional authentication providers.
     */
-  var requirements: js.UndefOr[js.Array[SchemaAuthRequirement]] = js.native
+  var requirements: js.UndefOr[js.Array[SchemaAuthRequirement]] = js.undefined
   
   /**
     * Selects the methods to which this rule applies.  Refer to selector for
     * syntax details.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthenticationRule {
   

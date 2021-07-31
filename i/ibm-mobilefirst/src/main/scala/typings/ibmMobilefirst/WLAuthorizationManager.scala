@@ -2,15 +2,13 @@ package typings.ibmMobilefirst
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WLAuthorizationManager {
   
-  @js.native
   trait RequestObject extends StObject {
     
-    def setRequestHeader(header: String, value: String): Unit = js.native
+    def setRequestHeader(header: String, value: String): Unit
   }
   object RequestObject {
     

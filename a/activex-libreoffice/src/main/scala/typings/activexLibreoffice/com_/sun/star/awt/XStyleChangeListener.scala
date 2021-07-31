@@ -5,17 +5,17 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * to be implemented by components which wish to be notified about changes in the style of a component
   * @see XStyleSettings
   */
-@js.native
-trait XStyleChangeListener extends XEventListener {
+trait XStyleChangeListener
+  extends StObject
+     with XEventListener {
   
-  def styleSettingsChanged(Event: EventObject): Unit = js.native
+  def styleSettingsChanged(Event: EventObject): Unit
 }
 object XStyleChangeListener {
   

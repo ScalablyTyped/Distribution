@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.emr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterBootstrapAction extends StObject {
   
   /**
     * List of command line arguments passed to the JAR file's main function when executed.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Friendly name given to the instance fleet.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Location of the script to run during a bootstrap action. Can be either a location in Amazon S3 or on a local file system
     */
-  var path: String = js.native
+  var path: String
 }
 object ClusterBootstrapAction {
   

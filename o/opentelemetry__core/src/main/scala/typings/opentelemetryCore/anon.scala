@@ -3,15 +3,13 @@ package typings.opentelemetryCore
 import typings.opentelemetryCore.typesMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FetchStart extends StObject {
     
-    var fetchStart: Double = js.native
+    var fetchStart: Double
   }
   object FetchStart {
     
@@ -30,14 +28,13 @@ object anon {
   }
   
   /* Inlined std.Required<@opentelemetry/core.@opentelemetry/core/build/src/utils/environment.ENVIRONMENT> */
-  @js.native
   trait RequiredENVIRONMENT extends StObject {
     
-    var OTEL_LOG_LEVEL: LogLevel = js.native
+    var OTEL_LOG_LEVEL: LogLevel
     
-    var OTEL_NO_PATCH_MODULES: String = js.native
+    var OTEL_NO_PATCH_MODULES: String
     
-    var OTEL_SAMPLING_PROBABILITY: Double = js.native
+    var OTEL_SAMPLING_PROBABILITY: Double
   }
   object RequiredENVIRONMENT {
     

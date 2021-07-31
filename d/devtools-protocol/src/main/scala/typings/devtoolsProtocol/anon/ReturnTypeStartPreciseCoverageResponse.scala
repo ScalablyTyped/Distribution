@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Profiler.StartPreciseCoverageReques
 import typings.devtoolsProtocol.mod.Protocol.Profiler.StartPreciseCoverageResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeStartPreciseCoverageResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[StartPreciseCoverageRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[StartPreciseCoverageRequest]]
   
-  var returnType: StartPreciseCoverageResponse = js.native
+  var returnType: StartPreciseCoverageResponse
 }
 object ReturnTypeStartPreciseCoverageResponse {
   

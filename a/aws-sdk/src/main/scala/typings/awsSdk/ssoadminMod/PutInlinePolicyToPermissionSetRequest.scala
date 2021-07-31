@@ -2,26 +2,24 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutInlinePolicyToPermissionSetRequest extends StObject {
   
   /**
     * The IAM inline policy to attach to a PermissionSet.
     */
-  var InlinePolicy: PermissionSetPolicyDocument = js.native
+  var InlinePolicy: PermissionSetPolicyDocument
   
   /**
     * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn = js.native
+  var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
   /**
     * The ARN of the permission set.
     */
-  var PermissionSetArn: typings.awsSdk.ssoadminMod.PermissionSetArn = js.native
+  var PermissionSetArn: typings.awsSdk.ssoadminMod.PermissionSetArn
 }
 object PutInlinePolicyToPermissionSetRequest {
   

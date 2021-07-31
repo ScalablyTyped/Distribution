@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This struct contains information needed in the notifications of a {@link XDynamicResultSet} .
   * @see ListEvent
   */
-@js.native
 trait ListAction extends StObject {
   
   /**
     * depending on the content of {@link ListAction.ListActionType} the {@link ListAction.ActionInfo} could contain additional information about the changes
     * happened (see table above).
     */
-  var ActionInfo: js.Any = js.native
+  var ActionInfo: js.Any
   
   /** The count of involved rows. */
-  var Count: Double = js.native
+  var Count: Double
   
   /**
     * specifies the kind of modification happened to all assigned rows.
@@ -28,7 +26,7 @@ trait ListAction extends StObject {
     *
     * {{table here, see documentation}}
     */
-  var ListActionType: Double = js.native
+  var ListActionType: Double
   
   /**
     * The position where something has happened (index begins with `1` as usual with JDBC ).
@@ -36,7 +34,7 @@ trait ListAction extends StObject {
     * Its value does not necessary indicate the new position in the new {@link com.sun.star.sdbc.XResultSet} , but a position while doing the changes step
     * by step beginning with the old {@link com.sun.star.sdbc.XResultSet} .
     */
-  var Position: Double = js.native
+  var Position: Double
 }
 object ListAction {
   

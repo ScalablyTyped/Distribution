@@ -16,38 +16,36 @@ import typings.googleAppsScript.GoogleAppsScript.YouTubeAnalytics.Schema.ListGro
 import typings.googleAppsScript.GoogleAppsScript.YouTubeAnalytics.Schema.QueryResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YouTubeAnalytics extends StObject {
   
-  var GroupItems: js.UndefOr[GroupItemsCollection] = js.native
+  var GroupItems: js.UndefOr[GroupItemsCollection] = js.undefined
   
-  var Groups: js.UndefOr[GroupsCollection] = js.native
+  var Groups: js.UndefOr[GroupsCollection] = js.undefined
   
-  var Reports: js.UndefOr[ReportsCollection] = js.native
+  var Reports: js.UndefOr[ReportsCollection] = js.undefined
   
   // Create a new instance of ErrorProto
-  def newErrorProto(): ErrorProto = js.native
+  def newErrorProto(): ErrorProto
   
   // Create a new instance of Errors
-  def newErrors(): Errors = js.native
+  def newErrors(): Errors
   
   // Create a new instance of Group
-  def newGroup(): Group = js.native
+  def newGroup(): Group
   
   // Create a new instance of GroupContentDetails
-  def newGroupContentDetails(): GroupContentDetails = js.native
+  def newGroupContentDetails(): GroupContentDetails
   
   // Create a new instance of GroupItem
-  def newGroupItem(): GroupItem = js.native
+  def newGroupItem(): GroupItem
   
   // Create a new instance of GroupItemResource
-  def newGroupItemResource(): GroupItemResource = js.native
+  def newGroupItemResource(): GroupItemResource
   
   // Create a new instance of GroupSnippet
-  def newGroupSnippet(): GroupSnippet = js.native
+  def newGroupSnippet(): GroupSnippet
 }
 object YouTubeAnalytics {
   
@@ -126,10 +124,9 @@ object YouTubeAnalytics {
   
   object Schema {
     
-    @js.native
     trait EmptyResponse extends StObject {
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
     }
     object EmptyResponse {
       
@@ -150,22 +147,21 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait ErrorProto extends StObject {
       
-      var argument: js.UndefOr[js.Array[String]] = js.native
+      var argument: js.UndefOr[js.Array[String]] = js.undefined
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var debugInfo: js.UndefOr[String] = js.native
+      var debugInfo: js.UndefOr[String] = js.undefined
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var externalErrorMessage: js.UndefOr[String] = js.native
+      var externalErrorMessage: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var locationType: js.UndefOr[String] = js.native
+      var locationType: js.UndefOr[String] = js.undefined
     }
     object ErrorProto {
       
@@ -225,14 +221,13 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait Errors extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var error: js.UndefOr[js.Array[ErrorProto]] = js.native
+      var error: js.UndefOr[js.Array[ErrorProto]] = js.undefined
       
-      var requestId: js.UndefOr[String] = js.native
+      var requestId: js.UndefOr[String] = js.undefined
     }
     object Errors {
       
@@ -268,20 +263,19 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait Group extends StObject {
       
-      var contentDetails: js.UndefOr[GroupContentDetails] = js.native
+      var contentDetails: js.UndefOr[GroupContentDetails] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var snippet: js.UndefOr[GroupSnippet] = js.native
+      var snippet: js.UndefOr[GroupSnippet] = js.undefined
     }
     object Group {
       
@@ -332,12 +326,11 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait GroupContentDetails extends StObject {
       
-      var itemCount: js.UndefOr[String] = js.native
+      var itemCount: js.UndefOr[String] = js.undefined
       
-      var itemType: js.UndefOr[String] = js.native
+      var itemType: js.UndefOr[String] = js.undefined
     }
     object GroupContentDetails {
       
@@ -364,20 +357,19 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait GroupItem extends StObject {
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var groupId: js.UndefOr[String] = js.native
+      var groupId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var resource: js.UndefOr[GroupItemResource] = js.native
+      var resource: js.UndefOr[GroupItemResource] = js.undefined
     }
     object GroupItem {
       
@@ -428,12 +420,11 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait GroupItemResource extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object GroupItemResource {
       
@@ -460,12 +451,11 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait GroupSnippet extends StObject {
       
-      var publishedAt: js.UndefOr[String] = js.native
+      var publishedAt: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object GroupSnippet {
       
@@ -492,16 +482,15 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait ListGroupItemsResponse extends StObject {
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[GroupItem]] = js.native
+      var items: js.UndefOr[js.Array[GroupItem]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ListGroupItemsResponse {
       
@@ -543,18 +532,17 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait ListGroupsResponse extends StObject {
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Group]] = js.native
+      var items: js.UndefOr[js.Array[Group]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListGroupsResponse {
       
@@ -602,16 +590,15 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait QueryResponse extends StObject {
       
-      var columnHeaders: js.UndefOr[js.Array[ResultTableColumnHeader]] = js.native
+      var columnHeaders: js.UndefOr[js.Array[ResultTableColumnHeader]] = js.undefined
       
-      var errors: js.UndefOr[Errors] = js.native
+      var errors: js.UndefOr[Errors] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var rows: js.UndefOr[js.Array[js.Array[_]]] = js.native
+      var rows: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
     }
     object QueryResponse {
       
@@ -646,7 +633,7 @@ object YouTubeAnalytics {
         def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
         @scala.inline
-        def setRows(value: js.Array[js.Array[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
@@ -656,14 +643,13 @@ object YouTubeAnalytics {
       }
     }
     
-    @js.native
     trait ResultTableColumnHeader extends StObject {
       
-      var columnType: js.UndefOr[String] = js.native
+      var columnType: js.UndefOr[String] = js.undefined
       
-      var dataType: js.UndefOr[String] = js.native
+      var dataType: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ResultTableColumnHeader {
       

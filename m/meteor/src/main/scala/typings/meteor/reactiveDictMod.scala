@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactiveDictMod {
@@ -46,10 +45,11 @@ object reactiveDictMod {
   @JSImport("meteor/reactive-dict", "ReactiveDict")
   @js.native
   class ReactiveDictCls ()
-    extends typings.meteor.reactiveDictMod.ReactiveDict {
+    extends StObject
+       with typings.meteor.reactiveDictMod.ReactiveDict {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], initialValue: EJSONable) = this()
     def this(name: String, initialValue: EJSONable) = this()
+    def this(name: Unit, initialValue: EJSONable) = this()
   }
   
   @scala.inline
@@ -57,10 +57,11 @@ object reactiveDictMod {
   
   @js.native
   trait ReactiveDictStatic
-    extends Instantiable0[typings.meteor.reactiveDictMod.ReactiveDict]
+    extends StObject
+       with Instantiable0[typings.meteor.reactiveDictMod.ReactiveDict]
        with Instantiable1[/* name */ String, typings.meteor.reactiveDictMod.ReactiveDict]
        with Instantiable2[
-          js.UndefOr[/* name */ String], 
+          (/* name */ String) | (/* name */ Unit), 
           /* initialValue */ EJSONable, 
           typings.meteor.reactiveDictMod.ReactiveDict
         ]

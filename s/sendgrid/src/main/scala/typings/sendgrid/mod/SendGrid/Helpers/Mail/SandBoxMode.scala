@@ -3,17 +3,15 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.EnableBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SandBoxMode extends StObject {
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def toJSON(): EnableBoolean = js.native
+  def toJSON(): EnableBoolean
 }
 object SandBoxMode {
   

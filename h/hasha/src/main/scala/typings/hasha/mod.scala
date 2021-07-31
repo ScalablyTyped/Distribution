@@ -11,7 +11,6 @@ import typings.node.cryptoMod.Hash
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,12 +28,14 @@ object mod {
   	//=> 'e233b19aabc7d5e53826fb734d1222f1f0444c3a3fc67ff4af370a66e7cadd2cb24009f1bc86f0bed12ca5fcb226145ad10fc5f650f6ef0959f8aadc5a594b27'
   	```
   	*/
+  @scala.inline
+  def apply(input: HashaInput): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(input: HashaInput, options: Options[ToStringEncoding]): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("hasha", JSImport.Namespace)
   @js.native
-  def apply(input: HashaInput): String = js.native
-  @JSImport("hasha", JSImport.Namespace)
-  @js.native
-  def apply(input: HashaInput, options: Options[ToStringEncoding]): String = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Asynchronously calculate the hash for a `string`, `Buffer`, or an array thereof.
@@ -52,15 +53,13 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("hasha", "async")
-  @js.native
-  def async(input: HashaInput): js.Promise[String] = js.native
-  @JSImport("hasha", "async")
-  @js.native
-  def async(input: HashaInput, options: Options[ToStringEncoding]): js.Promise[String] = js.native
-  @JSImport("hasha", "async")
-  @js.native
-  def async_buffer(input: HashaInput, options: Options[buffer]): js.Promise[Buffer] = js.native
+  @scala.inline
+  def async(input: HashaInput): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def async(input: HashaInput, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def async_buffer(input: HashaInput, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Calculate the hash for a file.
@@ -78,46 +77,39 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("hasha", "fromFile")
-  @js.native
-  def fromFile(filePath: String): js.Promise[String] = js.native
-  @JSImport("hasha", "fromFile")
-  @js.native
-  def fromFile(filePath: String, options: Options[ToStringEncoding]): js.Promise[String] = js.native
+  @scala.inline
+  def fromFile(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def fromFile(filePath: String, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
   	Synchronously calculate the hash for a file.
   	@param filePath - Path to a file you want to hash.
   	@returns The calculated file hash.
   	*/
-  @JSImport("hasha", "fromFileSync")
-  @js.native
-  def fromFileSync(filePath: String): String = js.native
-  @JSImport("hasha", "fromFileSync")
-  @js.native
-  def fromFileSync(filePath: String, options: Options[ToStringEncoding]): String = js.native
-  @JSImport("hasha", "fromFileSync")
-  @js.native
-  def fromFileSync_buffer(filePath: String, options: Options[buffer]): Buffer = js.native
+  @scala.inline
+  def fromFileSync(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fromFileSync(filePath: String, options: Options[ToStringEncoding]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("hasha", "fromFile")
-  @js.native
-  def fromFile_buffer(filePath: String, options: Options[buffer]): js.Promise[Buffer] = js.native
+  @scala.inline
+  def fromFileSync_buffer(filePath: String, options: Options[buffer]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFileSync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def fromFile_buffer(filePath: String, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Calculate the hash for a stream.
   	@param stream - A stream you want to hash.
   	@returns The calculated hash.
   	*/
-  @JSImport("hasha", "fromStream")
-  @js.native
-  def fromStream(stream: ReadableStream): js.Promise[String] = js.native
-  @JSImport("hasha", "fromStream")
-  @js.native
-  def fromStream(stream: ReadableStream, options: Options[ToStringEncoding]): js.Promise[String] = js.native
-  @JSImport("hasha", "fromStream")
-  @js.native
-  def fromStream_buffer(stream: ReadableStream, options: Options[buffer]): js.Promise[Buffer] = js.native
+  @scala.inline
+  def fromStream(stream: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def fromStream(stream: ReadableStream, options: Options[ToStringEncoding]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def fromStream_buffer(stream: ReadableStream, options: Options[buffer]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   /**
   	Create a [hash transform stream](https://nodejs.org/api/crypto.html#crypto_class_hash).
@@ -129,12 +121,10 @@ object mod {
   	process.stdin.pipe(hasha.stream()).pipe(process.stdout);
   	```
   	*/
-  @JSImport("hasha", "stream")
-  @js.native
-  def stream(): Hash = js.native
-  @JSImport("hasha", "stream")
-  @js.native
-  def stream(options: Options[HashaEncoding]): Hash = js.native
+  @scala.inline
+  def stream(): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[Hash]
+  @scala.inline
+  def stream(options: Options[HashaEncoding]): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(options.asInstanceOf[js.Any]).asInstanceOf[Hash]
   
   type AlgorithmName = LiteralUnion[md5 | sha1 | sha256 | sha512, String]
   
@@ -162,7 +152,6 @@ object mod {
   
   type HashaInput = Buffer | String | (js.Array[Buffer | String])
   
-  @js.native
   trait Options[EncodingType] extends StObject {
     
     /**
@@ -170,13 +159,13 @@ object mod {
     		_The `md5` algorithm is good for [file revving](https://github.com/sindresorhus/rev-hash), but you should never use `md5` or `sha1` for anything sensitive. [They're insecure.](https://security.googleblog.com/2014/09/gradually-sunsetting-sha-1.html)_
     		@default 'sha512'
     		*/
-    val algorithm: js.UndefOr[AlgorithmName] = js.native
+    val algorithm: js.UndefOr[AlgorithmName] = js.undefined
     
     /**
     		Encoding of the returned hash.
     		@default 'hex'
     		*/
-    val encoding: js.UndefOr[EncodingType] = js.native
+    val encoding: js.UndefOr[EncodingType] = js.undefined
   }
   object Options {
     
@@ -187,7 +176,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], EncodingType] (val x: Self with Options[EncodingType]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], EncodingType] (val x: Self & Options[EncodingType]) extends AnyVal {
       
       @scala.inline
       def setAlgorithm(value: AlgorithmName): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])

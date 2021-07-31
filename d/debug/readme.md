@@ -10,10 +10,10 @@ small debugging utility
 | ------------------ | :-------------: |
 | Full name          | debug |
 | Keywords           | debug, log, debugger |
-| # releases         | 3 |
-| # dependents       | 28512 |
-| # downloads        | 3354385103 |
-| # stars            | 701 |
+| # releases         | 5 |
+| # dependents       | 29082 |
+| # downloads        | 3696373790 |
+| # stars            | 703 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/debug#readme)

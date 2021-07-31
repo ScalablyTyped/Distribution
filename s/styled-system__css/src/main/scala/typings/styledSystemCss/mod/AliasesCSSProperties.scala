@@ -13,10 +13,8 @@ import typings.csstype.mod.PaddingRightProperty
 import typings.csstype.mod.PaddingTopProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AliasesCSSProperties extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait AliasesCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/background-color
     */
-  var bg: js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]] = js.native
+  var bg: js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]] = js.undefined
   
   /**
     * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
@@ -41,7 +39,7 @@ trait AliasesCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin
     */
-  var m: js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])] = js.native
+  var m: js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])] = js.undefined
   
   /**
     * The **`marginX`** is shorthand for using both **`margin-left`** and **`margin-right`** CSS properties. They set the margin area on the left and right side of an element. A positive value
@@ -59,7 +57,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var marginX: js.UndefOr[
     (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`marginY`** is shorthard for using both **`margin-top`** and **`margin-bottom`** CSS properties. They set the margin area on the top and bottom of an element. A positive value places
@@ -77,7 +75,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var marginY: js.UndefOr[
     (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`margin-bottom`** CSS property sets the margin area on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -92,7 +90,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var mb: js.UndefOr[
     (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`margin-left`** CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -107,7 +105,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var ml: js.UndefOr[
     (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`margin-right`** CSS property sets the margin area on the right side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -122,7 +120,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var mr: js.UndefOr[
     (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`margin-top`** CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
@@ -137,7 +135,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var mt: js.UndefOr[
     (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`mx`** is shorthand for using both **`margin-left`** and **`margin-right`** CSS properties. They set the margin area on the left and right side of an element. A positive value placesit
@@ -155,7 +153,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var mx: js.UndefOr[
     (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`my`** is shorthard for using both **`margin-top`** and **`margin-bottom`** CSS properties. They set the margin area on the top and bottom of an element. A positive value places it
@@ -173,7 +171,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var my: js.UndefOr[
     (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
@@ -186,7 +184,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var p: js.UndefOr[
     (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`paddingX`** is shorthand property for CSS properties **`padding-left`** and **`padding-right`**. They set the width of the padding area on the left and right side of an element.
@@ -203,7 +201,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var paddingX: js.UndefOr[
     (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`paddingY`** is shorthand property for CSS properties **`padding-top`** and **`padding-bottom`**. They set the width of the padding area on the top and bottom of an element.
@@ -220,7 +218,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var paddingY: js.UndefOr[
     (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`padding-bottom`** CSS property sets the height of the padding area on the bottom of an element.
@@ -235,7 +233,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var pb: js.UndefOr[
     (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`padding-left`** CSS property sets the width of the padding area on the left side of an element.
@@ -250,7 +248,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var pl: js.UndefOr[
     (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`padding-right`** CSS property sets the width of the padding area on the right side of an element.
@@ -265,7 +263,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var pr: js.UndefOr[
     (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`padding-top`** padding area on the top of an element.
@@ -280,7 +278,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var pt: js.UndefOr[
     (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`px`** is shorthand property for CSS properties **`padding-left`** and **`padding-right`**. They set the width of the padding area on the left and right side of an element.
@@ -297,7 +295,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var px: js.UndefOr[
     (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The **`py`** is shorthand property for CSS properties **`padding-top`** and **`padding-bottom`**. They set the width of the padding area on the top and bottom of an element.
@@ -314,7 +312,7 @@ trait AliasesCSSProperties extends StObject {
     */
   var py: js.UndefOr[
     (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
-  ] = js.native
+  ] = js.undefined
 }
 object AliasesCSSProperties {
   

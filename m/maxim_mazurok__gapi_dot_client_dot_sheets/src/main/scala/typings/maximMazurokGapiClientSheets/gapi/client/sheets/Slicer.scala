@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slicer extends StObject {
   
   /**
     * The position of the slicer. Note that slicer can be positioned only on existing sheet. Also, width and height of slicer can be automatically adjusted to keep it within permitted
     * limits.
     */
-  var position: js.UndefOr[EmbeddedObjectPosition] = js.native
+  var position: js.UndefOr[EmbeddedObjectPosition] = js.undefined
   
   /** The ID of the slicer. */
-  var slicerId: js.UndefOr[Double] = js.native
+  var slicerId: js.UndefOr[Double] = js.undefined
   
   /** The specification of the slicer. */
-  var spec: js.UndefOr[SlicerSpec] = js.native
+  var spec: js.UndefOr[SlicerSpec] = js.undefined
 }
 object Slicer {
   

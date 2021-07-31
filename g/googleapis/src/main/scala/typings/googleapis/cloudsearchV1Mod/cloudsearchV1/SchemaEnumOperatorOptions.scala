@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * only items that have *p0* as this property&#39;s value, with the query
   * *priority:p0*.
   */
-@js.native
 trait SchemaEnumOperatorOptions extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait SchemaEnumOperatorOptions extends StObject {
     * item. The operator name can only contain lowercase letters (a-z). The
     * maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object SchemaEnumOperatorOptions {
   

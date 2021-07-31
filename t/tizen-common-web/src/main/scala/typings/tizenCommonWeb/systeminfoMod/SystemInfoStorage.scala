@@ -2,16 +2,16 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoStorage extends SystemInfoProperty {
+trait SystemInfoStorage
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * The array of storage units connected to this device.
     */
-  val units: js.Array[SystemInfoStorageUnit] = js.native
+  val units: js.Array[SystemInfoStorageUnit]
 }
 object SystemInfoStorage {
   

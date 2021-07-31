@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tarballurl extends StObject {
   
-  var commit: ShaUrl = js.native
+  var commit: ShaUrl
   
-  var name: String = js.native
+  var name: String
   
-  var tarball_url: String = js.native
+  var tarball_url: String
   
-  var zipball_url: String = js.native
+  var zipball_url: String
 }
 object Tarballurl {
   

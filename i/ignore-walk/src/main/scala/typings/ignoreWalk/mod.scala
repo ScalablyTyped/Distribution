@@ -10,23 +10,22 @@ import typings.std.Error
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(options: Unit, callback: js.Function1[/* results */ js.Array[String], Unit]): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(options: WalkerOptions): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(options: WalkerOptions, callback: js.Function1[/* results */ js.Array[String], Unit]): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  
   @JSImport("ignore-walk", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[js.Array[String]] = js.native
-  @JSImport("ignore-walk", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* results */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
-  @JSImport("ignore-walk", JSImport.Namespace)
-  @js.native
-  def apply(options: WalkerOptions): js.Promise[js.Array[String]] = js.native
-  @JSImport("ignore-walk", JSImport.Namespace)
-  @js.native
-  def apply(options: WalkerOptions, callback: js.Function1[/* results */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ignore-walk", "Walker")
   @js.native
@@ -115,25 +114,22 @@ object mod {
     def this(opts: WalkerOptions) = this()
   }
   
-  @JSImport("ignore-walk", "sync")
-  @js.native
-  def sync(): js.Array[String] = js.native
-  @JSImport("ignore-walk", "sync")
-  @js.native
-  def sync(options: WalkerOptions): js.Array[String] = js.native
+  @scala.inline
+  def sync(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(options: WalkerOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait WalkerOptions extends StObject {
     
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreFiles: js.UndefOr[js.Array[String]] = js.native
+    var ignoreFiles: js.UndefOr[js.Array[String]] = js.undefined
     
-    var includeEmpty: js.UndefOr[Boolean] = js.native
+    var includeEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var parent: js.UndefOr[Walker | WalkerSync | Null] = js.native
+    var parent: js.UndefOr[Walker | WalkerSync | Null] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object WalkerOptions {
     

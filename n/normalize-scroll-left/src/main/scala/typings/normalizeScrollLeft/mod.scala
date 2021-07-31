@@ -5,35 +5,33 @@ import typings.normalizeScrollLeft.normalizeScrollLeftStrings.rtl
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("normalize-scroll-left", "detectScrollType")
+  @JSImport("normalize-scroll-left", JSImport.Namespace)
   @js.native
-  def detectScrollType(): ScrollType = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("normalize-scroll-left", "getNormalizedScrollLeft")
-  @js.native
-  def getNormalizedScrollLeft_ltr(element: HTMLElement, direction: ltr): Double = js.native
-  @JSImport("normalize-scroll-left", "getNormalizedScrollLeft")
-  @js.native
-  def getNormalizedScrollLeft_rtl(element: HTMLElement, direction: rtl): Double = js.native
+  @scala.inline
+  def detectScrollType(): ScrollType = ^.asInstanceOf[js.Dynamic].applyDynamic("detectScrollType")().asInstanceOf[ScrollType]
   
-  @JSImport("normalize-scroll-left", "setNormalizedScrollLeft")
-  @js.native
-  def setNormalizedScrollLeft_ltr(element: HTMLElement, scrollLeft: Double, direction: ltr): Unit = js.native
-  @JSImport("normalize-scroll-left", "setNormalizedScrollLeft")
-  @js.native
-  def setNormalizedScrollLeft_rtl(element: HTMLElement, scrollLeft: Double, direction: rtl): Unit = js.native
+  @scala.inline
+  def getNormalizedScrollLeft_ltr(element: HTMLElement, direction: ltr): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedScrollLeft")(element.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("normalize-scroll-left", "_setScrollType")
-  @js.native
-  def setScrollType(): Unit = js.native
-  @JSImport("normalize-scroll-left", "_setScrollType")
-  @js.native
-  def setScrollType(`type`: ScrollType): Unit = js.native
+  @scala.inline
+  def getNormalizedScrollLeft_rtl(element: HTMLElement, direction: rtl): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedScrollLeft")(element.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def setNormalizedScrollLeft_ltr(element: HTMLElement, scrollLeft: Double, direction: ltr): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNormalizedScrollLeft")(element.asInstanceOf[js.Any], scrollLeft.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setNormalizedScrollLeft_rtl(element: HTMLElement, scrollLeft: Double, direction: rtl): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNormalizedScrollLeft")(element.asInstanceOf[js.Any], scrollLeft.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setScrollType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setScrollType")().asInstanceOf[Unit]
+  @scala.inline
+  def setScrollType(`type`: ScrollType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setScrollType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.normalizeScrollLeft.normalizeScrollLeftStrings.indeterminate

@@ -6,10 +6,8 @@ import typings.electron.electronStrings.recent
 import typings.electron.electronStrings.tasks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JumpListCategory extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/jump-list-category
@@ -17,17 +15,17 @@ trait JumpListCategory extends StObject {
     * Array of `JumpListItem` objects if `type` is `tasks` or `custom`, otherwise it
     * should be omitted.
     */
-  var items: js.UndefOr[js.Array[JumpListItem]] = js.native
+  var items: js.UndefOr[js.Array[JumpListItem]] = js.undefined
   
   /**
     * Must be set if `type` is `custom`, otherwise it should be omitted.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * One of the following:
     */
-  var `type`: js.UndefOr[tasks | frequent | recent | custom] = js.native
+  var `type`: js.UndefOr[tasks | frequent | recent | custom] = js.undefined
 }
 object JumpListCategory {
   

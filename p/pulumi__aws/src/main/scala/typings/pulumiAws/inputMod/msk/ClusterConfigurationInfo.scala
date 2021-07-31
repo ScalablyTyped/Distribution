@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.msk
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterConfigurationInfo extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
     */
-  var arn: Input[String] = js.native
+  var arn: Input[String]
   
   /**
     * Revision of the MSK Configuration to use in the cluster.
     */
-  var revision: Input[Double] = js.native
+  var revision: Input[Double]
 }
 object ClusterConfigurationInfo {
   

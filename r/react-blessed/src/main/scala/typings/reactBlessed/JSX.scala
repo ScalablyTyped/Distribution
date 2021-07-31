@@ -2,71 +2,69 @@ package typings.reactBlessed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JSX {
   
-  @js.native
   trait IntrinsicElements extends StObject {
     
-    var `blessed-bigtext`: js.Any = js.native
+    var `blessed-bigtext`: js.Any
     
-    var `blessed-box`: js.Any = js.native
+    var `blessed-box`: js.Any
     
-    var `blessed-button`: js.Any = js.native
+    var `blessed-button`: js.Any
     
-    var `blessed-checkbox`: js.Any = js.native
+    var `blessed-checkbox`: js.Any
     
-    var `blessed-escape`: js.Any = js.native
+    var `blessed-escape`: js.Any
     
-    var `blessed-filemanager`: js.Any = js.native
+    var `blessed-filemanager`: js.Any
     
-    var `blessed-form`: js.Any = js.native
+    var `blessed-form`: js.Any
     
-    var `blessed-input`: js.Any = js.native
+    var `blessed-input`: js.Any
     
-    var `blessed-layout`: js.Any = js.native
+    var `blessed-layout`: js.Any
     
-    var `blessed-line`: js.Any = js.native
+    var `blessed-line`: js.Any
     
-    var `blessed-list`: js.Any = js.native
+    var `blessed-list`: js.Any
     
-    var `blessed-listbar`: js.Any = js.native
+    var `blessed-listbar`: js.Any
     
-    var `blessed-listtable`: js.Any = js.native
+    var `blessed-listtable`: js.Any
     
-    var `blessed-loading`: js.Any = js.native
+    var `blessed-loading`: js.Any
     
-    var `blessed-log`: js.Any = js.native
+    var `blessed-log`: js.Any
     
-    var `blessed-message`: js.Any = js.native
+    var `blessed-message`: js.Any
     
-    var `blessed-program`: js.Any = js.native
+    var `blessed-program`: js.Any
     
-    var `blessed-progressbar`: js.Any = js.native
+    var `blessed-progressbar`: js.Any
     
-    var `blessed-prompt`: js.Any = js.native
+    var `blessed-prompt`: js.Any
     
-    var `blessed-question`: js.Any = js.native
+    var `blessed-question`: js.Any
     
-    var `blessed-radiobutton`: js.Any = js.native
+    var `blessed-radiobutton`: js.Any
     
-    var `blessed-radioset`: js.Any = js.native
+    var `blessed-radioset`: js.Any
     
-    var `blessed-scrollablebox`: js.Any = js.native
+    var `blessed-scrollablebox`: js.Any
     
-    var `blessed-scrollabletext`: js.Any = js.native
+    var `blessed-scrollabletext`: js.Any
     
-    var `blessed-table`: js.Any = js.native
+    var `blessed-table`: js.Any
     
-    var `blessed-terminal`: js.Any = js.native
+    var `blessed-terminal`: js.Any
     
-    var `blessed-text`: js.Any = js.native
+    var `blessed-text`: js.Any
     
-    var `blessed-textarea`: js.Any = js.native
+    var `blessed-textarea`: js.Any
     
-    var `blessed-textbox`: js.Any = js.native
+    var `blessed-textbox`: js.Any
   }
   object IntrinsicElements {
     

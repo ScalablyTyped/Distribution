@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Handler defines a specific action that should be taken
   */
-@js.native
 trait Handler extends StObject {
   
   /**
     * One and only one of the following should be specified. Exec specifies the action to take.
     */
-  var exec: ExecAction = js.native
+  var exec: ExecAction
   
   /**
     * HTTPGet specifies the http request to perform.
     */
-  var httpGet: HTTPGetAction = js.native
+  var httpGet: HTTPGetAction
   
   /**
     * TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
     */
-  var tcpSocket: TCPSocketAction = js.native
+  var tcpSocket: TCPSocketAction
 }
 object Handler {
   

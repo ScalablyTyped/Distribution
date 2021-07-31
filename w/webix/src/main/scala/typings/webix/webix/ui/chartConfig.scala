@@ -7,153 +7,151 @@ import typings.webix.webix.WebixCallback
 import typings.webix.webix.WebixTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait chartConfig extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var animateDuration: js.UndefOr[Double] = js.native
+  var animateDuration: js.UndefOr[Double] = js.undefined
   
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
-  var barWidth: js.UndefOr[Double] = js.native
+  var barWidth: js.UndefOr[Double] = js.undefined
   
-  var border: js.UndefOr[Boolean] = js.native
+  var border: js.UndefOr[Boolean] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cant: js.UndefOr[Double] = js.native
+  var cant: js.UndefOr[Double] = js.undefined
   
-  var cellWidth: js.UndefOr[Double] = js.native
+  var cellWidth: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[String | WebixCallback] = js.native
+  var color: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datathrottle: js.UndefOr[Double] = js.native
+  var datathrottle: js.UndefOr[Double] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disableLines: js.UndefOr[Boolean] = js.native
+  var disableLines: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dynamic: js.UndefOr[Boolean] = js.native
+  var dynamic: js.UndefOr[Boolean] = js.undefined
   
-  var eventRadius: js.UndefOr[Double] = js.native
+  var eventRadius: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var fixOverflow: js.UndefOr[Boolean] = js.native
+  var fixOverflow: js.UndefOr[Boolean] = js.undefined
   
-  var gradient: js.UndefOr[Boolean | String | WebixCallback] = js.native
+  var gradient: js.UndefOr[Boolean | String | WebixCallback] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String | WebixCallback] = js.native
+  var label: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var labelOffset: js.UndefOr[Double] = js.native
+  var labelOffset: js.UndefOr[Double] = js.undefined
   
-  var legend: js.UndefOr[js.Any] = js.native
+  var legend: js.UndefOr[js.Any] = js.undefined
   
-  var line: js.UndefOr[js.Any] = js.native
+  var line: js.UndefOr[js.Any] = js.undefined
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var mouseEventDelay: js.UndefOr[Double] = js.native
+  var mouseEventDelay: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Boolean] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onDblClick: js.UndefOr[WebixCallback] = js.native
+  var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
-  var onMouseMove: js.UndefOr[WebixCallback] = js.native
+  var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
-  var origin: js.UndefOr[Double | String] = js.native
+  var origin: js.UndefOr[Double | String] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var pieHeight: js.UndefOr[Double] = js.native
+  var pieHeight: js.UndefOr[Double] = js.undefined
   
-  var pieInnerText: js.UndefOr[String | WebixCallback] = js.native
+  var pieInnerText: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var preset: js.UndefOr[String] = js.native
+  var preset: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var ready: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.undefined
   
-  var removeMissed: js.UndefOr[Boolean] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.native
+  var save: js.UndefOr[js.Any] = js.undefined
   
-  var scale: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[String] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var series: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[js.Any] = js.undefined
   
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[String | WebixTemplate] = js.native
+  var value: js.UndefOr[String | WebixTemplate] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xAxis: js.UndefOr[js.Any] = js.native
+  var xAxis: js.UndefOr[js.Any] = js.undefined
   
-  var xValue: js.UndefOr[String] = js.native
+  var xValue: js.UndefOr[String] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yAxis: js.UndefOr[js.Any] = js.native
+  var yAxis: js.UndefOr[js.Any] = js.undefined
   
-  var yValue: js.UndefOr[String] = js.native
+  var yValue: js.UndefOr[String] = js.undefined
 }
 object chartConfig {
   
@@ -236,9 +234,6 @@ object chartConfig {
     def setColor(value: String | WebixCallback): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
-    
-    @scala.inline
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
@@ -254,7 +249,7 @@ object chartConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -314,9 +309,6 @@ object chartConfig {
     def setGradient(value: Boolean | String | WebixCallback): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "gradient", js.Any.fromFunction1(value))
-    
-    @scala.inline
     def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
     @scala.inline
@@ -357,9 +349,6 @@ object chartConfig {
     
     @scala.inline
     def setLabel(value: String | WebixCallback): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLabelOffset(value: Double): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
@@ -440,13 +429,13 @@ object chartConfig {
     def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
     @scala.inline
-    def setOnDblClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onDblClick", js.Any.fromFunction1(value))
+    def setOnDblClick(value: WebixCallback): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
     @scala.inline
-    def setOnMouseMove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
@@ -476,9 +465,6 @@ object chartConfig {
     def setPieInnerText(value: String | WebixCallback): Self = StObject.set(x, "pieInnerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieInnerTextFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "pieInnerText", js.Any.fromFunction1(value))
-    
-    @scala.inline
     def setPieInnerTextUndefined: Self = StObject.set(x, "pieInnerText", js.undefined)
     
     @scala.inline
@@ -494,7 +480,7 @@ object chartConfig {
     def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
@@ -555,9 +541,6 @@ object chartConfig {
     
     @scala.inline
     def setValue(value: String | WebixTemplate): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
     
     @scala.inline
     def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

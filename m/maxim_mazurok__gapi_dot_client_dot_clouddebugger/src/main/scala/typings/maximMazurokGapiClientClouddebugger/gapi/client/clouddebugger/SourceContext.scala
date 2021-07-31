@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceContext extends StObject {
   
   /** A SourceContext referring to a revision in a cloud repo. */
-  var cloudRepo: js.UndefOr[CloudRepoSourceContext] = js.native
+  var cloudRepo: js.UndefOr[CloudRepoSourceContext] = js.undefined
   
   /** A SourceContext referring to a snapshot in a cloud workspace. */
-  var cloudWorkspace: js.UndefOr[CloudWorkspaceSourceContext] = js.native
+  var cloudWorkspace: js.UndefOr[CloudWorkspaceSourceContext] = js.undefined
   
   /** A SourceContext referring to a Gerrit project. */
-  var gerrit: js.UndefOr[GerritSourceContext] = js.native
+  var gerrit: js.UndefOr[GerritSourceContext] = js.undefined
   
   /** A SourceContext referring to any third party Git repo (e.g. GitHub). */
-  var git: js.UndefOr[GitSourceContext] = js.native
+  var git: js.UndefOr[GitSourceContext] = js.undefined
 }
 object SourceContext {
   

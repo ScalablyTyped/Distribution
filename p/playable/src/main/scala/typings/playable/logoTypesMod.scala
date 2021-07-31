@@ -6,17 +6,15 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logoTypesMod {
   
-  @js.native
   trait ILogoAPI extends StObject {
     
-    var setLogo: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.native
+    var setLogo: js.UndefOr[js.Function1[/* src */ String, Unit]] = js.undefined
     
-    var setLogoClickCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], Unit]] = js.native
+    var setLogoClickCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], Unit]] = js.undefined
   }
   object ILogoAPI {
     
@@ -60,10 +58,9 @@ object logoTypesMod {
     def show(): Unit = js.native
   }
   
-  @js.native
   trait ILogoViewCallbacks extends StObject {
     
-    def onLogoClick(): Unit = js.native
+    def onLogoClick(): Unit
   }
   object ILogoViewCallbacks {
     
@@ -81,18 +78,17 @@ object logoTypesMod {
     }
   }
   
-  @js.native
   trait ILogoViewConfig extends StObject {
     
-    var callbacks: ILogoViewCallbacks = js.native
+    var callbacks: ILogoViewCallbacks
     
-    var logo: js.UndefOr[String] = js.native
+    var logo: js.UndefOr[String] = js.undefined
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object ILogoViewConfig {
     
@@ -130,16 +126,15 @@ object logoTypesMod {
     }
   }
   
-  @js.native
   trait ILogoViewStyles extends StObject {
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var logoButton: String = js.native
+    var logoButton: String
     
-    var logoImage: String = js.native
+    var logoImage: String
     
-    var logoWrapper: String = js.native
+    var logoWrapper: String
   }
   object ILogoViewStyles {
     

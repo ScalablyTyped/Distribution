@@ -2,20 +2,20 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HyperCubeDimensionqDef width extend NxInlineDimensionDef
   */
-@js.native
-trait IHyperCubeDimensionqDef extends INxInlineDimensionDef {
+trait IHyperCubeDimensionqDef
+  extends StObject
+     with INxInlineDimensionDef {
   
-  var autoSort: js.UndefOr[Boolean] = js.native
+  var autoSort: js.UndefOr[Boolean] = js.undefined
   
-  var cId: js.UndefOr[String] = js.native
+  var cId: js.UndefOr[String] = js.undefined
   
-  var othersLabel: js.UndefOr[IStringExpressionContainer] = js.native
+  var othersLabel: js.UndefOr[IStringExpressionContainer] = js.undefined
 }
 object IHyperCubeDimensionqDef {
   

@@ -44,7 +44,6 @@ import typings.webgme.anon.FinishTime
 import typings.webgme.anon.Members
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmeClasses {
@@ -56,10 +55,14 @@ object GmeClasses {
   object TraversalOrder extends StObject {
     
     @js.native
-    sealed trait BFS extends TraversalOrder
+    sealed trait BFS
+      extends StObject
+         with TraversalOrder
     
     @js.native
-    sealed trait DFS extends TraversalOrder
+    sealed trait DFS
+      extends StObject
+         with TraversalOrder
   }
   
   @js.native
@@ -135,14 +138,13 @@ object GmeClasses {
   
   type ArtifactCallback = js.Function2[/* err */ Error, /* result */ Artifact, Unit]
   
-  @js.native
   trait Commit extends StObject {
     
-    var branchName: String = js.native
+    var branchName: String
     
-    var commitHash: MetadataHash = js.native
+    var commitHash: MetadataHash
     
-    var status: String = js.native
+    var status: String
   }
   object Commit {
     
@@ -1763,9 +1765,9 @@ object GmeClasses {
       * @return 
       */
     def setChildMeta(node: Node, child: Node): js.UndefOr[Error] = js.native
-    def setChildMeta(node: Node, child: Node, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
     def setChildMeta(node: Node, child: Node, min: Double): js.UndefOr[Error] = js.native
     def setChildMeta(node: Node, child: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
+    def setChildMeta(node: Node, child: Node, min: Unit, max: Double): js.UndefOr[Error] = js.native
     
     /**
       * TODO
@@ -1773,9 +1775,9 @@ object GmeClasses {
       * @return 
       */
     def setChildrenMetaLimits(node: Node): js.UndefOr[Error] = js.native
-    def setChildrenMetaLimits(node: Node, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
     def setChildrenMetaLimits(node: Node, min: Double): js.UndefOr[Error] = js.native
     def setChildrenMetaLimits(node: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
+    def setChildrenMetaLimits(node: Node, min: Unit, max: Double): js.UndefOr[Error] = js.native
     
     /**
       * TODO
@@ -1833,9 +1835,9 @@ object GmeClasses {
       * @return 
       */
     def setPointerMetaLimits(node: Node, memberPath: String): js.UndefOr[Error] = js.native
-    def setPointerMetaLimits(node: Node, memberPath: String, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
     def setPointerMetaLimits(node: Node, memberPath: String, min: Double): js.UndefOr[Error] = js.native
     def setPointerMetaLimits(node: Node, memberPath: String, min: Double, max: Double): js.UndefOr[Error] = js.native
+    def setPointerMetaLimits(node: Node, memberPath: String, min: Unit, max: Double): js.UndefOr[Error] = js.native
     
     /**
       * TODO
@@ -1843,9 +1845,9 @@ object GmeClasses {
       * @return 
       */
     def setPointerMetaTarget(node: Node, name: Name, target: Node): js.UndefOr[Error] = js.native
-    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: js.UndefOr[scala.Nothing], max: Double): js.UndefOr[Error] = js.native
     def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double): js.UndefOr[Error] = js.native
     def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
+    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Unit, max: Double): js.UndefOr[Error] = js.native
     
     /** 
       * TODO
@@ -1912,17 +1914,16 @@ object GmeClasses {
     ): Unit = js.native
   }
   
-  @js.native
   trait LibraryInfo extends StObject {
     
     /** the branch that your library follows in the origin project. */
-    var branchName: String = js.native
+    var branchName: String
     
     /** the version of your library. */
-    var commitHash: String = js.native
+    var commitHash: String
     
     /** the projectId of your library. */
-    var projectId: String = js.native
+    var projectId: String
   }
   object LibraryInfo {
     
@@ -1946,7 +1947,6 @@ object GmeClasses {
     }
   }
   
-  @js.native
   trait MetaNodeParameters extends StObject {
     
     /**
@@ -1954,7 +1954,7 @@ object GmeClasses {
       * the query filters to contain only types 
       * that are visible in the given aspect.
       */
-    var aspect: js.UndefOr[String] = js.native
+    var aspect: js.UndefOr[String] = js.undefined
     
     /**
       * if true, 
@@ -1963,17 +1963,17 @@ object GmeClasses {
       * (the default value is false, 
       * the check is only meaningful if all the children were passed)
       */
-    var multiplicity: js.UndefOr[Boolean] = js.native
+    var multiplicity: js.UndefOr[Boolean] = js.undefined
     
     /** the input parameters of the query. */
-    var `object`: Children = js.native
+    var `object`: Children
     
     /** 
       * if true, the query filters out the 
       * abstract and connection-like nodes 
       * (the default value is false) 
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
   }
   object MetaNodeParameters {
     
@@ -2010,18 +2010,18 @@ object GmeClasses {
     }
   }
   
-  @js.native
   trait MetaRule extends StObject {
     
-    var enum: js.Array[String] = js.native
+    var `enum`: js.Array[String]
     
-    var `type`: String | Double | Boolean = js.native
+    var `type`: String | Double | Boolean
   }
   object MetaRule {
     
     @scala.inline
-    def apply(enum: js.Array[String], `type`: String | Double | Boolean): MetaRule = {
-      val __obj = js.Dynamic.literal(enum = enum.asInstanceOf[js.Any])
+    def apply(`enum`: js.Array[String], `type`: String | Double | Boolean): MetaRule = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaRule]
     }
@@ -2040,7 +2040,6 @@ object GmeClasses {
     }
   }
   
-  @js.native
   trait MetaSetParameters extends StObject {
     
     /**
@@ -2050,17 +2049,17 @@ object GmeClasses {
       * (the default value is false, 
       * the check is only meaningful if all the children were passed)
       */
-    var multiplicity: js.UndefOr[Boolean] = js.native
+    var multiplicity: js.UndefOr[Boolean] = js.undefined
     
     /** the input parameters of the query. */
-    var `object`: Members = js.native
+    var `object`: Members
     
     /** 
       * if true, the query filters out the 
       * abstract and connection-like nodes 
       * (the default value is false) 
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
   }
   object MetaSetParameters {
     
@@ -2091,21 +2090,20 @@ object GmeClasses {
     }
   }
   
-  @js.native
   trait NodeParameters extends StObject {
     
     /** the base of the node to be created. */
-    var base: js.UndefOr[Node | Null] = js.native
+    var base: js.UndefOr[Node | Null] = js.undefined
     
     /** the GUID of the node to be created */
-    var guid: js.UndefOr[GUID] = js.native
+    var guid: js.UndefOr[GUID] = js.undefined
     
     /** the parent of the node to be created. */
-    var parent: js.UndefOr[Node | Null] = js.native
+    var parent: js.UndefOr[Node | Null] = js.undefined
     
     /** the relative id of the node to be created 
       * (if reserved, the function returns the node behind the relative id) */
-    var relid: js.UndefOr[RelId] = js.native
+    var relid: js.UndefOr[RelId] = js.undefined
   }
   object NodeParameters {
     
@@ -2630,7 +2628,7 @@ object GmeClasses {
       * @param {function} callback - Invoked when objects have been collected.
       * @func
       */
-    def loadPaths(rootKey: MetadataHash, paths: js.Array[Path], callback: ResultCallback[_]): Unit = js.native
+    def loadPaths(rootKey: MetadataHash, paths: js.Array[Path], callback: ResultCallback[js.Any]): Unit = js.native
     
     var logger: GmeLogger = js.native
     
@@ -2805,7 +2803,7 @@ object GmeClasses {
     /** array of hashes */
     var artifacts: js.Array[ArtifactHash] = js.native
     
-    var commits: js.Array[_] = js.native
+    var commits: js.Array[js.Any] = js.native
     
     var error: Error = js.native
     
@@ -2898,16 +2896,15 @@ object GmeClasses {
     var success: Boolean = js.native
   }
   
-  @js.native
   trait TraversalOptions extends StObject {
     
-    var excludeRoot: js.UndefOr[Boolean] = js.native
+    var excludeRoot: js.UndefOr[Boolean] = js.undefined
     
-    var maxParallelLoad: js.UndefOr[Double] = js.native
+    var maxParallelLoad: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[TraversalOrder] = js.native
+    var order: js.UndefOr[TraversalOrder] = js.undefined
     
-    var stopOnError: js.UndefOr[Boolean] = js.native
+    var stopOnError: js.UndefOr[Boolean] = js.undefined
   }
   object TraversalOptions {
     

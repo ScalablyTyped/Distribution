@@ -2,13 +2,11 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Outlinecolor extends StObject {
   
-  var outlinecolor: typings.plotlyJs.mod.Color = js.native
+  var outlinecolor: typings.plotlyJs.mod.Color
 }
 object Outlinecolor {
   

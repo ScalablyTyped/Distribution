@@ -3,84 +3,82 @@ package typings.reactNative.anon
 import typings.reactNative.mod.PermissionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in react-native.react-native.Permission ]: react-native.react-native.PermissionStatus} */
-@js.native
 trait keyinPermissionPermission extends StObject {
   
   @JSName("android.permission.ACCESS_COARSE_LOCATION")
-  var androidDotpermissionDotACCESS_COARSE_LOCATION: PermissionStatus = js.native
+  var androidDotpermissionDotACCESS_COARSE_LOCATION: PermissionStatus
   
   @JSName("android.permission.ACCESS_FINE_LOCATION")
-  var androidDotpermissionDotACCESS_FINE_LOCATION: PermissionStatus = js.native
+  var androidDotpermissionDotACCESS_FINE_LOCATION: PermissionStatus
   
   @JSName("android.permission.BODY_SENSORS")
-  var androidDotpermissionDotBODY_SENSORS: PermissionStatus = js.native
+  var androidDotpermissionDotBODY_SENSORS: PermissionStatus
   
   @JSName("android.permission.CALL_PHONE")
-  var androidDotpermissionDotCALL_PHONE: PermissionStatus = js.native
+  var androidDotpermissionDotCALL_PHONE: PermissionStatus
   
   @JSName("android.permission.CAMERA")
-  var androidDotpermissionDotCAMERA: PermissionStatus = js.native
+  var androidDotpermissionDotCAMERA: PermissionStatus
   
   @JSName("android.permission.GET_ACCOUNTS")
-  var androidDotpermissionDotGET_ACCOUNTS: PermissionStatus = js.native
+  var androidDotpermissionDotGET_ACCOUNTS: PermissionStatus
   
   @JSName("android.permission.PROCESS_OUTGOING_CALLS")
-  var androidDotpermissionDotPROCESS_OUTGOING_CALLS: PermissionStatus = js.native
+  var androidDotpermissionDotPROCESS_OUTGOING_CALLS: PermissionStatus
   
   @JSName("android.permission.READ_CALENDAR")
-  var androidDotpermissionDotREAD_CALENDAR: PermissionStatus = js.native
+  var androidDotpermissionDotREAD_CALENDAR: PermissionStatus
   
   @JSName("android.permission.READ_CALL_LOG")
-  var androidDotpermissionDotREAD_CALL_LOG: PermissionStatus = js.native
+  var androidDotpermissionDotREAD_CALL_LOG: PermissionStatus
   
   @JSName("android.permission.READ_CONTACTS")
-  var androidDotpermissionDotREAD_CONTACTS: PermissionStatus = js.native
+  var androidDotpermissionDotREAD_CONTACTS: PermissionStatus
   
   @JSName("android.permission.READ_EXTERNAL_STORAGE")
-  var androidDotpermissionDotREAD_EXTERNAL_STORAGE: PermissionStatus = js.native
+  var androidDotpermissionDotREAD_EXTERNAL_STORAGE: PermissionStatus
   
   @JSName("android.permission.READ_PHONE_STATE")
-  var androidDotpermissionDotREAD_PHONE_STATE: PermissionStatus = js.native
+  var androidDotpermissionDotREAD_PHONE_STATE: PermissionStatus
   
   @JSName("android.permission.READ_SMS")
-  var androidDotpermissionDotREAD_SMS: PermissionStatus = js.native
+  var androidDotpermissionDotREAD_SMS: PermissionStatus
   
   @JSName("android.permission.RECEIVE_MMS")
-  var androidDotpermissionDotRECEIVE_MMS: PermissionStatus = js.native
+  var androidDotpermissionDotRECEIVE_MMS: PermissionStatus
   
   @JSName("android.permission.RECEIVE_SMS")
-  var androidDotpermissionDotRECEIVE_SMS: PermissionStatus = js.native
+  var androidDotpermissionDotRECEIVE_SMS: PermissionStatus
   
   @JSName("android.permission.RECEIVE_WAP_PUSH")
-  var androidDotpermissionDotRECEIVE_WAP_PUSH: PermissionStatus = js.native
+  var androidDotpermissionDotRECEIVE_WAP_PUSH: PermissionStatus
   
   @JSName("android.permission.RECORD_AUDIO")
-  var androidDotpermissionDotRECORD_AUDIO: PermissionStatus = js.native
+  var androidDotpermissionDotRECORD_AUDIO: PermissionStatus
   
   @JSName("android.permission.SEND_SMS")
-  var androidDotpermissionDotSEND_SMS: PermissionStatus = js.native
+  var androidDotpermissionDotSEND_SMS: PermissionStatus
   
   @JSName("android.permission.USE_SIP")
-  var androidDotpermissionDotUSE_SIP: PermissionStatus = js.native
+  var androidDotpermissionDotUSE_SIP: PermissionStatus
   
   @JSName("android.permission.WRITE_CALENDAR")
-  var androidDotpermissionDotWRITE_CALENDAR: PermissionStatus = js.native
+  var androidDotpermissionDotWRITE_CALENDAR: PermissionStatus
   
   @JSName("android.permission.WRITE_CALL_LOG")
-  var androidDotpermissionDotWRITE_CALL_LOG: PermissionStatus = js.native
+  var androidDotpermissionDotWRITE_CALL_LOG: PermissionStatus
   
   @JSName("android.permission.WRITE_CONTACTS")
-  var androidDotpermissionDotWRITE_CONTACTS: PermissionStatus = js.native
+  var androidDotpermissionDotWRITE_CONTACTS: PermissionStatus
   
   @JSName("android.permission.WRITE_EXTERNAL_STORAGE")
-  var androidDotpermissionDotWRITE_EXTERNAL_STORAGE: PermissionStatus = js.native
+  var androidDotpermissionDotWRITE_EXTERNAL_STORAGE: PermissionStatus
   
   @JSName("com.android.voicemail.permission.ADD_VOICEMAIL")
-  var comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: PermissionStatus = js.native
+  var comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: PermissionStatus
 }
 object keyinPermissionPermission {
   

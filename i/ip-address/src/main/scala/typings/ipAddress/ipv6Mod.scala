@@ -9,7 +9,6 @@ import typings.jsbn.mod.BigInteger
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipv6Mod {
@@ -420,6 +419,10 @@ object ipv6Mod {
   /* static members */
   object Address6 {
     
+    @JSImport("ip-address/dist/lib/ipv6", "Address6")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an IPv6-mapped address given an IPv4 address
       * @memberof Address6
@@ -431,9 +434,8 @@ object ipv6Mod {
       * address.correctForm(); // '::ffff:c0a8:1'
       * address.to4in6(); // '::ffff:192.168.0.1'
       */
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.fromAddress4")
-    @js.native
-    def fromAddress4(address: String): Address6 = js.native
+    @scala.inline
+    def fromAddress4(address: String): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress4")(address.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Return an address from ip6.arpa form
@@ -445,9 +447,8 @@ object ipv6Mod {
       * var address = Address6.fromArpa(e.f.f.f.3.c.2.6.f.f.f.e.6.6.8.e.1.0.6.7.9.4.e.c.0.0.0.0.1.0.0.2.ip6.arpa.)
       * address.correctForm(); // '2001:0:ce49:7601:e866:efff:62c3:fffe'
       */
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.fromArpa")
-    @js.native
-    def fromArpa(arpaFormAddress: String): Address6 = js.native
+    @scala.inline
+    def fromArpa(arpaFormAddress: String): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a BigInteger to a v6 address object
@@ -460,9 +461,8 @@ object ipv6Mod {
       * var address = Address6.fromBigInteger(bigInteger);
       * address.correctForm(); // '::e8:d4a5:1000'
       */
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.fromBigInteger")
-    @js.native
-    def fromBigInteger(bigInteger: BigInteger): Address6 = js.native
+    @scala.inline
+    def fromBigInteger(bigInteger: BigInteger): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a byte array to an Address6 object
@@ -470,9 +470,8 @@ object ipv6Mod {
       * @static
       * @returns {Address6}
       */
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.fromByteArray")
-    @js.native
-    def fromByteArray(bytes: js.Array[_]): Address6 = js.native
+    @scala.inline
+    def fromByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a URL (with optional port number) to an address object
@@ -484,9 +483,8 @@ object ipv6Mod {
       * addressAndPort.address.correctForm(); // 'ffff::'
       * addressAndPort.port; // 8080
       */
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.fromURL")
-    @js.native
-    def fromURL(url: String): Address | Error = js.native
+    @scala.inline
+    def fromURL(url: String): Address | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[Address | Error]
     
     /**
       * Convert an unsigned byte array to an Address6 object
@@ -494,19 +492,16 @@ object ipv6Mod {
       * @static
       * @returns {Address6}
       */
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.fromUnsignedByteArray")
-    @js.native
-    def fromUnsignedByteArray(bytes: js.Array[_]): Address6 = js.native
+    @scala.inline
+    def fromUnsignedByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
-    @JSImport("ip-address/dist/lib/ipv6", "Address6.isValid")
-    @js.native
-    def isValid(address: String): Boolean = js.native
+    @scala.inline
+    def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait ReverseFormOptions extends StObject {
     
-    var omitSuffix: js.UndefOr[Boolean] = js.native
+    var omitSuffix: js.UndefOr[Boolean] = js.undefined
   }
   object ReverseFormOptions {
     
@@ -527,12 +522,11 @@ object ipv6Mod {
     }
   }
   
-  @js.native
   trait SixToFourProperties extends StObject {
     
-    var gateway: String = js.native
+    var gateway: String
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object SixToFourProperties {
     
@@ -553,22 +547,21 @@ object ipv6Mod {
     }
   }
   
-  @js.native
   trait TeredoProperties extends StObject {
     
-    var client4: String = js.native
+    var client4: String
     
-    var coneNat: Boolean = js.native
+    var coneNat: Boolean
     
-    var flags: String = js.native
+    var flags: String
     
-    var microsoft: GroupIndividual = js.native
+    var microsoft: GroupIndividual
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var server4: String = js.native
+    var server4: String
     
-    var udpPort: String = js.native
+    var udpPort: String
   }
   object TeredoProperties {
     

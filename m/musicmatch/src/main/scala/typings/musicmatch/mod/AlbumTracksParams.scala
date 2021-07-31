@@ -2,17 +2,15 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlbumTracksParams extends StObject {
   
-  var album_id: js.UndefOr[Double] = js.native
+  var album_id: js.UndefOr[Double] = js.undefined
   
-  var album_mbid: js.UndefOr[Double] = js.native
+  var album_mbid: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[TFormat] = js.native
+  var format: js.UndefOr[TFormat] = js.undefined
 }
 object AlbumTracksParams {
   

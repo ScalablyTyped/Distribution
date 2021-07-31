@@ -2,13 +2,13 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetClipboardArgs extends AsyncCallback[Unit] {
+trait SetClipboardArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
-  var text: String = js.native
+  var text: String
 }
 object SetClipboardArgs {
   

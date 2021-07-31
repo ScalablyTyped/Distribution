@@ -3,18 +3,21 @@ package typings.feathersjsErrors
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@feathersjs/errors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@feathersjs/errors", "BadGateway")
   @js.native
   class BadGateway () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -23,8 +26,8 @@ object mod {
   class BadRequest () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -33,14 +36,16 @@ object mod {
   class Conflict () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "FeathersError")
   @js.native
-  class FeathersError protected () extends Error {
+  class FeathersError protected ()
+    extends StObject
+       with Error {
     def this(msg: String, name: String, code: Double, className: String, data: js.Any) = this()
     def this(msg: Error, name: String, code: Double, className: String, data: js.Any) = this()
     
@@ -52,6 +57,12 @@ object mod {
     
     val errors: js.Any = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
     def toJSON(): FeathersErrorJSON = js.native
   }
   
@@ -60,8 +71,8 @@ object mod {
   class Forbidden () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -70,8 +81,8 @@ object mod {
   class GeneralError () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -80,8 +91,8 @@ object mod {
   class LengthRequired () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -90,8 +101,8 @@ object mod {
   class MethodNotAllowed () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -100,8 +111,8 @@ object mod {
   class NotAcceptable () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -110,8 +121,8 @@ object mod {
   class NotAuthenticated () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -120,8 +131,8 @@ object mod {
   class NotFound () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -130,8 +141,8 @@ object mod {
   class NotImplemented () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -140,8 +151,8 @@ object mod {
   class PaymentError () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -150,8 +161,8 @@ object mod {
   class Timeout () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -160,8 +171,8 @@ object mod {
   class TooManyRequests () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -170,8 +181,8 @@ object mod {
   class Unavailable () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
@@ -180,14 +191,13 @@ object mod {
   class Unprocessable () extends FeathersError {
     def this(msg: String) = this()
     def this(msg: Error) = this()
-    def this(msg: js.UndefOr[scala.Nothing], data: js.Any) = this()
     def this(msg: String, data: js.Any) = this()
+    def this(msg: Unit, data: js.Any) = this()
     def this(msg: Error, data: js.Any) = this()
   }
   
-  @JSImport("@feathersjs/errors", "convert")
-  @js.native
-  def convert(error: js.Any): FeathersError = js.native
+  @scala.inline
+  def convert(error: js.Any): FeathersError = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(error.asInstanceOf[js.Any]).asInstanceOf[FeathersError]
   
   @JSImport("@feathersjs/errors", "errors")
   @js.native
@@ -197,42 +207,41 @@ object mod {
   @js.native
   val types: Errors_ = js.native
   
-  @js.native
   trait Errors_ extends StObject {
     
-    var BadGateway: typings.feathersjsErrors.mod.BadGateway = js.native
+    var BadGateway: typings.feathersjsErrors.mod.BadGateway
     
-    var BadRequest: typings.feathersjsErrors.mod.BadRequest = js.native
+    var BadRequest: typings.feathersjsErrors.mod.BadRequest
     
-    var Conflict: typings.feathersjsErrors.mod.Conflict = js.native
+    var Conflict: typings.feathersjsErrors.mod.Conflict
     
-    var FeathersError: typings.feathersjsErrors.mod.FeathersError = js.native
+    var FeathersError: typings.feathersjsErrors.mod.FeathersError
     
-    var Forbidden: typings.feathersjsErrors.mod.Forbidden = js.native
+    var Forbidden: typings.feathersjsErrors.mod.Forbidden
     
-    var GeneralError: typings.feathersjsErrors.mod.GeneralError = js.native
+    var GeneralError: typings.feathersjsErrors.mod.GeneralError
     
-    var LengthRequired: typings.feathersjsErrors.mod.LengthRequired = js.native
+    var LengthRequired: typings.feathersjsErrors.mod.LengthRequired
     
-    var MethodNotAllowed: typings.feathersjsErrors.mod.MethodNotAllowed = js.native
+    var MethodNotAllowed: typings.feathersjsErrors.mod.MethodNotAllowed
     
-    var NotAcceptable: typings.feathersjsErrors.mod.NotAcceptable = js.native
+    var NotAcceptable: typings.feathersjsErrors.mod.NotAcceptable
     
-    var NotAuthenticated: typings.feathersjsErrors.mod.NotAuthenticated = js.native
+    var NotAuthenticated: typings.feathersjsErrors.mod.NotAuthenticated
     
-    var NotFound: typings.feathersjsErrors.mod.NotFound = js.native
+    var NotFound: typings.feathersjsErrors.mod.NotFound
     
-    var NotImplemented: typings.feathersjsErrors.mod.NotImplemented = js.native
+    var NotImplemented: typings.feathersjsErrors.mod.NotImplemented
     
-    var PaymentError: typings.feathersjsErrors.mod.PaymentError = js.native
+    var PaymentError: typings.feathersjsErrors.mod.PaymentError
     
-    var Timeout: typings.feathersjsErrors.mod.Timeout = js.native
+    var Timeout: typings.feathersjsErrors.mod.Timeout
     
-    var TooManyRequests: typings.feathersjsErrors.mod.TooManyRequests = js.native
+    var TooManyRequests: typings.feathersjsErrors.mod.TooManyRequests
     
-    var Unavailable: typings.feathersjsErrors.mod.Unavailable = js.native
+    var Unavailable: typings.feathersjsErrors.mod.Unavailable
     
-    var Unprocessable: typings.feathersjsErrors.mod.Unprocessable = js.native
+    var Unprocessable: typings.feathersjsErrors.mod.Unprocessable
   }
   object Errors_ {
     
@@ -316,20 +325,19 @@ object mod {
     }
   }
   
-  @js.native
   trait FeathersErrorJSON extends StObject {
     
-    val className: String = js.native
+    val className: String
     
-    val code: Double = js.native
+    val code: Double
     
-    val data: js.Any = js.native
+    val data: js.Any
     
-    val errors: js.Any = js.native
+    val errors: js.Any
     
-    val message: String = js.native
+    val message: String
     
-    val name: String = js.native
+    val name: String
   }
   object FeathersErrorJSON {
     

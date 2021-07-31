@@ -2,23 +2,21 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait China extends StObject {
   
-  var china: js.UndefOr[Boolean] = js.native
+  var china: js.UndefOr[Boolean] = js.undefined
   
-  var consumerKey: js.UndefOr[String] = js.native
+  var consumerKey: js.UndefOr[String] = js.undefined
   
-  var consumerSecret: js.UndefOr[String] = js.native
+  var consumerSecret: js.UndefOr[String] = js.undefined
   
-  var sandbox: js.UndefOr[Boolean] = js.native
+  var sandbox: js.UndefOr[Boolean] = js.undefined
   
-  var serviceHost: js.UndefOr[String] = js.native
+  var serviceHost: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object China {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoricalParameterRange extends StObject {
   
   /**
     * The name of the categorical hyperparameter to tune.
     */
-  var Name: typings.awsSdk.forecastserviceMod.Name = js.native
+  var Name: typings.awsSdk.forecastserviceMod.Name
   
   /**
     * A list of the tunable categories for the hyperparameter.
     */
-  var Values: typings.awsSdk.forecastserviceMod.Values = js.native
+  var Values: typings.awsSdk.forecastserviceMod.Values
 }
 object CategoricalParameterRange {
   

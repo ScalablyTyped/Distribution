@@ -2,7 +2,6 @@ package typings.phaser.Phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
@@ -64,21 +63,21 @@ object Events {
       * @param once Only remove one-time listeners.
       */
     def off(event: String): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def off(event: String, fn: js.Function): this.type = js.native
-    def off(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def off(event: String, fn: js.Function, context: js.Any): this.type = js.native
     def off(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: js.Any): this.type = js.native
+    def off(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def off(event: js.Symbol): this.type = js.native
-    def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def off(event: js.Symbol, fn: js.Function): this.type = js.native
-    def off(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
     def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     
     /**
       * Add a listener for a given event.
@@ -118,21 +117,21 @@ object Events {
       * @param once Only remove one-time listeners.
       */
     def removeListener(event: String): this.type = js.native
-    def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def removeListener(event: String, fn: js.Function): this.type = js.native
-    def removeListener(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def removeListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
     def removeListener(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: js.Any): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     
     /**
       * Removes all listeners.

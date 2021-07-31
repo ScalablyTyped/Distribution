@@ -2,31 +2,29 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStackSetOperationResultsInput extends StObject {
   
   /**
     * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.undefined
   
   /**
     * If the previous request didn't return all of the remaining results, the response object's NextToken parameter value is set to a token. To retrieve the next set of results, call ListStackSetOperationResults again and assign that token to the request object's NextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * The ID of the stack set operation.
     */
-  var OperationId: ClientRequestToken = js.native
+  var OperationId: ClientRequestToken
   
   /**
     * The name or unique ID of the stack set that you want to get operation results for.
     */
-  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName = js.native
+  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName
 }
 object ListStackSetOperationResultsInput {
   

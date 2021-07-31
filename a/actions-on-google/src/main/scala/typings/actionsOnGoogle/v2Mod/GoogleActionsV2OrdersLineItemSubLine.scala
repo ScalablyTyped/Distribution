@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersLineItemSubLine extends StObject {
   
   /**
     * A generic line item (e.g. add-on).
     */
-  var lineItem: js.UndefOr[GoogleActionsV2OrdersLineItem] = js.native
+  var lineItem: js.UndefOr[GoogleActionsV2OrdersLineItem] = js.undefined
   
   /**
     * A note associated with the line item.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2OrdersLineItemSubLine {
   

@@ -42,7 +42,6 @@ import typings.stripe.stripeStrings.three_d_secure
 import typings.stripe.stripeStrings.wechat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,49 +51,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sources {
   
   /** Source object: https://stripe.com/docs/api/sources/object */
-  @js.native
   trait ISource
-    extends IResourceObject
+    extends StObject
+       with IResourceObject
        with IStripeSource {
     
-    var ach_credit_transfer: js.UndefOr[Bankname] = js.native
+    var ach_credit_transfer: js.UndefOr[Bankname] = js.undefined
     
-    var amount: js.UndefOr[Double | Null] = js.native
+    var amount: js.UndefOr[Double | Null] = js.undefined
     
-    var card: js.UndefOr[ICardHashInfo] = js.native
+    var card: js.UndefOr[ICardHashInfo] = js.undefined
     
-    var client_secret: String = js.native
+    var client_secret: String
     
-    var code_verification: js.UndefOr[Attemptsremaining] = js.native
+    var code_verification: js.UndefOr[Attemptsremaining] = js.undefined
     
-    var created: Double = js.native
+    var created: Double
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
-    var flow: redirect | receiver | code_verification | none = js.native
+    var flow: redirect | receiver | code_verification | none
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     @JSName("object")
-    var object_ISource: source = js.native
+    var object_ISource: source
     
-    var owner: Phone = js.native
+    var owner: Phone
     
-    var receiver: js.UndefOr[Amountcharged] = js.native
+    var receiver: js.UndefOr[Amountcharged] = js.undefined
     
-    var redirect: js.UndefOr[Failurereason] = js.native
+    var redirect: js.UndefOr[Failurereason] = js.undefined
     
-    var statement_descriptor: js.UndefOr[String | Null] = js.native
+    var statement_descriptor: js.UndefOr[String | Null] = js.undefined
     
-    var status: canceled | chargeable | consumed | failed | pending = js.native
+    var status: canceled | chargeable | consumed | failed | pending
     
-    var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat = js.native
+    var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
     
-    var usage: reusable | single_use = js.native
+    var usage: reusable | single_use
   }
   object ISource {
     
@@ -106,14 +105,13 @@ object sources {
       id: String,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: source,
       owner: Phone,
       status: canceled | chargeable | consumed | failed | pending,
       `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
       usage: reusable | single_use
     ): typings.stripe.mod.sources.ISource = {
       val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("source")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stripe.mod.sources.ISource]
     }
@@ -215,37 +213,38 @@ object sources {
     }
   }
   
-  @js.native
-  trait ISourceCreationOptions extends IDataOptionsWithMetadata {
+  trait ISourceCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.native
+    var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.undefined
     
-    var ideal: js.UndefOr[Bank] = js.native
+    var ideal: js.UndefOr[Bank] = js.undefined
     
-    var mandate: js.UndefOr[Acceptance] = js.native
+    var mandate: js.UndefOr[Acceptance] = js.undefined
     
     @JSName("metadata")
-    var metadata_ISourceCreationOptions: js.UndefOr[IMetadata] = js.native
+    var metadata_ISourceCreationOptions: js.UndefOr[IMetadata] = js.undefined
     
-    var owner: js.UndefOr[AddressEmail] = js.native
+    var owner: js.UndefOr[AddressEmail] = js.undefined
     
-    var receiver: js.UndefOr[Refundattributesmethod] = js.native
+    var receiver: js.UndefOr[Refundattributesmethod] = js.undefined
     
-    var redirect: js.UndefOr[ReturnurlString] = js.native
+    var redirect: js.UndefOr[ReturnurlString] = js.undefined
     
-    var sepa_debit: js.UndefOr[Iban] = js.native
+    var sepa_debit: js.UndefOr[Iban] = js.undefined
     
-    var statement_descriptor: js.UndefOr[String] = js.native
+    var statement_descriptor: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat = js.native
+    var `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat
     
-    var usage: js.UndefOr[reusable | single_use] = js.native
+    var usage: js.UndefOr[reusable | single_use] = js.undefined
   }
   object ISourceCreationOptions {
     
@@ -346,10 +345,9 @@ object sources {
     }
   }
   
-  @js.native
   trait ISourceRetrieveOptions extends StObject {
     
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
   }
   object ISourceRetrieveOptions {
     
@@ -370,12 +368,13 @@ object sources {
     }
   }
   
-  @js.native
-  trait ISourceUpdateOptions extends IDataOptionsWithMetadata {
+  trait ISourceUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
-    var mandate: js.UndefOr[Currency] = js.native
+    var mandate: js.UndefOr[Currency] = js.undefined
     
-    var owner: js.UndefOr[EmailName] = js.native
+    var owner: js.UndefOr[EmailName] = js.undefined
   }
   object ISourceUpdateOptions {
     

@@ -12,7 +12,7 @@ A repository of all the social logos we use on WordPress.com.
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 71380 |
+| # downloads        | 82247 |
 | # stars            | 0 |
 
 ## Links

@@ -4,16 +4,14 @@ import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnob
 import typings.storybookAddonKnobs.arrayMod.ArrayTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Array.ArrayTypeProps> */
-@js.native
 trait PartialArrayTypeProps extends StObject {
   
-  var knob: js.UndefOr[ArrayTypeKnob] = js.native
+  var knob: js.UndefOr[ArrayTypeKnob] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ ArrayTypeKnobValue, ArrayTypeKnobValue]] = js.undefined
 }
 object PartialArrayTypeProps {
   

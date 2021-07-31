@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ListLevelType extends StObject
 object ListLevelType extends StObject {
   
   @js.native
-  sealed trait bullet extends ListLevelType
+  sealed trait bullet
+    extends StObject
+       with ListLevelType
   
   @js.native
-  sealed trait number extends ListLevelType
+  sealed trait number
+    extends StObject
+       with ListLevelType
   
   @js.native
-  sealed trait picture extends ListLevelType
+  sealed trait picture
+    extends StObject
+       with ListLevelType
 }

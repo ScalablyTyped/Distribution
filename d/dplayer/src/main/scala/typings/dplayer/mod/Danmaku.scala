@@ -2,23 +2,21 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Danmaku extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def draw(danmaku: DPlayerDanmakuItem): Unit = js.native
+  def draw(danmaku: DPlayerDanmakuItem): Unit
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def opacity(percentage: Double): Unit = js.native
+  def opacity(percentage: Double): Unit
   
-  def send(danmaku: DPlayerDanmakuItem, callback: js.Function0[Unit]): Unit = js.native
+  def send(danmaku: DPlayerDanmakuItem, callback: js.Function0[Unit]): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Danmaku {
   

@@ -2,21 +2,19 @@ package typings.domMediacaptureRecord
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaRecorderOptions extends StObject {
   
-  var audioBitrateMode: js.UndefOr[BitrateMode] = js.native
+  var audioBitrateMode: js.UndefOr[BitrateMode] = js.undefined
   
-  var audioBitsPerSecond: js.UndefOr[Double] = js.native
+  var audioBitsPerSecond: js.UndefOr[Double] = js.undefined
   
-  var bitsPerSecond: js.UndefOr[Double] = js.native
+  var bitsPerSecond: js.UndefOr[Double] = js.undefined
   
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
-  var videoBitsPerSecond: js.UndefOr[Double] = js.native
+  var videoBitsPerSecond: js.UndefOr[Double] = js.undefined
 }
 object MediaRecorderOptions {
   

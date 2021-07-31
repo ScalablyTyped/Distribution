@@ -2,31 +2,29 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignmentPattern extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val EstimatedModuleSize: Double = js.native
+  val EstimatedModuleSize: Double
   
-  val X: Double = js.native
+  val X: Double
   
-  val Y: Double = js.native
+  val Y: Double
   
-  def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean = js.native
+  def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean
   
-  var count: Double = js.native
+  var count: Double
   
-  var estimatedModuleSize: Double = js.native
+  var estimatedModuleSize: Double
   
-  def incrementCount(): Unit = js.native
+  def incrementCount(): Unit
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object AlignmentPattern {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ToastDismissalReason extends StObject {
   
   /** The app explicitly hid the toast notification by calling the ToastNotifier.hide method. */
   @js.native
-  sealed trait applicationHidden extends ToastDismissalReason
+  sealed trait applicationHidden
+    extends StObject
+       with ToastDismissalReason
   
   /** The toast notification had been shown for the maximum allowed time and was faded out. The maximum time to show a toast notification is 7 seconds except in the case of long-duration toasts, in which case it is 25 seconds. */
   @js.native
-  sealed trait timedOut extends ToastDismissalReason
+  sealed trait timedOut
+    extends StObject
+       with ToastDismissalReason
   
   /** The user dismissed the toast notification. */
   @js.native
-  sealed trait userCanceled extends ToastDismissalReason
+  sealed trait userCanceled
+    extends StObject
+       with ToastDismissalReason
 }

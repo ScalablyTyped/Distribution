@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Template extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the template.
     */
-  var TemplateArn: js.UndefOr[typings.awsSdk.pinpointemailMod.TemplateArn] = js.native
+  var TemplateArn: js.UndefOr[typings.awsSdk.pinpointemailMod.TemplateArn] = js.undefined
   
   /**
     * An object that defines the values to use for message variables in the template. This object is a set of key-value pairs. Each key defines a message variable in the template. The corresponding value defines the value to use for that variable.
     */
-  var TemplateData: js.UndefOr[typings.awsSdk.pinpointemailMod.TemplateData] = js.native
+  var TemplateData: js.UndefOr[typings.awsSdk.pinpointemailMod.TemplateData] = js.undefined
 }
 object Template {
   

@@ -2,15 +2,13 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object musicRepositoryLyricsResponseMod {
   
-  @js.native
   trait MusicRepositoryLyricsResponseLyrics extends StObject {
     
-    var phrases: js.Array[MusicRepositoryLyricsResponsePhrasesItem] = js.native
+    var phrases: js.Array[MusicRepositoryLyricsResponsePhrasesItem]
   }
   object MusicRepositoryLyricsResponseLyrics {
     
@@ -31,12 +29,11 @@ object musicRepositoryLyricsResponseMod {
     }
   }
   
-  @js.native
   trait MusicRepositoryLyricsResponsePhrasesItem extends StObject {
     
-    var phrase: String = js.native
+    var phrase: String
     
-    var start_time_in_ms: Double = js.native
+    var start_time_in_ms: Double
   }
   object MusicRepositoryLyricsResponsePhrasesItem {
     
@@ -57,12 +54,11 @@ object musicRepositoryLyricsResponseMod {
     }
   }
   
-  @js.native
   trait MusicRepositoryLyricsResponseRootObject extends StObject {
     
-    var lyrics: MusicRepositoryLyricsResponseLyrics = js.native
+    var lyrics: MusicRepositoryLyricsResponseLyrics
     
-    var status: String = js.native
+    var status: String
   }
   object MusicRepositoryLyricsResponseRootObject {
     

@@ -68,7 +68,6 @@ import typings.activexOffice.anon.Pctinfo
 import typings.activexOffice.anon.PpvObj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -434,11 +433,16 @@ trait ActiveXObject extends StObject {
   @JSName("set")
   def set_List(obj: CommandBarComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: String): Unit = js.native
   @JSName("set")
-  def set_accName(obj: CommandBarButton, propertyName: accName, parameterTypes: js.Array[_], newValue: String): Unit = js.native
+  def set_accName(obj: CommandBarButton, propertyName: accName, parameterTypes: js.Array[js.Any], newValue: String): Unit = js.native
   @JSName("set")
-  def set_accName(obj: CommandBarComboBox, propertyName: accName, parameterTypes: js.Array[_], newValue: String): Unit = js.native
+  def set_accName(obj: CommandBarComboBox, propertyName: accName, parameterTypes: js.Array[js.Any], newValue: String): Unit = js.native
   @JSName("set")
-  def set_accValue(obj: CommandBarButton, propertyName: accValue, parameterTypes: js.Array[_], newValue: String): Unit = js.native
+  def set_accValue(obj: CommandBarButton, propertyName: accValue, parameterTypes: js.Array[js.Any], newValue: String): Unit = js.native
   @JSName("set")
-  def set_accValue(obj: CommandBarComboBox, propertyName: accValue, parameterTypes: js.Array[_], newValue: String): Unit = js.native
+  def set_accValue(
+    obj: CommandBarComboBox,
+    propertyName: accValue,
+    parameterTypes: js.Array[js.Any],
+    newValue: String
+  ): Unit = js.native
 }

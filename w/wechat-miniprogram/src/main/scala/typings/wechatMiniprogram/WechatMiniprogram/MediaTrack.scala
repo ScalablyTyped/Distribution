@@ -4,7 +4,6 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.audio
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 可通过 [MediaContainer.extractDataSource](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaContainer.extractDataSource.html) 返回。
@@ -12,21 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [MediaTrack](https://developers.weixin.qq.com/miniprogram/dev/api/media/video-processing/MediaTrack.html) 音频或视频轨道，可以对轨道进行一些操作
   *
   * 最低基础库： `2.9.0` */
-@js.native
 trait MediaTrack extends StObject {
   
   /** 轨道长度，只读 */
-  var duration: Double = js.native
+  var duration: Double
   
   /** 轨道类型，只读
     *
     * 可选值：
     * - 'audio': 音频轨道;
     * - 'video': 视频轨道; */
-  var kind: audio | video = js.native
+  var kind: audio | video
   
   /** 音量，音频轨道下有效，可写 */
-  var volume: Double = js.native
+  var volume: Double
 }
 object MediaTrack {
   

@@ -12,14 +12,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.messagereceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports network communication using a UDP datagram socket. */
 @js.native
 trait DatagramSocket extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messagereceived(
     `type`: messagereceived,
@@ -110,7 +109,7 @@ trait DatagramSocket extends StObject {
   def joinMulticastGroup(host: HostName): Unit = js.native
   
   /** An event that indicates that a message was received on the DatagramSocket object. */
-  def onmessagereceived(ev: DatagramSocketMessageReceivedEventArgs with WinRTEvent[DatagramSocket]): Unit = js.native
+  def onmessagereceived(ev: DatagramSocketMessageReceivedEventArgs & WinRTEvent[DatagramSocket]): Unit = js.native
   /** An event that indicates that a message was received on the DatagramSocket object. */
   @JSName("onmessagereceived")
   var onmessagereceived_Original: TypedEventHandler[DatagramSocket, DatagramSocketMessageReceivedEventArgs] = js.native
@@ -118,7 +117,7 @@ trait DatagramSocket extends StObject {
   /** Gets the output stream to write to the remote host. */
   var outputStream: IOutputStream = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messagereceived(
     `type`: messagereceived,

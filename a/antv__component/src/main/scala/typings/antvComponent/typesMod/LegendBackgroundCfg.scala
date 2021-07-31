@@ -3,23 +3,21 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendBackgroundCfg extends StObject {
   
   /**
     * @type {number|number[]}
     * 背景的留白
     */
-  var padding: js.UndefOr[Double | js.Array[Double]] = js.native
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * @type {ShapeAttrs}
     * 背景配置项
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object LegendBackgroundCfg {
   

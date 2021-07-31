@@ -34,7 +34,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,27 +45,37 @@ object mod {
   object PeripheralType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[PeripheralType with String] = js.native
+    def apply(value: String): js.UndefOr[PeripheralType & String] = js.native
     
     @js.native
-    sealed trait GPIO extends PeripheralType
-    /* "gpio" */ val GPIO: typings.j5IoTypes.mod.PeripheralType.GPIO with String = js.native
+    sealed trait GPIO
+      extends StObject
+         with PeripheralType
+    /* "gpio" */ val GPIO: typings.j5IoTypes.mod.PeripheralType.GPIO & String = js.native
     
     @js.native
-    sealed trait I2C extends PeripheralType
-    /* "i2c" */ val I2C: typings.j5IoTypes.mod.PeripheralType.I2C with String = js.native
+    sealed trait I2C
+      extends StObject
+         with PeripheralType
+    /* "i2c" */ val I2C: typings.j5IoTypes.mod.PeripheralType.I2C & String = js.native
     
     @js.native
-    sealed trait PWM extends PeripheralType
-    /* "pwm" */ val PWM: typings.j5IoTypes.mod.PeripheralType.PWM with String = js.native
+    sealed trait PWM
+      extends StObject
+         with PeripheralType
+    /* "pwm" */ val PWM: typings.j5IoTypes.mod.PeripheralType.PWM & String = js.native
     
     @js.native
-    sealed trait SPI extends PeripheralType
-    /* "spi" */ val SPI: typings.j5IoTypes.mod.PeripheralType.SPI with String = js.native
+    sealed trait SPI
+      extends StObject
+         with PeripheralType
+    /* "spi" */ val SPI: typings.j5IoTypes.mod.PeripheralType.SPI & String = js.native
     
     @js.native
-    sealed trait UART extends PeripheralType
-    /* "uart" */ val UART: typings.j5IoTypes.mod.PeripheralType.UART with String = js.native
+    sealed trait UART
+      extends StObject
+         with PeripheralType
+    /* "uart" */ val UART: typings.j5IoTypes.mod.PeripheralType.UART & String = js.native
   }
   
   @js.native
@@ -76,15 +85,19 @@ object mod {
   object Value extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Value with Double] = js.native
+    def apply(value: Double): js.UndefOr[Value & Double] = js.native
     
     @js.native
-    sealed trait HIGH extends Value
-    /* 1 */ val HIGH: typings.j5IoTypes.mod.Value.HIGH with Double = js.native
+    sealed trait HIGH
+      extends StObject
+         with Value
+    /* 1 */ val HIGH: typings.j5IoTypes.mod.Value.HIGH & Double = js.native
     
     @js.native
-    sealed trait LOW extends Value
-    /* 0 */ val LOW: typings.j5IoTypes.mod.Value.LOW with Double = js.native
+    sealed trait LOW
+      extends StObject
+         with Value
+    /* 0 */ val LOW: typings.j5IoTypes.mod.Value.LOW & Double = js.native
   }
   
   type I2CReadBufferCallback = js.Function2[/* err */ Null | Error | String, /* data */ Null | Buffer, Unit]
@@ -126,12 +139,11 @@ object mod {
     def write(value: Value): Unit = js.native
   }
   
-  @js.native
   trait IGPIOConfig extends StObject {
     
-    var pin: Double | String = js.native
+    var pin: Double | String
     
-    var pullResistor: js.UndefOr[Double] = js.native
+    var pullResistor: js.UndefOr[Double] = js.undefined
   }
   object IGPIOConfig {
     
@@ -186,9 +198,9 @@ object mod {
     def readByteSync(address: Double, register: Double): Double = js.native
     
     def readSync(address: Double): Buffer = js.native
-    def readSync(address: Double, registerOrLength: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
     def readSync(address: Double, registerOrLength: Double): Buffer = js.native
     def readSync(address: Double, registerOrLength: Double, length: Double): Buffer = js.native
+    def readSync(address: Double, registerOrLength: Unit, length: Double): Buffer = js.native
     
     def readWord(address: Double, cb: I2CReadNumberCallback): Unit = js.native
     def readWord(address: Double, register: Double, cb: I2CReadNumberCallback): Unit = js.native
@@ -238,10 +250,9 @@ object mod {
     def write(value: Value): Unit = js.native
   }
   
-  @js.native
   trait ILEDModule extends StObject {
     
-    def createLED(): ILED = js.native
+    def createLED(): ILED
   }
   object ILEDModule {
     
@@ -271,14 +282,13 @@ object mod {
     def write(dutyCycle: Double): Unit = js.native
   }
   
-  @js.native
   trait IPWMConfig extends StObject {
     
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
     
-    var pin: Double | String = js.native
+    var pin: Double | String
     
-    var range: js.UndefOr[Double] = js.native
+    var range: js.UndefOr[Double] = js.undefined
   }
   object IPWMConfig {
     
@@ -328,12 +338,11 @@ object mod {
     def validateAlive(): Unit = js.native
   }
   
-  @js.native
   trait IPinInfo extends StObject {
     
-    var peripherals: js.Array[PeripheralType] = js.native
+    var peripherals: js.Array[PeripheralType]
     
-    var pins: js.Array[String] = js.native
+    var pins: js.Array[String]
   }
   object IPinInfo {
     
@@ -395,20 +404,19 @@ object mod {
     def createSerial(options: ISerialOptions): ISerial = js.native
   }
   
-  @js.native
   trait ISerialOptions extends StObject {
     
     var baudRate: js.UndefOr[
         `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
-      ] = js.native
+      ] = js.undefined
     
-    var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.native
+    var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.undefined
     
-    var parity: js.UndefOr[none | even | mark | odd | space] = js.native
+    var parity: js.UndefOr[none | even | mark | odd | space] = js.undefined
     
-    var portId: js.UndefOr[String] = js.native
+    var portId: js.UndefOr[String] = js.undefined
     
-    var stopBits: js.UndefOr[`1` | `2`] = js.native
+    var stopBits: js.UndefOr[`1` | `2`] = js.undefined
   }
   object ISerialOptions {
     

@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1EventDetail extends StObject {
   
   /**
     * Optional. Extra user event features to include in the recommendation model. For product recommendation, an example of extra user information is traffic_channel, i.e. how user
     * arrives at the site. Users can arrive at the site by coming to the site directly, or coming through Google search, and etc.
     */
-  var eventAttributes: js.UndefOr[GoogleCloudRecommendationengineV1beta1FeatureMap] = js.native
+  var eventAttributes: js.UndefOr[GoogleCloudRecommendationengineV1beta1FeatureMap] = js.undefined
   
   /**
     * Optional. A list of identifiers for the independent experiment groups this user event belongs to. This is used to distinguish between user events associated with different
     * experiment setups (e.g. using Recommendation Engine system, using different recommendation models).
     */
-  var experimentIds: js.UndefOr[js.Array[String]] = js.native
+  var experimentIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. A unique id of a web page view. This should be kept the same for all user events triggered from the same pageview. For example, an item detail page view could trigger
     * multiple events as the user is browsing the page. The `pageViewId` property should be kept the same for all these events so that they can be grouped together properly. This
     * `pageViewId` will be automatically generated if using the JavaScript pixel.
     */
-  var pageViewId: js.UndefOr[String] = js.native
+  var pageViewId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Recommendation token included in the recommendation prediction response. This field enables accurate attribution of recommendation model performance. This token enables us
@@ -33,13 +31,13 @@ trait GoogleCloudRecommendationengineV1beta1EventDetail extends StObject {
     * recommendation results, pass the `PredictResponse.recommendationToken` property as a url parameter to product K's page. When recording events on product K's page, log the
     * PredictResponse.recommendation_token to this field. Optional, but highly encouraged for user events that are the result of a recommendation prediction query.
     */
-  var recommendationToken: js.UndefOr[String] = js.native
+  var recommendationToken: js.UndefOr[String] = js.undefined
   
   /** Optional. The referrer url of the current page. When using the JavaScript pixel, this value is filled in automatically. */
-  var referrerUri: js.UndefOr[String] = js.native
+  var referrerUri: js.UndefOr[String] = js.undefined
   
   /** Optional. Complete url (window.location.href) of the user's current page. When using the JavaScript pixel, this value is filled in automatically. Maximum length 5KB. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1EventDetail {
   

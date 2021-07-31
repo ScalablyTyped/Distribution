@@ -2,17 +2,15 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait requestDefaultsOptions extends StObject {
   
-  var agent: js.Any = js.native
+  var agent: js.Any
   
-  var headers: js.Object = js.native
+  var headers: js.Object
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object requestDefaultsOptions {
   

@@ -4,7 +4,6 @@ import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -18,12 +17,11 @@ object anon {
   }
   
   /* Inlined std.Pick<std.Storage, 'getItem' | 'setItem'> */
-  @js.native
   trait PickStoragegetItemsetItem extends StObject {
     
-    var getItem: js.Function1[/* key */ String, String | Null] = js.native
+    var getItem: js.Function1[/* key */ String, String | Null]
     
-    var setItem: js.Function2[/* key */ String, /* value */ String, Unit] = js.native
+    var setItem: js.Function2[/* key */ String, /* value */ String, Unit]
   }
   object PickStoragegetItemsetItem {
     

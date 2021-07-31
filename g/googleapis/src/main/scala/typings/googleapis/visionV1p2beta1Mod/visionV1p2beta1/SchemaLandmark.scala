@@ -2,24 +2,22 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A face-specific landmark (for example, a face feature).
   */
-@js.native
 trait SchemaLandmark extends StObject {
   
   /**
     * Face landmark position.
     */
-  var position: js.UndefOr[SchemaPosition] = js.native
+  var position: js.UndefOr[SchemaPosition] = js.undefined
   
   /**
     * Face landmark type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaLandmark {
   

@@ -3,11 +3,12 @@ package typings.angularCore.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ɵComponentDef[T] extends ɵDirectiveDef[T] {
+trait ɵComponentDef[T]
+  extends StObject
+     with ɵDirectiveDef[T] {
   
   /**
     * Used to store the result of `noSideEffects` function so that it is not removed by closure

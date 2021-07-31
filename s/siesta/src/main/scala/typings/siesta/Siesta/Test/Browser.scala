@@ -7,7 +7,6 @@ import typings.siesta.Siesta.Test.Simulate.IMouse
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Browser
-  extends ITest
+  extends StObject
+     with ITest
      with IEvent
      with IKeyboard
      with IMouse
@@ -38,15 +38,9 @@ trait Browser
   def setTimeout(func: js.Function, delay: Double): Double = js.native
   
   def waitForEvent(observable: js.Any, event: String, callback: js.Function): Unit = js.native
-  def waitForEvent(
-    observable: js.Any,
-    event: String,
-    callback: js.Function,
-    scope: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ): Unit = js.native
   def waitForEvent(observable: js.Any, event: String, callback: js.Function, scope: js.Any): Unit = js.native
   def waitForEvent(observable: js.Any, event: String, callback: js.Function, scope: js.Any, timeout: Double): Unit = js.native
+  def waitForEvent(observable: js.Any, event: String, callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
   
   def waitForPageLoad(callback: js.Function): Unit = js.native
   def waitForPageLoad(callback: js.Function, scope: js.Any): Unit = js.native

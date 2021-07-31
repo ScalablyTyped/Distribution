@@ -2,66 +2,64 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRouteTableRoute extends StObject {
   
   /**
     * The CIDR block of the route.
     */
-  var cidrBlock: String = js.native
+  var cidrBlock: String
   
   /**
     * The ID of the Egress Only Internet Gateway.
     */
-  var egressOnlyGatewayId: String = js.native
+  var egressOnlyGatewayId: String
   
   /**
     * The id of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not exported if not passed as a parameter).
     */
-  var gatewayId: String = js.native
+  var gatewayId: String
   
   /**
     * The EC2 instance ID.
     */
-  var instanceId: String = js.native
+  var instanceId: String
   
   /**
     * The IPv6 CIDR block of the route.
     */
-  var ipv6CidrBlock: String = js.native
+  var ipv6CidrBlock: String
   
   /**
     * The Local Gateway ID.
     */
-  var localGatewayId: String = js.native
+  var localGatewayId: String
   
   /**
     * The NAT Gateway ID.
     */
-  var natGatewayId: String = js.native
+  var natGatewayId: String
   
   /**
     * The ID of the elastic network interface (eni) to use.
     */
-  var networkInterfaceId: String = js.native
+  var networkInterfaceId: String
   
   /**
     * The EC2 Transit Gateway ID.
     */
-  var transitGatewayId: String = js.native
+  var transitGatewayId: String
   
   /**
     * The VPC Endpoint ID.
     */
-  var vpcEndpointId: String = js.native
+  var vpcEndpointId: String
   
   /**
     * The VPC Peering ID.
     */
-  var vpcPeeringConnectionId: String = js.native
+  var vpcPeeringConnectionId: String
 }
 object GetRouteTableRoute {
   

@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * APIs generally provide a `list` method that returns the monitored resource
   * descriptors used by the API.
   */
-@js.native
 trait SchemaMonitoredResourceDescriptor extends StObject {
   
   /**
     * Optional. A detailed description of the monitored resource type that
     * might be used in documentation.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A concise name for the monitored resource type that might be
@@ -30,7 +28,7 @@ trait SchemaMonitoredResourceDescriptor extends StObject {
     * without any article or other determiners. For example, `&quot;Google
     * Cloud SQL Database&quot;`.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A set of labels used to describe instances of this monitored
@@ -38,7 +36,7 @@ trait SchemaMonitoredResourceDescriptor extends StObject {
     * identified by values for the labels `&quot;database_id&quot;` and
     * `&quot;zone&quot;`.
     */
-  var labels: js.UndefOr[js.Array[SchemaLabelDescriptor]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaLabelDescriptor]] = js.undefined
   
   /**
     * Optional. The resource name of the monitored resource descriptor:
@@ -48,14 +46,14 @@ trait SchemaMonitoredResourceDescriptor extends StObject {
     * accessing the type.  APIs that do not use project information can use the
     * resource name format `&quot;monitoredResourceDescriptors/{type}&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The monitored resource type. For example, the type
     * `&quot;cloudsql_database&quot;` represents databases in Google Cloud SQL.
     * The maximum length of this value is 256 characters.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaMonitoredResourceDescriptor {
   

@@ -5,21 +5,19 @@ import typings.arangodb.arangodbStrings.id
 import typings.arangodb.arangodbStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArangoSearchViewCollectionLink extends StObject {
   
-  var analyzers: js.UndefOr[js.Array[String]] = js.native
+  var analyzers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fields: js.UndefOr[StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]] = js.native
+  var fields: js.UndefOr[StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]] = js.undefined
   
-  var includeAllFields: js.UndefOr[Boolean] = js.native
+  var includeAllFields: js.UndefOr[Boolean] = js.undefined
   
-  var storeValues: js.UndefOr[none | id] = js.native
+  var storeValues: js.UndefOr[none | id] = js.undefined
   
-  var trackListPositions: js.UndefOr[Boolean] = js.native
+  var trackListPositions: js.UndefOr[Boolean] = js.undefined
 }
 object ArangoSearchViewCollectionLink {
   

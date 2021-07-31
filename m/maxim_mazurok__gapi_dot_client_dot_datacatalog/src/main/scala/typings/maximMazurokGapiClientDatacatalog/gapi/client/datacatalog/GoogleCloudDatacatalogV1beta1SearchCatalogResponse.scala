@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1SearchCatalogResponse extends StObject {
   
   /** The token that can be used to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Search results. */
-  var results: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1SearchCatalogResult]] = js.native
+  var results: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1SearchCatalogResult]] = js.undefined
   
   /**
     * Unreachable locations. Search result does not include data from those locations. Users can get additional information on the error by repeating the search request with a more
     * restrictive parameter -- setting the value for `SearchDataCatalogRequest.scope.restricted_locations`.
     */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1SearchCatalogResponse {
   

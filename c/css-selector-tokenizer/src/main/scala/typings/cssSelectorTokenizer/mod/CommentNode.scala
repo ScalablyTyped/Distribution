@@ -3,25 +3,24 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.comment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentNode
-  extends SelectorNodeType
+  extends StObject
      with BaseNode
+     with SelectorNodeType
      with ValueNodeType {
   
-  var content: String = js.native
+  var content: String
   
-  var `type`: comment = js.native
+  var `type`: comment
 }
 object CommentNode {
   
   @scala.inline
-  def apply(content: String, `type`: comment): CommentNode = {
+  def apply(content: String): CommentNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("comment")
     __obj.asInstanceOf[CommentNode]
   }
   

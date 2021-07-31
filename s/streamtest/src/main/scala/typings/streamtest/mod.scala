@@ -10,13 +10,16 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object v1 {
     
+    @JSImport("streamtest", "v1")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a readable stream streaming 'chunks' each after 'timeout'
       * milliseconds and then end. Useful for testing buffer based streams.
@@ -25,12 +28,10 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v1.fromChunks")
-    @js.native
-    def fromChunks(chunks: js.Array[Chunk]): Readable = js.native
-    @JSImport("streamtest", "v1.fromChunks")
-    @js.native
-    def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromChunks(chunks: js.Array[Chunk]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    @scala.inline
+    def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'chunks' each after 'timeout'
@@ -42,12 +43,10 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v1.fromErroredChunks")
-    @js.native
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = js.native
-    @JSImport("streamtest", "v1.fromErroredChunks")
-    @js.native
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    @scala.inline
+    def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -59,12 +58,10 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v1.fromErroredObjects")
-    @js.native
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = js.native
-    @JSImport("streamtest", "v1.fromErroredObjects")
-    @js.native
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    @scala.inline
+    def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -74,24 +71,20 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v1.fromObjects")
-    @js.native
-    def fromObjects(objects: js.Array[NonNull]): Readable = js.native
-    @JSImport("streamtest", "v1.fromObjects")
-    @js.native
-    def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromObjects(objects: js.Array[NonNull]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    @scala.inline
+    def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a new readable stream
       * @param options The options used to create the stream
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v1.readable")
-    @js.native
-    def readable(): Readable = js.native
-    @JSImport("streamtest", "v1.readable")
-    @js.native
-    def readable(options: ReadableOptions): Readable = js.native
+    @scala.inline
+    def readable(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable]
+    @scala.inline
+    def readable(options: ReadableOptions): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
     
     /**
       * Write chunks to a stream synchronously and emit an error when done
@@ -99,34 +92,30 @@ object mod {
       * @param err The error to emit
       * @param chunks The chunks to write
       */
-    @JSImport("streamtest", "v1.syncError")
-    @js.native
-    def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = js.native
+    @scala.inline
+    def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncError")(stream.asInstanceOf[js.Any], err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a synchronous PassThrough stream
       * @returns A PassThrough stream
       */
-    @JSImport("streamtest", "v1.syncReadableChunks")
-    @js.native
-    def syncReadableChunks(): PassThrough = js.native
+    @scala.inline
+    def syncReadableChunks(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableChunks")().asInstanceOf[PassThrough]
     
     /**
       * Create a synchronous PassThrough stream in object mode
       * @returns A PassThrough stream
       */
-    @JSImport("streamtest", "v1.syncReadableObjects")
-    @js.native
-    def syncReadableObjects(): PassThrough = js.native
+    @scala.inline
+    def syncReadableObjects(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableObjects")().asInstanceOf[PassThrough]
     
     /**
       * Write chunks to a stream synchronously
       * @param stream The stream to write to
       * @param chunks The chunks to write
       */
-    @JSImport("streamtest", "v1.syncWrite")
-    @js.native
-    def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = js.native
+    @scala.inline
+    def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncWrite")(stream.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -135,9 +124,8 @@ object mod {
       * an array of chunks as its second
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v1.toChunks")
-    @js.native
-    def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], _]): Writable = js.native
+    @scala.inline
+    def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toChunks")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -146,9 +134,8 @@ object mod {
       * an array of objects as its second
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v1.toObjects")
-    @js.native
-    def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], _]): Writable = js.native
+    @scala.inline
+    def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjects")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -157,25 +144,26 @@ object mod {
       * an string as its second
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v1.toText")
-    @js.native
-    def toText(cb: js.Function2[/* err */ Error, /* text */ String, _]): Writable = js.native
+    @scala.inline
+    def toText(cb: js.Function2[/* err */ Error, /* text */ String, js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a new writable stream
       * @param options The options used to create the stream
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v1.writable")
-    @js.native
-    def writable(): Writable = js.native
-    @JSImport("streamtest", "v1.writable")
-    @js.native
-    def writable(options: WritableOptions): Writable = js.native
+    @scala.inline
+    def writable(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable]
+    @scala.inline
+    def writable(options: WritableOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
   }
   
   object v2 {
     
+    @JSImport("streamtest", "v2")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a readable stream streaming 'chunks' each after 'timeout'
       * milliseconds and then end. Useful for testing buffer based streams.
@@ -184,12 +172,10 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v2.fromChunks")
-    @js.native
-    def fromChunks(chunks: js.Array[Chunk]): Readable = js.native
-    @JSImport("streamtest", "v2.fromChunks")
-    @js.native
-    def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromChunks(chunks: js.Array[Chunk]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    @scala.inline
+    def fromChunks(chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromChunks")(chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'chunks' each after 'timeout'
@@ -201,12 +187,10 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v2.fromErroredChunks")
-    @js.native
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = js.native
-    @JSImport("streamtest", "v2.fromErroredChunks")
-    @js.native
-    def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromErroredChunks(err: Error, chunks: js.Array[Chunk]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    @scala.inline
+    def fromErroredChunks(err: Error, chunks: js.Array[Chunk], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredChunks")(err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -218,12 +202,10 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v2.fromErroredObjects")
-    @js.native
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = js.native
-    @JSImport("streamtest", "v2.fromErroredObjects")
-    @js.native
-    def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromErroredObjects(err: Error, objects: js.Array[NonNull]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    @scala.inline
+    def fromErroredObjects(err: Error, objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromErroredObjects")(err.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a readable stream streaming 'objects' each after 'timeout'
@@ -233,24 +215,20 @@ object mod {
       * Defaults to 0.
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v2.fromObjects")
-    @js.native
-    def fromObjects(objects: js.Array[NonNull]): Readable = js.native
-    @JSImport("streamtest", "v2.fromObjects")
-    @js.native
-    def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = js.native
+    @scala.inline
+    def fromObjects(objects: js.Array[NonNull]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    @scala.inline
+    def fromObjects(objects: js.Array[NonNull], timeout: Double): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObjects")(objects.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
     /**
       * Create a new readable stream
       * @param options The options used to create the stream
       * @returns A new readable stream
       */
-    @JSImport("streamtest", "v2.readable")
-    @js.native
-    def readable(): Readable = js.native
-    @JSImport("streamtest", "v2.readable")
-    @js.native
-    def readable(options: ReadableOptions): Readable = js.native
+    @scala.inline
+    def readable(): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")().asInstanceOf[Readable]
+    @scala.inline
+    def readable(options: ReadableOptions): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("readable")(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
     
     /**
       * Write chunks to a stream synchronously and emit an error when done
@@ -258,34 +236,30 @@ object mod {
       * @param err The error to emit
       * @param chunks The chunks to write
       */
-    @JSImport("streamtest", "v2.syncError")
-    @js.native
-    def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = js.native
+    @scala.inline
+    def syncError(stream: Writable, err: Error, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncError")(stream.asInstanceOf[js.Any], err.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a synchronous PassThrough stream
       * @returns A PassThrough stream
       */
-    @JSImport("streamtest", "v2.syncReadableChunks")
-    @js.native
-    def syncReadableChunks(): PassThrough = js.native
+    @scala.inline
+    def syncReadableChunks(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableChunks")().asInstanceOf[PassThrough]
     
     /**
       * Create a synchronous PassThrough stream in object mode
       * @returns A PassThrough stream
       */
-    @JSImport("streamtest", "v2.syncReadableObjects")
-    @js.native
-    def syncReadableObjects(): PassThrough = js.native
+    @scala.inline
+    def syncReadableObjects(): PassThrough = ^.asInstanceOf[js.Dynamic].applyDynamic("syncReadableObjects")().asInstanceOf[PassThrough]
     
     /**
       * Write chunks to a stream synchronously
       * @param stream The stream to write to
       * @param chunks The chunks to write
       */
-    @JSImport("streamtest", "v2.syncWrite")
-    @js.native
-    def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = js.native
+    @scala.inline
+    def syncWrite(stream: Writable, chunks: js.Array[Chunk]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncWrite")(stream.asInstanceOf[js.Any], chunks.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -294,9 +268,8 @@ object mod {
       * an array of chunks as its second
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v2.toChunks")
-    @js.native
-    def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], _]): Writable = js.native
+    @scala.inline
+    def toChunks(cb: js.Function2[/* err */ Error, /* chunks */ js.Array[Chunk], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toChunks")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -305,9 +278,8 @@ object mod {
       * an array of objects as its second
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v2.toObjects")
-    @js.native
-    def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], _]): Writable = js.native
+    @scala.inline
+    def toObjects(cb: js.Function2[/* err */ Error, /* objects */ js.Array[NonNull], js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toObjects")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a writable stream collecting written chunks and call the passed
@@ -316,21 +288,18 @@ object mod {
       * an string as its second
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v2.toText")
-    @js.native
-    def toText(cb: js.Function2[/* err */ Error, /* text */ String, _]): Writable = js.native
+    @scala.inline
+    def toText(cb: js.Function2[/* err */ Error, /* text */ String, js.Any]): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("toText")(cb.asInstanceOf[js.Any]).asInstanceOf[Writable]
     
     /**
       * Create a new writable stream
       * @param options The options used to create the stream
       * @returns A new writable stream
       */
-    @JSImport("streamtest", "v2.writable")
-    @js.native
-    def writable(): Writable = js.native
-    @JSImport("streamtest", "v2.writable")
-    @js.native
-    def writable(options: WritableOptions): Writable = js.native
+    @scala.inline
+    def writable(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable]
+    @scala.inline
+    def writable(options: WritableOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
   }
   
   @JSImport("streamtest", "versions")

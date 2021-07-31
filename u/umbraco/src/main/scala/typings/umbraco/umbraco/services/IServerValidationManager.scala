@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is for user defined properties (called Properties) and the other is for field properties which are attached to the native
   * model objects (not user defined). The methods below are named according to these rules: Properties vs Fields.
   */
-@js.native
 trait IServerValidationManager extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Adds an error message for a native content item field (not a user defined property, for Example, 'Name')
     */
-  def addFieldError(fieldName: String, errorMsg: String): Unit = js.native
+  def addFieldError(fieldName: String, errorMsg: String): Unit
   
   /**
     * @ngdoc function
@@ -38,7 +36,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Adds an error message for the content property
     */
-  def addPropertyError(propertyAlias: String, fieldName: String, errorMsg: String): Unit = js.native
+  def addPropertyError(propertyAlias: String, fieldName: String, errorMsg: String): Unit
   
   /**
     * @ngdoc function
@@ -49,7 +47,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Clears all errors
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * @ngdoc function
@@ -66,7 +64,7 @@ trait IServerValidationManager extends StObject {
     *   so that any persisted validation errors are re-bound to their controls. Once they are re-binded this then clears the validation
     *   colleciton so that if another route change occurs, the previously persisted validation errors are not re-bound to the new item.
     */
-  def executeAndClearAllSubscriptions(): Unit = js.native
+  def executeAndClearAllSubscriptions(): Unit
   
   /**
     * @ngdoc function
@@ -77,7 +75,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Gets all callbacks that has been registered using the subscribe method for the field.
     */
-  def getFieldCallbacks(fieldName: String): js.Any = js.native
+  def getFieldCallbacks(fieldName: String): js.Any
   
   /**
     * @ngdoc function
@@ -88,7 +86,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Gets the error message for a content field
     */
-  def getFieldError(fieldName: String): String = js.native
+  def getFieldError(fieldName: String): String
   
   /**
     * @ngdoc function
@@ -101,7 +99,7 @@ trait IServerValidationManager extends StObject {
     * This will always return any callbacks registered for just the property (i.e. field name is empty) and for ones with an
     * explicit field name set.
     */
-  def getPropertyCallbacks(propertyAlias: String, fieldName: String): Unit = js.native
+  def getPropertyCallbacks(propertyAlias: String, fieldName: String): Unit
   
   /**
     * @ngdoc function
@@ -112,7 +110,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Gets the error message for the content property
     */
-  def getPropertyError(propertyAlias: String, fieldName: String): String = js.native
+  def getPropertyError(propertyAlias: String, fieldName: String): String
   
   /**
     * @ngdoc function
@@ -123,7 +121,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Checks if a content field has an error
     */
-  def hasFieldError(fieldName: String): Boolean = js.native
+  def hasFieldError(fieldName: String): Boolean
   
   /**
     * @ngdoc function
@@ -134,7 +132,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Checks if the content property + field name combo has an error
     */
-  def hasPropertyError(propertyAlias: String, fieldName: String): Boolean = js.native
+  def hasPropertyError(propertyAlias: String, fieldName: String): Boolean
   
   /**
     * @ngdoc function
@@ -145,7 +143,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Removes an error message for the content property
     */
-  def removePropertyError(propertyAlias: String, fieldName: String): Unit = js.native
+  def removePropertyError(propertyAlias: String, fieldName: String): Unit
   
   /**
     * @ngdoc function
@@ -156,7 +154,7 @@ trait IServerValidationManager extends StObject {
     * @description
     * Clears all errors and notifies all callbacks that all server errros are now valid - used when submitting a form
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * @ngdoc function
@@ -172,7 +170,7 @@ trait IServerValidationManager extends StObject {
     *  field alias to listen for.
     *  If propertyAlias is null, then this subscription is for a field property (not a user defined property).
     */
-  def subscribe(propertyAlias: String, fieldName: String, callback: js.Function): Unit = js.native
+  def subscribe(propertyAlias: String, fieldName: String, callback: js.Function): Unit
 }
 object IServerValidationManager {
   

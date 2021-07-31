@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookChartLineFormat extends Entity {
+trait WorkbookChartLineFormat
+  extends StObject
+     with Entity {
   
   // HTML color code representing the color of lines in the chart.
-  var color: js.UndefOr[NullableOption[String]] = js.native
+  var color: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WorkbookChartLineFormat {
   

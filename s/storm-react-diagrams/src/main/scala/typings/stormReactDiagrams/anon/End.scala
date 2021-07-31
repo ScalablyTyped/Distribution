@@ -2,19 +2,17 @@ package typings.stormReactDiagrams.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: X = js.native
+  var end: X
   
-  var pathToEnd: js.Array[js.Array[Double]] = js.native
+  var pathToEnd: js.Array[js.Array[Double]]
   
-  var pathToStart: js.Array[js.Array[Double]] = js.native
+  var pathToStart: js.Array[js.Array[Double]]
   
-  var start: X = js.native
+  var start: X
 }
 object End {
   

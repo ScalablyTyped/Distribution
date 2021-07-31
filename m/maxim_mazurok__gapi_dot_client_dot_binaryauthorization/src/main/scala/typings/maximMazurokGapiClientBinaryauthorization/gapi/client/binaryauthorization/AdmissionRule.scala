@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdmissionRule extends StObject {
   
   /** Required. The action when a pod creation is denied by the admission rule. */
-  var enforcementMode: js.UndefOr[String] = js.native
+  var enforcementMode: js.UndefOr[String] = js.undefined
   
   /** Required. How this admission rule will be evaluated. */
-  var evaluationMode: js.UndefOr[String] = js.native
+  var evaluationMode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The resource names of the attestors that must attest to a container image, in the format `projects/∗/attestors/ *`. Each attestor must exist before a policy can reference
     * it. To add an attestor to a policy the principal issuing the policy change request must be able to read the attestor resource. Note: this field must be non-empty when the
     * evaluation_mode field specifies REQUIRE_ATTESTATION, otherwise it must be empty.
     */
-  var requireAttestationsBy: js.UndefOr[js.Array[String]] = js.native
+  var requireAttestationsBy: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AdmissionRule {
   

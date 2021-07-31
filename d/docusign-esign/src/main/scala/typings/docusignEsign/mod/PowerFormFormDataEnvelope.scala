@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerFormFormDataEnvelope extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait PowerFormFormDataEnvelope extends StObject {
     *
     * Example: `93be49ab-afa0-4adf-933c-f752070d71ec`
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of recipient objects that provides details about the recipients of the envelope.
     */
-  var recipients: js.UndefOr[js.Array[PowerFormFormDataRecipient]] = js.native
+  var recipients: js.UndefOr[js.Array[PowerFormFormDataRecipient]] = js.undefined
 }
 object PowerFormFormDataEnvelope {
   

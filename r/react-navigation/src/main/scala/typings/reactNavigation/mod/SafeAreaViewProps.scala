@@ -5,15 +5,15 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNavigation.anon.Bottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SafeAreaViewProps extends ViewProps {
+trait SafeAreaViewProps
+  extends StObject
+     with ViewProps {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var forceInset: js.UndefOr[Bottom] = js.native
+  var forceInset: js.UndefOr[Bottom] = js.undefined
 }
 object SafeAreaViewProps {
   

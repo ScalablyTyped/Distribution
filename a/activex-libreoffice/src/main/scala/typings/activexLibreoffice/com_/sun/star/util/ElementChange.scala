@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This structure describes a single change that is part of a batch of changes. */
-@js.native
 trait ElementChange extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait ElementChange extends StObject {
     *
     * The type and the value of the accessor depends on the service.
     */
-  var Accessor: js.Any = js.native
+  var Accessor: js.Any
   
   /** This contains the element that was inserted or changed. */
-  var Element: js.Any = js.native
+  var Element: js.Any
   
   /** This contains the element that was replaced or removed. */
-  var ReplacedElement: js.Any = js.native
+  var ReplacedElement: js.Any
 }
 object ElementChange {
   

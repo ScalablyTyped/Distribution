@@ -4,20 +4,18 @@ import typings.materializeCss.M.Tabs
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.TabsOptions> */
-@js.native
 trait PartialTabsOptions extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction1[/* this */ Tabs, /* newContent */ Element, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction1[/* this */ Tabs, /* newContent */ Element, Unit]] = js.undefined
   
-  var responsiveThreshold: js.UndefOr[Double] = js.native
+  var responsiveThreshold: js.UndefOr[Double] = js.undefined
   
-  var swipeable: js.UndefOr[Boolean] = js.native
+  var swipeable: js.UndefOr[Boolean] = js.undefined
 }
 object PartialTabsOptions {
   

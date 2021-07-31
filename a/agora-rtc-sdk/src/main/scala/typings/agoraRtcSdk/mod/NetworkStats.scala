@@ -11,11 +11,9 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.wifi
 import typings.agoraRtcSdk.agoraRtcSdkStrings.wimax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**  Statistics of the system network. */
-@js.native
 trait NetworkStats extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait NetworkStats extends StObject {
     * - "unknown": Unknown network type.
     * - "UNSUPPORTED": The browser does not support getting the network type.
     */
-  var NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED = js.native
+  var NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED
 }
 object NetworkStats {
   

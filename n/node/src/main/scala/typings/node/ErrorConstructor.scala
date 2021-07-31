@@ -4,7 +4,6 @@ import typings.node.NodeJS.CallSite
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait ErrorConstructor extends StObject {
     *
     * @see https://github.com/v8/v8/wiki/Stack%20Trace%20API#customizing-stack-traces
     */
-  var prepareStackTrace: js.UndefOr[js.Function2[/* err */ Error, /* stackTraces */ js.Array[CallSite], _]] = js.native
+  var prepareStackTrace: js.UndefOr[js.Function2[/* err */ Error, /* stackTraces */ js.Array[CallSite], js.Any]] = js.native
   
   var stackTraceLimit: Double = js.native
 }

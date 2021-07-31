@@ -2,51 +2,49 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Directory Site Settings
   */
-@js.native
 trait SchemaDirectorySiteSettings extends StObject {
   
   /**
     * Whether this directory site has disabled active view creatives.
     */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.native
+  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Directory site Ad Manager settings.
     */
-  var dfpSettings: js.UndefOr[SchemaDfpSettings] = js.native
+  var dfpSettings: js.UndefOr[SchemaDfpSettings] = js.undefined
   
   /**
     * Whether this site accepts in-stream video ads.
     */
-  var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this site accepts interstitial ads.
     */
-  var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this directory site has disabled Nielsen OCR reach ratings.
     */
-  var nielsenOcrOptOut: js.UndefOr[Boolean] = js.native
+  var nielsenOcrOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this directory site has disabled generation of Verification ins
     * tags.
     */
-  var verificationTagOptOut: js.UndefOr[Boolean] = js.native
+  var verificationTagOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this directory site has disabled active view for in-stream video
     * creatives. This is a read-only field.
     */
-  var videoActiveViewOptOut: js.UndefOr[Boolean] = js.native
+  var videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDirectorySiteSettings {
   

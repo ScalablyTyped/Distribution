@@ -7,26 +7,24 @@ import typings.expressServeStaticCore.mod.Query
 import typings.setLink.anon.Attach
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("set-link", JSImport.Namespace)
   @js.native
-  val ^ : (RequestHandler[ParamsDictionary, _, _, Query]) with Attach = js.native
+  val ^ : (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) & Attach = js.native
   
-  type _To = (RequestHandler[ParamsDictionary, _, _, Query]) with Attach
+  type _To = (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) & Attach
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: (RequestHandler[ParamsDictionary, _, _, Query]) with Attach = ^
+  override def _to: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) & Attach = ^
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Response extends StObject {
       
-      def setLink(link: String, rel: String): Unit = js.native
+      def setLink(link: String, rel: String): Unit
     }
     object Response {
       

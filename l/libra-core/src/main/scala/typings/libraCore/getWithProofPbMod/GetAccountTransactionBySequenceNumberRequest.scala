@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest")
@@ -40,13 +39,11 @@ object GetAccountTransactionBySequenceNumberRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): GetAccountTransactionBySequenceNumberRequest = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): GetAccountTransactionBySequenceNumberRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberRequest]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: GetAccountTransactionBySequenceNumberRequest, reader: BinaryReader): GetAccountTransactionBySequenceNumberRequest = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: GetAccountTransactionBySequenceNumberRequest, reader: BinaryReader): GetAccountTransactionBySequenceNumberRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetAccountTransactionBySequenceNumberRequest]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest.extensions")
   @js.native
@@ -61,22 +58,19 @@ object GetAccountTransactionBySequenceNumberRequest {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: GetAccountTransactionBySequenceNumberRequest, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: GetAccountTransactionBySequenceNumberRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: GetAccountTransactionBySequenceNumberRequest): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: GetAccountTransactionBySequenceNumberRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var account: Uint8Array | String = js.native
+    var account: Uint8Array | String
     
-    var fetchEvents: Boolean = js.native
+    var fetchEvents: Boolean
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
   }
   object AsObject {
     

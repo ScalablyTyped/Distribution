@@ -2,15 +2,13 @@ package typings.vegaTypings.scaleMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleDataRef extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var field: ScaleField = js.native
+  var field: ScaleField
 }
 object ScaleDataRef {
   

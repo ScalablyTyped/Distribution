@@ -2,71 +2,69 @@ package typings.vsoNodeApi.formInputInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDescriptor extends StObject {
   
   /**
     * The ids of all inputs that the value of this input is dependent on.
     */
-  var dependencyInputIds: js.Array[String] = js.native
+  var dependencyInputIds: js.Array[String]
   
   /**
     * Description of what this input is used for
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The group localized name to which this input belongs and can be shown as a header for the container that will include all the inputs in the group.
     */
-  var groupName: String = js.native
+  var groupName: String
   
   /**
     * If true, the value information for this input is dynamic and should be fetched when the value of dependency inputs change.
     */
-  var hasDynamicValueInformation: Boolean = js.native
+  var hasDynamicValueInformation: Boolean
   
   /**
     * Identifier for the subscription input
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Mode in which the value of this input should be entered
     */
-  var inputMode: InputMode = js.native
+  var inputMode: InputMode
   
   /**
     * Gets whether this input is confidential, such as for a password or application key
     */
-  var isConfidential: Boolean = js.native
+  var isConfidential: Boolean
   
   /**
     * Localized name which can be shown as a label for the subscription input
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets whether this input is included in the default generated action description.
     */
-  var useInDefaultDescription: Boolean = js.native
+  var useInDefaultDescription: Boolean
   
   /**
     * Information to use to validate this input's value
     */
-  var validation: InputValidation = js.native
+  var validation: InputValidation
   
   /**
     * A hint for input value. It can be used in the UI as the input placeholder.
     */
-  var valueHint: String = js.native
+  var valueHint: String
   
   /**
     * Information about possible values for this input
     */
-  var values: InputValues = js.native
+  var values: InputValues
 }
 object InputDescriptor {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRowSetSupplier
   * @since OOo 3.2
   */
-@js.native
-trait XRowSetChangeListener extends XEventListener {
+trait XRowSetChangeListener
+  extends StObject
+     with XEventListener {
   
   /** notifies the listener that the `RowSet` associated with a {@link XRowSetSupplier} has changed. */
-  def onRowSetChanged(iEvent: EventObject): Unit = js.native
+  def onRowSetChanged(iEvent: EventObject): Unit
 }
 object XRowSetChangeListener {
   

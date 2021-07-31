@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1052` extends StObject {
   
-  var parameters: RequestParameters with (Omit[TeamsGetMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[TeamsGetMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[TeamsGetMembershipForUserInOrgResponseData] = js.native
+  var response: OctokitResponse[TeamsGetMembershipForUserInOrgResponseData]
 }
 object `1052` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[TeamsGetMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[TeamsGetMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[TeamsGetMembershipForUserInOrgResponseData]
   ): `1052` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object `1052` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[TeamsGetMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[TeamsGetMembershipForUserInOrgEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

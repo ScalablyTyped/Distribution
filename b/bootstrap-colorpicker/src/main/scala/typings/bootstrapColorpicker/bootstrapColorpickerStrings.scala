@@ -2,13 +2,14 @@ package typings.bootstrapColorpicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapColorpickerStrings {
   
   @js.native
-  sealed trait changeColor extends ColorPickerEvents
+  sealed trait changeColor
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def changeColor: changeColor = "changeColor".asInstanceOf[changeColor]
   
@@ -18,22 +19,30 @@ object bootstrapColorpickerStrings {
   def colorpicker: colorpicker = "colorpicker".asInstanceOf[colorpicker]
   
   @js.native
-  sealed trait create extends ColorPickerEvents
+  sealed trait create
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait destroy extends ColorPickerEvents
+  sealed trait destroy
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait disable extends ColorPickerEvents
+  sealed trait disable
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
-  sealed trait enable extends ColorPickerEvents
+  sealed trait enable
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def enable: enable = "enable".asInstanceOf[enable]
   
@@ -43,7 +52,9 @@ object bootstrapColorpickerStrings {
   def getValue: getValue = "getValue".asInstanceOf[getValue]
   
   @js.native
-  sealed trait hex extends ColorFormat
+  sealed trait hex
+    extends StObject
+       with ColorFormat
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   
@@ -53,12 +64,16 @@ object bootstrapColorpickerStrings {
   def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait hidePicker extends ColorPickerEvents
+  sealed trait hidePicker
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def hidePicker: hidePicker = "hidePicker".asInstanceOf[hidePicker]
   
   @js.native
-  sealed trait left extends ColorPickerAlignOptions
+  sealed trait left
+    extends StObject
+       with ColorPickerAlignOptions
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -68,17 +83,23 @@ object bootstrapColorpickerStrings {
   def reposition: reposition = "reposition".asInstanceOf[reposition]
   
   @js.native
-  sealed trait rgb extends ColorFormat
+  sealed trait rgb
+    extends StObject
+       with ColorFormat
   @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
   
   @js.native
-  sealed trait rgba extends ColorFormat
+  sealed trait rgba
+    extends StObject
+       with ColorFormat
   @scala.inline
   def rgba: rgba = "rgba".asInstanceOf[rgba]
   
   @js.native
-  sealed trait right extends ColorPickerAlignOptions
+  sealed trait right
+    extends StObject
+       with ColorPickerAlignOptions
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -93,7 +114,9 @@ object bootstrapColorpickerStrings {
   def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait showPicker extends ColorPickerEvents
+  sealed trait showPicker
+    extends StObject
+       with ColorPickerEvents
   @scala.inline
   def showPicker: showPicker = "showPicker".asInstanceOf[showPicker]
   

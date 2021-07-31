@@ -3,58 +3,98 @@ package typings.arangodb
 import typings.arangodb.Foxx.Router
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphqlMod {
   
+  @scala.inline
+  def apply(options: GraphQLOptions): Router = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Router]
+  @scala.inline
+  def apply(options: GraphQLSchema): Router = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Router]
+  
   @JSImport("@arangodb/foxx/graphql", JSImport.Namespace)
   @js.native
-  def apply(options: GraphQLOptions): Router = js.native
-  @JSImport("@arangodb/foxx/graphql", JSImport.Namespace)
-  @js.native
-  def apply(options: GraphQLSchema): Router = js.native
+  val ^ : js.Any = js.native
   
   type GraphQLFormatErrorFunction = js.Function1[/* error */ js.Any, js.Any]
   
-  @js.native
   trait GraphQLModule extends StObject {
     
-    var Source: js.Any = js.native
+    var Source: js.Any
     
-    var execute: js.Any = js.native
+    var execute: js.Any
     
-    def formatError(error: js.Any): js.Any = js.native
+    def formatError(error: js.Any): js.Any
     @JSName("formatError")
-    var formatError_Original: GraphQLFormatErrorFunction = js.native
+    var formatError_Original: GraphQLFormatErrorFunction
     
-    var getOperationAST: js.Any = js.native
+    var getOperationAST: js.Any
     
-    var parse: js.Any = js.native
+    var parse: js.Any
     
-    var specifiedRules: js.Any = js.native
+    var specifiedRules: js.Any
     
-    var validate: js.Any = js.native
+    var validate: js.Any
+  }
+  object GraphQLModule {
+    
+    @scala.inline
+    def apply(
+      Source: js.Any,
+      execute: js.Any,
+      formatError: /* error */ js.Any => js.Any,
+      getOperationAST: js.Any,
+      parse: js.Any,
+      specifiedRules: js.Any,
+      validate: js.Any
+    ): GraphQLModule = {
+      val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], execute = execute.asInstanceOf[js.Any], formatError = js.Any.fromFunction1(formatError), getOperationAST = getOperationAST.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any], specifiedRules = specifiedRules.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GraphQLModule]
+    }
+    
+    @scala.inline
+    implicit class GraphQLModuleMutableBuilder[Self <: GraphQLModule] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setExecute(value: js.Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFormatError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetOperationAST(value: js.Any): Self = StObject.set(x, "getOperationAST", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParse(value: js.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSpecifiedRules(value: js.Any): Self = StObject.set(x, "specifiedRules", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setValidate(value: js.Any): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait GraphQLOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var formatError: js.UndefOr[GraphQLFormatErrorFunction] = js.native
+    var formatError: js.UndefOr[GraphQLFormatErrorFunction] = js.undefined
     
-    var graphiql: js.UndefOr[Boolean] = js.native
+    var graphiql: js.UndefOr[Boolean] = js.undefined
     
-    var graphql: js.UndefOr[GraphQLModule] = js.native
+    var graphql: js.UndefOr[GraphQLModule] = js.undefined
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
-    var rootValue: js.UndefOr[js.Object] = js.native
+    var rootValue: js.UndefOr[js.Object] = js.undefined
     
-    var schema: GraphQLSchema = js.native
+    var schema: GraphQLSchema
     
-    var validationRules: js.UndefOr[js.Array[_]] = js.native
+    var validationRules: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object GraphQLOptions {
     
@@ -107,7 +147,7 @@ object graphqlMod {
       def setSchema(value: GraphQLSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValidationRules(value: js.Array[_]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      def setValidationRules(value: js.Array[js.Any]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)

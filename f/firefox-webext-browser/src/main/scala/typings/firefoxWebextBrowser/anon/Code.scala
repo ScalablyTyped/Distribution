@@ -3,13 +3,13 @@ package typings.firefoxWebextBrowser.anon
 import typings.firefoxWebextBrowser.browser.extensionTypes.ExtensionFileOrCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Code extends ExtensionFileOrCode {
+trait Code
+  extends StObject
+     with ExtensionFileOrCode {
   
-  var code: String = js.native
+  var code: String
 }
 object Code {
   

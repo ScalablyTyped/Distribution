@@ -2,33 +2,31 @@ package typings.carbonType.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontWeightLetterSpacing extends StObject {
   
   @JSName("@media (min-width: 42rem)")
-  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontWeight = js.native
+  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: FontWeight
   
   @JSName("@media (min-width: 66rem)")
-  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: FontFamily = js.native
+  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: FontFamily
   
   @JSName("@media (min-width: 82rem)")
-  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: FontFamily = js.native
+  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: FontFamily
   
   @JSName("@media (min-width: 99rem)")
-  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontFamily = js.native
+  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: FontFamily
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var fontWeight: Double = js.native
+  var fontWeight: Double
   
-  var letterSpacing: Double = js.native
+  var letterSpacing: Double
   
-  var lineHeight: String = js.native
+  var lineHeight: String
 }
 object FontWeightLetterSpacing {
   

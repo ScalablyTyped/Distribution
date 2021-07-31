@@ -13,7 +13,6 @@ import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hapiStrings {
@@ -30,20 +29,24 @@ object hapiStrings {
   
   @js.native
   sealed trait DELETE
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
   sealed trait GET
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends HTTP_METHODS
+  sealed trait HEAD
+    extends StObject
+       with HTTP_METHODS
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
@@ -54,28 +57,32 @@ object hapiStrings {
   
   @js.native
   sealed trait OPTIONS
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
   sealed trait PATCH
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
   sealed trait POST
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait PUT
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
@@ -86,7 +93,9 @@ object hapiStrings {
   def Strict: Strict = "Strict".asInstanceOf[Strict]
   
   @js.native
-  sealed trait _empty extends ReferrerPolicy
+  sealed trait _empty
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -101,12 +110,16 @@ object hapiStrings {
   def annotated: annotated = "annotated".asInstanceOf[annotated]
   
   @js.native
-  sealed trait any extends RouteOptionsAccessEntity
+  sealed trait any
+    extends StObject
+       with RouteOptionsAccessEntity
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait app extends RouteOptionsAccessEntity
+  sealed trait app
+    extends StObject
+       with RouteOptionsAccessEntity
   @scala.inline
   def app: app = "app".asInstanceOf[app]
   
@@ -136,13 +149,16 @@ object hapiStrings {
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait data extends PayloadOutput
+  sealed trait data
+    extends StObject
+       with PayloadOutput
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait delete_
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
   @scala.inline
@@ -154,22 +170,30 @@ object hapiStrings {
   def deny: deny = "deny".asInstanceOf[deny]
   
   @js.native
-  sealed trait disconnect extends RequestEventType
+  sealed trait disconnect
+    extends StObject
+       with RequestEventType
   @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
-  sealed trait error extends _FailAction
+  sealed trait error
+    extends StObject
+       with _FailAction
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait file extends PayloadOutput
+  sealed trait file
+    extends StObject
+       with PayloadOutput
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait finish extends RequestEventType
+  sealed trait finish
+    extends StObject
+       with RequestEventType
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   
@@ -180,7 +204,8 @@ object hapiStrings {
   
   @js.native
   sealed trait get_
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
   @scala.inline
@@ -197,7 +222,9 @@ object hapiStrings {
   def handler: handler = "handler".asInstanceOf[handler]
   
   @js.native
-  sealed trait head_ extends HTTP_METHODS
+  sealed trait head_
+    extends StObject
+       with HTTP_METHODS
   @scala.inline
   def head_ : head_ = "head".asInstanceOf[head_]
   
@@ -217,7 +244,9 @@ object hapiStrings {
   def https: https = "https".asInstanceOf[https]
   
   @js.native
-  sealed trait ignore extends _FailAction
+  sealed trait ignore
+    extends StObject
+       with _FailAction
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   
@@ -237,17 +266,23 @@ object hapiStrings {
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
-  sealed trait log extends _FailAction
+  sealed trait log
+    extends StObject
+       with _FailAction
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait `no-referrer` extends ReferrerPolicy
+  sealed trait `no-referrer`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
   
   @js.native
-  sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
+  sealed trait `no-referrer-when-downgrade`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   
@@ -258,68 +293,84 @@ object hapiStrings {
   
   @js.native
   sealed trait onCredentials
-    extends RouteRequestExtType
+    extends StObject
+       with RouteRequestExtType
        with ServerRequestExtType
   @scala.inline
   def onCredentials: onCredentials = "onCredentials".asInstanceOf[onCredentials]
   
   @js.native
   sealed trait onPostAuth
-    extends RouteRequestExtType
+    extends StObject
+       with RouteRequestExtType
        with ServerRequestExtType
   @scala.inline
   def onPostAuth: onPostAuth = "onPostAuth".asInstanceOf[onPostAuth]
   
   @js.native
   sealed trait onPostHandler
-    extends RouteRequestExtType
+    extends StObject
+       with RouteRequestExtType
        with ServerRequestExtType
   @scala.inline
   def onPostHandler: onPostHandler = "onPostHandler".asInstanceOf[onPostHandler]
   
   @js.native
-  sealed trait onPostStart extends ServerExtType
+  sealed trait onPostStart
+    extends StObject
+       with ServerExtType
   @scala.inline
   def onPostStart: onPostStart = "onPostStart".asInstanceOf[onPostStart]
   
   @js.native
-  sealed trait onPostStop extends ServerExtType
+  sealed trait onPostStop
+    extends StObject
+       with ServerExtType
   @scala.inline
   def onPostStop: onPostStop = "onPostStop".asInstanceOf[onPostStop]
   
   @js.native
   sealed trait onPreAuth
-    extends RouteRequestExtType
+    extends StObject
+       with RouteRequestExtType
        with ServerRequestExtType
   @scala.inline
   def onPreAuth: onPreAuth = "onPreAuth".asInstanceOf[onPreAuth]
   
   @js.native
   sealed trait onPreHandler
-    extends RouteRequestExtType
+    extends StObject
+       with RouteRequestExtType
        with ServerRequestExtType
   @scala.inline
   def onPreHandler: onPreHandler = "onPreHandler".asInstanceOf[onPreHandler]
   
   @js.native
   sealed trait onPreResponse
-    extends RouteRequestExtType
+    extends StObject
+       with RouteRequestExtType
        with ServerRequestExtType
   @scala.inline
   def onPreResponse: onPreResponse = "onPreResponse".asInstanceOf[onPreResponse]
   
   @js.native
-  sealed trait onPreStart extends ServerExtType
+  sealed trait onPreStart
+    extends StObject
+       with ServerExtType
   @scala.inline
   def onPreStart: onPreStart = "onPreStart".asInstanceOf[onPreStart]
   
   @js.native
-  sealed trait onPreStop extends ServerExtType
+  sealed trait onPreStop
+    extends StObject
+       with ServerExtType
   @scala.inline
   def onPreStop: onPreStop = "onPreStop".asInstanceOf[onPreStop]
   
   @js.native
-  sealed trait onRequest extends ServerRequestExtType
+  sealed trait onRequest
+    extends StObject
+       with ServerRequestExtType
   @scala.inline
   def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
   
@@ -330,32 +381,40 @@ object hapiStrings {
   
   @js.native
   sealed trait options_
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
   @scala.inline
   def options_ : options_ = "options".asInstanceOf[options_]
   
   @js.native
-  sealed trait origin extends ReferrerPolicy
+  sealed trait origin
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
-  sealed trait `origin-when-cross-origin` extends ReferrerPolicy
+  sealed trait `origin-when-cross-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
   @js.native
   sealed trait patch_
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
   @scala.inline
   def patch_ : patch_ = "patch".asInstanceOf[patch_]
   
   @js.native
-  sealed trait peek extends RequestEventType
+  sealed trait peek
+    extends StObject
+       with RequestEventType
   @scala.inline
   def peek: peek = "peek".asInstanceOf[peek]
   
@@ -371,7 +430,8 @@ object hapiStrings {
   
   @js.native
   sealed trait post_
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
   @scala.inline
@@ -389,7 +449,8 @@ object hapiStrings {
   
   @js.native
   sealed trait put_
-    extends HTTP_METHODS
+    extends StObject
+       with HTTP_METHODS
        with HTTP_METHODS_PARTIAL
        with HTTP_METHODS_PARTIAL_LOWERCASE
   @scala.inline
@@ -416,7 +477,9 @@ object hapiStrings {
   def route: route = "route".asInstanceOf[route]
   
   @js.native
-  sealed trait `same-origin` extends ReferrerPolicy
+  sealed trait `same-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   
@@ -446,17 +509,23 @@ object hapiStrings {
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait stream extends PayloadOutput
+  sealed trait stream
+    extends StObject
+       with PayloadOutput
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
   
   @js.native
-  sealed trait `strict-origin` extends ReferrerPolicy
+  sealed trait `strict-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   
   @js.native
-  sealed trait `strict-origin-when-cross-origin` extends ReferrerPolicy
+  sealed trait `strict-origin-when-cross-origin`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
   
@@ -481,12 +550,16 @@ object hapiStrings {
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
-  sealed trait `unsafe-url` extends ReferrerPolicy
+  sealed trait `unsafe-url`
+    extends StObject
+       with ReferrerPolicy
   @scala.inline
   def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   
   @js.native
-  sealed trait user extends RouteOptionsAccessEntity
+  sealed trait user
+    extends StObject
+       with RouteOptionsAccessEntity
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   

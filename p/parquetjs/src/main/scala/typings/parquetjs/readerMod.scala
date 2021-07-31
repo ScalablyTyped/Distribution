@@ -11,7 +11,6 @@ import typings.parquetjs.schemaMod.ParquetSchema
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readerMod {
@@ -78,9 +77,12 @@ object readerMod {
   /* static members */
   object ParquetEnvelopeReader {
     
-    @JSImport("parquetjs/lib/reader", "ParquetEnvelopeReader.openFile")
+    @JSImport("parquetjs/lib/reader", "ParquetEnvelopeReader")
     @js.native
-    def openFile(filePath: String): ParquetReader = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openFile(filePath: String): ParquetReader = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[ParquetReader]
   }
   
   @JSImport("parquetjs/lib/reader", "ParquetReader")
@@ -108,8 +110,11 @@ object readerMod {
   /* static members */
   object ParquetReader {
     
-    @JSImport("parquetjs/lib/reader", "ParquetReader.openFile")
+    @JSImport("parquetjs/lib/reader", "ParquetReader")
     @js.native
-    def openFile(filePath: String): js.Promise[ParquetReader] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openFile(filePath: String): js.Promise[ParquetReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParquetReader]]
   }
 }

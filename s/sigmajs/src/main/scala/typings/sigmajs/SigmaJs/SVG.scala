@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sigmajs.anon.DictrenderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVG extends StObject {
   
-  var edges: DictrenderType = js.native
+  var edges: DictrenderType
   
-  var labels: StringDictionary[SVGObject[Node]] = js.native
+  var labels: StringDictionary[SVGObject[Node]]
   
-  var nodes: StringDictionary[SVGObject[Node]] = js.native
+  var nodes: StringDictionary[SVGObject[Node]]
 }
 object SVG {
   

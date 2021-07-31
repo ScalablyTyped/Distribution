@@ -3,25 +3,23 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`mouse-wheel`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewMouseWheelEvent extends StObject {
   
-  var deltaY: Double = js.native
+  var deltaY: Double
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var stopPropagation: js.Function = js.native
+  var stopPropagation: js.Function
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: `mouse-wheel` = js.native
+  var `type`: `mouse-wheel`
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ViewMouseWheelEvent {
   
@@ -31,12 +29,11 @@ object ViewMouseWheelEvent {
     native: js.Any,
     stopPropagation: js.Function,
     timestamp: Double,
-    `type`: `mouse-wheel`,
     x: Double,
     y: Double
   ): ViewMouseWheelEvent = {
     val __obj = js.Dynamic.literal(deltaY = deltaY.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mouse-wheel")
     __obj.asInstanceOf[ViewMouseWheelEvent]
   }
   

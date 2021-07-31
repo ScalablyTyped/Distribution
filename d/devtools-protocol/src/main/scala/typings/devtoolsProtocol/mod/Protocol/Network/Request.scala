@@ -11,72 +11,70 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.origin
 import typings.devtoolsProtocol.mod.Protocol.Security.MixedContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /**
     * True when the request has POST data. Note that postData might still be omitted when this flag is true when the data is too long.
     */
-  var hasPostData: js.UndefOr[Boolean] = js.native
+  var hasPostData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * HTTP request headers.
     */
-  var headers: Headers = js.native
+  var headers: Headers
   
   /**
     * Priority of the resource request at the time request is sent.
     */
-  var initialPriority: ResourcePriority = js.native
+  var initialPriority: ResourcePriority
   
   /**
     * Whether is loaded via link preload.
     */
-  var isLinkPreload: js.UndefOr[Boolean] = js.native
+  var isLinkPreload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * HTTP request method.
     */
-  var method: String = js.native
+  var method: String
   
   /**
     * The mixed content type of the request.
     */
-  var mixedContentType: js.UndefOr[MixedContentType] = js.native
+  var mixedContentType: js.UndefOr[MixedContentType] = js.undefined
   
   /**
     * HTTP POST request data.
     */
-  var postData: js.UndefOr[String] = js.native
+  var postData: js.UndefOr[String] = js.undefined
   
   /**
     * Request body elements. This will be converted from base64 to binary
     */
-  var postDataEntries: js.UndefOr[js.Array[PostDataEntry]] = js.native
+  var postDataEntries: js.UndefOr[js.Array[PostDataEntry]] = js.undefined
   
   /**
     * The referrer policy of the request, as defined in https://www.w3.org/TR/referrer-policy/ (RequestReferrerPolicy enum)
     */
-  var referrerPolicy: `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `origin-when-cross-origin` | `same-origin` | `strict-origin` | `strict-origin-when-cross-origin` = js.native
+  var referrerPolicy: `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `origin-when-cross-origin` | `same-origin` | `strict-origin` | `strict-origin-when-cross-origin`
   
   /**
     * Set for requests when the TrustToken API is used. Contains the parameters
     * passed by the developer (e.g. via "fetch") as understood by the backend.
     */
-  var trustTokenParams: js.UndefOr[TrustTokenParams] = js.native
+  var trustTokenParams: js.UndefOr[TrustTokenParams] = js.undefined
   
   /**
     * Request URL (without fragment).
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Fragment of the requested URL starting with hash, if present.
     */
-  var urlFragment: js.UndefOr[String] = js.native
+  var urlFragment: js.UndefOr[String] = js.undefined
 }
 object Request {
   

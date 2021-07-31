@@ -5,29 +5,29 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesCredentialsMod.Unmarshall
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetCredentialsForIdentityOutputMod {
   
-  @js.native
-  trait GetCredentialsForIdentityOutput extends OutputTypesUnion {
+  trait GetCredentialsForIdentityOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Credentials for the provided identity ID.</p>
       */
-    var Credentials: js.UndefOr[UnmarshalledCredentials] = js.native
+    var Credentials: js.UndefOr[UnmarshalledCredentials] = js.undefined
     
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: js.UndefOr[String] = js.native
+    var IdentityId: js.UndefOr[String] = js.undefined
   }
   object GetCredentialsForIdentityOutput {
     

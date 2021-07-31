@@ -2,7 +2,6 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,21 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The properties provided override the default pooling properties of the Oracledb object.
   * If an attribute is not set, or is null, the value of the related Oracledb property will be used.
   */
-@js.native
 trait PoolAttributes extends StObject {
   
   /**
     * Further statistics can be enabled by setting the createPool() poolAttrs parameter _enableStats to true.
     * Statistics can be output to the console by calling the pool._logStats() method.
     */
-  var _enableStats: js.UndefOr[Boolean] = js.native
+  var _enableStats: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An alias of connectionString. Only one of the properties should be used.
     * The Oracle database instance used by connections in the pool.
     * The string can be an Easy Connect string, or a Net Service Name from a tnsnames.ora file, or the name of a local Oracle database instance.
     */
-  var connectString: js.UndefOr[String] = js.native
+  var connectString: js.UndefOr[String] = js.undefined
   
   /**
     * An alias of connectString. Only one of the properties should be used.
@@ -33,7 +31,7 @@ trait PoolAttributes extends StObject {
     *
     * @since 2.1
     */
-  var connectionString: js.UndefOr[String] = js.native
+  var connectionString: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the name used for Edition-Based Redefinition by connections in the pool.
@@ -41,7 +39,7 @@ trait PoolAttributes extends StObject {
     *
     * @since 2.2
     */
-  var edition: js.UndefOr[String] = js.native
+  var edition: js.UndefOr[String] = js.undefined
   
   /**
     * Indicate whether Oracle Call Interface events mode should be enabled for this pool.
@@ -50,7 +48,7 @@ trait PoolAttributes extends StObject {
     * @default false
     * @since 2.2
     */
-  var events: js.UndefOr[Boolean] = js.native
+  var events: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate whether pooled connections should be established using External Authentication.
@@ -60,7 +58,7 @@ trait PoolAttributes extends StObject {
     * @default false
     * @since 0.5
     */
-  var externalAuth: js.UndefOr[Boolean] = js.native
+  var externalAuth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate whether connections in the pool all have the same credentials (a ‘homogeneous’ pool), or whether different credentials can be used (a ‘heterogeneous’ pool).
@@ -72,13 +70,13 @@ trait PoolAttributes extends StObject {
     * @default true
     * @since 2.3
     */
-  var homogeneous: js.UndefOr[Boolean] = js.native
+  var homogeneous: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The password of the database user used by connections in the pool. A password is also necessary if a proxy user is specified at pool creation.
     * If homogeneous is false, then the password may be omitted at pool creation but given in subsequent pool.getConnection() calls.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The poolAlias is an optional property that is used to explicitly add pools to the connection pool cache.
@@ -86,7 +84,7 @@ trait PoolAttributes extends StObject {
     *
     * @since 1.11
     */
-  var poolAlias: js.UndefOr[String] = js.native
+  var poolAlias: js.UndefOr[String] = js.undefined
   
   /**
     * The number of connections that are opened whenever a connection request exceeds the number of currently open connections.
@@ -94,7 +92,7 @@ trait PoolAttributes extends StObject {
     *
     * @default 1
     */
-  var poolIncrement: js.UndefOr[Double] = js.native
+  var poolIncrement: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of connections to which a connection pool can grow.
@@ -103,7 +101,7 @@ trait PoolAttributes extends StObject {
     *
     * @default 4
     */
-  var poolMax: js.UndefOr[Double] = js.native
+  var poolMax: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of connections per shard for connection pools. This ensures that the pool is balanced towards each shard.
@@ -111,7 +109,7 @@ trait PoolAttributes extends StObject {
     * 
     * @since 4.1
     */
-  var poolMaxPerShard: js.UndefOr[Double] = js.native
+  var poolMaxPerShard: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum number of connections a connection pool maintains, even when there is no activity to the target database.
@@ -119,7 +117,7 @@ trait PoolAttributes extends StObject {
     *
     * @default 0
     */
-  var poolMin: js.UndefOr[Double] = js.native
+  var poolMin: js.UndefOr[Double] = js.undefined
   
   /**
     * When a pool getConnection() is called and the connection has been idle in the pool for
@@ -128,7 +126,7 @@ trait PoolAttributes extends StObject {
     *
     * @default 60
     */
-  var poolPingInterval: js.UndefOr[Double] = js.native
+  var poolPingInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of seconds after which idle connections (unused in the pool) may be terminated.
@@ -137,7 +135,7 @@ trait PoolAttributes extends StObject {
     *
     * @default 60
     */
-  var poolTimeout: js.UndefOr[Double] = js.native
+  var poolTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of pending pool.getConnection() calls that can be queued.
@@ -151,7 +149,7 @@ trait PoolAttributes extends StObject {
     * 
     * @default 500
     */
-  var queueMax: js.UndefOr[Double] = js.native
+  var queueMax: js.UndefOr[Double] = js.undefined
   
   /**
     * This property was removed in node-oracledb 3.0 and queuing was always enabled.
@@ -159,7 +157,7 @@ trait PoolAttributes extends StObject {
     * 
     * @see https://oracle.github.io/node-oracledb/doc/api.html#connpoolqueue
     */
-  var queueRequests: js.UndefOr[Double] = js.native
+  var queueRequests: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of milliseconds after which connection requests waiting in the connection request queue are terminated.
@@ -168,7 +166,7 @@ trait PoolAttributes extends StObject {
     *
     * @default 60000
     */
-  var queueTimeout: js.UndefOr[Double] = js.native
+  var queueTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * When sessionCallback is a Node.js function, it will be invoked for each pool.getConnection() call that will return a newly created connection in the pool.
@@ -198,19 +196,19 @@ trait PoolAttributes extends StObject {
       /* callback */ js.Function1[/* error */ js.UndefOr[DBError], Unit], 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The number of statements to be cached in the statement cache of each connection in the pool.
     * This optional property overrides the oracledb.stmtCacheSize property.
     */
-  var stmtCacheSize: js.UndefOr[Double] = js.native
+  var stmtCacheSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The database user name for connections in the pool. Can be a simple user name or a proxy of the form alison[fred].
     * If homogeneous is false, then the pool user name and password need to be specified only if the application wants that user to proxy the users supplied in subsequent pool.getConnection() calls.
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object PoolAttributes {
   

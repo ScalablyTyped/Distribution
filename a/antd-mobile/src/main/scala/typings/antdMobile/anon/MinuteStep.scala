@@ -2,23 +2,21 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinuteStep extends StObject {
   
-  var minuteStep: Double = js.native
+  var minuteStep: Double
   
-  var mode: String = js.native
+  var mode: String
   
-  var pickerPrefixCls: String = js.native
+  var pickerPrefixCls: String
   
-  var popupPrefixCls: String = js.native
+  var popupPrefixCls: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var use12Hours: Boolean = js.native
+  var use12Hours: Boolean
 }
 object MinuteStep {
   

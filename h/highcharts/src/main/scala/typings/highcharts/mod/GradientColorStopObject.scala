@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GradientColorStopObject extends StObject {
   
-  var `0`: Double = js.native
+  var `0`: Double
   
-  var `1`: ColorString = js.native
+  var `1`: ColorString
   
-  var color: js.UndefOr[Color_] = js.native
+  var color: js.UndefOr[Color_] = js.undefined
 }
 object GradientColorStopObject {
   

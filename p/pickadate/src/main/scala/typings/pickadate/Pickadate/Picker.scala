@@ -14,7 +14,6 @@ import typings.pickadate.pickadateStrings.view
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -66,7 +65,7 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * disable on the picker.
     */
   @JSName("get")
-  def get_disable(thing: disable): js.Array[_] = js.native
+  def get_disable(thing: disable): js.Array[js.Any] = js.native
   /**
     * Returns the item object that is visually highlighted.
     */
@@ -144,9 +143,9 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * Set the properties, objects, and states to change the state of the picker.
     */
   def set(thing: String): TPickerObject = js.native
-  def set(thing: String, value: js.UndefOr[scala.Nothing], options: SetOptions): TPickerObject = js.native
   def set(thing: String, value: js.Any): TPickerObject = js.native
   def set(thing: String, value: js.Any, options: SetOptions): TPickerObject = js.native
+  def set(thing: String, value: Unit, options: SetOptions): TPickerObject = js.native
   def set(things: TOptions): TPickerObject = js.native
   def set(things: TOptions, options: SetOptions): TPickerObject = js.native
   

@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementAlongLineRandomSize
-  extends CIMMarkerPlacementAlongLine
+  extends StObject
+     with CIMMarkerPlacementAlongLine
      with CIMMarkerPlacementType {
   
   /**
@@ -15,22 +14,22 @@ trait CIMMarkerPlacementAlongLineRandomSize
     */
   var randomization: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementRandomlyAlongLineRandomization * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The starting value for generating a random number. This random number is used by the Randomization property to determine the marker shape.
     */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementAlongLineRandomSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize = js.native
+  var type_CIMMarkerPlacementAlongLineRandomSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize
 }
 object CIMMarkerPlacementAlongLineRandomSize {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineRandomSize): CIMMarkerPlacementAlongLineRandomSize = {
+  def apply(): CIMMarkerPlacementAlongLineRandomSize = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineRandomSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineRandomSize]
   }
   

@@ -1,9 +1,9 @@
 package typings.webix.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,7 +16,7 @@ trait DataProcessor extends StObject {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearValidation(): Unit = js.native
   
@@ -49,16 +49,16 @@ trait DataProcessor extends StObject {
   
   def reset(): Unit = js.native
   
-  def save(id: String): js.Promise[_] = js.native
-  def save(id: String, operation: js.UndefOr[scala.Nothing], obj: js.Any): js.Promise[_] = js.native
-  def save(id: String, operation: String): js.Promise[_] = js.native
-  def save(id: String, operation: String, obj: js.Any): js.Promise[_] = js.native
-  def save(id: Double): js.Promise[_] = js.native
-  def save(id: Double, operation: js.UndefOr[scala.Nothing], obj: js.Any): js.Promise[_] = js.native
-  def save(id: Double, operation: String): js.Promise[_] = js.native
-  def save(id: Double, operation: String, obj: js.Any): js.Promise[_] = js.native
+  def save(id: String): js.Promise[js.Any] = js.native
+  def save(id: String, operation: String): js.Promise[js.Any] = js.native
+  def save(id: String, operation: String, obj: js.Any): js.Promise[js.Any] = js.native
+  def save(id: String, operation: Unit, obj: js.Any): js.Promise[js.Any] = js.native
+  def save(id: Double): js.Promise[js.Any] = js.native
+  def save(id: Double, operation: String): js.Promise[js.Any] = js.native
+  def save(id: Double, operation: String, obj: js.Any): js.Promise[js.Any] = js.native
+  def save(id: Double, operation: Unit, obj: js.Any): js.Promise[js.Any] = js.native
   
-  def send(): js.Promise[_] = js.native
+  def send(): js.Promise[js.Any] = js.native
   
   def setItemState(itemId: String, state: Boolean): Unit = js.native
   def setItemState(itemId: Double, state: Boolean): Unit = js.native
@@ -67,4 +67,9 @@ trait DataProcessor extends StObject {
   
   def validate(): Boolean = js.native
   def validate(mode: js.Any): Boolean = js.native
+}
+object DataProcessor {
+  
+  @scala.inline
+  def apply: DataProcessor = ^.asInstanceOf[js.Dynamic].selectDynamic("DataProcessor").asInstanceOf[DataProcessor]
 }

@@ -3,32 +3,31 @@ package typings.extjs.Ext
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tip {
   
-  @js.native
   trait IQuickTip
-    extends typings.extjs.Ext.tip.IToolTip {
+    extends StObject
+       with typings.extjs.Ext.tip.IToolTip {
     
     /** [Method] Hides a visible tip or cancels an impending show for a particular element
       * @param el String/HTMLElement/Ext.Element The element that is the target of the tip or ID of the element.
       */
-    var cancelShow: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.native
+    var cancelShow: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var interceptTitles: js.UndefOr[Boolean] = js.native
+    var interceptTitles: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Configures a new quick tip instance and assigns it to a target element
       * @param config Object The config object with the following properties:
       */
-    var register: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var register: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Removes this quick tip from its element and destroys it
       * @param el String/HTMLElement/Ext.Element The element from which the quick tip is to be removed or ID of the element.
       */
-    var unregister: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.native
+    var unregister: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IQuickTip {
     
@@ -69,12 +68,12 @@ object tip {
   
   type IQuickTipManager = IBase
   
-  @js.native
   trait ITip
-    extends typings.extjs.Ext.panel.IPanel {
+    extends StObject
+       with typings.extjs.Ext.panel.IPanel {
     
     /** [Config Option] (Boolean) */
-    var constrainPosition: js.UndefOr[Boolean] = js.native
+    var constrainPosition: js.UndefOr[Boolean] = js.undefined
   }
   object ITip {
     
@@ -95,50 +94,50 @@ object tip {
     }
   }
   
-  @js.native
   trait IToolTip
-    extends typings.extjs.Ext.tip.ITip {
+    extends StObject
+       with typings.extjs.Ext.tip.ITip {
     
     /** [Config Option] (String) */
-    var anchor: js.UndefOr[java.lang.String] = js.native
+    var anchor: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var anchorOffset: js.UndefOr[Double] = js.native
+    var anchorOffset: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var anchorToTarget: js.UndefOr[Boolean] = js.native
+    var anchorToTarget: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var delegate: js.UndefOr[java.lang.String] = js.native
+    var delegate: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var dismissDelay: js.UndefOr[Double] = js.native
+    var dismissDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var hideDelay: js.UndefOr[Double] = js.native
+    var hideDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number[]) */
-    var mouseOffset: js.UndefOr[Array] = js.native
+    var mouseOffset: js.UndefOr[Array] = js.undefined
     
     /** [Method] Binds this ToolTip to the specified element
       * @param t String/HTMLElement/Ext.Element The Element, HtmlElement, or ID of an element to bind to
       */
-    var setTarget: js.UndefOr[js.Function1[/* t */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTarget: js.UndefOr[js.Function1[/* t */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var showDelay: js.UndefOr[Double] = js.native
+    var showDelay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (HTMLElement/Ext.Element/String) */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var trackMouse: js.UndefOr[Boolean] = js.native
+    var trackMouse: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (HTMLElement) */
-    var triggerElement: js.UndefOr[HTMLElement] = js.native
+    var triggerElement: js.UndefOr[HTMLElement] = js.undefined
   }
   object IToolTip {
     
@@ -231,6 +230,5 @@ object tip {
     }
   }
   
-  @js.native
   trait QuickTipManager extends StObject
 }

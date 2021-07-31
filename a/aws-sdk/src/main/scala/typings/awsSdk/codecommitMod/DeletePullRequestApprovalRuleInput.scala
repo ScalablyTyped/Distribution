@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePullRequestApprovalRuleInput extends StObject {
   
   /**
     * The name of the approval rule you want to delete.
     */
-  var approvalRuleName: ApprovalRuleName = js.native
+  var approvalRuleName: ApprovalRuleName
   
   /**
     * The system-generated ID of the pull request that contains the approval rule you want to delete.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
 }
 object DeletePullRequestApprovalRuleInput {
   

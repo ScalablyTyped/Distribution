@@ -2,10 +2,8 @@ package typings.officeJsPreview.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunOptions[T] extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait RunOptions[T] extends StObject {
     * The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up
     * by `context.sync()`.
     */
-  var previousObjects: js.UndefOr[ClientObject | js.Array[ClientObject] | ClientRequestContext] = js.native
+  var previousObjects: js.UndefOr[ClientObject | js.Array[ClientObject] | ClientRequestContext] = js.undefined
   
   /**
     * The URL of the remote workbook and the request headers to be sent.
     */
-  var session: js.UndefOr[RequestUrlAndHeaderInfo | T] = js.native
+  var session: js.UndefOr[RequestUrlAndHeaderInfo | T] = js.undefined
 }
 object RunOptions {
   
@@ -29,7 +27,7 @@ object RunOptions {
   }
   
   @scala.inline
-  implicit class RunOptionsMutableBuilder[Self <: RunOptions[_], T] (val x: Self with RunOptions[T]) extends AnyVal {
+  implicit class RunOptionsMutableBuilder[Self <: RunOptions[?], T] (val x: Self & RunOptions[T]) extends AnyVal {
     
     @scala.inline
     def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = StObject.set(x, "previousObjects", value.asInstanceOf[js.Any])

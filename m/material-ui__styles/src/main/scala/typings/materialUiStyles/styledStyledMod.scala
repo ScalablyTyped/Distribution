@@ -18,18 +18,20 @@ import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styledStyledMod {
   
-  @JSImport("@material-ui/styles/styled/styled", JSImport.Default)
+  @JSImport("@material-ui/styles/styled/styled", JSImport.Namespace)
   @js.native
-  def default[Component /* <: ElementType[_] */](Component: Component): ComponentCreator[Component] = js.native
+  val ^ : js.Any = js.native
   
-  type ComponentCreator[Component /* <: ElementType[_] */] = js.Function2[
+  @scala.inline
+  def default[Component /* <: ElementType[js.Any] */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
+  
+  type ComponentCreator[Component /* <: ElementType[js.Any] */] = js.Function2[
     /* styles */ CreateCSSProperties[ComponentPropsWithoutRef[Component]] | (js.Function1[
-      /* props */ ThemeTheme[DefaultTheme] with ComponentPropsWithoutRef[Component], 
+      /* props */ ThemeTheme[DefaultTheme] & ComponentPropsWithoutRef[Component], 
       CreateCSSProperties[ComponentPropsWithoutRef[Component]]
     ]), 
     /* options */ js.UndefOr[WithStylesOptions[DefaultTheme]], 
@@ -37,16 +39,15 @@ object styledStyledMod {
       (Omit[
         LibraryManagedAttributes[Component, ComponentProps[Component]], 
         classes | className
-      ]) with StyledComponentProps[root] with (Overwrite[ComponentPropsWithoutRef[Component], ClassName[DefaultTheme]])
+      ]) & StyledComponentProps[root] & (Overwrite[ComponentPropsWithoutRef[Component], ClassName[DefaultTheme]])
     ]
   ]
   
   type StyledComponent[P /* <: js.Object */] = js.Function1[/* props */ P, ReactElement | Null]
   
-  @js.native
   trait StyledProps extends StObject {
     
-    var className: String = js.native
+    var className: String
   }
   object StyledProps {
     

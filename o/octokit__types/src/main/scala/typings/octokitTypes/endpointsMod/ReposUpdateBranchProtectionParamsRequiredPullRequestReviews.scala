@@ -2,19 +2,17 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateBranchProtectionParamsRequiredPullRequestReviews extends StObject {
   
-  var dismiss_stale_reviews: js.UndefOr[Boolean] = js.native
+  var dismiss_stale_reviews: js.UndefOr[Boolean] = js.undefined
   
-  var dismissal_restrictions: js.UndefOr[ReposUpdateBranchProtectionParamsRequiredPullRequestReviewsDismissalRestrictions] = js.native
+  var dismissal_restrictions: js.UndefOr[ReposUpdateBranchProtectionParamsRequiredPullRequestReviewsDismissalRestrictions] = js.undefined
   
-  var require_code_owner_reviews: js.UndefOr[Boolean] = js.native
+  var require_code_owner_reviews: js.UndefOr[Boolean] = js.undefined
   
-  var required_approving_review_count: js.UndefOr[Double] = js.native
+  var required_approving_review_count: js.UndefOr[Double] = js.undefined
 }
 object ReposUpdateBranchProtectionParamsRequiredPullRequestReviews {
   

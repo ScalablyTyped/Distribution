@@ -5,15 +5,13 @@ import typings.systemLogger.mod.LoggerConfiguration
 import typings.systemLogger.mod.SourcesConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var source: js.UndefOr[SourcesConfiguration] = js.native
+    var source: js.UndefOr[SourcesConfiguration] = js.undefined
   }
   object `0` {
     
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: LoggerConfiguration = js.native
+    var config: LoggerConfiguration
     
-    var file: js.UndefOr[Source] = js.native
+    var file: js.UndefOr[Source] = js.undefined
     
-    var source: js.UndefOr[`0`] = js.native
+    var source: js.UndefOr[`0`] = js.undefined
   }
   object Config {
     
@@ -71,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var source: js.UndefOr[FileConfiguration] = js.native
+    var source: js.UndefOr[FileConfiguration] = js.undefined
   }
   object Source {
     

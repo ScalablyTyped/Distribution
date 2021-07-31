@@ -2,10 +2,8 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofinput extends StObject {
   
   ////////////////////
@@ -16,7 +14,7 @@ trait Typeofinput extends StObject {
     * Permissions:  "input"
     * @since Chrome 21.
     */
-  val ime: Typeofime = js.native
+  val ime: Typeofime
 }
 object Typeofinput {
   

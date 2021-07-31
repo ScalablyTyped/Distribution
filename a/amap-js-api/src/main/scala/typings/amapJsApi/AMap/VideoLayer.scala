@@ -3,11 +3,12 @@ package typings.amapJsApi.AMap
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoLayer extends MediaLayer[HTMLVideoElement] {
+trait VideoLayer
+  extends StObject
+     with MediaLayer[HTMLVideoElement] {
   
   /**
     * 返回Video的Url

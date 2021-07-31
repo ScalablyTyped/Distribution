@@ -16,7 +16,6 @@ import typings.reactNativeCalendarPicker.reactNativeCalendarPickerStrings.square
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,98 +37,97 @@ object mod {
     def resetSelections(): Unit = js.native
   }
   
-  @js.native
   trait CalendarPickerProps extends StObject {
     
-    var allowBackwardRangeSelect: js.UndefOr[Boolean] = js.native
+    var allowBackwardRangeSelect: js.UndefOr[Boolean] = js.undefined
     
-    var allowRangeSelection: js.UndefOr[Boolean] = js.native
+    var allowRangeSelection: js.UndefOr[Boolean] = js.undefined
     
-    var customDatesStyles: js.UndefOr[js.Array[CustomDateStyle] | CustomDatesStylesFunc] = js.native
+    var customDatesStyles: js.UndefOr[js.Array[CustomDateStyle] | CustomDatesStylesFunc] = js.undefined
     
-    var customDayHeaderStyles: js.UndefOr[CustomDayHeaderStylesFunc] = js.native
+    var customDayHeaderStyles: js.UndefOr[CustomDayHeaderStylesFunc] = js.undefined
     
-    var dayLabelsWrapper: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dayLabelsWrapper: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dayShape: js.UndefOr[circle | square] = js.native
+    var dayShape: js.UndefOr[circle | square] = js.undefined
     
-    var disabledDates: js.UndefOr[js.Array[Date] | DisabledDatesFunc] = js.native
+    var disabledDates: js.UndefOr[js.Array[Date] | DisabledDatesFunc] = js.undefined
     
-    var disabledDatesTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var disabledDatesTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var enableDateChange: js.UndefOr[Boolean] = js.native
+    var enableDateChange: js.UndefOr[Boolean] = js.undefined
     
-    var headingLevel: js.UndefOr[Double] = js.native
+    var headingLevel: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var initialDate: js.UndefOr[Date] = js.native
+    var initialDate: js.UndefOr[Date] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var maxRangeDuration: js.UndefOr[Double | js.Array[MaxDurationArrayItem]] = js.native
+    var maxRangeDuration: js.UndefOr[Double | js.Array[MaxDurationArrayItem]] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var minRangeDuration: js.UndefOr[Double | js.Array[MinDurationArrayItem]] = js.native
+    var minRangeDuration: js.UndefOr[Double | js.Array[MinDurationArrayItem]] = js.undefined
     
-    var monthYearHeaderWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var monthYearHeaderWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var months: js.UndefOr[js.Array[String]] = js.native
+    var months: js.UndefOr[js.Array[String]] = js.undefined
     
-    var nextComponent: js.UndefOr[ReactNode] = js.native
+    var nextComponent: js.UndefOr[ReactNode] = js.undefined
     
-    var nextTitle: js.UndefOr[String] = js.native
+    var nextTitle: js.UndefOr[String] = js.undefined
     
-    var nextTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var nextTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var onDateChange: js.UndefOr[DateChangedCallback] = js.native
+    var onDateChange: js.UndefOr[DateChangedCallback] = js.undefined
     
-    var onMonthChange: js.UndefOr[DateChangedCallback] = js.native
+    var onMonthChange: js.UndefOr[DateChangedCallback] = js.undefined
     
-    var previousComponent: js.UndefOr[ReactNode] = js.native
+    var previousComponent: js.UndefOr[ReactNode] = js.undefined
     
-    var previousTitle: js.UndefOr[String] = js.native
+    var previousTitle: js.UndefOr[String] = js.undefined
     
-    var previousTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var previousTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var restrictMonthNavigation: js.UndefOr[Boolean] = js.native
+    var restrictMonthNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.native
+    var scaleFactor: js.UndefOr[Double] = js.undefined
     
-    var scrollable: js.UndefOr[Boolean] = js.native
+    var scrollable: js.UndefOr[Boolean] = js.undefined
     
-    var selectedDayColor: js.UndefOr[String] = js.native
+    var selectedDayColor: js.UndefOr[String] = js.undefined
     
-    var selectedDayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var selectedDayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var selectedDayTextColor: js.UndefOr[String] = js.native
+    var selectedDayTextColor: js.UndefOr[String] = js.undefined
     
-    var selectedEndDate: js.UndefOr[Date] = js.native
+    var selectedEndDate: js.UndefOr[Date] = js.undefined
     
-    var selectedRangeEndStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var selectedRangeEndStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var selectedRangeStartStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var selectedRangeStartStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var selectedRangeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var selectedRangeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var selectedStartDate: js.UndefOr[Date] = js.native
+    var selectedStartDate: js.UndefOr[Date] = js.undefined
     
-    var showDayStragglers: js.UndefOr[Boolean] = js.native
+    var showDayStragglers: js.UndefOr[Boolean] = js.undefined
     
-    var startFromMonday: js.UndefOr[Boolean] = js.native
+    var startFromMonday: js.UndefOr[Boolean] = js.undefined
     
-    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var todayBackgroundColor: js.UndefOr[String] = js.native
+    var todayBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var todayTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var todayTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var weekdays: js.UndefOr[js.Array[String]] = js.native
+    var weekdays: js.UndefOr[js.Array[String]] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CalendarPickerProps {
     
@@ -471,16 +469,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomDateStyle extends StObject {
     
-    var containerStyle: js.UndefOr[ViewStyle] = js.native
+    var containerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var date: MomentParsable = js.native
+    var date: MomentParsable
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
   }
   object CustomDateStyle {
     
@@ -523,14 +520,13 @@ object mod {
   
   type CustomDayHeaderStylesFunc = js.Function1[/* date */ CustomDayHeaderStylesFuncDateArg, Style]
   
-  @js.native
   trait CustomDayHeaderStylesFuncDateArg extends StObject {
     
-    var dayOfWeek: Double = js.native
+    var dayOfWeek: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object CustomDayHeaderStylesFuncDateArg {
     
@@ -557,22 +553,21 @@ object mod {
   type DateChangedCallback = js.Function2[/* date */ Moment, /* type */ START_DATE | END_DATE, Unit]
   
   /* Inlined {[ key in '0' | '1' | '2' | '3' | '4' | '5' | '6' ]:? react-native.react-native.TextStyle} */
-  @js.native
   trait DayOfWeekStyle extends StObject {
     
-    var `0`: js.UndefOr[TextStyle] = js.native
+    var `0`: js.UndefOr[TextStyle] = js.undefined
     
-    var `1`: js.UndefOr[TextStyle] = js.native
+    var `1`: js.UndefOr[TextStyle] = js.undefined
     
-    var `2`: js.UndefOr[TextStyle] = js.native
+    var `2`: js.UndefOr[TextStyle] = js.undefined
     
-    var `3`: js.UndefOr[TextStyle] = js.native
+    var `3`: js.UndefOr[TextStyle] = js.undefined
     
-    var `4`: js.UndefOr[TextStyle] = js.native
+    var `4`: js.UndefOr[TextStyle] = js.undefined
     
-    var `5`: js.UndefOr[TextStyle] = js.native
+    var `5`: js.UndefOr[TextStyle] = js.undefined
     
-    var `6`: js.UndefOr[TextStyle] = js.native
+    var `6`: js.UndefOr[TextStyle] = js.undefined
   }
   object DayOfWeekStyle {
     
@@ -631,14 +626,13 @@ object mod {
   
   type DisabledDatesFunc = js.Function1[/* date */ Moment, Boolean]
   
-  @js.native
   trait HandleOnPressDayArg extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object HandleOnPressDayArg {
     
@@ -662,12 +656,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MaxDurationArrayItem extends StObject {
     
-    var date: MomentParsable = js.native
+    var date: MomentParsable
     
-    var maxDuration: Double = js.native
+    var maxDuration: Double
   }
   object MaxDurationArrayItem {
     
@@ -691,12 +684,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MinDurationArrayItem extends StObject {
     
-    var date: MomentParsable = js.native
+    var date: MomentParsable
     
-    var minDuration: Double = js.native
+    var minDuration: Double
   }
   object MinDurationArrayItem {
     

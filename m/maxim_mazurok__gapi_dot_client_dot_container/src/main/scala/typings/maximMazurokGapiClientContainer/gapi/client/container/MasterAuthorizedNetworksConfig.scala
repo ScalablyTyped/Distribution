@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MasterAuthorizedNetworksConfig extends StObject {
   
   /** cidr_blocks define up to 50 external networks that could access Kubernetes master through HTTPS. */
-  var cidrBlocks: js.UndefOr[js.Array[CidrBlock]] = js.native
+  var cidrBlocks: js.UndefOr[js.Array[CidrBlock]] = js.undefined
   
   /** Whether or not master authorized networks is enabled. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object MasterAuthorizedNetworksConfig {
   

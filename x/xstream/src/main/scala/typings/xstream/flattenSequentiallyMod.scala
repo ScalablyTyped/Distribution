@@ -1,32 +1,63 @@
 package typings.xstream
 
+import typings.xstream.mod.InternalListener
 import typings.xstream.mod.MemoryStream
 import typings.xstream.mod.Operator
 import typings.xstream.mod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flattenSequentiallyMod {
   
-  @JSImport("xstream/extra/flattenSequentially", JSImport.Default)
+  @JSImport("xstream/extra/flattenSequentially", JSImport.Namespace)
   @js.native
-  def default[T](ins: Stream[Stream[T] | MemoryStream[T]]): Stream[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](ins: Stream[Stream[T] | MemoryStream[T]]): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ins.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
   
   @JSImport("xstream/extra/flattenSequentially", "FlattenSeqOperator")
   @js.native
-  class FlattenSeqOperator[T] protected () extends Operator[Stream[T], T] {
+  class FlattenSeqOperator[T] protected ()
+    extends StObject
+       with Operator[Stream[T], T] {
     def this(ins: Stream[Stream[T]]) = this()
+    
+    /* CompleteClass */
+    override def _c(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _e(err: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _n(v: Stream[T]): Unit = js.native
+    
+    /* CompleteClass */
+    override def _start(listener: InternalListener[T]): Unit = js.native
+    /* CompleteClass */
+    override def _start(out: Stream[T]): Unit = js.native
+    
+    /* CompleteClass */
+    override def _stop(): Unit = js.native
     
     var active: js.Any = js.native
     
     var activeIL: js.Any = js.native
     
+    /* CompleteClass */
+    var ins: Stream[Stream[T]] = js.native
+    
     def less(): Unit = js.native
     
     var open: js.Any = js.native
     
+    /* CompleteClass */
+    var out: Stream[T] = js.native
+    
     var seq: js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
   }
 }

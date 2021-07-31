@@ -2,15 +2,13 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAppObjectPrototype[P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] extends StObject {
   
-  def createObject(qProp: P): js.Promise[O] = js.native
+  def createObject(qProp: P): js.Promise[O]
   
-  def createSessionObject(qProp: P): js.Promise[O] = js.native
+  def createSessionObject(qProp: P): js.Promise[O]
 }
 object IAppObjectPrototype {
   
@@ -21,7 +19,7 @@ object IAppObjectPrototype {
   }
   
   @scala.inline
-  implicit class IAppObjectPrototypeMutableBuilder[Self <: IAppObjectPrototype[_, _], P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] (val x: Self with (IAppObjectPrototype[P, O])) extends AnyVal {
+  implicit class IAppObjectPrototypeMutableBuilder[Self <: IAppObjectPrototype[?, ?], P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] (val x: Self & (IAppObjectPrototype[P, O])) extends AnyVal {
     
     @scala.inline
     def setCreateObject(value: P => js.Promise[O]): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))

@@ -7,7 +7,6 @@ import typings.typedoc.serializerMod.Serializer
 import typings.typedoc.serializersModelsMod.SourceReferenceWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceReferenceMod {
@@ -17,7 +16,7 @@ object sourceReferenceMod {
   class SourceReferenceContainerSerializer protected () extends SerializerComponent[SourceReferenceWrapper] {
     def this(owner: Serializer) = this()
     
-    def toObject(hasSourceReference: SourceReferenceWrapper, obj: PartialSourceReference): SourceReference = js.native
+    def toObject(hasRef: SourceReferenceWrapper, obj: PartialSourceReference): SourceReference = js.native
   }
   /* static members */
   object SourceReferenceContainerSerializer {

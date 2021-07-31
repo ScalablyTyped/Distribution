@@ -5,10 +5,13 @@ import typings.ol.esriJSONMod.default
 import typings.ol.iiifinfoMod.ImageInformationResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatMod {
+  
+  @JSImport("ol/format", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/format", "EsriJSON")
   @js.native
@@ -16,12 +19,10 @@ object formatMod {
     def this(opt_options: Options) = this()
   }
   
-  @JSImport("ol/format", "GML")
-  @js.native
-  def GML(): Unit = js.native
-  @JSImport("ol/format", "GML")
-  @js.native
-  def GML(opt_options: typings.ol.gmlbaseMod.Options): Unit = js.native
+  @scala.inline
+  def GML(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")().asInstanceOf[Unit]
+  @scala.inline
+  def GML(opt_options: typings.ol.gmlbaseMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GML")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("ol/format", "GPX")
   @js.native

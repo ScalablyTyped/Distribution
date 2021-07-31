@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface contains information on the screen source, see [DesktopCapturerSource](https://electronjs.org/docs/api/structures/desktop-capturer-source).
   *
   */
-@js.native
 trait DesktopCapturerSource extends StObject {
   
   /**
     * ID of the screen source.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * Name of the screen source.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * Thumbnail of the screen source. See [nativeImage](https://electronjs.org/docs/api/native-image#nativeimage) for supported types.
     */
-  val thumbnail: js.Any = js.native
+  val thumbnail: js.Any
 }
 object DesktopCapturerSource {
   

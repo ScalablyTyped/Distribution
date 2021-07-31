@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to a collection of spreadsheets.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
-trait XSpreadsheetDocument extends XInterface {
+trait XSpreadsheetDocument
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of sheets in the document.
     * @see com.sun.star.sheet.Spreadsheets
     */
-  val Sheets: XSpreadsheets = js.native
+  val Sheets: XSpreadsheets
   
   /**
     * returns the collection of sheets in the document.
     * @see com.sun.star.sheet.Spreadsheets
     */
-  def getSheets(): XSpreadsheets = js.native
+  def getSheets(): XSpreadsheets
 }
 object XSpreadsheetDocument {
   

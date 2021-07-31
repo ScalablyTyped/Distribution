@@ -2,19 +2,17 @@ package typings.reactNativeCommunityCliTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Postlink extends StObject {
   
-  var postlink: js.UndefOr[String] = js.native
+  var postlink: js.UndefOr[String] = js.undefined
   
-  var postunlink: js.UndefOr[String] = js.native
+  var postunlink: js.UndefOr[String] = js.undefined
   
-  var prelink: js.UndefOr[String] = js.native
+  var prelink: js.UndefOr[String] = js.undefined
   
-  var preunlink: js.UndefOr[String] = js.native
+  var preunlink: js.UndefOr[String] = js.undefined
 }
 object Postlink {
   

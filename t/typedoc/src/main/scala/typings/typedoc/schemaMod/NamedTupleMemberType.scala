@@ -2,21 +2,19 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.NamedTupleMember, 'type'> */
-@js.native
 trait NamedTupleMemberType extends StObject {
   
-  var element: ModelToObject[typings.typedoc.typesAbstractMod.Type] = js.native
+  var element: ModelToObject[typings.typedoc.typesAbstractMod.Type]
   
-  var isOptional: Boolean = js.native
+  var isOptional: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String) = js.native
+  var `type`: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)
 }
 object NamedTupleMemberType {
   

@@ -4,30 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.outputAstMod.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapUtilMod {
   
-  @JSImport("@angular/compiler/src/output/map_util", "mapEntry")
+  @JSImport("@angular/compiler/src/output/map_util", JSImport.Namespace)
   @js.native
-  def mapEntry(key: String, value: Expression): MapEntry_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/src/output/map_util", "mapLiteral")
-  @js.native
-  def mapLiteral(obj: StringDictionary[Expression]): Expression = js.native
-  @JSImport("@angular/compiler/src/output/map_util", "mapLiteral")
-  @js.native
-  def mapLiteral(obj: StringDictionary[Expression], quoted: Boolean): Expression = js.native
+  @scala.inline
+  def mapEntry(key: String, value: Expression): MapEntry_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mapEntry")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[MapEntry_]
   
-  @js.native
+  @scala.inline
+  def mapLiteral(obj: StringDictionary[Expression]): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLiteral")(obj.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  @scala.inline
+  def mapLiteral(obj: StringDictionary[Expression], quoted: Boolean): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("mapLiteral")(obj.asInstanceOf[js.Any], quoted.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  
   trait MapEntry_ extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var quoted: Boolean = js.native
+    var quoted: Boolean
     
-    var value: Expression = js.native
+    var value: Expression
   }
   object MapEntry_ {
     

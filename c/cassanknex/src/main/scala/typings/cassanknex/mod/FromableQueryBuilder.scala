@@ -2,13 +2,11 @@ package typings.cassanknex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FromableQueryBuilder extends StObject {
   
-  def from(table: String): this.type = js.native
+  def from(table: String): this.type
 }
 object FromableQueryBuilder {
   

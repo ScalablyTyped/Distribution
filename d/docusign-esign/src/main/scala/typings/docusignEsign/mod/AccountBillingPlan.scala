@@ -2,68 +2,66 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountBillingPlan extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var addOns: js.UndefOr[js.Array[AddOn]] = js.native
+  var addOns: js.UndefOr[js.Array[AddOn]] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var canCancelRenewal: js.UndefOr[String] = js.native
+  var canCancelRenewal: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that you can upgrade the account through the API. For GET methods, you must set the
     * `include_metadata` query parameter to **true** for this property to appear in the response.
     */
-  var canUpgrade: js.UndefOr[String] = js.native
+  var canUpgrade: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ISO currency code to use for the account.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
-  var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.native
+  var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.undefined
   
   /**
     * When set to **true**, customer support is provided as part of the account plan.
     */
-  var enableSupport: js.UndefOr[String] = js.native
+  var enableSupport: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seats (users) included in the plan.
     */
-  var includedSeats: js.UndefOr[String] = js.native
+  var includedSeats: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var incrementalSeats: js.UndefOr[String] = js.native
+  var incrementalSeats: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the account has been downgraded from a premium account type. Otherwise **false**.
     */
-  var isDowngrade: js.UndefOr[String] = js.native
+  var isDowngrade: js.UndefOr[String] = js.undefined
   
   /**
     * Any other percentage discount for the plan.
     *
     * Example: `"0.00"`
     */
-  var otherDiscountPercent: js.UndefOr[String] = js.native
+  var otherDiscountPercent: js.UndefOr[String] = js.undefined
   
   /**
     * The payment cycle associated with the plan. The possible values are:
     * - `Monthly`
     * - `Annually`
     */
-  var paymentCycle: js.UndefOr[String] = js.native
+  var paymentCycle: js.UndefOr[String] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -77,14 +75,14 @@ trait AccountBillingPlan extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The per-seat price associated with the plan.
     *
     * Example: `"456.0000"`
     */
-  var perSeatPrice: js.UndefOr[String] = js.native
+  var perSeatPrice: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the type of plan. Examples include:
@@ -94,17 +92,17 @@ trait AccountBillingPlan extends StObject {
     * - `enterprise`
     * - `free`
     */
-  var planClassification: js.UndefOr[String] = js.native
+  var planClassification: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var planFeatureSets: js.UndefOr[js.Array[FeatureSet]] = js.native
+  var planFeatureSets: js.UndefOr[js.Array[FeatureSet]] = js.undefined
   
   /**
     * DocuSign's id for the account plan.
     */
-  var planId: js.UndefOr[String] = js.native
+  var planId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the billing plan used for the account.
@@ -114,7 +112,7 @@ trait AccountBillingPlan extends StObject {
     * - `Personal - Annual`
     * - `Unlimited Envelope Subscription - Annual Billing`
     */
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
   
   /**
     * The renewal status for the account. Valid values are:
@@ -125,21 +123,21 @@ trait AccountBillingPlan extends StObject {
     *
     * **Note**: For GET methods, you must set the `include_metadata` query parameter to **true** for this property to appear in the response.
     */
-  var renewalStatus: js.UndefOr[String] = js.native
+  var renewalStatus: js.UndefOr[String] = js.undefined
   
-  var seatDiscounts: js.UndefOr[js.Array[SeatDiscount]] = js.native
+  var seatDiscounts: js.UndefOr[js.Array[SeatDiscount]] = js.undefined
   
   /**
     * The support incident fee charged for each support incident.
     * Example: `"$0.00"`
     */
-  var supportIncidentFee: js.UndefOr[String] = js.native
+  var supportIncidentFee: js.UndefOr[String] = js.undefined
   
   /**
     * The support plan fee charged for this plan.
     * Example: `"$0.00"`
     */
-  var supportPlanFee: js.UndefOr[String] = js.native
+  var supportPlanFee: js.UndefOr[String] = js.undefined
 }
 object AccountBillingPlan {
   

@@ -6,11 +6,12 @@ import typings.reactNative.mod.Picker
 import typings.reactNative.mod.PickerItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofPicker extends Instantiable1[/* props */ ReadonlyPickerProps, Picker] {
+trait TypeofPicker
+  extends StObject
+     with Instantiable1[/* props */ ReadonlyPickerProps, Picker] {
   
   var Item: ComponentType[PickerItemProps] = js.native
   

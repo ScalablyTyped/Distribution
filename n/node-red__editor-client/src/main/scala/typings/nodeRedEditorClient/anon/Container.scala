@@ -4,19 +4,17 @@ import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var container: JQuery[HTMLElement] = js.native
+  var container: JQuery[HTMLElement]
   
-  var folderTools: js.UndefOr[Boolean] = js.native
+  var folderTools: js.UndefOr[Boolean] = js.undefined
   
-  var onconfirm: js.UndefOr[js.Function1[/* item */ js.Object, Unit]] = js.native
+  var onconfirm: js.UndefOr[js.Function1[/* item */ js.Object, Unit]] = js.undefined
   
-  var onselect: js.UndefOr[js.Function1[/* item */ js.Object, Unit]] = js.native
+  var onselect: js.UndefOr[js.Function1[/* item */ js.Object, Unit]] = js.undefined
 }
 object Container {
   

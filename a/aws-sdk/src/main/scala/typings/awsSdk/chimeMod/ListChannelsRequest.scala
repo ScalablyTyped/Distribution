@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelsRequest extends StObject {
   
   /**
     * The ARN of the app instance.
     */
-  var AppInstanceArn: ChimeArn = js.native
+  var AppInstanceArn: ChimeArn
   
   /**
     * The maximum number of channels that you want to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested channels are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
   
   /**
     * The privacy setting. PUBLIC retrieves all the public channels. PRIVATE retrieves private channels. Only an app instance administrator can retrieve private channels.
     */
-  var Privacy: js.UndefOr[ChannelPrivacy] = js.native
+  var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
 }
 object ListChannelsRequest {
   

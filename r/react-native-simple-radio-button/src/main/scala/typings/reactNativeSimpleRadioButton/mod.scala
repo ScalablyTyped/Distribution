@@ -7,7 +7,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSimpleRadioButton.anon.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,16 +52,15 @@ object mod {
     def this(props: RadioButtonLabelProps, context: js.Any) = this()
   }
   
-  @js.native
   trait DefaultRadioFormProps extends StObject {
     
-    var accessibilityLabel: js.UndefOr[String] = js.native
+    var accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    var accessible: js.UndefOr[Boolean] = js.native
+    var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], _]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
   }
   object DefaultRadioFormProps {
     
@@ -88,7 +86,7 @@ object mod {
       def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
       
       @scala.inline
-      def setOnPress(value: /* val */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      def setOnPress(value: /* val */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
@@ -101,26 +99,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait RadioButtonInputProps extends DefaultRadioFormProps {
+  trait RadioButtonInputProps
+    extends StObject
+       with DefaultRadioFormProps {
     
-    var buttonInnerColor: js.UndefOr[String] = js.native
+    var buttonInnerColor: js.UndefOr[String] = js.undefined
     
-    var buttonOuterColor: js.UndefOr[String] = js.native
+    var buttonOuterColor: js.UndefOr[String] = js.undefined
     
-    var buttonOuterSize: js.UndefOr[Double] = js.native
+    var buttonOuterSize: js.UndefOr[Double] = js.undefined
     
-    var buttonSize: js.UndefOr[Double] = js.native
+    var buttonSize: js.UndefOr[Double] = js.undefined
     
-    var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var buttonWrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var buttonWrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
-    var obj: js.Object = js.native
+    var obj: js.Object
   }
   object RadioButtonInputProps {
     
@@ -189,18 +188,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait RadioButtonLabelProps extends DefaultRadioFormProps {
+  trait RadioButtonLabelProps
+    extends StObject
+       with DefaultRadioFormProps {
     
-    var index: Double = js.native
+    var index: Double
     
-    var labelHorizontal: js.UndefOr[Boolean] = js.native
+    var labelHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var labelStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var labelWrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var labelWrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var obj: js.Object = js.native
+    var obj: js.Object
   }
   object RadioButtonLabelProps {
     
@@ -245,24 +245,23 @@ object mod {
     }
   }
   
-  @js.native
   trait RadioButtonProps extends StObject {
     
-    var buttonColor: js.UndefOr[String] = js.native
+    var buttonColor: js.UndefOr[String] = js.undefined
     
-    var idSeparator: js.UndefOr[String] = js.native
+    var idSeparator: js.UndefOr[String] = js.undefined
     
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
-    var labelColor: js.UndefOr[String] = js.native
+    var labelColor: js.UndefOr[String] = js.undefined
     
-    var labelHorizontal: js.UndefOr[Boolean] = js.native
+    var labelHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var selectedButtonColor: js.UndefOr[String] = js.native
+    var selectedButtonColor: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var wrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var wrapStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object RadioButtonProps {
     
@@ -333,22 +332,23 @@ object mod {
   
   type RadioForm = Component[ReactNativeRadioFormProps, js.Object, js.Any]
   
-  @js.native
-  trait ReactNativeRadioFormProps extends DefaultRadioFormProps {
+  trait ReactNativeRadioFormProps
+    extends StObject
+       with DefaultRadioFormProps {
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var buttonColor: js.UndefOr[String] = js.native
+    var buttonColor: js.UndefOr[String] = js.undefined
     
-    var formHorizontal: js.UndefOr[Boolean] = js.native
+    var formHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var initial: js.UndefOr[Double] = js.native
+    var initial: js.UndefOr[Double] = js.undefined
     
-    var labelColor: js.UndefOr[String] = js.native
+    var labelColor: js.UndefOr[String] = js.undefined
     
-    var labelHorizontal: js.UndefOr[Boolean] = js.native
+    var labelHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var radio_props: js.UndefOr[js.Array[Label]] = js.native
+    var radio_props: js.UndefOr[js.Array[Label]] = js.undefined
   }
   object ReactNativeRadioFormProps {
     

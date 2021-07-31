@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrafeasV1beta1IntotoArtifact extends StObject {
   
-  var hashes: js.UndefOr[ArtifactHashes] = js.native
+  var hashes: js.UndefOr[ArtifactHashes] = js.undefined
   
-  var resourceUri: js.UndefOr[String] = js.native
+  var resourceUri: js.UndefOr[String] = js.undefined
 }
 object GrafeasV1beta1IntotoArtifact {
   

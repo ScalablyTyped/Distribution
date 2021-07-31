@@ -11,47 +11,45 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.`3`
 import typings.instagramPrivateApi.instagramPrivateApiStrings.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaConfigureToIgtvOptionsMod {
   
-  @js.native
   trait MediaConfigureToIgtvOptions extends StObject {
     
-    var audio_muted: js.UndefOr[Boolean] = js.native
+    var audio_muted: js.UndefOr[Boolean] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var clips: js.UndefOr[js.Array[LengthSourcetype]] = js.native
+    var clips: js.UndefOr[js.Array[LengthSourcetype]] = js.undefined
     
-    var date_time_original: js.UndefOr[String] = js.native
+    var date_time_original: js.UndefOr[String] = js.undefined
     
-    var device: js.UndefOr[Androidversion] = js.native
+    var device: js.UndefOr[Androidversion] = js.undefined
     
-    var extra: Sourceheight = js.native
+    var extra: Sourceheight
     
-    var feed_preview_crop: js.UndefOr[Cropbottom | String] = js.native
+    var feed_preview_crop: js.UndefOr[Cropbottom | String] = js.undefined
     
-    var filter_type: js.UndefOr[String] = js.native
+    var filter_type: js.UndefOr[String] = js.undefined
     
-    var igtv_share_preview_to_feed: js.UndefOr[`1` | `0`] = js.native
+    var igtv_share_preview_to_feed: js.UndefOr[`1` | `0`] = js.undefined
     
-    var length: Double = js.native
+    var length: Double
     
-    var media_folder: js.UndefOr[String] = js.native
+    var media_folder: js.UndefOr[String] = js.undefined
     
-    var poster_frame_index: js.UndefOr[Double] = js.native
+    var poster_frame_index: js.UndefOr[Double] = js.undefined
     
-    var retryContext: js.UndefOr[Numreupload] = js.native
+    var retryContext: js.UndefOr[Numreupload] = js.undefined
     
-    var source_type: js.UndefOr[`3` | `4`] = js.native
+    var source_type: js.UndefOr[`3` | `4`] = js.undefined
     
-    var timezone_offset: js.UndefOr[String] = js.native
+    var timezone_offset: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var upload_id: String = js.native
+    var upload_id: String
   }
   object MediaConfigureToIgtvOptions {
     

@@ -3,21 +3,19 @@ package typings.googleapis.anon
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FriendlyName extends StObject {
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var numericId: js.UndefOr[String] = js.native
+  var numericId: js.UndefOr[String] = js.undefined
   
-  var projectReference: js.UndefOr[SchemaProjectReference] = js.native
+  var projectReference: js.UndefOr[SchemaProjectReference] = js.undefined
 }
 object FriendlyName {
   

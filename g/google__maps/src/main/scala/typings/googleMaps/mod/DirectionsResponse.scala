@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsResponse extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DirectionsResponse extends StObject {
     * The array contains the available travel modes in the countries of the given set of waypoints.
     * This field is not returned if one or more of the waypoints are `via:` waypoints.
     */
-  var available_travel_modes: js.Array[String] = js.native
+  var available_travel_modes: js.Array[String]
   
   /**
     * contains an array with details about the geocoding of origin, destination and waypoints.
@@ -22,7 +20,7 @@ trait DirectionsResponse extends StObject {
     * This is because such waypoints are only reverse geocoded to obtain their representative address after a route has been found.
     * An empty JSON object will occupy the corresponding places in the `geocoded_waypoints` array.
     */
-  var geocoded_waypoints: js.Array[GeocodedWaypoint] = js.native
+  var geocoded_waypoints: js.Array[GeocodedWaypoint]
   
   /**
     * contains an array of routes from the origin to the destination.
@@ -36,10 +34,10 @@ trait DirectionsResponse extends StObject {
     * As well, the route also contains copyright and warning information which must be displayed to the user in addition to the
     * routing information.
     */
-  var routes: js.Array[DirectionsRoute] = js.native
+  var routes: js.Array[DirectionsRoute]
   
   /** contains metadata on the request. */
-  var status: DirectionsReponseStatus = js.native
+  var status: DirectionsReponseStatus
 }
 object DirectionsResponse {
   

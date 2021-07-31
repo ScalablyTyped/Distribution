@@ -7,64 +7,64 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.NONE
 import typings.tizenCommonWeb.tizenCommonWebStrings.STATIC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoEthernetNetwork extends SystemInfoProperty {
+trait SystemInfoEthernetNetwork
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents the cable status (ATTACHED or DETACHED) of the Ethernet interface.
     */
-  val cable: String = js.native
+  val cable: String
   
   /**
     * Represents the DNS address of this connection.
     *
     * It is written in 255.255.255.255 format.
     */
-  val dns: String = js.native
+  val dns: String
   
   /**
     * Represents the gateway of this connection.
     *
     * It is written in 255.255.255.255 format.
     */
-  val gateway: String = js.native
+  val gateway: String
   
   /**
     * Represents the IPv4 address of the Ethernet network.
     */
-  val ipAddress: String = js.native
+  val ipAddress: String
   
   /**
     * Represents this connection's IP configuration type.
     */
-  val ipMode: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED = js.native
+  val ipMode: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED
   
   /**
     * Represents the IPv6 address of the Ethernet network.
     */
-  val ipv6Address: String = js.native
+  val ipv6Address: String
   
   /**
     * Represents the MAC address of the Ethernet interface.
     *
     * It is written in MM:MM:MM:SS:SS:SS format.
     */
-  val macAddress: String = js.native
+  val macAddress: String
   
   /**
     * Represents the status (DEACTIVATED, DISCONNECTED or CONNECTED) of the Ethernet interface.
     */
-  val status: String = js.native
+  val status: String
   
   /**
     * Represents the subnet mask of this connection.
     *
     * It is written in 255.255.255.255 format.
     */
-  val subnetMask: String = js.native
+  val subnetMask: String
 }
 object SystemInfoEthernetNetwork {
   

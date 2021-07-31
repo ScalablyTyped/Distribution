@@ -10,10 +10,10 @@ SQLite client for Node.js applications with SQL-based migrations API written in 
 | ------------------ | :-------------: |
 | Full name          | sqlite |
 | Keywords           | sqlite, db, database, sql, migrate, migration, migrations, migrator, seed, seeds, seeder, node, node5, babel, es6, async, promise, promises, api |
-| # releases         | 29 |
-| # dependents       | 173 |
-| # downloads        | 1200890 |
-| # stars            | 23 |
+| # releases         | 31 |
+| # dependents       | 184 |
+| # downloads        | 1492632 |
+| # stars            | 24 |
 
 ## Links
 - [Homepage](https://github.com/kriasoft/node-sqlite#readme)

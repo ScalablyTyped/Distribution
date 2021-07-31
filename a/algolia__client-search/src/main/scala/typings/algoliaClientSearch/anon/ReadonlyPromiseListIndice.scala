@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.ListIndicesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.ListIndicesResponse>> */
-@js.native
 trait ReadonlyPromiseListIndice extends StObject {
   
-  def `catch`[TResult](): js.Promise[ListIndicesResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[ListIndicesResponse | TResult]
   
-  def `finally`(): js.Promise[ListIndicesResponse] = js.native
+  def `finally`(): js.Promise[ListIndicesResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseListIndice {
   

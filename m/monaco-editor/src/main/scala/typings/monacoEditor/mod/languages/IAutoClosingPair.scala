@@ -2,15 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAutoClosingPair extends StObject {
   
-  var close: String = js.native
+  var close: String
   
-  var open: String = js.native
+  var open: String
 }
 object IAutoClosingPair {
   

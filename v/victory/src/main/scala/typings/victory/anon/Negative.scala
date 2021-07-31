@@ -2,15 +2,13 @@ package typings.victory.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Negative extends StObject {
   
-  var negative: js.UndefOr[String] = js.native
+  var negative: js.UndefOr[String] = js.undefined
   
-  var positive: js.UndefOr[String] = js.native
+  var positive: js.UndefOr[String] = js.undefined
 }
 object Negative {
   

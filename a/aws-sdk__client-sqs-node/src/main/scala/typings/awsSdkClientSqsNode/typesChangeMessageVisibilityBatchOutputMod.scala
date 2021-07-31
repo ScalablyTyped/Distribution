@@ -6,29 +6,29 @@ import typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchResultEntryM
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesChangeMessageVisibilityBatchOutputMod {
   
-  @js.native
-  trait ChangeMessageVisibilityBatchOutput extends OutputTypesUnion {
+  trait ChangeMessageVisibilityBatchOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of <code> <a>BatchResultErrorEntry</a> </code> items.</p>
       */
-    var Failed: js.Array[UnmarshalledBatchResultErrorEntry] = js.native
+    var Failed: js.Array[UnmarshalledBatchResultErrorEntry]
     
     /**
       * <p>A list of <code> <a>ChangeMessageVisibilityBatchResultEntry</a> </code> items.</p>
       */
-    var Successful: js.Array[UnmarshalledChangeMessageVisibilityBatchResultEntry] = js.native
+    var Successful: js.Array[UnmarshalledChangeMessageVisibilityBatchResultEntry]
   }
   object ChangeMessageVisibilityBatchOutput {
     

@@ -14,138 +14,114 @@ import typings.std.NodeList
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(params: AnimeParams): AnimeInstance = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[AnimeInstance]
+  
   @JSImport("animejs", JSImport.Namespace)
   @js.native
-  def apply(params: AnimeParams): AnimeInstance = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("animejs", "bezier")
-  @js.native
-  def bezier(x1: Double, y1: Double, x2: Double, y2: Double): js.Function1[/* t */ Double, Double] = js.native
+  @scala.inline
+  def bezier(x1: Double, y1: Double, x2: Double, y2: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("bezier")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
   
-  @JSImport("animejs", "get")
-  @js.native
-  def get(targets: AnimeTarget, prop: String): String | Double = js.native
+  @scala.inline
+  def get(targets: AnimeTarget, prop: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(targets.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[String | Double]
   
-  @JSImport("animejs", "path")
-  @js.native
-  def path(): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: String): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: String, percent: Double): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: Null, percent: Double): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: HTMLElement): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: HTMLElement, percent: Double): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: SVGElement): js.Function1[/* prop */ String, El] = js.native
-  @JSImport("animejs", "path")
-  @js.native
-  def path(path: SVGElement, percent: Double): js.Function1[/* prop */ String, El] = js.native
+  @scala.inline
+  def path(): js.Function1[/* prop */ String, El] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: String): js.Function1[/* prop */ String, El] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: String, percent: Double): js.Function1[/* prop */ String, El] = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: Null, percent: Double): js.Function1[/* prop */ String, El] = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: HTMLElement): js.Function1[/* prop */ String, El] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: HTMLElement, percent: Double): js.Function1[/* prop */ String, El] = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: SVGElement): js.Function1[/* prop */ String, El] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prop */ String, El]]
+  @scala.inline
+  def path(path: SVGElement, percent: Double): js.Function1[/* prop */ String, El] = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prop */ String, El]]
   
-  @JSImport("animejs", "random")
-  @js.native
-  def random(min: Double, max: Double): Double = js.native
+  @scala.inline
+  def random(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("animejs", "remove")
-  @js.native
-  def remove(targets: js.Array[AnimeTarget]): Unit = js.native
-  @JSImport("animejs", "remove")
-  @js.native
-  def remove(targets: AnimeTarget): Unit = js.native
+  @scala.inline
+  def remove(targets: js.Array[AnimeTarget]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(targets.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(targets: AnimeTarget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(targets.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("animejs", "running")
   @js.native
   val running: js.Array[AnimeInstance] = js.native
   
-  @JSImport("animejs", "set")
-  @js.native
-  def set(targets: AnimeTarget, value: StringDictionary[js.Any]): Unit = js.native
+  @scala.inline
+  def set(targets: AnimeTarget, value: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(targets.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("animejs", "setDashoffset")
-  @js.native
-  def setDashoffset(): Double = js.native
-  @JSImport("animejs", "setDashoffset")
-  @js.native
-  def setDashoffset(el: HTMLElement): Double = js.native
-  @JSImport("animejs", "setDashoffset")
-  @js.native
-  def setDashoffset(el: SVGElement): Double = js.native
+  @scala.inline
+  def setDashoffset(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashoffset")().asInstanceOf[Double]
+  @scala.inline
+  def setDashoffset(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashoffset")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def setDashoffset(el: SVGElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashoffset")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("animejs", "speed")
   @js.native
   val speed: Double = js.native
   
-  @JSImport("animejs", "stagger")
-  @js.native
-  def stagger(value: String): FunctionBasedParameter = js.native
-  @JSImport("animejs", "stagger")
-  @js.native
-  def stagger(value: String, options: StaggerOptions): FunctionBasedParameter = js.native
-  @JSImport("animejs", "stagger")
-  @js.native
-  def stagger(value: js.Array[Double | String]): FunctionBasedParameter = js.native
-  @JSImport("animejs", "stagger")
-  @js.native
-  def stagger(value: js.Array[Double | String], options: StaggerOptions): FunctionBasedParameter = js.native
-  @JSImport("animejs", "stagger")
-  @js.native
-  def stagger(value: Double): FunctionBasedParameter = js.native
-  @JSImport("animejs", "stagger")
-  @js.native
-  def stagger(value: Double, options: StaggerOptions): FunctionBasedParameter = js.native
+  @scala.inline
+  def stagger(value: String): FunctionBasedParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionBasedParameter]
+  @scala.inline
+  def stagger(value: String, options: StaggerOptions): FunctionBasedParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionBasedParameter]
+  @scala.inline
+  def stagger(value: js.Array[Double | String]): FunctionBasedParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionBasedParameter]
+  @scala.inline
+  def stagger(value: js.Array[Double | String], options: StaggerOptions): FunctionBasedParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionBasedParameter]
+  @scala.inline
+  def stagger(value: Double): FunctionBasedParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionBasedParameter]
+  @scala.inline
+  def stagger(value: Double, options: StaggerOptions): FunctionBasedParameter = (^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionBasedParameter]
   
   // Timeline
-  @JSImport("animejs", "timeline")
-  @js.native
-  def timeline(): AnimeTimelineInstance = js.native
-  @JSImport("animejs", "timeline")
-  @js.native
-  def timeline(params: js.Array[AnimeInstance]): AnimeTimelineInstance = js.native
-  @JSImport("animejs", "timeline")
-  @js.native
-  def timeline(params: AnimeParams): AnimeTimelineInstance = js.native
+  @scala.inline
+  def timeline(): AnimeTimelineInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("timeline")().asInstanceOf[AnimeTimelineInstance]
+  @scala.inline
+  def timeline(params: js.Array[AnimeInstance]): AnimeTimelineInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("timeline")(params.asInstanceOf[js.Any]).asInstanceOf[AnimeTimelineInstance]
+  @scala.inline
+  def timeline(params: AnimeParams): AnimeTimelineInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("timeline")(params.asInstanceOf[js.Any]).asInstanceOf[AnimeTimelineInstance]
   
   // Helpers
   @JSImport("animejs", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait AnimeAnimParams
-    extends AnimeCallBack
+    extends StObject
+       with AnimeCallBack
        with /* AnyAnimatedProperty */ StringDictionary[js.Any] {
     
-    var delay: js.UndefOr[Double | FunctionBasedParameter] = js.native
+    var delay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
-    var duration: js.UndefOr[Double | FunctionBasedParameter] = js.native
+    var duration: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
     var easing: js.UndefOr[
         EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String])
-      ] = js.native
+      ] = js.undefined
     
-    var elasticity: js.UndefOr[Double | FunctionBasedParameter] = js.native
+    var elasticity: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
-    var endDelay: js.UndefOr[Double | FunctionBasedParameter] = js.native
+    var endDelay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
-    var keyframes: js.UndefOr[js.Array[AnimeAnimParams]] = js.native
+    var keyframes: js.UndefOr[js.Array[AnimeAnimParams]] = js.undefined
     
-    var round: js.UndefOr[Double | Boolean | FunctionBasedParameter] = js.native
+    var round: js.UndefOr[Double | Boolean | FunctionBasedParameter] = js.undefined
     
-    var targets: js.UndefOr[AnimeTarget | js.Array[AnimeTarget]] = js.native
+    var targets: js.UndefOr[AnimeTarget | js.Array[AnimeTarget]] = js.undefined
   }
   object AnimeAnimParams {
     
@@ -242,24 +218,23 @@ object mod {
     }
   }
   
-  @js.native
   trait AnimeCallBack extends StObject {
     
-    var begin: js.UndefOr[AnimeCallbackFunction] = js.native
+    var begin: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var change: js.UndefOr[AnimeCallbackFunction] = js.native
+    var change: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var changeBegin: js.UndefOr[AnimeCallbackFunction] = js.native
+    var changeBegin: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var changeComplete: js.UndefOr[AnimeCallbackFunction] = js.native
+    var changeComplete: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var complete: js.UndefOr[AnimeCallbackFunction] = js.native
+    var complete: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var loopBegin: js.UndefOr[AnimeCallbackFunction] = js.native
+    var loopBegin: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var loopComplete: js.UndefOr[AnimeCallbackFunction] = js.native
+    var loopComplete: js.UndefOr[AnimeCallbackFunction] = js.undefined
     
-    var update: js.UndefOr[AnimeCallbackFunction] = js.native
+    var update: js.UndefOr[AnimeCallbackFunction] = js.undefined
   }
   object AnimeCallBack {
     
@@ -324,52 +299,53 @@ object mod {
   
   type AnimeCallbackFunction = js.Function1[/* anim */ AnimeInstance, Unit]
   
-  @js.native
-  trait AnimeInstance extends AnimeCallBack {
+  trait AnimeInstance
+    extends StObject
+       with AnimeCallBack {
     
-    var animatables: js.Array[js.Object] = js.native
+    var animatables: js.Array[js.Object]
     
-    var animations: js.Array[js.Object] = js.native
+    var animations: js.Array[js.Object]
     
-    var autoplay: Boolean = js.native
+    var autoplay: Boolean
     
-    var began: Boolean = js.native
+    var began: Boolean
     
-    var completed: Boolean = js.native
+    var completed: Boolean
     
-    var currentTime: Double = js.native
+    var currentTime: Double
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var direction: String = js.native
+    var direction: String
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var finished: js.Promise[Unit] = js.native
+    var finished: js.Promise[Unit]
     
-    var loop: Double | Boolean = js.native
+    var loop: Double | Boolean
     
-    def pause(): Unit = js.native
+    def pause(): Unit
     
-    var paused: Boolean = js.native
+    var paused: Boolean
     
-    def play(): Unit = js.native
+    def play(): Unit
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var remaining: Double = js.native
+    var remaining: Double
     
-    def restart(): Unit = js.native
+    def restart(): Unit
     
-    def reverse(): Unit = js.native
+    def reverse(): Unit
     
-    var reversed: Boolean = js.native
+    var reversed: Boolean
     
-    def seek(time: Double): Unit = js.native
+    def seek(time: Double): Unit
     
-    def tick(time: Double): Unit = js.native
+    def tick(time: Double): Unit
     
-    var timelineOffset: Double = js.native
+    var timelineOffset: Double
   }
   object AnimeInstance {
     
@@ -479,14 +455,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait AnimeInstanceParams extends AnimeCallBack {
+  trait AnimeInstanceParams
+    extends StObject
+       with AnimeCallBack {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[DirectionOptions | String] = js.native
+    var direction: js.UndefOr[DirectionOptions | String] = js.undefined
     
-    var loop: js.UndefOr[Double | Boolean] = js.native
+    var loop: js.UndefOr[Double | Boolean] = js.undefined
   }
   object AnimeInstanceParams {
     
@@ -521,14 +498,28 @@ object mod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.animejs.mod.AnimeCallBack because Already inherited
-  - typings.animejs.mod.AnimeInstanceParams because var conflicts: begin, change, changeBegin, changeComplete, complete, loopBegin, loopComplete, update. Inlined loop, autoplay, direction */ @js.native
-  trait AnimeParams extends AnimeAnimParams {
+  - typings.animejs.mod.AnimeAnimParams because var conflicts: begin, change, changeBegin, changeComplete, complete, loopBegin, loopComplete, update. Inlined targets, duration, delay, endDelay, elasticity, round, keyframes, easing */ trait AnimeParams
+    extends StObject
+       with AnimeInstanceParams
+       with /* AnyAnimatedProperty */ StringDictionary[js.Any] {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var delay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
-    var direction: js.UndefOr[DirectionOptions | String] = js.native
+    var duration: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
     
-    var loop: js.UndefOr[Double | Boolean] = js.native
+    var easing: js.UndefOr[
+        EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String])
+      ] = js.undefined
+    
+    var elasticity: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
+    
+    var endDelay: js.UndefOr[Double | FunctionBasedParameter] = js.undefined
+    
+    var keyframes: js.UndefOr[js.Array[AnimeAnimParams]] = js.undefined
+    
+    var round: js.UndefOr[Double | Boolean | FunctionBasedParameter] = js.undefined
+    
+    var targets: js.UndefOr[AnimeTarget | js.Array[AnimeTarget]] = js.undefined
   }
   object AnimeParams {
     
@@ -542,32 +533,97 @@ object mod {
     implicit class AnimeParamsMutableBuilder[Self <: AnimeParams] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      def setDelay(value: Double | FunctionBasedParameter): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      def setDelayFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setDirection(value: DirectionOptions | String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      def setDuration(value: Double | FunctionBasedParameter): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLoop(value: Double | Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      def setDurationFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = StObject.set(x, "duration", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      
+      @scala.inline
+      def setEasing(
+        value: EasingOptions | String | CustomEasingFunction | (js.Function1[/* el */ HTMLElement, String])
+      ): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEasingFunction1(value: /* el */ HTMLElement => String): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEasingFunction3(
+        value: (/* el */ HTMLElement, /* index */ Double, /* length */ Double) => js.Function1[/* time */ Double, Double]
+      ): Self = StObject.set(x, "easing", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      
+      @scala.inline
+      def setElasticity(value: Double | FunctionBasedParameter): Self = StObject.set(x, "elasticity", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setElasticityFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = StObject.set(x, "elasticity", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setElasticityUndefined: Self = StObject.set(x, "elasticity", js.undefined)
+      
+      @scala.inline
+      def setEndDelay(value: Double | FunctionBasedParameter): Self = StObject.set(x, "endDelay", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEndDelayFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = StObject.set(x, "endDelay", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setEndDelayUndefined: Self = StObject.set(x, "endDelay", js.undefined)
+      
+      @scala.inline
+      def setKeyframes(value: js.Array[AnimeAnimParams]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKeyframesUndefined: Self = StObject.set(x, "keyframes", js.undefined)
+      
+      @scala.inline
+      def setKeyframesVarargs(value: AnimeAnimParams*): Self = StObject.set(x, "keyframes", js.Array(value :_*))
+      
+      @scala.inline
+      def setRound(value: Double | Boolean | FunctionBasedParameter): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRoundFunction3(value: (/* element */ HTMLElement, /* index */ Double, /* length */ Double) => Double): Self = StObject.set(x, "round", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      
+      @scala.inline
+      def setTargets(value: AnimeTarget | js.Array[AnimeTarget]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTargetsNull: Self = StObject.set(x, "targets", null)
+      
+      @scala.inline
+      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      
+      @scala.inline
+      def setTargetsVarargs(value: AnimeTarget*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
   
   // Allowing null is necessary because DOM queries may not return anything.
   type AnimeTarget = String | js.Object | HTMLElement | SVGElement | NodeList | Null
   
-  @js.native
-  trait AnimeTimelineAnimParams extends AnimeAnimParams {
+  trait AnimeTimelineAnimParams
+    extends StObject
+       with AnimeAnimParams {
     
-    var timelineOffset: Double | String | FunctionBasedParameter = js.native
+    var timelineOffset: Double | String | FunctionBasedParameter
   }
   object AnimeTimelineAnimParams {
     
@@ -589,7 +645,9 @@ object mod {
   }
   
   @js.native
-  trait AnimeTimelineInstance extends AnimeInstance {
+  trait AnimeTimelineInstance
+    extends StObject
+       with AnimeInstance {
     
     def add(params: AnimeAnimParams): AnimeTimelineInstance = js.native
     def add(params: AnimeAnimParams, timelineOffset: String): AnimeTimelineInstance = js.native
@@ -753,20 +811,19 @@ object mod {
   
   type FunctionBasedParameter = js.Function3[/* element */ HTMLElement, /* index */ Double, /* length */ Double, Double]
   
-  @js.native
   trait StaggerOptions extends StObject {
     
-    var axis: js.UndefOr[x | y] = js.native
+    var axis: js.UndefOr[x | y] = js.undefined
     
-    var direction: js.UndefOr[normal | reverse] = js.native
+    var direction: js.UndefOr[normal | reverse] = js.undefined
     
-    var easing: js.UndefOr[CustomEasingFunction | String | EasingOptions] = js.native
+    var easing: js.UndefOr[CustomEasingFunction | String | EasingOptions] = js.undefined
     
-    var from: js.UndefOr[first | last | center | Double] = js.native
+    var from: js.UndefOr[first | last | center | Double] = js.undefined
     
-    var grid: js.UndefOr[js.Array[Double]] = js.native
+    var grid: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var start: js.UndefOr[Double | String] = js.native
+    var start: js.UndefOr[Double | String] = js.undefined
   }
   object StaggerOptions {
     

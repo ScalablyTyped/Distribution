@@ -2,26 +2,24 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveEventObject extends StObject {
   
-  val FileName: String = js.native
+  val FileName: String
   
   @JSName("InfoPath.SaveEventObject_typekey")
-  var InfoPathDotSaveEventObject_typekey: SaveEventObject = js.native
+  var InfoPathDotSaveEventObject_typekey: SaveEventObject
   
-  var IsCancelled: Boolean = js.native
+  var IsCancelled: Boolean
   
-  val IsSaveAs: Boolean = js.native
+  val IsSaveAs: Boolean
   
-  def PerformSaveOperation(): Boolean = js.native
+  def PerformSaveOperation(): Boolean
   
-  var ReturnStatus: Boolean = js.native
+  var ReturnStatus: Boolean
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object SaveEventObject {
   

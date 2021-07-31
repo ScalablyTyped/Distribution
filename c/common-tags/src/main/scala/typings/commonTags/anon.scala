@@ -2,19 +2,17 @@ package typings.commonTags
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Conjunction extends StObject {
     
-    var conjunction: js.UndefOr[String] = js.native
+    var conjunction: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var serial: js.UndefOr[Boolean] = js.native
+    var serial: js.UndefOr[Boolean] = js.undefined
   }
   object Conjunction {
     

@@ -11,10 +11,13 @@ import typings.grammarkdown.typesMod.Range
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagnosticsMod {
+  
+  @JSImport("grammarkdown/dist/diagnostics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("grammarkdown/dist/diagnostics", "DiagnosticMessages")
   @js.native
@@ -45,7 +48,7 @@ object diagnosticsMod {
     
     def getDiagnostic(diagnosticIndex: Double): js.UndefOr[Diagnostic] = js.native
     
-    def getDiagnosticArguments(diagnosticIndex: Double): js.UndefOr[js.Array[_]] = js.native
+    def getDiagnosticArguments(diagnosticIndex: Double): js.UndefOr[js.Array[js.Any]] = js.native
     
     var getDiagnosticCode: js.Any = js.native
     
@@ -83,7 +86,7 @@ object diagnosticsMod {
     var getSortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Generator[js.UndefOr[DiagnosticInfo], Unit, _]] = js.native
+    var iterator: js.Function0[Generator[js.UndefOr[DiagnosticInfo], Unit, js.Any]] = js.native
     
     var lineOffsetMap: js.Any = js.native
     
@@ -91,7 +94,7 @@ object diagnosticsMod {
     
     var reportDiagnostic: js.Any = js.native
     
-    def reportNode(sourceFile: js.UndefOr[scala.Nothing], node: Node[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
+    def reportNode(sourceFile: Unit, node: Node[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
     def reportNode(sourceFile: SourceFile, node: Node[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
     
     def setSourceFile(sourceFile: SourceFile): Unit = js.native
@@ -108,7 +111,7 @@ object diagnosticsMod {
     
     var sourceFilesDiagnosticOffset: js.Any = js.native
     
-    def values(): Generator[js.UndefOr[DiagnosticInfo], Unit, _] = js.native
+    def values(): Generator[js.UndefOr[DiagnosticInfo], Unit, js.Any] = js.native
   }
   
   object Diagnostics {
@@ -116,6 +119,14 @@ object diagnosticsMod {
     @JSImport("grammarkdown/dist/diagnostics", "Diagnostics")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("grammarkdown/dist/diagnostics", "Diagnostics._0_expected")
+    @js.native
+    val `0Expected`: Diagnostic = js.native
+    
+    @JSImport("grammarkdown/dist/diagnostics", "Diagnostics._0_or_1_")
+    @js.native
+    val `0Or1`: Diagnostic = js.native
     
     @JSImport("grammarkdown/dist/diagnostics", "Diagnostics.Argument_0_cannot_be_specified_multiple_times")
     @js.native
@@ -242,14 +253,6 @@ object diagnosticsMod {
     
     @scala.inline
     def UnterminatedStringLiteral_=(x: Diagnostic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_string_literal")(x.asInstanceOf[js.Any])
-    
-    @JSImport("grammarkdown/dist/diagnostics", "Diagnostics._0_expected")
-    @js.native
-    val `0Expected`: Diagnostic = js.native
-    
-    @JSImport("grammarkdown/dist/diagnostics", "Diagnostics._0_or_1_")
-    @js.native
-    val `0Or1`: Diagnostic = js.native
   }
   
   @JSImport("grammarkdown/dist/diagnostics", "LineMap")
@@ -291,28 +294,23 @@ object diagnosticsMod {
     def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("grammarkdown/dist/diagnostics", "formatList")
-  @js.native
-  def formatList(tokens: js.Array[SyntaxKind | String]): String = js.native
+  @scala.inline
+  def formatList(tokens: js.Array[SyntaxKind | String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatList")(tokens.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("grammarkdown/dist/diagnostics", "formatString")
-  @js.native
-  def formatString(format: String): String = js.native
-  @JSImport("grammarkdown/dist/diagnostics", "formatString")
-  @js.native
-  def formatString(format: String, args: js.Any*): String = js.native
-  @JSImport("grammarkdown/dist/diagnostics", "formatString")
-  @js.native
-  def formatString(format: String, args: js.Array[_]): String = js.native
+  @scala.inline
+  def formatString(format: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatString")(format.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatString(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatString")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatString(format: String, args: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatString")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Diagnostic extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
     
-    var warning: js.UndefOr[Boolean] = js.native
+    var warning: js.UndefOr[Boolean] = js.undefined
   }
   object Diagnostic {
     
@@ -339,30 +337,29 @@ object diagnosticsMod {
     }
   }
   
-  @js.native
   trait DiagnosticInfo extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var diagnosticIndex: Double = js.native
+    var diagnosticIndex: Double
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var formattedMessage: js.UndefOr[String] = js.native
+    var formattedMessage: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var messageArguments: js.UndefOr[js.Array[_]] = js.native
+    var messageArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var node: js.UndefOr[Node[SyntaxKind]] = js.native
+    var node: js.UndefOr[Node[SyntaxKind]] = js.undefined
     
-    var pos: Double = js.native
+    var pos: Double
     
-    var range: js.UndefOr[Range] = js.native
+    var range: js.UndefOr[Range] = js.undefined
     
-    var sourceFile: js.UndefOr[SourceFile] = js.native
+    var sourceFile: js.UndefOr[SourceFile] = js.undefined
     
-    var warning: Boolean = js.native
+    var warning: Boolean
   }
   object DiagnosticInfo {
     
@@ -397,7 +394,7 @@ object diagnosticsMod {
       def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMessageArguments(value: js.Array[_]): Self = StObject.set(x, "messageArguments", value.asInstanceOf[js.Any])
+      def setMessageArguments(value: js.Array[js.Any]): Self = StObject.set(x, "messageArguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMessageArgumentsUndefined: Self = StObject.set(x, "messageArguments", js.undefined)

@@ -5,20 +5,18 @@ import typings.xlsx.xlsxNumbers.`1`
 import typings.xlsx.xlsxNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetProps extends StObject {
   
   /** Name of Document Module in associated VBA Project */
-  var CodeName: js.UndefOr[String] = js.native
+  var CodeName: js.UndefOr[String] = js.undefined
   
   /** Sheet Visibility (0=Visible 1=Hidden 2=VeryHidden) */
-  var Hidden: js.UndefOr[`0` | `1` | `2`] = js.native
+  var Hidden: js.UndefOr[`0` | `1` | `2`] = js.undefined
   
   /** Name of Sheet */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SheetProps {
   

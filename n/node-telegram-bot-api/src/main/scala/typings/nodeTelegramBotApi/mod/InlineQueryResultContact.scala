@@ -3,36 +3,35 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.contact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultContact
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var phone_number: String = js.native
+  var phone_number: String
   
-  var thumb_height: js.UndefOr[Double] = js.native
+  var thumb_height: js.UndefOr[Double] = js.undefined
   
-  var thumb_url: js.UndefOr[String] = js.native
+  var thumb_url: js.UndefOr[String] = js.undefined
   
-  var thumb_width: js.UndefOr[Double] = js.native
+  var thumb_width: js.UndefOr[Double] = js.undefined
   
-  var `type`: contact = js.native
+  var `type`: contact
 }
 object InlineQueryResultContact {
   
   @scala.inline
-  def apply(first_name: String, id: String, phone_number: String, `type`: contact): InlineQueryResultContact = {
+  def apply(first_name: String, id: String, phone_number: String): InlineQueryResultContact = {
     val __obj = js.Dynamic.literal(first_name = first_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("contact")
     __obj.asInstanceOf[InlineQueryResultContact]
   }
   

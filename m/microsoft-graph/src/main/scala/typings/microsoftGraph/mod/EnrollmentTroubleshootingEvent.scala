@@ -2,43 +2,43 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEvent {
+trait EnrollmentTroubleshootingEvent
+  extends StObject
+     with DeviceManagementTroubleshootingEvent {
   
   // Azure AD device identifier.
-  var deviceId: js.UndefOr[NullableOption[String]] = js.native
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser,
     * appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin,
     * windowsCoManagement.
     */
-  var enrollmentType: js.UndefOr[DeviceEnrollmentType] = js.native
+  var enrollmentType: js.UndefOr[DeviceEnrollmentType] = js.undefined
   
   /**
     * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation,
     * userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced,
     * clientDisconnected, userAbandonment.
     */
-  var failureCategory: js.UndefOr[DeviceEnrollmentFailureReason] = js.native
+  var failureCategory: js.UndefOr[DeviceEnrollmentFailureReason] = js.undefined
   
   // Detailed failure reason.
-  var failureReason: js.UndefOr[NullableOption[String]] = js.native
+  var failureReason: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device identifier created or collected by Intune.
-  var managedDeviceIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var managedDeviceIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Operating System.
-  var operatingSystem: js.UndefOr[NullableOption[String]] = js.native
+  var operatingSystem: js.UndefOr[NullableOption[String]] = js.undefined
   
   // OS Version.
-  var osVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Identifier for the user that tried to enroll the device.
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object EnrollmentTroubleshootingEvent {
   

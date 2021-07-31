@@ -12,7 +12,7 @@ Hooking Node.js stdout
 | Keywords           | stdout, stderr |
 | # releases         | 0 |
 | # dependents       | 71 |
-| # downloads        | 853588 |
+| # downloads        | 923485 |
 | # stars            | 1 |
 
 ## Links

@@ -6,72 +6,70 @@ import typings.reactMdTabs.reactMdTabsStrings.horizontal
 import typings.reactMdTabs.reactMdTabsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait TabConfig extends StObject {
     
     /**
       * The children to display in the tab. This is required and should normally
       * just be text or an icon.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to apply to the tab.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * An optional className to apply to the `<span>` surrounding the `children`
       * of the `Tab`. You _probably_ won't need to use this.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the `<span>` surrounding the `children` of
       * the `Tab`. You _probably_ won't need to use this.
       */
-    var contentStyle: js.UndefOr[CSSProperties] = js.native
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Boolean if the tab should be disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional icon to render in the `Tab` along with the normal text. If you
       * want to have an icon only tab, you should not use this prop and instead
       * just provide the icon as the tab's children.
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Boolean if the icon should appear after the text instead of before. When
       * the `stacked` prop is also enabled, it will cause the icon to appear below
       * the text instead of above.
       */
-    var iconAfter: js.UndefOr[Boolean] = js.native
+    var iconAfter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional id to use for the tab if the default generated ids are not to
       * your liking.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the icon and text should be stacked instead of rendered inline.
       * This is only valid when the `icon` prop has been provided.
       */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional style to apply to the tab.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TabConfig {
     
@@ -164,13 +162,12 @@ object typesMod {
     def right: typings.reactMdTabs.reactMdTabsStrings.right = "right".asInstanceOf[typings.reactMdTabs.reactMdTabsStrings.right]
   }
   
-  @js.native
   trait TabsConfig extends StObject {
     
     /**
       * The alignment to use for the tabs.
       */
-    var align: js.UndefOr[TabsAlignment] = js.native
+    var align: js.UndefOr[TabsAlignment] = js.undefined
     
     /**
       * Boolean if the tab should automatically become active when the user
@@ -178,21 +175,21 @@ object typesMod {
       *
       * @see https://www.w3.org/TR/wai-aria-practices/#kbd_selection_follows_focus
       */
-    var automatic: js.UndefOr[Boolean] = js.native
+    var automatic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The orientation for the tabs. When this is set to vertical, the keyboard
       * movement will be updated to use Up and Down arrow keys instead of Left and
       * Right.
       */
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * Boolean if you know that the tabs will be scrollable which will add some
       * additional padding before the first tab to help users know that there's
       * additional tabs.
       */
-    var padded: js.UndefOr[Boolean] = js.native
+    var padded: js.UndefOr[Boolean] = js.undefined
   }
   object TabsConfig {
     

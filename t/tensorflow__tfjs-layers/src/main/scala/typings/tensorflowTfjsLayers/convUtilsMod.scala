@@ -3,26 +3,24 @@ package typings.tensorflowTfjsLayers
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convUtilsMod {
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/conv_utils", "convOutputLength")
+  @JSImport("@tensorflow/tfjs-layers/dist/utils/conv_utils", JSImport.Namespace)
   @js.native
-  def convOutputLength(inputLength: Double, filterSize: Double, padding: PaddingMode, stride: Double): Double = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/conv_utils", "convOutputLength")
-  @js.native
-  def convOutputLength(inputLength: Double, filterSize: Double, padding: PaddingMode, stride: Double, dilation: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/conv_utils", "deconvLength")
-  @js.native
-  def deconvLength(dimSize: Double, strideSize: Double, kernelSize: Double, padding: PaddingMode): Double = js.native
+  @scala.inline
+  def convOutputLength(inputLength: Double, filterSize: Double, padding: PaddingMode, stride: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convOutputLength")(inputLength.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def convOutputLength(inputLength: Double, filterSize: Double, padding: PaddingMode, stride: Double, dilation: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convOutputLength")(inputLength.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/conv_utils", "normalizeArray")
-  @js.native
-  def normalizeArray(value: js.Array[Double], n: Double, name: String): js.Array[Double] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/conv_utils", "normalizeArray")
-  @js.native
-  def normalizeArray(value: Double, n: Double, name: String): js.Array[Double] = js.native
+  @scala.inline
+  def deconvLength(dimSize: Double, strideSize: Double, kernelSize: Double, padding: PaddingMode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("deconvLength")(dimSize.asInstanceOf[js.Any], strideSize.asInstanceOf[js.Any], kernelSize.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def normalizeArray(value: js.Array[Double], n: Double, name: String): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeArray")(value.asInstanceOf[js.Any], n.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def normalizeArray(value: Double, n: Double, name: String): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeArray")(value.asInstanceOf[js.Any], n.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

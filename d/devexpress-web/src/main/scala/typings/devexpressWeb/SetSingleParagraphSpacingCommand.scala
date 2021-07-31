@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to format a current paragraph with single line spacing.
   */
-@js.native
-trait SetSingleParagraphSpacingCommand extends CommandWithBooleanStateBase {
+trait SetSingleParagraphSpacingCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the SetSingleParagraphSpacingCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object SetSingleParagraphSpacingCommand {
   

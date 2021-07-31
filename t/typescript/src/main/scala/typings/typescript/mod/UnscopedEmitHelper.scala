@@ -3,23 +3,23 @@ package typings.typescript.mod
 import typings.typescript.typescriptBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnscopedEmitHelper extends EmitHelper {
+trait UnscopedEmitHelper
+  extends StObject
+     with EmitHelper {
   
   @JSName("scoped")
-  val scoped_UnscopedEmitHelper: `false` = js.native
+  val scoped_UnscopedEmitHelper: `false`
   
   @JSName("text")
-  val text_UnscopedEmitHelper: java.lang.String = js.native
+  val text_UnscopedEmitHelper: java.lang.String
 }
 object UnscopedEmitHelper {
   
   @scala.inline
-  def apply(name: java.lang.String, scoped: `false`, text: java.lang.String): UnscopedEmitHelper = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = scoped.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  def apply(name: java.lang.String, text: java.lang.String): UnscopedEmitHelper = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scoped = false, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnscopedEmitHelper]
   }
   

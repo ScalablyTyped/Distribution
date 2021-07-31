@@ -2,14 +2,14 @@ package typings.typescript.mod.server
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InvalidateCachedTypings extends ProjectResponse {
+trait InvalidateCachedTypings
+  extends StObject
+     with ProjectResponse {
   
   @JSName("kind")
-  val kind_InvalidateCachedTypings: ActionInvalidate = js.native
+  val kind_InvalidateCachedTypings: ActionInvalidate
 }
 object InvalidateCachedTypings {
   

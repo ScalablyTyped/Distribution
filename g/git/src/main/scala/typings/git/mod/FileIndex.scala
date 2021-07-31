@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "FileIndex")
@@ -34,5 +33,5 @@ class FileIndex protected () extends StObject {
   
   var sha_count: js.Any = js.native
   
-  def sort_commits(shaArray: js.Array[_]): js.Array[_] = js.native
+  def sort_commits(shaArray: js.Array[js.Any]): js.Array[js.Any] = js.native
 }

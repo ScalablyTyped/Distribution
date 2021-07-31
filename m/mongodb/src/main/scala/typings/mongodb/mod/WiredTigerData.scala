@@ -10,27 +10,25 @@ import typings.mongodb.anon.Compressedpagesread
 import typings.mongodb.anon.Dictionarymatches
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WiredTigerData extends StObject {
   
-  var LSM: Bloomfilterfalsepositives = js.native
+  var LSM: Bloomfilterfalsepositives
   
-  var `block-manager`: Allocationsrequiringfileextension = js.native
+  var `block-manager`: Allocationsrequiringfileextension
   
-  var btree: Btreecheckpointgeneration = js.native
+  var btree: Btreecheckpointgeneration
   
-  var cache: Bytescurrentlyinthecache = js.native
+  var cache: Bytescurrentlyinthecache
   
-  var cache_walk: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered = js.native
+  var cache_walk: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered
   
-  var compression: Compressedpagesread = js.native
+  var compression: Compressedpagesread
   
-  var cursor: Bulkloadedcursorinsertcalls = js.native
+  var cursor: Bulkloadedcursorinsertcalls
   
-  var reconciliation: Dictionarymatches = js.native
+  var reconciliation: Dictionarymatches
 }
 object WiredTigerData {
   

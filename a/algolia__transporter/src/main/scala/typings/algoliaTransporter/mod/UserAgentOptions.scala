@@ -2,21 +2,19 @@ package typings.algoliaTransporter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentOptions extends StObject {
   
   /**
     * The segment. Usually the integration name.
     */
-  val segment: String = js.native
+  val segment: String
   
   /**
     * The version. Usually the integration version.
     */
-  val version: js.UndefOr[String] = js.native
+  val version: js.UndefOr[String] = js.undefined
 }
 object UserAgentOptions {
   

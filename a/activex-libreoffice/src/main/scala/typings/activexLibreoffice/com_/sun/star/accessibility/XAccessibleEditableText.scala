@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * represented by that interface.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleEditableText extends XAccessibleText {
+trait XAccessibleEditableText
+  extends StObject
+     with XAccessibleText {
   
   /**
     * Copies the text range into the clipboard.
@@ -34,7 +34,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def cutText(nStartIndex: Double, nEndIndex: Double): Boolean = js.native
+  def cutText(nStartIndex: Double, nEndIndex: Double): Boolean
   
   /**
     * Deletes a range of text.
@@ -47,7 +47,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def deleteText(nStartIndex: Double, nEndIndex: Double): Boolean = js.native
+  def deleteText(nStartIndex: Double, nEndIndex: Double): Boolean
   
   /**
     * Inserts text at the specified position.
@@ -58,7 +58,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def insertText(sText: String, nIndex: Double): Boolean = js.native
+  def insertText(sText: String, nIndex: Double): Boolean
   
   /**
     * Pastes text from the clipboard.
@@ -69,7 +69,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     */
-  def pasteText(nIndex: Double): Boolean = js.native
+  def pasteText(nIndex: Double): Boolean
   
   /**
     * Replaces text.
@@ -85,7 +85,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def replaceText(nStartIndex: Double, nEndIndex: Double, sReplacement: String): Boolean = js.native
+  def replaceText(nStartIndex: Double, nEndIndex: Double, sReplacement: String): Boolean
   
   /**
     * Replaces the attributes of a text range by the given set of attributes.
@@ -100,7 +100,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def setAttributes(nStartIndex: Double, nEndIndex: Double, aAttributeSet: SeqEquiv[PropertyValue]): Boolean = js.native
+  def setAttributes(nStartIndex: Double, nEndIndex: Double, aAttributeSet: SeqEquiv[PropertyValue]): Boolean
   
   /**
     * Replaces the whole text with the given text.
@@ -109,7 +109,7 @@ trait XAccessibleEditableText extends XAccessibleText {
     * @param sText The new text that replaces the old text.
     * @returns Returns a flag that indicates whether the operation has been executed successfully.
     */
-  def setText(sText: String): Boolean = js.native
+  def setText(sText: String): Boolean
 }
 object XAccessibleEditableText {
   

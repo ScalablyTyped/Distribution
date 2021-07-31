@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushpinToolOptions extends StObject {
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var followText: js.UndefOr[String] = js.native
+  var followText: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[Icon] = js.native
+  var icon: js.UndefOr[Icon] = js.undefined
 }
 object PushpinToolOptions {
   

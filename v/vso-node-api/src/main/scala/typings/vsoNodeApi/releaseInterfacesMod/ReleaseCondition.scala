@@ -2,13 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReleaseCondition extends Condition {
+trait ReleaseCondition
+  extends StObject
+     with Condition {
   
-  var result: Boolean = js.native
+  var result: Boolean
 }
 object ReleaseCondition {
   

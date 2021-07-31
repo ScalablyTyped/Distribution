@@ -11,7 +11,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalHeaderMod {
@@ -23,18 +22,18 @@ object modalHeaderMod {
   
   type ModalHeader = Component[ModalHeaderProps, js.Object, js.Any]
   
-  @js.native
   trait ModalHeaderProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var toggle: js.UndefOr[MouseEventHandler[_]] = js.native
+    var toggle: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
     
-    var wrapTag: js.UndefOr[ElementType[_]] = js.native
+    var wrapTag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object ModalHeaderProps {
     
@@ -54,19 +53,19 @@ object modalHeaderMod {
       def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
       @scala.inline
-      def setToggle(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      def setToggle(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
       @scala.inline
-      def setWrapTag(value: ElementType[_]): Self = StObject.set(x, "wrapTag", value.asInstanceOf[js.Any])
+      def setWrapTag(value: ElementType[js.Any]): Self = StObject.set(x, "wrapTag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWrapTagUndefined: Self = StObject.set(x, "wrapTag", js.undefined)

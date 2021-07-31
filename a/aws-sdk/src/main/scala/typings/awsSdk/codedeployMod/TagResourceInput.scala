@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     *  The ARN of a resource, such as a CodeDeploy application or deployment group. 
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
   
   /**
     *  A list of tags that TagResource associates with a resource. The resource is identified by the ResourceArn input parameter. 
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceInput {
   

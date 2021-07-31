@@ -4,7 +4,6 @@ import typings.forgeApis.anon.Limit
 import typings.forgeApis.anon.XAdsRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "BucketsApi")

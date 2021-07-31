@@ -2,33 +2,31 @@ package typings.carbonType.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mediaminwidth66rem extends StObject {
   
   @JSName("@media (min-width: 42rem)")
-  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: LineHeight = js.native
+  var `@media Leftparenthesismin-widthColon 42remRightparenthesis`: LineHeight
   
   @JSName("@media (min-width: 66rem)")
-  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: LetterSpacing = js.native
+  var `@media Leftparenthesismin-widthColon 66remRightparenthesis`: LetterSpacing
   
   @JSName("@media (min-width: 82rem)")
-  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: LineHeight = js.native
+  var `@media Leftparenthesismin-widthColon 82remRightparenthesis`: LineHeight
   
   @JSName("@media (min-width: 99rem)")
-  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: LetterSpacing = js.native
+  var `@media Leftparenthesismin-widthColon 99remRightparenthesis`: LetterSpacing
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var fontWeight: Double = js.native
+  var fontWeight: Double
   
-  var letterSpacing: Double = js.native
+  var letterSpacing: Double
   
-  var lineHeight: String = js.native
+  var lineHeight: String
 }
 object Mediaminwidth66rem {
   

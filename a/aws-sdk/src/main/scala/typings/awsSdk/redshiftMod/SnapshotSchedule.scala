@@ -2,46 +2,44 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotSchedule extends StObject {
   
   /**
     * The number of clusters associated with the schedule.
     */
-  var AssociatedClusterCount: js.UndefOr[IntegerOptional] = js.native
+  var AssociatedClusterCount: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A list of clusters associated with the schedule. A maximum of 100 clusters is returned.
     */
-  var AssociatedClusters: js.UndefOr[AssociatedClusterList] = js.native
+  var AssociatedClusters: js.UndefOr[AssociatedClusterList] = js.undefined
   
   /**
     * 
     */
-  var NextInvocations: js.UndefOr[ScheduledSnapshotTimeList] = js.native
+  var NextInvocations: js.UndefOr[ScheduledSnapshotTimeList] = js.undefined
   
   /**
     * A list of ScheduleDefinitions.
     */
-  var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.native
+  var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.undefined
   
   /**
     * The description of the schedule.
     */
-  var ScheduleDescription: js.UndefOr[String] = js.native
+  var ScheduleDescription: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the schedule.
     */
-  var ScheduleIdentifier: js.UndefOr[String] = js.native
+  var ScheduleIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * An optional set of tags describing the schedule.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object SnapshotSchedule {
   

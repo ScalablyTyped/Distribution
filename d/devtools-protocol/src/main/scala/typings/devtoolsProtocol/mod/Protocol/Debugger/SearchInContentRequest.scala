@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchInContentRequest extends StObject {
   
   /**
     * If true, search is case sensitive.
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, treats string parameter as regex.
     */
-  var isRegex: js.UndefOr[Boolean] = js.native
+  var isRegex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String to search for.
     */
-  var query: String = js.native
+  var query: String
   
   /**
     * Id of the script to search in.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
 }
 object SearchInContentRequest {
   

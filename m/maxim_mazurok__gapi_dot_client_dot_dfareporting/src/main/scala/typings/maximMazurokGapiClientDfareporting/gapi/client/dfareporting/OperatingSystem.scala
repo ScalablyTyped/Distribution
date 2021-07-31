@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatingSystem extends StObject {
   
   /** DART ID of this operating system. This is the ID used for targeting. */
-  var dartId: js.UndefOr[String] = js.native
+  var dartId: js.UndefOr[String] = js.undefined
   
   /** Whether this operating system is for desktop. */
-  var desktop: js.UndefOr[Boolean] = js.native
+  var desktop: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#operatingSystem". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Whether this operating system is for mobile. */
-  var mobile: js.UndefOr[Boolean] = js.native
+  var mobile: js.UndefOr[Boolean] = js.undefined
   
   /** Name of this operating system. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object OperatingSystem {
   

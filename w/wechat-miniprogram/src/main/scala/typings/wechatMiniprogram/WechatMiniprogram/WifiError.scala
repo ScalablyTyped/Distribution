@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WifiError extends StObject {
   
   /** 错误码
@@ -25,7 +23,7 @@ trait WifiError extends StObject {
     * | 12009 | system config err | 系统运营商配置拒绝连接 Wi-Fi |
     * | 12010 | system internal error | 系统其他错误，需要在 errmsg 打印具体的错误原因 |
     * | 12011 | weapp in background | 应用在后台无法配置 Wi-Fi |
-    * | 12013 | wifi config may be expired | 系统保存的 Wi-Fi 配置过期，建议忘记 Wi-Fi 后重试 | */ var errCode: Double = js.native
+    * | 12013 | wifi config may be expired | 系统保存的 Wi-Fi 配置过期，建议忘记 Wi-Fi 后重试 | */ var errCode: Double
   
   /** 错误信息
     *
@@ -44,7 +42,7 @@ trait WifiError extends StObject {
     * | 12009 | system config err | 系统运营商配置拒绝连接 Wi-Fi |
     * | 12010 | system internal error | 系统其他错误，需要在 errmsg 打印具体的错误原因 |
     * | 12011 | weapp in background | 应用在后台无法配置 Wi-Fi |
-    * | 12013 | wifi config may be expired | 系统保存的 Wi-Fi 配置过期，建议忘记 Wi-Fi 后重试 | */ var errMsg: String = js.native
+    * | 12013 | wifi config may be expired | 系统保存的 Wi-Fi 配置过期，建议忘记 Wi-Fi 后重试 | */ var errMsg: String
 }
 object WifiError {
   

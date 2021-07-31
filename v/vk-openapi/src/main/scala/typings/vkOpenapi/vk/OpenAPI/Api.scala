@@ -3,15 +3,13 @@ package typings.vkOpenapi.vk.OpenAPI
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Api {
   
-  @js.native
   trait API extends StObject {
     
-    def call(method: String, params: ApiParams, cb: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+    def call(method: String, params: ApiParams, cb: js.Function1[/* response */ js.Any, Unit]): Unit
   }
   object API {
     
@@ -29,11 +27,11 @@ object Api {
     }
   }
   
-  @js.native
   trait ApiParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var v: String = js.native
+    var v: String
   }
   object ApiParams {
     

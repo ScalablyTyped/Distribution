@@ -2,30 +2,28 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildVersion extends StObject {
   
-  var commitMessage: String = js.native
+  var commitMessage: String
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var sourceBranch: String = js.native
+  var sourceBranch: String
   
   /**
     * PullRequestId or Commit Id for the Pull Request for which the release will publish status
     */
-  var sourcePullRequestId: String = js.native
+  var sourcePullRequestId: String
   
-  var sourceRepositoryId: String = js.native
+  var sourceRepositoryId: String
   
-  var sourceRepositoryType: String = js.native
+  var sourceRepositoryType: String
   
-  var sourceVersion: String = js.native
+  var sourceVersion: String
 }
 object BuildVersion {
   

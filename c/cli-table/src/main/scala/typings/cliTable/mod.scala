@@ -9,14 +9,15 @@ import typings.cliTable.cliTableStrings.right
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cli-table", JSImport.Namespace)
   @js.native
-  class ^ () extends Table {
+  class ^ ()
+    extends StObject
+       with Table {
     def this(options: PartialTableOptions) = this()
   }
   @JSImport("cli-table", JSImport.Namespace)
@@ -32,26 +33,26 @@ object mod {
   
   @js.native
   trait Table
-    extends Array[
+    extends StObject
+       with Array[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any
         ]
   
-  @js.native
   trait TableOptions extends StObject {
     
-    var chars: PartialRecordtoptopmidtop = js.native
+    var chars: PartialRecordtoptopmidtop
     
-    var colAligns: js.Array[left | middle | right] = js.native
+    var colAligns: js.Array[left | middle | right]
     
-    var colWidths: js.Array[Double] = js.native
+    var colWidths: js.Array[Double]
     
-    var colors: Boolean = js.native
+    var colors: Boolean
     
-    var head: js.Array[String] = js.native
+    var head: js.Array[String]
     
-    var style: Partialpaddingleftnumberp = js.native
+    var style: Partialpaddingleftnumberp
     
-    var truncate: String = js.native
+    var truncate: String
   }
   object TableOptions {
     

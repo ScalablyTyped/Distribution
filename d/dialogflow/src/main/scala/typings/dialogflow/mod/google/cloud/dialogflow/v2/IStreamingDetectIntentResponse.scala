@@ -4,30 +4,28 @@ import typings.dialogflow.mod.google.rpc.IStatus
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StreamingDetectIntentResponse. */
-@js.native
 trait IStreamingDetectIntentResponse extends StObject {
   
   /** StreamingDetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.native
+  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   
   /** StreamingDetectIntentResponse outputAudioConfig */
-  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.native
+  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   
   /** StreamingDetectIntentResponse queryResult */
-  var queryResult: js.UndefOr[IQueryResult | Null] = js.native
+  var queryResult: js.UndefOr[IQueryResult | Null] = js.undefined
   
   /** StreamingDetectIntentResponse recognitionResult */
-  var recognitionResult: js.UndefOr[IStreamingRecognitionResult | Null] = js.native
+  var recognitionResult: js.UndefOr[IStreamingRecognitionResult | Null] = js.undefined
   
   /** StreamingDetectIntentResponse responseId */
-  var responseId: js.UndefOr[String | Null] = js.native
+  var responseId: js.UndefOr[String | Null] = js.undefined
   
   /** StreamingDetectIntentResponse webhookStatus */
-  var webhookStatus: js.UndefOr[IStatus | Null] = js.native
+  var webhookStatus: js.UndefOr[IStatus | Null] = js.undefined
 }
 object IStreamingDetectIntentResponse {
   

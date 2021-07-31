@@ -2,15 +2,13 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusResponse extends StObject {
   
-  var authResponse: AuthResponse = js.native
+  var authResponse: AuthResponse
   
-  var status: LoginStatus = js.native
+  var status: LoginStatus
 }
 object StatusResponse {
   

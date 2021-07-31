@@ -2,21 +2,19 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
-  var anchor: Position = js.native
+  var anchor: Position
   
-  def empty(): Boolean = js.native
+  def empty(): Boolean
   
-  def from(): Position = js.native
+  def from(): Position
   
-  var head: Position = js.native
+  var head: Position
   
-  def to(): Position = js.native
+  def to(): Position
 }
 object Range {
   

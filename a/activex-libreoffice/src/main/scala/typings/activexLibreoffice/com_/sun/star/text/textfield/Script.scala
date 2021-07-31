@@ -12,24 +12,24 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a text field .
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Script extends TextField_ {
+trait Script
+  extends StObject
+     with TextField_ {
   
   /** contains the script text or a {@link URL} that points to a script depending on the URLContent property. */
-  var Content: String = js.native
+  var Content: String
   
   /** contains the name of the script type (i.e. JavaScript) */
-  var ScriptType: String = js.native
+  var ScriptType: String
   
   /** determines whether the property Content contains a {@link URL} or a script. */
-  var URLContent: Boolean = js.native
+  var URLContent: Boolean
 }
 object Script {
   

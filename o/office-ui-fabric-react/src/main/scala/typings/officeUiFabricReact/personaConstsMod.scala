@@ -6,10 +6,13 @@ import typings.officeUiFabricReact.personaTypesMod.PersonaPresence
 import typings.officeUiFabricReact.personaTypesMod.PersonaSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object personaConstsMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaConsts", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object personaPresenceSize {
     
@@ -100,11 +103,9 @@ object personaConstsMod {
     val size8: /* "20px" */ String = js.native
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaConsts", "presenceBoolean")
-  @js.native
-  def presenceBoolean(presence: PersonaPresence): IsAvailable = js.native
+  @scala.inline
+  def presenceBoolean(presence: PersonaPresence): IsAvailable = ^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[IsAvailable]
   
-  @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaConsts", "sizeBoolean")
-  @js.native
-  def sizeBoolean(size: PersonaSize): IsSize10 = js.native
+  @scala.inline
+  def sizeBoolean(size: PersonaSize): IsSize10 = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[IsSize10]
 }

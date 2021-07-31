@@ -10,7 +10,6 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseSelectedItemsListMod {
@@ -26,11 +25,14 @@ object baseSelectedItemsListMod {
     def UNSAFE_componentWillReceiveProps_MBaseSelectedItemsList(newProps: P): Unit = js.native
     
     @JSName("UNSAFE_componentWillUpdate")
-    def UNSAFE_componentWillUpdate_MBaseSelectedItemsList(newProps: P, newState: IBaseSelectedItemsListState[_]): Unit = js.native
+    def UNSAFE_componentWillUpdate_MBaseSelectedItemsList(newProps: P, newState: IBaseSelectedItemsListState[js.Any]): Unit = js.native
     
     var _canRemoveItem: js.Any = js.native
     
     var _onSelectedItemsUpdated: js.Any = js.native
+    
+    /* CompleteClass */
+    override def addItems(items: js.Array[T]): Unit = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MBaseSelectedItemsList(): Unit = js.native
@@ -57,7 +59,7 @@ object baseSelectedItemsListMod {
     
     def removeItemAt(index: Double): Unit = js.native
     
-    def removeItems(itemsToRemove: js.Array[_]): Unit = js.native
+    def removeItems(itemsToRemove: js.Array[js.Any]): Unit = js.native
     
     def removeSelectedItems(): Unit = js.native
     
@@ -79,10 +81,9 @@ object baseSelectedItemsListMod {
     def updateItems(items: js.Array[T], focusIndex: Double): Unit = js.native
   }
   
-  @js.native
   trait IBaseSelectedItemsListState[T] extends StObject {
     
-    var items: js.Array[T] = js.native
+    var items: js.Array[T]
   }
   object IBaseSelectedItemsListState {
     
@@ -93,7 +94,7 @@ object baseSelectedItemsListMod {
     }
     
     @scala.inline
-    implicit class IBaseSelectedItemsListStateMutableBuilder[Self <: IBaseSelectedItemsListState[_], T] (val x: Self with IBaseSelectedItemsListState[T]) extends AnyVal {
+    implicit class IBaseSelectedItemsListStateMutableBuilder[Self <: IBaseSelectedItemsListState[?], T] (val x: Self & IBaseSelectedItemsListState[T]) extends AnyVal {
       
       @scala.inline
       def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])

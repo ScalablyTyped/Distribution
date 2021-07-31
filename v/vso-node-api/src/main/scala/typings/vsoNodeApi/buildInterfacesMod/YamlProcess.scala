@@ -2,23 +2,23 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait YamlProcess extends BuildProcess {
+trait YamlProcess
+  extends StObject
+     with BuildProcess {
   
-  var errors: js.Array[String] = js.native
+  var errors: js.Array[String]
   
   /**
     * The resources used by the build definition.
     */
-  var resources: BuildProcessResources = js.native
+  var resources: BuildProcessResources
   
   /**
     * The YAML filename.
     */
-  var yamlFilename: String = js.native
+  var yamlFilename: String
 }
 object YamlProcess {
   

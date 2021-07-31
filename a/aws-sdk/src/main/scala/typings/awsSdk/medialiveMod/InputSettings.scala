@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputSettings extends StObject {
   
   /**
     * Used to select the audio stream to decode for inputs that have multiple available.
     */
-  var AudioSelectors: js.UndefOr[listOfAudioSelector] = js.native
+  var AudioSelectors: js.UndefOr[listOfAudioSelector] = js.undefined
   
   /**
     * Used to select the caption input to use for inputs that have multiple available.
     */
-  var CaptionSelectors: js.UndefOr[listOfCaptionSelector] = js.native
+  var CaptionSelectors: js.UndefOr[listOfCaptionSelector] = js.undefined
   
   /**
     * Enable or disable the deblock filter when filtering.
     */
-  var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.native
+  var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
   
   /**
     * Enable or disable the denoise filter when filtering.
     */
-  var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.native
+  var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
   
   /**
     * Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest).
     */
-  var FilterStrength: js.UndefOr[integerMin1Max5] = js.native
+  var FilterStrength: js.UndefOr[integerMin1Max5] = js.undefined
   
   /**
     * Turns on the filter for this input. MPEG-2 inputs have the deblocking filter enabled by default.
@@ -39,29 +37,29 @@ trait InputSettings extends StObject {
   2) disabled - no filtering will be applied to the input
   3) forced - filtering will be applied regardless of input type
     */
-  var InputFilter: js.UndefOr[typings.awsSdk.medialiveMod.InputFilter] = js.native
+  var InputFilter: js.UndefOr[typings.awsSdk.medialiveMod.InputFilter] = js.undefined
   
   /**
     * Input settings.
     */
-  var NetworkInputSettings: js.UndefOr[typings.awsSdk.medialiveMod.NetworkInputSettings] = js.native
+  var NetworkInputSettings: js.UndefOr[typings.awsSdk.medialiveMod.NetworkInputSettings] = js.undefined
   
   /**
     * Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in this input. Applicable data types are captions, timecode, AFD, and SCTE-104 messages.
   - PREFER: Extract from SMPTE-2038 if present in this input, otherwise extract from another source (if any).
   - IGNORE: Never extract any ancillary data from SMPTE-2038.
     */
-  var Smpte2038DataPreference: js.UndefOr[typings.awsSdk.medialiveMod.Smpte2038DataPreference] = js.native
+  var Smpte2038DataPreference: js.UndefOr[typings.awsSdk.medialiveMod.Smpte2038DataPreference] = js.undefined
   
   /**
     * Loop input if it is a file. This allows a file input to be streamed indefinitely.
     */
-  var SourceEndBehavior: js.UndefOr[InputSourceEndBehavior] = js.native
+  var SourceEndBehavior: js.UndefOr[InputSourceEndBehavior] = js.undefined
   
   /**
     * Informs which video elementary stream to decode for input types that have multiple available.
     */
-  var VideoSelector: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelector] = js.native
+  var VideoSelector: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelector] = js.undefined
 }
 object InputSettings {
   

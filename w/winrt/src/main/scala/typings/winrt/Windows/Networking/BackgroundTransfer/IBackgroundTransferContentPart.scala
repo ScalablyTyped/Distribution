@@ -3,17 +3,15 @@ package typings.winrt.Windows.Networking.BackgroundTransfer
 import typings.winrt.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTransferContentPart extends StObject {
   
-  def setFile(value: IStorageFile): Unit = js.native
+  def setFile(value: IStorageFile): Unit
   
-  def setHeader(headerName: String, headerValue: String): Unit = js.native
+  def setHeader(headerName: String, headerValue: String): Unit
   
-  def setText(value: String): Unit = js.native
+  def setText(value: String): Unit
 }
 object IBackgroundTransferContentPart {
   

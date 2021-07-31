@@ -2,24 +2,22 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabels> */
-@js.native
 trait PartialMUIDataTableTextLaBody extends StObject {
   
-  var body: js.UndefOr[PartialMUIDataTableTextLa] = js.native
+  var body: js.UndefOr[PartialMUIDataTableTextLa] = js.undefined
   
-  var filter: js.UndefOr[PartialMUIDataTableTextLaAll] = js.native
+  var filter: js.UndefOr[PartialMUIDataTableTextLaAll] = js.undefined
   
-  var pagination: js.UndefOr[PartialMUIDataTableTextLaDisplayRows] = js.native
+  var pagination: js.UndefOr[PartialMUIDataTableTextLaDisplayRows] = js.undefined
   
-  var selectedRows: js.UndefOr[PartialMUIDataTableTextLaDelete] = js.native
+  var selectedRows: js.UndefOr[PartialMUIDataTableTextLaDelete] = js.undefined
   
-  var toolbar: js.UndefOr[PartialMUIDataTableTextLaDownloadCsv] = js.native
+  var toolbar: js.UndefOr[PartialMUIDataTableTextLaDownloadCsv] = js.undefined
   
-  var viewColumns: js.UndefOr[PartialMUIDataTableTextLaTitle] = js.native
+  var viewColumns: js.UndefOr[PartialMUIDataTableTextLaTitle] = js.undefined
 }
 object PartialMUIDataTableTextLaBody {
   

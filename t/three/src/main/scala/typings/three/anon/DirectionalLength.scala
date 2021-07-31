@@ -2,27 +2,25 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionalLength extends StObject {
   
-  var directionalLength: Double = js.native
+  var directionalLength: Double
   
-  var hemiLength: Double = js.native
+  var hemiLength: Double
   
-  var numDirectionalShadows: Double = js.native
+  var numDirectionalShadows: Double
   
-  var numPointShadows: Double = js.native
+  var numPointShadows: Double
   
-  var numSpotShadows: Double = js.native
+  var numSpotShadows: Double
   
-  var pointLength: Double = js.native
+  var pointLength: Double
   
-  var rectAreaLength: Double = js.native
+  var rectAreaLength: Double
   
-  var spotLength: Double = js.native
+  var spotLength: Double
 }
 object DirectionalLength {
   

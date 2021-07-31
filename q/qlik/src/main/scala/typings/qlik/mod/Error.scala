@@ -2,16 +2,14 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var code: js.Any = js.native
+  var code: js.Any
   
   // TODO: Find out if String or number
-  var message: String = js.native
+  var message: String
 }
 object Error {
   

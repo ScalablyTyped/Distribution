@@ -2,15 +2,13 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timeline extends StObject {
   
-  var frameInverval: Double = js.native
+  var frameInverval: Double
   
-  var frames: js.Array[Frame] = js.native
+  var frames: js.Array[Frame]
 }
 object Timeline {
   

@@ -10,9 +10,9 @@ writable stream that concatenates strings or binary data and calls a callback wi
 | ------------------ | :-------------: |
 | Full name          | concat-stream |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1710 |
-| # downloads        | 698788061 |
+| # releases         | 1 |
+| # dependents       | 1785 |
+| # downloads        | 823769371 |
 | # stars            | 99 |
 
 ## Links

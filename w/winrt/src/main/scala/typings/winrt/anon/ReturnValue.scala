@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Foundation.IWwwFormUrlDecoderEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnValue extends StObject {
   
-  var items: js.Array[IWwwFormUrlDecoderEntry] = js.native
+  var items: js.Array[IWwwFormUrlDecoderEntry]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object ReturnValue {
   

@@ -2,18 +2,18 @@ package typings.typescript.mod.server
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InitializationFailedResponse extends TypingInstallerResponse {
+trait InitializationFailedResponse
+  extends StObject
+     with TypingInstallerResponse {
   
   @JSName("kind")
-  val kind_InitializationFailedResponse: EventInitializationFailed = js.native
+  val kind_InitializationFailedResponse: EventInitializationFailed
   
-  val message: String = js.native
+  val message: String
   
-  val stack: js.UndefOr[String] = js.native
+  val stack: js.UndefOr[String] = js.undefined
 }
 object InitializationFailedResponse {
   

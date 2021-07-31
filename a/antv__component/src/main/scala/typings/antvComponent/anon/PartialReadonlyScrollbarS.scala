@@ -2,20 +2,18 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Readonly<@antv/component.@antv/component/lib/scrollbar/scrollbar.ScrollbarStyle>> */
-@js.native
 trait PartialReadonlyScrollbarS extends StObject {
   
-  var lineCap: js.UndefOr[String] = js.native
+  var lineCap: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var thumbColor: js.UndefOr[String] = js.native
+  var thumbColor: js.UndefOr[String] = js.undefined
   
-  var trackColor: js.UndefOr[String] = js.native
+  var trackColor: js.UndefOr[String] = js.undefined
 }
 object PartialReadonlyScrollbarS {
   

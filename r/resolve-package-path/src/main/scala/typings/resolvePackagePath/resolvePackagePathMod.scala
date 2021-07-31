@@ -3,36 +3,31 @@ package typings.resolvePackagePath
 import typings.std.Cache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolvePackagePathMod {
   
-  @JSImport("resolve-package-path/lib/resolve-package-path", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any
-  ): String | Null = js.native
-  @JSImport("resolve-package-path/lib/resolve-package-path", JSImport.Namespace)
-  @js.native
-  def apply(
-    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
-    name: js.UndefOr[scala.Nothing],
-    dir: String
-  ): String | Null = js.native
-  @JSImport("resolve-package-path/lib/resolve-package-path", JSImport.Namespace)
-  @js.native
+  ): String | Null = ^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
   def apply(
     caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
     name: String
-  ): String | Null = js.native
-  @JSImport("resolve-package-path/lib/resolve-package-path", JSImport.Namespace)
-  @js.native
+  ): String | Null = (^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
   def apply(
     caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
     name: String,
     dir: String
-  ): String | Null = js.native
+  ): String | Null = (^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def apply(
+    caches: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CacheGroup */ js.Any,
+    name: Unit,
+    dir: String
+  ): String | Null = (^.asInstanceOf[js.Dynamic].apply(caches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   @JSImport("resolve-package-path/lib/resolve-package-path", JSImport.Namespace)
   @js.native

@@ -3,13 +3,11 @@ package typings.ejWebAll
 import typings.ejWebAll.anon.Typeofej
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var ej: Typeofej = js.native
+  var ej: Typeofej
 }
 object Window {
   

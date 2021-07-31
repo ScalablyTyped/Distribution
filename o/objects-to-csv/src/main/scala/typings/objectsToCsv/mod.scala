@@ -3,14 +3,15 @@ package typings.objectsToCsv
 import typings.objectsToCsv.anon.AllColumns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("objects-to-csv", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ObjectsToCsv {
+  class ^ protected ()
+    extends StObject
+       with ObjectsToCsv {
     /**
       * Creates a new instance of the object array to csv converter.
       */
@@ -29,9 +30,9 @@ object mod {
       * @returns Data converted to a CSV string.
       */
     def convert(data: js.Array[js.Object]): js.Promise[String] = js.native
-    def convert(data: js.Array[js.Object], header: js.UndefOr[scala.Nothing], allColumns: Boolean): js.Promise[String] = js.native
     def convert(data: js.Array[js.Object], header: Boolean): js.Promise[String] = js.native
     def convert(data: js.Array[js.Object], header: Boolean, allColumns: Boolean): js.Promise[String] = js.native
+    def convert(data: js.Array[js.Object], header: Unit, allColumns: Boolean): js.Promise[String] = js.native
     
     /**
       * Holds data to be converted.
@@ -50,8 +51,8 @@ object mod {
     def toDisk(filename: String): js.Promise[String] = js.native
     def toDisk(filename: String, options: AllColumns): js.Promise[String] = js.native
     
-    def toString(header: js.UndefOr[scala.Nothing], allColumns: Boolean): js.Promise[String] = js.native
     def toString(header: Boolean): js.Promise[String] = js.native
     def toString(header: Boolean, allColumns: Boolean): js.Promise[String] = js.native
+    def toString(header: Unit, allColumns: Boolean): js.Promise[String] = js.native
   }
 }

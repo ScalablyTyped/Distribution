@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Age information about a face. */
-@js.native
 trait FaceAge extends StObject {
   
   /** Estimated maximum age. */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /** Estimated minimum age. */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /** Confidence score in the range of 0 to 1. A higher score indicates greater confidence in the estimated value for the property. */
-  var score: Double = js.native
+  var score: Double
 }
 object FaceAge {
   

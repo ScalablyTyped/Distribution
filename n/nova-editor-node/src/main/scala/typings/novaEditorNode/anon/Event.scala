@@ -4,13 +4,11 @@ import typings.novaEditorNode.novaEditorNodeStrings.onChange
 import typings.novaEditorNode.novaEditorNodeStrings.onSave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var event: onChange | onSave = js.native
+  var event: onChange | onSave
 }
 object Event {
   

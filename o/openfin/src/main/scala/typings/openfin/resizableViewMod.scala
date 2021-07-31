@@ -9,7 +9,6 @@ import typings.openfin.viewViewMod.ViewCreationOptions
 import typings.resizeObserverBrowser.ResizeObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizableViewMod {
@@ -36,8 +35,9 @@ object resizableViewMod {
     var windowIdentity: Identity = js.native
   }
   
-  @js.native
-  trait ViewState extends ViewCreationOptions
+  trait ViewState
+    extends StObject
+       with ViewCreationOptions
   object ViewState {
     
     @scala.inline

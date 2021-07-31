@@ -5,47 +5,41 @@ import typings.node.netMod.Socket
 import typings.node.netMod.TcpNetConnectOpts
 import typings.node.tlsMod.ConnectionOptions
 import typings.std.Error
-import typings.stompit.clientMod.^
 import typings.stompit.socketMod.SocketOptions
 import typings.stompit.stompitBooleans.`false`
 import typings.stompit.stompitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectMod {
   
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrPathOrPort: String): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrPathOrPort: String, connectionListener: ConnectionListener): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrPathOrPort: Double): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrPathOrPort: ConnectOptions): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: ConnectionListener): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, host: String): ^ = js.native
-  @JSImport("stompit/lib/connect", JSImport.Namespace)
-  @js.native
-  def apply(port: Double, host: String, connectionListener: ConnectionListener): ^ = js.native
+  @scala.inline
+  def apply(optionsOrPathOrPort: String): typings.stompit.clientMod.^ = ^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(optionsOrPathOrPort: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(optionsOrPathOrPort: Double): typings.stompit.clientMod.^ = ^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(optionsOrPathOrPort: ConnectOptions): typings.stompit.clientMod.^ = ^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(port: Double, host: String): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+  @scala.inline
+  def apply(port: Double, host: Unit, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
   
+  @JSImport("stompit/lib/connect", JSImport.Namespace)
   @js.native
-  trait BaseConnectOptions extends SocketOptions {
+  val ^ : js.Any = js.native
+  
+  trait BaseConnectOptions
+    extends StObject
+       with SocketOptions {
     
     // This connectionListener type comes from @types/node
     var connect: js.UndefOr[
@@ -54,11 +48,11 @@ object connectMod {
           /* connectionListener */ js.UndefOr[js.Function0[Unit]], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var connectHeaders: js.UndefOr[ConnectHeaders] = js.native
+    var connectHeaders: js.UndefOr[ConnectHeaders] = js.undefined
     
-    var ssl: js.UndefOr[Boolean] = js.native
+    var ssl: js.UndefOr[Boolean] = js.undefined
   }
   object BaseConnectOptions {
     
@@ -93,18 +87,17 @@ object connectMod {
     }
   }
   
-  @js.native
   trait ConnectHeaders extends StObject {
     
-    var `accept-version`: js.UndefOr[String] = js.native
+    var `accept-version`: js.UndefOr[String] = js.undefined
     
-    var `heart-beat`: js.UndefOr[String] = js.native
+    var `heart-beat`: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var login: js.UndefOr[String] = js.native
+    var login: js.UndefOr[String] = js.undefined
     
-    var passcode: js.UndefOr[String] = js.native
+    var passcode: js.UndefOr[String] = js.undefined
   }
   object ConnectHeaders {
     
@@ -170,22 +163,22 @@ object connectMod {
     }
     
     @scala.inline
-    def SslConnectOptions(ssl: `true`): typings.stompit.connectMod.SslConnectOptions = {
-      val __obj = js.Dynamic.literal(ssl = ssl.asInstanceOf[js.Any])
+    def SslConnectOptions(): typings.stompit.connectMod.SslConnectOptions = {
+      val __obj = js.Dynamic.literal(ssl = true)
       __obj.asInstanceOf[typings.stompit.connectMod.SslConnectOptions]
     }
   }
   
-  type ConnectionListener = js.Function2[/* err */ Error | Null, /* client */ ^, Unit]
+  type ConnectionListener = js.Function2[/* err */ Error | Null, /* client */ typings.stompit.clientMod.^, Unit]
   
-  @js.native
   trait NetIpcConnectOptions
-    extends IpcNetConnectOpts
+    extends StObject
        with BaseConnectOptions
+       with IpcNetConnectOpts
        with ConnectOptions {
     
     @JSName("ssl")
-    var ssl_NetIpcConnectOptions: js.UndefOr[`false`] = js.native
+    var ssl_NetIpcConnectOptions: js.UndefOr[`false`] = js.undefined
   }
   object NetIpcConnectOptions {
     
@@ -206,14 +199,14 @@ object connectMod {
     }
   }
   
-  @js.native
   trait NetTcpConnectOptions
-    extends TcpNetConnectOpts
+    extends StObject
        with BaseConnectOptions
+       with TcpNetConnectOpts
        with ConnectOptions {
     
     @JSName("ssl")
-    var ssl_NetTcpConnectOptions: js.UndefOr[`false`] = js.native
+    var ssl_NetTcpConnectOptions: js.UndefOr[`false`] = js.undefined
   }
   object NetTcpConnectOptions {
     
@@ -234,20 +227,20 @@ object connectMod {
     }
   }
   
-  @js.native
   trait SslConnectOptions
-    extends ConnectionOptions
+    extends StObject
        with BaseConnectOptions
+       with ConnectionOptions
        with ConnectOptions {
     
     @JSName("ssl")
-    var ssl_SslConnectOptions: `true` = js.native
+    var ssl_SslConnectOptions: `true`
   }
   object SslConnectOptions {
     
     @scala.inline
-    def apply(ssl: `true`): SslConnectOptions = {
-      val __obj = js.Dynamic.literal(ssl = ssl.asInstanceOf[js.Any])
+    def apply(): SslConnectOptions = {
+      val __obj = js.Dynamic.literal(ssl = true)
       __obj.asInstanceOf[SslConnectOptions]
     }
     

@@ -3,21 +3,19 @@ package typings.firebaseStorage
 import typings.firebaseStorage.srcReferenceMod.Reference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcListMod {
   
   type ListOptions = typings.firebaseStorageTypes.mod.ListOptions
   
-  @js.native
   trait ListResult extends StObject {
     
-    var items: js.Array[Reference] = js.native
+    var items: js.Array[Reference]
     
-    var nextPageToken: js.UndefOr[String] = js.native
+    var nextPageToken: js.UndefOr[String] = js.undefined
     
-    var prefixes: js.Array[Reference] = js.native
+    var prefixes: js.Array[Reference]
   }
   object ListResult {
     

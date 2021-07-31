@@ -3,21 +3,19 @@ package typings.chocolatechipjs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -78,7 +76,6 @@ object anon {
     def repeater(element: ChocolateChipElementArray, template: String, data: js.Any): Unit = js.native
   }
   
-  @js.native
   trait CallbackName extends StObject {
     
     /**
@@ -87,17 +84,17 @@ object anon {
       * However some sites may use a different name for their JSONP function.
       * Consult the documentation on the site to ascertain the correct value for this callback.
       */
-    var callbackName: js.UndefOr[String] = js.native
+    var callbackName: js.UndefOr[String] = js.undefined
     
     /**
       * This value determines whether the callbacks and script associate with JSONP persist or are purged after the request returns. By default this is set to true, meaning that they will be purged.
       */
-    var clear: js.UndefOr[Boolean] = js.native
+    var clear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A number representing milliseconds to express when to refect a JSONP request.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object CallbackName {
     
@@ -130,13 +127,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
     /**
       * DO NOT TOUCH! This stores information about registered events.
       */
-    var events: Delete = js.native
+    var events: Delete
   }
   object Data {
     
@@ -154,18 +150,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Delete extends StObject {
     
-    var _delete: js.Function = js.native
+    var _delete: js.Function
     
-    var hasKey: js.Function = js.native
+    var hasKey: js.Function
     
-    var keys: js.Array[_] = js.native
+    var keys: js.Array[js.Any]
     
-    var set: js.Function = js.native
+    var set: js.Function
     
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any]
   }
   object Delete {
     
@@ -173,9 +168,9 @@ object anon {
     def apply(
       _delete: js.Function,
       hasKey: js.Function,
-      keys: js.Array[_],
+      keys: js.Array[js.Any],
       set: js.Function,
-      values: js.Array[_]
+      values: js.Array[js.Any]
     ): Delete = {
       val __obj = js.Dynamic.literal(_delete = _delete.asInstanceOf[js.Any], hasKey = hasKey.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delete]
@@ -188,7 +183,7 @@ object anon {
       def setHasKey(value: js.Function): Self = StObject.set(x, "hasKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setKeys(value: js.Array[_]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
@@ -197,7 +192,7 @@ object anon {
       def setSet(value: js.Function): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
@@ -207,7 +202,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Extend extends StObject {
     
     /**
@@ -216,7 +210,7 @@ object anon {
       * @param object And object to add to element arrays.
       * @return The extended array of elements.
       */
-    def extend(`object`: js.Object): js.Array[HTMLElement] = js.native
+    def extend(`object`: js.Object): js.Array[HTMLElement]
   }
   object Extend {
     

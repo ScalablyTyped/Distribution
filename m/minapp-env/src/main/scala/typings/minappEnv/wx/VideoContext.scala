@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoContext extends StObject {
   
   /** [VideoContext.exitFullScreen()](VideoContext.exitFullScreen.md)
@@ -13,24 +11,24 @@ trait VideoContext extends StObject {
     * 退出全屏
     *
     * 最低基础库： `1.4.0` */
-  def exitFullScreen(): Unit = js.native
+  def exitFullScreen(): Unit
   
   /** [VideoContext.hideStatusBar()](VideoContext.hideStatusBar.md)
     *
     * 隐藏状态栏，仅在iOS全屏下有效
     *
     * 最低基础库： `2.1.0` */
-  def hideStatusBar(): Unit = js.native
+  def hideStatusBar(): Unit
   
   /** [VideoContext.pause()](VideoContext.pause.md)
     *
     * 暂停视频 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** [VideoContext.play()](VideoContext.play.md)
     *
     * 播放视频 */
-  def play(): Unit = js.native
+  def play(): Unit
   
   /** [VideoContext.playbackRate(number rate)](VideoContext.playbackRate.md)
     *
@@ -38,40 +36,40 @@ trait VideoContext extends StObject {
     *
     * 最低基础库： `1.4.0` */
   def playbackRate(/** 倍率，支持 0.5/0.8/1.0/1.25/1.5 */
-  rate: Double): Unit = js.native
+  rate: Double): Unit
   
   /** [VideoContext.requestFullScreen(Object object)](VideoContext.requestFullScreen.md)
     *
     * 进入全屏
     *
     * 最低基础库： `1.4.0` */
-  def requestFullScreen(option: VideoContextRequestFullScreenOption): Unit = js.native
+  def requestFullScreen(option: VideoContextRequestFullScreenOption): Unit
   
   /** [VideoContext.seek(number position)](VideoContext.seek.md)
     *
     * 跳转到指定位置 */
   def seek(/** 跳转到的位置，单位 s */
-  position: Double): Unit = js.native
+  position: Double): Unit
   
   /** [VideoContext.sendDanmu(Object data)](VideoContext.sendDanmu.md)
     *
     * 发送弹幕 */
   def sendDanmu(/** 弹幕内容 */
-  data: Danmu): Unit = js.native
+  data: Danmu): Unit
   
   /** [VideoContext.showStatusBar()](VideoContext.showStatusBar.md)
     *
     * 显示状态栏，仅在iOS全屏下有效
     *
     * 最低基础库： `2.1.0` */
-  def showStatusBar(): Unit = js.native
+  def showStatusBar(): Unit
   
   /** [VideoContext.stop()](VideoContext.stop.md)
     *
     * 停止视频
     *
     * 最低基础库： `1.7.0` */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object VideoContext {
   

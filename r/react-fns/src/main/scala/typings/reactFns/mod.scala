@@ -17,10 +17,13 @@ import typings.reactFns.windowSizeWindowSizeMod.WindowSizeConfig
 import typings.reactFns.windowSizeWindowSizeMod.WindowSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-fns", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-fns", "DeviceMotion")
   @js.native
@@ -90,12 +93,12 @@ object mod {
   @js.native
   class Scroll protected ()
     extends typings.reactFns.scrollMod.Scroll {
-    def this(props: ScrollConfig with SharedRenderProps[ScrollProps]) = this()
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollConfig with SharedRenderProps[ScrollProps], context: js.Any) = this()
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: js.Any) = this()
   }
   /* static members */
   object Scroll {
@@ -115,12 +118,12 @@ object mod {
   @js.native
   class WindowSize protected ()
     extends typings.reactFns.windowSizeMod.WindowSize {
-    def this(props: WindowSizeConfig with SharedRenderProps[WindowSizeProps]) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowSizeConfig with SharedRenderProps[WindowSizeProps], context: js.Any) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: js.Any) = this()
   }
   /* static members */
   object WindowSize {
@@ -136,31 +139,24 @@ object mod {
     def defaultProps_=(x: PartialWindowSizeConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-fns", "withDeviceMotion")
-  @js.native
-  def withDeviceMotion[Props](Component: ComponentType[Props with DeviceMotionProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withDeviceMotion[Props](Component: ComponentType[Props & DeviceMotionProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDeviceMotion")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
   
-  @JSImport("react-fns", "withDeviceOrientation")
-  @js.native
-  def withDeviceOrientation[Props](Component: ComponentType[Props with DeviceOrientationProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withDeviceOrientation[Props](Component: ComponentType[Props & DeviceOrientationProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withDeviceOrientation")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
   
-  @JSImport("react-fns", "withGeoPosition")
-  @js.native
-  def withGeoPosition[Props](Component: ComponentType[Props with GeoPositionProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withGeoPosition[Props](Component: ComponentType[Props & GeoPositionProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGeoPosition")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
   
-  @JSImport("react-fns", "withLocales")
-  @js.native
-  def withLocales[Props](Component: ComponentType[Props with LocalesProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withLocales[Props](Component: ComponentType[Props & LocalesProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withLocales")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
   
-  @JSImport("react-fns", "withNetwork")
-  @js.native
-  def withNetwork[Props](Component: ComponentType[Props with NetworkProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withNetwork[Props](Component: ComponentType[Props & NetworkProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNetwork")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
   
-  @JSImport("react-fns", "withScroll")
-  @js.native
-  def withScroll[Props](Component: ComponentType[Props with ScrollProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withScroll[Props](Component: ComponentType[Props & ScrollProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
   
-  @JSImport("react-fns", "withWindowSize")
-  @js.native
-  def withWindowSize[Props](Component: ComponentType[Props with WindowSizeProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withWindowSize[Props](Component: ComponentType[Props & WindowSizeProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWindowSize")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

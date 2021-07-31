@@ -7,18 +7,18 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupShowAllTypesMod {
   
-  @js.native
-  trait IGroupShowAllProps extends IGroupDividerProps {
+  trait IGroupShowAllProps
+    extends StObject
+       with IGroupDividerProps {
     
     /**
       * Style function to be passed in to override the themed or default styles
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]] = js.undefined
   }
   object IGroupShowAllProps {
     
@@ -43,10 +43,9 @@ object groupShowAllTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupShowAll.types.IGroupShowAllProps, 'theme'>> */
-  @js.native
   trait IGroupShowAllStyleProps extends StObject {
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IGroupShowAllStyleProps {
     
@@ -64,10 +63,9 @@ object groupShowAllTypesMod {
     }
   }
   
-  @js.native
   trait IGroupShowAllStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IGroupShowAllStyles {
     

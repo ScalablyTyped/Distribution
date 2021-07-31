@@ -3,21 +3,21 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.REMOVE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRemoveMutator extends Mutator {
+trait IRemoveMutator
+  extends StObject
+     with Mutator {
   
-  var mutatorType: REMOVE = js.native
+  var mutatorType: REMOVE
   
-  var removalIndex: Double = js.native
+  var removalIndex: Double
 }
 object IRemoveMutator {
   
   @scala.inline
-  def apply(mutatorType: REMOVE, removalIndex: Double): IRemoveMutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], removalIndex = removalIndex.asInstanceOf[js.Any])
+  def apply(removalIndex: Double): IRemoveMutator = {
+    val __obj = js.Dynamic.literal(mutatorType = "REMOVE", removalIndex = removalIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemoveMutator]
   }
   

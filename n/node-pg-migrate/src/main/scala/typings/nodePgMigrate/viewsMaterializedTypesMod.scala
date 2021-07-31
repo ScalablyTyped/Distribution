@@ -1,17 +1,12 @@
 package typings.nodePgMigrate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodePgMigrate.anon.ReverseCreateMaterializedViewFn
-import typings.nodePgMigrate.anon.ReverseRefreshMaterializedViewFn
-import typings.nodePgMigrate.anon.ReverseRenameMaterializedViewColumnFn
-import typings.nodePgMigrate.anon.ReverseRenameMaterializedViewFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.IfNotExistsOption
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.nodePgMigrateBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewsMaterializedTypesMod {
@@ -22,14 +17,13 @@ object viewsMaterializedTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait AlterMaterializedViewOptions extends StObject {
     
-    var cluster: js.UndefOr[Null | `false` | String] = js.native
+    var cluster: js.UndefOr[Null | `false` | String] = js.undefined
     
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
-    var storageParameters: js.UndefOr[js.Object] = js.native
+    var storageParameters: js.UndefOr[js.Object] = js.undefined
   }
   object AlterMaterializedViewOptions {
     
@@ -65,25 +59,32 @@ object viewsMaterializedTypesMod {
     }
   }
   
-  type CreateMaterializedView = CreateMaterializedViewFn with ReverseCreateMaterializedViewFn
+  @js.native
+  trait CreateMaterializedView extends CreateMaterializedViewFn {
+    
+    def reverse(viewName: Name, options: CreateMaterializedViewOptions & DropOptions, definition: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateMaterializedViewFn = js.native
+  }
   
   type CreateMaterializedViewFn = js.Function3[
     /* viewName */ Name, 
-    /* options */ CreateMaterializedViewOptions with DropOptions, 
+    /* options */ CreateMaterializedViewOptions & DropOptions, 
     /* definition */ String, 
     String | js.Array[String]
   ]
   
-  @js.native
-  trait CreateMaterializedViewOptions extends IfNotExistsOption {
+  trait CreateMaterializedViewOptions
+    extends StObject
+       with IfNotExistsOption {
     
-    var columns: js.UndefOr[String | js.Array[String]] = js.native
+    var columns: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var data: js.UndefOr[Boolean] = js.native
+    var data: js.UndefOr[Boolean] = js.undefined
     
-    var storageParameters: js.UndefOr[StorageParameters] = js.native
+    var storageParameters: js.UndefOr[StorageParameters] = js.undefined
     
-    var tablespace: js.UndefOr[String] = js.native
+    var tablespace: js.UndefOr[String] = js.undefined
   }
   object CreateMaterializedViewOptions {
     
@@ -131,7 +132,14 @@ object viewsMaterializedTypesMod {
     String | js.Array[String]
   ]
   
-  type RefreshMaterializedView = RefreshMaterializedViewFn with ReverseRefreshMaterializedViewFn
+  @js.native
+  trait RefreshMaterializedView extends RefreshMaterializedViewFn {
+    
+    def reverse(viewName: Name): String | js.Array[String] = js.native
+    def reverse(viewName: Name, options: RefreshMaterializedViewOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RefreshMaterializedViewFn = js.native
+  }
   
   type RefreshMaterializedViewFn = js.Function2[
     /* viewName */ Name, 
@@ -139,12 +147,11 @@ object viewsMaterializedTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait RefreshMaterializedViewOptions extends StObject {
     
-    var concurrently: js.UndefOr[Boolean] = js.native
+    var concurrently: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.UndefOr[Boolean] = js.native
+    var data: js.UndefOr[Boolean] = js.undefined
   }
   object RefreshMaterializedViewOptions {
     
@@ -171,9 +178,21 @@ object viewsMaterializedTypesMod {
     }
   }
   
-  type RenameMaterializedView = RenameMaterializedViewFn with ReverseRenameMaterializedViewFn
+  @js.native
+  trait RenameMaterializedView extends RenameMaterializedViewFn {
+    
+    def reverse(viewName: Name, newViewName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameMaterializedViewFn = js.native
+  }
   
-  type RenameMaterializedViewColumn = RenameMaterializedViewColumnFn with ReverseRenameMaterializedViewColumnFn
+  @js.native
+  trait RenameMaterializedViewColumn extends RenameMaterializedViewColumnFn {
+    
+    def reverse(viewName: Name, columnName: String, newColumnName: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameMaterializedViewColumnFn = js.native
+  }
   
   type RenameMaterializedViewColumnFn = js.Function3[
     /* viewName */ Name, 

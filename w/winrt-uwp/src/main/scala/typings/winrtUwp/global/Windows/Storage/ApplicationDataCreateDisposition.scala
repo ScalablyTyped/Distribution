@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies options for creating application data containers or returning existing containers. This enumeration is used by the ApplicationDataContainer.CreateContainer method. */
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ApplicationDataCreateDisposition extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.ApplicationDataCreateDisposition with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.ApplicationDataCreateDisposition & Double] = js.native
   
-  /* 0 */ val always: typings.winrtUwp.Windows.Storage.ApplicationDataCreateDisposition.always with Double = js.native
+  /* 0 */ val always: typings.winrtUwp.Windows.Storage.ApplicationDataCreateDisposition.always & Double = js.native
   
-  /* 1 */ val existing: typings.winrtUwp.Windows.Storage.ApplicationDataCreateDisposition.existing with Double = js.native
+  /* 1 */ val existing: typings.winrtUwp.Windows.Storage.ApplicationDataCreateDisposition.existing & Double = js.native
 }

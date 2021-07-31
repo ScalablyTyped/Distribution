@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveCredentialRequest extends StObject {
   
-  var authenticatorId: AuthenticatorId = js.native
+  var authenticatorId: AuthenticatorId
   
-  var credentialId: String = js.native
+  var credentialId: String
 }
 object RemoveCredentialRequest {
   

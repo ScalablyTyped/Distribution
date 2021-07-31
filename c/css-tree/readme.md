@@ -10,9 +10,9 @@ A tool set for CSS: fast detailed parser (CSS → AST), walker (AST traversal), 
 | ------------------ | :-------------: |
 | Full name          | css-tree |
 | Keywords           | css, ast, tokenizer, parser, walker, lexer, generator, utils, syntax, validation |
-| # releases         | 12 |
-| # dependents       | 169 |
-| # downloads        | 538833059 |
+| # releases         | 16 |
+| # dependents       | 170 |
+| # downloads        | 588904564 |
 | # stars            | 2 |
 
 ## Links

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,12 +14,11 @@ object mod extends Shortcut {
   
   type CssNano = Plugin_[CssNanoOptions]
   
-  @js.native
   trait CssNanoOptions extends StObject {
     
-    var configFile: js.UndefOr[String] = js.native
+    var configFile: js.UndefOr[String] = js.undefined
     
-    var preset: js.UndefOr[(js.Tuple2[String, js.Object]) | String] = js.native
+    var preset: js.UndefOr[(js.Tuple2[String, js.Object]) | String] = js.undefined
   }
   object CssNanoOptions {
     

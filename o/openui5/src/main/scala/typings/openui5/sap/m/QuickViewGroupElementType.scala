@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,20 +15,32 @@ sealed trait QuickViewGroupElementType extends StObject
 object QuickViewGroupElementType extends StObject {
   
   @js.native
-  sealed trait email extends QuickViewGroupElementType
+  sealed trait email
+    extends StObject
+       with QuickViewGroupElementType
   
   @js.native
-  sealed trait link extends QuickViewGroupElementType
+  sealed trait link
+    extends StObject
+       with QuickViewGroupElementType
   
   @js.native
-  sealed trait mobile extends QuickViewGroupElementType
+  sealed trait mobile
+    extends StObject
+       with QuickViewGroupElementType
   
   @js.native
-  sealed trait pageLink extends QuickViewGroupElementType
+  sealed trait pageLink
+    extends StObject
+       with QuickViewGroupElementType
   
   @js.native
-  sealed trait phone extends QuickViewGroupElementType
+  sealed trait phone
+    extends StObject
+       with QuickViewGroupElementType
   
   @js.native
-  sealed trait text extends QuickViewGroupElementType
+  sealed trait text
+    extends StObject
+       with QuickViewGroupElementType
 }

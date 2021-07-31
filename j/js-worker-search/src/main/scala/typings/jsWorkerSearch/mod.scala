@@ -3,15 +3,22 @@ package typings.jsWorkerSearch
 import typings.jsWorkerSearch.anon.CaseSensitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("js-worker-search", JSImport.Default)
   @js.native
-  class default () extends SearchApi {
+  class default ()
+    extends StObject
+       with SearchApi {
     def this(someParam: CaseSensitive) = this()
+    
+    /* CompleteClass */
+    override def indexDocument(uid: String, text: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def search(query: String): js.Promise[js.Array[String]] = js.native
   }
   
   @js.native
@@ -21,27 +28,32 @@ object mod {
   object INDEX_MODES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[INDEX_MODES with String] = js.native
+    def apply(value: String): js.UndefOr[INDEX_MODES & String] = js.native
     
     @js.native
-    sealed trait ALL_SUBSTRINGS extends INDEX_MODES
-    /* "ALL_SUBSTRINGS" */ val ALL_SUBSTRINGS: typings.jsWorkerSearch.mod.INDEX_MODES.ALL_SUBSTRINGS with String = js.native
+    sealed trait ALL_SUBSTRINGS
+      extends StObject
+         with INDEX_MODES
+    /* "ALL_SUBSTRINGS" */ val ALL_SUBSTRINGS: typings.jsWorkerSearch.mod.INDEX_MODES.ALL_SUBSTRINGS & String = js.native
     
     @js.native
-    sealed trait EXACT_WORDS extends INDEX_MODES
-    /* "EXACT_WORDS" */ val EXACT_WORDS: typings.jsWorkerSearch.mod.INDEX_MODES.EXACT_WORDS with String = js.native
+    sealed trait EXACT_WORDS
+      extends StObject
+         with INDEX_MODES
+    /* "EXACT_WORDS" */ val EXACT_WORDS: typings.jsWorkerSearch.mod.INDEX_MODES.EXACT_WORDS & String = js.native
     
     @js.native
-    sealed trait PREFIXES extends INDEX_MODES
-    /* "PREFIXES" */ val PREFIXES: typings.jsWorkerSearch.mod.INDEX_MODES.PREFIXES with String = js.native
+    sealed trait PREFIXES
+      extends StObject
+         with INDEX_MODES
+    /* "PREFIXES" */ val PREFIXES: typings.jsWorkerSearch.mod.INDEX_MODES.PREFIXES & String = js.native
   }
   
-  @js.native
   trait SearchApi extends StObject {
     
-    def indexDocument(uid: String, text: String): Unit = js.native
+    def indexDocument(uid: String, text: String): Unit
     
-    def search(query: String): js.Promise[js.Array[String]] = js.native
+    def search(query: String): js.Promise[js.Array[String]]
   }
   object SearchApi {
     

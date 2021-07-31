@@ -3,7 +3,6 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,37 +21,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that do not match any route in the sending instance&#39;s routing table are
   * dropped. (== resource_for beta.routes ==) (== resource_for v1.routes ==)
   */
-@js.native
 trait SchemaRoute extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The destination range of outgoing packets that this route applies to.
     * Only IPv4 is supported.
     */
-  var destRange: js.UndefOr[String] = js.native
+  var destRange: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of this resource. Always compute#routes for Route
     * resources.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -63,19 +61,19 @@ trait SchemaRoute extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Fully-qualified URL of the network that this route applies to.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to a gateway that should handle matching packets. You can only
     * specify the internet gateway using a full or partial valid URL:
     * projects/&lt;project-id&gt;/global/gateways/default-internet-gateway
     */
-  var nextHopGateway: js.UndefOr[String] = js.native
+  var nextHopGateway: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that
@@ -87,36 +85,36 @@ trait SchemaRoute extends StObject {
     * be used when the destination_range is a public (non-RFC 1918) IP CIDR
     * range.
     */
-  var nextHopIlb: js.UndefOr[String] = js.native
+  var nextHopIlb: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to an instance that should handle matching packets. You can
     * specify this as a full or partial URL. For example:
     * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/
     */
-  var nextHopInstance: js.UndefOr[String] = js.native
+  var nextHopInstance: js.UndefOr[String] = js.undefined
   
   /**
     * The network IP address of an instance that should handle matching
     * packets. Only IPv4 is supported.
     */
-  var nextHopIp: js.UndefOr[String] = js.native
+  var nextHopIp: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the local network if it should handle matching packets.
     */
-  var nextHopNetwork: js.UndefOr[String] = js.native
+  var nextHopNetwork: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The network peering name that should handle matching
     * packets, which should conform to RFC1035.
     */
-  var nextHopPeering: js.UndefOr[String] = js.native
+  var nextHopPeering: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to a VpnTunnel that should handle matching packets.
     */
-  var nextHopVpnTunnel: js.UndefOr[String] = js.native
+  var nextHopVpnTunnel: js.UndefOr[String] = js.undefined
   
   /**
     * The priority of this route. Priority is used to break ties in cases where
@@ -125,23 +123,23 @@ trait SchemaRoute extends StObject {
     * priority value wins. Default value is 1000. Valid range is 0 through
     * 65535.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] Server-defined fully-qualified URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * A list of instance tags to which this route applies.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] If potential misconfigurations are detected for this route,
     * this field will be populated with warning messages.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
 }
 object SchemaRoute {
   

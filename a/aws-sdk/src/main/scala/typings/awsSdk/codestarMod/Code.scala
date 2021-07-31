@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
   /**
     * The repository to be created in AWS CodeStar. Valid values are AWS CodeCommit or GitHub. After AWS CodeStar provisions the new repository, the source code files provided with the project request are placed in the repository.
     */
-  var destination: CodeDestination = js.native
+  var destination: CodeDestination
   
   /**
     * The location where the source code files provided with the project request are stored. AWS CodeStar retrieves the files during project creation.
     */
-  var source: CodeSource = js.native
+  var source: CodeSource
 }
 object Code {
   

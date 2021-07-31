@@ -10,9 +10,9 @@ Node.js scraper module for Open Graph and Twitter Card info
 | ------------------ | :-------------: |
 | Full name          | open-graph-scraper |
 | Keywords           | app links, dublin core, meta tags, metadata, og, ogp, open graph, opengraph, scraper, twitter card, twitter |
-| # releases         | 13 |
+| # releases         | 16 |
 | # dependents       | 17 |
-| # downloads        | 734082 |
+| # downloads        | 810987 |
 | # stars            | 10 |
 
 ## Links

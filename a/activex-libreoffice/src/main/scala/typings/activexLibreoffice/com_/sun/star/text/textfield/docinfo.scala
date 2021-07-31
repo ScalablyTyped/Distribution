@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object docinfo {
@@ -21,21 +20,22 @@ object docinfo {
     * specifies service of a text field that provides information about the author of the last change.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait ChangeAuthor extends TextField_ {
+  trait ChangeAuthor
+    extends StObject
+       with TextField_ {
     
     /** contains the name of the author. */
-    var Author: String = js.native
+    var Author: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to false the author will be overridden by the current author each time the document is saved. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object ChangeAuthor {
     
@@ -90,40 +90,41 @@ object docinfo {
     * specifies service of a text field that provides information about the date and time the document was last changed.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait ChangeDateTime extends TextField_ {
+  trait ChangeDateTime
+    extends StObject
+       with TextField_ {
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** contains the date and time as double value. */
-    var DateTimeValue: Double = js.native
+    var DateTimeValue: Double
     
     /** If this flag is set to `TRUE` this field represents, a date with an optional time. If it is set to `FALSE` only the time is used here. */
-    var IsDate: Boolean = js.native
+    var IsDate: Boolean
     
     /**
       * If this flag is set to false the author will be overridden by the current author each time the document is saved.If this flag is set to `FALSE` the
       * date or time is always displayed as the current date or time.
       * @since OOo 1.1.2
       */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
     
     /**
       * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
       * language.
       */
-    var IsFixedLanguage: Boolean = js.native
+    var IsFixedLanguage: Boolean
     
     /**
       * this is the number format for this field.
       * @see com.sun.star.util.NumberFormatter
       */
-    var NumberFormat: Double = js.native
+    var NumberFormat: Double
   }
   object ChangeDateTime {
     
@@ -190,21 +191,22 @@ object docinfo {
     * specifies service of a text field that provides information about the author who created the document.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait CreateAuthor extends TextField_ {
+  trait CreateAuthor
+    extends StObject
+       with TextField_ {
     
     /** contains the name of the author. */
-    var Author: String = js.native
+    var Author: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to false the author will be overridden by the current author each time the document is saved. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object CreateAuthor {
     
@@ -259,40 +261,41 @@ object docinfo {
     * specifies service of a text field that provides information about the date and time of the document creation.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait CreateDateTime extends TextField_ {
+  trait CreateDateTime
+    extends StObject
+       with TextField_ {
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** contains the date and time as double value. */
-    var DateTimeValue: Double = js.native
+    var DateTimeValue: Double
     
     /** If this flag is set to `TRUE` this field represents, a date with an optional time. If it is set to `FALSE` only the time is used here. */
-    var IsDate: Boolean = js.native
+    var IsDate: Boolean
     
     /**
       * If this flag is set to false the author will be overridden by the current author each time the document is saved. If this flag is set to `FALSE` the
       * date or time is always displayed as the current date or time.
       * @since OOo 1.1.2
       */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
     
     /**
       * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
       * language.
       */
-    var IsFixedLanguage: Boolean = js.native
+    var IsFixedLanguage: Boolean
     
     /**
       * this is the number format for this field.
       * @see com.sun.star.util.NumberFormatter
       */
-    var NumberFormat: Double = js.native
+    var NumberFormat: Double
   }
   object CreateDateTime {
     
@@ -360,21 +363,22 @@ object docinfo {
     * @see com.sun.star.text.TextField
     * @since OOo 3.0
     */
-  @js.native
-  trait Custom extends TextField_ {
+  trait Custom
+    extends StObject
+       with TextField_ {
     
     /**
       * contains the current content of the text field.
       *
       * This property is useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to `FALSE` , the content is updated when the document information changes. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
     
     /** the name of the user-defined property that this field refers to. */
-    var Name: String = js.native
+    var Name: String
   }
   object Custom {
     
@@ -429,21 +433,22 @@ object docinfo {
     * specifies service of a text field that provides the description that is contained in the document information.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait Description extends TextField_ {
+  trait Description
+    extends StObject
+       with TextField_ {
     
     /** contains content information. */
-    var Content: String = js.native
+    var Content: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to `FALSE` the content updated every time the document information is changed. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object Description {
     
@@ -498,37 +503,38 @@ object docinfo {
     * specifies service of a text field that provides information about the duration the document has been edited.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait EditTime extends TextField_ {
+  trait EditTime
+    extends StObject
+       with TextField_ {
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** contains the date and time as double value. */
-    var DateTimeValue: Double = js.native
+    var DateTimeValue: Double
     
     /**
       * If this flag is set to false the author will be overridden by the current author each time the document is saved. If this flag is set to `FALSE` the
       * date or time is always displayed as the current date or time.
       * @since OOo 1.1.2
       */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
     
     /**
       * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
       * language.
       */
-    var IsFixedLanguage: Boolean = js.native
+    var IsFixedLanguage: Boolean
     
     /**
       * this is the number format for this field.
       * @see com.sun.star.util.NumberFormatter
       */
-    var NumberFormat: Double = js.native
+    var NumberFormat: Double
   }
   object EditTime {
     
@@ -591,21 +597,22 @@ object docinfo {
     * specifies service of a text field that provides the keywords that are contained in the document information.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait Keywords extends TextField_ {
+  trait Keywords
+    extends StObject
+       with TextField_ {
     
     /** contains content information. */
-    var Content: String = js.native
+    var Content: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to `FALSE` the content updated every time the document information is changed. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object Keywords {
     
@@ -660,21 +667,22 @@ object docinfo {
     * specifies service of a text field that provides information about the author of the last print operation.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait PrintAuthor extends TextField_ {
+  trait PrintAuthor
+    extends StObject
+       with TextField_ {
     
     /** contains the name of the author. */
-    var Author: String = js.native
+    var Author: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to false the author will be overridden by the current author each time the document is saved. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object PrintAuthor {
     
@@ -729,40 +737,41 @@ object docinfo {
     * specifies service of a text field that provides information about the date and time the document was last printed.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait PrintDateTime extends TextField_ {
+  trait PrintDateTime
+    extends StObject
+       with TextField_ {
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** contains the date and time as double value. */
-    var DateTimeValue: Double = js.native
+    var DateTimeValue: Double
     
     /** If this flag is set to `TRUE` this field represents, a date with an optional time. If it is set to `FALSE` only the time is used here. */
-    var IsDate: Boolean = js.native
+    var IsDate: Boolean
     
     /**
       * If this flag is set to false the author will be overridden by the current author each time the document is saved. If this flag is set to `FALSE` the
       * date or time is always displayed as the current date or time.
       * @since OOo 1.1.2
       */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
     
     /**
       * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
       * language.
       */
-    var IsFixedLanguage: Boolean = js.native
+    var IsFixedLanguage: Boolean
     
     /**
       * this is the number format for this field.
       * @see com.sun.star.util.NumberFormatter
       */
-    var NumberFormat: Double = js.native
+    var NumberFormat: Double
   }
   object PrintDateTime {
     
@@ -829,21 +838,22 @@ object docinfo {
     * specifies service of a text field that provides the revision that is contained in the document information.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait Revision extends TextField_ {
+  trait Revision
+    extends StObject
+       with TextField_ {
     
     /** contains content information. */
-    var Content: String = js.native
+    var Content: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to `FALSE` the content updated every time the document information is changed. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object Revision {
     
@@ -898,21 +908,22 @@ object docinfo {
     * specifies service of a text field that provides the subject that is contained in the document information.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait Subject extends TextField_ {
+  trait Subject
+    extends StObject
+       with TextField_ {
     
     /** contains content information. */
-    var Content: String = js.native
+    var Content: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to `FALSE` the content updated every time the document information is changed. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object Subject {
     
@@ -967,21 +978,22 @@ object docinfo {
     * specifies service of a text field that provides the title that is contained in the document information.
     * @see com.sun.star.text.TextField
     */
-  @js.native
-  trait Title extends TextField_ {
+  trait Title
+    extends StObject
+       with TextField_ {
     
     /** contains content information. */
-    var Content: String = js.native
+    var Content: String
     
     /**
       * contains the current content of the text field.
       *
       * This property is especially useful for import/export purposes.
       */
-    var CurrentPresentation: String = js.native
+    var CurrentPresentation: String
     
     /** If this flag is set to `FALSE` the content updated every time the document information is changed. */
-    var IsFixed: Boolean = js.native
+    var IsFixed: Boolean
   }
   object Title {
     

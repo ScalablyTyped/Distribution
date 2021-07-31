@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PivotItem object, for use in `pivotItem.set({ ... })`. */
-@js.native
 trait PivotItemUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PivotItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PivotItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PivotItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PivotItemUpdateData {
   

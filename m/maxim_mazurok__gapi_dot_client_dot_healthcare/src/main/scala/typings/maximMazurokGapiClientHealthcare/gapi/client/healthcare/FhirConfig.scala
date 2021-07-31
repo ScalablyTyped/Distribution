@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FhirConfig extends StObject {
   
   /**
     * Specifies FHIR paths to match and how to transform them. Any field that is not matched by a FieldMetadata is passed through to the output dataset unmodified. All extensions are
     * removed in the output.
     */
-  var fieldMetadataList: js.UndefOr[js.Array[FieldMetadata]] = js.native
+  var fieldMetadataList: js.UndefOr[js.Array[FieldMetadata]] = js.undefined
 }
 object FhirConfig {
   

@@ -2,13 +2,11 @@ package typings.highlightJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VuePlugin extends StObject {
   
-  def install(vue: js.Any): Unit = js.native
+  def install(vue: js.Any): Unit
 }
 object VuePlugin {
   

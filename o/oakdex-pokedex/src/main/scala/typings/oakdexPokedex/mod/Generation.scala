@@ -2,19 +2,17 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Generation extends StObject {
   
-  var dex_name: String = js.native
+  var dex_name: String
   
-  var games: js.Array[Translations] = js.native
+  var games: js.Array[Translations]
   
-  var names: Translations = js.native
+  var names: Translations
   
-  var number: Double = js.native
+  var number: Double
 }
 object Generation {
   

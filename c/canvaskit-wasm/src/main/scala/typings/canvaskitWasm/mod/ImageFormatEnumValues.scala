@@ -2,19 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageFormatEnumValues extends EmbindEnum {
+trait ImageFormatEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var JPEG: EncodedImageFormat = js.native
+  var JPEG: EncodedImageFormat
   
   // TODO(kjlubick) When these are compiled in depending on the availability of the codecs,
   //   be sure to make these nullable.
-  var PNG: EncodedImageFormat = js.native
+  var PNG: EncodedImageFormat
   
-  var WEBP: EncodedImageFormat = js.native
+  var WEBP: EncodedImageFormat
 }
 object ImageFormatEnumValues {
   

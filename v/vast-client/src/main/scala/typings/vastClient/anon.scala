@@ -6,7 +6,6 @@ import typings.vastClient.mod.VastAdExtension
 import typings.vastClient.mod.VastSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -19,10 +18,9 @@ object anon {
   }
   
   /* Inlined std.Pick<vast-client.vast-client.VastError, 'ERRORCODE'> */
-  @js.native
   trait PickVastErrorERRORCODE extends StObject {
     
-    var ERRORCODE: String | Double = js.native
+    var ERRORCODE: String | Double
   }
   object PickVastErrorERRORCODE {
     
@@ -41,14 +39,13 @@ object anon {
   }
   
   /* Inlined std.Pick<vast-client.vast-client.VastError, std.Exclude<keyof vast-client.vast-client.VastError, 'ERRORCODE'>> */
-  @js.native
   trait PickVastErrorExcludekeyof extends StObject {
     
-    var ERRORMESSAGE: js.UndefOr[String] = js.native
+    var ERRORMESSAGE: js.UndefOr[String] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[VastAdExtension]] = js.native
+    var extensions: js.UndefOr[js.Array[VastAdExtension]] = js.undefined
     
-    var system: js.UndefOr[VastSystem | String | Null] = js.native
+    var system: js.UndefOr[VastSystem | String | Null] = js.undefined
   }
   object PickVastErrorExcludekeyof {
     
@@ -87,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Timeout extends StObject {
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var withCredentials: Boolean = js.native
+    var withCredentials: Boolean
   }
   object Timeout {
     

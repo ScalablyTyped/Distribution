@@ -2,39 +2,37 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents all the details pertaining to an event.
   */
-@js.native
 trait SchemaEventData extends StObject {
   
   /**
     * Type of interaction with the object. Eg: &#39;play&#39;.
     */
-  var eventAction: js.UndefOr[String] = js.native
+  var eventAction: js.UndefOr[String] = js.undefined
   
   /**
     * The object on the page that was interacted with. Eg: &#39;Video&#39;.
     */
-  var eventCategory: js.UndefOr[String] = js.native
+  var eventCategory: js.UndefOr[String] = js.undefined
   
   /**
     * Number of such events in this activity.
     */
-  var eventCount: js.UndefOr[String] = js.native
+  var eventCount: js.UndefOr[String] = js.undefined
   
   /**
     * Label attached with the event.
     */
-  var eventLabel: js.UndefOr[String] = js.native
+  var eventLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Numeric value associated with the event.
     */
-  var eventValue: js.UndefOr[String] = js.native
+  var eventValue: js.UndefOr[String] = js.undefined
 }
 object SchemaEventData {
   

@@ -9,11 +9,9 @@ import typings.themeUi.anon.PinStyledTagsSystemStyleO
 import typings.themeUi.themeUiNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent theme-ui.theme-ui.Omit<styled-system.styled-system.Theme<styled-system.styled-system.TLengthStyledSystem>, 'colors' | 'buttons'> */
-@js.native
 trait Theme extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/alert#variants
     */
-  var alerts: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var alerts: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   /**
     * Badge variants can be defined in `theme.badges`. The `Badge` component uses
@@ -34,32 +32,32 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/badge#variants
     */
-  var badges: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var badges: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   var borderStyles: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var borderWidths: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var borders: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var breakpoints: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Button variants can be defined in the `theme.buttons` object. The `Button`
@@ -69,7 +67,7 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/button#variants
     */
-  var buttons: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var buttons: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   /**
     * Card style variants can be defined in `the theme.cards` object. By default
@@ -79,37 +77,37 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/card#variants
     */
-  var cards: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var cards: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   var colorStyles: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Define the colors that are available through this theme
     */
-  var colors: js.UndefOr[ColorModemodeskstringColo] = js.native
+  var colors: js.UndefOr[ColorModemodeskstringColo] = js.undefined
   
   var fontSizes: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var fontWeights: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var fonts: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Label variants can be defined in `theme.forms` and the component uses the
@@ -143,7 +141,7 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/checkbox#variants
     * @see https://theme-ui.com/components/slider#variants
     */
-  var forms: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var forms: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   /**
     * You can define additional CSS grid layouts by adding variants to the
@@ -154,7 +152,7 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/grid#variants
     */
-  var grids: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var grids: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   /**
     * Image style variants can be defined in the `theme.images` object.
@@ -163,7 +161,7 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/image#variants
     */
-  var images: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var images: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   /**
     * The key used for the top-level color palette in `theme.colors`.
@@ -171,7 +169,7 @@ trait Theme extends StObject {
     * @defaultValue 'default'
     * @see https://theme-ui.com/theming#configuration-flags
     */
-  var initialColorModeName: js.UndefOr[String] = js.native
+  var initialColorModeName: js.UndefOr[String] = js.undefined
   
   /**
     * Container variants can be defined in the `theme.layout` object. The
@@ -182,21 +180,21 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/container#variants
     */
-  var layout: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var layout: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   var letterSpacings: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var lineHeights: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Link variants can be defined in the `theme.links` object. By default the
@@ -206,9 +204,9 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/link#variants
     */
-  var links: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var links: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
-  var mediaQueries: js.UndefOr[StringDictionary[String]] = js.native
+  var mediaQueries: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Message variants can be defined in the `theme.messages` object.
@@ -217,35 +215,35 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/message#variants
     */
-  var messages: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var messages: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   var radii: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var shadows: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var sizes: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   var space: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Styles for elements rendered in MDX can be added to the theme.styles
@@ -254,7 +252,7 @@ trait Theme extends StObject {
     * with @styled-system/css and have access to base theme values like colors,
     * fonts, etc.
     */
-  var styles: js.UndefOr[PinStyledTagsSystemStyleO] = js.native
+  var styles: js.UndefOr[PinStyledTagsSystemStyleO] = js.undefined
   
   /**
     * Text style variants can be defined in the `theme.text` object. The `Text`
@@ -264,11 +262,11 @@ trait Theme extends StObject {
     * @see https://theme-ui.com/components/variants
     * @see https://theme-ui.com/components/text#variants
     */
-  var text: js.UndefOr[Record[String, SystemStyleObject]] = js.native
+  var text: js.UndefOr[Record[String, SystemStyleObject]] = js.undefined
   
   var textStyles: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`], /* keyof any */ String]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Adds styles defined in `theme.styles.roo`t to the `<body>` element along
@@ -277,7 +275,7 @@ trait Theme extends StObject {
     * @defaultValue true
     * @see https://theme-ui.com/color-modes#applying-colors
     */
-  var useBodyStyles: js.UndefOr[Boolean] = js.native
+  var useBodyStyles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Adds a global `box-sizing: border-box` style.
@@ -285,7 +283,7 @@ trait Theme extends StObject {
     * @defaultValue true
     * @see https://theme-ui.com/theming#configuration-flags
     */
-  var useBorderBox: js.UndefOr[Boolean] = js.native
+  var useBorderBox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Initializes the color mode based on the `prefers-color-scheme` media
@@ -294,7 +292,7 @@ trait Theme extends StObject {
     * @defaultValue false
     * @see https://theme-ui.com/color-modes#initialize-mode-with-prefers-color-scheme-media-query
     */
-  var useColorSchemeMediaQuery: js.UndefOr[Boolean] = js.native
+  var useColorSchemeMediaQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable/disable custom CSS properties/variables if lower browser
@@ -303,7 +301,7 @@ trait Theme extends StObject {
     * @defaultValue true
     * @see https://theme-ui.com/color-modes/#turn-off-custom-properties
     */
-  var useCustomProperties: js.UndefOr[Boolean] = js.native
+  var useCustomProperties: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Persists the color mode in `localStorage`.
@@ -311,14 +309,14 @@ trait Theme extends StObject {
     * @defaultValue true
     * @see https://theme-ui.com/color-modes#disable-persisting-color-mode-on-localstorage
     */
-  var useLocalStorage: js.UndefOr[Boolean] = js.native
+  var useLocalStorage: js.UndefOr[Boolean] = js.undefined
   
   var zIndices: js.UndefOr[
     typings.styledSystem.mod.ObjectOrArray[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any, 
       /* keyof any */ String
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Theme {
   
@@ -346,7 +344,7 @@ object Theme {
     @scala.inline
     def setBorderStyles(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
@@ -355,12 +353,14 @@ object Theme {
     def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
     
     @scala.inline
-    def setBorderStylesVarargs(value: js.Any*): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
+    def setBorderStylesVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any)*
+    ): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
     
     @scala.inline
     def setBorderWidths(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
@@ -369,12 +369,14 @@ object Theme {
     def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
     
     @scala.inline
-    def setBorderWidthsVarargs(value: js.Any*): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
+    def setBorderWidthsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
     
     @scala.inline
     def setBorders(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
@@ -383,7 +385,9 @@ object Theme {
     def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def setBordersVarargs(value: js.Any*): Self = StObject.set(x, "borders", js.Array(value :_*))
+    def setBordersVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any)*
+    ): Self = StObject.set(x, "borders", js.Array(value :_*))
     
     @scala.inline
     def setBreakpoints(value: typings.styledSystem.mod.ObjectOrArray[Double | String | js.Symbol, /* keyof any */ String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
@@ -426,7 +430,7 @@ object Theme {
     @scala.inline
     def setFontSizes(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
@@ -435,12 +439,14 @@ object Theme {
     def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
     @scala.inline
-    def setFontSizesVarargs(value: js.Any*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+    def setFontSizesVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any)*
+    ): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
     
     @scala.inline
     def setFontWeights(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
@@ -449,12 +455,14 @@ object Theme {
     def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
     
     @scala.inline
-    def setFontWeightsVarargs(value: js.Any*): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
+    def setFontWeightsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any)*
+    ): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
     
     @scala.inline
     def setFonts(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
@@ -463,7 +471,9 @@ object Theme {
     def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
     @scala.inline
-    def setFontsVarargs(value: js.Any*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    def setFontsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any)*
+    ): Self = StObject.set(x, "fonts", js.Array(value :_*))
     
     @scala.inline
     def setForms(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
@@ -498,7 +508,7 @@ object Theme {
     @scala.inline
     def setLetterSpacings(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
@@ -507,12 +517,14 @@ object Theme {
     def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
     
     @scala.inline
-    def setLetterSpacingsVarargs(value: js.Any*): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
+    def setLetterSpacingsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
     
     @scala.inline
     def setLineHeights(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
@@ -521,7 +533,9 @@ object Theme {
     def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
     
     @scala.inline
-    def setLineHeightsVarargs(value: js.Any*): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
+    def setLineHeightsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
     
     @scala.inline
     def setLinks(value: Record[String, SystemStyleObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
@@ -544,7 +558,7 @@ object Theme {
     @scala.inline
     def setRadii(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
@@ -553,12 +567,14 @@ object Theme {
     def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
     
     @scala.inline
-    def setRadiiVarargs(value: js.Any*): Self = StObject.set(x, "radii", js.Array(value :_*))
+    def setRadiiVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "radii", js.Array(value :_*))
     
     @scala.inline
     def setShadows(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
@@ -567,12 +583,14 @@ object Theme {
     def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def setShadowsVarargs(value: js.Any*): Self = StObject.set(x, "shadows", js.Array(value :_*))
+    def setShadowsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any)*
+    ): Self = StObject.set(x, "shadows", js.Array(value :_*))
     
     @scala.inline
     def setSizes(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
@@ -581,12 +599,14 @@ object Theme {
     def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
     @scala.inline
-    def setSizesVarargs(value: js.Any*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+    def setSizesVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any)*
+    ): Self = StObject.set(x, "sizes", js.Array(value :_*))
     
     @scala.inline
     def setSpace(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
@@ -595,7 +615,9 @@ object Theme {
     def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def setSpaceVarargs(value: js.Any*): Self = StObject.set(x, "space", js.Array(value :_*))
+    def setSpaceVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ js.Any)*
+    ): Self = StObject.set(x, "space", js.Array(value :_*))
     
     @scala.inline
     def setStyles(value: PinStyledTagsSystemStyleO): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
@@ -653,7 +675,7 @@ object Theme {
     @scala.inline
     def setZIndices(
       value: typings.styledSystem.mod.ObjectOrArray[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any, 
           /* keyof any */ String
         ]
     ): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
@@ -662,6 +684,8 @@ object Theme {
     def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
     
     @scala.inline
-    def setZIndicesVarargs(value: js.Any*): Self = StObject.set(x, "zIndices", js.Array(value :_*))
+    def setZIndicesVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any)*
+    ): Self = StObject.set(x, "zIndices", js.Array(value :_*))
   }
 }

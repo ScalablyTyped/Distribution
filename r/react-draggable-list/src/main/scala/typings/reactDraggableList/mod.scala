@@ -6,38 +6,36 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("react-draggable-list", JSImport.Default)
   @js.native
-  class default[I, C, T /* <: Component[Partial[TemplateProps[I, C]], js.Object, _] */] () extends DraggableList[I, C, T]
+  class default[I, C, T /* <: Component[Partial[TemplateProps[I, C]], js.Object, js.Any] */] () extends DraggableList[I, C, T]
   
   @js.native
-  trait DraggableList[I, C, T /* <: Component[Partial[TemplateProps[I, C]], js.Object, _] */]
+  trait DraggableList[I, C, T /* <: Component[Partial[TemplateProps[I, C]], js.Object, js.Any] */]
     extends Component[Props[I, C, T], js.Object, js.Any] {
     
     def getItemInstance(key: String): T = js.native
   }
   
-  @js.native
   trait Props[I, C, T] extends StObject {
     
-    var autoScrollMaxSpeed: js.UndefOr[Double] = js.native
+    var autoScrollMaxSpeed: js.UndefOr[Double] = js.undefined
     
-    var autoScrollRegionSize: js.UndefOr[Double] = js.native
+    var autoScrollRegionSize: js.UndefOr[Double] = js.undefined
     
-    var commonProps: js.UndefOr[C] = js.native
+    var commonProps: js.UndefOr[C] = js.undefined
     
-    var constrainDrag: js.UndefOr[Boolean] = js.native
+    var constrainDrag: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[js.Function0[js.UndefOr[HTMLElement | Null]]] = js.native
+    var container: js.UndefOr[js.Function0[js.UndefOr[HTMLElement | Null]]] = js.undefined
     
-    var itemKey: String | (js.Function1[/* item */ I, String]) = js.native
+    var itemKey: String | (js.Function1[/* item */ I, String])
     
-    var list: js.Array[I] = js.native
+    var list: js.Array[I]
     
     var onMoveEnd: js.UndefOr[
         js.Function4[
@@ -47,15 +45,15 @@ object mod {
           /* newIndex */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var springConfig: js.UndefOr[js.Object] = js.native
+    var springConfig: js.UndefOr[js.Object] = js.undefined
     
-    var template: Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], T] = js.native
+    var template: Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], T]
     
-    var unsetZIndex: js.UndefOr[Boolean] = js.native
+    var unsetZIndex: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     
@@ -70,7 +68,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_, _, _], I, C, T] (val x: Self with (Props[I, C, T])) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?, ?, ?], I, C, T] (val x: Self & (Props[I, C, T])) extends AnyVal {
       
       @scala.inline
       def setAutoScrollMaxSpeed(value: Double): Self = StObject.set(x, "autoScrollMaxSpeed", value.asInstanceOf[js.Any])
@@ -145,18 +143,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TemplateProps[I, C] extends StObject {
     
-    var anySelected: Double = js.native
+    var anySelected: Double
     
-    var commonProps: C = js.native
+    var commonProps: C
     
-    var dragHandleProps: js.Object = js.native
+    var dragHandleProps: js.Object
     
-    var item: I = js.native
+    var item: I
     
-    var itemSelected: Double = js.native
+    var itemSelected: Double
   }
   object TemplateProps {
     
@@ -167,7 +164,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TemplatePropsMutableBuilder[Self <: TemplateProps[_, _], I, C] (val x: Self with (TemplateProps[I, C])) extends AnyVal {
+    implicit class TemplatePropsMutableBuilder[Self <: TemplateProps[?, ?], I, C] (val x: Self & (TemplateProps[I, C])) extends AnyVal {
       
       @scala.inline
       def setAnySelected(value: Double): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])

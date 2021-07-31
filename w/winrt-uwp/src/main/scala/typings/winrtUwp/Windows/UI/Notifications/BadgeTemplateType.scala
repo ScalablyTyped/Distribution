@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object BadgeTemplateType extends StObject {
   
   /** A system-provided glyph image. For more information, see Badge overview. */
   @js.native
-  sealed trait badgeGlyph extends BadgeTemplateType
+  sealed trait badgeGlyph
+    extends StObject
+       with BadgeTemplateType
   
   /** A numerical value from 1 to 99. Values greater than 99 are accepted, but in those cases "99+" is displayed instead of the actual number. In scenarios where your numbers are expected to be greater than 99, you should consider using a glyph instead. */
   @js.native
-  sealed trait badgeNumber extends BadgeTemplateType
+  sealed trait badgeNumber
+    extends StObject
+       with BadgeTemplateType
 }

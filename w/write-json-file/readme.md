@@ -10,9 +10,9 @@ Stringify and write JSON to a file atomically
 | ------------------ | :-------------: |
 | Full name          | write-json-file |
 | Keywords           | write, json, stringify, file, fs, graceful, stable, sort, newline, indent, atomic, atomically |
-| # releases         | 10 |
-| # dependents       | 223 |
-| # downloads        | 90320276 |
+| # releases         | 8 |
+| # dependents       | 239 |
+| # downloads        | 110703552 |
 | # stars            | 10 |
 
 ## Links

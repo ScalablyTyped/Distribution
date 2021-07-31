@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassifierGrokClassifier extends StObject {
   
   /**
     * An identifier of the data format that the classifier matches.
     */
-  var classification: String = js.native
+  var classification: String
   
   /**
     * Custom grok patterns used by this classifier.
     */
-  var customPatterns: js.UndefOr[String] = js.native
+  var customPatterns: js.UndefOr[String] = js.undefined
   
   /**
     * The grok pattern used by this classifier.
     */
-  var grokPattern: String = js.native
+  var grokPattern: String
 }
 object ClassifierGrokClassifier {
   

@@ -3,36 +3,34 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSiteMod {
   
-  @JSImport("@pulumi/aws/outposts/getSite", "getSite")
+  @JSImport("@pulumi/aws/outposts/getSite", JSImport.Namespace)
   @js.native
-  def getSite(): js.Promise[GetSiteResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getSite", "getSite")
-  @js.native
-  def getSite(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSiteResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getSite", "getSite")
-  @js.native
-  def getSite(args: GetSiteArgs): js.Promise[GetSiteResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getSite", "getSite")
-  @js.native
-  def getSite(args: GetSiteArgs, opts: InvokeOptions): js.Promise[GetSiteResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSite(): js.Promise[GetSiteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSite")().asInstanceOf[js.Promise[GetSiteResult]]
+  @scala.inline
+  def getSite(args: Unit, opts: InvokeOptions): js.Promise[GetSiteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSite")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSiteResult]]
+  @scala.inline
+  def getSite(args: GetSiteArgs): js.Promise[GetSiteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSite")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSiteResult]]
+  @scala.inline
+  def getSite(args: GetSiteArgs, opts: InvokeOptions): js.Promise[GetSiteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSite")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSiteResult]]
+  
   trait GetSiteArgs extends StObject {
     
     /**
       * Identifier of the Site.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the Site.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object GetSiteArgs {
     
@@ -59,22 +57,21 @@ object getSiteMod {
     }
   }
   
-  @js.native
   trait GetSiteResult extends StObject {
     
     /**
       * AWS Account identifier.
       */
-    val accountId: String = js.native
+    val accountId: String
     
     /**
       * Description.
       */
-    val description: String = js.native
+    val description: String
     
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetSiteResult {
     

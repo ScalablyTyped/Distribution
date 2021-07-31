@@ -3,22 +3,20 @@ package typings.firefox
 import typings.std.DOMError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMRequest[T] extends StObject {
   
-  var error: DOMError = js.native
+  var error: DOMError
   
-  var onerror: js.Function = js.native
+  var onerror: js.Function
   
-  var onsuccess: js.Function = js.native
+  var onsuccess: js.Function
   
-  var readyState: String = js.native
+  var readyState: String
   
   // "done" or "pending"
-  var result: T = js.native
+  var result: T
 }
 object DOMRequest {
   
@@ -29,7 +27,7 @@ object DOMRequest {
   }
   
   @scala.inline
-  implicit class DOMRequestMutableBuilder[Self <: DOMRequest[_], T] (val x: Self with DOMRequest[T]) extends AnyVal {
+  implicit class DOMRequestMutableBuilder[Self <: DOMRequest[?], T] (val x: Self & DOMRequest[T]) extends AnyVal {
     
     @scala.inline
     def setError(value: DOMError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerManagementEvent extends StObject {
   
   /** For BATTERY_LEVEL_COLLECTED events, the battery level as a percentage. */
-  var batteryLevel: js.UndefOr[Double] = js.native
+  var batteryLevel: js.UndefOr[Double] = js.undefined
   
   /** The creation time of the event. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Event type. */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
 }
 object PowerManagementEvent {
   

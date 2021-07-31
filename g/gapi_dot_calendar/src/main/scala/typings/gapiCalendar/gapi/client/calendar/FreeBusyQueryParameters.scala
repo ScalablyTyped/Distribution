@@ -3,23 +3,21 @@ package typings.gapiCalendar.gapi.client.calendar
 import typings.gapiCalendar.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreeBusyQueryParameters extends StObject {
   
-  var calendarExpansionMax: js.UndefOr[integer] = js.native
+  var calendarExpansionMax: js.UndefOr[integer] = js.undefined
   
-  var groupExpansionMax: js.UndefOr[integer] = js.native
+  var groupExpansionMax: js.UndefOr[integer] = js.undefined
   
-  var items: js.Array[Id] = js.native
+  var items: js.Array[Id]
   
-  var timeMax: datetime = js.native
+  var timeMax: datetime
   
-  var timeMin: datetime = js.native
+  var timeMin: datetime
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object FreeBusyQueryParameters {
   

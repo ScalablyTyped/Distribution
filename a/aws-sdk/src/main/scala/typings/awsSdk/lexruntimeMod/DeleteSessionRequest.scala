@@ -2,26 +2,24 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSessionRequest extends StObject {
   
   /**
     * The alias in use for the bot that contains the session data.
     */
-  var botAlias: BotAlias = js.native
+  var botAlias: BotAlias
   
   /**
     * The name of the bot that contains the session data.
     */
-  var botName: BotName = js.native
+  var botName: BotName
   
   /**
     * The identifier of the user associated with the session data.
     */
-  var userId: UserId = js.native
+  var userId: UserId
 }
 object DeleteSessionRequest {
   

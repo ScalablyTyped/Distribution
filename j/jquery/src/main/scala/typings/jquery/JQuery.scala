@@ -259,13 +259,13 @@ import typings.sizzle.mod.Selectors.PreFilterFunctions
 import typings.sizzle.mod.Selectors.PseudoFunction
 import typings.sizzle.mod.Selectors.PseudoFunctions
 import typings.sizzle.mod.Selectors.SetFilterFunctions
+import typings.std.Array
 import typings.std.ArrayLike
 import typings.std.Comment
 import typings.std.Document
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.EventTarget
-import typings.std.FlatArray
 import typings.std.HTMLAllCollection
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAppletElement
@@ -340,7 +340,6 @@ import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
 import typings.std.Iterable
-import typings.std.IterableIterator
 import typings.std.Partial
 import typings.std.Pick
 import typings.std.RegExp
@@ -402,15 +401,14 @@ import typings.std.TouchList
 import typings.std.Window
 import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestResponseType
-import typings.std.anon.CopyWithin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery[TElement]
-  extends Iterable[TElement]
+  extends StObject
+     with Iterable[TElement]
      with /* n */ NumberDictionary[TElement] {
   
   // TODO: The return type should reflect newly selected types.
@@ -557,8 +555,10 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def add(selector_elements_html_selection: Node | Selector | TypeOrArray[Element] | htmlString): this.type = js.native
+  def add(selector_elements_html_selection: Selector | htmlString): this.type = js.native
   def add(selector_elements_html_selection: JQuery[HTMLElement]): this.type = js.native
+  def add(selector_elements_html_selection: Node): this.type = js.native
+  def add(selector_elements_html_selection: TypeOrArray[Element]): this.type = js.native
   /**
     * Create a new jQuery object with elements added to the set of matched elements.
     * @param selector A string representing a selector expression to find additional elements to add to the set of matched elements.
@@ -890,9 +890,9 @@ trait JQuery[TElement]
   def ajaxComplete_false(
     handler: js.ThisFunction3[
       /* this */ Document, 
-      /* event */ TriggeredEvent[Document, js.UndefOr[scala.Nothing], Document, Document], 
-      /* jqXHR */ jqXHR[_], 
-      /* ajaxOptions */ AjaxSettings[_], 
+      /* event */ TriggeredEvent[Document, Unit, Document, Document], 
+      /* jqXHR */ jqXHR[js.Any], 
+      /* ajaxOptions */ AjaxSettings[js.Any], 
       Unit | `false`
     ]
   ): this.type = js.native
@@ -913,9 +913,9 @@ trait JQuery[TElement]
   def ajaxError_false(
     handler: js.ThisFunction4[
       /* this */ Document, 
-      /* event */ TriggeredEvent[Document, js.UndefOr[scala.Nothing], Document, Document], 
-      /* jqXHR */ jqXHR[_], 
-      /* ajaxSettings */ AjaxSettings[_], 
+      /* event */ TriggeredEvent[Document, Unit, Document, Document], 
+      /* jqXHR */ jqXHR[js.Any], 
+      /* ajaxSettings */ AjaxSettings[js.Any], 
       /* thrownError */ String, 
       Unit | `false`
     ]
@@ -937,9 +937,9 @@ trait JQuery[TElement]
   def ajaxSend_false(
     handler: js.ThisFunction3[
       /* this */ Document, 
-      /* event */ TriggeredEvent[Document, js.UndefOr[scala.Nothing], Document, Document], 
-      /* jqXHR */ jqXHR[_], 
-      /* ajaxOptions */ AjaxSettings[_], 
+      /* event */ TriggeredEvent[Document, Unit, Document, Document], 
+      /* jqXHR */ jqXHR[js.Any], 
+      /* ajaxOptions */ AjaxSettings[js.Any], 
       Unit | `false`
     ]
   ): this.type = js.native
@@ -990,10 +990,10 @@ trait JQuery[TElement]
   def ajaxSuccess_false(
     handler: js.ThisFunction4[
       /* this */ Document, 
-      /* event */ TriggeredEvent[Document, js.UndefOr[scala.Nothing], Document, Document], 
-      /* jqXHR */ jqXHR[_], 
-      /* ajaxOptions */ AjaxSettings[_], 
-      /* data */ PlainObject[_], 
+      /* event */ TriggeredEvent[Document, Unit, Document, Document], 
+      /* jqXHR */ jqXHR[js.Any], 
+      /* ajaxOptions */ AjaxSettings[js.Any], 
+      /* data */ PlainObject[js.Any], 
       Unit | `false`
     ]
   ): this.type = js.native
@@ -1005,11 +1005,11 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/animate/ }\`
     * @since 1.0
     */
-  def animate(properties: PlainObject[_]): this.type = js.native
-  def animate(properties: PlainObject[_], complete: js.ThisFunction0[/* this */ TElement, Unit]): this.type = js.native
-  def animate(properties: PlainObject[_], duration_easing: String): this.type = js.native
+  def animate(properties: PlainObject[js.Any]): this.type = js.native
+  def animate(properties: PlainObject[js.Any], complete: js.ThisFunction0[/* this */ TElement, Unit]): this.type = js.native
+  def animate(properties: PlainObject[js.Any], duration_easing: String): this.type = js.native
   def animate(
-    properties: PlainObject[_],
+    properties: PlainObject[js.Any],
     duration_easing: String,
     complete: js.ThisFunction0[/* this */ TElement, Unit]
   ): this.type = js.native
@@ -1114,9 +1114,9 @@ trait JQuery[TElement]
   }, 500 );
   ```
     */
-  def animate(properties: PlainObject[_], duration_easing: Duration): this.type = js.native
+  def animate(properties: PlainObject[js.Any], duration_easing: Duration): this.type = js.native
   def animate(
-    properties: PlainObject[_],
+    properties: PlainObject[js.Any],
     duration_easing: Duration,
     complete: js.ThisFunction0[/* this */ TElement, Unit]
   ): this.type = js.native
@@ -1145,9 +1145,9 @@ trait JQuery[TElement]
   });
   ```
     */
-  def animate(properties: PlainObject[_], duration: Duration, easing: String): this.type = js.native
+  def animate(properties: PlainObject[js.Any], duration: Duration, easing: String): this.type = js.native
   def animate(
-    properties: PlainObject[_],
+    properties: PlainObject[js.Any],
     duration: Duration,
     easing: String,
     complete: js.ThisFunction0[/* this */ TElement, Unit]
@@ -1301,7 +1301,7 @@ trait JQuery[TElement]
   });
   ```
     */
-  def animate(properties: PlainObject[_], options: EffectsOptions[TElement]): this.type = js.native
+  def animate(properties: PlainObject[js.Any], options: EffectsOptions[TElement]): this.type = js.native
   
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
@@ -1439,8 +1439,9 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def appendTo(target: Selector | (TypeOrArray[Element | DocumentFragment]) | htmlString): this.type = js.native
+  def appendTo(target: Selector | htmlString): this.type = js.native
   def appendTo(target: JQuery[HTMLElement]): this.type = js.native
+  def appendTo(target: TypeOrArray[Element | DocumentFragment]): this.type = js.native
   
   /**
     * Set one or more attributes for the set of matched elements.
@@ -1571,7 +1572,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def attr(attributes: PlainObject[_]): this.type = js.native
+  def attr(attributes: PlainObject[js.Any]): this.type = js.native
   /**
     * Get the value of an attribute for the first element in the set of matched elements.
     * @param attributeName The name of the attribute to get.
@@ -1782,7 +1783,7 @@ trait JQuery[TElement]
   });
   ```
     */
-  def bind(events: TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], TElement, TElement]): this.type = js.native
+  def bind(events: TypeEventHandlers[TElement, Unit, TElement, TElement]): this.type = js.native
   /**
     * Attach a handler to an event for the elements.
     * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
@@ -1912,7 +1913,7 @@ trait JQuery[TElement]
   def bind[TType /* <: String */](eventType: TType): this.type = js.native
   def bind[TType /* <: String */](
     eventType: TType,
-    handler_preventBubble: TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
+    handler_preventBubble: TypeEventHandler[TElement, Unit, TElement, TElement, TType]
   ): this.type = js.native
   // [bind() overloads] https://github.com/jquery/api.jquery.com/issues/1048
   /**
@@ -2362,9 +2363,9 @@ trait JQuery[TElement]
   @JSName("click")
   def click_false(handler: `false`): this.type = js.native
   
-  def clone(withDataAndEvents: js.UndefOr[scala.Nothing], deepWithDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean): this.type = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): this.type = js.native
+  def clone(withDataAndEvents: Unit, deepWithDataAndEvents: Boolean): this.type = js.native
   
   def closest(selector_selection_element: JQuery[HTMLElement]): this.type = js.native
   /**
@@ -2917,7 +2918,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/data/ }\`
     * @since 1.4
     */
-  def data(): PlainObject[_] = js.native
+  def data(): PlainObject[js.Any] = js.native
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     * @param key Name of the data stored.
@@ -2989,6 +2990,11 @@ trait JQuery[TElement]
   ```
     */
   def data(key: String): js.Any = js.native
+  def data(key: String, value: String): this.type = js.native
+  def data(key: String, value: js.Object): this.type = js.native
+  def data(key: String, value: js.Symbol): this.type = js.native
+  def data(key: String, value: Boolean): this.type = js.native
+  def data(key: String, value: Double): this.type = js.native
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     * @param key Name of the data stored.
@@ -3000,19 +3006,14 @@ trait JQuery[TElement]
   // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
   // results in potential confusion for users from an unexpected parameter.
   // tslint:disable-next-line:unified-signatures
-  def data(key: String, value: js.UndefOr[scala.Nothing]): js.Any = js.native
-  def data(key: String, value: String): this.type = js.native
-  def data(key: String, value: js.Object): this.type = js.native
-  def data(key: String, value: js.Symbol): this.type = js.native
-  def data(key: String, value: Boolean): this.type = js.native
-  def data(key: String, value: Double): this.type = js.native
+  def data(key: String, value: Unit): js.Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     * @param obj An object of key-value pairs of data to update.
     * @see \`{@link https://api.jquery.com/data/ }\`
     * @since 1.4.3
     */
-  def data(obj: PlainObject[_]): this.type = js.native
+  def data(obj: PlainObject[js.Any]): this.type = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     * @param key A string naming the piece of data to set.
@@ -3194,7 +3195,7 @@ trait JQuery[TElement]
     *
     * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
     */
-  def delegate(selector: Selector, events: TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], _, _]): this.type = js.native
+  def delegate(selector: Selector, events: TypeEventHandlers[TElement, Unit, js.Any, js.Any]): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
     * @param selector A selector to filter the elements that trigger the event.
@@ -3309,7 +3310,7 @@ trait JQuery[TElement]
   def delegate[TType /* <: String */](
     selector: Selector,
     eventType: TType,
-    handler: TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
+    handler: TypeEventHandler[TElement, Unit, js.Any, js.Any, TType]
   ): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
@@ -3330,7 +3331,7 @@ trait JQuery[TElement]
     selector: Selector,
     eventType: TType,
     eventData: TData,
-    handler: TypeEventHandler[TElement, TData, _, _, TType]
+    handler: TypeEventHandler[TElement, TData, js.Any, js.Any, TType]
   ): this.type = js.native
   @JSName("delegate")
   def delegate_false[TType /* <: String */](selector: Selector, eventType: TType, handler: `false`): this.type = js.native
@@ -6892,8 +6893,9 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def insertAfter(target: Selector | TypeOrArray[typings.std.Node] | htmlString): this.type = js.native
+  def insertAfter(target: Selector | htmlString): this.type = js.native
   def insertAfter(target: JQuery[typings.std.Node]): this.type = js.native
+  def insertAfter(target: TypeOrArray[typings.std.Node]): this.type = js.native
   
   /**
     * Insert every element in the set of matched elements before the target.
@@ -6928,8 +6930,9 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def insertBefore(target: Selector | TypeOrArray[typings.std.Node] | htmlString): this.type = js.native
+  def insertBefore(target: Selector | htmlString): this.type = js.native
   def insertBefore(target: JQuery[typings.std.Node]): this.type = js.native
+  def insertBefore(target: TypeOrArray[typings.std.Node]): this.type = js.native
   
   def is(
     selector_function_selection_elements: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* element */ TElement, Boolean]
@@ -7623,11 +7626,11 @@ trait JQuery[TElement]
       /* this */ TElement, 
       /* responseText */ String, 
       /* textStatus */ TextStatus, 
-      /* jqXHR */ jqXHR[_], 
+      /* jqXHR */ jqXHR[js.Any], 
       Unit
     ]
   ): this.type = js.native
-  def load(url: String, complete_data: PlainObject[_]): this.type = js.native
+  def load(url: String, complete_data: PlainObject[js.Any]): this.type = js.native
   /**
     * Load data from the server and place the returned HTML into the matched element.
     * @param url A string containing the URL to which the request is sent.
@@ -7649,18 +7652,18 @@ trait JQuery[TElement]
       /* this */ TElement, 
       /* responseText */ String, 
       /* textStatus */ TextStatus, 
-      /* jqXHR */ jqXHR[_], 
+      /* jqXHR */ jqXHR[js.Any], 
       Unit
     ]
   ): this.type = js.native
   def load(
     url: String,
-    data: PlainObject[_],
+    data: PlainObject[js.Any],
     complete: js.ThisFunction3[
       /* this */ TElement, 
       /* responseText */ String, 
       /* textStatus */ TextStatus, 
-      /* jqXHR */ jqXHR[_], 
+      /* jqXHR */ jqXHR[js.Any], 
       Unit
     ]
   ): this.type = js.native
@@ -8610,7 +8613,7 @@ trait JQuery[TElement]
   ```
     */
   def nextUntil(): this.type = js.native
-  def nextUntil(selector_element: js.UndefOr[scala.Nothing], filter: Selector): this.type = js.native
+  def nextUntil(selector_element: Unit, filter: Selector): this.type = js.native
   def nextUntil(selector_element: JQuery[HTMLElement]): this.type = js.native
   def nextUntil(selector_element: Selector): this.type = js.native
   def nextUntil(selector_element: Selector, filter: Selector): this.type = js.native
@@ -8749,9 +8752,9 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/off/ }\`
     * @since 1.7
     */
-  def off(events: TypeEventHandlers[TElement, _, _, _]): this.type = js.native
-  def off(events: TypeEventHandlers[TElement, _, _, _], selector: Selector): this.type = js.native
-  def off(event: TriggeredEvent[TElement, _, _, _]): this.type = js.native
+  def off(events: TypeEventHandlers[TElement, js.Any, js.Any, js.Any]): this.type = js.native
+  def off(events: TypeEventHandlers[TElement, js.Any, js.Any, js.Any], selector: Selector): this.type = js.native
+  def off(event: TriggeredEvent[TElement, js.Any, js.Any, js.Any]): this.type = js.native
   /**
     * Remove an event handler.
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -8783,7 +8786,7 @@ trait JQuery[TElement]
     */
   def off[TType /* <: String */](events: TType): this.type = js.native
   def off[TType /* <: String */](events: TType, selector_handler: Selector): this.type = js.native
-  def off[TType /* <: String */](events: TType, selector_handler: TypeEventHandler[TElement, _, _, _, TType]): this.type = js.native
+  def off[TType /* <: String */](events: TType, selector_handler: TypeEventHandler[TElement, js.Any, js.Any, js.Any, TType]): this.type = js.native
   /**
     * Remove an event handler.
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -8851,7 +8854,11 @@ trait JQuery[TElement]
   $( "body" ).off( "click", "p", foo );
   ```
     */
-  def off[TType /* <: String */](events: TType, selector: Selector, handler: TypeEventHandler[TElement, _, _, _, TType]): this.type = js.native
+  def off[TType /* <: String */](
+    events: TType,
+    selector: Selector,
+    handler: TypeEventHandler[TElement, js.Any, js.Any, js.Any, TType]
+  ): this.type = js.native
   @JSName("off")
   def off_false[TType /* <: String */](events: TType, selector_handler: `false`): this.type = js.native
   @JSName("off")
@@ -9189,13 +9196,13 @@ trait JQuery[TElement]
   def on(events: String, selector_data: js.Any, handler: js.Function1[/* event */ JQueryEventObject, Unit]): this.type = js.native
   def on(
     events: String,
-    selector: js.UndefOr[scala.Nothing],
+    selector: Null,
     data: js.Any,
     handler: js.Function1[/* event */ JQueryEventObject, Unit]
   ): this.type = js.native
   def on(
     events: String,
-    selector: Null,
+    selector: Unit,
     data: js.Any,
     handler: js.Function1[/* event */ JQueryEventObject, Unit]
   ): this.type = js.native
@@ -9264,7 +9271,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def on(events: TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], TElement, TElement]): this.type = js.native
+  def on(events: TypeEventHandlers[TElement, Unit, TElement, TElement]): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9274,7 +9281,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/on/ }\`
     * @since 1.7
     */
-  def on(events: TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], _, _], selector: Selector): this.type = js.native
+  def on(events: TypeEventHandlers[TElement, Unit, js.Any, js.Any], selector: Selector): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9366,10 +9373,7 @@ trait JQuery[TElement]
   });
   ```
     */
-  def on[TType /* <: String */](
-    events: TType,
-    handler: TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
-  ): this.type = js.native
+  def on[TType /* <: String */](events: TType, handler: TypeEventHandler[TElement, Unit, TElement, TElement, TType]): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9433,7 +9437,7 @@ trait JQuery[TElement]
   def on[TType /* <: String */](
     events: TType,
     selector: Selector,
-    handler: TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
+    handler: TypeEventHandler[TElement, Unit, js.Any, js.Any, TType]
   ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -9444,11 +9448,6 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def on[TData](events: TypeEventHandlers[TElement, TData, TElement, TElement], data: TData): this.type = js.native
-  def on[TData](
-    events: TypeEventHandlers[TElement, TData, TElement, TElement],
-    selector: js.UndefOr[scala.Nothing],
-    data: TData
-  ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9460,6 +9459,7 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def on[TData](events: TypeEventHandlers[TElement, TData, TElement, TElement], selector: Null, data: TData): this.type = js.native
+  def on[TData](events: TypeEventHandlers[TElement, TData, TElement, TElement], selector: Unit, data: TData): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9470,7 +9470,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/on/ }\`
     * @since 1.7
     */
-  def on[TData](events: TypeEventHandlers[TElement, TData, _, _], selector: Selector, data: TData): this.type = js.native
+  def on[TData](events: TypeEventHandlers[TElement, TData, js.Any, js.Any], selector: Selector, data: TData): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9487,12 +9487,6 @@ trait JQuery[TElement]
   ```
     */
   def on[TType /* <: String */, TData](events: TType, data: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]): this.type = js.native
-  def on[TType /* <: String */, TData](
-    events: TType,
-    selector: js.UndefOr[scala.Nothing],
-    data: TData,
-    handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
-  ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9506,6 +9500,12 @@ trait JQuery[TElement]
   def on[TType /* <: String */, TData](
     events: TType,
     selector: Null,
+    data: TData,
+    handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
+  ): this.type = js.native
+  def on[TType /* <: String */, TData](
+    events: TType,
+    selector: Unit,
     data: TData,
     handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
@@ -9523,7 +9523,7 @@ trait JQuery[TElement]
     events: TType,
     selector: Selector,
     data: TData,
-    handler: TypeEventHandler[TElement, TData, _, _, TType]
+    handler: TypeEventHandler[TElement, TData, js.Any, js.Any, TType]
   ): this.type = js.native
   @JSName("on")
   def on_false[TType /* <: String */](events: TType, handler: `false`): this.type = js.native
@@ -9537,7 +9537,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one(events: TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], TElement, TElement]): this.type = js.native
+  def one(events: TypeEventHandlers[TElement, Unit, TElement, TElement]): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9547,7 +9547,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one(events: TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], _, _], selector: Selector): this.type = js.native
+  def one(events: TypeEventHandlers[TElement, Unit, js.Any, js.Any], selector: Selector): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9636,10 +9636,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def one[TType /* <: String */](
-    events: TType,
-    handler: TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
-  ): this.type = js.native
+  def one[TType /* <: String */](events: TType, handler: TypeEventHandler[TElement, Unit, TElement, TElement, TType]): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9653,7 +9650,7 @@ trait JQuery[TElement]
   def one[TType /* <: String */](
     events: TType,
     selector: Selector,
-    handler: TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
+    handler: TypeEventHandler[TElement, Unit, js.Any, js.Any, TType]
   ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -9664,11 +9661,6 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def one[TData](events: TypeEventHandlers[TElement, TData, TElement, TElement], data: TData): this.type = js.native
-  def one[TData](
-    events: TypeEventHandlers[TElement, TData, TElement, TElement],
-    selector: js.UndefOr[scala.Nothing],
-    data: TData
-  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9680,6 +9672,7 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def one[TData](events: TypeEventHandlers[TElement, TData, TElement, TElement], selector: Null, data: TData): this.type = js.native
+  def one[TData](events: TypeEventHandlers[TElement, TData, TElement, TElement], selector: Unit, data: TData): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -9690,7 +9683,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one[TData](events: TypeEventHandlers[TElement, TData, _, _], selector: Selector, data: TData): this.type = js.native
+  def one[TData](events: TypeEventHandlers[TElement, TData, js.Any, js.Any], selector: Selector, data: TData): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9700,12 +9693,6 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def one[TType /* <: String */, TData](events: TType, data: TData, handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]): this.type = js.native
-  def one[TType /* <: String */, TData](
-    events: TType,
-    selector: js.UndefOr[scala.Nothing],
-    data: TData,
-    handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
-  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9722,6 +9709,12 @@ trait JQuery[TElement]
     data: TData,
     handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
+  def one[TType /* <: String */, TData](
+    events: TType,
+    selector: Unit,
+    data: TData,
+    handler: TypeEventHandler[TElement, TData, TElement, TElement, TType]
+  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -9736,7 +9729,7 @@ trait JQuery[TElement]
     events: TType,
     selector: Selector,
     data: TData,
-    handler: TypeEventHandler[TElement, TData, _, _, TType]
+    handler: TypeEventHandler[TElement, TData, js.Any, js.Any, TType]
   ): this.type = js.native
   @JSName("one")
   def one_false[TType /* <: String */](events: TType, handler: `false`): this.type = js.native
@@ -10087,7 +10080,7 @@ trait JQuery[TElement]
   ```
     */
   def parentsUntil(): this.type = js.native
-  def parentsUntil(selector_element: js.UndefOr[scala.Nothing], filter: Selector): this.type = js.native
+  def parentsUntil(selector_element: Unit, filter: Selector): this.type = js.native
   def parentsUntil(selector_element: JQuery[HTMLElement]): this.type = js.native
   def parentsUntil(selector_element: Selector): this.type = js.native
   def parentsUntil(selector_element: Selector, filter: Selector): this.type = js.native
@@ -11071,8 +11064,9 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def prependTo(target: Selector | (TypeOrArray[Element | DocumentFragment]) | htmlString): this.type = js.native
+  def prependTo(target: Selector | htmlString): this.type = js.native
   def prependTo(target: JQuery[HTMLElement]): this.type = js.native
+  def prependTo(target: TypeOrArray[Element | DocumentFragment]): this.type = js.native
   
   /**
     * Get the immediately preceding sibling of each element in the set of matched elements. If a selector is provided, it retrieves the previous sibling only if it matches that selector.
@@ -11253,7 +11247,7 @@ trait JQuery[TElement]
   ```
     */
   def prevUntil(): this.type = js.native
-  def prevUntil(selector_element: js.UndefOr[scala.Nothing], filter: Selector): this.type = js.native
+  def prevUntil(selector_element: Unit, filter: Selector): this.type = js.native
   def prevUntil(selector_element: JQuery[HTMLElement]): this.type = js.native
   def prevUntil(selector_element: Selector): this.type = js.native
   def prevUntil(selector_element: Selector, filter: Selector): this.type = js.native
@@ -11366,15 +11360,15 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def promise(): Promise[this.type, _, _] = js.native
-  def promise(`type`: String): Promise[this.type, _, _] = js.native
+  def promise(): Promise[this.type, js.Any, js.Any] = js.native
+  def promise(`type`: String): Promise[this.type, js.Any, js.Any] = js.native
   /**
     * Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.
     * @param target Object onto which the promise methods have to be attached
     * @see \`{@link https://api.jquery.com/promise/ }\`
     * @since 1.6
     */
-  def promise[T /* <: js.Object */](target: T): T with (Promise[this.type, _, _]) = js.native
+  def promise[T /* <: js.Object */](target: T): T & (Promise[this.type, js.Any, js.Any]) = js.native
   /**
     * Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished.
     * @param type The type of queue that needs to be observed.
@@ -11382,7 +11376,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/promise/ }\`
     * @since 1.6
     */
-  def promise[T /* <: js.Object */](`type`: String, target: T): T with (Promise[this.type, _, _]) = js.native
+  def promise[T /* <: js.Object */](`type`: String, target: T): T & (Promise[this.type, js.Any, js.Any]) = js.native
   
   /**
     * Set one or more properties for the set of matched elements.
@@ -11424,7 +11418,7 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def prop(properties: PlainObject[_]): this.type = js.native
+  def prop(properties: PlainObject[js.Any]): this.type = js.native
   /**
     * Get the value of a property for the first element in the set of matched elements.
     * @param propertyName The name of the property to get.
@@ -11473,7 +11467,7 @@ trait JQuery[TElement]
   def prop(propertyName: String, value_function: js.Symbol): this.type = js.native
   def prop(
     propertyName: String,
-    value_function: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* oldPropertyValue */ js.Any, _]
+    value_function: js.ThisFunction2[/* this */ TElement, /* index */ Double, /* oldPropertyValue */ js.Any, js.Any]
   ): this.type = js.native
   def prop(propertyName: String, value_function: Boolean): this.type = js.native
   def prop(propertyName: String, value_function: Double): this.type = js.native
@@ -11513,7 +11507,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/pushStack/ }\`
     * @since 1.3
     */
-  def pushStack(elements: ArrayLike[Element], name: String, args: js.Array[_]): this.type = js.native
+  def pushStack(elements: ArrayLike[Element], name: String, args: js.Array[js.Any]): this.type = js.native
   
   /**
     * Show the queue of functions to be executed on the matched elements.
@@ -12112,7 +12106,6 @@ trait JQuery[TElement]
   def replaceAll(target: Selector): this.type = js.native
   def replaceAll(target: TypeOrArray[Element]): this.type = js.native
   
-  def replaceWith(newContent_function: Node | TypeOrArray[Element]): this.type = js.native
   def replaceWith(
     newContent_function: js.ThisFunction2[
       /* this */ TElement, 
@@ -12122,6 +12115,8 @@ trait JQuery[TElement]
     ]
   ): this.type = js.native
   def replaceWith(newContent_function: JQuery[Node]): this.type = js.native
+  def replaceWith(newContent_function: Node): this.type = js.native
+  def replaceWith(newContent_function: TypeOrArray[Element]): this.type = js.native
   /**
     * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
     * @param newContent_function _&#x40;param_ `newContent_function`
@@ -13591,9 +13586,9 @@ trait JQuery[TElement]
   ```
     */
   def stop(): this.type = js.native
-  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): this.type = js.native
   def stop(clearQueue: Boolean): this.type = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): this.type = js.native
+  def stop(clearQueue: Unit, jumpToEnd: Boolean): this.type = js.native
   /**
     * Stop the currently-running animation on the matched elements.
     * @param queue The name of the queue in which to stop animations.
@@ -13603,9 +13598,9 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def stop(queue: String): this.type = js.native
-  def stop(queue: String, clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): this.type = js.native
   def stop(queue: String, clearQueue: Boolean): this.type = js.native
   def stop(queue: String, clearQueue: Boolean, jumpToEnd: Boolean): this.type = js.native
+  def stop(queue: String, clearQueue: Unit, jumpToEnd: Boolean): this.type = js.native
   
   /**
     * Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
@@ -14238,16 +14233,16 @@ trait JQuery[TElement]
     */
   def trigger(eventType_event: String): this.type = js.native
   def trigger(eventType_event: String, extraParameters: String): this.type = js.native
-  def trigger(eventType_event: String, extraParameters: js.Array[_]): this.type = js.native
+  def trigger(eventType_event: String, extraParameters: js.Array[js.Any]): this.type = js.native
   def trigger(eventType_event: String, extraParameters: Boolean): this.type = js.native
   def trigger(eventType_event: String, extraParameters: Double): this.type = js.native
-  def trigger(eventType_event: String, extraParameters: PlainObject[_]): this.type = js.native
+  def trigger(eventType_event: String, extraParameters: PlainObject[js.Any]): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: String): this.type = js.native
-  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[_]): this.type = js.native
+  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[js.Any]): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: Boolean): this.type = js.native
   def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: Double): this.type = js.native
-  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[_]): this.type = js.native
+  def trigger(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[js.Any]): this.type = js.native
   
   /**
     * Execute all handlers attached to an element for an event.
@@ -14293,16 +14288,16 @@ trait JQuery[TElement]
     */
   def triggerHandler(eventType_event: String): js.Any = js.native
   def triggerHandler(eventType_event: String, extraParameters: String): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: js.Array[_]): js.Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: js.Array[js.Any]): js.Any = js.native
   def triggerHandler(eventType_event: String, extraParameters: Boolean): js.Any = js.native
   def triggerHandler(eventType_event: String, extraParameters: Double): js.Any = js.native
-  def triggerHandler(eventType_event: String, extraParameters: PlainObject[_]): js.Any = js.native
+  def triggerHandler(eventType_event: String, extraParameters: PlainObject[js.Any]): js.Any = js.native
   def triggerHandler(eventType_event: typings.jquery.JQuery.Event): js.Any = js.native
   def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: String): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[_]): js.Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: js.Array[js.Any]): js.Any = js.native
   def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: Boolean): js.Any = js.native
   def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: Double): js.Any = js.native
-  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[_]): js.Any = js.native
+  def triggerHandler(eventType_event: typings.jquery.JQuery.Event, extraParameters: PlainObject[js.Any]): js.Any = js.native
   
   /**
     * Remove a previously-attached event handler from the elements.
@@ -14326,7 +14321,7 @@ trait JQuery[TElement]
     */
   def unbind(): this.type = js.native
   def unbind(event: String): this.type = js.native
-  def unbind(event: TriggeredEvent[TElement, _, _, _]): this.type = js.native
+  def unbind(event: TriggeredEvent[TElement, js.Any, js.Any, js.Any]): this.type = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
@@ -14394,7 +14389,7 @@ trait JQuery[TElement]
   $( "p" ).unbind( "click", foo ); // ... foo will no longer be called.
   ```
     */
-  def unbind[TType /* <: String */](event: TType, handler: TypeEventHandler[TElement, _, TElement, TElement, TType]): this.type = js.native
+  def unbind[TType /* <: String */](event: TType, handler: TypeEventHandler[TElement, js.Any, TElement, TElement, TType]): this.type = js.native
   @JSName("unbind")
   def unbind_false[TType /* <: String */](event: TType, handler: `false`): this.type = js.native
   
@@ -14451,7 +14446,7 @@ trait JQuery[TElement]
     * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
     */
   def undelegate(selector: Selector, eventType_events: String): this.type = js.native
-  def undelegate(selector: Selector, eventType_events: TypeEventHandlers[TElement, _, _, _]): this.type = js.native
+  def undelegate(selector: Selector, eventType_events: TypeEventHandlers[TElement, js.Any, js.Any, js.Any]): this.type = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     * @param selector A selector which will be used to filter the event results.
@@ -14521,7 +14516,11 @@ trait JQuery[TElement]
   $( "body" ).undelegate( "p", "click", foo );
   ```
     */
-  def undelegate[TType /* <: String */](selector: Selector, eventType: TType, handler: TypeEventHandler[TElement, _, _, _, TType]): this.type = js.native
+  def undelegate[TType /* <: String */](
+    selector: Selector,
+    eventType: TType,
+    handler: TypeEventHandler[TElement, js.Any, js.Any, js.Any, TType]
+  ): this.type = js.native
   @JSName("undelegate")
   def undelegate_false[TType /* <: String */](selector: Selector, eventType: TType, handler: `false`): this.type = js.native
   
@@ -15361,70 +15360,74 @@ object JQuery {
     /**
       * @see \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings }\`
       */
-    @js.native
     trait AjaxSettingsBase[TContext] extends StObject {
       
       /**
         * A set of key/value pairs that map a given dataType to its MIME type, which gets sent in the Accept request header. This header tells the server what kind of response it will accept in return.
         */
-      var accepts: js.UndefOr[PlainObject[String]] = js.native
+      var accepts: js.UndefOr[PlainObject[String]] = js.undefined
       
       /**
         * By default, all requests are sent asynchronously (i.e. this is set to true by default). If you need synchronous requests, set this option to false. Cross-domain requests and dataType: "jsonp" requests do not support synchronous operation. Note that synchronous requests may temporarily lock the browser, disabling any actions while the request is active. As of jQuery 1.8, the use of async: false with jqXHR ($.Deferred) is deprecated; you must use the success/error/complete callback options instead of the corresponding methods of the jqXHR object such as jqXHR.done().
         */
-      var async: js.UndefOr[Boolean] = js.native
+      var async: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A pre-request callback function that can be used to modify the jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object before it is sent. Use this to set custom headers, etc. The jqXHR and settings objects are passed as arguments. This is an Ajax Event. Returning false in the beforeSend function will cancel the request. As of jQuery 1.5, the beforeSend option will be called regardless of the type of request.
         */
       var beforeSend: js.UndefOr[
-            js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[_], /* settings */ this.type, `false` | Unit]
-          ] = js.native
+            js.ThisFunction2[
+              /* this */ TContext, 
+              /* jqXHR */ jqXHR[js.Any], 
+              /* settings */ this.type, 
+              `false` | Unit
+            ]
+          ] = js.undefined
       
       /**
         * If set to false, it will force requested pages not to be cached by the browser. Note: Setting cache to false will only work correctly with HEAD and GET requests. It works by appending "_={timestamp}" to the GET parameters. The parameter is not needed for other types of requests, except in IE8 when a POST is made to a URL that has already been requested by a GET.
         */
-      var cache: js.UndefOr[Boolean] = js.native
+      var cache: js.UndefOr[Boolean] = js.undefined
       
       /**
         * A function to be called when the request finishes (after success and error callbacks are executed). The function gets passed two arguments: The jqXHR (in jQuery 1.4.x, XMLHTTPRequest) object and a string categorizing the status of the request ("success", "notmodified", "nocontent", "error", "timeout", "abort", or "parsererror"). As of jQuery 1.5, the complete setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
         */
-      var complete: js.UndefOr[TypeOrArray[CompleteCallback[TContext]]] = js.native
+      var complete: js.UndefOr[TypeOrArray[CompleteCallback[TContext]]] = js.undefined
       
       /**
         * When sending data to the server, use this content type. Default is "application/x-www-form-urlencoded; charset=UTF-8", which is fine for most cases. If you explicitly pass in a content-type to $.ajax(), then it is always sent to the server (even if no data is sent). As of jQuery 1.6 you can pass false to tell jQuery to not set any content type header. Note: The W3C XMLHttpRequest specification dictates that the charset is always UTF-8; specifying another charset will not force the browser to change the encoding. Note: For cross-domain requests, setting the content type to anything other than application/x-www-form-urlencoded, multipart/form-data, or text/plain will trigger the browser to send a preflight OPTIONS request to the server.
         */
-      var contentType: js.UndefOr[String | `false`] = js.native
+      var contentType: js.UndefOr[String | `false`] = js.undefined
       
       /**
         * An object of string/regular-expression pairs that determine how jQuery will parse the response, given its content type.
         */
-      var contents: js.UndefOr[PlainObject[RegExp]] = js.native
+      var contents: js.UndefOr[PlainObject[RegExp]] = js.undefined
       
       /**
         * This object will be the context of all Ajax-related callbacks. By default, the context is an object that represents the Ajax settings used in the call ($.ajaxSettings merged with the settings passed to $.ajax).
         */
-      var context: js.UndefOr[TContext] = js.native
+      var context: js.UndefOr[TContext] = js.undefined
       
       /**
         * An object containing dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response.
         */
-      var converters: js.UndefOr[PlainObject[(js.Function1[/* value */ _, _]) | `true`]] = js.native
+      var converters: js.UndefOr[PlainObject[(js.Function1[/* value */ js.Any, js.Any]) | `true`]] = js.undefined
       
       /**
         * If you wish to force a crossDomain request (such as JSONP) on the same domain, set the value of crossDomain to true. This allows, for example, server-side redirection to another domain.
         */
-      var crossDomain: js.UndefOr[Boolean] = js.native
+      var crossDomain: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Data to be sent to the server. It is converted to a query string, if not already a string. It's appended to the url for GET-requests. See processData option to prevent this automatic processing. Object must be Key/Value pairs. If value is an Array, jQuery serializes multiple values with same key based on the value of the traditional setting (described below).
         */
-      var data: js.UndefOr[PlainObject[_] | String] = js.native
+      var data: js.UndefOr[PlainObject[js.Any] | String] = js.undefined
       
       /**
         * A function to be used to handle the raw response data of XMLHttpRequest. This is a pre-filtering function to sanitize the response. You should return the sanitized data. The function accepts two arguments: The raw data returned from the server and the 'dataType' parameter.
         */
-      var dataFilter: js.UndefOr[js.Function2[/* data */ String, /* type */ String, _]] = js.native
+      var dataFilter: js.UndefOr[js.Function2[/* data */ String, /* type */ String, js.Any]] = js.undefined
       
       /**
         * The type of data that you're expecting back from the server. If none is specified, jQuery will try to infer it based on the MIME type of the response (an XML MIME type will yield XML, in 1.4 JSON will yield a JavaScript object, in 1.4 script will execute the script, and anything else will be returned as a string). The available types (and the result passed as the first argument to your success callback) are:
@@ -15443,7 +15446,7 @@ object JQuery {
         *
         * multiple, space-separated values: As of jQuery 1.5, jQuery can convert a dataType from what it received in the Content-Type header to what you require. For example, if you want a text response to be treated as XML, use "text xml" for the dataType. You can also make a JSONP request, have it received as text, and interpreted by jQuery as XML: "jsonp text xml". Similarly, a shorthand string such as "jsonp xml" will first attempt to convert from jsonp to xml, and, failing that, convert from jsonp to text, and then from text to xml.
         */
-      var dataType: js.UndefOr[xml | html | script | json | jsonp | text | String] = js.native
+      var dataType: js.UndefOr[xml | html | script | json | jsonp | text | String] = js.undefined
       
       /**
         * The MIME type of content that is used to submit the form to the server. Possible values are:
@@ -15456,112 +15459,112 @@ object JQuery {
         */
       var enctype: js.UndefOr[
             `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain
-          ] = js.native
+          ] = js.undefined
       
       /**
         * A function to be called if the request fails. The function receives three arguments: The jqXHR (in jQuery 1.4.x, XMLHttpRequest) object, a string describing the type of error that occurred and an optional exception object, if one occurred. Possible values for the second argument (besides null) are "timeout", "error", "abort", and "parsererror". When an HTTP error occurs, errorThrown receives the textual portion of the HTTP status, such as "Not Found" or "Internal Server Error." As of jQuery 1.5, the error setting can accept an array of functions. Each function will be called in turn. Note: This handler is not called for cross-domain script and cross-domain JSONP requests. This is an Ajax Event.
         */
-      var error: js.UndefOr[TypeOrArray[ErrorCallback[TContext]]] = js.native
+      var error: js.UndefOr[TypeOrArray[ErrorCallback[TContext]]] = js.undefined
       
       /**
         * Whether to trigger global Ajax event handlers for this request. The default is true. Set to false to prevent the global handlers like ajaxStart or ajaxStop from being triggered. This can be used to control various Ajax Events.
         */
-      var global: js.UndefOr[Boolean] = js.native
+      var global: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An object of additional header key/value pairs to send along with requests using the XMLHttpRequest transport. The header X-Requested-With: XMLHttpRequest is always added, but its default XMLHttpRequest value can be changed here. Values in the headers setting can also be overwritten from within the beforeSend function.
         */
-      var headers: js.UndefOr[PlainObject[js.UndefOr[String | Null]]] = js.native
+      var headers: js.UndefOr[PlainObject[js.UndefOr[String | Null]]] = js.undefined
       
       /**
         * Allow the request to be successful only if the response has changed since the last request. This is done by checking the Last-Modified header. Default value is false, ignoring the header. In jQuery 1.4 this technique also checks the 'etag' specified by the server to catch unmodified data.
         */
-      var ifModified: js.UndefOr[Boolean] = js.native
+      var ifModified: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Allow the current environment to be recognized as "local," (e.g. the filesystem), even if jQuery does not recognize it as such by default. The following protocols are currently recognized as local: file, *-extension, and widget. If the isLocal setting needs modification, it is recommended to do so once in the $.ajaxSetup() method.
         */
-      var isLocal: js.UndefOr[Boolean] = js.native
+      var isLocal: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Override the callback function name in a JSONP request. This value will be used instead of 'callback' in the 'callback=?' part of the query string in the url. So {jsonp:'onJSONPLoad'} would result in 'onJSONPLoad=?' passed to the server. As of jQuery 1.5, setting the jsonp option to false prevents jQuery from adding the "?callback" string to the URL or attempting to use "=?" for transformation. In this case, you should also explicitly set the jsonpCallback setting. For example, { jsonp: false, jsonpCallback: "callbackName" }. If you don't trust the target of your Ajax requests, consider setting the jsonp property to false for security reasons.
         */
-      var jsonp: js.UndefOr[String | `false`] = js.native
+      var jsonp: js.UndefOr[String | `false`] = js.undefined
       
       /**
         * Specify the callback function name for a JSONP request. This value will be used instead of the random name automatically generated by jQuery. It is preferable to let jQuery generate a unique name as it'll make it easier to manage the requests and provide callbacks and error handling. You may want to specify the callback when you want to enable better browser caching of GET requests. As of jQuery 1.5, you can also use a function for this setting, in which case the value of jsonpCallback is set to the return value of that function.
         */
-      var jsonpCallback: js.UndefOr[String | (js.ThisFunction0[/* this */ TContext, String])] = js.native
+      var jsonpCallback: js.UndefOr[String | (js.ThisFunction0[/* this */ TContext, String])] = js.undefined
       
       /**
         * The HTTP method to use for the request (e.g. "POST", "GET", "PUT").
         */
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
       /**
         * A mime type to override the XHR mime type.
         */
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
       /**
         * A password to be used with XMLHttpRequest in response to an HTTP access authentication request.
         */
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
       /**
         * By default, data passed in to the data option as an object (technically, anything other than a string) will be processed and transformed into a query string, fitting to the default content-type "application/x-www-form-urlencoded". If you want to send a DOMDocument, or other non-processed data, set this option to false.
         */
-      var processData: js.UndefOr[Boolean] = js.native
+      var processData: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Only applies when the "script" transport is used (e.g., cross-domain requests with "jsonp" or "script" dataType and "GET" type). Sets the charset attribute on the script tag used in the request. Used when the character set on the local page is not the same as the one on the remote script.
         */
-      var scriptCharset: js.UndefOr[String] = js.native
+      var scriptCharset: js.UndefOr[String] = js.undefined
       
       /**
         * An object of numeric HTTP codes and functions to be called when the response has the corresponding code.
         *
         * If the request is successful, the status code functions take the same parameters as the success callback; if it results in an error (including 3xx redirect), they take the same parameters as the error callback.
         */
-      var statusCode: js.UndefOr[StatusCodeCallbacks[TContext]] = js.native
+      var statusCode: js.UndefOr[StatusCodeCallbacks[TContext]] = js.undefined
       
       /**
         * A function to be called if the request succeeds. The function gets passed three arguments: The data returned from the server, formatted according to the dataType parameter or the dataFilter callback function, if specified; a string describing the status; and the jqXHR (in jQuery 1.4.x, XMLHttpRequest) object. As of jQuery 1.5, the success setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
         */
-      var success: js.UndefOr[TypeOrArray[SuccessCallback[TContext]]] = js.native
+      var success: js.UndefOr[TypeOrArray[SuccessCallback[TContext]]] = js.undefined
       
       /**
         * Set a timeout (in milliseconds) for the request. A value of 0 means there will be no timeout. This will override any global timeout set with $.ajaxSetup(). The timeout period starts at the point the $.ajax call is made; if several other requests are in progress and the browser has no connections available, it is possible for a request to time out before it can be sent. In jQuery 1.4.x and below, the XMLHttpRequest object will be in an invalid state if the request times out; accessing any object members may throw an exception. In Firefox 3.0+ only, script and JSONP requests cannot be cancelled by a timeout; the script will run even if it arrives after the timeout period.
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * Set this to true if you wish to use the traditional style of param serialization.
         */
-      var traditional: js.UndefOr[Boolean] = js.native
+      var traditional: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An alias for method. You should use type if you're using versions of jQuery prior to 1.9.0.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
       /**
         * A username to be used with XMLHttpRequest in response to an HTTP access authentication request.
         */
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
       
       // ActiveXObject requires "lib": ["scripthost"] which consumers would also require
       /**
         * Callback for creating the XMLHttpRequest object. Defaults to the ActiveXObject when available (IE), the XMLHttpRequest otherwise. Override to provide your own implementation for XMLHttpRequest or enhancements to the factory.
         */
-      var xhr: js.UndefOr[js.Function0[XMLHttpRequest]] = js.native
+      var xhr: js.UndefOr[js.Function0[XMLHttpRequest]] = js.undefined
       
       /**
         * An object of fieldName-fieldValue pairs to set on the native XHR object.
         *
         * In jQuery 1.5, the withCredentials property was not propagated to the native XHR and thus CORS requests requiring it would ignore this flag. For this reason, we recommend using jQuery 1.5.1+ should you require the use of it.
         */
-      var xhrFields: js.UndefOr[XHRFields] = js.native
+      var xhrFields: js.UndefOr[XHRFields] = js.undefined
     }
     object AjaxSettingsBase {
       
@@ -15572,7 +15575,7 @@ object JQuery {
       }
       
       @scala.inline
-      implicit class AjaxSettingsBaseMutableBuilder[Self <: AjaxSettingsBase[_], TContext] (val x: Self with AjaxSettingsBase[TContext]) extends AnyVal {
+      implicit class AjaxSettingsBaseMutableBuilder[Self <: AjaxSettingsBase[?], TContext] (val x: Self & AjaxSettingsBase[TContext]) extends AnyVal {
         
         @scala.inline
         def setAccepts(value: PlainObject[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
@@ -15588,7 +15591,12 @@ object JQuery {
         
         @scala.inline
         def setBeforeSend(
-          value: js.ThisFunction2[/* this */ TContext, /* jqXHR */ jqXHR[_], AjaxSettingsBase[TContext], `false` | Unit]
+          value: js.ThisFunction2[
+                  /* this */ TContext, 
+                  /* jqXHR */ jqXHR[js.Any], 
+                  AjaxSettingsBase[TContext], 
+                  `false` | Unit
+                ]
         ): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
         
         @scala.inline
@@ -15628,7 +15636,7 @@ object JQuery {
         def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
         @scala.inline
-        def setConverters(value: PlainObject[(js.Function1[/* value */ _, _]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
+        def setConverters(value: PlainObject[(js.Function1[/* value */ js.Any, js.Any]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
@@ -15640,10 +15648,10 @@ object JQuery {
         def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
         
         @scala.inline
-        def setData(value: PlainObject[_] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        def setData(value: PlainObject[js.Any] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDataFilter(value: (/* data */ String, /* type */ String) => _): Self = StObject.set(x, "dataFilter", js.Any.fromFunction2(value))
+        def setDataFilter(value: (/* data */ String, /* type */ String) => js.Any): Self = StObject.set(x, "dataFilter", js.Any.fromFunction2(value))
         
         @scala.inline
         def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
@@ -15825,826 +15833,828 @@ object JQuery {
     
     // region StatusCodeCallbacks
     // #region StatusCodeCallbacks
-    @js.native
-    trait StatusCodeCallbacks[TContext] extends // Status codes not listed require type annotations when defining the callback
+    trait StatusCodeCallbacks[TContext]
+      extends StObject
+         with // Status codes not listed require type annotations when defining the callback
     /* index */ NumberDictionary[SuccessCallback[TContext] | ErrorCallback[TContext]] {
       
       // region Success Status Codes
       // #region Success Status Codes
       // jQuery treats 2xx and 304 status codes as a success
-      var `200`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `200`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `201`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `201`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `202`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `202`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `203`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `203`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `204`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `204`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `205`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `205`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `206`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `206`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `207`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `207`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `208`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `208`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `209`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `209`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `210`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `210`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `211`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `211`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `212`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `212`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `213`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `213`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `214`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `214`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `215`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `215`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `216`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `216`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `217`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `217`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `218`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `218`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `219`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `219`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `220`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `220`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `221`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `221`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `222`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `222`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `223`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `223`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `224`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `224`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `225`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `225`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `226`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `226`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `227`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `227`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `228`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `228`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `229`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `229`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `230`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `230`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `231`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `231`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `232`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `232`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `233`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `233`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `234`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `234`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `235`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `235`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `236`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `236`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `237`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `237`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `238`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `238`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `239`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `239`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `240`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `240`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `241`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `241`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `242`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `242`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `243`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `243`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `244`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `244`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `245`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `245`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `246`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `246`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `247`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `247`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `248`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `248`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `249`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `249`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `250`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `250`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `251`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `251`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `252`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `252`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `253`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `253`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `254`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `254`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `255`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `255`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `256`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `256`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `257`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `257`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `258`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `258`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `259`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `259`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `260`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `260`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `261`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `261`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `262`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `262`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `263`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `263`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `264`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `264`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `265`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `265`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `266`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `266`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `267`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `267`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `268`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `268`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `269`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `269`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `270`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `270`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `271`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `271`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `272`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `272`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `273`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `273`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `274`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `274`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `275`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `275`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `276`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `276`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `277`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `277`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `278`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `278`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `279`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `279`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `280`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `280`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `281`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `281`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `282`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `282`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `283`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `283`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `284`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `284`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `285`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `285`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `286`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `286`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `287`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `287`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `288`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `288`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `289`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `289`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `290`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `290`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `291`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `291`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `292`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `292`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `293`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `293`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `294`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `294`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `295`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `295`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `296`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `296`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `297`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `297`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `298`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `298`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `299`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `299`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
       // #endregion
       // region Error Status Codes
       // #region Error Status Codes
-      var `300`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `300`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `301`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `301`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `302`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `302`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `303`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `303`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `304`: js.UndefOr[SuccessCallback[TContext]] = js.native
+      var `304`: js.UndefOr[SuccessCallback[TContext]] = js.undefined
       
-      var `305`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `305`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `306`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `306`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `307`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `307`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `308`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `308`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `309`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `309`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `310`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `310`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `311`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `311`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `312`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `312`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `313`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `313`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `314`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `314`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `315`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `315`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `316`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `316`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `317`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `317`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `318`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `318`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `319`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `319`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `320`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `320`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `321`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `321`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `322`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `322`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `323`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `323`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `324`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `324`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `325`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `325`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `326`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `326`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `327`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `327`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `328`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `328`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `329`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `329`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `330`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `330`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `331`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `331`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `332`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `332`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `333`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `333`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `334`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `334`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `335`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `335`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `336`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `336`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `337`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `337`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `338`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `338`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `339`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `339`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `340`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `340`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `341`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `341`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `342`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `342`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `343`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `343`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `344`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `344`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `345`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `345`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `346`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `346`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `347`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `347`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `348`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `348`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `349`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `349`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `350`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `350`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `351`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `351`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `352`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `352`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `353`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `353`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `354`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `354`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `355`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `355`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `356`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `356`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `357`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `357`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `358`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `358`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `359`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `359`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `360`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `360`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `361`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `361`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `362`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `362`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `363`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `363`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `364`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `364`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `365`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `365`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `366`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `366`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `367`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `367`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `368`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `368`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `369`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `369`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `370`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `370`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `371`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `371`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `372`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `372`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `373`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `373`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `374`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `374`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `375`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `375`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `376`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `376`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `377`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `377`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `378`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `378`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `379`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `379`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `380`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `380`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `381`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `381`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `382`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `382`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `383`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `383`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `384`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `384`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `385`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `385`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `386`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `386`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `387`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `387`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `388`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `388`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `389`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `389`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `390`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `390`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `391`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `391`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `392`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `392`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `393`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `393`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `394`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `394`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `395`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `395`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `396`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `396`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `397`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `397`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `398`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `398`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `399`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `399`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `400`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `400`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `401`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `401`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `402`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `402`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `403`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `403`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `404`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `404`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `405`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `405`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `406`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `406`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `407`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `407`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `408`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `408`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `409`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `409`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `410`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `410`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `411`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `411`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `412`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `412`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `413`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `413`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `414`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `414`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `415`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `415`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `416`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `416`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `417`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `417`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `418`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `418`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `419`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `419`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `420`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `420`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `421`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `421`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `422`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `422`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `423`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `423`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `424`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `424`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `425`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `425`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `426`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `426`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `427`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `427`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `428`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `428`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `429`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `429`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `430`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `430`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `431`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `431`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `432`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `432`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `433`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `433`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `434`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `434`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `435`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `435`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `436`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `436`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `437`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `437`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `438`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `438`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `439`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `439`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `440`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `440`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `441`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `441`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `442`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `442`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `443`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `443`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `444`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `444`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `445`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `445`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `446`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `446`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `447`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `447`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `448`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `448`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `449`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `449`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `450`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `450`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `451`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `451`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `452`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `452`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `453`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `453`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `454`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `454`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `455`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `455`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `456`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `456`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `457`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `457`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `458`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `458`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `459`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `459`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `460`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `460`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `461`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `461`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `462`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `462`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `463`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `463`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `464`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `464`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `465`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `465`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `466`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `466`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `467`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `467`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `468`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `468`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `469`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `469`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `470`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `470`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `471`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `471`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `472`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `472`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `473`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `473`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `474`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `474`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `475`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `475`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `476`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `476`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `477`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `477`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `478`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `478`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `479`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `479`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `480`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `480`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `481`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `481`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `482`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `482`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `483`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `483`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `484`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `484`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `485`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `485`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `486`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `486`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `487`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `487`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `488`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `488`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `489`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `489`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `490`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `490`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `491`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `491`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `492`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `492`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `493`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `493`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `494`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `494`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `495`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `495`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `496`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `496`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `497`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `497`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `498`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `498`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `499`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `499`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `500`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `500`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `501`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `501`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `502`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `502`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `503`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `503`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `504`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `504`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `505`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `505`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `506`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `506`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `507`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `507`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `508`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `508`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `509`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `509`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `510`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `510`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `511`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `511`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `512`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `512`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `513`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `513`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `514`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `514`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `515`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `515`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `516`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `516`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `517`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `517`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `518`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `518`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `519`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `519`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `520`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `520`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `521`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `521`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `522`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `522`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `523`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `523`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `524`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `524`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `525`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `525`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `526`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `526`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `527`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `527`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `528`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `528`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `529`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `529`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `530`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `530`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `531`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `531`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `532`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `532`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `533`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `533`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `534`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `534`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `535`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `535`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `536`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `536`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `537`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `537`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `538`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `538`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `539`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `539`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `540`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `540`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `541`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `541`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `542`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `542`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `543`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `543`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `544`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `544`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `545`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `545`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `546`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `546`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `547`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `547`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `548`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `548`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `549`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `549`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `550`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `550`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `551`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `551`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `552`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `552`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `553`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `553`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `554`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `554`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `555`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `555`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `556`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `556`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `557`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `557`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `558`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `558`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `559`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `559`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `560`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `560`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `561`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `561`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `562`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `562`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `563`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `563`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `564`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `564`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `565`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `565`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `566`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `566`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `567`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `567`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `568`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `568`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `569`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `569`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `570`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `570`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `571`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `571`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `572`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `572`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `573`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `573`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `574`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `574`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `575`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `575`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `576`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `576`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `577`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `577`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `578`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `578`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `579`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `579`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `580`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `580`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `581`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `581`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `582`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `582`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `583`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `583`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `584`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `584`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `585`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `585`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `586`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `586`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `587`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `587`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `588`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `588`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `589`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `589`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `590`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `590`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `591`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `591`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `592`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `592`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `593`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `593`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `594`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `594`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `595`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `595`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `596`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `596`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `597`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `597`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `598`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `598`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
       
-      var `599`: js.UndefOr[ErrorCallback[TContext]] = js.native
+      var `599`: js.UndefOr[ErrorCallback[TContext]] = js.undefined
     }
     object StatusCodeCallbacks {
       
       @scala.inline
-      def apply[TContext](): StatusCodeCallbacks[TContext] = {
+      def apply[TContext](Object: js.Object): StatusCodeCallbacks[TContext] = {
         val __obj = js.Dynamic.literal()
+        js.Dynamic.global.Object.assign(__obj, Object)
         __obj.asInstanceOf[StatusCodeCallbacks[TContext]]
       }
       
       @scala.inline
-      implicit class StatusCodeCallbacksMutableBuilder[Self <: StatusCodeCallbacks[_], TContext] (val x: Self with StatusCodeCallbacks[TContext]) extends AnyVal {
+      implicit class StatusCodeCallbacksMutableBuilder[Self <: StatusCodeCallbacks[?], TContext] (val x: Self & StatusCodeCallbacks[TContext]) extends AnyVal {
         
         @scala.inline
         def set200(value: SuccessCallback[TContext]): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
@@ -19111,18 +19121,19 @@ object JQuery {
     // #endregion
     // Writable properties on XMLHttpRequest
     /* Inlined parent std.Partial<std.Pick<std.XMLHttpRequest, 'onreadystatechange' | 'responseType' | 'timeout' | 'withCredentials'>> */
-    @js.native
     trait XHRFields extends StObject {
       
-      var msCaching: js.UndefOr[String] = js.native
+      var msCaching: js.UndefOr[String] = js.undefined
       
-      var onreadystatechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, _]) | Null] = js.native
+      var onreadystatechange: js.UndefOr[
+            (js.ThisFunction1[/* this */ this.type, /* ev */ typings.std.Event, js.Any]) | Null
+          ] = js.undefined
       
-      var responseType: js.UndefOr[XMLHttpRequestResponseType] = js.native
+      var responseType: js.UndefOr[XMLHttpRequestResponseType] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
-      var withCredentials: js.UndefOr[Boolean] = js.native
+      var withCredentials: js.UndefOr[Boolean] = js.undefined
     }
     object XHRFields {
       
@@ -19142,7 +19153,7 @@ object JQuery {
         def setMsCachingUndefined: Self = StObject.set(x, "msCaching", js.undefined)
         
         @scala.inline
-        def setOnreadystatechange(value: js.ThisFunction1[XHRFields, /* ev */ typings.std.Event, _]): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
+        def setOnreadystatechange(value: js.ThisFunction1[XHRFields, /* ev */ typings.std.Event, js.Any]): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setOnreadystatechangeNull: Self = StObject.set(x, "onreadystatechange", null)
@@ -19173,13 +19184,14 @@ object JQuery {
   
   // region Ajax
   // #region Ajax
-  @js.native
-  trait AjaxSettings[TContext] extends AjaxSettingsBase[TContext] {
+  trait AjaxSettings[TContext]
+    extends StObject
+       with AjaxSettingsBase[TContext] {
     
     /**
       * A string containing the URL to which the request is sent.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object AjaxSettings {
     
@@ -19190,7 +19202,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class AjaxSettingsMutableBuilder[Self <: AjaxSettings[_], TContext] (val x: Self with AjaxSettings[TContext]) extends AnyVal {
+    implicit class AjaxSettingsMutableBuilder[Self <: AjaxSettings[?], TContext] (val x: Self & AjaxSettings[TContext]) extends AnyVal {
       
       @scala.inline
       def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
@@ -19207,7 +19219,8 @@ object JQuery {
     */
   @js.native
   trait Animation[TElement]
-    extends PromiseBase[
+    extends StObject
+       with PromiseBase[
           Animation[TElement], 
           Animation[TElement], 
           Animation[TElement], 
@@ -19261,14 +19274,14 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
       * @since 1.8
       */
-    var originalProps: PlainObject[_] = js.native
+    var originalProps: PlainObject[js.Any] = js.native
     
     /**
       * The final value of each property animating
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
       * @since 1.8
       */
-    var props: PlainObject[_] = js.native
+    var props: PlainObject[js.Any] = js.native
     
     /**
       * The numeric value of `new Date()` when the animation began
@@ -19312,7 +19325,7 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
       * @since 1.8
       */
-    def apply[TElement](element: TElement, props: PlainObject[_], opts: EffectsOptions[TElement]): Animation[TElement] = js.native
+    def apply[TElement](element: TElement, props: PlainObject[js.Any], opts: EffectsOptions[TElement]): Animation[TElement] = js.native
     
     /**
       * During the initial setup, `jQuery.Animation` will call any callbacks that have been registered through `jQuery.Animation.prefilter( function( element, props, opts ) )`.
@@ -19327,7 +19340,7 @@ object JQuery {
       callback: js.ThisFunction3[
           /* this */ Animation[TElement], 
           /* element */ TElement, 
-          /* props */ PlainObject[_], 
+          /* props */ PlainObject[js.Any], 
           /* opts */ EffectsOptions[TElement], 
           Animation[TElement] | Falsy | Unit
         ]
@@ -19336,7 +19349,7 @@ object JQuery {
       callback: js.ThisFunction3[
           /* this */ Animation[TElement], 
           /* element */ TElement, 
-          /* props */ PlainObject[_], 
+          /* props */ PlainObject[js.Any], 
           /* opts */ EffectsOptions[TElement], 
           Animation[TElement] | Falsy | Unit
         ],
@@ -19355,21 +19368,31 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweeners }\`
       * @since 1.8
       */
-    def tweener(props: String, callback: Tweener[_]): Unit = js.native
+    def tweener(props: String, callback: Tweener[js.Any]): Unit = js.native
   }
   
-  @js.native
-  trait BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_BlurEvent: blur = js.native
+    var type_BlurEvent: blur
   }
   object BlurEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
@@ -19378,21 +19401,36 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: blur,
-      view: Window
+      toElement: Unit,
+      touches: Unit,
+      view: Window,
+      which: Unit
     ): BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("blur")
       __obj.asInstanceOf[BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class BlurEventMutableBuilder[Self <: BlurEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class BlurEventMutableBuilder[Self <: BlurEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: blur): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -19403,7 +19441,7 @@ object JQuery {
   // region CSS hooks
   // #region CSS hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CSSHook[TElement] = Partial[_CSSHook[TElement]] with (Pick[_CSSHook[TElement], get | set])
+  type CSSHook[TElement] = Partial[_CSSHook[TElement]] & (Pick[_CSSHook[TElement], get | set])
   
   type CSSHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[CSSHook[HTMLElement]]
@@ -19610,7 +19648,7 @@ object JQuery {
     ```
       */
     def fireWith(context: js.Object): this.type = js.native
-    def fireWith(context: js.Object, args: ArrayLike[_]): this.type = js.native
+    def fireWith(context: js.Object, args: ArrayLike[js.Any]): this.type = js.native
     
     /**
       * Determine if the callbacks have already been called at least once.
@@ -19833,47 +19871,76 @@ object JQuery {
   // #region Callbacks
   type CallbacksStatic = js.Function1[/* flags */ js.UndefOr[String], Callbacks[js.Function]]
   
-  @js.native
-  trait ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_ChangeEvent: change = js.native
+    var type_ChangeEvent: change
   }
   object ChangeEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
+      detail: Unit,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: change
+      toElement: Unit,
+      touches: Unit,
+      view: Unit,
+      which: Unit
     ): ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("change")
       __obj.asInstanceOf[ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class ChangeEventMutableBuilder[Self <: ChangeEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class ChangeEventMutableBuilder[Self <: ChangeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     /**
       * The other DOM element involved in the event, if any.
@@ -19887,10 +19954,10 @@ object JQuery {
       ```
       */
     @JSName("relatedTarget")
-    var relatedTarget_ClickEvent: js.UndefOr[Null] = js.native
+    var relatedTarget_ClickEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_ClickEvent: click = js.native
+    var type_ClickEvent: click
   }
   object ClickEvent {
     
@@ -19901,6 +19968,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -19912,11 +19982,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -19924,27 +19998,29 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: click,
+      touches: Unit,
       view: Window,
       which: Double
     ): ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("click")
       __obj.asInstanceOf[ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class ClickEventMutableBuilder[Self <: ClickEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class ClickEventMutableBuilder[Self <: ClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: click): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     /**
       * The other DOM element involved in the event, if any.
@@ -19958,10 +20034,10 @@ object JQuery {
       ```
       */
     @JSName("relatedTarget")
-    var relatedTarget_ContextMenuEvent: js.UndefOr[Null] = js.native
+    var relatedTarget_ContextMenuEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_ContextMenuEvent: contextmenu = js.native
+    var type_ContextMenuEvent: contextmenu
   }
   object ContextMenuEvent {
     
@@ -19972,6 +20048,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -19983,11 +20062,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -19995,19 +20078,20 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: contextmenu,
+      touches: Unit,
       view: Window,
       which: Double
     ): ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("contextmenu")
       __obj.asInstanceOf[ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class ContextMenuEventMutableBuilder[Self <: ContextMenuEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class ContextMenuEventMutableBuilder[Self <: ContextMenuEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: contextmenu): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -20016,12 +20100,11 @@ object JQuery {
   
   // region Coordinates
   // #region Coordinates
-  @js.native
   trait Coordinates extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Coordinates {
     
@@ -20670,7 +20753,7 @@ object JQuery {
     }).hello( "Karl" ); // Will alert "Hello Karl"
     ```
       */
-    def promise[TTarget /* <: js.Object */](target: TTarget): (Promise[TR, TJ, TN]) with TTarget = js.native
+    def promise[TTarget /* <: js.Object */](target: TTarget): (Promise[TR, TJ, TN]) & TTarget = js.native
     
     /**
       * Reject a Deferred object and call any failCallbacks with the given args.
@@ -21179,11 +21262,19 @@ object JQuery {
       */
     type AlwaysCallback[TResolve, TReject] = Callback[TResolve | TReject]
     
-    type Callback[T] = js.Function1[/* repeated */ T, Unit]
+    @js.native
+    trait Callback[T] extends StObject {
+      
+      def apply(args: T*): Unit = js.native
+    }
     
     type Callback3[T, U, V] = CallbackBase[T, U, V, scala.Nothing]
     
-    type CallbackBase[T, U, V, R] = js.Function4[/* t */ T, /* u */ U, /* v */ V, /* repeated */ R, Unit]
+    @js.native
+    trait CallbackBase[T, U, V, R] extends StObject {
+      
+      def apply(t: T, u: U, v: V, r: R*): Unit = js.native
+    }
     
     /**
       * @deprecated ​ Deprecated. Use \`{@link Callback }\`.
@@ -21219,8 +21310,9 @@ object JQuery {
     var exceptionHook: js.Any = js.native
   }
   
-  @js.native
-  trait DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     /**
       * The other DOM element involved in the event, if any.
@@ -21234,10 +21326,10 @@ object JQuery {
       ```
       */
     @JSName("relatedTarget")
-    var relatedTarget_DoubleClickEvent: js.UndefOr[Null] = js.native
+    var relatedTarget_DoubleClickEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_DoubleClickEvent: dblclick = js.native
+    var type_DoubleClickEvent: dblclick
   }
   object DoubleClickEvent {
     
@@ -21248,6 +21340,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -21259,11 +21354,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -21271,30 +21370,32 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: dblclick,
+      touches: Unit,
       view: Window,
       which: Double
     ): DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dblclick")
       __obj.asInstanceOf[DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DoubleClickEventMutableBuilder[Self <: DoubleClickEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DoubleClickEventMutableBuilder[Self <: DoubleClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dblclick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragEndEvent: dragend = js.native
+    var type_DragEndEvent: dragend
   }
   object DragEndEvent {
     
@@ -21315,27 +21416,27 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: dragend,
       view: Window
     ): DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dragend")
       __obj.asInstanceOf[DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragEndEventMutableBuilder[Self <: DragEndEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragEndEventMutableBuilder[Self <: DragEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dragend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragEnterEvent: dragenter = js.native
+    var type_DragEnterEvent: dragenter
   }
   object DragEnterEvent {
     
@@ -21356,27 +21457,27 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: dragenter,
       view: Window
     ): DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dragenter")
       __obj.asInstanceOf[DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragEnterEventMutableBuilder[Self <: DragEnterEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragEnterEventMutableBuilder[Self <: DragEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dragenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragEvent: drag = js.native
+    var type_DragEvent: drag
   }
   object DragEvent {
     
@@ -21397,16 +21498,15 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: drag,
       view: Window
     ): typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("drag")
       __obj.asInstanceOf[typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragEventMutableBuilder[Self <: typings.jquery.JQuery.DragEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragEventMutableBuilder[Self <: typings.jquery.JQuery.DragEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -21415,11 +21515,12 @@ object JQuery {
   
   // region DragEvent
   // #region DragEvent
-  @js.native
-  trait DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("originalEvent")
-    var originalEvent_DragEventBase: js.UndefOr[typings.jquery.DragEvent] = js.native
+    var originalEvent_DragEventBase: js.UndefOr[typings.jquery.DragEvent] = js.undefined
   }
   object DragEventBase {
     
@@ -21449,7 +21550,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class DragEventBaseMutableBuilder[Self <: DragEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragEventBaseMutableBuilder[Self <: DragEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setOriginalEvent(value: typings.jquery.DragEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
@@ -21459,11 +21560,12 @@ object JQuery {
     }
   }
   
-  @js.native
-  trait DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragExitEvent: dragexit = js.native
+    var type_DragExitEvent: dragexit
   }
   object DragExitEvent {
     
@@ -21484,27 +21586,27 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: dragexit,
       view: Window
     ): DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dragexit")
       __obj.asInstanceOf[DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragExitEventMutableBuilder[Self <: DragExitEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragExitEventMutableBuilder[Self <: DragExitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dragexit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragLeaveEvent: dragleave = js.native
+    var type_DragLeaveEvent: dragleave
   }
   object DragLeaveEvent {
     
@@ -21525,27 +21627,27 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: dragleave,
       view: Window
     ): DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dragleave")
       __obj.asInstanceOf[DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragLeaveEventMutableBuilder[Self <: DragLeaveEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragLeaveEventMutableBuilder[Self <: DragLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dragleave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragOverEvent: dragover = js.native
+    var type_DragOverEvent: dragover
   }
   object DragOverEvent {
     
@@ -21566,27 +21668,27 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: dragover,
       view: Window
     ): DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dragover")
       __obj.asInstanceOf[DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragOverEventMutableBuilder[Self <: DragOverEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragOverEventMutableBuilder[Self <: DragOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dragover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DragStartEvent: dragstart = js.native
+    var type_DragStartEvent: dragstart
   }
   object DragStartEvent {
     
@@ -21607,27 +21709,27 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: dragstart,
       view: Window
     ): DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dragstart")
       __obj.asInstanceOf[DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DragStartEventMutableBuilder[Self <: DragStartEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DragStartEventMutableBuilder[Self <: DragStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_DropEvent: drop = js.native
+    var type_DropEvent: drop
   }
   object DropEvent {
     
@@ -21648,16 +21750,15 @@ object JQuery {
       stopPropagation: () => Unit,
       target: TTarget,
       timeStamp: Double,
-      `type`: drop,
       view: Window
     ): DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("drop")
       __obj.asInstanceOf[DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class DropEventMutableBuilder[Self <: DropEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class DropEventMutableBuilder[Self <: DropEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -21684,7 +21785,6 @@ object JQuery {
   // #endregion
   // region Effects (fx)
   // #region Effects (fx)
-  @js.native
   trait Effects extends StObject {
     
     /**
@@ -21729,7 +21829,7 @@ object JQuery {
     </html>
     ```
       */
-    var interval: Double = js.native
+    var interval: Double
     
     /**
       * Globally disable all animations.
@@ -21773,28 +21873,28 @@ object JQuery {
     </html>
     ```
       */
-    var off: Boolean = js.native
+    var off: Boolean
     
     /**
       * @deprecated ​ Deprecated since 1.8. Use \`{@link Tween.propHooks jQuery.Tween.propHooks}\`.
       *
       * `jQuery.fx.step` functions are being replaced by `jQuery.Tween.propHooks` and may eventually be removed, but are still supported via the default tween propHook.
       */
-    var step: PlainObject[AnimationHook[Node]] = js.native
+    var step: PlainObject[AnimationHook[Node]]
     
     /**
       * _overridable_ Clears up the `setInterval`
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#plugging-in-a-different-timer-loop }\`
       * @since 1.8
       */
-    def stop(): Unit = js.native
+    def stop(): Unit
     
     /**
       * Calls `.run()` on each object in the `jQuery.timers` array, removing it from the array if `.run()` returns a falsy value. Calls `jQuery.fx.stop()` whenever there are no timers remaining.
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#plugging-in-a-different-timer-loop }\`
       * @since 1.8
       */
-    def tick(): Unit = js.native
+    def tick(): Unit
     
     /**
       * _overridable_ Creates a `setInterval` if one doesn't already exist, and pushes `tickFunction` to the `jQuery.timers` array. `tickFunction` should also have `anim`, `elem`, and `queue` properties that reference the animation object, animated element, and queue option to facilitate `jQuery.fn.stop()`
@@ -21805,7 +21905,7 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#plugging-in-a-different-timer-loop }\`
       * @since 1.8
       */
-    def timer(tickFunction: TickFunction[_]): Unit = js.native
+    def timer(tickFunction: TickFunction[js.Any]): Unit
   }
   object Effects {
     
@@ -21816,7 +21916,7 @@ object JQuery {
       step: PlainObject[AnimationHook[Node]],
       stop: () => Unit,
       tick: () => Unit,
-      timer: TickFunction[_] => Unit
+      timer: TickFunction[js.Any] => Unit
     ): Effects = {
       val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], off = off.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop), tick = js.Any.fromFunction0(tick), timer = js.Any.fromFunction1(timer))
       __obj.asInstanceOf[Effects]
@@ -21841,16 +21941,16 @@ object JQuery {
       def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setTimer(value: TickFunction[_] => Unit): Self = StObject.set(x, "timer", js.Any.fromFunction1(value))
+      def setTimer(value: TickFunction[js.Any] => Unit): Self = StObject.set(x, "timer", js.Any.fromFunction1(value))
     }
   }
   
   /**
     * @see \`{@link https://api.jquery.com/animate/#animate-properties-options }\`
     */
-  @js.native
   trait EffectsOptions[TElement]
-    extends PlainObject[js.Any] {
+    extends StObject
+       with PlainObject[js.Any] {
     
     /**
       * A function to be called when the animation on an element completes or stops without completing (its Promise object is either resolved or rejected).
@@ -21862,12 +21962,12 @@ object JQuery {
           /* jumpedToEnd */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function that is called once the animation on an element is complete.
       */
-    var complete: js.UndefOr[js.ThisFunction0[/* this */ TElement, Unit]] = js.native
+    var complete: js.UndefOr[js.ThisFunction0[/* this */ TElement, Unit]] = js.undefined
     
     /**
       * A function to be called when the animation on an element completes (its Promise object is resolved).
@@ -21879,17 +21979,17 @@ object JQuery {
           /* jumpedToEnd */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A string or number determining how long the animation will run.
       */
-    var duration: js.UndefOr[Duration] = js.native
+    var duration: js.UndefOr[Duration] = js.undefined
     
     /**
       * A string indicating which easing function to use for the transition.
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /**
       * A function to be called when the animation on an element fails to complete (its Promise object is rejected).
@@ -21901,7 +22001,7 @@ object JQuery {
           /* jumpedToEnd */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function to be called after each step of the animation, only once per animated element regardless of the number of animated properties.
@@ -21914,29 +22014,29 @@ object JQuery {
           /* remainingMs */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately. As of jQuery 1.7, the queue option can also accept a string, in which case the animation is added to the queue represented by that string. When a custom queue name is used the animation does not automatically start; you must call .dequeue("queuename") to start it.
       */
-    var queue: js.UndefOr[Boolean | String] = js.native
+    var queue: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * An object containing one or more of the CSS properties defined by the properties argument and their corresponding easing functions.
       */
-    var specialEasing: js.UndefOr[PlainObject[String]] = js.native
+    var specialEasing: js.UndefOr[PlainObject[String]] = js.undefined
     
     /**
       * A function to call when the animation on an element begins.
       */
-    var start: js.UndefOr[js.ThisFunction1[/* this */ TElement, /* animation */ Animation[TElement], Unit]] = js.native
+    var start: js.UndefOr[js.ThisFunction1[/* this */ TElement, /* animation */ Animation[TElement], Unit]] = js.undefined
     
     /**
       * A function to be called for each animated property of each animated element. This function provides an opportunity to modify the Tween object to change the value of the property before it is set.
       */
     var step: js.UndefOr[
         js.ThisFunction2[/* this */ TElement, /* now */ Double, /* tween */ Tween[TElement], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object EffectsOptions {
     
@@ -21947,7 +22047,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class EffectsOptionsMutableBuilder[Self <: EffectsOptions[_], TElement] (val x: Self with EffectsOptions[TElement]) extends AnyVal {
+    implicit class EffectsOptionsMutableBuilder[Self <: EffectsOptions[?], TElement] (val x: Self & EffectsOptions[TElement]) extends AnyVal {
       
       @scala.inline
       def setAlways(
@@ -22055,44 +22155,43 @@ object JQuery {
     * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
     * @see \`{@link TriggeredEvent }\`
     */
-  @js.native
   trait Event extends StObject {
     
     // MouseEvent, KeyboardEvent, TouchEvent
-    var altKey: js.UndefOr[Boolean] = js.native
+    var altKey: js.UndefOr[Boolean] = js.undefined
     
     // region Copied properties
     // #region Copied properties
     // Event
-    var bubbles: js.UndefOr[Boolean] = js.native
+    var bubbles: js.UndefOr[Boolean] = js.undefined
     
     // MouseEvent
-    var button: js.UndefOr[Double] = js.native
+    var button: js.UndefOr[Double] = js.undefined
     
-    var buttons: js.UndefOr[Double] = js.native
+    var buttons: js.UndefOr[Double] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
     // TouchEvent
-    var changedTouches: js.UndefOr[TouchList] = js.native
+    var changedTouches: js.UndefOr[TouchList] = js.undefined
     
     // KeyboardEvent
     /** @deprecated */
-    var char: js.UndefOr[String] = js.native
+    var char: js.UndefOr[String] = js.undefined
     
     /** @deprecated */
-    var charCode: js.UndefOr[Double] = js.native
+    var charCode: js.UndefOr[Double] = js.undefined
     
-    var clientX: js.UndefOr[Double] = js.native
+    var clientX: js.UndefOr[Double] = js.undefined
     
-    var clientY: js.UndefOr[Double] = js.native
+    var clientY: js.UndefOr[Double] = js.undefined
     
-    var ctrlKey: js.UndefOr[Boolean] = js.native
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
     
     // UIEvent
-    var detail: js.UndefOr[Double] = js.native
+    var detail: js.UndefOr[Double] = js.undefined
     
-    var eventPhase: js.UndefOr[Double] = js.native
+    var eventPhase: js.UndefOr[Double] = js.undefined
     
     /**
       * Returns whether event.preventDefault() was ever called on this event object.
@@ -22107,7 +22206,7 @@ object JQuery {
     });
     ```
       */
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
     /**
       * Returns whether event.stopImmediatePropagation() was ever called on this event object.
@@ -22149,7 +22248,7 @@ object JQuery {
     </html>
     ```
       */
-    def isImmediatePropagationStopped(): Boolean = js.native
+    def isImmediatePropagationStopped(): Boolean
     
     /**
       * Returns whether event.stopPropagation() was ever called on this event object.
@@ -22191,12 +22290,12 @@ object JQuery {
     </html>
     ```
       */
-    def isPropagationStopped(): Boolean = js.native
+    def isPropagationStopped(): Boolean
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** @deprecated */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /**
       * Indicates whether the META key was pressed when the event fired.
@@ -22234,11 +22333,11 @@ object JQuery {
     </html>
     ```
       */
-    var metaKey: js.UndefOr[Boolean] = js.native
+    var metaKey: js.UndefOr[Boolean] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /**
       * The mouse position relative to the left edge of the document.
@@ -22275,7 +22374,7 @@ object JQuery {
     </html>
     ```
       */
-    var pageX: js.UndefOr[Double] = js.native
+    var pageX: js.UndefOr[Double] = js.undefined
     
     /**
       * The mouse position relative to the top edge of the document.
@@ -22312,12 +22411,12 @@ object JQuery {
     </html>
     ```
       */
-    var pageY: js.UndefOr[Double] = js.native
+    var pageY: js.UndefOr[Double] = js.undefined
     
     // PointerEvent
-    var pointerId: js.UndefOr[Double] = js.native
+    var pointerId: js.UndefOr[Double] = js.undefined
     
-    var pointerType: js.UndefOr[String] = js.native
+    var pointerType: js.UndefOr[String] = js.undefined
     
     /**
       * If this method is called, the default action of the event will not be triggered.
@@ -22350,13 +22449,13 @@ object JQuery {
     </html>
     ```
       */
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    var screenX: js.UndefOr[Double] = js.native
+    var screenX: js.UndefOr[Double] = js.undefined
     
-    var screenY: js.UndefOr[Double] = js.native
+    var screenY: js.UndefOr[Double] = js.undefined
     
-    var shiftKey: js.UndefOr[Boolean] = js.native
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Keeps the rest of the handlers from being executed and prevents the event from bubbling up the DOM tree.
@@ -22406,7 +22505,7 @@ object JQuery {
     </html>
     ```
       */
-    def stopImmediatePropagation(): Unit = js.native
+    def stopImmediatePropagation(): Unit
     
     /**
       * Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event.
@@ -22420,9 +22519,9 @@ object JQuery {
     });
     ```
       */
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var targetTouches: js.UndefOr[TouchList] = js.native
+    var targetTouches: js.UndefOr[TouchList] = js.undefined
     
     // #endregion
     /**
@@ -22468,12 +22567,12 @@ object JQuery {
     </html>
     ```
       */
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
     /** @deprecated */
-    var toElement: js.UndefOr[Element] = js.native
+    var toElement: js.UndefOr[Element] = js.undefined
     
-    var touches: js.UndefOr[TouchList] = js.native
+    var touches: js.UndefOr[TouchList] = js.undefined
     
     /**
       * Describes the nature of the event.
@@ -22486,9 +22585,9 @@ object JQuery {
     });
     ```
       */
-    var `type`: String = js.native
+    var `type`: String
     
-    var view: js.UndefOr[Window] = js.native
+    var view: js.UndefOr[Window] = js.undefined
     
     // MouseEvent, KeyboardEvent
     /**
@@ -22542,7 +22641,7 @@ object JQuery {
     </html>
     ```
       */
-    var which: js.UndefOr[Double] = js.native
+    var which: js.UndefOr[Double] = js.undefined
   }
   object Event {
     
@@ -22773,62 +22872,63 @@ object JQuery {
   
   // region Event
   // #region Event
-  @js.native
-  trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // MouseEvent, KeyboardEvent, TouchEvent
     @JSName("altKey")
-    var altKey_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var altKey_EventBase: Unit
     
     // Event
     @JSName("bubbles")
-    var bubbles_EventBase: Boolean = js.native
+    var bubbles_EventBase: Boolean
     
     // MouseEvent
     @JSName("button")
-    var button_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var button_EventBase: Unit
     
     @JSName("buttons")
-    var buttons_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var buttons_EventBase: Unit
     
     @JSName("cancelable")
-    var cancelable_EventBase: Boolean = js.native
+    var cancelable_EventBase: Boolean
     
     // TouchEvent
     @JSName("changedTouches")
-    var changedTouches_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var changedTouches_EventBase: Unit
     
     /** @deprecated */
     @JSName("charCode")
-    var charCode_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var charCode_EventBase: Unit
     
     // KeyboardEvent
     /** @deprecated */
     @JSName("char")
-    var char_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var char_EventBase: Unit
     
     @JSName("clientX")
-    var clientX_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientX_EventBase: Unit
     
     @JSName("clientY")
-    var clientY_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientY_EventBase: Unit
     
     @JSName("ctrlKey")
-    var ctrlKey_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var ctrlKey_EventBase: Unit
     
     // UIEvent
     @JSName("detail")
-    var detail_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var detail_EventBase: Unit
     
     @JSName("eventPhase")
-    var eventPhase_EventBase: Double = js.native
+    var eventPhase_EventBase: Double
     
     /** @deprecated */
     @JSName("keyCode")
-    var keyCode_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var keyCode_EventBase: Unit
     
     @JSName("key")
-    var key_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var key_EventBase: Unit
     
     /**
       * Indicates whether the META key was pressed when the event fired.
@@ -22867,13 +22967,13 @@ object JQuery {
     ```
       */
     @JSName("metaKey")
-    var metaKey_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var metaKey_EventBase: Unit
     
     @JSName("offsetX")
-    var offsetX_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetX_EventBase: Unit
     
     @JSName("offsetY")
-    var offsetY_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetY_EventBase: Unit
     
     /**
       * The mouse position relative to the left edge of the document.
@@ -22911,7 +23011,7 @@ object JQuery {
     ```
       */
     @JSName("pageX")
-    var pageX_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageX_EventBase: Unit
     
     /**
       * The mouse position relative to the top edge of the document.
@@ -22949,14 +23049,14 @@ object JQuery {
     ```
       */
     @JSName("pageY")
-    var pageY_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageY_EventBase: Unit
     
     // PointerEvent
     @JSName("pointerId")
-    var pointerId_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerId_EventBase: Unit
     
     @JSName("pointerType")
-    var pointerType_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerType_EventBase: Unit
     
     /**
       * The other DOM element involved in the event, if any.
@@ -22969,29 +23069,29 @@ object JQuery {
     });
     ```
       */
-    var relatedTarget: js.UndefOr[scala.Nothing] = js.native
+    var relatedTarget: Unit
     
     @JSName("screenX")
-    var screenX_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenX_EventBase: Unit
     
     @JSName("screenY")
-    var screenY_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenY_EventBase: Unit
     
     @JSName("shiftKey")
-    var shiftKey_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var shiftKey_EventBase: Unit
     
     @JSName("targetTouches")
-    var targetTouches_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var targetTouches_EventBase: Unit
     
     /** @deprecated */
     @JSName("toElement")
-    var toElement_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var toElement_EventBase: Unit
     
     @JSName("touches")
-    var touches_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var touches_EventBase: Unit
     
     @JSName("view")
-    var view_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var view_EventBase: Unit
     
     // MouseEvent, KeyboardEvent
     /**
@@ -23047,50 +23147,161 @@ object JQuery {
     ```
       */
     @JSName("which")
-    var which_EventBase: js.UndefOr[scala.Nothing] = js.native
+    var which_EventBase: Unit
   }
   object EventBase {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
+      detail: Unit,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: String
+      toElement: Unit,
+      touches: Unit,
+      `type`: String,
+      view: Unit,
+      which: Unit
     ): EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class EventBaseMutableBuilder[Self <: EventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class EventBaseMutableBuilder[Self <: EventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+      
+      @scala.inline
+      def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCtrlKey(value: Unit): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDetail(value: Unit): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMetaKey(value: Unit): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShiftKey(value: Unit): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setView(value: Unit): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
   // region Event extensions
   // #region Event extensions
-  @js.native
   trait EventExtensions extends StObject {
     
     /**
@@ -23099,7 +23310,7 @@ object JQuery {
       * As with `fixHooks`, the special event hooks design assumes it will be very rare that two unrelated pieces of code want to process the same event name. Special event authors who need to modify events with existing hooks will need to take precautions to avoid introducing unwanted side-effects by clobbering those hooks.
       * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
       */
-    var special: SpecialEventHooks = js.native
+    var special: SpecialEventHooks
   }
   object EventExtensions {
     
@@ -23120,7 +23331,11 @@ object JQuery {
   type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[TCurrentTarget, TData, js.Any, js.Any]]
   
   // Extra parameters can be passed from trigger()
-  type EventHandlerBase[TContext, T] = js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ js.Any, js.Any]
+  @js.native
+  trait EventHandlerBase[TContext, T] extends StObject {
+    
+    def apply(t: T, args: js.Any*): js.Any = js.native
+  }
   
   // #endregion
   // #endregion
@@ -23139,7 +23354,8 @@ object JQuery {
     */
   @js.native
   trait EventStatic
-    extends /**
+    extends StObject
+       with /**
     * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
     *
     * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
@@ -23162,11 +23378,11 @@ object JQuery {
   jQuery( "body" ).trigger( e );
   ```
     */
-  Instantiable1[/* event */ String, typings.jquery.JQuery.Event with js.Object]
+  Instantiable1[/* event */ String, typings.jquery.JQuery.Event & js.Object]
        with Instantiable2[
           /* event */ String, 
           /* properties */ js.Object, 
-          typings.jquery.JQuery.Event with js.Object
+          typings.jquery.JQuery.Event & js.Object
         ] {
     
     /**
@@ -23192,33 +23408,43 @@ object JQuery {
     jQuery( "body" ).trigger( e );
     ```
       */
-    def apply[T /* <: js.Object */](event: String): typings.jquery.JQuery.Event with T = js.native
-    def apply[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQuery.Event with T = js.native
+    def apply[T /* <: js.Object */](event: String): typings.jquery.JQuery.Event & T = js.native
+    def apply[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQuery.Event & T = js.native
   }
   
   // #endregion
   /* Rewritten from type alias, can be one of: 
     - typings.jquery.jqueryBooleans.`false`
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.jquery.jqueryNumbers.`0`
     - typings.jquery.jqueryStrings._empty
     - typings.std.HTMLAllCollection
   */
   type Falsy = js.UndefOr[_Falsy | Null | HTMLAllCollection]
   
-  @js.native
-  trait FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_FocusEvent: focus = js.native
+    var type_FocusEvent: focus
   }
   object FocusEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
@@ -23227,21 +23453,36 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: focus,
-      view: Window
+      toElement: Unit,
+      touches: Unit,
+      view: Window,
+      which: Unit
     ): typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("focus")
       __obj.asInstanceOf[typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class FocusEventMutableBuilder[Self <: typings.jquery.JQuery.FocusEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class FocusEventMutableBuilder[Self <: typings.jquery.JQuery.FocusEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: focus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -23251,48 +23492,49 @@ object JQuery {
   // #endregion
   // region FocusEvent
   // #region FocusEvent
-  @js.native
-  trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // MouseEvent, KeyboardEvent, TouchEvent
     @JSName("altKey")
-    var altKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var altKey_FocusEventBase: Unit
     
     // MouseEvent
     @JSName("button")
-    var button_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var button_FocusEventBase: Unit
     
     @JSName("buttons")
-    var buttons_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var buttons_FocusEventBase: Unit
     
     // TouchEvent
     @JSName("changedTouches")
-    var changedTouches_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var changedTouches_FocusEventBase: Unit
     
     /** @deprecated */
     @JSName("charCode")
-    var charCode_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var charCode_FocusEventBase: Unit
     
     // KeyboardEvent
     /** @deprecated */
     @JSName("char")
-    var char_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var char_FocusEventBase: Unit
     
     @JSName("clientX")
-    var clientX_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientX_FocusEventBase: Unit
     
     @JSName("clientY")
-    var clientY_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientY_FocusEventBase: Unit
     
     @JSName("ctrlKey")
-    var ctrlKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var ctrlKey_FocusEventBase: Unit
     
     /** @deprecated */
     @JSName("keyCode")
-    var keyCode_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var keyCode_FocusEventBase: Unit
     
     @JSName("key")
-    var key_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var key_FocusEventBase: Unit
     
     /**
       * Indicates whether the META key was pressed when the event fired.
@@ -23331,16 +23573,16 @@ object JQuery {
     ```
       */
     @JSName("metaKey")
-    var metaKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var metaKey_FocusEventBase: Unit
     
     @JSName("offsetX")
-    var offsetX_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetX_FocusEventBase: Unit
     
     @JSName("offsetY")
-    var offsetY_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetY_FocusEventBase: Unit
     
     @JSName("originalEvent")
-    var originalEvent_FocusEventBase: js.UndefOr[typings.jquery.FocusEvent] = js.native
+    var originalEvent_FocusEventBase: js.UndefOr[typings.jquery.FocusEvent] = js.undefined
     
     /**
       * The mouse position relative to the left edge of the document.
@@ -23378,7 +23620,7 @@ object JQuery {
     ```
       */
     @JSName("pageX")
-    var pageX_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageX_FocusEventBase: Unit
     
     /**
       * The mouse position relative to the top edge of the document.
@@ -23416,14 +23658,14 @@ object JQuery {
     ```
       */
     @JSName("pageY")
-    var pageY_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageY_FocusEventBase: Unit
     
     // PointerEvent
     @JSName("pointerId")
-    var pointerId_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerId_FocusEventBase: Unit
     
     @JSName("pointerType")
-    var pointerType_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerType_FocusEventBase: Unit
     
     /**
       * The other DOM element involved in the event, if any.
@@ -23436,26 +23678,26 @@ object JQuery {
     });
     ```
       */
-    var relatedTarget: js.UndefOr[EventTarget | Null] = js.native
+    var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
     
     @JSName("screenX")
-    var screenX_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenX_FocusEventBase: Unit
     
     @JSName("screenY")
-    var screenY_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenY_FocusEventBase: Unit
     
     @JSName("shiftKey")
-    var shiftKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var shiftKey_FocusEventBase: Unit
     
     @JSName("targetTouches")
-    var targetTouches_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var targetTouches_FocusEventBase: Unit
     
     /** @deprecated */
     @JSName("toElement")
-    var toElement_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var toElement_FocusEventBase: Unit
     
     @JSName("touches")
-    var touches_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var touches_FocusEventBase: Unit
     
     // MouseEvent, KeyboardEvent
     /**
@@ -23511,14 +23753,23 @@ object JQuery {
     ```
       */
     @JSName("which")
-    var which_FocusEventBase: js.UndefOr[scala.Nothing] = js.native
+    var which_FocusEventBase: Unit
   }
   object FocusEventBase {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
@@ -23527,27 +23778,97 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
+      toElement: Unit,
+      touches: Unit,
       `type`: String,
-      view: Window
+      view: Window,
+      which: Unit
     ): FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class FocusEventBaseMutableBuilder[Self <: FocusEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class FocusEventBaseMutableBuilder[Self <: FocusEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+      
+      @scala.inline
+      def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCtrlKey(value: Unit): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMetaKey(value: Unit): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOriginalEvent(value: typings.jquery.FocusEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      
+      @scala.inline
+      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
@@ -23557,21 +23878,52 @@ object JQuery {
       
       @scala.inline
       def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+      
+      @scala.inline
+      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShiftKey(value: Unit): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_FocusInEvent: focusin = js.native
+    var type_FocusInEvent: focusin
   }
   object FocusInEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
@@ -23580,39 +23932,64 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: focusin,
-      view: Window
+      toElement: Unit,
+      touches: Unit,
+      view: Window,
+      which: Unit
     ): FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("focusin")
       __obj.asInstanceOf[FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class FocusInEventMutableBuilder[Self <: FocusInEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class FocusInEventMutableBuilder[Self <: FocusInEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: focusin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_FocusOutEvent: focusout = js.native
+    var type_FocusOutEvent: focusout
   }
   object FocusOutEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
@@ -23621,21 +23998,36 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: focusout,
-      view: Window
+      toElement: Unit,
+      touches: Unit,
+      view: Window,
+      which: Unit
     ): FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("focusout")
       __obj.asInstanceOf[FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class FocusOutEventMutableBuilder[Self <: FocusOutEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class FocusOutEventMutableBuilder[Self <: FocusOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: focusout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -23646,45 +24038,44 @@ object JQuery {
     * Many of the special event hook functions below are passed a `handleObj` object that provides more information about the event, how it was attached, and its current state. This object and its contents should be treated as read-only data, and only the properties below are documented for use by special event handlers.
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#the-handleobj-object }\`
     */
-  @js.native
   trait HandleObject[TTarget, TData] extends StObject {
     
     /**
       * The data, if any, passed to jQuery during event binding, e.g. `{ myData: 42 }`. If the data argument was omitted or `undefined`, this property is `undefined` as well.
       */
-    val data: TData = js.native
+    val data: TData
     
     /**
       * Event handler function passed to jQuery during event binding. If `false` was passed during event binding, the handler refers to a single shared function that simply returns `false`.
       */
-    def handler(t: TriggeredEvent[TTarget, TData, _, _], args: js.Any*): js.Any = js.native
+    def handler(t: TriggeredEvent[TTarget, TData, js.Any, js.Any], args: js.Any*): js.Any
     
     /**
       * Namespace(s), if any, provided when the event was attached, such as `"myPlugin"`. When multiple namespaces are given, they are separated by periods and sorted in ascending alphabetical order. If no namespaces are provided, this property is an empty string.
       */
-    val namespace: String = js.native
+    val namespace: String
     
     /**
       * The original type name regardless of whether it was mapped via `bindType` or `delegateType`. So when a "pushy" event is mapped to "click" its `origType` would be "pushy".
       */
-    val origType: String = js.native
+    val origType: String
     
     /**
       * For delegated events, this is the selector used to filter descendant elements and determine if the handler should be called. For directly bound events, this property is `null`.
       */
-    val selector: js.UndefOr[String | Null] = js.native
+    val selector: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The type of event, such as `"click"`. When special event mapping is used via `bindType` or `delegateType`, this will be the mapped type.
       */
-    val `type`: String = js.native
+    val `type`: String
   }
   object HandleObject {
     
     @scala.inline
     def apply[TTarget, TData](
       data: TData,
-      handler: (TriggeredEvent[TTarget, TData, _, _], /* repeated */ js.Any) => js.Any,
+      handler: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any,
       namespace: String,
       origType: String,
       `type`: String
@@ -23695,13 +24086,13 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class HandleObjectMutableBuilder[Self <: HandleObject[_, _], TTarget, TData] (val x: Self with (HandleObject[TTarget, TData])) extends AnyVal {
+    implicit class HandleObjectMutableBuilder[Self <: HandleObject[?, ?], TTarget, TData] (val x: Self & (HandleObject[TTarget, TData])) extends AnyVal {
       
       @scala.inline
       def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHandler(value: (TriggeredEvent[TTarget, TData, _, _], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      def setHandler(value: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
       @scala.inline
       def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
@@ -23723,11 +24114,12 @@ object JQuery {
     }
   }
   
-  @js.native
-  trait KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_KeyDownEvent: keydown = js.native
+    var type_KeyDownEvent: keydown
   }
   object KeyDownEvent {
     
@@ -23735,8 +24127,13 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
       charCode: Double,
+      clientX: Unit,
+      clientY: Unit,
       code: String,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
@@ -23750,34 +24147,46 @@ object JQuery {
       key: String,
       keyCode: Double,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: keydown,
+      toElement: Unit,
+      touches: Unit,
       view: Window,
       which: Double
     ): KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("keydown")
       __obj.asInstanceOf[KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class KeyDownEventMutableBuilder[Self <: KeyDownEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class KeyDownEventMutableBuilder[Self <: KeyDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: keydown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_KeyPressEvent: keypress = js.native
+    var type_KeyPressEvent: keypress
   }
   object KeyPressEvent {
     
@@ -23785,8 +24194,13 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
       charCode: Double,
+      clientX: Unit,
+      clientY: Unit,
       code: String,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
@@ -23800,34 +24214,46 @@ object JQuery {
       key: String,
       keyCode: Double,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: keypress,
+      toElement: Unit,
+      touches: Unit,
       view: Window,
       which: Double
     ): KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("keypress")
       __obj.asInstanceOf[KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class KeyPressEventMutableBuilder[Self <: KeyPressEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class KeyPressEventMutableBuilder[Self <: KeyPressEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: keypress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_KeyUpEvent: keyup = js.native
+    var type_KeyUpEvent: keyup
   }
   object KeyUpEvent {
     
@@ -23835,8 +24261,13 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
       charCode: Double,
+      clientX: Unit,
+      clientY: Unit,
       code: String,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
@@ -23850,23 +24281,34 @@ object JQuery {
       key: String,
       keyCode: Double,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: keyup,
+      toElement: Unit,
+      touches: Unit,
       view: Window,
       which: Double
     ): KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("keyup")
       __obj.asInstanceOf[KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class KeyUpEventMutableBuilder[Self <: KeyUpEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class KeyUpEventMutableBuilder[Self <: KeyUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: keyup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -23877,45 +24319,46 @@ object JQuery {
   // #endregion
   // region KeyboardEvent
   // #region KeyboardEvent
-  @js.native
-  trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // MouseEvent, KeyboardEvent, TouchEvent
     @JSName("altKey")
-    var altKey_KeyboardEventBase: Boolean = js.native
+    var altKey_KeyboardEventBase: Boolean
     
     // MouseEvent
     @JSName("button")
-    var button_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var button_KeyboardEventBase: Unit
     
     @JSName("buttons")
-    var buttons_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var buttons_KeyboardEventBase: Unit
     
     // TouchEvent
     @JSName("changedTouches")
-    var changedTouches_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var changedTouches_KeyboardEventBase: Unit
     
     /** @deprecated */
     @JSName("charCode")
-    var charCode_KeyboardEventBase: Double = js.native
+    var charCode_KeyboardEventBase: Double
     
     @JSName("clientX")
-    var clientX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientX_KeyboardEventBase: Unit
     
     @JSName("clientY")
-    var clientY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientY_KeyboardEventBase: Unit
     
-    var code: String = js.native
+    var code: String
     
     @JSName("ctrlKey")
-    var ctrlKey_KeyboardEventBase: Boolean = js.native
+    var ctrlKey_KeyboardEventBase: Boolean
     
     /** @deprecated */
     @JSName("keyCode")
-    var keyCode_KeyboardEventBase: Double = js.native
+    var keyCode_KeyboardEventBase: Double
     
     @JSName("key")
-    var key_KeyboardEventBase: String = js.native
+    var key_KeyboardEventBase: String
     
     /**
       * Indicates whether the META key was pressed when the event fired.
@@ -23954,16 +24397,16 @@ object JQuery {
     ```
       */
     @JSName("metaKey")
-    var metaKey_KeyboardEventBase: Boolean = js.native
+    var metaKey_KeyboardEventBase: Boolean
     
     @JSName("offsetX")
-    var offsetX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetX_KeyboardEventBase: Unit
     
     @JSName("offsetY")
-    var offsetY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetY_KeyboardEventBase: Unit
     
     @JSName("originalEvent")
-    var originalEvent_KeyboardEventBase: js.UndefOr[KeyboardEvent] = js.native
+    var originalEvent_KeyboardEventBase: js.UndefOr[KeyboardEvent] = js.undefined
     
     /**
       * The mouse position relative to the left edge of the document.
@@ -24001,7 +24444,7 @@ object JQuery {
     ```
       */
     @JSName("pageX")
-    var pageX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageX_KeyboardEventBase: Unit
     
     /**
       * The mouse position relative to the top edge of the document.
@@ -24039,14 +24482,14 @@ object JQuery {
     ```
       */
     @JSName("pageY")
-    var pageY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageY_KeyboardEventBase: Unit
     
     // PointerEvent
     @JSName("pointerId")
-    var pointerId_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerId_KeyboardEventBase: Unit
     
     @JSName("pointerType")
-    var pointerType_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerType_KeyboardEventBase: Unit
     
     /**
       * The other DOM element involved in the event, if any.
@@ -24059,26 +24502,26 @@ object JQuery {
     });
     ```
       */
-    var relatedTarget: js.UndefOr[scala.Nothing] = js.native
+    var relatedTarget: Unit
     
     @JSName("screenX")
-    var screenX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenX_KeyboardEventBase: Unit
     
     @JSName("screenY")
-    var screenY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenY_KeyboardEventBase: Unit
     
     @JSName("shiftKey")
-    var shiftKey_KeyboardEventBase: Boolean = js.native
+    var shiftKey_KeyboardEventBase: Boolean
     
     @JSName("targetTouches")
-    var targetTouches_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var targetTouches_KeyboardEventBase: Unit
     
     /** @deprecated */
     @JSName("toElement")
-    var toElement_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var toElement_KeyboardEventBase: Unit
     
     @JSName("touches")
-    var touches_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.native
+    var touches_KeyboardEventBase: Unit
     
     // MouseEvent, KeyboardEvent
     /**
@@ -24134,7 +24577,7 @@ object JQuery {
     ```
       */
     @JSName("which")
-    var which_KeyboardEventBase: Double = js.native
+    var which_KeyboardEventBase: Double
   }
   object KeyboardEventBase {
     
@@ -24142,8 +24585,13 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
       charCode: Double,
+      clientX: Unit,
+      clientY: Unit,
       code: String,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
@@ -24157,29 +24605,56 @@ object JQuery {
       key: String,
       keyCode: Double,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
+      toElement: Unit,
+      touches: Unit,
       `type`: String,
       view: Window,
       which: Double
     ): KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class KeyboardEventBaseMutableBuilder[Self <: KeyboardEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class KeyboardEventBaseMutableBuilder[Self <: KeyboardEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
@@ -24197,21 +24672,58 @@ object JQuery {
       def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setOriginalEvent(value: KeyboardEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
       @scala.inline
+      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     /**
       * The other DOM element involved in the event, if any.
@@ -24225,10 +24737,10 @@ object JQuery {
       ```
       */
     @JSName("relatedTarget")
-    var relatedTarget_MouseDownEvent: js.UndefOr[Null] = js.native
+    var relatedTarget_MouseDownEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_MouseDownEvent: mousedown = js.native
+    var type_MouseDownEvent: mousedown
   }
   object MouseDownEvent {
     
@@ -24239,6 +24751,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24250,11 +24765,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24262,31 +24781,33 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mousedown,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mousedown")
       __obj.asInstanceOf[MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseDownEventMutableBuilder[Self <: MouseDownEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseDownEventMutableBuilder[Self <: MouseDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mousedown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // Special handling by jQuery.
     @JSName("type")
-    var type_MouseEnterEvent: mouseover = js.native
+    var type_MouseEnterEvent: mouseover
   }
   object MouseEnterEvent {
     
@@ -24297,6 +24818,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24308,11 +24832,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24320,19 +24848,20 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mouseover,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mouseover")
       __obj.asInstanceOf[MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseEnterEventMutableBuilder[Self <: MouseEnterEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseEnterEventMutableBuilder[Self <: MouseEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -24341,48 +24870,49 @@ object JQuery {
   
   // region MouseEvent
   // #region MouseEvent
-  @js.native
-  trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // MouseEvent, KeyboardEvent, TouchEvent
     @JSName("altKey")
-    var altKey_MouseEventBase: Boolean = js.native
+    var altKey_MouseEventBase: Boolean
     
     // MouseEvent
     @JSName("button")
-    var button_MouseEventBase: Double = js.native
+    var button_MouseEventBase: Double
     
     @JSName("buttons")
-    var buttons_MouseEventBase: Double = js.native
+    var buttons_MouseEventBase: Double
     
     // TouchEvent
     @JSName("changedTouches")
-    var changedTouches_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var changedTouches_MouseEventBase: Unit
     
     /** @deprecated */
     @JSName("charCode")
-    var charCode_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var charCode_MouseEventBase: Unit
     
     // KeyboardEvent
     /** @deprecated */
     @JSName("char")
-    var char_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var char_MouseEventBase: Unit
     
     @JSName("clientX")
-    var clientX_MouseEventBase: Double = js.native
+    var clientX_MouseEventBase: Double
     
     @JSName("clientY")
-    var clientY_MouseEventBase: Double = js.native
+    var clientY_MouseEventBase: Double
     
     @JSName("ctrlKey")
-    var ctrlKey_MouseEventBase: Boolean = js.native
+    var ctrlKey_MouseEventBase: Boolean
     
     /** @deprecated */
     @JSName("keyCode")
-    var keyCode_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var keyCode_MouseEventBase: Unit
     
     @JSName("key")
-    var key_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var key_MouseEventBase: Unit
     
     /**
       * Indicates whether the META key was pressed when the event fired.
@@ -24421,16 +24951,16 @@ object JQuery {
     ```
       */
     @JSName("metaKey")
-    var metaKey_MouseEventBase: Boolean = js.native
+    var metaKey_MouseEventBase: Boolean
     
     @JSName("offsetX")
-    var offsetX_MouseEventBase: Double = js.native
+    var offsetX_MouseEventBase: Double
     
     @JSName("offsetY")
-    var offsetY_MouseEventBase: Double = js.native
+    var offsetY_MouseEventBase: Double
     
     @JSName("originalEvent")
-    var originalEvent_MouseEventBase: js.UndefOr[MouseEvent] = js.native
+    var originalEvent_MouseEventBase: js.UndefOr[MouseEvent] = js.undefined
     
     /**
       * The mouse position relative to the left edge of the document.
@@ -24468,7 +24998,7 @@ object JQuery {
     ```
       */
     @JSName("pageX")
-    var pageX_MouseEventBase: Double = js.native
+    var pageX_MouseEventBase: Double
     
     /**
       * The mouse position relative to the top edge of the document.
@@ -24506,14 +25036,14 @@ object JQuery {
     ```
       */
     @JSName("pageY")
-    var pageY_MouseEventBase: Double = js.native
+    var pageY_MouseEventBase: Double
     
     // PointerEvent
     @JSName("pointerId")
-    var pointerId_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerId_MouseEventBase: Unit
     
     @JSName("pointerType")
-    var pointerType_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerType_MouseEventBase: Unit
     
     /**
       * The other DOM element involved in the event, if any.
@@ -24526,26 +25056,26 @@ object JQuery {
     });
     ```
       */
-    var relatedTarget: js.UndefOr[EventTarget | Null] = js.native
+    var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
     
     @JSName("screenX")
-    var screenX_MouseEventBase: Double = js.native
+    var screenX_MouseEventBase: Double
     
     @JSName("screenY")
-    var screenY_MouseEventBase: Double = js.native
+    var screenY_MouseEventBase: Double
     
     @JSName("shiftKey")
-    var shiftKey_MouseEventBase: Boolean = js.native
+    var shiftKey_MouseEventBase: Boolean
     
     @JSName("targetTouches")
-    var targetTouches_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var targetTouches_MouseEventBase: Unit
     
     /** @deprecated */
     @JSName("toElement")
-    var toElement_MouseEventBase: Element = js.native
+    var toElement_MouseEventBase: Element
     
     @JSName("touches")
-    var touches_MouseEventBase: js.UndefOr[scala.Nothing] = js.native
+    var touches_MouseEventBase: Unit
     
     // MouseEvent, KeyboardEvent
     /**
@@ -24601,7 +25131,7 @@ object JQuery {
     ```
       */
     @JSName("which")
-    var which_MouseEventBase: Double = js.native
+    var which_MouseEventBase: Double
   }
   object MouseEventBase {
     
@@ -24612,6 +25142,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24623,11 +25156,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24635,19 +25172,21 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
+      touches: Unit,
       `type`: String,
       view: Window,
       which: Double
     ): MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseEventBaseMutableBuilder[Self <: MouseEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseEventBaseMutableBuilder[Self <: MouseEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
@@ -24659,6 +25198,15 @@ object JQuery {
       def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -24666,6 +25214,12 @@ object JQuery {
       
       @scala.inline
       def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
@@ -24689,6 +25243,12 @@ object JQuery {
       def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -24707,19 +25267,26 @@ object JQuery {
       def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setToElement(value: Element): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // Special handling by jQuery.
     @JSName("type")
-    var type_MouseLeaveEvent: mouseout = js.native
+    var type_MouseLeaveEvent: mouseout
   }
   object MouseLeaveEvent {
     
@@ -24730,6 +25297,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24741,11 +25311,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24753,27 +25327,29 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mouseout,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mouseout")
       __obj.asInstanceOf[MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseLeaveEventMutableBuilder[Self <: MouseLeaveEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseLeaveEventMutableBuilder[Self <: MouseLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     /**
       * The other DOM element involved in the event, if any.
@@ -24787,10 +25363,10 @@ object JQuery {
       ```
       */
     @JSName("relatedTarget")
-    var relatedTarget_MouseMoveEvent: js.UndefOr[Null] = js.native
+    var relatedTarget_MouseMoveEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_MouseMoveEvent: mousemove = js.native
+    var type_MouseMoveEvent: mousemove
   }
   object MouseMoveEvent {
     
@@ -24801,6 +25377,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24812,11 +25391,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24824,30 +25407,32 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mousemove,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mousemove")
       __obj.asInstanceOf[MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseMoveEventMutableBuilder[Self <: MouseMoveEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseMoveEventMutableBuilder[Self <: MouseMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mousemove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_MouseOutEvent: mouseout = js.native
+    var type_MouseOutEvent: mouseout
   }
   object MouseOutEvent {
     
@@ -24858,6 +25443,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24869,11 +25457,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24881,30 +25473,32 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mouseout,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mouseout")
       __obj.asInstanceOf[MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseOutEventMutableBuilder[Self <: MouseOutEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseOutEventMutableBuilder[Self <: MouseOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_MouseOverEvent: mouseover = js.native
+    var type_MouseOverEvent: mouseover
   }
   object MouseOverEvent {
     
@@ -24915,6 +25509,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24926,11 +25523,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -24938,27 +25539,29 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mouseover,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mouseover")
       __obj.asInstanceOf[MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseOverEventMutableBuilder[Self <: MouseOverEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseOverEventMutableBuilder[Self <: MouseOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     /**
       * The other DOM element involved in the event, if any.
@@ -24972,10 +25575,10 @@ object JQuery {
       ```
       */
     @JSName("relatedTarget")
-    var relatedTarget_MouseUpEvent: js.UndefOr[Null] = js.native
+    var relatedTarget_MouseUpEvent: js.UndefOr[Null] = js.undefined
     
     @JSName("type")
-    var type_MouseUpEvent: mouseup = js.native
+    var type_MouseUpEvent: mouseup
   }
   object MouseUpEvent {
     
@@ -24986,6 +25589,9 @@ object JQuery {
       button: Double,
       buttons: Double,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
@@ -24997,11 +25603,15 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
       offsetX: Double,
       offsetY: Double,
       pageX: Double,
       pageY: Double,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
       screenX: Double,
       screenY: Double,
@@ -25009,19 +25619,20 @@ object JQuery {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
       toElement: Element,
-      `type`: mouseup,
+      touches: Unit,
       view: Window,
       which: Double
     ): MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mouseup")
       __obj.asInstanceOf[MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class MouseUpEventMutableBuilder[Self <: MouseUpEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class MouseUpEventMutableBuilder[Self <: MouseUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: mouseup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -25031,12 +25642,11 @@ object JQuery {
   // #endregion
   // #endregion
   // #endregion
-  @js.native
   trait NameValuePair extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object NameValuePair {
     
@@ -25768,7 +26378,7 @@ object JQuery {
     );
     ```
       */
-    def promise[TTarget /* <: js.Object */](target: TTarget): this.type with TTarget = js.native
+    def promise[TTarget /* <: js.Object */](target: TTarget): this.type & TTarget = js.native
     
     /**
       * Determine the current state of a Deferred object.
@@ -26293,647 +26903,211 @@ object JQuery {
   // region Queue
   // #region Queue
   // TODO: Is the first element always a string or is that specific to the 'fx' queue?
-  /* Inlined {  0 :string} & std.Array<jquery.JQuery.QueueFunction<TElement>> */
   @js.native
-  trait Queue[TElement] extends /* n */ NumberDictionary[QueueFunction[TElement]] {
+  trait Queue[TElement]
+    extends StObject
+       with Array[QueueFunction[TElement]] {
     
     var `0`: String = js.native
-    
-    /**
-      * Combines two or more arrays.
-      * @param items Additional items to add to the end of array1.
-      */
-    def concat(items: (js.Array[QueueFunction[TElement]] | QueueFunction[TElement])*): js.Array[QueueFunction[TElement]] = js.native
-    
-    /**
-      * Returns the this object after copying a section of the array identified by start and end
-      * to the same array starting at position target
-      * @param target If target is negative, it is treated as length+target where length is the
-      * length of the array.
-      * @param start If start is negative, it is treated as length+start. If end is negative, it
-      * is treated as length+end.
-      * @param end If not specified, length of the this object is used as its default value.
-      */
-    def copyWithin(target: Double, start: Double): this.type = js.native
-    def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
-    
-    /**
-      * Returns an iterable of key, value pairs for every entry in the array
-      */
-    def entries(): IterableIterator[js.Tuple2[Double, QueueFunction[TElement]]] = js.native
-    
-    /**
-      * Determines whether all the members of an array satisfy the specified test.
-      * @param predicate A function that accepts up to three arguments. The every method calls
-      * the predicate function for each element in the array until the predicate returns a value
-      * which is coercible to the Boolean value false, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function.
-      * If thisArg is omitted, undefined is used as the this value.
-      */
-    def every(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          _
-        ]
-    ): Boolean = js.native
-    def every(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          _
-        ],
-      thisArg: js.Any
-    ): Boolean = js.native
-    /**
-      * Determines whether all the members of an array satisfy the specified test.
-      * @param predicate A function that accepts up to three arguments. The every method calls
-      * the predicate function for each element in the array until the predicate returns a value
-      * which is coercible to the Boolean value false, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function.
-      * If thisArg is omitted, undefined is used as the this value.
-      */
-    @JSName("every")
-    def every_S_QueueFunctionTElement[S /* <: QueueFunction[TElement] */](
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          /* is S */ Boolean
-        ]
-    ): /* is std.Array<S> */ Boolean = js.native
-    @JSName("every")
-    def every_S_QueueFunctionTElement[S /* <: QueueFunction[TElement] */](
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          /* is S */ Boolean
-        ],
-      thisArg: js.Any
-    ): /* is std.Array<S> */ Boolean = js.native
-    
-    /**
-      * Returns the this object after filling the section identified by start and end with value
-      * @param value value to fill array section with
-      * @param start index to start filling the array at. If start is negative, it is treated as
-      * length+start where length is the length of the array.
-      * @param end index to stop filling the array at. If end is negative, it is treated as
-      * length+end.
-      */
-    def fill(value: QueueFunction[TElement]): this.type = js.native
-    def fill(value: QueueFunction[TElement], start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
-    def fill(value: QueueFunction[TElement], start: Double): this.type = js.native
-    def fill(value: QueueFunction[TElement], start: Double, end: Double): this.type = js.native
-    
-    /**
-      * Returns the elements of an array that meet the condition specified in a callback function.
-      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-      */
-    def filter(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          _
-        ]
-    ): js.Array[QueueFunction[TElement]] = js.native
-    def filter(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          _
-        ],
-      thisArg: js.Any
-    ): js.Array[QueueFunction[TElement]] = js.native
-    /**
-      * Returns the elements of an array that meet the condition specified in a callback function.
-      * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
-      */
-    @JSName("filter")
-    def filter_S_QueueFunctionTElement[S /* <: QueueFunction[TElement] */](
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          /* is S */ Boolean
-        ]
-    ): js.Array[S] = js.native
-    @JSName("filter")
-    def filter_S_QueueFunctionTElement[S /* <: QueueFunction[TElement] */](
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          /* is S */ Boolean
-        ],
-      thisArg: js.Any
-    ): js.Array[S] = js.native
-    
-    def find(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* obj */ js.Array[QueueFunction[TElement]], 
-          _
-        ]
-    ): js.UndefOr[QueueFunction[TElement]] = js.native
-    def find(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* obj */ js.Array[QueueFunction[TElement]], 
-          _
-        ],
-      thisArg: js.Any
-    ): js.UndefOr[QueueFunction[TElement]] = js.native
-    /**
-      * Returns the value of the first element in the array where predicate is true, and undefined
-      * otherwise.
-      * @param predicate find calls predicate once for each element of the array, in ascending
-      * order, until it finds one where predicate returns true. If such an element is found, find
-      * immediately returns that element value. Otherwise, find returns undefined.
-      * @param thisArg If provided, it will be used as the this value for each invocation of
-      * predicate. If it is not provided, undefined is used instead.
-      */
-    def find[S /* <: QueueFunction[TElement] */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* obj */ js.Array[QueueFunction[TElement]], 
-          /* is S */ Boolean
-        ]
-    ): js.UndefOr[S] = js.native
-    def find[S /* <: QueueFunction[TElement] */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* obj */ js.Array[QueueFunction[TElement]], 
-          /* is S */ Boolean
-        ],
-      thisArg: js.Any
-    ): js.UndefOr[S] = js.native
-    
-    /**
-      * Returns the index of the first element in the array where predicate is true, and -1
-      * otherwise.
-      * @param predicate find calls predicate once for each element of the array, in ascending
-      * order, until it finds one where predicate returns true. If such an element is found,
-      * findIndex immediately returns that element index. Otherwise, findIndex returns -1.
-      * @param thisArg If provided, it will be used as the this value for each invocation of
-      * predicate. If it is not provided, undefined is used instead.
-      */
-    def findIndex(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* obj */ js.Array[QueueFunction[TElement]], 
-          _
-        ]
-    ): Double = js.native
-    def findIndex(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* obj */ js.Array[QueueFunction[TElement]], 
-          _
-        ],
-      thisArg: js.Any
-    ): Double = js.native
-    
-    /**
-      * Returns a new array with all sub-array elements concatenated into it recursively up to the
-      * specified depth.
-      *
-      * @param depth The maximum recursion depth
-      */
-    def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
-    def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
-    
-    /**
-      * Calls a defined callback function on each element of an array. Then, flattens the result into
-      * a new array.
-      * This is identical to a map followed by flat with depth 1.
-      *
-      * @param callback A function that accepts up to three arguments. The flatMap method calls the
-      * callback function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the callback function. If
-      * thisArg is omitted, undefined is used as the this value.
-      */
-    def flatMap[U, This](
-      callback: js.ThisFunction3[
-          /* this */ This, 
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          U | js.Array[U]
-        ]
-    ): js.Array[U] = js.native
-    def flatMap[U, This](
-      callback: js.ThisFunction3[
-          /* this */ This, 
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          U | js.Array[U]
-        ],
-      thisArg: This
-    ): js.Array[U] = js.native
-    
-    /**
-      * Performs the specified action for each element in an array.
-      * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
-      * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-      */
-    def forEach(
-      callbackfn: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          Unit
-        ]
-    ): Unit = js.native
-    def forEach(
-      callbackfn: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          Unit
-        ],
-      thisArg: js.Any
-    ): Unit = js.native
-    
-    /**
-      * Determines whether an array includes a certain element, returning true or false as appropriate.
-      * @param searchElement The element to search for.
-      * @param fromIndex The position in this array at which to begin searching for searchElement.
-      */
-    def includes(searchElement: QueueFunction[TElement]): Boolean = js.native
-    def includes(searchElement: QueueFunction[TElement], fromIndex: Double): Boolean = js.native
-    
-    /**
-      * Returns the index of the first occurrence of a value in an array.
-      * @param searchElement The value to locate in the array.
-      * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
-      */
-    def indexOf(searchElement: QueueFunction[TElement]): Double = js.native
-    def indexOf(searchElement: QueueFunction[TElement], fromIndex: Double): Double = js.native
-    
-    /** Iterator */
-    @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[QueueFunction[TElement]]] = js.native
-    
-    /**
-      * Adds all the elements of an array separated by the specified separator string.
-      * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
-      */
-    def join(): String = js.native
-    def join(separator: String): String = js.native
-    
-    /**
-      * Returns an iterable of keys in the array
-      */
-    def keys(): IterableIterator[Double] = js.native
-    
-    /**
-      * Returns the index of the last occurrence of a specified value in an array.
-      * @param searchElement The value to locate in the array.
-      * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.
-      */
-    def lastIndexOf(searchElement: QueueFunction[TElement]): Double = js.native
-    def lastIndexOf(searchElement: QueueFunction[TElement], fromIndex: Double): Double = js.native
-    
-    /**
-      * Gets or sets the length of the array. This is a number one higher than the highest element defined in an array.
-      */
-    var length: Double = js.native
-    
-    /**
-      * Calls a defined callback function on each element of an array, and returns an array that contains the results.
-      * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
-      * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
-      */
-    def map[U](
-      callbackfn: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          U
-        ]
-    ): js.Array[U] = js.native
-    def map[U](
-      callbackfn: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          U
-        ],
-      thisArg: js.Any
-    ): js.Array[U] = js.native
-    
-    /**
-      * Removes the last element from an array and returns it.
-      */
-    def pop(): js.UndefOr[QueueFunction[TElement]] = js.native
-    
-    /**
-      * Appends new elements to an array, and returns the new length of the array.
-      * @param items New elements of the Array.
-      */
-    def push(items: QueueFunction[TElement]*): Double = js.native
-    
-    /**
-      * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduce(
-      callbackfn: js.Function4[
-          /* previousValue */ QueueFunction[TElement], 
-          /* currentValue */ QueueFunction[TElement], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          QueueFunction[TElement]
-        ]
-    ): QueueFunction[TElement] = js.native
-    def reduce(
-      callbackfn: js.Function4[
-          /* previousValue */ QueueFunction[TElement], 
-          /* currentValue */ QueueFunction[TElement], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          QueueFunction[TElement]
-        ],
-      initialValue: QueueFunction[TElement]
-    ): QueueFunction[TElement] = js.native
-    /**
-      * Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduce[U](
-      callbackfn: js.Function4[
-          /* previousValue */ U, 
-          /* currentValue */ QueueFunction[TElement], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          U
-        ],
-      initialValue: U
-    ): U = js.native
-    
-    /**
-      * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduceRight(
-      callbackfn: js.Function4[
-          /* previousValue */ QueueFunction[TElement], 
-          /* currentValue */ QueueFunction[TElement], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          QueueFunction[TElement]
-        ]
-    ): QueueFunction[TElement] = js.native
-    def reduceRight(
-      callbackfn: js.Function4[
-          /* previousValue */ QueueFunction[TElement], 
-          /* currentValue */ QueueFunction[TElement], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          QueueFunction[TElement]
-        ],
-      initialValue: QueueFunction[TElement]
-    ): QueueFunction[TElement] = js.native
-    /**
-      * Calls the specified callback function for all the elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-      * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
-      * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
-      */
-    def reduceRight[U](
-      callbackfn: js.Function4[
-          /* previousValue */ U, 
-          /* currentValue */ QueueFunction[TElement], 
-          /* currentIndex */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          U
-        ],
-      initialValue: U
-    ): U = js.native
-    
-    /**
-      * Reverses the elements in an Array.
-      */
-    def reverse(): js.Array[QueueFunction[TElement]] = js.native
-    
-    /**
-      * Removes the first element from an array and returns it.
-      */
-    def shift(): js.UndefOr[QueueFunction[TElement]] = js.native
-    
-    /**
-      * Returns a section of an array.
-      * @param start The beginning of the specified portion of the array.
-      * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
-      */
-    def slice(): js.Array[QueueFunction[TElement]] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[QueueFunction[TElement]] = js.native
-    def slice(start: Double): js.Array[QueueFunction[TElement]] = js.native
-    def slice(start: Double, end: Double): js.Array[QueueFunction[TElement]] = js.native
-    
-    /**
-      * Determines whether the specified callback function returns true for any element of an array.
-      * @param predicate A function that accepts up to three arguments. The some method calls
-      * the predicate function for each element in the array until the predicate returns a value
-      * which is coercible to the Boolean value true, or until the end of the array.
-      * @param thisArg An object to which the this keyword can refer in the predicate function.
-      * If thisArg is omitted, undefined is used as the this value.
-      */
-    def some(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          _
-        ]
-    ): Boolean = js.native
-    def some(
-      predicate: js.Function3[
-          /* value */ QueueFunction[TElement], 
-          /* index */ Double, 
-          /* array */ js.Array[QueueFunction[TElement]], 
-          _
-        ],
-      thisArg: js.Any
-    ): Boolean = js.native
-    
-    /**
-      * Sorts an array.
-      * @param compareFn Function used to determine the order of the elements. It is expected to return
-      * a negative value if first argument is less than second argument, zero if they're equal and a positive
-      * value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
-      * ```ts
-      * [11,2,22,1].sort((a, b) => a - b)
-      * ```
-      */
-    def sort(): this.type = js.native
-    def sort(compareFn: js.Function2[/* a */ QueueFunction[TElement], /* b */ QueueFunction[TElement], Double]): this.type = js.native
-    
-    /**
-      * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-      * @param start The zero-based location in the array from which to start removing elements.
-      * @param deleteCount The number of elements to remove.
-      */
-    def splice(start: Double): js.Array[QueueFunction[TElement]] = js.native
-    def splice(start: Double, deleteCount: Double): js.Array[QueueFunction[TElement]] = js.native
-    /**
-      * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
-      * @param start The zero-based location in the array from which to start removing elements.
-      * @param deleteCount The number of elements to remove.
-      * @param items Elements to insert into the array in place of the deleted elements.
-      */
-    def splice(start: Double, deleteCount: Double, items: QueueFunction[TElement]*): js.Array[QueueFunction[TElement]] = js.native
-    
-    /**
-      * Returns an object whose properties have the value 'true'
-      * when they will be absent when used in a 'with' statement.
-      */
-    @JSName(js.Symbol.unscopables)
-    var unscopables: js.Function0[CopyWithin] = js.native
-    
-    /**
-      * Inserts new elements at the start of an array.
-      * @param items  Elements to insert at the start of the Array.
-      */
-    def unshift(items: QueueFunction[TElement]*): Double = js.native
-    
-    /**
-      * Returns an iterable of values in the array
-      */
-    def values(): IterableIterator[QueueFunction[TElement]] = js.native
   }
   
   type QueueFunction[TElement] = js.ThisFunction1[/* this */ TElement, /* next */ js.Function0[Unit], Unit]
   
-  @js.native
-  trait ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_ResizeEvent: resize = js.native
+    var type_ResizeEvent: resize
   }
   object ResizeEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
+      detail: Unit,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: resize
+      toElement: Unit,
+      touches: Unit,
+      view: Unit,
+      which: Unit
     ): ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("resize")
       __obj.asInstanceOf[ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class ResizeEventMutableBuilder[Self <: ResizeEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class ResizeEventMutableBuilder[Self <: ResizeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: resize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_ScrollEvent: scroll = js.native
+    var type_ScrollEvent: scroll
   }
   object ScrollEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
+      detail: Unit,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: scroll
+      toElement: Unit,
+      touches: Unit,
+      view: Unit,
+      which: Unit
     ): ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("scroll")
       __obj.asInstanceOf[ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class ScrollEventMutableBuilder[Self <: ScrollEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class ScrollEventMutableBuilder[Self <: ScrollEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: scroll): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_SelectEvent: select = js.native
+    var type_SelectEvent: select
   }
   object SelectEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
+      detail: Unit,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: select
+      toElement: Unit,
+      touches: Unit,
+      view: Unit,
+      which: Unit
     ): SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("select")
       __obj.asInstanceOf[SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class SelectEventMutableBuilder[Self <: SelectEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class SelectEventMutableBuilder[Self <: SelectEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -26945,9 +27119,9 @@ object JQuery {
     */
   type Selector = String
   
-  @js.native
   trait Selectors
-    extends typings.sizzle.mod.Selectors {
+    extends StObject
+       with typings.sizzle.mod.Selectors {
     
     /**
       * @deprecated ​ Deprecated since 3.0. Use \`{@link Selectors#pseudos }\`.
@@ -26957,7 +27131,7 @@ object JQuery {
       * **Solution**: Rename any of the older usage to `jQuery.expr.pseudos`. The functionality is identical.
       */
     @JSName(":")
-    var Colon: PseudoFunctions = js.native
+    var Colon: PseudoFunctions
   }
   object Selectors {
     
@@ -27028,39 +27202,67 @@ object JQuery {
   */
   type SpeedSettings[TElement] = _SpeedSettings[TElement] | StringDictionary[scala.Nothing]
   
-  @js.native
-  trait SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_SubmitEvent: submit = js.native
+    var type_SubmitEvent: submit
   }
   object SubmitEvent {
     
     @scala.inline
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+      altKey: Unit,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
+      changedTouches: Unit,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
+      ctrlKey: Unit,
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
+      detail: Unit,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
+      metaKey: Unit,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
+      shiftKey: Unit,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
+      targetTouches: Unit,
       timeStamp: Double,
-      `type`: submit
+      toElement: Unit,
+      touches: Unit,
+      view: Unit,
+      which: Unit
     ): SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("submit")
       __obj.asInstanceOf[SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class SubmitEventMutableBuilder[Self <: SubmitEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class SubmitEventMutableBuilder[Self <: SubmitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: submit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -27087,11 +27289,12 @@ object JQuery {
     var queue: Boolean | String = js.native
   }
   
-  @js.native
-  trait TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchCancelEvent: touchcancel = js.native
+    var type_TouchCancelEvent: touchcancel
   }
   object TouchCancelEvent {
     
@@ -27099,8 +27302,14 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
       changedTouches: TouchList,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
       data: TData,
@@ -27110,36 +27319,49 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
       targetTouches: TouchList,
       timeStamp: Double,
+      toElement: Unit,
       touches: TouchList,
-      `type`: touchcancel,
-      view: Window
+      view: Window,
+      which: Unit
     ): TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("touchcancel")
       __obj.asInstanceOf[TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class TouchCancelEventMutableBuilder[Self <: TouchCancelEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TouchCancelEventMutableBuilder[Self <: TouchCancelEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: touchcancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchEndEvent: touchend = js.native
+    var type_TouchEndEvent: touchend
   }
   object TouchEndEvent {
     
@@ -27147,8 +27369,14 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
       changedTouches: TouchList,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
       data: TData,
@@ -27158,25 +27386,37 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
       targetTouches: TouchList,
       timeStamp: Double,
+      toElement: Unit,
       touches: TouchList,
-      `type`: touchend,
-      view: Window
+      view: Window,
+      which: Unit
     ): TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("touchend")
       __obj.asInstanceOf[TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class TouchEndEventMutableBuilder[Self <: TouchEndEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TouchEndEventMutableBuilder[Self <: TouchEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: touchend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -27186,48 +27426,49 @@ object JQuery {
   // #endregion
   // region TouchEvent
   // #region TouchEvent
-  @js.native
-  trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // MouseEvent, KeyboardEvent, TouchEvent
     @JSName("altKey")
-    var altKey_TouchEventBase: Boolean = js.native
+    var altKey_TouchEventBase: Boolean
     
     // MouseEvent
     @JSName("button")
-    var button_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var button_TouchEventBase: Unit
     
     @JSName("buttons")
-    var buttons_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var buttons_TouchEventBase: Unit
     
     // TouchEvent
     @JSName("changedTouches")
-    var changedTouches_TouchEventBase: TouchList = js.native
+    var changedTouches_TouchEventBase: TouchList
     
     /** @deprecated */
     @JSName("charCode")
-    var charCode_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var charCode_TouchEventBase: Unit
     
     // KeyboardEvent
     /** @deprecated */
     @JSName("char")
-    var char_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var char_TouchEventBase: Unit
     
     @JSName("clientX")
-    var clientX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientX_TouchEventBase: Unit
     
     @JSName("clientY")
-    var clientY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var clientY_TouchEventBase: Unit
     
     @JSName("ctrlKey")
-    var ctrlKey_TouchEventBase: Boolean = js.native
+    var ctrlKey_TouchEventBase: Boolean
     
     /** @deprecated */
     @JSName("keyCode")
-    var keyCode_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var keyCode_TouchEventBase: Unit
     
     @JSName("key")
-    var key_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var key_TouchEventBase: Unit
     
     /**
       * Indicates whether the META key was pressed when the event fired.
@@ -27266,16 +27507,16 @@ object JQuery {
     ```
       */
     @JSName("metaKey")
-    var metaKey_TouchEventBase: Boolean = js.native
+    var metaKey_TouchEventBase: Boolean
     
     @JSName("offsetX")
-    var offsetX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetX_TouchEventBase: Unit
     
     @JSName("offsetY")
-    var offsetY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var offsetY_TouchEventBase: Unit
     
     @JSName("originalEvent")
-    var originalEvent_TouchEventBase: js.UndefOr[TouchEvent] = js.native
+    var originalEvent_TouchEventBase: js.UndefOr[TouchEvent] = js.undefined
     
     /**
       * The mouse position relative to the left edge of the document.
@@ -27313,7 +27554,7 @@ object JQuery {
     ```
       */
     @JSName("pageX")
-    var pageX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageX_TouchEventBase: Unit
     
     /**
       * The mouse position relative to the top edge of the document.
@@ -27351,14 +27592,14 @@ object JQuery {
     ```
       */
     @JSName("pageY")
-    var pageY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pageY_TouchEventBase: Unit
     
     // PointerEvent
     @JSName("pointerId")
-    var pointerId_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerId_TouchEventBase: Unit
     
     @JSName("pointerType")
-    var pointerType_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var pointerType_TouchEventBase: Unit
     
     /**
       * The other DOM element involved in the event, if any.
@@ -27371,26 +27612,26 @@ object JQuery {
     });
     ```
       */
-    var relatedTarget: js.UndefOr[scala.Nothing] = js.native
+    var relatedTarget: Unit
     
     @JSName("screenX")
-    var screenX_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenX_TouchEventBase: Unit
     
     @JSName("screenY")
-    var screenY_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var screenY_TouchEventBase: Unit
     
     @JSName("shiftKey")
-    var shiftKey_TouchEventBase: Boolean = js.native
+    var shiftKey_TouchEventBase: Boolean
     
     @JSName("targetTouches")
-    var targetTouches_TouchEventBase: TouchList = js.native
+    var targetTouches_TouchEventBase: TouchList
     
     /** @deprecated */
     @JSName("toElement")
-    var toElement_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var toElement_TouchEventBase: Unit
     
     @JSName("touches")
-    var touches_TouchEventBase: TouchList = js.native
+    var touches_TouchEventBase: TouchList
     
     // MouseEvent, KeyboardEvent
     /**
@@ -27446,7 +27687,7 @@ object JQuery {
     ```
       */
     @JSName("which")
-    var which_TouchEventBase: js.UndefOr[scala.Nothing] = js.native
+    var which_TouchEventBase: Unit
   }
   object TouchEventBase {
     
@@ -27454,8 +27695,14 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
       changedTouches: TouchList,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
       data: TData,
@@ -27465,37 +27712,80 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
       targetTouches: TouchList,
       timeStamp: Double,
+      toElement: Unit,
       touches: TouchList,
       `type`: String,
-      view: Window
+      view: Window,
+      which: Unit
     ): TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class TouchEventBaseMutableBuilder[Self <: TouchEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TouchEventBaseMutableBuilder[Self <: TouchEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOriginalEvent(value: TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
@@ -27504,21 +27794,49 @@ object JQuery {
       def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
       @scala.inline
+      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchMoveEvent: touchmove = js.native
+    var type_TouchMoveEvent: touchmove
   }
   object TouchMoveEvent {
     
@@ -27526,8 +27844,14 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
       changedTouches: TouchList,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
       data: TData,
@@ -27537,36 +27861,49 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
       targetTouches: TouchList,
       timeStamp: Double,
+      toElement: Unit,
       touches: TouchList,
-      `type`: touchmove,
-      view: Window
+      view: Window,
+      which: Unit
     ): TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("touchmove")
       __obj.asInstanceOf[TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class TouchMoveEventMutableBuilder[Self <: TouchMoveEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TouchMoveEventMutableBuilder[Self <: TouchMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: touchmove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     @JSName("type")
-    var type_TouchStartEvent: touchstart = js.native
+    var type_TouchStartEvent: touchstart
   }
   object TouchStartEvent {
     
@@ -27574,8 +27911,14 @@ object JQuery {
     def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
+      button: Unit,
+      buttons: Unit,
       cancelable: Boolean,
       changedTouches: TouchList,
+      char: Unit,
+      charCode: Unit,
+      clientX: Unit,
+      clientY: Unit,
       ctrlKey: Boolean,
       currentTarget: TCurrentTarget,
       data: TData,
@@ -27585,42 +27928,53 @@ object JQuery {
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
+      key: Unit,
+      keyCode: Unit,
       metaKey: Boolean,
+      offsetX: Unit,
+      offsetY: Unit,
+      pageX: Unit,
+      pageY: Unit,
+      pointerId: Unit,
+      pointerType: Unit,
       preventDefault: () => Unit,
+      relatedTarget: Unit,
+      screenX: Unit,
+      screenY: Unit,
       shiftKey: Boolean,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: TTarget,
       targetTouches: TouchList,
       timeStamp: Double,
+      toElement: Unit,
       touches: TouchList,
-      `type`: touchstart,
-      view: Window
+      view: Window,
+      which: Unit
     ): TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], changedTouches = changedTouches.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], charCode = charCode.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], pointerId = pointerId.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), relatedTarget = relatedTarget.asInstanceOf[js.Any], screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], targetTouches = targetTouches.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], toElement = toElement.asInstanceOf[js.Any], touches = touches.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("touchstart")
       __obj.asInstanceOf[TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
     @scala.inline
-    implicit class TouchStartEventMutableBuilder[Self <: TouchStartEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TouchStartEventMutableBuilder[Self <: TouchStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setType(value: touchstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Transport extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    def send(headers: PlainObject[_], completeCallback: SuccessCallback): Unit = js.native
+    def send(headers: PlainObject[js.Any], completeCallback: SuccessCallback): Unit
   }
   object Transport {
     
     @scala.inline
-    def apply(abort: () => Unit, send: (PlainObject[_], SuccessCallback) => Unit): Transport = {
+    def apply(abort: () => Unit, send: (PlainObject[js.Any], SuccessCallback) => Unit): Transport = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Transport]
     }
@@ -27640,7 +27994,7 @@ object JQuery {
       def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setSend(value: (PlainObject[_], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      def setSend(value: (PlainObject[js.Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }
   }
   
@@ -27648,9 +28002,9 @@ object JQuery {
   /**
     * Base type for jQuery events that have been triggered (including events triggered on plain objects).
     */
-  @js.native
   trait TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
-    extends typings.jquery.JQuery.Event {
+    extends StObject
+       with typings.jquery.JQuery.Event {
     
     /**
       * The current DOM element within the event bubbling phase.
@@ -27663,7 +28017,7 @@ object JQuery {
     });
     ```
       */
-    var currentTarget: TCurrentTarget = js.native
+    var currentTarget: TCurrentTarget
     
     /**
       * An optional object of data passed to an event method when the current executing handler is bound.
@@ -27707,7 +28061,7 @@ object JQuery {
     </html>
     ```
       */
-    var data: TData = js.native
+    var data: TData
     
     /**
       * The element where the currently-called jQuery event handler was attached.
@@ -27720,7 +28074,7 @@ object JQuery {
     });
     ```
       */
-    var delegateTarget: TDelegateTarget = js.native
+    var delegateTarget: TDelegateTarget
     
     /**
       * The namespace specified when the event was triggered.
@@ -27753,9 +28107,9 @@ object JQuery {
     </html>
     ```
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var originalEvent: js.UndefOr[typings.jquery.Event] = js.native
+    var originalEvent: js.UndefOr[typings.jquery.Event] = js.undefined
     
     /**
       * The last value returned by an event handler that was triggered by this event, unless the value was undefined.
@@ -27788,7 +28142,7 @@ object JQuery {
     </html>
     ```
       */
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The DOM element that initiated the event.
@@ -27868,7 +28222,7 @@ object JQuery {
     </html>
     ```
       */
-    var target: TTarget = js.native
+    var target: TTarget
   }
   object TriggeredEvent {
     
@@ -27893,7 +28247,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class TriggeredEventMutableBuilder[Self <: TriggeredEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TriggeredEventMutableBuilder[Self <: TriggeredEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setCurrentTarget(value: TCurrentTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
@@ -27932,7 +28286,6 @@ object JQuery {
     * @since 1.8
     */
   // This should be a class but doesn't work correctly under the JQuery namespace. Tween should be an inner class of jQuery.
-  @js.native
   trait Tween[TElement] extends StObject {
     
     /**
@@ -27940,52 +28293,52 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    def cur(): js.Any = js.native
+    def cur(): js.Any
     
     /**
       * The easing used
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var easing: String = js.native
+    var easing: String
     
     /**
       * The element being animated
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var elem: TElement = js.native
+    var elem: TElement
     
     /**
       * The ending value of the tween
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var end: Double = js.native
+    var end: Double
     
     /**
       * The current value of the tween
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var now: Double = js.native
+    var now: Double
     
     /**
       * A reference to the animation options
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var options: EffectsOptions[TElement] = js.native
+    var options: EffectsOptions[TElement]
     
     // Undocumented. Is this intended to be public?
-    var pos: js.UndefOr[Double] = js.native
+    var pos: js.UndefOr[Double] = js.undefined
     
     /**
       * The property being animated
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var prop: String = js.native
+    var prop: String
     
     /**
       * Updates the value for the property on the animated elemd.
@@ -27993,21 +28346,21 @@ object JQuery {
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    def run(progress: Double): this.type = js.native
+    def run(progress: Double): this.type
     
     /**
       * The starting value of the tween
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var start: Double = js.native
+    var start: Double
     
     /**
       * The CSS unit for the tween
       * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
       * @since 1.8
       */
-    var unit: String = js.native
+    var unit: String
   }
   object Tween {
     
@@ -28029,7 +28382,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class TweenMutableBuilder[Self <: Tween[_], TElement] (val x: Self with Tween[TElement]) extends AnyVal {
+    implicit class TweenMutableBuilder[Self <: Tween[?], TElement] (val x: Self & Tween[TElement]) extends AnyVal {
       
       @scala.inline
       def setCur(value: () => js.Any): Self = StObject.set(x, "cur", js.Any.fromFunction0(value))
@@ -28081,14 +28434,6 @@ object JQuery {
       * @since 1.8
       */
     def apply[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double): Tween[TElement] = js.native
-    def apply[TElement](
-      elem: TElement,
-      options: EffectsOptions[TElement],
-      prop: String,
-      end: Double,
-      easing: js.UndefOr[scala.Nothing],
-      unit: String
-    ): Tween[TElement] = js.native
     def apply[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double, easing: String): Tween[TElement] = js.native
     def apply[TElement](
       elem: TElement,
@@ -28096,6 +28441,14 @@ object JQuery {
       prop: String,
       end: Double,
       easing: String,
+      unit: String
+    ): Tween[TElement] = js.native
+    def apply[TElement](
+      elem: TElement,
+      options: EffectsOptions[TElement],
+      prop: String,
+      end: Double,
+      easing: Unit,
       unit: String
     ): Tween[TElement] = js.native
     
@@ -28135,9 +28488,9 @@ object JQuery {
     /* import warning: importer.ImportType#apply Failed type conversion: jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget>[TType] */ js.Any
   ]
   
-  @js.native
   trait TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
-    extends _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
        with // No idea why it's necessary to include `object` in the union but otherwise TypeScript complains that
   // derived types of Event are not assignable to Event.
   /* type */ StringDictionary[
@@ -28158,83 +28511,84 @@ object JQuery {
   
   // #endregion
   // #endregion
-  @js.native
-  trait TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget] extends /* type */ StringDictionary[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]] {
+  trait TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with /* type */ StringDictionary[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]] {
     
     // FocusEvent
-    var blur: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var blur: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
     // Event
-    var change: ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var change: ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
     // UIEvent
     // MouseEvent
-    var click: ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var click: ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var contextmenu: ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var contextmenu: ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dblclick: DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dblclick: DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
     // DragEvent
-    var drag: typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var drag: typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dragend: DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dragend: DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dragenter: DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dragenter: DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dragexit: DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dragexit: DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dragleave: DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dragleave: DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dragover: DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dragover: DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var dragstart: DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var dragstart: DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var drop: DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var drop: DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var focus: typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var focus: typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var focusin: FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var focusin: FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var focusout: FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var focusout: FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
     // KeyboardEvent
-    var keydown: KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var keydown: KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var keypress: KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var keypress: KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var keyup: KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var keyup: KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mousedown: MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mousedown: MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mouseenter: MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mouseenter: MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mouseleave: MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mouseleave: MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mousemove: MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mousemove: MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mouseout: MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mouseout: MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mouseover: MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mouseover: MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var mouseup: MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var mouseup: MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var resize: ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var resize: ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var scroll: ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var scroll: ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var select: SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var select: SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var submit: SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var submit: SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
     // TouchEvent
-    var touchcancel: TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var touchcancel: TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var touchend: TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var touchend: TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var touchmove: TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var touchmove: TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
     
-    var touchstart: TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+    var touchstart: TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
   }
   object TypeToTriggeredEventMap {
     
@@ -28280,7 +28634,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class TypeToTriggeredEventMapMutableBuilder[Self <: TypeToTriggeredEventMap[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class TypeToTriggeredEventMapMutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setBlur(value: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
@@ -28389,28 +28743,29 @@ object JQuery {
   // #endregion
   // region UIEvent
   // #region UIEvent
-  @js.native
-  trait UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+  trait UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]
+    extends StObject
+       with TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
     
     // Event
     @JSName("bubbles")
-    var bubbles_UIEventBase: Boolean = js.native
+    var bubbles_UIEventBase: Boolean
     
     @JSName("cancelable")
-    var cancelable_UIEventBase: Boolean = js.native
+    var cancelable_UIEventBase: Boolean
     
     // UIEvent
     @JSName("detail")
-    var detail_UIEventBase: Double = js.native
+    var detail_UIEventBase: Double
     
     @JSName("eventPhase")
-    var eventPhase_UIEventBase: Double = js.native
+    var eventPhase_UIEventBase: Double
     
     @JSName("originalEvent")
-    var originalEvent_UIEventBase: js.UndefOr[UIEvent] = js.native
+    var originalEvent_UIEventBase: js.UndefOr[UIEvent] = js.undefined
     
     @JSName("view")
-    var view_UIEventBase: Window = js.native
+    var view_UIEventBase: Window
   }
   object UIEventBase {
     
@@ -28440,7 +28795,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class UIEventBaseMutableBuilder[Self <: UIEventBase[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class UIEventBaseMutableBuilder[Self <: UIEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
@@ -28465,13 +28820,14 @@ object JQuery {
     }
   }
   
-  @js.native
-  trait UrlAjaxSettings[TContext] extends AjaxSettingsBase[TContext] {
+  trait UrlAjaxSettings[TContext]
+    extends StObject
+       with AjaxSettingsBase[TContext] {
     
     /**
       * A string containing the URL to which the request is sent.
       */
-    var url: String = js.native
+    var url: String
   }
   object UrlAjaxSettings {
     
@@ -28482,7 +28838,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class UrlAjaxSettingsMutableBuilder[Self <: UrlAjaxSettings[_], TContext] (val x: Self with UrlAjaxSettings[TContext]) extends AnyVal {
+    implicit class UrlAjaxSettingsMutableBuilder[Self <: UrlAjaxSettings[?], TContext] (val x: Self & UrlAjaxSettings[TContext]) extends AnyVal {
       
       @scala.inline
       def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
@@ -28503,12 +28859,11 @@ object JQuery {
   type ValHooks = // Set to HTMLElement to minimize breaks but should probably be Element.
   StringDictionary[ValHook[HTMLElement]]
   
-  @js.native
   trait _CSSHook[TElement] extends StObject {
     
-    def get(elem: TElement, computed: js.Any, extra: js.Any): js.Any = js.native
+    def get(elem: TElement, computed: js.Any, extra: js.Any): js.Any
     
-    def set(elem: TElement, value: js.Any): Unit = js.native
+    def set(elem: TElement, value: js.Any): Unit
   }
   object _CSSHook {
     
@@ -28519,7 +28874,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class _CSSHookMutableBuilder[Self <: _CSSHook[_], TElement] (val x: Self with _CSSHook[TElement]) extends AnyVal {
+    implicit class _CSSHookMutableBuilder[Self <: _CSSHook[?], TElement] (val x: Self & _CSSHook[TElement]) extends AnyVal {
       
       @scala.inline
       def setGet(value: (TElement, js.Any, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
@@ -28581,7 +28936,7 @@ object JQuery {
     }
     
     @scala.inline
-    def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, _, _], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
+    def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
       val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
       __obj.asInstanceOf[typings.jquery.anon.Default[TTarget, TData]]
     }
@@ -28594,7 +28949,7 @@ object JQuery {
     
     @scala.inline
     def Handle[TTarget, TData](
-      handle: ((TriggeredEvent[TTarget, TData, _, _]) with (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
+      handle: ((TriggeredEvent[TTarget, TData, js.Any, js.Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
     ): typings.jquery.anon.Handle[TTarget, TData] = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
       __obj.asInstanceOf[typings.jquery.anon.Handle[TTarget, TData]]
@@ -28666,20 +29021,19 @@ object JQuery {
   }
   
   /* Inlined {[ TType in keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? jquery.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object} */
-  @js.native
   trait _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] extends StObject {
     
     var blur: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.blur]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var change: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.change]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var click: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.click]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var contextmenu: js.UndefOr[
         (TypeEventHandler[
@@ -28689,111 +29043,111 @@ object JQuery {
           TTarget, 
           typings.jquery.jqueryStrings.contextmenu
         ]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dblclick: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dblclick]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var drag: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.drag]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dragend: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragend]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dragenter: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragenter]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dragexit: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragexit]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dragleave: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragleave]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dragover: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragover]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var dragstart: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.dragstart]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var drop: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.drop]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var focus: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.focus]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var focusin: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.focusin]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var focusout: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.focusout]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var keydown: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.keydown]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var keypress: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.keypress]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var keyup: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.keyup]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mousedown: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mousedown]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mouseenter: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseenter]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mouseleave: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseleave]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mousemove: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mousemove]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mouseout: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseout]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mouseover: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseover]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var mouseup: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.mouseup]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var resize: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.resize]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var scroll: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.scroll]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var select: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.select]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var submit: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.submit]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var touchcancel: js.UndefOr[
         (TypeEventHandler[
@@ -28803,19 +29157,19 @@ object JQuery {
           TTarget, 
           typings.jquery.jqueryStrings.touchcancel
         ]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var touchend: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.touchend]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var touchmove: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.touchmove]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
     
     var touchstart: js.UndefOr[
         (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, typings.jquery.jqueryStrings.touchstart]) | `false` | js.Object
-      ] = js.native
+      ] = js.undefined
   }
   object _TypeEventHandlers {
     
@@ -28826,7 +29180,7 @@ object JQuery {
     }
     
     @scala.inline
-    implicit class _TypeEventHandlersMutableBuilder[Self <: _TypeEventHandlers[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    implicit class _TypeEventHandlersMutableBuilder[Self <: _TypeEventHandlers[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       @scala.inline
       def setBlur(
@@ -29813,7 +30167,7 @@ object JQuery {
     );
     ```
       */
-    def promise[TTarget /* <: js.Object */](target: TTarget): this.type with TTarget = js.native
+    def promise[TTarget /* <: js.Object */](target: TTarget): this.type & TTarget = js.native
     
     var readyState: Double = js.native
     
@@ -29836,7 +30190,7 @@ object JQuery {
     
     var status: Double = js.native
     
-    def statusCode(map: StatusCodeCallbacks[_]): Unit = js.native
+    def statusCode(map: StatusCodeCallbacks[js.Any]): Unit = js.native
     
     var statusText: String = js.native
     

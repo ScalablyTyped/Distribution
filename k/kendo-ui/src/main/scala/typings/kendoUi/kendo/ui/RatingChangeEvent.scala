@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RatingChangeEvent extends RatingEvent {
+trait RatingChangeEvent
+  extends StObject
+     with RatingEvent {
   
-  var newValue: js.UndefOr[Double] = js.native
+  var newValue: js.UndefOr[Double] = js.undefined
   
-  var oldValue: js.UndefOr[Double] = js.native
+  var oldValue: js.UndefOr[Double] = js.undefined
   
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
 }
 object RatingChangeEvent {
   

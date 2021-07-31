@@ -2,16 +2,14 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMailboxExportJobResponse extends StObject {
   
   /**
     * The job ID.
     */
-  var JobId: js.UndefOr[MailboxExportJobId] = js.native
+  var JobId: js.UndefOr[MailboxExportJobId] = js.undefined
 }
 object StartMailboxExportJobResponse {
   

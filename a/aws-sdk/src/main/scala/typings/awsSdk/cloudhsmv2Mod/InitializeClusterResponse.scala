@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitializeClusterResponse extends StObject {
   
   /**
     * The cluster's state.
     */
-  var State: js.UndefOr[ClusterState] = js.native
+  var State: js.UndefOr[ClusterState] = js.undefined
   
   /**
     * A description of the cluster's state.
     */
-  var StateMessage: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.StateMessage] = js.native
+  var StateMessage: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.StateMessage] = js.undefined
 }
 object InitializeClusterResponse {
   

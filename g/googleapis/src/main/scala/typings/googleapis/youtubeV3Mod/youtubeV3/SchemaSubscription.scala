@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,41 +10,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * channel or when another user takes one of several actions on YouTube, such
   * as uploading a video, rating a video, or commenting on a video.
   */
-@js.native
 trait SchemaSubscription extends StObject {
   
   /**
     * The contentDetails object contains basic statistics about the
     * subscription.
     */
-  var contentDetails: js.UndefOr[SchemaSubscriptionContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaSubscriptionContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the subscription.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#subscription&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet object contains basic details about the subscription,
     * including its title and the channel that the user subscribed to.
     */
-  var snippet: js.UndefOr[SchemaSubscriptionSnippet] = js.native
+  var snippet: js.UndefOr[SchemaSubscriptionSnippet] = js.undefined
   
   /**
     * The subscriberSnippet object contains basic details about the sbuscriber.
     */
-  var subscriberSnippet: js.UndefOr[SchemaSubscriptionSubscriberSnippet] = js.native
+  var subscriberSnippet: js.UndefOr[SchemaSubscriptionSubscriberSnippet] = js.undefined
 }
 object SchemaSubscription {
   

@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResourceParameterBinding extends TypeDerived {
+trait ResourceParameterBinding
+  extends StObject
+     with TypeDerived {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var parameterRef: ResourceParameter = js.native
+  var parameterRef: ResourceParameter
 }
 object ResourceParameterBinding {
   

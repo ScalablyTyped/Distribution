@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiConfiguration extends StObject {
   
-  var multiConfiguration: scala.Double = js.native
+  var multiConfiguration: scala.Double
   
-  var multiMachine: scala.Double = js.native
+  var multiMachine: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object MultiConfiguration {
   

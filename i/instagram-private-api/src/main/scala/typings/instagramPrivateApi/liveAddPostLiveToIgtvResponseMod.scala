@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveAddPostLiveToIgtvResponseMod {
   
-  @js.native
   trait LiveAddPostLiveToIgtvResponseRootObject extends StObject {
     
-    var igtv_post_id: Double = js.native
+    var igtv_post_id: Double
     
-    var status: String = js.native
+    var status: String
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object LiveAddPostLiveToIgtvResponseRootObject {
     

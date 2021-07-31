@@ -2,17 +2,15 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFieldAttributes extends StObject {
   
   /**
     * Defines the decimal separator.
     * Example: .
     */
-  var qDec: String = js.native
+  var qDec: String
   
   /**
     * Defines the format pattern that applies to qText.
@@ -20,19 +18,19 @@ trait IFieldAttributes extends StObject {
     * For more information, see Struct FieldAttributes.
     * Example: YYYY-MM-DD for a date
     */
-  var qFmt: String = js.native
+  var qFmt: String
   
   /**
     * Array
     */
-  var qSAFEARRAY: js.Array[_] = js.native
+  var qSAFEARRAY: js.Array[js.Any]
   
   /**
     * Defines the thousand separator (if any).
     * Is used if qUseThou is set to 1.
     * Example: ,
     */
-  var qThou: String = js.native
+  var qThou: String
   
   /**
     * Type of the field.
@@ -49,21 +47,21 @@ trait IFieldAttributes extends StObject {
     *       # TS TIMESTAMP; Numeric fields values are shown as time stamps.
     *       # IV for INTERVAL; Numeric fields values are shown as intervals.
     */
-  var qType: FieldAttributesType = js.native
+  var qType: FieldAttributesType
   
   /**
     * Defines whether or not a thousands separator must be used.
     * Default is 0.
     * One of: 0 for false | 1 for true
     */
-  var qUseThou: Boolean = js.native
+  var qUseThou: Boolean
   
   /**
     * Number of decimals.
     * Default is 10.
     * Integer between 0 and 15.
     */
-  var qnDec: Double = js.native
+  var qnDec: Double
 }
 object IFieldAttributes {
   
@@ -71,7 +69,7 @@ object IFieldAttributes {
   def apply(
     qDec: String,
     qFmt: String,
-    qSAFEARRAY: js.Array[_],
+    qSAFEARRAY: js.Array[js.Any],
     qThou: String,
     qType: FieldAttributesType,
     qUseThou: Boolean,
@@ -91,7 +89,7 @@ object IFieldAttributes {
     def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSAFEARRAY(value: js.Array[_]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    def setQSAFEARRAY(value: js.Array[js.Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQSAFEARRAYVarargs(value: js.Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value :_*))

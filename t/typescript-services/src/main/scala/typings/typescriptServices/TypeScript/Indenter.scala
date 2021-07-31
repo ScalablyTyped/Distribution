@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indenter extends StObject {
   
-  def decreaseIndent(): Unit = js.native
+  def decreaseIndent(): Unit
   
-  def getIndent(): String = js.native
+  def getIndent(): String
   
-  def increaseIndent(): Unit = js.native
+  def increaseIndent(): Unit
   
-  var indentAmt: Double = js.native
+  var indentAmt: Double
 }
 object Indenter {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetNetwork extends StObject {
   
   /**
     * The ID of the association.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Client VPN endpoint with which the target network is associated.
     */
-  var ClientVpnEndpointId: js.UndefOr[String] = js.native
+  var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the security groups applied to the target network association.
     */
-  var SecurityGroups: js.UndefOr[ValueStringList] = js.native
+  var SecurityGroups: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The current state of the target network association.
     */
-  var Status: js.UndefOr[AssociationStatus] = js.native
+  var Status: js.UndefOr[AssociationStatus] = js.undefined
   
   /**
     * The ID of the subnet specified as the target network.
     */
-  var TargetNetworkId: js.UndefOr[String] = js.native
+  var TargetNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC in which the target network (subnet) is located.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object TargetNetwork {
   

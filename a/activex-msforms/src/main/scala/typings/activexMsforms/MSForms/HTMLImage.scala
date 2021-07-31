@@ -2,26 +2,24 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLImage extends StObject {
   
-  var Action: String = js.native
+  var Action: String
   
-  var Encoding: String = js.native
+  var Encoding: String
   
-  var HTMLName: String = js.native
+  var HTMLName: String
   
-  var HTMLType: String = js.native
+  var HTMLType: String
   
   @JSName("MSForms.HTMLImage_typekey")
-  var MSFormsDotHTMLImage_typekey: HTMLImage = js.native
+  var MSFormsDotHTMLImage_typekey: HTMLImage
   
-  var Method: String = js.native
+  var Method: String
   
-  var Source: String = js.native
+  var Source: String
 }
 object HTMLImage {
   

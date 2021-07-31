@@ -2,15 +2,13 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Immutable extends StObject {
   
-  var immutable: js.UndefOr[Boolean] = js.native
+  var immutable: js.UndefOr[Boolean] = js.undefined
   
-  var keyExpr: js.UndefOr[String | js.Array[String]] = js.native
+  var keyExpr: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object Immutable {
   

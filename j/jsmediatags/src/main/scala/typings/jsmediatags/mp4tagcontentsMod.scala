@@ -3,34 +3,41 @@ package typings.jsmediatags
 import typings.jsmediatags.typesMod.ByteArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mp4tagcontentsMod {
   
   @JSImport("jsmediatags/build2/MP4TagContents", JSImport.Default)
   @js.native
-  class default protected () extends MP4TagContents {
+  class default protected ()
+    extends StObject
+       with MP4TagContents {
     def this(ftyp: String) = this()
     def this(ftyp: String, atoms: js.Array[Atom]) = this()
+    
+    /* CompleteClass */
+    var _atoms: js.Array[Atom] = js.native
+    
+    /* CompleteClass */
+    override def toArray(): ByteArray = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/MP4TagContents", "default.createAtom")
+    @JSImport("jsmediatags/build2/MP4TagContents", JSImport.Default)
     @js.native
-    def createAtom(atomName: String): Atom = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("jsmediatags/build2/MP4TagContents", "default.createContainerAtom")
-    @js.native
-    def createContainerAtom(atomName: String, atoms: js.Array[Atom]): Atom = js.native
-    @JSImport("jsmediatags/build2/MP4TagContents", "default.createContainerAtom")
-    @js.native
-    def createContainerAtom(atomName: String, atoms: js.Array[Atom], data: ByteArray): Atom = js.native
+    @scala.inline
+    def createAtom(atomName: String): Atom = ^.asInstanceOf[js.Dynamic].applyDynamic("createAtom")(atomName.asInstanceOf[js.Any]).asInstanceOf[Atom]
     
-    @JSImport("jsmediatags/build2/MP4TagContents", "default.createMetadataAtom")
-    @js.native
-    def createMetadataAtom(atomName: String, `type`: String, data: ByteArray): Atom = js.native
+    @scala.inline
+    def createContainerAtom(atomName: String, atoms: js.Array[Atom]): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainerAtom")(atomName.asInstanceOf[js.Any], atoms.asInstanceOf[js.Any])).asInstanceOf[Atom]
+    @scala.inline
+    def createContainerAtom(atomName: String, atoms: js.Array[Atom], data: ByteArray): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createContainerAtom")(atomName.asInstanceOf[js.Any], atoms.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Atom]
+    
+    @scala.inline
+    def createMetadataAtom(atomName: String, `type`: String, data: ByteArray): Atom = (^.asInstanceOf[js.Dynamic].applyDynamic("createMetadataAtom")(atomName.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Atom]
   }
   
   @JSImport("jsmediatags/build2/MP4TagContents", "Atom")
@@ -38,7 +45,7 @@ object mp4tagcontentsMod {
   class Atom protected () extends StObject {
     def this(name: String) = this()
     def this(name: String, data: ByteArray) = this()
-    def this(name: String, data: js.UndefOr[scala.Nothing], atoms: js.Array[Atom]) = this()
+    def this(name: String, data: Unit, atoms: js.Array[Atom]) = this()
     def this(name: String, data: ByteArray, atoms: js.Array[Atom]) = this()
     
     var _atoms: js.Array[Atom] = js.native
@@ -50,12 +57,11 @@ object mp4tagcontentsMod {
     def toArray(): ByteArray = js.native
   }
   
-  @js.native
   trait MP4TagContents extends StObject {
     
-    var _atoms: js.Array[Atom] = js.native
+    var _atoms: js.Array[Atom]
     
-    def toArray(): ByteArray = js.native
+    def toArray(): ByteArray
   }
   object MP4TagContents {
     

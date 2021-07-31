@@ -3,15 +3,15 @@ package typings.babelPluginReactHtmlAttrs.mod
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UIEvent[T, E] extends BaseSyntheticEvent[E, EventTarget with T, EventTarget] {
+trait UIEvent[T, E]
+  extends StObject
+     with BaseSyntheticEvent[E, EventTarget & T, EventTarget] {
   
-  var detail: Double = js.native
+  var detail: Double
   
-  var view: AbstractView = js.native
+  var view: AbstractView
 }
 object UIEvent {
   
@@ -19,7 +19,7 @@ object UIEvent {
   def apply[T, E](
     bubbles: Boolean,
     cancelable: Boolean,
-    currentTarget: EventTarget with T,
+    currentTarget: EventTarget & T,
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
@@ -41,7 +41,7 @@ object UIEvent {
   }
   
   @scala.inline
-  implicit class UIEventMutableBuilder[Self <: UIEvent[_, _], T, E] (val x: Self with (UIEvent[T, E])) extends AnyVal {
+  implicit class UIEventMutableBuilder[Self <: UIEvent[?, ?], T, E] (val x: Self & (UIEvent[T, E])) extends AnyVal {
     
     @scala.inline
     def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])

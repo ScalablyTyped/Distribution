@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageCardButton extends StObject {
   
   /** Optional. The text to send back to the Dialogflow API or a URI to open. */
-  var postback: js.UndefOr[String] = js.native
+  var postback: js.UndefOr[String] = js.undefined
   
   /** Optional. The text to show on the button. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageCardButton {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterCondition extends StObject {
   
   /**
     * The comparison operator used in the filter condition.
     */
-  var ComparisonOperator: js.UndefOr[typings.awsSdk.lakeformationMod.ComparisonOperator] = js.native
+  var ComparisonOperator: js.UndefOr[typings.awsSdk.lakeformationMod.ComparisonOperator] = js.undefined
   
   /**
     * The field to filter in the filter condition.
     */
-  var Field: js.UndefOr[FieldNameString] = js.native
+  var Field: js.UndefOr[FieldNameString] = js.undefined
   
   /**
     * A string with values used in evaluating the filter condition.
     */
-  var StringValueList: js.UndefOr[typings.awsSdk.lakeformationMod.StringValueList] = js.native
+  var StringValueList: js.UndefOr[typings.awsSdk.lakeformationMod.StringValueList] = js.undefined
 }
 object FilterCondition {
   

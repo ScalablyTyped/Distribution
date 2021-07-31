@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveOrCopyRuleAction extends StObject {
   
-  val ActionType: OlRuleActionType = js.native
+  val ActionType: OlRuleActionType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Folder: typings.activexOutlook.Outlook.Folder = js.native
+  var Folder: typings.activexOutlook.Outlook.Folder
   
   @JSName("Outlook.MoveOrCopyRuleAction_typekey")
-  var OutlookDotMoveOrCopyRuleAction_typekey: MoveOrCopyRuleAction = js.native
+  var OutlookDotMoveOrCopyRuleAction_typekey: MoveOrCopyRuleAction
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object MoveOrCopyRuleAction {
   

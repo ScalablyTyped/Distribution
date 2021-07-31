@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param length The interval's length.
   */
 class Interval ()
-  extends typings.devexpressWeb.Interval {
+  extends StObject
+     with typings.devexpressWeb.Interval {
   def this(start: Double) = this()
-  def this(start: js.UndefOr[scala.Nothing], length: Double) = this()
   def this(start: Double, length: Double) = this()
+  def this(start: Unit, length: Double) = this()
+  
+  /**
+    * Gets the interval's character length.
+    */
+  /* CompleteClass */
+  var length: Double = js.native
+  
+  /**
+    * Gets the interval's start position in the document.
+    */
+  /* CompleteClass */
+  var start: Double = js.native
 }

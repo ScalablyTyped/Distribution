@@ -9,7 +9,6 @@ import typings.officeJsPreview.anon.Expand
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait DocumentProperties extends ClientObject {
+trait DocumentProperties
+  extends StObject
+     with ClientObject {
   
   /**
     *

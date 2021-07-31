@@ -2,216 +2,214 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationAttributes extends StObject {
   
-  var `attributes-charset`: js.UndefOr[String] = js.native
+  var `attributes-charset`: js.UndefOr[String] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `charge-info-message`: js.UndefOr[String] = js.native
+  var `charge-info-message`: js.UndefOr[String] = js.undefined
   
-  var compression: js.UndefOr[Compression] = js.native
+  var compression: js.UndefOr[Compression] = js.undefined
   
-  var `compression-accepted`: js.UndefOr[js.Array[Compression]] = js.native
+  var `compression-accepted`: js.UndefOr[js.Array[Compression]] = js.undefined
   
-  var `destination-accesses`: js.UndefOr[js.Array[DestionationAccesses]] = js.native
+  var `destination-accesses`: js.UndefOr[js.Array[DestionationAccesses]] = js.undefined
   
-  var `detailed-status-message`: js.UndefOr[String] = js.native
+  var `detailed-status-message`: js.UndefOr[String] = js.undefined
   
-  var `document-access`: js.UndefOr[DocumentAccess] = js.native
+  var `document-access`: js.UndefOr[DocumentAccess] = js.undefined
   
-  var `document-access-error`: js.UndefOr[String] = js.native
+  var `document-access-error`: js.UndefOr[String] = js.undefined
   
-  var `document-charset`: js.UndefOr[String] = js.native
+  var `document-charset`: js.UndefOr[String] = js.undefined
   
-  var `document-data-get-interval`: js.UndefOr[Double] = js.native
+  var `document-data-get-interval`: js.UndefOr[Double] = js.undefined
   
-  var `document-data-wait`: js.UndefOr[Boolean] = js.native
+  var `document-data-wait`: js.UndefOr[Boolean] = js.undefined
   
-  var `document-digital-signature`: js.UndefOr[DocumentDigitalSignature] = js.native
+  var `document-digital-signature`: js.UndefOr[DocumentDigitalSignature] = js.undefined
   
-  var `document-format`: js.UndefOr[MimeMediaType] = js.native
+  var `document-format`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `document-format-accepted`: js.UndefOr[js.Array[MimeMediaType]] = js.native
+  var `document-format-accepted`: js.UndefOr[js.Array[MimeMediaType]] = js.undefined
   
-  var `document-format-details`: js.UndefOr[DocumentFormatDetails] = js.native
+  var `document-format-details`: js.UndefOr[DocumentFormatDetails] = js.undefined
   
-  var `document-message`: js.UndefOr[String] = js.native
+  var `document-message`: js.UndefOr[String] = js.undefined
   
-  var `document-metadata`: js.UndefOr[js.Array[String]] = js.native
+  var `document-metadata`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `document-name`: js.UndefOr[String] = js.native
+  var `document-name`: js.UndefOr[String] = js.undefined
   
-  var `document-natural-language`: js.UndefOr[String] = js.native
+  var `document-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `document-number`: js.UndefOr[Double] = js.native
+  var `document-number`: js.UndefOr[Double] = js.undefined
   
-  var `document-password`: js.UndefOr[String] = js.native
+  var `document-password`: js.UndefOr[String] = js.undefined
   
-  var `document-preprocessed`: js.UndefOr[Boolean] = js.native
+  var `document-preprocessed`: js.UndefOr[Boolean] = js.undefined
   
-  var `fetch-status-code`: js.UndefOr[StatusCode] = js.native
+  var `fetch-status-code`: js.UndefOr[StatusCode] = js.undefined
   
   // Except "successful-ok"
-  var `fetch-status-message`: js.UndefOr[String] = js.native
+  var `fetch-status-message`: js.UndefOr[String] = js.undefined
   
-  var `first-index`: js.UndefOr[Double] = js.native
+  var `first-index`: js.UndefOr[Double] = js.undefined
   
-  var `identify-actions`: js.UndefOr[js.Array[IdentifyActions]] = js.native
+  var `identify-actions`: js.UndefOr[js.Array[IdentifyActions]] = js.undefined
   
-  var `input-attributes`: js.UndefOr[InputAttributes] = js.native
+  var `input-attributes`: js.UndefOr[InputAttributes] = js.undefined
   
-  var `ipp-attribute-fidelity`: js.UndefOr[Boolean] = js.native
+  var `ipp-attribute-fidelity`: js.UndefOr[Boolean] = js.undefined
   
-  var `job-authorization-uri`: js.UndefOr[String] = js.native
+  var `job-authorization-uri`: js.UndefOr[String] = js.undefined
   
-  var `job-hold-until`: js.UndefOr[JobHoldUntil] = js.native
+  var `job-hold-until`: js.UndefOr[JobHoldUntil] = js.undefined
   
-  var `job-hold-until-time`: js.UndefOr[String] = js.native
+  var `job-hold-until-time`: js.UndefOr[String] = js.undefined
   
-  var `job-id`: js.UndefOr[Double] = js.native
+  var `job-id`: js.UndefOr[Double] = js.undefined
   
-  var `job-ids`: js.UndefOr[js.Array[Double]] = js.native
+  var `job-ids`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `job-impressions`: js.UndefOr[Double] = js.native
+  var `job-impressions`: js.UndefOr[Double] = js.undefined
   
-  var `job-impressions-col`: js.UndefOr[Impressions] = js.native
+  var `job-impressions-col`: js.UndefOr[Impressions] = js.undefined
   
-  var `job-impressions-estimated`: js.UndefOr[Double] = js.native
+  var `job-impressions-estimated`: js.UndefOr[Double] = js.undefined
   
-  var `job-k-octets`: js.UndefOr[Double] = js.native
+  var `job-k-octets`: js.UndefOr[Double] = js.undefined
   
   var `job-mandatory-attributes`: js.UndefOr[
     js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `job-media-sheets`: js.UndefOr[Double] = js.native
+  var `job-media-sheets`: js.UndefOr[Double] = js.undefined
   
-  var `job-media-sheets-col`: js.UndefOr[MediaSheets] = js.native
+  var `job-media-sheets-col`: js.UndefOr[MediaSheets] = js.undefined
   
-  var `job-message-from-operator`: js.UndefOr[String] = js.native
+  var `job-message-from-operator`: js.UndefOr[String] = js.undefined
   
-  var `job-name`: js.UndefOr[String] = js.native
+  var `job-name`: js.UndefOr[String] = js.undefined
   
-  var `job-pages`: js.UndefOr[Double] = js.native
+  var `job-pages`: js.UndefOr[Double] = js.undefined
   
-  var `job-pages-col`: js.UndefOr[Pages] = js.native
+  var `job-pages-col`: js.UndefOr[Pages] = js.undefined
   
-  var `job-password`: js.UndefOr[String] = js.native
+  var `job-password`: js.UndefOr[String] = js.undefined
   
-  var `job-password-encryption`: js.UndefOr[JobPasswordEncryption] = js.native
+  var `job-password-encryption`: js.UndefOr[JobPasswordEncryption] = js.undefined
   
-  var `job-state`: js.UndefOr[JobState] = js.native
+  var `job-state`: js.UndefOr[JobState] = js.undefined
   
-  var `job-state-message`: js.UndefOr[String] = js.native
+  var `job-state-message`: js.UndefOr[String] = js.undefined
   
-  var `job-state-reasons`: js.UndefOr[js.Array[JobStateReasons]] = js.native
+  var `job-state-reasons`: js.UndefOr[js.Array[JobStateReasons]] = js.undefined
   
-  var `job-uri`: js.UndefOr[String] = js.native
+  var `job-uri`: js.UndefOr[String] = js.undefined
   
-  var `last-document`: js.UndefOr[Boolean] = js.native
+  var `last-document`: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var `my-jobs`: js.UndefOr[Boolean] = js.native
+  var `my-jobs`: js.UndefOr[Boolean] = js.undefined
   
-  var `notify-get-interval`: js.UndefOr[Double] = js.native
+  var `notify-get-interval`: js.UndefOr[Double] = js.undefined
   
-  var `notify-printer-ids`: js.UndefOr[js.Array[Double]] = js.native
+  var `notify-printer-ids`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `notify-resource-id`: js.UndefOr[Double] = js.native
+  var `notify-resource-id`: js.UndefOr[Double] = js.undefined
   
-  var `notify-sequence-numbers`: js.UndefOr[js.Array[Double]] = js.native
+  var `notify-sequence-numbers`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `notify-subscription-ids`: js.UndefOr[js.Array[Double]] = js.native
+  var `notify-subscription-ids`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `notify-wait`: js.UndefOr[Boolean] = js.native
+  var `notify-wait`: js.UndefOr[Boolean] = js.undefined
   
-  var `original-requesting-user-name`: js.UndefOr[String] = js.native
+  var `original-requesting-user-name`: js.UndefOr[String] = js.undefined
   
-  var `output-attributes`: js.UndefOr[OutputAttributes] = js.native
+  var `output-attributes`: js.UndefOr[OutputAttributes] = js.undefined
   
-  var `output-device-job-states`: js.UndefOr[js.Array[String]] = js.native
+  var `output-device-job-states`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `output-device-uuid`: js.UndefOr[String] = js.native
+  var `output-device-uuid`: js.UndefOr[String] = js.undefined
   
-  var `preferred-attributes`: js.UndefOr[js.Object] = js.native
+  var `preferred-attributes`: js.UndefOr[js.Object] = js.undefined
   
-  var `printer-geo-location`: js.UndefOr[String] = js.native
+  var `printer-geo-location`: js.UndefOr[String] = js.undefined
   
-  var `printer-id`: js.UndefOr[Double] = js.native
+  var `printer-id`: js.UndefOr[Double] = js.undefined
   
-  var `printer-ids`: js.UndefOr[js.Array[Double]] = js.native
+  var `printer-ids`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `printer-location`: js.UndefOr[String] = js.native
+  var `printer-location`: js.UndefOr[String] = js.undefined
   
-  var `printer-message-from-operator`: js.UndefOr[String] = js.native
+  var `printer-message-from-operator`: js.UndefOr[String] = js.undefined
   
-  var `printer-service-type`: js.UndefOr[js.Array[PrinterServiceType]] = js.native
+  var `printer-service-type`: js.UndefOr[js.Array[PrinterServiceType]] = js.undefined
   
-  var `printer-up-time`: js.UndefOr[Double] = js.native
+  var `printer-up-time`: js.UndefOr[Double] = js.undefined
   
-  var `printer-uri`: js.UndefOr[String] = js.native
+  var `printer-uri`: js.UndefOr[String] = js.undefined
   
-  var `printer-xri-requested`: js.UndefOr[js.Array[PrinterXri]] = js.native
+  var `printer-xri-requested`: js.UndefOr[js.Array[PrinterXri]] = js.undefined
   
-  var `profile-uri-actual`: js.UndefOr[String] = js.native
+  var `profile-uri-actual`: js.UndefOr[String] = js.undefined
   
   var `requested-attributes`: js.UndefOr[
     js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 589 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `requesting-user-name`: js.UndefOr[String] = js.native
+  var `requesting-user-name`: js.UndefOr[String] = js.undefined
   
-  var `requesting-user-uri`: js.UndefOr[String] = js.native
+  var `requesting-user-uri`: js.UndefOr[String] = js.undefined
   
-  var `resource-format`: js.UndefOr[MimeMediaType] = js.native
+  var `resource-format`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `resource-format-accepted`: js.UndefOr[js.Array[MimeMediaType]] = js.native
+  var `resource-format-accepted`: js.UndefOr[js.Array[MimeMediaType]] = js.undefined
   
-  var `resource-formats`: js.UndefOr[js.Array[MimeMediaType]] = js.native
+  var `resource-formats`: js.UndefOr[js.Array[MimeMediaType]] = js.undefined
   
-  var `resource-id`: js.UndefOr[Double] = js.native
+  var `resource-id`: js.UndefOr[Double] = js.undefined
   
-  var `resource-ids`: js.UndefOr[js.Array[Double]] = js.native
+  var `resource-ids`: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `resource-k-octets`: js.UndefOr[Double] = js.native
+  var `resource-k-octets`: js.UndefOr[Double] = js.undefined
   
-  var `resource-natural-language`: js.UndefOr[String] = js.native
+  var `resource-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `resource-patches`: js.UndefOr[String] = js.native
+  var `resource-patches`: js.UndefOr[String] = js.undefined
   
-  var `resource-signature`: js.UndefOr[js.Array[String]] = js.native
+  var `resource-signature`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `resource-states`: js.UndefOr[js.Array[ResourceState]] = js.native
+  var `resource-states`: js.UndefOr[js.Array[ResourceState]] = js.undefined
   
-  var `resource-string-version`: js.UndefOr[String] = js.native
+  var `resource-string-version`: js.UndefOr[String] = js.undefined
   
-  var `resource-type`: js.UndefOr[ResourceType] = js.native
+  var `resource-type`: js.UndefOr[ResourceType] = js.undefined
   
-  var `resource-types`: js.UndefOr[js.Array[ResourceType]] = js.native
+  var `resource-types`: js.UndefOr[js.Array[ResourceType]] = js.undefined
   
-  var `resource-version`: js.UndefOr[String] = js.native
+  var `resource-version`: js.UndefOr[String] = js.undefined
   
-  var `restart-get-interval`: js.UndefOr[Double] = js.native
+  var `restart-get-interval`: js.UndefOr[Double] = js.undefined
   
-  var `status-message`: js.UndefOr[String] = js.native
+  var `status-message`: js.UndefOr[String] = js.undefined
   
-  var `system-uri`: js.UndefOr[String] = js.native
+  var `system-uri`: js.UndefOr[String] = js.undefined
   
-  var `which-jobs`: js.UndefOr[WhichJobs] = js.native
+  var `which-jobs`: js.UndefOr[WhichJobs] = js.undefined
   
-  var `which-printers`: js.UndefOr[String] = js.native
+  var `which-printers`: js.UndefOr[String] = js.undefined
 }
 object OperationAttributes {
   

@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see [`CustomDocumentProvider.onDidChangeCustomDocument`](#CustomDocumentProvider.onDidChangeCustomDocument).
   */
-@js.native
 trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
   
   /**
     * The document that the edit is for.
     */
-  val document: T = js.native
+  val document: T
   
   /**
     * Display name describing the edit.
     *
     * This will be shown to users in the UI for undo/redo operations.
     */
-  val label: js.UndefOr[String] = js.native
+  val label: js.UndefOr[String] = js.undefined
   
   /**
     * Redo the edit operation.
@@ -33,7 +31,7 @@ trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
     * extension should restore the document and editor to the state they were in just after this
     * edit was added to VS Code's internal edit stack by `onDidChangeCustomDocument`.
     */
-  def redo(): Thenable[Unit] | Unit = js.native
+  def redo(): Thenable[Unit] | Unit
   
   /**
     * Undo the edit operation.
@@ -42,7 +40,7 @@ trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
     * extension should restore the document and editor to the state they were in just before this
     * edit was added to VS Code's internal edit stack by `onDidChangeCustomDocument`.
     */
-  def undo(): Thenable[Unit] | Unit = js.native
+  def undo(): Thenable[Unit] | Unit
 }
 object CustomDocumentEditEvent {
   
@@ -53,7 +51,7 @@ object CustomDocumentEditEvent {
   }
   
   @scala.inline
-  implicit class CustomDocumentEditEventMutableBuilder[Self <: CustomDocumentEditEvent[_], T /* <: CustomDocument */] (val x: Self with CustomDocumentEditEvent[T]) extends AnyVal {
+  implicit class CustomDocumentEditEventMutableBuilder[Self <: CustomDocumentEditEvent[?], T /* <: CustomDocument */] (val x: Self & CustomDocumentEditEvent[T]) extends AnyVal {
     
     @scala.inline
     def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])

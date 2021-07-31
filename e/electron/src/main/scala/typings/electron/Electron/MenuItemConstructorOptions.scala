@@ -48,13 +48,11 @@ import typings.electron.electronStrings.zoomIn
 import typings.electron.electronStrings.zoomOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItemConstructorOptions extends StObject {
   
-  var accelerator: js.UndefOr[Accelerator] = js.native
+  var accelerator: js.UndefOr[Accelerator] = js.undefined
   
   /**
     * default is `true`, and when `false` will prevent the accelerator from triggering
@@ -62,20 +60,20 @@ trait MenuItemConstructorOptions extends StObject {
     *
     * @platform darwin
     */
-  var acceleratorWorksWhenHidden: js.UndefOr[Boolean] = js.native
+  var acceleratorWorksWhenHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Inserts this item after the item with the specified label. If the referenced
     * item doesn't exist the item will be inserted at the end of the menu.
     */
-  var after: js.UndefOr[js.Array[String]] = js.native
+  var after: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Provides a means for a single context menu to declare the placement of their
     * containing group after the containing group of the item with the specified
     * label.
     */
-  var afterGroupContaining: js.UndefOr[js.Array[String]] = js.native
+  var afterGroupContaining: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Inserts this item before the item with the specified label. If the referenced
@@ -83,19 +81,19 @@ trait MenuItemConstructorOptions extends StObject {
     * implies that the menu item in question should be placed in the same “group” as
     * the item.
     */
-  var before: js.UndefOr[js.Array[String]] = js.native
+  var before: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Provides a means for a single context menu to declare the placement of their
     * containing group before the containing group of the item with the specified
     * label.
     */
-  var beforeGroupContaining: js.UndefOr[js.Array[String]] = js.native
+  var beforeGroupContaining: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Should only be specified for `checkbox` or `radio` type menu items.
     */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Will be called with `click(menuItem, browserWindow, event)` when the menu item
@@ -108,22 +106,22 @@ trait MenuItemConstructorOptions extends StObject {
       /* event */ KeyboardEvent, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If false, the menu item will be greyed out and unclickable.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[NativeImage_ | String] = js.native
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   
   /**
     * Unique within a single menu. If defined then it can be used as a reference to
     * this item by the position attribute.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * If false, the accelerator won't be registered with the system, but it will still
@@ -131,7 +129,7 @@ trait MenuItemConstructorOptions extends StObject {
     *
     * @platform linux,win32
     */
-  var registerAccelerator: js.UndefOr[Boolean] = js.native
+  var registerAccelerator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Can be `undo`, `redo`, `cut`, `copy`, `paste`, `pasteAndMatchStyle`, `delete`,
@@ -146,33 +144,33 @@ trait MenuItemConstructorOptions extends StObject {
     */
   var role: js.UndefOr[
     undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
-  ] = js.native
+  ] = js.undefined
   
-  var sublabel: js.UndefOr[String] = js.native
+  var sublabel: js.UndefOr[String] = js.undefined
   
   /**
     * Should be specified for `submenu` type menu items. If `submenu` is specified,
     * the `type: 'submenu'` can be omitted. If the value is not a `Menu` then it will
     * be automatically converted to one using `Menu.buildFromTemplate`.
     */
-  var submenu: js.UndefOr[js.Array[MenuItemConstructorOptions] | Menu] = js.native
+  var submenu: js.UndefOr[js.Array[MenuItemConstructorOptions] | Menu] = js.undefined
   
   /**
     * Hover text for this menu item.
     *
     * @platform darwin
     */
-  var toolTip: js.UndefOr[String] = js.native
+  var toolTip: js.UndefOr[String] = js.undefined
   
   /**
     * Can be `normal`, `separator`, `submenu`, `checkbox` or `radio`.
     */
-  var `type`: js.UndefOr[normal | separator | submenu | checkbox | radio] = js.native
+  var `type`: js.UndefOr[normal | separator | submenu | checkbox | radio] = js.undefined
   
   /**
     * If false, the menu item will be entirely hidden.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object MenuItemConstructorOptions {
   

@@ -5,13 +5,11 @@ import typings.atom.atomStrings.closest
 import typings.atom.atomStrings.forward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `26` extends StObject {
   
-  var clipDirection: backward | forward | closest = js.native
+  var clipDirection: backward | forward | closest
 }
 object `26` {
   

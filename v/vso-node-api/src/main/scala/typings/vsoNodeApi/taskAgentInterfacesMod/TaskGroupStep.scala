@@ -3,25 +3,23 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskGroupStep extends StObject {
   
-  var alwaysRun: Boolean = js.native
+  var alwaysRun: Boolean
   
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var inputs: StringDictionary[String] = js.native
+  var inputs: StringDictionary[String]
   
-  var task: TaskDefinitionReference = js.native
+  var task: TaskDefinitionReference
   
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
 }
 object TaskGroupStep {
   

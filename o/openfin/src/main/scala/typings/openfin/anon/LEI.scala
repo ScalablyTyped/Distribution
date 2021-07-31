@@ -3,15 +3,15 @@ package typings.openfin.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LEI extends /* key */ StringDictionary[String] {
+trait LEI
+  extends StObject
+     with /* key */ StringDictionary[String] {
   
-  var LEI: js.UndefOr[String] = js.native
+  var LEI: js.UndefOr[String] = js.undefined
   
-  var PERMID: js.UndefOr[String] = js.native
+  var PERMID: js.UndefOr[String] = js.undefined
 }
 object LEI {
   

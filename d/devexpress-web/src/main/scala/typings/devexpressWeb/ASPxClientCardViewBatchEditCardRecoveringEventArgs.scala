@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditCardRecovering event.
   */
-@js.native
-trait ASPxClientCardViewBatchEditCardRecoveringEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientCardViewBatchEditCardRecoveringEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets a hashtable that maintains information about recovered cells.
     */
-  var cardValues: js.Any = js.native
+  var cardValues: js.Any
   
   /**
     * Gets the visible index of the card whose cells has been recovered.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientCardViewBatchEditCardRecoveringEventArgs {
   

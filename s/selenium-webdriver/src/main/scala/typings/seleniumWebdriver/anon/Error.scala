@@ -2,15 +2,13 @@ package typings.seleniumWebdriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var message: String = js.native
+  var message: String
 }
 object Error {
   

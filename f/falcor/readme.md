@@ -10,9 +10,9 @@ A JavaScript library for efficient data fetching.
 | ------------------ | :-------------: |
 | Full name          | falcor |
 | Keywords           | JSON, Netflix, Observable, falcorjs |
-| # releases         | 9 |
-| # dependents       | 19 |
-| # downloads        | 38013 |
+| # releases         | 7 |
+| # dependents       | 20 |
+| # downloads        | 43238 |
 | # stars            | 19 |
 
 ## Links

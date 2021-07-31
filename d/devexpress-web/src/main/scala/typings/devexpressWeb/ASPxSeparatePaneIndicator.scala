@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the SeparatePaneIndicator class.
   */
-@js.native
-trait ASPxSeparatePaneIndicator extends ASPxClientIndicator {
+trait ASPxSeparatePaneIndicator
+  extends StObject
+     with ASPxClientIndicator {
   
   /**
     * Returns the name of the Y-axis that is used to plot the current indicator on a ASPxClientXYDiagram.
     */
-  var axisY: String = js.native
+  var axisY: String
   
   /**
     * Returns the name of a pane, used to plot the separate pane indicator on an XYDiagram.
     */
-  var pane: String = js.native
+  var pane: String
 }
 object ASPxSeparatePaneIndicator {
   

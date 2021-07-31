@@ -3,34 +3,34 @@ package typings.arcgisRestApi.mod
 import typings.arcgisRestApi.arcgisRestApiStrings.esriPMS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisRestApi.mod.PictureSourced because var conflicts: angle, xoffset, yoffset. Inlined url, imageData, contentType, width, height */ @js.native
-trait PictureMarkerSymbol extends MarkerSymbol {
+- typings.arcgisRestApi.mod.PictureSourced because var conflicts: angle, xoffset, yoffset. Inlined url, imageData, contentType, width, height */ trait PictureMarkerSymbol
+  extends StObject
+     with MarkerSymbol {
   
   // "<base64EncodedImageData>";
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   // Relative URL for static layers and full URL for dynamic layers. Access relative URL using http://<mapservice-url>/<layerId1>/images/<imageUrl11>
-  var imageData: js.UndefOr[String] = js.native
+  var imageData: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_PictureMarkerSymbol: esriPMS = js.native
+  var type_PictureMarkerSymbol: esriPMS
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PictureMarkerSymbol {
   
   @scala.inline
-  def apply(`type`: esriPMS): PictureMarkerSymbol = {
+  def apply(): PictureMarkerSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriPMS")
     __obj.asInstanceOf[PictureMarkerSymbol]
   }
   

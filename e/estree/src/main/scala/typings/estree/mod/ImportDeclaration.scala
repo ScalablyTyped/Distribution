@@ -2,31 +2,29 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDeclaration
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with ModuleDeclaration {
   
-  var source: Literal = js.native
+  var source: Literal
   
-  var specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier] = js.native
+  var specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]
   
   @JSName("type")
-  var type_ImportDeclaration: typings.estree.estreeStrings.ImportDeclaration = js.native
+  var type_ImportDeclaration: typings.estree.estreeStrings.ImportDeclaration
 }
 object ImportDeclaration {
   
   @scala.inline
   def apply(
     source: Literal,
-    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier],
-    `type`: typings.estree.estreeStrings.ImportDeclaration
+    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]
   ): ImportDeclaration = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDeclaration")
     __obj.asInstanceOf[ImportDeclaration]
   }
   

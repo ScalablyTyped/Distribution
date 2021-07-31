@@ -2,31 +2,29 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateParameter extends StObject {
   
   /**
     * The default value associated with the parameter.
     */
-  var DefaultValue: js.UndefOr[ParameterValue] = js.native
+  var DefaultValue: js.UndefOr[ParameterValue] = js.undefined
   
   /**
     * User defined description associated with the parameter.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * Flag indicating whether the parameter should be displayed as plain text in logs and UIs.
     */
-  var NoEcho: js.UndefOr[typings.awsSdk.cloudformationMod.NoEcho] = js.native
+  var NoEcho: js.UndefOr[typings.awsSdk.cloudformationMod.NoEcho] = js.undefined
   
   /**
     * The name associated with the parameter.
     */
-  var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.native
+  var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.undefined
 }
 object TemplateParameter {
   

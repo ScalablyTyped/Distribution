@@ -10,9 +10,9 @@ AgoraRTC SDK for web
 | ------------------ | :-------------: |
 | Full name          | agora-rtc-sdk |
 | Keywords           | Agora, Webrtc, Javascript |
-| # releases         | 17 |
-| # dependents       | 10 |
-| # downloads        | 261101 |
+| # releases         | 18 |
+| # dependents       | 13 |
+| # downloads        | 353570 |
 | # stars            | 0 |
 
 ## Links

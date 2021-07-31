@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.diagram.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramZoomStartEvent extends DiagramEvent {
+trait DiagramZoomStartEvent
+  extends StObject
+     with DiagramEvent {
   
-  var point: js.UndefOr[Point] = js.native
+  var point: js.UndefOr[Point] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object DiagramZoomStartEvent {
   

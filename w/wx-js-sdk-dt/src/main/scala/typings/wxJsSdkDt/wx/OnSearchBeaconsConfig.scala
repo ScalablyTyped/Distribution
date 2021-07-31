@@ -2,14 +2,14 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnSearchBeaconsConfig extends WxBaseRequestConfig {
+trait OnSearchBeaconsConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   @JSName("complete")
-  def complete_MOnSearchBeaconsConfig(argv: js.Any): Unit = js.native
+  def complete_MOnSearchBeaconsConfig(argv: js.Any): Unit
 }
 object OnSearchBeaconsConfig {
   

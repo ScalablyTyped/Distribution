@@ -2,19 +2,17 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryGroup extends StObject {
   
-  var dimension: typings.itunesconnectanalytics.mod.dimension = js.native
+  var dimension: typings.itunesconnectanalytics.mod.dimension
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var metric: js.UndefOr[measures] = js.native
+  var metric: js.UndefOr[measures] = js.undefined
   
-  var rank: js.UndefOr[String] = js.native
+  var rank: js.UndefOr[String] = js.undefined
 }
 object QueryGroup {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterSnapshotAttributesResult extends StObject {
   
   /**
     * The list of attributes and values for the manual DB cluster snapshot.
     */
-  var DBClusterSnapshotAttributes: js.UndefOr[DBClusterSnapshotAttributeList] = js.native
+  var DBClusterSnapshotAttributes: js.UndefOr[DBClusterSnapshotAttributeList] = js.undefined
   
   /**
     * The identifier of the manual DB cluster snapshot that the attributes apply to.
     */
-  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.native
+  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
 }
 object DBClusterSnapshotAttributesResult {
   

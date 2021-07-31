@@ -5,17 +5,15 @@ import typings.geolib.typesMod.LatitudeKeys
 import typings.geolib.typesMod.LongitudeKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Altitude extends StObject {
   
-  var altitude: js.Array[AltitudeKeys] = js.native
+  var altitude: js.Array[AltitudeKeys]
   
-  var latitude: js.Array[LatitudeKeys] = js.native
+  var latitude: js.Array[LatitudeKeys]
   
-  var longitude: js.Array[LongitudeKeys] = js.native
+  var longitude: js.Array[LongitudeKeys]
 }
 object Altitude {
   

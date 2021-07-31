@@ -5,10 +5,8 @@ import typings.electron.electronStrings.json
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeedURLOptions extends StObject {
   
   /**
@@ -16,16 +14,16 @@ trait FeedURLOptions extends StObject {
     *
     * @platform darwin
     */
-  var headers: js.UndefOr[Record[String, String]] = js.native
+  var headers: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * Can be `json` or `default`, see the Squirrel.Mac README for more information.
     *
     * @platform darwin
     */
-  var serverType: js.UndefOr[json | default] = js.native
+  var serverType: js.UndefOr[json | default] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object FeedURLOptions {
   

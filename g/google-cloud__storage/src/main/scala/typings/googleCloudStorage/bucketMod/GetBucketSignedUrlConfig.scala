@@ -8,31 +8,29 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketSignedUrlConfig extends StObject {
   
-  var action: list = js.native
+  var action: list
   
-  var cname: js.UndefOr[String] = js.native
+  var cname: js.UndefOr[String] = js.undefined
   
-  var expires: String | Double | Date = js.native
+  var expires: String | Double | Date
   
-  var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+  var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   
-  var queryParams: js.UndefOr[Query] = js.native
+  var queryParams: js.UndefOr[Query] = js.undefined
   
-  var version: js.UndefOr[v2 | v4] = js.native
+  var version: js.UndefOr[v2 | v4] = js.undefined
   
-  var virtualHostedStyle: js.UndefOr[Boolean] = js.native
+  var virtualHostedStyle: js.UndefOr[Boolean] = js.undefined
 }
 object GetBucketSignedUrlConfig {
   
   @scala.inline
-  def apply(action: list, expires: String | Double | Date): GetBucketSignedUrlConfig = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any])
+  def apply(expires: String | Double | Date): GetBucketSignedUrlConfig = {
+    val __obj = js.Dynamic.literal(action = "list", expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketSignedUrlConfig]
   }
   

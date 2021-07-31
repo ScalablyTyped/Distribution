@@ -2,17 +2,15 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountIdentityInputOption extends StObject {
   
-  var isRequired: js.UndefOr[Boolean] = js.native
+  var isRequired: js.UndefOr[Boolean] = js.undefined
   
-  var optionName: js.UndefOr[String] = js.native
+  var optionName: js.UndefOr[String] = js.undefined
   
-  var valueType: js.UndefOr[String] = js.native
+  var valueType: js.UndefOr[String] = js.undefined
 }
 object AccountIdentityInputOption {
   

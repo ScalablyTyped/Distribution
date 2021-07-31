@@ -3,18 +3,17 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDescriptionNumber
-  extends AbstractValueDescription
+  extends StObject
+     with AbstractValueDescription
      with ValueDescription {
   
   @JSName("type")
-  var type_ValueDescriptionNumber: number = js.native
+  var type_ValueDescriptionNumber: number
   
-  var value: String = js.native
+  var value: String
 }
 object ValueDescriptionNumber {
   
@@ -22,11 +21,10 @@ object ValueDescriptionNumber {
   def apply(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
-    `type`: number,
     value: String
   ): ValueDescriptionNumber = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[ValueDescriptionNumber]
   }
   

@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryConnectSettings extends StObject {
   
   /**
     * A list of one or more IP addresses of DNS servers or domain controllers in the on-premises directory.
     */
-  var CustomerDnsIps: DnsIpAddrs = js.native
+  var CustomerDnsIps: DnsIpAddrs
   
   /**
     * The user name of an account in the on-premises directory that is used to connect to the directory. This account must have the following permissions:   Read users and groups   Create computer objects   Join computers to the domain  
     */
-  var CustomerUserName: UserName = js.native
+  var CustomerUserName: UserName
   
   /**
     * A list of subnet identifiers in the VPC in which the AD Connector is created.
     */
-  var SubnetIds: typings.awsSdk.directoryserviceMod.SubnetIds = js.native
+  var SubnetIds: typings.awsSdk.directoryserviceMod.SubnetIds
   
   /**
     * The identifier of the VPC in which the AD Connector is created.
     */
-  var VpcId: typings.awsSdk.directoryserviceMod.VpcId = js.native
+  var VpcId: typings.awsSdk.directoryserviceMod.VpcId
 }
 object DirectoryConnectSettings {
   

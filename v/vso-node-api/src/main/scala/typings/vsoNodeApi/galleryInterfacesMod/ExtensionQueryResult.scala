@@ -2,16 +2,14 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionQueryResult extends StObject {
   
   /**
     * For each filter supplied in the query, a filter result will be returned in the query result.
     */
-  var results: js.Array[ExtensionFilterResult] = js.native
+  var results: js.Array[ExtensionFilterResult]
 }
 object ExtensionQueryResult {
   

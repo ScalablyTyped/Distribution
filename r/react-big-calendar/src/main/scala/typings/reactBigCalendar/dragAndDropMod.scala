@@ -18,38 +18,41 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragAndDropMod {
   
-  @JSImport("react-big-calendar/lib/addons/dragAndDrop", JSImport.Default)
+  @JSImport("react-big-calendar/lib/addons/dragAndDrop", JSImport.Namespace)
   @js.native
-  def default[TEvent /* <: js.Object */, TResource /* <: js.Object */](calendar: ComponentType[CalendarProps[TEvent, TResource]]): ComponentType[DragAndDropCalendarProps[TEvent, TResource]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[TEvent /* <: js.Object */, TResource /* <: js.Object */](calendar: ComponentType[CalendarProps[TEvent, TResource]]): ComponentType[DragAndDropCalendarProps[TEvent, TResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(calendar.asInstanceOf[js.Any]).asInstanceOf[ComponentType[DragAndDropCalendarProps[TEvent, TResource]]]
   
   type DragAndDropCalendar[TEvent /* <: js.Object */, TResource /* <: js.Object */] = Component[DragAndDropCalendarProps[TEvent, TResource], js.Object, js.Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactBigCalendar.dragAndDropMod.withDragAndDropProps because var conflicts: components, elementProps, selectable, step. Inlined onEventDrop, onEventResize, onDragStart, onDragOver, onDropFromOutside, dragFromOutsideItem, draggableAccessor, resizableAccessor, resizable */ @js.native
-  trait DragAndDropCalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends CalendarProps[TEvent, TResource] {
+  - typings.reactBigCalendar.dragAndDropMod.withDragAndDropProps because var conflicts: components, elementProps, selectable, step. Inlined onEventDrop, onEventResize, onDragStart, onDragOver, onDropFromOutside, dragFromOutsideItem, draggableAccessor, resizableAccessor, resizable */ trait DragAndDropCalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */]
+    extends StObject
+       with CalendarProps[TEvent, TResource] {
     
-    var dragFromOutsideItem: js.UndefOr[js.Function0[(/* keyof TEvent */ String) | (js.Function1[TEvent, Date])]] = js.native
+    var dragFromOutsideItem: js.UndefOr[js.Function0[(/* keyof TEvent */ String) | (js.Function1[TEvent, Date])]] = js.undefined
     
-    var draggableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])] = js.native
+    var draggableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])] = js.undefined
     
-    var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.native
+    var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* args */ Direction[TEvent], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* args */ Direction[TEvent], Unit]] = js.undefined
     
-    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AllDayEnd, Unit]] = js.native
+    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AllDayEnd, Unit]] = js.undefined
     
-    var onEventDrop: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.native
+    var onEventDrop: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.undefined
     
-    var onEventResize: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.native
+    var onEventResize: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var resizableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])] = js.native
+    var resizableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[TEvent, Boolean])] = js.undefined
   }
   object DragAndDropCalendarProps {
     
@@ -60,7 +63,7 @@ object dragAndDropMod {
     }
     
     @scala.inline
-    implicit class DragAndDropCalendarPropsMutableBuilder[Self <: DragAndDropCalendarProps[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (DragAndDropCalendarProps[TEvent, TResource])) extends AnyVal {
+    implicit class DragAndDropCalendarPropsMutableBuilder[Self <: DragAndDropCalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (DragAndDropCalendarProps[TEvent, TResource])) extends AnyVal {
       
       @scala.inline
       def setDragFromOutsideItem(value: () => (/* keyof TEvent */ String) | (js.Function1[TEvent, Date])): Self = StObject.set(x, "dragFromOutsideItem", js.Any.fromFunction0(value))
@@ -124,36 +127,35 @@ object dragAndDropMod {
     }
   }
   
-  @js.native
   trait withDragAndDropProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends StObject {
     
-    var components: js.UndefOr[Components_[TEvent, TResource]] = js.native
+    var components: js.UndefOr[Components_[TEvent, TResource]] = js.undefined
     
     var dragFromOutsideItem: js.UndefOr[
         js.Function0[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])]
-      ] = js.native
+      ] = js.undefined
     
-    var draggableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.native
+    var draggableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
     
-    var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+    var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.native
+    var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent[Element], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* args */ Direction[TEvent], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* args */ Direction[TEvent], Unit]] = js.undefined
     
-    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AllDayEnd, Unit]] = js.native
+    var onDropFromOutside: js.UndefOr[js.Function1[/* args */ AllDayEnd, Unit]] = js.undefined
     
-    var onEventDrop: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.native
+    var onEventDrop: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.undefined
     
-    var onEventResize: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.native
+    var onEventResize: js.UndefOr[js.Function1[/* args */ AllDay[TEvent], Unit]] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var resizableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.native
+    var resizableAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
     
-    var selectable: js.UndefOr[`true` | `false` | ignoreEvents] = js.native
+    var selectable: js.UndefOr[`true` | `false` | ignoreEvents] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object withDragAndDropProps {
     
@@ -164,7 +166,7 @@ object dragAndDropMod {
     }
     
     @scala.inline
-    implicit class withDragAndDropPropsMutableBuilder[Self <: withDragAndDropProps[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (withDragAndDropProps[TEvent, TResource])) extends AnyVal {
+    implicit class withDragAndDropPropsMutableBuilder[Self <: withDragAndDropProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (withDragAndDropProps[TEvent, TResource])) extends AnyVal {
       
       @scala.inline
       def setComponents(value: Components_[TEvent, TResource]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])

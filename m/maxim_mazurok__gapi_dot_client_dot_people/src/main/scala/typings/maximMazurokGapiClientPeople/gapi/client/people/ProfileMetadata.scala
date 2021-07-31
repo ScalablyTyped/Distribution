@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileMetadata extends StObject {
   
   /** Output only. The profile object type. */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /** Output only. The user types. */
-  var userTypes: js.UndefOr[js.Array[String]] = js.native
+  var userTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ProfileMetadata {
   

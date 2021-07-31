@@ -3,7 +3,6 @@ package typings.officeJsPreview.OneNote
 import typings.officeJsPreview.officeJsPreviewStrings.StickyNotesContextMenuExecuted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.5]
   */
-@js.native
 trait StickyNotesContextMenuExecutedEventArgs extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait StickyNotesContextMenuExecutedEventArgs extends StObject {
     *
     * [Api set: OneNoteApi 1.5]
     */
-  var `type`: StickyNotesContextMenuExecuted = js.native
+  var `type`: StickyNotesContextMenuExecuted
 }
 object StickyNotesContextMenuExecutedEventArgs {
   
   @scala.inline
-  def apply(`type`: StickyNotesContextMenuExecuted): StickyNotesContextMenuExecutedEventArgs = {
+  def apply(): StickyNotesContextMenuExecutedEventArgs = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StickyNotesContextMenuExecuted")
     __obj.asInstanceOf[StickyNotesContextMenuExecutedEventArgs]
   }
   

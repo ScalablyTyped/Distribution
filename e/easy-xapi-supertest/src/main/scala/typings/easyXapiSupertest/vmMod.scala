@@ -2,53 +2,43 @@ package typings.easyXapiSupertest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vmMod {
   
-  @JSImport("vm", "createContext")
+  @JSImport("vm", JSImport.Namespace)
   @js.native
-  def createContext(): Context = js.native
-  @JSImport("vm", "createContext")
-  @js.native
-  def createContext(initSandbox: Context): Context = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vm", "createScript")
-  @js.native
-  def createScript(code: String): Script = js.native
-  @JSImport("vm", "createScript")
-  @js.native
-  def createScript(code: String, filename: String): Script = js.native
+  @scala.inline
+  def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
+  @scala.inline
+  def createContext(initSandbox: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(initSandbox.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @JSImport("vm", "runInContext")
-  @js.native
-  def runInContext(code: String, context: Context): Unit = js.native
-  @JSImport("vm", "runInContext")
-  @js.native
-  def runInContext(code: String, context: Context, filename: String): Unit = js.native
+  @scala.inline
+  def createScript(code: String): Script = ^.asInstanceOf[js.Dynamic].applyDynamic("createScript")(code.asInstanceOf[js.Any]).asInstanceOf[Script]
+  @scala.inline
+  def createScript(code: String, filename: String): Script = (^.asInstanceOf[js.Dynamic].applyDynamic("createScript")(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Script]
   
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: String): Unit = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: String, sandbox: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: String, sandbox: Context): Unit = js.native
-  @JSImport("vm", "runInNewContext")
-  @js.native
-  def runInNewContext(code: String, sandbox: Context, filename: String): Unit = js.native
+  @scala.inline
+  def runInContext(code: String, context: Context): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(code.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def runInContext(code: String, context: Context, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(code.asInstanceOf[js.Any], context.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vm", "runInThisContext")
-  @js.native
-  def runInThisContext(code: String): Unit = js.native
-  @JSImport("vm", "runInThisContext")
-  @js.native
-  def runInThisContext(code: String, filename: String): Unit = js.native
+  @scala.inline
+  def runInNewContext(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def runInNewContext(code: String, sandbox: Unit, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def runInNewContext(code: String, sandbox: Context): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def runInNewContext(code: String, sandbox: Context, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runInNewContext")(code.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def runInThisContext(code: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runInThisContext")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def runInThisContext(code: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runInThisContext")(code.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Context extends StObject
   
   @js.native

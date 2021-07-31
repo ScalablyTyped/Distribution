@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3AccessControlList extends StObject {
   
   /**
     * 
     */
-  var Grants: js.UndefOr[S3GrantList] = js.native
+  var Grants: js.UndefOr[S3GrantList] = js.undefined
   
   /**
     * 
     */
-  var Owner: S3ObjectOwner = js.native
+  var Owner: S3ObjectOwner
 }
 object S3AccessControlList {
   

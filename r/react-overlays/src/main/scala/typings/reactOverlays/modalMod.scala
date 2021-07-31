@@ -27,7 +27,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -38,9 +37,9 @@ object modalMod {
     /**
       * **NOTE**: Exotic components are not callable.
       */
-    @JSImport("react-overlays/cjs/Modal", JSImport.Default)
-    @js.native
-    def apply(props: ModalProps with RefAttributes[ModalHandle]): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: ModalProps & RefAttributes[ModalHandle]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("react-overlays/cjs/Modal", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -89,18 +88,17 @@ object modalMod {
     val typeof: js.Symbol = js.native
   }
   
-  @js.native
   trait ModalHandle extends StObject {
     
-    var backdrop: HTMLElement | Null = js.native
+    var backdrop: HTMLElement | Null
     
-    var dialog: HTMLElement | Null = js.native
+    var dialog: HTMLElement | Null
   }
   object ModalHandle {
     
     @scala.inline
     def apply(): ModalHandle = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(backdrop = null, dialog = null)
       __obj.asInstanceOf[ModalHandle]
     }
     
@@ -121,54 +119,54 @@ object modalMod {
     }
   }
   
-  @js.native
   trait ModalProps
-    extends TransitionCallbacks
+    extends StObject
+       with TransitionCallbacks
        with /* other */ StringDictionary[js.Any] {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backdrop: js.UndefOr[`true` | `false` | static] = js.native
+    var backdrop: js.UndefOr[`true` | `false` | static] = js.undefined
     
-    var backdropTransition: js.UndefOr[ModalTransitionComponent] = js.native
+    var backdropTransition: js.UndefOr[ModalTransitionComponent] = js.undefined
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[DOMContainer[HTMLElement]] = js.native
+    var container: js.UndefOr[DOMContainer[HTMLElement]] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var enforceFocus: js.UndefOr[Boolean] = js.native
+    var enforceFocus: js.UndefOr[Boolean] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var manager: js.UndefOr[default] = js.native
+    var manager: js.UndefOr[default] = js.undefined
     
-    var onBackdropClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onBackdropClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onEscapeKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, Unit]] = js.native
+    var onEscapeKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderBackdrop: js.UndefOr[js.Function1[/* props */ RenderModalBackdropProps, ReactNode]] = js.native
+    var renderBackdrop: js.UndefOr[js.Function1[/* props */ RenderModalBackdropProps, ReactNode]] = js.undefined
     
-    var renderDialog: js.UndefOr[js.Function1[/* props */ RenderModalDialogProps, ReactNode]] = js.native
+    var renderDialog: js.UndefOr[js.Function1[/* props */ RenderModalDialogProps, ReactNode]] = js.undefined
     
-    var restoreFocus: js.UndefOr[Boolean] = js.native
+    var restoreFocus: js.UndefOr[Boolean] = js.undefined
     
-    var restoreFocusOptions: js.UndefOr[PreventScroll] = js.native
+    var restoreFocusOptions: js.UndefOr[PreventScroll] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transition: js.UndefOr[ModalTransitionComponent] = js.native
+    var transition: js.UndefOr[ModalTransitionComponent] = js.undefined
   }
   object ModalProps {
     
@@ -323,12 +321,11 @@ object modalMod {
   
   type ModalTransitionComponent = ComponentType[inbooleanappearbooleanund]
   
-  @js.native
   trait RenderModalBackdropProps extends StObject {
     
-    def onClick(event: SyntheticEvent[Element, Event]): Unit = js.native
+    def onClick(event: SyntheticEvent[Element, Event]): Unit
     
-    var ref: RefCallback[Element] = js.native
+    var ref: RefCallback[Element]
   }
   object RenderModalBackdropProps {
     
@@ -349,20 +346,19 @@ object modalMod {
     }
   }
   
-  @js.native
   trait RenderModalDialogProps extends StObject {
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var ref: RefCallback[Element] = js.native
+    var ref: RefCallback[Element]
     
-    var role: String = js.native
+    var role: String
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
   }
   object RenderModalDialogProps {
     

@@ -2,7 +2,6 @@ package typings.openpgp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "HKP")
@@ -30,5 +29,5 @@ class HKP_ protected () extends StObject {
     * @param publicKeyArmored An ascii armored public key to be uploaded.
     * @returns
     */
-  def upload(publicKeyArmored: String): js.Promise[_] = js.native
+  def upload(publicKeyArmored: String): js.Promise[js.Any] = js.native
 }

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordingInfo extends StObject {
   
   // The identities of the recording initiator.
-  var initiator: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var initiator: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Possible values are: unknown, notRecording, recording, or failed.
-  var recordingStatus: js.UndefOr[RecordingStatus] = js.native
+  var recordingStatus: js.UndefOr[RecordingStatus] = js.undefined
 }
 object RecordingInfo {
   

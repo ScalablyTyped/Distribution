@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MemberNameArray extends MemberName {
+trait MemberNameArray
+  extends StObject
+     with MemberName {
   
-  def add(entry: MemberName): Unit = js.native
+  def add(entry: MemberName): Unit
   
-  def addAll(entries: js.Array[MemberName]): Unit = js.native
+  def addAll(entries: js.Array[MemberName]): Unit
   
-  var delim: String = js.native
+  var delim: String
   
-  var entries: js.Array[MemberName] = js.native
+  var entries: js.Array[MemberName]
 }
 object MemberNameArray {
   

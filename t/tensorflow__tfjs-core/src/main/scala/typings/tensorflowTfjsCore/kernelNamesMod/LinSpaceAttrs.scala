@@ -2,17 +2,15 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinSpaceAttrs extends StObject {
   
-  var num: Double = js.native
+  var num: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var stop: Double = js.native
+  var stop: Double
 }
 object LinSpaceAttrs {
   

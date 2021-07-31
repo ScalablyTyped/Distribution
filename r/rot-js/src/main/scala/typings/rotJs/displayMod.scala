@@ -12,14 +12,15 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object displayMod {
   
   @JSImport("rot-js/lib/display/display", JSImport.Default)
   @js.native
-  class default () extends Display {
+  class default ()
+    extends StObject
+       with Display {
     def this(options: PartialDisplayOptions) = this()
   }
   /* static members */

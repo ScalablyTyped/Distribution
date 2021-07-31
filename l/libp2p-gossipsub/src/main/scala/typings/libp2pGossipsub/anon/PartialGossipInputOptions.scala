@@ -7,46 +7,44 @@ import typings.libp2pInterfaces.pubsubMod.InMessage
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub.GossipInputOptions> */
-@js.native
 trait PartialGossipInputOptions extends StObject {
   
-  var D: js.UndefOr[Double] = js.native
+  var D: js.UndefOr[Double] = js.undefined
   
-  var Dhi: js.UndefOr[Double] = js.native
+  var Dhi: js.UndefOr[Double] = js.undefined
   
-  var Dlazy: js.UndefOr[Double] = js.native
+  var Dlazy: js.UndefOr[Double] = js.undefined
   
-  var Dlo: js.UndefOr[Double] = js.native
+  var Dlo: js.UndefOr[Double] = js.undefined
   
-  var Dout: js.UndefOr[Double] = js.native
+  var Dout: js.UndefOr[Double] = js.undefined
   
-  var Dscore: js.UndefOr[Double] = js.native
+  var Dscore: js.UndefOr[Double] = js.undefined
   
-  var directPeers: js.UndefOr[js.Array[AddrInfo]] = js.native
+  var directPeers: js.UndefOr[js.Array[AddrInfo]] = js.undefined
   
-  var doPX: js.UndefOr[Boolean] = js.native
+  var doPX: js.UndefOr[Boolean] = js.undefined
   
-  var emitSelf: js.UndefOr[Boolean] = js.native
+  var emitSelf: js.UndefOr[Boolean] = js.undefined
   
-  var fallbackToFloodsub: js.UndefOr[Boolean] = js.native
+  var fallbackToFloodsub: js.UndefOr[Boolean] = js.undefined
   
-  var floodPublish: js.UndefOr[Boolean] = js.native
+  var floodPublish: js.UndefOr[Boolean] = js.undefined
   
-  var globalSignaturePolicy: js.UndefOr[String] = js.native
+  var globalSignaturePolicy: js.UndefOr[String] = js.undefined
   
-  var gossipIncoming: js.UndefOr[Boolean] = js.native
+  var gossipIncoming: js.UndefOr[Boolean] = js.undefined
   
-  var messageCache: js.UndefOr[MessageCache] = js.native
+  var messageCache: js.UndefOr[MessageCache] = js.undefined
   
-  var msgIdFn: js.UndefOr[MessageIdFunction] = js.native
+  var msgIdFn: js.UndefOr[MessageIdFunction] = js.undefined
   
-  var scoreParams: js.UndefOr[PartialPeerScoreParams] = js.native
+  var scoreParams: js.UndefOr[PartialPeerScoreParams] = js.undefined
   
-  var scoreThresholds: js.UndefOr[PartialPeerScoreThreshold] = js.native
+  var scoreThresholds: js.UndefOr[PartialPeerScoreThreshold] = js.undefined
 }
 object PartialGossipInputOptions {
   

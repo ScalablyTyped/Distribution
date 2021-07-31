@@ -8,10 +8,13 @@ import typings.fridaGum.PageProtection
 import typings.fridaGum.UInt64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Memory {
+  
+  @JSGlobal("Memory")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Allocates `size` bytes of memory on Frida's private heap, or, if `size` is a multiple of Process#pageSize,
@@ -21,12 +24,10 @@ object Memory {
     *
     * @param size Number of bytes to allocate.
     */
-  @JSGlobal("Memory.alloc")
-  @js.native
-  def alloc(size: Double): typings.fridaGum.NativePointer = js.native
-  @JSGlobal("Memory.alloc")
-  @js.native
-  def alloc(size: UInt64): typings.fridaGum.NativePointer = js.native
+  @scala.inline
+  def alloc(size: Double): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
+  @scala.inline
+  def alloc(size: UInt64): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Allocates, encodes and writes out `str` as an ANSI string on Frida's private heap.
@@ -34,9 +35,8 @@ object Memory {
     *
     * @param str String to allocate.
     */
-  @JSGlobal("Memory.allocAnsiString")
-  @js.native
-  def allocAnsiString(str: String): typings.fridaGum.NativePointer = js.native
+  @scala.inline
+  def allocAnsiString(str: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocAnsiString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Allocates, encodes and writes out `str` as a UTF-16 string on Frida's private heap.
@@ -44,9 +44,8 @@ object Memory {
     *
     * @param str String to allocate.
     */
-  @JSGlobal("Memory.allocUtf16String")
-  @js.native
-  def allocUtf16String(str: String): typings.fridaGum.NativePointer = js.native
+  @scala.inline
+  def allocUtf16String(str: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUtf16String")(str.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Allocates, encodes and writes out `str` as a UTF-8 string on Frida's private heap.
@@ -54,9 +53,8 @@ object Memory {
     *
     * @param str String to allocate.
     */
-  @JSGlobal("Memory.allocUtf8String")
-  @js.native
-  def allocUtf8String(str: String): typings.fridaGum.NativePointer = js.native
+  @scala.inline
+  def allocUtf8String(str: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUtf8String")(str.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Just like memcpy.
@@ -65,12 +63,10 @@ object Memory {
     * @param src Sources address.
     * @param n Number of bytes to copy.
     */
-  @JSGlobal("Memory.copy")
-  @js.native
-  def copy(dst: NativePointerValue, src: NativePointerValue, n: Double): Unit = js.native
-  @JSGlobal("Memory.copy")
-  @js.native
-  def copy(dst: NativePointerValue, src: NativePointerValue, n: UInt64): Unit = js.native
+  @scala.inline
+  def copy(dst: NativePointerValue, src: NativePointerValue, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def copy(dst: NativePointerValue, src: NativePointerValue, n: UInt64): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Short-hand for Memory#alloc() followed by Memory#copy(). See Memory#alloc() for details about lifetime.
@@ -78,12 +74,10 @@ object Memory {
     * @param address Address to copy from.
     * @param size Number of bytes to copy.
     */
-  @JSGlobal("Memory.dup")
-  @js.native
-  def dup(address: NativePointerValue, size: Double): typings.fridaGum.NativePointer = js.native
-  @JSGlobal("Memory.dup")
-  @js.native
-  def dup(address: NativePointerValue, size: UInt64): typings.fridaGum.NativePointer = js.native
+  @scala.inline
+  def dup(address: NativePointerValue, size: Double): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("dup")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
+  @scala.inline
+  def dup(address: NativePointerValue, size: UInt64): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("dup")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Safely modifies `size` bytes at `address`. The supplied function `apply` gets called with a writable pointer
@@ -96,12 +90,10 @@ object Memory {
     * @param size Number of bytes to modify.
     * @param apply Function that applies the desired changes.
     */
-  @JSGlobal("Memory.patchCode")
-  @js.native
-  def patchCode(address: NativePointerValue, size: Double, apply: MemoryPatchApplyCallback): Unit = js.native
-  @JSGlobal("Memory.patchCode")
-  @js.native
-  def patchCode(address: NativePointerValue, size: UInt64, apply: MemoryPatchApplyCallback): Unit = js.native
+  @scala.inline
+  def patchCode(address: NativePointerValue, size: Double, apply: MemoryPatchApplyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patchCode")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], apply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def patchCode(address: NativePointerValue, size: UInt64, apply: MemoryPatchApplyCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patchCode")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], apply.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Changes the page protection on a region of memory.
@@ -110,12 +102,10 @@ object Memory {
     * @param size Number of bytes. Must be a multiple of Process#pageSize.
     * @param protection Desired page protection.
     */
-  @JSGlobal("Memory.protect")
-  @js.native
-  def protect(address: NativePointerValue, size: Double, protection: PageProtection): Boolean = js.native
-  @JSGlobal("Memory.protect")
-  @js.native
-  def protect(address: NativePointerValue, size: UInt64, protection: PageProtection): Boolean = js.native
+  @scala.inline
+  def protect(address: NativePointerValue, size: Double, protection: PageProtection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("protect")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], protection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def protect(address: NativePointerValue, size: UInt64, protection: PageProtection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("protect")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], protection.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Scans memory for occurences of `pattern` in the memory range given by `address` and `size`.
@@ -131,12 +121,10 @@ object Memory {
     *                which gets translated into masks behind the scenes.
     * @param callbacks Object with callbacks.
     */
-  @JSGlobal("Memory.scan")
-  @js.native
-  def scan(address: NativePointerValue, size: Double, pattern: String, callbacks: MemoryScanCallbacks): Unit = js.native
-  @JSGlobal("Memory.scan")
-  @js.native
-  def scan(address: NativePointerValue, size: UInt64, pattern: String, callbacks: MemoryScanCallbacks): Unit = js.native
+  @scala.inline
+  def scan(address: NativePointerValue, size: Double, pattern: String, callbacks: MemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scan(address: NativePointerValue, size: UInt64, pattern: String, callbacks: MemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Synchronous version of `scan()`.
@@ -145,10 +133,8 @@ object Memory {
     * @param size Number of bytes to scan.
     * @param pattern Match pattern, see `Memory.scan()` for details.
     */
-  @JSGlobal("Memory.scanSync")
-  @js.native
-  def scanSync(address: NativePointerValue, size: Double, pattern: String): js.Array[MemoryScanMatch] = js.native
-  @JSGlobal("Memory.scanSync")
-  @js.native
-  def scanSync(address: NativePointerValue, size: UInt64, pattern: String): js.Array[MemoryScanMatch] = js.native
+  @scala.inline
+  def scanSync(address: NativePointerValue, size: Double, pattern: String): js.Array[MemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[MemoryScanMatch]]
+  @scala.inline
+  def scanSync(address: NativePointerValue, size: UInt64, pattern: String): js.Array[MemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[MemoryScanMatch]]
 }

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a floating point value that is used to convey the values of timed text style properties. */
-@js.native
 trait TimedTextDouble extends StObject {
   
   /** The units of the value, either pixels or percentage. */
-  var unit: TimedTextUnit = js.native
+  var unit: TimedTextUnit
   
   /** The value. */
-  var value: Double = js.native
+  var value: Double
 }
 object TimedTextDouble {
   

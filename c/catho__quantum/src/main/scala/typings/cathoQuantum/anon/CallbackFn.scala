@@ -6,15 +6,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackFn extends StObject {
   
-  var callbackFn: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+  var callbackFn: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object CallbackFn {
   

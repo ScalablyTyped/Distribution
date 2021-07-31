@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAutoMLJobRequest extends StObject {
   
   /**
     * Contains CompletionCriteria and SecurityConfig.
     */
-  var AutoMLJobConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobConfig] = js.native
+  var AutoMLJobConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobConfig] = js.undefined
   
   /**
     * Identifies an Autopilot job. Must be unique to your account and is case-insensitive.
     */
-  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName = js.native
+  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
   /**
     * Defines the objective of a an AutoML job. You provide a AutoMLJobObjective$MetricName and Autopilot infers whether to minimize or maximize it. If a metric is not specified, the most commonly used ObjectiveMetric for problem type is automaically selected.
     */
-  var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.native
+  var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.undefined
   
   /**
     * Generates possible candidates without training a model. A candidate is a combination of data preprocessors, algorithms, and algorithm parameter settings.
     */
-  var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.native
+  var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.undefined
   
   /**
     * Similar to InputDataConfig supported by Tuning. Format(s) supported: CSV. Minimum of 500 rows.
     */
-  var InputDataConfig: AutoMLInputDataConfig = js.native
+  var InputDataConfig: AutoMLInputDataConfig
   
   /**
     * Similar to OutputDataConfig supported by Tuning. Format(s) supported: CSV.
     */
-  var OutputDataConfig: AutoMLOutputDataConfig = js.native
+  var OutputDataConfig: AutoMLOutputDataConfig
   
   /**
     * Defines the kind of preprocessing and algorithms intended for the candidates. Options include: BinaryClassification, MulticlassClassification, and Regression.
     */
-  var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.native
+  var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.undefined
   
   /**
     * The ARN of the role that is used to access the data.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * Each tag consists of a key and an optional value. Tag keys must be unique per resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateAutoMLJobRequest {
   

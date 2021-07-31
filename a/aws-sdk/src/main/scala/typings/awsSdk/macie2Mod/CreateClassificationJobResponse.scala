@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClassificationJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the job.
     */
-  var jobArn: js.UndefOr[string] = js.native
+  var jobArn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the job.
     */
-  var jobId: js.UndefOr[string] = js.native
+  var jobId: js.UndefOr[string] = js.undefined
 }
 object CreateClassificationJobResponse {
   

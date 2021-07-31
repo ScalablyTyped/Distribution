@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextText extends StObject {
   
-  var nextText: String = js.native
+  var nextText: String
   
-  var prevText: String = js.native
+  var prevText: String
 }
 object NextText {
   

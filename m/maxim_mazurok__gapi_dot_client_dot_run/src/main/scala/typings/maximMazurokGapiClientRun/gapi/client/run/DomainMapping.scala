@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainMapping extends StObject {
   
   /** The API version for this call such as "domains.cloudrun.com/v1". */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** The kind of resource, in this case "DomainMapping". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Metadata associated with this BuildTemplate. */
-  var metadata: js.UndefOr[ObjectMeta] = js.native
+  var metadata: js.UndefOr[ObjectMeta] = js.undefined
   
   /** The spec for this DomainMapping. */
-  var spec: js.UndefOr[DomainMappingSpec] = js.native
+  var spec: js.UndefOr[DomainMappingSpec] = js.undefined
   
   /** The current status of the DomainMapping. */
-  var status: js.UndefOr[DomainMappingStatus] = js.native
+  var status: js.UndefOr[DomainMappingStatus] = js.undefined
 }
 object DomainMapping {
   

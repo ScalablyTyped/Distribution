@@ -2,30 +2,28 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of the numerical stats computation.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2NumericalStatsResult extends StObject {
   
   /**
     * Maximum value appearing in the column.
     */
-  var maxValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var maxValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
     * Minimum value appearing in the column.
     */
-  var minValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var minValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
     * List of 99 values that partition the set of field values into 100 equal
     * sized buckets.
     */
-  var quantileValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.native
+  var quantileValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2NumericalStatsResult {
   

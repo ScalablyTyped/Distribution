@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramNodes extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): DiagramNode = js.native
+  def Item(Index: js.Any): DiagramNode
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def SelectAll(): Unit = js.native
+  def SelectAll(): Unit
   
   @JSName("Word.DiagramNodes_typekey")
-  var WordDotDiagramNodes_typekey: DiagramNodes = js.native
+  var WordDotDiagramNodes_typekey: DiagramNodes
 }
 object DiagramNodes {
   

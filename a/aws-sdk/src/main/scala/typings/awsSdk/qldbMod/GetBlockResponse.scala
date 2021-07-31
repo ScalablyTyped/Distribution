@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBlockResponse extends StObject {
   
   /**
     * The block data object in Amazon Ion format.
     */
-  var Block: ValueHolder = js.native
+  var Block: ValueHolder
   
   /**
     * The proof object in Amazon Ion format returned by a GetBlock request. A proof contains the list of hash values required to recalculate the specified digest using a Merkle tree, starting with the specified block.
     */
-  var Proof: js.UndefOr[ValueHolder] = js.native
+  var Proof: js.UndefOr[ValueHolder] = js.undefined
 }
 object GetBlockResponse {
   

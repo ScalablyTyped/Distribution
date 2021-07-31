@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codepipeline {
@@ -31,6 +30,10 @@ object codepipeline {
   /* static members */
   object Pipeline {
     
+    @JSImport("@pulumi/aws", "codepipeline.Pipeline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Pipeline resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -40,26 +43,21 @@ object codepipeline {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "codepipeline.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.pipelineMod.Pipeline = js.native
-    @JSImport("@pulumi/aws", "codepipeline.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.pipelineMod.Pipeline = js.native
-    @JSImport("@pulumi/aws", "codepipeline.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.pipelineMod.Pipeline = js.native
-    @JSImport("@pulumi/aws", "codepipeline.Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.pipelineMod.Pipeline = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.pipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.pipelineMod.Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.pipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.pipelineMod.Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState): typings.pulumiAws.pipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.pipelineMod.Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): typings.pulumiAws.pipelineMod.Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.pipelineMod.Pipeline]
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "codepipeline.Pipeline.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "codepipeline.Webhook")
@@ -79,6 +77,10 @@ object codepipeline {
   /* static members */
   object Webhook {
     
+    @JSImport("@pulumi/aws", "codepipeline.Webhook")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Webhook resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,25 +90,20 @@ object codepipeline {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "codepipeline.Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
-    @JSImport("@pulumi/aws", "codepipeline.Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
-    @JSImport("@pulumi/aws", "codepipeline.Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebhookState): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
-    @JSImport("@pulumi/aws", "codepipeline.Webhook.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): typings.pulumiAws.codepipelineWebhookMod.Webhook = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.codepipelineWebhookMod.Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codepipelineWebhookMod.Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.codepipelineWebhookMod.Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codepipelineWebhookMod.Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebhookState): typings.pulumiAws.codepipelineWebhookMod.Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codepipelineWebhookMod.Webhook]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): typings.pulumiAws.codepipelineWebhookMod.Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codepipelineWebhookMod.Webhook]
     
     /**
       * Returns true if the given object is an instance of Webhook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "codepipeline.Webhook.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/webhook.Webhook */ Boolean]
   }
 }

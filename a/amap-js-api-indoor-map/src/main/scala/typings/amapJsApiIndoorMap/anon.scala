@@ -4,33 +4,31 @@ import typings.amapJsApi.AMap.LngLat
 import typings.amapJsApiIndoorMap.AMap.IndoorMap.Shop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buildingid extends StObject {
     
     /**
       * 店铺所属楼宇信息
       */
-    var building_id: String = js.native
+    var building_id: String
     
     /**
       * 楼层
       */
-    var floor: Double = js.native
+    var floor: Double
     
     /**
       * 经纬度
       */
-    var lnglat: LngLat = js.native
+    var lnglat: LngLat
     
     /**
       * 商店
       */
-    var shop: Shop = js.native
+    var shop: Shop
   }
   object Buildingid {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageAttributeValue extends StObject {
   
   /**
     * Not implemented. Reserved for future use.
     */
-  var BinaryListValues: js.UndefOr[BinaryList] = js.native
+  var BinaryListValues: js.UndefOr[BinaryList] = js.undefined
   
   /**
     * Binary type attributes can store any binary data, such as compressed data, encrypted data, or images.
     */
-  var BinaryValue: js.UndefOr[Binary] = js.native
+  var BinaryValue: js.UndefOr[Binary] = js.undefined
   
   /**
     * Amazon SQS supports the following logical data types: String, Number, and Binary. For the Number data type, you must use StringValue. You can also append custom labels. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
     */
-  var DataType: String = js.native
+  var DataType: String
   
   /**
     * Not implemented. Reserved for future use.
     */
-  var StringListValues: js.UndefOr[StringList] = js.native
+  var StringListValues: js.UndefOr[StringList] = js.undefined
   
   /**
     * Strings are Unicode with UTF-8 binary encoding. For a list of code values, see ASCII Printable Characters.
     */
-  var StringValue: js.UndefOr[String] = js.native
+  var StringValue: js.UndefOr[String] = js.undefined
 }
 object MessageAttributeValue {
   

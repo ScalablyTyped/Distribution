@@ -8,14 +8,13 @@ import typings.extjs.Ext.view.IDragZone
 import typings.extjs.Ext.view.IDropZone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tree {
   
-  @js.native
   trait IColumn
-    extends typings.extjs.Ext.grid.column.IColumn
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn
   object IColumn {
     
     @scala.inline
@@ -25,12 +24,13 @@ object tree {
     }
   }
   
-  @js.native
-  trait IPanel extends ITable {
+  trait IPanel
+    extends StObject
+       with ITable {
     
     /** [Config Option] (Boolean) */
     @JSName("animate")
-    var animate_IPanel: js.UndefOr[Boolean] = js.native
+    var animate_IPanel: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Collapse all nodes
       * @param callback Function A function to execute when the collapse finishes.
@@ -38,7 +38,7 @@ object tree {
       */
     var collapseAll: js.UndefOr[
         js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Collapses a record that is loaded in the tree
       * @param record Ext.data.Model The record to collapse
@@ -54,10 +54,10 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var displayField: js.UndefOr[java.lang.String] = js.native
+    var displayField: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Expand all nodes
       * @param callback Function A function to execute when the expand finishes.
@@ -65,7 +65,7 @@ object tree {
       */
     var expandAll: js.UndefOr[
         js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Expands a record that is loaded in the tree
       * @param record Ext.data.Model The record to expand
@@ -81,7 +81,7 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Expand the tree to the path of a particular node
       * @param path String The path to expand. The path should include a leading separator.
@@ -99,29 +99,29 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var folderSort: js.UndefOr[Boolean] = js.native
+    var folderSort: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieve an array of checked records
       * @returns Ext.data.NodeInterface[] An array containing the checked records
       */
-    var getChecked: js.UndefOr[js.Function0[Array]] = js.native
+    var getChecked: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the root node for this tree
       * @returns Ext.data.NodeInterface
       */
-    var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.native
+    var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var lines: js.UndefOr[Boolean] = js.native
+    var lines: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-    var root: js.UndefOr[js.Any] = js.native
+    var root: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var rootVisible: js.UndefOr[Boolean] = js.native
+    var rootVisible: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Expand the tree to the path of a particular node then select it
       * @param path String The path to select. The path should include a leading separator.
@@ -139,23 +139,23 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets root node of this tree
       * @param root Ext.data.Model/Ext.data.NodeInterface/Object
       * @returns Ext.data.NodeInterface The new root
       */
-    var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.native
+    var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var singleExpand: js.UndefOr[Boolean] = js.native
+    var singleExpand: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.data.TreeStore) */
     @JSName("store")
-    var store_IPanel: js.UndefOr[ITreeStore] = js.native
+    var store_IPanel: js.UndefOr[ITreeStore] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var useArrows: js.UndefOr[Boolean] = js.native
+    var useArrows: js.UndefOr[Boolean] = js.undefined
   }
   object IPanel {
     
@@ -286,12 +286,13 @@ object tree {
     }
   }
   
-  @js.native
-  trait ITreePanel extends ITable {
+  trait ITreePanel
+    extends StObject
+       with ITable {
     
     /** [Config Option] (Boolean) */
     @JSName("animate")
-    var animate_ITreePanel: js.UndefOr[Boolean] = js.native
+    var animate_ITreePanel: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Collapse all nodes
       * @param callback Function A function to execute when the collapse finishes.
@@ -299,7 +300,7 @@ object tree {
       */
     var collapseAll: js.UndefOr[
         js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Collapses a record that is loaded in the tree
       * @param record Ext.data.Model The record to collapse
@@ -315,10 +316,10 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var displayField: js.UndefOr[java.lang.String] = js.native
+    var displayField: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Expand all nodes
       * @param callback Function A function to execute when the expand finishes.
@@ -326,7 +327,7 @@ object tree {
       */
     var expandAll: js.UndefOr[
         js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Expands a record that is loaded in the tree
       * @param record Ext.data.Model The record to expand
@@ -342,7 +343,7 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Expand the tree to the path of a particular node
       * @param path String The path to expand. The path should include a leading separator.
@@ -360,29 +361,29 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var folderSort: js.UndefOr[Boolean] = js.native
+    var folderSort: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieve an array of checked records
       * @returns Ext.data.NodeInterface[] An array containing the checked records
       */
-    var getChecked: js.UndefOr[js.Function0[Array]] = js.native
+    var getChecked: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the root node for this tree
       * @returns Ext.data.NodeInterface
       */
-    var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.native
+    var getRootNode: js.UndefOr[js.Function0[INodeInterface]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var lines: js.UndefOr[Boolean] = js.native
+    var lines: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.data.Model/Ext.data.NodeInterface/Object) */
-    var root: js.UndefOr[js.Any] = js.native
+    var root: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var rootVisible: js.UndefOr[Boolean] = js.native
+    var rootVisible: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Expand the tree to the path of a particular node then select it
       * @param path String The path to select. The path should include a leading separator.
@@ -400,23 +401,23 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets root node of this tree
       * @param root Ext.data.Model/Ext.data.NodeInterface/Object
       * @returns Ext.data.NodeInterface The new root
       */
-    var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.native
+    var setRootNode: js.UndefOr[js.Function1[/* root */ js.UndefOr[js.Any], INodeInterface]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var singleExpand: js.UndefOr[Boolean] = js.native
+    var singleExpand: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.data.TreeStore) */
     @JSName("store")
-    var store_ITreePanel: js.UndefOr[ITreeStore] = js.native
+    var store_ITreePanel: js.UndefOr[ITreeStore] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var useArrows: js.UndefOr[Boolean] = js.native
+    var useArrows: js.UndefOr[Boolean] = js.undefined
   }
   object ITreePanel {
     
@@ -547,13 +548,13 @@ object tree {
     }
   }
   
-  @js.native
   trait IView
-    extends typings.extjs.Ext.view.ITable {
+    extends StObject
+       with typings.extjs.Ext.view.ITable {
     
     /** [Config Option] (Boolean) */
     @JSName("animate")
-    var animate_IView: js.UndefOr[Boolean] = js.native
+    var animate_IView: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Collapses a record that is loaded in the view
       * @param record Ext.data.Model The record to collapse
@@ -569,7 +570,7 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Expands a record that is loaded in the view
       * @param record Ext.data.Model The record to expand
@@ -585,34 +586,34 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gets the listeners to bind to a new store
       * @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
       */
     @JSName("getStoreListeners")
-    var getStoreListeners_IView: js.UndefOr[js.Function0[_]] = js.native
+    var getStoreListeners_IView: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Gets the base TreeStore from the bound TreePanel  */
-    var getTreeStore: js.UndefOr[js.Function0[Unit]] = js.native
+    var getTreeStore: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isTreeView: js.UndefOr[Boolean] = js.native
+    var isTreeView: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
     @JSName("loadMask")
-    var loadMask_IView: js.UndefOr[Boolean] = js.native
+    var loadMask_IView: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Template method it is called when a new store is bound to the current instance  */
     @JSName("onBindStore")
-    var onBindStore_IView: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBindStore_IView: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Template method it is called when an existing store is unbound from the current instance  */
     @JSName("onUnbindStore")
-    var onUnbindStore_IView: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUnbindStore_IView: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var rootVisible: js.UndefOr[Boolean] = js.native
+    var rootVisible: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Toggles a record between expanded and collapsed
       * @param record Ext.data.Model
@@ -628,7 +629,7 @@ object tree {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IView {
     
@@ -664,7 +665,7 @@ object tree {
       def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
       @scala.inline
-      def setGetStoreListeners(value: () => _): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
+      def setGetStoreListeners(value: () => js.Any): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
@@ -717,24 +718,25 @@ object tree {
   
   type IViewDragZone = IDragZone
   
-  @js.native
-  trait IViewDropZone extends IDropZone {
+  trait IViewDropZone
+    extends StObject
+       with IDropZone {
     
     /** [Config Option] (Boolean) */
-    var allowContainerDrop: js.UndefOr[Boolean] = js.native
+    var allowContainerDrop: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var allowParentInserts: js.UndefOr[Boolean] = js.native
+    var allowParentInserts: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var appendOnly: js.UndefOr[Boolean] = js.native
+    var appendOnly: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var expandDelay: js.UndefOr[Double] = js.native
+    var expandDelay: js.UndefOr[Double] = js.undefined
     
     /** [Method] Moved out of the DropZone without dropping  */
     @JSName("notifyOut")
-    var notifyOut_IViewDropZone: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOut_IViewDropZone: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] The mouse is no longer over a tree node so dropping is not valid
       * @param n Object
@@ -751,7 +753,7 @@ object tree {
           /* data */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IViewDropZone {
     
@@ -806,62 +808,63 @@ object tree {
   
   object plugin {
     
-    @js.native
-    trait ITreeViewDragDrop extends IAbstractPlugin {
+    trait ITreeViewDragDrop
+      extends StObject
+         with IAbstractPlugin {
       
       /** [Config Option] (Boolean) */
-      var allowContainerDrops: js.UndefOr[Boolean] = js.native
+      var allowContainerDrops: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var allowParentInserts: js.UndefOr[Boolean] = js.native
+      var allowParentInserts: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var appendOnly: js.UndefOr[Boolean] = js.native
+      var appendOnly: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Object/Boolean) */
-      var containerScroll: js.UndefOr[js.Any] = js.native
+      var containerScroll: js.UndefOr[js.Any] = js.undefined
       
       /** [Config Option] (String) */
-      var ddGroup: js.UndefOr[java.lang.String] = js.native
+      var ddGroup: js.UndefOr[java.lang.String] = js.undefined
       
       /** [Config Option] (String) */
-      var displayField: js.UndefOr[java.lang.String] = js.native
+      var displayField: js.UndefOr[java.lang.String] = js.undefined
       
       /** [Config Option] (String) */
-      var dragGroup: js.UndefOr[java.lang.String] = js.native
+      var dragGroup: js.UndefOr[java.lang.String] = js.undefined
       
       /** [Config Option] (String) */
-      var dragText: js.UndefOr[java.lang.String] = js.native
+      var dragText: js.UndefOr[java.lang.String] = js.undefined
       
       /** [Config Option] (String) */
-      var dropGroup: js.UndefOr[java.lang.String] = js.native
+      var dropGroup: js.UndefOr[java.lang.String] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var enableDrag: js.UndefOr[Boolean] = js.native
+      var enableDrag: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var enableDrop: js.UndefOr[Boolean] = js.native
+      var enableDrop: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Number) */
-      var expandDelay: js.UndefOr[Double] = js.native
+      var expandDelay: js.UndefOr[Double] = js.undefined
       
       /** [Method] The init method is invoked after initComponent method has been run for the client Component
         * @param view Object
         */
       @JSName("init")
-      var init_ITreeViewDragDrop: js.UndefOr[js.Function1[/* view */ js.UndefOr[js.Any], Unit]] = js.native
+      var init_ITreeViewDragDrop: js.UndefOr[js.Function1[/* view */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /** [Config Option] (String) */
-      var nodeHighlightColor: js.UndefOr[java.lang.String] = js.native
+      var nodeHighlightColor: js.UndefOr[java.lang.String] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var nodeHighlightOnDrop: js.UndefOr[Boolean] = js.native
+      var nodeHighlightOnDrop: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var nodeHighlightOnRepair: js.UndefOr[Boolean] = js.native
+      var nodeHighlightOnRepair: js.UndefOr[Boolean] = js.undefined
       
       /** [Config Option] (Boolean) */
-      var sortOnDrop: js.UndefOr[Boolean] = js.native
+      var sortOnDrop: js.UndefOr[Boolean] = js.undefined
     }
     object ITreeViewDragDrop {
       

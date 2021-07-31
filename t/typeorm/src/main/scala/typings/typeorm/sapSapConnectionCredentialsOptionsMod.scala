@@ -2,63 +2,61 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sapSapConnectionCredentialsOptionsMod {
   
-  @js.native
   trait SapConnectionCredentialsOptions extends StObject {
     
     /**
       * Ca for encrypted connection
       */
-    val ca: js.UndefOr[String] = js.native
+    val ca: js.UndefOr[String] = js.undefined
     
     /**
       * Cert for encrypted connection
       */
-    val cert: js.UndefOr[String] = js.native
+    val cert: js.UndefOr[String] = js.undefined
     
     /**
       * Database name to connect to.
       */
-    val database: js.UndefOr[String] = js.native
+    val database: js.UndefOr[String] = js.undefined
     
     /**
       * Encrypt database connection
       */
-    val encrypt: js.UndefOr[Boolean] = js.native
+    val encrypt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database host.
       */
-    val host: js.UndefOr[String] = js.native
+    val host: js.UndefOr[String] = js.undefined
     
     /**
       * Key for encrypted connection
       */
-    val key: js.UndefOr[String] = js.native
+    val key: js.UndefOr[String] = js.undefined
     
     /**
       * Database password.
       */
-    val password: js.UndefOr[String] = js.native
+    val password: js.UndefOr[String] = js.undefined
     
     /**
       * Database host port.
       */
-    val port: js.UndefOr[Double] = js.native
+    val port: js.UndefOr[Double] = js.undefined
     
     /**
       * Validate database certificate
       */
-    val sslValidateCertificate: js.UndefOr[Boolean] = js.native
+    val sslValidateCertificate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database username.
       */
-    val username: js.UndefOr[String] = js.native
+    val username: js.UndefOr[String] = js.undefined
   }
   object SapConnectionCredentialsOptions {
     

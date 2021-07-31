@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RatingCountPerRating extends StObject {
   
   /**
     * Rating value
     */
-  var rating: Double = js.native
+  var rating: Double
   
   /**
     * Count of total ratings
     */
-  var ratingCount: Double = js.native
+  var ratingCount: Double
 }
 object RatingCountPerRating {
   

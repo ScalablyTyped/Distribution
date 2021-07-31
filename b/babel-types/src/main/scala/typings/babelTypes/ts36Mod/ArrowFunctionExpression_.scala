@@ -3,12 +3,11 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ArrowFunctionExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrowFunctionExpression_
-  extends Node
+  extends StObject
+     with Node
      with BlockParent
      with Expression
      with Function
@@ -16,24 +15,24 @@ trait ArrowFunctionExpression_
      with Pureish
      with Scopable {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var body: BlockStatement_ | Expression = js.native
+  var body: BlockStatement_ | Expression
   
-  var expression: Boolean = js.native
+  var expression: Boolean
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var params: js.Array[LVal] = js.native
+  var params: js.Array[LVal]
   
-  var returnType: js.UndefOr[TypeAnnotation_] = js.native
+  var returnType: js.UndefOr[TypeAnnotation_] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_] = js.undefined
   
   @JSName("type")
-  var type_ArrowFunctionExpression_ : ArrowFunctionExpression = js.native
+  var type_ArrowFunctionExpression_ : ArrowFunctionExpression
 }
 object ArrowFunctionExpression_ {
   
@@ -47,11 +46,10 @@ object ArrowFunctionExpression_ {
     id: Identifier_,
     loc: SourceLocation,
     params: js.Array[LVal],
-    start: Double,
-    `type`: ArrowFunctionExpression
+    start: Double
   ): ArrowFunctionExpression_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[ArrowFunctionExpression_]
   }
   

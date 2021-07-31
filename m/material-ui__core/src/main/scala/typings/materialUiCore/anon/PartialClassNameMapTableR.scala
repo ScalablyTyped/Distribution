@@ -2,22 +2,20 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/TableRow/TableRow.TableRowClassKey>> */
-@js.native
 trait PartialClassNameMapTableR extends StObject {
   
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
-  var head: js.UndefOr[String] = js.native
+  var head: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[String] = js.native
+  var hover: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapTableR {
   

@@ -3,17 +3,15 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClaimsToAddOrOverride extends StObject {
   
-  var claimsToAddOrOverride: js.UndefOr[StringDictionary[String]] = js.native
+  var claimsToAddOrOverride: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var claimsToSuppress: js.UndefOr[js.Array[String]] = js.native
+  var claimsToSuppress: js.UndefOr[js.Array[String]] = js.undefined
   
-  var groupOverrideDetails: js.UndefOr[Null | GroupsToOverride] = js.native
+  var groupOverrideDetails: js.UndefOr[Null | GroupsToOverride] = js.undefined
 }
 object ClaimsToAddOrOverride {
   

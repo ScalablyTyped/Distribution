@@ -2,7 +2,6 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserPolicyCommonMod {
@@ -11,128 +10,106 @@ object browserPolicyCommonMod {
     
     object content {
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowAllContentDataUrl")
+      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content")
       @js.native
-      def allowAllContentDataUrl(): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowAllContentOrigin")
-      @js.native
-      def allowAllContentOrigin(): Unit = js.native
+      @scala.inline
+      def allowAllContentDataUrl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowAllContentDataUrl")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowAllContentSameOrigin")
-      @js.native
-      def allowAllContentSameOrigin(): Unit = js.native
+      @scala.inline
+      def allowAllContentOrigin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowAllContentOrigin")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowConnectOrigin")
-      @js.native
-      def allowConnectOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowAllContentSameOrigin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowAllContentSameOrigin")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowContentTypeSniffing")
-      @js.native
-      def allowContentTypeSniffing(): Unit = js.native
+      @scala.inline
+      def allowConnectOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowConnectOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowDataUrlForAll")
-      @js.native
-      def allowDataUrlForAll(): Unit = js.native
+      @scala.inline
+      def allowContentTypeSniffing(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowContentTypeSniffing")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowEval")
-      @js.native
-      def allowEval(): Unit = js.native
+      @scala.inline
+      def allowDataUrlForAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowDataUrlForAll")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowFontOrigin")
-      @js.native
-      def allowFontOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowEval(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowEval")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowFrameAncestorsOrigin")
-      @js.native
-      def allowFrameAncestorsOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowFontOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowFontOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowFrameOrigin")
-      @js.native
-      def allowFrameOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowFrameAncestorsOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowFrameAncestorsOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowImageOrigin")
-      @js.native
-      def allowImageOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowFrameOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowFrameOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowInlineScripts")
-      @js.native
-      def allowInlineScripts(): Unit = js.native
+      @scala.inline
+      def allowImageOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowImageOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowInlineStyles")
-      @js.native
-      def allowInlineStyles(): Unit = js.native
+      @scala.inline
+      def allowInlineScripts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowInlineScripts")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowMediaOrigin")
-      @js.native
-      def allowMediaOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowInlineStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowInlineStyles")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowObjectOrigin")
-      @js.native
-      def allowObjectOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowMediaOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowMediaOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowOriginForAll")
-      @js.native
-      def allowOriginForAll(origin: String): Unit = js.native
+      @scala.inline
+      def allowObjectOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowObjectOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowSameOriginForAll")
-      @js.native
-      def allowSameOriginForAll(): Unit = js.native
+      @scala.inline
+      def allowOriginForAll(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowOriginForAll")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowScriptOrigin")
-      @js.native
-      def allowScriptOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowSameOriginForAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowSameOriginForAll")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.allowStyleOrigin")
-      @js.native
-      def allowStyleOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def allowScriptOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowScriptOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowAll")
-      @js.native
-      def disallowAll(): Unit = js.native
+      @scala.inline
+      def allowStyleOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowStyleOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowAllContent")
-      @js.native
-      def disallowAllContent(): Unit = js.native
+      @scala.inline
+      def disallowAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowAll")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowConnect")
-      @js.native
-      def disallowConnect(): Unit = js.native
+      @scala.inline
+      def disallowAllContent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowAllContent")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowEval")
-      @js.native
-      def disallowEval(): Unit = js.native
+      @scala.inline
+      def disallowConnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowConnect")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowFont")
-      @js.native
-      def disallowFont(): Unit = js.native
+      @scala.inline
+      def disallowEval(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowEval")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowInlineScripts")
-      @js.native
-      def disallowInlineScripts(): Unit = js.native
+      @scala.inline
+      def disallowFont(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowFont")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowInlineStyles")
-      @js.native
-      def disallowInlineStyles(): Unit = js.native
+      @scala.inline
+      def disallowInlineScripts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowInlineScripts")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.content.disallowObject")
-      @js.native
-      def disallowObject(): Unit = js.native
+      @scala.inline
+      def disallowInlineStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowInlineStyles")().asInstanceOf[Unit]
+      
+      @scala.inline
+      def disallowObject(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallowObject")().asInstanceOf[Unit]
     }
     
     object framing {
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.framing.allowAll")
+      @JSImport("meteor/browser-policy-common", "BrowserPolicy.framing")
       @js.native
-      def allowAll(): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.framing.disallow")
-      @js.native
-      def disallow(): Unit = js.native
+      @scala.inline
+      def allowAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("allowAll")().asInstanceOf[Unit]
       
-      @JSImport("meteor/browser-policy-common", "BrowserPolicy.framing.restrictToOrigin")
-      @js.native
-      def restrictToOrigin(origin: String): Unit = js.native
+      @scala.inline
+      def disallow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disallow")().asInstanceOf[Unit]
+      
+      @scala.inline
+      def restrictToOrigin(origin: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictToOrigin")(origin.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
   }
 }

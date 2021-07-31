@@ -3,7 +3,6 @@ package typings.angular.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -14,27 +13,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Component definition object (a simplified directive definition object)
   */
-@js.native
 trait IComponentOptions extends StObject {
   
   /**
     * Define DOM attribute binding to component properties. Component properties are always bound to the component
     * controller and not to the scope.
     */
-  var bindings: js.UndefOr[StringDictionary[String]] = js.native
+  var bindings: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Controller constructor function that should be associated with newly created scope or the name of a registered
     * controller if passed as a string. Empty function by default.
     * Use the array form to define dependencies (necessary if strictDi is enabled and you require dependency injection)
     */
-  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.native
+  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
   
   /**
     * An identifier name for a reference to the controller. If present, the controller will be published to its scope under
     * the specified name. If not present, this will default to '$ctrl'.
     */
-  var controllerAs: js.UndefOr[String] = js.native
+  var controllerAs: js.UndefOr[String] = js.undefined
   
   /**
     * Requires the controllers of other directives and binds them to this component's controller.
@@ -42,7 +40,7 @@ trait IComponentOptions extends StObject {
     * Note that the required controllers will not be available during the instantiation of the controller,
     * but they are guaranteed to be available just before the $onInit method is executed!
     */
-  var require: js.UndefOr[StringDictionary[String]] = js.native
+  var require: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * html template as a string or a function that returns an html template as a string which should be used as the
@@ -52,7 +50,7 @@ trait IComponentOptions extends StObject {
     * $attrs - Current attributes object for the element
     * Use the array form to define dependencies (necessary if strictDi is enabled and you require dependency injection)
     */
-  var template: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ _, String]])] = js.native
+  var template: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ js.Any, String]])] = js.undefined
   
   /**
     * Path or function that returns a path to an html template that should be used as the contents of this component.
@@ -61,12 +59,12 @@ trait IComponentOptions extends StObject {
     * $attrs - Current attributes object for the element
     * Use the array form to define dependencies (necessary if strictDi is enabled and you require dependency injection)
     */
-  var templateUrl: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ _, String]])] = js.native
+  var templateUrl: js.UndefOr[String | (Injectable[js.Function1[/* repeated */ js.Any, String]])] = js.undefined
   
   /**
     * Whether transclusion is enabled. Disabled by default.
     */
-  var transclude: js.UndefOr[Boolean | StringDictionary[String]] = js.native
+  var transclude: js.UndefOr[Boolean | StringDictionary[String]] = js.undefined
 }
 object IComponentOptions {
   
@@ -110,28 +108,28 @@ object IComponentOptions {
     def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
     @scala.inline
-    def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ _, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    def setTemplate(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateFunction1(value: /* repeated */ _ => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    def setTemplateFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ _, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    def setTemplateUrl(value: String | (Injectable[js.Function1[/* repeated */ js.Any, String]])): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrlFunction1(value: /* repeated */ _ => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
+    def setTemplateUrlFunction1(value: /* repeated */ js.Any => String): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def setTemplateUrlVarargs(value: (String | (js.Function1[js.Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value :_*))
+    def setTemplateUrlVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "templateUrl", js.Array(value :_*))
     
     @scala.inline
-    def setTemplateVarargs(value: (String | (js.Function1[js.Any, String]))*): Self = StObject.set(x, "template", js.Array(value :_*))
+    def setTemplateVarargs(value: (String | (js.Function1[/* repeated */ js.Any, String]))*): Self = StObject.set(x, "template", js.Array(value :_*))
     
     @scala.inline
     def setTransclude(value: Boolean | StringDictionary[String]): Self = StObject.set(x, "transclude", value.asInstanceOf[js.Any])

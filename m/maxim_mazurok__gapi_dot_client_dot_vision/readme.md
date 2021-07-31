@@ -10,9 +10,9 @@ TypeScript typings for Cloud Vision API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.vision |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 1067 |
+| # downloads        | 1158 |
 | # stars            | 0 |
 
 ## Links

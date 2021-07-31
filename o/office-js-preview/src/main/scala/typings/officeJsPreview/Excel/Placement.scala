@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,19 +21,25 @@ object Placement extends StObject {
     *
     */
   @js.native
-  sealed trait absolute extends Placement
+  sealed trait absolute
+    extends StObject
+       with Placement
   
   /**
     * The object is moved and sized with the cells.
     *
     */
   @js.native
-  sealed trait oneCell extends Placement
+  sealed trait oneCell
+    extends StObject
+       with Placement
   
   /**
     * The object is moved with the cells.
     *
     */
   @js.native
-  sealed trait twoCell extends Placement
+  sealed trait twoCell
+    extends StObject
+       with Placement
 }

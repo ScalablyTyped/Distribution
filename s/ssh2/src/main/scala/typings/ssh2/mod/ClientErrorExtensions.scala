@@ -2,17 +2,15 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientErrorExtensions extends StObject {
   
   /** Additional detail for 'client-ssh' messages. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Indicates 'client-socket' for socket-level errors and 'client-ssh' for SSH disconnection messages. */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
 }
 object ClientErrorExtensions {
   

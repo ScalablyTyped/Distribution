@@ -2,7 +2,6 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait EditorContext extends StObject {
     * 修改样式
     */
   def format(): Unit = js.native
-  def format(name: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def format(name: String): Unit = js.native
   def format(name: String, value: String): Unit = js.native
+  def format(name: Unit, value: String): Unit = js.native
   
   /**
     * 初始化编辑器内容，hmlt和delta同时存在时仅delta生效

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheNodeTypeSpecificValue extends StObject {
   
   /**
     * The cache node type for which this value applies.
     */
-  var CacheNodeType: js.UndefOr[String] = js.native
+  var CacheNodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The value for the cache node type.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object CacheNodeTypeSpecificValue {
   

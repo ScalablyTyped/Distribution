@@ -3,15 +3,14 @@ package typings.webappsecCredentialManagement
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#passwordcredential}
   */
-@js.native
 trait PasswordCredential
-  extends SiteBoundCredential
+  extends StObject
+     with SiteBoundCredential
      with CredentialType {
   
   /**
@@ -22,7 +21,7 @@ trait PasswordCredential
     * mixed into the object to produce the body. The value is {@code null}
     * unless otherwise specified.
     */
-  var additionalData: CredentialBodyType | Null = js.native
+  var additionalData: CredentialBodyType | Null
   
   /**
     * Represents the name which will be used for the ID field when submitting
@@ -31,7 +30,7 @@ trait PasswordCredential
     * whatever the backend service expects.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-idname}
     */
-  var idName: String = js.native
+  var idName: String
   
   /**
     * The plain-text password. Returned for implementation of the 08/04/2017
@@ -39,7 +38,7 @@ trait PasswordCredential
     *
     * @see {@link https://www.w3.org/TR/credential-management-1/#passwordcredential}
     */
-  val password: js.UndefOr[String] = js.native
+  val password: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the name which will be used for the ID field when submitting
@@ -49,17 +48,17 @@ trait PasswordCredential
     *
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-passwordcredential-passwordname}
     */
-  var passwordName: String = js.native
+  var passwordName: String
   
   @JSName("type")
-  val type_PasswordCredential: typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.password = js.native
+  val type_PasswordCredential: typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.password
 }
 object PasswordCredential {
   
   @scala.inline
-  def apply(id: String, idName: String, passwordName: String, `type`: password): PasswordCredential = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], idName = idName.asInstanceOf[js.Any], passwordName = passwordName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: String, idName: String, passwordName: String): PasswordCredential = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], idName = idName.asInstanceOf[js.Any], passwordName = passwordName.asInstanceOf[js.Any], additionalData = null, iconURL = null, name = null)
+    __obj.updateDynamic("type")("password")
     __obj.asInstanceOf[PasswordCredential]
   }
   

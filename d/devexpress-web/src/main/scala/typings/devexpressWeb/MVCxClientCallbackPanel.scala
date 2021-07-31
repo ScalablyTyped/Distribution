@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the CallbackPanel extension.
   */
 @js.native
-trait MVCxClientCallbackPanel extends ASPxClientCallbackPanel {
+trait MVCxClientCallbackPanel
+  extends StObject
+     with ASPxClientCallbackPanel {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

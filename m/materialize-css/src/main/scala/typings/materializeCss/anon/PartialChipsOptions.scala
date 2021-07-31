@@ -5,34 +5,32 @@ import typings.materializeCss.M.Chips
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ChipsOptions> */
-@js.native
 trait PartialChipsOptions extends StObject {
   
-  var autocompleteOptions: js.UndefOr[PartialAutocompleteOption] = js.native
+  var autocompleteOptions: js.UndefOr[PartialAutocompleteOption] = js.undefined
   
-  var data: js.UndefOr[js.Array[ChipData]] = js.native
+  var data: js.UndefOr[js.Array[ChipData]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   var onChipAdd: js.UndefOr[
     js.ThisFunction2[/* this */ Chips, /* element */ Element, /* chip */ Element, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onChipDelete: js.UndefOr[
     js.ThisFunction2[/* this */ Chips, /* element */ Element, /* chip */ Element, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onChipSelect: js.UndefOr[
     js.ThisFunction2[/* this */ Chips, /* element */ Element, /* chip */ Element, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var secondaryPlaceholder: js.UndefOr[String] = js.native
+  var secondaryPlaceholder: js.UndefOr[String] = js.undefined
 }
 object PartialChipsOptions {
   

@@ -2,25 +2,25 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestDefinition extends PropertyDefinition {
+trait RequestDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var auth: js.UndefOr[RequestAuthDefinition] = js.native
+  var auth: js.UndefOr[RequestAuthDefinition] = js.undefined
   
-  var body: js.UndefOr[RequestBodyDefinition] = js.native
+  var body: js.UndefOr[RequestBodyDefinition] = js.undefined
   
-  var certificate: js.UndefOr[CertificateDefinition] = js.native
+  var certificate: js.UndefOr[CertificateDefinition] = js.undefined
   
-  var header: js.UndefOr[js.Array[HeaderDefinition]] = js.native
+  var header: js.UndefOr[js.Array[HeaderDefinition]] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var proxy: js.UndefOr[ProxyConfigDefinition] = js.native
+  var proxy: js.UndefOr[ProxyConfigDefinition] = js.undefined
   
-  var url: String | Url = js.native
+  var url: String | Url
 }
 object RequestDefinition {
   

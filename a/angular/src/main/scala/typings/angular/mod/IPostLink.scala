@@ -2,14 +2,12 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the $postLink lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IPostLink extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait IPostLink extends StObject {
     * different in Angular 1 there is no direct mapping and care should be taken when upgrading.
     */
   @JSName("$postLink")
-  def $postLink(): Unit = js.native
+  def $postLink(): Unit
 }
 object IPostLink {
   

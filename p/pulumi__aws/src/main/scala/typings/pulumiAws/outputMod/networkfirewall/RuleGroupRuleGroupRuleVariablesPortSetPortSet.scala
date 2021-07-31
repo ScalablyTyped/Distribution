@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRuleVariablesPortSetPortSet extends StObject {
   
   /**
     * Set of port ranges.
     */
-  var definitions: js.Array[String] = js.native
+  var definitions: js.Array[String]
 }
 object RuleGroupRuleGroupRuleVariablesPortSetPortSet {
   

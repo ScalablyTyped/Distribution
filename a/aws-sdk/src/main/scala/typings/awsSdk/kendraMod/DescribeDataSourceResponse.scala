@@ -2,71 +2,69 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDataSourceResponse extends StObject {
   
   /**
     * Information that describes where the data source is located and how the data source is configured. The specific information in the description depends on the data source provider.
     */
-  var Configuration: js.UndefOr[DataSourceConfiguration] = js.native
+  var Configuration: js.UndefOr[DataSourceConfiguration] = js.undefined
   
   /**
     * The Unix timestamp of when the data source was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the data source.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * When the Status field value is FAILED, the ErrorMessage field contains a description of the error that caused the data source to fail.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
   
   /**
     * The identifier of the data source.
     */
-  var Id: js.UndefOr[DataSourceId] = js.native
+  var Id: js.UndefOr[DataSourceId] = js.undefined
   
   /**
     * The identifier of the index that contains the data source.
     */
-  var IndexId: js.UndefOr[typings.awsSdk.kendraMod.IndexId] = js.native
+  var IndexId: js.UndefOr[typings.awsSdk.kendraMod.IndexId] = js.undefined
   
   /**
     * The name that you gave the data source when it was created.
     */
-  var Name: js.UndefOr[DataSourceName] = js.native
+  var Name: js.UndefOr[DataSourceName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the role that enables the data source to access its resources.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   
   /**
     * The schedule that Amazon Kendra will update the data source.
     */
-  var Schedule: js.UndefOr[ScanSchedule] = js.native
+  var Schedule: js.UndefOr[ScanSchedule] = js.undefined
   
   /**
     * The current status of the data source. When the status is ACTIVE the data source is ready to use. When the status is FAILED, the ErrorMessage field contains the reason that the data source failed.
     */
-  var Status: js.UndefOr[DataSourceStatus] = js.native
+  var Status: js.UndefOr[DataSourceStatus] = js.undefined
   
   /**
     * The type of the data source.
     */
-  var Type: js.UndefOr[DataSourceType] = js.native
+  var Type: js.UndefOr[DataSourceType] = js.undefined
   
   /**
     * The Unix timestamp of when the data source was last updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object DescribeDataSourceResponse {
   

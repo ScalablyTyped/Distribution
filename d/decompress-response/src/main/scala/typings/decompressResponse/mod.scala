@@ -3,7 +3,6 @@ package typings.decompressResponse
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,10 @@ object mod {
   });
   ```
   */
+  @scala.inline
+  def apply(response: IncomingMessage): IncomingMessage = ^.asInstanceOf[js.Dynamic].apply(response.asInstanceOf[js.Any]).asInstanceOf[IncomingMessage]
+  
   @JSImport("decompress-response", JSImport.Namespace)
   @js.native
-  def apply(response: IncomingMessage): IncomingMessage = js.native
+  val ^ : js.Any = js.native
 }

@@ -2,24 +2,22 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.startInteractionIdentification()
-@js.native
 trait InteractionIdentificationConfig extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var callback: js.Any = js.native
+  var callback: js.Any
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var foregroundColor: String = js.native
+  var foregroundColor: String
   
-  var resetOnInteraction: js.UndefOr[Boolean] = js.native
+  var resetOnInteraction: js.UndefOr[Boolean] = js.undefined
 }
 object InteractionIdentificationConfig {
   

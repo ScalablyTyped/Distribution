@@ -41,19 +41,17 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Coefficients extends StObject {
     
-    var coefficients: js.Array[MathType] = js.native
+    var coefficients: js.Array[MathType]
     
-    var expression: MathNode | String = js.native
+    var expression: MathNode | String
     
-    var variables: js.Array[String] = js.native
+    var variables: js.Array[String]
   }
   object Coefficients {
     
@@ -83,14 +81,13 @@ object anon {
     }
   }
   
-  @js.native
   trait L extends StObject {
     
-    var L: MathArray | Matrix = js.native
+    var L: MathArray | Matrix
     
-    var P: js.Array[Double] = js.native
+    var P: js.Array[Double]
     
-    var U: MathArray | Matrix = js.native
+    var U: MathArray | Matrix
   }
   object L {
     
@@ -124,144 +121,143 @@ object anon {
   }
   
   /* Inlined std.Partial<mathjs.mathjs.MathJsStatic> */
-  @js.native
   trait PartialMathJsStatic extends StObject {
     
-    var AccessorNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var AccessorNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ArrayNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ArrayNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var AssignmentNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var AssignmentNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var BigNumberDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var BigNumberDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var BlockNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var BlockNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ChainDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ChainDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ComplexDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ComplexDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ConditionalNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ConditionalNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ConstantNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ConstantNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var DenseMatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var DenseMatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var EDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var EDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var FibonacciHeapDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var FibonacciHeapDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var FractionDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var FractionDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var FunctionAssignmentNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var FunctionAssignmentNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var FunctionNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var FunctionNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var HelpDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var HelpDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ImmutableDenseMatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ImmutableDenseMatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var IndexDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var IndexDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var IndexNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var IndexNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var Infinity: js.UndefOr[Double] = js.native
+    var Infinity: js.UndefOr[Double] = js.undefined
     
-    var InfinityDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var InfinityDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var LN10: js.UndefOr[Double] = js.native
+    var LN10: js.UndefOr[Double] = js.undefined
     
-    var LN10Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var LN10Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var LN2: js.UndefOr[Double] = js.native
+    var LN2: js.UndefOr[Double] = js.undefined
     
-    var LN2Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var LN2Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var LOG10E: js.UndefOr[Double] = js.native
+    var LOG10E: js.UndefOr[Double] = js.undefined
     
-    var LOG10EDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var LOG10EDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var LOG2E: js.UndefOr[Double] = js.native
+    var LOG2E: js.UndefOr[Double] = js.undefined
     
-    var LOG2EDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var LOG2EDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var MatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var MatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var NaN: js.UndefOr[Double] = js.native
+    var NaN: js.UndefOr[Double] = js.undefined
     
-    var NaNDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var NaNDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var NodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var NodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ObjectNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ObjectNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var OperatorNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var OperatorNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var PIDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var PIDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ParenthesisNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ParenthesisNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ParserDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ParserDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var RangeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var RangeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var RangeNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var RangeNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var RelationalNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var RelationalNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ResultSetDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ResultSetDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var SQRT1_2: js.UndefOr[Double] = js.native
+    var SQRT1_2: js.UndefOr[Double] = js.undefined
     
-    var SQRT1_2Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var SQRT1_2Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var SQRT2: js.UndefOr[Double] = js.native
+    var SQRT2: js.UndefOr[Double] = js.undefined
     
-    var SQRT2Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var SQRT2Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var SpaDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var SpaDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var SparseMatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var SparseMatrixDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var SymbolNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var SymbolNodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var UnitDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var UnitDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var abs: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var abs: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var absDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var absDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var acos: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var acos: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var acosDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var acosDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var acosh: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var acosh: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var acoshDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var acoshDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var acot: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var acot: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var acotDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var acotDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var acoth: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var acoth: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var acothDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var acothDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var acsc: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var acsc: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var acscDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var acscDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var acsch: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var acsch: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var acschDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var acschDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var add: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.native
+    var add: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.undefined
     
-    var addDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var addDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var addScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var addScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var all: js.UndefOr[FactoryFunctionMap] = js.native
+    var all: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var and: js.UndefOr[
         js.Function2[
@@ -269,62 +265,62 @@ object anon {
           /* y */ Double | BigNumber | Complex | Unit | MathArray | Matrix, 
           Boolean | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var andDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var andDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var applyDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var applyDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var applyTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var applyTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var arg: js.UndefOr[js.Function1[/* x */ Double | Complex, Double]] = js.native
+    var arg: js.UndefOr[js.Function1[/* x */ Double | Complex, Double]] = js.undefined
     
-    var argDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var argDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var asec: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var asec: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var asecDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var asecDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var asech: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var asech: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var asechDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var asechDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var asin: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var asin: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var asinDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var asinDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var asinh: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var asinh: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var asinhDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var asinhDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var atan: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var atan: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var atan2: js.UndefOr[js.Function2[/* y */ Double, /* x */ Double, Double]] = js.native
+    var atan2: js.UndefOr[js.Function2[/* y */ Double, /* x */ Double, Double]] = js.undefined
     
-    var atan2Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var atan2Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var atanDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var atanDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var atanh: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var atanh: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var atanhDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var atanhDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var atomicMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var atomicMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var avogadroDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var avogadroDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var bellNumbers: js.UndefOr[js.Function1[/* n */ Double, Double]] = js.native
+    var bellNumbers: js.UndefOr[js.Function1[/* n */ Double, Double]] = js.undefined
     
-    var bellNumbersDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bellNumbersDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var bignumber: js.UndefOr[
         js.Function1[
           /* x */ js.UndefOr[Double | String | Fraction | BigNumber | MathArray | Matrix | Boolean | Null], 
           BigNumber
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var bignumberDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bignumberDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var bitAnd: js.UndefOr[
         js.Function2[
@@ -332,17 +328,17 @@ object anon {
           /* y */ Double | BigNumber | MathArray | Matrix, 
           NoLiteralType[Double | BigNumber | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var bitAndDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bitAndDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var bitNot: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var bitNot: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var bitNotDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bitNotDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var bitOr: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Double]] = js.native
+    var bitOr: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Double]] = js.undefined
     
-    var bitOrDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bitOrDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var bitXor: js.UndefOr[
         js.Function2[
@@ -350,51 +346,51 @@ object anon {
           /* y */ Double | BigNumber | MathArray | Matrix, 
           NoLiteralType[Double | BigNumber | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var bitXorDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bitXorDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var bohrMagnetonDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bohrMagnetonDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var bohrRadiusDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var bohrRadiusDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var boltzmannDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var boltzmannDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var boolean: js.UndefOr[
         js.Function1[
           /* x */ String | Double | Boolean | MathArray | Matrix | Null, 
           Boolean | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var booleanDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var booleanDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var catalan: js.UndefOr[js.Function1[/* n */ Double, Double]] = js.native
+    var catalan: js.UndefOr[js.Function1[/* n */ Double, Double]] = js.undefined
     
-    var catalanDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var catalanDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var cbrt: js.UndefOr[js.Function2[/* x */ Double, /* allRoots */ js.UndefOr[Boolean], Double]] = js.native
+    var cbrt: js.UndefOr[js.Function2[/* x */ Double, /* allRoots */ js.UndefOr[Boolean], Double]] = js.undefined
     
-    var cbrtDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cbrtDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ceil: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var ceil: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var ceilDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ceilDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var chain: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], MathJsChain]] = js.native
+    var chain: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], MathJsChain]] = js.undefined
     
-    var chainDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var chainDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var classicalElectronRadiusDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var classicalElectronRadiusDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var cloneDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cloneDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     @JSName("clone")
-    var clone_FPartialMathJsStatic: js.UndefOr[js.Function1[/* x */ js.Any, _]] = js.native
+    var clone_FPartialMathJsStatic: js.UndefOr[js.Function1[/* x */ js.Any, js.Any]] = js.undefined
     
-    var columnDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var columnDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var columnTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var columnTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var combinations: js.UndefOr[
         js.Function2[
@@ -402,9 +398,9 @@ object anon {
           /* k */ Double | BigNumber, 
           NoLiteralType[Double | BigNumber]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var combinationsDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var combinationsDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var compare: js.UndefOr[
         js.Function2[
@@ -412,13 +408,13 @@ object anon {
           /* y */ MathType | String, 
           Double | BigNumber | Fraction | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var compareDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var compareDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var compareNatural: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.native
+    var compareNatural: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.undefined
     
-    var compareNaturalDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var compareNaturalDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var compareText: js.UndefOr[
         js.Function2[
@@ -426,17 +422,17 @@ object anon {
           /* y */ String | MathArray | Matrix, 
           Double | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var compareTextDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var compareTextDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var compile: js.UndefOr[js.Function1[/* expr */ MathExpression, EvalFunction]] = js.native
+    var compile: js.UndefOr[js.Function1[/* expr */ MathExpression, EvalFunction]] = js.undefined
     
-    var compileDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var compileDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var complex: js.UndefOr[js.Function1[/* arg */ js.UndefOr[Complex | String | PolarCoordinates], Complex]] = js.native
+    var complex: js.UndefOr[js.Function1[/* arg */ js.UndefOr[Complex | String | PolarCoordinates], Complex]] = js.undefined
     
-    var complexDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var complexDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var composition: js.UndefOr[
         js.Function2[
@@ -444,46 +440,46 @@ object anon {
           /* k */ Double | BigNumber, 
           NoLiteralType[Double | BigNumber]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var compositionDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var compositionDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var concat: js.UndefOr[js.Function1[/* repeated */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var concat: js.UndefOr[js.Function1[/* repeated */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var concatDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var concatDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var concatTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var concatTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var conductanceQuantumDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var conductanceQuantumDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var config: js.UndefOr[js.Function1[/* options */ ConfigOptions, ConfigOptions]] = js.native
+    var config: js.UndefOr[js.Function1[/* options */ ConfigOptions, ConfigOptions]] = js.undefined
     
     var conj: js.UndefOr[
         js.Function1[
           /* x */ Double | BigNumber | Complex | MathArray | Matrix, 
           NoLiteralType[Double | BigNumber | Complex | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var conjDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var conjDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var cos: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var cos: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var cosDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cosDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var cosh: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var cosh: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var coshDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var coshDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var cot: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var cot: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var cotDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cotDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var coth: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var coth: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var cothDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cothDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var coulombDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var coulombDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var create: js.UndefOr[
         js.Function2[
@@ -491,7 +487,7 @@ object anon {
           /* config */ ConfigOptions, 
           Partial[MathJsStatic]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var createUnit: js.UndefOr[
         js.Function3[
@@ -500,29 +496,29 @@ object anon {
           /* options */ js.UndefOr[CreateUnitOptions], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var createUnitDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var createUnitDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var cross: js.UndefOr[
         js.Function2[/* x */ MathArray | Matrix, /* y */ MathArray | Matrix, Matrix | MathArray]
-      ] = js.native
+      ] = js.undefined
     
-    var crossDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var crossDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var csc: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var csc: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var cscDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cscDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var csch: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var csch: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var cschDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cschDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var ctransposeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var ctransposeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var cube: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var cube: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var cubeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var cubeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var deepEqual: js.UndefOr[
         js.Function2[
@@ -530,9 +526,9 @@ object anon {
           /* y */ MathType, 
           Double | BigNumber | Fraction | Complex | Unit | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var deepEqualDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var deepEqualDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var derivative: js.UndefOr[
         js.Function3[
@@ -541,21 +537,21 @@ object anon {
           /* options */ js.UndefOr[Simplify], 
           MathNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var derivativeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var derivativeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var det: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, Double]] = js.native
+    var det: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, Double]] = js.undefined
     
-    var detDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var detDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var deuteronMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var deuteronMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var diag: js.UndefOr[
         js.Function2[/* X */ MathArray | Matrix, /* format */ js.UndefOr[String], Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var diagDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var diagDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var distance: js.UndefOr[
         js.Function2[
@@ -563,51 +559,51 @@ object anon {
           /* y */ MathArray | Matrix | js.Object, 
           Double | BigNumber
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var distanceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var distanceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var divide: js.UndefOr[js.Function2[/* x */ Unit, /* y */ Unit, Unit]] = js.native
+    var divide: js.UndefOr[js.Function2[/* x */ Unit, /* y */ Unit, Unit]] = js.undefined
     
-    var divideDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var divideDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var divideScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var divideScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var dot: js.UndefOr[js.Function2[/* x */ MathArray | Matrix, /* y */ MathArray | Matrix, Double]] = js.native
+    var dot: js.UndefOr[js.Function2[/* x */ MathArray | Matrix, /* y */ MathArray | Matrix, Double]] = js.undefined
     
-    var dotDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var dotDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var dotDivide: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.native
+    var dotDivide: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.undefined
     
-    var dotDivideDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var dotDivideDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var dotMultiply: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.native
+    var dotMultiply: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.undefined
     
-    var dotMultiplyDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var dotMultiplyDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var dotPow: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.native
+    var dotPow: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.undefined
     
-    var dotPowDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var dotPowDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var e: js.UndefOr[Double] = js.native
+    var e: js.UndefOr[Double] = js.undefined
     
-    var eDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var eDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var efimovFactorDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var efimovFactorDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var electricConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var electricConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var electronMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var electronMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var elementaryChargeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var elementaryChargeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var equal: js.UndefOr[
         js.Function2[/* x */ MathType | String, /* y */ MathType | String, Boolean | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var equalDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var equalDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var equalScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var equalScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var equalText: js.UndefOr[
         js.Function2[
@@ -615,68 +611,68 @@ object anon {
           /* y */ String | MathArray | Matrix, 
           Double | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var equalTextDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var equalTextDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var erf: js.UndefOr[
         js.Function1[/* x */ Double | MathArray | Matrix, NoLiteralType[Double | MathArray | Matrix]]
-      ] = js.native
+      ] = js.undefined
     
-    var erfDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var erfDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var evalDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var evalDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var evaluate: js.UndefOr[
         js.Function2[
           /* expr */ MathExpression | js.Array[MathExpression] | Matrix, 
           /* scope */ js.UndefOr[js.Object], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var evaluateDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var evaluateDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var exp: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var exp: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var expDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var expDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var expm: js.UndefOr[js.Function1[/* x */ Matrix, Matrix]] = js.native
+    var expm: js.UndefOr[js.Function1[/* x */ Matrix, Matrix]] = js.undefined
     
-    var expm1: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var expm1: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var expm1Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var expm1Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var expmDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var expmDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var expression: js.UndefOr[MathNode] = js.native
+    var expression: js.UndefOr[MathNode] = js.undefined
     
-    var eyeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var eyeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var factorial: js.UndefOr[
         js.Function1[
           /* n */ Double | BigNumber | MathArray | Matrix, 
           NoLiteralType[Double | BigNumber | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var factorialDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var factorialDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var factory: js.UndefOr[
         js.Function4[
           /* name */ String, 
           /* dependencies */ js.Array[MathJsFunctionName], 
-          /* create */ js.Function1[/* injected */ Partial[MathJsStatic], _], 
+          /* create */ js.Function1[/* injected */ Partial[MathJsStatic], js.Any], 
           /* meta */ js.UndefOr[js.Any], 
-          FactoryFunction[_]
+          FactoryFunction[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var falseDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var falseDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var faradayDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var faradayDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var fermiCouplingDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var fermiCouplingDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var filter: js.UndefOr[
         js.Function2[
@@ -689,27 +685,27 @@ object anon {
           ]) | RegExp, 
           Matrix | MathArray
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var filterDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var filterDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var filterTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var filterTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var fineStructureDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var fineStructureDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var firstRadiationDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var firstRadiationDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var fix: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var fix: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var fixDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var fixDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var flatten: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var flatten: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var flattenDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var flattenDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var floor: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var floor: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var floorDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var floorDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var forEach: js.UndefOr[
         js.Function2[
@@ -717,11 +713,11 @@ object anon {
           /* callback */ js.Function3[/* value */ js.Any, /* index */ js.Any, /* matrix */ Matrix | MathArray, scala.Unit], 
           scala.Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var forEachDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var forEachDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var forEachTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var forEachTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var format: js.UndefOr[
         js.Function3[
@@ -730,47 +726,47 @@ object anon {
           /* callback */ js.UndefOr[js.Function1[/* value */ js.Any, String]], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var formatDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var formatDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var fraction: js.UndefOr[
         js.Function1[/* args */ Fraction | MathArray | Matrix, Fraction | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var fractionDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var fractionDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var gamma: js.UndefOr[js.Function1[/* n */ Double | MathArray | Matrix, Double | MathArray | Matrix]] = js.native
+    var gamma: js.UndefOr[js.Function1[/* n */ Double | MathArray | Matrix, Double | MathArray | Matrix]] = js.undefined
     
-    var gammaDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var gammaDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var gasConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var gasConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var gcd: js.UndefOr[js.Function1[/* repeated */ Double, Double]] = js.native
+    var gcd: js.UndefOr[js.Function1[/* repeated */ Double, Double]] = js.undefined
     
-    var gcdDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var gcdDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var getMatrixDataTypeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var getMatrixDataTypeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var gravitationConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var gravitationConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var gravityDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var gravityDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var hartreeEnergyDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var hartreeEnergyDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var hasNumericValueDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var hasNumericValueDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var help: js.UndefOr[js.Function1[/* search */ js.Function0[_], Help]] = js.native
+    var help: js.UndefOr[js.Function1[/* search */ js.Function0[js.Any], Help]] = js.undefined
     
-    var helpDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var helpDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var hypot: js.UndefOr[js.Function1[/* repeated */ Double, Double]] = js.native
+    var hypot: js.UndefOr[js.Function1[/* repeated */ Double, Double]] = js.undefined
     
-    var hypotDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var hypotDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var i: js.UndefOr[Double] = js.native
+    var i: js.UndefOr[Double] = js.undefined
     
-    var iDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var iDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var identity: js.UndefOr[
         js.Function2[
@@ -778,18 +774,18 @@ object anon {
           /* format */ js.UndefOr[String], 
           Matrix | MathArray | Double
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var identityDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var identityDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var im: js.UndefOr[
         js.Function1[
           /* x */ Double | BigNumber | Complex | MathArray | Matrix, 
           Double | BigNumber | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var imDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var imDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var `import`: js.UndefOr[
         js.Function2[
@@ -797,13 +793,13 @@ object anon {
           /* options */ ImportOptions, 
           scala.Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var index: js.UndefOr[js.Function1[/* repeated */ js.Any, Index]] = js.native
+    var index: js.UndefOr[js.Function1[/* repeated */ js.Any, Index]] = js.undefined
     
-    var indexDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var indexDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var indexTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var indexTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var intersect: js.UndefOr[
         js.Function4[
@@ -813,89 +809,89 @@ object anon {
           /* z */ MathArray | Matrix, 
           MathArray
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var intersectDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var intersectDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var inv: js.UndefOr[
         js.Function1[
           /* x */ Double | Complex | MathArray | Matrix, 
           NoLiteralType[Double | Complex | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var invDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var invDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var inverseConductanceQuantumDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var inverseConductanceQuantumDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var isInteger: js.UndefOr[
         js.Function1[/* x */ Double | BigNumber | Fraction | MathArray | Matrix, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var isIntegerDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isIntegerDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var isNaN: js.UndefOr[
         js.Function1[/* x */ Double | BigNumber | Fraction | MathArray | Matrix | Unit, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var isNaNDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isNaNDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var isNegative: js.UndefOr[
         js.Function1[/* x */ Double | BigNumber | Fraction | MathArray | Matrix | Unit, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var isNegativeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isNegativeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var isNumeric: js.UndefOr[js.Function1[/* x */ js.Any, Boolean]] = js.native
+    var isNumeric: js.UndefOr[js.Function1[/* x */ js.Any, Boolean]] = js.undefined
     
-    var isNumericDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isNumericDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var isPositive: js.UndefOr[
         js.Function1[/* x */ Double | BigNumber | Fraction | MathArray | Matrix | Unit, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var isPositiveDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isPositiveDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var isPrime: js.UndefOr[js.Function1[/* x */ Double | BigNumber | MathArray | Matrix, Boolean]] = js.native
+    var isPrime: js.UndefOr[js.Function1[/* x */ Double | BigNumber | MathArray | Matrix, Boolean]] = js.undefined
     
-    var isPrimeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isPrimeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var isZero: js.UndefOr[
         js.Function1[
           /* x */ Double | BigNumber | Fraction | MathArray | Matrix | Unit | Complex, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var isZeroDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var isZeroDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var json: js.UndefOr[MathJsJson] = js.native
+    var json: js.UndefOr[MathJsJson] = js.undefined
     
-    var kldivergence: js.UndefOr[js.Function2[/* q */ MathArray | Matrix, /* p */ MathArray | Matrix, Double]] = js.native
+    var kldivergence: js.UndefOr[js.Function2[/* q */ MathArray | Matrix, /* p */ MathArray | Matrix, Double]] = js.undefined
     
-    var kldivergenceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var kldivergenceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var klitzingDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var klitzingDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var kron: js.UndefOr[js.Function2[/* x */ Matrix | MathArray, /* y */ Matrix | MathArray, Matrix]] = js.native
+    var kron: js.UndefOr[js.Function2[/* x */ Matrix | MathArray, /* y */ Matrix | MathArray, Matrix]] = js.undefined
     
-    var kronDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var kronDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var larger: js.UndefOr[
         js.Function2[/* x */ MathType | String, /* y */ MathType | String, Boolean | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var largerDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var largerDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var largerEq: js.UndefOr[
         js.Function2[/* x */ MathType | String, /* y */ MathType | String, Boolean | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var largerEqDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var largerEqDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var lcm: js.UndefOr[js.Function2[/* a */ Double, /* b */ Double, Double]] = js.native
+    var lcm: js.UndefOr[js.Function2[/* a */ Double, /* b */ Double, Double]] = js.undefined
     
-    var lcmDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var lcmDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var leftShift: js.UndefOr[
         js.Function2[
@@ -903,9 +899,9 @@ object anon {
           /* y */ Double | BigNumber, 
           NoLiteralType[Double | BigNumber | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var leftShiftDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var leftShiftDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var log: js.UndefOr[
         js.Function2[
@@ -913,35 +909,35 @@ object anon {
           /* base */ js.UndefOr[Double | BigNumber | Complex], 
           NoLiteralType[Double | BigNumber | Complex | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var log10: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var log10: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var log10Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var log10Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var log1p: js.UndefOr[
         js.Function2[/* x */ Double, /* base */ js.UndefOr[Double | BigNumber | Complex], Double]
-      ] = js.native
+      ] = js.undefined
     
-    var log1pDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var log1pDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var log2: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var log2: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var log2Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var log2Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var logDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var logDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var loschmidtDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var loschmidtDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var lsolve: js.UndefOr[
         js.Function2[/* L */ Matrix | MathArray, /* b */ Matrix | MathArray, Matrix | MathArray]
-      ] = js.native
+      ] = js.undefined
     
-    var lsolveDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var lsolveDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var lup: js.UndefOr[js.Function1[/* A */ js.UndefOr[Matrix | MathArray], L]] = js.native
+    var lup: js.UndefOr[js.Function1[/* A */ js.UndefOr[Matrix | MathArray], L]] = js.undefined
     
-    var lupDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var lupDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var lusolve: js.UndefOr[
         js.Function4[
@@ -951,17 +947,17 @@ object anon {
           /* threshold */ js.UndefOr[Double], 
           Matrix | MathArray
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var lusolveDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var lusolveDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var mad: js.UndefOr[js.Function1[/* array */ MathArray | Matrix, _]] = js.native
+    var mad: js.UndefOr[js.Function1[/* array */ MathArray | Matrix, js.Any]] = js.undefined
     
-    var madDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var madDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var magneticConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var magneticConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var magneticFluxQuantumDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var magneticFluxQuantumDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var map: js.UndefOr[
         js.Function2[
@@ -974,37 +970,37 @@ object anon {
           ], 
           Matrix | MathArray
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var mapDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var mapDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var mapTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var mapTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var matrix: js.UndefOr[js.Function1[/* format */ js.UndefOr[sparse | dense], Matrix]] = js.native
+    var matrix: js.UndefOr[js.Function1[/* format */ js.UndefOr[sparse | dense], Matrix]] = js.undefined
     
-    var matrixDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var matrixDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var max: js.UndefOr[js.Function1[/* repeated */ MathType, _]] = js.native
+    var max: js.UndefOr[js.Function1[/* repeated */ MathType, js.Any]] = js.undefined
     
-    var maxDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var maxDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var maxTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var maxTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var mean: js.UndefOr[js.Function1[/* repeated */ MathType, _]] = js.native
+    var mean: js.UndefOr[js.Function1[/* repeated */ MathType, js.Any]] = js.undefined
     
-    var meanDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var meanDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var meanTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var meanTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var median: js.UndefOr[js.Function1[/* repeated */ MathType, _]] = js.native
+    var median: js.UndefOr[js.Function1[/* repeated */ MathType, js.Any]] = js.undefined
     
-    var medianDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var medianDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var min: js.UndefOr[js.Function1[/* repeated */ MathType, _]] = js.native
+    var min: js.UndefOr[js.Function1[/* repeated */ MathType, js.Any]] = js.undefined
     
-    var minDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var minDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var minTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var minTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var mod: js.UndefOr[
         js.Function2[
@@ -1012,35 +1008,35 @@ object anon {
           /* y */ Double | BigNumber | Fraction | MathArray | Matrix, 
           NoLiteralType[Double | BigNumber | Fraction | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var modDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var modDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var mode: js.UndefOr[js.Function1[/* repeated */ MathType, _]] = js.native
+    var mode: js.UndefOr[js.Function1[/* repeated */ MathType, js.Any]] = js.undefined
     
-    var modeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var modeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var molarMassC12Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var molarMassC12Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var molarMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var molarMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var molarPlanckConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var molarPlanckConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var molarVolumeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var molarVolumeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var multinomial: js.UndefOr[
         js.Function1[/* a */ js.Array[Double | BigNumber], NoLiteralType[Double | BigNumber]]
-      ] = js.native
+      ] = js.undefined
     
-    var multinomialDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var multinomialDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var multiply: js.UndefOr[js.Function2[/* x */ Matrix | MathArray, /* y */ MathType, Matrix | MathArray]] = js.native
+    var multiply: js.UndefOr[js.Function2[/* x */ Matrix | MathArray, /* y */ MathType, Matrix | MathArray]] = js.undefined
     
-    var multiplyDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var multiplyDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var multiplyScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var multiplyScalarDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var neutronMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var neutronMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var norm: js.UndefOr[
         js.Function2[
@@ -1048,18 +1044,18 @@ object anon {
           /* p */ js.UndefOr[Double | BigNumber | String], 
           Double | BigNumber
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var normDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var normDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var not: js.UndefOr[
         js.Function1[
           /* x */ Double | BigNumber | Complex | Unit | MathArray | Matrix, 
           Boolean | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var notDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var notDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var nthRoot: js.UndefOr[
         js.Function2[
@@ -1067,17 +1063,17 @@ object anon {
           /* root */ js.UndefOr[Double | BigNumber], 
           Double | Complex | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var nthRootDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var nthRootDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var nthRootsDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var nthRootsDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var nuclearMagnetonDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var nuclearMagnetonDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var `null`: js.UndefOr[Double] = js.native
+    var `null`: js.UndefOr[Double] = js.undefined
     
-    var nullDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var nullDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var number: js.UndefOr[
         js.Function1[
@@ -1086,11 +1082,11 @@ object anon {
           ], 
           Double | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var numberDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var numberDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var numericDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var numericDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var ones: js.UndefOr[
         js.Function2[
@@ -1098,9 +1094,9 @@ object anon {
           /* format */ js.UndefOr[String], 
           MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onesDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var onesDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var or: js.UndefOr[
         js.Function2[
@@ -1108,30 +1104,30 @@ object anon {
           /* y */ Double | BigNumber | Complex | Unit | MathArray | Matrix, 
           Boolean | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var orDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var orDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var parse: js.UndefOr[
         js.Function2[/* expr */ MathExpression, /* options */ js.UndefOr[js.Any], MathNode]
-      ] = js.native
+      ] = js.undefined
     
-    var parseDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var parseDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var parser: js.UndefOr[js.Function0[Parser]] = js.native
+    var parser: js.UndefOr[js.Function0[Parser]] = js.undefined
     
-    var parserDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var parserDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var partitionSelect: js.UndefOr[
         js.Function3[
           /* x */ MathArray | Matrix, 
           /* k */ Double, 
           /* compare */ js.UndefOr[asc | desc | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var partitionSelectDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var partitionSelectDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var permutations: js.UndefOr[
         js.Function2[
@@ -1139,17 +1135,17 @@ object anon {
           /* k */ js.UndefOr[Double | BigNumber], 
           NoLiteralType[Double | BigNumber]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var permutationsDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var permutationsDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var phi: js.UndefOr[Double] = js.native
+    var phi: js.UndefOr[Double] = js.undefined
     
-    var phiDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var phiDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var pi: js.UndefOr[Double] = js.native
+    var pi: js.UndefOr[Double] = js.undefined
     
-    var piDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var piDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var pickRandom: js.UndefOr[
         js.Function3[
@@ -1158,25 +1154,25 @@ object anon {
           /* weights */ js.UndefOr[js.Array[Double]], 
           Double | js.Array[Double]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pickRandomDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var pickRandomDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var planckChargeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var planckChargeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var planckConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var planckConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var planckLengthDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var planckLengthDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var planckMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var planckMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var planckTemperatureDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var planckTemperatureDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var planckTimeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var planckTimeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var pow: js.UndefOr[js.Function2[/* x */ MathType, /* y */ Double | BigNumber | Complex, MathType]] = js.native
+    var pow: js.UndefOr[js.Function2[/* x */ MathType, /* y */ Double | BigNumber | Complex, MathType]] = js.undefined
     
-    var powDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var powDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var print: js.UndefOr[
         js.Function4[
@@ -1186,19 +1182,19 @@ object anon {
           /* options */ js.UndefOr[Double | js.Object], 
           scala.Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var printDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var printDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var prod: js.UndefOr[js.Function1[/* repeated */ MathType, _]] = js.native
+    var prod: js.UndefOr[js.Function1[/* repeated */ MathType, js.Any]] = js.undefined
     
-    var prodDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var prodDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var protonMassDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var protonMassDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var qr: js.UndefOr[js.Function1[/* A */ Matrix | MathArray, Q]] = js.native
+    var qr: js.UndefOr[js.Function1[/* A */ Matrix | MathArray, Q]] = js.undefined
     
-    var qrDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var qrDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var quantileSeq: js.UndefOr[
         js.Function3[
@@ -1207,25 +1203,25 @@ object anon {
           /* sorted */ js.UndefOr[Boolean], 
           Double | BigNumber | Unit | MathArray
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var quantileSeqDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var quantileSeqDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var quantumOfCirculationDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var quantumOfCirculationDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var random: js.UndefOr[js.Function2[/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], Double]] = js.native
+    var random: js.UndefOr[js.Function2[/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], Double]] = js.undefined
     
-    var randomDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var randomDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var randomInt: js.UndefOr[js.Function2[/* min */ Double, /* max */ js.UndefOr[Double], Double]] = js.native
+    var randomInt: js.UndefOr[js.Function2[/* min */ Double, /* max */ js.UndefOr[Double], Double]] = js.undefined
     
-    var randomIntDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var randomIntDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var range: js.UndefOr[js.Function2[/* str */ String, /* includeEnd */ js.UndefOr[Boolean], Matrix]] = js.native
+    var range: js.UndefOr[js.Function2[/* str */ String, /* includeEnd */ js.UndefOr[Boolean], Matrix]] = js.undefined
     
-    var rangeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rangeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var rangeTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rangeTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var rationalize: js.UndefOr[
         js.Function3[
@@ -1234,26 +1230,26 @@ object anon {
           /* detailed */ js.UndefOr[`true`], 
           Coefficients
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rationalizeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rationalizeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var re: js.UndefOr[
         js.Function1[
           /* x */ Double | BigNumber | Complex | MathArray | Matrix, 
           Double | BigNumber | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var reDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var reDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var reducedPlanckConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var reducedPlanckConstantDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var reshape: js.UndefOr[
         js.Function2[/* x */ MathArray | Matrix, /* sizes */ js.Array[Double], MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var reshapeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var reshapeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var resize: js.UndefOr[
         js.Function3[
@@ -1262,11 +1258,11 @@ object anon {
           /* defaultValue */ js.UndefOr[Double | String], 
           MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var resizeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var resizeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var reviverDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var reviverDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var rightArithShift: js.UndefOr[
         js.Function2[
@@ -1274,9 +1270,9 @@ object anon {
           /* y */ Double | BigNumber, 
           NoLiteralType[Double | BigNumber | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rightArithShiftDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rightArithShiftDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var rightLogShift: js.UndefOr[
         js.Function2[
@@ -1284,9 +1280,9 @@ object anon {
           /* y */ Double, 
           NoLiteralType[Double | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rightLogShiftDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rightLogShiftDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var round: js.UndefOr[
         js.Function2[
@@ -1294,83 +1290,83 @@ object anon {
           /* n */ js.UndefOr[Double | BigNumber | MathArray], 
           NoLiteralType[Double | BigNumber | Fraction | Complex | MathArray | Matrix]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var roundDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var roundDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var rowDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rowDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var rowTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rowTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var rydbergDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var rydbergDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sackurTetrodeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sackurTetrodeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sec: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var sec: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var secDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var secDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sech: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var sech: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var sechDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sechDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var secondRadiationDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var secondRadiationDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var setCartesian: js.UndefOr[
         js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var setCartesianDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setCartesianDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var setDifference: js.UndefOr[
         js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var setDifferenceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setDifferenceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var setDistinct: js.UndefOr[js.Function1[/* a */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var setDistinct: js.UndefOr[js.Function1[/* a */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var setDistinctDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setDistinctDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var setIntersect: js.UndefOr[
         js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var setIntersectDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setIntersectDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var setIsSubset: js.UndefOr[js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, Boolean]] = js.native
+    var setIsSubset: js.UndefOr[js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, Boolean]] = js.undefined
     
-    var setIsSubsetDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setIsSubsetDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var setMultiplicity: js.UndefOr[
         js.Function2[/* e */ Double | BigNumber | Fraction | Complex, /* a */ MathArray | Matrix, Double]
-      ] = js.native
+      ] = js.undefined
     
-    var setMultiplicityDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setMultiplicityDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var setPowerset: js.UndefOr[js.Function1[/* a */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var setPowerset: js.UndefOr[js.Function1[/* a */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var setPowersetDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setPowersetDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var setSize: js.UndefOr[js.Function1[/* a */ MathArray | Matrix, Double]] = js.native
+    var setSize: js.UndefOr[js.Function1[/* a */ MathArray | Matrix, Double]] = js.undefined
     
-    var setSizeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setSizeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var setSymDifference: js.UndefOr[
         js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var setSymDifferenceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setSymDifferenceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var setUnion: js.UndefOr[
         js.Function2[/* a1 */ MathArray | Matrix, /* a2 */ MathArray | Matrix, MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var setUnionDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var setUnionDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sign: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var sign: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var signDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var signDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var simplify: js.UndefOr[
         js.Function3[
@@ -1379,44 +1375,44 @@ object anon {
           /* scope */ js.UndefOr[js.Object], 
           MathNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var simplifyDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var simplifyDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sin: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var sin: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var sinDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sinDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sinh: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var sinh: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var sinhDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sinhDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var size: js.UndefOr[
         js.Function1[
           /* x */ Boolean | Double | Complex | Unit | String | MathArray | Matrix, 
           MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var sizeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sizeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var slu: js.UndefOr[
         js.Function3[/* A */ Matrix, /* order */ Double, /* threshold */ Double, js.Object]
-      ] = js.native
+      ] = js.undefined
     
-    var sluDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sluDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var smaller: js.UndefOr[
         js.Function2[/* x */ MathType | String, /* y */ MathType | String, Boolean | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var smallerDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var smallerDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var smallerEq: js.UndefOr[
         js.Function2[/* x */ MathType | String, /* y */ MathType | String, Boolean | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var smallerEqDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var smallerEqDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var sort: js.UndefOr[
         js.Function2[
@@ -1424,37 +1420,37 @@ object anon {
           /* compare */ (js.Function2[/* a */ js.Any, /* b */ js.Any, Double]) | asc | desc | natural, 
           Matrix | MathArray
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var sortDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sortDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var sparse: js.UndefOr[
         js.Function2[/* data */ js.UndefOr[MathArray | Matrix], /* dataType */ js.UndefOr[String], Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var sparseDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sparseDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var speedOfLightDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var speedOfLightDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var splitUnit: js.UndefOr[js.Function2[/* unit */ Unit, /* parts */ js.Array[Unit], js.Array[Unit]]] = js.native
+    var splitUnit: js.UndefOr[js.Function2[/* unit */ Unit, /* parts */ js.Array[Unit], js.Array[Unit]]] = js.undefined
     
-    var splitUnitDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var splitUnitDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sqrt: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var sqrt: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var sqrtDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sqrtDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sqrtm: js.UndefOr[js.Function1[/* A */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var sqrtm: js.UndefOr[js.Function1[/* A */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var sqrtmDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sqrtmDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var square: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var square: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var squareDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var squareDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var squeeze: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var squeeze: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var squeezeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var squeezeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var std: js.UndefOr[
         js.Function2[
@@ -1462,13 +1458,13 @@ object anon {
           /* normalization */ js.UndefOr[unbiased | uncorrected | biased], 
           Double
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var stdDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var stdDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var stdTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var stdTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var stefanBoltzmannDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var stefanBoltzmannDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var stirlingS2: js.UndefOr[
         js.Function2[
@@ -1476,13 +1472,13 @@ object anon {
           /* k */ Double | BigNumber, 
           NoLiteralType[Double | BigNumber]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var stirlingS2Dependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var stirlingS2Dependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var string: js.UndefOr[js.Function1[/* value */ MathType | Null, String | MathArray | Matrix]] = js.native
+    var string: js.UndefOr[js.Function1[/* value */ MathType | Null, String | MathArray | Matrix]] = js.undefined
     
-    var stringDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var stringDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var subset: js.UndefOr[
         js.Function4[
@@ -1492,35 +1488,35 @@ object anon {
           /* defaultValue */ js.UndefOr[js.Any], 
           MathArray | Matrix | String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var subsetDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var subsetDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var subsetTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var subsetTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var subtract: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.native
+    var subtract: js.UndefOr[js.Function2[/* x */ MathType, /* y */ MathType, MathType]] = js.undefined
     
-    var subtractDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var subtractDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sum: js.UndefOr[js.Function1[/* repeated */ Double | BigNumber | Fraction, _]] = js.native
+    var sum: js.UndefOr[js.Function1[/* repeated */ Double | BigNumber | Fraction, js.Any]] = js.undefined
     
-    var sumDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sumDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var sumTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var sumTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var tan: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var tan: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var tanDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var tanDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var tanh: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.native
+    var tanh: js.UndefOr[js.Function1[/* x */ Double | Unit, Double]] = js.undefined
     
-    var tanhDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var tanhDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var tau: js.UndefOr[Double] = js.native
+    var tau: js.UndefOr[Double] = js.undefined
     
-    var tauDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var tauDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var thomsonCrossSectionDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var thomsonCrossSectionDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var to: js.UndefOr[
         js.Function2[
@@ -1528,83 +1524,83 @@ object anon {
           /* unit */ Unit | String, 
           Unit | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var toDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var toDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var trace: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, Double]] = js.native
+    var trace: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, Double]] = js.undefined
     
-    var traceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var traceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var transpose: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, MathArray | Matrix]] = js.native
+    var transpose: js.UndefOr[js.Function1[/* x */ MathArray | Matrix, MathArray | Matrix]] = js.undefined
     
-    var transposeDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var transposeDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var trueDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var trueDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var typeOf: js.UndefOr[js.Function1[/* x */ js.Any, String]] = js.native
+    var typeOf: js.UndefOr[js.Function1[/* x */ js.Any, String]] = js.undefined
     
-    var typeOfDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var typeOfDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var typed: js.UndefOr[
         js.Function2[
           /* name */ String, 
-          /* signatures */ Record[String, js.Function1[/* repeated */ _, _]], 
-          js.Function1[/* repeated */ _, _]
+          /* signatures */ Record[String, js.Function1[/* repeated */ js.Any, js.Any]], 
+          js.Function1[/* repeated */ js.Any, js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var typedDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var typedDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var typeofDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var typeofDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var unaryMinus: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var unaryMinus: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var unaryMinusDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var unaryMinusDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var unaryPlus: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.native
+    var unaryPlus: js.UndefOr[js.Function1[/* x */ Double, Double]] = js.undefined
     
-    var unaryPlusDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var unaryPlusDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var unequal: js.UndefOr[
         js.Function2[/* x */ MathType | String, /* y */ MathType | String, Boolean | MathArray | Matrix]
-      ] = js.native
+      ] = js.undefined
     
-    var unequalDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var unequalDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var uninitialized: js.UndefOr[js.Any] = js.native
+    var uninitialized: js.UndefOr[js.Any] = js.undefined
     
-    var unit: js.UndefOr[js.Function1[/* unit */ String, Unit]] = js.native
+    var unit: js.UndefOr[js.Function1[/* unit */ String, Unit]] = js.undefined
     
-    var unitDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var unitDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var usolve: js.UndefOr[
         js.Function2[/* U */ Matrix | MathArray, /* b */ Matrix | MathArray, Matrix | MathArray]
-      ] = js.native
+      ] = js.undefined
     
-    var usolveDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var usolveDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var vacuumImpedanceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var vacuumImpedanceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var varDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var varDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var variance: js.UndefOr[js.Function1[/* repeated */ Double | BigNumber | Fraction, _]] = js.native
+    var variance: js.UndefOr[js.Function1[/* repeated */ Double | BigNumber | Fraction, js.Any]] = js.undefined
     
-    var varianceDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var varianceDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var varianceTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var varianceTransformDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var versionDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var versionDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var weakMixingAngleDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var weakMixingAngleDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var wienDisplacementDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var wienDisplacementDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
-    var xgcd: js.UndefOr[js.Function2[/* a */ Double | BigNumber, /* b */ Double | BigNumber, MathArray]] = js.native
+    var xgcd: js.UndefOr[js.Function2[/* a */ Double | BigNumber, /* b */ Double | BigNumber, MathArray]] = js.undefined
     
-    var xgcdDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var xgcdDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var xor: js.UndefOr[
         js.Function2[
@@ -1612,9 +1608,9 @@ object anon {
           /* y */ Double | BigNumber | Complex | Unit | MathArray | Matrix, 
           Boolean | MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var xorDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var xorDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
     
     var zeros: js.UndefOr[
         js.Function2[
@@ -1622,9 +1618,9 @@ object anon {
           /* format */ js.UndefOr[String], 
           MathArray | Matrix
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var zerosDependencies: js.UndefOr[FactoryFunctionMap] = js.native
+    var zerosDependencies: js.UndefOr[FactoryFunctionMap] = js.undefined
   }
   object PartialMathJsStatic {
     
@@ -2074,7 +2070,7 @@ object anon {
       def setCloneDependenciesUndefined: Self = StObject.set(x, "cloneDependencies", js.undefined)
       
       @scala.inline
-      def setClone_(value: /* x */ js.Any => _): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+      def setClone_(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
       
       @scala.inline
       def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
@@ -2599,7 +2595,7 @@ object anon {
       
       @scala.inline
       def setEvaluate(
-        value: (/* expr */ MathExpression | js.Array[MathExpression] | Matrix, /* scope */ js.UndefOr[js.Object]) => _
+        value: (/* expr */ MathExpression | js.Array[MathExpression] | Matrix, /* scope */ js.UndefOr[js.Object]) => js.Any
       ): Self = StObject.set(x, "evaluate", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -2675,7 +2671,7 @@ object anon {
       
       @scala.inline
       def setFactory(
-        value: (/* name */ String, /* dependencies */ js.Array[MathJsFunctionName], /* create */ js.Function1[/* injected */ Partial[MathJsStatic], _], /* meta */ js.UndefOr[js.Any]) => FactoryFunction[_]
+        value: (/* name */ String, /* dependencies */ js.Array[MathJsFunctionName], /* create */ js.Function1[/* injected */ Partial[MathJsStatic], js.Any], /* meta */ js.UndefOr[js.Any]) => FactoryFunction[js.Any]
       ): Self = StObject.set(x, "factory", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -2897,7 +2893,7 @@ object anon {
       def setHasNumericValueDependenciesUndefined: Self = StObject.set(x, "hasNumericValueDependencies", js.undefined)
       
       @scala.inline
-      def setHelp(value: /* search */ js.Function0[_] => Help): Self = StObject.set(x, "help", js.Any.fromFunction1(value))
+      def setHelp(value: /* search */ js.Function0[js.Any] => Help): Self = StObject.set(x, "help", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHelpDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "HelpDependencies", value.asInstanceOf[js.Any])
@@ -3357,7 +3353,7 @@ object anon {
       def setLusolveUndefined: Self = StObject.set(x, "lusolve", js.undefined)
       
       @scala.inline
-      def setMad(value: /* array */ MathArray | Matrix => _): Self = StObject.set(x, "mad", js.Any.fromFunction1(value))
+      def setMad(value: /* array */ MathArray | Matrix => js.Any): Self = StObject.set(x, "mad", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMadDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "madDependencies", value.asInstanceOf[js.Any])
@@ -3418,7 +3414,7 @@ object anon {
       def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
       
       @scala.inline
-      def setMax(value: /* repeated */ MathType => _): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+      def setMax(value: /* repeated */ MathType => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMaxDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "maxDependencies", value.asInstanceOf[js.Any])
@@ -3436,7 +3432,7 @@ object anon {
       def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
       @scala.inline
-      def setMean(value: /* repeated */ MathType => _): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
+      def setMean(value: /* repeated */ MathType => js.Any): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMeanDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "meanDependencies", value.asInstanceOf[js.Any])
@@ -3454,7 +3450,7 @@ object anon {
       def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
       
       @scala.inline
-      def setMedian(value: /* repeated */ MathType => _): Self = StObject.set(x, "median", js.Any.fromFunction1(value))
+      def setMedian(value: /* repeated */ MathType => js.Any): Self = StObject.set(x, "median", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMedianDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "medianDependencies", value.asInstanceOf[js.Any])
@@ -3466,7 +3462,7 @@ object anon {
       def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
       
       @scala.inline
-      def setMin(value: /* repeated */ MathType => _): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+      def setMin(value: /* repeated */ MathType => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMinDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "minDependencies", value.asInstanceOf[js.Any])
@@ -3498,7 +3494,7 @@ object anon {
       def setModUndefined: Self = StObject.set(x, "mod", js.undefined)
       
       @scala.inline
-      def setMode(value: /* repeated */ MathType => _): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
+      def setMode(value: /* repeated */ MathType => js.Any): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
       
       @scala.inline
       def setModeDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "modeDependencies", value.asInstanceOf[js.Any])
@@ -3753,7 +3749,7 @@ object anon {
       
       @scala.inline
       def setPartitionSelect(
-        value: (/* x */ MathArray | Matrix, /* k */ Double, /* compare */ js.UndefOr[asc | desc | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])]) => _
+        value: (/* x */ MathArray | Matrix, /* k */ Double, /* compare */ js.UndefOr[asc | desc | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])]) => js.Any
       ): Self = StObject.set(x, "partitionSelect", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -3874,7 +3870,7 @@ object anon {
       def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
       
       @scala.inline
-      def setProd(value: /* repeated */ MathType => _): Self = StObject.set(x, "prod", js.Any.fromFunction1(value))
+      def setProd(value: /* repeated */ MathType => js.Any): Self = StObject.set(x, "prod", js.Any.fromFunction1(value))
       
       @scala.inline
       def setProdDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "prodDependencies", value.asInstanceOf[js.Any])
@@ -4578,7 +4574,7 @@ object anon {
       def setSubtractUndefined: Self = StObject.set(x, "subtract", js.undefined)
       
       @scala.inline
-      def setSum(value: /* repeated */ Double | BigNumber | Fraction => _): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
+      def setSum(value: /* repeated */ Double | BigNumber | Fraction => js.Any): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSumDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "sumDependencies", value.asInstanceOf[js.Any])
@@ -4699,7 +4695,7 @@ object anon {
       
       @scala.inline
       def setTyped(
-        value: (/* name */ String, /* signatures */ Record[String, js.Function1[/* repeated */ _, _]]) => js.Function1[/* repeated */ _, _]
+        value: (/* name */ String, /* signatures */ Record[String, js.Function1[/* repeated */ js.Any, js.Any]]) => js.Function1[/* repeated */ js.Any, js.Any]
       ): Self = StObject.set(x, "typed", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -4790,7 +4786,7 @@ object anon {
       def setVarDependenciesUndefined: Self = StObject.set(x, "varDependencies", js.undefined)
       
       @scala.inline
-      def setVariance(value: /* repeated */ Double | BigNumber | Fraction => _): Self = StObject.set(x, "variance", js.Any.fromFunction1(value))
+      def setVariance(value: /* repeated */ Double | BigNumber | Fraction => js.Any): Self = StObject.set(x, "variance", js.Any.fromFunction1(value))
       
       @scala.inline
       def setVarianceDependencies(value: FactoryFunctionMap): Self = StObject.set(x, "varianceDependencies", value.asInstanceOf[js.Any])
@@ -4873,12 +4869,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Q extends StObject {
     
-    var Q: MathArray | Matrix = js.native
+    var Q: MathArray | Matrix
     
-    var R: MathArray | Matrix = js.native
+    var R: MathArray | Matrix
   }
   object Q {
     
@@ -4905,12 +4900,11 @@ object anon {
     }
   }
   
-  @js.native
   trait R extends StObject {
     
-    var l: String = js.native
+    var l: String
     
-    var r: String = js.native
+    var r: String
   }
   object R {
     
@@ -4931,10 +4925,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Simplify extends StObject {
     
-    var simplify: Boolean = js.native
+    var simplify: Boolean
   }
   object Simplify {
     

@@ -3,7 +3,6 @@ package typings.naverWhale.whale
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -50,7 +49,6 @@ object types {
   
   type ChromeSettingChangedEvent = Event[typings.chrome.chrome.types.DetailsCallback]
   
-  @js.native
   trait ChromeSettingClearDetails extends StObject {
     
     /**
@@ -61,7 +59,7 @@ object types {
       * • incognito_persistent: setting for the incognito profile that survives browser restarts (overrides regular preferences),
       * • incognito_session_only: setting for the incognito profile that can only be set during an incognito session and is deleted when the incognito session ends (overrides regular and incognito_persistent preferences).
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object ChromeSettingClearDetails {
     
@@ -82,11 +80,10 @@ object types {
     }
   }
   
-  @js.native
   trait ChromeSettingGetDetails extends StObject {
     
     /** Optional. Whether to return the value that applies to the incognito session (default false). */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
   }
   object ChromeSettingGetDetails {
     
@@ -107,7 +104,6 @@ object types {
     }
   }
   
-  @js.native
   trait ChromeSettingGetResultDetails extends StObject {
     
     /**
@@ -115,7 +111,7 @@ object types {
       * Whether the effective value is specific to the incognito session.
       * This property will only be present if the incognito property in the details parameter of get() was true.
       */
-    var incognitoSpecific: js.UndefOr[Boolean] = js.native
+    var incognitoSpecific: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One of
@@ -124,10 +120,10 @@ object types {
       * • controllable_by_this_extension: can be controlled by this extension
       * • controlled_by_this_extension: controlled by this extension
       */
-    var levelOfControl: String = js.native
+    var levelOfControl: String
     
     /** The value of the setting. */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ChromeSettingGetResultDetails {
     
@@ -154,15 +150,15 @@ object types {
     }
   }
   
-  @js.native
   trait ChromeSettingSetDetails
-    extends typings.chrome.chrome.types.ChromeSettingClearDetails {
+    extends StObject
+       with typings.chrome.chrome.types.ChromeSettingClearDetails {
     
     /**
       * The value of the setting.
       * Note that every setting has a specific value type, which is described together with the setting. An extension should not set a value of a different type.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ChromeSettingSetDetails {
     

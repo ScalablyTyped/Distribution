@@ -2,33 +2,28 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayPadMod {
   
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: js.Any, padSize: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: js.Any, padSize: js.Any, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: js.Any, padSize: Unit, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: Unit, padSize: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: Unit, padSize: js.Any, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: Unit, padSize: Unit, padValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padSize.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
   @js.native
-  def apply(): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.UndefOr[scala.Nothing], padSize: js.UndefOr[scala.Nothing], padValue: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.UndefOr[scala.Nothing], padSize: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.UndefOr[scala.Nothing], padSize: js.Any, padValue: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any, padSize: js.UndefOr[scala.Nothing], padValue: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any, padSize: js.Any): js.Any = js.native
-  @JSImport("locutus/php/array/array_pad", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Any, padSize: js.Any, padValue: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
 }

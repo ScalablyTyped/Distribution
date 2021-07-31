@@ -3,48 +3,46 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Dataproc job for running Apache Spark SQL
   * (http://spark.apache.org/sql/) queries.
   */
-@js.native
 trait SchemaSparkSqlJob extends StObject {
   
   /**
     * Optional. HCFS URIs of jar files to be added to the Spark CLASSPATH.
     */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The runtime log config for job execution.
     */
-  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.undefined
   
   /**
     * Optional. A mapping of property names to values, used to configure Spark
     * SQL&#39;s SparkConf. Properties that conflict with values set by the
     * Cloud Dataproc API may be overwritten.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HCFS URI of the script that contains SQL queries.
     */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /**
     * A list of queries.
     */
-  var queryList: js.UndefOr[SchemaQueryList] = js.native
+  var queryList: js.UndefOr[SchemaQueryList] = js.undefined
   
   /**
     * Optional. Mapping of query variable names to values (equivalent to the
     * Spark SQL command: SET name=&quot;value&quot;;).
     */
-  var scriptVariables: js.UndefOr[StringDictionary[String]] = js.native
+  var scriptVariables: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaSparkSqlJob {
   

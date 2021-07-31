@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseLayerViewGL2D extends LayerView {
+trait BaseLayerViewGL2D
+  extends StObject
+     with LayerView {
   
   /**
     * Method called after the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) is created and right before it starts drawing the layer's content.

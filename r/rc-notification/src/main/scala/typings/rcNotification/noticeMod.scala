@@ -13,7 +13,6 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noticeMod {
@@ -35,10 +34,11 @@ object noticeMod {
     def defaultProps_=(x: Duration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait DivProps extends HTMLProps[HTMLDivElement] {
+  trait DivProps
+    extends StObject
+       with HTMLProps[HTMLDivElement] {
     
-    var `data-testid`: js.UndefOr[String] = js.native
+    var `data-testid`: js.UndefOr[String] = js.undefined
   }
   object DivProps {
     
@@ -84,36 +84,35 @@ object noticeMod {
     def startCloseTimer(): Unit = js.native
   }
   
-  @js.native
   trait NoticeProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
     /** @private Only for internal usage. We don't promise that we will refactor this */
-    var holder: js.UndefOr[HTMLDivElement] = js.native
+    var holder: js.UndefOr[HTMLDivElement] = js.undefined
     
     /** Mark as final key since set maxCount may keep the key but user pass key is different */
-    var noticeKey: Key = js.native
+    var noticeKey: Key
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var props: js.UndefOr[DivProps] = js.native
+    var props: js.UndefOr[DivProps] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var updateMark: js.UndefOr[String] = js.native
+    var updateMark: js.UndefOr[String] = js.undefined
   }
   object NoticeProps {
     

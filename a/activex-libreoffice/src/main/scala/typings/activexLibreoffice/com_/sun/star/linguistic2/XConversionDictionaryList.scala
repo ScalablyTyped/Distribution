@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * flushed upon termination of the dictionary list.
   * @since OOo 1.1.2
   */
-@js.native
-trait XConversionDictionaryList extends XInterface {
+trait XConversionDictionaryList
+  extends StObject
+     with XInterface {
   
   /** @returns the name container interface to the dictionaries in the list.  The interface can be used to add, remove or retrieve dictionaries from the list by */
-  val DictionaryContainer: XNameContainer = js.native
+  val DictionaryContainer: XNameContainer
   
   /**
     * creates a new dictionary and adds it to the dictionary list.
@@ -34,10 +34,10 @@ trait XConversionDictionaryList extends XInterface {
     * @throws NoSupportException when **nConversionDictionaryType** is not known by the implementation.
     * @throws ElementExistException when a dictionary with the specified name already exists.
     */
-  def addNewDictionary(aName: String, aLocale: Locale, nConversionDictionaryType: Double): XConversionDictionary = js.native
+  def addNewDictionary(aName: String, aLocale: Locale, nConversionDictionaryType: Double): XConversionDictionary
   
   /** @returns the name container interface to the dictionaries in the list.  The interface can be used to add, remove or retrieve dictionaries from the list by */
-  def getDictionaryContainer(): XNameContainer = js.native
+  def getDictionaryContainer(): XNameContainer
   
   /**
     * searches for entries that match the given text.
@@ -64,7 +64,7 @@ trait XConversionDictionaryList extends XInterface {
     nConversionDictionaryType: Double,
     eDirection: ConversionDirection,
     nTextConversionOptions: Double
-  ): SafeArray[String] = js.native
+  ): SafeArray[String]
   
   /**
     * returns the maximum number of characters used as left or right text in entries.
@@ -77,7 +77,7 @@ trait XConversionDictionaryList extends XInterface {
     * @param eDirection specifies if the left text or the right text of entries will be used.
     * @see com.sun.star.linguistic2.ConversionDirection
     */
-  def queryMaxCharCount(aLocale: Locale, nConversionDictionaryType: Double, eDirection: ConversionDirection): Double = js.native
+  def queryMaxCharCount(aLocale: Locale, nConversionDictionaryType: Double, eDirection: ConversionDirection): Double
 }
 object XConversionDictionaryList {
   

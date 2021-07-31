@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * should be implemented of objects which may report warnings or non critical errors.
   * @see com.sun.star.sdbc.SQLWarning
   */
-@js.native
-trait XWarningsSupplier extends XInterface {
+trait XWarningsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the first warning reported by calls on an object that supports the usage of warnings.
@@ -21,14 +21,14 @@ trait XWarningsSupplier extends XInterface {
     * @returns the warnings
     * @throws SQLException if a database access error occurs.
     */
-  val Warnings: js.Any = js.native
+  val Warnings: js.Any
   
   /**
     * clears all warnings reported for the object implementing the interface. After a call to this method, the method {@link
     * com.sun.star.sdbc.XWarningsSupplier.getWarnings()} returns `VOID` until a new warning is reported for the object.
     * @throws SQLException if a database access error occurs.
     */
-  def clearWarnings(): Unit = js.native
+  def clearWarnings(): Unit
   
   /**
     * returns the first warning reported by calls on an object that supports the usage of warnings.
@@ -37,7 +37,7 @@ trait XWarningsSupplier extends XInterface {
     * @returns the warnings
     * @throws SQLException if a database access error occurs.
     */
-  def getWarnings(): js.Any = js.native
+  def getWarnings(): js.Any
 }
 object XWarningsSupplier {
   

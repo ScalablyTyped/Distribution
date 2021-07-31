@@ -2,15 +2,13 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeekSpec extends StObject {
   
-  var dow: Double = js.native
+  var dow: Double
   
-  var doy: js.UndefOr[Double] = js.native
+  var doy: js.UndefOr[Double] = js.undefined
 }
 object WeekSpec {
   

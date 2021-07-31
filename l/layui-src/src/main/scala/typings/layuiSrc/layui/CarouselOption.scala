@@ -11,7 +11,6 @@ import typings.layuiSrc.layuiSrcStrings.updown
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
@@ -25,30 +24,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   use(mods: string | string[], callback: (...args: any[]) => any): any;
   }
   */
-@js.native
 trait CarouselOption extends StObject {
   
-  var anim: js.UndefOr[default | updown | fade] = js.native
+  var anim: js.UndefOr[default | updown | fade] = js.undefined
   
-  var arrow: js.UndefOr[hover | always | none] = js.native
+  var arrow: js.UndefOr[hover | always | none] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var full: js.UndefOr[Boolean] = js.native
+  var full: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var indicator: js.UndefOr[insider | outsider | none] = js.native
+  var indicator: js.UndefOr[insider | outsider | none] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object CarouselOption {
   

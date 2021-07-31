@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentTrainingPhrasePart extends StObject {
   
   /** Optional. The parameter name for the value extracted from the annotated part of the example. This field is required for annotated parts of the training phrase. */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /** Optional. The entity type name prefixed with `@`. This field is required for annotated parts of the training phrase. */
-  var entityType: js.UndefOr[String] = js.native
+  var entityType: js.UndefOr[String] = js.undefined
   
   /** Required. The text for this part. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Indicates whether the text was manually annotated. This field is set to true when the Dialogflow Console is used to manually annotate the part. When creating an annotated
     * part with the API, you must set this to true.
     */
-  var userDefined: js.UndefOr[Boolean] = js.native
+  var userDefined: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentTrainingPhrasePart {
   

@@ -4,10 +4,8 @@ import typings.openpgp.anon.Passphrase
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyOptions extends StObject {
   
   /**
@@ -15,38 +13,38 @@ trait KeyOptions extends StObject {
     *                                         curve25519, p256, p384, p521, secp256k1,
     *                                         brainpoolP256r1, brainpoolP384r1, or brainpoolP512r1.
     */
-  var curve: js.UndefOr[String] = js.native
+  var curve: js.UndefOr[String] = js.undefined
   
   /**
     * (optional) override the creation date of the key and the key signatures
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * (optional) The number of seconds after the key creation time that the key expires
     */
-  var keyExpirationTime: js.UndefOr[Double] = js.native
+  var keyExpirationTime: js.UndefOr[Double] = js.undefined
   
   /**
     * (optional) number of bits for RSA keys: 2048 or 4096.
     */
-  var numBits: js.UndefOr[Double] = js.native
+  var numBits: js.UndefOr[Double] = js.undefined
   
   /**
     * (optional) The passphrase used to encrypt the resulting private key
     */
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
   /**
     * (optional) options for each subkey, default to main key options. e.g. [ {sign: true, passphrase: '123'}]
     *            sign parameter defaults to false, and indicates whether the subkey should sign rather than encrypt
     */
-  var subkeys: js.UndefOr[js.Array[Passphrase]] = js.native
+  var subkeys: js.UndefOr[js.Array[Passphrase]] = js.undefined
   
   /**
     * array of user IDs e.g. [ { name:'Phil Zimmermann', email:'phil@openpgp.org' }]
     */
-  var userIds: js.Array[UserID] = js.native
+  var userIds: js.Array[UserID]
 }
 object KeyOptions {
   

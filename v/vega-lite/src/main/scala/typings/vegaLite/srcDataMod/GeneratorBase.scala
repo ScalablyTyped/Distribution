@@ -2,16 +2,14 @@ package typings.vegaLite.srcDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeneratorBase extends StObject {
   
   /**
     * Provide a placeholder name and bind data at runtime.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GeneratorBase {
   

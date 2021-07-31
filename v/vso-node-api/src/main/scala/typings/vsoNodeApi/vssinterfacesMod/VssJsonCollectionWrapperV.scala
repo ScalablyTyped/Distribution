@@ -2,13 +2,13 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VssJsonCollectionWrapperV[T] extends VssJsonCollectionWrapperBase {
+trait VssJsonCollectionWrapperV[T]
+  extends StObject
+     with VssJsonCollectionWrapperBase {
   
-  var value: T = js.native
+  var value: T
 }
 object VssJsonCollectionWrapperV {
   
@@ -19,7 +19,7 @@ object VssJsonCollectionWrapperV {
   }
   
   @scala.inline
-  implicit class VssJsonCollectionWrapperVMutableBuilder[Self <: VssJsonCollectionWrapperV[_], T] (val x: Self with VssJsonCollectionWrapperV[T]) extends AnyVal {
+  implicit class VssJsonCollectionWrapperVMutableBuilder[Self <: VssJsonCollectionWrapperV[?], T] (val x: Self & VssJsonCollectionWrapperV[T]) extends AnyVal {
     
     @scala.inline
     def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

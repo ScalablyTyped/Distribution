@@ -2,26 +2,24 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XmlParams extends StObject {
   
   // tag to differentiate between attributes and elements
-  var attribute_prefix: js.UndefOr[String] = js.native
+  var attribute_prefix: js.UndefOr[String] = js.undefined
   
   // tags with which documents are identified
-  var doc_tag: js.UndefOr[String] = js.native
+  var doc_tag: js.UndefOr[String] = js.undefined
   
   // encoding in which data source is encoded
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   // tag until which xml is ignored
-  var root_tag: js.UndefOr[String] = js.native
+  var root_tag: js.UndefOr[String] = js.undefined
   
   // tag used for the value when there are attributes in the element having no child
-  var value_tag: js.UndefOr[String] = js.native
+  var value_tag: js.UndefOr[String] = js.undefined
 }
 object XmlParams {
   

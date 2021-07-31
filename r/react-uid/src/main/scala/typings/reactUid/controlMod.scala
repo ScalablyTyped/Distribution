@@ -4,7 +4,6 @@ import typings.react.mod.SFC
 import typings.reactUid.contextMod.UIDProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlMod {
@@ -21,10 +20,9 @@ object controlMod {
   @js.native
   val UIDReset: SFC[WithPrefix] = js.native
   
-  @js.native
   trait WithPrefix extends StObject {
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object WithPrefix {
     

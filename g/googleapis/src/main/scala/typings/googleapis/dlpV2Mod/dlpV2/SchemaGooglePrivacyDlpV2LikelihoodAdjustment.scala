@@ -2,20 +2,18 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message for specifying an adjustment to the likelihood of a finding as part
   * of a detection rule.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2LikelihoodAdjustment extends StObject {
   
   /**
     * Set the likelihood of a finding to a fixed value.
     */
-  var fixedLikelihood: js.UndefOr[String] = js.native
+  var fixedLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Increase or decrease the likelihood by the specified number of levels.
@@ -26,7 +24,7 @@ trait SchemaGooglePrivacyDlpV2LikelihoodAdjustment extends StObject {
     * of 1 followed by an adjustment of -1 when base likelihood is
     * `VERY_LIKELY` will result in a final likelihood of `LIKELY`.
     */
-  var relativeLikelihood: js.UndefOr[Double] = js.native
+  var relativeLikelihood: js.UndefOr[Double] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2LikelihoodAdjustment {
   

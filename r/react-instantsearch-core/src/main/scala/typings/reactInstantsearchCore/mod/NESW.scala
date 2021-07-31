@@ -3,15 +3,13 @@ package typings.reactInstantsearchCore.mod
 import typings.reactInstantsearchCore.anon.Lat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NESW extends StObject {
   
-  var northEast: Lat = js.native
+  var northEast: Lat
   
-  var southWest: Lat = js.native
+  var southWest: Lat
 }
 object NESW {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogsLocation extends StObject {
   
   /**
     *  Information about Amazon CloudWatch Logs for a build project. 
     */
-  var cloudWatchLogs: js.UndefOr[CloudWatchLogsConfig] = js.native
+  var cloudWatchLogs: js.UndefOr[CloudWatchLogsConfig] = js.undefined
   
   /**
     *  The ARN of Amazon CloudWatch Logs for a build project. Its format is arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}:log-stream:${LogStreamName}. For more information, see Resources Defined by Amazon CloudWatch Logs. 
     */
-  var cloudWatchLogsArn: js.UndefOr[String] = js.native
+  var cloudWatchLogsArn: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to an individual build log in Amazon CloudWatch Logs.
     */
-  var deepLink: js.UndefOr[String] = js.native
+  var deepLink: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Amazon CloudWatch Logs group for the build logs.
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     *  The URL to a build log in an S3 bucket. 
     */
-  var s3DeepLink: js.UndefOr[String] = js.native
+  var s3DeepLink: js.UndefOr[String] = js.undefined
   
   /**
     *  Information about S3 logs for a build project. 
     */
-  var s3Logs: js.UndefOr[S3LogsConfig] = js.native
+  var s3Logs: js.UndefOr[S3LogsConfig] = js.undefined
   
   /**
     *  The ARN of S3 logs for a build project. Its format is arn:${Partition}:s3:::${BucketName}/${ObjectName}. For more information, see Resources Defined by Amazon S3. 
     */
-  var s3LogsArn: js.UndefOr[String] = js.native
+  var s3LogsArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Amazon CloudWatch Logs stream for the build logs.
     */
-  var streamName: js.UndefOr[String] = js.native
+  var streamName: js.UndefOr[String] = js.undefined
 }
 object LogsLocation {
   

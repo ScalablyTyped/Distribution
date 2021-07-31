@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseParameters extends StObject {
   
-  var migrate_to_chat_id: js.UndefOr[Double] = js.native
+  var migrate_to_chat_id: js.UndefOr[Double] = js.undefined
   
-  var retry_after: js.UndefOr[Double] = js.native
+  var retry_after: js.UndefOr[Double] = js.undefined
 }
 object ResponseParameters {
   

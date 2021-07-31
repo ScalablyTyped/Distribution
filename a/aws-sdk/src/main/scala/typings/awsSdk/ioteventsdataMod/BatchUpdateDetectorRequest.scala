@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateDetectorRequest extends StObject {
   
   /**
     * The list of detectors (instances) to update, along with the values to update.
     */
-  var detectors: UpdateDetectorRequests = js.native
+  var detectors: UpdateDetectorRequests
 }
 object BatchUpdateDetectorRequest {
   

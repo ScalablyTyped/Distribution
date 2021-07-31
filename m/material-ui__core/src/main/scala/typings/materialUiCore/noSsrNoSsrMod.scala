@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noSsrNoSsrMod extends Shortcut {
@@ -14,12 +13,11 @@ object noSsrNoSsrMod extends Shortcut {
   @js.native
   val default: ComponentType[NoSsrProps] = js.native
   
-  @js.native
   trait NoSsrProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var fallback: js.UndefOr[ReactNode] = js.native
+    var fallback: js.UndefOr[ReactNode] = js.undefined
   }
   object NoSsrProps {
     

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     for compatibility with the older version of Sheets.
   * Access and modify protected sheets in the older version of Google Sheets.
   */
-@js.native
 trait PageProtection extends StObject {
   
-  /** @deprecated DO NOT USE */ def addUser(email: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def addUser(email: String): Unit
   
-  /** @deprecated DO NOT USE */ def getUsers(): js.Array[String] = js.native
+  /** @deprecated DO NOT USE */ def getUsers(): js.Array[String]
   
-  /** @deprecated DO NOT USE */ def isProtected(): Boolean = js.native
+  /** @deprecated DO NOT USE */ def isProtected(): Boolean
   
-  /** @deprecated DO NOT USE */ def removeUser(user: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def removeUser(user: String): Unit
   
-  /** @deprecated DO NOT USE */ def setProtected(protection: Boolean): Unit = js.native
+  /** @deprecated DO NOT USE */ def setProtected(protection: Boolean): Unit
 }
 object PageProtection {
   

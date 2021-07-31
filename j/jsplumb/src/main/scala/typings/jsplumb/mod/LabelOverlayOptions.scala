@@ -3,20 +3,20 @@ package typings.jsplumb.mod
 import typings.jsplumb.anon.BorderStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LabelOverlayOptions extends OverlayOptions {
+trait LabelOverlayOptions
+  extends StObject
+     with OverlayOptions {
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
   // 0.5
-  var labelStyle: js.UndefOr[BorderStyle] = js.native
+  var labelStyle: js.UndefOr[BorderStyle] = js.undefined
   
-  var location: js.UndefOr[Double] = js.native
+  var location: js.UndefOr[Double] = js.undefined
 }
 object LabelOverlayOptions {
   

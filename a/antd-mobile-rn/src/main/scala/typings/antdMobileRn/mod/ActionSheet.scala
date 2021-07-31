@@ -3,37 +3,34 @@ package typings.antdMobileRn.mod
 import typings.reactNative.mod.ActionSheetIOSOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ActionSheet {
   
-  @JSImport("antd-mobile-rn", "ActionSheet.close")
+  @JSImport("antd-mobile-rn", "ActionSheet")
   @js.native
-  def close(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd-mobile-rn", "ActionSheet.showActionSheetWithOptions")
-  @js.native
-  def showActionSheetWithOptions(config: ActionSheetIOSOptions, callback: js.Function1[/* index */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @JSImport("antd-mobile-rn", "ActionSheet.showShareActionSheetWithOptions")
-  @js.native
-  def showShareActionSheetWithOptions(config: js.Any): Unit = js.native
-  @JSImport("antd-mobile-rn", "ActionSheet.showShareActionSheetWithOptions")
-  @js.native
-  def showShareActionSheetWithOptions(
-    config: js.Any,
-    failureCallback: js.UndefOr[scala.Nothing],
-    successCallback: js.Function2[/* arg0 */ Boolean, /* activityType */ js.UndefOr[String], Unit]
-  ): Unit = js.native
-  @JSImport("antd-mobile-rn", "ActionSheet.showShareActionSheetWithOptions")
-  @js.native
-  def showShareActionSheetWithOptions(config: js.Any, failureCallback: js.Function1[/* arg0 */ js.Any, Unit]): Unit = js.native
-  @JSImport("antd-mobile-rn", "ActionSheet.showShareActionSheetWithOptions")
-  @js.native
+  @scala.inline
+  def showActionSheetWithOptions(config: ActionSheetIOSOptions, callback: js.Function1[/* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showActionSheetWithOptions")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def showShareActionSheetWithOptions(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareActionSheetWithOptions")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def showShareActionSheetWithOptions(config: js.Any, failureCallback: js.Function1[/* arg0 */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showShareActionSheetWithOptions")(config.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def showShareActionSheetWithOptions(
     config: js.Any,
     failureCallback: js.Function1[/* arg0 */ js.Any, Unit],
     successCallback: js.Function2[/* arg0 */ Boolean, /* activityType */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showShareActionSheetWithOptions")(config.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def showShareActionSheetWithOptions(
+    config: js.Any,
+    failureCallback: Unit,
+    successCallback: js.Function2[/* arg0 */ Boolean, /* activityType */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showShareActionSheetWithOptions")(config.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSharingInfo extends StObject {
   
   /**
     * The AWS account ID where the current document is shared.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.ssmMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.ssmMod.AccountId] = js.undefined
   
   /**
     * The version of the current document shared with the account.
     */
-  var SharedDocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.SharedDocumentVersion] = js.native
+  var SharedDocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.SharedDocumentVersion] = js.undefined
 }
 object AccountSharingInfo {
   

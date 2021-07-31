@@ -2,23 +2,21 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveRoute extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var policy: String = js.native
+  var policy: String
   
-  var steps: js.Array[DriveStep] = js.native
+  var steps: js.Array[DriveStep]
   
-  var time: Double = js.native
+  var time: Double
   
-  var tolls: Double = js.native
+  var tolls: Double
   
-  var tolls_distance: Double = js.native
+  var tolls_distance: Double
 }
 object DriveRoute {
   

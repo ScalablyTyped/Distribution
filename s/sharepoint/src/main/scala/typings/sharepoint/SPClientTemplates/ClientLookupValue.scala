@@ -2,15 +2,13 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientLookupValue extends StObject {
   
-  var LookupId: Double = js.native
+  var LookupId: Double
   
-  var LookupValue: String = js.native
+  var LookupValue: String
 }
 object ClientLookupValue {
   

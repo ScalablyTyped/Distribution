@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomationExecutionFilter extends StObject {
   
   /**
     * One or more keys to limit the results. Valid filter keys include the following: DocumentNamePrefix, ExecutionStatus, ExecutionId, ParentExecutionId, CurrentAction, StartTimeBefore, StartTimeAfter, TargetResourceGroup.
     */
-  var Key: AutomationExecutionFilterKey = js.native
+  var Key: AutomationExecutionFilterKey
   
   /**
     * The values used to limit the execution information associated with the filter's key.
     */
-  var Values: AutomationExecutionFilterValueList = js.native
+  var Values: AutomationExecutionFilterValueList
 }
 object AutomationExecutionFilter {
   

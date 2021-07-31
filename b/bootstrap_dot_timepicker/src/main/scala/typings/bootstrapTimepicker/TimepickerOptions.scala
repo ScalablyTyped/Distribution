@@ -3,43 +3,41 @@ package typings.bootstrapTimepicker
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimepickerOptions extends StObject {
   
-  var appendWidgetTo: js.UndefOr[String] = js.native
+  var appendWidgetTo: js.UndefOr[String] = js.undefined
   
-  var defaultTime: js.UndefOr[String | Boolean | Date] = js.native
+  var defaultTime: js.UndefOr[String | Boolean | Date] = js.undefined
   
-  var disableFocus: js.UndefOr[Boolean] = js.native
+  var disableFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disableMousewheel: js.UndefOr[Boolean] = js.native
+  var disableMousewheel: js.UndefOr[Boolean] = js.undefined
   
-  var explicitMode: js.UndefOr[Boolean] = js.native
+  var explicitMode: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[TimepickerIconOptions] = js.native
+  var icons: js.UndefOr[TimepickerIconOptions] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var maxHours: js.UndefOr[Double] = js.native
+  var maxHours: js.UndefOr[Double] = js.undefined
   
-  var minuteStep: js.UndefOr[Double] = js.native
+  var minuteStep: js.UndefOr[Double] = js.undefined
   
-  var modalBackdrop: js.UndefOr[Boolean] = js.native
+  var modalBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var secondStep: js.UndefOr[Double] = js.native
+  var secondStep: js.UndefOr[Double] = js.undefined
   
-  var showInputs: js.UndefOr[Boolean] = js.native
+  var showInputs: js.UndefOr[Boolean] = js.undefined
   
-  var showMeridian: js.UndefOr[Boolean] = js.native
+  var showMeridian: js.UndefOr[Boolean] = js.undefined
   
-  var showSeconds: js.UndefOr[Boolean] = js.native
+  var showSeconds: js.UndefOr[Boolean] = js.undefined
   
-  var snapToStep: js.UndefOr[Boolean] = js.native
+  var snapToStep: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String | Boolean] = js.native
+  var template: js.UndefOr[String | Boolean] = js.undefined
 }
 object TimepickerOptions {
   

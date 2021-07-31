@@ -3,7 +3,6 @@ package typings.pixiJs.mod
 import typings.pixiJs.PIXI.ILoaderPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("pixi.js", "TextureLoader")
 @js.native
-class TextureLoader () extends ILoaderPlugin
+class TextureLoader ()
+  extends StObject
+     with ILoaderPlugin
 object TextureLoader {
+  
+  @JSImport("pixi.js", "TextureLoader")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Called after a resource is loaded.
@@ -24,7 +29,6 @@ object TextureLoader {
     * @param {function} next
     */
   /* static member */
-  @JSImport("pixi.js", "TextureLoader.use")
-  @js.native
-  def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

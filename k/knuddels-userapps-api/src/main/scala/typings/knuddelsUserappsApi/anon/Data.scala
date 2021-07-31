@@ -3,15 +3,13 @@ package typings.knuddelsUserappsApi.anon
 import typings.knuddelsUserappsApi.mod.KnuddelsEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: KnuddelsEvent = js.native
+  var data: KnuddelsEvent
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Data {
   

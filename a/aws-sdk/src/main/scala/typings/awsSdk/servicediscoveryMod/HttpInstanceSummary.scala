@@ -2,36 +2,34 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpInstanceSummary extends StObject {
   
   /**
     * If you included any attributes when you registered the instance, the values of those attributes.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.servicediscoveryMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.servicediscoveryMod.Attributes] = js.undefined
   
   /**
     * If you configured health checking in the service, the current health status of the service instance.
     */
-  var HealthStatus: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthStatus] = js.native
+  var HealthStatus: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthStatus] = js.undefined
   
   /**
     * The ID of an instance that matches the values that you specified in the request.
     */
-  var InstanceId: js.UndefOr[ResourceId] = js.native
+  var InstanceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The name of the namespace that you specified when you registered the instance.
     */
-  var NamespaceName: js.UndefOr[typings.awsSdk.servicediscoveryMod.NamespaceName] = js.native
+  var NamespaceName: js.UndefOr[typings.awsSdk.servicediscoveryMod.NamespaceName] = js.undefined
   
   /**
     * The name of the service that you specified when you registered the instance.
     */
-  var ServiceName: js.UndefOr[typings.awsSdk.servicediscoveryMod.ServiceName] = js.native
+  var ServiceName: js.UndefOr[typings.awsSdk.servicediscoveryMod.ServiceName] = js.undefined
 }
 object HttpInstanceSummary {
   

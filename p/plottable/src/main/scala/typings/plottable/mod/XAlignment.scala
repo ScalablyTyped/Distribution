@@ -5,7 +5,6 @@ import typings.plottable.plottableStrings.left
 import typings.plottable.plottableStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object XAlignment {

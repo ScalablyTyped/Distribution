@@ -2,22 +2,20 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TodayPlayedTime extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ Result, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ Result, Unit]] = js.undefined
   
   /**
     * 今天已经玩游戏的时间，单位：秒
     */
-  var todayPlayedTime: Double = js.native
+  var todayPlayedTime: Double
 }
 object TodayPlayedTime {
   

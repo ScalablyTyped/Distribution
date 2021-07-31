@@ -2,41 +2,39 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OwnerDirectoryDescription extends StObject {
   
   /**
     * Identifier of the directory owner account.
     */
-  var AccountId: js.UndefOr[CustomerId] = js.native
+  var AccountId: js.UndefOr[CustomerId] = js.undefined
   
   /**
     * Identifier of the AWS Managed Microsoft AD directory in the directory owner account.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * IP address of the directory’s domain controllers.
     */
-  var DnsIpAddrs: js.UndefOr[typings.awsSdk.directoryserviceMod.DnsIpAddrs] = js.native
+  var DnsIpAddrs: js.UndefOr[typings.awsSdk.directoryserviceMod.DnsIpAddrs] = js.undefined
   
   /**
     * A RadiusSettings object that contains information about the RADIUS server.
     */
-  var RadiusSettings: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusSettings] = js.native
+  var RadiusSettings: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusSettings] = js.undefined
   
   /**
     * Information about the status of the RADIUS server.
     */
-  var RadiusStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusStatus] = js.native
+  var RadiusStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusStatus] = js.undefined
   
   /**
     * Information about the VPC settings for the directory.
     */
-  var VpcSettings: js.UndefOr[DirectoryVpcSettingsDescription] = js.native
+  var VpcSettings: js.UndefOr[DirectoryVpcSettingsDescription] = js.undefined
 }
 object OwnerDirectoryDescription {
   

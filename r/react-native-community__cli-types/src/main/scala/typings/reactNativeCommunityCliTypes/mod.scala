@@ -16,31 +16,29 @@ import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesBooleans
 import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Command[IsDetached /* <: Boolean */] extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var detached: js.UndefOr[IsDetached] = js.native
+    var detached: js.UndefOr[IsDetached] = js.undefined
     
-    var examples: js.UndefOr[js.Array[Cmd]] = js.native
+    var examples: js.UndefOr[js.Array[Cmd]] = js.undefined
     
-    var func: CommandFunction[js.Object] | DetachedCommandFunction[js.Object] = js.native
+    var func: CommandFunction[js.Object] | DetachedCommandFunction[js.Object]
     
-    var name: String = js.native
+    var name: String
     
     var options: js.UndefOr[
         js.Array[
           CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pkg: js.UndefOr[Name] = js.native
+    var pkg: js.UndefOr[Name] = js.undefined
   }
   object Command {
     
@@ -51,7 +49,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command[_], IsDetached /* <: Boolean */] (val x: Self with Command[IsDetached]) extends AnyVal {
+    implicit class CommandMutableBuilder[Self <: Command[?], IsDetached /* <: Boolean */] (val x: Self & Command[IsDetached]) extends AnyVal {
       
       @scala.inline
       def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -114,16 +112,15 @@ object mod {
     js.Promise[Unit] | Unit
   ]
   
-  @js.native
   trait CommandOption[T] extends StObject {
     
-    var default: js.UndefOr[OptionValue | T] = js.native
+    var default: js.UndefOr[OptionValue | T] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var parse: js.UndefOr[js.Function1[/* val */ String, _]] = js.native
+    var parse: js.UndefOr[js.Function1[/* val */ String, js.Any]] = js.undefined
   }
   object CommandOption {
     
@@ -134,7 +131,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CommandOptionMutableBuilder[Self <: CommandOption[_], T] (val x: Self with CommandOption[T]) extends AnyVal {
+    implicit class CommandOptionMutableBuilder[Self <: CommandOption[?], T] (val x: Self & CommandOption[T]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: OptionValue | T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
@@ -152,29 +149,30 @@ object mod {
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParse(value: /* val */ String => _): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      def setParse(value: /* val */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       @scala.inline
       def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     }
   }
   
-  @js.native
-  trait Config extends IOSNativeModulesConfig {
+  trait Config
+    extends StObject
+       with IOSNativeModulesConfig {
     
-    var assets: js.Array[String] = js.native
+    var assets: js.Array[String]
     
-    var commands: js.Array[Command[`false`]] = js.native
+    var commands: js.Array[Command[`false`]]
     
     @JSName("dependencies")
-    var dependencies_Config: StringDictionary[Dependency] = js.native
+    var dependencies_Config: StringDictionary[Dependency]
     
-    var platforms: Dictname = js.native
+    var platforms: Dictname
     
     @JSName("project")
-    var project_Config: ProjectConfig = js.native
+    var project_Config: ProjectConfig
     
-    var root: String = js.native
+    var root: String
   }
   object Config {
     
@@ -221,20 +219,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Dependency extends StObject {
     
-    var assets: js.Array[String] = js.native
+    var assets: js.Array[String]
     
-    var hooks: Postlink = js.native
+    var hooks: Postlink
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.Array[InquirerPrompt] = js.native
+    var params: js.Array[InquirerPrompt]
     
-    var platforms: Dictkey = js.native
+    var platforms: Dictkey
     
-    var root: String = js.native
+    var root: String
   }
   object Dependency {
     
@@ -301,13 +298,13 @@ object mod {
     def projectConfig(projectRoot: String, projectParams: Unit): ProjectConfig | Unit = js.native
   }
   
-  @js.native
   trait ProjectConfig
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var android: js.UndefOr[AndroidProjectConfig] = js.native
+    var android: js.UndefOr[AndroidProjectConfig] = js.undefined
     
-    var ios: js.UndefOr[IOSProjectConfig] = js.native
+    var ios: js.UndefOr[IOSProjectConfig] = js.undefined
   }
   object ProjectConfig {
     
@@ -335,20 +332,19 @@ object mod {
   }
   
   /* Inlined std.Omit<@react-native-community/cli-types.@react-native-community/cli-types.Config, 'root'> & {  reactNativePath :string | void,   project :{  android :@react-native-community/cli-types.@react-native-community/cli-types/build/android.AndroidProjectParams | undefined,   ios :@react-native-community/cli-types.@react-native-community/cli-types/build/ios.IOSProjectParams | undefined, [key: string] : any}} */
-  @js.native
   trait UserConfig extends StObject {
     
-    var assets: js.Array[String] = js.native
+    var assets: js.Array[String]
     
-    var commands: js.Array[Command[`false`]] = js.native
+    var commands: js.Array[Command[`false`]]
     
-    var dependencies: StringDictionary[Dependency] = js.native
+    var dependencies: StringDictionary[Dependency]
     
-    var platforms: Dictname = js.native
+    var platforms: Dictname
     
-    var project: ProjectConfig with Android = js.native
+    var project: ProjectConfig & Android
     
-    var reactNativePath: String with (String | Unit) = js.native
+    var reactNativePath: String & (String | Unit)
   }
   object UserConfig {
     
@@ -358,8 +354,8 @@ object mod {
       commands: js.Array[Command[`false`]],
       dependencies: StringDictionary[Dependency],
       platforms: Dictname,
-      project: ProjectConfig with Android,
-      reactNativePath: String with (String | Unit)
+      project: ProjectConfig & Android,
+      reactNativePath: String & (String | Unit)
     ): UserConfig = {
       val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserConfig]
@@ -387,21 +383,20 @@ object mod {
       def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProject(value: ProjectConfig with Android): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      def setProject(value: ProjectConfig & Android): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReactNativePath(value: String with (String | Unit)): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      def setReactNativePath(value: String & (String | Unit)): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait UserDependencyConfig extends StObject {
     
-    var commands: js.Array[Command[`false`]] = js.native
+    var commands: js.Array[Command[`false`]]
     
-    var dependency: OmitDependencynameroot = js.native
+    var dependency: OmitDependencynameroot
     
-    var platforms: Dictname = js.native
+    var platforms: Dictname
   }
   object UserDependencyConfig {
     

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationList extends StObject {
   
   /** Required. Immutable. The unique ID of the advertiser the location list belongs to. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the location list. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the location list. Assigned by the system. */
-  var locationListId: js.UndefOr[String] = js.native
+  var locationListId: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The type of location. All locations in the list will share this type. */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the location list. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object LocationList {
   

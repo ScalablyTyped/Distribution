@@ -2,20 +2,18 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The CryptoKey dictionary of the Web Crypto API represents a cryptographic key. */
-@js.native
 trait CryptoKey extends StObject {
   
-  val algorithm: KeyAlgorithm = js.native
+  val algorithm: KeyAlgorithm
   
-  val extractable: scala.Boolean = js.native
+  val extractable: scala.Boolean
   
-  val `type`: KeyType = js.native
+  val `type`: KeyType
   
-  val usages: js.Array[KeyUsage] = js.native
+  val usages: js.Array[KeyUsage]
 }
 object CryptoKey {
   

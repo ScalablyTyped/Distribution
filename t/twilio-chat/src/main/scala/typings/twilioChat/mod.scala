@@ -19,7 +19,6 @@ import typings.twilioSync.mod.SyncClient
 import typings.twilsock.mod.Twilsock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -114,12 +113,10 @@ object mod {
       * @returns {Promise<Client>}
       */
     /* static member */
-    @JSImport("twilio-chat", "default.create")
-    @js.native
-    def create(token: String): js.Promise[Client] = js.native
-    @JSImport("twilio-chat", "default.create")
-    @js.native
-    def create(token: String, options: Options): js.Promise[Client] = js.native
+    @scala.inline
+    def create(token: String): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    @scala.inline
+    def create(token: String, options: Options): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     
     /**
       * Static method for push notification payload parsing. Returns parsed push as {@link PushNotification} object
@@ -127,9 +124,8 @@ object mod {
       * @returns {PushNotification|Error}
       */
     /* static member */
-    @JSImport("twilio-chat", "default.parsePushNotification")
-    @js.native
-    def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = js.native
+    @scala.inline
+    def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePushNotification")(notificationPayload.asInstanceOf[js.Any]).asInstanceOf[typings.twilioChat.pushnotificationMod.PushNotification]
     
     /* static member */
     @JSImport("twilio-chat", "default.parsePushNotificationChatData")
@@ -392,12 +388,10 @@ object mod {
       * @returns {Promise<Client>}
       */
     /* static member */
-    @JSImport("twilio-chat", "Client.create")
-    @js.native
-    def create(token: String): js.Promise[Client] = js.native
-    @JSImport("twilio-chat", "Client.create")
-    @js.native
-    def create(token: String, options: Options): js.Promise[Client] = js.native
+    @scala.inline
+    def create(token: String): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    @scala.inline
+    def create(token: String, options: Options): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     
     /**
       * Static method for push notification payload parsing. Returns parsed push as {@link PushNotification} object
@@ -405,9 +399,8 @@ object mod {
       * @returns {PushNotification|Error}
       */
     /* static member */
-    @JSImport("twilio-chat", "Client.parsePushNotification")
-    @js.native
-    def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = js.native
+    @scala.inline
+    def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePushNotification")(notificationPayload.asInstanceOf[js.Any]).asInstanceOf[typings.twilioChat.pushnotificationMod.PushNotification]
     
     /* static member */
     @JSImport("twilio-chat", "Client.parsePushNotificationChatData")
@@ -449,12 +442,11 @@ object mod {
       def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
     }
     
-    @js.native
     trait ChannelSortingOptions extends StObject {
       
-      var criteria: ChannelSortingCriteria = js.native
+      var criteria: ChannelSortingCriteria
       
-      var order: js.UndefOr[ChannelSortingOrder] = js.native
+      var order: js.UndefOr[ChannelSortingOrder] = js.undefined
     }
     object ChannelSortingOptions {
       
@@ -494,16 +486,15 @@ object mod {
     
     type ConnectionState = typings.twilioNotifications.clientMod.ConnectionState
     
-    @js.native
     trait CreateChannelOptions extends StObject {
       
-      var attributes: js.UndefOr[js.Object] = js.native
+      var attributes: js.UndefOr[js.Object] = js.undefined
       
-      var friendlyName: js.UndefOr[String] = js.native
+      var friendlyName: js.UndefOr[String] = js.undefined
       
-      var isPrivate: js.UndefOr[Boolean] = js.native
+      var isPrivate: js.UndefOr[Boolean] = js.undefined
       
-      var uniqueName: js.UndefOr[String] = js.native
+      var uniqueName: js.UndefOr[String] = js.undefined
     }
     object CreateChannelOptions {
       
@@ -555,44 +546,43 @@ object mod {
     
     type NotificationsChannelType = ChannelType
     
-    @js.native
     trait Options extends StObject {
       
-      var Chat: js.UndefOr[js.Any] = js.native
+      var Chat: js.UndefOr[js.Any] = js.undefined
       
-      var Notification: js.UndefOr[js.Any] = js.native
+      var Notification: js.UndefOr[js.Any] = js.undefined
       
-      var Sync: js.UndefOr[js.Any] = js.native
+      var Sync: js.UndefOr[js.Any] = js.undefined
       
-      var Twilsock: js.UndefOr[js.Any] = js.native
+      var Twilsock: js.UndefOr[js.Any] = js.undefined
       
-      var backoffConfigOverride: js.UndefOr[js.Any] = js.native
+      var backoffConfigOverride: js.UndefOr[js.Any] = js.undefined
       
-      var clientMetadata: js.UndefOr[js.Any] = js.native
+      var clientMetadata: js.UndefOr[js.Any] = js.undefined
       
-      var consumptionReportIntervalOverride: js.UndefOr[String] = js.native
+      var consumptionReportIntervalOverride: js.UndefOr[String] = js.undefined
       
-      var httpCacheIntervalOverride: js.UndefOr[String] = js.native
+      var httpCacheIntervalOverride: js.UndefOr[String] = js.undefined
       
-      var logLevel: js.UndefOr[LogLevel] = js.native
+      var logLevel: js.UndefOr[LogLevel] = js.undefined
       
-      var notificationsClient: js.UndefOr[Notifications] = js.native
+      var notificationsClient: js.UndefOr[Notifications] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var region: js.UndefOr[String] = js.native
+      var region: js.UndefOr[String] = js.undefined
       
-      var retryWhenThrottledOverride: js.UndefOr[Boolean] = js.native
+      var retryWhenThrottledOverride: js.UndefOr[Boolean] = js.undefined
       
-      var syncClient: js.UndefOr[SyncClient] = js.native
+      var syncClient: js.UndefOr[SyncClient] = js.undefined
       
-      var transport: js.UndefOr[Transport] = js.native
+      var transport: js.UndefOr[Transport] = js.undefined
       
-      var twilsockClient: js.UndefOr[Twilsock] = js.native
+      var twilsockClient: js.UndefOr[Twilsock] = js.undefined
       
-      var typingIndicatorTimeoutOverride: js.UndefOr[Double] = js.native
+      var typingIndicatorTimeoutOverride: js.UndefOr[Double] = js.undefined
       
-      var userInfosToSubscribeOverride: js.UndefOr[Double] = js.native
+      var userInfosToSubscribeOverride: js.UndefOr[Double] = js.undefined
     }
     object Options {
       

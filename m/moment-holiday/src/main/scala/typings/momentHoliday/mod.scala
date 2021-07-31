@@ -5,7 +5,6 @@ import typings.momentHoliday.momentHolidayBooleans.`false`
 import typings.std.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -27,20 +26,19 @@ object mod {
   @scala.inline
   def modifyHolidays_=(x: HolidayModifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifyHolidays")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait HolidayDefinition extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var keywords_n: js.UndefOr[js.Array[String]] = js.native
+    var keywords_n: js.UndefOr[js.Array[String]] = js.undefined
     
-    var keywords_y: js.UndefOr[js.Array[String]] = js.native
+    var keywords_y: js.UndefOr[js.Array[String]] = js.undefined
     
-    var regions: js.UndefOr[js.Array[String]] = js.native
+    var regions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var regions_n: js.UndefOr[js.Array[String]] = js.native
+    var regions_n: js.UndefOr[js.Array[String]] = js.undefined
   }
   object HolidayDefinition {
     
@@ -134,12 +132,11 @@ object mod {
   
   type HolidaysMapping = StringDictionary[HolidayDefinition]
   
-  @js.native
   trait Holidays_ extends StObject {
     
-    var active: HolidaysMapping = js.native
+    var active: HolidaysMapping
     
-    var active_last: HolidaysMapping = js.native
+    var active_last: HolidaysMapping
   }
   object Holidays_ {
     
@@ -161,51 +158,53 @@ object mod {
   }
   
   @js.native
-  trait Moment extends Object {
+  trait Moment
+    extends StObject
+       with Object {
     
     def holiday(): Moment | `false` | StringDictionary[Moment] = js.native
-    def holiday(holidays: js.UndefOr[scala.Nothing], adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
     def holiday(holidays: String): Moment | `false` | StringDictionary[Moment] = js.native
     def holiday(holidays: String, adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
     def holiday(holidays: js.Array[String]): Moment | `false` | StringDictionary[Moment] = js.native
     def holiday(holidays: js.Array[String], adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
+    def holiday(holidays: Unit, adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
     
     def holidays(): Moment | `false` | StringDictionary[Moment] = js.native
-    def holidays(holidays: js.UndefOr[scala.Nothing], adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
     def holidays(holidays: String): Moment | `false` | StringDictionary[Moment] = js.native
     def holidays(holidays: String, adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
     def holidays(holidays: js.Array[String]): Moment | `false` | StringDictionary[Moment] = js.native
     def holidays(holidays: js.Array[String], adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
+    def holidays(holidays: Unit, adjust: Boolean): Moment | `false` | StringDictionary[Moment] = js.native
     
     def holidaysBetween(m: Moment): js.Array[Moment] | `false` = js.native
     def holidaysBetween(m: Moment, adjust: Boolean): js.Array[Moment] | `false` = js.native
     
     def isHoliday(): Boolean | String | js.Array[String] = js.native
-    def isHoliday(holidays: js.UndefOr[scala.Nothing], adjust: Boolean): Boolean | String | js.Array[String] = js.native
     def isHoliday(holidays: String): Boolean | String | js.Array[String] = js.native
     def isHoliday(holidays: String, adjust: Boolean): Boolean | String | js.Array[String] = js.native
     def isHoliday(holidays: js.Array[String]): Boolean | String | js.Array[String] = js.native
     def isHoliday(holidays: js.Array[String], adjust: Boolean): Boolean | String | js.Array[String] = js.native
     def isHoliday(holidays: Null, adjust: Boolean): Boolean | String | js.Array[String] = js.native
+    def isHoliday(holidays: Unit, adjust: Boolean): Boolean | String | js.Array[String] = js.native
     
     def nextHoliday(): js.Array[Moment] | Moment = js.native
-    def nextHoliday(count: js.UndefOr[scala.Nothing], adjust: Boolean): js.Array[Moment] | Moment = js.native
     def nextHoliday(count: Double): js.Array[Moment] | Moment = js.native
     def nextHoliday(count: Double, adjust: Boolean): js.Array[Moment] | Moment = js.native
+    def nextHoliday(count: Unit, adjust: Boolean): js.Array[Moment] | Moment = js.native
     
     def nextHolidays(): js.Array[Moment] | Moment = js.native
-    def nextHolidays(count: js.UndefOr[scala.Nothing], adjust: Boolean): js.Array[Moment] | Moment = js.native
     def nextHolidays(count: Double): js.Array[Moment] | Moment = js.native
     def nextHolidays(count: Double, adjust: Boolean): js.Array[Moment] | Moment = js.native
+    def nextHolidays(count: Unit, adjust: Boolean): js.Array[Moment] | Moment = js.native
     
     def previousHoliday(): js.Array[Moment] | Moment = js.native
-    def previousHoliday(count: js.UndefOr[scala.Nothing], adjust: Boolean): js.Array[Moment] | Moment = js.native
     def previousHoliday(count: Double): js.Array[Moment] | Moment = js.native
     def previousHoliday(count: Double, adjust: Boolean): js.Array[Moment] | Moment = js.native
+    def previousHoliday(count: Unit, adjust: Boolean): js.Array[Moment] | Moment = js.native
     
     def previousHolidays(): js.Array[Moment] | Moment = js.native
-    def previousHolidays(count: js.UndefOr[scala.Nothing], adjust: Boolean): js.Array[Moment] | Moment = js.native
     def previousHolidays(count: Double): js.Array[Moment] | Moment = js.native
     def previousHolidays(count: Double, adjust: Boolean): js.Array[Moment] | Moment = js.native
+    def previousHolidays(count: Unit, adjust: Boolean): js.Array[Moment] | Moment = js.native
   }
 }

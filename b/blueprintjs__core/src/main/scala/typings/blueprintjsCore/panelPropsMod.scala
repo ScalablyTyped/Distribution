@@ -4,12 +4,10 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelPropsMod {
   
-  @js.native
   trait IPanel[P] extends StObject {
     
     /**
@@ -17,38 +15,38 @@ object panelPropsMod {
       * the component class or SFC, _not_ a JSX element, so it can be re-created
       * dynamically when needed.
       */
-    var component: ComponentType[P with IPanelProps] = js.native
+    var component: ComponentType[P & IPanelProps]
     
     /**
       * HTML title to be passed to the <Text> component
       */
-    var htmlTitle: js.UndefOr[String] = js.native
+    var htmlTitle: js.UndefOr[String] = js.undefined
     
     /**
       * The props passed to the component type when it is rendered. The methods
       * in `IPanelProps` will be injected by `PanelStack`.
       */
-    var props: js.UndefOr[P] = js.native
+    var props: js.UndefOr[P] = js.undefined
     
     /**
       * The title to be displayed above this panel. It is also used as the text
       * of the back button for any panel opened by this panel.
       */
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object IPanel {
     
     @scala.inline
-    def apply[P](component: ComponentType[P with IPanelProps]): IPanel[P] = {
+    def apply[P](component: ComponentType[P & IPanelProps]): IPanel[P] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPanel[P]]
     }
     
     @scala.inline
-    implicit class IPanelMutableBuilder[Self <: IPanel[_], P] (val x: Self with IPanel[P]) extends AnyVal {
+    implicit class IPanelMutableBuilder[Self <: IPanel[?], P] (val x: Self & IPanel[P]) extends AnyVal {
       
       @scala.inline
-      def setComponent(value: ComponentType[P with IPanelProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      def setComponent(value: ComponentType[P & IPanelProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
@@ -70,7 +68,6 @@ object panelPropsMod {
     }
   }
   
-  @js.native
   trait IPanelProps extends StObject {
     
     /**
@@ -80,12 +77,12 @@ object panelPropsMod {
       * Remember that the panel header always contains a "back" button that
       * closes this panel on click (unless there is only one panel on the stack).
       */
-    def closePanel(): Unit = js.native
+    def closePanel(): Unit
     
     /**
       * Call this method to open a new panel on the top of the stack.
       */
-    def openPanel[P](panel: IPanel[P]): Unit = js.native
+    def openPanel[P](panel: IPanel[P]): Unit
   }
   object IPanelProps {
     

@@ -3,7 +3,6 @@ package typings.rethinkdb
 import typings.rethinkdb.mod.waitFor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rethinkdbStrings {
@@ -94,17 +93,23 @@ object rethinkdbStrings {
   def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
-  sealed trait ready_for_outdated_reads extends waitFor
+  sealed trait ready_for_outdated_reads
+    extends StObject
+       with waitFor
   @scala.inline
   def ready_for_outdated_reads: ready_for_outdated_reads = "ready_for_outdated_reads".asInstanceOf[ready_for_outdated_reads]
   
   @js.native
-  sealed trait ready_for_reads extends waitFor
+  sealed trait ready_for_reads
+    extends StObject
+       with waitFor
   @scala.inline
   def ready_for_reads: ready_for_reads = "ready_for_reads".asInstanceOf[ready_for_reads]
   
   @js.native
-  sealed trait ready_for_writes extends waitFor
+  sealed trait ready_for_writes
+    extends StObject
+       with waitFor
   @scala.inline
   def ready_for_writes: ready_for_writes = "ready_for_writes".asInstanceOf[ready_for_writes]
   

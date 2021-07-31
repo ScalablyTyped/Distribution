@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An event which takes place in the DOM. */
@@ -55,9 +54,9 @@ trait Event extends StObject {
   val eventPhase: Double = js.native
   
   def initEvent(`type`: java.lang.String): Unit = js.native
-  def initEvent(`type`: java.lang.String, bubbles: js.UndefOr[scala.Nothing], cancelable: scala.Boolean): Unit = js.native
   def initEvent(`type`: java.lang.String, bubbles: scala.Boolean): Unit = js.native
   def initEvent(`type`: java.lang.String, bubbles: scala.Boolean, cancelable: scala.Boolean): Unit = js.native
+  def initEvent(`type`: java.lang.String, bubbles: Unit, cancelable: scala.Boolean): Unit = js.native
   
   /**
     * Returns true if event was dispatched by the user agent, and false otherwise.

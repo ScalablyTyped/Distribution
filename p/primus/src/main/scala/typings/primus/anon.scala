@@ -2,19 +2,17 @@ package typings.primus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Authenticate extends StObject {
     
-    var authenticate: js.UndefOr[String] = js.native
+    var authenticate: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object Authenticate {
     
@@ -47,14 +45,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Close extends StObject {
     
-    var close: js.UndefOr[Boolean] = js.native
+    var close: js.UndefOr[Boolean] = js.undefined
     
-    var reconnect: Boolean = js.native
+    var reconnect: Boolean
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Close {
     
@@ -81,18 +78,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Factor extends StObject {
     
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var `reconnect timeout`: js.UndefOr[Double] = js.native
+    var `reconnect timeout`: js.UndefOr[Double] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object Factor {
     
@@ -137,14 +133,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Ip extends StObject {
     
-    var ip: String = js.native
+    var ip: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object Ip {
     
@@ -168,10 +163,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -189,10 +183,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Reconnect extends StObject {
     
-    var reconnect: js.UndefOr[Boolean] = js.native
+    var reconnect: js.UndefOr[Boolean] = js.undefined
   }
   object Reconnect {
     

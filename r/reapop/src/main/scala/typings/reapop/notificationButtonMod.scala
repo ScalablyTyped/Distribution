@@ -6,29 +6,29 @@ import typings.reapop.typesMod.Notification
 import typings.reapop.typesMod.NotificationButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationButtonMod {
   
-  @JSImport("reapop/dist/components/NotificationButton", JSImport.Default)
+  @JSImport("reapop/dist/components/NotificationButton", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("reapop/dist/components/NotificationButton", "NotificationButton")
-  @js.native
-  def NotificationButton(props: Props): Element = js.native
+  @scala.inline
+  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
+  @scala.inline
+  def NotificationButton(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var button: NotificationButton = js.native
+    var button: NotificationButton
     
-    var notification: Notification = js.native
+    var notification: Notification
     
-    var position: Double = js.native
+    var position: Double
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object Props {
     

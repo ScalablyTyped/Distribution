@@ -5,23 +5,21 @@ import typings.awsSdkClientPinpointBrowser.typesImportJobResponseMod.Unmarshalle
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesImportJobsResponseMod {
   
-  @js.native
   trait ImportJobsResponse extends StObject {
     
     /**
       * A list of import jobs for the application.
       */
-    var Item: js.UndefOr[js.Array[ImportJobResponse] | Iterable[ImportJobResponse]] = js.native
+    var Item: js.UndefOr[js.Array[ImportJobResponse] | Iterable[ImportJobResponse]] = js.undefined
     
     /**
       * The string that you use in a subsequent request to get the next page of results in a paginated response.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   object ImportJobsResponse {
     
@@ -51,14 +49,15 @@ object typesImportJobsResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledImportJobsResponse extends ImportJobsResponse {
+  trait UnmarshalledImportJobsResponse
+    extends StObject
+       with ImportJobsResponse {
     
     /**
       * A list of import jobs for the application.
       */
     @JSName("Item")
-    var Item_UnmarshalledImportJobsResponse: js.UndefOr[js.Array[UnmarshalledImportJobResponse]] = js.native
+    var Item_UnmarshalledImportJobsResponse: js.UndefOr[js.Array[UnmarshalledImportJobResponse]] = js.undefined
   }
   object UnmarshalledImportJobsResponse {
     

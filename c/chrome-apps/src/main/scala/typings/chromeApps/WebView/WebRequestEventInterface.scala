@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.webViewRequest.OnMessageEvent
 import typings.chromeApps.chrome.webViewRequest.OnRequestEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * blocks all requests to 'example.com' on the webview myWebview:
   * @example const rule = { conditions: [ new chrome.webViewRequest.RequestMatcher({ url: { hostSuffix: 'example.com' } }) ], actions: [ new chrome.webViewRequest.CancelRequest() ] }; myWebview.request.onRequest.addRules([rule]);
   **/
-@js.native
 trait WebRequestEventInterface extends StObject {
   
   /**
@@ -37,35 +35,35 @@ trait WebRequestEventInterface extends StObject {
     * action on the challenge. If bad user credentials are provided, this may be
     * called multiple times for the same request.
     */
-  var onAuthRequired: WebAuthenticationChallengeEvent = js.native
+  var onAuthRequired: WebAuthenticationChallengeEvent
   
   /** Fired when a server-initiated redirect is about to occur. */
-  var onBeforeRedirect: WebRedirectionResponseEvent = js.native
+  var onBeforeRedirect: WebRedirectionResponseEvent
   
   /** Fired when a request is about to occur. */
-  var onBeforeRequest: WebRequestBodyEvent = js.native
+  var onBeforeRequest: WebRequestBodyEvent
   
   /**
     * Fired before sending an HTTP request, once the request headers are available.
     * This may occur after a TCP connection is made to the server, but before any HTTP data is sent.
     */
-  var onBeforeSendHeaders: WebRequestHeadersEvent = js.native
+  var onBeforeSendHeaders: WebRequestHeadersEvent
   
   /** Fired when a request is completed. */
-  var onCompleted: WebResponseCacheEvent = js.native
+  var onCompleted: WebResponseCacheEvent
   
   /** Fired when an error occurs. */
-  var onErrorOccured: WebResponseErrorEvent = js.native
+  var onErrorOccured: WebResponseErrorEvent
   
   /** Fired when HTTP response headers of a request have been received. */
-  var onHeadersReceived: WebResponseHeadersEvent = js.native
+  var onHeadersReceived: WebResponseHeadersEvent
   
   /**
     * This interface supports declarative webRequest rules through
     * **onRequest** and **onMessage** events.
     * @see[See declarativeWebRequest for API details.]{@link http://developer.chrome.com/extensions/declarativeWebRequest.html}
     */
-  var onMessage: OnMessageEvent = js.native
+  var onMessage: OnMessageEvent
   
   /**
     * Provides the Declarative Event API consisting of addRules, removeRules, and getRules.
@@ -73,21 +71,21 @@ trait WebRequestEventInterface extends StObject {
     * **onRequest** and **onMessage** events.
     * @see[See declarativeWebRequest for API details.]{@link http://developer.chrome.com/extensions/declarativeWebRequest.html}
     */
-  var onRequest: OnRequestEvent = js.native
+  var onRequest: OnRequestEvent
   
   /**
     * Fired when the first byte of the response body is received.
     * For HTTP requests, this means that the status line and
     * response headers are available.
     */
-  var onResponseStarted: WebResponseCacheEvent = js.native
+  var onResponseStarted: WebResponseCacheEvent
   
   /**
     * Fired just before a request is going to be sent to the server
     * (modifications of previous onBeforeSendHeaders callbacks
     * are visible by the time onSendHeaders is fired).
     */
-  var onSendHeaders: WebRequestHeadersEvent = js.native
+  var onSendHeaders: WebRequestHeadersEvent
 }
 object WebRequestEventInterface {
   

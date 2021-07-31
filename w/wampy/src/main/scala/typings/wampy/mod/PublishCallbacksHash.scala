@@ -2,15 +2,13 @@ package typings.wampy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishCallbacksHash extends StObject {
   
-  var onError: js.UndefOr[ErrorCallback] = js.native
+  var onError: js.UndefOr[ErrorCallback] = js.undefined
   
-  var onSuccess: js.UndefOr[Callback] = js.native
+  var onSuccess: js.UndefOr[Callback] = js.undefined
 }
 object PublishCallbacksHash {
   

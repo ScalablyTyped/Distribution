@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserHierarchyStructureRequest extends StObject {
   
   /**
     * The hierarchy levels to update.
     */
-  var HierarchyStructure: HierarchyStructureUpdate = js.native
+  var HierarchyStructure: HierarchyStructureUpdate
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
 }
 object UpdateUserHierarchyStructureRequest {
   

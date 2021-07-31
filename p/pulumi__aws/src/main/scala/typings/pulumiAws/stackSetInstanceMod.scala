@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackSetInstanceMod {
@@ -59,6 +58,10 @@ object stackSetInstanceMod {
   /* static members */
   object StackSetInstance {
     
+    @JSImport("@pulumi/aws/cloudformation/stackSetInstance", "StackSetInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StackSetInstance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,55 +71,49 @@ object stackSetInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudformation/stackSetInstance", "StackSetInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): StackSetInstance = js.native
-    @JSImport("@pulumi/aws/cloudformation/stackSetInstance", "StackSetInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StackSetInstance = js.native
-    @JSImport("@pulumi/aws/cloudformation/stackSetInstance", "StackSetInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StackSetInstanceState): StackSetInstance = js.native
-    @JSImport("@pulumi/aws/cloudformation/stackSetInstance", "StackSetInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StackSetInstanceState, opts: CustomResourceOptions): StackSetInstance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StackSetInstanceState): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StackSetInstanceState, opts: CustomResourceOptions): StackSetInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSetInstance]
     
     /**
       * Returns true if the given object is an instance of StackSetInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudformation/stackSetInstance", "StackSetInstance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stackSetInstance.StackSetInstance */ Boolean]
   }
   
-  @js.native
   trait StackSetInstanceArgs extends StObject {
     
     /**
       * Target AWS Account ID to create a Stack based on the StackSet. Defaults to current account.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of input parameters to override from the StackSet for this Instance.
       */
-    val parameterOverrides: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameterOverrides: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Target AWS Region to create a Stack based on the StackSet. Defaults to current region.
       */
-    val region: js.UndefOr[Input[String]] = js.native
+    val region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * During resource destroy, remove Instance from StackSet while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new StackSet. Defaults to `false`.
       */
-    val retainStack: js.UndefOr[Input[Boolean]] = js.native
+    val retainStack: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Name of the StackSet.
       */
-    val stackSetName: Input[String] = js.native
+    val stackSetName: Input[String]
   }
   object StackSetInstanceArgs {
     
@@ -158,38 +155,37 @@ object stackSetInstanceMod {
     }
   }
   
-  @js.native
   trait StackSetInstanceState extends StObject {
     
     /**
       * Target AWS Account ID to create a Stack based on the StackSet. Defaults to current account.
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of input parameters to override from the StackSet for this Instance.
       */
-    val parameterOverrides: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameterOverrides: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Target AWS Region to create a Stack based on the StackSet. Defaults to current region.
       */
-    val region: js.UndefOr[Input[String]] = js.native
+    val region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * During resource destroy, remove Instance from StackSet while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new StackSet. Defaults to `false`.
       */
-    val retainStack: js.UndefOr[Input[Boolean]] = js.native
+    val retainStack: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Stack identifier
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the StackSet.
       */
-    val stackSetName: js.UndefOr[Input[String]] = js.native
+    val stackSetName: js.UndefOr[Input[String]] = js.undefined
   }
   object StackSetInstanceState {
     

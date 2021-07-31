@@ -2,36 +2,34 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type
-@js.native
 trait AggregationOperators extends StObject {
   
-  def abs(operand: Double): Double = js.native
+  def abs(operand: Double): Double
   
-  def add(operand: js.Any*): js.Any = js.native
+  def add(operand: js.Any*): js.Any
   
-  def addToSet(expression: String): js.Any = js.native
+  def addToSet(expression: String): js.Any
   
-  def allElementsTrue(expression: js.Array[String]): Boolean = js.native
+  def allElementsTrue(expression: js.Array[String]): Boolean
   
-  def and(expression: js.Array[Boolean]): Boolean = js.native
+  def and(expression: js.Array[Boolean]): Boolean
   
-  def anyElementTrue(expression: js.Array[String]): Boolean = js.native
+  def anyElementTrue(expression: js.Array[String]): Boolean
   
-  def arrayElemAt(expression: js.Tuple2[String, Double]): js.Any = js.native
+  def arrayElemAt(expression: js.Tuple2[String, Double]): js.Any
   
-  def arrayToObject(expression: String): js.Object = js.native
+  def arrayToObject(expression: String): js.Object
   
   // arrayToObject(expression: [string, any][]): object
   // arrayToObject(expression: {k: string; v: any}[]): object
-  def avg(expression: String): Double = js.native
+  def avg(expression: String): Double
   
-  def lt(expression: String, value: Double): Boolean = js.native
+  def lt(expression: String, value: Double): Boolean
   
-  def lte(expression: String, value: Double): Boolean = js.native
+  def lte(expression: String, value: Double): Boolean
 }
 object AggregationOperators {
   

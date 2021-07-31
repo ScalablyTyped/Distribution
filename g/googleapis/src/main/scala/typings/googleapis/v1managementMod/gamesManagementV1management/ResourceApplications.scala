@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Applications")
@@ -33,7 +32,7 @@ class ResourceApplications protected () extends StObject {
     */
   def listHidden(): GaxiosPromise[SchemaHiddenPlayerList] = js.native
   def listHidden(callback: BodyResponseCallback[SchemaHiddenPlayerList]): Unit = js.native
-  def listHidden(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHiddenPlayerList] = js.native
+  def listHidden(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHiddenPlayerList] = js.native
   def listHidden(params: ParamsResourceApplicationsListhidden): GaxiosPromise[SchemaHiddenPlayerList] = js.native
   def listHidden(
     params: ParamsResourceApplicationsListhidden,

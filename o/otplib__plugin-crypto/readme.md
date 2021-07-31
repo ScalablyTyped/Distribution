@@ -11,8 +11,8 @@ node crypto plugin for otplib
 | Full name          | @otplib/plugin-crypto |
 | Keywords           | otplib-plugin, crypto |
 | # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 590134 |
+| # dependents       | 4 |
+| # downloads        | 1479595 |
 | # stars            | 0 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renameSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object renameSmallMod extends Shortcut {
   @js.native
   val default: SFC[RenameSmallProps] = js.native
   
-  @js.native
-  trait RenameSmallProps extends SVGAttributes[SVGElement] {
+  trait RenameSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object RenameSmallProps {
     

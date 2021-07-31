@@ -2,15 +2,15 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListInsertOp extends Op {
+trait ListInsertOp
+  extends StObject
+     with Op {
   
-  var li: js.Any = js.native
+  var li: js.Any
   
-  var p: Path = js.native
+  var p: Path
 }
 object ListInsertOp {
   

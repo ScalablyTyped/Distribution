@@ -7,11 +7,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.FirstOddAndEven
 import typings.officeJsPreview.officeJsPreviewStrings.OddAndEven
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `headerFooterGroup.toJSON()`. */
-@js.native
 trait HeaderFooterGroupData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var defaultForAllPages: js.UndefOr[HeaderFooterData] = js.native
+  var defaultForAllPages: js.UndefOr[HeaderFooterData] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var evenPages: js.UndefOr[HeaderFooterData] = js.native
+  var evenPages: js.UndefOr[HeaderFooterData] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var firstPage: js.UndefOr[HeaderFooterData] = js.native
+  var firstPage: js.UndefOr[HeaderFooterData] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var oddPages: js.UndefOr[HeaderFooterData] = js.native
+  var oddPages: js.UndefOr[HeaderFooterData] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var state: js.UndefOr[HeaderFooterState | Default | FirstAndDefault | OddAndEven | FirstOddAndEven] = js.native
+  var state: js.UndefOr[HeaderFooterState | Default | FirstAndDefault | OddAndEven | FirstOddAndEven] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useSheetMargins: js.UndefOr[Boolean] = js.native
+  var useSheetMargins: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait HeaderFooterGroupData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useSheetScale: js.UndefOr[Boolean] = js.native
+  var useSheetScale: js.UndefOr[Boolean] = js.undefined
 }
 object HeaderFooterGroupData {
   

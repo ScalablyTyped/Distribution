@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedIdentitie
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
   
-  var response: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16` = js.native
+  var response: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`
 }
 object ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
   
   @scala.inline
   def apply(
     parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
-    response: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`
+    response: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`
   ): ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint]
@@ -33,6 +31,6 @@ object ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
     def setParameters(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] with `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData] & `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

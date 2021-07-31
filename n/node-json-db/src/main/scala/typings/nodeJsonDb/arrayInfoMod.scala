@@ -4,10 +4,13 @@ import typings.nodeJsonDb.utilsMod.KeyValue
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayInfoMod {
+  
+  @JSImport("node-json-db/dist/lib/ArrayInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-json-db/dist/lib/ArrayInfo", "ArrayInfo")
   @js.native
@@ -56,19 +59,20 @@ object arrayInfoMod {
   /* static members */
   object ArrayInfo {
     
+    @JSImport("node-json-db/dist/lib/ArrayInfo", "ArrayInfo")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Check if the property want to access an Array
       * @param property
       */
-    @JSImport("node-json-db/dist/lib/ArrayInfo", "ArrayInfo.processArray")
-    @js.native
-    def processArray(): ArrayInfo | Null = js.native
-    @JSImport("node-json-db/dist/lib/ArrayInfo", "ArrayInfo.processArray")
-    @js.native
-    def processArray(property: String): ArrayInfo | Null = js.native
+    @scala.inline
+    def processArray(): ArrayInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processArray")().asInstanceOf[ArrayInfo | Null]
+    @scala.inline
+    def processArray(property: String): ArrayInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("processArray")(property.asInstanceOf[js.Any]).asInstanceOf[ArrayInfo | Null]
   }
   
-  @JSImport("node-json-db/dist/lib/ArrayInfo", "arrayRegex")
-  @js.native
-  def arrayRegex(): RegExp = js.native
+  @scala.inline
+  def arrayRegex(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRegex")().asInstanceOf[RegExp]
 }

@@ -2,47 +2,45 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMember extends StObject {
   
-  var can_add_web_page_previews: js.UndefOr[Boolean] = js.native
+  var can_add_web_page_previews: js.UndefOr[Boolean] = js.undefined
   
-  var can_be_edited: js.UndefOr[Boolean] = js.native
+  var can_be_edited: js.UndefOr[Boolean] = js.undefined
   
-  var can_change_info: js.UndefOr[Boolean] = js.native
+  var can_change_info: js.UndefOr[Boolean] = js.undefined
   
-  var can_delete_messages: js.UndefOr[Boolean] = js.native
+  var can_delete_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_edit_messages: js.UndefOr[Boolean] = js.native
+  var can_edit_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_invite_users: js.UndefOr[Boolean] = js.native
+  var can_invite_users: js.UndefOr[Boolean] = js.undefined
   
-  var can_pin_messages: js.UndefOr[Boolean] = js.native
+  var can_pin_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_post_messages: js.UndefOr[Boolean] = js.native
+  var can_post_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_promote_members: js.UndefOr[Boolean] = js.native
+  var can_promote_members: js.UndefOr[Boolean] = js.undefined
   
-  var can_restrict_members: js.UndefOr[Boolean] = js.native
+  var can_restrict_members: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_media_messages: js.UndefOr[Boolean] = js.native
+  var can_send_media_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_messages: js.UndefOr[Boolean] = js.native
+  var can_send_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_other_messages: js.UndefOr[Boolean] = js.native
+  var can_send_other_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_send_polls: Boolean = js.native
+  var can_send_polls: Boolean
   
-  var is_member: js.UndefOr[Boolean] = js.native
+  var is_member: js.UndefOr[Boolean] = js.undefined
   
-  var status: ChatMemberStatus = js.native
+  var status: ChatMemberStatus
   
-  var until_date: js.UndefOr[Double] = js.native
+  var until_date: js.UndefOr[Double] = js.undefined
   
-  var user: User = js.native
+  var user: User
 }
 object ChatMember {
   

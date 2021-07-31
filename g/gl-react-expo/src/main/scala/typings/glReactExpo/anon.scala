@@ -2,21 +2,19 @@ package typings.glReactExpo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var localUri: String = js.native
+    var localUri: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     

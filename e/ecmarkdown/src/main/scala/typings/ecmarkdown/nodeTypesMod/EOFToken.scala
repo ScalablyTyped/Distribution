@@ -4,23 +4,23 @@ import typings.ecmarkdown.ecmarkdownBooleans.`true`
 import typings.ecmarkdown.ecmarkdownStrings.EOF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EOFToken extends Token {
+trait EOFToken
+  extends StObject
+     with Token {
   
-  var done: `true` = js.native
+  var done: `true`
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: EOF = js.native
+  var name: EOF
 }
 object EOFToken {
   
   @scala.inline
-  def apply(done: `true`, location: LocationRange, name: EOF): EOFToken = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(location: LocationRange): EOFToken = {
+    val __obj = js.Dynamic.literal(done = true, location = location.asInstanceOf[js.Any], name = "EOF")
     __obj.asInstanceOf[EOFToken]
   }
   

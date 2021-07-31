@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientStoragetransfer.gapi.client.storagetransfe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsS3Data extends StObject {
   
   /**
     * Required. Input only. AWS access key used to sign the API requests to the AWS S3 bucket. Permissions on the bucket must be granted to the access ID of the AWS access key. For
     * information on our data retention policy for user credentials, see [User credentials](data-retention#user-credentials).
     */
-  var awsAccessKey: js.UndefOr[AwsAccessKey] = js.native
+  var awsAccessKey: js.UndefOr[AwsAccessKey] = js.undefined
   
   /** Required. S3 Bucket name (see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/dev/create-bucket-get-location-example.html)). */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
 }
 object AwsS3Data {
   

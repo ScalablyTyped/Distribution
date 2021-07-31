@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.CurrentFolderChanged event.
   */
-@js.native
-trait ASPxClientFileManagerCurrentFolderChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerCurrentFolderChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the full name of the folder currently being processed.
     */
-  var fullName: String = js.native
+  var fullName: String
   
   /**
     * Gets the name of the currently processed folder.
     */
-  var name: String = js.native
+  var name: String
 }
 object ASPxClientFileManagerCurrentFolderChangedEventArgs {
   

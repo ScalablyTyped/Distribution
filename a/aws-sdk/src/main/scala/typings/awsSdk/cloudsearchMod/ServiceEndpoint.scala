@@ -2,13 +2,11 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceEndpoint extends StObject {
   
-  var Endpoint: js.UndefOr[ServiceUrl] = js.native
+  var Endpoint: js.UndefOr[ServiceUrl] = js.undefined
 }
 object ServiceEndpoint {
   

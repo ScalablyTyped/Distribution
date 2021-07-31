@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows receive window-related events, additional to the ones received by an {@link XWindowListener} */
-@js.native
-trait XWindowListener2 extends XWindowListener {
+trait XWindowListener2
+  extends StObject
+     with XWindowListener {
   
   /** is called when the window has been disabled. */
-  def windowDisabled(e: EventObject): Unit = js.native
+  def windowDisabled(e: EventObject): Unit
   
   /** is called when the window has been enabled. */
-  def windowEnabled(e: EventObject): Unit = js.native
+  def windowEnabled(e: EventObject): Unit
 }
 object XWindowListener2 {
   

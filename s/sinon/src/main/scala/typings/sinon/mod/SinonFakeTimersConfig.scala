@@ -3,17 +3,15 @@ package typings.sinon.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinonFakeTimersConfig extends StObject {
   
-  var now: Double | Date = js.native
+  var now: Double | Date
   
-  var shouldAdvanceTime: Boolean = js.native
+  var shouldAdvanceTime: Boolean
   
-  var toFake: js.Array[String] = js.native
+  var toFake: js.Array[String]
 }
 object SinonFakeTimersConfig {
   

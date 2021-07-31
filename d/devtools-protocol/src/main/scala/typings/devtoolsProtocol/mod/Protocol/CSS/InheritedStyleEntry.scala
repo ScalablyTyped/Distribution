@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InheritedStyleEntry extends StObject {
   
   /**
     * The ancestor node's inline style, if any, in the style inheritance chain.
     */
-  var inlineStyle: js.UndefOr[CSSStyle] = js.native
+  var inlineStyle: js.UndefOr[CSSStyle] = js.undefined
   
   /**
     * Matches of CSS rules matching the ancestor node in the style inheritance chain.
     */
-  var matchedCSSRules: js.Array[RuleMatch] = js.native
+  var matchedCSSRules: js.Array[RuleMatch]
 }
 object InheritedStyleEntry {
   

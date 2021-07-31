@@ -27,7 +27,6 @@ import typings.std.RegExp
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -86,7 +85,7 @@ trait TelegramBot extends EventEmitter {
   def answerShippingQuery(shippingQueryId: String, ok: Boolean): js.Promise[Boolean] = js.native
   def answerShippingQuery(shippingQueryId: String, ok: Boolean, options: AnswerShippingQueryOptions): js.Promise[Boolean] = js.native
   
-  def closeWebHook(): js.Promise[_] = js.native
+  def closeWebHook(): js.Promise[js.Any] = js.native
   
   def deleteChatPhoto(chatId: String): js.Promise[Boolean] = js.native
   def deleteChatPhoto(chatId: Double): js.Promise[Boolean] = js.native
@@ -216,41 +215,41 @@ trait TelegramBot extends EventEmitter {
   @JSName("listenerCount")
   def listenerCount_webhookerror(event: webhook_error): Double = js.native
   
-  def listeners(event: MessageType): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners(event: MessageType): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_callbackquery(event: callback_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_callbackquery(event: callback_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_channelpost(event: channel_post): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_channelpost(event: channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_choseninlineresult(event: chosen_inline_result): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_choseninlineresult(event: chosen_inline_result): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_editedchannelpost(event: edited_channel_post): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_editedchannelpost(event: edited_channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_editedchannelpostcaption(event: edited_channel_post_caption): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_editedchannelpostcaption(event: edited_channel_post_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_editedchannelposttext(event: edited_channel_post_text): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_editedchannelposttext(event: edited_channel_post_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_editedmessage(event: edited_message): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_editedmessage(event: edited_message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_editedmessagecaption(event: edited_message_caption): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_editedmessagecaption(event: edited_message_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_editedmessagetext(event: edited_message_text): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_editedmessagetext(event: edited_message_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_error(event: error): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_error(event: error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_inlinequery(event: inline_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_inlinequery(event: inline_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_message(event: message): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_message(event: message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_pollanswer(event: poll_answer): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_pollanswer(event: poll_answer): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_pollingerror(event: polling_error): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_pollingerror(event: polling_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_precheckoutquery(event: pre_checkout_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_precheckoutquery(event: pre_checkout_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_shippingquery(event: shipping_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_shippingquery(event: shipping_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("listeners")
-  def listeners_webhookerror(event: webhook_error): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def listeners_webhookerror(event: webhook_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   
   def off(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   @JSName("off")
@@ -371,7 +370,7 @@ trait TelegramBot extends EventEmitter {
   @JSName("once")
   def once_webhookerror(event: webhook_error, listener: js.Function1[/* error */ Error, Unit]): this.type = js.native
   
-  def openWebHook(): js.Promise[_] = js.native
+  def openWebHook(): js.Promise[js.Any] = js.native
   
   def pinChatMessage(chatId: String, messageId: String): js.Promise[Boolean] = js.native
   def pinChatMessage(chatId: Double, messageId: String): js.Promise[Boolean] = js.native
@@ -455,41 +454,41 @@ trait TelegramBot extends EventEmitter {
   def promoteChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
   def promoteChatMember(chatId: Double, userId: String, options: PromoteChatMemberOptions): js.Promise[Boolean] = js.native
   
-  def rawListeners(event: MessageType): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners(event: MessageType): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_callbackquery(event: callback_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_callbackquery(event: callback_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_channelpost(event: channel_post): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_channelpost(event: channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_choseninlineresult(event: chosen_inline_result): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_choseninlineresult(event: chosen_inline_result): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_editedchannelpost(event: edited_channel_post): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_editedchannelpost(event: edited_channel_post): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_editedchannelpostcaption(event: edited_channel_post_caption): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_editedchannelpostcaption(event: edited_channel_post_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_editedchannelposttext(event: edited_channel_post_text): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_editedchannelposttext(event: edited_channel_post_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_editedmessage(event: edited_message): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_editedmessage(event: edited_message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_editedmessagecaption(event: edited_message_caption): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_editedmessagecaption(event: edited_message_caption): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_editedmessagetext(event: edited_message_text): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_editedmessagetext(event: edited_message_text): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_error(event: error): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_error(event: error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_inlinequery(event: inline_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_inlinequery(event: inline_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_message(event: message): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_message(event: message): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_pollanswer(event: poll_answer): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_pollanswer(event: poll_answer): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_pollingerror(event: polling_error): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_pollingerror(event: polling_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_precheckoutquery(event: pre_checkout_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_precheckoutquery(event: pre_checkout_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_shippingquery(event: shipping_query): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_shippingquery(event: shipping_query): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   @JSName("rawListeners")
-  def rawListeners_webhookerror(event: webhook_error): js.Array[js.Function2[/* data */ _, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
+  def rawListeners_webhookerror(event: webhook_error): js.Array[js.Function2[/* data */ js.Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   
   def removeAllListeners(event: MessageType): this.type = js.native
   @JSName("removeAllListeners")
@@ -612,27 +611,27 @@ trait TelegramBot extends EventEmitter {
   def sendDice(chatId: Double, options: SendDiceOptions): js.Promise[Message] = js.native
   
   def sendDocument(chatId: String, doc: String): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: String, options: js.UndefOr[scala.Nothing], fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDocument(chatId: String, doc: String, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: String, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: String, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: Buffer): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Buffer, options: js.UndefOr[scala.Nothing], fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDocument(chatId: String, doc: Buffer, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: Buffer, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: Buffer, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: Stream): js.Promise[Message] = js.native
-  def sendDocument(chatId: String, doc: Stream, options: js.UndefOr[scala.Nothing], fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDocument(chatId: String, doc: Stream, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: Stream, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: String, doc: Stream, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: String): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: String, options: js.UndefOr[scala.Nothing], fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDocument(chatId: Double, doc: String, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: String, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: String, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: Buffer): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Buffer, options: js.UndefOr[scala.Nothing], fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDocument(chatId: Double, doc: Buffer, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: Buffer, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: Buffer, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: Stream): js.Promise[Message] = js.native
-  def sendDocument(chatId: Double, doc: Stream, options: js.UndefOr[scala.Nothing], fileOpts: js.Any): js.Promise[Message] = js.native
+  def sendDocument(chatId: Double, doc: Stream, options: Unit, fileOpts: js.Any): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: Stream, options: SendDocumentOptions): js.Promise[Message] = js.native
   def sendDocument(chatId: Double, doc: Stream, options: SendDocumentOptions, fileOpts: js.Any): js.Promise[Message] = js.native
   
@@ -815,11 +814,11 @@ trait TelegramBot extends EventEmitter {
   
   def setMyCommands(commands: js.Array[BotCommand]): js.Promise[Boolean] = js.native
   
-  def setWebHook(url: String): js.Promise[_] = js.native
-  def setWebHook(url: String, options: SetWebHookOptions): js.Promise[_] = js.native
+  def setWebHook(url: String): js.Promise[js.Any] = js.native
+  def setWebHook(url: String, options: SetWebHookOptions): js.Promise[js.Any] = js.native
   
-  def startPolling(): js.Promise[_] = js.native
-  def startPolling(options: StartPollingOptions): js.Promise[_] = js.native
+  def startPolling(): js.Promise[js.Any] = js.native
+  def startPolling(options: StartPollingOptions): js.Promise[js.Any] = js.native
   
   def stopMessageLiveLocation(): js.Promise[Message | Boolean] = js.native
   def stopMessageLiveLocation(options: StopMessageLiveLocationOptions): js.Promise[Message | Boolean] = js.native
@@ -832,8 +831,8 @@ trait TelegramBot extends EventEmitter {
   def stopPoll(chatId: Double, messageId: Double): js.Promise[Poll] = js.native
   def stopPoll(chatId: Double, messageId: Double, options: StopPollOptions): js.Promise[Poll] = js.native
   
-  def stopPolling(): js.Promise[_] = js.native
-  def stopPolling(options: StopPollingOptions): js.Promise[_] = js.native
+  def stopPolling(): js.Promise[js.Any] = js.native
+  def stopPolling(options: StopPollingOptions): js.Promise[js.Any] = js.native
   
   def unbanChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
   def unbanChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native

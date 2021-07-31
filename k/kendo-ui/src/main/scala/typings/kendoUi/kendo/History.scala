@@ -2,11 +2,12 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait History extends Observable {
+trait History
+  extends StObject
+     with Observable {
   
   def change(callback: js.Function): Unit = js.native
   

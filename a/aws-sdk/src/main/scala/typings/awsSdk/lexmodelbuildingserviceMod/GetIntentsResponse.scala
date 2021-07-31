@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIntentsResponse extends StObject {
   
   /**
     * An array of Intent objects. For more information, see PutBot.
     */
-  var intents: js.UndefOr[IntentMetadataList] = js.native
+  var intents: js.UndefOr[IntentMetadataList] = js.undefined
   
   /**
     * If the response is truncated, the response includes a pagination token that you can specify in your next request to fetch the next page of intents. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetIntentsResponse {
   

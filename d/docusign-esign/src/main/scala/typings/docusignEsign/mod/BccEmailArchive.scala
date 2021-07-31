@@ -2,53 +2,51 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BccEmailArchive extends StObject {
   
   /**
     * The id of the account that owns the BCC email archive configuration.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the BCC email archive configuration.
     */
-  var bccEmailArchiveId: js.UndefOr[String] = js.native
+  var bccEmailArchiveId: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the BCC email archive configuration was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the user who created the BCC email archive configuration.
     */
-  var createdBy: js.UndefOr[UserInfo] = js.native
+  var createdBy: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The BCC email address to use for archiving DocuSign messages.
     *
     * Example: customer_bcc@example.com
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID of the activation email message sent to the BCC email address.
     */
-  var emailNotificationId: js.UndefOr[String] = js.native
+  var emailNotificationId: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the BCC email archive configuration was last modified.
     */
-  var modified: js.UndefOr[String] = js.native
+  var modified: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the user who last modified the BCC email archive configuration.
     */
-  var modifiedBy: js.UndefOr[UserInfo] = js.native
+  var modifiedBy: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The status of the BCC email address. Possible values are:
@@ -57,12 +55,12 @@ trait BccEmailArchive extends StObject {
     * - `active`: The BCC email address is actively used for archiving.
     * - `closed`: The BCC email address is no longer used for archiving.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The helper URI for retrieving the BCC email archive.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object BccEmailArchive {
   

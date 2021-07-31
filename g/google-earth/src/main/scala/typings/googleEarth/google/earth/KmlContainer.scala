@@ -2,11 +2,11 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlContainer extends KmlFeature {
+trait KmlContainer
+  extends StObject
+     with KmlFeature {
   
   /**
     * Get an element by ID.
@@ -17,7 +17,7 @@ trait KmlContainer extends KmlFeature {
     * Usage is when finding objects created with JavaScript, which have unspecified base URLs.
     * The object must be a descendant of the container before it can be found.
     */
-  def getElementById(id: String): KmlObject = js.native
+  def getElementById(id: String): KmlObject
   
   /**
     * Get an element by URL. A URL consists of the base address and ID, joined with the # character. 
@@ -28,17 +28,17 @@ trait KmlContainer extends KmlFeature {
     * In the case of plugin created objects, the URL is simply #foo.
     * The object must be a descendant of the container before it can be found.
     */
-  def getElementByUrl(url: String): KmlObject = js.native
+  def getElementByUrl(url: String): KmlObject
   
   /**
     * Get an element by type.
     */
-  def getElementsByType(`type`: String): KmlObjectList[KmlObject] = js.native
+  def getElementsByType(`type`: String): KmlObjectList[KmlObject]
   
   /**
     * A collection of features, such as name, description, and so on.
     */
-  def getFeatures(): GEFeatureContainer = js.native
+  def getFeatures(): GEFeatureContainer
 }
 object KmlContainer {
   

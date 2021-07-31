@@ -1,31 +1,27 @@
 package typings.authmosphere
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bodyParametersMod {
   
-  /* Inlined node.NodeJS.Dict<string | number | boolean | std.Array<string> | std.Array<number> | std.Array<boolean> | null> & {  grant_type :string,   username :string | undefined,   password :string | undefined,   code :string | undefined,   redirect_uri :string | undefined,   refresh_token :string | undefined} */
-  @js.native
   trait BodyParameters
-    extends /* key */ StringDictionary[
-          js.UndefOr[String | Double | Boolean | (js.Array[Boolean | Double | String]) | Null]
-        ] {
+    extends StObject
+       with Dict[String | Double | Boolean | (js.Array[Boolean | Double | String]) | Null] {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var grant_type: String = js.native
+    var grant_type: String
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var redirect_uri: js.UndefOr[String] = js.native
+    var redirect_uri: js.UndefOr[String] = js.undefined
     
-    var refresh_token: js.UndefOr[String] = js.native
+    var refresh_token: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object BodyParameters {
     

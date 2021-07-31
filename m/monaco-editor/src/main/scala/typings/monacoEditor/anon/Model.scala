@@ -3,15 +3,13 @@ package typings.monacoEditor.anon
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model extends StObject {
   
-  val model: ITextModel = js.native
+  val model: ITextModel
   
-  val oldLanguage: String = js.native
+  val oldLanguage: String
 }
 object Model {
   

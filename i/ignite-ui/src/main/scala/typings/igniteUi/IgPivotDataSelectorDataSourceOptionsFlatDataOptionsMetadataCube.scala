@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,24 +15,24 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
   /**
     * A caption for the cube.
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * An array of dimension metadata objects.
     */
   var dimensions: js.UndefOr[
     js.Array[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimension]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An object providing information about the measures' root node.
     */
-  var measuresDimension: js.UndefOr[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension] = js.native
+  var measuresDimension: js.UndefOr[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension] = js.undefined
   
   /**
     * Optional="false" A unique name for the cube.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube {
   

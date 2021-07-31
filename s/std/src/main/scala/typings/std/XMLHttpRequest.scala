@@ -3,12 +3,13 @@ package typings.std
 import typings.std.stdStrings.readystatechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing. */
 @js.native
-trait XMLHttpRequest extends XMLHttpRequestEventTarget {
+trait XMLHttpRequest
+  extends StObject
+     with XMLHttpRequestEventTarget {
   
   val DONE: Double = js.native
   
@@ -26,17 +27,17 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
   def abort(): Unit = js.native
   
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -44,7 +45,7 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
   
   def getResponseHeader(name: java.lang.String): java.lang.String | Null = js.native
   
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   /**
     * Sets the request method, request URL, and synchronous flag.
@@ -57,13 +58,6 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     */
   def open(method: java.lang.String, url: java.lang.String): Unit = js.native
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean): Unit = js.native
-  def open(
-    method: java.lang.String,
-    url: java.lang.String,
-    async: scala.Boolean,
-    username: js.UndefOr[scala.Nothing],
-    password: java.lang.String
-  ): Unit = js.native
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean, username: java.lang.String): Unit = js.native
   def open(
     method: java.lang.String,
@@ -77,6 +71,13 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     url: java.lang.String,
     async: scala.Boolean,
     username: Null,
+    password: java.lang.String
+  ): Unit = js.native
+  def open(
+    method: java.lang.String,
+    url: java.lang.String,
+    async: scala.Boolean,
+    username: Unit,
     password: java.lang.String
   ): Unit = js.native
   
@@ -93,17 +94,17 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
   val readyState: Double = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

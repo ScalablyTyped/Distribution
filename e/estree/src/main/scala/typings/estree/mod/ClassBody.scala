@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassBody
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var body: js.Array[MethodDefinition] = js.native
+  var body: js.Array[MethodDefinition]
   
   @JSName("type")
-  var type_ClassBody: typings.estree.estreeStrings.ClassBody = js.native
+  var type_ClassBody: typings.estree.estreeStrings.ClassBody
 }
 object ClassBody {
   
   @scala.inline
-  def apply(body: js.Array[MethodDefinition], `type`: typings.estree.estreeStrings.ClassBody): ClassBody = {
+  def apply(body: js.Array[MethodDefinition]): ClassBody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassBody")
     __obj.asInstanceOf[ClassBody]
   }
   

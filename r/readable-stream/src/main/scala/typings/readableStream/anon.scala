@@ -3,26 +3,24 @@ package typings.readableStream
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AfterTransform extends StObject {
     
-    def afterTransform(er: js.Any, data: js.Any): Unit | Boolean = js.native
+    def afterTransform(er: js.Any, data: js.Any): Unit | Boolean
     
-    var needTransform: Boolean = js.native
+    var needTransform: Boolean
     
-    var transforming: Boolean = js.native
+    var transforming: Boolean
     
-    var writecb: (js.Function1[/* err */ js.Any, _]) | Null = js.native
+    var writecb: (js.Function1[/* err */ js.Any, js.Any]) | Null
     
-    var writechunk: js.Any = js.native
+    var writechunk: js.Any
     
     // TODO
-    var writeencoding: BufferEncoding | Null = js.native
+    var writeencoding: BufferEncoding | Null
   }
   object AfterTransform {
     
@@ -33,7 +31,7 @@ object anon {
       transforming: Boolean,
       writechunk: js.Any
     ): AfterTransform = {
-      val __obj = js.Dynamic.literal(afterTransform = js.Any.fromFunction2(afterTransform), needTransform = needTransform.asInstanceOf[js.Any], transforming = transforming.asInstanceOf[js.Any], writechunk = writechunk.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(afterTransform = js.Any.fromFunction2(afterTransform), needTransform = needTransform.asInstanceOf[js.Any], transforming = transforming.asInstanceOf[js.Any], writechunk = writechunk.asInstanceOf[js.Any], writecb = null, writeencoding = null)
       __obj.asInstanceOf[AfterTransform]
     }
     
@@ -50,7 +48,7 @@ object anon {
       def setTransforming(value: Boolean): Self = StObject.set(x, "transforming", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWritecb(value: /* err */ js.Any => _): Self = StObject.set(x, "writecb", js.Any.fromFunction1(value))
+      def setWritecb(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "writecb", js.Any.fromFunction1(value))
       
       @scala.inline
       def setWritecbNull: Self = StObject.set(x, "writecb", null)
@@ -66,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Chunk extends StObject {
     
-    var chunk: js.Any = js.native
+    var chunk: js.Any
     
-    var encoding: BufferEncoding | String = js.native
+    var encoding: BufferEncoding | String
   }
   object Chunk {
     
@@ -92,12 +89,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var chunk: js.Any = js.native
+    var chunk: js.Any
     
-    var encoding: BufferEncoding = js.native
+    var encoding: BufferEncoding
   }
   object Encoding {
     
@@ -118,10 +114,9 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
   }
   object End {
     

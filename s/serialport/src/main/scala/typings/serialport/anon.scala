@@ -11,15 +11,13 @@ import typings.serialport.serialportStrings.utf8
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var delimiter: String | Buffer | js.Array[Double] = js.native
+    var delimiter: String | Buffer | js.Array[Double]
   }
   object `0` {
     
@@ -40,14 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Cts extends StObject {
     
-    var cts: Boolean = js.native
+    var cts: Boolean
     
-    var dcd: Boolean = js.native
+    var dcd: Boolean
     
-    var dsr: Boolean = js.native
+    var dsr: Boolean
   }
   object Cts {
     
@@ -71,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Delimiter extends StObject {
     
-    var delimiter: String | Buffer | js.Array[Double] = js.native
+    var delimiter: String | Buffer | js.Array[Double]
     
-    var includeDelimiter: js.UndefOr[Boolean] = js.native
+    var includeDelimiter: js.UndefOr[Boolean] = js.undefined
   }
   object Delimiter {
     
@@ -103,14 +99,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var delimiter: String | Buffer | js.Array[Double] = js.native
+    var delimiter: String | Buffer | js.Array[Double]
     
-    var encoding: js.UndefOr[ascii | utf8 | utf16le | ucs2 | base64 | binary | hex] = js.native
+    var encoding: js.UndefOr[ascii | utf8 | utf16le | ucs2 | base64 | binary | hex] = js.undefined
     
-    var includeDelimiter: js.UndefOr[Boolean] = js.native
+    var includeDelimiter: js.UndefOr[Boolean] = js.undefined
   }
   object Encoding {
     
@@ -143,10 +138,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Length {
     
@@ -164,10 +158,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Regex extends StObject {
     
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object Regex {
     
@@ -185,12 +178,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Vmin extends StObject {
     
-    var vmin: js.UndefOr[Double] = js.native
+    var vmin: js.UndefOr[Double] = js.undefined
     
-    var vtime: js.UndefOr[Double] = js.native
+    var vtime: js.UndefOr[Double] = js.undefined
   }
   object Vmin {
     

@@ -2,13 +2,11 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMatrixData extends StObject {
   
-  def onMatrixRowChanged(row: MatrixRowModel): Unit = js.native
+  def onMatrixRowChanged(row: MatrixRowModel): Unit
 }
 object IMatrixData {
   

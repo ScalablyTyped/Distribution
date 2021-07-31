@@ -3,14 +3,12 @@ package typings.popperjsCore.anon
 import typings.popperjsCore.offsetMod.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/offset.Options> */
-@js.native
 trait PartialOptionsOffset extends StObject {
   
-  var offset: js.UndefOr[Offset] = js.native
+  var offset: js.UndefOr[Offset] = js.undefined
 }
 object PartialOptionsOffset {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginShield extends StObject {
   
   /**
     * A flag that specifies whether Origin Shield is enabled. When it’s enabled, CloudFront routes all requests through Origin Shield, which can help protect your origin. When it’s disabled, CloudFront might send requests directly to your origin from multiple edge locations or regional edge caches.
     */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /**
     * The AWS Region for Origin Shield. Specify the AWS Region that has the lowest latency to your origin. To specify a region, use the region code, not the region name. For example, specify the US East (Ohio) region as us-east-2. When you enable CloudFront Origin Shield, you must specify the AWS Region for Origin Shield. For the list of AWS Regions that you can specify, and for help choosing the best Region for your origin, see Choosing the AWS Region for Origin Shield in the Amazon CloudFront Developer Guide.
     */
-  var OriginShieldRegion: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginShieldRegion] = js.native
+  var OriginShieldRegion: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginShieldRegion] = js.undefined
 }
 object OriginShield {
   

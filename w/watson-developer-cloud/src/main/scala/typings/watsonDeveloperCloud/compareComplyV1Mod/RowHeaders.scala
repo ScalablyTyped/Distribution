@@ -2,36 +2,34 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Row-level cells, each applicable as a header to other cells in the same row as itself, of the current table. */
-@js.native
 trait RowHeaders extends StObject {
   
   /** The unique ID of the cell in the current table. */
-  var cell_id: js.UndefOr[String] = js.native
+  var cell_id: js.UndefOr[String] = js.undefined
   
   /** The `begin` index of this cell's `column` location in the current table. */
-  var column_index_begin: js.UndefOr[Double] = js.native
+  var column_index_begin: js.UndefOr[Double] = js.undefined
   
   /** The `end` index of this cell's `column` location in the current table. */
-  var column_index_end: js.UndefOr[Double] = js.native
+  var column_index_end: js.UndefOr[Double] = js.undefined
   
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** The `begin` index of this cell's `row` location in the current table. */
-  var row_index_begin: js.UndefOr[Double] = js.native
+  var row_index_begin: js.UndefOr[Double] = js.undefined
   
   /** The `end` index of this cell's `row` location in the current table. */
-  var row_index_end: js.UndefOr[Double] = js.native
+  var row_index_end: js.UndefOr[Double] = js.undefined
   
   /** The textual contents of this cell from the input document without associated markup content. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** If you provide customization input, the normalized version of the cell text according to the customization; otherwise, the same value as `text`. */
-  var text_normalized: js.UndefOr[String] = js.native
+  var text_normalized: js.UndefOr[String] = js.undefined
 }
 object RowHeaders {
   

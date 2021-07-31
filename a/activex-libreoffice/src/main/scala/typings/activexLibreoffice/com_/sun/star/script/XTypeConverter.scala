@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to provide standard type conversions.
   * @see Converter
   */
-@js.native
-trait XTypeConverter extends XInterface {
+trait XTypeConverter
+  extends StObject
+     with XInterface {
   
   /**
     * Converts the value `aFrom` to the specified type `xDestinationType` . Throws an {@link CannotConvertException} if the conversion failed.
@@ -21,7 +21,7 @@ trait XTypeConverter extends XInterface {
     * @param xDestinationType destination type
     * @returns converted value (any carrying value of type `xDestinationType`
     */
-  def convertTo(aFrom: js.Any, xDestinationType: `type`): js.Any = js.native
+  def convertTo(aFrom: js.Any, xDestinationType: `type`): js.Any
   
   /**
     * Converts the value `aFrom` to the specified simple type `aDestinationType` . Throws an {@link CannotConvertException} if the conversion failed and an
@@ -30,7 +30,7 @@ trait XTypeConverter extends XInterface {
     * @param aDestinationType destination type class
     * @returns converted value (any carrying value of type `aDestinationType`
     */
-  def convertToSimpleType(aFrom: js.Any, aDestinationType: TypeClass): js.Any = js.native
+  def convertToSimpleType(aFrom: js.Any, aDestinationType: TypeClass): js.Any
 }
 object XTypeConverter {
   

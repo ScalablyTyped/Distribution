@@ -3,13 +3,11 @@ package typings.gitlab.anon
 import typings.gitlab.notificationSettingsMod.NotificationSettingLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
-  var level: js.UndefOr[NotificationSettingLevel] = js.native
+  var level: js.UndefOr[NotificationSettingLevel] = js.undefined
 }
 object Level {
   

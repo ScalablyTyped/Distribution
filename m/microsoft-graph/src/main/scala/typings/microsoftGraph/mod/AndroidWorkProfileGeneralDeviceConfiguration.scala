@@ -2,122 +2,122 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration {
+trait AndroidWorkProfileGeneralDeviceConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Indicates whether or not to block fingerprint unlock.
-  var passwordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.native
+  var passwordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Smart Lock and other trust agents.
-  var passwordBlockTrustAgents: js.UndefOr[Boolean] = js.native
+  var passwordBlockTrustAgents: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the password expires. Valid values 1 to 365
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of passwords. Valid values 4 to 16
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before the screen times out.
-  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block. Valid values 0 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Type of password that is required. Possible values are: deviceDefault, lowSecurityBiometric, required, atLeastNumeric,
     * numericComplex, atLeastAlphabetic, atLeastAlphanumeric, alphanumericWithSymbols.
     */
-  var passwordRequiredType: js.UndefOr[AndroidWorkProfileRequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[AndroidWorkProfileRequiredPasswordType] = js.undefined
   
   // Number of sign in failures allowed before factory reset. Valid values 1 to 16
-  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Require the Android Verify apps feature is turned on.
-  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.native
+  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined
   
   // Block users from adding/removing accounts in work profile.
-  var workProfileBlockAddingAccounts: js.UndefOr[Boolean] = js.native
+  var workProfileBlockAddingAccounts: js.UndefOr[Boolean] = js.undefined
   
   // Block work profile camera.
-  var workProfileBlockCamera: js.UndefOr[Boolean] = js.native
+  var workProfileBlockCamera: js.UndefOr[Boolean] = js.undefined
   
   // Block display work profile caller ID in personal profile.
-  var workProfileBlockCrossProfileCallerId: js.UndefOr[Boolean] = js.native
+  var workProfileBlockCrossProfileCallerId: js.UndefOr[Boolean] = js.undefined
   
   // Block work profile contacts availability in personal profile.
-  var workProfileBlockCrossProfileContactsSearch: js.UndefOr[Boolean] = js.native
+  var workProfileBlockCrossProfileContactsSearch: js.UndefOr[Boolean] = js.undefined
   
   // Boolean that indicates if the setting disallow cross profile copy/paste is enabled.
-  var workProfileBlockCrossProfileCopyPaste: js.UndefOr[Boolean] = js.native
+  var workProfileBlockCrossProfileCopyPaste: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block notifications while device locked.
-  var workProfileBlockNotificationsWhileDeviceLocked: js.UndefOr[Boolean] = js.native
+  var workProfileBlockNotificationsWhileDeviceLocked: js.UndefOr[Boolean] = js.undefined
   
   // Block screen capture in work profile.
-  var workProfileBlockScreenCapture: js.UndefOr[Boolean] = js.native
+  var workProfileBlockScreenCapture: js.UndefOr[Boolean] = js.undefined
   
   // Allow bluetooth devices to access enterprise contacts.
-  var workProfileBluetoothEnableContactSharing: js.UndefOr[Boolean] = js.native
+  var workProfileBluetoothEnableContactSharing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of data sharing that is allowed. Possible values are: deviceDefault, preventAny, allowPersonalToWork,
     * noRestrictions.
     */
-  var workProfileDataSharingType: js.UndefOr[AndroidWorkProfileCrossProfileDataSharingType] = js.native
+  var workProfileDataSharingType: js.UndefOr[AndroidWorkProfileCrossProfileDataSharingType] = js.undefined
   
   // Type of password that is required. Possible values are: deviceDefault, prompt, autoGrant, autoDeny.
-  var workProfileDefaultAppPermissionPolicy: js.UndefOr[AndroidWorkProfileDefaultAppPermissionPolicyType] = js.native
+  var workProfileDefaultAppPermissionPolicy: js.UndefOr[AndroidWorkProfileDefaultAppPermissionPolicyType] = js.undefined
   
   // Indicates whether or not to block fingerprint unlock for work profile.
-  var workProfilePasswordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.native
+  var workProfilePasswordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Smart Lock and other trust agents for work profile.
-  var workProfilePasswordBlockTrustAgents: js.UndefOr[Boolean] = js.native
+  var workProfilePasswordBlockTrustAgents: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the work profile password expires. Valid values 1 to 365
-  var workProfilePasswordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum # of letter characters required in work profile password. Valid values 1 to 10
-  var workProfilePasswordMinLetterCharacters: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinLetterCharacters: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum # of lower-case characters required in work profile password. Valid values 1 to 10
-  var workProfilePasswordMinLowerCaseCharacters: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinLowerCaseCharacters: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum # of non-letter characters required in work profile password. Valid values 1 to 10
-  var workProfilePasswordMinNonLetterCharacters: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinNonLetterCharacters: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum # of numeric characters required in work profile password. Valid values 1 to 10
-  var workProfilePasswordMinNumericCharacters: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinNumericCharacters: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum # of symbols required in work profile password. Valid values 1 to 10
-  var workProfilePasswordMinSymbolCharacters: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinSymbolCharacters: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum # of upper-case characters required in work profile password. Valid values 1 to 10
-  var workProfilePasswordMinUpperCaseCharacters: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinUpperCaseCharacters: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of work profile password. Valid values 4 to 16
-  var workProfilePasswordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before the screen times out.
-  var workProfilePasswordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous work profile passwords to block. Valid values 0 to 24
-  var workProfilePasswordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Type of work profile password that is required. Possible values are: deviceDefault, lowSecurityBiometric, required,
     * atLeastNumeric, numericComplex, atLeastAlphabetic, atLeastAlphanumeric, alphanumericWithSymbols.
     */
-  var workProfilePasswordRequiredType: js.UndefOr[AndroidWorkProfileRequiredPasswordType] = js.native
+  var workProfilePasswordRequiredType: js.UndefOr[AndroidWorkProfileRequiredPasswordType] = js.undefined
   
   // Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16
-  var workProfilePasswordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.native
+  var workProfilePasswordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Password is required or not for work profile
-  var workProfileRequirePassword: js.UndefOr[Boolean] = js.native
+  var workProfileRequirePassword: js.UndefOr[Boolean] = js.undefined
 }
 object AndroidWorkProfileGeneralDeviceConfiguration {
   

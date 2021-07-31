@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.revoked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a mechanism for applications to execute when they are not in the foreground. */
@@ -22,15 +21,21 @@ object ExtendedExecution {
     
     /** To support location tracking. */
     @js.native
-    sealed trait locationTracking extends ExtendedExecutionReason
+    sealed trait locationTracking
+      extends StObject
+         with ExtendedExecutionReason
     
     /** To save data. */
     @js.native
-    sealed trait savingData extends ExtendedExecutionReason
+    sealed trait savingData
+      extends StObject
+         with ExtendedExecutionReason
     
     /** No reason specified. */
     @js.native
-    sealed trait unspecified extends ExtendedExecutionReason
+    sealed trait unspecified
+      extends StObject
+         with ExtendedExecutionReason
   }
   
   @js.native
@@ -42,11 +47,15 @@ object ExtendedExecution {
     
     /** App execution is allowed. */
     @js.native
-    sealed trait allowed extends ExtendedExecutionResult
+    sealed trait allowed
+      extends StObject
+         with ExtendedExecutionResult
     
     /** App execution is denied. */
     @js.native
-    sealed trait denied extends ExtendedExecutionResult
+    sealed trait denied
+      extends StObject
+         with ExtendedExecutionResult
   }
   
   @js.native
@@ -58,11 +67,15 @@ object ExtendedExecution {
     
     /** The app was resumed while it was executing in the background. */
     @js.native
-    sealed trait resumed extends ExtendedExecutionRevokedReason
+    sealed trait resumed
+      extends StObject
+         with ExtendedExecutionRevokedReason
     
     /** Background execution is revoked due to system resources. */
     @js.native
-    sealed trait systemPolicy extends ExtendedExecutionRevokedReason
+    sealed trait systemPolicy
+      extends StObject
+         with ExtendedExecutionRevokedReason
   }
   
   /** Provides a mechanism for applications to perform extended execution while they are in the foreground. */
@@ -77,19 +90,27 @@ object ExtendedExecution {
       
       /** To play audio. */
       @js.native
-      sealed trait backgroundAudio extends ExtendedExecutionForegroundReason
+      sealed trait backgroundAudio
+        extends StObject
+           with ExtendedExecutionForegroundReason
       
       /** To save data. */
       @js.native
-      sealed trait savingData extends ExtendedExecutionForegroundReason
+      sealed trait savingData
+        extends StObject
+           with ExtendedExecutionForegroundReason
       
       /** To perform any task that requires extended execution time. */
       @js.native
-      sealed trait unconstrained extends ExtendedExecutionForegroundReason
+      sealed trait unconstrained
+        extends StObject
+           with ExtendedExecutionForegroundReason
       
       /** No reason specified. */
       @js.native
-      sealed trait unspecified extends ExtendedExecutionForegroundReason
+      sealed trait unspecified
+        extends StObject
+           with ExtendedExecutionForegroundReason
     }
     
     @js.native
@@ -101,11 +122,15 @@ object ExtendedExecution {
       
       /** Extended execution is allowed. */
       @js.native
-      sealed trait allowed extends ExtendedExecutionForegroundResult
+      sealed trait allowed
+        extends StObject
+           with ExtendedExecutionForegroundResult
       
       /** App execution is not allowed. */
       @js.native
-      sealed trait denied extends ExtendedExecutionForegroundResult
+      sealed trait denied
+        extends StObject
+           with ExtendedExecutionForegroundResult
     }
     
     @js.native
@@ -117,19 +142,22 @@ object ExtendedExecution {
       
       /** The app was resumed during its extended execution. */
       @js.native
-      sealed trait resumed extends ExtendedExecutionForegroundRevokedReason
+      sealed trait resumed
+        extends StObject
+           with ExtendedExecutionForegroundRevokedReason
       
       /** Extended execution is revoked due to system resources. */
       @js.native
-      sealed trait systemPolicy extends ExtendedExecutionForegroundRevokedReason
+      sealed trait systemPolicy
+        extends StObject
+           with ExtendedExecutionForegroundRevokedReason
     }
     
     /** Passed to the event handler that is invoked when the system revokes extended execution. */
-    @js.native
     trait ExtendedExecutionForegroundRevokedEventArgs extends StObject {
       
       /** Gets the reason extended execution was revoked. */
-      var reason: ExtendedExecutionForegroundRevokedReason = js.native
+      var reason: ExtendedExecutionForegroundRevokedReason
     }
     object ExtendedExecutionForegroundRevokedEventArgs {
       
@@ -151,9 +179,9 @@ object ExtendedExecution {
     @js.native
     trait ExtendedExecutionForegroundSession extends StObject {
       
-      def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+      def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
       @JSName("addEventListener")
-      def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[_, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
+      def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
       
       /** Closes the session and removes the application's extended execution capability. */
       def close(): Unit = js.native
@@ -162,17 +190,17 @@ object ExtendedExecution {
       var description: String = js.native
       
       /** This event occurs when the system revokes extended execution. */
-      def onrevoked(ev: ExtendedExecutionForegroundRevokedEventArgs with WinRTEvent[_]): Unit = js.native
+      def onrevoked(ev: ExtendedExecutionForegroundRevokedEventArgs & WinRTEvent[js.Any]): Unit = js.native
       /** This event occurs when the system revokes extended execution. */
       @JSName("onrevoked")
-      var onrevoked_Original: TypedEventHandler[_, ExtendedExecutionForegroundRevokedEventArgs] = js.native
+      var onrevoked_Original: TypedEventHandler[js.Any, ExtendedExecutionForegroundRevokedEventArgs] = js.native
       
       /** Gets or sets the reason for the extended execution request. */
       var reason: ExtendedExecutionForegroundReason = js.native
       
-      def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+      def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
       @JSName("removeEventListener")
-      def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[_, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
+      def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionForegroundRevokedEventArgs]): Unit = js.native
       
       /**
         * Requests extended execution
@@ -183,11 +211,10 @@ object ExtendedExecution {
   }
   
   /** Represents the object that is passed as a parameter to the event handler that is invoked when the system revokes background execution. */
-  @js.native
   trait ExtendedExecutionRevokedEventArgs extends StObject {
     
     /** Gets the reason background execution was revoked. */
-    var reason: ExtendedExecutionRevokedReason = js.native
+    var reason: ExtendedExecutionRevokedReason
   }
   object ExtendedExecutionRevokedEventArgs {
     
@@ -209,9 +236,9 @@ object ExtendedExecution {
   @js.native
   trait ExtendedExecutionSession extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[_, ExtendedExecutionRevokedEventArgs]): Unit = js.native
+    def addEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionRevokedEventArgs]): Unit = js.native
     
     /** Closes the session and removes the application's capability to run in the background. */
     def close(): Unit = js.native
@@ -220,10 +247,10 @@ object ExtendedExecution {
     var description: String = js.native
     
     /** The Revoked event occurs when the system revokes background execution. */
-    def onrevoked(ev: ExtendedExecutionRevokedEventArgs with WinRTEvent[_]): Unit = js.native
+    def onrevoked(ev: ExtendedExecutionRevokedEventArgs & WinRTEvent[js.Any]): Unit = js.native
     /** The Revoked event occurs when the system revokes background execution. */
     @JSName("onrevoked")
-    var onrevoked_Original: TypedEventHandler[_, ExtendedExecutionRevokedEventArgs] = js.native
+    var onrevoked_Original: TypedEventHandler[js.Any, ExtendedExecutionRevokedEventArgs] = js.native
     
     /** Gets or sets a value to show progress in the shell. */
     var percentProgress: Double = js.native
@@ -231,9 +258,9 @@ object ExtendedExecution {
     /** Gets or sets the reason for the for the background execution request. */
     var reason: ExtendedExecutionReason = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[_, ExtendedExecutionRevokedEventArgs]): Unit = js.native
+    def removeEventListener_revoked(`type`: revoked, listener: TypedEventHandler[js.Any, ExtendedExecutionRevokedEventArgs]): Unit = js.native
     
     /**
       * Requests background execution.

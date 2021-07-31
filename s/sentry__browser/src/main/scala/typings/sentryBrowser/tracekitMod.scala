@@ -2,33 +2,34 @@ package typings.sentryBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tracekitMod {
   
-  @JSImport("@sentry/browser/dist/tracekit", "computeStackTrace")
+  @JSImport("@sentry/browser/dist/tracekit", JSImport.Namespace)
   @js.native
-  def computeStackTrace(ex: js.Any): StackTrace = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def computeStackTrace(ex: js.Any): StackTrace = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStackTrace")(ex.asInstanceOf[js.Any]).asInstanceOf[StackTrace]
+  
   trait StackFrame extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var column: Double | Null = js.native
+    var column: Double | Null
     
-    var func: String = js.native
+    var func: String
     
-    var line: Double | Null = js.native
+    var line: Double | Null
     
-    var url: String = js.native
+    var url: String
   }
   object StackFrame {
     
     @scala.inline
     def apply(args: js.Array[String], func: String, url: String): StackFrame = {
-      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], func = func.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], func = func.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], column = null, line = null)
       __obj.asInstanceOf[StackFrame]
     }
     
@@ -61,18 +62,17 @@ object tracekitMod {
     }
   }
   
-  @js.native
   trait StackTrace extends StObject {
     
-    var failed: js.UndefOr[Boolean] = js.native
+    var failed: js.UndefOr[Boolean] = js.undefined
     
-    var mechanism: js.UndefOr[String] = js.native
+    var mechanism: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var stack: js.Array[StackFrame] = js.native
+    var stack: js.Array[StackFrame]
   }
   object StackTrace {
     

@@ -11,8 +11,8 @@ Deprecation utility for WordPress.
 | Full name          | @wordpress/deprecated |
 | Keywords           | wordpress, gutenberg, deprecated |
 | # releases         | 15 |
-| # dependents       | 14 |
-| # downloads        | 705821 |
+| # dependents       | 18 |
+| # downloads        | 825466 |
 | # stars            | 0 |
 
 ## Links

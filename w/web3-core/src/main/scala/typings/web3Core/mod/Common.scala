@@ -2,17 +2,15 @@ package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Common extends StObject {
   
-  var baseChain: js.UndefOr[chain] = js.native
+  var baseChain: js.UndefOr[chain] = js.undefined
   
-  var customChain: CustomChainParams = js.native
+  var customChain: CustomChainParams
   
-  var hardfork: js.UndefOr[typings.web3Core.mod.hardfork] = js.native
+  var hardfork: js.UndefOr[typings.web3Core.mod.hardfork] = js.undefined
 }
 object Common {
   

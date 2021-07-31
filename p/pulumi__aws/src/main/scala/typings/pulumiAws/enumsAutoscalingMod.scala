@@ -8,7 +8,6 @@ import typings.pulumiAws.pulumiAwsStrings.autoscalingColonEC2_INSTANCE_TERMINATE
 import typings.pulumiAws.pulumiAwsStrings.autoscalingColonTEST_NOTIFICATION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enumsAutoscalingMod {

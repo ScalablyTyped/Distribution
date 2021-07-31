@@ -2,15 +2,14 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.Reflection, 'id'> */
-@js.native
 trait ReflectionPointer
-  extends __ModelToObject[js.Any] {
+  extends StObject
+     with __ModelToObject[js.Any] {
   
-  var id: ModelToObject[Double] | Double = js.native
+  var id: ModelToObject[Double] | Double
 }
 object ReflectionPointer {
   

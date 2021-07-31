@@ -2,46 +2,44 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message for the expected URL mappings.
   */
-@js.native
 trait SchemaUrlMapTest extends StObject {
   
   /**
     * The weight to use for the supplied host and path when using advanced
     * routing rules that involve traffic splitting.
     */
-  var backendServiceWeight: js.UndefOr[Double] = js.native
+  var backendServiceWeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Description of this test case.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The expected URL that should be redirected to for the host and path being
     * tested.
     */
-  var expectedUrlRedirect: js.UndefOr[String] = js.native
+  var expectedUrlRedirect: js.UndefOr[String] = js.undefined
   
   /**
     * Host portion of the URL.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Path portion of the URL.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Expected BackendService resource the given URL should be mapped to.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlMapTest {
   

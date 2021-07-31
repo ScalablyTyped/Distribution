@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningGroup extends StObject {
   
   /**
     * The UTC DateTime when the signing group was created. Read only.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user who created the signing group.
     */
-  var createdBy: js.UndefOr[String] = js.native
+  var createdBy: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The email address for the signing group. You can use a group email address to email all of the group members at the same time.
     */
-  var groupEmail: js.UndefOr[String] = js.native
+  var groupEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the group. The search_text provided in the call automatically performs a wild card search on group_name.
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     * The group type. Possible values include:
@@ -45,17 +43,17 @@ trait SigningGroup extends StObject {
     *
     * <!-- More? To do -->
     */
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the signing group was last modified. Read only.
     */
-  var modified: js.UndefOr[String] = js.native
+  var modified: js.UndefOr[String] = js.undefined
   
   /**
     * The user id (GUID) of the user who last modified this user record.
     */
-  var modifiedBy: js.UndefOr[String] = js.native
+  var modifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The ID of the [signing group](https://support.docusign.com/en/guides/ndse-user-guide-signing-groups).
@@ -64,12 +62,12 @@ trait SigningGroup extends StObject {
     * For this reason, we recommend that you do not include non-signer recipients (such as carbon copy recipients) in the same signing group as signer recipients.
     * However, you could create a second signing group for the non-signer recipients and change the default action of Needs to Sign to a different value, such as Receives a Copy.
     */
-  var signingGroupId: js.UndefOr[String] = js.native
+  var signingGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * User management information.
     */
-  var users: js.UndefOr[js.Array[SigningGroupUser]] = js.native
+  var users: js.UndefOr[js.Array[SigningGroupUser]] = js.undefined
 }
 object SigningGroup {
   

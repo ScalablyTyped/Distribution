@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSMSAttributesResponse extends StObject {
   
   /**
     * The SMS attribute names and their values.
     */
-  var attributes: js.UndefOr[MapStringToString] = js.native
+  var attributes: js.UndefOr[MapStringToString] = js.undefined
 }
 object GetSMSAttributesResponse {
   

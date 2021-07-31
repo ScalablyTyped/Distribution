@@ -6,7 +6,6 @@ import typings.hyperlorisTyson.typeAdapterMod.TypeAdapter
 import typings.hyperlorisTyson.typeTokenMod.TypeToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectTypeAdapterMod {
@@ -15,7 +14,7 @@ object objectTypeAdapterMod {
   @js.native
   class ObjectTypeAdapter protected ()
     extends TypeAdapter[js.Any] {
-    def this(tyson: Tyson, typeToken: TypeToken[_]) = this()
+    def this(tyson: Tyson, typeToken: TypeToken[js.Any]) = this()
     
     var _jsonPropertyMetadataMap: js.Any = js.native
     

@@ -4,7 +4,6 @@ import typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod.O
 import typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

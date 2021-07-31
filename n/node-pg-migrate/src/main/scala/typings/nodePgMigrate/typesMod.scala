@@ -12,44 +12,38 @@ import typings.nodePgMigrate.typesTypesMod.RenameTypeValue
 import typings.nodePgMigrate.typesTypesMod.SetTypeAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("node-pg-migrate/dist/operations/types", "addTypeAttribute")
+  @JSImport("node-pg-migrate/dist/operations/types", JSImport.Namespace)
   @js.native
-  def addTypeAttribute(mOptions: MigrationOptions): AddTypeAttribute = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/types", "addTypeValue")
-  @js.native
-  def addTypeValue(mOptions: MigrationOptions): AddTypeValue = js.native
+  @scala.inline
+  def addTypeAttribute(mOptions: MigrationOptions): AddTypeAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeAttribute")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AddTypeAttribute]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "createType")
-  @js.native
-  def createType(mOptions: MigrationOptions): CreateType = js.native
+  @scala.inline
+  def addTypeValue(mOptions: MigrationOptions): AddTypeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeValue")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AddTypeValue]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "dropType")
-  @js.native
-  def dropType(mOptions: MigrationOptions): DropType = js.native
+  @scala.inline
+  def createType(mOptions: MigrationOptions): CreateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createType")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateType]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "dropTypeAttribute")
-  @js.native
-  def dropTypeAttribute(mOptions: MigrationOptions): DropTypeAttribute = js.native
+  @scala.inline
+  def dropType(mOptions: MigrationOptions): DropType = ^.asInstanceOf[js.Dynamic].applyDynamic("dropType")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropType]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "renameType")
-  @js.native
-  def renameType(mOptions: MigrationOptions): RenameType = js.native
+  @scala.inline
+  def dropTypeAttribute(mOptions: MigrationOptions): DropTypeAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("dropTypeAttribute")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropTypeAttribute]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "renameTypeAttribute")
-  @js.native
-  def renameTypeAttribute(mOptions: MigrationOptions): RenameTypeAttribute = js.native
+  @scala.inline
+  def renameType(mOptions: MigrationOptions): RenameType = ^.asInstanceOf[js.Dynamic].applyDynamic("renameType")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameType]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "renameTypeValue")
-  @js.native
-  def renameTypeValue(mOptions: MigrationOptions): RenameTypeValue = js.native
+  @scala.inline
+  def renameTypeAttribute(mOptions: MigrationOptions): RenameTypeAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("renameTypeAttribute")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameTypeAttribute]
   
-  @JSImport("node-pg-migrate/dist/operations/types", "setTypeAttribute")
-  @js.native
-  def setTypeAttribute(mOptions: MigrationOptions): SetTypeAttribute = js.native
+  @scala.inline
+  def renameTypeValue(mOptions: MigrationOptions): RenameTypeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("renameTypeValue")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameTypeValue]
+  
+  @scala.inline
+  def setTypeAttribute(mOptions: MigrationOptions): SetTypeAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("setTypeAttribute")(mOptions.asInstanceOf[js.Any]).asInstanceOf[SetTypeAttribute]
 }

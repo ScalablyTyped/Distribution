@@ -3,23 +3,28 @@ package typings.reactAdaptiveHooks
 import typings.reactAdaptiveHooks.networkMod.EffectiveConnectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactAdaptiveHooksStrings {
   
   @js.native
-  sealed trait `2g` extends EffectiveConnectionType
+  sealed trait `2g`
+    extends StObject
+       with EffectiveConnectionType
   @scala.inline
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
   @js.native
-  sealed trait `3g` extends EffectiveConnectionType
+  sealed trait `3g`
+    extends StObject
+       with EffectiveConnectionType
   @scala.inline
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   
   @js.native
-  sealed trait `4g` extends EffectiveConnectionType
+  sealed trait `4g`
+    extends StObject
+       with EffectiveConnectionType
   @scala.inline
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
@@ -39,7 +44,9 @@ object reactAdaptiveHooksStrings {
   def record: record = "record".asInstanceOf[record]
   
   @js.native
-  sealed trait `slow-2g` extends EffectiveConnectionType
+  sealed trait `slow-2g`
+    extends StObject
+       with EffectiveConnectionType
   @scala.inline
   def `slow-2g`: `slow-2g` = "slow-2g".asInstanceOf[`slow-2g`]
   

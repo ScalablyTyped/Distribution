@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemoteworkersV1test2CommandOverhead extends StObject {
   
   /**
     * The elapsed time between calling Accept and Complete. The server will also have its own idea of what this should be, but this excludes the overhead of the RPCs and the bot response
     * time.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** The amount of time *not* spent executing the command (ie uploading/downloading files). */
-  var overhead: js.UndefOr[String] = js.native
+  var overhead: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemoteworkersV1test2CommandOverhead {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReleasesResponse extends StObject {
   
   /** The pagination token to retrieve the next page of results. If the value is empty, no further results remain. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of `Release` instances. */
-  var releases: js.UndefOr[js.Array[Release]] = js.native
+  var releases: js.UndefOr[js.Array[Release]] = js.undefined
 }
 object ListReleasesResponse {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,7 +38,6 @@ object mod extends Shortcut {
     def stop(): ReadWriteStream = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** 
@@ -48,10 +46,10 @@ object mod extends Shortcut {
       * If false passed, error handler will not be attached
       * If undefined passed, default error handler will be attached
       */
-    var errorHandler: js.UndefOr[ErrorHandlerFunction | Boolean] = js.native
+    var errorHandler: js.UndefOr[ErrorHandlerFunction | Boolean] = js.undefined
     
     /** Monkeypatch pipe functions in underlying streams in pipeline. Default true. */
-    var inherit: js.UndefOr[Boolean] = js.native
+    var inherit: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

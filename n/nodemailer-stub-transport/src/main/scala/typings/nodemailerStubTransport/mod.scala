@@ -4,7 +4,6 @@ import typings.nodemailer.mod.Transport
 import typings.nodemailerStubTransport.mod.StubTransportStatic.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,29 +13,30 @@ object mod {
     * @param {Options} [options] Options.
     * @return {Transport} The stub transport.
     */
+  @scala.inline
+  def apply(): Transport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transport]
+  @scala.inline
+  def apply(options: Options): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   @JSImport("nodemailer-stub-transport", JSImport.Namespace)
   @js.native
-  def apply(): Transport = js.native
-  @JSImport("nodemailer-stub-transport", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Transport = js.native
+  val ^ : js.Any = js.native
   
   object StubTransportStatic {
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Specifies a custom error.
         * @type {any}
         */
-      var error: js.UndefOr[js.Any] = js.native
+      var error: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Value that indicates if the BCC addresses must be included in generated message.
         * @type {boolean}
         */
-      var keepBcc: js.UndefOr[Boolean] = js.native
+      var keepBcc: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

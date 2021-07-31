@@ -4,13 +4,13 @@ import typings.tuyaPanelKit.useScrollToTopMod.ScrollableView
 import typings.tuyaPanelKit.useScrollToTopMod.ScrollableWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetNode extends ScrollableWrapper {
+trait GetNode
+  extends StObject
+     with ScrollableWrapper {
   
-  def getNode(): ScrollableView = js.native
+  def getNode(): ScrollableView
 }
 object GetNode {
   

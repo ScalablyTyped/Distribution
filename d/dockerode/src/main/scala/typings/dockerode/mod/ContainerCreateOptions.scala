@@ -3,59 +3,57 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerCreateOptions extends StObject {
   
-  var AttachStderr: js.UndefOr[Boolean] = js.native
+  var AttachStderr: js.UndefOr[Boolean] = js.undefined
   
-  var AttachStdin: js.UndefOr[Boolean] = js.native
+  var AttachStdin: js.UndefOr[Boolean] = js.undefined
   
-  var AttachStdout: js.UndefOr[Boolean] = js.native
+  var AttachStdout: js.UndefOr[Boolean] = js.undefined
   
-  var Cmd: js.UndefOr[js.Array[String]] = js.native
+  var Cmd: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Domainname: js.UndefOr[String] = js.native
+  var Domainname: js.UndefOr[String] = js.undefined
   
-  var Entrypoint: js.UndefOr[String | js.Array[String]] = js.native
+  var Entrypoint: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var Env: js.UndefOr[js.Array[String]] = js.native
+  var Env: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ExposedPorts: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var ExposedPorts: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   
-  var HostConfig: js.UndefOr[typings.dockerode.mod.HostConfig] = js.native
+  var HostConfig: js.UndefOr[typings.dockerode.mod.HostConfig] = js.undefined
   
-  var Hostname: js.UndefOr[String] = js.native
+  var Hostname: js.UndefOr[String] = js.undefined
   
-  var Image: js.UndefOr[String] = js.native
+  var Image: js.UndefOr[String] = js.undefined
   
-  var Labels: js.UndefOr[StringDictionary[String]] = js.native
+  var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var MacAddress: js.UndefOr[Boolean] = js.native
+  var MacAddress: js.UndefOr[Boolean] = js.undefined
   
-  var NetworkDisabled: js.UndefOr[Boolean] = js.native
+  var NetworkDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var NetworkingConfig: js.UndefOr[typings.dockerode.anon.EndpointsConfig] = js.native
+  var NetworkingConfig: js.UndefOr[typings.dockerode.anon.EndpointsConfig] = js.undefined
   
-  var OpenStdin: js.UndefOr[Boolean] = js.native
+  var OpenStdin: js.UndefOr[Boolean] = js.undefined
   
-  var StdinOnce: js.UndefOr[Boolean] = js.native
+  var StdinOnce: js.UndefOr[Boolean] = js.undefined
   
-  var StopSignal: js.UndefOr[String] = js.native
+  var StopSignal: js.UndefOr[String] = js.undefined
   
-  var StopTimeout: js.UndefOr[Double] = js.native
+  var StopTimeout: js.UndefOr[Double] = js.undefined
   
-  var Tty: js.UndefOr[Boolean] = js.native
+  var Tty: js.UndefOr[Boolean] = js.undefined
   
-  var User: js.UndefOr[String] = js.native
+  var User: js.UndefOr[String] = js.undefined
   
-  var Volumes: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var Volumes: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   
-  var WorkingDir: js.UndefOr[String] = js.native
+  var WorkingDir: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ContainerCreateOptions {
   

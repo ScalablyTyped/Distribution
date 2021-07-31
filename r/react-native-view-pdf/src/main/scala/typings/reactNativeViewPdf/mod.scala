@@ -12,7 +12,6 @@ import typings.reactNativeViewPdf.reactNativeViewPdfStrings.url
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,29 +65,29 @@ object mod {
   
   type PDFView = Component[PDFViewProps, js.Object, js.Any]
   
-  @js.native
   trait PDFViewProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var fadeInDuration: js.UndefOr[Double] = js.native
+    var fadeInDuration: js.UndefOr[Double] = js.undefined
     
-    var fileFrom: js.UndefOr[bundle | documentsDirectory] = js.native
+    var fileFrom: js.UndefOr[bundle | documentsDirectory] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPageChanged: js.UndefOr[js.Function2[/* page */ Double, /* pageCount */ Double, Unit]] = js.native
+    var onPageChanged: js.UndefOr[js.Function2[/* page */ Double, /* pageCount */ Double, Unit]] = js.undefined
     
-    var onScrolled: js.UndefOr[js.Function1[/* offset */ Double, Unit]] = js.native
+    var onScrolled: js.UndefOr[js.Function1[/* offset */ Double, Unit]] = js.undefined
     
-    var resource: String = js.native
+    var resource: String
     
-    var resourceType: js.UndefOr[url | base64 | file] = js.native
+    var resourceType: js.UndefOr[url | base64 | file] = js.undefined
     
-    var textEncoding: js.UndefOr[`utf-8` | `utf-16`] = js.native
+    var textEncoding: js.UndefOr[`utf-8` | `utf-16`] = js.undefined
     
-    var urlProps: js.UndefOr[URLProps] = js.native
+    var urlProps: js.UndefOr[URLProps] = js.undefined
   }
   object PDFViewProps {
     
@@ -160,14 +159,13 @@ object mod {
     }
   }
   
-  @js.native
   trait URLProps extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[HTTPMethod] = js.native
+    var method: js.UndefOr[HTTPMethod] = js.undefined
   }
   object URLProps {
     

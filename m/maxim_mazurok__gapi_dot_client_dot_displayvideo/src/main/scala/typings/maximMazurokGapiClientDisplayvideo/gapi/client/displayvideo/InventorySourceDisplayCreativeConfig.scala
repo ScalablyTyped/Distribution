@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySourceDisplayCreativeConfig extends StObject {
   
   /** The size requirements for display creatives that can be assigned to the inventory source. */
-  var creativeSize: js.UndefOr[Dimensions] = js.native
+  var creativeSize: js.UndefOr[Dimensions] = js.undefined
 }
 object InventorySourceDisplayCreativeConfig {
   

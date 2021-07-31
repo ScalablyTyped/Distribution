@@ -2,28 +2,26 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObserver[T] extends StObject {
   
   /**
     * Notifies the observer of the end of the sequence.
     */
-  def onCompleted(): Unit = js.native
+  def onCompleted(): Unit
   
   /**
     * Notifies the observer that an exception has occurred.
     * @param {Any} error The error that has occurred.
     */
-  def onError(exception: js.Any): Unit = js.native
+  def onError(exception: js.Any): Unit
   
   /**
     * Notifies the observer of a new element in the sequence.
     * @param {Any} value Next element in the sequence.
     */
-  def onNext(value: T): Unit = js.native
+  def onNext(value: T): Unit
 }
 object IObserver {
   
@@ -34,7 +32,7 @@ object IObserver {
   }
   
   @scala.inline
-  implicit class IObserverMutableBuilder[Self <: IObserver[_], T] (val x: Self with IObserver[T]) extends AnyVal {
+  implicit class IObserverMutableBuilder[Self <: IObserver[?], T] (val x: Self & IObserver[T]) extends AnyVal {
     
     @scala.inline
     def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))

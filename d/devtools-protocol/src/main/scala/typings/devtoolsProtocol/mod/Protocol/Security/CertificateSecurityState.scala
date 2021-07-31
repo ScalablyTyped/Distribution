@@ -3,101 +3,99 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateSecurityState extends StObject {
   
   /**
     * Page certificate.
     */
-  var certificate: js.Array[String] = js.native
+  var certificate: js.Array[String]
   
   /**
     * True if the certificate has a SHA1 signature in the chain.
     */
-  var certificateHasSha1Signature: Boolean = js.native
+  var certificateHasSha1Signature: Boolean
   
   /**
     * True if the certificate uses a weak signature aglorithm.
     */
-  var certificateHasWeakSignature: Boolean = js.native
+  var certificateHasWeakSignature: Boolean
   
   /**
     * The highest priority network error code, if the certificate has an error.
     */
-  var certificateNetworkError: js.UndefOr[String] = js.native
+  var certificateNetworkError: js.UndefOr[String] = js.undefined
   
   /**
     * Cipher name.
     */
-  var cipher: String = js.native
+  var cipher: String
   
   /**
     * Name of the issuing CA.
     */
-  var issuer: String = js.native
+  var issuer: String
   
   /**
     * Key Exchange used by the connection, or the empty string if not applicable.
     */
-  var keyExchange: String = js.native
+  var keyExchange: String
   
   /**
     * (EC)DH group used by the connection, if applicable.
     */
-  var keyExchangeGroup: js.UndefOr[String] = js.native
+  var keyExchangeGroup: js.UndefOr[String] = js.undefined
   
   /**
     * TLS MAC. Note that AEAD ciphers do not have separate MACs.
     */
-  var mac: js.UndefOr[String] = js.native
+  var mac: js.UndefOr[String] = js.undefined
   
   /**
     * True if modern SSL
     */
-  var modernSSL: Boolean = js.native
+  var modernSSL: Boolean
   
   /**
     * True if the connection is using an obsolete SSL cipher.
     */
-  var obsoleteSslCipher: Boolean = js.native
+  var obsoleteSslCipher: Boolean
   
   /**
     * True if the connection is using an obsolete SSL key exchange.
     */
-  var obsoleteSslKeyExchange: Boolean = js.native
+  var obsoleteSslKeyExchange: Boolean
   
   /**
     * True if the connection is using an obsolete SSL protocol.
     */
-  var obsoleteSslProtocol: Boolean = js.native
+  var obsoleteSslProtocol: Boolean
   
   /**
     * True if the connection is using an obsolete SSL signature.
     */
-  var obsoleteSslSignature: Boolean = js.native
+  var obsoleteSslSignature: Boolean
   
   /**
     * Protocol name (e.g. "TLS 1.2" or "QUIC").
     */
-  var protocol: String = js.native
+  var protocol: String
   
   /**
     * Certificate subject name.
     */
-  var subjectName: String = js.native
+  var subjectName: String
   
   /**
     * Certificate valid from date.
     */
-  var validFrom: TimeSinceEpoch = js.native
+  var validFrom: TimeSinceEpoch
   
   /**
     * Certificate valid to (expiration) date
     */
-  var validTo: TimeSinceEpoch = js.native
+  var validTo: TimeSinceEpoch
 }
 object CertificateSecurityState {
   

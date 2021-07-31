@@ -5,23 +5,22 @@ import typings.babelTypes.babelTypesStrings.LogicalExpression
 import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogicalExpression_
-  extends Node
+  extends StObject
+     with Node
      with Binary
      with Expression {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var operator: VerticallineVerticalline | AmpersandAmpersand = js.native
+  var operator: VerticallineVerticalline | AmpersandAmpersand
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_LogicalExpression_ : LogicalExpression = js.native
+  var type_LogicalExpression_ : LogicalExpression
 }
 object LogicalExpression_ {
   
@@ -32,11 +31,10 @@ object LogicalExpression_ {
     loc: SourceLocation,
     operator: VerticallineVerticalline | AmpersandAmpersand,
     right: Expression,
-    start: Double,
-    `type`: LogicalExpression
+    start: Double
   ): LogicalExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[LogicalExpression_]
   }
   

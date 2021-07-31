@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedImagePermissions extends StObject {
   
   /**
     * Describes the permissions for a shared image.
     */
-  var imagePermissions: ImagePermissions = js.native
+  var imagePermissions: ImagePermissions
   
   /**
     * The 12-digit identifier of the AWS account with which the image is shared.
     */
-  var sharedAccountId: AwsAccountId = js.native
+  var sharedAccountId: AwsAccountId
 }
 object SharedImagePermissions {
   

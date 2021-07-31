@@ -4,36 +4,34 @@ import typings.activexOffice.Office.MsoEncoding
 import typings.activexOffice.Office.MsoTargetBrowser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebOptions extends StObject {
   
   @JSName("Access.WebOptions_typekey")
-  var AccessDotWebOptions_typekey: WebOptions = js.native
+  var AccessDotWebOptions_typekey: WebOptions
   
-  val Application: typings.activexAccess.Access.Application = js.native
+  val Application: typings.activexAccess.Access.Application
   
-  var DownloadComponents: Boolean = js.native
+  var DownloadComponents: Boolean
   
-  var Encoding: MsoEncoding = js.native
+  var Encoding: MsoEncoding
   
-  val FolderSuffix: String = js.native
+  val FolderSuffix: String
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var LocationOfComponents: String = js.native
+  var LocationOfComponents: String
   
-  var OrganizeInFolder: Boolean = js.native
+  var OrganizeInFolder: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var TargetBrowser: MsoTargetBrowser = js.native
+  var TargetBrowser: MsoTargetBrowser
   
-  def UseDefaultFolderSuffix(): Unit = js.native
+  def UseDefaultFolderSuffix(): Unit
   
-  var UseLongFileNames: Boolean = js.native
+  var UseLongFileNames: Boolean
 }
 object WebOptions {
   

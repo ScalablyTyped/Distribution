@@ -2,23 +2,21 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateReturnModel extends StObject {
   
-  var columns: js.Array[StateReturnModelColumns] = js.native
+  var columns: js.Array[StateReturnModelColumns]
   
-  var length: Double = js.native
+  var length: Double
   
-  var order: js.Array[js.Array[String | Double]] = js.native
+  var order: js.Array[js.Array[String | Double]]
   
-  var search: SearchSettings = js.native
+  var search: SearchSettings
   
-  var start: Double = js.native
+  var start: Double
   
-  var time: Double = js.native
+  var time: Double
 }
 object StateReturnModel {
   

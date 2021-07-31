@@ -12,7 +12,7 @@ Bindings to native spellchecker
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 24 |
-| # downloads        | 169152 |
+| # downloads        | 168934 |
 | # stars            | 2 |
 
 ## Links

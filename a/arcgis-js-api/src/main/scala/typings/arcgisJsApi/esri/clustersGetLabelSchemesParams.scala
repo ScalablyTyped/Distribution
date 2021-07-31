@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait clustersGetLabelSchemesParams extends Object {
+trait clustersGetLabelSchemesParams
+  extends StObject
+     with Object {
   
   /**
     * The point layer that has or will have clustering enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
   
   /**
     * The renderer to set on the input layer when clustering is enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
     */
-  var renderer: js.UndefOr[Renderer] = js.native
+  var renderer: js.UndefOr[Renderer] = js.undefined
   
   /**
     * The view where the input layer will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: MapView = js.native
+  var view: MapView
 }
 object clustersGetLabelSchemesParams {
   

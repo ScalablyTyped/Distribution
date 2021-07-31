@@ -2,26 +2,24 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFilter extends StObject {
   
   /**
     * the id of the file
     */
-  var id: js.UndefOr[Double | js.Array[Double]] = js.native
+  var id: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * status of the file
     */
-  var status: js.UndefOr[String | js.Array[String]] = js.native
+  var status: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * the uuid of the file
     */
-  var uuid: js.UndefOr[Double | js.Array[Double]] = js.native
+  var uuid: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object UploadFilter {
   

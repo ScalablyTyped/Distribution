@@ -10,23 +10,22 @@ import typings.babelTypes.babelTypesStrings.typeof
 import typings.babelTypes.babelTypesStrings.void
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnaryExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with UnaryLike {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete = js.native
+  var operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete
   
-  var prefix: Boolean = js.native
+  var prefix: Boolean
   
   @JSName("type")
-  var type_UnaryExpression_ : UnaryExpression = js.native
+  var type_UnaryExpression_ : UnaryExpression
 }
 object UnaryExpression_ {
   
@@ -37,11 +36,10 @@ object UnaryExpression_ {
     loc: SourceLocation,
     operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete,
     prefix: Boolean,
-    start: Double,
-    `type`: UnaryExpression
+    start: Double
   ): UnaryExpression_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[UnaryExpression_]
   }
   

@@ -2,30 +2,28 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message from a BatchUpdateDocument request.
   */
-@js.native
 trait SchemaBatchUpdateDocumentResponse extends StObject {
   
   /**
     * The ID of the document to which the updates were applied to.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * The reply of the updates. This maps 1:1 with the updates, although
     * replies to some requests may be empty.
     */
-  var replies: js.UndefOr[js.Array[SchemaResponse]] = js.native
+  var replies: js.UndefOr[js.Array[SchemaResponse]] = js.undefined
   
   /**
     * The updated write control after applying the request.
     */
-  var writeControl: js.UndefOr[SchemaWriteControl] = js.native
+  var writeControl: js.UndefOr[SchemaWriteControl] = js.undefined
 }
 object SchemaBatchUpdateDocumentResponse {
   

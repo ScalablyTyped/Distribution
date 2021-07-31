@@ -2,31 +2,29 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * StoredInfoType resource message that contains information about the current
   * version and any pending updates.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2StoredInfoType extends StObject {
   
   /**
     * Current version of the stored info type.
     */
-  var currentVersion: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion] = js.native
+  var currentVersion: js.UndefOr[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion] = js.undefined
   
   /**
     * Resource name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Pending versions of the stored info type. Empty if no versions are
     * pending.
     */
-  var pendingVersions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]] = js.native
+  var pendingVersions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2StoredInfoType {
   

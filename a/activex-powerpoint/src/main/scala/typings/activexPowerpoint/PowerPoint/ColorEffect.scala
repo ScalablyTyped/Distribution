@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorEffect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val By: ColorFormat = js.native
+  val By: ColorFormat
   
-  val From: ColorFormat = js.native
+  val From: ColorFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ColorEffect_typekey")
-  var PowerPointDotColorEffect_typekey: ColorEffect = js.native
+  var PowerPointDotColorEffect_typekey: ColorEffect
   
-  val To: ColorFormat = js.native
+  val To: ColorFormat
 }
 object ColorEffect {
   

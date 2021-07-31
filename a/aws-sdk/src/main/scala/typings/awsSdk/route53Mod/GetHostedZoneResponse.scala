@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHostedZoneResponse extends StObject {
   
   /**
     * A complex type that lists the Amazon Route 53 name servers for the specified hosted zone.
     */
-  var DelegationSet: js.UndefOr[typings.awsSdk.route53Mod.DelegationSet] = js.native
+  var DelegationSet: js.UndefOr[typings.awsSdk.route53Mod.DelegationSet] = js.undefined
   
   /**
     * A complex type that contains general information about the specified hosted zone.
     */
-  var HostedZone: typings.awsSdk.route53Mod.HostedZone = js.native
+  var HostedZone: typings.awsSdk.route53Mod.HostedZone
   
   /**
     * A complex type that contains information about the VPCs that are associated with the specified hosted zone.
     */
-  var VPCs: js.UndefOr[typings.awsSdk.route53Mod.VPCs] = js.native
+  var VPCs: js.UndefOr[typings.awsSdk.route53Mod.VPCs] = js.undefined
 }
 object GetHostedZoneResponse {
   

@@ -3,15 +3,15 @@ package typings.baidumapWebSdk.BMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleControl extends Control {
+trait ScaleControl
+  extends StObject
+     with Control {
   
-  def getUnit(): LengthUnit = js.native
+  def getUnit(): LengthUnit
   
-  def setUnit(unit: LengthUnit): Unit = js.native
+  def setUnit(unit: LengthUnit): Unit
 }
 object ScaleControl {
   

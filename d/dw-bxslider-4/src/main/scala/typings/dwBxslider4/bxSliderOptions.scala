@@ -2,10 +2,8 @@ package typings.dwBxslider4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait bxSliderOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var adaptiveHeight: js.UndefOr[Boolean] = js.native
+  var adaptiveHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * adaptiveHeightSpeed Slide height transition duration (in ms). Note: only used if adaptiveHeight: true
@@ -22,7 +20,7 @@ trait bxSliderOptions extends StObject {
     * default: 500
     * options: integer
     */
-  var adaptiveHeightSpeed: js.UndefOr[Double] = js.native
+  var adaptiveHeightSpeed: js.UndefOr[Double] = js.undefined
   
   /**
     * ariaHidden Adds Aria Hidden attribute to any nonvisible slides.
@@ -30,7 +28,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var ariaHidden: js.UndefOr[Boolean] = js.native
+  var ariaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ariaLive Adds Aria Live attribute to slider.
@@ -38,7 +36,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var ariaLive: js.UndefOr[Boolean] = js.native
+  var ariaLive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * auto Slides will automatically transition
@@ -46,7 +44,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
   
   /**
     * autoControls If true, "Start" / "Stop" controls will be added
@@ -54,7 +52,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var autoControls: js.UndefOr[Boolean] = js.native
+  var autoControls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * autoControlsCombine When slideshow is playing only "Stop" control is displayed and vice-versa
@@ -62,7 +60,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var autoControlsCombine: js.UndefOr[Boolean] = js.native
+  var autoControlsCombine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * autoControlsSelector Element used to populate the auto controls
@@ -70,7 +68,7 @@ trait bxSliderOptions extends StObject {
     * default: null
     * options: jQuery selector
     */
-  var autoControlsSelector: js.UndefOr[String] = js.native
+  var autoControlsSelector: js.UndefOr[String] = js.undefined
   
   /**
     * autoDelay Time (in ms) auto show should wait before starting
@@ -78,7 +76,7 @@ trait bxSliderOptions extends StObject {
     * default: 0
     * options: integer
     */
-  var autoDelay: js.UndefOr[Double] = js.native
+  var autoDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * autoDirection The direction of auto show slide transitions
@@ -86,7 +84,7 @@ trait bxSliderOptions extends StObject {
     * default: 'next'
     * options: 'next', 'prev'
     */
-  var autoDirection: js.UndefOr[String] = js.native
+  var autoDirection: js.UndefOr[String] = js.undefined
   
   /**
     * autoHover Auto show will pause when mouse hovers over slider
@@ -94,7 +92,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var autoHover: js.UndefOr[Boolean] = js.native
+  var autoHover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * autoStart Auto show starts playing on load. If false, slideshow will start when the "Start" control is clicked
@@ -102,7 +100,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var autoStart: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * buildPager If supplied, function is called on every slide element, and the returned value is used as the pager item markup.
@@ -111,7 +109,7 @@ trait bxSliderOptions extends StObject {
     * default: null
     * options: functoin(slideIndex)
     */
-  var buildPager: js.UndefOr[js.Function1[/* slideIndex */ Double, Unit]] = js.native
+  var buildPager: js.UndefOr[js.Function1[/* slideIndex */ Double, Unit]] = js.undefined
   
   /**
     * captions Include image captions. Captions are derived from the image's title attribute
@@ -119,7 +117,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var captions: js.UndefOr[Boolean] = js.native
+  var captions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * controls If true, "Next" / "Prev" controls will be added
@@ -127,7 +125,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * easing The type of "easing" to use during transitions. If using CSS transitions, include a value for the transition-timing-function property. If not using CSS transitions, you may include plugins/jquery.easing.1.3.js for many options.
@@ -136,7 +134,7 @@ trait bxSliderOptions extends StObject {
     * default: null
     * options: if using CSS: 'linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out', 'cubic-bezier(n,n,n,n)'. If not using CSS: 'swing', 'linear' (see the above file for more options)
     */
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
   /**
     * hideControlOnEnd If true, "Prev" and "Next" controls will receive a class disabled when slide is the first or the last
@@ -145,7 +143,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var hideControlOnEnd: js.UndefOr[Boolean] = js.native
+  var hideControlOnEnd: js.UndefOr[Boolean] = js.undefined
   
   /**
     * infiniteLoop If true, clicking "Next" while on the last slide will transition to the first slide and vice-versa
@@ -153,7 +151,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var infiniteLoop: js.UndefOr[Boolean] = js.native
+  var infiniteLoop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * keyboardEnabled Allows for keyboard control of visible slider. Keypress ignored if slider not visible.
@@ -161,7 +159,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var keyboardEnabled: js.UndefOr[Boolean] = js.native
+  var keyboardEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * maxSlides The maximum number of slides to be shown. Slides will be sized up if carousel becomes larger than the original size.
@@ -169,7 +167,7 @@ trait bxSliderOptions extends StObject {
     * default: 1
     * options: integer
     */
-  var maxSlides: js.UndefOr[Double] = js.native
+  var maxSlides: js.UndefOr[Double] = js.undefined
   
   /**
     * minSlides The minimum number of slides to be shown. Slides will be sized down if carousel becomes smaller than the original size.
@@ -177,7 +175,7 @@ trait bxSliderOptions extends StObject {
     * default: 1
     * options: integer
     */
-  var minSlides: js.UndefOr[Double] = js.native
+  var minSlides: js.UndefOr[Double] = js.undefined
   
   /**
     * mode Type of transition between slides
@@ -185,7 +183,7 @@ trait bxSliderOptions extends StObject {
     * default: 'horizontal'
     * options: 'horizontal', 'vertical', 'fade'
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * moveSlides The number of slides to move on transition. This value must be >= minSlides, and <= maxSlides. If zero (default), the number of fully-visible slides will be used.
@@ -193,7 +191,7 @@ trait bxSliderOptions extends StObject {
     * default: 0
     * options: integer
     */
-  var moveSlides: js.UndefOr[Double] = js.native
+  var moveSlides: js.UndefOr[Double] = js.undefined
   
   /**
     * nextSelector Element used to populate the "Next" control
@@ -201,7 +199,7 @@ trait bxSliderOptions extends StObject {
     * default: null
     * options: jQuery selector
     */
-  var nextSelector: js.UndefOr[String] = js.native
+  var nextSelector: js.UndefOr[String] = js.undefined
   
   /**
     * nextText Text to be used for the "Next" control
@@ -209,7 +207,7 @@ trait bxSliderOptions extends StObject {
     * default: 'Next'
     * options: string
     */
-  var nextText: js.UndefOr[String] = js.native
+  var nextText: js.UndefOr[String] = js.undefined
   
   /**
     * onSlideAfter Executes immediately after each slide transition. Function argument is the current slide element (when transition completes).
@@ -228,7 +226,7 @@ trait bxSliderOptions extends StObject {
       /* newIndex */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * onSlideBefore Executes immediately before each slide transition.
@@ -247,7 +245,7 @@ trait bxSliderOptions extends StObject {
       /* newIndex */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * onSlideNext Executes immediately before each "Next" slide transition. Function argument is the target (next) slide element.
@@ -266,7 +264,7 @@ trait bxSliderOptions extends StObject {
       /* newIndex */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * onSlidePrev Executes immediately before each "Prev" slide transition. Function argument is the target (prev) slide element.
@@ -285,7 +283,7 @@ trait bxSliderOptions extends StObject {
       /* newIndex */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * onSliderLoad Executes immediately after the slider is fully loaded
@@ -295,7 +293,7 @@ trait bxSliderOptions extends StObject {
     * arguments:
     *   currentIndex: element index of the current slide
     */
-  var onSliderLoad: js.UndefOr[js.Function1[/* currentIndex */ js.UndefOr[Double], Unit]] = js.native
+  var onSliderLoad: js.UndefOr[js.Function1[/* currentIndex */ js.UndefOr[Double], Unit]] = js.undefined
   
   /**
     * onSliderResize Executes immediately after the slider is resized
@@ -305,7 +303,7 @@ trait bxSliderOptions extends StObject {
     * arguments:
     *   currentIndex: element index of the current slide
     */
-  var onSliderResize: js.UndefOr[js.Function1[/* currentIndex */ js.UndefOr[Double], Unit]] = js.native
+  var onSliderResize: js.UndefOr[js.Function1[/* currentIndex */ js.UndefOr[Double], Unit]] = js.undefined
   
   /**
     * oneToOneTouch If true, non-fade slides follow the finger as it swipes
@@ -313,7 +311,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var oneToOneTouch: js.UndefOr[Boolean] = js.native
+  var oneToOneTouch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * pager If true, a pager will be added
@@ -321,7 +319,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var pager: js.UndefOr[Boolean] = js.native
+  var pager: js.UndefOr[Boolean] = js.undefined
   
   /**
     * pagerCustom Parent element to be used as the pager. Parent element must contain a <a data-slide-index="x"> element for each slide. See example here. Not for use with dynamic carousels.
@@ -329,7 +327,7 @@ trait bxSliderOptions extends StObject {
     * default: null
     * options: jQuery selector
     */
-  var pagerCustom: js.UndefOr[String] = js.native
+  var pagerCustom: js.UndefOr[String] = js.undefined
   
   /**
     * pagerSelector Element used to populate the populate the pager. By default, the pager is appended to the bx-viewport
@@ -337,7 +335,7 @@ trait bxSliderOptions extends StObject {
     * default: ''
     * options: jQuery selector
     */
-  var pagerSelector: js.UndefOr[String] = js.native
+  var pagerSelector: js.UndefOr[String] = js.undefined
   
   /**
     * pagerShortSeparator If pagerType: 'short', pager will use this value as the separating character
@@ -345,7 +343,7 @@ trait bxSliderOptions extends StObject {
     * default: ' / '
     * options: string
     */
-  var pagerShortSeparator: js.UndefOr[String] = js.native
+  var pagerShortSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * pagerType If 'full', a pager link will be generated for each slide. If 'short', a x / y pager will be used (ex. 1 / 5)
@@ -353,7 +351,7 @@ trait bxSliderOptions extends StObject {
     * default: 'full'
     * options: 'full', 'short'
     */
-  var pagerType: js.UndefOr[String] = js.native
+  var pagerType: js.UndefOr[String] = js.undefined
   
   /**
     * pause The amount of time (in ms) between each auto transition
@@ -361,7 +359,7 @@ trait bxSliderOptions extends StObject {
     * default: 4000
     * options: integer
     */
-  var pause: js.UndefOr[Double] = js.native
+  var pause: js.UndefOr[Double] = js.undefined
   
   /**
     * preloadImages If 'all', preloads all images before starting the slider. If 'visible', preloads only images in the initially visible slides before starting the slider (tip: use 'visible' if all slides are identical dimensions)
@@ -369,7 +367,7 @@ trait bxSliderOptions extends StObject {
     * default: 'visible'
     * options: 'all', 'visible'
     */
-  var preloadImages: js.UndefOr[String] = js.native
+  var preloadImages: js.UndefOr[String] = js.undefined
   
   /**
     * prevSelector Element used to populate the "Prev" control
@@ -377,7 +375,7 @@ trait bxSliderOptions extends StObject {
     * default: null
     * options: jQuery selector
     */
-  var prevSelector: js.UndefOr[String] = js.native
+  var prevSelector: js.UndefOr[String] = js.undefined
   
   /**
     * prevText Text to be used for the "Prev" control
@@ -385,7 +383,7 @@ trait bxSliderOptions extends StObject {
     * default: 'Prev'
     * options: string
     */
-  var prevText: js.UndefOr[String] = js.native
+  var prevText: js.UndefOr[String] = js.undefined
   
   /**
     * preventDefaultSwipeX If true, touch screen will not move along the x-axis as the finger swipes
@@ -393,7 +391,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var preventDefaultSwipeX: js.UndefOr[Boolean] = js.native
+  var preventDefaultSwipeX: js.UndefOr[Boolean] = js.undefined
   
   /**
     * preventDefaultSwipeY If true, touch screen will not move along the y-axis as the finger swipes
@@ -401,7 +399,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var preventDefaultSwipeY: js.UndefOr[Boolean] = js.native
+  var preventDefaultSwipeY: js.UndefOr[Boolean] = js.undefined
   
   /**
     * randomStart Start slider on a random slide
@@ -409,7 +407,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var randomStart: js.UndefOr[Boolean] = js.native
+  var randomStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * responsive Enable or disable auto resize of the slider. Useful if you need to use fixed width sliders.
@@ -417,7 +415,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * shrinkItems The Carousel will only show whole items and shrink the images to fit the viewport based on maxSlides/MinSlides.
@@ -425,7 +423,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var shrinkItems: js.UndefOr[Boolean] = js.native
+  var shrinkItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * slideMargin Margin between each slide
@@ -433,7 +431,7 @@ trait bxSliderOptions extends StObject {
     * default: 0
     * options: integer
     */
-  var slideMargin: js.UndefOr[Double] = js.native
+  var slideMargin: js.UndefOr[Double] = js.undefined
   
   /**
     * slideSelector Element to use as slides (ex. 'div.slide').
@@ -442,7 +440,7 @@ trait bxSliderOptions extends StObject {
     * default: ''
     * options: jQuery selector
     */
-  var slideSelector: js.UndefOr[String] = js.native
+  var slideSelector: js.UndefOr[String] = js.undefined
   
   /**
     * slideWidth The width of each slide. This setting is required for all horizontal carousels!
@@ -450,7 +448,7 @@ trait bxSliderOptions extends StObject {
     * default: 0
     * options: integer
     */
-  var slideWidth: js.UndefOr[Double] = js.native
+  var slideWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * speed Slide transition duration (in ms)
@@ -458,7 +456,7 @@ trait bxSliderOptions extends StObject {
     * default: 500
     * options: integer
     */
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
   /**
     * startSlide Starting slide index (zero-based)
@@ -466,7 +464,7 @@ trait bxSliderOptions extends StObject {
     * default: 0
     * options: integer
     */
-  var startSlide: js.UndefOr[Double] = js.native
+  var startSlide: js.UndefOr[Double] = js.undefined
   
   /**
     * startText Text to be used for the "Start" control
@@ -474,7 +472,7 @@ trait bxSliderOptions extends StObject {
     * default: 'Start'
     * options: string
     */
-  var startText: js.UndefOr[String] = js.native
+  var startText: js.UndefOr[String] = js.undefined
   
   /**
     * stopAutoOnClick Auto will stop on interaction with controls
@@ -482,7 +480,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var stopAutoOnClick: js.UndefOr[Boolean] = js.native
+  var stopAutoOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * stopText Text to be used for the "Stop" control
@@ -490,7 +488,7 @@ trait bxSliderOptions extends StObject {
     * default: 'Stop'
     * options: string
     */
-  var stopText: js.UndefOr[String] = js.native
+  var stopText: js.UndefOr[String] = js.undefined
   
   /**
     * swipeThreshold Amount of pixels a touch swipe needs to exceed in order to execute a slide transition. Note: only used if touchEnabled: true
@@ -498,7 +496,7 @@ trait bxSliderOptions extends StObject {
     * default: 50
     * options: integer
     */
-  var swipeThreshold: js.UndefOr[Double] = js.native
+  var swipeThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * ticker Use slider in ticker mode (similar to a news ticker)
@@ -506,7 +504,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var ticker: js.UndefOr[Boolean] = js.native
+  var ticker: js.UndefOr[Boolean] = js.undefined
   
   /**
     * tickerHover Ticker will pause when mouse hovers over slider. Note: this functionality does NOT work if using CSS transitions!
@@ -514,7 +512,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var tickerHover: js.UndefOr[Boolean] = js.native
+  var tickerHover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * touchEnabled If true, slider will allow touch swipe transitions
@@ -522,7 +520,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var touchEnabled: js.UndefOr[Boolean] = js.native
+  var touchEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * useCSS If true, CSS transitions will be used for horizontal and vertical slide animations (this uses native hardware acceleration). If false, jQuery animate() will be used.
@@ -530,7 +528,7 @@ trait bxSliderOptions extends StObject {
     * default: true
     * options: boolean (true / false)
     */
-  var useCSS: js.UndefOr[Boolean] = js.native
+  var useCSS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * video If any slides contain video, set this to true. Also, include plugins/jquery.fitvids.js
@@ -539,7 +537,7 @@ trait bxSliderOptions extends StObject {
     * default: false
     * options: boolean (true / false)
     */
-  var video: js.UndefOr[Boolean] = js.native
+  var video: js.UndefOr[Boolean] = js.undefined
   
   /**
     * wrapperClass Class to wrap the slider in. Change to prevent from using default bxSlider styles.
@@ -547,7 +545,7 @@ trait bxSliderOptions extends StObject {
     * default: 'bx-wrapper'
     * options: string
     */
-  var wrapperClass: js.UndefOr[String] = js.native
+  var wrapperClass: js.UndefOr[String] = js.undefined
 }
 object bxSliderOptions {
   

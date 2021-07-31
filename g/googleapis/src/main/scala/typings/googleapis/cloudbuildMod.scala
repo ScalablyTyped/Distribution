@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudbuildMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudbuild", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -93,9 +96,12 @@ object cloudbuildMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudbuild", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudbuild", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -139,16 +145,14 @@ object cloudbuildMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudbuild", "cloudbuild")
-  @js.native
-  def cloudbuild(options: Options): Cloudbuild = js.native
-  @JSImport("googleapis/build/src/apis/cloudbuild", "cloudbuild")
-  @js.native
-  def cloudbuild(options: typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Options): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = js.native
-  @JSImport("googleapis/build/src/apis/cloudbuild", "cloudbuild")
-  @js.native
-  def cloudbuild_v1(version: v1): Cloudbuild = js.native
-  @JSImport("googleapis/build/src/apis/cloudbuild", "cloudbuild")
-  @js.native
-  def cloudbuild_v1alpha1(version: v1alpha1): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = js.native
+  @scala.inline
+  def cloudbuild(options: Options): Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudbuild]
+  @scala.inline
+  def cloudbuild(options: typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Options): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild]
+  
+  @scala.inline
+  def cloudbuild_v1(version: v1): Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudbuild]
+  
+  @scala.inline
+  def cloudbuild_v1alpha1(version: v1alpha1): typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudbuild")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1.Cloudbuild]
 }

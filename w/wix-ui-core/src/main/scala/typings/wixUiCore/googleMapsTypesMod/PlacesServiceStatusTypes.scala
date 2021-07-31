@@ -1,0 +1,57 @@
+package typings.wixUiCore.googleMapsTypesMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+sealed trait PlacesServiceStatusTypes extends StObject
+@JSImport("wix-ui-core/dist/standalone/src/clients/GoogleMaps/types", "PlacesServiceStatusTypes")
+@js.native
+object PlacesServiceStatusTypes extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[PlacesServiceStatusTypes & String] = js.native
+  
+  @js.native
+  sealed trait InvalidRequest
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "INVALID_REQUEST" */ val InvalidRequest: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.InvalidRequest & String = js.native
+  
+  @js.native
+  sealed trait NotFound
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "NOT_FOUND" */ val NotFound: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.NotFound & String = js.native
+  
+  @js.native
+  sealed trait Ok
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "OK" */ val Ok: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.Ok & String = js.native
+  
+  @js.native
+  sealed trait OverQueryLimit
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "OVER_QUERY_LIMIT" */ val OverQueryLimit: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.OverQueryLimit & String = js.native
+  
+  @js.native
+  sealed trait RequestDenied
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "REQUEST_DENIED" */ val RequestDenied: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.RequestDenied & String = js.native
+  
+  @js.native
+  sealed trait UnknownError
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "UNKNOWN_ERROR" */ val UnknownError: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.UnknownError & String = js.native
+  
+  @js.native
+  sealed trait ZeroResults
+    extends StObject
+       with PlacesServiceStatusTypes
+  /* "ZERO_RESULTS" */ val ZeroResults: typings.wixUiCore.googleMapsTypesMod.PlacesServiceStatusTypes.ZeroResults & String = js.native
+}

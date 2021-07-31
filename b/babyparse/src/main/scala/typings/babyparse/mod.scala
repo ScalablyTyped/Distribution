@@ -5,7 +5,6 @@ import typings.babyparse.BabyParse.ParseConfig
 import typings.babyparse.BabyParse.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,8 +23,21 @@ object mod extends Shortcut {
   @JSImport("babyparse", "Parser")
   @js.native
   class Parser protected ()
-    extends typings.babyparse.BabyParse.Parser {
+    extends StObject
+       with typings.babyparse.BabyParse.Parser {
     def this(config: ParseConfig) = this()
+    
+    // Sets the abort flag
+    /* CompleteClass */
+    override def abort(): Unit = js.native
+    
+    // Gets the cursor position
+    /* CompleteClass */
+    override def getCharIndex(): Double = js.native
+    
+    // Parses the input
+    /* CompleteClass */
+    override def parse(input: String): js.Any = js.native
   }
   
   type _To = Static

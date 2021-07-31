@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.HitArea.ShapeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.HitArea")
 @js.native
 class HitArea protected ()
-  extends typings.heremaps.H.map.HitArea {
+  extends StObject
+     with typings.heremaps.H.map.HitArea {
   /**
     * Constructor
     * @param shapeType {H.map.HitArea.ShapeType} - The shape type of the HitArea
@@ -31,14 +31,14 @@ object HitArea {
   object ShapeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.map.HitArea.ShapeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.map.HitArea.ShapeType & Double] = js.native
     
-    /* 2 */ val CIRCLE: typings.heremaps.H.map.HitArea.ShapeType.CIRCLE with Double = js.native
+    /* 2 */ val CIRCLE: typings.heremaps.H.map.HitArea.ShapeType.CIRCLE & Double = js.native
     
-    /* 0 */ val NONE: typings.heremaps.H.map.HitArea.ShapeType.NONE with Double = js.native
+    /* 0 */ val NONE: typings.heremaps.H.map.HitArea.ShapeType.NONE & Double = js.native
     
-    /* 3 */ val POLYGON: typings.heremaps.H.map.HitArea.ShapeType.POLYGON with Double = js.native
+    /* 3 */ val POLYGON: typings.heremaps.H.map.HitArea.ShapeType.POLYGON & Double = js.native
     
-    /* 1 */ val RECT: typings.heremaps.H.map.HitArea.ShapeType.RECT with Double = js.native
+    /* 1 */ val RECT: typings.heremaps.H.map.HitArea.ShapeType.RECT & Double = js.native
   }
 }

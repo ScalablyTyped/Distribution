@@ -4,24 +4,22 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a command which can be send to a generic toolbar control.
   * @since OOo 2.0.3
   */
-@js.native
 trait ControlCommand extends StObject {
   
   /**
     * specifies a sequence of named values which are used as argument for the command. The number and type of arguments depend on the the command and
     * control.
     */
-  var Arguments: SafeArray[NamedValue] = js.native
+  var Arguments: SafeArray[NamedValue]
   
   /** specifies the command which should be processed by the toolbar control. */
-  var Command: String = js.native
+  var Command: String
 }
 object ControlCommand {
   

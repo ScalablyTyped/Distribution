@@ -5,7 +5,6 @@ import typings.vsoNodeApi.anon.EnumValuesBroken
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policyInterfacesMod {
@@ -17,49 +16,61 @@ object policyInterfacesMod {
   object PolicyEvaluationStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PolicyEvaluationStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[PolicyEvaluationStatus & Double] = js.native
     
     /**
       * The policy has been fulfilled for this pull request.
       */
     @js.native
-    sealed trait Approved extends PolicyEvaluationStatus
-    /* 2 */ val Approved: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Approved with Double = js.native
+    sealed trait Approved
+      extends StObject
+         with PolicyEvaluationStatus
+    /* 2 */ val Approved: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Approved & Double = js.native
     
     /**
       * The policy has encountered an unexpected error.
       */
     @js.native
-    sealed trait Broken extends PolicyEvaluationStatus
-    /* 5 */ val Broken: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Broken with Double = js.native
+    sealed trait Broken
+      extends StObject
+         with PolicyEvaluationStatus
+    /* 5 */ val Broken: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Broken & Double = js.native
     
     /**
       * The policy does not apply to this pull request.
       */
     @js.native
-    sealed trait NotApplicable extends PolicyEvaluationStatus
-    /* 4 */ val NotApplicable: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.NotApplicable with Double = js.native
+    sealed trait NotApplicable
+      extends StObject
+         with PolicyEvaluationStatus
+    /* 4 */ val NotApplicable: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.NotApplicable & Double = js.native
     
     /**
       * The policy is either queued to run, or is waiting for some event before progressing.
       */
     @js.native
-    sealed trait Queued extends PolicyEvaluationStatus
-    /* 0 */ val Queued: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Queued with Double = js.native
+    sealed trait Queued
+      extends StObject
+         with PolicyEvaluationStatus
+    /* 0 */ val Queued: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Queued & Double = js.native
     
     /**
       * The policy has rejected this pull request.
       */
     @js.native
-    sealed trait Rejected extends PolicyEvaluationStatus
-    /* 3 */ val Rejected: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Rejected with Double = js.native
+    sealed trait Rejected
+      extends StObject
+         with PolicyEvaluationStatus
+    /* 3 */ val Rejected: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Rejected & Double = js.native
     
     /**
       * The policy is currently running.
       */
     @js.native
-    sealed trait Running extends PolicyEvaluationStatus
-    /* 1 */ val Running: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Running with Double = js.native
+    sealed trait Running
+      extends StObject
+         with PolicyEvaluationStatus
+    /* 1 */ val Running: typings.vsoNodeApi.policyInterfacesMod.PolicyEvaluationStatus.Running & Double = js.native
   }
   
   object TypeInfo {
@@ -87,43 +98,44 @@ object policyInterfacesMod {
     def PolicyEvaluationStatus_=(x: EnumValuesBroken): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationStatus")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PolicyConfiguration extends VersionedPolicyConfigurationRef {
+  trait PolicyConfiguration
+    extends StObject
+       with VersionedPolicyConfigurationRef {
     
     /**
       * The links to other objects related to this object.
       */
-    var _links: js.Any = js.native
+    var _links: js.Any
     
     /**
       * A reference to the identity that created the policy.
       */
-    var createdBy: IdentityRef = js.native
+    var createdBy: IdentityRef
     
     /**
       * The date and time when the policy was created.
       */
-    var createdDate: Date = js.native
+    var createdDate: Date
     
     /**
       * Indicates whether the policy is blocking.
       */
-    var isBlocking: Boolean = js.native
+    var isBlocking: Boolean
     
     /**
       * Indicates whether the policy has been (soft) deleted.
       */
-    var isDeleted: Boolean = js.native
+    var isDeleted: Boolean
     
     /**
       * Indicates whether the policy is enabled.
       */
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
     
     /**
       * The policy configuration settings.
       */
-    var settings: js.Any = js.native
+    var settings: js.Any
   }
   object PolicyConfiguration {
     
@@ -172,23 +184,22 @@ object policyInterfacesMod {
     }
   }
   
-  @js.native
   trait PolicyConfigurationRef extends StObject {
     
     /**
       * The policy configuration ID.
       */
-    var id: Double = js.native
+    var id: Double
     
     /**
       * The policy configuration type.
       */
-    var `type`: PolicyTypeRef = js.native
+    var `type`: PolicyTypeRef
     
     /**
       * The URL where the policy configuration can be retrieved.
       */
-    var url: String = js.native
+    var url: String
   }
   object PolicyConfigurationRef {
     
@@ -213,48 +224,47 @@ object policyInterfacesMod {
     }
   }
   
-  @js.native
   trait PolicyEvaluationRecord extends StObject {
     
     /**
       * Links to other related objects
       */
-    var _links: js.Any = js.native
+    var _links: js.Any
     
     /**
       * A string which uniquely identifies the target of a policy evaluation.
       */
-    var artifactId: String = js.native
+    var artifactId: String
     
     /**
       * Time when this policy finished evaluating on this pull request.
       */
-    var completedDate: Date = js.native
+    var completedDate: Date
     
     /**
       * Contains all configuration data for the policy which is being evaluated.
       */
-    var configuration: PolicyConfiguration = js.native
+    var configuration: PolicyConfiguration
     
     /**
       * Internal context data of this policy evaluation.
       */
-    var context: js.Any = js.native
+    var context: js.Any
     
     /**
       * Guid which uniquely identifies this evaluation record (one policy running on one pull request).
       */
-    var evaluationId: String = js.native
+    var evaluationId: String
     
     /**
       * Time when this policy was first evaluated on this pull request.
       */
-    var startedDate: Date = js.native
+    var startedDate: Date
     
     /**
       * Status of the policy (Running, Approved, Failed, etc.)
       */
-    var status: PolicyEvaluationStatus = js.native
+    var status: PolicyEvaluationStatus
   }
   object PolicyEvaluationRecord {
     
@@ -302,18 +312,19 @@ object policyInterfacesMod {
     }
   }
   
-  @js.native
-  trait PolicyType extends PolicyTypeRef {
+  trait PolicyType
+    extends StObject
+       with PolicyTypeRef {
     
     /**
       * The links to other objects related to this object.
       */
-    var _links: js.Any = js.native
+    var _links: js.Any
     
     /**
       * Detailed description of the policy type.
       */
-    var description: String = js.native
+    var description: String
   }
   object PolicyType {
     
@@ -334,23 +345,22 @@ object policyInterfacesMod {
     }
   }
   
-  @js.native
   trait PolicyTypeRef extends StObject {
     
     /**
       * Display name of the policy type.
       */
-    var displayName: String = js.native
+    var displayName: String
     
     /**
       * The policy type ID.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The URL where the policy type can be retrieved.
       */
-    var url: String = js.native
+    var url: String
   }
   object PolicyTypeRef {
     
@@ -374,13 +384,14 @@ object policyInterfacesMod {
     }
   }
   
-  @js.native
-  trait VersionedPolicyConfigurationRef extends PolicyConfigurationRef {
+  trait VersionedPolicyConfigurationRef
+    extends StObject
+       with PolicyConfigurationRef {
     
     /**
       * The policy configuration revision ID.
       */
-    var revision: Double = js.native
+    var revision: Double
   }
   object VersionedPolicyConfigurationRef {
     

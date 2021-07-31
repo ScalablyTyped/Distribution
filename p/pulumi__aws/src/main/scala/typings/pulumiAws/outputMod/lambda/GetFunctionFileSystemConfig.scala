@@ -2,18 +2,16 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionFileSystemConfig extends StObject {
   
   /**
     * Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualifiedArn`.
     */
-  var arn: String = js.native
+  var arn: String
   
-  var localMountPath: String = js.native
+  var localMountPath: String
 }
 object GetFunctionFileSystemConfig {
   

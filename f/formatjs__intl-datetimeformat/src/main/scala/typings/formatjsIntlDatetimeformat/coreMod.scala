@@ -13,7 +13,6 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
@@ -22,12 +21,13 @@ object coreMod {
   @JSImport("@formatjs/intl-datetimeformat/lib/src/core", "DateTimeFormat")
   @js.native
   class DateTimeFormat ()
-    extends typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat {
+    extends StObject
+       with typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
-    def this(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions) = this()
     def this(locales: String, options: DateTimeFormatOptions) = this()
     def this(locales: js.Array[String], options: DateTimeFormatOptions) = this()
+    def this(locales: Unit, options: DateTimeFormatOptions) = this()
   }
   @JSImport("@formatjs/intl-datetimeformat/lib/src/core", "DateTimeFormat")
   @js.native
@@ -35,23 +35,24 @@ object coreMod {
   
   @js.native
   trait DateTimeFormatConstructor
-    extends Instantiable0[typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat]
+    extends StObject
+       with Instantiable0[typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat]
        with Instantiable1[
           (/* locales */ js.Array[String]) | (/* locales */ String), 
           typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat
         ]
        with Instantiable2[
-          js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
+          (/* locales */ js.Array[String]) | (/* locales */ String) | (/* locales */ Unit), 
           /* options */ DateTimeFormatOptions, 
           typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat
         ] {
     
     def apply(): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
-    def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
     def apply(locales: String): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
     def apply(locales: String, options: DateTimeFormatOptions): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
     def apply(locales: js.Array[String]): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
     def apply(locales: js.Array[String], options: DateTimeFormatOptions): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
+    def apply(locales: Unit, options: DateTimeFormatOptions): typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat = js.native
     
     def __addLocaleData(data: RawDateTimeLocaleData*): Unit = js.native
     

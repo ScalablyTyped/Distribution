@@ -2,51 +2,49 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block extends StObject {
   
-  var block: Parse = js.native
+  var block: Parse
   
-  var configure: js.Any = js.native
+  var configure: js.Any
   
-  var core: Process = js.native
+  var core: Process
   
-  var disable: js.Any = js.native
+  var disable: js.Any
   
-  var enable: js.Any = js.native
+  var enable: js.Any
   
-  var helpers: ParseLinkDestination = js.native
+  var helpers: ParseLinkDestination
   
-  var `inline`: Ruler = js.native
+  var `inline`: Ruler
   
-  var linkify: Add = js.native
+  var linkify: Add
   
-  var normalizeLink: js.Any = js.native
+  var normalizeLink: js.Any
   
-  var normalizeLinkText: js.Any = js.native
+  var normalizeLinkText: js.Any
   
-  var options: Breaks = js.native
+  var options: Breaks
   
-  var parse: js.Any = js.native
+  var parse: js.Any
   
-  var parseInline: js.Any = js.native
+  var parseInline: js.Any
   
-  var render: js.Any = js.native
+  var render: js.Any
   
-  var renderInline: js.Any = js.native
+  var renderInline: js.Any
   
-  var renderer: Render = js.native
+  var renderer: Render
   
-  var set: js.Any = js.native
+  var set: js.Any
   
-  var use: js.Any = js.native
+  var use: js.Any
   
-  var utils: ArrayReplaceAt = js.native
+  var utils: ArrayReplaceAt
   
-  var validateLink: js.Any = js.native
+  var validateLink: js.Any
 }
 object Block {
   

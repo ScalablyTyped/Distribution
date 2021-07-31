@@ -2,33 +2,31 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnhancedElementInstance[T] extends StObject {
   
   /**
     * The locate strategy to be used with `selector` when finding the element within the DOM.
     */
-  var locateStrategy: LocateStrategy = js.native
+  var locateStrategy: LocateStrategy
   
   /**
     * The name of the element as defined by its key in the parent section or the page object's `elements` definition.
     * This is the same name used with the `@` prefix in selector arguments for page object commands that refer to the element.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A reference to the parent object instance.
     * This is the parent section or the page object that contained the definition for this object.
     */
-  var parent: T = js.native
+  var parent: T
   
   /**
     * The selector string used to find the element in the DOM.
     */
-  var selector: String = js.native
+  var selector: String
 }
 object EnhancedElementInstance {
   
@@ -39,7 +37,7 @@ object EnhancedElementInstance {
   }
   
   @scala.inline
-  implicit class EnhancedElementInstanceMutableBuilder[Self <: EnhancedElementInstance[_], T] (val x: Self with EnhancedElementInstance[T]) extends AnyVal {
+  implicit class EnhancedElementInstanceMutableBuilder[Self <: EnhancedElementInstance[?], T] (val x: Self & EnhancedElementInstance[T]) extends AnyVal {
     
     @scala.inline
     def setLocateStrategy(value: LocateStrategy): Self = StObject.set(x, "locateStrategy", value.asInstanceOf[js.Any])

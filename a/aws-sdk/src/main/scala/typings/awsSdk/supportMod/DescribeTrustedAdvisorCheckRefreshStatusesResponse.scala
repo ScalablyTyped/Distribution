@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrustedAdvisorCheckRefreshStatusesResponse extends StObject {
   
   /**
     * The refresh status of the specified Trusted Advisor checks.
     */
-  var statuses: TrustedAdvisorCheckRefreshStatusList = js.native
+  var statuses: TrustedAdvisorCheckRefreshStatusList
 }
 object DescribeTrustedAdvisorCheckRefreshStatusesResponse {
   

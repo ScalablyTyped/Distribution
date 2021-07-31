@@ -2,49 +2,47 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationBindingsOptions extends StObject {
   
   /**
     * (Highstock) A line with arrow annotation. Includes `start` and one event
     * in `steps` array.
     */
-  var arrowInfinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var arrowInfinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A ray with an arrow annotation bindings. Includes `start` and
     * one event in `steps` array.
     */
-  var arrowRay: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var arrowRay: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A segment with an arrow annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var arrowSegment: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var arrowSegment: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) A circle annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var circleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var circleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Crooked line (three points) annotation bindings. Includes
     * `start` and two events in `steps` (for second and third points in crooked
     * line) array.
     */
-  var crooked3: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var crooked3: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Crooked line (five points) annotation bindings. Includes
     * `start` and four events in `steps` (for all consequent points in crooked
     * line) array.
     */
-  var crooked5: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var crooked5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Hides/shows two price indicators:
@@ -53,65 +51,65 @@ trait NavigationBindingsOptions extends StObject {
     *
     * - last price in the selected range
     */
-  var currentPriceIndicator: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var currentPriceIndicator: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Elliott wave (three points) annotation bindings. Includes
     * `start` and two events in `steps` (for second and third points) array.
     */
-  var elliott3: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var elliott3: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Elliott wave (five points) annotation bindings. Includes
     * `start` and four event in `steps` (for all consequent points in Elliott
     * wave) array.
     */
-  var elliott5: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var elliott5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A fibonacci annotation bindings. Includes `start` and two
     * events in `steps` array (updates second point, then height).
     */
-  var fibonacci: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var fibonacci: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'circlepin'`
     * shape.
     */
-  var flagCirclepin: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var flagCirclepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'diamondpin'`
     * shape.
     */
-  var flagDiamondpin: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var flagDiamondpin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag without pin shape.
     */
-  var flagSimplepin: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var flagSimplepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'squarepin'`
     * shape.
     */
-  var flagSquarepin: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var flagSquarepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Displays chart in fullscreen.
     *
     * **Note**: Fullscreen is not supported on iPhone due to iOS limitations.
     */
-  var fullScreen: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var fullScreen: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A horizontal line annotation. Includes `start` event.
     */
-  var horizontalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var horizontalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Indicators bindings. Includes `init` event to show a popup.
@@ -119,62 +117,62 @@ trait NavigationBindingsOptions extends StObject {
     * Note: In order to show base series from the chart in the popup's dropdown
     * each series requires series.id to be defined.
     */
-  var indicators: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var indicators: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A line annotation. Includes `start` and one event in `steps`
     * array.
     */
-  var infinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var infinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) A label annotation bindings. Includes `start`
     * event only.
     */
-  var labelAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var labelAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A measure (x-dimension) annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var measureX: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var measureX: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A measure (xy-dimension) annotation bindings. Includes
     * `start` and one event in `steps` array.
     */
-  var measureXY: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var measureXY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A measure (y-dimension) annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var measureY: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var measureY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A parallel channel (tunnel) annotation bindings. Includes
     * `start` and two events in `steps` array (updates second point, then
     * height).
     */
-  var parallelChannel: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var parallelChannel: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) An Andrew's pitchfork annotation bindings. Includes `start`
     * and two events in `steps` array (sets second and third control points).
     */
-  var pitchfork: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var pitchfork: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A ray annotation bindings. Includes `start` and one event in
     * `steps` array.
     */
-  var ray: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var ray: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) A rectangle annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var rectangleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var rectangleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Save a chart in localStorage under `highcharts-chart` key.
@@ -186,77 +184,77 @@ trait NavigationBindingsOptions extends StObject {
     *
     * - flags
     */
-  var saveChart: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var saveChart: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A segment annotation bindings. Includes `start` and one event
     * in `steps` array.
     */
-  var segment: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var segment: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Changes main series to `'candlestick'` type.
     */
-  var seriesTypeCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var seriesTypeCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Changes main series to `'line'` type.
     */
-  var seriesTypeLine: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var seriesTypeLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Changes main series to `'ohlc'` type.
     */
-  var seriesTypeOhlc: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var seriesTypeOhlc: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Hides/shows all annotations on a chart.
     */
-  var toggleAnnotations: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var toggleAnnotations: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
     * On click, finds the closest point and marks it with an arrow. Green arrow
     * when pointing from above, red when pointing from below the point.
     */
-  var verticalArrow: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var verticalArrow: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A vertical counter annotation bindings. Includes `start`
     * event. On click, finds the closest point and marks it with a numeric
     * annotation - incrementing counter on each add.
     */
-  var verticalCounter: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var verticalCounter: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
     * On click, finds the closest point and marks it with an arrow and a label
     * with value.
     */
-  var verticalLabel: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var verticalLabel: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) A vertical line annotation. Includes `start` event.
     */
-  var verticalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var verticalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Enables zooming in xAxis on a chart. Includes `start` event
     * which changes chart.zoomType.
     */
-  var zoomX: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var zoomX: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Enables zooming in xAxis and yAxis on a chart. Includes
     * `start` event which changes chart.zoomType.
     */
-  var zoomXY: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var zoomXY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   
   /**
     * (Highstock) Enables zooming in yAxis on a chart. Includes `start` event
     * which changes chart.zoomType.
     */
-  var zoomY: js.UndefOr[NavigationBindingsOptionsObject] = js.native
+  var zoomY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
 }
 object NavigationBindingsOptions {
   

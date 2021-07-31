@@ -2,15 +2,13 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortingRule[D] extends StObject {
   
-  var desc: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[Boolean] = js.undefined
   
-  var id: IdType[D] = js.native
+  var id: IdType[D]
 }
 object SortingRule {
   
@@ -21,7 +19,7 @@ object SortingRule {
   }
   
   @scala.inline
-  implicit class SortingRuleMutableBuilder[Self <: SortingRule[_], D] (val x: Self with SortingRule[D]) extends AnyVal {
+  implicit class SortingRuleMutableBuilder[Self <: SortingRule[?], D] (val x: Self & SortingRule[D]) extends AnyVal {
     
     @scala.inline
     def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])

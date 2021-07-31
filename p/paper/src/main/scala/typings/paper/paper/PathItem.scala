@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     {@link Path} and {@link CompoundPath}.
   */
 @js.native
-trait PathItem extends Item {
+trait PathItem
+  extends StObject
+     with Item {
   
   /** 
     * Adds an arc from the position of the last segment in the path, passing
@@ -373,9 +374,9 @@ trait PathItem extends Item {
     * @return a reference to the item itself, reoriented
     */
   def reorient(): PathItem = js.native
-  def reorient(nonZero: js.UndefOr[scala.Nothing], clockwise: Boolean): PathItem = js.native
   def reorient(nonZero: Boolean): PathItem = js.native
   def reorient(nonZero: Boolean, clockwise: Boolean): PathItem = js.native
+  def reorient(nonZero: Unit, clockwise: Boolean): PathItem = js.native
   
   /** 
     * Reverses the orientation of the path item. When called on

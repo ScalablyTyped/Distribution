@@ -20,7 +20,6 @@ import typings.chrome.chrome.fileSystemProvider.SourceTargetPathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.UnmountOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -38,24 +37,19 @@ object fileSystemProvider {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.fileSystemProvider.get")
-  @js.native
-  def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = js.native
+  @scala.inline
+  def get(fileSystemId: String, callback: js.Function1[/* fileSystem */ FileSystemInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(fileSystemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystemProvider.getAll")
-  @js.native
-  def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(callback: js.Function1[/* fileSystems */ js.Array[FileSystemInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystemProvider.mount")
-  @js.native
-  def mount(options: MountOptions): Unit = js.native
-  @JSGlobal("chrome.fileSystemProvider.mount")
-  @js.native
-  def mount(options: MountOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def mount(options: MountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mount(options: MountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystemProvider.notify")
-  @js.native
-  def notify_(options: NotificationOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def notify_(options: NotificationOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.fileSystemProvider.onAbortRequested")
   @js.native
@@ -165,10 +159,8 @@ object fileSystemProvider {
   @scala.inline
   def onWriteFileRequested_=(x: OpenedFileIoRequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onWriteFileRequested")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.fileSystemProvider.unmount")
-  @js.native
-  def unmount(options: UnmountOptions): Unit = js.native
-  @JSGlobal("chrome.fileSystemProvider.unmount")
-  @js.native
-  def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def unmount(options: UnmountOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unmount(options: UnmountOptions, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

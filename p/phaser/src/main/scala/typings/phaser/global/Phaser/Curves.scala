@@ -7,7 +7,6 @@ import typings.phaser.Phaser.Types.Curves.JSONEllipseCurve
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Curves {
@@ -18,7 +17,8 @@ object Curves {
   @JSGlobal("Phaser.Curves.CubicBezier")
   @js.native
   class CubicBezier protected ()
-    extends typings.phaser.Phaser.Curves.CubicBezier {
+    extends StObject
+       with typings.phaser.Phaser.Curves.CubicBezier {
     def this(p0: js.Array[Vector2], p1: Vector2, p2: Vector2, p3: Vector2) = this()
     /**
       * 
@@ -31,14 +31,17 @@ object Curves {
   }
   object CubicBezier {
     
+    @JSGlobal("Phaser.Curves.CubicBezier")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Generates a curve from a JSON object.
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @JSGlobal("Phaser.Curves.CubicBezier.fromJSON")
-    @js.native
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = js.native
+    @scala.inline
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.CubicBezier]
   }
   
   /**
@@ -49,7 +52,8 @@ object Curves {
   @JSGlobal("Phaser.Curves.Curve")
   @js.native
   class Curve protected ()
-    extends typings.phaser.Phaser.Curves.Curve {
+    extends StObject
+       with typings.phaser.Phaser.Curves.Curve {
     /**
       * 
       * @param type The curve type.
@@ -65,7 +69,8 @@ object Curves {
   @JSGlobal("Phaser.Curves.Ellipse")
   @js.native
   class Ellipse protected ()
-    extends typings.phaser.Phaser.Curves.Ellipse {
+    extends StObject
+       with typings.phaser.Phaser.Curves.Ellipse {
     /**
       * 
       * @param x The x coordinate of the ellipse, or an Ellipse Curve configuration object. Default 0.
@@ -90,14 +95,17 @@ object Curves {
   }
   object Ellipse {
     
+    @JSGlobal("Phaser.Curves.Ellipse")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a curve from the provided Ellipse Curve Configuration object.
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @JSGlobal("Phaser.Curves.Ellipse.fromJSON")
-    @js.native
-    def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = js.native
+    @scala.inline
+    def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Ellipse]
   }
   
   /**
@@ -106,7 +114,8 @@ object Curves {
   @JSGlobal("Phaser.Curves.Line")
   @js.native
   class Line protected ()
-    extends typings.phaser.Phaser.Curves.Line {
+    extends StObject
+       with typings.phaser.Phaser.Curves.Line {
     def this(p0: js.Array[Double]) = this()
     /**
       * 
@@ -119,14 +128,17 @@ object Curves {
   }
   object Line {
     
+    @JSGlobal("Phaser.Curves.Line")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Configures this line from a JSON representation.
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @JSGlobal("Phaser.Curves.Line.fromJSON")
-    @js.native
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = js.native
+    @scala.inline
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Line]
   }
   
   /**
@@ -140,10 +152,11 @@ object Curves {
     * @param y `y` pixel coordinate.
     */
   class MoveTo ()
-    extends typings.phaser.Phaser.Curves.MoveTo {
+    extends StObject
+       with typings.phaser.Phaser.Curves.MoveTo {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
   }
   
   /**
@@ -161,10 +174,11 @@ object Curves {
     * @param y The Y coordinate of the Path's starting point. Default 0.
     */
   class Path ()
-    extends typings.phaser.Phaser.Curves.Path {
+    extends StObject
+       with typings.phaser.Phaser.Curves.Path {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
   }
   
   /**
@@ -173,7 +187,8 @@ object Curves {
   @JSGlobal("Phaser.Curves.QuadraticBezier")
   @js.native
   class QuadraticBezier protected ()
-    extends typings.phaser.Phaser.Curves.QuadraticBezier {
+    extends StObject
+       with typings.phaser.Phaser.Curves.QuadraticBezier {
     def this(p0: js.Array[Double], p1: Vector2, p2: Vector2) = this()
     /**
       * 
@@ -185,14 +200,17 @@ object Curves {
   }
   object QuadraticBezier {
     
+    @JSGlobal("Phaser.Curves.QuadraticBezier")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a curve from a JSON object, e. g. created by `toJSON`.
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @JSGlobal("Phaser.Curves.QuadraticBezier.fromJSON")
-    @js.native
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = js.native
+    @scala.inline
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.QuadraticBezier]
   }
   
   /**
@@ -205,18 +223,22 @@ object Curves {
     * @param points The points that configure the curve.
     */
   class Spline ()
-    extends typings.phaser.Phaser.Curves.Spline {
+    extends StObject
+       with typings.phaser.Phaser.Curves.Spline {
     def this(points: js.Array[js.Array[Double] | Double | Vector2]) = this()
   }
   object Spline {
+    
+    @JSGlobal("Phaser.Curves.Spline")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Imports a JSON object containing this curve data.
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @JSGlobal("Phaser.Curves.Spline.fromJSON")
-    @js.native
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = js.native
+    @scala.inline
+    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Spline]
   }
 }

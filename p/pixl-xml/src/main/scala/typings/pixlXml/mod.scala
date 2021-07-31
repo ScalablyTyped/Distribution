@@ -2,10 +2,13 @@ package typings.pixlXml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("pixl-xml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pixl-xml", "Parser")
   @js.native
@@ -21,9 +24,9 @@ object mod {
       * @param eol
       */
     def compose(): String = js.native
-    def compose(indentCharacter: js.UndefOr[scala.Nothing], eol: String): String = js.native
     def compose(indentCharacter: String): String = js.native
     def compose(indentCharacter: String, eol: String): String = js.native
+    def compose(indentCharacter: Unit, eol: String): String = js.native
     
     var dataKey: String = js.native
     
@@ -31,7 +34,7 @@ object mod {
     
     var dtdNodeList: js.Array[String] = js.native
     
-    var errors: js.Array[_] = js.native
+    var errors: js.Array[js.Any] = js.native
     
     /**
       * Returns the parsed XML tree. This tree is mutable and can be modified
@@ -52,315 +55,57 @@ object mod {
     var tree: OutputJsonInterface = js.native
   }
   
-  @JSImport("pixl-xml", "alwaysArray")
-  @js.native
-  def alwaysArray[T](input: T): js.Array[T] = js.native
-  @JSImport("pixl-xml", "alwaysArray")
-  @js.native
-  def alwaysArray[T](input: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def alwaysArray[T](input: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def alwaysArray[T](input: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("pixl-xml", "decodeEntities")
-  @js.native
-  def decodeEntities(xml: String): String = js.native
+  @scala.inline
+  def decodeEntities(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntities")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("pixl-xml", "encodeAttribEntities")
-  @js.native
-  def encodeAttribEntities(xml: String): String = js.native
+  @scala.inline
+  def encodeAttribEntities(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeAttribEntities")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("pixl-xml", "encodeEntities")
-  @js.native
-  def encodeEntities(xml: String): String = js.native
+  @scala.inline
+  def encodeEntities(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeEntities")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("pixl-xml", "firstKey")
-  @js.native
-  def firstKey(hash: js.Object): String = js.native
+  @scala.inline
+  def firstKey(hash: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("firstKey")(hash.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("pixl-xml", "hashKeysToArray")
-  @js.native
-  def hashKeysToArray(input: js.Object): js.Array[String] = js.native
+  @scala.inline
+  def hashKeysToArray(input: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("hashKeysToArray")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("pixl-xml", "isaArray")
-  @js.native
-  def isaArray(input: js.Any): Boolean = js.native
+  @scala.inline
+  def isaArray(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isaArray")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("pixl-xml", "isaHash")
-  @js.native
-  def isaHash(input: js.Any): Boolean = js.native
+  @scala.inline
+  def isaHash(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isaHash")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("pixl-xml", "numKeys")
-  @js.native
-  def numKeys(hash: js.Object): Double = js.native
+  @scala.inline
+  def numKeys(hash: js.Object): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("numKeys")(hash.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("pixl-xml", "parse")
-  @js.native
-  def parse(xml: String): js.Object = js.native
-  @JSImport("pixl-xml", "parse")
-  @js.native
-  def parse(xml: String, options: PixlParseOptions): js.Object = js.native
+  @scala.inline
+  def parse(xml: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def parse(xml: String, options: PixlParseOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(doc: js.Object): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String,
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String,
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String,
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(doc: js.Object, outerElName: js.UndefOr[scala.Nothing], indentSize: Double): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: String,
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: String,
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: js.UndefOr[scala.Nothing],
-    indentSize: Double,
-    indentCharacter: String,
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(doc: js.Object, outerElName: String): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String,
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String,
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: js.UndefOr[scala.Nothing],
-    indentCharacter: String,
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(doc: js.Object, outerElName: String, indentSize: Double): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: Double,
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: Double,
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: Double,
-    indentCharacter: js.UndefOr[scala.Nothing],
-    eolCharacter: String,
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(doc: js.Object, outerElName: String, indentSize: Double, indentCharacter: String): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
-  def stringify(
-    doc: js.Object,
-    outerElName: String,
-    indentSize: Double,
-    indentCharacter: String,
-    eolCharacter: js.UndefOr[scala.Nothing],
-    preserveOrder: Boolean
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
+  @scala.inline
+  def stringify(doc: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: String, indentSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: String, indentSize: Double, indentCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     doc: js.Object,
     outerElName: String,
     indentSize: Double,
     indentCharacter: String,
     eolCharacter: String
-  ): String = js.native
-  @JSImport("pixl-xml", "stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     doc: js.Object,
     outerElName: String,
@@ -368,20 +113,194 @@ object mod {
     indentCharacter: String,
     eolCharacter: String,
     preserveOrder: Boolean
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Double,
+    indentCharacter: String,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Double,
+    indentCharacter: Unit,
+    eolCharacter: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Double,
+    indentCharacter: Unit,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Double,
+    indentCharacter: Unit,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: String, indentSize: Unit, indentCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Unit,
+    indentCharacter: String,
+    eolCharacter: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Unit,
+    indentCharacter: String,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Unit,
+    indentCharacter: String,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: String, indentSize: Unit, indentCharacter: Unit, eolCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Unit,
+    indentCharacter: Unit,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: String,
+    indentSize: Unit,
+    indentCharacter: Unit,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: Unit, indentSize: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: Unit, indentSize: Double, indentCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Double,
+    indentCharacter: String,
+    eolCharacter: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Double,
+    indentCharacter: String,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Double,
+    indentCharacter: String,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: Unit, indentSize: Double, indentCharacter: Unit, eolCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Double,
+    indentCharacter: Unit,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Double,
+    indentCharacter: Unit,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: Unit, indentSize: Unit, indentCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: Unit, indentSize: Unit, indentCharacter: String, eolCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Unit,
+    indentCharacter: String,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Unit,
+    indentCharacter: String,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(doc: js.Object, outerElName: Unit, indentSize: Unit, indentCharacter: Unit, eolCharacter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Unit,
+    indentCharacter: Unit,
+    eolCharacter: String,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    doc: js.Object,
+    outerElName: Unit,
+    indentSize: Unit,
+    indentCharacter: Unit,
+    eolCharacter: Unit,
+    preserveOrder: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(doc.asInstanceOf[js.Any], outerElName.asInstanceOf[js.Any], indentSize.asInstanceOf[js.Any], indentCharacter.asInstanceOf[js.Any], eolCharacter.asInstanceOf[js.Any], preserveOrder.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait PixlParseOptions extends StObject {
     
-    var forceArrays: js.UndefOr[Boolean] = js.native
+    var forceArrays: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCase: js.UndefOr[Boolean] = js.native
+    var lowerCase: js.UndefOr[Boolean] = js.undefined
     
-    var preserveAttributes: js.UndefOr[Boolean] = js.native
+    var preserveAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var preserveDocumentNode: js.UndefOr[Boolean] = js.native
+    var preserveDocumentNode: js.UndefOr[Boolean] = js.undefined
     
-    var preserveWhitespace: js.UndefOr[Boolean] = js.native
+    var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
   }
   object PixlParseOptions {
     

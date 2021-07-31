@@ -10,12 +10,13 @@ Azure Data Explorer Query SDK
 | ------------------ | :-------------: |
 | Full name          | azure-kusto-data |
 | Keywords           | node, azure, kusto |
-| # releases         | 26 |
+| # releases         | 25 |
 | # dependents       | 1 |
-| # downloads        | 235550 |
+| # downloads        | 641371 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/Azure/azure-kusto-node/blob/master/azure-kusto-data/README.md)
 - [Npm](https://www.npmjs.com/package/azure-kusto-data)
     
 

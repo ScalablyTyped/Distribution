@@ -5,7 +5,6 @@ import typings.knockoutPaging.anon.Clear
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -35,7 +34,7 @@ trait KnockoutUtils extends StObject {
   def arrayPushAll[T](array: js.Array[T], valuesToPush: js.Array[T]): js.Array[T] = js.native
   def arrayPushAll[T](array: KnockoutObservableArray[T], valuesToPush: js.Array[T]): js.Array[T] = js.native
   
-  def arrayRemoveItem(array: js.Array[_], itemToRemove: js.Any): Unit = js.native
+  def arrayRemoveItem(array: js.Array[js.Any], itemToRemove: js.Any): Unit = js.native
   
   def compareArrays[T](a: js.Array[T], b: js.Array[T]): js.Array[KnockoutArrayChange[T]] = js.native
   
@@ -51,13 +50,13 @@ trait KnockoutUtils extends StObject {
   
   def extend(target: js.Object, source: js.Object): js.Object = js.native
   
-  var fieldsIncludedWithJsonPost: js.Array[_] = js.native
+  var fieldsIncludedWithJsonPost: js.Array[js.Any] = js.native
   
-  def getFormFields(form: js.Any, fieldName: String): js.Array[_] = js.native
+  def getFormFields(form: js.Any, fieldName: String): js.Array[js.Any] = js.native
   
   def objectForEach(obj: js.Any, action: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]): Unit = js.native
   
-  def parseHtmlFragment(html: String): js.Array[_] = js.native
+  def parseHtmlFragment(html: String): js.Array[js.Any] = js.native
   
   def parseJson(jsonString: String): js.Any = js.native
   
@@ -76,9 +75,9 @@ trait KnockoutUtils extends StObject {
   def setTextContent(element: js.Any, textContent: KnockoutObservable[String]): Unit = js.native
   
   def stringifyJson(data: js.Any): String = js.native
-  def stringifyJson(data: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function): String = js.native
   def stringifyJson(data: js.Any, replacer: js.Function, space: String): String = js.native
+  def stringifyJson(data: js.Any, replacer: Unit, space: String): String = js.native
   
   def toggleDomNodeCssClass(node: js.Any, className: String, shouldHaveClass: Boolean): Unit = js.native
   

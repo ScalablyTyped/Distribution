@@ -4,21 +4,19 @@ import typings.ionic.anon.Req
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends StObject {
   
-  val client: IClient = js.native
+  val client: IClient
   
-  def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
+  def guard(res: APIResponseSuccess): /* is T */ Boolean
   
-  val max: js.UndefOr[Double] = js.native
+  val max: js.UndefOr[Double] = js.undefined
   
-  def reqgen(): js.Promise[Req] = js.native
+  def reqgen(): js.Promise[Req]
   
-  val state: js.UndefOr[Partial[S]] = js.native
+  val state: js.UndefOr[Partial[S]] = js.undefined
 }
 object PaginatorDeps {
   
@@ -29,7 +27,7 @@ object PaginatorDeps {
   }
   
   @scala.inline
-  implicit class PaginatorDepsMutableBuilder[Self <: PaginatorDeps[_, _], T /* <: Response[js.Array[js.Object]] */, S] (val x: Self with (PaginatorDeps[T, S])) extends AnyVal {
+  implicit class PaginatorDepsMutableBuilder[Self <: PaginatorDeps[?, ?], T /* <: Response[js.Array[js.Object]] */, S] (val x: Self & (PaginatorDeps[T, S])) extends AnyVal {
     
     @scala.inline
     def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])

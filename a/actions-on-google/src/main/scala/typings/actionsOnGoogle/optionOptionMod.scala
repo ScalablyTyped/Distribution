@@ -5,45 +5,46 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselSelectCaro
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsImage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionOptionMod {
   
-  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option/option", "convert")
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option/option", JSImport.Namespace)
   @js.native
-  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
   
   type ApiOptionItem = GoogleActionsV2UiElementsCarouselSelectCarouselItem
   
   type OptionArgument = String
   
-  @js.native
   trait OptionItem extends StObject {
     
     /**
       * Optional text describing the item.
       * @public
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Square image to show for this item.
       * @public
       */
-    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /**
       * Synonyms that can be used by the user to indicate this option if they do not use the key.
       * @public
       */
-    var synonyms: js.UndefOr[js.Array[String]] = js.native
+    var synonyms: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Name of the item.
       * @public
       */
-    var title: String = js.native
+    var title: String
   }
   object OptionItem {
     

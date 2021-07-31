@@ -2,21 +2,19 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsOutput extends StObject {
   
   /**
     * The ID of the ML object from which tags were deleted.
     */
-  var ResourceId: js.UndefOr[EntityId] = js.native
+  var ResourceId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The type of the ML object from which tags were deleted.
     */
-  var ResourceType: js.UndefOr[TaggableResourceType] = js.native
+  var ResourceType: js.UndefOr[TaggableResourceType] = js.undefined
 }
 object DeleteTagsOutput {
   

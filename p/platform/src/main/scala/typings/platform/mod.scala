@@ -3,7 +3,6 @@ package typings.platform
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,13 +11,12 @@ object mod extends Shortcut {
   @js.native
   val ^ : Platform = js.native
   
-  @js.native
   trait OperatingSystem extends StObject {
     
     /**
       * The CPU architecture the OS is built for.
       */
-    var architecture: js.UndefOr[Double] = js.native
+    var architecture: js.UndefOr[Double] = js.undefined
     
     /**
       * The family of the OS.
@@ -28,12 +26,12 @@ object mod extends Shortcut {
       * "Windows XP", "OS X", "Linux", "Ubuntu", "Debian", "Fedora", "Red Hat",
       * "SuSE", "Android", "iOS" and "Windows Phone"
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the OS.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object OperatingSystem {
     

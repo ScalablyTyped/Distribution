@@ -13,23 +13,25 @@ import typings.std.Pick
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object factoryMod {
+  
+  @JSImport("rbx/base/helpers/factory", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rbx/base/helpers/factory", "makePropTypesFactory")
   @js.native
   val makePropTypesFactory: MakePropTypesFactoryFunction = js.native
   
-  @JSImport("rbx/base/helpers/factory", "makeRootValidatingTransformFactory")
-  @js.native
-  def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[_, _]] */](
+  @scala.inline
+  def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[js.Any, js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param mvtfs because its type T is not an array type */ mvtfs: T
   ): js.Function1[
     /* variables */ PartialVariablesDefinitio, 
     js.Function3[
-      /* props */ ClassName with (UnionToIntersection[
+      /* props */ ClassName & (UnionToIntersection[
         ExtractTTransformProps[
           /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
         ]
@@ -37,7 +39,7 @@ object factoryMod {
       /* componentName */ String, 
       /* location */ js.UndefOr[String], 
       (Pick[
-        ClassName with (UnionToIntersection[
+        ClassName & (UnionToIntersection[
           ExtractTTransformProps[
             /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
           ]
@@ -46,24 +48,49 @@ object factoryMod {
           className, 
           /* keyof rbx.rbx/types.UnionToIntersection<rbx.rbx/base/helpers/factory.ExtractTTransformProps<T[number]>> */ String
         ]
-      ]) with ClassName with (UnionToIntersection[
+      ]) & ClassName & (UnionToIntersection[
         ExtractTNewProps[
           /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
         ]
       ])
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRootValidatingTransformFactory")(mvtfs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* variables */ PartialVariablesDefinitio, 
+    js.Function3[
+      /* props */ ClassName & (UnionToIntersection[
+        ExtractTTransformProps[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+        ]
+      ]), 
+      /* componentName */ String, 
+      /* location */ js.UndefOr[String], 
+      (Pick[
+        ClassName & (UnionToIntersection[
+          ExtractTTransformProps[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+          ]
+        ]), 
+        Exclude[
+          className, 
+          /* keyof rbx.rbx/types.UnionToIntersection<rbx.rbx/base/helpers/factory.ExtractTTransformProps<T[number]>> */ String
+        ]
+      ]) & ClassName & (UnionToIntersection[
+        ExtractTNewProps[
+          /* import warning: importer.ImportType#apply Failed type conversion: T[number] */ js.Any
+        ]
+      ])
+    ]
+  ]]
   
-  @JSImport("rbx/base/helpers/factory", "makeValidatingTransformFactory")
-  @js.native
+  @scala.inline
   def makeValidatingTransformFactory[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */](
     makePropTypesFunc: MakePropTypesFunction,
     transformFunc: TransformFunction[TTransformProps, TNewProps]
-  ): MakeValidatingTransformFunction[TTransformProps, TNewProps] = js.native
+  ): MakeValidatingTransformFunction[TTransformProps, TNewProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeValidatingTransformFactory")(makePropTypesFunc.asInstanceOf[js.Any], transformFunc.asInstanceOf[js.Any])).asInstanceOf[MakeValidatingTransformFunction[TTransformProps, TNewProps]]
   
-  type ExtractTNewProps[T /* <: MakeValidatingTransformFunction[_, _] */] = js.Any
+  type ExtractTNewProps[T /* <: MakeValidatingTransformFunction[js.Any, js.Any] */] = js.Any
   
-  type ExtractTTransformProps[T /* <: MakeValidatingTransformFunction[_, _] */] = js.Any
+  type ExtractTTransformProps[T /* <: MakeValidatingTransformFunction[js.Any, js.Any] */] = js.Any
   
   type MakePropTypesFactoryFunction = js.Function1[
     /* makePropTypes */ js.Function1[/* variables */ VariablesDefinitions, ValidationMap[js.Any]], 
@@ -75,7 +102,7 @@ object factoryMod {
   type MakeValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
     /* variables */ js.UndefOr[VariablesDefinitions], 
     js.Function3[
-      /* props */ ClassName with Partial[TTransformProps], 
+      /* props */ ClassName & Partial[TTransformProps], 
       /* componentName */ String, 
       /* location */ js.UndefOr[String], 
       ReturnType[TransformFunction[TTransformProps, TNewProps]]
@@ -83,15 +110,15 @@ object factoryMod {
   ]
   
   type TransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
-    /* props */ ClassName with Partial[TTransformProps], 
+    /* props */ ClassName & Partial[TTransformProps], 
     (Omit[
-      ClassName with Partial[TTransformProps], 
+      ClassName & Partial[TTransformProps], 
       (/* keyof TTransformProps */ String) | className
-    ]) with ClassName with TNewProps
+    ]) & ClassName & TNewProps
   ]
   
   type ValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function3[
-    /* props */ ClassName with Partial[TTransformProps], 
+    /* props */ ClassName & Partial[TTransformProps], 
     /* componentName */ String, 
     /* location */ js.UndefOr[String], 
     ReturnType[TransformFunction[TTransformProps, TNewProps]]

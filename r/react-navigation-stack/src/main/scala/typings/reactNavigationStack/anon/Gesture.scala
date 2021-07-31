@@ -2,15 +2,13 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gesture extends StObject {
   
-  var closing: Boolean = js.native
+  var closing: Boolean
   
-  var gesture: Boolean = js.native
+  var gesture: Boolean
 }
 object Gesture {
   

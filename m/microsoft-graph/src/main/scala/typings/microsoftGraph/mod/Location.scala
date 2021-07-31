@@ -2,38 +2,36 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   // The street address of the location.
-  var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.native
+  var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
   // The geographic coordinates and elevation of the location.
-  var coordinates: js.UndefOr[NullableOption[OutlookGeoCoordinates]] = js.native
+  var coordinates: js.UndefOr[NullableOption[OutlookGeoCoordinates]] = js.undefined
   
   // The name associated with the location.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Optional email address of the location.
-  var locationEmailAddress: js.UndefOr[NullableOption[String]] = js.native
+  var locationEmailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The type of location. The possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates,
     * streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only.
     */
-  var locationType: js.UndefOr[NullableOption[LocationType]] = js.native
+  var locationType: js.UndefOr[NullableOption[LocationType]] = js.undefined
   
   // Optional URI representing the location.
-  var locationUri: js.UndefOr[NullableOption[String]] = js.native
+  var locationUri: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only.
-  var uniqueId: js.UndefOr[NullableOption[String]] = js.native
+  var uniqueId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only.
-  var uniqueIdType: js.UndefOr[NullableOption[LocationUniqueIdType]] = js.native
+  var uniqueIdType: js.UndefOr[NullableOption[LocationUniqueIdType]] = js.undefined
 }
 object Location {
   

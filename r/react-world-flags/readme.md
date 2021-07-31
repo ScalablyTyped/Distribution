@@ -10,9 +10,9 @@ SVG flags of the world for react
 | ------------------ | :-------------: |
 | Full name          | react-world-flags |
 | Keywords           | react, reactjs, world, flag, flags, svg |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 167293 |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 250222 |
 | # stars            | 1 |
 
 ## Links

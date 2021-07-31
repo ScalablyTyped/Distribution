@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Point extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait Point extends StObject {
     * specify a non-zero interval, with subsequent points specifying the same start time and increasing end times, until an event resets the cumulative value to zero and sets a new start
     * time for the following points.
     */
-  var interval: js.UndefOr[TimeInterval] = js.native
+  var interval: js.UndefOr[TimeInterval] = js.undefined
   
   /** The value of the data point. */
-  var value: js.UndefOr[TypedValue] = js.native
+  var value: js.UndefOr[TypedValue] = js.undefined
 }
 object Point {
   

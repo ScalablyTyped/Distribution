@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadLineItemsResponse extends StObject {
   
   /** Status of upload. */
-  var uploadStatus: js.UndefOr[UploadStatus] = js.native
+  var uploadStatus: js.UndefOr[UploadStatus] = js.undefined
 }
 object UploadLineItemsResponse {
   

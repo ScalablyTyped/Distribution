@@ -2,15 +2,13 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var callback: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.native
+    var callback: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
   }
   object Options {
     

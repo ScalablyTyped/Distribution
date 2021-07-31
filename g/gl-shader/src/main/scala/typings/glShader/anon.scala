@@ -3,21 +3,19 @@ package typings.glShader
 import typings.glShader.mod.Parameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var attributes: js.UndefOr[js.Array[Parameter]] = js.native
+    var attributes: js.UndefOr[js.Array[Parameter]] = js.undefined
     
-    var fragment: String = js.native
+    var fragment: String
     
-    var uniforms: js.UndefOr[js.Array[Parameter]] = js.native
+    var uniforms: js.UndefOr[js.Array[Parameter]] = js.undefined
     
-    var vertex: String = js.native
+    var vertex: String
   }
   object Attributes {
     
@@ -56,16 +54,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Fragment extends StObject {
     
-    var attributes: js.Array[Parameter] = js.native
+    var attributes: js.Array[Parameter]
     
-    var fragment: String = js.native
+    var fragment: String
     
-    var uniforms: js.Array[Parameter] = js.native
+    var uniforms: js.Array[Parameter]
     
-    var vertex: String = js.native
+    var vertex: String
   }
   object Fragment {
     

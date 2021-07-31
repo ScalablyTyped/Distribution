@@ -2,13 +2,13 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareOpenGraphDialogResponse extends DialogResponse {
+trait ShareOpenGraphDialogResponse
+  extends StObject
+     with DialogResponse {
   
-  var post_id: String = js.native
+  var post_id: String
 }
 object ShareOpenGraphDialogResponse {
   

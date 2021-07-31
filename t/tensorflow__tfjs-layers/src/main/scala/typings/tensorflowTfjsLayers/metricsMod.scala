@@ -5,10 +5,13 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsLayers.distTypesMod.LossOrMetricFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metricsMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/metrics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/metrics", "MAE")
   @js.native
@@ -22,17 +25,14 @@ object metricsMod {
   @js.native
   val MSE_ : js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "binaryAccuracy")
-  @js.native
-  def binaryAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def binaryAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "binaryCrossentropy")
-  @js.native
-  def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("binaryCrossentropy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "categoricalAccuracy")
-  @js.native
-  def categoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def categoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("categoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-layers/dist/metrics", "categoricalCrossentropy")
   @js.native
@@ -47,19 +47,15 @@ object metricsMod {
   @js.native
   val cosine: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "get")
-  @js.native
-  def get(identifier: String): LossOrMetricFn = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "get")
-  @js.native
-  def get(identifier: LossOrMetricFn): LossOrMetricFn = js.native
+  @scala.inline
+  def get(identifier: String): LossOrMetricFn = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifier.asInstanceOf[js.Any]).asInstanceOf[LossOrMetricFn]
+  @scala.inline
+  def get(identifier: LossOrMetricFn): LossOrMetricFn = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifier.asInstanceOf[js.Any]).asInstanceOf[LossOrMetricFn]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "getLossOrMetricName")
-  @js.native
-  def getLossOrMetricName(fn: String): String = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "getLossOrMetricName")
-  @js.native
-  def getLossOrMetricName(fn: LossOrMetricFn): String = js.native
+  @scala.inline
+  def getLossOrMetricName(fn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLossOrMetricName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getLossOrMetricName(fn: LossOrMetricFn): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLossOrMetricName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@tensorflow/tfjs-layers/dist/metrics", "mae")
   @js.native
@@ -73,17 +69,14 @@ object metricsMod {
   @js.native
   val mse: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "precision")
-  @js.native
-  def precision(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def precision(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("precision")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "recall")
-  @js.native
-  def recall(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def recall(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("recall")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "sparseCategoricalAccuracy")
-  @js.native
-  def sparseCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def sparseCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseCategoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-layers/dist/metrics", "sparseCategoricalCrossentropy")
   @js.native
@@ -94,11 +87,9 @@ object metricsMod {
     Tensor[Rank]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "sparseTopKCategoricalAccuracy")
-  @js.native
-  def sparseTopKCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def sparseTopKCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseTopKCategoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/metrics", "topKCategoricalAccuracy")
-  @js.native
-  def topKCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def topKCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("topKCategoricalAccuracy")(yTrue.asInstanceOf[js.Any], yPred.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
 }

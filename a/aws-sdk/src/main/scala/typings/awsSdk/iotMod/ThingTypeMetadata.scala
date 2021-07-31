@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingTypeMetadata extends StObject {
   
   /**
     * The date and time when the thing type was created.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * Whether the thing type is deprecated. If true, no new things could be associated with this type.
     */
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The date and time when the thing type was deprecated.
     */
-  var deprecationDate: js.UndefOr[DeprecationDate] = js.native
+  var deprecationDate: js.UndefOr[DeprecationDate] = js.undefined
 }
 object ThingTypeMetadata {
   

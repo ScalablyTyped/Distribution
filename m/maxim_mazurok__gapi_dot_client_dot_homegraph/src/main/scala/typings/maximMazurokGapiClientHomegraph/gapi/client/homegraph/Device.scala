@@ -3,18 +3,16 @@ package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /** Attributes for the traits supported by the device. */
   var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Custom device attributes stored in Home Graph and provided to your smart home Action in each [QUERY](https://developers.google.com/assistant/smarthome/reference/intent/query) and
@@ -23,44 +21,44 @@ trait Device extends StObject {
   var customData: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Device manufacturer, model, hardware version, and software version. */
-  var deviceInfo: js.UndefOr[DeviceInfo] = js.native
+  var deviceInfo: js.UndefOr[DeviceInfo] = js.undefined
   
   /** Third-party device ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Names given to this device by your smart home Action. */
-  var name: js.UndefOr[DeviceNames] = js.native
+  var name: js.UndefOr[DeviceNames] = js.undefined
   
   /**
     * Indicates whether your smart home Action will report notifications to Google for this device via ReportStateAndNotification. If your smart home Action enables users to control
     * device notifications, you should update this field and call RequestSyncDevices.
     */
-  var notificationSupportedByAgent: js.UndefOr[Boolean] = js.native
+  var notificationSupportedByAgent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Alternate IDs associated with this device. This is used to identify cloud synced devices enabled for [local
     * fulfillment](https://developers.google.com/assistant/smarthome/concepts/local).
     */
-  var otherDeviceIds: js.UndefOr[js.Array[AgentOtherDeviceId]] = js.native
+  var otherDeviceIds: js.UndefOr[js.Array[AgentOtherDeviceId]] = js.undefined
   
   /** Suggested name for the room where this device is installed. Google attempts to use this value during user setup. */
-  var roomHint: js.UndefOr[String] = js.native
+  var roomHint: js.UndefOr[String] = js.undefined
   
   /** Suggested name for the structure where this device is installed. Google attempts to use this value during user setup. */
-  var structureHint: js.UndefOr[String] = js.native
+  var structureHint: js.UndefOr[String] = js.undefined
   
   /** Traits supported by the device. See [device traits](https://developers.google.com/assistant/smarthome/traits). */
-  var traits: js.UndefOr[js.Array[String]] = js.native
+  var traits: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Hardware type of the device. See [device types](https://developers.google.com/assistant/smarthome/guides). */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether your smart home Action will report state of this device to Google via ReportStateAndNotification. */
-  var willReportState: js.UndefOr[Boolean] = js.native
+  var willReportState: js.UndefOr[Boolean] = js.undefined
 }
 object Device {
   
@@ -77,7 +75,7 @@ object Device {
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -87,7 +85,7 @@ object Device {
     def setCustomData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.Device & TopLevel[js.Any]
     ): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline

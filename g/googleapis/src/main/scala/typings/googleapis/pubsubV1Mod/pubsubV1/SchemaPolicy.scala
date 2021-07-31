@@ -2,7 +2,6 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,14 +24,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * roles/viewer   For a description of IAM and its features, see the [IAM
   * developer&#39;s guide](https://cloud.google.com/iam/docs).
   */
-@js.native
 trait SchemaPolicy extends StObject {
   
   /**
     * Associates a list of `members` to a `role`. `bindings` with no members
     * will result in an error.
     */
-  var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.native
+  var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help
@@ -45,12 +43,12 @@ trait SchemaPolicy extends StObject {
     * policy.  If no `etag` is provided in the call to `setIamPolicy`, then the
     * existing policy is overwritten blindly.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaPolicy {
   

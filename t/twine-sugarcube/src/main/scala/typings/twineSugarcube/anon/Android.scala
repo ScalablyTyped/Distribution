@@ -2,23 +2,21 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Android extends StObject {
   
-  val Android: Boolean = js.native
+  val Android: Boolean
   
-  val BlackBerry: Boolean = js.native
+  val BlackBerry: Boolean
   
-  val Opera: Boolean = js.native
+  val Opera: Boolean
   
-  val Windows: Boolean = js.native
+  val Windows: Boolean
   
-  def any(): Boolean = js.native
+  def any(): Boolean
   
-  val iOS: Boolean = js.native
+  val iOS: Boolean
 }
 object Android {
   

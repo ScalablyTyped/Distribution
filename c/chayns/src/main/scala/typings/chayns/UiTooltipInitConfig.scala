@@ -2,15 +2,13 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UiTooltipInitConfig extends StObject {
   
-  var preventAnimation: Boolean = js.native
+  var preventAnimation: Boolean
   
-  var tooltipClass: String = js.native
+  var tooltipClass: String
 }
 object UiTooltipInitConfig {
   

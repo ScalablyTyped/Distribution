@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pirateMod extends Shortcut {
@@ -16,7 +15,8 @@ object pirateMod extends Shortcut {
   
   @js.native
   trait Library
-    extends typings.yadda.englishMod.Library {
+    extends StObject
+       with typings.yadda.englishMod.Library {
     
     def giveth(
       step: String,
@@ -616,15 +616,15 @@ object pirateMod extends Shortcut {
     ): this.type = js.native
   }
   
-  @js.native
   trait Vocabulary
-    extends typings.yadda.englishMod.Vocabulary {
+    extends StObject
+       with typings.yadda.englishMod.Vocabulary {
     
-    var giveth: String = js.native
+    var giveth: String
     
-    var thence: String = js.native
+    var thence: String
     
-    var whence: String = js.native
+    var whence: String
   }
   object Vocabulary {
     
@@ -634,7 +634,7 @@ object pirateMod extends Shortcut {
       background: String,
       examples: String,
       feature: String,
-      given: String,
+      `given`: String,
       giveth: String,
       only: String,
       pending: String,
@@ -644,7 +644,8 @@ object pirateMod extends Shortcut {
       when: String,
       whence: String
     ): Vocabulary = {
-      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], giveth = giveth.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], thence = thence.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], whence = whence.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], giveth = giveth.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], thence = thence.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], whence = whence.asInstanceOf[js.Any])
+      __obj.updateDynamic("given")(`given`.asInstanceOf[js.Any])
       __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vocabulary]
     }

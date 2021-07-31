@@ -2,71 +2,69 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowExecutionTaskInvocationIdentity extends StObject {
   
   /**
     * The time the invocation finished.
     */
-  var EndTime: js.UndefOr[DateTime] = js.native
+  var EndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID of the action performed in the service that actually handled the task invocation. If the task type is RUN_COMMAND, this value is the command ID.
     */
-  var ExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskExecutionId] = js.native
+  var ExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskExecutionId] = js.undefined
   
   /**
     * The ID of the task invocation.
     */
-  var InvocationId: js.UndefOr[MaintenanceWindowExecutionTaskInvocationId] = js.native
+  var InvocationId: js.UndefOr[MaintenanceWindowExecutionTaskInvocationId] = js.undefined
   
   /**
     * User-provided value that was specified when the target was registered with the maintenance window. This was also included in any CloudWatch events raised during the task invocation.
     */
-  var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.native
+  var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
   /**
     * The parameters that were provided for the invocation when it was run.
     */
-  var Parameters: js.UndefOr[MaintenanceWindowExecutionTaskInvocationParameters] = js.native
+  var Parameters: js.UndefOr[MaintenanceWindowExecutionTaskInvocationParameters] = js.undefined
   
   /**
     * The time the invocation started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The status of the task invocation.
     */
-  var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.native
+  var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
     * The details explaining the status of the task invocation. Only available for certain Status values. 
     */
-  var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.native
+  var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
   /**
     * The ID of the specific task execution in the maintenance window execution.
     */
-  var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.native
+  var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   
   /**
     * The task type.
     */
-  var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.native
+  var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   
   /**
     * The ID of the maintenance window execution that ran the task.
     */
-  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.native
+  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
   
   /**
     * The ID of the target definition in this maintenance window the invocation was performed for.
     */
-  var WindowTargetId: js.UndefOr[MaintenanceWindowTaskTargetId] = js.native
+  var WindowTargetId: js.UndefOr[MaintenanceWindowTaskTargetId] = js.undefined
 }
 object MaintenanceWindowExecutionTaskInvocationIdentity {
   

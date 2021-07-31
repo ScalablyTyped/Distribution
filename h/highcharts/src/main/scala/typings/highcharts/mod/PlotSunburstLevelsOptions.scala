@@ -2,41 +2,39 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotSunburstLevelsOptions extends StObject {
   
   /**
     * (Highcharts) Can set a `borderColor` on all points which lies on the same
     * level.
     */
-  var borderColor: js.UndefOr[ColorString] = js.native
+  var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts) Can set a `borderDashStyle` on all points which lies on the
     * same level.
     */
-  var borderDashStyle: js.UndefOr[DashStyleValue] = js.native
+  var borderDashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highcharts) Can set a `borderWidth` on all points which lies on the same
     * level.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Can set a `color` on all points which lies on the same
     * level.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) Can set a `colorVariation` on all points which lies on the
     * same level.
     */
-  var colorVariation: js.UndefOr[PlotSunburstLevelsColorVariationOptions] = js.native
+  var colorVariation: js.UndefOr[PlotSunburstLevelsColorVariationOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Can set `dataLabels` on all
@@ -44,25 +42,25 @@ trait PlotSunburstLevelsOptions extends StObject {
     */
   var dataLabels: js.UndefOr[
     SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts) Can set a `levelSize` on all points which lies on the same
     * level.
     */
-  var levelSize: js.UndefOr[js.Object] = js.native
+  var levelSize: js.UndefOr[js.Object] = js.undefined
   
   /**
     * (Highcharts) Can set a `rotation` on all points which lies on the same
     * level.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Can set a `rotationMode` on all points which lies on the
     * same level.
     */
-  var rotationMode: js.UndefOr[String] = js.native
+  var rotationMode: js.UndefOr[String] = js.undefined
 }
 object PlotSunburstLevelsOptions {
   

@@ -8,26 +8,24 @@ import typings.cytoscape.cytoscapeStrings.`outside-to-node`
 import typings.cytoscape.mod.EdgeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * https://js.cytoscape.org/#style/edge-endpoints
   */
-@js.native
 trait EdgeEndpoints[SingularType /* <: EdgeSingular */] extends StObject {
   
   /** Specifies the endpoint of the source side of the edge  */
   var `source-endpoint`: PropertyValue[
     SingularType, 
     `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
-  ] = js.native
+  ]
   
   /** Specifies the endpoint of the target side of the edge  */
   var `target-endpoint`: PropertyValue[
     SingularType, 
     `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
-  ] = js.native
+  ]
 }
 object EdgeEndpoints {
   
@@ -49,7 +47,7 @@ object EdgeEndpoints {
   }
   
   @scala.inline
-  implicit class EdgeEndpointsMutableBuilder[Self <: EdgeEndpoints[_], SingularType /* <: EdgeSingular */] (val x: Self with EdgeEndpoints[SingularType]) extends AnyVal {
+  implicit class EdgeEndpointsMutableBuilder[Self <: EdgeEndpoints[?], SingularType /* <: EdgeSingular */] (val x: Self & EdgeEndpoints[SingularType]) extends AnyVal {
     
     @scala.inline
     def `setSource-endpoint`(

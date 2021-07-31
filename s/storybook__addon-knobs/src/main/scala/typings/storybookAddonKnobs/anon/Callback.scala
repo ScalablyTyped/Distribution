@@ -2,23 +2,21 @@ package typings.storybookAddonKnobs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
-  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var callback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var hideLabel: js.UndefOr[Boolean] = js.native
+  var hideLabel: js.UndefOr[Boolean] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var name: String = js.native
+  var name: String
   
-  var used: js.UndefOr[Boolean] = js.native
+  var used: js.UndefOr[Boolean] = js.undefined
 }
 object Callback {
   
@@ -32,7 +30,7 @@ object Callback {
   implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)

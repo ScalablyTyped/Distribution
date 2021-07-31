@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /**
     * The ID you want to assign to the message. Each messageId must be unique within each batch sent.
     */
-  var messageId: MessageId = js.native
+  var messageId: MessageId
   
   /**
     * The payload of the message. This can be a JSON string or a base64-encoded string representing binary data, in which case you must decode it by means of a pipeline activity.
     */
-  var payload: MessagePayload = js.native
+  var payload: MessagePayload
 }
 object Message {
   

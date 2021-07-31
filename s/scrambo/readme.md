@@ -12,7 +12,7 @@ Javascript Rubik's Cube Scramble Generator
 | Keywords           | scramble, scrambo, cube, rubik, jsss |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1334 |
+| # downloads        | 1410 |
 | # stars            | 0 |
 
 ## Links

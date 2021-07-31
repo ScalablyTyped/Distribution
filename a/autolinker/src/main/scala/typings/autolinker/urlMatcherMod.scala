@@ -7,7 +7,6 @@ import typings.autolinker.matcherMatcherMod.MatcherConfig
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMatcherMod {
@@ -138,14 +137,15 @@ object urlMatcherMod {
     var wordCharRegExp: RegExp = js.native
   }
   
-  @js.native
-  trait UrlMatcherConfig extends MatcherConfig {
+  trait UrlMatcherConfig
+    extends StObject
+       with MatcherConfig {
     
-    var decodePercentEncoding: Boolean = js.native
+    var decodePercentEncoding: Boolean
     
-    var stripPrefix: RequiredStripPrefixConfig = js.native
+    var stripPrefix: RequiredStripPrefixConfig
     
-    var stripTrailingSlash: Boolean = js.native
+    var stripTrailingSlash: Boolean
   }
   object UrlMatcherConfig {
     

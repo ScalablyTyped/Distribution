@@ -22,7 +22,6 @@ import typings.chromeApps.chromeAppsStrings.unknown_error_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -38,13 +37,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object displaySource {
   
-  @js.native
   trait AuthenticationInfo extends StObject {
     
     /**
       * Authentication data (e.g. PIN value).
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /**
       * Authentication method.
@@ -59,7 +57,7 @@ object displaySource {
             typings.chromeApps.chromeAppsStrings.PBC | PIN
           ]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object AuthenticationInfo {
     
@@ -95,10 +93,9 @@ object displaySource {
     }
   }
   
-  @js.native
   trait ErrorInfo extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** @see ErrorType */
     var `type`: ToStringLiteral[
@@ -108,7 +105,7 @@ object displaySource {
           /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
           unknown_error_ | media_pipeline_error_ | connection_error_ | capabilities_negotiation_error_ | timeout_error_
         ]
-      ] = js.native
+      ]
   }
   object ErrorInfo {
     
@@ -151,14 +148,13 @@ object displaySource {
     }
   }
   
-  @js.native
   trait SinkInfo extends StObject {
     
     /** Id of the sink. It is guaranteed to be unique during the browser session. */
-    var id: integer = js.native
+    var id: integer
     
     /** Human readable name of the sink. */
-    var name: String = js.native
+    var name: String
     
     /**
       * State of the sink.
@@ -171,7 +167,7 @@ object displaySource {
           /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
           Connected_ | Connecting_ | Disconnected_
         ]
-      ] = js.native
+      ]
   }
   object SinkInfo {
     
@@ -215,16 +211,15 @@ object displaySource {
     }
   }
   
-  @js.native
   trait StartSessionInfo extends StObject {
     
-    var audioTrack: js.UndefOr[js.Object] = js.native
+    var audioTrack: js.UndefOr[js.Object] = js.undefined
     
-    var authenticationInfo: js.UndefOr[AuthenticationInfo] = js.native
+    var authenticationInfo: js.UndefOr[AuthenticationInfo] = js.undefined
     
-    var sinkId: integer = js.native
+    var sinkId: integer
     
-    var videoTrack: js.UndefOr[js.Object] = js.native
+    var videoTrack: js.UndefOr[js.Object] = js.undefined
   }
   object StartSessionInfo {
     

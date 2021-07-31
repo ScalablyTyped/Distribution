@@ -2,21 +2,19 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disable extends StObject {
   
-  var Disable: js.UndefOr[Boolean] = js.native
+  var Disable: js.UndefOr[Boolean] = js.undefined
   
-  var Level: js.UndefOr[String] = js.native
+  var Level: js.UndefOr[String] = js.undefined
   
-  var Role: js.UndefOr[String] = js.native
+  var Role: js.UndefOr[String] = js.undefined
   
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
   
-  var User: js.UndefOr[String] = js.native
+  var User: js.UndefOr[String] = js.undefined
 }
 object Disable {
   

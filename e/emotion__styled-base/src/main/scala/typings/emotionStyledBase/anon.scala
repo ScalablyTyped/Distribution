@@ -3,15 +3,13 @@ package typings.emotionStyledBase
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[Theme /* <: js.Object */] extends StObject {
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object `0` {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], Theme /* <: js.Object */] (val x: Self with `0`[Theme]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], Theme /* <: js.Object */] (val x: Self & `0`[Theme]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any = js.native
+    var theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any
   }
   object Theme {
     
@@ -53,15 +50,14 @@ object anon {
     }
   }
   
-  @js.native
   trait ThemeExclude extends StObject {
     
-    var theme: Exclude[_, js.UndefOr[scala.Nothing]] = js.native
+    var theme: Exclude[js.Any, Unit]
   }
   object ThemeExclude {
     
     @scala.inline
-    def apply(theme: Exclude[_, js.UndefOr[scala.Nothing]]): ThemeExclude = {
+    def apply(theme: Exclude[js.Any, Unit]): ThemeExclude = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeExclude]
     }
@@ -70,14 +66,13 @@ object anon {
     implicit class ThemeExcludeMutableBuilder[Self <: ThemeExclude] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setTheme(value: Exclude[_, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      def setTheme(value: Exclude[js.Any, Unit]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ThemeT[T] extends StObject {
     
-    var theme: T = js.native
+    var theme: T
   }
   object ThemeT {
     
@@ -88,7 +83,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ThemeTMutableBuilder[Self <: ThemeT[_], T] (val x: Self with ThemeT[T]) extends AnyVal {
+    implicit class ThemeTMutableBuilder[Self <: ThemeT[?], T] (val x: Self & ThemeT[T]) extends AnyVal {
       
       @scala.inline
       def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])

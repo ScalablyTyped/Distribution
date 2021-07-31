@@ -10,9 +10,9 @@ A Node.js framework agnostic library for serializing your data to JSON API
 | ------------------ | :-------------: |
 | Full name          | jsonapi-serializer |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 71 |
-| # downloads        | 2775871 |
+| # releases         | 2 |
+| # dependents       | 72 |
+| # downloads        | 3726328 |
 | # stars            | 7 |
 
 ## Links

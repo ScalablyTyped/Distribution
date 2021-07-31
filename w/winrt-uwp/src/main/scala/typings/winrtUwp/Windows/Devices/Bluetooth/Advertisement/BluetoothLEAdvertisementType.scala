@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object BluetoothLEAdvertisementType extends StObject {
   
   /** The advertisement is directed and indicates that the device is connectable but not scannable. This advertisement type cannot carry data. */
   @js.native
-  sealed trait connectableDirected extends BluetoothLEAdvertisementType
+  sealed trait connectableDirected
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** The advertisement is undirected and indicates that the device is connectable and scannable. This advertisement type can carry data. */
   @js.native
-  sealed trait connectableUndirected extends BluetoothLEAdvertisementType
+  sealed trait connectableUndirected
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** The advertisement is undirected and indicates that the device is not connectable nor scannable. This advertisement type can carry data. */
   @js.native
-  sealed trait nonConnectableUndirected extends BluetoothLEAdvertisementType
+  sealed trait nonConnectableUndirected
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** This advertisement is a scan response to a scan request issued for a scannable advertisement. This advertisement type can carry data. */
   @js.native
-  sealed trait scanResponse extends BluetoothLEAdvertisementType
+  sealed trait scanResponse
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** The advertisement is undirected and indicates that the device is scannable but not connectable. This advertisement type can carry data. */
   @js.native
-  sealed trait scannableUndirected extends BluetoothLEAdvertisementType
+  sealed trait scannableUndirected
+    extends StObject
+       with BluetoothLEAdvertisementType
 }

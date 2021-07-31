@@ -3,21 +3,19 @@ package typings.ionicCore.componentsMod.LocalJSX
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonItemSliding extends StObject {
   
   /**
     * If `true`, the user cannot interact with the sliding item.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Emitted when the sliding position changes.
     */
-  var onIonDrag: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+  var onIonDrag: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
 }
 object IonItemSliding {
   
@@ -37,7 +35,7 @@ object IonItemSliding {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setOnIonDrag(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "onIonDrag", js.Any.fromFunction1(value))
+    def setOnIonDrag(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "onIonDrag", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonDragUndefined: Self = StObject.set(x, "onIonDrag", js.undefined)

@@ -2,23 +2,21 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFaultStatisticsMod {
   
-  @js.native
   trait FaultStatistics extends StObject {
     
     /**
       * <p>The number of requests that failed with untracked 5xx Server Error status codes.</p>
       */
-    var OtherCount: js.UndefOr[Double] = js.native
+    var OtherCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The total number of requests that failed with a 5xx Server Error status code.</p>
       */
-    var TotalCount: js.UndefOr[Double] = js.native
+    var TotalCount: js.UndefOr[Double] = js.undefined
   }
   object FaultStatistics {
     

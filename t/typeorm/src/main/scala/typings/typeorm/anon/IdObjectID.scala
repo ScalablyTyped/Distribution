@@ -3,13 +3,11 @@ package typings.typeorm.anon
 import typings.typeorm.typingsMod.ObjectID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdObjectID extends StObject {
   
-  var _id: ObjectID = js.native
+  var _id: ObjectID
 }
 object IdObjectID {
   

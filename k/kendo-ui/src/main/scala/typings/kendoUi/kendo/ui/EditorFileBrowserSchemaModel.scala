@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorFileBrowserSchemaModel extends StObject {
   
-  var fields: js.UndefOr[EditorFileBrowserSchemaModelFields] = js.native
+  var fields: js.UndefOr[EditorFileBrowserSchemaModelFields] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object EditorFileBrowserSchemaModel {
   

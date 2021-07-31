@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatingSystemTargeting extends StObject {
   
   /** IDs of operating systems to be included/excluded. */
-  var operatingSystemCriteria: js.UndefOr[CriteriaTargeting] = js.native
+  var operatingSystemCriteria: js.UndefOr[CriteriaTargeting] = js.undefined
   
   /** IDs of operating system versions to be included/excluded. */
-  var operatingSystemVersionCriteria: js.UndefOr[CriteriaTargeting] = js.native
+  var operatingSystemVersionCriteria: js.UndefOr[CriteriaTargeting] = js.undefined
 }
 object OperatingSystemTargeting {
   

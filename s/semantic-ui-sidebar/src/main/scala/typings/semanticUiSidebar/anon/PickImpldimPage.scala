@@ -2,14 +2,12 @@ package typings.semanticUiSidebar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.SidebarSettings._Impl, 'dimPage'> */
-@js.native
 trait PickImpldimPage extends StObject {
   
-  var dimPage: Boolean = js.native
+  var dimPage: Boolean
 }
 object PickImpldimPage {
   

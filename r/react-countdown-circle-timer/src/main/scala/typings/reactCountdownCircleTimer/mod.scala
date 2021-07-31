@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,30 +24,29 @@ object mod {
   
   type OnCompleteFunctionType = js.Function0[js.UndefOr[(js.Tuple2[Boolean, Double]) | Unit]]
   
-  @js.native
   trait Props extends StObject {
     
-    var colors: ColorType = js.native
+    var colors: ColorType
     
-    var durationSeconds: Double = js.native
+    var durationSeconds: Double
     
-    var gradientUniqueKey: js.UndefOr[String] = js.native
+    var gradientUniqueKey: js.UndefOr[String] = js.undefined
     
-    var isLinearGradient: js.UndefOr[Boolean] = js.native
+    var isLinearGradient: js.UndefOr[Boolean] = js.undefined
     
-    var isPlaying: js.UndefOr[Boolean] = js.native
+    var isPlaying: js.UndefOr[Boolean] = js.undefined
     
-    var onComplete: js.UndefOr[OnCompleteFunctionType] = js.native
+    var onComplete: js.UndefOr[OnCompleteFunctionType] = js.undefined
     
-    var renderTime: js.UndefOr[RenderTimeFunctionType] = js.native
+    var renderTime: js.UndefOr[RenderTimeFunctionType] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[StrokeLinecapType] = js.native
+    var strokeLinecap: js.UndefOr[StrokeLinecapType] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var trailColor: js.UndefOr[String] = js.native
+    var trailColor: js.UndefOr[String] = js.undefined
   }
   object Props {
     

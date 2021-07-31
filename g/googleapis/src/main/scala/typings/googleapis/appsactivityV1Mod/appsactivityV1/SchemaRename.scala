@@ -2,24 +2,22 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a renametype event.
   */
-@js.native
 trait SchemaRename extends StObject {
   
   /**
     * The new title.
     */
-  var newTitle: js.UndefOr[String] = js.native
+  var newTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The old title.
     */
-  var oldTitle: js.UndefOr[String] = js.native
+  var oldTitle: js.UndefOr[String] = js.undefined
 }
 object SchemaRename {
   

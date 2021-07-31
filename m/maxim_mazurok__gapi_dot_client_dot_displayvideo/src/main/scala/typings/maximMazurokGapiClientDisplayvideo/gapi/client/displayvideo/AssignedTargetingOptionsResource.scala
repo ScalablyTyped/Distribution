@@ -15,7 +15,6 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserTargetingType
 import typings.maximMazurokGapiClientDisplayvideo.anon.TargetingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

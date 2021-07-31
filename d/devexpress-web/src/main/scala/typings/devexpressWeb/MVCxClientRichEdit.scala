@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the RichEdit extension.
   */
 @js.native
-trait MVCxClientRichEdit extends ASPxClientRichEdit {
+trait MVCxClientRichEdit
+  extends StObject
+     with ASPxClientRichEdit {
   
   /**
     * Sends a callback with a parameter to update the RichEdit by processing the passed information on the server, in an Action specified via the RichEditSettings.CustomActionRouteValues property.

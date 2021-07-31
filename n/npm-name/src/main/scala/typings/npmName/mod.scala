@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,12 +37,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("npm-name", JSImport.Namespace)
-  @js.native
-  def apply(name: String): js.Promise[Boolean] = js.native
-  @JSImport("npm-name", JSImport.Namespace)
-  @js.native
-  def apply(name: String, options: Options): js.Promise[Boolean] = js.native
+  @scala.inline
+  def apply(name: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(name: String, options: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("npm-name", JSImport.Namespace)
   @js.native
@@ -52,7 +49,16 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("npm-name", "InvalidNameError")
   @js.native
-  class InvalidNameError () extends Error
+  class InvalidNameError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   @JSImport("npm-name", "InvalidNameError")
   @js.native
   def InvalidNameError: Instantiable0[InvalidNameErrorClass] = js.native
@@ -78,23 +84,20 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("npm-name", "many")
-  @js.native
-  def many[NameType /* <: String */](names: js.Array[NameType]): js.Promise[Map[NameType, Boolean]] = js.native
-  @JSImport("npm-name", "many")
-  @js.native
-  def many[NameType /* <: String */](names: js.Array[NameType], options: Options): js.Promise[Map[NameType, Boolean]] = js.native
+  @scala.inline
+  def many[NameType /* <: String */](names: js.Array[NameType]): js.Promise[Map[NameType, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("many")(names.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[NameType, Boolean]]]
+  @scala.inline
+  def many[NameType /* <: String */](names: js.Array[NameType], options: Options): js.Promise[Map[NameType, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("many")(names.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[NameType, Boolean]]]
   
   type InvalidNameErrorClass = Error
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Registry URL to check name availability against.
     		Default: User's configured npm registry URL.
     		*/
-    val registryUrl: String = js.native
+    val registryUrl: String
   }
   object Options {
     

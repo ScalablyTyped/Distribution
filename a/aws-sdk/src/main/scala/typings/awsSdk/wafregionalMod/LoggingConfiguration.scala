@@ -2,26 +2,24 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfiguration extends StObject {
   
   /**
     * An array of Amazon Kinesis Data Firehose ARNs.
     */
-  var LogDestinationConfigs: typings.awsSdk.wafregionalMod.LogDestinationConfigs = js.native
+  var LogDestinationConfigs: typings.awsSdk.wafregionalMod.LogDestinationConfigs
   
   /**
     * The parts of the request that you want redacted from the logs. For example, if you redact the cookie field, the cookie field in the firehose will be xxx. 
     */
-  var RedactedFields: js.UndefOr[typings.awsSdk.wafregionalMod.RedactedFields] = js.native
+  var RedactedFields: js.UndefOr[typings.awsSdk.wafregionalMod.RedactedFields] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the web ACL that you want to associate with LogDestinationConfigs.
     */
-  var ResourceArn: typings.awsSdk.wafregionalMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafregionalMod.ResourceArn
 }
 object LoggingConfiguration {
   

@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableEvent extends StObject {
   
-  var sender: js.UndefOr[Draggable] = js.native
+  var sender: js.UndefOr[Draggable] = js.undefined
 }
 object DraggableEvent {
   

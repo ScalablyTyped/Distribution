@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceRecordSetsListResponse extends StObject {
   
-  var header: js.UndefOr[ResponseHeader] = js.native
+  var header: js.UndefOr[ResponseHeader] = js.undefined
   
   /** Type of resource. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The presence of this field indicates that there exist more results following your last page of results in pagination order. To fetch them, make another list request using this value
@@ -19,10 +17,10 @@ trait ResourceRecordSetsListResponse extends StObject {
     * between the first and last paginated list request, the set of all elements returned will be an inconsistent view of the collection. There is no way to retrieve a consistent snapshot
     * of a collection larger than the maximum page size.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The resource record set resources. */
-  var rrsets: js.UndefOr[js.Array[ResourceRecordSet]] = js.native
+  var rrsets: js.UndefOr[js.Array[ResourceRecordSet]] = js.undefined
 }
 object ResourceRecordSetsListResponse {
   

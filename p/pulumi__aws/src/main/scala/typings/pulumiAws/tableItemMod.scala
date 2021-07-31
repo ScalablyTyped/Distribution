@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableItemMod {
@@ -49,6 +48,10 @@ object tableItemMod {
   /* static members */
   object TableItem {
     
+    @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TableItem resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,51 +61,45 @@ object tableItemMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TableItem = js.native
-    @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TableItem = js.native
-    @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableItemState): TableItem = js.native
-    @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableItemState, opts: CustomResourceOptions): TableItem = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableItemState): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TableItem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableItemState, opts: CustomResourceOptions): TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TableItem]
     
     /**
       * Returns true if the given object is an instance of TableItem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean]
   }
   
-  @js.native
   trait TableItemArgs extends StObject {
     
     /**
       * Hash key to use for lookups and identification of the item
       */
-    val hashKey: Input[String] = js.native
+    val hashKey: Input[String]
     
     /**
       * JSON representation of a map of attribute name/value pairs, one for each attribute.
       * Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
       */
-    val item: Input[String] = js.native
+    val item: Input[String]
     
     /**
       * Range key to use for lookups and identification of the item. Required if there is range key defined in the table.
       */
-    val rangeKey: js.UndefOr[Input[String]] = js.native
+    val rangeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the table to contain the item.
       */
-    val tableName: Input[String] = js.native
+    val tableName: Input[String]
   }
   object TableItemArgs {
     
@@ -132,29 +129,28 @@ object tableItemMod {
     }
   }
   
-  @js.native
   trait TableItemState extends StObject {
     
     /**
       * Hash key to use for lookups and identification of the item
       */
-    val hashKey: js.UndefOr[Input[String]] = js.native
+    val hashKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * JSON representation of a map of attribute name/value pairs, one for each attribute.
       * Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
       */
-    val item: js.UndefOr[Input[String]] = js.native
+    val item: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Range key to use for lookups and identification of the item. Required if there is range key defined in the table.
       */
-    val rangeKey: js.UndefOr[Input[String]] = js.native
+    val rangeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the table to contain the item.
       */
-    val tableName: js.UndefOr[Input[String]] = js.native
+    val tableName: js.UndefOr[Input[String]] = js.undefined
   }
   object TableItemState {
     

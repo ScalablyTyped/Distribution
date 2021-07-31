@@ -11,7 +11,6 @@ import typings.when.whenStrings.pending
 import typings.when.whenStrings.rejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object When {
@@ -44,37 +43,37 @@ object When {
   object Descriptor {
     
     @scala.inline
-    def FulfilledDescriptor[T](state: fulfilled, value: T): typings.when.When.FulfilledDescriptor[T] = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def FulfilledDescriptor[T](value: T): typings.when.When.FulfilledDescriptor[T] = {
+      val __obj = js.Dynamic.literal(state = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.when.When.FulfilledDescriptor[T]]
     }
     
     @scala.inline
-    def RejectedDescriptor(reason: js.Any, state: rejected): typings.when.When.RejectedDescriptor = {
-      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[typings.when.When.RejectedDescriptor]
     }
   }
   
-  @js.native
   trait FulfilledDescriptor[T]
-    extends Descriptor[T]
+    extends StObject
+       with Descriptor[T]
        with Snapshot[T] {
     
-    var state: fulfilled = js.native
+    var state: fulfilled
     
-    var value: T = js.native
+    var value: T
   }
   object FulfilledDescriptor {
     
     @scala.inline
-    def apply[T](state: fulfilled, value: T): FulfilledDescriptor[T] = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[T](value: T): FulfilledDescriptor[T] = {
+      val __obj = js.Dynamic.literal(state = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FulfilledDescriptor[T]]
     }
     
     @scala.inline
-    implicit class FulfilledDescriptorMutableBuilder[Self <: FulfilledDescriptor[_], T] (val x: Self with FulfilledDescriptor[T]) extends AnyVal {
+    implicit class FulfilledDescriptorMutableBuilder[Self <: FulfilledDescriptor[?], T] (val x: Self & FulfilledDescriptor[T]) extends AnyVal {
       
       @scala.inline
       def setState(value: fulfilled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
@@ -84,17 +83,17 @@ object When {
     }
   }
   
-  @js.native
   trait PendingDescriptor
-    extends Snapshot[js.Any] {
+    extends StObject
+       with Snapshot[js.Any] {
     
-    var state: pending = js.native
+    var state: pending
   }
   object PendingDescriptor {
     
     @scala.inline
-    def apply(state: pending): PendingDescriptor = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    def apply(): PendingDescriptor = {
+      val __obj = js.Dynamic.literal(state = "pending")
       __obj.asInstanceOf[PendingDescriptor]
     }
     
@@ -123,12 +122,12 @@ object When {
     def delay(milliseconds: Double): Promise[T] = js.native
     
     def done[U](): Unit = js.native
-    def done[U](onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* reason */ js.Any, Unit]): Unit = js.native
     def done[U](onFulfilled: js.Function1[/* value */ T, Unit]): Unit = js.native
     def done[U](
       onFulfilled: js.Function1[/* value */ T, Unit],
       onRejected: js.Function1[/* reason */ js.Any, Unit]
     ): Unit = js.native
+    def done[U](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, Unit]): Unit = js.native
     
     def `else`(value: T): Promise[T] = js.native
     
@@ -164,33 +163,9 @@ object When {
     def tap(onFulfilledSideEffect: js.Function1[/* value */ T, Unit]): Promise[T] = js.native
     
     def `then`(): Promise[T] = js.native
-    def `then`(
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
-    ): Promise[T] = js.native
-    def `then`(
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
-    ): Promise[T] = js.native
-    def `then`(
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
-    ): Promise[T] = js.native
-    def `then`(
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: Null,
-      onProgress: js.Function1[/* update */ js.Any, Unit]
-    ): Promise[T] = js.native
     def `then`(onFulfilled: js.Function1[/* value */ T, T | Thenable[T]]): Promise[T] = js.native
     def `then`(
       onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
-      onRejected: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
-    ): Promise[T] = js.native
-    def `then`(
-      onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
       onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
     ): Promise[T] = js.native
     def `then`(
@@ -204,8 +179,8 @@ object When {
       onProgress: js.Function1[/* update */ js.Any, Unit]
     ): Promise[T] = js.native
     def `then`(
-      onFulfilled: Null,
-      onRejected: js.UndefOr[scala.Nothing],
+      onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
+      onRejected: Unit,
       onProgress: js.Function1[/* update */ js.Any, Unit]
     ): Promise[T] = js.native
     def `then`(onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]): Promise[T] = js.native
@@ -215,25 +190,17 @@ object When {
       onProgress: js.Function1[/* update */ js.Any, Unit]
     ): Promise[T] = js.native
     def `then`(onFulfilled: Null, onRejected: Null, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
-    @JSName("then")
-    def then_TResult[TResult](
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
-    ): Promise[T | TResult] = js.native
-    @JSName("then")
-    def then_TResult[TResult](
-      onFulfilled: js.UndefOr[scala.Nothing],
-      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
+    def `then`(onFulfilled: Null, onRejected: Unit, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
+    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]): Promise[T] = js.native
+    def `then`(
+      onFulfilled: Unit,
+      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
       onProgress: js.Function1[/* update */ js.Any, Unit]
-    ): Promise[T | TResult] = js.native
+    ): Promise[T] = js.native
+    def `then`(onFulfilled: Unit, onRejected: Null, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
+    def `then`(onFulfilled: Unit, onRejected: Unit, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
     @JSName("then")
     def then_TResult[TResult](onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]]): Promise[TResult] = js.native
-    @JSName("then")
-    def then_TResult[TResult](
-      onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
-      onRejected: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
-    ): Promise[TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
@@ -252,10 +219,24 @@ object When {
       onProgress: js.Function1[/* update */ js.Any, Unit]
     ): Promise[TResult] = js.native
     @JSName("then")
+    def then_TResult[TResult](
+      onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
+      onRejected: Unit,
+      onProgress: js.Function1[/* update */ js.Any, Unit]
+    ): Promise[TResult] = js.native
+    @JSName("then")
     def then_TResult[TResult](onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: Null,
+      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
+      onProgress: js.Function1[/* update */ js.Any, Unit]
+    ): Promise[T | TResult] = js.native
+    @JSName("then")
+    def then_TResult[TResult](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
+    @JSName("then")
+    def then_TResult[TResult](
+      onFulfilled: Unit,
       onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
       onProgress: js.Function1[/* update */ js.Any, Unit]
     ): Promise[T | TResult] = js.native
@@ -282,20 +263,20 @@ object When {
     def `yield`[U](value: Promise[U]): Promise[U] = js.native
   }
   
-  @js.native
   trait RejectedDescriptor
-    extends Descriptor[js.Any]
+    extends StObject
+       with Descriptor[js.Any]
        with Snapshot[js.Any] {
     
-    var reason: js.Any = js.native
+    var reason: js.Any
     
-    var state: rejected = js.native
+    var state: rejected
   }
   object RejectedDescriptor {
     
     @scala.inline
-    def apply(reason: js.Any, state: rejected): RejectedDescriptor = {
-      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def apply(reason: js.Any): RejectedDescriptor = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[RejectedDescriptor]
     }
     
@@ -326,20 +307,20 @@ object When {
   object Snapshot {
     
     @scala.inline
-    def FulfilledDescriptor[T](state: fulfilled, value: T): typings.when.When.FulfilledDescriptor[T] = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def FulfilledDescriptor[T](value: T): typings.when.When.FulfilledDescriptor[T] = {
+      val __obj = js.Dynamic.literal(state = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.when.When.FulfilledDescriptor[T]]
     }
     
     @scala.inline
-    def PendingDescriptor(state: pending): typings.when.When.PendingDescriptor = {
-      val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+    def PendingDescriptor(): typings.when.When.PendingDescriptor = {
+      val __obj = js.Dynamic.literal(state = "pending")
       __obj.asInstanceOf[typings.when.When.PendingDescriptor]
     }
     
     @scala.inline
-    def RejectedDescriptor(reason: js.Any, state: rejected): typings.when.When.RejectedDescriptor = {
-      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
+      val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[typings.when.When.RejectedDescriptor]
     }
   }
@@ -348,9 +329,9 @@ object When {
   trait Thenable[T] extends StObject {
     
     def `then`[U](): Thenable[U] = js.native
-    def `then`[U](onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* reason */ js.Any, U]): Thenable[U] = js.native
     def `then`[U](onFulfilled: js.Function1[/* value */ T, U]): Thenable[U] = js.native
     def `then`[U](onFulfilled: js.Function1[/* value */ T, U], onRejected: js.Function1[/* reason */ js.Any, U]): Thenable[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, U]): Thenable[U] = js.native
   }
   
   // Helper interfaces

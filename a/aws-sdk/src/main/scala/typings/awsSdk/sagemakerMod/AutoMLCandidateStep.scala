@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLCandidateStep extends StObject {
   
   /**
     * The ARN for the Candidate's step.
     */
-  var CandidateStepArn: typings.awsSdk.sagemakerMod.CandidateStepArn = js.native
+  var CandidateStepArn: typings.awsSdk.sagemakerMod.CandidateStepArn
   
   /**
     * The name for the Candidate's step.
     */
-  var CandidateStepName: typings.awsSdk.sagemakerMod.CandidateStepName = js.native
+  var CandidateStepName: typings.awsSdk.sagemakerMod.CandidateStepName
   
   /**
     * Whether the Candidate is at the transform, training, or processing step.
     */
-  var CandidateStepType: typings.awsSdk.sagemakerMod.CandidateStepType = js.native
+  var CandidateStepType: typings.awsSdk.sagemakerMod.CandidateStepType
 }
 object AutoMLCandidateStep {
   

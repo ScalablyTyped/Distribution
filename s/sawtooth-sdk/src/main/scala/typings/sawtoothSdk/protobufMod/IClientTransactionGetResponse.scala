@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientTransactionGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientTransactionGetResponse extends StObject {
   
   /** ClientTransactionGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
   
   /** ClientTransactionGetResponse transaction */
-  var transaction: js.UndefOr[ITransaction | Null] = js.native
+  var transaction: js.UndefOr[ITransaction | Null] = js.undefined
 }
 object IClientTransactionGetResponse {
   

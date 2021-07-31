@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspaceMod {
@@ -85,6 +84,10 @@ object workspaceMod {
   /* static members */
   object Workspace {
     
+    @JSImport("@pulumi/aws/workspaces/workspace", "Workspace")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Workspace resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,70 +97,64 @@ object workspaceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/workspaces/workspace", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Workspace = js.native
-    @JSImport("@pulumi/aws/workspaces/workspace", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Workspace = js.native
-    @JSImport("@pulumi/aws/workspaces/workspace", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkspaceState): Workspace = js.native
-    @JSImport("@pulumi/aws/workspaces/workspace", "Workspace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkspaceState, opts: CustomResourceOptions): Workspace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkspaceState): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Workspace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkspaceState, opts: CustomResourceOptions): Workspace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workspace]
     
     /**
       * Returns true if the given object is an instance of Workspace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/workspaces/workspace", "Workspace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/workspaces/workspace.Workspace */ Boolean]
   }
   
-  @js.native
   trait WorkspaceArgs extends StObject {
     
     /**
       * The ID of the bundle for the WorkSpace.
       */
-    val bundleId: Input[String] = js.native
+    val bundleId: Input[String]
     
     /**
       * The ID of the directory for the WorkSpace.
       */
-    val directoryId: Input[String] = js.native
+    val directoryId: Input[String]
     
     /**
       * Indicates whether the data stored on the root volume is encrypted.
       */
-    val rootVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val rootVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The tags for the WorkSpace.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The user name of the user for the WorkSpace. This user name must exist in the directory for the WorkSpace.
       */
-    val userName: Input[String] = js.native
+    val userName: Input[String]
     
     /**
       * Indicates whether the data stored on the user volume is encrypted.
       */
-    val userVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val userVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs.
       */
-    val volumeEncryptionKey: js.UndefOr[Input[String]] = js.native
+    val volumeEncryptionKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The WorkSpace properties.
       */
-    val workspaceProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]] = js.native
+    val workspaceProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]] = js.undefined
   }
   object WorkspaceArgs {
     
@@ -211,63 +208,62 @@ object workspaceMod {
     }
   }
   
-  @js.native
   trait WorkspaceState extends StObject {
     
     /**
       * The ID of the bundle for the WorkSpace.
       */
-    val bundleId: js.UndefOr[Input[String]] = js.native
+    val bundleId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the WorkSpace, as seen by the operating system.
       */
-    val computerName: js.UndefOr[Input[String]] = js.native
+    val computerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the directory for the WorkSpace.
       */
-    val directoryId: js.UndefOr[Input[String]] = js.native
+    val directoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IP address of the WorkSpace.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the data stored on the root volume is encrypted.
       */
-    val rootVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val rootVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The operational state of the WorkSpace.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The tags for the WorkSpace.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The user name of the user for the WorkSpace. This user name must exist in the directory for the WorkSpace.
       */
-    val userName: js.UndefOr[Input[String]] = js.native
+    val userName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the data stored on the user volume is encrypted.
       */
-    val userVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val userVolumeEncryptionEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your WorkSpace. Amazon WorkSpaces does not support asymmetric CMKs.
       */
-    val volumeEncryptionKey: js.UndefOr[Input[String]] = js.native
+    val volumeEncryptionKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The WorkSpace properties.
       */
-    val workspaceProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]] = js.native
+    val workspaceProperties: js.UndefOr[Input[typings.pulumiAws.inputMod.workspaces.WorkspaceWorkspaceProperties]] = js.undefined
   }
   object WorkspaceState {
     

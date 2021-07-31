@@ -3,36 +3,34 @@ package typings.dwt.anon
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPixelType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BDuplex extends StObject {
   
   /**
     * Whether to enable duplex scan.
     */
-  var bDuplex: js.UndefOr[Boolean] = js.native
+  var bDuplex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable document feader.
     */
-  var bFeeder: js.UndefOr[Boolean] = js.native
+  var bFeeder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * "ignore" (default) or "fail".
     */
-  var exception: js.UndefOr[String] = js.native
+  var exception: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the pixel type.
     */
-  var pixelType: js.UndefOr[EnumDWTPixelType | Double] = js.native
+  var pixelType: js.UndefOr[EnumDWTPixelType | Double] = js.undefined
   
   /**
     * Specify the resolution.
     */
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
 }
 object BDuplex {
   

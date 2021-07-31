@@ -2,13 +2,11 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalLexicalScopeNamesReturnType extends StObject {
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
 }
 object GlobalLexicalScopeNamesReturnType {
   

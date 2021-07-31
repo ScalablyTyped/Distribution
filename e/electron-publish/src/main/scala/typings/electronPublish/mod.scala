@@ -11,10 +11,13 @@ import typings.node.httpMod.ClientRequest
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("electron-publish", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("electron-publish", "HttpPublisher")
   @js.native
@@ -31,7 +34,7 @@ object mod {
           /* reject */ js.Function1[/* error */ Error, Unit], 
           Unit
         ]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     /* protected */ def doUpload(
       fileName: String,
       arch: Arch,
@@ -42,7 +45,7 @@ object mod {
           Unit
         ],
       file: String
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     val useSafeArtifactName: js.Any = js.native
   }
@@ -73,25 +76,23 @@ object mod {
     
     def providerName: String = js.native
     
-    def upload(task: UploadTask): js.Promise[_] = js.native
+    def upload(task: UploadTask): js.Promise[js.Any] = js.native
   }
   
-  @JSImport("electron-publish", "getCiTag")
-  @js.native
-  def getCiTag(): String | Null = js.native
+  @scala.inline
+  def getCiTag(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCiTag")().asInstanceOf[String | Null]
   
-  @js.native
   trait PublishContext extends StObject {
     
-    val cancellationToken: CancellationToken = js.native
+    val cancellationToken: CancellationToken
     
-    val progress: MultiProgress | Null = js.native
+    val progress: MultiProgress | Null
   }
   object PublishContext {
     
     @scala.inline
     def apply(cancellationToken: CancellationToken): PublishContext = {
-      val __obj = js.Dynamic.literal(cancellationToken = cancellationToken.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cancellationToken = cancellationToken.asInstanceOf[js.Any], progress = null)
       __obj.asInstanceOf[PublishContext]
     }
     
@@ -109,10 +110,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PublishOptions extends StObject {
     
-    var publish: js.UndefOr[PublishPolicy | Null] = js.native
+    var publish: js.UndefOr[PublishPolicy | Null] = js.undefined
   }
   object PublishOptions {
     
@@ -158,22 +158,21 @@ object mod {
     def onTagOrDraft: typings.electronPublish.electronPublishStrings.onTagOrDraft = "onTagOrDraft".asInstanceOf[typings.electronPublish.electronPublishStrings.onTagOrDraft]
   }
   
-  @js.native
   trait UploadTask extends StObject {
     
-    var arch: Arch | Null = js.native
+    var arch: Arch | Null
     
-    var file: String = js.native
+    var file: String
     
-    var fileContent: js.UndefOr[Buffer | Null] = js.native
+    var fileContent: js.UndefOr[Buffer | Null] = js.undefined
     
-    var safeArtifactName: js.UndefOr[String | Null] = js.native
+    var safeArtifactName: js.UndefOr[String | Null] = js.undefined
   }
   object UploadTask {
     
     @scala.inline
     def apply(file: String): UploadTask = {
-      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], arch = null)
       __obj.asInstanceOf[UploadTask]
     }
     

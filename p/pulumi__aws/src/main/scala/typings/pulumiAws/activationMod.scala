@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activationMod {
@@ -74,6 +73,10 @@ object activationMod {
   /* static members */
   object Activation {
     
+    @JSImport("@pulumi/aws/ssm/activation", "Activation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Activation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,60 +86,54 @@ object activationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/activation", "Activation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Activation = js.native
-    @JSImport("@pulumi/aws/ssm/activation", "Activation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Activation = js.native
-    @JSImport("@pulumi/aws/ssm/activation", "Activation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ActivationState): Activation = js.native
-    @JSImport("@pulumi/aws/ssm/activation", "Activation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ActivationState, opts: CustomResourceOptions): Activation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Activation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Activation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ActivationState): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Activation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ActivationState, opts: CustomResourceOptions): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Activation]
     
     /**
       * Returns true if the given object is an instance of Activation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/activation", "Activation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/activation.Activation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/activation.Activation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/activation.Activation */ Boolean]
   }
   
-  @js.native
   trait ActivationArgs extends StObject {
     
     /**
       * The description of the resource that you want to register.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * UTC timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) by which this activation request should expire. The default value is 24 hours from resource creation time. This provider will only perform drift detection of its value when present in a configuration.
       */
-    val expirationDate: js.UndefOr[Input[String]] = js.native
+    val expirationDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM Role to attach to the managed instance.
       */
-    val iamRole: Input[String] = js.native
+    val iamRole: Input[String]
     
     /**
       * The default name of the registered managed instance.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of managed instances you want to register. The default value is 1 instance.
       */
-    val registrationLimit: js.UndefOr[Input[Double]] = js.native
+    val registrationLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A map of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ActivationArgs {
     
@@ -184,53 +181,52 @@ object activationMod {
     }
   }
   
-  @js.native
   trait ActivationState extends StObject {
     
     /**
       * The code the system generates when it processes the activation.
       */
-    val activationCode: js.UndefOr[Input[String]] = js.native
+    val activationCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the resource that you want to register.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * UTC timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) by which this activation request should expire. The default value is 24 hours from resource creation time. This provider will only perform drift detection of its value when present in a configuration.
       */
-    val expirationDate: js.UndefOr[Input[String]] = js.native
+    val expirationDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the current activation has expired.
       */
-    val expired: js.UndefOr[Input[Boolean]] = js.native
+    val expired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The IAM Role to attach to the managed instance.
       */
-    val iamRole: js.UndefOr[Input[String]] = js.native
+    val iamRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default name of the registered managed instance.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of managed instances that are currently registered using this activation.
       */
-    val registrationCount: js.UndefOr[Input[Double]] = js.native
+    val registrationCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum number of managed instances you want to register. The default value is 1 instance.
       */
-    val registrationLimit: js.UndefOr[Input[Double]] = js.native
+    val registrationLimit: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A map of tags to assign to the object.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ActivationState {
     

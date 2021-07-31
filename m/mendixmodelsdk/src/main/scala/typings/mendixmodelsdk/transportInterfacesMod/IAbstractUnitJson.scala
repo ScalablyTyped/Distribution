@@ -2,15 +2,15 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAbstractUnitJson extends IStructureJson {
+trait IAbstractUnitJson
+  extends StObject
+     with IStructureJson {
   
-  var containerId: String = js.native
+  var containerId: String
   
-  var containmentName: String = js.native
+  var containmentName: String
 }
 object IAbstractUnitJson {
   

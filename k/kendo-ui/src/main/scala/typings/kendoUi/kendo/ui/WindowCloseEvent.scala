@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowCloseEvent extends WindowEvent {
+trait WindowCloseEvent
+  extends StObject
+     with WindowEvent {
   
-  var userTriggered: js.UndefOr[Boolean] = js.native
+  var userTriggered: js.UndefOr[Boolean] = js.undefined
 }
 object WindowCloseEvent {
   

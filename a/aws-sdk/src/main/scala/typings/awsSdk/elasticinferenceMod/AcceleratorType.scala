@@ -2,26 +2,24 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceleratorType extends StObject {
   
   /**
     *  The name of the Elastic Inference Accelerator type. 
     */
-  var acceleratorTypeName: js.UndefOr[AcceleratorTypeName] = js.native
+  var acceleratorTypeName: js.UndefOr[AcceleratorTypeName] = js.undefined
   
   /**
     *  The memory information of the Elastic Inference Accelerator type. 
     */
-  var memoryInfo: js.UndefOr[MemoryInfo] = js.native
+  var memoryInfo: js.UndefOr[MemoryInfo] = js.undefined
   
   /**
     *  The throughput information of the Elastic Inference Accelerator type. 
     */
-  var throughputInfo: js.UndefOr[ThroughputInfoList] = js.native
+  var throughputInfo: js.UndefOr[ThroughputInfoList] = js.undefined
 }
 object AcceleratorType {
   

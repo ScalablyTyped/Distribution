@@ -3,46 +3,44 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxModel extends StObject {
   
   /**
     * Border box
     */
-  var border: Quad = js.native
+  var border: Quad
   
   /**
     * Content box
     */
-  var content: Quad = js.native
+  var content: Quad
   
   /**
     * Node height
     */
-  var height: integer = js.native
+  var height: integer
   
   /**
     * Margin box
     */
-  var margin: Quad = js.native
+  var margin: Quad
   
   /**
     * Padding box
     */
-  var padding: Quad = js.native
+  var padding: Quad
   
   /**
     * Shape outside coordinates
     */
-  var shapeOutside: js.UndefOr[ShapeOutsideInfo] = js.native
+  var shapeOutside: js.UndefOr[ShapeOutsideInfo] = js.undefined
   
   /**
     * Node width
     */
-  var width: integer = js.native
+  var width: integer
 }
 object BoxModel {
   

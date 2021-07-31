@@ -2,19 +2,19 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationModuleImport extends NormalizationSelection {
+trait NormalizationModuleImport
+  extends StObject
+     with NormalizationSelection {
   
-  var documentName: String = js.native
+  var documentName: String
   
-  var fragmentName: String = js.native
+  var fragmentName: String
   
-  var fragmentPropName: String = js.native
+  var fragmentPropName: String
   
-  var kind: String = js.native
+  var kind: String
 }
 object NormalizationModuleImport {
   

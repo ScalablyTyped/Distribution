@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   /**
     * The text content of the policy.
     */
-  var Content: js.UndefOr[PolicyContent] = js.native
+  var Content: js.UndefOr[PolicyContent] = js.undefined
   
   /**
     * A structure that contains additional details about the policy.
     */
-  var PolicySummary: js.UndefOr[typings.awsSdk.organizationsMod.PolicySummary] = js.native
+  var PolicySummary: js.UndefOr[typings.awsSdk.organizationsMod.PolicySummary] = js.undefined
 }
 object Policy {
   

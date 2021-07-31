@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,6 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "CurveSet")
 @js.native
 class CurveSet ()
-  extends typings.playcanvas.pc.CurveSet {
+  extends StObject
+     with typings.playcanvas.pc.CurveSet {
   def this(curveKeys: js.Array[js.Array[Double]]) = this()
 }

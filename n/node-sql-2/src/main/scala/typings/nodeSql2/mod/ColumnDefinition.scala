@@ -2,25 +2,25 @@ package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnDefinition[Name /* <: String */, Type] extends Named[Name] {
+trait ColumnDefinition[Name /* <: String */, Type]
+  extends StObject
+     with Named[Name] {
   
-  var dataType: String = js.native
+  var dataType: String
   
-  var defaultValue: js.UndefOr[Type] = js.native
+  var defaultValue: js.UndefOr[Type] = js.undefined
   
-  var jsType: js.UndefOr[Type] = js.native
+  var jsType: js.UndefOr[Type] = js.undefined
   
-  var notNull: js.UndefOr[Boolean] = js.native
+  var notNull: js.UndefOr[Boolean] = js.undefined
   
-  var primaryKey: js.UndefOr[Boolean] = js.native
+  var primaryKey: js.UndefOr[Boolean] = js.undefined
   
-  var references: js.UndefOr[typings.nodeSql2.anon.Column] = js.native
+  var references: js.UndefOr[typings.nodeSql2.anon.Column] = js.undefined
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
 }
 object ColumnDefinition {
   
@@ -31,7 +31,7 @@ object ColumnDefinition {
   }
   
   @scala.inline
-  implicit class ColumnDefinitionMutableBuilder[Self <: ColumnDefinition[_, _], Name /* <: String */, Type] (val x: Self with (ColumnDefinition[Name, Type])) extends AnyVal {
+  implicit class ColumnDefinitionMutableBuilder[Self <: ColumnDefinition[?, ?], Name /* <: String */, Type] (val x: Self & (ColumnDefinition[Name, Type])) extends AnyVal {
     
     @scala.inline
     def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])

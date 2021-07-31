@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to remove spacing before the selected paragraph.
   */
-@js.native
-trait RemoveSpacingBeforeParagraphCommand extends CommandWithSimpleStateBase {
+trait RemoveSpacingBeforeParagraphCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the RemoveSpacingBeforeParagraphCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object RemoveSpacingBeforeParagraphCommand {
   

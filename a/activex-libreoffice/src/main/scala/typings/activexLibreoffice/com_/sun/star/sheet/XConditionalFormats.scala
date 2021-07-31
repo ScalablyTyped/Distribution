@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XConditionalFormats extends XInterface {
+trait XConditionalFormats
+  extends StObject
+     with XInterface {
   
-  val ConditionalFormats: SafeArray[XConditionalFormat] = js.native
+  val ConditionalFormats: SafeArray[XConditionalFormat]
   
-  val Length: Double = js.native
+  val Length: Double
   
   /** adds a conditional format to the existing list returns the id of the inserted conditional format */
-  def createByRange(range: XSheetCellRanges): Double = js.native
+  def createByRange(range: XSheetCellRanges): Double
   
-  def getConditionalFormats(): SafeArray[XConditionalFormat] = js.native
+  def getConditionalFormats(): SafeArray[XConditionalFormat]
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def removeByID(ID: Double): Unit = js.native
+  def removeByID(ID: Double): Unit
 }
 object XConditionalFormats {
   

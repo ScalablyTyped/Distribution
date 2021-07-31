@@ -3,21 +3,19 @@ package typings.baseui.selectMod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulContainerProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var initialState: js.UndefOr[State] = js.native
+  var initialState: js.UndefOr[State] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, js.Any]] = js.undefined
   
-  var overrides: js.UndefOr[SelectOverrides] = js.native
+  var overrides: js.UndefOr[SelectOverrides] = js.undefined
   
-  var stateReducer: js.UndefOr[StateReducer] = js.native
+  var stateReducer: js.UndefOr[StateReducer] = js.undefined
 }
 object StatefulContainerProps {
   
@@ -43,7 +41,7 @@ object StatefulContainerProps {
     def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* params */ OnChangeParams => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* params */ OnChangeParams => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

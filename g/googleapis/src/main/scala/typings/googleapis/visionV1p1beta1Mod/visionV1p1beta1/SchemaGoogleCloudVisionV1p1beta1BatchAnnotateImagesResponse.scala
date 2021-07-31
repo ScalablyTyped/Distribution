@@ -2,19 +2,17 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a batch image annotation request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1BatchAnnotateImagesResponse extends StObject {
   
   /**
     * Individual responses to image annotation requests within the batch.
     */
-  var responses: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1BatchAnnotateImagesResponse {
   

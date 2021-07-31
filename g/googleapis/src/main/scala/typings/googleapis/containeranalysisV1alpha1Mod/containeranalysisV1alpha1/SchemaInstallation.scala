@@ -2,26 +2,24 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This represents how a particular software package may be installed on a
   * system.
   */
-@js.native
 trait SchemaInstallation extends StObject {
   
   /**
     * All of the places within the filesystem versions of this package have
     * been found.
     */
-  var location: js.UndefOr[js.Array[SchemaLocation]] = js.native
+  var location: js.UndefOr[js.Array[SchemaLocation]] = js.undefined
   
   /**
     * Output only. The name of the installed package.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaInstallation {
   

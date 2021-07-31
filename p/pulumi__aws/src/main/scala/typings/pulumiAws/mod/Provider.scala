@@ -4,7 +4,6 @@ import typings.pulumiAws.providerMod.ProviderArgs
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "Provider")
@@ -20,17 +19,20 @@ class Provider protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: ProviderArgs) = this()
-  def this(name: String, args: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
+  def this(name: String, args: Unit, opts: ResourceOptions) = this()
   def this(name: String, args: ProviderArgs, opts: ResourceOptions) = this()
 }
 /* static members */
 object Provider {
   
+  @JSImport("@pulumi/aws", "Provider")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns true if the given object is an instance of Provider.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws", "Provider.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/provider.Provider */ Boolean]
 }

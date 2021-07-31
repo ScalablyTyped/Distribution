@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,15 @@ object Orientation extends StObject {
     * Worksheet page orientation is landscape.
     */
   @js.native
-  sealed trait Landscape extends Orientation
+  sealed trait Landscape
+    extends StObject
+       with Orientation
   
   /**
     * Worksheet page orientation is portrait.
     */
   @js.native
-  sealed trait Portrait extends Orientation
+  sealed trait Portrait
+    extends StObject
+       with Orientation
 }

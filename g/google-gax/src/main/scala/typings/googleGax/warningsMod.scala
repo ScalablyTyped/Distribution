@@ -2,12 +2,14 @@ package typings.googleGax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object warningsMod {
   
-  @JSImport("google-gax/build/src/warnings", "warn")
+  @JSImport("google-gax/build/src/warnings", JSImport.Namespace)
   @js.native
-  def warn(code: String, message: String): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def warn(code: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

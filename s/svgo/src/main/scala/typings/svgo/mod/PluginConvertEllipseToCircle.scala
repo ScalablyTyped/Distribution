@@ -2,14 +2,14 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginConvertEllipseToCircle extends PluginConfig {
+trait PluginConvertEllipseToCircle
+  extends StObject
+     with PluginConfig {
   
   /** convert ellipse with equal radius measures to circle */
-  var convertEllipseToCircle: Boolean | js.Object = js.native
+  var convertEllipseToCircle: Boolean | js.Object
 }
 object PluginConvertEllipseToCircle {
   

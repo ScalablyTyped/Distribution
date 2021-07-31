@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
   /** Output only. The approximate timestamp when the session is last used. It is typically earlier than the actual last use time. */
-  var approximateLastUseTime: js.UndefOr[String] = js.native
+  var approximateLastUseTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when the session is created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The labels for the session. * Label keys must be between 1 and 63 characters long and must conform to the following regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?`. * Label values
@@ -23,11 +21,11 @@ trait Session extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The name of the session. This is always system-assigned. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Session {
   
@@ -56,7 +54,7 @@ object Session {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Session & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

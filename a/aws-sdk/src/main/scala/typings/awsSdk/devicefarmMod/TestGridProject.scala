@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestGridProject extends StObject {
   
   /**
     * The ARN for the project.
     */
-  var arn: js.UndefOr[DeviceFarmArn] = js.native
+  var arn: js.UndefOr[DeviceFarmArn] = js.undefined
   
   /**
     * When the project was created.
     */
-  var created: js.UndefOr[DateTime] = js.native
+  var created: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A human-readable description for the project.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable name for the project.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object TestGridProject {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightsizingRecommendationMetadata extends StObject {
   
   /**
     *  The timestamp for when AWS made this recommendation.
     */
-  var GenerationTimestamp: js.UndefOr[GenericString] = js.native
+  var GenerationTimestamp: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  How many days of previous usage that AWS considers when making this recommendation.
     */
-  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.native
+  var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
   /**
     *  The ID for this specific recommendation.
     */
-  var RecommendationId: js.UndefOr[GenericString] = js.native
+  var RecommendationId: js.UndefOr[GenericString] = js.undefined
 }
 object RightsizingRecommendationMetadata {
   

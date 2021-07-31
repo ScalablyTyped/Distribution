@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.extensionTypes.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object activityLog {
   
-  @js.native
   trait ActivityLogOnExtensionActivityEvent[TCallback] extends StObject {
     
-    def addListener(cb: TCallback, id: String): Unit = js.native
+    def addListener(cb: TCallback, id: String): Unit
     
-    def hasListener(cb: TCallback): Boolean = js.native
+    def hasListener(cb: TCallback): Boolean
     
-    def removeListener(cb: TCallback): Unit = js.native
+    def removeListener(cb: TCallback): Unit
   }
   object ActivityLogOnExtensionActivityEvent {
     
@@ -37,7 +35,7 @@ object activityLog {
     }
     
     @scala.inline
-    implicit class ActivityLogOnExtensionActivityEventMutableBuilder[Self <: ActivityLogOnExtensionActivityEvent[_], TCallback] (val x: Self with ActivityLogOnExtensionActivityEvent[TCallback]) extends AnyVal {
+    implicit class ActivityLogOnExtensionActivityEventMutableBuilder[Self <: ActivityLogOnExtensionActivityEvent[?], TCallback] (val x: Self & ActivityLogOnExtensionActivityEvent[TCallback]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
@@ -50,24 +48,23 @@ object activityLog {
     }
   }
   
-  @js.native
   trait OnExtensionActivityDetails extends StObject {
     
-    var data: OnExtensionActivityDetailsData = js.native
+    var data: OnExtensionActivityDetailsData
     
     /** The name of the api call or event, or the script url if this is a content or user script event. */
-    var name: String = js.native
+    var name: String
     
     /** The date string when this call is triggered. */
-    var timeStamp: Date = js.native
+    var timeStamp: Date
     
     /**
       * The type of log entry. api_call is a function call made by the extension and api_event is an event callback to the extension. content_script is logged when a content script is injected.
       */
-    var `type`: OnExtensionActivityDetailsType = js.native
+    var `type`: OnExtensionActivityDetailsType
     
     /** The type of view where the activity occurred. Content scripts will not have a viewType. */
-    var viewType: js.UndefOr[OnExtensionActivityDetailsViewType] = js.native
+    var viewType: js.UndefOr[OnExtensionActivityDetailsViewType] = js.undefined
   }
   object OnExtensionActivityDetails {
     
@@ -106,20 +103,19 @@ object activityLog {
     }
   }
   
-  @js.native
   trait OnExtensionActivityDetailsData extends StObject {
     
     /** A list of arguments passed to the call. */
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** The result of the call. */
-    var result: js.UndefOr[js.Object] = js.native
+    var result: js.UndefOr[js.Object] = js.undefined
     
     /** The tab associated with this event if it is a tab or content script. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
     
     /** If the type is content_script, this is the url of the script that was injected. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object OnExtensionActivityDetailsData {
     
@@ -133,7 +129,7 @@ object activityLog {
     implicit class OnExtensionActivityDetailsDataMutableBuilder[Self <: OnExtensionActivityDetailsData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

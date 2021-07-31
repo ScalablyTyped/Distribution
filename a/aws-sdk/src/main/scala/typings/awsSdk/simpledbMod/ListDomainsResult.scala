@@ -2,21 +2,19 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDomainsResult extends StObject {
   
   /**
     * A list of domain names that match the expression.
     */
-  var DomainNames: js.UndefOr[DomainNameList] = js.native
+  var DomainNames: js.UndefOr[DomainNameList] = js.undefined
   
   /**
     * An opaque token indicating that there are more domains than the specified MaxNumberOfDomains still available.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListDomainsResult {
   

@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEditsTestersGet extends StandardParameters {
+trait ParamsResourceEditsTestersGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Unique identifier for this edit.
     */
-  var editId: js.UndefOr[String] = js.native
+  var editId: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for the Android app that is being updated; for example,
     * "com.spiffygame".
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * The track to read or modify. Acceptable values are: "alpha", "beta",
     * "production", "rollout" or "internal".
     */
-  var track: js.UndefOr[String] = js.native
+  var track: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEditsTestersGet {
   

@@ -3,10 +3,13 @@ package typings.validator
 import typings.validator.validatorStrings.any
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMobilePhoneMod {
+  
+  @JSImport("validator/lib/isMobilePhone", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Check if the string is a mobile phone number.
@@ -14,42 +17,31 @@ object isMobilePhoneMod {
     * @param [locale] - MobilePhoneLocale(s)
     * @param [options] - Options
     */
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
-  def default(str: String): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
-  def default(
-    str: String,
-    locale: js.UndefOr[scala.Nothing],
-    options: typings.validator.mod.validator.IsMobilePhoneOptions
-  ): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
-  def default(str: String, locale: js.Array[typings.validator.mod.validator.MobilePhoneLocale]): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
+  @scala.inline
+  def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def default(str: String, locale: js.Array[typings.validator.mod.validator.MobilePhoneLocale]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def default(
     str: String,
     locale: js.Array[typings.validator.mod.validator.MobilePhoneLocale],
     options: typings.validator.mod.validator.IsMobilePhoneOptions
-  ): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
-  def default(str: String, locale: typings.validator.mod.validator.MobilePhoneLocale): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(str: String, locale: Unit, options: typings.validator.mod.validator.IsMobilePhoneOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(str: String, locale: typings.validator.mod.validator.MobilePhoneLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def default(
     str: String,
     locale: typings.validator.mod.validator.MobilePhoneLocale,
     options: typings.validator.mod.validator.IsMobilePhoneOptions
-  ): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
-  def default_any(str: String, locale: any): Boolean = js.native
-  @JSImport("validator/lib/isMobilePhone", JSImport.Default)
-  @js.native
-  def default_any(str: String, locale: any, options: typings.validator.mod.validator.IsMobilePhoneOptions): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def default_any(str: String, locale: any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default_any(str: String, locale: any, options: typings.validator.mod.validator.IsMobilePhoneOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type IsMobilePhoneOptions = typings.validator.mod.validator.IsMobilePhoneOptions
   

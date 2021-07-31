@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pubnub.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HereNowResponse extends StObject {
   
-  var channels: StringDictionary[Name] = js.native
+  var channels: StringDictionary[Name]
   
-  var totalChannels: Double = js.native
+  var totalChannels: Double
   
-  var totalOccupancy: Double = js.native
+  var totalOccupancy: Double
 }
 object HereNowResponse {
   

@@ -3,23 +3,21 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpProcessRequest extends StObject {
   
   /** TpProcessRequest contextId */
-  var contextId: js.UndefOr[String | Null] = js.native
+  var contextId: js.UndefOr[String | Null] = js.undefined
   
   /** TpProcessRequest header */
-  var header: js.UndefOr[ITransactionHeader | Null] = js.native
+  var header: js.UndefOr[ITransactionHeader | Null] = js.undefined
   
   /** TpProcessRequest payload */
-  var payload: js.UndefOr[Uint8Array | Null] = js.native
+  var payload: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** TpProcessRequest signature */
-  var signature: js.UndefOr[String | Null] = js.native
+  var signature: js.UndefOr[String | Null] = js.undefined
 }
 object ITpProcessRequest {
   

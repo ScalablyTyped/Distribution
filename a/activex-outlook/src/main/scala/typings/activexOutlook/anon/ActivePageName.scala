@@ -2,13 +2,11 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivePageName extends StObject {
   
-  val ActivePageName: String = js.native
+  val ActivePageName: String
 }
 object ActivePageName {
   

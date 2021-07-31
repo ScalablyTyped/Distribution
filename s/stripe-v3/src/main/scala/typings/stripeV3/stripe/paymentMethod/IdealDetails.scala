@@ -14,19 +14,17 @@ import typings.stripeV3.stripeV3Strings.triodos_bank
 import typings.stripeV3.stripeV3Strings.van_lanschot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdealDetails extends StObject {
   
-  var bank: abn_amro | asn_bank | bunq | handelsbanken | ing | knab | moneyou | rabobank | regiobank | sns_bank | triodos_bank | van_lanschot = js.native
+  var bank: abn_amro | asn_bank | bunq | handelsbanken | ing | knab | moneyou | rabobank | regiobank | sns_bank | triodos_bank | van_lanschot
   
-  var bic: String = js.native
+  var bic: String
   
-  var iban_last4: String = js.native
+  var iban_last4: String
   
-  var verified_name: String = js.native
+  var verified_name: String
 }
 object IdealDetails {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchQuantumTasksFilter extends StObject {
   
   /**
     * The name of the device used for the task.
     */
-  var name: String64 = js.native
+  var name: String64
   
   /**
     * An operator to use in the filter.
     */
-  var operator: SearchQuantumTasksFilterOperator = js.native
+  var operator: SearchQuantumTasksFilterOperator
   
   /**
     * The values to use for the filter.
     */
-  var values: SearchQuantumTasksFilterValuesList = js.native
+  var values: SearchQuantumTasksFilterValuesList
 }
 object SearchQuantumTasksFilter {
   

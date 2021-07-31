@@ -2,27 +2,25 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RESTAPIResponse extends StObject {
   
-  def getStreamWriter(): RESTAPIResponseStream = js.native
+  def getStreamWriter(): RESTAPIResponseStream
   
-  def setBody(body: js.Any): Unit = js.native
+  def setBody(body: js.Any): Unit
   
-  def setContentType(contentType: String): Unit = js.native
+  def setContentType(contentType: String): Unit
   
-  def setError(error: js.Any): Unit = js.native
+  def setError(error: js.Any): Unit
   
-  def setHeader(header: String, value: String): Unit = js.native
+  def setHeader(header: String, value: String): Unit
   
-  def setHeaders(headers: js.Any): Unit = js.native
+  def setHeaders(headers: js.Any): Unit
   
-  def setLocation(location: String): Unit = js.native
+  def setLocation(location: String): Unit
   
-  def setStatus(status: Double): Unit = js.native
+  def setStatus(status: Double): Unit
 }
 object RESTAPIResponse {
   

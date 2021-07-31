@@ -3,21 +3,20 @@ package typings.actionsOnGoogle.v1Mod
 import typings.actionsOnGoogle.actionsOnGoogleNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageCard
-  extends DialogflowV1BaseMessage[`1`]
+  extends StObject
+     with DialogflowV1BaseMessage[`1`]
      with DialogflowV1Message {
   
-  var buttons: js.UndefOr[js.Array[DialogflowV1Button]] = js.native
+  var buttons: js.UndefOr[js.Array[DialogflowV1Button]] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageCard {
   

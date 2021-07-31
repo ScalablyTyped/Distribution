@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information that identifies an advertising app that is no longer available. */
-@js.native
 trait AllJoynServiceInfoRemovedEventArgs extends StObject {
   
   /** The unique bus name of the advertising app that is no longer available. */
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
 object AllJoynServiceInfoRemovedEventArgs {
   

@@ -4,7 +4,6 @@ import typings.mdast.mod.ReferenceType
 import typings.mdast.mod._AlignType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mdastStrings {
@@ -20,7 +19,9 @@ object mdastStrings {
   def break: break = "break".asInstanceOf[break]
   
   @js.native
-  sealed trait center extends _AlignType
+  sealed trait center
+    extends StObject
+       with _AlignType
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -30,7 +31,9 @@ object mdastStrings {
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait collapsed extends ReferenceType
+  sealed trait collapsed
+    extends StObject
+       with ReferenceType
   @scala.inline
   def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   
@@ -65,7 +68,9 @@ object mdastStrings {
   def footnoteReference: footnoteReference = "footnoteReference".asInstanceOf[footnoteReference]
   
   @js.native
-  sealed trait full extends ReferenceType
+  sealed trait full
+    extends StObject
+       with ReferenceType
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
@@ -95,7 +100,9 @@ object mdastStrings {
   def inlineCode: inlineCode = "inlineCode".asInstanceOf[inlineCode]
   
   @js.native
-  sealed trait left extends _AlignType
+  sealed trait left
+    extends StObject
+       with _AlignType
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -125,7 +132,9 @@ object mdastStrings {
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
   @js.native
-  sealed trait right extends _AlignType
+  sealed trait right
+    extends StObject
+       with _AlignType
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -135,7 +144,9 @@ object mdastStrings {
   def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait shortcut extends ReferenceType
+  sealed trait shortcut
+    extends StObject
+       with ReferenceType
   @scala.inline
   def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
   

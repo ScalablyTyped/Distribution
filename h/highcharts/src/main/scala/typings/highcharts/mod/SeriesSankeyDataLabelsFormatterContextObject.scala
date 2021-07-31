@@ -2,18 +2,18 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SeriesSankeyDataLabelsFormatterContextObject extends PointLabelObject {
+trait SeriesSankeyDataLabelsFormatterContextObject
+  extends StObject
+     with PointLabelObject {
   
   /**
     * The node object. The node name, if defined, is available through
     * `this.point.name`.
     */
   @JSName("point")
-  var point_SeriesSankeyDataLabelsFormatterContextObject: SankeyNodeObject = js.native
+  var point_SeriesSankeyDataLabelsFormatterContextObject: SankeyNodeObject
 }
 object SeriesSankeyDataLabelsFormatterContextObject {
   

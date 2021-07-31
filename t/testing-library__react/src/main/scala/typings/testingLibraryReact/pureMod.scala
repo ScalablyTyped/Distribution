@@ -52,41 +52,39 @@ import typings.testingLibraryReact.mod.RenderResult
 import typings.testingLibraryReact.testingLibraryReactBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pureMod {
+  
+  @JSImport("@testing-library/react/types/pure", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@testing-library/react/types/pure", "act")
   @js.native
   val act: FnCall | (js.Function1[/* callback */ js.Function0[Unit], Unit]) = js.native
   
-  @JSImport("@testing-library/react/types/pure", "buildQueries")
-  @js.native
-  def buildQueries[Arguments /* <: js.Array[_] */](
+  @scala.inline
+  def buildQueries[Arguments /* <: js.Array[js.Any] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-  ): BuiltQueryMethods[Arguments] = js.native
+  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
-  @JSImport("@testing-library/react/types/pure", "cleanup")
-  @js.native
-  def cleanup(): Unit = js.native
+  @scala.inline
+  def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
-  @JSImport("@testing-library/react/types/pure", "computeHeadingLevel")
-  @js.native
-  def computeHeadingLevel(element: Element): js.UndefOr[Double] = js.native
+  @scala.inline
+  def computeHeadingLevel(element: Element): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHeadingLevel")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("@testing-library/react/types/pure", "configure")
-  @js.native
-  def configure(configDelta: PartialConfig): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "configure")
-  @js.native
-  def configure(configDelta: ConfigFn): Unit = js.native
+  @scala.inline
+  def configure(configDelta: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def configure(configDelta: ConfigFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@testing-library/react/types/pure", "createEvent")
   @js.native
-  val createEvent: CreateObject with CreateFunction = js.native
+  val createEvent: CreateObject & CreateFunction = js.native
   
   @JSImport("@testing-library/react/types/pure", "findAllByAltText")
   @js.native
@@ -154,7 +152,7 @@ object pureMod {
   
   @JSImport("@testing-library/react/types/pure", "fireEvent")
   @js.native
-  val fireEvent: FireFunction with FireObject = js.native
+  val fireEvent: FireFunction & FireObject = js.native
   
   @JSImport("@testing-library/react/types/pure", "getAllByAltText")
   @js.native
@@ -220,130 +218,92 @@ object pureMod {
   @js.native
   val getByTitle: GetByBoundAttribute = js.native
   
-  @JSImport("@testing-library/react/types/pure", "getConfig")
-  @js.native
-  def getConfig(): Config = js.native
+  @scala.inline
+  def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
   
-  @JSImport("@testing-library/react/types/pure", "getDefaultNormalizer")
-  @js.native
-  def getDefaultNormalizer(): NormalizerFn = js.native
-  @JSImport("@testing-library/react/types/pure", "getDefaultNormalizer")
-  @js.native
-  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = js.native
+  @scala.inline
+  def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
+  @scala.inline
+  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
-  @JSImport("@testing-library/react/types/pure", "getElementError")
-  @js.native
-  def getElementError(message: String, container: HTMLElement): Error = js.native
+  @scala.inline
+  def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("@testing-library/react/types/pure", "getNodeText")
-  @js.native
-  def getNodeText(node: HTMLElement): String = js.native
+  @scala.inline
+  def getNodeText(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@testing-library/react/types/pure", "getQueriesForElement")
-  @js.native
-  def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
-  @JSImport("@testing-library/react/types/pure", "getQueriesForElement")
-  @js.native
-  def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
+  @scala.inline
+  def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  @scala.inline
+  def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
-  @JSImport("@testing-library/react/types/pure", "getRoles")
-  @js.native
-  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
+  @scala.inline
+  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
   
-  @JSImport("@testing-library/react/types/pure", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/react/types/pure", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: js.UndefOr[scala.Nothing], method: Method): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/react/types/pure", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/react/types/pure", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = js.native
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Unit, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
   
-  @JSImport("@testing-library/react/types/pure", "isInaccessible")
-  @js.native
-  def isInaccessible(element: Element): Boolean = js.native
+  @scala.inline
+  def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: Element): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/react/types/pure", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+  @scala.inline
+  def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@testing-library/react/types/pure", "logRoles")
-  @js.native
-  def logRoles(container: HTMLElement): String = js.native
+  @scala.inline
+  def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/react/types/pure", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  @scala.inline
+  def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   object prettyFormat {
     
@@ -352,12 +312,14 @@ object pureMod {
       * @param val any potential JavaScript object
       * @param options Custom settings
       */
+    @scala.inline
+    def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("@testing-library/react/types/pure", "prettyFormat")
     @js.native
-    def apply(`val`: js.Any): String = js.native
-    @JSImport("@testing-library/react/types/pure", "prettyFormat")
-    @js.native
-    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = js.native
+    val ^ : js.Any = js.native
     
     object plugins {
       
@@ -678,17 +640,19 @@ object pureMod {
   
   object queryHelpers {
     
-    @JSImport("@testing-library/react/types/pure", "queryHelpers.buildQueries")
+    @JSImport("@testing-library/react/types/pure", "queryHelpers")
     @js.native
-    def buildQueries[Arguments /* <: js.Array[_] */](
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def buildQueries[Arguments /* <: js.Array[js.Any] */](
       queryByAll: GetAllBy[Arguments],
       getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
       getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-    ): BuiltQueryMethods[Arguments] = js.native
+    ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
     
-    @JSImport("@testing-library/react/types/pure", "queryHelpers.getElementError")
-    @js.native
-    def getElementError(message: String, container: HTMLElement): Error = js.native
+    @scala.inline
+    def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
     
     @JSImport("@testing-library/react/types/pure", "queryHelpers.queryAllByAttribute")
     @js.native
@@ -699,15 +663,12 @@ object pureMod {
     val queryByAttribute: QueryByAttribute_ = js.native
   }
   
-  @JSImport("@testing-library/react/types/pure", "render")
-  @js.native
-  def render(ui: ReactElement): RenderResultreadonlygetAl = js.native
-  @JSImport("@testing-library/react/types/pure", "render")
-  @js.native
-  def render(ui: ReactElement, options: OmitRenderOptionsreadonly): RenderResultreadonlygetAl = js.native
-  @JSImport("@testing-library/react/types/pure", "render")
-  @js.native
-  def render[Q /* <: Queries */](ui: ReactElement, options: RenderOptions[Q]): RenderResult[Q] = js.native
+  @scala.inline
+  def render(ui: ReactElement): RenderResultreadonlygetAl = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any]).asInstanceOf[RenderResultreadonlygetAl]
+  @scala.inline
+  def render(ui: ReactElement, options: OmitRenderOptionsreadonly): RenderResultreadonlygetAl = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderResultreadonlygetAl]
+  @scala.inline
+  def render[Q /* <: Queries */](ui: ReactElement, options: RenderOptions[Q]): RenderResult[Q] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderResult[Q]]
   
   /* Inlined @testing-library/dom.@testing-library/dom/types/screen.Screen<{ readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute}> */
   object screen {
@@ -720,58 +681,38 @@ object pureMod {
       * Convenience function for `pretty-dom` which also allows an array
       * of elements
       */
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(
-      element: js.Array[Element | HTMLDocument],
-      maxLength: js.UndefOr[scala.Nothing],
-      options: OptionsReceived
-    ): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: Element): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+    @scala.inline
+    def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@testing-library/react/types/pure", "screen.findAllByAltText")
     @js.native
@@ -969,15 +910,12 @@ object pureMod {
       * Convenience function for `Testing Playground` which logs URL that
       * can be opened in a browser
       */
-    @JSImport("@testing-library/react/types/pure", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(element: Element): Unit = js.native
-    @JSImport("@testing-library/react/types/pure", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(element: HTMLDocument): Unit = js.native
+    @scala.inline
+    def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
+    @scala.inline
+    def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@testing-library/react/types/pure", "screen.queryAllByAltText")
     @js.native
@@ -1076,58 +1014,42 @@ object pureMod {
     def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@testing-library/react/types/pure", "waitFor")
-  @js.native
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("@testing-library/react/types/pure", "waitFor")
-  @js.native
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = js.native
+  @scala.inline
+  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@testing-library/react/types/pure", "waitForDomChange")
-  @js.native
-  def waitForDomChange(): js.Promise[_] = js.native
-  @JSImport("@testing-library/react/types/pure", "waitForDomChange")
-  @js.native
-  def waitForDomChange(options: waitForOptions): js.Promise[_] = js.native
+  @scala.inline
+  def waitForDomChange(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")().asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def waitForDomChange(options: waitForOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@testing-library/react/types/pure", "waitForElement")
-  @js.native
-  def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  @JSImport("@testing-library/react/types/pure", "waitForElement")
-  @js.native
-  def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = js.native
+  @scala.inline
+  def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@testing-library/react/types/pure", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/react/types/pure", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/react/types/pure", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/react/types/pure", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@testing-library/react/types/pure", "wait")
-  @js.native
-  def wait_(): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/react/types/pure", "wait")
-  @js.native
-  def wait_(callback: js.UndefOr[scala.Nothing], options: Interval): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/react/types/pure", "wait")
-  @js.native
-  def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/react/types/pure", "wait")
-  @js.native
-  def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = js.native
+  @scala.inline
+  def wait_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def wait_(callback: Unit, options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* was `typeof getQueriesForElement` */
-  @JSImport("@testing-library/react/types/pure", "within")
-  @js.native
-  def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
-  @JSImport("@testing-library/react/types/pure", "within")
-  @js.native
-  def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
+  @scala.inline
+  def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  @scala.inline
+  def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
 }

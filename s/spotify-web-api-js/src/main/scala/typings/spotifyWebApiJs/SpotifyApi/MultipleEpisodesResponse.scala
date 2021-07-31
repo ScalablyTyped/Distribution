@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * /v1/episodes?ids={ids}
   * https://developer.spotify.com/documentation/web-api/reference/episodes/get-several-episodes/
   */
-@js.native
 trait MultipleEpisodesResponse extends StObject {
   
-  var episodes: js.Array[EpisodeObjectFull] = js.native
+  var episodes: js.Array[EpisodeObjectFull]
 }
 object MultipleEpisodesResponse {
   

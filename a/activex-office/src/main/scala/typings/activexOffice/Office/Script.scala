@@ -2,34 +2,32 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Script extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Extended: String = js.native
+  var Extended: String
   
-  var Id: String = js.native
+  var Id: String
   
-  var Language: MsoScriptLanguage = js.native
+  var Language: MsoScriptLanguage
   
-  val Location: MsoScriptLocation = js.native
+  val Location: MsoScriptLocation
   
   @JSName("Office.Script_typekey")
-  var OfficeDotScript_typekey: Script = js.native
+  var OfficeDotScript_typekey: Script
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ScriptText: String = js.native
+  var ScriptText: String
   
-  val Shape: js.Any = js.native
+  val Shape: js.Any
 }
 object Script {
   

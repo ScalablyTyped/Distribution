@@ -2,41 +2,39 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftDataParameters extends StObject {
   
   /**
     * The name of the database. Required when authenticating using temporary credentials.
     */
-  var Database: typings.awsSdk.eventbridgeMod.Database = js.native
+  var Database: typings.awsSdk.eventbridgeMod.Database
   
   /**
     * The database user name. Required when authenticating using temporary credentials.
     */
-  var DbUser: js.UndefOr[typings.awsSdk.eventbridgeMod.DbUser] = js.native
+  var DbUser: js.UndefOr[typings.awsSdk.eventbridgeMod.DbUser] = js.undefined
   
   /**
     * The name or ARN of the secret that enables access to the database. Required when authenticating using AWS Secrets Manager.
     */
-  var SecretManagerArn: js.UndefOr[RedshiftSecretManagerArn] = js.native
+  var SecretManagerArn: js.UndefOr[RedshiftSecretManagerArn] = js.undefined
   
   /**
     * The SQL statement text to run.
     */
-  var Sql: typings.awsSdk.eventbridgeMod.Sql = js.native
+  var Sql: typings.awsSdk.eventbridgeMod.Sql
   
   /**
     * The name of the SQL statement. You can name the SQL statement when you create it to identify the query.
     */
-  var StatementName: js.UndefOr[typings.awsSdk.eventbridgeMod.StatementName] = js.native
+  var StatementName: js.UndefOr[typings.awsSdk.eventbridgeMod.StatementName] = js.undefined
   
   /**
     * Indicates whether to send an event back to EventBridge after the SQL statement runs.
     */
-  var WithEvent: js.UndefOr[Boolean] = js.native
+  var WithEvent: js.UndefOr[Boolean] = js.undefined
 }
 object RedshiftDataParameters {
   

@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoleAssignment extends Entity {
+trait RoleAssignment
+  extends StObject
+     with Entity {
   
   // Description of the Role Assignment.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display or friendly name of the role Assignment.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // List of ids of role scope member security groups. These are IDs from Azure Active Directory.
-  var resourceScopes: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var resourceScopes: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Role definition this assignment is part of.
-  var roleDefinition: js.UndefOr[NullableOption[RoleDefinition]] = js.native
+  var roleDefinition: js.UndefOr[NullableOption[RoleDefinition]] = js.undefined
 }
 object RoleAssignment {
   

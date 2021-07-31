@@ -2,17 +2,15 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaHttpRouteAction extends StObject {
   
   /**
     * The specification for allowing client side cross-origin requests. Please
     * see W3C Recommendation for Cross Origin Resource Sharing
     */
-  var corsPolicy: js.UndefOr[SchemaCorsPolicy] = js.native
+  var corsPolicy: js.UndefOr[SchemaCorsPolicy] = js.undefined
   
   /**
     * The specification for fault injection introduced into traffic to test the
@@ -24,7 +22,7 @@ trait SchemaHttpRouteAction extends StObject {
     * retry_policy will be ignored by clients that are configured with a
     * fault_injection_policy.
     */
-  var faultInjectionPolicy: js.UndefOr[SchemaHttpFaultInjection] = js.native
+  var faultInjectionPolicy: js.UndefOr[SchemaHttpFaultInjection] = js.undefined
   
   /**
     * Specifies the policy on how requests intended for the route&#39;s
@@ -33,12 +31,12 @@ trait SchemaHttpRouteAction extends StObject {
     * to sending traffic to the shadow service, the host / authority header is
     * suffixed with -shadow.
     */
-  var requestMirrorPolicy: js.UndefOr[SchemaRequestMirrorPolicy] = js.native
+  var requestMirrorPolicy: js.UndefOr[SchemaRequestMirrorPolicy] = js.undefined
   
   /**
     * Specifies the retry policy associated with this route.
     */
-  var retryPolicy: js.UndefOr[SchemaHttpRetryPolicy] = js.native
+  var retryPolicy: js.UndefOr[SchemaHttpRetryPolicy] = js.undefined
   
   /**
     * Specifies the timeout for the selected route. Timeout is computed from
@@ -46,13 +44,13 @@ trait SchemaHttpRouteAction extends StObject {
     * until the response has been completely processed. Timeout includes all
     * retries. If not specified, the default value is 15 seconds.
     */
-  var timeout: js.UndefOr[SchemaDuration] = js.native
+  var timeout: js.UndefOr[SchemaDuration] = js.undefined
   
   /**
     * The spec to modify the URL of the request, prior to forwarding the
     * request to the matched service
     */
-  var urlRewrite: js.UndefOr[SchemaUrlRewrite] = js.native
+  var urlRewrite: js.UndefOr[SchemaUrlRewrite] = js.undefined
   
   /**
     * A list of weighted backend services to send traffic to when a route match
@@ -64,7 +62,7 @@ trait SchemaHttpRouteAction extends StObject {
     * like Url rewrites and header transformations are applied depending on
     * additional settings specified in this HttpRouteAction.
     */
-  var weightedBackendServices: js.UndefOr[js.Array[SchemaWeightedBackendService]] = js.native
+  var weightedBackendServices: js.UndefOr[js.Array[SchemaWeightedBackendService]] = js.undefined
 }
 object SchemaHttpRouteAction {
   

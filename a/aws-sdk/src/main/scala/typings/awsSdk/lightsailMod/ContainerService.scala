@@ -2,96 +2,94 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerService extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the container service.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the container service.
     */
-  var containerServiceName: js.UndefOr[ContainerServiceName] = js.native
+  var containerServiceName: js.UndefOr[ContainerServiceName] = js.undefined
   
   /**
     * The timestamp when the container service was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * An object that describes the current container deployment of the container service.
     */
-  var currentDeployment: js.UndefOr[ContainerServiceDeployment] = js.native
+  var currentDeployment: js.UndefOr[ContainerServiceDeployment] = js.undefined
   
   /**
     * A Boolean value indicating whether the container service is disabled.
     */
-  var isDisabled: js.UndefOr[Boolean] = js.native
+  var isDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object that describes the location of the container service, such as the AWS Region and Availability Zone.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * An object that describes the next deployment of the container service. This value is null when there is no deployment in a pending state.
     */
-  var nextDeployment: js.UndefOr[ContainerServiceDeployment] = js.native
+  var nextDeployment: js.UndefOr[ContainerServiceDeployment] = js.undefined
   
   /**
     * The power specification of the container service. The power specifies the amount of RAM, the number of vCPUs, and the base price of the container service.
     */
-  var power: js.UndefOr[ContainerServicePowerName] = js.native
+  var power: js.UndefOr[ContainerServicePowerName] = js.undefined
   
   /**
     * The ID of the power of the container service.
     */
-  var powerId: js.UndefOr[String] = js.native
+  var powerId: js.UndefOr[String] = js.undefined
   
   /**
     * The principal ARN of the container service. The principal ARN can be used to create a trust relationship between your standard AWS account and your Lightsail container service. This allows you to give your service permission to access resources in your standard AWS account.
     */
-  var principalArn: js.UndefOr[String] = js.native
+  var principalArn: js.UndefOr[String] = js.undefined
   
   /**
     * The private domain name of the container service. The private domain name is accessible only by other resources within the default virtual private cloud (VPC) of your Lightsail account.
     */
-  var privateDomainName: js.UndefOr[String] = js.native
+  var privateDomainName: js.UndefOr[String] = js.undefined
   
   /**
     * The public domain name of the container service, such as example.com and www.example.com. You can specify up to four public domain names for a container service. The domain names that you specify are used when you create a deployment with a container configured as the public endpoint of your container service. If you don't specify public domain names, then you can use the default domain of the container service.  You must create and validate an SSL/TLS certificate before you can use public domain names with your container service. Use the CreateCertificate action to create a certificate for the public domain names you want to use with your container service.  See CreateContainerService or UpdateContainerService for information about how to specify public domain names for your Lightsail container service.
     */
-  var publicDomainNames: js.UndefOr[ContainerServicePublicDomains] = js.native
+  var publicDomainNames: js.UndefOr[ContainerServicePublicDomains] = js.undefined
   
   /**
     * The Lightsail resource type of the container service (i.e., ContainerService).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The scale specification of the container service. The scale specifies the allocated compute nodes of the container service.
     */
-  var scale: js.UndefOr[ContainerServiceScale] = js.native
+  var scale: js.UndefOr[ContainerServiceScale] = js.undefined
   
   /**
     * The current state of the container service. The state can be:    Pending - The container service is being created.    Ready - The container service is created but does not have a container deployment.    Disabled - The container service is disabled.    Updating - The container service capacity or other setting is being updated.    Deploying - The container service is launching a container deployment.    Running - The container service is created and it has a container deployment.  
     */
-  var state: js.UndefOr[ContainerServiceState] = js.native
+  var state: js.UndefOr[ContainerServiceState] = js.undefined
   
   /**
     * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The publicly accessible URL of the container service. If no public endpoint is specified in the currentDeployment, this URL returns a 404 response.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ContainerService {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateVersion extends StObject {
   
   /**
     * The time the version was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The principal that created the version.
     */
-  var CreatedBy: js.UndefOr[String] = js.native
+  var CreatedBy: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the version is the default version.
     */
-  var DefaultVersion: js.UndefOr[Boolean] = js.native
+  var DefaultVersion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the launch template.
     */
-  var LaunchTemplateData: js.UndefOr[ResponseLaunchTemplateData] = js.native
+  var LaunchTemplateData: js.UndefOr[ResponseLaunchTemplateData] = js.undefined
   
   /**
     * The ID of the launch template.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.native
+  var LaunchTemplateId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the launch template.
     */
-  var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.native
+  var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.undefined
   
   /**
     * The description for the version.
     */
-  var VersionDescription: js.UndefOr[typings.awsSdk.ec2Mod.VersionDescription] = js.native
+  var VersionDescription: js.UndefOr[typings.awsSdk.ec2Mod.VersionDescription] = js.undefined
   
   /**
     * The version number.
     */
-  var VersionNumber: js.UndefOr[Long] = js.native
+  var VersionNumber: js.UndefOr[Long] = js.undefined
 }
 object LaunchTemplateVersion {
   

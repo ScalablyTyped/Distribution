@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.SetElement A complementary service, for elements of a dynamic homogeneous container.
   * @see com.sun.star.configuration.AccessRootElement A complementary service, for the root element of a hierarchy.
   */
-@js.native
-trait GroupElement extends HierarchyElement
+trait GroupElement
+  extends StObject
+     with HierarchyElement
 object GroupElement {
   
   @scala.inline

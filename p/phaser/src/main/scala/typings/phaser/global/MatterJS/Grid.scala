@@ -4,7 +4,6 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.IGridDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.Grid")
 @js.native
 class Grid ()
-  extends typings.phaser.MatterJS.Grid
+  extends StObject
+     with typings.phaser.MatterJS.Grid
 object Grid {
+  
+  @JSGlobal("MatterJS.Grid")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Clears the grid.
@@ -24,9 +28,8 @@ object Grid {
     * @param {grid} grid
     */
   /* static member */
-  @JSGlobal("MatterJS.Grid.clear")
-  @js.native
-  def clear(grid: typings.phaser.MatterJS.Grid): Unit = js.native
+  @scala.inline
+  def clear(grid: typings.phaser.MatterJS.Grid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(grid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new grid.
@@ -35,12 +38,10 @@ object Grid {
     * @return {grid} A new grid
     */
   /* static member */
-  @JSGlobal("MatterJS.Grid.create")
-  @js.native
-  def create(): typings.phaser.MatterJS.Grid = js.native
-  @JSGlobal("MatterJS.Grid.create")
-  @js.native
-  def create(options: IGridDefinition): typings.phaser.MatterJS.Grid = js.native
+  @scala.inline
+  def create(): typings.phaser.MatterJS.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Grid]
+  @scala.inline
+  def create(options: IGridDefinition): typings.phaser.MatterJS.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Grid]
   
   /**
     * Updates the grid.
@@ -51,12 +52,11 @@ object Grid {
     * @param {boolean} forceUpdate
     */
   /* static member */
-  @JSGlobal("MatterJS.Grid.update")
-  @js.native
+  @scala.inline
   def update(
     grid: typings.phaser.MatterJS.Grid,
     bodies: js.Array[BodyType],
     engine: typings.phaser.MatterJS.Engine,
     forceUpdate: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(grid.asInstanceOf[js.Any], bodies.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], forceUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

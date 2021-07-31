@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeAppliedSchemaResponse extends StObject {
   
   /**
     * The ARN of the directory that is returned as part of the response.
     */
-  var DirectoryArn: js.UndefOr[Arn] = js.native
+  var DirectoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the upgraded schema that is returned as part of the response.
     */
-  var UpgradedSchemaArn: js.UndefOr[Arn] = js.native
+  var UpgradedSchemaArn: js.UndefOr[Arn] = js.undefined
 }
 object UpgradeAppliedSchemaResponse {
   

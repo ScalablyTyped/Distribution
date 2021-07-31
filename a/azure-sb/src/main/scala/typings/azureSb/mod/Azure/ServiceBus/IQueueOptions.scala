@@ -2,19 +2,19 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IQueueOptions extends CreateOptions {
+trait IQueueOptions
+  extends StObject
+     with CreateOptions {
   
-  var AutoDeleteOnIdle: String = js.native
+  var AutoDeleteOnIdle: String
   
-  var DeadLetteringOnMessageExpiration: Boolean = js.native
+  var DeadLetteringOnMessageExpiration: Boolean
   
-  var LockDuration: String = js.native
+  var LockDuration: String
   
-  var RequiresSession: Boolean = js.native
+  var RequiresSession: Boolean
 }
 object IQueueOptions {
   

@@ -3,19 +3,17 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashAlgorithmProvider extends StObject {
   
-  var algorithmName: String = js.native
+  var algorithmName: String
   
-  def createHash(): CryptographicHash = js.native
+  def createHash(): CryptographicHash
   
-  def hashData(data: IBuffer): IBuffer = js.native
+  def hashData(data: IBuffer): IBuffer
   
-  var hashLength: Double = js.native
+  var hashLength: Double
 }
 object IHashAlgorithmProvider {
   

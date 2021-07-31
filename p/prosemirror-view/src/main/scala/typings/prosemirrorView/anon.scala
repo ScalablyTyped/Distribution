@@ -8,21 +8,19 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -49,12 +47,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dom extends StObject {
     
-    var dom: HTMLElement = js.native
+    var dom: HTMLElement
     
-    var text: String = js.native
+    var text: String
   }
   object Dom {
     
@@ -75,12 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Inside extends StObject {
     
-    var inside: Double = js.native
+    var inside: Double
     
-    var pos: Double = js.native
+    var pos: Double
   }
   object Inside {
     
@@ -101,12 +97,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -127,10 +122,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Mount extends StObject {
     
-    var mount: typings.std.Node = js.native
+    var mount: typings.std.Node
   }
   object Mount {
     
@@ -148,23 +142,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait Move[S /* <: Schema[_, _] */] extends StObject {
+  trait Move[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
-    var move: Boolean = js.native
+    var move: Boolean
     
-    var slice: Slice[S] = js.native
+    var slice: Slice[S]
   }
   object Move {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](move: Boolean, slice: Slice[S]): Move[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](move: Boolean, slice: Slice[S]): Move[S] = {
       val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any])
       __obj.asInstanceOf[Move[S]]
     }
     
     @scala.inline
-    implicit class MoveMutableBuilder[Self <: Move[_], S /* <: Schema[_, _] */] (val x: Self with Move[S]) extends AnyVal {
+    implicit class MoveMutableBuilder[Self <: Move[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Move[S]) extends AnyVal {
       
       @scala.inline
       def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
@@ -174,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var node: typings.std.Node = js.native
+    var node: typings.std.Node
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Node {
     
@@ -200,10 +192,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OnRemove extends StObject {
     
-    var onRemove: js.UndefOr[(js.Function1[/* decorationSpec */ StringDictionary[js.Any], Unit]) | Null] = js.native
+    var onRemove: js.UndefOr[(js.Function1[/* decorationSpec */ StringDictionary[js.Any], Unit]) | Null] = js.undefined
   }
   object OnRemove {
     
@@ -227,16 +218,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Right extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Right {
     
@@ -263,19 +253,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: Element = js.native
+    var target: Element
     
-    var `type`: selection = js.native
+    var `type`: selection
   }
   object Target {
     
     @scala.inline
-    def apply(target: Element, `type`: selection): Target = {
+    def apply(target: Element): Target = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("selection")
       __obj.asInstanceOf[Target]
     }
     

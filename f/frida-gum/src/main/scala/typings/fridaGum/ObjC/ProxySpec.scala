@@ -3,16 +3,14 @@ package typings.fridaGum.ObjC
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxySpec[D /* <: ProxyData */, T, S] extends StObject {
   
   /**
     * Callbacks for getting notified about events.
     */
-  var events: js.UndefOr[ProxyEventCallbacks[D, T, S]] = js.native
+  var events: js.UndefOr[ProxyEventCallbacks[D, T, S]] = js.undefined
   
   /**
     * Methods to implement.
@@ -21,7 +19,7 @@ trait ProxySpec[D /* <: ProxyData */, T, S] extends StObject {
     StringDictionary[
       (UserMethodImplementation[D, T, S]) | (MethodSpec[UserMethodImplementation[D, T, S]])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Name of the proxy class.
@@ -29,12 +27,12 @@ trait ProxySpec[D /* <: ProxyData */, T, S] extends StObject {
     * Omit this if you don’t care about the globally visible name and would like the runtime to auto-generate one
     * for you.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Protocols this proxy class conforms to.
     */
-  var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+  var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
 }
 object ProxySpec {
   
@@ -45,7 +43,7 @@ object ProxySpec {
   }
   
   @scala.inline
-  implicit class ProxySpecMutableBuilder[Self <: ProxySpec[_, _, _], D /* <: ProxyData */, T, S] (val x: Self with (ProxySpec[D, T, S])) extends AnyVal {
+  implicit class ProxySpecMutableBuilder[Self <: ProxySpec[?, ?, ?], D /* <: ProxyData */, T, S] (val x: Self & (ProxySpec[D, T, S])) extends AnyVal {
     
     @scala.inline
     def setEvents(value: ProxyEventCallbacks[D, T, S]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])

@@ -2,15 +2,15 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IArrow extends IFormat {
+trait IArrow
+  extends StObject
+     with IFormat {
   
-  var length: Double = js.native
+  var length: Double
   
-  var underline: Boolean = js.native
+  var underline: Boolean
 }
 object IArrow {
   

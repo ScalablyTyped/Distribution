@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPullRequestApprovalStatesOutput extends StObject {
   
   /**
     * Information about users who have approved the pull request.
     */
-  var approvals: js.UndefOr[ApprovalList] = js.native
+  var approvals: js.UndefOr[ApprovalList] = js.undefined
 }
 object GetPullRequestApprovalStatesOutput {
   

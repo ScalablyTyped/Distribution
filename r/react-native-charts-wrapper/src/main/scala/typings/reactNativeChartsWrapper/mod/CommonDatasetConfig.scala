@@ -2,29 +2,27 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonDatasetConfig extends StObject {
   
-  var axisDependency: js.UndefOr[AxisDependency] = js.native
+  var axisDependency: js.UndefOr[AxisDependency] = js.undefined
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var colors: js.UndefOr[js.Array[Color]] = js.native
+  var colors: js.UndefOr[js.Array[Color]] = js.undefined
   
-  var drawValues: js.UndefOr[Boolean] = js.native
+  var drawValues: js.UndefOr[Boolean] = js.undefined
   
-  var highlightEnabled: js.UndefOr[Boolean] = js.native
+  var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var valueFormatter: js.UndefOr[ValueFormatter] = js.native
+  var valueFormatter: js.UndefOr[ValueFormatter] = js.undefined
   
-  var valueTextColor: js.UndefOr[Color] = js.native
+  var valueTextColor: js.UndefOr[Color] = js.undefined
   
-  var valueTextSize: js.UndefOr[Double] = js.native
+  var valueTextSize: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object CommonDatasetConfig {
   

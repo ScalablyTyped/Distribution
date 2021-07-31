@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactSketchapp.propsMod.PathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polylineMod {
@@ -16,10 +15,11 @@ object polylineMod {
   
   type Polyline = Component[PolylineProps, js.Object, js.Any]
   
-  @js.native
-  trait PolylineProps extends PathProps {
+  trait PolylineProps
+    extends StObject
+       with PathProps {
     
-    var points: String = js.native
+    var points: String
   }
   object PolylineProps {
     

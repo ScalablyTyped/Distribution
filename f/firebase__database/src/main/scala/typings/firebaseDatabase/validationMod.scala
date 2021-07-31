@@ -6,10 +6,13 @@ import typings.firebaseDatabase.pathMod.ValidationPath
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationMod {
+  
+  @JSImport("@firebase/database/dist/src/core/util/validation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/database/dist/src/core/util/validation", "INVALID_KEY_REGEX_")
   @js.native
@@ -23,66 +26,50 @@ object validationMod {
   @js.native
   val MAX_LEAF_SIZE_ : Double = js.native
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "isValidKey")
-  @js.native
-  def isValidKey(key: js.Any): Boolean = js.native
+  @scala.inline
+  def isValidKey(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "isValidPathString")
-  @js.native
-  def isValidPathString(pathString: String): Boolean = js.native
+  @scala.inline
+  def isValidPathString(pathString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "isValidPriority")
-  @js.native
-  def isValidPriority(priority: js.Any): Boolean = js.native
+  @scala.inline
+  def isValidPriority(priority: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPriority")(priority.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "isValidRootPathString")
-  @js.native
-  def isValidRootPathString(pathString: String): Boolean = js.native
+  @scala.inline
+  def isValidRootPathString(pathString: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidRootPathString")(pathString.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateBoolean")
-  @js.native
-  def validateBoolean(fnName: String, argumentNumber: Double, bool: js.Any, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateBoolean(fnName: String, argumentNumber: Double, bool: js.Any, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateBoolean")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], bool.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateCredential")
-  @js.native
-  def validateCredential(fnName: String, argumentNumber: Double, cred: js.Any, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateCredential(fnName: String, argumentNumber: Double, cred: js.Any, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCredential")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], cred.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateEventType")
-  @js.native
-  def validateEventType(fnName: String, argumentNumber: Double, eventType: String, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateEventType(fnName: String, argumentNumber: Double, eventType: String, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateEventType")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateFirebaseData")
-  @js.native
-  def validateFirebaseData(errorPrefix: String, data: js.Any, path_ : Path): Unit = js.native
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateFirebaseData")
-  @js.native
-  def validateFirebaseData(errorPrefix: String, data: js.Any, path_ : ValidationPath): Unit = js.native
+  @scala.inline
+  def validateFirebaseData(errorPrefix: String, data: js.Any, path_ : Path): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFirebaseData")(errorPrefix.asInstanceOf[js.Any], data.asInstanceOf[js.Any], path_.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validateFirebaseData(errorPrefix: String, data: js.Any, path_ : ValidationPath): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFirebaseData")(errorPrefix.asInstanceOf[js.Any], data.asInstanceOf[js.Any], path_.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateFirebaseDataArg")
-  @js.native
-  def validateFirebaseDataArg(fnName: String, argumentNumber: Double, data: js.Any, path: Path, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateFirebaseDataArg(fnName: String, argumentNumber: Double, data: js.Any, path: Path, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFirebaseDataArg")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], data.asInstanceOf[js.Any], path.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateFirebaseMergeDataArg")
-  @js.native
-  def validateFirebaseMergeDataArg(fnName: String, argumentNumber: Double, data: js.Any, path: Path, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateFirebaseMergeDataArg(fnName: String, argumentNumber: Double, data: js.Any, path: Path, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFirebaseMergeDataArg")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], data.asInstanceOf[js.Any], path.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateFirebaseMergePaths")
-  @js.native
-  def validateFirebaseMergePaths(errorPrefix: String, mergePaths: js.Array[Path]): Unit = js.native
+  @scala.inline
+  def validateFirebaseMergePaths(errorPrefix: String, mergePaths: js.Array[Path]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateFirebaseMergePaths")(errorPrefix.asInstanceOf[js.Any], mergePaths.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateKey")
-  @js.native
-  def validateKey(fnName: String, argumentNumber: Double, key: String, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateKey(fnName: String, argumentNumber: Double, key: String, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateKey")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], key.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateObject")
-  @js.native
-  def validateObject(fnName: String, argumentNumber: Double, obj: js.Any, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateObject(fnName: String, argumentNumber: Double, obj: js.Any, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateObject")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateObjectContainsKey")
-  @js.native
-  def validateObjectContainsKey(fnName: String, argumentNumber: Double, obj: js.Any, key: String, optional: Boolean): Unit = js.native
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateObjectContainsKey")
-  @js.native
+  @scala.inline
+  def validateObjectContainsKey(fnName: String, argumentNumber: Double, obj: js.Any, key: String, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateObjectContainsKey")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def validateObjectContainsKey(
     fnName: String,
     argumentNumber: Double,
@@ -90,29 +77,23 @@ object validationMod {
     key: String,
     optional: Boolean,
     optType: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateObjectContainsKey")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], optional.asInstanceOf[js.Any], optType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validatePathString")
-  @js.native
-  def validatePathString(fnName: String, argumentNumber: Double, pathString: String, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validatePathString(fnName: String, argumentNumber: Double, pathString: String, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePathString")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], pathString.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validatePriority")
-  @js.native
-  def validatePriority(fnName: String, argumentNumber: Double, priority: js.Any, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validatePriority(fnName: String, argumentNumber: Double, priority: js.Any, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validatePriority")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateRootPathString")
-  @js.native
-  def validateRootPathString(fnName: String, argumentNumber: Double, pathString: String, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateRootPathString(fnName: String, argumentNumber: Double, pathString: String, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRootPathString")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], pathString.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateString")
-  @js.native
-  def validateString(fnName: String, argumentNumber: Double, string: js.Any, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateString(fnName: String, argumentNumber: Double, string: js.Any, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateString")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], string.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateUrl")
-  @js.native
-  def validateUrl(fnName: String, argumentNumber: Double, parsedUrl: RepoInfo): Unit = js.native
+  @scala.inline
+  def validateUrl(fnName: String, argumentNumber: Double, parsedUrl: RepoInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateUrl")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], parsedUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/core/util/validation", "validateWritablePath")
-  @js.native
-  def validateWritablePath(fnName: String, path: Path): Unit = js.native
+  @scala.inline
+  def validateWritablePath(fnName: String, path: Path): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateWritablePath")(fnName.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

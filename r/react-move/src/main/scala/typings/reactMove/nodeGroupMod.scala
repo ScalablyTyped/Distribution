@@ -6,7 +6,6 @@ import typings.reactMove.mod.GetInterpolator
 import typings.reactMove.mod.HashMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeGroupMod {
@@ -34,31 +33,30 @@ object nodeGroupMod {
     def this(props: INodeGroupProps, context: js.Any) = this()
   }
   
-  @js.native
   trait INodeGroupProps extends StObject {
     
-    def children(nodes: js.Array[_]): ReactElement = js.native
+    def children(nodes: js.Array[js.Any]): ReactElement
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var enter: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, HashMap | js.Array[HashMap]]] = js.native
+    var enter: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, HashMap | js.Array[HashMap]]] = js.undefined
     
-    var interpolation: js.UndefOr[GetInterpolator] = js.native
+    var interpolation: js.UndefOr[GetInterpolator] = js.undefined
     
-    def keyAccessor(data: js.Any, index: Double): String | Double = js.native
+    def keyAccessor(data: js.Any, index: Double): String | Double
     
-    var leave: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, HashMap | js.Array[HashMap]]] = js.native
+    var leave: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, HashMap | js.Array[HashMap]]] = js.undefined
     
-    def start(data: js.Any, index: Double): HashMap = js.native
+    def start(data: js.Any, index: Double): HashMap
     
-    var update: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, HashMap | js.Array[HashMap]]] = js.native
+    var update: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, HashMap | js.Array[HashMap]]] = js.undefined
   }
   object INodeGroupProps {
     
     @scala.inline
     def apply(
-      children: js.Array[_] => ReactElement,
-      data: js.Array[_],
+      children: js.Array[js.Any] => ReactElement,
+      data: js.Array[js.Any],
       keyAccessor: (js.Any, Double) => String | Double,
       start: (js.Any, Double) => HashMap
     ): INodeGroupProps = {
@@ -70,10 +68,10 @@ object nodeGroupMod {
     implicit class INodeGroupPropsMutableBuilder[Self <: INodeGroupProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: js.Array[_] => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      def setChildren(value: js.Array[js.Any] => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

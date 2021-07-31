@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait AddFieldOptions extends StObject
 object AddFieldOptions extends StObject {
   
   @js.native
-  sealed trait addFieldCheckDisplayName extends AddFieldOptions
+  sealed trait addFieldCheckDisplayName
+    extends StObject
+       with AddFieldOptions
   
   @js.native
-  sealed trait addFieldInternalNameHint extends AddFieldOptions
+  sealed trait addFieldInternalNameHint
+    extends StObject
+       with AddFieldOptions
   
   @js.native
-  sealed trait addFieldToDefaultView extends AddFieldOptions
+  sealed trait addFieldToDefaultView
+    extends StObject
+       with AddFieldOptions
   
   @js.native
-  sealed trait addToAllContentTypes extends AddFieldOptions
+  sealed trait addToAllContentTypes
+    extends StObject
+       with AddFieldOptions
   
   @js.native
-  sealed trait addToDefaultContentType extends AddFieldOptions
+  sealed trait addToDefaultContentType
+    extends StObject
+       with AddFieldOptions
   
   @js.native
-  sealed trait addToNoContentType extends AddFieldOptions
+  sealed trait addToNoContentType
+    extends StObject
+       with AddFieldOptions
   
   @js.native
-  sealed trait defaultValue extends AddFieldOptions
+  sealed trait defaultValue
+    extends StObject
+       with AddFieldOptions
 }

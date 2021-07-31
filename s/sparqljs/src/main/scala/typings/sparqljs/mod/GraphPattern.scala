@@ -3,26 +3,25 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphPattern
-  extends BlockPattern
+  extends StObject
+     with BlockPattern
      with _Expression {
   
-  var name: IriTerm = js.native
+  var name: IriTerm
   
-  var patterns: js.Array[Pattern] = js.native
+  var patterns: js.Array[Pattern]
   
-  var `type`: graph = js.native
+  var `type`: graph
 }
 object GraphPattern {
   
   @scala.inline
-  def apply(name: IriTerm, patterns: js.Array[Pattern], `type`: graph): GraphPattern = {
+  def apply(name: IriTerm, patterns: js.Array[Pattern]): GraphPattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphPattern]
   }
   

@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,45 +10,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Sequelize.sync
   */
-@js.native
 trait SyncOptions extends StObject {
   
   /**
     * Alters tables to fit models. Not recommended for production use. Deletes data in columns
     * that were removed or had their type changed in the model.
     */
-  var alter: js.UndefOr[Boolean] = js.native
+  var alter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If force is true, each DAO will do DROP TABLE IF EXISTS ..., before it tries to create its own table
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If hooks is true then beforeSync, afterSync, beforBulkSync, afterBulkSync hooks will be called
     */
-  var hooks: js.UndefOr[Boolean] = js.native
+  var hooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A function that logs sql queries, or false for no logging
     */
-  var logging: js.UndefOr[js.Function | Boolean] = js.native
+  var logging: js.UndefOr[js.Function | Boolean] = js.undefined
   
   /**
     * Match a regex against the database name before syncing, a safety check for cases where force: true is
     * used in tests but not live code
     */
-  var `match`: js.UndefOr[RegExp] = js.native
+  var `match`: js.UndefOr[RegExp] = js.undefined
   
   /**
     * The schema that the tables should be created in. This can be overriden for each table in sequelize.define
     */
-  var schema: js.UndefOr[String] = js.native
+  var schema: js.UndefOr[String] = js.undefined
   
   /**
     * An optional parameter to specify the schema search_path (Postgres only)
     */
-  var searchPath: js.UndefOr[String] = js.native
+  var searchPath: js.UndefOr[String] = js.undefined
 }
 object SyncOptions {
   

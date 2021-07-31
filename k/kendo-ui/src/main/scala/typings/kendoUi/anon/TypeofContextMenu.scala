@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ContextMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofContextMenu extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ContextMenu = js.native
+  def extend(proto: js.Object): ContextMenu
   
   /* static member */
-  var fn: ContextMenu = js.native
+  var fn: ContextMenu
 }
 object TypeofContextMenu {
   

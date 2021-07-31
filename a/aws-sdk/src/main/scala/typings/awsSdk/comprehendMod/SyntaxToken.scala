@@ -2,36 +2,34 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyntaxToken extends StObject {
   
   /**
     * The zero-based offset from the beginning of the source text to the first character in the word.
     */
-  var BeginOffset: js.UndefOr[Integer] = js.native
+  var BeginOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     * The zero-based offset from the beginning of the source text to the last character in the word.
     */
-  var EndOffset: js.UndefOr[Integer] = js.native
+  var EndOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     * Provides the part of speech label and the confidence level that Amazon Comprehend has that the part of speech was correctly identified. For more information, see how-syntax.
     */
-  var PartOfSpeech: js.UndefOr[PartOfSpeechTag] = js.native
+  var PartOfSpeech: js.UndefOr[PartOfSpeechTag] = js.undefined
   
   /**
     * The word that was recognized in the source text.
     */
-  var Text: js.UndefOr[String] = js.native
+  var Text: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for a token.
     */
-  var TokenId: js.UndefOr[Integer] = js.native
+  var TokenId: js.UndefOr[Integer] = js.undefined
 }
 object SyntaxToken {
   

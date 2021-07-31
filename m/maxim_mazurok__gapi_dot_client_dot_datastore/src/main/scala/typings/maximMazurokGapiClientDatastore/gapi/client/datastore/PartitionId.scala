@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionId extends StObject {
   
   /** If not empty, the ID of the namespace to which the entities belong. */
-  var namespaceId: js.UndefOr[String] = js.native
+  var namespaceId: js.UndefOr[String] = js.undefined
   
   /** The ID of the project to which the entities belong. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object PartitionId {
   

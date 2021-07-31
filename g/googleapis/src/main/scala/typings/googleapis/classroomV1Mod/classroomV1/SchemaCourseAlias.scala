@@ -2,7 +2,6 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * retrying a request will return `ALREADY_EXISTS` if a previous one has
   * succeeded.
   */
-@js.native
 trait SchemaCourseAlias extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait SchemaCourseAlias extends StObject {
     * `d:math_101` * `p:&lt;name&gt;` indicates a project-scoped alias.
     * Example: `p:abc123`  This field has a maximum length of 256 characters.
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
 }
 object SchemaCourseAlias {
   

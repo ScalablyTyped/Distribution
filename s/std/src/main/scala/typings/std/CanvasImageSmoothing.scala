@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasImageSmoothing extends StObject {
   
-  var imageSmoothingEnabled: scala.Boolean = js.native
+  var imageSmoothingEnabled: scala.Boolean
   
-  var imageSmoothingQuality: ImageSmoothingQuality = js.native
+  var imageSmoothingQuality: ImageSmoothingQuality
 }
 object CanvasImageSmoothing {
   

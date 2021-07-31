@@ -3,15 +3,13 @@ package typings.stripeV3.anon
 import typings.stripeV3.stripe.paymentMethod.PaymentMethodDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Charge extends StObject {
   
-  var charge: js.UndefOr[String | Null] = js.native
+  var charge: js.UndefOr[String | Null] = js.undefined
   
-  var payment_method_details: js.UndefOr[PaymentMethodDetails | Null] = js.native
+  var payment_method_details: js.UndefOr[PaymentMethodDetails | Null] = js.undefined
 }
 object Charge {
   

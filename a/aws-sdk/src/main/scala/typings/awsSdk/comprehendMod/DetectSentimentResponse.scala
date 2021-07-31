@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectSentimentResponse extends StObject {
   
   /**
     * The inferred sentiment that Amazon Comprehend has the highest level of confidence in.
     */
-  var Sentiment: js.UndefOr[SentimentType] = js.native
+  var Sentiment: js.UndefOr[SentimentType] = js.undefined
   
   /**
     * An object that lists the sentiments, and their corresponding confidence levels.
     */
-  var SentimentScore: js.UndefOr[typings.awsSdk.comprehendMod.SentimentScore] = js.native
+  var SentimentScore: js.UndefOr[typings.awsSdk.comprehendMod.SentimentScore] = js.undefined
 }
 object DetectSentimentResponse {
   

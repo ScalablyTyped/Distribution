@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hostname extends StObject {
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var service: String = js.native
+  var service: String
 }
 object Hostname {
   

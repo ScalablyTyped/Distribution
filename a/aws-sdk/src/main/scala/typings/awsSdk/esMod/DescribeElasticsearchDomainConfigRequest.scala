@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeElasticsearchDomainConfigRequest extends StObject {
   
   /**
     * The Elasticsearch domain that you want to get information about.
     */
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
 }
 object DescribeElasticsearchDomainConfigRequest {
   

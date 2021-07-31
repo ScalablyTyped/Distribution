@@ -5,25 +5,25 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait Container extends Widget {
+trait Container
+  extends StObject
+     with Widget {
   
-  var child: Widget = js.native
+  var child: Widget
   
-  var childName: String = js.native
+  var childName: String
   
-  var containerNode: HTMLElement = js.native
+  var containerNode: HTMLElement
   
   // readonly
-  var horizontalChildExpansion: Boolean = js.native
+  var horizontalChildExpansion: Boolean
   
-  def removeChild(widget: Widget): Unit = js.native
+  def removeChild(widget: Widget): Unit
   
-  var verticalChildExpansion: Boolean = js.native
+  var verticalChildExpansion: Boolean
 }
 object Container {
   

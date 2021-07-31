@@ -2,15 +2,13 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmationResult extends StObject {
   
-  def confirm(verificationCode: String): js.Promise[UserCredential] = js.native
+  def confirm(verificationCode: String): js.Promise[UserCredential]
   
-  var verificationId: String = js.native
+  var verificationId: String
 }
 object ConfirmationResult {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,22 +37,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  1. The listener is allowed to access the new {@link ContentResultSet} . The new one is first assigned in the WELCOME-event and than the ResultSets
   * are always swapped. 2. The listener is not allowed to access the old {@link ContentResultSet} .
   */
-@js.native
-trait XDynamicResultSet extends XComponent {
+trait XDynamicResultSet
+  extends StObject
+     with XComponent {
   
   /**
     * Using this method you can get information, whether the offered ContentResultSets are sorted or filtered etc correctly as demanded during the creation
     * of the {@link XDynamicResultSet} .
     * @returns zero or more constants of the {@link ContentResultSetCapability} constants group.
     */
-  val Capabilities: Double = js.native
+  val Capabilities: Double
   
   /**
     * Call this, if you don't care about any changes.
     * @returns an {@link com.sun.star.sdbc.XResultSet} that is implemented as {@link ContentResultSet} . Its content will never change.
     * @throws ListenerAlreadySetException if someone already has registered as listener via {@link XDynamicResultSet.setListener()} or if someone has establish
     */
-  val StaticResultSet: XResultSet = js.native
+  val StaticResultSet: XResultSet
   
   /**
     * Connects this to a {@link CachedDynamicResultSet} for optimized remote data transport.
@@ -66,21 +66,21 @@ trait XDynamicResultSet extends XComponent {
     * @throws AlreadyInitializedException if **Cache** was already initialized with another source.
     * @throws ServiceNotFoundException
     */
-  def connectToCache(Cache: XDynamicResultSet): Unit = js.native
+  def connectToCache(Cache: XDynamicResultSet): Unit
   
   /**
     * Using this method you can get information, whether the offered ContentResultSets are sorted or filtered etc correctly as demanded during the creation
     * of the {@link XDynamicResultSet} .
     * @returns zero or more constants of the {@link ContentResultSetCapability} constants group.
     */
-  def getCapabilities(): Double = js.native
+  def getCapabilities(): Double
   
   /**
     * Call this, if you don't care about any changes.
     * @returns an {@link com.sun.star.sdbc.XResultSet} that is implemented as {@link ContentResultSet} . Its content will never change.
     * @throws ListenerAlreadySetException if someone already has registered as listener via {@link XDynamicResultSet.setListener()} or if someone has establish
     */
-  def getStaticResultSet(): XResultSet = js.native
+  def getStaticResultSet(): XResultSet
   
   /**
     * Call this, if you want to get notifications about changes.
@@ -90,7 +90,7 @@ trait XDynamicResultSet extends XComponent {
     * @param Listener a listener for result set notifications
     * @throws ListenerAlreadySetException if this method is called more than once during the life of the implementation object or if this method is called if s
     */
-  def setListener(Listener: XDynamicResultSetListener): Unit = js.native
+  def setListener(Listener: XDynamicResultSetListener): Unit
 }
 object XDynamicResultSet {
   

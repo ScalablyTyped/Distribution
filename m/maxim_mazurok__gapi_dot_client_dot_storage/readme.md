@@ -10,9 +10,9 @@ TypeScript typings for Cloud Storage JSON API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.storage |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 17 |
 | # dependents       | 1 |
-| # downloads        | 115 |
+| # downloads        | 2253 |
 | # stars            | 0 |
 
 ## Links

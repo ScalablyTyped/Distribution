@@ -3,7 +3,6 @@ package typings.bmapgl
 import typings.bmapgl.BMapGL.DrawingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bmapglStrings {
@@ -39,7 +38,9 @@ object bmapglStrings {
   def cesium: cesium = "cesium".asInstanceOf[cesium]
   
   @js.native
-  sealed trait circle extends DrawingType
+  sealed trait circle
+    extends StObject
+       with DrawingType
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
@@ -54,7 +55,9 @@ object bmapglStrings {
   def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
-  sealed trait marker extends DrawingType
+  sealed trait marker
+    extends StObject
+       with DrawingType
   @scala.inline
   def marker: marker = "marker".asInstanceOf[marker]
   
@@ -64,17 +67,23 @@ object bmapglStrings {
   def metric: metric = "metric".asInstanceOf[metric]
   
   @js.native
-  sealed trait polygon_ extends DrawingType
+  sealed trait polygon_
+    extends StObject
+       with DrawingType
   @scala.inline
   def polygon_ : polygon_ = "polygon".asInstanceOf[polygon_]
   
   @js.native
-  sealed trait polyline extends DrawingType
+  sealed trait polyline
+    extends StObject
+       with DrawingType
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait rectangle extends DrawingType
+  sealed trait rectangle
+    extends StObject
+       with DrawingType
   @scala.inline
   def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   

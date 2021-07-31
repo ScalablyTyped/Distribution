@@ -7,7 +7,6 @@ import typings.officeJs.officeJsStrings.TopItems
 import typings.officeJs.officeJsStrings.TopPercent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalTopBottomRule extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ConditionalTopBottomRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var rank: Double = js.native
+  var rank: Double
   
   /**
     *
@@ -33,7 +31,7 @@ trait ConditionalTopBottomRule extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var `type`: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent = js.native
+  var `type`: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent
 }
 object ConditionalTopBottomRule {
   

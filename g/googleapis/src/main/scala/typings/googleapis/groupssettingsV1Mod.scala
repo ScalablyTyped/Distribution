@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupssettingsV1Mod {
@@ -67,7 +66,7 @@ object groupssettingsV1Mod {
         */
       def get(): GaxiosPromise[SchemaGroups] = js.native
       def get(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
       def get(params: ParamsResourceGroupsGet): GaxiosPromise[SchemaGroups] = js.native
       def get(params: ParamsResourceGroupsGet, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
       def get(
@@ -97,7 +96,7 @@ object groupssettingsV1Mod {
         */
       def patch(): GaxiosPromise[SchemaGroups] = js.native
       def patch(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
-      def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
+      def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
       def patch(params: ParamsResourceGroupsPatch): GaxiosPromise[SchemaGroups] = js.native
       def patch(params: ParamsResourceGroupsPatch, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
       def patch(
@@ -127,7 +126,7 @@ object groupssettingsV1Mod {
         */
       def update(): GaxiosPromise[SchemaGroups] = js.native
       def update(callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
-      def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
+      def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroups] = js.native
       def update(params: ParamsResourceGroupsUpdate): GaxiosPromise[SchemaGroups] = js.native
       def update(params: ParamsResourceGroupsUpdate, callback: BodyResponseCallback[SchemaGroups]): Unit = js.native
       def update(
@@ -143,16 +142,17 @@ object groupssettingsV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -164,18 +164,19 @@ object groupssettingsV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceGroupsGet extends StandardParameters {
+    trait ParamsResourceGroupsGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The resource ID
         */
-      var groupUniqueId: js.UndefOr[String] = js.native
+      var groupUniqueId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceGroupsGet {
       
@@ -202,23 +203,24 @@ object groupssettingsV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceGroupsPatch extends StandardParameters {
+    trait ParamsResourceGroupsPatch
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The resource ID
         */
-      var groupUniqueId: js.UndefOr[String] = js.native
+      var groupUniqueId: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaGroups] = js.native
+      var requestBody: js.UndefOr[SchemaGroups] = js.undefined
     }
     object ParamsResourceGroupsPatch {
       
@@ -251,23 +253,24 @@ object groupssettingsV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceGroupsUpdate extends StandardParameters {
+    trait ParamsResourceGroupsUpdate
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The resource ID
         */
-      var groupUniqueId: js.UndefOr[String] = js.native
+      var groupUniqueId: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaGroups] = js.native
+      var requestBody: js.UndefOr[SchemaGroups] = js.undefined
     }
     object ParamsResourceGroupsUpdate {
       
@@ -303,365 +306,364 @@ object groupssettingsV1Mod {
     /**
       * JSON template for Group resource
       */
-    @js.native
     trait SchemaGroups extends StObject {
       
       /**
         * Are external members allowed to join the group.
         */
-      var allowExternalMembers: js.UndefOr[String] = js.native
+      var allowExternalMembers: js.UndefOr[String] = js.undefined
       
       /**
         * Is google allowed to contact admins.
         */
-      var allowGoogleCommunication: js.UndefOr[String] = js.native
+      var allowGoogleCommunication: js.UndefOr[String] = js.undefined
       
       /**
         * If posting from web is allowed.
         */
-      var allowWebPosting: js.UndefOr[String] = js.native
+      var allowWebPosting: js.UndefOr[String] = js.undefined
       
       /**
         * If the group is archive only
         */
-      var archiveOnly: js.UndefOr[String] = js.native
+      var archiveOnly: js.UndefOr[String] = js.undefined
       
       /**
         * Custom footer text.
         */
-      var customFooterText: js.UndefOr[String] = js.native
+      var customFooterText: js.UndefOr[String] = js.undefined
       
       /**
         * Default email to which reply to any message should go.
         */
-      var customReplyTo: js.UndefOr[String] = js.native
+      var customReplyTo: js.UndefOr[String] = js.undefined
       
       /**
         * If any of the settings that will be merged have custom roles which is
         * anything other than owners, managers, or group scopes.
         */
-      var customRolesEnabledForSettingsToBeMerged: js.UndefOr[String] = js.native
+      var customRolesEnabledForSettingsToBeMerged: js.UndefOr[String] = js.undefined
       
       /**
         * Default message deny notification message
         */
-      var defaultMessageDenyNotificationText: js.UndefOr[String] = js.native
+      var defaultMessageDenyNotificationText: js.UndefOr[String] = js.undefined
       
       /**
         * Description of the group
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * Email id of the group
         */
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
       /**
         * If a primary Collab Inbox feature is enabled.
         */
-      var enableCollaborativeInbox: js.UndefOr[String] = js.native
+      var enableCollaborativeInbox: js.UndefOr[String] = js.undefined
       
       /**
         * If favorite replies should be displayed above other replies.
         */
-      var favoriteRepliesOnTop: js.UndefOr[String] = js.native
+      var favoriteRepliesOnTop: js.UndefOr[String] = js.undefined
       
       /**
         * Whether to include custom footer.
         */
-      var includeCustomFooter: js.UndefOr[String] = js.native
+      var includeCustomFooter: js.UndefOr[String] = js.undefined
       
       /**
         * If this groups should be included in global address list or not.
         */
-      var includeInGlobalAddressList: js.UndefOr[String] = js.native
+      var includeInGlobalAddressList: js.UndefOr[String] = js.undefined
       
       /**
         * If the contents of the group are archived.
         */
-      var isArchived: js.UndefOr[String] = js.native
+      var isArchived: js.UndefOr[String] = js.undefined
       
       /**
         * The type of the resource.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Maximum message size allowed.
         */
-      var maxMessageBytes: js.UndefOr[Double] = js.native
+      var maxMessageBytes: js.UndefOr[Double] = js.undefined
       
       /**
         * Can members post using the group email address.
         */
-      var membersCanPostAsTheGroup: js.UndefOr[String] = js.native
+      var membersCanPostAsTheGroup: js.UndefOr[String] = js.undefined
       
       /**
         * Default message display font. Possible values are: DEFAULT_FONT
         * FIXED_WIDTH_FONT
         */
-      var messageDisplayFont: js.UndefOr[String] = js.native
+      var messageDisplayFont: js.UndefOr[String] = js.undefined
       
       /**
         * Moderation level for messages. Possible values are: MODERATE_ALL_MESSAGES
         * MODERATE_NON_MEMBERS MODERATE_NEW_MEMBERS MODERATE_NONE
         */
-      var messageModerationLevel: js.UndefOr[String] = js.native
+      var messageModerationLevel: js.UndefOr[String] = js.undefined
       
       /**
         * Name of the Group
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Primary language for the group.
         */
-      var primaryLanguage: js.UndefOr[String] = js.native
+      var primaryLanguage: js.UndefOr[String] = js.undefined
       
       /**
         * Whome should the default reply to a message go to. Possible values are:
         * REPLY_TO_CUSTOM REPLY_TO_SENDER REPLY_TO_LIST REPLY_TO_OWNER
         * REPLY_TO_IGNORE REPLY_TO_MANAGERS
         */
-      var replyTo: js.UndefOr[String] = js.native
+      var replyTo: js.UndefOr[String] = js.undefined
       
       /**
         * Should the member be notified if his message is denied by owner.
         */
-      var sendMessageDenyNotification: js.UndefOr[String] = js.native
+      var sendMessageDenyNotification: js.UndefOr[String] = js.undefined
       
       /**
         * Is the group listed in groups directory
         */
-      var showInGroupDirectory: js.UndefOr[String] = js.native
+      var showInGroupDirectory: js.UndefOr[String] = js.undefined
       
       /**
         * Moderation level for messages detected as spam. Possible values are:
         * ALLOW MODERATE SILENTLY_MODERATE REJECT
         */
-      var spamModerationLevel: js.UndefOr[String] = js.native
+      var spamModerationLevel: js.UndefOr[String] = js.undefined
       
       /**
         * Permissions to add members. Possible values are: ALL_MANAGERS_CAN_ADD
         * ALL_OWNERS_CAN_ADD ALL_MEMBERS_CAN_ADD NONE_CAN_ADD
         */
-      var whoCanAdd: js.UndefOr[String] = js.native
+      var whoCanAdd: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to add references to a topic. Possible values are: NONE
         * OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanAddReferences: js.UndefOr[String] = js.native
+      var whoCanAddReferences: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to approve members. Possible values are:
         * ALL_OWNERS_CAN_APPROVE ALL_MANAGERS_CAN_APPROVE ALL_MEMBERS_CAN_APPROVE
         * NONE_CAN_APPROVE
         */
-      var whoCanApproveMembers: js.UndefOr[String] = js.native
+      var whoCanApproveMembers: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to approve pending messages in the moderation queue. Possible
         * values are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanApproveMessages: js.UndefOr[String] = js.native
+      var whoCanApproveMessages: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to assign topics in a forum to another user. Possible values
         * are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanAssignTopics: js.UndefOr[String] = js.native
+      var whoCanAssignTopics: js.UndefOr[String] = js.undefined
       
       /**
         * Permission for content assistants. Possible values are: Possible values
         * are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanAssistContent: js.UndefOr[String] = js.native
+      var whoCanAssistContent: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to ban users. Possible values are: NONE OWNERS_ONLY
         * OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanBanUsers: js.UndefOr[String] = js.native
+      var whoCanBanUsers: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to contact owner of the group via web UI. Possible values are:
         * ANYONE_CAN_CONTACT ALL_IN_DOMAIN_CAN_CONTACT ALL_MEMBERS_CAN_CONTACT
         * ALL_MANAGERS_CAN_CONTACT
         */
-      var whoCanContactOwner: js.UndefOr[String] = js.native
+      var whoCanContactOwner: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to delete replies to topics. Possible values are: NONE
         * OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanDeleteAnyPost: js.UndefOr[String] = js.native
+      var whoCanDeleteAnyPost: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to delete topics. Possible values are: NONE OWNERS_ONLY
         * OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanDeleteTopics: js.UndefOr[String] = js.native
+      var whoCanDeleteTopics: js.UndefOr[String] = js.undefined
       
       /**
         * Permission for who can discover the group. Possible values are:
         * ALL_MEMBERS_CAN_DISCOVER ALL_IN_DOMAIN_CAN_DISCOVER ANYONE_CAN_DISCOVER
         */
-      var whoCanDiscoverGroup: js.UndefOr[String] = js.native
+      var whoCanDiscoverGroup: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to enter free form tags for topics in a forum. Possible values
         * are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanEnterFreeFormTags: js.UndefOr[String] = js.native
+      var whoCanEnterFreeFormTags: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to hide posts by reporting them as abuse. Possible values are:
         * NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanHideAbuse: js.UndefOr[String] = js.native
+      var whoCanHideAbuse: js.UndefOr[String] = js.undefined
       
       /**
         * Permissions to invite members. Possible values are:
         * ALL_MEMBERS_CAN_INVITE ALL_MANAGERS_CAN_INVITE ALL_OWNERS_CAN_INVITE
         * NONE_CAN_INVITE
         */
-      var whoCanInvite: js.UndefOr[String] = js.native
+      var whoCanInvite: js.UndefOr[String] = js.undefined
       
       /**
         * Permissions to join the group. Possible values are: ANYONE_CAN_JOIN
         * ALL_IN_DOMAIN_CAN_JOIN INVITED_CAN_JOIN CAN_REQUEST_TO_JOIN
         */
-      var whoCanJoin: js.UndefOr[String] = js.native
+      var whoCanJoin: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to leave the group. Possible values are:
         * ALL_MANAGERS_CAN_LEAVE ALL_OWNERS_CAN_LEAVE ALL_MEMBERS_CAN_LEAVE
         * NONE_CAN_LEAVE
         */
-      var whoCanLeaveGroup: js.UndefOr[String] = js.native
+      var whoCanLeaveGroup: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to lock topics. Possible values are: NONE OWNERS_ONLY
         * OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanLockTopics: js.UndefOr[String] = js.native
+      var whoCanLockTopics: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to make topics appear at the top of the topic list. Possible
         * values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS
         * ALL_MEMBERS
         */
-      var whoCanMakeTopicsSticky: js.UndefOr[String] = js.native
+      var whoCanMakeTopicsSticky: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to mark a topic as a duplicate of another topic. Possible
         * values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS
         * ALL_MEMBERS
         */
-      var whoCanMarkDuplicate: js.UndefOr[String] = js.native
+      var whoCanMarkDuplicate: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to mark any other user&#39;s post as a favorite reply.
         * Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS
         * ALL_MEMBERS
         */
-      var whoCanMarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.native
+      var whoCanMarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to mark a post for a topic they started as a favorite reply.
         * Possible values are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS
         * ALL_MEMBERS
         */
-      var whoCanMarkFavoriteReplyOnOwnTopic: js.UndefOr[String] = js.native
+      var whoCanMarkFavoriteReplyOnOwnTopic: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to mark a topic as not needing a response. Possible values
         * are: NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanMarkNoResponseNeeded: js.UndefOr[String] = js.native
+      var whoCanMarkNoResponseNeeded: js.UndefOr[String] = js.undefined
       
       /**
         * Permission for content moderation. Possible values are: NONE OWNERS_ONLY
         * OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanModerateContent: js.UndefOr[String] = js.native
+      var whoCanModerateContent: js.UndefOr[String] = js.undefined
       
       /**
         * Permission for membership moderation. Possible values are: NONE
         * OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanModerateMembers: js.UndefOr[String] = js.native
+      var whoCanModerateMembers: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to modify members (change member roles). Possible values are:
         * NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanModifyMembers: js.UndefOr[String] = js.native
+      var whoCanModifyMembers: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to change tags and categories. Possible values are: NONE
         * OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanModifyTagsAndCategories: js.UndefOr[String] = js.native
+      var whoCanModifyTagsAndCategories: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to move topics into the group or forum. Possible values are:
         * NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanMoveTopicsIn: js.UndefOr[String] = js.native
+      var whoCanMoveTopicsIn: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to move topics out of the group or forum. Possible values are:
         * NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanMoveTopicsOut: js.UndefOr[String] = js.native
+      var whoCanMoveTopicsOut: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to post announcements, a special topic type. Possible values
         * are: NONE OWNERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanPostAnnouncements: js.UndefOr[String] = js.native
+      var whoCanPostAnnouncements: js.UndefOr[String] = js.undefined
       
       /**
         * Permissions to post messages to the group. Possible values are:
         * NONE_CAN_POST ALL_MANAGERS_CAN_POST ALL_MEMBERS_CAN_POST
         * ALL_OWNERS_CAN_POST ALL_IN_DOMAIN_CAN_POST ANYONE_CAN_POST
         */
-      var whoCanPostMessage: js.UndefOr[String] = js.native
+      var whoCanPostMessage: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to take topics in a forum. Possible values are: NONE
         * OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanTakeTopics: js.UndefOr[String] = js.native
+      var whoCanTakeTopics: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to unassign any topic in a forum. Possible values are: NONE
         * OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanUnassignTopic: js.UndefOr[String] = js.native
+      var whoCanUnassignTopic: js.UndefOr[String] = js.undefined
       
       /**
         * Permission to unmark any post from a favorite reply. Possible values are:
         * NONE OWNERS_ONLY MANAGERS_ONLY OWNERS_AND_MANAGERS ALL_MEMBERS
         */
-      var whoCanUnmarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.native
+      var whoCanUnmarkFavoriteReplyOnAnyTopic: js.UndefOr[String] = js.undefined
       
       /**
         * Permissions to view group. Possible values are: ANYONE_CAN_VIEW
         * ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW
         * ALL_OWNERS_CAN_VIEW
         */
-      var whoCanViewGroup: js.UndefOr[String] = js.native
+      var whoCanViewGroup: js.UndefOr[String] = js.undefined
       
       /**
         * Permissions to view membership. Possible values are:
         * ALL_IN_DOMAIN_CAN_VIEW ALL_MEMBERS_CAN_VIEW ALL_MANAGERS_CAN_VIEW
         * ALL_OWNERS_CAN_VIEW
         */
-      var whoCanViewMembership: js.UndefOr[String] = js.native
+      var whoCanViewMembership: js.UndefOr[String] = js.undefined
     }
     object SchemaGroups {
       
@@ -1042,46 +1044,45 @@ object groupssettingsV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

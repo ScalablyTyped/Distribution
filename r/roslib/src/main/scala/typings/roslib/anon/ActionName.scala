@@ -2,19 +2,17 @@ package typings.roslib.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionName extends StObject {
   
-  var actionName: java.lang.String = js.native
+  var actionName: java.lang.String
   
-  var ros: typings.roslib.mod.Ros = js.native
+  var ros: typings.roslib.mod.Ros
   
-  var serverName: java.lang.String = js.native
+  var serverName: java.lang.String
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object ActionName {
   

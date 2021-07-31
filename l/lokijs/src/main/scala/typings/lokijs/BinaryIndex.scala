@@ -2,17 +2,15 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryIndex extends StObject {
   
-  var dirty: Boolean = js.native
+  var dirty: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var values: js.Array[Double] = js.native
+  var values: js.Array[Double]
 }
 object BinaryIndex {
   

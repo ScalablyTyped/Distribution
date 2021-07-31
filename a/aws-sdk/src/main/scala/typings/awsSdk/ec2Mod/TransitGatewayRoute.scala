@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayRoute extends StObject {
   
   /**
     * The CIDR block used for destination matches.
     */
-  var DestinationCidrBlock: js.UndefOr[String] = js.native
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the prefix list used for destination matches.
     */
-  var PrefixListId: js.UndefOr[PrefixListResourceId] = js.native
+  var PrefixListId: js.UndefOr[PrefixListResourceId] = js.undefined
   
   /**
     * The state of the route.
     */
-  var State: js.UndefOr[TransitGatewayRouteState] = js.native
+  var State: js.UndefOr[TransitGatewayRouteState] = js.undefined
   
   /**
     * The attachments.
     */
-  var TransitGatewayAttachments: js.UndefOr[TransitGatewayRouteAttachmentList] = js.native
+  var TransitGatewayAttachments: js.UndefOr[TransitGatewayRouteAttachmentList] = js.undefined
   
   /**
     * The route type.
     */
-  var Type: js.UndefOr[TransitGatewayRouteType] = js.native
+  var Type: js.UndefOr[TransitGatewayRouteType] = js.undefined
 }
 object TransitGatewayRoute {
   

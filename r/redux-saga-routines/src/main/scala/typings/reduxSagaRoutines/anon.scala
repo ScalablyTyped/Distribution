@@ -1,34 +1,35 @@
 package typings.reduxSagaRoutines
 
+import typings.reduxActions.mod.Action
+import typings.reduxActions.mod.ActionMeta
+import typings.reduxSagaRoutines.mod.ActionCreatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FAILURE_[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator] extends StObject {
     
-    var FAILURE: js.UndefOr[TFailurePayloadCreator] = js.native
+    var FAILURE: js.UndefOr[TFailurePayloadCreator] = js.undefined
     
-    var FULFILL: js.UndefOr[TFulfillPayloadCreator] = js.native
+    var FULFILL: js.UndefOr[TFulfillPayloadCreator] = js.undefined
     
-    var REQUEST: js.UndefOr[TRequestPayloadCreator] = js.native
+    var REQUEST: js.UndefOr[TRequestPayloadCreator] = js.undefined
     
-    var SUCCESS: js.UndefOr[TSuccessPayloadCreator] = js.native
+    var SUCCESS: js.UndefOr[TSuccessPayloadCreator] = js.undefined
     
-    var TRIGGER: js.UndefOr[TTriggerPayloadCreator] = js.native
+    var TRIGGER: js.UndefOr[TTriggerPayloadCreator] = js.undefined
     
-    var failure: js.UndefOr[TFailurePayloadCreator] = js.native
+    var failure: js.UndefOr[TFailurePayloadCreator] = js.undefined
     
-    var fulfill: js.UndefOr[TFulfillPayloadCreator] = js.native
+    var fulfill: js.UndefOr[TFulfillPayloadCreator] = js.undefined
     
-    var request: js.UndefOr[TRequestPayloadCreator] = js.native
+    var request: js.UndefOr[TRequestPayloadCreator] = js.undefined
     
-    var success: js.UndefOr[TSuccessPayloadCreator] = js.native
+    var success: js.UndefOr[TSuccessPayloadCreator] = js.undefined
     
-    var trigger: js.UndefOr[TTriggerPayloadCreator] = js.native
+    var trigger: js.UndefOr[TTriggerPayloadCreator] = js.undefined
   }
   object FAILURE_ {
     
@@ -51,7 +52,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FAILURE_MutableBuilder[Self <: FAILURE_[_, _, _, _, _], TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator] (val x: Self with (FAILURE_[
+    implicit class FAILURE_MutableBuilder[Self <: FAILURE_[?, ?, ?, ?, ?], TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator] (val x: Self & (FAILURE_[
             TTriggerPayloadCreator, 
             TRequestPayloadCreator, 
             TSuccessPayloadCreator, 
@@ -91,28 +92,27 @@ object anon {
     }
   }
   
-  @js.native
   trait FULFILL[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator] extends StObject {
     
-    var FAILURE: js.UndefOr[TFailureMetaCreator] = js.native
+    var FAILURE: js.UndefOr[TFailureMetaCreator] = js.undefined
     
-    var FULFILL: js.UndefOr[TFulfillMetaCreator] = js.native
+    var FULFILL: js.UndefOr[TFulfillMetaCreator] = js.undefined
     
-    var REQUEST: js.UndefOr[TRequestMetaCreator] = js.native
+    var REQUEST: js.UndefOr[TRequestMetaCreator] = js.undefined
     
-    var SUCCESS: js.UndefOr[TSuccessMetaCreator] = js.native
+    var SUCCESS: js.UndefOr[TSuccessMetaCreator] = js.undefined
     
-    var TRIGGER: js.UndefOr[TTriggerMetaCreator] = js.native
+    var TRIGGER: js.UndefOr[TTriggerMetaCreator] = js.undefined
     
-    var failure: js.UndefOr[TFailureMetaCreator] = js.native
+    var failure: js.UndefOr[TFailureMetaCreator] = js.undefined
     
-    var fulfill: js.UndefOr[TFulfillMetaCreator] = js.native
+    var fulfill: js.UndefOr[TFulfillMetaCreator] = js.undefined
     
-    var request: js.UndefOr[TRequestMetaCreator] = js.native
+    var request: js.UndefOr[TRequestMetaCreator] = js.undefined
     
-    var success: js.UndefOr[TSuccessMetaCreator] = js.native
+    var success: js.UndefOr[TSuccessMetaCreator] = js.undefined
     
-    var trigger: js.UndefOr[TTriggerMetaCreator] = js.native
+    var trigger: js.UndefOr[TTriggerMetaCreator] = js.undefined
   }
   object FULFILL {
     
@@ -135,7 +135,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FULFILLMutableBuilder[Self <: FULFILL[_, _, _, _, _], TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator] (val x: Self with (FULFILL[
+    implicit class FULFILLMutableBuilder[Self <: FULFILL[?, ?, ?, ?, ?], TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator] (val x: Self & (FULFILL[
             TTriggerMetaCreator, 
             TRequestMetaCreator, 
             TSuccessMetaCreator, 
@@ -175,18 +175,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Failure[TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] extends StObject {
     
-    var failure: TFailureActionCreator = js.native
+    var failure: TFailureActionCreator
     
-    var fulfill: TFulfillActionCreator = js.native
+    var fulfill: TFulfillActionCreator
     
-    var request: TRequestActionCreator = js.native
+    var request: TRequestActionCreator
     
-    var success: TSuccessActionCreator = js.native
+    var success: TSuccessActionCreator
     
-    var trigger: TTriggerActionCreator = js.native
+    var trigger: TTriggerActionCreator
   }
   object Failure {
     
@@ -215,7 +214,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FailureMutableBuilder[Self <: Failure[_, _, _, _, _], TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] (val x: Self with (Failure[
+    implicit class FailureMutableBuilder[Self <: Failure[?, ?, ?, ?, ?], TTriggerActionCreator, TRequestActionCreator, TSuccessActionCreator, TFailureActionCreator, TFulfillActionCreator] (val x: Self & (Failure[
             TTriggerActionCreator, 
             TRequestActionCreator, 
             TSuccessActionCreator, 
@@ -240,9 +239,11 @@ object anon {
     }
   }
   
-  /* Inlined {[ key in redux-saga-routines.redux-saga-routines.RoutineStages ]: string} */
+  /* Inlined redux-saga-routines.redux-saga-routines.Routine<redux-saga-routines.redux-saga-routines.ActionCreatorFunction<any, any>, redux-saga-routines.redux-saga-routines.ActionCreatorFunction<any, any>, redux-saga-routines.redux-saga-routines.ActionCreatorFunction<any, any>, redux-saga-routines.redux-saga-routines.ActionCreatorFunction<any, any>, redux-saga-routines.redux-saga-routines.ActionCreatorFunction<any, any>> */
   @js.native
-  trait keyinRoutineStagesstring extends StObject {
+  trait RoutineActionCreatorFunct extends StObject {
+    
+    def apply(args: js.Any*): Action[js.Any] | (ActionMeta[js.Any, js.Any]) = js.native
     
     var FAILURE: String = js.native
     
@@ -253,6 +254,30 @@ object anon {
     var SUCCESS: String = js.native
     
     var TRIGGER: String = js.native
+    
+    var failure: ActionCreatorFunction[js.Any, js.Any] = js.native
+    
+    var fulfill: ActionCreatorFunction[js.Any, js.Any] = js.native
+    
+    var request: ActionCreatorFunction[js.Any, js.Any] = js.native
+    
+    var success: ActionCreatorFunction[js.Any, js.Any] = js.native
+    
+    var trigger: ActionCreatorFunction[js.Any, js.Any] = js.native
+  }
+  
+  /* Inlined {[ key in redux-saga-routines.redux-saga-routines.RoutineStages ]: string} */
+  trait keyinRoutineStagesstring extends StObject {
+    
+    var FAILURE: String
+    
+    var FULFILL: String
+    
+    var REQUEST: String
+    
+    var SUCCESS: String
+    
+    var TRIGGER: String
   }
   object keyinRoutineStagesstring {
     

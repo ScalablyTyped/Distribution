@@ -10,9 +10,9 @@ Reusable hooks
 | ------------------ | :-------------: |
 | Full name          | use-subscription |
 | Keywords           | - |
-| # releases         | 72 |
-| # dependents       | 53 |
-| # downloads        | 23139454 |
+| # releases         | 113 |
+| # dependents       | 77 |
+| # downloads        | 48878053 |
 | # stars            | 0 |
 
 ## Links

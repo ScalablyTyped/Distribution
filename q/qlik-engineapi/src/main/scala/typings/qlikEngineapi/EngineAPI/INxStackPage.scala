@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxStackPage...
   */
-@js.native
 trait INxStackPage extends StObject {
   
   /**
     * Size and offset of the data in the matrix.
     */
-  var qArea: IRect = js.native
+  var qArea: IRect
   
   /**
     * Array of data.
     */
-  var qData: js.Array[INxStackedPivotCell] = js.native
+  var qData: js.Array[INxStackedPivotCell]
 }
 object INxStackPage {
   

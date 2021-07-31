@@ -3,49 +3,47 @@ package typings.giphyApi.mod
 import typings.giphyApi.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GIFObject extends StObject {
   
-  var bitly_url: String = js.native
+  var bitly_url: String
   
-  var content_url: String = js.native
+  var content_url: String
   
-  var create_datetime: String = js.native
+  var create_datetime: String
   
-  var embed_url: String = js.native
+  var embed_url: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: Images = js.native
+  var images: Images
   
-  var import_datetime: String = js.native
+  var import_datetime: String
   
-  var rating: Rating = js.native
+  var rating: Rating
   
-  var slug: String = js.native
+  var slug: String
   
-  var source: String = js.native
+  var source: String
   
-  var source_post_url: String = js.native
+  var source_post_url: String
   
-  var source_tld: String = js.native
+  var source_tld: String
   
-  var title: String = js.native
+  var title: String
   
-  var trending_datetime: String = js.native
+  var trending_datetime: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var update_datetime: String = js.native
+  var update_datetime: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: js.UndefOr[Avatarurl] = js.native
+  var user: js.UndefOr[Avatarurl] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object GIFObject {
   

@@ -2,33 +2,34 @@ package typings.parsecurrency
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(currency: String): ParsedCurrency = ^.asInstanceOf[js.Dynamic].apply(currency.asInstanceOf[js.Any]).asInstanceOf[ParsedCurrency]
+  
   @JSImport("parsecurrency", JSImport.Namespace)
   @js.native
-  def apply(currency: String): ParsedCurrency = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ParsedCurrency extends StObject {
     
-    var currency: String = js.native
+    var currency: String
     
-    var decimalSeparator: String = js.native
+    var decimalSeparator: String
     
-    var decimals: String = js.native
+    var decimals: String
     
-    var groupSeparator: String = js.native
+    var groupSeparator: String
     
-    var integer: String = js.native
+    var integer: String
     
-    var raw: String = js.native
+    var raw: String
     
-    var symbol: String = js.native
+    var symbol: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object ParsedCurrency {
     

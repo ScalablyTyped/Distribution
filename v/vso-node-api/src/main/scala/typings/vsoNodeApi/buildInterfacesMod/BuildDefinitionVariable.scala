@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildDefinitionVariable extends StObject {
   
   /**
     * Indicates whether the value can be set at queue time.
     */
-  var allowOverride: Boolean = js.native
+  var allowOverride: Boolean
   
   /**
     * Indicates whether the variable's value is a secret.
     */
-  var isSecret: Boolean = js.native
+  var isSecret: Boolean
   
   /**
     * The value of the variable.
     */
-  var value: String = js.native
+  var value: String
 }
 object BuildDefinitionVariable {
   

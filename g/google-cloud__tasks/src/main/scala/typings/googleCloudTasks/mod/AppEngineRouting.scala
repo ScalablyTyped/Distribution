@@ -2,19 +2,17 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEngineRouting extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var instance: String = js.native
+  var instance: String
   
-  var service: String = js.native
+  var service: String
   
-  var version: String = js.native
+  var version: String
 }
 object AppEngineRouting {
   

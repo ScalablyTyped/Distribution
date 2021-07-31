@@ -3,17 +3,15 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetClonesResponseData extends StObject {
   
-  var clones: js.Array[Count] = js.native
+  var clones: js.Array[Count]
   
-  var count: Double = js.native
+  var count: Double
   
-  var uniques: Double = js.native
+  var uniques: Double
 }
 object ReposGetClonesResponseData {
   

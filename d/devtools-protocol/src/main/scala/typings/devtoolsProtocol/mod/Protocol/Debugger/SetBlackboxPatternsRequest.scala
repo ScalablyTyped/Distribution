@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBlackboxPatternsRequest extends StObject {
   
   /**
     * Array of regexps that will be used to check script url for blackbox state.
     */
-  var patterns: js.Array[String] = js.native
+  var patterns: js.Array[String]
 }
 object SetBlackboxPatternsRequest {
   

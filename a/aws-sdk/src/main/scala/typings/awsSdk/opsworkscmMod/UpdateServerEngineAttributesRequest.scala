@@ -2,26 +2,24 @@ package typings.awsSdk.opsworkscmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateServerEngineAttributesRequest extends StObject {
   
   /**
     * The name of the engine attribute to update. 
     */
-  var AttributeName: typings.awsSdk.opsworkscmMod.AttributeName = js.native
+  var AttributeName: typings.awsSdk.opsworkscmMod.AttributeName
   
   /**
     * The value to set for the attribute. 
     */
-  var AttributeValue: js.UndefOr[typings.awsSdk.opsworkscmMod.AttributeValue] = js.native
+  var AttributeValue: js.UndefOr[typings.awsSdk.opsworkscmMod.AttributeValue] = js.undefined
   
   /**
     * The name of the server to update. 
     */
-  var ServerName: typings.awsSdk.opsworkscmMod.ServerName = js.native
+  var ServerName: typings.awsSdk.opsworkscmMod.ServerName
 }
 object UpdateServerEngineAttributesRequest {
   

@@ -3,51 +3,49 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LighthouseAuditResultV5 extends StObject {
   
   /** The description of the audit. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Freeform details section of the audit. */
   var details: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The value that should be displayed on the UI for this audit. */
-  var displayValue: js.UndefOr[String] = js.native
+  var displayValue: js.UndefOr[String] = js.undefined
   
   /** An error message from a thrown error inside the audit. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /** An explanation of the errors in the audit. */
-  var explanation: js.UndefOr[String] = js.native
+  var explanation: js.UndefOr[String] = js.undefined
   
   /** The audit's id. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A numeric value that has a meaning specific to the audit, e.g. the number of nodes in the DOM or the timestamp of a specific load event. More information can be found in the audit
     * details, if present.
     */
-  var numericValue: js.UndefOr[Double] = js.native
+  var numericValue: js.UndefOr[Double] = js.undefined
   
   /** The score of the audit, can be null. */
-  var score: js.UndefOr[js.Any] = js.native
+  var score: js.UndefOr[js.Any] = js.undefined
   
   /** The enumerated score display mode. */
-  var scoreDisplayMode: js.UndefOr[String] = js.native
+  var scoreDisplayMode: js.UndefOr[String] = js.undefined
   
   /** The human readable title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Possible warnings that occurred in the audit, can be null. */
-  var warnings: js.UndefOr[js.Any] = js.native
+  var warnings: js.UndefOr[js.Any] = js.undefined
 }
 object LighthouseAuditResultV5 {
   
@@ -70,7 +68,7 @@ object LighthouseAuditResultV5 {
     def setDetails(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseAuditResultV5 & TopLevel[js.Any]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline

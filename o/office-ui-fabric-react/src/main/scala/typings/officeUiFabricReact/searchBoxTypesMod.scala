@@ -12,23 +12,21 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchBoxTypesMod {
   
-  @js.native
   trait ISearchBox extends StObject {
     
     /**
       * Sets focus inside the search input box.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
     
     /**
       * Returns whether or not the SearchBox has focus
       */
-    def hasFocus(): Boolean = js.native
+    def hasFocus(): Boolean
   }
   object ISearchBox {
     
@@ -49,24 +47,25 @@ object searchBoxTypesMod {
     }
   }
   
-  @js.native
-  trait ISearchBoxProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait ISearchBoxProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
     /**
       * The aria label of the SearchBox for the benefit of screen readers.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The props for the clear button.
       */
-    var clearButtonProps: js.UndefOr[IButtonProps] = js.native
+    var clearButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Optional callback to access the ISearchBox interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ISearchBox]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ISearchBox]] = js.undefined
     
     /**
       * The default value of the text in the SearchBox, in the case of an uncontrolled component.
@@ -74,24 +73,24 @@ object searchBoxTypesMod {
       * @deprecated Not implemented.
       */
     @JSName("defaultValue")
-    var defaultValue_ISearchBoxProps: js.UndefOr[String] = js.native
+    var defaultValue_ISearchBoxProps: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not to animate the SearchBox icon on focus.
       * @defaultvalue false
       */
-    var disableAnimation: js.UndefOr[Boolean] = js.native
+    var disableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The props for the icon.
       */
-    var iconProps: js.UndefOr[PickIIconPropsExcludekeyo] = js.native
+    var iconProps: js.UndefOr[PickIIconPropsExcludekeyo] = js.undefined
     
     /**
       * Deprecated. Use `placeholder` instead.
       * @deprecated Use `placeholder` instead.
       */
-    var labelText: js.UndefOr[String] = js.native
+    var labelText: js.UndefOr[String] = js.undefined
     
     /**
       * Callback function for when the typed input for the SearchBox has changed.
@@ -103,50 +102,50 @@ object searchBoxTypesMod {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Deprecated at v0.52.2, use `onChange` instead.
       * @deprecated Use `onChange` instead.
       */
-    var onChanged: js.UndefOr[js.Function1[/* newValue */ js.Any, Unit]] = js.native
+    var onChanged: js.UndefOr[js.Function1[/* newValue */ js.Any, Unit]] = js.undefined
     
     /**
       * Callback executed when the user clears the search box by either clicking 'X' or hitting escape.
       */
-    var onClear: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onClear: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * Callback executed when the user presses escape in the search box.
       */
-    var onEscape: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onEscape: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * Callback executed when the user presses enter in the search box.
       */
-    var onSearch: js.UndefOr[js.Function1[/* newValue */ js.Any, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* newValue */ js.Any, Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ISearchBoxStyleProps, ISearchBoxStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ISearchBoxStyleProps, ISearchBoxStyles]] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether or not the SearchBox is underlined.
       * @defaultvalue false
       */
-    var underlined: js.UndefOr[Boolean] = js.native
+    var underlined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value of the text in the SearchBox.
       */
     @JSName("value")
-    var value_ISearchBoxProps: js.UndefOr[String] = js.native
+    var value_ISearchBoxProps: js.UndefOr[String] = js.undefined
   }
   object ISearchBoxProps {
     
@@ -265,22 +264,21 @@ object searchBoxTypesMod {
     }
   }
   
-  @js.native
   trait ISearchBoxStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableAnimation: js.UndefOr[Boolean] = js.native
+    var disableAnimation: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hasFocus: js.UndefOr[Boolean] = js.native
+    var hasFocus: js.UndefOr[Boolean] = js.undefined
     
-    var hasInput: js.UndefOr[Boolean] = js.native
+    var hasInput: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var underlined: js.UndefOr[Boolean] = js.native
+    var underlined: js.UndefOr[Boolean] = js.undefined
   }
   object ISearchBoxStyleProps {
     
@@ -334,18 +332,17 @@ object searchBoxTypesMod {
     }
   }
   
-  @js.native
   trait ISearchBoxStyles extends StObject {
     
-    var clearButton: js.UndefOr[IStyle] = js.native
+    var clearButton: js.UndefOr[IStyle] = js.undefined
     
-    var field: js.UndefOr[IStyle] = js.native
+    var field: js.UndefOr[IStyle] = js.undefined
     
-    var icon: js.UndefOr[IStyle] = js.native
+    var icon: js.UndefOr[IStyle] = js.undefined
     
-    var iconContainer: js.UndefOr[IStyle] = js.native
+    var iconContainer: js.UndefOr[IStyle] = js.undefined
     
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object ISearchBoxStyles {
     

@@ -2,25 +2,23 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Max extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var onBlur: js.Function0[Unit] = js.native
+  var onBlur: js.Function0[Unit]
   
-  var onChange: js.Function0[Unit] = js.native
+  var onChange: js.Function0[Unit]
   
-  var onFocus: js.Function0[Unit] = js.native
+  var onFocus: js.Function0[Unit]
   
-  var parser: js.Function1[/* input */ String, String] = js.native
+  var parser: js.Function1[/* input */ String, String]
   
-  var step: Double = js.native
+  var step: Double
 }
 object Max {
   

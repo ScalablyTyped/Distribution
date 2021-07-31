@@ -2,26 +2,24 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontMetricsObject extends StObject {
   
   /**
     * The baseline relative to the top of the box.
     */
-  var b: Double = js.native
+  var b: Double
   
   /**
     * The font size.
     */
-  var f: Double = js.native
+  var f: Double
   
   /**
     * The line height.
     */
-  var h: Double = js.native
+  var h: Double
 }
 object FontMetricsObject {
   

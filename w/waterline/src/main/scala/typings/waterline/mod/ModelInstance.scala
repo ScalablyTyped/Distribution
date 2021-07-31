@@ -3,21 +3,19 @@ package typings.waterline.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelInstance extends StObject {
   
-  var createdAt: js.UndefOr[Date] = js.native
+  var createdAt: js.UndefOr[Date] = js.undefined
   
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
-  def save(): WaterlinePromise[this.type] = js.native
+  def save(): WaterlinePromise[this.type]
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
   
-  var updatedAt: js.UndefOr[Date] = js.native
+  var updatedAt: js.UndefOr[Date] = js.undefined
 }
 object ModelInstance {
   

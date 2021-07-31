@@ -2,25 +2,23 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapsibleSetOptions extends StObject {
   
-  var collapsedIcon: js.UndefOr[String] = js.native
+  var collapsedIcon: js.UndefOr[String] = js.undefined
   
-  var expandedIcon: js.UndefOr[String] = js.native
+  var expandedIcon: js.UndefOr[String] = js.undefined
   
-  var iconpos: js.UndefOr[String] = js.native
+  var iconpos: js.UndefOr[String] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[Boolean] = js.native
+  var inset: js.UndefOr[Boolean] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object CollapsibleSetOptions {
   

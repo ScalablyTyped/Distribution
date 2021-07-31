@@ -2,31 +2,29 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetImportJobRequest extends StObject {
   
   /**
     * The Amazon S3 bucket that contains the training data to import.
     */
-  var dataSource: DataSource = js.native
+  var dataSource: DataSource
   
   /**
     * The ARN of the dataset that receives the imported data.
     */
-  var datasetArn: Arn = js.native
+  var datasetArn: Arn
   
   /**
     * The name for the dataset import job.
     */
-  var jobName: Name = js.native
+  var jobName: Name
   
   /**
     * The ARN of the IAM role that has permissions to read from the Amazon S3 data source.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object CreateDatasetImportJobRequest {
   

@@ -2,30 +2,28 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.IQueueOptions> */
-@js.native
 trait CreateQueueOptions extends StObject {
   
-  var AutoDeleteOnIdle: js.UndefOr[String] = js.native
+  var AutoDeleteOnIdle: js.UndefOr[String] = js.undefined
   
-  var DeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.native
+  var DeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.undefined
   
-  var DefaultMessageTimeToLive: js.UndefOr[String] = js.native
+  var DefaultMessageTimeToLive: js.UndefOr[String] = js.undefined
   
-  var DuplicateDetectionHistoryTimeWindow: js.UndefOr[String] = js.native
+  var DuplicateDetectionHistoryTimeWindow: js.UndefOr[String] = js.undefined
   
-  var EnablePartitioning: js.UndefOr[Boolean] = js.native
+  var EnablePartitioning: js.UndefOr[Boolean] = js.undefined
   
-  var LockDuration: js.UndefOr[String] = js.native
+  var LockDuration: js.UndefOr[String] = js.undefined
   
-  var MaxSizeInMegabytes: js.UndefOr[Double] = js.native
+  var MaxSizeInMegabytes: js.UndefOr[Double] = js.undefined
   
-  var RequiresDuplicateDetection: js.UndefOr[Boolean] = js.native
+  var RequiresDuplicateDetection: js.UndefOr[Boolean] = js.undefined
   
-  var RequiresSession: js.UndefOr[Boolean] = js.native
+  var RequiresSession: js.UndefOr[Boolean] = js.undefined
 }
 object CreateQueueOptions {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchDeveloperMetadataRequest extends StObject {
   
   /**
     * The data filters describing the criteria used to determine which DeveloperMetadata entries to return. DeveloperMetadata matching any of the specified filters are included in the
     * response.
     */
-  var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
 }
 object SearchDeveloperMetadataRequest {
   

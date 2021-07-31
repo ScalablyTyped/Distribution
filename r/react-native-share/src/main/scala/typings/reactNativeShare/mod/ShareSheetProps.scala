@@ -5,21 +5,19 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareSheetProps extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  def onCancel(): Unit = js.native
+  def onCancel(): Unit
   
-  var overlayStyle: js.UndefOr[StyleProp[ViewProps]] = js.native
+  var overlayStyle: js.UndefOr[StyleProp[ViewProps]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewProps]] = js.native
+  var style: js.UndefOr[StyleProp[ViewProps]] = js.undefined
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ShareSheetProps {
   

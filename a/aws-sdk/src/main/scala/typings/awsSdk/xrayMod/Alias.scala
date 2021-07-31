@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alias extends StObject {
   
   /**
     * The canonical name of the alias.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of names for the alias, including the canonical name.
     */
-  var Names: js.UndefOr[AliasNames] = js.native
+  var Names: js.UndefOr[AliasNames] = js.undefined
   
   /**
     * The type of the alias.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object Alias {
   

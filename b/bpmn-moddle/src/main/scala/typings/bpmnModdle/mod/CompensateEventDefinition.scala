@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompensateEventDefinition extends BaseElement {
+trait CompensateEventDefinition
+  extends StObject
+     with BaseElement {
   
-  var activityRef: Activity = js.native
+  var activityRef: Activity
   
-  var waitForCompletion: Boolean = js.native
+  var waitForCompletion: Boolean
 }
 object CompensateEventDefinition {
   

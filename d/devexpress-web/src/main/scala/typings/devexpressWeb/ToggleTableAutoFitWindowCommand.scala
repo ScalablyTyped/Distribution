@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to fit the specified table to a document's window.
   */
-@js.native
-trait ToggleTableAutoFitWindowCommand extends CommandWithSimpleStateBase {
+trait ToggleTableAutoFitWindowCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ToggleTableAutoFitWindowCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableAutoFitWindowCommand {
   

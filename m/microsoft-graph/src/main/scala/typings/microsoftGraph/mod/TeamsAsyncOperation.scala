@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamsAsyncOperation extends Entity {
+trait TeamsAsyncOperation
+  extends StObject
+     with Entity {
   
   // Number of times the operation was attempted before being marked successful or failed.
-  var attemptsCount: js.UndefOr[Double] = js.native
+  var attemptsCount: js.UndefOr[Double] = js.undefined
   
   // Time when the operation was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Any error that causes the async operation to fail.
-  var error: js.UndefOr[NullableOption[OperationError]] = js.native
+  var error: js.UndefOr[NullableOption[OperationError]] = js.undefined
   
   // Time when the async operation was last updated.
-  var lastActionDateTime: js.UndefOr[String] = js.native
+  var lastActionDateTime: js.UndefOr[String] = js.undefined
   
   // Denotes which type of operation is being described.
-  var operationType: js.UndefOr[TeamsAsyncOperationType] = js.native
+  var operationType: js.UndefOr[TeamsAsyncOperationType] = js.undefined
   
   // Operation status.
-  var status: js.UndefOr[TeamsAsyncOperationStatus] = js.native
+  var status: js.UndefOr[TeamsAsyncOperationStatus] = js.undefined
   
   // The ID of the object that's created or modified as result of this async operation, typically a team.
-  var targetResourceId: js.UndefOr[NullableOption[String]] = js.native
+  var targetResourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The location of the object that's created or modified as result of this async operation. This URL should be treated as
     * an opaque value and not parsed into its component paths.
     */
-  var targetResourceLocation: js.UndefOr[NullableOption[String]] = js.native
+  var targetResourceLocation: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TeamsAsyncOperation {
   

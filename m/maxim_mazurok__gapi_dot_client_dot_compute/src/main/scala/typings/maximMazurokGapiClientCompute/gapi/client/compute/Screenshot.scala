@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Screenshot extends StObject {
   
   /** [Output Only] The Base64-encoded screenshot data. */
-  var contents: js.UndefOr[String] = js.native
+  var contents: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#screenshot for the screenshots. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Screenshot {
   

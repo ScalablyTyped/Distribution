@@ -10,9 +10,9 @@ Record, replay, and stub HTTP Interactions
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/core |
 | Keywords           | polly, pollyjs, vcr, record, replay, recorder, test, mock |
-| # releases         | 26 |
+| # releases         | 21 |
 | # dependents       | 15 |
-| # downloads        | 1062878 |
+| # downloads        | 1339965 |
 | # stars            | 0 |
 
 ## Links

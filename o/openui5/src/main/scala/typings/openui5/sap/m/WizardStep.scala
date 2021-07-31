@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WizardStep extends Control {
+trait WizardStep
+  extends StObject
+     with Control {
   
   /**
     * Adds some content to the aggregation <code>content</code>.
@@ -119,7 +120,7 @@ trait WizardStep extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>subsequentSteps</code>.
     */
-  def getSubsequentSteps(): js.Array[_] = js.native
+  def getSubsequentSteps(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>title</code>.Determines the title of the step.The title is
@@ -166,7 +167,7 @@ trait WizardStep extends Control {
     * Removes all the controls in the association named <code>subsequentSteps</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllSubsequentSteps(): js.Array[_] = js.native
+  def removeAllSubsequentSteps(): js.Array[js.Any] = js.native
   
   def removeContent(vContent: String): Control = js.native
   /**

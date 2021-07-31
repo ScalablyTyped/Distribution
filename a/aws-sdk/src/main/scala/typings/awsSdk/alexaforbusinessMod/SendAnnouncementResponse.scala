@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendAnnouncementResponse extends StObject {
   
   /**
     * The identifier of the announcement.
     */
-  var AnnouncementArn: js.UndefOr[Arn] = js.native
+  var AnnouncementArn: js.UndefOr[Arn] = js.undefined
 }
 object SendAnnouncementResponse {
   

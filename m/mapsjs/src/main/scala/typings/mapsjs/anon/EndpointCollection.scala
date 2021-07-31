@@ -3,23 +3,21 @@ package typings.mapsjs.anon
 import typings.mapsjs.mod.tile.quad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointCollection extends StObject {
   
-  var endpointCollection: js.Array[String] = js.native
+  var endpointCollection: js.Array[String]
   
-  var idxMinX: Double = js.native
+  var idxMinX: Double
   
-  var idxMinY: Double = js.native
+  var idxMinY: Double
   
-  var quadCollection: js.Array[quad] = js.native
+  var quadCollection: js.Array[quad]
   
-  var ulX: Double = js.native
+  var ulX: Double
   
-  var ulY: Double = js.native
+  var ulY: Double
 }
 object EndpointCollection {
   

@@ -3,32 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.TypeofTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
-  var argument: FlowTypeAnnotation = js.native
+  var argument: FlowTypeAnnotation
   
   @JSName("type")
-  var type_TypeofTypeAnnotation_ : TypeofTypeAnnotation = js.native
+  var type_TypeofTypeAnnotation_ : TypeofTypeAnnotation
 }
 object TypeofTypeAnnotation_ {
   
   @scala.inline
-  def apply(
-    argument: FlowTypeAnnotation,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: TypeofTypeAnnotation
-  ): TypeofTypeAnnotation_ = {
+  def apply(argument: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): TypeofTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TypeofTypeAnnotation")
     __obj.asInstanceOf[TypeofTypeAnnotation_]
   }
   

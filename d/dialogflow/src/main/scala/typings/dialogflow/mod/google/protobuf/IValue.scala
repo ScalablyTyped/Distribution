@@ -2,32 +2,30 @@ package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Value. */
-@js.native
 trait IValue extends StObject {
   
   /** Value boolValue */
-  var boolValue: js.UndefOr[Boolean | Null] = js.native
+  var boolValue: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Value listValue */
-  var listValue: js.UndefOr[IListValue | Null] = js.native
+  var listValue: js.UndefOr[IListValue | Null] = js.undefined
   
   /** Value nullValue */
   var nullValue: js.UndefOr[
     NullValue | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.NullValue * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** Value numberValue */
-  var numberValue: js.UndefOr[Double | Null] = js.native
+  var numberValue: js.UndefOr[Double | Null] = js.undefined
   
   /** Value stringValue */
-  var stringValue: js.UndefOr[String | Null] = js.native
+  var stringValue: js.UndefOr[String | Null] = js.undefined
   
   /** Value structValue */
-  var structValue: js.UndefOr[IStruct | Null] = js.native
+  var structValue: js.UndefOr[IStruct | Null] = js.undefined
 }
 object IValue {
   

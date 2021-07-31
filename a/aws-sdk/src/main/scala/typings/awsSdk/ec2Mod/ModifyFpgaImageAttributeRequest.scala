@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyFpgaImageAttributeRequest extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var Attribute: js.UndefOr[FpgaImageAttributeName] = js.native
+  var Attribute: js.UndefOr[FpgaImageAttributeName] = js.undefined
   
   /**
     * A description for the AFI.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AFI.
     */
-  var FpgaImageId: typings.awsSdk.ec2Mod.FpgaImageId = js.native
+  var FpgaImageId: typings.awsSdk.ec2Mod.FpgaImageId
   
   /**
     * The load permission for the AFI.
     */
-  var LoadPermission: js.UndefOr[LoadPermissionModifications] = js.native
+  var LoadPermission: js.UndefOr[LoadPermissionModifications] = js.undefined
   
   /**
     * A name for the AFI.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The operation type.
     */
-  var OperationType: js.UndefOr[typings.awsSdk.ec2Mod.OperationType] = js.native
+  var OperationType: js.UndefOr[typings.awsSdk.ec2Mod.OperationType] = js.undefined
   
   /**
     * The product codes. After you add a product code to an AFI, it can't be removed. This parameter is valid only when modifying the productCodes attribute.
     */
-  var ProductCodes: js.UndefOr[ProductCodeStringList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeStringList] = js.undefined
   
   /**
     * The user groups. This parameter is valid only when modifying the loadPermission attribute.
     */
-  var UserGroups: js.UndefOr[UserGroupStringList] = js.native
+  var UserGroups: js.UndefOr[UserGroupStringList] = js.undefined
   
   /**
     * The AWS account IDs. This parameter is valid only when modifying the loadPermission attribute.
     */
-  var UserIds: js.UndefOr[UserIdStringList] = js.native
+  var UserIds: js.UndefOr[UserIdStringList] = js.undefined
 }
 object ModifyFpgaImageAttributeRequest {
   

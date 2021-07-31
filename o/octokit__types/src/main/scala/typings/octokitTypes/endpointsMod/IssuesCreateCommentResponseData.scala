@@ -3,27 +3,25 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesCreateCommentResponseData extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object IssuesCreateCommentResponseData {
   

@@ -2,7 +2,6 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Grid")
@@ -28,14 +27,17 @@ class Grid () extends StObject {
 /* static members */
 object Grid {
   
+  @JSImport("matter-js", "Grid")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Clears the grid.
     * @method clear
     * @param {grid} grid
     */
-  @JSImport("matter-js", "Grid.clear")
-  @js.native
-  def clear(grid: Grid): Unit = js.native
+  @scala.inline
+  def clear(grid: Grid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(grid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new grid.
@@ -43,12 +45,10 @@ object Grid {
     * @param {} options
     * @return {grid} A new grid
     */
-  @JSImport("matter-js", "Grid.create")
-  @js.native
-  def create(): Grid = js.native
-  @JSImport("matter-js", "Grid.create")
-  @js.native
-  def create(options: IGridDefinition): Grid = js.native
+  @scala.inline
+  def create(): Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Grid]
+  @scala.inline
+  def create(options: IGridDefinition): Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Grid]
   
   /**
     * Updates the grid.
@@ -58,7 +58,6 @@ object Grid {
     * @param {engine} engine
     * @param {boolean} forceUpdate
     */
-  @JSImport("matter-js", "Grid.update")
-  @js.native
-  def update(grid: Grid, bodies: js.Array[Body], engine: Engine, forceUpdate: Boolean): Unit = js.native
+  @scala.inline
+  def update(grid: Grid, bodies: js.Array[Body], engine: Engine, forceUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(grid.asInstanceOf[js.Any], bodies.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], forceUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

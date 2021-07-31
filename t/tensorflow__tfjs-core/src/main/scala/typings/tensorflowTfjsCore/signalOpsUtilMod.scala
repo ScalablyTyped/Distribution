@@ -3,16 +3,17 @@ package typings.tensorflowTfjsCore
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signalOpsUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/signal_ops_util", "cosineWindow")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/signal_ops_util", JSImport.Namespace)
   @js.native
-  def cosineWindow(windowLength: Double, a: Double, b: Double): Tensor1D = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/signal_ops_util", "enclosingPowerOfTwo")
-  @js.native
-  def enclosingPowerOfTwo(value: Double): Double = js.native
+  @scala.inline
+  def cosineWindow(windowLength: Double, a: Double, b: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineWindow")(windowLength.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  
+  @scala.inline
+  def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("enclosingPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

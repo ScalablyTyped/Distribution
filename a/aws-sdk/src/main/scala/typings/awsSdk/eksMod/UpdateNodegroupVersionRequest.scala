@@ -2,46 +2,44 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNodegroupVersionRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[String] = js.native
+  var clientRequestToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Amazon EKS cluster that is associated with the managed node group to update.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * Force the update if the existing node group's pods are unable to be drained due to a pod disruption budget issue. If an update fails because pods could not be drained, you can force the update after it fails to terminate the old node whether or not any pods are running on the node.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object representing a node group's launch template specification. You can only update a node group using a launch template if the node group was originally deployed with a launch template.
     */
-  var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.native
+  var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
     * The name of the managed node group to update.
     */
-  var nodegroupName: String = js.native
+  var nodegroupName: String
   
   /**
     * The AMI version of the Amazon EKS-optimized AMI to use for the update. By default, the latest available AMI version for the node group's Kubernetes version is used. For more information, see Amazon EKS-Optimized Linux AMI Versions  in the Amazon EKS User Guide. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify releaseVersion, or the node group update will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
     */
-  var releaseVersion: js.UndefOr[String] = js.native
+  var releaseVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The Kubernetes version to update to. If no version is specified, then the Kubernetes version of the node group does not change. You can specify the Kubernetes version of the cluster to update the node group to the latest AMI version of the cluster's Kubernetes version. If you specify launchTemplate, and your launch template uses a custom AMI, then don't specify version, or the node group update will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object UpdateNodegroupVersionRequest {
   

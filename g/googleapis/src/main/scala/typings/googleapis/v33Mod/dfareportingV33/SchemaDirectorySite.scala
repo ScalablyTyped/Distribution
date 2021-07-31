@@ -2,7 +2,6 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,31 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Sites need to be added to an account via the Sites resource before they can
   * be assigned to a placement.
   */
-@js.native
 trait SchemaDirectorySite extends StObject {
   
   /**
     * Whether this directory site is active.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID of this directory site. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of this directory site. This is a read-only,
     * auto-generated field.
     */
-  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Tag types for regular placements.  Acceptable values are: -
     * &quot;STANDARD&quot; - &quot;IFRAME_JAVASCRIPT_INPAGE&quot; -
     * &quot;INTERNAL_REDIRECT_INPAGE&quot; - &quot;JAVASCRIPT_INPAGE&quot;
     */
-  var inpageTagFormats: js.UndefOr[js.Array[String]] = js.native
+  var inpageTagFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Tag types for interstitial placements.  Acceptable values are: -
@@ -42,28 +40,28 @@ trait SchemaDirectorySite extends StObject {
     * &quot;INTERNAL_REDIRECT_INTERSTITIAL&quot; -
     * &quot;JAVASCRIPT_INTERSTITIAL&quot;
     */
-  var interstitialTagFormats: js.UndefOr[js.Array[String]] = js.native
+  var interstitialTagFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#directorySite&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this directory site.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Directory site settings.
     */
-  var settings: js.UndefOr[SchemaDirectorySiteSettings] = js.native
+  var settings: js.UndefOr[SchemaDirectorySiteSettings] = js.undefined
   
   /**
     * URL of this directory site.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaDirectorySite {
   

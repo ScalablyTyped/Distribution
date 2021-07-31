@@ -2,29 +2,27 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The data response corresponding to the request.
   */
-@js.native
 trait SchemaReport extends StObject {
   
   /**
     * The column headers.
     */
-  var columnHeader: js.UndefOr[SchemaColumnHeader] = js.native
+  var columnHeader: js.UndefOr[SchemaColumnHeader] = js.undefined
   
   /**
     * Response data.
     */
-  var data: js.UndefOr[SchemaReportData] = js.native
+  var data: js.UndefOr[SchemaReportData] = js.undefined
   
   /**
     * Page token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaReport {
   

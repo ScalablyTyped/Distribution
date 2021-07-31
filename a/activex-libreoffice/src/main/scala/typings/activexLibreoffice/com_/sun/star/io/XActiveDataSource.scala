@@ -4,28 +4,28 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * has to be implemented if the class should be able to write into an output stream.
   * @see XActiveDataControl.
   */
-@js.native
-trait XActiveDataSource extends XInterface {
+trait XActiveDataSource
+  extends StObject
+     with XInterface {
   
   /** @returns the plugged stream. */
-  var OutputStream: XOutputStream = js.native
+  var OutputStream: XOutputStream
   
   /** @returns the plugged stream. */
-  def getOutputStream(): XOutputStream = js.native
+  def getOutputStream(): XOutputStream
   
   /**
     * plugs the output stream.
     *
     * If {@link XConnectable} is also implemented, this method should query **aStream** for a {@link XConnectable} and connect both.
     */
-  def setOutputStream(aStream: XOutputStream): Unit = js.native
+  def setOutputStream(aStream: XOutputStream): Unit
 }
 object XActiveDataSource {
   

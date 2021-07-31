@@ -2,19 +2,17 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRRenderStateInit extends StObject {
   
-  var baseLayer: js.UndefOr[XRWebGLLayer] = js.native
+  var baseLayer: js.UndefOr[XRWebGLLayer] = js.undefined
   
-  var depthFar: js.UndefOr[Double] = js.native
+  var depthFar: js.UndefOr[Double] = js.undefined
   
-  var depthNear: js.UndefOr[Double] = js.native
+  var depthNear: js.UndefOr[Double] = js.undefined
   
-  var inlineVerticalFieldOfView: js.UndefOr[Double] = js.native
+  var inlineVerticalFieldOfView: js.UndefOr[Double] = js.undefined
 }
 object XRRenderStateInit {
   

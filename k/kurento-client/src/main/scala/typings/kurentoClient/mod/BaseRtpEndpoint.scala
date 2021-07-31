@@ -6,11 +6,12 @@ import typings.kurentoClient.kurentoClientStrings.ConnectionStateChanged
 import typings.kurentoClient.kurentoClientStrings.MediaStateChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseRtpEndpoint extends MediaElement {
+trait BaseRtpEndpoint
+  extends StObject
+     with MediaElement {
   
   def getConnectionState(): js.Promise[ConnectionState] = js.native
   def getConnectionState(callback: Callback[ConnectionState]): js.Promise[ConnectionState] = js.native

@@ -15,7 +15,6 @@ import typings.node.streamMod.Transform
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,12 +25,14 @@ object mod {
     *
     * @param options
     */
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("conventional-commits-parser", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("conventional-commits-parser", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The sync version. Useful when parsing a single commit. Returns the result.
@@ -39,23 +40,20 @@ object mod {
     * @param commit  A single commit to be parsed.
     * @param options Same as the `options` of `conventionalCommitsParser`.
     */
-  @JSImport("conventional-commits-parser", "sync")
-  @js.native
-  def sync(commit: String): Commit[String | Double | js.Symbol] = js.native
-  @JSImport("conventional-commits-parser", "sync")
-  @js.native
-  def sync(commit: String, options: Options): Commit[String | Double | js.Symbol] = js.native
+  @scala.inline
+  def sync(commit: String): Commit[String | Double | js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(commit.asInstanceOf[js.Any]).asInstanceOf[Commit[String | Double | js.Symbol]]
+  @scala.inline
+  def sync(commit: String, options: Options): Commit[String | Double | js.Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(commit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Commit[String | Double | js.Symbol]]
   
   object Commit {
     
     type Field = String | Null
     
-    @js.native
     trait Note extends StObject {
       
-      var text: String = js.native
+      var text: String
       
-      var title: String = js.native
+      var title: String
     }
     object Note {
       
@@ -76,38 +74,37 @@ object mod {
       }
     }
     
-    @js.native
     trait Reference extends StObject {
       
       /**
         * @default
         * null
         */
-      var action: Field = js.native
+      var action: Field
       
-      var issue: String = js.native
-      
-      /**
-        * @default
-        * null
-        */
-      var owner: Field = js.native
-      
-      var prefix: String = js.native
-      
-      var raw: String = js.native
+      var issue: String
       
       /**
         * @default
         * null
         */
-      var repository: Field = js.native
+      var owner: Field
+      
+      var prefix: String
+      
+      var raw: String
+      
+      /**
+        * @default
+        * null
+        */
+      var repository: Field
     }
     object Reference {
       
       @scala.inline
       def apply(issue: String, prefix: String, raw: String): Reference = {
-        val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], action = null, owner = null, repository = null)
         __obj.asInstanceOf[Reference]
       }
       
@@ -143,13 +140,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Revert
-      extends /* field */ StringDictionary[js.UndefOr[Field]] {
+      extends StObject
+         with /* field */ StringDictionary[js.UndefOr[Field]] {
       
-      var hash: js.UndefOr[Field] = js.native
+      var hash: js.UndefOr[Field] = js.undefined
       
-      var header: js.UndefOr[Field] = js.native
+      var header: js.UndefOr[Field] = js.undefined
     }
     object Revert {
       
@@ -182,70 +179,69 @@ object mod {
       }
     }
   }
-  type Commit[Fields /* <: String | Double | js.Symbol */] = CommitBase with typings.conventionalCommitsParser.conventionalCommitsParserStrings.Commit with TopLevel[js.Any]
+  type Commit[Fields /* <: String | Double | js.Symbol */] = CommitBase & typings.conventionalCommitsParser.conventionalCommitsParserStrings.Commit & TopLevel[js.Any]
   
-  @js.native
   trait CommitBase extends StObject {
     
     /**
       * @default
       * null
       */
-    var body: Field = js.native
+    var body: Field
     
     /**
       * @default
       * null
       */
-    var footer: Field = js.native
+    var footer: Field
     
     /**
       * @default
       * null
       */
-    var header: Field = js.native
+    var header: Field
     
     /**
       * @default
       * []
       */
-    var mentions: js.Array[String] = js.native
+    var mentions: js.Array[String]
     
     /**
       * @default
       * null
       */
-    var merge: Field = js.native
+    var merge: Field
     
     /**
       * @default
       * []
       */
-    var notes: js.Array[Note] = js.native
+    var notes: js.Array[Note]
     
     /**
       * @default
       * []
       */
-    var references: js.Array[Reference] = js.native
+    var references: js.Array[Reference]
     
     /**
       * @default
       * null
       */
-    var revert: Revert | Null = js.native
+    var revert: Revert | Null
     
-    var scope: js.UndefOr[Field] = js.native
+    var scope: js.UndefOr[Field] = js.undefined
     
-    var subject: js.UndefOr[Field] = js.native
+    var subject: js.UndefOr[Field] = js.undefined
     
-    var `type`: js.UndefOr[Field] = js.native
+    var `type`: js.UndefOr[Field] = js.undefined
   }
   object CommitBase {
     
     @scala.inline
     def apply(mentions: js.Array[String], notes: js.Array[Note], references: js.Array[Reference]): CommitBase = {
-      val __obj = js.Dynamic.literal(mentions = mentions.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(mentions = mentions.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], body = null, footer = null, header = null, merge = null, revert = null)
       __obj.asInstanceOf[CommitBase]
     }
     
@@ -329,7 +325,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -342,7 +337,7 @@ object mod {
       * @default
       * null
       */
-    var commentChar: js.UndefOr[String | Null] = js.native
+    var commentChar: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Pattern to match other fields.
@@ -350,7 +345,7 @@ object mod {
       * @default
       * /^-(.*?)-$/
       */
-    var fieldPattern: js.UndefOr[Pattern] = js.native
+    var fieldPattern: js.UndefOr[Pattern] = js.undefined
     
     /**
       * Used to define what capturing group of `headerPattern` captures what header
@@ -361,7 +356,7 @@ object mod {
       * @default
       * ['type', 'scope', 'subject']
       */
-    var headerCorrespondence: js.UndefOr[Correspondence] = js.native
+    var headerCorrespondence: js.UndefOr[Correspondence] = js.undefined
     
     /**
       * Used to match header pattern.
@@ -369,7 +364,7 @@ object mod {
       * @default
       * /^(\w*)(?:\(([\w\$\.\-\* ]*)\))?\: (.*)$/
       */
-    var headerPattern: js.UndefOr[Pattern] = js.native
+    var headerPattern: js.UndefOr[Pattern] = js.undefined
     
     /**
       * The prefixes of an issue. EG: In `gh-123` `gh-` is the prefix.
@@ -377,7 +372,7 @@ object mod {
       * @default
       * ['#']
       */
-    var issuePrefixes: js.UndefOr[Prefixes] = js.native
+    var issuePrefixes: js.UndefOr[Prefixes] = js.undefined
     
     /**
       * Used to define if `issuePrefixes` should be considered case sensitive.
@@ -385,7 +380,7 @@ object mod {
       * @default
       * false
       */
-    var issuePrefixesCaseSensitive: js.UndefOr[Boolean] = js.native
+    var issuePrefixesCaseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used to define what capturing group of `mergePattern`.
@@ -395,7 +390,7 @@ object mod {
       * @default
       * null
       */
-    var mergeCorrespondence: js.UndefOr[Correspondence] = js.native
+    var mergeCorrespondence: js.UndefOr[Correspondence] = js.undefined
     
     /**
       * Pattern to match merge headers. EG: branch merge, GitHub or GitLab like pull
@@ -422,7 +417,7 @@ object mod {
       * @default
       * null
       */
-    var mergePattern: js.UndefOr[Pattern] = js.native
+    var mergePattern: js.UndefOr[Pattern] = js.undefined
     
     /**
       * Keywords for important notes. This value is case __insensitive__. If it's a
@@ -431,7 +426,7 @@ object mod {
       * @default
       * ['BREAKING CHANGE']
       */
-    var noteKeywords: js.UndefOr[Keywords] = js.native
+    var noteKeywords: js.UndefOr[Keywords] = js.undefined
     
     /**
       * Keywords to reference an issue. This value is case __insensitive__. If it's a
@@ -442,7 +437,7 @@ object mod {
       * @default
       * ['close', 'closes', 'closed', 'fix', 'fixes', 'fixed', 'resolve', 'resolves', 'resolved']
       */
-    var referenceActions: js.UndefOr[Actions] = js.native
+    var referenceActions: js.UndefOr[Actions] = js.undefined
     
     /**
       * Used to define what capturing group of `revertPattern` captures what reverted
@@ -476,7 +471,7 @@ object mod {
       * @default
       * ['header', 'hash']
       */
-    var revertCorrespondence: js.UndefOr[Correspondence] = js.native
+    var revertCorrespondence: js.UndefOr[Correspondence] = js.undefined
     
     /**
       * Pattern to match what this commit reverts.
@@ -484,7 +479,7 @@ object mod {
       * @default
       * /^Revert\s"([\s\S]*)"\s*This reverts commit (\w*)\./
       */
-    var revertPattern: js.UndefOr[Pattern] = js.native
+    var revertPattern: js.UndefOr[Pattern] = js.undefined
     
     /**
       * What warn function to use. For example, `console.warn.bind(console)` or
@@ -494,7 +489,7 @@ object mod {
       * @default
       * function () {}
       */
-    var warn: js.UndefOr[(js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean] = js.native
+    var warn: js.UndefOr[(js.Function1[/* message */ js.UndefOr[js.Any], Unit]) | Boolean] = js.undefined
   }
   object Options {
     

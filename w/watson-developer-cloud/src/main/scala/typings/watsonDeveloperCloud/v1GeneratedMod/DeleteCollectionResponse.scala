@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DeleteCollectionResponse. */
-@js.native
 trait DeleteCollectionResponse extends StObject {
   
   /** The unique identifier of the collection that is being deleted. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The status of the collection. The status of a successful deletion operation is `deleted`. */
-  var status: String = js.native
+  var status: String
 }
 object DeleteCollectionResponse {
   

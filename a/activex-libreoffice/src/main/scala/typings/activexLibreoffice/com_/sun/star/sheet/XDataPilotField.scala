@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to control a data pilot field which has already been created.
   * @see com.sun.star.sheet.DataPilotField
   */
-@js.native
-trait XDataPilotField extends XInterface {
+trait XDataPilotField
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of the data pilot items.
     * @see com.sun.star.sheet.DataPilotItems
     */
-  val Items: XIndexAccess = js.native
+  val Items: XIndexAccess
   
   /**
     * returns the collection of the data pilot items.
     * @see com.sun.star.sheet.DataPilotItems
     */
-  def getItems(): XIndexAccess = js.native
+  def getItems(): XIndexAccess
 }
 object XDataPilotField {
   

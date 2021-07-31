@@ -17,45 +17,42 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("qs", "parse")
+  @JSImport("qs", JSImport.Namespace)
   @js.native
-  def parse(str: String): ParsedQs = js.native
-  @JSImport("qs", "parse")
-  @js.native
-  def parse(str: String, options: IParseOptionsdecodernever): ParsedQs = js.native
-  @JSImport("qs", "parse")
-  @js.native
-  def parse(str: String, options: IParseOptions): StringDictionary[js.Any] = js.native
-  @JSImport("qs", "parse")
-  @js.native
-  def parse_StringDictionary(str: String): StringDictionary[js.Any] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("qs", "stringify")
-  @js.native
-  def stringify(obj: js.Any): String = js.native
-  @JSImport("qs", "stringify")
-  @js.native
-  def stringify(obj: js.Any, options: IStringifyOptions): String = js.native
+  @scala.inline
+  def parse(str: String): ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedQs]
+  @scala.inline
+  def parse(str: String, options: IParseOptionsdecodernever): ParsedQs = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQs]
+  @scala.inline
+  def parse(str: String, options: IParseOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @js.native
+  @scala.inline
+  def parse_StringDictionary(str: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  
+  @scala.inline
+  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, options: IStringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait IParseOptions extends StObject {
     
-    var allowDots: js.UndefOr[Boolean] = js.native
+    var allowDots: js.UndefOr[Boolean] = js.undefined
     
-    var allowPrototypes: js.UndefOr[Boolean] = js.native
+    var allowPrototypes: js.UndefOr[Boolean] = js.undefined
     
-    var arrayLimit: js.UndefOr[Double] = js.native
+    var arrayLimit: js.UndefOr[Double] = js.undefined
     
-    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.native
+    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.undefined
     
-    var charsetSentinel: js.UndefOr[Boolean] = js.native
+    var charsetSentinel: js.UndefOr[Boolean] = js.undefined
     
-    var comma: js.UndefOr[Boolean] = js.native
+    var comma: js.UndefOr[Boolean] = js.undefined
     
     var decoder: js.UndefOr[
         js.Function4[
@@ -63,25 +60,25 @@ object mod {
           /* defaultDecoder */ defaultDecoder, 
           /* charset */ String, 
           /* type */ key | value, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var delimiter: js.UndefOr[String | RegExp] = js.native
+    var delimiter: js.UndefOr[String | RegExp] = js.undefined
     
-    var depth: js.UndefOr[Double | `false`] = js.native
+    var depth: js.UndefOr[Double | `false`] = js.undefined
     
-    var ignoreQueryPrefix: js.UndefOr[Boolean] = js.native
+    var ignoreQueryPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var interpretNumericEntities: js.UndefOr[Boolean] = js.native
+    var interpretNumericEntities: js.UndefOr[Boolean] = js.undefined
     
-    var parameterLimit: js.UndefOr[Double] = js.native
+    var parameterLimit: js.UndefOr[Double] = js.undefined
     
-    var parseArrays: js.UndefOr[Boolean] = js.native
+    var parseArrays: js.UndefOr[Boolean] = js.undefined
     
-    var plainObjects: js.UndefOr[Boolean] = js.native
+    var plainObjects: js.UndefOr[Boolean] = js.undefined
     
-    var strictNullHandling: js.UndefOr[Boolean] = js.native
+    var strictNullHandling: js.UndefOr[Boolean] = js.undefined
   }
   object IParseOptions {
     
@@ -132,7 +129,7 @@ object mod {
       
       @scala.inline
       def setDecoder(
-        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ key | value) => _
+        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ key | value) => js.Any
       ): Self = StObject.set(x, "decoder", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -188,24 +185,23 @@ object mod {
     }
   }
   
-  @js.native
   trait IStringifyOptions extends StObject {
     
-    var addQueryPrefix: js.UndefOr[Boolean] = js.native
+    var addQueryPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var allowDots: js.UndefOr[Boolean] = js.native
+    var allowDots: js.UndefOr[Boolean] = js.undefined
     
-    var arrayFormat: js.UndefOr[indices | brackets | repeat | comma] = js.native
+    var arrayFormat: js.UndefOr[indices | brackets | repeat | comma] = js.undefined
     
-    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.native
+    var charset: js.UndefOr[`utf-8` | `iso-8859-1`] = js.undefined
     
-    var charsetSentinel: js.UndefOr[Boolean] = js.native
+    var charsetSentinel: js.UndefOr[Boolean] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var encode: js.UndefOr[Boolean] = js.native
+    var encode: js.UndefOr[Boolean] = js.undefined
     
-    var encodeValuesOnly: js.UndefOr[Boolean] = js.native
+    var encodeValuesOnly: js.UndefOr[Boolean] = js.undefined
     
     var encoder: js.UndefOr[
         js.Function4[
@@ -215,23 +211,23 @@ object mod {
           /* type */ key | value, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     var filter: js.UndefOr[
-        (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ js.Any, _])
-      ] = js.native
+        (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ js.Any, js.Any])
+      ] = js.undefined
     
-    var format: js.UndefOr[RFC1738 | RFC3986] = js.native
+    var format: js.UndefOr[RFC1738 | RFC3986] = js.undefined
     
-    var indices: js.UndefOr[Boolean] = js.native
+    var indices: js.UndefOr[Boolean] = js.undefined
     
-    var serializeDate: js.UndefOr[js.Function1[/* d */ Date, String]] = js.native
+    var serializeDate: js.UndefOr[js.Function1[/* d */ Date, String]] = js.undefined
     
-    var skipNulls: js.UndefOr[Boolean] = js.native
+    var skipNulls: js.UndefOr[Boolean] = js.undefined
     
-    var sort: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.native
+    var sort: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
     
-    var strictNullHandling: js.UndefOr[Boolean] = js.native
+    var strictNullHandling: js.UndefOr[Boolean] = js.undefined
   }
   object IStringifyOptions {
     
@@ -301,10 +297,12 @@ object mod {
       def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
       
       @scala.inline
-      def setFilter(value: (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ js.Any, _])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      def setFilter(
+        value: (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ js.Any, js.Any])
+      ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFilterFunction2(value: (/* prefix */ String, /* value */ js.Any) => _): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      def setFilterFunction2(value: (/* prefix */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -350,9 +348,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedQs
-    extends /* key */ StringDictionary[js.UndefOr[String | (js.Array[ParsedQs | String]) | ParsedQs]]
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String | (js.Array[ParsedQs | String]) | ParsedQs]]
   object ParsedQs {
     
     @scala.inline

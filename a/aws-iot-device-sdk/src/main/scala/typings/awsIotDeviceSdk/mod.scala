@@ -23,10 +23,10 @@ import typings.awsIotDeviceSdk.awsIotDeviceSdkStrings.wss
 import typings.mqtt.clientMod.ClientSubscribeCallback
 import typings.mqtt.clientMod.ISubscriptionGrant
 import typings.mqtt.clientMod.PacketCallback
-import typings.mqtt.clientOptionsMod.IClientOptions
 import typings.mqtt.clientOptionsMod.IClientPublishOptions
 import typings.mqtt.clientOptionsMod.IClientSubscribeOptions
 import typings.mqtt.mod.Client
+import typings.mqtt.mod.IClientOptions
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
@@ -34,7 +34,6 @@ import typings.std.Error
 import typings.ws.mod.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -57,9 +56,9 @@ object mod {
       * @param callback
       */
     def end(): Client = js.native
-    def end(force: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
     def end(force: Boolean): Client = js.native
     def end(force: Boolean, callback: js.Function): Client = js.native
+    def end(force: Unit, callback: js.Function): Client = js.native
     
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
@@ -82,7 +81,7 @@ object mod {
     def publish(
       topic: String,
       message: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
     ): Client = js.native
     def publish(topic: String, message: String, options: IClientPublishOptions): Client = js.native
@@ -108,7 +107,7 @@ object mod {
     def publish(
       topic: String,
       message: Buffer,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
     ): Client = js.native
     def publish(topic: String, message: Buffer, options: IClientPublishOptions): Client = js.native
@@ -126,11 +125,11 @@ object mod {
       * @param callback fired on suback
       */
     def subscribe(topic: String): Client = js.native
-    def subscribe(topic: String, options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
+    def subscribe(topic: String, options: Unit, callback: ClientSubscribeCallback): Client = js.native
     def subscribe(topic: String, options: IClientSubscribeOptions): Client = js.native
     def subscribe(topic: String, options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
     def subscribe(topic: js.Array[String]): Client = js.native
-    def subscribe(topic: js.Array[String], options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
+    def subscribe(topic: js.Array[String], options: Unit, callback: ClientSubscribeCallback): Client = js.native
     def subscribe(topic: js.Array[String], options: IClientSubscribeOptions): Client = js.native
     def subscribe(topic: js.Array[String], options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
     
@@ -239,9 +238,9 @@ object mod {
       * @param callback
       */
     def end(): Client = js.native
-    def end(force: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
     def end(force: Boolean): Client = js.native
     def end(force: Boolean, callback: js.Function): Client = js.native
+    def end(force: Unit, callback: js.Function): Client = js.native
     
     /**
       * Get the current state of the Thing Shadow named thingName, which must
@@ -315,7 +314,7 @@ object mod {
     def on_timeout(event: timeout, listener: js.Function2[/* thingName */ String, /* clientToken */ String, Unit]): this.type = js.native
     
     def publish(topic: String, message: String): Client = js.native
-    def publish(topic: String, message: String, options: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
+    def publish(topic: String, message: String, options: Unit, callback: js.Function): Client = js.native
     def publish(topic: String, message: String, options: IClientPublishOptions): Client = js.native
     def publish(topic: String, message: String, options: IClientPublishOptions, callback: js.Function): Client = js.native
     // The following publish, subscribe, unsubscribe and end Definitions
@@ -331,7 +330,7 @@ object mod {
       * @param callback
       */
     def publish(topic: String, message: Buffer): Client = js.native
-    def publish(topic: String, message: Buffer, options: js.UndefOr[scala.Nothing], callback: js.Function): Client = js.native
+    def publish(topic: String, message: Buffer, options: Unit, callback: js.Function): Client = js.native
     def publish(topic: String, message: Buffer, options: IClientPublishOptions): Client = js.native
     def publish(topic: String, message: Buffer, options: IClientPublishOptions, callback: js.Function): Client = js.native
     
@@ -350,7 +349,7 @@ object mod {
     def register(thingName: String): Unit = js.native
     def register(
       thingName: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* failedTopics */ js.Array[ISubscriptionGrant], Unit]
     ): Unit = js.native
     def register(thingName: String, options: RegisterOptions): Unit = js.native
@@ -367,11 +366,11 @@ object mod {
       * @param callback fired on suback
       */
     def subscribe(topic: String): Client = js.native
-    def subscribe(topic: String, options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
+    def subscribe(topic: String, options: Unit, callback: ClientSubscribeCallback): Client = js.native
     def subscribe(topic: String, options: Qos): Client = js.native
     def subscribe(topic: String, options: Qos, callback: ClientSubscribeCallback): Client = js.native
     def subscribe(topic: js.Array[String]): Client = js.native
-    def subscribe(topic: js.Array[String], options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
+    def subscribe(topic: js.Array[String], options: Unit, callback: ClientSubscribeCallback): Client = js.native
     def subscribe(topic: js.Array[String], options: Qos): Client = js.native
     def subscribe(topic: js.Array[String], options: Qos, callback: ClientSubscribeCallback): Client = js.native
     
@@ -391,11 +390,11 @@ object mod {
       * @param callback  fired on unsuback
       */
     def unsubscribe(topic: String): Client = js.native
-    def unsubscribe(topic: String, options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
+    def unsubscribe(topic: String, options: Unit, callback: ClientSubscribeCallback): Client = js.native
     def unsubscribe(topic: String, options: IClientSubscribeOptions): Client = js.native
     def unsubscribe(topic: String, options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
     def unsubscribe(topic: js.Array[String]): Client = js.native
-    def unsubscribe(topic: js.Array[String], options: js.UndefOr[scala.Nothing], callback: ClientSubscribeCallback): Client = js.native
+    def unsubscribe(topic: js.Array[String], options: Unit, callback: ClientSubscribeCallback): Client = js.native
     def unsubscribe(topic: js.Array[String], options: IClientSubscribeOptions): Client = js.native
     def unsubscribe(topic: js.Array[String], options: IClientSubscribeOptions, callback: ClientSubscribeCallback): Client = js.native
     
@@ -419,90 +418,91 @@ object mod {
     def update(thingName: String, stateObject: js.Any): String | Null = js.native
   }
   
-  @js.native
-  trait DeviceOptions extends IClientOptions {
+  trait DeviceOptions
+    extends StObject
+       with IClientOptions {
     
     /**
       * used to specify the Access Key ID when protocol is set to "wss".
       * Overrides the environment variable AWS_ACCESS_KEY_ID if set.
       */
-    var accessKeyId: js.UndefOr[String] = js.native
+    var accessKeyId: js.UndefOr[String] = js.undefined
     
     /**
       * set to "true" to automatically re-subscribe to topics after
       * reconnection (default "true")
       */
-    var autoResubscribe: js.UndefOr[Boolean] = js.native
+    var autoResubscribe: js.UndefOr[Boolean] = js.undefined
     
     /** the base reconnection time in milliseconds (default 1000) */
-    var baseReconnectTimeMs: js.UndefOr[Double] = js.native
+    var baseReconnectTimeMs: js.UndefOr[Double] = js.undefined
     
     /**
       * same as caPath, but can also accept a buffer containing CA certificate
       * data
       */
-    var caCert: js.UndefOr[String | Buffer] = js.native
+    var caCert: js.UndefOr[String | Buffer] = js.undefined
     
     /** path of your CA certificate file */
-    var caPath: js.UndefOr[String] = js.native
+    var caPath: js.UndefOr[String] = js.undefined
     
     /**
       * path of the client certificate file path of the private key file
       * associated with the client certificate
       */
-    var certPath: js.UndefOr[String] = js.native
+    var certPath: js.UndefOr[String] = js.undefined
     
     /**
       * same as certPath, but can also accept a buffer containing client
       * certificate data
       */
-    var clientCert: js.UndefOr[String | Buffer] = js.native
+    var clientCert: js.UndefOr[String | Buffer] = js.undefined
     
     /** enable console logging, default false */
     // NB Not documented but present in examples, see
     // https://github.com/aws/aws-iot-device-sdk-js/blob/97b0b468d/device/index.js#L436
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the minimum time in milliseconds between publishes when draining
       * after reconnection (default 250)
       */
-    var drainTimeMs: js.UndefOr[Double] = js.native
+    var drainTimeMs: js.UndefOr[Double] = js.undefined
     
     /** path of the private key file associated with the client certificate */
-    var keyPath: js.UndefOr[String] = js.native
+    var keyPath: js.UndefOr[String] = js.undefined
     
     /** the maximum reconnection time in milliseconds (default 128000) */
-    var maximumReconnectTimeMs: js.UndefOr[Double] = js.native
+    var maximumReconnectTimeMs: js.UndefOr[Double] = js.undefined
     
     /**
       * the minimum time in milliseconds that a connection must be maintained
       * in order to be considered stable (default 20000)
       */
-    var minimumConnectionTimeMs: js.UndefOr[Double] = js.native
+    var minimumConnectionTimeMs: js.UndefOr[Double] = js.undefined
     
     /**
       * set to "oldest" or "newest" to define drop behavior on a full
       * queue when offlineQueueMaxSize > 0
       */
-    var offlineQueueDropBehavior: js.UndefOr[oldest | newest] = js.native
+    var offlineQueueDropBehavior: js.UndefOr[oldest | newest] = js.undefined
     
     /**
       * enforce a maximum size for the offline message queue
       * (default 0, e.g. no maximum)
       */
-    var offlineQueueMaxSize: js.UndefOr[Double] = js.native
+    var offlineQueueMaxSize: js.UndefOr[Double] = js.undefined
     
     /** set to "true" to automatically queue published messages while
       * offline (default "true")
       */
-    var offlineQueueing: js.UndefOr[Boolean] = js.native
+    var offlineQueueing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * same as keyPath, but can also accept a buffer containing private key
       * data
       */
-    var privateKey: js.UndefOr[String | Buffer] = js.native
+    var privateKey: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * the connection type, either "mqtts" (default) or "wss" (WebSocket/TLS).
@@ -513,30 +513,30 @@ object mod {
       * 1. https://github.com/aws/aws-iot-device-sdk-js#websockets
       */
     @JSName("protocol")
-    var protocol_DeviceOptions: js.UndefOr[mqtts | wss] = js.native
+    var protocol_DeviceOptions: js.UndefOr[mqtts | wss] = js.undefined
     
     /** the AWS IoT region you will operate in (default "us-east-1") */
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
     /**
       * used to specify the Secret Key when protocol is set to "wss".
       * Overrides the environment variable AWS_SECRET_ACCESS_KEY if set.
       */
-    var secretKey: js.UndefOr[String] = js.native
+    var secretKey: js.UndefOr[String] = js.undefined
     
     /**
       * (required when authenticating via Cognito, optional otherwise) used
       * to specify the Session Token when protocol is set to "wss". Overrides
       * the environment variable AWS_SESSION_TOKEN if set.
       */
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
     
     /**
       * if protocol is set to "wss", you can use this parameter to pass
       * additional options to the underlying WebSocket object;
       * these options are documented here.
       */
-    var websocketOptions: js.UndefOr[ClientOptions] = js.native
+    var websocketOptions: js.UndefOr[ClientOptions] = js.undefined
   }
   object DeviceOptions {
     
@@ -677,30 +677,29 @@ object mod {
     }
   }
   
-  @js.native
   trait RegisterOptions extends StObject {
     
     /**
       * set to false to allow receiving messages with old version
       * numbers (default true)
       */
-    var discardStale: js.UndefOr[Boolean] = js.native
+    var discardStale: js.UndefOr[Boolean] = js.undefined
     
     /** set to true to send version numbers with shadow updates (default true) */
-    var enableVersioning: js.UndefOr[Boolean] = js.native
+    var enableVersioning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * set to true to not subscribe to the delta sub-topic for this
       * Thing Shadow; used in cases where the application is not interested in
       * changes (e.g. update only.) (default false)
       */
-    var ignoreDeltas: js.UndefOr[Boolean] = js.native
+    var ignoreDeltas: js.UndefOr[Boolean] = js.undefined
     
     /**
       * set to false to unsubscribe from all operation sub-topics while not
       * performing an operation (default true)
       */
-    var persistentSubscribe: js.UndefOr[Boolean] = js.native
+    var persistentSubscribe: js.UndefOr[Boolean] = js.undefined
   }
   object RegisterOptions {
     
@@ -739,11 +738,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait ThingShadowOptions extends DeviceOptions {
+  trait ThingShadowOptions
+    extends StObject
+       with DeviceOptions {
     
     /** the timeout for thing operations (default 10 seconds) */
-    var operationTimeout: js.UndefOr[Double] = js.native
+    var operationTimeout: js.UndefOr[Double] = js.undefined
   }
   object ThingShadowOptions {
     
@@ -784,7 +784,7 @@ object mod {
       * @param callback - function(err) optional callback for when the operation completes, err is null if no error occurred
       */
     def failed(): Unit = js.native
-    def failed(statusDetails: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def failed(statusDetails: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def failed(statusDetails: statusDetails): Unit = js.native
     def failed(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
@@ -799,7 +799,7 @@ object mod {
       * @param callback - function(err) optional callback for when the operation completes, err is null if no error occurred
       */
     def inProgress(): Unit = js.native
-    def inProgress(statusDetails: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def inProgress(statusDetails: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def inProgress(statusDetails: statusDetails): Unit = js.native
     def inProgress(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
@@ -820,19 +820,18 @@ object mod {
       * @param callback - function(err) optional callback for when the operation completes, err is null if no error occurred
       */
     def succeeded(): Unit = js.native
-    def succeeded(statusDetails: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def succeeded(statusDetails: Unit, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
     def succeeded(statusDetails: statusDetails): Unit = js.native
     def succeeded(statusDetails: statusDetails, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   }
   
   type jobDocument = StringDictionary[js.Any]
   
-  @js.native
   trait jobStatus extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var statusDetails: typings.awsIotDeviceSdk.mod.statusDetails = js.native
+    var statusDetails: typings.awsIotDeviceSdk.mod.statusDetails
   }
   object jobStatus {
     
@@ -853,10 +852,9 @@ object mod {
     }
   }
   
-  @js.native
   trait statusDetails extends StObject {
     
-    var progress: String = js.native
+    var progress: String
   }
   object statusDetails {
     

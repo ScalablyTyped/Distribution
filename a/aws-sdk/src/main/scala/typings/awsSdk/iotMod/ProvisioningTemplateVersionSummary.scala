@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningTemplateVersionSummary extends StObject {
   
   /**
     * The date when the fleet provisioning template version was created
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * True if the fleet provisioning template version is the default version, otherwise false.
     */
-  var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.native
+  var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined
   
   /**
     * The ID of the fleet privisioning template version.
     */
-  var versionId: js.UndefOr[TemplateVersionId] = js.native
+  var versionId: js.UndefOr[TemplateVersionId] = js.undefined
 }
 object ProvisioningTemplateVersionSummary {
   

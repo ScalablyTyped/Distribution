@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object newlineMod extends Shortcut {
@@ -16,7 +15,6 @@ object newlineMod extends Shortcut {
   @js.native
   val default: FC[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
     /**
@@ -24,7 +22,7 @@ object newlineMod extends Shortcut {
       *
       * @default 1
       */
-    val count: js.UndefOr[Double] = js.native
+    val count: js.UndefOr[Double] = js.undefined
   }
   object Props {
     

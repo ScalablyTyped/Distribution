@@ -2,13 +2,11 @@ package typings.unityWebapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserPublic extends StObject {
   
-  def getUnityObject(version: Double): Unity = js.native
+  def getUnityObject(version: Double): Unity
 }
 object BrowserPublic {
   

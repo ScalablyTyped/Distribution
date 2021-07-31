@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of a single Presentation Format GATT Descriptor. */
-@js.native
 trait GattPresentationFormat extends StObject {
   
   /** Gets the Description of the GattPresentationFormat object. */
-  var description: Double = js.native
+  var description: Double
   
   /** Gets the Exponent of the GattPresentationFormat object. */
-  var exponent: Double = js.native
+  var exponent: Double
   
   /** Gets the Format Type of the GattPresentationFormat object. */
-  var formatType: Double = js.native
+  var formatType: Double
   
   /** Gets the Namespace of the GattPresentationFormat object. */
-  var namespace: Double = js.native
+  var namespace: Double
   
   /** Gets the Unit of the GattPresentationFormat object. */
-  var unit: Double = js.native
+  var unit: Double
 }
 object GattPresentationFormat {
   

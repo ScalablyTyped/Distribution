@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Results for all faces. */
-@js.native
 trait DetectedFaces extends StObject {
   
   /** The images. */
-  var images: js.Array[ImageWithFaces] = js.native
+  var images: js.Array[ImageWithFaces]
   
   /** Number of images processed for the API call. */
-  var images_processed: Double = js.native
+  var images_processed: Double
   
   /** Information about what might cause less than optimal output. For example, a request sent with a corrupt .zip file and a list of image URLs will still complete, but does not return the expected output. Not returned when there is no warning. */
-  var warnings: js.UndefOr[js.Array[WarningInfo]] = js.native
+  var warnings: js.UndefOr[js.Array[WarningInfo]] = js.undefined
 }
 object DetectedFaces {
   

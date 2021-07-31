@@ -5,17 +5,15 @@ import typings.chrome.chrome.privacy.Services
 import typings.chrome.chrome.privacy.Websites
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofprivacy extends StObject {
   
-  var network: Network = js.native
+  var network: Network
   
-  var services: Services = js.native
+  var services: Services
   
-  var websites: Websites = js.native
+  var websites: Websites
 }
 object Typeofprivacy {
   

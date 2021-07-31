@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single tag suggestion with it&#39;s relevance information.
   */
-@js.native
 trait SchemaVideoSuggestionsTagSuggestion extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaVideoSuggestionsTagSuggestion extends StObject {
     * tag suggestions are relevant for all categories if there are no restricts
     * defined for the keyword.
     */
-  var categoryRestricts: js.UndefOr[js.Array[String]] = js.native
+  var categoryRestricts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The keyword tag suggested for the video.
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoSuggestionsTagSuggestion {
   

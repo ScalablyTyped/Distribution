@@ -2,26 +2,24 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyWorkersRequest extends StObject {
   
   /**
     * The text of the email message to send. Can include up to 4,096 characters
     */
-  var MessageText: String = js.native
+  var MessageText: String
   
   /**
     * The subject line of the email message to send. Can include up to 200 characters.
     */
-  var Subject: String = js.native
+  var Subject: String
   
   /**
     * A list of Worker IDs you wish to notify. You can notify upto 100 Workers at a time.
     */
-  var WorkerIds: CustomerIdList = js.native
+  var WorkerIds: CustomerIdList
 }
 object NotifyWorkersRequest {
   

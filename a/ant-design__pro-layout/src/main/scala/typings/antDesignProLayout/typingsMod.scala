@@ -15,19 +15,19 @@ import typings.reactRouter.mod.`match`
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typingsMod {
   
-  @js.native
-  trait LinkProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
+  trait LinkProps
+    extends StObject
+       with AnchorHTMLAttributes[HTMLAnchorElement] {
     
-    var innerRef: js.UndefOr[Ref[HTMLAnchorElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLAnchorElement]] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var to: LocationDescriptor[LocationState] = js.native
+    var to: LocationDescriptor[LocationState]
   }
   object LinkProps {
     
@@ -63,65 +63,65 @@ object typingsMod {
     }
   }
   
-  @js.native
   trait MenuDataItem
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * @name 子菜单
       */
-    var children: js.UndefOr[js.Array[MenuDataItem]] = js.native
+    var children: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
     
     /**
       * @name disable 菜单选项
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 隐藏自己，并且将子节点提升到与自己平级
       */
-    var flatMenu: js.UndefOr[Boolean] = js.native
+    var flatMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 在菜单中隐藏子节点
       */
-    var hideChildrenInMenu: js.UndefOr[Boolean] = js.native
+    var hideChildrenInMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 在菜单中隐藏自己和子节点
       */
-    var hideInMenu: js.UndefOr[Boolean] = js.native
+    var hideInMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 菜单的icon
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @name 用于标定选中的值，默认是 path
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * @name 自定义菜单的国际化 key
       */
-    var locale: js.UndefOr[String | `false`] = js.native
+    var locale: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * @name 菜单的名字
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * @name 自定义父节点
       * @description 当此节点被选中的时候也会选中 parentKeys 的节点
       */
-    var parentKeys: js.UndefOr[js.Array[String]] = js.native
+    var parentKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @name 路径
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object MenuDataItem {
     
@@ -208,14 +208,13 @@ object typingsMod {
     }
   }
   
-  @js.native
   trait MessageDescriptor extends StObject {
     
-    var defaultMessage: js.UndefOr[String] = js.native
+    var defaultMessage: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var id: js.Any = js.native
+    var id: js.Any
   }
   object MessageDescriptor {
     
@@ -245,10 +244,11 @@ object typingsMod {
     }
   }
   
-  @js.native
-  trait Route extends MenuDataItem {
+  trait Route
+    extends StObject
+       with MenuDataItem {
     
-    var routes: js.UndefOr[js.Array[Route]] = js.native
+    var routes: js.UndefOr[js.Array[Route]] = js.undefined
   }
   object Route {
     
@@ -273,20 +273,19 @@ object typingsMod {
   }
   
   /* Inlined parent std.Omit<react-router-dom.react-router-dom.RouteComponentProps<{}, react-router.react-router.StaticContext, history.history.LocationState>, 'location'> */
-  @js.native
   trait RouterTypes[P] extends StObject {
     
-    var computedMatch: js.UndefOr[`match`[P]] = js.native
+    var computedMatch: js.UndefOr[`match`[P]] = js.undefined
     
-    var history: History[LocationState] = js.native
+    var history: History[LocationState]
     
-    var location: Location[LocationState] | Pathname = js.native
+    var location: Location[LocationState] | Pathname
     
-    var `match`: typings.reactRouter.mod.`match`[js.Object] = js.native
+    var `match`: typings.reactRouter.mod.`match`[js.Object]
     
-    var route: js.UndefOr[Route] = js.native
+    var route: js.UndefOr[Route] = js.undefined
     
-    var staticContext: js.UndefOr[StaticContext] = js.native
+    var staticContext: js.UndefOr[StaticContext] = js.undefined
   }
   object RouterTypes {
     
@@ -302,7 +301,7 @@ object typingsMod {
     }
     
     @scala.inline
-    implicit class RouterTypesMutableBuilder[Self <: RouterTypes[_], P] (val x: Self with RouterTypes[P]) extends AnyVal {
+    implicit class RouterTypesMutableBuilder[Self <: RouterTypes[?], P] (val x: Self & RouterTypes[P]) extends AnyVal {
       
       @scala.inline
       def setComputedMatch(value: `match`[P]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])

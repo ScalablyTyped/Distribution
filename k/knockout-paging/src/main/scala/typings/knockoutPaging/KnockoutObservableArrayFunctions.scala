@@ -3,11 +3,12 @@ package typings.knockoutPaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutObservableArrayFunctions[T] extends // Ko specific
+trait KnockoutObservableArrayFunctions[T]
+  extends StObject
+     with // Ko specific
 /* key */ StringDictionary[KnockoutBindingHandler] {
   
   def destroy(destroyFunction: js.Function1[/* item */ T, Boolean]): Unit = js.native

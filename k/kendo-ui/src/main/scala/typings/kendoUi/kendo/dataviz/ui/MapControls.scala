@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapControls extends StObject {
   
-  var attribution: js.UndefOr[Boolean | MapControlsAttribution] = js.native
+  var attribution: js.UndefOr[Boolean | MapControlsAttribution] = js.undefined
   
-  var navigator: js.UndefOr[Boolean | MapControlsNavigator] = js.native
+  var navigator: js.UndefOr[Boolean | MapControlsNavigator] = js.undefined
   
-  var zoom: js.UndefOr[Boolean | MapControlsZoom] = js.native
+  var zoom: js.UndefOr[Boolean | MapControlsZoom] = js.undefined
 }
 object MapControls {
   

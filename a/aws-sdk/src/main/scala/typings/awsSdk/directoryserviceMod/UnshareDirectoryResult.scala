@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnshareDirectoryResult extends StObject {
   
   /**
     * Identifier of the directory stored in the directory consumer account that is to be unshared from the specified directory (DirectoryId).
     */
-  var SharedDirectoryId: js.UndefOr[DirectoryId] = js.native
+  var SharedDirectoryId: js.UndefOr[DirectoryId] = js.undefined
 }
 object UnshareDirectoryResult {
   

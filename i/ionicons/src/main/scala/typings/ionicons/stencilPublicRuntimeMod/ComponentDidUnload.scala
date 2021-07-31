@@ -2,17 +2,15 @@ package typings.ionicons.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentDidUnload extends StObject {
   
   /**
     * The component did unload and the element
     * will be destroyed.
     */
-  def componentDidUnload(): Unit = js.native
+  def componentDidUnload(): Unit
 }
 object ComponentDidUnload {
   

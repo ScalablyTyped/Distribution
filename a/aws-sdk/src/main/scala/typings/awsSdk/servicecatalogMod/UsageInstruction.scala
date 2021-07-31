@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageInstruction extends StObject {
   
   /**
     * The usage instruction type for the value.
     */
-  var Type: js.UndefOr[InstructionType] = js.native
+  var Type: js.UndefOr[InstructionType] = js.undefined
   
   /**
     * The usage instruction value for this type.
     */
-  var Value: js.UndefOr[InstructionValue] = js.native
+  var Value: js.UndefOr[InstructionValue] = js.undefined
 }
 object UsageInstruction {
   

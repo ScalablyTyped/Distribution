@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminUpdateAttributeForEnterp
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminUpdateAttributeForEnterpriseUserEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminUpdateAttributeForEnterpriseUserEndpoint = js.native
+  var parameters: EnterpriseAdminUpdateAttributeForEnterpriseUserEndpoint
   
-  var request: EnterpriseAdminUpdateAttributeForEnterpriseUserRequestOptions = js.native
+  var request: EnterpriseAdminUpdateAttributeForEnterpriseUserRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminUpdateAttributeForEnterpriseUserResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminUpdateAttributeForEnterpriseUserResponseData]
 }
 object ParametersEnterpriseAdminUpdateAttributeForEnterpriseUserEndpoint {
   

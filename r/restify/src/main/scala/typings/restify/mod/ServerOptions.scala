@@ -3,65 +3,63 @@ package typings.restify.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerOptions extends StObject {
   
-  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var certificate: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var certificate: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var ciphers: js.UndefOr[String] = js.native
+  var ciphers: js.UndefOr[String] = js.undefined
   
-  var dtrace: js.UndefOr[Boolean] = js.native
+  var dtrace: js.UndefOr[Boolean] = js.undefined
   
-  var formatters: js.UndefOr[Formatters_] = js.native
+  var formatters: js.UndefOr[Formatters_] = js.undefined
   
-  var handleUncaughtExceptions: js.UndefOr[Boolean] = js.native
+  var handleUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
   
-  var handleUpgrades: js.UndefOr[Boolean] = js.native
+  var handleUpgrades: js.UndefOr[Boolean] = js.undefined
   
-  var http2: js.UndefOr[js.Any] = js.native
+  var http2: js.UndefOr[js.Any] = js.undefined
   
-  var httpsServerOptions: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.native
+  var httpsServerOptions: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
   
-  var ignoreTrailingSlash: js.UndefOr[Boolean] = js.native
+  var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var log: js.UndefOr[typings.bunyan.mod.^] = js.native
+  var log: js.UndefOr[typings.bunyan.mod.^] = js.undefined
   
-  var maxParamLength: js.UndefOr[Double] = js.native
+  var maxParamLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noWriteContinue: js.UndefOr[Boolean] = js.native
+  var noWriteContinue: js.UndefOr[Boolean] = js.undefined
   
-  var onceNext: js.UndefOr[Boolean] = js.native
+  var onceNext: js.UndefOr[Boolean] = js.undefined
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   
-  var requestCert: js.UndefOr[Boolean] = js.native
+  var requestCert: js.UndefOr[Boolean] = js.undefined
   
-  var router: js.UndefOr[Router] = js.native
+  var router: js.UndefOr[Router] = js.undefined
   
-  var secureOptions: js.UndefOr[Double] = js.native
+  var secureOptions: js.UndefOr[Double] = js.undefined
   
-  var socketio: js.UndefOr[Boolean] = js.native
+  var socketio: js.UndefOr[Boolean] = js.undefined
   
-  var spdy: js.UndefOr[typings.spdy.mod.ServerOptions] = js.native
+  var spdy: js.UndefOr[typings.spdy.mod.ServerOptions] = js.undefined
   
-  var strictNext: js.UndefOr[Boolean] = js.native
+  var strictNext: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var versions: js.UndefOr[js.Array[String]] = js.native
+  var versions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ServerOptions {
   

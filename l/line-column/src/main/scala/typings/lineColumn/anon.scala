@@ -3,17 +3,17 @@ package typings.lineColumn
 import typings.lineColumn.mod.LineColumnObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Column extends LineColumnObject {
+  trait Column
+    extends StObject
+       with LineColumnObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     

@@ -2,25 +2,23 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestApiLogs extends StObject {
   
-  var accessLogging: js.UndefOr[Boolean] = js.native
+  var accessLogging: js.UndefOr[Boolean] = js.undefined
   
-  var executionLogging: js.UndefOr[Boolean] = js.native
+  var executionLogging: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var fullExecutionData: js.UndefOr[Boolean] = js.native
+  var fullExecutionData: js.UndefOr[Boolean] = js.undefined
   
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var roleManagedExternally: js.UndefOr[Boolean] = js.native
+  var roleManagedExternally: js.UndefOr[Boolean] = js.undefined
 }
 object RestApiLogs {
   

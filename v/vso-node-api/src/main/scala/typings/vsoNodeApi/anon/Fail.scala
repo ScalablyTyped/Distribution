@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fail extends StObject {
   
-  var fail: scala.Double = js.native
+  var fail: scala.Double
   
-  var omit: scala.Double = js.native
+  var omit: scala.Double
 }
 object Fail {
   

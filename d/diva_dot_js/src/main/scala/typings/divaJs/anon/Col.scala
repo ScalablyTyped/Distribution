@@ -3,21 +3,19 @@ package typings.divaJs.anon
 import typings.divaJs.interfacesMod.Offset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Col extends StObject {
   
-  var col: Double = js.native
+  var col: Double
   
-  var dimensions: typings.divaJs.interfacesMod.Dimensions = js.native
+  var dimensions: typings.divaJs.interfacesMod.Dimensions
   
-  var offset: Offset = js.native
+  var offset: Offset
   
-  var row: Double = js.native
+  var row: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Col {
   

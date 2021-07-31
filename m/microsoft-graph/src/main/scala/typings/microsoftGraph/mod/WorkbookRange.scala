@@ -2,86 +2,86 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookRange extends Entity {
+trait WorkbookRange
+  extends StObject
+     with Entity {
   
   /**
     * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4).
     * Read-only.
     */
-  var address: js.UndefOr[NullableOption[String]] = js.native
+  var address: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Represents range reference for the specified range in the language of the user. Read-only.
-  var addressLocal: js.UndefOr[NullableOption[String]] = js.native
+  var addressLocal: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Number of cells in the range. Read-only.
-  var cellCount: js.UndefOr[Double] = js.native
+  var cellCount: js.UndefOr[Double] = js.undefined
   
   // Represents the total number of columns in the range. Read-only.
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   // Represents if all columns of the current range are hidden.
-  var columnHidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var columnHidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Represents the column number of the first cell in the range. Zero-indexed. Read-only.
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   // Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
-  var format: js.UndefOr[NullableOption[WorkbookRangeFormat]] = js.native
+  var format: js.UndefOr[NullableOption[WorkbookRangeFormat]] = js.undefined
   
   // Represents the formula in A1-style notation.
-  var formulas: js.UndefOr[NullableOption[_]] = js.native
+  var formulas: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   /**
     * Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
     * English '=SUM(A1, 1.5)' formula would become '=SUMME(A1; 1,5)' in German.
     */
-  var formulasLocal: js.UndefOr[NullableOption[_]] = js.native
+  var formulasLocal: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // Represents the formula in R1C1-style notation.
-  var formulasR1C1: js.UndefOr[NullableOption[_]] = js.native
+  var formulasR1C1: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // Represents if all cells of the current range are hidden. Read-only.
-  var hidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Represents Excel's number format code for the given cell.
-  var numberFormat: js.UndefOr[NullableOption[_]] = js.native
+  var numberFormat: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // Returns the total number of rows in the range. Read-only.
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   // Represents if all rows of the current range are hidden.
-  var rowHidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var rowHidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Returns the row number of the first cell in the range. Zero-indexed. Read-only.
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   // The worksheet containing the current range. Read-only.
-  var sort: js.UndefOr[NullableOption[WorkbookRangeSort]] = js.native
+  var sort: js.UndefOr[NullableOption[WorkbookRangeSort]] = js.undefined
   
   /**
     * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that
     * happens in Excel UI will not affect the text value returned by the API. Read-only.
     */
-  var text: js.UndefOr[NullableOption[_]] = js.native
+  var text: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   /**
     * Represents the type of data of each cell. The possible values are: Unknown, Empty, String, Integer, Double, Boolean,
     * Error. Read-only.
     */
-  var valueTypes: js.UndefOr[NullableOption[_]] = js.native
+  var valueTypes: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   /**
     * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell
     * that contain an error will return the error string.
     */
-  var values: js.UndefOr[NullableOption[_]] = js.native
+  var values: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // The worksheet containing the current range. Read-only.
-  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.native
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
 object WorkbookRange {
   
@@ -149,10 +149,10 @@ object WorkbookRange {
     def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormulas(value: NullableOption[_]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    def setFormulas(value: NullableOption[js.Any]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasLocal(value: NullableOption[_]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: NullableOption[js.Any]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasLocalNull: Self = StObject.set(x, "formulasLocal", null)
@@ -164,7 +164,7 @@ object WorkbookRange {
     def setFormulasNull: Self = StObject.set(x, "formulas", null)
     
     @scala.inline
-    def setFormulasR1C1(value: NullableOption[_]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    def setFormulasR1C1(value: NullableOption[js.Any]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasR1C1Null: Self = StObject.set(x, "formulasR1C1", null)
@@ -185,7 +185,7 @@ object WorkbookRange {
     def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: NullableOption[_]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: NullableOption[js.Any]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberFormatNull: Self = StObject.set(x, "numberFormat", null)
@@ -224,7 +224,7 @@ object WorkbookRange {
     def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setText(value: NullableOption[_]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    def setText(value: NullableOption[js.Any]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTextNull: Self = StObject.set(x, "text", null)
@@ -233,7 +233,7 @@ object WorkbookRange {
     def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setValueTypes(value: NullableOption[_]): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
+    def setValueTypes(value: NullableOption[js.Any]): Self = StObject.set(x, "valueTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueTypesNull: Self = StObject.set(x, "valueTypes", null)
@@ -242,7 +242,7 @@ object WorkbookRange {
     def setValueTypesUndefined: Self = StObject.set(x, "valueTypes", js.undefined)
     
     @scala.inline
-    def setValues(value: NullableOption[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesNull: Self = StObject.set(x, "values", null)

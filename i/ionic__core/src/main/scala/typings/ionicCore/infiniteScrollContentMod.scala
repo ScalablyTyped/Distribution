@@ -5,14 +5,15 @@ import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infiniteScrollContentMod {
   
   @JSImport("@ionic/core/dist/types/components/infinite-scroll-content/infinite-scroll-content", "InfiniteScrollContent")
   @js.native
-  class InfiniteScrollContent () extends ComponentInterface {
+  class InfiniteScrollContent ()
+    extends StObject
+       with ComponentInterface {
     
     @JSName("componentDidLoad")
     def componentDidLoad_MInfiniteScrollContent(): Unit = js.native

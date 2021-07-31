@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightRpx extends StObject {
   
   /** 输入框高度(px) */
-  var height: Double = js.native
+  var height: Double
   
   /** 输入框高度(rpx) */
-  var heightRpx: Double = js.native
+  var heightRpx: Double
   
   /** 行数 */
-  var lineCount: Double = js.native
+  var lineCount: Double
   
   /** 行高 */
-  var lineHeight: Double = js.native
+  var lineHeight: Double
 }
 object HeightRpx {
   

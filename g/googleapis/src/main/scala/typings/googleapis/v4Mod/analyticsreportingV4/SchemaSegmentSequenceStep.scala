@@ -2,26 +2,24 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A segment sequence definition.
   */
-@js.native
 trait SchemaSegmentSequenceStep extends StObject {
   
   /**
     * Specifies if the step immediately precedes or can be any time before the
     * next step.
     */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
   /**
     * A sequence is specified with a list of Or grouped filters which are
     * combined with `AND` operator.
     */
-  var orFiltersForSegment: js.UndefOr[js.Array[SchemaOrFiltersForSegment]] = js.native
+  var orFiltersForSegment: js.UndefOr[js.Array[SchemaOrFiltersForSegment]] = js.undefined
 }
 object SchemaSegmentSequenceStep {
   

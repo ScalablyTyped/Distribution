@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterBillboards extends StObject {
   
-  var clusterBillboards: js.UndefOr[Boolean] = js.native
+  var clusterBillboards: js.UndefOr[Boolean] = js.undefined
   
-  var clusterLabels: js.UndefOr[Boolean] = js.native
+  var clusterLabels: js.UndefOr[Boolean] = js.undefined
   
-  var clusterPoints: js.UndefOr[Boolean] = js.native
+  var clusterPoints: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var minimumClusterSize: js.UndefOr[Double] = js.native
+  var minimumClusterSize: js.UndefOr[Double] = js.undefined
   
-  var pixelRange: js.UndefOr[Double] = js.native
+  var pixelRange: js.UndefOr[Double] = js.undefined
 }
 object ClusterBillboards {
   

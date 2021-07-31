@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.NumberingLevel
   * @version 1.0
   */
-@js.native
-trait XNumberingFormatter extends XInterface {
+trait XNumberingFormatter
+  extends StObject
+     with XInterface {
   
   /** @returns the formatted numbering string according to the given {@link com.sun.star.text.NumberingLevel} and the given {@link com.sun.star.lang.Locale} . */
-  def makeNumberingString(aProperties: SeqEquiv[PropertyValue], aLocale: Locale): String = js.native
+  def makeNumberingString(aProperties: SeqEquiv[PropertyValue], aLocale: Locale): String
 }
 object XNumberingFormatter {
   

@@ -2,7 +2,6 @@ package typings.reactBootstrapTableNext.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,23 +14,37 @@ sealed trait FilterComparator extends StObject
 object FilterComparator extends StObject {
   
   @js.native
-  sealed trait EQ extends FilterComparator
+  sealed trait EQ
+    extends StObject
+       with FilterComparator
   
   @js.native
-  sealed trait GE extends FilterComparator
+  sealed trait GE
+    extends StObject
+       with FilterComparator
   
   @js.native
-  sealed trait GT extends FilterComparator
+  sealed trait GT
+    extends StObject
+       with FilterComparator
   
   @js.native
-  sealed trait LE extends FilterComparator
+  sealed trait LE
+    extends StObject
+       with FilterComparator
   
   @js.native
-  sealed trait LIKE extends FilterComparator
+  sealed trait LIKE
+    extends StObject
+       with FilterComparator
   
   @js.native
-  sealed trait LT extends FilterComparator
+  sealed trait LT
+    extends StObject
+       with FilterComparator
   
   @js.native
-  sealed trait NE extends FilterComparator
+  sealed trait NE
+    extends StObject
+       with FilterComparator
 }

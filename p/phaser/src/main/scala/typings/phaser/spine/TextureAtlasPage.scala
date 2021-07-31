@@ -2,27 +2,25 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextureAtlasPage extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var magFilter: TextureFilter = js.native
+  var magFilter: TextureFilter
   
-  var minFilter: TextureFilter = js.native
+  var minFilter: TextureFilter
   
-  var name: String = js.native
+  var name: String
   
-  var texture: Texture = js.native
+  var texture: Texture
   
-  var uWrap: TextureWrap = js.native
+  var uWrap: TextureWrap
   
-  var vWrap: TextureWrap = js.native
+  var vWrap: TextureWrap
   
-  var width: Double = js.native
+  var width: Double
 }
 object TextureAtlasPage {
   

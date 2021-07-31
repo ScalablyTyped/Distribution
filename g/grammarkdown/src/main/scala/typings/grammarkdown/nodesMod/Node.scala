@@ -5,15 +5,19 @@ import typings.grammarkdown.typesMod.TextRange
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "Node")
 @js.native
-abstract class Node[TKind /* <: SyntaxKind */] protected () extends TextRange {
+abstract class Node[TKind /* <: SyntaxKind */] protected ()
+  extends StObject
+     with TextRange {
   def this(kind: TKind) = this()
   
   def children(): IterableIterator[Node[SyntaxKind]] = js.native
+  
+  /* CompleteClass */
+  var end: Double = js.native
   
   def firstChild: js.UndefOr[Node[SyntaxKind]] = js.native
   
@@ -40,6 +44,9 @@ abstract class Node[TKind /* <: SyntaxKind */] protected () extends TextRange {
   def lastChild: js.UndefOr[Node[SyntaxKind]] = js.native
   
   var leadingHtmlTrivia: js.UndefOr[js.Array[HtmlTrivia]] = js.native
+  
+  /* CompleteClass */
+  var pos: Double = js.native
   
   var trailingHtmlTrivia: js.UndefOr[js.Array[HtmlTrivia]] = js.native
 }

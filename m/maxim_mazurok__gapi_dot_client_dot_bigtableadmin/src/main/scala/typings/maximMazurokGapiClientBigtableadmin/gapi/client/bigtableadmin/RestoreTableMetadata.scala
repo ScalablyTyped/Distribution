@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreTableMetadata extends StObject {
   
-  var backupInfo: js.UndefOr[BackupInfo] = js.native
+  var backupInfo: js.UndefOr[BackupInfo] = js.undefined
   
   /** Name of the table being created and restored to. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If exists, the name of the long-running operation that will be used to track the post-restore optimization process to optimize the performance of the restored table. The metadata
     * type of the long-running operation is OptimizeRestoreTableMetadata. The response type is Empty. This long-running operation may be automatically created by the system if applicable
     * after the RestoreTable long-running operation completes successfully. This operation may not be created if the table is already optimized or the restore was not successful.
     */
-  var optimizeTableOperationName: js.UndefOr[String] = js.native
+  var optimizeTableOperationName: js.UndefOr[String] = js.undefined
   
   /** The progress of the RestoreTable operation. */
-  var progress: js.UndefOr[OperationProgress] = js.native
+  var progress: js.UndefOr[OperationProgress] = js.undefined
   
   /** The type of the restore source. */
-  var sourceType: js.UndefOr[String] = js.native
+  var sourceType: js.UndefOr[String] = js.undefined
 }
 object RestoreTableMetadata {
   

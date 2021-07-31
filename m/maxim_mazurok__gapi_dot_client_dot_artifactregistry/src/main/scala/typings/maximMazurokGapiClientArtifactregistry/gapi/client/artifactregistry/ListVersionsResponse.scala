@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVersionsResponse extends StObject {
   
   /** The token to retrieve the next page of versions, or empty if there are no more versions to return. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The versions returned. */
-  var versions: js.UndefOr[js.Array[Version]] = js.native
+  var versions: js.UndefOr[js.Array[Version]] = js.undefined
 }
 object ListVersionsResponse {
   

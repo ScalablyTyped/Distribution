@@ -4,23 +4,23 @@ import typings.ecmarkup.collectNodesMod.CollectNodesReturnType
 import typings.ecmarkup.ecmarkupBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Algorithms extends CollectNodesReturnType {
+trait Algorithms
+  extends StObject
+     with CollectNodesReturnType {
   
-  var algorithms: js.Array[Element] = js.native
+  var algorithms: js.Array[Element]
   
-  var earlyErrors: js.Array[Grammar] = js.native
+  var earlyErrors: js.Array[Grammar]
   
-  var headers: js.Array[Contents] = js.native
+  var headers: js.Array[Contents]
   
-  var mainGrammar: js.Array[Source] = js.native
+  var mainGrammar: js.Array[Source]
   
-  var sdos: js.Array[Alg] = js.native
+  var sdos: js.Array[Alg]
   
-  var success: `true` = js.native
+  var success: `true`
 }
 object Algorithms {
   
@@ -30,10 +30,9 @@ object Algorithms {
     earlyErrors: js.Array[Grammar],
     headers: js.Array[Contents],
     mainGrammar: js.Array[Source],
-    sdos: js.Array[Alg],
-    success: `true`
+    sdos: js.Array[Alg]
   ): Algorithms = {
-    val __obj = js.Dynamic.literal(algorithms = algorithms.asInstanceOf[js.Any], earlyErrors = earlyErrors.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], mainGrammar = mainGrammar.asInstanceOf[js.Any], sdos = sdos.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(algorithms = algorithms.asInstanceOf[js.Any], earlyErrors = earlyErrors.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], mainGrammar = mainGrammar.asInstanceOf[js.Any], sdos = sdos.asInstanceOf[js.Any], success = true)
     __obj.asInstanceOf[Algorithms]
   }
   

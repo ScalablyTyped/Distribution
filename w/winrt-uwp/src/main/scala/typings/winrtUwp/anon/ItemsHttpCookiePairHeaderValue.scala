@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpCookiePairHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsHttpCookiePairHeaderValue extends StObject {
   
-  /** An array of HttpCookiePairHeaderValue items that start at startIndex in the HttpCookiePairHeaderValueCollection . */ var items: HttpCookiePairHeaderValue = js.native
+  /** An array of HttpCookiePairHeaderValue items that start at startIndex in the HttpCookiePairHeaderValueCollection . */ var items: HttpCookiePairHeaderValue
   
-  /** The number of HttpCookiePairHeaderValue items retrieved. */ var returnValue: Double = js.native
+  /** The number of HttpCookiePairHeaderValue items retrieved. */ var returnValue: Double
 }
 object ItemsHttpCookiePairHeaderValue {
   

@@ -16,14 +16,15 @@ import typings.node.streamMod.Readable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
   
   @JSImport("@elastic/elasticsearch/lib/Transport", JSImport.Default)
   @js.native
-  class default protected () extends Transport {
+  class default protected ()
+    extends StObject
+       with Transport {
     def this(opts: TransportOptions) = this()
   }
   /* static members */
@@ -68,35 +69,34 @@ object transportMod {
   
   type RequestBody[T] = T | String | Buffer | Readable
   
-  @js.native
   trait RequestEvent[TResponse, TContext] extends StObject {
     
-    var body: TResponse = js.native
+    var body: TResponse
     
-    var headers: (Record[String, _]) | Null = js.native
+    var headers: (Record[String, js.Any]) | Null
     
-    var meta: Aborted[TContext] = js.native
+    var meta: Aborted[TContext]
     
-    var statusCode: Double | Null = js.native
+    var statusCode: Double | Null
     
-    var warnings: js.Array[String] | Null = js.native
+    var warnings: js.Array[String] | Null
   }
   object RequestEvent {
     
     @scala.inline
     def apply[TResponse, TContext](body: TResponse, meta: Aborted[TContext]): RequestEvent[TResponse, TContext] = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], headers = null, statusCode = null, warnings = null)
       __obj.asInstanceOf[RequestEvent[TResponse, TContext]]
     }
     
     @scala.inline
-    implicit class RequestEventMutableBuilder[Self <: RequestEvent[_, _], TResponse, TContext] (val x: Self with (RequestEvent[TResponse, TContext])) extends AnyVal {
+    implicit class RequestEventMutableBuilder[Self <: RequestEvent[?, ?], TResponse, TContext] (val x: Self & (RequestEvent[TResponse, TContext])) extends AnyVal {
       
       @scala.inline
       def setBody(value: TResponse): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHeaders(value: Record[String, _]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersNull: Self = StObject.set(x, "headers", null)
@@ -145,17 +145,17 @@ object transportMod {
     
     var opaqueIdPrefix: String | Null = js.native
     
-    def request(params: TransportRequestParams): TransportRequestPromise[ApiResponse[Record[String, _], Context]] = js.native
+    def request(params: TransportRequestParams): TransportRequestPromise[ApiResponse[Record[String, js.Any], Context]] = js.native
     def request(
       params: TransportRequestParams,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ ApiError, /* result */ ApiResponse[Record[String, _], Context], Unit]
+      options: Unit,
+      callback: js.Function2[/* err */ ApiError, /* result */ ApiResponse[Record[String, js.Any], Context], Unit]
     ): TransportRequestCallback = js.native
-    def request(params: TransportRequestParams, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[Record[String, _], Context]] = js.native
+    def request(params: TransportRequestParams, options: TransportRequestOptions): TransportRequestPromise[ApiResponse[Record[String, js.Any], Context]] = js.native
     def request(
       params: TransportRequestParams,
       options: TransportRequestOptions,
-      callback: js.Function2[/* err */ ApiError, /* result */ ApiResponse[Record[String, _], Context], Unit]
+      callback: js.Function2[/* err */ ApiError, /* result */ ApiResponse[Record[String, js.Any], Context], Unit]
     ): TransportRequestCallback = js.native
     
     var requestTimeout: Double = js.native
@@ -168,7 +168,7 @@ object transportMod {
     var serializer: typings.elasticElasticsearch.serializerMod.default = js.native
     
     def sniff(): Unit = js.native
-    def sniff(opts: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def sniff(opts: Unit, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
     def sniff(opts: TransportSniffOptions): Unit = js.native
     def sniff(opts: TransportSniffOptions, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
     
@@ -181,10 +181,9 @@ object transportMod {
     var suggestCompression: Boolean = js.native
   }
   
-  @js.native
   trait TransportGetConnectionOptions extends StObject {
     
-    var requestId: String = js.native
+    var requestId: String
   }
   object TransportGetConnectionOptions {
     
@@ -214,7 +213,7 @@ object transportMod {
     
     var generateRequestId: js.UndefOr[generateRequestIdFn] = js.native
     
-    var headers: js.UndefOr[Record[String, _]] = js.native
+    var headers: js.UndefOr[Record[String, js.Any]] = js.native
     
     var maxRetries: Double = js.native
     
@@ -241,10 +240,9 @@ object transportMod {
     var suggestCompression: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait TransportRequestCallback extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
   }
   object TransportRequestCallback {
     
@@ -262,30 +260,29 @@ object transportMod {
     }
   }
   
-  @js.native
   trait TransportRequestOptions extends StObject {
     
-    var asStream: js.UndefOr[Boolean] = js.native
+    var asStream: js.UndefOr[Boolean] = js.undefined
     
-    var compression: js.UndefOr[gzip] = js.native
+    var compression: js.UndefOr[gzip] = js.undefined
     
-    var context: js.UndefOr[Context] = js.native
+    var context: js.UndefOr[Context] = js.undefined
     
-    var headers: js.UndefOr[Record[String, _]] = js.native
+    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[Double]] = js.native
+    var ignore: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var opaqueId: js.UndefOr[String] = js.native
+    var opaqueId: js.UndefOr[String] = js.undefined
     
-    var querystring: js.UndefOr[Record[String, _]] = js.native
+    var querystring: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var requestTimeout: js.UndefOr[Double | String] = js.native
+    var requestTimeout: js.UndefOr[Double | String] = js.undefined
     
-    var warnings: js.UndefOr[js.Array[String]] = js.native
+    var warnings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TransportRequestOptions {
     
@@ -320,7 +317,7 @@ object transportMod {
       def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       @scala.inline
-      def setHeaders(value: Record[String, _]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -353,7 +350,7 @@ object transportMod {
       def setOpaqueIdUndefined: Self = StObject.set(x, "opaqueId", js.undefined)
       
       @scala.inline
-      def setQuerystring(value: Record[String, _]): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+      def setQuerystring(value: Record[String, js.Any]): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
@@ -375,18 +372,17 @@ object transportMod {
     }
   }
   
-  @js.native
   trait TransportRequestParams extends StObject {
     
-    var body: js.UndefOr[RequestBody[Record[String, _]]] = js.native
+    var body: js.UndefOr[RequestBody[Record[String, js.Any]]] = js.undefined
     
-    var bulkBody: js.UndefOr[RequestNDBody[js.Array[Record[String, _]]]] = js.native
+    var bulkBody: js.UndefOr[RequestNDBody[js.Array[Record[String, js.Any]]]] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var querystring: js.UndefOr[(Record[String, _]) | String] = js.native
+    var querystring: js.UndefOr[(Record[String, js.Any]) | String] = js.undefined
   }
   object TransportRequestParams {
     
@@ -400,13 +396,13 @@ object transportMod {
     implicit class TransportRequestParamsMutableBuilder[Self <: TransportRequestParams] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBody(value: RequestBody[Record[String, _]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: RequestBody[Record[String, js.Any]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       @scala.inline
-      def setBulkBody(value: RequestNDBody[js.Array[Record[String, _]]]): Self = StObject.set(x, "bulkBody", value.asInstanceOf[js.Any])
+      def setBulkBody(value: RequestNDBody[js.Array[Record[String, js.Any]]]): Self = StObject.set(x, "bulkBody", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBulkBodyUndefined: Self = StObject.set(x, "bulkBody", js.undefined)
@@ -421,7 +417,7 @@ object transportMod {
       def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setQuerystring(value: (Record[String, _]) | String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+      def setQuerystring(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
@@ -435,12 +431,11 @@ object transportMod {
     def abort(): Unit = js.native
   }
   
-  @js.native
   trait TransportSniffOptions extends StObject {
     
-    var reason: String = js.native
+    var reason: String
     
-    var requestId: js.UndefOr[String] = js.native
+    var requestId: js.UndefOr[String] = js.undefined
   }
   object TransportSniffOptions {
     

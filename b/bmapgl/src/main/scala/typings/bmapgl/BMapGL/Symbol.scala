@@ -2,11 +2,12 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Symbol extends Overlay {
+trait Symbol
+  extends StObject
+     with Overlay {
   
   def setAnchor(anchor: Size): Unit = js.native
   

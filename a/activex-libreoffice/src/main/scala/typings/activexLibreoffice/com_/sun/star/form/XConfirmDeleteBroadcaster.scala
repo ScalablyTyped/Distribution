@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides the possibility of receiving an event for confirming deletions of rows in a {@link com.sun.star.form.component.DataForm} .
   * @see XConfirmDeleteListener
   */
-@js.native
-trait XConfirmDeleteBroadcaster extends XInterface {
+trait XConfirmDeleteBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * remembers the specified listener to receive an event for confirming deletions
@@ -22,14 +22,14 @@ trait XConfirmDeleteBroadcaster extends XInterface {
     * @param aListener the listener to add.
     * @see com.sun.star.form.XConfirmDeleteListener
     */
-  def addConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit = js.native
+  def addConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit
   
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XConfirmDeleteListener
     */
-  def removeConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit = js.native
+  def removeConfirmDeleteListener(aListener: XConfirmDeleteListener): Unit
 }
 object XConfirmDeleteBroadcaster {
   

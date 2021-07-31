@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X509Extension extends StObject {
   
   /** Required. Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error). */
-  var critical: js.UndefOr[Boolean] = js.native
+  var critical: js.UndefOr[Boolean] = js.undefined
   
   /** Required. The OID for this X.509 extension. */
-  var objectId: js.UndefOr[ObjectId] = js.native
+  var objectId: js.UndefOr[ObjectId] = js.undefined
   
   /** Required. The value of this X.509 extension. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object X509Extension {
   

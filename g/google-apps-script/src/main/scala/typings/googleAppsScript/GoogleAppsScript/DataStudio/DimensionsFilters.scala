@@ -9,23 +9,21 @@ import typings.googleAppsScript.googleAppsScriptStrings.IN_LIST
 import typings.googleAppsScript.googleAppsScriptStrings.IS_NULL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionsFilters extends StObject {
   
   /** The name of the field to be filtered */
-  var fieldName: String = js.native
+  var fieldName: String
   
   /** The operator to apply. */
-  var operator: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator = js.native
+  var operator: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator
   
   /** Whether data matching this filter should be included or excluded from the getData() response. */
-  var `type`: INCLUDE | EXCLUDE = js.native
+  var `type`: INCLUDE | EXCLUDE
   
   /** An array of values to use for the operator. */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object DimensionsFilters {
   

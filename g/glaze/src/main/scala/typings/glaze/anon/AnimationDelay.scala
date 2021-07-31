@@ -17,207 +17,141 @@ import typings.glaze.glazeStrings.spacing
 import typings.glaze.glazeStrings.zIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationDelay extends StObject {
   
-  val animationDelay: duration = js.native
+  val animationDelay: duration
   
-  val animationDuration: duration = js.native
+  val animationDuration: duration
   
-  val background: typings.glaze.glazeStrings.color = js.native
+  val background: typings.glaze.glazeStrings.color
   
-  val backgroundColor: typings.glaze.glazeStrings.color = js.native
+  val backgroundColor: typings.glaze.glazeStrings.color
   
-  val border: typings.glaze.glazeStrings.border = js.native
+  val border: typings.glaze.glazeStrings.border
   
-  val borderBottom: typings.glaze.glazeStrings.border = js.native
+  val borderBottom: typings.glaze.glazeStrings.border
   
-  val borderBottomColor: typings.glaze.glazeStrings.color = js.native
+  val borderBottomColor: typings.glaze.glazeStrings.color
   
-  val borderBottomLeftRadius: radius = js.native
+  val borderBottomLeftRadius: radius
   
-  val borderBottomRightRadius: radius = js.native
+  val borderBottomRightRadius: radius
   
-  val borderBottomWidth: typings.glaze.glazeStrings.borderWidth = js.native
+  val borderBottomWidth: typings.glaze.glazeStrings.borderWidth
   
-  val borderColor: typings.glaze.glazeStrings.color = js.native
+  val borderColor: typings.glaze.glazeStrings.color
   
-  val borderLeft: typings.glaze.glazeStrings.border = js.native
+  val borderLeft: typings.glaze.glazeStrings.border
   
-  val borderLeftColor: typings.glaze.glazeStrings.color = js.native
+  val borderLeftColor: typings.glaze.glazeStrings.color
   
-  val borderLeftWidth: typings.glaze.glazeStrings.borderWidth = js.native
+  val borderLeftWidth: typings.glaze.glazeStrings.borderWidth
   
-  val borderRadius: radius = js.native
+  val borderRadius: radius
   
-  val borderRight: typings.glaze.glazeStrings.border = js.native
+  val borderRight: typings.glaze.glazeStrings.border
   
-  val borderRightColor: typings.glaze.glazeStrings.color = js.native
+  val borderRightColor: typings.glaze.glazeStrings.color
   
-  val borderRightWidth: typings.glaze.glazeStrings.borderWidth = js.native
+  val borderRightWidth: typings.glaze.glazeStrings.borderWidth
   
-  val borderTop: typings.glaze.glazeStrings.border = js.native
+  val borderTop: typings.glaze.glazeStrings.border
   
-  val borderTopColor: typings.glaze.glazeStrings.color = js.native
+  val borderTopColor: typings.glaze.glazeStrings.color
   
-  val borderTopLeftRadius: radius = js.native
+  val borderTopLeftRadius: radius
   
-  val borderTopRightRadius: radius = js.native
+  val borderTopRightRadius: radius
   
-  val borderTopWidth: typings.glaze.glazeStrings.borderWidth = js.native
+  val borderTopWidth: typings.glaze.glazeStrings.borderWidth
   
-  val borderWidth: typings.glaze.glazeStrings.borderWidth = js.native
+  val borderWidth: typings.glaze.glazeStrings.borderWidth
   
-  val bottom: spacing = js.native
+  val bottom: spacing
   
-  val boxShadow: shadow = js.native
+  val boxShadow: shadow
   
-  val color: typings.glaze.glazeStrings.color = js.native
+  val color: typings.glaze.glazeStrings.color
   
-  val columnGap: spacing = js.native
+  val columnGap: spacing
   
-  val flexBasis: size = js.native
+  val flexBasis: size
   
-  val fontFamily: typings.glaze.glazeStrings.fontFamily = js.native
+  val fontFamily: typings.glaze.glazeStrings.fontFamily
   
-  val fontSize: typings.glaze.glazeStrings.fontSize = js.native
+  val fontSize: typings.glaze.glazeStrings.fontSize
   
-  val fontWeight: typings.glaze.glazeStrings.fontWeight = js.native
+  val fontWeight: typings.glaze.glazeStrings.fontWeight
   
-  val gap: spacing = js.native
+  val gap: spacing
   
-  val gridColumnGap: spacing = js.native
+  val gridColumnGap: spacing
   
-  val gridGap: spacing = js.native
+  val gridGap: spacing
   
-  val gridRowGap: spacing = js.native
+  val gridRowGap: spacing
   
-  val height: size = js.native
+  val height: size
   
-  val left: spacing = js.native
+  val left: spacing
   
-  val letterSpacing: typings.glaze.glazeStrings.letterSpacing = js.native
+  val letterSpacing: typings.glaze.glazeStrings.letterSpacing
   
-  val lineHeight: typings.glaze.glazeStrings.lineHeight = js.native
+  val lineHeight: typings.glaze.glazeStrings.lineHeight
   
-  val margin: spacing = js.native
+  val margin: spacing
   
-  val marginBottom: spacing = js.native
+  val marginBottom: spacing
   
-  val marginLeft: spacing = js.native
+  val marginLeft: spacing
   
-  val marginRight: spacing = js.native
+  val marginRight: spacing
   
-  val marginTop: spacing = js.native
+  val marginTop: spacing
   
-  val maxHeight: size = js.native
+  val maxHeight: size
   
-  val maxWidth: size = js.native
+  val maxWidth: size
   
-  val minHeight: size = js.native
+  val minHeight: size
   
-  val minWidth: size = js.native
+  val minWidth: size
   
-  val opacity: typings.glaze.glazeStrings.opacity = js.native
+  val opacity: typings.glaze.glazeStrings.opacity
   
-  val outlineColor: typings.glaze.glazeStrings.color = js.native
+  val outlineColor: typings.glaze.glazeStrings.color
   
-  val padding: spacing = js.native
+  val padding: spacing
   
-  val paddingBottom: spacing = js.native
+  val paddingBottom: spacing
   
-  val paddingRight: spacing = js.native
+  val paddingRight: spacing
   
-  val paddingTop: spacing = js.native
+  val paddingTop: spacing
   
-  val right: spacing = js.native
+  val right: spacing
   
-  val rowGap: spacing = js.native
+  val rowGap: spacing
   
-  val textShadow: shadow = js.native
+  val textShadow: shadow
   
-  val top: spacing = js.native
+  val top: spacing
   
-  val transitionDelay: duration = js.native
+  val transitionDelay: duration
   
-  val transitionDuration: duration = js.native
+  val transitionDuration: duration
   
-  val width: size = js.native
+  val width: size
   
-  val zIndex: typings.glaze.glazeStrings.zIndex = js.native
+  val zIndex: typings.glaze.glazeStrings.zIndex
 }
 object AnimationDelay {
   
   @scala.inline
-  def apply(
-    animationDelay: duration,
-    animationDuration: duration,
-    background: color,
-    backgroundColor: color,
-    border: border,
-    borderBottom: border,
-    borderBottomColor: color,
-    borderBottomLeftRadius: radius,
-    borderBottomRightRadius: radius,
-    borderBottomWidth: borderWidth,
-    borderColor: color,
-    borderLeft: border,
-    borderLeftColor: color,
-    borderLeftWidth: borderWidth,
-    borderRadius: radius,
-    borderRight: border,
-    borderRightColor: color,
-    borderRightWidth: borderWidth,
-    borderTop: border,
-    borderTopColor: color,
-    borderTopLeftRadius: radius,
-    borderTopRightRadius: radius,
-    borderTopWidth: borderWidth,
-    borderWidth: borderWidth,
-    bottom: spacing,
-    boxShadow: shadow,
-    color: color,
-    columnGap: spacing,
-    flexBasis: size,
-    fontFamily: fontFamily,
-    fontSize: fontSize,
-    fontWeight: fontWeight,
-    gap: spacing,
-    gridColumnGap: spacing,
-    gridGap: spacing,
-    gridRowGap: spacing,
-    height: size,
-    left: spacing,
-    letterSpacing: letterSpacing,
-    lineHeight: lineHeight,
-    margin: spacing,
-    marginBottom: spacing,
-    marginLeft: spacing,
-    marginRight: spacing,
-    marginTop: spacing,
-    maxHeight: size,
-    maxWidth: size,
-    minHeight: size,
-    minWidth: size,
-    opacity: opacity,
-    outlineColor: color,
-    padding: spacing,
-    paddingBottom: spacing,
-    paddingRight: spacing,
-    paddingTop: spacing,
-    right: spacing,
-    rowGap: spacing,
-    textShadow: shadow,
-    top: spacing,
-    transitionDelay: duration,
-    transitionDuration: duration,
-    width: size,
-    zIndex: zIndex
-  ): AnimationDelay = {
-    val __obj = js.Dynamic.literal(animationDelay = animationDelay.asInstanceOf[js.Any], animationDuration = animationDuration.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], borderBottom = borderBottom.asInstanceOf[js.Any], borderBottomColor = borderBottomColor.asInstanceOf[js.Any], borderBottomLeftRadius = borderBottomLeftRadius.asInstanceOf[js.Any], borderBottomRightRadius = borderBottomRightRadius.asInstanceOf[js.Any], borderBottomWidth = borderBottomWidth.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], borderLeft = borderLeft.asInstanceOf[js.Any], borderLeftColor = borderLeftColor.asInstanceOf[js.Any], borderLeftWidth = borderLeftWidth.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderRight = borderRight.asInstanceOf[js.Any], borderRightColor = borderRightColor.asInstanceOf[js.Any], borderRightWidth = borderRightWidth.asInstanceOf[js.Any], borderTop = borderTop.asInstanceOf[js.Any], borderTopColor = borderTopColor.asInstanceOf[js.Any], borderTopLeftRadius = borderTopLeftRadius.asInstanceOf[js.Any], borderTopRightRadius = borderTopRightRadius.asInstanceOf[js.Any], borderTopWidth = borderTopWidth.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], bottom = bottom.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], columnGap = columnGap.asInstanceOf[js.Any], flexBasis = flexBasis.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], gap = gap.asInstanceOf[js.Any], gridColumnGap = gridColumnGap.asInstanceOf[js.Any], gridGap = gridGap.asInstanceOf[js.Any], gridRowGap = gridRowGap.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginBottom = marginBottom.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], outlineColor = outlineColor.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], paddingBottom = paddingBottom.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], paddingTop = paddingTop.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], rowGap = rowGap.asInstanceOf[js.Any], textShadow = textShadow.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], transitionDelay = transitionDelay.asInstanceOf[js.Any], transitionDuration = transitionDuration.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+  def apply(): AnimationDelay = {
+    val __obj = js.Dynamic.literal(animationDelay = "duration", animationDuration = "duration", background = "color", backgroundColor = "color", border = "border", borderBottom = "border", borderBottomColor = "color", borderBottomLeftRadius = "radius", borderBottomRightRadius = "radius", borderBottomWidth = "borderWidth", borderColor = "color", borderLeft = "border", borderLeftColor = "color", borderLeftWidth = "borderWidth", borderRadius = "radius", borderRight = "border", borderRightColor = "color", borderRightWidth = "borderWidth", borderTop = "border", borderTopColor = "color", borderTopLeftRadius = "radius", borderTopRightRadius = "radius", borderTopWidth = "borderWidth", borderWidth = "borderWidth", bottom = "spacing", boxShadow = "shadow", color = "color", columnGap = "spacing", flexBasis = "size", fontFamily = "fontFamily", fontSize = "fontSize", fontWeight = "fontWeight", gap = "spacing", gridColumnGap = "spacing", gridGap = "spacing", gridRowGap = "spacing", height = "size", left = "spacing", letterSpacing = "letterSpacing", lineHeight = "lineHeight", margin = "spacing", marginBottom = "spacing", marginLeft = "spacing", marginRight = "spacing", marginTop = "spacing", maxHeight = "size", maxWidth = "size", minHeight = "size", minWidth = "size", opacity = "opacity", outlineColor = "color", padding = "spacing", paddingBottom = "spacing", paddingRight = "spacing", paddingTop = "spacing", right = "spacing", rowGap = "spacing", textShadow = "shadow", top = "spacing", transitionDelay = "duration", transitionDuration = "duration", width = "size", zIndex = "zIndex")
     __obj.asInstanceOf[AnimationDelay]
   }
   

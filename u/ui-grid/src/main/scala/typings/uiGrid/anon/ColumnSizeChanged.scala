@@ -4,10 +4,8 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.resizeColumns.columnSizeChangedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnSizeChanged extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ColumnSizeChanged extends StObject {
     * @param {ng.IScope} scope Grid Scope
     * @param {columnSizeChangedHandler} handler Callback
     */
-  def columnSizeChanged(scope: IScope, handler: columnSizeChangedHandler): Unit = js.native
+  def columnSizeChanged(scope: IScope, handler: columnSizeChangedHandler): Unit
 }
 object ColumnSizeChanged {
   

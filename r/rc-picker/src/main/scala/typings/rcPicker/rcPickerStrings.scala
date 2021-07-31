@@ -6,7 +6,6 @@ import typings.rcPicker.pickerTriggerMod.Placement
 import typings.rcPicker.rangePickerMod.RangeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcPickerStrings {
@@ -47,12 +46,16 @@ object rcPickerStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottomLeft extends Placement
+  sealed trait bottomLeft
+    extends StObject
+       with Placement
   @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait bottomRight extends Placement
+  sealed trait bottomRight
+    extends StObject
+       with Placement
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
@@ -63,7 +66,8 @@ object rcPickerStrings {
   
   @js.native
   sealed trait date
-    extends PanelMode
+    extends StObject
+       with PanelMode
        with PickerMode
   @scala.inline
   def date: date = "date".asInstanceOf[date]
@@ -74,7 +78,9 @@ object rcPickerStrings {
   def dateRender: dateRender = "dateRender".asInstanceOf[dateRender]
   
   @js.native
-  sealed trait decade extends PanelMode
+  sealed trait decade
+    extends StObject
+       with PanelMode
   @scala.inline
   def decade: decade = "decade".asInstanceOf[decade]
   
@@ -109,7 +115,9 @@ object rcPickerStrings {
   def disabledTime: disabledTime = "disabledTime".asInstanceOf[disabledTime]
   
   @js.native
-  sealed trait end extends RangeType
+  sealed trait end
+    extends StObject
+       with RangeType
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
@@ -195,7 +203,8 @@ object rcPickerStrings {
   
   @js.native
   sealed trait month
-    extends PanelMode
+    extends StObject
+       with PanelMode
        with PickerMode
   @scala.inline
   def month: month = "month".asInstanceOf[month]
@@ -277,7 +286,8 @@ object rcPickerStrings {
   
   @js.native
   sealed trait quarter
-    extends PanelMode
+    extends StObject
+       with PanelMode
        with PickerMode
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
@@ -323,7 +333,9 @@ object rcPickerStrings {
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait start extends RangeType
+  sealed trait start
+    extends StObject
+       with RangeType
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
@@ -354,18 +366,23 @@ object rcPickerStrings {
   
   @js.native
   sealed trait time
-    extends PanelMode
+    extends StObject
+       with PanelMode
        with PickerMode
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait topLeft extends Placement
+  sealed trait topLeft
+    extends StObject
+       with Placement
   @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait topRight extends Placement
+  sealed trait topRight
+    extends StObject
+       with Placement
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   
@@ -386,14 +403,16 @@ object rcPickerStrings {
   
   @js.native
   sealed trait week
-    extends PanelMode
+    extends StObject
+       with PanelMode
        with PickerMode
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
   sealed trait year
-    extends PanelMode
+    extends StObject
+       with PanelMode
        with PickerMode
   @scala.inline
   def year: year = "year".asInstanceOf[year]

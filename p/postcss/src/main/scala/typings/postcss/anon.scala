@@ -8,17 +8,15 @@ import typings.postcss.mod.TransformCallback
 import typings.postcss.mod._AcceptedPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -39,7 +37,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Fast extends StObject {
     
     /**
@@ -51,13 +48,13 @@ object anon {
       * values, set fast: 'rem' to first check whether a value has the rem
       * unit, and only if it does perform the regexp check.
       */
-    var fast: js.UndefOr[String] = js.native
+    var fast: js.UndefOr[String] = js.undefined
     
     /**
       * Property names. The method will only search for values that match
       * regexp  within declarations of listed properties.
       */
-    var props: js.UndefOr[js.Array[String]] = js.native
+    var props: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Fast {
     
@@ -91,16 +88,13 @@ object anon {
   trait FnCall extends StObject {
     
     def apply[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def apply[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def apply[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Result, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def apply[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ Result, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
     def apply[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def apply[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   }
   
   @js.native
@@ -110,16 +104,15 @@ object anon {
     def apply[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Result | TResult] = js.native
   }
   
-  @js.native
   trait Map extends StObject {
     
-    var map: js.UndefOr[SourceMapOptions] = js.native
+    var map: js.UndefOr[SourceMapOptions] = js.undefined
     
     /**
       * The path where you'll put the output CSS file. You should always
       * set "to" to generate correct source maps.
       */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object Map {
     
@@ -147,12 +140,11 @@ object anon {
   }
   
   /* Inlined std.Pick<postcss.postcss.ProcessOptions, 'map' | 'from'> */
-  @js.native
   trait PickProcessOptionsmapfrom extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[SourceMapOptions | Boolean] = js.native
+    var map: js.UndefOr[SourceMapOptions | Boolean] = js.undefined
   }
   object PickProcessOptionsmapfrom {
     
@@ -179,10 +171,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Postcss extends _AcceptedPlugin {
+  trait Postcss
+    extends StObject
+       with _AcceptedPlugin {
     
-    var postcss: TransformCallback | Processor = js.native
+    var postcss: TransformCallback | Processor
   }
   object Postcss {
     
@@ -203,6 +196,5 @@ object anon {
     }
   }
   
-  @js.native
   trait ToString extends StObject
 }

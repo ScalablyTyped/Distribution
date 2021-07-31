@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * independently of its normal lifecycle.  See  for more information on types
   * of Android tests.
   */
-@js.native
 trait SchemaAndroidInstrumentationTest extends StObject {
   
   /**
     * The java package for the test to be executed. Required
     */
-  var testPackageId: js.UndefOr[String] = js.native
+  var testPackageId: js.UndefOr[String] = js.undefined
   
   /**
     * The InstrumentationTestRunner class. Required
     */
-  var testRunnerClass: js.UndefOr[String] = js.native
+  var testRunnerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Each target must be fully qualified with the package name or class name,
@@ -30,13 +28,13 @@ trait SchemaAndroidInstrumentationTest extends StObject {
     * package_name.class_name#method_name&quot;  If empty, all targets in the
     * module will be run.
     */
-  var testTargets: js.UndefOr[js.Array[String]] = js.native
+  var testTargets: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The flag indicates whether Android Test Orchestrator will be used to run
     * test or not.
     */
-  var useOrchestrator: js.UndefOr[Boolean] = js.native
+  var useOrchestrator: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAndroidInstrumentationTest {
   

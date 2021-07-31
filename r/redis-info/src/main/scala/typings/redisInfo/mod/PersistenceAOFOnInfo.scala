@@ -3,27 +3,25 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.Flag.ON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceAOFOnInfo extends StObject {
   
-  var aof_base_size: String = js.native
+  var aof_base_size: String
   
-  var aof_buffer_length: String = js.native
+  var aof_buffer_length: String
   
-  var aof_current_size: String = js.native
+  var aof_current_size: String
   
-  var aof_delayed_fsync: String = js.native
+  var aof_delayed_fsync: String
   
-  var aof_enabled: ON = js.native
+  var aof_enabled: ON
   
-  var aof_pending_bio_fsync: String = js.native
+  var aof_pending_bio_fsync: String
   
-  var aof_pending_rewrite: Flag = js.native
+  var aof_pending_rewrite: Flag
   
-  var aof_rewrite_buffer_length: String = js.native
+  var aof_rewrite_buffer_length: String
 }
 object PersistenceAOFOnInfo {
   

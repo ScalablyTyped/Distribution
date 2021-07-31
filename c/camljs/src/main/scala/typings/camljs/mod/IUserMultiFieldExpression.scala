@@ -2,32 +2,30 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserMultiFieldExpression extends StObject {
   
   /** DEPRECATED: "Eq" operation in CAML works exactly the same as "Includes". To avoid confusion, please use Includes. */
-  def EqualTo(value: js.Any): IExpression = js.native
+  def EqualTo(value: js.Any): IExpression
   
   /** DEPRECATED: use "IncludesSuchItemThat().ValueAsText().EqualTo(value)" instead. */
-  def Includes(value: js.Any): IExpression = js.native
+  def Includes(value: js.Any): IExpression
   
   /** Checks a condition against every item in the multi lookup value */
-  def IncludesSuchItemThat(): IUserFieldExpression = js.native
+  def IncludesSuchItemThat(): IUserFieldExpression
   
   /** Checks whether the field values collection is not empty */
-  def IsNotNull(): IExpression = js.native
+  def IsNotNull(): IExpression
   
   /** Checks whether the field values collection is empty */
-  def IsNull(): IExpression = js.native
+  def IsNull(): IExpression
   
   /** DEPRECATED: "Neq" operation in CAML works exactly the same as "NotIncludes". To avoid confusion, please use NotIncludes. */
-  def NotEqualTo(value: js.Any): IExpression = js.native
+  def NotEqualTo(value: js.Any): IExpression
   
   /** DEPRECATED: use "IncludesSuchItemThat().ValueAsText().NotEqualTo(value)" instead. */
-  def NotIncludes(value: js.Any): IExpression = js.native
+  def NotIncludes(value: js.Any): IExpression
 }
 object IUserMultiFieldExpression {
   

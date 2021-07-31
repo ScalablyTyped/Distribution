@@ -4,33 +4,33 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-jsfl-runner", "createJSFL")
+  @JSImport("node-jsfl-runner", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createJSFL(
     jsfl: JSFL,
     fileName: String,
-    initParams: js.Array[_],
+    initParams: js.Array[js.Any],
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSFL")(jsfl.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], initParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-jsfl-runner", "deleteJSFL")
-  @js.native
-  def deleteJSFL(fileName: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def deleteJSFL(fileName: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteJSFL")(fileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-jsfl-runner", "runJSFL")
-  @js.native
-  def runJSFL(flashLocation: String, fileName: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+  @scala.inline
+  def runJSFL(flashLocation: String, fileName: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runJSFL")(flashLocation.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait JSFL
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    def init(args: js.Any*): Unit = js.native
+    def init(args: js.Any*): Unit
   }
   object JSFL {
     

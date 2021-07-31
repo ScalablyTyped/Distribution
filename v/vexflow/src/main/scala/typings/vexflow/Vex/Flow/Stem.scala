@@ -5,40 +5,38 @@ import typings.vexflow.anon.BaseY
 import typings.vexflow.anon.FillStyle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stem extends StObject {
   
-  def applyStyle(context: IRenderContext): Stem = js.native
+  def applyStyle(context: IRenderContext): Stem
   
-  def draw(): Unit = js.native
+  def draw(): Unit
   
-  def getBoundingBox(): BoundingBox = js.native
+  def getBoundingBox(): BoundingBox
   
-  def getCategory(): String = js.native
+  def getCategory(): String
   
-  def getExtents(): BaseY = js.native
+  def getExtents(): BaseY
   
-  def getHeight(): Double = js.native
+  def getHeight(): Double
   
-  def getStyle(): FillStyle_ = js.native
+  def getStyle(): FillStyle_
   
   //inconsistent API: this should be set via the options object in the constructor
-  var hide: Boolean = js.native
+  var hide: Boolean
   
-  def setContext(context: IRenderContext): Stem = js.native
+  def setContext(context: IRenderContext): Stem
   
-  def setDirection(direction: Double): Unit = js.native
+  def setDirection(direction: Double): Unit
   
-  def setExtension(extension: Double): Unit = js.native
+  def setExtension(`extension`: Double): Unit
   
-  def setNoteHeadXBounds(x_begin: Double, x_end: Double): Stem = js.native
+  def setNoteHeadXBounds(x_begin: Double, x_end: Double): Stem
   
-  def setStyle(style: FillStyle_): Unit = js.native
+  def setStyle(style: FillStyle_): Unit
   
-  def setYBounds(y_top: Double, y_bottom: Double): Unit = js.native
+  def setYBounds(y_top: Double, y_bottom: Double): Unit
 }
 object Stem {
   

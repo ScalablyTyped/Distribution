@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object SocketActivityKind extends StObject {
   
   /** A socket type of DatagramSocket . */
   @js.native
-  sealed trait datagramSocket extends SocketActivityKind
+  sealed trait datagramSocket
+    extends StObject
+       with SocketActivityKind
   
   /** The socket type is unknown. */
   @js.native
-  sealed trait none extends SocketActivityKind
+  sealed trait none
+    extends StObject
+       with SocketActivityKind
   
   /** A socket type of StreamSocket . */
   @js.native
-  sealed trait streamSocket extends SocketActivityKind
+  sealed trait streamSocket
+    extends StObject
+       with SocketActivityKind
   
   /** A socket type of StreamSocketListener . */
   @js.native
-  sealed trait streamSocketListener extends SocketActivityKind
+  sealed trait streamSocketListener
+    extends StObject
+       with SocketActivityKind
 }

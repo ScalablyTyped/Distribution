@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserRewardedContentAssignedTargetingOptionDetails extends StObject {
   
   /** Required. The targeting_option_id field when targeting_type is `TARGETING_TYPE_USER_REWARDED_CONTENT`. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
   
   /** Output only. User rewarded content status for video ads. */
-  var userRewardedContent: js.UndefOr[String] = js.native
+  var userRewardedContent: js.UndefOr[String] = js.undefined
 }
 object UserRewardedContentAssignedTargetingOptionDetails {
   

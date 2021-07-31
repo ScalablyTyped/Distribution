@@ -2,17 +2,16 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtistAlbumsParams
-  extends ArtistParams
+  extends StObject
+     with ArtistParams
      with Pageable {
   
-  var g_album_name: js.UndefOr[TBoolean] = js.native
+  var g_album_name: js.UndefOr[TBoolean] = js.undefined
   
-  var s_release_date: js.UndefOr[TSort] = js.native
+  var s_release_date: js.UndefOr[TSort] = js.undefined
 }
 object ArtistAlbumsParams {
   

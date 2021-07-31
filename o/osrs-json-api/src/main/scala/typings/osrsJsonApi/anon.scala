@@ -5,103 +5,101 @@ import typings.osrsJsonApi.mod.hiscores.RankLevelXpObject
 import typings.osrsJsonApi.mod.hiscores.RankScoreObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AbyssalSire extends StObject {
     
-    var `Abyssal Sire`: RankScoreObject = js.native
+    var `Abyssal Sire`: RankScoreObject
     
-    var `Alchemical Hydra`: RankScoreObject = js.native
+    var `Alchemical Hydra`: RankScoreObject
     
-    var `Barrows Chests`: RankScoreObject = js.native
+    var `Barrows Chests`: RankScoreObject
     
-    var Bryophyta: RankScoreObject = js.native
+    var Bryophyta: RankScoreObject
     
-    var Callisto: RankScoreObject = js.native
+    var Callisto: RankScoreObject
     
-    var Cerberus: RankScoreObject = js.native
+    var Cerberus: RankScoreObject
     
-    var `Chambers of Xeric`: RankScoreObject = js.native
+    var `Chambers of Xeric`: RankScoreObject
     
     @JSName("Chambers of Xeric: Challenge Mode")
-    var `Chambers of XericColon Challenge Mode`: RankScoreObject = js.native
+    var `Chambers of XericColon Challenge Mode`: RankScoreObject
     
-    var `Chaos Elemental`: RankScoreObject = js.native
+    var `Chaos Elemental`: RankScoreObject
     
-    var `Chaos Fanatic`: RankScoreObject = js.native
+    var `Chaos Fanatic`: RankScoreObject
     
-    var `Commander Zilyana`: RankScoreObject = js.native
+    var `Commander Zilyana`: RankScoreObject
     
-    var `Corporeal Beast`: RankScoreObject = js.native
+    var `Corporeal Beast`: RankScoreObject
     
-    var `Crazy Archaeologist`: RankScoreObject = js.native
+    var `Crazy Archaeologist`: RankScoreObject
     
-    var `Dagannoth Prime`: RankScoreObject = js.native
+    var `Dagannoth Prime`: RankScoreObject
     
-    var `Dagannoth Rex`: RankScoreObject = js.native
+    var `Dagannoth Rex`: RankScoreObject
     
-    var `Dagannoth Supreme`: RankScoreObject = js.native
+    var `Dagannoth Supreme`: RankScoreObject
     
-    var `Deranged Archaeologist`: RankScoreObject = js.native
+    var `Deranged Archaeologist`: RankScoreObject
     
-    var `General Graardor`: RankScoreObject = js.native
+    var `General Graardor`: RankScoreObject
     
-    var `Giant Mole`: RankScoreObject = js.native
+    var `Giant Mole`: RankScoreObject
     
-    var `Grotesque Guardians`: RankScoreObject = js.native
+    var `Grotesque Guardians`: RankScoreObject
     
-    var Hespori: RankScoreObject = js.native
+    var Hespori: RankScoreObject
     
     @JSName("K'ril Tsutsaroth")
-    var `KApostropheril Tsutsaroth`: RankScoreObject = js.native
+    var `KApostropheril Tsutsaroth`: RankScoreObject
     
-    var `Kalphite Queen`: RankScoreObject = js.native
+    var `Kalphite Queen`: RankScoreObject
     
-    var `King Black Dragon`: RankScoreObject = js.native
+    var `King Black Dragon`: RankScoreObject
     
-    var Kraken: RankScoreObject = js.native
+    var Kraken: RankScoreObject
     
     @JSName("Kree'Arra")
-    var KreeApostropheArra: RankScoreObject = js.native
+    var KreeApostropheArra: RankScoreObject
     
-    var Mimic: RankScoreObject = js.native
+    var Mimic: RankScoreObject
     
-    var Obor: RankScoreObject = js.native
+    var Obor: RankScoreObject
     
-    var Sarachnis: RankScoreObject = js.native
+    var Sarachnis: RankScoreObject
     
-    var Scorpia: RankScoreObject = js.native
+    var Scorpia: RankScoreObject
     
-    var Skotizo: RankScoreObject = js.native
+    var Skotizo: RankScoreObject
     
-    var `The Corrupted Gauntlet`: RankScoreObject = js.native
+    var `The Corrupted Gauntlet`: RankScoreObject
     
-    var `The Gauntlet`: RankScoreObject = js.native
+    var `The Gauntlet`: RankScoreObject
     
-    var `Theatre of Blood`: RankScoreObject = js.native
+    var `Theatre of Blood`: RankScoreObject
     
-    var `Thermonuclear Smoke Devil`: RankScoreObject = js.native
+    var `Thermonuclear Smoke Devil`: RankScoreObject
     
-    var `TzKal-Zuk`: RankScoreObject = js.native
+    var `TzKal-Zuk`: RankScoreObject
     
-    var `TzTok-Jad`: RankScoreObject = js.native
+    var `TzTok-Jad`: RankScoreObject
     
-    var Venenatis: RankScoreObject = js.native
+    var Venenatis: RankScoreObject
     
     @JSName("Vet'ion")
-    var VetApostropheion: RankScoreObject = js.native
+    var VetApostropheion: RankScoreObject
     
-    var Vorkath: RankScoreObject = js.native
+    var Vorkath: RankScoreObject
     
-    var Wintertodt: RankScoreObject = js.native
+    var Wintertodt: RankScoreObject
     
-    var Zalcano: RankScoreObject = js.native
+    var Zalcano: RankScoreObject
     
-    var Zulrah: RankScoreObject = js.native
+    var Zulrah: RankScoreObject
   }
   object AbyssalSire {
     
@@ -317,56 +315,55 @@ object anon {
     }
   }
   
-  @js.native
   trait Agility extends StObject {
     
-    var agility: RankLevelXpObject = js.native
+    var agility: RankLevelXpObject
     
-    var attack: RankLevelXpObject = js.native
+    var attack: RankLevelXpObject
     
-    var construction: RankLevelXpObject = js.native
+    var construction: RankLevelXpObject
     
-    var cooking: RankLevelXpObject = js.native
+    var cooking: RankLevelXpObject
     
-    var crafting: RankLevelXpObject = js.native
+    var crafting: RankLevelXpObject
     
-    var defence: RankLevelXpObject = js.native
+    var defence: RankLevelXpObject
     
-    var farming: RankLevelXpObject = js.native
+    var farming: RankLevelXpObject
     
-    var firemaking: RankLevelXpObject = js.native
+    var firemaking: RankLevelXpObject
     
-    var fishing: RankLevelXpObject = js.native
+    var fishing: RankLevelXpObject
     
-    var fletching: RankLevelXpObject = js.native
+    var fletching: RankLevelXpObject
     
-    var herblore: RankLevelXpObject = js.native
+    var herblore: RankLevelXpObject
     
-    var hitpoints: RankLevelXpObject = js.native
+    var hitpoints: RankLevelXpObject
     
-    var hunter: RankLevelXpObject = js.native
+    var hunter: RankLevelXpObject
     
-    var magic: RankLevelXpObject = js.native
+    var magic: RankLevelXpObject
     
-    var mining: RankLevelXpObject = js.native
+    var mining: RankLevelXpObject
     
-    var overall: RankLevelXpObject = js.native
+    var overall: RankLevelXpObject
     
-    var prayer: RankLevelXpObject = js.native
+    var prayer: RankLevelXpObject
     
-    var ranged: RankLevelXpObject = js.native
+    var ranged: RankLevelXpObject
     
-    var runecraft: RankLevelXpObject = js.native
+    var runecraft: RankLevelXpObject
     
-    var slayer: RankLevelXpObject = js.native
+    var slayer: RankLevelXpObject
     
-    var smithing: RankLevelXpObject = js.native
+    var smithing: RankLevelXpObject
     
-    var strength: RankLevelXpObject = js.native
+    var strength: RankLevelXpObject
     
-    var thieving: RankLevelXpObject = js.native
+    var thieving: RankLevelXpObject
     
-    var woodcutting: RankLevelXpObject = js.native
+    var woodcutting: RankLevelXpObject
   }
   object Agility {
     
@@ -478,22 +475,21 @@ object anon {
     }
   }
   
-  @js.native
   trait All extends StObject {
     
-    var all: RankScoreObject = js.native
+    var all: RankScoreObject
     
-    var beginner: RankScoreObject = js.native
+    var beginner: RankScoreObject
     
-    var easy: RankScoreObject = js.native
+    var easy: RankScoreObject
     
-    var elite: RankScoreObject = js.native
+    var elite: RankScoreObject
     
-    var hard: RankScoreObject = js.native
+    var hard: RankScoreObject
     
-    var master: RankScoreObject = js.native
+    var master: RankScoreObject
     
-    var medium: RankScoreObject = js.native
+    var medium: RankScoreObject
   }
   object All {
     
@@ -537,34 +533,33 @@ object anon {
     }
   }
   
-  @js.native
   trait Current extends StObject {
     
-    var current: TrendPriceObject = js.native
+    var current: TrendPriceObject
     
-    var day180: TrendPriceObject = js.native
+    var day180: TrendPriceObject
     
-    var day30: TrendPriceObject = js.native
+    var day30: TrendPriceObject
     
-    var day90: TrendPriceObject = js.native
+    var day90: TrendPriceObject
     
-    var description: String = js.native
+    var description: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var icon_large: String = js.native
+    var icon_large: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var members: Boolean = js.native
+    var members: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var today: TrendPriceObject = js.native
+    var today: TrendPriceObject
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var typeIcon: String = js.native
+    var typeIcon: String
   }
   object Current {
     
@@ -633,12 +628,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Hunter extends StObject {
     
-    var hunter: RankScoreObject = js.native
+    var hunter: RankScoreObject
     
-    var rogue: RankScoreObject = js.native
+    var rogue: RankScoreObject
   }
   object Hunter {
     

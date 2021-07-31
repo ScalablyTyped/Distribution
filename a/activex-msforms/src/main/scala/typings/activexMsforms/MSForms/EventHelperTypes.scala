@@ -25,31 +25,29 @@ import typings.activexMsforms.activexMsformsStrings.X
 import typings.activexMsforms.activexMsformsStrings.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type ContainerBeforeDragOverArgNames = js.Tuple8[Cancel, typings.activexMsforms.activexMsformsStrings.Control, Data, X, Y, State, Effect, Shift]
   
-  @js.native
   trait ContainerBeforeDragOverParameter extends StObject {
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Control: typings.activexMsforms.MSForms.Control = js.native
+    val Control: typings.activexMsforms.MSForms.Control
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val State: fmDragState = js.native
+    val State: fmDragState
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object ContainerBeforeDragOverParameter {
     
@@ -108,24 +106,23 @@ object EventHelperTypes {
     Shift
   ]
   
-  @js.native
   trait ContainerBeforeDropOrPasteParameter extends StObject {
     
-    val Action: fmAction = js.native
+    val Action: fmAction
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Control: typings.activexMsforms.MSForms.Control = js.native
+    val Control: typings.activexMsforms.MSForms.Control
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object ContainerBeforeDropOrPasteParameter {
     
@@ -175,20 +172,19 @@ object EventHelperTypes {
   
   type ContainerScrollArgNames = js.Tuple6[ActionX, ActionY, RequestDx, RequestDy, ActualDx, ActualDy]
   
-  @js.native
   trait ContainerScrollParameter extends StObject {
     
-    val ActionX: fmScrollAction = js.native
+    val ActionX: fmScrollAction
     
-    val ActionY: fmScrollAction = js.native
+    val ActionY: fmScrollAction
     
-    val ActualDx: ReturnSingle = js.native
+    val ActualDx: ReturnSingle
     
-    val ActualDy: ReturnSingle = js.native
+    val ActualDy: ReturnSingle
     
-    val RequestDx: Double = js.native
+    val RequestDx: Double
     
-    val RequestDy: Double = js.native
+    val RequestDy: Double
   }
   object ContainerScrollParameter {
     
@@ -230,22 +226,21 @@ object EventHelperTypes {
   
   type ControlBeforeDragOverArgNames = js.Tuple7[Cancel, Data, X, Y, DragState, Effect, Shift]
   
-  @js.native
   trait ControlBeforeDragOverParameter extends StObject {
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val DragState: fmDragState = js.native
+    val DragState: fmDragState
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object ControlBeforeDragOverParameter {
     
@@ -291,22 +286,21 @@ object EventHelperTypes {
   
   type ControlBeforeDropOrPasteArgNames = js.Tuple7[Cancel, Action, Data, X, Y, Effect, Shift]
   
-  @js.native
   trait ControlBeforeDropOrPasteParameter extends StObject {
     
-    val Action: fmAction = js.native
+    val Action: fmAction
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object ControlBeforeDropOrPasteParameter {
     
@@ -352,22 +346,21 @@ object EventHelperTypes {
   
   type ErrorArgNames = js.Tuple7[Number, Description, SCode, Source, HelpFile, HelpContext, CancelDisplay]
   
-  @js.native
   trait ErrorParameter extends StObject {
     
-    val CancelDisplay: ReturnBoolean = js.native
+    val CancelDisplay: ReturnBoolean
     
-    val Description: ReturnString = js.native
+    val Description: ReturnString
     
-    val HelpContext: Double = js.native
+    val HelpContext: Double
     
-    val HelpFile: String = js.native
+    val HelpFile: String
     
-    val Number: Double = js.native
+    val Number: Double
     
-    val SCode: Double = js.native
+    val SCode: Double
     
-    val Source: String = js.native
+    val Source: String
   }
   object ErrorParameter {
     
@@ -423,26 +416,25 @@ object EventHelperTypes {
     Shift
   ]
   
-  @js.native
   trait MultiPageBeforeDragOverParameter extends StObject {
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Control: typings.activexMsforms.MSForms.Control = js.native
+    val Control: typings.activexMsforms.MSForms.Control
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val State: fmDragState = js.native
+    val State: fmDragState
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object MultiPageBeforeDragOverParameter {
     
@@ -506,26 +498,25 @@ object EventHelperTypes {
     Shift
   ]
   
-  @js.native
   trait MultiPageBeforeDropOrPasteParameter extends StObject {
     
-    val Action: fmAction = js.native
+    val Action: fmAction
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Control: typings.activexMsforms.MSForms.Control = js.native
+    val Control: typings.activexMsforms.MSForms.Control
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object MultiPageBeforeDropOrPasteParameter {
     
@@ -579,24 +570,23 @@ object EventHelperTypes {
   
   type MultiPageErrorArgNames = js.Tuple8[Index, Number, Description, SCode, Source, HelpFile, HelpContext, CancelDisplay]
   
-  @js.native
   trait MultiPageErrorParameter extends StObject {
     
-    val CancelDisplay: ReturnBoolean = js.native
+    val CancelDisplay: ReturnBoolean
     
-    val Description: ReturnString = js.native
+    val Description: ReturnString
     
-    val HelpContext: Double = js.native
+    val HelpContext: Double
     
-    val HelpFile: String = js.native
+    val HelpFile: String
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val Number: Double = js.native
+    val Number: Double
     
-    val SCode: Double = js.native
+    val SCode: Double
     
-    val Source: String = js.native
+    val Source: String
   }
   object MultiPageErrorParameter {
     
@@ -646,22 +636,21 @@ object EventHelperTypes {
   
   type MultiPageScrollArgNames = js.Tuple7[Index, ActionX, ActionY, RequestDx, RequestDy, ActualDx, ActualDy]
   
-  @js.native
   trait MultiPageScrollParameter extends StObject {
     
-    val ActionX: fmScrollAction = js.native
+    val ActionX: fmScrollAction
     
-    val ActionY: fmScrollAction = js.native
+    val ActionY: fmScrollAction
     
-    val ActualDx: ReturnSingle = js.native
+    val ActualDx: ReturnSingle
     
-    val ActualDy: ReturnSingle = js.native
+    val ActualDy: ReturnSingle
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val RequestDx: Double = js.native
+    val RequestDx: Double
     
-    val RequestDy: Double = js.native
+    val RequestDy: Double
   }
   object MultiPageScrollParameter {
     
@@ -707,24 +696,23 @@ object EventHelperTypes {
   
   type TabStripBeforeDragOverArgNames = js.Tuple8[Index, Cancel, Data, X, Y, DragState, Effect, Shift]
   
-  @js.native
   trait TabStripBeforeDragOverParameter extends StObject {
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val DragState: fmDragState = js.native
+    val DragState: fmDragState
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object TabStripBeforeDragOverParameter {
     
@@ -774,24 +762,23 @@ object EventHelperTypes {
   
   type TabStripBeforeDropOrPasteArgNames = js.Tuple8[Index, Cancel, Action, Data, X, Y, Effect, Shift]
   
-  @js.native
   trait TabStripBeforeDropOrPasteParameter extends StObject {
     
-    val Action: fmAction = js.native
+    val Action: fmAction
     
-    val Cancel: ReturnBoolean = js.native
+    val Cancel: ReturnBoolean
     
-    val Data: DataObject = js.native
+    val Data: DataObject
     
-    val Effect: ReturnEffect = js.native
+    val Effect: ReturnEffect
     
-    val Index: Double = js.native
+    val Index: Double
     
-    val Shift: Double = js.native
+    val Shift: Double
     
-    val X: Double = js.native
+    val X: Double
     
-    val Y: Double = js.native
+    val Y: Double
   }
   object TabStripBeforeDropOrPasteParameter {
     

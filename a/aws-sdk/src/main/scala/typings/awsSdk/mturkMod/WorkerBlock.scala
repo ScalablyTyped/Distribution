@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerBlock extends StObject {
   
   /**
     *  A message explaining the reason the Worker was blocked. 
     */
-  var Reason: js.UndefOr[String] = js.native
+  var Reason: js.UndefOr[String] = js.undefined
   
   /**
     *  The ID of the Worker who accepted the HIT.
     */
-  var WorkerId: js.UndefOr[CustomerId] = js.native
+  var WorkerId: js.UndefOr[CustomerId] = js.undefined
 }
 object WorkerBlock {
   

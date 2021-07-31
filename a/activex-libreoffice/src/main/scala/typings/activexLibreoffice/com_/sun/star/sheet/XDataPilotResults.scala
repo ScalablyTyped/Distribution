@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,24 +15,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSource
   * @see com.sun.star.sheet.XDataPilotMemberResults
   */
-@js.native
-trait XDataPilotResults extends XInterface {
+trait XDataPilotResults
+  extends StObject
+     with XInterface {
   
   /**
     * returns the result array.
     *
     * The outer sequence contains the value rows. The inner sequences contain the values for one row.
     */
-  val Results: SafeArray[SafeArray[DataResult]] = js.native
+  val Results: SafeArray[SafeArray[DataResult]]
   
-  def getFilteredResults(aFilters: SeqEquiv[DataPilotFieldFilter]): SafeArray[Double] = js.native
+  def getFilteredResults(aFilters: SeqEquiv[DataPilotFieldFilter]): SafeArray[Double]
   
   /**
     * returns the result array.
     *
     * The outer sequence contains the value rows. The inner sequences contain the values for one row.
     */
-  def getResults(): SafeArray[SafeArray[DataResult]] = js.native
+  def getResults(): SafeArray[SafeArray[DataResult]]
 }
 object XDataPilotResults {
   

@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A vertex represents a node in a LayoutNetwork. It holds layout-specific data for the node. */
@@ -104,15 +103,9 @@ class LayoutVertex () extends StObject {
 }
 object LayoutVertex {
   
-  /**
-    * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
-    * @param {LayoutVertex} m
-    * @param {LayoutVertex} n
-    */
-  /* static member */
-  @JSImport("go", "LayoutVertex.smartComparer")
+  @JSImport("go", "LayoutVertex")
   @js.native
-  def smartComparer(m: LayoutVertex, n: LayoutVertex): Double = js.native
+  val ^ : js.Any = js.native
   
   /**
     * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
@@ -120,7 +113,15 @@ object LayoutVertex {
     * @param {LayoutVertex} n
     */
   /* static member */
-  @JSImport("go", "LayoutVertex.standardComparer")
-  @js.native
-  def standardComparer(m: LayoutVertex, n: LayoutVertex): Double = js.native
+  @scala.inline
+  def smartComparer(m: LayoutVertex, n: LayoutVertex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("smartComparer")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
+    * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
+    * @param {LayoutVertex} m
+    * @param {LayoutVertex} n
+    */
+  /* static member */
+  @scala.inline
+  def standardComparer(m: LayoutVertex, n: LayoutVertex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("standardComparer")(m.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

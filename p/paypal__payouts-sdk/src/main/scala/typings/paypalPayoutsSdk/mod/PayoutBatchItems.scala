@@ -11,35 +11,33 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.SUCCESS
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.UNCLAIMED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayoutBatchItems extends StObject {
   
-  var activity_id: js.UndefOr[String] = js.native
+  var activity_id: js.UndefOr[String] = js.undefined
   
-  var currency_conversion: js.UndefOr[PayoutCurrencyConversion] = js.native
+  var currency_conversion: js.UndefOr[PayoutCurrencyConversion] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.native
+  var errors: js.UndefOr[js.Any] = js.undefined
   
-  var links: js.UndefOr[js.Array[LinkDescription]] = js.native
+  var links: js.UndefOr[js.Array[LinkDescription]] = js.undefined
   
-  var payout_batch_id: String = js.native
+  var payout_batch_id: String
   
-  var payout_item: PayoutItemDetail = js.native
+  var payout_item: PayoutItemDetail
   
-  var payout_item_fee: js.UndefOr[Currency] = js.native
+  var payout_item_fee: js.UndefOr[Currency] = js.undefined
   
-  var payout_item_id: String = js.native
+  var payout_item_id: String
   
-  var time_processed: js.UndefOr[String] = js.native
+  var time_processed: js.UndefOr[String] = js.undefined
   
-  var transaction_id: js.UndefOr[String] = js.native
+  var transaction_id: js.UndefOr[String] = js.undefined
   
   var transaction_status: js.UndefOr[
     BLOCKED | FAILED | ONHOLD | PENDING | REFUNDED | RETURNED | REVERSED | SUCCESS | UNCLAIMED
-  ] = js.native
+  ] = js.undefined
 }
 object PayoutBatchItems {
   

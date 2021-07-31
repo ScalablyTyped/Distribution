@@ -4,23 +4,21 @@ import typings.awsSdkClientS3Browser.typesMetricsFilterMod.MetricsFilter
 import typings.awsSdkClientS3Browser.typesMetricsFilterMod.UnmarshalledMetricsFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMetricsConfigurationMod {
   
-  @js.native
   trait MetricsConfiguration extends StObject {
     
     /**
       * <p>Specifies a metrics configuration filter. The metrics configuration will only include objects that meet the filter's criteria. A filter must be a prefix, a tag, or a conjunction (MetricsAndOperator).</p>
       */
-    var Filter: js.UndefOr[MetricsFilter] = js.native
+    var Filter: js.UndefOr[MetricsFilter] = js.undefined
     
     /**
       * <p>The ID used to identify the metrics configuration.</p>
       */
-    var Id: String = js.native
+    var Id: String
   }
   object MetricsConfiguration {
     
@@ -44,14 +42,15 @@ object typesMetricsConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMetricsConfiguration extends MetricsConfiguration {
+  trait UnmarshalledMetricsConfiguration
+    extends StObject
+       with MetricsConfiguration {
     
     /**
       * <p>Specifies a metrics configuration filter. The metrics configuration will only include objects that meet the filter's criteria. A filter must be a prefix, a tag, or a conjunction (MetricsAndOperator).</p>
       */
     @JSName("Filter")
-    var Filter_UnmarshalledMetricsConfiguration: js.UndefOr[UnmarshalledMetricsFilter] = js.native
+    var Filter_UnmarshalledMetricsConfiguration: js.UndefOr[UnmarshalledMetricsFilter] = js.undefined
   }
   object UnmarshalledMetricsConfiguration {
     

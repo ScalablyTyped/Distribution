@@ -2,46 +2,44 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayHealthCheckPolicy extends StObject {
   
   /**
     * The number of consecutive successful health checks that must occur before declaring the listener healthy.
     */
-  var healthyThreshold: VirtualGatewayHealthCheckThreshold = js.native
+  var healthyThreshold: VirtualGatewayHealthCheckThreshold
   
   /**
     * The time period in milliseconds between each health check execution.
     */
-  var intervalMillis: VirtualGatewayHealthCheckIntervalMillis = js.native
+  var intervalMillis: VirtualGatewayHealthCheckIntervalMillis
   
   /**
     * The destination path for the health check request. This value is only used if the specified protocol is HTTP or HTTP/2. For any other protocol, this value is ignored.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The destination port for the health check request. This port must match the port defined in the PortMapping for the listener.
     */
-  var port: js.UndefOr[PortNumber] = js.native
+  var port: js.UndefOr[PortNumber] = js.undefined
   
   /**
     * The protocol for the health check request. If you specify grpc, then your service must conform to the GRPC Health Checking Protocol.
     */
-  var protocol: VirtualGatewayPortProtocol = js.native
+  var protocol: VirtualGatewayPortProtocol
   
   /**
     * The amount of time to wait when receiving a response from the health check, in milliseconds.
     */
-  var timeoutMillis: VirtualGatewayHealthCheckTimeoutMillis = js.native
+  var timeoutMillis: VirtualGatewayHealthCheckTimeoutMillis
   
   /**
     * The number of consecutive failed health checks that must occur before declaring a virtual gateway unhealthy.
     */
-  var unhealthyThreshold: VirtualGatewayHealthCheckThreshold = js.native
+  var unhealthyThreshold: VirtualGatewayHealthCheckThreshold
 }
 object VirtualGatewayHealthCheckPolicy {
   

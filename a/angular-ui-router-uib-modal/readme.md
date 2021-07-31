@@ -12,7 +12,7 @@ AngularJS module that adds support for ui-bootstrap modal states when using ui-r
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7280 |
+| # downloads        | 7160 |
 | # stars            | 0 |
 
 ## Links

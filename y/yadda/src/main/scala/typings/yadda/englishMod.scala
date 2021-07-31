@@ -6,7 +6,6 @@ import typings.std.RegExp
 import typings.yadda.libMod.StepFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object englishMod extends Shortcut {
@@ -17,10 +16,11 @@ object englishMod extends Shortcut {
   
   @js.native
   trait Library
-    extends typings.yadda.languageMod.Library {
+    extends StObject
+       with typings.yadda.languageMod.Library {
     
-    def given(step: String): this.type = js.native
-    def given(
+    def `given`(step: String): this.type = js.native
+    def `given`(
       step: String,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
@@ -28,7 +28,7 @@ object englishMod extends Shortcut {
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: String,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
@@ -37,7 +37,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: String,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
@@ -47,7 +47,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: String,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
@@ -58,7 +58,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: String,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
@@ -70,7 +70,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: String,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
@@ -83,7 +83,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: String,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
@@ -97,8 +97,8 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(step: js.Array[RegExp | String]): this.type = js.native
-    def given(
+    def `given`(step: js.Array[RegExp | String]): this.type = js.native
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction1[
           /* this */ StepFn, 
@@ -106,7 +106,7 @@ object englishMod extends Shortcut {
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction2[
           /* this */ StepFn, 
@@ -115,7 +115,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction3[
           /* this */ StepFn, 
@@ -125,7 +125,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction4[
           /* this */ StepFn, 
@@ -136,7 +136,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction5[
           /* this */ StepFn, 
@@ -148,7 +148,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction6[
           /* this */ StepFn, 
@@ -161,7 +161,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: js.Array[RegExp | String],
       fn: js.ThisFunction7[
           /* this */ StepFn, 
@@ -175,8 +175,8 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(step: RegExp): this.type = js.native
-    def given(
+    def `given`(step: RegExp): this.type = js.native
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
@@ -184,7 +184,7 @@ object englishMod extends Shortcut {
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
@@ -193,7 +193,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
@@ -203,7 +203,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
@@ -214,7 +214,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
@@ -226,7 +226,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
@@ -239,7 +239,7 @@ object englishMod extends Shortcut {
           Unit
         ]
     ): this.type = js.native
-    def given(
+    def `given`(
       step: RegExp,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
@@ -725,27 +725,27 @@ object englishMod extends Shortcut {
     ): this.type = js.native
   }
   
-  @js.native
   trait Vocabulary
-    extends typings.yadda.languageMod.Vocabulary {
+    extends StObject
+       with typings.yadda.languageMod.Vocabulary {
     
-    var background: String = js.native
+    var background: String
     
-    var examples: String = js.native
+    var examples: String
     
-    var feature: String = js.native
+    var feature: String
     
-    var given: String = js.native
+    var `given`: String
     
-    var only: String = js.native
+    var only: String
     
-    var pending: String = js.native
+    var pending: String
     
-    var scenario: String = js.native
+    var scenario: String
     
-    var `then`: String = js.native
+    var `then`: String
     
-    var when: String = js.native
+    var when: String
   }
   object Vocabulary {
     
@@ -755,14 +755,15 @@ object englishMod extends Shortcut {
       background: String,
       examples: String,
       feature: String,
-      given: String,
+      `given`: String,
       only: String,
       pending: String,
       scenario: String,
       `then`: String,
       when: String
     ): Vocabulary = {
-      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.updateDynamic("given")(`given`.asInstanceOf[js.Any])
       __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vocabulary]
     }

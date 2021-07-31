@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,17 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XModuleManager
   * @since OOo 2.3
   */
-@js.native
-trait XModule extends XInterface {
+trait XModule
+  extends StObject
+     with XInterface {
   
   /** @returns the module identifier. */
-  var Identifier: String = js.native
+  var Identifier: String
   
   /** @returns the module identifier. */
-  def getIdentifier(): String = js.native
+  def getIdentifier(): String
   
   /** @param Identifier a new "name" for this module. */
-  def setIdentifier(Identifier: String): Unit = js.native
+  def setIdentifier(Identifier: String): Unit
 }
 object XModule {
   

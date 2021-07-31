@@ -6,10 +6,13 @@ import typings.storybookUi.anon.ClearLastViewed
 import typings.storybookUi.anon.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Search.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -42,19 +45,15 @@ object searchStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Search.stories", "FilledIn")
-  @js.native
-  def FilledIn(): Element = js.native
+  @scala.inline
+  def FilledIn(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FilledIn")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Search.stories", "LastViewed")
-  @js.native
-  def LastViewed(): Element = js.native
+  @scala.inline
+  def LastViewed(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LastViewed")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Search.stories", "ShortcutsDisabled")
-  @js.native
-  def ShortcutsDisabled(): Element = js.native
+  @scala.inline
+  def ShortcutsDisabled(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ShortcutsDisabled")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Search.stories", "Simple")
-  @js.native
-  def Simple(): Element = js.native
+  @scala.inline
+  def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
 }

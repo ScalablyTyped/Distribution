@@ -2,26 +2,24 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutResourcePolicyRequest extends StObject {
   
   /**
     * The resource-based policy.
     */
-  var Policy: string = js.native
+  var Policy: string
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[string] = js.native
+  var RegistryName: js.UndefOr[string] = js.undefined
   
   /**
     * The revision ID of the policy.
     */
-  var RevisionId: js.UndefOr[string] = js.native
+  var RevisionId: js.UndefOr[string] = js.undefined
 }
 object PutResourcePolicyRequest {
   

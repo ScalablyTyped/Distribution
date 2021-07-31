@@ -8,7 +8,6 @@ import typings.react.mod.PureComponent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reorderableMod {
@@ -55,7 +54,9 @@ object reorderableMod {
   }
   
   @js.native
-  trait IDragReorderable extends IReorderableProps {
+  trait IDragReorderable
+    extends StObject
+       with IReorderableProps {
     
     /**
       * Whether the reordering behavior is disabled.
@@ -84,14 +85,13 @@ object reorderableMod {
     def toRegion(index1: Double, index2: Double): IRegion = js.native
   }
   
-  @js.native
   trait IReorderableProps extends StObject {
     
     /**
       * When the user reorders something, this callback is called with the new
       * focus cell for the newly selected set of regions.
       */
-    def onFocusedCell(focusedCell: IFocusedCellCoordinates): Unit = js.native
+    def onFocusedCell(focusedCell: IFocusedCellCoordinates): Unit
     
     /**
       * A callback that is called when the user is done dragging to reorder.
@@ -100,7 +100,7 @@ object reorderableMod {
       * @param newIndex the new index of the element or set of elements
       * @param length the number of contiguous elements that were moved
       */
-    def onReordered(oldIndex: Double, newIndex: Double, length: Double): Unit = js.native
+    def onReordered(oldIndex: Double, newIndex: Double, length: Double): Unit
     
     /**
       * A callback that is called while the user is dragging to reorder.
@@ -109,20 +109,20 @@ object reorderableMod {
       * @param newIndex the new index of the element or set of elements
       * @param length the number of contiguous elements that were moved
       */
-    def onReordering(oldIndex: Double, newIndex: Double, length: Double): Unit = js.native
+    def onReordering(oldIndex: Double, newIndex: Double, length: Double): Unit
     
     /**
       * When the user reorders something, this callback is called with a new
       * array of `Region`s. This array should be considered the new selection
       * state for the entire table.
       */
-    def onSelection(regions: js.Array[IRegion]): Unit = js.native
+    def onSelection(regions: js.Array[IRegion]): Unit
     
     /**
       * An array containing the table's selection Regions.
       * @default []
       */
-    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
   }
   object IReorderableProps {
     

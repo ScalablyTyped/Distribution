@@ -5,7 +5,6 @@ import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineBasicMaterialMod {
@@ -43,18 +42,19 @@ object lineBasicMaterialMod {
     def setValues(parameters: LineBasicMaterialParameters): Unit = js.native
   }
   
-  @js.native
-  trait LineBasicMaterialParameters extends MaterialParameters {
+  trait LineBasicMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[Color | String | Double] = js.undefined
     
-    var linecap: js.UndefOr[String] = js.native
+    var linecap: js.UndefOr[String] = js.undefined
     
-    var linejoin: js.UndefOr[String] = js.native
+    var linejoin: js.UndefOr[String] = js.undefined
     
-    var linewidth: js.UndefOr[Double] = js.native
+    var linewidth: js.UndefOr[Double] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
   }
   object LineBasicMaterialParameters {
     

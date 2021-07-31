@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TunedHPOParams extends StObject {
   
   /**
     * A list of the hyperparameter values of the best performing model.
     */
-  var algorithmHyperParameters: js.UndefOr[HyperParameters] = js.native
+  var algorithmHyperParameters: js.UndefOr[HyperParameters] = js.undefined
 }
 object TunedHPOParams {
   

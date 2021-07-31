@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuppressedDestinationAttributes extends StObject {
   
   /**
     * A unique identifier that's generated when an email address is added to the suppression list for your account.
     */
-  var FeedbackId: js.UndefOr[typings.awsSdk.sesv2Mod.FeedbackId] = js.native
+  var FeedbackId: js.UndefOr[typings.awsSdk.sesv2Mod.FeedbackId] = js.undefined
   
   /**
     * The unique identifier of the email message that caused the email address to be added to the suppression list for your account.
     */
-  var MessageId: js.UndefOr[OutboundMessageId] = js.native
+  var MessageId: js.UndefOr[OutboundMessageId] = js.undefined
 }
 object SuppressedDestinationAttributes {
   

@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.storybookComponents.anon.TypeofReactSyntaxHighligh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syntaxhighlighterMod {
@@ -15,10 +14,9 @@ object syntaxhighlighterMod {
   @js.native
   val SyntaxHighlighter: FunctionComponent[Props] = js.native
   
-  @js.native
   trait PreProps extends StObject {
     
-    var padded: js.UndefOr[Boolean] = js.native
+    var padded: js.UndefOr[Boolean] = js.undefined
   }
   object PreProps {
     
@@ -39,26 +37,25 @@ object syntaxhighlighterMod {
     }
   }
   
-  type Props = SyntaxHighlighterProps with ReactSyntaxHighlighterProps
+  type Props = SyntaxHighlighterProps & ReactSyntaxHighlighterProps
   
   type ReactSyntaxHighlighterProps = ComponentProps[TypeofReactSyntaxHighligh]
   
-  @js.native
   trait SyntaxHighlighterProps extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var copyable: js.UndefOr[Boolean] = js.native
+    var copyable: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
-    var language: String = js.native
+    var language: String
     
-    var padded: js.UndefOr[Boolean] = js.native
+    var padded: js.UndefOr[Boolean] = js.undefined
     
-    var renderer: js.UndefOr[js.Function1[/* props */ SyntaxHighlighterRendererProps, ReactNode]] = js.native
+    var renderer: js.UndefOr[js.Function1[/* props */ SyntaxHighlighterRendererProps, ReactNode]] = js.undefined
   }
   object SyntaxHighlighterProps {
     
@@ -112,19 +109,18 @@ object syntaxhighlighterMod {
     }
   }
   
-  @js.native
   trait SyntaxHighlighterRendererProps extends StObject {
     
-    var rows: js.Array[_] = js.native
+    var rows: js.Array[js.Any]
     
-    var stylesheet: String = js.native
+    var stylesheet: String
     
-    var useInlineStyles: Boolean = js.native
+    var useInlineStyles: Boolean
   }
   object SyntaxHighlighterRendererProps {
     
     @scala.inline
-    def apply(rows: js.Array[_], stylesheet: String, useInlineStyles: Boolean): SyntaxHighlighterRendererProps = {
+    def apply(rows: js.Array[js.Any], stylesheet: String, useInlineStyles: Boolean): SyntaxHighlighterRendererProps = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any], stylesheet = stylesheet.asInstanceOf[js.Any], useInlineStyles = useInlineStyles.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyntaxHighlighterRendererProps]
     }
@@ -133,7 +129,7 @@ object syntaxhighlighterMod {
     implicit class SyntaxHighlighterRendererPropsMutableBuilder[Self <: SyntaxHighlighterRendererProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
@@ -146,10 +142,9 @@ object syntaxhighlighterMod {
     }
   }
   
-  @js.native
   trait SyntaxHighlighterState extends StObject {
     
-    var copied: Boolean = js.native
+    var copied: Boolean
   }
   object SyntaxHighlighterState {
     
@@ -167,12 +162,11 @@ object syntaxhighlighterMod {
     }
   }
   
-  @js.native
   trait WrapperProps extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var padded: js.UndefOr[Boolean] = js.native
+    var padded: js.UndefOr[Boolean] = js.undefined
   }
   object WrapperProps {
     

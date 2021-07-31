@@ -2,13 +2,13 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MulticastMessage extends BaseMessage {
+trait MulticastMessage
+  extends StObject
+     with BaseMessage {
   
-  var tokens: js.Array[String] = js.native
+  var tokens: js.Array[String]
 }
 object MulticastMessage {
   

@@ -4,15 +4,13 @@ import typings.tern.ternMod.CompletionsQuery
 import typings.tern.ternMod.CompletionsQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var query: CompletionsQuery = js.native
+  var query: CompletionsQuery
   
-  var result: CompletionsQueryResult = js.native
+  var result: CompletionsQueryResult
 }
 object Result {
   

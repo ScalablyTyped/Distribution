@@ -5,7 +5,6 @@ import typings.fastCsvParse.scannerMod.ScannerArgs
 import typings.fastCsvParse.tokenMod.TokenArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -74,28 +73,26 @@ object parserMod {
   /* static members */
   object Token {
     
-    @JSImport("@fast-csv/parse/build/src/parser", "Token.isTokenCarriageReturn")
+    @JSImport("@fast-csv/parse/build/src/parser", "Token")
     @js.native
-    def isTokenCarriageReturn(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@fast-csv/parse/build/src/parser", "Token.isTokenComment")
-    @js.native
-    def isTokenComment(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = js.native
+    @scala.inline
+    def isTokenCarriageReturn(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenCarriageReturn")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@fast-csv/parse/build/src/parser", "Token.isTokenDelimiter")
-    @js.native
-    def isTokenDelimiter(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = js.native
+    @scala.inline
+    def isTokenComment(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenComment")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@fast-csv/parse/build/src/parser", "Token.isTokenEscapeCharacter")
-    @js.native
-    def isTokenEscapeCharacter(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = js.native
+    @scala.inline
+    def isTokenDelimiter(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenDelimiter")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@fast-csv/parse/build/src/parser", "Token.isTokenQuote")
-    @js.native
-    def isTokenQuote(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = js.native
+    @scala.inline
+    def isTokenEscapeCharacter(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenEscapeCharacter")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@fast-csv/parse/build/src/parser", "Token.isTokenRowDelimiter")
-    @js.native
-    def isTokenRowDelimiter(token: typings.fastCsvParse.tokenMod.Token): Boolean = js.native
+    @scala.inline
+    def isTokenQuote(token: typings.fastCsvParse.tokenMod.Token, parserOptions: ParserOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTokenQuote")(token.asInstanceOf[js.Any], parserOptions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isTokenRowDelimiter(token: typings.fastCsvParse.tokenMod.Token): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenRowDelimiter")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

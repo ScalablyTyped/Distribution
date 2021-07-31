@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRelationalDatabaseSnapshotRequest extends StObject {
   
   /**
     * The name of the database snapshot for which to get information.
     */
-  var relationalDatabaseSnapshotName: ResourceName = js.native
+  var relationalDatabaseSnapshotName: ResourceName
 }
 object GetRelationalDatabaseSnapshotRequest {
   

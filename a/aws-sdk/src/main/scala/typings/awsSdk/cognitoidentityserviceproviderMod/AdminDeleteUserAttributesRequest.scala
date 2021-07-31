@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminDeleteUserAttributesRequest extends StObject {
   
   /**
     * An array of strings representing the user attribute names you wish to delete. For custom attributes, you must prepend the custom: prefix to the attribute name.
     */
-  var UserAttributeNames: AttributeNameListType = js.native
+  var UserAttributeNames: AttributeNameListType
   
   /**
     * The user pool ID for the user pool where you want to delete user attributes.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user name of the user from which you would like to delete attributes.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminDeleteUserAttributesRequest {
   

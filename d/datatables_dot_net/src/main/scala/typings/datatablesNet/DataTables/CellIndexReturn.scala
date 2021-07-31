@@ -2,17 +2,15 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellIndexReturn extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var columnVisible: Double = js.native
+  var columnVisible: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object CellIndexReturn {
   

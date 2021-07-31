@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.richMod._RichResponseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2SimpleResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleMod {
@@ -12,8 +11,9 @@ object simpleMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/simple", "SimpleResponse")
   @js.native
   class SimpleResponse protected ()
-    extends _RichResponseItem
-       with GoogleActionsV2SimpleResponse {
+    extends StObject
+       with GoogleActionsV2SimpleResponse
+       with _RichResponseItem {
     def this(options: String) = this()
     /**
       * @param options SimpleResponse options
@@ -22,20 +22,19 @@ object simpleMod {
     def this(options: SimpleResponseOptions) = this()
   }
   
-  @js.native
   trait SimpleResponseOptions extends StObject {
     
     /**
       * Speech to be spoken to user. SSML allowed.
       * @public
       */
-    var speech: String = js.native
+    var speech: String
     
     /**
       * Optional text to be shown to user
       * @public
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object SimpleResponseOptions {
     

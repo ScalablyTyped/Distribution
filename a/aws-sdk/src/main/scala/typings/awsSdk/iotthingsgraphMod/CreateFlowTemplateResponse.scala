@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFlowTemplateResponse extends StObject {
   
   /**
     * The summary object that describes the created workflow.
     */
-  var summary: js.UndefOr[FlowTemplateSummary] = js.native
+  var summary: js.UndefOr[FlowTemplateSummary] = js.undefined
 }
 object CreateFlowTemplateResponse {
   

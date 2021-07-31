@@ -14,7 +14,6 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promptContainerMod {
@@ -55,26 +54,27 @@ object promptContainerMod {
     def onClose(): Unit = js.native
   }
   
-  @js.native
-  trait PropmptContainerProps extends WithThemeStyles[PromptStyle] {
+  trait PropmptContainerProps
+    extends StObject
+       with WithThemeStyles[PromptStyle] {
     
-    var actions: CallbackOrActions[TextStyle] = js.native
+    var actions: CallbackOrActions[TextStyle]
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[ReactNode] = js.native
+    var message: js.UndefOr[ReactNode] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var onBackHandler: js.UndefOr[CallbackOnBackHandler] = js.native
+    var onBackHandler: js.UndefOr[CallbackOnBackHandler] = js.undefined
     
-    var placeholders: js.UndefOr[js.Array[String]] = js.native
+    var placeholders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
     
     var `type`: js.UndefOr[
         typings.antDesignReactNative.antDesignReactNativeStrings.default | `login-password` | `secure-text`
-      ] = js.native
+      ] = js.undefined
   }
   object PropmptContainerProps {
     

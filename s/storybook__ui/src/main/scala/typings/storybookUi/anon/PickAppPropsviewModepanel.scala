@@ -1,33 +1,32 @@
 package typings.storybookUi.anon
 
 import typings.reactSizeme.mod.WithSizeOnSizeCallback
+import typings.storybookApi.modulesStoriesMod.ViewMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/ui.@storybook/ui/dist/app.AppProps, 'viewMode' | 'panelCount' | 'docsOnly' | 'layout'> & react-sizeme.react-sizeme.WithSizeProps */
-@js.native
 trait PickAppPropsviewModepanel extends StObject {
   
-  var docsOnly: Boolean = js.native
+  var docsOnly: Boolean
   
-  var layout: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['layout'] */ js.Any = js.native
+  var layout: typings.storybookApi.layoutMod.Layout
   
-  var onSize: js.UndefOr[WithSizeOnSizeCallback] = js.native
+  var onSize: js.UndefOr[WithSizeOnSizeCallback] = js.undefined
   
-  var panelCount: Double = js.native
+  var panelCount: Double
   
-  var viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any = js.native
+  var viewMode: ViewMode & js.UndefOr[String]
 }
 object PickAppPropsviewModepanel {
   
   @scala.inline
   def apply(
     docsOnly: Boolean,
-    layout: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['layout'] */ js.Any,
+    layout: typings.storybookApi.layoutMod.Layout,
     panelCount: Double,
-    viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
+    viewMode: ViewMode & js.UndefOr[String]
   ): PickAppPropsviewModepanel = {
     val __obj = js.Dynamic.literal(docsOnly = docsOnly.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], panelCount = panelCount.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickAppPropsviewModepanel]
@@ -40,9 +39,7 @@ object PickAppPropsviewModepanel {
     def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['layout'] */ js.Any
-    ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    def setLayout(value: typings.storybookApi.layoutMod.Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnSize(value: /* size */ typings.reactSizeme.anon.Height => Unit): Self = StObject.set(x, "onSize", js.Any.fromFunction1(value))
@@ -54,8 +51,6 @@ object PickAppPropsviewModepanel {
     def setPanelCount(value: Double): Self = StObject.set(x, "panelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewMode(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-    ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

@@ -2,37 +2,35 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Create container versions response.
   */
-@js.native
 trait SchemaCreateContainerVersionResponse extends StObject {
   
   /**
     * Compiler errors or not.
     */
-  var compilerError: js.UndefOr[Boolean] = js.native
+  var compilerError: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The container version created.
     */
-  var containerVersion: js.UndefOr[SchemaContainerVersion] = js.native
+  var containerVersion: js.UndefOr[SchemaContainerVersion] = js.undefined
   
   /**
     * Auto generated workspace path created as a result of version creation.
     * This field should only be populated if the created version was not a
     * quick preview.
     */
-  var newWorkspacePath: js.UndefOr[String] = js.native
+  var newWorkspacePath: js.UndefOr[String] = js.undefined
   
   /**
     * Whether version creation failed when syncing the workspace to the latest
     * container version.
     */
-  var syncStatus: js.UndefOr[SchemaSyncStatus] = js.native
+  var syncStatus: js.UndefOr[SchemaSyncStatus] = js.undefined
 }
 object SchemaCreateContainerVersionResponse {
   

@@ -4,54 +4,48 @@ import typings.std.Exclude
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("resq", "resq$")
+  @JSImport("resq", JSImport.Namespace)
   @js.native
-  def resq(selector: String): RESQNode = js.native
-  @JSImport("resq", "resq$")
-  @js.native
-  def resq(selector: String, element: HTMLElement): RESQNode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("resq", "resq$$")
-  @js.native
-  def resq$(selector: String): js.Array[RESQNode] = js.native
-  @JSImport("resq", "resq$$")
-  @js.native
-  def resq$(selector: String, element: HTMLElement): js.Array[RESQNode] = js.native
+  @scala.inline
+  def resq(selector: String): RESQNode = ^.asInstanceOf[js.Dynamic].applyDynamic("resq$")(selector.asInstanceOf[js.Any]).asInstanceOf[RESQNode]
+  @scala.inline
+  def resq(selector: String, element: HTMLElement): RESQNode = (^.asInstanceOf[js.Dynamic].applyDynamic("resq$")(selector.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[RESQNode]
   
-  @JSImport("resq", "waitToLoadReact")
-  @js.native
-  def waitToLoadReact(): js.Promise[Null | String] = js.native
-  @JSImport("resq", "waitToLoadReact")
-  @js.native
-  def waitToLoadReact(timeInMs: js.UndefOr[scala.Nothing], rootElSelector: String): js.Promise[Null | String] = js.native
-  @JSImport("resq", "waitToLoadReact")
-  @js.native
-  def waitToLoadReact(timeInMs: Double): js.Promise[Null | String] = js.native
-  @JSImport("resq", "waitToLoadReact")
-  @js.native
-  def waitToLoadReact(timeInMs: Double, rootElSelector: String): js.Promise[Null | String] = js.native
+  @scala.inline
+  def resq$(selector: String): js.Array[RESQNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("resq$$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[RESQNode]]
+  @scala.inline
+  def resq$(selector: String, element: HTMLElement): js.Array[RESQNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("resq$$")(selector.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Array[RESQNode]]
+  
+  @scala.inline
+  def waitToLoadReact(): js.Promise[Null | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitToLoadReact")().asInstanceOf[js.Promise[Null | String]]
+  @scala.inline
+  def waitToLoadReact(timeInMs: Double): js.Promise[Null | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitToLoadReact")(timeInMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null | String]]
+  @scala.inline
+  def waitToLoadReact(timeInMs: Double, rootElSelector: String): js.Promise[Null | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitToLoadReact")(timeInMs.asInstanceOf[js.Any], rootElSelector.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null | String]]
+  @scala.inline
+  def waitToLoadReact(timeInMs: Unit, rootElSelector: String): js.Promise[Null | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitToLoadReact")(timeInMs.asInstanceOf[js.Any], rootElSelector.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null | String]]
   
   type NotFunc[T] = Exclude[T, js.Function]
   
-  @js.native
   trait RESQNode extends StObject {
     
-    var _nodes: js.Array[RESQNode] = js.native
+    var _nodes: js.Array[RESQNode]
     
-    var children: js.Array[RESQNode] = js.native
+    var children: js.Array[RESQNode]
     
-    var isFragment: Boolean = js.native
+    var isFragment: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var node: HTMLElement | Null = js.native
+    var node: HTMLElement | Null
     
-    var state: NotFunc[_] = js.native
+    var state: NotFunc[js.Any]
   }
   object RESQNode {
     
@@ -61,9 +55,9 @@ object mod {
       children: js.Array[RESQNode],
       isFragment: Boolean,
       name: String,
-      state: NotFunc[_]
+      state: NotFunc[js.Any]
     ): RESQNode = {
-      val __obj = js.Dynamic.literal(_nodes = _nodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], isFragment = isFragment.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_nodes = _nodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], isFragment = isFragment.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], node = null)
       __obj.asInstanceOf[RESQNode]
     }
     
@@ -89,7 +83,7 @@ object mod {
       def setNodeNull: Self = StObject.set(x, "node", null)
       
       @scala.inline
-      def setState(value: NotFunc[_]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      def setState(value: NotFunc[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set_nodes(value: js.Array[RESQNode]): Self = StObject.set(x, "_nodes", value.asInstanceOf[js.Any])

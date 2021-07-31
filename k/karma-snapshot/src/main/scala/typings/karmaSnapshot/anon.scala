@@ -3,17 +3,15 @@ package typings.karmaSnapshot
 import typings.karmaSnapshot.mod.SnapshotSuite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var suite: SnapshotSuite = js.native
+    var suite: SnapshotSuite
   }
   object Name {
     

@@ -2,19 +2,17 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUploadsQuery extends StObject {
   
-  var `key-marker`: js.UndefOr[String] = js.native
+  var `key-marker`: js.UndefOr[String] = js.undefined
   
-  var `max-uploads`: js.UndefOr[Double] = js.native
+  var `max-uploads`: js.UndefOr[Double] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var `upload-id-marker`: js.UndefOr[String] = js.native
+  var `upload-id-marker`: js.UndefOr[String] = js.undefined
 }
 object ListUploadsQuery {
   

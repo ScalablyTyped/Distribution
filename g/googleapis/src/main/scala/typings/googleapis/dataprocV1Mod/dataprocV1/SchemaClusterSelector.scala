@@ -3,26 +3,24 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A selector that chooses target cluster for jobs based on metadata.
   */
-@js.native
 trait SchemaClusterSelector extends StObject {
   
   /**
     * Required. The cluster labels. Cluster must have all labels to match.
     */
-  var clusterLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var clusterLabels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. The zone where workflow process executes. This parameter does
     * not affect the selection of the cluster.If unspecified, the zone of the
     * first cluster matching the selector is used.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaClusterSelector {
   

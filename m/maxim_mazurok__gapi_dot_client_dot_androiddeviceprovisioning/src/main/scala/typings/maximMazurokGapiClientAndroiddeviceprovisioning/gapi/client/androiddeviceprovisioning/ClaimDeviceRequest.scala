@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClaimDeviceRequest extends StObject {
   
   /** Required. The ID of the customer for whom the device is being claimed. */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /** Required. Required. The device identifier of the device to claim. */
-  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.undefined
   
   /** Optional. The metadata to attach to the device. */
-  var deviceMetadata: js.UndefOr[DeviceMetadata] = js.native
+  var deviceMetadata: js.UndefOr[DeviceMetadata] = js.undefined
   
   /** Required. The section type of the device's provisioning record. */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object ClaimDeviceRequest {
   

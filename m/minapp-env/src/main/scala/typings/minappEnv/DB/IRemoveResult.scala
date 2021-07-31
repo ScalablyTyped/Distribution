@@ -4,13 +4,13 @@ import typings.minappEnv.IAPISuccessParam
 import typings.minappEnv.anon.Removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRemoveResult extends IAPISuccessParam {
+trait IRemoveResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var stats: Removed = js.native
+  var stats: Removed
 }
 object IRemoveResult {
   

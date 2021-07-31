@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientSpreadsheetViewModeChangedEventArgs")
 @js.native
 class ASPxClientSpreadsheetViewModeChangedEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientSpreadsheetViewModeChangedEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientSpreadsheetViewModeChangedEventArgs {
   /**
     * Initializes a new instance of the ASPxClientSpreadsheetViewModeChangedEventArgs class.
     * @param oldViewMode Specifies the control's current view mode.
     */
   def this(oldViewMode: js.Any) = this()
+  
+  /**
+    * Gets the control's current view mode when the event is triggered.
+    */
+  /* CompleteClass */
+  var oldViewMode: typings.devexpressWeb.ASPxClientSpreadsheetViewMode = js.native
 }

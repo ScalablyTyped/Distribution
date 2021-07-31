@@ -3,7 +3,6 @@ package typings.officeJs.Excel
 import typings.officeJs.officeJsStrings.WorksheetSelectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait WorksheetSelectionChangedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait WorksheetSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -29,7 +27,7 @@ trait WorksheetSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: WorksheetSelectionChanged = js.native
+  var `type`: WorksheetSelectionChanged
   
   /**
     *
@@ -37,14 +35,14 @@ trait WorksheetSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetSelectionChangedEventArgs {
   
   @scala.inline
-  def apply(address: String, `type`: WorksheetSelectionChanged, worksheetId: String): WorksheetSelectionChangedEventArgs = {
+  def apply(address: String, worksheetId: String): WorksheetSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetSelectionChanged")
     __obj.asInstanceOf[WorksheetSelectionChangedEventArgs]
   }
   

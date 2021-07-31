@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNetworkOutput extends StObject {
   
   /**
     * The unique identifier for the first member within the network.
     */
-  var MemberId: js.UndefOr[ResourceIdString] = js.native
+  var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The unique identifier for the network.
     */
-  var NetworkId: js.UndefOr[ResourceIdString] = js.native
+  var NetworkId: js.UndefOr[ResourceIdString] = js.undefined
 }
 object CreateNetworkOutput {
   

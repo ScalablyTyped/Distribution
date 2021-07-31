@@ -2,13 +2,11 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A result from a phone number sign-in, link, or reauthenticate call.
   */
-@js.native
 trait ConfirmationResult extends StObject {
   
   /**
@@ -23,13 +21,13 @@ trait ConfirmationResult extends StObject {
     * <dd>Thrown if the verification code is missing.</dd>
     * </dl>
     */
-  def confirm(verificationCode: String): js.Promise[UserCredential] = js.native
+  def confirm(verificationCode: String): js.Promise[UserCredential]
   
   /**
     * The phone number authentication operation's verification ID. This can be used
     * along with the verification code to initialize a phone auth credential.
     */
-  var verificationId: String = js.native
+  var verificationId: String
 }
 object ConfirmationResult {
   

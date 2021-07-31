@@ -2,35 +2,33 @@ package typings.pixiSpine.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaders {
   
-  @js.native
   trait IMetadata extends StObject {
     
-    var atlasRawData: js.UndefOr[String] = js.native
+    var atlasRawData: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[js.Any] = js.native
+    var image: js.UndefOr[js.Any] = js.undefined
     
-    var imageLoader: js.UndefOr[js.Any] = js.native
+    var imageLoader: js.UndefOr[js.Any] = js.undefined
     
-    var imageMetadata: js.UndefOr[js.Any] = js.native
+    var imageMetadata: js.UndefOr[js.Any] = js.undefined
     
-    var imageNamePrefix: js.UndefOr[String] = js.native
+    var imageNamePrefix: js.UndefOr[String] = js.undefined
     
-    var images: js.UndefOr[js.Any] = js.native
+    var images: js.UndefOr[js.Any] = js.undefined
     
-    var spineAtlas: js.UndefOr[js.Any] = js.native
+    var spineAtlas: js.UndefOr[js.Any] = js.undefined
     
-    var spineAtlasFile: js.UndefOr[String] = js.native
+    var spineAtlasFile: js.UndefOr[String] = js.undefined
     
-    var spineAtlasSuffix: js.UndefOr[String] = js.native
+    var spineAtlasSuffix: js.UndefOr[String] = js.undefined
     
-    var spineMetadata: js.UndefOr[js.Any] = js.native
+    var spineMetadata: js.UndefOr[js.Any] = js.undefined
     
-    var spineSkeletonScale: js.UndefOr[Double] = js.native
+    var spineSkeletonScale: js.UndefOr[Double] = js.undefined
   }
   object IMetadata {
     

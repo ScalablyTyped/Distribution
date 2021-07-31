@@ -2,20 +2,18 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to update the metadata of photos. Updating the pixels of photos is
   * not supported.
   */
-@js.native
 trait SchemaBatchUpdatePhotosRequest extends StObject {
   
   /**
     * Required. List of UpdatePhotoRequests.
     */
-  var updatePhotoRequests: js.UndefOr[js.Array[SchemaUpdatePhotoRequest]] = js.native
+  var updatePhotoRequests: js.UndefOr[js.Array[SchemaUpdatePhotoRequest]] = js.undefined
 }
 object SchemaBatchUpdatePhotosRequest {
   

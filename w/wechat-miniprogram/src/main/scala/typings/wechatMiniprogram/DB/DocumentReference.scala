@@ -8,13 +8,12 @@ import typings.wechatMiniprogram.anon.RQISetSingleDocumentOptio
 import typings.wechatMiniprogram.anon.RQIUpdateSingleDocumentOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocumentReference extends StObject {
   
-  def field(`object`: Record[String, _]): this.type = js.native
+  def field(`object`: Record[String, js.Any]): this.type = js.native
   
   def get(): js.Promise[IQuerySingleResult] = js.native
   def get(options: OQ[IGetDocumentOptions]): Unit = js.native

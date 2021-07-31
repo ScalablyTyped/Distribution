@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataValidationMetrics extends StObject {
   
   /**
     * The field-specific model training validation messages.
     */
-  var fieldLevelMessages: js.UndefOr[fieldValidationMessageList] = js.native
+  var fieldLevelMessages: js.UndefOr[fieldValidationMessageList] = js.undefined
   
   /**
     * The file-specific model training validation messages.
     */
-  var fileLevelMessages: js.UndefOr[fileValidationMessageList] = js.native
+  var fileLevelMessages: js.UndefOr[fileValidationMessageList] = js.undefined
 }
 object DataValidationMetrics {
   

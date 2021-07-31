@@ -6,17 +6,21 @@ import typings.spex.mod.errors.PageError
 import typings.spex.mod.errors.SequenceError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cb extends StObject {
     
     var cb: js.UndefOr[
-        js.Function4[/* index */ Double, /* success */ Boolean, /* result */ js.Any, /* delay */ Double, _]
-      ] = js.native
+        js.Function4[
+          /* index */ Double, 
+          /* success */ Boolean, 
+          /* result */ js.Any, 
+          /* delay */ Double, 
+          js.Any
+        ]
+      ] = js.undefined
   }
   object Cb {
     
@@ -30,19 +34,20 @@ object anon {
     implicit class CbMutableBuilder[Self <: Cb] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCb(value: (/* index */ Double, /* success */ Boolean, /* result */ js.Any, /* delay */ Double) => _): Self = StObject.set(x, "cb", js.Any.fromFunction4(value))
+      def setCb(
+        value: (/* index */ Double, /* success */ Boolean, /* result */ js.Any, /* delay */ Double) => js.Any
+      ): Self = StObject.set(x, "cb", js.Any.fromFunction4(value))
       
       @scala.inline
       def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
     }
   }
   
-  @js.native
   trait Dest extends StObject {
     
-    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]] = js.native
+    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object Dest {
     
@@ -56,7 +61,7 @@ object anon {
     implicit class DestMutableBuilder[Self <: Dest] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => _): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
+      def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
       @scala.inline
       def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
@@ -69,14 +74,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Limit extends StObject {
     
-    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]] = js.native
+    var dest: js.UndefOr[js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var track: js.UndefOr[Boolean] = js.native
+    var track: js.UndefOr[Boolean] = js.undefined
   }
   object Limit {
     
@@ -90,7 +94,7 @@ object anon {
     implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => _): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
+      def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
       @scala.inline
       def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
@@ -109,17 +113,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeoferrors extends StObject {
     
     // API: http://vitaly-t.github.io/spex/errors.BatchError.html
-    var BatchError: Instantiable0[typings.spex.mod.errors.BatchError] = js.native
+    var BatchError: Instantiable0[typings.spex.mod.errors.BatchError]
     
     // API: http://vitaly-t.github.io/spex/errors.PageError.html
-    var PageError: Instantiable0[typings.spex.mod.errors.PageError] = js.native
+    var PageError: Instantiable0[typings.spex.mod.errors.PageError]
     
     // API: http://vitaly-t.github.io/spex/errors.SequenceError.html
-    var SequenceError: Instantiable0[typings.spex.mod.errors.SequenceError] = js.native
+    var SequenceError: Instantiable0[typings.spex.mod.errors.SequenceError]
   }
   object Typeoferrors {
     

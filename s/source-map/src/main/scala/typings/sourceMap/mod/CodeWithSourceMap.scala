@@ -2,15 +2,13 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeWithSourceMap extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var map: SourceMapGenerator = js.native
+  var map: SourceMapGenerator
 }
 object CodeWithSourceMap {
   

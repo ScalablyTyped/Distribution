@@ -2,13 +2,11 @@ package typings.googleapis.cloudassetV1Mod.cloudassetV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Export asset request.
   */
-@js.native
 trait SchemaExportAssetsRequest extends StObject {
   
   /**
@@ -18,19 +16,19 @@ trait SchemaExportAssetsRequest extends StObject {
     * Inventory](https://cloud.google.com/resource-manager/docs/cloud-asset-inventory/overview)
     * for all supported asset types.
     */
-  var assetTypes: js.UndefOr[js.Array[String]] = js.native
+  var assetTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Asset content type. If not specified, no content but the asset name will
     * be returned.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Output configuration indicating where the results will be
     * output to. All results will be in newline delimited JSON format.
     */
-  var outputConfig: js.UndefOr[SchemaOutputConfig] = js.native
+  var outputConfig: js.UndefOr[SchemaOutputConfig] = js.undefined
   
   /**
     * Timestamp to take an asset snapshot. This can only be set to a timestamp
@@ -39,7 +37,7 @@ trait SchemaExportAssetsRequest extends StObject {
     * collection and indexing, there is a volatile window during which running
     * the same query may get different results.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
 }
 object SchemaExportAssetsRequest {
   

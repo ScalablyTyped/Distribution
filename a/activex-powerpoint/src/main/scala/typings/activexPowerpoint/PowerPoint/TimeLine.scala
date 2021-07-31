@@ -2,22 +2,20 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeLine extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val InteractiveSequences: Sequences = js.native
+  val InteractiveSequences: Sequences
   
-  val MainSequence: Sequence = js.native
+  val MainSequence: Sequence
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.TimeLine_typekey")
-  var PowerPointDotTimeLine_typekey: TimeLine = js.native
+  var PowerPointDotTimeLine_typekey: TimeLine
 }
 object TimeLine {
   

@@ -2,23 +2,21 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldTemplateOverrides extends StObject {
   
   /** Defines templates for rendering the field on a display form. */
-  var DisplayForm: js.UndefOr[FieldInFormCallback] = js.native
+  var DisplayForm: js.UndefOr[FieldInFormCallback] = js.undefined
   
   /** Defines templates for rendering the field on an edit form. */
-  var EditForm: js.UndefOr[FieldInFormCallback] = js.native
+  var EditForm: js.UndefOr[FieldInFormCallback] = js.undefined
   
   /** Defines templates for rendering the field on a new form. */
-  var NewForm: js.UndefOr[FieldInFormCallback] = js.native
+  var NewForm: js.UndefOr[FieldInFormCallback] = js.undefined
   
   /** Defines templates for rendering the field on a list view. */
-  var View: js.UndefOr[FieldInViewCallback] = js.native
+  var View: js.UndefOr[FieldInViewCallback] = js.undefined
 }
 object FieldTemplateOverrides {
   

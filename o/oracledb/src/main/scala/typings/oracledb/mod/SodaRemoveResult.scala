@@ -2,17 +2,15 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of SODA operation.remove();
   */
-@js.native
 trait SodaRemoveResult extends StObject {
   
   /** The number of documents matching the SodaOperation criteria. */
-  var count: Double = js.native
+  var count: Double
 }
 object SodaRemoveResult {
   

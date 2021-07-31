@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -17,7 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * converted to segments) that will be added to the path
   */
 class Path ()
-  extends typings.paper.paper.Path {
+  extends StObject
+     with typings.paper.paper.Path {
   /** 
     * Creates a new path item from an object description and places it at the
     * top of the active layer.
@@ -41,7 +41,8 @@ object Path {
   @JSGlobal("paper.Path.Arc")
   @js.native
   class Arc protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates an circular arc path item from the properties described by an
       * object literal.
@@ -63,7 +64,8 @@ object Path {
   @JSGlobal("paper.Path.Circle")
   @js.native
   class Circle protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates a circular path item from the properties described by an
       * object literal.
@@ -84,7 +86,8 @@ object Path {
   @JSGlobal("paper.Path.Ellipse")
   @js.native
   class Ellipse protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates an elliptical path item from the properties described by an
       * object literal.
@@ -104,7 +107,8 @@ object Path {
   @JSGlobal("paper.Path.Line")
   @js.native
   class Line protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates a linear path item from the properties described by an object
       * literal.
@@ -125,7 +129,8 @@ object Path {
   @JSGlobal("paper.Path.Rectangle")
   @js.native
   class Rectangle protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates a rectangular path item from the properties described by an
       * object literal.
@@ -164,7 +169,8 @@ object Path {
   @JSGlobal("paper.Path.RegularPolygon")
   @js.native
   class RegularPolygon protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates a regular polygon shaped path item from the properties
       * described by an object literal.
@@ -186,7 +192,8 @@ object Path {
   @JSGlobal("paper.Path.Star")
   @js.native
   class Star protected ()
-    extends typings.paper.paper.Path {
+    extends StObject
+       with typings.paper.paper.Path {
     /** 
       * Creates a star shaped path item from the properties described by an
       * object literal.

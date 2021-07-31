@@ -2,11 +2,9 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "table.toJSON()". */
-@js.native
 trait TableData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var borderVisible: js.UndefOr[Boolean] = js.native
+  var borderVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rows: js.UndefOr[js.Array[TableRowData]] = js.native
+  var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
 }
 object TableData {
   

@@ -5,17 +5,15 @@ import typings.gun.mod.Gun.ArrayAsRecord
 import typings.gun.mod.Gun.ChainReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gun[DataType, ReferenceKey] extends StObject {
   
-  var gun: ChainReference[DataType, ReferenceKey, `false`] = js.native
+  var gun: ChainReference[DataType, ReferenceKey, `false`]
   
-  var key: ReferenceKey = js.native
+  var key: ReferenceKey
   
-  var put: ArrayAsRecord[DataType] = js.native
+  var put: ArrayAsRecord[DataType]
 }
 object Gun {
   
@@ -30,7 +28,7 @@ object Gun {
   }
   
   @scala.inline
-  implicit class GunMutableBuilder[Self <: Gun[_, _], DataType, ReferenceKey] (val x: Self with (Gun[DataType, ReferenceKey])) extends AnyVal {
+  implicit class GunMutableBuilder[Self <: Gun[?, ?], DataType, ReferenceKey] (val x: Self & (Gun[DataType, ReferenceKey])) extends AnyVal {
     
     @scala.inline
     def setGun(value: ChainReference[DataType, ReferenceKey, `false`]): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASTElementHandler extends StObject {
   
-  var modifiers: js.UndefOr[ASTModifiers] = js.native
+  var modifiers: js.UndefOr[ASTModifiers] = js.undefined
   
-  var params: js.UndefOr[js.Array[_]] = js.native
+  var params: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object ASTElementHandler {
   
@@ -32,7 +30,7 @@ object ASTElementHandler {
     def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

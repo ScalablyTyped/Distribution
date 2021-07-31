@@ -2,46 +2,44 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityStateExplanation extends StObject {
   
   /**
     * Page certificate.
     */
-  var certificate: js.Array[String] = js.native
+  var certificate: js.Array[String]
   
   /**
     * Full text explanation of the factor.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The type of mixed content described by the explanation.
     */
-  var mixedContentType: MixedContentType = js.native
+  var mixedContentType: MixedContentType
   
   /**
     * Recommendations to fix any issues.
     */
-  var recommendations: js.UndefOr[js.Array[String]] = js.native
+  var recommendations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Security state representing the severity of the factor being explained.
     */
-  var securityState: SecurityState = js.native
+  var securityState: SecurityState
   
   /**
     * Short phrase describing the type of factor.
     */
-  var summary: String = js.native
+  var summary: String
   
   /**
     * Title describing the type of factor.
     */
-  var title: String = js.native
+  var title: String
 }
 object SecurityStateExplanation {
   

@@ -5,29 +5,29 @@ import typings.awsSdkClientGlacierNode.typesGlacierJobDescriptionMod.Unmarshalle
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListJobsOutputMod {
   
-  @js.native
-  trait ListJobsOutput extends _OutputTypesUnion {
+  trait ListJobsOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of job objects. Each job object contains metadata describing the job.</p>
       */
-    var JobList: js.UndefOr[js.Array[UnmarshalledGlacierJobDescription]] = js.native
+    var JobList: js.UndefOr[js.Array[UnmarshalledGlacierJobDescription]] = js.undefined
     
     /**
       * <p> An opaque string used for pagination that specifies the job at which the listing of jobs should begin. You get the <code>marker</code> value from a previous List Jobs response. You only need to include the marker if you are continuing the pagination of the results started in a previous List Jobs request. </p>
       */
-    var Marker: js.UndefOr[String] = js.native
+    var Marker: js.UndefOr[String] = js.undefined
   }
   object ListJobsOutput {
     

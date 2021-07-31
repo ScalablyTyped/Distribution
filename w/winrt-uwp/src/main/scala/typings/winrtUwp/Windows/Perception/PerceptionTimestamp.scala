@@ -2,16 +2,14 @@ package typings.winrtUwp.Windows.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerceptionTimestamp extends StObject {
   
-  var predictionAmount: js.Any = js.native
+  var predictionAmount: js.Any
   
   /* unmapped type */
-  var targetTime: js.Any = js.native
+  var targetTime: js.Any
 }
 object PerceptionTimestamp {
   

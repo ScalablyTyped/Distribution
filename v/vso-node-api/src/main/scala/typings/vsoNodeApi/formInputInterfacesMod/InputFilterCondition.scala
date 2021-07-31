@@ -2,31 +2,29 @@ package typings.vsoNodeApi.formInputInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputFilterCondition extends StObject {
   
   /**
     * Whether or not to do a case sensitive match
     */
-  var caseSensitive: Boolean = js.native
+  var caseSensitive: Boolean
   
   /**
     * The Id of the input to filter on
     */
-  var inputId: String = js.native
+  var inputId: String
   
   /**
     * The "expected" input value to compare with the actual input value
     */
-  var inputValue: String = js.native
+  var inputValue: String
   
   /**
     * The operator applied between the expected and actual input value
     */
-  var operator: InputFilterOperator = js.native
+  var operator: InputFilterOperator
 }
 object InputFilterCondition {
   

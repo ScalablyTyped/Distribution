@@ -2,12 +2,15 @@ package typings.jupyterlabCoreutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
   
   object Text {
+    
+    @JSImport("@jupyterlab/coreutils/lib/text", "Text")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Given a 'snake-case', 'snake_case', 'snake:case', or
@@ -20,12 +23,10 @@ object textMod {
       *
       * @returns the camel case version of the input string.
       */
-    @JSImport("@jupyterlab/coreutils/lib/text", "Text.camelCase")
-    @js.native
-    def camelCase(str: String): String = js.native
-    @JSImport("@jupyterlab/coreutils/lib/text", "Text.camelCase")
-    @js.native
-    def camelCase(str: String, upper: Boolean): String = js.native
+    @scala.inline
+    def camelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def camelCase(str: String, upper: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a unicode character offset to a javascript string index.
@@ -36,9 +37,8 @@ object textMod {
       *
       * @returns The js-native index
       */
-    @JSImport("@jupyterlab/coreutils/lib/text", "Text.charIndexToJsIndex")
-    @js.native
-    def charIndexToJsIndex(charIdx: Double, text: String): Double = js.native
+    @scala.inline
+    def charIndexToJsIndex(charIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("charIndexToJsIndex")(charIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Convert a javascript string index into a unicode character offset
@@ -49,9 +49,8 @@ object textMod {
       *
       * @returns The unicode character offset
       */
-    @JSImport("@jupyterlab/coreutils/lib/text", "Text.jsIndexToCharIndex")
-    @js.native
-    def jsIndexToCharIndex(jsIdx: Double, text: String): Double = js.native
+    @scala.inline
+    def jsIndexToCharIndex(jsIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jsIndexToCharIndex")(jsIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Given a string, title case the words in the string.
@@ -60,8 +59,7 @@ object textMod {
       *
       * @returns the same string, but with each word capitalized.
       */
-    @JSImport("@jupyterlab/coreutils/lib/text", "Text.titleCase")
-    @js.native
-    def titleCase(str: String): String = js.native
+    @scala.inline
+    def titleCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

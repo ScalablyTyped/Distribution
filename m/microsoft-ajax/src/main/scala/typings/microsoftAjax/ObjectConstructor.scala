@@ -2,21 +2,19 @@ package typings.microsoftAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectConstructor extends StObject {
   
   /**
     * Formats a number by using the invariant culture.
     */
-  def getType(instance: js.Any): Type = js.native
+  def getType(instance: js.Any): Type
   
   /**
     * Returns a string that identifies the run-time type name of an object.
     */
-  def getTypeName(instance: js.Any): java.lang.String = js.native
+  def getTypeName(instance: js.Any): java.lang.String
 }
 object ObjectConstructor {
   

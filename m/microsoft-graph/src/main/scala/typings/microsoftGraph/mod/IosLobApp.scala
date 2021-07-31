@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosLobApp extends MobileLobApp {
+trait IosLobApp
+  extends StObject
+     with MobileLobApp {
   
   // The iOS architecture for which this app can run on.
-  var applicableDeviceType: js.UndefOr[IosDeviceType] = js.native
+  var applicableDeviceType: js.UndefOr[IosDeviceType] = js.undefined
   
   // The build number of iOS Line of Business (LoB) app.
-  var buildNumber: js.UndefOr[NullableOption[String]] = js.native
+  var buildNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Identity Name.
-  var bundleId: js.UndefOr[NullableOption[String]] = js.native
+  var bundleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The expiration time.
-  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The value for the minimum applicable operating system.
-  var minimumSupportedOperatingSystem: js.UndefOr[NullableOption[IosMinimumOperatingSystem]] = js.native
+  var minimumSupportedOperatingSystem: js.UndefOr[NullableOption[IosMinimumOperatingSystem]] = js.undefined
   
   // The version number of iOS Line of Business (LoB) app.
-  var versionNumber: js.UndefOr[NullableOption[String]] = js.native
+  var versionNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object IosLobApp {
   

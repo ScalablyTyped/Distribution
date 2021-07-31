@@ -2,46 +2,44 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3. CPU, Memory, Disks, Battery, Graphics
-@js.native
 trait CpuData extends StObject {
   
-  var brand: String = js.native
+  var brand: String
   
-  var cache: CpuCacheData = js.native
+  var cache: CpuCacheData
   
-  var cores: Double = js.native
+  var cores: Double
   
-  var family: String = js.native
+  var family: String
   
-  var governor: String = js.native
+  var governor: String
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var model: String = js.native
+  var model: String
   
-  var physicalCores: Double = js.native
+  var physicalCores: Double
   
-  var processors: Double = js.native
+  var processors: Double
   
-  var revision: String = js.native
+  var revision: String
   
-  var socket: String = js.native
+  var socket: String
   
-  var speed: String = js.native
+  var speed: String
   
-  var speedmax: String = js.native
+  var speedmax: String
   
-  var speedmin: String = js.native
+  var speedmin: String
   
-  var stepping: String = js.native
+  var stepping: String
   
-  var vendor: String = js.native
+  var vendor: String
   
-  var voltage: String = js.native
+  var voltage: String
 }
 object CpuData {
   

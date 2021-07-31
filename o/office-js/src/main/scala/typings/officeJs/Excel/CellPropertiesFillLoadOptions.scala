@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellPropertiesFillLoadOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CellPropertiesFillLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait CellPropertiesFillLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pattern: js.UndefOr[Boolean] = js.native
+  var pattern: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait CellPropertiesFillLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var patternColor: js.UndefOr[Boolean] = js.native
+  var patternColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait CellPropertiesFillLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var patternTintAndShade: js.UndefOr[Boolean] = js.native
+  var patternTintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait CellPropertiesFillLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Boolean] = js.native
+  var tintAndShade: js.UndefOr[Boolean] = js.undefined
 }
 object CellPropertiesFillLoadOptions {
   

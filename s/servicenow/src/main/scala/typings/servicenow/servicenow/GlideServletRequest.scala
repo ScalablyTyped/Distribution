@@ -2,19 +2,17 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideServletRequest extends StObject {
   
-  def getContentType(): String = js.native
+  def getContentType(): String
   
-  def getHeader(name: String): String = js.native
+  def getHeader(name: String): String
   
-  def getParameter(name: String): String = js.native
+  def getParameter(name: String): String
   
-  def writeOutput(mimeType: String, output: String): Unit = js.native
+  def writeOutput(mimeType: String, output: String): Unit
 }
 object GlideServletRequest {
   

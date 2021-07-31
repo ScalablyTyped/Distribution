@@ -2,15 +2,13 @@ package typings.winrtUwp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighSurrogate extends StObject {
   
-  /** The high surrogate value returned. */ var highSurrogate: String = js.native
+  /** The high surrogate value returned. */ var highSurrogate: String
   
-  /** The low surrogate value returned. */ var lowSurrogate: String = js.native
+  /** The low surrogate value returned. */ var lowSurrogate: String
 }
 object HighSurrogate {
   

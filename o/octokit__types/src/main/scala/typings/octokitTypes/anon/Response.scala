@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.AppsDeleteAuthorizationRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  var parameters: AppsDeleteAuthorizationEndpoint = js.native
+  var parameters: AppsDeleteAuthorizationEndpoint
   
-  var request: AppsDeleteAuthorizationRequestOptions = js.native
+  var request: AppsDeleteAuthorizationRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object Response {
   
@@ -23,7 +21,7 @@ object Response {
   def apply(
     parameters: AppsDeleteAuthorizationEndpoint,
     request: AppsDeleteAuthorizationRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): Response = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
@@ -39,6 +37,6 @@ object Response {
     def setRequest(value: AppsDeleteAuthorizationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

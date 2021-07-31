@@ -4,7 +4,6 @@ import typings.blueprintjsTable.anon.Col
 import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmRegionsMod {
@@ -16,15 +15,19 @@ object esmRegionsMod {
   object ColumnLoadingOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ColumnLoadingOption with String] = js.native
+    def apply(value: String): js.UndefOr[ColumnLoadingOption & String] = js.native
     
     @js.native
-    sealed trait CELLS extends ColumnLoadingOption
-    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.ColumnLoadingOption.CELLS with String = js.native
+    sealed trait CELLS
+      extends StObject
+         with ColumnLoadingOption
+    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.ColumnLoadingOption.CELLS & String = js.native
     
     @js.native
-    sealed trait HEADER extends ColumnLoadingOption
-    /* "column-header" */ val HEADER: typings.blueprintjsTable.esmRegionsMod.ColumnLoadingOption.HEADER with String = js.native
+    sealed trait HEADER
+      extends StObject
+         with ColumnLoadingOption
+    /* "column-header" */ val HEADER: typings.blueprintjsTable.esmRegionsMod.ColumnLoadingOption.HEADER & String = js.native
   }
   
   @js.native
@@ -34,35 +37,43 @@ object esmRegionsMod {
   object RegionCardinality extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RegionCardinality with String] = js.native
+    def apply(value: String): js.UndefOr[RegionCardinality & String] = js.native
     
     /**
       * A region that contains a finite rectangular group of table cells
       */
     @js.native
-    sealed trait CELLS extends RegionCardinality
-    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.CELLS with String = js.native
+    sealed trait CELLS
+      extends StObject
+         with RegionCardinality
+    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.CELLS & String = js.native
     
     /**
       * A region that represents all cells within 1 or more columns.
       */
     @js.native
-    sealed trait FULL_COLUMNS extends RegionCardinality
-    /* "full-columns" */ val FULL_COLUMNS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_COLUMNS with String = js.native
+    sealed trait FULL_COLUMNS
+      extends StObject
+         with RegionCardinality
+    /* "full-columns" */ val FULL_COLUMNS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_COLUMNS & String = js.native
     
     /**
       * A region that represents all cells within 1 or more rows.
       */
     @js.native
-    sealed trait FULL_ROWS extends RegionCardinality
-    /* "full-rows" */ val FULL_ROWS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_ROWS with String = js.native
+    sealed trait FULL_ROWS
+      extends StObject
+         with RegionCardinality
+    /* "full-rows" */ val FULL_ROWS: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_ROWS & String = js.native
     
     /**
       * A region that represents all cells in the table.
       */
     @js.native
-    sealed trait FULL_TABLE extends RegionCardinality
-    /* "full-table" */ val FULL_TABLE: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_TABLE with String = js.native
+    sealed trait FULL_TABLE
+      extends StObject
+         with RegionCardinality
+    /* "full-table" */ val FULL_TABLE: typings.blueprintjsTable.esmRegionsMod.RegionCardinality.FULL_TABLE & String = js.native
   }
   
   @JSImport("@blueprintjs/table/lib/esm/regions", "Regions")
@@ -79,57 +90,47 @@ object esmRegionsMod {
       * Adds the region to the end of a cloned copy of the supplied region
       * array.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.add")
-    @js.native
-    def add(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = js.native
+    @scala.inline
+    def add(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
     
     /**
       * Returns a region containing one or more cells.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.cell")
-    @js.native
-    def cell(row: Double, col: Double): IRegion = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.cell")
-    @js.native
-    def cell(row: Double, col: Double, row2: js.UndefOr[scala.Nothing], col2: Double): IRegion = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.cell")
-    @js.native
-    def cell(row: Double, col: Double, row2: Double): IRegion = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.cell")
-    @js.native
-    def cell(row: Double, col: Double, row2: Double, col2: Double): IRegion = js.native
+    @scala.inline
+    def cell(row: Double, col: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    @scala.inline
+    def cell(row: Double, col: Double, row2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    @scala.inline
+    def cell(row: Double, col: Double, row2: Double, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+    @scala.inline
+    def cell(row: Double, col: Double, row2: Unit, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("cell")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], row2.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Clamps the region's start and end indices between 0 and the provided
       * maximum values.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.clampRegion")
-    @js.native
-    def clampRegion(region: IRegion, maxRowIndex: Double, maxColumnIndex: Double): IRegion = js.native
+    @scala.inline
+    def clampRegion(region: IRegion, maxRowIndex: Double, maxColumnIndex: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("clampRegion")(region.asInstanceOf[js.Any], maxRowIndex.asInstanceOf[js.Any], maxColumnIndex.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Returns a region containing one or more full columns.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.column")
-    @js.native
-    def column(col: Double): IRegion = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.column")
-    @js.native
-    def column(col: Double, col2: Double): IRegion = js.native
+    @scala.inline
+    def column(col: Double): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any]).asInstanceOf[IRegion]
+    @scala.inline
+    def column(col: Double, col2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("column")(col.asInstanceOf[js.Any], col2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Returns true if the regions fully contain the query region.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.containsRegion")
-    @js.native
-    def containsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = js.native
+    @scala.inline
+    def containsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns a deep copy of the provided region.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.copy")
-    @js.native
-    def copy(region: IRegion): IRegion = js.native
+    @scala.inline
+    def copy(region: IRegion): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(region.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /**
       * Iterates over the cells within an `IRegion`, invoking the callback with
@@ -141,22 +142,19 @@ object esmRegionsMod {
     @scala.inline
     def eachCellInRegion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eachCellInRegion")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.eachUniqueFullColumn")
-    @js.native
-    def eachUniqueFullColumn(regions: js.Array[IRegion], iteratee: js.Function1[/* col */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def eachUniqueFullColumn(regions: js.Array[IRegion], iteratee: js.Function1[/* col */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullColumn")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.eachUniqueFullRow")
-    @js.native
-    def eachUniqueFullRow(regions: js.Array[IRegion], iteratee: js.Function1[/* row */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def eachUniqueFullRow(regions: js.Array[IRegion], iteratee: js.Function1[/* row */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachUniqueFullRow")(regions.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Using the supplied array of non-contiguous `IRegion`s, this method
       * returns an ordered array of every unique cell that exists in those
       * regions.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.enumerateUniqueCells")
-    @js.native
-    def enumerateUniqueCells(regions: js.Array[IRegion], numRows: Double, numCols: Double): js.Array[ICellCoordinate] = js.native
+    @scala.inline
+    def enumerateUniqueCells(regions: js.Array[IRegion], numRows: Double, numCols: Double): js.Array[ICellCoordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateUniqueCells")(regions.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[js.Array[ICellCoordinate]]
     
     /**
       * Expands an old region to the minimal bounding region that also contains
@@ -164,45 +162,39 @@ object esmRegionsMod {
       * region is returned. Useful for expanding a selected region on
       * shift+click, for instance.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.expandRegion")
-    @js.native
-    def expandRegion(oldRegion: IRegion, newRegion: IRegion): IRegion = js.native
+    @scala.inline
+    def expandRegion(oldRegion: IRegion, newRegion: IRegion): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRegion")(oldRegion.asInstanceOf[js.Any], newRegion.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     /**
       * Returns the index of the region that wholly contains the supplied
       * parameter. Returns -1 if no such region is found.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.findContainingRegion")
-    @js.native
-    def findContainingRegion(regions: js.Array[IRegion], region: IRegion): Double = js.native
+    @scala.inline
+    def findContainingRegion(regions: js.Array[IRegion], region: IRegion): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findContainingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the index of the region that is equal to the supplied
       * parameter. Returns -1 if no such region is found.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.findMatchingRegion")
-    @js.native
-    def findMatchingRegion(regions: js.Array[IRegion], region: IRegion): Double = js.native
+    @scala.inline
+    def findMatchingRegion(regions: js.Array[IRegion], region: IRegion): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchingRegion")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the smallest single contiguous `IRegion` that contains all cells in the
       * supplied array.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.getBoundingRegion")
-    @js.native
-    def getBoundingRegion(cells: js.Array[ICellCoordinate]): IRegion = js.native
+    @scala.inline
+    def getBoundingRegion(cells: js.Array[ICellCoordinate]): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundingRegion")(cells.asInstanceOf[js.Any]).asInstanceOf[IRegion]
     
     /**
       * Using the supplied region, returns an "equivalent" region of
       * type CELLS that define the bounds of the given region
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.getCellRegionFromRegion")
-    @js.native
-    def getCellRegionFromRegion(region: IRegion, numRows: Double, numCols: Double): IRegion = js.native
+    @scala.inline
+    def getCellRegionFromRegion(region: IRegion, numRows: Double, numCols: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("getCellRegionFromRegion")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.getFocusCellCoordinatesFromRegion")
-    @js.native
-    def getFocusCellCoordinatesFromRegion(region: IRegion): Col = js.native
+    @scala.inline
+    def getFocusCellCoordinatesFromRegion(region: IRegion): Col = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusCellCoordinatesFromRegion")(region.asInstanceOf[js.Any]).asInstanceOf[Col]
     
     /**
       * Determines the cardinality of a region. We use null values to indicate
@@ -232,32 +224,28 @@ object esmRegionsMod {
       *
       * In this case, this method would return `RegionCardinality.CELLS`.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.getRegionCardinality")
-    @js.native
-    def getRegionCardinality(region: IRegion): RegionCardinality = js.native
+    @scala.inline
+    def getRegionCardinality(region: IRegion): RegionCardinality = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegionCardinality")(region.asInstanceOf[js.Any]).asInstanceOf[RegionCardinality]
     
     /**
       * Returns true if the regions contain a region that has FULL_COLUMNS
       * cardinality and contains the specified column index.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.hasFullColumn")
-    @js.native
-    def hasFullColumn(regions: js.Array[IRegion], col: Double): Boolean = js.native
+    @scala.inline
+    def hasFullColumn(regions: js.Array[IRegion], col: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullColumn")(regions.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns true if the regions contain a region that has FULL_ROWS
       * cardinality and contains the specified row index.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.hasFullRow")
-    @js.native
-    def hasFullRow(regions: js.Array[IRegion], row: Double): Boolean = js.native
+    @scala.inline
+    def hasFullRow(regions: js.Array[IRegion], row: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasFullRow")(regions.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns true if the regions contain a region that has FULL_TABLE cardinality
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.hasFullTable")
-    @js.native
-    def hasFullTable(regions: js.Array[IRegion]): Boolean = js.native
+    @scala.inline
+    def hasFullTable(regions: js.Array[IRegion]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasFullTable")(regions.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.intervalContains")
     @js.native
@@ -284,29 +272,25 @@ object esmRegionsMod {
     @scala.inline
     def intervalsEqual_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intervalsEqual")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.isRegionValidForTable")
-    @js.native
-    def isRegionValidForTable(region: IRegion, numRows: Double, numCols: Double): Boolean = js.native
+    @scala.inline
+    def isRegionValidForTable(region: IRegion, numRows: Double, numCols: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRegionValidForTable")(region.asInstanceOf[js.Any], numRows.asInstanceOf[js.Any], numCols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.isValid")
-    @js.native
-    def isValid(region: IRegion): Boolean = js.native
+    @scala.inline
+    def isValid(region: IRegion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(region.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.joinStyledRegionGroups")
-    @js.native
+    @scala.inline
     def joinStyledRegionGroups(
       selectedRegions: js.Array[IRegion],
       otherRegions: js.Array[IStyledRegionGroup],
       focusedCell: IFocusedCellCoordinates
-    ): js.Array[IStyledRegionGroup] = js.native
+    ): js.Array[IStyledRegionGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinStyledRegionGroups")(selectedRegions.asInstanceOf[js.Any], otherRegions.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[js.Array[IStyledRegionGroup]]
     
     /**
       * Returns true iff the specified region is equal to the last region in
       * the region list. This allows us to avoid immediate additive re-selection.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.lastRegionIsEqual")
-    @js.native
-    def lastRegionIsEqual(regions: js.Array[IRegion], region: IRegion): Boolean = js.native
+    @scala.inline
+    def lastRegionIsEqual(regions: js.Array[IRegion], region: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lastRegionIsEqual")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.normalizeInterval")
     @js.native
@@ -323,12 +307,10 @@ object esmRegionsMod {
     /**
       * Returns true if the regions at least partially overlap the query region.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.overlapsRegion")
-    @js.native
-    def overlapsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.overlapsRegion")
-    @js.native
-    def overlapsRegion(regions: js.Array[IRegion], query: IRegion, allowPartialOverlap: Boolean): Boolean = js.native
+    @scala.inline
+    def overlapsRegion(regions: js.Array[IRegion], query: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def overlapsRegion(regions: js.Array[IRegion], query: IRegion, allowPartialOverlap: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlapsRegion")(regions.asInstanceOf[js.Any], query.asInstanceOf[js.Any], allowPartialOverlap.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.regionContains")
     @js.native
@@ -336,19 +318,16 @@ object esmRegionsMod {
     @scala.inline
     def regionContains_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionContains")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.regionsEqual")
-    @js.native
-    def regionsEqual(regionA: IRegion, regionB: IRegion): Boolean = js.native
+    @scala.inline
+    def regionsEqual(regionA: IRegion, regionB: IRegion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("regionsEqual")(regionA.asInstanceOf[js.Any], regionB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Returns a region containing one or more full rows.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.row")
-    @js.native
-    def row(row: Double): IRegion = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.row")
-    @js.native
-    def row(row: Double, row2: Double): IRegion = js.native
+    @scala.inline
+    def row(row: Double): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any]).asInstanceOf[IRegion]
+    @scala.inline
+    def row(row: Double, row2: Double): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("row")(row.asInstanceOf[js.Any], row2.asInstanceOf[js.Any])).asInstanceOf[IRegion]
     
     @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.rowFirstComparator")
     @js.native
@@ -365,27 +344,23 @@ object esmRegionsMod {
       * invoke the mapper callback only on the cells in the supplied coordinate
       * array and store the result. Returns the resulting 2-dimensional array.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.sparseMapCells")
-    @js.native
-    def sparseMapCells[T](cells: js.Array[ICellCoordinate], mapper: js.Function2[/* row */ Double, /* col */ Double, T]): js.Array[js.Array[T]] = js.native
+    @scala.inline
+    def sparseMapCells[T](cells: js.Array[ICellCoordinate], mapper: js.Function2[/* row */ Double, /* col */ Double, T]): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseMapCells")(cells.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
     
     /**
       * Returns a region containing the entire table.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.table")
-    @js.native
-    def table(): IRegion = js.native
+    @scala.inline
+    def table(): IRegion = ^.asInstanceOf[js.Dynamic].applyDynamic("table")().asInstanceOf[IRegion]
     
     /**
       * Replaces the region at the end of a cloned copy of the supplied region
       * array, or at the specific index if one is provided.
       */
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.update")
-    @js.native
-    def update(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = js.native
-    @JSImport("@blueprintjs/table/lib/esm/regions", "Regions.update")
-    @js.native
-    def update(regions: js.Array[IRegion], region: IRegion, index: Double): js.Array[IRegion] = js.native
+    @scala.inline
+    def update(regions: js.Array[IRegion], region: IRegion): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
+    @scala.inline
+    def update(regions: js.Array[IRegion], region: IRegion, index: Double): js.Array[IRegion] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(regions.asInstanceOf[js.Any], region.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[IRegion]]
   }
   
   @js.native
@@ -395,15 +370,19 @@ object esmRegionsMod {
   object RowLoadingOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RowLoadingOption with String] = js.native
+    def apply(value: String): js.UndefOr[RowLoadingOption & String] = js.native
     
     @js.native
-    sealed trait CELLS extends RowLoadingOption
-    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.RowLoadingOption.CELLS with String = js.native
+    sealed trait CELLS
+      extends StObject
+         with RowLoadingOption
+    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.RowLoadingOption.CELLS & String = js.native
     
     @js.native
-    sealed trait HEADER extends RowLoadingOption
-    /* "row-header" */ val HEADER: typings.blueprintjsTable.esmRegionsMod.RowLoadingOption.HEADER with String = js.native
+    sealed trait HEADER
+      extends StObject
+         with RowLoadingOption
+    /* "row-header" */ val HEADER: typings.blueprintjsTable.esmRegionsMod.RowLoadingOption.HEADER & String = js.native
   }
   
   object SelectionModes {
@@ -456,26 +435,31 @@ object esmRegionsMod {
   object TableLoadingOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TableLoadingOption with String] = js.native
+    def apply(value: String): js.UndefOr[TableLoadingOption & String] = js.native
     
     @js.native
-    sealed trait CELLS extends TableLoadingOption
-    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.CELLS with String = js.native
+    sealed trait CELLS
+      extends StObject
+         with TableLoadingOption
+    /* "cells" */ val CELLS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.CELLS & String = js.native
     
     @js.native
-    sealed trait COLUMN_HEADERS extends TableLoadingOption
-    /* "column-header" */ val COLUMN_HEADERS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.COLUMN_HEADERS with String = js.native
+    sealed trait COLUMN_HEADERS
+      extends StObject
+         with TableLoadingOption
+    /* "column-header" */ val COLUMN_HEADERS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.COLUMN_HEADERS & String = js.native
     
     @js.native
-    sealed trait ROW_HEADERS extends TableLoadingOption
-    /* "row-header" */ val ROW_HEADERS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.ROW_HEADERS with String = js.native
+    sealed trait ROW_HEADERS
+      extends StObject
+         with TableLoadingOption
+    /* "row-header" */ val ROW_HEADERS: typings.blueprintjsTable.esmRegionsMod.TableLoadingOption.ROW_HEADERS & String = js.native
   }
   
   type ICellCoordinate = js.Tuple2[Double, Double]
   
   type ICellInterval = js.Tuple2[Double, Double]
   
-  @js.native
   trait IRegion extends StObject {
     
     /**
@@ -483,14 +467,14 @@ object esmRegionsMod {
       * zero-indexed. If `cols` is `null`, then all columns are understood to be
       * included in the region.
       */
-    var cols: js.UndefOr[ICellInterval | Null] = js.native
+    var cols: js.UndefOr[ICellInterval | Null] = js.undefined
     
     /**
       * The first and last row indices in the region, inclusive and zero-indexed.
       * If `rows` is `null`, then all rows are understood to be included in the
       * region.
       */
-    var rows: js.UndefOr[ICellInterval | Null] = js.native
+    var rows: js.UndefOr[ICellInterval | Null] = js.undefined
   }
   object IRegion {
     
@@ -523,12 +507,11 @@ object esmRegionsMod {
     }
   }
   
-  @js.native
   trait IStyledRegionGroup extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var regions: js.Array[IRegion] = js.native
+    var regions: js.Array[IRegion]
   }
   object IStyledRegionGroup {
     

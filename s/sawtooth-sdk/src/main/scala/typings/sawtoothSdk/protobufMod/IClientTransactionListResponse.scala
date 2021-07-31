@@ -3,23 +3,21 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientTransactionListResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientTransactionListResponse extends StObject {
   
   /** ClientTransactionListResponse headId */
-  var headId: js.UndefOr[String | Null] = js.native
+  var headId: js.UndefOr[String | Null] = js.undefined
   
   /** ClientTransactionListResponse paging */
-  var paging: js.UndefOr[IClientPagingResponse | Null] = js.native
+  var paging: js.UndefOr[IClientPagingResponse | Null] = js.undefined
   
   /** ClientTransactionListResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
   
   /** ClientTransactionListResponse transactions */
-  var transactions: js.UndefOr[js.Array[ITransaction] | Null] = js.native
+  var transactions: js.UndefOr[js.Array[ITransaction] | Null] = js.undefined
 }
 object IClientTransactionListResponse {
   

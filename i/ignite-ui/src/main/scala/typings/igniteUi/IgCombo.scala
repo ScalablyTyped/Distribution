@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgCombo
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,57 +19,57 @@ trait IgCombo
     * 2. Custom values will be auto completed to the closest value if [autoComplete](ui.igcombo#options:autoComplete) is enabled.
     *
     */
-  var allowCustomValue: js.UndefOr[Boolean] = js.native
+  var allowCustomValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets hide drop-down list animation duration in milliseconds.
     *
     */
-  var animationHideDuration: js.UndefOr[Double] = js.native
+  var animationHideDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets show drop-down list animation duration in milliseconds.
     *
     */
-  var animationShowDuration: js.UndefOr[Double] = js.native
+  var animationShowDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets ability to autocomplete field from first matching item in list.
     * Note: When autoComplete option is enabled, then "startsWith" is used for [filteringCondition](ui.igcombo#options:filteringCondition).
     *
     */
-  var autoComplete: js.UndefOr[Boolean] = js.native
+  var autoComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the first matching item should be auto selected when typing in input. When [multiSelection](ui.igcombo#options:multiSelection) is enabled this option will instead put the active item on the matching element.
     *
     */
-  var autoSelectFirstMatch: js.UndefOr[Boolean] = js.native
+  var autoSelectFirstMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, filtering and auto selection will be case-sensitive.
     *
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets title for html element which represent clear button.
     * Use option [locale.clearButtonTitle](ui.igcombo#options:locale.clearButtonTitle).
     */
-  var clearButtonTitle: js.UndefOr[String] = js.native
+  var clearButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets ability to close drop-down list when control loses focus.
     *
     */
-  var closeDropDownOnBlur: js.UndefOr[Boolean] = js.native
+  var closeDropDownOnBlur: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets sets ability to close drop-down list when single item in the list is selected with mouse click or enter press. The default value when [multiSelection](ui.igcombo#options:multiSelection) is enabled will be false. This option will not close the drop down when [multiSelection](ui.igcombo#options:multiSelection) is enabled and additive selection is performed.
     *
     */
-  var closeDropDownOnSelect: js.UndefOr[Boolean] = js.native
+  var closeDropDownOnSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event which is raised before data binding is performed.
@@ -79,7 +78,7 @@ trait IgCombo
     * Use ui.owner to get a reference to igCombo performing the databinding.
     * Use ui.dataSource to get a reference to the [$.ig.DataSource](ig.datasource) combo is to be databound to.
     */
-  var dataBinding: js.UndefOr[DataBindingEvent] = js.native
+  var dataBinding: js.UndefOr[DataBindingEvent] = js.undefined
   
   /**
     * Event which is raised after data binding is complete.
@@ -90,47 +89,47 @@ trait IgCombo
     * Use ui.success to see if the databinding was performed correctly.
     * Use ui.errorMessage to get the error message if the databinding failed.
     */
-  var dataBound: js.UndefOr[DataBoundEvent] = js.native
+  var dataBound: js.UndefOr[DataBoundEvent] = js.undefined
   
   /**
     * Gets/Sets a valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an [$.ig.DataSource](ig.datasource) itself.
     * Note: if it is set to string and [dataSourceType](ui.igcombo#options:dataSourceType) option is not set, then [$.ig.JSONDataSource](ig.jsondatasource) is used.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets data source type (such as "json", "xml", etc). Please refer to the documentation of [$.ig.DataSource](ig.datasource) and its [type](ig.datasource#options:settings.type) property.
     *
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Sets URL which is used for sending JSON on request for remote filtering (MVC for example). That option is required when [load on demand](ui.igcombo#options:loadOnDemandSettings) is
     * [enabled](ui.igcombo#options:loadOnDemandSettings.enabled) and its [type](ui.igcombo#options:filteringType) is remote.
     *
     */
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the delay duration before processing the changes in the input. Useful to boost performance by lowering the count of selection, filtering, auto complete and highlighting operations executed on each input change.
     *
     */
-  var delayInputChangeProcessing: js.UndefOr[Double] = js.native
+  var delayInputChangeProcessing: js.UndefOr[Double] = js.undefined
   
   /**
     * If set to true, the container of the drop-down list is appended to the body.
     * If set to false, it is appended to the parent element of the combo.
     *
     */
-  var dropDownAttachedToBody: js.UndefOr[Boolean] = js.native
+  var dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets title for html element which represent the drop-down button.
     * Use option [locale.dropDownButtonTitle](ui.igcombo#options:locale.dropDownButtonTitle).
     */
-  var dropDownButtonTitle: js.UndefOr[String] = js.native
+  var dropDownButtonTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised after drop-down list was closed.
@@ -140,7 +139,7 @@ trait IgCombo
     * Use ui.owner to obtain reference to igCombo.
     * Use ui.list to obtain reference to jquery DOM element which represents drop down list container.
     */
-  var dropDownClosed: js.UndefOr[DropDownClosedEvent] = js.native
+  var dropDownClosed: js.UndefOr[DropDownClosedEvent] = js.undefined
   
   /**
     * Event which is raised before drop-down list is closed.
@@ -150,13 +149,13 @@ trait IgCombo
     * Use ui.owner to obtain reference to igCombo.
     * Use ui.list to obtain reference to jquery DOM element which represents drop down list container.
     */
-  var dropDownClosing: js.UndefOr[DropDownClosingEvent] = js.native
+  var dropDownClosing: js.UndefOr[DropDownClosingEvent] = js.undefined
   
   /**
     * Gets/Sets ability to show the drop-down list when the combo is in focus. This option has effect only if the combo is in editable [mode](ui.igcombo#options:mode).
     *
     */
-  var dropDownOnFocus: js.UndefOr[Boolean] = js.native
+  var dropDownOnFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event which is raised after drop-down list was opened.
@@ -165,7 +164,7 @@ trait IgCombo
     * Use ui.owner to obtain reference to igCombo.
     * Use ui.list to obtain reference to jquery DOM element which represents drop down list container.
     */
-  var dropDownOpened: js.UndefOr[DropDownOpenedEvent] = js.native
+  var dropDownOpened: js.UndefOr[DropDownOpenedEvent] = js.undefined
   
   /**
     * Event which is raised before drop-down list is opened.
@@ -175,7 +174,7 @@ trait IgCombo
     * Use ui.owner to obtain reference to igCombo.
     * Use ui.list to obtain reference to jquery DOM element which represents drop down list container.
     */
-  var dropDownOpening: js.UndefOr[DropDownOpeningEvent] = js.native
+  var dropDownOpening: js.UndefOr[DropDownOpeningEvent] = js.undefined
   
   /**
     * Gets/Sets drop-down list orientation when open button is clicked.
@@ -186,7 +185,7 @@ trait IgCombo
     * "bottom" below the combo input
     * "top" above the combo input
     */
-  var dropDownOrientation: js.UndefOr[String] = js.native
+  var dropDownOrientation: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the width of drop-down list in pixels.
@@ -196,20 +195,20 @@ trait IgCombo
     * "string" The default drop-down list width can be set in pixels (px).
     * "number" The default drop-down list width can be set as a number.
     */
-  var dropDownWidth: js.UndefOr[String | Double] = js.native
+  var dropDownWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Specifies whether the clear button should be rendered.
     * When the [mode](ui.igcombo#options:mode) is single selection, readonly or readonlylist this option will default to false. It can still be enabled when it is specifically set to true.
     *
     */
-  var enableClearButton: js.UndefOr[Boolean] = js.native
+  var enableClearButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets URL key name that specifies how the remote filtering expressions will be encoded for remote requests, e.g. &filter('col') = startsWith. Default is OData.
     *
     */
-  var filterExprUrlKey: js.UndefOr[String] = js.native
+  var filterExprUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised after filtering.
@@ -219,7 +218,7 @@ trait IgCombo
     * Use ui.owner to obtain reference to igCombo.
     * Use ui.elements to obtain a jquery reference to the rendered filtered elements.
     */
-  var filtered: js.UndefOr[FilteredEvent] = js.native
+  var filtered: js.UndefOr[FilteredEvent] = js.undefined
   
   /**
     * Event which is raised before data filtering.
@@ -229,7 +228,7 @@ trait IgCombo
     * Use ui.expression to obtain reference to array which contains expressions supported by [$.ig.DataSource](ig.datasource).
     * Each expression-item contains following members: fieldName ([textKey](ui.igcombo#options:textKey)), cond ([filteringCondition](ui.igcombo#options:filteringCondition)), expr (value/string to filter).
     */
-  var filtering: js.UndefOr[FilteringEvent] = js.native
+  var filtering: js.UndefOr[FilteringEvent] = js.undefined
   
   /**
     * Gets/Sets condition used for filtering.Note: When [autoComplete](ui.igcombo#options:autoComplete) is enabled, the filtering condition is always "startsWith".
@@ -247,7 +246,7 @@ trait IgCombo
     * "equals"
     * "doesNotEqual"
     */
-  var filteringCondition: js.UndefOr[String] = js.native
+  var filteringCondition: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets filtering logic.
@@ -257,7 +256,7 @@ trait IgCombo
     * "OR"
     * "AND"
     */
-  var filteringLogic: js.UndefOr[String] = js.native
+  var filteringLogic: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets type of filtering.Note: option is set to "remote", then the "css.waitFiltering" is applied to combo and its drop-down list.
@@ -268,7 +267,7 @@ trait IgCombo
     * "local" filtering is performed by $.ig.DataSource
     * "none" filtering is disabled
     */
-  var filteringType: js.UndefOr[String] = js.native
+  var filteringType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets template used to render a footer in the drop-down list.
@@ -281,7 +280,7 @@ trait IgCombo
     * - {3}: Number of all records on server
     *
     */
-  var footerTemplate: js.UndefOr[String] = js.native
+  var footerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the format string that is used to format the text display values in the combo.
@@ -294,25 +293,25 @@ trait IgCombo
     * Custom format strings should match the data type in "textKey" column.
     *
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets object specifying grouping feature options. The option has key and dir properties.
     *
     */
-  var grouping: js.UndefOr[IgComboGrouping] = js.native
+  var grouping: js.UndefOr[IgComboGrouping] = js.undefined
   
   /**
     * Gets/Sets template used to render a header in the drop-down list. The template is rendered inside of a DIV html element.
     *
     */
-  var headerTemplate: js.UndefOr[String] = js.native
+  var headerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets height of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.
     *
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets/Sets condition used for highlighting of matching parts in items of drop-down list.
@@ -325,27 +324,27 @@ trait IgCombo
     * "full" only fully matched items are rendered
     * "null" matches are not rendered
     */
-  var highlightMatchesMode: js.UndefOr[String] = js.native
+  var highlightMatchesMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets list of items to be selected when the combo is initialized. It should contain array of objects with index or value property, then on initialization the matching items will be selected. If initialSelectedItems are not set, the combo is with single selection and it is in a dropdown, readonly or readonlylist [mode](ui.igcombo#options:mode), the first item will be automatically selected.
     * Note: Only items loaded on initialization can be selected. When using [load on demand](ui.igCombo#options:loadOnDemandSettings), selecting an item which is not loaded yet will fail.
     *
     */
-  var initialSelectedItems: js.UndefOr[js.Array[IgComboInitialSelectedItem]] = js.native
+  var initialSelectedItems: js.UndefOr[js.Array[IgComboInitialSelectedItem]] = js.undefined
   
   /**
     * Gets/Sets the name of a hidden INPUT element, which is used when submitting data. Its value will be set to the values of the selected items valueKeys separated by ',' character on any change in igCombo. If the combo element has 'name' attribute and this option is not set, the 'name' attribute will be used for the input name.
     *
     */
-  var inputName: js.UndefOr[String] = js.native
+  var inputName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets a template used to render an item in list. The igCombo utilizes igTemplating for generating node content templates.
     * More info on the templating engine can be found here: http://www.igniteui.com/help/infragistics-templating-engine.
     *
     */
-  var itemTemplate: js.UndefOr[String] = js.native
+  var itemTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Event which is raised after rendering of the combo items completes.
@@ -354,7 +353,7 @@ trait IgCombo
     * Use ui.owner to get a reference to the combo performing rendering.
     * Use ui.dataSource to get a reference to the [$.ig.DataSource](ig.datasource) combo is databound to.
     */
-  var itemsRendered: js.UndefOr[ItemsRenderedEvent] = js.native
+  var itemsRendered: js.UndefOr[ItemsRenderedEvent] = js.undefined
   
   /**
     * Event which is raised before rendering of the combo items is performed.
@@ -363,13 +362,13 @@ trait IgCombo
     * Use ui.owner to get a reference to the combo performing rendering.
     * Use ui.dataSource to get a reference to the [$.ig.DataSource](ig.datasource) combo is databound to.
     */
-  var itemsRendering: js.UndefOr[ItemsRenderingEvent] = js.native
+  var itemsRendering: js.UndefOr[ItemsRenderingEvent] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets container of variables which define load on demand functionality.
@@ -378,9 +377,9 @@ trait IgCombo
     * Selection is supported only for already loaded items.
     *
     */
-  var loadOnDemandSettings: js.UndefOr[IgComboLoadOnDemandSettings] = js.native
+  var loadOnDemandSettings: js.UndefOr[IgComboLoadOnDemandSettings] = js.undefined
   
-  var locale: js.UndefOr[IgComboLocale] = js.native
+  var locale: js.UndefOr[IgComboLocale] = js.undefined
   
   /**
     * Sets gets functionality mode.
@@ -392,39 +391,39 @@ trait IgCombo
     * "readonlylist" Allows to open list, but does not allow any changes in field or selection in drop-down list. If selection is not set, then first item in [dataSource](ui.igcombo#options:dataSource) is automatically selected.
     * "readonly" Does not allow to open list or change value in field. If selection is not set, then first item in [dataSource](ui.igcombo#options:dataSource) is automatically selected.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets object specifying multi selection feature options. Note showCheckboxes and itemSeparator has effect only if multi selection is enabled.
     *
     */
-  var multiSelection: js.UndefOr[IgComboMultiSelection] = js.native
+  var multiSelection: js.UndefOr[IgComboMultiSelection] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets text of list item for condition when [filteringType](ui.igcombo#options:filteringType) option is enabled and no match was found.
     * Use option [locale.noMatchFoundText](ui.igcombo#options:locale.noMatchFoundText).
     */
-  var noMatchFoundText: js.UndefOr[String] = js.native
+  var noMatchFoundText: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Gets/Sets value that is displayed when input field is empty.
     * Use option [locale.placeHolder](ui.igcombo#options:locale.placeHolder).
     */
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets ability to prevent submitting form on enter key press.
     *
     */
-  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.native
+  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Event which is raised after rendering of the combo completes.
@@ -433,25 +432,25 @@ trait IgCombo
     * Use ui.owner to get a reference to the combo performing rendering.
     * Use ui.element to get a reference to the main/top combo element.
     */
-  var rendered: js.UndefOr[RenderedEvent] = js.native
+  var rendered: js.UndefOr[RenderedEvent] = js.undefined
   
   /**
     * Specifies the HTTP verb to be used to issue the request.
     *
     */
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
   /**
     * Content type of the response. See http://api.jquery.com/jQuery.ajax/ => contentType.
     *
     */
-  var responseContentType: js.UndefOr[String] = js.native
+  var responseContentType: js.UndefOr[String] = js.undefined
   
   /**
     * See [$.ig.DataSource](ig.datasource) This is basically the property in the response where data records are held, if the response is wrapped.
     *
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Response type when a URL is set as the data source. See http://api.jquery.com/jQuery.ajax/ => dataType.
@@ -465,19 +464,19 @@ trait IgCombo
     * "jsonp"
     * "text"
     */
-  var responseDataType: js.UndefOr[String] = js.native
+  var responseDataType: js.UndefOr[String] = js.undefined
   
   /**
     * See [$.ig.DataSource](ig.datasource) property in the response specifying the total number of records on the server.
     *
     */
-  var responseTotalRecCountKey: js.UndefOr[String] = js.native
+  var responseTotalRecCountKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets ability to select items by space button press.
     *
     */
-  var selectItemBySpaceKey: js.UndefOr[Boolean] = js.native
+  var selectItemBySpaceKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event which is raised after selection change.
@@ -487,7 +486,7 @@ trait IgCombo
     * Use ui.items to obtain reference to array of new selected items. That can be null.
     * Use ui.oldItems to obtain reference to array of old selected items. That can be null.
     */
-  var selectionChanged: js.UndefOr[IgComboSelectionChangedEvent] = js.native
+  var selectionChanged: js.UndefOr[IgComboSelectionChangedEvent] = js.undefined
   
   /**
     * Event which is raised before selection change.
@@ -498,46 +497,46 @@ trait IgCombo
     * Use ui.currentItems to obtain reference to array of the selected items before the new selection has happened. That can be null.
     * Use ui.items to obtain reference to array of all items that will be selected after the selection finish. That can be null.
     */
-  var selectionChanging: js.UndefOr[SelectionChangingEvent] = js.native
+  var selectionChanging: js.UndefOr[SelectionChangingEvent] = js.undefined
   
   /**
     * Gets/Sets whether the onscreen keyboard should be shown when the dropdown button is clicked (touch devices only).
     * Note: The keyboard will still show when the combo input is focused in editable mode.
     *
     */
-  var suppressKeyboard: js.UndefOr[Boolean] = js.native
+  var suppressKeyboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets tabIndex for the field of the combo.
     *
     */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets name of column which contains the displayed text. If it is missing, then [valueKey](ui.igcombo#options:valueKey) option will be used.
     *
     */
-  var textKey: js.UndefOr[String] = js.native
+  var textKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets object which contains options supported by [igValidator](ui.igvalidator).
     * Notes: in order for validator to work, application should ensure that [igValidator](ui.igvalidator) is loaded (ig.ui.validator.js/css files).
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.native
+  var validatorOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets name of column which contains the "value". If it is missing, then the name of first column will be used.
     *
     */
-  var valueKey: js.UndefOr[String] = js.native
+  var valueKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets ability to use virtual rendering for drop-down list. Enable to boost performance when combo has lots of records.
     * If that option is enabled, then only visible items are created and the top edge of the first visible item in list is aligned to the top edge of list.
     *
     */
-  var virtualization: js.UndefOr[Boolean] = js.native
+  var virtualization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets how many items should be shown at once.
@@ -545,13 +544,13 @@ trait IgCombo
     *    This option is used for [virtualization](ui.igcombo#options:virtualization) in order to render initial list items.
     *
     */
-  var visibleItemsCount: js.UndefOr[Double] = js.native
+  var visibleItemsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the width of combo. The numeric and string values (valid html units for size) are supported. It includes %, px, em and other units.
     *
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgCombo {
   

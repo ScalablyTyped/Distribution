@@ -6,49 +6,49 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyndicationItem extends ISyndicationNode {
+trait ISyndicationItem
+  extends StObject
+     with ISyndicationNode {
   
-  var authors: IVector[SyndicationPerson] = js.native
+  var authors: IVector[SyndicationPerson]
   
-  var categories: IVector[SyndicationCategory] = js.native
+  var categories: IVector[SyndicationCategory]
   
-  var commentsUri: Uri = js.native
+  var commentsUri: Uri
   
-  var content: SyndicationContent = js.native
+  var content: SyndicationContent
   
-  var contributors: IVector[SyndicationPerson] = js.native
+  var contributors: IVector[SyndicationPerson]
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var editMediaUri: Uri = js.native
+  var editMediaUri: Uri
   
-  var editUri: Uri = js.native
+  var editUri: Uri
   
-  var id: String = js.native
+  var id: String
   
-  var itemUri: Uri = js.native
+  var itemUri: Uri
   
-  var lastUpdatedTime: Date = js.native
+  var lastUpdatedTime: Date
   
-  var links: IVector[SyndicationLink] = js.native
+  var links: IVector[SyndicationLink]
   
-  def load(item: String): Unit = js.native
+  def load(item: String): Unit
   
-  def loadFromXml(itemDocument: XmlDocument): Unit = js.native
+  def loadFromXml(itemDocument: XmlDocument): Unit
   
-  var publishedDate: Date = js.native
+  var publishedDate: Date
   
-  var rights: ISyndicationText = js.native
+  var rights: ISyndicationText
   
-  var source: SyndicationFeed = js.native
+  var source: SyndicationFeed
   
-  var summary: ISyndicationText = js.native
+  var summary: ISyndicationText
   
-  var title: ISyndicationText = js.native
+  var title: ISyndicationText
 }
 object ISyndicationItem {
   

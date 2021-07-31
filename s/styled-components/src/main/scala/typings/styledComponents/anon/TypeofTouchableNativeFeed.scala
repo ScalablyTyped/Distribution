@@ -7,11 +7,12 @@ import typings.reactNative.mod.ThemeAttributeBackgroundPropType
 import typings.reactNative.mod.TouchableNativeFeedback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTouchableNativeFeed extends Instantiable0[TouchableNativeFeedback] {
+trait TypeofTouchableNativeFeed
+  extends StObject
+     with Instantiable0[TouchableNativeFeedback] {
   
   /**
     * Creates an object that represents ripple drawable with specified color (as a

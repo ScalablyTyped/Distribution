@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Attachment extends Entity {
+trait Attachment
+  extends StObject
+     with Entity {
   
   // The MIME type.
-  var contentType: js.UndefOr[NullableOption[String]] = js.native
+  var contentType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // true if the attachment is an inline attachment; otherwise, false.
-  var isInline: js.UndefOr[Boolean] = js.native
+  var isInline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The attachment's file name.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The length of the attachment in bytes.
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object Attachment {
   

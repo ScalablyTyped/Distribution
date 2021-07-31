@@ -3,13 +3,11 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.Utilities.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a layout for the ListView in which items are arranged in a vertical list.
   **/
-@js.native
 trait ListLayout extends StObject {
   
   //#endregion Methods
@@ -17,29 +15,29 @@ trait ListLayout extends StObject {
   /**
     * This property is no longer supported. Starting with Windows Library for JavaScript 2.0, use the .win-listview.win-container.win-backdrop CSS selector.
     **/
-  var backdropColor: String = js.native
+  var backdropColor: String
   
   /**
     * This property is no longer supported. Starting with Windows Library for JavaScript 2.0, use the .win-listview.win-container.win-backdrop CSS selector.
     **/
-  var disableBackdrop: Boolean = js.native
+  var disableBackdrop: Boolean
   
   //#endregion Constructors
   //#region Methods
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def dragLeave(): Unit = js.native
+  def dragLeave(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def dragOver(): Unit = js.native
+  def dragOver(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def executeAnimations(): Unit = js.native
+  def executeAnimations(): Unit
   
   /**
     * Determines the next item to receive keyboard focus.
@@ -47,31 +45,31 @@ trait ListLayout extends StObject {
     * @param pressedKey The key that was pressed.
     * @returns An object that describes the next item that should receive focus. It has these properties: index, type.
     **/
-  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any = js.native
+  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any
   
   /**
     * Gets or sets the position of group headers.
     **/
-  var groupHeaderPosition: HeaderPosition = js.native
+  var groupHeaderPosition: HeaderPosition
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param x The x-coordinate, or the horizontal position on the screen.
     * @param y The y-coordinate, or the vertical position on the screen.
     **/
-  def hitTest(x: Double, y: Double): Unit = js.native
+  def hitTest(x: Double, y: Double): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def initialize(): Unit = js.native
+  def initialize(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param firstPixel
     * @param lastPixel
     **/
-  def itemsFromRange(firstPixel: Double, lastPixel: Double): Unit = js.native
+  def itemsFromRange(firstPixel: Double, lastPixel: Double): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
@@ -80,27 +78,27 @@ trait ListLayout extends StObject {
     * @param modifiedItems
     * @param modifiedGroups
     **/
-  def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit = js.native
+  def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  var numberOfItemsPerItemsBlock: js.Any = js.native
+  var numberOfItemsPerItemsBlock: js.Any
   
   /**
     * Gets or sets the orientation of the GridLayout.
     **/
-  var orientation: Orientation = js.native
+  var orientation: Orientation
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def setupAnimations(): Unit = js.native
+  def setupAnimations(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def uninitialize(): Unit = js.native
+  def uninitialize(): Unit
 }
 object ListLayout {
   

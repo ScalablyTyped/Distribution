@@ -2,21 +2,19 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextBoxStyle extends StObject {
   
-  var dash: js.UndefOr[js.Array[Double]] = js.native
+  var dash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var fill: js.UndefOr[String | js.Array[Double]] = js.native
+  var fill: js.UndefOr[String | js.Array[Double]] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[String | js.Array[Double]] = js.native
+  var stroke: js.UndefOr[String | js.Array[Double]] = js.undefined
 }
 object TextBoxStyle {
   

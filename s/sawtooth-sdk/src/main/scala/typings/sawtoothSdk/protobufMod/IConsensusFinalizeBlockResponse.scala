@@ -4,17 +4,15 @@ import typings.sawtoothSdk.protobufMod.ConsensusFinalizeBlockResponse.Status
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusFinalizeBlockResponse extends StObject {
   
   /** ConsensusFinalizeBlockResponse blockId */
-  var blockId: js.UndefOr[Uint8Array | Null] = js.native
+  var blockId: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** ConsensusFinalizeBlockResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IConsensusFinalizeBlockResponse {
   

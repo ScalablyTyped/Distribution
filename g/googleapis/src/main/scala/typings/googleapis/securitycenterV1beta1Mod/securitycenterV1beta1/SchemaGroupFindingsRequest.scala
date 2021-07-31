@@ -2,13 +2,11 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for grouping by findings.
   */
-@js.native
 trait SchemaGroupFindingsRequest extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaGroupFindingsRequest extends StObject {
     * without quotes.  For example, `source_properties.size = 100` is a valid
     * filter string.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Expression that defines what assets fields to use for grouping (including
@@ -34,20 +32,20 @@ trait SchemaGroupFindingsRequest extends StObject {
     * of fields. For example: &quot;parent,resource_name&quot;.  The following
     * fields are supported:  * resource_name * category * state * parent
     */
-  var groupBy: js.UndefOr[String] = js.native
+  var groupBy: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of results to return in a single response. Default is
     * 10, minimum is 1, maximum is 1000.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The value returned by the last `GroupFindingsResponse`; indicates that
     * this is a continuation of a prior `GroupFindings` call, and that the
     * system should return the next page of data.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Time used as a reference point when filtering findings. The filter is
@@ -55,7 +53,7 @@ trait SchemaGroupFindingsRequest extends StObject {
     * those at that specific time. Absence of this field will default to the
     * API&#39;s version of NOW.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupFindingsRequest {
   

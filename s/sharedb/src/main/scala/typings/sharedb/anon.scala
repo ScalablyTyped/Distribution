@@ -30,15 +30,13 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var results: js.UndefOr[js.Array[Query]] = js.native
+    var results: js.UndefOr[js.Array[Query]] = js.undefined
   }
   object `0` {
     
@@ -62,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Data {
     
@@ -89,18 +86,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Db extends StObject {
     
-    var db: js.UndefOr[js.Any] = js.native
+    var db: js.UndefOr[js.Any] = js.undefined
     
-    var disableDocAction: js.UndefOr[Boolean] = js.native
+    var disableDocAction: js.UndefOr[Boolean] = js.undefined
     
-    var disableSpaceDelimitedActions: js.UndefOr[Boolean] = js.native
+    var disableSpaceDelimitedActions: js.UndefOr[Boolean] = js.undefined
     
-    var extraDbs: js.UndefOr[StringDictionary[ExtraDB]] = js.native
+    var extraDbs: js.UndefOr[StringDictionary[ExtraDB]] = js.undefined
     
-    var pubsub: js.UndefOr[PubSub] = js.native
+    var pubsub: js.UndefOr[PubSub] = js.undefined
   }
   object Db {
     
@@ -241,14 +237,14 @@ object anon {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def end(data: String): Unit = js.native
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -476,30 +472,21 @@ object anon {
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any): Boolean = js.native
     def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-    def write(
-      chunk: js.Any,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(chunk: js.Any, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(
       chunk: js.Any,
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
-    def write(
-      str: String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
-  @js.native
   trait Results extends StObject {
     
-    var results: js.UndefOr[js.Array[typings.sharedb.sharedbMod.Query]] = js.native
+    var results: js.UndefOr[js.Array[typings.sharedb.sharedbMod.Query]] = js.undefined
   }
   object Results {
     

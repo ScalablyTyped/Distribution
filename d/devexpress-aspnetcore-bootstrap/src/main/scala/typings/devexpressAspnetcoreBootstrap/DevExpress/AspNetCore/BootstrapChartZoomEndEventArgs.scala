@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapChartZoomEndEventArgs extends BootstrapChartEventArgsBase {
+trait BootstrapChartZoomEndEventArgs
+  extends StObject
+     with BootstrapChartEventArgsBase {
   
-  val rangeEnd: js.Any = js.native
+  val rangeEnd: js.Any
   
-  val rangeStart: js.Any = js.native
+  val rangeStart: js.Any
 }
 object BootstrapChartZoomEndEventArgs {
   

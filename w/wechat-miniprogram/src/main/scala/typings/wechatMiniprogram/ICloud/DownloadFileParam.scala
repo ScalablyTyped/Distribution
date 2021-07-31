@@ -2,15 +2,15 @@ package typings.wechatMiniprogram.ICloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DownloadFileParam extends ICloudAPIParam[DownloadFileResult] {
+trait DownloadFileParam
+  extends StObject
+     with ICloudAPIParam[DownloadFileResult] {
   
-  var cloudPath: js.UndefOr[String] = js.native
+  var cloudPath: js.UndefOr[String] = js.undefined
   
-  var fileID: String = js.native
+  var fileID: String
 }
 object DownloadFileParam {
   

@@ -2,15 +2,15 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Program extends Node {
+trait Program
+  extends StObject
+     with Node {
   
-  var blockParams: js.Array[String] = js.native
+  var blockParams: js.Array[String]
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
 }
 object Program {
   

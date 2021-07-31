@@ -10,8 +10,8 @@ A simple, powerful, and extendable templating engine for node.js and browsers, s
 | Full name          | swig |
 | Keywords           | template, templating, html, django, jinja, twig, express, block |
 | # releases         | 0 |
-| # dependents       | 608 |
-| # downloads        | 3139831 |
+| # dependents       | 614 |
+| # downloads        | 3478170 |
 | # stars            | 70 |
 
 ## Links

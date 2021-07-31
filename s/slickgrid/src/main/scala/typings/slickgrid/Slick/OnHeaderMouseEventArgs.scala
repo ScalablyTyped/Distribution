@@ -2,13 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnHeaderMouseEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnHeaderMouseEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var column: Column[T] = js.native
+  var column: Column[T]
 }
 object OnHeaderMouseEventArgs {
   
@@ -19,7 +19,7 @@ object OnHeaderMouseEventArgs {
   }
   
   @scala.inline
-  implicit class OnHeaderMouseEventArgsMutableBuilder[Self <: OnHeaderMouseEventArgs[_], T /* <: SlickData */] (val x: Self with OnHeaderMouseEventArgs[T]) extends AnyVal {
+  implicit class OnHeaderMouseEventArgsMutableBuilder[Self <: OnHeaderMouseEventArgs[?], T /* <: SlickData */] (val x: Self & OnHeaderMouseEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

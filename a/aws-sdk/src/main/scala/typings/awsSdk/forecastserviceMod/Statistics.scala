@@ -2,51 +2,49 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statistics extends StObject {
   
   /**
     * For a numeric field, the average value in the field.
     */
-  var Avg: js.UndefOr[Double] = js.native
+  var Avg: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of values in the field.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of distinct values in the field.
     */
-  var CountDistinct: js.UndefOr[Integer] = js.native
+  var CountDistinct: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of NAN (not a number) values in the field.
     */
-  var CountNan: js.UndefOr[Integer] = js.native
+  var CountNan: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of null values in the field.
     */
-  var CountNull: js.UndefOr[Integer] = js.native
+  var CountNull: js.UndefOr[Integer] = js.undefined
   
   /**
     * For a numeric field, the maximum value in the field.
     */
-  var Max: js.UndefOr[String] = js.native
+  var Max: js.UndefOr[String] = js.undefined
   
   /**
     * For a numeric field, the minimum value in the field.
     */
-  var Min: js.UndefOr[String] = js.native
+  var Min: js.UndefOr[String] = js.undefined
   
   /**
     * For a numeric field, the standard deviation.
     */
-  var Stddev: js.UndefOr[Double] = js.native
+  var Stddev: js.UndefOr[Double] = js.undefined
 }
 object Statistics {
   

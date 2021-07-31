@@ -2,69 +2,67 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined opentype.js.opentype.js.FontConstructorOptionsBase & std.Partial<opentype.js.opentype.js.FontOptions> & {  glyphs :std.Array<opentype.js.opentype.js.Glyph>} */
-@js.native
 trait FontConstructorOptions extends StObject {
   
-  var ascender: Double with js.UndefOr[Double] = js.native
+  var ascender: Double & js.UndefOr[Double]
   
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
-  var createdTimestamp: js.UndefOr[Double] = js.native
+  var createdTimestamp: js.UndefOr[Double] = js.undefined
   
-  var descender: Double with js.UndefOr[Double] = js.native
+  var descender: Double & js.UndefOr[Double]
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var designer: js.UndefOr[String] = js.native
+  var designer: js.UndefOr[String] = js.undefined
   
-  var designerURL: js.UndefOr[String] = js.native
+  var designerURL: js.UndefOr[String] = js.undefined
   
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var familyName: String with js.UndefOr[String] = js.native
+  var familyName: String & js.UndefOr[String]
   
-  var fsSelection: js.UndefOr[String] = js.native
+  var fsSelection: js.UndefOr[String] = js.undefined
   
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
-  var glyphs: js.Array[Glyph] = js.native
+  var glyphs: js.Array[Glyph]
   
-  var license: js.UndefOr[String] = js.native
+  var license: js.UndefOr[String] = js.undefined
   
-  var licenseURL: js.UndefOr[String] = js.native
+  var licenseURL: js.UndefOr[String] = js.undefined
   
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
-  var manufacturerURL: js.UndefOr[String] = js.native
+  var manufacturerURL: js.UndefOr[String] = js.undefined
   
-  var postScriptName: js.UndefOr[String] = js.native
+  var postScriptName: js.UndefOr[String] = js.undefined
   
-  var styleName: String with js.UndefOr[String] = js.native
+  var styleName: String & js.UndefOr[String]
   
-  var trademark: js.UndefOr[String] = js.native
+  var trademark: js.UndefOr[String] = js.undefined
   
-  var unitsPerEm: Double with js.UndefOr[Double] = js.native
+  var unitsPerEm: Double & js.UndefOr[Double]
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
-  var weightClass: js.UndefOr[String] = js.native
+  var weightClass: js.UndefOr[String] = js.undefined
   
-  var widthClass: js.UndefOr[String] = js.native
+  var widthClass: js.UndefOr[String] = js.undefined
 }
 object FontConstructorOptions {
   
   @scala.inline
   def apply(
-    ascender: Double with js.UndefOr[Double],
-    descender: Double with js.UndefOr[Double],
-    familyName: String with js.UndefOr[String],
+    ascender: Double & js.UndefOr[Double],
+    descender: Double & js.UndefOr[Double],
+    familyName: String & js.UndefOr[String],
     glyphs: js.Array[Glyph],
-    styleName: String with js.UndefOr[String],
-    unitsPerEm: Double with js.UndefOr[Double]
+    styleName: String & js.UndefOr[String],
+    unitsPerEm: Double & js.UndefOr[Double]
   ): FontConstructorOptions = {
     val __obj = js.Dynamic.literal(ascender = ascender.asInstanceOf[js.Any], descender = descender.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], glyphs = glyphs.asInstanceOf[js.Any], styleName = styleName.asInstanceOf[js.Any], unitsPerEm = unitsPerEm.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontConstructorOptions]
@@ -74,7 +72,7 @@ object FontConstructorOptions {
   implicit class FontConstructorOptionsMutableBuilder[Self <: FontConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAscender(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
+    def setAscender(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
@@ -89,7 +87,7 @@ object FontConstructorOptions {
     def setCreatedTimestampUndefined: Self = StObject.set(x, "createdTimestamp", js.undefined)
     
     @scala.inline
-    def setDescender(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
+    def setDescender(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -116,7 +114,7 @@ object FontConstructorOptions {
     def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def setFamilyName(value: String with js.UndefOr[String]): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    def setFamilyName(value: String & js.UndefOr[String]): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFsSelection(value: String): Self = StObject.set(x, "fsSelection", value.asInstanceOf[js.Any])
@@ -167,7 +165,7 @@ object FontConstructorOptions {
     def setPostScriptNameUndefined: Self = StObject.set(x, "postScriptName", js.undefined)
     
     @scala.inline
-    def setStyleName(value: String with js.UndefOr[String]): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
+    def setStyleName(value: String & js.UndefOr[String]): Self = StObject.set(x, "styleName", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTrademark(value: String): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
@@ -176,7 +174,7 @@ object FontConstructorOptions {
     def setTrademarkUndefined: Self = StObject.set(x, "trademark", js.undefined)
     
     @scala.inline
-    def setUnitsPerEm(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
+    def setUnitsPerEm(value: Double & js.UndefOr[Double]): Self = StObject.set(x, "unitsPerEm", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])

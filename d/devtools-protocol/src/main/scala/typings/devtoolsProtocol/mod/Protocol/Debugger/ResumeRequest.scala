@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResumeRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ResumeRequest extends StObject {
     * is actually resumed, at which point termination is triggered.
     * If execution is currently not paused, this parameter has no effect.
     */
-  var terminateOnResume: js.UndefOr[Boolean] = js.native
+  var terminateOnResume: js.UndefOr[Boolean] = js.undefined
 }
 object ResumeRequest {
   

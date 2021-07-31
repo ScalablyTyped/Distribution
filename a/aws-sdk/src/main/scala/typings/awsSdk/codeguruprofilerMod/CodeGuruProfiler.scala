@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait CodeGuruProfiler extends Service {
   ): Request[BatchGetFrameMetricDataResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_CodeGuruProfiler: ConfigBase with ClientConfiguration = js.native
+  var config_CodeGuruProfiler: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Used by profiler agents to report their current state and to receive remote configuration updates. For example, ConfigureAgent can be used to tell and agent whether to profile or not and for how long to return profiling data. 

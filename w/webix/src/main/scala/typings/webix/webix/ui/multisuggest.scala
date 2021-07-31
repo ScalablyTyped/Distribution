@@ -4,11 +4,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait multisuggest extends baseview {
+trait multisuggest
+  extends StObject
+     with baseview {
   
   @JSName("$enterKey")
   def $enterKey(args: js.Any*): js.Any = js.native
@@ -23,7 +24,7 @@ trait multisuggest extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_multisuggest: multisuggestConfig = js.native

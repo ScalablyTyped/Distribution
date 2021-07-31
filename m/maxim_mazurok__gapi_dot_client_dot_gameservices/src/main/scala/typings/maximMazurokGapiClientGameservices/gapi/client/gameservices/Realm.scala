@@ -3,39 +3,37 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Realm extends StObject {
   
   /** Output only. The creation time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Human readable description of the realm. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** ETag of the resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The labels associated with this realm. Each label is a key-value pair. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.Realm with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.Realm & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The resource name of the realm, in the following form: `projects/{project}/locations/{location}/realms/{realm}`. For example,
     * `projects/my-project/locations/{location}/realms/my-realm`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Time zone where all policies targeting this realm are evaluated. The value of this field must be from the IANA time zone database: https://www.iana.org/time-zones. */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /** Output only. The last-modified time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Realm {
   
@@ -70,7 +68,7 @@ object Realm {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.Realm with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.Realm & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

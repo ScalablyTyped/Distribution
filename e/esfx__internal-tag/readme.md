@@ -12,7 +12,7 @@ This package provides internal utilities for &#39;@esfx&#39; and is not intended
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 17 |
-| # downloads        | 164880 |
+| # downloads        | 198863 |
 | # stars            | 0 |
 
 ## Links

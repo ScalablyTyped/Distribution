@@ -3,71 +3,69 @@ package typings.pdfmake.interfacesMod
 import typings.pdfkit.PDFKit.Mixins.OpenTypeFeatures
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
   /** the alignment of the text */
-  var alignment: js.UndefOr[Alignment] = js.native
+  var alignment: js.UndefOr[Alignment] = js.undefined
   
   /** the background color of the text */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /** whether to use bold text (default: false) */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
-  var characterSpacing: js.UndefOr[Double] = js.native
+  var characterSpacing: js.UndefOr[Double] = js.undefined
   
   /** the color of the text (color name e.g., ‘blue’ or hexadecimal color e.g., ‘#ff5500’) */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /** optional space between columns */
-  var columnGap: js.UndefOr[Size] = js.native
+  var columnGap: js.UndefOr[Size] = js.undefined
   
   /** the text decoration to applu (‘underline’ or ‘lineThrough’ or ‘overline’) */
-  var decoration: js.UndefOr[Decoration] = js.native
+  var decoration: js.UndefOr[Decoration] = js.undefined
   
   /** the color of the text decoration, see color */
-  var decorationColor: js.UndefOr[String] = js.native
+  var decorationColor: js.UndefOr[String] = js.undefined
   
   /** (‘dashed’ or ‘dotted’ or ‘double’ or ‘wavy’) */
-  var decorationStyle: js.UndefOr[DecorationStyle] = js.native
+  var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
   
   /** the background color of a table cell */
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
   /** the background opacity of a table cell */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /** name of the font */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+  var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
   
   /** size of the font in pt */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /** whether to use italic text (default: false) */
-  var italics: js.UndefOr[Boolean] = js.native
+  var italics: js.UndefOr[Boolean] = js.undefined
   
-  var leadingIndent: js.UndefOr[Double] = js.native
+  var leadingIndent: js.UndefOr[Double] = js.undefined
   
   /** the line height (default: 1) */
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Margins] = js.native
+  var margin: js.UndefOr[Margins] = js.undefined
   
   /** the color of the bullets in a buletted list */
-  var markerColor: js.UndefOr[String] = js.native
+  var markerColor: js.UndefOr[String] = js.undefined
   
   // Table-cell properties:
-  var noWrap: js.UndefOr[Boolean] = js.native
+  var noWrap: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
+  var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
 }
 object Style {
   

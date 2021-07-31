@@ -2,24 +2,22 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandStart. */
-@js.native
 trait ICommandStart extends StObject {
   
   /** CommandStart baseDirectory */
-  var baseDirectory: js.UndefOr[String | Null] = js.native
+  var baseDirectory: js.UndefOr[String | Null] = js.undefined
   
   /** CommandStart runtimeConfig */
-  var runtimeConfig: js.UndefOr[IRuntimeConfig | Null] = js.native
+  var runtimeConfig: js.UndefOr[IRuntimeConfig | Null] = js.undefined
   
   /** CommandStart sourcesConfig */
-  var sourcesConfig: js.UndefOr[ISourcesConfig | Null] = js.native
+  var sourcesConfig: js.UndefOr[ISourcesConfig | Null] = js.undefined
   
   /** CommandStart supportCodeConfig */
-  var supportCodeConfig: js.UndefOr[ISupportCodeConfig | Null] = js.native
+  var supportCodeConfig: js.UndefOr[ISupportCodeConfig | Null] = js.undefined
 }
 object ICommandStart {
   

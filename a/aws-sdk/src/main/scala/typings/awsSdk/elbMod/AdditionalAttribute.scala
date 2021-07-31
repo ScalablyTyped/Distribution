@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalAttribute extends StObject {
   
   /**
     * The name of the attribute. The following attribute is supported.    elb.http.desyncmitigationmode - Determines how the load balancer handles requests that might pose a security risk to your application. The possible values are monitor, defensive, and strictest. The default is defensive.  
     */
-  var Key: js.UndefOr[AdditionalAttributeKey] = js.native
+  var Key: js.UndefOr[AdditionalAttributeKey] = js.undefined
   
   /**
     * This value of the attribute.
     */
-  var Value: js.UndefOr[AdditionalAttributeValue] = js.native
+  var Value: js.UndefOr[AdditionalAttributeValue] = js.undefined
 }
 object AdditionalAttribute {
   

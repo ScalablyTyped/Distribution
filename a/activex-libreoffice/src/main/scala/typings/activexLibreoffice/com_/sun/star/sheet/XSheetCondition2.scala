@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,17 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.TableValidation
   * @see com.sun.star.sheet.XSheetCondition
   */
-@js.native
-trait XSheetCondition2 extends XSheetCondition {
+trait XSheetCondition2
+  extends StObject
+     with XSheetCondition {
   
   /** returns the operator in the condition (new interface). */
-  var ConditionOperator: Double = js.native
+  var ConditionOperator: Double
   
   /** returns the operator in the condition (new interface). */
-  def getConditionOperator(): Double = js.native
+  def getConditionOperator(): Double
   
   /** sets the operator in the condition (new interface). */
-  def setConditionOperator(nOperator: Double): Unit = js.native
+  def setConditionOperator(nOperator: Double): Unit
 }
 object XSheetCondition2 {
   

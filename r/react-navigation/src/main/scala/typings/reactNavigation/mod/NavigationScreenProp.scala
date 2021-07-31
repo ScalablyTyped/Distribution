@@ -1,13 +1,12 @@
 package typings.reactNavigation.mod
 
-import typings.reactNavigation.anon.Key
-import typings.reactNavigation.anon.`2`
+import typings.reactNavigation.anon.RouteName
+import typings.reactNavigation.anon.`1`
 import typings.reactNavigation.reactNavigationStrings.refocus
 import typings.std.NonNullable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,15 +40,15 @@ trait NavigationScreenProp[S, P] extends StObject {
   
   def isFocused(): Boolean = js.native
   
-  def navigate[T /* <: NavigationParams */](options: Key[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](options: RouteName[T]): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
   def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native
-  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: js.UndefOr[scala.Nothing], action: NavigationAction): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: Unit, action: NavigationAction): Boolean = js.native
   
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
   
   def setParams(newParams: Partial[P]): Boolean = js.native
   
-  var state: S with `2`[P] = js.native
+  var state: S & `1`[P] = js.native
 }

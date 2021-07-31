@@ -2,13 +2,11 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandA3[R, T, U, V] extends StObject {
   
-  def execute(t: T, u: U, v: V): js.Thenable[R] = js.native
+  def execute(t: T, u: U, v: V): js.Thenable[R]
 }
 object CommandA3 {
   
@@ -19,7 +17,7 @@ object CommandA3 {
   }
   
   @scala.inline
-  implicit class CommandA3MutableBuilder[Self <: CommandA3[_, _, _, _], R, T, U, V] (val x: Self with (CommandA3[R, T, U, V])) extends AnyVal {
+  implicit class CommandA3MutableBuilder[Self <: CommandA3[?, ?, ?, ?], R, T, U, V] (val x: Self & (CommandA3[R, T, U, V])) extends AnyVal {
     
     @scala.inline
     def setExecute(value: (T, U, V) => js.Thenable[R]): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))

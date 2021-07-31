@@ -3,7 +3,6 @@ package typings.serverless
 import typings.serverless.validateMod.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverlessStrings {
@@ -19,7 +18,9 @@ object serverlessStrings {
   def Deny: Deny = "Deny".asInstanceOf[Deny]
   
   @js.native
-  sealed trait any extends HttpMethod
+  sealed trait any
+    extends StObject
+       with HttpMethod
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
@@ -34,7 +35,9 @@ object serverlessStrings {
   def cognito: cognito = "cognito".asInstanceOf[cognito]
   
   @js.native
-  sealed trait delete extends HttpMethod
+  sealed trait delete
+    extends StObject
+       with HttpMethod
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
@@ -44,12 +47,16 @@ object serverlessStrings {
   def edge: edge = "edge".asInstanceOf[edge]
   
   @js.native
-  sealed trait get extends HttpMethod
+  sealed trait get
+    extends StObject
+       with HttpMethod
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait head extends HttpMethod
+  sealed trait head
+    extends StObject
+       with HttpMethod
   @scala.inline
   def head: head = "head".asInstanceOf[head]
   
@@ -69,17 +76,23 @@ object serverlessStrings {
   def oidc: oidc = "oidc".asInstanceOf[oidc]
   
   @js.native
-  sealed trait options extends HttpMethod
+  sealed trait options
+    extends StObject
+       with HttpMethod
   @scala.inline
   def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait patch extends HttpMethod
+  sealed trait patch
+    extends StObject
+       with HttpMethod
   @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
-  sealed trait post extends HttpMethod
+  sealed trait post
+    extends StObject
+       with HttpMethod
   @scala.inline
   def post: post = "post".asInstanceOf[post]
   
@@ -89,7 +102,9 @@ object serverlessStrings {
   def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait put extends HttpMethod
+  sealed trait put
+    extends StObject
+       with HttpMethod
   @scala.inline
   def put: put = "put".asInstanceOf[put]
   

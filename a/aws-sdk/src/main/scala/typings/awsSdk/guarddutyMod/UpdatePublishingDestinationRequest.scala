@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePublishingDestinationRequest extends StObject {
   
   /**
     * The ID of the publishing destination to update.
     */
-  var DestinationId: String = js.native
+  var DestinationId: String
   
   /**
     * A DestinationProperties object that includes the DestinationArn and KmsKeyArn of the publishing destination.
     */
-  var DestinationProperties: js.UndefOr[typings.awsSdk.guarddutyMod.DestinationProperties] = js.native
+  var DestinationProperties: js.UndefOr[typings.awsSdk.guarddutyMod.DestinationProperties] = js.undefined
   
   /**
     * The ID of the detector associated with the publishing destinations to update.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object UpdatePublishingDestinationRequest {
   

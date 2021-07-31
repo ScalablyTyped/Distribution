@@ -3,15 +3,13 @@ package typings.azure.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastSyncTime extends StObject {
   
-  var LastSyncTime: Date = js.native
+  var LastSyncTime: Date
   
-  var Status: String = js.native
+  var Status: String
 }
 object LastSyncTime {
   

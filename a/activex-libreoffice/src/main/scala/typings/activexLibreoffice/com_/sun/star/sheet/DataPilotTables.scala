@@ -8,13 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a collection of data pilot tables. */
-@js.native
 trait DataPilotTables
-  extends XDataPilotTables
+  extends StObject
+     with XDataPilotTables
      with XEnumerationAccess
      with XIndexAccess
 object DataPilotTables {

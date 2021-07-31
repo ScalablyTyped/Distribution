@@ -16,10 +16,8 @@ import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvatarProps extends StObject {
   
   /**
@@ -27,98 +25,98 @@ trait AvatarProps extends StObject {
     *
     * @default TouchableOpacity
     */
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Image Component of Avatar
     * @default React Native default Image component
     */
-  var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Opacity when pressed
     *
     * @default 0.2
     */
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Style for avatar image
     */
-  var avatarStyle: js.UndefOr[ImageStyle] = js.native
+  var avatarStyle: js.UndefOr[ImageStyle] = js.undefined
   
   /**
     * Styling for outer container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Icon for the avatar
     */
-  var icon: js.UndefOr[AvatarIcon] = js.native
+  var icon: js.UndefOr[AvatarIcon] = js.undefined
   
   /**
     * extra styling for icon component
     */
-  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var iconStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[PartialImageProps] = js.native
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   
   /**
     * Callback function when long pressing component
     */
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback function when pressing component
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Style for the view outside image or icon
     */
-  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Style for the placeholder
     */
-  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var placeholderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Render a content inside placeholder
     */
-  var renderPlaceholderContent: js.UndefOr[ReactElement] = js.native
+  var renderPlaceholderContent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Determines the shape of avatar
     *
     * @default false
     */
-  var rounded: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Size of Avatar
     * @default "small"
     */
-  var size: js.UndefOr[small | medium | large | xlarge | Double] = js.native
+  var size: js.UndefOr[small | medium | large | xlarge | Double] = js.undefined
   
   /**
     * Image source
     */
-  var source: js.UndefOr[ImageSourcePropType] = js.native
+  var source: js.UndefOr[ImageSourcePropType] = js.undefined
   
   /**
     * Renders title in the avatar
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Style for the title
     */
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object AvatarProps {
   

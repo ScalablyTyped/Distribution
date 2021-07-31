@@ -11,45 +11,46 @@ import typings.storybookApi.storybookApiStrings.`server-checked`
 import typings.storybookApi.storybookApiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refsMod {
+  
+  @JSImport("@storybook/api/dist/modules/refs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/api/dist/modules/refs", "defaultStoryMapper")
   @js.native
   val defaultStoryMapper: StoryMapper = js.native
   
-  @JSImport("@storybook/api/dist/modules/refs", "getSourceType")
-  @js.native
-  def getSourceType(source: String, refId: String): js.Array[String] = js.native
+  @scala.inline
+  def getSourceType(source: String, refId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceType")(source.asInstanceOf[js.Any], refId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("@storybook/api/dist/modules/refs", "init")
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait ComposedRef extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var ready: js.UndefOr[Boolean] = js.native
+    var ready: js.UndefOr[Boolean] = js.undefined
     
-    var stories: StoriesHash = js.native
+    var stories: StoriesHash
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.native
+    var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var versions: js.UndefOr[Versions] = js.native
+    var versions: js.UndefOr[Versions] = js.undefined
   }
   object ComposedRef {
     
@@ -116,24 +117,23 @@ object refsMod {
   }
   
   /* Inlined std.Partial<std.Pick<@storybook/api.@storybook/api/dist/modules/refs.ComposedRef, 'title' | 'type' | 'stories' | 'versions' | 'loginUrl' | 'version' | 'ready' | 'error'>> */
-  @js.native
   trait ComposedRefUpdate extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var ready: js.UndefOr[Boolean] = js.native
+    var ready: js.UndefOr[Boolean] = js.undefined
     
-    var stories: js.UndefOr[StoriesHash] = js.native
+    var stories: js.UndefOr[StoriesHash] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.native
+    var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var versions: js.UndefOr[Versions] = js.native
+    var versions: js.UndefOr[Versions] = js.undefined
   }
   object ComposedRefUpdate {
     
@@ -203,28 +203,27 @@ object refsMod {
   type Refs = Record[String, ComposedRef]
   
   /* Inlined std.Partial<std.Omit<@storybook/api.@storybook/api/dist/modules/refs.ComposedRef, 'stories'> & {  stories :@storybook/api.@storybook/api/dist/lib/stories.StoriesRaw | undefined}> */
-  @js.native
   trait SetRefData extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var ready: js.UndefOr[Boolean] = js.native
+    var ready: js.UndefOr[Boolean] = js.undefined
     
-    var stories: js.UndefOr[StoriesRaw] = js.native
+    var stories: js.UndefOr[StoriesRaw] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.native
+    var `type`: js.UndefOr[`auto-inject` | unknown | `lazy` | `server-checked`] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var versions: js.UndefOr[Versions] = js.native
+    var versions: js.UndefOr[Versions] = js.undefined
   }
   object SetRefData {
     
@@ -320,10 +319,9 @@ object refsMod {
     def updateRef(id: String, ref: ComposedRefUpdate): Unit = js.native
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var refs: Refs = js.native
+    var refs: Refs
   }
   object SubState {
     

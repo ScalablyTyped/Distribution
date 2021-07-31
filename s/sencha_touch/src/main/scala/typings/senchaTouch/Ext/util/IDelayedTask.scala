@@ -4,14 +4,14 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDelayedTask extends IBase {
+trait IDelayedTask
+  extends StObject
+     with IBase {
   
   /** [Method] Cancel the last queued timeout */
-  var cancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Cancels any pending timeout and queues a new one
     * @param delay Number The milliseconds to delay
@@ -27,57 +27,57 @@ trait IDelayedTask extends IBase {
       /* newArgs */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the value of args
     * @returns Object
     */
-  var getArgs: js.UndefOr[js.Function0[_]] = js.native
+  var getArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of delay
     * @returns Object
     */
-  var getDelay: js.UndefOr[js.Function0[_]] = js.native
+  var getDelay: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of fn
     * @returns Object
     */
-  var getFn: js.UndefOr[js.Function0[_]] = js.native
+  var getFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of interval
     * @returns Object
     */
-  var getInterval: js.UndefOr[js.Function0[_]] = js.native
+  var getInterval: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[_]] = js.native
+  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Sets the value of args
     * @param args Object The new value.
     */
-  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.native
+  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of delay
     * @param delay Object The new value.
     */
-  var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of fn
     * @param fn Object The new value.
     */
-  var setFn: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.native
+  var setFn: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of interval
     * @param interval Object The new value.
     */
-  var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[js.Any], Unit]] = js.native
+  var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IDelayedTask {
   
@@ -105,31 +105,31 @@ object IDelayedTask {
     def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def setGetArgs(value: () => _): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+    def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
     
     @scala.inline
-    def setGetDelay(value: () => _): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
+    def setGetDelay(value: () => js.Any): Self = StObject.set(x, "getDelay", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDelayUndefined: Self = StObject.set(x, "getDelay", js.undefined)
     
     @scala.inline
-    def setGetFn(value: () => _): Self = StObject.set(x, "getFn", js.Any.fromFunction0(value))
+    def setGetFn(value: () => js.Any): Self = StObject.set(x, "getFn", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFnUndefined: Self = StObject.set(x, "getFn", js.undefined)
     
     @scala.inline
-    def setGetInterval(value: () => _): Self = StObject.set(x, "getInterval", js.Any.fromFunction0(value))
+    def setGetInterval(value: () => js.Any): Self = StObject.set(x, "getInterval", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
     
     @scala.inline
-    def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)

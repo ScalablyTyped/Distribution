@@ -2,52 +2,50 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluateOnCallFrameParameterType extends StObject {
   
   /**
     * Call frame identifier to evaluate on.
     */
-  var callFrameId: CallFrameId = js.native
+  var callFrameId: CallFrameId
   
   /**
     * Expression to evaluate.
     */
-  var expression: String = js.native
+  var expression: String
   
   /**
     * Whether preview should be generated for the result.
     * @experimental
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether command line API should be available to the evaluated expression, defaults to false.
     */
-  var includeCommandLineAPI: js.UndefOr[Boolean] = js.native
+  var includeCommandLineAPI: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String object group name to put result into (allows rapid releasing resulting object handles using <code>releaseObjectGroup</code>).
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the result is expected to be a JSON object that should be sent by value.
     */
-  var returnByValue: js.UndefOr[Boolean] = js.native
+  var returnByValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause execution. Overrides <code>setPauseOnException</code> state.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to throw an exception if side effect cannot be ruled out during evaluation.
     */
-  var throwOnSideEffect: js.UndefOr[Boolean] = js.native
+  var throwOnSideEffect: js.UndefOr[Boolean] = js.undefined
 }
 object EvaluateOnCallFrameParameterType {
   

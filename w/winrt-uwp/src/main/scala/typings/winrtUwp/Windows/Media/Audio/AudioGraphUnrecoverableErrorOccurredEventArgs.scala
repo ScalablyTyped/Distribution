@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents arguments for an UnrecoverableErrorOccurred event. */
-@js.native
 trait AudioGraphUnrecoverableErrorOccurredEventArgs extends StObject {
   
   /** Gets the error associated with the event. */
-  var error: AudioGraphUnrecoverableError = js.native
+  var error: AudioGraphUnrecoverableError
 }
 object AudioGraphUnrecoverableErrorOccurredEventArgs {
   

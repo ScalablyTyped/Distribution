@@ -5,7 +5,6 @@ import typings.heremaps.H.map.layer.Layer
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** Map *****/
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.Map")
 @js.native
 class Map_ protected ()
-  extends typings.heremaps.H.Map_ {
+  extends StObject
+     with typings.heremaps.H.Map_ {
   /**
     * Constructor
     * @param element {Element} - html element into which the map will be rendered
@@ -36,10 +36,10 @@ object Map_ {
   object EngineType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.heremaps.H.Map_.EngineType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.heremaps.H.Map_.EngineType & Double] = js.native
     
-    /* 0 */ val P2D: typings.heremaps.H.Map_.EngineType.P2D with Double = js.native
+    /* 0 */ val P2D: typings.heremaps.H.Map_.EngineType.P2D & Double = js.native
     
-    /* 1 */ val PANORAMA: typings.heremaps.H.Map_.EngineType.PANORAMA with Double = js.native
+    /* 1 */ val PANORAMA: typings.heremaps.H.Map_.EngineType.PANORAMA & Double = js.native
   }
 }

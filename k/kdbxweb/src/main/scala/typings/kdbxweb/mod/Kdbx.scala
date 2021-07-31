@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Kdbx")
@@ -70,15 +69,16 @@ class Kdbx () extends StObject {
 /* static members */
 object Kdbx {
   
-  @JSImport("kdbxweb", "Kdbx.create")
+  @JSImport("kdbxweb", "Kdbx")
   @js.native
-  def create(credentials: Credentials, name: String): Kdbx = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "Kdbx.load")
-  @js.native
-  def load(data: ArrayBuffer, credentials: Credentials): js.Promise[Kdbx] = js.native
+  @scala.inline
+  def create(credentials: Credentials, name: String): Kdbx = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Kdbx]
   
-  @JSImport("kdbxweb", "Kdbx.loadXml")
-  @js.native
-  def loadXml(data: String, credentials: Credentials): js.Promise[Kdbx] = js.native
+  @scala.inline
+  def load(data: ArrayBuffer, credentials: Credentials): js.Promise[Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Kdbx]]
+  
+  @scala.inline
+  def loadXml(data: String, credentials: Credentials): js.Promise[Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadXml")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Kdbx]]
 }

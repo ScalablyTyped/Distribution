@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessageFlow extends BaseElement {
+trait MessageFlow
+  extends StObject
+     with BaseElement {
   
-  var messageRef: Message = js.native
+  var messageRef: Message
   
-  var name: String = js.native
+  var name: String
   
-  var sourceRef: InteractionNode = js.native
+  var sourceRef: InteractionNode
   
-  var targetRef: InteractionNode = js.native
+  var targetRef: InteractionNode
 }
 object MessageFlow {
   

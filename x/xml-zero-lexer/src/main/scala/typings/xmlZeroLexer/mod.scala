@@ -36,19 +36,24 @@ import typings.xmlZeroLexer.xmlZeroLexerStrings.TEXT_NODE
 import typings.xmlZeroLexer.xmlZeroLexerStrings.XML_DECLARATION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("xml-zero-lexer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
+    
+    @scala.inline
+    def apply(xml: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+    @scala.inline
+    def apply(xml: String, options: Options): js.Array[Token] = (^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
     
     @JSImport("xml-zero-lexer", JSImport.Default)
     @js.native
-    def apply(xml: String): js.Array[Token] = js.native
-    @JSImport("xml-zero-lexer", JSImport.Default)
-    @js.native
-    def apply(xml: String, options: Options): js.Array[Token] = js.native
+    val ^ : js.Any = js.native
   }
   
   @JSImport("xml-zero-lexer", "NodeTypeKeys")
@@ -225,64 +230,53 @@ object mod {
     def XML_DECLARATION_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XML_DECLARATION")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("xml-zero-lexer", "onAttribute")
-  @js.native
-  def onAttribute(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onAttribute(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onAttribute")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onBlackhole")
-  @js.native
-  def onBlackhole(xml: String, i: Double, inElement: Boolean, untilToken: Token): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onBlackhole(xml: String, i: Double, inElement: Boolean, untilToken: Token): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onBlackhole")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any], untilToken.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onClose")
-  @js.native
-  def onClose(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onClose(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onClose")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onElement")
-  @js.native
-  def onElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onElement")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onEndTag")
-  @js.native
-  def onEndTag(xml: String, i: Double): js.Tuple2[Double, Boolean] = js.native
+  @scala.inline
+  def onEndTag(xml: String, i: Double): js.Tuple2[Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("onEndTag")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Boolean]]
   
-  @JSImport("xml-zero-lexer", "onExclamation")
-  @js.native
-  def onExclamation(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onExclamation(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onExclamation")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onQuestionElement")
-  @js.native
-  def onQuestionElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onQuestionElement(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onQuestionElement")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onShorthandCDATA")
-  @js.native
-  def onShorthandCDATA(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onShorthandCDATA(xml: String, i: Double, inElement: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onShorthandCDATA")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], inElement.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
-  @JSImport("xml-zero-lexer", "onText")
-  @js.native
-  def onText(xml: String, i: Double): js.Tuple3[Double, Boolean, Token] = js.native
-  @JSImport("xml-zero-lexer", "onText")
-  @js.native
-  def onText(xml: String, i: Double, jsx: Boolean): js.Tuple3[Double, Boolean, Token] = js.native
+  @scala.inline
+  def onText(xml: String, i: Double): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onText")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
+  @scala.inline
+  def onText(xml: String, i: Double, jsx: Boolean): js.Tuple3[Double, Boolean, Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("onText")(xml.asInstanceOf[js.Any], i.asInstanceOf[js.Any], jsx.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Boolean, Token]]
   
   object Lexx {
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * @default ["script", "style"]
         */
-      var blackholes: js.UndefOr[js.Array[String]] = js.native
+      var blackholes: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * @default false
         */
-      var html: js.UndefOr[Boolean] = js.native
+      var html: js.UndefOr[Boolean] = js.undefined
       
       /**
         * @default false
         */
-      var jsx: js.UndefOr[Boolean] = js.native
+      var jsx: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

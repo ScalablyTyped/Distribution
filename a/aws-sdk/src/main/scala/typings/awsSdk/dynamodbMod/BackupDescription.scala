@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupDescription extends StObject {
   
   /**
     * Contains the details of the backup created for the table. 
     */
-  var BackupDetails: js.UndefOr[typings.awsSdk.dynamodbMod.BackupDetails] = js.native
+  var BackupDetails: js.UndefOr[typings.awsSdk.dynamodbMod.BackupDetails] = js.undefined
   
   /**
     * Contains the details of the table when the backup was created. 
     */
-  var SourceTableDetails: js.UndefOr[typings.awsSdk.dynamodbMod.SourceTableDetails] = js.native
+  var SourceTableDetails: js.UndefOr[typings.awsSdk.dynamodbMod.SourceTableDetails] = js.undefined
   
   /**
     * Contains the details of the features enabled on the table when the backup was created. For example, LSIs, GSIs, streams, TTL.
     */
-  var SourceTableFeatureDetails: js.UndefOr[typings.awsSdk.dynamodbMod.SourceTableFeatureDetails] = js.native
+  var SourceTableFeatureDetails: js.UndefOr[typings.awsSdk.dynamodbMod.SourceTableFeatureDetails] = js.undefined
 }
 object BackupDescription {
   

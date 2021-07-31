@@ -2,19 +2,19 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RectSeriesProps extends AbstractSeriesProps[RectSeriesPoint] {
+trait RectSeriesProps
+  extends StObject
+     with AbstractSeriesProps[RectSeriesPoint] {
   
-  var linePosAttr: js.UndefOr[String] = js.native
+  var linePosAttr: js.UndefOr[String] = js.undefined
   
-  var lineSizeAttr: js.UndefOr[String] = js.native
+  var lineSizeAttr: js.UndefOr[String] = js.undefined
   
-  var valuePosAttr: js.UndefOr[String] = js.native
+  var valuePosAttr: js.UndefOr[String] = js.undefined
   
-  var valueSizeAttr: js.UndefOr[String] = js.native
+  var valueSizeAttr: js.UndefOr[String] = js.undefined
 }
 object RectSeriesProps {
   

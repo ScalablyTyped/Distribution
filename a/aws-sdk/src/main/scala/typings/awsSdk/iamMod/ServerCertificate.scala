@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerCertificate extends StObject {
   
   /**
     * The contents of the public key certificate.
     */
-  var CertificateBody: certificateBodyType = js.native
+  var CertificateBody: certificateBodyType
   
   /**
     * The contents of the public key certificate chain.
     */
-  var CertificateChain: js.UndefOr[certificateChainType] = js.native
+  var CertificateChain: js.UndefOr[certificateChainType] = js.undefined
   
   /**
     * The meta information of the server certificate, such as its name, path, ID, and ARN.
     */
-  var ServerCertificateMetadata: typings.awsSdk.iamMod.ServerCertificateMetadata = js.native
+  var ServerCertificateMetadata: typings.awsSdk.iamMod.ServerCertificateMetadata
 }
 object ServerCertificate {
   

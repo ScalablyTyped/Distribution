@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderCustomerLoyaltyInfo extends StObject {
   
   /** The loyalty card/membership number. */
-  var loyaltyNumber: js.UndefOr[String] = js.native
+  var loyaltyNumber: js.UndefOr[String] = js.undefined
   
   /** Name of card/membership holder, this field will be populated when */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object OrderCustomerLoyaltyInfo {
   

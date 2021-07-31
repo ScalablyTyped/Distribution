@@ -2,22 +2,22 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CodeFixAction extends CodeAction {
+trait CodeFixAction
+  extends StObject
+     with CodeAction {
   
-  var fixAllDescription: js.UndefOr[java.lang.String] = js.native
+  var fixAllDescription: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * If present, one may call 'getCombinedCodeFix' with this fixId.
     * This may be omitted to indicate that the code fix can't be applied in a group.
     */
-  var fixId: js.UndefOr[js.Object] = js.native
+  var fixId: js.UndefOr[js.Object] = js.undefined
   
   /** Short name to identify the fix, for use by telemetry. */
-  var fixName: java.lang.String = js.native
+  var fixName: java.lang.String
 }
 object CodeFixAction {
   

@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes and other programming elements needed to create properties for media formats. */
@@ -19,8 +18,56 @@ object MediaProperties {
   @js.native
   /** Creates a new instance of the AudioEncodingProperties class. */
   class AudioEncodingProperties ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties {
+    
+    /** Gets or sets the audio bit rate. */
+    /* CompleteClass */
+    var bitrate: Double = js.native
+    
+    /** Gets or sets the number of bits per audio sample. */
+    /* CompleteClass */
+    var bitsPerSample: Double = js.native
+    
+    /** Gets or sets the number of audio channels. */
+    /* CompleteClass */
+    var channelCount: Double = js.native
+    
+    /**
+      * Gets the media format user data.
+      * @return Receives the media format data.
+      */
+    /* CompleteClass */
+    override def getFormatUserData(): js.Array[Double] = js.native
+    
+    /** Gets additional format properties for the audio stream. */
+    /* CompleteClass */
+    var properties: typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet = js.native
+    
+    /** Gets or sets audio sampling rate. */
+    /* CompleteClass */
+    var sampleRate: Double = js.native
+    
+    /**
+      * Sets the media format user data.
+      * @param value The media data to set.
+      */
+    /* CompleteClass */
+    override def setFormatUserData(value: js.Array[Double]): Unit = js.native
+    
+    /** Gets or sets the subtype of the format. */
+    /* CompleteClass */
+    var subtype: String = js.native
+    
+    /** Gets the format type. */
+    /* CompleteClass */
+    var `type`: String = js.native
+  }
   object AudioEncodingProperties {
+    
+    @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates an instance of AudioEncodingProperties for Advanced Audio Coding (AAC) audio.
@@ -30,9 +77,8 @@ object MediaProperties {
       * @return The audio encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties.createAac")
-    @js.native
-    def createAac(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
+    @scala.inline
+    def createAac(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("createAac")(sampleRate.asInstanceOf[js.Any], channelCount.asInstanceOf[js.Any], bitrate.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties]
     
     /**
       * Creates an instance of AudioEncodingProperties for Advanced Audio Coding (AAC) audio in Audio Data Transport Stream (ADTS) format.
@@ -42,9 +88,8 @@ object MediaProperties {
       * @return The audio encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties.createAacAdts")
-    @js.native
-    def createAacAdts(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
+    @scala.inline
+    def createAacAdts(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("createAacAdts")(sampleRate.asInstanceOf[js.Any], channelCount.asInstanceOf[js.Any], bitrate.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties]
     
     /**
       * Creates an instance of AudioEncodingProperties for MPEG Audio Layer-3 (MP3) audio.
@@ -54,9 +99,8 @@ object MediaProperties {
       * @return The audio encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties.createMp3")
-    @js.native
-    def createMp3(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
+    @scala.inline
+    def createMp3(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("createMp3")(sampleRate.asInstanceOf[js.Any], channelCount.asInstanceOf[js.Any], bitrate.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties]
     
     /**
       * Creates an instance of AudioEncodingProperties for Pulse Code Modulation (PCM) audio.
@@ -66,9 +110,8 @@ object MediaProperties {
       * @return The audio encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties.createPcm")
-    @js.native
-    def createPcm(sampleRate: Double, channelCount: Double, bitsPerSample: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
+    @scala.inline
+    def createPcm(sampleRate: Double, channelCount: Double, bitsPerSample: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("createPcm")(sampleRate.asInstanceOf[js.Any], channelCount.asInstanceOf[js.Any], bitsPerSample.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties]
     
     /**
       * Creates an instance of AudioEncodingProperties for Windows Media Audio (WMA).
@@ -78,9 +121,8 @@ object MediaProperties {
       * @return The audio encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties.createWma")
-    @js.native
-    def createWma(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
+    @scala.inline
+    def createWma(sampleRate: Double, channelCount: Double, bitrate: Double): typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("createWma")(sampleRate.asInstanceOf[js.Any], channelCount.asInstanceOf[js.Any], bitrate.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties]
   }
   
   /** Describes the level of quality of the audio encoding. The higher the quality, the better the audio fidelity, and the larger the resulting file. */
@@ -89,15 +131,15 @@ object MediaProperties {
   object AudioEncodingQuality extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality & Double] = js.native
     
-    /* 0 */ val auto: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.auto with Double = js.native
+    /* 0 */ val auto: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.auto & Double = js.native
     
-    /* 1 */ val high: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.high with Double = js.native
+    /* 1 */ val high: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.high & Double = js.native
     
-    /* 3 */ val low: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.low with Double = js.native
+    /* 3 */ val low: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.low & Double = js.native
     
-    /* 2 */ val medium: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.medium with Double = js.native
+    /* 2 */ val medium: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingQuality.medium & Double = js.native
   }
   
   /** Describes a media container format. */
@@ -105,13 +147,28 @@ object MediaProperties {
   @js.native
   /** Creates a new instance of the ContainerEncodingProperties class. */
   class ContainerEncodingProperties ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.ContainerEncodingProperties
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.ContainerEncodingProperties {
+    
+    /** Gets additional format properties for the media container. */
+    /* CompleteClass */
+    var properties: typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet = js.native
+    
+    /** Gets or sets the subtype of the media container. */
+    /* CompleteClass */
+    var subtype: String = js.native
+    
+    /** Gets the format type. */
+    /* CompleteClass */
+    var `type`: String = js.native
+  }
   
   /** Provides properties for getting H.265 profile ids. */
   @JSGlobal("Windows.Media.MediaProperties.H264ProfileIds")
   @js.native
   abstract class H264ProfileIds ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.H264ProfileIds
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.H264ProfileIds
   object H264ProfileIds {
     
     @JSGlobal("Windows.Media.MediaProperties.H264ProfileIds")
@@ -205,44 +262,66 @@ object MediaProperties {
   @js.native
   /** Creates a new instance of the ImageEncodingProperties class. */
   class ImageEncodingProperties ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties {
+    
+    /** Gets or sets the image height. */
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /** Gets additional format properties for the image stream. */
+    /* CompleteClass */
+    var properties: typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet = js.native
+    
+    /** Gets or sets the subtype of the format. */
+    /* CompleteClass */
+    var subtype: String = js.native
+    
+    /** Gets the format type. */
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /** Gets or sets the image width. */
+    /* CompleteClass */
+    var width: Double = js.native
+  }
   object ImageEncodingProperties {
+    
+    @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates an instance of ImageEncodingProperties for a BMP image.
       * @return The image encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties.createBmp")
-    @js.native
-    def createBmp(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = js.native
+    @scala.inline
+    def createBmp(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createBmp")().asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties]
     
     /**
       * Creates an instance of ImageEncodingProperties for a JPEG image.
       * @return The properties for the image stream.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties.createJpeg")
-    @js.native
-    def createJpeg(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = js.native
+    @scala.inline
+    def createJpeg(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createJpeg")().asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties]
     
     /**
       * Creates an instance of ImageEncodingProperties for a JPEG XR image.
       * @return The properties for the image stream.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties.createJpegXR")
-    @js.native
-    def createJpegXR(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = js.native
+    @scala.inline
+    def createJpegXR(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createJpegXR")().asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties]
     
     /**
       * Creates an instance of ImageEncodingProperties for a PNG image.
       * @return The properties for the image stream.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties.createPng")
-    @js.native
-    def createPng(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = js.native
+    @scala.inline
+    def createPng(): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createPng")().asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties]
     
     /**
       * Creates an instance of ImageEncodingProperties for an uncompressed image.
@@ -250,9 +329,8 @@ object MediaProperties {
       * @return The image encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties.createUncompressed")
-    @js.native
-    def createUncompressed(format: MediaPixelFormat): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = js.native
+    @scala.inline
+    def createUncompressed(format: MediaPixelFormat): typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createUncompressed")(format.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.ImageEncodingProperties]
   }
   
   /** Describes the encoding profile for an audio or video file. The encoding profile includes descriptions of the audio and video encoding formats, and a description of the media container. */
@@ -260,8 +338,26 @@ object MediaProperties {
   @js.native
   /** Creates a new instance of the MediaEncodingProfile class. */
   class MediaEncodingProfile ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile {
+    
+    /** Gets or sets the encoding properties for the audio stream. */
+    /* CompleteClass */
+    var audio: typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties = js.native
+    
+    /** Gets or sets the properties of the media container. */
+    /* CompleteClass */
+    var container: typings.winrtUwp.Windows.Media.MediaProperties.ContainerEncodingProperties = js.native
+    
+    /** Gets or sets the encoding properties for the video stream. */
+    /* CompleteClass */
+    var video: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = js.native
+  }
   object MediaEncodingProfile {
+    
+    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates an instance of MediaEncodingProfile for AVI.
@@ -269,9 +365,8 @@ object MediaProperties {
       * @return The media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createAvi")
-    @js.native
-    def createAvi(quality: VideoEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createAvi(quality: VideoEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createAvi")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
     
     /**
       * Creates an encoding profile from an existing media file.
@@ -279,9 +374,8 @@ object MediaProperties {
       * @return An object that is used to control the asynchronous operation.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createFromFileAsync")
-    @js.native
-    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile] = js.native
+    @scala.inline
+    def createFromFileAsync(file: IStorageFile): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]]
     
     /**
       * Creates an encoding profile from a stream that contains media data.
@@ -289,9 +383,8 @@ object MediaProperties {
       * @return An object that is used to control the asynchronous operation.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createFromStreamAsync")
-    @js.native
-    def createFromStreamAsync(stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile] = js.native
+    @scala.inline
+    def createFromStreamAsync(stream: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]]
     
     /**
       * Creates an encoding profile for AAC audio.
@@ -299,9 +392,8 @@ object MediaProperties {
       * @return Returns a media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createM4a")
-    @js.native
-    def createM4a(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createM4a(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createM4a")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
     
     /**
       * Creates an encoding profile for MP3 (MPEG-1 layer 3) audio.
@@ -309,9 +401,8 @@ object MediaProperties {
       * @return Returns a media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createMp3")
-    @js.native
-    def createMp3(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createMp3(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createMp3")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
     
     /**
       * Creates an encoding profile for H.264 video.
@@ -319,9 +410,8 @@ object MediaProperties {
       * @return Returns a media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createMp4")
-    @js.native
-    def createMp4(quality: VideoEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createMp4(quality: VideoEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createMp4")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
     
     /**
       * Creates an instance of MediaEncodingProfile for WAV
@@ -329,9 +419,8 @@ object MediaProperties {
       * @return The media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createWav")
-    @js.native
-    def createWav(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createWav(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWav")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
     
     /**
       * Creates an encoding profile for Windows Media Audio (WMA).
@@ -339,9 +428,8 @@ object MediaProperties {
       * @return Returns a media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createWma")
-    @js.native
-    def createWma(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createWma(quality: AudioEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWma")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
     
     /**
       * Creates an encoding profile for Windows Media Video (WMV).
@@ -349,16 +437,16 @@ object MediaProperties {
       * @return Returns a media encoding profile.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile.createWmv")
-    @js.native
-    def createWmv(quality: VideoEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = js.native
+    @scala.inline
+    def createWmv(quality: VideoEncodingQuality): typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWmv")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile]
   }
   
   /** Provides properties for getting the standard names for media subtypes. */
   @JSGlobal("Windows.Media.MediaProperties.MediaEncodingSubtypes")
   @js.native
   abstract class MediaEncodingSubtypes ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingSubtypes
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingSubtypes
   object MediaEncodingSubtypes {
     
     @JSGlobal("Windows.Media.MediaProperties.MediaEncodingSubtypes")
@@ -697,13 +785,13 @@ object MediaProperties {
   object MediaMirroringOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions & Double] = js.native
     
-    /* 1 */ val horizontal: typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions.horizontal with Double = js.native
+    /* 1 */ val horizontal: typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions.horizontal & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions.none & Double = js.native
     
-    /* 2 */ val vertical: typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions.vertical with Double = js.native
+    /* 2 */ val vertical: typings.winrtUwp.Windows.Media.MediaProperties.MediaMirroringOptions.vertical & Double = js.native
   }
   
   /** Defines values for media pixel formats. */
@@ -712,11 +800,11 @@ object MediaProperties {
   object MediaPixelFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat & Double] = js.native
     
-    /* 1 */ val bgra8: typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat.bgra8 with Double = js.native
+    /* 1 */ val bgra8: typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat.bgra8 & Double = js.native
     
-    /* 0 */ val nv12: typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat.nv12 with Double = js.native
+    /* 0 */ val nv12: typings.winrtUwp.Windows.Media.MediaProperties.MediaPixelFormat.nv12 & Double = js.native
   }
   
   /** Represents a set of media properties. */
@@ -724,13 +812,24 @@ object MediaProperties {
   @js.native
   /** Creates an instance for MediaPropertySet . */
   class MediaPropertySet ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet
   
   /** Represents ratios used in media operations. */
   @JSGlobal("Windows.Media.MediaProperties.MediaRatio")
   @js.native
   abstract class MediaRatio ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio {
+    
+    /** The denominator of the MediaRatio. */
+    /* CompleteClass */
+    var denominator: Double = js.native
+    
+    /** The numerator of the MediaRatio. */
+    /* CompleteClass */
+    var numerator: Double = js.native
+  }
   
   /** Defines the direction and angle of a media rotation transform. */
   @JSGlobal("Windows.Media.MediaProperties.MediaRotation")
@@ -738,15 +837,15 @@ object MediaProperties {
   object MediaRotation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation & Double] = js.native
     
-    /* 2 */ val clockwise180Degrees: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.clockwise180Degrees with Double = js.native
+    /* 2 */ val clockwise180Degrees: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.clockwise180Degrees & Double = js.native
     
-    /* 3 */ val clockwise270Degrees: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.clockwise270Degrees with Double = js.native
+    /* 3 */ val clockwise270Degrees: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.clockwise270Degrees & Double = js.native
     
-    /* 1 */ val clockwise90Degrees: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.clockwise90Degrees with Double = js.native
+    /* 1 */ val clockwise90Degrees: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.clockwise90Degrees & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Media.MediaProperties.MediaRotation.none & Double = js.native
   }
   
   /** Defines values for media formats for thumbnails. */
@@ -755,18 +854,19 @@ object MediaProperties {
   object MediaThumbnailFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat & Double] = js.native
     
-    /* 1 */ val bgra8: typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bgra8 with Double = js.native
+    /* 1 */ val bgra8: typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bgra8 & Double = js.native
     
-    /* 0 */ val bmp: typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bmp with Double = js.native
+    /* 0 */ val bmp: typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat.bmp & Double = js.native
   }
   
   /** Provides properties for getting MPEG-2 profile ids. */
   @JSGlobal("Windows.Media.MediaProperties.Mpeg2ProfileIds")
   @js.native
   abstract class Mpeg2ProfileIds ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.Mpeg2ProfileIds
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.Mpeg2ProfileIds
   object Mpeg2ProfileIds {
     
     @JSGlobal("Windows.Media.MediaProperties.Mpeg2ProfileIds")
@@ -819,26 +919,80 @@ object MediaProperties {
   @js.native
   /** Creates a new instance of the VideoEncodingProperties class. */
   class VideoEncodingProperties ()
-    extends typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
+    extends StObject
+       with typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties {
+    
+    /** Gets or sets the video bit rate. */
+    /* CompleteClass */
+    var bitrate: Double = js.native
+    
+    /** Gets or sets the video frame rate. */
+    /* CompleteClass */
+    var frameRate: typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio = js.native
+    
+    /**
+      * Gets the media format user data.
+      * @return Receives the media format data.
+      */
+    /* CompleteClass */
+    override def getFormatUserData(): js.Array[Double] = js.native
+    
+    /** Gets or sets the video image height. */
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /** Gets or sets the pixel aspect ratio. */
+    /* CompleteClass */
+    var pixelAspectRatio: typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio = js.native
+    
+    /** Gets or sets the media format profile. */
+    /* CompleteClass */
+    var profileId: Double = js.native
+    
+    /** Gets additional format properties for the video stream. */
+    /* CompleteClass */
+    var properties: typings.winrtUwp.Windows.Media.MediaProperties.MediaPropertySet = js.native
+    
+    /**
+      * Sets the media format user data.
+      * @param value The media data to set.
+      */
+    /* CompleteClass */
+    override def setFormatUserData(value: js.Array[Double]): Unit = js.native
+    
+    /** Gets or sets the subtype of the format. */
+    /* CompleteClass */
+    var subtype: String = js.native
+    
+    /** Gets the format type. */
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /** Gets or sets the video image width. */
+    /* CompleteClass */
+    var width: Double = js.native
+  }
   object VideoEncodingProperties {
+    
+    @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates an instance of VideoEncodingProperties for a H.263 video.
       * @return The video encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties.createH264")
-    @js.native
-    def createH264(): typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = js.native
+    @scala.inline
+    def createH264(): typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createH264")().asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties]
     
     /**
       * Creates an instance of VideoEncodingProperties for a MPEG-2 video.
       * @return The video encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties.createMpeg2")
-    @js.native
-    def createMpeg2(): typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = js.native
+    @scala.inline
+    def createMpeg2(): typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createMpeg2")().asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties]
     
     /**
       * Creates an instance of VideoEncodingProperties for a uncompressed video.
@@ -848,9 +1002,8 @@ object MediaProperties {
       * @return The video encoding properties.
       */
     /* static member */
-    @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties.createUncompressed")
-    @js.native
-    def createUncompressed(subtype: String, width: Double, height: Double): typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = js.native
+    @scala.inline
+    def createUncompressed(subtype: String, width: Double, height: Double): typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("createUncompressed")(subtype.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties]
   }
   
   /** Determines the video encoding format. */
@@ -859,22 +1012,22 @@ object MediaProperties {
   object VideoEncodingQuality extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality & Double] = js.native
     
-    /* 0 */ val auto: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.auto with Double = js.native
+    /* 0 */ val auto: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.auto & Double = js.native
     
-    /* 1 */ val hd1080p: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.hd1080p with Double = js.native
+    /* 1 */ val hd1080p: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.hd1080p & Double = js.native
     
-    /* 2 */ val hd720p: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.hd720p with Double = js.native
+    /* 2 */ val hd720p: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.hd720p & Double = js.native
     
-    /* 4 */ val ntsc: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.ntsc with Double = js.native
+    /* 4 */ val ntsc: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.ntsc & Double = js.native
     
-    /* 5 */ val pal: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.pal with Double = js.native
+    /* 5 */ val pal: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.pal & Double = js.native
     
-    /* 7 */ val qvga: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.qvga with Double = js.native
+    /* 7 */ val qvga: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.qvga & Double = js.native
     
-    /* 6 */ val vga: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.vga with Double = js.native
+    /* 6 */ val vga: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.vga & Double = js.native
     
-    /* 3 */ val wvga: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.wvga with Double = js.native
+    /* 3 */ val wvga: typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingQuality.wvga & Double = js.native
   }
 }

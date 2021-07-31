@@ -2,19 +2,17 @@ package typings.socketclusterClient.clientsocketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoReconnectOptions extends StObject {
   
-  var initialDelay: js.UndefOr[Double] = js.native
+  var initialDelay: js.UndefOr[Double] = js.undefined
   
-  var maxDelay: js.UndefOr[Double] = js.native
+  var maxDelay: js.UndefOr[Double] = js.undefined
   
-  var multiplier: js.UndefOr[Double] = js.native
+  var multiplier: js.UndefOr[Double] = js.undefined
   
-  var randomness: js.UndefOr[Double] = js.native
+  var randomness: js.UndefOr[Double] = js.undefined
 }
 object AutoReconnectOptions {
   

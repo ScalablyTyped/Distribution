@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Processing errors
   */
-@js.native
-trait ClaimResponseError extends BackboneElement {
+trait ClaimResponseError
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'detailSequenceLinkId'.
     */
-  var _detailSequenceLinkId: js.UndefOr[Element] = js.native
+  var _detailSequenceLinkId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sequenceLinkId'.
     */
-  var _sequenceLinkId: js.UndefOr[Element] = js.native
+  var _sequenceLinkId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subdetailSequenceLinkId'.
     */
-  var _subdetailSequenceLinkId: js.UndefOr[Element] = js.native
+  var _subdetailSequenceLinkId: js.UndefOr[Element] = js.undefined
   
   /**
     * Error code detailing processing issues
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Detail sequence number
     */
-  var detailSequenceLinkId: js.UndefOr[positiveInt] = js.native
+  var detailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Item sequence number
     */
-  var sequenceLinkId: js.UndefOr[positiveInt] = js.native
+  var sequenceLinkId: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Subdetail sequence number
     */
-  var subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.native
+  var subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
 }
 object ClaimResponseError {
   

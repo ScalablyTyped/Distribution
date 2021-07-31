@@ -3,38 +3,36 @@ package typings.openfin.mod.fin
 import typings.openfin.openfinStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
   /**
     * A boolean that will force dismissal even if the mouse is hovering over the notification
     */
-  var ignoreMouseOver: js.UndefOr[Boolean] = js.native
+  var ignoreMouseOver: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A message of any primitive or composite-primitive type to be passed to the notification upon creation.
     */
-  var message: js.UndefOr[js.Any] = js.native
+  var message: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A function that is called when a notification is clicked.
     */
-  var onClick: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * Invoked when the notification is closed via .close() method on the created notification instance
     * or the by the notification itself via fin.desktop.Notification.getCurrent().close().
     * NOTE: this is not invoked when the notification is dismissed via a swipe. For the swipe dismissal callback see onDismiss
     */
-  var onClose: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * Invoked when a the notification is dismissed by swiping it off the screen to the right. NOTE: this is no fired on a programmatic close.
     */
-  var onDismiss: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * A function that is called when an error occurs.The reason for the error is passed as an argument.
@@ -44,30 +42,30 @@ trait NotificationOptions extends StObject {
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The onMessage function will respond to messages sent from notification.sendMessageToApplication.
     * The function is passed the message, which can be of any primitive or composite-primitive type.
     */
-  var onMessage: js.UndefOr[js.Function1[/* callback */ js.Function1[/* message */ js.Any, Unit], Unit]] = js.native
+  var onMessage: js.UndefOr[js.Function1[/* callback */ js.Function1[/* message */ js.Any, Unit], Unit]] = js.undefined
   
   /**
     * A function that is called when a notification is shown.
     */
   var onShow: js.UndefOr[
     js.Function1[/* callback */ js.Function1[/* successObj */ SuccessObj, Unit], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The timeout for displaying a notification.Can be in milliseconds or "never".
     */
-  var timeout: js.UndefOr[Double | never] = js.native
+  var timeout: js.UndefOr[Double | never] = js.undefined
   
   /**
     * The url of the notification
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object NotificationOptions {
   

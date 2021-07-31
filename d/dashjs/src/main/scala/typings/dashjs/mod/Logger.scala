@@ -2,21 +2,19 @@ package typings.dashjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
-  def debug(params: js.Any*): Unit = js.native
+  def debug(params: js.Any*): Unit
   
-  def error(params: js.Any*): Unit = js.native
+  def error(params: js.Any*): Unit
   
-  def fatal(params: js.Any*): Unit = js.native
+  def fatal(params: js.Any*): Unit
   
-  def info(params: js.Any*): Unit = js.native
+  def info(params: js.Any*): Unit
   
-  def warn(params: js.Any*): Unit = js.native
+  def warn(params: js.Any*): Unit
 }
 object Logger {
   

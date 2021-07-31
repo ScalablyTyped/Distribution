@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallHierarchy extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CallHierarchy extends StObject {
     *
     * @since 3.16.0 - Proposed state
     */
-  var callHierarchy: js.UndefOr[DynamicRegistration] = js.native
+  var callHierarchy: js.UndefOr[DynamicRegistration] = js.undefined
 }
 object CallHierarchy {
   

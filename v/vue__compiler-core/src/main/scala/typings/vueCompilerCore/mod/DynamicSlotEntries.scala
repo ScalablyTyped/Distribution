@@ -1,27 +1,22 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`17`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DynamicSlotEntries extends ArrayExpression {
+trait DynamicSlotEntries
+  extends StObject
+     with ArrayExpression {
   
   @JSName("elements")
-  var elements_DynamicSlotEntries: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode] = js.native
+  var elements_DynamicSlotEntries: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode]
 }
 object DynamicSlotEntries {
   
   @scala.inline
-  def apply(
-    elements: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode],
-    loc: SourceLocation,
-    `type`: `17`
-  ): DynamicSlotEntries = {
+  def apply(elements: js.Array[ConditionalDynamicSlotNode | ListDynamicSlotNode], loc: SourceLocation): DynamicSlotEntries = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[DynamicSlotEntries]
   }
   

@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeAttachment extends StObject {
   
   /**
     * Valid values are `sender` and `senderAndAllRecipients`.
     */
-  var accessControl: js.UndefOr[String] = js.native
+  var accessControl: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the attachment.
     */
-  var attachmentId: js.UndefOr[String] = js.native
+  var attachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of the attachment for the recipient. Possible values are:
@@ -24,18 +22,18 @@ trait EnvelopeAttachment extends StObject {
     * - `.htm`
     * - `.xml`
     */
-  var attachmentType: js.UndefOr[String] = js.native
+  var attachmentType: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object EnvelopeAttachment {
   

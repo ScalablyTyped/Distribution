@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.parse.mod.global.Parse.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -74,23 +73,23 @@ class Query[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protec
 }
 object Query {
   
-  /* static member */
-  @JSImport("parse", "Query.and")
+  @JSImport("parse", "Query")
   @js.native
-  def and[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("parse", "Query.fromJSON")
-  @js.native
-  def fromJSON[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](className: String, json: js.Any): typings.parse.mod.global.Parse.Query[U] = js.native
+  @scala.inline
+  def and[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
   
   /* static member */
-  @JSImport("parse", "Query.nor")
-  @js.native
-  def nor[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = js.native
+  @scala.inline
+  def fromJSON[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](className: String, json: js.Any): typings.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
   
   /* static member */
-  @JSImport("parse", "Query.or")
-  @js.native
-  def or[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = js.native
+  @scala.inline
+  def nor[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
+  
+  /* static member */
+  @scala.inline
+  def or[U /* <: typings.parse.mod.global.Parse.Object[Attributes] */](var_args: typings.parse.mod.global.Parse.Query[U]*): typings.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[js.Any]).asInstanceOf[typings.parse.mod.global.Parse.Query[U]]
 }

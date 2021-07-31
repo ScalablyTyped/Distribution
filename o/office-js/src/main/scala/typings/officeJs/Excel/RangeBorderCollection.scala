@@ -15,7 +15,6 @@ import typings.officeJs.officeJsStrings.InsideHorizontal
 import typings.officeJs.officeJsStrings.InsideVertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait RangeBorderCollection extends ClientObject {
+trait RangeBorderCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -90,7 +91,7 @@ trait RangeBorderCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): RangeBorderCollection = js.native
-  def load(options: RangeBorderCollectionLoadOptions with CollectionLoadOptions): RangeBorderCollection = js.native
+  def load(options: RangeBorderCollectionLoadOptions & CollectionLoadOptions): RangeBorderCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): RangeBorderCollection = js.native
   def load(propertyNames: String): RangeBorderCollection = js.native
   def load(propertyNames: js.Array[String]): RangeBorderCollection = js.native

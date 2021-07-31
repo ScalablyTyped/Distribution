@@ -2,15 +2,13 @@ package typings.knockoutPaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutPagingDefaultOptions extends StObject {
   
-  var pageNumber: Double = js.native
+  var pageNumber: Double
   
-  var pageSize: Double = js.native
+  var pageSize: Double
 }
 object KnockoutPagingDefaultOptions {
   

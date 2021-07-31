@@ -5,31 +5,29 @@ import typings.mfiles.MFiles.MFLoginAccountType
 import typings.mfiles.MFiles.MFLoginServerRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILoginAccount extends StObject {
   
-  val AccountName: String = js.native
+  val AccountName: String
   
-  var AccountType: MFLoginAccountType = js.native
+  var AccountType: MFLoginAccountType
   
-  def Clone(): ILoginAccount = js.native
+  def Clone(): ILoginAccount
   
-  def CloneFrom(LoginAccount: ILoginAccount): Unit = js.native
+  def CloneFrom(LoginAccount: ILoginAccount): Unit
   
-  var DomainName: String = js.native
+  var DomainName: String
   
-  var EmailAddress: String = js.native
+  var EmailAddress: String
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var FullName: String = js.native
+  var FullName: String
   
-  var LicenseType: MFLicenseType = js.native
+  var LicenseType: MFLicenseType
   
-  var ServerRoles: MFLoginServerRole = js.native
+  var ServerRoles: MFLoginServerRole
   
   def Set(
     LoginAccountType: MFLoginAccountType,
@@ -39,9 +37,9 @@ trait ILoginAccount extends StObject {
     FullName: String,
     EmailAddress: String,
     LicenseType: MFLicenseType
-  ): Unit = js.native
+  ): Unit
   
-  var UserName: String = js.native
+  var UserName: String
 }
 object ILoginAccount {
   

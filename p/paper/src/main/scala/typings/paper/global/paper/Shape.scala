@@ -2,19 +2,20 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("paper.Shape")
 @js.native
 class Shape ()
-  extends typings.paper.paper.Shape
+  extends StObject
+     with typings.paper.paper.Shape
 object Shape {
   
   @JSGlobal("paper.Shape.Circle")
   @js.native
   class Circle protected ()
-    extends typings.paper.paper.Shape {
+    extends StObject
+       with typings.paper.paper.Shape {
     /** 
       * Creates a circular shape item from the properties described by an
       * object literal.
@@ -35,7 +36,8 @@ object Shape {
   @JSGlobal("paper.Shape.Ellipse")
   @js.native
   class Ellipse protected ()
-    extends typings.paper.paper.Shape {
+    extends StObject
+       with typings.paper.paper.Shape {
     /** 
       * Creates an elliptical shape item from the properties described by an
       * object literal.
@@ -55,7 +57,8 @@ object Shape {
   @JSGlobal("paper.Shape.Rectangle")
   @js.native
   class Rectangle protected ()
-    extends typings.paper.paper.Shape {
+    extends StObject
+       with typings.paper.paper.Shape {
     /** 
       * Creates a rectangular shape item from the properties described by an
       * object literal.

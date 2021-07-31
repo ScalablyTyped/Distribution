@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,26 +26,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         gradient.getMaxColor(), gradient.getMaxType(), gradient.getMaxValue());
   *     }
   */
-@js.native
 trait GradientCondition extends StObject {
   
-  def getMaxColor(): String = js.native
+  def getMaxColor(): String
   
-  def getMaxType(): InterpolationType | Null = js.native
+  def getMaxType(): InterpolationType | Null
   
-  def getMaxValue(): String = js.native
+  def getMaxValue(): String
   
-  def getMidColor(): String = js.native
+  def getMidColor(): String
   
-  def getMidType(): InterpolationType | Null = js.native
+  def getMidType(): InterpolationType | Null
   
-  def getMidValue(): String = js.native
+  def getMidValue(): String
   
-  def getMinColor(): String = js.native
+  def getMinColor(): String
   
-  def getMinType(): InterpolationType | Null = js.native
+  def getMinType(): InterpolationType | Null
   
-  def getMinValue(): String = js.native
+  def getMinValue(): String
 }
 object GradientCondition {
   

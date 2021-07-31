@@ -2,23 +2,21 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCostCategoryDefinitionRequest extends StObject {
   
   /**
     * The unique identifier for your Cost Category.
     */
-  var CostCategoryArn: Arn = js.native
+  var CostCategoryArn: Arn
   
-  var RuleVersion: CostCategoryRuleVersion = js.native
+  var RuleVersion: CostCategoryRuleVersion
   
   /**
     * The Expression object used to categorize costs. For more information, see CostCategoryRule . 
     */
-  var Rules: CostCategoryRulesList = js.native
+  var Rules: CostCategoryRulesList
 }
 object UpdateCostCategoryDefinitionRequest {
   

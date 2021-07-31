@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAnalyzedResourceRequest extends StObject {
   
   /**
     * The ARN of the analyzer to retrieve information from.
     */
-  var analyzerArn: AnalyzerArn = js.native
+  var analyzerArn: AnalyzerArn
   
   /**
     * The ARN of the resource to retrieve information about.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
 }
 object GetAnalyzedResourceRequest {
   

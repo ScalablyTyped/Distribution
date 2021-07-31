@@ -5,7 +5,6 @@ import typings.luminoDatagrid.datamodelMod.DataModel
 import typings.luminoDatagrid.jsonmodelMod.JSONModel.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonmodelMod {
@@ -46,13 +45,12 @@ object jsonmodelMod {
       * This is based on the JSON Table Schema specification:
       * https://specs.frictionlessdata.io/table-schema/
       */
-    @js.native
     trait Field extends StObject {
       
       /**
         * The format of the data in the column.
         */
-      val format: js.UndefOr[String] = js.native
+      val format: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the column.
@@ -61,19 +59,19 @@ object jsonmodelMod {
         * It is also used as the column header label, unless the `title`
         * property is provided.
         */
-      val name: String = js.native
+      val name: String
       
       /**
         * The human readable name for the column.
         *
         * This is used as the label for the column header.
         */
-      val title: js.UndefOr[String] = js.native
+      val title: js.UndefOr[String] = js.undefined
       
       /**
         * The type of data held in the column.
         */
-      val `type`: js.UndefOr[String] = js.native
+      val `type`: js.UndefOr[String] = js.undefined
     }
     object Field {
       
@@ -112,7 +110,6 @@ object jsonmodelMod {
     /**
       * An options object for initializing a JSON data model.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -120,14 +117,14 @@ object jsonmodelMod {
         *
         * The data model takes full ownership of the data source.
         */
-      var data: DataSource = js.native
+      var data: DataSource
       
       /**
         * The schema for the for the data model.
         *
         * The schema should be treated as an immutable object.
         */
-      var schema: Schema = js.native
+      var schema: Schema
     }
     object IOptions {
       
@@ -158,7 +155,6 @@ object jsonmodelMod {
       * This is based on the JSON Table Schema specification:
       * https://specs.frictionlessdata.io/table-schema/
       */
-    @js.native
     trait Schema extends StObject {
       
       /**
@@ -166,21 +162,21 @@ object jsonmodelMod {
         *
         * Primary key fields are rendered as row header columns.
         */
-      val fields: js.Array[Field] = js.native
+      val fields: js.Array[Field]
       
       /**
         * The values to treat as "missing" data.
         *
         * Missing values are automatically converted to `null`.
         */
-      val missingValues: js.UndefOr[js.Array[String]] = js.native
+      val missingValues: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The field names which act as primary keys.
         *
         * Primary key fields are rendered as row header columns.
         */
-      val primaryKey: js.UndefOr[String | js.Array[String]] = js.native
+      val primaryKey: js.UndefOr[String | js.Array[String]] = js.undefined
     }
     object Schema {
       

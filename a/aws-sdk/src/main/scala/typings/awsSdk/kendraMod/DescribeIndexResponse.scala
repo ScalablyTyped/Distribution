@@ -2,86 +2,84 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIndexResponse extends StObject {
   
   /**
     * For enterprise edtion indexes, you can choose to use additional capacity to meet the needs of your application. This contains the capacity units used for the index. A 0 for the query capacity or the storage capacity indicates that the index is using the default capacity for the index.
     */
-  var CapacityUnits: js.UndefOr[CapacityUnitsConfiguration] = js.native
+  var CapacityUnits: js.UndefOr[CapacityUnitsConfiguration] = js.undefined
   
   /**
     * The Unix datetime that the index was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the index.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * Configuration settings for any metadata applied to the documents in the index.
     */
-  var DocumentMetadataConfigurations: js.UndefOr[DocumentMetadataConfigurationList] = js.native
+  var DocumentMetadataConfigurations: js.UndefOr[DocumentMetadataConfigurationList] = js.undefined
   
   /**
     * The Amazon Kendra edition used for the index. You decide the edition when you create the index.
     */
-  var Edition: js.UndefOr[IndexEdition] = js.native
+  var Edition: js.UndefOr[IndexEdition] = js.undefined
   
   /**
     * When th eStatus field value is FAILED, the ErrorMessage field contains a message that explains why.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
   
   /**
     * the name of the index.
     */
-  var Id: js.UndefOr[IndexId] = js.native
+  var Id: js.UndefOr[IndexId] = js.undefined
   
   /**
     * Provides information about the number of FAQ questions and answers and the number of text documents indexed.
     */
-  var IndexStatistics: js.UndefOr[typings.awsSdk.kendraMod.IndexStatistics] = js.native
+  var IndexStatistics: js.UndefOr[typings.awsSdk.kendraMod.IndexStatistics] = js.undefined
   
   /**
     * The name of the index.
     */
-  var Name: js.UndefOr[IndexName] = js.native
+  var Name: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that gives Amazon Kendra permission to write to your Amazon Cloudwatch logs.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   
   /**
     * The identifier of the AWS KMS customer master key (CMK) used to encrypt your data. Amazon Kendra doesn't support asymmetric CMKs.
     */
-  var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServerSideEncryptionConfiguration] = js.native
+  var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServerSideEncryptionConfiguration] = js.undefined
   
   /**
     * The current status of the index. When the value is ACTIVE, the index is ready for use. If the Status field value is FAILED, the ErrorMessage field contains a message that explains why.
     */
-  var Status: js.UndefOr[IndexStatus] = js.native
+  var Status: js.UndefOr[IndexStatus] = js.undefined
   
   /**
     * The Unix datetime that the index was last updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The user context policy for the Amazon Kendra index.
     */
-  var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.native
+  var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.undefined
   
   /**
     * The user token configuration for the Amazon Kendra index.
     */
-  var UserTokenConfigurations: js.UndefOr[UserTokenConfigurationList] = js.native
+  var UserTokenConfigurations: js.UndefOr[UserTokenConfigurationList] = js.undefined
 }
 object DescribeIndexResponse {
   

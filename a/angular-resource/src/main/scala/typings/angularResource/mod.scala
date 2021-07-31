@@ -17,7 +17,6 @@ import typings.angularResource.mod.angularAugmentingMod.resource.IResourceServic
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -35,16 +34,15 @@ object mod extends Shortcut {
   object angularAugmentingMod {
     
     /** extensions to base ng based on using angular-resource */
-    @js.native
     trait IModule extends StObject {
       
       /** creating a resource service factory */
-      def factory(name: String, resourceServiceFactoryFunction: IResourceServiceFactoryFunction[_]): IModule = js.native
+      def factory(name: String, resourceServiceFactoryFunction: IResourceServiceFactoryFunction[js.Any]): IModule
     }
     object IModule {
       
       @scala.inline
-      def apply(factory: (String, IResourceServiceFactoryFunction[_]) => IModule): IModule = {
+      def apply(factory: (String, IResourceServiceFactoryFunction[js.Any]) => IModule): IModule = {
         val __obj = js.Dynamic.literal(factory = js.Any.fromFunction2(factory))
         __obj.asInstanceOf[IModule]
       }
@@ -53,17 +51,16 @@ object mod extends Shortcut {
       implicit class IModuleMutableBuilder[Self <: IModule] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setFactory(value: (String, IResourceServiceFactoryFunction[_]) => IModule): Self = StObject.set(x, "factory", js.Any.fromFunction2(value))
+        def setFactory(value: (String, IResourceServiceFactoryFunction[js.Any]) => IModule): Self = StObject.set(x, "factory", js.Any.fromFunction2(value))
       }
     }
     
     object auto {
       
-      @js.native
       trait IInjectorService extends StObject {
         
         @JSName("get")
-        def get_resource(name: $resource): IResourceService = js.native
+        def get_resource(name: $resource): IResourceService
       }
       object IInjectorService {
         
@@ -88,41 +85,40 @@ object mod extends Shortcut {
     object resource {
       
       // Just a reference to facilitate describing new actions
-      @js.native
       trait IActionDescriptor extends StObject {
         
-        var cache: js.UndefOr[Boolean | ICacheObject] = js.native
+        var cache: js.UndefOr[Boolean | ICacheObject] = js.undefined
         
-        var cancellable: js.UndefOr[Boolean] = js.native
+        var cancellable: js.UndefOr[Boolean] = js.undefined
         
-        var hasBody: js.UndefOr[Boolean] = js.native
+        var hasBody: js.UndefOr[Boolean] = js.undefined
         
-        var headers: js.UndefOr[js.Any] = js.native
+        var headers: js.UndefOr[js.Any] = js.undefined
         
-        var interceptor: js.UndefOr[IResourceInterceptor] = js.native
+        var interceptor: js.UndefOr[IResourceInterceptor] = js.undefined
         
-        var isArray: js.UndefOr[Boolean] = js.native
+        var isArray: js.UndefOr[Boolean] = js.undefined
         
-        var method: String = js.native
+        var method: String
         
-        var params: js.UndefOr[js.Any] = js.native
+        var params: js.UndefOr[js.Any] = js.undefined
         
-        var responseType: js.UndefOr[String] = js.native
+        var responseType: js.UndefOr[String] = js.undefined
         
         /**
           * Note: In contrast to $http.config, promises are not supported in $resource, because the same value
           * would be used for multiple requests. If you are looking for a way to cancel requests, you should
           * use the cancellable option.
           */
-        var timeout: js.UndefOr[Double] = js.native
+        var timeout: js.UndefOr[Double] = js.undefined
         
-        var transformRequest: js.UndefOr[IHttpRequestTransformer | js.Array[IHttpRequestTransformer]] = js.native
+        var transformRequest: js.UndefOr[IHttpRequestTransformer | js.Array[IHttpRequestTransformer]] = js.undefined
         
-        var transformResponse: js.UndefOr[IHttpResponseTransformer | js.Array[IHttpResponseTransformer]] = js.native
+        var transformResponse: js.UndefOr[IHttpResponseTransformer | js.Array[IHttpResponseTransformer]] = js.undefined
         
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
         
-        var withCredentials: js.UndefOr[Boolean] = js.native
+        var withCredentials: js.UndefOr[Boolean] = js.undefined
       }
       object IActionDescriptor {
         
@@ -244,19 +240,19 @@ object mod extends Shortcut {
         @JSName("$delete")
         def $delete(): IPromise[T] = js.native
         @JSName("$delete")
-        def $delete(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
-        @JSName("$delete")
-        def $delete(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
-        @JSName("$delete")
-        def $delete(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
-        @JSName("$delete")
         def $delete(params: js.Object): IPromise[T] = js.native
         @JSName("$delete")
-        def $delete(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+        def $delete(params: js.Object, success: Unit, error: Function): IPromise[T] = js.native
         @JSName("$delete")
         def $delete(params: js.Object, success: Function): IPromise[T] = js.native
         @JSName("$delete")
         def $delete(params: js.Object, success: Function, error: Function): IPromise[T] = js.native
+        @JSName("$delete")
+        def $delete(params: Unit, success: Unit, error: Function): IPromise[T] = js.native
+        @JSName("$delete")
+        def $delete(params: Unit, success: Function): IPromise[T] = js.native
+        @JSName("$delete")
+        def $delete(params: Unit, success: Function, error: Function): IPromise[T] = js.native
         @JSName("$delete")
         def $delete(success: Function): IPromise[T] = js.native
         @JSName("$delete")
@@ -265,19 +261,19 @@ object mod extends Shortcut {
         @JSName("$get")
         def $get(): IPromise[T] = js.native
         @JSName("$get")
-        def $get(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
-        @JSName("$get")
-        def $get(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
-        @JSName("$get")
-        def $get(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
-        @JSName("$get")
         def $get(params: js.Object): IPromise[T] = js.native
         @JSName("$get")
-        def $get(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+        def $get(params: js.Object, success: Unit, error: Function): IPromise[T] = js.native
         @JSName("$get")
         def $get(params: js.Object, success: Function): IPromise[T] = js.native
         @JSName("$get")
         def $get(params: js.Object, success: Function, error: Function): IPromise[T] = js.native
+        @JSName("$get")
+        def $get(params: Unit, success: Unit, error: Function): IPromise[T] = js.native
+        @JSName("$get")
+        def $get(params: Unit, success: Function): IPromise[T] = js.native
+        @JSName("$get")
+        def $get(params: Unit, success: Function, error: Function): IPromise[T] = js.native
         @JSName("$get")
         def $get(success: Function): IPromise[T] = js.native
         @JSName("$get")
@@ -290,19 +286,19 @@ object mod extends Shortcut {
         @JSName("$query")
         def $query(): IPromise[IResourceArray[T]] = js.native
         @JSName("$query")
-        def $query(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[IResourceArray[T]] = js.native
-        @JSName("$query")
-        def $query(params: js.UndefOr[scala.Nothing], success: Function): IPromise[IResourceArray[T]] = js.native
-        @JSName("$query")
-        def $query(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[IResourceArray[T]] = js.native
-        @JSName("$query")
         def $query(params: js.Object): IPromise[IResourceArray[T]] = js.native
         @JSName("$query")
-        def $query(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[IResourceArray[T]] = js.native
+        def $query(params: js.Object, success: Unit, error: Function): IPromise[IResourceArray[T]] = js.native
         @JSName("$query")
         def $query(params: js.Object, success: Function): IPromise[IResourceArray[T]] = js.native
         @JSName("$query")
         def $query(params: js.Object, success: Function, error: Function): IPromise[IResourceArray[T]] = js.native
+        @JSName("$query")
+        def $query(params: Unit, success: Unit, error: Function): IPromise[IResourceArray[T]] = js.native
+        @JSName("$query")
+        def $query(params: Unit, success: Function): IPromise[IResourceArray[T]] = js.native
+        @JSName("$query")
+        def $query(params: Unit, success: Function, error: Function): IPromise[IResourceArray[T]] = js.native
         @JSName("$query")
         def $query(success: Function): IPromise[IResourceArray[T]] = js.native
         @JSName("$query")
@@ -311,19 +307,19 @@ object mod extends Shortcut {
         @JSName("$remove")
         def $remove(): IPromise[T] = js.native
         @JSName("$remove")
-        def $remove(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
-        @JSName("$remove")
-        def $remove(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
-        @JSName("$remove")
-        def $remove(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
-        @JSName("$remove")
         def $remove(params: js.Object): IPromise[T] = js.native
         @JSName("$remove")
-        def $remove(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+        def $remove(params: js.Object, success: Unit, error: Function): IPromise[T] = js.native
         @JSName("$remove")
         def $remove(params: js.Object, success: Function): IPromise[T] = js.native
         @JSName("$remove")
         def $remove(params: js.Object, success: Function, error: Function): IPromise[T] = js.native
+        @JSName("$remove")
+        def $remove(params: Unit, success: Unit, error: Function): IPromise[T] = js.native
+        @JSName("$remove")
+        def $remove(params: Unit, success: Function): IPromise[T] = js.native
+        @JSName("$remove")
+        def $remove(params: Unit, success: Function, error: Function): IPromise[T] = js.native
         @JSName("$remove")
         def $remove(success: Function): IPromise[T] = js.native
         @JSName("$remove")
@@ -335,19 +331,19 @@ object mod extends Shortcut {
         @JSName("$save")
         def $save(): IPromise[T] = js.native
         @JSName("$save")
-        def $save(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
-        @JSName("$save")
-        def $save(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
-        @JSName("$save")
-        def $save(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
-        @JSName("$save")
         def $save(params: js.Object): IPromise[T] = js.native
         @JSName("$save")
-        def $save(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+        def $save(params: js.Object, success: Unit, error: Function): IPromise[T] = js.native
         @JSName("$save")
         def $save(params: js.Object, success: Function): IPromise[T] = js.native
         @JSName("$save")
         def $save(params: js.Object, success: Function, error: Function): IPromise[T] = js.native
+        @JSName("$save")
+        def $save(params: Unit, success: Unit, error: Function): IPromise[T] = js.native
+        @JSName("$save")
+        def $save(params: Unit, success: Function): IPromise[T] = js.native
+        @JSName("$save")
+        def $save(params: Unit, success: Function, error: Function): IPromise[T] = js.native
         @JSName("$save")
         def $save(success: Function): IPromise[T] = js.native
         @JSName("$save")
@@ -360,7 +356,9 @@ object mod extends Shortcut {
         * Really just a regular Array object with $promise and $resolve attached to it
         */
       @js.native
-      trait IResourceArray[T] extends Array[T with IResource[T]] {
+      trait IResourceArray[T]
+        extends StObject
+           with Array[T & IResource[T]] {
         
         @JSName("$cancelRequest")
         def $cancelRequest(): Unit = js.native
@@ -381,7 +379,7 @@ object mod extends Shortcut {
         def apply(): IResourceArray[T] = js.native
         def apply(params: js.Object): IResourceArray[T] = js.native
         def apply(params: js.Object, data: js.Object): IResourceArray[T] = js.native
-        def apply(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IResourceArray[T] = js.native
+        def apply(params: js.Object, data: js.Object, success: Unit, error: Function): IResourceArray[T] = js.native
         def apply(params: js.Object, data: js.Object, success: Function): IResourceArray[T] = js.native
         def apply(params: js.Object, data: js.Object, success: Function, error: Function): IResourceArray[T] = js.native
         def apply(params: js.Object, success: Function): IResourceArray[T] = js.native
@@ -409,13 +407,14 @@ object mod extends Shortcut {
       // https://github.com/angular/js/blob/v1.2.0/src/ngResource/resource.js#L538-L549
       @js.native
       trait IResourceClass[T]
-        extends Instantiable0[T with IResource[T]]
-           with Instantiable1[/* dataOrParams */ js.Any, T with IResource[T]] {
+        extends StObject
+           with Instantiable0[T & IResource[T]]
+           with Instantiable1[/* dataOrParams */ js.Any, T & IResource[T]] {
         
         def delete(): T = js.native
         def delete(params: js.Object): T = js.native
         def delete(params: js.Object, data: js.Object): T = js.native
-        def delete(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
+        def delete(params: js.Object, data: js.Object, success: Unit, error: Function): T = js.native
         def delete(params: js.Object, data: js.Object, success: Function): T = js.native
         def delete(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
         def delete(params: js.Object, success: Function): T = js.native
@@ -428,7 +427,7 @@ object mod extends Shortcut {
         def get(): T = js.native
         def get(params: js.Object): T = js.native
         def get(params: js.Object, data: js.Object): T = js.native
-        def get(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
+        def get(params: js.Object, data: js.Object, success: Unit, error: Function): T = js.native
         def get(params: js.Object, data: js.Object, success: Function): T = js.native
         def get(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
         def get(params: js.Object, success: Function): T = js.native
@@ -441,7 +440,7 @@ object mod extends Shortcut {
         def query(): IResourceArray[T] = js.native
         def query(params: js.Object): IResourceArray[T] = js.native
         def query(params: js.Object, data: js.Object): IResourceArray[T] = js.native
-        def query(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IResourceArray[T] = js.native
+        def query(params: js.Object, data: js.Object, success: Unit, error: Function): IResourceArray[T] = js.native
         def query(params: js.Object, data: js.Object, success: Function): IResourceArray[T] = js.native
         def query(params: js.Object, data: js.Object, success: Function, error: Function): IResourceArray[T] = js.native
         def query(params: js.Object, success: Function): IResourceArray[T] = js.native
@@ -454,7 +453,7 @@ object mod extends Shortcut {
         def remove(): T = js.native
         def remove(params: js.Object): T = js.native
         def remove(params: js.Object, data: js.Object): T = js.native
-        def remove(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
+        def remove(params: js.Object, data: js.Object, success: Unit, error: Function): T = js.native
         def remove(params: js.Object, data: js.Object, success: Function): T = js.native
         def remove(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
         def remove(params: js.Object, success: Function): T = js.native
@@ -467,7 +466,7 @@ object mod extends Shortcut {
         def save(): T = js.native
         def save(params: js.Object): T = js.native
         def save(params: js.Object, data: js.Object): T = js.native
-        def save(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
+        def save(params: js.Object, data: js.Object, success: Unit, error: Function): T = js.native
         def save(params: js.Object, data: js.Object, success: Function): T = js.native
         def save(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
         def save(params: js.Object, success: Function): T = js.native
@@ -478,12 +477,11 @@ object mod extends Shortcut {
         var save_Original: IResourceMethod[T] = js.native
       }
       
-      @js.native
       trait IResourceInterceptor extends StObject {
         
-        var response: js.UndefOr[js.Function1[/* response */ IResourceResponse, _]] = js.native
+        var response: js.UndefOr[js.Function1[/* response */ IResourceResponse, js.Any]] = js.undefined
         
-        var responseError: js.UndefOr[js.Function1[/* rejection */ js.Any, _]] = js.native
+        var responseError: js.UndefOr[js.Function1[/* rejection */ js.Any, js.Any]] = js.undefined
       }
       object IResourceInterceptor {
         
@@ -497,10 +495,10 @@ object mod extends Shortcut {
         implicit class IResourceInterceptorMutableBuilder[Self <: IResourceInterceptor] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setResponse(value: /* response */ IResourceResponse => _): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+          def setResponse(value: /* response */ IResourceResponse => js.Any): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
           
           @scala.inline
-          def setResponseError(value: /* rejection */ js.Any => _): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
+          def setResponseError(value: /* rejection */ js.Any => js.Any): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
           
           @scala.inline
           def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
@@ -518,7 +516,7 @@ object mod extends Shortcut {
         def apply(): T = js.native
         def apply(params: js.Object): T = js.native
         def apply(params: js.Object, data: js.Object): T = js.native
-        def apply(params: js.Object, data: js.Object, success: js.UndefOr[scala.Nothing], error: Function): T = js.native
+        def apply(params: js.Object, data: js.Object, success: Unit, error: Function): T = js.native
         def apply(params: js.Object, data: js.Object, success: Function): T = js.native
         def apply(params: js.Object, data: js.Object, success: Function, error: Function): T = js.native
         def apply(params: js.Object, success: Function): T = js.native
@@ -530,19 +528,18 @@ object mod extends Shortcut {
       /**
         * Currently supported options for the $resource factory options argument.
         */
-      @js.native
       trait IResourceOptions extends StObject {
         
         /**
           * If true, the request made by a "non-instance" call will be cancelled (if not already completed) by calling
           * $cancelRequest() on the call's return value. This can be overwritten per action. (Defaults to false.)
           */
-        var cancellable: js.UndefOr[Boolean] = js.native
+        var cancellable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If true then the trailing slashes from any calculated URL will be stripped (defaults to true)
           */
-        var stripTrailingSlashes: js.UndefOr[Boolean] = js.native
+        var stripTrailingSlashes: js.UndefOr[Boolean] = js.undefined
       }
       object IResourceOptions {
         
@@ -569,20 +566,19 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IResourceResponse extends StObject {
         
-        var config: js.Any = js.native
+        var config: js.Any
         
-        var data: js.Any = js.native
+        var data: js.Any
         
-        var headers: js.Any = js.native
+        var headers: js.Any
         
-        var resource: js.Any = js.native
+        var resource: js.Any
         
-        var status: Double = js.native
+        var status: Double
         
-        var statusText: String = js.native
+        var statusText: String
       }
       object IResourceResponse {
         
@@ -639,24 +635,14 @@ object mod extends Shortcut {
           * @param actions example: {update: { method: 'PUT' }, delete: deleteDescriptor } where deleteDescriptor: IActionDescriptor
           * @param options Hash with custom settings that should extend the default $resourceProvider behavior
           */
-        def apply(url: String): IResourceClass[IResource[_]] = js.native
-        def apply(
-          url: String,
-          paramDefaults: js.UndefOr[scala.Nothing],
-          actions: js.UndefOr[scala.Nothing],
-          options: IResourceOptions
-        ): IResourceClass[IResource[_]] = js.native
-        def apply(url: String, paramDefaults: js.UndefOr[scala.Nothing], actions: IActionHash): IResourceClass[IResource[_]] = js.native
-        def apply(
-          url: String,
-          paramDefaults: js.UndefOr[scala.Nothing],
-          actions: IActionHash,
-          options: IResourceOptions
-        ): IResourceClass[IResource[_]] = js.native
-        def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[_]] = js.native
-        def apply(url: String, paramDefaults: js.Any, actions: js.UndefOr[scala.Nothing], options: IResourceOptions): IResourceClass[IResource[_]] = js.native
-        def apply(url: String, paramDefaults: js.Any, actions: IActionHash): IResourceClass[IResource[_]] = js.native
-        def apply(url: String, paramDefaults: js.Any, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[_]] = js.native
+        def apply(url: String): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: js.Any, actions: Unit, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: js.Any, actions: IActionHash): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: js.Any, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: Unit, actions: Unit, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: Unit, actions: IActionHash): IResourceClass[IResource[js.Any]] = js.native
+        def apply(url: String, paramDefaults: Unit, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[js.Any]] = js.native
       }
       
       /** when creating a resource factory via IModule.factory */
@@ -667,10 +653,11 @@ object mod extends Shortcut {
       }
       
       // IResourceServiceProvider used to configure global settings
-      @js.native
-      trait IResourceServiceProvider extends IServiceProvider {
+      trait IResourceServiceProvider
+        extends StObject
+           with IServiceProvider {
         
-        var defaults: IResourceOptions = js.native
+        var defaults: IResourceOptions
       }
       object IResourceServiceProvider {
         
@@ -692,15 +679,14 @@ object mod extends Shortcut {
   
   object global {
     
-    @js.native
     trait Array[T] extends StObject {
       
       /** The promise of the original server interaction that created this collection. */
       @JSName("$promise")
-      var $promise: IPromise[typings.angularResource.mod.global.Array[T]] = js.native
+      var $promise: IPromise[typings.angularResource.mod.global.Array[T]]
       
       @JSName("$resolved")
-      var $resolved: Boolean = js.native
+      var $resolved: Boolean
     }
     object Array {
       
@@ -711,7 +697,7 @@ object mod extends Shortcut {
       }
       
       @scala.inline
-      implicit class ArrayMutableBuilder[Self <: typings.angularResource.mod.global.Array[_], T] (val x: Self with typings.angularResource.mod.global.Array[T]) extends AnyVal {
+      implicit class ArrayMutableBuilder[Self <: typings.angularResource.mod.global.Array[?], T] (val x: Self & typings.angularResource.mod.global.Array[T]) extends AnyVal {
         
         @scala.inline
         def set$promise(value: IPromise[typings.angularResource.mod.global.Array[T]]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])

@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Undelete extends StObject {
   
-  var add: scala.Double = js.native
+  var add: scala.Double
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var undelete: scala.Double = js.native
+  var undelete: scala.Double
   
-  var update: scala.Double = js.native
+  var update: scala.Double
 }
 object Undelete {
   

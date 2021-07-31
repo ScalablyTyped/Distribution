@@ -12,7 +12,6 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,14 +24,13 @@ object mod extends Shortcut {
   
   type ChangeHandler[T] = js.Function1[/* value */ T, Unit]
   
-  type DropDownItems[T] = js.Array[(T with (String | Double)) | DropDownOption[T]]
+  type DropDownItems[T] = js.Array[(T & (String | Double)) | DropDownOption[T]]
   
-  @js.native
   trait DropDownOption[T] extends StObject {
     
-    var label: String | Double = js.native
+    var label: String | Double
     
-    var value: T = js.native
+    var value: T
   }
   object DropDownOption {
     
@@ -43,7 +41,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class DropDownOptionMutableBuilder[Self <: DropDownOption[_], T] (val x: Self with DropDownOption[T]) extends AnyVal {
+    implicit class DropDownOptionMutableBuilder[Self <: DropDownOption[?], T] (val x: Self & DropDownOption[T]) extends AnyVal {
       
       @scala.inline
       def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -53,14 +51,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait DropDownSelection[T] extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var label: String = js.native
+    var label: String
     
-    var value: T = js.native
+    var value: T
   }
   object DropDownSelection {
     
@@ -71,7 +68,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class DropDownSelectionMutableBuilder[Self <: DropDownSelection[_], T] (val x: Self with DropDownSelection[T]) extends AnyVal {
+    implicit class DropDownSelectionMutableBuilder[Self <: DropDownSelection[?], T] (val x: Self & DropDownSelection[T]) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -104,41 +101,21 @@ object mod extends Shortcut {
       * @returns                 New QuickSettings Panel
       */
     def create[M, S](): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      panelTitle: js.UndefOr[scala.Nothing],
-      parent: HTMLElement
-    ): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], panelTitle: String): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      panelTitle: String,
-      parent: HTMLElement
-    ): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: js.UndefOr[scala.Nothing], y: Double): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](
-      x: js.UndefOr[scala.Nothing],
-      y: Double,
-      panelTitle: js.UndefOr[scala.Nothing],
-      parent: HTMLElement
-    ): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: js.UndefOr[scala.Nothing], y: Double, panelTitle: String): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: js.UndefOr[scala.Nothing], y: Double, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
     def create[M, S](x: Double): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](
-      x: Double,
-      y: js.UndefOr[scala.Nothing],
-      panelTitle: js.UndefOr[scala.Nothing],
-      parent: HTMLElement
-    ): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: Double, y: js.UndefOr[scala.Nothing], panelTitle: String): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: Double, y: js.UndefOr[scala.Nothing], panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
     def create[M, S](x: Double, y: Double): QuickSettingsPanel[M, S] = js.native
-    def create[M, S](x: Double, y: Double, panelTitle: js.UndefOr[scala.Nothing], parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
     def create[M, S](x: Double, y: Double, panelTitle: String): QuickSettingsPanel[M, S] = js.native
     def create[M, S](x: Double, y: Double, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Double, y: Double, panelTitle: Unit, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Double, y: Unit, panelTitle: String): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Double, y: Unit, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Double, y: Unit, panelTitle: Unit, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Double): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Double, panelTitle: String): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Double, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Double, panelTitle: Unit, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Unit, panelTitle: String): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Unit, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
+    def create[M, S](x: Unit, y: Unit, panelTitle: Unit, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
     
     // tslint:disable-line no-unnecessary-generics
     def useExtStyleSheet(): Unit = js.native

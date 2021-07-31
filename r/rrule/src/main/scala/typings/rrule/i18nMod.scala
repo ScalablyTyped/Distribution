@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nMod extends Shortcut {
@@ -14,14 +13,13 @@ object i18nMod extends Shortcut {
   @js.native
   val default: Language = js.native
   
-  @js.native
   trait Language extends StObject {
     
-    var dayNames: js.Array[String] = js.native
+    var dayNames: js.Array[String]
     
-    var monthNames: js.Array[String] = js.native
+    var monthNames: js.Array[String]
     
-    var tokens: StringDictionary[RegExp] = js.native
+    var tokens: StringDictionary[RegExp]
   }
   object Language {
     

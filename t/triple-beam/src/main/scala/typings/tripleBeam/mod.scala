@@ -3,7 +3,6 @@ package typings.tripleBeam
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,11 @@ object mod {
   @js.native
   val configs: Configs_ = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    val colors: StringDictionary[String] = js.native
+    val colors: StringDictionary[String]
     
-    val levels: StringDictionary[Double] = js.native
+    val levels: StringDictionary[Double]
   }
   object Config {
     
@@ -50,14 +48,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Configs_ extends StObject {
     
-    val cli: Config = js.native
+    val cli: Config
     
-    val npm: Config = js.native
+    val npm: Config
     
-    val syslog: Config = js.native
+    val syslog: Config
   }
   object Configs_ {
     

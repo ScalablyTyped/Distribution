@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptTypeProfile extends StObject {
   
   /**
     * Type profile entries for parameters and return values of the functions in the script.
     */
-  var entries: js.Array[TypeProfileEntry] = js.native
+  var entries: js.Array[TypeProfileEntry]
   
   /**
     * JavaScript script id.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * JavaScript script name or url.
     */
-  var url: String = js.native
+  var url: String
 }
 object ScriptTypeProfile {
   

@@ -2,24 +2,22 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IVBSAXErrorHandler interface */
-@js.native
 trait IVBSAXErrorHandler extends StObject {
   
   @JSName("MSXML2.IVBSAXErrorHandler_typekey")
-  var MSXML2DotIVBSAXErrorHandler_typekey: IVBSAXErrorHandler = js.native
+  var MSXML2DotIVBSAXErrorHandler_typekey: IVBSAXErrorHandler
   
   /** Receive notification of a recoverable error. */
-  def error(oLocator: IVBSAXLocator, strErrorMessage: String, nErrorCode: Double): Unit = js.native
+  def error(oLocator: IVBSAXLocator, strErrorMessage: String, nErrorCode: Double): Unit
   
   /** Receive notification of a non-recoverable error. */
-  def fatalError(oLocator: IVBSAXLocator, strErrorMessage: String, nErrorCode: Double): Unit = js.native
+  def fatalError(oLocator: IVBSAXLocator, strErrorMessage: String, nErrorCode: Double): Unit
   
   /** Receive notification of an ignorable warning. */
-  def ignorableWarning(oLocator: IVBSAXLocator, strErrorMessage: String, nErrorCode: Double): Unit = js.native
+  def ignorableWarning(oLocator: IVBSAXLocator, strErrorMessage: String, nErrorCode: Double): Unit
 }
 object IVBSAXErrorHandler {
   

@@ -2,17 +2,15 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberDisplayWidgetHTML extends StObject {
   
-  var none: String = js.native
+  var none: String
   
-  var one: String = js.native
+  var one: String
   
-  var some: String = js.native
+  var some: String
 }
 object NumberDisplayWidgetHTML {
   

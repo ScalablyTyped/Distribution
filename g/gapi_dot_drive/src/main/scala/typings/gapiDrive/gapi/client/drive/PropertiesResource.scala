@@ -3,36 +3,27 @@ package typings.gapiDrive.gapi.client.drive
 import typings.gapiDrive.gapiDriveStrings.drive$property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertiesResource extends StObject {
   
-  var etag: String = js.native
+  var etag: String
   
-  var key: String = js.native
+  var key: String
   
-  var kind: drive$property = js.native
+  var kind: drive$property
   
-  var selfLink: String = js.native
+  var selfLink: String
   
-  var value: String = js.native
+  var value: String
   
-  var visibility: String = js.native
+  var visibility: String
 }
 object PropertiesResource {
   
   @scala.inline
-  def apply(
-    etag: String,
-    key: String,
-    kind: drive$property,
-    selfLink: String,
-    value: String,
-    visibility: String
-  ): PropertiesResource = {
-    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
+  def apply(etag: String, key: String, selfLink: String, value: String, visibility: String): PropertiesResource = {
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = "drive$property", selfLink = selfLink.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesResource]
   }
   

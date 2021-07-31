@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Possible or likely findings and diagnoses
   */
-@js.native
-trait ClinicalImpressionFinding extends BackboneElement {
+trait ClinicalImpressionFinding
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'basis'.
     */
-  var _basis: js.UndefOr[Element] = js.native
+  var _basis: js.UndefOr[Element] = js.undefined
   
   /**
     * Which investigations support finding
     */
-  var basis: js.UndefOr[String] = js.native
+  var basis: js.UndefOr[String] = js.undefined
   
   /**
     * What was found
     */
-  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * What was found
     */
-  var itemReference: js.UndefOr[Reference] = js.native
+  var itemReference: js.UndefOr[Reference] = js.undefined
 }
 object ClinicalImpressionFinding {
   

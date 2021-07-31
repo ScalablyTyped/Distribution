@@ -3,21 +3,19 @@ package typings.angularCommon.anon
 import typings.angularCommon.httpHttpMod.HttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body[T] extends StObject {
   
-  var body: js.UndefOr[T | Null] = js.native
+  var body: js.UndefOr[T | Null] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Body {
   
@@ -28,7 +26,7 @@ object Body {
   }
   
   @scala.inline
-  implicit class BodyMutableBuilder[Self <: Body[_], T] (val x: Self with Body[T]) extends AnyVal {
+  implicit class BodyMutableBuilder[Self <: Body[?], T] (val x: Self & Body[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

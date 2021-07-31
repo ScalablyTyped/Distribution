@@ -2,13 +2,11 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOfferingResponse extends StObject {
   
-  var Offering: js.UndefOr[typings.awsSdk.mediaconnectMod.Offering] = js.native
+  var Offering: js.UndefOr[typings.awsSdk.mediaconnectMod.Offering] = js.undefined
 }
 object DescribeOfferingResponse {
   

@@ -7,43 +7,43 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEditsExpansionfilesUpload extends StandardParameters {
+trait ParamsResourceEditsExpansionfilesUpload
+  extends StObject
+     with StandardParameters {
   
   /**
     * The version code of the APK whose Expansion File configuration is being
     * read or modified.
     */
-  var apkVersionCode: js.UndefOr[Double] = js.native
+  var apkVersionCode: js.UndefOr[Double] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Unique identifier for this edit.
     */
-  var editId: js.UndefOr[String] = js.native
+  var editId: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var expansionFileType: js.UndefOr[String] = js.native
+  var expansionFileType: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Unique identifier for the Android app that is being updated; for example,
     * "com.spiffygame".
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEditsExpansionfilesUpload {
   

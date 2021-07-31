@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,9 +28,9 @@ trait Amplitude extends StObject {
     *   smooth amplitude readings
     */
   def setInput(): Unit = js.native
-  def setInput(snd: js.UndefOr[scala.Nothing], smoothing: Double): Unit = js.native
   def setInput(snd: js.Any): Unit = js.native
   def setInput(snd: js.Any, smoothing: Double): Unit = js.native
+  def setInput(snd: Unit, smoothing: Double): Unit = js.native
   
   /**
     *   Smooth Amplitude analysis by averaging with the

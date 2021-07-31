@@ -6,35 +6,30 @@ import typings.babelTypes.babelTypesStrings.const
 import typings.babelTypes.babelTypesStrings.let
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait VariableDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait VariableDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Statement {
   
-  var declarations: js.Array[VariableDeclarator_] = js.native
+  var declarations: js.Array[VariableDeclarator_]
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var kind: `var` | let | const = js.native
+  var kind: `var` | let | const
   
   @JSName("type")
-  var type_VariableDeclaration_ : VariableDeclaration = js.native
+  var type_VariableDeclaration_ : VariableDeclaration
 }
 object VariableDeclaration_ {
   
   @scala.inline
-  def apply(
-    declarations: js.Array[VariableDeclarator_],
-    kind: `var` | let | const,
-    `type`: VariableDeclaration
-  ): VariableDeclaration_ = {
-    val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(declarations: js.Array[VariableDeclarator_], kind: `var` | let | const): VariableDeclaration_ = {
+    val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration_]
   }
   

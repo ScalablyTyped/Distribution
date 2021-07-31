@@ -8,7 +8,6 @@ import typings.tweetnacl.mod.sign.detached
 import typings.tweetnacl.tweetnaclBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,12 +16,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : nacl = js.native
   
-  @js.native
   trait BoxKeyPair extends StObject {
     
-    var publicKey: Uint8Array = js.native
+    var publicKey: Uint8Array
     
-    var secretKey: Uint8Array = js.native
+    var secretKey: Uint8Array
   }
   object BoxKeyPair {
     
@@ -43,12 +41,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SignKeyPair extends StObject {
     
-    var publicKey: Uint8Array = js.native
+    var publicKey: Uint8Array
     
-    var secretKey: Uint8Array = js.native
+    var secretKey: Uint8Array
   }
   object SignKeyPair {
     
@@ -128,34 +125,78 @@ object mod extends Shortcut {
     val hashLength: Double = js.native
   }
   
-  @js.native
   trait nacl extends StObject {
     
-    def box(msg: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, secretKey: Uint8Array): Uint8Array = js.native
+    def box(msg: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, secretKey: Uint8Array): Uint8Array
     @JSName("box")
-    var box_Original: box = js.native
+    var box_Original: box
     
-    def hash(msg: Uint8Array): Uint8Array = js.native
+    def hash(msg: Uint8Array): Uint8Array
     @JSName("hash")
-    var hash_Original: hash = js.native
+    var hash_Original: hash
     
-    def randomBytes(n: Double): Uint8Array = js.native
+    def randomBytes(n: Double): Uint8Array
     
-    def scalarMult(n: Uint8Array, p: Uint8Array): Uint8Array = js.native
+    def scalarMult(n: Uint8Array, p: Uint8Array): Uint8Array
     @JSName("scalarMult")
-    var scalarMult_Original: scalarMult = js.native
+    var scalarMult_Original: scalarMult
     
-    def secretbox(msg: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = js.native
+    def secretbox(msg: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array
     @JSName("secretbox")
-    var secretbox_Original: secretbox = js.native
+    var secretbox_Original: secretbox
     
-    def setPRNG(fn: js.Function2[/* x */ Uint8Array, /* n */ Double, Unit]): Unit = js.native
+    def setPRNG(fn: js.Function2[/* x */ Uint8Array, /* n */ Double, Unit]): Unit
     
-    def sign(msg: Uint8Array, secretKey: Uint8Array): Uint8Array = js.native
+    def sign(msg: Uint8Array, secretKey: Uint8Array): Uint8Array
     @JSName("sign")
-    var sign_Original: sign = js.native
+    var sign_Original: sign
     
-    def verify(x: Uint8Array, y: Uint8Array): Boolean = js.native
+    def verify(x: Uint8Array, y: Uint8Array): Boolean
+  }
+  object nacl {
+    
+    @scala.inline
+    def apply(
+      box: box,
+      hash: hash,
+      randomBytes: Double => Uint8Array,
+      scalarMult: scalarMult,
+      secretbox: secretbox,
+      setPRNG: js.Function2[/* x */ Uint8Array, /* n */ Double, Unit] => Unit,
+      sign: sign,
+      verify: (Uint8Array, Uint8Array) => Boolean
+    ): nacl = {
+      val __obj = js.Dynamic.literal(box = box.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], randomBytes = js.Any.fromFunction1(randomBytes), scalarMult = scalarMult.asInstanceOf[js.Any], secretbox = secretbox.asInstanceOf[js.Any], setPRNG = js.Any.fromFunction1(setPRNG), sign = sign.asInstanceOf[js.Any], verify = js.Any.fromFunction2(verify))
+      __obj.asInstanceOf[nacl]
+    }
+    
+    @scala.inline
+    implicit class naclMutableBuilder[Self <: nacl] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBox(value: box): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHash(value: hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRandomBytes(value: Double => Uint8Array): Self = StObject.set(x, "randomBytes", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setScalarMult(value: scalarMult): Self = StObject.set(x, "scalarMult", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSecretbox(value: secretbox): Self = StObject.set(x, "secretbox", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSetPRNG(value: js.Function2[/* x */ Uint8Array, /* n */ Double, Unit] => Unit): Self = StObject.set(x, "setPRNG", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSign(value: sign): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVerify(value: (Uint8Array, Uint8Array) => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+    }
   }
   
   @js.native

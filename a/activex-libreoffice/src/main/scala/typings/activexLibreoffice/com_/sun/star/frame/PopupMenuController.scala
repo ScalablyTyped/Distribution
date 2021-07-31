@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,11 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * list gets changes consistently during a work session.
   * @since OOo 2.0
   */
-@js.native
 trait PopupMenuController
-  extends XStatusListener
+  extends StObject
      with XPopupMenuController
      with XInitialization
+     with XStatusListener
      with XDispatchProvider
      with XComponent
 object PopupMenuController {
@@ -37,7 +36,7 @@ object PopupMenuController {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     disposing: EventObject => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryDispatch: (URL, String, Double) => XDispatch,
     queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
     queryInterface: `type` => js.Any,

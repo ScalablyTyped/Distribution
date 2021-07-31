@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name
-@js.native
 trait I18n extends StObject {
   
   /** Internationalized strings that are formatted to the locale in configSettings. */
-  var rendererFormattedStrings: js.UndefOr[RendererFormattedStrings] = js.native
+  var rendererFormattedStrings: js.UndefOr[RendererFormattedStrings] = js.undefined
 }
 object I18n {
   

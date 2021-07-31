@@ -2,27 +2,27 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RotationalEquation extends Equation {
+trait RotationalEquation
+  extends StObject
+     with Equation {
   
-  var invIi: Mat3 = js.native
+  var invIi: Mat3
   
-  var invIj: Mat3 = js.native
+  var invIj: Mat3
   
-  var ni: Vec3 = js.native
+  var ni: Vec3
   
-  var nixnj: Vec3 = js.native
+  var nixnj: Vec3
   
-  var nj: Vec3 = js.native
+  var nj: Vec3
   
-  var njxni: Vec3 = js.native
+  var njxni: Vec3
   
-  var relForce: Vec3 = js.native
+  var relForce: Vec3
   
-  var relVel: Vec3 = js.native
+  var relVel: Vec3
 }
 object RotationalEquation {
   

@@ -2,30 +2,28 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColorPresentation extends StObject {
   
   /**
     * An optional array of additional [text edits](#TextEdit) that are applied when
     * selecting this color presentation.
     */
-  var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.native
+  var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
   
   /**
     * The label of this color presentation. It will be shown on the color
     * picker header. By default this is also the text that is inserted when selecting
     * this color presentation.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * An [edit](#TextEdit) which is applied to a document when selecting
     * this presentation for the color.
     */
-  var textEdit: js.UndefOr[TextEdit] = js.native
+  var textEdit: js.UndefOr[TextEdit] = js.undefined
 }
 object IColorPresentation {
   

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,7 +16,7 @@ object mod extends Shortcut {
   type Attributes[T] = Definition[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: factory-girl.factory-girl.Definition<T[P]>}
-    */ typings.factoryGirl.factoryGirlStrings.Attributes with TopLevel[T]
+    */ typings.factoryGirl.factoryGirlStrings.Attributes & TopLevel[T]
   ]
   
   type Definition[T] = T | Generator[T]
@@ -26,12 +25,11 @@ object mod extends Shortcut {
   
   type Hook[T] = js.Function3[/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any, Unit]
   
-  @js.native
   trait Options[T] extends StObject {
     
-    var afterBuild: js.UndefOr[Hook[T]] = js.native
+    var afterBuild: js.UndefOr[Hook[T]] = js.undefined
     
-    var afterCreate: js.UndefOr[Hook[T]] = js.native
+    var afterCreate: js.UndefOr[Hook[T]] = js.undefined
   }
   object Options {
     
@@ -42,7 +40,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setAfterBuild(value: (/* model */ js.Any, /* attrs */ js.Array[T], /* options */ js.Any) => Unit): Self = StObject.set(x, "afterBuild", js.Any.fromFunction3(value))
@@ -70,14 +68,14 @@ object mod extends Shortcut {
       * Associate the factory to a model that's not persisted
       */
     def assocAttrs(name: String): js.Any = js.native
-    def assocAttrs(name: String, key: js.UndefOr[scala.Nothing], attributes: js.Any): js.Any = js.native
     def assocAttrs(name: String, key: String): js.Any = js.native
     def assocAttrs(name: String, key: String, attributes: js.Any): js.Any = js.native
+    def assocAttrs(name: String, key: Unit, attributes: js.Any): js.Any = js.native
     
     /**
       * Associate the factory to multiple other models
       */
-    def assocMany(model: String, num: Double, attributes: String): js.Array[_] = js.native
+    def assocMany(model: String, num: Double, attributes: String): js.Array[js.Any] = js.native
     
     /**
       * Generates and returns model attributes as an object hash instead of the model instance
@@ -117,15 +115,16 @@ object mod extends Shortcut {
     def create[T](name: String, attrs: Attributes[Partial[T]]): js.Promise[T] = js.native
     
     def createMany[T](name: String): js.Promise[js.Array[T]] = js.native
-    def createMany[T](name: String, attrs: js.UndefOr[scala.Nothing], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
     def createMany[T](name: String, attrs: js.Array[Attributes[Partial[T]]]): js.Promise[js.Array[T]] = js.native
     def createMany[T](name: String, attrs: js.Array[Attributes[Partial[T]]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
+    def createMany[T](name: String, attrs: Unit, buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
     /**
       * Builds an array of model instances that are persisted
       */
     def createMany[T](name: String, num: Double): js.Promise[js.Array[T]] = js.native
-    def createMany[T](name: String, num: Double, attrs: js.UndefOr[Attributes[Partial[T]]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
+    def createMany[T](name: String, num: Double, attrs: Unit, buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
     def createMany[T](name: String, num: Double, attrs: Attributes[Partial[T]]): js.Promise[js.Array[T]] = js.native
+    def createMany[T](name: String, num: Double, attrs: Attributes[Partial[T]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
     
     /**
       * Define a new factory with a set of options
@@ -137,7 +136,7 @@ object mod extends Shortcut {
       * Extends a factory
       */
     def extend(parent: String, name: String, initializer: js.Any): js.Any = js.native
-    def extend(parent: String, name: String, initializer: js.Any, options: Options[_]): js.Any = js.native
+    def extend(parent: String, name: String, initializer: js.Any, options: Options[js.Any]): js.Any = js.native
     
     def resetSeq(): Unit = js.native
     def resetSeq(name: String): Unit = js.native

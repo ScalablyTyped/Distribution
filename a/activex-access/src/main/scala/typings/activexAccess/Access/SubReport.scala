@@ -2,24 +2,22 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubReport extends StObject {
   
   @JSName("Access.SubReport_typekey")
-  var AccessDotSubReport_typekey: SubReport = js.native
+  var AccessDotSubReport_typekey: SubReport
   
-  val Application: typings.activexAccess.Access.Application = js.native
+  val Application: typings.activexAccess.Access.Application
   
-  val Form: typings.activexAccess.Access.Form = js.native
+  val Form: typings.activexAccess.Access.Form
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Report: typings.activexAccess.Access.Report = js.native
+  val Report: typings.activexAccess.Access.Report
 }
 object SubReport {
   

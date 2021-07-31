@@ -11,7 +11,6 @@ import typings.stripe.mod.issuing.cardholders.ICardholderListOptions
 import typings.stripe.mod.issuing.cardholders.ICardholderUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Cardholders")

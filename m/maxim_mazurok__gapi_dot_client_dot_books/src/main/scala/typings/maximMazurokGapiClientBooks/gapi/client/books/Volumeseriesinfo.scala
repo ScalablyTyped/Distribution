@@ -3,22 +3,20 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 import typings.maximMazurokGapiClientBooks.anon.Issue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volumeseriesinfo extends StObject {
   
   /** The display number string. This should be used only for display purposes and the actual sequence should be inferred from the below orderNumber. */
-  var bookDisplayNumber: js.UndefOr[String] = js.native
+  var bookDisplayNumber: js.UndefOr[String] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Short book title in the context of the series. */
-  var shortSeriesBookTitle: js.UndefOr[String] = js.native
+  var shortSeriesBookTitle: js.UndefOr[String] = js.undefined
   
-  var volumeSeries: js.UndefOr[js.Array[Issue]] = js.native
+  var volumeSeries: js.UndefOr[js.Array[Issue]] = js.undefined
 }
 object Volumeseriesinfo {
   

@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,15 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see AssociationOptions
   */
-@js.native
-trait AssociationForeignKeyOptions extends ColumnOptions {
+trait AssociationForeignKeyOptions
+  extends StObject
+     with ColumnOptions {
   
   /**
     *  Attribute name for the relation
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var unique: js.UndefOr[Boolean | String] = js.native
+  var unique: js.UndefOr[Boolean | String] = js.undefined
 }
 object AssociationForeignKeyOptions {
   

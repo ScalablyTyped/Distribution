@@ -2,11 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsxOpeningFragment extends Expression {
+trait JsxOpeningFragment
+  extends StObject
+     with Expression {
   
   @JSName("kind")
   val kind_JsxOpeningFragment: typings.typescript.mod.SyntaxKind.JsxOpeningFragment = js.native

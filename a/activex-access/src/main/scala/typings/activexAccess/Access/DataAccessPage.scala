@@ -3,52 +3,50 @@ package typings.activexAccess.Access
 import typings.activexOffice.Office.MsoEnvelope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataAccessPage extends StObject {
   
   @JSName("Access.DataAccessPage_typekey")
-  var AccessDotDataAccessPage_typekey: DataAccessPage = js.native
+  var AccessDotDataAccessPage_typekey: DataAccessPage
   
-  val Application: typings.activexAccess.Access.Application = js.native
+  val Application: typings.activexAccess.Access.Application
   
-  def ApplyTheme(ThemeName: String): Unit = js.native
+  def ApplyTheme(ThemeName: String): Unit
   
-  var ConnectionString: String = js.native
+  var ConnectionString: String
   
-  val CurrentSelection: js.Any = js.native
+  val CurrentSelection: js.Any
   
-  val CurrentView: Double = js.native
+  val CurrentView: Double
   
-  val Document: js.Any = js.native
+  val Document: js.Any
   
-  val FieldListConnection: js.Any = js.native
+  val FieldListConnection: js.Any
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val MSODSC: js.Any = js.native
+  val MSODSC: js.Any
   
-  val MailEnvelope: MsoEnvelope = js.native
+  val MailEnvelope: MsoEnvelope
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RemovePersonalInformation: Boolean = js.native
+  var RemovePersonalInformation: Boolean
   
-  var Tag: String = js.native
+  var Tag: String
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
-  val WebOptions: typings.activexAccess.Access.WebOptions = js.native
+  val WebOptions: typings.activexAccess.Access.WebOptions
   
-  val WindowHeight: Double = js.native
+  val WindowHeight: Double
   
-  val WindowWidth: Double = js.native
+  val WindowWidth: Double
   
-  val _Name: String = js.native
+  val _Name: String
 }
 object DataAccessPage {
   

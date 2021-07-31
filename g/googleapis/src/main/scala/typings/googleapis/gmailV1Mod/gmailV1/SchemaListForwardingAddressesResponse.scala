@@ -2,19 +2,17 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the ListForwardingAddresses method.
   */
-@js.native
 trait SchemaListForwardingAddressesResponse extends StObject {
   
   /**
     * List of addresses that may be used for forwarding.
     */
-  var forwardingAddresses: js.UndefOr[js.Array[SchemaForwardingAddress]] = js.native
+  var forwardingAddresses: js.UndefOr[js.Array[SchemaForwardingAddress]] = js.undefined
 }
 object SchemaListForwardingAddressesResponse {
   

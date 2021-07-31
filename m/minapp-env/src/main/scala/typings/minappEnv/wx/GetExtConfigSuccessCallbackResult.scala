@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExtConfigSuccessCallbackResult extends StObject {
   
   /** 第三方平台自定义的数据 */
-  var extConfig: js.Object = js.native
+  var extConfig: js.Object
 }
 object GetExtConfigSuccessCallbackResult {
   

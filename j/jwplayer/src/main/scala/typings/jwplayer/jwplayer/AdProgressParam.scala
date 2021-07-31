@@ -4,17 +4,15 @@ import typings.jwplayer.jwplayerStrings.googima
 import typings.jwplayer.jwplayerStrings.vast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdProgressParam extends StObject {
   
-  var client: vast | googima = js.native
+  var client: vast | googima
   
-  var creativetype: String = js.native
+  var creativetype: String
   
-  var tag: String = js.native
+  var tag: String
 }
 object AdProgressParam {
   

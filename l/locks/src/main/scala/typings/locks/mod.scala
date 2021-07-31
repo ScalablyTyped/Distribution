@@ -3,10 +3,13 @@ package typings.locks
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("locks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("locks", "CondVariable")
   @js.native
@@ -94,19 +97,15 @@ object mod {
     def wait(callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @JSImport("locks", "createCondVariable")
-  @js.native
-  def createCondVariable(initialValue: js.Any): CondVariable = js.native
+  @scala.inline
+  def createCondVariable(initialValue: js.Any): CondVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createCondVariable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[CondVariable]
   
-  @JSImport("locks", "createMutex")
-  @js.native
-  def createMutex(): Mutex = js.native
+  @scala.inline
+  def createMutex(): Mutex = ^.asInstanceOf[js.Dynamic].applyDynamic("createMutex")().asInstanceOf[Mutex]
   
-  @JSImport("locks", "createReadWriteLock")
-  @js.native
-  def createReadWriteLock(): ReadWriteLock = js.native
+  @scala.inline
+  def createReadWriteLock(): ReadWriteLock = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadWriteLock")().asInstanceOf[ReadWriteLock]
   
-  @JSImport("locks", "createSemaphore")
-  @js.native
-  def createSemaphore(initialValue: Double): Semaphore = js.native
+  @scala.inline
+  def createSemaphore(initialValue: Double): Semaphore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSemaphore")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Semaphore]
 }

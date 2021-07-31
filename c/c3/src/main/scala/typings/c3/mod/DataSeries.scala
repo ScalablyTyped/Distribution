@@ -2,17 +2,15 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSeries extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var id_org: js.UndefOr[String] = js.native
+  var id_org: js.UndefOr[String] = js.undefined
   
-  var values: js.Array[DataPoint] = js.native
+  var values: js.Array[DataPoint]
 }
 object DataSeries {
   

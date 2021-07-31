@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateContactResponse extends StObject {
   
   /**
     * The ARN of the newly created address book.
     */
-  var ContactArn: js.UndefOr[Arn] = js.native
+  var ContactArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateContactResponse {
   

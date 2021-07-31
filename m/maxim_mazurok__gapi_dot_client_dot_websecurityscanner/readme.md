@@ -10,9 +10,9 @@ TypeScript typings for Web Security Scanner API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.websecurityscanner |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 43 |
+| # downloads        | 1004 |
 | # stars            | 0 |
 
 ## Links

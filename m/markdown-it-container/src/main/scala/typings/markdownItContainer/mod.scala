@@ -1,39 +1,39 @@
 package typings.markdownItContainer
 
 import typings.markdownIt.libMod.MarkdownIt
-import typings.markdownIt.tokenMod.^
 import typings.markdownItContainer.mod.markdownItContainer.ContainerOpts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* was `typeof markdownItContainer.container_plugin` */
+  @scala.inline
+  def apply(md: MarkdownIt, name: String, opts: ContainerOpts): Unit = (^.asInstanceOf[js.Dynamic].apply(md.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("markdown-it-container", JSImport.Namespace)
   @js.native
-  def apply(md: MarkdownIt, name: String, opts: ContainerOpts): Unit = js.native
+  val ^ : js.Any = js.native
   
   object markdownItContainer {
     
-    @js.native
     trait ContainerOpts extends StObject {
       
-      var marker: js.UndefOr[String] = js.native
+      var marker: js.UndefOr[String] = js.undefined
       
       var render: js.UndefOr[
             js.Function5[
-              /* tokens */ js.Array[^], 
+              /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
               /* index */ Double, 
               /* options */ js.Any, 
               /* env */ js.Any, 
               /* self */ typings.markdownIt.rendererMod.^, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var validate: js.UndefOr[js.Function1[/* params */ String, Boolean]] = js.native
+      var validate: js.UndefOr[js.Function1[/* params */ String, Boolean]] = js.undefined
     }
     object ContainerOpts {
       
@@ -54,7 +54,7 @@ object mod {
         
         @scala.inline
         def setRender(
-          value: (/* tokens */ js.Array[^], /* index */ Double, /* options */ js.Any, /* env */ js.Any, /* self */ typings.markdownIt.rendererMod.^) => Unit
+          value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* index */ Double, /* options */ js.Any, /* env */ js.Any, /* self */ typings.markdownIt.rendererMod.^) => Unit
         ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
         
         @scala.inline

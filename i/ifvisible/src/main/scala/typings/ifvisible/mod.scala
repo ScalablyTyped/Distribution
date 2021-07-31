@@ -3,7 +3,6 @@ package typings.ifvisible
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,28 +11,27 @@ object mod extends Shortcut {
   @js.native
   val ^ : IfVisible = js.native
   
-  @js.native
   trait IdleInfo extends StObject {
     
     /**
       * How long was the page idle in milliseconds
       */
-    var idleFor: Double = js.native
+    var idleFor: Double
     
     /**
       * if page idle now?
       */
-    var isIdle: Boolean = js.native
+    var isIdle: Boolean
     
     /**
       * How much time left to become idle in milliseconds
       */
-    var timeLeft: Double = js.native
+    var timeLeft: Double
     
     /**
       * How much time left to become idle represented as percentage
       */
-    var timeLeftPer: String = js.native
+    var timeLeftPer: String
   }
   object IdleInfo {
     
@@ -138,33 +136,32 @@ object mod extends Shortcut {
     def wakeup(callback: js.Function0[Unit]): IfVisible = js.native
   }
   
-  @js.native
   trait OnEveryReturn extends StObject {
     
     /**
       * Callback function you passed to onEvery
       */
-    def callback(): Unit = js.native
+    def callback(): Unit
     
     /**
       * Timer Id of setInterval
       */
-    var code: Double = js.native
+    var code: Double
     
     /**
       * Pauses the interval, it's resumable
       */
-    def pause(): Boolean = js.native
+    def pause(): Boolean
     
     /**
       * Resumes paused interval
       */
-    def resume(): Boolean = js.native
+    def resume(): Boolean
     
     /**
       * Stop the interval, you cannot resume
       */
-    def stop(): Boolean = js.native
+    def stop(): Boolean
   }
   object OnEveryReturn {
     

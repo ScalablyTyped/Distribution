@@ -11,30 +11,28 @@ import typings.yandexMaps.yandexMapsStrings.right
 import typings.yandexMaps.yandexMapsStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined yandex-maps.yandex-maps.control.IBaseButtonParametersOptions & {  selectOnClick :boolean | undefined,   size :'auto' | 'small' | 'medium' | 'large' | undefined} */
-@js.native
 trait IBaseButtonParametersOpti extends StObject {
   
-  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[none | left | right] = js.native
+  var float: js.UndefOr[none | left | right] = js.undefined
   
-  var floatIndex: js.UndefOr[Double] = js.native
+  var floatIndex: js.UndefOr[Double] = js.undefined
   
-  var layout: js.UndefOr[IClassConstructor[ISelectableControlLayout] | String] = js.native
+  var layout: js.UndefOr[IClassConstructor[ISelectableControlLayout] | String] = js.undefined
   
-  var maxWidth: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var maxWidth: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
   
-  var position: js.UndefOr[Bottom] = js.native
+  var position: js.UndefOr[Bottom] = js.undefined
   
-  var selectOnClick: js.UndefOr[Boolean] = js.native
+  var selectOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[auto | small | medium | large] = js.native
+  var size: js.UndefOr[auto | small | medium | large] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IBaseButtonParametersOpti {
   

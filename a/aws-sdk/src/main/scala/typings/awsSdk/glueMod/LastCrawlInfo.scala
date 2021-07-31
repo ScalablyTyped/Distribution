@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastCrawlInfo extends StObject {
   
   /**
     * If an error occurred, the error information about the last crawl.
     */
-  var ErrorMessage: js.UndefOr[DescriptionString] = js.native
+  var ErrorMessage: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The log group for the last crawl.
     */
-  var LogGroup: js.UndefOr[typings.awsSdk.glueMod.LogGroup] = js.native
+  var LogGroup: js.UndefOr[typings.awsSdk.glueMod.LogGroup] = js.undefined
   
   /**
     * The log stream for the last crawl.
     */
-  var LogStream: js.UndefOr[typings.awsSdk.glueMod.LogStream] = js.native
+  var LogStream: js.UndefOr[typings.awsSdk.glueMod.LogStream] = js.undefined
   
   /**
     * The prefix for a message about this crawl.
     */
-  var MessagePrefix: js.UndefOr[typings.awsSdk.glueMod.MessagePrefix] = js.native
+  var MessagePrefix: js.UndefOr[typings.awsSdk.glueMod.MessagePrefix] = js.undefined
   
   /**
     * The time at which the crawl started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Status of the last crawl.
     */
-  var Status: js.UndefOr[LastCrawlStatus] = js.native
+  var Status: js.UndefOr[LastCrawlStatus] = js.undefined
 }
 object LastCrawlInfo {
   

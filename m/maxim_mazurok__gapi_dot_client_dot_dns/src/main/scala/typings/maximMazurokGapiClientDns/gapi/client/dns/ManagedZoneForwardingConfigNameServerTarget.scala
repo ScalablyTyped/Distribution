@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZoneForwardingConfigNameServerTarget extends StObject {
   
   /**
     * Forwarding path for this NameServerTarget. If unset or set to DEFAULT, Cloud DNS will make forwarding decision based on address ranges, i.e. RFC1918 addresses go to the VPC,
     * non-RFC1918 addresses go to the Internet. When set to PRIVATE, Cloud DNS will always send queries through VPC for this target.
     */
-  var forwardingPath: js.UndefOr[String] = js.native
+  var forwardingPath: js.UndefOr[String] = js.undefined
   
   /** IPv4 address of a target name server. */
-  var ipv4Address: js.UndefOr[String] = js.native
+  var ipv4Address: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ManagedZoneForwardingConfigNameServerTarget {
   

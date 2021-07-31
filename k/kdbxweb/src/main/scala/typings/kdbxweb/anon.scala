@@ -9,17 +9,15 @@ import typings.kdbxweb.kdbxwebStrings.NotImplemented
 import typings.kdbxweb.kdbxwebStrings.Unsupported
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aes extends StObject {
     
-    var Aes: String = js.native
+    var Aes: String
     
-    var ChaCha20: String = js.native
+    var ChaCha20: String
   }
   object Aes {
     
@@ -40,146 +38,145 @@ object anon {
     }
   }
   
-  @js.native
   trait Apple extends StObject {
     
-    var Apple: Double = js.native
+    var Apple: Double
     
-    var Archive: Double = js.native
+    var Archive: Double
     
-    var BlackBerry: Double = js.native
+    var BlackBerry: Double
     
-    var Book: Double = js.native
+    var Book: Double
     
-    var CDRom: Double = js.native
+    var CDRom: Double
     
-    var Certificate: Double = js.native
+    var Certificate: Double
     
-    var Checked: Double = js.native
+    var Checked: Double
     
-    var ClipboardReady: Double = js.native
+    var ClipboardReady: Double
     
-    var Clock: Double = js.native
+    var Clock: Double
     
-    var Configuration: Double = js.native
+    var Configuration: Double
     
-    var Console: Double = js.native
+    var Console: Double
     
-    var Digicam: Double = js.native
+    var Digicam: Double
     
-    var Disk: Double = js.native
+    var Disk: Double
     
-    var Drive: Double = js.native
+    var Drive: Double
     
-    var DriveWindows: Double = js.native
+    var DriveWindows: Double
     
-    var EMail: Double = js.native
+    var EMail: Double
     
-    var EMailBox: Double = js.native
+    var EMailBox: Double
     
-    var EMailSearch: Double = js.native
+    var EMailSearch: Double
     
-    var Energy: Double = js.native
+    var Energy: Double
     
-    var EnergyCareful: Double = js.native
+    var EnergyCareful: Double
     
-    var Expired: Double = js.native
+    var Expired: Double
     
-    var Feather: Double = js.native
+    var Feather: Double
     
-    var Folder: Double = js.native
+    var Folder: Double
     
-    var FolderOpen: Double = js.native
+    var FolderOpen: Double
     
-    var FolderPackage: Double = js.native
+    var FolderPackage: Double
     
-    var Home: Double = js.native
+    var Home: Double
     
-    var Homebanking: Double = js.native
+    var Homebanking: Double
     
-    var IRCommunication: Double = js.native
+    var IRCommunication: Double
     
-    var Identity: Double = js.native
+    var Identity: Double
     
-    var Info: Double = js.native
+    var Info: Double
     
-    var Key: Double = js.native
+    var Key: Double
     
-    var List: Double = js.native
+    var List: Double
     
-    var LockOpen: Double = js.native
+    var LockOpen: Double
     
-    var MarkedDirectory: Double = js.native
+    var MarkedDirectory: Double
     
-    var Memory: Double = js.native
+    var Memory: Double
     
-    var Money: Double = js.native
+    var Money: Double
     
-    var Monitor: Double = js.native
+    var Monitor: Double
     
-    var MultiKeys: Double = js.native
+    var MultiKeys: Double
     
-    var NetworkServer: Double = js.native
+    var NetworkServer: Double
     
-    var Note: Double = js.native
+    var Note: Double
     
-    var Notepad: Double = js.native
+    var Notepad: Double
     
-    var Package: Double = js.native
+    var Package: Double
     
-    var PaperFlag: Double = js.native
+    var PaperFlag: Double
     
-    var PaperLocked: Double = js.native
+    var PaperLocked: Double
     
-    var PaperNew: Double = js.native
+    var PaperNew: Double
     
-    var PaperQ: Double = js.native
+    var PaperQ: Double
     
-    var PaperReady: Double = js.native
+    var PaperReady: Double
     
-    var Parts: Double = js.native
+    var Parts: Double
     
-    var Pen: Double = js.native
+    var Pen: Double
     
-    var Printer: Double = js.native
+    var Printer: Double
     
-    var ProgramIcons: Double = js.native
+    var ProgramIcons: Double
     
-    var Run: Double = js.native
+    var Run: Double
     
-    var Scanner: Double = js.native
+    var Scanner: Double
     
-    var Screen: Double = js.native
+    var Screen: Double
     
-    var Settings: Double = js.native
+    var Settings: Double
     
-    var Star: Double = js.native
+    var Star: Double
     
-    var TerminalEncrypted: Double = js.native
+    var TerminalEncrypted: Double
     
-    var Thumbnail: Double = js.native
+    var Thumbnail: Double
     
-    var Tool: Double = js.native
+    var Tool: Double
     
-    var TrashBin: Double = js.native
+    var TrashBin: Double
     
-    var Tux: Double = js.native
+    var Tux: Double
     
-    var UserCommunication: Double = js.native
+    var UserCommunication: Double
     
-    var UserKey: Double = js.native
+    var UserKey: Double
     
-    var Warning: Double = js.native
+    var Warning: Double
     
-    var Wiki: Double = js.native
+    var Wiki: Double
     
-    var World: Double = js.native
+    var World: Double
     
-    var WorldComputer: Double = js.native
+    var WorldComputer: Double
     
-    var WorldSocket: Double = js.native
+    var WorldSocket: Double
     
-    var WorldStar: Double = js.native
+    var WorldStar: Double
   }
   object Apple {
     
@@ -471,16 +468,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ArcFourVariant extends StObject {
     
-    var ArcFourVariant: Double = js.native
+    var ArcFourVariant: Double
     
-    var ChaCha20: Double = js.native
+    var ChaCha20: Double
     
-    var Null: Double = js.native
+    var Null: Double
     
-    var Salsa20: Double = js.native
+    var Salsa20: Double
   }
   object ArcFourVariant {
     
@@ -507,12 +503,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Argon2 extends StObject {
     
-    var Aes: String = js.native
+    var Aes: String
     
-    var Argon2: String = js.native
+    var Argon2: String
   }
   object Argon2 {
     
@@ -533,39 +528,29 @@ object anon {
     }
   }
   
-  @js.native
   trait BadSignature extends StObject {
     
-    var BadSignature: typings.kdbxweb.kdbxwebStrings.BadSignature = js.native
+    var BadSignature: typings.kdbxweb.kdbxwebStrings.BadSignature
     
-    var FileCorrupt: typings.kdbxweb.kdbxwebStrings.FileCorrupt = js.native
+    var FileCorrupt: typings.kdbxweb.kdbxwebStrings.FileCorrupt
     
-    var InvalidArg: typings.kdbxweb.kdbxwebStrings.InvalidArg = js.native
+    var InvalidArg: typings.kdbxweb.kdbxwebStrings.InvalidArg
     
-    var InvalidKey: typings.kdbxweb.kdbxwebStrings.InvalidKey = js.native
+    var InvalidKey: typings.kdbxweb.kdbxwebStrings.InvalidKey
     
-    var InvalidVersion: typings.kdbxweb.kdbxwebStrings.InvalidVersion = js.native
+    var InvalidVersion: typings.kdbxweb.kdbxwebStrings.InvalidVersion
     
-    var MergeError: typings.kdbxweb.kdbxwebStrings.MergeError = js.native
+    var MergeError: typings.kdbxweb.kdbxwebStrings.MergeError
     
-    var NotImplemented: typings.kdbxweb.kdbxwebStrings.NotImplemented = js.native
+    var NotImplemented: typings.kdbxweb.kdbxwebStrings.NotImplemented
     
-    var Unsupported: typings.kdbxweb.kdbxwebStrings.Unsupported = js.native
+    var Unsupported: typings.kdbxweb.kdbxwebStrings.Unsupported
   }
   object BadSignature {
     
     @scala.inline
-    def apply(
-      BadSignature: typings.kdbxweb.kdbxwebStrings.BadSignature,
-      FileCorrupt: FileCorrupt,
-      InvalidArg: InvalidArg,
-      InvalidKey: InvalidKey,
-      InvalidVersion: InvalidVersion,
-      MergeError: MergeError,
-      NotImplemented: NotImplemented,
-      Unsupported: Unsupported
-    ): BadSignature = {
-      val __obj = js.Dynamic.literal(BadSignature = BadSignature.asInstanceOf[js.Any], FileCorrupt = FileCorrupt.asInstanceOf[js.Any], InvalidArg = InvalidArg.asInstanceOf[js.Any], InvalidKey = InvalidKey.asInstanceOf[js.Any], InvalidVersion = InvalidVersion.asInstanceOf[js.Any], MergeError = MergeError.asInstanceOf[js.Any], NotImplemented = NotImplemented.asInstanceOf[js.Any], Unsupported = Unsupported.asInstanceOf[js.Any])
+    def apply(): BadSignature = {
+      val __obj = js.Dynamic.literal(BadSignature = "BadSignature", FileCorrupt = "FileCorrupt", InvalidArg = "InvalidArg", InvalidKey = "InvalidKey", InvalidVersion = "InvalidVersion", MergeError = "MergeError", NotImplemented = "NotImplemented", Unsupported = "Unsupported")
       __obj.asInstanceOf[BadSignature]
     }
     
@@ -598,22 +583,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Bool extends StObject {
     
-    var Bool: Double = js.native
+    var Bool: Double
     
-    var Bytes: Double = js.native
+    var Bytes: Double
     
-    var Int32: Double = js.native
+    var Int32: Double
     
-    var Int64: Double = js.native
+    var Int64: Double
     
-    var String: Double = js.native
+    var String: Double
     
-    var UInt32: Double = js.native
+    var UInt32: Double
     
-    var UInt64: Double = js.native
+    var UInt64: Double
   }
   object Bool {
     
@@ -657,16 +641,15 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultSequence extends StObject {
     
-    var defaultSequence: String = js.native
+    var defaultSequence: String
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var items: KeystrokeSequence = js.native
+    var items: KeystrokeSequence
     
-    var obfuscation: Double = js.native
+    var obfuscation: Double
   }
   object DefaultSequence {
     
@@ -693,14 +676,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FileMagic extends StObject {
     
-    var FileMagic: Double = js.native
+    var FileMagic: Double
     
-    var Sig2Kdb: Double = js.native
+    var Sig2Kdb: Double
     
-    var Sig2Kdbx: Double = js.native
+    var Sig2Kdbx: Double
   }
   object FileMagic {
     
@@ -724,12 +706,11 @@ object anon {
     }
   }
   
-  @js.native
   trait GZip extends StObject {
     
-    var GZip: Double = js.native
+    var GZip: Double
     
-    var None: Double = js.native
+    var None: Double
   }
   object GZip {
     
@@ -750,18 +731,17 @@ object anon {
     }
   }
   
-  @js.native
   trait HistoryMaxItems extends StObject {
     
-    var HistoryMaxItems: Double = js.native
+    var HistoryMaxItems: Double
     
-    var HistoryMaxSize: Double = js.native
+    var HistoryMaxSize: Double
     
-    var KeyEncryptionRounds: Double = js.native
+    var KeyEncryptionRounds: Double
     
-    var MntncHistoryDays: Double = js.native
+    var MntncHistoryDays: Double
     
-    var RecycleBinName: String = js.native
+    var RecycleBinName: String
   }
   object HistoryMaxItems {
     
@@ -797,12 +777,11 @@ object anon {
     }
   }
   
-  @js.native
   trait KeystrokeSequence extends StObject {
     
-    var keystrokeSequence: String = js.native
+    var keystrokeSequence: String
     
-    var windows: String = js.native
+    var windows: String
   }
   object KeystrokeSequence {
     
@@ -823,12 +802,11 @@ object anon {
     }
   }
   
-  @js.native
   trait None extends StObject {
     
-    var None: Double = js.native
+    var None: Double
     
-    var UseClipboard: Double = js.native
+    var UseClipboard: Double
   }
   object None {
     

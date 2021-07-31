@@ -2,7 +2,6 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,21 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `projects.agent.knowledgeBases` is deprecated, please use
   * `projects.knowledgeBases` instead.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1KnowledgeBase extends StObject {
   
   /**
     * Required. The display name of the knowledge base. The name must be 1024
     * bytes or less; otherwise, the creation request fails.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The knowledge base resource name. The name must be empty when creating a
     * knowledge base. Format: `projects/&lt;Project
     * ID&gt;/knowledgeBases/&lt;Knowledge Base ID&gt;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeBase {
   

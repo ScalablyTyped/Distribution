@@ -4,12 +4,15 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object plupload {
+    
+    @JSGlobal("plupload")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSGlobal("plupload.DONE")
     @js.native
@@ -82,7 +85,8 @@ object global {
     @JSGlobal("plupload.Uploader")
     @js.native
     class Uploader protected ()
-      extends typings.plupload.plupload.Uploader {
+      extends StObject
+         with typings.plupload.plupload.Uploader {
       def this(settings: pluploadSettings) = this()
     }
     
@@ -98,9 +102,8 @@ object global {
       * @param {Object} obj DOM element like object to add handler to.
       * @param {String} name Class name
       */
-    @JSGlobal("plupload.addClass")
-    @js.native
-    def addClass(obj: js.Any, name: String): js.Any = js.native
+    @scala.inline
+    def addClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Adds an event handler to the specified object and store reference to the handler
@@ -113,12 +116,10 @@ object global {
       * @param {Function} callback Function to call when event occurs.
       * @param {String} (optional) key that might be used to add specifity to the event record.
       */
-    @JSGlobal("plupload.addEvent")
-    @js.native
-    def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = js.native
-    @JSGlobal("plupload.addEvent")
-    @js.native
-    def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = js.native
+    @scala.inline
+    def addEvent(obj: js.Any, name: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def addEvent(obj: js.Any, name: String, callback: js.Function, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Registers a filter that will be executed for each file added to the queue.
@@ -132,9 +133,8 @@ object global {
       * @param {String} name Name of the filter by which it can be referenced in settings.filters
       * @param {String} cb Callback - the actual routine that every added file must pass
       */
-    @JSGlobal("plupload.addFileFilter")
-    @js.native
-    def addFileFilter(name: String, cb: js.Function): Unit = js.native
+    @scala.inline
+    def addFileFilter(name: String, cb: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFileFilter")(name.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Extends the language pack object with new items.
@@ -144,9 +144,8 @@ object global {
       * @param {Object} pack Language pack items to add.
       * @return {Object} Extended language pack object.
       */
-    @JSGlobal("plupload.addI18n")
-    @js.native
-    def addI18n(pack: js.Any): js.Any = js.native
+    @scala.inline
+    def addI18n(pack: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addI18n")(pack.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Builds a full url out of a base URL and an object with items to append as query string items.
@@ -157,9 +156,8 @@ object global {
       * @param {Object} items Name/value object to serialize as a querystring.
       * @return {String} String with url + serialized query string items.
       */
-    @JSGlobal("plupload.buildUrl")
-    @js.native
-    def buildUrl(url: String, items: js.Any): String = js.native
+    @scala.inline
+    def buildUrl(url: String, items: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrl")(url.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Cleans the specified name from national characters (diacritics). The result will be a name with only a-z, 0-9 and _.
@@ -169,9 +167,8 @@ object global {
       * @param {String} s String to clean up.
       * @return {String} Cleaned string.
       */
-    @JSGlobal("plupload.cleanName")
-    @js.native
-    def cleanName(name: String): String = js.native
+    @scala.inline
+    def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Utility methods **/
     /**
@@ -183,9 +180,8 @@ object global {
       * @param {Object} obj Object to iterate.
       * @param {function} callback Callback function to execute for each item.
       */
-    @JSGlobal("plupload.each")
-    @js.native
-    def each(obj: js.Any, callback: js.Function): Unit = js.native
+    @scala.inline
+    def each(obj: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Extends the specified object with another object.
@@ -196,9 +192,8 @@ object global {
       * @param {Object..} obj Multiple objects to extend with.
       * @return {Object} Same as target, the extended object.
       */
-    @JSGlobal("plupload.extend")
-    @js.native
-    def extend(target: js.Any): js.Any = js.native
+    @scala.inline
+    def extend(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Formats the specified number as a size string for example 1024 becomes 1 KB.
@@ -208,9 +203,8 @@ object global {
       * @param {Number} size Size to format as string.
       * @return {String} Formatted size string.
       */
-    @JSGlobal("plupload.formatSize")
-    @js.native
-    def formatSize(size: Double): String = js.native
+    @scala.inline
+    def formatSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns the absolute x, y position of an Element. The position will be returned in a object with x, y fields.
@@ -221,9 +215,8 @@ object global {
       * @param {Element} root Optional root element to stop calculations at.
       * @return {object} Absolute position of the specified element object with x, y fields.
       */
-    @JSGlobal("plupload.getPos")
-    @js.native
-    def getPos(node: Element, root: Element): js.Any = js.native
+    @scala.inline
+    def getPos(node: Element, root: Element): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPos")(node.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Returns the size of the specified node in pixels.
@@ -233,9 +226,8 @@ object global {
       * @param {Node} node Node to get the size of.
       * @return {Object} Object with a w and h property.
       */
-    @JSGlobal("plupload.getSize")
-    @js.native
-    def getSize(node: Node): js.Any = js.native
+    @scala.inline
+    def getSize(node: Node): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSize")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Returns a given computed style of a DOM element.
@@ -245,9 +237,8 @@ object global {
       * @param {Object} obj DOM element like object.
       * @param {String} name Style you want to get from the DOM element
       */
-    @JSGlobal("plupload.getStyle")
-    @js.native
-    def getStyle(obj: js.Any, name: String): js.Any = js.native
+    @scala.inline
+    def getStyle(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyle")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Generates an unique ID. This is 99.99% unique since it takes the current time and 5 random numbers.
@@ -260,9 +251,8 @@ object global {
       * @static
       * @return {String} Virtually unique id.
       */
-    @JSGlobal("plupload.guid")
-    @js.native
-    def guid(guid: String): String = js.native
+    @scala.inline
+    def guid(guid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("guid")(guid.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Checks if specified DOM element has specified class.
@@ -272,9 +262,8 @@ object global {
       * @param {Object} obj DOM element like object to add handler to.
       * @param {String} name Class name
       */
-    @JSGlobal("plupload.hasClass")
-    @js.native
-    def hasClass(obj: js.Any, name: String): js.Any = js.native
+    @scala.inline
+    def hasClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Find an element in array and return its index if present, otherwise return -1.
@@ -285,9 +274,8 @@ object global {
       * @param {Array} array
       * @return {Int} Index of the element, or -1 if not found
       */
-    @JSGlobal("plupload.inArray")
-    @js.native
-    def inArray(needle: js.Any, array: js.Array[_]): Double = js.native
+    @scala.inline
+    def inArray(needle: js.Any, array: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(needle.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       Recieve an array of functions (usually async) to call in sequence, each  function
@@ -300,9 +288,8 @@ object global {
       @param {Array} queue Array of functions to call in sequence
       @param {Function} cb Main callback that is called in the end, or in case of error
       */
-    @JSGlobal("plupload.inSeries")
-    @js.native
-    def inSeries(queue: js.Array[_], callback: js.Function): Unit = js.native
+    @scala.inline
+    def inSeries(queue: js.Array[js.Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inSeries")(queue.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Checks if object is empty.
@@ -312,17 +299,15 @@ object global {
       * @param {Object} obj Object to check.
       * @return {Boolean}
       */
-    @JSGlobal("plupload.isEmptyObj")
-    @js.native
-    def isEmptyObj(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isEmptyObj(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObj")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSGlobal("plupload.mimeTypes")
     @js.native
     val mimeTypes: js.Any = js.native
     
-    @JSGlobal("plupload.parseSize")
-    @js.native
-    def parseSize(size: String): Double = js.native
+    @scala.inline
+    def parseSize(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       * Parses the specified size string into a byte value. For example 10kb becomes 10240.
       *
@@ -331,9 +316,8 @@ object global {
       * @param {String|Number} size String to parse or number to just pass through.
       * @return {Number} Size in bytes.
       */
-    @JSGlobal("plupload.parseSize")
-    @js.native
-    def parseSize(size: Double): Double = js.native
+    @scala.inline
+    def parseSize(size: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSize")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * A way to predict what runtime will be choosen in the current environment with the
@@ -345,9 +329,8 @@ object global {
       * @param {String} [runtimes] Comma-separated list of runtimes to check against
       * @return {String} Type of compatible runtime
       */
-    @JSGlobal("plupload.predictRuntime")
-    @js.native
-    def predictRuntime(config: js.Any, runtimes: String): String = js.native
+    @scala.inline
+    def predictRuntime(config: js.Any, runtimes: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("predictRuntime")(config.asInstanceOf[js.Any], runtimes.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove all kind of events from the specified object
@@ -357,12 +340,10 @@ object global {
       * @param {Object} obj DOM element to remove event listeners from.
       * @param {String} (optional) unique key to match, when removing events.
       */
-    @JSGlobal("plupload.removeAllEvents")
-    @js.native
-    def removeAllEvents(obj: js.Any): js.Any = js.native
-    @JSGlobal("plupload.removeAllEvents")
-    @js.native
-    def removeAllEvents(obj: js.Any, key: String): js.Any = js.native
+    @scala.inline
+    def removeAllEvents(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def removeAllEvents(obj: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeAllEvents")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Removes specified className from specified DOM element.
@@ -372,9 +353,8 @@ object global {
       * @param {Object} obj DOM element like object to add handler to.
       * @param {String} name Class name
       */
-    @JSGlobal("plupload.removeClass")
-    @js.native
-    def removeClass(obj: js.Any, name: String): js.Any = js.native
+    @scala.inline
+    def removeClass(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Remove event handler from the specified object. If third argument (callback)
@@ -386,15 +366,12 @@ object global {
       * @param {String} name Name of event listener to remove.
       * @param {Function|String} (optional) might be a callback or unique key to match.
       */
-    @JSGlobal("plupload.removeEvent")
-    @js.native
-    def removeEvent(obj: js.Any, name: String): js.Any = js.native
-    @JSGlobal("plupload.removeEvent")
-    @js.native
-    def removeEvent(obj: js.Any, name: String, optional: String): js.Any = js.native
-    @JSGlobal("plupload.removeEvent")
-    @js.native
-    def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = js.native
+    @scala.inline
+    def removeEvent(obj: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def removeEvent(obj: js.Any, name: String, optional: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def removeEvent(obj: js.Any, name: String, optional: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEvent")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Pseudo sprintf implementation - simple way to replace tokens with specified values.
@@ -402,9 +379,8 @@ object global {
       * @param {String} str String with tokens
       * @return {String} String with replaced tokens
       */
-    @JSGlobal("plupload.sprintf")
-    @js.native
-    def sprintf(str: String): String = js.native
+    @scala.inline
+    def sprintf(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sprintf")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Forces anything into an array.
@@ -414,9 +390,8 @@ object global {
       * @param {Object} obj Object with length field.
       * @return {Array} Array object containing all items.
       */
-    @JSGlobal("plupload.toArray")
-    @js.native
-    def toArray(obj: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def toArray(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Translates the specified string by checking for the english string in the language pack lookup.
@@ -426,9 +401,8 @@ object global {
       * @param {String} str String to look for.
       * @return {String} Translated string or the input string if it wasn't found.
       */
-    @JSGlobal("plupload.translate")
-    @js.native
-    def translate(str: String): String = js.native
+    @scala.inline
+    def translate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets the true type of the built-in object (better version of typeof).
@@ -439,9 +413,8 @@ object global {
       * @param {Object} o Object to check.
       * @return {String} Object [[Class]]
       */
-    @JSGlobal("plupload.typeOf")
-    @js.native
-    def typeOf(o: js.Any): String = js.native
+    @scala.inline
+    def typeOf(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(o.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("plupload.ua")
     @js.native
@@ -455,8 +428,7 @@ object global {
       * @param {String} s String to encode.
       * @return {String} Encoded string.
       */
-    @JSGlobal("plupload.xmlEncode")
-    @js.native
-    def xmlEncode(str: String): String = js.native
+    @scala.inline
+    def xmlEncode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlEncode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

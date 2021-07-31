@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingParameters extends StObject {
   
   /**
     * Provides additional mapping information when the record format uses delimiters (for example, CSV).
     */
-  var CSVMappingParameters: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CSVMappingParameters] = js.native
+  var CSVMappingParameters: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CSVMappingParameters] = js.undefined
   
   /**
     * Provides additional mapping information when JSON is the record format on the streaming source.
     */
-  var JSONMappingParameters: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.JSONMappingParameters] = js.native
+  var JSONMappingParameters: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.JSONMappingParameters] = js.undefined
 }
 object MappingParameters {
   

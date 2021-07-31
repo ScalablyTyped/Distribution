@@ -10,9 +10,9 @@ PageSpeed Insights with reporting
 | ------------------ | :-------------: |
 | Full name          | psi |
 | Keywords           | pagespeed, insights, speed, page, website, measure, optimize, size |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 39 |
-| # downloads        | 264479 |
+| # downloads        | 298305 |
 | # stars            | 50 |
 
 ## Links

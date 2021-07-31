@@ -2,15 +2,13 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phone extends StObject {
   
-  var country_code: String = js.native
+  var country_code: String
   
-  var national_number: String = js.native
+  var national_number: String
 }
 object Phone {
   

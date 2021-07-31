@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rectangle extends StObject {
   
   /**
     * Height of rectangle in pixels. Specify only even numbers.
     */
-  var Height: js.UndefOr[integerMin2Max2147483647] = js.native
+  var Height: js.UndefOr[integerMin2Max2147483647] = js.undefined
   
   /**
     * Width of rectangle in pixels. Specify only even numbers.
     */
-  var Width: js.UndefOr[integerMin2Max2147483647] = js.native
+  var Width: js.UndefOr[integerMin2Max2147483647] = js.undefined
   
   /**
     * The distance, in pixels, between the rectangle and the left edge of the video frame. Specify only even numbers.
     */
-  var X: js.UndefOr[integerMin0Max2147483647] = js.native
+  var X: js.UndefOr[integerMin0Max2147483647] = js.undefined
   
   /**
     * The distance, in pixels, between the rectangle and the top edge of the video frame. Specify only even numbers.
     */
-  var Y: js.UndefOr[integerMin0Max2147483647] = js.native
+  var Y: js.UndefOr[integerMin0Max2147483647] = js.undefined
 }
 object Rectangle {
   

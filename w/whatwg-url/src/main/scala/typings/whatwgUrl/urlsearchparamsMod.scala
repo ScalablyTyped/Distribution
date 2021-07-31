@@ -7,71 +7,63 @@ import typings.whatwgUrl.anon.DoNotStripQMark
 import typings.whatwgUrl.urlsearchparamsImplMod.implementation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlsearchparamsMod {
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "convert")
+  @JSImport("whatwg-url/lib/URLSearchParams", JSImport.Namespace)
   @js.native
-  def convert(obj: js.Any): implementation = js.native
-  @JSImport("whatwg-url/lib/URLSearchParams", "convert")
-  @js.native
-  def convert(obj: js.Any, options: Options): implementation = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "create")
-  @js.native
+  @scala.inline
+  def convert(obj: js.Any): implementation = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(obj.asInstanceOf[js.Any]).asInstanceOf[implementation]
+  @scala.inline
+  def convert(obj: js.Any, options: Options): implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[implementation]
+  
+  @scala.inline
   def create(
     globalObject: js.Object,
     hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String]
-  ): URLSearchParams = js.native
-  @JSImport("whatwg-url/lib/URLSearchParams", "create")
-  @js.native
+  ): URLSearchParams = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any], hasInit.asInstanceOf[js.Any])).asInstanceOf[URLSearchParams]
+  @scala.inline
   def create(
     globalObject: js.Object,
     hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],
     privateData: DoNotStripQMark
-  ): URLSearchParams = js.native
+  ): URLSearchParams = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(globalObject.asInstanceOf[js.Any], hasInit.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[URLSearchParams]
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "createImpl")
-  @js.native
+  @scala.inline
   def createImpl(
     globalObject: js.Object,
     hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String]
-  ): implementation = js.native
-  @JSImport("whatwg-url/lib/URLSearchParams", "createImpl")
-  @js.native
+  ): implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], hasInit.asInstanceOf[js.Any])).asInstanceOf[implementation]
+  @scala.inline
   def createImpl(
     globalObject: js.Object,
     hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],
     privateData: DoNotStripQMark
-  ): implementation = js.native
+  ): implementation = (^.asInstanceOf[js.Dynamic].applyDynamic("createImpl")(globalObject.asInstanceOf[js.Any], hasInit.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[implementation]
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "install")
-  @js.native
-  def install(globalObject: js.Object): Unit = js.native
+  @scala.inline
+  def install(globalObject: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(globalObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "is")
-  @js.native
-  def is(obj: js.Any): /* is std.URLSearchParams */ Boolean = js.native
+  @scala.inline
+  def is(obj: js.Any): /* is std.URLSearchParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.URLSearchParams */ Boolean]
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "isImpl")
-  @js.native
-  def isImpl(obj: js.Any): /* is whatwg-url.whatwg-url/lib/URLSearchParams-impl.implementation */ Boolean = js.native
+  @scala.inline
+  def isImpl(obj: js.Any): /* is whatwg-url.whatwg-url/lib/URLSearchParams-impl.implementation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImpl")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is whatwg-url.whatwg-url/lib/URLSearchParams-impl.implementation */ Boolean]
   
-  @JSImport("whatwg-url/lib/URLSearchParams", "setup")
-  @js.native
+  @scala.inline
   def setup[T /* <: URLSearchParams */](
     obj: T,
     globalObject: js.Object,
     hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String]
-  ): T = js.native
-  @JSImport("whatwg-url/lib/URLSearchParams", "setup")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(obj.asInstanceOf[js.Any], globalObject.asInstanceOf[js.Any], hasInit.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def setup[T /* <: URLSearchParams */](
     obj: T,
     globalObject: js.Object,
     hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],
     privateData: DoNotStripQMark
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(obj.asInstanceOf[js.Any], globalObject.asInstanceOf[js.Any], hasInit.asInstanceOf[js.Any], privateData.asInstanceOf[js.Any])).asInstanceOf[T]
 }

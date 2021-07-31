@@ -5,7 +5,6 @@ import typings.scBroker.mod.SCBrokerClient
 import typings.scBrokerCluster.mod.mapperFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientclusterMod {

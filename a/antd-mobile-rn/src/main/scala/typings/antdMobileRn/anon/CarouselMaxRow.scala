@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CarouselMaxRow extends StObject {
   
-  var carouselMaxRow: Double = js.native
+  var carouselMaxRow: Double
   
-  var columnNum: Double = js.native
+  var columnNum: Double
   
-  var data: js.Array[scala.Nothing] = js.native
+  var data: js.Array[scala.Nothing]
   
-  var hasLine: Boolean = js.native
+  var hasLine: Boolean
   
-  var isCarousel: Boolean = js.native
+  var isCarousel: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
 }
 object CarouselMaxRow {
   
@@ -31,7 +29,7 @@ object CarouselMaxRow {
     data: js.Array[scala.Nothing],
     hasLine: Boolean,
     isCarousel: Boolean,
-    styles: StringDictionary[RegisteredStyle[_]]
+    styles: StringDictionary[RegisteredStyle[js.Any]]
   ): CarouselMaxRow = {
     val __obj = js.Dynamic.literal(carouselMaxRow = carouselMaxRow.asInstanceOf[js.Any], columnNum = columnNum.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], hasLine = hasLine.asInstanceOf[js.Any], isCarousel = isCarousel.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CarouselMaxRow]
@@ -59,6 +57,6 @@ object CarouselMaxRow {
     def setIsCarousel(value: Boolean): Self = StObject.set(x, "isCarousel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

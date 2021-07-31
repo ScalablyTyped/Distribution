@@ -16,7 +16,6 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textureMod {
@@ -124,7 +123,7 @@ object textureMod {
     /**
     	 * @default []
     	 */
-    var mipmaps: js.Array[_] = js.native
+    var mipmaps: js.Array[js.Any] = js.native
     
     /**
     	 * @default ''

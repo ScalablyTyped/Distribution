@@ -15,47 +15,45 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.text
 import typings.wechatMiniprogram.wechatMiniprogramStrings.其他
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[RequestCompleteCallback] = js.native
+  var complete: js.UndefOr[RequestCompleteCallback] = js.undefined
   
   /** 请求的参数 */
-  var data: js.UndefOr[String | IAnyObject | ArrayBuffer] = js.native
+  var data: js.UndefOr[String | IAnyObject | ArrayBuffer] = js.undefined
   
   /** 返回的数据格式
     *
     * 可选值：
     * - 'json': 返回的数据为 JSON，返回后会对返回的数据进行一次 JSON.parse;
     * - '其他': 不对返回的内容进行 JSON.parse; */
-  var dataType: js.UndefOr[json | 其他] = js.native
+  var dataType: js.UndefOr[json | 其他] = js.undefined
   
   /** 开启 cache
     *
     * 最低基础库： `2.10.4` */
-  var enableCache: js.UndefOr[Boolean] = js.native
+  var enableCache: js.UndefOr[Boolean] = js.undefined
   
   /** 开启 http2
     *
     * 最低基础库： `2.10.4` */
-  var enableHttp2: js.UndefOr[Boolean] = js.native
+  var enableHttp2: js.UndefOr[Boolean] = js.undefined
   
   /** 开启 quic
     *
     * 最低基础库： `2.10.4` */
-  var enableQuic: js.UndefOr[Boolean] = js.native
+  var enableQuic: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[RequestFailCallback] = js.native
+  var fail: js.UndefOr[RequestFailCallback] = js.undefined
   
   /** 设置请求的 header，header 中不能设置 Referer。
     *
     * `content-type` 默认为 `application/json` */
-  var header: js.UndefOr[IAnyObject] = js.native
+  var header: js.UndefOr[IAnyObject] = js.undefined
   
   /** HTTP 请求方法
     *
@@ -68,7 +66,7 @@ trait RequestOption extends StObject {
     * - 'DELETE': HTTP 请求 DELETE;
     * - 'TRACE': HTTP 请求 TRACE;
     * - 'CONNECT': HTTP 请求 CONNECT; */
-  var method: js.UndefOr[OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.native
+  var method: js.UndefOr[OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.undefined
   
   /** 响应的数据类型
     *
@@ -77,18 +75,18 @@ trait RequestOption extends StObject {
     * - 'arraybuffer': 响应的数据为 ArrayBuffer;
     *
     * 最低基础库： `1.7.0` */
-  var responseType: js.UndefOr[text | arraybuffer] = js.native
+  var responseType: js.UndefOr[text | arraybuffer] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[RequestSuccessCallback] = js.native
+  var success: js.UndefOr[RequestSuccessCallback] = js.undefined
   
   /** 超时时间，单位为毫秒
     *
     * 最低基础库： `2.10.0` */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** 开发者服务器接口地址 */
-  var url: String = js.native
+  var url: String
 }
 object RequestOption {
   

@@ -2,33 +2,33 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Definitions extends BaseElement {
+trait Definitions
+  extends StObject
+     with BaseElement {
   
-  var diagrams: BPMNDiagram = js.native
+  var diagrams: BPMNDiagram
   
-  var er: String = js.native
+  var er: String
   
-  var erVersion: String = js.native
+  var erVersion: String
   
-  var expressionLanguage: String = js.native
+  var expressionLanguage: String
   
-  var extensions: js.Array[Extension] = js.native
+  var extensions: js.Array[Extension]
   
-  var imports: js.Array[Import] = js.native
+  var imports: js.Array[Import]
   
-  var name: String = js.native
+  var name: String
   
-  var relationship: js.Array[Relationship] = js.native
+  var relationship: js.Array[Relationship]
   
-  var rootElements: js.Array[RootElement] = js.native
+  var rootElements: js.Array[RootElement]
   
-  var targetNamespace: String = js.native
+  var targetNamespace: String
   
-  var typeLanguage: String = js.native
+  var typeLanguage: String
 }
 object Definitions {
   

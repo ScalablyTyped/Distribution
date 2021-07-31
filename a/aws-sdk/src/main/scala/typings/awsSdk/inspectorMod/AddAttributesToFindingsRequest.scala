@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddAttributesToFindingsRequest extends StObject {
   
   /**
     * The array of attributes that you want to assign to specified findings.
     */
-  var attributes: UserAttributeList = js.native
+  var attributes: UserAttributeList
   
   /**
     * The ARNs that specify the findings that you want to assign attributes to.
     */
-  var findingArns: AddRemoveAttributesFindingArnList = js.native
+  var findingArns: AddRemoveAttributesFindingArnList
 }
 object AddAttributesToFindingsRequest {
   

@@ -62,7 +62,6 @@ import typings.instagramPrivateApi.timelineFeedTypesMod.TimelineFeedReason
 import typings.instagramPrivateApi.userStoryFeedMod.UserStoryFeed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedFactoryMod {

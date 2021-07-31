@@ -5,17 +5,19 @@ import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStateMod.For
 import typings.forkTsCheckerWebpackPlugin.reporterRpcClientMod.ReporterRpcClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tapStartToConnectAndRunReporterMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/hooks/tapStartToConnectAndRunReporter", "tapStartToConnectAndRunReporter")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/hooks/tapStartToConnectAndRunReporter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def tapStartToConnectAndRunReporter(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     reporter: ReporterRpcClient,
     configuration: ForkTsCheckerWebpackPluginConfiguration,
     state: ForkTsCheckerWebpackPluginState
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tapStartToConnectAndRunReporter")(compiler.asInstanceOf[js.Any], reporter.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

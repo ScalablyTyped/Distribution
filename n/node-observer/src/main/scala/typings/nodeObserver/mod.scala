@@ -3,7 +3,6 @@ package typings.nodeObserver
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,7 +11,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : Observer = js.native
   
-  @js.native
   trait Observer extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object mod extends Shortcut {
       * @param eventName the event name
       * @param data passed to the callback function when the event is fired
       */
-    def send(targetObj: js.Object, eventName: String, data: js.Any): Unit = js.native
+    def send(targetObj: js.Object, eventName: String, data: js.Any): Unit
     
     /**
       * subscirpt event
@@ -29,16 +27,16 @@ object mod extends Shortcut {
       * @param eventName the event name
       * @param callback callback function executed when an event is fired
       */
-    def subscribe(targetObj: js.Object, eventName: String, callback: js.Any): Unit = js.native
+    def subscribe(targetObj: js.Object, eventName: String, callback: js.Any): Unit
     
-    var subscribers: js.Array[js.Object] = js.native
+    var subscribers: js.Array[js.Object]
     
     /**
       * unsubscript event
       * @param targetObj objects that subscribe to events
       * @param eventName the event name
       */
-    def unsubscribe(targetObj: js.Object, eventName: String): Unit = js.native
+    def unsubscribe(targetObj: js.Object, eventName: String): Unit
   }
   object Observer {
     

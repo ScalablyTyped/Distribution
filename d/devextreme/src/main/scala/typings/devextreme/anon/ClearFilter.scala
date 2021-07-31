@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearFilter extends StObject {
   
-  var clearFilter: js.UndefOr[String] = js.native
+  var clearFilter: js.UndefOr[String] = js.undefined
   
-  var createFilter: js.UndefOr[String] = js.native
+  var createFilter: js.UndefOr[String] = js.undefined
   
-  var filterEnabledHint: js.UndefOr[String] = js.native
+  var filterEnabledHint: js.UndefOr[String] = js.undefined
 }
 object ClearFilter {
   

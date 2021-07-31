@@ -5,7 +5,6 @@ import typings.react.mod.global.JSX.Element
 import typings.storybookAddons.distMod.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -21,14 +20,13 @@ object listMod {
     def renderTab(id: String, title: String): Element = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var addonSelected: String = js.native
+    var addonSelected: String
     
-    def onPressAddon(id: String): Unit = js.native
+    def onPressAddon(id: String): Unit
     
-    var panels: Collection = js.native
+    var panels: Collection
   }
   object Props {
     

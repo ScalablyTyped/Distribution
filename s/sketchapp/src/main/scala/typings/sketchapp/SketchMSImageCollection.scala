@@ -3,21 +3,19 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.imageCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSImageCollection extends StObject {
   
-  var _class: imageCollection = js.native
+  var _class: imageCollection
   
-  var images: js.Array[_] = js.native
+  var images: js.Array[js.Any]
 }
 object SketchMSImageCollection {
   
   @scala.inline
-  def apply(_class: imageCollection, images: js.Array[_]): SketchMSImageCollection = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any])
+  def apply(images: js.Array[js.Any]): SketchMSImageCollection = {
+    val __obj = js.Dynamic.literal(_class = "imageCollection", images = images.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSImageCollection]
   }
   
@@ -25,7 +23,7 @@ object SketchMSImageCollection {
   implicit class SketchMSImageCollectionMutableBuilder[Self <: SketchMSImageCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))

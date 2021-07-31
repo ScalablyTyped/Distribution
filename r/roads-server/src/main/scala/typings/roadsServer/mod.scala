@@ -5,7 +5,6 @@ import typings.roads.mod.Road
 import typings.roadsServer.http2ServerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,7 +34,7 @@ object mod {
       */
     def this(road: Road) = this()
     def this(road: Road, error_handler: js.Function) = this()
-    def this(road: Road, error_handler: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions) = this()
     def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
+    def this(road: Road, error_handler: Unit, httpsOptions: ServerOptions) = this()
   }
 }

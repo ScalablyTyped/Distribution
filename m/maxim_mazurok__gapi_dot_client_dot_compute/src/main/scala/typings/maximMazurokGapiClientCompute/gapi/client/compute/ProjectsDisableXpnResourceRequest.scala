@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsDisableXpnResourceRequest extends StObject {
   
   /** Service resource (a.k.a service project) ID. */
-  var xpnResource: js.UndefOr[XpnResourceId] = js.native
+  var xpnResource: js.UndefOr[XpnResourceId] = js.undefined
 }
 object ProjectsDisableXpnResourceRequest {
   

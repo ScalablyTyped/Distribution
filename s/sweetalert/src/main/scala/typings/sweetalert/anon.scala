@@ -4,15 +4,13 @@ import typings.sweetalert.optionsButtonsMod.ButtonList
 import typings.sweetalert.optionsContentMod.ContentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var closeModal: js.UndefOr[Boolean] = js.native
+    var closeModal: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CloseModal extends StObject {
     
-    var closeModal: js.UndefOr[Boolean] = js.native
+    var closeModal: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | js.Any] = js.native
+    var value: js.UndefOr[String | js.Any] = js.undefined
   }
   object CloseModal {
     
@@ -66,28 +63,27 @@ object anon {
   }
   
   /* Inlined std.Partial<sweetalert.sweetalert/typings/modules/options.SwalOptions> */
-  @js.native
   trait PartialSwalOptions extends StObject {
     
-    var buttons: js.UndefOr[ButtonList | (js.Array[String | Boolean])] = js.native
+    var buttons: js.UndefOr[ButtonList | (js.Array[String | Boolean])] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeOnClickOutside: js.UndefOr[Boolean] = js.native
+    var closeOnClickOutside: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnEsc: js.UndefOr[Boolean] = js.native
+    var closeOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var content: js.UndefOr[ContentOptions] = js.native
+    var content: js.UndefOr[ContentOptions] = js.undefined
     
-    var dangerMode: js.UndefOr[Boolean] = js.native
+    var dangerMode: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var timer: js.UndefOr[Double] = js.native
+    var timer: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PartialSwalOptions {
     
@@ -165,12 +161,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Reject extends StObject {
     
-    var reject: js.UndefOr[js.Function0[Unit]] = js.native
+    var reject: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var resolve: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var resolve: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   }
   object Reject {
     
@@ -197,12 +192,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var closeModal: js.UndefOr[Boolean] = js.native
+    var closeModal: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Value {
     

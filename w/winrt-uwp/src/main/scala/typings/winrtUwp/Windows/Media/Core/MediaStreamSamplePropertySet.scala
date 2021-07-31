@@ -5,34 +5,32 @@ import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains properties for the MediaStreamSample . */
-@js.native
 trait MediaStreamSamplePropertySet extends StObject {
   
   /** Removes all items from the property set. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Returns an iterator to enumerate the items in the property set.
     * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
     */
-  def first(): IIterator[IKeyValuePair[_, _]] = js.native
+  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
   
   /**
     * Gets an immutable view of the property set.
     * @return The immutable view.
     */
-  def getView(): IMapView[String, _] = js.native
+  def getView(): IMapView[String, js.Any]
   
   /**
     * Indicates if the specified key exists in the property set.
     * @param key The key to check.
     * @return true if the key exists; otherwise, false.
     */
-  def hasKey(key: String): Boolean = js.native
+  def hasKey(key: String): Boolean
   
   /**
     * Adds the specified key and value to the property set.
@@ -40,31 +38,31 @@ trait MediaStreamSamplePropertySet extends StObject {
     * @param value The value of the key.
     * @return True if the method replaces a value that already exists for the key; false if this is a new key.
     */
-  def insert(key: String, value: js.Any): Boolean = js.native
+  def insert(key: String, value: js.Any): Boolean
   
   /**
     * Retrieves the value for the specified key.
     * @param key The key to retrieve the value for.
     * @return The value, if an item with the specified key exists; otherwise, null.
     */
-  def lookup(key: String): js.Any = js.native
+  def lookup(key: String): js.Any
   
   /**
     * Removes an item from the property set.
     * @param key The key to remove.
     */
-  def remove(key: String): Unit = js.native
+  def remove(key: String): Unit
   
   /** Gets the number of items contained in the property set. */
-  var size: Double = js.native
+  var size: Double
 }
 object MediaStreamSamplePropertySet {
   
   @scala.inline
   def apply(
     clear: () => Unit,
-    first: () => IIterator[IKeyValuePair[_, _]],
-    getView: () => IMapView[String, _],
+    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
+    getView: () => IMapView[String, js.Any],
     hasKey: String => Boolean,
     insert: (String, js.Any) => Boolean,
     lookup: String => js.Any,
@@ -82,10 +80,10 @@ object MediaStreamSamplePropertySet {
     def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetView(value: () => IMapView[String, _]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    def setGetView(value: () => IMapView[String, js.Any]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
     @scala.inline
     def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))

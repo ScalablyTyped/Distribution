@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimestreamTimestamp extends StObject {
   
   /**
     * The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS | MILLISECONDS | MICROSECONDS | NANOSECONDS. The default is MILLISECONDS.
     */
-  var unit: TimestreamTimestampUnit = js.native
+  var unit: TimestreamTimestampUnit
   
   /**
     * An expression that returns a long epoch time value.
     */
-  var value: TimestreamTimestampValue = js.native
+  var value: TimestreamTimestampValue
 }
 object TimestreamTimestamp {
   

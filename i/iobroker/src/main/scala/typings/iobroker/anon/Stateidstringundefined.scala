@@ -4,47 +4,46 @@ import typings.iobroker.mod.global.ioBroker.StateQuality
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined iobroker.iobroker.<global>.ioBroker.State & {  id :string | undefined} */
-@js.native
 trait Stateidstringundefined extends StObject {
   
   /** Direction flag: false for desired value and true for actual value. Default: false. */
-  var ack: Boolean = js.native
+  var ack: Boolean
   
   /** Optional comment */
-  var c: js.UndefOr[String] = js.native
+  var c: js.UndefOr[String] = js.undefined
   
   /** Optional time in seconds after which the state is reset to null */
-  var expire: js.UndefOr[Double] = js.native
+  var expire: js.UndefOr[Double] = js.undefined
   
   /** Name of the adapter instance which set the value, e.g. "system.adapter.web.0" */
-  var from: String = js.native
+  var from: String
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Unix timestamp of the last time the value changed */
-  var lc: Double = js.native
+  var lc: Double
   
   /** Optional quality of the state value */
-  var q: js.UndefOr[StateQuality] = js.native
+  var q: js.UndefOr[StateQuality] = js.undefined
   
   /** Unix timestamp. Default: current time */
-  var ts: Double = js.native
+  var ts: Double
   
   /** The user who set this value */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /** The value of the state. */
-  var `val`: String | Double | Boolean | js.Array[_] | (Record[String, _]) | Null = js.native
+  var `val`: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any]) | Null
 }
 object Stateidstringundefined {
   
   @scala.inline
   def apply(ack: Boolean, from: String, lc: Double, ts: Double): Stateidstringundefined = {
     val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], lc = lc.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(null)
     __obj.asInstanceOf[Stateidstringundefined]
   }
   
@@ -94,7 +93,7 @@ object Stateidstringundefined {
     def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def setVal(value: String | Double | Boolean | js.Array[_] | (Record[String, _])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValNull: Self = StObject.set(x, "val", null)

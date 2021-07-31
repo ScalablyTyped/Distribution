@@ -3,24 +3,22 @@ package typings.awsSdkClientDynamodbNode
 import typings.awsSdkClientDynamodbNode.createGlobalTableExceptionsUnionMod.CreateGlobalTableExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGlobalTableAlreadyExistsExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_GlobalTableAlreadyExistsExceptionDetails> * / any */ @js.native
-  trait GlobalTableAlreadyExistsException extends CreateGlobalTableExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_GlobalTableAlreadyExistsExceptionDetails> * / any */ trait GlobalTableAlreadyExistsException
+    extends StObject
+       with CreateGlobalTableExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.GlobalTableAlreadyExistsException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.GlobalTableAlreadyExistsException
   }
   object GlobalTableAlreadyExistsException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.GlobalTableAlreadyExistsException
-    ): GlobalTableAlreadyExistsException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): GlobalTableAlreadyExistsException = {
+      val __obj = js.Dynamic.literal(name = "GlobalTableAlreadyExistsException")
       __obj.asInstanceOf[GlobalTableAlreadyExistsException]
     }
     
@@ -34,13 +32,12 @@ object typesGlobalTableAlreadyExistsExceptionMod {
     }
   }
   
-  @js.native
   trait GlobalTableAlreadyExistsExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object GlobalTableAlreadyExistsExceptionDetails {
     

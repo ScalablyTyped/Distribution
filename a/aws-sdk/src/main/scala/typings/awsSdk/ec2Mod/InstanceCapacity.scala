@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceCapacity extends StObject {
   
   /**
     * The number of instances that can be launched onto the Dedicated Host based on the host's available capacity.
     */
-  var AvailableCapacity: js.UndefOr[Integer] = js.native
+  var AvailableCapacity: js.UndefOr[Integer] = js.undefined
   
   /**
     * The instance type supported by the Dedicated Host.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of instances that can be launched onto the Dedicated Host if there are no instances running on it.
     */
-  var TotalCapacity: js.UndefOr[Integer] = js.native
+  var TotalCapacity: js.UndefOr[Integer] = js.undefined
 }
 object InstanceCapacity {
   

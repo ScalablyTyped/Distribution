@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationSummary extends StObject {
   
   /**
     * The ID for an operation.
     */
-  var Id: js.UndefOr[OperationId] = js.native
+  var Id: js.UndefOr[OperationId] = js.undefined
   
   /**
     * The status of the operation. Values include the following:    SUBMITTED: This is the initial state immediately after you submit a request.    PENDING: AWS Cloud Map is performing the operation.    SUCCESS: The operation succeeded.    FAIL: The operation failed. For the failure reason, see ErrorMessage.  
     */
-  var Status: js.UndefOr[OperationStatus] = js.native
+  var Status: js.UndefOr[OperationStatus] = js.undefined
 }
 object OperationSummary {
   

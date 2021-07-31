@@ -3,28 +3,26 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebpushConfig extends StObject {
   
   /** Arbitrary key/value payload. If present, it will override google.firebase.fcm.v1.Message.data. */
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Options for features provided by the FCM SDK for Web. */
-  var fcmOptions: js.UndefOr[WebpushFcmOptions] = js.native
+  var fcmOptions: js.UndefOr[WebpushFcmOptions] = js.undefined
   
   /** HTTP headers defined in webpush protocol. Refer to [Webpush protocol](https://tools.ietf.org/html/rfc8030#section-5) for supported headers, e.g. "TTL": "15". */
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Web Notification options as a JSON object. Supports Notification instance properties as defined in [Web Notification
@@ -34,8 +32,8 @@ trait WebpushConfig extends StObject {
   var notification: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+  ] = js.undefined
 }
 object WebpushConfig {
   
@@ -52,7 +50,7 @@ object WebpushConfig {
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -68,7 +66,7 @@ object WebpushConfig {
     def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -78,7 +76,7 @@ object WebpushConfig {
     def setNotification(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline

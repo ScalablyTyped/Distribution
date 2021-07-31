@@ -2,25 +2,38 @@ package typings.lambdaPhi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpVerbModelMod {
   
   @JSImport("lambda-phi/lib/http-verb-model", JSImport.Default)
   @js.native
-  class default () extends HttpVerbModel
-  
-  @js.native
-  trait HttpVerbModel extends StObject {
+  class default ()
+    extends StObject
+       with HttpVerbModel {
     
+    /* CompleteClass */
     var _methodName: js.Any = js.native
     
+    /* CompleteClass */
     var _name: js.Any = js.native
     
+    /* CompleteClass */
     var methodName: String = js.native
     
+    /* CompleteClass */
     var name: String = js.native
+  }
+  
+  trait HttpVerbModel extends StObject {
+    
+    var _methodName: js.Any
+    
+    var _name: js.Any
+    
+    var methodName: String
+    
+    var name: String
   }
   object HttpVerbModel {
     

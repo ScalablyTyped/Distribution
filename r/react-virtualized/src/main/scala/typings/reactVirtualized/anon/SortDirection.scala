@@ -3,13 +3,11 @@ package typings.reactVirtualized.anon
 import typings.reactVirtualized.esTableMod.SortDirectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortDirection extends StObject {
   
-  var sortDirection: js.UndefOr[SortDirectionType] = js.native
+  var sortDirection: js.UndefOr[SortDirectionType] = js.undefined
 }
 object SortDirection {
   

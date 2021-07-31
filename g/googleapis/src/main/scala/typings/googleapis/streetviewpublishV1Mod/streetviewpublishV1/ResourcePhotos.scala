@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/streetviewpublish/v1", "streetviewpublish_v1.Resource$Photos")
@@ -33,7 +32,7 @@ class ResourcePhotos protected () extends StObject {
     */
   def batchDelete(): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaBatchDeletePhotosResponse]): Unit = js.native
-  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
+  def batchDelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
   def batchDelete(params: ParamsResourcePhotosBatchdelete): GaxiosPromise[SchemaBatchDeletePhotosResponse] = js.native
   def batchDelete(
     params: ParamsResourcePhotosBatchdelete,
@@ -72,7 +71,7 @@ class ResourcePhotos protected () extends StObject {
     */
   def batchGet(): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaBatchGetPhotosResponse]): Unit = js.native
-  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
+  def batchGet(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
   def batchGet(params: ParamsResourcePhotosBatchget): GaxiosPromise[SchemaBatchGetPhotosResponse] = js.native
   def batchGet(params: ParamsResourcePhotosBatchget, callback: BodyResponseCallback[SchemaBatchGetPhotosResponse]): Unit = js.native
   def batchGet(
@@ -113,7 +112,7 @@ class ResourcePhotos protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdatePhotosResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
   def batchUpdate(params: ParamsResourcePhotosBatchupdate): GaxiosPromise[SchemaBatchUpdatePhotosResponse] = js.native
   def batchUpdate(
     params: ParamsResourcePhotosBatchupdate,
@@ -153,7 +152,7 @@ class ResourcePhotos protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListPhotosResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListPhotosResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListPhotosResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListPhotosResponse] = js.native
   def list(params: ParamsResourcePhotosList): GaxiosPromise[SchemaListPhotosResponse] = js.native
   def list(params: ParamsResourcePhotosList, callback: BodyResponseCallback[SchemaListPhotosResponse]): Unit = js.native
   def list(

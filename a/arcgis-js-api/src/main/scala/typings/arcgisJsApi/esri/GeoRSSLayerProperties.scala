@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoRSSLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with ScaleRangeLayerProperties
      with BlendLayerProperties {
   
@@ -16,28 +15,28 @@ trait GeoRSSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#lineSymbol)
     */
-  var lineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.native
+  var lineSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
     * Symbol used to represent point features from the GeoRSS feed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#pointSymbol)
     */
-  var pointSymbol: js.UndefOr[PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties] = js.native
+  var pointSymbol: js.UndefOr[PictureMarkerSymbolProperties | SimpleMarkerSymbolProperties] = js.undefined
   
   /**
     * Symbol used to represent polygon features from the GeoRSS feed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#polygonSymbol)
     */
-  var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.native
+  var polygonSymbol: js.UndefOr[SimpleFillSymbolProperties] = js.undefined
   
   /**
     * The URL pointing to a GeoRSS file.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object GeoRSSLayerProperties {
   

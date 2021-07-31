@@ -3,15 +3,13 @@ package typings.googleCloudPubsub
 import typings.googleCloudPubsub.subscriberMod.Message
 import typings.googleCloudPubsub.subscriberMod.Subscriber
 import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.mod.grpc.Metadata
 import typings.grpcGrpcJs.callMod.ServiceError
-import typings.grpcGrpcJs.callStreamMod.StatusObject
+import typings.grpcGrpcJs.constantsMod.Status
+import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.node.NodeJS.Timer
 import typings.pDefer.mod.DeferredPromise
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageQueuesMod {
@@ -26,14 +24,28 @@ object messageQueuesMod {
   @JSImport("@google-cloud/pubsub/build/src/message-queues", "BatchError")
   @js.native
   class BatchError protected ()
-    extends Error
-       with StatusObject {
+    extends StObject
+       with ServiceError {
     def this(err: ServiceError, ackIds: js.Array[String], rpc: String) = this()
     
     var ackIds: js.Array[String] = js.native
     
+    /* CompleteClass */
+    var code: Status = js.native
+    
+    /* CompleteClass */
+    var details: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var metadata: Metadata = js.native
     @JSName("metadata")
-    var metadata_BatchError: Metadata = js.native
+    var metadata_BatchError: typings.googleGax.mod.grpc.Metadata = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/message-queues", "MessageQueue")
@@ -113,14 +125,13 @@ object messageQueuesMod {
     def this(sub: Subscriber, options: BatchOptions) = this()
   }
   
-  @js.native
   trait BatchOptions extends StObject {
     
-    var callOptions: js.UndefOr[CallOptions] = js.native
+    var callOptions: js.UndefOr[CallOptions] = js.undefined
     
-    var maxMessages: js.UndefOr[Double] = js.native
+    var maxMessages: js.UndefOr[Double] = js.undefined
     
-    var maxMilliseconds: js.UndefOr[Double] = js.native
+    var maxMilliseconds: js.UndefOr[Double] = js.undefined
   }
   object BatchOptions {
     

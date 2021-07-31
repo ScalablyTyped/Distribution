@@ -2,7 +2,6 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postman-collection", "ItemGroup")
@@ -30,7 +29,10 @@ class ItemGroup[TItem] () extends Property[ItemGroupDefinition] {
 /* static members */
 object ItemGroup {
   
-  @JSImport("postman-collection", "ItemGroup.isItemGroup")
+  @JSImport("postman-collection", "ItemGroup")
   @js.native
-  def isItemGroup(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isItemGroup(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItemGroup")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

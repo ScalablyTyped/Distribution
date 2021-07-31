@@ -8,7 +8,6 @@ import typings.bizcharts.bizchartsStrings.downward
 import typings.bizcharts.bizchartsStrings.upward
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bizcharts", "Guide")
@@ -140,20 +139,19 @@ object Guide {
     def this(props: TextProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ArcProps extends StObject {
     
     var end: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
     var start: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object ArcProps {
     
@@ -168,11 +166,11 @@ object Guide {
       
       @scala.inline
       def setEnd(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -182,11 +180,11 @@ object Guide {
       
       @scala.inline
       def setStart(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -208,24 +206,23 @@ object Guide {
     }
   }
   
-  @js.native
   trait DataMarkerProps extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[upward | downward] = js.native
+    var direction: js.UndefOr[upward | downward] = js.undefined
     
-    var display: js.UndefOr[js.Object] = js.native
+    var display: js.UndefOr[js.Object] = js.undefined
     
-    var lineLength: js.UndefOr[Double] = js.native
+    var lineLength: js.UndefOr[Double] = js.undefined
     
     var position: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object DataMarkerProps {
     
@@ -264,11 +261,11 @@ object Guide {
       
       @scala.inline
       def setPosition(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+      def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
@@ -290,30 +287,29 @@ object Guide {
     }
   }
   
-  @js.native
   trait DataRegionProps extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[upward | downward] = js.native
+    var direction: js.UndefOr[upward | downward] = js.undefined
     
-    var display: js.UndefOr[js.Object] = js.native
+    var display: js.UndefOr[js.Object] = js.undefined
     
     var end: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var lineLength: js.UndefOr[Double] = js.native
+    var lineLength: js.UndefOr[Double] = js.undefined
     
-    var regionStyle: js.UndefOr[js.Object] = js.native
+    var regionStyle: js.UndefOr[js.Object] = js.undefined
     
     var start: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object DataRegionProps {
     
@@ -346,11 +342,11 @@ object Guide {
       
       @scala.inline
       def setEnd(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -372,11 +368,11 @@ object Guide {
       
       @scala.inline
       def setStart(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -398,24 +394,23 @@ object Guide {
     }
   }
   
-  @js.native
   trait HtmlProps extends StObject {
     
-    var alignX: js.UndefOr[AlignXType] = js.native
+    var alignX: js.UndefOr[AlignXType] = js.undefined
     
-    var alignY: js.UndefOr[AlignYType] = js.native
+    var alignY: js.UndefOr[AlignYType] = js.undefined
     
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     var position: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object HtmlProps {
     
@@ -460,11 +455,11 @@ object Guide {
       
       @scala.inline
       def setPosition(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+      def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
@@ -480,28 +475,27 @@ object Guide {
     }
   }
   
-  @js.native
   trait ImageProps extends StObject {
     
     var end: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
     var start: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ImageProps {
     
@@ -516,11 +510,11 @@ object Guide {
       
       @scala.inline
       def setEnd(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -554,11 +548,11 @@ object Guide {
       
       @scala.inline
       def setStart(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -580,22 +574,21 @@ object Guide {
     }
   }
   
-  @js.native
   trait LineProps extends StObject {
     
     var end: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var lineStyle: js.UndefOr[line] = js.native
+    var lineStyle: js.UndefOr[line] = js.undefined
     
     var start: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var text: js.UndefOr[AutoRotate] = js.native
+    var text: js.UndefOr[AutoRotate] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object LineProps {
     
@@ -610,11 +603,11 @@ object Guide {
       
       @scala.inline
       def setEnd(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -630,11 +623,11 @@ object Guide {
       
       @scala.inline
       def setStart(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -656,23 +649,22 @@ object Guide {
     }
   }
   
-  @js.native
   trait RegionFilterProps extends StObject {
     
     @JSName("apply")
-    var apply: js.UndefOr[js.Array[_]] = js.native
+    var apply: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     var end: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
     var start: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object RegionFilterProps {
     
@@ -686,7 +678,7 @@ object Guide {
     implicit class RegionFilterPropsMutableBuilder[Self <: RegionFilterProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setApply(value: js.Array[_]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      def setApply(value: js.Array[js.Any]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
@@ -702,11 +694,11 @@ object Guide {
       
       @scala.inline
       def setEnd(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -716,11 +708,11 @@ object Guide {
       
       @scala.inline
       def setStart(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -736,20 +728,19 @@ object Guide {
     }
   }
   
-  @js.native
   trait RegionProps extends StObject {
     
     var end: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
     var start: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var style: js.UndefOr[background] = js.native
+    var style: js.UndefOr[background] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object RegionProps {
     
@@ -764,11 +755,11 @@ object Guide {
       
       @scala.inline
       def setEnd(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+      def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
       @scala.inline
       def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -778,11 +769,11 @@ object Guide {
       
       @scala.inline
       def setStart(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+      def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
@@ -804,22 +795,21 @@ object Guide {
     }
   }
   
-  @js.native
   trait TextProps extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     var position: js.UndefOr[
-        js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-      ] = js.native
+        js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+      ] = js.undefined
     
-    var style: js.UndefOr[text] = js.native
+    var style: js.UndefOr[text] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
   }
   object TextProps {
     
@@ -852,11 +842,11 @@ object Guide {
       
       @scala.inline
       def setPosition(
-        value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+        value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
       ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+      def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)

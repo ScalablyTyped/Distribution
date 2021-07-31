@@ -5,18 +5,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.hide
 import typings.arcgisJsApi.arcgisJsApiStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildingGroupSublayerProperties extends BuildingSublayerProperties {
+trait BuildingGroupSublayerProperties
+  extends StObject
+     with BuildingSublayerProperties {
   
   /**
     * Indicates how the sublayer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html#listMode)
     */
-  var listMode: js.UndefOr[show | hide | `hide-children`] = js.native
+  var listMode: js.UndefOr[show | hide | `hide-children`] = js.undefined
 }
 object BuildingGroupSublayerProperties {
   

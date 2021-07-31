@@ -9,7 +9,6 @@ import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object revWalkMod {
@@ -18,9 +17,9 @@ object revWalkMod {
   @js.native
   class Revwalk () extends StObject {
     
-    def fastWalk(maxCount: Double): js.Promise[_] = js.native
+    def fastWalk(maxCount: Double): js.Promise[js.Any] = js.native
     
-    def fileHistoryWalk(filePath: String, maxCount: Double): js.Promise[js.Array[_]] = js.native
+    def fileHistoryWalk(filePath: String, maxCount: Double): js.Promise[js.Array[js.Any]] = js.native
     
     def getCommits(count: Double): js.Promise[js.Array[Commit]] = js.native
     
@@ -69,9 +68,12 @@ object revWalkMod {
   /* static members */
   object Revwalk {
     
-    @JSImport("nodegit/rev-walk", "Revwalk.create")
+    @JSImport("nodegit/rev-walk", "Revwalk")
     @js.native
-    def create(repo: Repository): Revwalk = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(repo: Repository): Revwalk = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[Revwalk]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

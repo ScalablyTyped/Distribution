@@ -3,17 +3,15 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait I extends StObject {
   
-  var i: Double = js.native
+  var i: Double
   
-  var r: BigInteger = js.native
+  var r: BigInteger
   
-  var s: BigInteger = js.native
+  var s: BigInteger
 }
 object I {
   

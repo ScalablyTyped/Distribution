@@ -2,36 +2,34 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionType extends StObject {
   
   /**
     * The configuration properties for the action type.
     */
-  var actionConfigurationProperties: js.UndefOr[ActionConfigurationPropertyList] = js.native
+  var actionConfigurationProperties: js.UndefOr[ActionConfigurationPropertyList] = js.undefined
   
   /**
     * Represents information about an action type.
     */
-  var id: ActionTypeId = js.native
+  var id: ActionTypeId
   
   /**
     * The details of the input artifact for the action, such as its commit ID.
     */
-  var inputArtifactDetails: ArtifactDetails = js.native
+  var inputArtifactDetails: ArtifactDetails
   
   /**
     * The details of the output artifact of the action, such as its commit ID.
     */
-  var outputArtifactDetails: ArtifactDetails = js.native
+  var outputArtifactDetails: ArtifactDetails
   
   /**
     * The settings for the action type.
     */
-  var settings: js.UndefOr[ActionTypeSettings] = js.native
+  var settings: js.UndefOr[ActionTypeSettings] = js.undefined
 }
 object ActionType {
   

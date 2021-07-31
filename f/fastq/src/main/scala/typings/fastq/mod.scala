@@ -3,52 +3,52 @@ package typings.fastq
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[C, T, R](context: C, worker: worker[C, T, R], concurrency: Double): queue[T, R] = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queue[T, R]]
+  @scala.inline
+  def apply[C, T, R](worker: worker[C, T, R], concurrency: Double): queue[T, R] = (^.asInstanceOf[js.Dynamic].apply(worker.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any])).asInstanceOf[queue[T, R]]
+  
   @JSImport("fastq", JSImport.Namespace)
   @js.native
-  def apply[C, T, R](context: C, worker: worker[C, T, R], concurrency: Double): queue[T, R] = js.native
-  @JSImport("fastq", JSImport.Namespace)
-  @js.native
-  def apply[C, T, R](worker: worker[C, T, R], concurrency: Double): queue[T, R] = js.native
+  val ^ : js.Any = js.native
   
   type done[R] = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[R], Unit]
   
   type errorHandler[T] = js.Function2[/* err */ Error, /* task */ T, Unit]
   
-  @js.native
   trait queue[T, R] extends StObject {
     
-    var concurrency: Double = js.native
+    var concurrency: Double
     
-    def drain(): js.Any = js.native
+    def drain(): js.Any
     
-    def empty(): Unit = js.native
+    def empty(): Unit
     
-    def error(handler: errorHandler[_]): Unit = js.native
+    def error(handler: errorHandler[js.Any]): Unit
     
-    def getQueue(): js.Array[T] = js.native
+    def getQueue(): js.Array[T]
     
-    def idle(): Boolean = js.native
+    def idle(): Boolean
     
-    def kill(): js.Any = js.native
+    def kill(): js.Any
     
-    def killAndDrain(): js.Any = js.native
+    def killAndDrain(): js.Any
     
-    def length(): Double = js.native
+    def length(): Double
     
-    def pause(): js.Any = js.native
+    def pause(): js.Any
     
-    def push(task: T, done: done[R]): Unit = js.native
+    def push(task: T, done: done[R]): Unit
     
-    def resume(): js.Any = js.native
+    def resume(): js.Any
     
-    def saturated(): Unit = js.native
+    def saturated(): Unit
     
-    def unshift(task: T, done: done[R]): Unit = js.native
+    def unshift(task: T, done: done[R]): Unit
   }
   object queue {
     
@@ -57,7 +57,7 @@ object mod {
       concurrency: Double,
       drain: () => js.Any,
       empty: () => Unit,
-      error: errorHandler[_] => Unit,
+      error: errorHandler[js.Any] => Unit,
       getQueue: () => js.Array[T],
       idle: () => Boolean,
       kill: () => js.Any,
@@ -74,7 +74,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class queueMutableBuilder[Self <: queue[_, _], T, R] (val x: Self with (queue[T, R])) extends AnyVal {
+    implicit class queueMutableBuilder[Self <: queue[?, ?], T, R] (val x: Self & (queue[T, R])) extends AnyVal {
       
       @scala.inline
       def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
@@ -86,7 +86,7 @@ object mod {
       def setEmpty(value: () => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setError(value: errorHandler[_] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      def setError(value: errorHandler[js.Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetQueue(value: () => js.Array[T]): Self = StObject.set(x, "getQueue", js.Any.fromFunction0(value))

@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait LineLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginArrowheadLength: js.UndefOr[Boolean] = js.native
+  var beginArrowheadLength: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginArrowheadStyle: js.UndefOr[Boolean] = js.native
+  var beginArrowheadStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginArrowheadWidth: js.UndefOr[Boolean] = js.native
+  var beginArrowheadWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginConnectedShape: js.UndefOr[ShapeLoadOptions] = js.native
+  var beginConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginConnectedSite: js.UndefOr[Boolean] = js.native
+  var beginConnectedSite: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var connectorType: js.UndefOr[Boolean] = js.native
+  var connectorType: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endArrowheadLength: js.UndefOr[Boolean] = js.native
+  var endArrowheadLength: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endArrowheadStyle: js.UndefOr[Boolean] = js.native
+  var endArrowheadStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endArrowheadWidth: js.UndefOr[Boolean] = js.native
+  var endArrowheadWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endConnectedShape: js.UndefOr[ShapeLoadOptions] = js.native
+  var endConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endConnectedSite: js.UndefOr[Boolean] = js.native
+  var endConnectedSite: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isBeginConnected: js.UndefOr[Boolean] = js.native
+  var isBeginConnected: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isEndConnected: js.UndefOr[Boolean] = js.native
+  var isEndConnected: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait LineLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shape: js.UndefOr[ShapeLoadOptions] = js.native
+  var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }
 object LineLoadOptions {
   

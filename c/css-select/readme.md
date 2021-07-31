@@ -10,9 +10,9 @@ a CSS selector compiler/engine
 | ------------------ | :-------------: |
 | Full name          | css-select |
 | Keywords           | css, selector, sizzle |
-| # releases         | 5 |
-| # dependents       | 104 |
-| # downloads        | 589164120 |
+| # releases         | 10 |
+| # dependents       | 116 |
+| # downloads        | 677134218 |
 | # stars            | 7 |
 
 ## Links

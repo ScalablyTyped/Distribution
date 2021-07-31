@@ -3,13 +3,13 @@ package typings.arcgisJsApi.global.esri
 import typings.arcgisJsApi.esri.ButtonMenuViewModelProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.ButtonMenuViewModel")
 @js.native
 class ButtonMenuViewModelCls ()
-  extends typings.arcgisJsApi.esri.ButtonMenuViewModel {
+  extends StObject
+     with typings.arcgisJsApi.esri.ButtonMenuViewModel {
   def this(properties: ButtonMenuViewModelProperties) = this()
 }

@@ -2,35 +2,33 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentLoadCpuData extends StObject {
   
-  var load: Double = js.native
+  var load: Double
   
-  var load_idle: Double = js.native
+  var load_idle: Double
   
-  var load_irq: Double = js.native
+  var load_irq: Double
   
-  var load_nice: Double = js.native
+  var load_nice: Double
   
-  var load_system: Double = js.native
+  var load_system: Double
   
-  var load_user: Double = js.native
+  var load_user: Double
   
-  var raw_load: Double = js.native
+  var raw_load: Double
   
-  var raw_load_idle: Double = js.native
+  var raw_load_idle: Double
   
-  var raw_load_irq: Double = js.native
+  var raw_load_irq: Double
   
-  var raw_load_nice: Double = js.native
+  var raw_load_nice: Double
   
-  var raw_load_system: Double = js.native
+  var raw_load_system: Double
   
-  var raw_load_user: Double = js.native
+  var raw_load_user: Double
 }
 object CurrentLoadCpuData {
   

@@ -3,14 +3,16 @@ package typings.jimpPluginRotate
 import typings.jimpCore.etcMod.ImageCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-rotate", JSImport.Default)
+  @JSImport("@jimp/plugin-rotate", JSImport.Namespace)
   @js.native
-  def default(): Rotate = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Rotate = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Rotate]
   
   @js.native
   trait Rotate extends StObject {

@@ -2,13 +2,11 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDailyTrigger extends StObject {
   
-  var DaysInterval: Double = js.native
+  var DaysInterval: Double
 }
 object IDailyTrigger {
   

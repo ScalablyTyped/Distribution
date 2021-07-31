@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressComponent extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  var district: String = js.native
+  var district: String
   
-  var province: String = js.native
+  var province: String
   
-  var street: String = js.native
+  var street: String
   
-  var streetNumber: String = js.native
+  var streetNumber: String
 }
 object AddressComponent {
   

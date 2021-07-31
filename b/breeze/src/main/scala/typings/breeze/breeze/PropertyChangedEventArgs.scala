@@ -2,23 +2,21 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyChangedEventArgs extends StObject {
   
-  var entity: Entity = js.native
+  var entity: Entity
   
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
-  var oldValue: js.Any = js.native
+  var oldValue: js.Any
   
-  var parent: js.Any = js.native
+  var parent: js.Any
   
-  var property: IProperty = js.native
+  var property: IProperty
   
-  var propertyName: String = js.native
+  var propertyName: String
 }
 object PropertyChangedEventArgs {
   

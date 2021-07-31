@@ -4,15 +4,16 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorFormatMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_format", "tensorToString")
+  @JSImport("@tensorflow/tfjs-core/dist/tensor_format", JSImport.Namespace)
   @js.native
-  def tensorToString(vals: js.Array[String], shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/tensor_format", "tensorToString")
-  @js.native
-  def tensorToString(vals: TypedArray, shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def tensorToString(vals: js.Array[String], shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorToString")(vals.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def tensorToString(vals: TypedArray, shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorToString")(vals.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[String]
 }

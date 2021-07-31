@@ -10,9 +10,9 @@ TypeScript typings for Cloud Pub/Sub API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.pubsub |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 57 |
+| # downloads        | 1265 |
 | # stars            | 0 |
 
 ## Links

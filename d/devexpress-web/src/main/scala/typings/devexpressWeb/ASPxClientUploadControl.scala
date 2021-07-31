@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxUploadControl control.
   */
 @js.native
-trait ASPxClientUploadControl extends ASPxClientControl {
+trait ASPxClientUploadControl
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Adds a new file input element to the ASPxUploadControl.

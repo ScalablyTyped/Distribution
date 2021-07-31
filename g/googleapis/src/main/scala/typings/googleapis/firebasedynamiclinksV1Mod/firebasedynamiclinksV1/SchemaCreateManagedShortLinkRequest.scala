@@ -2,20 +2,18 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to create a managed Short Dynamic Link.
   */
-@js.native
 trait SchemaCreateManagedShortLinkRequest extends StObject {
   
   /**
     * Information about the Dynamic Link to be shortened. [Learn
     * more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
     */
-  var dynamicLinkInfo: js.UndefOr[SchemaDynamicLinkInfo] = js.native
+  var dynamicLinkInfo: js.UndefOr[SchemaDynamicLinkInfo] = js.undefined
   
   /**
     * Full long Dynamic Link URL with desired query parameters specified. For
@@ -24,7 +22,7 @@ trait SchemaCreateManagedShortLinkRequest extends StObject {
     * [Learn
     * more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
     */
-  var longDynamicLink: js.UndefOr[String] = js.native
+  var longDynamicLink: js.UndefOr[String] = js.undefined
   
   /**
     * Link name to associate with the link. It&#39;s used for marketer to
@@ -32,18 +30,18 @@ trait SchemaCreateManagedShortLinkRequest extends StObject {
     * (https://console.firebase.google.com/). Links must be named to be
     * tracked.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Google SDK version. Version takes the form
     * &quot;$major.$minor.$patch&quot;
     */
-  var sdkVersion: js.UndefOr[String] = js.native
+  var sdkVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Short Dynamic Link suffix. Optional.
     */
-  var suffix: js.UndefOr[SchemaSuffix] = js.native
+  var suffix: js.UndefOr[SchemaSuffix] = js.undefined
 }
 object SchemaCreateManagedShortLinkRequest {
   

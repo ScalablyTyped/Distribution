@@ -3,33 +3,31 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsGetCardResponseData extends StObject {
   
-  var archived: Boolean = js.native
+  var archived: Boolean
   
-  var column_url: String = js.native
+  var column_url: String
   
-  var content_url: String = js.native
+  var content_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var creator: Avatarurl = js.native
+  var creator: Avatarurl
   
-  var id: Double = js.native
+  var id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var note: String = js.native
+  var note: String
   
-  var project_url: String = js.native
+  var project_url: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object ProjectsGetCardResponseData {
   

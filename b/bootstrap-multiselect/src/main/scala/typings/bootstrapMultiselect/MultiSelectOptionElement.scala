@@ -3,25 +3,23 @@ package typings.bootstrapMultiselect
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiSelectOptionElement extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var children: js.UndefOr[js.Array[MultiSelectOptionElement]] = js.native
+  var children: js.UndefOr[js.Array[MultiSelectOptionElement]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 object MultiSelectOptionElement {
   

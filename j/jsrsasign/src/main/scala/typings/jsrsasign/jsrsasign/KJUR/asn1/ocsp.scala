@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,7 +53,9 @@ object ocsp {
     * o = new KJUR.asn1.ocsp.CertID({namehash: "1a...", keyhash: "ad...", serial: "1234", alg: "sha256"});
     */
   @js.native
-  trait CertID extends ASN1Object {
+  trait CertID
+    extends StObject
+       with ASN1Object {
     
     /**
       * set CertID ASN.1 object by PEM certificates.
@@ -84,14 +85,13 @@ object ocsp {
     def setByValue(issuerNameHashHex: String, issuerKeyHashHex: String, serialNumberHex: String, algName: String): Unit = js.native
   }
   
-  @js.native
   trait CertificateRequest extends StObject {
     
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
-    var issuerCert: String = js.native
+    var issuerCert: String
     
-    var subjectCert: String = js.native
+    var subjectCert: String
   }
   object CertificateRequest {
     
@@ -118,10 +118,9 @@ object ocsp {
     }
   }
   
-  @js.native
   trait CertificateRequestList extends StObject {
     
-    var reqList: js.Array[CertificateRequest] = js.native
+    var reqList: js.Array[CertificateRequest]
   }
   object CertificateRequestList {
     
@@ -163,8 +162,9 @@ object ocsp {
     *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
     * ]});
     */
-  @js.native
-  trait OCSPRequest extends ASN1Object
+  trait OCSPRequest
+    extends StObject
+       with ASN1Object
   object OCSPRequest {
     
     @scala.inline
@@ -193,16 +193,15 @@ object ocsp {
     */
   object OCSPUtil {
     
-    @js.native
     trait ResponseInfo extends StObject {
       
-      var certStatus: String = js.native
+      var certStatus: String
       
-      var nextUpdate: String = js.native
+      var nextUpdate: String
       
-      var responseStatus: Double = js.native
+      var responseStatus: Double
       
-      var thisUpdate: String = js.native
+      var thisUpdate: String
     }
     object ResponseInfo {
       
@@ -252,8 +251,9 @@ object ocsp {
     * // constructor with values
     * o = new KJUR.asn1.ocsp.Request({namehash: "1a...", keyhash: "ad...", serial: "1234", alg: "sha256"});
     */
-  @js.native
-  trait Request extends ASN1Object
+  trait Request
+    extends StObject
+       with ASN1Object
   object Request {
     
     @scala.inline
@@ -295,8 +295,9 @@ object ocsp {
     *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
     * ]});
     */
-  @js.native
-  trait TBSRequest extends ASN1Object {
+  trait TBSRequest
+    extends StObject
+       with ASN1Object {
     
     /**
       * set TBSRequest ASN.1 object by array of parameters.
@@ -308,7 +309,7 @@ object ocsp {
       *   {issuerCert: "-----BEGIN...", subjectCert: "-----BEGIN...", alg: "sha256"}
       * ]);
       */
-    def setRequestListByParam(aParams: js.Array[CertificateRequest]): Unit = js.native
+    def setRequestListByParam(aParams: js.Array[CertificateRequest]): Unit
   }
   object TBSRequest {
     

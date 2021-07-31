@@ -5,19 +5,17 @@ import typings.devextreme.mod.DevExpress.viz.basePointObject
 import typings.devextreme.mod.DevExpress.viz.dxChartAnnotationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementModelTarget[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[basePointObject | dxChartAnnotationConfig | js.Any] = js.native
+  var target: js.UndefOr[basePointObject | dxChartAnnotationConfig | js.Any] = js.undefined
 }
 object ElementModelTarget {
   
@@ -28,7 +26,7 @@ object ElementModelTarget {
   }
   
   @scala.inline
-  implicit class ElementModelTargetMutableBuilder[Self <: ElementModelTarget[_], T] (val x: Self with ElementModelTarget[T]) extends AnyVal {
+  implicit class ElementModelTargetMutableBuilder[Self <: ElementModelTarget[?], T] (val x: Self & ElementModelTarget[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

@@ -44,26 +44,29 @@ import typings.activexMsforms.MSForms.fmVerticalScrollBarSide
 import typings.activexMsforms.MSForms.fmZOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexMsformsNumbers {
   
   @js.native
   sealed trait `-1`
-    extends fmMode
+    extends StObject
+       with fmMode
        with fmOrientation
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
-  sealed trait `-2` extends fmMode
+  sealed trait `-2`
+    extends StObject
+       with fmMode
   @scala.inline
   def `-2`: `-2` = -2.asInstanceOf[`-2`]
   
   @js.native
   sealed trait `0`
-    extends fmAction
+    extends StObject
+       with fmAction
        with fmAlignment
        with fmBackStyle
        with fmBorderStyle
@@ -108,7 +111,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `1`
-    extends fmAction
+    extends StObject
+       with fmAction
        with fmAlignment
        with fmBackStyle
        with fmBorderStyle
@@ -151,7 +155,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `10`
-    extends fmIMEMode
+    extends StObject
+       with fmIMEMode
        with fmMousePointer
        with fmPicturePosition
        with fmScrollAction
@@ -161,7 +166,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `11`
-    extends fmIMEMode
+    extends StObject
+       with fmIMEMode
        with fmMousePointer
        with fmPicturePosition
        with fmTransitionEffect
@@ -170,7 +176,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `12`
-    extends fmIMEMode
+    extends StObject
+       with fmIMEMode
        with fmMousePointer
        with fmPicturePosition
        with fmTransitionEffect
@@ -178,23 +185,30 @@ object activexMsformsNumbers {
   def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
-  sealed trait `13` extends fmMousePointer
+  sealed trait `13`
+    extends StObject
+       with fmMousePointer
   @scala.inline
   def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
-  sealed trait `14` extends fmMousePointer
+  sealed trait `14`
+    extends StObject
+       with fmMousePointer
   @scala.inline
   def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
-  sealed trait `15` extends fmMousePointer
+  sealed trait `15`
+    extends StObject
+       with fmMousePointer
   @scala.inline
   def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `2`
-    extends fmAction
+    extends StObject
+       with fmAction
        with fmBorders
        with fmButtonEffect
        with fmCycle
@@ -228,7 +242,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `3`
-    extends fmAction
+    extends StObject
+       with fmAction
        with fmBorders
        with fmDisplayStyle
        with fmDropButtonStyle
@@ -253,7 +268,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `4`
-    extends fmDisplayStyle
+    extends StObject
+       with fmDisplayStyle
        with fmIMEMode
        with fmPicPosition
        with fmPictureAlignment
@@ -266,7 +282,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `5`
-    extends fmDisplayStyle
+    extends StObject
+       with fmDisplayStyle
        with fmIMEMode
        with fmPicPosition
        with fmPicturePosition
@@ -278,7 +295,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `6`
-    extends fmDisplayStyle
+    extends StObject
+       with fmDisplayStyle
        with fmIMEMode
        with fmMousePointer
        with fmPicPosition
@@ -292,7 +310,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `7`
-    extends fmDisplayStyle
+    extends StObject
+       with fmDisplayStyle
        with fmIMEMode
        with fmMousePointer
        with fmPicPosition
@@ -305,7 +324,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `8`
-    extends fmIMEMode
+    extends StObject
+       with fmIMEMode
        with fmMousePointer
        with fmPicPosition
        with fmPicturePosition
@@ -317,7 +337,8 @@ object activexMsformsNumbers {
   
   @js.native
   sealed trait `9`
-    extends fmIMEMode
+    extends StObject
+       with fmIMEMode
        with fmMousePointer
        with fmPicturePosition
        with fmScrollAction
@@ -326,7 +347,9 @@ object activexMsformsNumbers {
   def `9`: `9` = 9.asInstanceOf[`9`]
   
   @js.native
-  sealed trait `99` extends fmMousePointer
+  sealed trait `99`
+    extends StObject
+       with fmMousePointer
   @scala.inline
   def `99`: `99` = 99.asInstanceOf[`99`]
 }

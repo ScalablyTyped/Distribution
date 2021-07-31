@@ -2,7 +2,6 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object migrationCreateCommandMod {
@@ -29,11 +28,14 @@ object migrationCreateCommandMod {
   /* static members */
   object MigrationCreateCommand {
     
+    @JSImport("typeorm/commands/MigrationCreateCommand", "MigrationCreateCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets contents of the migration file.
       */
-    @JSImport("typeorm/commands/MigrationCreateCommand", "MigrationCreateCommand.getTemplate")
-    @js.native
-    def getTemplate(name: String, timestamp: Double): String = js.native
+    @scala.inline
+    def getTemplate(name: String, timestamp: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

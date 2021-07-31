@@ -2,20 +2,18 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A metaline is a list of properties that are displayed along with the search
   * result to provide context.
   */
-@js.native
 trait SchemaMetaline extends StObject {
   
   /**
     * The list of displayed properties for the metaline.
     */
-  var properties: js.UndefOr[js.Array[SchemaDisplayedProperty]] = js.native
+  var properties: js.UndefOr[js.Array[SchemaDisplayedProperty]] = js.undefined
 }
 object SchemaMetaline {
   

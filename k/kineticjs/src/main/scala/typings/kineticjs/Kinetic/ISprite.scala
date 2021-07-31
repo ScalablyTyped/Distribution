@@ -2,13 +2,14 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISprite extends IShape {
+trait ISprite
+  extends StObject
+     with IShape {
   
-  def afterFrame(index: Double, func: js.Function0[_]): js.Any = js.native
+  def afterFrame(index: Double, func: js.Function0[js.Any]): js.Any = js.native
   
   def getAnimation(): String = js.native
   

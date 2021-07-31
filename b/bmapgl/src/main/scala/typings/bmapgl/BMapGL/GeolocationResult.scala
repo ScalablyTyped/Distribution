@@ -2,15 +2,13 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationResult extends StObject {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var point: Point = js.native
+  var point: Point
 }
 object GeolocationResult {
   

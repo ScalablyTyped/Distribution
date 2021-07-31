@@ -5,85 +5,83 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumn extends StObject {
   
-  var aggregates: js.UndefOr[js.Any] = js.native
+  var aggregates: js.UndefOr[js.Any] = js.undefined
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.native
+  var columns: js.UndefOr[js.Any] = js.undefined
   
-  var command: js.UndefOr[String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem] = js.native
+  var command: js.UndefOr[String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | DataSourceOptions] = js.native
+  var dataSource: js.UndefOr[DataSource | DataSourceOptions] = js.undefined
   
-  var dataTextField: js.UndefOr[String] = js.native
+  var dataTextField: js.UndefOr[String] = js.undefined
   
-  var dataValueField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.undefined
   
-  var editable: js.UndefOr[js.Function] = js.native
+  var editable: js.UndefOr[js.Function] = js.undefined
   
   var editor: js.UndefOr[
     js.Function2[/* container */ JQuery, /* options */ GridColumnEditorOptions, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var encoded: js.UndefOr[Boolean] = js.native
+  var encoded: js.UndefOr[Boolean] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | GridColumnFilterable] = js.native
+  var filterable: js.UndefOr[Boolean | GridColumnFilterable] = js.undefined
   
-  var footerAttributes: js.UndefOr[js.Any] = js.native
+  var footerAttributes: js.UndefOr[js.Any] = js.undefined
   
-  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var groupFooterTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupFooterTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var groupHeaderColumnTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupHeaderColumnTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var groupHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var groupable: js.UndefOr[Boolean | GridColumnGroupable] = js.native
+  var groupable: js.UndefOr[Boolean | GridColumnGroupable] = js.undefined
   
-  var headerAttributes: js.UndefOr[js.Any] = js.native
+  var headerAttributes: js.UndefOr[js.Any] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var lockable: js.UndefOr[Boolean] = js.native
+  var lockable: js.UndefOr[Boolean] = js.undefined
   
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
   
-  var menu: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.undefined
   
-  var minResizableWidth: js.UndefOr[Double] = js.native
+  var minResizableWidth: js.UndefOr[Double] = js.undefined
   
-  var minScreenWidth: js.UndefOr[Double] = js.native
+  var minScreenWidth: js.UndefOr[Double] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | GridColumnSortable] = js.native
+  var sortable: js.UndefOr[Boolean | GridColumnSortable] = js.undefined
   
-  var stickable: js.UndefOr[Boolean] = js.native
+  var stickable: js.UndefOr[Boolean] = js.undefined
   
-  var sticky: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object GridColumn {
   

@@ -2,21 +2,19 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ReceivedMessage. */
-@js.native
 trait IReceivedMessage extends StObject {
   
   /** ReceivedMessage ackId */
-  var ackId: js.UndefOr[String | Null] = js.native
+  var ackId: js.UndefOr[String | Null] = js.undefined
   
   /** ReceivedMessage deliveryAttempt */
-  var deliveryAttempt: js.UndefOr[Double | Null] = js.native
+  var deliveryAttempt: js.UndefOr[Double | Null] = js.undefined
   
   /** ReceivedMessage message */
-  var message: js.UndefOr[IPubsubMessage | Null] = js.native
+  var message: js.UndefOr[IPubsubMessage | Null] = js.undefined
 }
 object IReceivedMessage {
   

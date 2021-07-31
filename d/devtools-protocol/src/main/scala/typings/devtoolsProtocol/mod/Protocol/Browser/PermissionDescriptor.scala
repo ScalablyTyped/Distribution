@@ -2,38 +2,36 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionDescriptor extends StObject {
   
   /**
     * For "clipboard" permission, may specify allowWithoutSanitization.
     */
-  var allowWithoutSanitization: js.UndefOr[Boolean] = js.native
+  var allowWithoutSanitization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of permission.
     * See https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/permissions/permission_descriptor.idl for valid permission names.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * For "camera" permission, may specify panTiltZoom.
     */
-  var panTiltZoom: js.UndefOr[Boolean] = js.native
+  var panTiltZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For "midi" permission, may also specify sysex control.
     */
-  var sysex: js.UndefOr[Boolean] = js.native
+  var sysex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For "push" permission, may specify userVisibleOnly.
     * Note that userVisibleOnly = true is the only currently supported type.
     */
-  var userVisibleOnly: js.UndefOr[Boolean] = js.native
+  var userVisibleOnly: js.UndefOr[Boolean] = js.undefined
 }
 object PermissionDescriptor {
   

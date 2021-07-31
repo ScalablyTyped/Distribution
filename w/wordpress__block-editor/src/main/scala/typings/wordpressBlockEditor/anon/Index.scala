@@ -2,15 +2,13 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var rootClientId: js.UndefOr[String] = js.native
+  var rootClientId: js.UndefOr[String] = js.undefined
 }
 object Index {
   

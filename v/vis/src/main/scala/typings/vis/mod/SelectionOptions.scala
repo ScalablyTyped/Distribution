@@ -2,15 +2,13 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionOptions extends StObject {
   
-  var highlightEdges: js.UndefOr[Boolean] = js.native
+  var highlightEdges: js.UndefOr[Boolean] = js.undefined
   
-  var unselectAll: js.UndefOr[Boolean] = js.native
+  var unselectAll: js.UndefOr[Boolean] = js.undefined
 }
 object SelectionOptions {
   

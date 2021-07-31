@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filledseats extends StObject {
   
-  var filled_seats: Double = js.native
+  var filled_seats: Double
   
-  var name: String = js.native
+  var name: String
   
-  var private_repos: Double = js.native
+  var private_repos: Double
   
-  var seats: Double = js.native
+  var seats: Double
   
-  var space: Double = js.native
+  var space: Double
 }
 object Filledseats {
   

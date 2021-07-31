@@ -2,50 +2,50 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EducationClass extends Entity {
+trait EducationClass
+  extends StObject
+     with Entity {
   
   // Class code used by the school to identify the class.
-  var classCode: js.UndefOr[NullableOption[String]] = js.native
+  var classCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Entity who created the class
-  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Description of the class.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the class.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // ID of the class from the syncing system.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the class in the syncing system.
-  var externalName: js.UndefOr[NullableOption[String]] = js.native
+  var externalName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // How this class was created. The possible values are: sis, manual, unknownFutureValue.
-  var externalSource: js.UndefOr[NullableOption[EducationExternalSource]] = js.native
+  var externalSource: js.UndefOr[NullableOption[EducationExternalSource]] = js.undefined
   
   // The directory group corresponding to this class.
-  var group: js.UndefOr[NullableOption[Group]] = js.native
+  var group: js.UndefOr[NullableOption[Group]] = js.undefined
   
   // Mail name for sending email to all members, if this is enabled.
-  var mailNickname: js.UndefOr[String] = js.native
+  var mailNickname: js.UndefOr[String] = js.undefined
   
   // All users in the class. Nullable.
-  var members: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.native
+  var members: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.undefined
   
   // All schools that this class is associated with. Nullable.
-  var schools: js.UndefOr[NullableOption[js.Array[EducationSchool]]] = js.native
+  var schools: js.UndefOr[NullableOption[js.Array[EducationSchool]]] = js.undefined
   
   // All teachers in the class. Nullable.
-  var teachers: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.native
+  var teachers: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.undefined
   
   // Term for this class.
-  var term: js.UndefOr[NullableOption[EducationTerm]] = js.native
+  var term: js.UndefOr[NullableOption[EducationTerm]] = js.undefined
 }
 object EducationClass {
   

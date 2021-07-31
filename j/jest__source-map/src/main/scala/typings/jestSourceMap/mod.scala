@@ -4,15 +4,16 @@ import typings.callsites.mod.CallSite
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jest/source-map", "getCallsite")
+  @JSImport("@jest/source-map", JSImport.Namespace)
   @js.native
-  def getCallsite(level: Double): CallSite = js.native
-  @JSImport("@jest/source-map", "getCallsite")
-  @js.native
-  def getCallsite(level: Double, sourceMaps: Record[String, String]): CallSite = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getCallsite(level: Double): CallSite = ^.asInstanceOf[js.Dynamic].applyDynamic("getCallsite")(level.asInstanceOf[js.Any]).asInstanceOf[CallSite]
+  @scala.inline
+  def getCallsite(level: Double, sourceMaps: Record[String, String]): CallSite = (^.asInstanceOf[js.Dynamic].applyDynamic("getCallsite")(level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[CallSite]
 }

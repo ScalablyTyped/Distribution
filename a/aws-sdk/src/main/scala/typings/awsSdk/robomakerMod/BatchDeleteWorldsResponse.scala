@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteWorldsResponse extends StObject {
   
   /**
     * A list of unprocessed worlds associated with the call. These worlds were not deleted.
     */
-  var unprocessedWorlds: js.UndefOr[Arns] = js.native
+  var unprocessedWorlds: js.UndefOr[Arns] = js.undefined
 }
 object BatchDeleteWorldsResponse {
   

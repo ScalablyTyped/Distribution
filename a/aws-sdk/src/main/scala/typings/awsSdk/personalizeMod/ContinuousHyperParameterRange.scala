@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousHyperParameterRange extends StObject {
   
   /**
     * The maximum allowable value for the hyperparameter.
     */
-  var maxValue: js.UndefOr[ContinuousMaxValue] = js.native
+  var maxValue: js.UndefOr[ContinuousMaxValue] = js.undefined
   
   /**
     * The minimum allowable value for the hyperparameter.
     */
-  var minValue: js.UndefOr[ContinuousMinValue] = js.native
+  var minValue: js.UndefOr[ContinuousMinValue] = js.undefined
   
   /**
     * The name of the hyperparameter.
     */
-  var name: js.UndefOr[ParameterName] = js.native
+  var name: js.UndefOr[ParameterName] = js.undefined
 }
 object ContinuousHyperParameterRange {
   

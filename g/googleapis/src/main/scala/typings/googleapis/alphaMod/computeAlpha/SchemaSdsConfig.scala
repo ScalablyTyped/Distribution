@@ -2,19 +2,17 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration to access the SDS server.
   */
-@js.native
 trait SchemaSdsConfig extends StObject {
   
   /**
     * The configuration to access the SDS server over GRPC.
     */
-  var grpcServiceConfig: js.UndefOr[SchemaGrpcServiceConfig] = js.native
+  var grpcServiceConfig: js.UndefOr[SchemaGrpcServiceConfig] = js.undefined
 }
 object SchemaSdsConfig {
   

@@ -4,7 +4,6 @@ import typings.twineSugarcube.extensionsMod.global.Array
 import typings.twineSugarcube.passageMod.Passage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyMod {

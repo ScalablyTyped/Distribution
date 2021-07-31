@@ -10,7 +10,6 @@ import typings.reactColor.mod.ColorResult
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editableInputMod {
@@ -24,22 +23,23 @@ object editableInputMod {
   trait EditableInput
     extends Component[EditableInputProps, js.Object, js.Any]
   
-  @js.native
-  trait EditableInputProps extends ClassAttributes[EditableInput] {
+  trait EditableInputProps
+    extends StObject
+       with ClassAttributes[EditableInput] {
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var dragLabel: js.UndefOr[String] = js.native
+    var dragLabel: js.UndefOr[String] = js.undefined
     
-    var dragMax: js.UndefOr[String] = js.native
+    var dragMax: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ColorChangeHandler] = js.native
+    var onChange: js.UndefOr[ColorChangeHandler] = js.undefined
     
-    var style: js.UndefOr[EditableInputStyles] = js.native
+    var style: js.UndefOr[EditableInputStyles] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object EditableInputProps {
     
@@ -96,14 +96,13 @@ object editableInputMod {
     }
   }
   
-  @js.native
   trait EditableInputStyles extends StObject {
     
-    var input: js.UndefOr[CSSProperties] = js.native
+    var input: js.UndefOr[CSSProperties] = js.undefined
     
-    var label: js.UndefOr[CSSProperties] = js.native
+    var label: js.UndefOr[CSSProperties] = js.undefined
     
-    var wrap: js.UndefOr[CSSProperties] = js.native
+    var wrap: js.UndefOr[CSSProperties] = js.undefined
   }
   object EditableInputStyles {
     

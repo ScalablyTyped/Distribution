@@ -6,19 +6,19 @@ import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
-  trait DefaultAddOptions extends QueueAddOptions {
+  trait DefaultAddOptions
+    extends StObject
+       with QueueAddOptions {
     
     /**
       Priority of operation. Operations with greater priority will be scheduled first.
       @default 0
       */
-    val priority: js.UndefOr[Double] = js.native
+    val priority: js.UndefOr[Double] = js.undefined
   }
   object DefaultAddOptions {
     
@@ -39,57 +39,56 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait Options[QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] extends StObject {
     
     /**
       Whether queue tasks within concurrency limit, are auto-executed as soon as they're added.
       @default true
       */
-    val autoStart: js.UndefOr[Boolean] = js.native
+    val autoStart: js.UndefOr[Boolean] = js.undefined
     
     /**
       Whether the task must finish in the given interval or will be carried over into the next interval count.
       @default false
       */
-    val carryoverConcurrencyCount: js.UndefOr[Boolean] = js.native
+    val carryoverConcurrencyCount: js.UndefOr[Boolean] = js.undefined
     
     /**
       Concurrency limit.
       Minimum: `1`.
       @default Infinity
       */
-    val concurrency: js.UndefOr[Double] = js.native
+    val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
       The length of time in milliseconds before the interval count resets. Must be finite.
       Minimum: `0`.
       @default 0
       */
-    val interval: js.UndefOr[Double] = js.native
+    val interval: js.UndefOr[Double] = js.undefined
     
     /**
       The max number of runs in the given interval of time.
       Minimum: `1`.
       @default Infinity
       */
-    val intervalCap: js.UndefOr[Double] = js.native
+    val intervalCap: js.UndefOr[Double] = js.undefined
     
     /**
       Class with a `enqueue` and `dequeue` method, and a `size` getter. See the [Custom QueueClass](https://github.com/sindresorhus/p-queue#custom-queueclass) section.
       */
-    val queueClass: js.UndefOr[Instantiable0[QueueType]] = js.native
+    val queueClass: js.UndefOr[Instantiable0[QueueType]] = js.undefined
     
     /**
       Whether or not a timeout is considered an exception.
       @default false
       */
-    var throwOnTimeout: js.UndefOr[Boolean] = js.native
+    var throwOnTimeout: js.UndefOr[Boolean] = js.undefined
     
     /**
       Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses if they haven't already.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -100,7 +99,7 @@ object optionsMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] (val x: Self with (Options[QueueType, QueueOptions])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], QueueType /* <: Queue[RunFunction, QueueOptions] */, QueueOptions /* <: QueueAddOptions */] (val x: Self & (Options[QueueType, QueueOptions])) extends AnyVal {
       
       @scala.inline
       def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])

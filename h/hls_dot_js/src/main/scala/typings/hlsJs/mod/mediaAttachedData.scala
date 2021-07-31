@@ -3,15 +3,13 @@ package typings.hlsJs.mod
 import typings.std.HTMLMediaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait mediaAttachedData extends StObject {
   
-  var media: HTMLMediaElement = js.native
+  var media: HTMLMediaElement
   
-  var mediaSource: String = js.native
+  var mediaSource: String
 }
 object mediaAttachedData {
   

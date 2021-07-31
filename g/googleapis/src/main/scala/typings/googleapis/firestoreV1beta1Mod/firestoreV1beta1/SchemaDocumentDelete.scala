@@ -2,7 +2,6 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DocumentDelete messages may be returned for the same logical delete, if
   * multiple targets are affected.
   */
-@js.native
 trait SchemaDocumentDelete extends StObject {
   
   /**
     * The resource name of the Document that was deleted.
     */
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
   /**
     * The read timestamp at which the delete was observed.  Greater or equal to
     * the `commit_time` of the delete.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * A set of target IDs for targets that previously matched this entity.
     */
-  var removedTargetIds: js.UndefOr[js.Array[Double]] = js.native
+  var removedTargetIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaDocumentDelete {
   

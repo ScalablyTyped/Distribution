@@ -12,43 +12,43 @@ import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.origin
 import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImgHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ImgHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
-  var crossorigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+  var crossorigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
-  var decoding: js.UndefOr[async | auto | sync] = js.native
+  var decoding: js.UndefOr[async | auto | sync] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   var loading: js.UndefOr[
     eager | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.`lazy`
-  ] = js.native
+  ] = js.undefined
   
-  var referrerPolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.native
+  var referrerPolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.undefined
   
-  var referrerpolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.native
+  var referrerpolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srcSet: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.undefined
   
-  var srcset: js.UndefOr[String] = js.native
+  var srcset: js.UndefOr[String] = js.undefined
   
-  var useMap: js.UndefOr[String] = js.native
+  var useMap: js.UndefOr[String] = js.undefined
   
-  var usemap: js.UndefOr[String] = js.native
+  var usemap: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ImgHTMLAttributes {
   
@@ -59,7 +59,7 @@ object ImgHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ImgHTMLAttributesMutableBuilder[Self <: ImgHTMLAttributes[_], T] (val x: Self with ImgHTMLAttributes[T]) extends AnyVal {
+  implicit class ImgHTMLAttributesMutableBuilder[Self <: ImgHTMLAttributes[?], T] (val x: Self & ImgHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])

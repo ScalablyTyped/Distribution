@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Local
 import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait ChartDeletedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait ChartDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var chartId: String = js.native
+  var chartId: String
   
   /**
     *
@@ -31,7 +29,7 @@ trait ChartDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -39,7 +37,7 @@ trait ChartDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var `type`: ChartDeleted = js.native
+  var `type`: ChartDeleted
   
   /**
     *
@@ -47,14 +45,14 @@ trait ChartDeletedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object ChartDeletedEventArgs {
   
   @scala.inline
-  def apply(chartId: String, source: EventSource | Local | Remote, `type`: ChartDeleted, worksheetId: String): ChartDeletedEventArgs = {
+  def apply(chartId: String, source: EventSource | Local | Remote, worksheetId: String): ChartDeletedEventArgs = {
     val __obj = js.Dynamic.literal(chartId = chartId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ChartDeleted")
     __obj.asInstanceOf[ChartDeletedEventArgs]
   }
   

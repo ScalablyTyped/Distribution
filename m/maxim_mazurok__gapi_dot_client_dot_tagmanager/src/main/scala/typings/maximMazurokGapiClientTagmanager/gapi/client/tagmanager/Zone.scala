@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Zone extends StObject {
   
   /** GTM Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** This Zone's boundary. */
-  var boundary: js.UndefOr[ZoneBoundary] = js.native
+  var boundary: js.UndefOr[ZoneBoundary] = js.undefined
   
   /** Containers that are children of this Zone. */
-  var childContainer: js.UndefOr[js.Array[ZoneChildContainer]] = js.native
+  var childContainer: js.UndefOr[js.Array[ZoneChildContainer]] = js.undefined
   
   /** GTM Container ID. */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /** The fingerprint of the GTM Zone as computed at storage time. This value is recomputed whenever the zone is modified. */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** Zone display name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** User notes on how to apply this zone in the container. */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /** GTM Zone's API relative path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Auto generated link to the tag manager UI */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /** This Zone's type restrictions. */
-  var typeRestriction: js.UndefOr[ZoneTypeRestriction] = js.native
+  var typeRestriction: js.UndefOr[ZoneTypeRestriction] = js.undefined
   
   /** GTM Workspace ID. */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
   
   /** The Zone ID uniquely identifies the GTM Zone. */
-  var zoneId: js.UndefOr[String] = js.native
+  var zoneId: js.UndefOr[String] = js.undefined
 }
 object Zone {
   

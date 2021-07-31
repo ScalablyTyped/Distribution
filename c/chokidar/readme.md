@@ -4,16 +4,16 @@
 Typings are for version 3.4.3
 
 ## Library description:
-A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.
+Minimal and efficient cross-platform file watching library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | chokidar |
 | Keywords           | fs, watch, watchFile, watcher, watching, file, fsevents |
-| # releases         | 24 |
-| # dependents       | 5608 |
-| # downloads        | 992965406 |
-| # stars            | 175 |
+| # releases         | 27 |
+| # dependents       | 6039 |
+| # downloads        | 1256398627 |
+| # stars            | 176 |
 
 ## Links
 - [Homepage](https://github.com/paulmillr/chokidar)

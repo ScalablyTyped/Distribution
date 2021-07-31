@@ -2,29 +2,27 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveAddToPostResponseMod {
   
-  @js.native
   trait LiveAddToPostBroadcast extends StObject {
     
-    var broadcast_message: String = js.native
+    var broadcast_message: String
     
-    var broadcast_owner: LiveAddToPostBroadcastOwner = js.native
+    var broadcast_owner: LiveAddToPostBroadcastOwner
     
-    var broadcast_status: String = js.native
+    var broadcast_status: String
     
-    var hide_from_feed_unit: Boolean = js.native
+    var hide_from_feed_unit: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var published_time: Double = js.native
+    var published_time: Double
   }
   object LiveAddToPostBroadcast {
     
@@ -72,22 +70,21 @@ object liveAddToPostResponseMod {
     }
   }
   
-  @js.native
   trait LiveAddToPostBroadcastOwner extends StObject {
     
-    var friendship_status: LiveAddToPostFriendshipstatus = js.native
+    var friendship_status: LiveAddToPostFriendshipstatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveAddToPostBroadcastOwner {
     
@@ -131,26 +128,25 @@ object liveAddToPostResponseMod {
     }
   }
   
-  @js.native
   trait LiveAddToPostFriendshipstatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var followed_by: Boolean = js.native
+    var followed_by: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var muting: Boolean = js.native
+    var muting: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object LiveAddToPostFriendshipstatus {
     
@@ -202,22 +198,21 @@ object liveAddToPostResponseMod {
     }
   }
   
-  @js.native
   trait LiveAddToPostResponse extends StObject {
     
-    var broadcasts: js.Array[LiveAddToPostBroadcast] = js.native
+    var broadcasts: js.Array[LiveAddToPostBroadcast]
     
-    var can_reply: Boolean = js.native
+    var can_reply: Boolean
     
-    var can_reshare: Boolean = js.native
+    var can_reshare: Boolean
     
-    var last_seen_broadcast_ts: Double = js.native
+    var last_seen_broadcast_ts: Double
     
-    var pk: String = js.native
+    var pk: String
     
-    var status: String = js.native
+    var status: String
     
-    var user: LiveAddToPostUser = js.native
+    var user: LiveAddToPostUser
   }
   object LiveAddToPostResponse {
     
@@ -264,20 +259,19 @@ object liveAddToPostResponseMod {
     }
   }
   
-  @js.native
   trait LiveAddToPostUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveAddToPostUser {
     

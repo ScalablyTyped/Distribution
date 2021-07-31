@@ -3,10 +3,8 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdisplaySource extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait TypeofdisplaySource extends StObject {
     * **'PIN'**
     * PIN authentication method.
     */
-  val AuthenticationMethod: PBC = js.native
+  val AuthenticationMethod: PBC
   
   /**
     * @enum
@@ -42,7 +40,7 @@ trait TypeofdisplaySource extends StObject {
     * **'unknown_error'**
     * Unspecified error.
     */
-  val ErrorType: CAPABILITIESNEGOTIATIONERROR = js.native
+  val ErrorType: CAPABILITIESNEGOTIATIONERROR
   
   /**
     * @enum
@@ -56,21 +54,21 @@ trait TypeofdisplaySource extends StObject {
     * **'disconnected'**
     * Disconnected from this Display Source
     */
-  val SinkState: CONNECTED = js.native
+  val SinkState: CONNECTED
   
-  val getAvailableSinks: js.Function = js.native
+  val getAvailableSinks: js.Function
   
-  val onSessionErrorOccured: Event[_] = js.native
+  val onSessionErrorOccured: Event[js.Any]
   
-  val onSessionTerminated: Event[_] = js.native
+  val onSessionTerminated: Event[js.Any]
   
-  val onSinksUpdated: Event[_] = js.native
+  val onSinksUpdated: Event[js.Any]
   
-  val requestAuthentication: js.Function = js.native
+  val requestAuthentication: js.Function
   
-  val startSession: js.Function = js.native
+  val startSession: js.Function
   
-  val terminateSession: js.Function = js.native
+  val terminateSession: js.Function
 }
 object TypeofdisplaySource {
   
@@ -80,9 +78,9 @@ object TypeofdisplaySource {
     ErrorType: CAPABILITIESNEGOTIATIONERROR,
     SinkState: CONNECTED,
     getAvailableSinks: js.Function,
-    onSessionErrorOccured: Event[_],
-    onSessionTerminated: Event[_],
-    onSinksUpdated: Event[_],
+    onSessionErrorOccured: Event[js.Any],
+    onSessionTerminated: Event[js.Any],
+    onSinksUpdated: Event[js.Any],
     requestAuthentication: js.Function,
     startSession: js.Function,
     terminateSession: js.Function
@@ -104,13 +102,13 @@ object TypeofdisplaySource {
     def setGetAvailableSinks(value: js.Function): Self = StObject.set(x, "getAvailableSinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSessionErrorOccured(value: Event[_]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
+    def setOnSessionErrorOccured(value: Event[js.Any]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSessionTerminated(value: Event[_]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
+    def setOnSessionTerminated(value: Event[js.Any]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSinksUpdated(value: Event[_]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
+    def setOnSinksUpdated(value: Event[js.Any]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRequestAuthentication(value: js.Function): Self = StObject.set(x, "requestAuthentication", value.asInstanceOf[js.Any])

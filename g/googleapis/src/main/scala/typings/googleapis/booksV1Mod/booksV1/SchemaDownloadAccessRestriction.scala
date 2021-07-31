@@ -2,77 +2,75 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDownloadAccessRestriction extends StObject {
   
   /**
     * If restricted, whether access is granted for this (user, device, volume).
     */
-  var deviceAllowed: js.UndefOr[Boolean] = js.native
+  var deviceAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If restricted, the number of content download licenses already acquired
     * (including the requesting client, if licensed).
     */
-  var downloadsAcquired: js.UndefOr[Double] = js.native
+  var downloadsAcquired: js.UndefOr[Double] = js.undefined
   
   /**
     * If deviceAllowed, whether access was just acquired with this request.
     */
-  var justAcquired: js.UndefOr[Boolean] = js.native
+  var justAcquired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * If restricted, the maximum number of content download licenses for this
     * volume.
     */
-  var maxDownloadDevices: js.UndefOr[Double] = js.native
+  var maxDownloadDevices: js.UndefOr[Double] = js.undefined
   
   /**
     * Error/warning message.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Client nonce for verification. Download access and client-validation
     * only.
     */
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
   /**
     * Error/warning reason code. Additional codes may be added in the future. 0
     * OK 100 ACCESS_DENIED_PUBLISHER_LIMIT 101 ACCESS_DENIED_LIMIT 200
     * WARNING_USED_LAST_ACCESS
     */
-  var reasonCode: js.UndefOr[String] = js.native
+  var reasonCode: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this volume has any download access restrictions.
     */
-  var restricted: js.UndefOr[Boolean] = js.native
+  var restricted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Response signature.
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
   
   /**
     * Client app identifier for verification. Download access and
     * client-validation only.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the volume for which this entry applies.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object SchemaDownloadAccessRestriction {
   

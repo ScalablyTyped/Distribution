@@ -5,21 +5,19 @@ import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.none
 import typings.reactInstantsearchCore.reactInstantsearchCoreStrings.partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightResultPrimitive extends StObject {
   
-  var fullyHighlighted: js.UndefOr[Boolean] = js.native
+  var fullyHighlighted: js.UndefOr[Boolean] = js.undefined
   
   /** full, partial or none depending on how the query terms match */
-  var matchLevel: none | partial | full = js.native
+  var matchLevel: none | partial | full
   
-  var matchedWords: js.Array[String] = js.native
+  var matchedWords: js.Array[String]
   
   /** the value of the facet highlighted (html) */
-  var value: String = js.native
+  var value: String
 }
 object HighlightResultPrimitive {
   

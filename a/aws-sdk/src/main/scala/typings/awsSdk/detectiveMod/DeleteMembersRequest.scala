@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMembersRequest extends StObject {
   
   /**
     * The list of AWS account identifiers for the member accounts to delete from the behavior graph.
     */
-  var AccountIds: AccountIdList = js.native
+  var AccountIds: AccountIdList
   
   /**
     * The ARN of the behavior graph to delete members from.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
 }
 object DeleteMembersRequest {
   

@@ -2,86 +2,84 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /**
     * The job's ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The job's result counters.
     */
-  var counters: js.UndefOr[Counters] = js.native
+  var counters: js.UndefOr[Counters] = js.undefined
   
   /**
     * When the job was created.
     */
-  var created: js.UndefOr[DateTime] = js.native
+  var created: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The device (phone or tablet).
     */
-  var device: js.UndefOr[Device] = js.native
+  var device: js.UndefOr[Device] = js.undefined
   
   /**
     * Represents the total (metered or unmetered) minutes used by the job.
     */
-  var deviceMinutes: js.UndefOr[DeviceMinutes] = js.native
+  var deviceMinutes: js.UndefOr[DeviceMinutes] = js.undefined
   
   /**
     * The ARN of the instance.
     */
-  var instanceArn: js.UndefOr[AmazonResourceName] = js.native
+  var instanceArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * A message about the job's result.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * The job's name.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The job's result. Allowed values include:   PENDING   PASSED   WARNED   FAILED   SKIPPED   ERRORED   STOPPED  
     */
-  var result: js.UndefOr[ExecutionResult] = js.native
+  var result: js.UndefOr[ExecutionResult] = js.undefined
   
   /**
     * The job's start time.
     */
-  var started: js.UndefOr[DateTime] = js.native
+  var started: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The job's status. Allowed values include:   PENDING   PENDING_CONCURRENCY   PENDING_DEVICE   PROCESSING   SCHEDULING   PREPARING   RUNNING   COMPLETED   STOPPING  
     */
-  var status: js.UndefOr[ExecutionStatus] = js.native
+  var status: js.UndefOr[ExecutionStatus] = js.undefined
   
   /**
     * The job's stop time.
     */
-  var stopped: js.UndefOr[DateTime] = js.native
+  var stopped: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The job's type. Allowed values include the following:   BUILTIN_FUZZ   BUILTIN_EXPLORER. For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.   APPIUM_JAVA_JUNIT   APPIUM_JAVA_TESTNG   APPIUM_PYTHON   APPIUM_NODE   APPIUM_RUBY   APPIUM_WEB_JAVA_JUNIT   APPIUM_WEB_JAVA_TESTNG   APPIUM_WEB_PYTHON   APPIUM_WEB_NODE   APPIUM_WEB_RUBY   CALABASH   INSTRUMENTATION   UIAUTOMATION   UIAUTOMATOR   XCTEST   XCTEST_UI  
     */
-  var `type`: js.UndefOr[TestType] = js.native
+  var `type`: js.UndefOr[TestType] = js.undefined
   
   /**
     * This value is set to true if video capture is enabled. Otherwise, it is set to false.
     */
-  var videoCapture: js.UndefOr[VideoCapture] = js.native
+  var videoCapture: js.UndefOr[VideoCapture] = js.undefined
   
   /**
     * The endpoint for streaming device video.
     */
-  var videoEndpoint: js.UndefOr[String] = js.native
+  var videoEndpoint: js.UndefOr[String] = js.undefined
 }
 object Job {
   

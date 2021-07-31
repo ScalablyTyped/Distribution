@@ -3,15 +3,13 @@ package typings.dockerode.anon
 import typings.dockerode.mod.VolumeInspectInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volumes extends StObject {
   
-  var Volumes: js.Array[VolumeInspectInfo] = js.native
+  var Volumes: js.Array[VolumeInspectInfo]
   
-  var Warnings: js.Array[String] = js.native
+  var Warnings: js.Array[String]
 }
 object Volumes {
   

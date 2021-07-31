@@ -10,9 +10,9 @@ A simple library to read/write HLS playlists
 | ------------------ | :-------------: |
 | Full name          | hls-parser |
 | Keywords           | HLS, media, video, audio, streaming |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 10 |
-| # downloads        | 417019 |
+| # downloads        | 511568 |
 | # stars            | 0 |
 
 ## Links

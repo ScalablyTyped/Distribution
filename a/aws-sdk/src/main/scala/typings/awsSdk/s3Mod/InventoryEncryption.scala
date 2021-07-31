@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryEncryption extends StObject {
   
   /**
     * Specifies the use of SSE-KMS to encrypt delivered inventory reports.
     */
-  var SSEKMS: js.UndefOr[typings.awsSdk.s3Mod.SSEKMS] = js.native
+  var SSEKMS: js.UndefOr[typings.awsSdk.s3Mod.SSEKMS] = js.undefined
   
   /**
     * Specifies the use of SSE-S3 to encrypt delivered inventory reports.
     */
-  var SSES3: js.UndefOr[typings.awsSdk.s3Mod.SSES3] = js.native
+  var SSES3: js.UndefOr[typings.awsSdk.s3Mod.SSES3] = js.undefined
 }
 object InventoryEncryption {
   

@@ -3,33 +3,32 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.const
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstantMemberType
-  extends AbstractBase
+  extends StObject
+     with AbstractBase
      with IDLCallbackInterfaceMemberType
      with IDLInterfaceMemberType
      with IDLInterfaceMixinMemberType {
   
   /** An IDL Type of the constant that represents a simple type, the type name. */
-  var idlType: IDLTypeDescription = js.native
+  var idlType: IDLTypeDescription
   
   /** The name of the constant. */
-  var name: String = js.native
+  var name: String
   
   /** Whether its type is nullable. */
-  var nullable: Boolean = js.native
+  var nullable: Boolean
   
   @JSName("parent")
-  var parent_ConstantMemberType: CallbackInterfaceType | InterfaceMixinType | InterfaceType = js.native
+  var parent_ConstantMemberType: CallbackInterfaceType | InterfaceMixinType | InterfaceType
   
   @JSName("type")
-  var type_ConstantMemberType: const = js.native
+  var type_ConstantMemberType: const
   
   /** The constant value */
-  var value: ValueDescription = js.native
+  var value: ValueDescription
 }
 object ConstantMemberType {
   
@@ -40,11 +39,10 @@ object ConstantMemberType {
     name: String,
     nullable: Boolean,
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType,
-    `type`: const,
     value: ValueDescription
   ): ConstantMemberType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("const")
     __obj.asInstanceOf[ConstantMemberType]
   }
   

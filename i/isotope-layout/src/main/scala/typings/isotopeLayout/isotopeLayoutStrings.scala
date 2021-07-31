@@ -3,7 +3,6 @@ package typings.isotopeLayout
 import typings.isotopeLayout.mod.LayoutModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isotopeLayoutStrings {
@@ -19,12 +18,16 @@ object isotopeLayoutStrings {
   def appended: appended = "appended".asInstanceOf[appended]
   
   @js.native
-  sealed trait cellsByColumn extends LayoutModes
+  sealed trait cellsByColumn
+    extends StObject
+       with LayoutModes
   @scala.inline
   def cellsByColumn: cellsByColumn = "cellsByColumn".asInstanceOf[cellsByColumn]
   
   @js.native
-  sealed trait cellsByRow extends LayoutModes
+  sealed trait cellsByRow
+    extends StObject
+       with LayoutModes
   @scala.inline
   def cellsByRow: cellsByRow = "cellsByRow".asInstanceOf[cellsByRow]
   
@@ -34,12 +37,16 @@ object isotopeLayoutStrings {
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait fitColumns extends LayoutModes
+  sealed trait fitColumns
+    extends StObject
+       with LayoutModes
   @scala.inline
   def fitColumns: fitColumns = "fitColumns".asInstanceOf[fitColumns]
   
   @js.native
-  sealed trait fitRows extends LayoutModes
+  sealed trait fitRows
+    extends StObject
+       with LayoutModes
   @scala.inline
   def fitRows: fitRows = "fitRows".asInstanceOf[fitRows]
   
@@ -59,7 +66,9 @@ object isotopeLayoutStrings {
   def hideItemElements: hideItemElements = "hideItemElements".asInstanceOf[hideItemElements]
   
   @js.native
-  sealed trait horiz extends LayoutModes
+  sealed trait horiz
+    extends StObject
+       with LayoutModes
   @scala.inline
   def horiz: horiz = "horiz".asInstanceOf[horiz]
   
@@ -84,17 +93,23 @@ object isotopeLayoutStrings {
   def layoutItems: layoutItems = "layoutItems".asInstanceOf[layoutItems]
   
   @js.native
-  sealed trait masonry extends LayoutModes
+  sealed trait masonry
+    extends StObject
+       with LayoutModes
   @scala.inline
   def masonry: masonry = "masonry".asInstanceOf[masonry]
   
   @js.native
-  sealed trait masonryHorizontal extends LayoutModes
+  sealed trait masonryHorizontal
+    extends StObject
+       with LayoutModes
   @scala.inline
   def masonryHorizontal: masonryHorizontal = "masonryHorizontal".asInstanceOf[masonryHorizontal]
   
   @js.native
-  sealed trait packery extends LayoutModes
+  sealed trait packery
+    extends StObject
+       with LayoutModes
   @scala.inline
   def packery: packery = "packery".asInstanceOf[packery]
   
@@ -139,7 +154,9 @@ object isotopeLayoutStrings {
   def updateSortData: updateSortData = "updateSortData".asInstanceOf[updateSortData]
   
   @js.native
-  sealed trait vertical extends LayoutModes
+  sealed trait vertical
+    extends StObject
+       with LayoutModes
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

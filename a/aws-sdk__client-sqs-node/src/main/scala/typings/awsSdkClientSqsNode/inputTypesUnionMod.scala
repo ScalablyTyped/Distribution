@@ -26,7 +26,6 @@ import typings.awsSdkClientSqsNode.typesSendMessageBatchRequestEntryMod.SendMess
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputTypesUnionMod {
@@ -176,7 +175,7 @@ object inputTypesUnionMod {
     def SetQueueAttributesInput(
       Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
-      */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput with TopLevel[js.Any]) | (Iterable[
+      */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput & TopLevel[js.Any]) | (Iterable[
           js.Tuple2[
             All | Policy | VisibilityTimeout | MaximumMessageSize | MessageRetentionPeriod | ApproximateNumberOfMessages | ApproximateNumberOfMessagesNotVisible | CreatedTimestamp | LastModifiedTimestamp | QueueArn | ApproximateNumberOfMessagesDelayed | DelaySeconds | ReceiveMessageWaitTimeSeconds | RedrivePolicy | FifoQueue | ContentBasedDeduplication | KmsMasterKeyId | KmsDataKeyReusePeriodSeconds | String, 
             String

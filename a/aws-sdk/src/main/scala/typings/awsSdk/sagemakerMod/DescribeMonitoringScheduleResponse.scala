@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMonitoringScheduleResponse extends StObject {
   
   /**
     * The time at which the monitoring job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     *  The name of the endpoint for the monitoring job.
     */
-  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.native
+  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.undefined
   
   /**
     * A string, up to one KB in size, that contains the reason a monitoring job failed, if it failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The time at which the monitoring job was last modified.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * Describes metadata on the last execution to run, if there was one.
     */
-  var LastMonitoringExecutionSummary: js.UndefOr[MonitoringExecutionSummary] = js.native
+  var LastMonitoringExecutionSummary: js.UndefOr[MonitoringExecutionSummary] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the monitoring schedule.
     */
-  var MonitoringScheduleArn: typings.awsSdk.sagemakerMod.MonitoringScheduleArn = js.native
+  var MonitoringScheduleArn: typings.awsSdk.sagemakerMod.MonitoringScheduleArn
   
   /**
     * The configuration object that specifies the monitoring schedule and defines the monitoring job.
     */
-  var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig = js.native
+  var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig
   
   /**
     * Name of the monitoring schedule.
     */
-  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName = js.native
+  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
   
   /**
     * The status of an monitoring job.
     */
-  var MonitoringScheduleStatus: ScheduleStatus = js.native
+  var MonitoringScheduleStatus: ScheduleStatus
 }
 object DescribeMonitoringScheduleResponse {
   

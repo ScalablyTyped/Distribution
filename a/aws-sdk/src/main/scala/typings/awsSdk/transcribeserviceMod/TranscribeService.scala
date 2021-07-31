@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TranscribeService extends Service {
   
   @JSName("config")
-  var config_TranscribeService: ConfigBase with ClientConfiguration = js.native
+  var config_TranscribeService: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new custom language model. Use Amazon S3 prefixes to provide the location of your input files. The time it takes to create your model depends on the size of your training data.

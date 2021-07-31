@@ -6,7 +6,6 @@ import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lodMod {
@@ -31,7 +30,7 @@ object lodMod {
     /**
     	 * @deprecated Use {@link LOD#levels .levels} instead.
     	 */
-    var objects: js.Array[_] = js.native
+    var objects: js.Array[js.Any] = js.native
     
     def toJSON(meta: js.Any): js.Any = js.native
     

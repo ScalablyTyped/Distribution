@@ -5,28 +5,26 @@ import typings.std.Record
 import typings.typedoc.optionsDeclarationMod.ParameterScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.MapDeclarationOption<unknown>> */
-@js.native
 trait ReadonlyMapDeclarationOpt extends StObject {
   
-  val defaultValue: js.Any = js.native
+  val defaultValue: js.Any
   
-  val help: String = js.native
+  val help: String
   
-  val map: (Map[String, _]) | (Record[String | Double, _]) = js.native
+  val map: (Map[String, js.Any]) | (Record[String | Double, js.Any])
   
-  val mapError: js.UndefOr[String] = js.native
+  val mapError: js.UndefOr[String] = js.undefined
   
-  val name: String = js.native
+  val name: String
   
-  val scope: js.UndefOr[ParameterScope] = js.native
+  val scope: js.UndefOr[ParameterScope] = js.undefined
   
-  val short: js.UndefOr[String] = js.native
+  val short: js.UndefOr[String] = js.undefined
   
-  val `type`: typings.typedoc.optionsDeclarationMod.ParameterType.Map = js.native
+  val `type`: typings.typedoc.optionsDeclarationMod.ParameterType.Map
 }
 object ReadonlyMapDeclarationOpt {
   
@@ -34,7 +32,7 @@ object ReadonlyMapDeclarationOpt {
   def apply(
     defaultValue: js.Any,
     help: String,
-    map: (Map[String, _]) | (Record[String | Double, _]),
+    map: (Map[String, js.Any]) | (Record[String | Double, js.Any]),
     name: String,
     `type`: typings.typedoc.optionsDeclarationMod.ParameterType.Map
   ): ReadonlyMapDeclarationOpt = {
@@ -53,7 +51,7 @@ object ReadonlyMapDeclarationOpt {
     def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: (Map[String, _]) | (Record[String | Double, _])): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    def setMap(value: (Map[String, js.Any]) | (Record[String | Double, js.Any])): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMapError(value: String): Self = StObject.set(x, "mapError", value.asInstanceOf[js.Any])

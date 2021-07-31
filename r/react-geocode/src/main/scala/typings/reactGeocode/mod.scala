@@ -2,100 +2,59 @@ package typings.reactGeocode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-geocode", "enableDebug")
+  @JSImport("react-geocode", JSImport.Namespace)
   @js.native
-  def enableDebug(): Unit = js.native
-  @JSImport("react-geocode", "enableDebug")
-  @js.native
-  def enableDebug(enable: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(
-    address: String,
-    apiKey: js.UndefOr[scala.Nothing],
-    language: js.UndefOr[scala.Nothing],
-    region: String
-  ): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String, apiKey: js.UndefOr[scala.Nothing], language: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String, apiKey: js.UndefOr[scala.Nothing], language: String, region: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String, apiKey: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String, apiKey: String, language: js.UndefOr[scala.Nothing], region: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String, apiKey: String, language: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromAddress")
-  @js.native
-  def fromAddress(address: String, apiKey: String, language: String, region: String): js.Promise[_] = js.native
+  @scala.inline
+  def enableDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDebug")().asInstanceOf[Unit]
+  @scala.inline
+  def enableDebug(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableDebug")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(latitude: String, longitude: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(
-    latitude: String,
-    longitude: String,
-    apiKey: js.UndefOr[scala.Nothing],
-    language: js.UndefOr[scala.Nothing],
-    region: String
-  ): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(latitude: String, longitude: String, apiKey: js.UndefOr[scala.Nothing], language: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(
-    latitude: String,
-    longitude: String,
-    apiKey: js.UndefOr[scala.Nothing],
-    language: String,
-    region: String
-  ): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(latitude: String, longitude: String, apiKey: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(
-    latitude: String,
-    longitude: String,
-    apiKey: String,
-    language: js.UndefOr[scala.Nothing],
-    region: String
-  ): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(latitude: String, longitude: String, apiKey: String, language: String): js.Promise[_] = js.native
-  @JSImport("react-geocode", "fromLatLng")
-  @js.native
-  def fromLatLng(latitude: String, longitude: String, apiKey: String, language: String, region: String): js.Promise[_] = js.native
+  @scala.inline
+  def fromAddress(address: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: String, language: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: String, language: String, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: String, language: Unit, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: Unit, language: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: Unit, language: String, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromAddress(address: String, apiKey: Unit, language: Unit, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("react-geocode", "setApiKey")
-  @js.native
-  def setApiKey(api_key: String): Unit = js.native
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: String, language: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: String, language: String, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: String, language: Unit, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: Unit, language: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: Unit, language: String, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def fromLatLng(latitude: String, longitude: String, apiKey: Unit, language: Unit, region: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLng")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], region.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("react-geocode", "setLanguage")
-  @js.native
-  def setLanguage(language: String): Unit = js.native
+  @scala.inline
+  def setApiKey(api_key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApiKey")(api_key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-geocode", "setRegion")
-  @js.native
-  def setRegion(region: String): Unit = js.native
+  @scala.inline
+  def setLanguage(language: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setRegion(region: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegion")(region.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

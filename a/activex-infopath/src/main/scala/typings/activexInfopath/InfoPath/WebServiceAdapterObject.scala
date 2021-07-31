@@ -3,38 +3,36 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebServiceAdapterObject extends StObject {
   
-  val ErrorsLocation: IXMLDOMNode = js.native
+  val ErrorsLocation: IXMLDOMNode
   
-  def GenerateDataSetDiffGram(pNode: IXMLDOMNode): IXMLDOMNode = js.native
+  def GenerateDataSetDiffGram(pNode: IXMLDOMNode): IXMLDOMNode
   
   @JSName("InfoPath.WebServiceAdapterObject_typekey")
-  var InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject = js.native
+  var InfoPathDotWebServiceAdapterObject_typekey: WebServiceAdapterObject
   
-  var Input: String = js.native
+  var Input: String
   
-  val Name: String = js.native
+  val Name: String
   
-  var Operation: String = js.native
+  var Operation: String
   
-  val OutputLocation: IXMLDOMNode = js.native
+  val OutputLocation: IXMLDOMNode
   
-  def Query(): Unit = js.native
+  def Query(): Unit
   
-  val QueryAllowed: Boolean = js.native
+  val QueryAllowed: Boolean
   
-  def Submit(): Unit = js.native
+  def Submit(): Unit
   
-  val SubmitAllowed: Boolean = js.native
+  val SubmitAllowed: Boolean
   
-  var Timeout: Double = js.native
+  var Timeout: Double
   
-  val WSDLURL: String = js.native
+  val WSDLURL: String
 }
 object WebServiceAdapterObject {
   

@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandidateUsage extends StObject {
   
   /** The body string of detail description. */
-  var body: String = js.native
+  var body: String
   
   /** The title string of details description. */
-  var title: String = js.native
+  var title: String
 }
 object CandidateUsage {
   

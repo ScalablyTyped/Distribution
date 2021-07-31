@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The suggestion state of a NamedStyles message.
   */
-@js.native
 trait SchemaNamedStylesSuggestionState extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaNamedStylesSuggestionState extends StObject {
     * style suggestion states match the order of the corresponding named style
     * within the named styles suggestion.
     */
-  var stylesSuggestionStates: js.UndefOr[js.Array[SchemaNamedStyleSuggestionState]] = js.native
+  var stylesSuggestionStates: js.UndefOr[js.Array[SchemaNamedStyleSuggestionState]] = js.undefined
 }
 object SchemaNamedStylesSuggestionState {
   

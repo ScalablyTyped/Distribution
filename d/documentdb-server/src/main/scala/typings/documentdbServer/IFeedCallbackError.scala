@@ -2,18 +2,16 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Will contain error information if an error occurs, undefined otherwise. */
-@js.native
 trait IFeedCallbackError extends StObject {
   
   /** A string containing the error information. */
-  var body: String = js.native
+  var body: String
   
   /** The HTTP response code corresponding to the error. */
-  var number: Double = js.native
+  var number: Double
 }
 object IFeedCallbackError {
   

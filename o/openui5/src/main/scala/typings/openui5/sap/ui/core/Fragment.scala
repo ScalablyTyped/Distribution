@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.core
 import typings.openui5.sap.ui.base.ManagedObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fragment extends ManagedObject {
+trait Fragment
+  extends StObject
+     with ManagedObject {
   
   /**
     * Returns an Element/Control by its ID in the context of the Fragment with the given ID

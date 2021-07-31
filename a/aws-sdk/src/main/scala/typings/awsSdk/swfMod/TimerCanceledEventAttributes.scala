@@ -2,26 +2,24 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimerCanceledEventAttributes extends StObject {
   
   /**
     * The ID of the DecisionTaskCompleted event corresponding to the decision task that resulted in the CancelTimer decision to cancel this timer. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
   
   /**
     * The ID of the TimerStarted event that was recorded when this timer was started. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
   
   /**
     * The unique ID of the timer that was canceled.
     */
-  var timerId: TimerId = js.native
+  var timerId: TimerId
 }
 object TimerCanceledEventAttributes {
   

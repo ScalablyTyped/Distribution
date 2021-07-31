@@ -6,33 +6,31 @@ import typings.typeorm.typeormStrings.RANDOM
 import typings.typeorm.typeormStrings.RR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanRetry extends StObject {
   
   /**
     * If true, PoolCluster will attempt to reconnect when connection fails. (Default: true)
     */
-  val canRetry: js.UndefOr[Boolean] = js.native
+  val canRetry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Master server used by orm to perform writes.
     */
-  val master: MysqlConnectionCredentialsOptions = js.native
+  val master: MysqlConnectionCredentialsOptions
   
   /**
     * If connection fails, node's errorCount increases.
     * When errorCount is greater than removeNodeErrorCount, remove a node in the PoolCluster. (Default: 5)
     */
-  val removeNodeErrorCount: js.UndefOr[Double] = js.native
+  val removeNodeErrorCount: js.UndefOr[Double] = js.undefined
   
   /**
     * If connection fails, specifies the number of milliseconds before another connection attempt will be made.
     * If set to 0, then node will be removed instead and never re-used. (Default: 0)
     */
-  val restoreNodeTimeout: js.UndefOr[Double] = js.native
+  val restoreNodeTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Determines how slaves are selected:
@@ -40,12 +38,12 @@ trait CanRetry extends StObject {
     * RANDOM: Select the node by random function.
     * ORDER: Select the first node available unconditionally.
     */
-  val selector: js.UndefOr[RR | RANDOM | ORDER] = js.native
+  val selector: js.UndefOr[RR | RANDOM | ORDER] = js.undefined
   
   /**
     * List of read-from severs (slaves).
     */
-  val slaves: js.Array[MysqlConnectionCredentialsOptions] = js.native
+  val slaves: js.Array[MysqlConnectionCredentialsOptions]
 }
 object CanRetry {
   

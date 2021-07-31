@@ -3,29 +3,27 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageTileOptions extends StObject {
   
-  var imgonerror: js.UndefOr[js.Function0[_]] = js.native
+  var imgonerror: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var imgonload: js.UndefOr[js.Function0[_]] = js.native
+  var imgonload: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var offset: js.UndefOr[Point] = js.native
+  var offset: js.UndefOr[Point] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var pane: js.UndefOr[HTMLElement] = js.native
+  var pane: js.UndefOr[HTMLElement] = js.undefined
   
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
-  var transition: js.UndefOr[Boolean] = js.native
+  var transition: js.UndefOr[Boolean] = js.undefined
   
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object ImageTileOptions {
   
@@ -39,13 +37,13 @@ object ImageTileOptions {
   implicit class ImageTileOptionsMutableBuilder[Self <: ImageTileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setImgonerror(value: () => _): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
+    def setImgonerror(value: () => js.Any): Self = StObject.set(x, "imgonerror", js.Any.fromFunction0(value))
     
     @scala.inline
     def setImgonerrorUndefined: Self = StObject.set(x, "imgonerror", js.undefined)
     
     @scala.inline
-    def setImgonload(value: () => _): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
+    def setImgonload(value: () => js.Any): Self = StObject.set(x, "imgonload", js.Any.fromFunction0(value))
     
     @scala.inline
     def setImgonloadUndefined: Self = StObject.set(x, "imgonload", js.undefined)

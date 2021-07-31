@@ -10,7 +10,6 @@ import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicLayoutMod extends Shortcut {
@@ -25,12 +24,11 @@ object basicLayoutMod extends Shortcut {
   val default: FC[BasicLayoutProps] = js.native
   
   /* Inlined {[ K in 'location' ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/BasicLayout.BasicLayoutProps[K]} & {  breadcrumb :{[path: string] : @ant-design/pro-layout.@ant-design/pro-layout/lib/typings.MenuDataItem}} */
-  @js.native
   trait BasicLayoutContext extends StObject {
     
-    var breadcrumb: StringDictionary[MenuDataItem] = js.native
+    var breadcrumb: StringDictionary[MenuDataItem]
     
-    var location: js.UndefOr[js.Any] = js.native
+    var location: js.UndefOr[js.Any] = js.undefined
   }
   object BasicLayoutContext {
     
@@ -54,7 +52,7 @@ object basicLayoutMod extends Shortcut {
     }
   }
   
-  type BasicLayoutProps = PartialRouterTypesRoute with SiderMenuProps with HeaderViewProps with BreadcrumbRender
+  type BasicLayoutProps = PartialRouterTypesRoute & SiderMenuProps & HeaderViewProps & BreadcrumbRender
   
   type _To = FC[BasicLayoutProps]
   

@@ -2,19 +2,17 @@ package typings.googleTranslateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoCorrected extends StObject {
     
-    var autoCorrected: Boolean = js.native
+    var autoCorrected: Boolean
     
-    var didYouMean: Boolean = js.native
+    var didYouMean: Boolean
     
-    var value: String = js.native
+    var value: String
   }
   object AutoCorrected {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DidYouMean extends StObject {
     
-    var didYouMean: Boolean = js.native
+    var didYouMean: Boolean
     
-    var iso: String = js.native
+    var iso: String
   }
   object DidYouMean {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Language extends StObject {
     
-    var language: DidYouMean = js.native
+    var language: DidYouMean
     
-    var text: AutoCorrected = js.native
+    var text: AutoCorrected
   }
   object Language {
     

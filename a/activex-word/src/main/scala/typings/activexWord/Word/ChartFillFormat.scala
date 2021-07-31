@@ -10,7 +10,6 @@ import typings.activexOffice.Office.MsoTextureType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,60 +58,21 @@ trait ChartFillFormat extends StObject {
   val Type: MsoFillType = js.native
   
   def UserPicture(): Unit = js.native
-  def UserPicture(
-    PictureFile: js.UndefOr[scala.Nothing],
-    PictureFormat: js.UndefOr[scala.Nothing],
-    PictureStackUnit: js.UndefOr[scala.Nothing],
-    PicturePlacement: js.Any
-  ): Unit = js.native
-  def UserPicture(
-    PictureFile: js.UndefOr[scala.Nothing],
-    PictureFormat: js.UndefOr[scala.Nothing],
-    PictureStackUnit: js.Any
-  ): Unit = js.native
-  def UserPicture(
-    PictureFile: js.UndefOr[scala.Nothing],
-    PictureFormat: js.UndefOr[scala.Nothing],
-    PictureStackUnit: js.Any,
-    PicturePlacement: js.Any
-  ): Unit = js.native
-  def UserPicture(PictureFile: js.UndefOr[scala.Nothing], PictureFormat: js.Any): Unit = js.native
-  def UserPicture(
-    PictureFile: js.UndefOr[scala.Nothing],
-    PictureFormat: js.Any,
-    PictureStackUnit: js.UndefOr[scala.Nothing],
-    PicturePlacement: js.Any
-  ): Unit = js.native
-  def UserPicture(PictureFile: js.UndefOr[scala.Nothing], PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
-  def UserPicture(
-    PictureFile: js.UndefOr[scala.Nothing],
-    PictureFormat: js.Any,
-    PictureStackUnit: js.Any,
-    PicturePlacement: js.Any
-  ): Unit = js.native
   def UserPicture(PictureFile: js.Any): Unit = js.native
-  def UserPicture(
-    PictureFile: js.Any,
-    PictureFormat: js.UndefOr[scala.Nothing],
-    PictureStackUnit: js.UndefOr[scala.Nothing],
-    PicturePlacement: js.Any
-  ): Unit = js.native
-  def UserPicture(PictureFile: js.Any, PictureFormat: js.UndefOr[scala.Nothing], PictureStackUnit: js.Any): Unit = js.native
-  def UserPicture(
-    PictureFile: js.Any,
-    PictureFormat: js.UndefOr[scala.Nothing],
-    PictureStackUnit: js.Any,
-    PicturePlacement: js.Any
-  ): Unit = js.native
   def UserPicture(PictureFile: js.Any, PictureFormat: js.Any): Unit = js.native
-  def UserPicture(
-    PictureFile: js.Any,
-    PictureFormat: js.Any,
-    PictureStackUnit: js.UndefOr[scala.Nothing],
-    PicturePlacement: js.Any
-  ): Unit = js.native
   def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
   def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: js.Any, PictureFormat: js.Any, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: js.Any, PictureFormat: Unit, PictureStackUnit: js.Any): Unit = js.native
+  def UserPicture(PictureFile: js.Any, PictureFormat: Unit, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: js.Any, PictureFormat: Unit, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: js.Any, PictureStackUnit: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: js.Any, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: Unit, PictureFormat: Unit, PictureStackUnit: Unit, PicturePlacement: js.Any): Unit = js.native
   
   def UserTextured(TextureFile: String): Unit = js.native
   

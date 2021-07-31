@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingQuery. */
-@js.native
 trait TrainingQuery extends StObject {
   
   /** Array of training examples. */
-  var examples: js.UndefOr[js.Array[TrainingExample]] = js.native
+  var examples: js.UndefOr[js.Array[TrainingExample]] = js.undefined
   
   /** The filter used on the collection before the **natural_language_query** is applied. */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /** The natural text query for the training query. */
-  var natural_language_query: js.UndefOr[String] = js.native
+  var natural_language_query: js.UndefOr[String] = js.undefined
   
   /** The query ID associated with the training query. */
-  var query_id: js.UndefOr[String] = js.native
+  var query_id: js.UndefOr[String] = js.undefined
 }
 object TrainingQuery {
   

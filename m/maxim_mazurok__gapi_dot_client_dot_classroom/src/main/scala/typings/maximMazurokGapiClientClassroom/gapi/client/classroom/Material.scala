@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Material extends StObject {
   
   /** Google Drive file material. */
-  var driveFile: js.UndefOr[SharedDriveFile] = js.native
+  var driveFile: js.UndefOr[SharedDriveFile] = js.undefined
   
   /** Google Forms material. */
-  var form: js.UndefOr[Form] = js.native
+  var form: js.UndefOr[Form] = js.undefined
   
   /** Link material. On creation, this is upgraded to a more appropriate type if possible, and this is reflected in the response. */
-  var link: js.UndefOr[Link] = js.native
+  var link: js.UndefOr[Link] = js.undefined
   
   /** YouTube video material. */
-  var youtubeVideo: js.UndefOr[YouTubeVideo] = js.native
+  var youtubeVideo: js.UndefOr[YouTubeVideo] = js.undefined
 }
 object Material {
   

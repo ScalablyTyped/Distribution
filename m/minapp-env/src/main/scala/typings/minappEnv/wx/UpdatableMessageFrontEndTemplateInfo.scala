@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 动态消息的模板信息
   *
   * 最低基础库： `2.4.0` */
-@js.native
 trait UpdatableMessageFrontEndTemplateInfo extends StObject {
   
   /** 参数列表 */
-  var parameterList: UpdatableMessageFrontEndParameter = js.native
+  var parameterList: UpdatableMessageFrontEndParameter
 }
 object UpdatableMessageFrontEndTemplateInfo {
   

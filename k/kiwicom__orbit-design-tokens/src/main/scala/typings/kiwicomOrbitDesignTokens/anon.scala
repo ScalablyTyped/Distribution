@@ -2,28 +2,26 @@ package typings.kiwicomOrbitDesignTokens
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CloudColor> */
-  @js.native
   trait PartialCloudColor extends StObject {
     
-    var dark: js.UndefOr[String] = js.native
+    var dark: js.UndefOr[String] = js.undefined
     
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
     
-    var lightActive: js.UndefOr[String] = js.native
+    var lightActive: js.UndefOr[String] = js.undefined
     
-    var lightHover: js.UndefOr[String] = js.native
+    var lightHover: js.UndefOr[String] = js.undefined
     
-    var normal: js.UndefOr[String] = js.native
+    var normal: js.UndefOr[String] = js.undefined
     
-    var normalActive: js.UndefOr[String] = js.native
+    var normalActive: js.UndefOr[String] = js.undefined
     
-    var normalHover: js.UndefOr[String] = js.native
+    var normalHover: js.UndefOr[String] = js.undefined
   }
   object PartialCloudColor {
     
@@ -81,26 +79,25 @@ object anon {
   }
   
   /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.InkColor> */
-  @js.native
   trait PartialInkColor extends StObject {
     
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
     
-    var lightActive: js.UndefOr[String] = js.native
+    var lightActive: js.UndefOr[String] = js.undefined
     
-    var lightHover: js.UndefOr[String] = js.native
+    var lightHover: js.UndefOr[String] = js.undefined
     
-    var lighter: js.UndefOr[String] = js.native
+    var lighter: js.UndefOr[String] = js.undefined
     
-    var lighterActive: js.UndefOr[String] = js.native
+    var lighterActive: js.UndefOr[String] = js.undefined
     
-    var lighterHover: js.UndefOr[String] = js.native
+    var lighterHover: js.UndefOr[String] = js.undefined
     
-    var normal: js.UndefOr[String] = js.native
+    var normal: js.UndefOr[String] = js.undefined
     
-    var normalActive: js.UndefOr[String] = js.native
+    var normalActive: js.UndefOr[String] = js.undefined
     
-    var normalHover: js.UndefOr[String] = js.native
+    var normalHover: js.UndefOr[String] = js.undefined
   }
   object PartialInkColor {
     
@@ -170,28 +167,27 @@ object anon {
   }
   
   /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.ProductColor> */
-  @js.native
   trait PartialProductColor extends StObject {
     
-    var dark: js.UndefOr[String] = js.native
+    var dark: js.UndefOr[String] = js.undefined
     
-    var darkActive: js.UndefOr[String] = js.native
+    var darkActive: js.UndefOr[String] = js.undefined
     
-    var darkHover: js.UndefOr[String] = js.native
+    var darkHover: js.UndefOr[String] = js.undefined
     
-    var darker: js.UndefOr[String] = js.native
+    var darker: js.UndefOr[String] = js.undefined
     
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
     
-    var lightActive: js.UndefOr[String] = js.native
+    var lightActive: js.UndefOr[String] = js.undefined
     
-    var lightHover: js.UndefOr[String] = js.native
+    var lightHover: js.UndefOr[String] = js.undefined
     
-    var normal: js.UndefOr[String] = js.native
+    var normal: js.UndefOr[String] = js.undefined
     
-    var normalActive: js.UndefOr[String] = js.native
+    var normalActive: js.UndefOr[String] = js.undefined
     
-    var normalHover: js.UndefOr[String] = js.native
+    var normalHover: js.UndefOr[String] = js.undefined
   }
   object PartialProductColor {
     
@@ -267,14 +263,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.SocialColor> */
-  @js.native
   trait PartialSocialColor extends StObject {
     
-    var facebook: js.UndefOr[String] = js.native
+    var facebook: js.UndefOr[String] = js.undefined
     
-    var facebookActive: js.UndefOr[String] = js.native
+    var facebookActive: js.UndefOr[String] = js.undefined
     
-    var facebookHover: js.UndefOr[String] = js.native
+    var facebookHover: js.UndefOr[String] = js.undefined
   }
   object PartialSocialColor {
     
@@ -308,28 +303,27 @@ object anon {
   }
   
   /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.StatusColor> */
-  @js.native
   trait PartialStatusColor extends StObject {
     
-    var dark: js.UndefOr[String] = js.native
+    var dark: js.UndefOr[String] = js.undefined
     
-    var darkActive: js.UndefOr[String] = js.native
+    var darkActive: js.UndefOr[String] = js.undefined
     
-    var darkHover: js.UndefOr[String] = js.native
+    var darkHover: js.UndefOr[String] = js.undefined
     
-    var darker: js.UndefOr[String] = js.native
+    var darker: js.UndefOr[String] = js.undefined
     
-    var light: js.UndefOr[String] = js.native
+    var light: js.UndefOr[String] = js.undefined
     
-    var lightActive: js.UndefOr[String] = js.native
+    var lightActive: js.UndefOr[String] = js.undefined
     
-    var lightHover: js.UndefOr[String] = js.native
+    var lightHover: js.UndefOr[String] = js.undefined
     
-    var normal: js.UndefOr[String] = js.native
+    var normal: js.UndefOr[String] = js.undefined
     
-    var normalActive: js.UndefOr[String] = js.native
+    var normalActive: js.UndefOr[String] = js.undefined
     
-    var normalHover: js.UndefOr[String] = js.native
+    var normalHover: js.UndefOr[String] = js.undefined
   }
   object PartialStatusColor {
     
@@ -405,14 +399,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.WhiteColor> */
-  @js.native
   trait PartialWhiteColor extends StObject {
     
-    var normal: js.UndefOr[String] = js.native
+    var normal: js.UndefOr[String] = js.undefined
     
-    var normalActive: js.UndefOr[String] = js.native
+    var normalActive: js.UndefOr[String] = js.undefined
     
-    var normalHover: js.UndefOr[String] = js.native
+    var normalHover: js.UndefOr[String] = js.undefined
   }
   object PartialWhiteColor {
     

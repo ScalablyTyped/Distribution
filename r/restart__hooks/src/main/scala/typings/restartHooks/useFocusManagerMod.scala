@@ -4,21 +4,22 @@ import typings.react.mod.FocusEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFocusManagerMod {
   
-  @JSImport("@restart/hooks/cjs/useFocusManager", JSImport.Default)
+  @JSImport("@restart/hooks/cjs/useFocusManager", JSImport.Namespace)
   @js.native
-  def default(opts: FocusManagerOptions): FocusController = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(opts: FocusManagerOptions): FocusController = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[FocusController]
+  
   trait FocusController extends StObject {
     
-    def onBlur(event: js.Any): Unit = js.native
+    def onBlur(event: js.Any): Unit
     
-    def onFocus(event: js.Any): Unit = js.native
+    def onFocus(event: js.Any): Unit
   }
   object FocusController {
     
@@ -39,23 +40,22 @@ object useFocusManagerMod {
     }
   }
   
-  @js.native
   trait FocusManagerOptions extends StObject {
     
     /**
       * A callback fired after focus is handled but before onChange is called
       */
-    var didHandle: js.UndefOr[js.Function2[/* focused */ Boolean, /* event */ FocusEvent[Element], Unit]] = js.native
+    var didHandle: js.UndefOr[js.Function2[/* focused */ Boolean, /* event */ FocusEvent[Element], Unit]] = js.undefined
     
     /**
       * When true, the event handlers will not report focus changes
       */
-    def isDisabled(): Boolean = js.native
+    def isDisabled(): Boolean
     
     /**
       * A callback fired after focus has changed
       */
-    var onChange: js.UndefOr[js.Function2[/* focused */ Boolean, /* event */ FocusEvent[Element], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* focused */ Boolean, /* event */ FocusEvent[Element], Unit]] = js.undefined
     
     /**
       * A callback fired when focus shifts. returning `false` will prevent
@@ -63,7 +63,7 @@ object useFocusManagerMod {
       */
     var willHandle: js.UndefOr[
         js.Function2[/* focused */ Boolean, /* event */ FocusEvent[Element], Boolean | Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object FocusManagerOptions {
     

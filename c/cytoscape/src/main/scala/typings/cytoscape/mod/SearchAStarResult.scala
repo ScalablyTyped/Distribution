@@ -2,20 +2,18 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.aStar
   */
-@js.native
 trait SearchAStarResult extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var found: Boolean = js.native
+  var found: Boolean
   
-  var path: CollectionReturnValue = js.native
+  var path: CollectionReturnValue
 }
 object SearchAStarResult {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningParameter extends StObject {
   
   /**
     * The parameter key.
     */
-  var Key: js.UndefOr[ParameterKey] = js.native
+  var Key: js.UndefOr[ParameterKey] = js.undefined
   
   /**
     * The parameter value.
     */
-  var Value: js.UndefOr[ParameterValue] = js.native
+  var Value: js.UndefOr[ParameterValue] = js.undefined
 }
 object ProvisioningParameter {
   

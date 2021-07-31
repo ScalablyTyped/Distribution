@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext.chart.series
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBar extends IStackedCartesian
+trait IBar
+  extends StObject
+     with IStackedCartesian
 object IBar {
   
   @scala.inline

@@ -2,23 +2,21 @@ package typings.nodeZendesk.mod.Tickets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViaSource extends StObject {
   
-  var from: js.Object = js.native
+  var from: js.Object
   
-  var rel: String | Null = js.native
+  var rel: String | Null
   
-  var to: js.Object = js.native
+  var to: js.Object
 }
 object ViaSource {
   
   @scala.inline
   def apply(from: js.Object, to: js.Object): ViaSource = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], rel = null)
     __obj.asInstanceOf[ViaSource]
   }
   

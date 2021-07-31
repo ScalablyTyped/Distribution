@@ -9,7 +9,6 @@ import typings.gitlab.requestHelperMod.Sudo
 import typings.gitlab.resourceAccessRequestsMod.AccessLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceMembersMod {
@@ -25,9 +24,9 @@ object resourceMembersMod {
     def add(resourceId: Double, userId: Double, accessLevel: AccessLevel, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def all(resourceId: String): js.Promise[GetResponse] = js.native
-    def all(resourceId: String, hasIncludeInheritedOptions: IncludeInherited with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(resourceId: String, hasIncludeInheritedOptions: IncludeInherited & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     def all(resourceId: Double): js.Promise[GetResponse] = js.native
-    def all(resourceId: Double, hasIncludeInheritedOptions: IncludeInherited with PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(resourceId: Double, hasIncludeInheritedOptions: IncludeInherited & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
     
     def edit(resourceId: String, userId: Double, accessLevel: AccessLevel): js.Promise[js.Object] = js.native
     def edit(resourceId: String, userId: Double, accessLevel: AccessLevel, options: BaseRequestOptions): js.Promise[js.Object] = js.native
@@ -40,15 +39,14 @@ object resourceMembersMod {
     def remove(resourceId: Double, userId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
     def show(resourceId: String, userId: Double): js.Promise[GetResponse] = js.native
-    def show(resourceId: String, userId: Double, hasIncludeInheritedOptions: IncludeInherited with Sudo): js.Promise[GetResponse] = js.native
+    def show(resourceId: String, userId: Double, hasIncludeInheritedOptions: IncludeInherited & Sudo): js.Promise[GetResponse] = js.native
     def show(resourceId: Double, userId: Double): js.Promise[GetResponse] = js.native
-    def show(resourceId: Double, userId: Double, hasIncludeInheritedOptions: IncludeInherited with Sudo): js.Promise[GetResponse] = js.native
+    def show(resourceId: Double, userId: Double, hasIncludeInheritedOptions: IncludeInherited & Sudo): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait IncludeInherited extends StObject {
     
-    var includeInherited: js.UndefOr[Boolean] = js.native
+    var includeInherited: js.UndefOr[Boolean] = js.undefined
   }
   object IncludeInherited {
     

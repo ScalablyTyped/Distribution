@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstructionInput extends StObject {
   
   /** The output index (origin zero) within the producer. */
-  var outputNum: js.UndefOr[Double] = js.native
+  var outputNum: js.UndefOr[Double] = js.undefined
   
   /**
     * The index (origin zero) of the parallel instruction that produces the output to be consumed by this input. This index is relative to the list of instructions in this input's
     * instruction's containing MapTask.
     */
-  var producerInstructionIndex: js.UndefOr[Double] = js.native
+  var producerInstructionIndex: js.UndefOr[Double] = js.undefined
 }
 object InstructionInput {
   

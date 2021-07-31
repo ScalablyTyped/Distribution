@@ -3,15 +3,13 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTargetTarget extends StObject {
   
-  var key: Input[String] = js.native
+  var key: Input[String]
   
-  var values: Input[js.Array[Input[String]]] = js.native
+  var values: Input[js.Array[Input[String]]]
 }
 object MaintenanceWindowTargetTarget {
   

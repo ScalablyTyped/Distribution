@@ -12,61 +12,64 @@ import typings.wordpressCompose.wordpressComposeStrings.setState
 import typings.wordpressCompose.wordpressComposeStrings.setTimeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@wordpress/compose", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
-  @JSImport("@wordpress/compose", "createHigherOrderComponent")
-  @js.native
+  @scala.inline
   def createHigherOrderComponent[EP](
-    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[_], ComponentType[_]],
+    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]],
     modifierName: String
-  ): js.Function1[/* component */ ComponentType[_], ComponentType[Omit[_, /* keyof EP */ String]]] = js.native
+  ): js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentType[Omit[js.Any, /* keyof EP */ String]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createHigherOrderComponent")(mapComponentToEnhancedComponent.asInstanceOf[js.Any], modifierName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentType[Omit[js.Any, /* keyof EP */ String]]
+  ]]
   
-  @JSImport("@wordpress/compose", "ifCondition")
-  @js.native
-  def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[/* component */ ComponentType[P], FC[P]] = js.native
-  
-  // prettier-ignore
-  @JSImport("@wordpress/compose", "pure")
-  @js.native
-  def pure[T /* <: ComponentType[_] */](component: T): ComponentType[_] = js.native
-  
-  @JSImport("@wordpress/compose", "useMediaQuery")
-  @js.native
-  def useMediaQuery(query: String): Boolean = js.native
-  
-  @JSImport("@wordpress/compose", "useReducedMotion")
-  @js.native
-  def useReducedMotion(): Boolean = js.native
+  @scala.inline
+  def ifCondition[P](predicate: js.Function1[/* props */ P, Boolean]): js.Function1[/* component */ ComponentType[P], FC[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifCondition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], FC[P]]]
   
   // prettier-ignore
-  @JSImport("@wordpress/compose", "withGlobalEvents")
-  @js.native
-  def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[_, ComponentState], ComponentType[_]] = js.native
+  @scala.inline
+  def pure[T /* <: ComponentType[js.Any] */](component: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  
+  @scala.inline
+  def useMediaQuery(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def useReducedMotion(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useReducedMotion")().asInstanceOf[Boolean]
   
   // prettier-ignore
-  @JSImport("@wordpress/compose", "withInstanceId")
-  @js.native
-  def withInstanceId[T /* <: ComponentType[_] */](wrapped: T): ComponentType[Omit[_, instanceId]] = js.native
+  @scala.inline
+  def withGlobalEvents(eventMapper: kinkeyofWindowEventMapstr): js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobalEvents")(eventMapper.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentClass[js.Any, ComponentState], ComponentType[js.Any]]]
   
   // prettier-ignore
-  @JSImport("@wordpress/compose", "withSafeTimeout")
-  @js.native
-  def withSafeTimeout[T /* <: ComponentType[_] */](component: T): ComponentType[Omit[_, setTimeout]] = js.native
+  @scala.inline
+  def withInstanceId[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, instanceId]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInstanceId")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, instanceId]]]
   
   // prettier-ignore
-  @JSImport("@wordpress/compose", "withState")
-  @js.native
+  @scala.inline
+  def withSafeTimeout[T /* <: ComponentType[js.Any] */](component: T): ComponentType[Omit[js.Any, setTimeout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, setTimeout]]]
+  
+  // prettier-ignore
+  @scala.inline
   def withState[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}
-    */ typings.wordpressCompose.wordpressComposeStrings.withState with TopLevel[SP]
+    */ typings.wordpressCompose.wordpressComposeStrings.withState & TopLevel[SP]
   ): js.Function1[
-    /* component */ ComponentType[_], 
-    ComponentClass[Omit[_, (/* keyof SP */ String) | setState], SP]
-  ] = js.native
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[Omit[js.Any, (/* keyof SP */ String) | setState], SP]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentClass[Omit[js.Any, (/* keyof SP */ String) | setState], SP]
+  ]]
 }

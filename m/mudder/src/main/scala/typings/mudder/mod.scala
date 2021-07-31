@@ -5,10 +5,13 @@ import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mudder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mudder", "SymbolTable")
   @js.native
@@ -72,7 +75,6 @@ object mod {
   @js.native
   val base62: SymbolTable = js.native
   
-  @JSImport("mudder", "longLinspace")
-  @js.native
-  def longLinspace(a: js.Array[Double], b: js.Array[Double], base: Double, N: Double, M: Double): js.Array[Carry] = js.native
+  @scala.inline
+  def longLinspace(a: js.Array[Double], b: js.Array[Double], base: Double, N: Double, M: Double): js.Array[Carry] = (^.asInstanceOf[js.Dynamic].applyDynamic("longLinspace")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], base.asInstanceOf[js.Any], N.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Array[Carry]]
 }

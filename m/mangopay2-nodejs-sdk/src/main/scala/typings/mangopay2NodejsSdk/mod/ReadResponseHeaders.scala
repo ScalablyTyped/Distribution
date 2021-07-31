@@ -3,20 +3,18 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Determines the shape of the response
-@js.native
 trait ReadResponseHeaders extends StObject {
   
-  var resolveWithFullResponse: `true` = js.native
+  var resolveWithFullResponse: `true`
 }
 object ReadResponseHeaders {
   
   @scala.inline
-  def apply(resolveWithFullResponse: `true`): ReadResponseHeaders = {
-    val __obj = js.Dynamic.literal(resolveWithFullResponse = resolveWithFullResponse.asInstanceOf[js.Any])
+  def apply(): ReadResponseHeaders = {
+    val __obj = js.Dynamic.literal(resolveWithFullResponse = true)
     __obj.asInstanceOf[ReadResponseHeaders]
   }
   

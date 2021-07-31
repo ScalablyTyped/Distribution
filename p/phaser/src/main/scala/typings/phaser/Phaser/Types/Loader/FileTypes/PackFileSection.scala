@@ -3,36 +3,34 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.FileConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackFileSection extends StObject {
   
   /**
     * A URL used to resolve paths in `files`. Example: 'http://labs.phaser.io/assets/'.
     */
-  var baseURL: js.UndefOr[String] = js.native
+  var baseURL: js.UndefOr[String] = js.undefined
   
   /**
     * The default {@link Phaser.Types.Loader.FileConfig} `type`.
     */
-  var defaultType: js.UndefOr[String] = js.native
+  var defaultType: js.UndefOr[String] = js.undefined
   
   /**
     * The files to load. See {@link Phaser.Types.Loader.FileTypes}.
     */
-  var files: js.Array[FileConfig] = js.native
+  var files: js.Array[FileConfig]
   
   /**
     * A URL path used to resolve relative paths in `files`. Example: 'images/sprites/'.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * An optional prefix that is automatically prepended to each file key.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object PackFileSection {
   

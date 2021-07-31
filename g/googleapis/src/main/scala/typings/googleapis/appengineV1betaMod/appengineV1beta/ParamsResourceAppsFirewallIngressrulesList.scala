@@ -6,39 +6,39 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsFirewallIngressrulesList extends StandardParameters {
+trait ParamsResourceAppsFirewallIngressrulesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Part of `parent`. Name of the Firewall collection to retrieve. Example:
     * apps/myapp/firewall/ingressRules.
     */
-  var appsId: js.UndefOr[String] = js.native
+  var appsId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A valid IP Address. If set, only rules matching this address will be
     * returned. The first returned rule will be the rule that fires on requests
     * from this IP.
     */
-  var matchingAddress: js.UndefOr[String] = js.native
+  var matchingAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum results to return per page.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAppsFirewallIngressrulesList {
   

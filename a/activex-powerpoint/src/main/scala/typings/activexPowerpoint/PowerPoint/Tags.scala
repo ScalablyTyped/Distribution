@@ -2,34 +2,32 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tags extends StObject {
   
-  def Add(Name: String, Value: String): Unit = js.native
+  def Add(Name: String, Value: String): Unit
   
-  def AddBinary(Name: String, FilePath: String): Unit = js.native
+  def AddBinary(Name: String, FilePath: String): Unit
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def BinaryValue(Name: String): Double = js.native
+  def BinaryValue(Name: String): Double
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Delete(Name: String): Unit = js.native
+  def Delete(Name: String): Unit
   
-  def Item(Name: String): String = js.native
+  def Item(Name: String): String
   
-  def Name(Index: Double): String = js.native
+  def Name(Index: Double): String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Tags_typekey")
-  var PowerPointDotTags_typekey: Tags = js.native
+  var PowerPointDotTags_typekey: Tags
   
-  def Value(Index: Double): String = js.native
+  def Value(Index: Double): String
 }
 object Tags {
   

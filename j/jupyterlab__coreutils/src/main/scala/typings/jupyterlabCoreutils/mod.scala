@@ -9,7 +9,6 @@ import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,6 +24,10 @@ object mod {
   }
   
   object MarkdownCodeBlocks {
+    
+    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.CODE_BLOCK_MARKER")
     @js.native
@@ -44,11 +47,12 @@ object mod {
       *
       * @returns An array of MarkdownCodeBlocks.
       */
-    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.findMarkdownCodeBlocks")
-    @js.native
+    @scala.inline
     def findMarkdownCodeBlocks(text: String): js.Array[
         typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("findMarkdownCodeBlocks")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+        typings.jupyterlabCoreutils.markdowncodeblocksMod.MarkdownCodeBlocks.MarkdownCodeBlock
+      ]]
     
     /**
       * Check whether the given file extension is a markdown extension
@@ -56,17 +60,24 @@ object mod {
       *
       * @returns true/false depending on whether this is a supported markdown extension
       */
-    @JSImport("@jupyterlab/coreutils", "MarkdownCodeBlocks.isMarkdown")
-    @js.native
-    def isMarkdown(extension: String): Boolean = js.native
+    @scala.inline
+    def isMarkdown(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdown")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object PageConfig {
+    
+    @JSImport("@jupyterlab/coreutils", "PageConfig")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The namespace for page config `Extension` functions.
       */
     object Extension {
+      
+      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * The collection of deferred extensions in page config.
@@ -87,41 +98,36 @@ object mod {
         *
         * @param id - The plugin ID.
         */
-      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.isDeferred")
-      @js.native
-      def isDeferred(id: String): Boolean = js.native
+      @scala.inline
+      def isDeferred(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Returns whether a plugin is disabled.
         *
         * @param id - The plugin ID.
         */
-      @JSImport("@jupyterlab/coreutils", "PageConfig.Extension.isDisabled")
-      @js.native
-      def isDisabled(id: String): Boolean = js.native
+      @scala.inline
+      def isDisabled(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     }
     
     /**
       * Get the base url for a Jupyter application, or the base url of the page.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getBaseUrl")
-    @js.native
-    def getBaseUrl(): String = js.native
+    @scala.inline
+    def getBaseUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseUrl")().asInstanceOf[String]
     
     /**
       * Returns the URL converting this notebook to a certain
       * format with nbconvert.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getNBConvertURL")
-    @js.native
-    def getNBConvertURL(hasPathFormatDownload: Download): String = js.native
+    @scala.inline
+    def getNBConvertURL(hasPathFormatDownload: Download): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNBConvertURL")(hasPathFormatDownload.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the Notebook version info [major, minor, patch].
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getNotebookVersion")
-    @js.native
-    def getNotebookVersion(): js.Tuple3[Double, Double, Double] = js.native
+    @scala.inline
+    def getNotebookVersion(): js.Tuple3[Double, Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNotebookVersion")().asInstanceOf[js.Tuple3[Double, Double, Double]]
     
     /**
       * Get global configuration data for the Jupyter application.
@@ -141,49 +147,42 @@ object mod {
       * with a `--jupyter-config-data` option pointing to a JSON settings
       * file.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getOption")
-    @js.native
-    def getOption(name: String): String = js.native
+    @scala.inline
+    def getOption(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOption")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the base url for sharing links (usually baseUrl)
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getShareUrl")
-    @js.native
-    def getShareUrl(): String = js.native
+    @scala.inline
+    def getShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareUrl")().asInstanceOf[String]
     
     /**
       * Get the authorization token for a Jupyter application.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getToken")
-    @js.native
-    def getToken(): String = js.native
+    @scala.inline
+    def getToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[String]
     
     /**
       * Get the tree url for shareable links.
       * Usually the same as treeUrl,
       * but overrideable e.g. when sharing with JupyterHub.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getTreeShareUrl")
-    @js.native
-    def getTreeShareUrl(): String = js.native
+    @scala.inline
+    def getTreeShareUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeShareUrl")().asInstanceOf[String]
     
     /**
       * Get the tree url for a JupyterLab application.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getTreeUrl")
-    @js.native
-    def getTreeUrl(): String = js.native
+    @scala.inline
+    def getTreeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeUrl")().asInstanceOf[String]
     
     /**
       * Get the base websocket url for a Jupyter application, or an empty string.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getWsUrl")
-    @js.native
-    def getWsUrl(): String = js.native
-    @JSImport("@jupyterlab/coreutils", "PageConfig.getWsUrl")
-    @js.native
-    def getWsUrl(baseUrl: String): String = js.native
+    @scala.inline
+    def getWsUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")().asInstanceOf[String]
+    @scala.inline
+    def getWsUrl(baseUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWsUrl")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Set global configuration data for the Jupyter application.
@@ -193,12 +192,15 @@ object mod {
       *
       * @returns The last config value or an empty string if it doesn't exist.
       */
-    @JSImport("@jupyterlab/coreutils", "PageConfig.setOption")
-    @js.native
-    def setOption(name: String, value: String): String = js.native
+    @scala.inline
+    def setOption(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setOption")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object PathExt {
+    
+    @JSImport("@jupyterlab/coreutils", "PathExt")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Return the last portion of a path. Similar to the Unix basename command.
@@ -208,12 +210,10 @@ object mod {
       *
       * @param ext - An extension to remove from the result.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.basename")
-    @js.native
-    def basename(path: String): String = js.native
-    @JSImport("@jupyterlab/coreutils", "PathExt.basename")
-    @js.native
-    def basename(path: String, ext: String): String = js.native
+    @scala.inline
+    def basename(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def basename(path: String, ext: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Get the directory name of a path, similar to the Unix dirname command.
@@ -221,9 +221,8 @@ object mod {
       *
       * @param path - The file path.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.dirname")
-    @js.native
-    def dirname(path: String): String = js.native
+    @scala.inline
+    def dirname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dirname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Get the extension of the path.
@@ -239,9 +238,8 @@ object mod {
       * character of the basename of path [[basename]] is `.`, then an
       * empty string is returned.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.extname")
-    @js.native
-    def extname(path: String): String = js.native
+    @scala.inline
+    def extname(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extname")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Join all arguments together and normalize the resulting path.
@@ -249,9 +247,8 @@ object mod {
       *
       * @param paths - The string paths to join.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.join")
-    @js.native
-    def join(paths: String*): String = js.native
+    @scala.inline
+    def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalize a string path, reducing '..' and '.' parts.
@@ -260,9 +257,8 @@ object mod {
       *
       * @param path - The string path to normalize.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.normalize")
-    @js.native
-    def normalize(path: String): String = js.native
+    @scala.inline
+    def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalize a file extension to be of the type `'.foo'`.
@@ -272,9 +268,8 @@ object mod {
       * #### Notes
       * Adds a leading dot if not present and converts to lower case.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.normalizeExtension")
-    @js.native
-    def normalizeExtension(extension: String): String = js.native
+    @scala.inline
+    def normalizeExtension(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExtension")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Solve the relative path from {from} to {to}.
@@ -289,18 +284,16 @@ object mod {
       * If a zero-length string is passed as from or to, `/`
       * will be used instead of the zero-length strings.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.relative")
-    @js.native
-    def relative(from: String, to: String): String = js.native
+    @scala.inline
+    def relative(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove the leading slash from a path.
       *
       * @param path: the path from which to remove a leading slash.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.removeSlash")
-    @js.native
-    def removeSlash(path: String): String = js.native
+    @scala.inline
+    def removeSlash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSlash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Resolve a sequence of paths or path segments into an absolute path.
@@ -315,12 +308,15 @@ object mod {
       *
       * If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
       */
-    @JSImport("@jupyterlab/coreutils", "PathExt.resolve")
-    @js.native
-    def resolve(parts: String*): String = js.native
+    @scala.inline
+    def resolve(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object Text {
+    
+    @JSImport("@jupyterlab/coreutils", "Text")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Given a 'snake-case', 'snake_case', 'snake:case', or
@@ -333,12 +329,10 @@ object mod {
       *
       * @returns the camel case version of the input string.
       */
-    @JSImport("@jupyterlab/coreutils", "Text.camelCase")
-    @js.native
-    def camelCase(str: String): String = js.native
-    @JSImport("@jupyterlab/coreutils", "Text.camelCase")
-    @js.native
-    def camelCase(str: String, upper: Boolean): String = js.native
+    @scala.inline
+    def camelCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def camelCase(str: String, upper: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("camelCase")(str.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a unicode character offset to a javascript string index.
@@ -349,9 +343,8 @@ object mod {
       *
       * @returns The js-native index
       */
-    @JSImport("@jupyterlab/coreutils", "Text.charIndexToJsIndex")
-    @js.native
-    def charIndexToJsIndex(charIdx: Double, text: String): Double = js.native
+    @scala.inline
+    def charIndexToJsIndex(charIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("charIndexToJsIndex")(charIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Convert a javascript string index into a unicode character offset
@@ -362,9 +355,8 @@ object mod {
       *
       * @returns The unicode character offset
       */
-    @JSImport("@jupyterlab/coreutils", "Text.jsIndexToCharIndex")
-    @js.native
-    def jsIndexToCharIndex(jsIdx: Double, text: String): Double = js.native
+    @scala.inline
+    def jsIndexToCharIndex(jsIdx: Double, text: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jsIndexToCharIndex")(jsIdx.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Given a string, title case the words in the string.
@@ -373,12 +365,15 @@ object mod {
       *
       * @returns the same string, but with each word capitalized.
       */
-    @JSImport("@jupyterlab/coreutils", "Text.titleCase")
-    @js.native
-    def titleCase(str: String): String = js.native
+    @scala.inline
+    def titleCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object Time {
+    
+    @JSImport("@jupyterlab/coreutils", "Time")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Convert a timestring to a date format.
@@ -389,18 +384,14 @@ object mod {
       *
       * @returns A formatted date.
       */
-    @JSImport("@jupyterlab/coreutils", "Time.format")
-    @js.native
-    def format(value: String): String = js.native
-    @JSImport("@jupyterlab/coreutils", "Time.format")
-    @js.native
-    def format(value: String, timeFormat: String): String = js.native
-    @JSImport("@jupyterlab/coreutils", "Time.format")
-    @js.native
-    def format(value: Date): String = js.native
-    @JSImport("@jupyterlab/coreutils", "Time.format")
-    @js.native
-    def format(value: Date, timeFormat: String): String = js.native
+    @scala.inline
+    def format(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def format(value: String, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def format(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def format(value: Date, timeFormat: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], timeFormat.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').
@@ -409,15 +400,17 @@ object mod {
       *
       * @returns A formatted date.
       */
-    @JSImport("@jupyterlab/coreutils", "Time.formatHuman")
-    @js.native
-    def formatHuman(value: String): String = js.native
-    @JSImport("@jupyterlab/coreutils", "Time.formatHuman")
-    @js.native
-    def formatHuman(value: Date): String = js.native
+    @scala.inline
+    def formatHuman(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatHuman(value: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatHuman")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object URLExt {
+    
+    @JSImport("@jupyterlab/coreutils", "URLExt")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Encode the components of a multi-segment url.
@@ -430,9 +423,8 @@ object mod {
       * Preserves the `'/'` separators.
       * Should not include the base url, since all parts are escaped.
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.encodeParts")
-    @js.native
-    def encodeParts(url: String): String = js.native
+    @scala.inline
+    def encodeParts(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeParts")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Test whether the url is a local url.
@@ -441,9 +433,8 @@ object mod {
       * This function returns `false` for any fully qualified url, including
       * `data:`, `file:`, and `//` protocol URLs.
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.isLocal")
-    @js.native
-    def isLocal(url: String): Boolean = js.native
+    @scala.inline
+    def isLocal(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocal")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Join a sequence of url components and normalizes as in node `path.join`.
@@ -452,25 +443,21 @@ object mod {
       *
       * @returns the joined url.
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.join")
-    @js.native
-    def join(parts: String*): String = js.native
+    @scala.inline
+    def join(parts: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
-    @js.native
-    def normalize(): js.UndefOr[String] = js.native
-    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
-    @js.native
-    def normalize(url: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def normalize(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[js.UndefOr[String]]
     /**
       * Normalize a url.
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
-    @js.native
-    def normalize(url: String): String = js.native
-    @JSImport("@jupyterlab/coreutils", "URLExt.normalize")
-    @js.native
-    def normalize_Union(url: String): js.UndefOr[String] = js.native
+    @scala.inline
+    def normalize(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def normalize(url: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def normalize_Union(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /**
       * Return a serialized object string suitable for a query.
@@ -482,9 +469,8 @@ object mod {
       * #### Notes
       * Modified version of [stackoverflow](http://stackoverflow.com/a/30707423).
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.objectToQueryString")
-    @js.native
-    def objectToQueryString(value: PartialJSONObject): String = js.native
+    @scala.inline
+    def objectToQueryString(value: PartialJSONObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parse a url into a URL object.
@@ -493,15 +479,13 @@ object mod {
       *
       * @returns A URL object.
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.parse")
-    @js.native
-    def parse(url: String): IUrl = js.native
+    @scala.inline
+    def parse(url: String): IUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[IUrl]
     
     /**
       * Return a parsed object that represents the values in a query string.
       */
-    @JSImport("@jupyterlab/coreutils", "URLExt.queryStringToObject")
-    @js.native
-    def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = js.native
+    @scala.inline
+    def queryStringToObject(value: String): StringDictionary[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(value.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[String]]]
   }
 }

@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,9 +53,8 @@ object SaveButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.create")
-  @js.native
-  def create(model: IModel): SaveButton = js.native
+  @scala.inline
+  def create(model: IModel): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -67,9 +65,8 @@ object SaveButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): SaveButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -80,9 +77,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): SaveButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -93,9 +89,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): SaveButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -106,9 +101,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): SaveButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -119,9 +113,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): SaveButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -132,9 +125,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): SaveButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -145,9 +137,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SaveButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -158,9 +149,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SaveButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -171,9 +161,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): SaveButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -184,9 +173,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SaveButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -197,9 +185,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): SaveButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -210,9 +197,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): SaveButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -223,9 +209,8 @@ object SaveButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): SaveButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -236,9 +221,8 @@ object SaveButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): SaveButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -249,9 +233,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SaveButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -262,9 +245,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): SaveButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -275,9 +257,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): SaveButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -288,9 +269,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): SaveButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -301,9 +281,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): SaveButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -314,9 +293,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): SaveButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -327,9 +305,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SaveButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /**
     * Creates and returns a new SaveButton instance in the SDK and on the server.
@@ -340,9 +317,8 @@ object SaveButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SaveButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SaveButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SaveButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveButton.structureTypeName")

@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultCore extends StObject {
   
-  val Events: IVaultCoreEvents = js.native
+  val Events: IVaultCoreEvents
   
-  val ServerVault: IVault = js.native
+  val ServerVault: IVault
 }
 object IVaultCore {
   

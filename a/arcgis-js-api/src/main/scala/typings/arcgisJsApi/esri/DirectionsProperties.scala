@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsProperties
-  extends WidgetProperties
+  extends StObject
+     with WidgetProperties
      with GoToProperties {
   
   /**
@@ -15,56 +14,56 @@ trait DirectionsProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of stops allowed for routing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#maxStops)
     */
-  var maxStops: js.UndefOr[Double] = js.native
+  var maxStops: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the REST endpoint of the Route service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeServiceUrl)
     */
-  var routeServiceUrl: js.UndefOr[String] = js.native
+  var routeServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the symbol used to draw the route on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#routeSymbol)
     */
-  var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.native
+  var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
     * Controls the default properties used when [searching](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#searchProperties)
     */
-  var searchProperties: js.UndefOr[DirectionsSearchProperties] = js.native
+  var searchProperties: js.UndefOr[DirectionsSearchProperties] = js.undefined
   
   /**
     * The default stop symbols used to display locations between the origin and final destination.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
-  var stopSymbols: js.UndefOr[DirectionsStopSymbols] = js.native
+  var stopSymbols: js.UndefOr[DirectionsStopSymbols] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#viewModel)
     */
-  var viewModel: js.UndefOr[DirectionsViewModelProperties] = js.native
+  var viewModel: js.UndefOr[DirectionsViewModelProperties] = js.undefined
 }
 object DirectionsProperties {
   

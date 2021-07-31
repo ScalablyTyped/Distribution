@@ -2,25 +2,25 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdWordsAdExtensions extends AdGroupExtensions {
+trait AdWordsAdExtensions
+  extends StObject
+     with AdGroupExtensions {
   
-  def newCalloutBuilder(): CalloutBuilder[Callout] = js.native
+  def newCalloutBuilder(): CalloutBuilder[Callout]
   
-  def newMessageBuilder(): MessageBuilder[Message] = js.native
+  def newMessageBuilder(): MessageBuilder[Message]
   
-  def newMobileAppBuilder(): MobileAppBuilder[MobileApp] = js.native
+  def newMobileAppBuilder(): MobileAppBuilder[MobileApp]
   
-  def newPhoneNumberBuilder(): PhoneNumberBuilder[PhoneNumber] = js.native
+  def newPhoneNumberBuilder(): PhoneNumberBuilder[PhoneNumber]
   
-  def newReviewBuilder(): ReviewBuilder[Review] = js.native
+  def newReviewBuilder(): ReviewBuilder[Review]
   
-  def newSitelinkBuilder(): SitelinkBuilder[Sitelink] = js.native
+  def newSitelinkBuilder(): SitelinkBuilder[Sitelink]
   
-  def newSnippetBuilder(): SnippetBuilder[Snippet] = js.native
+  def newSnippetBuilder(): SnippetBuilder[Snippet]
 }
 object AdWordsAdExtensions {
   

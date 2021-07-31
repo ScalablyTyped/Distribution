@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRulesResult extends StObject {
   
   /**
     * The next page token to be used in subsequent requests.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The details of the requested rule.
     */
-  var ruleDetails: js.UndefOr[RuleDetailList] = js.native
+  var ruleDetails: js.UndefOr[RuleDetailList] = js.undefined
 }
 object GetRulesResult {
   

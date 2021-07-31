@@ -3,20 +3,20 @@ package typings.extjs.Ext.layout
 import typings.extjs.Ext.layout.container.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFitLayout extends IContainer {
+trait IFitLayout
+  extends StObject
+     with IContainer {
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IFitLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var calculate_IFitLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultMargins: js.UndefOr[js.Any] = js.native
+  var defaultMargins: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns an object describing how this layout manages the size of the given component
     * @param item Object
@@ -26,7 +26,7 @@ trait IFitLayout extends IContainer {
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_IFitLayout: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any], ISizePolicy]
-  ] = js.native
+  ] = js.undefined
 }
 object IFitLayout {
   

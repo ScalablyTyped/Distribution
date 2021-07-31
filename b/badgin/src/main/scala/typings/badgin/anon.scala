@@ -5,7 +5,6 @@ import typings.badgin.mod.Method
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -20,26 +19,25 @@ object anon {
   }
   
   /* Inlined std.Partial<badgin.badgin/build/favicon.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var horizontalMargin: js.UndefOr[Double] = js.native
+    var horizontalMargin: js.UndefOr[Double] = js.undefined
     
-    var horizontalPadding: js.UndefOr[Double] = js.native
+    var horizontalPadding: js.UndefOr[Double] = js.undefined
     
-    var indicator: js.UndefOr[String] = js.native
+    var indicator: js.UndefOr[String] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var verticalMargin: js.UndefOr[Double] = js.native
+    var verticalMargin: js.UndefOr[Double] = js.undefined
     
-    var verticalPadding: js.UndefOr[Double] = js.native
+    var verticalPadding: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     
@@ -109,14 +107,13 @@ object anon {
   }
   
   /* Inlined std.Partial<badgin.badgin.Options> */
-  @js.native
   trait PartialOptionsFavicon extends StObject {
     
-    var favicon: js.UndefOr[Partial[Options]] = js.native
+    var favicon: js.UndefOr[Partial[Options]] = js.undefined
     
-    var method: js.UndefOr[Method] = js.native
+    var method: js.UndefOr[Method] = js.undefined
     
-    var title: js.UndefOr[Partial[typings.badgin.titleMod.Options]] = js.native
+    var title: js.UndefOr[Partial[typings.badgin.titleMod.Options]] = js.undefined
   }
   object PartialOptionsFavicon {
     
@@ -150,10 +147,9 @@ object anon {
   }
   
   /* Inlined std.Partial<badgin.badgin/build/title.Options> */
-  @js.native
   trait PartialOptionsIndicator extends StObject {
     
-    var indicator: js.UndefOr[String] = js.native
+    var indicator: js.UndefOr[String] = js.undefined
   }
   object PartialOptionsIndicator {
     

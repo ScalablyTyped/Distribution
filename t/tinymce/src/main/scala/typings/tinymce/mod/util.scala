@@ -3,7 +3,6 @@ package typings.tinymce.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object util {
@@ -28,16 +27,16 @@ object util {
   class Observable () extends StObject {
     
     def fire(name: String): js.Object = js.native
-    def fire(name: String, args: js.UndefOr[scala.Nothing], bubble: Boolean): js.Object = js.native
     def fire(name: String, args: js.Object): js.Object = js.native
     def fire(name: String, args: js.Object, bubble: Boolean): js.Object = js.native
+    def fire(name: String, args: Unit, bubble: Boolean): js.Object = js.native
     
     def hasEventListeners(name: String): Boolean = js.native
     
     def off(): js.Object = js.native
-    def off(name: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Object = js.native
     def off(name: String): js.Object = js.native
     def off(name: String, callback: js.Function0[Unit]): js.Object = js.native
+    def off(name: Unit, callback: js.Function0[Unit]): js.Object = js.native
     
     def on(name: String, callback: js.Function1[/* event */ js.Any, Unit]): js.Object = js.native
     def on(name: String, callback: js.Function1[/* event */ js.Any, Unit], first: Boolean): js.Object = js.native
@@ -115,12 +114,11 @@ object util {
     def serialize(obj: js.Object, quote: String): String = js.native
   }
   
-  @js.native
   trait JSONRequest extends StObject {
     
-    def send(args: js.Object): Unit = js.native
+    def send(args: js.Object): Unit
     
-    def sendRPC(o: js.Object): Unit = js.native
+    def sendRPC(o: js.Object): Unit
   }
   object JSONRequest {
     
@@ -141,20 +139,19 @@ object util {
     }
   }
   
-  @js.native
   trait LocalStorage extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def getItem(key: String): String = js.native
+    def getItem(key: String): String
     
-    def key(index: Double): String = js.native
+    def key(index: Double): String
     
-    var length: Double = js.native
+    var length: Double
     
-    def removeItem(key: String): Unit = js.native
+    def removeItem(key: String): Unit
     
-    def setItem(key: String, value: String): Unit = js.native
+    def setItem(key: String, value: String): Unit
   }
   object LocalStorage {
     
@@ -217,9 +214,9 @@ object util {
     def isArray(obj: js.Object): Boolean = js.native
     
     def makeMap[T](items: js.Array[T]): js.Object = js.native
-    def makeMap[T](items: js.Array[T], delim: js.UndefOr[scala.Nothing], map: js.Object): js.Object = js.native
     def makeMap[T](items: js.Array[T], delim: String): js.Object = js.native
     def makeMap[T](items: js.Array[T], delim: String, map: js.Object): js.Object = js.native
+    def makeMap[T](items: js.Array[T], delim: Unit, map: js.Object): js.Object = js.native
     
     def map[T, S](array: js.Array[T], callback: js.Function1[/* c */ T, S]): js.Array[S] = js.native
     
@@ -231,25 +228,25 @@ object util {
     def trim(s: String): String = js.native
     
     def walk(o: js.Object, f: js.Function0[Unit]): Unit = js.native
-    def walk(o: js.Object, f: js.Function0[Unit], n: js.UndefOr[scala.Nothing], s: String): Unit = js.native
     def walk(o: js.Object, f: js.Function0[Unit], n: String): Unit = js.native
     def walk(o: js.Object, f: js.Function0[Unit], n: String, s: String): Unit = js.native
+    def walk(o: js.Object, f: js.Function0[Unit], n: Unit, s: String): Unit = js.native
   }
   
   @js.native
   trait XHR extends StObject {
     
     def fire(name: String): js.Object = js.native
-    def fire(name: String, args: js.UndefOr[scala.Nothing], bubble: Boolean): js.Object = js.native
     def fire(name: String, args: js.Object): js.Object = js.native
     def fire(name: String, args: js.Object, bubble: Boolean): js.Object = js.native
+    def fire(name: String, args: Unit, bubble: Boolean): js.Object = js.native
     
     def hasEventListeners(name: String): Boolean = js.native
     
     def off(): js.Object = js.native
-    def off(name: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Object = js.native
     def off(name: String): js.Object = js.native
     def off(name: String, callback: js.Function0[Unit]): js.Object = js.native
+    def off(name: Unit, callback: js.Function0[Unit]): js.Object = js.native
     
     def on(name: String, callback: js.Function0[Unit]): js.Object = js.native
     def on(name: String, callback: js.Function0[Unit], first: Boolean): js.Object = js.native
@@ -259,18 +256,17 @@ object util {
     def send(settings: js.Object): Unit = js.native
   }
   
-  @js.native
   trait i18n extends StObject {
     
-    def add(code: String, items: js.Array[js.Object]): Unit = js.native
+    def add(code: String, items: js.Array[js.Object]): Unit
     
-    def getCode(): String = js.native
+    def getCode(): String
     
-    var rtl: Boolean = js.native
+    var rtl: Boolean
     
-    def setCode(newCode: String): Unit = js.native
+    def setCode(newCode: String): Unit
     
-    def translate(text: String): String = js.native
+    def translate(text: String): String
   }
   object i18n {
     

@@ -2,23 +2,21 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpringOptions extends StObject {
   
-  var damping: js.UndefOr[Double] = js.native
+  var damping: js.UndefOr[Double] = js.undefined
   
-  var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
-  var worldAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var worldAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var worldAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var worldAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object SpringOptions {
   

@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** interface for notifying potential listeners of {@link com.sun.star.sdbc.SQLException} s posted by any database object. */
-@js.native
-trait XSQLErrorBroadcaster extends XInterface {
+trait XSQLErrorBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive the event "errorOccurred" */
-  def addSQLErrorListener(Listener: XSQLErrorListener): Unit = js.native
+  def addSQLErrorListener(Listener: XSQLErrorListener): Unit
   
   /** removes the specified listener. */
-  def removeSQLErrorListener(Listener: XSQLErrorListener): Unit = js.native
+  def removeSQLErrorListener(Listener: XSQLErrorListener): Unit
 }
 object XSQLErrorBroadcaster {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrialRequest extends StObject {
   
   /**
     * The name of the trial as displayed. The name doesn't need to be unique. If DisplayName isn't specified, TrialName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The name of the experiment to associate the trial with.
     */
-  var ExperimentName: ExperimentEntityName = js.native
+  var ExperimentName: ExperimentEntityName
   
   /**
     * A list of tags to associate with the trial. You can use Search API to search on the tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The name of the trial. The name must be unique in your AWS account and is not case-sensitive.
     */
-  var TrialName: ExperimentEntityName = js.native
+  var TrialName: ExperimentEntityName
 }
 object CreateTrialRequest {
   

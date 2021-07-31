@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binaryauthorizationMod {
+  
+  @JSImport("googleapis/build/src/apis/binaryauthorization", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object binaryauthorizationMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/binaryauthorization", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/binaryauthorization", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object binaryauthorizationMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/binaryauthorization", "binaryauthorization")
-  @js.native
-  def binaryauthorization(options: Options): Binaryauthorization = js.native
-  @JSImport("googleapis/build/src/apis/binaryauthorization", "binaryauthorization")
-  @js.native
-  def binaryauthorization_v1beta1(version: v1beta1): Binaryauthorization = js.native
+  @scala.inline
+  def binaryauthorization(options: Options): Binaryauthorization = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryauthorization")(options.asInstanceOf[js.Any]).asInstanceOf[Binaryauthorization]
+  
+  @scala.inline
+  def binaryauthorization_v1beta1(version: v1beta1): Binaryauthorization = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryauthorization")(version.asInstanceOf[js.Any]).asInstanceOf[Binaryauthorization]
 }

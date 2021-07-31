@@ -2,25 +2,23 @@ package typings.filepond.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondCallbackProps extends StObject {
   
   /* Called when a file is clicked or tapped. **/
-  var onactivatefile: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.native
+  var onactivatefile: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.undefined
   
   /** If no error, file has been successfully loaded. */
   var onaddfile: js.UndefOr[
     js.Function2[/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** Made progress loading a file. */
-  var onaddfileprogress: js.UndefOr[js.Function2[/* file */ FilePondFile, /* progress */ Double, Unit]] = js.native
+  var onaddfileprogress: js.UndefOr[js.Function2[/* file */ FilePondFile, /* progress */ Double, Unit]] = js.undefined
   
   /** Started file load. */
-  var onaddfilestart: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.native
+  var onaddfilestart: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.undefined
   
   /**
     * FilePond instance throws an error. Optionally receives
@@ -33,48 +31,48 @@ trait FilePondCallbackProps extends StObject {
       /* status */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** FilePond instance has been created and is ready. */
-  var oninit: js.UndefOr[js.Function0[Unit]] = js.native
+  var oninit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * File has been transformed by the transform plugin or
     * another plugin subscribing to the prepare_output filter.
     * It receives the file item and the output data.
     */
-  var onpreparefile: js.UndefOr[js.Function2[/* file */ FilePondFile, /* output */ js.Any, Unit]] = js.native
+  var onpreparefile: js.UndefOr[js.Function2[/* file */ FilePondFile, /* output */ js.Any, Unit]] = js.undefined
   
   /** If no error, Processing of a file has been completed. */
   var onprocessfile: js.UndefOr[
     js.Function2[/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** Aborted processing of a file. */
-  var onprocessfileabort: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.native
+  var onprocessfileabort: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.undefined
   
   /** Made progress processing a file. */
-  var onprocessfileprogress: js.UndefOr[js.Function2[/* file */ FilePondFile, /* progress */ Double, Unit]] = js.native
+  var onprocessfileprogress: js.UndefOr[js.Function2[/* file */ FilePondFile, /* progress */ Double, Unit]] = js.undefined
   
   /** Processing of a file has been reverted. */
-  var onprocessfilerevert: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.native
+  var onprocessfilerevert: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.undefined
   
   /** Called when all files in the list have been processed. */
-  var onprocessfiles: js.UndefOr[js.Function0[Unit]] = js.native
+  var onprocessfiles: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** Started processing a file. */
-  var onprocessfilestart: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.native
+  var onprocessfilestart: js.UndefOr[js.Function1[/* file */ FilePondFile, Unit]] = js.undefined
   
   /** File has been removed. */
   var onremovefile: js.UndefOr[
     js.Function2[/* error */ FilePondErrorDescription | Null, /* file */ FilePondFile, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** Called when the files have been reordered */
-  var onreorderfiles: js.UndefOr[js.Function1[/* files */ js.Array[FilePondFile], Unit]] = js.native
+  var onreorderfiles: js.UndefOr[js.Function1[/* files */ js.Array[FilePondFile], Unit]] = js.undefined
   
   /** A file has been added or removed, receives a list of file items. */
-  var onupdatefiles: js.UndefOr[js.Function1[/* files */ js.Array[FilePondFile], Unit]] = js.native
+  var onupdatefiles: js.UndefOr[js.Function1[/* files */ js.Array[FilePondFile], Unit]] = js.undefined
   
   /**
     * FilePond instance throws a warning. For instance
@@ -89,7 +87,7 @@ trait FilePondCallbackProps extends StObject {
       /* status */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FilePondCallbackProps {
   

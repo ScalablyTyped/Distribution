@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WalkingRouteResult extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  def getEnd(): LocalResultPoi = js.native
+  def getEnd(): LocalResultPoi
   
-  def getNumPlans(): Double = js.native
+  def getNumPlans(): Double
   
-  def getPlan(i: Double): RoutePlan = js.native
+  def getPlan(i: Double): RoutePlan
   
-  def getStart(): LocalResultPoi = js.native
+  def getStart(): LocalResultPoi
 }
 object WalkingRouteResult {
   

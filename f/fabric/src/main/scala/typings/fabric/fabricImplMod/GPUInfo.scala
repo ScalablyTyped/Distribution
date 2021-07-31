@@ -2,15 +2,13 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GPUInfo extends StObject {
   
-  var renderer: String = js.native
+  var renderer: String
   
-  var vendor: String = js.native
+  var vendor: String
 }
 object GPUInfo {
   

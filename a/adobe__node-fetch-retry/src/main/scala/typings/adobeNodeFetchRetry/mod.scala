@@ -5,29 +5,31 @@ import typings.nodeFetch.mod.RequestInit
 import typings.nodeFetch.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(url: String, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def apply(url: Request, options: Options): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  
   @JSImport("@adobe/node-fetch-retry", JSImport.Namespace)
   @js.native
-  def apply(url: String, options: Options): js.Promise[Response] = js.native
-  @JSImport("@adobe/node-fetch-retry", JSImport.Namespace)
-  @js.native
-  def apply(url: Request, options: Options): js.Promise[Response] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * options for fetch-retry
     */
-  @js.native
-  trait Options extends RequestInit {
+  trait Options
+    extends StObject
+       with RequestInit {
     
     /**
       * options for retry or false if want to disable retry
       * ... other options for fetch call (method, headers, etc...)
       */
-    var retryOptions: js.UndefOr[RetryOptions] = js.native
+    var retryOptions: js.UndefOr[RetryOptions] = js.undefined
   }
   object Options {
     
@@ -51,38 +53,37 @@ object mod {
   /**
     * options for retry or false if want to disable retry
     */
-  @js.native
   trait RetryOptions extends StObject {
     
     /**
       * If true, socket timeout will be forced to use `socketTimeout` property declared (defaults to false)
       */
-    var forceSocketTimeout: js.UndefOr[Boolean] = js.native
+    var forceSocketTimeout: js.UndefOr[Boolean] = js.undefined
     
     /**
       * backoff factor for wait time between retries (defaults to 2.0)
       */
-    var retryBackoff: js.UndefOr[Double] = js.native
+    var retryBackoff: js.UndefOr[Double] = js.undefined
     
     /**
       * time to wait between retries in milliseconds
       */
-    var retryInitialDelay: js.UndefOr[Double] = js.native
+    var retryInitialDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * time (in milliseconds) to retry until throwing an error
       */
-    var retryMaxDuration: js.UndefOr[Double] = js.native
+    var retryMaxDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * a function determining whether to retry on a specific HTTP code
       */
-    var retryOnHttpResponse: js.UndefOr[js.Function1[/* response */ Response, Boolean]] = js.native
+    var retryOnHttpResponse: js.UndefOr[js.Function1[/* response */ Response, Boolean]] = js.undefined
     
     /**
       * Optional socket timeout in milliseconds (defaults to 60000ms)
       */
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
   }
   object RetryOptions {
     

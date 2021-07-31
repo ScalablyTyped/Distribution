@@ -3,11 +3,11 @@ package typings.rxLite.Rx
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Disposable extends IDisposable
+trait Disposable
+  extends StObject
+     with IDisposable
 object Disposable {
   
   @scala.inline

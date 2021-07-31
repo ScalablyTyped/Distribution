@@ -2,132 +2,130 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGSVGElement extends StObject {
   
   @JSName("MSHTML.SVGSVGElement_typekey")
-  var MSHTMLDotSVGSVGElement_typekey: SVGSVGElement = js.native
+  var MSHTMLDotSVGSVGElement_typekey: SVGSVGElement
   
-  def animationsPaused(): Boolean = js.native
+  def animationsPaused(): Boolean
   
-  def checkEnclosure(element: ISVGElement, rect: SVGRect): Boolean = js.native
+  def checkEnclosure(element: ISVGElement, rect: SVGRect): Boolean
   
-  def checkIntersection(element: ISVGElement, rect: SVGRect): Boolean = js.native
+  def checkIntersection(element: ISVGElement, rect: SVGRect): Boolean
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  var contentScriptType: String = js.native
+  var contentScriptType: String
   
-  var contentStyleType: String = js.native
+  var contentStyleType: String
   
-  def createSVGAngle(): SVGAngle = js.native
+  def createSVGAngle(): SVGAngle
   
-  def createSVGLength(): SVGLength = js.native
+  def createSVGLength(): SVGLength
   
-  def createSVGMatrix(): SVGMatrix = js.native
+  def createSVGMatrix(): SVGMatrix
   
-  def createSVGNumber(): SVGNumber = js.native
+  def createSVGNumber(): SVGNumber
   
-  def createSVGPoint(): SVGPoint = js.native
+  def createSVGPoint(): SVGPoint
   
-  def createSVGRect(): SVGRect = js.native
+  def createSVGRect(): SVGRect
   
-  def createSVGTransform(): SVGTransform = js.native
+  def createSVGTransform(): SVGTransform
   
-  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform = js.native
+  def createSVGTransformFromMatrix(matrix: SVGMatrix): SVGTransform
   
-  var currentScale: Double = js.native
+  var currentScale: Double
   
-  var currentTranslate: SVGPoint = js.native
+  var currentTranslate: SVGPoint
   
-  var currentView: ISVGViewSpec = js.native
+  var currentView: ISVGViewSpec
   
-  def deselectAll(): Unit = js.native
+  def deselectAll(): Unit
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  val farthestViewportElement: ISVGElement = js.native
+  val farthestViewportElement: ISVGElement
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  def forceRedraw(): Unit = js.native
+  def forceRedraw(): Unit
   
-  def getBBox(): SVGRect = js.native
+  def getBBox(): SVGRect
   
-  def getCTM(): SVGMatrix = js.native
+  def getCTM(): SVGMatrix
   
-  def getCurrentTime(): Double = js.native
+  def getCurrentTime(): Double
   
-  def getElementById(elementId: String): IHTMLElement = js.native
+  def getElementById(elementId: String): IHTMLElement
   
-  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): js.Any = js.native
+  def getEnclosureList(rect: SVGRect, referenceElement: ISVGElement): js.Any
   
-  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): js.Any = js.native
+  def getIntersectionList(rect: SVGRect, referenceElement: ISVGElement): js.Any
   
-  def getScreenCTM(): SVGMatrix = js.native
+  def getScreenCTM(): SVGMatrix
   
-  def getTransformToElement(pElement: ISVGElement): SVGMatrix = js.native
+  def getTransformToElement(pElement: ISVGElement): SVGMatrix
   
-  def hasExtension(extension: String): Boolean = js.native
+  def hasExtension(`extension`: String): Boolean
   
-  var height: SVGAnimatedLength = js.native
+  var height: SVGAnimatedLength
   
-  val nearestViewportElement: ISVGElement = js.native
+  val nearestViewportElement: ISVGElement
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  def pauseAnimations(): Unit = js.native
+  def pauseAnimations(): Unit
   
-  var pixelUnitToMillimeterX: Double = js.native
+  var pixelUnitToMillimeterX: Double
   
-  var pixelUnitToMillimeterY: Double = js.native
+  var pixelUnitToMillimeterY: Double
   
-  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  var preserveAspectRatio: SVGAnimatedPreserveAspectRatio
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val requiredFeatures: SVGStringList = js.native
+  val requiredFeatures: SVGStringList
   
-  var screenPixelToMillimeterX: Double = js.native
+  var screenPixelToMillimeterX: Double
   
-  var screenPixelToMillimeterY: Double = js.native
+  var screenPixelToMillimeterY: Double
   
-  def setCurrentTime(seconds: Double): Unit = js.native
+  def setCurrentTime(seconds: Double): Unit
   
-  def suspendRedraw(maxWaitMilliseconds: Double): Double = js.native
+  def suspendRedraw(maxWaitMilliseconds: Double): Double
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
   
-  def unpauseAnimations(): Unit = js.native
+  def unpauseAnimations(): Unit
   
-  def unsuspendRedraw(suspendHandeID: Double): Unit = js.native
+  def unsuspendRedraw(suspendHandeID: Double): Unit
   
-  def unsuspendRedrawAll(): Unit = js.native
+  def unsuspendRedrawAll(): Unit
   
-  var useCurrentView: Boolean = js.native
+  var useCurrentView: Boolean
   
-  val viewBox: SVGAnimatedRect = js.native
+  val viewBox: SVGAnimatedRect
   
-  var viewport: SVGRect = js.native
+  var viewport: SVGRect
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var width: SVGAnimatedLength = js.native
+  var width: SVGAnimatedLength
   
-  var x: SVGAnimatedLength = js.native
+  var x: SVGAnimatedLength
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var xmllang: String = js.native
+  var xmllang: String
   
-  var xmlspace: String = js.native
+  var xmlspace: String
   
-  var y: SVGAnimatedLength = js.native
+  var y: SVGAnimatedLength
   
-  val zoomAndPan: Double = js.native
+  val zoomAndPan: Double
 }
 object SVGSVGElement {
   

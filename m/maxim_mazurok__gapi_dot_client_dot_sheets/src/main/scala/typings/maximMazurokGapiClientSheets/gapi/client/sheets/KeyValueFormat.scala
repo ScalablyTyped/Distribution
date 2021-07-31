@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValueFormat extends StObject {
   
   /** Specifies the horizontal text positioning of key value. This field is optional. If not specified, default positioning is used. */
-  var position: js.UndefOr[TextPosition] = js.native
+  var position: js.UndefOr[TextPosition] = js.undefined
   
   /** Text formatting options for key value. */
-  var textFormat: js.UndefOr[TextFormat] = js.native
+  var textFormat: js.UndefOr[TextFormat] = js.undefined
 }
 object KeyValueFormat {
   

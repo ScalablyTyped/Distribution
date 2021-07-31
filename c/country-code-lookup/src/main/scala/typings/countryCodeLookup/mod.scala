@@ -2,54 +2,51 @@ package typings.countryCodeLookup
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("country-code-lookup", "byCountry")
+  @JSImport("country-code-lookup", JSImport.Namespace)
   @js.native
-  def byCountry(country: String): CountryCode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("country-code-lookup", "byFips")
-  @js.native
-  def byFips(code: String): CountryCode = js.native
+  @scala.inline
+  def byCountry(country: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byCountry")(country.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
-  @JSImport("country-code-lookup", "byInternet")
-  @js.native
-  def byInternet(code: String): CountryCode = js.native
+  @scala.inline
+  def byFips(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byFips")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
-  @JSImport("country-code-lookup", "byIso")
-  @js.native
-  def byIso(code: String): CountryCode = js.native
-  @JSImport("country-code-lookup", "byIso")
-  @js.native
-  def byIso(code: Double): CountryCode = js.native
+  @scala.inline
+  def byInternet(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byInternet")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  
+  @scala.inline
+  def byIso(code: String): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
+  @scala.inline
+  def byIso(code: Double): CountryCode = ^.asInstanceOf[js.Dynamic].applyDynamic("byIso")(code.asInstanceOf[js.Any]).asInstanceOf[CountryCode]
   
   @JSImport("country-code-lookup", "countries")
   @js.native
   val countries: js.Array[CountryCode] = js.native
   
-  @js.native
   trait CountryCode extends StObject {
     
-    var capital: String = js.native
+    var capital: String
     
-    var continent: String = js.native
+    var continent: String
     
-    var country: String = js.native
+    var country: String
     
-    var fips: String = js.native
+    var fips: String
     
-    var internet: String = js.native
+    var internet: String
     
-    var iso2: String = js.native
+    var iso2: String
     
-    var iso3: String = js.native
+    var iso3: String
     
-    var isoNo: String = js.native
+    var isoNo: String
     
-    var region: String = js.native
+    var region: String
   }
   object CountryCode {
     

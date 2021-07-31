@@ -3,29 +3,27 @@ package typings.reactNativeAuth0.mod
 import typings.reactNativeAuth0.reactNativeAuth0Strings.Bearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordRealmResponse extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var expiresIn: Double = js.native
+  var expiresIn: Double
   
-  var idToken: String = js.native
+  var idToken: String
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var scope: String = js.native
+  var scope: String
   
-  var tokenType: Bearer = js.native
+  var tokenType: Bearer
 }
 object PasswordRealmResponse {
   
   @scala.inline
-  def apply(accessToken: String, expiresIn: Double, idToken: String, scope: String, tokenType: Bearer): PasswordRealmResponse = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], tokenType = tokenType.asInstanceOf[js.Any])
+  def apply(accessToken: String, expiresIn: Double, idToken: String, scope: String): PasswordRealmResponse = {
+    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], idToken = idToken.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], tokenType = "Bearer")
     __obj.asInstanceOf[PasswordRealmResponse]
   }
   

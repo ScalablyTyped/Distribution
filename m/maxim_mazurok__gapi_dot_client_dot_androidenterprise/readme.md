@@ -10,9 +10,9 @@ TypeScript typings for Google Play EMM API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.androidenterprise |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 31 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 2126 |
 | # stars            | 0 |
 
 ## Links

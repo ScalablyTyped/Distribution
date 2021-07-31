@@ -2,19 +2,17 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SonarOption extends StObject {
   
-  var device: String = js.native
+  var device: String
   
-  var freq: js.UndefOr[Double] = js.native
+  var freq: js.UndefOr[Double] = js.undefined
   
-  var pin: Double | String = js.native
+  var pin: Double | String
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
 }
 object SonarOption {
   

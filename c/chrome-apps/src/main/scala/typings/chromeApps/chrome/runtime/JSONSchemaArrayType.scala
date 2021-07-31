@@ -3,24 +3,22 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.chromeAppsStrings.array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONSchemaArrayType extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType = js.native
+  var items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType
   
-  var `type`: array = js.native
+  var `type`: array
 }
 object JSONSchemaArrayType {
   
   @scala.inline
-  def apply(items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType, `type`: array): JSONSchemaArrayType = {
+  def apply(items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): JSONSchemaArrayType = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[JSONSchemaArrayType]
   }
   

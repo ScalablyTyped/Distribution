@@ -3,15 +3,13 @@ package typings.stylableCore.anon
 import typings.stylableCore.selectorUtilsMod.SelectorAstNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selector extends StObject {
   
-  var selector: String = js.native
+  var selector: String
   
-  var selectorAst: SelectorAstNode = js.native
+  var selectorAst: SelectorAstNode
 }
 object Selector {
   

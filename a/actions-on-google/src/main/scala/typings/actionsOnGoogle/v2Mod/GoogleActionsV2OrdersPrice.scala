@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersPrice extends StObject {
   
   /**
     * Monetary amount. Required.
     */
-  var amount: js.UndefOr[GoogleTypeMoney] = js.native
+  var amount: js.UndefOr[GoogleTypeMoney] = js.undefined
   
   /**
     * Type of price. Required.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersPriceType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2OrdersPriceType] = js.undefined
 }
 object GoogleActionsV2OrdersPrice {
   

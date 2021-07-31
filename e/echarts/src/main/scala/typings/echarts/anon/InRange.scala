@@ -1,16 +1,15 @@
 package typings.echarts.anon
 
 import typings.echarts.echarts.VisualMap.RangeObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InRange extends js.Object {
+trait InRange extends StObject {
   
-  var inRange: js.UndefOr[RangeObject] = js.native
+  var inRange: js.UndefOr[RangeObject] = js.undefined
   
-  var outOfRange: js.UndefOr[RangeObject] = js.native
+  var outOfRange: js.UndefOr[RangeObject] = js.undefined
 }
 object InRange {
   
@@ -21,30 +20,18 @@ object InRange {
   }
   
   @scala.inline
-  implicit class InRangeOps[Self <: InRange] (val x: Self) extends AnyVal {
+  implicit class InRangeMutableBuilder[Self <: InRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInRange(value: RangeObject): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInRangeUndefined: Self = StObject.set(x, "inRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutOfRange(value: RangeObject): Self = StObject.set(x, "outOfRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInRange(value: RangeObject): Self = this.set("inRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInRange: Self = this.set("inRange", js.undefined)
-    
-    @scala.inline
-    def setOutOfRange(value: RangeObject): Self = this.set("outOfRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutOfRange: Self = this.set("outOfRange", js.undefined)
+    def setOutOfRangeUndefined: Self = StObject.set(x, "outOfRange", js.undefined)
   }
 }

@@ -3,11 +3,11 @@ package typings.winrt.Windows.Networking.Connectivity
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataPlanStatus extends IDataPlanStatus
+trait DataPlanStatus
+  extends StObject
+     with IDataPlanStatus
 object DataPlanStatus {
   
   @scala.inline

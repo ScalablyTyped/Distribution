@@ -2,46 +2,44 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceShareRequest extends StObject {
   
   /**
     * Indicates whether principals outside your AWS organization can be associated with a resource share.
     */
-  var allowExternalPrincipals: js.UndefOr[Boolean] = js.native
+  var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the resource share.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The ARNs of the permissions to associate with the resource share. If you do not specify an ARN for the permission, AWS RAM automatically attaches the default version of the permission for each resource type.
     */
-  var permissionArns: js.UndefOr[PermissionArnList] = js.native
+  var permissionArns: js.UndefOr[PermissionArnList] = js.undefined
   
   /**
     * The principals to associate with the resource share. The possible values are IDs of AWS accounts, the ARN of an OU or organization from AWS Organizations.
     */
-  var principals: js.UndefOr[PrincipalArnOrIdList] = js.native
+  var principals: js.UndefOr[PrincipalArnOrIdList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARN) of the resources to associate with the resource share.
     */
-  var resourceArns: js.UndefOr[ResourceArnList] = js.native
+  var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
   
   /**
     * One or more tags.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateResourceShareRequest {
   

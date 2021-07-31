@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAccessibleGroupPosition extends XInterface {
+trait XAccessibleGroupPosition
+  extends StObject
+     with XInterface {
   
-  def getGroupPosition(accoject: js.Any): SafeArray[Double] = js.native
+  def getGroupPosition(accoject: js.Any): SafeArray[Double]
   
-  def getObjectLink(accoject: js.Any): String = js.native
+  def getObjectLink(accoject: js.Any): String
 }
 object XAccessibleGroupPosition {
   

@@ -4,34 +4,34 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the text and formatting of a fixed text field. */
-@js.native
-trait XFixedText extends XInterface {
+trait XFixedText
+  extends StObject
+     with XInterface {
   
   /** returns the alignment of the text in the control. */
-  var Alignment: Double = js.native
+  var Alignment: Double
   
   /** returns the text of the control. */
-  var Text: String = js.native
+  var Text: String
   
   /** returns the alignment of the text in the control. */
-  def getAlignment(): Double = js.native
+  def getAlignment(): Double
   
   /** returns the text of the control. */
-  def getText(): String = js.native
+  def getText(): String
   
   /**
     * sets the alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
-  def setAlignment(nAlign: Double): Unit = js.native
+  def setAlignment(nAlign: Double): Unit
   
   /** sets the text of the control. */
-  def setText(Text: String): Unit = js.native
+  def setText(Text: String): Unit
 }
 object XFixedText {
   

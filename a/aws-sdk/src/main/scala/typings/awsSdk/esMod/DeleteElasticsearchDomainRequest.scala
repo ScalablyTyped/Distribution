@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteElasticsearchDomainRequest extends StObject {
   
   /**
     * The name of the Elasticsearch domain that you want to permanently delete.
     */
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
 }
 object DeleteElasticsearchDomainRequest {
   

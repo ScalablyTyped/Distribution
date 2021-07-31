@@ -4,10 +4,8 @@ import typings.std.Error
 import typings.wechatMiniprogram.anon.Partialcreatedvoidattache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lifetimes extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`1.6.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def attached(): Unit = js.native
+  def attached(): Unit
   
   /**
     * @deprecated 旧式的定义方式，基础库 `2.2.3` 起请在 lifetimes 中定义
@@ -26,7 +24,7 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`1.6.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def created(): Unit = js.native
+  def created(): Unit
   
   /**
     * @deprecated 旧式的定义方式，基础库 `2.2.3` 起请在 lifetimes 中定义
@@ -35,7 +33,7 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`1.6.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def detached(): Unit = js.native
+  def detached(): Unit
   
   /**
     * @deprecated 旧式的定义方式，基础库 `2.2.3` 起请在 lifetimes 中定义
@@ -44,12 +42,12 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`2.4.1`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def error(err: Error): Unit = js.native
+  def error(err: Error): Unit
   
   /** 组件生命周期声明对象，组件的生命周期：`created`、`attached`、`ready`、`moved`、`detached` 将收归到 `lifetimes` 字段内进行声明，原有声明方式仍旧有效，如同时存在两种声明方式，则 `lifetimes` 字段内声明方式优先级最高
     *
     * 最低基础库： `2.2.3` */
-  var lifetimes: Partialcreatedvoidattache = js.native
+  var lifetimes: Partialcreatedvoidattache
   
   /**
     * @deprecated 旧式的定义方式，基础库 `2.2.3` 起请在 lifetimes 中定义
@@ -58,7 +56,7 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`1.6.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def moved(): Unit = js.native
+  def moved(): Unit
   
   /**
     * @deprecated 旧式的定义方式，基础库 `2.2.3` 起请在 lifetimes 中定义
@@ -67,7 +65,7 @@ trait Lifetimes extends StObject {
     *
     * 最低基础库版本：[`1.6.3`](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html)
     */
-  def ready(): Unit = js.native
+  def ready(): Unit
 }
 object Lifetimes {
   

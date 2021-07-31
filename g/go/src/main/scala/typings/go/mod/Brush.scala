@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -106,9 +105,8 @@ object Brush {
   def Solid_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("go", "Brush.isValidColor")
-  @js.native
-  def isValidColor(color: String): Boolean = js.native
+  @scala.inline
+  def isValidColor(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColor")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * This static function can be used to generate a random color string.
@@ -116,16 +114,12 @@ object Brush {
     * @param {number=} max a number between zero and 255, defaults to 255.
     */
   /* static member */
-  @JSImport("go", "Brush.randomColor")
-  @js.native
-  def randomColor(): String = js.native
-  @JSImport("go", "Brush.randomColor")
-  @js.native
-  def randomColor(min: js.UndefOr[scala.Nothing], max: Double): String = js.native
-  @JSImport("go", "Brush.randomColor")
-  @js.native
-  def randomColor(min: Double): String = js.native
-  @JSImport("go", "Brush.randomColor")
-  @js.native
-  def randomColor(min: Double, max: Double): String = js.native
+  @scala.inline
+  def randomColor(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")().asInstanceOf[String]
+  @scala.inline
+  def randomColor(min: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def randomColor(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def randomColor(min: Unit, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randomColor")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
 }

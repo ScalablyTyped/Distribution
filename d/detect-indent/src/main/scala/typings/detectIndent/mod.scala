@@ -4,7 +4,6 @@ import typings.detectIndent.detectIndentStrings.space
 import typings.detectIndent.detectIndentStrings.tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,27 +29,29 @@ object mod {
   // }
   ```
   */
+  @scala.inline
+  def apply(string: String): Indent = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Indent]
+  
   @JSImport("detect-indent", JSImport.Namespace)
   @js.native
-  def apply(string: String): Indent = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Indent extends StObject {
     
     /**
     		Amount of indentation, for example `2`.
     		*/
-    var amount: Double = js.native
+    var amount: Double
     
     /**
     		Actual indentation.
     		*/
-    var indent: String = js.native
+    var indent: String
     
     /**
     		Type of indentation. Is `undefined` if no indentation is detected.
     		*/
-    var `type`: js.UndefOr[tab | space] = js.native
+    var `type`: js.UndefOr[tab | space] = js.undefined
   }
   object Indent {
     

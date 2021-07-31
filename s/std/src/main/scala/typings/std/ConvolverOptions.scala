@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConvolverOptions extends AudioNodeOptions {
+trait ConvolverOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var buffer: js.UndefOr[AudioBuffer | Null] = js.native
+  var buffer: js.UndefOr[AudioBuffer | Null] = js.undefined
   
-  var disableNormalization: js.UndefOr[scala.Boolean] = js.native
+  var disableNormalization: js.UndefOr[scala.Boolean] = js.undefined
 }
 object ConvolverOptions {
   

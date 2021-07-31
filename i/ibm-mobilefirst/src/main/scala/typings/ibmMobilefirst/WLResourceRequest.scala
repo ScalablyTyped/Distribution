@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,10 +28,10 @@ trait WLResourceRequest extends StObject {
   
   def getUrl(): String = js.native
   
-  def send(): JQueryDeferred[_] = js.native
-  def send(content: js.Any): JQueryDeferred[_] = js.native
+  def send(): JQueryDeferred[js.Any] = js.native
+  def send(content: js.Any): JQueryDeferred[js.Any] = js.native
   
-  def sendFormParameters(json: js.Object): JQueryDeferred[_] = js.native
+  def sendFormParameters(json: js.Object): JQueryDeferred[js.Any] = js.native
   
   def setHeader(name: String, value: String): Unit = js.native
   def setHeader(name: String, value: Boolean): Unit = js.native

@@ -5,12 +5,10 @@ import typings.karmaSummaryReporter.karmaSummaryReporterStrings.failed
 import typings.karmaSummaryReporter.karmaSummaryReporterStrings.skipped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object mod {
       * This gives a better overview which browsers are broken than the output of other reporters.
       * see {@link https://github.com/sth/karma-summary-reporter#config}
       */
-    val summaryReporter: js.UndefOr[SummaryReporterConfig] = js.native
+    val summaryReporter: js.UndefOr[SummaryReporterConfig] = js.undefined
   }
   object ConfigOptions {
     
@@ -39,14 +37,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SummaryReporterConfig extends StObject {
     
     /**
       * Shows a overview column in the results table, showing the total result of a test over all browsers
       * ("failed" if the test failed anywhere, ...)
       */
-    var overviewColumn: js.UndefOr[Boolean] = js.native
+    var overviewColumn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Select which tests are displayed in the summary:
@@ -54,12 +51,12 @@ object mod {
       * * 'skipped': Additionally show tests that got skipped in some browser
       * * 'all': Show all test, also ones that didn't fail specLength
       */
-    var show: js.UndefOr[failed | skipped | all] = js.native
+    var show: js.UndefOr[failed | skipped | all] = js.undefined
     
     /**
       * Space reserved to display the spec label (width of the first column in the results table).
       */
-    var specLength: js.UndefOr[Double] = js.native
+    var specLength: js.UndefOr[Double] = js.undefined
   }
   object SummaryReporterConfig {
     

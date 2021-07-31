@@ -5,27 +5,27 @@ import typings.diff2html.diff2htmlStrings.stop
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highlightJsHelpersMod {
   
-  @JSImport("diff2html/lib/ui/js/highlight.js-helpers", "mergeStreams")
+  @JSImport("diff2html/lib/ui/js/highlight.js-helpers", JSImport.Namespace)
   @js.native
-  def mergeStreams(original: js.Array[NodeEvent], highlighted: js.Array[NodeEvent], value: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("diff2html/lib/ui/js/highlight.js-helpers", "nodeStream")
-  @js.native
-  def nodeStream(node: Node): js.Array[NodeEvent] = js.native
+  @scala.inline
+  def mergeStreams(original: js.Array[NodeEvent], highlighted: js.Array[NodeEvent], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStreams")(original.asInstanceOf[js.Any], highlighted.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def nodeStream(node: Node): js.Array[NodeEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeStream")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[NodeEvent]]
+  
   trait NodeEvent extends StObject {
     
-    var event: start | stop = js.native
+    var event: start | stop
     
-    var node: Node = js.native
+    var node: Node
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object NodeEvent {
     

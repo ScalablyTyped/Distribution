@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Bottom extends js.Object {
+trait Bottom extends StObject {
   
   /**
     * Distance between asdf component and the bottom side of the
@@ -20,12 +19,12 @@ trait Bottom extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.bottom
     */
-  var bottom: js.UndefOr[Double | String] = js.native
+  var bottom: js.UndefOr[Double | String] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emphasis
     */
-  var emphasis: js.UndefOr[`26`] = js.native
+  var emphasis: js.UndefOr[`26`] = js.undefined
   
   /**
     * When is no content in breadcrumb, this minimal width need
@@ -36,7 +35,7 @@ trait Bottom extends js.Object {
     * 25
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.emptyItemWidth
     */
-  var emptyItemWidth: js.UndefOr[Double] = js.native
+  var emptyItemWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The height of breadcrumb.
@@ -46,7 +45,7 @@ trait Bottom extends js.Object {
     * 22
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.height
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
@@ -55,7 +54,7 @@ trait Bottom extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.itemStyle
     */
-  var itemStyle: js.UndefOr[TextStyle] = js.native
+  var itemStyle: js.UndefOr[TextStyle] = js.undefined
   
   /**
     * Distance between asdf component and the left side of the
@@ -74,7 +73,7 @@ trait Bottom extends js.Object {
     * "center"
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.left
     */
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Distance between asdf component and the right side of the
@@ -91,7 +90,7 @@ trait Bottom extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.right
     */
-  var right: js.UndefOr[Double | String] = js.native
+  var right: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Whether to show the breadcrumb.
@@ -101,7 +100,7 @@ trait Bottom extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.show
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Distance between asdf component and the top side of the container.
@@ -119,7 +118,7 @@ trait Bottom extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb.top
     */
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
 }
 object Bottom {
   
@@ -130,72 +129,60 @@ object Bottom {
   }
   
   @scala.inline
-  implicit class BottomOps[Self <: Bottom] (val x: Self) extends AnyVal {
+  implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmphasis(value: `26`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setEmptyItemWidth(value: Double): Self = StObject.set(x, "emptyItemWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmphasis(value: `26`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    def setEmptyItemWidthUndefined: Self = StObject.set(x, "emptyItemWidth", js.undefined)
     
     @scala.inline
-    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyItemWidth(value: Double): Self = this.set("emptyItemWidth", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEmptyItemWidth: Self = this.set("emptyItemWidth", js.undefined)
+    def setItemStyle(value: TextStyle): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemStyle(value: TextStyle): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

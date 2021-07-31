@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2HybridFindingDetails extends StObject {
   
   /** Details about the container where the content being inspected is from. */
-  var containerDetails: js.UndefOr[GooglePrivacyDlpV2Container] = js.native
+  var containerDetails: js.UndefOr[GooglePrivacyDlpV2Container] = js.undefined
   
   /**
     * Offset in bytes of the line, from the beginning of the file, where the finding is located. Populate if the item being scanned is only part of a bigger item, such as a shard of a
     * file and you want to track the absolute position of the finding.
     */
-  var fileOffset: js.UndefOr[String] = js.native
+  var fileOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to represent user provided metadata about the data being inspected. If configured by the job, some key values may be required. The labels associated with `Finding`'s produced
@@ -27,17 +25,17 @@ trait GooglePrivacyDlpV2HybridFindingDetails extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridFindingDetails with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridFindingDetails & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Offset of the row for tables. Populate if the row(s) being scanned are part of a bigger dataset and you want to keep track of their absolute position. */
-  var rowOffset: js.UndefOr[String] = js.native
+  var rowOffset: js.UndefOr[String] = js.undefined
   
   /**
     * If the container is a table, additional information to make findings meaningful such as the columns that are primary keys. If not known ahead of time, can also be set within each
     * inspect hybrid call and the two will be merged. Note that identifying_fields will only be stored to BigQuery, and only if the BigQuery action has been included.
     */
-  var tableOptions: js.UndefOr[GooglePrivacyDlpV2TableOptions] = js.native
+  var tableOptions: js.UndefOr[GooglePrivacyDlpV2TableOptions] = js.undefined
 }
 object GooglePrivacyDlpV2HybridFindingDetails {
   
@@ -66,7 +64,7 @@ object GooglePrivacyDlpV2HybridFindingDetails {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridFindingDetails with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridFindingDetails & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

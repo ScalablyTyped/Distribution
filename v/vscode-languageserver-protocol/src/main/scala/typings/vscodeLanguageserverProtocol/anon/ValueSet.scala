@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverTypes.mod.DiagnosticTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueSet extends StObject {
   
   /**
     * The tags supported by the client.
     */
-  var valueSet: js.Array[DiagnosticTag] = js.native
+  var valueSet: js.Array[DiagnosticTag]
 }
 object ValueSet {
   

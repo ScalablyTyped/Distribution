@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetSkipAllPausesParameterType extends StObject {
   
   /**
     * New value for skip pauses state.
     */
-  var skip: Boolean = js.native
+  var skip: Boolean
 }
 object SetSkipAllPausesParameterType {
   

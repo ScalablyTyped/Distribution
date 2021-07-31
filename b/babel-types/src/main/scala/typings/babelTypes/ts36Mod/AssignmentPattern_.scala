@@ -3,35 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.AssignmentPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignmentPattern_
-  extends Node
+  extends StObject
+     with Node
      with LVal
      with Pattern {
   
-  var left: Identifier_ = js.native
+  var left: Identifier_
   
-  var right: Expression = js.native
+  var right: Expression
   
   @JSName("type")
-  var type_AssignmentPattern_ : AssignmentPattern = js.native
+  var type_AssignmentPattern_ : AssignmentPattern
 }
 object AssignmentPattern_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    left: Identifier_,
-    loc: SourceLocation,
-    right: Expression,
-    start: Double,
-    `type`: AssignmentPattern
-  ): AssignmentPattern_ = {
+  def apply(end: Double, left: Identifier_, loc: SourceLocation, right: Expression, start: Double): AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[AssignmentPattern_]
   }
   

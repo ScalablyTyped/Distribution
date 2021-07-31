@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ object i18n {
   /**
     * LanguageDetectionResult object that holds detected langugae reliability and array of DetectedLanguage
     */
-  @js.native
   trait DetectLanguageReturnResult extends StObject {
     
     /** CLD detected language reliability */
-    var isReliable: Boolean = js.native
+    var isReliable: Boolean
     
     /** array of detectedLanguage */
-    var languages: js.Array[DetectLanguageReturnResultLanguages] = js.native
+    var languages: js.Array[DetectLanguageReturnResultLanguages]
   }
   object DetectLanguageReturnResult {
     
@@ -45,13 +43,12 @@ object i18n {
   }
   
   /** DetectedLanguage object that holds detected ISO language code and its percentage in the input string */
-  @js.native
   trait DetectLanguageReturnResultLanguages extends StObject {
     
-    var language: LanguageCode = js.native
+    var language: LanguageCode
     
     /** The percentage of the detected language */
-    var percentage: Double = js.native
+    var percentage: Double
   }
   object DetectLanguageReturnResultLanguages {
     

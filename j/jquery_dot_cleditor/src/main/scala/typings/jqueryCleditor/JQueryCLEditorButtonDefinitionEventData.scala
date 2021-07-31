@@ -3,27 +3,25 @@ package typings.jqueryCleditor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryCLEditorButtonDefinitionEventData extends StObject {
   
-  var button: HTMLElement = js.native
+  var button: HTMLElement
   
-  var buttonName: String = js.native
+  var buttonName: String
   
-  var command: String = js.native
+  var command: String
   
-  var editor: CLEditor = js.native
+  var editor: CLEditor
   
-  var popup: HTMLElement = js.native
+  var popup: HTMLElement
   
-  var popupName: String = js.native
+  var popupName: String
   
-  var useCSS: Boolean = js.native
+  var useCSS: Boolean
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object JQueryCLEditorButtonDefinitionEventData {
   

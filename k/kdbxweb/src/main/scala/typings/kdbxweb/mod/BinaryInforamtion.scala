@@ -3,15 +3,13 @@ package typings.kdbxweb.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryInforamtion extends StObject {
   
-  var ref: String = js.native
+  var ref: String
   
-  var value: ProtectedValue | ArrayBuffer = js.native
+  var value: ProtectedValue | ArrayBuffer
 }
 object BinaryInforamtion {
   

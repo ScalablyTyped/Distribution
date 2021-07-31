@@ -12,7 +12,7 @@ Timers with near-infinite duration support
 | Keywords           | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 342781 |
+| # downloads        | 760778 |
 | # stars            | 0 |
 
 ## Links

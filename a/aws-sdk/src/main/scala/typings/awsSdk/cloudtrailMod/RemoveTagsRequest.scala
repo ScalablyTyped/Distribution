@@ -2,21 +2,19 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsRequest extends StObject {
   
   /**
     * Specifies the ARN of the trail from which tags should be removed. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
     */
-  var ResourceId: String = js.native
+  var ResourceId: String
   
   /**
     * Specifies a list of tags to be removed.
     */
-  var TagsList: js.UndefOr[typings.awsSdk.cloudtrailMod.TagsList] = js.native
+  var TagsList: js.UndefOr[typings.awsSdk.cloudtrailMod.TagsList] = js.undefined
 }
 object RemoveTagsRequest {
   

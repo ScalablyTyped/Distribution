@@ -3,25 +3,23 @@ package typings.reactNativeVersionCheck
 import typings.nodeFetch.mod.RequestInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AppID extends StObject {
     
     /**
       * App ID
       */
-    var appID: js.UndefOr[String] = js.native
+    var appID: js.UndefOr[String] = js.undefined
     
     /**
       * @default true
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
-    var packageName: js.UndefOr[String] = js.native
+    var packageName: js.UndefOr[String] = js.undefined
   }
   object AppID {
     
@@ -54,48 +52,47 @@ object anon {
     }
   }
   
-  @js.native
   trait CurrentVersion extends StObject {
     
     /**
       * app's current version from getCurrentVersion()
       */
-    var currentVersion: js.UndefOr[String] = js.native
+    var currentVersion: js.UndefOr[String] = js.undefined
     
     /**
       * @default Infinity
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * isomorphic-fetch options (https://github.github.io/fetch/)
       */
-    var fetchOptions: js.UndefOr[RequestInit] = js.native
+    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
     
     /**
       * @default false
       */
-    var forceUpdate: js.UndefOr[Boolean] = js.native
+    var forceUpdate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * app's latest version from getLatestVersion()
       */
-    var latestVersion: js.UndefOr[String] = js.native
+    var latestVersion: js.UndefOr[String] = js.undefined
     
     /**
       * app's Package Name
       */
-    var packageName: js.UndefOr[String] = js.native
+    var packageName: js.UndefOr[String] = js.undefined
     
     /**
       * provider name or function that returns promise or value of the latest version
       */
-    var provider: js.UndefOr[js.Function0[String] | String] = js.native
+    var provider: js.UndefOr[js.Function0[String] | String] = js.undefined
   }
   object CurrentVersion {
     
@@ -161,33 +158,32 @@ object anon {
     }
   }
   
-  @js.native
   trait FetchOptions extends StObject {
     
     /**
       * isomorphic-fetch options (https://github.github.io/fetch/)
       */
-    var fetchOptions: js.UndefOr[RequestInit] = js.native
+    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
     
     /**
       * @default false
       */
-    var forceUpdate: js.UndefOr[Boolean] = js.native
+    var forceUpdate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Package name or function that returns promise or value of package name
       */
-    var packageName: js.UndefOr[String | js.Function0[String]] = js.native
+    var packageName: js.UndefOr[String | js.Function0[String]] = js.undefined
     
     /**
       * provider name or function that returns promise or value of the latest version
       */
-    var provider: js.UndefOr[js.Function0[String] | String] = js.native
+    var provider: js.UndefOr[js.Function0[String] | String] = js.undefined
   }
   object FetchOptions {
     
@@ -238,18 +234,17 @@ object anon {
     }
   }
   
-  @js.native
   trait IgnoreErrors extends StObject {
     
     /**
       * App ID
       */
-    var appID: js.UndefOr[String] = js.native
+    var appID: js.UndefOr[String] = js.undefined
     
     /**
       * @default true
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   }
   object IgnoreErrors {
     
@@ -276,16 +271,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IsNeeded extends StObject {
     
-    var currentVersion: String = js.native
+    var currentVersion: String
     
-    var isNeeded: Boolean = js.native
+    var isNeeded: Boolean
     
-    var latestVersion: String = js.native
+    var latestVersion: String
     
-    var storeUrl: String = js.native
+    var storeUrl: String
   }
   object IsNeeded {
     
@@ -312,18 +306,17 @@ object anon {
     }
   }
   
-  @js.native
   trait PackageName extends StObject {
     
     /**
       * @default true
       */
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Package Name
       */
-    var packageName: js.UndefOr[String] = js.native
+    var packageName: js.UndefOr[String] = js.undefined
   }
   object PackageName {
     

@@ -3,28 +3,27 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`24`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignmentExpression
-  extends JSChildNode
+  extends StObject
      with Node2
+     with JSChildNode
      with SSRCodegenNode {
   
-  var left: SimpleExpressionNode = js.native
+  var left: SimpleExpressionNode
   
-  var right: JSChildNode = js.native
+  var right: JSChildNode
   
   @JSName("type")
-  var type_AssignmentExpression: `24` = js.native
+  var type_AssignmentExpression: `24`
 }
 object AssignmentExpression {
   
   @scala.inline
-  def apply(left: SimpleExpressionNode, loc: SourceLocation, right: JSChildNode, `type`: `24`): AssignmentExpression = {
+  def apply(left: SimpleExpressionNode, loc: SourceLocation, right: JSChildNode): AssignmentExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(24)
     __obj.asInstanceOf[AssignmentExpression]
   }
   

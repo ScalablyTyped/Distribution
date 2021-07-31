@@ -2,35 +2,35 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupWarning extends RollupLogProps {
+trait RollupWarning
+  extends StObject
+     with RollupLogProps {
   
-  var chunkName: js.UndefOr[String] = js.native
+  var chunkName: js.UndefOr[String] = js.undefined
   
-  var cycle: js.UndefOr[js.Array[String]] = js.native
+  var cycle: js.UndefOr[js.Array[String]] = js.undefined
   
-  var exportName: js.UndefOr[String] = js.native
+  var exportName: js.UndefOr[String] = js.undefined
   
-  var exporter: js.UndefOr[String] = js.native
+  var exporter: js.UndefOr[String] = js.undefined
   
-  var guess: js.UndefOr[String] = js.native
+  var guess: js.UndefOr[String] = js.undefined
   
-  var importer: js.UndefOr[String] = js.native
+  var importer: js.UndefOr[String] = js.undefined
   
-  var missing: js.UndefOr[String] = js.native
+  var missing: js.UndefOr[String] = js.undefined
   
-  var modules: js.UndefOr[js.Array[String]] = js.native
+  var modules: js.UndefOr[js.Array[String]] = js.undefined
   
-  var names: js.UndefOr[js.Array[String]] = js.native
+  var names: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reexporter: js.UndefOr[String] = js.native
+  var reexporter: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var sources: js.UndefOr[js.Array[String]] = js.native
+  var sources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RollupWarning {
   

@@ -2,17 +2,15 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConvertMarkers extends StObject {
   
-  var convertMarkers: js.UndefOr[Boolean] = js.native
+  var convertMarkers: js.UndefOr[Boolean] = js.undefined
   
-  var rootName: js.UndefOr[String] = js.native
+  var rootName: js.UndefOr[String] = js.undefined
   
-  var withoutSelection: js.UndefOr[Boolean] = js.native
+  var withoutSelection: js.UndefOr[Boolean] = js.undefined
 }
 object ConvertMarkers {
   

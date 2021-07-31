@@ -3,7 +3,6 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("google.maps.LatLng")
 @js.native
 class LatLng protected ()
-  extends typings.googlemaps.google.maps.LatLng {
+  extends StObject
+     with typings.googlemaps.google.maps.LatLng {
   /**
     * Creates a {@link LatLng} object representing a geographic point.
     * @param literal Object literal.

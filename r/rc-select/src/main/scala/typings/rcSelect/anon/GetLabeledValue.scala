@@ -6,21 +6,19 @@ import typings.rcSelect.generatorMod.LabelValueType
 import typings.rcSelect.generatorMod.RawValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLabeledValue[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] extends StObject {
   
-  var getLabeledValue: typings.rcSelect.generatorMod.GetLabeledValue[FOT] = js.native
+  var getLabeledValue: typings.rcSelect.generatorMod.GetLabeledValue[FOT]
   
-  var labelInValue: Boolean = js.native
+  var labelInValue: Boolean
   
-  var optionLabelProp: String = js.native
+  var optionLabelProp: String
   
-  var options: FOT = js.native
+  var options: FOT
   
-  var prevValue: DefaultValueType = js.native
+  var prevValue: DefaultValueType
 }
 object GetLabeledValue {
   
@@ -37,7 +35,7 @@ object GetLabeledValue {
   }
   
   @scala.inline
-  implicit class GetLabeledValueMutableBuilder[Self <: GetLabeledValue[_], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self with GetLabeledValue[FOT]) extends AnyVal {
+  implicit class GetLabeledValueMutableBuilder[Self <: GetLabeledValue[?], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self & GetLabeledValue[FOT]) extends AnyVal {
     
     @scala.inline
     def setGetLabeledValue(value: (/* value */ RawValueType, /* config */ LabelInValue[FOT]) => LabelValueType): Self = StObject.set(x, "getLabeledValue", js.Any.fromFunction2(value))

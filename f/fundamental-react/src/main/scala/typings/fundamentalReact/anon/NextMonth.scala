@@ -2,19 +2,17 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextMonth extends StObject {
   
-  var nextMonth: js.UndefOr[String] = js.native
+  var nextMonth: js.UndefOr[String] = js.undefined
   
-  var previousMonth: js.UndefOr[String] = js.native
+  var previousMonth: js.UndefOr[String] = js.undefined
   
-  var show12NextYears: js.UndefOr[String] = js.native
+  var show12NextYears: js.UndefOr[String] = js.undefined
   
-  var show12PreviousYears: js.UndefOr[String] = js.native
+  var show12PreviousYears: js.UndefOr[String] = js.undefined
 }
 object NextMonth {
   

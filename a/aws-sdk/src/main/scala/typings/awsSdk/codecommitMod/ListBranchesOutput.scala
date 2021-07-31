@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBranchesOutput extends StObject {
   
   /**
     * The list of branch names.
     */
-  var branches: js.UndefOr[BranchNameList] = js.native
+  var branches: js.UndefOr[BranchNameList] = js.undefined
   
   /**
     * An enumeration token that returns the batch of the results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBranchesOutput {
   

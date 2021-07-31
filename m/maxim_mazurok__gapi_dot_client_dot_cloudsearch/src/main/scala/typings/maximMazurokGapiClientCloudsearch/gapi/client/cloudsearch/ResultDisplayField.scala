@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultDisplayField extends StObject {
   
   /** The display label for the property. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** The operator name of the property. */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /** The name value pair for the property. */
-  var property: js.UndefOr[NamedProperty] = js.native
+  var property: js.UndefOr[NamedProperty] = js.undefined
 }
 object ResultDisplayField {
   

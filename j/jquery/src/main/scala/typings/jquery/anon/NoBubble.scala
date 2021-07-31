@@ -3,18 +3,17 @@ package typings.jquery.anon
 import typings.jquery.JQuery._SpecialEventHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoBubble
-  extends _SpecialEventHook[js.Any, js.Any] {
+  extends StObject
+     with _SpecialEventHook[js.Any, js.Any] {
   
   /**
     * Indicates whether this event type should be bubbled when the `.trigger()` method is called; by default it is `false`, meaning that a triggered event will bubble to the element's parents up to the document (if attached to a document) and then to the window. Note that defining `noBubble` on an event will effectively prevent that event from being used for delegated events with `.trigger()`.
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#nobubble-boolean }\`
     */
-  var noBubble: Boolean = js.native
+  var noBubble: Boolean
 }
 object NoBubble {
   

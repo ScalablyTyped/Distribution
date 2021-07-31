@@ -3,47 +3,45 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phase extends StObject {
   
   /**
     * The condition that must be true for this phase to execute.
     */
-  var condition: String = js.native
+  var condition: String
   
-  var dependencies: js.Array[Dependency] = js.native
+  var dependencies: js.Array[Dependency]
   
   /**
     * The job authorization scope for builds queued against this definition.
     */
-  var jobAuthorizationScope: BuildAuthorizationScope = js.native
+  var jobAuthorizationScope: BuildAuthorizationScope
   
   /**
     * The cancellation timeout, in minutes, for builds queued against this definition.
     */
-  var jobCancelTimeoutInMinutes: Double = js.native
+  var jobCancelTimeoutInMinutes: Double
   
   /**
     * The job execution timeout, in minutes, for builds queued against this definition.
     */
-  var jobTimeoutInMinutes: Double = js.native
+  var jobTimeoutInMinutes: Double
   
   /**
     * The name of the phase.
     */
-  var name: String = js.native
+  var name: String
   
-  var steps: js.Array[BuildDefinitionStep] = js.native
+  var steps: js.Array[BuildDefinitionStep]
   
   /**
     * The target (agent, server, etc.) for this phase.
     */
-  var target: PhaseTarget = js.native
+  var target: PhaseTarget
   
-  var variables: StringDictionary[BuildDefinitionVariable] = js.native
+  var variables: StringDictionary[BuildDefinitionVariable]
 }
 object Phase {
   

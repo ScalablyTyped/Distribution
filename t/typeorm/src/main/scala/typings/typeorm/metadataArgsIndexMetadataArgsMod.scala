@@ -3,82 +3,80 @@ package typings.typeorm
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsIndexMetadataArgsMod {
   
-  @js.native
   trait IndexMetadataArgs extends StObject {
     
     /**
       * Builds the index in the background so that building an index an does not block other database activities.
       * This option is only supported for mongodb database.
       */
-    var background: js.UndefOr[Boolean] = js.native
+    var background: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Columns combination to be used as index.
       */
     var columns: js.UndefOr[
-        (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[_] | StringDictionary[Double]]) | js.Array[String]
-      ] = js.native
+        (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]) | js.Array[String]
+      ] = js.undefined
     
     /**
       * Specifies a time to live, in seconds.
       * This option is only supported for mongodb database.
       */
-    var expireAfterSeconds: js.UndefOr[Double] = js.native
+    var expireAfterSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The FULLTEXT modifier indexes the entire column and does not allow prefixing.
       * Works only in MySQL.
       */
-    var fulltext: js.UndefOr[Boolean] = js.native
+    var fulltext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Fulltext parser.
       * Works only in MySQL.
       */
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
     /**
       * If true, the index only references documents with the specified field.
       * These indexes use less space but behave differently in some situations (particularly sorts).
       * This option is only supported for mongodb database.
       */
-    var sparse: js.UndefOr[Boolean] = js.native
+    var sparse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The SPATIAL modifier indexes the entire column and does not allow indexed columns to contain NULL values.
       * Works only in MySQL.
       */
-    var spatial: js.UndefOr[Boolean] = js.native
+    var spatial: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if index must sync with database index.
       */
-    var synchronize: js.UndefOr[Boolean] = js.native
+    var synchronize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class to which index is applied.
       */
-    var target: js.Function | String = js.native
+    var target: js.Function | String
     
     /**
       * Indicates if index must be unique or not.
       */
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index filter condition.
       */
-    var where: js.UndefOr[String] = js.native
+    var where: js.UndefOr[String] = js.undefined
   }
   object IndexMetadataArgs {
     
@@ -99,11 +97,11 @@ object metadataArgsIndexMetadataArgsMod {
       
       @scala.inline
       def setColumns(
-        value: (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[_] | StringDictionary[Double]]) | js.Array[String]
+        value: (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]) | js.Array[String]
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setColumnsFunction1(value: /* object */ js.UndefOr[js.Any] => js.Array[_] | StringDictionary[Double]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
+      def setColumnsFunction1(value: /* object */ js.UndefOr[js.Any] => js.Array[js.Any] | StringDictionary[Double]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
       
       @scala.inline
       def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)

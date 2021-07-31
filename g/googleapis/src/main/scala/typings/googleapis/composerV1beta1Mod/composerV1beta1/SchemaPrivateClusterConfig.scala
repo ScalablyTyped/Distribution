@@ -2,21 +2,19 @@ package typings.googleapis.composerV1beta1Mod.composerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options for the private GKE cluster in a Cloud Composer
   * environment.
   */
-@js.native
 trait SchemaPrivateClusterConfig extends StObject {
   
   /**
     * Optional. If `true`, access to the public endpoint of the GKE cluster is
     * denied.
     */
-  var enablePrivateEndpoint: js.UndefOr[Boolean] = js.native
+  var enablePrivateEndpoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IP range in CIDR notation to use for the hosted master network. This
@@ -26,7 +24,7 @@ trait SchemaPrivateClusterConfig extends StObject {
     * cluster&#39;s network. If left blank, the default value of
     * &#39;172.16.0.0/28&#39; is used.
     */
-  var masterIpv4CidrBlock: js.UndefOr[String] = js.native
+  var masterIpv4CidrBlock: js.UndefOr[String] = js.undefined
 }
 object SchemaPrivateClusterConfig {
   

@@ -2,21 +2,19 @@ package typings.ionicCore.componentsMod.LocalJSX
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSelectOption extends StObject {
   
   /**
     * If `true`, the user cannot interact with the select option. This property does not apply when `interface="action-sheet"` as `ion-action-sheet` does not allow for disabled buttons.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text value of the option.
     */
-  var value: js.UndefOr[js.Any | Null] = js.native
+  var value: js.UndefOr[js.Any | Null] = js.undefined
 }
 object IonSelectOption {
   

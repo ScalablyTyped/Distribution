@@ -2,21 +2,19 @@ package typings.jqueryHighlightBartaz
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CaseSensitive extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var wordsOnly: js.UndefOr[Boolean] = js.native
+    var wordsOnly: js.UndefOr[Boolean] = js.undefined
   }
   object CaseSensitive {
     
@@ -55,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
   }
   object ClassName {
     

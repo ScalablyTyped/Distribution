@@ -3,33 +3,31 @@ package typings.winrtUwp.Windows.Web.Http
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a set of properties and methods to manage an HTTP cookie. */
-@js.native
 trait HttpCookie extends StObject {
   
   /** Get the domain for which the HttpCookie is valid. */
-  var domain: String = js.native
+  var domain: String
   
   /** Get or set the expiration date and time for the HttpCookie . */
-  var expires: Date = js.native
+  var expires: Date
   
   /** Get or set a value that controls whether a script or other active content can access this HttpCookie . */
-  var httpOnly: Boolean = js.native
+  var httpOnly: Boolean
   
   /** Get the token that represents the HttpCookie name. */
-  var name: String = js.native
+  var name: String
   
   /** Get the URI path component to which the HttpCookie applies. */
-  var path: String = js.native
+  var path: String
   
   /** Get or set the security level for the HttpCookie . */
-  var secure: Boolean = js.native
+  var secure: Boolean
   
   /** Get or set the value for the HttpCookie . */
-  var value: String = js.native
+  var value: String
 }
 object HttpCookie {
   

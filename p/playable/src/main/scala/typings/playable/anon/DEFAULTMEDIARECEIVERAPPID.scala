@@ -2,13 +2,11 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DEFAULTMEDIARECEIVERAPPID extends StObject {
   
-  var DEFAULT_MEDIA_RECEIVER_APP_ID: String = js.native
+  var DEFAULT_MEDIA_RECEIVER_APP_ID: String
 }
 object DEFAULTMEDIARECEIVERAPPID {
   

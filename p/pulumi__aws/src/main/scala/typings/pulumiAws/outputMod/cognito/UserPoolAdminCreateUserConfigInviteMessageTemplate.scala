@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolAdminCreateUserConfigInviteMessageTemplate extends StObject {
   
   /**
     * The email message template. Must contain the `{####}` placeholder. Conflicts with `emailVerificationMessage` argument.
     */
-  var emailMessage: js.UndefOr[String] = js.native
+  var emailMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The subject line for the email message template. Conflicts with `emailVerificationSubject` argument.
     */
-  var emailSubject: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.undefined
   
   /**
     * The SMS message template. Must contain the `{####}` placeholder. Conflicts with `smsVerificationMessage` argument.
     */
-  var smsMessage: js.UndefOr[String] = js.native
+  var smsMessage: js.UndefOr[String] = js.undefined
 }
 object UserPoolAdminCreateUserConfigInviteMessageTemplate {
   

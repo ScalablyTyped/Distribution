@@ -13,48 +13,41 @@ import typings.nodePgMigrate.operatorsTypesMod.RenameOperatorClass
 import typings.nodePgMigrate.operatorsTypesMod.RenameOperatorFamily
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsMod {
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "addToOperatorFamily")
+  @JSImport("node-pg-migrate/dist/operations/operators", JSImport.Namespace)
   @js.native
-  def addToOperatorFamily(mOptions: MigrationOptions): AddToOperatorFamily = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "createOperator")
-  @js.native
-  def createOperator(mOptions: MigrationOptions): CreateOperator = js.native
+  @scala.inline
+  def addToOperatorFamily(mOptions: MigrationOptions): AddToOperatorFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("addToOperatorFamily")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AddToOperatorFamily]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "createOperatorClass")
-  @js.native
-  def createOperatorClass(mOptions: MigrationOptions): CreateOperatorClass = js.native
+  @scala.inline
+  def createOperator(mOptions: MigrationOptions): CreateOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperator")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateOperator]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "createOperatorFamily")
-  @js.native
-  def createOperatorFamily(mOptions: MigrationOptions): CreateOperatorFamily = js.native
+  @scala.inline
+  def createOperatorClass(mOptions: MigrationOptions): CreateOperatorClass = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperatorClass")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateOperatorClass]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "dropOperator")
-  @js.native
-  def dropOperator(mOptions: MigrationOptions): DropOperator = js.native
+  @scala.inline
+  def createOperatorFamily(mOptions: MigrationOptions): CreateOperatorFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperatorFamily")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateOperatorFamily]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "dropOperatorClass")
-  @js.native
-  def dropOperatorClass(mOptions: MigrationOptions): DropOperatorClass = js.native
+  @scala.inline
+  def dropOperator(mOptions: MigrationOptions): DropOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("dropOperator")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropOperator]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "dropOperatorFamily")
-  @js.native
-  def dropOperatorFamily(mOptions: MigrationOptions): DropOperatorFamily = js.native
+  @scala.inline
+  def dropOperatorClass(mOptions: MigrationOptions): DropOperatorClass = ^.asInstanceOf[js.Dynamic].applyDynamic("dropOperatorClass")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropOperatorClass]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "removeFromOperatorFamily")
-  @js.native
-  def removeFromOperatorFamily(mOptions: MigrationOptions): RemoveFromOperatorFamily = js.native
+  @scala.inline
+  def dropOperatorFamily(mOptions: MigrationOptions): DropOperatorFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("dropOperatorFamily")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropOperatorFamily]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "renameOperatorClass")
-  @js.native
-  def renameOperatorClass(mOptions: MigrationOptions): RenameOperatorClass = js.native
+  @scala.inline
+  def removeFromOperatorFamily(mOptions: MigrationOptions): RemoveFromOperatorFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromOperatorFamily")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RemoveFromOperatorFamily]
   
-  @JSImport("node-pg-migrate/dist/operations/operators", "renameOperatorFamily")
-  @js.native
-  def renameOperatorFamily(mOptions: MigrationOptions): RenameOperatorFamily = js.native
+  @scala.inline
+  def renameOperatorClass(mOptions: MigrationOptions): RenameOperatorClass = ^.asInstanceOf[js.Dynamic].applyDynamic("renameOperatorClass")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameOperatorClass]
+  
+  @scala.inline
+  def renameOperatorFamily(mOptions: MigrationOptions): RenameOperatorFamily = ^.asInstanceOf[js.Dynamic].applyDynamic("renameOperatorFamily")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameOperatorFamily]
 }

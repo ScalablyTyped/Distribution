@@ -5,7 +5,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rectMod {
@@ -24,10 +23,11 @@ object rectMod {
     var cornerRadius_Original: GetSet[Double | js.Array[Double], this.type] = js.native
   }
   
-  @js.native
-  trait RectConfig extends ShapeConfig {
+  trait RectConfig
+    extends StObject
+       with ShapeConfig {
     
-    var cornerRadius: js.UndefOr[Double | js.Array[Double]] = js.native
+    var cornerRadius: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object RectConfig {
     

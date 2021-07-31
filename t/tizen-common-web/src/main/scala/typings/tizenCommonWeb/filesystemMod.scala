@@ -20,7 +20,6 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesystemMod {
@@ -32,19 +31,25 @@ object filesystemMod {
   object BaseSeekPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[BaseSeekPosition with String] = js.native
+    def apply(value: String): js.UndefOr[BaseSeekPosition & String] = js.native
     
     @js.native
-    sealed trait BEGIN extends BaseSeekPosition
-    /* "BEGIN" */ val BEGIN: typings.tizenCommonWeb.filesystemMod.BaseSeekPosition.BEGIN with String = js.native
+    sealed trait BEGIN
+      extends StObject
+         with BaseSeekPosition
+    /* "BEGIN" */ val BEGIN: typings.tizenCommonWeb.filesystemMod.BaseSeekPosition.BEGIN & String = js.native
     
     @js.native
-    sealed trait CURRENT extends BaseSeekPosition
-    /* "CURRENT" */ val CURRENT: typings.tizenCommonWeb.filesystemMod.BaseSeekPosition.CURRENT with String = js.native
+    sealed trait CURRENT
+      extends StObject
+         with BaseSeekPosition
+    /* "CURRENT" */ val CURRENT: typings.tizenCommonWeb.filesystemMod.BaseSeekPosition.CURRENT & String = js.native
     
     @js.native
-    sealed trait END extends BaseSeekPosition
-    /* "END" */ val END: typings.tizenCommonWeb.filesystemMod.BaseSeekPosition.END with String = js.native
+    sealed trait END
+      extends StObject
+         with BaseSeekPosition
+    /* "END" */ val END: typings.tizenCommonWeb.filesystemMod.BaseSeekPosition.END & String = js.native
   }
   
   @js.native
@@ -54,27 +59,37 @@ object filesystemMod {
   object FileMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FileMode with String] = js.native
+    def apply(value: String): js.UndefOr[FileMode & String] = js.native
     
     @js.native
-    sealed trait a extends FileMode
-    /* "a" */ val a: typings.tizenCommonWeb.filesystemMod.FileMode.a with String = js.native
+    sealed trait a
+      extends StObject
+         with FileMode
+    /* "a" */ val a: typings.tizenCommonWeb.filesystemMod.FileMode.a & String = js.native
     
     @js.native
-    sealed trait r extends FileMode
-    /* "r" */ val r: typings.tizenCommonWeb.filesystemMod.FileMode.r with String = js.native
+    sealed trait r
+      extends StObject
+         with FileMode
+    /* "r" */ val r: typings.tizenCommonWeb.filesystemMod.FileMode.r & String = js.native
     
     @js.native
-    sealed trait rw extends FileMode
-    /* "rw" */ val rw: typings.tizenCommonWeb.filesystemMod.FileMode.rw with String = js.native
+    sealed trait rw
+      extends StObject
+         with FileMode
+    /* "rw" */ val rw: typings.tizenCommonWeb.filesystemMod.FileMode.rw & String = js.native
     
     @js.native
-    sealed trait rwo extends FileMode
-    /* "rwo" */ val rwo: typings.tizenCommonWeb.filesystemMod.FileMode.rwo with String = js.native
+    sealed trait rwo
+      extends StObject
+         with FileMode
+    /* "rwo" */ val rwo: typings.tizenCommonWeb.filesystemMod.FileMode.rwo & String = js.native
     
     @js.native
-    sealed trait w extends FileMode
-    /* "w" */ val w: typings.tizenCommonWeb.filesystemMod.FileMode.w with String = js.native
+    sealed trait w
+      extends StObject
+         with FileMode
+    /* "w" */ val w: typings.tizenCommonWeb.filesystemMod.FileMode.w & String = js.native
   }
   
   @js.native
@@ -84,19 +99,25 @@ object filesystemMod {
   object FileSystemStorageState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FileSystemStorageState with String] = js.native
+    def apply(value: String): js.UndefOr[FileSystemStorageState & String] = js.native
     
     @js.native
-    sealed trait MOUNTED extends FileSystemStorageState
-    /* "MOUNTED" */ val MOUNTED: typings.tizenCommonWeb.filesystemMod.FileSystemStorageState.MOUNTED with String = js.native
+    sealed trait MOUNTED
+      extends StObject
+         with FileSystemStorageState
+    /* "MOUNTED" */ val MOUNTED: typings.tizenCommonWeb.filesystemMod.FileSystemStorageState.MOUNTED & String = js.native
     
     @js.native
-    sealed trait REMOVED extends FileSystemStorageState
-    /* "REMOVED" */ val REMOVED: typings.tizenCommonWeb.filesystemMod.FileSystemStorageState.REMOVED with String = js.native
+    sealed trait REMOVED
+      extends StObject
+         with FileSystemStorageState
+    /* "REMOVED" */ val REMOVED: typings.tizenCommonWeb.filesystemMod.FileSystemStorageState.REMOVED & String = js.native
     
     @js.native
-    sealed trait UNMOUNTABLE extends FileSystemStorageState
-    /* "UNMOUNTABLE" */ val UNMOUNTABLE: typings.tizenCommonWeb.filesystemMod.FileSystemStorageState.UNMOUNTABLE with String = js.native
+    sealed trait UNMOUNTABLE
+      extends StObject
+         with FileSystemStorageState
+    /* "UNMOUNTABLE" */ val UNMOUNTABLE: typings.tizenCommonWeb.filesystemMod.FileSystemStorageState.UNMOUNTABLE & String = js.native
   }
   
   @js.native
@@ -106,15 +127,19 @@ object filesystemMod {
   object FileSystemStorageType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FileSystemStorageType with String] = js.native
+    def apply(value: String): js.UndefOr[FileSystemStorageType & String] = js.native
     
     @js.native
-    sealed trait EXTERNAL extends FileSystemStorageType
-    /* "EXTERNAL" */ val EXTERNAL: typings.tizenCommonWeb.filesystemMod.FileSystemStorageType.EXTERNAL with String = js.native
+    sealed trait EXTERNAL
+      extends StObject
+         with FileSystemStorageType
+    /* "EXTERNAL" */ val EXTERNAL: typings.tizenCommonWeb.filesystemMod.FileSystemStorageType.EXTERNAL & String = js.native
     
     @js.native
-    sealed trait INTERNAL extends FileSystemStorageType
-    /* "INTERNAL" */ val INTERNAL: typings.tizenCommonWeb.filesystemMod.FileSystemStorageType.INTERNAL with String = js.native
+    sealed trait INTERNAL
+      extends StObject
+         with FileSystemStorageType
+    /* "INTERNAL" */ val INTERNAL: typings.tizenCommonWeb.filesystemMod.FileSystemStorageType.INTERNAL & String = js.native
   }
   
   @js.native
@@ -149,7 +174,7 @@ object filesystemMod {
       originFilePath: String,
       destinationFilePath: String,
       overwrite: Boolean,
-      onsuccess: js.UndefOr[scala.Nothing],
+      onsuccess: Unit,
       onerror: ErrorCallback
     ): Unit = js.native
     def copyTo(
@@ -238,12 +263,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError, SecurityError
       */
     def deleteDirectory(directoryPath: String, recursive: Boolean): Unit = js.native
-    def deleteDirectory(
-      directoryPath: String,
-      recursive: Boolean,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: ErrorCallback
-    ): Unit = js.native
+    def deleteDirectory(directoryPath: String, recursive: Boolean, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def deleteDirectory(directoryPath: String, recursive: Boolean, onsuccess: SuccessCallback): Unit = js.native
     def deleteDirectory(directoryPath: String, recursive: Boolean, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -267,7 +287,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError, SecurityError
       */
     def deleteFile(filePath: String): Unit = js.native
-    def deleteFile(filePath: String, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def deleteFile(filePath: String, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def deleteFile(filePath: String, onsuccess: SuccessCallback): Unit = js.native
     def deleteFile(filePath: String, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -339,7 +359,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError, SecurityError
       */
     def listFiles(onsuccess: FileArraySuccessCallback): Unit = js.native
-    def listFiles(onsuccess: FileArraySuccessCallback, onerror: js.UndefOr[scala.Nothing], filter: FileFilter): Unit = js.native
+    def listFiles(onsuccess: FileArraySuccessCallback, onerror: Unit, filter: FileFilter): Unit = js.native
     def listFiles(onsuccess: FileArraySuccessCallback, onerror: ErrorCallback): Unit = js.native
     def listFiles(onsuccess: FileArraySuccessCallback, onerror: ErrorCallback, filter: FileFilter): Unit = js.native
     
@@ -382,7 +402,7 @@ object filesystemMod {
       originFilePath: String,
       destinationFilePath: String,
       overwrite: Boolean,
-      onsuccess: js.UndefOr[scala.Nothing],
+      onsuccess: Unit,
       onerror: ErrorCallback
     ): Unit = js.native
     def moveTo(
@@ -437,23 +457,13 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError, SecurityError
       */
     def openStream(mode: FileMode, onsuccess: FileStreamSuccessCallback): Unit = js.native
-    def openStream(
-      mode: FileMode,
-      onsuccess: FileStreamSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      encoding: String
-    ): Unit = js.native
+    def openStream(mode: FileMode, onsuccess: FileStreamSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     def openStream(mode: FileMode, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def openStream(mode: FileMode, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback, encoding: String): Unit = js.native
     @JSName("openStream")
     def openStream_a(mode: a, onsuccess: FileStreamSuccessCallback): Unit = js.native
     @JSName("openStream")
-    def openStream_a(
-      mode: a,
-      onsuccess: FileStreamSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      encoding: String
-    ): Unit = js.native
+    def openStream_a(mode: a, onsuccess: FileStreamSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     @JSName("openStream")
     def openStream_a(mode: a, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
     @JSName("openStream")
@@ -461,12 +471,7 @@ object filesystemMod {
     @JSName("openStream")
     def openStream_r(mode: r, onsuccess: FileStreamSuccessCallback): Unit = js.native
     @JSName("openStream")
-    def openStream_r(
-      mode: r,
-      onsuccess: FileStreamSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      encoding: String
-    ): Unit = js.native
+    def openStream_r(mode: r, onsuccess: FileStreamSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     @JSName("openStream")
     def openStream_r(mode: r, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
     @JSName("openStream")
@@ -474,12 +479,7 @@ object filesystemMod {
     @JSName("openStream")
     def openStream_rw(mode: rw, onsuccess: FileStreamSuccessCallback): Unit = js.native
     @JSName("openStream")
-    def openStream_rw(
-      mode: rw,
-      onsuccess: FileStreamSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      encoding: String
-    ): Unit = js.native
+    def openStream_rw(mode: rw, onsuccess: FileStreamSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     @JSName("openStream")
     def openStream_rw(mode: rw, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
     @JSName("openStream")
@@ -487,12 +487,7 @@ object filesystemMod {
     @JSName("openStream")
     def openStream_rwo(mode: rwo, onsuccess: FileStreamSuccessCallback): Unit = js.native
     @JSName("openStream")
-    def openStream_rwo(
-      mode: rwo,
-      onsuccess: FileStreamSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      encoding: String
-    ): Unit = js.native
+    def openStream_rwo(mode: rwo, onsuccess: FileStreamSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     @JSName("openStream")
     def openStream_rwo(mode: rwo, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
     @JSName("openStream")
@@ -500,12 +495,7 @@ object filesystemMod {
     @JSName("openStream")
     def openStream_w(mode: w, onsuccess: FileStreamSuccessCallback): Unit = js.native
     @JSName("openStream")
-    def openStream_w(
-      mode: w,
-      onsuccess: FileStreamSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      encoding: String
-    ): Unit = js.native
+    def openStream_w(mode: w, onsuccess: FileStreamSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     @JSName("openStream")
     def openStream_w(mode: w, onsuccess: FileStreamSuccessCallback, onerror: ErrorCallback): Unit = js.native
     @JSName("openStream")
@@ -554,7 +544,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError, SecurityError
       */
     def readAsText(onsuccess: FileStringSuccessCallback): Unit = js.native
-    def readAsText(onsuccess: FileStringSuccessCallback, onerror: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
+    def readAsText(onsuccess: FileStringSuccessCallback, onerror: Unit, encoding: String): Unit = js.native
     def readAsText(onsuccess: FileStringSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def readAsText(onsuccess: FileStringSuccessCallback, onerror: ErrorCallback, encoding: String): Unit = js.native
     
@@ -605,52 +595,51 @@ object filesystemMod {
   
   type FileArraySuccessCallback = js.Function1[/* files */ js.Array[File], Unit]
   
-  @js.native
   trait FileFilter extends StObject {
     
     /**
       * The File created attribute filter.
       * Files with created date earlier than this attribute or equal to it match the filtering criteria.
       */
-    var endCreated: Date = js.native
+    var endCreated: Date
     
     /**
       * The File modified attribute filter.
       * Files with modified date earlier than this attribute or equal to it match the filtering criteria.
       */
-    var endModified: Date = js.native
+    var endModified: Date
     
     /**
       * If true match only directories, If false do not match directories.
       * May be undefined.
       * @since 5.0
       */
-    var isDirectory: Boolean = js.native
+    var isDirectory: Boolean
     
     /**
       * If true match only files. If false do not match files.
       * May be undefined.
       * @since 5.0
       */
-    var isFile: Boolean = js.native
+    var isFile: Boolean
     
     /**
       * The File name attribute filter.
       * Files that have a name that corresponds with this attribute (either exactly or with the specified wildcards) match this filtering criteria.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The File created attribute filter.
       * Files with created date later than this attribute or equal to it match the filtering criteria.
       */
-    var startCreated: Date = js.native
+    var startCreated: Date
     
     /**
       * The File modified attribute filter.
       * Files with modified date later than this attribute or equal to it match the filtering criteria.
       */
-    var startModified: Date = js.native
+    var startModified: Date
   }
   object FileFilter {
     
@@ -720,7 +709,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError
       */
     def closeNonBlocking(): Unit = js.native
-    def closeNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def closeNonBlocking(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def closeNonBlocking(onsuccess: SuccessCallback): Unit = js.native
     def closeNonBlocking(onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -749,7 +738,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError
       */
     def flushNonBlocking(): Unit = js.native
-    def flushNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def flushNonBlocking(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def flushNonBlocking(onsuccess: SuccessCallback): Unit = js.native
     def flushNonBlocking(onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -782,11 +771,11 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, TypeMismatchError
       */
     def readBlobNonBlocking(): Unit = js.native
-    def readBlobNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: js.UndefOr[scala.Nothing], size: Double): Unit = js.native
-    def readBlobNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
-    def readBlobNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, size: Double): Unit = js.native
+    def readBlobNonBlocking(onsuccess: Unit, onerror: Unit, size: Double): Unit = js.native
+    def readBlobNonBlocking(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+    def readBlobNonBlocking(onsuccess: Unit, onerror: ErrorCallback, size: Double): Unit = js.native
     def readBlobNonBlocking(onsuccess: ReadBlobSuccessCallback): Unit = js.native
-    def readBlobNonBlocking(onsuccess: ReadBlobSuccessCallback, onerror: js.UndefOr[scala.Nothing], size: Double): Unit = js.native
+    def readBlobNonBlocking(onsuccess: ReadBlobSuccessCallback, onerror: Unit, size: Double): Unit = js.native
     def readBlobNonBlocking(onsuccess: ReadBlobSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def readBlobNonBlocking(onsuccess: ReadBlobSuccessCallback, onerror: ErrorCallback, size: Double): Unit = js.native
     
@@ -816,11 +805,11 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, TypeMismatchError
       */
     def readDataNonBlocking(): Unit = js.native
-    def readDataNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: js.UndefOr[scala.Nothing], size: Double): Unit = js.native
-    def readDataNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
-    def readDataNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, size: Double): Unit = js.native
+    def readDataNonBlocking(onsuccess: Unit, onerror: Unit, size: Double): Unit = js.native
+    def readDataNonBlocking(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+    def readDataNonBlocking(onsuccess: Unit, onerror: ErrorCallback, size: Double): Unit = js.native
     def readDataNonBlocking(onsuccess: ReadDataSuccessCallback): Unit = js.native
-    def readDataNonBlocking(onsuccess: ReadDataSuccessCallback, onerror: js.UndefOr[scala.Nothing], size: Double): Unit = js.native
+    def readDataNonBlocking(onsuccess: ReadDataSuccessCallback, onerror: Unit, size: Double): Unit = js.native
     def readDataNonBlocking(onsuccess: ReadDataSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def readDataNonBlocking(onsuccess: ReadDataSuccessCallback, onerror: ErrorCallback, size: Double): Unit = js.native
     
@@ -837,9 +826,9 @@ object filesystemMod {
       * @remark Resulting string can have `length` larger than `count`, due to possible UTF-16 surrogate pairs in it. String length in JavaScript is counted in UTF-16 encoding, so for example string containing one emoji (surrogate of two UTF-16) character will have `length` of two.
       */
     def readString(): String = js.native
-    def readString(count: js.UndefOr[scala.Nothing], inputEncoding: String): String = js.native
     def readString(count: Double): String = js.native
     def readString(count: Double, inputEncoding: String): String = js.native
+    def readString(count: Unit, inputEncoding: String): String = js.native
     
     /**
       * Reads file content as string.
@@ -860,51 +849,21 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, NotSupportedError, TypeMismatchError
       */
     def readStringNonBlocking(): Unit = js.native
-    def readStringNonBlocking(
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      count: js.UndefOr[scala.Nothing],
-      inputEncoding: String
-    ): Unit = js.native
-    def readStringNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
-    def readStringNonBlocking(
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      count: Double,
-      inputEncoding: String
-    ): Unit = js.native
-    def readStringNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
-    def readStringNonBlocking(
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: ErrorCallback,
-      count: js.UndefOr[scala.Nothing],
-      inputEncoding: String
-    ): Unit = js.native
-    def readStringNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, count: Double): Unit = js.native
-    def readStringNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, count: Double, inputEncoding: String): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: Unit, count: Double): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: Unit, count: Double, inputEncoding: String): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: Unit, count: Unit, inputEncoding: String): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: ErrorCallback, count: Double): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: ErrorCallback, count: Double, inputEncoding: String): Unit = js.native
+    def readStringNonBlocking(onsuccess: Unit, onerror: ErrorCallback, count: Unit, inputEncoding: String): Unit = js.native
     def readStringNonBlocking(onsuccess: ReadStringSuccessCallback): Unit = js.native
-    def readStringNonBlocking(
-      onsuccess: ReadStringSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      count: js.UndefOr[scala.Nothing],
-      inputEncoding: String
-    ): Unit = js.native
-    def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
-    def readStringNonBlocking(
-      onsuccess: ReadStringSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      count: Double,
-      inputEncoding: String
-    ): Unit = js.native
+    def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: Unit, count: Double): Unit = js.native
+    def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: Unit, count: Double, inputEncoding: String): Unit = js.native
+    def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: Unit, count: Unit, inputEncoding: String): Unit = js.native
     def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: ErrorCallback): Unit = js.native
-    def readStringNonBlocking(
-      onsuccess: ReadStringSuccessCallback,
-      onerror: ErrorCallback,
-      count: js.UndefOr[scala.Nothing],
-      inputEncoding: String
-    ): Unit = js.native
     def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: ErrorCallback, count: Double): Unit = js.native
     def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: ErrorCallback, count: Double, inputEncoding: String): Unit = js.native
+    def readStringNonBlocking(onsuccess: ReadStringSuccessCallback, onerror: ErrorCallback, count: Unit, inputEncoding: String): Unit = js.native
     
     /**
       * Sets position indicator in file stream to ***offset***.
@@ -933,70 +892,35 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError
       */
     def seekNonBlocking(offset: Double): Unit = js.native
-    def seekNonBlocking(
-      offset: Double,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      whence: BaseSeekPosition
-    ): Unit = js.native
-    def seekNonBlocking(offset: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
-    def seekNonBlocking(
-      offset: Double,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: ErrorCallback,
-      whence: BaseSeekPosition
-    ): Unit = js.native
+    def seekNonBlocking(offset: Double, onsuccess: Unit, onerror: Unit, whence: BaseSeekPosition): Unit = js.native
+    def seekNonBlocking(offset: Double, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+    def seekNonBlocking(offset: Double, onsuccess: Unit, onerror: ErrorCallback, whence: BaseSeekPosition): Unit = js.native
     def seekNonBlocking(offset: Double, onsuccess: SeekSuccessCallback): Unit = js.native
-    def seekNonBlocking(
-      offset: Double,
-      onsuccess: SeekSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      whence: BaseSeekPosition
-    ): Unit = js.native
+    def seekNonBlocking(offset: Double, onsuccess: SeekSuccessCallback, onerror: Unit, whence: BaseSeekPosition): Unit = js.native
     def seekNonBlocking(offset: Double, onsuccess: SeekSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def seekNonBlocking(offset: Double, onsuccess: SeekSuccessCallback, onerror: ErrorCallback, whence: BaseSeekPosition): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_BEGIN(
-      offset: Double,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      whence: BEGIN
-    ): Unit = js.native
+    def seekNonBlocking_BEGIN(offset: Double, onsuccess: Unit, onerror: Unit, whence: BEGIN): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_BEGIN(offset: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, whence: BEGIN): Unit = js.native
+    def seekNonBlocking_BEGIN(offset: Double, onsuccess: Unit, onerror: ErrorCallback, whence: BEGIN): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_BEGIN(offset: Double, onsuccess: SeekSuccessCallback, onerror: js.UndefOr[scala.Nothing], whence: BEGIN): Unit = js.native
+    def seekNonBlocking_BEGIN(offset: Double, onsuccess: SeekSuccessCallback, onerror: Unit, whence: BEGIN): Unit = js.native
     @JSName("seekNonBlocking")
     def seekNonBlocking_BEGIN(offset: Double, onsuccess: SeekSuccessCallback, onerror: ErrorCallback, whence: BEGIN): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_CURRENT(
-      offset: Double,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      whence: CURRENT
-    ): Unit = js.native
+    def seekNonBlocking_CURRENT(offset: Double, onsuccess: Unit, onerror: Unit, whence: CURRENT): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_CURRENT(offset: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, whence: CURRENT): Unit = js.native
+    def seekNonBlocking_CURRENT(offset: Double, onsuccess: Unit, onerror: ErrorCallback, whence: CURRENT): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_CURRENT(
-      offset: Double,
-      onsuccess: SeekSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      whence: CURRENT
-    ): Unit = js.native
+    def seekNonBlocking_CURRENT(offset: Double, onsuccess: SeekSuccessCallback, onerror: Unit, whence: CURRENT): Unit = js.native
     @JSName("seekNonBlocking")
     def seekNonBlocking_CURRENT(offset: Double, onsuccess: SeekSuccessCallback, onerror: ErrorCallback, whence: CURRENT): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_END(
-      offset: Double,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      whence: END
-    ): Unit = js.native
+    def seekNonBlocking_END(offset: Double, onsuccess: Unit, onerror: Unit, whence: END): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_END(offset: Double, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback, whence: END): Unit = js.native
+    def seekNonBlocking_END(offset: Double, onsuccess: Unit, onerror: ErrorCallback, whence: END): Unit = js.native
     @JSName("seekNonBlocking")
-    def seekNonBlocking_END(offset: Double, onsuccess: SeekSuccessCallback, onerror: js.UndefOr[scala.Nothing], whence: END): Unit = js.native
+    def seekNonBlocking_END(offset: Double, onsuccess: SeekSuccessCallback, onerror: Unit, whence: END): Unit = js.native
     @JSName("seekNonBlocking")
     def seekNonBlocking_END(offset: Double, onsuccess: SeekSuccessCallback, onerror: ErrorCallback, whence: END): Unit = js.native
     
@@ -1028,7 +952,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError
       */
     def syncNonBlocking(): Unit = js.native
-    def syncNonBlocking(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def syncNonBlocking(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def syncNonBlocking(onsuccess: SuccessCallback): Unit = js.native
     def syncNonBlocking(onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -1055,7 +979,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError
       */
     def writeBlobNonBlocking(blob: Blob): Unit = js.native
-    def writeBlobNonBlocking(blob: Blob, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def writeBlobNonBlocking(blob: Blob, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def writeBlobNonBlocking(blob: Blob, onsuccess: SuccessCallback): Unit = js.native
     def writeBlobNonBlocking(blob: Blob, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -1084,7 +1008,7 @@ object filesystemMod {
       * @throw WebAPIException TypeMismatchError
       */
     def writeDataNonBlocking(data: Uint8Array): Unit = js.native
-    def writeDataNonBlocking(data: Uint8Array, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def writeDataNonBlocking(data: Uint8Array, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def writeDataNonBlocking(data: Uint8Array, onsuccess: SuccessCallback): Unit = js.native
     def writeDataNonBlocking(data: Uint8Array, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -1119,26 +1043,11 @@ object filesystemMod {
       * @throw WebAPIException NotSupportedError, TypeMismatchError
       */
     def writeStringNonBlocking(inputString: String): Unit = js.native
-    def writeStringNonBlocking(
-      inputString: String,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: js.UndefOr[scala.Nothing],
-      outputEncoding: String
-    ): Unit = js.native
-    def writeStringNonBlocking(inputString: String, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
-    def writeStringNonBlocking(
-      inputString: String,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: ErrorCallback,
-      outputEncoding: String
-    ): Unit = js.native
+    def writeStringNonBlocking(inputString: String, onsuccess: Unit, onerror: Unit, outputEncoding: String): Unit = js.native
+    def writeStringNonBlocking(inputString: String, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
+    def writeStringNonBlocking(inputString: String, onsuccess: Unit, onerror: ErrorCallback, outputEncoding: String): Unit = js.native
     def writeStringNonBlocking(inputString: String, onsuccess: WriteStringSuccessCallback): Unit = js.native
-    def writeStringNonBlocking(
-      inputString: String,
-      onsuccess: WriteStringSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      outputEncoding: String
-    ): Unit = js.native
+    def writeStringNonBlocking(inputString: String, onsuccess: WriteStringSuccessCallback, onerror: Unit, outputEncoding: String): Unit = js.native
     def writeStringNonBlocking(inputString: String, onsuccess: WriteStringSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def writeStringNonBlocking(
       inputString: String,
@@ -1148,7 +1057,6 @@ object filesystemMod {
     ): Unit = js.native
   }
   
-  @js.native
   trait FileStream extends StObject {
     
     /**
@@ -1158,7 +1066,7 @@ object filesystemMod {
       * ***-1 ***if EOF is ***true***.
       * @note `deprecated` 5.0
       */
-    val bytesAvailable: Double = js.native
+    val bytesAvailable: Double
     
     /**
       * Closes this FileStream.
@@ -1168,7 +1076,7 @@ object filesystemMod {
       * @privilegeLevel public
       * @privilegeName      http://tizen.org/privilege/filesystem.read
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * The flag indicating whether the current file pointer is at the end of the file.
@@ -1176,14 +1084,14 @@ object filesystemMod {
       * If set to ***false***, this attribute indicates that the file pointer is not at the end of the file and so it is anywhere within the file.
       * @note `deprecated` 5.0
       */
-    val eof: Boolean = js.native
+    val eof: Boolean
     
     /**
       * The flag indicating the stream position for reads/writes.
       * The stream position is an offset of bytes from the start of the file stream. When invoking an operation that reads or writes from the stream, the operation will take place from the byte defined by this `position` attribute. If the read or write operation is successful, the position of the stream is advanced by the number of bytes read or written. If the read/write operation is not successful, the position of the stream is unchanged.
       * @note `deprecated` 5.0
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * Reads the specified number of characters from the position of the file pointer in a FileStream and returns the characters as a string.
@@ -1196,7 +1104,7 @@ object filesystemMod {
       * @returns Array of read characters as a string.
       * @throw WebAPIException with error type IOError, TypeMismatchError, InvalidValuesError, SecurityError
       */
-    def read(charCount: Double): String = js.native
+    def read(charCount: Double): String
     
     /**
       * Reads the specified number of bytes from this FileStream, encoding the result in base64.
@@ -1208,7 +1116,7 @@ object filesystemMod {
       * @returns Array of read characters as base64 encoding string.
       * @throw WebAPIException with error type IOError, TypeMismatchError, InvalidValuesError, SecurityError
       */
-    def readBase64(byteCount: Double): String = js.native
+    def readBase64(byteCount: Double): String
     
     /**
       * Reads the specified number of bytes from a FileStream.
@@ -1219,7 +1127,7 @@ object filesystemMod {
       * @returns Result of read bytes as a byte (or number) array.
       * @throw WebAPIException IOError, TypeMismatchError, InvalidValuesError, SecurityError
       */
-    def readBytes(byteCount: Double): Uint8Array = js.native
+    def readBytes(byteCount: Double): Uint8Array
     
     /**
       * Writes the specified DOMString to a FileStream.
@@ -1229,7 +1137,7 @@ object filesystemMod {
       * @param stringData Actual string to write.
       * @throw WebAPIException IOError, TypeMismatchError, SecurityError
       */
-    def write(stringData: String): Unit = js.native
+    def write(stringData: String): Unit
     
     /**
       * Writes the result to this FileStream after converting the specified base64 DOMString to bytes.
@@ -1239,7 +1147,7 @@ object filesystemMod {
       * @param base64Data The base64 data to written.
       * @throw WebAPIException with error type IOError, InvalidValuesError, SecurityError
       */
-    def writeBase64(base64Data: String): Unit = js.native
+    def writeBase64(base64Data: String): Unit
     
     /**
       * Writes the specified bytes to this FileStream.
@@ -1249,7 +1157,7 @@ object filesystemMod {
       * @param byteData Byte data array being written.
       * @throw WebAPIException IOError, TypeMismatchError, SecurityError
       */
-    def writeBytes(byteData: Uint8Array): Unit = js.native
+    def writeBytes(byteData: Uint8Array): Unit
   }
   object FileStream {
     
@@ -1311,24 +1219,23 @@ object filesystemMod {
   
   type FileSuccessCallback = js.Function1[/* file */ File, Unit]
   
-  @js.native
   trait FileSystemStorage extends StObject {
     
     /**
       * The storage name.
       * This attribute is used as an input for methods such as getStorage() and also used as `location` parameter for File.resolve() and FileSystemManager.resolve().
       */
-    val label: String = js.native
+    val label: String
     
     /**
       * The storage state as mounted or not.
       */
-    val state: FileSystemStorageState | MOUNTED | REMOVED | UNMOUNTABLE = js.native
+    val state: FileSystemStorageState | MOUNTED | REMOVED | UNMOUNTABLE
     
     /**
       * The storage type as internal or external.
       */
-    val `type`: FileSystemStorageType | INTERNAL | EXTERNAL = js.native
+    val `type`: FileSystemStorageType | INTERNAL | EXTERNAL
   }
   object FileSystemStorage {
     
@@ -1404,32 +1311,12 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def copyDirectory(sourcePath: Path, destinationPath: Path): Unit = js.native
-    def copyDirectory(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def copyDirectory(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback
-    ): Unit = js.native
-    def copyDirectory(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
     def copyDirectory(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
     def copyDirectory(
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     def copyDirectory(sourcePath: Path, destinationPath: Path, overwrite: Boolean, successCallback: PathSuccessCallback): Unit = js.native
@@ -1437,6 +1324,21 @@ object filesystemMod {
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
+      successCallback: PathSuccessCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def copyDirectory(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
+      successCallback: Unit,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def copyDirectory(sourcePath: Path, destinationPath: Path, overwrite: Unit, successCallback: PathSuccessCallback): Unit = js.native
+    def copyDirectory(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
       successCallback: PathSuccessCallback,
       errorCallback: ErrorCallback
     ): Unit = js.native
@@ -1463,32 +1365,12 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def copyFile(sourcePath: Path, destinationPath: Path): Unit = js.native
-    def copyFile(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def copyFile(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback
-    ): Unit = js.native
-    def copyFile(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
     def copyFile(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
     def copyFile(
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     def copyFile(sourcePath: Path, destinationPath: Path, overwrite: Boolean, successCallback: PathSuccessCallback): Unit = js.native
@@ -1496,6 +1378,21 @@ object filesystemMod {
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
+      successCallback: PathSuccessCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def copyFile(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
+      successCallback: Unit,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def copyFile(sourcePath: Path, destinationPath: Path, overwrite: Unit, successCallback: PathSuccessCallback): Unit = js.native
+    def copyFile(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
       successCallback: PathSuccessCallback,
       errorCallback: ErrorCallback
     ): Unit = js.native
@@ -1522,26 +1419,8 @@ object filesystemMod {
       *
       */
     def createDirectory(path: Path): Unit = js.native
-    def createDirectory(
-      path: Path,
-      makeParents: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def createDirectory(path: Path, makeParents: js.UndefOr[scala.Nothing], successCallback: PathSuccessCallback): Unit = js.native
-    def createDirectory(
-      path: Path,
-      makeParents: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
     def createDirectory(path: Path, makeParents: Boolean): Unit = js.native
-    def createDirectory(
-      path: Path,
-      makeParents: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
+    def createDirectory(path: Path, makeParents: Boolean, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def createDirectory(path: Path, makeParents: Boolean, successCallback: PathSuccessCallback): Unit = js.native
     def createDirectory(
       path: Path,
@@ -1549,6 +1428,9 @@ object filesystemMod {
       successCallback: PathSuccessCallback,
       errorCallback: ErrorCallback
     ): Unit = js.native
+    def createDirectory(path: Path, makeParents: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+    def createDirectory(path: Path, makeParents: Unit, successCallback: PathSuccessCallback): Unit = js.native
+    def createDirectory(path: Path, makeParents: Unit, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     
     /**
       * Deletes directory or directory tree under the current directory pointed by `path`.
@@ -1570,28 +1452,13 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def deleteDirectory(path: Path): Unit = js.native
-    def deleteDirectory(
-      path: Path,
-      recursive: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def deleteDirectory(path: Path, recursive: js.UndefOr[scala.Nothing], successCallback: PathSuccessCallback): Unit = js.native
-    def deleteDirectory(
-      path: Path,
-      recursive: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
     def deleteDirectory(path: Path, recursive: Boolean): Unit = js.native
-    def deleteDirectory(
-      path: Path,
-      recursive: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
+    def deleteDirectory(path: Path, recursive: Boolean, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def deleteDirectory(path: Path, recursive: Boolean, successCallback: PathSuccessCallback): Unit = js.native
     def deleteDirectory(path: Path, recursive: Boolean, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
+    def deleteDirectory(path: Path, recursive: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+    def deleteDirectory(path: Path, recursive: Unit, successCallback: PathSuccessCallback): Unit = js.native
+    def deleteDirectory(path: Path, recursive: Unit, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     
     /**
       * Deletes file pointed by `path`.
@@ -1610,7 +1477,7 @@ object filesystemMod {
       * @throw WebAPIException with error type InvalidValuesError, SecurityError, TypeMismatchError
       */
     def deleteFile(path: Path): Unit = js.native
-    def deleteFile(path: Path, successCallback: js.UndefOr[scala.Nothing], errorCallback: ErrorCallback): Unit = js.native
+    def deleteFile(path: Path, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def deleteFile(path: Path, successCallback: PathSuccessCallback): Unit = js.native
     def deleteFile(path: Path, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     
@@ -1687,12 +1554,7 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def listDirectory(path: Path, successCallback: ListDirectorySuccessCallback): Unit = js.native
-    def listDirectory(
-      path: Path,
-      successCallback: ListDirectorySuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      filter: FileFilter
-    ): Unit = js.native
+    def listDirectory(path: Path, successCallback: ListDirectorySuccessCallback, errorCallback: Unit, filter: FileFilter): Unit = js.native
     def listDirectory(path: Path, successCallback: ListDirectorySuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     def listDirectory(
       path: Path,
@@ -1760,32 +1622,12 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def moveDirectory(sourcePath: Path, destinationPath: Path): Unit = js.native
-    def moveDirectory(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def moveDirectory(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback
-    ): Unit = js.native
-    def moveDirectory(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
     def moveDirectory(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
     def moveDirectory(
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     def moveDirectory(sourcePath: Path, destinationPath: Path, overwrite: Boolean, successCallback: PathSuccessCallback): Unit = js.native
@@ -1793,6 +1635,21 @@ object filesystemMod {
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
+      successCallback: PathSuccessCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def moveDirectory(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
+      successCallback: Unit,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def moveDirectory(sourcePath: Path, destinationPath: Path, overwrite: Unit, successCallback: PathSuccessCallback): Unit = js.native
+    def moveDirectory(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
       successCallback: PathSuccessCallback,
       errorCallback: ErrorCallback
     ): Unit = js.native
@@ -1819,32 +1676,12 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def moveFile(sourcePath: Path, destinationPath: Path): Unit = js.native
-    def moveFile(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def moveFile(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback
-    ): Unit = js.native
-    def moveFile(
-      sourcePath: Path,
-      destinationPath: Path,
-      overwrite: js.UndefOr[scala.Nothing],
-      successCallback: PathSuccessCallback,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
     def moveFile(sourcePath: Path, destinationPath: Path, overwrite: Boolean): Unit = js.native
     def moveFile(
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
+      successCallback: Unit,
       errorCallback: ErrorCallback
     ): Unit = js.native
     def moveFile(sourcePath: Path, destinationPath: Path, overwrite: Boolean, successCallback: PathSuccessCallback): Unit = js.native
@@ -1852,6 +1689,21 @@ object filesystemMod {
       sourcePath: Path,
       destinationPath: Path,
       overwrite: Boolean,
+      successCallback: PathSuccessCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def moveFile(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
+      successCallback: Unit,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def moveFile(sourcePath: Path, destinationPath: Path, overwrite: Unit, successCallback: PathSuccessCallback): Unit = js.native
+    def moveFile(
+      sourcePath: Path,
+      destinationPath: Path,
+      overwrite: Unit,
       successCallback: PathSuccessCallback,
       errorCallback: ErrorCallback
     ): Unit = js.native
@@ -1943,12 +1795,7 @@ object filesystemMod {
       * @throw WebAPIException InvalidValuesError, SecurityError, TypeMismatchError
       */
     def rename(path: Path, newName: String): Unit = js.native
-    def rename(
-      path: Path,
-      newName: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      errorCallback: ErrorCallback
-    ): Unit = js.native
+    def rename(path: Path, newName: String, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def rename(path: Path, newName: String, successCallback: PathSuccessCallback): Unit = js.native
     def rename(path: Path, newName: String, successCallback: PathSuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     
@@ -1994,32 +1841,27 @@ object filesystemMod {
       * @throw WebAPIException NotSupportedError, SecurityError, TypeMismatchError
       */
     def resolve(location: String, onsuccess: FileSuccessCallback): Unit = js.native
-    def resolve(
-      location: String,
-      onsuccess: FileSuccessCallback,
-      onerror: js.UndefOr[scala.Nothing],
-      mode: FileMode
-    ): Unit = js.native
+    def resolve(location: String, onsuccess: FileSuccessCallback, onerror: Unit, mode: FileMode): Unit = js.native
     def resolve(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback): Unit = js.native
     def resolve(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: FileMode): Unit = js.native
     @JSName("resolve")
-    def resolve_a(location: String, onsuccess: FileSuccessCallback, onerror: js.UndefOr[scala.Nothing], mode: a): Unit = js.native
+    def resolve_a(location: String, onsuccess: FileSuccessCallback, onerror: Unit, mode: a): Unit = js.native
     @JSName("resolve")
     def resolve_a(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: a): Unit = js.native
     @JSName("resolve")
-    def resolve_r(location: String, onsuccess: FileSuccessCallback, onerror: js.UndefOr[scala.Nothing], mode: r): Unit = js.native
+    def resolve_r(location: String, onsuccess: FileSuccessCallback, onerror: Unit, mode: r): Unit = js.native
     @JSName("resolve")
     def resolve_r(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: r): Unit = js.native
     @JSName("resolve")
-    def resolve_rw(location: String, onsuccess: FileSuccessCallback, onerror: js.UndefOr[scala.Nothing], mode: rw): Unit = js.native
+    def resolve_rw(location: String, onsuccess: FileSuccessCallback, onerror: Unit, mode: rw): Unit = js.native
     @JSName("resolve")
     def resolve_rw(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: rw): Unit = js.native
     @JSName("resolve")
-    def resolve_rwo(location: String, onsuccess: FileSuccessCallback, onerror: js.UndefOr[scala.Nothing], mode: rwo): Unit = js.native
+    def resolve_rwo(location: String, onsuccess: FileSuccessCallback, onerror: Unit, mode: rwo): Unit = js.native
     @JSName("resolve")
     def resolve_rwo(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: rwo): Unit = js.native
     @JSName("resolve")
-    def resolve_w(location: String, onsuccess: FileSuccessCallback, onerror: js.UndefOr[scala.Nothing], mode: w): Unit = js.native
+    def resolve_w(location: String, onsuccess: FileSuccessCallback, onerror: Unit, mode: w): Unit = js.native
     @JSName("resolve")
     def resolve_w(location: String, onsuccess: FileSuccessCallback, onerror: ErrorCallback, mode: w): Unit = js.native
     

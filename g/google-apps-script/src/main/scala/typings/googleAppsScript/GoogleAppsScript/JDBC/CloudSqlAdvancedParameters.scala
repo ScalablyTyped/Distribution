@@ -3,30 +3,28 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** JdbcAdvancedParameters */
-@js.native
 trait CloudSqlAdvancedParameters extends StObject {
   
   /** connection timeout in seconds */
-  var connectTimeoutSeconds: js.UndefOr[Integer] = js.native
+  var connectTimeoutSeconds: js.UndefOr[Integer] = js.undefined
   
   /** the database to connect to */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
   /** the name of a Google SQL Service instance */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** the user's password */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** query timeout in seconds */
-  var queryTimeoutSeconds: js.UndefOr[Integer] = js.native
+  var queryTimeoutSeconds: js.UndefOr[Integer] = js.undefined
   
   /** the username to pass to the database */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object CloudSqlAdvancedParameters {
   

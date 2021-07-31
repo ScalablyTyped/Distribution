@@ -6,7 +6,6 @@ import typings.uirouterAngularjs.viewsMod.Ng1ViewConfig
 import typings.uirouterCore.viewInterfaceMod.ActiveUIView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewDirectiveMod {
@@ -21,22 +20,21 @@ object viewDirectiveMod {
   @scala.inline
   def uiView_=(x: ng1Directive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uiView")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait UIViewAnimData extends StObject {
     
     @JSName("$animEnter")
-    var $animEnter: js.Promise[_] = js.native
+    var $animEnter: js.Promise[js.Any]
     
     @JSName("$animLeave")
-    var $animLeave: js.Promise[_] = js.native
+    var $animLeave: js.Promise[js.Any]
     
     @JSName("$$animLeave")
-    var DollarDollaranimLeave: Resolve = js.native
+    var DollarDollaranimLeave: Resolve
   }
   object UIViewAnimData {
     
     @scala.inline
-    def apply($animEnter: js.Promise[_], $animLeave: js.Promise[_], DollarDollaranimLeave: Resolve): UIViewAnimData = {
+    def apply($animEnter: js.Promise[js.Any], $animLeave: js.Promise[js.Any], DollarDollaranimLeave: Resolve): UIViewAnimData = {
       val __obj = js.Dynamic.literal($animEnter = $animEnter.asInstanceOf[js.Any], $animLeave = $animLeave.asInstanceOf[js.Any])
       __obj.updateDynamic("$$animLeave")(DollarDollaranimLeave.asInstanceOf[js.Any])
       __obj.asInstanceOf[UIViewAnimData]
@@ -46,24 +44,23 @@ object viewDirectiveMod {
     implicit class UIViewAnimDataMutableBuilder[Self <: UIViewAnimData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def set$animEnter(value: js.Promise[_]): Self = StObject.set(x, "$animEnter", value.asInstanceOf[js.Any])
+      def set$animEnter(value: js.Promise[js.Any]): Self = StObject.set(x, "$animEnter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def set$animLeave(value: js.Promise[_]): Self = StObject.set(x, "$animLeave", value.asInstanceOf[js.Any])
+      def set$animLeave(value: js.Promise[js.Any]): Self = StObject.set(x, "$animLeave", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDollarDollaranimLeave(value: Resolve): Self = StObject.set(x, "$$animLeave", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait UIViewData extends StObject {
     
     @JSName("$cfg")
-    var $cfg: Ng1ViewConfig = js.native
+    var $cfg: Ng1ViewConfig
     
     @JSName("$uiView")
-    var $uiView: ActiveUIView = js.native
+    var $uiView: ActiveUIView
   }
   object UIViewData {
     

@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eksClusterMod {
@@ -100,6 +99,10 @@ object eksClusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/eks/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -109,65 +112,59 @@ object eksClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/eks/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/eks/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/eks/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/eks/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/eks/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/eks/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
       * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
       */
-    val enabledClusterLogTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val enabledClusterLogTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block with encryption configuration for the cluster. Only available on Kubernetes 1.13 and above clusters created after March 6, 2020. Detailed below.
       */
-    val encryptionConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterEncryptionConfig]] = js.native
+    val encryptionConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterEncryptionConfig]] = js.undefined
     
     /**
       * Name of the cluster.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf. Ensure the resource configuration includes explicit dependencies on the IAM Role permissions by adding [`dependsOn`](https://www.pulumi.com/docs/intro/concepts/programming-model/#dependson) if using the `aws.iam.RolePolicy` resource) or `aws.iam.RolePolicyAttachment` resource, otherwise EKS cannot delete EKS managed EC2 infrastructure such as Security Groups on EKS Cluster deletion.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Desired Kubernetes master version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except those automatically triggered by EKS. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by EKS.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html) and [Cluster Security Group Considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html) in the Amazon EKS User Guide. Configuration detailed below.
       */
-    val vpcConfig: Input[typings.pulumiAws.inputMod.eks.ClusterVpcConfig] = js.native
+    val vpcConfig: Input[typings.pulumiAws.inputMod.eks.ClusterVpcConfig]
   }
   object ClusterArgs {
     
@@ -221,75 +218,74 @@ object eksClusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the cluster.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested attribute containing `certificate-authority-data` for your cluster.
       */
-    val certificateAuthority: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterCertificateAuthority]] = js.native
+    val certificateAuthority: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterCertificateAuthority]] = js.undefined
     
-    val createdAt: js.UndefOr[Input[String]] = js.native
+    val createdAt: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
       */
-    val enabledClusterLogTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val enabledClusterLogTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block with encryption configuration for the cluster. Only available on Kubernetes 1.13 and above clusters created after March 6, 2020. Detailed below.
       */
-    val encryptionConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterEncryptionConfig]] = js.native
+    val encryptionConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterEncryptionConfig]] = js.undefined
     
     /**
       * The endpoint for your Kubernetes API server.
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested attribute containing identity provider information for your cluster. Only available on Kubernetes version 1.13 and 1.14 clusters created or upgraded on or after September 3, 2019.
       */
-    val identities: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.eks.ClusterIdentity]]]] = js.native
+    val identities: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.eks.ClusterIdentity]]]] = js.undefined
     
     /**
       * Name of the cluster.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The platform version for the cluster.
       */
-    val platformVersion: js.UndefOr[Input[String]] = js.native
+    val platformVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf. Ensure the resource configuration includes explicit dependencies on the IAM Role permissions by adding [`dependsOn`](https://www.pulumi.com/docs/intro/concepts/programming-model/#dependson) if using the `aws.iam.RolePolicy` resource) or `aws.iam.RolePolicyAttachment` resource, otherwise EKS cannot delete EKS managed EC2 infrastructure such as Security Groups on EKS Cluster deletion.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the EKS cluster. One of `CREATING`, `ACTIVE`, `DELETING`, `FAILED`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Desired Kubernetes master version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except those automatically triggered by EKS. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by EKS.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html) and [Cluster Security Group Considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html) in the Amazon EKS User Guide. Configuration detailed below.
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.ClusterVpcConfig]] = js.undefined
   }
   object ClusterState {
     

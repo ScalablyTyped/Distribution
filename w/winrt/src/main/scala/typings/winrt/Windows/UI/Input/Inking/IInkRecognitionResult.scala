@@ -4,17 +4,15 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkRecognitionResult extends StObject {
   
-  var boundingRect: Rect = js.native
+  var boundingRect: Rect
   
-  def getStrokes(): IVectorView[InkStroke] = js.native
+  def getStrokes(): IVectorView[InkStroke]
   
-  def getTextCandidates(): IVectorView[String] = js.native
+  def getTextCandidates(): IVectorView[String]
 }
 object IInkRecognitionResult {
   

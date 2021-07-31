@@ -2,23 +2,21 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DockerContainerMountData extends StObject {
   
-  var Destination: String = js.native
+  var Destination: String
   
-  var Mode: String = js.native
+  var Mode: String
   
-  var Propagation: String = js.native
+  var Propagation: String
   
-  var RW: Boolean = js.native
+  var RW: Boolean
   
-  var Source: String = js.native
+  var Source: String
   
-  var Type: String = js.native
+  var Type: String
 }
 object DockerContainerMountData {
   

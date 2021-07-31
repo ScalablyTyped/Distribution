@@ -2,58 +2,56 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /**
     * Convert "\n" in paragraphs into <br>.
     */
-  var breaks: js.UndefOr[Boolean] = js.native
+  var breaks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Highlighter function. Should return escaped HTML, or "" if the source
     * string is not changed.
     */
-  var highlight: js.UndefOr[js.Function2[/* str */ String, /* lang */ String, String]] = js.native
+  var highlight: js.UndefOr[js.Function2[/* str */ String, /* lang */ String, String]] = js.undefined
   
   /**
     * Enable HTML tags in source.
     */
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
   
   /**
     * CSS language prefix for fenced blocks.
     */
-  var langPrefix: js.UndefOr[String] = js.native
+  var langPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Set target to open link in
     */
-  var linkTarget: js.UndefOr[String] = js.native
+  var linkTarget: js.UndefOr[String] = js.undefined
   
   /**
     * Autoconvert URL-like text to links.
     */
-  var linkify: js.UndefOr[Boolean] = js.native
+  var linkify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Double + single quotes replacement pairs, when typographer enabled,
     * and smartquotes on. Set doubles to "«»" for Russian, "„“" for German.
     */
-  var quotes: js.UndefOr[String] = js.native
+  var quotes: js.UndefOr[String] = js.undefined
   
   /**
     * Enable some language-neutral replacement + quotes beautification.
     */
-  var typographer: js.UndefOr[Boolean] = js.native
+  var typographer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use "/" to close single tags (<br />).
     */
-  var xhtmlOut: js.UndefOr[Boolean] = js.native
+  var xhtmlOut: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

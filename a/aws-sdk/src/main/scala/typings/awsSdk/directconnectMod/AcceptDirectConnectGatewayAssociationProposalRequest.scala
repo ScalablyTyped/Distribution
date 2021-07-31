@@ -2,31 +2,29 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptDirectConnectGatewayAssociationProposalRequest extends StObject {
   
   /**
     * The ID of the AWS account that owns the virtual private gateway or transit gateway.
     */
-  var associatedGatewayOwnerAccount: OwnerAccount = js.native
+  var associatedGatewayOwnerAccount: OwnerAccount
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: DirectConnectGatewayId = js.native
+  var directConnectGatewayId: DirectConnectGatewayId
   
   /**
     * Overrides the Amazon VPC prefixes advertised to the Direct Connect gateway. For information about how to set the prefixes, see Allowed Prefixes in the AWS Direct Connect User Guide.
     */
-  var overrideAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.native
+  var overrideAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   
   /**
     * The ID of the request proposal.
     */
-  var proposalId: DirectConnectGatewayAssociationProposalId = js.native
+  var proposalId: DirectConnectGatewayAssociationProposalId
 }
 object AcceptDirectConnectGatewayAssociationProposalRequest {
   

@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgQRCodeBarcodeMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
@@ -24,27 +22,27 @@ trait IgQRCodeBarcodeMethods extends StObject {
     *
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Destroys widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns information about how the barcode is rendered.
     */
-  def exportVisualData(): js.Object = js.native
+  def exportVisualData(): js.Object
   
   /**
     * Causes all pending changes of the barcode e.g. by changed property values to be rendered immediately.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Re-polls the css styles for the widget. Use this method when the css styles have been modified.
     */
-  def styleUpdated(): Unit = js.native
+  def styleUpdated(): Unit
 }
 object IgQRCodeBarcodeMethods {
   

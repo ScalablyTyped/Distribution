@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Use this interface to set the media stream relay when calling {@link startChannelMediaRelay} or {@link updateChannelMediaRelay}.
   */
-@js.native
 trait ChannelMediaRelayConfiguration extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait ChannelMediaRelayConfiguration extends StObject {
     * configuration.removeDestChannelInfo("cname")
     * ```
     */
-  def removeDestChannelInfo(channelName: String): Unit = js.native
+  def removeDestChannelInfo(channelName: String): Unit
   
   /**
     * Sets the information of the destination channel.
@@ -49,7 +47,7 @@ trait ChannelMediaRelayConfiguration extends StObject {
     * })
     * ```
     */
-  def setDestChannelInfo(channelName: String, destInfo: js.Any): Unit = js.native
+  def setDestChannelInfo(channelName: String, destInfo: js.Any): Unit
   
   /**
     * Sets the information of the source channel.
@@ -70,7 +68,7 @@ trait ChannelMediaRelayConfiguration extends StObject {
     * })
     * ```
     */
-  def setSrcChannelInfo(srcInfo: js.Any): Unit = js.native
+  def setSrcChannelInfo(srcInfo: js.Any): Unit
 }
 object ChannelMediaRelayConfiguration {
   

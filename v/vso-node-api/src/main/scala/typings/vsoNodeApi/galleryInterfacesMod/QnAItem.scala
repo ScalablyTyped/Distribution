@@ -3,41 +3,39 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QnAItem extends StObject {
   
   /**
     * Time when the review was first created
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * Unique identifier of a QnA item
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Get status of item
     */
-  var status: QnAItemStatus = js.native
+  var status: QnAItemStatus
   
   /**
     * Text description of the QnA item
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * Time when the review was edited/updated
     */
-  var updatedDate: Date = js.native
+  var updatedDate: Date
   
   /**
     * User details for the item.
     */
-  var user: UserIdentityRef = js.native
+  var user: UserIdentityRef
 }
 object QnAItem {
   

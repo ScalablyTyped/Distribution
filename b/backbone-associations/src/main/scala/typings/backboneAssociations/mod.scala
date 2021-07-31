@@ -8,7 +8,6 @@ import typings.backbone.mod.ModelSetOptions
 import typings.backboneAssociations.mod.Associations.IRelation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -24,12 +23,12 @@ object mod {
     extends Model[js.Any, ModelSetOptions, js.Object] {
     def this(attributes: js.Any) = this()
     def this(
-      attributes: js.UndefOr[scala.Nothing],
-      options: CombinedModelConstructorOptions[js.Object, Model[_, ModelSetOptions, js.Object]]
+      attributes: js.Any,
+      options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
     ) = this()
     def this(
-      attributes: js.Any,
-      options: CombinedModelConstructorOptions[js.Object, Model[_, ModelSetOptions, js.Object]]
+      attributes: Unit,
+      options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
     ) = this()
     
     var _proxyCalls: js.Any = js.native
@@ -38,7 +37,7 @@ object mod {
     def cleanup(): Unit = js.native
     
     /** Reverse association lookup for objects that contain this object */
-    var parents: js.Array[_] = js.native
+    var parents: js.Array[js.Any] = js.native
     
     /** Relations with their associated model */
     var relations: js.Array[IRelation] = js.native
@@ -56,12 +55,12 @@ object mod {
       extends Model[js.Any, ModelSetOptions, js.Object] {
       def this(attributes: js.Any) = this()
       def this(
-        attributes: js.UndefOr[scala.Nothing],
-        options: CombinedModelConstructorOptions[js.Object, Model[_, ModelSetOptions, js.Object]]
+        attributes: js.Any,
+        options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
       ) = this()
       def this(
-        attributes: js.Any,
-        options: CombinedModelConstructorOptions[js.Object, Model[_, ModelSetOptions, js.Object]]
+        attributes: Unit,
+        options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
       ) = this()
       
       var _proxyCalls: js.Any = js.native
@@ -70,7 +69,7 @@ object mod {
       def cleanup(): Unit = js.native
       
       /** Reverse association lookup for objects that contain this object */
-      var parents: js.Array[_] = js.native
+      var parents: js.Array[js.Any] = js.native
       
       /** Relations with their associated model */
       var relations: js.Array[IRelation] = js.native
@@ -118,41 +117,38 @@ object mod {
     @scala.inline
     def Self_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Self")(x.asInstanceOf[js.Any])
     
-    @JSImport("backbone", "Associations.getSeparator")
-    @js.native
-    def getSeparator(): js.Any = js.native
+    @scala.inline
+    def getSeparator(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeparator")().asInstanceOf[js.Any]
     
-    @JSImport("backbone", "Associations.setSeparator")
-    @js.native
-    def setSeparator(value: js.Any): Unit = js.native
+    @scala.inline
+    def setSeparator(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSeparator")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @js.native
     trait IRelation extends StObject {
       
       /** Determines the type of collection used. If used, the relatedModel property is ignored */
-      var collectionType: js.UndefOr[String | Instantiable0[Collection[js.Any]]] = js.native
+      var collectionType: js.UndefOr[String | Instantiable0[Collection[js.Any]]] = js.undefined
       
       /** If set to true, then the attribute will not be serialized in toJSON() calls. Defaults to false */
-      var isTransient: js.UndefOr[Boolean] = js.native
+      var isTransient: js.UndefOr[Boolean] = js.undefined
       
       /** The key for this relationship on this model */
-      var key: String = js.native
+      var key: String
       
       /** A transformation function to convert the value before it is assigned to the key on the relatedModel */
-      var map: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+      var map: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
       
       /** The type of model for this relationship */
-      var relatedModel: String | Instantiable0[typings.backboneAssociations.mod.Associations.AssociatedModel] = js.native
+      var relatedModel: String | Instantiable0[typings.backboneAssociations.mod.Associations.AssociatedModel]
       
       /** Specify remoteKey to serialize the key to a different key name in toJSON() calls. Useful in ROR nested-attributes like scenarios. */
-      var remoteKey: js.UndefOr[String] = js.native
+      var remoteKey: js.UndefOr[String] = js.undefined
       
       /** the attributes to serialize when calling toJSON */
-      var serialize: js.UndefOr[js.Array[String]] = js.native
+      var serialize: js.UndefOr[js.Array[String]] = js.undefined
       
       // meh, no string enums in TS. Just have to trust the user not to be a fool
       /** The cardinality of this relationship. */
-      var `type`: String = js.native
+      var `type`: String
     }
     object IRelation {
       
@@ -186,7 +182,7 @@ object mod {
         def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setMap(value: /* repeated */ js.Any => _): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+        def setMap(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
         
         @scala.inline
         def setMapUndefined: Self = StObject.set(x, "map", js.undefined)

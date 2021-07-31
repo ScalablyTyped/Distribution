@@ -12,7 +12,7 @@ Convert a string to title case.
 | Keywords           | title, case, titlecase, string |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 624970 |
+| # downloads        | 737192 |
 | # stars            | 6 |
 
 ## Links

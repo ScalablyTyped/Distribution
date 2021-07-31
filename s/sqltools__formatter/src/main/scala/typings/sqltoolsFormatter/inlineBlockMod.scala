@@ -3,29 +3,48 @@ package typings.sqltoolsFormatter
 import typings.sqltoolsFormatter.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inlineBlockMod {
   
   @JSImport("@sqltools/formatter/lib/core/InlineBlock", JSImport.Default)
   @js.native
-  class default () extends InlineBlock
+  class default ()
+    extends StObject
+       with InlineBlock {
+    
+    /* CompleteClass */
+    override def beginIfPossible(tokens: js.Any, index: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def end(): Unit = js.native
+    
+    /* CompleteClass */
+    override def isActive(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isForbiddenToken(hasTypeValue: Type): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isInlineBlock(tokens: js.Any, index: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    var level: js.Any = js.native
+  }
   
-  @js.native
   trait InlineBlock extends StObject {
     
-    def beginIfPossible(tokens: js.Any, index: js.Any): Unit = js.native
+    def beginIfPossible(tokens: js.Any, index: js.Any): Unit
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def isActive(): Boolean = js.native
+    def isActive(): Boolean
     
-    def isForbiddenToken(hasTypeValue: Type): Boolean = js.native
+    def isForbiddenToken(hasTypeValue: Type): Boolean
     
-    def isInlineBlock(tokens: js.Any, index: js.Any): Boolean = js.native
+    def isInlineBlock(tokens: js.Any, index: js.Any): Boolean
     
-    var level: js.Any = js.native
+    var level: js.Any
   }
   object InlineBlock {
     

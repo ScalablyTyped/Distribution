@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The children of graph controls are shapes that define contours.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleGraphControl
-  extends XAccessible
+  extends StObject
+     with XAccessible
      with XAccessibleContext
      with XAccessibleComponent
      with XAccessibleEventBroadcaster

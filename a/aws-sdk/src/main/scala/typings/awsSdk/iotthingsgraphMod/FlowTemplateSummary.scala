@@ -2,31 +2,29 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowTemplateSummary extends StObject {
   
   /**
     * The ARN of the workflow.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The date when the workflow was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ID of the workflow.
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
   
   /**
     * The revision number of the workflow.
     */
-  var revisionNumber: js.UndefOr[Version] = js.native
+  var revisionNumber: js.UndefOr[Version] = js.undefined
 }
 object FlowTemplateSummary {
   

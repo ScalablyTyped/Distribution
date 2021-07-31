@@ -5,7 +5,6 @@ import typings.ltijs.databaseMod.DatabaseOptions
 import typings.ltijs.providerMod.ProviderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,10 +19,9 @@ object mod {
   
   object expressAugmentingMod {
     
-    @js.native
     trait Response extends StObject {
       
-      var locals: Context = js.native
+      var locals: Context
     }
     object Response {
       

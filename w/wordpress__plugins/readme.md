@@ -10,13 +10,13 @@ Plugins module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/plugins |
 | Keywords           | wordpress, gutenberg, plugins |
-| # releases         | 35 |
+| # releases         | 37 |
 | # dependents       | 8 |
-| # downloads        | 396849 |
+| # downloads        | 456091 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/plugins/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/plugins/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fplugins)

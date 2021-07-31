@@ -3,7 +3,6 @@ package typings.sortablejs
 import typings.sortablejs.mod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortablejsStrings {
@@ -932,7 +931,9 @@ object sortablejsStrings {
   def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait horizontal extends Direction
+  sealed trait horizontal
+    extends StObject
+       with Direction
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -1827,7 +1828,9 @@ object sortablejsStrings {
   def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
   
   @js.native
-  sealed trait vertical extends Direction
+  sealed trait vertical
+    extends StObject
+       with Direction
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   

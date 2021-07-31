@@ -2,7 +2,6 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that group fields together, each of these fields correspond those in
   * https://schema.org/ClaimReview. We list the precise mapping for each field.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends StObject {
   
   /**
@@ -18,41 +16,41 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends St
     * specified in `claim_first_appearance`.&lt;br&gt; Corresponds to
     * `ClaimReview.itemReviewed[@type=Claim].appearance.url`.
     */
-  var claimAppearances: js.UndefOr[js.Array[String]] = js.native
+  var claimAppearances: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Info about the author of this claim.
     */
-  var claimAuthor: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] = js.native
+  var claimAuthor: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor] = js.undefined
   
   /**
     * The date when the claim was made or entered public discourse.&lt;br&gt;
     * Corresponds to `ClaimReview.itemReviewed.datePublished`.
     */
-  var claimDate: js.UndefOr[String] = js.native
+  var claimDate: js.UndefOr[String] = js.undefined
   
   /**
     * A link to a work in which this claim first appears.&lt;br&gt; Corresponds
     * to `ClaimReview.itemReviewed[@type=Claim].firstAppearance.url`.
     */
-  var claimFirstAppearance: js.UndefOr[String] = js.native
+  var claimFirstAppearance: js.UndefOr[String] = js.undefined
   
   /**
     * The location where this claim was made.&lt;br&gt; Corresponds to
     * `ClaimReview.itemReviewed.name`.
     */
-  var claimLocation: js.UndefOr[String] = js.native
+  var claimLocation: js.UndefOr[String] = js.undefined
   
   /**
     * A short summary of the claim being evaluated.&lt;br&gt; Corresponds to
     * `ClaimReview.claimReviewed`.
     */
-  var claimReviewed: js.UndefOr[String] = js.native
+  var claimReviewed: js.UndefOr[String] = js.undefined
   
   /**
     * Info about the rating of this claim review.
     */
-  var rating: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] = js.native
+  var rating: js.UndefOr[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] = js.undefined
   
   /**
     * This field is optional, and will default to the page URL. We provide this
@@ -60,7 +58,7 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends St
     * override is the page URL plus an optional anchor link (&quot;page
     * jump&quot;).&lt;br&gt; Corresponds to `ClaimReview.url`
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup {
   

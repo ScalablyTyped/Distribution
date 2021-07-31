@@ -2,156 +2,156 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Event extends OutlookItem {
+trait Event
+  extends StObject
+     with OutlookItem {
   
   /**
     * True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default
     * is true.
     */
-  var allowNewTimeProposals: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowNewTimeProposals: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * The collection of fileAttachment and itemAttachment attachments for the event. Navigation property. Read-only.
     * Nullable.
     */
-  var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.native
+  var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.undefined
   
   // The collection of attendees for the event.
-  var attendees: js.UndefOr[NullableOption[js.Array[Attendee]]] = js.native
+  var attendees: js.UndefOr[NullableOption[js.Array[Attendee]]] = js.undefined
   
   // The body of the message associated with the event. It can be in HTML or text format.
-  var body: js.UndefOr[NullableOption[ItemBody]] = js.native
+  var body: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   // The preview of the message associated with the event. It is in text format.
-  var bodyPreview: js.UndefOr[NullableOption[String]] = js.native
+  var bodyPreview: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The calendar that contains the event. Navigation property. Read-only.
-  var calendar: js.UndefOr[NullableOption[Calendar]] = js.native
+  var calendar: js.UndefOr[NullableOption[Calendar]] = js.undefined
   
   // The date, time, and time zone that the event ends. By default, the end time is in UTC.
-  var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The collection of open extensions defined for the event. Read-only. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   // Set to true if the event has attachments.
-  var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series.
     * Read-only.
     */
-  var iCalUId: js.UndefOr[NullableOption[String]] = js.native
+  var iCalUId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The importance of the event. The possible values are: low, normal, high.
-  var importance: js.UndefOr[NullableOption[Importance]] = js.native
+  var importance: js.UndefOr[NullableOption[Importance]] = js.undefined
   
   // The instances of the event. Navigation property. Read-only. Nullable.
-  var instances: js.UndefOr[NullableOption[js.Array[Event]]] = js.native
+  var instances: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
   // Set to true if the event lasts all day.
-  var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Set to true if the event has been canceled.
-  var isCancelled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isCancelled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var isDraft: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDraft: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // True if this event has online meeting information, false otherwise. Default is false. Optional.
-  var isOnlineMeeting: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isOnlineMeeting: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event
     * (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of
     * the owner.
     */
-  var isOrganizer: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isOrganizer: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Set to true if an alert is set to remind the user of the event.
-  var isReminderOn: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isReminderOn: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The location of the event.
-  var location: js.UndefOr[NullableOption[Location]] = js.native
+  var location: js.UndefOr[NullableOption[Location]] = js.undefined
   
   /**
     * The locations where the event is held or attended from. The location and locations properties always correspond with
     * each other. If you update the location property, any prior locations in the locations collection would be removed and
     * replaced by the new location value.
     */
-  var locations: js.UndefOr[NullableOption[js.Array[Location]]] = js.native
+  var locations: js.UndefOr[NullableOption[js.Array[Location]]] = js.undefined
   
   // The collection of multi-value extended properties defined for the event. Read-only. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.native
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
   // Details for an attendee to join the meeting online. Read-only.
-  var onlineMeeting: js.UndefOr[NullableOption[OnlineMeetingInfo]] = js.native
+  var onlineMeeting: js.UndefOr[NullableOption[OnlineMeetingInfo]] = js.undefined
   
   /**
     * Represents the online meeting service provider. The possible values are teamsForBusiness, skypeForBusiness, and
     * skypeForConsumer. Optional.
     */
-  var onlineMeetingProvider: js.UndefOr[NullableOption[OnlineMeetingProviderType]] = js.native
+  var onlineMeetingProvider: js.UndefOr[NullableOption[OnlineMeetingProviderType]] = js.undefined
   
   /**
     * A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as
     * a Skype meeting. Read-only.
     */
-  var onlineMeetingUrl: js.UndefOr[NullableOption[String]] = js.native
+  var onlineMeetingUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The organizer of the event.
-  var organizer: js.UndefOr[NullableOption[Recipient]] = js.native
+  var organizer: js.UndefOr[NullableOption[Recipient]] = js.undefined
   
   /**
     * The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy
     * custom time zone was set in desktop Outlook.
     */
-  var originalEndTimeZone: js.UndefOr[NullableOption[String]] = js.native
+  var originalEndTimeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var originalStart: js.UndefOr[NullableOption[String]] = js.native
+  var originalStart: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a
     * legacy custom time zone was set in desktop Outlook.
     */
-  var originalStartTimeZone: js.UndefOr[NullableOption[String]] = js.native
+  var originalStartTimeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The recurrence pattern for the event.
-  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.native
+  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined
   
   // The number of minutes before the event start time that the reminder alert occurs.
-  var reminderMinutesBeforeStart: js.UndefOr[NullableOption[Double]] = js.native
+  var reminderMinutesBeforeStart: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Default is true, which represents the organizer would like an invitee to send a response to the event.
-  var responseRequested: js.UndefOr[NullableOption[Boolean]] = js.native
+  var responseRequested: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates the type of response sent in response to an event message.
-  var responseStatus: js.UndefOr[NullableOption[ResponseStatus]] = js.native
+  var responseStatus: js.UndefOr[NullableOption[ResponseStatus]] = js.undefined
   
   // The possible values are: normal, personal, private, confidential.
-  var sensitivity: js.UndefOr[NullableOption[Sensitivity]] = js.native
+  var sensitivity: js.UndefOr[NullableOption[Sensitivity]] = js.undefined
   
   // The ID for the recurring series master item, if this event is part of a recurring series.
-  var seriesMasterId: js.UndefOr[NullableOption[String]] = js.native
+  var seriesMasterId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The status to show. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
-  var showAs: js.UndefOr[NullableOption[FreeBusyStatus]] = js.native
+  var showAs: js.UndefOr[NullableOption[FreeBusyStatus]] = js.undefined
   
   // The collection of single-value extended properties defined for the event. Read-only. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.native
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
   
   // The date, time, and time zone that the event starts. By default, the start time is in UTC.
-  var start: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var start: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The text of the event's subject line.
-  var subject: js.UndefOr[NullableOption[String]] = js.native
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client
@@ -160,17 +160,17 @@ trait Event extends OutlookItem {
     * creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response
     * payload if an app has set it. Optional.
     */
-  var transactionId: js.UndefOr[NullableOption[String]] = js.native
+  var transactionId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The event type. The possible values are: singleInstance, occurrence, exception, seriesMaster. Read-only.
-  var `type`: js.UndefOr[NullableOption[EventType]] = js.native
+  var `type`: js.UndefOr[NullableOption[EventType]] = js.undefined
   
   /**
     * The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in
     * to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an
     * iFrame.
     */
-  var webLink: js.UndefOr[NullableOption[String]] = js.native
+  var webLink: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Event {
   

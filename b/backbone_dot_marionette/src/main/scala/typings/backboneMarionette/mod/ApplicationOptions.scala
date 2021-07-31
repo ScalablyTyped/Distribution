@@ -2,16 +2,16 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApplicationOptions extends ObjectOptions {
+trait ApplicationOptions
+  extends StObject
+     with ObjectOptions {
   
   /**
     * Root entry point for the View tree of your Application.
     */
-  var region: String = js.native
+  var region: String
 }
 object ApplicationOptions {
   

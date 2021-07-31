@@ -2,7 +2,6 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,7 +17,7 @@ trait CustomAsyncMatcher extends StObject {
       /* repeated */ js.Any, 
       js.Thenable[CustomMatcherResult]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function2[/* actual */ js.Any, /* repeated */ js.Any, js.Thenable[CustomMatcherResult]]
   ]) = js.native
 }

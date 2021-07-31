@@ -3,7 +3,6 @@ package typings.firebase.mod.default.firestore
 import typings.firebase.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("firebase", "default.firestore.Query")
@@ -29,7 +28,7 @@ class Query[T] protected () extends StObject {
     * @param snapshot The snapshot of the document to end at.
     * @return The created Query.
     */
-  def endAt(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[_]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
+  def endAt(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[js.Any]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
   
   /**
     * Creates and returns a new Query that ends before the provided fields
@@ -50,7 +49,7 @@ class Query[T] protected () extends StObject {
     * @param snapshot The snapshot of the document to end before.
     * @return The created Query.
     */
-  def endBefore(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[_]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
+  def endBefore(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[js.Any]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
   
   /**
     * The `Firestore` for the Firestore database (useful for performing
@@ -136,16 +135,16 @@ class Query[T] protected () extends StObject {
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompletion: js.Function0[Unit]
-  ): js.Function0[Unit] = js.native
-  def onSnapshot(
-    onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.firebase.mod.firebase.firestore.FirestoreError, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.firebase.mod.firebase.firestore.FirestoreError, Unit],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
+    onError: Unit,
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   /**
@@ -187,18 +186,18 @@ class Query[T] protected () extends StObject {
   def onSnapshot(
     options: typings.firebase.mod.firebase.firestore.SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompletion: js.Function0[Unit]
-  ): js.Function0[Unit] = js.native
-  def onSnapshot(
-    options: typings.firebase.mod.firebase.firestore.SnapshotListenOptions,
-    onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.firebase.mod.firebase.firestore.FirestoreError, Unit]
   ): js.Function0[Unit] = js.native
   def onSnapshot(
     options: typings.firebase.mod.firebase.firestore.SnapshotListenOptions,
     onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ typings.firebase.mod.firebase.firestore.FirestoreError, Unit],
+    onCompletion: js.Function0[Unit]
+  ): js.Function0[Unit] = js.native
+  def onSnapshot(
+    options: typings.firebase.mod.firebase.firestore.SnapshotListenOptions,
+    onNext: js.Function1[/* snapshot */ typings.firebase.mod.firebase.firestore.QuerySnapshot[T], Unit],
+    onError: Unit,
     onCompletion: js.Function0[Unit]
   ): js.Function0[Unit] = js.native
   
@@ -238,7 +237,7 @@ class Query[T] protected () extends StObject {
     * @param snapshot The snapshot of the document to start after.
     * @return The created Query.
     */
-  def startAfter(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[_]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
+  def startAfter(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[js.Any]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
   
   /**
     * Creates and returns a new Query that starts at the provided fields
@@ -259,7 +258,7 @@ class Query[T] protected () extends StObject {
     * @param snapshot The snapshot of the document to start at.
     * @return The created Query.
     */
-  def startAt(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[_]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
+  def startAt(snapshot: typings.firebase.mod.firebase.firestore.DocumentSnapshot[js.Any]): typings.firebase.mod.firebase.firestore.Query[T] = js.native
   
   /**
     * Creates and returns a new Query with the additional filter that documents

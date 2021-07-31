@@ -2,21 +2,19 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockstrapModalDefaults extends StObject {
   
-  var attributes: KnockstrapModalDefaultsAttributes = js.native
+  var attributes: KnockstrapModalDefaultsAttributes
   
-  var bodyTemplate: KnockstrapDefaultsTemplateBase = js.native
+  var bodyTemplate: KnockstrapDefaultsTemplateBase
   
-  var css: String = js.native
+  var css: String
   
-  var footerTemplate: KnockstrapModalDefaultsFooterTemplate = js.native
+  var footerTemplate: KnockstrapModalDefaultsFooterTemplate
   
-  var headerTemplate: KnockstrapDefaultsTemplateBase = js.native
+  var headerTemplate: KnockstrapDefaultsTemplateBase
 }
 object KnockstrapModalDefaults {
   

@@ -10,9 +10,9 @@ Reads online RSS/Atom/JSON feeds notifying on new items.
 | ------------------ | :-------------: |
 | Full name          | feedsub |
 | Keywords           | feed, rss, atom, json, subscribe |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 32148 |
+| # downloads        | 37436 |
 | # stars            | 1 |
 
 ## Links

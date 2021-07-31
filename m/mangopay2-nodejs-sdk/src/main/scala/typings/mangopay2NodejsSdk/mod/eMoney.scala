@@ -3,28 +3,28 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eMoney {
   
-  @js.native
-  trait EMoneyData extends EntityBaseData {
+  trait EMoneyData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * The amount of money that has been credited to this user
       */
-    var CreditedEMoney: MoneyData = js.native
+    var CreditedEMoney: MoneyData
     
     /**
       * The amount of money that has been debited from this user
       */
-    var DebitedEMoney: MoneyData = js.native
+    var DebitedEMoney: MoneyData
     
     /**
       * The object owner's UserId
       */
-    var UserId: String = js.native
+    var UserId: String
   }
   object EMoneyData {
     

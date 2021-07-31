@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
   /**
     * The time when the snapshot was created.
     */
-  var SnapshotTime: js.UndefOr[Timestamp] = js.native
+  var SnapshotTime: js.UndefOr[Timestamp] = js.undefined
 }
 object Snapshot {
   

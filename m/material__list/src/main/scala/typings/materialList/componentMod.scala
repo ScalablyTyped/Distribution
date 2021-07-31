@@ -6,7 +6,6 @@ import typings.materialList.typesMod.MDCListIndex
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -14,7 +13,7 @@ object componentMod {
   @JSImport("@material/list/component", "MDCList")
   @js.native
   class MDCList protected () extends MDCComponent[MDCListFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCListFoundation, args: js.Any*) = this()
     
     /**
@@ -76,9 +75,12 @@ object componentMod {
   /* static members */
   object MDCList {
     
-    @JSImport("@material/list/component", "MDCList.attachTo")
+    @JSImport("@material/list/component", "MDCList")
     @js.native
-    def attachTo(root: Element): MDCList = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCList]
   }
   
   type MDCListFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCListFoundation], MDCList]

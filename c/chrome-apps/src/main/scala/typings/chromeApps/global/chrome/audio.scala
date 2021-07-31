@@ -8,7 +8,6 @@ import typings.chromeApps.chrome.audio.StreamType
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion chrome.app.*
@@ -26,24 +25,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object audio {
   
-  @JSGlobal("chrome.audio.getDevices")
+  @JSGlobal("chrome.audio")
   @js.native
-  def getDevices(callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getDevices(callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Gets a list of audio devices filtered based on |filter|.
     */
-  @JSGlobal("chrome.audio.getDevices")
-  @js.native
-  def getDevices(filter: Filter, callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = js.native
+  @scala.inline
+  def getDevices(filter: Filter, callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the system-wide mute state for the specified stream type.
     * @param streamType Stream type for which mute state should be fetched.
     * @param callback Callback reporting whether mute is set or not for specified stream type.
     */
-  @JSGlobal("chrome.audio.getMute")
-  @js.native
-  def getMute(streamType: StreamType, callback: js.Function1[/* value */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def getMute(streamType: StreamType, callback: js.Function1[/* value */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMute")(streamType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Fired when audio devices change, either new devices being added,
@@ -69,9 +69,8 @@ object audio {
   val onMuteChanged: typings.chromeApps.chrome.events.Event[js.Function2[/* streamType */ js.Array[StreamType], /* isMuted */ Boolean, Unit]] = js.native
   
   /** Sets lists of active input and/or output devices. */
-  @JSGlobal("chrome.audio.setDevices")
-  @js.native
-  def setDevices(ids: js.Array[DeviceIdLists | String], callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setDevices(ids: js.Array[DeviceIdLists | String], callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDevices")(ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets mute state for a stream type. The mute state will apply to all audio devices with the specified audio stream type.
@@ -79,15 +78,12 @@ object audio {
     * @param isMuted New mute value.
     * @param [callback] If you specify the callback parameter, it should be a function that looks like this: function() {...};
     */
-  @JSGlobal("chrome.audio.setMute")
-  @js.native
-  def setMute(streamType: StreamType, isMuted: Boolean): Unit = js.native
-  @JSGlobal("chrome.audio.setMute")
-  @js.native
-  def setMute(streamType: StreamType, isMuted: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setMute(streamType: StreamType, isMuted: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMute")(streamType.asInstanceOf[js.Any], isMuted.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setMute(streamType: StreamType, isMuted: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMute")(streamType.asInstanceOf[js.Any], isMuted.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Sets the properties for the input or output device. */
-  @JSGlobal("chrome.audio.setProperties")
-  @js.native
-  def setProperties(id: String, properties: SetDeviceProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setProperties(id: String, properties: SetDeviceProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperties")(id.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

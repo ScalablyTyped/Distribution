@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wmsservertypeMod {
@@ -12,15 +11,15 @@ object wmsservertypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WMSServerType with String] = js.native
+    def apply(value: String): js.UndefOr[WMSServerType & String] = js.native
     
-    /* "carmentaserver" */ val CARMENTA_SERVER: typings.ol.wmsservertypeMod.WMSServerType.CARMENTA_SERVER with String = js.native
+    /* "carmentaserver" */ val CARMENTA_SERVER: typings.ol.wmsservertypeMod.WMSServerType.CARMENTA_SERVER & String = js.native
     
-    /* "geoserver" */ val GEOSERVER: typings.ol.wmsservertypeMod.WMSServerType.GEOSERVER with String = js.native
+    /* "geoserver" */ val GEOSERVER: typings.ol.wmsservertypeMod.WMSServerType.GEOSERVER & String = js.native
     
-    /* "mapserver" */ val MAPSERVER: typings.ol.wmsservertypeMod.WMSServerType.MAPSERVER with String = js.native
+    /* "mapserver" */ val MAPSERVER: typings.ol.wmsservertypeMod.WMSServerType.MAPSERVER & String = js.native
     
-    /* "qgis" */ val QGIS: typings.ol.wmsservertypeMod.WMSServerType.QGIS with String = js.native
+    /* "qgis" */ val QGIS: typings.ol.wmsservertypeMod.WMSServerType.QGIS & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object wmsservertypeMod {
   object WMSServerType extends StObject {
     
     @js.native
-    sealed trait CARMENTA_SERVER extends WMSServerType
+    sealed trait CARMENTA_SERVER
+      extends StObject
+         with WMSServerType
     
     @js.native
-    sealed trait GEOSERVER extends WMSServerType
+    sealed trait GEOSERVER
+      extends StObject
+         with WMSServerType
     
     @js.native
-    sealed trait MAPSERVER extends WMSServerType
+    sealed trait MAPSERVER
+      extends StObject
+         with WMSServerType
     
     @js.native
-    sealed trait QGIS extends WMSServerType
+    sealed trait QGIS
+      extends StObject
+         with WMSServerType
   }
 }

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestValidatorMod {
@@ -49,6 +48,10 @@ object requestValidatorMod {
   /* static members */
   object RequestValidator {
     
+    @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RequestValidator resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object requestValidatorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RequestValidator = js.native
-    @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RequestValidator = js.native
-    @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RequestValidatorState): RequestValidator = js.native
-    @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RequestValidatorState, opts: CustomResourceOptions): RequestValidator = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RequestValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RequestValidator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RequestValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RequestValidator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RequestValidatorState): RequestValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RequestValidator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RequestValidatorState, opts: CustomResourceOptions): RequestValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RequestValidator]
     
     /**
       * Returns true if the given object is an instance of RequestValidator.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/requestValidator.RequestValidator */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/requestValidator.RequestValidator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/requestValidator.RequestValidator */ Boolean]
   }
   
-  @js.native
   trait RequestValidatorArgs extends StObject {
     
     /**
       * The name of the request validator
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated Rest API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * Boolean whether to validate request body. Defaults to `false`.
       */
-    val validateRequestBody: js.UndefOr[Input[Boolean]] = js.native
+    val validateRequestBody: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean whether to validate request parameters. Defaults to `false`.
       */
-    val validateRequestParameters: js.UndefOr[Input[Boolean]] = js.native
+    val validateRequestParameters: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object RequestValidatorArgs {
     
@@ -137,28 +134,27 @@ object requestValidatorMod {
     }
   }
   
-  @js.native
   trait RequestValidatorState extends StObject {
     
     /**
       * The name of the request validator
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated Rest API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * Boolean whether to validate request body. Defaults to `false`.
       */
-    val validateRequestBody: js.UndefOr[Input[Boolean]] = js.native
+    val validateRequestBody: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean whether to validate request parameters. Defaults to `false`.
       */
-    val validateRequestParameters: js.UndefOr[Input[Boolean]] = js.native
+    val validateRequestParameters: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object RequestValidatorState {
     

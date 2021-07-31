@@ -3,31 +3,29 @@ package typings.awsLambda
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventbridgeMod {
   
-  @js.native
   trait EventBridgeEvent[TDetailType /* <: String */, TDetail] extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var detail: TDetail = js.native
+    var detail: TDetail
     
-    var `detail-type`: TDetailType = js.native
+    var `detail-type`: TDetailType
     
-    var id: String = js.native
+    var id: String
     
-    var region: String = js.native
+    var region: String
     
-    var resources: js.Array[String] = js.native
+    var resources: js.Array[String]
     
-    var source: String = js.native
+    var source: String
     
-    var time: String = js.native
+    var time: String
     
-    var version: String = js.native
+    var version: String
   }
   object EventBridgeEvent {
     
@@ -49,7 +47,7 @@ object eventbridgeMod {
     }
     
     @scala.inline
-    implicit class EventBridgeEventMutableBuilder[Self <: EventBridgeEvent[_, _], TDetailType /* <: String */, TDetail] (val x: Self with (EventBridgeEvent[TDetailType, TDetail])) extends AnyVal {
+    implicit class EventBridgeEventMutableBuilder[Self <: EventBridgeEvent[?, ?], TDetailType /* <: String */, TDetail] (val x: Self & (EventBridgeEvent[TDetailType, TDetail])) extends AnyVal {
       
       @scala.inline
       def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])

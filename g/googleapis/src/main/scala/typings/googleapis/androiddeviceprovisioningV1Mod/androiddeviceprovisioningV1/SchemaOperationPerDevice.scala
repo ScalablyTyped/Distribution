@@ -2,35 +2,33 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A task for each device in the operation. Corresponds to each device change
   * in the request.
   */
-@js.native
 trait SchemaOperationPerDevice extends StObject {
   
   /**
     * A copy of the original device-claim request received by the server.
     */
-  var claim: js.UndefOr[SchemaPartnerClaim] = js.native
+  var claim: js.UndefOr[SchemaPartnerClaim] = js.undefined
   
   /**
     * The processing result for each device.
     */
-  var result: js.UndefOr[SchemaPerDeviceStatusInBatch] = js.native
+  var result: js.UndefOr[SchemaPerDeviceStatusInBatch] = js.undefined
   
   /**
     * A copy of the original device-unclaim request received by the server.
     */
-  var unclaim: js.UndefOr[SchemaPartnerUnclaim] = js.native
+  var unclaim: js.UndefOr[SchemaPartnerUnclaim] = js.undefined
   
   /**
     * A copy of the original metadata-update request received by the server.
     */
-  var updateMetadata: js.UndefOr[SchemaUpdateMetadataArguments] = js.native
+  var updateMetadata: js.UndefOr[SchemaUpdateMetadataArguments] = js.undefined
 }
 object SchemaOperationPerDevice {
   

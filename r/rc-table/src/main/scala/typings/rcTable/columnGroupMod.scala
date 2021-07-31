@@ -15,50 +15,51 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnGroupMod {
+  
+  @JSImport("rc-table/lib/sugar/ColumnGroup", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  @JSImport("rc-table/lib/sugar/ColumnGroup", JSImport.Default)
-  @js.native
-  def default[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = js.native
+  @scala.inline
+  def default[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* Inlined parent std.Omit<rc-table.rc-table/lib/interface.ColumnType<RecordType>, 'children'> */
-  @js.native
   trait ColumnGroupProps[RecordType] extends StObject {
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
-    var children: ReactElement | js.Array[ReactElement] = js.native
+    var children: ReactElement | js.Array[ReactElement]
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var dataIndex: js.UndefOr[DataIndex] = js.native
+    var dataIndex: js.UndefOr[DataIndex] = js.undefined
     
-    var ellipsis: js.UndefOr[CellEllipsisType] = js.native
+    var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
     
-    var fixed: js.UndefOr[FixedType] = js.native
+    var fixed: js.UndefOr[FixedType] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.native
+    var onCell: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
     
     var onCellClick: js.UndefOr[
         js.Function2[/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onHeaderCell: js.UndefOr[
         GetComponentProps[
           /* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var render: js.UndefOr[
         js.Function3[
@@ -67,15 +68,15 @@ object columnGroupMod {
           /* index */ Double, 
           ReactNode | RenderedCell[RecordType]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.native
+    var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object ColumnGroupProps {
     
@@ -86,7 +87,7 @@ object columnGroupMod {
     }
     
     @scala.inline
-    implicit class ColumnGroupPropsMutableBuilder[Self <: ColumnGroupProps[_], RecordType] (val x: Self with ColumnGroupProps[RecordType]) extends AnyVal {
+    implicit class ColumnGroupPropsMutableBuilder[Self <: ColumnGroupProps[?], RecordType] (val x: Self & ColumnGroupProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

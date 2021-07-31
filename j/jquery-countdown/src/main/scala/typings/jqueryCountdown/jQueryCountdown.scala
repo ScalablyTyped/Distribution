@@ -3,7 +3,6 @@ package typings.jqueryCountdown
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jQueryCountdown {
@@ -30,26 +29,26 @@ object jQueryCountdown {
     def stop: typings.jqueryCountdown.jqueryCountdownStrings.stop = "stop".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.stop]
   }
   
-  @js.native
   trait Event
-    extends typings.jquery.JQuery.Event {
+    extends StObject
+       with typings.jquery.JQuery.Event {
     
     /**
       * Passed away the final date?
       */
-    var elapsed: Boolean = js.native
+    var elapsed: Boolean
     
     /**
       * The parsed final date native object
       */
-    var finalDate: Date = js.native
+    var finalDate: Date
     
-    var offset: OffsetEvent = js.native
+    var offset: OffsetEvent
     
     /**
       * The formatter function
       */
-    def strftime(format: String): String = js.native
+    def strftime(format: String): String
   }
   object Event {
     
@@ -108,78 +107,77 @@ object jQueryCountdown {
     def updateDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown = "update.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown]
   }
   
-  @js.native
   trait OffsetEvent extends StObject {
     
     /**
       * Days left until next week
       */
-    var days: Double = js.native
+    var days: Double
     
     /**
       * Days left until next month
       */
-    var daysToMonth: Double = js.native
+    var daysToMonth: Double
     
     /**
       * Days left until next week
       */
-    var daysToWeek: Double = js.native
+    var daysToWeek: Double
     
     /**
       * Hours left until next day
       */
-    var hours: Double = js.native
+    var hours: Double
     
     /**
       * Minutes left for the next hour
       */
-    var minutes: Double = js.native
+    var minutes: Double
     
     /**
       * Months left until final date
       */
-    var months: Double = js.native
+    var months: Double
     
     /**
       * Seconds left for the next minute
       */
-    var seconds: Double = js.native
+    var seconds: Double
     
     /**
       * Total amount of days left until final date
       */
-    var totalDays: Double = js.native
+    var totalDays: Double
     
     /**
       * Total amount of hours left until final date
       */
-    var totalHours: Double = js.native
+    var totalHours: Double
     
     /**
       * Total amount of minutes left until final date
       */
-    var totalMinutes: Double = js.native
+    var totalMinutes: Double
     
     /**
       * Total amount of seconds left until final date
       */
-    var totalSeconds: Double = js.native
+    var totalSeconds: Double
     
     /**
       * Weeks left until the final date
       */
-    var weeks: Double = js.native
+    var weeks: Double
     
     /**
       * Weeks left until the next month
       */
-    var weeksToMonth: Double = js.native
+    var weeksToMonth: Double
     
     /**
       * Years left until final date
       */
-    var years: Double = js.native
+    var years: Double
   }
   object OffsetEvent {
     
@@ -251,23 +249,22 @@ object jQueryCountdown {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Deferred initialization mode
       */
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow to continue after finishes
       */
-    var elapse: js.UndefOr[Boolean] = js.native
+    var elapse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The update rate in milliseconds
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

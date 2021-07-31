@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pubsubMod {
+  
+  @JSImport("googleapis/build/src/apis/pubsub", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -116,9 +119,12 @@ object pubsubMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/pubsub", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/pubsub", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -162,22 +168,19 @@ object pubsubMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/pubsub", "pubsub")
-  @js.native
-  def pubsub(options: Options): Pubsub = js.native
-  @JSImport("googleapis/build/src/apis/pubsub", "pubsub")
-  @js.native
-  def pubsub(options: typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Options): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = js.native
-  @JSImport("googleapis/build/src/apis/pubsub", "pubsub")
-  @js.native
-  def pubsub(options: typings.googleapis.v1beta1aMod.pubsubV1beta1a.Options): typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub = js.native
-  @JSImport("googleapis/build/src/apis/pubsub", "pubsub")
-  @js.native
-  def pubsub_v1(version: v1): Pubsub = js.native
-  @JSImport("googleapis/build/src/apis/pubsub", "pubsub")
-  @js.native
-  def pubsub_v1beta1a(version: v1beta1a): typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub = js.native
-  @JSImport("googleapis/build/src/apis/pubsub", "pubsub")
-  @js.native
-  def pubsub_v1beta2(version: v1beta2): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = js.native
+  @scala.inline
+  def pubsub(options: Options): Pubsub = ^.asInstanceOf[js.Dynamic].applyDynamic("pubsub")(options.asInstanceOf[js.Any]).asInstanceOf[Pubsub]
+  @scala.inline
+  def pubsub(options: typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Options): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = ^.asInstanceOf[js.Dynamic].applyDynamic("pubsub")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub]
+  @scala.inline
+  def pubsub(options: typings.googleapis.v1beta1aMod.pubsubV1beta1a.Options): typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub = ^.asInstanceOf[js.Dynamic].applyDynamic("pubsub")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub]
+  
+  @scala.inline
+  def pubsub_v1(version: v1): Pubsub = ^.asInstanceOf[js.Dynamic].applyDynamic("pubsub")(version.asInstanceOf[js.Any]).asInstanceOf[Pubsub]
+  
+  @scala.inline
+  def pubsub_v1beta1a(version: v1beta1a): typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub = ^.asInstanceOf[js.Dynamic].applyDynamic("pubsub")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1beta1aMod.pubsubV1beta1a.Pubsub]
+  
+  @scala.inline
+  def pubsub_v1beta2(version: v1beta2): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = ^.asInstanceOf[js.Dynamic].applyDynamic("pubsub")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub]
 }

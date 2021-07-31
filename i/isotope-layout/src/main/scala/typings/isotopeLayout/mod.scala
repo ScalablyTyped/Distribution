@@ -25,35 +25,160 @@ import typings.std.HTMLElement
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("isotope-layout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("isotope-layout", JSImport.Namespace)
   @js.native
-  class Class protected () extends Isotope {
+  class Class protected ()
+    extends StObject
+       with Isotope {
     def this(elementOrSelector: String, options: IsotopeOptions) = this()
     def this(elementOrSelector: HTMLElement, options: IsotopeOptions) = this()
+    
+    /**
+      * Adds item elements to the Isotope instance. addItems does not lay out items like appended, prepended, or insert.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def addItems(elements: Elements): Unit = js.native
+    
+    /**
+      * Adds and lays out newly appended item elements to the end of the layout.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def appended(elements: Elements): Unit = js.native
+    
+    /**
+      * Filters, sorts, and lays out items. arrange is the principle method of Isotope. It is the default method with jQuery .isotope(). Pass in options to apply filtering and sorting.
+      * @param options All options are optional, but itemSelector is recommended. Layout modes have their own separate options.
+      */
+    /* CompleteClass */
+    override def arrange(options: IsotopeOptions): Unit = js.native
+    
+    /**
+      * Removes the Isotope functionality completely. destroy will return the element back to its pre-initialized state.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * Returns an array of filtered item elements in current sorted order.
+      */
+    /* CompleteClass */
+    override def getFilteredItemElements(): js.Array[Element] = js.native
+    
+    /**
+      * Returns an array of all item elements in the Isotope instance.
+      */
+    /* CompleteClass */
+    override def getItemElements(): js.Array[Element] = js.native
+    
+    /**
+      * Hide items.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def hideItemElements(elements: Elements): Unit = js.native
+    
+    /**
+      * Appends elements into container element, adds elements as items, and arranges items with filtering and sorting.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def insert(elements: Elements): Unit = js.native
+    
+    /**
+      * Lays out all item elements. layout is useful when an item has changed size, and all items need to be laid out again. layout does not apply filtering or sorting.
+      */
+    /* CompleteClass */
+    override def layout(): Unit = js.native
+    
+    /**
+      * Lays out specified items.
+      * @param elements Array of Isotope.Items
+      * @param isStill Disables transitions
+      */
+    /* CompleteClass */
+    override def layoutItems(elements: js.Array[HTMLElement], isStill: Boolean): Unit = js.native
+    
+    /**
+      * Adds and lays out newly prepended item elements at the beginning of layout.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def prepended(elements: Elements): Unit = js.native
+    
+    /**
+      * Recollects all item elements.
+      * For frameworks like Angular and React, reloadItems may be useful to apply changes to the DOM to Isotope.
+      */
+    /* CompleteClass */
+    override def reloadItems(): Unit = js.native
+    
+    /**
+      * Removes elements from the Isotope instance and DOM.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def remove(elements: Elements): Unit = js.native
+    
+    /**
+      * Reveals hidden items.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def revealItemElements(elements: Elements): Unit = js.native
+    
+    /**
+      * Shuffles items in a random order.
+      */
+    /* CompleteClass */
+    override def shuffle(): Unit = js.native
+    
+    /**
+      * Stamps elements in the layout. Isotope will lay out item elements around stamped elements.
+      * Stamping is only supported by some layout modes: masonry, packery and masonryhorizontal.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def stamp(elements: Elements): Unit = js.native
+    
+    /**
+      * Un-stamps elements in the layout, so that Isotope will no longer layout item elements around them.
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def unstamp(elements: Elements): Unit = js.native
+    
+    /**
+      * Updates sort data
+      * @param elements Element, jQuery Object, NodeList, or Array of Elements
+      */
+    /* CompleteClass */
+    override def updateSortData(elements: Elements): Unit = js.native
   }
   
-  @JSImport("isotope-layout", "data")
-  @js.native
-  def data(element: String): Isotope = js.native
+  @scala.inline
+  def data(element: String): Isotope = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Isotope]
   /**
     * Get the Isotope instance via its element. Isotope.data() is useful for getting the Isotope instance in JavaScript, after it has been initalized in HTML.
     */
-  @JSImport("isotope-layout", "data")
-  @js.native
-  def data(element: HTMLElement): Isotope = js.native
+  @scala.inline
+  def data(element: HTMLElement): Isotope = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Isotope]
   
-  @js.native
   trait CellsByColumn extends StObject {
     
-    var columnWidth: js.UndefOr[Double | String] = js.native
+    var columnWidth: js.UndefOr[Double | String] = js.undefined
     
-    var rowHeight: js.UndefOr[Double | String] = js.native
+    var rowHeight: js.UndefOr[Double | String] = js.undefined
   }
   object CellsByColumn {
     
@@ -80,12 +205,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CellsByRow extends StObject {
     
-    var columnWidth: js.UndefOr[Double | String] = js.native
+    var columnWidth: js.UndefOr[Double | String] = js.undefined
     
-    var rowHeight: js.UndefOr[Double | String] = js.native
+    var rowHeight: js.UndefOr[Double | String] = js.undefined
   }
   object CellsByRow {
     
@@ -114,10 +238,9 @@ object mod {
   
   type Elements = js.Array[HTMLElement] | HTMLElement | JQuery | NodeList
   
-  @js.native
   trait FitRows extends StObject {
     
-    var gutter: js.UndefOr[Double | String] = js.native
+    var gutter: js.UndefOr[Double | String] = js.undefined
   }
   object FitRows {
     
@@ -138,10 +261,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Horizontal extends StObject {
     
-    var verticalAligment: js.UndefOr[Double] = js.native
+    var verticalAligment: js.UndefOr[Double] = js.undefined
   }
   object Horizontal {
     
@@ -162,113 +284,112 @@ object mod {
     }
   }
   
-  @js.native
   trait Isotope extends StObject {
     
     /**
       * Adds item elements to the Isotope instance. addItems does not lay out items like appended, prepended, or insert.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def addItems(elements: Elements): Unit = js.native
+    def addItems(elements: Elements): Unit
     
     /**
       * Adds and lays out newly appended item elements to the end of the layout.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def appended(elements: Elements): Unit = js.native
+    def appended(elements: Elements): Unit
     
     /**
       * Filters, sorts, and lays out items. arrange is the principle method of Isotope. It is the default method with jQuery .isotope(). Pass in options to apply filtering and sorting.
       * @param options All options are optional, but itemSelector is recommended. Layout modes have their own separate options.
       */
-    def arrange(options: IsotopeOptions): Unit = js.native
+    def arrange(options: IsotopeOptions): Unit
     
     /**
       * Removes the Isotope functionality completely. destroy will return the element back to its pre-initialized state.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Returns an array of filtered item elements in current sorted order.
       */
-    def getFilteredItemElements(): js.Array[Element] = js.native
+    def getFilteredItemElements(): js.Array[Element]
     
     /**
       * Returns an array of all item elements in the Isotope instance.
       */
-    def getItemElements(): js.Array[Element] = js.native
+    def getItemElements(): js.Array[Element]
     
     /**
       * Hide items.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def hideItemElements(elements: Elements): Unit = js.native
+    def hideItemElements(elements: Elements): Unit
     
     /**
       * Appends elements into container element, adds elements as items, and arranges items with filtering and sorting.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def insert(elements: Elements): Unit = js.native
+    def insert(elements: Elements): Unit
     
     /**
       * Lays out all item elements. layout is useful when an item has changed size, and all items need to be laid out again. layout does not apply filtering or sorting.
       */
-    def layout(): Unit = js.native
+    def layout(): Unit
     
     /**
       * Lays out specified items.
       * @param elements Array of Isotope.Items
       * @param isStill Disables transitions
       */
-    def layoutItems(elements: js.Array[HTMLElement], isStill: Boolean): Unit = js.native
+    def layoutItems(elements: js.Array[HTMLElement], isStill: Boolean): Unit
     
     /**
       * Adds and lays out newly prepended item elements at the beginning of layout.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def prepended(elements: Elements): Unit = js.native
+    def prepended(elements: Elements): Unit
     
     /**
       * Recollects all item elements.
       * For frameworks like Angular and React, reloadItems may be useful to apply changes to the DOM to Isotope.
       */
-    def reloadItems(): Unit = js.native
+    def reloadItems(): Unit
     
     /**
       * Removes elements from the Isotope instance and DOM.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def remove(elements: Elements): Unit = js.native
+    def remove(elements: Elements): Unit
     
     /**
       * Reveals hidden items.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def revealItemElements(elements: Elements): Unit = js.native
+    def revealItemElements(elements: Elements): Unit
     
     /**
       * Shuffles items in a random order.
       */
-    def shuffle(): Unit = js.native
+    def shuffle(): Unit
     
     /**
       * Stamps elements in the layout. Isotope will lay out item elements around stamped elements.
       * Stamping is only supported by some layout modes: masonry, packery and masonryhorizontal.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def stamp(elements: Elements): Unit = js.native
+    def stamp(elements: Elements): Unit
     
     /**
       * Un-stamps elements in the layout, so that Isotope will no longer layout item elements around them.
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def unstamp(elements: Elements): Unit = js.native
+    def unstamp(elements: Elements): Unit
     
     /**
       * Updates sort data
       * @param elements Element, jQuery Object, NodeList, or Array of Elements
       */
-    def updateSortData(elements: Elements): Unit = js.native
+    def updateSortData(elements: Elements): Unit
   }
   object Isotope {
     
@@ -356,143 +477,142 @@ object mod {
     }
   }
   
-  @js.native
   trait IsotopeOptions extends StObject {
     
     /**
       * A horizontal grid layout where items are centered inside each cell. The grid is defined by columnWidth and rowHeight options.
       */
-    var cellsByColumn: js.UndefOr[CellsByColumn] = js.native
+    var cellsByColumn: js.UndefOr[CellsByColumn] = js.undefined
     
     /**
       * A vertical grid layout where items are centered inside each cell. The grid is defined by columnWidth and rowHeight options.
       */
-    var cellsByRow: js.UndefOr[CellsByRow] = js.native
+    var cellsByRow: js.UndefOr[CellsByRow] = js.undefined
     
     /**
       * CSS styles that are applied to the container element.
       */
-    var containerStyle: js.UndefOr[Style] = js.native
+    var containerStyle: js.UndefOr[Style] = js.undefined
     
     /**
       * Shows items that match the filter and hides items that do not match.
       * If set to a string, that value is used as a selector.
       * If filter is set to a function, that function checks each item and returns true or false if the item should be shown or hidden.
       */
-    var filter: js.UndefOr[String | (js.Function1[/* itemElement */ HTMLElement, Boolean])] = js.native
+    var filter: js.UndefOr[String | (js.Function1[/* itemElement */ HTMLElement, Boolean])] = js.undefined
     
     /**
       * Items are arranged into rows. Rows progress vertically. Similar to what you would expect from a layout that uses CSS floats. fitRows works well for items that have the same height.
       */
-    var fitRows: js.UndefOr[FitRows] = js.native
+    var fitRows: js.UndefOr[FitRows] = js.undefined
     
     /**
       * Isotope reads data from HTML with the getSortData option.
       * getSortData is set with an object. The object’s keys are keywords used to sort by. Object values are either a shortcut string or function to retrieve the data.
       */
-    var getSortData: js.UndefOr[Sorter] = js.native
+    var getSortData: js.UndefOr[Sorter] = js.undefined
     
     /**
       * The styles applied to hide items when filtering.
       */
-    var hiddenStyle: js.UndefOr[Style] = js.native
+    var hiddenStyle: js.UndefOr[Style] = js.undefined
     
     /**
       * Items are arranged horizontally.
       */
-    var horiz: js.UndefOr[Horizontal] = js.native
+    var horiz: js.UndefOr[Horizontal] = js.undefined
     
     /**
       * Enables layout on initialization. Enabled by default initLayout: true.
       * Set initLayout: false to disable layout on initialization, so you can use methods or add events before the initial layout.
       * initLayout was previously isInitLayout in Isotope v2. isInitLayout will still work in Isotope v3
       */
-    var initLayout: js.UndefOr[Boolean] = js.native
+    var initLayout: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies which child elements will be used as item elements in the layout.
       * We recommend always setting itemSelector. itemSelector is useful to exclude sizing elements or other elements that are not part of the layout.
       */
-    var itemSelector: js.UndefOr[String] = js.native
+    var itemSelector: js.UndefOr[String] = js.undefined
     
     /**
       * Layout modes can have their own separate options. These are set in a corresponding object within the options.
       * masonry, fitRows, and vertical are included in Isotope by default. All other layout modes need to installed separately.
       */
-    var layoutMode: js.UndefOr[LayoutModes] = js.native
+    var layoutMode: js.UndefOr[LayoutModes] = js.undefined
     
     /**
       * The default layout mode. Items are arranged in a vertically cascading grid.
       */
-    var masonry: js.UndefOr[Masonry] = js.native
+    var masonry: js.UndefOr[Masonry] = js.undefined
     
     /**
       * Horizontal version of masonry. Items are arranged in a horizontally cascading grid.
       */
-    var masontryHorizontal: js.UndefOr[MasonryHorizontal] = js.native
+    var masontryHorizontal: js.UndefOr[MasonryHorizontal] = js.undefined
     
     /**
       * Controls the horizontal flow of the layout. By default, item elements start positioning at the left, with originLeft: true. Set originLeft: false for right-to-left layouts.
       */
-    var originLeft: js.UndefOr[Boolean] = js.native
+    var originLeft: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls the vertical flow of the layout. By default, item elements start positioning at the top. Set to false for bottom-up layouts. It’s like Tetris!
       */
-    var originTop: js.UndefOr[Boolean] = js.native
+    var originTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The packery layout mode uses a bin-packing algorithm. This is a fancy way of saying “it fills empty gaps.” It works similarly to masonry, except gaps will be filled.
       */
-    var packery: js.UndefOr[Packery] = js.native
+    var packery: js.UndefOr[Packery] = js.undefined
     
     /**
       * Sets item positions in percent values, rather than pixel values. percentPosition: true works well with percent-width items, as items will not transition their position on resize.
       */
-    var percentPosition: js.UndefOr[Boolean] = js.native
+    var percentPosition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adjusts sizes and positions when window is resized. Enabled by default resize: true.
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sorts items ascendingly if sortAscending: true “A, B, C…”, “1, 2, 3…”, or descendingly if sortAscending: false, “Z, Y, X…”, “9, 8, 7…”.
       * You can set ascending order for each sortBy value by setting sortAscending to an object.
       */
-    var sortAscending: js.UndefOr[Boolean | SortOrder] = js.native
+    var sortAscending: js.UndefOr[Boolean | SortOrder] = js.undefined
     
     /**
       * Sorts items according to which property of getSortData. The value of sortBy needs to match a key name in getSortData.
       */
-    var sortBy: js.UndefOr[String | js.Array[String]] = js.native
+    var sortBy: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Staggers item transitions, so items transition incrementally after one another. Set as a CSS time format, '0.03s', or as a number in milliseconds, 30.
       */
-    var stagger: js.UndefOr[Double | String] = js.native
+    var stagger: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Specifies which elements are stamped within the layout. Isotope will layout items around stamped elements.
       * The masonry, packery, and masonryHorizontal layout modes support stamping.
       * The stamp option stamps elements only when the Isotope instance is first initialized. You can stamp additional elements afterwards with the stamp method.
       */
-    var stamp: js.UndefOr[String] = js.native
+    var stamp: js.UndefOr[String] = js.undefined
     
     /**
       * Duration of the transition when items change position or appearance, set in a CSS time format, or as a number in milliseconds. Default: transitionDuration: '0.4s'
       */
-    var transitionDuration: js.UndefOr[Double | String] = js.native
+    var transitionDuration: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Items are stacked vertically.
       */
-    var vertical: js.UndefOr[Vertical] = js.native
+    var vertical: js.UndefOr[Vertical] = js.undefined
     
     /**
       * The styles applied to reveal items when filtering.
       */
-    var visibleStyle: js.UndefOr[Style] = js.native
+    var visibleStyle: js.UndefOr[Style] = js.undefined
   }
   object IsotopeOptions {
     
@@ -705,14 +825,13 @@ object mod {
     def vertical: typings.isotopeLayout.isotopeLayoutStrings.vertical = "vertical".asInstanceOf[typings.isotopeLayout.isotopeLayoutStrings.vertical]
   }
   
-  @js.native
   trait Masonry extends StObject {
     
-    var columnWidth: js.UndefOr[Double | String] = js.native
+    var columnWidth: js.UndefOr[Double | String] = js.undefined
     
-    var fitWidth: js.UndefOr[Boolean] = js.native
+    var fitWidth: js.UndefOr[Boolean] = js.undefined
     
-    var gutter: js.UndefOr[Double | String] = js.native
+    var gutter: js.UndefOr[Double | String] = js.undefined
   }
   object Masonry {
     
@@ -745,12 +864,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MasonryHorizontal extends StObject {
     
-    var gutter: js.UndefOr[Double | String] = js.native
+    var gutter: js.UndefOr[Double | String] = js.undefined
     
-    var rowHeight: js.UndefOr[Double | String] = js.native
+    var rowHeight: js.UndefOr[Double | String] = js.undefined
   }
   object MasonryHorizontal {
     
@@ -777,16 +895,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Packery extends StObject {
     
-    var columnWidth: js.UndefOr[Double | String] = js.native
+    var columnWidth: js.UndefOr[Double | String] = js.undefined
     
-    var gutter: js.UndefOr[Double | String] = js.native
+    var gutter: js.UndefOr[Double | String] = js.undefined
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
   }
   object Packery {
     
@@ -831,10 +948,9 @@ object mod {
   
   type Style = StringDictionary[Double | String]
   
-  @js.native
   trait Vertical extends StObject {
     
-    var horizontalAlignment: js.UndefOr[Double] = js.native
+    var horizontalAlignment: js.UndefOr[Double] = js.undefined
   }
   object Vertical {
     

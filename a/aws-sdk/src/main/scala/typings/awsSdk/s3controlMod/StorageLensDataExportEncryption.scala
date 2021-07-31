@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageLensDataExportEncryption extends StObject {
   
   /**
     * 
     */
-  var SSEKMS: js.UndefOr[typings.awsSdk.s3controlMod.SSEKMS] = js.native
+  var SSEKMS: js.UndefOr[typings.awsSdk.s3controlMod.SSEKMS] = js.undefined
   
   /**
     * 
     */
-  var SSES3: js.UndefOr[typings.awsSdk.s3controlMod.SSES3] = js.native
+  var SSES3: js.UndefOr[typings.awsSdk.s3controlMod.SSES3] = js.undefined
 }
 object StorageLensDataExportEncryption {
   

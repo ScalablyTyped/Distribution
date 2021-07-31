@@ -2,107 +2,105 @@ package typings.divaJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<diva.js.diva.js/interfaces.Options> & {  objectData :string | object} */
-@js.native
 trait PartialOptionsobjectDatas extends StObject {
   
-  var acceptHeader: js.UndefOr[String] = js.native
+  var acceptHeader: js.UndefOr[String] = js.undefined
   
-  var adaptivePadding: js.UndefOr[Double] = js.native
+  var adaptivePadding: js.UndefOr[Double] = js.undefined
   
-  var arrowScrollAmount: js.UndefOr[Double] = js.native
+  var arrowScrollAmount: js.UndefOr[Double] = js.undefined
   
-  var blockMobileMove: js.UndefOr[Boolean] = js.native
+  var blockMobileMove: js.UndefOr[Boolean] = js.undefined
   
-  var enableAutoTitle: js.UndefOr[Boolean] = js.native
+  var enableAutoTitle: js.UndefOr[Boolean] = js.undefined
   
-  var enableFilename: js.UndefOr[Boolean] = js.native
+  var enableFilename: js.UndefOr[Boolean] = js.undefined
   
-  var enableFullscreen: js.UndefOr[Boolean] = js.native
+  var enableFullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var enableGotoPage: js.UndefOr[Boolean] = js.native
+  var enableGotoPage: js.UndefOr[Boolean] = js.undefined
   
-  var enableGotoSuggestions: js.UndefOr[Boolean] = js.native
+  var enableGotoSuggestions: js.UndefOr[Boolean] = js.undefined
   
-  var enableGridControls: js.UndefOr[String] = js.native
+  var enableGridControls: js.UndefOr[String] = js.undefined
   
-  var enableGridIcon: js.UndefOr[Boolean] = js.native
+  var enableGridIcon: js.UndefOr[Boolean] = js.undefined
   
-  var enableImageTitles: js.UndefOr[Boolean] = js.native
+  var enableImageTitles: js.UndefOr[Boolean] = js.undefined
   
-  var enableIndexAsLabel: js.UndefOr[Boolean] = js.native
+  var enableIndexAsLabel: js.UndefOr[Boolean] = js.undefined
   
-  var enableKeyScroll: js.UndefOr[Boolean] = js.native
+  var enableKeyScroll: js.UndefOr[Boolean] = js.undefined
   
-  var enableLinkIcon: js.UndefOr[Boolean] = js.native
+  var enableLinkIcon: js.UndefOr[Boolean] = js.undefined
   
-  var enableNonPagedVisibilityIcon: js.UndefOr[Boolean] = js.native
+  var enableNonPagedVisibilityIcon: js.UndefOr[Boolean] = js.undefined
   
-  var enableSpaceScroll: js.UndefOr[Boolean] = js.native
+  var enableSpaceScroll: js.UndefOr[Boolean] = js.undefined
   
-  var enableToolbar: js.UndefOr[Boolean] = js.native
+  var enableToolbar: js.UndefOr[Boolean] = js.undefined
   
-  var enableZoomControls: js.UndefOr[String] = js.native
+  var enableZoomControls: js.UndefOr[String] = js.undefined
   
-  var fillParentHeight: js.UndefOr[Boolean] = js.native
+  var fillParentHeight: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeightGrid: js.UndefOr[Boolean] = js.native
+  var fixedHeightGrid: js.UndefOr[Boolean] = js.undefined
   
-  var fixedPadding: js.UndefOr[Double] = js.native
+  var fixedPadding: js.UndefOr[Double] = js.undefined
   
-  var goDirectlyTo: js.UndefOr[Double] = js.native
+  var goDirectlyTo: js.UndefOr[Double] = js.undefined
   
-  var hashParamSuffix: js.UndefOr[String] = js.native
+  var hashParamSuffix: js.UndefOr[String] = js.undefined
   
-  var inBookLayout: js.UndefOr[Boolean] = js.native
+  var inBookLayout: js.UndefOr[Boolean] = js.undefined
   
-  var inFullscreen: js.UndefOr[Boolean] = js.native
+  var inFullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var inGrid: js.UndefOr[Boolean] = js.native
+  var inGrid: js.UndefOr[Boolean] = js.undefined
   
-  var maxPagesPerRow: js.UndefOr[Double] = js.native
+  var maxPagesPerRow: js.UndefOr[Double] = js.undefined
   
-  var maxZoomLevel: js.UndefOr[Double] = js.native
+  var maxZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var minPagesPerRow: js.UndefOr[Double] = js.native
+  var minPagesPerRow: js.UndefOr[Double] = js.undefined
   
-  var minZoomLevel: js.UndefOr[Double] = js.native
+  var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var objectData: (js.UndefOr[js.Object | String]) with (String | js.Object) = js.native
+  var objectData: (js.UndefOr[js.Object | String]) & (String | js.Object)
   
-  var onGotoSubmit: js.UndefOr[js.Function0[_]] = js.native
+  var onGotoSubmit: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var pageAliasFunction: js.UndefOr[js.Function0[_]] = js.native
+  var pageAliasFunction: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var pageAliases: js.UndefOr[js.Object] = js.native
+  var pageAliases: js.UndefOr[js.Object] = js.undefined
   
-  var pageLoadTimeout: js.UndefOr[Double] = js.native
+  var pageLoadTimeout: js.UndefOr[Double] = js.undefined
   
-  var pagesPerRow: js.UndefOr[Double] = js.native
+  var pagesPerRow: js.UndefOr[Double] = js.undefined
   
-  var showNonPagedPages: js.UndefOr[Boolean] = js.native
+  var showNonPagedPages: js.UndefOr[Boolean] = js.undefined
   
-  var throbberTimeout: js.UndefOr[Double] = js.native
+  var throbberTimeout: js.UndefOr[Double] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var toolbarParentObject: js.UndefOr[js.Object] = js.native
+  var toolbarParentObject: js.UndefOr[js.Object] = js.undefined
   
-  var verticallyOriented: js.UndefOr[Boolean] = js.native
+  var verticallyOriented: js.UndefOr[Boolean] = js.undefined
   
-  var viewportMargin: js.UndefOr[Double] = js.native
+  var viewportMargin: js.UndefOr[Double] = js.undefined
   
-  var zoomLevel: js.UndefOr[Double] = js.native
+  var zoomLevel: js.UndefOr[Double] = js.undefined
 }
 object PartialOptionsobjectDatas {
   
   @scala.inline
-  def apply(objectData: (js.UndefOr[js.Object | String]) with (String | js.Object)): PartialOptionsobjectDatas = {
+  def apply(objectData: (js.UndefOr[js.Object | String]) & (String | js.Object)): PartialOptionsobjectDatas = {
     val __obj = js.Dynamic.literal(objectData = objectData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOptionsobjectDatas]
   }
@@ -297,16 +295,16 @@ object PartialOptionsobjectDatas {
     def setMinZoomLevelUndefined: Self = StObject.set(x, "minZoomLevel", js.undefined)
     
     @scala.inline
-    def setObjectData(value: (js.UndefOr[js.Object | String]) with (String | js.Object)): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
+    def setObjectData(value: (js.UndefOr[js.Object | String]) & (String | js.Object)): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnGotoSubmit(value: () => _): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
+    def setOnGotoSubmit(value: () => js.Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnGotoSubmitUndefined: Self = StObject.set(x, "onGotoSubmit", js.undefined)
     
     @scala.inline
-    def setPageAliasFunction(value: () => _): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
+    def setPageAliasFunction(value: () => js.Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
     
     @scala.inline
     def setPageAliasFunctionUndefined: Self = StObject.set(x, "pageAliasFunction", js.undefined)

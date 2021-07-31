@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.DOM.SetAttributeValueRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `55` extends StObject {
   
-  var paramsType: js.Array[SetAttributeValueRequest] = js.native
+  var paramsType: js.Array[SetAttributeValueRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `55` {
   

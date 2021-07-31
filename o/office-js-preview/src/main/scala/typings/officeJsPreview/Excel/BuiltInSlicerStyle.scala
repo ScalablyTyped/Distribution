@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,96 +22,124 @@ object BuiltInSlicerStyle extends StObject {
     *
     */
   @js.native
-  sealed trait dark1 extends BuiltInSlicerStyle
+  sealed trait dark1
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with dark shading.
     *
     */
   @js.native
-  sealed trait dark2 extends BuiltInSlicerStyle
+  sealed trait dark2
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with dark shading.
     *
     */
   @js.native
-  sealed trait dark3 extends BuiltInSlicerStyle
+  sealed trait dark3
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with dark shading.
     *
     */
   @js.native
-  sealed trait dark4 extends BuiltInSlicerStyle
+  sealed trait dark4
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with dark shading.
     *
     */
   @js.native
-  sealed trait dark5 extends BuiltInSlicerStyle
+  sealed trait dark5
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 6" (green in the default "Office" theme) with dark shading.
     *
     */
   @js.native
-  sealed trait dark6 extends BuiltInSlicerStyle
+  sealed trait dark6
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 1" (blue in the default "Office" theme) with light shading.
     *
     */
   @js.native
-  sealed trait light1 extends BuiltInSlicerStyle
+  sealed trait light1
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 2" (orange in the default "Office" theme) with light shading.
     *
     */
   @js.native
-  sealed trait light2 extends BuiltInSlicerStyle
+  sealed trait light2
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 3" (gray in the default "Office" theme) with light shading.
     *
     */
   @js.native
-  sealed trait light3 extends BuiltInSlicerStyle
+  sealed trait light3
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 4" (yellow in the default "Office" theme) with light shading.
     *
     */
   @js.native
-  sealed trait light4 extends BuiltInSlicerStyle
+  sealed trait light4
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 5" (light blue in the default "Office" theme) with light shading.
     *
     */
   @js.native
-  sealed trait light5 extends BuiltInSlicerStyle
+  sealed trait light5
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * "Accent 6" (green in the default "Office" theme) with light shading.
     *
     */
   @js.native
-  sealed trait light6 extends BuiltInSlicerStyle
+  sealed trait light6
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * Dark gray with light shading.
     *
     */
   @js.native
-  sealed trait other1 extends BuiltInSlicerStyle
+  sealed trait other1
+    extends StObject
+       with BuiltInSlicerStyle
   
   /**
     * Medium blue with light shading.
     *
     */
   @js.native
-  sealed trait other2 extends BuiltInSlicerStyle
+  sealed trait other2
+    extends StObject
+       with BuiltInSlicerStyle
 }

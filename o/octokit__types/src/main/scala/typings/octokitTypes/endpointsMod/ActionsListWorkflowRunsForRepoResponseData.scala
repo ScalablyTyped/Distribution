@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Artifactsurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsListWorkflowRunsForRepoResponseData extends StObject {
   
-  var total_count: Double = js.native
+  var total_count: Double
   
-  var workflow_runs: js.Array[Artifactsurl] = js.native
+  var workflow_runs: js.Array[Artifactsurl]
 }
 object ActionsListWorkflowRunsForRepoResponseData {
   

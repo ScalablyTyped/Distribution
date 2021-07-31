@@ -1,13 +1,13 @@
 package typings.echarts.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Length2
-  extends /**
+  extends StObject
+     with /**
   * Some properties like "normal" or "emphasis" are not documented.
   * Please, write description for them
   */
@@ -19,7 +19,7 @@ trait Length2
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.emphasis
     */
-  var emphasis: js.UndefOr[Show] = js.native
+  var emphasis: js.UndefOr[Show] = js.undefined
   
   /**
     * The length of the first segment of visual guide line.
@@ -27,7 +27,7 @@ trait Length2
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.length
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The length of the second segment of visual guide line.
@@ -35,12 +35,12 @@ trait Length2
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.length2
     */
-  var length2: js.UndefOr[Double] = js.native
+  var length2: js.UndefOr[Double] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.native
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
   
   /**
     * Whether to show the visual guide ine.
@@ -48,7 +48,7 @@ trait Length2
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.show
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to smooth the visual guide line.
@@ -58,7 +58,7 @@ trait Length2
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine.smooth
     */
-  var smooth: js.UndefOr[Boolean | Double] = js.native
+  var smooth: js.UndefOr[Boolean | Double] = js.undefined
 }
 object Length2 {
   
@@ -69,54 +69,42 @@ object Length2 {
   }
   
   @scala.inline
-  implicit class Length2Ops[Self <: Length2] (val x: Self) extends AnyVal {
+  implicit class Length2MutableBuilder[Self <: Length2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmphasis(value: Show): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmphasis(value: Show): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    def setLength2(value: Double): Self = StObject.set(x, "length2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    def setLength2Undefined: Self = StObject.set(x, "length2", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength2(value: Double): Self = this.set("length2", value.asInstanceOf[js.Any])
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
     @scala.inline
-    def deleteLength2: Self = this.set("length2", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setSmooth(value: Boolean | Double): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setSmooth(value: Boolean | Double): Self = this.set("smooth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmooth: Self = this.set("smooth", js.undefined)
+    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
   }
 }

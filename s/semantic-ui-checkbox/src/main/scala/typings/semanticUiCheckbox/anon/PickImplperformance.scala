@@ -2,14 +2,12 @@ package typings.semanticUiCheckbox.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, 'performance'> */
-@js.native
 trait PickImplperformance extends StObject {
   
-  var performance: Boolean = js.native
+  var performance: Boolean
 }
 object PickImplperformance {
   

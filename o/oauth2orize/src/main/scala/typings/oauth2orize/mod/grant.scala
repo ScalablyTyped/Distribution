@@ -2,26 +2,24 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grant {
   
-  @JSImport("oauth2orize", "grant.code")
+  @JSImport("oauth2orize", "grant")
   @js.native
-  def code(issue: IssueGrantCodeFunction): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "grant.code")
-  @js.native
-  def code(options: Options, issue: IssueGrantCodeFunction): MiddlewareFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("oauth2orize", "grant.token")
-  @js.native
-  def token(issue: IssueGrantTokenFunction): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "grant.token")
-  @js.native
-  def token(options: Options, issue: IssueGrantTokenFunction): MiddlewareFunction = js.native
+  @scala.inline
+  def code(issue: IssueGrantCodeFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
+  def code(options: Options, issue: IssueGrantCodeFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("code")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  @js.native
+  @scala.inline
+  def token(issue: IssueGrantTokenFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
+  def token(options: Options, issue: IssueGrantTokenFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("token")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
+  
   trait Options extends StObject {
     
     // For maximum flexibility, multiple scope spearators can optionally be
@@ -29,7 +27,7 @@ object grant {
     // with either space or comma (' ', ',').  This violates the specification,
     // but achieves compatibility with existing client libraries that are already
     // deployed.
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
   }
   object Options {
     

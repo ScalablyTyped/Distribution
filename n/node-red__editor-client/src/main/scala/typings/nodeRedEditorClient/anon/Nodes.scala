@@ -3,21 +3,19 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.addToGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nodes extends StObject {
   
-  var nodes: js.UndefOr[js.Array[js.Object]] = js.native
+  var nodes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: addToGroup = js.native
+  var t: addToGroup
 }
 object Nodes {
   
   @scala.inline
-  def apply(t: addToGroup): Nodes = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): Nodes = {
+    val __obj = js.Dynamic.literal(t = "addToGroup")
     __obj.asInstanceOf[Nodes]
   }
   

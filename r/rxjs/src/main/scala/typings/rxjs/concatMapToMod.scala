@@ -5,20 +5,20 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concatMapToMod {
   
-  @JSImport("rxjs/internal/operators/concatMapTo", "concatMapTo")
+  @JSImport("rxjs/internal/operators/concatMapTo", JSImport.Namespace)
   @js.native
-  def concatMapTo[T, O /* <: ObservableInput[_] */](observable: O): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/concatMapTo", "concatMapTo")
-  @js.native
-  def concatMapTo[T, O /* <: ObservableInput[_] */](observable: O, resultSelector: js.UndefOr[scala.Nothing]): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  @JSImport("rxjs/internal/operators/concatMapTo", "concatMapTo")
-  @js.native
-  def concatMapTo[T, R, O /* <: ObservableInput[_] */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def concatMapTo[T, O /* <: ObservableInput[js.Any] */](observable: O): OperatorFunction[T, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatMapTo")(observable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def concatMapTo[T, O /* <: ObservableInput[js.Any] */](observable: O, resultSelector: Unit): OperatorFunction[T, ObservedValueOf[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, ObservedValueOf[O]]]
+  @scala.inline
+  def concatMapTo[T, R, O /* <: ObservableInput[js.Any] */](
     observable: O,
     resultSelector: js.Function4[
       /* outerValue */ T, 
@@ -27,5 +27,5 @@ object concatMapToMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
 }

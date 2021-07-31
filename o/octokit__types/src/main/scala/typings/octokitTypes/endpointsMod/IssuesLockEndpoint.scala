@@ -6,13 +6,11 @@ import typings.octokitTypes.octokitTypesStrings.resolved
 import typings.octokitTypes.octokitTypesStrings.spam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesLockEndpoint extends StObject {
   
-  var issue_number: Double = js.native
+  var issue_number: Double
   
   /**
     * The reason for locking the issue or pull request conversation. Lock will fail if you don't use one of these reasons:
@@ -21,11 +19,11 @@ trait IssuesLockEndpoint extends StObject {
     * \* `resolved`
     * \* `spam`
     */
-  var lock_reason: js.UndefOr[`off-topic` | (`too heated`) | resolved | spam] = js.native
+  var lock_reason: js.UndefOr[`off-topic` | (`too heated`) | resolved | spam] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object IssuesLockEndpoint {
   

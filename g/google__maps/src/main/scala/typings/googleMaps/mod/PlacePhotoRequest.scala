@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacePhotoRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait PlacePhotoRequest extends StObject {
     * If the image is larger in either dimension, it will be scaled to match the smaller of the two dimensions,
     * restricted to its original aspect ratio. Both the `maxheight` and `maxwidth` properties accept an integer between 1 and 1600.
     */
-  var maxheight: js.UndefOr[Double] = js.native
+  var maxheight: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the maximum desired height or width, in pixels, of the image returned by the Place Photos service.
@@ -22,13 +20,13 @@ trait PlacePhotoRequest extends StObject {
     * If the image is larger in either dimension, it will be scaled to match the smaller of the two dimensions,
     * restricted to its original aspect ratio. Both the `maxheight` and `maxwidth` properties accept an integer between 1 and 1600.
     */
-  var maxwidth: js.UndefOr[Double] = js.native
+  var maxwidth: js.UndefOr[Double] = js.undefined
   
   /**
     * string identifier that uniquely identifies a photo.
     * Photo references are returned from either a Place Search or Place Details request.
     */
-  var photoreference: String = js.native
+  var photoreference: String
 }
 object PlacePhotoRequest {
   

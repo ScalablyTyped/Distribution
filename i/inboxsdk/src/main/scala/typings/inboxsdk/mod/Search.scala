@@ -2,7 +2,6 @@ package typings.inboxsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Search {
@@ -27,20 +26,19 @@ object Search {
     }
   }
   
-  @js.native
   trait AutocompleteSearchResultBase extends StObject {
     
-    var externalURL: js.UndefOr[String] = js.native
+    var externalURL: js.UndefOr[String] = js.undefined
     
-    var iconHTML: js.UndefOr[String] = js.native
+    var iconHTML: js.UndefOr[String] = js.undefined
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var routeName: js.UndefOr[String] = js.native
+    var routeName: js.UndefOr[String] = js.undefined
     
-    var routeParams: js.UndefOr[js.Array[String]] = js.native
+    var routeParams: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AutocompleteSearchResultBase {
     
@@ -94,14 +92,14 @@ object Search {
     }
   }
   
-  @js.native
   trait AutocompleteSearchResultHtml
-    extends AutocompleteSearchResultBase
+    extends StObject
+       with AutocompleteSearchResultBase
        with AutocompleteSearchResult {
     
-    var descriptionHTML: String = js.native
+    var descriptionHTML: String
     
-    var nameHTML: String = js.native
+    var nameHTML: String
   }
   object AutocompleteSearchResultHtml {
     
@@ -122,14 +120,14 @@ object Search {
     }
   }
   
-  @js.native
   trait AutocompleteSearchResultText
-    extends AutocompleteSearchResultBase
+    extends StObject
+       with AutocompleteSearchResultBase
        with AutocompleteSearchResult {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
   }
   object AutocompleteSearchResultText {
     
@@ -150,17 +148,16 @@ object Search {
     }
   }
   
-  @js.native
   trait SearchInstance extends StObject {
     
-    def registerSearchQueryRewriter(rewriter: SearchQueryRewriter): Unit = js.native
+    def registerSearchQueryRewriter(rewriter: SearchQueryRewriter): Unit
     
     def registerSearchSuggestionsProvider(
       handler: js.Function1[
           /* query */ String, 
           js.Array[AutocompleteSearchResult] | js.Promise[js.Array[AutocompleteSearchResult]]
         ]
-    ): Unit = js.native
+    ): Unit
   }
   object SearchInstance {
     
@@ -192,12 +189,11 @@ object Search {
     }
   }
   
-  @js.native
   trait SearchQueryRewriter extends StObject {
     
-    var term: String = js.native
+    var term: String
     
-    def termReplacer(): String | js.Promise[String] = js.native
+    def termReplacer(): String | js.Promise[String]
   }
   object SearchQueryRewriter {
     

@@ -3,13 +3,14 @@ package typings.openui5.sap.ui.model
 import typings.jquery.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resource {
   
   @js.native
-  trait ResourceModel extends Model {
+  trait ResourceModel
+    extends StObject
+       with Model {
     
     /**
       * Enhances the resource model with a custom resource bundle. The resource modelcan be enhanced with
@@ -22,12 +23,12 @@ object resource {
       * @returns Promise in async case (async ResourceModel) which is resolved when the the enhancement is
       * finished
       */
-    def enhance(oData: js.Any): JQueryPromise[_] = js.native
+    def enhance(oData: js.Any): JQueryPromise[js.Any] = js.native
     
     /**
       * Returns the resource bundle of this model
       * @returns loaded resource bundle or ECMA Script 6 Promise in asynchronous case
       */
-    def getResourceBundle(): js.Any | JQueryPromise[_] = js.native
+    def getResourceBundle(): js.Any | JQueryPromise[js.Any] = js.native
   }
 }

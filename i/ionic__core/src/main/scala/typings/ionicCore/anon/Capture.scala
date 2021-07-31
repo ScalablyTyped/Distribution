@@ -2,15 +2,13 @@ package typings.ionicCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Capture extends StObject {
   
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
-  var passive: js.UndefOr[Boolean] = js.native
+  var passive: js.UndefOr[Boolean] = js.undefined
 }
 object Capture {
   

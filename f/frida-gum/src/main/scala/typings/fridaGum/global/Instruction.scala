@@ -3,14 +3,55 @@ package typings.fridaGum.global
 import typings.fridaGum.NativePointerValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Instruction")
 @js.native
 class Instruction ()
-  extends typings.fridaGum.Instruction
+  extends StObject
+     with typings.fridaGum.Instruction {
+  
+  /**
+    * Address (EIP) of this instruction.
+    */
+  /* CompleteClass */
+  var address: typings.fridaGum.NativePointer = js.native
+  
+  /**
+    * Group names that this instruction belongs to.
+    */
+  /* CompleteClass */
+  var groups: js.Array[String] = js.native
+  
+  /**
+    * Instruction mnemonic.
+    */
+  /* CompleteClass */
+  var mnemonic: String = js.native
+  
+  /**
+    * Pointer to the next instruction, so you can `parse()` it.
+    */
+  /* CompleteClass */
+  var next: typings.fridaGum.NativePointer = js.native
+  
+  /**
+    * String representation of instruction operands.
+    */
+  /* CompleteClass */
+  var opStr: String = js.native
+  
+  /**
+    * Size of this instruction.
+    */
+  /* CompleteClass */
+  var size: Double = js.native
+}
 object Instruction {
+  
+  @JSGlobal("Instruction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parses the instruction at the `target` address in memory.
@@ -23,7 +64,6 @@ object Instruction {
     * @param target Memory location containing instruction to parse.
     */
   /* static member */
-  @JSGlobal("Instruction.parse")
-  @js.native
-  def parse(target: NativePointerValue): typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction = js.native
+  @scala.inline
+  def parse(target: NativePointerValue): typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(target.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.Instruction | typings.fridaGum.X86Instruction | typings.fridaGum.ArmInstruction | typings.fridaGum.Arm64Instruction | typings.fridaGum.MipsInstruction]
 }

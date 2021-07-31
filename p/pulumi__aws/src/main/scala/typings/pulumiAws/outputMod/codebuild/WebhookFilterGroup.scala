@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebhookFilterGroup extends StObject {
   
   /**
     * A webhook filter for the group. Filter blocks are documented below.
     */
-  var filters: js.UndefOr[js.Array[WebhookFilterGroupFilter]] = js.native
+  var filters: js.UndefOr[js.Array[WebhookFilterGroupFilter]] = js.undefined
 }
 object WebhookFilterGroup {
   

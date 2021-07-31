@@ -8,29 +8,27 @@ import typings.sendgrid.sendgridStrings.POST
 import typings.sendgrid.sendgridStrings.PUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rest {
   
-  @js.native
   trait Request extends StObject {
     
-    var body: js.UndefOr[String | js.Object] = js.native
+    var body: js.UndefOr[String | js.Object] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String | Double]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | Double]] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var method: GET | PATCH | POST | PUT | DELETE = js.native
+    var method: GET | PATCH | POST | PUT | DELETE
     
-    var path: String = js.native
+    var path: String
     
-    var port: js.UndefOr[String | Double] = js.native
+    var port: js.UndefOr[String | Double] = js.undefined
     
-    var queryParams: js.UndefOr[StringDictionary[String]] = js.native
+    var queryParams: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
   }
   object Request {
     
@@ -87,14 +85,13 @@ object Rest {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: String = js.native
+    var headers: String
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Response {
     

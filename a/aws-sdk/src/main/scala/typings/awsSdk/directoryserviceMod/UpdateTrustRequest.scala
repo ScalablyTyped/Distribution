@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTrustRequest extends StObject {
   
   /**
     * Updates selective authentication for the trust.
     */
-  var SelectiveAuth: js.UndefOr[typings.awsSdk.directoryserviceMod.SelectiveAuth] = js.native
+  var SelectiveAuth: js.UndefOr[typings.awsSdk.directoryserviceMod.SelectiveAuth] = js.undefined
   
   /**
     * Identifier of the trust relationship.
     */
-  var TrustId: typings.awsSdk.directoryserviceMod.TrustId = js.native
+  var TrustId: typings.awsSdk.directoryserviceMod.TrustId
 }
 object UpdateTrustRequest {
   

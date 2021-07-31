@@ -2,15 +2,13 @@ package typings.ganacheCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Log extends StObject {
     
-    def log(msg: String): Unit = js.native
+    def log(msg: String): Unit
   }
   object Log {
     

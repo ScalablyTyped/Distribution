@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListModelPackagesInput extends StObject {
   
   /**
     * A filter that returns only model packages created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.native
+  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A filter that returns only model packages created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.native
+  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * The maximum number of model packages to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A string in the model package name. This filter returns only model packages whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[typings.awsSdk.sagemakerMod.NameContains] = js.native
+  var NameContains: js.UndefOr[typings.awsSdk.sagemakerMod.NameContains] = js.undefined
   
   /**
     * If the response to a previous ListModelPackages request was truncated, the response includes a NextToken. To retrieve the next set of model packages, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The parameter by which to sort the results. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[ModelPackageSortBy] = js.native
+  var SortBy: js.UndefOr[ModelPackageSortBy] = js.undefined
   
   /**
     * The sort order for the results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
 }
 object ListModelPackagesInput {
   

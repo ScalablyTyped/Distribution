@@ -10,7 +10,6 @@ import typings.react.mod.Component
 import typings.reactNative.mod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -44,14 +43,15 @@ object iconMod {
   
   type IconNames = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OutlineGlyphMapType */ js.Any
   
-  @js.native
-  trait IconProps extends TextProps {
+  trait IconProps
+    extends StObject
+       with TextProps {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var name: IconNames = js.native
+    var name: IconNames
     
-    var size: js.UndefOr[xxs | xs | sm | md | lg | Double] = js.native
+    var size: js.UndefOr[xxs | xs | sm | md | lg | Double] = js.undefined
   }
   object IconProps {
     

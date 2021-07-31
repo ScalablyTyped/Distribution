@@ -8,152 +8,155 @@ import typings.remoteReduxDevtools.remoteReduxDevtoolsNumbers.`1`
 import typings.remoteReduxDevtools.remoteReduxDevtoolsNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("remote-redux-devtools", JSImport.Default)
+  @JSImport("remote-redux-devtools", JSImport.Namespace)
   @js.native
-  def default(): StoreEnhancer[js.Object, js.Object] = js.native
-  @JSImport("remote-redux-devtools", JSImport.Default)
-  @js.native
-  def default(options: RemoteReduxDevToolsOptions): StoreEnhancer[js.Object, js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("remote-redux-devtools", "composeWithDevTools")
-  @js.native
+  @scala.inline
+  def default(): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  @scala.inline
+  def default(options: RemoteReduxDevToolsOptions): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  
+  @scala.inline
   def composeWithDevTools(): js.Function1[
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
-  ] = js.native
-  @JSImport("remote-redux-devtools", "composeWithDevTools")
-  @js.native
-  def composeWithDevTools(funcs: (StoreEnhancer[js.Object, js.Object])*): StoreEnhancer[js.Object, js.Object] = js.native
-  @JSImport("remote-redux-devtools", "composeWithDevTools")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")().asInstanceOf[js.Function1[
+    /* repeated */ StoreEnhancer[js.Object, js.Object], 
+    StoreEnhancer[js.Object, js.Object]
+  ]]
+  @scala.inline
+  def composeWithDevTools(funcs: (StoreEnhancer[js.Object, js.Object])*): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  @scala.inline
   def composeWithDevTools(options: RemoteReduxDevToolsOptions): js.Function1[
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* repeated */ StoreEnhancer[js.Object, js.Object], 
+    StoreEnhancer[js.Object, js.Object]
+  ]]
   
-  @js.native
   trait RemoteReduxDevToolsOptions extends StObject {
     
     /** Action creators functions to be available in the dispatcher. */
-    var actionCreators: js.UndefOr[js.Array[ActionCreator[_]] | ActionCreatorsMapObject[_]] = js.native
+    var actionCreators: js.UndefOr[js.Array[ActionCreator[js.Any]] | ActionCreatorsMapObject[js.Any]] = js.undefined
     
     /**
       * Function which takes `action` object as argument, and should return
       * `action` object back.
       */
-    var actionSanitizer: js.UndefOr[js.Function1[/* action */ js.Any, _]] = js.native
+    var actionSanitizer: js.UndefOr[js.Function1[/* action */ js.Any, js.Any]] = js.undefined
     
     /**
       * Actions types to be hidden in the monitors (while passed to the
       * reducers). If `actionsWhitelist` specified, `actionsBlacklist` is ignored.
       */
-    var actionsBlacklist: js.UndefOr[String | js.Array[String]] = js.native
+    var actionsBlacklist: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Actions types to be shown in the monitors (while passed to the reducers).
       * If `actionsWhitelist` specified, `actionsBlacklist` is ignored.
       */
-    var actionsWhitelist: js.UndefOr[String | js.Array[String]] = js.native
+    var actionsWhitelist: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Used to specify host for `remotedev-server`. If `port` is specified,
       * default value is `localhost`.
       */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * Identifies the instance when sending the history triggered by `sendOn`.
       * You can use, for example, user id here, to know who sent the data.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum allowed actions to be stored in the history tree. The oldest
       * actions are removed once `maxAge` is reached. It's critical for
       * performance.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /** The instance name to be showed on the monitor page. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Used to specify host's port for `remotedev-server`. */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies whether to allow remote monitoring. By default is
       * `process.env.NODE_ENV === 'development'`.
       */
-    var realtime: js.UndefOr[Boolean] = js.native
+    var realtime: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to use `https` protocol for `remotedev-server`. */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Action or list of actions which should trigger sending the history to
       * the monitor (without starting it).
       */
-    var sendOn: js.UndefOr[String | js.Array[String]] = js.native
+    var sendOn: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * `0` - disabled (default)
       * `1` - send all uncaught exception messages
       * `2` - send only reducers error messages.
       */
-    var sendOnError: js.UndefOr[`0` | `1` | `2`] = js.native
+    var sendOnError: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /**
       * URL of the monitor to send the history when sendOn is triggered. By
       * default is `${secure ? 'https' : 'http'}://${hostname}:${port}`.
       */
-    var sendTo: js.UndefOr[String] = js.native
+    var sendTo: js.UndefOr[String] = js.undefined
     
     /**
       * If specified as `true`, whenever there's an exception in reducers, the
       * monitors will show the error message, and next actions will not be
       * dispatched.
       */
-    var shouldCatchErrors: js.UndefOr[Boolean] = js.native
+    var shouldCatchErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `false`, will not recompute the states on hot reloading (or on
       * replacing the reducers). Available only for Redux enhancer.
       */
-    var shouldHotReload: js.UndefOr[Boolean] = js.native
+    var shouldHotReload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If specified as `false`, it will not record the changes till clicking on
       * *Start recording* button. Available only for Redux enhancer, for others
       * use `autoPause`.
       */
-    var shouldRecordChanges: js.UndefOr[Boolean] = js.native
+    var shouldRecordChanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If specified as `true`, it will not allow any non-monitor actions to be
       * dispatched till clicking on *Unlock changes* button. Available only for
       * Redux enhancer.
       */
-    var shouldStartLocked: js.UndefOr[Boolean] = js.native
+    var shouldStartLocked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Action or list of actions which should start remote monitoring (when
       * `realtime` is `false`).
       */
-    var startOn: js.UndefOr[String | js.Array[String]] = js.native
+    var startOn: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Function which takes `state` object as argument, and should return
       * `state` object back.
       */
-    var stateSanitizer: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+    var stateSanitizer: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
     
     /** Action or list of actions which should stop remote monitoring. */
-    var stopOn: js.UndefOr[String | js.Array[String]] = js.native
+    var stopOn: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object RemoteReduxDevToolsOptions {
     
@@ -167,7 +170,7 @@ object mod {
     implicit class RemoteReduxDevToolsOptionsMutableBuilder[Self <: RemoteReduxDevToolsOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActionCreators(value: js.Array[ActionCreator[_]] | ActionCreatorsMapObject[_]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+      def setActionCreators(value: js.Array[ActionCreator[js.Any]] | ActionCreatorsMapObject[js.Any]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
@@ -176,7 +179,7 @@ object mod {
       def setActionCreatorsVarargs(value: ActionCreator[js.Any]*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
       
       @scala.inline
-      def setActionSanitizer(value: /* action */ js.Any => _): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
+      def setActionSanitizer(value: /* action */ js.Any => js.Any): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setActionSanitizerUndefined: Self = StObject.set(x, "actionSanitizer", js.undefined)
@@ -296,7 +299,7 @@ object mod {
       def setStartOnVarargs(value: String*): Self = StObject.set(x, "startOn", js.Array(value :_*))
       
       @scala.inline
-      def setStateSanitizer(value: /* state */ js.Any => _): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction1(value))
+      def setStateSanitizer(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStateSanitizerUndefined: Self = StObject.set(x, "stateSanitizer", js.undefined)

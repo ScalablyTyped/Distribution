@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCustomAvailabilityZoneMessage extends StObject {
   
   /**
     * The custom AZ identifier.
     */
-  var CustomAvailabilityZoneId: String = js.native
+  var CustomAvailabilityZoneId: String
 }
 object DeleteCustomAvailabilityZoneMessage {
   

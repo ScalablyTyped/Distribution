@@ -3,21 +3,19 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Memberships
 /* Inlined parent std.Omit<pubnub.pubnub.v2ObjectData<MembershipCustom>, 'id'> */
-@js.native
 trait UUIDMembershipObject[MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] extends StObject {
   
-  var custom: js.UndefOr[MembershipCustom | Null] = js.native
+  var custom: js.UndefOr[MembershipCustom | Null] = js.undefined
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var updated: String = js.native
+  var updated: String
   
-  var uuid: UUIDMetadataObject[UUIDCustom] | Id = js.native
+  var uuid: UUIDMetadataObject[UUIDCustom] | Id
 }
 object UUIDMembershipObject {
   
@@ -28,7 +26,7 @@ object UUIDMembershipObject {
   }
   
   @scala.inline
-  implicit class UUIDMembershipObjectMutableBuilder[Self <: UUIDMembershipObject[_, _], MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] (val x: Self with (UUIDMembershipObject[MembershipCustom, UUIDCustom])) extends AnyVal {
+  implicit class UUIDMembershipObjectMutableBuilder[Self <: UUIDMembershipObject[?, ?], MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] (val x: Self & (UUIDMembershipObject[MembershipCustom, UUIDCustom])) extends AnyVal {
     
     @scala.inline
     def setCustom(value: MembershipCustom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])

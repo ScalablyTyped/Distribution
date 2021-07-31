@@ -3,19 +3,17 @@ package typings.serverless.awsProviderMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sqs extends StObject {
   
-  var arn: String | StringDictionary[js.Any] = js.native
+  var arn: String | StringDictionary[js.Any]
   
-  var batchSize: js.UndefOr[Double | String] = js.native
+  var batchSize: js.UndefOr[Double | String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var maximumRetryAttempts: js.UndefOr[Double | String] = js.native
+  var maximumRetryAttempts: js.UndefOr[Double | String] = js.undefined
 }
 object Sqs {
   

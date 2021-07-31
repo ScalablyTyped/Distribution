@@ -5,7 +5,6 @@ import typings.materialUiCore.createBreakpointsMod.Breakpoint
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hiddenJsMod extends Shortcut {
@@ -14,32 +13,31 @@ object hiddenJsMod extends Shortcut {
   @js.native
   val default: ComponentType[HiddenJsProps] = js.native
   
-  @js.native
   trait HiddenJsProps extends StObject {
     
-    var initialWidth: js.UndefOr[Breakpoint] = js.native
+    var initialWidth: js.UndefOr[Breakpoint] = js.undefined
     
-    var lgDown: js.UndefOr[Boolean] = js.native
+    var lgDown: js.UndefOr[Boolean] = js.undefined
     
-    var lgUp: js.UndefOr[Boolean] = js.native
+    var lgUp: js.UndefOr[Boolean] = js.undefined
     
-    var mdDown: js.UndefOr[Boolean] = js.native
+    var mdDown: js.UndefOr[Boolean] = js.undefined
     
-    var mdUp: js.UndefOr[Boolean] = js.native
+    var mdUp: js.UndefOr[Boolean] = js.undefined
     
-    var only: js.UndefOr[Breakpoint | js.Array[Breakpoint]] = js.native
+    var only: js.UndefOr[Breakpoint | js.Array[Breakpoint]] = js.undefined
     
-    var smDown: js.UndefOr[Boolean] = js.native
+    var smDown: js.UndefOr[Boolean] = js.undefined
     
-    var smUp: js.UndefOr[Boolean] = js.native
+    var smUp: js.UndefOr[Boolean] = js.undefined
     
-    var xlDown: js.UndefOr[Boolean] = js.native
+    var xlDown: js.UndefOr[Boolean] = js.undefined
     
-    var xlUp: js.UndefOr[Boolean] = js.native
+    var xlUp: js.UndefOr[Boolean] = js.undefined
     
-    var xsDown: js.UndefOr[Boolean] = js.native
+    var xsDown: js.UndefOr[Boolean] = js.undefined
     
-    var xsUp: js.UndefOr[Boolean] = js.native
+    var xsUp: js.UndefOr[Boolean] = js.undefined
   }
   object HiddenJsProps {
     

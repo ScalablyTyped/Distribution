@@ -3,26 +3,24 @@ package typings.phantom.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined phantom.phantom.IRequestData & {  errorCode :number,   errorString :string} */
-@js.native
 trait IRequestDataerrorCodenumb extends StObject {
   
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var errorString: String = js.native
+  var errorString: String
   
-  var headers: js.Array[Name] = js.native
+  var headers: js.Array[Name]
   
-  var id: Double = js.native
+  var id: Double
   
-  var method: String = js.native
+  var method: String
   
-  var time: Date = js.native
+  var time: Date
   
-  var url: String = js.native
+  var url: String
 }
 object IRequestDataerrorCodenumb {
   

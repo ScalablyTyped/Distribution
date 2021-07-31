@@ -4,11 +4,11 @@ import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScheduledTileNotification extends IScheduledTileNotification
+trait ScheduledTileNotification
+  extends StObject
+     with IScheduledTileNotification
 object ScheduledTileNotification {
   
   @scala.inline

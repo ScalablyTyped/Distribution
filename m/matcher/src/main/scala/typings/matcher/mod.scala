@@ -2,7 +2,6 @@ package typings.matcher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,12 +21,14 @@ object mod {
   	//=> ['bar']
   	```
   	*/
+  @scala.inline
+  def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   @JSImport("matcher", JSImport.Namespace)
   @js.native
-  def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
-  @JSImport("matcher", JSImport.Namespace)
-  @js.native
-  def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
@@ -61,32 +62,23 @@ object mod {
   	//=> false
   	```
   	*/
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: String, pattern: String): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: String, pattern: String, options: Options): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: String, pattern: js.Array[String]): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: String, pattern: js.Array[String], options: Options): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: js.Array[String], pattern: String): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: js.Array[String], pattern: String, options: Options): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: js.Array[String], pattern: js.Array[String]): Boolean = js.native
-  @JSImport("matcher", "isMatch")
-  @js.native
-  def isMatch(input: js.Array[String], pattern: js.Array[String], options: Options): Boolean = js.native
+  @scala.inline
+  def isMatch(input: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: String, pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: String, pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: String, pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: js.Array[String], pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: js.Array[String], pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: js.Array[String], pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMatch(input: js.Array[String], pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -94,7 +86,7 @@ object mod {
     		Ensure you use this correctly. For example, files and directories should be matched case-insensitively, while most often, object keys should be matched case-sensitively.
     		@default false
     		*/
-    val caseSensitive: js.UndefOr[Boolean] = js.native
+    val caseSensitive: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosDeviceFeaturesConfiguration extends DeviceConfiguration {
+trait IosDeviceFeaturesConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Asset tag information for the device, displayed on the login window and lock screen.
-  var assetTagTemplate: js.UndefOr[NullableOption[String]] = js.native
+  var assetTagTemplate: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.
-  var homeScreenDockIcons: js.UndefOr[NullableOption[js.Array[IosHomeScreenItem]]] = js.native
+  var homeScreenDockIcons: js.UndefOr[NullableOption[js.Array[IosHomeScreenItem]]] = js.undefined
   
   // A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.
-  var homeScreenPages: js.UndefOr[NullableOption[js.Array[IosHomeScreenPage]]] = js.native
+  var homeScreenPages: js.UndefOr[NullableOption[js.Array[IosHomeScreenPage]]] = js.undefined
   
   // A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.
-  var lockScreenFootnote: js.UndefOr[NullableOption[String]] = js.native
+  var lockScreenFootnote: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This
     * collection can contain a maximum of 500 elements.
     */
-  var notificationSettings: js.UndefOr[NullableOption[js.Array[IosNotificationSettings]]] = js.native
+  var notificationSettings: js.UndefOr[NullableOption[js.Array[IosNotificationSettings]]] = js.undefined
 }
 object IosDeviceFeaturesConfiguration {
   

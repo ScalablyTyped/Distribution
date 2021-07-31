@@ -3,7 +3,6 @@ package typings.cytoscape.mod.Css
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,16 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This can be used to add spacing around the label of width: label; height: label; nodes,
   * or it can be used to add spacing between a compound node parent and its children.
   */
-@js.native
 trait PaddingNode extends StObject {
   
-  var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `padding-left`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-left`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `padding-right`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-right`: js.UndefOr[PropertyValueNode[String]] = js.undefined
   
-  var `padding-top`: js.UndefOr[PropertyValueNode[String]] = js.native
+  var `padding-top`: js.UndefOr[PropertyValueNode[String]] = js.undefined
 }
 object PaddingNode {
   

@@ -2,20 +2,18 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region "Button Settings"
-@js.native
 trait ButtonsSettings extends StObject {
   
-  var buttons: js.Array[String | FunctionButtom | ButtonSettings] = js.native
+  var buttons: js.Array[String | FunctionButtom | ButtonSettings]
   
-  var dom: js.UndefOr[ButtonDomSettings] = js.native
+  var dom: js.UndefOr[ButtonDomSettings] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
 }
 object ButtonsSettings {
   

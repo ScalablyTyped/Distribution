@@ -4,17 +4,15 @@ import typings.maximMazurokGapiClientDrive.anon.Inherited
 import typings.maximMazurokGapiClientDrive.anon.InheritedFrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
   /** Whether the permission allows the file to be discovered through search. This is only applicable for permissions of type domain or anyone. */
-  var allowFileDiscovery: js.UndefOr[Boolean] = js.native
+  var allowFileDiscovery: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the account associated with this permission has been deleted. This field only pertains to user and group permissions. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The "pretty" name of the value of the permission. The following is a list of examples for each type of permission:
@@ -23,13 +21,13 @@ trait Permission extends StObject {
     * - domain - String domain name, such as "thecompany.com."
     * - anyone - No displayName is present.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The domain to which this permission refers. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** The email address of the user or group to which this permission refers. */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this permission will expire (RFC 3339 date-time). Expiration times have the following restrictions:
@@ -37,19 +35,19 @@ trait Permission extends StObject {
     * - The time must be in the future
     * - The time cannot be more than a year in the future
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /** The ID of this permission. This is a unique identifier for the grantee, and is published in User resources as permissionId. IDs should be treated as opaque values. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "drive#permission". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Details of whether the permissions on this shared drive item are inherited or directly on this item. This is an output-only field which is present only for shared drive items. */
-  var permissionDetails: js.UndefOr[js.Array[Inherited]] = js.native
+  var permissionDetails: js.UndefOr[js.Array[Inherited]] = js.undefined
   
   /** A link to the user's profile photo, if available. */
-  var photoLink: js.UndefOr[String] = js.native
+  var photoLink: js.UndefOr[String] = js.undefined
   
   /**
     * The role granted by this permission. While new values may be supported in the future, the following are currently allowed:
@@ -60,10 +58,10 @@ trait Permission extends StObject {
     * - commenter
     * - reader
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /** Deprecated - use permissionDetails instead. */
-  var teamDrivePermissionDetails: js.UndefOr[js.Array[InheritedFrom]] = js.native
+  var teamDrivePermissionDetails: js.UndefOr[js.Array[InheritedFrom]] = js.undefined
   
   /**
     * The type of the grantee. Valid values are:
@@ -73,10 +71,10 @@ trait Permission extends StObject {
     * - anyone  When creating a permission, if type is user or group, you must provide an emailAddress for the user or group. When type is domain, you must provide a domain. There isn't
     * extra information required for a anyone type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Indicates the view for this permission. Only populated for permissions that belong to a view. published is the only supported value. */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object Permission {
   

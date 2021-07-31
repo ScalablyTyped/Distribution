@@ -16,14 +16,13 @@ import typings.winrtUwp.winrtUwpStrings.timeupdaterequested
 import typings.winrtUwp.winrtUwpStrings.volumechangerequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Play To target. */
 @js.native
 trait PlayToReceiver extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_currenttimechangerequested(
     `type`: currenttimechangerequested,
@@ -35,20 +34,20 @@ trait PlayToReceiver extends StObject {
     listener: TypedEventHandler[PlayToReceiver, MuteChangeRequestedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pauserequested(`type`: pauserequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def addEventListener_pauserequested(`type`: pauserequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_playbackratechangerequested(`type`: playbackratechangerequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def addEventListener_playbackratechangerequested(`type`: playbackratechangerequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_playrequested(`type`: playrequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def addEventListener_playrequested(`type`: playrequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sourcechangerequested(
     `type`: sourcechangerequested,
     listener: TypedEventHandler[PlayToReceiver, SourceChangeRequestedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stoprequested(`type`: stoprequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def addEventListener_stoprequested(`type`: stoprequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_timeupdaterequested(`type`: timeupdaterequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def addEventListener_timeupdaterequested(`type`: timeupdaterequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_volumechangerequested(
     `type`: volumechangerequested,
@@ -108,55 +107,55 @@ trait PlayToReceiver extends StObject {
   def notifyVolumeChange(volume: Double, mute: Boolean): Unit = js.native
   
   /** Occurs when the time location of the playback has changed. */
-  def oncurrenttimechangerequested(ev: CurrentTimeChangeRequestedEventArgs with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def oncurrenttimechangerequested(ev: CurrentTimeChangeRequestedEventArgs & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when the time location of the playback has changed. */
   @JSName("oncurrenttimechangerequested")
   var oncurrenttimechangerequested_Original: TypedEventHandler[PlayToReceiver, CurrentTimeChangeRequestedEventArgs] = js.native
   
   /** Occurs when the audio has been muted or unmuted. */
-  def onmutechangerequested(ev: MuteChangeRequestedEventArgs with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onmutechangerequested(ev: MuteChangeRequestedEventArgs & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when the audio has been muted or unmuted. */
   @JSName("onmutechangerequested")
   var onmutechangerequested_Original: TypedEventHandler[PlayToReceiver, MuteChangeRequestedEventArgs] = js.native
   
   /** Occurs when audio or video playback has been paused. */
-  def onpauserequested(ev: js.Any with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onpauserequested(ev: js.Any & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when audio or video playback has been paused. */
   @JSName("onpauserequested")
-  var onpauserequested_Original: TypedEventHandler[PlayToReceiver, _] = js.native
+  var onpauserequested_Original: TypedEventHandler[PlayToReceiver, js.Any] = js.native
   
   /** Occurs when the rate of audio or video playback has changed. */
-  def onplaybackratechangerequested(ev: js.Any with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onplaybackratechangerequested(ev: js.Any & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when the rate of audio or video playback has changed. */
   @JSName("onplaybackratechangerequested")
-  var onplaybackratechangerequested_Original: TypedEventHandler[PlayToReceiver, _] = js.native
+  var onplaybackratechangerequested_Original: TypedEventHandler[PlayToReceiver, js.Any] = js.native
   
   /** Occurs when audio or video playback starts. */
-  def onplayrequested(ev: js.Any with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onplayrequested(ev: js.Any & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when audio or video playback starts. */
   @JSName("onplayrequested")
-  var onplayrequested_Original: TypedEventHandler[PlayToReceiver, _] = js.native
+  var onplayrequested_Original: TypedEventHandler[PlayToReceiver, js.Any] = js.native
   
   /** Occurs when the source media for the Play To receiver have changed. */
-  def onsourcechangerequested(ev: SourceChangeRequestedEventArgs with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onsourcechangerequested(ev: SourceChangeRequestedEventArgs & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when the source media for the Play To receiver have changed. */
   @JSName("onsourcechangerequested")
   var onsourcechangerequested_Original: TypedEventHandler[PlayToReceiver, SourceChangeRequestedEventArgs] = js.native
   
   /** Occurs when a request has been made for the Play To receiver to stop playing the streamed media. */
-  def onstoprequested(ev: js.Any with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onstoprequested(ev: js.Any & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when a request has been made for the Play To receiver to stop playing the streamed media. */
   @JSName("onstoprequested")
-  var onstoprequested_Original: TypedEventHandler[PlayToReceiver, _] = js.native
+  var onstoprequested_Original: TypedEventHandler[PlayToReceiver, js.Any] = js.native
   
   /** Occurs when the current playback position has changed. */
-  def ontimeupdaterequested(ev: js.Any with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def ontimeupdaterequested(ev: js.Any & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when the current playback position has changed. */
   @JSName("ontimeupdaterequested")
-  var ontimeupdaterequested_Original: TypedEventHandler[PlayToReceiver, _] = js.native
+  var ontimeupdaterequested_Original: TypedEventHandler[PlayToReceiver, js.Any] = js.native
   
   /** Occurs when the volume for the source audio or video has changed. */
-  def onvolumechangerequested(ev: VolumeChangeRequestedEventArgs with WinRTEvent[PlayToReceiver]): Unit = js.native
+  def onvolumechangerequested(ev: VolumeChangeRequestedEventArgs & WinRTEvent[PlayToReceiver]): Unit = js.native
   /** Occurs when the volume for the source audio or video has changed. */
   @JSName("onvolumechangerequested")
   var onvolumechangerequested_Original: TypedEventHandler[PlayToReceiver, VolumeChangeRequestedEventArgs] = js.native
@@ -164,7 +163,7 @@ trait PlayToReceiver extends StObject {
   /** Gets a set of custom properties for the Play To receiver. */
   var properties: IPropertySet = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_currenttimechangerequested(
     `type`: currenttimechangerequested,
@@ -176,20 +175,20 @@ trait PlayToReceiver extends StObject {
     listener: TypedEventHandler[PlayToReceiver, MuteChangeRequestedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pauserequested(`type`: pauserequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def removeEventListener_pauserequested(`type`: pauserequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_playbackratechangerequested(`type`: playbackratechangerequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def removeEventListener_playbackratechangerequested(`type`: playbackratechangerequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_playrequested(`type`: playrequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def removeEventListener_playrequested(`type`: playrequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sourcechangerequested(
     `type`: sourcechangerequested,
     listener: TypedEventHandler[PlayToReceiver, SourceChangeRequestedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stoprequested(`type`: stoprequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def removeEventListener_stoprequested(`type`: stoprequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_timeupdaterequested(`type`: timeupdaterequested, listener: TypedEventHandler[PlayToReceiver, _]): Unit = js.native
+  def removeEventListener_timeupdaterequested(`type`: timeupdaterequested, listener: TypedEventHandler[PlayToReceiver, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_volumechangerequested(
     `type`: volumechangerequested,

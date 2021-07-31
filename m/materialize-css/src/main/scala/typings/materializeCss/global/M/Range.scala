@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -13,37 +12,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Range () extends StObject
 object Range {
   
+  @JSGlobal("M.Range")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get Instance
     */
   /* static member */
-  @JSGlobal("M.Range.getInstance")
-  @js.native
-  def getInstance(elem: Element): typings.materializeCss.M.Range = js.native
+  @scala.inline
+  def getInstance(elem: Element): typings.materializeCss.M.Range = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Range]
   
   /**
     * Init Ranges
     */
   /* static member */
-  @JSGlobal("M.Range.init")
-  @js.native
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
-  ): js.Array[typings.materializeCss.M.Range] = js.native
-  @JSGlobal("M.Range.init")
-  @js.native
+  ): js.Array[typings.materializeCss.M.Range] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Range]]
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
-    options: Partial[js.UndefOr[scala.Nothing]]
-  ): js.Array[typings.materializeCss.M.Range] = js.native
+    options: Partial[Unit]
+  ): js.Array[typings.materializeCss.M.Range] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Range]]
   /**
     * Init Range
     */
   /* static member */
-  @JSGlobal("M.Range.init")
-  @js.native
-  def init(els: Element): typings.materializeCss.M.Range = js.native
-  @JSGlobal("M.Range.init")
-  @js.native
-  def init(els: Element, options: Partial[js.UndefOr[scala.Nothing]]): typings.materializeCss.M.Range = js.native
+  @scala.inline
+  def init(els: Element): typings.materializeCss.M.Range = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Range]
+  @scala.inline
+  def init(els: Element, options: Partial[Unit]): typings.materializeCss.M.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Range]
 }

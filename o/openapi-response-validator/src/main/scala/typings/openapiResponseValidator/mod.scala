@@ -10,21 +10,32 @@ import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPIV3.ComponentsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-response-validator", JSImport.Default)
   @js.native
-  class default protected () extends OpenAPIResponseValidator {
+  class default protected ()
+    extends StObject
+       with OpenAPIResponseValidator {
     def this(args: OpenAPIResponseValidatorArgs) = this()
+    
+    /* CompleteClass */
+    var errorMapper: js.Any = js.native
+    
+    /* CompleteClass */
+    override def validateResponse(statusCode: String, response: js.Any): Unit | OpenAPIResponseValidatorValidationError = js.native
+    /* CompleteClass */
+    override def validateResponse(statusCode: js.Any, response: js.Any): Errors = js.native
+    
+    /* CompleteClass */
+    var validators: js.Any = js.native
   }
   
-  @js.native
   trait IOpenAPIResponseValidator extends StObject {
     
-    def validateResponse(statusCode: String, response: js.Any): Unit | OpenAPIResponseValidatorValidationError = js.native
+    def validateResponse(statusCode: String, response: js.Any): Unit | OpenAPIResponseValidatorValidationError
   }
   object IOpenAPIResponseValidator {
     
@@ -42,14 +53,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait OpenAPIResponseValidator extends IOpenAPIResponseValidator {
+  trait OpenAPIResponseValidator
+    extends StObject
+       with IOpenAPIResponseValidator {
     
-    var errorMapper: js.Any = js.native
+    var errorMapper: js.Any
     
-    def validateResponse(statusCode: js.Any, response: js.Any): Errors = js.native
+    def validateResponse(statusCode: js.Any, response: js.Any): Errors
     
-    var validators: js.Any = js.native
+    var validators: js.Any
   }
   object OpenAPIResponseValidator {
     
@@ -73,28 +85,27 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIResponseValidatorArgs extends StObject {
     
-    var components: js.UndefOr[ComponentsObject] = js.native
+    var components: js.UndefOr[ComponentsObject] = js.undefined
     
-    var customFormats: StringDictionary[FormatValidator | FormatDefinition] = js.native
+    var customFormats: StringDictionary[FormatValidator | FormatDefinition]
     
-    var definitions: StringDictionary[IJsonSchema] = js.native
+    var definitions: StringDictionary[IJsonSchema]
     
     var errorTransformer: js.UndefOr[
         js.Function2[
           /* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, 
           /* ajvError */ ErrorObject, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var externalSchemas: StringDictionary[IJsonSchema] = js.native
+    var externalSchemas: StringDictionary[IJsonSchema]
     
-    var loggingKey: String = js.native
+    var loggingKey: String
     
-    var responses: StringDictionary[Schema] = js.native
+    var responses: StringDictionary[Schema]
   }
   object OpenAPIResponseValidatorArgs {
     
@@ -127,7 +138,7 @@ object mod {
       
       @scala.inline
       def setErrorTransformer(
-        value: (/* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, /* ajvError */ ErrorObject) => _
+        value: (/* openAPIResponseValidatorValidationError */ OpenAPIResponseValidatorError, /* ajvError */ ErrorObject) => js.Any
       ): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -144,14 +155,13 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIResponseValidatorError extends StObject {
     
-    var errorCode: String = js.native
+    var errorCode: String
     
-    var message: String = js.native
+    var message: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object OpenAPIResponseValidatorError {
     
@@ -178,12 +188,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIResponseValidatorValidationError extends StObject {
     
-    var errors: js.UndefOr[js.Array[_]] = js.native
+    var errors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var message: String = js.native
+    var message: String
   }
   object OpenAPIResponseValidatorValidationError {
     
@@ -197,7 +206,7 @@ object mod {
     implicit class OpenAPIResponseValidatorValidationErrorMutableBuilder[Self <: OpenAPIResponseValidatorValidationError] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setErrors(value: js.Array[_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)

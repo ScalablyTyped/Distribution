@@ -9,118 +9,116 @@ import typings.reactBootstrapTableNext.anon.SortCaret
 import typings.reactBootstrapTableNext.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapTableProps[T /* <: js.Object */, K] extends StObject {
   
-  var bodyClasses: js.UndefOr[String] = js.native
+  var bodyClasses: js.UndefOr[String] = js.undefined
   
-  var bootstrap4: js.UndefOr[Boolean] = js.native
+  var bootstrap4: js.UndefOr[Boolean] = js.undefined
   
-  var bordered: js.UndefOr[Boolean] = js.native
+  var bordered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Same as HTML caption tag, you can set it as String or a React JSX.
     */
-  var caption: js.UndefOr[Element | String] = js.native
+  var caption: js.UndefOr[Element | String] = js.undefined
   
-  var cellEdit: js.UndefOr[js.Any] = js.native
+  var cellEdit: js.UndefOr[js.Any] = js.undefined
   
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
-  var columns: js.Array[ColumnDescription[_, _]] = js.native
+  var columns: js.Array[ColumnDescription[js.Any, js.Any]]
   
-  var condensed: js.UndefOr[Boolean] = js.native
+  var condensed: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Provides data for your table. It accepts a single Array object.
     */
-  var data: js.Array[_] = js.native
+  var data: js.Array[js.Any]
   
-  var defaultSortDirection: js.UndefOr[SortOrder] = js.native
+  var defaultSortDirection: js.UndefOr[SortOrder] = js.undefined
   
-  var defaultSorted: js.UndefOr[js.Array[Order]] = js.native
+  var defaultSorted: js.UndefOr[js.Array[Order]] = js.undefined
   
-  var expandRow: js.UndefOr[ExpandRowProps[T, K]] = js.native
+  var expandRow: js.UndefOr[ExpandRowProps[T, K]] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.native
+  var filter: js.UndefOr[js.Any] = js.undefined
   
-  var filterPosition: js.UndefOr[FilterPosition] = js.native
+  var filterPosition: js.UndefOr[FilterPosition] = js.undefined
   
-  var filtersClasses: js.UndefOr[String] = js.native
+  var filtersClasses: js.UndefOr[String] = js.undefined
   
-  var footerClasses: js.UndefOr[String] = js.native
+  var footerClasses: js.UndefOr[String] = js.undefined
   
-  var headerClasses: js.UndefOr[String] = js.native
+  var headerClasses: js.UndefOr[String] = js.undefined
   
-  var headerWrapperClasses: js.UndefOr[String] = js.native
+  var headerWrapperClasses: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[Boolean] = js.native
+  var hover: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Tells react-bootstrap-table2 which column is unique.
     */
-  var keyField: String = js.native
+  var keyField: String
   
-  var noDataIndication: js.UndefOr[(js.Function0[Element | String]) | Element | String] = js.native
+  var noDataIndication: js.UndefOr[(js.Function0[Element | String]) | Element | String] = js.undefined
   
   /**
     * This callback function will be called only when data size change by search/filter etc.
     */
-  var onDataSizeChange: js.UndefOr[js.Function1[/* props */ DataSize, Unit]] = js.native
+  var onDataSizeChange: js.UndefOr[js.Function1[/* props */ DataSize, Unit]] = js.undefined
   
-  var onExternalFilter: js.UndefOr[js.Any] = js.native
+  var onExternalFilter: js.UndefOr[js.Any] = js.undefined
   
-  var onFilter: js.UndefOr[js.Any] = js.native
+  var onFilter: js.UndefOr[js.Any] = js.undefined
   
-  var onSort: js.UndefOr[js.Any] = js.native
+  var onSort: js.UndefOr[js.Any] = js.undefined
   
-  var onTableChange: js.UndefOr[TableChangeHandler[T]] = js.native
+  var onTableChange: js.UndefOr[TableChangeHandler[T]] = js.undefined
   
-  var overlay: js.UndefOr[js.Any] = js.native
+  var overlay: js.UndefOr[js.Any] = js.undefined
   
-  var pagination: js.UndefOr[`0`] = js.native
+  var pagination: js.UndefOr[`0`] = js.undefined
   
   var parentClassName: js.UndefOr[
     String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String])
-  ] = js.native
+  ] = js.undefined
   
-  var remote: js.UndefOr[Boolean | Partialpaginationbooleanf] = js.native
+  var remote: js.UndefOr[Boolean | Partialpaginationbooleanf] = js.undefined
   
-  var rowClasses: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String] = js.native
+  var rowClasses: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String] = js.undefined
   
-  var rowEvents: js.UndefOr[RowEventHandlerProps[_]] = js.native
+  var rowEvents: js.UndefOr[RowEventHandlerProps[js.Any]] = js.undefined
   
   var rowStyle: js.UndefOr[
     (js.Function2[/* row */ T, /* rowIndex */ Double, CSSProperties]) | CSSProperties
-  ] = js.native
+  ] = js.undefined
   
-  var search: js.UndefOr[SearchProps[T] | Boolean] = js.native
+  var search: js.UndefOr[SearchProps[T] | Boolean] = js.undefined
   
-  var selectRow: js.UndefOr[SelectRowProps[T]] = js.native
+  var selectRow: js.UndefOr[SelectRowProps[T]] = js.undefined
   
-  var sort: js.UndefOr[SortCaret] = js.native
+  var sort: js.UndefOr[SortCaret] = js.undefined
   
-  var striped: js.UndefOr[Boolean] = js.native
+  var striped: js.UndefOr[Boolean] = js.undefined
   
-  var tabIndexCell: js.UndefOr[Boolean] = js.native
+  var tabIndexCell: js.UndefOr[Boolean] = js.undefined
   
-  var wrapperClasses: js.UndefOr[String] = js.native
+  var wrapperClasses: js.UndefOr[String] = js.undefined
 }
 object BootstrapTableProps {
   
   @scala.inline
-  def apply[T /* <: js.Object */, K](columns: js.Array[ColumnDescription[_, _]], data: js.Array[_], keyField: String): BootstrapTableProps[T, K] = {
+  def apply[T /* <: js.Object */, K](columns: js.Array[ColumnDescription[js.Any, js.Any]], data: js.Array[js.Any], keyField: String): BootstrapTableProps[T, K] = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyField = keyField.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTableProps[T, K]]
   }
   
   @scala.inline
-  implicit class BootstrapTablePropsMutableBuilder[Self <: BootstrapTableProps[_, _], T /* <: js.Object */, K] (val x: Self with (BootstrapTableProps[T, K])) extends AnyVal {
+  implicit class BootstrapTablePropsMutableBuilder[Self <: BootstrapTableProps[?, ?], T /* <: js.Object */, K] (val x: Self & (BootstrapTableProps[T, K])) extends AnyVal {
     
     @scala.inline
     def setBodyClasses(value: String): Self = StObject.set(x, "bodyClasses", value.asInstanceOf[js.Any])
@@ -159,7 +157,7 @@ object BootstrapTableProps {
     def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def setColumns(value: js.Array[ColumnDescription[_, _]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
@@ -171,7 +169,7 @@ object BootstrapTableProps {
     def setCondensedUndefined: Self = StObject.set(x, "condensed", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -324,7 +322,7 @@ object BootstrapTableProps {
     def setRowClassesUndefined: Self = StObject.set(x, "rowClasses", js.undefined)
     
     @scala.inline
-    def setRowEvents(value: RowEventHandlerProps[_]): Self = StObject.set(x, "rowEvents", value.asInstanceOf[js.Any])
+    def setRowEvents(value: RowEventHandlerProps[js.Any]): Self = StObject.set(x, "rowEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowEventsUndefined: Self = StObject.set(x, "rowEvents", js.undefined)

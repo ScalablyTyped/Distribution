@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceleratorConfig extends StObject {
   
   /** The number of the accelerator cards of this type exposed to this instance. */
-  var acceleratorCount: js.UndefOr[Double] = js.native
+  var acceleratorCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Full URL, partial URI, or short name of the accelerator type resource to expose to this instance. See Compute Engine AcceleratorTypes
@@ -19,7 +17,7 @@ trait AcceleratorConfig extends StObject {
     * (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/auto-zone#using_auto_zone_placement) feature, you must use the short name of the accelerator type resource, for
     * example, nvidia-tesla-k80.
     */
-  var acceleratorTypeUri: js.UndefOr[String] = js.native
+  var acceleratorTypeUri: js.UndefOr[String] = js.undefined
 }
 object AcceleratorConfig {
   

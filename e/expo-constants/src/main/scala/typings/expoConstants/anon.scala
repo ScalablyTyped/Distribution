@@ -3,28 +3,27 @@ package typings.expoConstants
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dev
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var dev: js.UndefOr[Boolean] = js.native
+    var dev: js.UndefOr[Boolean] = js.undefined
     
-    var hostType: js.UndefOr[String] = js.native
+    var hostType: js.UndefOr[String] = js.undefined
     
-    var lanType: js.UndefOr[String] = js.native
+    var lanType: js.UndefOr[String] = js.undefined
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var urlRandomness: js.UndefOr[String] = js.native
+    var urlRandomness: js.UndefOr[String] = js.undefined
     
-    var urlType: js.UndefOr[String] = js.native
+    var urlType: js.UndefOr[String] = js.undefined
   }
   object Dev {
     
@@ -81,13 +80,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -114,11 +113,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Icon
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
   }
   object Icon {
     
@@ -139,11 +138,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Scheme
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
   }
   object Scheme {
     
@@ -164,11 +163,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Tool
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var tool: js.UndefOr[String] = js.native
+    var tool: js.UndefOr[String] = js.undefined
   }
   object Tool {
     

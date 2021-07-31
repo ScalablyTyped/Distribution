@@ -2,19 +2,17 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeBindOptions extends StObject {
   
-  var args: js.UndefOr[js.Any] = js.native
+  var args: js.UndefOr[js.Any] = js.undefined
   
-  var inst: js.UndefOr[js.Any] = js.native
+  var inst: js.UndefOr[js.Any] = js.undefined
   
-  var rlbk: js.UndefOr[js.Any] = js.native
+  var rlbk: js.UndefOr[js.Any] = js.undefined
   
-  var rslt: js.UndefOr[js.Any] = js.native
+  var rslt: js.UndefOr[js.Any] = js.undefined
 }
 object JSTreeBindOptions {
   

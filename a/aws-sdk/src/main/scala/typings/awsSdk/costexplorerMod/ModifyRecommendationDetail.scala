@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyRecommendationDetail extends StObject {
   
   /**
     * Identifies whether this instance type is the AWS default recommendation.
     */
-  var TargetInstances: js.UndefOr[TargetInstancesList] = js.native
+  var TargetInstances: js.UndefOr[TargetInstancesList] = js.undefined
 }
 object ModifyRecommendationDetail {
   

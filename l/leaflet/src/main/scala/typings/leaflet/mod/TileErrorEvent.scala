@@ -4,13 +4,13 @@ import typings.std.Error
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileErrorEvent extends TileEvent {
+trait TileErrorEvent
+  extends StObject
+     with TileEvent {
   
-  var error: Error = js.native
+  var error: Error
 }
 object TileErrorEvent {
   

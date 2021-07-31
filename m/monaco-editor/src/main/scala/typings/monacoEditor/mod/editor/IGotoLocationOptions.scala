@@ -2,33 +2,31 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGotoLocationOptions extends StObject {
   
-  var alternativeDeclarationCommand: js.UndefOr[String] = js.native
+  var alternativeDeclarationCommand: js.UndefOr[String] = js.undefined
   
-  var alternativeDefinitionCommand: js.UndefOr[String] = js.native
+  var alternativeDefinitionCommand: js.UndefOr[String] = js.undefined
   
-  var alternativeImplementationCommand: js.UndefOr[String] = js.native
+  var alternativeImplementationCommand: js.UndefOr[String] = js.undefined
   
-  var alternativeReferenceCommand: js.UndefOr[String] = js.native
+  var alternativeReferenceCommand: js.UndefOr[String] = js.undefined
   
-  var alternativeTypeDefinitionCommand: js.UndefOr[String] = js.native
+  var alternativeTypeDefinitionCommand: js.UndefOr[String] = js.undefined
   
-  var multiple: js.UndefOr[GoToLocationValues] = js.native
+  var multiple: js.UndefOr[GoToLocationValues] = js.undefined
   
-  var multipleDeclarations: js.UndefOr[GoToLocationValues] = js.native
+  var multipleDeclarations: js.UndefOr[GoToLocationValues] = js.undefined
   
-  var multipleDefinitions: js.UndefOr[GoToLocationValues] = js.native
+  var multipleDefinitions: js.UndefOr[GoToLocationValues] = js.undefined
   
-  var multipleImplementations: js.UndefOr[GoToLocationValues] = js.native
+  var multipleImplementations: js.UndefOr[GoToLocationValues] = js.undefined
   
-  var multipleReferences: js.UndefOr[GoToLocationValues] = js.native
+  var multipleReferences: js.UndefOr[GoToLocationValues] = js.undefined
   
-  var multipleTypeDefinitions: js.UndefOr[GoToLocationValues] = js.native
+  var multipleTypeDefinitions: js.UndefOr[GoToLocationValues] = js.undefined
 }
 object IGotoLocationOptions {
   

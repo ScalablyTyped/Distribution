@@ -2,22 +2,21 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getFileInfo {
   
-  @JSImport("prettier", "getFileInfo")
-  @js.native
-  def apply(filePath: String): js.Promise[FileInfoResult] = js.native
-  @JSImport("prettier", "getFileInfo")
-  @js.native
-  def apply(filePath: String, options: FileInfoOptions): js.Promise[FileInfoResult] = js.native
+  @scala.inline
+  def apply(filePath: String): js.Promise[FileInfoResult] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileInfoResult]]
+  @scala.inline
+  def apply(filePath: String, options: FileInfoOptions): js.Promise[FileInfoResult] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileInfoResult]]
   
-  @JSImport("prettier", "getFileInfo.sync")
+  @JSImport("prettier", "getFileInfo")
   @js.native
-  def sync(filePath: String): FileInfoResult = js.native
-  @JSImport("prettier", "getFileInfo.sync")
-  @js.native
-  def sync(filePath: String, options: FileInfoOptions): FileInfoResult = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(filePath: String): FileInfoResult = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any]).asInstanceOf[FileInfoResult]
+  @scala.inline
+  def sync(filePath: String, options: FileInfoOptions): FileInfoResult = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FileInfoResult]
 }

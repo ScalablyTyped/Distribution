@@ -3,37 +3,35 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Utmcampaign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ganalytics extends StObject {
   
-  def getContent(): String = js.native
+  def getContent(): String
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def getUrmMedium(): String = js.native
+  def getUrmMedium(): String
   
-  def getUrmTerm(): String = js.native
+  def getUrmTerm(): String
   
-  def getUtmCampaign(): String = js.native
+  def getUtmCampaign(): String
   
-  def getUtmSource(): String = js.native
+  def getUtmSource(): String
   
-  def setContent(content: String): Unit = js.native
+  def setContent(content: String): Unit
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def setUrmMedium(medium: String): Unit = js.native
+  def setUrmMedium(medium: String): Unit
   
-  def setUrmTerm(term: String): Unit = js.native
+  def setUrmTerm(term: String): Unit
   
-  def setUtmCampaign(campaign: String): Unit = js.native
+  def setUtmCampaign(campaign: String): Unit
   
-  def setUtmSource(source: String): Unit = js.native
+  def setUtmSource(source: String): Unit
   
-  def toJSON(): Utmcampaign = js.native
+  def toJSON(): Utmcampaign
 }
 object Ganalytics {
   

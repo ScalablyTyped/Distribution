@@ -23,155 +23,153 @@ import typings.algoliaClientSearch.mod.AutomaticFacetFilter
 import typings.algoliaClientSearch.mod.ConsequenceQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @algolia/client-search.@algolia/client-search.ConsequenceParams & std.Pick<@algolia/client-search.@algolia/client-search.SearchOptions, std.Exclude<keyof @algolia/client-search.@algolia/client-search.SearchOptions, 'query'>> */
-@js.native
 trait ConsequenceParamsPickSear extends StObject {
   
-  var advancedSyntax: js.UndefOr[Boolean] = js.native
+  var advancedSyntax: js.UndefOr[Boolean] = js.undefined
   
-  var advancedSyntaxFeatures: js.UndefOr[js.Array[exactPhrase | excludeWords]] = js.native
+  var advancedSyntaxFeatures: js.UndefOr[js.Array[exactPhrase | excludeWords]] = js.undefined
   
-  var allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.native
+  var allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.undefined
   
-  var alternativesAsExact: js.UndefOr[js.Array[ignorePlurals | singleWordSynonym | multiWordsSynonym]] = js.native
+  var alternativesAsExact: js.UndefOr[js.Array[ignorePlurals | singleWordSynonym | multiWordsSynonym]] = js.undefined
   
-  var analytics: js.UndefOr[Boolean] = js.native
+  var analytics: js.UndefOr[Boolean] = js.undefined
   
-  var analyticsTags: js.UndefOr[js.Array[String]] = js.native
+  var analyticsTags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var aroundLatLng: js.UndefOr[String] = js.native
+  var aroundLatLng: js.UndefOr[String] = js.undefined
   
-  var aroundLatLngViaIP: js.UndefOr[Boolean] = js.native
+  var aroundLatLngViaIP: js.UndefOr[Boolean] = js.undefined
   
-  var aroundPrecision: js.UndefOr[Double | js.Array[From]] = js.native
+  var aroundPrecision: js.UndefOr[Double | js.Array[From]] = js.undefined
   
-  var aroundRadius: js.UndefOr[Double | all] = js.native
+  var aroundRadius: js.UndefOr[Double | all] = js.undefined
   
-  var attributesToHighlight: js.UndefOr[js.Array[String]] = js.native
+  var attributesToHighlight: js.UndefOr[js.Array[String]] = js.undefined
   
-  var attributesToRetrieve: js.UndefOr[js.Array[String]] = js.native
+  var attributesToRetrieve: js.UndefOr[js.Array[String]] = js.undefined
   
-  var attributesToSnippet: js.UndefOr[js.Array[String]] = js.native
+  var attributesToSnippet: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Names of facets to which automatic filtering must be applied; they must match the facet name of a facet value placeholder in the query pattern.
     */
-  val automaticFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter | String]] = js.native
+  val automaticFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter | String]] = js.undefined
   
   /**
     * Same syntax as automaticFacetFilters, but the engine treats the filters as optional.
     * Behaves like optionalFilters.
     */
-  val automaticOptionalFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter]] = js.native
+  val automaticOptionalFacetFilters: js.UndefOr[js.Array[AutomaticFacetFilter]] = js.undefined
   
-  var clickAnalytics: js.UndefOr[Boolean] = js.native
+  var clickAnalytics: js.UndefOr[Boolean] = js.undefined
   
-  var disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.native
+  var disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var disableTypoToleranceOnAttributes: js.UndefOr[js.Array[String]] = js.native
+  var disableTypoToleranceOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var distinct: js.UndefOr[Boolean | Double] = js.native
+  var distinct: js.UndefOr[Boolean | Double] = js.undefined
   
-  var enableABTest: js.UndefOr[Boolean] = js.native
+  var enableABTest: js.UndefOr[Boolean] = js.undefined
   
-  var enablePersonalization: js.UndefOr[Boolean] = js.native
+  var enablePersonalization: js.UndefOr[Boolean] = js.undefined
   
-  var enableRules: js.UndefOr[Boolean] = js.native
+  var enableRules: js.UndefOr[Boolean] = js.undefined
   
-  var exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.native
+  var exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.undefined
   
-  var facetFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  var facetFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
-  var facetingAfterDistinct: js.UndefOr[Boolean] = js.native
+  var facetingAfterDistinct: js.UndefOr[Boolean] = js.undefined
   
-  var facets: js.UndefOr[js.Array[String]] = js.native
+  var facets: js.UndefOr[js.Array[String]] = js.undefined
   
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
-  var getRankingInfo: js.UndefOr[Boolean] = js.native
+  var getRankingInfo: js.UndefOr[Boolean] = js.undefined
   
-  var highlightPostTag: js.UndefOr[String] = js.native
+  var highlightPostTag: js.UndefOr[String] = js.undefined
   
-  var highlightPreTag: js.UndefOr[String] = js.native
+  var highlightPreTag: js.UndefOr[String] = js.undefined
   
-  var hitsPerPage: js.UndefOr[Double] = js.native
+  var hitsPerPage: js.UndefOr[Double] = js.undefined
   
-  var ignorePlurals: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var ignorePlurals: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
-  var insideBoundingBox: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var insideBoundingBox: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var insidePolygon: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var insidePolygon: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var maxFacetHits: js.UndefOr[Double] = js.native
+  var maxFacetHits: js.UndefOr[Double] = js.undefined
   
-  var maxValuesPerFacet: js.UndefOr[Double] = js.native
+  var maxValuesPerFacet: js.UndefOr[Double] = js.undefined
   
-  var minProximity: js.UndefOr[Double] = js.native
+  var minProximity: js.UndefOr[Double] = js.undefined
   
-  var minWordSizefor1Typo: js.UndefOr[Double] = js.native
+  var minWordSizefor1Typo: js.UndefOr[Double] = js.undefined
   
-  var minWordSizefor2Typos: js.UndefOr[Double] = js.native
+  var minWordSizefor2Typos: js.UndefOr[Double] = js.undefined
   
-  var minimumAroundRadius: js.UndefOr[Double] = js.native
+  var minimumAroundRadius: js.UndefOr[Double] = js.undefined
   
-  var naturalLanguages: js.UndefOr[js.Array[String]] = js.native
+  var naturalLanguages: js.UndefOr[js.Array[String]] = js.undefined
   
-  var numericFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  var numericFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var optionalFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  var optionalFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
-  var optionalWords: js.UndefOr[String | js.Array[String]] = js.native
+  var optionalWords: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var percentileComputation: js.UndefOr[Boolean] = js.native
+  var percentileComputation: js.UndefOr[Boolean] = js.undefined
   
-  var personalizationImpact: js.UndefOr[Double] = js.native
+  var personalizationImpact: js.UndefOr[Double] = js.undefined
   
   /**
     * When providing a string, it replaces the entire query string.
     * When providing an object, it describes incremental edits to be made to the query string (but you can’t do both).
     */
-  val query: js.UndefOr[ConsequenceQuery | String] = js.native
+  val query: js.UndefOr[ConsequenceQuery | String] = js.undefined
   
-  var queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.native
+  var queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.undefined
   
-  var removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
-  var removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.native
+  var removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.undefined
   
-  var replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.native
+  var replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.undefined
   
-  var responseFields: js.UndefOr[js.Array[String]] = js.native
+  var responseFields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.native
+  var restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.undefined
   
-  var restrictSearchableAttributes: js.UndefOr[js.Array[String]] = js.native
+  var restrictSearchableAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ruleContexts: js.UndefOr[js.Array[String]] = js.native
+  var ruleContexts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var similarQuery: js.UndefOr[String] = js.native
+  var similarQuery: js.UndefOr[String] = js.undefined
   
-  var snippetEllipsisText: js.UndefOr[String] = js.native
+  var snippetEllipsisText: js.UndefOr[String] = js.undefined
   
-  var sortFacetValuesBy: js.UndefOr[count | alpha] = js.native
+  var sortFacetValuesBy: js.UndefOr[count | alpha] = js.undefined
   
-  var sumOrFiltersScores: js.UndefOr[Boolean] = js.native
+  var sumOrFiltersScores: js.UndefOr[Boolean] = js.undefined
   
-  var synonyms: js.UndefOr[Boolean] = js.native
+  var synonyms: js.UndefOr[Boolean] = js.undefined
   
-  var tagFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.native
+  var tagFilters: js.UndefOr[String | (js.Array[js.Array[String] | String])] = js.undefined
   
-  var typoTolerance: js.UndefOr[Boolean | min | strict] = js.native
+  var typoTolerance: js.UndefOr[Boolean | min | strict] = js.undefined
   
-  var userToken: js.UndefOr[String] = js.native
+  var userToken: js.UndefOr[String] = js.undefined
 }
 object ConsequenceParamsPickSear {
   

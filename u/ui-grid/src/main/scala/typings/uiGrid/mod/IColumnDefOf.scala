@@ -2,12 +2,11 @@ package typings.uiGrid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumnDefOf[TEntity]
-  extends typings.uiGrid.mod.cellNav.IColumnDef
+  extends StObject
+     with typings.uiGrid.mod.cellNav.IColumnDef
      with typings.uiGrid.mod.edit.IColumnDef[TEntity]
      with typings.uiGrid.mod.exporter.IColumnDef
      with typings.uiGrid.mod.grouping.IColumnDef
@@ -20,7 +19,7 @@ trait IColumnDefOf[TEntity]
     * defaults to false
     * if set to true hides the label text in the aggregation footer, so only the value is displayed.
     */
-  var aggregationHideLabel: js.UndefOr[Boolean] = js.native
+  var aggregationHideLabel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The aggregation that you'd like to show in the columnFooter for this column.
@@ -33,17 +32,17 @@ trait IColumnDefOf[TEntity]
     * in this case your function needs to accept the full set of visible rows,
     * and return a value that should be shown
     */
-  var aggregationType: js.UndefOr[Double | js.Function] = js.native
+  var aggregationType: js.UndefOr[Double | js.Function] = js.undefined
   
   /**
     * cellClass can be a string specifying the class to append to a cell
     * or it can be a function(row,rowRenderIndex, col, colRenderIndex)
     * that returns a class name
     */
-  var cellClass: js.UndefOr[String | ICellClassGetter[TEntity]] = js.native
+  var cellClass: js.UndefOr[String | ICellClassGetter[TEntity]] = js.undefined
   
   /** cellFilter is a filter to apply to the content of each cell */
-  var cellFilter: js.UndefOr[String] = js.native
+  var cellFilter: js.UndefOr[String] = js.undefined
   
   /**
     * a custom template for each cell in this column.
@@ -51,7 +50,7 @@ trait IColumnDefOf[TEntity]
     * If you are using the cellNav feature,
     * this template must contain a div that can receive focus.
     */
-  var cellTemplate: js.UndefOr[String] = js.native
+  var cellTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to show a tooltip when a user hovers over the cell.
@@ -63,16 +62,16 @@ trait IColumnDefOf[TEntity]
     * Defaults to false
     * @default false
     */
-  var cellTooltip: js.UndefOr[Boolean | String | ICellTooltipGetter[TEntity]] = js.native
+  var cellTooltip: js.UndefOr[Boolean | String | ICellTooltipGetter[TEntity]] = js.undefined
   
   /** Default object of sort information */
-  var defaultSort: js.UndefOr[ISortInfo] = js.native
+  var defaultSort: js.UndefOr[ISortInfo] = js.undefined
   
   /**
     * Column name that will be shown in the header.
     * If displayName is not provided then one is generated using the name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * if column menus are enabled, controls the column menus for this specific column
@@ -82,31 +81,31 @@ trait IColumnDefOf[TEntity]
     * ). Defaults to true.
     * @default true
     */
-  var enableColumnMenu: js.UndefOr[Boolean] = js.native
+  var enableColumnMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Override for column menus everywhere - if set to false then you get no column menus.
     * Defaults to true
     * @default true
     */
-  var enableColumnMenus: js.UndefOr[Boolean] = js.native
+  var enableColumnMenus: js.UndefOr[Boolean] = js.undefined
   
   /** turn off filtering for an individual column, where you've turned on filtering for the overall grid */
-  var enableFiltering: js.UndefOr[Boolean] = js.native
+  var enableFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to false, this setting prevents a user from hiding the column using the column menu or the grid
     * menu.
     * @default true
     */
-  var enableHiding: js.UndefOr[Boolean] = js.native
+  var enableHiding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When enabled, this setting adds sort widgets to the column header, allowing sorting of the data in the
     * individual column.
     * @default true
     */
-  var enableSorting: js.UndefOr[Boolean] = js.native
+  var enableSorting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * field must be provided if you wish to bind to a property in the data source.
@@ -114,51 +113,51 @@ trait IColumnDefOf[TEntity]
     * Can be a complex expression: employee.address.city, or can be a function: employee.getFullAddress().
     * See the angular docs on binding expressions.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * Specify a single filter field on this column.
     * A filter consists of a condition, a term, and a placeholder:
     */
-  var filter: js.UndefOr[IFilterOptions] = js.native
+  var filter: js.UndefOr[IFilterOptions] = js.undefined
   
   /**
     * @default false
     * When true uiGrid will apply the cellFilter before applying search filters
     */
-  var filterCellFiltered: js.UndefOr[Boolean] = js.native
+  var filterCellFiltered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * a custom template for the filter input. The default is ui-grid/ui-grid-filter
     */
-  var filterHeaderTemplate: js.UndefOr[String] = js.native
+  var filterHeaderTemplate: js.UndefOr[String] = js.undefined
   
   /** Specify multiple filter fields */
-  var filters: js.UndefOr[js.Array[IFilterOptions]] = js.native
+  var filters: js.UndefOr[js.Array[IFilterOptions]] = js.undefined
   
   /**
     * footerCellClass can be a string specifying the class to append to a cell or it can be
     * a function(row,rowRenderIndex, col, colRenderIndex) that returns a class name
     */
-  var footerCellClass: js.UndefOr[String | IHeaderFooterCellClassGetter[TEntity]] = js.native
+  var footerCellClass: js.UndefOr[String | IHeaderFooterCellClassGetter[TEntity]] = js.undefined
   
   /** footerCellFilter is a filter to apply to the content of the column footer */
-  var footerCellFilter: js.UndefOr[String] = js.native
+  var footerCellFilter: js.UndefOr[String] = js.undefined
   
   /** a custom template for the footer for this column. The default is ui-grid/uiGridFooterCell */
-  var footerCellTemplate: js.UndefOr[String] = js.native
+  var footerCellTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * headerCellClass can be a string specifying the class to append to a cell or it can be
     * a function(row,rowRenderIndex, col, colRenderIndex) that returns a class name
     */
-  var headerCellClass: js.UndefOr[String | IHeaderFooterCellClassGetter[TEntity]] = js.native
+  var headerCellClass: js.UndefOr[String | IHeaderFooterCellClassGetter[TEntity]] = js.undefined
   
   /** headerCellFilter is a filter to apply to the content of the column header */
-  var headerCellFilter: js.UndefOr[String] = js.native
+  var headerCellFilter: js.UndefOr[String] = js.undefined
   
   /** a custom template for the header for this column. The default is ui-grid/uiGridHeaderCell */
-  var headerCellTemplate: js.UndefOr[String] = js.native
+  var headerCellTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to show a tooltip when a user hovers over the header cell.
@@ -170,25 +169,25 @@ trait IColumnDefOf[TEntity]
     * if a static string then shows that static string.
     * @default false
     */
-  var headerTooltip: js.UndefOr[Boolean | String | IHeaderTooltipGetter[TEntity]] = js.native
+  var headerTooltip: js.UndefOr[Boolean | String | IHeaderTooltipGetter[TEntity]] = js.undefined
   
   /** sets the maximum column width */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /** used to add menu items to a column. Refer to the tutorial on this functionality */
-  var menuItems: js.UndefOr[js.Array[IMenuItem]] = js.native
+  var menuItems: js.UndefOr[js.Array[IMenuItem]] = js.undefined
   
   /** Sets the minimum column width */
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (mandatory) each column should have a name,
     * although for backward compatibility with 2.x name can be omitted if field is present
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** An object of sort information */
-  var sort: js.UndefOr[ISortInfo] = js.native
+  var sort: js.UndefOr[ISortInfo] = js.undefined
   
   /**
     * @default false
@@ -200,7 +199,7 @@ trait IColumnDefOf[TEntity]
     * which handles the returned type.
     * You may specify one of the sortingAlgorithms found in the rowSorter service.
     */
-  var sortCellFiltered: js.UndefOr[Boolean] = js.native
+  var sortCellFiltered: js.UndefOr[Boolean] = js.undefined
   
   /**
     *(optional) An array of sort directions, specifying the order that they should cycle through as
@@ -209,7 +208,7 @@ trait IColumnDefOf[TEntity]
     * If suppressRemoveSort is also set, the unsorted state will be skipped even if it is listed here. Each direction may
     * not appear in the list more than once (e.g. [ASC, DESC, DESC] is not allowed), and the list may not be empty.*
     */
-  var sortDirectionCycle: js.UndefOr[js.Array[Null | String]] = js.native
+  var sortDirectionCycle: js.UndefOr[js.Array[Null | String]] = js.undefined
   
   /**
     * Algorithm to use for sorting this column. Takes 'a' and 'b' parameters
@@ -226,14 +225,14 @@ trait IColumnDefOf[TEntity]
       /* direction */ String, 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When enabled, this setting hides the removeSort option in the menu,
     * and prevents users from manually removing the sort
     * @default false
     */
-  var suppressRemoveSort: js.UndefOr[Boolean] = js.native
+  var suppressRemoveSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * the type of the column, used in sorting. If not provided then the grid will guess the type.
@@ -242,18 +241,18 @@ trait IColumnDefOf[TEntity]
     * One of:
     * 'string', 'boolean', 'number', 'date', 'object', 'numberStr'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * sets whether or not the column is visible
     * @default true
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * sets the column width.  Can be either a number or a percentage, or an * for auto.
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IColumnDefOf {
   
@@ -264,7 +263,7 @@ object IColumnDefOf {
   }
   
   @scala.inline
-  implicit class IColumnDefOfMutableBuilder[Self <: IColumnDefOf[_], TEntity] (val x: Self with IColumnDefOf[TEntity]) extends AnyVal {
+  implicit class IColumnDefOfMutableBuilder[Self <: IColumnDefOf[?], TEntity] (val x: Self & IColumnDefOf[TEntity]) extends AnyVal {
     
     @scala.inline
     def setAggregationHideLabel(value: Boolean): Self = StObject.set(x, "aggregationHideLabel", value.asInstanceOf[js.Any])

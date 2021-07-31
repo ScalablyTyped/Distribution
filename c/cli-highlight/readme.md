@@ -10,9 +10,9 @@ Syntax highlighting in your terminal
 | ------------------ | :-------------: |
 | Full name          | cli-highlight |
 | Keywords           | terminal, syntax, highlight, color, cli, ansi |
-| # releases         | 6 |
-| # dependents       | 257 |
-| # downloads        | 33228526 |
+| # releases         | 12 |
+| # dependents       | 294 |
+| # downloads        | 45228032 |
 | # stars            | 5 |
 
 ## Links

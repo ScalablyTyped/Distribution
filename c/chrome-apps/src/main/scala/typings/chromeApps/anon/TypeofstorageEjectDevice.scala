@@ -7,15 +7,13 @@ import typings.chromeApps.chrome.system.storage.StorageUnitInfo
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofstorageEjectDevice extends StObject {
   
-  val EjectDeviceResultCode: FAILURE = js.native
+  val EjectDeviceResultCode: FAILURE
   
-  val StorageUnitType: FIXED = js.native
+  val StorageUnitType: FIXED
   
   /**
     * Ejects a removable storage device.
@@ -44,22 +42,22 @@ trait TypeofstorageEjectDevice extends StObject {
       ], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Get the available capacity of a specified |id| storage device. The |id| is the transient device ID from StorageUnitInfo.
     * @since Dev channel only.
     */
-  def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit = js.native
+  def getAvailableCapacity(id: String, callback: js.Function1[/* info */ StorageCapacityInfo, Unit]): Unit
   
   /** Get the storage information from the system. The argument passed to the callback is an array of StorageUnitInfo objects. */
-  def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit = js.native
+  def getInfo(callback: js.Function1[/* info */ js.Array[StorageUnitInfo], Unit]): Unit
   
   /** Fired when a new removable storage is attached to the system. */
-  val onAttached: Event[js.Function1[/* info */ StorageUnitInfo, Unit]] = js.native
+  val onAttached: Event[js.Function1[/* info */ StorageUnitInfo, Unit]]
   
   /** Fired when a removable storage is detached from the system. */
-  val onDetached: Event[js.Function1[/* id */ String, Unit]] = js.native
+  val onDetached: Event[js.Function1[/* id */ String, Unit]]
 }
 object TypeofstorageEjectDevice {
   

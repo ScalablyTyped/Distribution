@@ -4,19 +4,17 @@ import typings.vegaLite.channelMod.NonPositionScaleChannel
 import typings.vegaLite.legendMod.LegendInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Legend extends StObject {
   
-  var channel: NonPositionScaleChannel = js.native
+  var channel: NonPositionScaleChannel
   
-  var legend: LegendInternal = js.native
+  var legend: LegendInternal
   
-  var scaleType: typings.vegaLite.scaleMod.ScaleType = js.native
+  var scaleType: typings.vegaLite.scaleMod.ScaleType
   
-  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit] = js.native
+  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit] = js.undefined
 }
 object Legend {
   

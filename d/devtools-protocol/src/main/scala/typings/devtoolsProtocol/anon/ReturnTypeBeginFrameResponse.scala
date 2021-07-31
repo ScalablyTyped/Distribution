@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.BeginFrameRequ
 import typings.devtoolsProtocol.mod.Protocol.HeadlessExperimental.BeginFrameResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeBeginFrameResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[BeginFrameRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[BeginFrameRequest]]
   
-  var returnType: BeginFrameResponse = js.native
+  var returnType: BeginFrameResponse
 }
 object ReturnTypeBeginFrameResponse {
   

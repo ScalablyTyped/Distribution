@@ -2,7 +2,6 @@ package typings.keya
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localhostMod {
@@ -13,12 +12,15 @@ object localhostMod {
   /* static members */
   object default {
     
+    @JSImport("keya/out/browser/localhost", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Gets all stores
       */
-    @JSImport("keya/out/browser/localhost", "default.stores")
-    @js.native
-    def stores(): js.Promise[js.Array[String]] = js.native
+    @scala.inline
+    def stores(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stores")().asInstanceOf[js.Promise[js.Array[String]]]
   }
   
   @js.native

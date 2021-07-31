@@ -18,14 +18,16 @@ import typings.xmldsigjs.xmlMod.Transform
 import typings.xmldsigjs.xmlMod.Transforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signedXmlMod {
   
-  @JSImport("xmldsigjs/build/types/signed_xml", "SelectRootNamespaces")
+  @JSImport("xmldsigjs/build/types/signed_xml", JSImport.Namespace)
   @js.native
-  def SelectRootNamespaces(node: Element): AssocArray[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def SelectRootNamespaces(node: Element): AssocArray[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectRootNamespaces")(node.asInstanceOf[js.Any]).asInstanceOf[AssocArray[String]]
   
   @JSImport("xmldsigjs/build/types/signed_xml", "SignedXml")
   @js.native
@@ -36,7 +38,9 @@ object signedXmlMod {
     *
     * @memberOf SignedXml
     */
-  class SignedXml () extends IXmlSerializable {
+  class SignedXml ()
+    extends StObject
+       with IXmlSerializable {
     def this(node: Document) = this()
     def this(node: Element) = this()
     
@@ -111,13 +115,12 @@ object signedXmlMod {
     var signature: Signature = js.native
   }
   
-  @js.native
   trait OptionsSign extends StObject {
     
     /**
       * Id of Signature
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Public key for KeyInfo block
@@ -125,7 +128,7 @@ object signedXmlMod {
       * @type {boolean}
       * @memberOf OptionsSign
       */
-    var keyValue: js.UndefOr[CryptoKey] = js.native
+    var keyValue: js.UndefOr[CryptoKey] = js.undefined
     
     /**
       * List of Reference
@@ -134,7 +137,7 @@ object signedXmlMod {
       * @type {OptionsSignReference[]}
       * @memberOf OptionsSign
       */
-    var references: js.UndefOr[js.Array[OptionsSignReference]] = js.native
+    var references: js.UndefOr[js.Array[OptionsSignReference]] = js.undefined
     
     /**
       * List of X509 Certificates
@@ -142,7 +145,7 @@ object signedXmlMod {
       * @type {string[]}
       * @memberOf OptionsSign
       */
-    var x509: js.UndefOr[js.Array[String]] = js.native
+    var x509: js.UndefOr[js.Array[String]] = js.undefined
   }
   object OptionsSign {
     
@@ -187,7 +190,6 @@ object signedXmlMod {
     }
   }
   
-  @js.native
   trait OptionsSignReference extends StObject {
     
     /**
@@ -196,7 +198,7 @@ object signedXmlMod {
       * @type {AlgorithmIdentifier}
       * @memberOf OptionsSignReference
       */
-    var hash: AlgorithmIdentifier = js.native
+    var hash: AlgorithmIdentifier
     
     /**
       * Id of Reference
@@ -204,7 +206,7 @@ object signedXmlMod {
       * @type {string}
       * @memberOf OptionsSignReference
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * List of transforms
@@ -212,11 +214,11 @@ object signedXmlMod {
       * @type {OptionsSignTransform[]}
       * @memberOf OptionsSignReference
       */
-    var transforms: js.UndefOr[js.Array[OptionsSignTransform]] = js.native
+    var transforms: js.UndefOr[js.Array[OptionsSignTransform]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object OptionsSignReference {
     

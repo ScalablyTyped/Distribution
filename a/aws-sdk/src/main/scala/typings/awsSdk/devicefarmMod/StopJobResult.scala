@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopJobResult extends StObject {
   
   /**
     * The job that was stopped.
     */
-  var job: js.UndefOr[Job] = js.native
+  var job: js.UndefOr[Job] = js.undefined
 }
 object StopJobResult {
   

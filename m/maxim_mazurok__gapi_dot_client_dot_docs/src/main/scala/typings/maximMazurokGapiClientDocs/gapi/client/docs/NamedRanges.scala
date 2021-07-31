@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedRanges extends StObject {
   
   /** The name that all the named ranges share. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The NamedRanges that share the same name. */
-  var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.native
+  var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.undefined
 }
 object NamedRanges {
   

@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "PlaneHelper")
@@ -16,6 +15,6 @@ class PlaneHelper protected ()
   	 */
   def this(plane: typings.three.planeMod.Plane) = this()
   def this(plane: typings.three.planeMod.Plane, size: Double) = this()
-  def this(plane: typings.three.planeMod.Plane, size: js.UndefOr[scala.Nothing], hex: Double) = this()
   def this(plane: typings.three.planeMod.Plane, size: Double, hex: Double) = this()
+  def this(plane: typings.three.planeMod.Plane, size: Unit, hex: Double) = this()
 }

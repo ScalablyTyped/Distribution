@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pull extends StObject {
   
-  var admin: Boolean = js.native
+  var admin: Boolean
   
-  var pull: Boolean = js.native
+  var pull: Boolean
   
-  var push: Boolean = js.native
+  var push: Boolean
 }
 object Pull {
   

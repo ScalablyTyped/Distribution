@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,25 +22,13 @@ trait ProtectedViewWindow extends StObject {
   val Document: typings.activexWord.Word.Document = js.native
   
   def Edit(): typings.activexWord.Word.Document = js.native
-  def Edit(
-    PasswordTemplate: js.UndefOr[scala.Nothing],
-    WritePasswordDocument: js.UndefOr[scala.Nothing],
-    WritePasswordTemplate: js.Any
-  ): typings.activexWord.Word.Document = js.native
-  def Edit(PasswordTemplate: js.UndefOr[scala.Nothing], WritePasswordDocument: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(
-    PasswordTemplate: js.UndefOr[scala.Nothing],
-    WritePasswordDocument: js.Any,
-    WritePasswordTemplate: js.Any
-  ): typings.activexWord.Word.Document = js.native
   def Edit(PasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
-  def Edit(
-    PasswordTemplate: js.Any,
-    WritePasswordDocument: js.UndefOr[scala.Nothing],
-    WritePasswordTemplate: js.Any
-  ): typings.activexWord.Word.Document = js.native
   def Edit(PasswordTemplate: js.Any, WritePasswordDocument: js.Any): typings.activexWord.Word.Document = js.native
   def Edit(PasswordTemplate: js.Any, WritePasswordDocument: js.Any, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: js.Any, WritePasswordDocument: Unit, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Unit, WritePasswordDocument: js.Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Unit, WritePasswordDocument: js.Any, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
+  def Edit(PasswordTemplate: Unit, WritePasswordDocument: Unit, WritePasswordTemplate: js.Any): typings.activexWord.Word.Document = js.native
   
   var Height: Double = js.native
   

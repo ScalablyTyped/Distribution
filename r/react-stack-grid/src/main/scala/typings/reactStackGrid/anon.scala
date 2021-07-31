@@ -2,23 +2,21 @@ package typings.reactStackGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Appear extends StObject {
     
-    def appear(): Unit = js.native
+    def appear(): Unit
     
-    def appeared(): Unit = js.native
+    def appeared(): Unit
     
-    def enter(): Unit = js.native
+    def enter(): Unit
     
-    def entered(): Unit = js.native
+    def entered(): Unit
     
-    def leaved(): Unit = js.native
+    def leaved(): Unit
   }
   object Appear {
     

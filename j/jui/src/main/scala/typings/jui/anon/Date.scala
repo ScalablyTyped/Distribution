@@ -6,51 +6,49 @@ import typings.jui.juiStrings.now
 import typings.jui.juiStrings.yearly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Date extends StObject {
   
   /**
     * @cfg {Date} [date="now"]
     * Selects a specific date as a basic
     */
-  var date: js.UndefOr[now | typings.std.Date] = js.native
+  var date: js.UndefOr[now | typings.std.Date] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {String} [format="yyyy-MM-dd"]
     * Format of the date handed over when selecting a specific date
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {Date} [maxDate="null"]
     * Selects a specific maximum date
     */
-  var maxDate: js.UndefOr[typings.std.Date] = js.native
+  var maxDate: js.UndefOr[typings.std.Date] = js.undefined
   
   /**
     * @cfg {Date} [minDate="null"]
     * Selects a specific minimum date
     */
-  var minDate: js.UndefOr[typings.std.Date] = js.native
+  var minDate: js.UndefOr[typings.std.Date] = js.undefined
   
   /**
     * @cfg {String} [titleFormat="yyyy.MM"]
     * Title format of a calendar
     */
-  var titleFormat: js.UndefOr[String] = js.native
+  var titleFormat: js.UndefOr[String] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {"daily"/"monthly"/"yearly"} [type="daily"]
     * Determines the type of a calendar
     */
-  var `type`: js.UndefOr[daily | monthly | yearly] = js.native
+  var `type`: js.UndefOr[daily | monthly | yearly] = js.undefined
 }
 object Date {
   

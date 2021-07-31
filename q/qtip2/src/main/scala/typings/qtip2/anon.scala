@@ -5,15 +5,13 @@ import typings.qtip2.QTip2.Title
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Text extends StObject {
     
-    var text: Title = js.native
+    var text: Title
   }
   object Text {
     

@@ -2,19 +2,17 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLRedrawOptions extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  def project(lnglat: js.Array[Double]): js.Array[Double] = js.native
+  def project(lnglat: js.Array[Double]): js.Array[Double]
   
-  def unproject(xy: js.Array[Double]): js.Array[Double] = js.native
+  def unproject(xy: js.Array[Double]): js.Array[Double]
   
-  var width: Double = js.native
+  var width: Double
 }
 object HTMLRedrawOptions {
   

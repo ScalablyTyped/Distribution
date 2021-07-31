@@ -2,17 +2,16 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextNotification
-  extends Notification
+  extends StObject
+     with Notification
      with NotificationDetails {
   
   /** Text of the notification (optional if highlight is set) */
   @JSName("text")
-  var text_TextNotification: String = js.native
+  var text_TextNotification: String
 }
 object TextNotification {
   

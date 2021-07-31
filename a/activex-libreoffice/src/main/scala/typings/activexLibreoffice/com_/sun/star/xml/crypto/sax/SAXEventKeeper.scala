@@ -9,13 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link SAXEventKeeper} */
-@js.native
 trait SAXEventKeeper
-  extends XSecuritySAXEventKeeper
+  extends StObject
+     with XSecuritySAXEventKeeper
      with XReferenceResolvedBroadcaster
      with XSAXEventKeeperStatusChangeBroadcaster
      with XDocumentHandler
@@ -37,7 +36,7 @@ object SAXEventKeeper {
     getCurrentBlockingNode: () => XXMLElementWrapper,
     getElement: Double => XXMLElementWrapper,
     ignorableWhitespace: String => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isBlocking: () => Boolean,
     printBufferNodeTree: () => String,
     processingInstruction: (String, String) => Unit,

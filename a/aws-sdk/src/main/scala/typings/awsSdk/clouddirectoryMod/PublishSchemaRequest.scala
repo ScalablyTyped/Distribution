@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishSchemaRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the development schema. For more information, see arns.
     */
-  var DevelopmentSchemaArn: Arn = js.native
+  var DevelopmentSchemaArn: Arn
   
   /**
     * The minor version under which the schema will be published. This parameter is recommended. Schemas have both a major and minor version associated with them.
     */
-  var MinorVersion: js.UndefOr[Version] = js.native
+  var MinorVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The new name under which the schema will be published. If this is not provided, the development schema is considered.
     */
-  var Name: js.UndefOr[SchemaName] = js.native
+  var Name: js.UndefOr[SchemaName] = js.undefined
   
   /**
     * The major version under which the schema will be published. Schemas have both a major and minor version associated with them.
     */
-  var Version: typings.awsSdk.clouddirectoryMod.Version = js.native
+  var Version: typings.awsSdk.clouddirectoryMod.Version
 }
 object PublishSchemaRequest {
   

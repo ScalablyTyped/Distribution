@@ -2,56 +2,54 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceTableDetails extends StObject {
   
   /**
     * Controls how you are charged for read and write throughput and how you manage capacity. This setting can be changed later.    PROVISIONED - Sets the read/write capacity mode to PROVISIONED. We recommend using PROVISIONED for predictable workloads.    PAY_PER_REQUEST - Sets the read/write capacity mode to PAY_PER_REQUEST. We recommend using PAY_PER_REQUEST for unpredictable workloads.   
     */
-  var BillingMode: js.UndefOr[typings.awsSdk.dynamodbMod.BillingMode] = js.native
+  var BillingMode: js.UndefOr[typings.awsSdk.dynamodbMod.BillingMode] = js.undefined
   
   /**
     * Number of items in the table. Note that this is an approximate value. 
     */
-  var ItemCount: js.UndefOr[typings.awsSdk.dynamodbMod.ItemCount] = js.native
+  var ItemCount: js.UndefOr[typings.awsSdk.dynamodbMod.ItemCount] = js.undefined
   
   /**
     * Schema of the table. 
     */
-  var KeySchema: typings.awsSdk.dynamodbMod.KeySchema = js.native
+  var KeySchema: typings.awsSdk.dynamodbMod.KeySchema
   
   /**
     * Read IOPs and Write IOPS on the table when the backup was created.
     */
-  var ProvisionedThroughput: typings.awsSdk.dynamodbMod.ProvisionedThroughput = js.native
+  var ProvisionedThroughput: typings.awsSdk.dynamodbMod.ProvisionedThroughput
   
   /**
     * ARN of the table for which backup was created. 
     */
-  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.native
+  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.undefined
   
   /**
     * Time when the source table was created. 
     */
-  var TableCreationDateTime: typings.awsSdk.dynamodbMod.TableCreationDateTime = js.native
+  var TableCreationDateTime: typings.awsSdk.dynamodbMod.TableCreationDateTime
   
   /**
     * Unique identifier for the table for which the backup was created. 
     */
-  var TableId: typings.awsSdk.dynamodbMod.TableId = js.native
+  var TableId: typings.awsSdk.dynamodbMod.TableId
   
   /**
     * The name of the table for which the backup was created. 
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
   
   /**
     * Size of the table in bytes. Note that this is an approximate value.
     */
-  var TableSizeBytes: js.UndefOr[Long] = js.native
+  var TableSizeBytes: js.UndefOr[Long] = js.undefined
 }
 object SourceTableDetails {
   

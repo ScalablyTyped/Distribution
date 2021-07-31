@@ -1,19 +1,38 @@
 package typings.saslScramSha1
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
 import typings.saslScramSha1.saslScramSha1Booleans.`true`
 import typings.saslScramSha1.saslScramSha1Strings.`SCRAM-SHA-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sasl-scram-sha-1", JSImport.Namespace)
   @js.native
-  class ^ () extends ScramSha1Mechanism {
+  class ^ ()
+    extends StObject
+       with ScramSha1Mechanism {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def challenge(chal: String): Unit = js.native
+    
+    /* CompleteClass */
+    var clientFirst: `true` = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_ScramSha1Mechanism: `SCRAM-SHA-1` = js.native
+    
+    /* CompleteClass */
+    override def response(cred: StringDictionary[js.Any]): String = js.native
+    /* CompleteClass */
+    override def response(cred: Credentials): String = js.native
   }
   @JSImport("sasl-scram-sha-1", JSImport.Namespace)
   @js.native
@@ -22,8 +41,27 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sasl-scram-sha-1", "Mechanism")
   @js.native
-  class Mechanism () extends ScramSha1Mechanism {
+  class Mechanism ()
+    extends StObject
+       with ScramSha1Mechanism {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def challenge(chal: String): Unit = js.native
+    
+    /* CompleteClass */
+    var clientFirst: `true` = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_ScramSha1Mechanism: `SCRAM-SHA-1` = js.native
+    
+    /* CompleteClass */
+    override def response(cred: StringDictionary[js.Any]): String = js.native
+    /* CompleteClass */
+    override def response(cred: Credentials): String = js.native
   }
   /* static member */
   @JSImport("sasl-scram-sha-1", "Mechanism")
@@ -52,22 +90,21 @@ object mod {
     def name_=(x: `SCRAM-SHA-1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var authzid: js.UndefOr[String] = js.native
+    var authzid: js.UndefOr[String] = js.undefined
     
-    var clientKey: js.UndefOr[String] = js.native
+    var clientKey: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var salt: js.UndefOr[String] = js.native
+    var salt: js.UndefOr[String] = js.undefined
     
-    var saltedPassword: js.UndefOr[String] = js.native
+    var saltedPassword: js.UndefOr[String] = js.undefined
     
-    var serverKey: js.UndefOr[String] = js.native
+    var serverKey: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     
@@ -124,10 +161,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var genNonce: js.UndefOr[js.Function0[Double]] = js.native
+    var genNonce: js.UndefOr[js.Function0[Double]] = js.undefined
   }
   object Options {
     
@@ -148,27 +184,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ScramSha1Mechanism
-    extends typings.saslmechanisms.mod.Mechanism {
+    extends StObject
+       with typings.saslmechanisms.mod.Mechanism {
     
-    var clientFirst: `true` = js.native
+    var clientFirst: `true`
     
     @JSName("name")
-    var name_ScramSha1Mechanism: `SCRAM-SHA-1` = js.native
+    var name_ScramSha1Mechanism: `SCRAM-SHA-1`
     
-    def response(cred: Credentials): String = js.native
+    def response(cred: Credentials): String
   }
   object ScramSha1Mechanism {
     
     @scala.inline
-    def apply(
-      challenge: String => Unit,
-      clientFirst: `true`,
-      name: `SCRAM-SHA-1`,
-      response: Credentials => String
-    ): ScramSha1Mechanism = {
-      val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
+    def apply(challenge: String => Unit, response: Credentials => String): ScramSha1Mechanism = {
+      val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = true, name = "SCRAM-SHA-1", response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[ScramSha1Mechanism]
     }
     

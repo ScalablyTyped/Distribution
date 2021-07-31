@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxComboBox control.
   */
 @js.native
-trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
+trait ASPxClientComboBox
+  extends StObject
+     with ASPxClientDropDownEditBase {
   
   /**
     * Adds a new item to the end of the control's items collection. An integer value representing the position at which a new item was added.
@@ -18,13 +19,13 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     * @param imageUrl A string value specifying the path to the image displayed by the item.
     */
   def AddItem(text: String): Double = js.native
-  def AddItem(text: String, value: js.UndefOr[scala.Nothing], imageUrl: String): Double = js.native
   def AddItem(text: String, value: js.Any): Double = js.native
   def AddItem(text: String, value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: String, value: Unit, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String]): Double = js.native
-  def AddItem(text: js.Array[String], value: js.UndefOr[scala.Nothing], imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String], value: js.Any): Double = js.native
   def AddItem(text: js.Array[String], value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: js.Array[String], value: Unit, imageUrl: String): Double = js.native
   
   /**
     * Sets the CSS class for a combo box item specified by its index.
@@ -122,13 +123,13 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
     * @param imageUrl A String value specifying the path to the image displayed by the item.
     */
   def InsertItem(index: Double, text: String): Unit = js.native
-  def InsertItem(index: Double, text: String, value: js.UndefOr[scala.Nothing], imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: String, value: js.Any): Unit = js.native
   def InsertItem(index: Double, text: String, value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: String, value: Unit, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String]): Unit = js.native
-  def InsertItem(index: Double, text: js.Array[String], value: js.UndefOr[scala.Nothing], imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: js.Any): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: Unit, imageUrl: String): Unit = js.native
   
   /**
     * Fires before the filtering is executed.

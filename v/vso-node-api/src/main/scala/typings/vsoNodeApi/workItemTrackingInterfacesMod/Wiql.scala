@@ -2,16 +2,14 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Wiql extends StObject {
   
   /**
     * The text of the WIQL query
     */
-  var query: String = js.native
+  var query: String
 }
 object Wiql {
   

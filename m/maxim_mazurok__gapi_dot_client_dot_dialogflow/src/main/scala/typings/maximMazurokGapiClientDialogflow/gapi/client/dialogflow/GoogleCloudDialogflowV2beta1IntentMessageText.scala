@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageText extends StObject {
   
   /** Optional. The collection of the agent's responses. */
-  var text: js.UndefOr[js.Array[String]] = js.native
+  var text: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageText {
   

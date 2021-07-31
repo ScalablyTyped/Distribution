@@ -6,7 +6,6 @@ import typings.autolinker.matchMatchMod.Match
 import typings.autolinker.matchMatchMod.MatchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mentionMatchMod {
@@ -52,12 +51,13 @@ object mentionMatchMod {
     val serviceName: js.Any = js.native
   }
   
-  @js.native
-  trait MentionMatchConfig extends MatchConfig {
+  trait MentionMatchConfig
+    extends StObject
+       with MatchConfig {
     
-    var mention: String = js.native
+    var mention: String
     
-    var serviceName: MentionServices = js.native
+    var serviceName: MentionServices
   }
   object MentionMatchConfig {
     

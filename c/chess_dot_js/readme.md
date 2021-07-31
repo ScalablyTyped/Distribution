@@ -11,8 +11,8 @@ Typings are for version 0.10
 | Full name          | chess.js |
 | Keywords           | chess |
 | # releases         | 3 |
-| # dependents       | 42 |
-| # downloads        | 40033 |
+| # dependents       | 47 |
+| # downloads        | 57269 |
 | # stars            | 7 |
 
 ## Links

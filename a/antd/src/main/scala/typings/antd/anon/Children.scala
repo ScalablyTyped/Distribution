@@ -5,17 +5,15 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children[Values] extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var ref: js.UndefOr[
     (js.Function1[/* instance */ FormInstance[Values] | Null, Unit]) | RefObject[FormInstance[Values]] | Null
-  ] = js.native
+  ] = js.undefined
 }
 object Children {
   
@@ -26,7 +24,7 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children[_], Values] (val x: Self with Children[Values]) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children[?], Values] (val x: Self & Children[Values]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

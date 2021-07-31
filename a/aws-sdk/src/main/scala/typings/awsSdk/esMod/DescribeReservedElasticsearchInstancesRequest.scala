@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReservedElasticsearchInstancesRequest extends StObject {
   
   /**
     * Set this value to limit the number of results returned. If not specified, defaults to 100.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.undefined
   
   /**
     * NextToken should be sent in case if earlier API call produced result containing NextToken. It is used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
   
   /**
     * The reserved instance identifier filter value. Use this parameter to show only the reservation that matches the specified reserved Elasticsearch instance ID.
     */
-  var ReservedElasticsearchInstanceId: js.UndefOr[GUID] = js.native
+  var ReservedElasticsearchInstanceId: js.UndefOr[GUID] = js.undefined
 }
 object DescribeReservedElasticsearchInstancesRequest {
   

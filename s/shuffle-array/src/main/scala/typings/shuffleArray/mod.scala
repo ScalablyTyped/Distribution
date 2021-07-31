@@ -3,7 +3,6 @@ package typings.shuffleArray
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,12 +15,11 @@ object mod extends Shortcut {
     * picks - Specifies how many random elements you want to pick. By default it picks 1.
     * rng - Specifies a custom random number generator.
     */
-  @js.native
   trait PickOptions extends StObject {
     
-    var picks: js.UndefOr[Double] = js.native
+    var picks: js.UndefOr[Double] = js.undefined
     
-    var rng: js.UndefOr[js.Function0[Double]] = js.native
+    var rng: js.UndefOr[js.Function0[Double]] = js.undefined
   }
   object PickOptions {
     
@@ -71,12 +69,11 @@ object mod extends Shortcut {
     def pick[T](arr: js.Array[T], options: PickOptions): T | js.Array[T] = js.native
   }
   
-  @js.native
   trait ShuffleOptions extends StObject {
     
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
-    var rng: js.UndefOr[js.Function0[Double]] = js.native
+    var rng: js.UndefOr[js.Function0[Double]] = js.undefined
   }
   object ShuffleOptions {
     

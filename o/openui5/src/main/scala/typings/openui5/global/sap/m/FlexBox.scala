@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.FlexBox")
 @js.native
 class FlexBox protected ()
-  extends typings.openui5.sap.m.FlexBox {
+  extends StObject
+     with typings.openui5.sap.m.FlexBox {
   /**
     * Constructor for a new <code>sap.m.FlexBox</code>.Accepts an object literal <code>mSettings</code>
     * that defines initialproperty values, aggregated and associated objects as well as event handlers.See

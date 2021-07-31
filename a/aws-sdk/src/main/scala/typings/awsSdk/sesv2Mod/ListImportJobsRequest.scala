@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImportJobsRequest extends StObject {
   
   /**
     * The destination of the import job, which can be used to list import jobs that have a certain ImportDestinationType.
     */
-  var ImportDestinationType: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestinationType] = js.native
+  var ImportDestinationType: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestinationType] = js.undefined
   
   /**
     * A string token indicating that there might be additional import jobs available to be listed. Copy this token to a subsequent call to ListImportJobs with the same parameters to retrieve the next page of import jobs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
   
   /**
     * Maximum number of import jobs to return at once. Use this parameter to paginate results. If additional import jobs exist beyond the specified limit, the NextToken element is sent in the response. Use the NextToken value in subsequent requests to retrieve additional addresses.
     */
-  var PageSize: js.UndefOr[MaxItems] = js.native
+  var PageSize: js.UndefOr[MaxItems] = js.undefined
 }
 object ListImportJobsRequest {
   

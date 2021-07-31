@@ -2,7 +2,6 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,18 +10,13 @@ trait SpriteSheetExporter extends StObject {
   def addBitmap(item: FlashItem): js.Any = js.native
   
   def addSymbol(item: FlashItem): js.Any = js.native
-  def addSymbol(
-    item: FlashItem,
-    name: js.UndefOr[scala.Nothing],
-    beginFrame: js.UndefOr[scala.Nothing],
-    endFrame: Double
-  ): js.Any = js.native
-  def addSymbol(item: FlashItem, name: js.UndefOr[scala.Nothing], beginFrame: Double): js.Any = js.native
-  def addSymbol(item: FlashItem, name: js.UndefOr[scala.Nothing], beginFrame: Double, endFrame: Double): js.Any = js.native
   def addSymbol(item: FlashItem, name: String): js.Any = js.native
-  def addSymbol(item: FlashItem, name: String, beginFrame: js.UndefOr[scala.Nothing], endFrame: Double): js.Any = js.native
   def addSymbol(item: FlashItem, name: String, beginFrame: Double): js.Any = js.native
   def addSymbol(item: FlashItem, name: String, beginFrame: Double, endFrame: Double): js.Any = js.native
+  def addSymbol(item: FlashItem, name: String, beginFrame: Unit, endFrame: Double): js.Any = js.native
+  def addSymbol(item: FlashItem, name: Unit, beginFrame: Double): js.Any = js.native
+  def addSymbol(item: FlashItem, name: Unit, beginFrame: Double, endFrame: Double): js.Any = js.native
+  def addSymbol(item: FlashItem, name: Unit, beginFrame: Unit, endFrame: Double): js.Any = js.native
   
   var algorithm: String = js.native
   

@@ -3,25 +3,25 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskInstance extends TaskReference {
+trait TaskInstance
+  extends StObject
+     with TaskReference {
   
-  var alwaysRun: Boolean = js.native
+  var alwaysRun: Boolean
   
-  var condition: String = js.native
+  var condition: String
   
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var instanceId: String = js.native
+  var instanceId: String
   
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
 }
 object TaskInstance {
   

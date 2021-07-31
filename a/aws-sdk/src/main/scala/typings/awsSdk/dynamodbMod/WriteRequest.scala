@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteRequest extends StObject {
   
   /**
     * A request to perform a DeleteItem operation.
     */
-  var DeleteRequest: js.UndefOr[typings.awsSdk.dynamodbMod.DeleteRequest] = js.native
+  var DeleteRequest: js.UndefOr[typings.awsSdk.dynamodbMod.DeleteRequest] = js.undefined
   
   /**
     * A request to perform a PutItem operation.
     */
-  var PutRequest: js.UndefOr[typings.awsSdk.dynamodbMod.PutRequest] = js.native
+  var PutRequest: js.UndefOr[typings.awsSdk.dynamodbMod.PutRequest] = js.undefined
 }
 object WriteRequest {
   

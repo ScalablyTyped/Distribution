@@ -5,21 +5,19 @@ import typings.axeCore.mod.RunOptions
 import typings.axeCore.mod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paramsMod {
   
-  @js.native
   trait A11yParameters extends StObject {
     
-    var config: js.UndefOr[Spec] = js.native
+    var config: js.UndefOr[Spec] = js.undefined
     
-    var element: js.UndefOr[ElementContext] = js.native
+    var element: js.UndefOr[ElementContext] = js.undefined
     
-    var manual: js.UndefOr[Boolean] = js.native
+    var manual: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[RunOptions] = js.native
+    var options: js.UndefOr[RunOptions] = js.undefined
   }
   object A11yParameters {
     
@@ -58,14 +56,13 @@ object paramsMod {
     }
   }
   
-  @js.native
   trait Setup extends StObject {
     
-    var config: Spec = js.native
+    var config: Spec
     
-    var element: js.UndefOr[ElementContext] = js.native
+    var element: js.UndefOr[ElementContext] = js.undefined
     
-    var options: RunOptions = js.native
+    var options: RunOptions
   }
   object Setup {
     

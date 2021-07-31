@@ -11,8 +11,8 @@ Topological sort of directed ascyclic graphs (like dependecy lists)
 | Full name          | toposort |
 | Keywords           | topological, sort, sorting, graphs, graph, dependency, list, dependencies, acyclic |
 | # releases         | 0 |
-| # dependents       | 307 |
-| # downloads        | 176399824 |
+| # dependents       | 326 |
+| # downloads        | 190471444 |
 | # stars            | 4 |
 
 ## Links

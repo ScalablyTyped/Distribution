@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google Slides presentation.
   */
-@js.native
 trait SchemaPresentation extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaPresentation extends StObject {
     * how content is arranged and styled on the slides that inherit from that
     * layout.
     */
-  var layouts: js.UndefOr[js.Array[SchemaPage]] = js.native
+  var layouts: js.UndefOr[js.Array[SchemaPage]] = js.undefined
   
   /**
     * The locale of the presentation, as an IETF BCP 47 language tag.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The slide masters in the presentation. A slide master contains all common
@@ -33,7 +31,7 @@ trait SchemaPresentation extends StObject {
     * slide will appear on all slides using that   master, regardless of their
     * layout.
     */
-  var masters: js.UndefOr[js.Array[SchemaPage]] = js.native
+  var masters: js.UndefOr[js.Array[SchemaPage]] = js.undefined
   
   /**
     * The notes master in the presentation. It serves three purposes:  -
@@ -45,17 +43,17 @@ trait SchemaPresentation extends StObject {
     * notes pages. - Any other shapes on the notes master will appear on all
     * notes pages.  The notes master is read-only.
     */
-  var notesMaster: js.UndefOr[SchemaPage] = js.native
+  var notesMaster: js.UndefOr[SchemaPage] = js.undefined
   
   /**
     * The size of pages in the presentation.
     */
-  var pageSize: js.UndefOr[SchemaSize] = js.native
+  var pageSize: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * The ID of the presentation.
     */
-  var presentationId: js.UndefOr[String] = js.native
+  var presentationId: js.UndefOr[String] = js.undefined
   
   /**
     * The revision ID of the presentation. Can be used in update requests to
@@ -70,18 +68,18 @@ trait SchemaPresentation extends StObject {
     * however, a changed ID can also be due to internal factors such as ID
     * format changes.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
   /**
     * The slides in the presentation. A slide inherits properties from a slide
     * layout.
     */
-  var slides: js.UndefOr[js.Array[SchemaPage]] = js.native
+  var slides: js.UndefOr[js.Array[SchemaPage]] = js.undefined
   
   /**
     * The title of the presentation.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaPresentation {
   

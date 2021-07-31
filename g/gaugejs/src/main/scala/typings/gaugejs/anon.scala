@@ -2,21 +2,19 @@ package typings.gaugejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var font: String = js.native
+    var font: String
     
-    var fractionDigits: js.UndefOr[Double] = js.native
+    var fractionDigits: js.UndefOr[Double] = js.undefined
     
-    var labels: js.Array[Double] = js.native
+    var labels: js.Array[Double]
   }
   object Color {
     
@@ -52,24 +50,23 @@ object anon {
     }
   }
   
-  @js.native
   trait DivColor extends StObject {
     
-    var divColor: String = js.native
+    var divColor: String
     
-    var divLength: Double = js.native
+    var divLength: Double
     
-    var divWidth: Double = js.native
+    var divWidth: Double
     
-    var divisions: Double = js.native
+    var divisions: Double
     
-    var subColor: String = js.native
+    var subColor: String
     
-    var subDivisions: Double = js.native
+    var subDivisions: Double
     
-    var subLength: Double = js.native
+    var subLength: Double
     
-    var subWidth: Double = js.native
+    var subWidth: Double
   }
   object DivColor {
     
@@ -117,10 +114,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FontSize extends StObject {
     
-    var fontSize: String = js.native
+    var fontSize: String
   }
   object FontSize {
     
@@ -139,20 +135,19 @@ object anon {
   }
   
   /* Inlined gaugejs.gaugejs.PointerOptions & {  iconPath :string | undefined,   iconScale :number | undefined,   iconAngle :number | undefined} */
-  @js.native
   trait PointerOptionsiconPathstr extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var iconAngle: js.UndefOr[Double] = js.native
+    var iconAngle: js.UndefOr[Double] = js.undefined
     
-    var iconPath: js.UndefOr[String] = js.native
+    var iconPath: js.UndefOr[String] = js.undefined
     
-    var iconScale: js.UndefOr[Double] = js.native
+    var iconScale: js.UndefOr[Double] = js.undefined
     
-    var length: Double = js.native
+    var length: Double
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
   }
   object PointerOptionsiconPathstr {
     
@@ -195,16 +190,15 @@ object anon {
   }
   
   /* Inlined gaugejs.gaugejs.StaticZoneOptions & {  height :number} */
-  @js.native
   trait StaticZoneOptionsheightnu extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var strokeStyle: String = js.native
+    var strokeStyle: String
   }
   object StaticZoneOptionsheightnu {
     

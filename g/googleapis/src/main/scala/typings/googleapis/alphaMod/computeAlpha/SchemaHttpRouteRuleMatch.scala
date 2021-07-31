@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HttpRouteRule. All specified criteria must be satisfied for a match to
   * occur.
   */
-@js.native
 trait SchemaHttpRouteRuleMatch extends StObject {
   
   /**
@@ -20,20 +18,20 @@ trait SchemaHttpRouteRuleMatch extends StObject {
     * FullPathMatch must be between 1 and 1024 characters. Only one of
     * prefixMatch, fullPathMatch or regexMatch must be specified.
     */
-  var fullPathMatch: js.UndefOr[String] = js.native
+  var fullPathMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a list of header match criteria, all of which must match
     * corresponding headers in the request.
     */
-  var headerMatches: js.UndefOr[js.Array[SchemaHttpHeaderMatch]] = js.native
+  var headerMatches: js.UndefOr[js.Array[SchemaHttpHeaderMatch]] = js.undefined
   
   /**
     * Specifies that prefixMatch and fullPathMatch matches are case sensitive.
     * The default value is false. caseSensitive must not be used with
     * regexMatch.
     */
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Opaque filter criteria used by Loadbalancer to restrict routing
@@ -50,7 +48,7 @@ trait SchemaHttpRouteRuleMatch extends StObject {
     * to Loadbalancers that have their loadBalancingScheme set to
     * INTERNAL_SELF_MANAGED.
     */
-  var metadataFilters: js.UndefOr[js.Array[SchemaMetadataFilter]] = js.native
+  var metadataFilters: js.UndefOr[js.Array[SchemaMetadataFilter]] = js.undefined
   
   /**
     * For satifying the matchRule condition, the request&#39;s path must begin
@@ -58,13 +56,13 @@ trait SchemaHttpRouteRuleMatch extends StObject {
     * value must be between 1 and 1024 characters. Only one of prefixMatch,
     * fullPathMatch or regexMatch must be specified.
     */
-  var prefixMatch: js.UndefOr[String] = js.native
+  var prefixMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a list of query parameter match criteria, all of which must
     * match corresponding query parameters in the request.
     */
-  var queryParameterMatches: js.UndefOr[js.Array[SchemaHttpQueryParameterMatch]] = js.native
+  var queryParameterMatches: js.UndefOr[js.Array[SchemaHttpQueryParameterMatch]] = js.undefined
   
   /**
     * For satifying the matchRule condition, the path of the request must
@@ -73,7 +71,7 @@ trait SchemaHttpRouteRuleMatch extends StObject {
     * expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
     * Only one of prefixMatch, fullPathMatch or regexMatch must be specified.
     */
-  var regexMatch: js.UndefOr[String] = js.native
+  var regexMatch: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpRouteRuleMatch {
   

@@ -2,7 +2,6 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,15 +29,15 @@ trait Container extends StObject {
   
   var id: Double = js.native
   
-  def isBound(serviceIdentifier: ServiceIdentifier[_]): Boolean = js.native
+  def isBound(serviceIdentifier: ServiceIdentifier[js.Any]): Boolean = js.native
   
-  def isBoundNamed(serviceIdentifier: ServiceIdentifier[_], named: String): Boolean = js.native
-  def isBoundNamed(serviceIdentifier: ServiceIdentifier[_], named: js.Symbol): Boolean = js.native
-  def isBoundNamed(serviceIdentifier: ServiceIdentifier[_], named: Double): Boolean = js.native
+  def isBoundNamed(serviceIdentifier: ServiceIdentifier[js.Any], named: String): Boolean = js.native
+  def isBoundNamed(serviceIdentifier: ServiceIdentifier[js.Any], named: js.Symbol): Boolean = js.native
+  def isBoundNamed(serviceIdentifier: ServiceIdentifier[js.Any], named: Double): Boolean = js.native
   
-  def isBoundTagged(serviceIdentifier: ServiceIdentifier[_], key: String, value: js.Any): Boolean = js.native
-  def isBoundTagged(serviceIdentifier: ServiceIdentifier[_], key: js.Symbol, value: js.Any): Boolean = js.native
-  def isBoundTagged(serviceIdentifier: ServiceIdentifier[_], key: Double, value: js.Any): Boolean = js.native
+  def isBoundTagged(serviceIdentifier: ServiceIdentifier[js.Any], key: String, value: js.Any): Boolean = js.native
+  def isBoundTagged(serviceIdentifier: ServiceIdentifier[js.Any], key: js.Symbol, value: js.Any): Boolean = js.native
+  def isBoundTagged(serviceIdentifier: ServiceIdentifier[js.Any], key: Double, value: js.Any): Boolean = js.native
   
   def load(modules: ContainerModule*): Unit = js.native
   
@@ -56,7 +55,7 @@ trait Container extends StObject {
   
   def snapshot(): Unit = js.native
   
-  def unbind(serviceIdentifier: ServiceIdentifier[_]): Unit = js.native
+  def unbind(serviceIdentifier: ServiceIdentifier[js.Any]): Unit = js.native
   
   def unbindAll(): Unit = js.native
   

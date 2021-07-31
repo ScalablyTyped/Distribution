@@ -2,20 +2,19 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaxPortal
-  extends RaxElement[js.Any, String | JSXElementConstructor[js.Any]] {
+  extends StObject
+     with RaxElement[js.Any, String | JSXElementConstructor[js.Any]] {
   
-  var children: RaxNode = js.native
+  var children: RaxNode
 }
 object RaxPortal {
   
   @scala.inline
   def apply(props: js.Any, `type`: String | JSXElementConstructor[js.Any]): RaxPortal = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxPortal]
   }

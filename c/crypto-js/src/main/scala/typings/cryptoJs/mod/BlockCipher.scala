@@ -2,19 +2,17 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Abstract base block cipher template.
   */
-@js.native
 trait BlockCipher extends StObject {
   
   /**
     * The number of 32-bit words this cipher operates on. Default: 4 (128 bits)
     */
-  var blockSize: Double = js.native
+  var blockSize: Double
 }
 object BlockCipher {
   

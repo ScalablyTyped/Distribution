@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ibiza extends StObject {
   
-  var ibiza: scala.Double = js.native
+  var ibiza: scala.Double
   
-  var portalExtensionApi: scala.Double = js.native
+  var portalExtensionApi: scala.Double
   
-  var restApi: scala.Double = js.native
+  var restApi: scala.Double
   
-  var undefined: scala.Double = js.native
+  var undefined: scala.Double
   
-  var userInterface: scala.Double = js.native
+  var userInterface: scala.Double
 }
 object Ibiza {
   

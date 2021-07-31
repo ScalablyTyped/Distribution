@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditAllOrderDealsRequest extends StObject {
   
   /**
@@ -15,16 +13,16 @@ trait EditAllOrderDealsRequest extends StObject {
     * UpdateOrderDealsRequest. 3. Delete deals from the proposal (just need the id) If a existing deal in the proposal is not present in this list, the service will delete that deal from
     * the proposal. Validation will follow DeleteOrderDealsRequest.
     */
-  var deals: js.UndefOr[js.Array[MarketplaceDeal]] = js.native
+  var deals: js.UndefOr[js.Array[MarketplaceDeal]] = js.undefined
   
   /** If specified, also updates the proposal in the batch transaction. This is useful when the proposal and the deals need to be updated in one transaction. */
-  var proposal: js.UndefOr[Proposal] = js.native
+  var proposal: js.UndefOr[Proposal] = js.undefined
   
   /** The last known revision number for the proposal. */
-  var proposalRevisionNumber: js.UndefOr[String] = js.native
+  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
   
   /** Indicates an optional action to take on the proposal */
-  var updateAction: js.UndefOr[String] = js.native
+  var updateAction: js.UndefOr[String] = js.undefined
 }
 object EditAllOrderDealsRequest {
   

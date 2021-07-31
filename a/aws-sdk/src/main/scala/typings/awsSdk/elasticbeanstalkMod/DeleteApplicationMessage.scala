@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationMessage extends StObject {
   
   /**
     * The name of the application to delete.
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * When set to true, running environments will be terminated before deleting the application.
     */
-  var TerminateEnvByForce: js.UndefOr[TerminateEnvForce] = js.native
+  var TerminateEnvByForce: js.UndefOr[TerminateEnvForce] = js.undefined
 }
 object DeleteApplicationMessage {
   

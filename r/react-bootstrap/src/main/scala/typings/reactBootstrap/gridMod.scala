@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -19,14 +18,15 @@ object gridMod {
   trait Grid
     extends Component[GridProps, js.Object, js.Any]
   
-  @js.native
-  trait GridProps extends HTMLProps[Grid] {
+  trait GridProps
+    extends StObject
+       with HTMLProps[Grid] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
   }
   object GridProps {
     
@@ -46,7 +46,7 @@ object gridMod {
       def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

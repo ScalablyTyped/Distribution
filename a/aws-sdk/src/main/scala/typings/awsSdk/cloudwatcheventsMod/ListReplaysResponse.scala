@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReplaysResponse extends StObject {
   
   /**
     * The token returned by a previous call to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.NextToken] = js.undefined
   
   /**
     * An array of Replay objects that contain information about the replay.
     */
-  var Replays: js.UndefOr[ReplayList] = js.native
+  var Replays: js.UndefOr[ReplayList] = js.undefined
 }
 object ListReplaysResponse {
   

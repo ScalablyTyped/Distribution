@@ -3,28 +3,28 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 import typings.rsocketTypes.rsocketTypesNumbers.`0x08`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestNFrame extends Frame {
+trait RequestNFrame
+  extends StObject
+     with Frame {
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var requestN: Double = js.native
+  var requestN: Double
   
-  var streamId: Double = js.native
+  var streamId: Double
   
-  var `type`: `0x08` = js.native
+  var `type`: `0x08`
 }
 object RequestNFrame {
   
   @scala.inline
-  def apply(flags: Double, requestN: Double, streamId: Double, `type`: `0x08`): RequestNFrame = {
+  def apply(flags: Double, requestN: Double, streamId: Double): RequestNFrame = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestN = requestN.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0x08)
     __obj.asInstanceOf[RequestNFrame]
   }
   

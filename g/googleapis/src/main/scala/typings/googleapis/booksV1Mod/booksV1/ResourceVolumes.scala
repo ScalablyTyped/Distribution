@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Volumes")
@@ -38,7 +37,7 @@ class ResourceVolumes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaVolume] = js.native
   def get(callback: BodyResponseCallback[SchemaVolume]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolume] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVolume] = js.native
   def get(params: ParamsResourceVolumesGet): GaxiosPromise[SchemaVolume] = js.native
   def get(params: ParamsResourceVolumesGet, callback: BodyResponseCallback[SchemaVolume]): Unit = js.native
   def get(
@@ -80,7 +79,7 @@ class ResourceVolumes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVolumes] = js.native
   def list(callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesList): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesList, callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
   def list(

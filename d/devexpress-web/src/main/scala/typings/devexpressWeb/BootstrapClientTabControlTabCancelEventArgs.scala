@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for cancellable events related to manipulations on tabs.
   */
-@js.native
-trait BootstrapClientTabControlTabCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+trait BootstrapClientTabControlTabCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
   
   /**
     * Gets or sets a value specifying whether a callback should be sent to the server to reload the content of the page being activated.
     */
-  var reloadContentOnCallback: Boolean = js.native
+  var reloadContentOnCallback: Boolean
   
   /**
     * Gets the tab object related to the event.
     */
-  var tab: BootstrapClientTab = js.native
+  var tab: BootstrapClientTab
 }
 object BootstrapClientTabControlTabCancelEventArgs {
   

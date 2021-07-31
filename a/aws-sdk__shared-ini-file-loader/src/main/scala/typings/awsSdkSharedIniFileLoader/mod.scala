@@ -3,10 +3,13 @@ package typings.awsSdkSharedIniFileLoader
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/shared-ini-file-loader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/shared-ini-file-loader", "ENV_CONFIG_PATH")
   @js.native
@@ -16,23 +19,20 @@ object mod {
   @js.native
   val ENV_CREDENTIALS_PATH: /* "AWS_SHARED_CREDENTIALS_FILE" */ String = js.native
   
-  @JSImport("@aws-sdk/shared-ini-file-loader", "loadSharedConfigFiles")
-  @js.native
-  def loadSharedConfigFiles(): js.Promise[SharedConfigFiles] = js.native
-  @JSImport("@aws-sdk/shared-ini-file-loader", "loadSharedConfigFiles")
-  @js.native
-  def loadSharedConfigFiles(init: SharedConfigInit): js.Promise[SharedConfigFiles] = js.native
+  @scala.inline
+  def loadSharedConfigFiles(): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")().asInstanceOf[js.Promise[SharedConfigFiles]]
+  @scala.inline
+  def loadSharedConfigFiles(init: SharedConfigInit): js.Promise[SharedConfigFiles] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSharedConfigFiles")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SharedConfigFiles]]
   
   type ParsedIniData = StringDictionary[Profile]
   
   type Profile = StringDictionary[js.UndefOr[String]]
   
-  @js.native
   trait SharedConfigFiles extends StObject {
     
-    var configFile: ParsedIniData = js.native
+    var configFile: ParsedIniData
     
-    var credentialsFile: ParsedIniData = js.native
+    var credentialsFile: ParsedIniData
   }
   object SharedConfigFiles {
     
@@ -53,7 +53,6 @@ object mod {
     }
   }
   
-  @js.native
   trait SharedConfigInit extends StObject {
     
     /**
@@ -61,14 +60,14 @@ object mod {
       * the `AWS_CONFIG_FILE` environment variable (if defined) or
       * `~/.aws/config` otherwise.
       */
-    var configFilepath: js.UndefOr[String] = js.native
+    var configFilepath: js.UndefOr[String] = js.undefined
     
     /**
       * The path at which to locate the ini credentials file. Defaults to the
       * value of the `AWS_SHARED_CREDENTIALS_FILE` environment variable (if
       * defined) or `~/.aws/credentials` otherwise.
       */
-    var filepath: js.UndefOr[String] = js.native
+    var filepath: js.UndefOr[String] = js.undefined
   }
   object SharedConfigInit {
     

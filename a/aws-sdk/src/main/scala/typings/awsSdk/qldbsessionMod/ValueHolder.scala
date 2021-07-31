@@ -2,21 +2,19 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueHolder extends StObject {
   
   /**
     * An Amazon Ion binary value contained in a ValueHolder structure.
     */
-  var IonBinary: js.UndefOr[typings.awsSdk.qldbsessionMod.IonBinary] = js.native
+  var IonBinary: js.UndefOr[typings.awsSdk.qldbsessionMod.IonBinary] = js.undefined
   
   /**
     * An Amazon Ion plaintext value contained in a ValueHolder structure.
     */
-  var IonText: js.UndefOr[typings.awsSdk.qldbsessionMod.IonText] = js.native
+  var IonText: js.UndefOr[typings.awsSdk.qldbsessionMod.IonText] = js.undefined
 }
 object ValueHolder {
   

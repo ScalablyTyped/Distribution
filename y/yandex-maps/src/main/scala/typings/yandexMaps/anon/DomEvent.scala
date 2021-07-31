@@ -2,15 +2,13 @@ package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomEvent[OriginalEvent, TargetGeometry] extends StObject {
   
-  var domEvent: OriginalEventOriginalEvent[OriginalEvent] = js.native
+  var domEvent: OriginalEventOriginalEvent[OriginalEvent]
   
-  var target: Geometry[TargetGeometry] = js.native
+  var target: Geometry[TargetGeometry]
 }
 object DomEvent {
   
@@ -21,7 +19,7 @@ object DomEvent {
   }
   
   @scala.inline
-  implicit class DomEventMutableBuilder[Self <: DomEvent[_, _], OriginalEvent, TargetGeometry] (val x: Self with (DomEvent[OriginalEvent, TargetGeometry])) extends AnyVal {
+  implicit class DomEventMutableBuilder[Self <: DomEvent[?, ?], OriginalEvent, TargetGeometry] (val x: Self & (DomEvent[OriginalEvent, TargetGeometry])) extends AnyVal {
     
     @scala.inline
     def setDomEvent(value: OriginalEventOriginalEvent[OriginalEvent]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])

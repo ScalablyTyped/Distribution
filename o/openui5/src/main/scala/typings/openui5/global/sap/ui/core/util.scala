@@ -4,7 +4,6 @@ import typings.openui5.sap.ui.core.mvc.HTMLView
 import typings.openui5.sap.ui.core.mvc.XMLView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object util {
@@ -12,7 +11,8 @@ object util {
   @JSGlobal("sap.ui.core.util.Export")
   @js.native
   class Export protected ()
-    extends typings.openui5.sap.ui.core.util.Export {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.Export {
     /**
       * Constructor for a new Export.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -28,7 +28,8 @@ object util {
   @JSGlobal("sap.ui.core.util.ExportCell")
   @js.native
   class ExportCell protected ()
-    extends typings.openui5.sap.ui.core.util.ExportCell {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.ExportCell {
     /**
       * Constructor for a new ExportCell.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -44,7 +45,8 @@ object util {
   @JSGlobal("sap.ui.core.util.ExportColumn")
   @js.native
   class ExportColumn protected ()
-    extends typings.openui5.sap.ui.core.util.ExportColumn {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.ExportColumn {
     /**
       * Constructor for a new ExportCell.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -60,7 +62,8 @@ object util {
   @JSGlobal("sap.ui.core.util.ExportRow")
   @js.native
   class ExportRow protected ()
-    extends typings.openui5.sap.ui.core.util.ExportRow {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.ExportRow {
     /**
       * Constructor for a new ExportRow.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -76,7 +79,8 @@ object util {
   @JSGlobal("sap.ui.core.util.ExportType")
   @js.native
   class ExportType protected ()
-    extends typings.openui5.sap.ui.core.util.ExportType {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.ExportType {
     /**
       * Constructor for a new ExportType.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -92,7 +96,8 @@ object util {
   @JSGlobal("sap.ui.core.util.ExportTypeCSV")
   @js.native
   class ExportTypeCSV protected ()
-    extends typings.openui5.sap.ui.core.util.ExportTypeCSV {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.ExportTypeCSV {
     /**
       * Constructor for a new ExportTypeCSV.Accepts an object literal <code>mSettings</code> that defines
       * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
@@ -106,6 +111,10 @@ object util {
   }
   
   object File {
+    
+    @JSGlobal("sap.ui.core.util.File")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * <p>Triggers a download / save action of the given file.</p><p>There are limitations for this feature
@@ -122,15 +131,15 @@ object util {
       * @param sMimeType file mime-type
       * @param sCharset file charset
       */
-    @JSGlobal("sap.ui.core.util.File.save")
-    @js.native
-    def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = js.native
+    @scala.inline
+    def save(sData: String, sFileName: String, sFileExtension: String, sMimeType: String, sCharset: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(sData.asInstanceOf[js.Any], sFileName.asInstanceOf[js.Any], sFileExtension.asInstanceOf[js.Any], sMimeType.asInstanceOf[js.Any], sCharset.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("sap.ui.core.util.MockServer")
   @js.native
   abstract class MockServer protected ()
-    extends typings.openui5.sap.ui.core.util.MockServer {
+    extends StObject
+       with typings.openui5.sap.ui.core.util.MockServer {
     /**
       * Creates a mocked server. This helps to mock all or some backend calls, e.g. for OData/JSON Models or
       * simple XHR calls, withoutchanging the application code. This class can also be used for qunit
@@ -146,8 +155,8 @@ object util {
       */
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
-    def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
+    def this(sId: String, mSettings: Unit, oScope: js.Any) = this()
   }
   
   object serializer {
@@ -155,7 +164,8 @@ object util {
     @JSGlobal("sap.ui.core.util.serializer.HTMLViewSerializer")
     @js.native
     class HTMLViewSerializer protected ()
-      extends typings.openui5.sap.ui.core.util.serializer.HTMLViewSerializer {
+      extends StObject
+         with typings.openui5.sap.ui.core.util.serializer.HTMLViewSerializer {
       /**
         * HTML view serializer class. Serializes a given view.
         * @param oView the view to serialize
@@ -170,7 +180,8 @@ object util {
     @JSGlobal("sap.ui.core.util.serializer.Serializer")
     @js.native
     class Serializer protected ()
-      extends typings.openui5.sap.ui.core.util.serializer.Serializer {
+      extends StObject
+         with typings.openui5.sap.ui.core.util.serializer.Serializer {
       /**
         * Serializer class. Iterates over all controls and call a given serializer delegate.
         * @param oRootControl the root control to serialize
@@ -198,7 +209,8 @@ object util {
     @JSGlobal("sap.ui.core.util.serializer.ViewSerializer")
     @js.native
     class ViewSerializer protected ()
-      extends typings.openui5.sap.ui.core.util.serializer.ViewSerializer {
+      extends StObject
+         with typings.openui5.sap.ui.core.util.serializer.ViewSerializer {
       /**
         * View serializer class. Iterates over all controls and serializes all found views by calling the
         * corresponding view type serializer.
@@ -211,24 +223,17 @@ object util {
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.Control, oWindow: js.Any) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea, oWindow: js.Any) = this()
-      def this(
-        oRootControl: typings.openui5.sap.ui.core.Control,
-        oWindow: js.UndefOr[scala.Nothing],
-        sDefaultXmlNamespace: String
-      ) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.Control, oWindow: js.Any, sDefaultXmlNamespace: String) = this()
-      def this(
-        oRootControl: typings.openui5.sap.ui.core.UIArea,
-        oWindow: js.UndefOr[scala.Nothing],
-        sDefaultXmlNamespace: String
-      ) = this()
+      def this(oRootControl: typings.openui5.sap.ui.core.Control, oWindow: Unit, sDefaultXmlNamespace: String) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea, oWindow: js.Any, sDefaultXmlNamespace: String) = this()
+      def this(oRootControl: typings.openui5.sap.ui.core.UIArea, oWindow: Unit, sDefaultXmlNamespace: String) = this()
     }
     
     @JSGlobal("sap.ui.core.util.serializer.XMLViewSerializer")
     @js.native
     class XMLViewSerializer protected ()
-      extends typings.openui5.sap.ui.core.util.serializer.XMLViewSerializer {
+      extends StObject
+         with typings.openui5.sap.ui.core.util.serializer.XMLViewSerializer {
       /**
         * XML view serializer class. Serializes a given view.
         * @param oView the view to serialize
@@ -256,12 +261,14 @@ object util {
         * abstract methods.
         */
       abstract class Delegate ()
-        extends typings.openui5.sap.ui.core.util.serializer.delegate.Delegate
+        extends StObject
+           with typings.openui5.sap.ui.core.util.serializer.delegate.Delegate
       
       @JSGlobal("sap.ui.core.util.serializer.delegate.HTML")
       @js.native
       class HTML protected ()
-        extends typings.openui5.sap.ui.core.util.serializer.delegate.HTML {
+        extends StObject
+           with typings.openui5.sap.ui.core.util.serializer.delegate.HTML {
         /**
           * HTML serializer delegate class. Called by the serializer instance.
           * @param fnGetControlId delegate function which returns the control id
@@ -274,7 +281,8 @@ object util {
       @JSGlobal("sap.ui.core.util.serializer.delegate.XML")
       @js.native
       class XML protected ()
-        extends typings.openui5.sap.ui.core.util.serializer.delegate.XML {
+        extends StObject
+           with typings.openui5.sap.ui.core.util.serializer.delegate.XML {
         /**
           * XML serializer delegate class. Called by the serializer instance.
           * @param sDefaultXmlNamespace defines the default XML namespace
@@ -284,34 +292,30 @@ object util {
           */
         def this(sDefaultXmlNamespace: String) = this()
         def this(sDefaultXmlNamespace: String, fnGetControlId: js.Any) = this()
-        def this(
-          sDefaultXmlNamespace: String,
-          fnGetControlId: js.UndefOr[scala.Nothing],
-          fnGetEventHandlerName: js.Any
-        ) = this()
         def this(sDefaultXmlNamespace: String, fnGetControlId: js.Any, fnGetEventHandlerName: js.Any) = this()
+        def this(sDefaultXmlNamespace: String, fnGetControlId: Unit, fnGetEventHandlerName: js.Any) = this()
         def this(
           sDefaultXmlNamespace: String,
-          fnGetControlId: js.UndefOr[scala.Nothing],
-          fnGetEventHandlerName: js.UndefOr[scala.Nothing],
-          fnMemorizePackage: js.Any
-        ) = this()
-        def this(
-          sDefaultXmlNamespace: String,
-          fnGetControlId: js.UndefOr[scala.Nothing],
+          fnGetControlId: js.Any,
           fnGetEventHandlerName: js.Any,
           fnMemorizePackage: js.Any
         ) = this()
         def this(
           sDefaultXmlNamespace: String,
           fnGetControlId: js.Any,
-          fnGetEventHandlerName: js.UndefOr[scala.Nothing],
+          fnGetEventHandlerName: Unit,
           fnMemorizePackage: js.Any
         ) = this()
         def this(
           sDefaultXmlNamespace: String,
-          fnGetControlId: js.Any,
+          fnGetControlId: Unit,
           fnGetEventHandlerName: js.Any,
+          fnMemorizePackage: js.Any
+        ) = this()
+        def this(
+          sDefaultXmlNamespace: String,
+          fnGetControlId: Unit,
+          fnGetEventHandlerName: Unit,
           fnMemorizePackage: js.Any
         ) = this()
       }

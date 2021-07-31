@@ -2,20 +2,18 @@ package typings.awsSdkClientGlacierNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesVaultAccessPolicyMod {
   
   type UnmarshalledVaultAccessPolicy = VaultAccessPolicy
   
-  @js.native
   trait VaultAccessPolicy extends StObject {
     
     /**
       * <p>The vault access policy.</p>
       */
-    var Policy: js.UndefOr[String] = js.native
+    var Policy: js.UndefOr[String] = js.undefined
   }
   object VaultAccessPolicy {
     

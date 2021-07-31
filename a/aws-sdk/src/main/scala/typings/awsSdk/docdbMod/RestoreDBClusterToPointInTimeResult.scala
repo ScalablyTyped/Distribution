@@ -2,13 +2,11 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreDBClusterToPointInTimeResult extends StObject {
   
-  var DBCluster: js.UndefOr[typings.awsSdk.docdbMod.DBCluster] = js.native
+  var DBCluster: js.UndefOr[typings.awsSdk.docdbMod.DBCluster] = js.undefined
 }
 object RestoreDBClusterToPointInTimeResult {
   

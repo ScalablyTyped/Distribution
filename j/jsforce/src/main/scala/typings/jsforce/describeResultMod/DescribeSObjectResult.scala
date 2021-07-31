@@ -3,83 +3,81 @@ package typings.jsforce.describeResultMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSObjectResult extends StObject {
   
-  var actionOverrides: js.UndefOr[maybe[js.Array[ActionOverride]]] = js.native
+  var actionOverrides: js.UndefOr[maybe[js.Array[ActionOverride]]] = js.undefined
   
-  var activateable: Boolean = js.native
+  var activateable: Boolean
   
-  var childRelationships: js.Array[ChildRelationship] = js.native
+  var childRelationships: js.Array[ChildRelationship]
   
-  var compactLayoutable: Boolean = js.native
+  var compactLayoutable: Boolean
   
-  var createable: Boolean = js.native
+  var createable: Boolean
   
-  var custom: Boolean = js.native
+  var custom: Boolean
   
-  var customSetting: Boolean = js.native
+  var customSetting: Boolean
   
-  var deletable: Boolean = js.native
+  var deletable: Boolean
   
-  var deprecatedAndHidden: Boolean = js.native
+  var deprecatedAndHidden: Boolean
   
-  var feedEnabled: Boolean = js.native
+  var feedEnabled: Boolean
   
-  var fields: js.Array[Field] = js.native
+  var fields: js.Array[Field]
   
-  var keyPrefix: js.UndefOr[maybe[String]] = js.native
+  var keyPrefix: js.UndefOr[maybe[String]] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var labelPlural: String = js.native
+  var labelPlural: String
   
-  var layoutable: Boolean = js.native
+  var layoutable: Boolean
   
-  var listviewable: js.UndefOr[maybe[Boolean]] = js.native
+  var listviewable: js.UndefOr[maybe[Boolean]] = js.undefined
   
-  var lookupLayoutable: js.UndefOr[maybe[Boolean]] = js.native
+  var lookupLayoutable: js.UndefOr[maybe[Boolean]] = js.undefined
   
-  var mergeable: Boolean = js.native
+  var mergeable: Boolean
   
-  var mruEnabled: Boolean = js.native
+  var mruEnabled: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var namedLayoutInfos: js.Array[NamedLayoutInfo] = js.native
+  var namedLayoutInfos: js.Array[NamedLayoutInfo]
   
-  var networkScopeFieldName: js.UndefOr[maybe[String]] = js.native
+  var networkScopeFieldName: js.UndefOr[maybe[String]] = js.undefined
   
-  var queryable: Boolean = js.native
+  var queryable: Boolean
   
-  var recordTypeInfos: js.Array[RecordTypeInfo] = js.native
+  var recordTypeInfos: js.Array[RecordTypeInfo]
   
-  var replicateable: Boolean = js.native
+  var replicateable: Boolean
   
-  var retrieveable: Boolean = js.native
+  var retrieveable: Boolean
   
-  var searchLayoutable: Boolean = js.native
+  var searchLayoutable: Boolean
   
-  var searchable: Boolean = js.native
+  var searchable: Boolean
   
-  var supportedScopes: js.Array[ScopeInfo] = js.native
+  var supportedScopes: js.Array[ScopeInfo]
   
-  var triggerable: Boolean = js.native
+  var triggerable: Boolean
   
-  var undeletable: Boolean = js.native
+  var undeletable: Boolean
   
-  var updateable: Boolean = js.native
+  var updateable: Boolean
   
-  var urlDetail: js.UndefOr[String] = js.native
+  var urlDetail: js.UndefOr[String] = js.undefined
   
-  var urlEdit: js.UndefOr[String] = js.native
+  var urlEdit: js.UndefOr[String] = js.undefined
   
-  var urlNew: js.UndefOr[String] = js.native
+  var urlNew: js.UndefOr[String] = js.undefined
   
-  var urls: Record[String, String] = js.native
+  var urls: Record[String, String]
 }
 object DescribeSObjectResult {
   

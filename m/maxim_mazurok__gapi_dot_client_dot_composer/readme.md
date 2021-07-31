@@ -10,9 +10,9 @@ TypeScript typings for Cloud Composer API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.composer |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 836 |
+| # downloads        | 951 |
 | # stars            | 0 |
 
 ## Links

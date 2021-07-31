@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Accountuserprofiles")
@@ -31,7 +30,7 @@ class ResourceAccountuserprofiles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def get(callback: BodyResponseCallback[SchemaAccountUserProfile]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def get(params: ParamsResourceAccountuserprofilesGet): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def get(
     params: ParamsResourceAccountuserprofilesGet,
@@ -64,7 +63,7 @@ class ResourceAccountuserprofiles protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def insert(callback: BodyResponseCallback[SchemaAccountUserProfile]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def insert(params: ParamsResourceAccountuserprofilesInsert): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def insert(
     params: ParamsResourceAccountuserprofilesInsert,
@@ -106,7 +105,7 @@ class ResourceAccountuserprofiles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAccountUserProfilesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAccountUserProfilesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountUserProfilesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountUserProfilesListResponse] = js.native
   def list(params: ParamsResourceAccountuserprofilesList): GaxiosPromise[SchemaAccountUserProfilesListResponse] = js.native
   def list(
     params: ParamsResourceAccountuserprofilesList,
@@ -141,7 +140,7 @@ class ResourceAccountuserprofiles protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def patch(callback: BodyResponseCallback[SchemaAccountUserProfile]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def patch(params: ParamsResourceAccountuserprofilesPatch): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def patch(
     params: ParamsResourceAccountuserprofilesPatch,
@@ -174,7 +173,7 @@ class ResourceAccountuserprofiles protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def update(callback: BodyResponseCallback[SchemaAccountUserProfile]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def update(params: ParamsResourceAccountuserprofilesUpdate): GaxiosPromise[SchemaAccountUserProfile] = js.native
   def update(
     params: ParamsResourceAccountuserprofilesUpdate,

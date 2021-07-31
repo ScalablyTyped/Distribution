@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListJobTriggers.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ListJobTriggersResponse extends StObject {
   
   /**
     * List of triggeredJobs, up to page_size in ListJobTriggersRequest.
     */
-  var jobTriggers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2JobTrigger]] = js.native
+  var jobTriggers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2JobTrigger]] = js.undefined
   
   /**
     * If the next page is available then the next page token to be used in
     * following ListJobTriggers request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListJobTriggersResponse {
   

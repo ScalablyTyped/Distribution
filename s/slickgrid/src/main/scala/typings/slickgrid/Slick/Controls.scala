@@ -2,17 +2,15 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Controls {
   
-  @js.native
   trait ColumnPicker[T /* <: SlickData */] extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getAllColumns(): js.Array[Column[T]] = js.native
+    def getAllColumns(): js.Array[Column[T]]
   }
   object ColumnPicker {
     
@@ -23,7 +21,7 @@ object Controls {
     }
     
     @scala.inline
-    implicit class ColumnPickerMutableBuilder[Self <: ColumnPicker[_], T /* <: SlickData */] (val x: Self with ColumnPicker[T]) extends AnyVal {
+    implicit class ColumnPickerMutableBuilder[Self <: ColumnPicker[?], T /* <: SlickData */] (val x: Self & ColumnPicker[T]) extends AnyVal {
       
       @scala.inline
       def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
@@ -33,10 +31,9 @@ object Controls {
     }
   }
   
-  @js.native
   trait SlickColumnPickerOptions extends StObject {
     
-    var fadeSpeed: js.UndefOr[Double] = js.native
+    var fadeSpeed: js.UndefOr[Double] = js.undefined
   }
   object SlickColumnPickerOptions {
     

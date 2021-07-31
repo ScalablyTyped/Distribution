@@ -8,11 +8,12 @@ import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStreamSocket extends IClosable {
+trait IStreamSocket
+  extends StObject
+     with IClosable {
   
   def connectAsync(endpointPair: EndpointPair): IAsyncAction = js.native
   def connectAsync(endpointPair: EndpointPair, protectionLevel: SocketProtectionLevel): IAsyncAction = js.native

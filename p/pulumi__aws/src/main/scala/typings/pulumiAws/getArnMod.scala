@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getArnMod {
   
-  @JSImport("@pulumi/aws/getArn", "getArn")
+  @JSImport("@pulumi/aws/getArn", JSImport.Namespace)
   @js.native
-  def getArn(args: GetArnArgs): js.Promise[GetArnResult] = js.native
-  @JSImport("@pulumi/aws/getArn", "getArn")
-  @js.native
-  def getArn(args: GetArnArgs, opts: InvokeOptions): js.Promise[GetArnResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getArn(args: GetArnArgs): js.Promise[GetArnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArn")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetArnResult]]
+  @scala.inline
+  def getArn(args: GetArnArgs, opts: InvokeOptions): js.Promise[GetArnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getArn")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetArnResult]]
+  
   trait GetArnArgs extends StObject {
     
     /**
       * The ARN to parse.
       */
-    val arn: String = js.native
+    val arn: String
   }
   object GetArnArgs {
     
@@ -39,42 +39,41 @@ object getArnMod {
     }
   }
   
-  @js.native
   trait GetArnResult extends StObject {
     
     /**
       * The [ID](https://docs.aws.amazon.com/general/latest/gr/acct-identifiers.html) of the AWS account that owns the resource, without the hyphens.
       */
-    val account: String = js.native
+    val account: String
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The partition that the resource is in.
       */
-    val partition: String = js.native
+    val partition: String
     
     /**
       * The region the resource resides in.
       * Note that the ARNs for some resources do not require a region, so this component might be omitted.
       */
-    val region: String = js.native
+    val region: String
     
     /**
       * The content of this part of the ARN varies by service.
       * It often includes an indicator of the type of resource—for example, an IAM user or Amazon RDS database —followed by a slash (/) or a colon (:), followed by the resource name itself.
       */
-    val resource: String = js.native
+    val resource: String
     
     /**
       * The [service namespace](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#genref-aws-service-namespaces) that identifies the AWS product.
       */
-    val service: String = js.native
+    val service: String
   }
   object GetArnResult {
     

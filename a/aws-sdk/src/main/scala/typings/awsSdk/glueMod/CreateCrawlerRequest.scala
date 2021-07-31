@@ -2,76 +2,74 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCrawlerRequest extends StObject {
   
   /**
     * A list of custom classifiers that the user has registered. By default, all built-in classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
-  var Classifiers: js.UndefOr[ClassifierNameList] = js.native
+  var Classifiers: js.UndefOr[ClassifierNameList] = js.undefined
   
   /**
     * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Configuring a Crawler.
     */
-  var Configuration: js.UndefOr[CrawlerConfiguration] = js.native
+  var Configuration: js.UndefOr[CrawlerConfiguration] = js.undefined
   
   /**
     * The name of the SecurityConfiguration structure to be used by this crawler.
     */
-  var CrawlerSecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.CrawlerSecurityConfiguration] = js.native
+  var CrawlerSecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.CrawlerSecurityConfiguration] = js.undefined
   
   /**
     * The AWS Glue database where results are written, such as: arn:aws:daylight:us-east-1::database/sometable/ *.
     */
-  var DatabaseName: js.UndefOr[typings.awsSdk.glueMod.DatabaseName] = js.native
+  var DatabaseName: js.UndefOr[typings.awsSdk.glueMod.DatabaseName] = js.undefined
   
   /**
     * A description of the new crawler.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * Name of the new crawler.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.
     */
-  var RecrawlPolicy: js.UndefOr[typings.awsSdk.glueMod.RecrawlPolicy] = js.native
+  var RecrawlPolicy: js.UndefOr[typings.awsSdk.glueMod.RecrawlPolicy] = js.undefined
   
   /**
     * The IAM role or Amazon Resource Name (ARN) of an IAM role used by the new crawler to access customer resources.
     */
-  var Role: typings.awsSdk.glueMod.Role = js.native
+  var Role: typings.awsSdk.glueMod.Role
   
   /**
     * A cron expression used to specify the schedule (see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).
     */
-  var Schedule: js.UndefOr[CronExpression] = js.native
+  var Schedule: js.UndefOr[CronExpression] = js.undefined
   
   /**
     * The policy for the crawler's update and deletion behavior.
     */
-  var SchemaChangePolicy: js.UndefOr[typings.awsSdk.glueMod.SchemaChangePolicy] = js.native
+  var SchemaChangePolicy: js.UndefOr[typings.awsSdk.glueMod.SchemaChangePolicy] = js.undefined
   
   /**
     * The table prefix used for catalog tables that are created.
     */
-  var TablePrefix: js.UndefOr[typings.awsSdk.glueMod.TablePrefix] = js.native
+  var TablePrefix: js.UndefOr[typings.awsSdk.glueMod.TablePrefix] = js.undefined
   
   /**
     * The tags to use with this crawler request. You may use tags to limit access to the crawler. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
     */
-  var Tags: js.UndefOr[TagsMap] = js.native
+  var Tags: js.UndefOr[TagsMap] = js.undefined
   
   /**
     * A list of collection of targets to crawl.
     */
-  var Targets: CrawlerTargets = js.native
+  var Targets: CrawlerTargets
 }
 object CreateCrawlerRequest {
   

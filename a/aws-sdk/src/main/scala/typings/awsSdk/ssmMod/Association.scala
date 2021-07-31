@@ -2,61 +2,59 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Association extends StObject {
   
   /**
     * The ID created by the system when you create an association. An association is a binding between a document and a set of targets with a schedule.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.ssmMod.AssociationId] = js.undefined
   
   /**
     * The association name.
     */
-  var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.native
+  var AssociationName: js.UndefOr[typings.awsSdk.ssmMod.AssociationName] = js.undefined
   
   /**
     * The association version.
     */
-  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.native
+  var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
     * The version of the document used in the association.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * The date on which the association was last run.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.native
+  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
     * Information about the association.
     */
-  var Overview: js.UndefOr[AssociationOverview] = js.native
+  var Overview: js.UndefOr[AssociationOverview] = js.undefined
   
   /**
     * A cron expression that specifies a schedule when the association runs.
     */
-  var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.native
+  var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.undefined
   
   /**
     * The instances targeted by the request to create an association. 
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
 }
 object Association {
   

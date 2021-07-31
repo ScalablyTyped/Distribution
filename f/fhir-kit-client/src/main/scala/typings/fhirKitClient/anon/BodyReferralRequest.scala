@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ReferralRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyReferralRequest extends StObject {
   
-  var body: ReferralRequest = js.native
+  var body: ReferralRequest
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ReferralRequest = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ReferralRequest
 }
 object BodyReferralRequest {
   
   @scala.inline
-  def apply(body: ReferralRequest, resourceType: typings.fhirKitClient.fhirKitClientStrings.ReferralRequest): BodyReferralRequest = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ReferralRequest): BodyReferralRequest = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ReferralRequest")
     __obj.asInstanceOf[BodyReferralRequest]
   }
   

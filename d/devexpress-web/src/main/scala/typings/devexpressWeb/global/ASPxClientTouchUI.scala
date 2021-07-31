@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientTouchUI")
 @js.native
 class ASPxClientTouchUI ()
-  extends typings.devexpressWeb.ASPxClientTouchUI
+  extends StObject
+     with typings.devexpressWeb.ASPxClientTouchUI
 object ASPxClientTouchUI {
+  
+  @JSGlobal("ASPxClientTouchUI")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Extends the specified element's functionality with scrolling via touch behavior (one finger) and customized scrollbar-related options. A ScrollExtender object allowing you to apply the current scroll extender to another element.
     * @param options An ASPxClientTouchUIOptions object that provides options affecting the touch scrolling functionality.
     */
   /* static member */
-  @JSGlobal("ASPxClientTouchUI.MakeScrollable")
-  @js.native
-  def MakeScrollable(id: String): typings.devexpressWeb.ScrollExtender = js.native
-  @JSGlobal("ASPxClientTouchUI.MakeScrollable")
-  @js.native
-  def MakeScrollable(id: String, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = js.native
-  @JSGlobal("ASPxClientTouchUI.MakeScrollable")
-  @js.native
-  def MakeScrollable(id: js.Any): typings.devexpressWeb.ScrollExtender = js.native
-  @JSGlobal("ASPxClientTouchUI.MakeScrollable")
-  @js.native
-  def MakeScrollable(id: js.Any, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = js.native
+  @scala.inline
+  def MakeScrollable(id: String): typings.devexpressWeb.ScrollExtender = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  @scala.inline
+  def MakeScrollable(id: String, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  @scala.inline
+  def MakeScrollable(id: js.Any): typings.devexpressWeb.ScrollExtender = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ScrollExtender]
+  @scala.inline
+  def MakeScrollable(id: js.Any, options: typings.devexpressWeb.ASPxClientTouchUIOptions): typings.devexpressWeb.ScrollExtender = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeScrollable")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.devexpressWeb.ScrollExtender]
 }

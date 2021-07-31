@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Globalization.NumberFormatting
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Formats and parses decimal numbers. */
-@js.native
 trait DecimalFormatter extends StObject {
   
   /**
@@ -15,85 +13,85 @@ trait DecimalFormatter extends StObject {
     * @param value The Double value to be formatted.
     * @return A string that represents the number.
     */
-  def format(value: Double): String = js.native
+  def format(value: Double): String
   
   /**
     * Returns a string representation of a Double number.
     * @param value The Double value to be formatted.
     * @return A string that represents the number.
     */
-  def formatDouble(value: Double): String = js.native
+  def formatDouble(value: Double): String
   
   /**
     * Returns a string representation of an Int64 number.
     * @param value The Int64 value to be formatted.
     * @return A string that represents the number.
     */
-  def formatInt(value: Double): String = js.native
+  def formatInt(value: Double): String
   
   /**
     * Returns a string representation of a UInt64 number.
     * @param value The UInt64 value to be formatted.
     * @return A string that represents the number.
     */
-  def formatUInt(value: Double): String = js.native
+  def formatUInt(value: Double): String
   
   /** Gets or sets the minimum number of digits to display for the fraction part of the number. */
-  var fractionDigits: Double = js.native
+  var fractionDigits: Double
   
   /** Gets the region that is used when formatting and parsing decimal numbers. */
-  var geographicRegion: String = js.native
+  var geographicRegion: String
   
   /** Gets or sets the minimum number of digits to display for the integer part of the number. */
-  var integerDigits: Double = js.native
+  var integerDigits: Double
   
   /** Gets or sets whether the decimal point of the number should always be displayed. */
-  var isDecimalPointAlwaysDisplayed: Boolean = js.native
+  var isDecimalPointAlwaysDisplayed: Boolean
   
   /** Gets or sets whether the integer part of the number should be grouped. */
-  var isGrouped: Boolean = js.native
+  var isGrouped: Boolean
   
   /** Gets or sets whether -0 is formatted as "-0" or "0". */
-  var isZeroSigned: Boolean = js.native
+  var isZeroSigned: Boolean
   
   /** Gets the priority list of language identifiers that is used when formatting and parsing decimal numbers. */
-  var languages: IVectorView[String] = js.native
+  var languages: IVectorView[String]
   
   /** Gets or sets the current rounding strategy to be used when formatting numbers. */
-  var numberRounder: INumberRounder = js.native
+  var numberRounder: INumberRounder
   
   /** Gets or sets the numbering system that is used to format and parse decimal numbers. */
-  var numeralSystem: String = js.native
+  var numeralSystem: String
   
   /**
     * Attempts to parse a string representation of a Double number.
     * @param text The text to be parsed.
     * @return If successful, a Double that corresponds to the string representation, and otherwise null.
     */
-  def parseDouble(text: String): Double = js.native
+  def parseDouble(text: String): Double
   
   /**
     * Attempts to parse a string representation of an integer.
     * @param text The text to be parsed.
     * @return If successful, an Int64 that corresponds to the string representation, and otherwise null.
     */
-  def parseInt(text: String): Double = js.native
+  def parseInt(text: String): Double
   
   /**
     * Attempts to parse a string representation of an unsigned integer.
     * @param text The text to be parsed.
     * @return If successful, a UInt64 that corresponds to the string representation, and otherwise null.
     */
-  def parseUInt(text: String): Double = js.native
+  def parseUInt(text: String): Double
   
   /** Gets the geographic region that was most recently used to format or parse decimal values. */
-  var resolvedGeographicRegion: String = js.native
+  var resolvedGeographicRegion: String
   
   /** Gets the language that was most recently used to format or parse decimal values. */
-  var resolvedLanguage: String = js.native
+  var resolvedLanguage: String
   
   /** Gets or sets the current padding to significant digits when a decimal number is formatted. */
-  var significantDigits: Double = js.native
+  var significantDigits: Double
 }
 object DecimalFormatter {
   

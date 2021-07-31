@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusCodes extends StObject {
   
   /**
     * The items (status codes) for an origin group.
     */
-  var Items: StatusCodeList = js.native
+  var Items: StatusCodeList
   
   /**
     * The number of status codes.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object StatusCodes {
   

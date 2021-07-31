@@ -2,26 +2,24 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProtectedResourceOutput extends StObject {
   
   /**
     * The date and time that a resource was last backed up, in Unix format and Coordinated Universal Time (UTC). The value of LastBackupTime is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var LastBackupTime: js.UndefOr[timestamp] = js.native
+  var LastBackupTime: js.UndefOr[timestamp] = js.undefined
   
   /**
     * An ARN that uniquely identifies a resource. The format of the ARN depends on the resource type.
     */
-  var ResourceArn: js.UndefOr[ARN] = js.native
+  var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The type of AWS resource saved as a recovery point; for example, an EBS volume or an Amazon RDS database.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
 }
 object DescribeProtectedResourceOutput {
   

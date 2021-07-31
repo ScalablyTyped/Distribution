@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRepoRequest extends StObject {
   
   /** The new configuration for the repository. */
-  var repo: js.UndefOr[Repo] = js.native
+  var repo: js.UndefOr[Repo] = js.undefined
   
   /** A FieldMask specifying which fields of the repo to modify. Only the fields in the mask will be modified. If no mask is provided, this request is no-op. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateRepoRequest {
   

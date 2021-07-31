@@ -2,13 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResolvedStarterTemplate extends BaseStarterTemplate {
+trait ResolvedStarterTemplate
+  extends StObject
+     with BaseStarterTemplate {
   
-  var archive: String = js.native
+  var archive: String
 }
 object ResolvedStarterTemplate {
   

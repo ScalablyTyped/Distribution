@@ -8,7 +8,6 @@ import typings.loopback.loopbackStrings.post
 import typings.loopback.loopbackStrings.put
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} status    Default HTTP status set when the callback is called without an error.
   * @property {number} errorStatus    Default HTTP status set when the callback is called with an error.
   */
-@js.native
 trait RemoteHttpOptions extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait RemoteHttpOptions extends StObject {
     * {errorStatus: 400}
     * ```
     */
-  var errorStatus: js.UndefOr[Double] = js.native
+  var errorStatus: js.UndefOr[Double] = js.undefined
   
   /**
     * HTTP path (relative to the model) at which the method is exposed.
@@ -35,7 +33,7 @@ trait RemoteHttpOptions extends StObject {
     * http: {path: '/sayhi'}
     * ```
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * status    Default HTTP status set when the callback is called without an error.
@@ -43,7 +41,7 @@ trait RemoteHttpOptions extends StObject {
     * {status: 201}
     * ```
     */
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
   
   /**
     * HTTP method (verb) at which the method is available.
@@ -52,7 +50,7 @@ trait RemoteHttpOptions extends StObject {
     * ```
     * default = post
     */
-  var verb: get | post | patch | put | del | all = js.native
+  var verb: get | post | patch | put | del | all
 }
 object RemoteHttpOptions {
   

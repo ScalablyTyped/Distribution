@@ -12,7 +12,7 @@ A layout and template manager for Backbone.js applications.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 18657 |
+| # downloads        | 20449 |
 | # stars            | 0 |
 
 ## Links

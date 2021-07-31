@@ -3,13 +3,13 @@ package typings.modernizr
 import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndexeddbBoolean extends Boolean {
+trait IndexeddbBoolean
+  extends StObject
+     with Boolean {
   
-  var deletedatabase: scala.Boolean = js.native
+  var deletedatabase: scala.Boolean
 }
 object IndexeddbBoolean {
   

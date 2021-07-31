@@ -7,7 +7,6 @@ import typings.electronPublish.mod.PublishOptions
 import typings.lazyVal.mod.Lazy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gitHubPublisherMod {
@@ -18,17 +17,17 @@ object gitHubPublisherMod {
     def this(context: PublishContext, info: GithubOptions, version: String) = this()
     def this(context: PublishContext, info: GithubOptions, version: String, options: PublishOptions) = this()
     
-    val _release: Lazy[_] = js.native
+    val _release: Lazy[js.Any] = js.native
     
     var createRelease: js.Any = js.native
     
-    def deleteRelease(): js.Promise[_] = js.native
+    def deleteRelease(): js.Promise[js.Any] = js.native
     
     var doUploadFile: js.Any = js.native
     
     var getOrCreateRelease: js.Any = js.native
     
-    def getRelease(): js.Promise[_] = js.native
+    def getRelease(): js.Promise[js.Any] = js.native
     
     var githubRequest: js.Any = js.native
     
@@ -52,20 +51,19 @@ object gitHubPublisherMod {
     val version: js.Any = js.native
   }
   
-  @js.native
   trait Release extends StObject {
     
-    var draft: Boolean = js.native
+    var draft: Boolean
     
-    var id: Double = js.native
+    var id: Double
     
-    var prerelease: Boolean = js.native
+    var prerelease: Boolean
     
-    var published_at: String = js.native
+    var published_at: String
     
-    var tag_name: String = js.native
+    var tag_name: String
     
-    var upload_url: String = js.native
+    var upload_url: String
   }
   object Release {
     

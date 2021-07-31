@@ -16,7 +16,6 @@ import typings.chrome.chromeStrings.dark
 import typings.chrome.chromeStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devtools {
@@ -34,29 +33,24 @@ object devtools {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("chrome.devtools.inspectedWindow.eval")
-    @js.native
-    def eval[T](expression: String): Unit = js.native
-    @JSGlobal("chrome.devtools.inspectedWindow.eval")
-    @js.native
+    @scala.inline
+    def eval[T](expression: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
     def eval[T](
       expression: String,
       callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
-    ): Unit = js.native
-    @JSGlobal("chrome.devtools.inspectedWindow.eval")
-    @js.native
-    def eval[T](expression: String, options: EvalOptions): Unit = js.native
-    @JSGlobal("chrome.devtools.inspectedWindow.eval")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def eval[T](expression: String, options: EvalOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def eval[T](
       expression: String,
       options: EvalOptions,
       callback: js.Function2[/* result */ T, /* exceptionInfo */ EvaluationExceptionInfo, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eval")(expression.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.devtools.inspectedWindow.getResources")
-    @js.native
-    def getResources(callback: js.Function1[/* resources */ js.Array[Resource], Unit]): Unit = js.native
+    @scala.inline
+    def getResources(callback: js.Function1[/* resources */ js.Array[Resource], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getResources")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.inspectedWindow.onResourceAdded")
     @js.native
@@ -70,9 +64,8 @@ object devtools {
     @scala.inline
     def onResourceContentCommitted_=(x: ResourceContentCommittedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResourceContentCommitted")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("chrome.devtools.inspectedWindow.reload")
-    @js.native
-    def reload(reloadOptions: ReloadOptions): Unit = js.native
+    @scala.inline
+    def reload(reloadOptions: ReloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(reloadOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.inspectedWindow.tabId")
     @js.native
@@ -94,9 +87,8 @@ object devtools {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("chrome.devtools.network.getHAR")
-    @js.native
-    def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit = js.native
+    @scala.inline
+    def getHAR(callback: js.Function1[/* harLog */ HARLog, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getHAR")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.network.onNavigated")
     @js.native
@@ -124,17 +116,15 @@ object devtools {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("chrome.devtools.panels.create")
-    @js.native
-    def create(title: String, iconPath: String, pagePath: String): Unit = js.native
-    @JSGlobal("chrome.devtools.panels.create")
-    @js.native
+    @scala.inline
+    def create(title: String, iconPath: String, pagePath: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], iconPath.asInstanceOf[js.Any], pagePath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def create(
       title: String,
       iconPath: String,
       pagePath: String,
       callback: js.Function1[/* panel */ ExtensionPanel, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], iconPath.asInstanceOf[js.Any], pagePath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.panels.elements")
     @js.native
@@ -142,16 +132,13 @@ object devtools {
     @scala.inline
     def elements_=(x: ElementsPanel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("chrome.devtools.panels.openResource")
-    @js.native
-    def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def openResource(url: String, lineNumber: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openResource")(url.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.devtools.panels.setOpenResourceHandler")
-    @js.native
-    def setOpenResourceHandler(): Unit = js.native
-    @JSGlobal("chrome.devtools.panels.setOpenResourceHandler")
-    @js.native
-    def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = js.native
+    @scala.inline
+    def setOpenResourceHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")().asInstanceOf[Unit]
+    @scala.inline
+    def setOpenResourceHandler(callback: js.Function1[/* resource */ Resource, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpenResourceHandler")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("chrome.devtools.panels.sources")
     @js.native

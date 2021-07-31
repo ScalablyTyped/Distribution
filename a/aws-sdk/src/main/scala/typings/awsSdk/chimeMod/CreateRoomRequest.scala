@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRoomRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The idempotency token for the request.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.chimeMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.chimeMod.ClientRequestToken] = js.undefined
   
   /**
     * The room name.
     */
-  var Name: SensitiveString = js.native
+  var Name: SensitiveString
 }
 object CreateRoomRequest {
   

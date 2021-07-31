@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrincipalPermissions extends StObject {
   
   /**
     * The permissions that are granted to the principal.
     */
-  var Permissions: js.UndefOr[PermissionList] = js.native
+  var Permissions: js.UndefOr[PermissionList] = js.undefined
   
   /**
     * The principal who is granted permissions.
     */
-  var Principal: js.UndefOr[DataLakePrincipal] = js.native
+  var Principal: js.UndefOr[DataLakePrincipal] = js.undefined
 }
 object PrincipalPermissions {
   

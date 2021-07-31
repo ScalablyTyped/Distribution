@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRegexMatchSetResponse extends StObject {
   
   /**
     * The ChangeToken that you used to submit the CreateRegexMatchSet request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
     */
-  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.native
+  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.undefined
   
   /**
     * A RegexMatchSet that contains no RegexMatchTuple objects.
     */
-  var RegexMatchSet: js.UndefOr[typings.awsSdk.wafMod.RegexMatchSet] = js.native
+  var RegexMatchSet: js.UndefOr[typings.awsSdk.wafMod.RegexMatchSet] = js.undefined
 }
 object CreateRegexMatchSetResponse {
   

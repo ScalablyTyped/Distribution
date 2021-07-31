@@ -2,37 +2,38 @@ package typings.postgresInterval
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(raw: String): IPostgresInterval = ^.asInstanceOf[js.Dynamic].apply(raw.asInstanceOf[js.Any]).asInstanceOf[IPostgresInterval]
+  
   @JSImport("postgres-interval", JSImport.Namespace)
   @js.native
-  def apply(raw: String): IPostgresInterval = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait IPostgresInterval extends StObject {
     
-    var days: js.UndefOr[Double] = js.native
+    var days: js.UndefOr[Double] = js.undefined
     
-    var hours: js.UndefOr[Double] = js.native
+    var hours: js.UndefOr[Double] = js.undefined
     
-    var milliseconds: js.UndefOr[Double] = js.native
+    var milliseconds: js.UndefOr[Double] = js.undefined
     
-    var minutes: js.UndefOr[Double] = js.native
+    var minutes: js.UndefOr[Double] = js.undefined
     
-    var months: js.UndefOr[Double] = js.native
+    var months: js.UndefOr[Double] = js.undefined
     
-    var seconds: js.UndefOr[Double] = js.native
+    var seconds: js.UndefOr[Double] = js.undefined
     
-    def toISO(): String = js.native
+    def toISO(): String
     
-    def toISOString(): String = js.native
+    def toISOString(): String
     
-    def toPostgres(): String = js.native
+    def toPostgres(): String
     
-    var years: js.UndefOr[Double] = js.native
+    var years: js.UndefOr[Double] = js.undefined
   }
   object IPostgresInterval {
     

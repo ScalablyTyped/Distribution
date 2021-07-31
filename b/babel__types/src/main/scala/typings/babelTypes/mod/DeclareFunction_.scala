@@ -3,31 +3,30 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.DeclareFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait DeclareFunction_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait DeclareFunction_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var predicate: DeclaredPredicate_ | Null = js.native
+  var predicate: DeclaredPredicate_ | Null
   
   @JSName("type")
-  var type_DeclareFunction_ : DeclareFunction = js.native
+  var type_DeclareFunction_ : DeclareFunction
 }
 object DeclareFunction_ {
   
   @scala.inline
-  def apply(id: Identifier_, `type`: DeclareFunction): DeclareFunction_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_): DeclareFunction_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, predicate = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareFunction")
     __obj.asInstanceOf[DeclareFunction_]
   }
   

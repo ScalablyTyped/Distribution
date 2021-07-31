@@ -5,12 +5,13 @@ import typings.ejWebAll.ej.Print
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Print")
 @js.native
-class Print_ protected () extends Print {
+class Print_ protected ()
+  extends StObject
+     with Print {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()

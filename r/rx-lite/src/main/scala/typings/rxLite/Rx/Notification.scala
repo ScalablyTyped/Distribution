@@ -2,7 +2,6 @@ package typings.rxLite.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Notifications
@@ -13,11 +12,6 @@ trait Notification[T] extends StObject {
   def accept[TResult](onNext: js.Function1[/* value */ T, TResult]): TResult = js.native
   def accept[TResult](
     onNext: js.Function1[/* value */ T, TResult],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[TResult]
-  ): TResult = js.native
-  def accept[TResult](
-    onNext: js.Function1[/* value */ T, TResult],
     onError: js.Function1[/* exception */ js.Any, TResult]
   ): TResult = js.native
   def accept[TResult](
@@ -25,6 +19,7 @@ trait Notification[T] extends StObject {
     onError: js.Function1[/* exception */ js.Any, TResult],
     onCompleted: js.Function0[TResult]
   ): TResult = js.native
+  def accept[TResult](onNext: js.Function1[/* value */ T, TResult], onError: Unit, onCompleted: js.Function0[TResult]): TResult = js.native
   
   def equals(other: Notification[T]): Boolean = js.native
   

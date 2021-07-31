@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragmentSelector extends StObject {
   
   /**
     * The origin of the timestamps to use (Server or Producer).
     */
-  var FragmentSelectorType: typings.awsSdk.kinesisvideoarchivedmediaMod.FragmentSelectorType = js.native
+  var FragmentSelectorType: typings.awsSdk.kinesisvideoarchivedmediaMod.FragmentSelectorType
   
   /**
     * The range of timestamps to return.
     */
-  var TimestampRange: typings.awsSdk.kinesisvideoarchivedmediaMod.TimestampRange = js.native
+  var TimestampRange: typings.awsSdk.kinesisvideoarchivedmediaMod.TimestampRange
 }
 object FragmentSelector {
   

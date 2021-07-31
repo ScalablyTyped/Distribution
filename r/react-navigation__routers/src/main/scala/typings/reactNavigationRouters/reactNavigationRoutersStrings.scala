@@ -3,7 +3,6 @@ package typings.reactNavigationRouters
 import typings.reactNavigationRouters.tabRouterMod.BackBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNavigationRoutersStrings {
@@ -74,12 +73,16 @@ object reactNavigationRoutersStrings {
   def drawer: drawer = "drawer".asInstanceOf[drawer]
   
   @js.native
-  sealed trait history extends BackBehavior
+  sealed trait history
+    extends StObject
+       with BackBehavior
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   
   @js.native
-  sealed trait initialRoute extends BackBehavior
+  sealed trait initialRoute
+    extends StObject
+       with BackBehavior
   @scala.inline
   def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
   
@@ -89,12 +92,16 @@ object reactNavigationRoutersStrings {
   def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait none extends BackBehavior
+  sealed trait none
+    extends StObject
+       with BackBehavior
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait order extends BackBehavior
+  sealed trait order
+    extends StObject
+       with BackBehavior
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   

@@ -2,21 +2,19 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key identifier, or name, of the tag.
     */
-  var Key: js.UndefOr[TagKeyType] = js.native
+  var Key: js.UndefOr[TagKeyType] = js.undefined
   
   /**
     * The string value associated with the key of the tag.
     */
-  var Value: js.UndefOr[TagValueType] = js.native
+  var Value: js.UndefOr[TagValueType] = js.undefined
 }
 object Tag {
   

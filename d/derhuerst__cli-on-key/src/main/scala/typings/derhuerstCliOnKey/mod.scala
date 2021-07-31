@@ -3,34 +3,35 @@ package typings.derhuerstCliOnKey
 import typings.node.processMod.global.NodeJS.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(stream: ReadStream, callback: Callback): OffKeyPress = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[OffKeyPress]
+  
   @JSImport("@derhuerst/cli-on-key", JSImport.Namespace)
   @js.native
-  def apply(stream: ReadStream, callback: Callback): OffKeyPress = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function1[/* key */ Key, Unit]
   
-  @js.native
   trait Key extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var ctrl: Boolean = js.native
+    var ctrl: Boolean
     
-    var meta: Boolean = js.native
+    var meta: Boolean
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     // ansi code leaving out leading \x1b's
-    var raw: String = js.native
+    var raw: String
     
-    var sequence: String = js.native
+    var sequence: String
     
-    var shift: Boolean = js.native
+    var shift: Boolean
   }
   object Key {
     

@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Uploadbox extends Widget_ {
+trait Uploadbox
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -35,28 +36,27 @@ trait Uploadbox extends Widget_ {
 }
 object Uploadbox {
   
-  @js.native
   trait BeforeSendEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Selected FileList Object.
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** XHR-AJAX Object for reference.
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeSendEventArgs {
     
@@ -101,28 +101,27 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait BeginEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** To pass additional information to the server.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Selected FileList Object.
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeginEventArgs {
     
@@ -167,24 +166,23 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait ButtonText extends StObject {
     
     /** Sets the text for the close button.
       */
-    var Close: js.UndefOr[String] = js.native
+    var Close: js.UndefOr[String] = js.undefined
     
     /** Sets the text for the browse button.
       */
-    var browse: js.UndefOr[String] = js.native
+    var browse: js.UndefOr[String] = js.undefined
     
     /** Sets the text for the cancel button.
       */
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
     /** Sets the text for the Upload button inside the dialog popup.
       */
-    var upload: js.UndefOr[String] = js.native
+    var upload: js.UndefOr[String] = js.undefined
   }
   object ButtonText {
     
@@ -223,20 +221,19 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait CancelEventArgs extends StObject {
     
     /** Canceled FileList Object.
       */
-    var fileStatus: js.UndefOr[js.Any] = js.native
+    var fileStatus: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CancelEventArgs {
     
@@ -269,32 +266,31 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait CompleteEventArgs extends StObject {
     
     /** AJAX event argument for reference.
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** Uploaded file list.
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** response from the server.
       */
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** XHR-AJAX Object for reference.
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object CompleteEventArgs {
     
@@ -345,16 +341,15 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -381,28 +376,27 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait CustomFileDetails extends StObject {
     
     /** Enables the file upload interactions like remove/cancel in File details of the dialog popup.
       */
-    var action: js.UndefOr[Boolean] = js.native
+    var action: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the name in the File details of the dialog popup.
       */
-    var name: js.UndefOr[Boolean] = js.native
+    var name: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the File size details of the dialog popup.
       */
-    var size: js.UndefOr[Boolean] = js.native
+    var size: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the file uploading status visibility in the dialog file details content.
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the title in File details for the dialog popup.
       */
-    var title: js.UndefOr[Boolean] = js.native
+    var title: js.UndefOr[Boolean] = js.undefined
   }
   object CustomFileDetails {
     
@@ -447,16 +441,15 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -483,24 +476,23 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait DialogAction extends StObject {
     
     /** Once uploaded successfully, the dialog popup closes immediately.
       */
-    var closeOnComplete: js.UndefOr[Boolean] = js.native
+    var closeOnComplete: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the content container option to the Uploadbox dialog popup.
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** Enables the drag option to the dialog popup.
       */
-    var drag: js.UndefOr[Boolean] = js.native
+    var drag: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Uploadbox dialogâ€™s modal property to the dialog popup.
       */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
   }
   object DialogAction {
     
@@ -539,24 +531,23 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait DialogText extends StObject {
     
     /** Sets the uploaded fileâ€™s Name (header text) to the Dialog popup.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Sets the upload file Size (header text) to the dialog popup.
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** Sets the upload file Status (header text) to the dialog popup.
       */
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
     /** Sets the title text of the dialog popup.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object DialogText {
     
@@ -595,24 +586,23 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait ErrorEventArgs extends StObject {
     
     /** error event action details.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** details about the error information.
       */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /** returns the file details of the file uploaded
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ErrorEventArgs {
     
@@ -651,20 +641,19 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait FileSelectEventArgs extends StObject {
     
     /** returns Selected FileList objects
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FileSelectEventArgs {
     
@@ -697,32 +686,31 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait InProgressEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** AJAX event argument for reference.
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** returns Selected FileList objects
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current progress percentage.
       */
-    var percentage: js.UndefOr[js.Any] = js.native
+    var percentage: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object InProgressEventArgs {
     
@@ -773,191 +761,190 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Enables the file drag and drop support to the Uploadbox control.
       * @Default {false}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Uploadbox supports both synchronous and asynchronous upload. This can be achieved by using the asyncUpload property.
       * @Default {true}
       */
-    var asyncUpload: js.UndefOr[Boolean] = js.native
+    var asyncUpload: js.UndefOr[Boolean] = js.undefined
     
     /** Uploadbox supports auto uploading of files after the file selection is done.
       * @Default {false}
       */
-    var autoUpload: js.UndefOr[Boolean] = js.native
+    var autoUpload: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the upload progress beforeSend.
       */
-    var beforeSend: js.UndefOr[js.Function1[/* e */ BeforeSendEventArgs, Unit]] = js.native
+    var beforeSend: js.UndefOr[js.Function1[/* e */ BeforeSendEventArgs, Unit]] = js.undefined
     
     /** Fires when the upload progress begins.
       */
-    var begin: js.UndefOr[js.Function1[/* e */ BeginEventArgs, Unit]] = js.native
+    var begin: js.UndefOr[js.Function1[/* e */ BeginEventArgs, Unit]] = js.undefined
     
     /** Sets the text for each action button.
       * @Default {{browse: Browse, upload: Upload, cancel: Cancel, close: Close}}
       */
-    var buttonText: js.UndefOr[ButtonText] = js.native
+    var buttonText: js.UndefOr[ButtonText] = js.undefined
     
     /** Fires when the upload progress is cancelled.
       */
-    var cancel: js.UndefOr[js.Function1[/* e */ CancelEventArgs, Unit]] = js.native
+    var cancel: js.UndefOr[js.Function1[/* e */ CancelEventArgs, Unit]] = js.undefined
     
     /** Fires when the file upload progress is completed.
       */
-    var complete: js.UndefOr[js.Function1[/* e */ CompleteEventArgs, Unit]] = js.native
+    var complete: js.UndefOr[js.Function1[/* e */ CompleteEventArgs, Unit]] = js.undefined
     
     /** Fires when the Uploadbox control is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root class for the Uploadbox control theme. This cssClass API helps to use custom skinning option for the Uploadbox button and dialog content.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies the custom file details in the dialog popup on initialization.
       * @Default {{ title:true, name:true, size:true, status:true, action:true}}
       */
-    var customFileDetails: js.UndefOr[CustomFileDetails] = js.native
+    var customFileDetails: js.UndefOr[CustomFileDetails] = js.undefined
     
     /** Fires when the Uploadbox control is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the actions for dialog popup while initialization.
       * @Default {{ modal:false, closeOnComplete:false, content:null, drag:true}}
       */
-    var dialogAction: js.UndefOr[DialogAction] = js.native
+    var dialogAction: js.UndefOr[DialogAction] = js.undefined
     
     /** Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the left position value. Y: Dialog sets the top position value.
       * @Default {null}
       */
-    var dialogPosition: js.UndefOr[js.Any] = js.native
+    var dialogPosition: js.UndefOr[js.Any] = js.undefined
     
     /** Property for applying the text to the Dialog title and content headers.
       * @Default {{ title: Upload Box, name: Name, size: Size, status: Status}}
       */
-    var dialogText: js.UndefOr[DialogText] = js.native
+    var dialogText: js.UndefOr[DialogText] = js.undefined
     
     /** Specifies the dropAreaHeight when the drag and drop support is enabled in the Uploadbox control.
       * @Default {100%}
       */
-    var dropAreaHeight: js.UndefOr[Double | String] = js.native
+    var dropAreaHeight: js.UndefOr[Double | String] = js.undefined
     
     /** The dropAreaText is displayed when the drag and drop support is enabled in the Uploadbox control.
       * @Default {Drop files or click to upload}
       */
-    var dropAreaText: js.UndefOr[String] = js.native
+    var dropAreaText: js.UndefOr[String] = js.undefined
     
     /** Specifies the dropAreaWidth when the drag and drop support is enabled in the Uploadbox control.
       * @Default {100%}
       */
-    var dropAreaWidth: js.UndefOr[Double | String] = js.native
+    var dropAreaWidth: js.UndefOr[Double | String] = js.undefined
     
     /** Sets the right-to-left direction property for the Uploadbox control.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Based on the property value, Uploadbox is enabled or disabled.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the Upload process ends in Error.
       */
-    var error: js.UndefOr[js.Function1[/* e */ ErrorEventArgs, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* e */ ErrorEventArgs, Unit]] = js.undefined
     
     /** Only the files with the specified extension is allowed to upload. This is mentioned in the string format.
       */
-    var extensionsAllow: js.UndefOr[String] = js.native
+    var extensionsAllow: js.UndefOr[String] = js.undefined
     
     /** Only the files with the specified extension is denied for upload. This is mentioned in the string format.
       */
-    var extensionsDeny: js.UndefOr[String] = js.native
+    var extensionsDeny: js.UndefOr[String] = js.undefined
     
     /** Fires when the file is selected for upload successfully.
       */
-    var fileSelect: js.UndefOr[js.Function1[/* e */ FileSelectEventArgs, Unit]] = js.native
+    var fileSelect: js.UndefOr[js.Function1[/* e */ FileSelectEventArgs, Unit]] = js.undefined
     
     /** Sets the maximum size limit for uploading the file. This is mentioned in the number format.
       * @Default {31457280}
       */
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
     /** Sets the height of the browse button.
       * @Default {35px}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to uploadbox control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Fires when the file is uploading.
       */
-    var inProgress: js.UndefOr[js.Function1[/* e */ InProgressEventArgs, Unit]] = js.native
+    var inProgress: js.UndefOr[js.Function1[/* e */ InProgressEventArgs, Unit]] = js.undefined
     
     /** Configures the culture data and sets the culture to the Uploadbox.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Enables multiple file selection for upload.
       * @Default {true}
       */
-    var multipleFilesSelection: js.UndefOr[Boolean] = js.native
+    var multipleFilesSelection: js.UndefOr[Boolean] = js.undefined
     
     /** You can push the file to the Uploadbox in the client-side of the XHR supported browsers alone.
       * @Default {null}
       */
-    var pushFile: js.UndefOr[js.Any] = js.native
+    var pushFile: js.UndefOr[js.Any] = js.undefined
     
     /** Fires when the uploaded file is removed successfully.
       */
-    var remove: js.UndefOr[js.Function1[/* e */ RemoveEventArgs, Unit]] = js.native
+    var remove: js.UndefOr[js.Function1[/* e */ RemoveEventArgs, Unit]] = js.undefined
     
     /** Specifies the remove action to be performed after the file uploading is completed. Here, mention the server address for removal.
       */
-    var removeUrl: js.UndefOr[String] = js.native
+    var removeUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the save action to be performed after the file is pushed for uploading. Here, mention the server address to be saved.
       */
-    var saveUrl: js.UndefOr[String] = js.native
+    var saveUrl: js.UndefOr[String] = js.undefined
     
     /** Enables the browse button support to the Uploadbox control.
       * @Default {true}
       */
-    var showBrowseButton: js.UndefOr[Boolean] = js.native
+    var showBrowseButton: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the file details to be displayed when selected for uploading. This can be done when the showFileDetails is set to true.
       * @Default {true}
       */
-    var showFileDetails: js.UndefOr[Boolean] = js.native
+    var showFileDetails: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the file details to be displayed when selected for uploading. This can be done when the showFileDetails is set to true.
       * @Default {true}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the file upload progress is succeeded.
       */
-    var success: js.UndefOr[js.Function1[/* e */ SuccessEventArgs, Unit]] = js.native
+    var success: js.UndefOr[js.Function1[/* e */ SuccessEventArgs, Unit]] = js.undefined
     
     /** Sets the name for the Uploadbox control. This API helps to Map the action in code behind to retrieve the files.
       */
-    var uploadName: js.UndefOr[String] = js.native
+    var uploadName: js.UndefOr[String] = js.undefined
     
     /** Sets the width of the browse button.
       * @Default {100px}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -1212,20 +1199,19 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait RemoveEventArgs extends StObject {
     
     /** returns the file details of the file object
       */
-    var fileStatus: js.UndefOr[js.Any] = js.native
+    var fileStatus: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RemoveEventArgs {
     
@@ -1258,36 +1244,35 @@ object Uploadbox {
     }
   }
   
-  @js.native
   trait SuccessEventArgs extends StObject {
     
     /** AJAX event argument for reference.
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** Uploaded file list.
       */
-    var files: js.UndefOr[js.Any] = js.native
+    var files: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Uploadbox model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** response from the server.
       */
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
     /** successfully uploaded files list.
       */
-    var success: js.UndefOr[js.Any] = js.native
+    var success: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** XHR-AJAX Object for reference.
       */
-    var xhr: js.UndefOr[js.Any] = js.native
+    var xhr: js.UndefOr[js.Any] = js.undefined
   }
   object SuccessEventArgs {
     

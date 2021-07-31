@@ -2,28 +2,26 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsCarouselSelectCarouselItem extends StObject {
   
   /**
     * Body text of the card.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * See google.actions.v2.OptionInfo
     * for details.
     * Required.
     */
-  var optionInfo: js.UndefOr[GoogleActionsV2OptionInfo] = js.native
+  var optionInfo: js.UndefOr[GoogleActionsV2OptionInfo] = js.undefined
   
   /**
     * Title of the carousel item. When tapped, this text will be
@@ -31,7 +29,7 @@ trait GoogleActionsV2UiElementsCarouselSelectCarouselItem extends StObject {
     * Each title must be unique among the set of carousel items.
     * Required.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsCarouselSelectCarouselItem {
   

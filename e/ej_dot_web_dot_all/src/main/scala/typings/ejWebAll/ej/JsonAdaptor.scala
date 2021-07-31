@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonAdaptor extends Adaptor {
+trait JsonAdaptor
+  extends StObject
+     with Adaptor {
   
   def batchRequest(dm: DataManager, changes: Changes, e: js.Any): Changes = js.native
   

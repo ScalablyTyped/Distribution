@@ -2,17 +2,15 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopsProps extends StObject {
   
-  var offset: String = js.native
+  var offset: String
   
-  var stopColor: String = js.native
+  var stopColor: String
   
-  var stopOpacity: String = js.native
+  var stopOpacity: String
 }
 object StopsProps {
   

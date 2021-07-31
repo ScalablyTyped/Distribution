@@ -5,30 +5,23 @@ import typings.escpos.escposNumbers.`24`
 import typings.escpos.escposStrings.EscapeNumbersignNumbersignQPIX
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMD extends StObject {
   
-  var CMD: EscapeNumbersignNumbersignQPIX = js.native
+  var CMD: EscapeNumbersignNumbersignQPIX
   
-  var DEFAULT: `12` = js.native
+  var DEFAULT: `12`
   
-  var MAX: `24` = js.native
+  var MAX: `24`
   
-  var MIN: typings.escpos.escposNumbers.`1` = js.native
+  var MIN: typings.escpos.escposNumbers.`1`
 }
 object CMD {
   
   @scala.inline
-  def apply(
-    CMD: EscapeNumbersignNumbersignQPIX,
-    DEFAULT: `12`,
-    MAX: `24`,
-    MIN: typings.escpos.escposNumbers.`1`
-  ): CMD = {
-    val __obj = js.Dynamic.literal(CMD = CMD.asInstanceOf[js.Any], DEFAULT = DEFAULT.asInstanceOf[js.Any], MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any])
+  def apply(): CMD = {
+    val __obj = js.Dynamic.literal(CMD = "\u001B##QPIX", DEFAULT = 12, MAX = 24, MIN = 1)
     __obj.asInstanceOf[CMD]
   }
   

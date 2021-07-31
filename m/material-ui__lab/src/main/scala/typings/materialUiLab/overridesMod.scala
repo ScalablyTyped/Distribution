@@ -19,47 +19,45 @@ import typings.materialUiLab.treeItemTreeItemMod.TreeItemClassKey
 import typings.materialUiLab.treeViewTreeViewMod.TreeViewClassKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overridesMod {
   
-  @js.native
   trait LabComponentNameToClassKey extends StObject {
     
-    var MuiAlert: AlertClassKey = js.native
+    var MuiAlert: AlertClassKey
     
-    var MuiAlertTitle: AlertTitleClassKey = js.native
+    var MuiAlertTitle: AlertTitleClassKey
     
-    var MuiAutocomplete: AutocompleteClassKey = js.native
+    var MuiAutocomplete: AutocompleteClassKey
     
-    var MuiAvatarGroup: AvatarGroupClassKey = js.native
+    var MuiAvatarGroup: AvatarGroupClassKey
     
-    var MuiPagination: PaginationClassKey = js.native
+    var MuiPagination: PaginationClassKey
     
-    var MuiPaginationItem: PaginationItemClassKey = js.native
+    var MuiPaginationItem: PaginationItemClassKey
     
-    var MuiRating: RatingClassKey = js.native
+    var MuiRating: RatingClassKey
     
-    var MuiSkeleton: SkeletonClassKey = js.native
+    var MuiSkeleton: SkeletonClassKey
     
-    var MuiSpeedDial: SpeedDialClassKey = js.native
+    var MuiSpeedDial: SpeedDialClassKey
     
-    var MuiSpeedDialAction: SpeedDialActionClassKey = js.native
+    var MuiSpeedDialAction: SpeedDialActionClassKey
     
-    var MuiSpeedDialIcon: SpeedDialIconClassKey = js.native
+    var MuiSpeedDialIcon: SpeedDialIconClassKey
     
-    var MuiTabList: TabListClassKey = js.native
+    var MuiTabList: TabListClassKey
     
-    var MuiTabPanel: TabPanelClassKey = js.native
+    var MuiTabPanel: TabPanelClassKey
     
-    var MuiToggleButton: ToggleButtonClassKey = js.native
+    var MuiToggleButton: ToggleButtonClassKey
     
-    var MuiToggleButtonGroup: ToggleButtonGroupClassKey = js.native
+    var MuiToggleButtonGroup: ToggleButtonGroupClassKey
     
-    var MuiTreeItem: TreeItemClassKey = js.native
+    var MuiTreeItem: TreeItemClassKey
     
-    var MuiTreeView: TreeViewClassKey = js.native
+    var MuiTreeView: TreeViewClassKey
   }
   object LabComponentNameToClassKey {
     

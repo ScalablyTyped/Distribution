@@ -2,18 +2,16 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #region 位置API
-@js.native
 trait PageScrollToOptions extends StObject {
   
   /** 滚动动画的时长，默认300ms，单位 ms */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 滚动到页面的目标位置（单位px */
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object PageScrollToOptions {
   

@@ -2,7 +2,6 @@ package typings.dotenvWebpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,8 +12,16 @@ object mod {
     */
   @JSImport("dotenv-webpack", JSImport.Namespace)
   @js.native
-  class ^ () extends DotenvWebpackPlugin {
+  class ^ ()
+    extends StObject
+       with DotenvWebpackPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+    ): Unit = js.native
   }
   
   /**
@@ -22,13 +29,12 @@ object mod {
     * and only exposes what you choose and use.
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ @js.native
-  trait DotenvWebpackPlugin extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ trait DotenvWebpackPlugin extends StObject {
     
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object DotenvWebpackPlugin {
     
@@ -50,7 +56,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -58,44 +63,44 @@ object mod {
       * If false, will throw an error if any env variables are empty (but only if safe mode is enabled).
       * @default false
       */
-    var allowEmptyValues: js.UndefOr[Boolean] = js.native
+    var allowEmptyValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds support for dotenv-defaults. If set to `true`, uses `./.env.defaults`. If a `string`, uses that location for a defaults file.
       * Read more at {@link https://www.npmjs.com/package/dotenv-defaults}.
       * @default false
       */
-    var defaults: js.UndefOr[Boolean | String] = js.native
+    var defaults: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Allows your variables to be "expanded" for reusability within your .env file.
       * @default false
       */
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to your environment variables.
       * @default './.env'.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * If `false` ignore safe-mode, if `true` load `'./.env.example'`, if a `string` load that file as the sample.
       * @default false
       */
-    var safe: js.UndefOr[Boolean | String] = js.native
+    var safe: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * If `true`, all warnings will be surpressed.
       * @default false
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true` if you would rather load all system variables as well (useful for CI purposes).
       * @default false
       */
-    var systemvars: js.UndefOr[Boolean] = js.native
+    var systemvars: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

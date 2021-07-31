@@ -8,29 +8,27 @@ import typings.kiwicomOrbitDesignTokens.anon.PartialStatusColor
 import typings.kiwicomOrbitDesignTokens.anon.PartialWhiteColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPalette extends StObject {
   
-  var blue: js.UndefOr[PartialStatusColor] = js.native
+  var blue: js.UndefOr[PartialStatusColor] = js.undefined
   
-  var cloud: js.UndefOr[PartialCloudColor] = js.native
+  var cloud: js.UndefOr[PartialCloudColor] = js.undefined
   
-  var green: js.UndefOr[PartialStatusColor] = js.native
+  var green: js.UndefOr[PartialStatusColor] = js.undefined
   
-  var ink: js.UndefOr[PartialInkColor] = js.native
+  var ink: js.UndefOr[PartialInkColor] = js.undefined
   
-  var orange: js.UndefOr[PartialStatusColor] = js.native
+  var orange: js.UndefOr[PartialStatusColor] = js.undefined
   
-  var product: js.UndefOr[PartialProductColor] = js.native
+  var product: js.UndefOr[PartialProductColor] = js.undefined
   
-  var red: js.UndefOr[PartialStatusColor] = js.native
+  var red: js.UndefOr[PartialStatusColor] = js.undefined
   
-  var social: js.UndefOr[PartialSocialColor] = js.native
+  var social: js.UndefOr[PartialSocialColor] = js.undefined
   
-  var white: js.UndefOr[PartialWhiteColor] = js.native
+  var white: js.UndefOr[PartialWhiteColor] = js.undefined
 }
 object CustomPalette {
   

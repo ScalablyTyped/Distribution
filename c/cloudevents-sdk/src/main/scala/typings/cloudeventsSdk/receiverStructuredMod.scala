@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.cloudeventsSdk.cloudeventMod.CE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object receiverStructuredMod {
@@ -23,14 +22,41 @@ object receiverStructuredMod {
     *
     * @param {string} version the Cloud Events specification version. Default: 1.0.
     */
-  class ^ () extends StructuredHTTPReceiver {
+  class ^ ()
+    extends StObject
+       with StructuredHTTPReceiver {
     def this(version: String) = this()
+    
+    /**
+      * Checks whether the provided payload and headers conform to the Cloud Events
+      * specification version supported by this instance.
+      *
+      * @param {object} payload the cloud event data payload
+      * @param {object} headers the HTTP headers received for this cloud event
+      * @returns {boolean} true if the payload and header combination are valid
+      * @throws {ValidationError} if the payload and header combination do not conform to the spec
+      */
+    /* CompleteClass */
+    override def check(payload: js.Object, headers: js.Object): Boolean = js.native
+    
+    /**
+      * Creates a new CloudEvent instance based on the provided payload and headers.
+      *
+      * @param {object} payload the cloud event data payload
+      * @param {object} headers  the HTTP headers received for this cloud event
+      * @returns {CloudEvent} a new CloudEvent instance for the provided headers and payload
+      * @throws {ValidationError} if the payload and header combination do not conform to the spec
+      */
+    /* CompleteClass */
+    override def parse(payload: js.Object, headers: js.Object): CloudEvent = js.native
+    
+    /* CompleteClass */
+    var receiver: typings.cloudeventsSdk.receiverStructured1Mod.^ | typings.cloudeventsSdk.receiverStructured03Mod.^ = js.native
   }
   
-  @js.native
   trait CloudEvent extends StObject {
     
-    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
+    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]
   }
   object CloudEvent {
     
@@ -54,7 +80,6 @@ object receiverStructuredMod {
     * over HTTP.
     * @see {StructuredReceiver}
     */
-  @js.native
   trait StructuredHTTPReceiver extends StObject {
     
     /**
@@ -66,7 +91,7 @@ object receiverStructuredMod {
       * @returns {boolean} true if the payload and header combination are valid
       * @throws {ValidationError} if the payload and header combination do not conform to the spec
       */
-    def check(payload: js.Object, headers: js.Object): Boolean = js.native
+    def check(payload: js.Object, headers: js.Object): Boolean
     
     /**
       * Creates a new CloudEvent instance based on the provided payload and headers.
@@ -76,9 +101,9 @@ object receiverStructuredMod {
       * @returns {CloudEvent} a new CloudEvent instance for the provided headers and payload
       * @throws {ValidationError} if the payload and header combination do not conform to the spec
       */
-    def parse(payload: js.Object, headers: js.Object): CloudEvent = js.native
+    def parse(payload: js.Object, headers: js.Object): CloudEvent
     
-    var receiver: typings.cloudeventsSdk.receiverStructured1Mod.^ | typings.cloudeventsSdk.receiverStructured03Mod.^ = js.native
+    var receiver: typings.cloudeventsSdk.receiverStructured1Mod.^ | typings.cloudeventsSdk.receiverStructured03Mod.^
   }
   object StructuredHTTPReceiver {
     

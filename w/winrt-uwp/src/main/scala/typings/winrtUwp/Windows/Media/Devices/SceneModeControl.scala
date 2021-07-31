@@ -4,11 +4,9 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for controlling the scene mode settings on a capture device. */
-@js.native
 trait SceneModeControl extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SceneModeControl extends StObject {
     * @param sceneMode The scene mode to set the Value property to.
     * @return The object that is used to control the asynchronous operation.
     */
-  def setValueAsync(sceneMode: CaptureSceneMode): IPromiseWithIAsyncAction = js.native
+  def setValueAsync(sceneMode: CaptureSceneMode): IPromiseWithIAsyncAction
   
   /** Gets the scene modes supported on the capture device. */
-  var supportedModes: IVectorView[CaptureSceneMode] = js.native
+  var supportedModes: IVectorView[CaptureSceneMode]
   
   /** Gets the current scene mod ethe capture device is set to. */
-  var value: CaptureSceneMode = js.native
+  var value: CaptureSceneMode
 }
 object SceneModeControl {
   

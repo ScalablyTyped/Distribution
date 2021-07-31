@@ -2,13 +2,11 @@ package typings.mssql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBulkResult extends StObject {
   
-  var rowsAffected: Double = js.native
+  var rowsAffected: Double
 }
 object IBulkResult {
   

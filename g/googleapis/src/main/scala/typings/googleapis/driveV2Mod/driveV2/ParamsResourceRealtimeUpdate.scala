@@ -7,16 +7,16 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRealtimeUpdate extends StandardParameters {
+trait ParamsResourceRealtimeUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The revision of the model to diff the uploaded model against. If set, the
@@ -25,17 +25,17 @@ trait ParamsResourceRealtimeUpdate extends StandardParameters {
     * provided revision. If not set, the uploaded model replaces the current
     * model on the server.
     */
-  var baseRevision: js.UndefOr[String] = js.native
+  var baseRevision: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the file that the Realtime API data model is associated with.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
 }
 object ParamsResourceRealtimeUpdate {
   

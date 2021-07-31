@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMylibraryAnnotationsSummary extends StandardParameters {
+trait ParamsResourceMylibraryAnnotationsSummary
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Array of layer IDs to get the summary for.
     */
-  var layerIds: js.UndefOr[js.Array[String]] = js.native
+  var layerIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Volume id to get the summary for.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMylibraryAnnotationsSummary {
   

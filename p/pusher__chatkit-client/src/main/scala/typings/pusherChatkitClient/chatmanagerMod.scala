@@ -12,7 +12,6 @@ import typings.pusherChatkitClient.roomMod.PusherRoom
 import typings.pusherChatkitClient.userMod.PusherUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chatmanagerMod {
@@ -37,7 +36,8 @@ object chatmanagerMod {
   @JSImport("@pusher/chatkit-client/chatmanager", "ChatManager")
   @js.native
   class ChatManagerCls protected ()
-    extends typings.pusherChatkitClient.chatmanagerMod.ChatManager {
+    extends StObject
+       with typings.pusherChatkitClient.chatmanagerMod.ChatManager {
     def this(args: ChatManagerConstructorArgs) = this()
   }
   
@@ -47,21 +47,21 @@ object chatmanagerMod {
   
   @js.native
   trait ChatManagerConstructor
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           /* args */ ChatManagerConstructorArgs, 
           typings.pusherChatkitClient.chatmanagerMod.ChatManager
         ]
   
-  @js.native
   trait ChatManagerConstructorArgs extends StObject {
     
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
-    var instanceLocator: String = js.native
+    var instanceLocator: String
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var userId: String = js.native
+    var userId: String
   }
   object ChatManagerConstructorArgs {
     
@@ -94,100 +94,184 @@ object chatmanagerMod {
     }
   }
   
-  @js.native
   trait GlobalHooks extends StObject {
     
-    def onAddedToRoom(room: PusherRoom): Unit = js.native
+    def onAddedToRoom(room: PusherRoom): Unit
     @JSName("onAddedToRoom")
-    var onAddedToRoom_Original: RoomHook = js.native
+    var onAddedToRoom_Original: RoomHook
     
-    def onNewReadCursor(room: PusherRoom, user: PusherUser): Unit = js.native
+    def onNewReadCursor(room: PusherRoom, user: PusherUser): Unit
     @JSName("onNewReadCursor")
-    var onNewReadCursor_Original: RoomUserHook = js.native
+    var onNewReadCursor_Original: RoomUserHook
     
-    def onPresenceChanged(state: UserPresenceState, user: PusherUser): Unit = js.native
+    def onPresenceChanged(state: UserPresenceState, user: PusherUser): Unit
     @JSName("onPresenceChanged")
-    var onPresenceChanged_Original: UserPresenceHook = js.native
+    var onPresenceChanged_Original: UserPresenceHook
     
-    def onRemovedFromRoom(room: PusherRoom): Unit = js.native
+    def onRemovedFromRoom(room: PusherRoom): Unit
     @JSName("onRemovedFromRoom")
-    var onRemovedFromRoom_Original: RoomHook = js.native
+    var onRemovedFromRoom_Original: RoomHook
     
-    def onRoomDeleted(room: PusherRoom): Unit = js.native
+    def onRoomDeleted(room: PusherRoom): Unit
     @JSName("onRoomDeleted")
-    var onRoomDeleted_Original: RoomHook = js.native
+    var onRoomDeleted_Original: RoomHook
     
-    def onRoomUpdated(room: PusherRoom): Unit = js.native
+    def onRoomUpdated(room: PusherRoom): Unit
     @JSName("onRoomUpdated")
-    var onRoomUpdated_Original: RoomHook = js.native
+    var onRoomUpdated_Original: RoomHook
     
-    def onUserJoinedRoom(room: PusherRoom, user: PusherUser): Unit = js.native
+    def onUserJoinedRoom(room: PusherRoom, user: PusherUser): Unit
     @JSName("onUserJoinedRoom")
-    var onUserJoinedRoom_Original: RoomUserHook = js.native
+    var onUserJoinedRoom_Original: RoomUserHook
     
-    def onUserLeftRoom(room: PusherRoom, user: PusherUser): Unit = js.native
+    def onUserLeftRoom(room: PusherRoom, user: PusherUser): Unit
     @JSName("onUserLeftRoom")
-    var onUserLeftRoom_Original: RoomUserHook = js.native
+    var onUserLeftRoom_Original: RoomUserHook
     
-    def onUserStartedTyping(room: PusherRoom, user: PusherUser): Unit = js.native
+    def onUserStartedTyping(room: PusherRoom, user: PusherUser): Unit
     @JSName("onUserStartedTyping")
-    var onUserStartedTyping_Original: RoomUserHook = js.native
+    var onUserStartedTyping_Original: RoomUserHook
     
-    def onUserStoppedTyping(room: PusherRoom, user: PusherUser): Unit = js.native
+    def onUserStoppedTyping(room: PusherRoom, user: PusherUser): Unit
     @JSName("onUserStoppedTyping")
-    var onUserStoppedTyping_Original: RoomUserHook = js.native
+    var onUserStoppedTyping_Original: RoomUserHook
+  }
+  object GlobalHooks {
+    
+    @scala.inline
+    def apply(
+      onAddedToRoom: /* room */ PusherRoom => Unit,
+      onNewReadCursor: (/* room */ PusherRoom, /* user */ PusherUser) => Unit,
+      onPresenceChanged: (/* state */ UserPresenceState, /* user */ PusherUser) => Unit,
+      onRemovedFromRoom: /* room */ PusherRoom => Unit,
+      onRoomDeleted: /* room */ PusherRoom => Unit,
+      onRoomUpdated: /* room */ PusherRoom => Unit,
+      onUserJoinedRoom: (/* room */ PusherRoom, /* user */ PusherUser) => Unit,
+      onUserLeftRoom: (/* room */ PusherRoom, /* user */ PusherUser) => Unit,
+      onUserStartedTyping: (/* room */ PusherRoom, /* user */ PusherUser) => Unit,
+      onUserStoppedTyping: (/* room */ PusherRoom, /* user */ PusherUser) => Unit
+    ): GlobalHooks = {
+      val __obj = js.Dynamic.literal(onAddedToRoom = js.Any.fromFunction1(onAddedToRoom), onNewReadCursor = js.Any.fromFunction2(onNewReadCursor), onPresenceChanged = js.Any.fromFunction2(onPresenceChanged), onRemovedFromRoom = js.Any.fromFunction1(onRemovedFromRoom), onRoomDeleted = js.Any.fromFunction1(onRoomDeleted), onRoomUpdated = js.Any.fromFunction1(onRoomUpdated), onUserJoinedRoom = js.Any.fromFunction2(onUserJoinedRoom), onUserLeftRoom = js.Any.fromFunction2(onUserLeftRoom), onUserStartedTyping = js.Any.fromFunction2(onUserStartedTyping), onUserStoppedTyping = js.Any.fromFunction2(onUserStoppedTyping))
+      __obj.asInstanceOf[GlobalHooks]
+    }
+    
+    @scala.inline
+    implicit class GlobalHooksMutableBuilder[Self <: GlobalHooks] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnAddedToRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onAddedToRoom", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnNewReadCursor(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onNewReadCursor", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnPresenceChanged(value: (/* state */ UserPresenceState, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onPresenceChanged", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnRemovedFromRoom(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRemovedFromRoom", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnRoomDeleted(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRoomDeleted", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnRoomUpdated(value: /* room */ PusherRoom => Unit): Self = StObject.set(x, "onRoomUpdated", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnUserJoinedRoom(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserJoinedRoom", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnUserLeftRoom(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserLeftRoom", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnUserStartedTyping(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserStartedTyping", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnUserStoppedTyping(value: (/* room */ PusherRoom, /* user */ PusherUser) => Unit): Self = StObject.set(x, "onUserStoppedTyping", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait Logger extends StObject {
     
     def debug(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): Unit = js.native
+    ): Unit
     @JSName("debug")
-    var debug_Original: LoggerFunction = js.native
+    var debug_Original: LoggerFunction
     
     def error(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): Unit = js.native
+    ): Unit
     @JSName("error")
-    var error_Original: LoggerFunction = js.native
+    var error_Original: LoggerFunction
     
     def info(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): Unit = js.native
+    ): Unit
     @JSName("info")
-    var info_Original: LoggerFunction = js.native
+    var info_Original: LoggerFunction
     
     def verbose(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): Unit = js.native
+    ): Unit
     @JSName("verbose")
-    var verbose_Original: LoggerFunction = js.native
+    var verbose_Original: LoggerFunction
     
     def warn(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-    ): Unit = js.native
+    ): Unit
     @JSName("warn")
-    var warn_Original: LoggerFunction = js.native
+    var warn_Original: LoggerFunction
+  }
+  object Logger {
+    
+    @scala.inline
+    def apply(
+      debug: /* args */ js.Any => Unit,
+      error: /* args */ js.Any => Unit,
+      info: /* args */ js.Any => Unit,
+      verbose: /* args */ js.Any => Unit,
+      warn: /* args */ js.Any => Unit
+    ): Logger = {
+      val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), verbose = js.Any.fromFunction1(verbose), warn = js.Any.fromFunction1(warn))
+      __obj.asInstanceOf[Logger]
+    }
+    
+    @scala.inline
+    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDebug(value: /* args */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setError(value: /* args */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setInfo(value: /* args */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setVerbose(value: /* args */ js.Any => Unit): Self = StObject.set(x, "verbose", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setWarn(value: /* args */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    }
   }
   
   type LoggerFunction = js.Function1[/* args */ js.Any, Unit]
   
   @js.native
   trait TokenProviderConstructor
-    extends Instantiable1[/* args */ TokenProviderConstructorArgs, js.Object]
+    extends StObject
+       with Instantiable1[/* args */ TokenProviderConstructorArgs, js.Object]
   
-  @js.native
   trait TokenProviderConstructorArgs extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var queryParams: js.UndefOr[js.Any] = js.native
+    var queryParams: js.UndefOr[js.Any] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object TokenProviderConstructorArgs {
     

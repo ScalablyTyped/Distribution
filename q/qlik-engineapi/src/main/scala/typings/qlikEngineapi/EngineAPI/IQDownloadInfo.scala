@@ -2,21 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IQDownloadInfo extends StObject {
   
   /**
     * FileSize of the generated QVF
     */
-  var qFileSize: Double = js.native
+  var qFileSize: Double
   
   /**
     * URL of the generated QVF
     */
-  var qUrl: String = js.native
+  var qUrl: String
 }
 object IQDownloadInfo {
   

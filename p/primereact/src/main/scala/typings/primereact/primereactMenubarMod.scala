@@ -3,7 +3,6 @@ package typings.primereact
 import typings.primereact.menubarMod.MenubarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object primereactMenubarMod {

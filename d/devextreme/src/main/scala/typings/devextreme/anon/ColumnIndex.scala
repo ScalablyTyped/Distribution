@@ -7,41 +7,39 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnIndex extends StObject {
   
-  var cellElement: js.UndefOr[dxElement] = js.native
+  var cellElement: js.UndefOr[dxElement] = js.undefined
   
-  var column: js.UndefOr[dxDataGridColumn] = js.native
+  var column: js.UndefOr[dxDataGridColumn] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var displayValue: js.UndefOr[js.Any] = js.native
+  var displayValue: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowType: js.UndefOr[String] = js.native
+  var rowType: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnIndex {
   

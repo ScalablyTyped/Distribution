@@ -2,46 +2,44 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListedServer extends StObject {
   
   /**
     * Specifies the unique Amazon Resource Name (ARN) for a server to be listed.
     */
-  var Arn: typings.awsSdk.transferMod.Arn = js.native
+  var Arn: typings.awsSdk.transferMod.Arn
   
   /**
     * Specifies the type of VPC endpoint that your server is connected to. If your server is connected to a VPC endpoint, your server isn't accessible over the public internet.
     */
-  var EndpointType: js.UndefOr[typings.awsSdk.transferMod.EndpointType] = js.native
+  var EndpointType: js.UndefOr[typings.awsSdk.transferMod.EndpointType] = js.undefined
   
   /**
     * Specifies the authentication method used to validate a user for a server that was specified. This can include Secure Shell (SSH), user name and password combinations, or your own custom authentication method. Valid values include SERVICE_MANAGED or API_GATEWAY.
     */
-  var IdentityProviderType: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderType] = js.native
+  var IdentityProviderType: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderType] = js.undefined
   
   /**
     * Specifies the AWS Identity and Access Management (IAM) role that allows a server to turn on Amazon CloudWatch logging.
     */
-  var LoggingRole: js.UndefOr[Role] = js.native
+  var LoggingRole: js.UndefOr[Role] = js.undefined
   
   /**
     * Specifies the unique system assigned identifier for the servers that were listed.
     */
-  var ServerId: js.UndefOr[typings.awsSdk.transferMod.ServerId] = js.native
+  var ServerId: js.UndefOr[typings.awsSdk.transferMod.ServerId] = js.undefined
   
   /**
     * Specifies the condition of a server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
     */
-  var State: js.UndefOr[typings.awsSdk.transferMod.State] = js.native
+  var State: js.UndefOr[typings.awsSdk.transferMod.State] = js.undefined
   
   /**
     * Specifies the number of users that are assigned to a server you specified with the ServerId.
     */
-  var UserCount: js.UndefOr[typings.awsSdk.transferMod.UserCount] = js.native
+  var UserCount: js.UndefOr[typings.awsSdk.transferMod.UserCount] = js.undefined
 }
 object ListedServer {
   

@@ -3,19 +3,17 @@ package typings.openlayers.mod.olx
 import typings.openlayers.mod.layer.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with options for the {@link ol.Map#forEachFeatureAtPixel} and
   * {@link ol.Map#hasFeatureAtPixel} methods.
   */
-@js.native
 trait AtPixelOptions extends StObject {
   
-  var hitTolerance: js.UndefOr[Double] = js.native
+  var hitTolerance: js.UndefOr[Double] = js.undefined
   
-  var layerFilter: js.UndefOr[js.Function1[/* layer */ Layer, Boolean]] = js.native
+  var layerFilter: js.UndefOr[js.Function1[/* layer */ Layer, Boolean]] = js.undefined
 }
 object AtPixelOptions {
   

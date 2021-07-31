@@ -2,46 +2,44 @@ package typings.awsSdk.connectparticipantMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTranscriptRequest extends StObject {
   
   /**
     * The authentication token associated with the participant's connection.
     */
-  var ConnectionToken: ParticipantToken = js.native
+  var ConnectionToken: ParticipantToken
   
   /**
     * The contactId from the current contact chain for which transcript is needed.
     */
-  var ContactId: js.UndefOr[typings.awsSdk.connectparticipantMod.ContactId] = js.native
+  var ContactId: js.UndefOr[typings.awsSdk.connectparticipantMod.ContactId] = js.undefined
   
   /**
     * The maximum number of results to return in the page. Default: 10. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.connectparticipantMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.connectparticipantMod.MaxResults] = js.undefined
   
   /**
     * The pagination token. Use the value returned previously in the next subsequent request to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.connectparticipantMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.connectparticipantMod.NextToken] = js.undefined
   
   /**
     * The direction from StartPosition from which to retrieve message. Default: BACKWARD when no StartPosition is provided, FORWARD with StartPosition. 
     */
-  var ScanDirection: js.UndefOr[typings.awsSdk.connectparticipantMod.ScanDirection] = js.native
+  var ScanDirection: js.UndefOr[typings.awsSdk.connectparticipantMod.ScanDirection] = js.undefined
   
   /**
     * The sort order for the records. Default: DESCENDING.
     */
-  var SortOrder: js.UndefOr[SortKey] = js.native
+  var SortOrder: js.UndefOr[SortKey] = js.undefined
   
   /**
     * A filtering option for where to start.
     */
-  var StartPosition: js.UndefOr[typings.awsSdk.connectparticipantMod.StartPosition] = js.native
+  var StartPosition: js.UndefOr[typings.awsSdk.connectparticipantMod.StartPosition] = js.undefined
 }
 object GetTranscriptRequest {
   

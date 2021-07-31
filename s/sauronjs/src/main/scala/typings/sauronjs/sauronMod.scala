@@ -4,25 +4,24 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.sauronjs.anon.TypeofComponent
 import typings.sauronjs.componentMod.ComponentParameters
-import typings.sauronjs.componentMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sauronMod {
   
-  @JSImport("sauronjs/src/core/sauron", JSImport.Namespace)
-  @js.native
-  def apply(componentMap: SauronComponentMap): SauronInstance = js.native
-  @JSImport("sauronjs/src/core/sauron", JSImport.Namespace)
-  @js.native
-  def apply(componentMap: SauronComponentMap, id: String): SauronInstance = js.native
+  @scala.inline
+  def apply(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
+  @scala.inline
+  def apply(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
   
+  @JSImport("sauronjs/src/core/sauron", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Info extends StObject {
     
-    var total: Double = js.native
+    var total: Double
   }
   object Info {
     
@@ -40,7 +39,9 @@ object sauronMod {
     }
   }
   
-  type SauronComponentMap = StringDictionary[TypeofComponent with (Instantiable1[/* params */ ComponentParameters, ^])]
+  type SauronComponentMap = StringDictionary[
+    TypeofComponent & (Instantiable1[/* params */ ComponentParameters, typings.sauronjs.componentMod.^])
+  ]
   
   @js.native
   trait SauronInstance extends StObject {

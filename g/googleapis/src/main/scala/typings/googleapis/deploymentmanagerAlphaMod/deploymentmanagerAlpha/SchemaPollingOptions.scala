@@ -2,38 +2,36 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPollingOptions extends StObject {
   
   /**
     * An array of diagnostics to be collected by Deployment Manager, these
     * diagnostics will be displayed to the user.
     */
-  var diagnostics: js.UndefOr[js.Array[SchemaDiagnostic]] = js.native
+  var diagnostics: js.UndefOr[js.Array[SchemaDiagnostic]] = js.undefined
   
   /**
     * JsonPath expression that determines if the request failed.
     */
-  var failCondition: js.UndefOr[String] = js.native
+  var failCondition: js.UndefOr[String] = js.undefined
   
   /**
     * JsonPath expression that determines if the request is completed.
     */
-  var finishCondition: js.UndefOr[String] = js.native
+  var finishCondition: js.UndefOr[String] = js.undefined
   
   /**
     * JsonPath expression that evaluates to string, it indicates where to poll.
     */
-  var pollingLink: js.UndefOr[String] = js.native
+  var pollingLink: js.UndefOr[String] = js.undefined
   
   /**
     * JsonPath expression, after polling is completed, indicates where to fetch
     * the resource.
     */
-  var targetLink: js.UndefOr[String] = js.native
+  var targetLink: js.UndefOr[String] = js.undefined
 }
 object SchemaPollingOptions {
   

@@ -2,21 +2,19 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Leg extends StObject {
   
-  var leg: js.Array[Maneuver] = js.native
+  var leg: js.Array[Maneuver]
   
-  var mode: Feature = js.native
+  var mode: Feature
   
-  var shape: js.Array[String] = js.native
+  var shape: js.Array[String]
   
-  var summary: BaseTime = js.native
+  var summary: BaseTime
   
-  var waypoint: js.Array[Label] = js.native
+  var waypoint: js.Array[Label]
 }
 object Leg {
   

@@ -10,14 +10,16 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String, callback: ExifCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("exif", JSImport.Namespace)
   @js.native
-  def apply(path: String, callback: ExifCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("exif", "ExifImage")
   @js.native
@@ -32,24 +34,23 @@ object mod {
   
   type ExifCallback = js.Function3[/* error */ Error | Null, /* data */ ExifData, /* dataPath */ String, Unit]
   
-  @js.native
   trait ExifData extends StObject {
     
-    var exif: ApertureValue = js.native
+    var exif: ApertureValue
     
     /**
       * Entire GPS Tags from https://exiftool.org/TagNames/GPS.html are listed.
       * And their types are determined from http://www.exif.org/Exif2-2.PDF.
       */
-    var gps: GPSAltitude = js.native
+    var gps: GPSAltitude
     
-    var image: Copyright = js.native
+    var image: Copyright
     
-    var interoperability: InteropIndex = js.native
+    var interoperability: InteropIndex
     
-    var makernote: AutoBracketing = js.native
+    var makernote: AutoBracketing
     
-    var thumbnail: Compression = js.native
+    var thumbnail: Compression
   }
   object ExifData {
     
@@ -91,46 +92,45 @@ object mod {
   
   type ExifImageCallback = js.Function2[/* error */ Error | Null, /* data */ ExifData, Unit]
   
-  @js.native
   trait ExifOptions extends StObject {
     
-    var agfaMaxEntries: js.UndefOr[Double] = js.native
+    var agfaMaxEntries: js.UndefOr[Double] = js.undefined
     
-    var epsonMaxEntries: js.UndefOr[Double] = js.native
+    var epsonMaxEntries: js.UndefOr[Double] = js.undefined
     
     /** node-exif corrects the thumbnail offset in order to have an offset from the start of the buffer/file. */
-    var fixThumbnailOffset: js.UndefOr[Boolean] = js.native
+    var fixThumbnailOffset: js.UndefOr[Boolean] = js.undefined
     
-    var fujifilmMaxEntries: js.UndefOr[Double] = js.native
+    var fujifilmMaxEntries: js.UndefOr[Double] = js.undefined
     
-    var ifd0MaxEntries: js.UndefOr[Double] = js.native
+    var ifd0MaxEntries: js.UndefOr[Double] = js.undefined
     
-    var ifd1MaxEntries: js.UndefOr[Double] = js.native
+    var ifd1MaxEntries: js.UndefOr[Double] = js.undefined
     
     /**
       * The image to get Exif data from can be either a filesystem path or a Buffer.
       *
       * If `image` is not specified, the developer must call `loadImage()` to parse the image.
       */
-    var image: js.UndefOr[String | Buffer] = js.native
+    var image: js.UndefOr[String | Buffer] = js.undefined
     
     /** Specifies the maximum entries to be parsed */
-    var maxEntries: js.UndefOr[Double] = js.native
+    var maxEntries: js.UndefOr[Double] = js.undefined
     
-    var maxGpsEntries: js.UndefOr[Double] = js.native
+    var maxGpsEntries: js.UndefOr[Double] = js.undefined
     
-    var maxInteroperabilityEntries: js.UndefOr[Double] = js.native
+    var maxInteroperabilityEntries: js.UndefOr[Double] = js.undefined
     
-    var noPadding: js.UndefOr[Boolean] = js.native
+    var noPadding: js.UndefOr[Boolean] = js.undefined
     
-    var olympusMaxEntries: js.UndefOr[Double] = js.native
+    var olympusMaxEntries: js.UndefOr[Double] = js.undefined
     
-    var panasonicMaxEntries: js.UndefOr[Double] = js.native
+    var panasonicMaxEntries: js.UndefOr[Double] = js.undefined
     
-    var sanyoMaxEntries: js.UndefOr[Double] = js.native
+    var sanyoMaxEntries: js.UndefOr[Double] = js.undefined
     
     /** An object named "offsets" is added to exifData and contains lot of offsets needed to get thumbnail and other things. */
-    var tiffOffsets: js.UndefOr[Double] = js.native
+    var tiffOffsets: js.UndefOr[Double] = js.undefined
   }
   object ExifOptions {
     

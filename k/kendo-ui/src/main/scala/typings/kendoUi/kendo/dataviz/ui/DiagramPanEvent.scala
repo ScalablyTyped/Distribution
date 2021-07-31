@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.diagram.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramPanEvent extends DiagramEvent {
+trait DiagramPanEvent
+  extends StObject
+     with DiagramEvent {
   
-  var pan: js.UndefOr[Point] = js.native
+  var pan: js.UndefOr[Point] = js.undefined
 }
 object DiagramPanEvent {
   

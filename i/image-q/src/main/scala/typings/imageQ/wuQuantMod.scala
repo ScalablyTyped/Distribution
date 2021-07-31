@@ -5,7 +5,6 @@ import typings.imageQ.pointContainerMod.PointContainer
 import typings.imageQ.utilsPaletteMod.Palette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wuQuantMod {
@@ -40,12 +39,12 @@ object wuQuantMod {
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
     def this(
       colorDistanceCalculator: AbstractDistanceCalculator,
-      colors: js.UndefOr[scala.Nothing],
+      colors: Double,
       significantBitsPerChannel: Double
     ) = this()
     def this(
       colorDistanceCalculator: AbstractDistanceCalculator,
-      colors: Double,
+      colors: Unit,
       significantBitsPerChannel: Double
     ) = this()
     
@@ -133,33 +132,33 @@ object wuQuantMod {
   /* static members */
   object WuQuant {
     
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Splits the cube in a given color direction at its minimum.
       */
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._bottom")
-    @js.native
-    def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = js.native
+    @scala.inline
+    def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_bottom")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Splits the cube in given position][and color direction.
       */
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._top")
-    @js.native
-    def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = js.native
+    @scala.inline
+    def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_top")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], position.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._volume")
-    @js.native
-    def _volume(cube: js.Any, moment: js.Any): js.Any = js.native
+    @scala.inline
+    def _volume(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volume")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._volumeFloat")
-    @js.native
-    def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = js.native
+    @scala.inline
+    def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volumeFloat")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.alpha")
     @js.native

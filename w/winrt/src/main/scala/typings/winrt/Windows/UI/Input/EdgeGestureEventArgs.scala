@@ -2,11 +2,11 @@ package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EdgeGestureEventArgs extends IEdgeGestureEventArgs
+trait EdgeGestureEventArgs
+  extends StObject
+     with IEdgeGestureEventArgs
 object EdgeGestureEventArgs {
   
   @scala.inline

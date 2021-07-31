@@ -11,7 +11,6 @@ import typings.storybookComponents.storybookComponentsStrings.hover
 import typings.storybookComponents.storybookComponentsStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withTooltipMod {
@@ -28,10 +27,9 @@ object withTooltipMod {
   @js.native
   val WithTooltipPure: FunctionComponent[WithTooltipPureProps] = js.native
   
-  @js.native
   trait WithHideFn extends StObject {
     
-    def onHide(): Unit = js.native
+    def onHide(): Unit
   }
   object WithHideFn {
     
@@ -49,30 +47,29 @@ object withTooltipMod {
     }
   }
   
-  @js.native
   trait WithTooltipPureProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var hasChrome: js.UndefOr[Boolean] = js.native
+    var hasChrome: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[js.Array[PartialModifierstring]] = js.native
+    var modifiers: js.UndefOr[js.Array[PartialModifierstring]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDoubleClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit]] = js.native
+    var onVisibilityChange: js.UndefOr[js.Function1[/* visibility */ Boolean, Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var svg: js.UndefOr[Boolean] = js.native
+    var svg: js.UndefOr[Boolean] = js.undefined
     
-    var tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode]) = js.native
+    var tooltip: ReactNode | (js.Function1[/* p */ WithHideFn, ReactNode])
     
-    var tooltipShown: js.UndefOr[Boolean] = js.native
+    var tooltipShown: js.UndefOr[Boolean] = js.undefined
     
-    var trigger: js.UndefOr[none | hover | click | `right-click`] = js.native
+    var trigger: js.UndefOr[none | hover | click | `right-click`] = js.undefined
   }
   object WithTooltipPureProps {
     

@@ -4,11 +4,12 @@ import typings.std.Node
 import typings.std.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangySelection extends Selection {
+trait RangySelection
+  extends StObject
+     with Selection {
   
   def detach(): js.Any = js.native
   

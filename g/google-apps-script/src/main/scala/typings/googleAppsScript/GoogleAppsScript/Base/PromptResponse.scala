@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,12 +23,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       Logger.log('The user clicked the close button in the dialog\'s title bar.');
   *     }
   */
-@js.native
 trait PromptResponse extends StObject {
   
-  def getResponseText(): String = js.native
+  def getResponseText(): String
   
-  def getSelectedButton(): Button = js.native
+  def getSelectedButton(): Button
 }
 object PromptResponse {
   

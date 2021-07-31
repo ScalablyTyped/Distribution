@@ -4,24 +4,22 @@ import typings.rollup.rollupStrings.asset
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreRenderedAsset extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var source: String | Uint8Array = js.native
+  var source: String | Uint8Array
   
-  var `type`: asset = js.native
+  var `type`: asset
 }
 object PreRenderedAsset {
   
   @scala.inline
-  def apply(source: String | Uint8Array, `type`: asset): PreRenderedAsset = {
+  def apply(source: String | Uint8Array): PreRenderedAsset = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[PreRenderedAsset]
   }
   

@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileAttachment extends Attachment {
+trait FileAttachment
+  extends StObject
+     with Attachment {
   
   // The base64-encoded contents of the file.
-  var contentBytes: js.UndefOr[NullableOption[Double]] = js.native
+  var contentBytes: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The ID of the attachment in the Exchange store.
-  var contentId: js.UndefOr[NullableOption[String]] = js.native
+  var contentId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Do not use this property as it is not supported.
-  var contentLocation: js.UndefOr[NullableOption[String]] = js.native
+  var contentLocation: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FileAttachment {
   

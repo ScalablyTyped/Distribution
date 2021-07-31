@@ -3,7 +3,6 @@ package typings.wordpressCustomizeBrowser
 import typings.wordpressCustomizeBrowser.anon.Choice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalMod {
@@ -14,10 +13,9 @@ object externalMod {
     def this(_underscore: Choice) = this()
   }
   
-  @js.native
   trait Attachment extends StObject {
     
-    def get(_underscore: String): js.Any = js.native
+    def get(_underscore: String): js.Any
   }
   object Attachment {
     
@@ -35,13 +33,12 @@ object externalMod {
     }
   }
   
-  @js.native
   trait Cropper extends StObject {
     
-    def get(_underscore: String): js.Any = js.native
+    def get(_underscore: String): js.Any
     
     // TODO
-    def set(_1: String, _2: js.Any): Unit = js.native
+    def set(_1: String, _2: js.Any): Unit
   }
   object Cropper {
     
@@ -62,16 +59,15 @@ object externalMod {
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var _canInstall: Boolean = js.native
+    var _canInstall: Boolean
     
-    var _filesystemCredentialsNeeded: Boolean = js.native
+    var _filesystemCredentialsNeeded: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Theme {
     

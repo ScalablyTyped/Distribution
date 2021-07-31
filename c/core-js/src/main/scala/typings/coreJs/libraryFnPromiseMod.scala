@@ -5,7 +5,6 @@ import typings.std.Promise
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libraryFnPromiseMod extends Shortcut {
@@ -13,7 +12,9 @@ object libraryFnPromiseMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("core-js/library/fn/promise", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends Promise[T] {
+  class ^[T] protected ()
+    extends StObject
+       with Promise[T] {
     /**
       * Creates a new Promise.
       * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -28,10 +29,10 @@ object libraryFnPromiseMod extends Shortcut {
   }
   @JSImport("core-js/library/fn/promise", JSImport.Namespace)
   @js.native
-  val ^ : PromiseConstructor = js.native
+  val ^ : js.Object & PromiseConstructor = js.native
   
-  type _To = PromiseConstructor
+  type _To = js.Object & PromiseConstructor
   
   /* This means you don't have to write `^`, but can instead just say `libraryFnPromiseMod.foo` */
-  override def _to: PromiseConstructor = ^
+  override def _to: js.Object & PromiseConstructor = ^
 }

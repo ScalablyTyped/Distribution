@@ -2,7 +2,6 @@ package typings.cordovaPluginWebsql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("Database")
   @js.native
   class Database protected ()
-    extends typings.cordovaPluginWebsql.Database {
+    extends StObject
+       with typings.cordovaPluginWebsql.Database {
     /** Constructor for Database object */
     def this(
       name: String,
@@ -82,5 +82,6 @@ object global {
   @JSGlobal("SqlTransaction")
   @js.native
   class SqlTransaction ()
-    extends typings.cordovaPluginWebsql.SqlTransaction
+    extends StObject
+       with typings.cordovaPluginWebsql.SqlTransaction
 }

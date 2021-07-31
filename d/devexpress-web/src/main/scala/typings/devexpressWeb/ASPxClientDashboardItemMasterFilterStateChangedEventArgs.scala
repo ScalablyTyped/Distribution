@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.ItemMasterFilterStateChanged event.
   */
-@js.native
-trait ASPxClientDashboardItemMasterFilterStateChangedEventArgs extends ASPxClientDashboardItemEventArgs {
+trait ASPxClientDashboardItemMasterFilterStateChangedEventArgs
+  extends StObject
+     with ASPxClientDashboardItemEventArgs {
   
   /**
     * Gets the currently selected values.
     */
-  var Values: js.Array[js.Array[js.Object]] = js.native
+  var Values: js.Array[js.Array[js.Object]]
 }
 object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
   

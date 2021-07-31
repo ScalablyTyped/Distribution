@@ -13,7 +13,6 @@ import typings.reactNativeMaterialTextfield.reactNativeMaterialTextfieldStrings.
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -88,14 +87,13 @@ object mod {
     def value(): String = js.native
   }
   
-  @js.native
   trait ContentInset extends StObject {
     
-    var input: js.UndefOr[Double] = js.native
+    var input: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[Double] = js.native
+    var label: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ContentInset {
     
@@ -128,69 +126,70 @@ object mod {
     }
   }
   
-  @js.native
-  trait TextFieldProps extends TextInputProps {
+  trait TextFieldProps
+    extends StObject
+       with TextInputProps {
     
-    var activeLineWidth: js.UndefOr[Double] = js.native
+    var activeLineWidth: js.UndefOr[Double] = js.undefined
     
-    var affixTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var affixTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var baseColor: js.UndefOr[String] = js.native
+    var baseColor: js.UndefOr[String] = js.undefined
     
-    var characterRestriction: js.UndefOr[Double] = js.native
+    var characterRestriction: js.UndefOr[Double] = js.undefined
     
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var contentInset: js.UndefOr[ContentInset] = js.native
+    var contentInset: js.UndefOr[ContentInset] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledLineType: js.UndefOr[solid | dotted | dashed | none] = js.native
+    var disabledLineType: js.UndefOr[solid | dotted | dashed | none] = js.undefined
     
-    var disabledLineWidth: js.UndefOr[Double] = js.native
+    var disabledLineWidth: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var errorColor: js.UndefOr[String] = js.native
+    var errorColor: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var formatText: js.UndefOr[js.Function1[/* text */ String, String]] = js.native
+    var formatText: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
     
-    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var labelFontSize: js.UndefOr[Double] = js.native
+    var labelFontSize: js.UndefOr[Double] = js.undefined
     
-    var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var lineType: js.UndefOr[solid | dotted | dashed | none] = js.native
+    var lineType: js.UndefOr[solid | dotted | dashed | none] = js.undefined
     
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var renderLeftAccessory: js.UndefOr[js.Function0[Element]] = js.native
+    var renderLeftAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var renderRightAccessory: js.UndefOr[js.Function0[Element]] = js.native
+    var renderRightAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
     
     @JSName("style")
-    var style_TextFieldProps: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style_TextFieldProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var titleTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object TextFieldProps {
     

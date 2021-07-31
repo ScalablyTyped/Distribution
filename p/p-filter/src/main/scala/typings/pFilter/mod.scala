@@ -3,7 +3,6 @@ package typings.pFilter
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,19 +32,17 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-filter", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType](
     input: Iterable[ValueType | js.Thenable[ValueType]],
     filterer: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]]
-  ): js.Promise[js.Array[ValueType]] = js.native
-  @JSImport("p-filter", JSImport.Namespace)
-  @js.native
+  ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
+  @scala.inline
   def apply[ValueType](
     input: Iterable[ValueType | js.Thenable[ValueType]],
     filterer: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]],
     options: Options
-  ): js.Promise[js.Array[ValueType]] = js.native
+  ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
   
   @JSImport("p-filter", JSImport.Namespace)
   @js.native

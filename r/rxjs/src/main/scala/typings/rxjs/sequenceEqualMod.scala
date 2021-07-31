@@ -5,17 +5,26 @@ import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.Observer
 import typings.rxjs.typesMod.OperatorFunction
+import typings.rxjs.typesMod.TeardownLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sequenceEqualMod {
   
+  @JSImport("rxjs/internal/operators/sequenceEqual", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("rxjs/internal/operators/sequenceEqual", "SequenceEqualOperator")
   @js.native
-  class SequenceEqualOperator[T] protected () extends Operator[T, Boolean] {
+  class SequenceEqualOperator[T] protected ()
+    extends StObject
+       with Operator[T, Boolean] {
     def this(compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
+    
+    /* CompleteClass */
+    override def call(subscriber: Subscriber[Boolean], source: js.Any): TeardownLogic = js.native
     
     var comparator: js.Any = js.native
     
@@ -50,10 +59,8 @@ object sequenceEqualMod {
     def nextB(value: T): Unit = js.native
   }
   
-  @JSImport("rxjs/internal/operators/sequenceEqual", "sequenceEqual")
-  @js.native
-  def sequenceEqual[T](compareTo: Observable[T]): OperatorFunction[T, Boolean] = js.native
-  @JSImport("rxjs/internal/operators/sequenceEqual", "sequenceEqual")
-  @js.native
-  def sequenceEqual[T](compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = js.native
+  @scala.inline
+  def sequenceEqual[T](compareTo: Observable[T]): OperatorFunction[T, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Boolean]]
+  @scala.inline
+  def sequenceEqual[T](compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, Boolean]]
 }

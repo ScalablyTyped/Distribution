@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBeaconsAttachmentsBatchdelete extends StandardParameters {
+trait ParamsResourceBeaconsAttachmentsBatchdelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The beacon whose attachments should be deleted. A beacon name has the
@@ -25,14 +25,14 @@ trait ParamsResourceBeaconsAttachmentsBatchdelete extends StandardParameters {
     * AltBeacon. For Eddystone-EID beacons, you may use either the current EID
     * or the beacon's "stable" UID. Required.
     */
-  var beaconName: js.UndefOr[String] = js.native
+  var beaconName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the namespace and type of attachments to delete in
     * `namespace/type` format. Accepts `x/x` to specify "all types in all
     * namespaces". Optional.
     */
-  var namespacedType: js.UndefOr[String] = js.native
+  var namespacedType: js.UndefOr[String] = js.undefined
   
   /**
     * The project id to delete beacon attachments under. This field can be used
@@ -41,7 +41,7 @@ trait ParamsResourceBeaconsAttachmentsBatchdelete extends StandardParameters {
     * and the projectId string is empty, then the project making the request is
     * used. Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBeaconsAttachmentsBatchdelete {
   

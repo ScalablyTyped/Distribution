@@ -2,43 +2,41 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileInput extends StObject {
   
-  var chooseFile: String = js.native
+  var chooseFile: String
   
-  var disabled: String = js.native
+  var disabled: String
   
-  var fileDecorator: String = js.native
+  var fileDecorator: String
   
-  var fileInput: String = js.native
+  var fileInput: String
   
-  var fileSign: String = js.native
+  var fileSign: String
   
-  var fileSignBottom: String = js.native
+  var fileSignBottom: String
   
-  var noFileChosen: String = js.native
+  var noFileChosen: String
   
-  var other: String = js.native
+  var other: String
   
-  var placeholderInput: String = js.native
+  var placeholderInput: String
   
-  var preview: String = js.native
+  var preview: String
   
-  var removeButton: String = js.native
+  var removeButton: String
   
-  var removeButtonBottom: String = js.native
+  var removeButtonBottom: String
   
-  var removeFile: String = js.native
+  var removeFile: String
   
-  var removeFileSvg: String = js.native
+  var removeFileSvg: String
   
-  var root: String = js.native
+  var root: String
   
-  var wrapper: String = js.native
+  var wrapper: String
 }
 object FileInput {
   

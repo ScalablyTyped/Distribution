@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends StObject {
     * `gs://bucket_name/a/∗/b`: matches all files in `bucket_name` that match `a/∗/b` pattern, such as `a/c/b`, `a/d/b` * `gs://another_bucket/a.txt`: matches `gs://another_bucket/a.txt`
     * You can combine wildcards to provide more powerful matches, for example: * `gs://bucket_name/[a-m]??.j*g`
     */
-  var filePatterns: js.UndefOr[js.Array[String]] = js.native
+  var filePatterns: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Sample files contained in this fileset, not all files contained in this fileset are represented here. */
-  var sampleGcsFileSpecs: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1GcsFileSpec]] = js.native
+  var sampleGcsFileSpecs: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1GcsFileSpec]] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1GcsFilesetSpec {
   

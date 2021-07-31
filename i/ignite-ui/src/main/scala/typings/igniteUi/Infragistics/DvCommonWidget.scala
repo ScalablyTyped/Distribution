@@ -2,13 +2,11 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DvCommonWidget extends StObject {
   
-  def option(key: js.Object, value: js.Object): Unit = js.native
+  def option(key: js.Object, value: js.Object): Unit
 }
 object DvCommonWidget {
   

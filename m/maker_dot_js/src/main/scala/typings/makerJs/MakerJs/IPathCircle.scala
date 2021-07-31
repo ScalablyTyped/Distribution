@@ -2,7 +2,6 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,13 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * var circle = { type: 'circle', origin: [0, 0], radius: 7 };   //javascript
   * ```
   */
-@js.native
-trait IPathCircle extends IPath {
+trait IPathCircle
+  extends StObject
+     with IPath {
   
   /**
     * The radius of the circle.
     */
-  var radius: Double = js.native
+  var radius: Double
 }
 object IPathCircle {
   

@@ -5,14 +5,12 @@ import typings.dockerode.dockerodeStrings.`not-running`
 import typings.dockerode.dockerodeStrings.removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerWaitOptions extends StObject {
   
   /** Since v1.30 */
-  var condition: js.UndefOr[`not-running` | `next-exit` | removed] = js.native
+  var condition: js.UndefOr[`not-running` | `next-exit` | removed] = js.undefined
 }
 object ContainerWaitOptions {
   

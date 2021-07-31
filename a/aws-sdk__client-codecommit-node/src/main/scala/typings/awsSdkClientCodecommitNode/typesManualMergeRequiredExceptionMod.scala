@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.mergePullRequestByFastForwardExceptionsUnionMod.MergePullRequestByFastForwardExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesManualMergeRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ManualMergeRequiredExceptionDetails> * / any */ @js.native
-  trait ManualMergeRequiredException extends MergePullRequestByFastForwardExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ManualMergeRequiredExceptionDetails> * / any */ trait ManualMergeRequiredException
+    extends StObject
+       with MergePullRequestByFastForwardExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ManualMergeRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ManualMergeRequiredException
   }
   object ManualMergeRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ManualMergeRequiredException
-    ): ManualMergeRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ManualMergeRequiredException = {
+      val __obj = js.Dynamic.literal(name = "ManualMergeRequiredException")
       __obj.asInstanceOf[ManualMergeRequiredException]
     }
     
@@ -34,6 +32,5 @@ object typesManualMergeRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait ManualMergeRequiredExceptionDetails extends StObject
 }

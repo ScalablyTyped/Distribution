@@ -9,7 +9,6 @@ import typings.node.streamMod.Readable
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,262 +23,207 @@ object mod {
     * @param writerOpts
     */
   // tslint:disable-next-line max-line-length
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Readable = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
-    parserOpts: js.UndefOr[scala.Nothing],
+    options: Unit,
+    context: Unit,
+    gitRawCommitsOpts: Unit,
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
-    parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
+    options: Unit,
+    context: Unit,
+    gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: GitRawCommitsOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
+    options: Unit,
+    context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: js.UndefOr[scala.Nothing],
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Unit, gitRawCommitsOpts: GitRawCommitsOptions, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: js.UndefOr[scala.Nothing],
+    options: Unit,
+    context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: js.UndefOr[scala.Nothing], context: Partial[TContext]): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     context: Partial[TContext],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
-    parserOpts: js.UndefOr[scala.Nothing],
+    gitRawCommitsOpts: Unit,
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: Unit, parserOpts: ParserOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     context: Partial[TContext],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
-    parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: Partial[TContext],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
+    gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Unit, context: Partial[TContext], gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
-    context: Partial[TContext],
-    gitRawCommitsOpts: GitRawCommitsOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: js.UndefOr[scala.Nothing],
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext]): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext]): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
-    parserOpts: js.UndefOr[scala.Nothing],
+    context: Unit,
+    gitRawCommitsOpts: Unit,
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
+    context: Unit,
+    gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
+    context: Unit,
+    gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Unit, gitRawCommitsOpts: GitRawCommitsOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
-    gitRawCommitsOpts: GitRawCommitsOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
-    options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: js.UndefOr[scala.Nothing],
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](options: Options[TCommit, TContext], context: Partial[TContext]): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
-    parserOpts: js.UndefOr[scala.Nothing],
+    gitRawCommitsOpts: Unit,
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
+    gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
-    gitRawCommitsOpts: js.UndefOr[scala.Nothing],
+    gitRawCommitsOpts: Unit,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
-    parserOpts: js.UndefOr[scala.Nothing],
+    parserOpts: Unit,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions
-  ): Readable = js.native
-  @JSImport("conventional-changelog", JSImport.Namespace)
-  @js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  @scala.inline
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](
     options: Options[TCommit, TContext],
     context: Partial[TContext],
     gitRawCommitsOpts: GitRawCommitsOptions,
     parserOpts: ParserOptions,
     writerOpts: WriterOptions[TCommit, TContext]
-  ): Readable = js.native
+  ): Readable = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], context.asInstanceOf[js.Any], gitRawCommitsOpts.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], writerOpts.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  
+  @JSImport("conventional-changelog", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * See the [conventional-changelog-core](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-core)
     * docs. The API is the same with the following changes or additions:
     */
-  @js.native
   trait Options[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */]
-    extends typings.conventionalChangelogCore.mod.Options[TCommit, TContext] {
+    extends StObject
+       with typings.conventionalChangelogCore.mod.Options[TCommit, TContext] {
     
     /**
       * It's recommended to use a preset so you don't have to define everything
@@ -292,7 +236,7 @@ object mod {
       * `options.config` will be overwritten by the values of preset. You should use
       * either `preset` or `config`, but not both.
       */
-    var preset: js.UndefOr[String] = js.native
+    var preset: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -303,7 +247,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] (val x: Self with (Options[TCommit, TContext])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
       
       @scala.inline
       def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])

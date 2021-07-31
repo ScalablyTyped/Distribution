@@ -4,17 +4,18 @@ import typings.node.Buffer
 import typings.node.cryptoMod.Hmac
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(algo: Algorithm, key: String): Hmac = (^.asInstanceOf[js.Dynamic].apply(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  @scala.inline
+  def apply(algo: Algorithm, key: Buffer): Hmac = (^.asInstanceOf[js.Dynamic].apply(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  
   @JSImport("create-hmac", JSImport.Namespace)
   @js.native
-  def apply(algo: Algorithm, key: String): Hmac = js.native
-  @JSImport("create-hmac", JSImport.Namespace)
-  @js.native
-  def apply(algo: Algorithm, key: Buffer): Hmac = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.createHmac.createHmacStrings.rmd160

@@ -3,7 +3,6 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * based on the JSON Web Token (JWT) standard, but the terms also correlate to
   * concepts in other standards.
   */
-@js.native
 trait SchemaAuth extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaAuth extends StObject {
     * Example:
     * &quot;//accesscontextmanager.googleapis.com/accessPolicies/MY_POLICY_ID/accessLevels/MY_LEVEL&quot;
     */
-  var accessLevels: js.UndefOr[js.Array[String]] = js.native
+  var accessLevels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The intended audience(s) for this authentication information. Reflects
@@ -36,7 +34,7 @@ trait SchemaAuth extends StObject {
     * Firebase Auth.  Consult the documentation for the credential issuer to
     * determine the information provided.
     */
-  var audiences: js.UndefOr[js.Array[String]] = js.native
+  var audiences: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Structured claims presented with the credential. JWTs include `{key:
@@ -51,7 +49,7 @@ trait SchemaAuth extends StObject {
     * &#39;exp&#39;: 1353604926}  SAML assertions are similarly specified, but
     * with an identity provider dependent structure.
     */
-  var claims: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var claims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The authorized presenter of the credential. Reflects the optional
@@ -59,7 +57,7 @@ trait SchemaAuth extends StObject {
     * For example, a Google Cloud Platform client id looks as follows:
     * &quot;123456789012.apps.googleusercontent.com&quot;.
     */
-  var presenter: js.UndefOr[String] = js.native
+  var presenter: js.UndefOr[String] = js.undefined
   
   /**
     * The authenticated principal. Reflects the issuer (`iss`) and subject
@@ -68,7 +66,7 @@ trait SchemaAuth extends StObject {
     * Google accounts, the principal format is:
     * &quot;https://accounts.google.com/{id}&quot;
     */
-  var principal: js.UndefOr[String] = js.native
+  var principal: js.UndefOr[String] = js.undefined
 }
 object SchemaAuth {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveOptions extends StObject {
   
   /** Set to true to include shared drive. */
-  var includeSharedDrives: js.UndefOr[Boolean] = js.native
+  var includeSharedDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Set to true to include Team Drive. */
-  var includeTeamDrives: js.UndefOr[Boolean] = js.native
+  var includeTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Search the versions of the Drive file as of the reference date. These timestamps are in GMT and rounded down to the given date. */
-  var versionDate: js.UndefOr[String] = js.native
+  var versionDate: js.UndefOr[String] = js.undefined
 }
 object DriveOptions {
   

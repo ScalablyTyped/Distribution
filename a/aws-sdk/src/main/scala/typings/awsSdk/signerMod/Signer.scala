@@ -7,7 +7,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,7 @@ trait Signer extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   @JSName("config")
-  var config_Signer: ConfigBase with ClientConfiguration = js.native
+  var config_Signer: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Returns information about a specific code signing job. You specify the job by using the jobId value that is returned by the StartSigningJob operation. 

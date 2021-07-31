@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.ej.TreeGrid.EjPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeGrid extends Widget_ {
+trait TreeGrid
+  extends StObject
+     with Widget_ {
   
   /** Add a new row in TreeGrid, while allowAdding is set to true
     * @param {any} Item to add in TreeGrid row.
@@ -156,12 +157,12 @@ trait TreeGrid extends Widget_ {
   /** Gets the selected cell(s) element details in TreeGrid.
     * @returns {any[]}
     */
-  def getSelectedCells(): js.Array[_] = js.native
+  def getSelectedCells(): js.Array[js.Any] = js.native
   
   /** To get the updated data source of TreeGrid.
     * @returns {any[]}
     */
-  def getUpdatedRecords(): js.Array[_] = js.native
+  def getUpdatedRecords(): js.Array[js.Any] = js.native
   
   /** Sends request to navigate to a specific page in TreeGrid.
     * @param {number} Pass the page index to perform paging at specified page index.
@@ -191,7 +192,7 @@ trait TreeGrid extends Widget_ {
     * @param {any} Pass which data you want to show in tree grid
     * @returns {void}
     */
-  def refresh(dataSource: js.Array[_], query: js.Any): Unit = js.native
+  def refresh(dataSource: js.Array[js.Any], query: js.Any): Unit = js.native
   
   /** To rename a column with the specified name
     * @param {number} Index of the column to be renamed
@@ -234,7 +235,7 @@ trait TreeGrid extends Widget_ {
     * @param {boolean} Defines that we need to preserve the previously selected cells or not
     * @returns {void}
     */
-  def selectCells(Indexes: js.Array[_], preservePreviousSelectedCell: Boolean): Unit = js.native
+  def selectCells(Indexes: js.Array[js.Any], preservePreviousSelectedCell: Boolean): Unit = js.native
   
   /** To open the dialog to add new record/row in TreeGrid.
     * @returns {void}
@@ -295,15 +296,21 @@ object TreeGrid {
     
     ///you can edit a cell
     @js.native
-    sealed trait Cell extends BatchEditMode
+    sealed trait Cell
+      extends StObject
+         with BatchEditMode
     
     ///you can edit a row in dialog form
     @js.native
-    sealed trait Dialog extends BatchEditMode
+    sealed trait Dialog
+      extends StObject
+         with BatchEditMode
     
     ///you can edit a row
     @js.native
-    sealed trait Row extends BatchEditMode
+    sealed trait Row
+      extends StObject
+         with BatchEditMode
   }
   
   @js.native
@@ -314,11 +321,15 @@ object TreeGrid {
     
     ///you can begin the editing at single click
     @js.native
-    sealed trait Click extends BeginEditAction
+    sealed trait Click
+      extends StObject
+         with BeginEditAction
     
     ///you can begin the editing at double click
     @js.native
-    sealed trait DblClick extends BeginEditAction
+    sealed trait DblClick
+      extends StObject
+         with BeginEditAction
   }
   
   @js.native
@@ -329,11 +340,15 @@ object TreeGrid {
     
     ///Truncate the text in the cell.
     @js.native
-    sealed trait Clip extends ClipMode
+    sealed trait Clip
+      extends StObject
+         with ClipMode
     
     ///Shows ellipsis for the overflown cell.
     @js.native
-    sealed trait Ellipsis extends ClipMode
+    sealed trait Ellipsis
+      extends StObject
+         with ClipMode
   }
   
   @js.native
@@ -344,15 +359,21 @@ object TreeGrid {
     
     ///At load time column are rendered with given width value, while resizing the column only current column width is changed
     @js.native
-    sealed trait FixedColumns extends ColumnResizeMode
+    sealed trait FixedColumns
+      extends StObject
+         with ColumnResizeMode
     
     ///At load time columns are stretched with control width, while resizing the column, current column width adjusted based on next column
     @js.native
-    sealed trait NextColumn extends ColumnResizeMode
+    sealed trait NextColumn
+      extends StObject
+         with ColumnResizeMode
     
     ///In this mode columns are stretched with control width in load time and on resizing action current column width was adjusted with all columns.
     @js.native
-    sealed trait Normal extends ColumnResizeMode
+    sealed trait Normal
+      extends StObject
+         with ColumnResizeMode
   }
   
   @js.native
@@ -363,15 +384,21 @@ object TreeGrid {
     
     ///Enables the add menu item in context menu
     @js.native
-    sealed trait Add extends ContextMenuItems
+    sealed trait Add
+      extends StObject
+         with ContextMenuItems
     
     ///Enables the edit menu item in context menu
     @js.native
-    sealed trait Delete extends ContextMenuItems
+    sealed trait Delete
+      extends StObject
+         with ContextMenuItems
     
     ///Enables the edit menu item in context menu
     @js.native
-    sealed trait Edit extends ContextMenuItems
+    sealed trait Edit
+      extends StObject
+         with ContextMenuItems
   }
   
   @js.native
@@ -382,19 +409,27 @@ object TreeGrid {
     
     ///you can edit and save bulk of records
     @js.native
-    sealed trait BatchEditing extends EditMode
+    sealed trait BatchEditing
+      extends StObject
+         with EditMode
     
     ///you can edit a cell.
     @js.native
-    sealed trait CellEditing extends EditMode
+    sealed trait CellEditing
+      extends StObject
+         with EditMode
     
     ///you can edit a row in dialog form.
     @js.native
-    sealed trait DialogEditing extends EditMode
+    sealed trait DialogEditing
+      extends StObject
+         with EditMode
     
     ///you can edit a row.
     @js.native
-    sealed trait RowEditing extends EditMode
+    sealed trait RowEditing
+      extends StObject
+         with EditMode
   }
   
   @js.native
@@ -405,31 +440,45 @@ object TreeGrid {
     
     ///It Specifies Boolean edit type.
     @js.native
-    sealed trait Boolean extends EditingType
+    sealed trait Boolean
+      extends StObject
+         with EditingType
     
     ///It Specifies DatePicker edit type.
     @js.native
-    sealed trait DatePicker extends EditingType
+    sealed trait DatePicker
+      extends StObject
+         with EditingType
     
     ///It Specifies DateTimePicker edit type.
     @js.native
-    sealed trait DateTimePicker extends EditingType
+    sealed trait DateTimePicker
+      extends StObject
+         with EditingType
     
     ///It Specifies Dropdown edit type.
     @js.native
-    sealed trait Dropdown extends EditingType
+    sealed trait Dropdown
+      extends StObject
+         with EditingType
     
     ///It Specifies Maskedit edit type.
     @js.native
-    sealed trait Maskedit extends EditingType
+    sealed trait Maskedit
+      extends StObject
+         with EditingType
     
     ///It Specifies Numeric edit type.
     @js.native
-    sealed trait Numeric extends EditingType
+    sealed trait Numeric
+      extends StObject
+         with EditingType
     
     ///It Specifies String edit type.
     @js.native
-    sealed trait String extends EditingType
+    sealed trait String
+      extends StObject
+         with EditingType
   }
   
   @js.native
@@ -440,19 +489,27 @@ object TreeGrid {
     
     ///shows the filtered record with both parent and child record
     @js.native
-    sealed trait Both extends FilterHierarchyMode
+    sealed trait Both
+      extends StObject
+         with FilterHierarchyMode
     
     ///Shows the filtered record with child record
     @js.native
-    sealed trait Child extends FilterHierarchyMode
+    sealed trait Child
+      extends StObject
+         with FilterHierarchyMode
     
     ///Shows only filtered record.
     @js.native
-    sealed trait None extends FilterHierarchyMode
+    sealed trait None
+      extends StObject
+         with FilterHierarchyMode
     
     ///Shows the filtered record with parent record
     @js.native
-    sealed trait Parent extends FilterHierarchyMode
+    sealed trait Parent
+      extends StObject
+         with FilterHierarchyMode
   }
   
   @js.native
@@ -463,11 +520,15 @@ object TreeGrid {
     
     ///Specifies the filter type as excel.
     @js.native
-    sealed trait Excel extends FilterType
+    sealed trait Excel
+      extends StObject
+         with FilterType
     
     ///Specifies the filter type as menu.
     @js.native
-    sealed trait Menu extends FilterType
+    sealed trait Menu
+      extends StObject
+         with FilterType
   }
   
   @js.native
@@ -478,11 +539,15 @@ object TreeGrid {
     
     ///You can disable the word wrap
     @js.native
-    sealed trait None extends HeaderTextOverflow
+    sealed trait None
+      extends StObject
+         with HeaderTextOverflow
     
     ///You can wrap the header content
     @js.native
-    sealed trait Wrap extends HeaderTextOverflow
+    sealed trait Wrap
+      extends StObject
+         with HeaderTextOverflow
   }
   
   @js.native
@@ -493,11 +558,15 @@ object TreeGrid {
     
     ///To count all the parent and child records.
     @js.native
-    sealed trait All extends PageSizeMode
+    sealed trait All
+      extends StObject
+         with PageSizeMode
     
     ///To count the Zeroth level parent records.
     @js.native
-    sealed trait Root extends PageSizeMode
+    sealed trait Root
+      extends StObject
+         with PageSizeMode
   }
   
   @js.native
@@ -508,11 +577,15 @@ object TreeGrid {
     
     ///To print all the pages
     @js.native
-    sealed trait AllPages extends PrintMode
+    sealed trait AllPages
+      extends StObject
+         with PrintMode
     
     ///To print only the current page content.
     @js.native
-    sealed trait CurrentPage extends PrintMode
+    sealed trait CurrentPage
+      extends StObject
+         with PrintMode
   }
   
   @js.native
@@ -523,23 +596,33 @@ object TreeGrid {
     
     ///you can add a new row to above selected row.
     @js.native
-    sealed trait Above extends RowPosition
+    sealed trait Above
+      extends StObject
+         with RowPosition
     
     ///you can add a new row to below selected row.
     @js.native
-    sealed trait Below extends RowPosition
+    sealed trait Below
+      extends StObject
+         with RowPosition
     
     ///you can add a new row at bottom.
     @js.native
-    sealed trait Bottom extends RowPosition
+    sealed trait Bottom
+      extends StObject
+         with RowPosition
     
     ///you can add a new row as a child for selected row.
     @js.native
-    sealed trait Child extends RowPosition
+    sealed trait Child
+      extends StObject
+         with RowPosition
     
     ///you can add a new row at top.
     @js.native
-    sealed trait Top extends RowPosition
+    sealed trait Top
+      extends StObject
+         with RowPosition
   }
   
   @js.native
@@ -550,19 +633,27 @@ object TreeGrid {
     
     ///Filtered child records will be displayed with parents and parents will be displayed along with its children
     @js.native
-    sealed trait Both extends SearchHierarchyMode
+    sealed trait Both
+      extends StObject
+         with SearchHierarchyMode
     
     ///Filtered child records will be displayed and parent records displayed along with its children.
     @js.native
-    sealed trait Child extends SearchHierarchyMode
+    sealed trait Child
+      extends StObject
+         with SearchHierarchyMode
     
     ///Filtered records alone will be displayed without it parents or children
     @js.native
-    sealed trait None extends SearchHierarchyMode
+    sealed trait None
+      extends StObject
+         with SearchHierarchyMode
     
     ///Parent level records will be included in searching
     @js.native
-    sealed trait Parent extends SearchHierarchyMode
+    sealed trait Parent
+      extends StObject
+         with SearchHierarchyMode
   }
   
   @js.native
@@ -573,11 +664,15 @@ object TreeGrid {
     
     ///you can select a cell.
     @js.native
-    sealed trait Cell extends SelectionMode
+    sealed trait Cell
+      extends StObject
+         with SelectionMode
     
     ///you can select a row.
     @js.native
-    sealed trait Row extends SelectionMode
+    sealed trait Row
+      extends StObject
+         with SelectionMode
   }
   
   @js.native
@@ -588,15 +683,21 @@ object TreeGrid {
     
     ///you can select rows using checkbox.
     @js.native
-    sealed trait Checkbox extends SelectionType
+    sealed trait Checkbox
+      extends StObject
+         with SelectionType
     
     ///you can select a multiple row.
     @js.native
-    sealed trait Multiple extends SelectionType
+    sealed trait Multiple
+      extends StObject
+         with SelectionType
     
     ///you can select a single row.
     @js.native
-    sealed trait Single extends SelectionType
+    sealed trait Single
+      extends StObject
+         with SelectionType
   }
   
   @js.native
@@ -607,43 +708,63 @@ object TreeGrid {
     
     ///Displays the average of summary column
     @js.native
-    sealed trait Average extends SummaryType
+    sealed trait Average
+      extends StObject
+         with SummaryType
     
     ///Displays the total count of summary column
     @js.native
-    sealed trait Count extends SummaryType
+    sealed trait Count
+      extends StObject
+         with SummaryType
     
     ///Displays the value from custom summary function
     @js.native
-    sealed trait Custom extends SummaryType
+    sealed trait Custom
+      extends StObject
+         with SummaryType
     
     ///Displays the false count value for boolean summary columns
     @js.native
-    sealed trait FalseCount extends SummaryType
+    sealed trait FalseCount
+      extends StObject
+         with SummaryType
     
     ///Displays the maximum value of summary column
     @js.native
-    sealed trait Maximum extends SummaryType
+    sealed trait Maximum
+      extends StObject
+         with SummaryType
     
     ///Displays the maximum date value in summary column
     @js.native
-    sealed trait MaximumDate extends SummaryType
+    sealed trait MaximumDate
+      extends StObject
+         with SummaryType
     
     ///Displays the minimum value of summary column
     @js.native
-    sealed trait Minimum extends SummaryType
+    sealed trait Minimum
+      extends StObject
+         with SummaryType
     
     ///Displays the minimum date value in summary column
     @js.native
-    sealed trait MinimumDate extends SummaryType
+    sealed trait MinimumDate
+      extends StObject
+         with SummaryType
     
     ///Displays the sum of summary column
     @js.native
-    sealed trait Sum extends SummaryType
+    sealed trait Sum
+      extends StObject
+         with SummaryType
     
     ///Displays the true count value for boolean summary columns
     @js.native
-    sealed trait TrueCount extends SummaryType
+    sealed trait TrueCount
+      extends StObject
+         with SummaryType
   }
   
   @js.native
@@ -654,47 +775,69 @@ object TreeGrid {
     
     ///Enables the add icon in toolbar
     @js.native
-    sealed trait Add extends ToolbarItems
+    sealed trait Add
+      extends StObject
+         with ToolbarItems
     
     ///Enables the cancel icon in toolbar
     @js.native
-    sealed trait Cancel extends ToolbarItems
+    sealed trait Cancel
+      extends StObject
+         with ToolbarItems
     
     ///Enables the collapse all icon in toolbar
     @js.native
-    sealed trait CollapseAll extends ToolbarItems
+    sealed trait CollapseAll
+      extends StObject
+         with ToolbarItems
     
     ///Enables the edit icon in toolbar
     @js.native
-    sealed trait Delete extends ToolbarItems
+    sealed trait Delete
+      extends StObject
+         with ToolbarItems
     
     ///Enables the edit icon in toolbar
     @js.native
-    sealed trait Edit extends ToolbarItems
+    sealed trait Edit
+      extends StObject
+         with ToolbarItems
     
     ///Enables the excel export icon in toolbar
     @js.native
-    sealed trait ExcelExport extends ToolbarItems
+    sealed trait ExcelExport
+      extends StObject
+         with ToolbarItems
     
     ///Enables the expand all icon in toolbar
     @js.native
-    sealed trait ExpandAll extends ToolbarItems
+    sealed trait ExpandAll
+      extends StObject
+         with ToolbarItems
     
     ///Enables the PDF export icon in toolbar
     @js.native
-    sealed trait PdfExport extends ToolbarItems
+    sealed trait PdfExport
+      extends StObject
+         with ToolbarItems
     
     ///Enables the printing icon in toolbar
     @js.native
-    sealed trait Print extends ToolbarItems
+    sealed trait Print
+      extends StObject
+         with ToolbarItems
     
     ///Enables the search textbox in toolbar
     @js.native
-    sealed trait Search extends ToolbarItems
+    sealed trait Search
+      extends StObject
+         with ToolbarItems
     
     ///Enables the update icon in toolbar
     @js.native
-    sealed trait Update extends ToolbarItems
+    sealed trait Update
+      extends StObject
+         with ToolbarItems
   }
   
   @js.native
@@ -705,55 +848,62 @@ object TreeGrid {
     
     ///Unbound type to perform cancel action
     @js.native
-    sealed trait Cancel extends UnboundType
+    sealed trait Cancel
+      extends StObject
+         with UnboundType
     
     ///Unbound type to perform delete action
     @js.native
-    sealed trait Delete extends UnboundType
+    sealed trait Delete
+      extends StObject
+         with UnboundType
     
     ///Unbound type to perform edit action
     @js.native
-    sealed trait Edit extends UnboundType
+    sealed trait Edit
+      extends StObject
+         with UnboundType
     
     ///Unbound type to perform save action
     @js.native
-    sealed trait Save extends UnboundType
+    sealed trait Save
+      extends StObject
+         with UnboundType
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current grouped column field name.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the direction of sorting ascending or descending.
       */
-    var columnSortDirection: js.UndefOr[String] = js.native
+    var columnSortDirection: js.UndefOr[String] = js.undefined
     
     /** Returns the data or deleting element.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Returns the value of expanding parent element.
       */
-    var keyValue: js.UndefOr[String] = js.native
+    var keyValue: js.UndefOr[String] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -816,44 +966,43 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current grouped column field name.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the direction of sorting ascending or descending
       */
-    var columnSortDirection: js.UndefOr[String] = js.native
+    var columnSortDirection: js.UndefOr[String] = js.undefined
     
     /** Returns the data of deleted element.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Returns the value of searched element.
       */
-    var keyValue: js.UndefOr[String] = js.native
+    var keyValue: js.UndefOr[String] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns selected record index
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -922,20 +1071,19 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait BeforePrintEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the TreeGrid element which is going to be print
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
   }
   object BeforePrintEventArgs {
     
@@ -968,28 +1116,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait BeginEditEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.native
+    var cellElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column Index of cell belongs.
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.native
+    var rowElement: js.UndefOr[js.Any] = js.undefined
   }
   object BeginEditEventArgs {
     
@@ -1034,56 +1181,55 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait CellSelectedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cell index on the selection.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected cell index
       */
-    var previousCellIndex: js.UndefOr[js.Any] = js.native
+    var previousCellIndex: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected row data
       */
-    var previousData: js.UndefOr[js.Any] = js.native
+    var previousData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected row index
       */
-    var previousRowIndex: js.UndefOr[js.Any] = js.native
+    var previousRowIndex: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected cell element
       */
-    var previousTargetCell: js.UndefOr[js.Any] = js.native
+    var previousTargetCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previously selected row element
       */
-    var previousTargetRow: js.UndefOr[js.Any] = js.native
+    var previousTargetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index on the selection
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.native
+    var targetCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -1170,36 +1316,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait CellSelectingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cell index on the selection.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index on the selection
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.native
+    var targetCell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
   }
   object CellSelectingEventArgs {
     
@@ -1256,32 +1401,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait CollapsedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of collapsed record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of collapsed record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns Request Type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the event type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CollapsedEventArgs {
     
@@ -1332,28 +1476,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait CollapsingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of collapsing record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsing state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of collapsing record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CollapsingEventArgs {
     
@@ -1398,169 +1541,168 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait Column extends StObject {
     
     /** Enables/disables cell selection.
       * @Default {false}
       */
-    var allowCellSelection: js.UndefOr[Boolean] = js.native
+    var allowCellSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to edit a row or cell.
       * @Default {false}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to filter the rows based on this column.
       * @Default {false}
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables the blanks option in ejDropDownList mapped in TreeGrid column
       * @Default {true}
       */
-    var allowFilteringBlankContent: js.UndefOr[Boolean] = js.native
+    var allowFilteringBlankContent: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to freeze/unfreeze the columns
       * @Default {false}
       */
-    var allowFreezing: js.UndefOr[Boolean] = js.native
+    var allowFreezing: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to sort the rows based on this column/field.
       * @Default {false}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the template ID or the template string of the AngularJS script element to enable column template for a column.
       */
-    var angularTemplate: js.UndefOr[String] = js.native
+    var angularTemplate: js.UndefOr[String] = js.undefined
     
     /** Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
       * @Default {ej.TreeGrid.ClipMode.Clip}
       */
-    var clipMode: js.UndefOr[ClipMode | String] = js.native
+    var clipMode: js.UndefOr[ClipMode | String] = js.undefined
     
     /** Gets or sets an object to define a command column in TreeGrid.
       * @Default {[]}
       */
-    var commands: js.UndefOr[js.Array[ColumnsCommand]] = js.native
+    var commands: js.UndefOr[js.Array[ColumnsCommand]] = js.undefined
     
     /** Gets or sets a value that indicates to display a column value as checkbox or string
       * @Default {false}
       */
-    var displayAsCheckbox: js.UndefOr[Boolean] = js.native
+    var displayAsCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** To bind the dropdown data for TreeGrid column mapped with ejDropDownList
       */
-    var dropdownData: js.UndefOr[String] = js.native
+    var dropdownData: js.UndefOr[String] = js.undefined
     
     /** To customize the ej controls defined in TreeGrid column with their native property.
       */
-    var editParams: js.UndefOr[js.Any] = js.native
+    var editParams: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets a template that displays a custom editor for editing the column values.
       * @Default {null}
       */
-    var editTemplate: js.UndefOr[js.Any] = js.native
+    var editTemplate: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the edit type of the column.
       * @Default {ej.TreeGrid.EditingType.String}
       */
-    var editType: js.UndefOr[EditingType | String] = js.native
+    var editType: js.UndefOr[EditingType | String] = js.undefined
     
     /** Specifies the name of the field from the dataSource to bind with this column.
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** Specifies the type of the editor control to be used to filter the rows.
       * @Default {ej.TreeGrid.EditingType.String}
       */
-    var filterEditType: js.UndefOr[EditingType | String] = js.native
+    var filterEditType: js.UndefOr[EditingType | String] = js.undefined
     
     /** Gets or sets a value to render either excel or menu filtering in TreeGrid column filtering.
       * @Default {null}
       */
-    var filterType: js.UndefOr[FilterType_ | String] = js.native
+    var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Specifies the display format of a column
       * @Default {null}
       */
-    var format: js.UndefOr[js.Any] = js.native
+    var format: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the header template value for the column header
       */
-    var headerTemplateID: js.UndefOr[String] = js.native
+    var headerTemplateID: js.UndefOr[String] = js.undefined
     
     /** Header text of the column.
       * @Default {null}
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /** Specifies the alignment of the column header text
       * @Default {ej.TextAlign.Left}
       */
-    var headerTextAlign: js.UndefOr[TextAlign | String] = js.native
+    var headerTextAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Sets the tooltip template for the column header
       * @Default {null}
       */
-    var headerTooltip: js.UndefOr[String] = js.native
+    var headerTooltip: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the column is frozen
       * @Default {false}
       */
-    var isFrozen: js.UndefOr[Boolean] = js.native
+    var isFrozen: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the column is a template column
       * @Default {false}
       */
-    var isTemplateColumn: js.UndefOr[Boolean] = js.native
+    var isTemplateColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
       * @Default {-1}
       */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** Enables or disables the checkbox visibility in a column for checkbox selection.
       * @Default {false}
       */
-    var showCheckbox: js.UndefOr[Boolean] = js.native
+    var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** We can include or exclude particular column from column visibility list in column menu.
       * @Default {true}
       */
-    var showInColumnChooser: js.UndefOr[Boolean] = js.native
+    var showInColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the template string of the script element to enable column template for a column.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Specifies the template ID of the script element to enable column template for a column.
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the text alignment for the column
       * @Default {ej.TextAlign.Left}
       */
-    var textAlign: js.UndefOr[TextAlign | String] = js.native
+    var textAlign: js.UndefOr[TextAlign | String] = js.undefined
     
     /** Sets the tooltip template for the specific column.
       * @Default {null}
       */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
     /** specifies the conditions for saving data to the database while adding or editing the fields.
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** Controls the visibility of the column.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value for TreeGrid column width
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Column {
     
@@ -1782,40 +1924,39 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnDragEventArgs extends StObject {
     
     /** Returns that we can drop over the column or not.
       */
-    var canDrop: js.UndefOr[Boolean] = js.native
+    var canDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column data which is dragged
       */
-    var draggedColumn: js.UndefOr[js.Any] = js.native
+    var draggedColumn: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the column being dragged
       */
-    var draggedColumnIndex: js.UndefOr[Double] = js.native
+    var draggedColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target column data
       */
-    var targetColumn: js.UndefOr[js.Any] = js.native
+    var targetColumn: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the target column
       */
-    var targetColumnIndex: js.UndefOr[Double] = js.native
+    var targetColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnDragEventArgs {
     
@@ -1878,28 +2019,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnDragStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column data which is dragged
       */
-    var draggedColumn: js.UndefOr[js.Any] = js.native
+    var draggedColumn: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the column being dragged
       */
-    var draggedColumnIndex: js.UndefOr[Double] = js.native
+    var draggedColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnDragStartEventArgs {
     
@@ -1944,36 +2084,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnDropEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column data which is dragged
       */
-    var draggedColumn: js.UndefOr[js.Any] = js.native
+    var draggedColumn: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the column being dragged
       */
-    var draggedColumnIndex: js.UndefOr[Double] = js.native
+    var draggedColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target column data
       */
-    var targetColumn: js.UndefOr[js.Any] = js.native
+    var targetColumn: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the target column
       */
-    var targetColumnIndex: js.UndefOr[Double] = js.native
+    var targetColumnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnDropEventArgs {
     
@@ -2030,44 +2169,43 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnResizeEndEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column data in which the resizing started
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column index in which the resizing started
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the column width difference, before and after the resizing
       */
-    var extra: js.UndefOr[Double] = js.native
+    var extra: js.UndefOr[Double] = js.undefined
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the new column width after resized
       */
-    var newWidth: js.UndefOr[Double] = js.native
+    var newWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns column width before dragging
       */
-    var oldWidth: js.UndefOr[Double] = js.native
+    var oldWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns initial column element object.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnResizeEndEventArgs {
     
@@ -2136,13 +2274,12 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnResizeSettings extends StObject {
     
     /** Specifies the mode for column resizing
       * @Default {ej.TreeGrid.ColumnResizeMode.Normal}
       */
-    var columnResizeMode: js.UndefOr[ColumnResizeMode | String] = js.native
+    var columnResizeMode: js.UndefOr[ColumnResizeMode | String] = js.undefined
   }
   object ColumnResizeSettings {
     
@@ -2163,36 +2300,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnResizeStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column data in which the resizing started
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column index in which the resizing started
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns column width before dragging
       */
-    var oldWidth: js.UndefOr[Double] = js.native
+    var oldWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns initial column element object.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnResizeStartEventArgs {
     
@@ -2249,36 +2385,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnResizedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the column data which is resized
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the column being resized.
       */
-    var columnIndex: js.UndefOr[Double] = js.native
+    var columnIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns resized column width after resized.
       */
-    var newWidth: js.UndefOr[Double] = js.native
+    var newWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns resized column width before resizing
       */
-    var oldWidth: js.UndefOr[Double] = js.native
+    var oldWidth: js.UndefOr[Double] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ColumnResizedEventArgs {
     
@@ -2335,16 +2470,15 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ColumnsCommand extends StObject {
     
     /** Gets or sets an object to customize command button with available ejButton properties.
       */
-    var buttonOptions: js.UndefOr[js.Any] = js.native
+    var buttonOptions: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets a value that define the command column buttons to be displayed.
       */
-    var `type`: js.UndefOr[UnboundType | String] = js.native
+    var `type`: js.UndefOr[UnboundType | String] = js.undefined
   }
   object ColumnsCommand {
     
@@ -2371,28 +2505,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ContextMenuOpenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the default context menu items to which we add custom items.
       */
-    var contextMenuItems: js.UndefOr[js.Array[_]] = js.native
+    var contextMenuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ContextMenuOpenEventArgs {
     
@@ -2412,7 +2545,7 @@ object TreeGrid {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setContextMenuItems(value: js.Array[_]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
+      def setContextMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContextMenuItemsUndefined: Self = StObject.set(x, "contextMenuItems", js.undefined)
@@ -2440,18 +2573,17 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ContextMenuSettings extends StObject {
     
     /** Option for adding items to context menu.
       * @Default {[]}
       */
-    var contextMenuItems: js.UndefOr[js.Array[ContextMenuItems | String]] = js.native
+    var contextMenuItems: js.UndefOr[js.Array[ContextMenuItems | String]] = js.undefined
     
     /** Shows/hides the context menu.
       * @Default {false}
       */
-    var showContextMenu: js.UndefOr[Boolean] = js.native
+    var showContextMenu: js.UndefOr[Boolean] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -2481,20 +2613,19 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -2527,32 +2658,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait DetailsDataBoundEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data collection of selected row.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the details element of selected row.
       */
-    var detailsElement: js.UndefOr[js.Any] = js.native
+    var detailsElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the rowIndex of selected row.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DetailsDataBoundEventArgs {
     
@@ -2603,24 +2733,23 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait DetailsHiddenEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the data collection of hidden details Template
       */
-    var rowData: js.UndefOr[js.Any] = js.native
+    var rowData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DetailsHiddenEventArgs {
     
@@ -2659,32 +2788,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait DetailsShownEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data collection of selected row.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the details element of selected row.
       */
-    var detailsElement: js.UndefOr[js.Any] = js.native
+    var detailsElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the rowIndex of selected row.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DetailsShownEventArgs {
     
@@ -2735,23 +2863,22 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait DragTooltip extends StObject {
     
     /** Specifies whether to show tooltip while dragging a row.
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Option to add field names whose corresponding values in the dragged row needs to be shown in the preview tooltip.
       * @Default {[]}
       */
-    var tooltipItems: js.UndefOr[js.Array[_]] = js.native
+    var tooltipItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Custom template for that tooltip that is shown while dragging a row.
       * @Default {null}
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
   }
   object DragTooltip {
     
@@ -2771,7 +2898,7 @@ object TreeGrid {
       def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
       
       @scala.inline
-      def setTooltipItems(value: js.Array[_]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
+      def setTooltipItems(value: js.Array[js.Any]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTooltipItemsUndefined: Self = StObject.set(x, "tooltipItems", js.undefined)
@@ -2787,52 +2914,51 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait EditSettings extends StObject {
     
     /** Enables or disables the button to add new row in context menu as well as in toolbar.
       * @Default {true}
       */
-    var allowAdding: js.UndefOr[Boolean] = js.native
+    var allowAdding: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the button to delete the selected row in context menu as well as in toolbar.
       * @Default {true}
       */
-    var allowDeleting: js.UndefOr[Boolean] = js.native
+    var allowDeleting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to edit a row or cell.
       * @Default {false}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** specifies the batch edit mode in TreeGrid.
       */
-    var batchEditSettings: js.UndefOr[EditSettingsBatchEditSettings] = js.native
+    var batchEditSettings: js.UndefOr[EditSettingsBatchEditSettings] = js.undefined
     
     /** Specifies the mouse action whether single click or double click to begin the editing
       * @Default {ej.TreeGrid.BeginEditAction.DblClick}
       */
-    var beginEditAction: js.UndefOr[BeginEditAction | String] = js.native
+    var beginEditAction: js.UndefOr[BeginEditAction | String] = js.undefined
     
     /** Specifies the template ID for the custom dialog.
       * @Default {null}
       */
-    var dialogEditorTemplateID: js.UndefOr[String] = js.native
+    var dialogEditorTemplateID: js.UndefOr[String] = js.undefined
     
     /** specifies the edit mode in TreeGrid , &quot;cellEditing&quot; is for cell type editing and &quot;rowEditing&quot; is for entire row.
       * @Default {ej.TreeGrid.EditMode.CellEditing}
       */
-    var editMode: js.UndefOr[EditMode | String] = js.native
+    var editMode: js.UndefOr[EditMode | String] = js.undefined
     
     /** Specifies the position where the new row has to be added.
       * @Default {ej.TreeGrid.RowPosition.Top}
       */
-    var rowPosition: js.UndefOr[RowPosition | String] = js.native
+    var rowPosition: js.UndefOr[RowPosition | String] = js.undefined
     
     /** Enable or disable the confirmation dialog while deleting the record.
       * @Default {false}
       */
-    var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.native
+    var showDeleteConfirmDialog: js.UndefOr[Boolean] = js.undefined
   }
   object EditSettings {
     
@@ -2901,13 +3027,12 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait EditSettingsBatchEditSettings extends StObject {
     
     /** Specifies the batch edit mode whether it is cell, row or dialog.
       * @Default {ej.TreeGrid.BatchEditMode.Cell}
       */
-    var editMode: js.UndefOr[BatchEditMode | String] = js.native
+    var editMode: js.UndefOr[BatchEditMode | String] = js.undefined
   }
   object EditSettingsBatchEditSettings {
     
@@ -2928,24 +3053,23 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait EjPredicate extends StObject {
     
     /** Pass the field name of the column.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** string/integer/date operator.
       */
-    var filterOperator: js.UndefOr[String] = js.native
+    var filterOperator: js.UndefOr[String] = js.undefined
     
     /** Pass the value to be filtered in a column.
       */
-    var filterValue: js.UndefOr[String] = js.native
+    var filterValue: js.UndefOr[String] = js.undefined
     
     /** Optional - pass the ignore case value as true/false.
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
   }
   object EjPredicate {
     
@@ -2984,32 +3108,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait EndEditEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.native
+    var cellElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column name of edited cell belongs.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the column object of edited cell belongs.
       */
-    var columnObject: js.UndefOr[js.Any] = js.native
+    var columnObject: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the data of edited cell record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.native
+    var rowElement: js.UndefOr[js.Any] = js.undefined
   }
   object EndEditEventArgs {
     
@@ -3060,32 +3183,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ExpandedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of expanded record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or expanded state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of expanded record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns Request Type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the event type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ExpandedEventArgs {
     
@@ -3136,28 +3258,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ExpandingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of expanding record..
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row index of expanding record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the event Type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ExpandingEventArgs {
     
@@ -3202,43 +3323,42 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait FilterSettings extends StObject {
     
     /** Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode.
       * @Default {false}
       */
-    var enableCaseSensitivity: js.UndefOr[Boolean] = js.native
+    var enableCaseSensitivity: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to filter the columns with empty, null and undefined values.
       * @Default {true}
       */
-    var enableComplexBlankFilter: js.UndefOr[Boolean] = js.native
+    var enableComplexBlankFilter: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the mode on which column filtering should start
       * @Default {immediate}
       */
-    var filterBarMode: js.UndefOr[String] = js.native
+    var filterBarMode: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of filtering to filter the record with or without hierarchy.
       * @Default {ej.TreeGrid.FilterHierarchyMode.Parent}
       */
-    var filterHierarchyMode: js.UndefOr[FilterHierarchyMode | String] = js.native
+    var filterHierarchyMode: js.UndefOr[FilterHierarchyMode | String] = js.undefined
     
     /** Specifies the type of column filtering.
       * @Default {ej.TreeGrid.FilterType.FilterBar}
       */
-    var filterType: js.UndefOr[FilterType_ | String] = js.native
+    var filterType: js.UndefOr[FilterType_ | String] = js.undefined
     
     /** Specifies the column collection for filtering the TreeGrid content on initial load
       * @Default {[]}
       */
-    var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.native
+    var filteredColumns: js.UndefOr[js.Array[FilterSettingsFilteredColumn]] = js.undefined
     
     /** Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
       * @Default {1000}
       */
-    var maxFilterChoices: js.UndefOr[Double] = js.native
+    var maxFilterChoices: js.UndefOr[Double] = js.undefined
   }
   object FilterSettings {
     
@@ -3298,24 +3418,23 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait FilterSettingsFilteredColumn extends StObject {
     
     /** Specifies the field where filtering has to be performed.
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** Specifies the filter condition to filtered column. See operator
       */
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
     /** Specifies the predicate(and/or) value to perform filtering.
       */
-    var predicate: js.UndefOr[String] = js.native
+    var predicate: js.UndefOr[String] = js.undefined
     
     /** Specifies the value to be filtered in TreeGrid.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FilterSettingsFilteredColumn {
     
@@ -3354,20 +3473,19 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -3400,441 +3518,440 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggered before every success event of TreeGrid action.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggered for every TreeGrid action success event.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the option for column reordering
       * @Default {false}
       */
-    var allowColumnReordering: js.UndefOr[Boolean] = js.native
+    var allowColumnReordering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to resize the column width interactively.
       * @Default {false}
       */
-    var allowColumnResize: js.UndefOr[Boolean] = js.native
+    var allowColumnResize: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to drag and drop the row interactively to reorder the rows.
       * @Default {false}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to filter the data on all the columns. Enabling this property will display a row with editor controls corresponding to each column. You can
       * restrict filtering on particular column by disabling this property directly on that column instance itself.
       * @Default {false}
       */
-    var allowFiltering: js.UndefOr[Boolean] = js.native
+    var allowFiltering: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables keyboard navigation.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to sort the rows based on multiple columns/fields by clicking on each column header. Rows will be sorted recursively on clicking the column headers.
       * @Default {false}
       */
-    var allowMultiSorting: js.UndefOr[Boolean] = js.native
+    var allowMultiSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables pagination of rows in TreeGrid
       * @Default {false}
       */
-    var allowPaging: js.UndefOr[Boolean] = js.native
+    var allowPaging: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the toolbar searching in TreeGrid.
       * @Default {false}
       */
-    var allowSearching: js.UndefOr[Boolean] = js.native
+    var allowSearching: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to select a row interactively.
       * @Default {true}
       */
-    var allowSelection: js.UndefOr[Boolean] = js.native
+    var allowSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the ability to sort the rows based on a single field/column by clicking on that column header. When enabled, rows can be sorted only by single field/column.
       * @Default {false}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
       * @Default {false}
       */
-    var allowTextWrap: js.UndefOr[Boolean] = js.native
+    var allowTextWrap: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the id of the template that has to be applied for alternate rows.
       */
-    var altRowTemplateID: js.UndefOr[String] = js.native
+    var altRowTemplateID: js.UndefOr[String] = js.undefined
     
     /** Triggered before the printing initiated in TreeGrid.
       */
-    var beforePrint: js.UndefOr[js.Function1[/* e */ BeforePrintEventArgs, Unit]] = js.native
+    var beforePrint: js.UndefOr[js.Function1[/* e */ BeforePrintEventArgs, Unit]] = js.undefined
     
     /** Triggered while enter the edit mode in the TreeGrid cell
       */
-    var beginEdit: js.UndefOr[js.Function1[/* e */ BeginEditEventArgs, Unit]] = js.native
+    var beginEdit: js.UndefOr[js.Function1[/* e */ BeginEditEventArgs, Unit]] = js.undefined
     
     /** Triggered after selected a cell
       */
-    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.native
+    var cellSelected: js.UndefOr[js.Function1[/* e */ CellSelectedEventArgs, Unit]] = js.undefined
     
     /** Triggered before selecting a cell
       */
-    var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.native
+    var cellSelecting: js.UndefOr[js.Function1[/* e */ CellSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies the template for cell tooltip
       * @Default {null}
       */
-    var cellTooltipTemplate: js.UndefOr[String] = js.native
+    var cellTooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the mapping property path for sub tasks in datasource
       */
-    var childMapping: js.UndefOr[String] = js.native
+    var childMapping: js.UndefOr[String] = js.undefined
     
     /** Triggered after collapsed the TreeGrid record
       */
-    var collapsed: js.UndefOr[js.Function1[/* e */ CollapsedEventArgs, Unit]] = js.native
+    var collapsed: js.UndefOr[js.Function1[/* e */ CollapsedEventArgs, Unit]] = js.undefined
     
     /** Enables or disables the expandable/collapsible footer summary row. By default expander icon for footer summary will be rendered in first column of first summary row.
       * @Default {false}
       */
-    var collapsibleTotalSummary: js.UndefOr[Boolean] = js.native
+    var collapsibleTotalSummary: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered while collapsing the TreeGrid record
       */
-    var collapsing: js.UndefOr[js.Function1[/* e */ CollapsingEventArgs, Unit]] = js.native
+    var collapsing: js.UndefOr[js.Function1[/* e */ CollapsingEventArgs, Unit]] = js.undefined
     
     /** To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
       * @Default {[]}
       */
-    var columnDialogFields: js.UndefOr[js.Array[_]] = js.native
+    var columnDialogFields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Triggered while dragging a column
       */
-    var columnDrag: js.UndefOr[js.Function1[/* e */ ColumnDragEventArgs, Unit]] = js.native
+    var columnDrag: js.UndefOr[js.Function1[/* e */ ColumnDragEventArgs, Unit]] = js.undefined
     
     /** Triggered  when you start to drag a column
       */
-    var columnDragStart: js.UndefOr[js.Function1[/* e */ ColumnDragStartEventArgs, Unit]] = js.native
+    var columnDragStart: js.UndefOr[js.Function1[/* e */ ColumnDragStartEventArgs, Unit]] = js.undefined
     
     /** Triggered when a column is dropped
       */
-    var columnDrop: js.UndefOr[js.Function1[/* e */ ColumnDropEventArgs, Unit]] = js.native
+    var columnDrop: js.UndefOr[js.Function1[/* e */ ColumnDropEventArgs, Unit]] = js.undefined
     
     /** Triggered when a column has been resized
       */
-    var columnResizeEnd: js.UndefOr[js.Function1[/* e */ ColumnResizeEndEventArgs, Unit]] = js.native
+    var columnResizeEnd: js.UndefOr[js.Function1[/* e */ ColumnResizeEndEventArgs, Unit]] = js.undefined
     
     /** Specifies the settings for column resize
       */
-    var columnResizeSettings: js.UndefOr[ColumnResizeSettings] = js.native
+    var columnResizeSettings: js.UndefOr[ColumnResizeSettings] = js.undefined
     
     /** Triggered while start to resize a column
       */
-    var columnResizeStart: js.UndefOr[js.Function1[/* e */ ColumnResizeStartEventArgs, Unit]] = js.native
+    var columnResizeStart: js.UndefOr[js.Function1[/* e */ ColumnResizeStartEventArgs, Unit]] = js.undefined
     
     /** Triggered after a column resized
       */
-    var columnResized: js.UndefOr[js.Function1[/* e */ ColumnResizedEventArgs, Unit]] = js.native
+    var columnResized: js.UndefOr[js.Function1[/* e */ ColumnResizedEventArgs, Unit]] = js.undefined
     
     /** Option for adding columns; each column has the option to bind to a field in the dataSource.
       */
-    var columns: js.UndefOr[js.Array[Column]] = js.native
+    var columns: js.UndefOr[js.Array[Column]] = js.undefined
     
     /** Defines the common width for all the columns in TreeGrid
       * @Default {150}
       */
-    var commonWidth: js.UndefOr[Double] = js.native
+    var commonWidth: js.UndefOr[Double] = js.undefined
     
     /** Triggered while Context Menu is rendered in TreeGrid control
       */
-    var contextMenuOpen: js.UndefOr[js.Function1[/* e */ ContextMenuOpenEventArgs, Unit]] = js.native
+    var contextMenuOpen: js.UndefOr[js.Function1[/* e */ ContextMenuOpenEventArgs, Unit]] = js.undefined
     
     /** Options for displaying and customizing context menu items.
       */
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
     /** Triggered when TreeGrid is rendered completely
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class for TreeGrid to achieve custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Specifies hierarchical or self-referential data to populate the TreeGrid.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Triggered while rendering details template in TreeGrid
       */
-    var detailsDataBound: js.UndefOr[js.Function1[/* e */ DetailsDataBoundEventArgs, Unit]] = js.native
+    var detailsDataBound: js.UndefOr[js.Function1[/* e */ DetailsDataBoundEventArgs, Unit]] = js.undefined
     
     /** Triggered when details template pop-up is hidden.
       */
-    var detailsHidden: js.UndefOr[js.Function1[/* e */ DetailsHiddenEventArgs, Unit]] = js.native
+    var detailsHidden: js.UndefOr[js.Function1[/* e */ DetailsHiddenEventArgs, Unit]] = js.undefined
     
     /** Specifies the row height of the details view
       * @Default {100}
       */
-    var detailsRowHeight: js.UndefOr[Double] = js.native
+    var detailsRowHeight: js.UndefOr[Double] = js.undefined
     
     /** Triggered when details template pop-up is shown.
       */
-    var detailsShown: js.UndefOr[js.Function1[/* e */ DetailsShownEventArgs, Unit]] = js.native
+    var detailsShown: js.UndefOr[js.Function1[/* e */ DetailsShownEventArgs, Unit]] = js.undefined
     
     /** Specifies the template for details view
       */
-    var detailsTemplate: js.UndefOr[String] = js.native
+    var detailsTemplate: js.UndefOr[String] = js.undefined
     
     /** Options for displaying and customizing the tooltip. This tooltip will show the preview of the row that is being dragged.
       */
-    var dragTooltip: js.UndefOr[DragTooltip] = js.native
+    var dragTooltip: js.UndefOr[DragTooltip] = js.undefined
     
     /** Options for enabling and configuring the editing related operations.
       */
-    var editSettings: js.UndefOr[EditSettings] = js.native
+    var editSettings: js.UndefOr[EditSettings] = js.undefined
     
     /** Specifies whether to render alternate rows in different background colors.
       * @Default {true}
       */
-    var enableAltRow: js.UndefOr[Boolean] = js.native
+    var enableAltRow: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to load all the rows in collapsed state when the TreeGrid is rendered for the first time.
       * @Default {false}
       */
-    var enableCollapseAll: js.UndefOr[Boolean] = js.native
+    var enableCollapseAll: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable load on demand approach, for rendering child records and page records.
       * @Default {false}
       */
-    var enableLoadOnDemand: js.UndefOr[Boolean] = js.native
+    var enableLoadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to resize TreeGrid whenever window size changes.
       * @Default {false}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to render only the visual elements that are visible in the UI. When you enable this property, it will reduce the loading time for loading large number of records.
       * @Default {false}
       */
-    var enableVirtualization: js.UndefOr[Boolean] = js.native
+    var enableVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered after saved the modified cellValue in TreeGrid
       */
-    var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.native
+    var endEdit: js.UndefOr[js.Function1[/* e */ EndEditEventArgs, Unit]] = js.undefined
     
     /** Specifies the mapping property path for the expand status of a record in data source.
       */
-    var expandStateMapping: js.UndefOr[String] = js.native
+    var expandStateMapping: js.UndefOr[String] = js.undefined
     
     /** Triggered after expand the record
       */
-    var expanded: js.UndefOr[js.Function1[/* e */ ExpandedEventArgs, Unit]] = js.native
+    var expanded: js.UndefOr[js.Function1[/* e */ ExpandedEventArgs, Unit]] = js.undefined
     
     /** Triggered while expanding the TreeGrid record
       */
-    var expanding: js.UndefOr[js.Function1[/* e */ ExpandingEventArgs, Unit]] = js.native
+    var expanding: js.UndefOr[js.Function1[/* e */ ExpandingEventArgs, Unit]] = js.undefined
     
     /** Options for filtering and customizing filter actions.
       */
-    var filterSettings: js.UndefOr[FilterSettings] = js.native
+    var filterSettings: js.UndefOr[FilterSettings] = js.undefined
     
     /** Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
       * @Default {ej.TreeGrid.HeaderTextOverflow.None}
       */
-    var headerTextOverflow: js.UndefOr[HeaderTextOverflow | String] = js.native
+    var headerTextOverflow: js.UndefOr[HeaderTextOverflow | String] = js.undefined
     
     /** Specifies the name of the field in the dataSource, which contains the id of that row.
       */
-    var idMapping: js.UndefOr[String] = js.native
+    var idMapping: js.UndefOr[String] = js.undefined
     
     /** Enables or disables the responsiveness of TreeGrid
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggered while Treegrid is loaded
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Specifies the localization information to customize the User Interface (UI) to support regional language and culture
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the options for customizing the pager.
       */
-    var pageSettings: js.UndefOr[PageSettings] = js.native
+    var pageSettings: js.UndefOr[PageSettings] = js.undefined
     
     /** Specifies the name of the field in the dataSource, which contains the parent's id. This is necessary to form a parent-child hierarchy, if the dataSource contains self-referential
       * data.
       */
-    var parentIdMapping: js.UndefOr[String] = js.native
+    var parentIdMapping: js.UndefOr[String] = js.undefined
     
     /** Enables or disables internal parsing of a row. When disabled this property, row will be displayed using the defined template without any internal event bindings.
       * @Default {true}
       */
-    var parseRowTemplate: js.UndefOr[Boolean] = js.native
+    var parseRowTemplate: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies ej.Query to select data from the dataSource. This property is applicable only when the dataSource is ej.DataManager.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Triggered while rendering each cell in the TreeGrid
       */
-    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.native
+    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.undefined
     
     /** Triggered while clicking a row, even when allowSelection property is disabled.
       */
-    var recordClick: js.UndefOr[js.Function1[/* e */ RecordClickEventArgs, Unit]] = js.native
+    var recordClick: js.UndefOr[js.Function1[/* e */ RecordClickEventArgs, Unit]] = js.undefined
     
     /** Triggered during record double click action, even when allowSelection property is disabled.
       */
-    var recordDoubleClick: js.UndefOr[js.Function1[/* e */ RecordDoubleClickEventArgs, Unit]] = js.native
+    var recordDoubleClick: js.UndefOr[js.Function1[/* e */ RecordDoubleClickEventArgs, Unit]] = js.undefined
     
     /** Triggered while rendering each row
       */
-    var rowDataBound: js.UndefOr[js.Function1[/* e */ RowDataBoundEventArgs, Unit]] = js.native
+    var rowDataBound: js.UndefOr[js.Function1[/* e */ RowDataBoundEventArgs, Unit]] = js.undefined
     
     /** Triggered while dragging a row in TreeGrid control
       */
-    var rowDrag: js.UndefOr[js.Function1[/* e */ RowDragEventArgs, Unit]] = js.native
+    var rowDrag: js.UndefOr[js.Function1[/* e */ RowDragEventArgs, Unit]] = js.undefined
     
     /** Triggered while start to drag row in TreeGrid control
       */
-    var rowDragStart: js.UndefOr[js.Function1[/* e */ RowDragStartEventArgs, Unit]] = js.native
+    var rowDragStart: js.UndefOr[js.Function1[/* e */ RowDragStartEventArgs, Unit]] = js.undefined
     
     /** Triggered while drop a row in TreeGrid control
       */
-    var rowDragStop: js.UndefOr[js.Function1[/* e */ RowDragStopEventArgs, Unit]] = js.native
+    var rowDragStop: js.UndefOr[js.Function1[/* e */ RowDragStopEventArgs, Unit]] = js.undefined
     
     /** Triggered before row drop action begins.
       */
-    var rowDropActionBegin: js.UndefOr[js.Function1[/* e */ RowDropActionBeginEventArgs, Unit]] = js.native
+    var rowDropActionBegin: js.UndefOr[js.Function1[/* e */ RowDropActionBeginEventArgs, Unit]] = js.undefined
     
     /** Specifies the height of a single row in tree grid. Also, we need to set same height in the CSS style with class name e-rowcell.
       * @Default {30}
       */
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /** Triggered after the row is selected.
       */
-    var rowSelected: js.UndefOr[js.Function1[/* e */ RowSelectedEventArgs, Unit]] = js.native
+    var rowSelected: js.UndefOr[js.Function1[/* e */ RowSelectedEventArgs, Unit]] = js.undefined
     
     /** Triggered before the row is going to be selected.
       */
-    var rowSelecting: js.UndefOr[js.Function1[/* e */ RowSelectingEventArgs, Unit]] = js.native
+    var rowSelecting: js.UndefOr[js.Function1[/* e */ RowSelectingEventArgs, Unit]] = js.undefined
     
     /** Specifies the id of the template to be applied for all the rows.
       */
-    var rowTemplateID: js.UndefOr[String] = js.native
+    var rowTemplateID: js.UndefOr[String] = js.undefined
     
     /** Specifies the toolbar searching customizations.
       */
-    var searchSettings: js.UndefOr[SearchSettings] = js.native
+    var searchSettings: js.UndefOr[SearchSettings] = js.undefined
     
     /** Specifies the selected cell information on rendering TreeGrid.
       */
-    var selectedCellIndexes: js.UndefOr[js.Array[SelectedCellIndex]] = js.native
+    var selectedCellIndexes: js.UndefOr[js.Array[SelectedCellIndex]] = js.undefined
     
     /** Specifies the index of the selected row.
       * @Default {-1}
       */
-    var selectedRowIndex: js.UndefOr[Double] = js.native
+    var selectedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the settings for row and cell selection.
       */
-    var selectionSettings: js.UndefOr[SelectionSettings] = js.native
+    var selectionSettings: js.UndefOr[SelectionSettings] = js.undefined
     
     /** Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose Columns item from this popup,
       * a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
       * @Default {false}
       */
-    var showColumnChooser: js.UndefOr[Boolean] = js.native
+    var showColumnChooser: js.UndefOr[Boolean] = js.undefined
     
     /** Enables/disables the options for inserting , deleting and renaming  columns.
       * @Default {false}
       */
-    var showColumnOptions: js.UndefOr[Boolean] = js.native
+    var showColumnOptions: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of details view
       * @Default {false}
       */
-    var showDetailsRow: js.UndefOr[Boolean] = js.native
+    var showDetailsRow: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of the expander column which is used to expand or collapse the details view
       * @Default {false}
       */
-    var showDetailsRowInfoColumn: js.UndefOr[Boolean] = js.native
+    var showDetailsRowInfoColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show tooltip when mouse is hovered on the cell.
       * @Default {true}
       */
-    var showGridCellTooltip: js.UndefOr[Boolean] = js.native
+    var showGridCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether to show tooltip for the cells, which has expander button.
       * @Default {true}
       */
-    var showGridExpandCellTooltip: js.UndefOr[Boolean] = js.native
+    var showGridExpandCellTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates stacked header should be shown on TreeGrid layout when the property â€œstackedHeaderRowsâ€ is set.
       * @Default {false}
       */
-    var showStackedHeader: js.UndefOr[Boolean] = js.native
+    var showStackedHeader: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of summary row
       * @Default {false}
       */
-    var showSummaryRow: js.UndefOr[Boolean] = js.native
+    var showSummaryRow: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the visibility of total summary row for the corresponding summary column
       * @Default {false}
       */
-    var showTotalSummary: js.UndefOr[Boolean] = js.native
+    var showTotalSummary: js.UndefOr[Boolean] = js.undefined
     
     /** Options for setting width and height for TreeGrid.
       */
-    var sizeSettings: js.UndefOr[SizeSettings] = js.native
+    var sizeSettings: js.UndefOr[SizeSettings] = js.undefined
     
     /** Options for sorting the rows.
       */
-    var sortSettings: js.UndefOr[SortSettings] = js.native
+    var sortSettings: js.UndefOr[SortSettings] = js.undefined
     
     /** Gets or sets an object that indicates to managing the collection of stacked header rows for the TreeGrid.
       * @Default {[]}
       */
-    var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.native
+    var stackedHeaderRows: js.UndefOr[js.Array[StackedHeaderRow]] = js.undefined
     
     /** Specifies the summary row collection object to be displayed
       * @Default {[]}
       */
-    var summaryRows: js.UndefOr[js.Array[SummaryRow]] = js.native
+    var summaryRows: js.UndefOr[js.Array[SummaryRow]] = js.undefined
     
     /** Triggered when toolbar item is clicked in TreeGrid.
       */
-    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.native
+    var toolbarClick: js.UndefOr[js.Function1[/* e */ ToolbarClickEventArgs, Unit]] = js.undefined
     
     /** Options for displaying and customizing the toolbar items.
       */
-    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.native
+    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
     /** Specifies the height of footer summary container.
       * @Default {90}
       */
-    var totalSummaryHeight: js.UndefOr[Double] = js.native
+    var totalSummaryHeight: js.UndefOr[Double] = js.undefined
     
     /** Specifies the index of the column that needs to have the expander button. By default, cells in the first column contain the expander button.
       * @Default {0}
       */
-    var treeColumnIndex: js.UndefOr[Double] = js.native
+    var treeColumnIndex: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -3986,7 +4103,7 @@ object TreeGrid {
       def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
       
       @scala.inline
-      def setColumnDialogFields(value: js.Array[_]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
+      def setColumnDialogFields(value: js.Array[js.Any]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumnDialogFieldsUndefined: Self = StObject.set(x, "columnDialogFields", js.undefined)
@@ -4076,7 +4193,7 @@ object TreeGrid {
       def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -4449,43 +4566,42 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait PageSettings extends StObject {
     
     /** Specifies the current page to display at load time.
       * @Default {1}
       */
-    var currentPage: js.UndefOr[Double] = js.native
+    var currentPage: js.UndefOr[Double] = js.undefined
     
     /** Using this property we can specify the number of pages should pager contains, according to this count TreeGrid height will be updated.
       * @Default {8}
       */
-    var pageCount: js.UndefOr[Double] = js.native
+    var pageCount: js.UndefOr[Double] = js.undefined
     
     /** This specifies the number of rows to display in each page.
       * @Default {12}
       */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mode of record count in a page, whether it should count all the records or the root to count zero level parent records.
       * @Default {ej.TreeGrid.PageSizeMode.All}
       */
-    var pageSizeMode: js.UndefOr[PageSizeMode | String] = js.native
+    var pageSizeMode: js.UndefOr[PageSizeMode | String] = js.undefined
     
     /** Specifies the mode of printing the control, whether it should print the all the records or the current page content.
       * @Default {ej.TreeGrid.PrintMode.AllPages}
       */
-    var printMode: js.UndefOr[PrintMode | String] = js.native
+    var printMode: js.UndefOr[PrintMode | String] = js.undefined
     
     /** Specifies the Custom template for Pager control.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
       * @Default {null}
       */
-    var totalRecordsCount: js.UndefOr[Double] = js.native
+    var totalRecordsCount: js.UndefOr[Double] = js.undefined
   }
   object PageSettings {
     
@@ -4542,28 +4658,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait QueryCellInfoEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the selecting cell element.
       */
-    var cellElement: js.UndefOr[js.Any] = js.native
+    var cellElement: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the value of cell.
       */
-    var cellValue: js.UndefOr[String] = js.native
+    var cellValue: js.UndefOr[String] = js.undefined
     
     /** Returns the column of cell belongs.
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -4608,36 +4723,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RecordClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the element of clicked cell.
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the clicked cell.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the data of clicked cell.
       */
-    var cellValue: js.UndefOr[js.Any] = js.native
+    var cellValue: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column name of the clicked cell.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the element of the clicked row.
       */
-    var row: js.UndefOr[js.Any] = js.native
+    var row: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the clicked row.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object RecordClickEventArgs {
     
@@ -4694,36 +4808,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RecordDoubleClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the element of clicked cell.
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the clicked cell.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the data of clicked cell.
       */
-    var cellValue: js.UndefOr[js.Any] = js.native
+    var cellValue: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the column name of the clicked cell.
       */
-    var columnName: js.UndefOr[String] = js.native
+    var columnName: js.UndefOr[String] = js.undefined
     
     /** Returns the element of the clicked row.
       */
-    var row: js.UndefOr[js.Any] = js.native
+    var row: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of the clicked row.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object RecordDoubleClickEventArgs {
     
@@ -4780,20 +4893,19 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowDataBoundEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of rendering row record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row element of rendering row.
       */
-    var rowElement: js.UndefOr[js.Any] = js.native
+    var rowElement: js.UndefOr[js.Any] = js.undefined
   }
   object RowDataBoundEventArgs {
     
@@ -4826,48 +4938,47 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowDragEventArgs extends StObject {
     
     /** Returns that we can drop over that record or not.
       */
-    var canDrop: js.UndefOr[Boolean] = js.native
+    var canDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Double] = js.native
+    var draggedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the drop position details such as insertAbove,insertBelow,insertAsChild and invalidPosition
       */
-    var dropPosition: js.UndefOr[String] = js.native
+    var dropPosition: js.UndefOr[String] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the row on which we are dragging.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index on which we are dragging.
       */
-    var targetRowIndex: js.UndefOr[Double] = js.native
+    var targetRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDragEventArgs {
     
@@ -4942,32 +5053,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowDragStartEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Boolean] = js.native
+    var draggedRowIndex: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDragStartEventArgs {
     
@@ -5018,40 +5128,39 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowDragStopEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Double] = js.native
+    var draggedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the row which we are dropped to row.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we are dropped to row.
       */
-    var targetRowIndex: js.UndefOr[Double] = js.native
+    var targetRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDragStopEventArgs {
     
@@ -5114,44 +5223,43 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowDropActionBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the multiple dragged row collection for multiple reorder
       */
-    var draggedRecords: js.UndefOr[js.Array[_]] = js.native
+    var draggedRecords: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.native
+    var draggedRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
-    var draggedRowIndex: js.UndefOr[Double] = js.native
+    var draggedRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the drop position.
       */
-    var dropPosition: js.UndefOr[String] = js.native
+    var dropPosition: js.UndefOr[String] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row which we are dropped to row.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the row index which we are dropped to row.
       */
-    var targetRowIndex: js.UndefOr[Double] = js.native
+    var targetRowIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowDropActionBeginEventArgs {
     
@@ -5171,7 +5279,7 @@ object TreeGrid {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setDraggedRecords(value: js.Array[_]): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
+      def setDraggedRecords(value: js.Array[js.Any]): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDraggedRecordsUndefined: Self = StObject.set(x, "draggedRecords", js.undefined)
@@ -5223,28 +5331,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowSelectedEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data of selected record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of selecting row record.
       */
-    var recordIndex: js.UndefOr[Double] = js.native
+    var recordIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the selecting row element.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the event type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RowSelectedEventArgs {
     
@@ -5289,36 +5396,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait RowSelectingEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the data selecting record.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous selected data.
       */
-    var previousData: js.UndefOr[js.Any] = js.native
+    var previousData: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous selected row index.
       */
-    var previousIndex: js.UndefOr[String] = js.native
+    var previousIndex: js.UndefOr[String] = js.undefined
     
     /** Returns the previous selected row element.
       */
-    var previousTreeGridRow: js.UndefOr[js.Any] = js.native
+    var previousTreeGridRow: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the index of selecting row record.
       */
-    var recordIndex: js.UndefOr[String] = js.native
+    var recordIndex: js.UndefOr[String] = js.undefined
     
     /** Returns the selecting row element.
       */
-    var targetRow: js.UndefOr[js.Any] = js.native
+    var targetRow: js.UndefOr[js.Any] = js.undefined
   }
   object RowSelectingEventArgs {
     
@@ -5375,32 +5481,31 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SearchSettings extends StObject {
     
     /** Default Value
       * @Default {[]}
       */
-    var fields: js.UndefOr[js.Array[_]] = js.native
+    var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Default Value
       * @Default {true}
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /** Default Value
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Specifies the operator for the search key words in toolbar searching.
       * @Default {contains}
       */
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
     /** Specifies the search mode of records in searching.
       * @Default {ej.TreeGrid.SearchHierarchyMode.Parent}
       */
-    var searchHierarchyMode: js.UndefOr[SearchHierarchyMode | String] = js.native
+    var searchHierarchyMode: js.UndefOr[SearchHierarchyMode | String] = js.undefined
   }
   object SearchSettings {
     
@@ -5414,7 +5519,7 @@ object TreeGrid {
     implicit class SearchSettingsMutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -5448,16 +5553,15 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SelectedCellIndex extends StObject {
     
     /** Specifies the cell index to be selected in the row.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Specifies the row index of the cell to be selected in TreeGrid control
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
   }
   object SelectedCellIndex {
     
@@ -5484,28 +5588,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SelectionSettings extends StObject {
     
     /** Enables or disables the selection by hierarchy in check box selection
       * @Default {true}
       */
-    var enableHierarchySelection: js.UndefOr[Boolean] = js.native
+    var enableHierarchySelection: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the checkbox in column header, using which all the check boxes can be selected or unselected.
       * @Default {true}
       */
-    var enableSelectAll: js.UndefOr[Boolean] = js.native
+    var enableSelectAll: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the type of selection whether to select row or cell.
       * @Default {ej.TreeGrid.SelectionMode.Row}
       */
-    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.native
+    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.undefined
     
     /** Specifies the type of selection whether single, multiple or checkbox.
       * @Default {ej.TreeGrid.SelectionType.Single}
       */
-    var selectionType: js.UndefOr[SelectionType | String] = js.native
+    var selectionType: js.UndefOr[SelectionType | String] = js.undefined
   }
   object SelectionSettings {
     
@@ -5544,18 +5647,17 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SizeSettings extends StObject {
     
     /** Height of the TreeGrid.
       * @Default {450px}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Width of the TreeGrid.
       * @Default {100%}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SizeSettings {
     
@@ -5582,13 +5684,12 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SortSettings extends StObject {
     
     /** Option to add columns based on which the rows have to be sorted recursively.
       * @Default {[]}
       */
-    var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.native
+    var sortedColumns: js.UndefOr[js.Array[SortSettingsSortedColumn]] = js.undefined
   }
   object SortSettings {
     
@@ -5612,16 +5713,15 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SortSettingsSortedColumn extends StObject {
     
     /** Specifies the sort direction in TreeGrid
       */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** Specifies the field to be sorted in TreeGrid
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
   }
   object SortSettingsSortedColumn {
     
@@ -5648,13 +5748,12 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait StackedHeaderRow extends StObject {
     
     /** Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
       * @Default {[]}
       */
-    var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.native
+    var stackedHeaderColumns: js.UndefOr[js.Array[StackedHeaderRowsStackedHeaderColumn]] = js.undefined
   }
   object StackedHeaderRow {
     
@@ -5678,33 +5777,32 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait StackedHeaderRowsStackedHeaderColumn extends StObject {
     
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
       * @Default {null}
       */
-    var column: js.UndefOr[js.Any] = js.native
+    var column: js.UndefOr[js.Any] = js.undefined
     
     /** Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
       * @Default {null}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
       * @Default {null}
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a value that indicates the text alignment of the corresponding headerText.
       * @Default {ej.TextAlign.Left}
       */
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
     /** Sets the template for tooltip for the Grid stackedHeaderColumns.
       * @Default {null}
       */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
   }
   object StackedHeaderRowsStackedHeaderColumn {
     
@@ -5749,16 +5847,15 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SummaryRow extends StObject {
     
     /** Specifies the summary columns in the summary rows.
       */
-    var summaryColumns: js.UndefOr[js.Array[SummaryRowsSummaryColumn]] = js.native
+    var summaryColumns: js.UndefOr[js.Array[SummaryRowsSummaryColumn]] = js.undefined
     
     /** Specifies the title for summary row collection in TreeGrid
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object SummaryRow {
     
@@ -5788,36 +5885,35 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait SummaryRowsSummaryColumn extends StObject {
     
     /** Specifies the custom summary calculate function or text.
       */
-    var customSummaryValue: js.UndefOr[String] = js.native
+    var customSummaryValue: js.UndefOr[String] = js.undefined
     
     /** Specifies summary column used to perform the summary calculation.
       */
-    var dataMember: js.UndefOr[String] = js.native
+    var dataMember: js.UndefOr[String] = js.undefined
     
     /** Specifies the required column to display the summary.
       */
-    var displayColumn: js.UndefOr[String] = js.native
+    var displayColumn: js.UndefOr[String] = js.undefined
     
     /** Specifies the format to be applied on the summary column value.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Specifies the text to be displayed before the summary column value.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /** Specifies the text to be displayed after the summary column value.
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /** Specifies the summary type to perform calculations in a corresponding summary column. See summaryType.
       */
-    var summaryType: js.UndefOr[SummaryType | String] = js.native
+    var summaryType: js.UndefOr[SummaryType | String] = js.undefined
   }
   object SummaryRowsSummaryColumn {
     
@@ -5874,28 +5970,27 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ToolbarClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.native
+    var currentTarget: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the toolbar item on which mouse click has been performed
       */
-    var itemName: js.UndefOr[String] = js.native
+    var itemName: js.UndefOr[String] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToolbarClickEventArgs {
     
@@ -5940,22 +6035,21 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ToolbarSettings extends StObject {
     
     /** Allows the user to insert custom toolbar items.
       */
-    var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.native
+    var customToolbarItems: js.UndefOr[js.Array[ToolbarSettingsCustomToolbarItem]] = js.undefined
     
     /** Shows/hides the toolbar.
       * @Default {false}
       */
-    var showToolbar: js.UndefOr[Boolean] = js.native
+    var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the list of toolbar items to be rendered in TreeGrid toolbar
       * @Default {[]}
       */
-    var toolbarItems: js.UndefOr[js.Array[ToolbarItems | String]] = js.native
+    var toolbarItems: js.UndefOr[js.Array[ToolbarItems | String]] = js.undefined
   }
   object ToolbarSettings {
     
@@ -5994,20 +6088,19 @@ object TreeGrid {
     }
   }
   
-  @js.native
   trait ToolbarSettingsCustomToolbarItem extends StObject {
     
     /** Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
     
     /** Allows the user to insert the custom icons in toolbar using CSS class name selector.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
       */
-    var tooltipText: js.UndefOr[String] = js.native
+    var tooltipText: js.UndefOr[String] = js.undefined
   }
   object ToolbarSettingsCustomToolbarItem {
     

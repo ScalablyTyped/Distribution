@@ -1,8 +1,8 @@
 package typings.webdriver.WebDriver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.webdriver.webdriverStrings.OFF
@@ -15,26 +15,33 @@ import scala.scalajs.js.annotation._
   - typings.webdriver.webdriverStrings.FINEST
   - typings.webdriver.webdriverStrings.ALL
 */
-trait LoggingPreferenceType extends js.Object
-
+trait LoggingPreferenceType extends StObject
 object LoggingPreferenceType {
+  
   @scala.inline
   def ALL: typings.webdriver.webdriverStrings.ALL = "ALL".asInstanceOf[typings.webdriver.webdriverStrings.ALL]
+  
   @scala.inline
   def CONFIG: typings.webdriver.webdriverStrings.CONFIG = "CONFIG".asInstanceOf[typings.webdriver.webdriverStrings.CONFIG]
+  
   @scala.inline
   def FINE: typings.webdriver.webdriverStrings.FINE = "FINE".asInstanceOf[typings.webdriver.webdriverStrings.FINE]
+  
   @scala.inline
   def FINER: typings.webdriver.webdriverStrings.FINER = "FINER".asInstanceOf[typings.webdriver.webdriverStrings.FINER]
+  
   @scala.inline
   def FINEST: typings.webdriver.webdriverStrings.FINEST = "FINEST".asInstanceOf[typings.webdriver.webdriverStrings.FINEST]
+  
   @scala.inline
   def INFO: typings.webdriver.webdriverStrings.INFO = "INFO".asInstanceOf[typings.webdriver.webdriverStrings.INFO]
+  
   @scala.inline
   def OFF: typings.webdriver.webdriverStrings.OFF = "OFF".asInstanceOf[typings.webdriver.webdriverStrings.OFF]
+  
   @scala.inline
   def SEVERE: typings.webdriver.webdriverStrings.SEVERE = "SEVERE".asInstanceOf[typings.webdriver.webdriverStrings.SEVERE]
+  
   @scala.inline
   def WARNING: typings.webdriver.webdriverStrings.WARNING = "WARNING".asInstanceOf[typings.webdriver.webdriverStrings.WARNING]
 }
-

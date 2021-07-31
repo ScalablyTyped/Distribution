@@ -12,7 +12,7 @@ Node.js module provides versioning for expressjs routes/api
 | Keywords           | routes, api, restful, express, version, versioning |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 108408 |
+| # downloads        | 91558 |
 | # stars            | 2 |
 
 ## Links

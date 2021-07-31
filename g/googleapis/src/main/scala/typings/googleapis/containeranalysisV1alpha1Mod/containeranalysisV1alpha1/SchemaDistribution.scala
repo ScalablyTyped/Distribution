@@ -2,48 +2,46 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This represents a particular channel of distribution for a given package.
   * e.g. Debian&#39;s jessie-backports dpkg mirror
   */
-@js.native
 trait SchemaDistribution extends StObject {
   
   /**
     * The CPU architecture for which packages in this distribution channel were
     * built
     */
-  var architecture: js.UndefOr[String] = js.native
+  var architecture: js.UndefOr[String] = js.undefined
   
   /**
     * The cpe_uri in [cpe format](https://cpe.mitre.org/specification/)
     * denoting the package manager version distributing a package.
     */
-  var cpeUri: js.UndefOr[String] = js.native
+  var cpeUri: js.UndefOr[String] = js.undefined
   
   /**
     * The distribution channel-specific description of this package.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The latest available version of this package in this distribution
     * channel.
     */
-  var latestVersion: js.UndefOr[SchemaVersion] = js.native
+  var latestVersion: js.UndefOr[SchemaVersion] = js.undefined
   
   /**
     * A freeform string denoting the maintainer of this package.
     */
-  var maintainer: js.UndefOr[String] = js.native
+  var maintainer: js.UndefOr[String] = js.undefined
   
   /**
     * The distribution channel-specific homepage for this package.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaDistribution {
   

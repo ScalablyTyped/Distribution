@@ -19,27 +19,28 @@ import typings.std.HTMLDivElement
 import typings.std.MutationObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("reactour", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("reactour", JSImport.Default)
   @js.native
   class default ()
     extends Component[ReactourProps, ReactourState, js.Any]
   
-  @JSImport("reactour", "Arrow")
-  @js.native
-  def Arrow(props: ArrowProps): ReactElement = js.native
+  @scala.inline
+  def Arrow(props: ArrowProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Arrow")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("reactour", "Badge")
   @js.native
   val Badge: FC[BadgeProps] = js.native
   
-  @JSImport("reactour", "Close")
-  @js.native
-  def Close(props: CloseProps): ReactElement = js.native
+  @scala.inline
+  def Close(props: CloseProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Close")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("reactour", "Controls")
   @js.native
@@ -53,18 +54,17 @@ object mod {
   @js.native
   val Navigation: FC[NavigationProps] = js.native
   
-  @js.native
   trait ArrowProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var onClick: MouseEventHandler[HTMLButtonElement] = js.native
+    var onClick: MouseEventHandler[HTMLButtonElement]
   }
   object ArrowProps {
     
@@ -107,10 +107,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'span' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ @js.native
-  trait BadgeProps extends StObject {
+  - Dropped 'span' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ trait BadgeProps extends StObject {
     
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
   }
   object BadgeProps {
     
@@ -131,12 +130,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CloseProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: MouseEventHandler[HTMLButtonElement] = js.native
+    var onClick: MouseEventHandler[HTMLButtonElement]
   }
   object CloseProps {
     
@@ -163,18 +161,17 @@ object mod {
   type ControlsProps = ComponentPropsWithRef[div]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'button' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'button'>> : react.react.PropsWithRef<react.react.ComponentProps<'button'>> */ @js.native
-  trait DotProps extends StObject {
+  - Dropped 'button' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'button'>> : react.react.PropsWithRef<react.react.ComponentProps<'button'>> */ trait DotProps extends StObject {
     
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var showNumber: js.UndefOr[Boolean] = js.native
+    var showNumber: js.UndefOr[Boolean] = js.undefined
   }
   object DotProps {
     
@@ -221,17 +218,16 @@ object mod {
   
   type NavigationProps = ComponentPropsWithRef[nav]
   
-  @js.native
   trait ReactourAccessibilityOptions extends StObject {
     
     // attribute to associate the dialog with a title for screen readers
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     // aria-label attribute for the close button
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     // Show/Hide Navigation Dots for screen reader software
-    var showNavigationScreenReaders: js.UndefOr[Boolean] = js.native
+    var showNavigationScreenReaders: js.UndefOr[Boolean] = js.undefined
   }
   object ReactourAccessibilityOptions {
     
@@ -264,204 +260,203 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactourProps extends StObject {
     
     /**
       * Change `--reactour-accent` _(defaults to accentColor on IE)_ css custom prop to apply color in _Helper_, number, dots, etc
       * @default #007aff
       */
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
     
     /**
       * Configure accessibility related accessibility options
       */
-    var accessibilityOptions: js.UndefOr[ReactourAccessibilityOptions] = js.native
+    var accessibilityOptions: js.UndefOr[ReactourAccessibilityOptions] = js.undefined
     
     /**
       * Customize _Badge_ content using `current` and `total` steps values
       */
-    var badgeContent: js.UndefOr[js.Function2[/* current */ Double, /* total */ Double, ReactNode]] = js.native
+    var badgeContent: js.UndefOr[js.Function2[/* current */ Double, /* total */ Double, ReactNode]] = js.undefined
     
     /**
       * Content to be rendered inside the _Helper_
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Custom class name to add to the _Helper_
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Close the _Tour_ by clicking the _Mask_
       * @default true
       */
-    var closeWithMask: js.UndefOr[Boolean] = js.native
+    var closeWithMask: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable interactivity with _Dots_ navigation in _Helper_
       */
-    var disableDotsNavigation: js.UndefOr[Boolean] = js.native
+    var disableDotsNavigation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable FocusLock component
       * @default false
       */
-    var disableFocusLock: js.UndefOr[Boolean] = js.native
+    var disableFocusLock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable the ability to click or intercat in any way with the _Highlighted_ element
       */
-    var disableInteraction: js.UndefOr[Boolean] = js.native
+    var disableInteraction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable all keyboard navigation (next and prev step) when true, disable only selected keys when array
       */
-    var disableKeyboardNavigation: js.UndefOr[Boolean | (js.Array[esc | right | left])] = js.native
+    var disableKeyboardNavigation: js.UndefOr[Boolean | (js.Array[esc | right | left])] = js.undefined
     
     /**
       * Function triggered each time current step change
       */
-    var getCurrentStep: js.UndefOr[js.Function1[/* currentStep */ Double, Unit]] = js.native
+    var getCurrentStep: js.UndefOr[js.Function1[/* currentStep */ Double, Unit]] = js.undefined
     
     /**
       * Programmatically change current step after the first render, when the value changes
       */
-    var goToStep: js.UndefOr[Double] = js.native
+    var goToStep: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom class name to add to the element which is the overlay for the target element when `disableInteraction`
       */
-    var highlightedMaskClassName: js.UndefOr[String] = js.native
+    var highlightedMaskClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Tolerance in pixels to add when calculating if an element is outside viewport to scroll into view
       */
-    var inViewThreshold: js.UndefOr[Double] = js.native
+    var inViewThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * You know…
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * Change Next button in last step into a custom button to close the Tour
       */
-    var lastStepNextButton: js.UndefOr[ReactNode] = js.native
+    var lastStepNextButton: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Custom class name to add to the _Mask_
       */
-    var maskClassName: js.UndefOr[String] = js.native
+    var maskClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Extra Space between in pixels between _Highlighted_ element and _Mask_
       */
-    var maskSpace: js.UndefOr[Double] = js.native
+    var maskSpace: js.UndefOr[Double] = js.undefined
     
     /**
       * Renders as next button navigation
       */
-    var nextButton: js.UndefOr[ReactNode] = js.native
+    var nextButton: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Overrides default `nextStep` internal function
       */
-    var nextStep: js.UndefOr[js.Function0[Unit]] = js.native
+    var nextStep: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Do something after _Tour_ is opened
       */
-    var onAfterOpen: js.UndefOr[js.Function1[/* target */ HTMLDivElement, Unit]] = js.native
+    var onAfterOpen: js.UndefOr[js.Function1[/* target */ HTMLDivElement, Unit]] = js.undefined
     
     /**
       * Do something before _Tour_ is closed
       */
-    var onBeforeClose: js.UndefOr[js.Function1[/* target */ HTMLDivElement, Unit]] = js.native
+    var onBeforeClose: js.UndefOr[js.Function1[/* target */ HTMLDivElement, Unit]] = js.undefined
     
     /**
       * Function to close the _Tour_
       */
-    def onRequestClose(event: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit = js.native
+    def onRequestClose(event: MouseEvent[HTMLDivElement, NativeMouseEvent]): Unit
     
     /**
       * Renders as prev button navigation
       */
-    var prevButton: js.UndefOr[ReactNode] = js.native
+    var prevButton: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Overrides default `prevStep` internal function
       */
-    var prevStep: js.UndefOr[js.Function0[Unit]] = js.native
+    var prevStep: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Beautify _Helper_ and _Mask_ with `border-radius` (in px)
       * @default 0
       */
-    var rounded: js.UndefOr[Double] = js.native
+    var rounded: js.UndefOr[Double] = js.undefined
     
     /**
       * Smooth scroll duration when positioning the target element (in ms)
       * @default 1
       */
-    var scrollDuration: js.UndefOr[Double] = js.native
+    var scrollDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Offset when positioning the target element after scroll to it, by default it's a calculation to the center of the viewport
       */
-    var scrollOffset: js.UndefOr[Double] = js.native
+    var scrollOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Show/Hide _Helper_ Navigation buttons
       * @default true
       */
-    var showButtons: js.UndefOr[Boolean] = js.native
+    var showButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide _Helper_ Close button
       * @default true
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide _Helper_ Navigation Dots
       * @default true
       */
-    var showNavigation: js.UndefOr[Boolean] = js.native
+    var showNavigation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide number when hovers on each Navigation Dot
       * @default true
       */
-    var showNavigationNumber: js.UndefOr[Boolean] = js.native
+    var showNavigationNumber: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show/Hide _Helper_ Number Badge
       * @default true
       */
-    var showNumber: js.UndefOr[Boolean] = js.native
+    var showNumber: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Starting step when _Tour_ is open the first time
       */
-    var startAt: js.UndefOr[Double] = js.native
+    var startAt: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of elements to highlight with special info and props
       */
-    var steps: js.Array[ReactourStep] = js.native
+    var steps: js.Array[ReactourStep]
     
     /**
       * Value to listen if a forced update is needed
       */
-    var update: js.UndefOr[String] = js.native
+    var update: js.UndefOr[String] = js.undefined
     
     /**
       * Delay time when forcing update. Useful when there are known animation/transitions
       * @default 1
       */
-    var updateDelay: js.UndefOr[Double] = js.native
+    var updateDelay: js.UndefOr[Double] = js.undefined
   }
   object ReactourProps {
     
@@ -699,40 +694,39 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactourState extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var current: Double = js.native
+    var current: Double
     
-    var focusUnlocked: Boolean = js.native
+    var focusUnlocked: Boolean
     
-    var h: Double = js.native
+    var h: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var helperHeight: js.UndefOr[Double] = js.native
+    var helperHeight: js.UndefOr[Double] = js.undefined
     
-    var helperPosition: js.UndefOr[ReactourStepPosition] = js.native
+    var helperPosition: js.UndefOr[ReactourStepPosition] = js.undefined
     
-    var helperWidth: js.UndefOr[Double] = js.native
+    var helperWidth: js.UndefOr[Double] = js.undefined
     
-    var inDOM: Boolean = js.native
+    var inDOM: Boolean
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var left: Double = js.native
+    var left: Double
     
-    var observer: MutationObserver | Null = js.native
+    var observer: MutationObserver | Null
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ReactourState {
     
@@ -751,7 +745,7 @@ object mod {
       w: Double,
       width: Double
     ): ReactourState = {
-      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], focusUnlocked = focusUnlocked.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inDOM = inDOM.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], focusUnlocked = focusUnlocked.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inDOM = inDOM.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], observer = null)
       __obj.asInstanceOf[ReactourState]
     }
     
@@ -820,45 +814,44 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactourStep extends StObject {
     
     /**
       * Action that can be executed on target element of the step
       */
-    var action: js.UndefOr[js.Function1[/* domNode */ js.Any, Unit]] = js.native
+    var action: js.UndefOr[js.Function1[/* domNode */ js.Any, Unit]] = js.undefined
     
     /**
       * Content of the step
       */
-    var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode]) = js.native
+    var content: ReactNode | (js.Function1[/* args */ ReactourStepContentArgs, ReactNode])
     
     /**
       * Text read to screen reader software for this step's navigation dot
       */
-    var navDotAriaLabel: js.UndefOr[String] = js.native
+    var navDotAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Position of step content
       */
-    var position: js.UndefOr[ReactourStepPosition | (js.Tuple2[Double, Double])] = js.native
+    var position: js.UndefOr[ReactourStepPosition | (js.Tuple2[Double, Double])] = js.undefined
     
     /**
       * DOM selector to find the target element
       */
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
     /**
       * Disable interaction for this specific step.
       * Could be enabled passing `true`
       * when `disableInteraction` prop is present in Tour
       */
-    var stepInteraction: js.UndefOr[Boolean] = js.native
+    var stepInteraction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional styles
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ReactourStep {
     
@@ -918,16 +911,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactourStepContentArgs extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def goTo(step: Double): Unit = js.native
+    def goTo(step: Double): Unit
     
-    var inDOM: Boolean = js.native
+    var inDOM: Boolean
     
-    var step: Double = js.native
+    var step: Double
   }
   object ReactourStepContentArgs {
     

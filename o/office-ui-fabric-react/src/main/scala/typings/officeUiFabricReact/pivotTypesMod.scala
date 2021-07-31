@@ -15,7 +15,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pivotTypesMod {
@@ -27,21 +26,25 @@ object pivotTypesMod {
   object PivotLinkFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PivotLinkFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[PivotLinkFormat & Double] = js.native
     
     /**
       * Display Pivot Links as links
       */
     @js.native
-    sealed trait links extends PivotLinkFormat
-    /* 0 */ val links: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.links with Double = js.native
+    sealed trait links
+      extends StObject
+         with PivotLinkFormat
+    /* 0 */ val links: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.links & Double = js.native
     
     /**
       * Display Pivot Links as Tabs
       */
     @js.native
-    sealed trait tabs extends PivotLinkFormat
-    /* 1 */ val tabs: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.tabs with Double = js.native
+    sealed trait tabs
+      extends StObject
+         with PivotLinkFormat
+    /* 1 */ val tabs: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.tabs & Double = js.native
   }
   
   @js.native
@@ -51,30 +54,33 @@ object pivotTypesMod {
   object PivotLinkSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PivotLinkSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[PivotLinkSize & Double] = js.native
     
     /**
       * Display links using large font size
       */
     @js.native
-    sealed trait large extends PivotLinkSize
-    /* 1 */ val large: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.large with Double = js.native
+    sealed trait large
+      extends StObject
+         with PivotLinkSize
+    /* 1 */ val large: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.large & Double = js.native
     
     /**
       * Display Link using normal font size
       */
     @js.native
-    sealed trait normal extends PivotLinkSize
-    /* 0 */ val normal: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.normal with Double = js.native
+    sealed trait normal
+      extends StObject
+         with PivotLinkSize
+    /* 0 */ val normal: typings.officeUiFabricReact.pivotTypesMod.PivotLinkSize.normal & Double = js.native
   }
   
-  @js.native
   trait IPivot extends StObject {
     
     /**
       * Sets focus to the first pivot tab.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IPivot {
     
@@ -92,16 +98,16 @@ object pivotTypesMod {
     }
   }
   
-  @js.native
   trait IPivotProps
-    extends HTMLAttributes[HTMLDivElement]
-       with ClassAttributes[PivotBase] {
+    extends StObject
+       with ClassAttributes[PivotBase]
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Optional callback to access the IPivot interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IPivot]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IPivot]] = js.undefined
     
     /**
       * Default selected index for the pivot. Only provide this if the pivot is an uncontrolled component;
@@ -111,7 +117,7 @@ object pivotTypesMod {
       *
       * @deprecated Use `defaultSelectedKey`
       */
-    var defaultSelectedIndex: js.UndefOr[Double] = js.native
+    var defaultSelectedIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Default selected key for the pivot. Only provide this if the pivot is an uncontrolled component;
@@ -119,20 +125,20 @@ object pivotTypesMod {
       *
       * This property is also mutually exclusive with `defaultSelectedIndex`.
       */
-    var defaultSelectedKey: js.UndefOr[String] = js.native
+    var defaultSelectedKey: js.UndefOr[String] = js.undefined
     
     /**
       * Callback to customize how IDs are generated for each tab header.
       * Useful if you're rendering content outside and need to connect aria-labelledby.
       */
-    var getTabId: js.UndefOr[js.Function2[/* itemKey */ String, /* index */ Double, String]] = js.native
+    var getTabId: js.UndefOr[js.Function2[/* itemKey */ String, /* index */ Double, String]] = js.undefined
     
     /**
       * Whether to skip rendering the tabpanel with the content of the selected tab.
       * Use this prop if you plan to separately render the tab content
       * and don't want to leave an empty tabpanel in the page that may confuse Screen Readers.
       */
-    var headersOnly: js.UndefOr[Boolean] = js.native
+    var headersOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index of the pivot item initially selected. Mutually exclusive with `initialSelectedKey`.
@@ -140,7 +146,7 @@ object pivotTypesMod {
       *
       * @deprecated Use `defaultSelectedKey`
       */
-    var initialSelectedIndex: js.UndefOr[Double] = js.native
+    var initialSelectedIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Key of the pivot item initially selected. Mutually exclusive with `initialSelectedIndex`.
@@ -148,17 +154,17 @@ object pivotTypesMod {
       *
       * @deprecated Use `defaultSelectedKey`
       */
-    var initialSelectedKey: js.UndefOr[String] = js.native
+    var initialSelectedKey: js.UndefOr[String] = js.undefined
     
     /**
       * PivotLinkFormat to use (links, tabs)
       */
-    var linkFormat: js.UndefOr[PivotLinkFormat] = js.native
+    var linkFormat: js.UndefOr[PivotLinkFormat] = js.undefined
     
     /**
       * PivotLinkSize to use (normal, large)
       */
-    var linkSize: js.UndefOr[PivotLinkSize] = js.native
+    var linkSize: js.UndefOr[PivotLinkSize] = js.undefined
     
     /**
       * Callback for when the selected pivot item is changed.
@@ -169,24 +175,24 @@ object pivotTypesMod {
           /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Key of the selected pivot item. Updating this will override the Pivot's selected item state.
       * Only provide this if the pivot is a controlled component where you are maintaining the
       * current state; otherwise, use `defaultSelectedKey`.
       */
-    var selectedKey: js.UndefOr[String | Null] = js.native
+    var selectedKey: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IPivotStyleProps, IPivotStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IPivotStyleProps, IPivotStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IPivotProps {
     
@@ -291,24 +297,23 @@ object pivotTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Pivot/Pivot.types.IPivotProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Pivot/Pivot.types.IPivotProps, 'className'> & {  rootIsLarge :boolean | undefined,   rootIsTabs :boolean | undefined,   linkIsSelected :boolean | undefined} */
-  @js.native
   trait IPivotStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates whether Pivot link is selected.
       * @deprecated Is not populated with valid value. Specify `linkIsSelected` styling instead.
       */
-    var linkIsSelected: js.UndefOr[Boolean] = js.native
+    var linkIsSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether Pivot has large format. */
-    var rootIsLarge: js.UndefOr[Boolean] = js.native
+    var rootIsLarge: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates whether Pivot has tabbed format. */
-    var rootIsTabs: js.UndefOr[Boolean] = js.native
+    var rootIsTabs: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IPivotStyleProps {
     
@@ -350,27 +355,26 @@ object pivotTypesMod {
     }
   }
   
-  @js.native
   trait IPivotStyles extends StObject {
     
-    var count: IStyle = js.native
+    var count: IStyle
     
-    var icon: IStyle = js.native
+    var icon: IStyle
     
-    var itemContainer: js.UndefOr[IStyle] = js.native
+    var itemContainer: js.UndefOr[IStyle] = js.undefined
     
-    var link: IStyle = js.native
+    var link: IStyle
     
-    var linkContent: IStyle = js.native
+    var linkContent: IStyle
     
-    var linkIsSelected: IStyle = js.native
+    var linkIsSelected: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var text: IStyle = js.native
+    var text: IStyle
   }
   object IPivotStyles {
     

@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.model
 import typings.openui5.sap.ui.base.EventProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Binding extends EventProvider {
+trait Binding
+  extends StObject
+     with EventProvider {
   
   /**
     * Attach event-handler <code>fnFunction</code> to the 'AggregatedDataStateChange' event of this

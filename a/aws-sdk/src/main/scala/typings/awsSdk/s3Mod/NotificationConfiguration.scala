@@ -2,26 +2,24 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfiguration extends StObject {
   
   /**
     * Describes the AWS Lambda functions to invoke and the events for which to invoke them.
     */
-  var LambdaFunctionConfigurations: js.UndefOr[LambdaFunctionConfigurationList] = js.native
+  var LambdaFunctionConfigurations: js.UndefOr[LambdaFunctionConfigurationList] = js.undefined
   
   /**
     * The Amazon Simple Queue Service queues to publish messages to and the events for which to publish messages.
     */
-  var QueueConfigurations: js.UndefOr[QueueConfigurationList] = js.native
+  var QueueConfigurations: js.UndefOr[QueueConfigurationList] = js.undefined
   
   /**
     * The topic to which notifications are sent and the events for which notifications are generated.
     */
-  var TopicConfigurations: js.UndefOr[TopicConfigurationList] = js.native
+  var TopicConfigurations: js.UndefOr[TopicConfigurationList] = js.undefined
 }
 object NotificationConfiguration {
   

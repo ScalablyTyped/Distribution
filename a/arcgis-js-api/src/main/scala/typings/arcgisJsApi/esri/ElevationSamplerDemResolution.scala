@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElevationSamplerDemResolution extends Object {
+trait ElevationSamplerDemResolution
+  extends StObject
+     with Object {
   
   /**
     * The maximum resolution.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#demResolution)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The minimum resolution.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#demResolution)
     */
-  var min: Double = js.native
+  var min: Double
 }
 object ElevationSamplerDemResolution {
   

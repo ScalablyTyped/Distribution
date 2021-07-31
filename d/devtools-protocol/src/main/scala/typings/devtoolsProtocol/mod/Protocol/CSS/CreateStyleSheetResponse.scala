@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStyleSheetResponse extends StObject {
   
   /**
     * Identifier of the created "via-inspector" stylesheet.
     */
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
 }
 object CreateStyleSheetResponse {
   

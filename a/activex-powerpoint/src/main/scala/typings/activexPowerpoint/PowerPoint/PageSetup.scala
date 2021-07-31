@@ -3,30 +3,28 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageSetup extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var FirstSlideNumber: Double = js.native
+  var FirstSlideNumber: Double
   
-  var NotesOrientation: MsoOrientation = js.native
+  var NotesOrientation: MsoOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.PageSetup_typekey")
-  var PowerPointDotPageSetup_typekey: PageSetup = js.native
+  var PowerPointDotPageSetup_typekey: PageSetup
   
-  var SlideHeight: Double = js.native
+  var SlideHeight: Double
   
-  var SlideOrientation: MsoOrientation = js.native
+  var SlideOrientation: MsoOrientation
   
-  var SlideSize: PpSlideSizeType = js.native
+  var SlideSize: PpSlideSizeType
   
-  var SlideWidth: Double = js.native
+  var SlideWidth: Double
 }
 object PageSetup {
   

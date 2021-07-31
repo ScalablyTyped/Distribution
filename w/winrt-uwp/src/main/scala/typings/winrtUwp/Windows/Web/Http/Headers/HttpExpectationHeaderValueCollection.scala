@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsHttpExpectationHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Expect HTTP header on an HTTP request. */
 @js.native
-trait HttpExpectationHeaderValueCollection extends Array[HttpExpectationHeaderValue] {
+trait HttpExpectationHeaderValueCollection
+  extends StObject
+     with Array[HttpExpectationHeaderValue] {
   
   /**
     * Adds a new HttpExpectationHeaderValue item to the end of the collection.

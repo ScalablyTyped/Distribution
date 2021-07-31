@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachInstancesFromLoadBalancerRequest extends StObject {
   
   /**
     * An array of strings containing the names of the instances you want to detach from the load balancer.
     */
-  var instanceNames: ResourceNameList = js.native
+  var instanceNames: ResourceNameList
   
   /**
     * The name of the Lightsail load balancer.
     */
-  var loadBalancerName: ResourceName = js.native
+  var loadBalancerName: ResourceName
 }
 object DetachInstancesFromLoadBalancerRequest {
   

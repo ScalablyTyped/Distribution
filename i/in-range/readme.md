@@ -9,10 +9,10 @@ Check if a number is in a given range
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | in-range |
-| Keywords           | in, range, number, check, is |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 46375 |
+| Keywords           | in, range, number, check, is, bigint |
+| # releases         | 1 |
+| # dependents       | 12 |
+| # downloads        | 47433 |
 | # stars            | 1 |
 
 ## Links

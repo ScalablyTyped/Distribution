@@ -2,25 +2,23 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var help: String = js.native
+  var help: String
   
-  var helpUrl: String = js.native
+  var helpUrl: String
   
-  var id: String = js.native
+  var id: String
   
-  var impact: js.UndefOr[ImpactValue] = js.native
+  var impact: js.UndefOr[ImpactValue] = js.undefined
   
-  var nodes: js.Array[NodeResult] = js.native
+  var nodes: js.Array[NodeResult]
   
-  var tags: js.Array[TagValue] = js.native
+  var tags: js.Array[TagValue]
 }
 object Result {
   

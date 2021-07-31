@@ -4,7 +4,6 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,19 +59,19 @@ trait ItemContainer extends StObject {
     * Raised when the item is invoked. (You can use the tapBehavior property to specify whether taps and clicks invoke the item.)
     * @param eventInfo An object that contains information about the event.
     **/
-  def oninvoked(eventInfo: CustomEvent[_]): Unit = js.native
+  def oninvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Raised after the item is selected or deselected.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onselectionchanged(eventInfo: CustomEvent[_]): Unit = js.native
+  def onselectionchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Raised just before the current selection changes.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onselectionchanging(eventInfo: CustomEvent[_]): Unit = js.native
+  def onselectionchanging(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

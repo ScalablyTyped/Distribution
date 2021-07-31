@@ -3,23 +3,23 @@ package typings.sharepoint.SP.JsGrid.EventArgs
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnCellErrorStateChanged extends IEventArgs {
+trait OnCellErrorStateChanged
+  extends StObject
+     with IEventArgs {
   
-  var bAddingError: Boolean = js.native
+  var bAddingError: Boolean
   
-  var bCellCurrentlyHasError: Boolean = js.native
+  var bCellCurrentlyHasError: Boolean
   
-  var bCellHadError: Boolean = js.native
+  var bCellHadError: Boolean
   
-  var errorId: Double = js.native
+  var errorId: Double
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var recordKey: Double = js.native
+  var recordKey: Double
 }
 object OnCellErrorStateChanged {
   

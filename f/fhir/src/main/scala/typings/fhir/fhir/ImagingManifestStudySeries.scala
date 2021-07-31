@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Series identity of the selected instances
   */
-@js.native
-trait ImagingManifestStudySeries extends BackboneElement {
+trait ImagingManifestStudySeries
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'uid'.
     */
-  var _uid: js.UndefOr[Element] = js.native
+  var _uid: js.UndefOr[Element] = js.undefined
   
   /**
     * Series access endpoint
     */
-  var endpoint: js.UndefOr[js.Array[Reference]] = js.native
+  var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * The selected instance
     */
-  var instance: js.Array[ImagingManifestStudySeriesInstance] = js.native
+  var instance: js.Array[ImagingManifestStudySeriesInstance]
   
   /**
     * Series instance UID
     */
-  var uid: oid = js.native
+  var uid: oid
 }
 object ImagingManifestStudySeries {
   

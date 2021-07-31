@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeTableAssociationMod {
@@ -48,6 +47,10 @@ object routeTableAssociationMod {
   /* static members */
   object RouteTableAssociation {
     
+    @JSImport("@pulumi/aws/ec2transitgateway/routeTableAssociation", "RouteTableAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RouteTableAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,40 +60,34 @@ object routeTableAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTableAssociation", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTableAssociation", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTableAssociation", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableAssociationState): RouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTableAssociation", "RouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): RouteTableAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableAssociationState): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
     
     /**
       * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2transitgateway/routeTableAssociation", "RouteTableAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ Boolean]
   }
   
-  @js.native
   trait RouteTableAssociationArgs extends StObject {
     
     /**
       * Identifier of EC2 Transit Gateway Attachment.
       */
-    val transitGatewayAttachmentId: Input[String] = js.native
+    val transitGatewayAttachmentId: Input[String]
     
     /**
       * Identifier of EC2 Transit Gateway Route Table.
       */
-    val transitGatewayRouteTableId: Input[String] = js.native
+    val transitGatewayRouteTableId: Input[String]
   }
   object RouteTableAssociationArgs {
     
@@ -111,28 +108,27 @@ object routeTableAssociationMod {
     }
   }
   
-  @js.native
   trait RouteTableAssociationState extends StObject {
     
     /**
       * Identifier of the resource
       */
-    val resourceId: js.UndefOr[Input[String]] = js.native
+    val resourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of the resource
       */
-    val resourceType: js.UndefOr[Input[String]] = js.native
+    val resourceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway Attachment.
       */
-    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Transit Gateway Route Table.
       */
-    val transitGatewayRouteTableId: js.UndefOr[Input[String]] = js.native
+    val transitGatewayRouteTableId: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteTableAssociationState {
     

@@ -12,27 +12,25 @@ import typings.react.mod.RefObject
 import typings.reactJss.mod.Managers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var classNamePrefix: js.UndefOr[String] = js.native
+    var classNamePrefix: js.UndefOr[String] = js.undefined
     
-    var disableStylesGeneration: js.UndefOr[Boolean] = js.native
+    var disableStylesGeneration: js.UndefOr[Boolean] = js.undefined
     
-    var generateId: js.UndefOr[GenerateId] = js.native
+    var generateId: js.UndefOr[GenerateId] = js.undefined
     
-    var id: js.UndefOr[CreateGenerateIdOptions] = js.native
+    var id: js.UndefOr[CreateGenerateIdOptions] = js.undefined
     
-    var jss: js.UndefOr[Jss] = js.native
+    var jss: js.UndefOr[Jss] = js.undefined
     
-    var registry: js.UndefOr[SheetsRegistry] = js.native
+    var registry: js.UndefOr[SheetsRegistry] = js.undefined
   }
   object Children {
     
@@ -89,18 +87,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DisableStylesGeneration extends StObject {
     
-    var disableStylesGeneration: Boolean = js.native
+    var disableStylesGeneration: Boolean
     
-    var jss: js.UndefOr[Jss] = js.native
+    var jss: js.UndefOr[Jss] = js.undefined
     
-    var managers: js.UndefOr[Managers] = js.native
+    var managers: js.UndefOr[Managers] = js.undefined
     
-    var registry: js.UndefOr[SheetsRegistry] = js.native
+    var registry: js.UndefOr[SheetsRegistry] = js.undefined
     
-    var sheetOptions: StyleSheetFactoryOptions = js.native
+    var sheetOptions: StyleSheetFactoryOptions
   }
   object DisableStylesGeneration {
     
@@ -139,10 +136,9 @@ object anon {
     }
   }
   
-  @js.native
   trait InnerRef extends StObject {
     
-    var innerRef: js.UndefOr[RefObject[_] | (js.Function1[/* instance */ js.Any, Unit])] = js.native
+    var innerRef: js.UndefOr[RefObject[js.Any] | (js.Function1[/* instance */ js.Any, Unit])] = js.undefined
   }
   object InnerRef {
     
@@ -156,7 +152,7 @@ object anon {
     implicit class InnerRefMutableBuilder[Self <: InnerRef] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: RefObject[_] | (js.Function1[/* instance */ js.Any, Unit])): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: RefObject[js.Any] | (js.Function1[/* instance */ js.Any, Unit])): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInnerRefFunction1(value: /* instance */ js.Any => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))

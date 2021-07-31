@@ -11,62 +11,60 @@ import typings.semanticUiEmbed.semanticUiEmbedBooleans.`false`
 import typings.semanticUiEmbed.semanticUiEmbedStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-embed.SemanticUI.EmbedSettings._Impl, keyof semantic-ui-embed.SemanticUI.EmbedSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var autoplay: js.UndefOr[auto | Boolean] = js.native
+  var autoplay: js.UndefOr[auto | Boolean] = js.undefined
   
-  var brandedUI: js.UndefOr[Boolean] = js.native
+  var brandedUI: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var hd: js.UndefOr[Boolean] = js.native
+  var hd: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[`false` | String] = js.native
+  var icon: js.UndefOr[`false` | String] = js.undefined
   
-  var id: js.UndefOr[`false` | String] = js.native
+  var id: js.UndefOr[`false` | String] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]] = js.native
+  var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* url */ String, Unit]] = js.undefined
   
-  var onDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
   var onEmbed: js.UndefOr[
     js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
-  ] = js.native
+  ] = js.undefined
   
-  var onPlaceholderDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onPlaceholderDisplay: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var parameters: js.UndefOr[`false` | ParametersSettings] = js.native
+  var parameters: js.UndefOr[`false` | ParametersSettings] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[`false` | String] = js.native
+  var source: js.UndefOr[`false` | String] = js.undefined
   
-  var templates: js.UndefOr[TemplatesSettings] = js.native
+  var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
-  var url: js.UndefOr[`false` | String] = js.native
+  var url: js.UndefOr[`false` | String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

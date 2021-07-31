@@ -2,19 +2,19 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AadUserConversationMember extends ConversationMember {
+trait AadUserConversationMember
+  extends StObject
+     with ConversationMember {
   
   // The email address of the user.
-  var email: js.UndefOr[NullableOption[String]] = js.native
+  var email: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var user: js.UndefOr[NullableOption[User]] = js.native
+  var user: js.UndefOr[NullableOption[User]] = js.undefined
   
   // The guid of the user.
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AadUserConversationMember {
   

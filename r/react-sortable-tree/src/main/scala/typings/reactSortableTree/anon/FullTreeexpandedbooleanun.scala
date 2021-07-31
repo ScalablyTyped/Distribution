@@ -3,16 +3,14 @@ package typings.reactSortableTree.anon
 import typings.reactSortableTree.mod.TreeItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & {  expanded :boolean | undefined} */
-@js.native
 trait FullTreeexpandedbooleanun extends StObject {
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
 }
 object FullTreeexpandedbooleanun {
   

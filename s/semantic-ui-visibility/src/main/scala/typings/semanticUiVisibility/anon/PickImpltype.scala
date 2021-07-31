@@ -5,14 +5,12 @@ import typings.semanticUiVisibility.semanticUiVisibilityStrings.fixed
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'type'> */
-@js.native
 trait PickImpltype extends StObject {
   
-  var `type`: `false` | image | fixed = js.native
+  var `type`: `false` | image | fixed
 }
 object PickImpltype {
   

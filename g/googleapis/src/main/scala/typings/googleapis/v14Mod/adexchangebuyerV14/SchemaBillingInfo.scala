@@ -2,36 +2,34 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration data for an Ad Exchange billing info.
   */
-@js.native
 trait SchemaBillingInfo extends StObject {
   
   /**
     * Account id.
     */
-  var accountId: js.UndefOr[Double] = js.native
+  var accountId: js.UndefOr[Double] = js.undefined
   
   /**
     * Account name.
     */
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /**
     * A list of adgroup IDs associated with this particular account. These IDs
     * may show up as part of a realtime bidding BidRequest, which indicates a
     * bid request for this account.
     */
-  var billingId: js.UndefOr[js.Array[String]] = js.native
+  var billingId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBillingInfo {
   

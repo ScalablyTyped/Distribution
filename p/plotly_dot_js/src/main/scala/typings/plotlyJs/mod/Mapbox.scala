@@ -5,29 +5,27 @@ import typings.plotlyJs.anon.PartialMapboxCenter
 import typings.plotlyJs.anon.PartialMapboxLayersCircle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mapbox extends StObject {
   
-  var accesstoken: String = js.native
+  var accesstoken: String
   
-  var bearing: Double = js.native
+  var bearing: Double
   
-  var center: PartialMapboxCenter = js.native
+  var center: PartialMapboxCenter
   
-  var domain: PartialDomain = js.native
+  var domain: PartialDomain
   
-  var layers: js.Array[PartialMapboxLayersCircle] = js.native
+  var layers: js.Array[PartialMapboxLayersCircle]
   
-  var pitch: Double = js.native
+  var pitch: Double
   
-  var style: Double | String = js.native
+  var style: Double | String
   
-  var uirevision: Double | String = js.native
+  var uirevision: Double | String
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object Mapbox {
   

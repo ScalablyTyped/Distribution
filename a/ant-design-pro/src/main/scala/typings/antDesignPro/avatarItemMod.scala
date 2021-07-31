@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarItemMod {
@@ -19,18 +18,17 @@ object avatarItemMod {
   
   type AvatarItem = Component[AvatarItemProps, js.Any, js.Any]
   
-  @js.native
   trait AvatarItemProps extends StObject {
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tips: ReactNode = js.native
+    var tips: ReactNode
   }
   object AvatarItemProps {
     

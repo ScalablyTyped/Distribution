@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateImageVersionRequest extends StObject {
   
   /**
     * The registry path of the container image to use as the starting point for this version. The path is an Amazon Container Registry (ECR) URI in the following format:  &lt;acct-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;repo-name[:tag] or [@digest]&gt; 
     */
-  var BaseImage: ImageBaseImage = js.native
+  var BaseImage: ImageBaseImage
   
   /**
     * A unique ID. If not specified, the AWS CLI and AWS SDKs, such as the SDK for Python (Boto3), add a unique value to the call.
     */
-  var ClientToken: typings.awsSdk.sagemakerMod.ClientToken = js.native
+  var ClientToken: typings.awsSdk.sagemakerMod.ClientToken
   
   /**
     * The ImageName of the Image to create a version of.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
 }
 object CreateImageVersionRequest {
   

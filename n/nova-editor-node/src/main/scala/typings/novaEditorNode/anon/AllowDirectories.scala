@@ -2,23 +2,21 @@ package typings.novaEditorNode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowDirectories extends StObject {
   
-  var allowDirectories: js.UndefOr[Boolean] = js.native
+  var allowDirectories: js.UndefOr[Boolean] = js.undefined
   
-  var allowFiles: js.UndefOr[Boolean] = js.native
+  var allowFiles: js.UndefOr[Boolean] = js.undefined
   
-  var allowMultiple: js.UndefOr[Boolean] = js.native
+  var allowMultiple: js.UndefOr[Boolean] = js.undefined
   
-  var filetype: js.UndefOr[js.Array[String]] = js.native
+  var filetype: js.UndefOr[js.Array[String]] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var relative: js.UndefOr[Boolean] = js.native
+  var relative: js.UndefOr[Boolean] = js.undefined
 }
 object AllowDirectories {
   

@@ -7,23 +7,24 @@ import typings.workboxBuild.typesMod.ManifestEntry
 import typings.workboxBuild.typesMod.ManifestTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getManifestMod {
   
-  @JSImport("workbox-build/get-manifest", "getManifest")
+  @JSImport("workbox-build/get-manifest", JSImport.Namespace)
   @js.native
-  def getManifest(config: GetManifestConfig): GetManifestResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getManifest(config: GetManifestConfig): GetManifestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")(config.asInstanceOf[js.Any]).asInstanceOf[GetManifestResult]
+  
   trait GetManifestConfig extends StObject {
     
     /**
       * A list of entries to be precached, in addition to any entries that are
       * generated as part of the build configuration.
       */
-    var additionalManifestEntries: js.UndefOr[js.Array[ManifestEntry]] = js.native
+    var additionalManifestEntries: js.UndefOr[js.Array[ManifestEntry]] = js.undefined
     
     /**
       * Assets that match this will be assumed to be uniquely versioned via their
@@ -33,12 +34,12 @@ object getManifestMod {
       * you provide a RegExp that will detect that, as it will reduce the bandwidth
       * consumed when precaching.
       */
-    var dontCacheBustURLsMatching: js.UndefOr[RegExp] = js.native
+    var dontCacheBustURLsMatching: js.UndefOr[RegExp] = js.undefined
     
     /**
       * The local directory you wish to match `globPatterns` against. The path is relative to the current directory.
       */
-    var globDirectory: String = js.native
+    var globDirectory: String
     
     /**
       * Determines whether or not symlinks are followed when generating the precache
@@ -47,7 +48,7 @@ object getManifestMod {
       *
       * @default true
       */
-    var globFollow: js.UndefOr[Boolean] = js.native
+    var globFollow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A set of patterns matching files to always exclude when generating the
@@ -56,7 +57,7 @@ object getManifestMod {
       *
       * @default ['node_modules/ **']
       */
-    var globIgnores: js.UndefOr[js.Array[String]] = js.native
+    var globIgnores: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Files matching any of these patterns will be included in the precache
@@ -65,7 +66,7 @@ object getManifestMod {
       *
       * @default ['**.{js,css,html}']
       */
-    var globPatterns: js.UndefOr[js.Array[String]] = js.native
+    var globPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If true, an error reading a directory when generating a precache manifest
@@ -75,14 +76,14 @@ object getManifestMod {
       *
       * @default true
       */
-    var globStrict: js.UndefOr[Boolean] = js.native
+    var globStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One or more functions which will be applied sequentially against the
       * generated manifest. If `modifyURLPrefix` or `dontCacheBustURLsMatching` are
       * also specified, their corresponding transformations will be applied first.
       */
-    var manifestTransforms: js.UndefOr[js.Array[ManifestTransform]] = js.native
+    var manifestTransforms: js.UndefOr[js.Array[ManifestTransform]] = js.undefined
     
     /**
       * This value can be used to determine the maximum size of files that will be
@@ -91,14 +92,14 @@ object getManifestMod {
       *
       * @default 2097152
       */
-    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.native
+    var maximumFileSizeToCacheInBytes: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to 'production', then an optimized service worker bundle that excludes
       * debugging info will be produced. If not explicitly configured here, the `mode`
       * value configured in the current `webpack` compiltion will be used.
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /**
       * A mapping of prefixes that, if present in an entry in the precache manifest,
@@ -108,7 +109,7 @@ object getManifestMod {
       * you can use the `manifestTransforms` option and provide a function that modifies
       * the entries in the manifest using whatever logic you provide.
       */
-    var modifyURLPrefix: js.UndefOr[StringDictionary[String]] = js.native
+    var modifyURLPrefix: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * If a URL is rendered based on some server-side logic, its contents may depend
@@ -119,7 +120,7 @@ object getManifestMod {
       * it will be interpreted as unique versioning information that you've generated
       * for a given URL.
       */
-    var templatedURLs: js.UndefOr[js.Object] = js.native
+    var templatedURLs: js.UndefOr[js.Object] = js.undefined
   }
   object GetManifestConfig {
     

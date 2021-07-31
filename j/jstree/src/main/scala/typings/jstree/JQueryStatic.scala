@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait JQueryStatic extends StObject {
     * @property jstree
     * @type {JSTreeStatic}
     */
-  var jstree: js.UndefOr[JSTreeStatic] = js.native
+  var jstree: js.UndefOr[JSTreeStatic] = js.undefined
   
   /**
     * helpers
     */
-  var vakata: js.UndefOr[VakataStatic] = js.native
+  var vakata: js.UndefOr[VakataStatic] = js.undefined
 }
 object JQueryStatic {
   

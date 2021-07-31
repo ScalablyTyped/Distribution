@@ -12,7 +12,6 @@ import typings.opentelemetryTracing.typesMod.TraceParams
 import typings.opentelemetryTracing.typesMod.TracerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tracerMod {
@@ -20,7 +19,8 @@ object tracerMod {
   @JSImport("@opentelemetry/tracing/build/src/Tracer", "Tracer")
   @js.native
   class Tracer protected ()
-    extends typings.opentelemetryApi.tracerMod.Tracer {
+    extends StObject
+       with typings.opentelemetryApi.tracerMod.Tracer {
     /**
       * Constructs a new Tracer instance.
       */
@@ -49,7 +49,7 @@ object tracerMod {
     
     val resource: Resource = js.native
     
-    def startSpan(name: String, options: js.UndefOr[scala.Nothing], context: Context_): Span = js.native
+    def startSpan(name: String, options: Unit, context: Context_): Span = js.native
     def startSpan(name: String, options: SpanOptions, context: Context_): Span = js.native
   }
 }

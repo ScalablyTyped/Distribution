@@ -5,7 +5,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,7 +18,9 @@ object mod extends Shortcut {
   val draggable: DraggableConstructor = js.native
   
   @js.native
-  trait DraggableConstructor extends VueConstructor[Vue] {
+  trait DraggableConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     def data(): js.Any = js.native
     

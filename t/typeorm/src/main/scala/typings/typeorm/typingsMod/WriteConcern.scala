@@ -3,28 +3,26 @@ package typings.typeorm.typingsMod
 import typings.typeorm.typeormStrings.majority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteConcern extends StObject {
   
   /**
     * requests acknowledgement from MongoDB that the write operation has
     * been written to the journal
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * requests acknowledgement that the write operation has
     * propagated to a specified number of mongod hosts
     */
-  var w: js.UndefOr[scala.Double | majority | String] = js.native
+  var w: js.UndefOr[scala.Double | majority | String] = js.undefined
   
   /**
     * a time limit, in milliseconds, for the write concern
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object WriteConcern {
   

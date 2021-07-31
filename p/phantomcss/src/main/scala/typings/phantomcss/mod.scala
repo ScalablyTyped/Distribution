@@ -6,7 +6,6 @@ import typings.resemblejs.mod.OutputSettings_
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,7 +34,7 @@ object mod {
           * Compare image diffs generated in this test run only
           */
         def compareSession(): Unit = js.native
-        def compareSession(list: js.Array[_]): Unit = js.native
+        def compareSession(list: js.Array[js.Any]): Unit = js.native
         
         def done(): Unit = js.native
         
@@ -77,30 +76,29 @@ object mod {
         def waitForTests(tests: js.Array[PhantomCSSTest]): Unit = js.native
       }
       
-      @js.native
       trait PhantomCSSOptions extends StObject {
         
         /**
           Don't add count number to images. If set to false (default), a filename is
           required when capturing screenshots.
           */
-        var addIteratorToImage: Boolean = js.native
+        var addIteratorToImage: Boolean
         
         /**
           * Don't add label to generated failure image
           */
-        var addLabelToFailedImage: js.UndefOr[Boolean] = js.native
+        var addLabelToFailedImage: js.UndefOr[Boolean] = js.undefined
         
         /**
           A reference to a particular Casper instance. Required for SlimerJS.
           */
-        var casper: js.UndefOr[Casper] = js.native
+        var casper: js.UndefOr[Casper] = js.undefined
         
         /**
           Remove results directory tree after run.  Use in conjunction
           with failedComparisonsRoot to see failed comparisons.
           */
-        var cleanupComparisonImages: js.UndefOr[Boolean] = js.native
+        var cleanupComparisonImages: js.UndefOr[Boolean] = js.undefined
         
         /**
           You might want to keep master/baseline images in a completely
@@ -108,7 +106,7 @@ object mod {
           with version control systems. By default this resolves to the
           screenshotRoot folder.
           */
-        var comparisonResultRoot: js.UndefOr[String] = js.native
+        var comparisonResultRoot: js.UndefOr[String] = js.undefined
         
         /**
           By default, failure images are put in the './failures' folder.
@@ -116,26 +114,26 @@ object mod {
           not be created but failure images can still be found alongside
           the original and new images.
           */
-        var failedComparisonsRoot: js.UndefOr[String] = js.native
+        var failedComparisonsRoot: js.UndefOr[String] = js.undefined
         
         /**
           * Change the output screenshot filenames for your specific
           * integration
           */
-        var fileNameGetter: js.UndefOr[js.Function2[/* rootPath */ String, /* fileName */ js.UndefOr[String], String]] = js.native
+        var fileNameGetter: js.UndefOr[js.Function2[/* rootPath */ String, /* fileName */ js.UndefOr[String], String]] = js.undefined
         
-        var hideElements: js.UndefOr[String] = js.native
+        var hideElements: js.UndefOr[String] = js.undefined
         
         /**
           libraryRoot is relative to this file and must point to your phantomcss folder (not lib or node_modules). If you are using NPM, this will be './node_modules/phantomcss'.
           */
-        var libraryRoot: js.UndefOr[String] = js.native
+        var libraryRoot: js.UndefOr[String] = js.undefined
         
         /**
           Mismatch tolerance defaults to  0.05%. Increasing this value
           will decrease test coverage
           */
-        var mismatchTolerance: js.UndefOr[Double] = js.native
+        var mismatchTolerance: js.UndefOr[Double] = js.undefined
         
         var onComplete: js.UndefOr[
                 js.Function3[
@@ -144,34 +142,34 @@ object mod {
                   /* noOfErrors */ Double, 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
         
-        var onFail: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.native
+        var onFail: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.undefined
         
         /**
           Called when creating new baseline images
           */
-        var onNewImage: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.native
+        var onNewImage: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.undefined
         
-        var onPass: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.native
+        var onPass: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.undefined
         
-        var onTimeout: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.native
+        var onTimeout: js.UndefOr[js.Function1[/* test */ PhantomCSSTest, Unit]] = js.undefined
         
-        var outputSettings: js.UndefOr[OutputSettings_] = js.native
+        var outputSettings: js.UndefOr[OutputSettings_] = js.undefined
         
         /**
           Prefix the screenshot number to the filename, instead of suffixing it
           */
-        var prefixCount: js.UndefOr[Boolean] = js.native
+        var prefixCount: js.UndefOr[Boolean] = js.undefined
         
         /**
           Rebase is useful when you want to create new baseline
           images without manually deleting the files
           casperjs demo/test.js --rebase
           */
-        var rebase: js.UndefOr[js.Any] = js.native
+        var rebase: js.UndefOr[js.Any] = js.undefined
         
-        var screenshotRoot: js.UndefOr[String] = js.native
+        var screenshotRoot: js.UndefOr[String] = js.undefined
       }
       object PhantomCSSOptions {
         
@@ -299,20 +297,19 @@ object mod {
         }
       }
       
-      @js.native
       trait PhantomCSSTest extends StObject {
         
-        var error: js.UndefOr[Boolean] = js.native
+        var error: js.UndefOr[Boolean] = js.undefined
         
-        var fail: js.UndefOr[Boolean] = js.native
+        var fail: js.UndefOr[Boolean] = js.undefined
         
-        var failFile: js.UndefOr[String] = js.native
+        var failFile: js.UndefOr[String] = js.undefined
         
-        var filename: js.UndefOr[String] = js.native
+        var filename: js.UndefOr[String] = js.undefined
         
-        var mismatch: js.UndefOr[js.Any] = js.native
+        var mismatch: js.UndefOr[js.Any] = js.undefined
         
-        var success: js.UndefOr[Boolean] = js.native
+        var success: js.UndefOr[Boolean] = js.undefined
       }
       object PhantomCSSTest {
         

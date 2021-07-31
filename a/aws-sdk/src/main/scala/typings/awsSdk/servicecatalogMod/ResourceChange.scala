@@ -2,46 +2,44 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceChange extends StObject {
   
   /**
     * The change action.
     */
-  var Action: js.UndefOr[ChangeAction] = js.native
+  var Action: js.UndefOr[ChangeAction] = js.undefined
   
   /**
     * Information about the resource changes.
     */
-  var Details: js.UndefOr[ResourceChangeDetails] = js.native
+  var Details: js.UndefOr[ResourceChangeDetails] = js.undefined
   
   /**
     * The ID of the resource, as defined in the CloudFormation template.
     */
-  var LogicalResourceId: js.UndefOr[typings.awsSdk.servicecatalogMod.LogicalResourceId] = js.native
+  var LogicalResourceId: js.UndefOr[typings.awsSdk.servicecatalogMod.LogicalResourceId] = js.undefined
   
   /**
     * The ID of the resource, if it was already created.
     */
-  var PhysicalResourceId: js.UndefOr[typings.awsSdk.servicecatalogMod.PhysicalResourceId] = js.native
+  var PhysicalResourceId: js.UndefOr[typings.awsSdk.servicecatalogMod.PhysicalResourceId] = js.undefined
   
   /**
     * If the change type is Modify, indicates whether the existing resource is deleted and replaced with a new one.
     */
-  var Replacement: js.UndefOr[typings.awsSdk.servicecatalogMod.Replacement] = js.native
+  var Replacement: js.UndefOr[typings.awsSdk.servicecatalogMod.Replacement] = js.undefined
   
   /**
     * The type of resource.
     */
-  var ResourceType: js.UndefOr[PlanResourceType] = js.native
+  var ResourceType: js.UndefOr[PlanResourceType] = js.undefined
   
   /**
     * The change scope.
     */
-  var Scope: js.UndefOr[typings.awsSdk.servicecatalogMod.Scope] = js.native
+  var Scope: js.UndefOr[typings.awsSdk.servicecatalogMod.Scope] = js.undefined
 }
 object ResourceChange {
   

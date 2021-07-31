@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * metric of a monitored resource does not include any data in the specified
   * duration.
   */
-@js.native
 trait SchemaMetricAbsence extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaMetricAbsence extends StObject {
     * It is advisable to use the ListTimeSeries method when debugging this
     * field.
     */
-  var aggregations: js.UndefOr[js.Array[SchemaAggregation]] = js.native
+  var aggregations: js.UndefOr[js.Array[SchemaAggregation]] = js.undefined
   
   /**
     * The amount of time that a time series must fail to report new data to be
@@ -33,7 +31,7 @@ trait SchemaMetricAbsence extends StObject {
     * minute--e.g. 60, 120, or 300 seconds--are supported. If an invalid value
     * is given, an error will be returned. The Duration.nanos field is ignored.
     */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /**
     * A filter that identifies which time series should be compared with the
@@ -44,7 +42,7 @@ trait SchemaMetricAbsence extends StObject {
     * resource labels, and metric labels. This field may not exceed 2048
     * Unicode characters in length.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The number/percent of time series for which the comparison must hold in
@@ -52,7 +50,7 @@ trait SchemaMetricAbsence extends StObject {
     * will trigger if the comparison is true for any of the time series that
     * have been identified by filter and aggregations.
     */
-  var trigger: js.UndefOr[SchemaTrigger] = js.native
+  var trigger: js.UndefOr[SchemaTrigger] = js.undefined
 }
 object SchemaMetricAbsence {
   

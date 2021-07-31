@@ -1,6 +1,5 @@
 package typings.reactDndMultiBackend
 
-import org.scalablytyped.runtime.Shortcut
 import typings.dndCore.interfacesMod.Backend
 import typings.dndCore.interfacesMod.BackendFactory
 import typings.dndCore.interfacesMod.DragDropManager
@@ -12,10 +11,13 @@ import typings.reactDndMultiBackend.anon.Context
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("react-dnd-multi-backend", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-dnd-multi-backend", JSImport.Default)
   @js.native
@@ -41,46 +43,44 @@ object mod extends Shortcut {
   @js.native
   class Preview protected ()
     extends PureComponent[PreviewProps[js.Any], js.Object, js.Any] {
-    def this(props: PreviewProps[_]) = this()
+    def this(props: PreviewProps[js.Any]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PreviewProps[_], context: js.Any) = this()
+    def this(props: PreviewProps[js.Any], context: js.Any) = this()
   }
   
   @JSImport("react-dnd-multi-backend", "TouchTransition")
   @js.native
   val TouchTransition: Transition = js.native
   
-  @JSImport("react-dnd-multi-backend", "createTransition")
-  @js.native
-  def createTransition(eventType: String, check: CheckFunction[_]): Transition = js.native
+  @scala.inline
+  def createTransition(eventType: String, check: CheckFunction[js.Any]): Transition = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransition")(eventType.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[Transition]
   
-  @js.native
   trait BackendDeclaration extends StObject {
     
     /**
       * Backend - e.g. the one provided by react-dnd-html5-backend.
       */
-    var backend: BackendFactory = js.native
+    var backend: BackendFactory
     
     /**
       * Parameters to the backend
       */
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Flag to indicate that this backend needs to have a custom preview generated. This is mainly
       * used for backends such as the react-dnd-touch-backend, where there is no default preview
       * available.
       */
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The transition that this backend should be used for.
       */
-    var transition: js.UndefOr[Transition] = js.native
+    var transition: js.UndefOr[Transition] = js.undefined
   }
   object BackendDeclaration {
     
@@ -120,7 +120,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Backends extends StObject {
     
     /**
@@ -128,7 +127,7 @@ object mod extends Shortcut {
       * This means that you can start with the html5 backend, and fall-back to a touch backend if
       * the event is not one that is compatible with the html5 backend.
       */
-    var backends: js.Array[BackendDeclaration] = js.native
+    var backends: js.Array[BackendDeclaration]
   }
   object Backends {
     
@@ -153,24 +152,23 @@ object mod extends Shortcut {
   
   type PreviewGenerator[T] = js.Function1[/* arg */ PreviewGeneratorArg[T], ReactNode]
   
-  @js.native
   trait PreviewGeneratorArg[T] extends StObject {
     
     /**
       * The item being dragged (monitor.getItem())
       */
-    var item: T = js.native
+    var item: T
     
     /**
       * The type of the item (monitor.getItemType())
       */
-    var itemType: String = js.native
+    var itemType: String
     
     /**
       * An object representing the style to use for the item, it should be passed to
       * your component's style property and is used for positioning
       */
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object PreviewGeneratorArg {
     
@@ -181,7 +179,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class PreviewGeneratorArgMutableBuilder[Self <: PreviewGeneratorArg[_], T] (val x: Self with PreviewGeneratorArg[T]) extends AnyVal {
+    implicit class PreviewGeneratorArgMutableBuilder[Self <: PreviewGeneratorArg[?], T] (val x: Self & PreviewGeneratorArg[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
@@ -194,7 +192,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PreviewProps[T] extends StObject {
     
     /**
@@ -206,7 +203,7 @@ object mod extends Shortcut {
       *               your component's style property and is used for positioning.
       * @returns The JSX element to display for the drag preview.
       */
-    var generator: PreviewGenerator[T] = js.native
+    var generator: PreviewGenerator[T]
   }
   object PreviewProps {
     
@@ -217,36 +214,35 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class PreviewPropsMutableBuilder[Self <: PreviewProps[_], T] (val x: Self with PreviewProps[T]) extends AnyVal {
+    implicit class PreviewPropsMutableBuilder[Self <: PreviewProps[?], T] (val x: Self & PreviewProps[T]) extends AnyVal {
       
       @scala.inline
       def setGenerator(value: /* arg */ PreviewGeneratorArg[T] => ReactNode): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Transition extends StObject {
     
     /**
       * ???
       */
-    var _isMBTransition: Boolean = js.native
+    var _isMBTransition: Boolean
     
     /**
       * Check function to use for this transition.
       */
-    var check: CheckFunction[_] = js.native
+    var check: CheckFunction[js.Any]
     
     /**
       * Event type that this transition should check against. This will be an HTML event, such as
       * "dragstart", "touchstart", etc.
       */
-    var event: String = js.native
+    var event: String
   }
   object Transition {
     
     @scala.inline
-    def apply(_isMBTransition: Boolean, check: _ => Boolean, event: String): Transition = {
+    def apply(_isMBTransition: Boolean, check: js.Any => Boolean, event: String): Transition = {
       val __obj = js.Dynamic.literal(_isMBTransition = _isMBTransition.asInstanceOf[js.Any], check = js.Any.fromFunction1(check), event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transition]
     }
@@ -255,7 +251,7 @@ object mod extends Shortcut {
     implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCheck(value: _ => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+      def setCheck(value: js.Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       
       @scala.inline
       def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
@@ -264,9 +260,4 @@ object mod extends Shortcut {
       def set_isMBTransition(value: Boolean): Self = StObject.set(x, "_isMBTransition", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = BackendFactory
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: BackendFactory = default
 }

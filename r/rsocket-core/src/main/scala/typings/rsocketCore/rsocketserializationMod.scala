@@ -3,7 +3,6 @@ package typings.rsocketCore
 import typings.rsocketTypes.reactiveSocketTypesMod.Encodable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsocketserializationMod {
@@ -54,12 +53,11 @@ object rsocketserializationMod {
     def metadata_=(x: Serializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PayloadSerializers[D, M] extends StObject {
     
-    var data: Serializer[D] = js.native
+    var data: Serializer[D]
     
-    var metadata: Serializer[M] = js.native
+    var metadata: Serializer[M]
   }
   object PayloadSerializers {
     
@@ -70,7 +68,7 @@ object rsocketserializationMod {
     }
     
     @scala.inline
-    implicit class PayloadSerializersMutableBuilder[Self <: PayloadSerializers[_, _], D, M] (val x: Self with (PayloadSerializers[D, M])) extends AnyVal {
+    implicit class PayloadSerializersMutableBuilder[Self <: PayloadSerializers[?, ?], D, M] (val x: Self & (PayloadSerializers[D, M])) extends AnyVal {
       
       @scala.inline
       def setData(value: Serializer[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

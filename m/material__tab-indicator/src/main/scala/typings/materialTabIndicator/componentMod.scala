@@ -6,7 +6,6 @@ import typings.std.ClientRect
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -14,7 +13,7 @@ object componentMod {
   @JSImport("@material/tab-indicator/component", "MDCTabIndicator")
   @js.native
   class MDCTabIndicator protected () extends MDCComponent[MDCTabIndicatorFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTabIndicatorFoundation, args: js.Any*) = this()
     
     def activate(): Unit = js.native
@@ -29,9 +28,12 @@ object componentMod {
   /* static members */
   object MDCTabIndicator {
     
-    @JSImport("@material/tab-indicator/component", "MDCTabIndicator.attachTo")
+    @JSImport("@material/tab-indicator/component", "MDCTabIndicator")
     @js.native
-    def attachTo(root: Element): MDCTabIndicator = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTabIndicator = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabIndicator]
   }
   
   type MDCTabIndicatorFactory = js.Function2[

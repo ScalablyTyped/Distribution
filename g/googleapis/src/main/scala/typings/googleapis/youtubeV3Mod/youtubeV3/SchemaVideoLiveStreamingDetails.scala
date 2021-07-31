@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about the live streaming metadata.
   */
-@js.native
 trait SchemaVideoLiveStreamingDetails extends StObject {
   
   /**
@@ -19,21 +17,21 @@ trait SchemaVideoLiveStreamingDetails extends StObject {
     * live chat id will no longer be tied to this video but rather to the new
     * video being displayed at the persistent page.
     */
-  var activeLiveChatId: js.UndefOr[String] = js.native
+  var activeLiveChatId: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the broadcast actually ended. The value is specified in ISO
     * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format. This value will not be available
     * until the broadcast is over.
     */
-  var actualEndTime: js.UndefOr[String] = js.native
+  var actualEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the broadcast actually started. The value is specified in
     * ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format. This value will not be
     * available until the broadcast begins.
     */
-  var actualStartTime: js.UndefOr[String] = js.native
+  var actualStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * The number of viewers currently watching the broadcast. The property and
@@ -44,7 +42,7 @@ trait SchemaVideoLiveStreamingDetails extends StObject {
     * of viewers watching an archived video of a live broadcast that already
     * ended.
     */
-  var concurrentViewers: js.UndefOr[String] = js.native
+  var concurrentViewers: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the broadcast is scheduled to end. The value is specified
@@ -52,13 +50,13 @@ trait SchemaVideoLiveStreamingDetails extends StObject {
     * property is not present, then the broadcast is scheduled to continue
     * indefinitely.
     */
-  var scheduledEndTime: js.UndefOr[String] = js.native
+  var scheduledEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the broadcast is scheduled to begin. The value is specified
     * in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var scheduledStartTime: js.UndefOr[String] = js.native
+  var scheduledStartTime: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoLiveStreamingDetails {
   

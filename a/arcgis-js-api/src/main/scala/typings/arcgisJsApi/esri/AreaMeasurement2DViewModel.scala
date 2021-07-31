@@ -18,10 +18,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaMeasurement2DViewModel extends StObject {
   
   /**
@@ -29,63 +27,63 @@ trait AreaMeasurement2DViewModel extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#clear)
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Clears the current measurement.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#clearMeasurement)
     */
-  def clearMeasurement(): Unit = js.native
+  def clearMeasurement(): Unit
   
   /**
     * When the coordinate sustem is projected (other than web mercator) then perimeters less than this threshold will be computed planimetrically.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#geodesicDistanceThreshold)
     */
-  var geodesicDistanceThreshold: Double = js.native
+  var geodesicDistanceThreshold: Double
   
   /**
     * The area and perimeter of the measurement polygon in square meters and meters respectively.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
-  val measurement: AreaMeasurement2DViewModelMeasurement = js.native
+  val measurement: AreaMeasurement2DViewModelMeasurement
   
   /**
     * This property returns the locale specific representation of the area and perimeter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurementLabel)
     */
-  val measurementLabel: AreaMeasurement2DViewModelMeasurementLabel = js.native
+  val measurementLabel: AreaMeasurement2DViewModelMeasurementLabel
   
   /**
     * Starts a new measurement.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#newMeasurement)
     */
-  def newMeasurement(): Unit = js.native
+  def newMeasurement(): Unit
   
   /**
     * Starts a new measurement.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#start)
     */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /**
     * The ViewModel's state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#state)
     */
-  val state: disabled | ready | measuring | measured = js.native
+  val state: disabled | ready | measuring | measured
   
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#unit)
     */
-  var unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares = js.native
+  var unit: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
   
   /**
     * List of available units and unit systems (imperial, metric) for displaying the area values.
@@ -94,14 +92,14 @@ trait AreaMeasurement2DViewModel extends StObject {
     */
   var unitOptions: js.Array[
     metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-  ] = js.native
+  ]
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#view)
     */
-  var view: MapView = js.native
+  var view: MapView
 }
 object AreaMeasurement2DViewModel {
   

@@ -20,15 +20,13 @@ import typings.storybookAddonJest.storybookAddonJestStrings.tests
 import typings.storybookApi.mod.API
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Active extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
   }
   object Active {
     
@@ -46,12 +44,11 @@ object anon {
     }
   }
   
-  @js.native
   trait AssertionResults extends StObject {
     
-    var assertionResults: js.Array[AssertionResult] = js.native
+    var assertionResults: js.Array[AssertionResult]
     
-    var status: String = js.native
+    var status: String
   }
   object AssertionResults {
     
@@ -125,7 +122,7 @@ object anon {
     def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
     
     var getSnapshotBeforeUpdate: js.UndefOr[
-        js.Function2[/* prevProps */ ReadonlyHocProps, /* prevState */ ReadonlyHocState, _]
+        js.Function2[/* prevProps */ ReadonlyHocProps, /* prevState */ ReadonlyHocState, js.Any]
       ] = js.native
     
     var mounted: Boolean = js.native
@@ -172,12 +169,11 @@ object anon {
     def stopListeningOnStory(): Unit = js.native
   }
   
-  @js.native
   trait FilesExt extends StObject {
     
-    var filesExt: js.UndefOr[String] = js.native
+    var filesExt: js.UndefOr[String] = js.undefined
     
-    var results: js.Any = js.native
+    var results: js.Any
   }
   object FilesExt {
     
@@ -203,21 +199,21 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[(/* props */ HocProps) | (/* props */ ReadonlyHocProps), ComponentDidCatch]
+    extends StObject
+       with Instantiable1[(/* props */ HocProps) | (/* props */ ReadonlyHocProps), ComponentDidCatch]
        with Instantiable2[/* props */ HocProps, /* context */ js.Any, ComponentDidCatch] {
     
-    var contextType: js.UndefOr[Context[_]] = js.native
+    var contextType: js.UndefOr[Context[js.Any]] = js.native
     
     var defaultProps: Active = js.native
   }
   
   /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/hoc/provideJestResult.HocProps> */
-  @js.native
   trait ReadonlyHocProps extends StObject {
     
-    val active: js.UndefOr[Boolean] = js.native
+    val active: js.UndefOr[Boolean] = js.undefined
     
-    val api: API = js.native
+    val api: API
   }
   object ReadonlyHocProps {
     
@@ -242,14 +238,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/hoc/provideJestResult.HocProps> & std.Readonly<{  children :react.react.ReactNode | undefined}> */
-  @js.native
   trait ReadonlyHocPropsReadonlyc extends StObject {
     
-    val active: js.UndefOr[Boolean] = js.native
+    val active: js.UndefOr[Boolean] = js.undefined
     
-    val api: API = js.native
+    val api: API
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
   }
   object ReadonlyHocPropsReadonlyc {
     
@@ -280,14 +275,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/hoc/provideJestResult.HocState> */
-  @js.native
   trait ReadonlyHocState extends StObject {
     
-    val kind: js.UndefOr[String] = js.native
+    val kind: js.UndefOr[String] = js.undefined
     
-    val storyName: js.UndefOr[String] = js.native
+    val storyName: js.UndefOr[String] = js.undefined
     
-    val tests: js.UndefOr[js.Array[Test]] = js.native
+    val tests: js.UndefOr[js.Array[Test]] = js.undefined
   }
   object ReadonlyHocState {
     

@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Auth provider configuration interface. A SAML provider can be created via
   * {@link auth.Auth.createProviderConfig `createProviderConfig()`}.
   */
-@js.native
-trait SAMLAuthProviderConfig extends AuthProviderConfig {
+trait SAMLAuthProviderConfig
+  extends StObject
+     with AuthProviderConfig {
   
   /**
     * This is fixed and must always be the same as the OAuth redirect URL
@@ -22,23 +22,23 @@ trait SAMLAuthProviderConfig extends AuthProviderConfig {
     * The callback URL should also be provided to the SAML IdP during
     * configuration.
     */
-  var callbackURL: js.UndefOr[String] = js.native
+  var callbackURL: js.UndefOr[String] = js.undefined
   
   /**
     * The SAML IdP entity identifier.
     */
-  var idpEntityId: String = js.native
+  var idpEntityId: String
   
   /**
     * The SAML relying party (service provider) entity ID.
     * This is defined by the developer but needs to be provided to the SAML IdP.
     */
-  var rpEntityId: String = js.native
+  var rpEntityId: String
   
   /**
     * The SAML IdP SSO URL. This must be a valid URL.
     */
-  var ssoURL: String = js.native
+  var ssoURL: String
   
   /**
     * The list of SAML IdP X.509 certificates issued by CA for this provider.
@@ -49,7 +49,7 @@ trait SAMLAuthProviderConfig extends AuthProviderConfig {
     * Developers are expected to manage the certificate updates as keys are
     * rotated.
     */
-  var x509Certificates: js.Array[String] = js.native
+  var x509Certificates: js.Array[String]
 }
 object SAMLAuthProviderConfig {
   

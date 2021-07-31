@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLoginResponse extends StObject {
   
-  var result: Boolean = js.native
+  var result: Boolean
   
-  var taskId: Double = js.native
+  var taskId: Double
 }
 object CreateLoginResponse {
   

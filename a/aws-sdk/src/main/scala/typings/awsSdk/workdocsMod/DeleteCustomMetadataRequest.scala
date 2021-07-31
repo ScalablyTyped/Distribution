@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCustomMetadataRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * Flag to indicate removal of all custom metadata properties from the specified resource.
     */
-  var DeleteAll: js.UndefOr[BooleanType] = js.native
+  var DeleteAll: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * List of properties to remove.
     */
-  var Keys: js.UndefOr[CustomMetadataKeyList] = js.native
+  var Keys: js.UndefOr[CustomMetadataKeyList] = js.undefined
   
   /**
     * The ID of the resource, either a document or folder.
     */
-  var ResourceId: ResourceIdType = js.native
+  var ResourceId: ResourceIdType
   
   /**
     * The ID of the version, if the custom metadata is being deleted from a document version.
     */
-  var VersionId: js.UndefOr[DocumentVersionIdType] = js.native
+  var VersionId: js.UndefOr[DocumentVersionIdType] = js.undefined
 }
 object DeleteCustomMetadataRequest {
   

@@ -2,17 +2,15 @@ package typings.awsSdkBuildTypes.customizationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationPropertyDefinitionRuntimeAttributes extends StObject {
   
   /**
     * The default (if any) to use should the user not supply a value for this
     * property.
     */
-  var default: js.UndefOr[DefaultValue | DefaultProvider] = js.native
+  var default: js.UndefOr[DefaultValue | DefaultProvider] = js.undefined
   
   /**
     * A string containing a valid TypeScript expression that evaluates to a
@@ -27,14 +25,14 @@ trait ConfigurationPropertyDefinitionRuntimeAttributes extends StObject {
     * imported package.
     */
   @JSName("apply")
-  var apply: js.UndefOr[String] = js.native
+  var apply: js.UndefOr[String] = js.undefined
   
   /**
     * Packages that must be imported to use this configuration property.
     * Packages will be imported using the `import * as ${snake_case_package_name} from 'package-name';`
     * syntax.
     */
-  var imports: js.UndefOr[js.Array[Import]] = js.native
+  var imports: js.UndefOr[js.Array[Import]] = js.undefined
   
   /**
     * A string containing a valid TypeScript expression that evaluates to a
@@ -50,12 +48,12 @@ trait ConfigurationPropertyDefinitionRuntimeAttributes extends StObject {
     * If an imported type is used, it must be referred to as a property of the
     * imported package.
     */
-  var normalize: js.UndefOr[String] = js.native
+  var normalize: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the user must supply a value for this property.
     */
-  var required: Boolean = js.native
+  var required: Boolean
 }
 object ConfigurationPropertyDefinitionRuntimeAttributes {
   

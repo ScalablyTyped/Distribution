@@ -2,26 +2,24 @@ package typings.semanticUiTab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-tab.SemanticUI.Tab.ErrorSettings._Impl, keyof semantic-ui-tab.SemanticUI.Tab.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplApi extends StObject {
   
-  var api: js.UndefOr[String] = js.native
+  var api: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var missingTab: js.UndefOr[String] = js.native
+  var missingTab: js.UndefOr[String] = js.undefined
   
-  var noContent: js.UndefOr[String] = js.native
+  var noContent: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var recursion: js.UndefOr[String] = js.native
+  var recursion: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplApi {
   

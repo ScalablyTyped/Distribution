@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,23 +26,37 @@ sealed trait FORMATS extends StObject
 object FORMATS extends StObject {
   
   @js.native
-  sealed trait ALPHA extends FORMATS
+  sealed trait ALPHA
+    extends StObject
+       with FORMATS
   
   @js.native
-  sealed trait DEPTH_COMPONENT extends FORMATS
+  sealed trait DEPTH_COMPONENT
+    extends StObject
+       with FORMATS
   
   @js.native
-  sealed trait DEPTH_STENCIL extends FORMATS
+  sealed trait DEPTH_STENCIL
+    extends StObject
+       with FORMATS
   
   @js.native
-  sealed trait LUMINANCE extends FORMATS
+  sealed trait LUMINANCE
+    extends StObject
+       with FORMATS
   
   @js.native
-  sealed trait LUMINANCE_ALPHA extends FORMATS
+  sealed trait LUMINANCE_ALPHA
+    extends StObject
+       with FORMATS
   
   @js.native
-  sealed trait RGB extends FORMATS
+  sealed trait RGB
+    extends StObject
+       with FORMATS
   
   @js.native
-  sealed trait RGBA extends FORMATS
+  sealed trait RGBA
+    extends StObject
+       with FORMATS
 }

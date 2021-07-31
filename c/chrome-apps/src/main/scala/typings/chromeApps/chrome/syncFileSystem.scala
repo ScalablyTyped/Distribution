@@ -21,7 +21,6 @@ import typings.filesystem.FileEntry
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -42,7 +41,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object syncFileSystem {
   
-  @js.native
   trait FileStatusChangedDetail extends StObject {
     
     /**
@@ -59,7 +57,7 @@ object syncFileSystem {
             added_ | updated_ | deleted_
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Sync direction for the onFileStatusChanged event.
@@ -75,7 +73,7 @@ object syncFileSystem {
             local_to_remote_ | remote_to_local_
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * fileEntry for the target file whose status has changed.
@@ -83,7 +81,7 @@ object syncFileSystem {
       * On file deletion, fileEntry information will still be
       * available but file will no longer exist.
       */
-    var fileEntry: FileEntry = js.native
+    var fileEntry: FileEntry
     
     /**
       * Resulting file status after onFileStatusChanged event.
@@ -96,7 +94,7 @@ object syncFileSystem {
           /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
           synced_ | pending_ | conflicting_
         ]
-      ] = js.native
+      ]
   }
   object FileStatusChangedDetail {
     
@@ -166,14 +164,13 @@ object syncFileSystem {
     }
   }
   
-  @js.native
   trait FileStatusInfo extends StObject {
     
     /** Optional error that is only returned if there was a problem retrieving the FileStatus for the given file. */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /** One of the Entry's originally given to getFileStatuses. */
-    var fileEntry: FileEntry = js.native
+    var fileEntry: FileEntry
     
     /**
       * Status value
@@ -186,7 +183,7 @@ object syncFileSystem {
           /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
           synced_ | pending_ | conflicting_
         ]
-      ] = js.native
+      ]
   }
   object FileStatusInfo {
     

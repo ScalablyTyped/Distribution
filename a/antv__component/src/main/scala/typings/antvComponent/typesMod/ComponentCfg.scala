@@ -2,34 +2,34 @@ package typings.antvComponent.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComponentCfg extends BaseCfg {
+trait ComponentCfg
+  extends StObject
+     with BaseCfg {
   
   /**
     * 定位的方式
     * @type {string}
     */
-  var LocationType: js.UndefOr[String] = js.native
+  var LocationType: js.UndefOr[String] = js.undefined
   
   /**
     * 是否允许动画，不同组件允许动画的内容不同
     * @type {boolean}
     */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 动画的配置项
     * @type {AnimateCfg}
     */
-  var animateOption: js.UndefOr[AnimateOption] = js.native
+  var animateOption: js.UndefOr[AnimateOption] = js.undefined
   
   /**
     * 是否会捕捉事件
     */
-  var capture: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @protected
@@ -42,7 +42,7 @@ trait ComponentCfg extends BaseCfg {
     * })
     * @type {object}
     */
-  var defaultCfg: js.UndefOr[js.Object] = js.native
+  var defaultCfg: js.UndefOr[js.Object] = js.undefined
   
   /**
     * 事件对象，可以在配置项中传入事件
@@ -58,43 +58,43 @@ trait ComponentCfg extends BaseCfg {
     * });
     * @type {object}
     */
-  var events: js.UndefOr[js.Object] = js.native
+  var events: js.UndefOr[js.Object] = js.undefined
   
   /**
     * 唯一标定组件的 id
     * @type {string}
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 组件名称， axis, legend, tooltip
     * @type {string}
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * 偏移位置 x
     * @type {number}
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * 偏移位置 y
     * @type {number}
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * 组件的类型，同 name 配合使用可以确定具体组件的类型，例如：
     *  name: 'axis',
     *  type: 'line'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * 更新时自动渲染, 所有 html 的组件 update 时自动调用渲染，group 的组件默认 false
     */
-  var updateAutoRender: js.UndefOr[Boolean] = js.native
+  var updateAutoRender: js.UndefOr[Boolean] = js.undefined
 }
 object ComponentCfg {
   

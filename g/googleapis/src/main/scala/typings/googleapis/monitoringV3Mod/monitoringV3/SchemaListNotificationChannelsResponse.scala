@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ListNotificationChannels response.
   */
-@js.native
 trait SchemaListNotificationChannelsResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListNotificationChannelsResponse extends StObject {
     * request. Use the value in the page_token field in a subsequent request to
     * fetch the next set of results. If empty, all results have been returned.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The notification channels defined for the specified project.
     */
-  var notificationChannels: js.UndefOr[js.Array[SchemaNotificationChannel]] = js.native
+  var notificationChannels: js.UndefOr[js.Array[SchemaNotificationChannel]] = js.undefined
 }
 object SchemaListNotificationChannelsResponse {
   

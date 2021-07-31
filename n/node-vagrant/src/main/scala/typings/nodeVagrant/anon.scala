@@ -4,7 +4,6 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.nodeVagrant.mod.ErrorArg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -18,16 +17,15 @@ object anon {
     var command: String = js.native
   }
   
-  @js.native
   trait CurrentVersion extends StObject {
     
-    var currentVersion: String = js.native
+    var currentVersion: String
     
-    var latestVersion: String = js.native
+    var latestVersion: String
     
-    var name: String = js.native
+    var name: String
     
-    var status: String = js.native
+    var status: String
   }
   object CurrentVersion {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cwd extends StObject {
     
-    var cwd: String = js.native
+    var cwd: String
     
-    var pwd: ProcessEnv = js.native
+    var pwd: ProcessEnv
   }
   object Cwd {
     
@@ -80,12 +77,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Env extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
   }
   object Env {
     
@@ -112,24 +108,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String | Null = js.native
+    var host: String | Null
     
-    var hostname: String | Null = js.native
+    var hostname: String | Null
     
-    var port: String | Null = js.native
+    var port: String | Null
     
-    var private_key: String | Null = js.native
+    var private_key: String | Null
     
-    var user: String | Null = js.native
+    var user: String | Null
   }
   object Host {
     
     @scala.inline
     def apply(): Host = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(host = null, hostname = null, port = null, private_key = null, user = null)
       __obj.asInstanceOf[Host]
     }
     
@@ -168,16 +163,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var provider: String = js.native
+    var provider: String
     
-    var state: String = js.native
+    var state: String
   }
   object Id {
     
@@ -204,16 +198,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Major extends StObject {
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
     
-    var patch: Double = js.native
+    var patch: Double
     
-    var status: String = js.native
+    var status: String
   }
   object Major {
     
@@ -240,14 +233,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var provider: String = js.native
+    var provider: String
     
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -271,12 +263,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Provider extends StObject {
     
-    var provider: String = js.native
+    var provider: String
     
-    var status: String = js.native
+    var status: String
   }
   object Provider {
     

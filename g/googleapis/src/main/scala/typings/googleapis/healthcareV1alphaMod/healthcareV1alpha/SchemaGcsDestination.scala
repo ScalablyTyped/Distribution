@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Google Cloud Storage location to which the output should be written.
   */
-@js.native
 trait SchemaGcsDestination extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaGcsDestination extends StObject {
     * image/jpeg -&gt; .jpg   image/png -&gt; .png  If unspecified, the
     * instances will be exported in their original DICOM format.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * URI for a Google Cloud Storage directory to which result files should be
@@ -31,7 +29,7 @@ trait SchemaGcsDestination extends StObject {
     * path. The user is responsible for creating the Google Cloud Storage
     * bucket referenced in `uri_prefix`.
     */
-  var uriPrefix: js.UndefOr[String] = js.native
+  var uriPrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaGcsDestination {
   

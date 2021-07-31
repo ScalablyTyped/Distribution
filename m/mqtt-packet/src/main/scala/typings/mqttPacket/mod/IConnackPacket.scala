@@ -4,28 +4,27 @@ import typings.mqttPacket.anon.AssignedClientIdentifier
 import typings.mqttPacket.mqttPacketStrings.connack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConnackPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IConnackPacket: connack = js.native
+  var cmd_IConnackPacket: connack
   
-  var properties: js.UndefOr[AssignedClientIdentifier] = js.native
+  var properties: js.UndefOr[AssignedClientIdentifier] = js.undefined
   
-  var returnCode: Double = js.native
+  var returnCode: Double
   
-  var sessionPresent: Boolean = js.native
+  var sessionPresent: Boolean
 }
 object IConnackPacket {
   
   @scala.inline
-  def apply(cmd: connack, returnCode: Double, sessionPresent: Boolean): IConnackPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
+  def apply(returnCode: Double, sessionPresent: Boolean): IConnackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "connack", returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnackPacket]
   }
   

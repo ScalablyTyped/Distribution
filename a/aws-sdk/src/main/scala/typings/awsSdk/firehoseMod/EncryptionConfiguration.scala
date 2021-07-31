@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionConfiguration extends StObject {
   
   /**
     * The encryption key.
     */
-  var KMSEncryptionConfig: js.UndefOr[typings.awsSdk.firehoseMod.KMSEncryptionConfig] = js.native
+  var KMSEncryptionConfig: js.UndefOr[typings.awsSdk.firehoseMod.KMSEncryptionConfig] = js.undefined
   
   /**
     * Specifically override existing encryption information to ensure that no encryption is used.
     */
-  var NoEncryptionConfig: js.UndefOr[typings.awsSdk.firehoseMod.NoEncryptionConfig] = js.native
+  var NoEncryptionConfig: js.UndefOr[typings.awsSdk.firehoseMod.NoEncryptionConfig] = js.undefined
 }
 object EncryptionConfiguration {
   

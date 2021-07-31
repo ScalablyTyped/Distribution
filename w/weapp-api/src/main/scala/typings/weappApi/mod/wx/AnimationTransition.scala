@@ -2,17 +2,15 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationTransition extends StObject {
   
-  var delay: Double = js.native
+  var delay: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var timingFunction: TimingFunction = js.native
+  var timingFunction: TimingFunction
 }
 object AnimationTransition {
   

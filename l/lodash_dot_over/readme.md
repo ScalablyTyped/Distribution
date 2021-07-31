@@ -12,7 +12,7 @@ The lodash method `_.over` exported as a module.
 | Keywords           | lodash-modularized, over |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 83789 |
+| # downloads        | 100459 |
 | # stars            | 0 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityKey extends StObject {
   
   /**
     * The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.connectMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.connectMod.AssociationId] = js.undefined
   
   /**
     * When the security key was created.
     */
-  var CreationTime: js.UndefOr[timestamp] = js.native
+  var CreationTime: js.UndefOr[timestamp] = js.undefined
   
   /**
     * The key of the security key.
     */
-  var Key: js.UndefOr[PEM] = js.native
+  var Key: js.UndefOr[PEM] = js.undefined
 }
 object SecurityKey {
   

@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Win32LobAppRule extends StObject {
   
   // The rule type indicating the purpose of the rule. Possible values are: detection, requirement.
-  var ruleType: js.UndefOr[Win32LobAppRuleType] = js.native
+  var ruleType: js.UndefOr[Win32LobAppRuleType] = js.undefined
 }
 object Win32LobAppRule {
   

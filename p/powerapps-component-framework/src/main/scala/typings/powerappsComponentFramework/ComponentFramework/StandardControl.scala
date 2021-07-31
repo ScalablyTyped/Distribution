@@ -3,7 +3,6 @@ package typings.powerappsComponentFramework.ComponentFramework
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,24 +34,11 @@ trait StandardControl[TInputs, TOutputs] extends StObject {
     * @param container If a control is marked control-type='standard', it will receive an empty div element within which it can render its content.
     */
   def init(context: Context[TInputs]): Unit = js.native
-  def init(
-    context: Context[TInputs],
-    notifyOutputChanged: js.UndefOr[scala.Nothing],
-    state: js.UndefOr[scala.Nothing],
-    container: HTMLDivElement
-  ): Unit = js.native
-  def init(context: Context[TInputs], notifyOutputChanged: js.UndefOr[scala.Nothing], state: Dictionary): Unit = js.native
-  def init(
-    context: Context[TInputs],
-    notifyOutputChanged: js.UndefOr[scala.Nothing],
-    state: Dictionary,
-    container: HTMLDivElement
-  ): Unit = js.native
   def init(context: Context[TInputs], notifyOutputChanged: js.Function0[Unit]): Unit = js.native
   def init(
     context: Context[TInputs],
     notifyOutputChanged: js.Function0[Unit],
-    state: js.UndefOr[scala.Nothing],
+    state: Unit,
     container: HTMLDivElement
   ): Unit = js.native
   def init(context: Context[TInputs], notifyOutputChanged: js.Function0[Unit], state: Dictionary): Unit = js.native
@@ -62,6 +48,9 @@ trait StandardControl[TInputs, TOutputs] extends StObject {
     state: Dictionary,
     container: HTMLDivElement
   ): Unit = js.native
+  def init(context: Context[TInputs], notifyOutputChanged: Unit, state: Unit, container: HTMLDivElement): Unit = js.native
+  def init(context: Context[TInputs], notifyOutputChanged: Unit, state: Dictionary): Unit = js.native
+  def init(context: Context[TInputs], notifyOutputChanged: Unit, state: Dictionary, container: HTMLDivElement): Unit = js.native
   
   /**
     * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width,

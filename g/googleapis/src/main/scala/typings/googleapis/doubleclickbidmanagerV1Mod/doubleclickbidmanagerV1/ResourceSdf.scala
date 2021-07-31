@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/doubleclickbidmanager/v1", "doubleclickbidmanager_v1.Resource$Sdf")
@@ -30,7 +29,7 @@ class ResourceSdf protected () extends StObject {
     */
   def download(): GaxiosPromise[SchemaDownloadResponse] = js.native
   def download(callback: BodyResponseCallback[SchemaDownloadResponse]): Unit = js.native
-  def download(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDownloadResponse] = js.native
+  def download(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDownloadResponse] = js.native
   def download(params: ParamsResourceSdfDownload): GaxiosPromise[SchemaDownloadResponse] = js.native
   def download(params: ParamsResourceSdfDownload, callback: BodyResponseCallback[SchemaDownloadResponse]): Unit = js.native
   def download(

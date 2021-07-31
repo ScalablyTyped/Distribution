@@ -6,7 +6,6 @@ import typings.angular.mod.IServiceProvider
 import typings.angulartics.anon.BufferFlushDelay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -52,56 +51,57 @@ object mod extends Shortcut {
     def userTimings(properties: js.Any): js.Any = js.native
   }
   
-  @js.native
-  trait IAnalyticsServiceProvider extends IServiceProvider {
+  trait IAnalyticsServiceProvider
+    extends StObject
+       with IServiceProvider {
     
-    def developerMode(value: Boolean): Unit = js.native
+    def developerMode(value: Boolean): Unit
     
-    def excludeRoutes(value: js.Array[String]): Unit = js.native
+    def excludeRoutes(value: js.Array[String]): Unit
     
-    def firstPageview(value: Boolean): Unit = js.native
+    def firstPageview(value: Boolean): Unit
     
-    def queryKeysBlacklist(keys: js.Array[String]): Unit = js.native
+    def queryKeysBlacklist(keys: js.Array[String]): Unit
     
-    def queryKeysWhitelist(keys: js.Array[String]): Unit = js.native
+    def queryKeysWhitelist(keys: js.Array[String]): Unit
     
-    def registerClearCookies(callback: js.Any): Unit = js.native
+    def registerClearCookies(callback: js.Any): Unit
     
-    def registerEventTrack(callback: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], _]): Unit = js.native
+    def registerEventTrack(callback: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], js.Any]): Unit
     
-    def registerIncrementProperty(callback: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], _]): Unit = js.native
+    def registerIncrementProperty(callback: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], js.Any]): Unit
     
-    def registerPageTrack(callback: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], _]): Unit = js.native
+    def registerPageTrack(callback: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], js.Any]): Unit
     
-    def registerSetAlias(callback: js.Function1[/* alias */ String, _]): Unit = js.native
+    def registerSetAlias(callback: js.Function1[/* alias */ String, js.Any]): Unit
     
-    def registerSetSuperProperties(callback: js.Function1[/* superProperties */ js.Any, _]): Unit = js.native
+    def registerSetSuperProperties(callback: js.Function1[/* superProperties */ js.Any, js.Any]): Unit
     
-    def registerSetSuperPropertiesOnce(callback: js.Function1[/* superProperties */ js.Any, _]): Unit = js.native
+    def registerSetSuperPropertiesOnce(callback: js.Function1[/* superProperties */ js.Any, js.Any]): Unit
     
-    def registerSetUserProperties(callback: js.Function1[/* userProperties */ js.Any, _]): Unit = js.native
+    def registerSetUserProperties(callback: js.Function1[/* userProperties */ js.Any, js.Any]): Unit
     
-    def registerSetUserPropertiesOnce(callback: js.Function1[/* userProperties */ js.Any, _]): Unit = js.native
+    def registerSetUserPropertiesOnce(callback: js.Function1[/* userProperties */ js.Any, js.Any]): Unit
     
-    def registerSetUsername(callback: js.Function1[/* username */ String, _]): Unit = js.native
+    def registerSetUsername(callback: js.Function1[/* username */ String, js.Any]): Unit
     
-    def registerTransactionTrack(callback: js.Any): Unit = js.native
+    def registerTransactionTrack(callback: js.Any): Unit
     
-    def registerUserTimings(callback: js.Function1[/* properties */ js.Any, _]): Unit = js.native
+    def registerUserTimings(callback: js.Function1[/* properties */ js.Any, js.Any]): Unit
     
-    var settings: BufferFlushDelay = js.native
+    var settings: BufferFlushDelay
     
-    def trackExceptions(value: Boolean): Unit = js.native
+    def trackExceptions(value: Boolean): Unit
     
-    def trackRoutes(value: Boolean): Unit = js.native
+    def trackRoutes(value: Boolean): Unit
     
-    def trackStates(value: Boolean): Unit = js.native
+    def trackStates(value: Boolean): Unit
     
-    def virtualPageviews(value: Boolean): Unit = js.native
+    def virtualPageviews(value: Boolean): Unit
     
-    def withAutoBase(value: Boolean): Unit = js.native
+    def withAutoBase(value: Boolean): Unit
     
-    def withBase(value: Boolean): Unit = js.native
+    def withBase(value: Boolean): Unit
   }
   object IAnalyticsServiceProvider {
     
@@ -114,17 +114,17 @@ object mod extends Shortcut {
       queryKeysBlacklist: js.Array[String] => Unit,
       queryKeysWhitelist: js.Array[String] => Unit,
       registerClearCookies: js.Any => Unit,
-      registerEventTrack: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], _] => Unit,
-      registerIncrementProperty: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], _] => Unit,
-      registerPageTrack: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], _] => Unit,
-      registerSetAlias: js.Function1[/* alias */ String, _] => Unit,
-      registerSetSuperProperties: js.Function1[/* superProperties */ js.Any, _] => Unit,
-      registerSetSuperPropertiesOnce: js.Function1[/* superProperties */ js.Any, _] => Unit,
-      registerSetUserProperties: js.Function1[/* userProperties */ js.Any, _] => Unit,
-      registerSetUserPropertiesOnce: js.Function1[/* userProperties */ js.Any, _] => Unit,
-      registerSetUsername: js.Function1[/* username */ String, _] => Unit,
+      registerEventTrack: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], js.Any] => Unit,
+      registerIncrementProperty: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], js.Any] => Unit,
+      registerPageTrack: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], js.Any] => Unit,
+      registerSetAlias: js.Function1[/* alias */ String, js.Any] => Unit,
+      registerSetSuperProperties: js.Function1[/* superProperties */ js.Any, js.Any] => Unit,
+      registerSetSuperPropertiesOnce: js.Function1[/* superProperties */ js.Any, js.Any] => Unit,
+      registerSetUserProperties: js.Function1[/* userProperties */ js.Any, js.Any] => Unit,
+      registerSetUserPropertiesOnce: js.Function1[/* userProperties */ js.Any, js.Any] => Unit,
+      registerSetUsername: js.Function1[/* username */ String, js.Any] => Unit,
       registerTransactionTrack: js.Any => Unit,
-      registerUserTimings: js.Function1[/* properties */ js.Any, _] => Unit,
+      registerUserTimings: js.Function1[/* properties */ js.Any, js.Any] => Unit,
       settings: BufferFlushDelay,
       trackExceptions: Boolean => Unit,
       trackRoutes: Boolean => Unit,
@@ -159,37 +159,39 @@ object mod extends Shortcut {
       def setRegisterClearCookies(value: js.Any => Unit): Self = StObject.set(x, "registerClearCookies", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterEventTrack(value: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], _] => Unit): Self = StObject.set(x, "registerEventTrack", js.Any.fromFunction1(value))
+      def setRegisterEventTrack(value: js.Function2[/* eventName */ String, /* properties */ js.UndefOr[js.Any], js.Any] => Unit): Self = StObject.set(x, "registerEventTrack", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterIncrementProperty(value: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], _] => Unit): Self = StObject.set(x, "registerIncrementProperty", js.Any.fromFunction1(value))
+      def setRegisterIncrementProperty(value: js.Function2[/* property */ String, /* value */ js.UndefOr[js.Any], js.Any] => Unit): Self = StObject.set(x, "registerIncrementProperty", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterPageTrack(value: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], _] => Unit): Self = StObject.set(x, "registerPageTrack", js.Any.fromFunction1(value))
+      def setRegisterPageTrack(
+        value: js.Function2[/* path */ String, /* location */ js.UndefOr[ILocationService], js.Any] => Unit
+      ): Self = StObject.set(x, "registerPageTrack", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterSetAlias(value: js.Function1[/* alias */ String, _] => Unit): Self = StObject.set(x, "registerSetAlias", js.Any.fromFunction1(value))
+      def setRegisterSetAlias(value: js.Function1[/* alias */ String, js.Any] => Unit): Self = StObject.set(x, "registerSetAlias", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterSetSuperProperties(value: js.Function1[/* superProperties */ js.Any, _] => Unit): Self = StObject.set(x, "registerSetSuperProperties", js.Any.fromFunction1(value))
+      def setRegisterSetSuperProperties(value: js.Function1[/* superProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetSuperProperties", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterSetSuperPropertiesOnce(value: js.Function1[/* superProperties */ js.Any, _] => Unit): Self = StObject.set(x, "registerSetSuperPropertiesOnce", js.Any.fromFunction1(value))
+      def setRegisterSetSuperPropertiesOnce(value: js.Function1[/* superProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetSuperPropertiesOnce", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterSetUserProperties(value: js.Function1[/* userProperties */ js.Any, _] => Unit): Self = StObject.set(x, "registerSetUserProperties", js.Any.fromFunction1(value))
+      def setRegisterSetUserProperties(value: js.Function1[/* userProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetUserProperties", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterSetUserPropertiesOnce(value: js.Function1[/* userProperties */ js.Any, _] => Unit): Self = StObject.set(x, "registerSetUserPropertiesOnce", js.Any.fromFunction1(value))
+      def setRegisterSetUserPropertiesOnce(value: js.Function1[/* userProperties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerSetUserPropertiesOnce", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterSetUsername(value: js.Function1[/* username */ String, _] => Unit): Self = StObject.set(x, "registerSetUsername", js.Any.fromFunction1(value))
+      def setRegisterSetUsername(value: js.Function1[/* username */ String, js.Any] => Unit): Self = StObject.set(x, "registerSetUsername", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRegisterTransactionTrack(value: js.Any => Unit): Self = StObject.set(x, "registerTransactionTrack", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setRegisterUserTimings(value: js.Function1[/* properties */ js.Any, _] => Unit): Self = StObject.set(x, "registerUserTimings", js.Any.fromFunction1(value))
+      def setRegisterUserTimings(value: js.Function1[/* properties */ js.Any, js.Any] => Unit): Self = StObject.set(x, "registerUserTimings", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSettings(value: BufferFlushDelay): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
@@ -218,31 +220,13 @@ object mod extends Shortcut {
   trait IAngularticsStatic extends StObject {
     
     def waitForVendorApi(objectName: String, delay: Double): Unit = js.native
-    def waitForVendorApi(
-      objectName: String,
-      delay: Double,
-      containsField: js.UndefOr[scala.Nothing],
-      registerFn: js.UndefOr[scala.Nothing],
-      onTimeout: Boolean
-    ): Unit = js.native
-    def waitForVendorApi(objectName: String, delay: Double, containsField: js.UndefOr[scala.Nothing], registerFn: js.Any): Unit = js.native
-    def waitForVendorApi(
-      objectName: String,
-      delay: Double,
-      containsField: js.UndefOr[scala.Nothing],
-      registerFn: js.Any,
-      onTimeout: Boolean
-    ): Unit = js.native
     def waitForVendorApi(objectName: String, delay: Double, containsField: js.Any): Unit = js.native
-    def waitForVendorApi(
-      objectName: String,
-      delay: Double,
-      containsField: js.Any,
-      registerFn: js.UndefOr[scala.Nothing],
-      onTimeout: Boolean
-    ): Unit = js.native
     def waitForVendorApi(objectName: String, delay: Double, containsField: js.Any, registerFn: js.Any): Unit = js.native
     def waitForVendorApi(objectName: String, delay: Double, containsField: js.Any, registerFn: js.Any, onTimeout: Boolean): Unit = js.native
+    def waitForVendorApi(objectName: String, delay: Double, containsField: js.Any, registerFn: Unit, onTimeout: Boolean): Unit = js.native
+    def waitForVendorApi(objectName: String, delay: Double, containsField: Unit, registerFn: js.Any): Unit = js.native
+    def waitForVendorApi(objectName: String, delay: Double, containsField: Unit, registerFn: js.Any, onTimeout: Boolean): Unit = js.native
+    def waitForVendorApi(objectName: String, delay: Double, containsField: Unit, registerFn: Unit, onTimeout: Boolean): Unit = js.native
   }
   
   type _To = IAngularticsStatic

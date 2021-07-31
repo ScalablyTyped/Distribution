@@ -2,15 +2,15 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoAction extends RouterActions {
+trait GoAction
+  extends StObject
+     with RouterActions {
   
-  var payload: Double = js.native
+  var payload: Double
   
-  var `type`: /* "ROUTER_GO" */ String = js.native
+  var `type`: /* "ROUTER_GO" */ String
 }
 object GoAction {
   

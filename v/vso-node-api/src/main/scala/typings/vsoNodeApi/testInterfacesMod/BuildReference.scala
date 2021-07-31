@@ -2,25 +2,23 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildReference extends StObject {
   
-  var branchName: String = js.native
+  var branchName: String
   
-  var buildSystem: String = js.native
+  var buildSystem: String
   
-  var definitionId: Double = js.native
+  var definitionId: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var number: String = js.native
+  var number: String
   
-  var repositoryId: String = js.native
+  var repositoryId: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object BuildReference {
   

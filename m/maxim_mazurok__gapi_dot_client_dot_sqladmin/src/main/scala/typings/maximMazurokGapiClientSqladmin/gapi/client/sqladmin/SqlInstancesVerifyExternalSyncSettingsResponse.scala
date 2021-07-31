@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlInstancesVerifyExternalSyncSettingsResponse extends StObject {
   
   /** List of migration violations. */
-  var errors: js.UndefOr[js.Array[SqlExternalSyncSettingError]] = js.native
+  var errors: js.UndefOr[js.Array[SqlExternalSyncSettingError]] = js.undefined
   
   /** This is always *sql#migrationSettingErrorList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SqlInstancesVerifyExternalSyncSettingsResponse {
   

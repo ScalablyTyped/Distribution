@@ -10,7 +10,6 @@ import typings.std.Date
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarMonthMod {
@@ -77,10 +76,9 @@ object calendarMonthMod {
     var refs_CalendarMonth: Dictkey = js.native
   }
   
-  @js.native
   trait ICalendarMonth extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object ICalendarMonth {
     
@@ -98,36 +96,37 @@ object calendarMonthMod {
     }
   }
   
-  @js.native
-  trait ICalendarMonthProps extends ClassAttributes[CalendarMonth] {
+  trait ICalendarMonthProps
+    extends StObject
+       with ClassAttributes[CalendarMonth] {
     
-    var componentRef: js.UndefOr[IRefObject[ICalendarMonth]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ICalendarMonth]] = js.undefined
     
-    var dateTimeFormatter: ICalendarFormatDateCallbacks = js.native
+    var dateTimeFormatter: ICalendarFormatDateCallbacks
     
-    var highlightCurrentMonth: Boolean = js.native
+    var highlightCurrentMonth: Boolean
     
-    var highlightSelectedMonth: Boolean = js.native
+    var highlightSelectedMonth: Boolean
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var navigatedDate: Date = js.native
+    var navigatedDate: Date
     
-    var navigationIcons: ICalendarIconStrings = js.native
+    var navigationIcons: ICalendarIconStrings
     
-    var onHeaderSelect: js.UndefOr[js.Function1[/* focus */ Boolean, Unit]] = js.native
+    var onHeaderSelect: js.UndefOr[js.Function1[/* focus */ Boolean, Unit]] = js.undefined
     
-    def onNavigateDate(date: Date, focusOnNavigatedDay: Boolean): Unit = js.native
+    def onNavigateDate(date: Date, focusOnNavigatedDay: Boolean): Unit
     
-    var selectedDate: Date = js.native
+    var selectedDate: Date
     
-    var strings: ICalendarStrings = js.native
+    var strings: ICalendarStrings
     
-    var today: js.UndefOr[Date] = js.native
+    var today: js.UndefOr[Date] = js.undefined
     
-    var yearPickerHidden: js.UndefOr[Boolean] = js.native
+    var yearPickerHidden: js.UndefOr[Boolean] = js.undefined
   }
   object ICalendarMonthProps {
     
@@ -214,11 +213,10 @@ object calendarMonthMod {
     }
   }
   
-  @js.native
   trait ICalendarMonthState extends StObject {
     
     /** State used to show/hide month picker */
-    var isYearPickerVisible: js.UndefOr[Boolean] = js.native
+    var isYearPickerVisible: js.UndefOr[Boolean] = js.undefined
   }
   object ICalendarMonthState {
     

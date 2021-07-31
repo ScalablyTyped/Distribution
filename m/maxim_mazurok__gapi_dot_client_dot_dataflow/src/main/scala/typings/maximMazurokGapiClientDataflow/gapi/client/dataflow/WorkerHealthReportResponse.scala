@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerHealthReportResponse extends StObject {
   
   /**
     * A positive value indicates the worker should change its reporting interval to the specified value. The default value of zero means no change in report rate is requested by the
     * server.
     */
-  var reportInterval: js.UndefOr[String] = js.native
+  var reportInterval: js.UndefOr[String] = js.undefined
 }
 object WorkerHealthReportResponse {
   

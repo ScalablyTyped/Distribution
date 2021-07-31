@@ -2,18 +2,16 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileConverters extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): FileConverter = js.native
+  def Item(Index: js.Any): FileConverter
   
   @JSName("PowerPoint.FileConverters_typekey")
-  var PowerPointDotFileConverters_typekey: FileConverters = js.native
+  var PowerPointDotFileConverters_typekey: FileConverters
 }
 object FileConverters {
   

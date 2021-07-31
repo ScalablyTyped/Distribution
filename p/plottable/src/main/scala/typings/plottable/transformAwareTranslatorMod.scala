@@ -6,10 +6,13 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformAwareTranslatorMod {
+  
+  @JSImport("plottable/build/src/utils/transformAwareTranslator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator")
   @js.native
@@ -33,15 +36,17 @@ object transformAwareTranslatorMod {
   /* static members */
   object Translator {
     
+    @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Is the event's target part of the given component's DOM tree?
       */
-    @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator.isEventInside")
-    @js.native
-    def isEventInside(component: Component, e: Event): Boolean = js.native
+    @scala.inline
+    def isEventInside(component: Component, e: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEventInside")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  @JSImport("plottable/build/src/utils/transformAwareTranslator", "getTranslator")
-  @js.native
-  def getTranslator(component: Component): Translator = js.native
+  @scala.inline
+  def getTranslator(component: Component): Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[Translator]
 }

@@ -2,23 +2,21 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3OrderOptions extends StObject {
   
   /**
     * If true, delivery address is required for the associated order.
     */
-  var requestDeliveryAddress: js.UndefOr[Boolean] = js.native
+  var requestDeliveryAddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The app can request user info by setting this field.
     * If set, the corresponding field will show up in ProposedOrderCard for
     * user's confirmation.
     */
-  var userInfoOptions: js.UndefOr[GoogleActionsTransactionsV3UserInfoOptions] = js.native
+  var userInfoOptions: js.UndefOr[GoogleActionsTransactionsV3UserInfoOptions] = js.undefined
 }
 object GoogleActionsTransactionsV3OrderOptions {
   

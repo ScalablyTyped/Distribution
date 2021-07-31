@@ -10,9 +10,9 @@ Redux middleware for calling an API.
 | ------------------ | :-------------: |
 | Full name          | redux-api-middleware |
 | Keywords           | redux, api, middleware, redux-middleware, flux |
-| # releases         | 6 |
-| # dependents       | 43 |
-| # downloads        | 1870249 |
+| # releases         | 4 |
+| # dependents       | 42 |
+| # downloads        | 1691264 |
 | # stars            | 20 |
 
 ## Links

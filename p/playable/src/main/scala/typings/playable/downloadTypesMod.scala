@@ -6,23 +6,21 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadTypesMod {
   
-  @js.native
   trait IDownloadButton extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def setDownloadClickCallback(callback: js.Function0[Unit]): Unit = js.native
+    def setDownloadClickCallback(callback: js.Function0[Unit]): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IDownloadButton {
     
@@ -58,10 +56,9 @@ object downloadTypesMod {
     }
   }
   
-  @js.native
   trait IDownloadButtonAPI extends StObject {
     
-    var setDownloadClickCallback: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.native
+    var setDownloadClickCallback: js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]] = js.undefined
   }
   object IDownloadButtonAPI {
     
@@ -82,10 +79,9 @@ object downloadTypesMod {
     }
   }
   
-  @js.native
   trait IDownloadViewCallbacks extends StObject {
     
-    def onButtonClick(): Unit = js.native
+    def onButtonClick(): Unit
   }
   object IDownloadViewCallbacks {
     
@@ -103,16 +99,15 @@ object downloadTypesMod {
     }
   }
   
-  @js.native
   trait IDownloadViewConfig extends StObject {
     
-    var callbacks: IDownloadViewCallbacks = js.native
+    var callbacks: IDownloadViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object IDownloadViewConfig {
     
@@ -144,14 +139,13 @@ object downloadTypesMod {
     }
   }
   
-  @js.native
   trait IDownloadViewStyles extends StObject {
     
-    var buttonWrapper: String = js.native
+    var buttonWrapper: String
     
-    var downloadButton: String = js.native
+    var downloadButton: String
     
-    var hidden: String = js.native
+    var hidden: String
   }
   object IDownloadViewStyles {
     

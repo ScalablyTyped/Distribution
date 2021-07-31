@@ -1,42 +1,37 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`6`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.wyandotte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  migration_id :number,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'wyandotte'> */
-@js.native
-trait MigrationsListReposForUserEndpoint extends StObject {
+trait MigrationsListReposForUserEndpoint
+  extends StObject
+     with RequiredPreview[wyandotte] {
   
-  var mediaType: `6` = js.native
-  
-  var migration_id: Double = js.native
+  var migration_id: Double
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
 }
 object MigrationsListReposForUserEndpoint {
   
   @scala.inline
-  def apply(mediaType: `6`, migration_id: Double): MigrationsListReposForUserEndpoint = {
+  def apply(mediaType: `0`[wyandotte], migration_id: Double): MigrationsListReposForUserEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], migration_id = migration_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsListReposForUserEndpoint]
   }
   
   @scala.inline
   implicit class MigrationsListReposForUserEndpointMutableBuilder[Self <: MigrationsListReposForUserEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `6`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])

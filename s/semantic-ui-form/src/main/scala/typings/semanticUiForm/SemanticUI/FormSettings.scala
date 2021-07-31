@@ -43,52 +43,50 @@ import typings.semanticUiForm.semanticUiFormStrings.submit
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormSettings {
   
-  @js.native
   trait Impl extends StObject {
     
     /**
       * Class names used to attach style to state
       */
-    var className: ClassNameSettings = js.native
+    var className: ClassNameSettings
     
     /**
       * Debug output to console
       */
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var defaults: StringDictionary[Field] = js.native
+    var defaults: StringDictionary[Field]
     
     /**
       * Delay from last typed letter to validate a field when using on: change or when revalidating a field.
       *
       * @default true
       */
-    var delay: Boolean = js.native
+    var delay: Boolean
     
     /**
       * Animation speed for inline prompt
       *
       * @default 150
       */
-    var duration: Double = js.native
+    var duration: Double
     
     // endregion
     // region Debug Settings
-    var error: ErrorSettings = js.native
+    var error: ErrorSettings
     
-    var fields: StringDictionary[String | js.Array[String] | Field] = js.native
+    var fields: StringDictionary[String | js.Array[String] | Field]
     
     /**
       * Adds inline error on field validation error
       *
       * @default false
       */
-    var `inline`: Boolean = js.native
+    var `inline`: Boolean
     
     // region Form Settings
     /**
@@ -96,19 +94,19 @@ object FormSettings {
       *
       * @default true
       */
-    var keyboardShortcuts: Boolean = js.native
+    var keyboardShortcuts: Boolean
     
     /**
       * HTML5 metadata attributes
       */
-    var metadata: MetadataSettings = js.native
+    var metadata: MetadataSettings
     
     // endregion
     // region Debug Settings
     /**
       * Name used in log statements
       */
-    var name: String = js.native
+    var name: String
     
     // endregion
     // region Component Settings
@@ -116,74 +114,74 @@ object FormSettings {
     /**
       * Event namespace. Makes sure module teardown does not effect other events attached to an element.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     /**
       * Event used to trigger validation. Can be either submit, blur or change.
       *
       * @default 'submit'
       */
-    var on: submit | blur | change = js.native
+    var on: submit | blur | change
     
     /**
       * Callback if any form field is invalid
       */
-    def onFailure(formErrors: js.Array[String], fields: js.Any): Unit = js.native
+    def onFailure(formErrors: js.Array[String], fields: js.Any): Unit
     
     /**
       * Callback on each invalid field
       */
-    def onInvalid(): Unit = js.native
+    def onInvalid(): Unit
     
     /**
       * Callback if a form is all valid
       */
-    def onSuccess(event: TriggeredEvent[HTMLElement, _, _, _], fields: js.Any): Unit = js.native
+    def onSuccess(event: TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], fields: js.Any): Unit
     
     // endregion
     // region Callbacks
     /**
       * Callback on each valid field
       */
-    def onValid(): Unit = js.native
+    def onValid(): Unit
     
     /**
       * Show console.table output with performance metrics
       */
-    var performance: Boolean = js.native
+    var performance: Boolean
     
-    var prompt: PromptSettings = js.native
+    var prompt: PromptSettings
     
     /**
       * If set to true will revalidate fields with errors on input change
       *
       * @default true
       */
-    var revalidate: Boolean = js.native
+    var revalidate: Boolean
     
     // endregion
     // region Rules
-    var rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]] = js.native
+    var rules: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]
     
     // endregion
     // region DOM Settings
     /**
       * Selectors used to match functionality to DOM
       */
-    var selector: SelectorSettings = js.native
+    var selector: SelectorSettings
     
     /**
       * Silences all console output including error messages, regardless of other debug settings.
       */
-    var silent: Boolean = js.native
+    var silent: Boolean
     
     // endregion
     // region Templates
-    var templates: TemplatesSettings = js.native
+    var templates: TemplatesSettings
     
     // endregion
     // region Form Prompts
-    var text: TextSettings = js.native
+    var text: TextSettings
     
     /**
       * Named transition to use when animating validation errors. Fade and slide down are available without including ui transitions
@@ -191,12 +189,12 @@ object FormSettings {
       * @default 'scale'
       * @see {@link http://semantic-ui.com/modules/transition.html}
       */
-    var transition: String = js.native
+    var transition: String
     
     /**
       * Debug output includes all internal behaviors
       */
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object Impl {
     
@@ -217,7 +215,7 @@ object FormSettings {
       on: submit | blur | change,
       onFailure: (js.Array[String], js.Any) => Unit,
       onInvalid: () => Unit,
-      onSuccess: (TriggeredEvent[HTMLElement, _, _, _], js.Any) => Unit,
+      onSuccess: (TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], js.Any) => Unit,
       onValid: () => Unit,
       performance: Boolean,
       prompt: PromptSettings,
@@ -284,7 +282,7 @@ object FormSettings {
       def setOnInvalid(value: () => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setOnSuccess(value: (TriggeredEvent[HTMLElement, _, _, _], js.Any) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
+      def setOnSuccess(value: (TriggeredEvent[HTMLElement, js.Any, js.Any, js.Any], js.Any) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnValid(value: () => Unit): Self = StObject.set(x, "onValid", js.Any.fromFunction0(value))
@@ -321,5 +319,5 @@ object FormSettings {
     }
   }
   
-  type Param = (PickImplkeyboardShortcuts | PickImplon | PickImplrevalidate | PickImpldelay | PickImplinline | PickImpltransition | PickImplduration | PickImplfields | PickImpltext | PickImplprompt | PickImplonValid | PickImplonInvalid | PickImplonSuccess | PickImplonFailure | PickImpltemplates | PickImplrules | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+  type Param = (PickImplkeyboardShortcuts | PickImplon | PickImplrevalidate | PickImpldelay | PickImplinline | PickImpltransition | PickImplduration | PickImplfields | PickImpltext | PickImplprompt | PickImplonValid | PickImplonInvalid | PickImplonSuccess | PickImplonFailure | PickImpltemplates | PickImplrules | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
 }

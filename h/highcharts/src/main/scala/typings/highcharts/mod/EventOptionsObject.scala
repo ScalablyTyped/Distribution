@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventOptionsObject extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait EventOptionsObject extends StObject {
     * handler be called before another, independent of in which order they were
     * added.
     */
-  var order: Double = js.native
+  var order: Double
 }
 object EventOptionsObject {
   

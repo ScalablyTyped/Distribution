@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Domainaliases")
@@ -31,7 +30,7 @@ class ResourceDomainaliases protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDomainaliasesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceDomainaliasesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceDomainaliases protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDomainAlias] = js.native
   def get(callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
   def get(params: ParamsResourceDomainaliasesGet): GaxiosPromise[SchemaDomainAlias] = js.native
   def get(params: ParamsResourceDomainaliasesGet, callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceDomainaliases protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaDomainAlias] = js.native
   def insert(callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainAlias] = js.native
   def insert(params: ParamsResourceDomainaliasesInsert): GaxiosPromise[SchemaDomainAlias] = js.native
   def insert(params: ParamsResourceDomainaliasesInsert, callback: BodyResponseCallback[SchemaDomainAlias]): Unit = js.native
   def insert(
@@ -121,7 +120,7 @@ class ResourceDomainaliases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDomainAliases] = js.native
   def list(callback: BodyResponseCallback[SchemaDomainAliases]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomainAliases] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDomainAliases] = js.native
   def list(params: ParamsResourceDomainaliasesList): GaxiosPromise[SchemaDomainAliases] = js.native
   def list(params: ParamsResourceDomainaliasesList, callback: BodyResponseCallback[SchemaDomainAliases]): Unit = js.native
   def list(

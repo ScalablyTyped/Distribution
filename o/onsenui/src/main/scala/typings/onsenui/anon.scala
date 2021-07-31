@@ -3,19 +3,17 @@ package typings.onsenui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Page extends StObject {
     
-    var page: js.Any = js.native
+    var page: js.Any
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var parent: Element = js.native
+    var parent: Element
   }
   object Page {
     

@@ -5,14 +5,15 @@ import typings.firebaseDatabase.nodeMod.NamedNode
 import typings.firebaseDatabase.queryParamsMod.QueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangedFilterMod {
   
   @JSImport("@firebase/database/dist/src/core/view/filter/RangedFilter", "RangedFilter")
   @js.native
-  class RangedFilter protected () extends NodeFilter {
+  class RangedFilter protected ()
+    extends StObject
+       with NodeFilter {
     /**
       * @param {!QueryParams} params
       */

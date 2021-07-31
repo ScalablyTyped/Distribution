@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGTextAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGTextSelector extends Selectors {
+trait SVGTextSelector
+  extends StObject
+     with Selectors {
   
-  var text: js.UndefOr[SVGTextAttributes] = js.native
+  var text: js.UndefOr[SVGTextAttributes] = js.undefined
 }
 object SVGTextSelector {
   

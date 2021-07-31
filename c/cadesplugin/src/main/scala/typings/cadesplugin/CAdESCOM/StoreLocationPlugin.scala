@@ -5,27 +5,21 @@ import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreLocationPlugin extends StObject {
   
-  val CADESCOM_CONTAINER_STORE: `100` = js.native
+  val CADESCOM_CONTAINER_STORE: `100`
   
-  val CADESCOM_CURRENT_USER_STORE: `2` = js.native
+  val CADESCOM_CURRENT_USER_STORE: `2`
   
-  val CADESCOM_LOCAL_MACHINE_STORE: `1` = js.native
+  val CADESCOM_LOCAL_MACHINE_STORE: `1`
 }
 object StoreLocationPlugin {
   
   @scala.inline
-  def apply(
-    CADESCOM_CONTAINER_STORE: `100`,
-    CADESCOM_CURRENT_USER_STORE: `2`,
-    CADESCOM_LOCAL_MACHINE_STORE: `1`
-  ): StoreLocationPlugin = {
-    val __obj = js.Dynamic.literal(CADESCOM_CONTAINER_STORE = CADESCOM_CONTAINER_STORE.asInstanceOf[js.Any], CADESCOM_CURRENT_USER_STORE = CADESCOM_CURRENT_USER_STORE.asInstanceOf[js.Any], CADESCOM_LOCAL_MACHINE_STORE = CADESCOM_LOCAL_MACHINE_STORE.asInstanceOf[js.Any])
+  def apply(): StoreLocationPlugin = {
+    val __obj = js.Dynamic.literal(CADESCOM_CONTAINER_STORE = 100, CADESCOM_CURRENT_USER_STORE = 2, CADESCOM_LOCAL_MACHINE_STORE = 1)
     __obj.asInstanceOf[StoreLocationPlugin]
   }
   

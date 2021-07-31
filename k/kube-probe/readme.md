@@ -10,9 +10,9 @@ connect.js middleware that sets up generic liveness and readiness probes for Ope
 | ------------------ | :-------------: |
 | Full name          | kube-probe |
 | Keywords           | connect, connect.js, express, express.js, middleware, kubernetes, openshift, liveness, readiness |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 169291 |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 216855 |
 | # stars            | 0 |
 
 ## Links

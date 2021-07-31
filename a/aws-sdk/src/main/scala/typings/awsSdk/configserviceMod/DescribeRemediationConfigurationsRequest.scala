@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRemediationConfigurationsRequest extends StObject {
   
   /**
     * A list of AWS Config rule names of remediation configurations for which you want details. 
     */
-  var ConfigRuleNames: typings.awsSdk.configserviceMod.ConfigRuleNames = js.native
+  var ConfigRuleNames: typings.awsSdk.configserviceMod.ConfigRuleNames
 }
 object DescribeRemediationConfigurationsRequest {
   

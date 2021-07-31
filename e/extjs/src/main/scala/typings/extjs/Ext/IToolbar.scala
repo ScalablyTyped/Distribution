@@ -2,27 +2,26 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToolbar
-  extends typings.extjs.Ext.container.IContainer {
+  extends StObject
+     with typings.extjs.Ext.container.IContainer {
   
   /** [Config Option] (String) */
-  var defaultButtonUI: js.UndefOr[java.lang.String] = js.native
+  var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var enableOverflow: js.UndefOr[Boolean] = js.native
+  var enableOverflow: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isToolbar: js.UndefOr[Boolean] = js.native
+  var isToolbar: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var menuTriggerCls: js.UndefOr[java.lang.String] = js.native
+  var menuTriggerCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object IToolbar {
   

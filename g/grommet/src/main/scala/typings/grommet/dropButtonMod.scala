@@ -14,7 +14,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropButtonMod {
@@ -24,19 +23,19 @@ object dropButtonMod {
   @js.native
   class DropButton protected ()
     extends Component[
-          DropButtonProps with ButtonProps with (Omit[
+          DropButtonProps & ButtonProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             color
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: DropButtonProps with ButtonProps with (Omit[
+    def this(props: DropButtonProps & ButtonProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             color
           ])) = this()
     def this(
-      props: DropButtonProps with ButtonProps with (Omit[
+      props: DropButtonProps & ButtonProps & (Omit[
             DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
             color
           ]),
@@ -46,29 +45,28 @@ object dropButtonMod {
   @JSImport("grommet/components/DropButton", "DropButton")
   @js.native
   val DropButton: ComponentClass[
-    DropButtonProps with ButtonProps with (Omit[
+    DropButtonProps & ButtonProps & (Omit[
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait DropButtonProps extends StObject {
     
-    var dropAlign: js.UndefOr[Bottom] = js.native
+    var dropAlign: js.UndefOr[Bottom] = js.undefined
     
-    var dropContent: Element = js.native
+    var dropContent: Element
     
-    var dropProps: js.UndefOr[DropProps] = js.native
+    var dropProps: js.UndefOr[DropProps] = js.undefined
     
-    var dropTarget: js.UndefOr[js.Object] = js.native
+    var dropTarget: js.UndefOr[js.Object] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
   }
   object DropButtonProps {
     

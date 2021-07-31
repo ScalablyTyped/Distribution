@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceMinutes extends StObject {
   
   /**
     * When specified, represents only the sum of metered minutes used by the resource to run tests.
     */
-  var metered: js.UndefOr[Double] = js.native
+  var metered: js.UndefOr[Double] = js.undefined
   
   /**
     * When specified, represents the total minutes used by the resource to run tests.
     */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
   
   /**
     * When specified, represents only the sum of unmetered minutes used by the resource to run tests.
     */
-  var unmetered: js.UndefOr[Double] = js.native
+  var unmetered: js.UndefOr[Double] = js.undefined
 }
 object DeviceMinutes {
   

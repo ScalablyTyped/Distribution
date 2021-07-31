@@ -2,84 +2,68 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipops {
   
-  @JSGlobal("KSR.ipops.compare_ips")
+  @JSGlobal("KSR.ipops")
   @js.native
-  def compareIps(_sval1: String, _sval2: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.ipops.compare_pure_ips")
-  @js.native
-  def comparePureIps(_sval1: String, _sval2: String): Double = js.native
+  @scala.inline
+  def compareIps(_sval1: String, _sval2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare_ips")(_sval1.asInstanceOf[js.Any], _sval2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.detailed_ip_type")
-  @js.native
-  def detailedIpType(_sval: String, _dpv: String): Double = js.native
+  @scala.inline
+  def comparePureIps(_sval1: String, _sval2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare_pure_ips")(_sval1.asInstanceOf[js.Any], _sval2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.detailed_ipv4_type")
-  @js.native
-  def detailedIpv4Type(_sval: String, _dpv: String): Double = js.native
+  @scala.inline
+  def detailedIpType(_sval: String, _dpv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("detailed_ip_type")(_sval.asInstanceOf[js.Any], _dpv.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.detailed_ipv6_type")
-  @js.native
-  def detailedIpv6Type(_sval: String, _dpv: String): Double = js.native
+  @scala.inline
+  def detailedIpv4Type(_sval: String, _dpv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("detailed_ipv4_type")(_sval.asInstanceOf[js.Any], _dpv.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.dns_int_match_ip")
-  @js.native
-  def dnsIntMatchIp(vhn: String, vip: String): Double = js.native
+  @scala.inline
+  def detailedIpv6Type(_sval: String, _dpv: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("detailed_ipv6_type")(_sval.asInstanceOf[js.Any], _dpv.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.dns_query")
-  @js.native
-  def dnsQuery(naptrname: String, pvid: String): Double = js.native
+  @scala.inline
+  def dnsIntMatchIp(vhn: String, vip: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dns_int_match_ip")(vhn.asInstanceOf[js.Any], vip.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.dns_sys_match_ip")
-  @js.native
-  def dnsSysMatchIp(vhn: String, vip: String): Double = js.native
+  @scala.inline
+  def dnsQuery(naptrname: String, pvid: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dns_query")(naptrname.asInstanceOf[js.Any], pvid.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.ip_is_in_subnet")
-  @js.native
-  def ipIsInSubnet(_sval1: String, _sval2: String): Double = js.native
+  @scala.inline
+  def dnsSysMatchIp(vhn: String, vip: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dns_sys_match_ip")(vhn.asInstanceOf[js.Any], vip.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.ip_type")
-  @js.native
-  def ipType(sval: String): Double = js.native
+  @scala.inline
+  def ipIsInSubnet(_sval1: String, _sval2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ip_is_in_subnet")(_sval1.asInstanceOf[js.Any], _sval2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_in_subnet")
-  @js.native
-  def isInSubnet(_sval1: String, _sval2: String): Double = js.native
+  @scala.inline
+  def ipType(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ip_type")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_ip")
-  @js.native
-  def isIp(sval: String): Double = js.native
+  @scala.inline
+  def isInSubnet(_sval1: String, _sval2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("is_in_subnet")(_sval1.asInstanceOf[js.Any], _sval2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_ip4")
-  @js.native
-  def isIp4(sval: String): Double = js.native
+  @scala.inline
+  def isIp(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_ip")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_ip6")
-  @js.native
-  def isIp6(sval: String): Double = js.native
+  @scala.inline
+  def isIp4(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_ip4")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_ip6_reference")
-  @js.native
-  def isIp6Reference(sval: String): Double = js.native
+  @scala.inline
+  def isIp6(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_ip6")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_ip_rfc1918")
-  @js.native
-  def isIpRfc1918(sval: String): Double = js.native
+  @scala.inline
+  def isIp6Reference(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_ip6_reference")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.is_pure_ip")
-  @js.native
-  def isPureIp(sval: String): Double = js.native
+  @scala.inline
+  def isIpRfc1918(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_ip_rfc1918")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.naptr_query")
-  @js.native
-  def naptrQuery(naptrname: String, pvid: String): Double = js.native
+  @scala.inline
+  def isPureIp(sval: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_pure_ip")(sval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.ipops.srv_query")
-  @js.native
-  def srvQuery(naptrname: String, pvid: String): Double = js.native
+  @scala.inline
+  def naptrQuery(naptrname: String, pvid: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("naptr_query")(naptrname.asInstanceOf[js.Any], pvid.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def srvQuery(naptrname: String, pvid: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("srv_query")(naptrname.asInstanceOf[js.Any], pvid.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

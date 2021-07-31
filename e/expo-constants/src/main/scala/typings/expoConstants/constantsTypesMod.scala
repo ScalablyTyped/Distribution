@@ -9,7 +9,6 @@ import typings.expoConstants.anon.Tool
 import typings.expoConstants.expoConstantsStrings.ExponentConstants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsTypesMod {
@@ -21,19 +20,25 @@ object constantsTypesMod {
   object AppOwnership extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AppOwnership with String] = js.native
+    def apply(value: String): js.UndefOr[AppOwnership & String] = js.native
     
     @js.native
-    sealed trait Expo extends AppOwnership
-    /* "expo" */ val Expo: typings.expoConstants.constantsTypesMod.AppOwnership.Expo with String = js.native
+    sealed trait Expo
+      extends StObject
+         with AppOwnership
+    /* "expo" */ val Expo: typings.expoConstants.constantsTypesMod.AppOwnership.Expo & String = js.native
     
     @js.native
-    sealed trait Guest extends AppOwnership
-    /* "guest" */ val Guest: typings.expoConstants.constantsTypesMod.AppOwnership.Guest with String = js.native
+    sealed trait Guest
+      extends StObject
+         with AppOwnership
+    /* "guest" */ val Guest: typings.expoConstants.constantsTypesMod.AppOwnership.Guest & String = js.native
     
     @js.native
-    sealed trait Standalone extends AppOwnership
-    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.AppOwnership.Standalone with String = js.native
+    sealed trait Standalone
+      extends StObject
+         with AppOwnership
+    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.AppOwnership.Standalone & String = js.native
   }
   
   @js.native
@@ -43,26 +48,32 @@ object constantsTypesMod {
   object UserInterfaceIdiom extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[UserInterfaceIdiom with String] = js.native
+    def apply(value: String): js.UndefOr[UserInterfaceIdiom & String] = js.native
     
     @js.native
-    sealed trait Handset extends UserInterfaceIdiom
-    /* "handset" */ val Handset: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Handset with String = js.native
+    sealed trait Handset
+      extends StObject
+         with UserInterfaceIdiom
+    /* "handset" */ val Handset: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Handset & String = js.native
     
     @js.native
-    sealed trait Tablet extends UserInterfaceIdiom
-    /* "tablet" */ val Tablet: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Tablet with String = js.native
+    sealed trait Tablet
+      extends StObject
+         with UserInterfaceIdiom
+    /* "tablet" */ val Tablet: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Tablet & String = js.native
     
     @js.native
-    sealed trait Unsupported extends UserInterfaceIdiom
-    /* "unsupported" */ val Unsupported: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Unsupported with String = js.native
+    sealed trait Unsupported
+      extends StObject
+         with UserInterfaceIdiom
+    /* "unsupported" */ val Unsupported: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Unsupported & String = js.native
   }
   
-  @js.native
   trait AndroidManifest
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var versionCode: Double = js.native
+    var versionCode: Double
   }
   object AndroidManifest {
     
@@ -80,52 +91,52 @@ object constantsTypesMod {
     }
   }
   
-  @js.native
   trait AppManifest
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var bundleUrl: String = js.native
+    var bundleUrl: String
     
-    var debuggerHost: js.UndefOr[String] = js.native
+    var debuggerHost: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var developer: js.UndefOr[Tool] = js.native
+    var developer: js.UndefOr[Tool] = js.undefined
     
-    var entryPoint: js.UndefOr[String] = js.native
+    var entryPoint: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[Icon] = js.native
+    var loading: js.UndefOr[Icon] = js.undefined
     
-    var logUrl: js.UndefOr[String] = js.native
+    var logUrl: js.UndefOr[String] = js.undefined
     
-    var mainModuleName: js.UndefOr[String] = js.native
+    var mainModuleName: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var notification: js.UndefOr[Dictkey] = js.native
+    var notification: js.UndefOr[Dictkey] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var packagerOpts: js.UndefOr[Dev] = js.native
+    var packagerOpts: js.UndefOr[Dev] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var releaseChannel: js.UndefOr[String] = js.native
+    var releaseChannel: js.UndefOr[String] = js.undefined
     
     /** Published Apps Only */
-    var releaseId: js.UndefOr[String] = js.native
+    var releaseId: js.UndefOr[String] = js.undefined
     
-    var revisionId: js.UndefOr[String] = js.native
+    var revisionId: js.UndefOr[String] = js.undefined
     
-    var sdkVersion: js.UndefOr[String] = js.native
+    var sdkVersion: js.UndefOr[String] = js.undefined
     
-    var slug: js.UndefOr[String] = js.native
+    var slug: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var xde: js.UndefOr[Boolean] = js.native
+    var xde: js.UndefOr[Boolean] = js.undefined
   }
   object AppManifest {
     
@@ -263,12 +274,13 @@ object constantsTypesMod {
     }
   }
   
-  @js.native
-  trait Constants extends NativeConstants {
+  trait Constants
+    extends StObject
+       with NativeConstants {
     
-    var deviceId: js.UndefOr[String] = js.native
+    var deviceId: js.UndefOr[String] = js.undefined
     
-    var linkingUrl: js.UndefOr[String] = js.native
+    var linkingUrl: js.UndefOr[String] = js.undefined
   }
   object Constants {
     
@@ -282,12 +294,11 @@ object constantsTypesMod {
       isHeadless: Boolean,
       linkingUri: String,
       manifest: AppManifest,
-      name: ExponentConstants,
       sessionId: String,
       statusBarHeight: Double,
       systemFonts: js.Array[String]
     ): Constants = {
-      val __obj = js.Dynamic.literal(debugMode = debugMode.asInstanceOf[js.Any], experienceUrl = experienceUrl.asInstanceOf[js.Any], getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId.asInstanceOf[js.Any], isDevice = isDevice.asInstanceOf[js.Any], isHeadless = isHeadless.asInstanceOf[js.Any], linkingUri = linkingUri.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], statusBarHeight = statusBarHeight.asInstanceOf[js.Any], systemFonts = systemFonts.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(debugMode = debugMode.asInstanceOf[js.Any], experienceUrl = experienceUrl.asInstanceOf[js.Any], getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId.asInstanceOf[js.Any], isDevice = isDevice.asInstanceOf[js.Any], isHeadless = isHeadless.asInstanceOf[js.Any], linkingUri = linkingUri.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = "ExponentConstants", sessionId = sessionId.asInstanceOf[js.Any], statusBarHeight = statusBarHeight.asInstanceOf[js.Any], systemFonts = systemFonts.asInstanceOf[js.Any], appOwnership = null, deviceYearClass = null, expoRuntimeVersion = null, expoVersion = null, nativeAppVersion = null, nativeBuildVersion = null)
       __obj.asInstanceOf[Constants]
     }
     
@@ -308,19 +319,19 @@ object constantsTypesMod {
     }
   }
   
-  @js.native
   trait IOSManifest
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var buildNumber: String = js.native
+    var buildNumber: String
     
-    var model: String = js.native
+    var model: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var systemVersion: String = js.native
+    var systemVersion: String
     
-    var userInterfaceIdiom: UserInterfaceIdiom = js.native
+    var userInterfaceIdiom: UserInterfaceIdiom
   }
   object IOSManifest {
     
@@ -356,59 +367,59 @@ object constantsTypesMod {
     }
   }
   
-  @js.native
   trait NativeConstants
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var appOwnership: AppOwnership | Null = js.native
+    var appOwnership: AppOwnership | Null
     
-    var debugMode: Boolean = js.native
+    var debugMode: Boolean
     
-    var deviceName: js.UndefOr[String] = js.native
+    var deviceName: js.UndefOr[String] = js.undefined
     
-    var deviceYearClass: Double | Null = js.native
+    var deviceYearClass: Double | Null
     
-    var experienceUrl: String = js.native
+    var experienceUrl: String
     
-    var expoRuntimeVersion: String | Null = js.native
+    var expoRuntimeVersion: String | Null
     
     /**
       * The version string of the Expo client currently running.
       * Returns `null` on and bare workflow and web.
       */
-    var expoVersion: String | Null = js.native
+    var expoVersion: String | Null
     
-    def getWebViewUserAgentAsync(): js.Promise[String | Null] = js.native
+    def getWebViewUserAgentAsync(): js.Promise[String | Null]
     
-    var installationId: String = js.native
+    var installationId: String
     
-    var intentUri: js.UndefOr[String] = js.native
+    var intentUri: js.UndefOr[String] = js.undefined
     
-    var isDetached: js.UndefOr[Boolean] = js.native
+    var isDetached: js.UndefOr[Boolean] = js.undefined
     
-    var isDevice: Boolean = js.native
+    var isDevice: Boolean
     
-    var isHeadless: Boolean = js.native
+    var isHeadless: Boolean
     
-    var linkingUri: String = js.native
+    var linkingUri: String
     
-    var manifest: AppManifest = js.native
+    var manifest: AppManifest
     
-    var name: ExponentConstants = js.native
+    var name: ExponentConstants
     
-    var nativeAppVersion: String | Null = js.native
+    var nativeAppVersion: String | Null
     
-    var nativeBuildVersion: String | Null = js.native
+    var nativeBuildVersion: String | Null
     
-    var platform: js.UndefOr[PlatformManifest] = js.native
+    var platform: js.UndefOr[PlatformManifest] = js.undefined
     
-    var sessionId: String = js.native
+    var sessionId: String
     
-    var statusBarHeight: Double = js.native
+    var statusBarHeight: Double
     
-    var systemFonts: js.Array[String] = js.native
+    var systemFonts: js.Array[String]
     
-    var systemVersion: js.UndefOr[Double] = js.native
+    var systemVersion: js.UndefOr[Double] = js.undefined
   }
   object NativeConstants {
     
@@ -422,12 +433,11 @@ object constantsTypesMod {
       isHeadless: Boolean,
       linkingUri: String,
       manifest: AppManifest,
-      name: ExponentConstants,
       sessionId: String,
       statusBarHeight: Double,
       systemFonts: js.Array[String]
     ): NativeConstants = {
-      val __obj = js.Dynamic.literal(debugMode = debugMode.asInstanceOf[js.Any], experienceUrl = experienceUrl.asInstanceOf[js.Any], getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId.asInstanceOf[js.Any], isDevice = isDevice.asInstanceOf[js.Any], isHeadless = isHeadless.asInstanceOf[js.Any], linkingUri = linkingUri.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], statusBarHeight = statusBarHeight.asInstanceOf[js.Any], systemFonts = systemFonts.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(debugMode = debugMode.asInstanceOf[js.Any], experienceUrl = experienceUrl.asInstanceOf[js.Any], getWebViewUserAgentAsync = js.Any.fromFunction0(getWebViewUserAgentAsync), installationId = installationId.asInstanceOf[js.Any], isDevice = isDevice.asInstanceOf[js.Any], isHeadless = isHeadless.asInstanceOf[js.Any], linkingUri = linkingUri.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], name = "ExponentConstants", sessionId = sessionId.asInstanceOf[js.Any], statusBarHeight = statusBarHeight.asInstanceOf[js.Any], systemFonts = systemFonts.asInstanceOf[js.Any], appOwnership = null, deviceYearClass = null, expoRuntimeVersion = null, expoVersion = null, nativeAppVersion = null, nativeBuildVersion = null)
       __obj.asInstanceOf[NativeConstants]
     }
     
@@ -541,25 +551,25 @@ object constantsTypesMod {
     }
   }
   
-  @js.native
   trait PlatformManifest
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var android: js.UndefOr[AndroidManifest] = js.native
+    var android: js.UndefOr[AndroidManifest] = js.undefined
     
-    var detach: js.UndefOr[Scheme] = js.native
+    var detach: js.UndefOr[Scheme] = js.undefined
     
-    var developer: js.UndefOr[String] = js.native
+    var developer: js.UndefOr[String] = js.undefined
     
-    var hostUri: js.UndefOr[String] = js.native
+    var hostUri: js.UndefOr[String] = js.undefined
     
-    var ios: js.UndefOr[IOSManifest] = js.native
+    var ios: js.UndefOr[IOSManifest] = js.undefined
     
-    var logUrl: js.UndefOr[String] = js.native
+    var logUrl: js.UndefOr[String] = js.undefined
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
     
-    var web: js.UndefOr[WebManifest] = js.native
+    var web: js.UndefOr[WebManifest] = js.undefined
   }
   object PlatformManifest {
     

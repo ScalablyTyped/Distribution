@@ -4,20 +4,20 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISortable extends IBase {
+trait ISortable
+  extends StObject
+     with IBase {
   
   /** [Property] (String) */
-  var defaultSortDirection: js.UndefOr[String] = js.native
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   
   /** [Method] Performs initialization of this mixin  */
-  var initSortable: js.UndefOr[js.Function0[Unit]] = js.native
+  var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
@@ -34,13 +34,13 @@ trait ISortable extends IBase {
       /* doSort */ js.UndefOr[Boolean], 
       Array
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (String) */
-  var sortRoot: js.UndefOr[String] = js.native
+  var sortRoot: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.util.MixedCollection) */
-  var sorters: js.UndefOr[IMixedCollection] = js.native
+  var sorters: js.UndefOr[IMixedCollection] = js.undefined
 }
 object ISortable {
   

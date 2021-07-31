@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Writers extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait Writers extends StObject {
     *    return record[this.id];
     * };
     */
-  var _attributeWriter: js.UndefOr[js.Function1[/* record */ js.Any, _]] = js.native
+  var _attributeWriter: js.UndefOr[js.Function1[/* record */ js.Any, js.Any]] = js.undefined
   
   /**
     * Function that returns the HTML code that will be injected for the cell
@@ -57,7 +55,7 @@ trait Writers extends StObject {
     *     return td + '>' + html + '</td>';
     * };
     */
-  var _cellWriter: js.UndefOr[js.Function2[/* column */ Column, /* record */ js.Any, String]] = js.native
+  var _cellWriter: js.UndefOr[js.Function2[/* column */ Column, /* record */ js.Any, String]] = js.undefined
   
   /**
     * Function that write the data inside each row
@@ -88,7 +86,7 @@ trait Writers extends StObject {
       /* cellWriter */ js.Function, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Writers {
   
@@ -102,7 +100,7 @@ object Writers {
   implicit class WritersMutableBuilder[Self <: Writers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def set_attributeWriter(value: /* record */ js.Any => _): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
+    def set_attributeWriter(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
     
     @scala.inline
     def set_attributeWriterUndefined: Self = StObject.set(x, "_attributeWriter", js.undefined)

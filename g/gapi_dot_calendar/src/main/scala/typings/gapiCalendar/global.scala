@@ -1,6 +1,9 @@
 package typings.gapiCalendar
 
 import typings.gapi.gapi.client.HttpRequest
+import typings.gapiCalendar.anon.Date
+import typings.gapiCalendar.anon.DisplayName
+import typings.gapiCalendar.anon.UseDefault
 import typings.gapiCalendar.gapi.client.calendar.AclDeleteParameters
 import typings.gapiCalendar.gapi.client.calendar.AclGetParameters
 import typings.gapiCalendar.gapi.client.calendar.AclInsertParameters
@@ -22,9 +25,11 @@ import typings.gapiCalendar.gapi.client.calendar.EventsUpdateParameters
 import typings.gapiCalendar.gapi.client.calendar.Events_
 import typings.gapiCalendar.gapi.client.calendar.FreeBusyQueryParameters
 import typings.gapiCalendar.gapi.client.calendar.FreeBusy_
+import typings.gapiCalendar.gapi.client.calendar.datetime
+import typings.gapiCalendar.gapi.client.calendar.integer
+import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignevent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -38,110 +43,173 @@ object global {
         @JSGlobal("gapi.client.calendar.Event")
         @js.native
         class Event ()
-          extends typings.gapiCalendar.gapi.client.calendar.Event
+          extends StObject
+             with typings.gapiCalendar.gapi.client.calendar.Event {
+          
+          /* CompleteClass */
+          var created: datetime = js.native
+          
+          // The creator of the event. Read-only.
+          /* CompleteClass */
+          var creator: DisplayName = js.native
+          
+          /* CompleteClass */
+          var description: String = js.native
+          
+          // The (exclusive) end time of the event. For a recurring event, this is the end time of the first instance.
+          /* CompleteClass */
+          var end: Date = js.native
+          
+          /* CompleteClass */
+          var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
+          
+          /* CompleteClass */
+          var htmlLink: String = js.native
+          
+          /* CompleteClass */
+          var iCalUID: String = js.native
+          
+          /* CompleteClass */
+          var id: String = js.native
+          
+          /* CompleteClass */
+          var kind: calendarNumbersignevent = js.native
+          
+          // The organizer of the event.
+          /* CompleteClass */
+          var organizer: DisplayName = js.native
+          
+          /* CompleteClass */
+          var recurrence: js.Array[String] = js.native
+          
+          /* CompleteClass */
+          var reminders: UseDefault = js.native
+          
+          /* CompleteClass */
+          var sequence: integer = js.native
+          
+          // The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance.
+          /* CompleteClass */
+          var start: Date = js.native
+          
+          /* CompleteClass */
+          var summary: String = js.native
+          
+          /* CompleteClass */
+          var updated: datetime = js.native
+        }
         
         @JSGlobal("gapi.client.calendar.acl")
         @js.native
         class acl ()
-          extends typings.gapiCalendar.gapi.client.calendar.acl
+          extends StObject
+             with typings.gapiCalendar.gapi.client.calendar.acl
         /* static members */
         object acl {
           
-          @JSGlobal("gapi.client.calendar.acl.delete")
+          @JSGlobal("gapi.client.calendar.acl")
           @js.native
-          def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = js.native
+          val ^ : js.Any = js.native
           
-          @JSGlobal("gapi.client.calendar.acl.get")
-          @js.native
-          def get(parameters: AclGetParameters): HttpRequest[Acl_] = js.native
+          @scala.inline
+          def delete(parameters: AclDeleteParameters): HttpRequest[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Unit]]
           
-          @JSGlobal("gapi.client.calendar.acl.insert")
-          @js.native
-          def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = js.native
+          @scala.inline
+          def get(parameters: AclGetParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
           
-          @JSGlobal("gapi.client.calendar.acl.update")
-          @js.native
-          def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = js.native
+          @scala.inline
+          def insert(parameters: AclInsertParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
+          
+          @scala.inline
+          def update(parameters: AclUpdateParameters): HttpRequest[Acl_] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Acl_]]
         }
         
         @JSGlobal("gapi.client.calendar.calendarList")
         @js.native
         class calendarList ()
-          extends typings.gapiCalendar.gapi.client.calendar.calendarList
+          extends StObject
+             with typings.gapiCalendar.gapi.client.calendar.calendarList
         /* static members */
         object calendarList {
           
-          @JSGlobal("gapi.client.calendar.calendarList.insert")
+          @JSGlobal("gapi.client.calendar.calendarList")
           @js.native
-          def insert(parameters: CalendarListInsertParameters): HttpRequest[CalendarListEntry] = js.native
+          val ^ : js.Any = js.native
           
-          @JSGlobal("gapi.client.calendar.calendarList.list")
-          @js.native
-          def list(): HttpRequest[CalendarList_] = js.native
-          @JSGlobal("gapi.client.calendar.calendarList.list")
-          @js.native
-          def list(parameters: CalendarListListParameters): HttpRequest[CalendarList_] = js.native
+          @scala.inline
+          def insert(parameters: CalendarListInsertParameters): HttpRequest[CalendarListEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[CalendarListEntry]]
+          
+          @scala.inline
+          def list(): HttpRequest[CalendarList_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[HttpRequest[CalendarList_]]
+          @scala.inline
+          def list(parameters: CalendarListListParameters): HttpRequest[CalendarList_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[CalendarList_]]
         }
         
         @JSGlobal("gapi.client.calendar.calendars")
         @js.native
         class calendars ()
-          extends typings.gapiCalendar.gapi.client.calendar.calendars
+          extends StObject
+             with typings.gapiCalendar.gapi.client.calendar.calendars
         /* static members */
         object calendars {
           
-          @JSGlobal("gapi.client.calendar.calendars.delete")
+          @JSGlobal("gapi.client.calendar.calendars")
           @js.native
-          def delete(parameters: CalendarsDeleteParameters): HttpRequest[Unit] = js.native
+          val ^ : js.Any = js.native
           
-          @JSGlobal("gapi.client.calendar.calendars.insert")
-          @js.native
-          def insert(parameters: CalendarsInsertParameters): HttpRequest[Calendar] = js.native
+          @scala.inline
+          def delete(parameters: CalendarsDeleteParameters): HttpRequest[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Unit]]
           
-          @JSGlobal("gapi.client.calendar.calendars.update")
-          @js.native
-          def update(parameters: CalendarsUpdateParameters): HttpRequest[Calendar] = js.native
+          @scala.inline
+          def insert(parameters: CalendarsInsertParameters): HttpRequest[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Calendar]]
+          
+          @scala.inline
+          def update(parameters: CalendarsUpdateParameters): HttpRequest[Calendar] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Calendar]]
         }
         
         @JSGlobal("gapi.client.calendar.events")
         @js.native
         class events ()
-          extends typings.gapiCalendar.gapi.client.calendar.events
+          extends StObject
+             with typings.gapiCalendar.gapi.client.calendar.events
         /* static members */
         object events {
           
+          @JSGlobal("gapi.client.calendar.events")
+          @js.native
+          val ^ : js.Any = js.native
+          
           // delete the existing event from calendar
-          @JSGlobal("gapi.client.calendar.events.delete")
-          @js.native
-          def delete(parameters: EventsDeleteParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          @scala.inline
+          def delete(parameters: EventsDeleteParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
           
-          @JSGlobal("gapi.client.calendar.events.get")
-          @js.native
-          def get(parameters: EventsGetParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          @scala.inline
+          def get(parameters: EventsGetParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
           
-          @JSGlobal("gapi.client.calendar.events.insert")
-          @js.native
-          def insert(parameters: EventsInsertParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          @scala.inline
+          def insert(parameters: EventsInsertParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
           
-          @JSGlobal("gapi.client.calendar.events.list")
-          @js.native
-          def list(parameters: EventsListParameters): HttpRequest[Events_] = js.native
+          @scala.inline
+          def list(parameters: EventsListParameters): HttpRequest[Events_] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Events_]]
           
-          @JSGlobal("gapi.client.calendar.events.update")
-          @js.native
-          def update(parameters: EventsUpdateParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = js.native
+          @scala.inline
+          def update(parameters: EventsUpdateParameters): HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[typings.gapiCalendar.gapi.client.calendar.Event]]
         }
         
         @JSGlobal("gapi.client.calendar.freebusy")
         @js.native
         class freebusy ()
-          extends typings.gapiCalendar.gapi.client.calendar.freebusy
+          extends StObject
+             with typings.gapiCalendar.gapi.client.calendar.freebusy
         /* static members */
         object freebusy {
           
-          @JSGlobal("gapi.client.calendar.freebusy.query")
+          @JSGlobal("gapi.client.calendar.freebusy")
           @js.native
-          def query(parameters: FreeBusyQueryParameters): HttpRequest[FreeBusy_] = js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
+          def query(parameters: FreeBusyQueryParameters): HttpRequest[FreeBusy_] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FreeBusy_]]
         }
       }
     }

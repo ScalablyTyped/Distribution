@@ -3,10 +3,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTrainingOptions extends StObject {
   
   /**
@@ -19,92 +17,92 @@ trait SchemaTrainingOptions extends StObject {
     * data. It respects the order in Orderable data types:
     * https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#data-type-properties
     */
-  var dataSplitColumn: js.UndefOr[String] = js.native
+  var dataSplitColumn: js.UndefOr[String] = js.undefined
   
   /**
     * The fraction of evaluation data over the whole input data. The rest of
     * data will be used as training data. The format should be double. Accurate
     * to two decimal places. Default value is 0.2.
     */
-  var dataSplitEvalFraction: js.UndefOr[Double] = js.native
+  var dataSplitEvalFraction: js.UndefOr[Double] = js.undefined
   
   /**
     * The data split type for training and evaluation, e.g. RANDOM.
     */
-  var dataSplitMethod: js.UndefOr[String] = js.native
+  var dataSplitMethod: js.UndefOr[String] = js.undefined
   
   /**
     * [Beta] Distance type for clustering models.
     */
-  var distanceType: js.UndefOr[String] = js.native
+  var distanceType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to stop early when the loss doesn&#39;t improve significantly any
     * more (compared to min_relative_progress).
     */
-  var earlyStop: js.UndefOr[Boolean] = js.native
+  var earlyStop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the initial learning rate for line search to start at.
     */
-  var initialLearnRate: js.UndefOr[Double] = js.native
+  var initialLearnRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Name of input label columns in training data.
     */
-  var inputLabelColumns: js.UndefOr[js.Array[String]] = js.native
+  var inputLabelColumns: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * L1 regularization coefficient.
     */
-  var l1Regularization: js.UndefOr[Double] = js.native
+  var l1Regularization: js.UndefOr[Double] = js.undefined
   
   /**
     * L2 regularization coefficient.
     */
-  var l2Regularization: js.UndefOr[Double] = js.native
+  var l2Regularization: js.UndefOr[Double] = js.undefined
   
   /**
     * Weights associated with each label class, for rebalancing the training
     * data.
     */
-  var labelClassWeights: js.UndefOr[StringDictionary[Double]] = js.native
+  var labelClassWeights: js.UndefOr[StringDictionary[Double]] = js.undefined
   
   /**
     * Learning rate in training.
     */
-  var learnRate: js.UndefOr[Double] = js.native
+  var learnRate: js.UndefOr[Double] = js.undefined
   
   /**
     * The strategy to determine learning rate.
     */
-  var learnRateStrategy: js.UndefOr[String] = js.native
+  var learnRateStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * Type of loss function used during training run.
     */
-  var lossType: js.UndefOr[String] = js.native
+  var lossType: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of iterations in training.
     */
-  var maxIterations: js.UndefOr[String] = js.native
+  var maxIterations: js.UndefOr[String] = js.undefined
   
   /**
     * When early_stop is true, stops training when accuracy improvement is less
     * than &#39;min_relative_progress&#39;.
     */
-  var minRelativeProgress: js.UndefOr[Double] = js.native
+  var minRelativeProgress: js.UndefOr[Double] = js.undefined
   
   /**
     * [Beta] Number of clusters for clustering models.
     */
-  var numClusters: js.UndefOr[String] = js.native
+  var numClusters: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to train a model from the last checkpoint.
     */
-  var warmStart: js.UndefOr[Boolean] = js.native
+  var warmStart: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTrainingOptions {
   

@@ -2,21 +2,19 @@ package typings.inboxsdk.mod.ButterBar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingMessageDescriptorBase extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var hideOnViewChanged: js.UndefOr[Boolean] = js.native
+  var hideOnViewChanged: js.UndefOr[Boolean] = js.undefined
   
-  var messageKey: js.UndefOr[js.Object | String] = js.native
+  var messageKey: js.UndefOr[js.Object | String] = js.undefined
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object LoadingMessageDescriptorBase {
   

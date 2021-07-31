@@ -3,15 +3,13 @@ package typings.terminalKit.anon
 import typings.terminalKit.terminalMod.CTerminal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarStyle extends StObject {
   
-  var barStyle: js.UndefOr[CTerminal] = js.native
+  var barStyle: js.UndefOr[CTerminal] = js.undefined
   
-  var innerSize: js.UndefOr[Double] = js.native
+  var innerSize: js.UndefOr[Double] = js.undefined
 }
 object BarStyle {
   

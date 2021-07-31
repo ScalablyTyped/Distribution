@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetShowHingeRequest extends StObject {
   
   /**
     * hinge data, null means hideHinge
     */
-  var hingeConfig: js.UndefOr[HingeConfig] = js.native
+  var hingeConfig: js.UndefOr[HingeConfig] = js.undefined
 }
 object SetShowHingeRequest {
   

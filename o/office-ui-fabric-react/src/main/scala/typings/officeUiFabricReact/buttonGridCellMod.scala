@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGridCellMod {
@@ -48,7 +47,7 @@ object buttonGridCellMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGridCell", "GridCell")
   @js.native
-  class GridCell[T, P /* <: IButtonGridCellProps[/* import warning: RewrittenClass.unapply cls was tparam T */ _] */] () extends ButtonGridCell[T, P]
+  class GridCell[T, P /* <: IButtonGridCellProps[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any] */] () extends ButtonGridCell[T, P]
   object GridCell {
     
     @JSImport("office-ui-fabric-react/lib/utilities/ButtonGrid/ButtonGridCell", "GridCell")

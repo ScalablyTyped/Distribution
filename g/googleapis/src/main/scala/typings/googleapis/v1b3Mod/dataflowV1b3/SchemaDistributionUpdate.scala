@@ -2,45 +2,43 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A metric value representing a distribution.
   */
-@js.native
 trait SchemaDistributionUpdate extends StObject {
   
   /**
     * The count of the number of elements present in the distribution.
     */
-  var count: js.UndefOr[SchemaSplitInt64] = js.native
+  var count: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * (Optional) Histogram of value counts for the distribution.
     */
-  var histogram: js.UndefOr[SchemaHistogram] = js.native
+  var histogram: js.UndefOr[SchemaHistogram] = js.undefined
   
   /**
     * The maximum value present in the distribution.
     */
-  var max: js.UndefOr[SchemaSplitInt64] = js.native
+  var max: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * The minimum value present in the distribution.
     */
-  var min: js.UndefOr[SchemaSplitInt64] = js.native
+  var min: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * Use an int64 since we&#39;d prefer the added precision. If overflow is a
     * common problem we can detect it and use an additional int64 or a double.
     */
-  var sum: js.UndefOr[SchemaSplitInt64] = js.native
+  var sum: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * Use a double since the sum of squares is likely to overflow int64.
     */
-  var sumOfSquares: js.UndefOr[Double] = js.native
+  var sumOfSquares: js.UndefOr[Double] = js.undefined
 }
 object SchemaDistributionUpdate {
   

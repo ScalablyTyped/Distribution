@@ -2,23 +2,23 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLocation extends KmlObject {
+trait KmlLocation
+  extends StObject
+     with KmlObject {
   
   /**
     * Specifies the distance above the earth's surface.
     */
-  def getAltitude(): Double = js.native
+  def getAltitude(): Double
   
   /**
     * Latitude of the camera location.
     * Degrees north or south of the Equator (0 degrees).
     * Values range from -90 degrees (South Pole) to 90 degrees (North Pole).
     */
-  def getLatitude(): Double = js.native
+  def getLatitude(): Double
   
   /**
     * Longitude of the Model's location.
@@ -26,24 +26,24 @@ trait KmlLocation extends KmlObject {
     * Values west of the Meridian range from -180 to 0 degrees.
     * Values east of the Meridian range from 0 to 180 degrees.
     */
-  def getLongitude(): Double = js.native
+  def getLongitude(): Double
   
   /**
     * Specifies the distance above the earth's surface.
     */
-  def setAltitude(altitude: Double): Unit = js.native
+  def setAltitude(altitude: Double): Unit
   
   /**
     * Sets the latitude, longitude, and altitude of the Model.
     */
-  def setLatLngAlt(lat: Double, lng: Double, alt: Double): Unit = js.native
+  def setLatLngAlt(lat: Double, lng: Double, alt: Double): Unit
   
   /**
     * Latitude of the camera location.
     * Degrees north or south of the Equator (0 degrees).
     * Values range from -90 degrees (South Pole) to 90 degrees (North Pole).
     */
-  def setLatitude(latitude: Double): Unit = js.native
+  def setLatitude(latitude: Double): Unit
   
   /**
     * Longitude of the Model's location.
@@ -51,7 +51,7 @@ trait KmlLocation extends KmlObject {
     * Values west of the Meridian range from -180 to 0 degrees.
     * Values east of the Meridian range from 0 to 180 degrees.
     */
-  def setLongitude(longitude: Double): Unit = js.native
+  def setLongitude(longitude: Double): Unit
 }
 object KmlLocation {
   

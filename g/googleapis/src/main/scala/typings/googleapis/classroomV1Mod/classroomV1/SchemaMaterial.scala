@@ -2,36 +2,34 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Material attached to course work.  When creating attachments, setting the
   * `form` field is not supported.
   */
-@js.native
 trait SchemaMaterial extends StObject {
   
   /**
     * Google Drive file material.
     */
-  var driveFile: js.UndefOr[SchemaSharedDriveFile] = js.native
+  var driveFile: js.UndefOr[SchemaSharedDriveFile] = js.undefined
   
   /**
     * Google Forms material.
     */
-  var form: js.UndefOr[SchemaForm] = js.native
+  var form: js.UndefOr[SchemaForm] = js.undefined
   
   /**
     * Link material. On creation, will be upgraded to a more appropriate type
     * if possible, and this will be reflected in the response.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * YouTube video material.
     */
-  var youtubeVideo: js.UndefOr[SchemaYouTubeVideo] = js.native
+  var youtubeVideo: js.UndefOr[SchemaYouTubeVideo] = js.undefined
 }
 object SchemaMaterial {
   

@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object capacityReservationMod {
@@ -92,6 +91,10 @@ object capacityReservationMod {
   /* static members */
   object CapacityReservation {
     
+    @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CapacityReservation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -101,85 +104,79 @@ object capacityReservationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CapacityReservation = js.native
-    @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CapacityReservation = js.native
-    @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CapacityReservationState): CapacityReservation = js.native
-    @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CapacityReservationState, opts: CustomResourceOptions): CapacityReservation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CapacityReservationState): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CapacityReservationState, opts: CustomResourceOptions): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
     
     /**
       * Returns true if the given object is an instance of CapacityReservation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean]
   }
   
-  @js.native
   trait CapacityReservationArgs extends StObject {
     
     /**
       * The Availability Zone in which to create the Capacity Reservation.
       */
-    val availabilityZone: Input[String] = js.native
+    val availabilityZone: Input[String]
     
     /**
       * Indicates whether the Capacity Reservation supports EBS-optimized instances.
       */
-    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
       */
-    val endDate: js.UndefOr[Input[String]] = js.native
+    val endDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
       */
-    val endDateType: js.UndefOr[Input[String]] = js.native
+    val endDateType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
       */
-    val ephemeralStorage: js.UndefOr[Input[Boolean]] = js.native
+    val ephemeralStorage: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of instances for which to reserve capacity.
       */
-    val instanceCount: Input[Double] = js.native
+    val instanceCount: Input[Double]
     
     /**
       * Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
       */
-    val instanceMatchCriteria: js.UndefOr[Input[String]] = js.native
+    val instanceMatchCriteria: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
       */
-    val instancePlatform: Input[InstancePlatform] = js.native
+    val instancePlatform: Input[InstancePlatform]
     
     /**
       * The instance type for which to reserve capacity.
       */
-    val instanceType: Input[InstanceType] = js.native
+    val instanceType: Input[InstanceType]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
       */
-    val tenancy: js.UndefOr[Input[Tenancy]] = js.native
+    val tenancy: js.UndefOr[Input[Tenancy]] = js.undefined
   }
   object CapacityReservationArgs {
     
@@ -253,68 +250,67 @@ object capacityReservationMod {
     }
   }
   
-  @js.native
   trait CapacityReservationState extends StObject {
     
     /**
       * The ARN of the Capacity Reservation.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Availability Zone in which to create the Capacity Reservation.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the Capacity Reservation supports EBS-optimized instances.
       */
-    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
       */
-    val endDate: js.UndefOr[Input[String]] = js.native
+    val endDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
       */
-    val endDateType: js.UndefOr[Input[String]] = js.native
+    val endDateType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
       */
-    val ephemeralStorage: js.UndefOr[Input[Boolean]] = js.native
+    val ephemeralStorage: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of instances for which to reserve capacity.
       */
-    val instanceCount: js.UndefOr[Input[Double]] = js.native
+    val instanceCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
       */
-    val instanceMatchCriteria: js.UndefOr[Input[String]] = js.native
+    val instanceMatchCriteria: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
       */
-    val instancePlatform: js.UndefOr[Input[InstancePlatform]] = js.native
+    val instancePlatform: js.UndefOr[Input[InstancePlatform]] = js.undefined
     
     /**
       * The instance type for which to reserve capacity.
       */
-    val instanceType: js.UndefOr[Input[InstanceType]] = js.native
+    val instanceType: js.UndefOr[Input[InstanceType]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
       */
-    val tenancy: js.UndefOr[Input[Tenancy]] = js.native
+    val tenancy: js.UndefOr[Input[Tenancy]] = js.undefined
   }
   object CapacityReservationState {
     

@@ -2,24 +2,22 @@ package typings.googleapis.tpuV1Mod.tpuV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for ListAcceleratorTypes.
   */
-@js.native
 trait SchemaListAcceleratorTypesResponse extends StObject {
   
   /**
     * The listed nodes.
     */
-  var acceleratorTypes: js.UndefOr[js.Array[SchemaAcceleratorType]] = js.native
+  var acceleratorTypes: js.UndefOr[js.Array[SchemaAcceleratorType]] = js.undefined
   
   /**
     * The next page token or empty if none.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAcceleratorTypesResponse {
   

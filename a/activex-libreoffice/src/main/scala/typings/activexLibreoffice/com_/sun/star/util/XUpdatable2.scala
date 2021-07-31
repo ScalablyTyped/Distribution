@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * decide not to update in certain cases, such as when the controller is locked. When performing a **hard** update, on the other hand, the implementor
   * should perform update more aggressively even when the controller is locked.
   */
-@js.native
-trait XUpdatable2 extends XUpdatable {
+trait XUpdatable2
+  extends StObject
+     with XUpdatable {
   
   /** Perform update, even when the controller is locked. */
-  def updateHard(): Unit = js.native
+  def updateHard(): Unit
   
   /** Perform update, but update may not always be performed especially when the controller is locked. */
-  def updateSoft(): Unit = js.native
+  def updateSoft(): Unit
 }
 object XUpdatable2 {
   

@@ -3,21 +3,19 @@ package typings.ckeditor.CKEDITOR.plugins
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object condesnippet {
   
-  @js.native
   trait highlighter extends StObject {
     
-    def highlight(code: String, lang: String, callback: js.Function1[/* highlightedCode */ String, Unit]): Unit = js.native
+    def highlight(code: String, lang: String, callback: js.Function1[/* highlightedCode */ String, Unit]): Unit
     
-    def highlighter(code: String, lang: String, callback: js.Function1[/* highlightedCode */ String, Unit]): Unit = js.native
+    def highlighter(code: String, lang: String, callback: js.Function1[/* highlightedCode */ String, Unit]): Unit
     
-    def init(ready: js.Function0[Unit]): Unit = js.native
+    def init(ready: js.Function0[Unit]): Unit
     
-    var languages: StringDictionary[String] = js.native
+    var languages: StringDictionary[String]
     
     val queue: js.Array[
         js.Function3[
@@ -26,9 +24,9 @@ object condesnippet {
           /* callback */ js.Function1[/* highlightedCode */ String, Unit], 
           Unit
         ]
-      ] = js.native
+      ]
     
-    val ready: Boolean = js.native
+    val ready: Boolean
   }
   object highlighter {
     

@@ -5,117 +5,117 @@ import typings.ionicCore.ionicCoreStrings.`false`
 import typings.ionicCore.ionicCoreStrings.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HTMLAttributes[T] extends DOMAttributes[T] {
+trait HTMLAttributes[T]
+  extends StObject
+     with DOMAttributes[T] {
   
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
-  var autoCapitalize: js.UndefOr[js.Any] = js.native
+  var autoCapitalize: js.UndefOr[js.Any] = js.undefined
   
-  var autoCorrect: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.undefined
   
-  var autoSave: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.undefined
   
-  var autocapitalize: js.UndefOr[js.Any] = js.native
+  var autocapitalize: js.UndefOr[js.Any] = js.undefined
   
-  var autocorrect: js.UndefOr[String] = js.native
+  var autocorrect: js.UndefOr[String] = js.undefined
   
-  var autosave: js.UndefOr[String] = js.native
+  var autosave: js.UndefOr[String] = js.undefined
   
-  var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.native
+  var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var contentEditable: js.UndefOr[Boolean | String] = js.native
+  var contentEditable: js.UndefOr[Boolean | String] = js.undefined
   
-  var contenteditable: js.UndefOr[Boolean | String] = js.native
+  var contenteditable: js.UndefOr[Boolean | String] = js.undefined
   
-  var contextMenu: js.UndefOr[String] = js.native
+  var contextMenu: js.UndefOr[String] = js.undefined
   
-  var contextmenu: js.UndefOr[String] = js.native
+  var contextmenu: js.UndefOr[String] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var enterKeyHint: js.UndefOr[String] = js.native
+  var enterKeyHint: js.UndefOr[String] = js.undefined
   
-  var enterkeyhint: js.UndefOr[String] = js.native
+  var enterkeyhint: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
-  var innerHTML: js.UndefOr[String] = js.native
+  var innerHTML: js.UndefOr[String] = js.undefined
   
-  var inputMode: js.UndefOr[String] = js.native
+  var inputMode: js.UndefOr[String] = js.undefined
   
-  var inputmode: js.UndefOr[String] = js.native
+  var inputmode: js.UndefOr[String] = js.undefined
   
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var itemID: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.undefined
   
-  var itemProp: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.undefined
   
-  var itemRef: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.undefined
   
-  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.undefined
   
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
-  var itemid: js.UndefOr[String] = js.native
+  var itemid: js.UndefOr[String] = js.undefined
   
-  var itemprop: js.UndefOr[String] = js.native
+  var itemprop: js.UndefOr[String] = js.undefined
   
-  var itemref: js.UndefOr[String] = js.native
+  var itemref: js.UndefOr[String] = js.undefined
   
-  var itemscope: js.UndefOr[Boolean] = js.native
+  var itemscope: js.UndefOr[Boolean] = js.undefined
   
-  var itemtype: js.UndefOr[String] = js.native
+  var itemtype: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
-  var radioGroup: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.undefined
   
-  var radiogroup: js.UndefOr[String] = js.native
+  var radiogroup: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var security: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.undefined
   
-  var spellcheck: js.UndefOr[`true` | `false` | js.Any] = js.native
+  var spellcheck: js.UndefOr[`true` | `false` | js.Any] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var tabindex: js.UndefOr[Double | String] = js.native
+  var tabindex: js.UndefOr[Double | String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var typeof: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[Boolean] = js.native
+  var unselectable: js.UndefOr[Boolean] = js.undefined
   
-  var vocab: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.undefined
 }
 object HTMLAttributes {
   
@@ -126,7 +126,7 @@ object HTMLAttributes {
   }
   
   @scala.inline
-  implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[_], T] (val x: Self with HTMLAttributes[T]) extends AnyVal {
+  implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])

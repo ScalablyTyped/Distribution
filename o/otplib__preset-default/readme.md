@@ -12,7 +12,7 @@ basic preset for otplib
 | Keywords           | otplib-preset, node |
 | # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 586778 |
+| # downloads        | 1474934 |
 | # stars            | 0 |
 
 ## Links

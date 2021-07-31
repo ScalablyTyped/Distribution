@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateCertificateRequest extends StObject {
   
   /**
     * The ARN of the ACM certificate that you want to associate with your MediaConvert resource.
     */
-  var Arn: string = js.native
+  var Arn: string
 }
 object AssociateCertificateRequest {
   

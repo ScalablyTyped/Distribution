@@ -4,66 +4,64 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getClusterSnapshotMod {
   
-  @JSImport("@pulumi/aws/rds/getClusterSnapshot", "getClusterSnapshot")
+  @JSImport("@pulumi/aws/rds/getClusterSnapshot", JSImport.Namespace)
   @js.native
-  def getClusterSnapshot(): js.Promise[GetClusterSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/rds/getClusterSnapshot", "getClusterSnapshot")
-  @js.native
-  def getClusterSnapshot(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetClusterSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/rds/getClusterSnapshot", "getClusterSnapshot")
-  @js.native
-  def getClusterSnapshot(args: GetClusterSnapshotArgs): js.Promise[GetClusterSnapshotResult] = js.native
-  @JSImport("@pulumi/aws/rds/getClusterSnapshot", "getClusterSnapshot")
-  @js.native
-  def getClusterSnapshot(args: GetClusterSnapshotArgs, opts: InvokeOptions): js.Promise[GetClusterSnapshotResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getClusterSnapshot(): js.Promise[GetClusterSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClusterSnapshot")().asInstanceOf[js.Promise[GetClusterSnapshotResult]]
+  @scala.inline
+  def getClusterSnapshot(args: Unit, opts: InvokeOptions): js.Promise[GetClusterSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClusterSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterSnapshotResult]]
+  @scala.inline
+  def getClusterSnapshot(args: GetClusterSnapshotArgs): js.Promise[GetClusterSnapshotResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClusterSnapshot")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterSnapshotResult]]
+  @scala.inline
+  def getClusterSnapshot(args: GetClusterSnapshotArgs, opts: InvokeOptions): js.Promise[GetClusterSnapshotResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClusterSnapshot")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterSnapshotResult]]
+  
   trait GetClusterSnapshotArgs extends StObject {
     
     /**
       * Returns the list of snapshots created by the specific db_cluster
       */
-    val dbClusterIdentifier: js.UndefOr[String] = js.native
+    val dbClusterIdentifier: js.UndefOr[String] = js.undefined
     
     /**
       * Returns information on a specific snapshot_id.
       */
-    val dbClusterSnapshotIdentifier: js.UndefOr[String] = js.native
+    val dbClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
     
     /**
       * Set this value to true to include manual DB Cluster Snapshots that are public and can be
       * copied or restored by any AWS account, otherwise set this value to false. The default is `false`.
       */
-    val includePublic: js.UndefOr[Boolean] = js.native
+    val includePublic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set this value to true to include shared manual DB Cluster Snapshots from other
       * AWS accounts that this AWS account has been given permission to copy or restore, otherwise set this value to false.
       * The default is `false`.
       */
-    val includeShared: js.UndefOr[Boolean] = js.native
+    val includeShared: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If more than one result is returned, use the most recent Snapshot.
       */
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The type of snapshots to be returned. If you don't specify a SnapshotType
       * value, then both automated and manual DB cluster snapshots are returned. Shared and public DB Cluster Snapshots are not
       * included in the returned results by default. Possible values are, `automated`, `manual`, `shared` and `public`.
       */
-    val snapshotType: js.UndefOr[String] = js.native
+    val snapshotType: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags for the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetClusterSnapshotArgs {
     
@@ -120,95 +118,94 @@ object getClusterSnapshotMod {
     }
   }
   
-  @js.native
   trait GetClusterSnapshotResult extends StObject {
     
     /**
       * Specifies the allocated storage size in gigabytes (GB).
       */
-    val allocatedStorage: Double = js.native
+    val allocatedStorage: Double
     
     /**
       * List of EC2 Availability Zones that instances in the DB cluster snapshot can be restored in.
       */
-    val availabilityZones: js.Array[String] = js.native
+    val availabilityZones: js.Array[String]
     
     /**
       * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
       */
-    val dbClusterIdentifier: js.UndefOr[String] = js.native
+    val dbClusterIdentifier: js.UndefOr[String] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the DB Cluster Snapshot.
       */
-    val dbClusterSnapshotArn: String = js.native
+    val dbClusterSnapshotArn: String
     
-    val dbClusterSnapshotIdentifier: js.UndefOr[String] = js.native
+    val dbClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the name of the database engine.
       */
-    val engine: String = js.native
+    val engine: String
     
     /**
       * Version of the database engine for this DB cluster snapshot.
       */
-    val engineVersion: String = js.native
+    val engineVersion: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val includePublic: js.UndefOr[Boolean] = js.native
+    val includePublic: js.UndefOr[Boolean] = js.undefined
     
-    val includeShared: js.UndefOr[Boolean] = js.native
+    val includeShared: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If storageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
     /**
       * License model information for the restored DB cluster.
       */
-    val licenseModel: String = js.native
+    val licenseModel: String
     
-    val mostRecent: js.UndefOr[Boolean] = js.native
+    val mostRecent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Port that the DB cluster was listening on at the time of the snapshot.
       */
-    val port: Double = js.native
+    val port: Double
     
     /**
       * Time when the snapshot was taken, in Universal Coordinated Time (UTC).
       */
-    val snapshotCreateTime: String = js.native
+    val snapshotCreateTime: String
     
-    val snapshotType: js.UndefOr[String] = js.native
+    val snapshotType: js.UndefOr[String] = js.undefined
     
-    val sourceDbClusterSnapshotArn: String = js.native
+    val sourceDbClusterSnapshotArn: String
     
     /**
       * The status of this DB Cluster Snapshot.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * Specifies whether the DB cluster snapshot is encrypted.
       */
-    val storageEncrypted: Boolean = js.native
+    val storageEncrypted: Boolean
     
     /**
       * A map of tags for the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The VPC ID associated with the DB cluster snapshot.
       */
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetClusterSnapshotResult {
     

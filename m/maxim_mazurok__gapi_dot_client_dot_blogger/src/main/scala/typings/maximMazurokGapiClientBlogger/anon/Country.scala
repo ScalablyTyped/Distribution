@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBlogger.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Country extends StObject {
   
   /** The country this blog's locale is set to. */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The language this blog is authored in. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** The language variant this blog is authored in. */
-  var variant: js.UndefOr[String] = js.native
+  var variant: js.UndefOr[String] = js.undefined
 }
 object Country {
   

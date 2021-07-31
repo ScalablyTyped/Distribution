@@ -2,24 +2,22 @@ package typings.hlsParser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined hls-parser.hls-parser.types.BasePlaylistConstructorProperties & {  isMasterPlaylist :boolean} */
-@js.native
 trait BasePlaylistConstructorPr extends StObject {
   
-  var independentSegments: js.UndefOr[Boolean] = js.native
+  var independentSegments: js.UndefOr[Boolean] = js.undefined
   
-  var isMasterPlaylist: Boolean = js.native
+  var isMasterPlaylist: Boolean
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Offset] = js.native
+  var start: js.UndefOr[Offset] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object BasePlaylistConstructorPr {
   

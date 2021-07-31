@@ -2,24 +2,22 @@ package typings.stremioAddonSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Subtitles resource for the chosen media.
   */
-@js.native
 trait Subtitle extends StObject {
   
   /**
     * Language code for the subtitle, if a valid ISO 639-2 code is not sent, the text of this value will be used instead.
     */
-  var lang: String = js.native
+  var lang: String
   
   /**
     * Url to the subtitle file.
     */
-  var url: String = js.native
+  var url: String
 }
 object Subtitle {
   

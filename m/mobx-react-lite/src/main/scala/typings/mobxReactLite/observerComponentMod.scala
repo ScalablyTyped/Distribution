@@ -5,16 +5,15 @@ import typings.react.mod.ReactElement
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observerComponentMod {
   
   object Observer {
     
-    @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer")
-    @js.native
-    def apply(hasChildrenRender: IObserverProps): ReactElement | Null = js.native
+    @scala.inline
+    def apply(hasChildrenRender: IObserverProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(hasChildrenRender.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
     @JSImport("mobx-react-lite/dist/ObserverComponent", "Observer")
     @js.native
     val ^ : js.Any = js.native
@@ -77,12 +76,11 @@ object observerComponentMod {
     }
   }
   
-  @js.native
   trait IObserverProps extends StObject {
     
-    var children: js.UndefOr[js.Function0[ReactElement | Null]] = js.native
+    var children: js.UndefOr[js.Function0[ReactElement | Null]] = js.undefined
     
-    var render: js.UndefOr[js.Function0[ReactElement | Null]] = js.native
+    var render: js.UndefOr[js.Function0[ReactElement | Null]] = js.undefined
   }
   object IObserverProps {
     

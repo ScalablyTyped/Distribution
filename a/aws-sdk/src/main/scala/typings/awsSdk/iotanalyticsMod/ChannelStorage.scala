@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelStorage extends StObject {
   
   /**
     * Use this to store channel data in an S3 bucket that you manage. If customer managed storage is selected, the retentionPeriod parameter is ignored. You cannot change the choice of service-managed or customer-managed S3 storage after the channel is created.
     */
-  var customerManagedS3: js.UndefOr[CustomerManagedChannelS3Storage] = js.native
+  var customerManagedS3: js.UndefOr[CustomerManagedChannelS3Storage] = js.undefined
   
   /**
     * Use this to store channel data in an S3 bucket managed by AWS IoT Analytics. You cannot change the choice of service-managed or customer-managed S3 storage after the channel is created.
     */
-  var serviceManagedS3: js.UndefOr[ServiceManagedChannelS3Storage] = js.native
+  var serviceManagedS3: js.UndefOr[ServiceManagedChannelS3Storage] = js.undefined
 }
 object ChannelStorage {
   

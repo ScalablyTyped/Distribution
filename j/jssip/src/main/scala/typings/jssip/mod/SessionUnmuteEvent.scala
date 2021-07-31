@@ -2,15 +2,13 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionUnmuteEvent extends StObject {
   
-  var audio: Boolean = js.native
+  var audio: Boolean
   
-  var video: Boolean = js.native
+  var video: Boolean
 }
 object SessionUnmuteEvent {
   

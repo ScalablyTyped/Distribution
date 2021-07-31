@@ -2,10 +2,8 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cache extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait Cache extends StObject {
     *
     * Leave out this field if the information is not available.
     */
-  var afterRequest: js.UndefOr[CacheDetails | Null] = js.native
+  var afterRequest: js.UndefOr[CacheDetails | Null] = js.undefined
   
   /**
     * State of a cache entry before the request.
     *
     * Leave out this field if the information is not available.
     */
-  var beforeRequest: js.UndefOr[CacheDetails | Null] = js.native
+  var beforeRequest: js.UndefOr[CacheDetails | Null] = js.undefined
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
 }
 object Cache {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbDomainMembership extends StObject {
   
   /**
     * The identifier of the Active Directory domain.
     */
-  var Domain: js.UndefOr[NonEmptyString] = js.native
+  var Domain: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The fully qualified domain name of the Active Directory domain.
     */
-  var Fqdn: js.UndefOr[NonEmptyString] = js.native
+  var Fqdn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the IAM role to use when making API calls to the Directory Service.
     */
-  var IamRoleName: js.UndefOr[NonEmptyString] = js.native
+  var IamRoleName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the Active Directory Domain membership for the DB instance.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbDomainMembership {
   

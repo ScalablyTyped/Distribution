@@ -2,21 +2,19 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBackupPolicyRequest extends StObject {
   
   /**
     * The backup policy included in the PutBackupPolicy request.
     */
-  var BackupPolicy: typings.awsSdk.efsMod.BackupPolicy = js.native
+  var BackupPolicy: typings.awsSdk.efsMod.BackupPolicy
   
   /**
     * Specifies which EFS file system to update the backup policy for.
     */
-  var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.efsMod.FileSystemId
 }
 object PutBackupPolicyRequest {
   

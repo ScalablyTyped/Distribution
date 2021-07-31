@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ExtensionRangeOptions. */
@@ -24,18 +23,20 @@ class ExtensionRangeOptions ()
 }
 object ExtensionRangeOptions {
   
+  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ExtensionRangeOptions instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ExtensionRangeOptions instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.create")
-  @js.native
-  def create(): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.create")
-  @js.native
-  def create(properties: IExtensionRangeOptions): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
+  @scala.inline
+  def create(): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
+  @scala.inline
+  def create(properties: IExtensionRangeOptions): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
   
   /**
     * Decodes an ExtensionRangeOptions message from the specified reader or buffer.
@@ -46,18 +47,14 @@ object ExtensionRangeOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
   
   /**
     * Decodes an ExtensionRangeOptions message from the specified reader or buffer, length delimited.
@@ -67,12 +64,10 @@ object ExtensionRangeOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
   
   /**
     * Encodes the specified ExtensionRangeOptions message. Does not implicitly {@link google.protobuf.ExtensionRangeOptions.verify|verify} messages.
@@ -81,12 +76,10 @@ object ExtensionRangeOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.encode")
-  @js.native
-  def encode(message: IExtensionRangeOptions): Writer = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.encode")
-  @js.native
-  def encode(message: IExtensionRangeOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IExtensionRangeOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IExtensionRangeOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ExtensionRangeOptions message, length delimited. Does not implicitly {@link google.protobuf.ExtensionRangeOptions.verify|verify} messages.
@@ -95,12 +88,10 @@ object ExtensionRangeOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExtensionRangeOptions): Writer = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExtensionRangeOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IExtensionRangeOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IExtensionRangeOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an ExtensionRangeOptions message from a plain object. Also converts values to their respective internal types.
@@ -108,9 +99,8 @@ object ExtensionRangeOptions {
     * @returns ExtensionRangeOptions
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions]
   
   /**
     * Creates a plain object from an ExtensionRangeOptions message. Also converts values to other types if specified.
@@ -119,15 +109,13 @@ object ExtensionRangeOptions {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.toObject")
-  @js.native
-  def toObject(message: typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.googleCloudPubsub.protosMod.google.protobuf.ExtensionRangeOptions,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an ExtensionRangeOptions message.
@@ -135,7 +123,6 @@ object ExtensionRangeOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub", "protos.google.protobuf.ExtensionRangeOptions.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

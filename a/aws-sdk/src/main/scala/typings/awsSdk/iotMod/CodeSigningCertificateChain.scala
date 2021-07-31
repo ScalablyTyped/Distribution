@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeSigningCertificateChain extends StObject {
   
   /**
     * The name of the certificate.
     */
-  var certificateName: js.UndefOr[CertificateName] = js.native
+  var certificateName: js.UndefOr[CertificateName] = js.undefined
   
   /**
     * A base64 encoded binary representation of the code signing certificate chain.
     */
-  var inlineDocument: js.UndefOr[InlineDocument] = js.native
+  var inlineDocument: js.UndefOr[InlineDocument] = js.undefined
 }
 object CodeSigningCertificateChain {
   

@@ -7,25 +7,25 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to modify the data represented by a {@link XGridDataModel} */
-@js.native
-trait XMutableGridDataModel extends XGridDataModel {
+trait XMutableGridDataModel
+  extends StObject
+     with XGridDataModel {
   
   /**
     * registers listener to be notified of data changes in the model
     * @param Listener specifies the listener to register
     */
-  def addGridDataListener(Listener: XGridDataListener): Unit = js.native
+  def addGridDataListener(Listener: XGridDataListener): Unit
   
   /**
     * appends a row to the model.
     * @param Heading denotes the heading of the row.
     * @param Data specifies the content of the row.
     */
-  def addRow(Heading: js.Any, Data: SeqEquiv[_]): Unit = js.native
+  def addRow(Heading: js.Any, Data: SeqEquiv[js.Any]): Unit
   
   /**
     * appends multiple rows of data to the model.
@@ -33,7 +33,7 @@ trait XMutableGridDataModel extends XGridDataModel {
     * @param Data specifies the data of the rows to be added.
     * @throws com::sun::star::lang::IllegalArgumentException if `Titles` and `Data` are of different length.
     */
-  def addRows(Headings: SeqEquiv[_], Data: SeqEquiv[SeqEquiv[_]]): Unit = js.native
+  def addRows(Headings: SeqEquiv[js.Any], Data: SeqEquiv[SeqEquiv[js.Any]]): Unit
   
   /**
     * inserts a row into the set of data rows
@@ -42,7 +42,7 @@ trait XMutableGridDataModel extends XGridDataModel {
     * @param Data specifies the content of the row.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Index` is smaller than `0` or greater than the number of rows in the model.
     */
-  def insertRow(Index: Double, Heading: js.Any, Data: SeqEquiv[_]): Unit = js.native
+  def insertRow(Index: Double, Heading: js.Any, Data: SeqEquiv[js.Any]): Unit
   
   /**
     * inserts multiple rows of data into the model.
@@ -52,23 +52,23 @@ trait XMutableGridDataModel extends XGridDataModel {
     * @throws com::sun::star::lang::IllegalArgumentException if `Titles` and `Data` are of different length.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `Index` is smaller than `0` or greater than the number of rows in the model.
     */
-  def insertRows(Index: Double, Headings: SeqEquiv[_], Data: SeqEquiv[SeqEquiv[_]]): Unit = js.native
+  def insertRows(Index: Double, Headings: SeqEquiv[js.Any], Data: SeqEquiv[SeqEquiv[js.Any]]): Unit
   
   /** Removes all rows from the model. */
-  def removeAllRows(): Unit = js.native
+  def removeAllRows(): Unit
   
   /**
     * revokes a listener which was previously registered via {@link addGridDataListener()}
     * @param Listener specifies the listener to revoke.
     */
-  def removeGridDataListener(Listener: XGridDataListener): Unit = js.native
+  def removeGridDataListener(Listener: XGridDataListener): Unit
   
   /**
     * removes a row of data from the model
     * @param RowIndex the index of the row that should be removed.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index is invalid
     */
-  def removeRow(RowIndex: Double): Unit = js.native
+  def removeRow(RowIndex: Double): Unit
   
   /**
     * updates the content of the given cell
@@ -77,13 +77,13 @@ trait XMutableGridDataModel extends XGridDataModel {
     * @param Value the new value of the cell.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the row or column index is invalid
     */
-  def updateCellData(ColumnIndex: Double, RowIndex: Double, Value: js.Any): Unit = js.native
+  def updateCellData(ColumnIndex: Double, RowIndex: Double, Value: js.Any): Unit
   
   /**
     * updates the tooltip to be displayed for a given cell
     * @see XGridDataModel.getCellToolTip
     */
-  def updateCellToolTip(ColumnIndex: Double, RowIndex: Double, Value: js.Any): Unit = js.native
+  def updateCellToolTip(ColumnIndex: Double, RowIndex: Double, Value: js.Any): Unit
   
   /**
     * updates the content of a given row.
@@ -96,13 +96,13 @@ trait XMutableGridDataModel extends XGridDataModel {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the row indexes or the column index is invalid
     * @throws com::sun::star::lang::IllegalArgumentException if the lengths of the `ColumnIndexes` and `Values` sequences are not equal.
     */
-  def updateRowData(ColumnIndexes: SeqEquiv[Double], RowIndex: Double, Values: SeqEquiv[_]): Unit = js.native
+  def updateRowData(ColumnIndexes: SeqEquiv[Double], RowIndex: Double, Values: SeqEquiv[js.Any]): Unit
   
   /**
     * sets a new title for a given row.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not denote a valid row.
     */
-  def updateRowHeading(RowIndex: Double, Heading: js.Any): Unit = js.native
+  def updateRowHeading(RowIndex: Double, Heading: js.Any): Unit
   
   /**
     * updates the tooltip for all cells of a given row
@@ -111,7 +111,7 @@ trait XMutableGridDataModel extends XGridDataModel {
     * @see XGridDataModel.getCellToolTip
     * @see updateCellToolTip
     */
-  def updateRowToolTip(RowIndex: Double, Value: js.Any): Unit = js.native
+  def updateRowToolTip(RowIndex: Double, Value: js.Any): Unit
 }
 object XMutableGridDataModel {
   
@@ -122,16 +122,16 @@ object XMutableGridDataModel {
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     addGridDataListener: XGridDataListener => Unit,
-    addRow: (js.Any, SeqEquiv[_]) => Unit,
-    addRows: (SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit,
+    addRow: (js.Any, SeqEquiv[js.Any]) => Unit,
+    addRows: (SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit,
     createClone: () => XCloneable,
     dispose: () => Unit,
     getCellData: (Double, Double) => js.Any,
     getCellToolTip: (Double, Double) => js.Any,
-    getRowData: Double => SafeArray[_],
+    getRowData: Double => SafeArray[js.Any],
     getRowHeading: Double => js.Any,
-    insertRow: (Double, js.Any, SeqEquiv[_]) => Unit,
-    insertRows: (Double, SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit,
+    insertRow: (Double, js.Any, SeqEquiv[js.Any]) => Unit,
+    insertRows: (Double, SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeAllRows: () => Unit,
@@ -140,7 +140,7 @@ object XMutableGridDataModel {
     removeRow: Double => Unit,
     updateCellData: (Double, Double, js.Any) => Unit,
     updateCellToolTip: (Double, Double, js.Any) => Unit,
-    updateRowData: (SeqEquiv[Double], Double, SeqEquiv[_]) => Unit,
+    updateRowData: (SeqEquiv[Double], Double, SeqEquiv[js.Any]) => Unit,
     updateRowHeading: (Double, js.Any) => Unit,
     updateRowToolTip: (Double, js.Any) => Unit
   ): XMutableGridDataModel = {
@@ -155,16 +155,16 @@ object XMutableGridDataModel {
     def setAddGridDataListener(value: XGridDataListener => Unit): Self = StObject.set(x, "addGridDataListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRow(value: (js.Any, SeqEquiv[_]) => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction2(value))
+    def setAddRow(value: (js.Any, SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddRows(value: (SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit): Self = StObject.set(x, "addRows", js.Any.fromFunction2(value))
+    def setAddRows(value: (SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit): Self = StObject.set(x, "addRows", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertRow(value: (Double, js.Any, SeqEquiv[_]) => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction3(value))
+    def setInsertRow(value: (Double, js.Any, SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "insertRow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInsertRows(value: (Double, SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit): Self = StObject.set(x, "insertRows", js.Any.fromFunction3(value))
+    def setInsertRows(value: (Double, SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit): Self = StObject.set(x, "insertRows", js.Any.fromFunction3(value))
     
     @scala.inline
     def setRemoveAllRows(value: () => Unit): Self = StObject.set(x, "removeAllRows", js.Any.fromFunction0(value))
@@ -182,7 +182,7 @@ object XMutableGridDataModel {
     def setUpdateCellToolTip(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "updateCellToolTip", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateRowData(value: (SeqEquiv[Double], Double, SeqEquiv[_]) => Unit): Self = StObject.set(x, "updateRowData", js.Any.fromFunction3(value))
+    def setUpdateRowData(value: (SeqEquiv[Double], Double, SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "updateRowData", js.Any.fromFunction3(value))
     
     @scala.inline
     def setUpdateRowHeading(value: (Double, js.Any) => Unit): Self = StObject.set(x, "updateRowHeading", js.Any.fromFunction2(value))

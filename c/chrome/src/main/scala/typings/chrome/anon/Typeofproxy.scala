@@ -4,15 +4,13 @@ import typings.chrome.chrome.proxy.ProxyErrorEvent
 import typings.chrome.chrome.types.ChromeSetting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofproxy extends StObject {
   
-  var onProxyError: ProxyErrorEvent = js.native
+  var onProxyError: ProxyErrorEvent
   
-  var settings: ChromeSetting = js.native
+  var settings: ChromeSetting
 }
 object Typeofproxy {
   

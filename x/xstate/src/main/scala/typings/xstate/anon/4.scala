@@ -5,13 +5,11 @@ import typings.xstate.typesMod.EventObject
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4`[TEvent /* <: EventObject */] extends StObject {
   
-  var event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk = js.native
+  var event: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk
 }
 object `4` {
   
@@ -24,7 +22,7 @@ object `4` {
   }
   
   @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`[_], TEvent /* <: EventObject */] (val x: Self with `4`[TEvent]) extends AnyVal {
+  implicit class `4MutableBuilder`[Self <: `4`[?], TEvent /* <: EventObject */] (val x: Self & `4`[TEvent]) extends AnyVal {
     
     @scala.inline
     def setEvent(

@@ -6,7 +6,6 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,49 +15,50 @@ object mod {
     * @param options - Configuration options.
     * @returns cors middleware
     */
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("@koa/cors", JSImport.Namespace)
   @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("@koa/cors", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Middleware configration options.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * `Access-Control-Allow-Headers`
       */
-    var allowHeaders: js.UndefOr[js.Array[String] | String] = js.native
+    var allowHeaders: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * `Access-Control-Allow-Methods`, default is
       * 'GET,HEAD,PUT,POST,DELETE,PATCH'
       */
-    var allowMethods: js.UndefOr[js.Array[String] | String] = js.native
+    var allowMethods: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * `Access-Control-Allow-Credentials`
       */
-    var credentials: js.UndefOr[Boolean] = js.native
+    var credentials: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `Access-Control-Expose-Headers`
       */
-    var exposeHeaders: js.UndefOr[js.Array[String] | String] = js.native
+    var exposeHeaders: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * Add set headers to `err.header` if an error is thrown
       */
-    var keepHeadersOnError: js.UndefOr[Boolean] = js.native
+    var keepHeadersOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `Access-Control-Max-Age` in seconds
       */
-    var maxAge: js.UndefOr[Double | String] = js.native
+    var maxAge: js.UndefOr[Double | String] = js.undefined
     
     /**
       * `Access-Control-Allow-Origin`, default is request Origin header.
@@ -68,7 +68,7 @@ object mod {
       * the koa context object. It may return a string or a promise that
       * will resolve with a string.
       */
-    var origin: js.UndefOr[(js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String] = js.native
+    var origin: js.UndefOr[(js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String] = js.undefined
   }
   object Options {
     

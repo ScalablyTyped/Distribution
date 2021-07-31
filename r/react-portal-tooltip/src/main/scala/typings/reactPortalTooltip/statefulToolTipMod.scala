@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.reactPortalTooltip.toolTipMod.TooltipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statefulToolTipMod {
@@ -18,15 +17,16 @@ object statefulToolTipMod {
   
   type StatefulToolTip = Component[StatefulToolTipProps, js.Object, js.Any]
   
-  @js.native
-  trait StatefulToolTipProps extends TooltipProps {
+  trait StatefulToolTipProps
+    extends StObject
+       with TooltipProps {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object StatefulToolTipProps {
     
     @scala.inline
-    def apply(parent: String | Element | RefObject[_]): StatefulToolTipProps = {
+    def apply(parent: String | Element | RefObject[js.Any]): StatefulToolTipProps = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulToolTipProps]
     }

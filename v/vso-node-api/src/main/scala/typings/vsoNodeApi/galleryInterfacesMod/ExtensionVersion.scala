@@ -4,31 +4,29 @@ import typings.std.Date
 import typings.vsoNodeApi.anon.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionVersion extends StObject {
   
-  var assetUri: String = js.native
+  var assetUri: String
   
-  var badges: js.Array[ExtensionBadge] = js.native
+  var badges: js.Array[ExtensionBadge]
   
-  var fallbackAssetUri: String = js.native
+  var fallbackAssetUri: String
   
-  var files: js.Array[ExtensionFile] = js.native
+  var files: js.Array[ExtensionFile]
   
-  var flags: ExtensionVersionFlags = js.native
+  var flags: ExtensionVersionFlags
   
-  var lastUpdated: Date = js.native
+  var lastUpdated: Date
   
-  var properties: js.Array[KeyValue] = js.native
+  var properties: js.Array[KeyValue]
   
-  var validationResultMessage: String = js.native
+  var validationResultMessage: String
   
-  var version: String = js.native
+  var version: String
   
-  var versionDescription: String = js.native
+  var versionDescription: String
 }
 object ExtensionVersion {
   

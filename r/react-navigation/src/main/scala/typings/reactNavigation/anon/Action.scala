@@ -4,19 +4,17 @@ import typings.reactNavigation.mod.NavigationNavigateAction
 import typings.reactNavigation.mod.NavigationParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action[T /* <: NavigationParams */] extends StObject {
   
-  var action: js.UndefOr[NavigationNavigateAction] = js.native
+  var action: js.UndefOr[NavigationNavigateAction] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[T] = js.native
+  var params: js.UndefOr[T] = js.undefined
   
-  var routeName: String = js.native
+  var routeName: String
 }
 object Action {
   
@@ -27,7 +25,7 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action[_], T /* <: NavigationParams */] (val x: Self with Action[T]) extends AnyVal {
+  implicit class ActionMutableBuilder[Self <: Action[?], T /* <: NavigationParams */] (val x: Self & Action[T]) extends AnyVal {
     
     @scala.inline
     def setAction(value: NavigationNavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])

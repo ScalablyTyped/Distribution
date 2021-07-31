@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopEntitiesDetectionV2JobResponse extends StObject {
   
   /**
     * The identifier of the medical entities detection job that was stopped.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendmedicalMod.JobId] = js.undefined
 }
 object StopEntitiesDetectionV2JobResponse {
   

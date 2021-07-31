@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAddressBookRequest extends StObject {
   
   /**
     * The ARN of the address book to delete.
     */
-  var AddressBookArn: Arn = js.native
+  var AddressBookArn: Arn
 }
 object DeleteAddressBookRequest {
   

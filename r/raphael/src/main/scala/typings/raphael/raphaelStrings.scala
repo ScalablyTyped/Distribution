@@ -10,48 +10,63 @@ import typings.raphael.mod.RaphaelTechnology
 import typings.raphael.mod.RaphaelTextAnchorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object raphaelStrings {
   
   @js.native
-  sealed trait `- ` extends RaphaelDashArrayType
+  sealed trait `- `
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `- `: `- ` = ("- ").asInstanceOf[`- `]
   
   @js.native
-  sealed trait `- Dot` extends RaphaelDashArrayType
+  sealed trait `- Dot`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `- Dot`: `- Dot` = ("- .").asInstanceOf[`- Dot`]
   
   @js.native
-  sealed trait `--` extends RaphaelDashArrayType
+  sealed trait `--`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `--`: `--` = "--".asInstanceOf[`--`]
   
   @js.native
-  sealed trait `--Dot` extends RaphaelDashArrayType
+  sealed trait `--Dot`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `--Dot`: `--Dot` = "--.".asInstanceOf[`--Dot`]
   
   @js.native
-  sealed trait `--DotDot` extends RaphaelDashArrayType
+  sealed trait `--DotDot`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `--DotDot`: `--DotDot` = "--..".asInstanceOf[`--DotDot`]
   
   @js.native
-  sealed trait `-Dot` extends RaphaelDashArrayType
+  sealed trait `-Dot`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `-Dot`: `-Dot` = "-.".asInstanceOf[`-Dot`]
   
   @js.native
-  sealed trait `-DotDot` extends RaphaelDashArrayType
+  sealed trait `-DotDot`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `-DotDot`: `-DotDot` = "-..".asInstanceOf[`-DotDot`]
   
   @js.native
-  sealed trait `-_` extends RaphaelDashArrayType
+  sealed trait `-_`
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
@@ -66,17 +81,23 @@ object raphaelStrings {
   def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait Dot extends RaphaelDashArrayType
+  sealed trait Dot
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
-  sealed trait `Dot ` extends RaphaelDashArrayType
+  sealed trait `Dot `
+    extends StObject
+       with RaphaelDashArrayType
   @scala.inline
   def `Dot `: `Dot ` = (". ").asInstanceOf[`Dot `]
   
   @js.native
-  sealed trait Greaterthansign extends RaphaelBuiltinEasingFormula
+  sealed trait Greaterthansign
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
@@ -91,12 +112,16 @@ object raphaelStrings {
   def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait Lessthansign extends RaphaelBuiltinEasingFormula
+  sealed trait Lessthansign
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignGreaterthansign extends RaphaelBuiltinEasingFormula
+  sealed trait LessthansignGreaterthansign
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
   
@@ -131,7 +156,9 @@ object raphaelStrings {
   def S: S = "S".asInstanceOf[S]
   
   @js.native
-  sealed trait SVG extends RaphaelTechnology
+  sealed trait SVG
+    extends StObject
+       with RaphaelTechnology
   @scala.inline
   def SVG: SVG = "SVG".asInstanceOf[SVG]
   
@@ -146,7 +173,9 @@ object raphaelStrings {
   def V: V = "V".asInstanceOf[V]
   
   @js.native
-  sealed trait VML extends RaphaelTechnology
+  sealed trait VML
+    extends StObject
+       with RaphaelTechnology
   @scala.inline
   def VML: VML = "VML".asInstanceOf[VML]
   
@@ -157,7 +186,8 @@ object raphaelStrings {
   
   @js.native
   sealed trait _empty
-    extends RaphaelDashArrayType
+    extends StObject
+       with RaphaelDashArrayType
        with RaphaelTechnology
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
@@ -178,32 +208,44 @@ object raphaelStrings {
   def `arrow-end`: `arrow-end` = "arrow-end".asInstanceOf[`arrow-end`]
   
   @js.native
-  sealed trait `back-in` extends RaphaelBuiltinEasingFormula
+  sealed trait `back-in`
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def `back-in`: `back-in` = "back-in".asInstanceOf[`back-in`]
   
   @js.native
-  sealed trait `back-out` extends RaphaelBuiltinEasingFormula
+  sealed trait `back-out`
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def `back-out`: `back-out` = "back-out".asInstanceOf[`back-out`]
   
   @js.native
-  sealed trait backIn extends RaphaelBuiltinEasingFormula
+  sealed trait backIn
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def backIn: backIn = "backIn".asInstanceOf[backIn]
   
   @js.native
-  sealed trait backOut extends RaphaelBuiltinEasingFormula
+  sealed trait backOut
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def backOut: backOut = "backOut".asInstanceOf[backOut]
   
   @js.native
-  sealed trait baseline extends RaphaelFontOrigin
+  sealed trait baseline
+    extends StObject
+       with RaphaelFontOrigin
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait bevel extends RaphaelLineJoinType
+  sealed trait bevel
+    extends StObject
+       with RaphaelLineJoinType
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
@@ -213,12 +255,16 @@ object raphaelStrings {
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait bounce extends RaphaelBuiltinEasingFormula
+  sealed trait bounce
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   
   @js.native
-  sealed trait butt extends RaphaelLineCapType
+  sealed trait butt
+    extends StObject
+       with RaphaelLineCapType
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
@@ -228,7 +274,9 @@ object raphaelStrings {
   def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
-  sealed trait circle extends RaphaelShapeType
+  sealed trait circle
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
@@ -253,47 +301,65 @@ object raphaelStrings {
   def cy: cy = "cy".asInstanceOf[cy]
   
   @js.native
-  sealed trait `ease-in` extends RaphaelBuiltinEasingFormula
+  sealed trait `ease-in`
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
   
   @js.native
-  sealed trait `ease-in-out` extends RaphaelBuiltinEasingFormula
+  sealed trait `ease-in-out`
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
   
   @js.native
-  sealed trait `ease-out` extends RaphaelBuiltinEasingFormula
+  sealed trait `ease-out`
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
   
   @js.native
-  sealed trait easeIn extends RaphaelBuiltinEasingFormula
+  sealed trait easeIn
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
   
   @js.native
-  sealed trait easeInOut extends RaphaelBuiltinEasingFormula
+  sealed trait easeInOut
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
   
   @js.native
-  sealed trait easeOut extends RaphaelBuiltinEasingFormula
+  sealed trait easeOut
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   
   @js.native
-  sealed trait elastic extends RaphaelBuiltinEasingFormula
+  sealed trait elastic
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def elastic: elastic = "elastic".asInstanceOf[elastic]
   
   @js.native
-  sealed trait ellipse extends RaphaelShapeType
+  sealed trait ellipse
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
-  sealed trait end extends RaphaelTextAnchorType
+  sealed trait end
+    extends StObject
+       with RaphaelTextAnchorType
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
@@ -348,7 +414,9 @@ object raphaelStrings {
   def href: href = "href".asInstanceOf[href]
   
   @js.native
-  sealed trait image extends RaphaelShapeType
+  sealed trait image
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
@@ -358,7 +426,9 @@ object raphaelStrings {
   def l_ : l_ = "l".asInstanceOf[l_]
   
   @js.native
-  sealed trait linear extends RaphaelBuiltinEasingFormula
+  sealed trait linear
+    extends StObject
+       with RaphaelBuiltinEasingFormula
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   
@@ -369,13 +439,16 @@ object raphaelStrings {
   
   @js.native
   sealed trait middle
-    extends RaphaelFontOrigin
+    extends StObject
+       with RaphaelFontOrigin
        with RaphaelTextAnchorType
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait miter extends RaphaelLineJoinType
+  sealed trait miter
+    extends StObject
+       with RaphaelLineJoinType
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
@@ -400,7 +473,9 @@ object raphaelStrings {
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   
   @js.native
-  sealed trait path extends RaphaelShapeType
+  sealed trait path
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   
@@ -415,13 +490,16 @@ object raphaelStrings {
   def r_ : r_ = "r".asInstanceOf[r_]
   
   @js.native
-  sealed trait rect extends RaphaelShapeType
+  sealed trait rect
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
   sealed trait round
-    extends RaphaelLineCapType
+    extends StObject
+       with RaphaelLineCapType
        with RaphaelLineJoinType
   @scala.inline
   def round: round = "round".asInstanceOf[round]
@@ -442,12 +520,16 @@ object raphaelStrings {
   def s_ : s_ = "s".asInstanceOf[s_]
   
   @js.native
-  sealed trait set extends RaphaelShapeType
+  sealed trait set
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait square extends RaphaelLineCapType
+  sealed trait square
+    extends StObject
+       with RaphaelLineCapType
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
@@ -457,7 +539,9 @@ object raphaelStrings {
   def src: src = "src".asInstanceOf[src]
   
   @js.native
-  sealed trait start extends RaphaelTextAnchorType
+  sealed trait start
+    extends StObject
+       with RaphaelTextAnchorType
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
@@ -517,7 +601,9 @@ object raphaelStrings {
   def target: target = "target".asInstanceOf[target]
   
   @js.native
-  sealed trait text extends RaphaelShapeType
+  sealed trait text
+    extends StObject
+       with RaphaelShapeType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   

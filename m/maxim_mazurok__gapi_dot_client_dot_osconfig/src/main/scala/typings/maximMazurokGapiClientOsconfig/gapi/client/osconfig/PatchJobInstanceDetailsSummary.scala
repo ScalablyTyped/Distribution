@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchJobInstanceDetailsSummary extends StObject {
   
   /** Number of instances that have acked and will start shortly. */
-  var ackedInstanceCount: js.UndefOr[String] = js.native
+  var ackedInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that are applying patches. */
-  var applyingPatchesInstanceCount: js.UndefOr[String] = js.native
+  var applyingPatchesInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that are downloading patches. */
-  var downloadingPatchesInstanceCount: js.UndefOr[String] = js.native
+  var downloadingPatchesInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that failed. */
-  var failedInstanceCount: js.UndefOr[String] = js.native
+  var failedInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that are inactive. */
-  var inactiveInstanceCount: js.UndefOr[String] = js.native
+  var inactiveInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that do not appear to be running the agent. Check to ensure that the agent is installed, running, and able to communicate with the service. */
-  var noAgentDetectedInstanceCount: js.UndefOr[String] = js.native
+  var noAgentDetectedInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances notified about patch job. */
-  var notifiedInstanceCount: js.UndefOr[String] = js.native
+  var notifiedInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances pending patch job. */
-  var pendingInstanceCount: js.UndefOr[String] = js.native
+  var pendingInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that are running the post-patch step. */
-  var postPatchStepInstanceCount: js.UndefOr[String] = js.native
+  var postPatchStepInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that are running the pre-patch step. */
-  var prePatchStepInstanceCount: js.UndefOr[String] = js.native
+  var prePatchStepInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances rebooting. */
-  var rebootingInstanceCount: js.UndefOr[String] = js.native
+  var rebootingInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that have started. */
-  var startedInstanceCount: js.UndefOr[String] = js.native
+  var startedInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that have completed successfully. */
-  var succeededInstanceCount: js.UndefOr[String] = js.native
+  var succeededInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that require reboot. */
-  var succeededRebootRequiredInstanceCount: js.UndefOr[String] = js.native
+  var succeededRebootRequiredInstanceCount: js.UndefOr[String] = js.undefined
   
   /** Number of instances that exceeded the time out while applying the patch. */
-  var timedOutInstanceCount: js.UndefOr[String] = js.native
+  var timedOutInstanceCount: js.UndefOr[String] = js.undefined
 }
 object PatchJobInstanceDetailsSummary {
   

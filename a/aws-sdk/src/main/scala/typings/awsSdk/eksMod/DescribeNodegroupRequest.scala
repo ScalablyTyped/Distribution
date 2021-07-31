@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNodegroupRequest extends StObject {
   
   /**
     * The name of the Amazon EKS cluster associated with the node group.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * The name of the node group to describe.
     */
-  var nodegroupName: String = js.native
+  var nodegroupName: String
 }
 object DescribeNodegroupRequest {
   

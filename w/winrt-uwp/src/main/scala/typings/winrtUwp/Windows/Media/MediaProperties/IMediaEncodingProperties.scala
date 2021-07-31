@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the format of a media stream or media container. */
-@js.native
 trait IMediaEncodingProperties extends StObject {
   
   /** Gets additional format properties. */
-  var properties: MediaPropertySet = js.native
+  var properties: MediaPropertySet
   
   /** Gets or sets the subtype of the format. */
-  var subtype: String = js.native
+  var subtype: String
   
   /** Gets the format type. */
-  var `type`: String = js.native
+  var `type`: String
 }
 object IMediaEncodingProperties {
   

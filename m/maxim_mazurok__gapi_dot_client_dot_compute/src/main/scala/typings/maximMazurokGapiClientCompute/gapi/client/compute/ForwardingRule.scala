@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardingRule extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait ForwardingRule extends StObject {
     *
     * For Private Service Connect forwarding rules that forward traffic to Google APIs, IP address must be provided.
     */
-  var IPAddress: js.UndefOr[String] = js.native
+  var IPAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The IP protocol to which this rule applies. For protocol forwarding, valid options are TCP, UDP, ESP, AH, SCTP or ICMP.
@@ -34,7 +32,7 @@ trait ForwardingRule extends StObject {
     * TCP Proxy Load Balancing, the load balancing scheme is EXTERNAL and only TCP is valid. For Network TCP/UDP Load Balancing, the load balancing scheme is EXTERNAL, and one of TCP or
     * UDP is valid.
     */
-  var IPProtocol: js.UndefOr[String] = js.native
+  var IPProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * This field is used along with the backend_service field for internal load balancing or with the target field for internal TargetInstance. This field cannot be used with port or
@@ -43,26 +41,26 @@ trait ForwardingRule extends StObject {
     * When the load balancing scheme is INTERNAL and protocol is TCP/UDP, specify this field to allow packets addressed to any ports will be forwarded to the backends configured with this
     * forwarding rule.
     */
-  var allPorts: js.UndefOr[Boolean] = js.native
+  var allPorts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is used along with the backend_service field for internal load balancing or with the target field for internal TargetInstance. If the field is set to TRUE, clients can
     * access ILB from all regions. Otherwise only allows access from clients in the same region as the internal load balancer.
     */
-  var allowGlobalAccess: js.UndefOr[Boolean] = js.native
+  var allowGlobalAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is only used for INTERNAL load balancing.
     *
     * For internal load balancing, this field identifies the BackendService resource to receive the matched traffic.
     */
-  var backendService: js.UndefOr[String] = js.native
+  var backendService: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a ForwardingRule.
@@ -70,22 +68,22 @@ trait ForwardingRule extends StObject {
     *
     * To see the latest fingerprint, make a get() request to retrieve a ForwardingRule.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The IP Version that will be used by this forwarding rule. Valid options are IPV4 or IPV6. This can only be specified for an external global forwarding rule. */
-  var ipVersion: js.UndefOr[String] = js.native
+  var ipVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether or not this load balancer can be used as a collector for packet mirroring. To prevent mirroring loops, instances behind this load balancer will not have their
     * traffic mirrored even if a PacketMirroring rule applies to them. This can only be set to true for load balancers that have their loadBalancingScheme set to INTERNAL.
     */
-  var isMirroringCollector: js.UndefOr[Boolean] = js.native
+  var isMirroringCollector: js.UndefOr[Boolean] = js.undefined
   
   /** [Output Only] Type of the resource. Always compute#forwardingRule for Forwarding Rule resources. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the forwarding rule type.
@@ -105,7 +103,7 @@ trait ForwardingRule extends StObject {
     *
     * For more information about forwarding rules, refer to Forwarding rule concepts.
     */
-  var loadBalancingScheme: js.UndefOr[String] = js.native
+  var loadBalancingScheme: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque filter criteria used by Loadbalancer to restrict routing configuration to a limited set of xDS compliant clients. In their xDS requests to Loadbalancer, xDS clients present
@@ -117,14 +115,14 @@ trait ForwardingRule extends StObject {
     * metadataFilters specified here will be applifed before those specified in the UrlMap that this ForwardingRule references.
     * metadataFilters only applies to Loadbalancers that have their loadBalancingScheme set to INTERNAL_SELF_MANAGED.
     */
-  var metadataFilters: js.UndefOr[js.Array[MetadataFilter]] = js.native
+  var metadataFilters: js.UndefOr[js.Array[MetadataFilter]] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63
     * characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a
     * dash, lowercase letter, or digit, except the last character, which cannot be a dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * This field is not used for external load balancing.
@@ -134,7 +132,7 @@ trait ForwardingRule extends StObject {
     *
     * For Private Service Connect forwarding rules that forward traffic to Google APIs, a network must be provided.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * This signifies the networking tier used for configuring this load balancer and can only take the following values: PREMIUM, STANDARD.
@@ -143,7 +141,7 @@ trait ForwardingRule extends StObject {
     *
     * If this field is not specified, it is assumed to be PREMIUM. If IPAddress is specified, this value must be equal to the networkTier of the Address.
     */
-  var networkTier: js.UndefOr[String] = js.native
+  var networkTier: js.UndefOr[String] = js.undefined
   
   /**
     * When the load balancing scheme is EXTERNAL, INTERNAL_SELF_MANAGED and INTERNAL_MANAGED, you can specify a port_range. Use with a forwarding rule that points to a target proxy or a
@@ -161,7 +159,7 @@ trait ForwardingRule extends StObject {
     * - TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995, 1688, 1883, 5222
     * - TargetVpnGateway: 500, 4500
     */
-  var portRange: js.UndefOr[String] = js.native
+  var portRange: js.UndefOr[String] = js.undefined
   
   /**
     * This field is used along with the backend_service field for internal load balancing.
@@ -173,16 +171,16 @@ trait ForwardingRule extends StObject {
     *
     * * A list of up to five ports, which can be non-contiguous * Keyword ALL, which causes the forwarding rule to forward traffic on any port of the forwarding rule's protocol.
     */
-  var ports: js.UndefOr[js.Array[String]] = js.native
+  var ports: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional forwarding rule resides. This field is not applicable to global forwarding rules. You must specify this field as part of the HTTP
     * request URL. It is not settable as a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for the resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * An optional prefix to the service name for this Forwarding Rule. If specified, the prefix is the first label of the fully qualified service name.
@@ -193,14 +191,14 @@ trait ForwardingRule extends StObject {
     *
     * This field is only used for internal load balancing.
     */
-  var serviceLabel: js.UndefOr[String] = js.native
+  var serviceLabel: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The internal fully qualified service name for this Forwarding Rule.
     *
     * This field is only used for internal load balancing.
     */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
   /**
     * This field is only used for internal load balancing.
@@ -209,7 +207,7 @@ trait ForwardingRule extends StObject {
     *
     * If the network specified is in auto subnet mode, this field is optional. However, if the network is in custom subnet mode, a subnetwork must be specified.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the target resource to receive the matched traffic. For regional forwarding rules, this target must be in the same region as the forwarding rule. For global forwarding
@@ -223,7 +221,7 @@ trait ForwardingRule extends StObject {
     * - vpc-sc - GCP APIs that support VPC Service Controls. For more information about which APIs support VPC Service Controls, refer to VPC-SC supported products and limitations.
     * - all-apis - All GCP APIs. For more information about which APIs are supported with this bundle, refer to Private Google Access-specific domains and VIPs.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object ForwardingRule {
   

@@ -2,29 +2,27 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redshift {
   
-  @js.native
   trait ClusterLogging extends StObject {
     
     /**
       * The name of an existing S3 bucket where the log files are to be stored. Must be in the same region as the cluster and the cluster must have read bucket and put object permissions.
       * For more information on the permissions required for the bucket, please read the AWS [documentation](http://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html#db-auditing-enable-logging)
       */
-    var bucketName: String = js.native
+    var bucketName: String
     
     /**
       * Enables logging information such as queries and connection attempts, for the specified Amazon Redshift cluster.
       */
-    var enable: Boolean = js.native
+    var enable: Boolean
     
     /**
       * The prefix applied to the log file names.
       */
-    var s3KeyPrefix: String = js.native
+    var s3KeyPrefix: String
   }
   object ClusterLogging {
     
@@ -48,23 +46,22 @@ object redshift {
     }
   }
   
-  @js.native
   trait ClusterSnapshotCopy extends StObject {
     
     /**
       * The destination region that you want to copy snapshots to.
       */
-    var destinationRegion: String = js.native
+    var destinationRegion: String
     
     /**
       * The name of the snapshot copy grant to use when snapshots of an AWS KMS-encrypted cluster are copied to the destination region.
       */
-    var grantName: js.UndefOr[String] = js.native
+    var grantName: js.UndefOr[String] = js.undefined
     
     /**
       * The number of days to retain automated snapshots in the destination region after they are copied from the source region. Defaults to `7`.
       */
-    var retentionPeriod: js.UndefOr[Double] = js.native
+    var retentionPeriod: js.UndefOr[Double] = js.undefined
   }
   object ClusterSnapshotCopy {
     
@@ -94,18 +91,17 @@ object redshift {
     }
   }
   
-  @js.native
   trait ParameterGroupParameter extends StObject {
     
     /**
       * The name of the Redshift parameter.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value of the Redshift parameter.
       */
-    var value: String = js.native
+    var value: String
   }
   object ParameterGroupParameter {
     
@@ -126,24 +122,23 @@ object redshift {
     }
   }
   
-  @js.native
   trait SecurityGroupIngress extends StObject {
     
     /**
       * The CIDR block to accept
       */
-    var cidr: js.UndefOr[String] = js.native
+    var cidr: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the security group to authorize
       */
-    var securityGroupName: String = js.native
+    var securityGroupName: String
     
     /**
       * The owner Id of the security group provided
       * by `securityGroupName`.
       */
-    var securityGroupOwnerId: String = js.native
+    var securityGroupOwnerId: String
   }
   object SecurityGroupIngress {
     

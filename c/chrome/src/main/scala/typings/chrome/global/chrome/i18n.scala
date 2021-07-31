@@ -3,7 +3,6 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.i18n.LanguageDetectionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,22 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object i18n {
   
-  @JSGlobal("chrome.i18n.detectLanguage")
+  @JSGlobal("chrome.i18n")
   @js.native
-  def detectLanguage(text: String, callback: js.Function1[/* result */ LanguageDetectionResult, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.i18n.getAcceptLanguages")
-  @js.native
-  def getAcceptLanguages(callback: js.Function1[/* languages */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def detectLanguage(text: String, callback: js.Function1[/* result */ LanguageDetectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectLanguage")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.i18n.getMessage")
-  @js.native
-  def getMessage(messageName: String): String = js.native
-  @JSGlobal("chrome.i18n.getMessage")
-  @js.native
-  def getMessage(messageName: String, substitutions: js.Any): String = js.native
+  @scala.inline
+  def getAcceptLanguages(callback: js.Function1[/* languages */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptLanguages")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.i18n.getUILanguage")
-  @js.native
-  def getUILanguage(): String = js.native
+  @scala.inline
+  def getMessage(messageName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getMessage(messageName: String, substitutions: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageName.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getUILanguage(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUILanguage")().asInstanceOf[String]
 }

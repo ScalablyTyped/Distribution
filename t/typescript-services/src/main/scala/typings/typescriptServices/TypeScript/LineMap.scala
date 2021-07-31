@@ -3,35 +3,33 @@ package typings.typescriptServices.TypeScript
 import typings.typescriptServices.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineMap extends StObject {
   
-  var _computeLineStarts: js.Any = js.native
+  var _computeLineStarts: js.Any
   
-  var _lineStarts: js.Any = js.native
+  var _lineStarts: js.Any
   
-  def equals(other: LineMap): Boolean = js.native
+  def equals(other: LineMap): Boolean
   
-  def fillLineAndCharacterFromPosition(position: Double, lineAndCharacter: ILineAndCharacter): Unit = js.native
+  def fillLineAndCharacterFromPosition(position: Double, lineAndCharacter: ILineAndCharacter): Unit
   
-  def getLineAndCharacterFromPosition(position: Double): LineAndCharacter = js.native
+  def getLineAndCharacterFromPosition(position: Double): LineAndCharacter
   
-  def getLineNumberFromPosition(position: Double): Double = js.native
+  def getLineNumberFromPosition(position: Double): Double
   
-  def getLineStartPosition(lineNumber: Double): Double = js.native
+  def getLineStartPosition(lineNumber: Double): Double
   
-  def getPosition(line: Double, character: Double): Double = js.native
+  def getPosition(line: Double, character: Double): Double
   
-  var length: js.Any = js.native
+  var length: js.Any
   
-  def lineCount(): Double = js.native
+  def lineCount(): Double
   
-  def lineStarts(): js.Array[Double] = js.native
+  def lineStarts(): js.Array[Double]
   
-  def toJSON(key: js.Any): Length = js.native
+  def toJSON(key: js.Any): Length
 }
 object LineMap {
   

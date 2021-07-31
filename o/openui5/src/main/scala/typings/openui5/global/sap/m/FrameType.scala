@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FrameType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.FrameType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.FrameType & Double] = js.native
   
-  /* 0 */ val Auto: typings.openui5.sap.m.FrameType.Auto with Double = js.native
+  /* 0 */ val Auto: typings.openui5.sap.m.FrameType.Auto & Double = js.native
   
-  /* 1 */ val OneByOne: typings.openui5.sap.m.FrameType.OneByOne with Double = js.native
+  /* 1 */ val OneByOne: typings.openui5.sap.m.FrameType.OneByOne & Double = js.native
   
-  /* 2 */ val TwoByOne: typings.openui5.sap.m.FrameType.TwoByOne with Double = js.native
+  /* 2 */ val TwoByOne: typings.openui5.sap.m.FrameType.TwoByOne & Double = js.native
   
-  /* 3 */ val TwoThirds: typings.openui5.sap.m.FrameType.TwoThirds with Double = js.native
+  /* 3 */ val TwoThirds: typings.openui5.sap.m.FrameType.TwoThirds & Double = js.native
 }

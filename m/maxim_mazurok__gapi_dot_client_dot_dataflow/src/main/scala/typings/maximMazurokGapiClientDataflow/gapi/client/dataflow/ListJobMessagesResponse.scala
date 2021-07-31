@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobMessagesResponse extends StObject {
   
   /** Autoscaling events in ascending timestamp order. */
-  var autoscalingEvents: js.UndefOr[js.Array[AutoscalingEvent]] = js.native
+  var autoscalingEvents: js.UndefOr[js.Array[AutoscalingEvent]] = js.undefined
   
   /** Messages in ascending timestamp order. */
-  var jobMessages: js.UndefOr[js.Array[JobMessage]] = js.native
+  var jobMessages: js.UndefOr[js.Array[JobMessage]] = js.undefined
   
   /** The token to obtain the next page of results if there are more. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListJobMessagesResponse {
   

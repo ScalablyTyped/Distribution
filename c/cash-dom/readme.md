@@ -10,9 +10,9 @@ An absurdly small jQuery alternative for modern browsers.
 | ------------------ | :-------------: |
 | Full name          | cash-dom |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 36 |
-| # downloads        | 729014 |
+| # releases         | 22 |
+| # dependents       | 52 |
+| # downloads        | 1167290 |
 | # stars            | 2 |
 
 ## Links

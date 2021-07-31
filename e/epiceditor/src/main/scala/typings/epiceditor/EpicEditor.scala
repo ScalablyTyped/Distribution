@@ -2,7 +2,6 @@ package typings.epiceditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,9 +16,9 @@ trait EpicEditor extends StObject {
   def exitFullscreen(): Unit = js.native
   
   def exportFile(): js.Any = js.native
-  def exportFile(filename: js.UndefOr[scala.Nothing], `type`: String): js.Any = js.native
   def exportFile(filename: String): js.Any = js.native
   def exportFile(filename: String, `type`: String): js.Any = js.native
+  def exportFile(filename: Unit, `type`: String): js.Any = js.native
   
   def getElement(element: String): js.Any = js.native
   
@@ -27,9 +26,9 @@ trait EpicEditor extends StObject {
   def getFiles(filename: String): js.Any = js.native
   
   def importFile(): Unit = js.native
-  def importFile(filename: js.UndefOr[scala.Nothing], content: String): Unit = js.native
   def importFile(filename: String): Unit = js.native
   def importFile(filename: String, content: String): Unit = js.native
+  def importFile(filename: Unit, content: String): Unit = js.native
   
   def is(state: String): Boolean = js.native
   

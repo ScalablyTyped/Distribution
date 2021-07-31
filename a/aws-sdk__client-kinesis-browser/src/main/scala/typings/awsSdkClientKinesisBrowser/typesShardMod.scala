@@ -6,38 +6,36 @@ import typings.awsSdkClientKinesisBrowser.typesSequenceNumberRangeMod.SequenceNu
 import typings.awsSdkClientKinesisBrowser.typesSequenceNumberRangeMod.UnmarshalledSequenceNumberRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesShardMod {
   
-  @js.native
   trait Shard extends StObject {
     
     /**
       * <p>The shard ID of the shard adjacent to the shard's parent.</p>
       */
-    var AdjacentParentShardId: js.UndefOr[String] = js.native
+    var AdjacentParentShardId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The range of possible hash key values for the shard, which is a set of ordered contiguous positive integers.</p>
       */
-    var HashKeyRange: typings.awsSdkClientKinesisBrowser.typesHashKeyRangeMod.HashKeyRange = js.native
+    var HashKeyRange: typings.awsSdkClientKinesisBrowser.typesHashKeyRangeMod.HashKeyRange
     
     /**
       * <p>The shard ID of the shard's parent.</p>
       */
-    var ParentShardId: js.UndefOr[String] = js.native
+    var ParentShardId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The range of possible sequence numbers for the shard.</p>
       */
-    var SequenceNumberRange: typings.awsSdkClientKinesisBrowser.typesSequenceNumberRangeMod.SequenceNumberRange = js.native
+    var SequenceNumberRange: typings.awsSdkClientKinesisBrowser.typesSequenceNumberRangeMod.SequenceNumberRange
     
     /**
       * <p>The unique identifier of the shard within the stream.</p>
       */
-    var ShardId: String = js.native
+    var ShardId: String
   }
   object Shard {
     
@@ -73,20 +71,21 @@ object typesShardMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledShard extends Shard {
+  trait UnmarshalledShard
+    extends StObject
+       with Shard {
     
     /**
       * <p>The range of possible hash key values for the shard, which is a set of ordered contiguous positive integers.</p>
       */
     @JSName("HashKeyRange")
-    var HashKeyRange_UnmarshalledShard: UnmarshalledHashKeyRange = js.native
+    var HashKeyRange_UnmarshalledShard: UnmarshalledHashKeyRange
     
     /**
       * <p>The range of possible sequence numbers for the shard.</p>
       */
     @JSName("SequenceNumberRange")
-    var SequenceNumberRange_UnmarshalledShard: UnmarshalledSequenceNumberRange = js.native
+    var SequenceNumberRange_UnmarshalledShard: UnmarshalledSequenceNumberRange
   }
   object UnmarshalledShard {
     

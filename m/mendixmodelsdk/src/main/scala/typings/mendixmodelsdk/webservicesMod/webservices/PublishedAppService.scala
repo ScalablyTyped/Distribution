@@ -6,7 +6,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,9 +46,8 @@ object PublishedAppService {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService.createIn")
-  @js.native
-  def createIn(container: IFolderBase): PublishedAppService = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): PublishedAppService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PublishedAppService]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedAppService.structureTypeName")

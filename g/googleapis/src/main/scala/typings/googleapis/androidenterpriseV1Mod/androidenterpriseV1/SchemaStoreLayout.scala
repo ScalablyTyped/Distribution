@@ -2,14 +2,12 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * General setting for the managed Google Play store layout, currently only
   * specifying the page to display the first time the store is opened.
   */
-@js.native
 trait SchemaStoreLayout extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaStoreLayout extends StObject {
     * homepage is equivalent to setting the store layout type to
     * &quot;basic&quot;.
     */
-  var homepageId: js.UndefOr[String] = js.native
+  var homepageId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#storeLayout&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The store layout type. By default, this value is set to &quot;basic&quot;
@@ -32,7 +30,7 @@ trait SchemaStoreLayout extends StObject {
     * If set to &quot;basic&quot;, the layout will consist of all approved apps
     * that have been whitelisted for the user.
     */
-  var storeLayoutType: js.UndefOr[String] = js.native
+  var storeLayoutType: js.UndefOr[String] = js.undefined
 }
 object SchemaStoreLayout {
   

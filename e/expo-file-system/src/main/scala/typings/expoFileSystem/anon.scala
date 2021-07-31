@@ -10,31 +10,31 @@ import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadType.MULTIPART
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Exists extends FileInfo {
+  trait Exists
+    extends StObject
+       with FileInfo {
     
-    var exists: `true` = js.native
+    var exists: `true`
     
-    var isDirectory: Boolean = js.native
+    var isDirectory: Boolean
     
-    var md5: js.UndefOr[String] = js.native
+    var md5: js.UndefOr[String] = js.undefined
     
-    var modificationTime: Double = js.native
+    var modificationTime: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var uri: String = js.native
+    var uri: String
   }
   object Exists {
     
     @scala.inline
-    def apply(exists: `true`, isDirectory: Boolean, modificationTime: Double, size: Double, uri: String): Exists = {
-      val __obj = js.Dynamic.literal(exists = exists.asInstanceOf[js.Any], isDirectory = isDirectory.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    def apply(isDirectory: Boolean, modificationTime: Double, size: Double, uri: String): Exists = {
+      val __obj = js.Dynamic.literal(exists = true, isDirectory = isDirectory.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exists]
     }
     
@@ -64,16 +64,15 @@ object anon {
     }
   }
   
-  @js.native
   trait FieldName extends StObject {
     
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
-    var mimeType: js.UndefOr[String] = js.native
+    var mimeType: js.UndefOr[String] = js.undefined
     
-    var parameters: js.UndefOr[Record[String, String]] = js.native
+    var parameters: js.UndefOr[Record[String, String]] = js.undefined
     
-    var uploadType: MULTIPART = js.native
+    var uploadType: MULTIPART
   }
   object FieldName {
     
@@ -109,12 +108,11 @@ object anon {
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var to: String = js.native
+    var to: String
   }
   object From {
     
@@ -135,14 +133,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: js.UndefOr[Record[String, String]] = js.native
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
-    var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.native
+    var httpMethod: js.UndefOr[FileSystemAcceptedUploadHttpMethod] = js.undefined
     
-    var sessionType: js.UndefOr[FileSystemSessionType] = js.native
+    var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
   }
   object Headers {
     
@@ -175,10 +172,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Idempotent extends StObject {
     
-    var idempotent: js.UndefOr[Boolean] = js.native
+    var idempotent: js.UndefOr[Boolean] = js.undefined
   }
   object Idempotent {
     
@@ -199,10 +195,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Intermediates extends StObject {
     
-    var intermediates: js.UndefOr[Boolean] = js.native
+    var intermediates: js.UndefOr[Boolean] = js.undefined
   }
   object Intermediates {
     
@@ -223,26 +218,27 @@ object anon {
     }
   }
   
-  @js.native
-  trait IsDirectory extends FileInfo {
+  trait IsDirectory
+    extends StObject
+       with FileInfo {
     
-    var exists: `false` = js.native
+    var exists: `false`
     
-    var isDirectory: `false` = js.native
+    var isDirectory: `false`
     
-    var md5: js.UndefOr[scala.Nothing] = js.native
+    var md5: Unit
     
-    var modificationTime: js.UndefOr[scala.Nothing] = js.native
+    var modificationTime: Unit
     
-    var size: js.UndefOr[scala.Nothing] = js.native
+    var size: Unit
     
-    var uri: String = js.native
+    var uri: String
   }
   object IsDirectory {
     
     @scala.inline
-    def apply(exists: `false`, isDirectory: `false`, uri: String): IsDirectory = {
-      val __obj = js.Dynamic.literal(exists = exists.asInstanceOf[js.Any], isDirectory = isDirectory.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    def apply(md5: Unit, modificationTime: Unit, size: Unit, uri: String): IsDirectory = {
+      val __obj = js.Dynamic.literal(exists = false, isDirectory = false, md5 = md5.asInstanceOf[js.Any], modificationTime = modificationTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsDirectory]
     }
     
@@ -256,16 +252,24 @@ object anon {
       def setIsDirectory(value: `false`): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setMd5(value: Unit): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setModificationTime(value: Unit): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSize(value: Unit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Md5 extends StObject {
     
-    var md5: js.UndefOr[Boolean] = js.native
+    var md5: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Boolean] = js.native
+    var size: js.UndefOr[Boolean] = js.undefined
   }
   object Md5 {
     
@@ -292,12 +296,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TotalBytesExpectedToWrite extends StObject {
     
-    var totalBytesExpectedToWrite: Double = js.native
+    var totalBytesExpectedToWrite: Double
     
-    var totalBytesWritten: Double = js.native
+    var totalBytesWritten: Double
   }
   object TotalBytesExpectedToWrite {
     
@@ -318,10 +321,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UploadType extends StObject {
     
-    var uploadType: js.UndefOr[BINARY_CONTENT] = js.native
+    var uploadType: js.UndefOr[BINARY_CONTENT] = js.undefined
   }
   object UploadType {
     

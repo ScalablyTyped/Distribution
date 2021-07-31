@@ -4,7 +4,6 @@ import typings.three.constantsMod.Mapping
 import typings.three.textureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageUtilsMod {
@@ -21,102 +20,71 @@ object imageUtilsMod {
     @scala.inline
     def crossOrigin_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crossOrigin")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.getDataURL")
-    @js.native
-    def getDataURL(image: js.Any): String = js.native
+    @scala.inline
+    def getDataURL(image: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDataURL")(image.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
-    def loadTexture(url: String): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
+    @scala.inline
+    def loadTexture(url: String): Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any]).asInstanceOf[Texture]
+    @scala.inline
+    def loadTexture(url: String, mapping: Unit, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
     def loadTexture(
       url: String,
-      mapping: js.UndefOr[scala.Nothing],
-      onLoad: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
-    def loadTexture(url: String, mapping: js.UndefOr[scala.Nothing], onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
-    def loadTexture(
-      url: String,
-      mapping: js.UndefOr[scala.Nothing],
+      mapping: Unit,
       onLoad: js.Function1[/* texture */ Texture, Unit],
       onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
-    def loadTexture(url: String, mapping: Mapping): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
-    def loadTexture(
-      url: String,
-      mapping: Mapping,
-      onLoad: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
-    def loadTexture(url: String, mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTexture")
-    @js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTexture(url: String, mapping: Unit, onLoad: Unit, onError: js.Function1[/* message */ String, Unit]): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTexture(url: String, mapping: Mapping): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTexture(url: String, mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
     def loadTexture(
       url: String,
       mapping: Mapping,
       onLoad: js.Function1[/* texture */ Texture, Unit],
       onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTexture(url: String, mapping: Mapping, onLoad: Unit, onError: js.Function1[/* message */ String, Unit]): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTexture")(url.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
     
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
-    def loadTextureCube(array: js.Array[String]): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
+    @scala.inline
+    def loadTextureCube(array: js.Array[String]): Texture = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any]).asInstanceOf[Texture]
+    @scala.inline
+    def loadTextureCube(array: js.Array[String], mapping: Unit, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
     def loadTextureCube(
       array: js.Array[String],
-      mapping: js.UndefOr[scala.Nothing],
-      onLoad: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
-    def loadTextureCube(
-      array: js.Array[String],
-      mapping: js.UndefOr[scala.Nothing],
-      onLoad: js.Function1[/* texture */ Texture, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
-    def loadTextureCube(
-      array: js.Array[String],
-      mapping: js.UndefOr[scala.Nothing],
+      mapping: Unit,
       onLoad: js.Function1[/* texture */ Texture, Unit],
       onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
-    def loadTextureCube(array: js.Array[String], mapping: Mapping): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
     def loadTextureCube(
       array: js.Array[String],
-      mapping: Mapping,
-      onLoad: js.UndefOr[scala.Nothing],
+      mapping: Unit,
+      onLoad: Unit,
       onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
-    def loadTextureCube(array: js.Array[String], mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-    @JSImport("three/src/extras/ImageUtils", "ImageUtils.loadTextureCube")
-    @js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTextureCube(array: js.Array[String], mapping: Mapping): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTextureCube(array: js.Array[String], mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
     def loadTextureCube(
       array: js.Array[String],
       mapping: Mapping,
       onLoad: js.Function1[/* texture */ Texture, Unit],
       onError: js.Function1[/* message */ String, Unit]
-    ): Texture = js.native
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
+    @scala.inline
+    def loadTextureCube(
+      array: js.Array[String],
+      mapping: Mapping,
+      onLoad: Unit,
+      onError: js.Function1[/* message */ String, Unit]
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTextureCube")(array.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Texture]
   }
 }

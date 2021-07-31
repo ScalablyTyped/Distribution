@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentitiesResponse extends StObject {
   
   /**
     * An object containing a set of identities and associated mappings.
     */
-  var Identities: js.UndefOr[IdentitiesList] = js.native
+  var Identities: js.UndefOr[IdentitiesList] = js.undefined
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolId] = js.native
+  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolId] = js.undefined
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
 }
 object ListIdentitiesResponse {
   

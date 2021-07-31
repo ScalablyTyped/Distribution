@@ -2,7 +2,6 @@ package typings.grammarkdown.tokensMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,5 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.grammarkdown.tokensMod.SyntaxKind.ProseTail
 */
 trait ProseFragmentLiteralKind
-  extends ProseFragmentKind
+  extends StObject
+     with ProseFragmentKind
      with TextContentKind

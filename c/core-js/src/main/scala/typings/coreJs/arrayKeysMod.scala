@@ -4,13 +4,15 @@ import typings.std.ArrayLike
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayKeysMod {
   
   /* was `typeof core.Array.keys` */
+  @scala.inline
+  def apply[T](array: ArrayLike[T]): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[Double]]
+  
   @JSImport("core-js/library/fn/array/keys", JSImport.Namespace)
   @js.native
-  def apply[T](array: ArrayLike[T]): IterableIterator[Double] = js.native
+  val ^ : js.Any = js.native
 }

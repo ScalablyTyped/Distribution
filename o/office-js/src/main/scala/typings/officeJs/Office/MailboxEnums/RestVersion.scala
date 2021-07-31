@@ -2,7 +2,6 @@ package typings.officeJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,17 +23,23 @@ object RestVersion extends StObject {
     * Beta.
     */
   @js.native
-  sealed trait Beta extends RestVersion
+  sealed trait Beta
+    extends StObject
+       with RestVersion
   
   /**
     * Version 1.0.
     */
   @js.native
-  sealed trait v1_0 extends RestVersion
+  sealed trait v1_0
+    extends StObject
+       with RestVersion
   
   /**
     * Version 2.0.
     */
   @js.native
-  sealed trait v2_0 extends RestVersion
+  sealed trait v2_0
+    extends StObject
+       with RestVersion
 }

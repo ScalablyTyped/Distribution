@@ -4,7 +4,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miniProgressMod {
@@ -14,20 +13,19 @@ object miniProgressMod {
   class default ()
     extends Component[IMiniProgressProps, js.Any, js.Any]
   
-  @js.native
   trait IMiniProgressProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var target: Double = js.native
+    var target: Double
     
-    var targetLabel: String = js.native
+    var targetLabel: String
   }
   object IMiniProgressProps {
     

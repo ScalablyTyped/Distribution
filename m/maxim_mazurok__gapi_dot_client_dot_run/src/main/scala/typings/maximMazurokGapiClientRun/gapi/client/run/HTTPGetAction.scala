@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTTPGetAction extends StObject {
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders
     * instead.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Custom headers to set in the request. HTTP allows repeated headers. */
-  var httpHeaders: js.UndefOr[js.Array[HTTPHeader]] = js.native
+  var httpHeaders: js.UndefOr[js.Array[HTTPHeader]] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Path to access on the HTTP server. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Scheme to use for connecting to the host. Defaults to HTTP. */
-  var scheme: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.undefined
 }
 object HTTPGetAction {
   

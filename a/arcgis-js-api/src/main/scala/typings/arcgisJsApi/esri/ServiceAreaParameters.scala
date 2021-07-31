@@ -27,12 +27,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServiceAreaParameters
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**
@@ -47,7 +47,7 @@ trait ServiceAreaParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.Array[_] = js.native
+  var attributeParameterValues: js.Array[js.Any] = js.native
   
   /**
     * An array of numbers defining the breaks.

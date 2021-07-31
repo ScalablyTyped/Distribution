@@ -4,19 +4,17 @@ import typings.awsLambda.commonMod.CustomChallengeResult
 import typings.awsLambda.commonMod.StringMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
-  var clientMetadata: js.UndefOr[StringMap] = js.native
+  var clientMetadata: js.UndefOr[StringMap] = js.undefined
   
-  var session: js.Array[typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult] = js.native
+  var session: js.Array[typings.awsLambda.commonMod.ChallengeResult | CustomChallengeResult]
   
-  var userAttributes: StringMap = js.native
+  var userAttributes: StringMap
   
-  var userNotFound: js.UndefOr[Boolean] = js.native
+  var userNotFound: js.UndefOr[Boolean] = js.undefined
 }
 object Session {
   

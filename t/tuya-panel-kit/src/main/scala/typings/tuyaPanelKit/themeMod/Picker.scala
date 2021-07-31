@@ -2,24 +2,22 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.PickerTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.PickerTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.PickerTheme> */
-@js.native
 trait Picker extends StObject {
   
-  var dark: PickerTheme = js.native
+  var dark: PickerTheme
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var light: PickerTheme = js.native
+  var light: PickerTheme
   
-  var unitFontColor: js.UndefOr[String] = js.native
+  var unitFontColor: js.UndefOr[String] = js.undefined
   
-  var unitFontSize: js.UndefOr[Double] = js.native
+  var unitFontSize: js.UndefOr[Double] = js.undefined
 }
 object Picker {
   

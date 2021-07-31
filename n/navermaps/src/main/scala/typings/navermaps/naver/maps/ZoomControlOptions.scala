@@ -2,17 +2,15 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomControlOptions extends StObject {
   
-  var legendDisabled: Boolean = js.native
+  var legendDisabled: Boolean
   
-  var position: Position = js.native
+  var position: Position
   
-  var style: ZoomControlStyle = js.native
+  var style: ZoomControlStyle
 }
 object ZoomControlOptions {
   

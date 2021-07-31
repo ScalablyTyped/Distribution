@@ -3,27 +3,25 @@ package typings.cesium.anon
 import typings.cesium.mod.TileDiscardPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Culture extends StObject {
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var mapStyle: js.UndefOr[String] = js.native
+  var mapStyle: js.UndefOr[String] = js.undefined
   
-  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.native
+  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.undefined
   
-  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.native
+  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
   
-  var tileProtocol: js.UndefOr[String] = js.native
+  var tileProtocol: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Culture {
   

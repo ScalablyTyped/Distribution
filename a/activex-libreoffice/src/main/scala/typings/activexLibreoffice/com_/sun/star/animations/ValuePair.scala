@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.animations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValuePair extends StObject {
   
-  var First: js.Any = js.native
+  var First: js.Any
   
-  var Second: js.Any = js.native
+  var Second: js.Any
 }
 object ValuePair {
   

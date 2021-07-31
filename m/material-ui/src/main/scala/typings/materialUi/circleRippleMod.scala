@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleRippleMod {
@@ -19,16 +18,17 @@ object circleRippleMod {
   trait CircleRipple
     extends Component[CircleRippleProps, js.Object, js.Any]
   
-  @js.native
-  trait CircleRippleProps extends Props[CircleRipple] {
+  trait CircleRippleProps
+    extends StObject
+       with Props[CircleRipple] {
     
-    var aborted: js.UndefOr[Boolean] = js.native
+    var aborted: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CircleRippleProps {
     

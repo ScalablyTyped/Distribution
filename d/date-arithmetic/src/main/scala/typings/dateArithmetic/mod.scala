@@ -5,130 +5,100 @@ import typings.std.Date
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("date-arithmetic", "add")
+  @JSImport("date-arithmetic", JSImport.Namespace)
   @js.native
-  def add(date: Date, num: Double, unit: Unit): Date = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("date-arithmetic", "century")
-  @js.native
-  def century(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "century")
-  @js.native
-  def century(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def add(date: Date, num: Double, unit: Unit): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(date.asInstanceOf[js.Any], num.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "date")
-  @js.native
-  def date(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "date")
-  @js.native
-  def date(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def century(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("century")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def century(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("century")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "day")
-  @js.native
-  def day(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "day")
-  @js.native
-  def day(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def date(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def date(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "decade")
-  @js.native
-  def decade(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "decade")
-  @js.native
-  def decade(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def day(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("day")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def day(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("day")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "endOf")
-  @js.native
-  def endOf(date: Date, unit: Unit): Date = js.native
+  @scala.inline
+  def decade(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decade")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def decade(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("decade")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "eq")
-  @js.native
-  def eq_(date: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def endOf(date: Date, unit: Unit): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "gt")
-  @js.native
-  def gt(date: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def eq_(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-arithmetic", "gte")
-  @js.native
-  def gte(date: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def gt(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-arithmetic", "hours")
-  @js.native
-  def hours(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "hours")
-  @js.native
-  def hours(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def gte(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-arithmetic", "lt")
-  @js.native
-  def lt(date: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def hours(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def hours(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("hours")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "lte")
-  @js.native
-  def lte(date: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def lt(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-arithmetic", "milliseconds")
-  @js.native
-  def milliseconds(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "milliseconds")
-  @js.native
-  def milliseconds(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def lte(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-arithmetic", "minutes")
-  @js.native
-  def minutes(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "minutes")
-  @js.native
-  def minutes(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def milliseconds(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def milliseconds(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "month")
-  @js.native
-  def month(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "month")
-  @js.native
-  def month(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def minutes(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def minutes(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "neq")
-  @js.native
-  def neq(date: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def month(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("month")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def month(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("month")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "seconds")
-  @js.native
-  def seconds(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "seconds")
-  @js.native
-  def seconds(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def neq(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-arithmetic", "startOf")
-  @js.native
-  def startOf_week(date: Date, unit: week, firtOfWeek: StartOfWeek): Date = js.native
-  @JSImport("date-arithmetic", "startOf")
-  @js.native
-  def startOf_week(date: Date, unit: Exclude[Unit, week]): Date = js.native
+  @scala.inline
+  def seconds(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def seconds(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "subtract")
-  @js.native
-  def subtract(date: Date, num: Double, unit: Unit): Date = js.native
+  @scala.inline
+  def startOf_week(date: Date, unit: week, firtOfWeek: StartOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], firtOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def startOf_week(date: Date, unit: Exclude[Unit, week]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "weekday")
-  @js.native
-  def weekday(date: Date, value: Date): Double = js.native
-  @JSImport("date-arithmetic", "weekday")
-  @js.native
-  def weekday(date: Date, value: Date, firstOfWeek: StartOfWeek): Date = js.native
+  @scala.inline
+  def subtract(date: Date, num: Double, unit: Unit): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date.asInstanceOf[js.Any], num.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-arithmetic", "year")
-  @js.native
-  def year(date: Date): Double = js.native
-  @JSImport("date-arithmetic", "year")
-  @js.native
-  def year(date: Date, value: Double): Date = js.native
+  @scala.inline
+  def weekday(date: Date, value: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def weekday(date: Date, value: Date, firstOfWeek: StartOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firstOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
+  
+  @scala.inline
+  def year(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def year(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
   
   /* Rewritten from type alias, can be one of: 
     - typings.dateArithmetic.dateArithmeticNumbers.`0`

@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientGamesmanagement.maximMazurokGapiClientGames
 import typings.maximMazurokGapiClientGamesmanagement.maximMazurokGapiClientGamesmanagementStrings.v1management
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,6 +16,10 @@ object global {
   object gapi {
     
     object client {
+      
+      @JSGlobal("gapi.client")
+      @js.native
+      val ^ : js.Any = js.native
       
       object gamesmanagement {
         
@@ -42,12 +45,10 @@ object global {
       }
       
       /** Load Google Play Game Management v1management */
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: gamesmanagement, version: v1management): js.Thenable[Unit] = js.native
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: gamesmanagement, version: v1management, callback: js.Function0[_]): Unit = js.native
+      @scala.inline
+      def load(name: gamesmanagement, version: v1management): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      @scala.inline
+      def load(name: gamesmanagement, version: v1management, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

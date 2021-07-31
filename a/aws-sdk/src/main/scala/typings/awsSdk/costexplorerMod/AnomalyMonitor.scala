@@ -2,53 +2,51 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnomalyMonitor extends StObject {
   
   /**
     *  The date when the monitor was created. 
     */
-  var CreationDate: js.UndefOr[YearMonthDay] = js.native
+  var CreationDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
     *  The value for evaluated dimensions. 
     */
-  var DimensionalValueCount: js.UndefOr[NonNegativeInteger] = js.native
+  var DimensionalValueCount: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     *  The date when the monitor last evaluated for anomalies. 
     */
-  var LastEvaluatedDate: js.UndefOr[YearMonthDay] = js.native
+  var LastEvaluatedDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
     *  The date when the monitor was last updated. 
     */
-  var LastUpdatedDate: js.UndefOr[YearMonthDay] = js.native
+  var LastUpdatedDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) value. 
     */
-  var MonitorArn: js.UndefOr[GenericString] = js.native
+  var MonitorArn: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The dimensions to evaluate. 
     */
-  var MonitorDimension: js.UndefOr[typings.awsSdk.costexplorerMod.MonitorDimension] = js.native
+  var MonitorDimension: js.UndefOr[typings.awsSdk.costexplorerMod.MonitorDimension] = js.undefined
   
   /**
     *  The name of the monitor. 
     */
-  var MonitorName: GenericString = js.native
+  var MonitorName: GenericString
   
-  var MonitorSpecification: js.UndefOr[Expression] = js.native
+  var MonitorSpecification: js.UndefOr[Expression] = js.undefined
   
   /**
     *  The possible type values. 
     */
-  var MonitorType: typings.awsSdk.costexplorerMod.MonitorType = js.native
+  var MonitorType: typings.awsSdk.costexplorerMod.MonitorType
 }
 object AnomalyMonitor {
   

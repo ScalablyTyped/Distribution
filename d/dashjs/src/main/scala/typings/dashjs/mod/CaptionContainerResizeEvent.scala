@@ -3,21 +3,21 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.captionContainerResize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CaptionContainerResizeEvent extends Event {
+trait CaptionContainerResizeEvent
+  extends StObject
+     with Event {
   
   @JSName("type")
-  var type_CaptionContainerResizeEvent: captionContainerResize = js.native
+  var type_CaptionContainerResizeEvent: captionContainerResize
 }
 object CaptionContainerResizeEvent {
   
   @scala.inline
-  def apply(`type`: captionContainerResize): CaptionContainerResizeEvent = {
+  def apply(): CaptionContainerResizeEvent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("captionContainerResize")
     __obj.asInstanceOf[CaptionContainerResizeEvent]
   }
   

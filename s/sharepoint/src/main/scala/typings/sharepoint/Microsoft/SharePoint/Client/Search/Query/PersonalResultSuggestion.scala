@@ -5,27 +5,27 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PersonalResultSuggestion extends ClientValueObject {
+trait PersonalResultSuggestion
+  extends StObject
+     with ClientValueObject {
   
-  def get_highlightedTitle(): String = js.native
+  def get_highlightedTitle(): String
   
-  def get_isBestBet(): Boolean = js.native
+  def get_isBestBet(): Boolean
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_highlightedTitle(value: String): Unit = js.native
+  def set_highlightedTitle(value: String): Unit
   
-  def set_isBestBet(value: Boolean): Unit = js.native
+  def set_isBestBet(value: Boolean): Unit
   
-  def set_title(value: String): Unit = js.native
+  def set_title(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object PersonalResultSuggestion {
   

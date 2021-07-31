@@ -2,21 +2,19 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
-  var entity: typings.cesium.mod.Entity = js.native
+  var entity: typings.cesium.mod.Entity
   
-  var geometryOptions: js.Any = js.native
+  var geometryOptions: js.Any
   
-  var geometryPropertyName: String = js.native
+  var geometryPropertyName: String
   
-  var observedPropertyNames: js.Array[String] = js.native
+  var observedPropertyNames: js.Array[String]
   
-  var scene: typings.cesium.mod.Scene = js.native
+  var scene: typings.cesium.mod.Scene
 }
 object Entity {
   

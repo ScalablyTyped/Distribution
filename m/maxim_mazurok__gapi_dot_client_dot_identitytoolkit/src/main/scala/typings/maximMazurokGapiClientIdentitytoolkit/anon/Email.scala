@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientIdentitytoolkit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
   /** The user's display name at the IDP. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** User's email at IDP. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** User's identifier at IDP. */
-  var federatedId: js.UndefOr[String] = js.native
+  var federatedId: js.UndefOr[String] = js.undefined
   
   /** User's phone number. */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /** The user's photo url at the IDP. */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /** The IdP ID. For white listed IdPs it's a short domain name, e.g., google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the OP identifier. */
-  var providerId: js.UndefOr[String] = js.native
+  var providerId: js.UndefOr[String] = js.undefined
   
   /** User's raw identifier directly returned from IDP. */
-  var rawId: js.UndefOr[String] = js.native
+  var rawId: js.UndefOr[String] = js.undefined
   
   /** User's screen name at Twitter or login name at Github. */
-  var screenName: js.UndefOr[String] = js.native
+  var screenName: js.UndefOr[String] = js.undefined
 }
 object Email {
   

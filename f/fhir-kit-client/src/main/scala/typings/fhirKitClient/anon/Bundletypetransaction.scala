@@ -13,102 +13,100 @@ import typings.fhir.fhir.uri
 import typings.fhirKitClient.fhirKitClientStrings.transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined fhir.fhir.Bundle & {  type :'transaction'} */
-@js.native
 trait Bundletypetransaction extends StObject {
   
   /**
     * Contains extended information for property 'id'.
     */
-  var _id: js.UndefOr[Element] = js.native
+  var _id: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'implicitRules'.
     */
-  var _implicitRules: js.UndefOr[Element] = js.native
+  var _implicitRules: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'language'.
     */
-  var _language: js.UndefOr[Element] = js.native
+  var _language: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'resourceType'.
     */
-  var _resourceType: js.UndefOr[Element] = js.native
+  var _resourceType: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'total'.
     */
-  var _total: js.UndefOr[Element] = js.native
+  var _total: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Entry in the bundle - will have a resource, or information
     */
-  var entry: js.UndefOr[js.Array[BundleEntry]] = js.native
+  var entry: js.UndefOr[js.Array[BundleEntry]] = js.undefined
   
   /**
     * Logical id of this artifact
     */
-  var id: js.UndefOr[typings.fhir.fhir.id] = js.native
+  var id: js.UndefOr[typings.fhir.fhir.id] = js.undefined
   
   /**
     * Persistent identifier for the bundle
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * A set of rules under which this content was created
     */
-  var implicitRules: js.UndefOr[uri] = js.native
+  var implicitRules: js.UndefOr[uri] = js.undefined
   
   /**
     * Language of the resource content
     */
-  var language: js.UndefOr[code] = js.native
+  var language: js.UndefOr[code] = js.undefined
   
   /**
     * Links related to this Bundle
     */
-  var link: js.UndefOr[js.Array[BundleLink]] = js.native
+  var link: js.UndefOr[js.Array[BundleLink]] = js.undefined
   
   /**
     * Metadata about the resource
     */
-  var meta: js.UndefOr[Meta] = js.native
+  var meta: js.UndefOr[Meta] = js.undefined
   
   /**
     * The type of the resource.
     */
-  var resourceType: js.UndefOr[code] = js.native
+  var resourceType: js.UndefOr[code] = js.undefined
   
   /**
     * Digital Signature
     */
-  var signature: js.UndefOr[Signature] = js.native
+  var signature: js.UndefOr[Signature] = js.undefined
   
   /**
     * If search, the total number of matches
     */
-  var total: js.UndefOr[unsignedInt] = js.native
+  var total: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection
     */
-  var `type`: code with transaction = js.native
+  var `type`: code & transaction
 }
 object Bundletypetransaction {
   
   @scala.inline
-  def apply(`type`: code with transaction): Bundletypetransaction = {
+  def apply(`type`: code & transaction): Bundletypetransaction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundletypetransaction]
@@ -184,7 +182,7 @@ object Bundletypetransaction {
     def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def setType(value: code with transaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(value: code & transaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])

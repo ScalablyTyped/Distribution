@@ -2,86 +2,84 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope * / any */ @js.native
-trait IGridScope extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope * / any */ trait IGridScope extends StObject {
   
-  def adjustScrollLeft(scrollLeft: Double): Unit = js.native
+  def adjustScrollLeft(scrollLeft: Double): Unit
   
-  def adjustScrollTop(scrollTop: Double, force: Boolean): Unit = js.native
+  def adjustScrollTop(scrollTop: Double, force: Boolean): Unit
   
-  var columns: js.Array[_] = js.native
+  var columns: js.Array[js.Any]
   
-  var configGroups: js.Array[_] = js.native
+  var configGroups: js.Array[js.Any]
   
-  var elementsNeedMeasuring: Boolean = js.native
+  var elementsNeedMeasuring: Boolean
   
-  var enableCellEditOnFocus: Boolean = js.native
+  var enableCellEditOnFocus: Boolean
   
-  var enableCellSelection: Boolean = js.native
+  var enableCellSelection: Boolean
   
-  var enablePaging: Boolean = js.native
+  var enablePaging: Boolean
   
-  var footer: IFooter = js.native
+  var footer: IFooter
   
-  var footerRowHeight: Double = js.native
+  var footerRowHeight: Double
   
-  var forceSyncScrolling: Boolean = js.native
+  var forceSyncScrolling: Boolean
   
-  var gridId: String = js.native
+  var gridId: String
   
-  def groupBy(col: IColumn): Unit = js.native
+  def groupBy(col: IColumn): Unit
   
-  var headerRow: js.Any = js.native
+  var headerRow: js.Any
   
-  def headerScrollerDim(): js.Any = js.native
+  def headerScrollerDim(): js.Any
   
-  var i18n: js.Any = js.native
+  var i18n: js.Any
   
-  var jqueryUITheme: js.Any = js.native
+  var jqueryUITheme: js.Any
   
-  var multiSelect: Boolean = js.native
+  var multiSelect: Boolean
   
-  var pagingOptions: IPagingOptions = js.native
+  var pagingOptions: IPagingOptions
   
-  def removeGroup(index: Double): Unit = js.native
+  def removeGroup(index: Double): Unit
   
-  var renderedColumns: js.Array[_] = js.native
+  var renderedColumns: js.Array[js.Any]
   
-  var renderedRows: js.Array[_] = js.native
+  var renderedRows: js.Array[js.Any]
   
-  var rowHeight: Double = js.native
+  var rowHeight: Double
   
-  var selectedItems: js.Array[_] = js.native
+  var selectedItems: js.Array[js.Any]
   
-  var selectionProvider: ISelectionProvider = js.native
+  var selectionProvider: ISelectionProvider
   
-  var showColumnMenu: Boolean = js.native
+  var showColumnMenu: Boolean
   
-  var showFooter: Boolean = js.native
+  var showFooter: Boolean
   
-  def showGroupPanel(): js.Any = js.native
+  def showGroupPanel(): js.Any
   
-  var showMenu: Boolean = js.native
+  var showMenu: Boolean
   
-  var showSelectionCheckbox: Boolean = js.native
+  var showSelectionCheckbox: Boolean
   
-  def togglePin(col: IColumn): Unit = js.native
+  def togglePin(col: IColumn): Unit
   
-  def toggleSelectAll(): Unit = js.native
+  def toggleSelectAll(): Unit
   
-  def toggleShowMenu(): Unit = js.native
+  def toggleShowMenu(): Unit
   
-  def topPanelHeight(): Double = js.native
+  def topPanelHeight(): Double
   
-  def totalFilteredItemsLength(): Double = js.native
+  def totalFilteredItemsLength(): Double
   
-  def totalRowWidth(): Double = js.native
+  def totalRowWidth(): Double
   
-  def viewportDimHeight(): Double = js.native
+  def viewportDimHeight(): Double
 }
 object IGridScope {
   
@@ -89,8 +87,8 @@ object IGridScope {
   def apply(
     adjustScrollLeft: Double => Unit,
     adjustScrollTop: (Double, Boolean) => Unit,
-    columns: js.Array[_],
-    configGroups: js.Array[_],
+    columns: js.Array[js.Any],
+    configGroups: js.Array[js.Any],
     elementsNeedMeasuring: Boolean,
     enableCellEditOnFocus: Boolean,
     enableCellSelection: Boolean,
@@ -107,10 +105,10 @@ object IGridScope {
     multiSelect: Boolean,
     pagingOptions: IPagingOptions,
     removeGroup: Double => Unit,
-    renderedColumns: js.Array[_],
-    renderedRows: js.Array[_],
+    renderedColumns: js.Array[js.Any],
+    renderedRows: js.Array[js.Any],
     rowHeight: Double,
-    selectedItems: js.Array[_],
+    selectedItems: js.Array[js.Any],
     selectionProvider: ISelectionProvider,
     showColumnMenu: Boolean,
     showFooter: Boolean,
@@ -139,13 +137,13 @@ object IGridScope {
     def setAdjustScrollTop(value: (Double, Boolean) => Unit): Self = StObject.set(x, "adjustScrollTop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setConfigGroups(value: js.Array[_]): Self = StObject.set(x, "configGroups", value.asInstanceOf[js.Any])
+    def setConfigGroups(value: js.Array[js.Any]): Self = StObject.set(x, "configGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setConfigGroupsVarargs(value: js.Any*): Self = StObject.set(x, "configGroups", js.Array(value :_*))
@@ -199,13 +197,13 @@ object IGridScope {
     def setRemoveGroup(value: Double => Unit): Self = StObject.set(x, "removeGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRenderedColumns(value: js.Array[_]): Self = StObject.set(x, "renderedColumns", value.asInstanceOf[js.Any])
+    def setRenderedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "renderedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRenderedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "renderedColumns", js.Array(value :_*))
     
     @scala.inline
-    def setRenderedRows(value: js.Array[_]): Self = StObject.set(x, "renderedRows", value.asInstanceOf[js.Any])
+    def setRenderedRows(value: js.Array[js.Any]): Self = StObject.set(x, "renderedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRenderedRowsVarargs(value: js.Any*): Self = StObject.set(x, "renderedRows", js.Array(value :_*))
@@ -214,7 +212,7 @@ object IGridScope {
     def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItems(value: js.Array[js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))

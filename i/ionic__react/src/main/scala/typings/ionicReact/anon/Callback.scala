@@ -5,15 +5,13 @@ import typings.ionicCore.animationInterfaceMod.AnimationCallbackOptions
 import typings.ionicCore.animationInterfaceMod.AnimationLifecycle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
-  var callback: AnimationLifecycle = js.native
+  var callback: AnimationLifecycle
   
-  var opts: js.UndefOr[AnimationCallbackOptions] = js.native
+  var opts: js.UndefOr[AnimationCallbackOptions] = js.undefined
 }
 object Callback {
   

@@ -28,7 +28,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Input {
@@ -39,44 +38,43 @@ object Input {
       * Contains information about a specific Gamepad Axis.
       * Axis objects are created automatically by the Gamepad as they are needed.
       */
-    @js.native
     trait Axis extends StObject {
       
       /**
         * Destroys this Axis instance and releases external references it holds.
         */
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       /**
         * An event emitter to use to emit the axis events.
         */
-      var events: EventEmitter = js.native
+      var events: EventEmitter
       
       /**
         * Applies the `threshold` value to the axis and returns it.
         */
-      def getValue(): Double = js.native
+      def getValue(): Double
       
       /**
         * The index of this Axis.
         */
-      var index: integer = js.native
+      var index: integer
       
       /**
         * A reference to the Gamepad that this Axis belongs to.
         */
-      var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+      var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad
       
       /**
         * Movement tolerance threshold below which axis values are ignored in `getValue`.
         */
-      var threshold: Double = js.native
+      var threshold: Double
       
       /**
         * The raw axis value, between -1 and 1 with 0 being dead center.
         * Use the method `getValue` to get a normalized value with the threshold applied.
         */
-      var value: Double = js.native
+      var value: Double
     }
     object Axis {
       
@@ -124,44 +122,43 @@ object Input {
       * Contains information about a specific button on a Gamepad.
       * Button objects are created automatically by the Gamepad as they are needed.
       */
-    @js.native
     trait Button extends StObject {
       
       /**
         * Destroys this Button instance and releases external references it holds.
         */
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       /**
         * An event emitter to use to emit the button events.
         */
-      var events: EventEmitter = js.native
+      var events: EventEmitter
       
       /**
         * The index of this Button.
         */
-      var index: integer = js.native
+      var index: integer
       
       /**
         * A reference to the Gamepad that this Button belongs to.
         */
-      var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad = js.native
+      var pad: typings.phaser.Phaser.Input.Gamepad.Gamepad
       
       /**
         * Is the Button being pressed down or not?
         */
-      var pressed: Boolean = js.native
+      var pressed: Boolean
       
       /**
         * Can be set for analogue buttons to enable a 'pressure' threshold,
         * before a button is considered as being 'pressed'.
         */
-      var threshold: Double = js.native
+      var threshold: Double
       
       /**
         * Between 0 and 1.
         */
-      var value: Double = js.native
+      var value: Double
     }
     object Button {
       
@@ -211,7 +208,9 @@ object Input {
       * These are created, updated and managed by the Gamepad Plugin.
       */
     @js.native
-    trait Gamepad extends EventEmitter {
+    trait Gamepad
+      extends StObject
+         with EventEmitter {
       
       /**
         * Is the Gamepad's bottom button in the right button cluster being pressed?
@@ -460,7 +459,9 @@ object Input {
       * http://html5gamepad.com/
       */
     @js.native
-    trait GamepadPlugin extends EventEmitter {
+    trait GamepadPlugin
+      extends StObject
+         with EventEmitter {
       
       /**
         * Disconnects all current Gamepads.
@@ -667,8 +668,8 @@ object Input {
       * @param camera The Camera which is being tested against.
       * @param output An array to store the results in. If not given, a new empty array is created.
       */
-    def hitTest(pointer: Pointer, gameObjects: js.Array[_], camera: Camera): js.Array[_] = js.native
-    def hitTest(pointer: Pointer, gameObjects: js.Array[_], camera: Camera, output: js.Array[_]): js.Array[_] = js.native
+    def hitTest(pointer: Pointer, gameObjects: js.Array[js.Any], camera: Camera): js.Array[js.Any] = js.native
+    def hitTest(pointer: Pointer, gameObjects: js.Array[js.Any], camera: Camera, output: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     /**
       * Are any mouse or touch pointers currently over the game canvas?
@@ -823,7 +824,9 @@ object Input {
     * Please also see the Input examples and tutorials for further information.
     */
   @js.native
-  trait InputPlugin extends EventEmitter {
+  trait InputPlugin
+    extends StObject
+       with EventEmitter {
     
     /**
       * The current active input Pointer.
@@ -911,30 +914,15 @@ object Input {
       * @param dropZone Is this Game Object a drop zone or not? Default false.
       */
     def enable(gameObject: GameObject): this.type = js.native
-    def enable(
-      gameObject: GameObject,
-      shape: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      dropZone: Boolean
-    ): this.type = js.native
-    def enable(gameObject: GameObject, shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
-    def enable(
-      gameObject: GameObject,
-      shape: js.UndefOr[scala.Nothing],
-      callback: HitAreaCallback,
-      dropZone: Boolean
-    ): this.type = js.native
     def enable(gameObject: GameObject, shape: js.Any): this.type = js.native
-    def enable(gameObject: GameObject, shape: js.Any, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
+    def enable(gameObject: GameObject, shape: js.Any, callback: Unit, dropZone: Boolean): this.type = js.native
     def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
     def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+    def enable(gameObject: GameObject, shape: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
+    def enable(gameObject: GameObject, shape: Unit, callback: HitAreaCallback): this.type = js.native
+    def enable(gameObject: GameObject, shape: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
     def enable(gameObject: GameObject, shape: InputConfiguration): this.type = js.native
-    def enable(
-      gameObject: GameObject,
-      shape: InputConfiguration,
-      callback: js.UndefOr[scala.Nothing],
-      dropZone: Boolean
-    ): this.type = js.native
+    def enable(gameObject: GameObject, shape: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
     def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
     def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
     
@@ -1223,9 +1211,9 @@ object Input {
     def setGlobalTopOnly(value: Boolean): this.type = js.native
     
     def setHitArea(gameObjects: js.Array[GameObject]): this.type = js.native
-    def setHitArea(gameObjects: js.Array[GameObject], shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
     def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any): this.type = js.native
     def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any, callback: HitAreaCallback): this.type = js.native
+    def setHitArea(gameObjects: js.Array[GameObject], shape: Unit, callback: HitAreaCallback): this.type = js.native
     def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration): this.type = js.native
     def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
     /**
@@ -1245,9 +1233,9 @@ object Input {
       * @param callback The 'contains' function to invoke to check if the pointer is within the hit area.
       */
     def setHitArea(gameObjects: GameObject): this.type = js.native
-    def setHitArea(gameObjects: GameObject, shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
     def setHitArea(gameObjects: GameObject, shape: js.Any): this.type = js.native
     def setHitArea(gameObjects: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
+    def setHitArea(gameObjects: GameObject, shape: Unit, callback: HitAreaCallback): this.type = js.native
     def setHitArea(gameObjects: GameObject, shape: InputConfiguration): this.type = js.native
     def setHitArea(gameObjects: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
     
@@ -1474,7 +1462,9 @@ object Input {
       * keycode must be an integer
       */
     @js.native
-    trait Key extends EventEmitter {
+    trait Key
+      extends StObject
+         with EventEmitter {
       
       /**
         * The down state of the ALT key, if pressed at the same time as this key.
@@ -1631,83 +1621,82 @@ object Input {
       * this.input.keyboard.createCombo('PHASER');
       * ```
       */
-    @js.native
     trait KeyCombo extends StObject {
       
       /**
         * The current keyCode the combo is waiting for.
         */
-      var current: integer = js.native
+      var current: integer
       
       /**
         * If the combo matches, will it delete itself?
         */
-      var deleteOnMatch: Boolean = js.native
+      var deleteOnMatch: Boolean
       
       /**
         * Destroys this Key Combo and all of its references.
         */
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       /**
         * A flag that controls if this Key Combo is actively processing keys or not.
         */
-      var enabled: Boolean = js.native
+      var enabled: Boolean
       
       /**
         * The current index of the key being waited for in the 'keys' string.
         */
-      var index: integer = js.native
+      var index: integer
       
       /**
         * An array of the keycodes that comprise this combo.
         */
-      var keyCodes: js.Array[_] = js.native
+      var keyCodes: js.Array[js.Any]
       
       /**
         * A reference to the Keyboard Manager
         */
-      var manager: KeyboardPlugin = js.native
+      var manager: KeyboardPlugin
       
       /**
         * Has this Key Combo been matched yet?
         */
-      var matched: Boolean = js.native
+      var matched: Boolean
       
       /**
         * The max delay in ms between each key press. Above this the combo is reset. 0 means disabled.
         */
-      var maxKeyDelay: integer = js.native
+      var maxKeyDelay: integer
       
       /**
         * How far complete is this combo? A value between 0 and 1.
         */
-      val progress: Double = js.native
+      val progress: Double
       
       /**
         * If previously matched and they press the first key of the combo again, will it reset?
         */
-      var resetOnMatch: Boolean = js.native
+      var resetOnMatch: Boolean
       
       /**
         * If they press the wrong key do we reset the combo?
         */
-      var resetOnWrongKey: Boolean = js.native
+      var resetOnWrongKey: Boolean
       
       /**
         * The length of this combo (in keycodes)
         */
-      var size: Double = js.native
+      var size: Double
       
       /**
         * The time the previous key in the combo was matched.
         */
-      var timeLastMatched: Double = js.native
+      var timeLastMatched: Double
       
       /**
         * The time the entire combo was matched.
         */
-      var timeMatched: Double = js.native
+      var timeMatched: Double
     }
     object KeyCombo {
       
@@ -1718,7 +1707,7 @@ object Input {
         destroy: () => Unit,
         enabled: Boolean,
         index: integer,
-        keyCodes: js.Array[_],
+        keyCodes: js.Array[js.Any],
         manager: KeyboardPlugin,
         matched: Boolean,
         maxKeyDelay: integer,
@@ -1752,7 +1741,7 @@ object Input {
         def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setKeyCodes(value: js.Array[_]): Self = StObject.set(x, "keyCodes", value.asInstanceOf[js.Any])
+        def setKeyCodes(value: js.Array[js.Any]): Self = StObject.set(x, "keyCodes", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setKeyCodesVarargs(value: js.Any*): Self = StObject.set(x, "keyCodes", js.Array(value :_*))
@@ -1833,7 +1822,7 @@ object Input {
         * @param keycode The Key Codes to enable capture for, preventing them reaching the browser.
         */
       def addCapture(keycode: String): Unit = js.native
-      def addCapture(keycode: js.Array[_ | integer]): Unit = js.native
+      def addCapture(keycode: js.Array[js.Any | integer]): Unit = js.native
       def addCapture(keycode: integer): Unit = js.native
       
       /**
@@ -1940,7 +1929,7 @@ object Input {
         * @param keycode The Key Codes to disable capture for, allowing them reaching the browser again.
         */
       def removeCapture(keycode: String): Unit = js.native
-      def removeCapture(keycode: js.Array[_ | integer]): Unit = js.native
+      def removeCapture(keycode: js.Array[js.Any | integer]): Unit = js.native
       def removeCapture(keycode: integer): Unit = js.native
       
       /**
@@ -1999,7 +1988,9 @@ object Input {
       * And there are others. So, please check your extensions before opening Phaser issues about keys that don't work.
       */
     @js.native
-    trait KeyboardPlugin extends EventEmitter {
+    trait KeyboardPlugin
+      extends StObject
+         with EventEmitter {
       
       /**
         * By default when a key is pressed Phaser will not stop the event from propagating up to the browser.
@@ -2035,13 +2026,13 @@ object Input {
         * @param keycode The Key Codes to enable event capture for.
         */
       def addCapture(keycode: String): this.type = js.native
-      def addCapture(keycode: js.Array[_ | integer]): this.type = js.native
+      def addCapture(keycode: js.Array[js.Any | integer]): this.type = js.native
       def addCapture(keycode: integer): this.type = js.native
       
       def addKey(key: String): Key = js.native
-      def addKey(key: String, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
       def addKey(key: String, enableCapture: Boolean): Key = js.native
       def addKey(key: String, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
+      def addKey(key: String, enableCapture: Unit, emitOnRepeat: Boolean): Key = js.native
       /**
         * Adds a Key object to this Keyboard Plugin.
         * 
@@ -2053,18 +2044,18 @@ object Input {
         * @param emitOnRepeat Controls if the Key will continuously emit a 'down' event while being held down (true), or emit the event just once (false, the default). Default false.
         */
       def addKey(key: Key): Key = js.native
-      def addKey(key: Key, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
       def addKey(key: Key, enableCapture: Boolean): Key = js.native
       def addKey(key: Key, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
+      def addKey(key: Key, enableCapture: Unit, emitOnRepeat: Boolean): Key = js.native
       def addKey(key: integer): Key = js.native
-      def addKey(key: integer, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): Key = js.native
       def addKey(key: integer, enableCapture: Boolean): Key = js.native
       def addKey(key: integer, enableCapture: Boolean, emitOnRepeat: Boolean): Key = js.native
+      def addKey(key: integer, enableCapture: Unit, emitOnRepeat: Boolean): Key = js.native
       
       def addKeys(keys: String): js.Object = js.native
-      def addKeys(keys: String, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): js.Object = js.native
       def addKeys(keys: String, enableCapture: Boolean): js.Object = js.native
       def addKeys(keys: String, enableCapture: Boolean, emitOnRepeat: Boolean): js.Object = js.native
+      def addKeys(keys: String, enableCapture: Unit, emitOnRepeat: Boolean): js.Object = js.native
       /**
         * A practical way to create an object containing user selected hotkeys.
         * 
@@ -2090,9 +2081,9 @@ object Input {
         * @param emitOnRepeat Controls if the Key will continuously emit a 'down' event while being held down (true), or emit the event just once (false, the default). Default false.
         */
       def addKeys(keys: js.Object): js.Object = js.native
-      def addKeys(keys: js.Object, enableCapture: js.UndefOr[scala.Nothing], emitOnRepeat: Boolean): js.Object = js.native
       def addKeys(keys: js.Object, enableCapture: Boolean): js.Object = js.native
       def addKeys(keys: js.Object, enableCapture: Boolean, emitOnRepeat: Boolean): js.Object = js.native
+      def addKeys(keys: js.Object, enableCapture: Unit, emitOnRepeat: Boolean): js.Object = js.native
       
       /**
         * Checks if the given Key object is currently being held down.
@@ -2242,7 +2233,7 @@ object Input {
         * @param keycode The Key Codes to disable event capture for.
         */
       def removeCapture(keycode: String): this.type = js.native
-      def removeCapture(keycode: js.Array[_ | integer]): this.type = js.native
+      def removeCapture(keycode: js.Array[js.Any | integer]): this.type = js.native
       def removeCapture(keycode: integer): this.type = js.native
       
       def removeKey(key: String): this.type = js.native
@@ -2295,18 +2286,17 @@ object Input {
       * 
       * You do not need to create this class directly, the Input Manager will create an instance of it automatically.
       */
-    @js.native
     trait MouseManager extends StObject {
       
       /**
         * If true the DOM mouse events will have event.preventDefault applied to them, if false they will propagate fully.
         */
-      var capture: Boolean = js.native
+      var capture: Boolean
       
       /**
         * Destroys this Mouse Manager instance.
         */
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       /**
         * Attempts to disable the context menu from appearing if you right-click on the browser.
@@ -2316,93 +2306,93 @@ object Input {
         * Use this if you need to enable right-button mouse support in your game, and the browser
         * menu keeps getting in the way.
         */
-      def disableContextMenu(): this.type = js.native
+      def disableContextMenu(): this.type
       
       /**
         * A boolean that controls if the Mouse Manager is enabled or not.
         * Can be toggled on the fly.
         */
-      var enabled: Boolean = js.native
+      var enabled: Boolean
       
       /**
         * If the mouse has been pointer locked successfully this will be set to true.
         */
-      var locked: Boolean = js.native
+      var locked: Boolean
       
       /**
         * A reference to the Input Manager.
         */
-      var manager: InputManager = js.native
+      var manager: InputManager
       
       /**
         * The Mouse Down Event handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseDown: js.Function = js.native
+      var onMouseDown: js.Function
       
       /**
         * The Mouse Down Event handler specifically for events on the Window.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseDownWindow: js.Function = js.native
+      var onMouseDownWindow: js.Function
       
       /**
         * The Mouse Move Event handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseMove: js.Function = js.native
+      var onMouseMove: js.Function
       
       /**
         * The Mouse Out Event handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseOut: js.Function = js.native
+      var onMouseOut: js.Function
       
       /**
         * The Mouse Over Event handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseOver: js.Function = js.native
+      var onMouseOver: js.Function
       
       /**
         * The Mouse Up Event handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseUp: js.Function = js.native
+      var onMouseUp: js.Function
       
       /**
         * The Mouse Up Event handler specifically for events on the Window.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseUpWindow: js.Function = js.native
+      var onMouseUpWindow: js.Function
       
       /**
         * The Mouse Wheel Event handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onMouseWheel: js.Function = js.native
+      var onMouseWheel: js.Function
       
       /**
         * Internal pointerLockChange handler.
         * This function is sent the native DOM MouseEvent.
         * Initially empty and bound in the `startListeners` method.
         */
-      var pointerLockChange: js.Function = js.native
+      var pointerLockChange: js.Function
       
       /**
         * If the browser supports pointer lock, this will request that the pointer lock is released. If
         * the browser successfully enters a locked state, a 'POINTER_LOCK_CHANGE_EVENT' will be
         * dispatched - from the game's input manager - with an `isPointerLocked` property.
         */
-      def releasePointerLock(): Unit = js.native
+      def releasePointerLock(): Unit
       
       /**
         * If the browser supports it, you can request that the pointer be locked to the browser window.
@@ -2416,25 +2406,25 @@ object Input {
         * It is important to note that pointer lock can only be enabled after an 'engagement gesture',
         * see: https://w3c.github.io/pointerlock/#dfn-engagement-gesture.
         */
-      def requestPointerLock(): Unit = js.native
+      def requestPointerLock(): Unit
       
       /**
         * Starts the Mouse Event listeners running.
         * This is called automatically and does not need to be manually invoked.
         */
-      def startListeners(): Unit = js.native
+      def startListeners(): Unit
       
       /**
         * Stops the Mouse Event listeners.
         * This is called automatically and does not need to be manually invoked.
         */
-      def stopListeners(): Unit = js.native
+      def stopListeners(): Unit
       
       /**
         * The Mouse target, as defined in the Game Config.
         * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
         */
-      var target: js.Any = js.native
+      var target: js.Any
     }
     object MouseManager {
       
@@ -2754,10 +2744,10 @@ object Input {
       * @param steps The number of interpolation steps to use. Default 10.
       * @param out An array to store the results in. If not provided a new one will be created.
       */
-    def getInterpolatedPosition(): js.Array[_] = js.native
-    def getInterpolatedPosition(steps: js.UndefOr[scala.Nothing], out: js.Array[_]): js.Array[_] = js.native
-    def getInterpolatedPosition(steps: integer): js.Array[_] = js.native
-    def getInterpolatedPosition(steps: integer, out: js.Array[_]): js.Array[_] = js.native
+    def getInterpolatedPosition(): js.Array[js.Any] = js.native
+    def getInterpolatedPosition(steps: Unit, out: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def getInterpolatedPosition(steps: integer): js.Array[js.Any] = js.native
+    def getInterpolatedPosition(steps: integer, out: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     /**
       * The internal ID of this Pointer.
@@ -3001,18 +2991,17 @@ object Input {
       * 
       * You do not need to create this class directly, the Input Manager will create an instance of it automatically.
       */
-    @js.native
     trait TouchManager extends StObject {
       
       /**
         * If true the DOM events will have event.preventDefault applied to them, if false they will propagate fully.
         */
-      var capture: Boolean = js.native
+      var capture: Boolean
       
       /**
         * Destroys this Touch Manager instance.
         */
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       /**
         * Attempts to disable the context menu from appearing if you touch-hold on the browser.
@@ -3021,72 +3010,72 @@ object Input {
         * 
         * Use this if you need to disable the OS context menu on mobile.
         */
-      def disableContextMenu(): this.type = js.native
+      def disableContextMenu(): this.type
       
       /**
         * A boolean that controls if the Touch Manager is enabled or not.
         * Can be toggled on the fly.
         */
-      var enabled: Boolean = js.native
+      var enabled: Boolean
       
       /**
         * A reference to the Input Manager.
         */
-      var manager: InputManager = js.native
+      var manager: InputManager
       
       /**
         * The Touch Cancel event handler function.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchCancel: js.Function = js.native
+      var onTouchCancel: js.Function
       
       /**
         * The Touch Cancel event handler function specifically for events on the Window.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchCancelWindow: js.Function = js.native
+      var onTouchCancelWindow: js.Function
       
       /**
         * The Touch End event handler function.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchEnd: js.Function = js.native
+      var onTouchEnd: js.Function
       
       /**
         * The Touch End event handler function specifically for events on the Window.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchEndWindow: js.Function = js.native
+      var onTouchEndWindow: js.Function
       
       /**
         * The Touch Move event handler function.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchMove: js.Function = js.native
+      var onTouchMove: js.Function
       
       /**
         * The Touch Out event handler function.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchOut: js.Function = js.native
+      var onTouchOut: js.Function
       
       /**
         * The Touch Over event handler function.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchOver: js.Function = js.native
+      var onTouchOver: js.Function
       
       /**
         * The Touch Start event handler function.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchStart: js.Function = js.native
+      var onTouchStart: js.Function
       
       /**
         * The Touch Start event handler function specifically for events on the Window.
         * Initially empty and bound in the `startListeners` method.
         */
-      var onTouchStartWindow: js.Function = js.native
+      var onTouchStartWindow: js.Function
       
       /**
         * Starts the Touch Event listeners running as long as an input target is set.
@@ -3095,19 +3084,19 @@ object Input {
         * which it is by default. However, you can call it manually should you need to
         * delay input capturing until later in the game.
         */
-      def startListeners(): Unit = js.native
+      def startListeners(): Unit
       
       /**
         * Stops the Touch Event listeners.
         * This is called automatically and does not need to be manually invoked.
         */
-      def stopListeners(): Unit = js.native
+      def stopListeners(): Unit
       
       /**
         * The Touch Event target, as defined in the Game Config.
         * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
         */
-      var target: js.Any = js.native
+      var target: js.Any
     }
     object TouchManager {
       

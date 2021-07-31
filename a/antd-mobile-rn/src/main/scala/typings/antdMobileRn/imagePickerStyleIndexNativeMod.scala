@@ -14,7 +14,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerStyleIndexNativeMod {
@@ -87,28 +86,27 @@ object imagePickerStyleIndexNativeMod {
     def size_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IImagePickerStyle extends StObject {
     
-    var closeText: TextStyle = js.native
+    var closeText: TextStyle
     
-    var closeWrap: ViewStyle = js.native
+    var closeWrap: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var image: ImageStyle = js.native
+    var image: ImageStyle
     
-    var item: ViewStyle = js.native
+    var item: ViewStyle
     
-    var plusText: TextStyle = js.native
+    var plusText: TextStyle
     
-    var plusWrap: ViewStyle = js.native
+    var plusWrap: ViewStyle
     
-    var plusWrapHighlight: ViewStyle = js.native
+    var plusWrapHighlight: ViewStyle
     
-    var plusWrapNormal: ViewStyle = js.native
+    var plusWrapNormal: ViewStyle
     
-    var size: ViewStyle = js.native
+    var size: ViewStyle
   }
   object IImagePickerStyle {
     

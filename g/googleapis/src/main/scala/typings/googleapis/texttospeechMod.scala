@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object texttospeechMod {
+  
+  @JSImport("googleapis/build/src/apis/texttospeech", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object texttospeechMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/texttospeech", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/texttospeech", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object texttospeechMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/texttospeech", "texttospeech")
-  @js.native
-  def texttospeech(options: Options): Texttospeech = js.native
-  @JSImport("googleapis/build/src/apis/texttospeech", "texttospeech")
-  @js.native
-  def texttospeech(options: typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Options): typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech = js.native
-  @JSImport("googleapis/build/src/apis/texttospeech", "texttospeech")
-  @js.native
-  def texttospeech_v1(version: v1): Texttospeech = js.native
-  @JSImport("googleapis/build/src/apis/texttospeech", "texttospeech")
-  @js.native
-  def texttospeech_v1beta1(version: v1beta1): typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech = js.native
+  @scala.inline
+  def texttospeech(options: Options): Texttospeech = ^.asInstanceOf[js.Dynamic].applyDynamic("texttospeech")(options.asInstanceOf[js.Any]).asInstanceOf[Texttospeech]
+  @scala.inline
+  def texttospeech(options: typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Options): typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech = ^.asInstanceOf[js.Dynamic].applyDynamic("texttospeech")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech]
+  
+  @scala.inline
+  def texttospeech_v1(version: v1): Texttospeech = ^.asInstanceOf[js.Dynamic].applyDynamic("texttospeech")(version.asInstanceOf[js.Any]).asInstanceOf[Texttospeech]
+  
+  @scala.inline
+  def texttospeech_v1beta1(version: v1beta1): typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech = ^.asInstanceOf[js.Dynamic].applyDynamic("texttospeech")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech]
 }

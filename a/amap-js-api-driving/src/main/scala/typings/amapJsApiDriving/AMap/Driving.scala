@@ -27,11 +27,12 @@ import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.PoiExt
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Driving extends EventEmitter {
+trait Driving
+  extends StObject
+     with EventEmitter {
   
   /**
     * 清除搜索结果
@@ -78,7 +79,7 @@ trait Driving extends EventEmitter {
   def search(
     origin: LocationValue,
     destination: LocationValue,
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResultBase, Unit]
   ): Unit = js.native
   def search(origin: LocationValue, destination: LocationValue, opts: SearchOptions): Unit = js.native
@@ -134,18 +135,17 @@ trait Driving extends EventEmitter {
 }
 object Driving {
   
-  @js.native
   trait District extends StObject {
     
     /**
       * 行政区编号
       */
-    var adcode: String = js.native
+    var adcode: String
     
     /**
       * 行政区名称
       */
-    var name: String = js.native
+    var name: String
   }
   object District {
     
@@ -166,45 +166,44 @@ object Driving {
     }
   }
   
-  @js.native
   trait DriveRoute extends StObject {
     
     /**
       * 起点到终点的驾车距离，单位：米
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 驾车规划策略
       */
-    var policy: String = js.native
+    var policy: String
     
     /**
       * 限行结果
       * 0 代表限行已规避或未限行，即该路线没有限行路段
       * 1 代表限行无法规避，即该线路有限行路段
       */
-    var restriction: `0` | `1` = js.native
+    var restriction: `0` | `1`
     
     /**
       * 子路段DriveStep集合
       */
-    var steps: js.Array[DriveStep] = js.native
+    var steps: js.Array[DriveStep]
     
     /**
       * 时间预计，单位：秒
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * 此驾车路线收费金额，单位：元
       */
-    var tolls: Double = js.native
+    var tolls: Double
     
     /**
       * 收费路段长度，单位：米
       */
-    var tolls_distance: Double = js.native
+    var tolls_distance: Double
   }
   object DriveRoute {
     
@@ -251,85 +250,84 @@ object Driving {
     }
   }
   
-  @js.native
   trait DriveStep extends StObject {
     
     /**
       * 本驾车子路段完成后动作
       */
-    var action: String = js.native
+    var action: String
     
     /**
       * 驾车子路段完成后辅助动作，一般为到达某个目的地时返回
       */
-    var assistant_action: String = js.native
+    var assistant_action: String
     
     /**
       * 途径城市列表
       */
-    var cities: js.UndefOr[js.Array[ViaCity]] = js.native
+    var cities: js.UndefOr[js.Array[ViaCity]] = js.undefined
     
     /**
       * 此路段距离，单位：米
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 此路段终点
       */
-    var end_location: LngLat = js.native
+    var end_location: LngLat
     
     /**
       * 此路段说明
       */
-    var instruction: String = js.native
+    var instruction: String
     
     /**
       * 驾车方向
       */
-    var orientation: String = js.native
+    var orientation: String
     
     /**
       * 此路段坐标集合
       */
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
     /**
       * 道路
       */
-    var road: String = js.native
+    var road: String
     
     /**
       * 此路段起点
       */
-    var start_location: LngLat = js.native
+    var start_location: LngLat
     
     /**
       * 此路段预计使用时间，单位：秒
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * 实时交通信息列表
       */
-    var tmcs: js.UndefOr[js.Array[TMC]] = js.native
+    var tmcs: js.UndefOr[js.Array[TMC]] = js.undefined
     
-    var tmcsPaths: js.UndefOr[js.Array[TMCsPath]] = js.native
+    var tmcsPaths: js.UndefOr[js.Array[TMCsPath]] = js.undefined
     
     /**
       * 收费路段长度，单位：米
       */
-    var toll_distance: Double = js.native
+    var toll_distance: Double
     
     /**
       * 主要收费道路
       */
-    var toll_road: String = js.native
+    var toll_road: String
     
     /**
       * 此段收费，单位：元
       */
-    var tolls: Double = js.native
+    var tolls: Double
   }
   object DriveStep {
     
@@ -427,12 +425,11 @@ object Driving {
     }
   }
   
-  @js.native
   trait EventMap extends StObject {
     
-    var complete: Event_[typings.amapJsApiDriving.amapJsApiDrivingStrings.complete, SearchResult | Info] = js.native
+    var complete: Event_[typings.amapJsApiDriving.amapJsApiDrivingStrings.complete, SearchResult | Info]
     
-    var error: Event_[typings.amapJsApiDriving.amapJsApiDrivingStrings.error, Info] = js.native
+    var error: Event_[typings.amapJsApiDriving.amapJsApiDrivingStrings.error, Info]
   }
   object EventMap {
     
@@ -453,75 +450,74 @@ object Driving {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 于控制在路径规划结束后，是否自动调整地图视野使绘制的路线处于视口的可见范围
       */
-    var autoFitView: js.UndefOr[Boolean] = js.native
+    var autoFitView: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 返回信息种类
       * 默认值：base，返回基本地址信息
       * 当取值为：all，返回DriveStep基本信息+DriveStep详细信息
       */
-    var extensions: js.UndefOr[base | all] = js.native
+    var extensions: js.UndefOr[base | all] = js.undefined
     
     /**
       * 默认为0，表示可以使用轮渡，为1的时候表示不可以使用轮渡
       */
-    var ferry: js.UndefOr[Boolean] = js.native
+    var ferry: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 设置隐藏路径规划的起始点图标
       */
-    var hideMarkers: js.UndefOr[Boolean] = js.native
+    var hideMarkers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 使用map属性时，绘制的规划线路是否显示描边。缺省为true
       */
-    var isOutline: js.UndefOr[Boolean] = js.native
+    var isOutline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * AMap.Map对象
       * 展现结果的地图实例。当指定此参数后，搜索结果的标注、线路等均会自动添加到此地图上。
       */
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
     /**
       * 除省份之外车牌的字母和数字，用于判断限行相关，与province属性组合使用。
       */
-    var number: js.UndefOr[String] = js.native
+    var number: js.UndefOr[String] = js.undefined
     
     /**
       * 使用map属性时，绘制的规划线路的描边颜色。缺省为'white'
       */
-    var outlineColor: js.UndefOr[String] = js.native
+    var outlineColor: js.UndefOr[String] = js.undefined
     
     /**
       * 结果列表的HTML容器id或容器元素，提供此参数后，结果列表将在此容器中进行展示。
       */
-    var panel: js.UndefOr[String | HTMLElement] = js.native
+    var panel: js.UndefOr[String | HTMLElement] = js.undefined
     
     /**
       * 驾车路线规划策略
       */
-    var policy: js.UndefOr[DrivingPolicy] = js.native
+    var policy: js.UndefOr[DrivingPolicy] = js.undefined
     
     /**
       * 车牌省份的汉字缩写，用于判断是否限行，与number属性组合使用。
       */
-    var province: js.UndefOr[String] = js.native
+    var province: js.UndefOr[String] = js.undefined
     
     // internal
-    var showDir: js.UndefOr[Boolean] = js.native
+    var showDir: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 设置是否显示实时路况信息，默认设置为true。
       * 显示绿色代表畅通，黄色代表轻微拥堵，红色代表比较拥堵，灰色表示无路况信息。
       */
-    var showTraffic: js.UndefOr[Boolean] = js.native
+    var showTraffic: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -614,14 +610,13 @@ object Driving {
     }
   }
   
-  @js.native
   trait Poi extends StObject {
     
-    var location: LngLat = js.native
+    var location: LngLat
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: start | end | waypoint = js.native
+    var `type`: start | end | waypoint
   }
   object Poi {
     
@@ -646,13 +641,12 @@ object Driving {
     }
   }
   
-  @js.native
   trait SearchOptions extends StObject {
     
     /**
       * 途经点
       */
-    var waypoints: js.UndefOr[js.Array[LocationValue]] = js.native
+    var waypoints: js.UndefOr[js.Array[LocationValue]] = js.undefined
   }
   object SearchOptions {
     
@@ -676,18 +670,17 @@ object Driving {
     }
   }
   
-  @js.native
   trait SearchPoint extends StObject {
     
     /**
       * 城市
       */
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
     /**
       * 关键词
       */
-    var keyword: String = js.native
+    var keyword: String
   }
   object SearchPoint {
     
@@ -742,32 +735,32 @@ object Driving {
       originName: String,
       routes: js.Array[DriveRoute],
       start: PoiExt,
-      waypoints: js.Array[PoiExt with IsWaypoint]
+      waypoints: js.Array[PoiExt & IsWaypoint]
     ): typings.amapJsApiDriving.AMap.Driving.SearchResultExt = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], originName = originName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.amapJsApiDriving.AMap.Driving.SearchResultExt]
     }
   }
   
-  @js.native
   trait SearchResultBase
-    extends SearchResultCommon
+    extends StObject
+       with SearchResultCommon
        with SearchResult {
     
     /**
       * 驾车规划终点
       */
-    var end: Poi = js.native
+    var end: Poi
     
     /**
       * 驾车规划起点
       */
-    var start: Poi = js.native
+    var start: Poi
     
     /**
       * 驾车规划途经点
       */
-    var waypoints: js.Array[PoiisWaypointboolean] = js.native
+    var waypoints: js.Array[PoiisWaypointboolean]
   }
   object SearchResultBase {
     
@@ -802,34 +795,33 @@ object Driving {
     }
   }
   
-  @js.native
   trait SearchResultCommon extends StObject {
     
     /**
       * 驾车规划终点坐标
       */
-    var destination: LngLat = js.native
+    var destination: LngLat
     
     /**
       * 成功状态说明
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * 驾车规划起点坐标
       */
-    var origin: LngLat = js.native
+    var origin: LngLat
     
     /**
       * 驾车规划路线列表
       */
-    var routes: js.Array[DriveRoute] = js.native
+    var routes: js.Array[DriveRoute]
     
     /**
       * 打车费用，仅extensions为“all”时返回
       * 单位：元
       */
-    var taxi_cost: js.UndefOr[Double] = js.native
+    var taxi_cost: js.UndefOr[Double] = js.undefined
   }
   object SearchResultCommon {
     
@@ -865,35 +857,35 @@ object Driving {
     }
   }
   
-  @js.native
   trait SearchResultExt
-    extends SearchResultCommon
+    extends StObject
+       with SearchResultCommon
        with SearchResult {
     
     /**
       * 驾车规划终点名称
       */
-    var destinationName: String = js.native
+    var destinationName: String
     
     /**
       * 驾车规划终点
       */
-    var end: PoiExt = js.native
+    var end: PoiExt
     
     /**
       * 驾车规划起点名称
       */
-    var originName: String = js.native
+    var originName: String
     
     /**
       * 驾车规划起点
       */
-    var start: PoiExt = js.native
+    var start: PoiExt
     
     /**
       * 驾车规划途经点
       */
-    var waypoints: js.Array[PoiExt with IsWaypoint] = js.native
+    var waypoints: js.Array[PoiExt & IsWaypoint]
   }
   object SearchResultExt {
     
@@ -907,7 +899,7 @@ object Driving {
       originName: String,
       routes: js.Array[DriveRoute],
       start: PoiExt,
-      waypoints: js.Array[PoiExt with IsWaypoint]
+      waypoints: js.Array[PoiExt & IsWaypoint]
     ): SearchResultExt = {
       val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destinationName = destinationName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], originName = originName.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchResultExt]
@@ -929,10 +921,10 @@ object Driving {
       def setStart(value: PoiExt): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWaypoints(value: js.Array[PoiExt with IsWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+      def setWaypoints(value: js.Array[PoiExt & IsWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWaypointsVarargs(value: (PoiExt with IsWaypoint)*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+      def setWaypointsVarargs(value: (PoiExt & IsWaypoint)*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
     }
   }
   
@@ -954,29 +946,28 @@ object Driving {
     def no_data: typings.amapJsApiDriving.amapJsApiDrivingStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiDriving.amapJsApiDrivingStrings.no_data]
   }
   
-  @js.native
   trait TMC extends StObject {
     
     /**
       * 此lcode对应的路段长度，单位: 米
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 路况信息对应的编码
       * 如果direction是正向 lcode返回值大于0；否则lcode，返回值小于0；
       * 如果返回0则说明此路段无lcode
       */
-    var lcode: String | js.Array[scala.Nothing] = js.native
+    var lcode: String | js.Array[scala.Nothing]
     
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
-    var polyline: String = js.native
+    var polyline: String
     
     /**
       * 路况状态，可能的值有：未知，畅通，缓行，拥堵
       */
-    var status: String = js.native
+    var status: String
   }
   object TMC {
     
@@ -1018,12 +1009,11 @@ object Driving {
     }
   }
   
-  @js.native
   trait TMCsPath extends StObject {
     
-    var path: js.Array[LngLat] = js.native
+    var path: js.Array[LngLat]
     
-    var status: String = js.native
+    var status: String
   }
   object TMCsPath {
     
@@ -1047,28 +1037,27 @@ object Driving {
     }
   }
   
-  @js.native
   trait ViaCity extends StObject {
     
     /**
       * 区域编码
       */
-    var adcode: String = js.native
+    var adcode: String
     
     /**
       * 城市编码
       */
-    var citycode: String = js.native
+    var citycode: String
     
     /**
       * 途径行政区列表
       */
-    var districts: js.Array[District] = js.native
+    var districts: js.Array[District]
     
     /**
       * 途径名称
       */
-    var name: String = js.native
+    var name: String
   }
   object ViaCity {
     

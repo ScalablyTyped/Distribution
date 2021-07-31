@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts$Filtersets")
@@ -39,7 +38,7 @@ class ResourceBiddersAccountsFiltersets protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaFilterSet] = js.native
   def create(callback: BodyResponseCallback[SchemaFilterSet]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilterSet] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilterSet] = js.native
   def create(params: ParamsResourceBiddersAccountsFiltersetsCreate): GaxiosPromise[SchemaFilterSet] = js.native
   def create(
     params: ParamsResourceBiddersAccountsFiltersetsCreate,
@@ -72,7 +71,7 @@ class ResourceBiddersAccountsFiltersets protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBiddersAccountsFiltersetsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBiddersAccountsFiltersetsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -106,7 +105,7 @@ class ResourceBiddersAccountsFiltersets protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFilterSet] = js.native
   def get(callback: BodyResponseCallback[SchemaFilterSet]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilterSet] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFilterSet] = js.native
   def get(params: ParamsResourceBiddersAccountsFiltersetsGet): GaxiosPromise[SchemaFilterSet] = js.native
   def get(
     params: ParamsResourceBiddersAccountsFiltersetsGet,
@@ -142,7 +141,7 @@ class ResourceBiddersAccountsFiltersets protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListFilterSetsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFilterSetsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFilterSetsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListFilterSetsResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsList): GaxiosPromise[SchemaListFilterSetsResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsList,

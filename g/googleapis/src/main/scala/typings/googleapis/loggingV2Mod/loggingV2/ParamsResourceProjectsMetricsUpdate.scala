@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsMetricsUpdate extends StandardParameters {
+trait ParamsResourceProjectsMetricsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The resource name of the metric to update:
@@ -24,12 +24,12 @@ trait ParamsResourceProjectsMetricsUpdate extends StandardParameters {
     * [METRIC_ID] If the metric does not exist in [PROJECT_ID], then a new
     * metric is created.
     */
-  var metricName: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaLogMetric] = js.native
+  var requestBody: js.UndefOr[SchemaLogMetric] = js.undefined
 }
 object ParamsResourceProjectsMetricsUpdate {
   

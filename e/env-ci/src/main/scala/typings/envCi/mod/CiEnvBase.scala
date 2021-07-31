@@ -3,19 +3,17 @@ package typings.envCi.mod
 import typings.envCi.envCiBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CiEnvBase extends StObject {
   
-  var isCi: `true` = js.native
+  var isCi: `true`
 }
 object CiEnvBase {
   
   @scala.inline
-  def apply(isCi: `true`): CiEnvBase = {
-    val __obj = js.Dynamic.literal(isCi = isCi.asInstanceOf[js.Any])
+  def apply(): CiEnvBase = {
+    val __obj = js.Dynamic.literal(isCi = true)
     __obj.asInstanceOf[CiEnvBase]
   }
   

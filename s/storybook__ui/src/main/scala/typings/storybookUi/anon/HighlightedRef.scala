@@ -5,27 +5,25 @@ import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookUi.sidebarTypesMod.ItemRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightedRef extends StObject {
   
-  var data: StoriesHash = js.native
+  var data: StoriesHash
   
-  var highlightedRef: MutableRefObject[ItemRef] = js.native
+  var highlightedRef: MutableRefObject[ItemRef]
   
-  var isBrowsing: Boolean = js.native
+  var isBrowsing: Boolean
   
-  var isMain: Boolean = js.native
+  var isMain: Boolean
   
-  def onSelectStoryId(storyId: String): Unit = js.native
+  def onSelectStoryId(storyId: String): Unit
   
-  var refId: String = js.native
+  var refId: String
   
-  var selectedStoryId: String = js.native
+  var selectedStoryId: String
   
-  def setHighlightedItemId(itemId: String): Unit = js.native
+  def setHighlightedItemId(itemId: String): Unit
 }
 object HighlightedRef {
   

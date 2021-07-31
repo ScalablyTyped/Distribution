@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The duration in milliseconds of
     * the fade out effect.
     */
-  var hideDuration: js.UndefOr[Double] = js.native
+  var hideDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the loading label
     * `span`.
     */
-  var labelStyle: js.UndefOr[CSSObject] = js.native
+  var labelStyle: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The duration in milliseconds of
     * the fade in effect.
     */
-  var showDuration: js.UndefOr[Double] = js.native
+  var showDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the loading
@@ -33,7 +31,7 @@ trait LoadingOptions extends StObject {
     * In styled mode, the loading label is styled with the
     * `.highcharts-loading` class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
 }
 object LoadingOptions {
   

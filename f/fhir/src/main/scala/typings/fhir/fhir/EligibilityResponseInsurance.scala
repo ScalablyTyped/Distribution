@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details by insurance coverage
   */
-@js.native
-trait EligibilityResponseInsurance extends BackboneElement {
+trait EligibilityResponseInsurance
+  extends StObject
+     with BackboneElement {
   
   /**
     * Benefits by Category
     */
-  var benefitBalance: js.UndefOr[js.Array[EligibilityResponseInsuranceBenefitBalance]] = js.native
+  var benefitBalance: js.UndefOr[js.Array[EligibilityResponseInsuranceBenefitBalance]] = js.undefined
   
   /**
     * Contract details
     */
-  var contract: js.UndefOr[Reference] = js.native
+  var contract: js.UndefOr[Reference] = js.undefined
   
   /**
     * Updated Coverage details
     */
-  var coverage: js.UndefOr[Reference] = js.native
+  var coverage: js.UndefOr[Reference] = js.undefined
 }
 object EligibilityResponseInsurance {
   

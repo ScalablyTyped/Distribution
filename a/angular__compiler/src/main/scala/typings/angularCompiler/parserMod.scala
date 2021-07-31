@@ -38,7 +38,6 @@ import typings.angularCompiler.lexerMod.Lexer
 import typings.angularCompiler.lexerMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
@@ -458,25 +457,26 @@ object parserMod {
     def visitPipe(): Unit = js.native
   }
   
-  @js.native
-  trait SimpleExpressionChecker extends AstVisitor {
+  trait SimpleExpressionChecker
+    extends StObject
+       with AstVisitor {
     
-    var errors: js.Array[String] = js.native
+    var errors: js.Array[String]
     
-    def visitAll(asts: js.Array[_], context: js.Any): js.Array[_] = js.native
+    def visitAll(asts: js.Array[js.Any], context: js.Any): js.Array[js.Any]
     
     @JSName("visitThisReceiver")
-    def visitThisReceiver_MSimpleExpressionChecker(ast: ThisReceiver, context: js.Any): Unit = js.native
+    def visitThisReceiver_MSimpleExpressionChecker(ast: ThisReceiver, context: js.Any): Unit
     
     @JSName("visitUnary")
-    def visitUnary_MSimpleExpressionChecker(ast: Unary, context: js.Any): Unit = js.native
+    def visitUnary_MSimpleExpressionChecker(ast: Unary, context: js.Any): Unit
   }
   object SimpleExpressionChecker {
     
     @scala.inline
     def apply(
       errors: js.Array[String],
-      visitAll: (js.Array[_], js.Any) => js.Array[_],
+      visitAll: (js.Array[js.Any], js.Any) => js.Array[js.Any],
       visitBinary: (Binary, js.Any) => js.Any,
       visitChain: (Chain, js.Any) => js.Any,
       visitConditional: (Conditional, js.Any) => js.Any,
@@ -514,7 +514,7 @@ object parserMod {
       def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
       @scala.inline
-      def setVisitAll(value: (js.Array[_], js.Any) => js.Array[_]): Self = StObject.set(x, "visitAll", js.Any.fromFunction2(value))
+      def setVisitAll(value: (js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "visitAll", js.Any.fromFunction2(value))
       
       @scala.inline
       def setVisitThisReceiver(value: (ThisReceiver, js.Any) => Unit): Self = StObject.set(x, "visitThisReceiver", js.Any.fromFunction2(value))

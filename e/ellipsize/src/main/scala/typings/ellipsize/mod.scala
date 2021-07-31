@@ -3,82 +3,18 @@ package typings.ellipsize
 import typings.ellipsize.anon.Chars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
-  def apply(
-    /**
-    * text to ellipsize.
-    */
-  text: js.UndefOr[scala.Nothing],
-    /**
-    * maxLength of the text before it is ellipsized (default: 140)
-    */
-  maxLength: js.UndefOr[scala.Nothing],
-    /**
-    * additional options to customize the result and rules
-    */
-  options: Chars
-  ): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
-  def apply(
-    /**
-    * text to ellipsize.
-    */
-  text: js.UndefOr[scala.Nothing],
-    /**
-    * maxLength of the text before it is ellipsized (default: 140)
-    */
-  maxLength: Double
-  ): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
-  def apply(
-    /**
-    * text to ellipsize.
-    */
-  text: js.UndefOr[scala.Nothing],
-    /**
-    * maxLength of the text before it is ellipsized (default: 140)
-    */
-  maxLength: Double,
-    /**
-    * additional options to customize the result and rules
-    */
-  options: Chars
-  ): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
   def apply(/**
     * text to ellipsize.
     */
-  text: String): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
-  def apply(
-    /**
-    * text to ellipsize.
-    */
-  text: String,
-    /**
-    * maxLength of the text before it is ellipsized (default: 140)
-    */
-  maxLength: js.UndefOr[scala.Nothing],
-    /**
-    * additional options to customize the result and rules
-    */
-  options: Chars
-  ): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
+  text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def apply(
     /**
     * text to ellipsize.
@@ -88,9 +24,8 @@ object mod {
     * maxLength of the text before it is ellipsized (default: 140)
     */
   maxLength: Double
-  ): String = js.native
-  @JSImport("ellipsize", JSImport.Namespace)
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def apply(
     /**
     * text to ellipsize.
@@ -104,5 +39,65 @@ object mod {
     * additional options to customize the result and rules
     */
   options: Chars
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    /**
+    * text to ellipsize.
+    */
+  text: String,
+    /**
+    * maxLength of the text before it is ellipsized (default: 140)
+    */
+  maxLength: Unit,
+    /**
+    * additional options to customize the result and rules
+    */
+  options: Chars
+  ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    /**
+    * text to ellipsize.
+    */
+  text: Unit,
+    /**
+    * maxLength of the text before it is ellipsized (default: 140)
+    */
+  maxLength: Double
+  ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    /**
+    * text to ellipsize.
+    */
+  text: Unit,
+    /**
+    * maxLength of the text before it is ellipsized (default: 140)
+    */
+  maxLength: Double,
+    /**
+    * additional options to customize the result and rules
+    */
+  options: Chars
+  ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(
+    /**
+    * text to ellipsize.
+    */
+  text: Unit,
+    /**
+    * maxLength of the text before it is ellipsized (default: 140)
+    */
+  maxLength: Unit,
+    /**
+    * additional options to customize the result and rules
+    */
+  options: Chars
+  ): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("ellipsize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

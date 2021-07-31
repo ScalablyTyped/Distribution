@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.MaxPoolAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.MaxPoolInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsMaxPoolAttrs extends StObject {
   
-  var attrs: MaxPoolAttrs = js.native
+  var attrs: MaxPoolAttrs
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: MaxPoolInputs = js.native
+  var inputs: MaxPoolInputs
 }
 object AttrsMaxPoolAttrs {
   

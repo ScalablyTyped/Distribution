@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedEvent extends StObject {
   
   /** The human-readable description of the cause of the failure. */
-  var cause: js.UndefOr[String] = js.native
+  var cause: js.UndefOr[String] = js.undefined
   
   /** The Google standard error code that best describes this failure. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object FailedEvent {
   

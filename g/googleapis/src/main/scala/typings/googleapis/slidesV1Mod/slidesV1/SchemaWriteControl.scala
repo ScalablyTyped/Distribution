@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides control over how write requests are executed.
   */
-@js.native
 trait SchemaWriteControl extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaWriteControl extends StObject {
     * presentation&#39;s current `revision_id`, the request will not be
     * processed and will return a 400 bad request error.
     */
-  var requiredRevisionId: js.UndefOr[String] = js.native
+  var requiredRevisionId: js.UndefOr[String] = js.undefined
 }
 object SchemaWriteControl {
   

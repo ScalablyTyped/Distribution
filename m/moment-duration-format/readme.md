@@ -11,8 +11,8 @@ A moment.js plugin for formatting durations.
 | Full name          | moment-duration-format |
 | Keywords           | moment, duration, format |
 | # releases         | 4 |
-| # dependents       | 254 |
-| # downloads        | 9841870 |
+| # dependents       | 274 |
+| # downloads        | 11031284 |
 | # stars            | 6 |
 
 ## Links

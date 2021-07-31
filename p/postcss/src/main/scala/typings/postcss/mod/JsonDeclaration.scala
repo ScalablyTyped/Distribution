@@ -2,16 +2,16 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JsonDeclaration extends JsonNode {
+trait JsonDeclaration
+  extends StObject
+     with JsonNode {
   
   /**
     * True if the declaration has an !important annotation.
     */
-  var important: js.UndefOr[Boolean] = js.native
+  var important: js.UndefOr[Boolean] = js.undefined
 }
 object JsonDeclaration {
   

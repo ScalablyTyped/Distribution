@@ -3,15 +3,13 @@ package typings.kiiCloudSdk.anon
 import typings.kiiCloudSdk.KiiCloud.KiiBucket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `7` extends StObject {
   
-  def failure(bucketToDelete: KiiBucket, anErrorString: String): js.Any = js.native
+  def failure(bucketToDelete: KiiBucket, anErrorString: String): js.Any
   
-  def success(deletedBucket: KiiBucket): js.Any = js.native
+  def success(deletedBucket: KiiBucket): js.Any
 }
 object `7` {
   

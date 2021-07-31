@@ -5,7 +5,6 @@ import typings.fastCsvParse.tokenMod.MaybeToken
 import typings.fastCsvParse.tokenMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scannerMod {
@@ -44,16 +43,15 @@ object scannerMod {
     def truncateToCursor(): Scanner = js.native
   }
   
-  @js.native
   trait ScannerArgs extends StObject {
     
-    var cursor: js.UndefOr[Double] = js.native
+    var cursor: js.UndefOr[Double] = js.undefined
     
-    var hasMoreData: Boolean = js.native
+    var hasMoreData: Boolean
     
-    var line: String = js.native
+    var line: String
     
-    var parserOptions: ParserOptions = js.native
+    var parserOptions: ParserOptions
   }
   object ScannerArgs {
     

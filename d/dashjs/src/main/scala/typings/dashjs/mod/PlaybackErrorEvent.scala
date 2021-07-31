@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.playbackError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlaybackErrorEvent extends Event {
+trait PlaybackErrorEvent
+  extends StObject
+     with Event {
   
-  var error: String = js.native
+  var error: String
   
   @JSName("type")
-  var type_PlaybackErrorEvent: playbackError = js.native
+  var type_PlaybackErrorEvent: playbackError
 }
 object PlaybackErrorEvent {
   
   @scala.inline
-  def apply(error: String, `type`: playbackError): PlaybackErrorEvent = {
+  def apply(error: String): PlaybackErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("playbackError")
     __obj.asInstanceOf[PlaybackErrorEvent]
   }
   

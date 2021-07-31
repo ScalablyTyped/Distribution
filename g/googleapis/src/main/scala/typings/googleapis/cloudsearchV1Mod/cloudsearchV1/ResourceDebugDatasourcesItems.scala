@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Debug$Datasources$Items")
@@ -30,7 +29,7 @@ class ResourceDebugDatasourcesItems protected () extends StObject {
     */
   def checkAccess(): GaxiosPromise[SchemaCheckAccessResponse] = js.native
   def checkAccess(callback: BodyResponseCallback[SchemaCheckAccessResponse]): Unit = js.native
-  def checkAccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCheckAccessResponse] = js.native
+  def checkAccess(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCheckAccessResponse] = js.native
   def checkAccess(params: ParamsResourceDebugDatasourcesItemsCheckaccess): GaxiosPromise[SchemaCheckAccessResponse] = js.native
   def checkAccess(
     params: ParamsResourceDebugDatasourcesItemsCheckaccess,
@@ -66,7 +65,7 @@ class ResourceDebugDatasourcesItems protected () extends StObject {
     */
   def searchByViewUrl(): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
   def searchByViewUrl(callback: BodyResponseCallback[SchemaSearchItemsByViewUrlResponse]): Unit = js.native
-  def searchByViewUrl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
+  def searchByViewUrl(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
   def searchByViewUrl(params: ParamsResourceDebugDatasourcesItemsSearchbyviewurl): GaxiosPromise[SchemaSearchItemsByViewUrlResponse] = js.native
   def searchByViewUrl(
     params: ParamsResourceDebugDatasourcesItemsSearchbyviewurl,

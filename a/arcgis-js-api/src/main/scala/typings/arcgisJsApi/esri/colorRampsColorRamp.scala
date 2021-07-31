@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait colorRampsColorRamp extends Object {
+trait colorRampsColorRamp
+  extends StObject
+     with Object {
   
   /**
     * An array of five colors intended for displaying a continuous color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * Contains an array of ramps ranging in size from 1 color to 10 colors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
     */
-  var colorsForClassBreaks: js.Array[ColorRampColorsForClassBreaks] = js.native
+  var colorsForClassBreaks: js.Array[ColorRampColorsForClassBreaks]
   
   /**
     * The unique name of the color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Tags associated with the color ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#ColorRamp)
     */
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
 }
 object colorRampsColorRamp {
   

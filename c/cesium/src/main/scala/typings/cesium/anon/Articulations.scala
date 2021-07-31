@@ -10,53 +10,51 @@ import typings.cesium.mod.PropertyBag
 import typings.cesium.mod.ShadowMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Articulations extends StObject {
   
-  var articulations: js.UndefOr[PropertyBag] = js.native
+  var articulations: js.UndefOr[PropertyBag] = js.undefined
   
-  var clampAnimations: js.UndefOr[Property | Boolean] = js.native
+  var clampAnimations: js.UndefOr[Property | Boolean] = js.undefined
   
-  var clippingPlanes: js.UndefOr[Property | ClippingPlaneCollection] = js.native
+  var clippingPlanes: js.UndefOr[Property | ClippingPlaneCollection] = js.undefined
   
-  var color: js.UndefOr[Property | typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[Property | typings.cesium.mod.Color] = js.undefined
   
-  var colorBlendAmount: js.UndefOr[Property | Double] = js.native
+  var colorBlendAmount: js.UndefOr[Property | Double] = js.undefined
   
-  var colorBlendMode: js.UndefOr[Property | ColorBlendMode] = js.native
+  var colorBlendMode: js.UndefOr[Property | ColorBlendMode] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[Property | typings.cesium.mod.DistanceDisplayCondition] = js.native
+  var distanceDisplayCondition: js.UndefOr[Property | typings.cesium.mod.DistanceDisplayCondition] = js.undefined
   
-  var heightReference: js.UndefOr[Property | HeightReference] = js.native
+  var heightReference: js.UndefOr[Property | HeightReference] = js.undefined
   
-  var imageBasedLightingFactor: js.UndefOr[Property | Cartesian2] = js.native
+  var imageBasedLightingFactor: js.UndefOr[Property | Cartesian2] = js.undefined
   
-  var incrementallyLoadTextures: js.UndefOr[Property | Boolean] = js.native
+  var incrementallyLoadTextures: js.UndefOr[Property | Boolean] = js.undefined
   
-  var lightColor: js.UndefOr[Property | Cartesian3] = js.native
+  var lightColor: js.UndefOr[Property | Cartesian3] = js.undefined
   
-  var maximumScale: js.UndefOr[Property | Double] = js.native
+  var maximumScale: js.UndefOr[Property | Double] = js.undefined
   
-  var minimumPixelSize: js.UndefOr[Property | Double] = js.native
+  var minimumPixelSize: js.UndefOr[Property | Double] = js.undefined
   
-  var nodeTransformations: js.UndefOr[PropertyBag] = js.native
+  var nodeTransformations: js.UndefOr[PropertyBag] = js.undefined
   
-  var runAnimations: js.UndefOr[Property | Boolean] = js.native
+  var runAnimations: js.UndefOr[Property | Boolean] = js.undefined
   
-  var scale: js.UndefOr[Property | Double] = js.native
+  var scale: js.UndefOr[Property | Double] = js.undefined
   
-  var shadows: js.UndefOr[Property | ShadowMode] = js.native
+  var shadows: js.UndefOr[Property | ShadowMode] = js.undefined
   
-  var show: js.UndefOr[Property | Boolean] = js.native
+  var show: js.UndefOr[Property | Boolean] = js.undefined
   
-  var silhouetteColor: js.UndefOr[Property | typings.cesium.mod.Color] = js.native
+  var silhouetteColor: js.UndefOr[Property | typings.cesium.mod.Color] = js.undefined
   
-  var silhouetteSize: js.UndefOr[Property | Double] = js.native
+  var silhouetteSize: js.UndefOr[Property | Double] = js.undefined
   
-  var uri: js.UndefOr[Property | String] = js.native
+  var uri: js.UndefOr[Property | String] = js.undefined
 }
 object Articulations {
   

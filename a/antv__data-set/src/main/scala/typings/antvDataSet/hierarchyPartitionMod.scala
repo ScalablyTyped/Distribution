@@ -2,27 +2,25 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hierarchyPartitionMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var as: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

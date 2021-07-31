@@ -2,51 +2,49 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDevEndpointRequest extends StObject {
   
   /**
     * The map of arguments to add the map of arguments used to configure the DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
-  var AddArguments: js.UndefOr[MapValue] = js.native
+  var AddArguments: js.UndefOr[MapValue] = js.undefined
   
   /**
     * The list of public keys for the DevEndpoint to use.
     */
-  var AddPublicKeys: js.UndefOr[PublicKeysList] = js.native
+  var AddPublicKeys: js.UndefOr[PublicKeysList] = js.undefined
   
   /**
     * Custom Python or Java libraries to be loaded in the DevEndpoint.
     */
-  var CustomLibraries: js.UndefOr[DevEndpointCustomLibraries] = js.native
+  var CustomLibraries: js.UndefOr[DevEndpointCustomLibraries] = js.undefined
   
   /**
     * The list of argument keys to be deleted from the map of arguments used to configure the DevEndpoint.
     */
-  var DeleteArguments: js.UndefOr[StringList] = js.native
+  var DeleteArguments: js.UndefOr[StringList] = js.undefined
   
   /**
     * The list of public keys to be deleted from the DevEndpoint.
     */
-  var DeletePublicKeys: js.UndefOr[PublicKeysList] = js.native
+  var DeletePublicKeys: js.UndefOr[PublicKeysList] = js.undefined
   
   /**
     * The name of the DevEndpoint to be updated.
     */
-  var EndpointName: GenericString = js.native
+  var EndpointName: GenericString
   
   /**
     * The public key for the DevEndpoint to use.
     */
-  var PublicKey: js.UndefOr[GenericString] = js.native
+  var PublicKey: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  True if the list of custom libraries to be loaded in the development endpoint needs to be updated, or False if otherwise.
     */
-  var UpdateEtlLibraries: js.UndefOr[BooleanValue] = js.native
+  var UpdateEtlLibraries: js.UndefOr[BooleanValue] = js.undefined
 }
 object UpdateDevEndpointRequest {
   

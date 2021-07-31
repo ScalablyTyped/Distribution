@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The functionality described in this topic is not available to all Windows and Windows Phone apps. For your code to call these APIs, Microsoft must approve your use of them and provision your developer account. Otherwise the calls will fail at runtime. */
-@js.native
 trait EmailMailboxChange extends StObject {
   
   /** Gets the type of change that was made to the mailbox. This includes whether it was a folder or message that was changed and whether the item was created, deleted, or modified, or if change tracking was lost for this change. */
-  var changeType: EmailMailboxChangeType = js.native
+  var changeType: EmailMailboxChangeType
   
   /** Gets the folder to which the change applies. */
-  var folder: EmailFolder = js.native
+  var folder: EmailFolder
   
   /** Gets the flags that indicate what actions have been affected on the mailbox. */
-  var mailboxActions: IVector[EmailMailboxAction] = js.native
+  var mailboxActions: IVector[EmailMailboxAction]
   
   /** Gets the message to which the change applies. */
-  var message: EmailMessage = js.native
+  var message: EmailMessage
 }
 object EmailMailboxChange {
   

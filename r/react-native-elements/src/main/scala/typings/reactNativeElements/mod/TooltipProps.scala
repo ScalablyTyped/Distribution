@@ -7,102 +7,100 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipProps extends StObject {
   
   /**
     *  Override React Native `Modal` component (usable for web-platform)
     */
-  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * sets backgroundColor of the tooltip and pointer.
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Disable auto hiding of tooltip when touching/scrolling anywhere inside the active tooltip popover container. Tooltip closes only when overlay backdrop is pressed (or) highlighted tooltip button is pressed
     */
-  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.native
+  var closeOnlyOnBackdropPress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Passes style object to tooltip container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Tooltip container height. Necessary in order to render the container in the correct place. Pass height according to the size of the content rendered inside the container.
     * @default 40
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Color to highlight the item the tooltip is surrounding.
     */
-  var highlightColor: js.UndefOr[String] = js.native
+  var highlightColor: js.UndefOr[String] = js.undefined
   
   /**
     * function which gets called on closing the tooltip.
     */
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * function which gets called on opening the tooltip.
     */
-  var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     *  Color of overlay shadow when tooltip is open.
     *
     * @default 'rgba(250, 250, 250, 0.70)'
     */
-  var overlayColor: js.UndefOr[String] = js.native
+  var overlayColor: js.UndefOr[String] = js.undefined
   
   /**
     * Color of tooltip pointer, it defaults to the backgroundColor if none passed .
     */
-  var pointerColor: js.UndefOr[String] = js.native
+  var pointerColor: js.UndefOr[String] = js.undefined
   
   /**
     * Component to be rendered as the display container.
     */
-  var popover: js.UndefOr[ReactElement] = js.native
+  var popover: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Force skip StatusBar height when calculating yOffset of element position (usable inside Modal on Android)
     */
-  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.native
+  var skipAndroidStatusBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * To determine whether to activate tooltip by onPress or onLongPress.
     */
-  var toggleAction: js.UndefOr[String] = js.native
+  var toggleAction: js.UndefOr[String] = js.undefined
   
   /**
     * Flag to determine to toggle or not the tooltip on press.
     */
-  var toggleOnPress: js.UndefOr[Boolean] = js.native
+  var toggleOnPress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Tooltip container width. Necessary in order to render the container in the correct place. Pass height according to the size of the content rendered inside the container.
     * @default 150
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     *  Flag to determine whether or not dislay overlay shadow when tooltip is open.
     *
     * @default true
     */
-  var withOverlay: js.UndefOr[Boolean] = js.native
+  var withOverlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag to determine whether or not dislay pointer.
     */
-  var withPointer: js.UndefOr[Boolean] = js.native
+  var withPointer: js.UndefOr[Boolean] = js.undefined
 }
 object TooltipProps {
   

@@ -2,48 +2,46 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadFileOptions extends StObject {
   
   // An object of headers to be passed to the server
-  var background: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.undefined
   
   // supported on Android and iOS
-  var backgroundTimeout: js.UndefOr[Double] = js.native
+  var backgroundTimeout: js.UndefOr[Double] = js.undefined
   
-  var begin: js.UndefOr[js.Function1[/* res */ DownloadBeginCallbackResult, Unit]] = js.native
+  var begin: js.UndefOr[js.Function1[/* res */ DownloadBeginCallbackResult, Unit]] = js.undefined
   
   // Allow the OS to control the timing and speed of the download to improve perceived performance  (iOS only)
-  var cacheable: js.UndefOr[Boolean] = js.native
+  var cacheable: js.UndefOr[Boolean] = js.undefined
   
   // only supported on iOS yet
-  var connectionTimeout: js.UndefOr[Double] = js.native
+  var connectionTimeout: js.UndefOr[Double] = js.undefined
   
   // Continue the download in the background after the app terminates (iOS only)
-  var discretionary: js.UndefOr[Boolean] = js.native
+  var discretionary: js.UndefOr[Boolean] = js.undefined
   
-  var fromUrl: String = js.native
+  var fromUrl: String
   
   // Local filesystem path to save the file to
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
-  var progress: js.UndefOr[js.Function1[/* res */ DownloadProgressCallbackResult, Unit]] = js.native
+  var progress: js.UndefOr[js.Function1[/* res */ DownloadProgressCallbackResult, Unit]] = js.undefined
   
-  var progressDivider: js.UndefOr[Double] = js.native
+  var progressDivider: js.UndefOr[Double] = js.undefined
   
   // Whether the download can be stored in the shared NSURLCache (iOS only)
-  var progressInterval: js.UndefOr[Double] = js.native
+  var progressInterval: js.UndefOr[Double] = js.undefined
   
   // only supported on Android yet
-  var readTimeout: js.UndefOr[Double] = js.native
+  var readTimeout: js.UndefOr[Double] = js.undefined
   
-  var resumable: js.UndefOr[js.Function0[Unit]] = js.native
+  var resumable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   // URL to download file from
-  var toFile: String = js.native
+  var toFile: String
 }
 object DownloadFileOptions {
   

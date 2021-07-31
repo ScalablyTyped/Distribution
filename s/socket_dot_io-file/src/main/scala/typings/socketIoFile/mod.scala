@@ -4,45 +4,48 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.socketIo.mod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("socket.io-file", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SocketIOFile {
+  class ^ protected ()
+    extends StObject
+       with SocketIOFile {
     def this(socket: Socket, options: Options) = this()
+    
+    /* CompleteClass */
+    override def on(event: String, cb: js.Function1[/* fileInfo */ FileInfo, Unit]): Unit = js.native
   }
   
-  @js.native
   trait FileInfo extends StObject {
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var estimated: Double = js.native
+    var estimated: Double
     
-    var mime: String = js.native
+    var mime: String
     
-    var name: String = js.native
+    var name: String
     
-    var originalFileName: String = js.native
+    var originalFileName: String
     
-    var path: String = js.native
+    var path: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var uploadDir: String = js.native
+    var uploadDir: String
     
-    var uploadId: String = js.native
+    var uploadId: String
     
-    var wrote: Double = js.native
+    var wrote: Double
   }
   object FileInfo {
     
     @scala.inline
     def apply(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       estimated: Double,
       mime: String,
       name: String,
@@ -61,7 +64,7 @@ object mod {
     implicit class FileInfoMutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -95,24 +98,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var accepts: js.UndefOr[js.Array[String]] = js.native
+    var accepts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var maxFileSize: js.UndefOr[Double] = js.native
+    var maxFileSize: js.UndefOr[Double] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var rename: js.UndefOr[js.Function2[/* fileName */ String, /* fileInfo */ FileInfo, String]] = js.native
+    var rename: js.UndefOr[js.Function2[/* fileName */ String, /* fileInfo */ FileInfo, String]] = js.undefined
     
-    var resume: js.UndefOr[Boolean] = js.native
+    var resume: js.UndefOr[Boolean] = js.undefined
     
-    var transmissionDelay: js.UndefOr[Double] = js.native
+    var transmissionDelay: js.UndefOr[Double] = js.undefined
     
-    var uploadDir: String | StringDictionary[String] = js.native
+    var uploadDir: String | StringDictionary[String]
   }
   object Options {
     
@@ -175,10 +177,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketIOFile extends StObject {
     
-    def on(event: String, cb: js.Function1[/* fileInfo */ FileInfo, Unit]): Unit = js.native
+    def on(event: String, cb: js.Function1[/* fileInfo */ FileInfo, Unit]): Unit
   }
   object SocketIOFile {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVaultLockOutput extends StObject {
   
   /**
     * The UTC date and time at which the vault lock was put into the InProgress state.
     */
-  var CreationDate: js.UndefOr[String] = js.native
+  var CreationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC date and time at which the lock ID expires. This value can be null if the vault lock is in a Locked state.
     */
-  var ExpirationDate: js.UndefOr[String] = js.native
+  var ExpirationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The vault lock policy as a JSON string, which uses "\" as an escape character.
     */
-  var Policy: js.UndefOr[String] = js.native
+  var Policy: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the vault lock. InProgress or Locked.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
 }
 object GetVaultLockOutput {
   

@@ -2,20 +2,18 @@ package typings.unityWebapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnityTrackMetadata extends StObject {
   
   // Optionals
-  var album: String = js.native
+  var album: String
   
-  var artLocation: String = js.native
+  var artLocation: String
   
-  var artist: String = js.native
+  var artist: String
   
-  var title: String = js.native
+  var title: String
 }
 object UnityTrackMetadata {
   

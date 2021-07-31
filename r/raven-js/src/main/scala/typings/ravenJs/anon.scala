@@ -3,22 +3,20 @@ package typings.ravenJs
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Error & {  request :std.XMLHttpRequest | undefined} */
-  @js.native
   trait ErrorrequestXMLHttpReques extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var request: js.UndefOr[XMLHttpRequest] = js.native
+    var request: js.UndefOr[XMLHttpRequest] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ErrorrequestXMLHttpReques {
     
@@ -51,14 +49,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Sentryclient extends StObject {
     
-    var sentry_client: String = js.native
+    var sentry_client: String
     
-    var sentry_key: String = js.native
+    var sentry_key: String
     
-    var sentry_version: String = js.native
+    var sentry_version: String
   }
   object Sentryclient {
     

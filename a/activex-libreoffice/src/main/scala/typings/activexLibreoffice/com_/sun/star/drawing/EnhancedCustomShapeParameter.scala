@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a single value which is used with EnhancedCustomShapes */
-@js.native
 trait EnhancedCustomShapeParameter extends StObject {
   
-  var Type: Double = js.native
+  var Type: Double
   
   /** the any can be of type long or double */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object EnhancedCustomShapeParameter {
   

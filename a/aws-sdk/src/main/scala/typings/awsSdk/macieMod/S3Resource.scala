@@ -2,21 +2,19 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Resource extends StObject {
   
   /**
     * The name of the S3 bucket.
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     * The prefix of the S3 bucket. 
     */
-  var prefix: js.UndefOr[Prefix] = js.native
+  var prefix: js.UndefOr[Prefix] = js.undefined
 }
 object S3Resource {
   

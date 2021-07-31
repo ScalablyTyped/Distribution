@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalShortcut extends StObject {
   
   // Docs: https://electronjs.org/docs/api/global-shortcut
@@ -16,7 +14,7 @@ trait GlobalShortcut extends StObject {
     * still return `false`. This behavior is intended by operating systems, since they
     * don't want applications to fight for global shortcuts.
     */
-  def isRegistered(accelerator: Accelerator): Boolean = js.native
+  def isRegistered(accelerator: Accelerator): Boolean
   
   /**
     * Whether or not the shortcut was registered successfully.
@@ -36,7 +34,7 @@ trait GlobalShortcut extends StObject {
   * "Media Previous Track"
   * "Media Stop"
     */
-  def register(accelerator: Accelerator, callback: js.Function0[Unit]): Boolean = js.native
+  def register(accelerator: Accelerator, callback: js.Function0[Unit]): Boolean
   
   /**
     * Registers a global shortcut of all `accelerator` items in `accelerators`. The
@@ -55,17 +53,17 @@ trait GlobalShortcut extends StObject {
   * "Media Previous Track"
   * "Media Stop"
     */
-  def registerAll(accelerators: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+  def registerAll(accelerators: js.Array[String], callback: js.Function0[Unit]): Unit
   
   /**
     * Unregisters the global shortcut of `accelerator`.
     */
-  def unregister(accelerator: Accelerator): Unit = js.native
+  def unregister(accelerator: Accelerator): Unit
   
   /**
     * Unregisters all of the global shortcuts.
     */
-  def unregisterAll(): Unit = js.native
+  def unregisterAll(): Unit
 }
 object GlobalShortcut {
   

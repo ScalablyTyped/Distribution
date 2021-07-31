@@ -3,24 +3,22 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Badge.BadgeClassKey>> */
-@js.native
 trait PartialStyleRulesBadgeCla extends StObject {
   
-  var badge: js.UndefOr[CSSProperties] = js.native
+  var badge: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
   
-  var dot: js.UndefOr[CSSProperties] = js.native
+  var dot: js.UndefOr[CSSProperties] = js.undefined
   
-  var invisible: js.UndefOr[CSSProperties] = js.native
+  var invisible: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesBadgeCla {
   

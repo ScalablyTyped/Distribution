@@ -2,35 +2,33 @@ package typings.hashset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashSet[TValue] extends StObject {
   
-  def add(value: TValue): Unit = js.native
+  def add(value: TValue): Unit
   
-  def addAll(arr: js.Array[TValue]): Unit = js.native
+  def addAll(arr: js.Array[TValue]): Unit
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def complement(set: IHashSet[TValue]): IHashSet[TValue] = js.native
+  def complement(set: IHashSet[TValue]): IHashSet[TValue]
   
-  def contains(value: TValue): Boolean = js.native
+  def contains(value: TValue): Boolean
   
-  def intersection(set: IHashSet[TValue]): IHashSet[TValue] = js.native
+  def intersection(set: IHashSet[TValue]): IHashSet[TValue]
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  def isSubsetOf(set: IHashSet[TValue]): Boolean = js.native
+  def isSubsetOf(set: IHashSet[TValue]): Boolean
   
-  def remove(value: TValue): Unit = js.native
+  def remove(value: TValue): Unit
   
-  def size(): Double = js.native
+  def size(): Double
   
-  def union(set: IHashSet[TValue]): IHashSet[TValue] = js.native
+  def union(set: IHashSet[TValue]): IHashSet[TValue]
   
-  def values(): js.Array[TValue] = js.native
+  def values(): js.Array[TValue]
 }
 object IHashSet {
   
@@ -54,7 +52,7 @@ object IHashSet {
   }
   
   @scala.inline
-  implicit class IHashSetMutableBuilder[Self <: IHashSet[_], TValue] (val x: Self with IHashSet[TValue]) extends AnyVal {
+  implicit class IHashSetMutableBuilder[Self <: IHashSet[?], TValue] (val x: Self & IHashSet[TValue]) extends AnyVal {
     
     @scala.inline
     def setAdd(value: TValue => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

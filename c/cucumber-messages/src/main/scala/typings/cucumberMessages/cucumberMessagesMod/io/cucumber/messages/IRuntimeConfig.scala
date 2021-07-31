@@ -2,26 +2,24 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a RuntimeConfig. */
-@js.native
 trait IRuntimeConfig extends StObject {
   
   /** RuntimeConfig isDryRun */
-  var isDryRun: js.UndefOr[Boolean | Null] = js.native
+  var isDryRun: js.UndefOr[Boolean | Null] = js.undefined
   
   /** RuntimeConfig isFailFast */
-  var isFailFast: js.UndefOr[Boolean | Null] = js.native
+  var isFailFast: js.UndefOr[Boolean | Null] = js.undefined
   
   /** RuntimeConfig isStrict */
-  var isStrict: js.UndefOr[Boolean | Null] = js.native
+  var isStrict: js.UndefOr[Boolean | Null] = js.undefined
   
   /** RuntimeConfig maxParallel */
   var maxParallel: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object IRuntimeConfig {
   

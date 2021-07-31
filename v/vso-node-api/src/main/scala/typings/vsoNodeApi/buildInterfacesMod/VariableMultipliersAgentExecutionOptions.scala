@@ -2,23 +2,23 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableMultipliersAgentExecutionOptions extends AgentTargetExecutionOptions {
+trait VariableMultipliersAgentExecutionOptions
+  extends StObject
+     with AgentTargetExecutionOptions {
   
   /**
     * Indicates whether failure on one agent should prevent the phase from running on other agents.
     */
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
   /**
     * The maximum number of agents to use in parallel.
     */
-  var maxConcurrency: Double = js.native
+  var maxConcurrency: Double
   
-  var multipliers: js.Array[String] = js.native
+  var multipliers: js.Array[String]
 }
 object VariableMultipliersAgentExecutionOptions {
   

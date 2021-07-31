@@ -2,19 +2,17 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0Identity extends StObject {
   
-  var connection: String = js.native
+  var connection: String
   
-  var isSocial: Boolean = js.native
+  var isSocial: Boolean
   
-  var provider: String = js.native
+  var provider: String
   
-  var user_id: String = js.native
+  var user_id: String
 }
 object Auth0Identity {
   

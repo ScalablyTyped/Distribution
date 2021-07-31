@@ -14,43 +14,41 @@ import typings.dockerode.dockerodeStrings.swarm
 import typings.dockerode.dockerodeStrings.volume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[js.Array[String]] = js.native
+  var container: js.UndefOr[js.Array[String]] = js.undefined
   
-  var daemon: js.UndefOr[js.Array[String]] = js.native
+  var daemon: js.UndefOr[js.Array[String]] = js.undefined
   
-  var event: js.UndefOr[js.Array[String]] = js.native
+  var event: js.UndefOr[js.Array[String]] = js.undefined
   
-  var image: js.UndefOr[js.Array[String]] = js.native
+  var image: js.UndefOr[js.Array[String]] = js.undefined
   
-  var label: js.UndefOr[js.Array[String]] = js.native
+  var label: js.UndefOr[js.Array[String]] = js.undefined
   
-  var network: js.UndefOr[js.Array[String]] = js.native
+  var network: js.UndefOr[js.Array[String]] = js.undefined
   
-  var node: js.UndefOr[js.Array[String]] = js.native
+  var node: js.UndefOr[js.Array[String]] = js.undefined
   
-  var plugin: js.UndefOr[js.Array[String]] = js.native
+  var plugin: js.UndefOr[js.Array[String]] = js.undefined
   
-  var scope: js.UndefOr[js.Array[local | swarm]] = js.native
+  var scope: js.UndefOr[js.Array[local | swarm]] = js.undefined
   
-  var secret: js.UndefOr[js.Array[String]] = js.native
+  var secret: js.UndefOr[js.Array[String]] = js.undefined
   
-  var service: js.UndefOr[js.Array[String]] = js.native
+  var service: js.UndefOr[js.Array[String]] = js.undefined
   
   var `type`: js.UndefOr[
     js.Array[
       container | image | volume | network | daemon | plugin | service | node | secret | config
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var volume: js.UndefOr[js.Array[String]] = js.native
+  var volume: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Container {
   

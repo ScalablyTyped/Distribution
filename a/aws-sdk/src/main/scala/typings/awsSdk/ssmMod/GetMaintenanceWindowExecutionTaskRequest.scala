@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMaintenanceWindowExecutionTaskRequest extends StObject {
   
   /**
     * The ID of the specific task execution in the maintenance window task that should be retrieved.
     */
-  var TaskId: MaintenanceWindowExecutionTaskId = js.native
+  var TaskId: MaintenanceWindowExecutionTaskId
   
   /**
     * The ID of the maintenance window execution that includes the task.
     */
-  var WindowExecutionId: MaintenanceWindowExecutionId = js.native
+  var WindowExecutionId: MaintenanceWindowExecutionId
 }
 object GetMaintenanceWindowExecutionTaskRequest {
   

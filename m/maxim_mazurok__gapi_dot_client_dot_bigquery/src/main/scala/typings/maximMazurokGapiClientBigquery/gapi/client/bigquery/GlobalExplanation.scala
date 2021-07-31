@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalExplanation extends StObject {
   
   /** Class label for this set of global explanations. Will be empty/null for binary logistic and linear regression models. Sorted alphabetically in descending order. */
-  var classLabel: js.UndefOr[String] = js.native
+  var classLabel: js.UndefOr[String] = js.undefined
   
   /** A list of the top global explanations. Sorted by absolute value of attribution in descending order. */
-  var explanations: js.UndefOr[js.Array[Explanation]] = js.native
+  var explanations: js.UndefOr[js.Array[Explanation]] = js.undefined
 }
 object GlobalExplanation {
   

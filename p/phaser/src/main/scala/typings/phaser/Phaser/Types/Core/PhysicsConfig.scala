@@ -4,26 +4,24 @@ import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicsConfig extends StObject {
   
   /**
     * The default physics system. It will be started for each scene. Phaser provides 'arcade', 'impact', and 'matter'.
     */
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
   /**
     * Arcade Physics configuration.
     */
-  var arcade: js.UndefOr[ArcadeWorldConfig] = js.native
+  var arcade: js.UndefOr[ArcadeWorldConfig] = js.undefined
   
   /**
     * Matter Physics configuration.
     */
-  var matter: js.UndefOr[MatterWorldConfig] = js.native
+  var matter: js.UndefOr[MatterWorldConfig] = js.undefined
 }
 object PhysicsConfig {
   

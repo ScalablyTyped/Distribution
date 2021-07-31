@@ -25,7 +25,6 @@ import typings.std.ObjectConstructor
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -41,10 +40,9 @@ object mod {
     
     object polymer {
       
-      @js.native
       trait ArraySplice extends StObject {
         
-        def calculateSplices[T](current: js.Array[T], previous: js.Array[T]): js.Array[PolymerSplice] = js.native
+        def calculateSplices[T](current: js.Array[T], previous: js.Array[T]): js.Array[PolymerSplice]
       }
       object ArraySplice {
         
@@ -62,9 +60,9 @@ object mod {
         }
       }
       
-      @js.native
       trait Base
-        extends CommonBase
+        extends StObject
+           with CommonBase
            with /** Need to allow all properties for callback methods. */
       /* prop */ StringDictionary[js.Any] {
         
@@ -77,13 +75,13 @@ object mod {
                   /* node */ js.UndefOr[HTMLElement], 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
       }
       object Base {
         
         @scala.inline
         def apply(
-          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[_]]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
+          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
           is: String
         ): Base = {
           val __obj = js.Dynamic.literal(deserialize = deserialize.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
@@ -103,31 +101,32 @@ object mod {
         }
       }
       
-      @js.native
       trait CommonBase extends StObject {
         
         /* polymer-standard */
         // Annotations
         @JSName("$")
-        var $: js.UndefOr[js.Any] = js.native
+        var $: js.UndefOr[js.Any] = js.undefined
         
         // Utils
         @JSName("$$")
-        var DollarDollar: js.UndefOr[js.Function1[/* selector */ String, Element]] = js.native
+        var DollarDollar: js.UndefOr[js.Function1[/* selector */ String, Element]] = js.undefined
         
-        var arrayDelete: js.UndefOr[js.Function2[/* path */ String | js.Array[_], /* item */ js.Any, js.Array[_]]] = js.native
+        var arrayDelete: js.UndefOr[
+                js.Function2[/* path */ String | js.Array[js.Any], /* item */ js.Any, js.Array[js.Any]]
+              ] = js.undefined
         
         var async: js.UndefOr[
                 js.Function2[/* callback */ js.Function0[Unit], /* waitTime */ js.UndefOr[Double], Double]
-              ] = js.native
+              ] = js.undefined
         
-        var attached: js.UndefOr[js.Function0[Unit]] = js.native
+        var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var attachedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+        var attachedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         var attributeChanged: js.UndefOr[
                 js.Function3[/* name */ String, /* oldValue */ js.Any, /* newValue */ js.Any, Unit]
-              ] = js.native
+              ] = js.undefined
         
         var attributeChangedCallback: js.UndefOr[
                 js.Function4[
@@ -137,91 +136,95 @@ object mod {
                   /* namespace */ String | Null, 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var attributeFollows: js.UndefOr[
                 js.Function3[/* name */ String, /* toElement */ HTMLElement, /* fromElement */ HTMLElement, Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var beforeRegister: js.UndefOr[js.Function0[Unit]] = js.native
+        var beforeRegister: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         // Behaviors
-        var behaviors: js.UndefOr[js.Array[js.Object]] = js.native
+        var behaviors: js.UndefOr[js.Array[js.Object]] = js.undefined
         
-        var cancelAsync: js.UndefOr[js.Function1[/* handle */ Double, Unit]] = js.native
+        var cancelAsync: js.UndefOr[js.Function1[/* handle */ Double, Unit]] = js.undefined
         
-        var cancelDebouncer: js.UndefOr[js.Function1[/* jobName */ String, Unit]] = js.native
+        var cancelDebouncer: js.UndefOr[js.Function1[/* jobName */ String, Unit]] = js.undefined
         
         var classFollows: js.UndefOr[
                 js.Function3[/* name */ String, /* toElement */ HTMLElement, /* fromElement */ HTMLElement, Unit]
-              ] = js.native
+              ] = js.undefined
         
         var copyOwnProperty: js.UndefOr[
                 js.Function3[/* name */ String, /* source */ js.Object, /* target */ js.Object, Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var create: js.UndefOr[js.Function2[/* tag */ String, /* props */ js.Object, Element]] = js.native
+        var create: js.UndefOr[js.Function2[/* tag */ String, /* props */ js.Object, Element]] = js.undefined
         
-        var created: js.UndefOr[js.Function0[Unit]] = js.native
+        var created: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var createdCallback: js.UndefOr[js.Function0[Unit]] = js.native
+        var createdCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         // Debouncer
         var debounce: js.UndefOr[
                 js.Function3[/* jobName */ String, /* callback */ js.Function, /* wait */ js.UndefOr[Double], Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[_]]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]) = js.native
+        var deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
         
-        var detached: js.UndefOr[js.Function0[Unit]] = js.native
+        var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var detachedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+        var detachedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var distributeContent: js.UndefOr[js.Function0[Unit]] = js.native
+        var distributeContent: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         // Shady
-        var domHost: js.UndefOr[js.Function0[Element]] = js.native
+        var domHost: js.UndefOr[js.Function0[Element]] = js.undefined
         
-        var elementMatches: js.UndefOr[js.Function2[/* selector */ String, /* node */ js.UndefOr[Element], Boolean]] = js.native
+        var elementMatches: js.UndefOr[js.Function2[/* selector */ String, /* node */ js.UndefOr[Element], Boolean]] = js.undefined
         
-        var extend: js.UndefOr[js.Function2[/* prototype */ js.Object, /* api */ js.Object, js.Object]] = js.native
+        var extend: js.UndefOr[js.Function2[/* prototype */ js.Object, /* api */ js.Object, js.Object]] = js.undefined
         
         // Extends
-        var `extends`: js.UndefOr[String] = js.native
+        var `extends`: js.UndefOr[String] = js.undefined
         
         // Constructors
-        var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+        var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
         
         var fire: js.UndefOr[
                 js.Function3[
                   /* type */ String, 
                   /* detail */ js.UndefOr[js.Any], 
                   /* options */ js.UndefOr[js.Object], 
-                  CustomEvent[_]
+                  CustomEvent[js.Any]
                 ]
-              ] = js.native
+              ] = js.undefined
         
-        var flushDebouncer: js.UndefOr[js.Function1[/* jobName */ String, Unit]] = js.native
+        var flushDebouncer: js.UndefOr[js.Function1[/* jobName */ String, Unit]] = js.undefined
         
         var get: js.UndefOr[
-                js.Function2[/* path */ String | (js.Array[String | Double]), /* root */ js.UndefOr[js.Object], _]
-              ] = js.native
+                js.Function2[
+                  /* path */ String | (js.Array[String | Double]), 
+                  /* root */ js.UndefOr[js.Object], 
+                  js.Any
+                ]
+              ] = js.undefined
         
-        var getContentChildNodes: js.UndefOr[js.Function1[/* selector */ String, js.Array[Node]]] = js.native
+        var getContentChildNodes: js.UndefOr[js.Function1[/* selector */ String, js.Array[Node]]] = js.undefined
         
-        var getContentChildren: js.UndefOr[js.Function1[/* selector */ String, js.Array[HTMLElement]]] = js.native
+        var getContentChildren: js.UndefOr[js.Function1[/* selector */ String, js.Array[HTMLElement]]] = js.undefined
         
-        var getEffectiveChildNodes: js.UndefOr[js.Function0[js.Array[Node]]] = js.native
+        var getEffectiveChildNodes: js.UndefOr[js.Function0[js.Array[Node]]] = js.undefined
         
-        var getEffectiveChildren: js.UndefOr[js.Function0[js.Array[Node]]] = js.native
+        var getEffectiveChildren: js.UndefOr[js.Function0[js.Array[Node]]] = js.undefined
         
-        var getNativePrototype: js.UndefOr[js.Function1[/* tag */ String, js.Object]] = js.native
+        var getNativePrototype: js.UndefOr[js.Function1[/* tag */ String, js.Object]] = js.undefined
         
-        var getPropertyInfo: js.UndefOr[js.Function1[/* property */ String, js.Object]] = js.native
+        var getPropertyInfo: js.UndefOr[js.Function1[/* property */ String, js.Object]] = js.undefined
         
         /* polymer-micro */
         // Attributes
-        var hostAttributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+        var hostAttributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
         
         var importHref: js.UndefOr[
                 js.Function3[
@@ -230,69 +233,69 @@ object mod {
                   /* onerror */ js.UndefOr[js.Function], 
                   HTMLLinkElement
                 ]
-              ] = js.native
+              ] = js.undefined
         
         // Template {
-        var instanceTemplate: js.UndefOr[js.Function1[/* template */ HTMLElement, DocumentFragment]] = js.native
+        var instanceTemplate: js.UndefOr[js.Function1[/* template */ HTMLElement, DocumentFragment]] = js.undefined
         
         // Tag
-        var is: String = js.native
+        var is: String
         
-        var isDebouncerActive: js.UndefOr[js.Function1[/* jobName */ String, Boolean]] = js.native
+        var isDebouncerActive: js.UndefOr[js.Function1[/* jobName */ String, Boolean]] = js.undefined
         
-        var isLightDescendant: js.UndefOr[js.Function1[/* node */ HTMLElement, Boolean]] = js.native
+        var isLightDescendant: js.UndefOr[js.Function1[/* node */ HTMLElement, Boolean]] = js.undefined
         
-        var isLocalDescendant: js.UndefOr[js.Function1[/* node */ HTMLElement, Boolean]] = js.native
+        var isLocalDescendant: js.UndefOr[js.Function1[/* node */ HTMLElement, Boolean]] = js.undefined
         
-        var linkPaths: js.UndefOr[js.Function2[/* to */ String, /* from */ js.UndefOr[String], Unit]] = js.native
+        var linkPaths: js.UndefOr[js.Function2[/* to */ String, /* from */ js.UndefOr[String], Unit]] = js.undefined
         
         var listen: js.UndefOr[
                 js.Function3[/* node */ Element, /* eventName */ String, /* methodName */ String, Unit]
-              ] = js.native
+              ] = js.undefined
         
         // Events
-        var listeners: js.UndefOr[StringDictionary[String]] = js.native
+        var listeners: js.UndefOr[StringDictionary[String]] = js.undefined
         
-        var mixin: js.UndefOr[js.Function2[/* target */ js.Object, /* source */ js.Object, js.Object]] = js.native
+        var mixin: js.UndefOr[js.Function2[/* target */ js.Object, /* source */ js.Object, js.Object]] = js.undefined
         
         // NotifyPath
         var notifyPath: js.UndefOr[
                 js.Function3[/* path */ String, /* value */ js.Any, /* fromAbove */ js.Any, Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var notifySplices: js.UndefOr[js.Function2[/* path */ String, /* splices */ js.Array[PolymerSplice], Unit]] = js.native
+        var notifySplices: js.UndefOr[js.Function2[/* path */ String, /* splices */ js.Array[PolymerSplice], Unit]] = js.undefined
         
-        var observers: js.UndefOr[js.Array[String]] = js.native
+        var observers: js.UndefOr[js.Array[String]] = js.undefined
         
-        var pop: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+        var pop: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
         
         // Properties
-        var properties: js.UndefOr[StringDictionary[PropConstructorType | PropObjectType]] = js.native
+        var properties: js.UndefOr[StringDictionary[PropConstructorType | PropObjectType]] = js.undefined
         
-        var push: js.UndefOr[js.Function2[/* path */ String, /* repeated */ js.Any, Double]] = js.native
+        var push: js.UndefOr[js.Function2[/* path */ String, /* repeated */ js.Any, Double]] = js.undefined
         
         /* polymer-mini */
         // Ready
-        var ready: js.UndefOr[js.Function0[Unit]] = js.native
+        var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var reflectPropertiesToAttribute: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.native
+        var reflectPropertiesToAttribute: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
         
         /* common api */
-        var registerCallback: js.UndefOr[js.Function0[Unit]] = js.native
+        var registerCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var registered: js.UndefOr[js.Function0[Unit]] = js.native
+        var registered: js.UndefOr[js.Function0[Unit]] = js.undefined
         
         // ResolveUrl
-        var resolveUrl: js.UndefOr[js.Function1[/* url */ String, String]] = js.native
+        var resolveUrl: js.UndefOr[js.Function1[/* url */ String, String]] = js.undefined
         
         // Styling
-        var scopeSubtree: js.UndefOr[js.Function2[/* container */ Element, /* shouldObserve */ Boolean, Unit]] = js.native
+        var scopeSubtree: js.UndefOr[js.Function2[/* container */ Element, /* shouldObserve */ Boolean, Unit]] = js.undefined
         
-        var serialize: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.native
+        var serialize: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.undefined
         
         var serializeValueToAttribute: js.UndefOr[
                 js.Function3[/* value */ js.Any, /* attribute */ String, /* node */ js.UndefOr[Element], Unit]
-              ] = js.native
+              ] = js.undefined
         
         var set: js.UndefOr[
                 js.Function3[
@@ -301,12 +304,12 @@ object mod {
                   /* root */ js.UndefOr[js.Object], 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
         
         // Gestures
-        var setScrollDirection: js.UndefOr[js.Function2[/* direction */ String, /* node */ js.UndefOr[HTMLElement], Unit]] = js.native
+        var setScrollDirection: js.UndefOr[js.Function2[/* direction */ String, /* node */ js.UndefOr[HTMLElement], Unit]] = js.undefined
         
-        var shift: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+        var shift: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
         
         var splice: js.UndefOr[
                 js.Function4[
@@ -316,7 +319,7 @@ object mod {
                   /* repeated */ js.Any, 
                   Double
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var toggleClass: js.UndefOr[
                 js.Function3[
@@ -325,30 +328,30 @@ object mod {
                   /* node */ js.UndefOr[HTMLElement], 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
         
-        var transform: js.UndefOr[js.Function2[/* transform */ String, /* node */ js.UndefOr[HTMLElement], Unit]] = js.native
+        var transform: js.UndefOr[js.Function2[/* transform */ String, /* node */ js.UndefOr[HTMLElement], Unit]] = js.undefined
         
         var translate3d: js.UndefOr[
                 js.Function4[/* x */ Double, /* y */ Double, /* z */ Double, /* node */ js.UndefOr[HTMLElement], Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var unlinkPaths: js.UndefOr[js.Function1[/* path */ String, Unit]] = js.native
+        var unlinkPaths: js.UndefOr[js.Function1[/* path */ String, Unit]] = js.undefined
         
         var unlisten: js.UndefOr[
                 js.Function3[/* node */ Element, /* eventName */ String, /* methodName */ String, Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var unshift: js.UndefOr[js.Function2[/* path */ String, /* repeated */ js.Any, Double]] = js.native
+        var unshift: js.UndefOr[js.Function2[/* path */ String, /* repeated */ js.Any, Double]] = js.undefined
         
         // XStyling
-        var updateStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[StringDictionary[String]], Unit]] = js.native
+        var updateStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[StringDictionary[String]], Unit]] = js.undefined
       }
       object CommonBase {
         
         @scala.inline
         def apply(
-          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[_]]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
+          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
           is: String
         ): CommonBase = {
           val __obj = js.Dynamic.literal(deserialize = deserialize.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
@@ -365,7 +368,7 @@ object mod {
           def set$Undefined: Self = StObject.set(x, "$", js.undefined)
           
           @scala.inline
-          def setArrayDelete(value: (/* path */ String | js.Array[_], /* item */ js.Any) => js.Array[_]): Self = StObject.set(x, "arrayDelete", js.Any.fromFunction2(value))
+          def setArrayDelete(value: (/* path */ String | js.Array[js.Any], /* item */ js.Any) => js.Array[js.Any]): Self = StObject.set(x, "arrayDelete", js.Any.fromFunction2(value))
           
           @scala.inline
           def setArrayDeleteUndefined: Self = StObject.set(x, "arrayDelete", js.undefined)
@@ -473,7 +476,7 @@ object mod {
           
           @scala.inline
           def setDeserialize(
-            value: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[_]]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) with (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
+            value: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
           ): Self = StObject.set(x, "deserialize", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -532,7 +535,7 @@ object mod {
           
           @scala.inline
           def setFire(
-            value: (/* type */ String, /* detail */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => CustomEvent[_]
+            value: (/* type */ String, /* detail */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => CustomEvent[js.Any]
           ): Self = StObject.set(x, "fire", js.Any.fromFunction3(value))
           
           @scala.inline
@@ -545,7 +548,9 @@ object mod {
           def setFlushDebouncerUndefined: Self = StObject.set(x, "flushDebouncer", js.undefined)
           
           @scala.inline
-          def setGet(value: (/* path */ String | (js.Array[String | Double]), /* root */ js.UndefOr[js.Object]) => _): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+          def setGet(
+            value: (/* path */ String | (js.Array[String | Double]), /* root */ js.UndefOr[js.Object]) => js.Any
+          ): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
           
           @scala.inline
           def setGetContentChildNodes(value: /* selector */ String => js.Array[Node]): Self = StObject.set(x, "getContentChildNodes", js.Any.fromFunction1(value))
@@ -673,7 +678,7 @@ object mod {
           def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value :_*))
           
           @scala.inline
-          def setPop(value: /* path */ String => _): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
+          def setPop(value: /* path */ String => js.Any): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
           
           @scala.inline
           def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
@@ -753,7 +758,7 @@ object mod {
           def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
           
           @scala.inline
-          def setShift(value: /* path */ String => _): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
+          def setShift(value: /* path */ String => js.Any): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
           
           @scala.inline
           def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
@@ -885,14 +890,13 @@ object mod {
         def flush(): Unit = js.native
       }
       
-      @js.native
       trait EventApi extends StObject {
         
-        var localTarget: EventTarget = js.native
+        var localTarget: EventTarget
         
-        var path: js.Array[Node] = js.native
+        var path: js.Array[Node]
         
-        var rootTarget: EventTarget = js.native
+        var rootTarget: EventTarget
       }
       object EventApi {
         
@@ -920,19 +924,20 @@ object mod {
       }
       
       @js.native
-      trait ImportStatus extends RenderStatus {
+      trait ImportStatus
+        extends StObject
+           with RenderStatus {
         
         def whenLoaded(cb: js.Function): Unit = js.native
       }
       
-      @js.native
       trait ObservedNodeInfo extends StObject {
         
-        var addedNodes: js.Array[Node] = js.native
+        var addedNodes: js.Array[Node]
         
-        var removedNode: js.Array[Node] = js.native
+        var removedNode: js.Array[Node]
         
-        var target: Node = js.native
+        var target: Node
       }
       object ObservedNodeInfo {
         
@@ -966,8 +971,9 @@ object mod {
       // Polymer() function.
       @js.native
       trait PolymerElement
-        extends HTMLElement
-           with CommonBase {
+        extends StObject
+           with CommonBase
+           with HTMLElement {
         
         /* InferMemberOverrides */
         override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
@@ -984,18 +990,17 @@ object mod {
         override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
       }
       
-      @js.native
       trait PolymerSplice extends StObject {
         
-        var addedCount: Double = js.native
+        var addedCount: Double
         
-        var index: Double = js.native
+        var index: Double
         
-        var `object`: js.Array[js.Object] = js.native
+        var `object`: js.Array[js.Object]
         
-        var removed: js.Array[js.Object] = js.native
+        var removed: js.Array[js.Object]
         
-        var `type`: String = js.native
+        var `type`: String
       }
       object PolymerSplice {
         
@@ -1072,23 +1077,22 @@ object mod {
       
       type PropConstructorType = StringConstructor | ObjectConstructor | BooleanConstructor | NumberConstructor | DateConstructor | ArrayConstructor
       
-      @js.native
       trait PropObjectType extends StObject {
         
-        var computed: js.UndefOr[String] = js.native
+        var computed: js.UndefOr[String] = js.undefined
         
         @JSName("notify")
-        var notify_FPropObjectType: js.UndefOr[Boolean] = js.native
+        var notify_FPropObjectType: js.UndefOr[Boolean] = js.undefined
         
-        var observer: js.UndefOr[String] = js.native
+        var observer: js.UndefOr[String] = js.undefined
         
-        var readOnly: js.UndefOr[Boolean] = js.native
+        var readOnly: js.UndefOr[Boolean] = js.undefined
         
-        var reflectToAttribute: js.UndefOr[Boolean] = js.native
+        var reflectToAttribute: js.UndefOr[Boolean] = js.undefined
         
-        var `type`: PropConstructorType = js.native
+        var `type`: PropConstructorType
         
-        var value: js.UndefOr[Boolean | Double | String | js.Function | js.Object] = js.native
+        var value: js.UndefOr[Boolean | Double | String | js.Function | js.Object] = js.undefined
       }
       object PropObjectType {
         
@@ -1154,30 +1158,29 @@ object mod {
         def whenReady(cb: js.Function): Unit = js.native
       }
       
-      @js.native
       trait Settings extends StObject {
         
-        var hasNativeCSSProperties: Boolean = js.native
+        var hasNativeCSSProperties: Boolean
         
-        var hasNativeImports: Boolean = js.native
+        var hasNativeImports: Boolean
         
-        var hasShadow: Boolean = js.native
+        var hasShadow: Boolean
         
-        var nativeShadow: Boolean = js.native
+        var nativeShadow: Boolean
         
-        var useNativeCSSProperties: Boolean = js.native
+        var useNativeCSSProperties: Boolean
         
-        var useNativeCustomElements: Boolean = js.native
+        var useNativeCustomElements: Boolean
         
-        var useNativeImports: Boolean = js.native
+        var useNativeImports: Boolean
         
-        var useNativeShadow: Boolean = js.native
+        var useNativeShadow: Boolean
         
-        var usePolyfillProto: Boolean = js.native
+        var usePolyfillProto: Boolean
         
-        var useShadow: Boolean = js.native
+        var useShadow: Boolean
         
-        var wantShadow: Boolean = js.native
+        var wantShadow: Boolean
       }
       object Settings {
         

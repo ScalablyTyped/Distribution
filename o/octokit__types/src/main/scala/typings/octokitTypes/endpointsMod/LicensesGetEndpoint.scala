@@ -2,13 +2,11 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicensesGetEndpoint extends StObject {
   
-  var license: String = js.native
+  var license: String
 }
 object LicensesGetEndpoint {
   

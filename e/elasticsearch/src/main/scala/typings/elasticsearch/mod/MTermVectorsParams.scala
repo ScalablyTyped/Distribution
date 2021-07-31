@@ -2,41 +2,41 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MTermVectorsParams extends GenericParams {
+trait MTermVectorsParams
+  extends StObject
+     with GenericParams {
   
-  var fieldStatistics: js.UndefOr[Boolean] = js.native
+  var fieldStatistics: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.UndefOr[NameList] = js.native
+  var fields: js.UndefOr[NameList] = js.undefined
   
-  var ids: js.UndefOr[NameList] = js.native
+  var ids: js.UndefOr[NameList] = js.undefined
   
-  var index: String = js.native
+  var index: String
   
-  var offsets: js.UndefOr[Boolean] = js.native
+  var offsets: js.UndefOr[Boolean] = js.undefined
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var payloads: js.UndefOr[Boolean] = js.native
+  var payloads: js.UndefOr[Boolean] = js.undefined
   
-  var positions: js.UndefOr[Boolean] = js.native
+  var positions: js.UndefOr[Boolean] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var realtime: js.UndefOr[Boolean] = js.native
+  var realtime: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var termStatistics: js.UndefOr[Boolean] = js.native
+  var termStatistics: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var versionType: js.UndefOr[VersionType] = js.native
+  var versionType: js.UndefOr[VersionType] = js.undefined
 }
 object MTermVectorsParams {
   

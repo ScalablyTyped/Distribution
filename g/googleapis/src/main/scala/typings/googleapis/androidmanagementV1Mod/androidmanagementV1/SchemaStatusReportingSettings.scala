@@ -2,54 +2,52 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Settings controlling the behavior of status reports.
   */
-@js.native
 trait SchemaStatusReportingSettings extends StObject {
   
   /**
     * Whether app reports are enabled.
     */
-  var applicationReportsEnabled: js.UndefOr[Boolean] = js.native
+  var applicationReportsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether device settings reporting is enabled.
     */
-  var deviceSettingsEnabled: js.UndefOr[Boolean] = js.native
+  var deviceSettingsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether displays reporting is enabled.
     */
-  var displayInfoEnabled: js.UndefOr[Boolean] = js.native
+  var displayInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether hardware status reporting is enabled.
     */
-  var hardwareStatusEnabled: js.UndefOr[Boolean] = js.native
+  var hardwareStatusEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether memory reporting is enabled.
     */
-  var memoryInfoEnabled: js.UndefOr[Boolean] = js.native
+  var memoryInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether network info reporting is enabled.
     */
-  var networkInfoEnabled: js.UndefOr[Boolean] = js.native
+  var networkInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether power management event reporting is enabled.
     */
-  var powerManagementEventsEnabled: js.UndefOr[Boolean] = js.native
+  var powerManagementEventsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether software info reporting is enabled.
     */
-  var softwareInfoEnabled: js.UndefOr[Boolean] = js.native
+  var softwareInfoEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaStatusReportingSettings {
   

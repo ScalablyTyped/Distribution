@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Build extends StObject {
   
   /** Required. Immutable. Version of the builder which produced this build. */
-  var builderVersion: js.UndefOr[String] = js.native
+  var builderVersion: js.UndefOr[String] = js.undefined
   
   /** Signature of the build in occurrences pointing to this build note containing build details. */
-  var signature: js.UndefOr[BuildSignature] = js.native
+  var signature: js.UndefOr[BuildSignature] = js.undefined
 }
 object Build {
   

@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.device.accelerometer.IAbstract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAccelerometer extends IAbstract
+trait IAccelerometer
+  extends StObject
+     with IAbstract
 object IAccelerometer {
   
   @scala.inline

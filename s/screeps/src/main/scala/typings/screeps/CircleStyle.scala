@@ -2,16 +2,16 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleStyle extends PolyStyle {
+trait CircleStyle
+  extends StObject
+     with PolyStyle {
   
   /**
     * Circle radius, default is 0.15.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
 }
 object CircleStyle {
   

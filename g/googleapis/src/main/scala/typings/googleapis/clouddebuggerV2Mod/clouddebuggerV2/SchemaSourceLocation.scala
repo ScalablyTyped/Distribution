@@ -2,13 +2,11 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a location in the source code.
   */
-@js.native
 trait SchemaSourceLocation extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaSourceLocation extends StObject {
     * that do not support setting breakpoints on specific columns ignore this
     * field.
     */
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   /**
     * Line inside the file. The first line in the file has the value `1`.
     */
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
   /**
     * Path to the source file within the source context of the target binary.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceLocation {
   

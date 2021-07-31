@@ -18,7 +18,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,13 +25,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see FormControlModel
   * @see com.sun.star.form.component.Form
   */
-@js.native
 trait FormComponent
-  extends XPropertyBag
+  extends StObject
      with XChild
      with XComponent
      with XNamed
      with XPersistObject
+     with XPropertyBag
 object FormComponent {
   
   @scala.inline

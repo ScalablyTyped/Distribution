@@ -3,33 +3,33 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A continuation to get a password from interaction helper, extends {@link XInteractionPassword} with possibility to provide password to modify.
   * @since OOo 3.3
   */
-@js.native
-trait XInteractionPassword2 extends XInteractionPassword {
+trait XInteractionPassword2
+  extends StObject
+     with XInteractionPassword {
   
   /** gets "password to modify" from the continuation. */
-  var PasswordToModify: String = js.native
+  var PasswordToModify: String
   
   /** gets "recommend readonly" from the continuation. It specifies whether the document should be loaded readonly per default. */
-  var RecommendReadOnly: Boolean = js.native
+  var RecommendReadOnly: Boolean
   
   /** gets "password to modify" from the continuation. */
-  def getPasswordToModify(): String = js.native
+  def getPasswordToModify(): String
   
   /** gets "recommend readonly" from the continuation. It specifies whether the document should be loaded readonly per default. */
-  def getRecommendReadOnly(): Boolean = js.native
+  def getRecommendReadOnly(): Boolean
   
   /** stores "password to modify" to the continuation. */
-  def setPasswordToModify(aPasswd: String): Unit = js.native
+  def setPasswordToModify(aPasswd: String): Unit
   
   /** stores "recommend readonly" to the continuation. It specifies whether the document should be loaded readonly per default. */
-  def setRecommendReadOnly(bReadOnly: Boolean): Unit = js.native
+  def setRecommendReadOnly(bReadOnly: Boolean): Unit
 }
 object XInteractionPassword2 {
   

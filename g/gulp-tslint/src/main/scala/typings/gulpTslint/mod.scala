@@ -5,7 +5,6 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,22 +19,21 @@ object mod extends Shortcut {
   @js.native
   val default: TslintPlugin = js.native
   
-  @js.native
   trait PluginOptions extends StObject {
     
-    var configuration: js.UndefOr[js.Any] = js.native
+    var configuration: js.UndefOr[js.Any] = js.undefined
     
-    var fix: js.UndefOr[Boolean] = js.native
+    var fix: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[String | js.Function] = js.native
+    var formatter: js.UndefOr[String | js.Function] = js.undefined
     
-    var formattersDirectory: js.UndefOr[String] = js.native
+    var formattersDirectory: js.UndefOr[String] = js.undefined
     
-    var program: js.UndefOr[js.Any] = js.native
+    var program: js.UndefOr[js.Any] = js.undefined
     
-    var rulesDirectory: js.UndefOr[String] = js.native
+    var rulesDirectory: js.UndefOr[String] = js.undefined
     
-    var tslint: js.UndefOr[js.Any] = js.native
+    var tslint: js.UndefOr[js.Any] = js.undefined
   }
   object PluginOptions {
     
@@ -92,16 +90,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ReportOptions extends StObject {
     
-    var allowWarnings: js.UndefOr[Boolean] = js.native
+    var allowWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var emitError: js.UndefOr[Boolean] = js.native
+    var emitError: js.UndefOr[Boolean] = js.undefined
     
-    var reportLimit: js.UndefOr[Double] = js.native
+    var reportLimit: js.UndefOr[Double] = js.undefined
     
-    var summarizeFailureOutput: js.UndefOr[Boolean] = js.native
+    var summarizeFailureOutput: js.UndefOr[Boolean] = js.undefined
   }
   object ReportOptions {
     
@@ -140,20 +137,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TslintFile extends StObject {
     
-    var contents: Buffer | js.Any = js.native
+    var contents: Buffer | js.Any
     
-    def isNull(): Boolean = js.native
+    def isNull(): Boolean
     
-    def isStream(): Boolean = js.native
+    def isStream(): Boolean
     
-    var path: String = js.native
+    var path: String
     
-    var relative: String = js.native
+    var relative: String
     
-    var tslint: js.Any = js.native
+    var tslint: js.Any
   }
   object TslintFile {
     

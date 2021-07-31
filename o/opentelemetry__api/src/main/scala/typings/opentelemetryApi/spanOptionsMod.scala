@@ -7,25 +7,23 @@ import typings.opentelemetryApi.spanKindMod.SpanKind
 import typings.opentelemetryApi.spanMod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spanOptionsMod {
   
-  @js.native
   trait SpanOptions extends StObject {
     
     /** A span's attributes */
-    var attributes: js.UndefOr[Attributes] = js.native
+    var attributes: js.UndefOr[Attributes] = js.undefined
     
     /**
       * The SpanKind of a span
       * @default {@link SpanKind.INTERNAL}
       */
-    var kind: js.UndefOr[SpanKind] = js.native
+    var kind: js.UndefOr[SpanKind] = js.undefined
     
     /** {@link Link}s span to other spans */
-    var links: js.UndefOr[js.Array[Link]] = js.native
+    var links: js.UndefOr[js.Array[Link]] = js.undefined
     
     /**
       * This option is NOT RECOMMENDED for normal use and should ONLY be used
@@ -39,10 +37,10 @@ object spanOptionsMod {
       * A null value here should prevent the SDK from extracting a parent from
       * the current context, forcing the new span to be a root span.
       */
-    var parent: js.UndefOr[Span | SpanContext | Null] = js.native
+    var parent: js.UndefOr[Span | SpanContext | Null] = js.undefined
     
     /** A manually specified start time for the created `Span` object. */
-    var startTime: js.UndefOr[Double] = js.native
+    var startTime: js.UndefOr[Double] = js.undefined
   }
   object SpanOptions {
     

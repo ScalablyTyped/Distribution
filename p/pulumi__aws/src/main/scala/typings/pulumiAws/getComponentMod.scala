@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getComponentMod {
   
-  @JSImport("@pulumi/aws/imagebuilder/getComponent", "getComponent")
+  @JSImport("@pulumi/aws/imagebuilder/getComponent", JSImport.Namespace)
   @js.native
-  def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = js.native
-  @JSImport("@pulumi/aws/imagebuilder/getComponent", "getComponent")
-  @js.native
-  def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getComponent(args: GetComponentArgs): js.Promise[GetComponentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComponentResult]]
+  @scala.inline
+  def getComponent(args: GetComponentArgs, opts: InvokeOptions): js.Promise[GetComponentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComponentResult]]
+  
   trait GetComponentArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the component.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Key-value map of resource tags for the component.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetComponentArgs {
     
@@ -51,80 +51,79 @@ object getComponentMod {
     }
   }
   
-  @js.native
   trait GetComponentResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Change description of the component.
       */
-    val changeDescription: String = js.native
+    val changeDescription: String
     
     /**
       * Data of the component.
       */
-    val data: String = js.native
+    val data: String
     
     /**
       * Date the component was created.
       */
-    val dateCreated: String = js.native
+    val dateCreated: String
     
     /**
       * Description of the component.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Encryption status of the component.
       */
-    val encrypted: Boolean = js.native
+    val encrypted: Boolean
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Amazon Resource Name (ARN) of the Key Management Service (KMS) Key used to encrypt the component.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
     /**
       * Name of the component.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Owner of the component.
       */
-    val owner: String = js.native
+    val owner: String
     
     /**
       * Platform of the component.
       */
-    val platform: String = js.native
+    val platform: String
     
     /**
       * Operating Systems (OSes) supported by the component.
       */
-    val supportedOsVersions: js.Array[String] = js.native
+    val supportedOsVersions: js.Array[String]
     
     /**
       * Key-value map of resource tags for the component.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Type of the component.
       */
-    val `type`: String = js.native
+    val `type`: String
     
     /**
       * Version of the component.
       */
-    val version: String = js.native
+    val version: String
   }
   object GetComponentResult {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableWithColumnsResource extends StObject {
   
   /**
     * The identifier for the Data Catalog. By default, it is the account ID of the caller.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The list of column names for the table. At least one of ColumnNames or ColumnWildcard is required.
     */
-  var ColumnNames: js.UndefOr[typings.awsSdk.lakeformationMod.ColumnNames] = js.native
+  var ColumnNames: js.UndefOr[typings.awsSdk.lakeformationMod.ColumnNames] = js.undefined
   
   /**
     * A wildcard specified by a ColumnWildcard object. At least one of ColumnNames or ColumnWildcard is required.
     */
-  var ColumnWildcard: js.UndefOr[typings.awsSdk.lakeformationMod.ColumnWildcard] = js.native
+  var ColumnWildcard: js.UndefOr[typings.awsSdk.lakeformationMod.ColumnWildcard] = js.undefined
   
   /**
     * The name of the database for the table with columns resource. Unique to the Data Catalog. A database is a set of associated table definitions organized into a logical group. You can Grant and Revoke database privileges to a principal. 
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * The name of the table resource. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal. 
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object TableWithColumnsResource {
   

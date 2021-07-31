@@ -3,36 +3,35 @@ package typings.humanizeDuration
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(ms: Double): String = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(ms: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("humanize-duration", JSImport.Namespace)
   @js.native
-  def apply(ms: Double): String = js.native
-  @JSImport("humanize-duration", JSImport.Namespace)
-  @js.native
-  def apply(ms: Double, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * This function won't return any new languages you define; it will only return the defaults supported by the library.
     */
-  @JSImport("humanize-duration", "getSupportedLanguages")
-  @js.native
-  def getSupportedLanguages(): js.Array[LanguageCode] = js.native
+  @scala.inline
+  def getSupportedLanguages(): js.Array[LanguageCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedLanguages")().asInstanceOf[js.Array[LanguageCode]]
   
-  @JSImport("humanize-duration", "humanizer")
-  @js.native
-  def humanizer(): Humanizer_ = js.native
-  @JSImport("humanize-duration", "humanizer")
-  @js.native
-  def humanizer(options: HumanizerOptions): Humanizer_ = js.native
+  @scala.inline
+  def humanizer(): Humanizer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("humanizer")().asInstanceOf[Humanizer_]
+  @scala.inline
+  def humanizer(options: HumanizerOptions): Humanizer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("humanizer")(options.asInstanceOf[js.Any]).asInstanceOf[Humanizer_]
   
-  @js.native
-  trait HumanizerOptions extends Options {
+  trait HumanizerOptions
+    extends StObject
+       with Options {
     
-    var languages: js.UndefOr[StringDictionary[UnitTranslationOptions]] = js.native
+    var languages: js.UndefOr[StringDictionary[UnitTranslationOptions]] = js.undefined
   }
   object HumanizerOptions {
     
@@ -216,65 +215,64 @@ object mod {
     def zh_TW: typings.humanizeDuration.humanizeDurationStrings.zh_TW = "zh_TW".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.zh_TW]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * String to include before the final unit. You can also set serialComma to false to eliminate the final comma.
       */
-    var conjunction: js.UndefOr[String] = js.native
+    var conjunction: js.UndefOr[String] = js.undefined
     
     /**
       * String to substitute for the decimal point in a decimal fraction.
       */
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
     /**
       * String to display between the previous unit and the next value.
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Fallback languages if the provided language cannot be found (accepts an ISO 639-1 code from one of the supported languages). It works from left to right.
       */
-    var fallbacks: js.UndefOr[js.Array[String]] = js.native
+    var fallbacks: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Language for unit display (accepts an ISO 639-1 code from one of the supported languages).
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * Number representing the maximum number of units to display for the duration.
       */
-    var largest: js.UndefOr[Double] = js.native
+    var largest: js.UndefOr[Double] = js.undefined
     
     /**
       * Number that defines a maximal decimal points for float values.
       */
-    var maxDecimalPoints: js.UndefOr[Double] = js.native
+    var maxDecimalPoints: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean value. Use true to round the smallest unit displayed (can be combined with largest and units).
       */
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
-    var serialComma: js.UndefOr[Boolean] = js.native
+    var serialComma: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String to display between each value and unit.
       */
-    var spacer: js.UndefOr[String] = js.native
+    var spacer: js.UndefOr[String] = js.undefined
     
     /**
       * Customize the value used to calculate each unit of time.
       */
-    var unitMeasures: js.UndefOr[UnitMeasuresOptions] = js.native
+    var unitMeasures: js.UndefOr[UnitMeasuresOptions] = js.undefined
     
     /**
       * Array of strings to define which units are used to display the duration (if needed).
       */
-    var units: js.UndefOr[js.Array[Unit]] = js.native
+    var units: js.UndefOr[js.Array[Unit]] = js.undefined
   }
   object Options {
     
@@ -405,24 +403,23 @@ object mod {
     def y: typings.humanizeDuration.humanizeDurationStrings.y = "y".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.y]
   }
   
-  @js.native
   trait UnitMeasuresOptions extends StObject {
     
-    var d: js.UndefOr[Double] = js.native
+    var d: js.UndefOr[Double] = js.undefined
     
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
-    var m: js.UndefOr[Double] = js.native
+    var m: js.UndefOr[Double] = js.undefined
     
-    var mo: js.UndefOr[Double] = js.native
+    var mo: js.UndefOr[Double] = js.undefined
     
-    var ms: js.UndefOr[Double] = js.native
+    var ms: js.UndefOr[Double] = js.undefined
     
-    var s: js.UndefOr[Double] = js.native
+    var s: js.UndefOr[Double] = js.undefined
     
-    var w: js.UndefOr[Double] = js.native
+    var w: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object UnitMeasuresOptions {
     
@@ -485,24 +482,23 @@ object mod {
     }
   }
   
-  @js.native
   trait UnitTranslationOptions extends StObject {
     
-    var d: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var d: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var h: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var h: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var m: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var m: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var mo: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var mo: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var ms: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var ms: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var s: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var s: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var w: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var w: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
     
-    var y: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.native
+    var y: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], String]] = js.undefined
   }
   object UnitTranslationOptions {
     

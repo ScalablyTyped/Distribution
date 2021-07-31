@@ -29,26 +29,25 @@ import typings.reapop.typesMod.Position
 import typings.reapop.typesMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("reapop", JSImport.Default)
+  @JSImport("reapop", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("reapop", "FadeTransition")
-  @js.native
-  def FadeTransition(props: typings.reapop.fadeTransitionMod.Props): Element = js.native
+  @scala.inline
+  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("reapop", "GrowTransition")
-  @js.native
-  def GrowTransition(props: typings.reapop.growTransitionMod.Props): Element = js.native
+  @scala.inline
+  def FadeTransition(props: typings.reapop.fadeTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("reapop", "NotificationsProvider")
-  @js.native
-  def NotificationsProvider(props: typings.reapop.notificationsProviderMod.Props): Element = js.native
+  @scala.inline
+  def GrowTransition(props: typings.reapop.growTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("GrowTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @scala.inline
+  def NotificationsProvider(props: typings.reapop.notificationsProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationsProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object POSITIONS {
     
@@ -136,9 +135,8 @@ object mod {
     def warning_=(x: warning): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("reapop", "SlideTransition")
-  @js.native
-  def SlideTransition(props: typings.reapop.slideTransitionMod.Props): Element = js.native
+  @scala.inline
+  def SlideTransition(props: typings.reapop.slideTransitionMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SlideTransition")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("reapop", "atalhoTheme")
   @js.native
@@ -146,54 +144,51 @@ object mod {
   
   object baseTheme {
     
-    @JSImport("reapop", "baseTheme.container")
+    @JSImport("reapop", "baseTheme")
     @js.native
-    def container(position: Position): CSSProperties = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def container(position: Position): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(position.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   }
   
   @JSImport("reapop", "bootstrapTheme")
   @js.native
   val bootstrapTheme: Theme = js.native
   
-  @JSImport("reapop", "dismissNotification")
-  @js.native
-  def dismissNotification(notificationId: String): DismissNotificationAction = js.native
+  @scala.inline
+  def dismissNotification(notificationId: String): DismissNotificationAction = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotification")(notificationId.asInstanceOf[js.Any]).asInstanceOf[DismissNotificationAction]
   
-  @JSImport("reapop", "dismissNotifications")
-  @js.native
-  def dismissNotifications(): DismissNotificationsAction = js.native
+  @scala.inline
+  def dismissNotifications(): DismissNotificationsAction = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissNotifications")().asInstanceOf[DismissNotificationsAction]
   
-  @JSImport("reapop", "notify")
-  @js.native
-  def notify_(message: String): UpsertNotificationAction = js.native
-  @JSImport("reapop", "notify")
-  @js.native
-  def notify_(message: String, options: PartialNotification): UpsertNotificationAction = js.native
-  @JSImport("reapop", "notify")
-  @js.native
-  def notify_(message: String, status: Status): UpsertNotificationAction = js.native
-  @JSImport("reapop", "notify")
-  @js.native
-  def notify_(message: String, status: Status, options: PartialNotification): UpsertNotificationAction = js.native
-  @JSImport("reapop", "notify")
-  @js.native
-  def notify_(notification: PartialNotification): UpsertNotificationAction = js.native
+  @scala.inline
+  def notify_(message: String): UpsertNotificationAction = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any]).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(message: String, options: PartialNotification): UpsertNotificationAction = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(message: String, status: Status): UpsertNotificationAction = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(message: String, status: Status, options: PartialNotification): UpsertNotificationAction = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], status.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[UpsertNotificationAction]
+  @scala.inline
+  def notify_(notification: PartialNotification): UpsertNotificationAction = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(notification.asInstanceOf[js.Any]).asInstanceOf[UpsertNotificationAction]
   
-  @JSImport("reapop", "reducer")
-  @js.native
+  @scala.inline
   def reducer(): js.Function2[
     /* state */ js.UndefOr[js.Array[Notification]], 
     /* action */ NotificationActions | InitReduxAction, 
     js.Array[Notification]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("reducer")().asInstanceOf[js.Function2[
+    /* state */ js.UndefOr[js.Array[Notification]], 
+    /* action */ NotificationActions | InitReduxAction, 
+    js.Array[Notification]
+  ]]
   
-  @JSImport("reapop", "setUpNotifications")
-  @js.native
-  def setUpNotifications(props: PartialNotificationConfig): Unit = js.native
+  @scala.inline
+  def setUpNotifications(props: PartialNotificationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpNotifications")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("reapop", "useNotifications")
-  @js.native
-  def useNotifications(): DismissNotification = js.native
+  @scala.inline
+  def useNotifications(): DismissNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[DismissNotification]
   
   @JSImport("reapop", "wyboTheme")
   @js.native

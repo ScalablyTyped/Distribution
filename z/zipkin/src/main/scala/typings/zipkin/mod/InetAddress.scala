@@ -2,7 +2,6 @@ package typings.zipkin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zipkin", "InetAddress")
@@ -16,8 +15,11 @@ class InetAddress protected () extends StObject {
 }
 object InetAddress {
   
-  /* static member */
-  @JSImport("zipkin", "InetAddress.getLocalAddress")
+  @JSImport("zipkin", "InetAddress")
   @js.native
-  def getLocalAddress(): InetAddress = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def getLocalAddress(): InetAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAddress")().asInstanceOf[InetAddress]
 }

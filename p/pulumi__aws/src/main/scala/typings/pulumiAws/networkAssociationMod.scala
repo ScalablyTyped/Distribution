@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkAssociationMod {
@@ -58,6 +57,10 @@ object networkAssociationMod {
   /* static members */
   object NetworkAssociation {
     
+    @JSImport("@pulumi/aws/ec2clientvpn/networkAssociation", "NetworkAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NetworkAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,45 +70,39 @@ object networkAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/networkAssociation", "NetworkAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NetworkAssociation = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/networkAssociation", "NetworkAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NetworkAssociation = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/networkAssociation", "NetworkAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkAssociationState): NetworkAssociation = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/networkAssociation", "NetworkAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkAssociationState, opts: CustomResourceOptions): NetworkAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NetworkAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkAssociationState): NetworkAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkAssociationState, opts: CustomResourceOptions): NetworkAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAssociation]
     
     /**
       * Returns true if the given object is an instance of NetworkAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/networkAssociation", "NetworkAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/networkAssociation.NetworkAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/networkAssociation.NetworkAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/networkAssociation.NetworkAssociation */ Boolean]
   }
   
-  @js.native
   trait NetworkAssociationArgs extends StObject {
     
     /**
       * The ID of the Client VPN endpoint.
       */
-    val clientVpnEndpointId: Input[String] = js.native
+    val clientVpnEndpointId: Input[String]
     
     /**
       * A list of up to five custom security groups to apply to the target network. If not specified, the VPC's default security group is assigned.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the subnet to associate with the Client VPN endpoint.
       */
-    val subnetId: Input[String] = js.native
+    val subnetId: Input[String]
   }
   object NetworkAssociationArgs {
     
@@ -135,38 +132,37 @@ object networkAssociationMod {
     }
   }
   
-  @js.native
   trait NetworkAssociationState extends StObject {
     
     /**
       * The unique ID of the target network association.
       */
-    val associationId: js.UndefOr[Input[String]] = js.native
+    val associationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Client VPN endpoint.
       */
-    val clientVpnEndpointId: js.UndefOr[Input[String]] = js.native
+    val clientVpnEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of up to five custom security groups to apply to the target network. If not specified, the VPC's default security group is assigned.
       */
-    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The current state of the target network association.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the subnet to associate with the Client VPN endpoint.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC in which the target subnet is located.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object NetworkAssociationState {
     

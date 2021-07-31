@@ -3,22 +3,21 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IItems
-  extends /* other */ StringDictionary[js.Any] {
+  extends StObject
+     with /* other */ StringDictionary[js.Any] {
   
-  var AddOns: js.UndefOr[IAddOns] = js.native
+  var AddOns: js.UndefOr[IAddOns] = js.undefined
   
-  var appearance: js.UndefOr[IAppearance] = js.native
+  var appearance: js.UndefOr[IAppearance] = js.undefined
   
-  var dimentions: js.UndefOr[IDimensions] = js.native
+  var dimentions: js.UndefOr[IDimensions] = js.undefined
   
-  var measures: js.UndefOr[IMeasures] = js.native
+  var measures: js.UndefOr[IMeasures] = js.undefined
   
-  var sorting: js.UndefOr[ISorting] = js.native
+  var sorting: js.UndefOr[ISorting] = js.undefined
 }
 object IItems {
   

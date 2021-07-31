@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email conversation. */
@@ -16,13 +15,13 @@ trait EmailConversation extends StObject {
     * Asynchronously gets a batch of messages in the conversation.
     * @return The batch of messages.
     */
-  def findMessagesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findMessagesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Asynchronously gets a batch of messages in the conversation.
     * @param count The size of the batch of messages to retrieve.
     * @return The batch of messages.
     */
-  def findMessagesAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def findMessagesAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /** Gets the EmailFlagState for the conversation. */
   var flagState: EmailFlagState = js.native

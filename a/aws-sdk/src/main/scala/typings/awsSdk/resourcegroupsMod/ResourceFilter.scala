@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceFilter extends StObject {
   
   /**
     * The name of the filter. Filter names are case-sensitive.
     */
-  var Name: ResourceFilterName = js.native
+  var Name: ResourceFilterName
   
   /**
     * One or more filter values. Allowed filter values vary by resource filter name, and are case-sensitive.
     */
-  var Values: ResourceFilterValues = js.native
+  var Values: ResourceFilterValues
 }
 object ResourceFilter {
   

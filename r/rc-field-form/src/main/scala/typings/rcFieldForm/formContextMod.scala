@@ -10,7 +10,6 @@ import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formContextMod extends Shortcut {
@@ -23,12 +22,11 @@ object formContextMod extends Shortcut {
   @js.native
   val FormProvider: FunctionComponent[FormProviderProps] = js.native
   
-  @js.native
   trait FormChangeInfo extends StObject {
     
-    var changedFields: js.Array[FieldData] = js.native
+    var changedFields: js.Array[FieldData]
     
-    var forms: Forms = js.native
+    var forms: Forms
   }
   object FormChangeInfo {
     
@@ -52,22 +50,23 @@ object formContextMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait FormContextProps extends FormProviderProps {
+  trait FormContextProps
+    extends StObject
+       with FormProviderProps {
     
-    def registerForm(name: String, form: FormInstance[_]): Unit = js.native
+    def registerForm(name: String, form: FormInstance[js.Any]): Unit
     
-    def triggerFormChange(name: String, changedFields: js.Array[FieldData]): Unit = js.native
+    def triggerFormChange(name: String, changedFields: js.Array[FieldData]): Unit
     
-    def triggerFormFinish(name: String, values: Store): Unit = js.native
+    def triggerFormFinish(name: String, values: Store): Unit
     
-    def unregisterForm(name: String): Unit = js.native
+    def unregisterForm(name: String): Unit
   }
   object FormContextProps {
     
     @scala.inline
     def apply(
-      registerForm: (String, FormInstance[_]) => Unit,
+      registerForm: (String, FormInstance[js.Any]) => Unit,
       triggerFormChange: (String, js.Array[FieldData]) => Unit,
       triggerFormFinish: (String, Store) => Unit,
       unregisterForm: String => Unit
@@ -80,7 +79,7 @@ object formContextMod extends Shortcut {
     implicit class FormContextPropsMutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRegisterForm(value: (String, FormInstance[_]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
+      def setRegisterForm(value: (String, FormInstance[js.Any]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
       
       @scala.inline
       def setTriggerFormChange(value: (String, js.Array[FieldData]) => Unit): Self = StObject.set(x, "triggerFormChange", js.Any.fromFunction2(value))
@@ -93,12 +92,11 @@ object formContextMod extends Shortcut {
     }
   }
   
-  @js.native
   trait FormFinishInfo extends StObject {
     
-    var forms: Forms = js.native
+    var forms: Forms
     
-    var values: Store = js.native
+    var values: Store
   }
   object FormFinishInfo {
     
@@ -119,14 +117,13 @@ object formContextMod extends Shortcut {
     }
   }
   
-  @js.native
   trait FormProviderProps extends StObject {
     
-    var onFormChange: js.UndefOr[js.Function2[/* name */ String, /* info */ FormChangeInfo, Unit]] = js.native
+    var onFormChange: js.UndefOr[js.Function2[/* name */ String, /* info */ FormChangeInfo, Unit]] = js.undefined
     
-    var onFormFinish: js.UndefOr[js.Function2[/* name */ String, /* info */ FormFinishInfo, Unit]] = js.native
+    var onFormFinish: js.UndefOr[js.Function2[/* name */ String, /* info */ FormFinishInfo, Unit]] = js.undefined
     
-    var validateMessages: js.UndefOr[ValidateMessages] = js.native
+    var validateMessages: js.UndefOr[ValidateMessages] = js.undefined
   }
   object FormProviderProps {
     

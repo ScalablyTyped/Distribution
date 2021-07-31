@@ -9,13 +9,14 @@ import typings.naverWhale.whale.storage.AreaName
 import typings.naverWhale.whale.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object naverWhaleStrings {
   
   @js.native
-  sealed trait active extends IdleState
+  sealed trait active
+    extends StObject
+       with IdleState
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   
@@ -45,12 +46,16 @@ object naverWhaleStrings {
   def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait csp_report extends ResourceType
+  sealed trait csp_report
+    extends StObject
+       with ResourceType
   @scala.inline
   def csp_report: csp_report = "csp_report".asInstanceOf[csp_report]
   
   @js.native
-  sealed trait currentTab extends OnInputEnteredDisposition
+  sealed trait currentTab
+    extends StObject
+       with OnInputEnteredDisposition
   @scala.inline
   def currentTab: currentTab = "currentTab".asInstanceOf[currentTab]
   
@@ -65,27 +70,37 @@ object naverWhaleStrings {
   def devtools: devtools = "devtools".asInstanceOf[devtools]
   
   @js.native
-  sealed trait font extends ResourceType
+  sealed trait font
+    extends StObject
+       with ResourceType
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   
   @js.native
-  sealed trait idle extends IdleState
+  sealed trait idle
+    extends StObject
+       with IdleState
   @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait image extends ResourceType
+  sealed trait image
+    extends StObject
+       with ResourceType
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait incognito_session_only extends ScopeEnum
+  sealed trait incognito_session_only
+    extends StObject
+       with ScopeEnum
   @scala.inline
   def incognito_session_only: incognito_session_only = "incognito_session_only".asInstanceOf[incognito_session_only]
   
   @js.native
-  sealed trait lax extends SameSiteStatus
+  sealed trait lax
+    extends StObject
+       with SameSiteStatus
   @scala.inline
   def lax: lax = "lax".asInstanceOf[lax]
   
@@ -95,47 +110,65 @@ object naverWhaleStrings {
   def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait local extends AreaName
+  sealed trait local
+    extends StObject
+       with AreaName
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait locked extends IdleState
+  sealed trait locked
+    extends StObject
+       with IdleState
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   
   @js.native
-  sealed trait main_frame extends ResourceType
+  sealed trait main_frame
+    extends StObject
+       with ResourceType
   @scala.inline
   def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
   
   @js.native
-  sealed trait managed extends AreaName
+  sealed trait managed
+    extends StObject
+       with AreaName
   @scala.inline
   def managed: managed = "managed".asInstanceOf[managed]
   
   @js.native
-  sealed trait media extends ResourceType
+  sealed trait media
+    extends StObject
+       with ResourceType
   @scala.inline
   def media: media = "media".asInstanceOf[media]
   
   @js.native
-  sealed trait newBackgroundTab extends OnInputEnteredDisposition
+  sealed trait newBackgroundTab
+    extends StObject
+       with OnInputEnteredDisposition
   @scala.inline
   def newBackgroundTab: newBackgroundTab = "newBackgroundTab".asInstanceOf[newBackgroundTab]
   
   @js.native
-  sealed trait newForegroundTab extends OnInputEnteredDisposition
+  sealed trait newForegroundTab
+    extends StObject
+       with OnInputEnteredDisposition
   @scala.inline
   def newForegroundTab: newForegroundTab = "newForegroundTab".asInstanceOf[newForegroundTab]
   
   @js.native
-  sealed trait no_restriction extends SameSiteStatus
+  sealed trait no_restriction
+    extends StObject
+       with SameSiteStatus
   @scala.inline
   def no_restriction: no_restriction = "no_restriction".asInstanceOf[no_restriction]
   
   @js.native
-  sealed trait no_update extends RequestUpdateCheckStatus
+  sealed trait no_update
+    extends StObject
+       with RequestUpdateCheckStatus
   @scala.inline
   def no_update: no_update = "no_update".asInstanceOf[no_update]
   
@@ -145,12 +178,16 @@ object naverWhaleStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait `object` extends ResourceType
+  sealed trait `object`
+    extends StObject
+       with ResourceType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait other extends ResourceType
+  sealed trait other
+    extends StObject
+       with ResourceType
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   
@@ -160,7 +197,9 @@ object naverWhaleStrings {
   def panel: panel = "panel".asInstanceOf[panel]
   
   @js.native
-  sealed trait ping extends ResourceType
+  sealed trait ping
+    extends StObject
+       with ResourceType
   @scala.inline
   def ping: ping = "ping".asInstanceOf[ping]
   
@@ -170,12 +209,16 @@ object naverWhaleStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait regular extends ScopeEnum
+  sealed trait regular
+    extends StObject
+       with ScopeEnum
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
-  sealed trait script extends ResourceType
+  sealed trait script
+    extends StObject
+       with ResourceType
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   
@@ -185,47 +228,65 @@ object naverWhaleStrings {
   def session_only: session_only = "session_only".asInstanceOf[session_only]
   
   @js.native
-  sealed trait strict extends SameSiteStatus
+  sealed trait strict
+    extends StObject
+       with SameSiteStatus
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait stylesheet extends ResourceType
+  sealed trait stylesheet
+    extends StObject
+       with ResourceType
   @scala.inline
   def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   
   @js.native
-  sealed trait sub_frame extends ResourceType
+  sealed trait sub_frame
+    extends StObject
+       with ResourceType
   @scala.inline
   def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
   
   @js.native
-  sealed trait sync extends AreaName
+  sealed trait sync
+    extends StObject
+       with AreaName
   @scala.inline
   def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
-  sealed trait throttled extends RequestUpdateCheckStatus
+  sealed trait throttled
+    extends StObject
+       with RequestUpdateCheckStatus
   @scala.inline
   def throttled: throttled = "throttled".asInstanceOf[throttled]
   
   @js.native
-  sealed trait unspecified extends SameSiteStatus
+  sealed trait unspecified
+    extends StObject
+       with SameSiteStatus
   @scala.inline
   def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
   
   @js.native
-  sealed trait update_available extends RequestUpdateCheckStatus
+  sealed trait update_available
+    extends StObject
+       with RequestUpdateCheckStatus
   @scala.inline
   def update_available: update_available = "update_available".asInstanceOf[update_available]
   
   @js.native
-  sealed trait websocket extends ResourceType
+  sealed trait websocket
+    extends StObject
+       with ResourceType
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
   
   @js.native
-  sealed trait xmlhttprequest extends ResourceType
+  sealed trait xmlhttprequest
+    extends StObject
+       with ResourceType
   @scala.inline
   def xmlhttprequest: xmlhttprequest = "xmlhttprequest".asInstanceOf[xmlhttprequest]
 }

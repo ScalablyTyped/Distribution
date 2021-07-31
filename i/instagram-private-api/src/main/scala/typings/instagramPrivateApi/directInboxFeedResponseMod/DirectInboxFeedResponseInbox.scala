@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectInboxFeedResponseInbox extends StObject {
   
-  var blended_inbox_enabled: Boolean = js.native
+  var blended_inbox_enabled: Boolean
   
-  var has_older: Boolean = js.native
+  var has_older: Boolean
   
-  var oldest_cursor: String = js.native
+  var oldest_cursor: String
   
-  var threads: js.Array[DirectInboxFeedResponseThreadsItem] = js.native
+  var threads: js.Array[DirectInboxFeedResponseThreadsItem]
   
-  var unseen_count: Double = js.native
+  var unseen_count: Double
   
-  var unseen_count_ts: String = js.native
+  var unseen_count_ts: String
 }
 object DirectInboxFeedResponseInbox {
   

@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings defining the table width's measurement units and value.
   */
-@js.native
 trait TableWidthUnit extends StObject {
   
   /**
     * Gets or sets the unit type for the table width.
     */
-  var `type`: TableWidthUnitType = js.native
+  var `type`: TableWidthUnitType
   
   /**
     * Gets or sets the table width value in twips.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object TableWidthUnit {
   

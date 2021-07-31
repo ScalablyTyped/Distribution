@@ -11,40 +11,38 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined node.child_process.ForkOptions & std.Pick<node.child_process.SpawnOptions, 'stdio'> */
-  @js.native
   trait ForkOptionsPickSpawnOptio extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var detached: js.UndefOr[Boolean] = js.native
+    var detached: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
-    var execArgv: js.UndefOr[js.Array[String]] = js.native
+    var execArgv: js.UndefOr[js.Array[String]] = js.undefined
     
-    var execPath: js.UndefOr[String] = js.native
+    var execPath: js.UndefOr[String] = js.undefined
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify the kind of serialization used for sending messages between processes.
       * @default 'json'
       */
-    var serialization: js.UndefOr[SerializationType] = js.native
+    var serialization: js.UndefOr[SerializationType] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var stdio: js.UndefOr[StdioOptions] = js.native
+    var stdio: js.UndefOr[StdioOptions] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
     
-    var windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    var windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object ForkOptionsPickSpawnOptio {
     
@@ -161,48 +159,44 @@ object anon {
       * @returns A Promise for the completion of which ever callback is executed.
       */
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Unit, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ Unit, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     
     @JSName(js.Symbol.toStringTag)
     val toStringTag: String = js.native
   }
   
   /* Inlined std.Readonly<node.child_process.SpawnOptions> */
-  @js.native
   trait ReadonlySpawnOptions extends StObject {
     
-    val argv0: js.UndefOr[String] = js.native
+    val argv0: js.UndefOr[String] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
-    val detached: js.UndefOr[Boolean] = js.native
+    val detached: js.UndefOr[Boolean] = js.undefined
     
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
-    val serialization: js.UndefOr[SerializationType] = js.native
+    val serialization: js.UndefOr[SerializationType] = js.undefined
     
-    val shell: js.UndefOr[Boolean | String] = js.native
+    val shell: js.UndefOr[Boolean | String] = js.undefined
     
-    val stdio: js.UndefOr[StdioOptions] = js.native
+    val stdio: js.UndefOr[StdioOptions] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
     
-    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object ReadonlySpawnOptions {
     

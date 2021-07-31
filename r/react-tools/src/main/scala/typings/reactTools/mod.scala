@@ -2,7 +2,6 @@ package typings.reactTools
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -48,22 +47,17 @@ object mod {
   @scala.inline
   def PropTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PropTypes")(x.asInstanceOf[js.Any])
   
-  @JSImport("React", "createElement")
-  @js.native
-  def createElement(tag: js.Any, props: js.UndefOr[scala.Nothing], children: js.Any*): js.Any = js.native
-  @JSImport("React", "createElement")
-  @js.native
-  def createElement(tag: js.Any, props: js.Any, children: js.Any*): js.Any = js.native
+  @scala.inline
+  def createElement(tag: js.Any, props: js.Any, children: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def createElement(tag: js.Any, props: Unit, children: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(tag.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("React", "findDOMNode")
-  @js.native
-  def findDOMNode(instance: js.Any): js.Any = js.native
+  @scala.inline
+  def findDOMNode(instance: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("React", "render")
-  @js.native
-  def render(element: js.Any, container: js.Any): js.Any = js.native
+  @scala.inline
+  def render(element: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("React", "unmountComponentAtNode")
-  @js.native
-  def unmountComponentAtNode(container: js.Any): Unit = js.native
+  @scala.inline
+  def unmountComponentAtNode(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

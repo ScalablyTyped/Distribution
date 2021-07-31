@@ -3,7 +3,6 @@ package typings.ipldBlock
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,13 +15,18 @@ object mod {
     */
   @JSImport("ipld-block/dist/src", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Block {
+  class ^ protected ()
+    extends StObject
+       with Block {
     /**
       * @param {Uint8Array} data - The data to be stored in the block as a Uint8Array.
       * @param {CID} cid - The cid of the data
       */
     def this(data: Uint8Array, cid: typings.cids.mod.^) = this()
   }
+  @JSImport("ipld-block/dist/src", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Check if the given value is a Block.
@@ -31,9 +35,8 @@ object mod {
     * @returns {other is Block}
     */
   /* static member */
-  @JSImport("ipld-block/dist/src", "isBlock")
-  @js.native
-  def isBlock(other: js.Any): /* is ipld-block.ipld-block/dist/src.Block */ Boolean = js.native
+  @scala.inline
+  def isBlock(other: js.Any): /* is ipld-block.ipld-block/dist/src.Block */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlock")(other.asInstanceOf[js.Any]).asInstanceOf[/* is ipld-block.ipld-block/dist/src.Block */ Boolean]
   
   /**
     * Represents an immutable block of data that is uniquely referenced with a cid.

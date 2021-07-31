@@ -10,9 +10,9 @@ Typings are for version 7.1.9
 | ------------------ | :-------------: |
 | Full name          | konva |
 | Keywords           | canvas, animations, graphic, html5 |
-| # releases         | 79 |
-| # dependents       | 171 |
-| # downloads        | 2366538 |
+| # releases         | 83 |
+| # dependents       | 185 |
+| # downloads        | 2762356 |
 | # stars            | 1 |
 
 ## Links

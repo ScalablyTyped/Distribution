@@ -5,11 +5,12 @@ import typings.rbx.navbarContainerMod.NavbarContainer
 import typings.rbx.navbarContainerMod.NavbarContainerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofNavbarContainer extends Instantiable1[/* props */ NavbarContainerProps, NavbarContainer] {
+trait TypeofNavbarContainer
+  extends StObject
+     with Instantiable1[/* props */ NavbarContainerProps, NavbarContainer] {
   
   var defaultProps: Transparent = js.native
   

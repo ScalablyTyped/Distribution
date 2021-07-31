@@ -25,74 +25,46 @@ import typings.popperJs.mod.Position
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
   
   @JSImport("bootstrap/js/dist/tooltip", JSImport.Default)
   @js.native
-  class default protected () extends Tooltip {
+  class default protected ()
+    extends StObject
+       with Tooltip {
     def this(element: Element) = this()
-  }
-  object default {
-    
-    @JSImport("bootstrap/js/dist/tooltip", "default.Events")
-    @js.native
-    object Events extends StObject {
-      
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.tooltipMod.Tooltip.Events with String] = js.native
-      
-      /* "hidden.bs.tooltip" */ val hidden: typings.bootstrap.tooltipMod.Tooltip.Events.hidden with String = js.native
-      
-      /* "hide.bs.tooltip" */ val hide: typings.bootstrap.tooltipMod.Tooltip.Events.hide with String = js.native
-      
-      /* "inserted.bs.tooltip" */ val inserted: typings.bootstrap.tooltipMod.Tooltip.Events.inserted with String = js.native
-      
-      /* "show.bs.tooltip" */ val show: typings.bootstrap.tooltipMod.Tooltip.Events.show with String = js.native
-      
-      /* "shown.bs.tooltip" */ val shown: typings.bootstrap.tooltipMod.Tooltip.Events.shown with String = js.native
-    }
-    
-    /**
-      * Static method which allows you to get the scrollspy instance associated
-      * with a DOM element
-      */
-    /* static member */
-    @JSImport("bootstrap/js/dist/tooltip", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Tooltip = js.native
-  }
-  
-  @js.native
-  trait Tooltip extends StObject {
     
     /**
       * Removes the ability for an element’s tooltip to be shown. The tooltip
       * will only be able to be shown if it is re-enabled.
       */
-    def disable(): Unit = js.native
+    /* CompleteClass */
+    override def disable(): Unit = js.native
     
     /**
       * Hides and destroys an element’s tooltip. Tooltips that use delegation
       * (which are created using the selector option) cannot be individually
       * destroyed on descendant trigger elements.
       */
-    def dispose(): Unit = js.native
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Gives an element’s tooltip the ability to be shown. Tooltips are
       * enabled by default.
       */
-    def enable(): Unit = js.native
+    /* CompleteClass */
+    override def enable(): Unit = js.native
     
     /**
       * Hides an element’s tooltip. Returns to the caller before the tooltip
       * has actually been hidden (i.e. before the hidden.bs.tooltip event
       * occurs). This is considered a “manual” triggering of the tooltip.
       */
-    def hide(): Unit = js.native
+    /* CompleteClass */
+    override def hide(): Unit = js.native
     
     /**
       * Reveals an element’s tooltip. Returns to the caller before the
@@ -100,7 +72,8 @@ object tooltipMod {
       * event occurs). This is considered a “manual” triggering of the
       * tooltip. Tooltips with zero-length titles are never displayed.
       */
-    def show(): Unit = js.native
+    /* CompleteClass */
+    override def show(): Unit = js.native
     
     /**
       * Toggles an element’s tooltip. Returns to the caller before the
@@ -108,17 +81,107 @@ object tooltipMod {
       * shown.bs.tooltip or hidden.bs.tooltip event occurs). This is
       * considered a “manual” triggering of the tooltip.
       */
-    def toggle(): Unit = js.native
+    /* CompleteClass */
+    override def toggle(): Unit = js.native
     
     /**
       * Toggles the ability for an element’s tooltip to be shown or hidden.
       */
-    def toggleEnabled(): Unit = js.native
+    /* CompleteClass */
+    override def toggleEnabled(): Unit = js.native
     
     /**
       * Updates the position of an element’s tooltip.
       */
-    def update(): Unit = js.native
+    /* CompleteClass */
+    override def update(): Unit = js.native
+  }
+  object default {
+    
+    @JSImport("bootstrap/js/dist/tooltip", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("bootstrap/js/dist/tooltip", "default.Events")
+    @js.native
+    object Events extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.bootstrap.tooltipMod.Tooltip.Events & String] = js.native
+      
+      /* "hidden.bs.tooltip" */ val hidden: typings.bootstrap.tooltipMod.Tooltip.Events.hidden & String = js.native
+      
+      /* "hide.bs.tooltip" */ val hide: typings.bootstrap.tooltipMod.Tooltip.Events.hide & String = js.native
+      
+      /* "inserted.bs.tooltip" */ val inserted: typings.bootstrap.tooltipMod.Tooltip.Events.inserted & String = js.native
+      
+      /* "show.bs.tooltip" */ val show: typings.bootstrap.tooltipMod.Tooltip.Events.show & String = js.native
+      
+      /* "shown.bs.tooltip" */ val shown: typings.bootstrap.tooltipMod.Tooltip.Events.shown & String = js.native
+    }
+    
+    /**
+      * Static method which allows you to get the scrollspy instance associated
+      * with a DOM element
+      */
+    /* static member */
+    @scala.inline
+    def getInstance(element: Element): Tooltip = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Tooltip]
+  }
+  
+  trait Tooltip extends StObject {
+    
+    /**
+      * Removes the ability for an element’s tooltip to be shown. The tooltip
+      * will only be able to be shown if it is re-enabled.
+      */
+    def disable(): Unit
+    
+    /**
+      * Hides and destroys an element’s tooltip. Tooltips that use delegation
+      * (which are created using the selector option) cannot be individually
+      * destroyed on descendant trigger elements.
+      */
+    def dispose(): Unit
+    
+    /**
+      * Gives an element’s tooltip the ability to be shown. Tooltips are
+      * enabled by default.
+      */
+    def enable(): Unit
+    
+    /**
+      * Hides an element’s tooltip. Returns to the caller before the tooltip
+      * has actually been hidden (i.e. before the hidden.bs.tooltip event
+      * occurs). This is considered a “manual” triggering of the tooltip.
+      */
+    def hide(): Unit
+    
+    /**
+      * Reveals an element’s tooltip. Returns to the caller before the
+      * tooltip has actually been shown (i.e. before the shown.bs.tooltip
+      * event occurs). This is considered a “manual” triggering of the
+      * tooltip. Tooltips with zero-length titles are never displayed.
+      */
+    def show(): Unit
+    
+    /**
+      * Toggles an element’s tooltip. Returns to the caller before the
+      * tooltip has actually been shown or hidden (i.e. before the
+      * shown.bs.tooltip or hidden.bs.tooltip event occurs). This is
+      * considered a “manual” triggering of the tooltip.
+      */
+    def toggle(): Unit
+    
+    /**
+      * Toggles the ability for an element’s tooltip to be shown or hidden.
+      */
+    def toggleEnabled(): Unit
+    
+    /**
+      * Updates the position of an element’s tooltip.
+      */
+    def update(): Unit
   }
   object Tooltip {
     
@@ -148,37 +211,46 @@ object tooltipMod {
         * the user (will wait for CSS transitions to complete).
         */
       @js.native
-      sealed trait hidden extends Events
+      sealed trait hidden
+        extends StObject
+           with Events
       
       /**
         * This event is fired immediately when the hide instance method has
         * been called.
         */
       @js.native
-      sealed trait hide extends Events
+      sealed trait hide
+        extends StObject
+           with Events
       
       /**
         * This event is fired after the show.bs.tooltip event when the tooltip
         * template has been added to the DOM.
         */
       @js.native
-      sealed trait inserted extends Events
+      sealed trait inserted
+        extends StObject
+           with Events
       
       /**
         * This event fires immediately when the show instance method is called.
         */
       @js.native
-      sealed trait show extends Events
+      sealed trait show
+        extends StObject
+           with Events
       
       /**
         * This event is fired when the tooltip has been made visible to the
         * user (will wait for CSS transitions to complete).
         */
       @js.native
-      sealed trait shown extends Events
+      sealed trait shown
+        extends StObject
+           with Events
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -186,7 +258,7 @@ object tooltipMod {
         *
         * @default true
         */
-      var animation: Boolean = js.native
+      var animation: Boolean
       
       /**
         * Overflow constraint boundary of the popover. Accepts the values of
@@ -196,7 +268,7 @@ object tooltipMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..preventOverflow.boundariesElement}
         * @default 'scrollParent'
         */
-      var boundary: viewport | window | scrollParent | Element = js.native
+      var boundary: viewport | window | scrollParent | Element
       
       /**
         * Appends the tooltip to a specific element. Example: container:
@@ -207,7 +279,7 @@ object tooltipMod {
         *
         * @default false
         */
-      var container: String | Element | `false` = js.native
+      var container: String | Element | `false`
       
       /**
         * Delay showing and hiding the popover (ms) - does not apply to manual
@@ -217,7 +289,7 @@ object tooltipMod {
         *
         * @default 0
         */
-      var delay: Double | Hide = js.native
+      var delay: Double | Hide
       
       /**
         * Allow to specify which position Popper will use on fallback.
@@ -225,7 +297,7 @@ object tooltipMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..flip.behavior}
         * @default 'flip'
         */
-      var fallbackPlacement: Behavior | js.Array[Position] = js.native
+      var fallbackPlacement: Behavior | js.Array[Position]
       
       /**
         * Allow HTML in the tooltip.
@@ -238,7 +310,7 @@ object tooltipMod {
         *
         * @default false
         */
-      var html: Boolean = js.native
+      var html: Boolean
       
       /**
         * Offset of the tooltip relative to its target.
@@ -251,7 +323,7 @@ object tooltipMod {
         * @see {@link https://popper.js.org/docs/v1/#modifiers..offset.offset}
         * @default 0
         */
-      var offset: Double | String | js.Function0[Unit] = js.native
+      var offset: Double | String | js.Function0[Unit]
       
       /**
         * How to position the popover - auto | top | bottom | left | right.
@@ -264,7 +336,7 @@ object tooltipMod {
         *
         * @default 'top'
         */
-      var placement: auto | top | bottom | left | right | js.Function0[Unit] = js.native
+      var placement: auto | top | bottom | left | right | js.Function0[Unit]
       
       /**
         * To change Bootstrap's default Popper.js config
@@ -272,7 +344,7 @@ object tooltipMod {
         * @see {@link https://popper.js.org/docs/v1/#Popper.Defaults}
         * @default null
         */
-      var popperConfig: PopperOptions | Null = js.native
+      var popperConfig: PopperOptions | Null
       
       /**
         * Enable or disable the sanitization. If activated 'template' and
@@ -280,7 +352,7 @@ object tooltipMod {
         *
         * @default true
         */
-      var sanitize: Boolean = js.native
+      var sanitize: Boolean
       
       /**
         * Here you can supply your own sanitize function. This can be useful if
@@ -288,7 +360,7 @@ object tooltipMod {
         *
         * @default null
         */
-      def sanitizeFn(): Unit | Null = js.native
+      def sanitizeFn(): Unit | Null
       
       /**
         * If a selector is provided, tooltip objects will be delegated to the
@@ -297,7 +369,7 @@ object tooltipMod {
         *
         * @default false
         */
-      var selector: String | `false` = js.native
+      var selector: String | `false`
       
       /**
         * Base HTML to use when creating the tooltip.
@@ -311,7 +383,7 @@ object tooltipMod {
         *
         * @default '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
         */
-      var template: String = js.native
+      var template: String
       
       /**
         * Default title value if title attribute isn't present.
@@ -321,7 +393,7 @@ object tooltipMod {
         *
         * @default ''
         */
-      var title: String | Element | js.Function0[Unit] = js.native
+      var title: String | Element | js.Function0[Unit]
       
       /**
         * How tooltip is triggered - click | hover | focus | manual. You may
@@ -338,14 +410,14 @@ object tooltipMod {
         *
         * @default 'hover focus'
         */
-      var trigger: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`) = js.native
+      var trigger: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`)
       
       /**
         * Object which contains allowed attributes and tags
         *
         * @see {@link https://v5.getbootstrap.com/docs/5.0/getting-started/javascript/#sanitizer}
         */
-      var whiteList: RecordkeyofHTMLElementTag = js.native
+      var whiteList: RecordkeyofHTMLElementTag
     }
     object Options {
       
@@ -367,7 +439,7 @@ object tooltipMod {
         trigger: click | hover | focus | manual | (`click hover`) | (`click focus`) | (`hover focus`) | (`click hover focus`),
         whiteList: RecordkeyofHTMLElementTag
       ): Options = {
-        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], fallbackPlacement = fallbackPlacement.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], sanitizeFn = js.Any.fromFunction0(sanitizeFn), selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], boundary = boundary.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], fallbackPlacement = fallbackPlacement.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], sanitizeFn = js.Any.fromFunction0(sanitizeFn), selector = selector.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any], popperConfig = null)
         __obj.asInstanceOf[Options]
       }
       

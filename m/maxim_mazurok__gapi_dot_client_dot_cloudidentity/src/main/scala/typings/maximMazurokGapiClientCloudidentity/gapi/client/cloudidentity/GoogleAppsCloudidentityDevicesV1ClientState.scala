@@ -3,32 +3,30 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
   
   /** The caller can specify asset tags for this resource */
-  var assetTags: js.UndefOr[js.Array[String]] = js.native
+  var assetTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The compliance state of the resource as specified by the API client. */
-  var complianceState: js.UndefOr[String] = js.native
+  var complianceState: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the client state data was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** This field may be used to store a unique identifier for the API resource within which these CustomAttributes are a field. */
-  var customId: js.UndefOr[String] = js.native
+  var customId: js.UndefOr[String] = js.undefined
   
   /** The token that needs to be passed back for concurrency control in updates. Token needs to be passed back in UpdateRequest */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The Health score of the resource. The Health score is the callers specification of the condition of the device from a usability point of view. For example, a third-party device
     * management provider may specify a health score based on its compliance with organizational policies.
     */
-  var healthScore: js.UndefOr[String] = js.native
+  var healthScore: js.UndefOr[String] = js.undefined
   
   /**
     * The map of key-value attributes stored by callers specific to a device. The total serialized length of this map may not exceed 10KB. No limit is placed on the number of attributes
@@ -37,14 +35,14 @@ trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
   var keyValuePairs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
-    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The time the client state data was last updated. */
-  var lastUpdateTime: js.UndefOr[String] = js.native
+  var lastUpdateTime: js.UndefOr[String] = js.undefined
   
   /** The management state of the resource as specified by the API client. */
-  var managed: js.UndefOr[String] = js.native
+  var managed: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the ClientState in format:
@@ -54,13 +52,13 @@ trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
     * Context-Aware Access. Your organization's customer ID can be obtained from the URL: `GET https://www.googleapis.com/admin/directory/v1/customers/my_customer` The `id` field in the
     * response contains the customer ID starting with the letter 'C'. The customer ID to be used in this API is the string after the letter 'C' (not including 'C')
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The owner of the ClientState */
-  var ownerType: js.UndefOr[String] = js.native
+  var ownerType: js.UndefOr[String] = js.undefined
   
   /** A descriptive cause of the health score. */
-  var scoreReason: js.UndefOr[String] = js.native
+  var scoreReason: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1ClientState {
   
@@ -116,7 +114,7 @@ object GoogleAppsCloudidentityDevicesV1ClientState {
     def setKeyValuePairs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
-      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[js.Any]
     ): Self = StObject.set(x, "keyValuePairs", value.asInstanceOf[js.Any])
     
     @scala.inline

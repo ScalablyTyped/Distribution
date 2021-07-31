@@ -10,9 +10,9 @@ Intl.DateTimeFormat polyfill
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-datetimeformat |
 | Keywords           | i18n, intl, polyfill, datetimeformat, formatjs |
-| # releases         | 35 |
-| # dependents       | 4 |
-| # downloads        | 1156008 |
+| # releases         | 58 |
+| # dependents       | 9 |
+| # downloads        | 5055765 |
 | # stars            | 0 |
 
 ## Links

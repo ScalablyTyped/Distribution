@@ -2,52 +2,50 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Signals associated with the device making the request.
   */
-@js.native
 trait SchemaDeviceInfo extends StObject {
   
   /**
     * Device model name.
     */
-  var deviceModelName: js.UndefOr[String] = js.native
+  var deviceModelName: js.UndefOr[String] = js.undefined
   
   /**
     * Device language code setting.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Device language code setting obtained by executing JavaScript code in
     * WebView.
     */
-  var languageCodeFromWebview: js.UndefOr[String] = js.native
+  var languageCodeFromWebview: js.UndefOr[String] = js.undefined
   
   /**
     * Device language code raw setting. iOS does returns language code in
     * different format than iOS WebView. For example WebView returns en_US, but
     * iOS returns en-US. Field below will return raw value returned by iOS.
     */
-  var languageCodeRaw: js.UndefOr[String] = js.native
+  var languageCodeRaw: js.UndefOr[String] = js.undefined
   
   /**
     * Device display resolution height.
     */
-  var screenResolutionHeight: js.UndefOr[String] = js.native
+  var screenResolutionHeight: js.UndefOr[String] = js.undefined
   
   /**
     * Device display resolution width.
     */
-  var screenResolutionWidth: js.UndefOr[String] = js.native
+  var screenResolutionWidth: js.UndefOr[String] = js.undefined
   
   /**
     * Device timezone setting.
     */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object SchemaDeviceInfo {
   

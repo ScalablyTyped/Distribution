@@ -2,24 +2,22 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the status of upload.
   */
-@js.native
 trait SchemaUploadStatus extends StObject {
   
   /**
     * Reasons why upload can&#39;t be completed.
     */
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Per-row upload status.
     */
-  var rowStatus: js.UndefOr[js.Array[SchemaRowStatus]] = js.native
+  var rowStatus: js.UndefOr[js.Array[SchemaRowStatus]] = js.undefined
 }
 object SchemaUploadStatus {
   

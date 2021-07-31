@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnExitLifecycle extends StObject {
   
   /**
     * Specifies the actions that are performed when the state is exited and the condition is TRUE.
     */
-  var events: js.UndefOr[Events] = js.native
+  var events: js.UndefOr[Events] = js.undefined
 }
 object OnExitLifecycle {
   

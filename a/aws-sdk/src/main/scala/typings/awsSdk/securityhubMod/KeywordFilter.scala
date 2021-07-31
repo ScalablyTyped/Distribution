@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeywordFilter extends StObject {
   
   /**
     * A value for the keyword.
     */
-  var Value: js.UndefOr[NonEmptyString] = js.native
+  var Value: js.UndefOr[NonEmptyString] = js.undefined
 }
 object KeywordFilter {
   

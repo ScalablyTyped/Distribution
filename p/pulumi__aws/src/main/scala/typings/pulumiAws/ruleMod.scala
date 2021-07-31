@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleMod {
@@ -76,6 +75,10 @@ object ruleMod {
   /* static members */
   object Rule {
     
+    @JSImport("@pulumi/aws/cfg/rule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Rule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -85,65 +88,59 @@ object ruleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Rule = js.native
-    @JSImport("@pulumi/aws/cfg/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Rule = js.native
-    @JSImport("@pulumi/aws/cfg/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleState): Rule = js.native
-    @JSImport("@pulumi/aws/cfg/rule", "Rule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleState): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
     
     /**
       * Returns true if the given object is an instance of Rule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/rule", "Rule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/rule.Rule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/rule.Rule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/rule.Rule */ Boolean]
   }
   
-  @js.native
   trait RuleArgs extends StObject {
     
     /**
       * Description of the rule
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A string in JSON format that is passed to the AWS Config rule Lambda function.
       */
-    val inputParameters: js.UndefOr[Input[String]] = js.native
+    val inputParameters: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The frequency that you want AWS Config to run evaluations for a rule that is triggered periodically. If specified, requires `messageType` to be `ScheduledNotification`.
       */
-    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
+    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Scope defines which resources can trigger an evaluation for the rule as documented below.
       */
-    val scope: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RuleScope]] = js.native
+    val scope: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RuleScope]] = js.undefined
     
     /**
       * Source specifies the rule owner, the rule identifier, and the notifications that cause the function to evaluate your AWS resources as documented below.
       */
-    val source: Input[typings.pulumiAws.inputMod.cfg.RuleSource] = js.native
+    val source: Input[typings.pulumiAws.inputMod.cfg.RuleSource]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RuleArgs {
     
@@ -197,53 +194,52 @@ object ruleMod {
     }
   }
   
-  @js.native
   trait RuleState extends StObject {
     
     /**
       * The ARN of the config rule
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the rule
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A string in JSON format that is passed to the AWS Config rule Lambda function.
       */
-    val inputParameters: js.UndefOr[Input[String]] = js.native
+    val inputParameters: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The frequency that you want AWS Config to run evaluations for a rule that is triggered periodically. If specified, requires `messageType` to be `ScheduledNotification`.
       */
-    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
+    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the config rule
       */
-    val ruleId: js.UndefOr[Input[String]] = js.native
+    val ruleId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Scope defines which resources can trigger an evaluation for the rule as documented below.
       */
-    val scope: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RuleScope]] = js.native
+    val scope: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RuleScope]] = js.undefined
     
     /**
       * Source specifies the rule owner, the rule identifier, and the notifications that cause the function to evaluate your AWS resources as documented below.
       */
-    val source: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RuleSource]] = js.native
+    val source: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RuleSource]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RuleState {
     

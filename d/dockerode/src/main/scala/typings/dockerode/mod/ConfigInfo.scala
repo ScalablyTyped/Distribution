@@ -2,21 +2,19 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigInfo extends StObject {
   
-  var CreatedAt: String = js.native
+  var CreatedAt: String
   
-  var ID: String = js.native
+  var ID: String
   
-  var Spec: js.UndefOr[ConfigSpec] = js.native
+  var Spec: js.UndefOr[ConfigSpec] = js.undefined
   
-  var UpdatedAt: js.UndefOr[String] = js.native
+  var UpdatedAt: js.UndefOr[String] = js.undefined
   
-  var Version: SecretVersion = js.native
+  var Version: SecretVersion
 }
 object ConfigInfo {
   

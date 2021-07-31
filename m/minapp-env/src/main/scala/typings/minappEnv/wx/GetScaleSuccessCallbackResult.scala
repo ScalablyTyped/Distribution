@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScaleSuccessCallbackResult extends StObject {
   
   /** 缩放值 */
-  var scale: Double = js.native
+  var scale: Double
 }
 object GetScaleSuccessCallbackResult {
   

@@ -4,30 +4,28 @@ import typings.recharts.rechartsStrings.category
 import typings.recharts.rechartsStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZAxisProps extends StObject {
   
   // The key of data displayed in the axis
-  var dataKey: js.UndefOr[DataKey] = js.native
+  var dataKey: js.UndefOr[DataKey] = js.undefined
   
   // The name of data displayed in the axis
-  var name: js.UndefOr[String | Double] = js.native
+  var name: js.UndefOr[String | Double] = js.undefined
   
   // The range of axis
-  var range: js.UndefOr[js.Array[Double]] = js.native
+  var range: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.native
+  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   
-  var `type`: js.UndefOr[number | category] = js.native
+  var `type`: js.UndefOr[number | category] = js.undefined
   
   // The unit of data displayed in the axis
-  var unit: js.UndefOr[String | Double] = js.native
+  var unit: js.UndefOr[String | Double] = js.undefined
   
   // The unique id of z-axis
-  var zAxisId: js.UndefOr[String | Double] = js.native
+  var zAxisId: js.UndefOr[String | Double] = js.undefined
 }
 object ZAxisProps {
   
@@ -66,9 +64,6 @@ object ZAxisProps {
     
     @scala.inline
     def setScale(value: ScaleType | RechartsFunction): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleFunction1(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)

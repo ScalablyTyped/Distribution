@@ -2,29 +2,28 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageBitmap
-  extends CanvasImageSource
+  extends StObject
+     with CanvasImageSource
      with TexImageSource
      with Transferable {
   
   /**
     * Releases imageBitmap's underlying bitmap data.
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Returns the intrinsic height of the image, in CSS pixels.
     */
-  val height: Double = js.native
+  val height: Double
   
   /**
     * Returns the intrinsic width of the image, in CSS pixels.
     */
-  val width: Double = js.native
+  val width: Double
 }
 object ImageBitmap {
   

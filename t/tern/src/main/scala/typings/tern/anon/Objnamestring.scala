@@ -6,7 +6,6 @@ import typings.tern.inferMod.Obj
 import typings.tern.inferMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tern.tern/lib/infer.Obj & {  name :string} */
@@ -56,7 +55,7 @@ trait Objnamestring extends StObject {
   def isEmpty(args: js.Any*): Boolean = js.native
   
   /** The name of the type, if any. */
-  var name: js.UndefOr[String] with String = js.native
+  var name: js.UndefOr[String] & String = js.native
   
   /** The origin file of the type. */
   var origin: String = js.native
@@ -75,7 +74,7 @@ trait Objnamestring extends StObject {
   def propagatesTo(): js.Any = js.native
   
   /** The prototype of the object, or null. */
-  var proto: (Obj with Name) | Null = js.native
+  var proto: (Obj & Name) | Null = js.native
   
   def toString(args: js.Any*): String = js.native
   /** Return a string that describes the type. maxDepth indicates the depth to which inner types should be shown. */

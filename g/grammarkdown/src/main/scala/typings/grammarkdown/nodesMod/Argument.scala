@@ -3,7 +3,6 @@ package typings.grammarkdown.nodesMod
 import typings.grammarkdown.tokensMod.ArgumentOperatorKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "Argument")
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Argument ()
   extends Node[typings.grammarkdown.tokensMod.SyntaxKind.Argument] {
   def this(operatorToken: Token[ArgumentOperatorKind]) = this()
-  def this(operatorToken: js.UndefOr[scala.Nothing], name: Identifier) = this()
+  def this(operatorToken: Unit, name: Identifier) = this()
   def this(operatorToken: Token[ArgumentOperatorKind], name: Identifier) = this()
   
   val name: js.UndefOr[Identifier] = js.native

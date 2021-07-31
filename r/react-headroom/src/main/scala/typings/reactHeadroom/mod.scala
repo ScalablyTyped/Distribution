@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,36 +18,35 @@ object mod {
   
   type Headroom = Component[ReactHeadroomProps, js.Object, js.Any]
   
-  @js.native
   trait ReactHeadroomProps extends StObject {
     
-    var calcHeightOnResize: js.UndefOr[Boolean] = js.native
+    var calcHeightOnResize: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
-    var disableInlineStyles: js.UndefOr[Boolean] = js.native
+    var disableInlineStyles: js.UndefOr[Boolean] = js.undefined
     
-    var downTolerance: js.UndefOr[Double] = js.native
+    var downTolerance: js.UndefOr[Double] = js.undefined
     
-    var onPin: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPin: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onUnfix: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUnfix: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onUnpin: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUnpin: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var parent: js.UndefOr[js.Function0[_]] = js.native
+    var parent: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var pinStart: js.UndefOr[Double] = js.native
+    var pinStart: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var upTolerance: js.UndefOr[Double] = js.native
+    var upTolerance: js.UndefOr[Double] = js.undefined
     
-    var wrapperStyle: js.UndefOr[CSSProperties] = js.native
+    var wrapperStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object ReactHeadroomProps {
     
@@ -116,7 +114,7 @@ object mod {
       def setOnUnpinUndefined: Self = StObject.set(x, "onUnpin", js.undefined)
       
       @scala.inline
-      def setParent(value: () => _): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+      def setParent(value: () => js.Any): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
       
       @scala.inline
       def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)

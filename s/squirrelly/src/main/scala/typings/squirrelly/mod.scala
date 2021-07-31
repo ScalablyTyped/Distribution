@@ -4,74 +4,66 @@ import typings.squirrelly.squirrellyStrings.clear
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("squirrelly", "Compile")
+  @JSImport("squirrelly", JSImport.Namespace)
   @js.native
-  def Compile(str: String): SqrlFn = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Compile(str: String): SqrlFn = ^.asInstanceOf[js.Dynamic].applyDynamic("Compile")(str.asInstanceOf[js.Any]).asInstanceOf[SqrlFn]
   
   object F {
     
-    @JSImport("squirrelly", "F.e")
+    @JSImport("squirrelly", "F")
     @js.native
-    def e(str: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def e(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("e")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("squirrelly", "Render")
-  @js.native
-  def Render(template: String, options: js.Object): String = js.native
-  @JSImport("squirrelly", "Render")
-  @js.native
-  def Render(template: SqrlFn, options: js.Object): String = js.native
+  @scala.inline
+  def Render(template: String, options: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def Render(template: SqrlFn, options: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("squirrelly", "autoEscaping")
-  @js.native
-  def autoEscaping[T /* <: Boolean */](bool: T): T = js.native
+  @scala.inline
+  def autoEscaping[T /* <: Boolean */](bool: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("autoEscaping")(bool.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("squirrelly", "defaultTags")
-  @js.native
-  def defaultTags(tagArray: js.Array[String]): Unit = js.native
+  @scala.inline
+  def defaultTags(tagArray: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTags")(tagArray.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("squirrelly", "defineFilter")
-  @js.native
-  def defineFilter(name: String, callback: js.Function1[/* str */ String, String]): Unit = js.native
+  @scala.inline
+  def defineFilter(name: String, callback: js.Function1[/* str */ String, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFilter")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("squirrelly", "defineHelper")
-  @js.native
-  def defineHelper(name: String, callback: HelperCallback): Unit = js.native
+  @scala.inline
+  def defineHelper(name: String, callback: HelperCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineHelper")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("squirrelly", "defineNativeHelper")
-  @js.native
-  def defineNativeHelper(name: String, obj: NativeHelper): Unit = js.native
+  @scala.inline
+  def defineNativeHelper(name: String, obj: NativeHelper): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineNativeHelper")(name.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("squirrelly", "definePartial")
-  @js.native
-  def definePartial(name: String, str: String): Unit = js.native
+  @scala.inline
+  def definePartial(name: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("definePartial")(name.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("squirrelly", "__express")
-  @js.native
-  def express(filePath: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def express(filePath: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__express")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("squirrelly", "load")
-  @js.native
-  def load(options: Options): SqrlFn | String = js.native
-  @JSImport("squirrelly", "load")
-  @js.native
-  def load(options: Options, str: String): SqrlFn = js.native
+  @scala.inline
+  def load(options: Options): SqrlFn | String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any]).asInstanceOf[SqrlFn | String]
+  @scala.inline
+  def load(options: Options, str: String): SqrlFn = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[SqrlFn]
   
-  @JSImport("squirrelly", "renderFile")
-  @js.native
-  def renderFile(filePath: String, options: js.Object): String = js.native
+  @scala.inline
+  def renderFile(filePath: String, options: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("squirrelly", "setDefaultFilters")
-  @js.native
-  def setDefaultFilters(obj: Record[String, Boolean]): Unit = js.native
-  @JSImport("squirrelly", "setDefaultFilters")
-  @js.native
-  def setDefaultFilters_clear(obj: clear): Unit = js.native
+  @scala.inline
+  def setDefaultFilters(obj: Record[String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultFilters")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setDefaultFilters_clear(obj: clear): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultFilters")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Blocks = Record[String, js.Function0[String]]
   
@@ -82,18 +74,17 @@ object mod {
     String
   ]
   
-  @js.native
   trait NativeHelper extends StObject {
     
-    var blocks: js.UndefOr[Blocks] = js.native
+    var blocks: js.UndefOr[Blocks] = js.undefined
     
-    var helperEnd: js.UndefOr[js.Function0[String]] = js.native
+    var helperEnd: js.UndefOr[js.Function0[String]] = js.undefined
     
     var helperStart: js.UndefOr[
         js.Function2[/* param */ js.UndefOr[String], /* id */ js.UndefOr[String], String]
-      ] = js.native
+      ] = js.undefined
     
-    var selfClosing: js.UndefOr[js.Function1[/* param */ js.UndefOr[String], String]] = js.native
+    var selfClosing: js.UndefOr[js.Function1[/* param */ js.UndefOr[String], String]] = js.undefined
   }
   object NativeHelper {
     
@@ -132,17 +123,16 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     @JSName("$cache")
-    var $cache: js.UndefOr[Boolean] = js.native
+    var $cache: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$file")
-    var $file: js.UndefOr[String] = js.native
+    var $file: js.UndefOr[String] = js.undefined
     
     @JSName("$name")
-    var $name: js.UndefOr[String] = js.native
+    var $name: js.UndefOr[String] = js.undefined
   }
   object Options {
     

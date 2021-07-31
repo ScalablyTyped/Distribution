@@ -7,48 +7,47 @@ import typings.nodeSass.nodeSassStrings.expanded
 import typings.nodeSass.nodeSassStrings.nested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var functions: js.UndefOr[FunctionDeclarations[SassFunction]] = js.native
+  var functions: js.UndefOr[FunctionDeclarations[SassFunction]] = js.undefined
   
-  var importer: js.UndefOr[Importer | js.Array[Importer]] = js.native
+  var importer: js.UndefOr[Importer | js.Array[Importer]] = js.undefined
   
-  var includePaths: js.UndefOr[js.Array[String]] = js.native
+  var includePaths: js.UndefOr[js.Array[String]] = js.undefined
   
-  var indentType: js.UndefOr[String] = js.native
+  var indentType: js.UndefOr[String] = js.undefined
   
-  var indentWidth: js.UndefOr[Double] = js.native
+  var indentWidth: js.UndefOr[Double] = js.undefined
   
-  var indentedSyntax: js.UndefOr[Boolean] = js.native
+  var indentedSyntax: js.UndefOr[Boolean] = js.undefined
   
-  var linefeed: js.UndefOr[String] = js.native
+  var linefeed: js.UndefOr[String] = js.undefined
   
-  var omitSourceMapUrl: js.UndefOr[Boolean] = js.native
+  var omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined
   
-  var outFile: js.UndefOr[String] = js.native
+  var outFile: js.UndefOr[String] = js.undefined
   
-  var outputStyle: js.UndefOr[compact | compressed | expanded | nested] = js.native
+  var outputStyle: js.UndefOr[compact | compressed | expanded | nested] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
-  var sourceComments: js.UndefOr[Boolean] = js.native
+  var sourceComments: js.UndefOr[Boolean] = js.undefined
   
-  var sourceMap: js.UndefOr[Boolean | String] = js.native
+  var sourceMap: js.UndefOr[Boolean | String] = js.undefined
   
-  var sourceMapContents: js.UndefOr[Boolean] = js.native
+  var sourceMapContents: js.UndefOr[Boolean] = js.undefined
   
-  var sourceMapEmbed: js.UndefOr[Boolean] = js.native
+  var sourceMapEmbed: js.UndefOr[Boolean] = js.undefined
   
-  var sourceMapRoot: js.UndefOr[String] = js.native
+  var sourceMapRoot: js.UndefOr[String] = js.undefined
 }
 object Options {
   

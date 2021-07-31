@@ -13,7 +13,6 @@ import typings.vinyl.mod.File
 import typings.winston.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,7 +20,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("svg-sprite", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SVGSpriter {
+  class ^ protected ()
+    extends StObject
+       with SVGSpriter {
     /**
       * The spriter's constructor (always the entry point)
       * @param config Main configuration for the spriting process
@@ -30,43 +31,42 @@ object mod extends Shortcut {
   }
   @JSImport("svg-sprite", JSImport.Namespace)
   @js.native
-  val ^ : SVGSpriterConstructor = js.native
+  val ^ : js.Object & SVGSpriterConstructor = js.native
   
   type CompileCallback = js.Function3[/* error */ Error, /* result */ js.Any, /* data */ js.Any, js.Any]
   
-  @js.native
   trait Config extends StObject {
     
     /**
       * Main output directory
       * @default '.'
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * Logging verbosity or custom logger
       */
-    var log: js.UndefOr[String | Logger] = js.native
+    var log: js.UndefOr[String | Logger] = js.undefined
     
     /**
       * Output mode configurations
       */
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
     /**
       * SVG shape configuration
       */
-    var shape: js.UndefOr[Shape] = js.native
+    var shape: js.UndefOr[Shape] = js.undefined
     
     /**
       * Sprite SVG options
       */
-    var svg: js.UndefOr[Svg] = js.native
+    var svg: js.UndefOr[Svg] = js.undefined
     
     /**
       * Custom templating variables
       */
-    var variables: js.UndefOr[js.Any] = js.native
+    var variables: js.UndefOr[js.Any] = js.undefined
   }
   object Config {
     
@@ -117,21 +117,22 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CssAndViewSpecificModeConfig extends ModeConfig {
+  trait CssAndViewSpecificModeConfig
+    extends StObject
+       with ModeConfig {
     
     /**
       * If given and not empty, this will be the selector name of a CSS rule commonly specifying the background-image
       * and background-repeat properties for all the shapes in the sprite (thus saving some bytes by not unnecessarily repeating them for each shape)
       */
-    var common: js.UndefOr[String] = js.native
+    var common: js.UndefOr[String] = js.undefined
     
     /**
       * The arrangement of the shapes within the sprite. Might be "vertical", "horizontal", "diagonal" or "packed"
       * (with the latter being the most compact type). It depends on your project which layout is best for you.
       * @default "packed"
       */
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
     /**
       * If given and not empty, a mixin with this name will be added to supporting output formats (e.g. Sass, LESS, Stylus),
@@ -139,7 +140,7 @@ object mod extends Shortcut {
       * You may use it for creating custom CSS within @media rules. The mixin acts much like the common rule.
       * In fact, you can even combine the two - if both are enabled, the common rule will use the mixin internally.
       */
-    var mixin: js.UndefOr[String] = js.native
+    var mixin: js.UndefOr[String] = js.undefined
   }
   object CssAndViewSpecificModeConfig {
     
@@ -184,15 +185,16 @@ object mod extends Shortcut {
     */
   type CustomConfigurationTransform = StringDictionary[Plugins]
   
-  @js.native
-  trait DefsAndSymbolSpecificModeConfig extends ModeConfig {
+  trait DefsAndSymbolSpecificModeConfig
+    extends StObject
+       with ModeConfig {
     
     /**
       * If you want to embed the sprite into your HTML source, you will want to set this to true
       * in order to prevent the creation of SVG namespace declarations and to set some other attributes for effectively hiding the library sprite.
       * @default false
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
   }
   object DefsAndSymbolSpecificModeConfig {
     
@@ -215,18 +217,19 @@ object mod extends Shortcut {
   
   type GetShapesCallback = js.Function2[/* error */ Error, /* result */ js.Array[File], js.Any]
   
-  @js.native
-  trait Mode extends /* customConfigName */ StringDictionary[ModeConfig | Boolean] {
+  trait Mode
+    extends StObject
+       with /* customConfigName */ StringDictionary[ModeConfig | Boolean] {
     
-    var css: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.native
+    var css: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.undefined
     
-    var defs: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.native
+    var defs: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.undefined
     
-    var stack: js.UndefOr[ModeConfig | Boolean] = js.native
+    var stack: js.UndefOr[ModeConfig | Boolean] = js.undefined
     
-    var symbol: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.native
+    var symbol: js.UndefOr[DefsAndSymbolSpecificModeConfig | Boolean] = js.undefined
     
-    var view: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.native
+    var view: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.undefined
   }
   object Mode {
     
@@ -271,7 +274,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ModeConfig extends StObject {
     
     /**
@@ -279,13 +281,13 @@ object mod extends Shortcut {
       * when it's content changes («cache busting»). Defaults to false except for «css» and «view» sprites.
       * @default true∣false
       */
-    var bust: js.UndefOr[Boolean] = js.native
+    var bust: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Base directory for sprite and CSS file output. If not absolute, the path will be resolved using the main output directory (see global dest option).
       * @default "<mode>"
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * A non-empty string value will trigger the creation of additional CSS rules specifying the dimensions of each shape in the sprite.
@@ -294,18 +296,18 @@ object mod extends Shortcut {
       * A boolean TRUE will cause the dimensions to be included directly into each shape's CSS rule (only available for «css» and «view» sprites).
       * @default "-dims"
       */
-    var dimensions: js.UndefOr[String | Boolean] = js.native
+    var dimensions: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Enabling this will trigger the creation of an HTML document demoing the usage of the sprite. Please see below for details on [rendering configurations](#rendering-configurations).
       * @default false
       */
-    var example: js.UndefOr[RenderingConfiguration | Boolean] = js.native
+    var example: js.UndefOr[RenderingConfiguration | Boolean] = js.undefined
     
     /**
       * Specify svg-sprite which output mode to use with this configuration
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /**
       * Used for prefixing the [shape ID](#shape-ids) during CSS selector construction. If the value is empty,
@@ -315,7 +317,7 @@ object mod extends Shortcut {
       * to output it to your stylesheets (e.g. for a [Sass placeholder selector](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_)).
       * @default ".svg-%s"
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Collection of [stylesheet rendering configurations](#rendering-configurations).
@@ -325,14 +327,14 @@ object mod extends Shortcut {
       * which all reside in the directory tmpl/css. Example: {css: true, scss: {dest: '_sprite.scss'}}
       * @default {}
       */
-    var render: js.UndefOr[StringDictionary[RenderingConfiguration | Boolean]] = js.native
+    var render: js.UndefOr[StringDictionary[RenderingConfiguration | Boolean]] = js.undefined
     
     /**
       * SVG sprite path and file name, relative to the mode.<mode>.dest directory.
       * You may omit the file extension, in which case it will be set to ".svg" automatically.
       * @default "svg/sprite.<mode>.svg"
       */
-    var sprite: js.UndefOr[String] = js.native
+    var sprite: js.UndefOr[String] = js.undefined
   }
   object ModeConfig {
     
@@ -395,20 +397,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RenderingConfiguration extends StObject {
     
     /**
       * HTML document destination
       * @default "sprite.<mode>.html"
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * HTML document Mustache template
       * @default "tmpl/<mode>/sprite.html"
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object RenderingConfiguration {
     
@@ -474,7 +475,8 @@ object mod extends Shortcut {
   
   @js.native
   trait SVGSpriterConstructor
-    extends EventEmitter
+    extends StObject
+       with EventEmitter
        with /**
     * The spriter's constructor (always the entry point)
     * @param config Main configuration for the spriting process
@@ -484,43 +486,42 @@ object mod extends Shortcut {
   /**
     * All settings affecting the SVG shapes of the sprite
     */
-  @js.native
   trait Shape extends StObject {
     
     /**
       * Path to YAML file with extended alignment data
       */
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
     /**
       * Output directory for optimized intermediate SVG shapes
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * Dimension related options
       */
-    var dimension: js.UndefOr[Attributes] = js.native
+    var dimension: js.UndefOr[Attributes] = js.undefined
     
     /**
       * SVG shape ID related options
       */
-    var id: js.UndefOr[Generator] = js.native
+    var id: js.UndefOr[Generator] = js.undefined
     
     /**
       * Path to YAML file with meta / accessibility data
       */
-    var meta: js.UndefOr[String] = js.native
+    var meta: js.UndefOr[String] = js.undefined
     
     /**
       * Spacing related options
       */
-    var spacing: js.UndefOr[Box] = js.native
+    var spacing: js.UndefOr[Box] = js.undefined
     
     /**
       * List of transformations / optimizations
       */
-    var transform: js.UndefOr[js.Array[String | CustomConfigurationTransform | CustomCallbackTransform]] = js.native
+    var transform: js.UndefOr[js.Array[String | CustomConfigurationTransform | CustomCallbackTransform]] = js.undefined
   }
   object Shape {
     
@@ -580,14 +581,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Svg extends StObject {
     
     /**
       * If truthy, width and height attributes will be set on the sprite's <svg> element (where applicable).
       * @default true
       */
-    var dimensionAttributes: js.UndefOr[Boolean] = js.native
+    var dimensionAttributes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Include a <DOCTYPE> declaration in each compiled sprite. If you provide a non-empty string here,
@@ -595,14 +595,14 @@ object mod extends Shortcut {
       * If you set this to TRUE, *svg-sprite* will look at the registered shapes for a DOCTYPE declaration and use the first one it can find.
       * @default true
       */
-    var doctypeDeclaration: js.UndefOr[Boolean | String] = js.native
+    var doctypeDeclaration: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * In order to avoid CSS class name ambiguities, the default behavior is to namespace CSS class names in the source SVGs before compiling them into a sprite.
       * Each class name is prepended with a unique string. Disable this option to keep the class names untouched.
       * @default true
       */
-    var namespaceClassnames: js.UndefOr[Boolean] = js.native
+    var namespaceClassnames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * In order to avoid ID clashes, the default behavior is to namespace all IDs in the source SVGs before compiling them into a sprite.
@@ -610,24 +610,24 @@ object mod extends Shortcut {
       * Just set svg.namespaceIDs to FALSE then and be aware that you might also want to disable SVGO's ID minification (shape.transform.svgo.plugins: [{cleanupIDs: false}]).
       * @default true
       */
-    var namespaceIDs: js.UndefOr[Boolean] = js.native
+    var namespaceIDs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Floating point precision for CSS positioning values (defaults to -1 meaning highest possible precision).
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
     /**
       * Shorthand for applying custom attributes to the outermost <svg> element.
       * Please be aware that certain attributes (e.g. viewBox) will be calculated dynamically and override custom rootAttributes in any case.
       */
-    var rootAttributes: js.UndefOr[js.Any] = js.native
+    var rootAttributes: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Callback (or list of callbacks) that will be applied to the resulting SVG sprites as global [post-processing transformation](#svg-sprite-customization).
       * transform: Function∣Array
       */
-    var transform: js.UndefOr[SvgTransformer | js.Array[SvgTransformer]] = js.native
+    var transform: js.UndefOr[SvgTransformer | js.Array[SvgTransformer]] = js.undefined
     
     /**
       * Output an XML declaration at the very beginning of each compiled sprite.
@@ -635,7 +635,7 @@ object mod extends Shortcut {
       * If you set this to TRUE, *svg-sprite* will look at the registered shapes for an XML declaration and use the first one it can find.
       * @default true
       */
-    var xmlDeclaration: js.UndefOr[Boolean | String] = js.native
+    var xmlDeclaration: js.UndefOr[Boolean | String] = js.undefined
   }
   object Svg {
     
@@ -706,8 +706,8 @@ object mod extends Shortcut {
   
   type SvgTransformer = js.Function1[/* svg */ String, String]
   
-  type _To = SVGSpriterConstructor
+  type _To = js.Object & SVGSpriterConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: SVGSpriterConstructor = ^
+  override def _to: js.Object & SVGSpriterConstructor = ^
 }

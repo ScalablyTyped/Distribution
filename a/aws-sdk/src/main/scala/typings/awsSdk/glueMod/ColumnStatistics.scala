@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnStatistics extends StObject {
   
   /**
     * The timestamp of when column statistics were generated.
     */
-  var AnalyzedTime: Timestamp = js.native
+  var AnalyzedTime: Timestamp
   
   /**
     * Name of column which statistics belong to.
     */
-  var ColumnName: NameString = js.native
+  var ColumnName: NameString
   
   /**
     * The data type of the column.
     */
-  var ColumnType: TypeString = js.native
+  var ColumnType: TypeString
   
   /**
     * A ColumnStatisticData object that contains the statistics data values.
     */
-  var StatisticsData: ColumnStatisticsData = js.native
+  var StatisticsData: ColumnStatisticsData
 }
 object ColumnStatistics {
   

@@ -7,105 +7,103 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.never
 import typings.reactNativeNavigation.reactNativeNavigationStrings.withText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarButton extends StObject {
   
   /**
     * Overrides the text that's read by the screen reader when the user interacts with the element
     */
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * (Android only) Sets a textual button to be ALL CAPS. default value is true
     */
-  var allCaps: js.UndefOr[Boolean] = js.native
+  var allCaps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set text color
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the button as a custom component
     */
-  var component: js.UndefOr[Height] = js.native
+  var component: js.UndefOr[Height] = js.undefined
   
   /**
     * Disable icon tinting
     */
-  var disableIconTint: js.UndefOr[Boolean] = js.native
+  var disableIconTint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set text color in disabled state
     */
-  var disabledColor: js.UndefOr[Color] = js.native
+  var disabledColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the button enabled or disabled
     * @default true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the font family for the button's text
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Set the font size in dp
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the font style for the button's text
     */
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
     * for most fonts. Not all fonts have a variant for each of the numeric
     * values, in that case the closest one is chosen.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * Set the button icon
     */
-  var icon: js.UndefOr[ImageResource] = js.native
+  var icon: js.UndefOr[ImageResource] = js.undefined
   
   /**
     * Set the button icon insets
     */
-  var iconInsets: js.UndefOr[IconInsets] = js.native
+  var iconInsets: js.UndefOr[IconInsets] = js.undefined
   
   /**
     * Button id for reference press event
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * (Android only) Set showAsAction value
     * @see {@link https://developer.android.com/guide/topics/resources/menu-resource|Android developer guide: Menu resource}
     */
-  var showAsAction: js.UndefOr[ifRoom | withText | always | never] = js.native
+  var showAsAction: js.UndefOr[ifRoom | withText | always | never] = js.undefined
   
   /**
     * (iOS only) Set the button as an iOS system icon
     */
-  var systemItem: js.UndefOr[SystemItemIcon] = js.native
+  var systemItem: js.UndefOr[SystemItemIcon] = js.undefined
   
   /**
     * Set testID for reference in E2E tests
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Set the button text
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object OptionsTopBarButton {
   

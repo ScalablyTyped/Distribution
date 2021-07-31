@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to sub frames of current one
   * @see XFrames
   */
-@js.native
-trait XFramesSupplier extends XFrame {
+trait XFramesSupplier
+  extends StObject
+     with XFrame {
   
   /**
     * gets the current active frame of this container (not of any other available supplier)
@@ -23,13 +23,13 @@ trait XFramesSupplier extends XFrame {
     * this frame is returned.
     * @returns the {@link Frame} which is active within this frame.
     */
-  var ActiveFrame: XFrame = js.native
+  var ActiveFrame: XFrame
   
   /**
     * provides access to this container and to all other {@link XFramesSupplier} which are available from this node of frame tree
     * @returns the collection of frames which is represented by a {@link FramesContainer} .
     */
-  val Frames: XFrames = js.native
+  val Frames: XFrames
   
   /**
     * gets the current active frame of this container (not of any other available supplier)
@@ -39,13 +39,13 @@ trait XFramesSupplier extends XFrame {
     * this frame is returned.
     * @returns the {@link Frame} which is active within this frame.
     */
-  def getActiveFrame(): XFrame = js.native
+  def getActiveFrame(): XFrame
   
   /**
     * provides access to this container and to all other {@link XFramesSupplier} which are available from this node of frame tree
     * @returns the collection of frames which is represented by a {@link FramesContainer} .
     */
-  def getFrames(): XFrames = js.native
+  def getFrames(): XFrames
   
   /**
     * is called on activation of a direct sub-frame.
@@ -59,7 +59,7 @@ trait XFramesSupplier extends XFrame {
     * Note: Given parameter **Frame** must already exist inside the container (e.g., inserted by using {@link XFrames.append()} )
     * @param Frame the new active child frame inside this container
     */
-  def setActiveFrame(Frame: XFrame): Unit = js.native
+  def setActiveFrame(Frame: XFrame): Unit
 }
 object XFramesSupplier {
   

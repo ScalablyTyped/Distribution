@@ -5,26 +5,26 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.geojson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoJSONTransform extends _Transforms {
+trait GeoJSONTransform
+  extends StObject
+     with _Transforms {
   
-  var fields: js.UndefOr[Vector2[FieldRef] | SignalRef] = js.native
+  var fields: js.UndefOr[Vector2[FieldRef] | SignalRef] = js.undefined
   
-  var geojson: js.UndefOr[FieldRef] = js.native
+  var geojson: js.UndefOr[FieldRef] = js.undefined
   
-  var signal: js.UndefOr[SignalName] = js.native
+  var signal: js.UndefOr[SignalName] = js.undefined
   
-  var `type`: geojson = js.native
+  var `type`: geojson
 }
 object GeoJSONTransform {
   
   @scala.inline
-  def apply(`type`: geojson): GeoJSONTransform = {
+  def apply(): GeoJSONTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("geojson")
     __obj.asInstanceOf[GeoJSONTransform]
   }
   

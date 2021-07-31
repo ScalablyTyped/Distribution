@@ -5,14 +5,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemDividerMod {
   
   @JSImport("@ionic/core/dist/types/components/item-divider/item-divider", "ItemDivider")
   @js.native
-  class ItemDivider () extends ComponentInterface {
+  class ItemDivider ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

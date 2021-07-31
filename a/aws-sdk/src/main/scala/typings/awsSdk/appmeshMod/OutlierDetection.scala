@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlierDetection extends StObject {
   
   /**
     * The base amount of time for which a host is ejected.
     */
-  var baseEjectionDuration: Duration = js.native
+  var baseEjectionDuration: Duration
   
   /**
     * The time interval between ejection sweep analysis.
     */
-  var interval: Duration = js.native
+  var interval: Duration
   
   /**
     * Maximum percentage of hosts in load balancing pool for upstream service that can be ejected. Will eject at least one host regardless of the value.
     */
-  var maxEjectionPercent: OutlierDetectionMaxEjectionPercent = js.native
+  var maxEjectionPercent: OutlierDetectionMaxEjectionPercent
   
   /**
     * Number of consecutive 5xx errors required for ejection. 
     */
-  var maxServerErrors: OutlierDetectionMaxServerErrors = js.native
+  var maxServerErrors: OutlierDetectionMaxServerErrors
 }
 object OutlierDetection {
   

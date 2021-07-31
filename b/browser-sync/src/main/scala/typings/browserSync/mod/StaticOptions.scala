@@ -2,15 +2,13 @@ package typings.browserSync.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticOptions extends StObject {
   
-  var dir: String | js.Array[String] = js.native
+  var dir: String | js.Array[String]
   
-  var route: String | js.Array[String] = js.native
+  var route: String | js.Array[String]
 }
 object StaticOptions {
   

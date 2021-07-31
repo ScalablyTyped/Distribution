@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePatchPropertiesRequest extends StObject {
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ssmMod.MaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * The operating system type for which to list patches.
     */
-  var OperatingSystem: typings.awsSdk.ssmMod.OperatingSystem = js.native
+  var OperatingSystem: typings.awsSdk.ssmMod.OperatingSystem
   
   /**
     * Indicates whether to list patches for the Windows operating system or for Microsoft applications. Not applicable for Linux operating systems.
     */
-  var PatchSet: js.UndefOr[typings.awsSdk.ssmMod.PatchSet] = js.native
+  var PatchSet: js.UndefOr[typings.awsSdk.ssmMod.PatchSet] = js.undefined
   
   /**
     * The patch property for which you want to view patch details. 
     */
-  var Property: PatchProperty = js.native
+  var Property: PatchProperty
 }
 object DescribePatchPropertiesRequest {
   

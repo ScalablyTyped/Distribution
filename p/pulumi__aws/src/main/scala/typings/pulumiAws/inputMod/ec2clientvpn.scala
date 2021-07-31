@@ -3,33 +3,31 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2clientvpn {
   
-  @js.native
   trait EndpointAuthenticationOption extends StObject {
     
     /**
       * The ID of the Active Directory to be used for authentication if type is `directory-service-authentication`.
       */
-    var activeDirectoryId: js.UndefOr[Input[String]] = js.native
+    var activeDirectoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM). Only necessary when type is set to `certificate-authentication`.
       */
-    var rootCertificateChainArn: js.UndefOr[Input[String]] = js.native
+    var rootCertificateChainArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM SAML identity provider if type is `federated-authentication`.
       */
-    var samlProviderArn: js.UndefOr[Input[String]] = js.native
+    var samlProviderArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of client authentication to be used. Specify `certificate-authentication` to use certificate-based authentication, `directory-service-authentication` to use Active Directory authentication, or `federated-authentication` to use Federated Authentication via SAML 2.0.
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object EndpointAuthenticationOption {
     
@@ -66,23 +64,22 @@ object ec2clientvpn {
     }
   }
   
-  @js.native
   trait EndpointConnectionLogOptions extends StObject {
     
     /**
       * The name of the CloudWatch Logs log group.
       */
-    var cloudwatchLogGroup: js.UndefOr[Input[String]] = js.native
+    var cloudwatchLogGroup: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the CloudWatch Logs log stream to which the connection data is published.
       */
-    var cloudwatchLogStream: js.UndefOr[Input[String]] = js.native
+    var cloudwatchLogStream: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether connection logging is enabled.
       */
-    var enabled: Input[Boolean] = js.native
+    var enabled: Input[Boolean]
   }
   object EndpointConnectionLogOptions {
     

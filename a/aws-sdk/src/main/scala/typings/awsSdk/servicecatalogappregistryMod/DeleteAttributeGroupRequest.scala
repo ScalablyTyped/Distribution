@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAttributeGroupRequest extends StObject {
   
   /**
     * The name or ID of the attribute group that holds the attributes to describe the application.
     */
-  var attributeGroup: AttributeGroupSpecifier = js.native
+  var attributeGroup: AttributeGroupSpecifier
 }
 object DeleteAttributeGroupRequest {
   

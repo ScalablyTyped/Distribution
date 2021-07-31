@@ -6,40 +6,33 @@ import typings.algoliaTransporter.mod.RequestOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@algolia/client-account", "accountCopyIndex")
+  @JSImport("@algolia/client-account", JSImport.Namespace)
   @js.native
-  def accountCopyIndex(source: SearchIndex, destination: SearchIndex): WaitablePromise[Unit] = js.native
-  @JSImport("@algolia/client-account", "accountCopyIndex")
-  @js.native
-  def accountCopyIndex(source: SearchIndex, destination: SearchIndex, requestOptions: RequestOptions): WaitablePromise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@algolia/client-account", "createDestinationIndiceExistsError")
-  @js.native
-  def createDestinationIndiceExistsError(): Error = js.native
+  @scala.inline
+  def accountCopyIndex(source: SearchIndex, destination: SearchIndex): WaitablePromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("accountCopyIndex")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[Unit]]
+  @scala.inline
+  def accountCopyIndex(source: SearchIndex, destination: SearchIndex, requestOptions: RequestOptions): WaitablePromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("accountCopyIndex")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], requestOptions.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[Unit]]
   
-  @JSImport("@algolia/client-account", "createIndicesInSameAppError")
-  @js.native
-  def createIndicesInSameAppError(appId: String): IndicesInSameAppError = js.native
+  @scala.inline
+  def createDestinationIndiceExistsError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("createDestinationIndiceExistsError")().asInstanceOf[Error]
   
-  /* Inlined std.Error & { readonly appId :string} */
-  @js.native
-  trait IndicesInSameAppError extends StObject {
+  @scala.inline
+  def createIndicesInSameAppError(appId: String): IndicesInSameAppError = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesInSameAppError")(appId.asInstanceOf[js.Any]).asInstanceOf[IndicesInSameAppError]
+  
+  trait IndicesInSameAppError
+    extends StObject
+       with Error {
     
     /**
       * The app id.
       */
-    val appId: String = js.native
-    
-    var message: String = js.native
-    
-    var name: String = js.native
-    
-    var stack: js.UndefOr[String] = js.native
+    val appId: String
   }
   object IndicesInSameAppError {
     
@@ -54,18 +47,6 @@ object mod {
       
       @scala.inline
       def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

@@ -3,21 +3,19 @@ package typings.playable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewFullSizeTypesMod {
   
-  @js.native
   trait IPreviewFullSize extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def showAt(second: Double): Unit = js.native
+    def showAt(second: Double): Unit
   }
   object IPreviewFullSize {
     
@@ -44,14 +42,13 @@ object previewFullSizeTypesMod {
     }
   }
   
-  @js.native
   trait IPreviewFullSizeViewStyles extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var frame: String = js.native
+    var frame: String
     
-    var hidden: String = js.native
+    var hidden: String
   }
   object IPreviewFullSizeViewStyles {
     

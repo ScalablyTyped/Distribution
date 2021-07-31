@@ -3,7 +3,6 @@ package typings.novaEditor
 import typings.std.Console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -40,7 +39,6 @@ object global {
     def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("require")
-  @js.native
-  def require(module: String): js.Any = js.native
+  @scala.inline
+  def require(module: String): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

@@ -3,7 +3,6 @@ package typings.reactMdTabs
 import typings.reactMdTabs.typesMod.TabsAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdTabsStrings {
@@ -44,7 +43,9 @@ object reactMdTabsStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait center extends TabsAlignment
+  sealed trait center
+    extends StObject
+       with TabsAlignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -109,7 +110,9 @@ object reactMdTabsStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait left extends TabsAlignment
+  sealed trait left
+    extends StObject
+       with TabsAlignment
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -209,7 +212,9 @@ object reactMdTabsStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait right extends TabsAlignment
+  sealed trait right
+    extends StObject
+       with TabsAlignment
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   

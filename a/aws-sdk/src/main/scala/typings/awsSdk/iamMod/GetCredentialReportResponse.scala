@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCredentialReportResponse extends StObject {
   
   /**
     * Contains the credential report. The report is Base64-encoded.
     */
-  var Content: js.UndefOr[ReportContentType] = js.native
+  var Content: js.UndefOr[ReportContentType] = js.undefined
   
   /**
     *  The date and time when the credential report was created, in ISO 8601 date-time format.
     */
-  var GeneratedTime: js.UndefOr[dateType] = js.native
+  var GeneratedTime: js.UndefOr[dateType] = js.undefined
   
   /**
     * The format (MIME type) of the credential report.
     */
-  var ReportFormat: js.UndefOr[ReportFormatType] = js.native
+  var ReportFormat: js.UndefOr[ReportFormatType] = js.undefined
 }
 object GetCredentialReportResponse {
   

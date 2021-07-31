@@ -4,7 +4,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.pixelMod.Pixel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapMod {
@@ -15,20 +14,19 @@ object snapMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var edge: js.UndefOr[Boolean] = js.native
+    var edge: js.UndefOr[Boolean] = js.undefined
     
     var features: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-      ] = js.native
+      ] = js.undefined
     
-    var pixelTolerance: js.UndefOr[Double] = js.native
+    var pixelTolerance: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.native
+    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
     
-    var vertex: js.UndefOr[Boolean] = js.native
+    var vertex: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -75,14 +73,13 @@ object snapMod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var snapped: Boolean = js.native
+    var snapped: Boolean
     
-    var vertex: Coordinate = js.native
+    var vertex: Coordinate
     
-    var vertexPixel: Pixel = js.native
+    var vertexPixel: Pixel
   }
   object Result {
     
@@ -112,12 +109,11 @@ object snapMod {
     }
   }
   
-  @js.native
   trait SegmentData extends StObject {
     
-    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    var feature: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]
     
-    var segment: js.Array[Coordinate] = js.native
+    var segment: js.Array[Coordinate]
   }
   object SegmentData {
     

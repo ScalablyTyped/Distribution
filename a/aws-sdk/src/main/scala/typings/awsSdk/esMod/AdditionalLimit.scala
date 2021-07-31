@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalLimit extends StObject {
   
   /**
     *  Name of Additional Limit is specific to a given InstanceType and for each of it's  InstanceRole  etc.  Attributes and their details:   MaximumNumberOfDataNodesSupported This attribute will be present in Master node only to specify how much data nodes upto which given  ESPartitionInstanceType  can support as master node. MaximumNumberOfDataNodesWithoutMasterNode This attribute will be present in Data node only to specify how much data nodes of given  ESPartitionInstanceType  upto which you don't need any master nodes to govern them.  
     */
-  var LimitName: js.UndefOr[typings.awsSdk.esMod.LimitName] = js.native
+  var LimitName: js.UndefOr[typings.awsSdk.esMod.LimitName] = js.undefined
   
   /**
     *  Value for given  AdditionalLimit$LimitName  . 
     */
-  var LimitValues: js.UndefOr[LimitValueList] = js.native
+  var LimitValues: js.UndefOr[LimitValueList] = js.undefined
 }
 object AdditionalLimit {
   

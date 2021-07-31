@@ -2,17 +2,15 @@ package typings.gm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassOptions extends StObject {
   
-  var appPath: js.UndefOr[String] = js.native
+  var appPath: js.UndefOr[String] = js.undefined
   
-  var imageMagick: js.UndefOr[Boolean] = js.native
+  var imageMagick: js.UndefOr[Boolean] = js.undefined
   
-  var nativeAutoOrient: js.UndefOr[Boolean] = js.native
+  var nativeAutoOrient: js.UndefOr[Boolean] = js.undefined
 }
 object ClassOptions {
   

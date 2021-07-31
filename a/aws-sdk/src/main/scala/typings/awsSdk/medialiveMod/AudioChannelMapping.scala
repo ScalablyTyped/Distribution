@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioChannelMapping extends StObject {
   
   /**
     * Indices and gain values for each input channel that should be remixed into this output channel.
     */
-  var InputChannelLevels: listOfInputChannelLevel = js.native
+  var InputChannelLevels: listOfInputChannelLevel
   
   /**
     * The index of the output channel being produced.
     */
-  var OutputChannel: integerMin0Max7 = js.native
+  var OutputChannel: integerMin0Max7
 }
 object AudioChannelMapping {
   

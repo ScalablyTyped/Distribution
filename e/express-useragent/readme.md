@@ -11,8 +11,8 @@ ExpressJS/Connect/TrinteJS user-agent middleware exposing
 | Full name          | express-useragent |
 | Keywords           | useragent, connect, express, trinte, browser, compound, middleware |
 | # releases         | 4 |
-| # dependents       | 94 |
-| # downloads        | 2939574 |
+| # dependents       | 100 |
+| # downloads        | 3788328 |
 | # stars            | 24 |
 
 ## Links

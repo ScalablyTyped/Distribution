@@ -2,22 +2,20 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Point extends StObject {
   
-  var value: Double | js.Array[_] = js.native
+  var value: Double | js.Array[js.Any]
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Point {
   
   @scala.inline
-  def apply(value: Double | js.Array[_], x: Double, y: Double): Point = {
+  def apply(value: Double | js.Array[js.Any], x: Double, y: Double): Point = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
@@ -26,7 +24,7 @@ object Point {
   implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setValue(value: Double | js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: Double | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))

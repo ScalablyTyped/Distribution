@@ -11,7 +11,6 @@ import typings.parse5SaxParser.parse5SaxParserStrings.startTag
 import typings.parse5SaxParser.parse5SaxParserStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,18 +54,17 @@ object mod {
     def this(options: SAXParserOptions) = this()
   }
   
-  @js.native
   trait CommentToken extends StObject {
     
     /**
       * Comment source code location info. Available if location info is enabled via {@link SAXParserOptions}.
       */
-    var sourceCodeLocation: js.UndefOr[Location] = js.native
+    var sourceCodeLocation: js.UndefOr[Location] = js.undefined
     
     /**
       * Comment text.
       */
-    var text: String = js.native
+    var text: String
   }
   object CommentToken {
     
@@ -90,28 +88,27 @@ object mod {
     }
   }
   
-  @js.native
   trait DoctypeToken extends StObject {
     
     /**
       * Document type name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Document type public identifier.
       */
-    var publicId: String = js.native
+    var publicId: String
     
     /**
       * Document type declaration source code location info. Available if location info is enabled via {@link SAXParserOptions}.
       */
-    var sourceCodeLocation: js.UndefOr[Location] = js.native
+    var sourceCodeLocation: js.UndefOr[Location] = js.undefined
     
     /**
       * Document type system identifier.
       */
-    var systemId: String = js.native
+    var systemId: String
   }
   object DoctypeToken {
     
@@ -141,18 +138,17 @@ object mod {
     }
   }
   
-  @js.native
   trait EndTagToken extends StObject {
     
     /**
       * End tag source code location info. Available if location info is enabled via {@link SAXParserOptions}.
       */
-    var sourceCodeLocation: js.UndefOr[Location] = js.native
+    var sourceCodeLocation: js.UndefOr[Location] = js.undefined
     
     /**
       * Tag name.
       */
-    var tagName: String = js.native
+    var tagName: String
   }
   object EndTagToken {
     
@@ -275,7 +271,6 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait SAXParserOptions extends StObject {
     
     /**
@@ -283,7 +278,7 @@ object mod {
       * When enabled, each token event handler will receive {@link Location} (or {@link StartTagLocation})
       * object as its last argument.
       */
-    var sourceCodeLocationInfo: js.UndefOr[Boolean] = js.native
+    var sourceCodeLocationInfo: js.UndefOr[Boolean] = js.undefined
   }
   object SAXParserOptions {
     
@@ -304,28 +299,27 @@ object mod {
     }
   }
   
-  @js.native
   trait StartTagToken extends StObject {
     
     /**
       * List of attributes.
       */
-    var attrs: js.Array[Attribute] = js.native
+    var attrs: js.Array[Attribute]
     
     /**
       * Indicates if the tag is self-closing.
       */
-    var selfClosing: Boolean = js.native
+    var selfClosing: Boolean
     
     /**
       * Start tag source code location info. Available if location info is enabled via {@link SAXParserOptions}.
       */
-    var sourceCodeLocation: js.UndefOr[StartTagLocation] = js.native
+    var sourceCodeLocation: js.UndefOr[StartTagLocation] = js.undefined
     
     /**
       * Tag name.
       */
-    var tagName: String = js.native
+    var tagName: String
   }
   object StartTagToken {
     
@@ -358,18 +352,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TextToken extends StObject {
     
     /**
       * Text content source code location info. Available if location info is enabled via {@link SAXParserOptions}.
       */
-    var sourceCodeLocation: js.UndefOr[Location] = js.native
+    var sourceCodeLocation: js.UndefOr[Location] = js.undefined
     
     /**
       * Text content.
       */
-    var text: String = js.native
+    var text: String
   }
   object TextToken {
     

@@ -3,31 +3,30 @@ package typings.extjs.Ext.grid
 import typings.extjs.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object header {
   
-  @js.native
   trait IContainer
-    extends typings.extjs.Ext.container.IContainer {
+    extends StObject
+       with typings.extjs.Ext.container.IContainer {
     
     /** [Config Option] (Number) */
-    var defaultWidth: js.UndefOr[Double] = js.native
+    var defaultWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableColumnHide: js.UndefOr[Boolean] = js.native
+    var enableColumnHide: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the number of grid columns descended from this HeaderContainer  */
-    var getColumnCount: js.UndefOr[js.Function0[Unit]] = js.native
+    var getColumnCount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns an array of menu CheckItems corresponding to all immediate children of the passed Container which have been c
       * @param headerContainer Object
       */
-    var getColumnMenu: js.UndefOr[js.Function1[/* headerContainer */ js.UndefOr[js.Any], Unit]] = js.native
+    var getColumnMenu: js.UndefOr[js.Function1[/* headerContainer */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Gets the full width of all columns that are visible  */
-    var getFullWidth: js.UndefOr[js.Function0[Unit]] = js.native
+    var getFullWidth: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns an array of all columns which appear in the grid s View
       * @param inResult Object
@@ -36,12 +35,12 @@ object header {
       */
     var getGridColumns: js.UndefOr[
         js.Function2[/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any], Array]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Get a leaf level header by index regardless of what the nesting structure is
       * @param index Number The column index for which to retrieve the column.
       */
-    var getHeaderAtIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+    var getHeaderAtIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Returns the index of a leaf level header regardless of what the nesting structure is
       * @param header Ext.grid.column.Column The header to find the index of
@@ -49,34 +48,34 @@ object header {
       */
     var getHeaderIndex: js.UndefOr[
         js.Function1[/* header */ js.UndefOr[typings.extjs.Ext.grid.column.IColumn], Double]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns an array of menu items to be placed into the shared menu across all headers in this header container
       * @returns Array menuItems
       */
-    var getMenuItems: js.UndefOr[js.Function0[Array]] = js.native
+    var getMenuItems: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns an array of the visible columns in the grid
       * @returns Array
       */
-    var getVisibleGridColumns: js.UndefOr[js.Function0[Array]] = js.native
+    var getVisibleGridColumns: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] When passed a column index returns the closet visible column to that
       * @param index Number Position at which to find the closest visible column.
       */
-    var getVisibleHeaderClosestToIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+    var getVisibleHeaderClosestToIndex: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isGroupHeader: js.UndefOr[Boolean] = js.native
+    var isGroupHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var `sealed`: js.UndefOr[Boolean] = js.native
+    var `sealed`: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object IContainer {
     
@@ -181,9 +180,9 @@ object header {
     }
   }
   
-  @js.native
   trait IDragZone
-    extends typings.extjs.Ext.dd.IDragZone
+    extends StObject
+       with typings.extjs.Ext.dd.IDragZone
   object IDragZone {
     
     @scala.inline
@@ -193,9 +192,9 @@ object header {
     }
   }
   
-  @js.native
   trait IDropZone
-    extends typings.extjs.Ext.dd.IDropZone
+    extends StObject
+       with typings.extjs.Ext.dd.IDropZone
   object IDropZone {
     
     @scala.inline

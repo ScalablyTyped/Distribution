@@ -2,36 +2,34 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change[T] extends StObject {
   
   /**
     * The type of change that was made to the item.
     */
-  var changeType: VersionControlChangeType = js.native
+  var changeType: VersionControlChangeType
   
   /**
     * Current version.
     */
-  var item: T = js.native
+  var item: T
   
   /**
     * Content of the item after the change.
     */
-  var newContent: ItemContent = js.native
+  var newContent: ItemContent
   
   /**
     * Path of the item on the server.
     */
-  var sourceServerItem: String = js.native
+  var sourceServerItem: String
   
   /**
     * URL to retrieve the item.
     */
-  var url: String = js.native
+  var url: String
 }
 object Change {
   
@@ -48,7 +46,7 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change[_], T] (val x: Self with Change[T]) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change[?], T] (val x: Self & Change[T]) extends AnyVal {
     
     @scala.inline
     def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])

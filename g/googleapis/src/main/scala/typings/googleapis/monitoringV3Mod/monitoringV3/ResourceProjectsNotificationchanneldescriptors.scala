@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/monitoring/v3", "monitoring_v3.Resource$Projects$Notificationchanneldescriptors")
@@ -32,7 +31,7 @@ class ResourceProjectsNotificationchanneldescriptors protected () extends StObje
     */
   def get(): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
   def get(callback: BodyResponseCallback[SchemaNotificationChannelDescriptor]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
   def get(params: ParamsResourceProjectsNotificationchanneldescriptorsGet): GaxiosPromise[SchemaNotificationChannelDescriptor] = js.native
   def get(
     params: ParamsResourceProjectsNotificationchanneldescriptorsGet,
@@ -68,7 +67,7 @@ class ResourceProjectsNotificationchanneldescriptors protected () extends StObje
     */
   def list(): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNotificationChannelDescriptorsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
   def list(params: ParamsResourceProjectsNotificationchanneldescriptorsList): GaxiosPromise[SchemaListNotificationChannelDescriptorsResponse] = js.native
   def list(
     params: ParamsResourceProjectsNotificationchanneldescriptorsList,

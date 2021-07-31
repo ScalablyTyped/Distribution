@@ -1,0 +1,38 @@
+package typings.wixStyleReact.anon
+
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.std.HTMLAnchorElement
+import typings.wixStyleReact.wixStyleReactStrings.a
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait OnClick extends StObject {
+  
+  var as: a
+  
+  var onClick: js.UndefOr[MouseEventHandler[HTMLAnchorElement]] = js.undefined
+}
+object OnClick {
+  
+  @scala.inline
+  def apply(): OnClick = {
+    val __obj = js.Dynamic.literal(as = "a")
+    __obj.asInstanceOf[OnClick]
+  }
+  
+  @scala.inline
+  implicit class OnClickMutableBuilder[Self <: OnClick] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAs(value: a): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+  }
+}

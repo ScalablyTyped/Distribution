@@ -4,33 +4,31 @@ import typings.react.mod.CSSProperties
 import typings.reactBootstrapTable.anon.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Editable[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends StObject {
   
   /**
     * Additional attributes for the editor component.
     */
-  var attrs: js.UndefOr[EditableAttrs] = js.native
+  var attrs: js.UndefOr[EditableAttrs] = js.undefined
   
   /**
     * Class name to use for the editor component.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Number of columns to display for a text area component.
     */
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
   /**
     * Default value to show in the edit field in the Insert Modal for this column.
     */
   var defaultValue: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Data in a select or checkbox. If a checkbox, use a string with a ':'(colon) to separate the two values, ex: Y:N
@@ -38,34 +36,34 @@ trait Editable[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] exte
     * If the array is an array of objects, the fields 'text' can be used for the display text and 'value' to specify
     * the option's value.
     */
-  var options: js.UndefOr[Values[TRow]] = js.native
+  var options: js.UndefOr[Values[TRow]] = js.undefined
   
   /**
     * @deprecated Use placeholder inside the attrs field instead.
     * Text to display as placeholder text in the editor component.
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * Used to specify a field that can be modified in the insert modal when adding a new row, but cannot be edited
     * inside the table after the row has been inserted.
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of rows to display for a text area component.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * CSS Style to use for the editor component.
     */
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Edit field type, avaiable value is 'textarea', 'select', 'checkbox' and 'datetime'
     */
-  var `type`: js.UndefOr[EditCellType] = js.native
+  var `type`: js.UndefOr[EditCellType] = js.undefined
   
   /**
     * Validation function for the column. It takes the new "cell value" as argument. This function should return
@@ -77,7 +75,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] exte
       /* row */ TRow, 
       Boolean | String | EditValidatorObject
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Editable {
   
@@ -88,7 +86,7 @@ object Editable {
   }
   
   @scala.inline
-  implicit class EditableMutableBuilder[Self <: Editable[_, _], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self with (Editable[TRow, K])) extends AnyVal {
+  implicit class EditableMutableBuilder[Self <: Editable[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (Editable[TRow, K])) extends AnyVal {
     
     @scala.inline
     def setAttrs(value: EditableAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])

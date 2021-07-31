@@ -3,12 +3,14 @@ package typings.uifabricUtilities
 import typings.uifabricUtilities.uifabricUtilitiesBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ariaMod {
   
-  @JSImport("@uifabric/utilities/lib/aria", "mergeAriaAttributeValues")
+  @JSImport("@uifabric/utilities/lib/aria", JSImport.Namespace)
   @js.native
-  def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def mergeAriaAttributeValues_false(ariaAttributes: (js.UndefOr[String | `false`])*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAriaAttributeValues")(ariaAttributes.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

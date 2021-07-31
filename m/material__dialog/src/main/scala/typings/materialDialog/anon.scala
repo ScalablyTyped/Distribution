@@ -5,43 +5,41 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIONATTRIBUTE extends StObject {
     
-    var ACTION_ATTRIBUTE: String = js.native
+    var ACTION_ATTRIBUTE: String
     
-    var BUTTON_DEFAULT_ATTRIBUTE: String = js.native
+    var BUTTON_DEFAULT_ATTRIBUTE: String
     
-    var BUTTON_SELECTOR: String = js.native
+    var BUTTON_SELECTOR: String
     
-    var CLOSED_EVENT: String = js.native
+    var CLOSED_EVENT: String
     
-    var CLOSE_ACTION: String = js.native
+    var CLOSE_ACTION: String
     
-    var CLOSING_EVENT: String = js.native
+    var CLOSING_EVENT: String
     
-    var CONTAINER_SELECTOR: String = js.native
+    var CONTAINER_SELECTOR: String
     
-    var CONTENT_SELECTOR: String = js.native
+    var CONTENT_SELECTOR: String
     
-    var DESTROY_ACTION: String = js.native
+    var DESTROY_ACTION: String
     
-    var INITIAL_FOCUS_ATTRIBUTE: String = js.native
+    var INITIAL_FOCUS_ATTRIBUTE: String
     
-    var OPENED_EVENT: String = js.native
+    var OPENED_EVENT: String
     
-    var OPENING_EVENT: String = js.native
+    var OPENING_EVENT: String
     
-    var SCRIM_SELECTOR: String = js.native
+    var SCRIM_SELECTOR: String
     
-    var SUPPRESS_DEFAULT_PRESS_SELECTOR: String = js.native
+    var SUPPRESS_DEFAULT_PRESS_SELECTOR: String
     
-    var SURFACE_SELECTOR: String = js.native
+    var SURFACE_SELECTOR: String
   }
   object ACTIONATTRIBUTE {
     
@@ -117,20 +115,19 @@ object anon {
     }
   }
   
-  @js.native
   trait CLOSING extends StObject {
     
-    var CLOSING: String = js.native
+    var CLOSING: String
     
-    var OPEN: String = js.native
+    var OPEN: String
     
-    var OPENING: String = js.native
+    var OPENING: String
     
-    var SCROLLABLE: String = js.native
+    var SCROLLABLE: String
     
-    var SCROLL_LOCK: String = js.native
+    var SCROLL_LOCK: String
     
-    var STACKED: String = js.native
+    var STACKED: String
   }
   object CLOSING {
     
@@ -170,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DIALOGANIMATIONCLOSETIMEMS extends StObject {
     
-    var DIALOG_ANIMATION_CLOSE_TIME_MS: Double = js.native
+    var DIALOG_ANIMATION_CLOSE_TIME_MS: Double
     
-    var DIALOG_ANIMATION_OPEN_TIME_MS: Double = js.native
+    var DIALOG_ANIMATION_OPEN_TIME_MS: Double
   }
   object DIALOGANIMATIONCLOSETIMEMS {
     
@@ -197,44 +193,43 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/dialog.@material/dialog/adapter.MDCDialogAdapter> */
-  @js.native
   trait PartialMDCDialogAdapter extends StObject {
     
-    var addBodyClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addBodyClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var areButtonsStacked: js.UndefOr[js.Function0[Boolean]] = js.native
+    var areButtonsStacked: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var clickDefaultButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var clickDefaultButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var eventTargetMatches: js.UndefOr[js.Function2[/* target */ EventTarget | Null, /* selector */ String, Boolean]] = js.native
+    var eventTargetMatches: js.UndefOr[js.Function2[/* target */ EventTarget | Null, /* selector */ String, Boolean]] = js.undefined
     
-    var getActionFromEvent: js.UndefOr[js.Function1[/* evt */ Event, String | Null]] = js.native
+    var getActionFromEvent: js.UndefOr[js.Function1[/* evt */ Event, String | Null]] = js.undefined
     
-    var getInitialFocusEl: js.UndefOr[js.Function0[HTMLElement | Null]] = js.native
+    var getInitialFocusEl: js.UndefOr[js.Function0[HTMLElement | Null]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var isContentScrollable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isContentScrollable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifyClosed: js.UndefOr[js.Function1[/* action */ String, Unit]] = js.native
+    var notifyClosed: js.UndefOr[js.Function1[/* action */ String, Unit]] = js.undefined
     
-    var notifyClosing: js.UndefOr[js.Function1[/* action */ String, Unit]] = js.native
+    var notifyClosing: js.UndefOr[js.Function1[/* action */ String, Unit]] = js.undefined
     
-    var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var releaseFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var releaseFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeBodyClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeBodyClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var reverseButtons: js.UndefOr[js.Function0[Unit]] = js.native
+    var reverseButtons: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var trapFocus: js.UndefOr[js.Function1[/* focusElement */ HTMLElement | Null, Unit]] = js.native
+    var trapFocus: js.UndefOr[js.Function1[/* focusElement */ HTMLElement | Null, Unit]] = js.undefined
   }
   object PartialMDCDialogAdapter {
     

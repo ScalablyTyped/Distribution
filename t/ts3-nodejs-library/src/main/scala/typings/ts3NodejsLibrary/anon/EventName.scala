@@ -2,17 +2,15 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventName extends StObject {
   
-  var eventName: String = js.native
+  var eventName: String
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
 }
 object EventName {
   

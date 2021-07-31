@@ -2,17 +2,15 @@ package typings.reactNativeSimpleRadioButton
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: String | Double = js.native
+    var value: String | Double
   }
   object Label {
     

@@ -9,42 +9,40 @@ import typings.jscodeshift.variableDeclaratorMod.TransformMethods
 import typings.recast.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collectionMod {
   
-  @JSImport("jscodeshift/src/Collection", "fromNodes")
+  @JSImport("jscodeshift/src/Collection", JSImport.Namespace)
   @js.native
-  def fromNodes(args: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jscodeshift/src/Collection", "fromPaths")
-  @js.native
-  def fromPaths(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def fromNodes(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("jscodeshift/src/Collection", "hasConflictingRegistration")
-  @js.native
-  def hasConflictingRegistration(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def fromPaths(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPaths")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("jscodeshift/src/Collection", "registerMethods")
-  @js.native
-  def registerMethods(methods: js.Object): Unit = js.native
-  @JSImport("jscodeshift/src/Collection", "registerMethods")
-  @js.native
+  @scala.inline
+  def hasConflictingRegistration(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hasConflictingRegistration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def registerMethods(methods: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def registerMethods(
     methods: js.Object,
     `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMethods")(methods.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jscodeshift/src/Collection", "setDefaultCollectionType")
-  @js.native
-  def setDefaultCollectionType(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def setDefaultCollectionType(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultCollectionType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
   @js.native
   trait Collection[N]
-    extends TraversalMethods
+    extends StObject
+       with TraversalMethods
        with MutationMethods[N]
        with GlobalMethods
        with TransformMethods[N]
@@ -107,7 +105,7 @@ object collectionMod {
     /** Calls "get" on the first path (same as "collection.paths(0).get(...)"). */
     def get(fields: (String | Double)*): js.Any = js.native
     
-    def getAST(): js.Array[ASTPath[_]] = js.native
+    def getAST(): js.Array[ASTPath[js.Any]] = js.native
     
     /**
       * Returns the type(s) of the collection. This is only used for unit tests,

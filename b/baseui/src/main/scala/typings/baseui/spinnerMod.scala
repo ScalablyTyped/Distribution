@@ -5,7 +5,6 @@ import typings.react.mod.FC
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinnerMod {
@@ -17,19 +16,25 @@ object spinnerMod {
   object SIZE extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SIZE with String] = js.native
+    def apply(value: String): js.UndefOr[SIZE & String] = js.native
     
     @js.native
-    sealed trait large extends SIZE
-    /* "large" */ val large: typings.baseui.spinnerMod.SIZE.large with String = js.native
+    sealed trait large
+      extends StObject
+         with SIZE
+    /* "large" */ val large: typings.baseui.spinnerMod.SIZE.large & String = js.native
     
     @js.native
-    sealed trait medium extends SIZE
-    /* "medium" */ val medium: typings.baseui.spinnerMod.SIZE.medium with String = js.native
+    sealed trait medium
+      extends StObject
+         with SIZE
+    /* "medium" */ val medium: typings.baseui.spinnerMod.SIZE.medium & String = js.native
     
     @js.native
-    sealed trait small extends SIZE
-    /* "small" */ val small: typings.baseui.spinnerMod.SIZE.small with String = js.native
+    sealed trait small
+      extends StObject
+         with SIZE
+    /* "small" */ val small: typings.baseui.spinnerMod.SIZE.small & String = js.native
   }
   
   @JSImport("baseui/spinner", "Spinner")
@@ -64,28 +69,27 @@ object spinnerMod {
   @js.native
   val StyledTrackPath: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait SpinnerDeterminateOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Svg: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Text: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TrackBackground: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TrackForeground: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SpinnerDeterminateOverrides {
     
@@ -140,20 +144,19 @@ object spinnerMod {
     }
   }
   
-  @js.native
   trait SpinnerDeterminateProps extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var overrides: js.UndefOr[SpinnerDeterminateOverrides] = js.native
+    var overrides: js.UndefOr[SpinnerDeterminateOverrides] = js.undefined
     
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
     var size: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: baseui.baseui/spinner.SIZE[keyof baseui.baseui/spinner.SIZE] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SpinnerDeterminateProps {
     
@@ -200,20 +203,19 @@ object spinnerMod {
     }
   }
   
-  @js.native
   trait SpinnerOverrides extends StObject {
     
     var ActivePath: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Svg: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var TrackPath: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SpinnerOverrides {
     
@@ -252,18 +254,17 @@ object spinnerMod {
     }
   }
   
-  @js.native
   trait SpinnerProps extends StObject {
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var overrides: js.UndefOr[SpinnerOverrides] = js.native
+    var overrides: js.UndefOr[SpinnerOverrides] = js.undefined
     
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object SpinnerProps {
     

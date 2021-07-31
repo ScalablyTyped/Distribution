@@ -2,15 +2,13 @@ package typings.reactOnsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteConfig extends StObject {
   
-  var processStack: js.Array[RouterProcess] = js.native
+  var processStack: js.Array[RouterProcess]
   
-  var routeStack: js.Array[Route] = js.native
+  var routeStack: js.Array[Route]
 }
 object RouteConfig {
   

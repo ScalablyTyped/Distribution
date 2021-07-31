@@ -3,36 +3,34 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 import typings.winrtUwp.Windows.UI.ViewManagement.ActivationViewSwitcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated from another app by using the DIAL protocol. */
-@js.native
 trait DialReceiverActivatedEventArgs extends StObject {
   
   /** Gets the name of the app that invoked the dial receiver app. */
-  var appName: String = js.native
+  var appName: String
   
   /** Gets the arguments passed by the calling app. */
-  var arguments: String = js.native
+  var arguments: String
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** Gets the execution state of the app before it was activated. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object, which provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the unique tile identifier for the calling app. */
-  var tileId: String = js.native
+  var tileId: String
   
   /** Gets the view switcher object that allows you to set the view for the application. */
-  var viewSwitcher: ActivationViewSwitcher = js.native
+  var viewSwitcher: ActivationViewSwitcher
 }
 object DialReceiverActivatedEventArgs {
   

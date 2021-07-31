@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsUpdateActiveHoursInstall extends WindowsUpdateInstallScheduleType {
+trait WindowsUpdateActiveHoursInstall
+  extends StObject
+     with WindowsUpdateInstallScheduleType {
   
   // Active Hours End
-  var activeHoursEnd: js.UndefOr[String] = js.native
+  var activeHoursEnd: js.UndefOr[String] = js.undefined
   
   // Active Hours Start
-  var activeHoursStart: js.UndefOr[String] = js.native
+  var activeHoursStart: js.UndefOr[String] = js.undefined
 }
 object WindowsUpdateActiveHoursInstall {
   

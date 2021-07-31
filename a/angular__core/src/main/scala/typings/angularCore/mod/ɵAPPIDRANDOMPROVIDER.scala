@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ɵAPPIDRANDOMPROVIDER {
@@ -23,9 +22,8 @@ object ɵAPPIDRANDOMPROVIDER {
   @scala.inline
   def provide_=(x: InjectionToken[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("provide")(x.asInstanceOf[js.Any])
   
-  @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.useFactory")
-  @js.native
-  def useFactory(): String = js.native
+  @scala.inline
+  def useFactory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useFactory")().asInstanceOf[String]
   @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.useFactory")
   @js.native
   def useFactory_FɵAPPIDRANDOMPROVIDER: js.Function0[String] = js.native

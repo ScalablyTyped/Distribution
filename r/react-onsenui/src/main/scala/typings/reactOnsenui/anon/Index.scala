@@ -2,19 +2,17 @@ package typings.reactOnsenui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var onPostChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var tabbarId: js.UndefOr[String] = js.native
+  var tabbarId: js.UndefOr[String] = js.undefined
 }
 object Index {
   

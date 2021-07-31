@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfiguration extends StObject {
   
   /**
     * The code location and type parameters for the application.
     */
-  var applicationCodeConfiguration: ApplicationApplicationConfigurationApplicationCodeConfiguration = js.native
+  var applicationCodeConfiguration: ApplicationApplicationConfigurationApplicationCodeConfiguration
   
   /**
     * Describes whether snapshots are enabled for a Flink-based application.
     */
-  var applicationSnapshotConfiguration: ApplicationApplicationConfigurationApplicationSnapshotConfiguration = js.native
+  var applicationSnapshotConfiguration: ApplicationApplicationConfigurationApplicationSnapshotConfiguration
   
   /**
     * Describes execution properties for a Flink-based application.
     */
-  var environmentProperties: js.UndefOr[ApplicationApplicationConfigurationEnvironmentProperties] = js.native
+  var environmentProperties: js.UndefOr[ApplicationApplicationConfigurationEnvironmentProperties] = js.undefined
   
   /**
     * The configuration of a Flink-based application.
     */
-  var flinkApplicationConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfiguration = js.native
+  var flinkApplicationConfiguration: ApplicationApplicationConfigurationFlinkApplicationConfiguration
   
   /**
     * The configuration of a SQL-based application.
     */
-  var sqlApplicationConfiguration: js.UndefOr[ApplicationApplicationConfigurationSqlApplicationConfiguration] = js.native
+  var sqlApplicationConfiguration: js.UndefOr[ApplicationApplicationConfigurationSqlApplicationConfiguration] = js.undefined
   
   /**
     * The VPC configuration of a Flink-based application.
     */
-  var vpcConfiguration: js.UndefOr[ApplicationApplicationConfigurationVpcConfiguration] = js.native
+  var vpcConfiguration: js.UndefOr[ApplicationApplicationConfigurationVpcConfiguration] = js.undefined
 }
 object ApplicationApplicationConfiguration {
   

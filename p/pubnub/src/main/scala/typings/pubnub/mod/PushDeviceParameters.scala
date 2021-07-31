@@ -2,15 +2,13 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushDeviceParameters extends StObject {
   
-  var device: String = js.native
+  var device: String
   
-  var pushGateway: String = js.native
+  var pushGateway: String
 }
 object PushDeviceParameters {
   

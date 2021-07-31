@@ -5,54 +5,49 @@ import typings.estree.mod.Node
 import typings.grasp.anon.Args
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Args): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("grasp", JSImport.Namespace)
   @js.native
-  def apply(options: Args): Unit = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("grasp", "VERSION")
   @js.native
   val VERSION: String = js.native
   
-  @JSImport("grasp", "replace")
-  @js.native
-  def replace(engine: QueryEngineType): GraspReplaceWithQueryEngine = js.native
-  @JSImport("grasp", "replace")
-  @js.native
-  def replace(engine: QueryEngineType, selector: String): GraspReplaceWithSelector = js.native
-  @JSImport("grasp", "replace")
-  @js.native
-  def replace(engine: QueryEngineType, selector: String, replacement: Replacement): js.Function1[/* input */ String, String] = js.native
-  @JSImport("grasp", "replace")
-  @js.native
-  def replace(engine: QueryEngineType, selector: String, replacement: Replacement, input: String): String = js.native
+  @scala.inline
+  def replace(engine: QueryEngineType): GraspReplaceWithQueryEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any]).asInstanceOf[GraspReplaceWithQueryEngine]
+  @scala.inline
+  def replace(engine: QueryEngineType, selector: String): GraspReplaceWithSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[GraspReplaceWithSelector]
+  @scala.inline
+  def replace(engine: QueryEngineType, selector: String, replacement: Replacement): js.Function1[/* input */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ String, String]]
+  @scala.inline
+  def replace(engine: QueryEngineType, selector: String, replacement: Replacement, input: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("grasp", "search")
-  @js.native
-  def search(engine: QueryEngineType): GraspSearchWithQueryEngine = js.native
-  @JSImport("grasp", "search")
-  @js.native
-  def search(engine: QueryEngineType, selector: String): js.Function1[/* input */ String, js.Array[Node]] = js.native
+  @scala.inline
+  def search(engine: QueryEngineType): GraspSearchWithQueryEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any]).asInstanceOf[GraspSearchWithQueryEngine]
+  @scala.inline
+  def search(engine: QueryEngineType, selector: String): js.Function1[/* input */ String, js.Array[Node]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* input */ String, js.Array[Node]]]
   // Both the search and replace functions are curryable, which leads to quite
   // a bit of noise. Using generic currying will discard variable name
   // information, so we hand-roll it here
-  @JSImport("grasp", "search")
-  @js.native
-  def search(engine: QueryEngineType, selector: String, input: String): js.Array[Node] = js.native
+  @scala.inline
+  def search(engine: QueryEngineType, selector: String, input: String): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(engine.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  type GraspReplaceWithQueryEngine = (js.Function1[/* selector */ String, GraspReplaceWithSelector]) with (js.Function2[
+  type GraspReplaceWithQueryEngine = (js.Function1[/* selector */ String, GraspReplaceWithSelector]) & (js.Function2[
     /* selector */ String, 
     /* replacement */ Replacement, 
     js.Function1[/* input */ String, String]
-  ]) with (js.Function3[/* selector */ String, /* replacement */ Replacement, /* input */ String, String])
+  ]) & (js.Function3[/* selector */ String, /* replacement */ Replacement, /* input */ String, String])
   
-  type GraspReplaceWithSelector = (js.Function1[/* replacement */ Replacement, js.Function1[/* input */ String, String]]) with (js.Function2[/* replacement */ Replacement, /* input */ String, String])
+  type GraspReplaceWithSelector = (js.Function1[/* replacement */ Replacement, js.Function1[/* input */ String, String]]) & (js.Function2[/* replacement */ Replacement, /* input */ String, String])
   
-  type GraspSearchWithQueryEngine = (js.Function2[/* selector */ String, /* input */ String, js.Array[Node]]) with (js.Function1[/* selector */ String, js.Function1[/* input */ String, js.Array[Node]]])
+  type GraspSearchWithQueryEngine = (js.Function2[/* selector */ String, /* input */ String, js.Array[Node]]) & (js.Function1[/* selector */ String, js.Function1[/* input */ String, js.Array[Node]]])
   
   /* Rewritten from type alias, can be one of: 
     - typings.grasp.graspStrings.squery

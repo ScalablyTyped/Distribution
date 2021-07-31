@@ -2,41 +2,39 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetCookie extends StObject {
   
   /** The cookie domain. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** The cookie Unix expiration time in seconds. */
-  var expires: js.UndefOr[Double] = js.native
+  var expires: js.UndefOr[Double] = js.undefined
   
   /** The cookie http only flag. */
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
   /** The cookie name. */
-  var name: String = js.native
+  var name: String
   
   /** The cookie path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** The cookie same site definition. */
-  var sameSite: js.UndefOr[SameSiteSetting] = js.native
+  var sameSite: js.UndefOr[SameSiteSetting] = js.undefined
   
   /** The cookie secure flag. */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /** The session cookie flag. */
-  var session: js.UndefOr[Boolean] = js.native
+  var session: js.UndefOr[Boolean] = js.undefined
   
   /** The request-URI to associate with the setting of the cookie. This value can affect the default domain and path values of the created cookie. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** The cookie value. */
-  var value: String = js.native
+  var value: String
 }
 object SetCookie {
   

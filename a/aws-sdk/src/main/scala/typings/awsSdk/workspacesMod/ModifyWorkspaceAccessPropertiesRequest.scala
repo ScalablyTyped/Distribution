@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyWorkspaceAccessPropertiesRequest extends StObject {
   
   /**
     * The identifier of the directory.
     */
-  var ResourceId: DirectoryId = js.native
+  var ResourceId: DirectoryId
   
   /**
     * The device types and operating systems to enable or disable for access.
     */
-  var WorkspaceAccessProperties: typings.awsSdk.workspacesMod.WorkspaceAccessProperties = js.native
+  var WorkspaceAccessProperties: typings.awsSdk.workspacesMod.WorkspaceAccessProperties
 }
 object ModifyWorkspaceAccessPropertiesRequest {
   

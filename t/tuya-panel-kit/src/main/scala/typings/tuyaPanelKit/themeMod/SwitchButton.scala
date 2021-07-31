@@ -2,32 +2,30 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.SwitchButtonTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.SwitchButtonTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.SwitchButtonTheme> */
-@js.native
 trait SwitchButton extends StObject {
   
-  var dark: SwitchButtonTheme = js.native
+  var dark: SwitchButtonTheme
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var light: SwitchButtonTheme = js.native
+  var light: SwitchButtonTheme
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var onThumbTintColor: js.UndefOr[String] = js.native
+  var onThumbTintColor: js.UndefOr[String] = js.undefined
   
-  var onTintColor: js.UndefOr[String] = js.native
+  var onTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbSize: js.UndefOr[Double] = js.native
+  var thumbSize: js.UndefOr[Double] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SwitchButton {
   

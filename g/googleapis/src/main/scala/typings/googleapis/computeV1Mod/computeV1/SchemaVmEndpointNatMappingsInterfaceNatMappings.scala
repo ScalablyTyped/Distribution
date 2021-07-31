@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contain information of Nat mapping for an interface of this endpoint.
   */
-@js.native
 trait SchemaVmEndpointNatMappingsInterfaceNatMappings extends StObject {
   
   /**
@@ -17,25 +15,25 @@ trait SchemaVmEndpointNatMappingsInterfaceNatMappings extends StObject {
     * used for NAT. Example: [&quot;2.2.2.2:12345-12355&quot;,
     * &quot;1.1.1.1:2234-2234&quot;].
     */
-  var natIpPortRanges: js.UndefOr[js.Array[String]] = js.native
+  var natIpPortRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Total number of ports across all NAT IPs allocated to this interface. It
     * equals to the aggregated port number in the field nat_ip_port_ranges.
     */
-  var numTotalNatPorts: js.UndefOr[Double] = js.native
+  var numTotalNatPorts: js.UndefOr[Double] = js.undefined
   
   /**
     * Alias IP range for this interface endpoint. It will be a private (RFC
     * 1918) IP range. Examples: &quot;10.33.4.55/32&quot;, or
     * &quot;192.168.5.0/24&quot;.
     */
-  var sourceAliasIpRange: js.UndefOr[String] = js.native
+  var sourceAliasIpRange: js.UndefOr[String] = js.undefined
   
   /**
     * Primary IP of the VM for this NIC.
     */
-  var sourceVirtualIp: js.UndefOr[String] = js.native
+  var sourceVirtualIp: js.UndefOr[String] = js.undefined
 }
 object SchemaVmEndpointNatMappingsInterfaceNatMappings {
   

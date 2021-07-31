@@ -14,14 +14,12 @@ import typings.packageJson.packageJsonBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("package-json", JSImport.Namespace)
-  @js.native
-  def apply(packageName: String): js.Promise[AbbreviatedMetadata] = js.native
+  @scala.inline
+  def apply(packageName: String): js.Promise[AbbreviatedMetadata] = ^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AbbreviatedMetadata]]
   /**
   	Get metadata of a package from the npm registry.
   	@param packageName - Name of the package.
@@ -36,12 +34,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("package-json", JSImport.Namespace)
-  @js.native
-  def apply(packageName: String, options: FullMetadataOptions): js.Promise[FullMetadata] = js.native
-  @JSImport("package-json", JSImport.Namespace)
-  @js.native
-  def apply(packageName: String, options: Options): js.Promise[AbbreviatedMetadata] = js.native
+  @scala.inline
+  def apply(packageName: String, options: FullMetadataOptions): js.Promise[FullMetadata] = (^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FullMetadata]]
+  @scala.inline
+  def apply(packageName: String, options: Options): js.Promise[AbbreviatedMetadata] = (^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AbbreviatedMetadata]]
   
   @JSImport("package-json", JSImport.Namespace)
   @js.native
@@ -66,8 +62,19 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("package-json", "PackageNotFoundError")
   @js.native
-  class PackageNotFoundErrorCls protected () extends PackageNotFoundErrorClass {
+  class PackageNotFoundErrorCls protected ()
+    extends StObject
+       with PackageNotFoundErrorClass {
     def this(packageName: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_PackageNotFoundErrorClass: typings.packageJson.packageJsonStrings.PackageNotFoundError = js.native
   }
   
   @scala.inline
@@ -87,8 +94,19 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("package-json", "VersionNotFoundError")
   @js.native
-  class VersionNotFoundErrorCls protected () extends VersionNotFoundErrorClass {
+  class VersionNotFoundErrorCls protected ()
+    extends StObject
+       with VersionNotFoundErrorClass {
     def this(packageName: String, version: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_VersionNotFoundErrorClass: typings.packageJson.packageJsonStrings.VersionNotFoundError = js.native
   }
   
   @scala.inline
@@ -97,17 +115,17 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof packageJson */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AbbreviatedMetadata
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    val `dist-tags`: DistTags = js.native
+    val `dist-tags`: DistTags
     
-    val modified: String = js.native
+    val modified: String
     
-    val name: String = js.native
+    val name: String
     
-    val versions: StringDictionary[AbbreviatedVersion] = js.native
+    val versions: StringDictionary[AbbreviatedVersion]
   }
   object AbbreviatedMetadata {
     
@@ -140,35 +158,35 @@ object mod {
     }
   }
   
-  @js.native
   trait AbbreviatedVersion
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    val _hasShrinkwrap: js.UndefOr[Boolean] = js.native
+    val _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined
     
-    val bin: js.UndefOr[StringDictionary[String]] = js.native
+    val bin: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val bundleDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val dependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val deprecated: js.UndefOr[String] = js.native
+    val deprecated: js.UndefOr[String] = js.undefined
     
-    val devDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val directories: js.UndefOr[js.Array[String]] = js.native
+    val directories: js.UndefOr[js.Array[String]] = js.undefined
     
-    val dist: Integrity = js.native
+    val dist: Integrity
     
-    val engines: js.UndefOr[StringDictionary[String]] = js.native
+    val engines: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val name: String = js.native
+    val name: String
     
-    val optionalDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val peerDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val peerDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val version: String = js.native
+    val version: String
   }
   object AbbreviatedVersion {
     
@@ -255,12 +273,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Agents extends StObject {
     
-    var http: js.UndefOr[Agent] = js.native
+    var http: js.UndefOr[Agent] = js.undefined
     
-    var https: js.UndefOr[typings.node.httpsMod.Agent] = js.native
+    var https: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
   }
   object Agents {
     
@@ -287,10 +304,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait DistTags extends /* tagName */ StringDictionary[String] {
+  trait DistTags
+    extends StObject
+       with /* tagName */ StringDictionary[String] {
     
-    val latest: String = js.native
+    val latest: String
   }
   object DistTags {
     
@@ -308,21 +326,21 @@ object mod {
     }
   }
   
-  @js.native
   trait FullMetadata
-    extends AbbreviatedMetadata
+    extends StObject
+       with AbbreviatedMetadata
        with HoistedData {
     
-    val _id: String = js.native
+    val _id: String
     
-    val _rev: String = js.native
+    val _rev: String
     
-    val time: Dictversion = js.native
+    val time: Dictversion
     
-    val users: js.UndefOr[StringDictionary[Boolean]] = js.native
+    val users: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
     @JSName("versions")
-    val versions_FullMetadata: StringDictionary[FullVersion] = js.native
+    val versions_FullMetadata: StringDictionary[FullVersion]
   }
   object FullMetadata {
     
@@ -364,21 +382,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait FullMetadataOptions extends Options {
+  trait FullMetadataOptions
+    extends StObject
+       with Options {
     
     /**
     		By default, only an abbreviated metadata object is returned for performance reasons. [Read more.](https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md)
     		@default false
     		*/
     @JSName("fullMetadata")
-    val fullMetadata_FullMetadataOptions: `true` = js.native
+    val fullMetadata_FullMetadataOptions: `true`
   }
   object FullMetadataOptions {
     
     @scala.inline
-    def apply(fullMetadata: `true`): FullMetadataOptions = {
-      val __obj = js.Dynamic.literal(fullMetadata = fullMetadata.asInstanceOf[js.Any])
+    def apply(): FullMetadataOptions = {
+      val __obj = js.Dynamic.literal(fullMetadata = true)
       __obj.asInstanceOf[FullMetadataOptions]
     }
     
@@ -390,33 +409,33 @@ object mod {
     }
   }
   
-  @js.native
   trait FullVersion
-    extends AbbreviatedVersion
+    extends StObject
+       with AbbreviatedVersion
        with HoistedData {
     
-    val _id: String = js.native
+    val _id: String
     
-    val _nodeVersion: String = js.native
+    val _nodeVersion: String
     
-    val _npmUser: String = js.native
+    val _npmUser: String
     
-    val _npmVersion: String = js.native
+    val _npmVersion: String
     
-    val files: js.UndefOr[js.Array[String]] = js.native
+    val files: js.UndefOr[js.Array[String]] = js.undefined
     
-    val gitHead: js.UndefOr[String] = js.native
+    val gitHead: js.UndefOr[String] = js.undefined
     
-    val main: js.UndefOr[String] = js.native
+    val main: js.UndefOr[String] = js.undefined
     
-    val man: js.UndefOr[js.Array[String]] = js.native
+    val man: js.UndefOr[js.Array[String]] = js.undefined
     
-    val scripts: js.UndefOr[StringDictionary[String]] = js.native
+    val scripts: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val types: js.UndefOr[String] = js.native
+    val types: js.UndefOr[String] = js.undefined
     
     @JSName("typings")
-    val typings_ : js.UndefOr[String] = js.native
+    val typings_ : js.UndefOr[String] = js.undefined
   }
   object FullVersion {
     
@@ -499,30 +518,29 @@ object mod {
     }
   }
   
-  @js.native
   trait HoistedData extends StObject {
     
-    val author: js.UndefOr[Person] = js.native
+    val author: js.UndefOr[Person] = js.undefined
     
-    val bugs: js.UndefOr[Email | Url] = js.native
+    val bugs: js.UndefOr[Email | Url] = js.undefined
     
-    val contributors: js.UndefOr[js.Array[Person]] = js.native
+    val contributors: js.UndefOr[js.Array[Person]] = js.undefined
     
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
-    val homepage: js.UndefOr[String] = js.native
+    val homepage: js.UndefOr[String] = js.undefined
     
-    val keywords: js.UndefOr[js.Array[String]] = js.native
+    val keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    val license: js.UndefOr[String] = js.native
+    val license: js.UndefOr[String] = js.undefined
     
-    val maintainers: js.UndefOr[js.Array[Person]] = js.native
+    val maintainers: js.UndefOr[js.Array[Person]] = js.undefined
     
-    val readme: js.UndefOr[String] = js.native
+    val readme: js.UndefOr[String] = js.undefined
     
-    val readmeFilename: js.UndefOr[String] = js.native
+    val readmeFilename: js.UndefOr[String] = js.undefined
     
-    val repository: js.UndefOr[Type] = js.native
+    val repository: js.UndefOr[Type] = js.undefined
   }
   object HoistedData {
     
@@ -612,30 +630,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Overwrite the `agent` option that is passed down to [`got`](https://github.com/sindresorhus/got#agent). This might be useful to add [proxy support](https://github.com/sindresorhus/got#proxies).
     		*/
-    val agent: js.UndefOr[Agent | typings.node.httpsMod.Agent | Agents | `false`] = js.native
+    val agent: js.UndefOr[Agent | typings.node.httpsMod.Agent | Agents | `false`] = js.undefined
     
     /**
     		Return the [main entry](https://registry.npmjs.org/ava) containing all versions.
     		@default false
     		*/
-    val allVersions: js.UndefOr[Boolean] = js.native
+    val allVersions: js.UndefOr[Boolean] = js.undefined
     
     /**
     		By default, only an abbreviated metadata object is returned for performance reasons. [Read more.](https://github.com/npm/registry/blob/master/docs/responses/package-metadata.md)
     		@default false
     		*/
-    val fullMetadata: js.UndefOr[Boolean] = js.native
+    val fullMetadata: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The registry URL is by default inferred from the npm defaults and `.npmrc`. This is beneficial as `package-json` and any project using it will work just like npm. This option is*only** intended for internal tools. You should*not** use this option in reusable packages. Prefer just using `.npmrc` whenever possible.
     		*/
-    val registryUrl: js.UndefOr[String] = js.native
+    val registryUrl: js.UndefOr[String] = js.undefined
     
     /**
     		Package version such as `1.0.0` or a [dist tag](https://docs.npmjs.com/cli/dist-tag) such as `latest`.
@@ -646,7 +663,7 @@ object mod {
     		- `~1.2.3` - Get the latest `1.2.x` but at least `1.2.3`
     		@default 'latest'
     		*/
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -691,17 +708,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait PackageNotFoundErrorClass extends Error {
+  trait PackageNotFoundErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_PackageNotFoundErrorClass: typings.packageJson.packageJsonStrings.PackageNotFoundError = js.native
+    val name_PackageNotFoundErrorClass: typings.packageJson.packageJsonStrings.PackageNotFoundError
   }
   object PackageNotFoundErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.packageJson.packageJsonStrings.PackageNotFoundError): PackageNotFoundErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): PackageNotFoundErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "PackageNotFoundError")
       __obj.asInstanceOf[PackageNotFoundErrorClass]
     }
     
@@ -713,14 +731,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Person extends StObject {
     
-    val email: js.UndefOr[String] = js.native
+    val email: js.UndefOr[String] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
   }
   object Person {
     
@@ -753,17 +770,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait VersionNotFoundErrorClass extends Error {
+  trait VersionNotFoundErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_VersionNotFoundErrorClass: typings.packageJson.packageJsonStrings.VersionNotFoundError = js.native
+    val name_VersionNotFoundErrorClass: typings.packageJson.packageJsonStrings.VersionNotFoundError
   }
   object VersionNotFoundErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.packageJson.packageJsonStrings.VersionNotFoundError): VersionNotFoundErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): VersionNotFoundErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "VersionNotFoundError")
       __obj.asInstanceOf[VersionNotFoundErrorClass]
     }
     

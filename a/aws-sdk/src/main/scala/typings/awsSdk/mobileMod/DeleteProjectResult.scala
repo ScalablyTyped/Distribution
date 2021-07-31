@@ -2,21 +2,19 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectResult extends StObject {
   
   /**
     *  Resources which were deleted. 
     */
-  var deletedResources: js.UndefOr[Resources] = js.native
+  var deletedResources: js.UndefOr[Resources] = js.undefined
   
   /**
     *  Resources which were not deleted, due to a risk of losing potentially important data or files. 
     */
-  var orphanedResources: js.UndefOr[Resources] = js.native
+  var orphanedResources: js.UndefOr[Resources] = js.undefined
 }
 object DeleteProjectResult {
   

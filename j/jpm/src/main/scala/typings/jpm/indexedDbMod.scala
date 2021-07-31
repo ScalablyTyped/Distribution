@@ -5,20 +5,18 @@ import typings.std.IDBFactory
 import typings.std.IDBKeyRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexedDbMod {
   
   // these interfaces are already provided by TypeScript
-  @js.native
   trait IndexedImpl extends StObject {
     
-    var DOMException: typings.std.DOMException = js.native
+    var DOMException: typings.std.DOMException
     
-    var IDBKeyRange: typings.std.IDBKeyRange = js.native
+    var IDBKeyRange: typings.std.IDBKeyRange
     
-    var indexedDB: IDBFactory = js.native
+    var indexedDB: IDBFactory
   }
   object IndexedImpl {
     

@@ -11,8 +11,8 @@ A simple server-side API for mixpanel
 | Full name          | mixpanel |
 | Keywords           | mixpanel, analytics, api, stats |
 | # releases         | 6 |
-| # dependents       | 57 |
-| # downloads        | 3474679 |
+| # dependents       | 56 |
+| # downloads        | 3975926 |
 | # stars            | 6 |
 
 ## Links

@@ -10,9 +10,9 @@ TypeScript typings for Fitness API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.fitness |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 41 |
 | # dependents       | 1 |
-| # downloads        | 166 |
+| # downloads        | 2901 |
 | # stars            | 0 |
 
 ## Links

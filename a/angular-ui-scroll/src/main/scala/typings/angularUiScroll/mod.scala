@@ -10,7 +10,6 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -26,7 +25,7 @@ object mod {
         *
         * @param newItems provides an array of items to be appended.
         */
-      def append(newItems: js.Array[_]): Unit = js.native
+      def append(newItems: js.Array[js.Any]): Unit = js.native
       
       /**
         * Replaces the item in the buffer at the given index with the new items.
@@ -39,7 +38,7 @@ object mod {
         * be deleted, otherwise the items in the array replace the item. If the newItem array contains the old item,
         * the old item stays in place.
         */
-      def applyUpdates(index: Double, newItems: js.Array[_]): Unit = js.native
+      def applyUpdates(index: Double, newItems: js.Array[js.Any]): Unit = js.native
       /**
         * Replaces the item in the buffer at the given index with the new items.
         *
@@ -51,7 +50,7 @@ object mod {
         * unaffected, unless some updates were made to the item in the updater function. This can be thought of as
         * in place update.
         */
-      def applyUpdates(updater: js.Function2[/* item */ js.Any, /* scope */ IRepeatScope, _]): Unit = js.native
+      def applyUpdates(updater: js.Function2[/* item */ js.Any, /* scope */ IRepeatScope, js.Any]): Unit = js.native
       
       /**
         * a boolean value indicating whether there are any pending load requests.
@@ -63,7 +62,7 @@ object mod {
         *
         * @param newItems provides an array of items to be prepended.
         */
-      def prepend(newItems: js.Array[_]): Unit = js.native
+      def prepend(newItems: js.Array[js.Any]): Unit = js.native
       
       /**
         * calling this method reinitializes and reloads the scroller content.
@@ -99,7 +98,6 @@ object mod {
       var topVisibleScope: IRepeatScope = js.native
     }
     
-    @js.native
     trait IScrollDatasource[T] extends StObject {
       
       /**
@@ -116,21 +114,21 @@ object mod {
         * Important: Make sure to respect the index and count parameters of the request. The array passed to the
         * success method should have exactly count elements unless it hit eof/bof
         */
-      def get(index: Double, count: Double, success: js.Function1[/* results */ js.Array[T], _]): Unit = js.native
+      def get(index: Double, count: Double, success: js.Function1[/* results */ js.Array[T], js.Any]): Unit
     }
     object IScrollDatasource {
       
       @scala.inline
-      def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], _]) => Unit): IScrollDatasource[T] = {
+      def apply[T](get: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): IScrollDatasource[T] = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
         __obj.asInstanceOf[IScrollDatasource[T]]
       }
       
       @scala.inline
-      implicit class IScrollDatasourceMutableBuilder[Self <: IScrollDatasource[_], T] (val x: Self with IScrollDatasource[T]) extends AnyVal {
+      implicit class IScrollDatasourceMutableBuilder[Self <: IScrollDatasource[?], T] (val x: Self & IScrollDatasource[T]) extends AnyVal {
         
         @scala.inline
-        def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], _]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+        def setGet(value: (Double, Double, js.Function1[/* results */ js.Array[T], js.Any]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       }
     }
   }

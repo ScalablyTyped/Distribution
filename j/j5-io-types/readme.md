@@ -12,7 +12,7 @@ TypeScript type information for dependency modules consumed by j5-io
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 11 |
-| # downloads        | 11320 |
+| # downloads        | 9921 |
 | # stars            | 0 |
 
 ## Links

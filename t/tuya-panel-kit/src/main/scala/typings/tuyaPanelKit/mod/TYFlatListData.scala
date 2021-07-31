@@ -3,24 +3,23 @@ package typings.tuyaPanelKit.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TYFlatListData
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
-  var Action: js.UndefOr[js.Any] = js.native
+  var Action: js.UndefOr[js.Any] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String | Double] = js.native
+  var key: js.UndefOr[String | Double] = js.undefined
   
-  var onChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var subTitle: js.UndefOr[String] = js.native
+  var subTitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TYFlatListData {
   

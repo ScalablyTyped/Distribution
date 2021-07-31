@@ -5,7 +5,6 @@ import typings.nodemailer.sharedMod.LoggerLevel
 import typings.nodemailer.smtpConnectionMod.DSNOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodemailerStrings {
@@ -31,12 +30,16 @@ object nodemailerStrings {
   def Custom_ : Custom_ = "Custom".asInstanceOf[Custom_]
   
   @js.native
-  sealed trait DELAY extends DSNOption
+  sealed trait DELAY
+    extends StObject
+       with DSNOption
   @scala.inline
   def DELAY: DELAY = "DELAY".asInstanceOf[DELAY]
   
   @js.native
-  sealed trait FAILURE extends DSNOption
+  sealed trait FAILURE
+    extends StObject
+       with DSNOption
   @scala.inline
   def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   
@@ -61,7 +64,9 @@ object nodemailerStrings {
   def Login_ : Login_ = "Login".asInstanceOf[Login_]
   
   @js.native
-  sealed trait NEVER extends DSNOption
+  sealed trait NEVER
+    extends StObject
+       with DSNOption
   @scala.inline
   def NEVER: NEVER = "NEVER".asInstanceOf[NEVER]
   
@@ -81,7 +86,9 @@ object nodemailerStrings {
   def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
-  sealed trait SUCCESS extends DSNOption
+  sealed trait SUCCESS
+    extends StObject
+       with DSNOption
   @scala.inline
   def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
@@ -101,7 +108,9 @@ object nodemailerStrings {
   def available: available = "available".asInstanceOf[available]
   
   @js.native
-  sealed trait base64 extends TextEncoding
+  sealed trait base64
+    extends StObject
+       with TextEncoding
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   
@@ -131,7 +140,9 @@ object nodemailerStrings {
   def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait debug extends LoggerLevel
+  sealed trait debug
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -141,12 +152,16 @@ object nodemailerStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error extends LoggerLevel
+  sealed trait error
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fatal extends LoggerLevel
+  sealed trait fatal
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   
@@ -171,7 +186,9 @@ object nodemailerStrings {
   def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait info extends LoggerLevel
+  sealed trait info
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -241,7 +258,9 @@ object nodemailerStrings {
   def proxy_handler_socks5: proxy_handler_socks5 = "proxy_handler_socks5".asInstanceOf[proxy_handler_socks5]
   
   @js.native
-  sealed trait `quoted-printable` extends TextEncoding
+  sealed trait `quoted-printable`
+    extends StObject
+       with TextEncoding
   @scala.inline
   def `quoted-printable`: `quoted-printable` = "quoted-printable".asInstanceOf[`quoted-printable`]
   
@@ -256,12 +275,16 @@ object nodemailerStrings {
   def token: token = "token".asInstanceOf[token]
   
   @js.native
-  sealed trait trace extends LoggerLevel
+  sealed trait trace
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
   
   @js.native
-  sealed trait warn extends LoggerLevel
+  sealed trait warn
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

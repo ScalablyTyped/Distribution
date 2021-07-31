@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeMetadata extends StObject {
   
   /** The parameters for the template. */
-  var parameters: js.UndefOr[js.Array[ParameterMetadata]] = js.native
+  var parameters: js.UndefOr[js.Array[ParameterMetadata]] = js.undefined
   
   /** SDK Info for the template. */
-  var sdkInfo: js.UndefOr[SDKInfo] = js.native
+  var sdkInfo: js.UndefOr[SDKInfo] = js.undefined
 }
 object RuntimeMetadata {
   

@@ -3,53 +3,53 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesystem {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of fileSystemSize
       * @returns Number
       */
-    var getFileSystemSize: js.UndefOr[js.Function0[Double]] = js.native
+    var getFileSystemSize: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of fileSystemType
       * @returns Number
       */
-    var getFileSystemType: js.UndefOr[js.Function0[Double]] = js.native
+    var getFileSystemType: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of readerType
       * @returns String
       */
-    var getReaderType: js.UndefOr[js.Function0[String]] = js.native
+    var getReaderType: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of stringEncoding
       * @returns String
       */
-    var getStringEncoding: js.UndefOr[js.Function0[String]] = js.native
+    var getStringEncoding: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Sets the value of fileSystemSize
       * @param fileSystemSize Number The new value.
       */
-    var setFileSystemSize: js.UndefOr[js.Function1[/* fileSystemSize */ js.UndefOr[Double], Unit]] = js.native
+    var setFileSystemSize: js.UndefOr[js.Function1[/* fileSystemSize */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of fileSystemType
       * @param fileSystemType Number The new value.
       */
-    var setFileSystemType: js.UndefOr[js.Function1[/* fileSystemType */ js.UndefOr[Double], Unit]] = js.native
+    var setFileSystemType: js.UndefOr[js.Function1[/* fileSystemType */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of readerType
       * @param readerType String The new value.
       */
-    var setReaderType: js.UndefOr[js.Function1[/* readerType */ js.UndefOr[String], Unit]] = js.native
+    var setReaderType: js.UndefOr[js.Function1[/* readerType */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of stringEncoding
       * @param stringEncoding String The new value.
       */
-    var setStringEncoding: js.UndefOr[js.Function1[/* stringEncoding */ js.UndefOr[String], Unit]] = js.native
+    var setStringEncoding: js.UndefOr[js.Function1[/* stringEncoding */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -112,8 +112,9 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IChrome extends IHTML5
+  trait IChrome
+    extends StObject
+       with IHTML5
   object IChrome {
     
     @scala.inline
@@ -123,30 +124,31 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait ICordova extends IHTML5 {
+  trait ICordova
+    extends StObject
+       with IHTML5 {
     
     /** [Method] Downloads a file from the server saving it into the Local File System
       * @param config Object
       * @returns FileTransfer
       */
-    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.native
+    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Send a file to a server
       * @param config Object
       * @returns FileTransfer
       */
-    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.native
+    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ICordova {
     
@@ -160,7 +162,7 @@ object filesystem {
     implicit class ICordovaMutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDownload(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
@@ -172,7 +174,7 @@ object filesystem {
       def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
       
       @scala.inline
-      def setUpload(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
@@ -185,33 +187,34 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IDirectoryEntry extends IEntry {
+  trait IDirectoryEntry
+    extends StObject
+       with IEntry {
     
     /** [Method] Works the same way as getFile but creates or looks up a directory
       * @param config Object
       */
-    var getDirectory: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var getDirectory: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Requests a Directory from the Local File System
       * @param config Object
       */
-    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Creates or looks up a file
       * @param config Object The object which contains the following config options:
       */
-    var getFile: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var getFile: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Lists all the entries in the directory
       * @param config Object The object which contains the following config options:
       */
-    var readEntries: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var readEntries: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Works the same way as Ext device filesystem Entry remove but removes the directory and all of its contents if any
       * @param config Object
       */
-    var removeRecursively: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var removeRecursively: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IDirectoryEntry {
     
@@ -256,53 +259,54 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IEntry extends IBase {
+  trait IEntry
+    extends StObject
+       with IBase {
     
     /** [Method] Works the same way as moveTo but copies the entry
       * @param config Object
       */
-    var copyTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var copyTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns the file system on which the entry resides
       * @returns Ext.device.filesystem.FileSystem The entry file system.
       */
-    var getFileSystem: js.UndefOr[js.Function0[typings.senchaTouch.Ext.device.filesystem.IFileSystem]] = js.native
+    var getFileSystem: js.UndefOr[js.Function0[typings.senchaTouch.Ext.device.filesystem.IFileSystem]] = js.undefined
     
     /** [Method] Returns the full absolute path from the root to the entry
       * @returns String The entry full path.
       */
-    var getFullPath: js.UndefOr[js.Function0[String]] = js.native
+    var getFullPath: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the name of the entry excluding the path leading to it
       * @returns String The entry name.
       */
-    var getName: js.UndefOr[js.Function0[String]] = js.native
+    var getName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Looks up the parent directory containing the entry
       * @param config Object The object which contains the following config options:
       */
-    var getParent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var getParent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns whether the entry is a directory
       * @returns Boolean The entry is a directory.
       */
-    var isDirectory: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isDirectory: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns whether the entry is a file
       * @returns Boolean The entry is a file.
       */
-    var isFile: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isFile: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Moves the entry to a different location on the file system
       * @param config Object The object which contains the following config options:
       */
-    var moveTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var moveTo: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Removes the entry from the file system
       * @param config Object The object which contains the following config options:
       */
-    var remove: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var remove: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IEntry {
     
@@ -371,38 +375,39 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IFileEntry extends IEntry {
+  trait IFileEntry
+    extends StObject
+       with IEntry {
     
     /** [Method] Requests a File Handle from the Local File System
       * @param config Object
       */
-    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var getEntry: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns the byte offset into the file at which the next read write will occur
       * @returns Number The file offset.
       */
-    var getOffset: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffset: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Reads the data from the file starting at the file offset
       * @param config Object The object which contains the following config options:
       */
-    var read: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var read: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the byte offset into the file at which the next read write will occur
       * @param config Object The object which contains the following config options:
       */
-    var seek: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var seek: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Truncates or extends the file to the specified size in bytes
       * @param config Object The object which contains the following config options:
       */
-    var truncate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var truncate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Writes the data to the file starting at the file offset
       * @param config Object The object which contains the following config options:
       */
-    var write: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var write: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IFileEntry {
     
@@ -453,13 +458,14 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IFileSystem extends IBase {
+  trait IFileSystem
+    extends StObject
+       with IBase {
     
     /** [Method] Returns a Ext device filesystem DirectoryEntry instance for the root of the file system
       * @returns Ext.device.filesystem.DirectoryEntry The file system root directory.
       */
-    var getRoot: js.UndefOr[js.Function0[IDirectoryEntry]] = js.native
+    var getRoot: js.UndefOr[js.Function0[IDirectoryEntry]] = js.undefined
   }
   object IFileSystem {
     
@@ -480,13 +486,14 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IHTML5 extends IAbstract {
+  trait IHTML5
+    extends StObject
+       with IAbstract {
     
     /** [Method] Requests a Ext device filesystem FileSystem instance
       * @param config Object The object which contains the following config options:
       */
-    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IHTML5 {
     
@@ -507,30 +514,31 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IHTML5 {
+  trait IPhoneGap
+    extends StObject
+       with IHTML5 {
     
     /** [Method] Downloads a file from the server saving it into the Local File System
       * @param config Object
       * @returns FileTransfer
       */
-    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.native
+    var download: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var readMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Send a file to a server
       * @param config Object
       * @returns FileTransfer
       */
-    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.native
+    var upload: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method]
       * @param config Object
       */
-    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var writeMetadata: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IPhoneGap {
     
@@ -544,7 +552,7 @@ object filesystem {
     implicit class IPhoneGapMutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDownload(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
@@ -556,7 +564,7 @@ object filesystem {
       def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
       
       @scala.inline
-      def setUpload(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
@@ -569,13 +577,14 @@ object filesystem {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract {
+  trait ISencha
+    extends StObject
+       with IAbstract {
     
     /** [Method] Requests a Ext device filesystem FileSystem instance
       * @param config Object The object which contains the following config options:
       */
-    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var requestFileSystem: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ISencha {
     

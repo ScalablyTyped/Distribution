@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFirewallPolicyResponse extends StObject {
   
   /**
     * The object containing the definition of the FirewallPolicyResponse that you asked to delete. 
     */
-  var FirewallPolicyResponse: typings.awsSdk.networkfirewallMod.FirewallPolicyResponse = js.native
+  var FirewallPolicyResponse: typings.awsSdk.networkfirewallMod.FirewallPolicyResponse
 }
 object DeleteFirewallPolicyResponse {
   

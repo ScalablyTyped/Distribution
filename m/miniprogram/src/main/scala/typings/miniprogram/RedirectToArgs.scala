@@ -2,11 +2,11 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RedirectToArgs extends AsyncCallback[Unit] {
+trait RedirectToArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * The application for the jumping does not include the destination
@@ -16,7 +16,7 @@ trait RedirectToArgs extends AsyncCallback[Unit] {
     * with =, and different parameters must be separated with &, such
     * as path?key1=value1&key2=value2.
     */
-  var url: String = js.native
+  var url: String
 }
 object RedirectToArgs {
   

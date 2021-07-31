@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopDeploymentInput extends StObject {
   
   /**
     *  Indicates, when a deployment is stopped, whether instances that have been updated should be rolled back to the previous version of the application revision. 
     */
-  var autoRollbackEnabled: js.UndefOr[NullableBoolean] = js.native
+  var autoRollbackEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: DeploymentId = js.native
+  var deploymentId: DeploymentId
 }
 object StopDeploymentInput {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.3", "adexchangebuyer_v1_3.Resource$Billinginfo")
@@ -31,7 +30,7 @@ class ResourceBillinginfo protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBillingInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaBillingInfo]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingInfo] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBillingInfo] = js.native
   def get(params: ParamsResourceBillinginfoGet): GaxiosPromise[SchemaBillingInfo] = js.native
   def get(params: ParamsResourceBillinginfoGet, callback: BodyResponseCallback[SchemaBillingInfo]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourceBillinginfo protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBillingInfoList] = js.native
   def list(callback: BodyResponseCallback[SchemaBillingInfoList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBillingInfoList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBillingInfoList] = js.native
   def list(params: ParamsResourceBillinginfoList): GaxiosPromise[SchemaBillingInfoList] = js.native
   def list(params: ParamsResourceBillinginfoList, callback: BodyResponseCallback[SchemaBillingInfoList]): Unit = js.native
   def list(

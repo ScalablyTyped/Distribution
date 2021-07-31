@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLifecycleRuleNoncurrentVersionExpiration extends StObject {
   
   /**
     * Specifies the number of days noncurrent object versions expire.
     */
-  var days: js.UndefOr[Double] = js.native
+  var days: js.UndefOr[Double] = js.undefined
 }
 object BucketLifecycleRuleNoncurrentVersionExpiration {
   

@@ -2,13 +2,11 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoClosingPairs extends StObject {
   
-  var autoClosingPairs: js.Array[NotIn] = js.native
+  var autoClosingPairs: js.Array[NotIn]
 }
 object AutoClosingPairs {
   

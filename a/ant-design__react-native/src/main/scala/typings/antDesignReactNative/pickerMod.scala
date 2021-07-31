@@ -11,10 +11,13 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMod {
+  
+  @JSImport("@ant-design/react-native/lib/picker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ant-design/react-native/lib/picker", JSImport.Default)
   @js.native
@@ -39,9 +42,8 @@ object pickerMod {
     def defaultProps_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@ant-design/react-native/lib/picker", "getDefaultProps")
-  @js.native
-  def getDefaultProps(): Format = js.native
+  @scala.inline
+  def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
   
   @js.native
   trait Picker
@@ -50,14 +52,7 @@ object pickerMod {
     def fixOnOk(cascader: js.Any): Unit = js.native
     
     def getCascade(
-      cascade: js.UndefOr[scala.Nothing],
-      data: js.Array[js.Array[PickerData] | PickerData],
-      cols: js.UndefOr[scala.Nothing],
-      itemStyle: js.Any,
-      indicatorStyle: js.Any
-    ): Cascader = js.native
-    def getCascade(
-      cascade: js.UndefOr[scala.Nothing],
+      cascade: Boolean,
       data: js.Array[js.Array[PickerData] | PickerData],
       cols: Double,
       itemStyle: js.Any,
@@ -66,14 +61,21 @@ object pickerMod {
     def getCascade(
       cascade: Boolean,
       data: js.Array[js.Array[PickerData] | PickerData],
-      cols: js.UndefOr[scala.Nothing],
+      cols: Unit,
       itemStyle: js.Any,
       indicatorStyle: js.Any
     ): Cascader = js.native
     def getCascade(
-      cascade: Boolean,
+      cascade: Unit,
       data: js.Array[js.Array[PickerData] | PickerData],
       cols: Double,
+      itemStyle: js.Any,
+      indicatorStyle: js.Any
+    ): Cascader = js.native
+    def getCascade(
+      cascade: Unit,
+      data: js.Array[js.Array[PickerData] | PickerData],
+      cols: Unit,
       itemStyle: js.Any,
       indicatorStyle: js.Any
     ): Cascader = js.native
@@ -95,14 +97,14 @@ object pickerMod {
     def setScrollValue(v: js.Any): Unit = js.native
   }
   
-  @js.native
   trait PickerProps
-    extends PickerPropsType
+    extends StObject
+       with PickerPropsType
        with WithThemeStyles[PickerStyle] {
     
-    var pickerPrefixCls: js.UndefOr[String] = js.native
+    var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var popupPrefixCls: js.UndefOr[String] = js.native
+    var popupPrefixCls: js.UndefOr[String] = js.undefined
   }
   object PickerProps {
     

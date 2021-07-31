@@ -3,7 +3,6 @@ package typings.amapJsApi.AMap
 import typings.amapJsApi.amapJsApiStrings.mv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -44,13 +43,6 @@ trait EventEmitter extends StObject {
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
     context: C,
-    once: js.UndefOr[scala.Nothing],
-    unshift: Boolean
-  ): this.type = js.native
-  def on[C](
-    eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
-    context: C,
     once: Boolean
   ): this.type = js.native
   def on[C](
@@ -63,21 +55,28 @@ trait EventEmitter extends StObject {
   def on[C](
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
-    context: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
+    context: C,
+    once: Unit,
     unshift: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     once: Boolean
   ): this.type = js.native
   def on[C](
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     once: Boolean,
+    unshift: Boolean
+  ): this.type = js.native
+  def on[C](
+    eventName: String,
+    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    context: Unit,
+    once: Unit,
     unshift: Boolean
   ): this.type = js.native
 }

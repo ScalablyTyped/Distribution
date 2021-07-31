@@ -2,14 +2,14 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupOptions extends InputOptions {
+trait RollupOptions
+  extends StObject
+     with InputOptions {
   
   // This is included for compatibility with config files but ignored by rollup.rollup
-  var output: js.UndefOr[OutputOptions | js.Array[OutputOptions]] = js.native
+  var output: js.UndefOr[OutputOptions | js.Array[OutputOptions]] = js.undefined
 }
 object RollupOptions {
   

@@ -5,15 +5,15 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Text extends Widget {
+trait Text
+  extends StObject
+     with Widget {
   
-  var rawHtml: String = js.native
+  var rawHtml: String
   
-  var text: String = js.native
+  var text: String
 }
 object Text {
   

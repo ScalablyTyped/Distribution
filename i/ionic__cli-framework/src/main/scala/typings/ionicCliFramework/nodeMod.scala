@@ -3,10 +3,13 @@ package typings.ionicCliFramework
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
+  
+  @JSImport("@ionic/cli-framework/utils/node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/utils/node", "ERROR_BIN_NOT_FOUND")
   @js.native
@@ -16,29 +19,23 @@ object nodeMod {
   @js.native
   val ERROR_INVALID_PACKAGE_JSON: /* "INVALID_PACKAGE_JSON" */ String = js.native
   
-  @JSImport("@ionic/cli-framework/utils/node", "compileNodeModulesPaths")
-  @js.native
-  def compileNodeModulesPaths(filePath: String): js.Array[String] = js.native
+  @scala.inline
+  def compileNodeModulesPaths(filePath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileNodeModulesPaths")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@ionic/cli-framework/utils/node", "isValidPackageName")
-  @js.native
-  def isValidPackageName(name: String): Boolean = js.native
+  @scala.inline
+  def isValidPackageName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPackageName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/cli-framework/utils/node", "readPackageJsonFile")
-  @js.native
-  def readPackageJsonFile(p: String): js.Promise[PackageJson] = js.native
+  @scala.inline
+  def readPackageJsonFile(p: String): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageJsonFile")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
   
-  @JSImport("@ionic/cli-framework/utils/node", "resolveBin")
-  @js.native
-  def resolveBin(m: String, bin: String): String = js.native
-  @JSImport("@ionic/cli-framework/utils/node", "resolveBin")
-  @js.native
-  def resolveBin(m: String, bin: String, options: ResolveOptions): String = js.native
+  @scala.inline
+  def resolveBin(m: String, bin: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBin")(m.asInstanceOf[js.Any], bin.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def resolveBin(m: String, bin: String, options: ResolveOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBin")(m.asInstanceOf[js.Any], bin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait ResolveOptions extends StObject {
     
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ResolveOptions {
     

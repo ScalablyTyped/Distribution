@@ -2,15 +2,13 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Library_ extends StObject {
   
-  def add(definitions: IconDefinitionOrPack*): Unit = js.native
+  def add(definitions: IconDefinitionOrPack*): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object Library_ {
   

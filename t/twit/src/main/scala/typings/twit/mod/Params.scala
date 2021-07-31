@@ -7,119 +7,117 @@ import typings.twit.twitStrings.`private`
 import typings.twit.twitStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var alt_text: js.UndefOr[Text] = js.native
+  var alt_text: js.UndefOr[Text] = js.undefined
   
-  var attachment_url: js.UndefOr[String] = js.native
+  var attachment_url: js.UndefOr[String] = js.undefined
   
-  var auto_populate_reply_metadata: js.UndefOr[Boolean] = js.native
+  var auto_populate_reply_metadata: js.UndefOr[Boolean] = js.undefined
   
-  var card_uri: js.UndefOr[String] = js.native
+  var card_uri: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var cursor: js.UndefOr[Double | String] = js.native
+  var cursor: js.UndefOr[Double | String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var display_coordinates: js.UndefOr[Boolean] = js.native
+  var display_coordinates: js.UndefOr[Boolean] = js.undefined
   
-  var enable_dmcommands: js.UndefOr[Boolean] = js.native
+  var enable_dmcommands: js.UndefOr[Boolean] = js.undefined
   
-  var exclude_replies: js.UndefOr[Boolean] = js.native
+  var exclude_replies: js.UndefOr[Boolean] = js.undefined
   
-  var exclude_reply_user_ids: js.UndefOr[String | js.Array[String]] = js.native
+  var exclude_reply_user_ids: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var fail_dmcommands: js.UndefOr[Boolean] = js.native
+  var fail_dmcommands: js.UndefOr[Boolean] = js.undefined
   
-  var follow: js.UndefOr[Boolean | String | js.Array[String]] = js.native
+  var follow: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
   
-  var geocode: js.UndefOr[String] = js.native
+  var geocode: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var in_reply_to_status_id: js.UndefOr[Double | String] = js.native
+  var in_reply_to_status_id: js.UndefOr[Double | String] = js.undefined
   
-  var include_email: js.UndefOr[Boolean] = js.native
+  var include_email: js.UndefOr[Boolean] = js.undefined
   
-  var include_entities: js.UndefOr[Boolean] = js.native
+  var include_entities: js.UndefOr[Boolean] = js.undefined
   
-  var include_rts: js.UndefOr[Boolean] = js.native
+  var include_rts: js.UndefOr[Boolean] = js.undefined
   
-  var include_user_entities: js.UndefOr[Boolean] = js.native
+  var include_user_entities: js.UndefOr[Boolean] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var lat: js.UndefOr[Double] = js.native
+  var lat: js.UndefOr[Double] = js.undefined
   
-  var list_id: js.UndefOr[Double | String] = js.native
+  var list_id: js.UndefOr[Double | String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var long: js.UndefOr[Double] = js.native
+  var long: js.UndefOr[Double] = js.undefined
   
-  var max_id: js.UndefOr[String] = js.native
+  var max_id: js.UndefOr[String] = js.undefined
   
-  var media_data: js.UndefOr[Buffer | String] = js.native
+  var media_data: js.UndefOr[Buffer | String] = js.undefined
   
-  var media_id: js.UndefOr[String] = js.native
+  var media_id: js.UndefOr[String] = js.undefined
   
-  var media_ids: js.UndefOr[js.Array[String]] = js.native
+  var media_ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var mode: js.UndefOr[public | `private`] = js.native
+  var mode: js.UndefOr[public | `private`] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var owner_screen_name: js.UndefOr[String] = js.native
+  var owner_screen_name: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var place_id: js.UndefOr[String] = js.native
+  var place_id: js.UndefOr[String] = js.undefined
   
   // search/tweets
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var result_type: js.UndefOr[ResultType] = js.native
+  var result_type: js.UndefOr[ResultType] = js.undefined
   
-  var results_per_page: js.UndefOr[Double] = js.native
+  var results_per_page: js.UndefOr[Double] = js.undefined
   
-  var screen_name: js.UndefOr[String] = js.native
+  var screen_name: js.UndefOr[String] = js.undefined
   
-  var since_id: js.UndefOr[String] = js.native
+  var since_id: js.UndefOr[String] = js.undefined
   
-  var skip_status: js.UndefOr[Boolean] = js.native
+  var skip_status: js.UndefOr[Boolean] = js.undefined
   
-  var slug: js.UndefOr[String] = js.native
+  var slug: js.UndefOr[String] = js.undefined
   
-  var source_id: js.UndefOr[Double] = js.native
+  var source_id: js.UndefOr[Double] = js.undefined
   
-  var source_screen_name: js.UndefOr[String] = js.native
+  var source_screen_name: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var stringify_ids: js.UndefOr[Boolean] = js.native
+  var stringify_ids: js.UndefOr[Boolean] = js.undefined
   
-  var target_id: js.UndefOr[Double] = js.native
+  var target_id: js.UndefOr[Double] = js.undefined
   
-  var target_screen_name: js.UndefOr[String] = js.native
+  var target_screen_name: js.UndefOr[String] = js.undefined
   
   // Other params from various endpoints
-  var track: js.UndefOr[String | js.Array[String]] = js.native
+  var track: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var trim_user: js.UndefOr[Boolean] = js.native
+  var trim_user: js.UndefOr[Boolean] = js.undefined
   
-  var tweet_mode: js.UndefOr[String] = js.native
+  var tweet_mode: js.UndefOr[String] = js.undefined
   
-  var until: js.UndefOr[String] = js.native
+  var until: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var user_id: js.UndefOr[Double | String] = js.native
+  var user_id: js.UndefOr[Double | String] = js.undefined
 }
 object Params {
   

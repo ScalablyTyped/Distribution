@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginGroupMember extends StObject {
   
   /**
     * The ID for an origin in an origin group.
     */
-  var OriginId: String = js.native
+  var OriginId: String
 }
 object OriginGroupMember {
   

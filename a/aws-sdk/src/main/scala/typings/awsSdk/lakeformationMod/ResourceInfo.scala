@@ -2,26 +2,24 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceInfo extends StObject {
   
   /**
     * The date and time the resource was last modified.
     */
-  var LastModified: js.UndefOr[LastModifiedTimestamp] = js.native
+  var LastModified: js.UndefOr[LastModifiedTimestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var ResourceArn: js.UndefOr[ResourceArnString] = js.native
+  var ResourceArn: js.UndefOr[ResourceArnString] = js.undefined
   
   /**
     * The IAM role that registered a resource.
     */
-  var RoleArn: js.UndefOr[IAMRoleArn] = js.native
+  var RoleArn: js.UndefOr[IAMRoleArn] = js.undefined
 }
 object ResourceInfo {
   

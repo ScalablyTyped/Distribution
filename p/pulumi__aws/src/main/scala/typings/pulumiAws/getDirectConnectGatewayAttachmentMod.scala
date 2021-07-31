@@ -5,46 +5,44 @@ import typings.pulumiAws.inputMod.ec2transitgateway.GetDirectConnectGatewayAttac
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDirectConnectGatewayAttachmentMod {
   
-  @JSImport("@pulumi/aws/ec2transitgateway/getDirectConnectGatewayAttachment", "getDirectConnectGatewayAttachment")
+  @JSImport("@pulumi/aws/ec2transitgateway/getDirectConnectGatewayAttachment", JSImport.Namespace)
   @js.native
-  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getDirectConnectGatewayAttachment", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getDirectConnectGatewayAttachment", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getDirectConnectGatewayAttachment", "getDirectConnectGatewayAttachment")
-  @js.native
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")().asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  @scala.inline
+  def getDirectConnectGatewayAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  @scala.inline
+  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  @scala.inline
+  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  
   trait GetDirectConnectGatewayAttachmentArgs extends StObject {
     
     /**
       * Identifier of the Direct Connect Gateway.
       */
-    val dxGatewayId: js.UndefOr[String] = js.native
+    val dxGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * Configuration block(s) for filtering. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetDirectConnectGatewayAttachmentFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetDirectConnectGatewayAttachmentFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match a pair on the desired Transit Gateway Direct Connect Gateway Attachment.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Identifier of the EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[String] = js.native
+    val transitGatewayId: js.UndefOr[String] = js.undefined
   }
   object GetDirectConnectGatewayAttachmentArgs {
     
@@ -86,28 +84,27 @@ object getDirectConnectGatewayAttachmentMod {
     }
   }
   
-  @js.native
   trait GetDirectConnectGatewayAttachmentResult extends StObject {
     
-    val dxGatewayId: js.UndefOr[String] = js.native
+    val dxGatewayId: js.UndefOr[String] = js.undefined
     
     val filters: js.UndefOr[
         js.Array[
           typings.pulumiAws.outputMod.ec2transitgateway.GetDirectConnectGatewayAttachmentFilter
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Key-value tags for the EC2 Transit Gateway Attachment
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val transitGatewayId: js.UndefOr[String] = js.native
+    val transitGatewayId: js.UndefOr[String] = js.undefined
   }
   object GetDirectConnectGatewayAttachmentResult {
     

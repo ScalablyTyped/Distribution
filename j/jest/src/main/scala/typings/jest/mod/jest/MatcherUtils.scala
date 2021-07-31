@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jest.anon.BOLDWEIGHT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MatcherUtils
-  extends /* other */ StringDictionary[js.Any] {
+  extends StObject
+     with /* other */ StringDictionary[js.Any] {
   
   val assertionCalls: Double = js.native
   
@@ -21,9 +21,9 @@ trait MatcherUtils
     *  This is a deep-equality function that will return true if two objects have the same values (recursively).
     */
   def equals(a: js.Any, b: js.Any): Boolean = js.native
-  def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester], strictCheck: Boolean): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: Unit, strictCheck: Boolean): Boolean = js.native
   
   val expand: Boolean = js.native
   
@@ -35,7 +35,7 @@ trait MatcherUtils
   
   val promise: String = js.native
   
-  val suppressedErrors: js.Array[_] = js.native
+  val suppressedErrors: js.Array[js.Any] = js.native
   
   val testPath: String = js.native
   

@@ -2,41 +2,39 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomOriginConfig extends StObject {
   
   /**
     * The HTTP port that CloudFront uses to connect to the origin. Specify the HTTP port that the origin listens on.
     */
-  var HTTPPort: integer = js.native
+  var HTTPPort: integer
   
   /**
     * The HTTPS port that CloudFront uses to connect to the origin. Specify the HTTPS port that the origin listens on.
     */
-  var HTTPSPort: integer = js.native
+  var HTTPSPort: integer
   
   /**
     * Specifies how long, in seconds, CloudFront persists its connection to the origin. The minimum timeout is 1 second, the maximum is 60 seconds, and the default (if you don’t specify otherwise) is 5 seconds. For more information, see Origin Keep-alive Timeout in the Amazon CloudFront Developer Guide.
     */
-  var OriginKeepaliveTimeout: js.UndefOr[integer] = js.native
+  var OriginKeepaliveTimeout: js.UndefOr[integer] = js.undefined
   
   /**
     * Specifies the protocol (HTTP or HTTPS) that CloudFront uses to connect to the origin. Valid values are:    http-only – CloudFront always uses HTTP to connect to the origin.    match-viewer – CloudFront connects to the origin using the same protocol that the viewer used to connect to CloudFront.    https-only – CloudFront always uses HTTPS to connect to the origin.  
     */
-  var OriginProtocolPolicy: typings.awsSdk.cloudfrontMod.OriginProtocolPolicy = js.native
+  var OriginProtocolPolicy: typings.awsSdk.cloudfrontMod.OriginProtocolPolicy
   
   /**
     * Specifies how long, in seconds, CloudFront waits for a response from the origin. This is also known as the origin response timeout. The minimum timeout is 1 second, the maximum is 60 seconds, and the default (if you don’t specify otherwise) is 30 seconds. For more information, see Origin Response Timeout in the Amazon CloudFront Developer Guide.
     */
-  var OriginReadTimeout: js.UndefOr[integer] = js.native
+  var OriginReadTimeout: js.UndefOr[integer] = js.undefined
   
   /**
     * Specifies the minimum SSL/TLS protocol that CloudFront uses when connecting to your origin over HTTPS. Valid values include SSLv3, TLSv1, TLSv1.1, and TLSv1.2. For more information, see Minimum Origin SSL Protocol in the Amazon CloudFront Developer Guide.
     */
-  var OriginSslProtocols: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginSslProtocols] = js.native
+  var OriginSslProtocols: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginSslProtocols] = js.undefined
 }
 object CustomOriginConfig {
   

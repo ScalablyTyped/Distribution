@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarMod {
@@ -18,28 +17,27 @@ object calendarMod {
   
   type Calendar = Component[CalendarProps, js.Object, js.Any]
   
-  @js.native
   trait CalendarBaseProps extends StObject {
     
-    var blockedDates: js.UndefOr[js.Array[Date]] = js.native
+    var blockedDates: js.UndefOr[js.Array[Date]] = js.undefined
     
-    var disableAfterDate: js.UndefOr[Date] = js.native
+    var disableAfterDate: js.UndefOr[Date] = js.undefined
     
-    var disableBeforeDate: js.UndefOr[Date] = js.native
+    var disableBeforeDate: js.UndefOr[Date] = js.undefined
     
-    var disableFutureDates: js.UndefOr[Boolean] = js.native
+    var disableFutureDates: js.UndefOr[Boolean] = js.undefined
     
-    var disablePastDates: js.UndefOr[Boolean] = js.native
+    var disablePastDates: js.UndefOr[Boolean] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var disableWeekday: js.UndefOr[js.Array[String]] = js.native
+    var disableWeekday: js.UndefOr[js.Array[String]] = js.undefined
     
-    var disableWeekends: js.UndefOr[Boolean] = js.native
+    var disableWeekends: js.UndefOr[Boolean] = js.undefined
     
-    var disabledDates: js.UndefOr[js.Array[Date]] = js.native
+    var disabledDates: js.UndefOr[js.Array[Date]] = js.undefined
     
-    var localizedText: js.UndefOr[NextMonth] = js.native
+    var localizedText: js.UndefOr[NextMonth] = js.undefined
   }
   object CalendarBaseProps {
     
@@ -123,42 +121,22 @@ object calendarMod {
     }
   }
   
-  /* Inlined {  monthListProps :{[x: string] : any} | undefined,   tableBodyProps :{[x: string] : any} | undefined,   tableHeaderProps :{[x: string] : any} | undefined,   tableProps :{[x: string] : any} | undefined,   yearListProps :{[x: string] : any} | undefined,   onChange :(date : std.Date): void | undefined, [x: string] : any} & fundamental-react.fundamental-react/lib/Calendar/Calendar.CalendarBaseProps */
-  @js.native
   trait CalendarProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with CalendarBaseProps
+       with /* x */ StringDictionary[js.Any] {
     
-    var blockedDates: js.UndefOr[js.Array[Date]] = js.native
+    var monthListProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var disableAfterDate: js.UndefOr[Date] = js.native
+    var onChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
     
-    var disableBeforeDate: js.UndefOr[Date] = js.native
+    var tableBodyProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var disableFutureDates: js.UndefOr[Boolean] = js.native
+    var tableHeaderProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var disablePastDates: js.UndefOr[Boolean] = js.native
+    var tableProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
-    
-    var disableWeekday: js.UndefOr[js.Array[String]] = js.native
-    
-    var disableWeekends: js.UndefOr[Boolean] = js.native
-    
-    var disabledDates: js.UndefOr[js.Array[Date]] = js.native
-    
-    var localizedText: js.UndefOr[NextMonth] = js.native
-    
-    var monthListProps: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var onChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
-    
-    var tableBodyProps: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var tableHeaderProps: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var tableProps: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var yearListProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var yearListProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object CalendarProps {
     
@@ -170,75 +148,6 @@ object calendarMod {
     
     @scala.inline
     implicit class CalendarPropsMutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setBlockedDates(value: js.Array[Date]): Self = StObject.set(x, "blockedDates", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBlockedDatesUndefined: Self = StObject.set(x, "blockedDates", js.undefined)
-      
-      @scala.inline
-      def setBlockedDatesVarargs(value: Date*): Self = StObject.set(x, "blockedDates", js.Array(value :_*))
-      
-      @scala.inline
-      def setDisableAfterDate(value: Date): Self = StObject.set(x, "disableAfterDate", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisableAfterDateUndefined: Self = StObject.set(x, "disableAfterDate", js.undefined)
-      
-      @scala.inline
-      def setDisableBeforeDate(value: Date): Self = StObject.set(x, "disableBeforeDate", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisableBeforeDateUndefined: Self = StObject.set(x, "disableBeforeDate", js.undefined)
-      
-      @scala.inline
-      def setDisableFutureDates(value: Boolean): Self = StObject.set(x, "disableFutureDates", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisableFutureDatesUndefined: Self = StObject.set(x, "disableFutureDates", js.undefined)
-      
-      @scala.inline
-      def setDisablePastDates(value: Boolean): Self = StObject.set(x, "disablePastDates", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisablePastDatesUndefined: Self = StObject.set(x, "disablePastDates", js.undefined)
-      
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
-      
-      @scala.inline
-      def setDisableWeekday(value: js.Array[String]): Self = StObject.set(x, "disableWeekday", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisableWeekdayUndefined: Self = StObject.set(x, "disableWeekday", js.undefined)
-      
-      @scala.inline
-      def setDisableWeekdayVarargs(value: String*): Self = StObject.set(x, "disableWeekday", js.Array(value :_*))
-      
-      @scala.inline
-      def setDisableWeekends(value: Boolean): Self = StObject.set(x, "disableWeekends", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisableWeekendsUndefined: Self = StObject.set(x, "disableWeekends", js.undefined)
-      
-      @scala.inline
-      def setDisabledDates(value: js.Array[Date]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
-      
-      @scala.inline
-      def setDisabledDatesVarargs(value: Date*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
-      
-      @scala.inline
-      def setLocalizedText(value: NextMonth): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
       @scala.inline
       def setMonthListProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "monthListProps", value.asInstanceOf[js.Any])

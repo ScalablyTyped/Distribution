@@ -20,11 +20,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Triangle
 import typings.officeJsPreview.officeJsPreviewStrings.Wide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `line.toJSON()`. */
-@js.native
 trait LineData extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.native
+  var beginArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.native
+  var beginArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.native
+  var beginArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var beginConnectedSite: js.UndefOr[Double] = js.native
+  var beginConnectedSite: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var connectorType: js.UndefOr[ConnectorType | Straight | Elbow | Curve] = js.native
+  var connectorType: js.UndefOr[ConnectorType | Straight | Elbow | Curve] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.native
+  var endArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.native
+  var endArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.native
+  var endArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var endConnectedSite: js.UndefOr[Double] = js.native
+  var endConnectedSite: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -113,7 +111,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isBeginConnected: js.UndefOr[Boolean] = js.native
+  var isBeginConnected: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -121,7 +119,7 @@ trait LineData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var isEndConnected: js.UndefOr[Boolean] = js.native
+  var isEndConnected: js.UndefOr[Boolean] = js.undefined
 }
 object LineData {
   

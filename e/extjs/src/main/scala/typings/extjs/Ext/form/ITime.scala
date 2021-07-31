@@ -2,58 +2,57 @@ package typings.extjs.Ext.form
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITime
-  extends typings.extjs.Ext.form.field.IComboBox {
+  extends StObject
+     with typings.extjs.Ext.form.field.IComboBox {
   
   /** [Config Option] (String) */
-  var altFormats: js.UndefOr[String] = js.native
+  var altFormats: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var increment: js.UndefOr[Double] = js.native
+  var increment: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[String] = js.native
+  var maxText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Date/String) */
-  var maxValue: js.UndefOr[js.Any] = js.native
+  var maxValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var minText: js.UndefOr[String] = js.native
+  var minText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Date/String) */
-  var minValue: js.UndefOr[js.Any] = js.native
+  var minValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var pickerMaxHeight: js.UndefOr[Double] = js.native
+  var pickerMaxHeight: js.UndefOr[Double] = js.undefined
   
   /** [Method] Replaces any existing maxValue with the new time and refreshes the picker s range
     * @param value Date/String The maximum time that can be selected
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Replaces any existing minValue with the new time and refreshes the picker s range
     * @param value Date/String The minimum time that can be selected
     */
-  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the specified value s into the field
     * @returns any this
     */
   @JSName("setValue")
-  var setValue_ITime: js.UndefOr[js.Function0[_]] = js.native
+  var setValue_ITime: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var snapToIncrement: js.UndefOr[Boolean] = js.native
+  var snapToIncrement: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var submitFormat: js.UndefOr[String] = js.native
+  var submitFormat: js.UndefOr[String] = js.undefined
 }
 object ITime {
   
@@ -127,7 +126,7 @@ object ITime {
     def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
     @scala.inline
-    def setSetValue(value: () => _): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
+    def setSetValue(value: () => js.Any): Self = StObject.set(x, "setValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)

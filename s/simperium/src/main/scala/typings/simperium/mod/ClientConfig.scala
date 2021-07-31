@@ -3,10 +3,8 @@ package typings.simperium.mod
 import typings.std.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientConfig[Buckets] extends StObject {
   
   def ghostStoreProvider[Name /* <: /* keyof Buckets */ String */](
@@ -17,9 +15,9 @@ trait ClientConfig[Buckets] extends StObject {
     ]
   ): GhostStore[
     /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any
-  ] = js.native
+  ]
   
-  var heartbeatInterval: Double = js.native
+  var heartbeatInterval: Double
   
   def objectStoreProvider[Name /* <: /* keyof Buckets */ String */](
     bucket: Bucket[
@@ -30,9 +28,9 @@ trait ClientConfig[Buckets] extends StObject {
   ): BucketStore[
     /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
     js.Object
-  ] = js.native
+  ]
   
-  def websocketClientProvider(url: String): WebSocket = js.native
+  def websocketClientProvider(url: String): WebSocket
 }
 object ClientConfig {
   
@@ -61,7 +59,7 @@ object ClientConfig {
   }
   
   @scala.inline
-  implicit class ClientConfigMutableBuilder[Self <: ClientConfig[_], Buckets] (val x: Self with ClientConfig[Buckets]) extends AnyVal {
+  implicit class ClientConfigMutableBuilder[Self <: ClientConfig[?], Buckets] (val x: Self & ClientConfig[Buckets]) extends AnyVal {
     
     @scala.inline
     def setGhostStoreProvider(

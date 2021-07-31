@@ -2,66 +2,64 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductViewSummary extends StObject {
   
   /**
     * The distributor of the product. Contact the product administrator for the significance of this value.
     */
-  var Distributor: js.UndefOr[ProductViewDistributor] = js.native
+  var Distributor: js.UndefOr[ProductViewDistributor] = js.undefined
   
   /**
     * Indicates whether the product has a default path. If the product does not have a default path, call ListLaunchPaths to disambiguate between paths. Otherwise, ListLaunchPaths is not required, and the output of ProductViewSummary can be used directly with DescribeProvisioningParameters.
     */
-  var HasDefaultPath: js.UndefOr[typings.awsSdk.servicecatalogMod.HasDefaultPath] = js.native
+  var HasDefaultPath: js.UndefOr[typings.awsSdk.servicecatalogMod.HasDefaultPath] = js.undefined
   
   /**
     * The product view identifier.
     */
-  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.servicecatalogMod.Id] = js.undefined
   
   /**
     * The name of the product.
     */
-  var Name: js.UndefOr[ProductViewName] = js.native
+  var Name: js.UndefOr[ProductViewName] = js.undefined
   
   /**
     * The owner of the product. Contact the product administrator for the significance of this value.
     */
-  var Owner: js.UndefOr[ProductViewOwner] = js.native
+  var Owner: js.UndefOr[ProductViewOwner] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * Short description of the product.
     */
-  var ShortDescription: js.UndefOr[ProductViewShortDescription] = js.native
+  var ShortDescription: js.UndefOr[ProductViewShortDescription] = js.undefined
   
   /**
     * The description of the support for this Product.
     */
-  var SupportDescription: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportDescription] = js.native
+  var SupportDescription: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportDescription] = js.undefined
   
   /**
     * The email contact information to obtain support for this Product.
     */
-  var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.native
+  var SupportEmail: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportEmail] = js.undefined
   
   /**
     * The URL information to obtain support for this Product.
     */
-  var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.native
+  var SupportUrl: js.UndefOr[typings.awsSdk.servicecatalogMod.SupportUrl] = js.undefined
   
   /**
     * The product type. Contact the product administrator for the significance of this value. If this value is MARKETPLACE, the product was created by AWS Marketplace.
     */
-  var Type: js.UndefOr[ProductType] = js.native
+  var Type: js.UndefOr[ProductType] = js.undefined
 }
 object ProductViewSummary {
   

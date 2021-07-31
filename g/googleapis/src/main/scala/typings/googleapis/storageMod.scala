@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
+  
+  @JSImport("googleapis/build/src/apis/storage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -118,9 +121,12 @@ object storageMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/storage", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/storage", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -164,22 +170,19 @@ object storageMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/storage", "storage")
-  @js.native
-  def storage(options: Options): Storage = js.native
-  @JSImport("googleapis/build/src/apis/storage", "storage")
-  @js.native
-  def storage(options: typings.googleapis.storageV1beta1Mod.storageV1beta1.Options): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = js.native
-  @JSImport("googleapis/build/src/apis/storage", "storage")
-  @js.native
-  def storage(options: typings.googleapis.storageV1beta2Mod.storageV1beta2.Options): typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage = js.native
-  @JSImport("googleapis/build/src/apis/storage", "storage")
-  @js.native
-  def storage_v1(version: v1): Storage = js.native
-  @JSImport("googleapis/build/src/apis/storage", "storage")
-  @js.native
-  def storage_v1beta1(version: v1beta1): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = js.native
-  @JSImport("googleapis/build/src/apis/storage", "storage")
-  @js.native
-  def storage_v1beta2(version: v1beta2): typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage = js.native
+  @scala.inline
+  def storage(options: Options): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(options.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  @scala.inline
+  def storage(options: typings.googleapis.storageV1beta1Mod.storageV1beta1.Options): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage]
+  @scala.inline
+  def storage(options: typings.googleapis.storageV1beta2Mod.storageV1beta2.Options): typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage]
+  
+  @scala.inline
+  def storage_v1(version: v1): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  
+  @scala.inline
+  def storage_v1beta1(version: v1beta1): typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta1Mod.storageV1beta1.Storage]
+  
+  @scala.inline
+  def storage_v1beta2(version: v1beta2): typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("storage")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.storageV1beta2Mod.storageV1beta2.Storage]
 }

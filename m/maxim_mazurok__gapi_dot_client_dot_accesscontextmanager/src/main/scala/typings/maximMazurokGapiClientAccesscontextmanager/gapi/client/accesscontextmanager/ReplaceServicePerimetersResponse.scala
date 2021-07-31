@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplaceServicePerimetersResponse extends StObject {
   
   /** List of the Service Perimeter instances. */
-  var servicePerimeters: js.UndefOr[js.Array[ServicePerimeter]] = js.native
+  var servicePerimeters: js.UndefOr[js.Array[ServicePerimeter]] = js.undefined
 }
 object ReplaceServicePerimetersResponse {
   

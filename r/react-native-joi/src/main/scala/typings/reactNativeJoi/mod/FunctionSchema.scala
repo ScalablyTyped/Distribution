@@ -2,13 +2,14 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNativeJoi.mod._SchemaLike because Already inherited
 - typings.reactNativeJoi.mod._Schema because Already inherited */ @js.native
-trait FunctionSchema extends AnySchema {
+trait FunctionSchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Specifies the arity of the function where:

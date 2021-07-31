@@ -3,158 +3,183 @@ package typings.gregorianCalendar
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("gregorian-calendar", JSImport.Namespace)
   @js.native
-  class ^ () extends GregorianCalendar {
+  class ^ ()
+    extends StObject
+       with GregorianCalendar {
     def this(locale: js.Object) = this()
-  }
-  
-  @js.native
-  trait GregorianCalendar extends StObject {
     
     /**
       * add the day of month of the given calendar field.
       */
-    def addDayOfMonth(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addDayOfMonth(amount: Number): Unit = js.native
     
     /**
       * add the hour of day of the given calendar field.
       */
-    def addHourOfDay(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addHourOfDay(amount: Number): Unit = js.native
     
     /**
       * add the millisecond of the given calendar field.
       */
-    def addMilliSecond(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addMilliSecond(amount: Number): Unit = js.native
     
     /**
       * add the minute of the given calendar field.
       */
-    def addMinute(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addMinute(amount: Number): Unit = js.native
     
     /**
       * add the month of the given calendar field.
       */
-    def addMonth(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addMonth(amount: Number): Unit = js.native
     
     /**
       * add the second of the given calendar field.
       */
-    def addSecond(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addSecond(amount: Number): Unit = js.native
     
     /**
       * add the year of the given calendar field.
       */
-    def addYear(amount: Number): Unit = js.native
+    /* CompleteClass */
+    override def addYear(amount: Number): Unit = js.native
     
     /**
       * clear all field of current instance
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
     /**
       * compare this object and other by day. return -1 0 or 1
       */
-    def compareToDay(other: GregorianCalendar): Number = js.native
+    /* CompleteClass */
+    override def compareToDay(other: GregorianCalendar): Number = js.native
     
-    def equals(other: GregorianCalendar): Boolean = js.native
+    /* CompleteClass */
+    override def equals(other: GregorianCalendar): Boolean = js.native
     
     /**
       * Returns the day of month of the given calendar field.
       */
-    def getDayOfMonth(): Number = js.native
+    /* CompleteClass */
+    override def getDayOfMonth(): Number = js.native
     
     /**
       * Returns the day of week of the given calendar field. sunday is 0, monday is 1
       */
-    def getDayOfWeek(): Number = js.native
+    /* CompleteClass */
+    override def getDayOfWeek(): Number = js.native
     
     /**
       * Returns the day of week in month of the given calendar field.
       */
-    def getDayOfWeekInMonth(): Number = js.native
+    /* CompleteClass */
+    override def getDayOfWeekInMonth(): Number = js.native
     
     /**
       * Returns the day of year of the given calendar field.
       */
-    def getDayOfYear(): Number = js.native
+    /* CompleteClass */
+    override def getDayOfYear(): Number = js.native
     
     /**
       * Returns the hour of day for the given calendar field.
       */
-    def getHourOfDay(): Number = js.native
+    /* CompleteClass */
+    override def getHourOfDay(): Number = js.native
     
     /**
       * Returns the millisecond of the given calendar field.
       */
-    def getMilliSeconds(): Number = js.native
+    /* CompleteClass */
+    override def getMilliSeconds(): Number = js.native
     
     /**
       * Returns the minute of the given calendar field.
       */
-    def getMinutes(): Number = js.native
+    /* CompleteClass */
+    override def getMinutes(): Number = js.native
     
     /**
       * Returns the month of the given calendar field.
       */
-    def getMonth(): Number = js.native
+    /* CompleteClass */
+    override def getMonth(): Number = js.native
     
     /**
       * Returns the second of the given calendar field.
       */
-    def getSeconds(): Number = js.native
+    /* CompleteClass */
+    override def getSeconds(): Number = js.native
     
     /**
       * get absolute time for current instance
       */
-    def getTime(): Number = js.native
+    /* CompleteClass */
+    override def getTime(): Number = js.native
     
     /**
       * current date instance's timezone offset (in minutes)
       */
-    def getTimezoneOffset(): Number = js.native
+    /* CompleteClass */
+    override def getTimezoneOffset(): Number = js.native
     
     /**
       * Returns the week of month of the given calendar field.
       */
-    def getWeekOfMonth(): Number = js.native
+    /* CompleteClass */
+    override def getWeekOfMonth(): Number = js.native
     
     /**
       * Returns the week of year of the given calendar field.
       */
-    def getWeekOfYear(): Number = js.native
+    /* CompleteClass */
+    override def getWeekOfYear(): Number = js.native
     
     /**
       * Returns the week number of year represented by this GregorianCalendar.
       */
-    def getWeekYear(): Number = js.native
+    /* CompleteClass */
+    override def getWeekYear(): Number = js.native
     
     /**
       * Returns the number of weeks in the week year
       */
-    def getWeeksInWeekYear(): Number = js.native
+    /* CompleteClass */
+    override def getWeeksInWeekYear(): Number = js.native
     
     /**
       * Returns the year of the given calendar field.
       */
-    def getYear(): Number = js.native
+    /* CompleteClass */
+    override def getYear(): Number = js.native
     
     /**
       * set the month of the given calendar field without influence month.
       * 2015-09-29 -> setMonth(2) -> 2015-03-01
       * 2015-09-29 -> rollSetMonth(2) -> 2015-02-28
       */
-    def rollSetMonth(month: Number): Unit = js.native
+    /* CompleteClass */
+    override def rollSetMonth(month: Number): Unit = js.native
     
     /**
       * same as call setYear, setMonth, setDayOfMonth ....
       */
-    def set(
+    /* CompleteClass */
+    override def set(
       year: Number,
       month: Number,
       dayOfMonth: Number,
@@ -167,42 +192,50 @@ object mod {
     /**
       * set the day of month of the given calendar field.
       */
-    def setDayOfMonth(day: Number): Unit = js.native
+    /* CompleteClass */
+    override def setDayOfMonth(day: Number): Unit = js.native
     
     /**
       * set the hour of day for the given calendar field.
       */
-    def setHourOfDay(hour: Number): Unit = js.native
+    /* CompleteClass */
+    override def setHourOfDay(hour: Number): Unit = js.native
     
     /**
       * set the millisecond of the given calendar field.
       */
-    def setMilliSeconds(second: Number): Unit = js.native
+    /* CompleteClass */
+    override def setMilliSeconds(second: Number): Unit = js.native
     
     /**
       * set the minute of the given calendar field.
       */
-    def setMinutes(minute: Number): Unit = js.native
+    /* CompleteClass */
+    override def setMinutes(minute: Number): Unit = js.native
     
     /**
       * set the month of the given calendar field. January is 0, you can use enum
       */
-    def setMonth(month: Number): Unit = js.native
+    /* CompleteClass */
+    override def setMonth(month: Number): Unit = js.native
     
     /**
       * set the second of the given calendar field.
       */
-    def setSeconds(second: Number): Unit = js.native
+    /* CompleteClass */
+    override def setSeconds(second: Number): Unit = js.native
     
     /**
       * set absolute time for current instance
       */
-    def setTime(time: Number): Unit = js.native
+    /* CompleteClass */
+    override def setTime(time: Number): Unit = js.native
     
     /**
       * set current date instance's timezone offset (in minutes)
       */
-    def setTimezoneOffset(timezoneOffset: Number): Unit = js.native
+    /* CompleteClass */
+    override def setTimezoneOffset(timezoneOffset: Number): Unit = js.native
     
     /**
       * Sets this GregorianCalendar to the date given by the date specifiers - weekYear, weekOfYear, and dayOfWeek.
@@ -212,12 +245,219 @@ object mod {
       *         weekOfYear: the week number based on weekYear
       *         dayOfWeek: the day of week value
       */
-    def setWeekDate(weekYear: Number, weekOfYear: Number, dayOfWeek: Number): Unit = js.native
+    /* CompleteClass */
+    override def setWeekDate(weekYear: Number, weekOfYear: Number, dayOfWeek: Number): Unit = js.native
     
     /**
       * set the year of the given calendar field.
       */
-    def setYear(year: Number): Unit = js.native
+    /* CompleteClass */
+    override def setYear(year: Number): Unit = js.native
+  }
+  
+  trait GregorianCalendar extends StObject {
+    
+    /**
+      * add the day of month of the given calendar field.
+      */
+    def addDayOfMonth(amount: Number): Unit
+    
+    /**
+      * add the hour of day of the given calendar field.
+      */
+    def addHourOfDay(amount: Number): Unit
+    
+    /**
+      * add the millisecond of the given calendar field.
+      */
+    def addMilliSecond(amount: Number): Unit
+    
+    /**
+      * add the minute of the given calendar field.
+      */
+    def addMinute(amount: Number): Unit
+    
+    /**
+      * add the month of the given calendar field.
+      */
+    def addMonth(amount: Number): Unit
+    
+    /**
+      * add the second of the given calendar field.
+      */
+    def addSecond(amount: Number): Unit
+    
+    /**
+      * add the year of the given calendar field.
+      */
+    def addYear(amount: Number): Unit
+    
+    /**
+      * clear all field of current instance
+      */
+    def clear(): Unit
+    
+    /**
+      * compare this object and other by day. return -1 0 or 1
+      */
+    def compareToDay(other: GregorianCalendar): Number
+    
+    def equals(other: GregorianCalendar): Boolean
+    
+    /**
+      * Returns the day of month of the given calendar field.
+      */
+    def getDayOfMonth(): Number
+    
+    /**
+      * Returns the day of week of the given calendar field. sunday is 0, monday is 1
+      */
+    def getDayOfWeek(): Number
+    
+    /**
+      * Returns the day of week in month of the given calendar field.
+      */
+    def getDayOfWeekInMonth(): Number
+    
+    /**
+      * Returns the day of year of the given calendar field.
+      */
+    def getDayOfYear(): Number
+    
+    /**
+      * Returns the hour of day for the given calendar field.
+      */
+    def getHourOfDay(): Number
+    
+    /**
+      * Returns the millisecond of the given calendar field.
+      */
+    def getMilliSeconds(): Number
+    
+    /**
+      * Returns the minute of the given calendar field.
+      */
+    def getMinutes(): Number
+    
+    /**
+      * Returns the month of the given calendar field.
+      */
+    def getMonth(): Number
+    
+    /**
+      * Returns the second of the given calendar field.
+      */
+    def getSeconds(): Number
+    
+    /**
+      * get absolute time for current instance
+      */
+    def getTime(): Number
+    
+    /**
+      * current date instance's timezone offset (in minutes)
+      */
+    def getTimezoneOffset(): Number
+    
+    /**
+      * Returns the week of month of the given calendar field.
+      */
+    def getWeekOfMonth(): Number
+    
+    /**
+      * Returns the week of year of the given calendar field.
+      */
+    def getWeekOfYear(): Number
+    
+    /**
+      * Returns the week number of year represented by this GregorianCalendar.
+      */
+    def getWeekYear(): Number
+    
+    /**
+      * Returns the number of weeks in the week year
+      */
+    def getWeeksInWeekYear(): Number
+    
+    /**
+      * Returns the year of the given calendar field.
+      */
+    def getYear(): Number
+    
+    /**
+      * set the month of the given calendar field without influence month.
+      * 2015-09-29 -> setMonth(2) -> 2015-03-01
+      * 2015-09-29 -> rollSetMonth(2) -> 2015-02-28
+      */
+    def rollSetMonth(month: Number): Unit
+    
+    /**
+      * same as call setYear, setMonth, setDayOfMonth ....
+      */
+    def set(
+      year: Number,
+      month: Number,
+      dayOfMonth: Number,
+      hourOfDay: Number,
+      minutes: Number,
+      seconds: Number,
+      milliseconds: Number
+    ): Unit
+    
+    /**
+      * set the day of month of the given calendar field.
+      */
+    def setDayOfMonth(day: Number): Unit
+    
+    /**
+      * set the hour of day for the given calendar field.
+      */
+    def setHourOfDay(hour: Number): Unit
+    
+    /**
+      * set the millisecond of the given calendar field.
+      */
+    def setMilliSeconds(second: Number): Unit
+    
+    /**
+      * set the minute of the given calendar field.
+      */
+    def setMinutes(minute: Number): Unit
+    
+    /**
+      * set the month of the given calendar field. January is 0, you can use enum
+      */
+    def setMonth(month: Number): Unit
+    
+    /**
+      * set the second of the given calendar field.
+      */
+    def setSeconds(second: Number): Unit
+    
+    /**
+      * set absolute time for current instance
+      */
+    def setTime(time: Number): Unit
+    
+    /**
+      * set current date instance's timezone offset (in minutes)
+      */
+    def setTimezoneOffset(timezoneOffset: Number): Unit
+    
+    /**
+      * Sets this GregorianCalendar to the date given by the date specifiers - weekYear, weekOfYear, and dayOfWeek.
+      * weekOfYear follows the WEEK_OF_YEAR numbering.
+      * The dayOfWeek value must be one of the DAY_OF_WEEK values: SUNDAY to SATURDAY.
+      *        weekYear: the week year
+      *         weekOfYear: the week number based on weekYear
+      *         dayOfWeek: the day of week value
+      */
+    def setWeekDate(weekYear: Number, weekOfYear: Number, dayOfWeek: Number): Unit
+    
+    /**
+      * set the year of the given calendar field.
+      */
+    def setYear(year: Number): Unit
   }
   object GregorianCalendar {
     

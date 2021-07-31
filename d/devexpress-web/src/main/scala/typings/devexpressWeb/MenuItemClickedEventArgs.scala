@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.MenuItemClicked event.
   */
-@js.native
-trait MenuItemClickedEventArgs extends ASPxClientEventArgs {
+trait MenuItemClickedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets whether an event is handled, and that default actions are not required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets the name of the menu item which is clicked.
     */
-  var itemName: String = js.native
+  var itemName: String
 }
 object MenuItemClickedEventArgs {
   

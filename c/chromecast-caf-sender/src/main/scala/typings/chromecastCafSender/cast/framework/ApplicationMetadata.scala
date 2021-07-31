@@ -3,19 +3,17 @@ package typings.chromecastCafSender.cast.framework
 import typings.chrome.chrome.cast.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationMetadata extends StObject {
   
-  var applicationId: String = js.native
+  var applicationId: String
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var name: String = js.native
+  var name: String
   
-  var namespaces: js.Array[String] = js.native
+  var namespaces: js.Array[String]
 }
 object ApplicationMetadata {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The AWS access key ID that was used to sign the request. If the request was made with temporary security credentials, this is the access key ID of the temporary credentials.
     */
-  var AccessKeyId: js.UndefOr[String] = js.native
+  var AccessKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * A JSON string that contains a representation of the event returned.
     */
-  var CloudTrailEvent: js.UndefOr[String] = js.native
+  var CloudTrailEvent: js.UndefOr[String] = js.undefined
   
   /**
     * The CloudTrail ID of the event returned.
     */
-  var EventId: js.UndefOr[String] = js.native
+  var EventId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the event returned.
     */
-  var EventName: js.UndefOr[String] = js.native
+  var EventName: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS service that the request was made to.
     */
-  var EventSource: js.UndefOr[String] = js.native
+  var EventSource: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time of the event returned.
     */
-  var EventTime: js.UndefOr[Date] = js.native
+  var EventTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Information about whether the event is a write event or a read event. 
     */
-  var ReadOnly: js.UndefOr[String] = js.native
+  var ReadOnly: js.UndefOr[String] = js.undefined
   
   /**
     * A list of resources referenced by the event returned.
     */
-  var Resources: js.UndefOr[ResourceList] = js.native
+  var Resources: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * A user name or role name of the requester that called the API in the event returned.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object Event {
   

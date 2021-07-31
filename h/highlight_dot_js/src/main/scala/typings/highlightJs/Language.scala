@@ -6,87 +6,85 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined highlight.js.LanguageDetail & std.Partial<highlight.js.Mode> */
-@js.native
 trait Language extends StObject {
   
-  var __beforeBegin: js.UndefOr[js.Function] = js.native
+  var __beforeBegin: js.UndefOr[js.Function] = js.undefined
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var begin: js.UndefOr[RegExp | String] = js.native
+  var begin: js.UndefOr[RegExp | String] = js.undefined
   
-  var beginKeywords: js.UndefOr[String] = js.native
+  var beginKeywords: js.UndefOr[String] = js.undefined
   
-  var cached_variants: js.UndefOr[js.Array[Mode]] = js.native
+  var cached_variants: js.UndefOr[js.Array[Mode]] = js.undefined
   
-  var case_insensitive: js.UndefOr[Boolean] = js.native
+  var case_insensitive: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var classNameAliases: js.UndefOr[Record[String, String]] = js.native
+  var classNameAliases: js.UndefOr[Record[String, String]] = js.undefined
   
-  var compiled: js.UndefOr[Boolean] = js.native
+  var compiled: js.UndefOr[Boolean] = js.undefined
   
-  var contains: js.Array[Mode] with (js.UndefOr[js.Array[self | Mode]]) = js.native
+  var contains: js.Array[Mode] & (js.UndefOr[js.Array[self | Mode]])
   
-  var disableAutodetect: js.UndefOr[Boolean] = js.native
+  var disableAutodetect: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[RegExp | String] = js.native
+  var end: js.UndefOr[RegExp | String] = js.undefined
   
-  var endSameAsBegin: js.UndefOr[Boolean] = js.native
+  var endSameAsBegin: js.UndefOr[Boolean] = js.undefined
   
-  var endsParent: js.UndefOr[Boolean] = js.native
+  var endsParent: js.UndefOr[Boolean] = js.undefined
   
-  var endsWithParent: js.UndefOr[Boolean] = js.native
+  var endsWithParent: js.UndefOr[Boolean] = js.undefined
   
-  var excludeBegin: js.UndefOr[Boolean] = js.native
+  var excludeBegin: js.UndefOr[Boolean] = js.undefined
   
-  var excludeEnd: js.UndefOr[Boolean] = js.native
+  var excludeEnd: js.UndefOr[Boolean] = js.undefined
   
-  var exports: js.UndefOr[js.Any] = js.native
+  var exports: js.UndefOr[js.Any] = js.undefined
   
-  var illegal: js.UndefOr[String | RegExp] = js.native
+  var illegal: js.UndefOr[String | RegExp] = js.undefined
   
-  var keywords: js.UndefOr[(Record[String, _]) | String] = js.native
+  var keywords: js.UndefOr[(Record[String, js.Any]) | String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var lexemes: js.UndefOr[String | RegExp] = js.native
+  var lexemes: js.UndefOr[String | RegExp] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   @JSName("on:begin")
-  var onColonbegin: js.UndefOr[ModeCallback] = js.native
+  var onColonbegin: js.UndefOr[ModeCallback] = js.undefined
   
   @JSName("on:end")
-  var onColonend: js.UndefOr[js.Function] = js.native
+  var onColonend: js.UndefOr[js.Function] = js.undefined
   
-  var parent: js.UndefOr[Mode] = js.native
+  var parent: js.UndefOr[Mode] = js.undefined
   
-  var rawDefinition: js.UndefOr[js.Function0[this.type]] = js.native
+  var rawDefinition: js.UndefOr[js.Function0[this.type]] = js.undefined
   
-  var relevance: js.UndefOr[Double] = js.native
+  var relevance: js.UndefOr[Double] = js.undefined
   
-  var returnBegin: js.UndefOr[Boolean] = js.native
+  var returnBegin: js.UndefOr[Boolean] = js.undefined
   
-  var returnEnd: js.UndefOr[Boolean] = js.native
+  var returnEnd: js.UndefOr[Boolean] = js.undefined
   
-  var skip: js.UndefOr[Boolean] = js.native
+  var skip: js.UndefOr[Boolean] = js.undefined
   
-  var starts: js.UndefOr[Mode] = js.native
+  var starts: js.UndefOr[Mode] = js.undefined
   
-  var subLanguage: js.UndefOr[String | js.Array[String]] = js.native
+  var subLanguage: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var variants: js.UndefOr[js.Array[Mode]] = js.native
+  var variants: js.UndefOr[js.Array[Mode]] = js.undefined
 }
 object Language {
   
   @scala.inline
-  def apply(contains: js.Array[Mode] with (js.UndefOr[js.Array[self | Mode]])): Language = {
+  def apply(contains: js.Array[Mode] & (js.UndefOr[js.Array[self | Mode]])): Language = {
     val __obj = js.Dynamic.literal(contains = contains.asInstanceOf[js.Any])
     __obj.asInstanceOf[Language]
   }
@@ -149,7 +147,7 @@ object Language {
     def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
     
     @scala.inline
-    def setContains(value: js.Array[Mode] with (js.UndefOr[js.Array[self | Mode]])): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    def setContains(value: js.Array[Mode] & (js.UndefOr[js.Array[self | Mode]])): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDisableAutodetect(value: Boolean): Self = StObject.set(x, "disableAutodetect", value.asInstanceOf[js.Any])
@@ -206,7 +204,7 @@ object Language {
     def setIllegalUndefined: Self = StObject.set(x, "illegal", js.undefined)
     
     @scala.inline
-    def setKeywords(value: (Record[String, _]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    def setKeywords(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)

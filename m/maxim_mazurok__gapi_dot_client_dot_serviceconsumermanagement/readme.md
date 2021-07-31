@@ -10,9 +10,9 @@ TypeScript typings for Service Consumer Management API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.serviceconsumermanagement |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 33 |
 | # dependents       | 1 |
-| # downloads        | 77 |
+| # downloads        | 2257 |
 | # stars            | 0 |
 
 ## Links

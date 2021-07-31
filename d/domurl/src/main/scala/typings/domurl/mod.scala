@@ -3,14 +3,15 @@ package typings.domurl
 import typings.domurl.mod.domurl.QueryString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("domurl", JSImport.Namespace)
   @js.native
-  class ^[T] () extends Url[T] {
+  class ^[T] ()
+    extends StObject
+       with Url[T] {
     def this(url: String) = this()
   }
   

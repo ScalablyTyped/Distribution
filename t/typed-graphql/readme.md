@@ -12,7 +12,7 @@ Type definitions for graphql-js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 66812 |
+| # downloads        | 44170 |
 | # stars            | 0 |
 
 ## Links

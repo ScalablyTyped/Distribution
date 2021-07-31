@@ -10,9 +10,9 @@ A drop-in replacement for fs, making various improvements.
 | ------------------ | :-------------: |
 | Full name          | graceful-fs |
 | Keywords           | fs, module, reading, retry, retries, queue, error, errors, handling, EMFILE, EAGAIN, EINVAL, EPERM, EACCESS |
-| # releases         | 11 |
-| # dependents       | 1767 |
-| # downloads        | 1126619221 |
+| # releases         | 7 |
+| # dependents       | 1873 |
+| # downloads        | 1314169372 |
 | # stars            | 78 |
 
 ## Links

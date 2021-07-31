@@ -3,13 +3,11 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
-  var delay: TooltipDelay = js.native
+  var delay: TooltipDelay
 }
 object Delay {
   

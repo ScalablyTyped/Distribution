@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxHint control.
   */
-@js.native
-trait ASPxClientHint extends ASPxClientControl {
+trait ASPxClientHint
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs on the client side when a hint is about to be hidden.
     */
-  var Hiding: ASPxClientEvent[ASPxClientHintHidingEventHandler] = js.native
+  var Hiding: ASPxClientEvent[ASPxClientHintHidingEventHandler]
   
   /**
     * Occurs on the client side when a hint is about to be shown.
     */
-  var Showing: ASPxClientEvent[ASPxClientHintShowingEventHandler] = js.native
+  var Showing: ASPxClientEvent[ASPxClientHintShowingEventHandler]
 }
 object ASPxClientHint {
   

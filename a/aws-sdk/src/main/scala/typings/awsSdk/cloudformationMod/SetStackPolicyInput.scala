@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetStackPolicyInput extends StObject {
   
   /**
     * The name or unique stack ID that you want to associate a policy with.
     */
-  var StackName: typings.awsSdk.cloudformationMod.StackName = js.native
+  var StackName: typings.awsSdk.cloudformationMod.StackName
   
   /**
     * Structure containing the stack policy body. For more information, go to  Prevent Updates to Stack Resources in the AWS CloudFormation User Guide. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both.
     */
-  var StackPolicyBody: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyBody] = js.native
+  var StackPolicyBody: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyBody] = js.undefined
   
   /**
     * Location of a file containing the stack policy. The URL must point to a policy (maximum size: 16 KB) located in an S3 bucket in the same Region as the stack. You can specify either the StackPolicyBody or the StackPolicyURL parameter, but not both.
     */
-  var StackPolicyURL: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyURL] = js.native
+  var StackPolicyURL: js.UndefOr[typings.awsSdk.cloudformationMod.StackPolicyURL] = js.undefined
 }
 object SetStackPolicyInput {
   

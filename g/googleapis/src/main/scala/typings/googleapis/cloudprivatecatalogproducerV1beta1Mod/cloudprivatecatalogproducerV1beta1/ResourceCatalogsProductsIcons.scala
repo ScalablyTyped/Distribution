@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudprivatecatalogproducer/v1beta1", "cloudprivatecatalogproducer_v1beta1.Resource$Catalogs$Products$Icons")
@@ -35,7 +34,7 @@ class ResourceCatalogsProductsIcons protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def upload(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def upload(params: ParamsResourceCatalogsProductsIconsUpload): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def upload(
     params: ParamsResourceCatalogsProductsIconsUpload,

@@ -12,10 +12,13 @@ import typings.ol.styleStyleMod.Style
 import typings.ol.styleStyleMod.StyleLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawMod {
+  
+  @JSImport("ol/interaction/Draw", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/interaction/Draw", JSImport.Default)
   @js.native
@@ -30,31 +33,32 @@ object drawMod {
   object DrawEventType extends StObject {
     
     @js.native
-    sealed trait DRAWABORT extends DrawEventType
+    sealed trait DRAWABORT
+      extends StObject
+         with DrawEventType
     
     @js.native
-    sealed trait DRAWEND extends DrawEventType
+    sealed trait DRAWEND
+      extends StObject
+         with DrawEventType
     
     @js.native
-    sealed trait DRAWSTART extends DrawEventType
+    sealed trait DRAWSTART
+      extends StObject
+         with DrawEventType
   }
   
-  @JSImport("ol/interaction/Draw", "createBox")
-  @js.native
-  def createBox(): GeometryFunction = js.native
+  @scala.inline
+  def createBox(): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createBox")().asInstanceOf[GeometryFunction]
   
-  @JSImport("ol/interaction/Draw", "createRegularPolygon")
-  @js.native
-  def createRegularPolygon(): GeometryFunction = js.native
-  @JSImport("ol/interaction/Draw", "createRegularPolygon")
-  @js.native
-  def createRegularPolygon(opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): GeometryFunction = js.native
-  @JSImport("ol/interaction/Draw", "createRegularPolygon")
-  @js.native
-  def createRegularPolygon(opt_sides: Double): GeometryFunction = js.native
-  @JSImport("ol/interaction/Draw", "createRegularPolygon")
-  @js.native
-  def createRegularPolygon(opt_sides: Double, opt_angle: Double): GeometryFunction = js.native
+  @scala.inline
+  def createRegularPolygon(): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")().asInstanceOf[GeometryFunction]
+  @scala.inline
+  def createRegularPolygon(opt_sides: Double): GeometryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any]).asInstanceOf[GeometryFunction]
+  @scala.inline
+  def createRegularPolygon(opt_sides: Double, opt_angle: Double): GeometryFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[GeometryFunction]
+  @scala.inline
+  def createRegularPolygon(opt_sides: Unit, opt_angle: Double): GeometryFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createRegularPolygon")(opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[GeometryFunction]
   
   @js.native
   trait Draw
@@ -141,44 +145,43 @@ object drawMod {
   
   type LineCoordType = js.Array[Coordinate]
   
-  @js.native
   trait Options extends StObject {
     
-    var clickTolerance: js.UndefOr[Double] = js.native
+    var clickTolerance: js.UndefOr[Double] = js.undefined
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var dragVertexDelay: js.UndefOr[Double] = js.native
+    var dragVertexDelay: js.UndefOr[Double] = js.undefined
     
     var features: js.UndefOr[
         typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-      ] = js.native
+      ] = js.undefined
     
-    var finishCondition: js.UndefOr[Condition] = js.native
+    var finishCondition: js.UndefOr[Condition] = js.undefined
     
-    var freehand: js.UndefOr[Boolean] = js.native
+    var freehand: js.UndefOr[Boolean] = js.undefined
     
-    var freehandCondition: js.UndefOr[Condition] = js.native
+    var freehandCondition: js.UndefOr[Condition] = js.undefined
     
-    var geometryFunction: js.UndefOr[GeometryFunction] = js.native
+    var geometryFunction: js.UndefOr[GeometryFunction] = js.undefined
     
-    var geometryName: js.UndefOr[String] = js.native
+    var geometryName: js.UndefOr[String] = js.undefined
     
-    var maxPoints: js.UndefOr[Double] = js.native
+    var maxPoints: js.UndefOr[Double] = js.undefined
     
-    var minPoints: js.UndefOr[Double] = js.native
+    var minPoints: js.UndefOr[Double] = js.undefined
     
-    var snapTolerance: js.UndefOr[Double] = js.native
+    var snapTolerance: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.native
+    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
     
-    var stopClick: js.UndefOr[Boolean] = js.native
+    var stopClick: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleLike] = js.native
+    var style: js.UndefOr[StyleLike] = js.undefined
     
-    var `type`: GeometryType = js.native
+    var `type`: GeometryType
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

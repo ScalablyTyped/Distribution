@@ -5,25 +5,23 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Regex extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var regex: js.UndefOr[Flags | Null] = js.native
+  var regex: js.UndefOr[Flags | Null] = js.undefined
   
-  var value: String | Boolean | Null | Double | RegExp = js.native
+  var value: String | Boolean | Null | Double | RegExp
 }
 object Regex {
   
   @scala.inline
   def apply(): Regex = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = null)
     __obj.asInstanceOf[Regex]
   }
   

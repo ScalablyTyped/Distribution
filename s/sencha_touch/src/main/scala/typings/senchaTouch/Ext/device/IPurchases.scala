@@ -3,11 +3,11 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.device.purchases.ISencha
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPurchases extends ISencha
+trait IPurchases
+  extends StObject
+     with ISencha
 object IPurchases {
   
   @scala.inline

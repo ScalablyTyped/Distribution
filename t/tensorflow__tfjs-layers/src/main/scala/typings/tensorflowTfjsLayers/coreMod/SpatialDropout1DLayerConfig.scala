@@ -3,17 +3,17 @@ package typings.tensorflowTfjsLayers.coreMod
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpatialDropout1DLayerConfig extends LayerConfig {
+trait SpatialDropout1DLayerConfig
+  extends StObject
+     with LayerConfig {
   
   /** Float between 0 and 1. Fraction of the input units to drop. */
-  var rate: Double = js.native
+  var rate: Double
   
   /** An integer to use as random seed. */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
 }
 object SpatialDropout1DLayerConfig {
   

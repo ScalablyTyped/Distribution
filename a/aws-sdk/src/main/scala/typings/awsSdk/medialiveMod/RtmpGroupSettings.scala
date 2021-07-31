@@ -2,48 +2,46 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RtmpGroupSettings extends StObject {
   
   /**
     * Choose the ad marker type for this output group. MediaLive will create a message based on the content of each SCTE-35 message, format it for that marker type, and insert it in the datastream.
     */
-  var AdMarkers: js.UndefOr[listOfRtmpAdMarkers] = js.native
+  var AdMarkers: js.UndefOr[listOfRtmpAdMarkers] = js.undefined
   
   /**
     * Authentication scheme to use when connecting with CDN
     */
-  var AuthenticationScheme: js.UndefOr[typings.awsSdk.medialiveMod.AuthenticationScheme] = js.native
+  var AuthenticationScheme: js.UndefOr[typings.awsSdk.medialiveMod.AuthenticationScheme] = js.undefined
   
   /**
     * Controls behavior when content cache fills up. If remote origin server stalls the RTMP connection and does not accept content fast enough the 'Media Cache' will fill up. When the cache reaches the duration specified by cacheLength the cache will stop accepting new content. If set to disconnectImmediately, the RTMP output will force a disconnect. Clear the media cache, and reconnect after restartDelay seconds. If set to waitForServer, the RTMP output will wait up to 5 minutes to allow the origin server to begin accepting data again.
     */
-  var CacheFullBehavior: js.UndefOr[RtmpCacheFullBehavior] = js.native
+  var CacheFullBehavior: js.UndefOr[RtmpCacheFullBehavior] = js.undefined
   
   /**
     * Cache length, in seconds, is used to calculate buffer size.
     */
-  var CacheLength: js.UndefOr[integerMin30] = js.native
+  var CacheLength: js.UndefOr[integerMin30] = js.undefined
   
   /**
     * Controls the types of data that passes to onCaptionInfo outputs.  If set to 'all' then 608 and 708 carried DTVCC data will be passed.  If set to 'field1AndField2608' then DTVCC data will be stripped out, but 608 data from both fields will be passed. If set to 'field1608' then only the data carried in 608 from field 1 video will be passed.
     */
-  var CaptionData: js.UndefOr[RtmpCaptionData] = js.native
+  var CaptionData: js.UndefOr[RtmpCaptionData] = js.undefined
   
   /**
     * Controls the behavior of this RTMP group if input becomes unavailable.
   - emitOutput: Emit a slate until input returns.
   - pauseOutput: Stop transmitting data until input returns. This does not close the underlying RTMP connection.
     */
-  var InputLossAction: js.UndefOr[InputLossActionForRtmpOut] = js.native
+  var InputLossAction: js.UndefOr[InputLossActionForRtmpOut] = js.undefined
   
   /**
     * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
     */
-  var RestartDelay: js.UndefOr[integerMin0] = js.native
+  var RestartDelay: js.UndefOr[integerMin0] = js.undefined
 }
 object RtmpGroupSettings {
   

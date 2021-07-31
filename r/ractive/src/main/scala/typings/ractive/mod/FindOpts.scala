@@ -2,16 +2,14 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOpts extends StObject {
   
   /**
   	 * Whether or not to include attached children when searching.j
   	 */
-  var remote: js.UndefOr[Boolean] = js.native
+  var remote: js.UndefOr[Boolean] = js.undefined
 }
 object FindOpts {
   

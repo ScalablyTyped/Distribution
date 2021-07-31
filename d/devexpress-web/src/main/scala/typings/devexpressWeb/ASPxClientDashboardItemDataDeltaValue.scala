@@ -2,64 +2,62 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides delta element values.
   */
-@js.native
 trait ASPxClientDashboardItemDataDeltaValue extends StObject {
   
   /**
     * Provides access to the absolute difference between the actual and target values.
     */
-  def GetAbsoluteVariation(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetAbsoluteVariation(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the actual value displayed within the delta element.
     */
-  def GetActualValue(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetActualValue(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the first additional delta value.
     */
-  def GetDisplaySubValue1(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetDisplaySubValue1(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the second additional delta value.
     */
-  def GetDisplaySubValue2(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetDisplaySubValue2(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the main delta value.
     */
-  def GetDisplayValue(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetDisplayValue(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Gets the type of delta indicator.
     */
-  def GetIndicatorType(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetIndicatorType(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Gets the value specifying the condition for displaying the delta indication.
     */
-  def GetIsGood(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetIsGood(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the percentage of the actual value in the target value.
     */
-  def GetPercentOfTarget(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetPercentOfTarget(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the percent of variation between the actual and target values.
     */
-  def GetPercentVariation(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetPercentVariation(): ASPxClientDashboardItemDataMeasureValue
   
   /**
     * Provides access to the target value.
     */
-  def GetTargetValue(): ASPxClientDashboardItemDataMeasureValue = js.native
+  def GetTargetValue(): ASPxClientDashboardItemDataMeasureValue
 }
 object ASPxClientDashboardItemDataDeltaValue {
   

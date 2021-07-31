@@ -3,13 +3,11 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for a LaTeX typesetter.
   */
-@js.native
 trait ILatexTypesetter extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait ILatexTypesetter extends StObject {
     * typesetting is required. Extensions wishing to provide their
     * own typesetter may replace that on the global `lab.rendermime`.
     */
-  def typeset(element: HTMLElement): Unit = js.native
+  def typeset(element: HTMLElement): Unit
 }
 object ILatexTypesetter {
   

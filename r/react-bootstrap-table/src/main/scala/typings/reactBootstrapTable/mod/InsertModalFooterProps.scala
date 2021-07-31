@@ -4,66 +4,64 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertModalFooterProps extends StObject {
   
   /**
     * Callback function to call prior to closing the Insert Modal window.
     */
-  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event], Unit]] = js.native
+  var beforeClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Any, Event], Unit]] = js.undefined
   
   /**
     * Callback function to be called prior to saving the new row.
     */
-  var beforeSave: js.UndefOr[js.Function1[/* e */ SyntheticEvent[_, Event], Unit]] = js.native
+  var beforeSave: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Any, Event], Unit]] = js.undefined
   
   /**
     * Header class name.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * Custom class name for the close button.
     */
-  var closeBtnClass: js.UndefOr[String] = js.native
+  var closeBtnClass: js.UndefOr[String] = js.undefined
   
   /**
     * Bootstrap css class name for the close button, example: 'btn-warning'
     */
-  var closeBtnContextual: js.UndefOr[String] = js.native
+  var closeBtnContextual: js.UndefOr[String] = js.undefined
   
   /**
     * Text to display on the Close button
     */
-  var closeBtnText: js.UndefOr[String] = js.native
+  var closeBtnText: js.UndefOr[String] = js.undefined
   
   /**
     * Callback function to call to close the Insert Modal window.
     */
-  var onModalClose: js.UndefOr[js.Function1[/* closeModal */ js.Function0[Unit], Unit]] = js.native
+  var onModalClose: js.UndefOr[js.Function1[/* closeModal */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * Callback function to be called to save the new row.
     */
-  var onSave: js.UndefOr[js.Function1[/* save */ js.Function0[Unit], Unit]] = js.native
+  var onSave: js.UndefOr[js.Function1[/* save */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     * Custom class name for the save button.
     */
-  var saveBtnClass: js.UndefOr[String] = js.native
+  var saveBtnClass: js.UndefOr[String] = js.undefined
   
   /**
     * Bootstrap css class name for the save button, example: 'btn-success'
     */
-  var saveBtnContextual: js.UndefOr[String] = js.native
+  var saveBtnContextual: js.UndefOr[String] = js.undefined
   
   /**
     * Text to display on the Save button
     */
-  var saveBtnText: js.UndefOr[String] = js.native
+  var saveBtnText: js.UndefOr[String] = js.undefined
 }
 object InsertModalFooterProps {
   
@@ -77,13 +75,13 @@ object InsertModalFooterProps {
   implicit class InsertModalFooterPropsMutableBuilder[Self <: InsertModalFooterProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBeforeClose(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+    def setBeforeClose(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
     @scala.inline
-    def setBeforeSave(value: /* e */ SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction1(value))
+    def setBeforeSave(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)

@@ -10,9 +10,9 @@ A Readability connector for metascraper
 | ------------------ | :-------------: |
 | Full name          | metascraper-readability |
 | Keywords           | metascraper, url |
-| # releases         | 89 |
+| # releases         | 119 |
 | # dependents       | 4 |
-| # downloads        | 16235 |
+| # downloads        | 17295 |
 | # stars            | 0 |
 
 ## Links

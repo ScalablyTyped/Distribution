@@ -8,10 +8,13 @@ import typings.reactDayPicker.propsMod.DayPickerProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerCoreMod {
+  
+  @JSImport("@blueprintjs/datetime/lib/esm/datePickerCore", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/datetime/lib/esm/datePickerCore", "DISABLED_MODIFIER")
   @js.native
@@ -37,19 +40,15 @@ object datePickerCoreMod {
   @js.native
   val SELECTED_RANGE_MODIFIER: /* "selected-range" */ String = js.native
   
-  @JSImport("@blueprintjs/datetime/lib/esm/datePickerCore", "combineModifiers")
-  @js.native
-  def combineModifiers(baseModifiers: IDatePickerModifiers, userModifiers: IDatePickerModifiers): IDatePickerModifiers = js.native
+  @scala.inline
+  def combineModifiers(baseModifiers: IDatePickerModifiers, userModifiers: IDatePickerModifiers): IDatePickerModifiers = (^.asInstanceOf[js.Dynamic].applyDynamic("combineModifiers")(baseModifiers.asInstanceOf[js.Any], userModifiers.asInstanceOf[js.Any])).asInstanceOf[IDatePickerModifiers]
   
-  @JSImport("@blueprintjs/datetime/lib/esm/datePickerCore", "getDefaultMaxDate")
-  @js.native
-  def getDefaultMaxDate(): Date = js.native
+  @scala.inline
+  def getDefaultMaxDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxDate")().asInstanceOf[Date]
   
-  @JSImport("@blueprintjs/datetime/lib/esm/datePickerCore", "getDefaultMinDate")
-  @js.native
-  def getDefaultMinDate(): Date = js.native
+  @scala.inline
+  def getDefaultMinDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinDate")().asInstanceOf[Date]
   
-  @js.native
   trait IDatePickerBaseProps extends StObject {
     
     /**
@@ -66,55 +65,55 @@ object datePickerCoreMod {
       * `<div className={Classes.DATEPICKER_DAY_WRAPPER}>{CONTENT_HERE}</div>`
       *
       */
-    var dayPickerProps: js.UndefOr[DayPickerProps] = js.native
+    var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
     
     /**
       * Whether the current day should be highlighted in the calendar.
       * @default false
       */
-    var highlightCurrentDay: js.UndefOr[Boolean] = js.native
+    var highlightCurrentDay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initial month the calendar displays.
       */
-    var initialMonth: js.UndefOr[Date] = js.native
+    var initialMonth: js.UndefOr[Date] = js.undefined
     
     /**
       * The locale name, which is passed to the functions in `localeUtils`
       * (and `formatDate` and `parseDate` if supported).
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /**
       * Collection of functions that provide internationalization support.
       */
-    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.native
+    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.undefined
     
     /**
       * The latest date the user can select.
       * @default Dec. 31st of this year.
       */
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
     /**
       * The earliest date the user can select.
       * @default Jan. 1st, 20 years in the past.
       */
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Collection of functions that determine which modifier classes get applied to which days.
       * Each function should accept a `Date` and return a boolean.
       * See the [**react-day-picker** documentation](http://react-day-picker.js.org/api/ModifiersUtils) to learn more.
       */
-    var modifiers: js.UndefOr[IDatePickerModifiers] = js.native
+    var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
     
     /**
       * If `true`, the month menu will appear to the left of the year menu.
       * Otherwise, the month menu will apear to the right of the year menu.
       * @default false
       */
-    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.native
+    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Further configure the `TimePicker` that appears beneath the calendar.
@@ -123,7 +122,7 @@ object datePickerCoreMod {
       *
       * Passing any non-empty object to this prop will cause the `TimePicker` to appear.
       */
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.native
+    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
     
     /**
       * The precision of time selection that accompanies the calendar. Passing a
@@ -133,7 +132,7 @@ object datePickerCoreMod {
       * This is shorthand for `timePickerProps.precision` and is a quick way to
       * enable time selection.
       */
-    var timePrecision: js.UndefOr[TimePrecision] = js.native
+    var timePrecision: js.UndefOr[TimePrecision] = js.undefined
   }
   object IDatePickerBaseProps {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationOutput extends StObject {
   
   /**
     * A unique application ID.
     */
-  var applicationId: js.UndefOr[ApplicationId] = js.native
+  var applicationId: js.UndefOr[ApplicationId] = js.undefined
 }
 object CreateApplicationOutput {
   

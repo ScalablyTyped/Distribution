@@ -4,23 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appBuilderMod {
   
-  @JSImport("app-builder-lib/out/util/appBuilder", "executeAppBuilderAndWriteJson")
+  @JSImport("app-builder-lib/out/util/appBuilder", JSImport.Namespace)
   @js.native
-  def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any): js.Promise[String] = js.native
-  @JSImport("app-builder-lib/out/util/appBuilder", "executeAppBuilderAndWriteJson")
-  @js.native
-  def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any, extraOptions: SpawnOptions): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/out/util/appBuilder", "executeAppBuilderAsJson")
-  @js.native
-  def executeAppBuilderAsJson[T](args: js.Array[String]): js.Promise[T] = js.native
+  @scala.inline
+  def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAndWriteJson")(args.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def executeAppBuilderAndWriteJson(args: js.Array[String], data: js.Any, extraOptions: SpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAndWriteJson")(args.asInstanceOf[js.Any], data.asInstanceOf[js.Any], extraOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("app-builder-lib/out/util/appBuilder", "objectToArgs")
-  @js.native
-  def objectToArgs(to: js.Array[String], argNameToValue: StringDictionary[String | Null]): Unit = js.native
+  @scala.inline
+  def executeAppBuilderAsJson[T](args: js.Array[String]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAppBuilderAsJson")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  
+  @scala.inline
+  def objectToArgs(to: js.Array[String], argNameToValue: StringDictionary[String | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToArgs")(to.asInstanceOf[js.Any], argNameToValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

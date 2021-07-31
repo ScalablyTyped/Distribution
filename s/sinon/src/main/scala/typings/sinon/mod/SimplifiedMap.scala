@@ -2,13 +2,13 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimplifiedMap extends SimplifiedSet {
+trait SimplifiedMap
+  extends StObject
+     with SimplifiedSet {
   
-  def get(key: js.Any): js.Any = js.native
+  def get(key: js.Any): js.Any
 }
 object SimplifiedMap {
   

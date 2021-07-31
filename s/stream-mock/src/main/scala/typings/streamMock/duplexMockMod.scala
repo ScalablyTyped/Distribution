@@ -9,7 +9,6 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object duplexMockMod {
@@ -17,11 +16,11 @@ object duplexMockMod {
   @JSImport("stream-mock/lib/duplex/DuplexMock", JSImport.Default)
   @js.native
   class default () extends DuplexMock {
-    def this(source: ArrayLike[_]) = this()
-    def this(source: Iterable[_]) = this()
-    def this(source: js.UndefOr[scala.Nothing], options: DuplexOptions) = this()
-    def this(source: ArrayLike[_], options: DuplexOptions) = this()
-    def this(source: Iterable[_], options: DuplexOptions) = this()
+    def this(source: ArrayLike[js.Any]) = this()
+    def this(source: Iterable[js.Any]) = this()
+    def this(source: Unit, options: DuplexOptions) = this()
+    def this(source: ArrayLike[js.Any], options: DuplexOptions) = this()
+    def this(source: Iterable[js.Any], options: DuplexOptions) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -43,13 +42,13 @@ object duplexMockMod {
     
     var _writableState: js.Any = js.native
     
-    var data: js.Array[_] | Buffer = js.native
+    var data: js.Array[js.Any] | Buffer = js.native
     
     var encoding: BufferEncoding = js.native
     
-    var flatData: js.Array[_] | Buffer = js.native
+    var flatData: js.Array[js.Any] | Buffer = js.native
     
-    var it: IterableIterator[_] = js.native
+    var it: IterableIterator[js.Any] = js.native
     
     var objectMode: Boolean = js.native
   }

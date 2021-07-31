@@ -12,7 +12,7 @@ Load modules on demand (lazy load) with angularJS
 | Keywords           | lazy load, lazy-load, load on demand, module, angular, angularJS |
 | # releases         | 0 |
 | # dependents       | 22 |
-| # downloads        | 1172127 |
+| # downloads        | 1175726 |
 | # stars            | 5 |
 
 ## Links

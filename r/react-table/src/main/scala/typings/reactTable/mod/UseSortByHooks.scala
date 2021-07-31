@@ -3,13 +3,11 @@ package typings.reactTable.mod
 import typings.reactTable.anon.PartialTableCommonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseSortByHooks[D /* <: js.Object */] extends StObject {
   
-  var getSortByToggleProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]] = js.native
+  var getSortByToggleProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
 }
 object UseSortByHooks {
   
@@ -22,7 +20,7 @@ object UseSortByHooks {
   }
   
   @scala.inline
-  implicit class UseSortByHooksMutableBuilder[Self <: UseSortByHooks[_], D /* <: js.Object */] (val x: Self with UseSortByHooks[D]) extends AnyVal {
+  implicit class UseSortByHooksMutableBuilder[Self <: UseSortByHooks[?], D /* <: js.Object */] (val x: Self & UseSortByHooks[D]) extends AnyVal {
     
     @scala.inline
     def setGetSortByToggleProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getSortByToggleProps", value.asInstanceOf[js.Any])

@@ -2,39 +2,37 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellRadius extends StObject {
   
-  var cellBg: js.UndefOr[String] = js.native
+  var cellBg: js.UndefOr[String] = js.undefined
   
-  var cellRadius: js.UndefOr[Double] = js.native
+  var cellRadius: js.UndefOr[Double] = js.undefined
   
-  var descFontColor: js.UndefOr[String] = js.native
+  var descFontColor: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[js.Array[Double] | Double] = js.native
+  var margin: js.UndefOr[js.Array[Double] | Double] = js.undefined
   
-  var maximumTrackTintColor: js.UndefOr[String] = js.native
+  var maximumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var minimumTrackTintColor: js.UndefOr[String] = js.native
+  var minimumTrackTintColor: js.UndefOr[String] = js.undefined
   
-  var padding: js.UndefOr[js.Array[Double] | Double] = js.native
+  var padding: js.UndefOr[js.Array[Double] | Double] = js.undefined
   
-  var thumbRadius: js.UndefOr[Double] = js.native
+  var thumbRadius: js.UndefOr[Double] = js.undefined
   
-  var thumbSize: js.UndefOr[Double] = js.native
+  var thumbSize: js.UndefOr[Double] = js.undefined
   
-  var thumbTintColor: js.UndefOr[String] = js.native
+  var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var trackHeight: js.UndefOr[Double] = js.native
+  var trackHeight: js.UndefOr[Double] = js.undefined
   
-  var trackRadius: js.UndefOr[Double] = js.native
+  var trackRadius: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CellRadius {
   

@@ -2,51 +2,49 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Equation extends StObject {
   
-  var a: Double = js.native
+  var a: Double
   
-  def addToWlamda(deltalambda: Double): Double = js.native
+  def addToWlamda(deltalambda: Double): Double
   
-  var b: Double = js.native
+  var b: Double
   
-  var bi: Body = js.native
+  var bi: Body
   
-  var bj: Body = js.native
+  var bj: Body
   
-  def computeB(a: Double, b: Double, h: Double): Double = js.native
+  def computeB(a: Double, b: Double, h: Double): Double
   
-  def computeC(): Double = js.native
+  def computeC(): Double
   
-  def computeGW(): Double = js.native
+  def computeGW(): Double
   
-  def computeGWlamda(): Double = js.native
+  def computeGWlamda(): Double
   
-  def computeGiMGt(): Double = js.native
+  def computeGiMGt(): Double
   
-  def computeGiMf(): Double = js.native
+  def computeGiMf(): Double
   
-  def computeGq(): Double = js.native
+  def computeGq(): Double
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var eps: Double = js.native
+  var eps: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var jacobianElementA: JacobianElement = js.native
+  var jacobianElementA: JacobianElement
   
-  var jacobianElementB: JacobianElement = js.native
+  var jacobianElementB: JacobianElement
   
-  var maxForce: Double = js.native
+  var maxForce: Double
   
-  var minForce: Double = js.native
+  var minForce: Double
   
-  def setSpookParams(stiffness: Double, relaxation: Double, timeStep: Double): Unit = js.native
+  def setSpookParams(stiffness: Double, relaxation: Double, timeStep: Double): Unit
 }
 object Equation {
   

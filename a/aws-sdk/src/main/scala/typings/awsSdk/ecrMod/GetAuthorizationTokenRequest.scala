@@ -2,16 +2,14 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAuthorizationTokenRequest extends StObject {
   
   /**
     * A list of AWS account IDs that are associated with the registries for which to get AuthorizationData objects. If you do not specify a registry, the default registry is assumed.
     */
-  var registryIds: js.UndefOr[GetAuthorizationTokenRegistryIdList] = js.native
+  var registryIds: js.UndefOr[GetAuthorizationTokenRegistryIdList] = js.undefined
 }
 object GetAuthorizationTokenRequest {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -38,7 +37,8 @@ object storage {
   
   @js.native
   trait LocalStorageArea
-    extends typings.chrome.chrome.storage.StorageArea {
+    extends StObject
+       with typings.chrome.chrome.storage.StorageArea {
     
     /** The maximum amount (in bytes) of data that can be stored in local storage, as measured by the JSON stringification of every value plus every key's length. This value will be ignored if the extension has the unlimitedStorage permission. Updates that would cause this limit to be exceeded fail immediately and set runtime.lastError. */
     var QUOTA_BYTES: Double = js.native
@@ -111,14 +111,13 @@ object storage {
     def set(items: js.Object, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait StorageChange extends StObject {
     
     /** Optional. The new value of the item, if there is a new value. */
-    var newValue: js.UndefOr[js.Any] = js.native
+    var newValue: js.UndefOr[js.Any] = js.undefined
     
     /** Optional. The old value of the item, if there was an old value. */
-    var oldValue: js.UndefOr[js.Any] = js.native
+    var oldValue: js.UndefOr[js.Any] = js.undefined
   }
   object StorageChange {
     
@@ -155,7 +154,8 @@ object storage {
   
   @js.native
   trait SyncStorageArea
-    extends typings.chrome.chrome.storage.StorageArea {
+    extends StObject
+       with typings.chrome.chrome.storage.StorageArea {
     
     /** The maximum number of items that can be stored in sync storage. Updates that would cause this limit to be exceeded will fail immediately and set runtime.lastError. */
     var MAX_ITEMS: Double = js.native

@@ -2,54 +2,52 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeRaws extends StObject {
   
   /**
     * The space symbols after the last child of the node to the end of
     * the node.
     */
-  var after: js.UndefOr[String] = js.native
+  var after: js.UndefOr[String] = js.undefined
   
   /**
     * The space between the at-rule's name and parameters.
     */
-  var afterName: js.UndefOr[String] = js.native
+  var afterName: js.UndefOr[String] = js.undefined
   
   /**
     * The space symbols before the node. It also stores `*` and `_`
     * symbols before the declaration (IE hack).
     */
-  var before: js.UndefOr[String] = js.native
+  var before: js.UndefOr[String] = js.undefined
   
   /**
     * The symbols between the property and value for declarations,
     * selector and "{" for rules, last parameter and "{" for at-rules.
     */
-  var between: js.UndefOr[String] = js.native
+  var between: js.UndefOr[String] = js.undefined
   
   /**
     * The content of important statement, if it is not just "!important".
     */
-  var important: js.UndefOr[String] = js.native
+  var important: js.UndefOr[String] = js.undefined
   
   /**
     * The space symbols between "/ *" and comment's text.
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * The space symbols between comment's text and "*\/".
     */
-  var right: js.UndefOr[String] = js.native
+  var right: js.UndefOr[String] = js.undefined
   
   /**
     * True if last child has (optional) semicolon.
     */
-  var semicolon: js.UndefOr[Boolean] = js.native
+  var semicolon: js.UndefOr[Boolean] = js.undefined
 }
 object NodeRaws {
   

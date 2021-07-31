@@ -2,65 +2,63 @@ package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Set extends StObject {
   
   /** Adds an item to the set */
-  def Add(item: js.Any): js.Any = js.native
+  def Add(item: js.Any): js.Any
   
   /** Adds all items from array to the set, and returns the set */
-  def AddArray(array: js.Array[_]): Set = js.native
+  def AddArray(array: js.Array[js.Any]): Set
   
   /** Clears all the items from set */
-  def Clear(): Set = js.native
+  def Clear(): Set
   
   /** Returns a copy of this set */
-  def Clone(): Set = js.native
+  def Clone(): Set
   
   /** Returns true if item exists in this set */
-  def Contains(item: js.Any): Boolean = js.native
+  def Contains(item: js.Any): Boolean
   
   /** Returns a set that contains all the items that are in this set but not in the otherSet */
-  def Difference(otherSet: Set): Set = js.native
+  def Difference(otherSet: Set): Set
   
   /** Returns first item in the set */
-  def First(): js.Any = js.native
+  def First(): js.Any
   
   /** Returns the underlying collection of items as dictionary.
     Items are the keys, and values are always 1.
     So the return value may be either { [item: string]: number } or { [item: number]: number } */
-  def GetCollection(): js.Any = js.native
+  def GetCollection(): js.Any
   
   /** Returns a new set, that contains only items that exist both in this set and the otherSet */
-  def Intersection(otherSet: Set): Set = js.native
+  def Intersection(otherSet: Set): Set
   
   /** Returns true if the set is empty */
-  def IsEmpty(): Boolean = js.native
+  def IsEmpty(): Boolean
   
   /** Removes the specified item from the set and returns the removed item */
-  def Remove(item: js.Any): js.Any = js.native
+  def Remove(item: js.Any): js.Any
   
   /** Returns a set that contains all the items that exist only in one of the sets (this and other), but not in both */
-  def SymmetricDifference(otherSet: Set): Set = js.native
+  def SymmetricDifference(otherSet: Set): Set
   
   /** Returns all items from the set as an array */
-  def ToArray(): js.Array[_] = js.native
+  def ToArray(): js.Array[js.Any]
   
   /** Returns a new set, that contains items from this set and otherSet */
-  def Union(otherSet: Set): Set = js.native
+  def Union(otherSet: Set): Set
   
   /** Adds all items from otherSet to this set, and returns this set */
-  def UnionWith(otherSet: Set): Set = js.native
+  def UnionWith(otherSet: Set): Set
 }
 object Set {
   
   @scala.inline
   def apply(
     Add: js.Any => js.Any,
-    AddArray: js.Array[_] => Set,
+    AddArray: js.Array[js.Any] => Set,
     Clear: () => Set,
     Clone: () => Set,
     Contains: js.Any => Boolean,
@@ -71,7 +69,7 @@ object Set {
     IsEmpty: () => Boolean,
     Remove: js.Any => js.Any,
     SymmetricDifference: Set => Set,
-    ToArray: () => js.Array[_],
+    ToArray: () => js.Array[js.Any],
     Union: Set => Set,
     UnionWith: Set => Set
   ): Set = {
@@ -86,7 +84,7 @@ object Set {
     def setAdd(value: js.Any => js.Any): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddArray(value: js.Array[_] => Set): Self = StObject.set(x, "AddArray", js.Any.fromFunction1(value))
+    def setAddArray(value: js.Array[js.Any] => Set): Self = StObject.set(x, "AddArray", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClear(value: () => Set): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
@@ -119,7 +117,7 @@ object Set {
     def setSymmetricDifference(value: Set => Set): Self = StObject.set(x, "SymmetricDifference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToArray(value: () => js.Array[_]): Self = StObject.set(x, "ToArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "ToArray", js.Any.fromFunction0(value))
     
     @scala.inline
     def setUnion(value: Set => Set): Self = StObject.set(x, "Union", js.Any.fromFunction1(value))

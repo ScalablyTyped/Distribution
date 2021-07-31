@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportGroupExportConfig extends StObject {
   
   /**
     * contains information about the S3 bucket where the run of a report is exported. see S3 Destination documented below.
     */
-  var s3Destination: js.UndefOr[ReportGroupExportConfigS3Destination] = js.native
+  var s3Destination: js.UndefOr[ReportGroupExportConfigS3Destination] = js.undefined
   
   /**
     * The export configuration type. Valid values are `S3` and `NO_EXPORT`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ReportGroupExportConfig {
   

@@ -2,30 +2,28 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a single file annotation request. A file may contain one or
   * more images, which individually have their own responses.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse extends StObject {
   
   /**
     * Information about the file for which this response is generated.
     */
-  var inputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p4beta1InputConfig] = js.native
+  var inputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p4beta1InputConfig] = js.undefined
   
   /**
     * Individual responses to images found within the file.
     */
-  var responses: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse]] = js.native
+  var responses: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1AnnotateImageResponse]] = js.undefined
   
   /**
     * This field gives the total number of pages in the file.
     */
-  var totalPages: js.UndefOr[Double] = js.native
+  var totalPages: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p4beta1AnnotateFileResponse {
   

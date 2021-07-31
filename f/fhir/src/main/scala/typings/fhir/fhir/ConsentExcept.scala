@@ -2,69 +2,69 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional rule -  addition or removal of permissions
   */
-@js.native
-trait ConsentExcept extends BackboneElement {
+trait ConsentExcept
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Actions controlled by this exception
     */
-  var action: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var action: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Who|what controlled by this exception (or group, by role)
     */
-  var actor: js.UndefOr[js.Array[ConsentExceptActor]] = js.native
+  var actor: js.UndefOr[js.Array[ConsentExceptActor]] = js.undefined
   
   /**
     * e.g. Resource Type, Profile, or CDA etc
     */
-  var `class`: js.UndefOr[js.Array[Coding]] = js.native
+  var `class`: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * e.g. LOINC or SNOMED CT code, etc in the content
     */
-  var code: js.UndefOr[js.Array[Coding]] = js.native
+  var code: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Data controlled by this exception
     */
-  var data: js.UndefOr[js.Array[ConsentExceptData]] = js.native
+  var data: js.UndefOr[js.Array[ConsentExceptData]] = js.undefined
   
   /**
     * Timeframe for data controlled by this exception
     */
-  var dataPeriod: js.UndefOr[Period] = js.native
+  var dataPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * Timeframe for this exception
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Context of activities covered by this exception
     */
-  var purpose: js.UndefOr[js.Array[Coding]] = js.native
+  var purpose: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Security Labels that define affected resources
     */
-  var securityLabel: js.UndefOr[js.Array[Coding]] = js.native
+  var securityLabel: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * deny | permit
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object ConsentExcept {
   

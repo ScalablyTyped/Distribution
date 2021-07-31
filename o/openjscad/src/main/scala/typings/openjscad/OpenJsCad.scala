@@ -4,7 +4,6 @@ import typings.std.Event
 import typings.three.mod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OpenJsCad {
@@ -19,18 +18,17 @@ object OpenJsCad {
     var prevLogTime: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait IViewerOptions extends StObject {
     
-    var bgColor: js.UndefOr[Double] = js.native
+    var bgColor: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[js.Array[Double]] = js.native
+    var color: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var drawFaces: js.UndefOr[Boolean] = js.native
+    var drawFaces: js.UndefOr[Boolean] = js.undefined
     
-    var drawLines: js.UndefOr[Boolean] = js.native
+    var drawLines: js.UndefOr[Boolean] = js.undefined
     
-    var noWebGL: js.UndefOr[Boolean] = js.native
+    var noWebGL: js.UndefOr[Boolean] = js.undefined
   }
   object IViewerOptions {
     
@@ -219,16 +217,17 @@ object OpenJsCad {
     var worker: js.Any = js.native
   }
   
-  @js.native
-  trait ProcessorOptions extends IViewerOptions {
+  trait ProcessorOptions
+    extends StObject
+       with IViewerOptions {
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var viewerheight: js.UndefOr[Double] = js.native
+    var viewerheight: js.UndefOr[Double] = js.undefined
     
-    var viewerheightratio: js.UndefOr[Double] = js.native
+    var viewerheightratio: js.UndefOr[Double] = js.undefined
     
-    var viewerwidth: js.UndefOr[Double] = js.native
+    var viewerwidth: js.UndefOr[Double] = js.undefined
   }
   object ProcessorOptions {
     
@@ -343,18 +342,17 @@ object OpenJsCad {
     * - noWebGL: force render without webGL
     * - verbose: show additional info (currently only time used for rendering)
     */
-  @js.native
   trait ViewerSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var heightDefault: String = js.native
+    var heightDefault: String
     
-    var heightratio: Double = js.native
+    var heightratio: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var widthDefault: String = js.native
+    var widthDefault: String
   }
   object ViewerSize {
     

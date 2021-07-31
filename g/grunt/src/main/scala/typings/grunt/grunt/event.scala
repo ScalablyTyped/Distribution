@@ -2,7 +2,6 @@ package typings.grunt.grunt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object event {
@@ -10,68 +9,67 @@ object event {
   /**
     * {@link https://github.com/hij1nx/EventEmitter2}
     */
-  @js.native
   trait EventModule extends StObject {
     
     /**
       * Adds a listener to the end of the listeners array for the specified event.
       */
-    def addListener(event: String, listener: js.Function): EventModule = js.native
+    def addListener(event: String, listener: js.Function): EventModule
     
     /**
       * Execute each of the listeners that may be listening for the specified event name
       * in order with the list of arguments.
       */
-    def emit(event: String, args: js.Any*): js.Any = js.native
+    def emit(event: String, args: js.Any*): js.Any
     
     /**
       * Returns an array of listeners for the specified event.
       * This array can be manipulated, e.g. to remove listeners.
       */
-    def listeners(event: String): js.Array[js.Function] = js.native
+    def listeners(event: String): js.Array[js.Function]
     
     /**
       * Returns an array of listeners that are listening for any event that is specified.
       * This array can be manipulated, e.g. to remove listeners.
       */
-    def listenersAny(): js.Array[js.Function] = js.native
+    def listenersAny(): js.Array[js.Function]
     
     /**
       * Adds a listener that will execute n times for the event before being removed.
       * The listener is invoked only the first time the event is fired, after which it is removed.
       */
-    def many(event: String, timesToListen: Double, listener: js.Function): EventModule = js.native
+    def many(event: String, timesToListen: Double, listener: js.Function): EventModule
     
-    def off(event: String, listener: js.Function): EventModule = js.native
+    def off(event: String, listener: js.Function): EventModule
     
     /**
       * Removes the listener that will be fired when any event is emitted.
       */
-    def offAny(listener: js.Function): EventModule = js.native
+    def offAny(listener: js.Function): EventModule
     
-    def on(event: String, listener: js.Function): EventModule = js.native
+    def on(event: String, listener: js.Function): EventModule
     
     /**
       * Adds a listener that will be fired when any event is emitted.
       */
-    def onAny(listener: js.Function): EventModule = js.native
+    def onAny(listener: js.Function): EventModule
     
     /**
       * Adds a one time listener for the event.
       * The listener is invoked only the first time the event is fired, after which it is removed.
       */
-    def once(event: String, listener: js.Function): EventModule = js.native
+    def once(event: String, listener: js.Function): EventModule
     
     /**
       * Removes all listeners, or those of the specified event.
       */
-    def removeAllListeners(event: String): EventModule = js.native
+    def removeAllListeners(event: String): EventModule
     
     /**
       * Remove a listener from the listener array for the specified event.
       * Caution: changes array indices in the listener array behind the listener.
       */
-    def removeListener(event: String, listener: js.Function): EventModule = js.native
+    def removeListener(event: String, listener: js.Function): EventModule
     
     /**
       * By default EventEmitters will print a warning if more than 10 listeners are added to it.
@@ -80,7 +78,7 @@ object event {
       *
       * Set to zero for unlimited.
       */
-    def setMaxListener(n: Double): Unit = js.native
+    def setMaxListener(n: Double): Unit
   }
   object EventModule {
     

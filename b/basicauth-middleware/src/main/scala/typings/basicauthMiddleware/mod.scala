@@ -6,29 +6,26 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(checkFnOrUsers: js.Array[js.Tuple2[String, String]]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(checkFnOrUsers.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(checkFnOrUsers: js.Array[js.Tuple2[String, String]], realm: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(checkFnOrUsers.asInstanceOf[js.Any], realm.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(checkFnOrUsers: CheckFunction): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(checkFnOrUsers.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(checkFnOrUsers: CheckFunction, realm: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(checkFnOrUsers.asInstanceOf[js.Any], realm.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(username: String, password: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(username: String, password: String, realm: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], realm.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("basicauth-middleware", JSImport.Namespace)
   @js.native
-  def apply(checkFnOrUsers: js.Array[js.Tuple2[String, String]]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("basicauth-middleware", JSImport.Namespace)
-  @js.native
-  def apply(checkFnOrUsers: js.Array[js.Tuple2[String, String]], realm: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("basicauth-middleware", JSImport.Namespace)
-  @js.native
-  def apply(checkFnOrUsers: CheckFunction): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("basicauth-middleware", JSImport.Namespace)
-  @js.native
-  def apply(checkFnOrUsers: CheckFunction, realm: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("basicauth-middleware", JSImport.Namespace)
-  @js.native
-  def apply(username: String, password: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("basicauth-middleware", JSImport.Namespace)
-  @js.native
-  def apply(username: String, password: String, realm: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   type CheckFunction = checkFunctionSync | checkFunctionPromise | checkFunctionCallback
   

@@ -3,7 +3,6 @@ package typings.typeorm.typingsMod
 import typings.typeorm.platformToolsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -37,9 +36,9 @@ trait ClientSession extends EventEmitter {
     */
   def endSession(): Unit = js.native
   def endSession(callback: MongoCallback[Unit]): Unit = js.native
-  def endSession(options: js.UndefOr[scala.Nothing], callback: MongoCallback[Unit]): Unit = js.native
   def endSession(options: js.Any): Unit = js.native
   def endSession(options: js.Any, callback: MongoCallback[Unit]): Unit = js.native
+  def endSession(options: Unit, callback: MongoCallback[Unit]): Unit = js.native
   
   /**
     * Used to determine if this session equals another.

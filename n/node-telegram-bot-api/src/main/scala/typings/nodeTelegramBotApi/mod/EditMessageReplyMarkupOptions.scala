@@ -2,17 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditMessageReplyMarkupOptions extends StObject {
   
-  var chat_id: js.UndefOr[Double | String] = js.native
+  var chat_id: js.UndefOr[Double | String] = js.undefined
   
-  var inline_message_id: js.UndefOr[String] = js.native
+  var inline_message_id: js.UndefOr[String] = js.undefined
   
-  var message_id: js.UndefOr[Double] = js.native
+  var message_id: js.UndefOr[Double] = js.undefined
 }
 object EditMessageReplyMarkupOptions {
   

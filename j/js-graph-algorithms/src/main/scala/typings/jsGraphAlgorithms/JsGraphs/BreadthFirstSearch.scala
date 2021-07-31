@@ -2,23 +2,21 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreadthFirstSearch extends StObject {
   
-  var V: js.Any = js.native
+  var V: js.Any
   
-  var edgeTo: js.Any = js.native
+  var edgeTo: js.Any
   
-  def hasPathTo(v: Double): Boolean = js.native
+  def hasPathTo(v: Double): Boolean
   
-  var marked: js.Any = js.native
+  var marked: js.Any
   
-  def pathTo(v: Double): js.Array[Double] = js.native
+  def pathTo(v: Double): js.Array[Double]
   
-  var s: js.Any = js.native
+  var s: js.Any
 }
 object BreadthFirstSearch {
   

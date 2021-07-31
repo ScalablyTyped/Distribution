@@ -2,24 +2,22 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An entry in a URL crawl errors time series.
   */
-@js.native
 trait SchemaUrlCrawlErrorCount extends StObject {
   
   /**
     * The error count at the given timestamp.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the crawl attempt took place, in RFC 3339 format.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlCrawlErrorCount {
   

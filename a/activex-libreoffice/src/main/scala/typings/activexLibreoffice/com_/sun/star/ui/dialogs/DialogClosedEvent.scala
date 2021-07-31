@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The broadcaster who sends such event, must send the dialog as the source.
   * @see com.sun.star.lang.EventObject
   */
-@js.native
-trait DialogClosedEvent extends EventObject {
+trait DialogClosedEvent
+  extends StObject
+     with EventObject {
   
   /**
     * @param DialogResult Identifies the result of a dialog.
     * @see ExecutableDialogResults
     */
-  var DialogResult: Double = js.native
+  var DialogResult: Double
 }
 object DialogClosedEvent {
   

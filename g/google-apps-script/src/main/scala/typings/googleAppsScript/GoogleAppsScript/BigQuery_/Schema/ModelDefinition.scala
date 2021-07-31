@@ -2,15 +2,13 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelDefinition extends StObject {
   
-  var modelOptions: js.UndefOr[ModelDefinitionModelOptions] = js.native
+  var modelOptions: js.UndefOr[ModelDefinitionModelOptions] = js.undefined
   
-  var trainingRuns: js.UndefOr[js.Array[BqmlTrainingRun]] = js.native
+  var trainingRuns: js.UndefOr[js.Array[BqmlTrainingRun]] = js.undefined
 }
 object ModelDefinition {
   

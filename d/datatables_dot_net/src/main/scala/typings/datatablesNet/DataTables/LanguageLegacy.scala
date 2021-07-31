@@ -2,39 +2,37 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageLegacy extends StObject {
   
-  var oAria: js.UndefOr[LanguageAriaLegacy] = js.native
+  var oAria: js.UndefOr[LanguageAriaLegacy] = js.undefined
   
-  var oPaginate: js.UndefOr[LanguagePaginateLegacy] = js.native
+  var oPaginate: js.UndefOr[LanguagePaginateLegacy] = js.undefined
   
-  var sEmptyTable: js.UndefOr[String] = js.native
+  var sEmptyTable: js.UndefOr[String] = js.undefined
   
-  var sInfo: js.UndefOr[String] = js.native
+  var sInfo: js.UndefOr[String] = js.undefined
   
-  var sInfoEmpty: js.UndefOr[String] = js.native
+  var sInfoEmpty: js.UndefOr[String] = js.undefined
   
-  var sInfoFiltered: js.UndefOr[String] = js.native
+  var sInfoFiltered: js.UndefOr[String] = js.undefined
   
-  var sInfoPostFix: js.UndefOr[String] = js.native
+  var sInfoPostFix: js.UndefOr[String] = js.undefined
   
-  var sInfoThousands: js.UndefOr[String] = js.native
+  var sInfoThousands: js.UndefOr[String] = js.undefined
   
-  var sLengthMenu: js.UndefOr[String] = js.native
+  var sLengthMenu: js.UndefOr[String] = js.undefined
   
-  var sLoadingRecords: js.UndefOr[String] = js.native
+  var sLoadingRecords: js.UndefOr[String] = js.undefined
   
-  var sProcessing: js.UndefOr[String] = js.native
+  var sProcessing: js.UndefOr[String] = js.undefined
   
-  var sSearch: js.UndefOr[String] = js.native
+  var sSearch: js.UndefOr[String] = js.undefined
   
-  var sUrl: js.UndefOr[String] = js.native
+  var sUrl: js.UndefOr[String] = js.undefined
   
-  var sZeroRecords: js.UndefOr[String] = js.native
+  var sZeroRecords: js.UndefOr[String] = js.undefined
 }
 object LanguageLegacy {
   

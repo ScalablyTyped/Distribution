@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTaskExecutionsResponse extends StObject {
   
   /**
     * An opaque string that indicates the position at which to begin returning the next list of executed tasks.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
   
   /**
     * A list of executed tasks.
     */
-  var TaskExecutions: js.UndefOr[TaskExecutionList] = js.native
+  var TaskExecutions: js.UndefOr[TaskExecutionList] = js.undefined
 }
 object ListTaskExecutionsResponse {
   

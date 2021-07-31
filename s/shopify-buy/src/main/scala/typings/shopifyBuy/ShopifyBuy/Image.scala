@@ -2,25 +2,25 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Image extends GraphModel {
+trait Image
+  extends StObject
+     with GraphModel {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var id: String | Double = js.native
+  var id: String | Double
   
-  var position: Double = js.native
+  var position: Double
   
-  var product_id: String = js.native
+  var product_id: String
   
-  var src: String = js.native
+  var src: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var variant_ids: js.Array[String] = js.native
+  var variant_ids: js.Array[String]
 }
 object Image {
   

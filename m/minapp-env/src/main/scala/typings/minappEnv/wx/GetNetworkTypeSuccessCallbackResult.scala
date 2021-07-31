@@ -8,10 +8,8 @@ import typings.minappEnv.minappEnvStrings.unknown
 import typings.minappEnv.minappEnvStrings.wifi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkTypeSuccessCallbackResult extends StObject {
   
   /** 网络类型
@@ -23,7 +21,7 @@ trait GetNetworkTypeSuccessCallbackResult extends StObject {
     * - '4g': 4g 网络;
     * - 'unknown': Android 下不常见的网络类型;
     * - 'none': 无网络; */
-  var networkType: wifi | `2g` | `3g` | `4g` | unknown | none = js.native
+  var networkType: wifi | `2g` | `3g` | `4g` | unknown | none
 }
 object GetNetworkTypeSuccessCallbackResult {
   

@@ -4,7 +4,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,11 +36,13 @@ object mod {
   
   object create {
     
+    @scala.inline
+    def apply(container: Null, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+    @scala.inline
+    def apply(container: HTMLElement, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+    
     @JSImport("drag-timetable", "create")
     @js.native
-    def apply(container: Null, options: js.Any): TimetableInstance = js.native
-    @JSImport("drag-timetable", "create")
-    @js.native
-    def apply(container: HTMLElement, options: js.Any): TimetableInstance = js.native
+    val ^ : js.Any = js.native
   }
 }

@@ -3,21 +3,21 @@ package typings.antdMobile
 import typings.antdMobile.datePickerPropsTypeMod.DatePickerPropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerViewPropsTypeMod {
   
-  @js.native
-  trait DatePickerProps extends DatePickerPropsType {
+  trait DatePickerProps
+    extends StObject
+       with DatePickerPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function3[/* newValue */ js.Any, /* vals */ js.Any, /* index */ Double, Unit]] = js.native
+    var onScrollChange: js.UndefOr[js.Function3[/* newValue */ js.Any, /* vals */ js.Any, /* index */ Double, Unit]] = js.undefined
     
-    var pickerPrefixCls: js.UndefOr[String] = js.native
+    var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object DatePickerProps {
     

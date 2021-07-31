@@ -12,7 +12,7 @@ a node framework base koa@2 that can use full es2016, es2017 syntax anywhere
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 777 |
+| # downloads        | 1155 |
 | # stars            | 0 |
 
 ## Links

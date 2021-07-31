@@ -4,33 +4,42 @@ import typings.jsrsasign.jsrsasign.EncryptionAlgorithms
 import typings.jsrsasign.jsrsasign.PrivateKeyOutputFormatType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsrsasignStrings {
   
   @js.native
-  sealed trait `AES-128-CBC` extends EncryptionAlgorithms
+  sealed trait `AES-128-CBC`
+    extends StObject
+       with EncryptionAlgorithms
   @scala.inline
   def `AES-128-CBC`: `AES-128-CBC` = "AES-128-CBC".asInstanceOf[`AES-128-CBC`]
   
   @js.native
-  sealed trait `AES-192-CBC` extends EncryptionAlgorithms
+  sealed trait `AES-192-CBC`
+    extends StObject
+       with EncryptionAlgorithms
   @scala.inline
   def `AES-192-CBC`: `AES-192-CBC` = "AES-192-CBC".asInstanceOf[`AES-192-CBC`]
   
   @js.native
-  sealed trait `AES-256-CBC` extends EncryptionAlgorithms
+  sealed trait `AES-256-CBC`
+    extends StObject
+       with EncryptionAlgorithms
   @scala.inline
   def `AES-256-CBC`: `AES-256-CBC` = "AES-256-CBC".asInstanceOf[`AES-256-CBC`]
   
   @js.native
-  sealed trait `DES-CBC` extends EncryptionAlgorithms
+  sealed trait `DES-CBC`
+    extends StObject
+       with EncryptionAlgorithms
   @scala.inline
   def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
   
   @js.native
-  sealed trait `DES-EDE3-CBC` extends EncryptionAlgorithms
+  sealed trait `DES-EDE3-CBC`
+    extends StObject
+       with EncryptionAlgorithms
   @scala.inline
   def `DES-EDE3-CBC`: `DES-EDE3-CBC` = "DES-EDE3-CBC".asInstanceOf[`DES-EDE3-CBC`]
   
@@ -40,17 +49,23 @@ object jsrsasignStrings {
   def EC: EC = "EC".asInstanceOf[EC]
   
   @js.native
-  sealed trait PKCS1PRV extends PrivateKeyOutputFormatType
+  sealed trait PKCS1PRV
+    extends StObject
+       with PrivateKeyOutputFormatType
   @scala.inline
   def PKCS1PRV: PKCS1PRV = "PKCS1PRV".asInstanceOf[PKCS1PRV]
   
   @js.native
-  sealed trait PKCS5PRV extends PrivateKeyOutputFormatType
+  sealed trait PKCS5PRV
+    extends StObject
+       with PrivateKeyOutputFormatType
   @scala.inline
   def PKCS5PRV: PKCS5PRV = "PKCS5PRV".asInstanceOf[PKCS5PRV]
   
   @js.native
-  sealed trait PKCS8PRV extends PrivateKeyOutputFormatType
+  sealed trait PKCS8PRV
+    extends StObject
+       with PrivateKeyOutputFormatType
   @scala.inline
   def PKCS8PRV: PKCS8PRV = "PKCS8PRV".asInstanceOf[PKCS8PRV]
   

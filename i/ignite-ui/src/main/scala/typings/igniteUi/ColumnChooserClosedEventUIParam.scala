@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnChooserClosedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the Column Chooser element. This is a jQuery object.
     */
-  var columnChooserElement: js.UndefOr[String] = js.native
+  var columnChooserElement: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the GridHiding widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnChooserClosedEventUIParam {
   

@@ -3,7 +3,6 @@ package typings.mqttPacket
 import typings.mqttPacket.mod.PacketCmd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mqttPacketStrings {
@@ -19,17 +18,23 @@ object mqttPacketStrings {
   def MQTT: MQTT = "MQTT".asInstanceOf[MQTT]
   
   @js.native
-  sealed trait connack extends PacketCmd
+  sealed trait connack
+    extends StObject
+       with PacketCmd
   @scala.inline
   def connack: connack = "connack".asInstanceOf[connack]
   
   @js.native
-  sealed trait connect extends PacketCmd
+  sealed trait connect
+    extends StObject
+       with PacketCmd
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait disconnect extends PacketCmd
+  sealed trait disconnect
+    extends StObject
+       with PacketCmd
   @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
@@ -44,57 +49,79 @@ object mqttPacketStrings {
   def packet: packet = "packet".asInstanceOf[packet]
   
   @js.native
-  sealed trait pingreq extends PacketCmd
+  sealed trait pingreq
+    extends StObject
+       with PacketCmd
   @scala.inline
   def pingreq: pingreq = "pingreq".asInstanceOf[pingreq]
   
   @js.native
-  sealed trait pingresp extends PacketCmd
+  sealed trait pingresp
+    extends StObject
+       with PacketCmd
   @scala.inline
   def pingresp: pingresp = "pingresp".asInstanceOf[pingresp]
   
   @js.native
-  sealed trait puback extends PacketCmd
+  sealed trait puback
+    extends StObject
+       with PacketCmd
   @scala.inline
   def puback: puback = "puback".asInstanceOf[puback]
   
   @js.native
-  sealed trait pubcomp extends PacketCmd
+  sealed trait pubcomp
+    extends StObject
+       with PacketCmd
   @scala.inline
   def pubcomp: pubcomp = "pubcomp".asInstanceOf[pubcomp]
   
   @js.native
-  sealed trait publish extends PacketCmd
+  sealed trait publish
+    extends StObject
+       with PacketCmd
   @scala.inline
   def publish: publish = "publish".asInstanceOf[publish]
   
   @js.native
-  sealed trait pubrec extends PacketCmd
+  sealed trait pubrec
+    extends StObject
+       with PacketCmd
   @scala.inline
   def pubrec: pubrec = "pubrec".asInstanceOf[pubrec]
   
   @js.native
-  sealed trait pubrel extends PacketCmd
+  sealed trait pubrel
+    extends StObject
+       with PacketCmd
   @scala.inline
   def pubrel: pubrel = "pubrel".asInstanceOf[pubrel]
   
   @js.native
-  sealed trait suback extends PacketCmd
+  sealed trait suback
+    extends StObject
+       with PacketCmd
   @scala.inline
   def suback: suback = "suback".asInstanceOf[suback]
   
   @js.native
-  sealed trait subscribe extends PacketCmd
+  sealed trait subscribe
+    extends StObject
+       with PacketCmd
   @scala.inline
   def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   
   @js.native
-  sealed trait unsuback extends PacketCmd
+  sealed trait unsuback
+    extends StObject
+       with PacketCmd
   @scala.inline
   def unsuback: unsuback = "unsuback".asInstanceOf[unsuback]
   
   @js.native
-  sealed trait unsubscribe extends PacketCmd
+  sealed trait unsubscribe
+    extends StObject
+       with PacketCmd
   @scala.inline
   def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
 }

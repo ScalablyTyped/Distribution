@@ -2,13 +2,11 @@ package typings.plugapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogObject extends StObject {
   
-  def log(): Unit = js.native
+  def log(): Unit
 }
 object LogObject {
   

@@ -4,15 +4,13 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncoderResult extends StObject {
   
-  var error: Error = js.native
+  var error: Error
   
-  var value: String | Buffer = js.native
+  var value: String | Buffer
 }
 object EncoderResult {
   

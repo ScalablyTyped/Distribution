@@ -2,61 +2,59 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSecurityProfileResponse extends StObject {
   
   /**
     *  Please use DescribeSecurityProfileResponse$additionalMetricsToRetainV2 instead.  A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
     */
-  var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.native
+  var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
   
   /**
     * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors, but it is also retained for any metric specified here.
     */
-  var additionalMetricsToRetainV2: js.UndefOr[AdditionalMetricsToRetainV2List] = js.native
+  var additionalMetricsToRetainV2: js.UndefOr[AdditionalMetricsToRetainV2List] = js.undefined
   
   /**
     * Where the alerts are sent. (Alerts are always sent to the console.)
     */
-  var alertTargets: js.UndefOr[AlertTargets] = js.native
+  var alertTargets: js.UndefOr[AlertTargets] = js.undefined
   
   /**
     * Specifies the behaviors that, when violated by a device (thing), cause an alert.
     */
-  var behaviors: js.UndefOr[Behaviors] = js.native
+  var behaviors: js.UndefOr[Behaviors] = js.undefined
   
   /**
     * The time the security profile was created.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time the security profile was last modified.
     */
-  var lastModifiedDate: js.UndefOr[Timestamp] = js.native
+  var lastModifiedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the security profile.
     */
-  var securityProfileArn: js.UndefOr[SecurityProfileArn] = js.native
+  var securityProfileArn: js.UndefOr[SecurityProfileArn] = js.undefined
   
   /**
     * A description of the security profile (associated with the security profile when it was created or updated).
     */
-  var securityProfileDescription: js.UndefOr[SecurityProfileDescription] = js.native
+  var securityProfileDescription: js.UndefOr[SecurityProfileDescription] = js.undefined
   
   /**
     * The name of the security profile.
     */
-  var securityProfileName: js.UndefOr[SecurityProfileName] = js.native
+  var securityProfileName: js.UndefOr[SecurityProfileName] = js.undefined
   
   /**
     * The version of the security profile. A new version is generated whenever the security profile is updated.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object DescribeSecurityProfileResponse {
   

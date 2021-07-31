@@ -3,15 +3,13 @@ package typings.arangodb
 import typings.arangodb.Foxx.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeJS {
   
-  @js.native
   trait Module extends StObject {
     
-    var context: Context = js.native
+    var context: Context
   }
   object Module {
     

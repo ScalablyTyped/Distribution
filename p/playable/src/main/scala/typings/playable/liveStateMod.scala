@@ -2,7 +2,6 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveStateMod {
@@ -12,17 +11,17 @@ object liveStateMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[LiveState with String] = js.native
+    def apply(value: String): js.UndefOr[LiveState & String] = js.native
     
-    /* "live-state/ended" */ val ENDED: typings.playable.liveStateMod.LiveState.ENDED with String = js.native
+    /* "live-state/ended" */ val ENDED: typings.playable.liveStateMod.LiveState.ENDED & String = js.native
     
-    /* "live-state/initial" */ val INITIAL: typings.playable.liveStateMod.LiveState.INITIAL with String = js.native
+    /* "live-state/initial" */ val INITIAL: typings.playable.liveStateMod.LiveState.INITIAL & String = js.native
     
-    /* "live-state/none" */ val NONE: typings.playable.liveStateMod.LiveState.NONE with String = js.native
+    /* "live-state/none" */ val NONE: typings.playable.liveStateMod.LiveState.NONE & String = js.native
     
-    /* "live-state/not-sync" */ val NOT_SYNC: typings.playable.liveStateMod.LiveState.NOT_SYNC with String = js.native
+    /* "live-state/not-sync" */ val NOT_SYNC: typings.playable.liveStateMod.LiveState.NOT_SYNC & String = js.native
     
-    /* "live-state/sync" */ val SYNC: typings.playable.liveStateMod.LiveState.SYNC with String = js.native
+    /* "live-state/sync" */ val SYNC: typings.playable.liveStateMod.LiveState.SYNC & String = js.native
   }
   
   @js.native
@@ -32,18 +31,28 @@ object liveStateMod {
   object LiveState extends StObject {
     
     @js.native
-    sealed trait ENDED extends LiveState
+    sealed trait ENDED
+      extends StObject
+         with LiveState
     
     @js.native
-    sealed trait INITIAL extends LiveState
+    sealed trait INITIAL
+      extends StObject
+         with LiveState
     
     @js.native
-    sealed trait NONE extends LiveState
+    sealed trait NONE
+      extends StObject
+         with LiveState
     
     @js.native
-    sealed trait NOT_SYNC extends LiveState
+    sealed trait NOT_SYNC
+      extends StObject
+         with LiveState
     
     @js.native
-    sealed trait SYNC extends LiveState
+    sealed trait SYNC
+      extends StObject
+         with LiveState
   }
 }

@@ -10,9 +10,9 @@ a simple collection of 2d collision/intersects functions, supporting points, cir
 | ------------------ | :-------------: |
 | Full name          | intersects |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 2 |
-| # downloads        | 276926 |
+| # releases         | 6 |
+| # dependents       | 3 |
+| # downloads        | 365287 |
 | # stars            | 0 |
 
 ## Links

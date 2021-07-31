@@ -6,10 +6,13 @@ import typings.timezonecomplete.datetimeMod.DateTime
 import typings.timezonecomplete.durationMod.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object periodMod {
+  
+  @JSImport("timezonecomplete/dist/lib/period", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("timezonecomplete/dist/lib/period", "Period")
   @js.native
@@ -270,14 +273,16 @@ object periodMod {
   object PeriodDst extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PeriodDst with Double] = js.native
+    def apply(value: Double): js.UndefOr[PeriodDst & Double] = js.native
     
     /**
       * End-of-enum marker
       */
     @js.native
-    sealed trait MAX extends PeriodDst
-    /* 2 */ val MAX: typings.timezonecomplete.periodMod.PeriodDst.MAX with Double = js.native
+    sealed trait MAX
+      extends StObject
+         with PeriodDst
+    /* 2 */ val MAX: typings.timezonecomplete.periodMod.PeriodDst.MAX & Double = js.native
     
     /**
       * Keep repeating in similar intervals measured in UTC,
@@ -288,8 +293,10 @@ object periodMod {
       * differences will still make the intervals different.
       */
     @js.native
-    sealed trait RegularIntervals extends PeriodDst
-    /* 0 */ val RegularIntervals: typings.timezonecomplete.periodMod.PeriodDst.RegularIntervals with Double = js.native
+    sealed trait RegularIntervals
+      extends StObject
+         with PeriodDst
+    /* 0 */ val RegularIntervals: typings.timezonecomplete.periodMod.PeriodDst.RegularIntervals & Double = js.native
     
     /**
       * Ensure that the time at which the intervals occur stay
@@ -302,29 +309,26 @@ object periodMod {
       * skipping an hour in UTC for a DST backward change.
       */
     @js.native
-    sealed trait RegularLocalTime extends PeriodDst
-    /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime with Double = js.native
+    sealed trait RegularLocalTime
+      extends StObject
+         with PeriodDst
+    /* 1 */ val RegularLocalTime: typings.timezonecomplete.periodMod.PeriodDst.RegularLocalTime & Double = js.native
   }
   
-  @JSImport("timezonecomplete/dist/lib/period", "isPeriod")
-  @js.native
-  def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = js.native
+  @scala.inline
+  def isPeriod(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeriod")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/period.Period */ Boolean]
   
-  @JSImport("timezonecomplete/dist/lib/period", "isValidPeriodJson")
-  @js.native
-  def isValidPeriodJson(json: PeriodJson): Boolean = js.native
+  @scala.inline
+  def isValidPeriodJson(json: PeriodJson): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPeriodJson")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("timezonecomplete/dist/lib/period", "periodDstToString")
-  @js.native
-  def periodDstToString(p: PeriodDst): String = js.native
+  @scala.inline
+  def periodDstToString(p: PeriodDst): String = ^.asInstanceOf[js.Dynamic].applyDynamic("periodDstToString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("timezonecomplete/dist/lib/period", "timestampOnWeekTimeGreaterThanOrEqualTo")
-  @js.native
-  def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): DateTime = js.native
+  @scala.inline
+  def timestampOnWeekTimeGreaterThanOrEqualTo(opts: WeekTimeOpts): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeGreaterThanOrEqualTo")(opts.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
-  @JSImport("timezonecomplete/dist/lib/period", "timestampOnWeekTimeLessThan")
-  @js.native
-  def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): DateTime = js.native
+  @scala.inline
+  def timestampOnWeekTimeLessThan(opts: WeekTimeOpts): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampOnWeekTimeLessThan")(opts.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   
   /* Rewritten from type alias, can be one of: 
     - typings.timezonecomplete.timezonecompleteStrings.regular
@@ -340,23 +344,22 @@ object periodMod {
     def regular: typings.timezonecomplete.timezonecompleteStrings.regular = "regular".asInstanceOf[typings.timezonecomplete.timezonecompleteStrings.regular]
   }
   
-  @js.native
   trait PeriodJson extends StObject {
     
     /**
       * Interval as a timezonecomplete duration string
       */
-    var duration: String = js.native
+    var duration: String
     
     /**
       * Daylight saving time handling
       */
-    var periodDst: PeriodDstJson = js.native
+    var periodDst: PeriodDstJson
     
     /**
       * Reference date as iso timestamp + time zone
       */
-    var reference: String = js.native
+    var reference: String
   }
   object PeriodJson {
     
@@ -380,38 +383,37 @@ object periodMod {
     }
   }
   
-  @js.native
   trait WeekTimeOpts extends StObject {
     
     /**
       * Desired time (hours 0-23)
       */
-    var hour: Double = js.native
+    var hour: Double
     
     /**
       * Desired time (milliseconds 0-999)
       */
-    var millisecond: js.UndefOr[Double] = js.native
+    var millisecond: js.UndefOr[Double] = js.undefined
     
     /**
       * Desired time (minutes 0-59)
       */
-    var minute: js.UndefOr[Double] = js.native
+    var minute: js.UndefOr[Double] = js.undefined
     
     /**
       * Timestamp to use as a basis
       */
-    var reference: DateTime = js.native
+    var reference: DateTime
     
     /**
       * Desired time (seconds 0-59)
       */
-    var second: js.UndefOr[Double] = js.native
+    var second: js.UndefOr[Double] = js.undefined
     
     /**
       * Desired day of week
       */
-    var weekday: WeekDay = js.native
+    var weekday: WeekDay
   }
   object WeekTimeOpts {
     

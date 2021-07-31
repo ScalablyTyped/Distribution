@@ -27,7 +27,6 @@ import typings.chrome.chrome.tabs.ZoomSettings
 import typings.chrome.chromeNumbers.`-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -54,17 +53,17 @@ trait Typeoftabs extends StObject {
   def detectLanguage(tabId: Double, callback: js.Function1[/* language */ String, Unit]): Unit = js.native
   
   def discard(): Unit = js.native
-  def discard(tabId: js.UndefOr[scala.Nothing], callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
   def discard(tabId: Double): Unit = js.native
   def discard(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
+  def discard(tabId: Unit, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
   
   def duplicate(tabId: Double): Unit = js.native
   def duplicate(tabId: Double, callback: js.Function1[/* tab */ js.UndefOr[Tab], Unit]): Unit = js.native
   
   def executeScript(details: InjectDetails): Unit = js.native
-  def executeScript(details: InjectDetails, callback: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
+  def executeScript(details: InjectDetails, callback: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = js.native
   def executeScript(tabId: Double, details: InjectDetails): Unit = js.native
-  def executeScript(tabId: Double, details: InjectDetails, callback: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
+  def executeScript(tabId: Double, details: InjectDetails, callback: js.Function1[/* result */ js.Array[js.Any], Unit]): Unit = js.native
   
   def get(tabId: Double, callback: js.Function1[/* tab */ Tab, Unit]): Unit = js.native
   
@@ -142,7 +141,7 @@ trait Typeoftabs extends StObject {
   def reload(reloadProperties: ReloadProperties): Unit = js.native
   def reload(reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = js.native
   def reload(tabId: Double): Unit = js.native
-  def reload(tabId: Double, reloadProperties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+  def reload(tabId: Double, reloadProperties: Unit, callback: js.Function0[Unit]): Unit = js.native
   def reload(tabId: Double, reloadProperties: ReloadProperties): Unit = js.native
   def reload(tabId: Double, reloadProperties: ReloadProperties, callback: js.Function0[Unit]): Unit = js.native
   

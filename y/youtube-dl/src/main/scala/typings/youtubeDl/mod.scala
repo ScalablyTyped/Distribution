@@ -8,99 +8,89 @@ import typings.youtubeDl.youtubeDlStrings.info
 import typings.youtubeDl.youtubeDlStrings.next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(url: String, arg: js.Array[String], opt: StringDictionary[String]): Youtubedl = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Youtubedl]
+  
   @JSImport("youtube-dl", JSImport.Namespace)
   @js.native
-  def apply(url: String, arg: js.Array[String], opt: StringDictionary[String]): Youtubedl = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Call `youtube-dl` with whatever arguments you like.
     */
-  @JSImport("youtube-dl", "exec")
-  @js.native
+  @scala.inline
   def exec(
     url: String,
     args: js.Array[String],
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("youtube-dl", "getExtractors")
-  @js.native
-  def getExtractors(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("youtube-dl", "getExtractors")
-  @js.native
+  @scala.inline
+  def getExtractors(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def getExtractors(
     descriptions: Boolean,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
-  ): Unit = js.native
-  @JSImport("youtube-dl", "getExtractors")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getExtractors(
     descriptions: Boolean,
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("youtube-dl", "getInfo")
-  @js.native
+  @scala.inline
   def getInfo(
     url: String,
     args: js.Array[String],
     callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]
-  ): Unit = js.native
-  @JSImport("youtube-dl", "getInfo")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getInfo(
     url: String,
     args: js.Array[String],
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]
-  ): Unit = js.native
-  @JSImport("youtube-dl", "getInfo")
-  @js.native
-  def getInfo(url: String, callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def getInfo(url: String, callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("youtube-dl", "getSubs")
-  @js.native
-  def getSubs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("youtube-dl", "getSubs")
-  @js.native
+  @scala.inline
+  def getSubs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getSubs(
     url: String,
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("youtube-dl", "getThumbs")
-  @js.native
-  def getThumbs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("youtube-dl", "getThumbs")
-  @js.native
+  @scala.inline
+  def getThumbs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getThumbs(
     url: String,
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Info extends StObject {
     
-    var _duration_hms: String = js.native
+    var _duration_hms: String
     
-    var _duration_raw: Double = js.native
+    var _duration_raw: Double
     
-    var _filename: String = js.native
+    var _filename: String
     
-    var duration: String = js.native
+    var duration: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object Info {
     
@@ -140,16 +130,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGroupRule extends StObject {
   
   /** A DateTimeRule. */
-  var dateTimeRule: js.UndefOr[DateTimeRule] = js.native
+  var dateTimeRule: js.UndefOr[DateTimeRule] = js.undefined
   
   /** A HistogramRule. */
-  var histogramRule: js.UndefOr[HistogramRule] = js.native
+  var histogramRule: js.UndefOr[HistogramRule] = js.undefined
   
   /** A ManualRule. */
-  var manualRule: js.UndefOr[ManualRule] = js.native
+  var manualRule: js.UndefOr[ManualRule] = js.undefined
 }
 object PivotGroupRule {
   

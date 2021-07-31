@@ -2,36 +2,34 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateDataKeyPairResponse extends StObject {
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK that encrypted the private key.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * The type of data key pair that was generated.
     */
-  var KeyPairSpec: js.UndefOr[DataKeyPairSpec] = js.native
+  var KeyPairSpec: js.UndefOr[DataKeyPairSpec] = js.undefined
   
   /**
     * The encrypted copy of the private key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
-  var PrivateKeyCiphertextBlob: js.UndefOr[CiphertextType] = js.native
+  var PrivateKeyCiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
   /**
     * The plaintext copy of the private key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
-  var PrivateKeyPlaintext: js.UndefOr[PlaintextType] = js.native
+  var PrivateKeyPlaintext: js.UndefOr[PlaintextType] = js.undefined
   
   /**
     * The public key (in plaintext).
     */
-  var PublicKey: js.UndefOr[PublicKeyType] = js.native
+  var PublicKey: js.UndefOr[PublicKeyType] = js.undefined
 }
 object GenerateDataKeyPairResponse {
   

@@ -7,31 +7,31 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers printing functionality. */
-@js.native
-trait XPrintable extends XInterface {
+trait XPrintable
+  extends StObject
+     with XInterface {
   
   /**
     * @returns a descriptor of the current printer.  The attributes of the current printer are used for formatting.
     * @see PrinterDescriptor
     */
-  var Printer: SafeArray[PropertyValue] = js.native
+  var Printer: SafeArray[PropertyValue]
   
   /**
     * @returns a descriptor of the current printer.  The attributes of the current printer are used for formatting.
     * @see PrinterDescriptor
     */
-  def getPrinter(): SafeArray[PropertyValue] = js.native
+  def getPrinter(): SafeArray[PropertyValue]
   
   /**
     * prints the object.
     * @param xOptions specifies the number of copies and some other values which do not affect formatting.
     * @see PrintOptions
     */
-  def print(xOptions: SeqEquiv[PropertyValue]): Unit = js.native
+  def print(xOptions: SeqEquiv[PropertyValue]): Unit
   
   /**
     * assigns a new printer to the object.
@@ -39,7 +39,7 @@ trait XPrintable extends XInterface {
     * Setting a new printer will cause reformatting.
     * @see PrinterDescriptor
     */
-  def setPrinter(aPrinter: SeqEquiv[PropertyValue]): Unit = js.native
+  def setPrinter(aPrinter: SeqEquiv[PropertyValue]): Unit
 }
 object XPrintable {
   

@@ -2,19 +2,17 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsStartIncluded extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var isStartIncluded: js.UndefOr[Boolean] = js.native
+  var isStartIncluded: js.UndefOr[Boolean] = js.undefined
   
-  var isStopIncluded: js.UndefOr[Boolean] = js.native
+  var isStopIncluded: js.UndefOr[Boolean] = js.undefined
   
-  var iso8601: String = js.native
+  var iso8601: String
 }
 object IsStartIncluded {
   

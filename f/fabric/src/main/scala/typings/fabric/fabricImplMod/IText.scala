@@ -10,7 +10,6 @@ import typings.std.MouseEvent
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -300,7 +299,7 @@ class IText protected () extends Text {
     * @param {Number} quantity number Style object to insert, if given
     * @param {Array} copiedStyle array of style objecs
     */
-  def insertCharStyleObject(lineIndex: Double, charIndex: Double, quantity: Double, copiedStyle: js.Array[_]): Unit = js.native
+  def insertCharStyleObject(lineIndex: Double, charIndex: Double, quantity: Double, copiedStyle: js.Array[js.Any]): Unit = js.native
   
   /**
     * insert characters at start position, before start position.
@@ -314,7 +313,7 @@ class IText protected () extends Text {
     * @param {Number} start
     * @param {Number} end default to start + 1
     */
-  def insertChars(text: String, style: js.Array[_], start: Double, end: Double): Unit = js.native
+  def insertChars(text: String, style: js.Array[js.Any], start: Double, end: Double): Unit = js.native
   
   /**
     * Inserts style object(s)
@@ -322,8 +321,8 @@ class IText protected () extends Text {
     * @param {Number} start cursor index for inserting style
     * @param {Array} [copiedStyle] array of style objects to insert.
     */
-  def insertNewStyleBlock(insertedText: js.Array[_], start: Double): Unit = js.native
-  def insertNewStyleBlock(insertedText: js.Array[_], start: Double, copiedStyle: js.Array[_]): Unit = js.native
+  def insertNewStyleBlock(insertedText: js.Array[js.Any], start: Double): Unit = js.native
+  def insertNewStyleBlock(insertedText: js.Array[js.Any], start: Double, copiedStyle: js.Array[js.Any]): Unit = js.native
   
   /**
     * Inserts new style object
@@ -332,7 +331,7 @@ class IText protected () extends Text {
     * @param {Number} qty number of lines to add
     * @param {Array} copiedStyle Array of objects styles
     */
-  def insertNewlineStyleObject(lineIndex: Double, charIndex: Double, qty: Double, copiedStyle: js.Array[_]): Unit = js.native
+  def insertNewlineStyleObject(lineIndex: Double, charIndex: Double, qty: Double, copiedStyle: js.Array[js.Any]): Unit = js.native
   
   /**
     * Indicates whether text is in editing mode
@@ -579,6 +578,10 @@ class IText protected () extends Text {
 /* static members */
 object IText {
   
+  @JSImport("fabric/fabric-impl", "IText")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns fabric.IText instance from an object representation
     * @static
@@ -586,10 +589,8 @@ object IText {
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */
-  @JSImport("fabric/fabric-impl", "IText.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): IText = js.native
-  @JSImport("fabric/fabric-impl", "IText.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any, callback: js.Function): IText = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[IText]
+  @scala.inline
+  def fromObject(`object`: js.Any, callback: js.Function): IText = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IText]
 }

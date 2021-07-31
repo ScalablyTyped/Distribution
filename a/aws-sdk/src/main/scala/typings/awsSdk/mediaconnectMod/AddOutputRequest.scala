@@ -2,71 +2,69 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOutputRequest extends StObject {
   
   /**
     * The range of IP addresses that should be allowed to initiate output requests to this flow. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
     */
-  var CidrAllowList: js.UndefOr[listOfString] = js.native
+  var CidrAllowList: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A description of the output. This description appears only on the AWS Elemental MediaConnect console and will not be seen by the end user.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The IP address from which video will be sent to output destinations.
     */
-  var Destination: js.UndefOr[string] = js.native
+  var Destination: js.UndefOr[string] = js.undefined
   
   /**
     * The type of key used for the encryption. If no keyType is provided, the service will use the default setting (static-key).
     */
-  var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.native
+  var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.undefined
   
   /**
     * The maximum latency in milliseconds for Zixi-based streams.
     */
-  var MaxLatency: js.UndefOr[integer] = js.native
+  var MaxLatency: js.UndefOr[integer] = js.undefined
   
   /**
     * The name of the output. This value must be unique within the current flow.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The port to use when content is distributed to this output.
     */
-  var Port: js.UndefOr[integer] = js.native
+  var Port: js.UndefOr[integer] = js.undefined
   
   /**
     * The protocol to use for the output.
     */
-  var Protocol: typings.awsSdk.mediaconnectMod.Protocol = js.native
+  var Protocol: typings.awsSdk.mediaconnectMod.Protocol
   
   /**
     * The remote ID for the Zixi-pull output stream.
     */
-  var RemoteId: js.UndefOr[string] = js.native
+  var RemoteId: js.UndefOr[string] = js.undefined
   
   /**
     * The smoothing latency in milliseconds for RIST, RTP, and RTP-FEC streams.
     */
-  var SmoothingLatency: js.UndefOr[integer] = js.native
+  var SmoothingLatency: js.UndefOr[integer] = js.undefined
   
   /**
     * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
     */
-  var StreamId: js.UndefOr[string] = js.native
+  var StreamId: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the VPC interface attachment to use for this output.
     */
-  var VpcInterfaceAttachment: js.UndefOr[typings.awsSdk.mediaconnectMod.VpcInterfaceAttachment] = js.native
+  var VpcInterfaceAttachment: js.UndefOr[typings.awsSdk.mediaconnectMod.VpcInterfaceAttachment] = js.undefined
 }
 object AddOutputRequest {
   

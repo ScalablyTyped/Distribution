@@ -3,15 +3,13 @@ package typings.domelementtype
 import typings.domelementtype.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: ElementType = js.native
+    var `type`: ElementType
   }
   object Type {
     

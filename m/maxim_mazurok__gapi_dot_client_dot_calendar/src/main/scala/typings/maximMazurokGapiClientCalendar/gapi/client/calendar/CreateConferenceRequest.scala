@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConferenceRequest extends StObject {
   
   /** The conference solution, such as Hangouts or Google Meet. */
-  var conferenceSolutionKey: js.UndefOr[ConferenceSolutionKey] = js.native
+  var conferenceSolutionKey: js.UndefOr[ConferenceSolutionKey] = js.undefined
   
   /**
     * The client-generated unique ID for this request.
     * Clients should regenerate this ID for every new request. If an ID provided is the same as for the previous request, the request is ignored.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /** The status of the conference create request. */
-  var status: js.UndefOr[ConferenceRequestStatus] = js.native
+  var status: js.UndefOr[ConferenceRequestStatus] = js.undefined
 }
 object CreateConferenceRequest {
   

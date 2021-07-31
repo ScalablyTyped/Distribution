@@ -2,19 +2,17 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGrid extends StObject {
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var lineDash: Boolean = js.native
+  var lineDash: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IGrid {
   

@@ -3,15 +3,13 @@ package typings.mongodb.anon
 import typings.mongodb.mod.ClientSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullSession extends StObject {
   
-  var full: Boolean = js.native
+  var full: Boolean
   
-  var session: ClientSession = js.native
+  var session: ClientSession
 }
 object FullSession {
   

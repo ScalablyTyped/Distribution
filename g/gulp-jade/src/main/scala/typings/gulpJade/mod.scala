@@ -2,31 +2,31 @@ package typings.gulpJade
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-jade", JSImport.Namespace)
-  @js.native
-  def apply(): js.Any = js.native
-  @JSImport("gulp-jade", JSImport.Namespace)
-  @js.native
-  def apply(params: Params): js.Any = js.native
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(params: Params): js.Any = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
+  @JSImport("gulp-jade", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Params extends StObject {
     
     /**
       * If set to true, compiled functions are cached. filename
       * must be set as the cache key.
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Compile to JS instead of HTML.
       */
-    var client: js.UndefOr[Boolean] = js.native
+    var client: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, the function source will be included in the
@@ -34,19 +34,19 @@ object mod {
       * in development). It is enabled by default unless used with
       * express in production mode.
       */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Data to be used while parsing jade files. Has lower
       * precedence than locals.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If set to true, the tokens and function body is logged
       * to stdout
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /*******
       * JADE API OPTIONS
@@ -57,7 +57,7 @@ object mod {
       * useful to get self-closing tags and remove mirroring
       * of boolean attributes.
       */
-    var doctype: js.UndefOr[String] = js.native
+    var doctype: js.UndefOr[String] = js.undefined
     
     /*******
       * GULP-JADE OPTIONS
@@ -66,13 +66,13 @@ object mod {
       * Used to set a version of jade other than this library's
       * dependency, or to customise filters.
       */
-    var jade: js.UndefOr[js.Any] = js.native
+    var jade: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Locals to be used while parsing jade files. Takes
       * precedence over data.
       */
-    var locals: js.UndefOr[js.Any] = js.native
+    var locals: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Adds whitespace to the resulting html to make it
@@ -80,12 +80,12 @@ object mod {
       * If a string is specified, that will be used as
       * indentation instead (e.g. '\t').
       */
-    var pretty: js.UndefOr[Boolean | String] = js.native
+    var pretty: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Use a self namespace to hold the locals (false by default)
       */
-    var self: js.UndefOr[Boolean] = js.native
+    var self: js.UndefOr[Boolean] = js.undefined
   }
   object Params {
     

@@ -2,15 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableValue extends StObject {
   
-  var isSecret: Boolean = js.native
+  var isSecret: Boolean
   
-  var value: String = js.native
+  var value: String
 }
 object VariableValue {
   

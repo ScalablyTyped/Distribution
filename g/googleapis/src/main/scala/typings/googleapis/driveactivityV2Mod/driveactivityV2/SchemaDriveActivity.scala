@@ -2,7 +2,6 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,42 +12,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * item or moving multiple files into a new folder, are controlled by the
   * selection of a ConsolidationStrategy in the QueryDriveActivityRequest.
   */
-@js.native
 trait SchemaDriveActivity extends StObject {
   
   /**
     * Details on all actions in this activity.
     */
-  var actions: js.UndefOr[js.Array[SchemaAction]] = js.native
+  var actions: js.UndefOr[js.Array[SchemaAction]] = js.undefined
   
   /**
     * All actor(s) responsible for the activity.
     */
-  var actors: js.UndefOr[js.Array[SchemaActor]] = js.native
+  var actors: js.UndefOr[js.Array[SchemaActor]] = js.undefined
   
   /**
     * Key information about the primary action for this activity. This is
     * either representative, or the most important, of all actions in the
     * activity, according to the ConsolidationStrategy in the request.
     */
-  var primaryActionDetail: js.UndefOr[SchemaActionDetail] = js.native
+  var primaryActionDetail: js.UndefOr[SchemaActionDetail] = js.undefined
   
   /**
     * All Drive objects this activity is about (e.g. file, folder, Team Drive).
     * This represents the state of the target immediately after the actions
     * occurred.
     */
-  var targets: js.UndefOr[js.Array[SchemaTarget]] = js.native
+  var targets: js.UndefOr[js.Array[SchemaTarget]] = js.undefined
   
   /**
     * The activity occurred over this time range.
     */
-  var timeRange: js.UndefOr[SchemaTimeRange] = js.native
+  var timeRange: js.UndefOr[SchemaTimeRange] = js.undefined
   
   /**
     * The activity occurred at this specific time.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaDriveActivity {
   

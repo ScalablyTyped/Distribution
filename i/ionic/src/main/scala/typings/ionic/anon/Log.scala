@@ -3,13 +3,11 @@ package typings.ionic.anon
 import typings.ionic.definitionsMod.ILogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
-  var log: ILogger = js.native
+  var log: ILogger
 }
 object Log {
   

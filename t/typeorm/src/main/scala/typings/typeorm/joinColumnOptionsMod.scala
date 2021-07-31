@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joinColumnOptionsMod {
   
-  @js.native
   trait JoinColumnOptions extends StObject {
     
     /**
       * Name of the column.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the column in the entity to which this column is referenced.
       */
-    var referencedColumnName: js.UndefOr[String] = js.native
+    var referencedColumnName: js.UndefOr[String] = js.undefined
   }
   object JoinColumnOptions {
     

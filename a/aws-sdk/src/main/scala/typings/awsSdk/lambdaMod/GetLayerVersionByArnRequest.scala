@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLayerVersionByArnRequest extends StObject {
   
   /**
     * The ARN of the layer version.
     */
-  var Arn: LayerVersionArn = js.native
+  var Arn: LayerVersionArn
 }
 object GetLayerVersionByArnRequest {
   

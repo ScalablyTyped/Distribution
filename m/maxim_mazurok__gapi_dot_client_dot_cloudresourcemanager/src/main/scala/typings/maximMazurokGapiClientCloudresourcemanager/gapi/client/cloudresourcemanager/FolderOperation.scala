@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudresourcemanager.gapi.client.cloudreso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderOperation extends StObject {
   
   /** The resource name of the folder or organization we are either creating the folder under or moving the folder to. */
-  var destinationParent: js.UndefOr[String] = js.native
+  var destinationParent: js.UndefOr[String] = js.undefined
   
   /** The display name of the folder. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The type of this operation. */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /** The resource name of the folder's parent. Only applicable when the operation_type is MOVE. */
-  var sourceParent: js.UndefOr[String] = js.native
+  var sourceParent: js.UndefOr[String] = js.undefined
 }
 object FolderOperation {
   

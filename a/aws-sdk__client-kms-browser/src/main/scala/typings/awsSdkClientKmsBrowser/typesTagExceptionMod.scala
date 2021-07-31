@@ -5,25 +5,24 @@ import typings.awsSdkClientKmsBrowser.tagResourceExceptionsUnionMod.TagResourceE
 import typings.awsSdkClientKmsBrowser.untagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTagExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TagExceptionDetails> * / any */ @js.native
-  trait TagException
-    extends CreateKeyExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TagExceptionDetails> * / any */ trait TagException
+    extends StObject
+       with CreateKeyExceptionsUnion
        with TagResourceExceptionsUnion
        with UntagResourceExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException
   }
   object TagException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.TagException): TagException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TagException = {
+      val __obj = js.Dynamic.literal(name = "TagException")
       __obj.asInstanceOf[TagException]
     }
     
@@ -35,13 +34,12 @@ object typesTagExceptionMod {
     }
   }
   
-  @js.native
   trait TagExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object TagExceptionDetails {
     

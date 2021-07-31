@@ -8,7 +8,6 @@ import typings.activexExcel.activexExcelNumbers.`5`
 import typings.activexExcel.activexExcelNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,53 +21,19 @@ trait Validation extends StObject {
     Formula1: js.UndefOr[String],
     Formula2: js.UndefOr[String]
   ): Unit = js.native
-  def Add(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: js.UndefOr[scala.Nothing],
-    Formula1: String
-  ): Unit = js.native
-  def Add(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: XlFormatConditionOperator
-  ): Unit = js.native
-  def Add(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: XlFormatConditionOperator,
-    Formula1: String
-  ): Unit = js.native
-  def Add(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle): Unit = js.native
-  def Add(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: XlDVAlertStyle,
-    Operator: js.UndefOr[scala.Nothing],
-    Formula1: String
-  ): Unit = js.native
-  def Add(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
-  def Add(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: XlDVAlertStyle,
-    Operator: XlFormatConditionOperator,
-    Formula1: String
-  ): Unit = js.native
+  def Add(Type: Unit, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
+  def Add(Type: Unit, AlertStyle: Unit, Operator: XlFormatConditionOperator): Unit = js.native
+  def Add(Type: Unit, AlertStyle: Unit, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
+  def Add(Type: Unit, AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Add(Type: Unit, AlertStyle: XlDVAlertStyle, Operator: Unit, Formula1: String): Unit = js.native
+  def Add(Type: Unit, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
+  def Add(Type: Unit, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   def Add(Type: XlDVType): Unit = js.native
-  def Add(
-    Type: XlDVType,
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: js.UndefOr[scala.Nothing],
-    Formula1: String
-  ): Unit = js.native
-  def Add(Type: XlDVType, AlertStyle: js.UndefOr[scala.Nothing], Operator: XlFormatConditionOperator): Unit = js.native
-  def Add(
-    Type: XlDVType,
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: XlFormatConditionOperator,
-    Formula1: String
-  ): Unit = js.native
+  def Add(Type: XlDVType, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
+  def Add(Type: XlDVType, AlertStyle: Unit, Operator: XlFormatConditionOperator): Unit = js.native
+  def Add(Type: XlDVType, AlertStyle: Unit, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle): Unit = js.native
-  def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: js.UndefOr[scala.Nothing], Formula1: String): Unit = js.native
+  def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: Unit, Formula1: String): Unit = js.native
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
   def Add(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   @JSName("Add")
@@ -111,53 +76,19 @@ trait Validation extends StObject {
     Formula1: js.UndefOr[String],
     Formula2: js.UndefOr[String]
   ): Unit = js.native
-  def Modify(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: js.UndefOr[scala.Nothing],
-    Formula1: String
-  ): Unit = js.native
-  def Modify(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: XlFormatConditionOperator
-  ): Unit = js.native
-  def Modify(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: XlFormatConditionOperator,
-    Formula1: String
-  ): Unit = js.native
-  def Modify(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle): Unit = js.native
-  def Modify(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: XlDVAlertStyle,
-    Operator: js.UndefOr[scala.Nothing],
-    Formula1: String
-  ): Unit = js.native
-  def Modify(Type: js.UndefOr[scala.Nothing], AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
-  def Modify(
-    Type: js.UndefOr[scala.Nothing],
-    AlertStyle: XlDVAlertStyle,
-    Operator: XlFormatConditionOperator,
-    Formula1: String
-  ): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: Unit, Operator: XlFormatConditionOperator): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: Unit, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: XlDVAlertStyle, Operator: Unit, Formula1: String): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
+  def Modify(Type: Unit, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   def Modify(Type: XlDVType): Unit = js.native
-  def Modify(
-    Type: XlDVType,
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: js.UndefOr[scala.Nothing],
-    Formula1: String
-  ): Unit = js.native
-  def Modify(Type: XlDVType, AlertStyle: js.UndefOr[scala.Nothing], Operator: XlFormatConditionOperator): Unit = js.native
-  def Modify(
-    Type: XlDVType,
-    AlertStyle: js.UndefOr[scala.Nothing],
-    Operator: XlFormatConditionOperator,
-    Formula1: String
-  ): Unit = js.native
+  def Modify(Type: XlDVType, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
+  def Modify(Type: XlDVType, AlertStyle: Unit, Operator: XlFormatConditionOperator): Unit = js.native
+  def Modify(Type: XlDVType, AlertStyle: Unit, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle): Unit = js.native
-  def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: js.UndefOr[scala.Nothing], Formula1: String): Unit = js.native
+  def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: Unit, Formula1: String): Unit = js.native
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator): Unit = js.native
   def Modify(Type: XlDVType, AlertStyle: XlDVAlertStyle, Operator: XlFormatConditionOperator, Formula1: String): Unit = js.native
   @JSName("Modify")

@@ -4,19 +4,19 @@ import typings.relayRuntime.relayRuntimeStrings.stale
 import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Status extends OperationAvailability {
+trait Status
+  extends StObject
+     with OperationAvailability {
   
-  var status: stale = js.native
+  var status: stale
 }
 object Status {
   
   @scala.inline
-  def apply(status: stale): Status = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+  def apply(): Status = {
+    val __obj = js.Dynamic.literal(status = "stale")
     __obj.asInstanceOf[Status]
   }
   

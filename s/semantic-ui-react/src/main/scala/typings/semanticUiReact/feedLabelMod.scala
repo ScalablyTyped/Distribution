@@ -13,7 +13,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.iconIconMod.IconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedLabelMod extends Shortcut {
@@ -22,9 +21,9 @@ object feedLabelMod extends Shortcut {
   @js.native
   val default: StatelessComponent[FeedLabelProps] = js.native
   
-  @js.native
   trait FeedLabelProps
-    extends StrictFeedLabelProps
+    extends StObject
+       with StrictFeedLabelProps
        with /* key */ StringDictionary[js.Any]
   object FeedLabelProps {
     
@@ -35,26 +34,25 @@ object feedLabelMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFeedLabelProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** An event can contain icon label. */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** An event can contain image label. */
-    var image: js.UndefOr[SemanticShorthandItem[HtmlImageProps]] = js.native
+    var image: js.UndefOr[SemanticShorthandItem[HtmlImageProps]] = js.undefined
   }
   object StrictFeedLabelProps {
     

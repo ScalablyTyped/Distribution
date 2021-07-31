@@ -3,28 +3,26 @@ package typings.inboxsdk.mod.Lists
 import typings.inboxsdk.inboxsdkStrings.LINK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadRowActionButtonDescriptor extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: LINK = js.native
+  var `type`: LINK
   
-  var url: String = js.native
+  var url: String
 }
 object ThreadRowActionButtonDescriptor {
   
   @scala.inline
-  def apply(title: String, `type`: LINK, url: String): ThreadRowActionButtonDescriptor = {
+  def apply(title: String, url: String): ThreadRowActionButtonDescriptor = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LINK")
     __obj.asInstanceOf[ThreadRowActionButtonDescriptor]
   }
   

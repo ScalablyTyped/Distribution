@@ -2,17 +2,15 @@ package typings.meteor.meteorMod.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** utils **/
 /** Pub/Sub **/
-@js.native
 trait SubscriptionHandle extends StObject {
   
-  def ready(): Boolean = js.native
+  def ready(): Boolean
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object SubscriptionHandle {
   

@@ -3,12 +3,10 @@ package typings.signalsJs
 import typings.signalsJs.islotMod.ISlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioncesignalMod {
   
-  @js.native
   trait IOnceSignal extends StObject {
     
     /**
@@ -20,34 +18,34 @@ object ioncesignalMod {
       * If value classes are not specified (e.g. via Signal constructor), dispatch() can be called without arguments.
       * @return a ISlot, which contains the Function passed as the parameter
       */
-    def addOnce(listener: js.Function): ISlot = js.native
+    def addOnce(listener: js.Function): ISlot
     
     /**
       * Dispatches an object to listeners.
       * @param    valueObjects    Any number of parameters to send to listeners. Will be type-checked against valueClasses.
       * @throws    ArgumentError    <code>ArgumentError</code>:    valueObjects are not compatible with valueClasses.
       */
-    def dispatch(valueObjects: js.Any*): Unit = js.native
+    def dispatch(valueObjects: js.Any*): Unit
     
     /** The current number of listeners for the signal. */
-    var numListeners: Double = js.native
+    var numListeners: Double
     
     /**
       * Unsubscribes a listener from the signal.
       * @param    listener
       * @return a ISlot, which contains the Function passed as the parameter
       */
-    def remove(listener: js.Function): ISlot = js.native
+    def remove(listener: js.Function): ISlot
     
     /**
       * Unsubscribes all listeners from the signal.
       */
-    def removeAll(): Unit = js.native
+    def removeAll(): Unit
     
     /**
       * An optional array of classes defining the types of parameters sent to listeners.
       */
-    var valueClasses: js.Array[_] = js.native
+    var valueClasses: js.Array[js.Any]
   }
   object IOnceSignal {
     
@@ -74,7 +72,7 @@ object ioncesignalMod {
       def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setValueClasses(value: js.Array[_]): Self = StObject.set(x, "valueClasses", value.asInstanceOf[js.Any])
+      def setValueClasses(value: js.Array[js.Any]): Self = StObject.set(x, "valueClasses", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueClassesVarargs(value: js.Any*): Self = StObject.set(x, "valueClasses", js.Array(value :_*))

@@ -3,7 +3,6 @@ package typings.knockout.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateSources {
@@ -16,7 +15,9 @@ object templateSources {
   
   @JSImport("knockout", "templateSources.domElement")
   @js.native
-  class domElement protected () extends TemplateSource {
+  class domElement protected ()
+    extends StObject
+       with TemplateSource {
     def this(element: Node) = this()
     
     @JSName("nodes")

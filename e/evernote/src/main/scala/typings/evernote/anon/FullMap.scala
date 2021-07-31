@@ -4,15 +4,13 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullMap extends StObject {
   
-  var fullMap: js.UndefOr[Map[String, String]] = js.native
+  var fullMap: js.UndefOr[Map[String, String]] = js.undefined
   
-  var keysOnly: js.UndefOr[Set[String]] = js.native
+  var keysOnly: js.UndefOr[Set[String]] = js.undefined
 }
 object FullMap {
   

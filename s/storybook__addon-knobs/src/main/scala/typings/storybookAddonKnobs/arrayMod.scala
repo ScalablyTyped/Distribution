@@ -11,7 +11,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayMod {
@@ -32,12 +31,10 @@ object arrayMod {
     @scala.inline
     def defaultProps_=(x: PartialArrayTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Array", "default.deserialize")
-    @js.native
-    def deserialize(value: js.Array[String]): js.Array[String] = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Array", "default.deserialize")
-    @js.native
-    def deserialize(value: Record[String, String]): js.Array[String] = js.native
+    @scala.inline
+    def deserialize(value: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def deserialize(value: Record[String, String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Array", "default.propTypes")
     @js.native
@@ -45,9 +42,8 @@ object arrayMod {
     @scala.inline
     def propTypes_=(x: Knob): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Array", "default.serialize")
-    @js.native
-    def serialize(value: ArrayTypeKnobValue): ArrayTypeKnobValue = js.native
+    @scala.inline
+    def serialize(value: ArrayTypeKnobValue): ArrayTypeKnobValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[ArrayTypeKnobValue]
   }
   
   @js.native
@@ -60,10 +56,11 @@ object arrayMod {
     def shouldComponentUpdate_MArrayType(nextProps: ReadonlyArrayTypeProps): Boolean = js.native
   }
   
-  @js.native
-  trait ArrayTypeKnob extends KnobControlConfig[ArrayTypeKnobValue] {
+  trait ArrayTypeKnob
+    extends StObject
+       with KnobControlConfig[ArrayTypeKnobValue] {
     
-    var separator: String = js.native
+    var separator: String
   }
   object ArrayTypeKnob {
     
@@ -83,11 +80,12 @@ object arrayMod {
   
   type ArrayTypeKnobValue = js.Array[String]
   
-  @js.native
-  trait ArrayTypeProps extends KnobControlProps[ArrayTypeKnobValue] {
+  trait ArrayTypeProps
+    extends StObject
+       with KnobControlProps[ArrayTypeKnobValue] {
     
     @JSName("knob")
-    var knob_ArrayTypeProps: ArrayTypeKnob = js.native
+    var knob_ArrayTypeProps: ArrayTypeKnob
   }
   object ArrayTypeProps {
     

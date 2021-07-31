@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWorkspaceSourceContext extends StObject {
   
   /** The ID of the snapshot. An empty snapshot_id refers to the most recent snapshot. */
-  var snapshotId: js.UndefOr[String] = js.native
+  var snapshotId: js.UndefOr[String] = js.undefined
   
   /** The ID of the workspace. */
-  var workspaceId: js.UndefOr[CloudWorkspaceId] = js.native
+  var workspaceId: js.UndefOr[CloudWorkspaceId] = js.undefined
 }
 object CloudWorkspaceSourceContext {
   

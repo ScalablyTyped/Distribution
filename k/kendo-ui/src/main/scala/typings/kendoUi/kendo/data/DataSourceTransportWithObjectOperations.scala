@@ -2,23 +2,23 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceTransportWithObjectOperations extends DataSourceTransport {
+trait DataSourceTransportWithObjectOperations
+  extends StObject
+     with DataSourceTransport {
   
   @JSName("create")
-  var create_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportCreate] = js.native
+  var create_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportCreate] = js.undefined
   
   @JSName("destroy")
-  var destroy_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportDestroy] = js.native
+  var destroy_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportDestroy] = js.undefined
   
   @JSName("read")
-  var read_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportRead] = js.native
+  var read_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportRead] = js.undefined
   
   @JSName("update")
-  var update_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportUpdate] = js.native
+  var update_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportUpdate] = js.undefined
 }
 object DataSourceTransportWithObjectOperations {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRobotApplicationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the robot application.
     */
-  var application: Arn = js.native
+  var application: Arn
   
   /**
     * The version of the robot application to describe.
     */
-  var applicationVersion: js.UndefOr[Version] = js.native
+  var applicationVersion: js.UndefOr[Version] = js.undefined
 }
 object DescribeRobotApplicationRequest {
   

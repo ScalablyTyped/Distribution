@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the SingleLevelIndicator class.
   */
-@js.native
-trait ASPxClientSingleLevelIndicator extends ASPxClientIndicator {
+trait ASPxClientSingleLevelIndicator
+  extends StObject
+     with ASPxClientIndicator {
   
   /**
     * Gets a value specifying the value level to which the single-level indicator corresponds.
     */
-  var valueLevel: String = js.native
+  var valueLevel: String
 }
 object ASPxClientSingleLevelIndicator {
   

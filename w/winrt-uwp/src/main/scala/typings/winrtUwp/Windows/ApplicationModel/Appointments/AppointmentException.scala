@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an appointment instance that is an exception from the master appointment. */
-@js.native
 trait AppointmentException extends StObject {
   
   /** Gets the appointment that is an exception from the master appointment. */
-  var appointment: Appointment = js.native
+  var appointment: Appointment
   
   /** Gets a list of the names of the appointment properties for which an exception was found. */
-  var exceptionProperties: IVectorView[String] = js.native
+  var exceptionProperties: IVectorView[String]
   
   /** Gets a value indicating whether the exception is that the appointment instance has been deleted. */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
 }
 object AppointmentException {
   

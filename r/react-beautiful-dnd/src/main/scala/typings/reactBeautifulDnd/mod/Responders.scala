@@ -2,22 +2,20 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Responders extends StObject {
   
-  var onBeforeCapture: js.UndefOr[OnBeforeCaptureResponder] = js.native
+  var onBeforeCapture: js.UndefOr[OnBeforeCaptureResponder] = js.undefined
   
-  var onBeforeDragStart: js.UndefOr[OnBeforeDragStartResponder] = js.native
+  var onBeforeDragStart: js.UndefOr[OnBeforeDragStartResponder] = js.undefined
   
   // always required
-  var onDragEnd: OnDragEndResponder = js.native
+  var onDragEnd: OnDragEndResponder
   
-  var onDragStart: js.UndefOr[OnDragStartResponder] = js.native
+  var onDragStart: js.UndefOr[OnDragStartResponder] = js.undefined
   
-  var onDragUpdate: js.UndefOr[OnDragUpdateResponder] = js.native
+  var onDragUpdate: js.UndefOr[OnDragUpdateResponder] = js.undefined
 }
 object Responders {
   

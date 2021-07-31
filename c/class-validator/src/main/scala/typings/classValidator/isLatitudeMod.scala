@@ -4,23 +4,23 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isLatitudeMod {
+  
+  @JSImport("class-validator/types/decorator/common/IsLatitude", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/common/IsLatitude", "IS_LATITUDE")
   @js.native
   val IS_LATITUDE: /* "isLatitude" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/common/IsLatitude", "IsLatitude")
-  @js.native
-  def IsLatitude_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/common/IsLatitude", "IsLatitude")
-  @js.native
-  def IsLatitude_(validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsLatitude_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatitude")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsLatitude_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsLatitude")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/common/IsLatitude", "isLatitude")
-  @js.native
-  def isLatitude(value: String): Boolean = js.native
+  @scala.inline
+  def isLatitude(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLatitude")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

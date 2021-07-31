@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.imagesMod.images.IImage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 6.6.0: introduced
   */
 @js.native
-trait IMicroflowActionInfo extends IElement {
+trait IMicroflowActionInfo
+  extends StObject
+     with IElement {
   
   val caption: String = js.native
   

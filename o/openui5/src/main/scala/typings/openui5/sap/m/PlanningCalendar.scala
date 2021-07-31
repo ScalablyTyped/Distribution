@@ -6,11 +6,12 @@ import typings.openui5.sap.ui.unified.CalendarLegend
 import typings.openui5.sap.ui.unified.DateTypeRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlanningCalendar extends Control {
+trait PlanningCalendar
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -274,7 +275,7 @@ trait PlanningCalendar extends Control {
     * <code>ariaLabelledBy</code>.
     * @since 1.40.0
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>height</code>.Height of the <code>PlanningCalendar</code>
@@ -484,7 +485,7 @@ trait PlanningCalendar extends Control {
     * @since 1.40.0
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls from the aggregation <code>rows</code>.Additionally, it unregisters them

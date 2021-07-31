@@ -14,7 +14,6 @@ import typings.vueI18n.vueI18nStrings.percent
 import typings.vueI18n.vueI18nStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,12 +23,12 @@ trait VueI18n extends StObject {
   
   def d(value: Double): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
-  def d(value: Double, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
+  def d(value: Double, key: Unit, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
-  def d(value: Date, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
+  def d(value: Date, key: Unit, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Date, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   
@@ -84,7 +83,7 @@ trait VueI18n extends StObject {
   
   def n(value: Double): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
-  def n(value: Double, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
+  def n(value: Double, key: Unit, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   def n(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
   
@@ -122,11 +121,7 @@ trait VueI18n extends StObject {
   def t(key: typings.vueI18n.mod.VueI18n.Path, values: typings.vueI18n.mod.VueI18n.Values): typings.vueI18n.mod.VueI18n.TranslateResult = js.native
   
   def tc(key: typings.vueI18n.mod.VueI18n.Path): String = js.native
-  def tc(
-    key: typings.vueI18n.mod.VueI18n.Path,
-    choice: js.UndefOr[scala.Nothing],
-    values: typings.vueI18n.mod.VueI18n.Values
-  ): String = js.native
+  def tc(key: typings.vueI18n.mod.VueI18n.Path, choice: Unit, values: typings.vueI18n.mod.VueI18n.Values): String = js.native
   def tc(key: typings.vueI18n.mod.VueI18n.Path, choice: typings.vueI18n.mod.VueI18n.Choice): String = js.native
   def tc(
     key: typings.vueI18n.mod.VueI18n.Path,
@@ -154,7 +149,7 @@ object VueI18n {
   
   type Choice = Double
   
-  type ComponentInstanceCreatedListener = js.Function2[/* newVm */ VueI18n with IVueI18n, /* rootVm */ VueI18n with IVueI18n, Unit]
+  type ComponentInstanceCreatedListener = js.Function2[/* newVm */ VueI18n & IVueI18n, /* rootVm */ VueI18n & IVueI18n, Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vueI18n.vueI18nStrings.symbol
@@ -174,31 +169,31 @@ object VueI18n {
     def symbol: typings.vueI18n.vueI18nStrings.symbol = "symbol".asInstanceOf[typings.vueI18n.vueI18nStrings.symbol]
   }
   
-  @js.native
   trait CurrencyNumberFormatOptions
-    extends typings.std.Intl.NumberFormatOptions
+    extends StObject
+       with typings.std.Intl.NumberFormatOptions
        with _NumberFormatOptions {
     
     // Obligatory if style is 'currency'
     @JSName("currencyDisplay")
-    var currencyDisplay_CurrencyNumberFormatOptions: js.UndefOr[CurrencyDisplay] = js.native
+    var currencyDisplay_CurrencyNumberFormatOptions: js.UndefOr[CurrencyDisplay] = js.undefined
     
     @JSName("currency")
-    var currency_CurrencyNumberFormatOptions: String = js.native
+    var currency_CurrencyNumberFormatOptions: String
     
-    var formatMatcher: js.UndefOr[FormatMatcher] = js.native
+    var formatMatcher: js.UndefOr[FormatMatcher] = js.undefined
     
     @JSName("localeMatcher")
-    var localeMatcher_CurrencyNumberFormatOptions: js.UndefOr[LocaleMatcher] = js.native
+    var localeMatcher_CurrencyNumberFormatOptions: js.UndefOr[LocaleMatcher] = js.undefined
     
     @JSName("style")
-    var style_CurrencyNumberFormatOptions: currency = js.native
+    var style_CurrencyNumberFormatOptions: currency
   }
   object CurrencyNumberFormatOptions {
     
     @scala.inline
-    def apply(currency: String, style: currency): CurrencyNumberFormatOptions = {
-      val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    def apply(currency: String): CurrencyNumberFormatOptions = {
+      val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], style = "currency")
       __obj.asInstanceOf[CurrencyNumberFormatOptions]
     }
     
@@ -287,12 +282,11 @@ object VueI18n {
     def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = "best-fit".asInstanceOf[typings.vueI18n.vueI18nStrings.`best-fit`]
   }
   
-  @js.native
   trait FormattedNumberPart extends StObject {
     
-    var `type`: FormattedNumberPartType = js.native
+    var `type`: FormattedNumberPartType
     
-    var value: String = js.native
+    var value: String
   }
   object FormattedNumberPart {
     
@@ -367,52 +361,52 @@ object VueI18n {
   @js.native
   trait Formatter extends StObject {
     
-    def interpolate(message: String, values: js.UndefOr[typings.vueI18n.mod.VueI18n.Values], path: String): js.Array[_] | Null = js.native
+    def interpolate(message: String, values: Unit, path: String): js.Array[js.Any] | Null = js.native
+    def interpolate(message: String, values: typings.vueI18n.mod.VueI18n.Values, path: String): js.Array[js.Any] | Null = js.native
   }
   
   // tslint:disable-next-line:interface-name
-  @js.native
   trait I18nOptions extends StObject {
     
-    var componentInstanceCreatedListener: js.UndefOr[ComponentInstanceCreatedListener] = js.native
+    var componentInstanceCreatedListener: js.UndefOr[ComponentInstanceCreatedListener] = js.undefined
     
-    var dateTimeFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.DateTimeFormats] = js.native
+    var dateTimeFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.DateTimeFormats] = js.undefined
     
-    var escapeParameterHtml: js.UndefOr[Boolean] = js.native
+    var escapeParameterHtml: js.UndefOr[Boolean] = js.undefined
     
-    var fallbackLocale: js.UndefOr[typings.vueI18n.mod.VueI18n.FallbackLocale] = js.native
+    var fallbackLocale: js.UndefOr[typings.vueI18n.mod.VueI18n.FallbackLocale] = js.undefined
     
-    var fallbackRoot: js.UndefOr[Boolean] = js.native
+    var fallbackRoot: js.UndefOr[Boolean] = js.undefined
     
-    var formatFallbackMessages: js.UndefOr[Boolean] = js.native
+    var formatFallbackMessages: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[typings.vueI18n.mod.VueI18n.Formatter] = js.native
+    var formatter: js.UndefOr[typings.vueI18n.mod.VueI18n.Formatter] = js.undefined
     
-    var locale: js.UndefOr[typings.vueI18n.mod.VueI18n.Locale] = js.native
+    var locale: js.UndefOr[typings.vueI18n.mod.VueI18n.Locale] = js.undefined
     
-    var messages: js.UndefOr[typings.vueI18n.mod.VueI18n.LocaleMessages] = js.native
+    var messages: js.UndefOr[typings.vueI18n.mod.VueI18n.LocaleMessages] = js.undefined
     
-    var missing: js.UndefOr[typings.vueI18n.mod.VueI18n.MissingHandler] = js.native
+    var missing: js.UndefOr[typings.vueI18n.mod.VueI18n.MissingHandler] = js.undefined
     
-    var modifiers: js.UndefOr[Modifiers] = js.native
+    var modifiers: js.UndefOr[Modifiers] = js.undefined
     
-    var numberFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.NumberFormats] = js.native
+    var numberFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.NumberFormats] = js.undefined
     
-    var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.native
+    var pluralizationRules: js.UndefOr[PluralizationRulesMap] = js.undefined
     
-    var postTranslation: js.UndefOr[typings.vueI18n.mod.VueI18n.PostTranslationHandler] = js.native
+    var postTranslation: js.UndefOr[typings.vueI18n.mod.VueI18n.PostTranslationHandler] = js.undefined
     
-    var preserveDirectiveContent: js.UndefOr[Boolean] = js.native
+    var preserveDirectiveContent: js.UndefOr[Boolean] = js.undefined
     
-    var sharedMessages: js.UndefOr[typings.vueI18n.mod.VueI18n.LocaleMessages] = js.native
+    var sharedMessages: js.UndefOr[typings.vueI18n.mod.VueI18n.LocaleMessages] = js.undefined
     
-    var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.native
+    var silentFallbackWarn: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var silentTranslationWarn: js.UndefOr[Boolean | RegExp] = js.native
+    var silentTranslationWarn: js.UndefOr[Boolean | RegExp] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
-    var warnHtmlInMessage: js.UndefOr[typings.vueI18n.mod.VueI18n.WarnHtmlInMessageLevel] = js.native
+    var warnHtmlInMessage: js.UndefOr[typings.vueI18n.mod.VueI18n.WarnHtmlInMessageLevel] = js.undefined
   }
   object I18nOptions {
     
@@ -426,7 +420,7 @@ object VueI18n {
     implicit class I18nOptionsMutableBuilder[Self <: typings.vueI18n.mod.VueI18n.I18nOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponentInstanceCreatedListener(value: (/* newVm */ VueI18n with IVueI18n, /* rootVm */ VueI18n with IVueI18n) => Unit): Self = StObject.set(x, "componentInstanceCreatedListener", js.Any.fromFunction2(value))
+      def setComponentInstanceCreatedListener(value: (/* newVm */ VueI18n & IVueI18n, /* rootVm */ VueI18n & IVueI18n) => Unit): Self = StObject.set(x, "componentInstanceCreatedListener", js.Any.fromFunction2(value))
       
       @scala.inline
       def setComponentInstanceCreatedListenerUndefined: Self = StObject.set(x, "componentInstanceCreatedListener", js.undefined)
@@ -552,12 +546,11 @@ object VueI18n {
     }
   }
   
-  @js.native
   trait IntlAvailability extends StObject {
     
-    var dateTimeFormat: Boolean = js.native
+    var dateTimeFormat: Boolean
     
-    var numberFormat: Boolean = js.native
+    var numberFormat: Boolean
   }
   object IntlAvailability {
     
@@ -602,9 +595,9 @@ object VueI18n {
   */
   type LocaleMessage = _LocaleMessage | String | typings.vueI18n.mod.VueI18n.MessageFunction
   
-  @js.native
   trait LocaleMessageArray
-    extends /* index */ NumberDictionary[typings.vueI18n.mod.VueI18n.LocaleMessage]
+    extends StObject
+       with /* index */ NumberDictionary[typings.vueI18n.mod.VueI18n.LocaleMessage]
        with _LocaleMessage
   object LocaleMessageArray {
     
@@ -615,9 +608,9 @@ object VueI18n {
     }
   }
   
-  @js.native
   trait LocaleMessageObject
-    extends /* key */ StringDictionary[typings.vueI18n.mod.VueI18n.LocaleMessage]
+    extends StObject
+       with /* key */ StringDictionary[typings.vueI18n.mod.VueI18n.LocaleMessage]
        with _LocaleMessage
   object LocaleMessageObject {
     
@@ -630,12 +623,11 @@ object VueI18n {
   
   type LocaleMessages = StringDictionary[typings.vueI18n.mod.VueI18n.LocaleMessageObject]
   
-  @js.native
   trait MessageContext extends StObject {
     
-    def list(index: Double): js.Any = js.native
+    def list(index: Double): js.Any
     
-    def named(key: String): js.Any = js.native
+    def named(key: String): js.Any
   }
   object MessageContext {
     
@@ -694,42 +686,42 @@ object VueI18n {
   
   type PostTranslationHandler = js.Function2[/* str */ String, /* key */ js.UndefOr[String], String]
   
-  @js.native
   trait SpecificDateTimeFormatOptions
-    extends typings.std.Intl.DateTimeFormatOptions {
+    extends StObject
+       with typings.std.Intl.DateTimeFormatOptions {
     
     @JSName("day")
-    var day_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.native
+    var day_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.undefined
     
     @JSName("era")
-    var era_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeHumanReadable] = js.native
+    var era_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeHumanReadable] = js.undefined
     
     @JSName("formatMatcher")
-    var formatMatcher_SpecificDateTimeFormatOptions: js.UndefOr[FormatMatcher] = js.native
+    var formatMatcher_SpecificDateTimeFormatOptions: js.UndefOr[FormatMatcher] = js.undefined
     
     @JSName("hour")
-    var hour_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.native
+    var hour_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.undefined
     
     @JSName("localeMatcher")
-    var localeMatcher_SpecificDateTimeFormatOptions: js.UndefOr[LocaleMatcher] = js.native
+    var localeMatcher_SpecificDateTimeFormatOptions: js.UndefOr[LocaleMatcher] = js.undefined
     
     @JSName("minute")
-    var minute_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.native
+    var minute_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.undefined
     
     @JSName("month")
-    var month_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital | DateTimeHumanReadable] = js.native
+    var month_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital | DateTimeHumanReadable] = js.undefined
     
     @JSName("second")
-    var second_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.native
+    var second_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.undefined
     
     @JSName("timeZoneName")
-    var timeZoneName_SpecificDateTimeFormatOptions: js.UndefOr[long | short] = js.native
+    var timeZoneName_SpecificDateTimeFormatOptions: js.UndefOr[long | short] = js.undefined
     
     @JSName("weekday")
-    var weekday_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeHumanReadable] = js.native
+    var weekday_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeHumanReadable] = js.undefined
     
     @JSName("year")
-    var year_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.native
+    var year_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.undefined
   }
   object SpecificDateTimeFormatOptions {
     
@@ -810,21 +802,21 @@ object VueI18n {
     }
   }
   
-  @js.native
   trait SpecificNumberFormatOptions
-    extends typings.std.Intl.NumberFormatOptions
+    extends StObject
+       with typings.std.Intl.NumberFormatOptions
        with _NumberFormatOptions {
     
     @JSName("currencyDisplay")
-    var currencyDisplay_SpecificNumberFormatOptions: js.UndefOr[CurrencyDisplay] = js.native
+    var currencyDisplay_SpecificNumberFormatOptions: js.UndefOr[CurrencyDisplay] = js.undefined
     
-    var formatMatcher: js.UndefOr[FormatMatcher] = js.native
+    var formatMatcher: js.UndefOr[FormatMatcher] = js.undefined
     
     @JSName("localeMatcher")
-    var localeMatcher_SpecificNumberFormatOptions: js.UndefOr[LocaleMatcher] = js.native
+    var localeMatcher_SpecificNumberFormatOptions: js.UndefOr[LocaleMatcher] = js.undefined
     
     @JSName("style")
-    var style_SpecificNumberFormatOptions: js.UndefOr[decimal | percent] = js.native
+    var style_SpecificNumberFormatOptions: js.UndefOr[decimal | percent] = js.undefined
   }
   object SpecificNumberFormatOptions {
     
@@ -905,8 +897,8 @@ object VueI18n {
   object _NumberFormatOptions {
     
     @scala.inline
-    def CurrencyNumberFormatOptions(currency: String, style: currency): typings.vueI18n.mod.VueI18n.CurrencyNumberFormatOptions = {
-      val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+    def CurrencyNumberFormatOptions(currency: String): typings.vueI18n.mod.VueI18n.CurrencyNumberFormatOptions = {
+      val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], style = "currency")
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.CurrencyNumberFormatOptions]
     }
     

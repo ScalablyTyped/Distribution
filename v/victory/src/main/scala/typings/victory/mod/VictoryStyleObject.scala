@@ -2,1566 +2,1564 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in keyof react.react.CSSProperties ]: victory.victory.StringOrNumberOrCallback} */
-@js.native
 trait VictoryStyleObject extends StObject {
   
-  var KhtmlBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxFlex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxFlex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxFlexGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxFlexGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxLines: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxLines: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxOrient: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxOrient: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlBoxPack: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlBoxPack: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlLineBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlLineBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlOpacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlOpacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var KhtmlUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var KhtmlUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationName: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAnimationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAnimationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozAppearance: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozAppearance: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBackfaceVisibility: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBackfaceVisibility: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBackgroundClip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBackgroundClip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBackgroundInlinePolicy: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBackgroundInlinePolicy: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBackgroundOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBackgroundOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBackgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBackgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBinding: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBinding: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderBottomColors: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderBottomColors: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderEndColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderEndColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderEndStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderEndStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderEndWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderEndWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderLeftColors: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderLeftColors: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderRadiusBottomleft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderRadiusBottomleft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderRadiusBottomright: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderRadiusBottomright: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderRadiusTopleft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderRadiusTopleft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderRadiusTopright: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderRadiusTopright: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderRightColors: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderRightColors: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderStartColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderStartColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderStartStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderStartStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBorderTopColors: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBorderTopColors: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxFlex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxFlex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxOrient: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxOrient: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxPack: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxPack: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxShadow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxShadow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozBoxSizing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozBoxSizing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnFill: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnFill: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnRule: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnRule: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnRuleColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnRuleColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnRuleStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnRuleStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnRuleWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnRuleWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumnWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumnWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozColumns: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozColumns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozContextProperties: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozContextProperties: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozFloatEdge: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozFloatEdge: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozFontFeatureSettings: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozFontFeatureSettings: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozFontLanguageOverride: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozFontLanguageOverride: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozForceBrokenImageIcon: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozForceBrokenImageIcon: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozHyphens: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozHyphens: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozImageRegion: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozImageRegion: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozMarginEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozMarginEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozMarginStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozMarginStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOpacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOpacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOrient: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOrient: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOsxFontSmoothing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOsxFontSmoothing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineRadiusBottomleft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineRadiusBottomleft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineRadiusBottomright: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineRadiusBottomright: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineRadiusTopleft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineRadiusTopleft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineRadiusTopright: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineRadiusTopright: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozOutlineWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozOutlineWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozPaddingEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozPaddingEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozPaddingStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozPaddingStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozPerspective: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozPerspective: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozPerspectiveOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozPerspectiveOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozStackSizing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozStackSizing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTabSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTabSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTextAlignLast: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTextAlignLast: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTextBlink: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTextBlink: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTextDecorationColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTextDecorationColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTextDecorationLine: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTextDecorationLine: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTextDecorationStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTextDecorationStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTextSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTextSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransformStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransformStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozUserFocus: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozUserFocus: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozUserInput: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozUserInput: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozUserModify: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozUserModify: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozWindowDragging: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozWindowDragging: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var MozWindowShadow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var MozWindowShadow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationName: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OAnimationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OAnimationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OBackgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OBackgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OBorderImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OBorderImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OObjectFit: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OObjectFit: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OObjectPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OObjectPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTabSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTabSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTextOverflow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTextOverflow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransform: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransform: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var OTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var OTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAlignContent: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAlignContent: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAlignItems: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAlignItems: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAlignSelf: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAlignSelf: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationName: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAnimationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAnimationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitAppearance: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitAppearance: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBackdropFilter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBackdropFilter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBackfaceVisibility: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBackfaceVisibility: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBackgroundClip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBackgroundClip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBackgroundOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBackgroundOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBackgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBackgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderBefore: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderBefore: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderBeforeColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderBeforeColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderBeforeStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderBeforeStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderBeforeWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderBeforeWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderBottomLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderBottomLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderBottomRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderBottomRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderImageSlice: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderImageSlice: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderTopLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderTopLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBorderTopRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBorderTopRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxDecorationBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxDecorationBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxFlex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxFlex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxFlexGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxFlexGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxLines: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxLines: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxOrient: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxOrient: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxPack: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxPack: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxReflect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxReflect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxShadow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxShadow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitBoxSizing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitBoxSizing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitClipPath: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitClipPath: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnFill: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnFill: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnRule: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnRule: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnRuleColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnRuleColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnRuleStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnRuleStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnRuleWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnRuleWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnSpan: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnSpan: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumnWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumnWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitColumns: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitColumns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFilter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFilter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlexBasis: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlexBasis: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlexDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlexDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlexFlow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlexFlow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlexGrow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlexGrow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlexShrink: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlexShrink: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFlexWrap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFlexWrap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFontFeatureSettings: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFontFeatureSettings: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFontKerning: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFontKerning: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFontSmoothing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFontSmoothing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitFontVariantLigatures: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitFontVariantLigatures: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitHyphens: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitHyphens: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitJustifyContent: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitJustifyContent: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitLineBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitLineBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitLineClamp: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitLineClamp: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMarginEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMarginEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMarginStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMarginStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMask: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMask: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskAttachment: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskAttachment: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskClip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskClip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskComposite: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskComposite: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskPositionX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskPositionX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskPositionY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskPositionY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskRepeat: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskRepeat: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskRepeatX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskRepeatX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskRepeatY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskRepeatY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaskSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaskSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitMaxInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitMaxInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitOrder: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitOrder: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitOverflowScrolling: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitOverflowScrolling: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitPaddingEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitPaddingEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitPaddingStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitPaddingStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitPerspective: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitPerspective: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitPerspectiveOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitPerspectiveOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitPrintColorAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitPrintColorAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitRubyPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitRubyPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitScrollSnapPointsX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitScrollSnapPointsX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitScrollSnapPointsY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitScrollSnapPointsY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitScrollSnapType: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitScrollSnapType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitShapeMargin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitShapeMargin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTapHighlightColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTapHighlightColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextCombine: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextCombine: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextDecorationColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextDecorationColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextDecorationLine: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextDecorationLine: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextDecorationSkip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextDecorationSkip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextDecorationStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextDecorationStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextEmphasis: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextEmphasis: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextEmphasisColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextEmphasisColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextEmphasisPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextEmphasisPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextEmphasisStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextEmphasisStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextFillColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextFillColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextOrientation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextOrientation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextStroke: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextStroke: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextStrokeColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextStrokeColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextStrokeWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextStrokeWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTextUnderlinePosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTextUnderlinePosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTouchCallout: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTouchCallout: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransform: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransform: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransformStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransformStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitUserModify: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitUserModify: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var WebkitWritingMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var WebkitWritingMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var alignContent: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var alignContent: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var alignItems: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var alignItems: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var alignSelf: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var alignSelf: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var alignTracks: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var alignTracks: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var alignmentBaseline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var alignmentBaseline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var all: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var all: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationFillMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationIterationCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationName: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationName: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationPlayState: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var animationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var animationTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var appearance: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var appearance: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var aspectRatio: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var aspectRatio: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var azimuth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var azimuth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backdropFilter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backdropFilter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backfaceVisibility: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backfaceVisibility: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var background: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var background: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundAttachment: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundAttachment: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundBlendMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundBlendMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundClip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundClip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundPositionX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundPositionX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundPositionY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundPositionY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundRepeat: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundRepeat: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var backgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var backgroundSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var baselineShift: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var baselineShift: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var blockOverflow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var blockOverflow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var blockSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var blockSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var border: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var border: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockEndColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockEndColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockEndStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockEndStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockEndWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockEndWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockStartColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockStartColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockStartStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockStartStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockStartWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockStartWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBlockWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBlockWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBottomColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBottomColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBottomLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBottomRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBottomStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBottomStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderBottomWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderBottomWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderCollapse: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderCollapse: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderEndEndRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderEndEndRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderEndStartRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderEndStartRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderImageOutset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderImageOutset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderImageRepeat: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderImageRepeat: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderImageSlice: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderImageSlice: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderImageSource: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderImageSource: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderImageWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderImageWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineEndColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineEndColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineEndStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineEndStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineEndWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineEndWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineStartColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineStartColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineStartStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineStartStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineStartWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineStartWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderInlineWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderInlineWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderLeft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderLeft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderLeftColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderLeftColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderLeftStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderLeftStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderLeftWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderLeftWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderRight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderRightColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderRightColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderRightStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderRightStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderRightWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderRightWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderSpacing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderSpacing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderStartEndRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderStartEndRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderStartStartRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderStartStartRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderTop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderTopColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderTopColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderTopLeftRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderTopRightRadius: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderTopStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderTopStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderTopWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderTopWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var borderWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var borderWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var bottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var bottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxDecorationBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxDecorationBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxFlex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxFlex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxFlexGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxFlexGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxLines: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxLines: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxOrdinalGroup: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxOrient: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxOrient: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxPack: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxPack: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxShadow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxShadow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var boxSizing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var boxSizing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var breakAfter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var breakAfter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var breakBefore: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var breakBefore: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var breakInside: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var breakInside: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var captionSide: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var captionSide: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var caretColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var caretColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var clear: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var clear: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var clip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var clip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var clipPath: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var clipPath: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var clipRule: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var clipRule: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var color: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var color: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var colorAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var colorAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var colorInterpolation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var colorInterpolation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var colorRendering: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var colorRendering: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnCount: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnCount: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnFill: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnFill: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnRule: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnRule: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnRuleColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnRuleColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnRuleStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnRuleStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnRuleWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnRuleWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnSpan: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnSpan: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columnWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columnWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var columns: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var columns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var contain: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var contain: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var content: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var content: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var counterIncrement: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var counterIncrement: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var counterReset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var counterReset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var counterSet: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var counterSet: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var cursor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var cursor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var direction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var direction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var display: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var display: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var dominantBaseline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var dominantBaseline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var emptyCells: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var emptyCells: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fill: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fill: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fillOpacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fillOpacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fillRule: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fillRule: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var filter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var filter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flexBasis: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flexBasis: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flexDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flexDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flexFlow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flexFlow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flexGrow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flexGrow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flexShrink: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flexShrink: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var flexWrap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var flexWrap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var float: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var float: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var floodColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var floodColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var floodOpacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var floodOpacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var font: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var font: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontFamily: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontFamily: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontFeatureSettings: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontKerning: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontKerning: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontLanguageOverride: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontLanguageOverride: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontOpticalSizing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontOpticalSizing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontSmooth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontSmooth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontStretch: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontStretch: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontSynthesis: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontSynthesis: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariant: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariant: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariantAlternates: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariantAlternates: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariantCaps: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariantCaps: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariantEastAsian: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariantEastAsian: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariantLigatures: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariantLigatures: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariantNumeric: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariantNumeric: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariantPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariantPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontVariationSettings: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontVariationSettings: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var fontWeight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var fontWeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var glyphOrientationVertical: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var grid: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var grid: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridArea: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridArea: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridAutoColumns: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridAutoColumns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridAutoFlow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridAutoFlow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridAutoRows: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridAutoRows: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridColumn: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridColumn: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridColumnEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridColumnEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridColumnGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridColumnGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridColumnStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridColumnStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridRow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridRow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridRowEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridRowEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridRowGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridRowGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridRowStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridRowStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridTemplate: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridTemplate: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridTemplateAreas: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridTemplateAreas: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridTemplateColumns: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridTemplateColumns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var gridTemplateRows: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var gridTemplateRows: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var hack: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var hack: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var hangingPunctuation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var hangingPunctuation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var height: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var height: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var hyphens: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var hyphens: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var imageOrientation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var imageOrientation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var imageRendering: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var imageRendering: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var imageResolution: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var imageResolution: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var imeMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var imeMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var initialLetter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var initialLetter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var inlineSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var inlineSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var inset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var inset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var insetBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var insetBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var insetBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var insetBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var insetBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var insetBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var insetInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var insetInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var insetInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var insetInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var insetInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var insetInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var isolation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var isolation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var justifyContent: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var justifyContent: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var justifyItems: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var justifyItems: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var justifySelf: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var justifySelf: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var justifyTracks: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var justifyTracks: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var left: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var left: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var letterSpacing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var letterSpacing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var lightingColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var lightingColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var lineBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var lineBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var lineClamp: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var lineClamp: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var lineHeight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var lineHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var lineHeightStep: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var lineHeightStep: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var listStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var listStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var listStyleImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var listStyleImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var listStylePosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var listStylePosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var listStyleType: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var listStyleType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var margin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var margin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginBottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginBottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginLeft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginLeft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginRight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marginTop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marginTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var marker: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var marker: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var markerEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var markerEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var markerMid: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var markerMid: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var markerStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var markerStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var mask: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var mask: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorder: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorder: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorderMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorderMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorderOutset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorderOutset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorderRepeat: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorderRepeat: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorderSlice: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorderSlice: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorderSource: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorderSource: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskBorderWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskBorderWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskClip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskClip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskComposite: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskComposite: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskImage: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskImage: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskRepeat: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskRepeat: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maskType: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maskType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var masonryAutoFlow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var masonryAutoFlow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var mathStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var mathStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maxBlockSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maxBlockSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maxHeight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maxHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maxInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maxInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maxLines: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maxLines: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var maxWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var maxWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var minBlockSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var minBlockSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var minHeight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var minHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var minInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var minInlineSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var minWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var minWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var mixBlendMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var mixBlendMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var motion: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var motion: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var motionDistance: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var motionDistance: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var motionPath: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var motionPath: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var motionRotation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var motionRotation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msAccelerator: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msAccelerator: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msAlignSelf: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msAlignSelf: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msBlockProgression: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msBlockProgression: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomChaining: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomChaining: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomLimit: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomLimit: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomLimitMax: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomLimitMax: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomLimitMin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomLimitMin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomSnap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomSnap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomSnapPoints: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomSnapPoints: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZoomSnapType: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZoomSnapType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msContentZooming: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msContentZooming: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msFilter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msFilter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msFlex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msFlex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msFlexDirection: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msFlexDirection: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msFlexPositive: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msFlexPositive: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msFlowFrom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msFlowFrom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msFlowInto: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msFlowInto: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msGridColumns: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msGridColumns: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msGridRows: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msGridRows: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msHighContrastAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msHighContrastAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msHyphenateLimitChars: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msHyphenateLimitChars: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msHyphenateLimitLines: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msHyphenateLimitLines: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msHyphenateLimitZone: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msHyphenateLimitZone: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msHyphens: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msHyphens: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msImeAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msImeAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msImeMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msImeMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msJustifySelf: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msJustifySelf: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msLineBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msLineBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msOrder: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msOrder: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msOverflowStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msOverflowStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msOverflowX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msOverflowX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msOverflowY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msOverflowY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollChaining: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollChaining: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollLimit: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollLimit: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollLimitXMax: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollLimitXMax: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollLimitXMin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollLimitXMin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollLimitYMax: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollLimitYMax: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollLimitYMin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollLimitYMin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollRails: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollRails: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollSnapPointsX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollSnapPointsX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollSnapPointsY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollSnapPointsY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollSnapType: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollSnapType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollSnapX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollSnapX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollSnapY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollSnapY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollTranslation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollTranslation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbar3dlightColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbar3dlightColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarArrowColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarArrowColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarBaseColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarBaseColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarDarkshadowColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarDarkshadowColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarFaceColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarFaceColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarHighlightColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarHighlightColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarShadowColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarShadowColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msScrollbarTrackColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msScrollbarTrackColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTextAutospace: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTextAutospace: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTextCombineHorizontal: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTextCombineHorizontal: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTextOverflow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTextOverflow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTouchAction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTouchAction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTouchSelect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTouchSelect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransform: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransform: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msTransitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msUserSelect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msWordBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msWordBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msWrapFlow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msWrapFlow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msWrapMargin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msWrapMargin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msWrapThrough: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msWrapThrough: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var msWritingMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var msWritingMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var objectFit: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var objectFit: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var objectPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var objectPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetAnchor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetAnchor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetDistance: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetDistance: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetPath: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetPath: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetRotate: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetRotate: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var offsetRotation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var offsetRotation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var opacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var opacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var order: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var order: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var orphans: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var orphans: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var outline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var outline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var outlineColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var outlineColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var outlineOffset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var outlineOffset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var outlineStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var outlineStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var outlineWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var outlineWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowAnchor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowAnchor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowClipBox: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowClipBox: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowWrap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowWrap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overflowY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overflowY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overscrollBehavior: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overscrollBehavior: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overscrollBehaviorBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overscrollBehaviorBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overscrollBehaviorInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overscrollBehaviorInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overscrollBehaviorX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overscrollBehaviorX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var overscrollBehaviorY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var overscrollBehaviorY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var padding: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var padding: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingBottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingBottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingLeft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingLeft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingRight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paddingTop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paddingTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var pageBreakAfter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var pageBreakAfter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var pageBreakBefore: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var pageBreakBefore: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var pageBreakInside: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var pageBreakInside: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var paintOrder: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var paintOrder: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var perspective: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var perspective: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var perspectiveOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var perspectiveOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var placeContent: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var placeContent: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var placeItems: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var placeItems: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var placeSelf: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var placeSelf: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var pointerEvents: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var pointerEvents: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var position: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var position: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var quotes: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var quotes: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var resize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var resize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var right: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var right: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var rotate: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var rotate: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var rowGap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var rowGap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var rubyAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var rubyAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var rubyMerge: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var rubyMerge: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var rubyPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var rubyPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scale: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scale: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollBehavior: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollBehavior: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMargin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMargin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginBottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginBottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginLeft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginLeft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginRight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollMarginTop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollMarginTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPadding: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPadding: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingBlock: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingBlock: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingBlockEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingBlockStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingBottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingBottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingInline: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingInline: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingInlineEnd: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingInlineStart: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingLeft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingLeft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingRight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollPaddingTop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollPaddingTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapCoordinate: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapCoordinate: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapDestination: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapDestination: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapMargin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapMargin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapMarginBottom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapMarginBottom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapMarginLeft: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapMarginLeft: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapMarginRight: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapMarginRight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapMarginTop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapMarginTop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapPointsX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapPointsX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapPointsY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapPointsY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapStop: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapStop: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapType: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapType: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapTypeX: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapTypeX: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollSnapTypeY: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollSnapTypeY: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollbarColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollbarColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollbarGutter: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollbarGutter: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollbarTrackColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollbarTrackColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var scrollbarWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var scrollbarWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var shapeImageThreshold: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var shapeImageThreshold: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var shapeMargin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var shapeMargin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var shapeOutside: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var shapeOutside: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var shapeRendering: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var shapeRendering: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var stopColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var stopColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var stopOpacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var stopOpacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var stroke: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var stroke: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeDasharray: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeDasharray: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeDashoffset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeLinecap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeLinecap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeLinejoin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeMiterlimit: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeOpacity: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeOpacity: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var strokeWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var strokeWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var tabSize: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var tabSize: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var tableLayout: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var tableLayout: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textAlignLast: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textAlignLast: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textAnchor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textAnchor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textCombineHorizontal: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textCombineHorizontal: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textCombineUpright: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textCombineUpright: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecoration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecoration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationLine: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationLine: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationSkip: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationSkip: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationSkipInk: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationSkipInk: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationThickness: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationThickness: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textDecorationWidth: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textDecorationWidth: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textEmphasis: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textEmphasis: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textEmphasisColor: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textEmphasisColor: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textEmphasisPosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textEmphasisPosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textEmphasisStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textEmphasisStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textIndent: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textIndent: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textJustify: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textJustify: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textOrientation: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textOrientation: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textOverflow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textOverflow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textRendering: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textRendering: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textShadow: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textShadow: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textSizeAdjust: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textTransform: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textTransform: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textUnderlineOffset: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textUnderlineOffset: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var textUnderlinePosition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var textUnderlinePosition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var top: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var top: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var touchAction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var touchAction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transform: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transform: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transformBox: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transformBox: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transformOrigin: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transformStyle: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transformStyle: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transition: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transition: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transitionDelay: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transitionDuration: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transitionProperty: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var transitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var transitionTimingFunction: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var translate: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var translate: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var unicodeBidi: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var unicodeBidi: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var userSelect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var userSelect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var vectorEffect: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var vectorEffect: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var verticalAlign: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var verticalAlign: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var visibility: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var visibility: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var whiteSpace: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var whiteSpace: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var widows: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var widows: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var width: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var width: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var willChange: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var willChange: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var wordBreak: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var wordBreak: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var wordSpacing: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var wordSpacing: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var wordWrap: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var wordWrap: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var writingMode: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var writingMode: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var zIndex: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var zIndex: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
-  var zoom: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var zoom: js.UndefOr[StringOrNumberOrCallback] = js.undefined
 }
 object VictoryStyleObject {
   

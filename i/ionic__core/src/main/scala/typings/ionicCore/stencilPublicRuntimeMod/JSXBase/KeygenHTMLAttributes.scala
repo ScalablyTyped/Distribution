@@ -2,31 +2,31 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeygenHTMLAttributes[T] extends HTMLAttributes[T] {
+trait KeygenHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean | String] = js.native
+  var autofocus: js.UndefOr[Boolean | String] = js.undefined
   
-  var challenge: js.UndefOr[String] = js.native
+  var challenge: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var keyParams: js.UndefOr[String] = js.native
+  var keyParams: js.UndefOr[String] = js.undefined
   
-  var keyType: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.undefined
   
-  var keyparams: js.UndefOr[String] = js.native
+  var keyparams: js.UndefOr[String] = js.undefined
   
-  var keytype: js.UndefOr[String] = js.native
+  var keytype: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object KeygenHTMLAttributes {
   
@@ -37,7 +37,7 @@ object KeygenHTMLAttributes {
   }
   
   @scala.inline
-  implicit class KeygenHTMLAttributesMutableBuilder[Self <: KeygenHTMLAttributes[_], T] (val x: Self with KeygenHTMLAttributes[T]) extends AnyVal {
+  implicit class KeygenHTMLAttributesMutableBuilder[Self <: KeygenHTMLAttributes[?], T] (val x: Self & KeygenHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])

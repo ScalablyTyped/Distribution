@@ -2,55 +2,53 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Regional inventory resource. contains the regional name and all attributes
   * which are overridden for the specified region.
   */
-@js.native
 trait SchemaRegionalInventory extends StObject {
   
   /**
     * The availability of the product.
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /**
     * A list of custom (merchant-provided) attributes. It can also be used for
     * submitting any attribute of the feed specification in its generic form.
     */
-  var customAttributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.native
+  var customAttributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#regionalInventory&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The price of the product.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The ID (name) of the region.
     */
-  var regionId: js.UndefOr[String] = js.native
+  var regionId: js.UndefOr[String] = js.undefined
   
   /**
     * The sale price of the product. Mandatory if sale_price_effective_date is
     * defined.
     */
-  var salePrice: js.UndefOr[SchemaPrice] = js.native
+  var salePrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * A date range represented by a pair of ISO 8601 dates separated by a
     * space, comma, or slash. Both dates might be specified as &#39;null&#39;
     * if undecided.
     */
-  var salePriceEffectiveDate: js.UndefOr[String] = js.native
+  var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
 }
 object SchemaRegionalInventory {
   

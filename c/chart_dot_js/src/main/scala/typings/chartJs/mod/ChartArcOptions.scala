@@ -2,21 +2,19 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartArcOptions extends StObject {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var backgroundColor: js.UndefOr[ChartColor] = js.native
+  var backgroundColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderAlign: js.UndefOr[BorderAlignment] = js.native
+  var borderAlign: js.UndefOr[BorderAlignment] = js.undefined
   
-  var borderColor: js.UndefOr[ChartColor] = js.native
+  var borderColor: js.UndefOr[ChartColor] = js.undefined
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
 }
 object ChartArcOptions {
   

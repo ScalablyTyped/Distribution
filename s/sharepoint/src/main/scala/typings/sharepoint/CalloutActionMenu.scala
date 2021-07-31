@@ -2,21 +2,19 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutActionMenu extends StObject {
   
-  def addAction(action: CalloutAction): Unit = js.native
+  def addAction(action: CalloutAction): Unit
   
-  def calculateActionWidth(): Unit = js.native
+  def calculateActionWidth(): Unit
   
-  def getActions(): js.Array[CalloutAction] = js.native
+  def getActions(): js.Array[CalloutAction]
   
-  def refreshActions(): Unit = js.native
+  def refreshActions(): Unit
   
-  def render(): Unit = js.native
+  def render(): Unit
 }
 object CalloutActionMenu {
   

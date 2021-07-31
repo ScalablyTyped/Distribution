@@ -10,9 +10,9 @@ Offers a async require.resolve function. It's highly configurable.
 | ------------------ | :-------------: |
 | Full name          | enhanced-resolve |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 331 |
-| # downloads        | 559698594 |
+| # releases         | 30 |
+| # dependents       | 371 |
+| # downloads        | 666763718 |
 | # stars            | 2 |
 
 ## Links

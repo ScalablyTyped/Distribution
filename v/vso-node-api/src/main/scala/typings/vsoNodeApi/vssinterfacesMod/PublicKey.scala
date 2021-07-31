@@ -2,21 +2,19 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
   /**
     * Gets or sets the exponent for the public key.
     */
-  var exponent: js.Array[Double] = js.native
+  var exponent: js.Array[Double]
   
   /**
     * Gets or sets the modulus for the public key.
     */
-  var modulus: js.Array[Double] = js.native
+  var modulus: js.Array[Double]
 }
 object PublicKey {
   

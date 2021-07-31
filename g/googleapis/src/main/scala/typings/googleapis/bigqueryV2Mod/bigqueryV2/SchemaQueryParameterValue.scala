@@ -3,27 +3,25 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaQueryParameterValue extends StObject {
   
   /**
     * [Optional] The array values, if this is an array type.
     */
-  var arrayValues: js.UndefOr[js.Array[SchemaQueryParameterValue]] = js.native
+  var arrayValues: js.UndefOr[js.Array[SchemaQueryParameterValue]] = js.undefined
   
   /**
     * [Optional] The struct field values, in order of the struct type&#39;s
     * declaration.
     */
-  var structValues: js.UndefOr[StringDictionary[SchemaQueryParameterValue]] = js.native
+  var structValues: js.UndefOr[StringDictionary[SchemaQueryParameterValue]] = js.undefined
   
   /**
     * [Optional] The value of this value, if a simple scalar type.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryParameterValue {
   

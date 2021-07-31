@@ -2,25 +2,23 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
-  var edge: Boolean = js.native
+  var edge: Boolean
   
-  var mozilla: Boolean = js.native
+  var mozilla: Boolean
   
-  var msie: Boolean = js.native
+  var msie: Boolean
   
-  var opera: Boolean = js.native
+  var opera: Boolean
   
-  var safari: Boolean = js.native
+  var safari: Boolean
   
-  var version: String = js.native
+  var version: String
   
-  var webkit: Boolean = js.native
+  var webkit: Boolean
 }
 object Edge {
   

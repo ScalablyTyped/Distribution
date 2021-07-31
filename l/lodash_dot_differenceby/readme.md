@@ -11,8 +11,8 @@ The lodash method `_.differenceBy` exported as a module.
 | Full name          | lodash.differenceby |
 | Keywords           | lodash-modularized, differenceby |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 1465953 |
+| # dependents       | 41 |
+| # downloads        | 1459437 |
 | # stars            | 0 |
 
 ## Links

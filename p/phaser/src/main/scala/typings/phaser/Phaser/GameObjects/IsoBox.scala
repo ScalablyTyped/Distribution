@@ -3,7 +3,6 @@ package typings.phaser.Phaser.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the `projection` property.
   */
 @js.native
-trait IsoBox extends Shape {
+trait IsoBox
+  extends StObject
+     with Shape {
   
   /**
     * The color used to fill in the left-facing side of the iso box.
@@ -52,18 +53,18 @@ trait IsoBox extends Shape {
     * @param showRight Show the right-face of the iso box. Default true.
     */
   def setFaces(): this.type = js.native
-  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: js.UndefOr[scala.Nothing], showRight: Boolean): this.type = js.native
-  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: Boolean): this.type = js.native
-  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: Boolean, showRight: Boolean): this.type = js.native
   def setFaces(showTop: Boolean): this.type = js.native
-  def setFaces(showTop: Boolean, showLeft: js.UndefOr[scala.Nothing], showRight: Boolean): this.type = js.native
   def setFaces(showTop: Boolean, showLeft: Boolean): this.type = js.native
   def setFaces(showTop: Boolean, showLeft: Boolean, showRight: Boolean): this.type = js.native
+  def setFaces(showTop: Boolean, showLeft: Unit, showRight: Boolean): this.type = js.native
+  def setFaces(showTop: Unit, showLeft: Boolean): this.type = js.native
+  def setFaces(showTop: Unit, showLeft: Boolean, showRight: Boolean): this.type = js.native
+  def setFaces(showTop: Unit, showLeft: Unit, showRight: Boolean): this.type = js.native
   
-  def setFillStyle(fillTop: js.UndefOr[scala.Nothing], fillLeft: js.UndefOr[scala.Nothing], fillRight: Double): this.type = js.native
-  def setFillStyle(fillTop: js.UndefOr[scala.Nothing], fillLeft: Double, fillRight: Double): this.type = js.native
-  def setFillStyle(fillTop: Double, fillLeft: js.UndefOr[scala.Nothing], fillRight: Double): this.type = js.native
   def setFillStyle(fillTop: Double, fillLeft: Double, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Double, fillLeft: Unit, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Unit, fillLeft: Double, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Unit, fillLeft: Unit, fillRight: Double): this.type = js.native
   
   /**
     * Sets the projection level of the iso box. Change this to change the 'angle' at which you are looking at the box.

@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.ExportNamedDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `14` extends StObject {
   
-  var `type`: ExportNamedDeclaration = js.native
+  var `type`: ExportNamedDeclaration
 }
 object `14` {
   
   @scala.inline
-  def apply(`type`: ExportNamedDeclaration): `14` = {
+  def apply(): `14` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportNamedDeclaration")
     __obj.asInstanceOf[`14`]
   }
   

@@ -3,15 +3,13 @@ package typings.typeorm.anon
 import typings.typeorm.tableColumnMod.TableColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewColumn extends StObject {
   
-  var newColumn: TableColumn = js.native
+  var newColumn: TableColumn
   
-  var oldColumn: TableColumn = js.native
+  var oldColumn: TableColumn
 }
 object NewColumn {
   

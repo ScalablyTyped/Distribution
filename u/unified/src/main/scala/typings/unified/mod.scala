@@ -8,7 +8,6 @@ import typings.vfile.mod.VFile
 import typings.vfile.mod.VFileCompatible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,9 +17,12 @@ object mod {
     *
     * @typeParam P Processor settings. Useful when packaging unified with a preset parser and compiler.
     */
+  @scala.inline
+  def apply[P](): Processor[P] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Processor[P]]
+  
   @JSImport("unified", JSImport.Namespace)
   @js.native
-  def apply[P](): Processor[P] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * An attacher is the thing passed to `use`.
@@ -33,12 +35,11 @@ object mod {
     * @typeParam P Processor settings
     * @returns Optional Transformer.
     */
-  type Attacher[S /* <: js.Array[_] */, P] = js.ThisFunction1[/* this */ Processor[P], /* settings */ S, Transformer | Unit]
+  type Attacher[S /* <: js.Array[js.Any] */, P] = js.ThisFunction1[/* this */ Processor[P], /* settings */ S, Transformer | Unit]
   
   /**
     * Transform an AST node/tree into text
     */
-  @js.native
   trait Compiler extends StObject {
     
     /**
@@ -46,7 +47,7 @@ object mod {
       *
       * @returns Compiled text
       */
-    def compile(): String = js.native
+    def compile(): String
   }
   object Compiler {
     
@@ -69,7 +70,9 @@ object mod {
     * `compile` method.
     */
   @js.native
-  trait CompilerConstructor extends /**
+  trait CompilerConstructor
+    extends StObject
+       with /**
     * Creates a Compiler
     *
     * @param node Node/tree to be stringified
@@ -89,7 +92,6 @@ object mod {
   /**
     * Transform file contents into an AST
     */
-  @js.native
   trait Parser extends StObject {
     
     /**
@@ -97,7 +99,7 @@ object mod {
       *
       * @returns Parsed AST node/tree
       */
-    def parse(): Node = js.native
+    def parse(): Node
   }
   object Parser {
     
@@ -120,7 +122,9 @@ object mod {
     * `parse` method.
     */
   @js.native
-  trait ParserConstructor extends /**
+  trait ParserConstructor
+    extends StObject
+       with /**
     * Creates a Parser
     *
     * @param text Text to transform into AST node(s)
@@ -143,7 +147,7 @@ object mod {
     * @typeParam S Plugin settings
     * @typeParam P Processor settings
     */
-  type Pluggable[S /* <: js.Array[_] */, P] = (Plugin[S, P]) | (Preset[S, P]) | (PluginTuple[S, P])
+  type Pluggable[S /* <: js.Array[js.Any] */, P] = (Plugin[S, P]) | (Preset[S, P]) | (PluginTuple[S, P])
   
   /**
     * A list of plugins and presets
@@ -163,7 +167,7 @@ object mod {
     * @typeParam P Processor settings
     * @returns Optional Transformer.
     */
-  type Plugin[S /* <: js.Array[_] */, P] = Attacher[S, P]
+  type Plugin[S /* <: js.Array[js.Any] */, P] = Attacher[S, P]
   
   /**
     * A pairing of a plugin with its settings
@@ -171,7 +175,7 @@ object mod {
     * @typeParam S Plugin settings
     * @typeParam P Processor settings
     */
-  type PluginTuple[S /* <: js.Array[_] */, P] = Array[(Plugin[S, P]) | js.Any]
+  type PluginTuple[S /* <: js.Array[js.Any] */, P] = Array[(Plugin[S, P]) | js.Any]
   
   /**
     * Presets provide a potentially sharable way to configure processors.
@@ -179,12 +183,11 @@ object mod {
     *
     * @typeParam P Processor settings
     */
-  @js.native
   trait Preset[S, P] extends StObject {
     
-    var plugins: PluggableList[P] = js.native
+    var plugins: PluggableList[P]
     
-    var settings: js.UndefOr[Settings] = js.native
+    var settings: js.UndefOr[Settings] = js.undefined
   }
   object Preset {
     
@@ -195,7 +198,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PresetMutableBuilder[Self <: Preset[_, _], S, P] (val x: Self with (Preset[S, P])) extends AnyVal {
+    implicit class PresetMutableBuilder[Self <: Preset[?, ?], S, P] (val x: Self & (Preset[S, P])) extends AnyVal {
       
       @scala.inline
       def setPlugins(value: PluggableList[P]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
@@ -389,7 +392,7 @@ object mod {
       * @param pluginTuple pairs, plugin and settings in an array
       * @typeParam S Plugin settings
       */
-    def use[S /* <: js.Array[_] */](pluginTuple: PluginTuple[S, P]): Processor[P] = js.native
+    def use[S /* <: js.Array[js.Any] */](pluginTuple: PluginTuple[S, P]): Processor[P] = js.native
     /**
       * Configure the processor to use a plugin and optionally configure that plugin with options.
       *
@@ -398,7 +401,7 @@ object mod {
       * @typeParam S Plugin settings
       * @returns The processor on which use is invoked
       */
-    def use[S /* <: js.Array[_] */](
+    def use[S /* <: js.Array[js.Any] */](
       plugin: Plugin[S, P],
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param settings because its type S is not an array type */ settings: S
     ): Processor[P] = js.native
@@ -407,7 +410,7 @@ object mod {
       *
       * @param preset `Object` with an plugins (set to list), and/or an optional settings object
       */
-    def use[S /* <: js.Array[_] */](preset: Preset[S, P]): Processor[P] = js.native
+    def use[S /* <: js.Array[js.Any] */](preset: Preset[S, P]): Processor[P] = js.native
   }
   
   /**
@@ -415,10 +418,9 @@ object mod {
     *
     * @typeParam P Settings applied to a processor. Useful when packaging unified with a preset parser and compiler.
     */
-  @js.native
   trait ProcessorSettings[P] extends StObject {
     
-    var settings: P = js.native
+    var settings: P
   }
   object ProcessorSettings {
     
@@ -429,7 +431,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ProcessorSettingsMutableBuilder[Self <: ProcessorSettings[_], P] (val x: Self with ProcessorSettings[P]) extends AnyVal {
+    implicit class ProcessorSettingsMutableBuilder[Self <: ProcessorSettings[?], P] (val x: Self & ProcessorSettings[P]) extends AnyVal {
       
       @scala.inline
       def setSettings(value: P): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])

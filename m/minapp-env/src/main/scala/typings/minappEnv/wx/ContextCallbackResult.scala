@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextCallbackResult extends StObject {
   
   /** 节点对应的 Context 对象 */
-  var context: js.Object = js.native
+  var context: js.Object
 }
 object ContextCallbackResult {
   

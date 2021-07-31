@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateValuesResponse extends StObject {
   
   /** One UpdateValuesResponse per requested range, in the same order as the requests appeared. */
-  var responses: js.UndefOr[js.Array[UpdateValuesResponse]] = js.native
+  var responses: js.UndefOr[js.Array[UpdateValuesResponse]] = js.undefined
   
   /** The spreadsheet the updates were applied to. */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /** The total number of cells updated. */
-  var totalUpdatedCells: js.UndefOr[Double] = js.native
+  var totalUpdatedCells: js.UndefOr[Double] = js.undefined
   
   /** The total number of columns where at least one cell in the column was updated. */
-  var totalUpdatedColumns: js.UndefOr[Double] = js.native
+  var totalUpdatedColumns: js.UndefOr[Double] = js.undefined
   
   /** The total number of rows where at least one cell in the row was updated. */
-  var totalUpdatedRows: js.UndefOr[Double] = js.native
+  var totalUpdatedRows: js.UndefOr[Double] = js.undefined
   
   /** The total number of sheets where at least one cell in the sheet was updated. */
-  var totalUpdatedSheets: js.UndefOr[Double] = js.native
+  var totalUpdatedSheets: js.UndefOr[Double] = js.undefined
 }
 object BatchUpdateValuesResponse {
   

@@ -9,7 +9,6 @@ import typings.wpapi.wpapiStrings.asc
 import typings.wpapi.wpapiStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,9 +25,14 @@ object mod {
     *
     * @param options An options hash to configure the instance
     */
-  class ^ () extends WPAPI {
+  class ^ ()
+    extends StObject
+       with WPAPI {
     def this(options: WPAPIOptions) = this()
   }
+  @JSImport("wpapi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The base WordPress API request
@@ -38,7 +42,8 @@ object mod {
   @JSImport("wpapi", "WPRequest")
   @js.native
   class WPRequest protected ()
-    extends /**
+    extends StObject
+       with /**
     * A request can define its parameter methods, like .id(), .date(),
     * .author(). They are usually decided by WPAPI routes configuration
     * object.
@@ -79,8 +84,8 @@ object mod {
       * @param callback A callback to invoke with the results of the POST
       * request
       */
-    def create(data: js.Any): js.Promise[_] = js.native
-    def create(data: js.Any, callback: WPRequestCallback): js.Promise[_] = js.native
+    def create(data: js.Any): js.Promise[js.Any] = js.native
+    def create(data: js.Any, callback: WPRequestCallback): js.Promise[js.Any] = js.native
     
     /**
       * Delete the specified resource
@@ -89,10 +94,10 @@ object mod {
       * @param callback A callback to invoke with the results of the DELETE
       * request
       */
-    def delete(): js.Promise[_] = js.native
-    def delete(data: js.UndefOr[scala.Nothing], callback: WPRequestCallback): js.Promise[_] = js.native
-    def delete(data: js.Any): js.Promise[_] = js.native
-    def delete(data: js.Any, callback: WPRequestCallback): js.Promise[_] = js.native
+    def delete(): js.Promise[js.Any] = js.native
+    def delete(data: js.Any): js.Promise[js.Any] = js.native
+    def delete(data: js.Any, callback: WPRequestCallback): js.Promise[js.Any] = js.native
+    def delete(data: Unit, callback: WPRequestCallback): js.Promise[js.Any] = js.native
     
     /**
       * Convenience wrapper for .context( 'edit' )
@@ -131,8 +136,8 @@ object mod {
       * @param callback A callback to invoke with the results of the HEAD
       * request
       */
-    def get(): js.Promise[_] = js.native
-    def get(callback: WPRequestCallback): js.Promise[_] = js.native
+    def get(): js.Promise[js.Any] = js.native
+    def get(callback: WPRequestCallback): js.Promise[js.Any] = js.native
     
     /**
       * Set the id of resource.
@@ -202,12 +207,12 @@ object mod {
       */
     def param(props: String): WPRequest = js.native
     def param(props: String, value: String): WPRequest = js.native
-    def param(props: String, value: js.Array[_]): WPRequest = js.native
+    def param(props: String, value: js.Array[js.Any]): WPRequest = js.native
     def param(props: String, value: Double): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[_]]): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[_]], value: String): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[_]], value: js.Array[_]): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[_]], value: Double): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[js.Any]]): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[js.Any]], value: String): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[js.Any]], value: js.Array[js.Any]): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[js.Any]], value: Double): WPRequest = js.native
     
     /**
       * Set the number of items to be returned in a page of responses.
@@ -268,13 +273,13 @@ object mod {
       * @param failureCallback A callback to handle any errors encountered
       * by the request
       */
-    def `then`(): js.Promise[_] = js.native
-    def `then`(successCallback: js.UndefOr[scala.Nothing], failureCallback: js.Function1[/* error */ Error, Unit]): js.Promise[_] = js.native
-    def `then`(successCallback: js.Function1[/* data */ js.Any, Unit]): js.Promise[_] = js.native
+    def `then`(): js.Promise[js.Any] = js.native
+    def `then`(successCallback: js.Function1[/* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
     def `then`(
       successCallback: js.Function1[/* data */ js.Any, Unit],
       failureCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
+    def `then`(successCallback: Unit, failureCallback: js.Function1[/* error */ Error, Unit]): js.Promise[js.Any] = js.native
     
     /**
       * Update the specified resource with the provided data
@@ -285,8 +290,8 @@ object mod {
       * @param callback A callback to invoke with the results of the PATCH
       * request
       */
-    def update(data: js.Any): js.Promise[_] = js.native
-    def update(data: js.Any, callback: WPRequestCallback): js.Promise[_] = js.native
+    def update(data: js.Any): js.Promise[js.Any] = js.native
+    def update(data: js.Any, callback: WPRequestCallback): js.Promise[js.Any] = js.native
     
     /**
       * Validate whether the specified path parts are valid for this endpoint
@@ -309,22 +314,20 @@ object mod {
     * @param url A URL within a REST API-enabled WordPress website
     */
   /* static member */
-  @JSImport("wpapi", "discover")
-  @js.native
-  def discover(url: String): js.Promise[WPAPI] = js.native
+  @scala.inline
+  def discover(url: String): js.Promise[WPAPI] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WPAPI]]
   
   /** Authentication credentials */
-  @js.native
   trait Credentials extends StObject {
     
     /** A WP nonce for use with cookie authentication */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
     /** A WP-API Basic HTTP Authentication password */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** A WP-API Basic HTTP Authentication username */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     
@@ -357,20 +360,19 @@ object mod {
     }
   }
   
-  @js.native
   trait HTTPArgument extends StObject {
     
-    var default: js.UndefOr[String | Double] = js.native
+    var default: js.UndefOr[String | Double] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var enum: js.UndefOr[js.Array[String]] = js.native
+    var `enum`: js.UndefOr[js.Array[String]] = js.undefined
     
-    var items: js.UndefOr[Type] = js.native
+    var items: js.UndefOr[Type] = js.undefined
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: js.UndefOr[HTTPArgumentType] = js.native
+    var `type`: js.UndefOr[HTTPArgumentType] = js.undefined
   }
   object HTTPArgument {
     
@@ -451,12 +453,11 @@ object mod {
     def string: typings.wpapi.wpapiStrings.string = "string".asInstanceOf[typings.wpapi.wpapiStrings.string]
   }
   
-  @js.native
   trait HTTPEndpoint extends StObject {
     
-    var args: StringDictionary[HTTPArgument] = js.native
+    var args: StringDictionary[HTTPArgument]
     
-    var methods: js.Array[HTTPMethod] = js.native
+    var methods: js.Array[HTTPMethod]
   }
   object HTTPEndpoint {
     
@@ -508,14 +509,13 @@ object mod {
     def PUT: typings.wpapi.wpapiStrings.PUT = "PUT".asInstanceOf[typings.wpapi.wpapiStrings.PUT]
   }
   
-  @js.native
   trait RegisterRouteOptions extends StObject {
     
-    var methods: js.UndefOr[js.Array[HTTPMethod]] = js.native
+    var methods: js.UndefOr[js.Array[HTTPMethod]] = js.undefined
     
-    var mixins: js.UndefOr[StringDictionary[js.Function1[/* val */ js.Any, _]]] = js.native
+    var mixins: js.UndefOr[StringDictionary[js.Function1[/* val */ js.Any, js.Any]]] = js.undefined
     
-    var params: js.UndefOr[js.Array[String]] = js.native
+    var params: js.UndefOr[js.Array[String]] = js.undefined
   }
   object RegisterRouteOptions {
     
@@ -538,7 +538,7 @@ object mod {
       def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
       @scala.inline
-      def setMixins(value: StringDictionary[js.Function1[/* val */ js.Any, _]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      def setMixins(value: StringDictionary[js.Function1[/* val */ js.Any, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
@@ -554,16 +554,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Route extends StObject {
     
-    var _links: js.UndefOr[Self] = js.native
+    var _links: js.UndefOr[Self] = js.undefined
     
-    var endpoints: js.Array[HTTPEndpoint] = js.native
+    var endpoints: js.Array[HTTPEndpoint]
     
-    var methods: js.Array[HTTPMethod] = js.native
+    var methods: js.Array[HTTPMethod]
     
-    var namespace: String = js.native
+    var namespace: String
   }
   object Route {
     
@@ -601,18 +600,17 @@ object mod {
   
   type Routes = StringDictionary[Route]
   
-  @js.native
   trait Transport extends StObject {
     
-    var delete: js.UndefOr[TransportFunction] = js.native
+    var delete: js.UndefOr[TransportFunction] = js.undefined
     
-    var get: js.UndefOr[TransportFunction] = js.native
+    var get: js.UndefOr[TransportFunction] = js.undefined
     
-    var head: js.UndefOr[TransportFunction] = js.native
+    var head: js.UndefOr[TransportFunction] = js.undefined
     
-    var post: js.UndefOr[TransportFunction] = js.native
+    var post: js.UndefOr[TransportFunction] = js.undefined
     
-    var put: js.UndefOr[TransportFunction] = js.native
+    var put: js.UndefOr[TransportFunction] = js.undefined
   }
   object Transport {
     
@@ -666,7 +664,8 @@ object mod {
     */
   @js.native
   trait WPAPI
-    extends /**
+    extends StObject
+       with /**
     * A request can define its parameter methods, like .id(), .date(),
     * .author(). They are usually decided by WPAPI routes configuration
     * object.
@@ -806,25 +805,26 @@ object mod {
     def users(): WPRequest = js.native
   }
   
-  @js.native
-  trait WPAPIOptions extends Credentials {
+  trait WPAPIOptions
+    extends StObject
+       with Credentials {
     
     /** The URI for a WP-API endpoint */
-    var endpoint: String = js.native
+    var endpoint: String
     
     /**
       * A dictionary of API routes with which to bootstrap the WPAPI instance:
       * the instance will be initialized with default routes only if this
       * property is omitted
       */
-    var routes: js.UndefOr[Routes] = js.native
+    var routes: js.UndefOr[Routes] = js.undefined
     
     /**
       * An optional dictionary of HTTP transport methods (.get, .post, .put,
       * .delete, .head) to use instead of the defaults, e.g. to use a
       * different HTTP library than superagent
       */
-    var transport: js.UndefOr[Transport] = js.native
+    var transport: js.UndefOr[Transport] = js.undefined
   }
   object WPAPIOptions {
     
@@ -858,18 +858,19 @@ object mod {
   
   type WPRequestFactory = js.Function0[WPRequest]
   
-  @js.native
-  trait WPRequestOptions extends Credentials {
+  trait WPRequestOptions
+    extends StObject
+       with Credentials {
     
     /** The URI for a WP-API endpoint */
-    var endpoint: String = js.native
+    var endpoint: String
     
     /**
       * An dictionary of HTTP transport methods (.get, .post, .put,
       * .delete, .head) to use instead of the defaults, e.g. to use a
       * different HTTP library than superagent
       */
-    var transport: js.UndefOr[Transport] = js.native
+    var transport: js.UndefOr[Transport] = js.undefined
   }
   object WPRequestOptions {
     

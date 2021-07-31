@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersResource extends StObject {
   
-  var dataSources: DataSourcesResource = js.native
+  var dataSources: DataSourcesResource
   
-  var dataset: DatasetResource = js.native
+  var dataset: DatasetResource
   
-  var sessions: SessionsResource = js.native
+  var sessions: SessionsResource
 }
 object UsersResource {
   

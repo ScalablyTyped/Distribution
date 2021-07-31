@@ -5,7 +5,6 @@ import typings.tensorflowTfjsData.fileChunkIteratorMod.FileChunkIteratorOptions
 import typings.tensorflowTfjsData.typesMod.FileElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileDataSourceMod {

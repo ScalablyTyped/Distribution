@@ -2,24 +2,22 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A VPN gateway interface.
   */
-@js.native
 trait SchemaVpnGatewayVpnGatewayInterface extends StObject {
   
   /**
     * The numeric ID of this VPN gateway interface.
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * The external IP address for this VPN gateway interface.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaVpnGatewayVpnGatewayInterface {
   

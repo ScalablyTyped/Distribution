@@ -2,36 +2,34 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variable extends StObject {
   
   /**
     * The value of the variable as a structure that specifies a dataset content version.
     */
-  var datasetContentVersionValue: js.UndefOr[DatasetContentVersionValue] = js.native
+  var datasetContentVersionValue: js.UndefOr[DatasetContentVersionValue] = js.undefined
   
   /**
     * The value of the variable as a double (numeric).
     */
-  var doubleValue: js.UndefOr[DoubleValue] = js.native
+  var doubleValue: js.UndefOr[DoubleValue] = js.undefined
   
   /**
     * The name of the variable.
     */
-  var name: VariableName = js.native
+  var name: VariableName
   
   /**
     * The value of the variable as a structure that specifies an output file URI.
     */
-  var outputFileUriValue: js.UndefOr[OutputFileUriValue] = js.native
+  var outputFileUriValue: js.UndefOr[OutputFileUriValue] = js.undefined
   
   /**
     * The value of the variable as a string.
     */
-  var stringValue: js.UndefOr[StringValue] = js.native
+  var stringValue: js.UndefOr[StringValue] = js.undefined
 }
 object Variable {
   

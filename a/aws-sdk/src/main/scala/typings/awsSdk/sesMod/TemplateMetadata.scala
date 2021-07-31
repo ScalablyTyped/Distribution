@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateMetadata extends StObject {
   
   /**
     * The time and date the template was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the template.
     */
-  var Name: js.UndefOr[TemplateName] = js.native
+  var Name: js.UndefOr[TemplateName] = js.undefined
 }
 object TemplateMetadata {
   

@@ -2,31 +2,29 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentMessage extends StObject {
   
   /**
     * Gets or sets the body of the message. If the IV property is provided the body will need to be decrypted using the TaskAgentSession.EncryptionKey value in addition to the IV.
     */
-  var body: String = js.native
+  var body: String
   
   /**
     * Gets or sets the intialization vector used to encrypt this message.
     */
-  var iV: js.Array[Double] = js.native
+  var iV: js.Array[Double]
   
   /**
     * Gets or sets the message identifier.
     */
-  var messageId: Double = js.native
+  var messageId: Double
   
   /**
     * Gets or sets the message type, describing the data contract found in TaskAgentMessage.Body.
     */
-  var messageType: String = js.native
+  var messageType: String
 }
 object TaskAgentMessage {
   

@@ -3,27 +3,25 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** characteristics列表 */
-@js.native
 trait Characteristic extends StObject {
   
   /** 描述符数据 */
-  var descriptors: js.UndefOr[js.Array[CharacteristicDescriptor]] = js.native
+  var descriptors: js.UndefOr[js.Array[CharacteristicDescriptor]] = js.undefined
   
   /** 特征值权限 */
-  var permission: js.UndefOr[CharacteristicPermission] = js.native
+  var permission: js.UndefOr[CharacteristicPermission] = js.undefined
   
   /** 特征值支持的操作 */
-  var properties: js.UndefOr[CharacteristicProperties] = js.native
+  var properties: js.UndefOr[CharacteristicProperties] = js.undefined
   
   /** Characteristic 的 uuid */
-  var uuid: String = js.native
+  var uuid: String
   
   /** 特征值对应的二进制值 */
-  var value: js.UndefOr[ArrayBuffer] = js.native
+  var value: js.UndefOr[ArrayBuffer] = js.undefined
 }
 object Characteristic {
   

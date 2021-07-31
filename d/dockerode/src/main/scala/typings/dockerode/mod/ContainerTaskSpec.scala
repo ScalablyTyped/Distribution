@@ -2,15 +2,14 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerTaskSpec
-  extends TaskSpecBase
+  extends StObject
+     with TaskSpecBase
      with TaskSpec {
   
-  var ContainerSpec: js.UndefOr[typings.dockerode.mod.ContainerSpec] = js.native
+  var ContainerSpec: js.UndefOr[typings.dockerode.mod.ContainerSpec] = js.undefined
 }
 object ContainerTaskSpec {
   

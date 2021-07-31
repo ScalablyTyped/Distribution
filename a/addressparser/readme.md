@@ -11,8 +11,8 @@ Parse e-mail addresses
 | Full name          | addressparser |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 23443951 |
+| # dependents       | 35 |
+| # downloads        | 23765404 |
 | # stars            | 3 |
 
 ## Links

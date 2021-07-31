@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -34,6 +33,9 @@ abstract class QuestionCustomModelBase protected ()
   
   val elements: js.Array[IElement] = js.native
   
+  /* CompleteClass */
+  override def geSurveyData(): ISurveyData = js.native
+  
   /* InferMemberOverrides */
   override def getAllValues(): js.Any = js.native
   
@@ -44,6 +46,12 @@ abstract class QuestionCustomModelBase protected ()
   def getQuestionStartIndex(): String = js.native
   
   def getQuestionTitleLocation(): String = js.native
+  
+  /* CompleteClass */
+  override def getSurvey(): ISurvey = js.native
+  
+  /* CompleteClass */
+  override def getTextProcessor(): ITextProcessor = js.native
   
   /**
     * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
@@ -56,5 +64,5 @@ abstract class QuestionCustomModelBase protected ()
   /* protected */ def initElement(el: SurveyElement): Unit = js.native
   
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): Unit & js.Any = js.native
 }

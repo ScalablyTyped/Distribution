@@ -4,7 +4,6 @@ import typings.cssElementQueries.anon.Height
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeSensorMod {
@@ -22,32 +21,30 @@ object resizeSensorMod {
   /* static members */
   object default {
     
-    @JSImport("css-element-queries/src/ResizeSensor", "default.detach")
+    @JSImport("css-element-queries/src/ResizeSensor", JSImport.Default)
     @js.native
-    def detach(element: js.Array[Element]): Unit = js.native
-    @JSImport("css-element-queries/src/ResizeSensor", "default.detach")
-    @js.native
-    def detach(element: js.Array[Element], callback: ResizeSensorCallback): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def detach(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def detach(element: js.Array[Element], callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Removes the resize sensor, and stops listening to resize events.
       */
-    @JSImport("css-element-queries/src/ResizeSensor", "default.detach")
-    @js.native
-    def detach(element: Element): Unit = js.native
-    @JSImport("css-element-queries/src/ResizeSensor", "default.detach")
-    @js.native
-    def detach(element: Element, callback: ResizeSensorCallback): Unit = js.native
+    @scala.inline
+    def detach(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def detach(element: Element, callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("css-element-queries/src/ResizeSensor", "default.reset")
-    @js.native
-    def reset(element: js.Array[Element]): Unit = js.native
+    @scala.inline
+    def reset(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Resets the resize sensors, so for the next element resize is correctly detected. This is rare cases necessary
       * when the resize sensor isn't initialised correctly or is in a broken state due to DOM modifications.
       */
-    @JSImport("css-element-queries/src/ResizeSensor", "default.reset")
-    @js.native
-    def reset(element: Element): Unit = js.native
+    @scala.inline
+    def reset(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor")
@@ -75,32 +72,30 @@ object resizeSensorMod {
   /* static members */
   object ResizeSensor {
     
-    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor.detach")
+    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor")
     @js.native
-    def detach(element: js.Array[Element]): Unit = js.native
-    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor.detach")
-    @js.native
-    def detach(element: js.Array[Element], callback: ResizeSensorCallback): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def detach(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def detach(element: js.Array[Element], callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Removes the resize sensor, and stops listening to resize events.
       */
-    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor.detach")
-    @js.native
-    def detach(element: Element): Unit = js.native
-    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor.detach")
-    @js.native
-    def detach(element: Element, callback: ResizeSensorCallback): Unit = js.native
+    @scala.inline
+    def detach(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def detach(element: Element, callback: ResizeSensorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor.reset")
-    @js.native
-    def reset(element: js.Array[Element]): Unit = js.native
+    @scala.inline
+    def reset(element: js.Array[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Resets the resize sensors, so for the next element resize is correctly detected. This is rare cases necessary
       * when the resize sensor isn't initialised correctly or is in a broken state due to DOM modifications.
       */
-    @JSImport("css-element-queries/src/ResizeSensor", "ResizeSensor.reset")
-    @js.native
-    def reset(element: Element): Unit = js.native
+    @scala.inline
+    def reset(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ResizeSensorCallback = js.Function1[/* size */ Height, Unit]

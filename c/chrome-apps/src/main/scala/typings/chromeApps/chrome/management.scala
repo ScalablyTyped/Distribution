@@ -26,7 +26,6 @@ import typings.chromeApps.chromeAppsStrings.unknown__
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -42,13 +41,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object management {
   
   /** Information about an installed extension, app, or theme. */
-  @js.native
   trait ExtensionInfo extends StObject {
     
     /**
       * The launch url.
       */
-    var appLaunchUrl: js.UndefOr[String] = js.native
+    var appLaunchUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The currently available launch types.
@@ -65,12 +63,12 @@ object management {
             ]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The description of this app.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * A reason the item is disabled.
@@ -86,22 +84,22 @@ object management {
             unknown__ | permissions_increase_
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Whether it is currently enabled or disabled. */
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
     /**
       * The URL of the homepage of this app.
       * @since Chrome 11.
       */
-    var homepageUrl: js.UndefOr[String] = js.native
+    var homepageUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Returns a list of host based permissions.
       * Permissions regarding url access.
       */
-    var hostPermissions: js.Array[String] = js.native
+    var hostPermissions: js.Array[String]
     
     /**
       * A list of icon information.
@@ -110,10 +108,10 @@ object management {
       * so you might consider using explicit width and height attributes on img tags
       * referencing these images. See the manifest documentation on icons for more details.
       */
-    var icons: js.UndefOr[js.Array[IconInfo]] = js.native
+    var icons: js.UndefOr[js.Array[IconInfo]] = js.undefined
     
     /** The extension's unique identifier. */
-    var id: String = js.native
+    var id: String
     
     /**
       * How the app was installed.
@@ -126,13 +124,13 @@ object management {
           /* keyof chrome-apps.anon.ADMIN */ typings.chromeApps.chromeAppsStrings.ADMIN | DEVELOPMENT | NORMAL | SIDELOAD | OTHER, 
           other_ | normal_ | development_ | admin_ | sideload_
         ]
-      ] = js.native
+      ]
     
     /**
       * True if this is an app, which it will be till this is removed.
       * @deprecated since Chrome 33. Please use management.ExtensionInfo.type.
       */
-    var isApp: js.UndefOr[`true`] = js.native
+    var isApp: js.UndefOr[`true`] = js.undefined
     
     /**
       * The app launch type.
@@ -147,50 +145,50 @@ object management {
             OPEN_AS_REGULAR_TAB | OPEN_AS_PINNED_TAB | OPEN_AS_WINDOW | OPEN_FULL_SCREEN
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether this app can be disabled or uninstalled by the user.
       */
-    var mayDisable: Boolean = js.native
+    var mayDisable: Boolean
     
     /** The name of this app. */
-    var name: String = js.native
+    var name: String
     
     /**
       * Whether the app declares that it supports offline.
       * @since Chrome 15.
       */
-    var offlineEnabled: Boolean = js.native
+    var offlineEnabled: Boolean
     
     /**
       * Returns a list of API based permissions.
       */
-    var permissions: js.Array[Permission] = js.native
+    var permissions: js.Array[Permission]
     
     /**
       * A short version of the name of this app.
       * @since Chrome 31.
       */
-    var shortName: String = js.native
+    var shortName: String
     
     /**
       * The type of this app.
       * @since Chrome 23.
       */
-    var `type`: packaged_app = js.native
+    var `type`: packaged_app
     
     /**
       * The update URL of this app.
       * @since Chrome 16.
       */
-    var updateUrl: js.UndefOr[String] = js.native
+    var updateUrl: js.UndefOr[String] = js.undefined
     
     /** The version of this app. */
-    var version: String = js.native
+    var version: String
     
     /** This app's version name */
-    var versionName: String = js.native
+    var versionName: String
   }
   object ExtensionInfo {
     
@@ -213,12 +211,11 @@ object management {
       offlineEnabled: Boolean,
       permissions: js.Array[Permission],
       shortName: String,
-      `type`: packaged_app,
       version: String,
       versionName: String
     ): ExtensionInfo = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], hostPermissions = hostPermissions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], installType = installType.asInstanceOf[js.Any], mayDisable = mayDisable.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offlineEnabled = offlineEnabled.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versionName = versionName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("packaged_app")
       __obj.asInstanceOf[ExtensionInfo]
     }
     
@@ -374,17 +371,16 @@ object management {
   }
   
   /** Information about an icon belonging to an extension, app, or theme. */
-  @js.native
   trait IconInfo extends StObject {
     
     /** A number representing the width and height of the icon. Likely values include (but are not limited to) 128, 48, 24, and 16. */
-    var size: integer = js.native
+    var size: integer
     
     /**
       * The URL for this icon image.
       * To display a grayscale version of the icon (to indicate that an extension is disabled, for example),
       * append ?grayscale=true to the URL. */
-    var url: String = js.native
+    var url: String
   }
   object IconInfo {
     
@@ -405,14 +401,13 @@ object management {
     }
   }
   
-  @js.native
   trait UninstallOptions extends StObject {
     
     /**
       * Whether or not a confirm-uninstall dialog should prompt the user. Defaults to false for self uninstalls.
       * If an extension uninstalls another extension, this parameter is ignored and the dialog is always shown.
       */
-    var showConfirmDialog: js.UndefOr[Boolean] = js.native
+    var showConfirmDialog: js.UndefOr[Boolean] = js.undefined
   }
   object UninstallOptions {
     

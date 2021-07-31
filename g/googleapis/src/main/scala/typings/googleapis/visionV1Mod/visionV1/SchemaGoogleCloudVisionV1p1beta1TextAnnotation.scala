@@ -2,7 +2,6 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Please refer to the TextAnnotation.TextProperty message definition below
   * for more detail.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1TextAnnotation extends StObject {
   
   /**
     * List of pages detected by OCR.
     */
-  var pages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1Page]] = js.native
+  var pages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1Page]] = js.undefined
   
   /**
     * UTF-8 text detected on the pages.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1TextAnnotation {
   

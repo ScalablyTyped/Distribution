@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachVolumeInput extends StObject {
   
   /**
     * Set to true to forcibly remove the iSCSI connection of the target volume and detach the volume. The default is false. If this value is set to false, you must manually disconnect the iSCSI connection from the target volume. Valid Values: true | false 
     */
-  var ForceDetach: js.UndefOr[Boolean] = js.native
+  var ForceDetach: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the volume to detach from the gateway.
     */
-  var VolumeARN: typings.awsSdk.storagegatewayMod.VolumeARN = js.native
+  var VolumeARN: typings.awsSdk.storagegatewayMod.VolumeARN
 }
 object DetachVolumeInput {
   

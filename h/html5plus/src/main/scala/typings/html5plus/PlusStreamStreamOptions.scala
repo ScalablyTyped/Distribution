@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
   */
-@js.native
 trait PlusStreamStreamOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var appid: js.UndefOr[String] = js.native
+  var appid: js.UndefOr[String] = js.undefined
   
   /**
     * 流应用运行模式
@@ -28,7 +26,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var appmode: js.UndefOr[String] = js.native
+  var appmode: js.UndefOr[String] = js.undefined
   
   /**
     * 启动流应用的直达页面链接地址
@@ -36,7 +34,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var direct_page: js.UndefOr[String] = js.native
+  var direct_page: js.UndefOr[String] = js.undefined
   
   /**
     * 流应用运行参数
@@ -44,7 +42,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var extras: js.UndefOr[js.Any] = js.native
+  var extras: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 流应用图标
@@ -52,7 +50,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * 流应用启动类型
@@ -60,7 +58,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var launcher: js.UndefOr[String] = js.native
+  var launcher: js.UndefOr[String] = js.undefined
   
   /**
     * 启动流应用的快捷方式逻辑
@@ -74,7 +72,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var shortcut: js.UndefOr[String] = js.native
+  var shortcut: js.UndefOr[String] = js.undefined
   
   /**
     * 退出流应用的快捷方式逻辑
@@ -86,7 +84,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var shortcutQuit: js.UndefOr[String] = js.native
+  var shortcutQuit: js.UndefOr[String] = js.undefined
   
   /**
     * 应用启动界面样式
@@ -97,7 +95,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var splash: js.UndefOr[String] = js.native
+  var splash: js.UndefOr[String] = js.undefined
   
   /**
     * 流应用首页窗口对象样式
@@ -105,7 +103,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var styles: js.UndefOr[PlusStreamLaunchWebviewStyles] = js.native
+  var styles: js.UndefOr[PlusStreamLaunchWebviewStyles] = js.undefined
   
   /**
     * 流应用名称
@@ -113,7 +111,7 @@ trait PlusStreamStreamOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlusStreamStreamOptions {
   

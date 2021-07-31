@@ -17,15 +17,13 @@ import typings.jimpCore.utilsMod.GetPluginFuncArrEncoders
 import typings.jimpCore.utilsMod.UnionToIntersection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `class`: /* import warning: importer.ImportType#apply Failed type conversion: infer Class */ js.Any = js.native
+    var `class`: /* import warning: importer.ImportType#apply Failed type conversion: infer Class */ js.Any
   }
   object `0` {
     
@@ -46,18 +44,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Class extends StObject {
     
-    var `class`: js.UndefOr[scala.Nothing] = js.native
+    var `class`: js.UndefOr[scala.Nothing] = js.undefined
     
-    var constants: js.UndefOr[scala.Nothing] = js.native
+    var constants: js.UndefOr[scala.Nothing] = js.undefined
   }
   
-  @js.native
   trait Constants extends StObject {
     
-    var constants: /* import warning: importer.ImportType#apply Failed type conversion: infer Constants */ js.Any = js.native
+    var constants: /* import warning: importer.ImportType#apply Failed type conversion: infer Constants */ js.Any
   }
   object Constants {
     
@@ -79,10 +75,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Decoders extends StObject {
     
-    var decoders: /* import warning: importer.ImportType#apply Failed type conversion: infer Decoders */ js.Any = js.native
+    var decoders: /* import warning: importer.ImportType#apply Failed type conversion: infer Decoders */ js.Any
   }
   object Decoders {
     
@@ -104,12 +99,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DecodersEncoders[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] extends StObject {
     
-    var decoders: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]] = js.native
+    var decoders: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]]
     
-    var encoders: UnionToIntersection[GetPluginFuncArrEncoders[PluginFuncArr]] = js.native
+    var encoders: UnionToIntersection[GetPluginFuncArrEncoders[PluginFuncArr]]
   }
   object DecodersEncoders {
     
@@ -123,7 +117,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DecodersEncodersMutableBuilder[Self <: DecodersEncoders[_], PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] (val x: Self with DecodersEncoders[PluginFuncArr]) extends AnyVal {
+    implicit class DecodersEncodersMutableBuilder[Self <: DecodersEncoders[?], PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] (val x: Self & DecodersEncoders[PluginFuncArr]) extends AnyVal {
       
       @scala.inline
       def setDecoders(value: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
@@ -133,14 +127,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey[T /* <: ListenableName */]
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with ListenerData[T] {
     
-    var eventName: `before-change` | changed = js.native
+    var eventName: `before-change` | changed
     
-    var methodName: T = js.native
+    var methodName: T
   }
   object Dictkey {
     
@@ -151,7 +145,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey[_], T /* <: ListenableName */] (val x: Self with Dictkey[T]) extends AnyVal {
+    implicit class DictkeyMutableBuilder[Self <: Dictkey[?], T /* <: ListenableName */] (val x: Self & Dictkey[T]) extends AnyVal {
       
       @scala.inline
       def setEventName(value: `before-change` | changed): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
@@ -161,10 +155,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoders extends StObject {
     
-    var encoders: /* import warning: importer.ImportType#apply Failed type conversion: infer Encoders */ js.Any = js.native
+    var encoders: /* import warning: importer.ImportType#apply Failed type conversion: infer Encoders */ js.Any
   }
   object Encoders {
     
@@ -186,12 +179,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait EventName[T /* <: ListenableName */] extends ListenerData[T] {
+  trait EventName[T /* <: ListenableName */]
+    extends StObject
+       with ListenerData[T] {
     
-    var eventName: T = js.native
+    var eventName: T
     
-    var methodName: clone | ChangeName | constructor = js.native
+    var methodName: clone | ChangeName | constructor
   }
   object EventName {
     
@@ -202,7 +196,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EventNameMutableBuilder[Self <: EventName[_], T /* <: ListenableName */] (val x: Self with EventName[T]) extends AnyVal {
+    implicit class EventNameMutableBuilder[Self <: EventName[?], T /* <: ListenableName */] (val x: Self & EventName[T]) extends AnyVal {
       
       @scala.inline
       def setEventName(value: T): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
@@ -213,10 +207,9 @@ object anon {
   }
   
   /* Inlined std.Required<{  class :any}> */
-  @js.native
   trait Requiredclassany extends StObject {
     
-    var `class`: js.Any = js.native
+    var `class`: js.Any
   }
   object Requiredclassany {
     
@@ -236,10 +229,9 @@ object anon {
   }
   
   /* Inlined std.Required<{  constants :any}> */
-  @js.native
   trait Requiredconstantsany extends StObject {
     
-    var constants: js.Any = js.native
+    var constants: js.Any
   }
   object Requiredconstantsany {
     
@@ -257,12 +249,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

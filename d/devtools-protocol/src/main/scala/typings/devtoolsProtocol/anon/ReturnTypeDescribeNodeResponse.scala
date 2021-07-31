@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.DescribeNodeRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.DescribeNodeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeDescribeNodeResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[DescribeNodeRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[DescribeNodeRequest]]
   
-  var returnType: DescribeNodeResponse = js.native
+  var returnType: DescribeNodeResponse
 }
 object ReturnTypeDescribeNodeResponse {
   

@@ -2,15 +2,13 @@ package typings.expressHandlebars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialTemplateOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var precompiled: js.UndefOr[Boolean] = js.native
+  var precompiled: js.UndefOr[Boolean] = js.undefined
 }
 object PartialTemplateOptions {
   

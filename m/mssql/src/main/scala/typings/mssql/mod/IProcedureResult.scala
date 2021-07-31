@@ -3,13 +3,13 @@ package typings.mssql.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IProcedureResult[T] extends IResult[T] {
+trait IProcedureResult[T]
+  extends StObject
+     with IResult[T] {
   
-  var returnValue: js.Any = js.native
+  var returnValue: js.Any
 }
 object IProcedureResult {
   
@@ -26,7 +26,7 @@ object IProcedureResult {
   }
   
   @scala.inline
-  implicit class IProcedureResultMutableBuilder[Self <: IProcedureResult[_], T] (val x: Self with IProcedureResult[T]) extends AnyVal {
+  implicit class IProcedureResultMutableBuilder[Self <: IProcedureResult[?], T] (val x: Self & IProcedureResult[T]) extends AnyVal {
     
     @scala.inline
     def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])

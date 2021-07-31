@@ -2,41 +2,39 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityGroupRuleDescription extends StObject {
   
   /**
     * The start of the port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type number. A value of -1 indicates all ICMP/ICMPv6 types.
     */
-  var FromPort: js.UndefOr[IPPortNumber] = js.native
+  var FromPort: js.UndefOr[IPPortNumber] = js.undefined
   
   /**
     * The IPv4 ranges for the security group rule.
     */
-  var IPV4Range: js.UndefOr[CIDR] = js.native
+  var IPV4Range: js.UndefOr[CIDR] = js.undefined
   
   /**
     * The IPv6 ranges for the security group rule.
     */
-  var IPV6Range: js.UndefOr[CIDR] = js.native
+  var IPV6Range: js.UndefOr[CIDR] = js.undefined
   
   /**
     * The ID of the prefix list for the security group rule.
     */
-  var PrefixListId: js.UndefOr[ResourceId] = js.native
+  var PrefixListId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The IP protocol name (tcp, udp, icmp, icmpv6) or number.
     */
-  var Protocol: js.UndefOr[LengthBoundedString] = js.native
+  var Protocol: js.UndefOr[LengthBoundedString] = js.undefined
   
   /**
     * The end of the port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code. A value of -1 indicates all ICMP/ICMPv6 codes.
     */
-  var ToPort: js.UndefOr[IPPortNumber] = js.native
+  var ToPort: js.UndefOr[IPPortNumber] = js.undefined
 }
 object SecurityGroupRuleDescription {
   

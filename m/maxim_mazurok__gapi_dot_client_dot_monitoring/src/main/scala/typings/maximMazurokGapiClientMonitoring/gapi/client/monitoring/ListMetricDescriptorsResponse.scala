@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMetricDescriptorsResponse extends StObject {
   
   /** The metric descriptors that are available to the project and that match the value of filter, if present. */
-  var metricDescriptors: js.UndefOr[js.Array[MetricDescriptor]] = js.native
+  var metricDescriptors: js.UndefOr[js.Array[MetricDescriptor]] = js.undefined
   
   /**
     * If there are more results than have been returned, then this field is set to a non-empty value. To see the additional results, use that value as page_token in the next call to this
     * method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListMetricDescriptorsResponse {
   

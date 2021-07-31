@@ -11,8 +11,8 @@ Check if a file path is an image
 | Full name          | is-image |
 | Keywords           | extension, extensions, file, path, check, detect, is, image, img, photo, picture, jpg, jpeg, png |
 | # releases         | 2 |
-| # dependents       | 69 |
-| # downloads        | 1280339 |
+| # dependents       | 72 |
+| # downloads        | 1307528 |
 | # stars            | 3 |
 
 ## Links

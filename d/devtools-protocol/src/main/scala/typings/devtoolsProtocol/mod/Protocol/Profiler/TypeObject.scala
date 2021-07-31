@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeObject extends StObject {
   
   /**
     * Name of a type collected with type profiling.
     */
-  var name: String = js.native
+  var name: String
 }
 object TypeObject {
   

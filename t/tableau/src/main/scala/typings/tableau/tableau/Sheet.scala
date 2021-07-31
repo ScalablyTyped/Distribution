@@ -2,45 +2,43 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sheet extends StObject {
   
   /**
     * Sets the size information on a sheet. Note that if the sheet is a Worksheet,
     * only SheetSizeBehavior.AUTOMATIC is allowed since you can’t actually set a Worksheet to a fixed size.
     */
-  def changeSizeAsync(options: SheetSizeOptions): js.Promise[SheetSizeOptions] = js.native
+  def changeSizeAsync(options: SheetSizeOptions): js.Promise[SheetSizeOptions]
   
   /** Gets the index of the sheet within the published tabs. Note that hidden tabs are still counted in the ordering, as long as they are published. */
-  def getIndex(): Double = js.native
+  def getIndex(): Double
   
   /** Gets a value indicating whether the sheet is the currently active sheet. */
-  def getIsActive(): Boolean = js.native
+  def getIsActive(): Boolean
   
   /**
     * Gets a value indicating whether the sheet is hidden in the UI.
     * Note that if the entire tab control is hidden, it does not affect the state of this flag.
     * This sheet may still report that it is visible even when the tabs control is hidden.
     */
-  def getIsHidden(): Boolean = js.native
+  def getIsHidden(): Boolean
   
   /** Gets the name of the sheet. */
-  def getName(): String = js.native
+  def getName(): String
   
   /** Gets the type of the sheet. SheetType is an enum with the following values: WORKSHEET , DASHBOARD and STORY. */
-  def getSheetType(): SheetType = js.native
+  def getSheetType(): SheetType
   
   /** Gets the size information that the author specified when publishing the workbook. */
-  def getSize(): SheetSizeOptions = js.native
+  def getSize(): SheetSizeOptions
   
   /** Gets the URL for this sheet. */
-  def getUrl(): String = js.native
+  def getUrl(): String
   
   /** Gets the Workbook to which this Sheet belongs. */
-  def getWorkbook(): Workbook = js.native
+  def getWorkbook(): Workbook
 }
 object Sheet {
   

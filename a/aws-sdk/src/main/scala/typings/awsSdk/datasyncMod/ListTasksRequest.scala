@@ -2,26 +2,24 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTasksRequest extends StObject {
   
   /**
     * You can use API filters to narrow down the list of resources returned by ListTasks. For example, to retrieve all tasks on a specific source location, you can use ListTasks with filter name LocationId and Operator Equals with the ARN for the location.
     */
-  var Filters: js.UndefOr[TaskFilters] = js.native
+  var Filters: js.UndefOr[TaskFilters] = js.undefined
   
   /**
     * The maximum number of tasks to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.datasyncMod.MaxResults] = js.undefined
   
   /**
     * An opaque string that indicates the position at which to begin the next list of tasks.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.datasyncMod.NextToken] = js.undefined
 }
 object ListTasksRequest {
   

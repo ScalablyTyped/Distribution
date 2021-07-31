@@ -4,45 +4,43 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Deploy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateDeploymentResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var creator: Avatarurl = js.native
+  var creator: Avatarurl
   
-  var description: String = js.native
+  var description: String
   
-  var environment: String = js.native
+  var environment: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var original_environment: String = js.native
+  var original_environment: String
   
-  var payload: Deploy = js.native
+  var payload: Deploy
   
-  var production_environment: Boolean = js.native
+  var production_environment: Boolean
   
-  var ref: String = js.native
+  var ref: String
   
-  var repository_url: String = js.native
+  var repository_url: String
   
-  var sha: String = js.native
+  var sha: String
   
-  var statuses_url: String = js.native
+  var statuses_url: String
   
-  var task: String = js.native
+  var task: String
   
-  var transient_environment: Boolean = js.native
+  var transient_environment: Boolean
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object ReposCreateDeploymentResponseData {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConformancePackEvaluationFilters extends StObject {
   
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
     */
-  var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.native
+  var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.undefined
   
   /**
     * Filters the results by AWS Config rule names.
     */
-  var ConfigRuleNames: js.UndefOr[ConformancePackConfigRuleNames] = js.native
+  var ConfigRuleNames: js.UndefOr[ConformancePackConfigRuleNames] = js.undefined
   
   /**
     * Filters the results by resource IDs.  This is valid only when you provide resource type. If there is no resource type, you will see an error. 
     */
-  var ResourceIds: js.UndefOr[ConformancePackComplianceResourceIds] = js.native
+  var ResourceIds: js.UndefOr[ConformancePackComplianceResourceIds] = js.undefined
   
   /**
     * Filters the results by the resource type (for example, "AWS::EC2::Instance"). 
     */
-  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.native
+  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object ConformancePackEvaluationFilters {
   

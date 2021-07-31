@@ -3,43 +3,41 @@ package typings.aframe.anon
 import typings.three.shaderLibMod.Shader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofShaderLib extends StObject {
   
-  var background: Shader = js.native
+  var background: Shader
   
-  var basic: Shader = js.native
+  var basic: Shader
   
-  var cube: Shader = js.native
+  var cube: Shader
   
-  var dashed: Shader = js.native
+  var dashed: Shader
   
-  var depth: Shader = js.native
+  var depth: Shader
   
-  var distanceRGBA: Shader = js.native
+  var distanceRGBA: Shader
   
-  var equirect: Shader = js.native
+  var equirect: Shader
   
-  var lambert: Shader = js.native
+  var lambert: Shader
   
-  var matcap: Shader = js.native
+  var matcap: Shader
   
-  var normal: Shader = js.native
+  var normal: Shader
   
-  var phong: Shader = js.native
+  var phong: Shader
   
-  var physical: Shader = js.native
+  var physical: Shader
   
-  var points: Shader = js.native
+  var points: Shader
   
-  var shadow: Shader = js.native
+  var shadow: Shader
   
-  var sprite: Shader = js.native
+  var sprite: Shader
   
-  var standard: Shader = js.native
+  var standard: Shader
 }
 object TypeofShaderLib {
   

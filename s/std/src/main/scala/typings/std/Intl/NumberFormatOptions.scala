@@ -2,43 +2,41 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberFormatOptions extends StObject {
   
-  var compactDisplay: js.UndefOr[String] = js.native
+  var compactDisplay: js.UndefOr[String] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var currencyDisplay: js.UndefOr[String] = js.native
+  var currencyDisplay: js.UndefOr[String] = js.undefined
   
-  var currencySign: js.UndefOr[String] = js.native
+  var currencySign: js.UndefOr[String] = js.undefined
   
-  var localeMatcher: js.UndefOr[String] = js.native
+  var localeMatcher: js.UndefOr[String] = js.undefined
   
-  var maximumFractionDigits: js.UndefOr[Double] = js.native
+  var maximumFractionDigits: js.UndefOr[Double] = js.undefined
   
-  var maximumSignificantDigits: js.UndefOr[Double] = js.native
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumFractionDigits: js.UndefOr[Double] = js.native
+  var minimumFractionDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumIntegerDigits: js.UndefOr[Double] = js.native
+  var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumSignificantDigits: js.UndefOr[Double] = js.native
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var notation: js.UndefOr[String] = js.native
+  var notation: js.UndefOr[String] = js.undefined
   
-  var signDisplay: js.UndefOr[String] = js.native
+  var signDisplay: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: js.UndefOr[String] = js.native
+  var unitDisplay: js.UndefOr[String] = js.undefined
   
-  var useGrouping: js.UndefOr[Boolean] = js.native
+  var useGrouping: js.UndefOr[Boolean] = js.undefined
 }
 object NumberFormatOptions {
   

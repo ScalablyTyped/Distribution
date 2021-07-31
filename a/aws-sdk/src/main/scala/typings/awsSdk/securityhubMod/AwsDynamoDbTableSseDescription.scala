@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableSseDescription extends StObject {
   
   /**
     * If the key is inaccessible, the date and time when DynamoDB detected that the key was inaccessible. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var InaccessibleEncryptionDateTime: js.UndefOr[NonEmptyString] = js.native
+  var InaccessibleEncryptionDateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the AWS KMS customer master key (CMK) that is used for the AWS KMS encryption.
     */
-  var KmsMasterKeyArn: js.UndefOr[NonEmptyString] = js.native
+  var KmsMasterKeyArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of server-side encryption.
     */
-  var SseType: js.UndefOr[NonEmptyString] = js.native
+  var SseType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the server-side encryption.
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableSseDescription {
   

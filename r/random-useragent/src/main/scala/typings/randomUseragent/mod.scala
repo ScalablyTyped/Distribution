@@ -2,89 +2,83 @@ package typings.randomUseragent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("random-useragent", "getAll")
+  @JSImport("random-useragent", JSImport.Namespace)
   @js.native
-  def getAll(): js.Array[String] = js.native
-  @JSImport("random-useragent", "getAll")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getAll(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[String]]
+  @scala.inline
   def getAll(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
-  ): js.Array[String] = js.native
+  ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("random-useragent", "getAllData")
-  @js.native
-  def getAllData(): js.Array[UserAgent] = js.native
-  @JSImport("random-useragent", "getAllData")
-  @js.native
+  @scala.inline
+  def getAllData(): js.Array[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")().asInstanceOf[js.Array[UserAgent]]
+  @scala.inline
   def getAllData(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
-  ): js.Array[UserAgent] = js.native
+  ): js.Array[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllData")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[UserAgent]]
   
-  @JSImport("random-useragent", "getRandom")
-  @js.native
-  def getRandom(): String | Null = js.native
-  @JSImport("random-useragent", "getRandom")
-  @js.native
+  @scala.inline
+  def getRandom(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")().asInstanceOf[String | Null]
+  @scala.inline
   def getRandom(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
-  ): String | Null = js.native
+  ): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandom")(filter.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("random-useragent", "getRandomData")
-  @js.native
-  def getRandomData(): UserAgent | Null = js.native
-  @JSImport("random-useragent", "getRandomData")
-  @js.native
+  @scala.inline
+  def getRandomData(): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")().asInstanceOf[UserAgent | Null]
+  @scala.inline
   def getRandomData(
     filter: js.Function3[/* value */ UserAgent, /* index */ Double, /* array */ js.Array[UserAgent], Boolean]
-  ): UserAgent | Null = js.native
+  ): UserAgent | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomData")(filter.asInstanceOf[js.Any]).asInstanceOf[UserAgent | Null]
   
-  @js.native
   trait UserAgent extends StObject {
     
-    var appCodename: String = js.native
+    var appCodename: String
     
-    var appName: String = js.native
+    var appName: String
     
-    var appVersion: String = js.native
+    var appVersion: String
     
-    var browserMajor: String = js.native
+    var browserMajor: String
     
-    var browserName: String = js.native
+    var browserName: String
     
-    var browserVersion: String = js.native
+    var browserVersion: String
     
-    var cpuArchitecture: String = js.native
+    var cpuArchitecture: String
     
-    var description: String = js.native
+    var description: String
     
-    var deviceModel: String = js.native
+    var deviceModel: String
     
-    var deviceType: String = js.native
+    var deviceType: String
     
-    var deviceVendor: String = js.native
+    var deviceVendor: String
     
-    var engineName: String = js.native
+    var engineName: String
     
-    var engineVersion: String = js.native
+    var engineVersion: String
     
-    var folder: String = js.native
+    var folder: String
     
-    var osName: String = js.native
+    var osName: String
     
-    var osVersion: String = js.native
+    var osVersion: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var userAgent: String = js.native
+    var userAgent: String
     
-    var vendor: String = js.native
+    var vendor: String
     
-    var vendorSub: String = js.native
+    var vendorSub: String
   }
   object UserAgent {
     

@@ -2,31 +2,29 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1Result extends StObject {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var actionIncomplete: js.UndefOr[Boolean] = js.native
+  var actionIncomplete: js.UndefOr[Boolean] = js.undefined
   
-  var contexts: js.UndefOr[js.Array[DialogflowV1Context]] = js.native
+  var contexts: js.UndefOr[js.Array[DialogflowV1Context]] = js.undefined
   
-  var fulfillment: js.UndefOr[DialogflowV1Fulfillment] = js.native
+  var fulfillment: js.UndefOr[DialogflowV1Fulfillment] = js.undefined
   
-  var metadata: js.UndefOr[DialogflowV1Metadata] = js.native
+  var metadata: js.UndefOr[DialogflowV1Metadata] = js.undefined
   
-  var parameters: js.UndefOr[DialogflowV1Parameters] = js.native
+  var parameters: js.UndefOr[DialogflowV1Parameters] = js.undefined
   
-  var resolvedQuery: js.UndefOr[String] = js.native
+  var resolvedQuery: js.UndefOr[String] = js.undefined
   
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var speech: js.UndefOr[String] = js.native
+  var speech: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1Result {
   

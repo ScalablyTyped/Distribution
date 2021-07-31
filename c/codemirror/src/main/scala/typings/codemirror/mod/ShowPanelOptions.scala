@@ -6,17 +6,15 @@ import typings.codemirror.codemirrorStrings.bottom
 import typings.codemirror.codemirrorStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowPanelOptions extends StObject {
   
   /**The new panel will be added after the given panel. */
-  var after: js.UndefOr[Panel] = js.native
+  var after: js.UndefOr[Panel] = js.undefined
   
   /**The new panel will be added before the given panel. */
-  var before: js.UndefOr[Panel] = js.native
+  var before: js.UndefOr[Panel] = js.undefined
   
   /**Controls the position of the newly added panel. The following values are recognized:
     * `top` (default): Adds the panel at the very top.
@@ -24,13 +22,13 @@ trait ShowPanelOptions extends StObject {
     *  `bottom`: Adds the panel at the very bottom.
     *  `before-bottom`: Adds the panel at the top of the bottom panels.
     */
-  var position: js.UndefOr[top | `after-top` | bottom | `before-bottom`] = js.native
+  var position: js.UndefOr[top | `after-top` | bottom | `before-bottom`] = js.undefined
   
   /**The new panel will replace the given panel. */
-  var replace: js.UndefOr[Panel] = js.native
+  var replace: js.UndefOr[Panel] = js.undefined
   
   /**Whether to scroll the editor to keep the text's vertical position stable, when adding a panel above it. Defaults to false. */
-  var stable: js.UndefOr[Boolean] = js.native
+  var stable: js.UndefOr[Boolean] = js.undefined
 }
 object ShowPanelOptions {
   

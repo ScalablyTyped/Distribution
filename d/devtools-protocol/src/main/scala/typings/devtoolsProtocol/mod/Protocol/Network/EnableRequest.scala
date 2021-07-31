@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableRequest extends StObject {
   
   /**
     * Longest post body size (in bytes) that would be included in requestWillBeSent notification
     */
-  var maxPostDataSize: js.UndefOr[integer] = js.native
+  var maxPostDataSize: js.UndefOr[integer] = js.undefined
   
   /**
     * Per-resource buffer size in bytes to use when preserving network payloads (XHRs, etc).
     */
-  var maxResourceBufferSize: js.UndefOr[integer] = js.native
+  var maxResourceBufferSize: js.UndefOr[integer] = js.undefined
   
   /**
     * Buffer size in bytes to use when preserving network payloads (XHRs, etc).
     */
-  var maxTotalBufferSize: js.UndefOr[integer] = js.native
+  var maxTotalBufferSize: js.UndefOr[integer] = js.undefined
 }
 object EnableRequest {
   

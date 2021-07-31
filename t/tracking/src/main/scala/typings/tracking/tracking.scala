@@ -3,7 +3,6 @@ package typings.tracking
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tracking {
@@ -18,7 +17,9 @@ object tracking {
     * difference evaluation.
     */
   @js.native
-  trait ColorTracker extends Tracker {
+  trait ColorTracker
+    extends StObject
+       with Tracker {
     
     /** Gets the colors being tracked by the `ColorTracker` instance. */
     def getColors(): js.Array[String] = js.native
@@ -116,7 +117,9 @@ object tracking {
     * Object tracker utility.
     */
   @js.native
-  trait ObjectTracker extends Tracker {
+  trait ObjectTracker
+    extends StObject
+       with Tracker {
     
     /** Gets the tracker HAAR classifiers. */
     def getClassifiers(): js.Array[Double] = js.native
@@ -167,10 +170,9 @@ object tracking {
   /**
     * Event data emmitted by a `track` event.
     */
-  @js.native
   trait TrackEvent extends StObject {
     
-    var data: js.Array[TrackRect] = js.native
+    var data: js.Array[TrackRect]
   }
   object TrackEvent {
     
@@ -199,23 +201,22 @@ object tracking {
   /**
     * Bounding box data for individal tracking rectangles.
     */
-  @js.native
   trait TrackRect extends StObject {
     
     /** Color being tracked (for ColorTracker only) */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Rectange height. */
-    var height: Double = js.native
+    var height: Double
     
     /** Rectange width. */
-    var width: Double = js.native
+    var width: Double
     
     /** Horizontal position of top-left corner. */
-    var x: Double = js.native
+    var x: Double
     
     /** Vertical position of top-left corner */
-    var y: Double = js.native
+    var y: Double
   }
   object TrackRect {
     
@@ -252,7 +253,9 @@ object tracking {
     * Base class for specific tracker types.
     */
   @js.native
-  trait Tracker extends EventEmitter {
+  trait Tracker
+    extends StObject
+       with EventEmitter {
     
     /**
       * Tracks the pixels on the array. This method is called for each video
@@ -270,7 +273,9 @@ object tracking {
     * A new tracker should be created instead.
     */
   @js.native
-  trait TrackerTask extends EventEmitter {
+  trait TrackerTask
+    extends StObject
+       with EventEmitter {
     
     /**
       * Gets the tracker instance managed by this task.

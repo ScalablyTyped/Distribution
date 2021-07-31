@@ -3,15 +3,13 @@ package typings.terminalKit.anon
 import typings.terminalKit.screenBufferMod.Attributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrChar extends StObject {
   
-  var attr: Attributes = js.native
+  var attr: Attributes
   
-  var char: String = js.native
+  var char: String
 }
 object AttrChar {
   

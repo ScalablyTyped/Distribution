@@ -10,17 +10,17 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarMod {
   
   @JSImport("@react-md/avatar/types/Avatar", "Avatar")
   @js.native
-  val Avatar: ForwardRefExoticComponent[AvatarProps with RefAttributes[HTMLSpanElement]] = js.native
+  val Avatar: ForwardRefExoticComponent[AvatarProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  @js.native
-  trait AvatarProps extends HTMLAttributes[HTMLSpanElement] {
+  trait AvatarProps
+    extends StObject
+       with HTMLAttributes[HTMLSpanElement] {
     
     /**
       * An optional alt tag to display on the `<img>` when the `src` prop is also
@@ -31,7 +31,7 @@ object avatarMod {
       * accompanied by some other component or main content as it will be extra
       * noise for screen readers.
       */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /**
       * An optional object of image props and ref that can be used to create an
@@ -44,7 +44,7 @@ object avatarMod {
       *
       * @since 2.2.0
       */
-    var imgProps: js.UndefOr[PropsWithRef[ImgAttributes, HTMLImageElement]] = js.native
+    var imgProps: js.UndefOr[PropsWithRef[ImgAttributes, HTMLImageElement]] = js.undefined
     
     /**
       * An optional `referrerPolicy` to provide to the `<img>` element if the `src`
@@ -54,14 +54,14 @@ object avatarMod {
       *
       * @since 2.2.0
       */
-    var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.native
+    var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
     
     /**
       * This should be an image `src` attribute to create an avatar from. When this
       * prop is defined, you should not add any children to the avatar as the
       * positioning will break.
       */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object AvatarProps {
     

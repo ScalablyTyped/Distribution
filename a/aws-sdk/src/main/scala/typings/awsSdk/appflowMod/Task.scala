@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Task extends StObject {
   
   /**
     *  The operation to be performed on the provided source fields. 
     */
-  var connectorOperator: js.UndefOr[ConnectorOperator] = js.native
+  var connectorOperator: js.UndefOr[ConnectorOperator] = js.undefined
   
   /**
     *  A field in a destination connector, or a field value against which Amazon AppFlow validates a source field. 
     */
-  var destinationField: js.UndefOr[DestinationField] = js.native
+  var destinationField: js.UndefOr[DestinationField] = js.undefined
   
   /**
     *  The source fields to which a particular task is applied. 
     */
-  var sourceFields: SourceFields = js.native
+  var sourceFields: SourceFields
   
   /**
     *  A map used to store task-related information. The execution service looks for particular information based on the TaskType. 
     */
-  var taskProperties: js.UndefOr[TaskPropertiesMap] = js.native
+  var taskProperties: js.UndefOr[TaskPropertiesMap] = js.undefined
   
   /**
     *  Specifies the particular task implementation that Amazon AppFlow performs. 
     */
-  var taskType: TaskType = js.native
+  var taskType: TaskType
 }
 object Task {
   

@@ -5,20 +5,20 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusVisibleMod {
   
-  @JSImport("@material-ui/core/ButtonBase/focusVisible", "detectFocusVisible")
+  @JSImport("@material-ui/core/ButtonBase/focusVisible", JSImport.Namespace)
   @js.native
-  def detectFocusVisible(instance: FocusVisibleCheckTime, element: Element, cb: js.Function0[Unit], attempt: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@material-ui/core/ButtonBase/focusVisible", "focusKeyPressed")
-  @js.native
-  def focusKeyPressed(pressed: Boolean): Boolean = js.native
+  @scala.inline
+  def detectFocusVisible(instance: FocusVisibleCheckTime, element: Element, cb: js.Function0[Unit], attempt: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFocusVisible")(instance.asInstanceOf[js.Any], element.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], attempt.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@material-ui/core/ButtonBase/focusVisible", "listenForFocusKeys")
-  @js.native
-  def listenForFocusKeys(window: Window): Unit = js.native
+  @scala.inline
+  def focusKeyPressed(pressed: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusKeyPressed")(pressed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def listenForFocusKeys(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listenForFocusKeys")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -7,7 +7,6 @@ import typings.std.File
 import typings.tusJsClient.anon.PickReadableStreamDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,12 +36,14 @@ object mod {
   /* static members */
   object Upload {
     
-    @JSImport("tus-js-client", "Upload.terminate")
+    @JSImport("tus-js-client", "Upload")
     @js.native
-    def terminate(url: String): js.Promise[Unit] = js.native
-    @JSImport("tus-js-client", "Upload.terminate")
-    @js.native
-    def terminate(url: String, options: UploadOptions): js.Promise[Unit] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def terminate(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def terminate(url: String, options: UploadOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("tus-js-client", "canStoreURLs")
@@ -57,10 +58,9 @@ object mod {
   @js.native
   val isSupported: Boolean = js.native
   
-  @js.native
   trait FileReader extends StObject {
     
-    def openFile(input: js.Any, chunkSize: Double): js.Promise[FileSource] = js.native
+    def openFile(input: js.Any, chunkSize: Double): js.Promise[FileSource]
   }
   object FileReader {
     
@@ -78,14 +78,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FileSource extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var size: Double = js.native
+    var size: Double
     
-    def slice(start: Double, end: Double): js.Promise[SliceResult] = js.native
+    def slice(start: Double, end: Double): js.Promise[SliceResult]
   }
   object FileSource {
     
@@ -109,25 +108,24 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpRequest extends StObject {
     
-    def abort(): js.Promise[Unit] = js.native
+    def abort(): js.Promise[Unit]
     
-    def getHeader(header: String): String = js.native
+    def getHeader(header: String): String
     
-    def getMethod(): String = js.native
+    def getMethod(): String
     
-    def getURL(): String = js.native
+    def getURL(): String
     
     // Return an environment specific object, e.g. the XMLHttpRequest object in browsers.
-    def getUnderlyingObject(): js.Any = js.native
+    def getUnderlyingObject(): js.Any
     
-    def send(body: js.Any): js.Promise[HttpResponse] = js.native
+    def send(body: js.Any): js.Promise[HttpResponse]
     
-    def setHeader(header: String, value: String): Unit = js.native
+    def setHeader(header: String, value: String): Unit
     
-    def setProgressHandler(handler: js.Function1[/* bytesSent */ Double, Unit]): Unit = js.native
+    def setProgressHandler(handler: js.Function1[/* bytesSent */ Double, Unit]): Unit
   }
   object HttpRequest {
     
@@ -175,17 +173,16 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpResponse extends StObject {
     
-    def getBody(): String = js.native
+    def getBody(): String
     
-    def getHeader(header: String): String = js.native
+    def getHeader(header: String): String
     
-    def getStatus(): Double = js.native
+    def getStatus(): Double
     
     // Return an environment specific object, e.g. the XMLHttpRequest object in browsers.
-    def getUnderlyingObject(): js.Any = js.native
+    def getUnderlyingObject(): js.Any
   }
   object HttpResponse {
     
@@ -217,12 +214,11 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpStack extends StObject {
     
-    def createRequest(method: String, url: String): HttpRequest = js.native
+    def createRequest(method: String, url: String): HttpRequest
     
-    def getName(): String = js.native
+    def getName(): String
   }
   object HttpStack {
     
@@ -243,20 +239,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PreviousUpload extends StObject {
     
-    var creationTime: String = js.native
+    var creationTime: String
     
-    var metadata: StringDictionary[String] = js.native
+    var metadata: StringDictionary[String]
     
-    var size: Double | Null = js.native
+    var size: Double | Null
   }
   object PreviousUpload {
     
     @scala.inline
     def apply(creationTime: String, metadata: StringDictionary[String]): PreviousUpload = {
-      val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], size = null)
       __obj.asInstanceOf[PreviousUpload]
     }
     
@@ -277,13 +272,12 @@ object mod {
     }
   }
   
-  @js.native
   trait SliceResult extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
     // Platform-specific data type which must be usable by the HTTP stack as a body.
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object SliceResult {
     
@@ -304,60 +298,59 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadOptions extends StObject {
     
-    var addRequestId: js.UndefOr[Boolean] = js.native
+    var addRequestId: js.UndefOr[Boolean] = js.undefined
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var endpoint: js.UndefOr[String | Null] = js.native
+    var endpoint: js.UndefOr[String | Null] = js.undefined
     
-    var fileReader: js.UndefOr[FileReader] = js.native
+    var fileReader: js.UndefOr[FileReader] = js.undefined
     
     var fingerprint: js.UndefOr[
         js.Function2[/* file */ File, /* options */ js.UndefOr[this.type], js.Promise[String]]
-      ] = js.native
+      ] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var httpStack: js.UndefOr[HttpStack] = js.native
+    var httpStack: js.UndefOr[HttpStack] = js.undefined
     
-    var metadata: js.UndefOr[StringDictionary[String]] = js.native
+    var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var onAfterResponse: js.UndefOr[js.Function2[/* req */ HttpRequest, /* res */ HttpResponse, Unit]] = js.native
+    var onAfterResponse: js.UndefOr[js.Function2[/* req */ HttpRequest, /* res */ HttpResponse, Unit]] = js.undefined
     
-    var onBeforeRequest: js.UndefOr[js.Function1[/* req */ HttpRequest, Unit]] = js.native
+    var onBeforeRequest: js.UndefOr[js.Function1[/* req */ HttpRequest, Unit]] = js.undefined
     
     var onChunkComplete: js.UndefOr[
         (js.Function3[/* chunkSize */ Double, /* bytesAccepted */ Double, /* bytesTotal */ Double, Unit]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var onError: js.UndefOr[(js.Function1[/* error */ Error, Unit]) | Null] = js.native
+    var onError: js.UndefOr[(js.Function1[/* error */ Error, Unit]) | Null] = js.undefined
     
-    var onProgress: js.UndefOr[(js.Function2[/* bytesSent */ Double, /* bytesTotal */ Double, Unit]) | Null] = js.native
+    var onProgress: js.UndefOr[(js.Function2[/* bytesSent */ Double, /* bytesTotal */ Double, Unit]) | Null] = js.undefined
     
-    var onSuccess: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onSuccess: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var overridePatchMethod: js.UndefOr[Boolean] = js.native
+    var overridePatchMethod: js.UndefOr[Boolean] = js.undefined
     
-    var parallelUploads: js.UndefOr[Double] = js.native
+    var parallelUploads: js.UndefOr[Double] = js.undefined
     
-    var removeFingerprintOnSuccess: js.UndefOr[Boolean] = js.native
+    var removeFingerprintOnSuccess: js.UndefOr[Boolean] = js.undefined
     
-    var retryDelays: js.UndefOr[js.Array[Double]] = js.native
+    var retryDelays: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var storeFingerprintForResuming: js.UndefOr[Boolean] = js.native
+    var storeFingerprintForResuming: js.UndefOr[Boolean] = js.undefined
     
-    var uploadDataDuringCreation: js.UndefOr[Boolean] = js.native
+    var uploadDataDuringCreation: js.UndefOr[Boolean] = js.undefined
     
-    var uploadLengthDeferred: js.UndefOr[Boolean] = js.native
+    var uploadLengthDeferred: js.UndefOr[Boolean] = js.undefined
     
-    var uploadSize: js.UndefOr[Double | Null] = js.native
+    var uploadSize: js.UndefOr[Double | Null] = js.undefined
     
-    var uploadUrl: js.UndefOr[String | Null] = js.native
+    var uploadUrl: js.UndefOr[String | Null] = js.undefined
     
-    var urlStorage: js.UndefOr[UrlStorage] = js.native
+    var urlStorage: js.UndefOr[UrlStorage] = js.undefined
   }
   object UploadOptions {
     
@@ -540,17 +533,16 @@ object mod {
     }
   }
   
-  @js.native
   trait UrlStorage extends StObject {
     
     // Returns the URL storage key, which can be used for removing the upload.
-    def addUpload(fingerprint: String, upload: PreviousUpload): js.Promise[String] = js.native
+    def addUpload(fingerprint: String, upload: PreviousUpload): js.Promise[String]
     
-    def findAllUploads(): js.Promise[js.Array[PreviousUpload]] = js.native
+    def findAllUploads(): js.Promise[js.Array[PreviousUpload]]
     
-    def findUploadsByFingerprint(fingerprint: String): js.Promise[js.Array[PreviousUpload]] = js.native
+    def findUploadsByFingerprint(fingerprint: String): js.Promise[js.Array[PreviousUpload]]
     
-    def removeUpload(urlStorageKey: String): js.Promise[Unit] = js.native
+    def removeUpload(urlStorageKey: String): js.Promise[Unit]
   }
   object UrlStorage {
     

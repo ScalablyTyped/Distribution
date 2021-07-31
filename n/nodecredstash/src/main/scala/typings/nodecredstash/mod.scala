@@ -15,14 +15,16 @@ import typings.nodecredstash.anon.StartsWith
 import typings.nodecredstash.anon.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(config: CredstashConfig): Credstash = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Credstash]
+  
   @JSImport("nodecredstash", JSImport.Namespace)
   @js.native
-  def apply(config: CredstashConfig): Credstash = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Credstash extends StObject {
@@ -51,18 +53,17 @@ object mod {
     def putSecret(options: PutSecretOptions): js.Promise[PutItemOutput] = js.native
   }
   
-  @js.native
   trait CredstashConfig extends StObject {
     
-    var awsOpts: js.UndefOr[ClientConfiguration] = js.native
+    var awsOpts: js.UndefOr[ClientConfiguration] = js.undefined
     
-    var dynamoOpts: js.UndefOr[typings.awsSdk.dynamodbMod.ClientConfiguration] = js.native
+    var dynamoOpts: js.UndefOr[typings.awsSdk.dynamodbMod.ClientConfiguration] = js.undefined
     
-    var kmsKey: js.UndefOr[String] = js.native
+    var kmsKey: js.UndefOr[String] = js.undefined
     
-    var kmsOpts: js.UndefOr[ClientConfiguration] = js.native
+    var kmsOpts: js.UndefOr[ClientConfiguration] = js.undefined
     
-    var table: js.UndefOr[String] = js.native
+    var table: js.UndefOr[String] = js.undefined
   }
   object CredstashConfig {
     
@@ -109,18 +110,17 @@ object mod {
   
   type CredstashContext = StringDictionary[String]
   
-  @js.native
   trait PutSecretOptions extends StObject {
     
-    var context: CredstashContext = js.native
+    var context: CredstashContext
     
-    var digest: js.UndefOr[String] = js.native
+    var digest: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var secret: String = js.native
+    var secret: String
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object PutSecretOptions {
     

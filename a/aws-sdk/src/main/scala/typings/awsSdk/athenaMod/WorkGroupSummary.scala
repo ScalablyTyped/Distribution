@@ -2,31 +2,29 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkGroupSummary extends StObject {
   
   /**
     * The workgroup creation date and time.
     */
-  var CreationTime: js.UndefOr[Date] = js.native
+  var CreationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The workgroup description.
     */
-  var Description: js.UndefOr[WorkGroupDescriptionString] = js.native
+  var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
   
   /**
     * The name of the workgroup.
     */
-  var Name: js.UndefOr[WorkGroupName] = js.native
+  var Name: js.UndefOr[WorkGroupName] = js.undefined
   
   /**
     * The state of the workgroup.
     */
-  var State: js.UndefOr[WorkGroupState] = js.native
+  var State: js.UndefOr[WorkGroupState] = js.undefined
 }
 object WorkGroupSummary {
   

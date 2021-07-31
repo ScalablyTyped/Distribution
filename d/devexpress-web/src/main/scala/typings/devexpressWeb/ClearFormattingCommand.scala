@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to reset the selected text's formatting to default.
   */
-@js.native
-trait ClearFormattingCommand extends CommandWithSimpleStateBase {
+trait ClearFormattingCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ClearFormattingCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ClearFormattingCommand {
   

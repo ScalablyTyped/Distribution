@@ -2,66 +2,64 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateComponentRequest extends StObject {
   
   /**
     * The change description of the component. Describes what change has been made in this version, or what makes this version different from other versions of this component.
     */
-  var changeDescription: js.UndefOr[NonEmptyString] = js.native
+  var changeDescription: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The idempotency token of the component.
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The data of the component. Used to specify the data inline. Either data or uri can be used to specify the data within the component.
     */
-  var data: js.UndefOr[InlineComponentData] = js.native
+  var data: js.UndefOr[InlineComponentData] = js.undefined
   
   /**
     * The description of the component. Describes the contents of the component.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ID of the KMS key that should be used to encrypt this component.
     */
-  var kmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the component.
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
   
   /**
     * The platform of the component.
     */
-  var platform: Platform = js.native
+  var platform: Platform
   
   /**
     * The semantic version of the component. This version follows the semantic version syntax. For example, major.minor.patch. This could be versioned like software (2.0.1) or like a date (2019.12.01).
     */
-  var semanticVersion: VersionNumber = js.native
+  var semanticVersion: VersionNumber
   
   /**
     *  The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the parent image OS version during image recipe creation. 
     */
-  var supportedOsVersions: js.UndefOr[OsVersionList] = js.native
+  var supportedOsVersions: js.UndefOr[OsVersionList] = js.undefined
   
   /**
     * The tags of the component.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The uri of the component. Must be an S3 URL and the requester must have permission to access the S3 bucket. If you use S3, you can specify component content up to your service quota. Either data or uri can be used to specify the data within the component.
     */
-  var uri: js.UndefOr[Uri] = js.native
+  var uri: js.UndefOr[Uri] = js.undefined
 }
 object CreateComponentRequest {
   

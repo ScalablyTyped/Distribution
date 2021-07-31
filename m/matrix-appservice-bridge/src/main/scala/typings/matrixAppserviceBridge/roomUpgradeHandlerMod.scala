@@ -6,7 +6,6 @@ import typings.matrixAppserviceBridge.mod.Bridge
 import typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStoreEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roomUpgradeHandlerMod {
@@ -52,14 +51,13 @@ object roomUpgradeHandlerMod {
     var waitingForInvite: js.Any = js.native
   }
   
-  @js.native
   trait RoomUpgradeHandlerOpts extends StObject {
     
     /**
       * Should upgrade and invite events be processed after being handled
       * by the RoomUpgradeHandler. Defaults to `false`.
       */
-    var consumeEvent: Boolean = js.native
+    var consumeEvent: Boolean
     
     /**
       * Invoked when iterating around a rooms entries. Should be used to update entries
@@ -76,7 +74,7 @@ object roomUpgradeHandlerMod {
           /* newRoomId */ String, 
           js.Promise[RoomBridgeStoreEntry | Null]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Should ghost users be migrated to the new room. This will leave
@@ -84,12 +82,12 @@ object roomUpgradeHandlerMod {
       * from the old room, and join them to the new room.
       * Defaults to `true`
       */
-    var migrateGhosts: Boolean = js.native
+    var migrateGhosts: Boolean
     
     /**
       * Migrate room store entries automatically. Defaults to `true`
       */
-    var migrateStoreEntries: Boolean = js.native
+    var migrateStoreEntries: Boolean
     
     /**
       * Invoked after a room has been upgraded and it's entries updated.
@@ -99,7 +97,7 @@ object roomUpgradeHandlerMod {
       */
     var onRoomMigrated: js.UndefOr[
         js.Function2[/* oldRoomId */ String, /* newRoomId */ String, js.Promise[Unit] | Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object RoomUpgradeHandlerOpts {
     

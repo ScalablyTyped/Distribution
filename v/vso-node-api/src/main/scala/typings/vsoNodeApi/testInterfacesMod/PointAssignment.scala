@@ -3,15 +3,13 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointAssignment extends StObject {
   
-  var configuration: ShallowReference = js.native
+  var configuration: ShallowReference
   
-  var tester: IdentityRef = js.native
+  var tester: IdentityRef
 }
 object PointAssignment {
   

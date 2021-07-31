@@ -2,7 +2,6 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * multiple actors performing the same action on a single target. The strategy
   * defines the rules for which activities are related.
   */
-@js.native
 trait SchemaConsolidationStrategy extends StObject {
   
   /**
     * The individual activities are consolidated using the legacy strategy.
     */
-  var legacy: js.UndefOr[SchemaLegacy] = js.native
+  var legacy: js.UndefOr[SchemaLegacy] = js.undefined
   
   /**
     * The individual activities are not consolidated.
     */
-  var none: js.UndefOr[SchemaNoConsolidation] = js.native
+  var none: js.UndefOr[SchemaNoConsolidation] = js.undefined
 }
 object SchemaConsolidationStrategy {
   

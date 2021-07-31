@@ -4,7 +4,6 @@ import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsMod {
@@ -22,7 +21,9 @@ object modelsMod {
   }
   
   @js.native
-  trait FeatureOperationsListResult extends Array[FeatureResult] {
+  trait FeatureOperationsListResult
+    extends StObject
+       with Array[FeatureResult] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -30,13 +31,12 @@ object modelsMod {
     var nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait FeatureProperties extends StObject {
     
     /**
       * The registration state of the feature for the subscription.
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object FeatureProperties {
     
@@ -57,28 +57,27 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait FeatureResult extends StObject {
     
     /**
       * The resource ID of the feature.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the feature.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Properties of the previewed feature.
       */
-    var properties: js.UndefOr[FeatureProperties] = js.native
+    var properties: js.UndefOr[FeatureProperties] = js.undefined
     
     /**
       * The resource type of the feature.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FeatureResult {
     
@@ -117,18 +116,17 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait Operation extends StObject {
     
     /**
       * The object that represents the operation.
       */
-    var display: js.UndefOr[OperationDisplay] = js.native
+    var display: js.UndefOr[OperationDisplay] = js.undefined
     
     /**
       * Operation name: {provider}/{resource}/{operation}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Operation {
     
@@ -155,23 +153,22 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait OperationDisplay extends StObject {
     
     /**
       * Operation type: Read, write, delete, etc.
       */
-    var operation: js.UndefOr[String] = js.native
+    var operation: js.UndefOr[String] = js.undefined
     
     /**
       * Service provider: Microsoft.Features
       */
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
     /**
       * Resource on which the operation is performed: Profile, endpoint, etc.
       */
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
   }
   object OperationDisplay {
     
@@ -205,7 +202,9 @@ object modelsMod {
   }
   
   @js.native
-  trait OperationListResult extends Array[Operation] {
+  trait OperationListResult
+    extends StObject
+       with Array[Operation] {
     
     /**
       * URL to get the next set of operation list results if there are any.

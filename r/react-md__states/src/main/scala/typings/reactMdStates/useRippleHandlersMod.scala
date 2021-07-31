@@ -5,31 +5,32 @@ import typings.reactMdStates.typesMod.RippleEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useRippleHandlersMod {
   
-  @JSImport("@react-md/states/types/ripples/useRippleHandlers", "useRippleHandlers")
+  @JSImport("@react-md/states/types/ripples/useRippleHandlers", JSImport.Namespace)
   @js.native
-  def useRippleHandlers[E /* <: HTMLElement */](hasCreateReleaseCancelHandlersDisabledDisableRippleDisableProgrammaticRipple: Options[E]): MergableRippleHandlers[E] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useRippleHandlers[E /* <: HTMLElement */](hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple: Options[E]): MergableRippleHandlers[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRippleHandlers")(hasCreateReleaseCancelHandlersPropDisabledDisableRippleDisableProgrammaticRipple.asInstanceOf[js.Any]).asInstanceOf[MergableRippleHandlers[E]]
+  
   trait Options[E /* <: HTMLElement */] extends StObject {
     
-    def cancel(ease: Boolean): Unit = js.native
+    def cancel(ease: Boolean): Unit
     
-    def create(event: RippleEvent[E]): Unit = js.native
+    def create(event: RippleEvent[E]): Unit
     
-    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.native
+    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.undefined
     
-    var disableRipple: js.UndefOr[Boolean] = js.native
+    var disableRipple: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handlers: js.UndefOr[MergableRippleHandlers[E]] = js.native
+    var handlers: js.UndefOr[MergableRippleHandlers[E]] = js.undefined
     
-    def release(event: RippleEvent[E]): Unit = js.native
+    def release(event: RippleEvent[E]): Unit
   }
   object Options {
     
@@ -40,7 +41,7 @@ object useRippleHandlersMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], E /* <: HTMLElement */] (val x: Self with Options[E]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
       
       @scala.inline
       def setCancel(value: Boolean => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))

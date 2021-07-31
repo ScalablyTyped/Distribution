@@ -10,9 +10,9 @@ TypeScript typings for Indexing API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.indexing |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 43 |
+| # downloads        | 1075 |
 | # stars            | 0 |
 
 ## Links

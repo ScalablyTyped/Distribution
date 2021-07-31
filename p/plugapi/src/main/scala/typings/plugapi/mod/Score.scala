@@ -2,21 +2,19 @@ package typings.plugapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Score extends StObject {
   
-  var grabs: Double = js.native
+  var grabs: Double
   
-  var listeners: Double = js.native
+  var listeners: Double
   
-  var negative: Double = js.native
+  var negative: Double
   
-  var positive: Double = js.native
+  var positive: Double
   
-  var skipped: Double = js.native
+  var skipped: Double
 }
 object Score {
   

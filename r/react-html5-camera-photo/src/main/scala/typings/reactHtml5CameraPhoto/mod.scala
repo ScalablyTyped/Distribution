@@ -10,7 +10,6 @@ import typings.reactHtml5CameraPhoto.reactHtml5CameraPhotoStrings.user
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,7 +30,6 @@ object mod extends Shortcut {
   @js.native
   val IMAGE_TYPES: ImageTypes = js.native
   
-  @js.native
   trait CameraProps extends StObject {
     
     /**
@@ -41,18 +39,18 @@ object mod extends Shortcut {
       * @example <caption>To request a camera facing the user.</caption>
       * // FACING_MODES.USER
       */
-    var idealFacingMode: js.UndefOr[environment | user] = js.native
+    var idealFacingMode: js.UndefOr[environment | user] = js.undefined
     
     /**
       * Object of the ideal resolution of the camera.
       */
-    var idealResolution: js.UndefOr[Height] = js.native
+    var idealResolution: js.UndefOr[Height] = js.undefined
     
     /**
       * Number used to get the desired compression when jpg is selected.
       * Choose a compression between [0, 1], 1 is maximum, 0 is minimum.
       */
-    var imageCompression: js.UndefOr[Double] = js.native
+    var imageCompression: js.UndefOr[Double] = js.undefined
     
     /**
       * String used to get the desired image type between jpg or png.
@@ -61,61 +59,61 @@ object mod extends Shortcut {
       * @example <caption>To specify png format</caption>
       * // IMAGE_TYPES.PNG
       */
-    var imageType: js.UndefOr[png | jpg] = js.native
+    var imageType: js.UndefOr[png | jpg] = js.undefined
     
     /**
       * If is true, if the camera start with error, it will show the error between h1 tag on the top of the component.
       * Useful to notify the user about permission error.
       */
-    var isDisplayStartCameraError: js.UndefOr[Boolean] = js.native
+    var isDisplayStartCameraError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If is true, the camera image will be set fullscreen to force the maximum width and height of the viewport.
       */
-    var isFullscreen: js.UndefOr[Boolean] = js.native
+    var isFullscreen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If is true, the camera image will be mirror.
       */
-    var isImageMirror: js.UndefOr[Boolean] = js.native
+    var isImageMirror: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If is true, the camera will start with his own maximum resolution.
       */
-    var isMaxResolution: js.UndefOr[Boolean] = js.native
+    var isMaxResolution: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If is true, the camera do not play click sound when the photo was taken.
       */
-    var isSilentMode: js.UndefOr[Boolean] = js.native
+    var isSilentMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback called with the error object as parameter when error occur while opening the camera. Often the permission.
       * @param error The error information.
       */
-    var onCameraError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onCameraError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Callback called when the camera is started.
       */
-    var onCameraStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCameraStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback called when the camera is stopped.
       */
-    var onCameraStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCameraStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The function called when a photo is taken. the dataUri is passed as a parameter.
       * @param dataUri The Data URI of the captured photo.
       */
-    var onTakePhoto: js.UndefOr[js.Function1[/* dataUri */ String, Unit]] = js.native
+    var onTakePhoto: js.UndefOr[js.Function1[/* dataUri */ String, Unit]] = js.undefined
     
     /**
       * The function called when a photo is taken and the animation is done. the dataUri is passed as a parameter.
       * @param dataUri The Data URI of the captured photo.
       */
-    var onTakePhotoAnimationDone: js.UndefOr[js.Function1[/* dataUri */ String, Unit]] = js.native
+    var onTakePhotoAnimationDone: js.UndefOr[js.Function1[/* dataUri */ String, Unit]] = js.undefined
     
     /**
       * Number of the factor resolution.
@@ -125,7 +123,7 @@ object mod extends Shortcut {
       * @example <caption>A sizeFactor of 0.5 get the half resolution of the camera.</caption>
       * // 0.5
       */
-    var sizeFactor: js.UndefOr[Double] = js.native
+    var sizeFactor: js.UndefOr[Double] = js.undefined
   }
   object CameraProps {
     
@@ -230,18 +228,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FacingMode extends StObject {
     
-    var ENVIRONMENT: environment = js.native
+    var ENVIRONMENT: environment
     
-    var USER: user = js.native
+    var USER: user
   }
   object FacingMode {
     
     @scala.inline
-    def apply(ENVIRONMENT: environment, USER: user): FacingMode = {
-      val __obj = js.Dynamic.literal(ENVIRONMENT = ENVIRONMENT.asInstanceOf[js.Any], USER = USER.asInstanceOf[js.Any])
+    def apply(): FacingMode = {
+      val __obj = js.Dynamic.literal(ENVIRONMENT = "environment", USER = "user")
       __obj.asInstanceOf[FacingMode]
     }
     
@@ -256,18 +253,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ImageTypes extends StObject {
     
-    var JPG: jpg = js.native
+    var JPG: jpg
     
-    var PNG: png = js.native
+    var PNG: png
   }
   object ImageTypes {
     
     @scala.inline
-    def apply(JPG: jpg, PNG: png): ImageTypes = {
-      val __obj = js.Dynamic.literal(JPG = JPG.asInstanceOf[js.Any], PNG = PNG.asInstanceOf[js.Any])
+    def apply(): ImageTypes = {
+      val __obj = js.Dynamic.literal(JPG = "jpg", PNG = "png")
       __obj.asInstanceOf[ImageTypes]
     }
     

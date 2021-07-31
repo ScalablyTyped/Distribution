@@ -2,15 +2,13 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Watermark extends StObject {
   
-  var displayAngle: js.UndefOr[String] = js.native
+  var displayAngle: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[String] = js.undefined
   
   /**
     * The font to be used for the tab value. Supported fonts include:
@@ -33,7 +31,7 @@ trait Watermark extends StObject {
     * - Verdana
     *
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * The font color to use for the information in the tab. Possible values are:
@@ -50,7 +48,7 @@ trait Watermark extends StObject {
     * - White
     *
     */
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
   /**
     * The font size used for the information in the tab. Possible values are:
@@ -73,18 +71,18 @@ trait Watermark extends StObject {
     * - Size48
     * - Size72
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID for the Salesforce object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var imageBase64: js.UndefOr[String] = js.native
+  var imageBase64: js.UndefOr[String] = js.undefined
   
-  var transparency: js.UndefOr[String] = js.native
+  var transparency: js.UndefOr[String] = js.undefined
   
-  var watermarkText: js.UndefOr[String] = js.native
+  var watermarkText: js.UndefOr[String] = js.undefined
 }
 object Watermark {
   

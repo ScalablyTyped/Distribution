@@ -8,27 +8,27 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.success
 import typings.tuyaPanelKit.tuyaPanelKitStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationLegacyProps extends TouchableOpacityProps {
+trait NotificationLegacyProps
+  extends StObject
+     with TouchableOpacityProps {
   
-  var autoCloseTime: js.UndefOr[Double] = js.native
+  var autoCloseTime: js.UndefOr[Double] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var enableClose: js.UndefOr[String] = js.native
+  var enableClose: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var theme: js.UndefOr[CloseIcon] = js.native
+  var theme: js.UndefOr[CloseIcon] = js.undefined
   
-  var variant: js.UndefOr[success | warning | error] = js.native
+  var variant: js.UndefOr[success | warning | error] = js.undefined
 }
 object NotificationLegacyProps {
   

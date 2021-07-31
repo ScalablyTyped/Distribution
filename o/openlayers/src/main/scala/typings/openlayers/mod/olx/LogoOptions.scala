@@ -2,18 +2,16 @@ package typings.openlayers.mod.olx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for the map logo.
   */
-@js.native
 trait LogoOptions extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var src: String = js.native
+  var src: String
 }
 object LogoOptions {
   

@@ -3,36 +3,36 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInvocationMod {
   
-  @JSImport("@pulumi/aws/lambda/getInvocation", "getInvocation")
+  @JSImport("@pulumi/aws/lambda/getInvocation", JSImport.Namespace)
   @js.native
-  def getInvocation(args: GetInvocationArgs): js.Promise[GetInvocationResult] = js.native
-  @JSImport("@pulumi/aws/lambda/getInvocation", "getInvocation")
-  @js.native
-  def getInvocation(args: GetInvocationArgs, opts: InvokeOptions): js.Promise[GetInvocationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInvocation(args: GetInvocationArgs): js.Promise[GetInvocationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInvocation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInvocationResult]]
+  @scala.inline
+  def getInvocation(args: GetInvocationArgs, opts: InvokeOptions): js.Promise[GetInvocationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInvocation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInvocationResult]]
+  
   trait GetInvocationArgs extends StObject {
     
     /**
       * The name of the lambda function.
       */
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * A string in JSON format that is passed as payload to the lambda function.
       */
-    val input: String = js.native
+    val input: String
     
     /**
       * The qualifier (a.k.a version) of the lambda function. Defaults
       * to `$LATEST`.
       */
-    val qualifier: js.UndefOr[String] = js.native
+    val qualifier: js.UndefOr[String] = js.undefined
   }
   object GetInvocationArgs {
     
@@ -59,24 +59,23 @@ object getInvocationMod {
     }
   }
   
-  @js.native
   trait GetInvocationResult extends StObject {
     
-    val functionName: String = js.native
+    val functionName: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val input: String = js.native
+    val input: String
     
-    val qualifier: js.UndefOr[String] = js.native
+    val qualifier: js.UndefOr[String] = js.undefined
     
     /**
       * String result of the lambda function invocation.
       */
-    val result: String = js.native
+    val result: String
   }
   object GetInvocationResult {
     

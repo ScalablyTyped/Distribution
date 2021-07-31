@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayRouteSpecHttp2Route extends StObject {
   
   /**
     * The action to take if a match is determined.
     */
-  var action: Input[GatewayRouteSpecHttp2RouteAction] = js.native
+  var action: Input[GatewayRouteSpecHttp2RouteAction]
   
   /**
     * The criteria for determining a request match.
     */
-  var `match`: Input[GatewayRouteSpecHttp2RouteMatch] = js.native
+  var `match`: Input[GatewayRouteSpecHttp2RouteMatch]
 }
 object GatewayRouteSpecHttp2Route {
   

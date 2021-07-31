@@ -4,30 +4,30 @@ import typings.minappEnv.Array
 import typings.minappEnv.InternalSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatabaseQueryCommand extends DatabaseLogicCommand {
+trait DatabaseQueryCommand
+  extends StObject
+     with DatabaseLogicCommand {
   
-  def eq(`val`: js.Any): DatabaseLogicCommand = js.native
+  def eq(`val`: js.Any): DatabaseLogicCommand
   
-  def gt(`val`: js.Any): DatabaseLogicCommand = js.native
+  def gt(`val`: js.Any): DatabaseLogicCommand
   
-  def gte(`val`: js.Any): DatabaseLogicCommand = js.native
+  def gte(`val`: js.Any): DatabaseLogicCommand
   
-  def in(`val`: Array[_]): DatabaseLogicCommand = js.native
+  def in(`val`: Array[js.Any]): DatabaseLogicCommand
   
-  def lt(`val`: js.Any): DatabaseLogicCommand = js.native
+  def lt(`val`: js.Any): DatabaseLogicCommand
   
-  def lte(`val`: js.Any): DatabaseLogicCommand = js.native
+  def lte(`val`: js.Any): DatabaseLogicCommand
   
-  def neq(`val`: js.Any): DatabaseLogicCommand = js.native
+  def neq(`val`: js.Any): DatabaseLogicCommand
   
-  def nin(`val`: Array[_]): DatabaseLogicCommand = js.native
+  def nin(`val`: Array[js.Any]): DatabaseLogicCommand
   
   @JSName("operator")
-  var operator_DatabaseQueryCommand: QUERY_COMMANDS_LITERAL | String = js.native
+  var operator_DatabaseQueryCommand: QUERY_COMMANDS_LITERAL | String
 }
 object DatabaseQueryCommand {
   
@@ -39,12 +39,12 @@ object DatabaseQueryCommand {
     fieldName: String | InternalSymbol,
     gt: js.Any => DatabaseLogicCommand,
     gte: js.Any => DatabaseLogicCommand,
-    in: Array[_] => DatabaseLogicCommand,
+    in: Array[js.Any] => DatabaseLogicCommand,
     lt: js.Any => DatabaseLogicCommand,
     lte: js.Any => DatabaseLogicCommand,
     neq: js.Any => DatabaseLogicCommand,
-    nin: Array[_] => DatabaseLogicCommand,
-    operands: Array[_],
+    nin: Array[js.Any] => DatabaseLogicCommand,
+    operands: Array[js.Any],
     operator: QUERY_COMMANDS_LITERAL | String,
     or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand
   ): DatabaseQueryCommand = {
@@ -66,7 +66,7 @@ object DatabaseQueryCommand {
     def setGte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    def setIn(value: Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
@@ -78,7 +78,7 @@ object DatabaseQueryCommand {
     def setNeq(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNin(value: Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
+    def setNin(value: Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOperator(value: QUERY_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])

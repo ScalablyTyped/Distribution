@@ -14,7 +14,6 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -72,7 +71,7 @@ trait Factory extends StObject {
     * @param maxSides The maximum amount of sides to use for the polygon which will approximate this circle.
     */
   def circle(x: Double, y: Double, radius: Double): BodyType = js.native
-  def circle(x: Double, y: Double, radius: Double, options: js.UndefOr[scala.Nothing], maxSides: Double): BodyType = js.native
+  def circle(x: Double, y: Double, radius: Double, options: Unit, maxSides: Double): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: MatterBodyConfig): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: MatterBodyConfig, maxSides: Double): BodyType = js.native
   
@@ -96,29 +95,7 @@ trait Factory extends StObject {
     * @param options An optional Constraint configuration object that is used to set initial Constraint properties on creation.
     */
   def constraint(bodyA: BodyType, bodyB: BodyType): ConstraintType = js.native
-  def constraint(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
-  def constraint(bodyA: BodyType, bodyB: BodyType, length: js.UndefOr[scala.Nothing], stiffness: Double): ConstraintType = js.native
-  def constraint(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: Double,
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def constraint(bodyA: BodyType, bodyB: BodyType, length: Double): ConstraintType = js.native
-  def constraint(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: Double,
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def constraint(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Double): ConstraintType = js.native
   def constraint(
     bodyA: BodyType,
@@ -127,6 +104,10 @@ trait Factory extends StObject {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
   
   /**
     * Destroys this Factory.
@@ -177,7 +158,7 @@ trait Factory extends StObject {
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
   def fromJSON(x: Double, y: Double, config: js.Any): BodyType = js.native
-  def fromJSON(x: Double, y: Double, config: js.Any, options: js.UndefOr[scala.Nothing], addToWorld: Boolean): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: js.Any, options: Unit, addToWorld: Boolean): BodyType = js.native
   def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
   def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
   
@@ -209,7 +190,7 @@ trait Factory extends StObject {
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
   def fromPhysicsEditor(x: Double, y: Double, config: js.Any): BodyType = js.native
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: js.UndefOr[scala.Nothing], addToWorld: Boolean): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: Unit, addToWorld: Boolean): BodyType = js.native
   def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
   def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
   
@@ -240,32 +221,8 @@ trait Factory extends StObject {
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
   def fromSVG(x: Double, y: Double, xml: js.Object): BodyType = js.native
-  def fromSVG(
-    x: Double,
-    y: Double,
-    xml: js.Object,
-    scale: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    addToWorld: Boolean
-  ): BodyType = js.native
-  def fromSVG(x: Double, y: Double, xml: js.Object, scale: js.UndefOr[scala.Nothing], options: MatterBodyConfig): BodyType = js.native
-  def fromSVG(
-    x: Double,
-    y: Double,
-    xml: js.Object,
-    scale: js.UndefOr[scala.Nothing],
-    options: MatterBodyConfig,
-    addToWorld: Boolean
-  ): BodyType = js.native
   def fromSVG(x: Double, y: Double, xml: js.Object, scale: Double): BodyType = js.native
-  def fromSVG(
-    x: Double,
-    y: Double,
-    xml: js.Object,
-    scale: Double,
-    options: js.UndefOr[scala.Nothing],
-    addToWorld: Boolean
-  ): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Double, options: Unit, addToWorld: Boolean): BodyType = js.native
   def fromSVG(x: Double, y: Double, xml: js.Object, scale: Double, options: MatterBodyConfig): BodyType = js.native
   def fromSVG(
     x: Double,
@@ -275,6 +232,9 @@ trait Factory extends StObject {
     options: MatterBodyConfig,
     addToWorld: Boolean
   ): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Unit, options: Unit, addToWorld: Boolean): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Unit, options: MatterBodyConfig): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Unit, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
   
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices) and adds it to the World.
@@ -288,53 +248,12 @@ trait Factory extends StObject {
     * @param minimumArea During decomposition discard parts that have an area less than this. Default 10.
     */
   def fromVertices(x: Double, y: Double, vertexSets: String): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: String, options: Unit, flagInternal: Boolean): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double,
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: Boolean
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: Boolean,
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     flagInternal: Boolean,
     removeCollinear: Double
   ): BodyType = js.native
@@ -342,38 +261,47 @@ trait Factory extends StObject {
     x: Double,
     y: Double,
     vertexSets: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     flagInternal: Boolean,
     removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
     minimumArea: Double
   ): BodyType = js.native
   def fromVertices(x: Double, y: Double, vertexSets: String, options: MatterBodyConfig): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: MatterBodyConfig,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: MatterBodyConfig,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: MatterBodyConfig,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double,
-    minimumArea: Double
-  ): BodyType = js.native
   def fromVertices(x: Double, y: Double, vertexSets: String, options: MatterBodyConfig, flagInternal: Boolean): BodyType = js.native
   def fromVertices(
     x: Double,
@@ -381,15 +309,6 @@ trait Factory extends StObject {
     vertexSets: String,
     options: MatterBodyConfig,
     flagInternal: Boolean,
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: String,
-    options: MatterBodyConfig,
-    flagInternal: Boolean,
     removeCollinear: Double
   ): BodyType = js.native
   def fromVertices(
@@ -401,107 +320,107 @@ trait Factory extends StObject {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[_]): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: js.UndefOr[scala.Nothing],
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
     minimumArea: Double
   ): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Unit,
     removeCollinear: Double
   ): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Unit,
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Any]): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Any], options: Unit, flagInternal: Boolean): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Any], options: MatterBodyConfig): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: MatterBodyConfig,
     flagInternal: Boolean
   ): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: Boolean,
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: Boolean,
-    removeCollinear: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: Boolean,
-    removeCollinear: Double,
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[_], options: MatterBodyConfig): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
-    options: MatterBodyConfig,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
-    options: MatterBodyConfig,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
-    options: MatterBodyConfig,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double,
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[_], options: MatterBodyConfig, flagInternal: Boolean): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
-    options: MatterBodyConfig,
-    flagInternal: Boolean,
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[_],
+    vertexSets: js.Array[js.Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Double
@@ -509,10 +428,45 @@ trait Factory extends StObject {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
+    vertexSets: js.Array[js.Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: MatterBodyConfig,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Any],
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Unit,
     minimumArea: Double
   ): BodyType = js.native
   
@@ -529,7 +483,7 @@ trait Factory extends StObject {
     * @param addToWorld Add this Matter Body to the World? Default true.
     */
   def gameObject(gameObject: GameObject): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: js.UndefOr[scala.Nothing], addToWorld: Boolean): GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Unit, addToWorld: Boolean): GameObject = js.native
   def gameObject(gameObject: GameObject, options: Body): GameObject = js.native
   def gameObject(gameObject: GameObject, options: Body, addToWorld: Boolean): GameObject = js.native
   def gameObject(gameObject: GameObject, options: MatterBodyConfig): GameObject = js.native
@@ -549,9 +503,9 @@ trait Factory extends StObject {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     */
   def image(x: Double, y: Double, key: String): Image = js.native
-  def image(x: Double, y: Double, key: String, frame: js.UndefOr[scala.Nothing], options: MatterBodyConfig): Image = js.native
   def image(x: Double, y: Double, key: String, frame: String): Image = js.native
   def image(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Image = js.native
+  def image(x: Double, y: Double, key: String, frame: Unit, options: MatterBodyConfig): Image = js.native
   def image(x: Double, y: Double, key: String, frame: integer): Image = js.native
   def image(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Image = js.native
   
@@ -569,38 +523,6 @@ trait Factory extends StObject {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     */
   def imageStack(key: String, frame: String, x: Double, y: Double, columns: Double, rows: Double): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: String,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: js.UndefOr[scala.Nothing],
-    rowGap: js.UndefOr[scala.Nothing],
-    options: MatterBodyConfig
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: String,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: js.UndefOr[scala.Nothing],
-    rowGap: Double
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: String,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: js.UndefOr[scala.Nothing],
-    rowGap: Double,
-    options: MatterBodyConfig
-  ): CompositeType = js.native
   def imageStack(key: String, frame: String, x: Double, y: Double, columns: Double, rows: Double, columnGap: Double): CompositeType = js.native
   def imageStack(
     key: String,
@@ -610,17 +532,6 @@ trait Factory extends StObject {
     columns: Double,
     rows: Double,
     columnGap: Double,
-    rowGap: js.UndefOr[scala.Nothing],
-    options: MatterBodyConfig
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: String,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: Double,
     rowGap: Double
   ): CompositeType = js.native
   def imageStack(
@@ -632,41 +543,52 @@ trait Factory extends StObject {
     rows: Double,
     columnGap: Double,
     rowGap: Double,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Double,
+    rowGap: Unit,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Unit,
     options: MatterBodyConfig
   ): CompositeType = js.native
   def imageStack(key: String, frame: integer, x: Double, y: Double, columns: Double, rows: Double): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: integer,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: js.UndefOr[scala.Nothing],
-    rowGap: js.UndefOr[scala.Nothing],
-    options: MatterBodyConfig
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: integer,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: js.UndefOr[scala.Nothing],
-    rowGap: Double
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: integer,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: js.UndefOr[scala.Nothing],
-    rowGap: Double,
-    options: MatterBodyConfig
-  ): CompositeType = js.native
   def imageStack(
     key: String,
     frame: integer,
@@ -684,17 +606,6 @@ trait Factory extends StObject {
     columns: Double,
     rows: Double,
     columnGap: Double,
-    rowGap: js.UndefOr[scala.Nothing],
-    options: MatterBodyConfig
-  ): CompositeType = js.native
-  def imageStack(
-    key: String,
-    frame: integer,
-    x: Double,
-    y: Double,
-    columns: Double,
-    rows: Double,
-    columnGap: Double,
     rowGap: Double
   ): CompositeType = js.native
   def imageStack(
@@ -706,6 +617,49 @@ trait Factory extends StObject {
     rows: Double,
     columnGap: Double,
     rowGap: Double,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: integer,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Double,
+    rowGap: Unit,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: integer,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: integer,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: integer,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Unit,
     options: MatterBodyConfig
   ): CompositeType = js.native
   
@@ -731,29 +685,7 @@ trait Factory extends StObject {
     * @param options An optional Constraint configuration object that is used to set initial Constraint properties on creation.
     */
   def joint(bodyA: BodyType, bodyB: BodyType): ConstraintType = js.native
-  def joint(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
-  def joint(bodyA: BodyType, bodyB: BodyType, length: js.UndefOr[scala.Nothing], stiffness: Double): ConstraintType = js.native
-  def joint(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: Double,
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def joint(bodyA: BodyType, bodyB: BodyType, length: Double): ConstraintType = js.native
-  def joint(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: Double,
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def joint(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Double): ConstraintType = js.native
   def joint(
     bodyA: BodyType,
@@ -762,6 +694,10 @@ trait Factory extends StObject {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
   
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
@@ -900,7 +836,7 @@ trait Factory extends StObject {
     rowGap: Double,
     crossBrace: Boolean,
     particleRadius: Double,
-    particleOptions: js.UndefOr[scala.Nothing],
+    particleOptions: Unit,
     constraintOptions: MatterConstraintConfig
   ): CompositeType = js.native
   def softBody(
@@ -949,29 +885,7 @@ trait Factory extends StObject {
     * @param options An optional Constraint configuration object that is used to set initial Constraint properties on creation.
     */
   def spring(bodyA: BodyType, bodyB: BodyType): ConstraintType = js.native
-  def spring(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
-  def spring(bodyA: BodyType, bodyB: BodyType, length: js.UndefOr[scala.Nothing], stiffness: Double): ConstraintType = js.native
-  def spring(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: Double,
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def spring(bodyA: BodyType, bodyB: BodyType, length: Double): ConstraintType = js.native
-  def spring(
-    bodyA: BodyType,
-    bodyB: BodyType,
-    length: Double,
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def spring(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Double): ConstraintType = js.native
   def spring(
     bodyA: BodyType,
@@ -980,6 +894,10 @@ trait Factory extends StObject {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
   
   /**
     * Creates a Matter Physics Sprite Game Object.
@@ -998,9 +916,9 @@ trait Factory extends StObject {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     */
   def sprite(x: Double, y: Double, key: String): Sprite = js.native
-  def sprite(x: Double, y: Double, key: String, frame: js.UndefOr[scala.Nothing], options: MatterBodyConfig): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: String): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Sprite = js.native
+  def sprite(x: Double, y: Double, key: String, frame: Unit, options: MatterBodyConfig): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: integer): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Sprite = js.native
   
@@ -1087,26 +1005,11 @@ trait Factory extends StObject {
     * @param options An optional Constraint configuration object that is used to set initial Constraint properties on creation.
     */
   def worldConstraint(body: BodyType): ConstraintType = js.native
-  def worldConstraint(
-    body: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
-  def worldConstraint(body: BodyType, length: js.UndefOr[scala.Nothing], stiffness: Double): ConstraintType = js.native
-  def worldConstraint(
-    body: BodyType,
-    length: js.UndefOr[scala.Nothing],
-    stiffness: Double,
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def worldConstraint(body: BodyType, length: Double): ConstraintType = js.native
-  def worldConstraint(
-    body: BodyType,
-    length: Double,
-    stiffness: js.UndefOr[scala.Nothing],
-    options: MatterConstraintConfig
-  ): ConstraintType = js.native
   def worldConstraint(body: BodyType, length: Double, stiffness: Double): ConstraintType = js.native
   def worldConstraint(body: BodyType, length: Double, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
 }

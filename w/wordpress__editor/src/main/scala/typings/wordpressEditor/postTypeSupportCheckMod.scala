@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressEditor.postTypeSupportCheckMod.PostTypeSupportCheck.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postTypeSupportCheckMod {
@@ -25,12 +24,11 @@ object postTypeSupportCheckMod {
   
   object PostTypeSupportCheck {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var supportKeys: String | js.Array[String] = js.native
+      var supportKeys: String | js.Array[String]
     }
     object Props {
       

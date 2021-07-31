@@ -3,7 +3,6 @@ package typings.angularTouchspin
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,24 +20,31 @@ object mod extends Shortcut {
     object StepDivisibilityType extends StObject {
       
       @js.native
-      sealed trait ceil extends StepDivisibilityType
+      sealed trait ceil
+        extends StObject
+           with StepDivisibilityType
       
       @js.native
-      sealed trait floor extends StepDivisibilityType
+      sealed trait floor
+        extends StObject
+           with StepDivisibilityType
       
       @js.native
-      sealed trait none extends StepDivisibilityType
+      sealed trait none
+        extends StObject
+           with StepDivisibilityType
       
       @js.native
-      sealed trait round extends StepDivisibilityType
+      sealed trait round
+        extends StObject
+           with StepDivisibilityType
     }
     
     type ITouchSpinConfig = typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions
     
-    @js.native
     trait ITouchSpinConfigProvider extends StObject {
       
-      def defaults(touchSpinOptions: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions): Unit = js.native
+      def defaults(touchSpinOptions: typings.angularTouchspin.mod.angularTouchspin.ITouchSpinOptions): Unit
     }
     object ITouchSpinConfigProvider {
       
@@ -56,55 +62,54 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ITouchSpinOptions extends StObject {
       
-      var buttonDownClass: js.UndefOr[String] = js.native
+      var buttonDownClass: js.UndefOr[String] = js.undefined
       
-      var buttonDownShow: js.UndefOr[Boolean] = js.native
+      var buttonDownShow: js.UndefOr[Boolean] = js.undefined
       
-      var buttonDownTxt: js.UndefOr[String] = js.native
+      var buttonDownTxt: js.UndefOr[String] = js.undefined
       
-      var buttonUpClass: js.UndefOr[String] = js.native
+      var buttonUpClass: js.UndefOr[String] = js.undefined
       
-      var buttonUpShow: js.UndefOr[Boolean] = js.native
+      var buttonUpShow: js.UndefOr[Boolean] = js.undefined
       
-      var buttonUpTxt: js.UndefOr[String] = js.native
+      var buttonUpTxt: js.UndefOr[String] = js.undefined
       
-      var decimals: js.UndefOr[Double] = js.native
+      var decimals: js.UndefOr[Double] = js.undefined
       
-      var decimalsDelimiter: js.UndefOr[String] = js.native
+      var decimalsDelimiter: js.UndefOr[String] = js.undefined
       
-      var forceStepDivisibility: js.UndefOr[StepDivisibilityType] = js.native
+      var forceStepDivisibility: js.UndefOr[StepDivisibilityType] = js.undefined
       
       // default is 'round' ('none' | 'floor' | 'round' | 'ceil') 
-      var inputReadOnly: js.UndefOr[Boolean] = js.native
+      var inputReadOnly: js.UndefOr[Boolean] = js.undefined
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
       
-      var mousewheel: js.UndefOr[Boolean] = js.native
+      var mousewheel: js.UndefOr[Boolean] = js.undefined
       
-      var postfix: js.UndefOr[String] = js.native
+      var postfix: js.UndefOr[String] = js.undefined
       
-      var postfixExtraClass: js.UndefOr[String] = js.native
+      var postfixExtraClass: js.UndefOr[String] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
       
-      var prefixExtraClass: js.UndefOr[String] = js.native
+      var prefixExtraClass: js.UndefOr[String] = js.undefined
       
-      var step: js.UndefOr[Double] = js.native
+      var step: js.UndefOr[Double] = js.undefined
       
-      var stepInterval: js.UndefOr[Double] = js.native
+      var stepInterval: js.UndefOr[Double] = js.undefined
       
-      var stepIntervalDelay: js.UndefOr[Double] = js.native
+      var stepIntervalDelay: js.UndefOr[Double] = js.undefined
       
-      var verticalButtons: js.UndefOr[Boolean] = js.native
+      var verticalButtons: js.UndefOr[Boolean] = js.undefined
       
-      var verticalDownClass: js.UndefOr[String] = js.native
+      var verticalDownClass: js.UndefOr[String] = js.undefined
       
-      var verticalUpClass: js.UndefOr[String] = js.native
+      var verticalUpClass: js.UndefOr[String] = js.undefined
     }
     object ITouchSpinOptions {
       

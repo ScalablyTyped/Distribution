@@ -2,7 +2,6 @@ package typings.cloudeventsSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,14 +9,22 @@ object global {
   @JSGlobal("Base64Parser")
   @js.native
   class Base64Parser protected ()
-    extends typings.cloudeventsSdk.Base64Parser {
+    extends StObject
+       with typings.cloudeventsSdk.Base64Parser {
     def this(decorator: js.Any) = this()
+    
+    /* CompleteClass */
+    var decorator: js.Any = js.native
+    
+    /* CompleteClass */
+    override def parse(payload: js.Any): js.Any = js.native
   }
   
   @JSGlobal("JSONParser")
   @js.native
   class JSONParser protected ()
-    extends typings.cloudeventsSdk.JSONParser {
+    extends StObject
+       with typings.cloudeventsSdk.JSONParser {
     def this(decorator: typings.cloudeventsSdk.Base64Parser) = this()
   }
   
@@ -25,12 +32,10 @@ object global {
   @js.native
   val ValidationError: js.Any = js.native
   
-  @JSGlobal("asJSON")
-  @js.native
-  def asJSON(v: String): js.Any = js.native
-  @JSGlobal("asJSON")
-  @js.native
-  def asJSON(v: js.Object): js.Any = js.native
+  @scala.inline
+  def asJSON(v: String): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def asJSON(v: js.Object): js.Any = js.Dynamic.global.applyDynamic("asJSON")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSGlobal("invalidPayloadTypeError")
   @js.native

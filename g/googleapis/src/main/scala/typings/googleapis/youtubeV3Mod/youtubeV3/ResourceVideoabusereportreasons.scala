@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Videoabusereportreasons")
@@ -32,7 +31,7 @@ class ResourceVideoabusereportreasons protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVideoAbuseReportReasonListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
   def list(params: ParamsResourceVideoabusereportreasonsList): GaxiosPromise[SchemaVideoAbuseReportReasonListResponse] = js.native
   def list(
     params: ParamsResourceVideoabusereportreasonsList,

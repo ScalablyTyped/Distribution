@@ -7,7 +7,6 @@ import typings.libp2pInterfaces.anon.Protocol
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
@@ -19,7 +18,9 @@ object connectionMod {
   /* was `typeof Connection` */
   @JSImport("libp2p-interfaces/src/connection/connection", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Connection {
+  class ^ protected ()
+    extends StObject
+       with Connection {
     /**
       * Creates an instance of Connection.
       * @param {object} properties properties of the connection.
@@ -58,7 +59,7 @@ object connectionMod {
     /**
       * Reference to the getStreams function of the muxer
       */
-    def _getStreams(): js.Array[_] = js.native
+    def _getStreams(): js.Array[js.Any] = js.native
     
     /**
       * Reference to the new stream function of the multiplexer
@@ -111,7 +112,7 @@ object connectionMod {
     /**
       * Connection streams registry
       */
-    var registry: Map[_, _] = js.native
+    var registry: Map[js.Any, js.Any] = js.native
     
     /**
       * Observed multiaddr of the remote peer
@@ -139,7 +140,7 @@ object connectionMod {
       * Get all the streams of the muxer.
       * @this {Connection}
       */
-    def streams: js.Array[_] = js.native
+    def streams: js.Array[js.Any] = js.native
     
     /**
       * User provided tags

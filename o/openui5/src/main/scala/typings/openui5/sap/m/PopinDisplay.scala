@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait PopinDisplay extends StObject
 object PopinDisplay extends StObject {
   
   @js.native
-  sealed trait Block extends PopinDisplay
+  sealed trait Block
+    extends StObject
+       with PopinDisplay
   
   @js.native
-  sealed trait Inline extends PopinDisplay
+  sealed trait Inline
+    extends StObject
+       with PopinDisplay
   
   @js.native
-  sealed trait WithoutHeader extends PopinDisplay
+  sealed trait WithoutHeader
+    extends StObject
+       with PopinDisplay
 }

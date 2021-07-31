@@ -3,23 +3,21 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.PivotDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotConfiguratorOptions extends StObject {
   
-  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.undefined
   
-  var filterable: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var messages: js.UndefOr[PivotConfiguratorMessages] = js.native
+  var messages: js.UndefOr[PivotConfiguratorMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | PivotConfiguratorSortable] = js.native
+  var sortable: js.UndefOr[Boolean | PivotConfiguratorSortable] = js.undefined
 }
 object PivotConfiguratorOptions {
   

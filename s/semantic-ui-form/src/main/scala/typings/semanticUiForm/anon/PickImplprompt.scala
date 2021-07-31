@@ -3,14 +3,12 @@ package typings.semanticUiForm.anon
 import typings.semanticUiForm.SemanticUI.Form.PromptSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.FormSettings._Impl, 'prompt'> */
-@js.native
 trait PickImplprompt extends StObject {
   
-  var prompt: PromptSettings = js.native
+  var prompt: PromptSettings
 }
 object PickImplprompt {
   

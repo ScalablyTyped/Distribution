@@ -4,11 +4,11 @@ import typings.vegaLite.vegaSchemaMod.RowCol
 import typings.vegaTypings.layoutMod.LayoutAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GenericCompositionLayout extends BoundsMixins {
+trait GenericCompositionLayout
+  extends StObject
+     with BoundsMixins {
   
   /**
     * The alignment to apply to grid rows and columns.
@@ -22,7 +22,7 @@ trait GenericCompositionLayout extends BoundsMixins {
     *
     * __Default value:__ `"all"`.
     */
-  var align: js.UndefOr[LayoutAlign | RowCol[LayoutAlign]] = js.native
+  var align: js.UndefOr[LayoutAlign | RowCol[LayoutAlign]] = js.undefined
   
   /**
     * Boolean flag indicating if subviews should be centered relative to their respective rows or columns.
@@ -31,7 +31,7 @@ trait GenericCompositionLayout extends BoundsMixins {
     *
     * __Default value:__ `false`
     */
-  var center: js.UndefOr[Boolean | RowCol[Boolean]] = js.native
+  var center: js.UndefOr[Boolean | RowCol[Boolean]] = js.undefined
   
   /**
     * The spacing in pixels between sub-views of the composition operator.
@@ -40,7 +40,7 @@ trait GenericCompositionLayout extends BoundsMixins {
     *
     * __Default value__: Depends on `"spacing"` property of [the view composition configuration](https://vega.github.io/vega-lite/docs/config.html#view-config) (`20` by default)
     */
-  var spacing: js.UndefOr[Double | RowCol[Double]] = js.native
+  var spacing: js.UndefOr[Double | RowCol[Double]] = js.undefined
 }
 object GenericCompositionLayout {
   

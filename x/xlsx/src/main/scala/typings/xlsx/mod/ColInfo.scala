@@ -2,28 +2,26 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColInfo extends StObject {
   
   /** Excel's "Max Digit Width" unit, always integral */
-  var MDW: js.UndefOr[Double] = js.native
+  var MDW: js.UndefOr[Double] = js.undefined
   
   /* --- visibility --- */
   /** if true, the column is hidden */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** width in "characters" */
-  var wch: js.UndefOr[Double] = js.native
+  var wch: js.UndefOr[Double] = js.undefined
   
   /* --- column width --- */
   /** width in Excel's "Max Digit Width", width*256 is integral */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** width in screen pixels */
-  var wpx: js.UndefOr[Double] = js.native
+  var wpx: js.UndefOr[Double] = js.undefined
 }
 object ColInfo {
   

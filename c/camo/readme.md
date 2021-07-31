@@ -11,8 +11,8 @@ A class-based ES6 ODM for Mongo-like databases.
 | Full name          | camo |
 | Keywords           | es6, odm, mongodb, nedb, nosql, document, model, schema, database, data, datastore, query, db |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 5411 |
+| # dependents       | 10 |
+| # downloads        | 5241 |
 | # stars            | 6 |
 
 ## Links

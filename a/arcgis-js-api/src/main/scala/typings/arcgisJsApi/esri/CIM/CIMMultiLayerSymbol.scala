@@ -2,31 +2,31 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CIMMultiLayerSymbol extends CIMSymbolBase {
+trait CIMMultiLayerSymbol
+  extends StObject
+     with CIMSymbolBase {
   
   /**
     * The geometric effects that are applied to the symbol.
     */
-  var effects: js.UndefOr[js.Array[CIMGeometricEffectType]] = js.native
+  var effects: js.UndefOr[js.Array[CIMGeometricEffectType]] = js.undefined
   
   /**
     * The symbol layers. Symbol layers are the components that make up a symbol. A symbol layer is represented by a stroke, fill, marker, or procedural symbol layer.
     */
-  var symbolLayers: js.UndefOr[js.Array[CIMSymbolLayerType]] = js.native
+  var symbolLayers: js.UndefOr[js.Array[CIMSymbolLayerType]] = js.undefined
   
   /**
     * The representative image of the symbol.
     */
-  var thumbnailURI: js.UndefOr[String] = js.native
+  var thumbnailURI: js.UndefOr[String] = js.undefined
   
   /**
     * A value indicating whether the symbol size properties are rendered using real world units or page units. When set to true the symbol will draw using real world units (e.g. meters).
     */
-  var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.native
+  var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined
 }
 object CIMMultiLayerSymbol {
   

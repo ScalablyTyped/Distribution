@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluatableExpressionProvider extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait EvaluatableExpressionProvider extends StObject {
     * @return An EvaluatableExpression or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideEvaluatableExpression(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[EvaluatableExpression] = js.native
+  def provideEvaluatableExpression(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[EvaluatableExpression]
 }
 object EvaluatableExpressionProvider {
   

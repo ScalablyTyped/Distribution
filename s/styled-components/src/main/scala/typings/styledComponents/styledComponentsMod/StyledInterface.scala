@@ -180,7 +180,6 @@ import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined styled-components.styled-components.ThemedStyledInterface<styled-components.styled-components.DefaultTheme> */
@@ -1062,7 +1061,7 @@ trait StyledInterface extends StObject {
   // causes tests to fail in TS 3.1
   component: webview
   ): ThemedStyledFunction[webview, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-  def apply[C /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](
+  def apply[C /* <: (ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any] */](
     // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
   // causes tests to fail in TS 3.1
   component: C

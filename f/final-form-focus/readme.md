@@ -10,9 +10,9 @@ Decorator that will attempt to apply focus to the first field with an error upon
 | ------------------ | :-------------: |
 | Full name          | final-form-focus |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 1817791 |
+| # releases         | 0 |
+| # dependents       | 19 |
+| # downloads        | 1884189 |
 | # stars            | 0 |
 
 ## Links

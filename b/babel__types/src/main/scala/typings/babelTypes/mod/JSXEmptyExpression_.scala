@@ -3,24 +3,23 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.JSXEmptyExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait JSXEmptyExpression_
-  extends JSX
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait JSXEmptyExpression_
+  extends StObject
+     with BaseNode
+     with JSX {
   
   @JSName("type")
-  var type_JSXEmptyExpression_ : JSXEmptyExpression = js.native
+  var type_JSXEmptyExpression_ : JSXEmptyExpression
 }
 object JSXEmptyExpression_ {
   
   @scala.inline
-  def apply(`type`: JSXEmptyExpression): JSXEmptyExpression_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): JSXEmptyExpression_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXEmptyExpression")
     __obj.asInstanceOf[JSXEmptyExpression_]
   }
   

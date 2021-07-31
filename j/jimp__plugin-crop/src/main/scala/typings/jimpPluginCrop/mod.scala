@@ -4,19 +4,20 @@ import typings.jimpCore.etcMod.ImageCallback
 import typings.jimpPluginCrop.anon.CropOnlyFrames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-crop", JSImport.Default)
+  @JSImport("@jimp/plugin-crop", JSImport.Namespace)
   @js.native
-  def default(): Crop = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Crop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Crop]
+  
   trait Crop extends StObject {
     
-    var `class`: CropClass = js.native
+    var `class`: CropClass
   }
   object Crop {
     
@@ -43,19 +44,15 @@ object mod {
     def autocrop(cropOnlyFrames: Boolean, cb: ImageCallback[this.type]): this.type = js.native
     def autocrop(options: CropOnlyFrames): this.type = js.native
     def autocrop(options: CropOnlyFrames, cb: ImageCallback[this.type]): this.type = js.native
-    def autocrop(tolerance: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
-    def autocrop(
-      tolerance: js.UndefOr[scala.Nothing],
-      cropOnlyFrames: js.UndefOr[scala.Nothing],
-      cb: ImageCallback[this.type]
-    ): this.type = js.native
-    def autocrop(tolerance: js.UndefOr[scala.Nothing], cropOnlyFrames: Boolean): this.type = js.native
-    def autocrop(tolerance: js.UndefOr[scala.Nothing], cropOnlyFrames: Boolean, cb: ImageCallback[this.type]): this.type = js.native
     def autocrop(tolerance: Double): this.type = js.native
     def autocrop(tolerance: Double, cb: ImageCallback[this.type]): this.type = js.native
-    def autocrop(tolerance: Double, cropOnlyFrames: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
     def autocrop(tolerance: Double, cropOnlyFrames: Boolean): this.type = js.native
     def autocrop(tolerance: Double, cropOnlyFrames: Boolean, cb: ImageCallback[this.type]): this.type = js.native
+    def autocrop(tolerance: Double, cropOnlyFrames: Unit, cb: ImageCallback[this.type]): this.type = js.native
+    def autocrop(tolerance: Unit, cb: ImageCallback[this.type]): this.type = js.native
+    def autocrop(tolerance: Unit, cropOnlyFrames: Boolean): this.type = js.native
+    def autocrop(tolerance: Unit, cropOnlyFrames: Boolean, cb: ImageCallback[this.type]): this.type = js.native
+    def autocrop(tolerance: Unit, cropOnlyFrames: Unit, cb: ImageCallback[this.type]): this.type = js.native
     
     def crop(x: Double, y: Double, w: Double, h: Double): this.type = js.native
     def crop(x: Double, y: Double, w: Double, h: Double, cb: ImageCallback[this.type]): this.type = js.native

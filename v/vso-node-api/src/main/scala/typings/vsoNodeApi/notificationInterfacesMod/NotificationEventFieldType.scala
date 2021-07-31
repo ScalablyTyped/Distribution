@@ -2,30 +2,28 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventFieldType extends StObject {
   
   /**
     * Gets or sets the unique identifier of this field type.
     */
-  var id: String = js.native
+  var id: String
   
-  var operatorConstraints: js.Array[OperatorConstraint] = js.native
+  var operatorConstraints: js.Array[OperatorConstraint]
   
   /**
     * Gets or sets the list of operators that this type supports.
     */
-  var operators: js.Array[NotificationEventFieldOperator] = js.native
+  var operators: js.Array[NotificationEventFieldOperator]
   
-  var subscriptionFieldType: SubscriptionFieldType = js.native
+  var subscriptionFieldType: SubscriptionFieldType
   
   /**
     * Gets or sets the value definition of this field like the getValuesMethod and template to display in the UI
     */
-  var value: ValueDefinition = js.native
+  var value: ValueDefinition
 }
 object NotificationEventFieldType {
   

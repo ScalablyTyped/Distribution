@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputConfig extends StObject {
   
   /** Google Cloud Storage destination for output content. */
-  var gcsDestination: js.UndefOr[GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GcsDestination] = js.undefined
 }
 object OutputConfig {
   

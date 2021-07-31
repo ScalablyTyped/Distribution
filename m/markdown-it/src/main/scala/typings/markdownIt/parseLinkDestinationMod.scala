@@ -2,25 +2,26 @@ package typings.markdownIt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseLinkDestinationMod {
   
+  @scala.inline
+  def apply(str: String, pos: Double, max: Double): ParseResult = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
+  
   @JSImport("markdown-it/lib/helpers/parse_link_destination", JSImport.Namespace)
   @js.native
-  def apply(str: String, pos: Double, max: Double): ParseResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ParseResult extends StObject {
     
-    var lines: Double = js.native
+    var lines: Double
     
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var pos: Double = js.native
+    var pos: Double
     
-    var str: String = js.native
+    var str: String
   }
   object ParseResult {
     

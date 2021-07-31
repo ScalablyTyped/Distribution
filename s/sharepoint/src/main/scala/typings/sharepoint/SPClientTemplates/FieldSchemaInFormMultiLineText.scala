@@ -2,30 +2,30 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a Choice field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormMultiLineText extends FieldSchemaInForm {
+trait FieldSchemaInFormMultiLineText
+  extends StObject
+     with FieldSchemaInForm {
   
   /** A boolean value that specifies whether hyperlinks can be used in this fields. */
-  var AllowHyperlink: Boolean = js.native
+  var AllowHyperlink: Boolean
   
   /** Changes are appended to the existing text. */
-  var AppendOnly: Boolean = js.native
+  var AppendOnly: Boolean
   
   /** Number of lines configured to display */
-  var NumberOfLines: Double = js.native
+  var NumberOfLines: Double
   
   /** Specifies whether rich text formatting can be used in the field */
-  var RichText: Boolean = js.native
+  var RichText: Boolean
   
   /** Rich text mode for the field */
-  var RichTextMode: typings.sharepoint.SPClientTemplates.RichTextMode = js.native
+  var RichTextMode: typings.sharepoint.SPClientTemplates.RichTextMode
   
   /** WebPartAdderId for the ScriptEditorWebPart */
-  var ScriptEditorAdderId: String = js.native
+  var ScriptEditorAdderId: String
 }
 object FieldSchemaInFormMultiLineText {
   

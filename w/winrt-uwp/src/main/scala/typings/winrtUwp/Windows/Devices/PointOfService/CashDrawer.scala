@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statusupdated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A cash drawer device in a retail scenario. */
 @js.native
 trait CashDrawer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs]): Unit = js.native
   
@@ -52,12 +51,12 @@ trait CashDrawer extends StObject {
   var isDrawerOpen: Boolean = js.native
   
   /** Indicates there has been a change in the power availability status of the drawer. */
-  def onstatusupdated(ev: CashDrawerStatusUpdatedEventArgs with WinRTEvent[CashDrawer]): Unit = js.native
+  def onstatusupdated(ev: CashDrawerStatusUpdatedEventArgs & WinRTEvent[CashDrawer]): Unit = js.native
   /** Indicates there has been a change in the power availability status of the drawer. */
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs]): Unit = js.native
   

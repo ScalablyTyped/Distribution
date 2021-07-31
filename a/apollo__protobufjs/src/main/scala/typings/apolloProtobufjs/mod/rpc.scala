@@ -4,7 +4,6 @@ import typings.apolloProtobufjs.mod.util.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpc {
@@ -21,8 +20,8 @@ object rpc {
       */
     def this(rpcImpl: RPCImpl) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-    def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
     
     /**
       * Ends this service and emits the `end` event.

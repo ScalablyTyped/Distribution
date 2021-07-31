@@ -6,12 +6,12 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BigInt64ArrayConstructor
-  extends Instantiable0[BigInt64Array]
+  extends StObject
+     with Instantiable0[BigInt64Array]
      with Instantiable1[
       (/* buffer */ ArrayBufferLike) | (/* length */ Double) | (/* array */ Iterable[js.BigInt]), 
       BigInt64Array
@@ -19,7 +19,7 @@ trait BigInt64ArrayConstructor
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, BigInt64Array]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
-      js.UndefOr[/* byteOffset */ Double], 
+      (/* byteOffset */ Double) | (/* byteOffset */ Unit), 
       /* length */ Double, 
       BigInt64Array
     ] {

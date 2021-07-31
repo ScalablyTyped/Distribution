@@ -2,17 +2,15 @@ package typings.mangopay2NodejsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiVersion extends StObject {
   
-  var apiVersion: String = js.native
+  var apiVersion: String
   
-  var clientId: String = js.native
+  var clientId: String
   
-  val id: String = js.native
+  val id: String
 }
 object ApiVersion {
   

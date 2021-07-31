@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishContainerVersionResponse extends StObject {
   
   /** Compiler errors or not. */
-  var compilerError: js.UndefOr[Boolean] = js.native
+  var compilerError: js.UndefOr[Boolean] = js.undefined
   
   /** The container version created. */
-  var containerVersion: js.UndefOr[ContainerVersion] = js.native
+  var containerVersion: js.UndefOr[ContainerVersion] = js.undefined
 }
 object PublishContainerVersionResponse {
   

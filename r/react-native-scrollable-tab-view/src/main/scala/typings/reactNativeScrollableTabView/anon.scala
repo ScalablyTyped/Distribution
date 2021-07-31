@@ -9,23 +9,21 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeScrollableTabView.mod.RenderTabProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActiveTab extends StObject {
     
-    var activeTab: js.UndefOr[Double] = js.native
+    var activeTab: js.UndefOr[Double] = js.undefined
     
-    var containerWidth: js.UndefOr[Double] = js.native
+    var containerWidth: js.UndefOr[Double] = js.undefined
     
-    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.native
+    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.undefined
     
-    var scrollValue: js.UndefOr[Value] = js.native
+    var scrollValue: js.UndefOr[Value] = js.undefined
     
-    var tabs: js.UndefOr[js.Array[Element]] = js.native
+    var tabs: js.UndefOr[js.Array[Element]] = js.undefined
   }
   object ActiveTab {
     
@@ -74,18 +72,17 @@ object anon {
   }
   
   /* Inlined react-native-scrollable-tab-view.react-native-scrollable-tab-view.TabBarProps<{}> */
-  @js.native
   trait TabBarProps extends StObject {
     
-    var activeTab: js.UndefOr[Double] = js.native
+    var activeTab: js.UndefOr[Double] = js.undefined
     
-    var containerWidth: js.UndefOr[Double] = js.native
+    var containerWidth: js.UndefOr[Double] = js.undefined
     
-    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.native
+    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.undefined
     
-    var scrollValue: js.UndefOr[Value] = js.native
+    var scrollValue: js.UndefOr[Value] = js.undefined
     
-    var tabs: js.UndefOr[js.Array[Element]] = js.native
+    var tabs: js.UndefOr[js.Array[Element]] = js.undefined
   }
   object TabBarProps {
     
@@ -134,34 +131,33 @@ object anon {
   }
   
   /* Inlined react-native-scrollable-tab-view.react-native-scrollable-tab-view.TabBarProps<react-native-scrollable-tab-view.react-native-scrollable-tab-view.DefaultTabBarProps> */
-  @js.native
   trait TabBarPropsDefaultTabBarP extends StObject {
     
-    var activeTab: js.UndefOr[Double] = js.native
+    var activeTab: js.UndefOr[Double] = js.undefined
     
-    var activeTextColor: js.UndefOr[String] = js.native
+    var activeTextColor: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var containerWidth: js.UndefOr[Double] = js.native
+    var containerWidth: js.UndefOr[Double] = js.undefined
     
-    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.native
+    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.undefined
     
-    var inactiveTextColor: js.UndefOr[String] = js.native
+    var inactiveTextColor: js.UndefOr[String] = js.undefined
     
-    var renderTab: js.UndefOr[RenderTabProperties] = js.native
+    var renderTab: js.UndefOr[RenderTabProperties] = js.undefined
     
-    var scrollValue: js.UndefOr[Value] = js.native
+    var scrollValue: js.UndefOr[Value] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var tabStyle: js.UndefOr[ViewStyle] = js.native
+    var tabStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var tabs: js.UndefOr[js.Array[Element]] = js.native
+    var tabs: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var underlineStyle: js.UndefOr[ViewStyle] = js.native
+    var underlineStyle: js.UndefOr[ViewStyle] = js.undefined
   }
   object TabBarPropsDefaultTabBarP {
     
@@ -260,38 +256,37 @@ object anon {
   }
   
   /* Inlined react-native-scrollable-tab-view.react-native-scrollable-tab-view.TabBarProps<react-native-scrollable-tab-view.react-native-scrollable-tab-view.ScrollableTabBarProps> */
-  @js.native
   trait TabBarPropsScrollableTabB extends StObject {
     
-    var activeTab: js.UndefOr[Double] = js.native
+    var activeTab: js.UndefOr[Double] = js.undefined
     
-    var activeTextColor: js.UndefOr[String] = js.native
+    var activeTextColor: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var containerWidth: js.UndefOr[Double] = js.native
+    var containerWidth: js.UndefOr[Double] = js.undefined
     
-    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.native
+    var goToPage: js.UndefOr[js.Function1[/* pageNumber */ Double, Unit]] = js.undefined
     
-    var inactiveTextColor: js.UndefOr[String] = js.native
+    var inactiveTextColor: js.UndefOr[String] = js.undefined
     
-    var renderTab: js.UndefOr[RenderTabProperties] = js.native
+    var renderTab: js.UndefOr[RenderTabProperties] = js.undefined
     
-    var scrollOffset: js.UndefOr[Double] = js.native
+    var scrollOffset: js.UndefOr[Double] = js.undefined
     
-    var scrollValue: js.UndefOr[Value] = js.native
+    var scrollValue: js.UndefOr[Value] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var tabStyle: js.UndefOr[ViewStyle] = js.native
+    var tabStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var tabs: js.UndefOr[js.Array[Element]] = js.native
+    var tabs: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var tabsContainerStyle: js.UndefOr[ViewStyle] = js.native
+    var tabsContainerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var underlineStyle: js.UndefOr[ViewStyle] = js.native
+    var underlineStyle: js.UndefOr[ViewStyle] = js.undefined
   }
   object TabBarPropsScrollableTabB {
     
@@ -401,10 +396,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TabLabel extends StObject {
     
-    var tabLabel: ReactChild = js.native
+    var tabLabel: ReactChild
   }
   object TabLabel {
     

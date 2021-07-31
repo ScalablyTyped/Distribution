@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.EligibilityRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyEligibilityRequest extends StObject {
   
-  var body: EligibilityRequest = js.native
+  var body: EligibilityRequest
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.EligibilityRequest = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.EligibilityRequest
 }
 object BodyEligibilityRequest {
   
   @scala.inline
-  def apply(
-    body: EligibilityRequest,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.EligibilityRequest
-  ): BodyEligibilityRequest = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: EligibilityRequest): BodyEligibilityRequest = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "EligibilityRequest")
     __obj.asInstanceOf[BodyEligibilityRequest]
   }
   

@@ -2,16 +2,16 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldDependentRule extends WorkItemTrackingResource {
+trait FieldDependentRule
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * The dependent fields.
     */
-  var dependentFields: js.Array[WorkItemFieldReference] = js.native
+  var dependentFields: js.Array[WorkItemFieldReference]
 }
 object FieldDependentRule {
   

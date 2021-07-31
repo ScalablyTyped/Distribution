@@ -3,26 +3,26 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildLog extends BuildLogReference {
+trait BuildLog
+  extends StObject
+     with BuildLogReference {
   
   /**
     * The date and time the log was created.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * The date and time the log was last changed.
     */
-  var lastChangedOn: Date = js.native
+  var lastChangedOn: Date
   
   /**
     * The number of lines in the log.
     */
-  var lineCount: Double = js.native
+  var lineCount: Double
 }
 object BuildLog {
   

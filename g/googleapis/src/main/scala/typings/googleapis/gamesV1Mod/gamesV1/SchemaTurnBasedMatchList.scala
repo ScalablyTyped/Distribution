@@ -2,30 +2,28 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of turn-based matches.
   */
-@js.native
 trait SchemaTurnBasedMatchList extends StObject {
   
   /**
     * The matches.
     */
-  var items: js.UndefOr[js.Array[SchemaTurnBasedMatch]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTurnBasedMatch]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#turnBasedMatchList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The pagination token for the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaTurnBasedMatchList {
   

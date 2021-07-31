@@ -2,41 +2,39 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackSummary extends StObject {
   
   /**
     * The number of apps.
     */
-  var AppsCount: js.UndefOr[Integer] = js.native
+  var AppsCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The stack's ARN.
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * An InstancesCount object with the number of instances in each status.
     */
-  var InstancesCount: js.UndefOr[typings.awsSdk.opsworksMod.InstancesCount] = js.native
+  var InstancesCount: js.UndefOr[typings.awsSdk.opsworksMod.InstancesCount] = js.undefined
   
   /**
     * The number of layers.
     */
-  var LayersCount: js.UndefOr[Integer] = js.native
+  var LayersCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The stack name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object StackSummary {
   

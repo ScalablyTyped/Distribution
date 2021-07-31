@@ -3,15 +3,14 @@ package typings.fhirJsClient.FHIR.SMART
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a FHIR resource
   */
-@js.native
 trait Resource
-  extends /**
+  extends StObject
+     with /**
   * Making this interface extendable since this is not a complete type definition of FHIR Resource
   */
 /* propName */ StringDictionary[js.Any] {
@@ -19,7 +18,7 @@ trait Resource
   /**
     * The type of resource. All FHIR resources must have a resource type.
     */
-  var resourceType: String = js.native
+  var resourceType: String
 }
 object Resource {
   

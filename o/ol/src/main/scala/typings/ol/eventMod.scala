@@ -3,53 +3,77 @@ package typings.ol
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
   
+  @JSImport("ol/events/Event", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/events/Event", JSImport.Default)
   @js.native
-  class default protected () extends BaseEvent {
+  class default protected ()
+    extends StObject
+       with BaseEvent {
     def this(`type`: String) = this()
-  }
-  
-  @JSImport("ol/events/Event", "preventDefault")
-  @js.native
-  def preventDefault(evt: BaseEvent): Unit = js.native
-  @JSImport("ol/events/Event", "preventDefault")
-  @js.native
-  def preventDefault(evt: Event): Unit = js.native
-  
-  @JSImport("ol/events/Event", "stopPropagation")
-  @js.native
-  def stopPropagation(evt: BaseEvent): Unit = js.native
-  @JSImport("ol/events/Event", "stopPropagation")
-  @js.native
-  def stopPropagation(evt: Event): Unit = js.native
-  
-  @js.native
-  trait BaseEvent extends StObject {
     
     /**
       * Stop event propagation.
       */
-    def preventDefault(): Unit = js.native
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
     
     /**
       * Stop event propagation.
       */
-    def stopPropagation(): Unit = js.native
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
     
     /**
       * The event target.
       */
+    /* CompleteClass */
     var target: js.Any = js.native
     
     /**
       * The event type.
       */
+    /* CompleteClass */
     var `type`: String = js.native
+  }
+  
+  @scala.inline
+  def preventDefault(evt: BaseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def preventDefault(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stopPropagation(evt: BaseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def stopPropagation(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  trait BaseEvent extends StObject {
+    
+    /**
+      * Stop event propagation.
+      */
+    def preventDefault(): Unit
+    
+    /**
+      * Stop event propagation.
+      */
+    def stopPropagation(): Unit
+    
+    /**
+      * The event target.
+      */
+    var target: js.Any
+    
+    /**
+      * The event type.
+      */
+    var `type`: String
   }
   object BaseEvent {
     

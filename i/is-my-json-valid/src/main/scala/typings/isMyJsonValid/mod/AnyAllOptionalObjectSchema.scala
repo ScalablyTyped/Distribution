@@ -1,22 +1,20 @@
 package typings.isMyJsonValid.mod
 
-import typings.isMyJsonValid.isMyJsonValidStrings.`object`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyAllOptionalObjectSchema
-  extends AllOptionalObjectSchema[Record[String, AnySchema]]
+  extends StObject
+     with AllOptionalObjectSchema[Record[String, AnySchema]]
      with _AnySchema
 object AnyAllOptionalObjectSchema {
   
   @scala.inline
-  def apply(properties: Record[String, AnySchema], `type`: `object`): AnyAllOptionalObjectSchema = {
+  def apply(properties: Record[String, AnySchema]): AnyAllOptionalObjectSchema = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[AnyAllOptionalObjectSchema]
   }
 }

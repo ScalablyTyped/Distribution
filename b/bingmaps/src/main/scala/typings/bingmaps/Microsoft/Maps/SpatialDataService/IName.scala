@@ -2,20 +2,18 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IName extends StObject {
   
   /** The culture of the region. */
-  var Culture: String = js.native
+  var Culture: String
   
   /** The name of boundary. Example: "United States" */
-  var EntityName: String = js.native
+  var EntityName: String
   
   /** An ID identifying the data provider that supplied the data. */
-  var SourceID: String = js.native
+  var SourceID: String
 }
 object IName {
   

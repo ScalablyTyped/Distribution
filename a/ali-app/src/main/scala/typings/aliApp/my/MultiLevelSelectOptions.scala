@@ -3,27 +3,26 @@ package typings.aliApp.my
 import typings.aliApp.anon.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiLevelSelectOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 标题
-  var list: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.native
+  var list: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
   
   // 选择数据列表
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // 条目名称
-  var subList: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.native
+  var subList: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
   
   // 子条目列表
   @JSName("success")
-  var success_MultiLevelSelectOptions: js.UndefOr[js.Function1[/* res */ Result, Unit]] = js.native
+  var success_MultiLevelSelectOptions: js.UndefOr[js.Function1[/* res */ Result, Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object MultiLevelSelectOptions {
   

@@ -4,7 +4,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.NgZone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngxInfiniteScrollMod {
@@ -13,7 +12,7 @@ object ngxInfiniteScrollMod {
   @js.native
   class InfiniteScrollDirective protected ()
     extends typings.ngxInfiniteScroll.infiniteScrollDirectiveMod.InfiniteScrollDirective {
-    def this(element: ElementRef[_], zone: NgZone) = this()
+    def this(element: ElementRef[js.Any], zone: NgZone) = this()
   }
   
   @JSImport("ngx-infinite-scroll/src/ngx-infinite-scroll", "InfiniteScrollModule")

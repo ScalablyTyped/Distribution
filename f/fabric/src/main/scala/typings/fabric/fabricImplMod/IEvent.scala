@@ -4,27 +4,25 @@ import typings.fabric.anon.Corner
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEvent extends StObject {
   
-  var absolutePointer: js.UndefOr[Point] = js.native
+  var absolutePointer: js.UndefOr[Point] = js.undefined
   
-  var button: js.UndefOr[Double] = js.native
+  var button: js.UndefOr[Double] = js.undefined
   
-  var e: Event = js.native
+  var e: Event
   
-  var isClick: js.UndefOr[Boolean] = js.native
+  var isClick: js.UndefOr[Boolean] = js.undefined
   
-  var pointer: js.UndefOr[Point] = js.native
+  var pointer: js.UndefOr[Point] = js.undefined
   
-  var subTargets: js.UndefOr[js.Array[Object]] = js.native
+  var subTargets: js.UndefOr[js.Array[Object]] = js.undefined
   
-  var target: js.UndefOr[Object] = js.native
+  var target: js.UndefOr[Object] = js.undefined
   
-  var transform: js.UndefOr[Corner] = js.native
+  var transform: js.UndefOr[Corner] = js.undefined
 }
 object IEvent {
   

@@ -2,25 +2,23 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListTopics` method.
   */
-@js.native
 trait SchemaListTopicsResponse extends StObject {
   
   /**
     * If not empty, indicates that there may be more topics that match the
     * request; this value should be passed in a new `ListTopicsRequest`.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The resulting topics.
     */
-  var topics: js.UndefOr[js.Array[SchemaTopic]] = js.native
+  var topics: js.UndefOr[js.Array[SchemaTopic]] = js.undefined
 }
 object SchemaListTopicsResponse {
   

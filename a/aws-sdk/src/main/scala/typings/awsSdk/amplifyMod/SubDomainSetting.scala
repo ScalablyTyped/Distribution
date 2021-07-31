@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubDomainSetting extends StObject {
   
   /**
     *  The branch name setting for the subdomain. 
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     *  The prefix setting for the subdomain. 
     */
-  var prefix: DomainPrefix = js.native
+  var prefix: DomainPrefix
 }
 object SubDomainSetting {
   

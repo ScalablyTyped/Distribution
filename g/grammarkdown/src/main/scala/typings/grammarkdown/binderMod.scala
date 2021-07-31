@@ -12,7 +12,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object binderMod {
@@ -46,7 +45,7 @@ object binderMod {
     
     var addReferenceToSymbol: js.Any = js.native
     
-    def getAncestor(node: js.UndefOr[scala.Nothing], kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
+    def getAncestor(node: Unit, kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
     def getAncestor(node: Node[SyntaxKind], kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
     
     def getDeclarations(): js.Array[SourceFile | Production | Parameter] = js.native
@@ -78,10 +77,10 @@ object binderMod {
     
     var nodeSymbols: js.Any = js.native
     
-    def resolveSymbol(location: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], meaning: SymbolKind): js.UndefOr[Symbol] = js.native
-    def resolveSymbol(location: js.UndefOr[scala.Nothing], name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
-    def resolveSymbol(location: Node[SyntaxKind], name: js.UndefOr[scala.Nothing], meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: Unit, name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: Unit, name: Unit, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
     def resolveSymbol(location: Node[SyntaxKind], name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: Node[SyntaxKind], name: Unit, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
     
     var setSymbolForNode: js.Any = js.native
     

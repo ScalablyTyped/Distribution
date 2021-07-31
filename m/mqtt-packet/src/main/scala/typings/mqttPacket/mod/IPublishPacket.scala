@@ -5,34 +5,33 @@ import typings.mqttPacket.mqttPacketStrings.publish
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPublishPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IPublishPacket: publish = js.native
+  var cmd_IPublishPacket: publish
   
-  var dup: Boolean = js.native
+  var dup: Boolean
   
-  var payload: String | Buffer = js.native
+  var payload: String | Buffer
   
-  var properties: js.UndefOr[CorrelationData] = js.native
+  var properties: js.UndefOr[CorrelationData] = js.undefined
   
-  var qos: QoS = js.native
+  var qos: QoS
   
-  var retain: Boolean = js.native
+  var retain: Boolean
   
-  var topic: String = js.native
+  var topic: String
 }
 object IPublishPacket {
   
   @scala.inline
-  def apply(cmd: publish, dup: Boolean, payload: String | Buffer, qos: QoS, retain: Boolean, topic: String): IPublishPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
+  def apply(dup: Boolean, payload: String | Buffer, qos: QoS, retain: Boolean, topic: String): IPublishPacket = {
+    val __obj = js.Dynamic.literal(cmd = "publish", dup = dup.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], qos = qos.asInstanceOf[js.Any], retain = retain.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishPacket]
   }
   

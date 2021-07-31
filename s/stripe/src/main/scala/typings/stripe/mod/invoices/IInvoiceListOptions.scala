@@ -11,56 +11,56 @@ import typings.stripe.stripeStrings.uncollectible
 import typings.stripe.stripeStrings.void
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInvoiceListOptions extends IListOptions {
+trait IInvoiceListOptions
+  extends StObject
+     with IListOptions {
   
   /**
     * The billing mode of the invoice to retrieve. Either `charge_automatically` or `send_invoice`
     * This field has been renamed to collection_method and will be removed in a future API version.
     */
-  var billing: js.UndefOr[charge_automatically | send_invoice] = js.native
+  var billing: js.UndefOr[charge_automatically | send_invoice] = js.undefined
   
   /**
     * Either charge_automatically, or send_invoice. When charging automatically, Stripe will attempt to pay
     * this invoice using the default source attached to the customer. When sending an invoice, Stripe will
     * email this invoice to the customer with payment instructions.
     */
-  var collection_method: js.UndefOr[charge_automatically | send_invoice] = js.native
+  var collection_method: js.UndefOr[charge_automatically | send_invoice] = js.undefined
   
   /**
     * A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
-  var created: js.UndefOr[IDateFilter] = js.native
+  var created: js.UndefOr[IDateFilter] = js.undefined
   
   /**
     * The identifier of the customer whose invoices to return. If none is provided, all invoices will be returned.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * @deprecated Use created property instead as of api version 2019-03-14.
     */
-  var date: js.UndefOr[IDateFilter] = js.native
+  var date: js.UndefOr[IDateFilter] = js.undefined
   
   /**
     * A filter on the list based on the object due_date field. The value can be a string with an integer Unix timestamp,
     * or it can be a dictionary with the following options:
     */
-  var due_date: js.UndefOr[IDateFilter] = js.native
+  var due_date: js.UndefOr[IDateFilter] = js.undefined
   
   /**
     * The status of the invoice, one of draft, open, paid, uncollectible, or void.
     */
-  var status: js.UndefOr[draft | open | paid | uncollectible | void] = js.native
+  var status: js.UndefOr[draft | open | paid | uncollectible | void] = js.undefined
   
   /**
     * Only return invoices for the subscription specified by this subscription ID
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
 }
 object IInvoiceListOptions {
   

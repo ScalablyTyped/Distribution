@@ -2,22 +2,21 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveConfig {
   
-  @JSImport("prettier", "resolveConfig")
-  @js.native
-  def apply(filePath: String): js.Promise[Null | Options] = js.native
-  @JSImport("prettier", "resolveConfig")
-  @js.native
-  def apply(filePath: String, options: ResolveConfigOptions): js.Promise[Null | Options] = js.native
+  @scala.inline
+  def apply(filePath: String): js.Promise[Null | Options] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null | Options]]
+  @scala.inline
+  def apply(filePath: String, options: ResolveConfigOptions): js.Promise[Null | Options] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Null | Options]]
   
-  @JSImport("prettier", "resolveConfig.sync")
+  @JSImport("prettier", "resolveConfig")
   @js.native
-  def sync(filePath: String): Null | Options = js.native
-  @JSImport("prettier", "resolveConfig.sync")
-  @js.native
-  def sync(filePath: String, options: ResolveConfigOptions): Null | Options = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(filePath: String): Null | Options = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Null | Options]
+  @scala.inline
+  def sync(filePath: String, options: ResolveConfigOptions): Null | Options = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null | Options]
 }

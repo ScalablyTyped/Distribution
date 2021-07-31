@@ -14,7 +14,6 @@ import typings.reactNative.mod.ScrollView
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultTabBarMod {
@@ -31,7 +30,7 @@ object defaultTabBarMod {
     
     var _tabContainerMeasurements: js.Any = js.native
     
-    var _tabsMeasurements: js.Array[_] = js.native
+    var _tabsMeasurements: js.Array[js.Any] = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDefaultTabBar(): Unit = js.native
@@ -75,21 +74,21 @@ object defaultTabBarMod {
     def defaultProps_=(x: ActiveTab): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PropsType
-    extends TabBarPropsType
+    extends StObject
+       with TabBarPropsType
        with WithThemeStyles[TabBarStyle] {
     
     /** default: false */
-    var dynamicTabUnderlineWidth: js.UndefOr[Boolean] = js.native
+    var dynamicTabUnderlineWidth: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
-    var scrollValue: js.UndefOr[js.Any] = js.native
+    var scrollValue: js.UndefOr[js.Any] = js.undefined
     
-    var tabStyle: js.UndefOr[ViewStyle] = js.native
+    var tabStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var tabsContainerStyle: js.UndefOr[ViewStyle] = js.native
+    var tabsContainerStyle: js.UndefOr[ViewStyle] = js.undefined
   }
   object PropsType {
     
@@ -140,16 +139,15 @@ object defaultTabBarMod {
     }
   }
   
-  @js.native
   trait StateType extends StObject {
     
-    var _containerWidth: Double = js.native
+    var _containerWidth: Double
     
-    var _leftTabUnderline: Value = js.native
+    var _leftTabUnderline: Value
     
-    var _tabContainerWidth: Double = js.native
+    var _tabContainerWidth: Double
     
-    var _widthTabUnderline: Value = js.native
+    var _widthTabUnderline: Value
   }
   object StateType {
     

@@ -2,19 +2,17 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName[T] extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var style: js.UndefOr[T] = js.native
+  var style: js.UndefOr[T] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object ClassName {
   
@@ -25,7 +23,7 @@ object ClassName {
   }
   
   @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName[_], T] (val x: Self with ClassName[T]) extends AnyVal {
+  implicit class ClassNameMutableBuilder[Self <: ClassName[?], T] (val x: Self & ClassName[T]) extends AnyVal {
     
     @scala.inline
     def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

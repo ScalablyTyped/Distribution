@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,18 +22,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that is opened in Excel on the web, and more than one user is editing the spreadsheet (coauthoring). 
   * Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
   */
-@js.native
 trait SettingsChangedEventArgs extends StObject {
   
   /**
     * Gets an {@link Office.Settings} object that represents the settings that raised the settingsChanged event.
     */
-  var settings: Settings = js.native
+  var settings: Settings
   
   /**
     * Get an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
     */
-  var `type`: EventType = js.native
+  var `type`: EventType
 }
 object SettingsChangedEventArgs {
   

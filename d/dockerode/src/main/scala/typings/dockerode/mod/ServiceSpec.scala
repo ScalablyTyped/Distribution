@@ -2,23 +2,23 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceSpec extends Annotations {
+trait ServiceSpec
+  extends StObject
+     with Annotations {
   
-  var EndpointSpec: js.UndefOr[typings.dockerode.mod.EndpointSpec] = js.native
+  var EndpointSpec: js.UndefOr[typings.dockerode.mod.EndpointSpec] = js.undefined
   
-  var Mode: js.UndefOr[ServiceMode] = js.native
+  var Mode: js.UndefOr[ServiceMode] = js.undefined
   
-  var Networks: js.UndefOr[js.Array[NetworkAttachmentConfig]] = js.native
+  var Networks: js.UndefOr[js.Array[NetworkAttachmentConfig]] = js.undefined
   
-  var RollbackConfig: js.UndefOr[UpdateConfig] = js.native
+  var RollbackConfig: js.UndefOr[UpdateConfig] = js.undefined
   
-  var TaskTemplate: js.UndefOr[TaskSpec] = js.native
+  var TaskTemplate: js.UndefOr[TaskSpec] = js.undefined
   
-  var UpdateConfig: js.UndefOr[typings.dockerode.mod.UpdateConfig] = js.native
+  var UpdateConfig: js.UndefOr[typings.dockerode.mod.UpdateConfig] = js.undefined
 }
 object ServiceSpec {
   

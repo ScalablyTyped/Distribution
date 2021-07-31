@@ -2,20 +2,18 @@ package typings.karmaBriefReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait BriefReporterOptions extends StObject {
     
     /**
       * Print the test failures immediately instead of at the end
       * @default false
       */
-    var earlyErrorReport: js.UndefOr[Boolean] = js.native
+    var earlyErrorReport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Omits stack frames from external dependencies like qunit,
@@ -23,33 +21,33 @@ object mod {
       * tests and which are usually irrelevant to the tested code
       * @default false
       */
-    var omitExternalStackFrames: js.UndefOr[Boolean] = js.native
+    var omitExternalStackFrames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only render the graphic after all tests have finished.
       * This is ideal for using this reporter in a continuous integration environment
       * @default false
       */
-    var renderOnRunCompleteOnly: js.UndefOr[Boolean] = js.native
+    var renderOnRunCompleteOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the browser console log at the end of the test run
       * @default false
       */
-    var suppressBrowserLogs: js.UndefOr[Boolean] = js.native
+    var suppressBrowserLogs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the red background on errors in the error
       * report at the end of the test run.
       * @default false
       */
-    var suppressErrorHighlighting: js.UndefOr[Boolean] = js.native
+    var suppressErrorHighlighting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the error report at the end of the test run
       * @default false
       */
-    var suppressErrorReport: js.UndefOr[Boolean] = js.native
+    var suppressErrorReport: js.UndefOr[Boolean] = js.undefined
   }
   object BriefReporterOptions {
     
@@ -100,14 +98,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Reports test progress statistics and lists failures at the end of a Karma test run.
       * {@link https://github.com/prantlf/karma-brief-reporter#options}
       */
-    var briefReporter: js.UndefOr[BriefReporterOptions] = js.native
+    var briefReporter: js.UndefOr[BriefReporterOptions] = js.undefined
   }
   object ConfigOptions {
     

@@ -4,17 +4,18 @@ import typings.useragent.anon.Family
 import typings.useragent.anon.Major
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(refresh: Boolean): Unit = ^.asInstanceOf[js.Dynamic].apply(refresh.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("useragent", JSImport.Namespace)
   @js.native
-  def apply(): Unit = js.native
-  @JSImport("useragent", JSImport.Namespace)
-  @js.native
-  def apply(refresh: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("useragent", "Agent")
   @js.native
@@ -28,107 +29,36 @@ object mod {
     */
   class Agent () extends StObject {
     def this(family: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String) = this()
     def this(family: String, major: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String) = this()
+    def this(family: Unit, major: String) = this()
     def this(family: String, major: String, minor: String) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: String
-    ) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String, patch: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: js.UndefOr[scala.Nothing], patch: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
-    def this(family: String, major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
+    def this(family: String, major: Unit, minor: String) = this()
+    def this(family: Unit, major: String, minor: String) = this()
+    def this(family: Unit, major: Unit, minor: String) = this()
     def this(family: String, major: String, minor: String, patch: String) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: String,
-      source: String
-    ) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: String,
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: String,
-      patch: String,
-      source: String
-    ) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: String,
-      minor: js.UndefOr[scala.Nothing],
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: String,
-      minor: js.UndefOr[scala.Nothing],
-      patch: String,
-      source: String
-    ) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: String,
-      minor: String,
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String, patch: String, source: String) = this()
-    def this(
-      family: String,
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(
-      family: String,
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: String,
-      source: String
-    ) = this()
-    def this(
-      family: String,
-      major: js.UndefOr[scala.Nothing],
-      minor: String,
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String, patch: String, source: String) = this()
-    def this(
-      family: String,
-      major: String,
-      minor: js.UndefOr[scala.Nothing],
-      patch: js.UndefOr[scala.Nothing],
-      source: String
-    ) = this()
-    def this(family: String, major: String, minor: js.UndefOr[scala.Nothing], patch: String, source: String) = this()
-    def this(family: String, major: String, minor: String, patch: js.UndefOr[scala.Nothing], source: String) = this()
+    def this(family: String, major: String, minor: Unit, patch: String) = this()
+    def this(family: String, major: Unit, minor: String, patch: String) = this()
+    def this(family: String, major: Unit, minor: Unit, patch: String) = this()
+    def this(family: Unit, major: String, minor: String, patch: String) = this()
+    def this(family: Unit, major: String, minor: Unit, patch: String) = this()
+    def this(family: Unit, major: Unit, minor: String, patch: String) = this()
+    def this(family: Unit, major: Unit, minor: Unit, patch: String) = this()
     def this(family: String, major: String, minor: String, patch: String, source: String) = this()
+    def this(family: String, major: String, minor: String, patch: Unit, source: String) = this()
+    def this(family: String, major: String, minor: Unit, patch: String, source: String) = this()
+    def this(family: String, major: String, minor: Unit, patch: Unit, source: String) = this()
+    def this(family: String, major: Unit, minor: String, patch: String, source: String) = this()
+    def this(family: String, major: Unit, minor: String, patch: Unit, source: String) = this()
+    def this(family: String, major: Unit, minor: Unit, patch: String, source: String) = this()
+    def this(family: String, major: Unit, minor: Unit, patch: Unit, source: String) = this()
+    def this(family: Unit, major: String, minor: String, patch: String, source: String) = this()
+    def this(family: Unit, major: String, minor: String, patch: Unit, source: String) = this()
+    def this(family: Unit, major: String, minor: Unit, patch: String, source: String) = this()
+    def this(family: Unit, major: String, minor: Unit, patch: Unit, source: String) = this()
+    def this(family: Unit, major: Unit, minor: String, patch: String, source: String) = this()
+    def this(family: Unit, major: Unit, minor: String, patch: Unit, source: String) = this()
+    def this(family: Unit, major: Unit, minor: Unit, patch: String, source: String) = this()
+    def this(family: Unit, major: Unit, minor: Unit, patch: Unit, source: String) = this()
     
     var device: Device = js.native
     
@@ -171,25 +101,20 @@ object mod {
     */
   class Device () extends StObject {
     def this(family: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String) = this()
     def this(family: String, major: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String) = this()
+    def this(family: Unit, major: String) = this()
     def this(family: String, major: String, minor: String) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: String
-    ) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String, patch: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: js.UndefOr[scala.Nothing], patch: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
-    def this(family: String, major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
+    def this(family: String, major: Unit, minor: String) = this()
+    def this(family: Unit, major: String, minor: String) = this()
+    def this(family: Unit, major: Unit, minor: String) = this()
     def this(family: String, major: String, minor: String, patch: String) = this()
+    def this(family: String, major: String, minor: Unit, patch: String) = this()
+    def this(family: String, major: Unit, minor: String, patch: String) = this()
+    def this(family: String, major: Unit, minor: Unit, patch: String) = this()
+    def this(family: Unit, major: String, minor: String, patch: String) = this()
+    def this(family: Unit, major: String, minor: Unit, patch: String) = this()
+    def this(family: Unit, major: Unit, minor: String, patch: String) = this()
+    def this(family: Unit, major: Unit, minor: Unit, patch: String) = this()
     
     var family: String = js.native
     
@@ -221,25 +146,20 @@ object mod {
     */
   class OperatingSystem () extends StObject {
     def this(family: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String) = this()
     def this(family: String, major: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String) = this()
+    def this(family: Unit, major: String) = this()
     def this(family: String, major: String, minor: String) = this()
-    def this(
-      family: js.UndefOr[scala.Nothing],
-      major: js.UndefOr[scala.Nothing],
-      minor: js.UndefOr[scala.Nothing],
-      patch: String
-    ) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
-    def this(family: js.UndefOr[scala.Nothing], major: String, minor: String, patch: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: js.UndefOr[scala.Nothing], patch: String) = this()
-    def this(family: String, major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
-    def this(family: String, major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
+    def this(family: String, major: Unit, minor: String) = this()
+    def this(family: Unit, major: String, minor: String) = this()
+    def this(family: Unit, major: Unit, minor: String) = this()
     def this(family: String, major: String, minor: String, patch: String) = this()
+    def this(family: String, major: String, minor: Unit, patch: String) = this()
+    def this(family: String, major: Unit, minor: String, patch: String) = this()
+    def this(family: String, major: Unit, minor: Unit, patch: String) = this()
+    def this(family: Unit, major: String, minor: String, patch: String) = this()
+    def this(family: Unit, major: String, minor: Unit, patch: String) = this()
+    def this(family: Unit, major: Unit, minor: String, patch: String) = this()
+    def this(family: Unit, major: Unit, minor: Unit, patch: String) = this()
     
     var family: String = js.native
     
@@ -264,59 +184,47 @@ object mod {
     * Transform a JSON object back to a valid userAgent string
     * @param obj A JSON object or stringified JSON object
     */
-  @JSImport("useragent", "fromJSON")
-  @js.native
-  def fromJSON(obj: String): Agent = js.native
-  @JSImport("useragent", "fromJSON")
-  @js.native
-  def fromJSON(obj: Major): Agent = js.native
+  @scala.inline
+  def fromJSON(obj: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def fromJSON(obj: Major): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Does a more inaccurate but more common check for useragents identification.
     * @param useragent The user agent
     */
-  @JSImport("useragent", "is")
-  @js.native
-  def is(): Details = js.native
-  @JSImport("useragent", "is")
-  @js.native
-  def is(useragent: String): Details = js.native
+  @scala.inline
+  def is(): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("is")().asInstanceOf[Details]
+  @scala.inline
+  def is(useragent: String): Details = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(useragent.asInstanceOf[js.Any]).asInstanceOf[Details]
   
   /**
     * If you are doing a lot of lookups you might want to cache the results of the parsed user agent string instead, in memory.
     * @param userAgent The user agent string
     * @param jsAgent Optional UA from js to detect chrome frame
     */
-  @JSImport("useragent", "lookup")
-  @js.native
-  def lookup(): Agent = js.native
-  @JSImport("useragent", "lookup")
-  @js.native
-  def lookup(userAgent: js.UndefOr[scala.Nothing], jsAgent: String): Agent = js.native
-  @JSImport("useragent", "lookup")
-  @js.native
-  def lookup(userAgent: String): Agent = js.native
-  @JSImport("useragent", "lookup")
-  @js.native
-  def lookup(userAgent: String, jsAgent: String): Agent = js.native
+  @scala.inline
+  def lookup(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")().asInstanceOf[Agent]
+  @scala.inline
+  def lookup(userAgent: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def lookup(userAgent: String, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  @scala.inline
+  def lookup(userAgent: Unit, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
   
   /**
     * Parses the user agent string with the generated parsers from the ua-parser project on google code.
     * @param userAgent The user agent string
     * @param jsAgent Optional UA from js to detect chrome frame
     */
-  @JSImport("useragent", "parse")
-  @js.native
-  def parse(): Agent = js.native
-  @JSImport("useragent", "parse")
-  @js.native
-  def parse(userAgent: js.UndefOr[scala.Nothing], jsAgent: String): Agent = js.native
-  @JSImport("useragent", "parse")
-  @js.native
-  def parse(userAgent: String): Agent = js.native
-  @JSImport("useragent", "parse")
-  @js.native
-  def parse(userAgent: String, jsAgent: String): Agent = js.native
+  @scala.inline
+  def parse(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[Agent]
+  @scala.inline
+  def parse(userAgent: String): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def parse(userAgent: String, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  @scala.inline
+  def parse(userAgent: Unit, jsAgent: String): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(userAgent.asInstanceOf[js.Any], jsAgent.asInstanceOf[js.Any])).asInstanceOf[Agent]
   
   /**
     * Library version
@@ -325,28 +233,27 @@ object mod {
   @js.native
   val version: Double = js.native
   
-  @js.native
   trait Details extends StObject {
     
-    var android: Boolean = js.native
+    var android: Boolean
     
-    var chrome: Boolean = js.native
+    var chrome: Boolean
     
-    var firefox: Boolean = js.native
+    var firefox: Boolean
     
-    var ie: Boolean = js.native
+    var ie: Boolean
     
-    var mobile_safari: Boolean = js.native
+    var mobile_safari: Boolean
     
-    var mozilla: Boolean = js.native
+    var mozilla: Boolean
     
-    var opera: Boolean = js.native
+    var opera: Boolean
     
-    var safari: Boolean = js.native
+    var safari: Boolean
     
-    var version: String = js.native
+    var version: String
     
-    var webkit: Boolean = js.native
+    var webkit: Boolean
   }
   object Details {
     

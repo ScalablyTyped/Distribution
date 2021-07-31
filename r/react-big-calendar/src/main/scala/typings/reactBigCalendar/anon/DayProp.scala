@@ -8,17 +8,15 @@ import typings.reactBigCalendar.mod.stringOrDate
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DayProp[TEvent /* <: js.Object */] extends StObject {
   
-  var dayProp: js.UndefOr[DayPropGetter] = js.native
+  var dayProp: js.UndefOr[DayPropGetter] = js.undefined
   
-  var eventProp: js.UndefOr[EventPropGetter[TEvent]] = js.native
+  var eventProp: js.UndefOr[EventPropGetter[TEvent]] = js.undefined
   
-  var slotProp: js.UndefOr[SlotPropGetter] = js.native
+  var slotProp: js.UndefOr[SlotPropGetter] = js.undefined
 }
 object DayProp {
   
@@ -29,7 +27,7 @@ object DayProp {
   }
   
   @scala.inline
-  implicit class DayPropMutableBuilder[Self <: DayProp[_], TEvent /* <: js.Object */] (val x: Self with DayProp[TEvent]) extends AnyVal {
+  implicit class DayPropMutableBuilder[Self <: DayProp[?], TEvent /* <: js.Object */] (val x: Self & DayProp[TEvent]) extends AnyVal {
     
     @scala.inline
     def setDayProp(

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Scripts")
@@ -42,7 +41,7 @@ class ResourceScripts protected () extends StObject {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def run(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourceScriptsRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourceScriptsRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(

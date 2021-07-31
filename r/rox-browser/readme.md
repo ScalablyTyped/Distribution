@@ -9,10 +9,10 @@ Rollout.io ROX JS SDK Client
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rox-browser |
-| Keywords           | feature-flag, feature-flags, remote-configuration, remote-variable, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
-| # releases         | 37 |
+| Keywords           | feature-flag, feature-flags, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
+| # releases         | 30 |
 | # dependents       | 1 |
-| # downloads        | 321676 |
+| # downloads        | 320775 |
 | # stars            | 0 |
 
 ## Links

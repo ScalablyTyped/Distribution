@@ -2,11 +2,9 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options that control how the component should be bootstrapped. */
-@js.native
 trait CreateComponentOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait CreateComponentOptions extends StObject {
     * the component definition's `tag` is used to query the existing DOM for the
     * element to bootstrap.
     */
-  var host: js.UndefOr[RElement | String] = js.native
+  var host: js.UndefOr[RElement | String] = js.undefined
   
   /**
     * List of features to be applied to the created component. Features are simply
@@ -28,19 +26,19 @@ trait CreateComponentOptions extends StObject {
     * features list because there's no way of knowing when the component will be used as
     * a root component.
     */
-  var hostFeatures: js.UndefOr[js.Array[HostFeature]] = js.native
+  var hostFeatures: js.UndefOr[js.Array[HostFeature]] = js.undefined
   
   /** Module injector for the component. If unspecified, the injector will be NULL_INJECTOR. */
-  var injector: js.UndefOr[Injector] = js.native
+  var injector: js.UndefOr[Injector] = js.undefined
   
   /** A custom animation player handler */
-  var playerHandler: js.UndefOr[ɵPlayerHandler] = js.native
+  var playerHandler: js.UndefOr[ɵPlayerHandler] = js.undefined
   
   /** Which renderer factory to use. */
-  var rendererFactory: js.UndefOr[RendererFactory3] = js.native
+  var rendererFactory: js.UndefOr[RendererFactory3] = js.undefined
   
   /** A custom sanitizer instance */
-  var sanitizer: js.UndefOr[Sanitizer] = js.native
+  var sanitizer: js.UndefOr[Sanitizer] = js.undefined
   
   /**
     * A function which is used to schedule change detection work in the future.
@@ -53,7 +51,7 @@ trait CreateComponentOptions extends StObject {
     *
     * It is also useful to override this function for testing purposes.
     */
-  var scheduler: js.UndefOr[js.Function1[/* work */ js.Function0[Unit], Unit]] = js.native
+  var scheduler: js.UndefOr[js.Function1[/* work */ js.Function0[Unit], Unit]] = js.undefined
 }
 object CreateComponentOptions {
   

@@ -10,9 +10,9 @@ A TCP socket pair for easily transmitting full messages without worrying about p
 | ------------------ | :-------------: |
 | Full name          | ncom |
 | Keywords           | ncom, tcp, simple, socket, messages |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 907589 |
+| # downloads        | 754706 |
 | # stars            | 0 |
 
 ## Links

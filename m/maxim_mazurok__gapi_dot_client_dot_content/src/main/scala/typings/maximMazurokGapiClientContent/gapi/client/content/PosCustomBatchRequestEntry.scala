@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PosCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** The inventory to submit. This should be set only if the method is `inventory`. */
-  var inventory: js.UndefOr[PosInventory] = js.native
+  var inventory: js.UndefOr[PosInventory] = js.undefined
   
   /** The ID of the POS data provider. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** The method of the batch entry. Acceptable values are: - "`delete`" - "`get`" - "`insert`" - "`inventory`" - "`sale`" */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The sale information to submit. This should be set only if the method is `sale`. */
-  var sale: js.UndefOr[PosSale] = js.native
+  var sale: js.UndefOr[PosSale] = js.undefined
   
   /** The store information to submit. This should be set only if the method is `insert`. */
-  var store: js.UndefOr[PosStore] = js.native
+  var store: js.UndefOr[PosStore] = js.undefined
   
   /** The store code. This should be set only if the method is `delete` or `get`. */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
   
   /** The ID of the account for which to get/submit data. */
-  var targetMerchantId: js.UndefOr[String] = js.native
+  var targetMerchantId: js.UndefOr[String] = js.undefined
 }
 object PosCustomBatchRequestEntry {
   

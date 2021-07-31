@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayListOperationsResponse extends StObject {
   
   /** The standard List next-page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of operations that matches the specified filter in the request. */
-  var operations: js.UndefOr[js.Array[ApigatewayOperation]] = js.native
+  var operations: js.UndefOr[js.Array[ApigatewayOperation]] = js.undefined
 }
 object ApigatewayListOperationsResponse {
   

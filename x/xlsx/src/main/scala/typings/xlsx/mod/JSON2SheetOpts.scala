@@ -2,19 +2,18 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSON2SheetOpts
-  extends CommonOptions
+  extends StObject
+     with CommonOptions
      with DateNFOption {
   
   /** Use specified column order */
-  var header: js.UndefOr[js.Array[String]] = js.native
+  var header: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Skip header row in generated sheet */
-  var skipHeader: js.UndefOr[Boolean] = js.native
+  var skipHeader: js.UndefOr[Boolean] = js.undefined
 }
 object JSON2SheetOpts {
   

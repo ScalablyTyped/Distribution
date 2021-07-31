@@ -2,17 +2,15 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEqualizerOptions extends StObject {
   
-  var equalizeByRow: js.UndefOr[Boolean] = js.native
+  var equalizeByRow: js.UndefOr[Boolean] = js.undefined
   
-  var equalizeOn: js.UndefOr[String] = js.native
+  var equalizeOn: js.UndefOr[String] = js.undefined
   
-  var equalizeOnStack: js.UndefOr[Boolean] = js.native
+  var equalizeOnStack: js.UndefOr[Boolean] = js.undefined
 }
 object IEqualizerOptions {
   

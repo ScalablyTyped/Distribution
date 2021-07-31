@@ -6,23 +6,21 @@ import typings.box2d.Box2D.Common.b2Color
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2DebugDraw extends StObject {
   
   /**
     * Append flags to the current flags.
     * @param flags Flags to add.
     **/
-  def AppendFlags(flags: Double): Unit = js.native
+  def AppendFlags(flags: Double): Unit
   
   /**
     * Clear flags from the current flags.
     * @param flags flags to clear.
     **/
-  def ClearFlags(flags: Double): Unit = js.native
+  def ClearFlags(flags: Double): Unit
   
   /**
     * Draw a circle.
@@ -30,7 +28,7 @@ trait b2DebugDraw extends StObject {
     * @param radius Circle radius.
     * @param color Circle draw color.
     **/
-  def DrawCircle(center: b2Vec2, radius: Double, color: b2Color): Unit = js.native
+  def DrawCircle(center: b2Vec2, radius: Double, color: b2Color): Unit
   
   /**
     * Draw a closed polygon provided in CCW order.
@@ -38,7 +36,7 @@ trait b2DebugDraw extends StObject {
     * @param vertexCount Number of vertices in the polygon, usually vertices.length.
     * @param color Polygon draw color.
     **/
-  def DrawPolygon(vertices: js.Array[b2Vec2], vertexCount: Double, color: b2Color): Unit = js.native
+  def DrawPolygon(vertices: js.Array[b2Vec2], vertexCount: Double, color: b2Color): Unit
   
   /**
     * Draw a line segment.
@@ -46,7 +44,7 @@ trait b2DebugDraw extends StObject {
     * @param p2 Line endpoint.
     * @param color Line color.
     **/
-  def DrawSegment(p1: b2Vec2, p2: b2Vec2, color: b2Color): Unit = js.native
+  def DrawSegment(p1: b2Vec2, p2: b2Vec2, color: b2Color): Unit
   
   /**
     * Draw a solid circle.
@@ -55,7 +53,7 @@ trait b2DebugDraw extends StObject {
     * @param axis Circle axis.
     * @param color Circle color.
     **/
-  def DrawSolidCircle(center: b2Vec2, radius: Double, axis: b2Vec2, color: b2Color): Unit = js.native
+  def DrawSolidCircle(center: b2Vec2, radius: Double, axis: b2Vec2, color: b2Color): Unit
   
   /**
     * Draw a solid closed polygon provided in CCW order.
@@ -63,99 +61,99 @@ trait b2DebugDraw extends StObject {
     * @param vertexCount Number of vertices in the polygon, usually vertices.length.
     * @param color Polygon draw color.
     **/
-  def DrawSolidPolygon(vertices: js.Array[b2Vec2], vertexCount: Double, color: b2Color): Unit = js.native
+  def DrawSolidPolygon(vertices: js.Array[b2Vec2], vertexCount: Double, color: b2Color): Unit
   
   /**
     * Draw a transform. Choose your own length scale.
     * @param xf Transform to draw.
     **/
-  def DrawTransform(xf: b2Transform): Unit = js.native
+  def DrawTransform(xf: b2Transform): Unit
   
   /**
     * Get the alpha value used for lines.
     * @return Alpha value used for drawing lines.
     **/
-  def GetAlpha(): Double = js.native
+  def GetAlpha(): Double
   
   /**
     * Get the draw scale.
     * @return Draw scale ratio.
     **/
-  def GetDrawScale(): Double = js.native
+  def GetDrawScale(): Double
   
   /**
     * Get the alpha value used for fills.
     * @return Alpha value used for drawing fills.
     **/
-  def GetFillAlpha(): Double = js.native
+  def GetFillAlpha(): Double
   
   /**
     * Get the drawing flags.
     * @return Drawing flags.
     **/
-  def GetFlags(): Double = js.native
+  def GetFlags(): Double
   
   /**
     * Get the line thickness.
     * @return Line thickness.
     **/
-  def GetLineThickness(): Double = js.native
+  def GetLineThickness(): Double
   
   /**
     * Get the HTML Canvas Element for drawing.
     * @note box2dflash uses Sprite object, box2dweb uses CanvasRenderingContext2D, that is why this function is called GetSprite().
     * @return The HTML Canvas Element used for debug drawing.
     **/
-  def GetSprite(): CanvasRenderingContext2D = js.native
+  def GetSprite(): CanvasRenderingContext2D
   
   /**
     * Get the scale used for drawing XForms.
     * @return Scale for drawing transforms.
     **/
-  def GetXFormScale(): Double = js.native
+  def GetXFormScale(): Double
   
   /**
     * Set the alpha value used for lines.
     * @param alpha Alpha value for drawing lines.
     **/
-  def SetAlpha(alpha: Double): Unit = js.native
+  def SetAlpha(alpha: Double): Unit
   
   /**
     * Set the draw scale.
     * @param drawScale Draw scale ratio.
     **/
-  def SetDrawScale(drawScale: Double): Unit = js.native
+  def SetDrawScale(drawScale: Double): Unit
   
   /**
     * Set the alpha value used for fills.
     * @param alpha Alpha value for drawing fills.
     **/
-  def SetFillAlpha(alpha: Double): Unit = js.native
+  def SetFillAlpha(alpha: Double): Unit
   
   /**
     * Set the drawing flags.
     * @param flags Sets the drawing flags.
     **/
-  def SetFlags(flags: Double): Unit = js.native
+  def SetFlags(flags: Double): Unit
   
   /**
     * Set the line thickness.
     * @param lineThickness The new line thickness.
     **/
-  def SetLineThickness(lineThickness: Double): Unit = js.native
+  def SetLineThickness(lineThickness: Double): Unit
   
   /**
     * Set the HTML Canvas Element for drawing.
     * @note box2dflash uses Sprite object, box2dweb uses CanvasRenderingContext2D, that is why this function is called SetSprite().
     * @param canvas HTML Canvas Element to draw debug information to.
     **/
-  def SetSprite(canvas: CanvasRenderingContext2D): Unit = js.native
+  def SetSprite(canvas: CanvasRenderingContext2D): Unit
   
   /**
     * Set the scale used for drawing XForms.
     * @param xformScale The transform scale.
     **/
-  def SetXFormScale(xformScale: Double): Unit = js.native
+  def SetXFormScale(xformScale: Double): Unit
 }
 object b2DebugDraw {
   

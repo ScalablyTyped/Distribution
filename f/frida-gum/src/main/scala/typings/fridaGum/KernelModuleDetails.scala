@@ -2,26 +2,24 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelModuleDetails extends StObject {
   
   /**
     * Base address.
     */
-  var base: UInt64 = js.native
+  var base: UInt64
   
   /**
     * Canonical module name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Size in bytes.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object KernelModuleDetails {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete extends StObject {
   
-  var create: scala.Double = js.native
+  var create: scala.Double
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var update: scala.Double = js.native
+  var update: scala.Double
 }
 object Delete {
   

@@ -2,30 +2,30 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlCharRefMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlCharRef", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlCharRef[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlCharRef[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCharRefOptions) = this()
   }
   
-  @js.native
   trait IXmlCharRefOptions extends StObject {
     
     /**
       * The character to represent using the reference.
       */
-    var char: String = js.native
+    var char: String
     
     /**
       * Whether to use the hexadecimal or decimal representation for the
       * reference. Defaults to false.
       */
-    var hex: js.UndefOr[Boolean] = js.native
+    var hex: js.UndefOr[Boolean] = js.undefined
   }
   object IXmlCharRefOptions {
     

@@ -2,16 +2,16 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Space
-@js.native
-trait SpaceData extends ObjectData {
+trait SpaceData
+  extends StObject
+     with ObjectData {
   
-  var description: js.UndefOr[String | Null] = js.native
+  var description: js.UndefOr[String | Null] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object SpaceData {
   

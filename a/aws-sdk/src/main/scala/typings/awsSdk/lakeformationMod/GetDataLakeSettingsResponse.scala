@@ -2,16 +2,14 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataLakeSettingsResponse extends StObject {
   
   /**
     * A structure representing a list of AWS Lake Formation principals designated as data lake administrators.
     */
-  var DataLakeSettings: js.UndefOr[typings.awsSdk.lakeformationMod.DataLakeSettings] = js.native
+  var DataLakeSettings: js.UndefOr[typings.awsSdk.lakeformationMod.DataLakeSettings] = js.undefined
 }
 object GetDataLakeSettingsResponse {
   

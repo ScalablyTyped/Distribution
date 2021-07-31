@@ -2,20 +2,18 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find out how this looks like
 // interface UserGroup { }
 /** Contains information about a user */
-@js.native
 trait User extends StObject {
   
   /** Access rights of this user */
-  var acl: ObjectPermissions = js.native
+  var acl: ObjectPermissions
   
   /** Which groups this user belongs to */
-  var groups: js.Array[UserGroup] = js.native
+  var groups: js.Array[UserGroup]
 }
 object User {
   

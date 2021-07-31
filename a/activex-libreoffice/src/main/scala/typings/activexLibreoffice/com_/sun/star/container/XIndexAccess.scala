@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface should only be used if the data structure, itself, is indexed.
   */
-@js.native
-trait XIndexAccess extends XElementAccess {
+trait XIndexAccess
+  extends StObject
+     with XElementAccess {
   
   /** @returns the number of elements in this container. */
-  val Count: Double = js.native
+  val Count: Double
   
   /**
     * @param Index specifies the position in the array. The first index is 0.
@@ -23,10 +23,10 @@ trait XIndexAccess extends XElementAccess {
     * @throws com::sun::star::lang::IndexOutOfBoundException if the index is not valid.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def getByIndex(Index: Double): js.Any = js.native
+  def getByIndex(Index: Double): js.Any
   
   /** @returns the number of elements in this container. */
-  def getCount(): Double = js.native
+  def getCount(): Double
 }
 object XIndexAccess {
   

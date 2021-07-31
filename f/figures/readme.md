@@ -11,8 +11,8 @@ Unicode symbols with Windows CMD fallbacks
 | Full name          | figures |
 | Keywords           | unicode, cli, cmd, command-line, characters, symbol, symbols, figure, figures, fallback |
 | # releases         | 4 |
-| # dependents       | 802 |
-| # downloads        | 905130825 |
+| # dependents       | 883 |
+| # downloads        | 1104293894 |
 | # stars            | 12 |
 
 ## Links

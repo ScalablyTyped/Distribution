@@ -3,40 +3,40 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRepositoryEndpointMod {
   
-  @JSImport("@pulumi/aws/codeartifact/getRepositoryEndpoint", "getRepositoryEndpoint")
+  @JSImport("@pulumi/aws/codeartifact/getRepositoryEndpoint", JSImport.Namespace)
   @js.native
-  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs): js.Promise[GetRepositoryEndpointResult] = js.native
-  @JSImport("@pulumi/aws/codeartifact/getRepositoryEndpoint", "getRepositoryEndpoint")
-  @js.native
-  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs, opts: InvokeOptions): js.Promise[GetRepositoryEndpointResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs): js.Promise[GetRepositoryEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryEndpointResult]]
+  @scala.inline
+  def getRepositoryEndpoint(args: GetRepositoryEndpointArgs, opts: InvokeOptions): js.Promise[GetRepositoryEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepositoryEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryEndpointResult]]
+  
   trait GetRepositoryEndpointArgs extends StObject {
     
     /**
       * The name of the domain that contains the repository.
       */
-    val domain: String = js.native
+    val domain: String
     
     /**
       * The account number of the AWS account that owns the domain.
       */
-    val domainOwner: js.UndefOr[String] = js.native
+    val domainOwner: js.UndefOr[String] = js.undefined
     
     /**
       * Which endpoint of a repository to return. A repository has one endpoint for each package format: `npm`, `pypi`, and `maven`.
       */
-    val format: String = js.native
+    val format: String
     
     /**
       * The name of the repository.
       */
-    val repository: String = js.native
+    val repository: String
   }
   object GetRepositoryEndpointArgs {
     
@@ -66,26 +66,25 @@ object getRepositoryEndpointMod {
     }
   }
   
-  @js.native
   trait GetRepositoryEndpointResult extends StObject {
     
-    val domain: String = js.native
+    val domain: String
     
-    val domainOwner: String = js.native
+    val domainOwner: String
     
-    val format: String = js.native
+    val format: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val repository: String = js.native
+    val repository: String
     
     /**
       * The URL of the returned endpoint.
       */
-    val repositoryEndpoint: String = js.native
+    val repositoryEndpoint: String
   }
   object GetRepositoryEndpointResult {
     

@@ -2,17 +2,17 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait barsOptions extends seriesTypeBase {
+trait barsOptions
+  extends StObject
+     with seriesTypeBase {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var barWidth: js.UndefOr[Double] = js.native
+  var barWidth: js.UndefOr[Double] = js.undefined
   
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
 }
 object barsOptions {
   

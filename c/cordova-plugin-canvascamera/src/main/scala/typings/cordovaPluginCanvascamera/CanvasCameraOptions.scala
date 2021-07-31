@@ -7,60 +7,58 @@ import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.file
 import typings.cordovaPluginCanvascamera.cordovaPluginCanvascameraStrings.front
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasCameraOptions extends StObject {
   
   /**
     * String, optional, default: file, file to use files for rendering (lower CPU / higher storage) or data to use base64 jpg data for rendering (higher cpu / lower storage).
     */
-  var cameraFacing: js.UndefOr[front | back] = js.native
+  var cameraFacing: js.UndefOr[front | back] = js.undefined
   
-  var canvas: js.UndefOr[Height] = js.native
+  var canvas: js.UndefOr[Height] = js.undefined
   
-  var capture: js.UndefOr[Height] = js.native
+  var capture: js.UndefOr[Height] = js.undefined
   
   /**
     * Boolean, optional, default: false, a boolean to set flash mode on/off.
     */
-  var flashMode: js.UndefOr[Boolean] = js.native
+  var flashMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number, optional, default: 30, desired number of frames per second.
     */
-  var fps: js.UndefOr[Double] = js.native
+  var fps: js.UndefOr[Double] = js.undefined
   
   /**
     * Number, optional, default: 288, height in pixels of the video to capture and the output canvas height in pixels.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Function, optional, default : null, callback executed after a frame has been drawn. frame contains the canvas element, the image element, the tracking data.
     */
-  var onAfterDraw: js.UndefOr[js.Function1[/* frame */ js.UndefOr[Frame], Unit]] = js.native
+  var onAfterDraw: js.UndefOr[js.Function1[/* frame */ js.UndefOr[Frame], Unit]] = js.undefined
   
   /**
     * Function, optional, default : null, callback executed before a frame has been drawn. frame contains the canvas element, the image element, the tracking data.
     */
-  var onBeforeDraw: js.UndefOr[js.Function1[/* frame */ js.UndefOr[Frame], Unit]] = js.native
+  var onBeforeDraw: js.UndefOr[js.Function1[/* frame */ js.UndefOr[Frame], Unit]] = js.undefined
   
   /**
     * Number, optional, default: 1/6, a ratio used to scale down the thumbnail.
     */
-  var thumbnailRatio: js.UndefOr[Double] = js.native
+  var thumbnailRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * String, optional, default: 'front', 'front' or 'back'.
     */
-  var use: js.UndefOr[file | data] = js.native
+  var use: js.UndefOr[file | data] = js.undefined
   
   /**
     * Number, optional, default: 352, width in pixels of the video to capture and the output canvas width in pixels.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CanvasCameraOptions {
   

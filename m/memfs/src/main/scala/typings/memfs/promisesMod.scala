@@ -23,18 +23,22 @@ import typings.node.fsMod.symlink.Type
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promisesMod {
   
-  @JSImport("memfs/lib/promises", JSImport.Default)
+  @JSImport("memfs/lib/promises", JSImport.Namespace)
   @js.native
-  def default(vol: Volume): Null | IPromisesAPI = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(vol: Volume): Null | IPromisesAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(vol.asInstanceOf[js.Any]).asInstanceOf[Null | IPromisesAPI]
   
   @JSImport("memfs/lib/promises", "FileHandle")
   @js.native
-  class FileHandle protected () extends IFileHandle {
+  class FileHandle protected ()
+    extends StObject
+       with IFileHandle {
     def this(vol: Volume, fd: Double) = this()
     
     def sync(): js.Promise[Unit] = js.native
@@ -75,31 +79,21 @@ object promisesMod {
     def utimes(atime: TTime, mtime: TTime): js.Promise[Unit] = js.native
     
     def write(buffer: Buffer): js.Promise[TFileHandleWriteResult] = js.native
-    def write(
-      buffer: Buffer,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Buffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Double, length: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Buffer, offset: Double, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Buffer, offset: Double, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Buffer, offset: Unit, length: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Buffer, offset: Unit, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Buffer, offset: Unit, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Uint8Array): js.Promise[TFileHandleWriteResult] = js.native
-    def write(
-      buffer: Uint8Array,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: js.UndefOr[scala.Nothing], length: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Uint8Array, offset: Double): js.Promise[TFileHandleWriteResult] = js.native
-    def write(buffer: Uint8Array, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Uint8Array, offset: Double, length: Double): js.Promise[TFileHandleWriteResult] = js.native
     def write(buffer: Uint8Array, offset: Double, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Uint8Array, offset: Double, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Uint8Array, offset: Unit, length: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Uint8Array, offset: Unit, length: Double, position: Double): js.Promise[TFileHandleWriteResult] = js.native
+    def write(buffer: Uint8Array, offset: Unit, length: Unit, position: Double): js.Promise[TFileHandleWriteResult] = js.native
     
     def writeFile(data: TData): js.Promise[Unit] = js.native
     def writeFile(data: TData, options: IWriteFileOptions): js.Promise[Unit] = js.native
@@ -181,12 +175,11 @@ object promisesMod {
   
   type TFileHandle = PathLike | IFileHandle
   
-  @js.native
   trait TFileHandleReadResult extends StObject {
     
-    var buffer: Buffer | Uint8Array = js.native
+    var buffer: Buffer | Uint8Array
     
-    var bytesRead: Double = js.native
+    var bytesRead: Double
   }
   object TFileHandleReadResult {
     
@@ -207,12 +200,11 @@ object promisesMod {
     }
   }
   
-  @js.native
   trait TFileHandleWriteResult extends StObject {
     
-    var buffer: Buffer | Uint8Array = js.native
+    var buffer: Buffer | Uint8Array
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
   }
   object TFileHandleWriteResult {
     

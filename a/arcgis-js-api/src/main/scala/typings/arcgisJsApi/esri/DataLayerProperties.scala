@@ -12,10 +12,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.touches
 import typings.arcgisJsApi.arcgisJsApiStrings.within
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataLayerProperties extends StObject {
   
   /**
@@ -23,14 +21,14 @@ trait DataLayerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#geometry)
     */
-  var geometry: js.UndefOr[GeometryProperties] = js.native
+  var geometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * The name of the data layer in the map service that is being referenced.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The spatial relationship to be applied on the input geometry while performing the query.
@@ -39,16 +37,16 @@ trait DataLayerProperties extends StObject {
     */
   var spatialRelationship: js.UndefOr[
     intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
-  ] = js.native
+  ] = js.undefined
   
-  var `type`: js.UndefOr[layer] = js.native
+  var `type`: js.UndefOr[layer] = js.undefined
   
   /**
     * A where clause for the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#where)
     */
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object DataLayerProperties {
   

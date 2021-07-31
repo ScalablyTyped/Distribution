@@ -2,34 +2,29 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
-  var condition: Expression = js.native
+  var condition: Expression
   
-  var falseBody: js.UndefOr[Statement] = js.native
+  var falseBody: js.UndefOr[Statement] = js.undefined
   
-  var trueBody: Statement = js.native
+  var trueBody: Statement
   
   @JSName("type")
-  var type_IfStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.IfStatement = js.native
+  var type_IfStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.IfStatement
 }
 object IfStatement {
   
   @scala.inline
-  def apply(
-    condition: Expression,
-    trueBody: Statement,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.IfStatement
-  ): IfStatement = {
+  def apply(condition: Expression, trueBody: Statement): IfStatement = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], trueBody = trueBody.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement]
   }
   

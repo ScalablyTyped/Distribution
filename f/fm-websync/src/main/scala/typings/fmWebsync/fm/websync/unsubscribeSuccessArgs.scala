@@ -3,21 +3,21 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait unsubscribeSuccessArgs extends baseResponseArgs {
+trait unsubscribeSuccessArgs
+  extends StObject
+     with baseResponseArgs {
   
   /**
     * The channel from which the client was unsubscribed. Must start with a forward slash (/).
     */
-  var channel: String = js.native
+  var channel: String
   
   /**
     * The channels from which the client was unsubscribed. Each must start with a forward slash (/).
     */
-  var channels: js.Array[String] = js.native
+  var channels: js.Array[String]
 }
 object unsubscribeSuccessArgs {
   

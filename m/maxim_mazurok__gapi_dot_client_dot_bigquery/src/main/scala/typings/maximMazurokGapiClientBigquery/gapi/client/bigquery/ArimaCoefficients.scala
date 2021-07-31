@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArimaCoefficients extends StObject {
   
   /** Auto-regressive coefficients, an array of double. */
-  var autoRegressiveCoefficients: js.UndefOr[js.Array[Double]] = js.native
+  var autoRegressiveCoefficients: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Intercept coefficient, just a double not an array. */
-  var interceptCoefficient: js.UndefOr[Double] = js.native
+  var interceptCoefficient: js.UndefOr[Double] = js.undefined
   
   /** Moving-average coefficients, an array of double. */
-  var movingAverageCoefficients: js.UndefOr[js.Array[Double]] = js.native
+  var movingAverageCoefficients: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ArimaCoefficients {
   

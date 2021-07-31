@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1Study extends StObject {
   
   /** Output only. Time at which the study was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. A human readable reason why the Study is inactive. This should be empty if a study is ACTIVE or COMPLETED. */
-  var inactiveReason: js.UndefOr[String] = js.native
+  var inactiveReason: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of a study. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The detailed state of a study. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Required. Configuration of the study. */
-  var studyConfig: js.UndefOr[GoogleCloudMlV1StudyConfig] = js.native
+  var studyConfig: js.UndefOr[GoogleCloudMlV1StudyConfig] = js.undefined
 }
 object GoogleCloudMlV1Study {
   

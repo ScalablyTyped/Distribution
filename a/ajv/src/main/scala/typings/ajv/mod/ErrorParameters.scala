@@ -2,7 +2,6 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -53,7 +52,7 @@ object ErrorParameters {
   }
   
   @scala.inline
-  def EnumParams(allowedValues: js.Array[_]): typings.ajv.mod.EnumParams = {
+  def EnumParams(allowedValues: js.Array[js.Any]): typings.ajv.mod.EnumParams = {
     val __obj = js.Dynamic.literal(allowedValues = allowedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ajv.mod.EnumParams]
   }

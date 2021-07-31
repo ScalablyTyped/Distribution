@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSigningJobsResponse extends StObject {
   
   /**
     * A list of your signing jobs.
     */
-  var jobs: js.UndefOr[SigningJobs] = js.native
+  var jobs: js.UndefOr[SigningJobs] = js.undefined
   
   /**
     * String for specifying the next set of paginated results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListSigningJobsResponse {
   

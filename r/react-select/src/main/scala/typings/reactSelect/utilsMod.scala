@@ -12,226 +12,175 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("react-select/src/utils", "animatedScrollTo")
+  @JSImport("react-select/src/utils", JSImport.Namespace)
   @js.native
-  def animatedScrollTo(element: Window with (/* globalThis */ js.Any), to: Double): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def animatedScrollTo(element: Window & (/* globalThis */ js.Any), to: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def animatedScrollTo(element: Window & (/* globalThis */ js.Any), to: Double, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def animatedScrollTo(
-    element: Window with (/* globalThis */ js.Any),
-    to: Double,
-    duration: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* element */ HTMLElement | (Window with (/* globalThis */ js.Any)), Unit]
-  ): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
-  def animatedScrollTo(element: Window with (/* globalThis */ js.Any), to: Double, duration: Double): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
-  def animatedScrollTo(
-    element: Window with (/* globalThis */ js.Any),
+    element: Window & (/* globalThis */ js.Any),
     to: Double,
     duration: Double,
-    callback: js.Function1[/* element */ HTMLElement | (Window with (/* globalThis */ js.Any)), Unit]
-  ): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
-  def animatedScrollTo(element: HTMLElement, to: Double): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
+    callback: js.Function1[/* element */ HTMLElement | (Window & (/* globalThis */ js.Any)), Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def animatedScrollTo(
-    element: HTMLElement,
+    element: Window & (/* globalThis */ js.Any),
     to: Double,
-    duration: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* element */ HTMLElement | (Window with (/* globalThis */ js.Any)), Unit]
-  ): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
-  def animatedScrollTo(element: HTMLElement, to: Double, duration: Double): Unit = js.native
-  @JSImport("react-select/src/utils", "animatedScrollTo")
-  @js.native
+    duration: Unit,
+    callback: js.Function1[/* element */ HTMLElement | (Window & (/* globalThis */ js.Any)), Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def animatedScrollTo(element: HTMLElement, to: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def animatedScrollTo(element: HTMLElement, to: Double, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def animatedScrollTo(
     element: HTMLElement,
     to: Double,
     duration: Double,
-    callback: js.Function1[/* element */ HTMLElement | (Window with (/* globalThis */ js.Any)), Unit]
-  ): Unit = js.native
+    callback: js.Function1[/* element */ HTMLElement | (Window & (/* globalThis */ js.Any)), Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def animatedScrollTo(
+    element: HTMLElement,
+    to: Double,
+    duration: Unit,
+    callback: js.Function1[/* element */ HTMLElement | (Window & (/* globalThis */ js.Any)), Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(
-    prefix: js.UndefOr[scala.Nothing],
-    cssKey: js.UndefOr[scala.Nothing],
-    state: js.UndefOr[ClassNamesState],
-    className: String
-  ): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: js.UndefOr[scala.Nothing], cssKey: js.UndefOr[scala.Nothing], state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: js.UndefOr[scala.Nothing], cssKey: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(
-    prefix: js.UndefOr[scala.Nothing],
-    cssKey: String,
-    state: js.UndefOr[ClassNamesState],
-    className: String
-  ): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: js.UndefOr[scala.Nothing], cssKey: String, state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(
-    prefix: js.UndefOr[scala.Nothing],
-    cssKey: Null,
-    state: js.UndefOr[ClassNamesState],
-    className: String
-  ): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: js.UndefOr[scala.Nothing], cssKey: Null, state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(
-    prefix: String,
-    cssKey: js.UndefOr[scala.Nothing],
-    state: js.UndefOr[ClassNamesState],
-    className: String
-  ): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String, cssKey: js.UndefOr[scala.Nothing], state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String, cssKey: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String, cssKey: String, state: js.UndefOr[ClassNamesState], className: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String, cssKey: String, state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String, cssKey: Null, state: js.UndefOr[ClassNamesState], className: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: String, cssKey: Null, state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(
-    prefix: Null,
-    cssKey: js.UndefOr[scala.Nothing],
-    state: js.UndefOr[ClassNamesState],
-    className: String
-  ): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: Null, cssKey: js.UndefOr[scala.Nothing], state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: Null, cssKey: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: Null, cssKey: String, state: js.UndefOr[ClassNamesState], className: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: Null, cssKey: String, state: ClassNamesState): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: Null, cssKey: Null, state: js.UndefOr[ClassNamesState], className: String): String = js.native
-  @JSImport("react-select/src/utils", "classNames")
-  @js.native
-  def classNames(prefix: Null, cssKey: Null, state: ClassNamesState): String = js.native
+  @scala.inline
+  def classNames(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")().asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: String, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: String, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: String, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: Null, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: Null, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: Null, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: Unit, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: Unit, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: String, cssKey: Unit, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: String, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: String, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: String, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: Null, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: Null, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: Null, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: Unit, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: Unit, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Null, cssKey: Unit, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: String, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: String, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: String, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: Null, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: Null, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: Null, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: Unit, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: Unit, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def classNames(prefix: Unit, cssKey: Unit, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], cssKey.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-select/src/utils", "cleanValue")
-  @js.native
-  def cleanValue[OptionType /* <: OptionTypeBase */](value: ValueType[OptionType]): OptionsType[OptionType] = js.native
+  @scala.inline
+  def cleanValue[OptionType /* <: OptionTypeBase */](value: ValueType[OptionType]): OptionsType[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanValue")(value.asInstanceOf[js.Any]).asInstanceOf[OptionsType[OptionType]]
   
-  @JSImport("react-select/src/utils", "emptyString")
-  @js.native
-  def emptyString(): String = js.native
+  @scala.inline
+  def emptyString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyString")().asInstanceOf[String]
   
-  @JSImport("react-select/src/utils", "getBoundingClientObj")
-  @js.native
-  def getBoundingClientObj(element: HTMLElement): Bottom = js.native
+  @scala.inline
+  def getBoundingClientObj(element: HTMLElement): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundingClientObj")(element.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
-  @JSImport("react-select/src/utils", "getScrollParent")
-  @js.native
-  def getScrollParent(element: Ref[_]): Element = js.native
+  @scala.inline
+  def getScrollParent(element: Ref[js.Any]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollParent")(element.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-select/src/utils", "getScrollTop")
-  @js.native
-  def getScrollTop(el: Element): Double = js.native
+  @scala.inline
+  def getScrollTop(el: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollTop")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-select/src/utils", "handleInputChange")
-  @js.native
-  def handleInputChange(inputValue: String, actionMeta: InputActionMeta): String = js.native
-  @JSImport("react-select/src/utils", "handleInputChange")
-  @js.native
+  @scala.inline
+  def handleInputChange(inputValue: String, actionMeta: InputActionMeta): String = (^.asInstanceOf[js.Dynamic].applyDynamic("handleInputChange")(inputValue.asInstanceOf[js.Any], actionMeta.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def handleInputChange(
     inputValue: String,
     actionMeta: InputActionMeta,
     onInputChange: js.Function2[/* inputValue */ String, /* actionMeta */ InputActionMeta, String | Unit]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("handleInputChange")(inputValue.asInstanceOf[js.Any], actionMeta.asInstanceOf[js.Any], onInputChange.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-select/src/utils", "isDocumentElement")
-  @js.native
-  def isDocumentElement(el: Element): Boolean = js.native
+  @scala.inline
+  def isDocumentElement(el: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocumentElement")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-select/src/utils", "isMobileDevice")
-  @js.native
-  def isMobileDevice(): Boolean = js.native
+  @scala.inline
+  def isMobileDevice(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobileDevice")().asInstanceOf[Boolean]
   
-  @JSImport("react-select/src/utils", "isTouchCapable")
-  @js.native
-  def isTouchCapable(): Boolean = js.native
+  @scala.inline
+  def isTouchCapable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchCapable")().asInstanceOf[Boolean]
   
-  @JSImport("react-select/src/utils", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @JSImport("react-select/src/utils", "normalizedHeight")
-  @js.native
-  def normalizedHeight(el: Element): Double = js.native
+  @scala.inline
+  def normalizedHeight(el: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizedHeight")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-select/src/utils", "scrollIntoView")
-  @js.native
-  def scrollIntoView(menuEl: HTMLElement, focusedEl: HTMLElement): Unit = js.native
+  @scala.inline
+  def scrollIntoView(menuEl: HTMLElement, focusedEl: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(menuEl.asInstanceOf[js.Any], focusedEl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-select/src/utils", "scrollTo")
-  @js.native
-  def scrollTo(el: Element, top: Double): Unit = js.native
+  @scala.inline
+  def scrollTo(el: Element, top: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(el.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-select/src/utils", "toKey")
-  @js.native
-  def toKey(str: String): String = js.native
+  @scala.inline
+  def toKey(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKey")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait RectType extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object RectType {
     

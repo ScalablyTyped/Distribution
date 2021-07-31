@@ -2,19 +2,17 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanOptions extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easeLinearity: js.UndefOr[Double] = js.native
+  var easeLinearity: js.UndefOr[Double] = js.undefined
   
-  var noMoveStart: js.UndefOr[Boolean] = js.native
+  var noMoveStart: js.UndefOr[Boolean] = js.undefined
 }
 object PanOptions {
   

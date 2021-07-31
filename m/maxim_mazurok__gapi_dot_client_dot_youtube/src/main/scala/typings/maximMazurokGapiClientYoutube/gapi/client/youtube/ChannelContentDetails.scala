@@ -3,13 +3,11 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import typings.maximMazurokGapiClientYoutube.anon.Favorites
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelContentDetails extends StObject {
   
-  var relatedPlaylists: js.UndefOr[Favorites] = js.native
+  var relatedPlaylists: js.UndefOr[Favorites] = js.undefined
 }
 object ChannelContentDetails {
   

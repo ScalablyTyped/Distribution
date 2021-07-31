@@ -20,10 +20,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecr {
+  
+  @JSImport("@pulumi/aws", "ecr")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "ecr.LifecyclePolicy")
   @js.native
@@ -42,6 +45,10 @@ object ecr {
   /* static members */
   object LifecyclePolicy {
     
+    @JSImport("@pulumi/aws", "ecr.LifecyclePolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LifecyclePolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -51,26 +58,21 @@ object ecr {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "ecr.LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws", "ecr.LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws", "ecr.LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws", "ecr.LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy]
     
     /**
       * Returns true if the given object is an instance of LifecyclePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "ecr.LifecyclePolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "ecr.Repository")
@@ -86,11 +88,15 @@ object ecr {
       */
     def this(name: String) = this()
     def this(name: String, args: RepositoryArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RepositoryArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Repository {
+    
+    @JSImport("@pulumi/aws", "ecr.Repository")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
@@ -101,26 +107,21 @@ object ecr {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "ecr.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws", "ecr.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws", "ecr.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
-    @JSImport("@pulumi/aws", "ecr.Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ecrRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrRepositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrRepositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.ecrRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrRepositoryMod.Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecrRepositoryMod.Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "ecr.Repository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/repository.Repository */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "ecr.RepositoryPolicy")
@@ -140,6 +141,10 @@ object ecr {
   /* static members */
   object RepositoryPolicy {
     
+    @JSImport("@pulumi/aws", "ecr.RepositoryPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RepositoryPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -149,59 +154,44 @@ object ecr {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "ecr.RepositoryPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
-    @JSImport("@pulumi/aws", "ecr.RepositoryPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
-    @JSImport("@pulumi/aws", "ecr.RepositoryPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryPolicyState): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
-    @JSImport("@pulumi/aws", "ecr.RepositoryPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryPolicyState, opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryPolicyState): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryPolicyState, opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy]
     
     /**
       * Returns true if the given object is an instance of RepositoryPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "ecr.RepositoryPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repositoryPolicy.RepositoryPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repositoryPolicy.RepositoryPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/repositoryPolicy.RepositoryPolicy */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "ecr.getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws", "ecr.getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws", "ecr.getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
-  @JSImport("@pulumi/aws", "ecr.getAuthorizationToken")
-  @js.native
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  @scala.inline
+  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")().asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: Unit, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  @scala.inline
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
   
-  @JSImport("@pulumi/aws", "ecr.getCredentials")
-  @js.native
-  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = js.native
-  @JSImport("@pulumi/aws", "ecr.getCredentials")
-  @js.native
-  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = js.native
+  @scala.inline
+  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCredentialsResult]]
+  @scala.inline
+  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCredentials")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCredentialsResult]]
   
-  @JSImport("@pulumi/aws", "ecr.getImage")
-  @js.native
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
-  @JSImport("@pulumi/aws", "ecr.getImage")
-  @js.native
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
+  @scala.inline
+  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
+  @scala.inline
+  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
   
-  @JSImport("@pulumi/aws", "ecr.getRepository")
-  @js.native
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
-  @JSImport("@pulumi/aws", "ecr.getRepository")
-  @js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryResult]]
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryResult]]
 }

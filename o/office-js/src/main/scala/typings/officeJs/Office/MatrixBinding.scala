@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object.
   */
 @js.native
-trait MatrixBinding extends Binding {
+trait MatrixBinding
+  extends StObject
+     with Binding {
   
   /**
     * Gets the number of columns in the matrix data structure, as an integer value.

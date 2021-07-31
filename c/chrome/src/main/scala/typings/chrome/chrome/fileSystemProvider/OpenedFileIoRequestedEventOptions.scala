@@ -3,17 +3,17 @@ package typings.chrome.chrome.fileSystemProvider
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenedFileIoRequestedEventOptions extends OpenedFileRequestedEventOptions {
+trait OpenedFileIoRequestedEventOptions
+  extends StObject
+     with OpenedFileRequestedEventOptions {
   
   /** Buffer of bytes to be operated on the file. */
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
   /** Position in the file (in bytes) to start operating from. */
-  var offset: Double = js.native
+  var offset: Double
 }
 object OpenedFileIoRequestedEventOptions {
   

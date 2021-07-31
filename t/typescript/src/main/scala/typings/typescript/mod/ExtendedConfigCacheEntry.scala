@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtendedConfigCacheEntry extends StObject {
   
-  var extendedConfig: js.UndefOr[ParsedTsconfig] = js.native
+  var extendedConfig: js.UndefOr[ParsedTsconfig] = js.undefined
   
-  var extendedResult: TsConfigSourceFile = js.native
+  var extendedResult: TsConfigSourceFile
 }
 object ExtendedConfigCacheEntry {
   

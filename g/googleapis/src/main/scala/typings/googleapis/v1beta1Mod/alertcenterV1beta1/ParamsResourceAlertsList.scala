@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAlertsList extends StandardParameters {
+trait ParamsResourceAlertsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional. The unique identifier of the G Suite organization account of
     * the customer the alerts are associated with. Inferred from the caller
     * identity if not provided.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A query string for filtering alert results. For more details,
@@ -30,7 +30,7 @@ trait ParamsResourceAlertsList extends StandardParameters {
     * [Supported query filter
     * fields](/admin-sdk/alertcenter/reference/filter-fields#alerts.list).
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The sort order of the list results. If not specified results
@@ -39,20 +39,20 @@ trait ParamsResourceAlertsList extends StandardParameters {
     * `order_by="create_time desc"`. Currently, only sorting by `create_time
     * desc` is supported.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The requested page size. Server may return fewer items than
     * requested. If unspecified, server picks an appropriate default.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. A token identifying a page of results the server should return.
     * If empty, a new iteration is started. To continue an iteration, pass in
     * the value from the previous ListAlertsResponse's next_page_token field.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAlertsList {
   

@@ -7,14 +7,15 @@ import typings.playable.playbackEngineTypesMod.PlayableMediaSource
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adaptersStrategyMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/adapters-strategy", JSImport.Default)
   @js.native
-  class default protected () extends AdaptersStrategy {
+  class default protected ()
+    extends StObject
+       with AdaptersStrategy {
     def this(eventEmitter: IEventEmitter, video: HTMLVideoElement) = this()
     def this(
       eventEmitter: IEventEmitter,

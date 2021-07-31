@@ -2,13 +2,11 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILog extends StObject {
   
-  def debug(args: js.Any*): Unit = js.native
+  def debug(args: js.Any*): Unit
 }
 object ILog {
   

@@ -2,152 +2,115 @@ package typings.spotifyNodeApplescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("spotify-node-applescript", "getState")
+  @JSImport("spotify-node-applescript", JSImport.Namespace)
   @js.native
-  def getState(callback: StateCallbackFn): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("spotify-node-applescript", "getTrack")
-  @js.native
-  def getTrack(callback: GetTrackCallbackFn): Unit = js.native
+  @scala.inline
+  def getState(callback: StateCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "isRepeating")
-  @js.native
-  def isRepeating(callback: IsRepeatingCallbackFn): Unit = js.native
+  @scala.inline
+  def getTrack(callback: GetTrackCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrack")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "isRunning")
-  @js.native
-  def isRunning(): Unit = js.native
-  @JSImport("spotify-node-applescript", "isRunning")
-  @js.native
-  def isRunning(callback: IsRunningCallbackFn): Unit = js.native
+  @scala.inline
+  def isRepeating(callback: IsRepeatingCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeating")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "isShuffling")
-  @js.native
-  def isShuffling(callback: IsShufflingCallbackFn): Unit = js.native
+  @scala.inline
+  def isRunning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isRunning")().asInstanceOf[Unit]
+  @scala.inline
+  def isRunning(callback: IsRunningCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isRunning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "jumpTo")
-  @js.native
-  def jumpTo(second: Double): Unit = js.native
-  @JSImport("spotify-node-applescript", "jumpTo")
-  @js.native
-  def jumpTo(second: Double, callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def isShuffling(callback: IsShufflingCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isShuffling")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "muteVolume")
-  @js.native
-  def muteVolume(): Unit = js.native
-  @JSImport("spotify-node-applescript", "muteVolume")
-  @js.native
-  def muteVolume(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def jumpTo(second: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(second.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def jumpTo(second: Double, callback: SuccessCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(second.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "next")
-  @js.native
-  def next(): Unit = js.native
-  @JSImport("spotify-node-applescript", "next")
-  @js.native
-  def next(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def muteVolume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("muteVolume")().asInstanceOf[Unit]
+  @scala.inline
+  def muteVolume(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("muteVolume")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "pause")
-  @js.native
-  def pause(): Unit = js.native
-  @JSImport("spotify-node-applescript", "pause")
-  @js.native
-  def pause(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def next(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("next")().asInstanceOf[Unit]
+  @scala.inline
+  def next(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "play")
-  @js.native
-  def play(): Unit = js.native
-  @JSImport("spotify-node-applescript", "play")
-  @js.native
-  def play(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def pause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[Unit]
+  @scala.inline
+  def pause(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "playPause")
-  @js.native
-  def playPause(): Unit = js.native
-  @JSImport("spotify-node-applescript", "playPause")
-  @js.native
-  def playPause(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def play(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("play")().asInstanceOf[Unit]
+  @scala.inline
+  def play(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("play")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "playTrack")
-  @js.native
-  def playTrack(uri: String): Unit = js.native
-  @JSImport("spotify-node-applescript", "playTrack")
-  @js.native
-  def playTrack(uri: String, callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def playPause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playPause")().asInstanceOf[Unit]
+  @scala.inline
+  def playPause(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playPause")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "playTrackInContext")
-  @js.native
-  def playTrackInContext(uri: String, contextUri: String): Unit = js.native
-  @JSImport("spotify-node-applescript", "playTrackInContext")
-  @js.native
-  def playTrackInContext(uri: String, contextUri: String, callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def playTrack(uri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playTrack")(uri.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def playTrack(uri: String, callback: SuccessCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("playTrack")(uri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "previous")
-  @js.native
-  def previous(): Unit = js.native
-  @JSImport("spotify-node-applescript", "previous")
-  @js.native
-  def previous(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def playTrackInContext(uri: String, contextUri: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("playTrackInContext")(uri.asInstanceOf[js.Any], contextUri.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def playTrackInContext(uri: String, contextUri: String, callback: SuccessCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("playTrackInContext")(uri.asInstanceOf[js.Any], contextUri.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "setRepeating")
-  @js.native
-  def setRepeating(repeating: Boolean): Unit = js.native
-  @JSImport("spotify-node-applescript", "setRepeating")
-  @js.native
-  def setRepeating(repeating: Boolean, callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def previous(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("previous")().asInstanceOf[Unit]
+  @scala.inline
+  def previous(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("previous")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "setShuffling")
-  @js.native
-  def setShuffling(shuffling: Boolean): Unit = js.native
-  @JSImport("spotify-node-applescript", "setShuffling")
-  @js.native
-  def setShuffling(shuffling: Boolean, callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def setRepeating(repeating: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRepeating")(repeating.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setRepeating(repeating: Boolean, callback: SuccessCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRepeating")(repeating.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "setVolume")
-  @js.native
-  def setVolume(volume: Double): Unit = js.native
-  @JSImport("spotify-node-applescript", "setVolume")
-  @js.native
-  def setVolume(volume: Double, callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def setShuffling(shuffling: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShuffling")(shuffling.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setShuffling(shuffling: Boolean, callback: SuccessCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setShuffling")(shuffling.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "toggleRepeating")
-  @js.native
-  def toggleRepeating(): Unit = js.native
-  @JSImport("spotify-node-applescript", "toggleRepeating")
-  @js.native
-  def toggleRepeating(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def setVolume(volume: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(volume.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setVolume(volume: Double, callback: SuccessCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(volume.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "toggleShuffling")
-  @js.native
-  def toggleShuffling(): Unit = js.native
-  @JSImport("spotify-node-applescript", "toggleShuffling")
-  @js.native
-  def toggleShuffling(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def toggleRepeating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleRepeating")().asInstanceOf[Unit]
+  @scala.inline
+  def toggleRepeating(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleRepeating")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "unmuteVolume")
-  @js.native
-  def unmuteVolume(): Unit = js.native
-  @JSImport("spotify-node-applescript", "unmuteVolume")
-  @js.native
-  def unmuteVolume(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def toggleShuffling(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleShuffling")().asInstanceOf[Unit]
+  @scala.inline
+  def toggleShuffling(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleShuffling")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "volumeDown")
-  @js.native
-  def volumeDown(): Unit = js.native
-  @JSImport("spotify-node-applescript", "volumeDown")
-  @js.native
-  def volumeDown(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def unmuteVolume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmuteVolume")().asInstanceOf[Unit]
+  @scala.inline
+  def unmuteVolume(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unmuteVolume")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("spotify-node-applescript", "volumeUp")
-  @js.native
-  def volumeUp(): Unit = js.native
-  @JSImport("spotify-node-applescript", "volumeUp")
-  @js.native
-  def volumeUp(callback: SuccessCallbackFn): Unit = js.native
+  @scala.inline
+  def volumeDown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("volumeDown")().asInstanceOf[Unit]
+  @scala.inline
+  def volumeDown(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("volumeDown")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def volumeUp(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("volumeUp")().asInstanceOf[Unit]
+  @scala.inline
+  def volumeUp(callback: SuccessCallbackFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("volumeUp")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type GetTrackCallbackFn = js.Function2[/* error */ String, /* track */ TrackInfo, Unit]
   
@@ -171,14 +134,13 @@ object mod {
     def playing: typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.playing = "playing".asInstanceOf[typings.spotifyNodeApplescript.spotifyNodeApplescriptStrings.playing]
   }
   
-  @js.native
   trait SpotifyState extends StObject {
     
-    var position: Double = js.native
+    var position: Double
     
-    var state: SpotifyPlayingState = js.native
+    var state: SpotifyPlayingState
     
-    var volume: Double = js.native
+    var volume: Double
   }
   object SpotifyState {
     
@@ -206,34 +168,33 @@ object mod {
   
   type SuccessCallbackFn = js.Function0[Unit]
   
-  @js.native
   trait TrackInfo extends StObject {
     
-    var album: String = js.native
+    var album: String
     
-    var album_artist: String = js.native
+    var album_artist: String
     
-    var artist: String = js.native
+    var artist: String
     
-    var artwork_url: String = js.native
+    var artwork_url: String
     
-    var disc_number: Double = js.native
+    var disc_number: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var played_count: Double = js.native
+    var played_count: Double
     
-    var popularity: Double = js.native
+    var popularity: Double
     
-    var spotify_url: String = js.native
+    var spotify_url: String
     
-    var starred: Boolean = js.native
+    var starred: Boolean
     
-    var track_number: Double = js.native
+    var track_number: Double
   }
   object TrackInfo {
     

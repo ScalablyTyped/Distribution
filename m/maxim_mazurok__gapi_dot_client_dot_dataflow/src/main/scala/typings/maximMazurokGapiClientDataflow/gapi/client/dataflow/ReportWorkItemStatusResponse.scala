@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportWorkItemStatusResponse extends StObject {
   
   /** Untranslated bag-of-bytes WorkProgressUpdateResponse for UnifiedWorker. */
   var unifiedWorkerResponse: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * A set of messages indicating the service-side state for each WorkItem whose status was reported, in the same order as the WorkItemStatus messages in the ReportWorkItemStatusRequest
     * which resulting in this response.
     */
-  var workItemServiceStates: js.UndefOr[js.Array[WorkItemServiceState]] = js.native
+  var workItemServiceStates: js.UndefOr[js.Array[WorkItemServiceState]] = js.undefined
 }
 object ReportWorkItemStatusResponse {
   
@@ -37,7 +35,7 @@ object ReportWorkItemStatusResponse {
     def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline

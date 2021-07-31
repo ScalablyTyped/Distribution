@@ -2,10 +2,8 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationConstraint extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait LocationConstraint extends StObject {
     * the resources are busy, findMeetingTimes will not return any meeting time suggestions. If this is false and all the
     * resources are busy, findMeetingTimes would still look for meeting times without locations.
     */
-  var isRequired: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isRequired: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Constraint information for one or more locations that the client requests for the meeting.
-  var locations: js.UndefOr[NullableOption[js.Array[LocationConstraintItem]]] = js.native
+  var locations: js.UndefOr[NullableOption[js.Array[LocationConstraintItem]]] = js.undefined
   
   // The client requests the service to suggest one or more meeting locations.
-  var suggestLocation: js.UndefOr[NullableOption[Boolean]] = js.native
+  var suggestLocation: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object LocationConstraint {
   

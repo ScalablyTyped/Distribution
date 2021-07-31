@@ -2,23 +2,23 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPolylineOptions extends IPrimitiveOptions {
+trait IPolylineOptions
+  extends StObject
+     with IPrimitiveOptions {
   
   /** Indicates if drawn shape should be generalized based on the zoom level to improve rendering performance. Default true **/
-  var generalizable: js.UndefOr[Boolean] = js.native
+  var generalizable: js.UndefOr[Boolean] = js.undefined
   
   /** CSS string or Color object as the poly's color. */
-  var strokeColor: js.UndefOr[String | Color] = js.native
+  var strokeColor: js.UndefOr[String | Color] = js.undefined
   
   /** An array of numbers separated by spaces, or a string separated by spaces/commas specifying the repetitive stroke pattern. */
-  var strokeDashArray: js.UndefOr[js.Array[Double] | String] = js.native
+  var strokeDashArray: js.UndefOr[js.Array[Double] | String] = js.undefined
   
   /** The thickness of the poly stroke. */
-  var strokeThickness: js.UndefOr[Double] = js.native
+  var strokeThickness: js.UndefOr[Double] = js.undefined
 }
 object IPolylineOptions {
   

@@ -2,10 +2,8 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IParser extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait IParser extends StObject {
   def registerCsiHandler(
     id: IFunctionIdentifier,
     callback: js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]
-  ): IDisposable = js.native
+  ): IDisposable
   
   /**
     * Adds a handler for DCS escape sequences.
@@ -45,7 +43,7 @@ trait IParser extends StObject {
   def registerDcsHandler(
     id: IFunctionIdentifier,
     callback: js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]
-  ): IDisposable = js.native
+  ): IDisposable
   
   /**
     * Adds a handler for ESC escape sequences.
@@ -58,7 +56,7 @@ trait IParser extends StObject {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def registerEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable = js.native
+  def registerEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable
   
   /**
     * Adds a handler for OSC escape sequences.
@@ -76,7 +74,7 @@ trait IParser extends StObject {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def registerOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable = js.native
+  def registerOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable
 }
 object IParser {
   

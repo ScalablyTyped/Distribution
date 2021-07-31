@@ -3,17 +3,15 @@ package typings.rcSteps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait Icons extends StObject {
     
-    var error: ReactNode = js.native
+    var error: ReactNode
     
-    var finish: ReactNode = js.native
+    var finish: ReactNode
   }
   object Icons {
     

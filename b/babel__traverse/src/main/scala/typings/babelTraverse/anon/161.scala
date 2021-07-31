@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ForOfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `161` extends StObject {
   
-  var `type`: ForOfStatement = js.native
+  var `type`: ForOfStatement
 }
 object `161` {
   
   @scala.inline
-  def apply(`type`: ForOfStatement): `161` = {
+  def apply(): `161` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[`161`]
   }
   

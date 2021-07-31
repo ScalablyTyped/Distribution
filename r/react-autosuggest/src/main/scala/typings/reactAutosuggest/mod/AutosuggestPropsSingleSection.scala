@@ -4,23 +4,22 @@ import typings.react.mod.ReactNode
 import typings.reactAutosuggest.reactAutosuggestBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutosuggestPropsSingleSection[TSuggestion]
-  extends AutosuggestPropsBase[TSuggestion]
+  extends StObject
+     with AutosuggestPropsBase[TSuggestion]
      with AutosuggestProps[TSuggestion, js.Any] {
   
   /**
     * Set it to true if you'd like to display suggestions in multiple sections (with optional titles).
     */
-  var multiSection: js.UndefOr[`false`] = js.native
+  var multiSection: js.UndefOr[`false`] = js.undefined
   
   /**
     * These are the suggestions that will be displayed. Items can take an arbitrary shape.
     */
-  var suggestions: js.Array[TSuggestion] = js.native
+  var suggestions: js.Array[TSuggestion]
 }
 object AutosuggestPropsSingleSection {
   
@@ -37,7 +36,7 @@ object AutosuggestPropsSingleSection {
   }
   
   @scala.inline
-  implicit class AutosuggestPropsSingleSectionMutableBuilder[Self <: AutosuggestPropsSingleSection[_], TSuggestion] (val x: Self with AutosuggestPropsSingleSection[TSuggestion]) extends AnyVal {
+  implicit class AutosuggestPropsSingleSectionMutableBuilder[Self <: AutosuggestPropsSingleSection[?], TSuggestion] (val x: Self & AutosuggestPropsSingleSection[TSuggestion]) extends AnyVal {
     
     @scala.inline
     def setMultiSection(value: `false`): Self = StObject.set(x, "multiSection", value.asInstanceOf[js.Any])

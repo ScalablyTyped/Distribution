@@ -20,7 +20,6 @@ import typings.firebaseMessaging.firebaseMessagingStrings.`use-vapid-key-after-g
 import typings.firebaseUtil.mod.ErrorFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {

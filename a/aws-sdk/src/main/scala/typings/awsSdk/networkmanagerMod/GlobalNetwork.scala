@@ -2,41 +2,39 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalNetwork extends StObject {
   
   /**
     * The date and time that the global network was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the global network.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the global network.
     */
-  var GlobalNetworkArn: js.UndefOr[String] = js.native
+  var GlobalNetworkArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.native
+  var GlobalNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the global network.
     */
-  var State: js.UndefOr[GlobalNetworkState] = js.native
+  var State: js.UndefOr[GlobalNetworkState] = js.undefined
   
   /**
     * The tags for the global network.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object GlobalNetwork {
   

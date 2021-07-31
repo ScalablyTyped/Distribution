@@ -1,39 +1,31 @@
 package typings.chromeApps.anon
 
-import typings.chromeApps.chromeAppsStrings.extension
+import typings.chromeApps.chromeAppsStrings.`extension`
 import typings.chromeApps.chromeAppsStrings.hosted_app
 import typings.chromeApps.chromeAppsStrings.legacy_packaged_app
 import typings.chromeApps.chromeAppsStrings.packaged_app
 import typings.chromeApps.chromeAppsStrings.theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EXTENSION extends StObject {
   
-  var EXTENSION: extension = js.native
+  var EXTENSION: `extension`
   
-  var HOSTED_APP: hosted_app = js.native
+  var HOSTED_APP: hosted_app
   
-  var LEGACY_PACKAGED_APP: legacy_packaged_app = js.native
+  var LEGACY_PACKAGED_APP: legacy_packaged_app
   
-  var PACKAGED_APP: packaged_app = js.native
+  var PACKAGED_APP: packaged_app
   
-  var THEME: theme = js.native
+  var THEME: theme
 }
 object EXTENSION {
   
   @scala.inline
-  def apply(
-    EXTENSION: extension,
-    HOSTED_APP: hosted_app,
-    LEGACY_PACKAGED_APP: legacy_packaged_app,
-    PACKAGED_APP: packaged_app,
-    THEME: theme
-  ): EXTENSION = {
-    val __obj = js.Dynamic.literal(EXTENSION = EXTENSION.asInstanceOf[js.Any], HOSTED_APP = HOSTED_APP.asInstanceOf[js.Any], LEGACY_PACKAGED_APP = LEGACY_PACKAGED_APP.asInstanceOf[js.Any], PACKAGED_APP = PACKAGED_APP.asInstanceOf[js.Any], THEME = THEME.asInstanceOf[js.Any])
+  def apply(): EXTENSION = {
+    val __obj = js.Dynamic.literal(EXTENSION = "extension", HOSTED_APP = "hosted_app", LEGACY_PACKAGED_APP = "legacy_packaged_app", PACKAGED_APP = "packaged_app", THEME = "theme")
     __obj.asInstanceOf[EXTENSION]
   }
   
@@ -41,7 +33,7 @@ object EXTENSION {
   implicit class EXTENSIONMutableBuilder[Self <: EXTENSION] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setEXTENSION(value: extension): Self = StObject.set(x, "EXTENSION", value.asInstanceOf[js.Any])
+    def setEXTENSION(value: `extension`): Self = StObject.set(x, "EXTENSION", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHOSTED_APP(value: hosted_app): Self = StObject.set(x, "HOSTED_APP", value.asInstanceOf[js.Any])

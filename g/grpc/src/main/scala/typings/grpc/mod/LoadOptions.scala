@@ -2,23 +2,21 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadOptions extends StObject {
   
   /**
     * Deserialize bytes values as base64 strings instead of Buffers.
     * Defaults to `false`.
     */
-  var binaryAsBase64: js.UndefOr[Boolean] = js.native
+  var binaryAsBase64: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Load this file with field names in camel case instead of their original case.
     * Defaults to `false`.
     */
-  var convertFieldsToCamelCase: js.UndefOr[Boolean] = js.native
+  var convertFieldsToCamelCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use the beta method argument order for client methods, with optional
@@ -27,13 +25,13 @@ trait LoadOptions extends StObject {
     * should not use it.
     * Defaults to `false`
     */
-  var deprecatedArgumentOrder: js.UndefOr[Boolean] = js.native
+  var deprecatedArgumentOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deserialize long values as strings instead of objects.
     * Defaults to `true`.
     */
-  var longsAsStrings: js.UndefOr[Boolean] = js.native
+  var longsAsStrings: js.UndefOr[Boolean] = js.undefined
 }
 object LoadOptions {
   

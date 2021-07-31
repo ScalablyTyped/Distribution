@@ -7,33 +7,31 @@ import typings.react.mod.ComponentType
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
-  var App: AppComponent = js.native
+  var App: AppComponent
   
-  var Component: ComponentType[js.Object] = js.native
+  var Component: ComponentType[js.Object]
   
-  var defaultLocale: js.UndefOr[String] = js.native
+  var defaultLocale: js.UndefOr[String] = js.undefined
   
-  var err: js.UndefOr[Error] = js.native
+  var err: js.UndefOr[Error] = js.undefined
   
-  var initialProps: js.Any = js.native
+  var initialProps: js.Any
   
-  var isFallback: Boolean = js.native
+  var isFallback: Boolean
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var locales: js.UndefOr[js.Array[String]] = js.native
+  var locales: js.UndefOr[js.Array[String]] = js.undefined
   
-  var pageLoader: js.Any = js.native
+  var pageLoader: js.Any
   
-  var subscription: Subscription = js.native
+  var subscription: Subscription
   
-  def wrapApp(App: AppComponent): js.Any = js.native
+  def wrapApp(App: AppComponent): js.Any
 }
 object App {
   

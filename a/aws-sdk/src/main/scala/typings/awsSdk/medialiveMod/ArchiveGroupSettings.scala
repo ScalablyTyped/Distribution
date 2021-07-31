@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArchiveGroupSettings extends StObject {
   
   /**
     * A directory and base filename where archive files should be written.
     */
-  var Destination: OutputLocationRef = js.native
+  var Destination: OutputLocationRef
   
   /**
     * Number of seconds to write to archive file before closing and starting a new one.
     */
-  var RolloverInterval: js.UndefOr[integerMin1] = js.native
+  var RolloverInterval: js.UndefOr[integerMin1] = js.undefined
 }
 object ArchiveGroupSettings {
   

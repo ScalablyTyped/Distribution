@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleColumnStatisticsData extends StObject {
   
   /**
     * The highest value in the column.
     */
-  var MaximumValue: js.UndefOr[Double] = js.native
+  var MaximumValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The lowest value in the column.
     */
-  var MinimumValue: js.UndefOr[Double] = js.native
+  var MinimumValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of distinct values in a column.
     */
-  var NumberOfDistinctValues: NonNegativeLong = js.native
+  var NumberOfDistinctValues: NonNegativeLong
   
   /**
     * The number of null values in the column.
     */
-  var NumberOfNulls: NonNegativeLong = js.native
+  var NumberOfNulls: NonNegativeLong
 }
 object DoubleColumnStatisticsData {
   

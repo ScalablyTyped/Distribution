@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,11 +23,15 @@ object SourceProperty extends StObject {
     * The source of the data is from the body of the item.
     */
   @js.native
-  sealed trait Body extends SourceProperty
+  sealed trait Body
+    extends StObject
+       with SourceProperty
   
   /**
     * The source of the data is from the subject of the item.
     */
   @js.native
-  sealed trait Subject extends SourceProperty
+  sealed trait Subject
+    extends StObject
+       with SourceProperty
 }

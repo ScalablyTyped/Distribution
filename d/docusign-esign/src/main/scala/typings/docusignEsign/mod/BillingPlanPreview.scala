@@ -2,29 +2,27 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPlanPreview extends StObject {
   
   /**
     * Specifies the ISO currency code for the account.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
-  var invoice: js.UndefOr[BillingInvoice] = js.native
+  var invoice: js.UndefOr[BillingInvoice] = js.undefined
   
   /**
     * When set to **true**, the billing plan is prorated.
     */
-  var isProrated: js.UndefOr[String] = js.native
+  var isProrated: js.UndefOr[String] = js.undefined
   
-  var subtotalAmount: js.UndefOr[String] = js.native
+  var subtotalAmount: js.UndefOr[String] = js.undefined
   
-  var taxAmount: js.UndefOr[String] = js.native
+  var taxAmount: js.UndefOr[String] = js.undefined
   
-  var totalAmount: js.UndefOr[String] = js.native
+  var totalAmount: js.UndefOr[String] = js.undefined
 }
 object BillingPlanPreview {
   

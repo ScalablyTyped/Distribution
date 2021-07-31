@@ -3,17 +3,15 @@ package typings.reactBigCalendar.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderProps extends StObject {
   
-  var date: Date = js.native
+  var date: Date
   
-  var label: String = js.native
+  var label: String
   
-  var localizer: DateLocalizer = js.native
+  var localizer: DateLocalizer
 }
 object HeaderProps {
   

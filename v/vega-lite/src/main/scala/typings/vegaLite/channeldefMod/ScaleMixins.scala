@@ -5,10 +5,8 @@ import typings.vegaLite.scaleMod.Scale
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleMixins extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ScaleMixins extends StObject {
     *
     * __See also:__ [`scale`](https://vega.github.io/vega-lite/docs/scale.html) documentation.
     */
-  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.native
+  var scale: js.UndefOr[(Scale[ExprRef | SignalRef]) | Null] = js.undefined
 }
 object ScaleMixins {
   

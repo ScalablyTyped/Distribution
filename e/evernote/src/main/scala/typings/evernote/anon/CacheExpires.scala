@@ -7,29 +7,27 @@ import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.UserProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheExpires extends StObject {
   
-  var cacheExpires: js.UndefOr[Double] = js.native
+  var cacheExpires: js.UndefOr[Double] = js.undefined
   
-  var cacheKey: js.UndefOr[String] = js.native
+  var cacheKey: js.UndefOr[String] = js.undefined
   
-  var containingNotebooks: js.UndefOr[js.Array[NotebookDescriptor]] = js.native
+  var containingNotebooks: js.UndefOr[js.Array[NotebookDescriptor]] = js.undefined
   
-  var debugInfo: js.UndefOr[String] = js.native
+  var debugInfo: js.UndefOr[String] = js.undefined
   
-  var experts: js.UndefOr[js.Array[UserProfile]] = js.native
+  var experts: js.UndefOr[js.Array[UserProfile]] = js.undefined
   
-  var notebooks: js.UndefOr[js.Array[Notebook]] = js.native
+  var notebooks: js.UndefOr[js.Array[Notebook]] = js.undefined
   
-  var notes: js.UndefOr[js.Array[typings.evernote.mod.Types.Note]] = js.native
+  var notes: js.UndefOr[js.Array[typings.evernote.mod.Types.Note]] = js.undefined
   
-  var relatedContent: js.UndefOr[js.Array[RelatedContent]] = js.native
+  var relatedContent: js.UndefOr[js.Array[RelatedContent]] = js.undefined
   
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
 }
 object CacheExpires {
   

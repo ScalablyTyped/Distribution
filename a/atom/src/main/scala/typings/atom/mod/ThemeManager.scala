@@ -2,36 +2,34 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeManager extends StObject {
   
   // Managing Enabled Themes
   /** Returns an Array of strings all the active theme names. */
-  def getActiveThemeNames(): js.UndefOr[js.Array[String]] = js.native
+  def getActiveThemeNames(): js.UndefOr[js.Array[String]]
   
   /** Returns an Array of all the active themes. */
-  def getActiveThemes(): js.UndefOr[js.Array[Package]] = js.native
+  def getActiveThemes(): js.UndefOr[js.Array[Package]]
   
   // Managing Enabled Themes
   /** Get the enabled theme names from the config. */
-  def getEnabledThemeNames(): js.Array[String] = js.native
+  def getEnabledThemeNames(): js.Array[String]
   
   // Accessing Loaded Themes
   /** Returns an Array of strings of all the loaded theme names. */
-  def getLoadedThemeNames(): js.UndefOr[js.Array[String]] = js.native
+  def getLoadedThemeNames(): js.UndefOr[js.Array[String]]
   
   /** Returns an Array of all the loaded themes. */
-  def getLoadedThemes(): js.UndefOr[js.Array[Package]] = js.native
+  def getLoadedThemes(): js.UndefOr[js.Array[Package]]
   
   // Event Subscription
   /**
     *  Invoke callback when style sheet changes associated with updating the
     *  list of active themes have completed.
     */
-  def onDidChangeActiveThemes(callback: js.Function0[Unit]): Disposable = js.native
+  def onDidChangeActiveThemes(callback: js.Function0[Unit]): Disposable
 }
 object ThemeManager {
   

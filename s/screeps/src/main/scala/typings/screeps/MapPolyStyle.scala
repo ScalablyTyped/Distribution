@@ -5,36 +5,34 @@ import typings.screeps.screepsStrings.dotted
 import typings.screeps.screepsStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapPolyStyle extends StObject {
   
   /**
     * Fill color in the following format: #ffffff (hex triplet). Default is #ffffff.
     */
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
   /**
     * Either undefined (solid line), dashed, or dotted. Default is undefined.
     */
-  var lineStyle: js.UndefOr[dashed | dotted | solid] = js.native
+  var lineStyle: js.UndefOr[dashed | dotted | solid] = js.undefined
   
   /**
     * Opacity value, default is 0.5.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Stroke color in the following format: #ffffff (hex triplet). Default is undefined (no stroke).
     */
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
   /**
     * Stroke line width, default is 0.5.
     */
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object MapPolyStyle {
   

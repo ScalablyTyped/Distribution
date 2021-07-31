@@ -2,74 +2,74 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What protocol was followed
   */
-@js.native
-trait ImmunizationVaccinationProtocol extends BackboneElement {
+trait ImmunizationVaccinationProtocol
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'doseSequence'.
     */
-  var _doseSequence: js.UndefOr[Element] = js.native
+  var _doseSequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'series'.
     */
-  var _series: js.UndefOr[Element] = js.native
+  var _series: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'seriesDoses'.
     */
-  var _seriesDoses: js.UndefOr[Element] = js.native
+  var _seriesDoses: js.UndefOr[Element] = js.undefined
   
   /**
     * Who is responsible for protocol
     */
-  var authority: js.UndefOr[Reference] = js.native
+  var authority: js.UndefOr[Reference] = js.undefined
   
   /**
     * Details of vaccine protocol
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Dose number within series
     */
-  var doseSequence: js.UndefOr[positiveInt] = js.native
+  var doseSequence: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Indicates if dose counts towards immunity
     */
-  var doseStatus: CodeableConcept = js.native
+  var doseStatus: CodeableConcept
   
   /**
     * Why dose does (not) count
     */
-  var doseStatusReason: js.UndefOr[CodeableConcept] = js.native
+  var doseStatusReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Name of vaccine series
     */
-  var series: js.UndefOr[String] = js.native
+  var series: js.UndefOr[String] = js.undefined
   
   /**
     * Recommended number of doses for immunity
     */
-  var seriesDoses: js.UndefOr[positiveInt] = js.native
+  var seriesDoses: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Disease immunized against
     */
-  var targetDisease: js.Array[CodeableConcept] = js.native
+  var targetDisease: js.Array[CodeableConcept]
 }
 object ImmunizationVaccinationProtocol {
   

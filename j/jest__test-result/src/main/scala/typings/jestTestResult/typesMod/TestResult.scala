@@ -10,47 +10,45 @@ import typings.jestTypes.configMod.DisplayName
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResult extends StObject {
   
-  var console: js.UndefOr[ConsoleBuffer] = js.native
+  var console: js.UndefOr[ConsoleBuffer] = js.undefined
   
-  var coverage: js.UndefOr[CoverageMapData] = js.native
+  var coverage: js.UndefOr[CoverageMapData] = js.undefined
   
-  var displayName: js.UndefOr[DisplayName] = js.native
+  var displayName: js.UndefOr[DisplayName] = js.undefined
   
-  var failureMessage: js.UndefOr[String | Null] = js.native
+  var failureMessage: js.UndefOr[String | Null] = js.undefined
   
-  var leaks: Boolean = js.native
+  var leaks: Boolean
   
-  var memoryUsage: js.UndefOr[Bytes] = js.native
+  var memoryUsage: js.UndefOr[Bytes] = js.undefined
   
-  var numFailingTests: Double = js.native
+  var numFailingTests: Double
   
-  var numPassingTests: Double = js.native
+  var numPassingTests: Double
   
-  var numPendingTests: Double = js.native
+  var numPendingTests: Double
   
-  var numTodoTests: Double = js.native
+  var numTodoTests: Double
   
-  var openHandles: js.Array[Error] = js.native
+  var openHandles: js.Array[Error]
   
-  var perfStats: End = js.native
+  var perfStats: End
   
-  var skipped: Boolean = js.native
+  var skipped: Boolean
   
-  var snapshot: Added = js.native
+  var snapshot: Added
   
-  var sourceMaps: js.UndefOr[StringDictionary[String]] = js.native
+  var sourceMaps: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var testExecError: js.UndefOr[SerializableError] = js.native
+  var testExecError: js.UndefOr[SerializableError] = js.undefined
   
-  var testFilePath: String = js.native
+  var testFilePath: String
   
-  var testResults: js.Array[AssertionResult] = js.native
+  var testResults: js.Array[AssertionResult]
 }
 object TestResult {
   

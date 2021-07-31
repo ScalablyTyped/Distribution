@@ -3,13 +3,11 @@ package typings.reactNavigationCore.anon
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
 }
 object `9` {
   
@@ -22,7 +20,7 @@ object `9` {
   }
   
   @scala.inline
-  implicit class `9MutableBuilder`[Self <: `9`[_], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self with `9`[EventName]) extends AnyVal {
+  implicit class `9MutableBuilder`[Self <: `9`[?], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self & `9`[EventName]) extends AnyVal {
     
     @scala.inline
     def setData(

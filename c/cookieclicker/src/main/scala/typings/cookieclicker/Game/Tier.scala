@@ -2,51 +2,49 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tier extends StObject {
   
   /**
     * The amount of buildings required to unlock the associated achievement
     */
-  var achievUnlock: Double = js.native
+  var achievUnlock: Double
   
   /**
     * The hex of the color to use (# required)
     */
-  var color: String = js.native
+  var color: String
   
-  var iconRow: Double = js.native
+  var iconRow: Double
   
-  var name: String = js.native
+  var name: String
   
   /**
     * The base price of a tiered upgrade, multiplied with building base price for true value
     */
-  var price: Double = js.native
+  var price: Double
   
   /**
     * The name of the upgrade to be required to unlock the tier (Only checked for synergy upgrades)
     */
-  var req: js.UndefOr[String] = js.native
+  var req: js.UndefOr[String] = js.undefined
   
   /**
     * If true, Upgrades with this tier won't count towards tiered CpS multiplier
     */
-  var special: PseudoBoolean | Boolean = js.native
+  var special: PseudoBoolean | Boolean
   
   /**
     * The amount of buildings required to unlock the associated upgrade
     */
-  var unlock: Double = js.native
+  var unlock: Double
   
   var upgrades: js.Array[
     TieredUpgradeClass[
       /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
     ]
-  ] = js.native
+  ]
 }
 object Tier {
   

@@ -6,22 +6,20 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.HoverLabel> */
-@js.native
 trait PartialHoverLabelAlign extends StObject {
   
-  var align: js.UndefOr[left | right | auto] = js.native
+  var align: js.UndefOr[left | right | auto] = js.undefined
   
-  var bgcolor: js.UndefOr[String] = js.native
+  var bgcolor: js.UndefOr[String] = js.undefined
   
-  var bordercolor: js.UndefOr[String] = js.native
+  var bordercolor: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
   
-  var namelength: js.UndefOr[Double] = js.native
+  var namelength: js.UndefOr[Double] = js.undefined
 }
 object PartialHoverLabelAlign {
   

@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a simple Boolean control on a HID device that returns on/off values. An example would be the LED light on a keyboard. */
-@js.native
 trait HidBooleanControl extends StObject {
   
   /** Retrieves a description of the given Boolean control. */
-  var controlDescription: HidBooleanControlDescription = js.native
+  var controlDescription: HidBooleanControlDescription
   
   /** Retrieves the identifier for a given Boolean control. */
-  var id: Double = js.native
+  var id: Double
   
   /** Retrieves a Boolean value indicating whether the given Boolean control is active. */
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
   /** Retrieves the usage identifier associated with the given Boolean control. */
-  var usageId: Double = js.native
+  var usageId: Double
   
   /** Retrieves the usage page for a given Boolean control. */
-  var usagePage: Double = js.native
+  var usagePage: Double
 }
 object HidBooleanControl {
   

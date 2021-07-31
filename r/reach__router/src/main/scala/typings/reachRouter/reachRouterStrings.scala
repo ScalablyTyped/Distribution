@@ -3,18 +3,21 @@ package typings.reachRouter
 import typings.reachRouter.mod.HistoryActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reachRouterStrings {
   
   @js.native
-  sealed trait POP extends HistoryActionType
+  sealed trait POP
+    extends StObject
+       with HistoryActionType
   @scala.inline
   def POP: POP = "POP".asInstanceOf[POP]
   
   @js.native
-  sealed trait PUSH extends HistoryActionType
+  sealed trait PUSH
+    extends StObject
+       with HistoryActionType
   @scala.inline
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   

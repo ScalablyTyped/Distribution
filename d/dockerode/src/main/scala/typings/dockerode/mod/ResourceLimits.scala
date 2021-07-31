@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceLimits extends StObject {
   
-  var MemoryBytes: js.UndefOr[Double] = js.native
+  var MemoryBytes: js.UndefOr[Double] = js.undefined
   
-  var NanoCPUs: js.UndefOr[Double] = js.native
+  var NanoCPUs: js.UndefOr[Double] = js.undefined
   
-  var Pids: js.UndefOr[Double] = js.native
+  var Pids: js.UndefOr[Double] = js.undefined
 }
 object ResourceLimits {
   

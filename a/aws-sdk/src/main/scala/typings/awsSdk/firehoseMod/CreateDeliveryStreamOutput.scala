@@ -2,16 +2,14 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeliveryStreamOutput extends StObject {
   
   /**
     * The ARN of the delivery stream.
     */
-  var DeliveryStreamARN: js.UndefOr[typings.awsSdk.firehoseMod.DeliveryStreamARN] = js.native
+  var DeliveryStreamARN: js.UndefOr[typings.awsSdk.firehoseMod.DeliveryStreamARN] = js.undefined
 }
 object CreateDeliveryStreamOutput {
   

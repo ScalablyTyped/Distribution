@@ -15,10 +15,13 @@ import typings.makerJs.MakerJs.IWalkPathBooleanCallback
 import typings.makerJs.MakerJs.measure.Atlas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object model {
+  
+  @JSGlobal("MakerJs.model")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Break a model's paths everywhere they intersect with another path.
@@ -26,21 +29,18 @@ object model {
     * @param modelToBreak The model containing paths to be broken.
     * @param modelToIntersect Optional model containing paths to look for intersection, or else the modelToBreak will be used.
     */
-  @JSGlobal("MakerJs.model.breakPathsAtIntersections")
-  @js.native
-  def breakPathsAtIntersections(modelToBreak: IModel): Unit = js.native
-  @JSGlobal("MakerJs.model.breakPathsAtIntersections")
-  @js.native
-  def breakPathsAtIntersections(modelToBreak: IModel, modelToIntersect: IModel): Unit = js.native
+  @scala.inline
+  def breakPathsAtIntersections(modelToBreak: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("breakPathsAtIntersections")(modelToBreak.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def breakPathsAtIntersections(modelToBreak: IModel, modelToIntersect: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("breakPathsAtIntersections")(modelToBreak.asInstanceOf[js.Any], modelToIntersect.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Center a model at [0, 0].
     *
     * @param modelToCenter The model to center.
     */
-  @JSGlobal("MakerJs.model.center")
-  @js.native
-  def center(modelToCenter: IModel): IModel = js.native
+  @scala.inline
+  def center(modelToCenter: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(modelToCenter.asInstanceOf[js.Any]).asInstanceOf[IModel]
   
   /**
     * Combine 2 models.
@@ -54,296 +54,21 @@ object model {
     * @param keepDuplicates Flag to include paths which are duplicate in both models.
     * @param farPoint Optional point of reference which is outside the bounds of both models.
     */
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(modelA: IModel, modelB: IModel): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean,
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean,
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean,
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: Boolean,
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: Boolean,
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: js.UndefOr[scala.Nothing],
-    includeAOutsideB: Boolean,
-    includeBInsideA: Boolean,
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean,
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean,
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: js.UndefOr[scala.Nothing],
-    includeBInsideA: Boolean,
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean, includeAOutsideB: Boolean): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: Boolean,
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: Boolean,
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: Boolean,
-    includeBInsideA: js.UndefOr[scala.Nothing],
-    includeBOutsideA: Boolean,
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
+  @scala.inline
+  def combine(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Boolean, includeAOutsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def combine(
     modelA: IModel,
     modelB: IModel,
     includeAInsideB: Boolean,
     includeAOutsideB: Boolean,
     includeBInsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
-  def combine(
-    modelA: IModel,
-    modelB: IModel,
-    includeAInsideB: Boolean,
-    includeAOutsideB: Boolean,
-    includeBInsideA: Boolean,
-    includeBOutsideA: js.UndefOr[scala.Nothing],
-    options: ICombineOptions
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -351,9 +76,8 @@ object model {
     includeAOutsideB: Boolean,
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean
-  ): Unit = js.native
-  @JSGlobal("MakerJs.model.combine")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def combine(
     modelA: IModel,
     modelB: IModel,
@@ -362,7 +86,246 @@ object model {
     includeBInsideA: Boolean,
     includeBOutsideA: Boolean,
     options: ICombineOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Unit,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Boolean,
+    includeAOutsideB: Unit,
+    includeBInsideA: Unit,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(modelA: IModel, modelB: IModel, includeAInsideB: Unit, includeAOutsideB: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Boolean,
+    includeBInsideA: Unit,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Boolean,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Unit,
+    includeBOutsideA: Boolean,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def combine(
+    modelA: IModel,
+    modelB: IModel,
+    includeAInsideB: Unit,
+    includeAOutsideB: Unit,
+    includeBInsideA: Unit,
+    includeBOutsideA: Unit,
+    options: ICombineOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any], includeAInsideB.asInstanceOf[js.Any], includeAOutsideB.asInstanceOf[js.Any], includeBInsideA.asInstanceOf[js.Any], includeBOutsideA.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Combine 2 models, resulting in a intersection.
@@ -370,9 +333,8 @@ object model {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
-  @JSGlobal("MakerJs.model.combineIntersection")
-  @js.native
-  def combineIntersection(modelA: IModel, modelB: IModel): Unit = js.native
+  @scala.inline
+  def combineIntersection(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineIntersection")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Combine 2 models, resulting in a subtraction of B from A.
@@ -380,9 +342,8 @@ object model {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
-  @JSGlobal("MakerJs.model.combineSubtraction")
-  @js.native
-  def combineSubtraction(modelA: IModel, modelB: IModel): Unit = js.native
+  @scala.inline
+  def combineSubtraction(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineSubtraction")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Combine 2 models, resulting in a union.
@@ -390,9 +351,8 @@ object model {
     * @param modelA First model to combine.
     * @param modelB Second model to combine.
     */
-  @JSGlobal("MakerJs.model.combineUnion")
-  @js.native
-  def combineUnion(modelA: IModel, modelB: IModel): Unit = js.native
+  @scala.inline
+  def combineUnion(modelA: IModel, modelB: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("combineUnion")(modelA.asInstanceOf[js.Any], modelB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Convert a model to match a different unit system.
@@ -401,9 +361,8 @@ object model {
     * @param destUnitType The unit system.
     * @returns The scaled model (for cascading).
     */
-  @JSGlobal("MakerJs.model.convertUnits")
-  @js.native
-  def convertUnits(modeltoConvert: IModel, destUnitType: String): IModel = js.native
+  @scala.inline
+  def convertUnits(modeltoConvert: IModel, destUnitType: String): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnits")(modeltoConvert.asInstanceOf[js.Any], destUnitType.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Count the number of child models within a given model.
@@ -411,18 +370,16 @@ object model {
     * @param modelContext The model containing other models.
     * @returns Number of child models.
     */
-  @JSGlobal("MakerJs.model.countChildModels")
-  @js.native
-  def countChildModels(modelContext: IModel): Double = js.native
+  @scala.inline
+  def countChildModels(modelContext: IModel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countChildModels")(modelContext.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Remove all paths in a loop model from the model(s) which contained them.
     *
     * @param loopToDetach The model to search for loops.
     */
-  @JSGlobal("MakerJs.model.detachLoop")
-  @js.native
-  def detachLoop(loopToDetach: IModel): Unit = js.native
+  @scala.inline
+  def detachLoop(loopToDetach: IModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachLoop")(loopToDetach.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Expand all paths in a model, then combine the resulting expansions.
@@ -432,23 +389,14 @@ object model {
     * @param joints Number of points at a joint between paths. Use 0 for round joints, 1 for pointed joints, 2 for beveled joints.
     * @returns Model which surrounds the paths of the original model.
     */
-  @JSGlobal("MakerJs.model.expandPaths")
-  @js.native
-  def expandPaths(modelToExpand: IModel, distance: Double): IModel = js.native
-  @JSGlobal("MakerJs.model.expandPaths")
-  @js.native
-  def expandPaths(
-    modelToExpand: IModel,
-    distance: Double,
-    joints: js.UndefOr[scala.Nothing],
-    combineOptions: ICombineOptions
-  ): IModel = js.native
-  @JSGlobal("MakerJs.model.expandPaths")
-  @js.native
-  def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = js.native
-  @JSGlobal("MakerJs.model.expandPaths")
-  @js.native
-  def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = js.native
+  @scala.inline
+  def expandPaths(modelToExpand: IModel, distance: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def expandPaths(modelToExpand: IModel, distance: Double, joints: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def expandPaths(modelToExpand: IModel, distance: Double, joints: Double, combineOptions: ICombineOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], combineOptions.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def expandPaths(modelToExpand: IModel, distance: Double, joints: Unit, combineOptions: ICombineOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("expandPaths")(modelToExpand.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], combineOptions.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Find paths that have common endpoints and form chains.
@@ -456,12 +404,10 @@ object model {
     * @param modelContext The model to search for chains.
     * @param options Optional options object.
     */
-  @JSGlobal("MakerJs.model.findChains")
-  @js.native
-  def findChains(modelContext: IModel, callback: IChainCallback): Unit = js.native
-  @JSGlobal("MakerJs.model.findChains")
-  @js.native
-  def findChains(modelContext: IModel, callback: IChainCallback, options: IFindChainsOptions): Unit = js.native
+  @scala.inline
+  def findChains(modelContext: IModel, callback: IChainCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findChains")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def findChains(modelContext: IModel, callback: IChainCallback, options: IFindChainsOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findChains")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find paths that have common endpoints and form loops.
@@ -470,12 +416,10 @@ object model {
     * @param options Optional options object.
     * @returns A new model with child models ranked according to their containment within other found loops. The paths of models will be IPathDirectionalWithPrimeContext.
     */
-  @JSGlobal("MakerJs.model.findLoops")
-  @js.native
-  def findLoops(modelContext: IModel): IModel = js.native
-  @JSGlobal("MakerJs.model.findLoops")
-  @js.native
-  def findLoops(modelContext: IModel, options: IFindLoopsOptions): IModel = js.native
+  @scala.inline
+  def findLoops(modelContext: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("findLoops")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  @scala.inline
+  def findLoops(modelContext: IModel, options: IFindLoopsOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("findLoops")(modelContext.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Find a single chain within a model, across all layers. Shorthand of findChains; useful when you know there is only one chain to find in your model.
@@ -483,9 +427,8 @@ object model {
     * @param modelContext The model to search for a chain.
     * @returns A chain object or null if chains were not found.
     */
-  @JSGlobal("MakerJs.model.findSingleChain")
-  @js.native
-  def findSingleChain(modelContext: IModel): IChain = js.native
+  @scala.inline
+  def findSingleChain(modelContext: IModel): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("findSingleChain")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IChain]
   
   /**
     * Get an unused id in the models map with the same prefix.
@@ -493,9 +436,8 @@ object model {
     * @param modelContext The model containing the models map.
     * @param modelId The id to use directly (if unused), or as a prefix.
     */
-  @JSGlobal("MakerJs.model.getSimilarModelId")
-  @js.native
-  def getSimilarModelId(modelContext: IModel, modelId: String): String = js.native
+  @scala.inline
+  def getSimilarModelId(modelContext: IModel, modelId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSimilarModelId")(modelContext.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Get an unused id in the paths map with the same prefix.
@@ -503,9 +445,8 @@ object model {
     * @param modelContext The model containing the paths map.
     * @param pathId The id to use directly (if unused), or as a prefix.
     */
-  @JSGlobal("MakerJs.model.getSimilarPathId")
-  @js.native
-  def getSimilarPathId(modelContext: IModel, pathId: String): String = js.native
+  @scala.inline
+  def getSimilarPathId(modelContext: IModel, pathId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSimilarPathId")(modelContext.asInstanceOf[js.Any], pathId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Check to see if a path is inside of a model.
@@ -515,54 +456,28 @@ object model {
     * @param farPoint Optional point of reference which is outside the bounds of the modelContext.
     * @returns Boolean true if the path is inside of the modelContext.
     */
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(
-    pathContext: IPath,
-    modelContext: IModel,
-    pathOffset: js.UndefOr[scala.Nothing],
-    farPoint: js.UndefOr[scala.Nothing],
-    measureAtlas: Atlas
-  ): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: js.UndefOr[scala.Nothing], farPoint: IPoint): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(
-    pathContext: IPath,
-    modelContext: IModel,
-    pathOffset: js.UndefOr[scala.Nothing],
-    farPoint: IPoint,
-    measureAtlas: Atlas
-  ): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(
-    pathContext: IPath,
-    modelContext: IModel,
-    pathOffset: IPoint,
-    farPoint: js.UndefOr[scala.Nothing],
-    measureAtlas: Atlas
-  ): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
-  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: IPoint): Boolean = js.native
-  @JSGlobal("MakerJs.model.isPathInsideModel")
-  @js.native
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: Unit, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: Unit, farPoint: IPoint, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: Unit, measureAtlas: Atlas): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isPathInsideModel(pathContext: IPath, modelContext: IModel, pathOffset: IPoint, farPoint: IPoint): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def isPathInsideModel(
     pathContext: IPath,
     modelContext: IModel,
     pathOffset: IPoint,
     farPoint: IPoint,
     measureAtlas: Atlas
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathInsideModel")(pathContext.asInstanceOf[js.Any], modelContext.asInstanceOf[js.Any], pathOffset.asInstanceOf[js.Any], farPoint.asInstanceOf[js.Any], measureAtlas.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a clone of a model, mirrored on either or both x and y axes.
@@ -572,9 +487,8 @@ object model {
     * @param mirrorY Boolean to mirror on the y axis.
     * @returns Mirrored model.
     */
-  @JSGlobal("MakerJs.model.mirror")
-  @js.native
-  def mirror(modelToMirror: IModel, mirrorX: Boolean, mirrorY: Boolean): IModel = js.native
+  @scala.inline
+  def mirror(modelToMirror: IModel, mirrorX: Boolean, mirrorY: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("mirror")(modelToMirror.asInstanceOf[js.Any], mirrorX.asInstanceOf[js.Any], mirrorY.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Move a model to an absolute point. Note that this is also accomplished by directly setting the origin property. This function exists for cascading.
@@ -583,9 +497,8 @@ object model {
     * @param origin The new position of the model.
     * @returns The original model (for cascading).
     */
-  @JSGlobal("MakerJs.model.move")
-  @js.native
-  def move(modelToMove: IModel, origin: IPoint): IModel = js.native
+  @scala.inline
+  def move(modelToMove: IModel, origin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(modelToMove.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Move a model's origin by a relative amount.
@@ -594,9 +507,8 @@ object model {
     * @param delta The x & y adjustments as a point object.
     * @returns The original model (for cascading).
     */
-  @JSGlobal("MakerJs.model.moveRelative")
-  @js.native
-  def moveRelative(modelToMove: IModel, delta: IPoint): IModel = js.native
+  @scala.inline
+  def moveRelative(modelToMove: IModel, delta: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("moveRelative")(modelToMove.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Moves all of a model's children (models and paths, recursively) in reference to a single common origin. Useful when points between children need to connect to each other.
@@ -604,12 +516,10 @@ object model {
     * @param modelToOriginate The model to originate.
     * @param origin Optional offset reference point.
     */
-  @JSGlobal("MakerJs.model.originate")
-  @js.native
-  def originate(modelToOriginate: IModel): IModel = js.native
-  @JSGlobal("MakerJs.model.originate")
-  @js.native
-  def originate(modelToOriginate: IModel, origin: IPoint): IModel = js.native
+  @scala.inline
+  def originate(modelToOriginate: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("originate")(modelToOriginate.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  @scala.inline
+  def originate(modelToOriginate: IModel, origin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("originate")(modelToOriginate.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Outline a model by a specified distance. Useful for accommodating for kerf.
@@ -620,18 +530,14 @@ object model {
     * @param inside Optional boolean to draw lines inside the model instead of outside.
     * @returns Model which surrounds the paths outside of the original model.
     */
-  @JSGlobal("MakerJs.model.outline")
-  @js.native
-  def outline(modelToOutline: IModel, distance: Double): IModel = js.native
-  @JSGlobal("MakerJs.model.outline")
-  @js.native
-  def outline(modelToOutline: IModel, distance: Double, joints: js.UndefOr[scala.Nothing], inside: Boolean): IModel = js.native
-  @JSGlobal("MakerJs.model.outline")
-  @js.native
-  def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = js.native
-  @JSGlobal("MakerJs.model.outline")
-  @js.native
-  def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = js.native
+  @scala.inline
+  def outline(modelToOutline: IModel, distance: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def outline(modelToOutline: IModel, distance: Double, joints: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def outline(modelToOutline: IModel, distance: Double, joints: Double, inside: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], inside.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def outline(modelToOutline: IModel, distance: Double, joints: Unit, inside: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("outline")(modelToOutline.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], joints.asInstanceOf[js.Any], inside.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Prefix the ids of paths in a model.
@@ -640,9 +546,8 @@ object model {
     * @param prefix The prefix to prepend on paths ids.
     * @returns The original model (for cascading).
     */
-  @JSGlobal("MakerJs.model.prefixPathIds")
-  @js.native
-  def prefixPathIds(modelToPrefix: IModel, prefix: String): IModel = js.native
+  @scala.inline
+  def prefixPathIds(modelToPrefix: IModel, prefix: String): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixPathIds")(modelToPrefix.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Remove paths from a model which have endpoints that do not connect to other paths.
@@ -651,22 +556,14 @@ object model {
     * @param options Optional options object.
     * @returns The input model (for cascading).
     */
-  @JSGlobal("MakerJs.model.removeDeadEnds")
-  @js.native
-  def removeDeadEnds(modelContext: IModel): IModel = js.native
-  @JSGlobal("MakerJs.model.removeDeadEnds")
-  @js.native
-  def removeDeadEnds(
-    modelContext: IModel,
-    pointMatchingDistance: js.UndefOr[scala.Nothing],
-    keep: IWalkPathBooleanCallback
-  ): IModel = js.native
-  @JSGlobal("MakerJs.model.removeDeadEnds")
-  @js.native
-  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = js.native
-  @JSGlobal("MakerJs.model.removeDeadEnds")
-  @js.native
-  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = js.native
+  @scala.inline
+  def removeDeadEnds(modelContext: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  @scala.inline
+  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: js.Any, keep: IWalkPathBooleanCallback): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any], keep.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def removeDeadEnds(modelContext: IModel, pointMatchingDistance: Unit, keep: IWalkPathBooleanCallback): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDeadEnds")(modelContext.asInstanceOf[js.Any], pointMatchingDistance.asInstanceOf[js.Any], keep.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Rotate a model.
@@ -676,12 +573,10 @@ object model {
     * @param rotationOrigin The center point of rotation.
     * @returns The original model (for cascading).
     */
-  @JSGlobal("MakerJs.model.rotate")
-  @js.native
-  def rotate(modelToRotate: IModel, angleInDegrees: Double): IModel = js.native
-  @JSGlobal("MakerJs.model.rotate")
-  @js.native
-  def rotate(modelToRotate: IModel, angleInDegrees: Double, rotationOrigin: IPoint): IModel = js.native
+  @scala.inline
+  def rotate(modelToRotate: IModel, angleInDegrees: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(modelToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def rotate(modelToRotate: IModel, angleInDegrees: Double, rotationOrigin: IPoint): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(modelToRotate.asInstanceOf[js.Any], angleInDegrees.asInstanceOf[js.Any], rotationOrigin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Scale a model.
@@ -691,12 +586,10 @@ object model {
     * @param scaleOrigin Optional boolean to scale the origin point. Typically false for the root model.
     * @returns The original model (for cascading).
     */
-  @JSGlobal("MakerJs.model.scale")
-  @js.native
-  def scale(modelToScale: IModel, scaleValue: Double): IModel = js.native
-  @JSGlobal("MakerJs.model.scale")
-  @js.native
-  def scale(modelToScale: IModel, scaleValue: Double, scaleOrigin: Boolean): IModel = js.native
+  @scala.inline
+  def scale(modelToScale: IModel, scaleValue: Double): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(modelToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any])).asInstanceOf[IModel]
+  @scala.inline
+  def scale(modelToScale: IModel, scaleValue: Double, scaleOrigin: Boolean): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(modelToScale.asInstanceOf[js.Any], scaleValue.asInstanceOf[js.Any], scaleOrigin.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Simplify a model's paths by reducing redundancy: combine multiple overlapping paths into a single path. The model must be originated.
@@ -705,12 +598,10 @@ object model {
     * @param options Optional options object.
     * @returns The simplified model (for cascading).
     */
-  @JSGlobal("MakerJs.model.simplify")
-  @js.native
-  def simplify(modelToSimplify: IModel): IModel = js.native
-  @JSGlobal("MakerJs.model.simplify")
-  @js.native
-  def simplify(modelToSimplify: IModel, options: ISimplifyOptions): IModel = js.native
+  @scala.inline
+  def simplify(modelToSimplify: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(modelToSimplify.asInstanceOf[js.Any]).asInstanceOf[IModel]
+  @scala.inline
+  def simplify(modelToSimplify: IModel, options: ISimplifyOptions): IModel = (^.asInstanceOf[js.Dynamic].applyDynamic("simplify")(modelToSimplify.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IModel]
   
   /**
     * Recursively walk through all paths for a given model.
@@ -720,9 +611,8 @@ object model {
     * @param modelCallbackBeforeWalk Callback for each model prior to recursion, which can cancel the recursion if it returns false.
     * @param modelCallbackAfterWalk Callback for each model after recursion.
     */
-  @JSGlobal("MakerJs.model.walk")
-  @js.native
-  def walk(modelContext: IModel, options: IWalkOptions): Unit = js.native
+  @scala.inline
+  def walk(modelContext: IModel, options: IWalkOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(modelContext.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Recursively walk through all paths for a given model.
@@ -730,16 +620,14 @@ object model {
     * @param modelContext The model to walk.
     * @param callback Callback for each path.
     */
-  @JSGlobal("MakerJs.model.walkPaths")
-  @js.native
-  def walkPaths(modelContext: IModel, callback: IModelPathCallback): Unit = js.native
+  @scala.inline
+  def walkPaths(modelContext: IModel, callback: IModelPathCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkPaths")(modelContext.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Move a model so its bounding box begins at [0, 0].
     *
     * @param modelToZero The model to zero.
     */
-  @JSGlobal("MakerJs.model.zero")
-  @js.native
-  def zero(modelToZero: IModel): IModel = js.native
+  @scala.inline
+  def zero(modelToZero: IModel): IModel = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")(modelToZero.asInstanceOf[js.Any]).asInstanceOf[IModel]
 }

@@ -3,41 +3,39 @@ package typings.jestTestResult.typesMod
 import typings.istanbulLibCoverage.mod.CoverageMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattedTestResults extends StObject {
   
-  var coverageMap: js.UndefOr[CoverageMap | Null] = js.native
+  var coverageMap: js.UndefOr[CoverageMap | Null] = js.undefined
   
-  var numFailedTestSuites: Double = js.native
+  var numFailedTestSuites: Double
   
-  var numFailedTests: Double = js.native
+  var numFailedTests: Double
   
-  var numPassedTestSuites: Double = js.native
+  var numPassedTestSuites: Double
   
-  var numPassedTests: Double = js.native
+  var numPassedTests: Double
   
-  var numPendingTestSuites: Double = js.native
+  var numPendingTestSuites: Double
   
-  var numPendingTests: Double = js.native
+  var numPendingTests: Double
   
-  var numRuntimeErrorTestSuites: Double = js.native
+  var numRuntimeErrorTestSuites: Double
   
-  var numTotalTestSuites: Double = js.native
+  var numTotalTestSuites: Double
   
-  var numTotalTests: Double = js.native
+  var numTotalTests: Double
   
-  var snapshot: SnapshotSummary = js.native
+  var snapshot: SnapshotSummary
   
-  var startTime: Double = js.native
+  var startTime: Double
   
-  var success: Boolean = js.native
+  var success: Boolean
   
-  var testResults: js.Array[FormattedTestResult] = js.native
+  var testResults: js.Array[FormattedTestResult]
   
-  var wasInterrupted: Boolean = js.native
+  var wasInterrupted: Boolean
 }
 object FormattedTestResults {
   

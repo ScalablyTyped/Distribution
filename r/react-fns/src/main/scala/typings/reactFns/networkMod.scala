@@ -5,10 +5,13 @@ import typings.reactFns.networkNetworkMod.NetworkProps
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkMod {
+  
+  @JSImport("react-fns/dist/Network", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-fns/dist/Network", "Network")
   @js.native
@@ -22,7 +25,6 @@ object networkMod {
     def this(props: SharedRenderProps[NetworkProps], context: js.Any) = this()
   }
   
-  @JSImport("react-fns/dist/Network", "withNetwork")
-  @js.native
-  def withNetwork[Props](Component: ComponentType[Props with NetworkProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withNetwork[Props](Component: ComponentType[Props & NetworkProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNetwork")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

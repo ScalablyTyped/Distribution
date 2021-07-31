@@ -10,17 +10,15 @@ import typings.std.Map
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait AddrInfo extends StObject {
     
-    var addrs: js.Array[^] = js.native
+    var addrs: js.Array[^]
     
-    var id: typings.peerId.mod.^ = js.native
+    var id: typings.peerId.mod.^
   }
   object AddrInfo {
     
@@ -44,13 +42,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait AddressBook
-    extends Book[typings.peerId.mod.^, js.Array[^]] {
+    extends StObject
+       with Book[typings.peerId.mod.^, js.Array[^]] {
     
-    def consumePeerRecord(envelope: Envelope): Boolean = js.native
+    def consumePeerRecord(envelope: Envelope): Boolean
     
-    def getRawEnvelope(peerId: typings.peerId.mod.^): js.UndefOr[Uint8Array] = js.native
+    def getRawEnvelope(peerId: typings.peerId.mod.^): js.UndefOr[Uint8Array]
   }
   object AddressBook {
     
@@ -77,14 +75,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait Book[K, V] extends StObject {
     
-    def add(k: K, v: V): this.type = js.native
+    def add(k: K, v: V): this.type
     
-    def get(k: K): js.Array[V] = js.native
+    def get(k: K): js.Array[V]
     
-    def set(k: K, v: js.Array[V]): this.type = js.native
+    def set(k: K, v: js.Array[V]): this.type
   }
   object Book {
     
@@ -95,7 +92,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class BookMutableBuilder[Self <: Book[_, _], K, V] (val x: Self with (Book[K, V])) extends AnyVal {
+    implicit class BookMutableBuilder[Self <: Book[?, ?], K, V] (val x: Self & (Book[K, V])) extends AnyVal {
       
       @scala.inline
       def setAdd(value: (K, V) => Book[K, V]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
@@ -108,16 +105,15 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var registry: Map[String, Protocol] = js.native
+    var registry: Map[String, Protocol]
     
-    var remoteAddr: ^ = js.native
+    var remoteAddr: ^
     
-    var remotePeer: typings.peerId.mod.^ = js.native
+    var remotePeer: typings.peerId.mod.^
     
-    var stat: Direction = js.native
+    var stat: Direction
   }
   object Connection {
     
@@ -144,10 +140,9 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ConnectionManager extends StObject {
     
-    def getAll(peerId: typings.peerId.mod.^): js.Array[Connection] = js.native
+    def getAll(peerId: typings.peerId.mod.^): js.Array[Connection]
   }
   object ConnectionManager {
     
@@ -165,48 +160,46 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait DuplexIterableStream[T, U, V] extends StObject {
     
-    def sink(source: T): js.Promise[U] = js.native
+    def sink(source: T): js.Promise[U]
     
-    def source(): AsyncIterator[V, _, js.UndefOr[scala.Nothing]] = js.native
+    def source(): AsyncIterator[V, js.Any, Unit]
   }
   object DuplexIterableStream {
     
     @scala.inline
-    def apply[T, U, V](sink: T => js.Promise[U], source: () => AsyncIterator[V, _, js.UndefOr[scala.Nothing]]): DuplexIterableStream[T, U, V] = {
+    def apply[T, U, V](sink: T => js.Promise[U], source: () => AsyncIterator[V, js.Any, Unit]): DuplexIterableStream[T, U, V] = {
       val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink), source = js.Any.fromFunction0(source))
       __obj.asInstanceOf[DuplexIterableStream[T, U, V]]
     }
     
     @scala.inline
-    implicit class DuplexIterableStreamMutableBuilder[Self <: DuplexIterableStream[_, _, _], T, U, V] (val x: Self with (DuplexIterableStream[T, U, V])) extends AnyVal {
+    implicit class DuplexIterableStreamMutableBuilder[Self <: DuplexIterableStream[?, ?, ?], T, U, V] (val x: Self & (DuplexIterableStream[T, U, V])) extends AnyVal {
       
       @scala.inline
       def setSink(value: T => js.Promise[U]): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setSource(value: () => AsyncIterator[V, _, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+      def setSource(value: () => AsyncIterator[V, js.Any, Unit]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait Envelope extends StObject {
     
-    def isEqual(other: Envelope): Boolean = js.native
+    def isEqual(other: Envelope): Boolean
     
-    def marshal(): Uint8Array = js.native
+    def marshal(): Uint8Array
     
-    var payload: Uint8Array = js.native
+    var payload: Uint8Array
     
-    var payloadType: Uint8Array = js.native
+    var payloadType: Uint8Array
     
-    var peerId: typings.peerId.mod.^ = js.native
+    var peerId: typings.peerId.mod.^
     
-    var signature: Uint8Array = js.native
+    var signature: Uint8Array
     
-    def validate(domain: String): js.Promise[Boolean] = js.native
+    def validate(domain: String): js.Promise[Boolean]
   }
   object Envelope {
     
@@ -250,10 +243,9 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait EnvelopeClass extends StObject {
     
-    def openAndCertify(data: Uint8Array, domain: String): js.Promise[Envelope] = js.native
+    def openAndCertify(data: Uint8Array, domain: String): js.Promise[Envelope]
   }
   object EnvelopeClass {
     
@@ -298,10 +290,9 @@ object interfacesMod {
   
   type MessageIdFunction = js.Function1[/* msg */ InMessage, Uint8Array]
   
-  @js.native
   trait PeerStore extends StObject {
     
-    var addressBook: AddressBook = js.native
+    var addressBook: AddressBook
   }
   object PeerStore {
     
@@ -319,14 +310,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait Registrar extends StObject {
     
-    def handle(): Unit = js.native
+    def handle(): Unit
     
-    def register(): Unit = js.native
+    def register(): Unit
     
-    def unregister(): Unit = js.native
+    def unregister(): Unit
   }
   object Registrar {
     

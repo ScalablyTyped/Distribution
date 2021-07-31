@@ -3,31 +3,29 @@ package typings.dynatable.JQueryDynatable
 import typings.dynatable.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordsCount extends StObject {
   
   /** Insert the record count inside the page */
-  def attach(): Unit = js.native
+  def attach(): Unit
   
   /**
     * Generate the html markup for the record count
     *
     * @return A jQuery object containing the generated html
     */
-  def create(): JQuery = js.native
+  def create(): JQuery
   
   /** Create and init the records count */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Check if recordCount feature is enabled
     *
     * @return A boolean if recordCount feature is enabled
     */
-  def initOnLoad(): Boolean = js.native
+  def initOnLoad(): Boolean
 }
 object RecordsCount {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicAutoscalingAlgorithm extends StObject {
   
   /** Optional. Duration between scaling events. A scaling period starts after the update operation from the previous event has completed.Bounds: 2m, 1d. Default: 2m. */
-  var cooldownPeriod: js.UndefOr[String] = js.native
+  var cooldownPeriod: js.UndefOr[String] = js.undefined
   
   /** Required. YARN autoscaling configuration. */
-  var yarnConfig: js.UndefOr[BasicYarnAutoscalingConfig] = js.native
+  var yarnConfig: js.UndefOr[BasicYarnAutoscalingConfig] = js.undefined
 }
 object BasicAutoscalingAlgorithm {
   

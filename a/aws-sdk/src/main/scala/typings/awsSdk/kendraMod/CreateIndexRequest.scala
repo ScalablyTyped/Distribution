@@ -2,56 +2,54 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIndexRequest extends StObject {
   
   /**
     * A token that you provide to identify the request to create an index. Multiple calls to the CreateIndex operation with the same client token will create only one index.
     */
-  var ClientToken: js.UndefOr[ClientTokenName] = js.native
+  var ClientToken: js.UndefOr[ClientTokenName] = js.undefined
   
   /**
     * A description for the index.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * The Amazon Kendra edition to use for the index. Choose DEVELOPER_EDITION for indexes intended for development, testing, or proof of concept. Use ENTERPRISE_EDITION for your production databases. Once you set the edition for an index, it can't be changed.  The Edition parameter is optional. If you don't supply a value, the default is ENTERPRISE_EDITION.
     */
-  var Edition: js.UndefOr[IndexEdition] = js.native
+  var Edition: js.UndefOr[IndexEdition] = js.undefined
   
   /**
     * The name for the new index.
     */
-  var Name: IndexName = js.native
+  var Name: IndexName
   
   /**
     * An AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your Amazon CloudWatch logs and metrics. This is also the role used when you use the BatchPutDocument operation to index documents from an Amazon S3 bucket.
     */
-  var RoleArn: typings.awsSdk.kendraMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.kendraMod.RoleArn
   
   /**
     * The identifier of the AWS KMS customer managed key (CMK) to use to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn't support asymmetric CMKs.
     */
-  var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServerSideEncryptionConfiguration] = js.native
+  var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.kendraMod.ServerSideEncryptionConfiguration] = js.undefined
   
   /**
     * A list of key-value pairs that identify the index. You can use the tags to identify and organize your resources and to control access to resources.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The user context policy.  ATTRIBUTE_FILTER  All indexed content is searchable and displayable for all users. If there is an access control list, it is ignored. You can filter on user and group attributes.   USER_TOKEN  Enables SSO and token-based user access control. All documents with no access control and all documents accessible to the user will be searchable and displayable.   
     */
-  var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.native
+  var UserContextPolicy: js.UndefOr[typings.awsSdk.kendraMod.UserContextPolicy] = js.undefined
   
   /**
     * The user token configuration.
     */
-  var UserTokenConfigurations: js.UndefOr[UserTokenConfigurationList] = js.native
+  var UserTokenConfigurations: js.UndefOr[UserTokenConfigurationList] = js.undefined
 }
 object CreateIndexRequest {
   

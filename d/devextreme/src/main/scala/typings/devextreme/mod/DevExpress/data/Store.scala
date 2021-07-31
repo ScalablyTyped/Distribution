@@ -5,23 +5,22 @@ import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Store extends StObject {
   
-  def byKey(key: String): Promise[_] with JQueryPromise[_] = js.native
+  def byKey(key: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   /**
     * [descr:Store.byKey(key)]
     */
-  def byKey(key: js.Any): Promise[_] with JQueryPromise[_] = js.native
-  def byKey(key: Double): Promise[_] with JQueryPromise[_] = js.native
+  def byKey(key: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def byKey(key: Double): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:Store.insert(values)]
     */
-  def insert(values: js.Any): Promise[_] with JQueryPromise[_] = js.native
+  def insert(values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:Store.key()]
@@ -36,11 +35,11 @@ trait Store extends StObject {
   /**
     * [descr:Store.load()]
     */
-  def load(): Promise[_] with JQueryPromise[_] = js.native
+  def load(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   /**
     * [descr:Store.load(options)]
     */
-  def load(options: LoadOptions): Promise[_] with JQueryPromise[_] = js.native
+  def load(options: LoadOptions): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:Store.off(eventName)]
@@ -63,24 +62,24 @@ trait Store extends StObject {
   /**
     * [descr:Store.push(changes)]
     */
-  def push(changes: js.Array[_]): Unit = js.native
+  def push(changes: js.Array[js.Any]): Unit = js.native
   
-  def remove(key: String): Promise[Unit] with JQueryPromise[Unit] = js.native
+  def remove(key: String): Promise[Unit] & JQueryPromise[Unit] = js.native
   /**
     * [descr:Store.remove(key)]
     */
-  def remove(key: js.Any): Promise[Unit] with JQueryPromise[Unit] = js.native
-  def remove(key: Double): Promise[Unit] with JQueryPromise[Unit] = js.native
+  def remove(key: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
+  def remove(key: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
   
   /**
     * [descr:Store.totalCount(options)]
     */
-  def totalCount(obj: Filter): Promise[Double] with JQueryPromise[Double] = js.native
+  def totalCount(obj: Filter): Promise[Double] & JQueryPromise[Double] = js.native
   
-  def update(key: String, values: js.Any): Promise[_] with JQueryPromise[_] = js.native
+  def update(key: String, values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   /**
     * [descr:Store.update(key, values)]
     */
-  def update(key: js.Any, values: js.Any): Promise[_] with JQueryPromise[_] = js.native
-  def update(key: Double, values: js.Any): Promise[_] with JQueryPromise[_] = js.native
+  def update(key: js.Any, values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def update(key: Double, values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
 }

@@ -29,7 +29,6 @@ import typings.storybookComponents.storybookComponentsStrings.ultraviolet
 import typings.storybookComponents.storybookComponentsStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -38,12 +37,11 @@ object tooltipMod {
   @js.native
   val Tooltip: FunctionComponent[TooltipProps] = js.native
   
-  @js.native
   trait ArrowProps extends StObject {
     
-    var color: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText = js.native
+    var color: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
     
-    var placement: String = js.native
+    var placement: String
   }
   object ArrowProps {
     
@@ -69,22 +67,21 @@ object tooltipMod {
     }
   }
   
-  @js.native
   trait TooltipProps extends StObject {
     
-    var arrowProps: js.UndefOr[js.Any] = js.native
+    var arrowProps: js.UndefOr[js.Any] = js.undefined
     
-    var arrowRef: js.UndefOr[js.Any] = js.native
+    var arrowRef: js.UndefOr[js.Any] = js.undefined
     
     var color: js.UndefOr[
         primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
-      ] = js.native
+      ] = js.undefined
     
-    var hasChrome: js.UndefOr[Boolean] = js.native
+    var hasChrome: js.UndefOr[Boolean] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var tooltipRef: js.UndefOr[js.Any] = js.native
+    var tooltipRef: js.UndefOr[js.Any] = js.undefined
   }
   object TooltipProps {
     
@@ -137,16 +134,15 @@ object tooltipMod {
     }
   }
   
-  @js.native
   trait WrapperProps extends StObject {
     
-    var color: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText = js.native
+    var color: /* keyof @storybook/theming.@storybook/theming/dist/types.Color */ primary | secondary | tertiary | ancillary | orange | gold | green | seafoam | purple | ultraviolet | lightest | lighter | light | mediumlight | medium | mediumdark | dark | darker | darkest | border | positive | negative | warning | critical | defaultText | inverseText
     
-    var hasChrome: Boolean = js.native
+    var hasChrome: Boolean
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var placement: String = js.native
+    var placement: String
   }
   object WrapperProps {
     

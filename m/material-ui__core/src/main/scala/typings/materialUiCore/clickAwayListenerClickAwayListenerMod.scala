@@ -12,7 +12,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clickAwayListenerClickAwayListenerMod extends Shortcut {
@@ -21,16 +20,15 @@ object clickAwayListenerClickAwayListenerMod extends Shortcut {
   @js.native
   val default: ComponentType[ClickAwayListenerProps] = js.native
   
-  @js.native
   trait ClickAwayListenerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.native
+    var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.undefined
     
-    def onClickAway(event: ChangeEvent[js.Object]): Unit = js.native
+    def onClickAway(event: ChangeEvent[js.Object]): Unit
     
-    var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.native
+    var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.undefined
   }
   object ClickAwayListenerProps {
     

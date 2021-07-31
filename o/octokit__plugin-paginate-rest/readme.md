@@ -10,10 +10,10 @@ Octokit plugin to paginate REST API endpoint responses
 | ------------------ | :-------------: |
 | Full name          | @octokit/plugin-paginate-rest |
 | Keywords           | github, api, sdk, toolkit |
-| # releases         | 20 |
-| # dependents       | 12 |
-| # downloads        | 45840718 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 16 |
+| # downloads        | 97900784 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/octokit/plugin-paginate-rest.js#readme)

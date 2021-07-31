@@ -5,15 +5,31 @@ import typings.std.EventListener
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safariMod {
   
   @JSImport("playable/dist/src/modules/picture-in-picture/safari", JSImport.Default)
   @js.native
-  class default protected () extends SafariPictureInPicture {
+  class default protected ()
+    extends StObject
+       with SafariPictureInPicture {
     def this(elem: HTMLVideoElement, callback: EventListener) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def exit(): Unit = js.native
+    
+    /* CompleteClass */
+    var isEnabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var isInPictureInPicture: Boolean = js.native
+    
+    /* CompleteClass */
+    override def request(): Unit = js.native
   }
   
   @JSImport("playable/dist/src/modules/picture-in-picture/safari", "INLINE_MODE")
@@ -25,7 +41,9 @@ object safariMod {
   val PICTURE_IN_PICTURE_MODE: /* "picture-in-picture" */ String = js.native
   
   @js.native
-  trait SafariPictureInPicture extends IPictureInPictureHelper {
+  trait SafariPictureInPicture
+    extends StObject
+       with IPictureInPictureHelper {
     
     @JSName("_$elem")
     var _$elem: js.Any = js.native

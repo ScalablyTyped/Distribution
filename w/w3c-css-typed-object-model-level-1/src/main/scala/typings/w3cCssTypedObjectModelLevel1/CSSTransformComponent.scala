@@ -3,15 +3,13 @@ package typings.w3cCssTypedObjectModelLevel1
 import typings.std.DOMMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSTransformComponent extends StObject {
   
-  var is2D: Boolean = js.native
+  var is2D: Boolean
   
-  def toMatrix(): DOMMatrix = js.native
+  def toMatrix(): DOMMatrix
 }
 object CSSTransformComponent {
   

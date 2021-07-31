@@ -18,10 +18,13 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wiaAriaMod {
+  
+  @JSImport("@react-md/utils/types/wia-aria", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/wia-aria", "DATA_RMD_NOSCROLL")
   @js.native
@@ -29,50 +32,50 @@ object wiaAriaMod {
   
   @JSImport("@react-md/utils/types/wia-aria", "FocusContainer")
   @js.native
-  val FocusContainer: ForwardRefExoticComponent[FocusContainerProps with RefAttributes[HTMLDivElement]] = js.native
+  val FocusContainer: ForwardRefExoticComponent[FocusContainerProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/utils/types/wia-aria", "IncrementMovementKey")
   @js.native
   object IncrementMovementKey extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.IncrementMovementKey with String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.IncrementMovementKey & String] = js.native
     
-    /* "Alt+ArrowDown" */ val AltArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowDown with String = js.native
+    /* "Alt+ArrowDown" */ val AltArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowDown & String = js.native
     
-    /* "Alt+ArrowLeft" */ val AltArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowLeft with String = js.native
+    /* "Alt+ArrowLeft" */ val AltArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowLeft & String = js.native
     
-    /* "Alt+ArrowRight" */ val AltArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowRight with String = js.native
+    /* "Alt+ArrowRight" */ val AltArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowRight & String = js.native
     
-    /* "Alt+ArrowUp" */ val AltArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowUp with String = js.native
+    /* "Alt+ArrowUp" */ val AltArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltArrowUp & String = js.native
     
-    /* "Alt+PageDown" */ val AltPageDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltPageDown with String = js.native
+    /* "Alt+PageDown" */ val AltPageDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltPageDown & String = js.native
     
-    /* "Alt+PageUp" */ val AltPageUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltPageUp with String = js.native
+    /* "Alt+PageUp" */ val AltPageUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.AltPageUp & String = js.native
     
-    /* "ArrowDown" */ val ArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowDown with String = js.native
+    /* "ArrowDown" */ val ArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowDown & String = js.native
     
-    /* "ArrowLeft" */ val ArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowLeft with String = js.native
+    /* "ArrowLeft" */ val ArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowLeft & String = js.native
     
-    /* "ArrowRight" */ val ArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowRight with String = js.native
+    /* "ArrowRight" */ val ArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowRight & String = js.native
     
-    /* "ArrowUp" */ val ArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowUp with String = js.native
+    /* "ArrowUp" */ val ArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ArrowUp & String = js.native
     
-    /* "Control+ArrowDown" */ val ControlArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ControlArrowDown with String = js.native
+    /* "Control+ArrowDown" */ val ControlArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ControlArrowDown & String = js.native
     
-    /* "Control+ArrowUp" */ val ControlArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ControlArrowUp with String = js.native
+    /* "Control+ArrowUp" */ val ControlArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ControlArrowUp & String = js.native
     
-    /* "PageDown" */ val PageDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.PageDown with String = js.native
+    /* "PageDown" */ val PageDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.PageDown & String = js.native
     
-    /* "PageUp" */ val PageUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.PageUp with String = js.native
+    /* "PageUp" */ val PageUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.PageUp & String = js.native
     
-    /* "Shift+ArrowDown" */ val ShiftArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowDown with String = js.native
+    /* "Shift+ArrowDown" */ val ShiftArrowDown: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowDown & String = js.native
     
-    /* "Shift+ArrowLeft" */ val ShiftArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowLeft with String = js.native
+    /* "Shift+ArrowLeft" */ val ShiftArrowLeft: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowLeft & String = js.native
     
-    /* "Shift+ArrowRight" */ val ShiftArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowRight with String = js.native
+    /* "Shift+ArrowRight" */ val ShiftArrowRight: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowRight & String = js.native
     
-    /* "Shift+ArrowUp" */ val ShiftArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowUp with String = js.native
+    /* "Shift+ArrowUp" */ val ShiftArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowUp & String = js.native
   }
   
   @JSImport("@react-md/utils/types/wia-aria", "JumpMovementKey")
@@ -80,23 +83,23 @@ object wiaAriaMod {
   object JumpMovementKey extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.JumpMovementKey with String] = js.native
+    def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.JumpMovementKey & String] = js.native
     
-    /* "Alt+End" */ val AltEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.AltEnd with String = js.native
+    /* "Alt+End" */ val AltEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.AltEnd & String = js.native
     
-    /* "Alt+Home" */ val AltHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.AltHome with String = js.native
+    /* "Alt+Home" */ val AltHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.AltHome & String = js.native
     
-    /* "Control+End" */ val ControlEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlEnd with String = js.native
+    /* "Control+End" */ val ControlEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlEnd & String = js.native
     
-    /* "Control+Home" */ val ControlHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlHome with String = js.native
+    /* "Control+Home" */ val ControlHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlHome & String = js.native
     
-    /* "Control+Shift+End" */ val ControlShiftEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlShiftEnd with String = js.native
+    /* "Control+Shift+End" */ val ControlShiftEnd: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlShiftEnd & String = js.native
     
-    /* "Control+Shift+Home" */ val ControlShiftHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlShiftHome with String = js.native
+    /* "Control+Shift+Home" */ val ControlShiftHome: typings.reactMdUtils.movementTypesMod.JumpMovementKey.ControlShiftHome & String = js.native
     
-    /* "End" */ val End: typings.reactMdUtils.movementTypesMod.JumpMovementKey.End with String = js.native
+    /* "End" */ val End: typings.reactMdUtils.movementTypesMod.JumpMovementKey.End & String = js.native
     
-    /* "Home" */ val Home: typings.reactMdUtils.movementTypesMod.JumpMovementKey.Home with String = js.native
+    /* "Home" */ val Home: typings.reactMdUtils.movementTypesMod.JumpMovementKey.Home & String = js.native
   }
   
   object MovementPresets {
@@ -142,243 +145,188 @@ object wiaAriaMod {
     val VERTICAL_TREE: MovementConfig = js.native
   }
   
-  @JSImport("@react-md/utils/types/wia-aria", "disable")
-  @js.native
-  def disable(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def disable(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/wia-aria", "enable")
-  @js.native
-  def enable(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def enable(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/wia-aria", "extractTextContent")
-  @js.native
-  def extractTextContent(stringOrElement: String): String = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "extractTextContent")
-  @js.native
-  def extractTextContent(stringOrElement: String, fontIconQuerySelector: String): String = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "extractTextContent")
-  @js.native
-  def extractTextContent(stringOrElement: HTMLElement): String = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "extractTextContent")
-  @js.native
-  def extractTextContent(stringOrElement: HTMLElement, fontIconQuerySelector: String): String = js.native
+  @scala.inline
+  def extractTextContent(stringOrElement: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTextContent")(stringOrElement.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def extractTextContent(stringOrElement: String, fontIconQuerySelector: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTextContent")(stringOrElement.asInstanceOf[js.Any], fontIconQuerySelector.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def extractTextContent(stringOrElement: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTextContent")(stringOrElement.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def extractTextContent(stringOrElement: HTMLElement, fontIconQuerySelector: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTextContent")(stringOrElement.asInstanceOf[js.Any], fontIconQuerySelector.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: Document,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: js.UndefOr[scala.Nothing],
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus, programatic: js.UndefOr[scala.Nothing], preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: Document,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: Boolean,
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: Document,
-    focus: Focus,
-    programatic: Boolean,
-    preventScroll: js.UndefOr[scala.Nothing],
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def focusElementWithin(
     container: Document,
     focus: Focus,
     programatic: Boolean,
     preventScroll: Boolean,
     elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: HTMLElement, focus: Focus): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def focusElementWithin(
-    container: HTMLElement,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: js.UndefOr[scala.Nothing],
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: HTMLElement,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: HTMLElement,
-    focus: Focus,
-    programatic: js.UndefOr[scala.Nothing],
-    preventScroll: Boolean,
-    elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(
-    container: HTMLElement,
+    container: Document,
     focus: Focus,
     programatic: Boolean,
-    preventScroll: js.UndefOr[scala.Nothing],
+    preventScroll: Unit,
     elements: js.Array[HTMLElement]
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
-  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "focusElementWithin")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: Document, focus: Focus, programatic: Unit, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: Document,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Boolean,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: Document,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Unit,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Boolean, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def focusElementWithin(
     container: HTMLElement,
     focus: Focus,
     programatic: Boolean,
     preventScroll: Boolean,
     elements: js.Array[HTMLElement]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: HTMLElement,
+    focus: Focus,
+    programatic: Boolean,
+    preventScroll: Unit,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(container: HTMLElement, focus: Focus, programatic: Unit, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: HTMLElement,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Boolean,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def focusElementWithin(
+    container: HTMLElement,
+    focus: Focus,
+    programatic: Unit,
+    preventScroll: Unit,
+    elements: js.Array[HTMLElement]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusElementWithin")(container.asInstanceOf[js.Any], focus.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/wia-aria", "getFocusableElements")
-  @js.native
-  def getFocusableElements(container: Document): js.Array[HTMLElement] = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "getFocusableElements")
-  @js.native
-  def getFocusableElements(container: Document, programatic: Boolean): js.Array[HTMLElement] = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "getFocusableElements")
-  @js.native
-  def getFocusableElements(container: HTMLElement): js.Array[HTMLElement] = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "getFocusableElements")
-  @js.native
-  def getFocusableElements(container: HTMLElement, programatic: Boolean): js.Array[HTMLElement] = js.native
+  @scala.inline
+  def getFocusableElements(container: Document): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableElements")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getFocusableElements(container: Document, programatic: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableElements")(container.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getFocusableElements(container: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableElements")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def getFocusableElements(container: HTMLElement, programatic: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableElements")(container.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
-  @JSImport("@react-md/utils/types/wia-aria", "getItemId")
-  @js.native
-  def getItemId(id: String, i: Double): String = js.native
+  @scala.inline
+  def getItemId(id: String, i: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemId")(id.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/wia-aria", "useActiveDescendantMovement")
-  @js.native
+  @scala.inline
   def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
     hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions: ActiveDescendantOptions[D, CE, IE]
-  ): ActiveDescendantMovementProviders[CE, IE] = js.native
+  ): ActiveDescendantMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantMovement")(hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
   
-  @JSImport("@react-md/utils/types/wia-aria", "useCloseOnEscape")
-  @js.native
-  def useCloseOnEscape[E /* <: HTMLElement */](onRequestClose: js.Function0[Unit], disabled: Boolean): js.UndefOr[KeyboardEventHandler[E]] = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useCloseOnEscape")
-  @js.native
-  def useCloseOnEscape[E /* <: HTMLElement */](onRequestClose: js.Function0[Unit], disabled: Boolean, onKeyDown: KeyboardEventHandler[E]): js.UndefOr[KeyboardEventHandler[E]] = js.native
+  @scala.inline
+  def useCloseOnEscape[E /* <: HTMLElement */](onRequestClose: js.Function0[Unit], disabled: Boolean): js.UndefOr[KeyboardEventHandler[E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnEscape")(onRequestClose.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
+  @scala.inline
+  def useCloseOnEscape[E /* <: HTMLElement */](onRequestClose: js.Function0[Unit], disabled: Boolean, onKeyDown: KeyboardEventHandler[E]): js.UndefOr[KeyboardEventHandler[E]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnEscape")(onRequestClose.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], onKeyDown.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
   
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusMovement")
-  @js.native
-  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = js.native
+  @scala.inline
+  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusMovement")(hasDefaultFocusedIndexOnChangeOptions.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(
-    refOrInstance: RefOrInstance,
-    defaultFocus: Focus,
-    preventScroll: js.UndefOr[scala.Nothing],
-    programatic: js.UndefOr[scala.Nothing],
-    disabled: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(
-    refOrInstance: RefOrInstance,
-    defaultFocus: Focus,
-    preventScroll: js.UndefOr[scala.Nothing],
-    programatic: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(
-    refOrInstance: RefOrInstance,
-    defaultFocus: Focus,
-    preventScroll: js.UndefOr[scala.Nothing],
-    programatic: Boolean,
-    disabled: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus, preventScroll: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(
-    refOrInstance: RefOrInstance,
-    defaultFocus: Focus,
-    preventScroll: Boolean,
-    programatic: js.UndefOr[scala.Nothing],
-    disabled: Boolean
-  ): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
-  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus, preventScroll: Boolean, programatic: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useFocusOnMount")
-  @js.native
+  @scala.inline
+  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus, preventScroll: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus, preventScroll: Boolean, programatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def useFocusOnMount(
     refOrInstance: RefOrInstance,
     defaultFocus: Focus,
     preventScroll: Boolean,
     programatic: Boolean,
     disabled: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useFocusOnMount(
+    refOrInstance: RefOrInstance,
+    defaultFocus: Focus,
+    preventScroll: Boolean,
+    programatic: Unit,
+    disabled: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useFocusOnMount(refOrInstance: RefOrInstance, defaultFocus: Focus, preventScroll: Unit, programatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useFocusOnMount(
+    refOrInstance: RefOrInstance,
+    defaultFocus: Focus,
+    preventScroll: Unit,
+    programatic: Boolean,
+    disabled: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useFocusOnMount(
+    refOrInstance: RefOrInstance,
+    defaultFocus: Focus,
+    preventScroll: Unit,
+    programatic: Unit,
+    disabled: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusOnMount")(refOrInstance.asInstanceOf[js.Any], defaultFocus.asInstanceOf[js.Any], preventScroll.asInstanceOf[js.Any], programatic.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/wia-aria", "useKeyboardMovement")
-  @js.native
+  @scala.inline
   def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
     hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
-  ): KeyboardMovementProviders[CE, IE] = js.native
+  ): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
-  @JSImport("@react-md/utils/types/wia-aria", "usePreviousFocus")
-  @js.native
-  def usePreviousFocus(disabled: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "usePreviousFocus")
-  @js.native
-  def usePreviousFocus(disabled: Boolean, fallback: js.UndefOr[FocusFallback], previousElement: HTMLElement): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "usePreviousFocus")
-  @js.native
-  def usePreviousFocus(disabled: Boolean, fallback: FocusFallback): Unit = js.native
+  @scala.inline
+  def usePreviousFocus(disabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("usePreviousFocus")(disabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def usePreviousFocus(disabled: Boolean, fallback: Unit, previousElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("usePreviousFocus")(disabled.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any], previousElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def usePreviousFocus(disabled: Boolean, fallback: FocusFallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("usePreviousFocus")(disabled.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def usePreviousFocus(disabled: Boolean, fallback: FocusFallback, previousElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("usePreviousFocus")(disabled.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any], previousElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-md/utils/types/wia-aria", "useScrollLock")
-  @js.native
-  def useScrollLock(enabled: Boolean): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useScrollLock")
-  @js.native
-  def useScrollLock(enabled: Boolean, selectorOrElement: String): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useScrollLock")
-  @js.native
-  def useScrollLock(enabled: Boolean, selectorOrElement: js.Function0[HTMLElement]): Unit = js.native
-  @JSImport("@react-md/utils/types/wia-aria", "useScrollLock")
-  @js.native
-  def useScrollLock(enabled: Boolean, selectorOrElement: HTMLElement): Unit = js.native
+  @scala.inline
+  def useScrollLock(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useScrollLock(enabled: Boolean, selectorOrElement: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any], selectorOrElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useScrollLock(enabled: Boolean, selectorOrElement: js.Function0[HTMLElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any], selectorOrElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def useScrollLock(enabled: Boolean, selectorOrElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useScrollLock")(enabled.asInstanceOf[js.Any], selectorOrElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

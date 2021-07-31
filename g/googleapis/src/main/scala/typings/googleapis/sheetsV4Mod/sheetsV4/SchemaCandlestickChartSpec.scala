@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * href=&quot;/chart/interactive/docs/gallery/candlestickchart&quot;&gt;candlestick
   * chart&lt;/a&gt;.
   */
-@js.native
 trait SchemaCandlestickChartSpec extends StObject {
   
   /**
     * The Candlestick chart data. Only one CandlestickData is supported.
     */
-  var data: js.UndefOr[js.Array[SchemaCandlestickData]] = js.native
+  var data: js.UndefOr[js.Array[SchemaCandlestickData]] = js.undefined
   
   /**
     * The domain data (horizontal axis) for the candlestick chart.  String data
     * will be treated as discrete labels, other data will be treated as
     * continuous values.
     */
-  var domain: js.UndefOr[SchemaCandlestickDomain] = js.native
+  var domain: js.UndefOr[SchemaCandlestickDomain] = js.undefined
 }
 object SchemaCandlestickChartSpec {
   

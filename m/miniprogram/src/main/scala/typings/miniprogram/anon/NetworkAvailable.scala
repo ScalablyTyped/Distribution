@@ -2,18 +2,16 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkAvailable extends StObject {
   
-  var networkAvailable: Boolean = js.native
+  var networkAvailable: Boolean
   
   /**
     * Network type, UNKNOWN / NOTREACHABLE / WIFI / 3G / 2G / 4G / WWAN.
     */
-  var networkType: String = js.native
+  var networkType: String
 }
 object NetworkAvailable {
   

@@ -24,14 +24,13 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This abstract service specifies the general characteristics of an optional text inside a {@link Shape} . */
-@js.native
 trait Text
-  extends TextProperties
+  extends StObject
      with XText
+     with TextProperties
 object Text {
   
   @scala.inline

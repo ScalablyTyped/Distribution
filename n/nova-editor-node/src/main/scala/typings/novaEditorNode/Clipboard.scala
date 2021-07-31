@@ -2,16 +2,14 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://docs.nova.app/api-reference/clipboard/
-@js.native
 trait Clipboard extends StObject {
   
-  def readText(): js.Promise[String] = js.native
+  def readText(): js.Promise[String]
   
-  def writeText(text: String): js.Promise[Unit] = js.native
+  def writeText(text: String): js.Promise[Unit]
 }
 object Clipboard {
   

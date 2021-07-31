@@ -2,19 +2,17 @@ package typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the metadata of the long-running operation.
   */
-@js.native
 trait SchemaOperationMetadata extends StObject {
   
   /**
     * [Output only] API version used to start the operation.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Identifies whether the user has requested cancellation of
@@ -22,33 +20,33 @@ trait SchemaOperationMetadata extends StObject {
     * Operation.error value with a google.rpc.Status.code of 1, corresponding
     * to `Code.CANCELLED`.
     */
-  var cancelRequested: js.UndefOr[Boolean] = js.native
+  var cancelRequested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output only] The time the operation was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The time the operation finished running.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Human-readable status of the operation, if any.
     */
-  var statusDetail: js.UndefOr[String] = js.native
+  var statusDetail: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Server-defined resource path for the target of the
     * operation.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Name of the verb executed by the operation.
     */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object SchemaOperationMetadata {
   

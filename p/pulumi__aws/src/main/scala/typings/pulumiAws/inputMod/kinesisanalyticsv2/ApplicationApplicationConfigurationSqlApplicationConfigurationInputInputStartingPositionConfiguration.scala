@@ -3,13 +3,11 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration extends StObject {
   
-  var inputStartingPosition: js.UndefOr[Input[String]] = js.native
+  var inputStartingPosition: js.UndefOr[Input[String]] = js.undefined
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration {
   

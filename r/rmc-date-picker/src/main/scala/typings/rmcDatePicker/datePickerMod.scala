@@ -9,7 +9,6 @@ import typings.rmcDatePicker.anon.Value
 import typings.rmcDatePicker.idatepickerpropsMod.IDatePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerMod {
@@ -50,9 +49,8 @@ object datePickerMod {
       @scala.inline
       def mode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
       
-      @JSImport("rmc-date-picker/lib/DatePicker", "default.defaultProps.onDateChange")
-      @js.native
-      def onDateChange(): Unit = js.native
+      @scala.inline
+      def onDateChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDateChange")().asInstanceOf[Unit]
       
       @JSImport("rmc-date-picker/lib/DatePicker", "default.defaultProps.pickerPrefixCls")
       @js.native

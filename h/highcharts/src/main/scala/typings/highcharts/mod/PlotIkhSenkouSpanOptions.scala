@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotIkhSenkouSpanOptions extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait PlotIkhSenkouSpanOptions extends StObject {
     * Span A is above Senkou Span B. Note that if a `style.fill` is defined,
     * the `color` takes precedence and the `style.fill` is ignored.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highstock) Color of the area between Senkou Span A and B, when Senkou
     * Span A is under Senkou Span B.
     */
-  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
 }
 object PlotIkhSenkouSpanOptions {
   

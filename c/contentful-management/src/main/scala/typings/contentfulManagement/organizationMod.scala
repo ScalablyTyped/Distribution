@@ -8,33 +8,33 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.createOrganizationApiMod.ContentfulOrganizationAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationMod {
   
-  @JSImport("contentful-management/dist/typings/entities/organization", "wrapOrganization")
+  @JSImport("contentful-management/dist/typings/entities/organization", JSImport.Namespace)
   @js.native
-  def wrapOrganization(http: AxiosInstance, data: OrganizationProp): Organization = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/organization", "wrapOrganizationCollection")
-  @js.native
-  def wrapOrganizationCollection(http: AxiosInstance, data: CollectionProp[OrganizationProp]): Collection[Organization, OrganizationProp] = js.native
+  @scala.inline
+  def wrapOrganization(http: AxiosInstance, data: OrganizationProp): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganization")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Organization]
   
-  type Organization = DefaultElements[OrganizationProp] with OrganizationProp with ContentfulOrganizationAPI
+  @scala.inline
+  def wrapOrganizationCollection(http: AxiosInstance, data: CollectionProp[OrganizationProp]): Collection[Organization, OrganizationProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Organization, OrganizationProp]]
   
-  @js.native
+  type Organization = DefaultElements[OrganizationProp] & OrganizationProp & ContentfulOrganizationAPI
+  
   trait OrganizationProp extends StObject {
     
     /**
       * Name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object OrganizationProp {
     

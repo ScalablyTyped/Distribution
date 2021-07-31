@@ -4,38 +4,36 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait legendOptions extends StObject {
   
   //number of pixels or [x margin, y margin]
-  var backgroundColor: js.UndefOr[js.Any] = js.native
+  var backgroundColor: js.UndefOr[js.Any] = js.undefined
   
   //null or color
-  var backgroundOpacity: js.UndefOr[Double] = js.native
+  var backgroundOpacity: js.UndefOr[Double] = js.undefined
   
   // between 0 and 1
-  var container: js.UndefOr[JQuery[HTMLElement]] = js.native
+  var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
   //  null or (fn: string, series object -> string)
-  var labelBoxBorderColor: js.UndefOr[js.Any] = js.native
+  var labelBoxBorderColor: js.UndefOr[js.Any] = js.undefined
   
-  var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.native
+  var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.undefined
   
   //"ne" or "nw" or "se" or "sw"
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   //color
-  var noColumns: js.UndefOr[Double] = js.native
+  var noColumns: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   // null or jQuery object/DOM element/jQuery expression
-  var sorted: js.UndefOr[js.Any] = js.native
+  var sorted: js.UndefOr[js.Any] = js.undefined
 }
 object legendOptions {
   

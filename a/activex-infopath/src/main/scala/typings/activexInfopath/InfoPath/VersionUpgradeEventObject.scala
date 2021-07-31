@@ -2,22 +2,20 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionUpgradeEventObject extends StObject {
   
-  val DocumentVersion: String = js.native
+  val DocumentVersion: String
   
   @JSName("InfoPath.VersionUpgradeEventObject_typekey")
-  var InfoPathDotVersionUpgradeEventObject_typekey: VersionUpgradeEventObject = js.native
+  var InfoPathDotVersionUpgradeEventObject_typekey: VersionUpgradeEventObject
   
-  var ReturnStatus: Boolean = js.native
+  var ReturnStatus: Boolean
   
-  val SolutionVersion: String = js.native
+  val SolutionVersion: String
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object VersionUpgradeEventObject {
   

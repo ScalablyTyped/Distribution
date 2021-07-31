@@ -2,27 +2,25 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseConsumptionSheetConfig extends StObject {
   
-  var can_viewer_donate: Boolean = js.native
+  var can_viewer_donate: Boolean
   
-  var currency: String = js.native
+  var currency: String
   
-  var donation_amount_config: ListReelMediaViewerFeedResponseDonationAmountConfig = js.native
+  var donation_amount_config: ListReelMediaViewerFeedResponseDonationAmountConfig
   
-  var donation_disabled_message: Null = js.native
+  var donation_disabled_message: Null
   
-  var donation_url: String = js.native
+  var donation_url: String
   
-  var has_viewer_donated: Boolean = js.native
+  var has_viewer_donated: Boolean
   
-  var privacy_disclaimer: String = js.native
+  var privacy_disclaimer: String
   
-  var you_donated_message: Null = js.native
+  var you_donated_message: Null
 }
 object ListReelMediaViewerFeedResponseConsumptionSheetConfig {
   

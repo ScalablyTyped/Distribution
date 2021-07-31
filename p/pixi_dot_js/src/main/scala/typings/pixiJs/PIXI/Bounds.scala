@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -127,14 +126,6 @@ trait Bounds extends StObject {
     * @param {number} [padY=0] - y padding
     */
   def addVerticesMatrix(matrix: Matrix, vertices: Float32Array, beginOffset: Double, endOffset: Double): Unit = js.native
-  def addVerticesMatrix(
-    matrix: Matrix,
-    vertices: Float32Array,
-    beginOffset: Double,
-    endOffset: Double,
-    padX: js.UndefOr[scala.Nothing],
-    padY: Double
-  ): Unit = js.native
   def addVerticesMatrix(matrix: Matrix, vertices: Float32Array, beginOffset: Double, endOffset: Double, padX: Double): Unit = js.native
   def addVerticesMatrix(
     matrix: Matrix,
@@ -142,6 +133,14 @@ trait Bounds extends StObject {
     beginOffset: Double,
     endOffset: Double,
     padX: Double,
+    padY: Double
+  ): Unit = js.native
+  def addVerticesMatrix(
+    matrix: Matrix,
+    vertices: Float32Array,
+    beginOffset: Double,
+    endOffset: Double,
+    padX: Unit,
     padY: Double
   ): Unit = js.native
   
@@ -199,9 +198,9 @@ trait Bounds extends StObject {
     * @param {number} [paddingY=0] - The vertical padding amount.
     */
   def pad(): Unit = js.native
-  def pad(paddingX: js.UndefOr[scala.Nothing], paddingY: Double): Unit = js.native
   def pad(paddingX: Double): Unit = js.native
   def pad(paddingX: Double, paddingY: Double): Unit = js.native
+  def pad(paddingX: Unit, paddingY: Double): Unit = js.native
   
   /**
     * It is updated to _boundsID of corresponding object to keep bounds in sync with content.

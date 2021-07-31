@@ -2,17 +2,16 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HyperlinkComponentProperties
-  extends ComponentProperties
+  extends StObject
+     with ComponentProperties
      with TitledComponentProperties {
   
-  var label: String = js.native
+  var label: String
   
-  var url: String = js.native
+  var url: String
 }
 object HyperlinkComponentProperties {
   

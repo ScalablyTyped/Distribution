@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the cancelable events of a client ASPxCardView column.
   */
-@js.native
-trait ASPxClientCardViewColumnCancelEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientCardViewColumnCancelEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed client column.
     */
-  var column: ASPxClientCardViewColumn = js.native
+  var column: ASPxClientCardViewColumn
 }
 object ASPxClientCardViewColumnCancelEventArgs {
   

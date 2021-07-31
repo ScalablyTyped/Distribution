@@ -2,22 +2,20 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `classifyCollection` operation. */
-@js.native
 trait ClassifyCollectionParams extends StObject {
   
   /** Classifier ID to use. */
-  var classifier_id: String = js.native
+  var classifier_id: String
   
   /** The submitted phrases. */
-  var collection: js.Array[ClassifyInput] = js.native
+  var collection: js.Array[ClassifyInput]
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object ClassifyCollectionParams {
   

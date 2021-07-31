@@ -2,39 +2,37 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoneData extends StObject {
   
-  var color: Color = js.native
+  var color: Color
   
-  var index: Double = js.native
+  var index: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var name: String = js.native
+  var name: String
   
-  var parent: BoneData = js.native
+  var parent: BoneData
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  var shearX: Double = js.native
+  var shearX: Double
   
-  var shearY: Double = js.native
+  var shearY: Double
   
-  var skinRequired: Boolean = js.native
+  var skinRequired: Boolean
   
-  var transformMode: TransformMode = js.native
+  var transformMode: TransformMode
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object BoneData {
   

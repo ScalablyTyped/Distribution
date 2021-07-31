@@ -1,11 +1,8 @@
-package typings.devtoolsProtocol.mod.Protocol
+package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object HeapProfiler {
-  
-  type HeapSnapshotObjectId = java.lang.String
-}
+
+type HeapSnapshotObjectId = java.lang.String

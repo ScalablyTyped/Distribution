@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.blocks.anon.Create
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionPrototype
-  extends /* propertyName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propertyName */ StringDictionary[js.Any] {
   
-  var options: js.UndefOr[Create] = js.native
+  var options: js.UndefOr[Create] = js.undefined
 }
 object CollectionPrototype {
   

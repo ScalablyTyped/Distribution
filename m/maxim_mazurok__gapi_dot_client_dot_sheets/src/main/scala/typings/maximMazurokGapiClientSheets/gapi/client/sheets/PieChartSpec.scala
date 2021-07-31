@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PieChartSpec extends StObject {
   
   /** The data that covers the domain of the pie chart. */
-  var domain: js.UndefOr[ChartData] = js.native
+  var domain: js.UndefOr[ChartData] = js.undefined
   
   /** Where the legend of the pie chart should be drawn. */
-  var legendPosition: js.UndefOr[String] = js.native
+  var legendPosition: js.UndefOr[String] = js.undefined
   
   /** The size of the hole in the pie chart. */
-  var pieHole: js.UndefOr[Double] = js.native
+  var pieHole: js.UndefOr[Double] = js.undefined
   
   /** The data that covers the one and only series of the pie chart. */
-  var series: js.UndefOr[ChartData] = js.native
+  var series: js.UndefOr[ChartData] = js.undefined
   
   /** True if the pie is three dimensional. */
-  var threeDimensional: js.UndefOr[Boolean] = js.native
+  var threeDimensional: js.UndefOr[Boolean] = js.undefined
 }
 object PieChartSpec {
   

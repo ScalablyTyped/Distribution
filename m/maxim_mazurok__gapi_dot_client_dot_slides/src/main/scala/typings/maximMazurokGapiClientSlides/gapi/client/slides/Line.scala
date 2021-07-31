@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Line extends StObject {
   
   /** The category of the line. It matches the `category` specified in CreateLineRequest, and can be updated with UpdateLineCategoryRequest. */
-  var lineCategory: js.UndefOr[String] = js.native
+  var lineCategory: js.UndefOr[String] = js.undefined
   
   /** The properties of the line. */
-  var lineProperties: js.UndefOr[LineProperties] = js.native
+  var lineProperties: js.UndefOr[LineProperties] = js.undefined
   
   /** The type of the line. */
-  var lineType: js.UndefOr[String] = js.native
+  var lineType: js.UndefOr[String] = js.undefined
 }
 object Line {
   

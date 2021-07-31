@@ -3,15 +3,13 @@ package typings.awsLambda
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sesMod {
   
-  @js.native
   trait SESEvent extends StObject {
     
-    var Records: js.Array[SESEventRecord] = js.native
+    var Records: js.Array[SESEventRecord]
   }
   object SESEvent {
     
@@ -32,14 +30,13 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESEventRecord extends StObject {
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var ses: SESMessage = js.native
+    var ses: SESMessage
   }
   object SESEventRecord {
     
@@ -65,22 +62,21 @@ object sesMod {
   
   type SESHandler = Handler[SESEvent, Unit]
   
-  @js.native
   trait SESMail extends StObject {
     
-    var commonHeaders: SESMailCommonHeaders = js.native
+    var commonHeaders: SESMailCommonHeaders
     
-    var destination: js.Array[String] = js.native
+    var destination: js.Array[String]
     
-    var headers: js.Array[SESMailHeader] = js.native
+    var headers: js.Array[SESMailHeader]
     
-    var headersTruncated: Boolean = js.native
+    var headersTruncated: Boolean
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var source: String = js.native
+    var source: String
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object SESMail {
     
@@ -130,20 +126,19 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESMailCommonHeaders extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var from: js.Array[String] = js.native
+    var from: js.Array[String]
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var returnPath: String = js.native
+    var returnPath: String
     
-    var subject: String = js.native
+    var subject: String
     
-    var to: js.Array[String] = js.native
+    var to: js.Array[String]
   }
   object SESMailCommonHeaders {
     
@@ -189,12 +184,11 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESMailHeader extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object SESMailHeader {
     
@@ -215,12 +209,11 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESMessage extends StObject {
     
-    var mail: SESMail = js.native
+    var mail: SESMail
     
-    var receipt: SESReceipt = js.native
+    var receipt: SESReceipt
   }
   object SESMessage {
     
@@ -241,26 +234,25 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESReceipt extends StObject {
     
-    var action: SESReceiptAction = js.native
+    var action: SESReceiptAction
     
-    var dkimVerdict: SESReceiptStatus = js.native
+    var dkimVerdict: SESReceiptStatus
     
-    var dmarcVerdict: SESReceiptStatus = js.native
+    var dmarcVerdict: SESReceiptStatus
     
-    var processingTimeMillis: Double = js.native
+    var processingTimeMillis: Double
     
-    var recipients: js.Array[String] = js.native
+    var recipients: js.Array[String]
     
-    var spamVerdict: SESReceiptStatus = js.native
+    var spamVerdict: SESReceiptStatus
     
-    var spfVerdict: SESReceiptStatus = js.native
+    var spfVerdict: SESReceiptStatus
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var virusVerdict: SESReceiptStatus = js.native
+    var virusVerdict: SESReceiptStatus
   }
   object SESReceipt {
     
@@ -315,14 +307,13 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESReceiptAction extends StObject {
     
-    var functionArn: String = js.native
+    var functionArn: String
     
-    var invocationType: String = js.native
+    var invocationType: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SESReceiptAction {
     
@@ -347,10 +338,9 @@ object sesMod {
     }
   }
   
-  @js.native
   trait SESReceiptStatus extends StObject {
     
-    var status: String = js.native
+    var status: String
   }
   object SESReceiptStatus {
     

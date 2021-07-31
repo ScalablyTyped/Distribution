@@ -3,13 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.Storage.Provider.CachedFileUpdaterUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICachedFileUpdaterActivatedEventArgs extends IActivatedEventArgs {
+trait ICachedFileUpdaterActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var cachedFileUpdaterUI: CachedFileUpdaterUI = js.native
+  var cachedFileUpdaterUI: CachedFileUpdaterUI
 }
 object ICachedFileUpdaterActivatedEventArgs {
   

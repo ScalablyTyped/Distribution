@@ -5,24 +5,23 @@ import typings.reactNativeModal.anon.From
 import typings.reactNativeModal.typesMod.Animations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("react-native-modal/dist/utils", "buildAnimations")
+  @JSImport("react-native-modal/dist/utils", JSImport.Namespace)
   @js.native
-  def buildAnimations(hasAnimationInAnimationOut: AnimationOut): Animations = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-modal/dist/utils", "initializeAnimations")
-  @js.native
-  def initializeAnimations(): Unit = js.native
+  @scala.inline
+  def buildAnimations(hasAnimationInAnimationOut: AnimationOut): Animations = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAnimations")(hasAnimationInAnimationOut.asInstanceOf[js.Any]).asInstanceOf[Animations]
   
-  @JSImport("react-native-modal/dist/utils", "makeSlideTranslation")
-  @js.native
-  def makeSlideTranslation(translationType: String, fromValue: Double, toValue: Double): From = js.native
+  @scala.inline
+  def initializeAnimations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAnimations")().asInstanceOf[Unit]
   
-  @JSImport("react-native-modal/dist/utils", "reversePercentage")
-  @js.native
-  def reversePercentage(x: Double): Double = js.native
+  @scala.inline
+  def makeSlideTranslation(translationType: String, fromValue: Double, toValue: Double): From = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSlideTranslation")(translationType.asInstanceOf[js.Any], fromValue.asInstanceOf[js.Any], toValue.asInstanceOf[js.Any])).asInstanceOf[From]
+  
+  @scala.inline
+  def reversePercentage(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reversePercentage")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

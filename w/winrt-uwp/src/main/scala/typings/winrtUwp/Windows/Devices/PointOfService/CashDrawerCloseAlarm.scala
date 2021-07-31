@@ -7,16 +7,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.alarmtimeoutexpired
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The cash drawer close alarm. Parameter defaults are provided, however the user can update them as appropriate. */
 @js.native
 trait CashDrawerCloseAlarm extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_alarmtimeoutexpired(`type`: alarmtimeoutexpired, listener: TypedEventHandler[CashDrawerCloseAlarm, _]): Unit = js.native
+  def addEventListener_alarmtimeoutexpired(`type`: alarmtimeoutexpired, listener: TypedEventHandler[CashDrawerCloseAlarm, js.Any]): Unit = js.native
   
   /** Gets or sets the alarm timeout for the cash drawer close alarm. */
   var alarmTimeout: Double = js.native
@@ -31,14 +30,14 @@ trait CashDrawerCloseAlarm extends StObject {
   var beepFrequency: Double = js.native
   
   /** Event allowing the app to be notified if the alarm timeout has been triggered. */
-  def onalarmtimeoutexpired(ev: js.Any with WinRTEvent[CashDrawerCloseAlarm]): Unit = js.native
+  def onalarmtimeoutexpired(ev: js.Any & WinRTEvent[CashDrawerCloseAlarm]): Unit = js.native
   /** Event allowing the app to be notified if the alarm timeout has been triggered. */
   @JSName("onalarmtimeoutexpired")
-  var onalarmtimeoutexpired_Original: TypedEventHandler[CashDrawerCloseAlarm, _] = js.native
+  var onalarmtimeoutexpired_Original: TypedEventHandler[CashDrawerCloseAlarm, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_alarmtimeoutexpired(`type`: alarmtimeoutexpired, listener: TypedEventHandler[CashDrawerCloseAlarm, _]): Unit = js.native
+  def removeEventListener_alarmtimeoutexpired(`type`: alarmtimeoutexpired, listener: TypedEventHandler[CashDrawerCloseAlarm, js.Any]): Unit = js.native
   
   /**
     * Starts the alarm countdown, returning an awaitable object that completes when the cash drawer is closed.

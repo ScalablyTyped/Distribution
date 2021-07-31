@@ -4,33 +4,31 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerTypesMod {
   
-  @js.native
   trait PickerProps extends StObject {
     
-    var defaultSelectedValue: js.UndefOr[js.Any] = js.native
+    var defaultSelectedValue: js.UndefOr[js.Any] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var indicatorClassName: js.UndefOr[String] = js.native
+    var indicatorClassName: js.UndefOr[String] = js.undefined
     
-    var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var noAnimate: js.UndefOr[Boolean] = js.native
+    var noAnimate: js.UndefOr[Boolean] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onScrollChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var selectedValue: js.UndefOr[js.Any] = js.native
+    var selectedValue: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object PickerProps {
     

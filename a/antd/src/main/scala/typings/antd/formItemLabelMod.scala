@@ -11,7 +11,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formItemLabelMod extends Shortcut {
@@ -20,22 +19,21 @@ object formItemLabelMod extends Shortcut {
   @js.native
   val default: FC[FormItemLabelPropsrequire] = js.native
   
-  @js.native
   trait FormItemLabelProps extends StObject {
     
-    var colon: js.UndefOr[Boolean] = js.native
+    var colon: js.UndefOr[Boolean] = js.undefined
     
-    var htmlFor: js.UndefOr[String] = js.native
+    var htmlFor: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var labelAlign: js.UndefOr[FormLabelAlign] = js.native
+    var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
     
-    var labelCol: js.UndefOr[ColProps] = js.native
+    var labelCol: js.UndefOr[ColProps] = js.undefined
     
-    var requiredMark: js.UndefOr[RequiredMark] = js.native
+    var requiredMark: js.UndefOr[RequiredMark] = js.undefined
     
-    var tooltip: js.UndefOr[LabelTooltipType] = js.native
+    var tooltip: js.UndefOr[LabelTooltipType] = js.undefined
   }
   object FormItemLabelProps {
     
@@ -94,7 +92,7 @@ object formItemLabelMod extends Shortcut {
   
   type LabelTooltipType = WrapperTooltipProps | ReactNode
   
-  type WrapperTooltipProps = TooltipProps with Icon
+  type WrapperTooltipProps = TooltipProps & Icon
   
   type _To = FC[FormItemLabelPropsrequire]
   

@@ -3,7 +3,6 @@ package typings.fancybox
 import typings.fancybox.anon.Left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,19 +32,19 @@ trait FancyBoxJQueryMethods extends StObject {
   var isMobile: Boolean = js.native
   
   def open(items: String): FancyBoxInstance = js.native
-  def open(items: String, opts: js.UndefOr[scala.Nothing], index: Double): FancyBoxInstance = js.native
+  def open(items: String, opts: Unit, index: Double): FancyBoxInstance = js.native
   def open(items: String, opts: FancyBoxOptions): FancyBoxInstance = js.native
   def open(items: String, opts: FancyBoxOptions, index: Double): FancyBoxInstance = js.native
   def open(items: js.Array[FancyBoxGroupItem]): FancyBoxInstance = js.native
-  def open(items: js.Array[FancyBoxGroupItem], opts: js.UndefOr[scala.Nothing], index: Double): FancyBoxInstance = js.native
+  def open(items: js.Array[FancyBoxGroupItem], opts: Unit, index: Double): FancyBoxInstance = js.native
   def open(items: js.Array[FancyBoxGroupItem], opts: FancyBoxOptions): FancyBoxInstance = js.native
   def open(items: js.Array[FancyBoxGroupItem], opts: FancyBoxOptions, index: Double): FancyBoxInstance = js.native
   def open(items: FancyBoxGroupItem): FancyBoxInstance = js.native
-  def open(items: FancyBoxGroupItem, opts: js.UndefOr[scala.Nothing], index: Double): FancyBoxInstance = js.native
+  def open(items: FancyBoxGroupItem, opts: Unit, index: Double): FancyBoxInstance = js.native
   def open(items: FancyBoxGroupItem, opts: FancyBoxOptions): FancyBoxInstance = js.native
   def open(items: FancyBoxGroupItem, opts: FancyBoxOptions, index: Double): FancyBoxInstance = js.native
   def open(items: JQuery): FancyBoxInstance = js.native
-  def open(items: JQuery, opts: js.UndefOr[scala.Nothing], index: Double): FancyBoxInstance = js.native
+  def open(items: JQuery, opts: Unit, index: Double): FancyBoxInstance = js.native
   def open(items: JQuery, opts: FancyBoxOptions): FancyBoxInstance = js.native
   def open(items: JQuery, opts: FancyBoxOptions, index: Double): FancyBoxInstance = js.native
   

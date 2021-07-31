@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeAction extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait CodeAction extends StObject {
     * provides a edit and a command, first the edit is
     * executed and then the command.
     */
-  var command: js.UndefOr[Command] = js.native
+  var command: js.UndefOr[Command] = js.undefined
   
   /**
     * The diagnostics that this code action resolves.
     */
-  var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
+  var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
   
   /**
     * The workspace edit this code action performs.
     */
-  var edit: js.UndefOr[WorkspaceEdit] = js.native
+  var edit: js.UndefOr[WorkspaceEdit] = js.undefined
   
   /**
     * Marks this as a preferred action. Preferred actions are used by the `auto fix` command and can be targeted
@@ -34,19 +32,19 @@ trait CodeAction extends StObject {
     *
     * @since 3.15.0
     */
-  var isPreferred: js.UndefOr[Boolean] = js.native
+  var isPreferred: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The kind of the code action.
     *
     * Used to filter code actions.
     */
-  var kind: js.UndefOr[CodeActionKind] = js.native
+  var kind: js.UndefOr[CodeActionKind] = js.undefined
   
   /**
     * A short, human-readable, title for this code action.
     */
-  var title: String = js.native
+  var title: String
 }
 object CodeAction {
   
@@ -56,36 +54,35 @@ object CodeAction {
     __obj.asInstanceOf[CodeAction]
   }
   
-  /**
-    * Creates a new code action.
-    *
-    * @param title The title of the code action.
-    * @param command The command to execute.
-    * @param kind The kind of the code action.
-    */
-  @JSImport("vscode-languageserver-types", "CodeAction.create")
+  @JSImport("vscode-languageserver-types", "CodeAction")
   @js.native
-  def create(title: String, command: Command): CodeAction = js.native
-  @JSImport("vscode-languageserver-types", "CodeAction.create")
-  @js.native
-  def create(title: String, command: Command, kind: CodeActionKind): CodeAction = js.native
-  /**
-    * Creates a new code action.
-    *
-    * @param title The title of the code action.
-    * @param command The command to execute.
-    * @param kind The kind of the code action.
-    */
-  @JSImport("vscode-languageserver-types", "CodeAction.create")
-  @js.native
-  def create(title: String, edit: WorkspaceEdit): CodeAction = js.native
-  @JSImport("vscode-languageserver-types", "CodeAction.create")
-  @js.native
-  def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vscode-languageserver-types", "CodeAction.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = js.native
+  /**
+    * Creates a new code action.
+    *
+    * @param title The title of the code action.
+    * @param command The command to execute.
+    * @param kind The kind of the code action.
+    */
+  @scala.inline
+  def create(title: String, command: Command): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  @scala.inline
+  def create(title: String, command: Command, kind: CodeActionKind): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  /**
+    * Creates a new code action.
+    *
+    * @param title The title of the code action.
+    * @param command The command to execute.
+    * @param kind The kind of the code action.
+    */
+  @scala.inline
+  def create(title: String, edit: WorkspaceEdit): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  @scala.inline
+  def create(title: String, edit: WorkspaceEdit, kind: CodeActionKind): CodeAction = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(title.asInstanceOf[js.Any], edit.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[CodeAction]
+  
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
   
   @scala.inline
   implicit class CodeActionMutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {

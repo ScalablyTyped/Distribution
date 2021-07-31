@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsUpdateScheduledInstall extends WindowsUpdateInstallScheduleType {
+trait WindowsUpdateScheduledInstall
+  extends StObject
+     with WindowsUpdateInstallScheduleType {
   
   /**
     * Scheduled Install Day in week. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday,
     * thursday, friday, saturday.
     */
-  var scheduledInstallDay: js.UndefOr[WeeklySchedule] = js.native
+  var scheduledInstallDay: js.UndefOr[WeeklySchedule] = js.undefined
   
   // Scheduled Install Time during day
-  var scheduledInstallTime: js.UndefOr[String] = js.native
+  var scheduledInstallTime: js.UndefOr[String] = js.undefined
 }
 object WindowsUpdateScheduledInstall {
   

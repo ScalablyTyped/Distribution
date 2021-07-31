@@ -2,30 +2,28 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLScreen extends StObject {
   
   @JSName("MSHTML.IHTMLScreen_typekey")
-  var MSHTMLDotIHTMLScreen_typekey: IHTMLScreen = js.native
+  var MSHTMLDotIHTMLScreen_typekey: IHTMLScreen
   
-  val availHeight: Double = js.native
+  val availHeight: Double
   
-  val availWidth: Double = js.native
+  val availWidth: Double
   
-  var bufferDepth: Double = js.native
+  var bufferDepth: Double
   
-  val colorDepth: Double = js.native
+  val colorDepth: Double
   
-  val fontSmoothingEnabled: Boolean = js.native
+  val fontSmoothingEnabled: Boolean
   
-  val height: Double = js.native
+  val height: Double
   
-  var updateInterval: Double = js.native
+  var updateInterval: Double
   
-  val width: Double = js.native
+  val width: Double
 }
 object IHTMLScreen {
   

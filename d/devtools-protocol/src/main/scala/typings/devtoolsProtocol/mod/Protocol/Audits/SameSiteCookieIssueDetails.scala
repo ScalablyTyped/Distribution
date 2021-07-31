@@ -2,29 +2,27 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SameSiteCookieIssueDetails extends StObject {
   
-  var cookie: AffectedCookie = js.native
+  var cookie: AffectedCookie
   
-  var cookieExclusionReasons: js.Array[SameSiteCookieExclusionReason] = js.native
+  var cookieExclusionReasons: js.Array[SameSiteCookieExclusionReason]
   
-  var cookieUrl: js.UndefOr[String] = js.native
+  var cookieUrl: js.UndefOr[String] = js.undefined
   
-  var cookieWarningReasons: js.Array[SameSiteCookieWarningReason] = js.native
+  var cookieWarningReasons: js.Array[SameSiteCookieWarningReason]
   
   /**
     * Optionally identifies the site-for-cookies and the cookie url, which
     * may be used by the front-end as additional context.
     */
-  var operation: SameSiteCookieOperation = js.native
+  var operation: SameSiteCookieOperation
   
-  var request: js.UndefOr[AffectedRequest] = js.native
+  var request: js.UndefOr[AffectedRequest] = js.undefined
   
-  var siteForCookies: js.UndefOr[String] = js.native
+  var siteForCookies: js.UndefOr[String] = js.undefined
 }
 object SameSiteCookieIssueDetails {
   

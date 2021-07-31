@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MirrorConfig extends StObject {
   
   /** ID of the SSH deploy key at the other hosting service. Removing this key from the other service would deauthorize Google Cloud Source Repositories from mirroring. */
-  var deployKeyId: js.UndefOr[String] = js.native
+  var deployKeyId: js.UndefOr[String] = js.undefined
   
   /** URL of the main repository at the other hosting service. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the webhook listening to updates to trigger mirroring. Removing this webhook from the other hosting service will stop Google Cloud Source Repositories from receiving
     * notifications, and thereby disabling mirroring.
     */
-  var webhookId: js.UndefOr[String] = js.native
+  var webhookId: js.UndefOr[String] = js.undefined
 }
 object MirrorConfig {
   

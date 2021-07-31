@@ -2,17 +2,15 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: String = js.native
+  var bottom: String
   
-  var left: String = js.native
+  var left: String
   
-  var top: Double = js.native
+  var top: Double
 }
 object Bottom {
   

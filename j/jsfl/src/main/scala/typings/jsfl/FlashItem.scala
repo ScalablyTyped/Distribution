@@ -2,59 +2,58 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.jsfl.FlashBitmapItem because var conflicts: compressionType, fileLastModifiedDate, originalCompressionType, sourceFileExists, sourceFileIsCurrent, sourceFilePath. Inlined allowSmoothing, useDeblocking, useImportedJPEGQuality
-- typings.jsfl.FlashVideoItem because var conflicts: fileLastModifiedDate, sourceFileExists, sourceFilePath. Inlined exportToFLV, sourceFileIsCurrent, videoType */ @js.native
-trait FlashItem
-  extends FlashSymbolItem
+- typings.jsfl.FlashVideoItem because var conflicts: fileLastModifiedDate, sourceFileExists, sourceFilePath. Inlined exportToFLV, sourceFileIsCurrent, videoType */ trait FlashItem
+  extends StObject
+     with FlashSymbolItem
      with FlashFolderItem
      with FlashFontItem
      with FlashSoundItem {
   
-  def addData(name: String, `type`: String, data: js.Any): Unit = js.native
+  def addData(name: String, `type`: String, data: js.Any): Unit
   
-  var allowSmoothing: Boolean = js.native
+  var allowSmoothing: Boolean
   
-  def exportToFLV(fileURI: String): Boolean = js.native
+  def exportToFLV(fileURI: String): Boolean
   
-  def getData(name: String): js.Any = js.native
+  def getData(name: String): js.Any
   
-  def hasData(name: String): Boolean = js.native
+  def hasData(name: String): Boolean
   
   /** Read-only; a string that specifies the type of element.  "undefined", "component", "movie clip", "graphic", "button", "folder", "font", "sound", "bitmap", "compiled clip", "screen", or "video" */
-  var itemType: String = js.native
+  var itemType: String
   
-  var linkageBaseClass: String = js.native
+  var linkageBaseClass: String
   
-  var linkageClassName: String = js.native
+  var linkageClassName: String
   
-  var linkageExportForAS: Boolean = js.native
+  var linkageExportForAS: Boolean
   
-  var linkageExportForRS: Boolean = js.native
+  var linkageExportForRS: Boolean
   
-  var linkageExportInFirstFrame: Boolean = js.native
+  var linkageExportInFirstFrame: Boolean
   
-  var linkageIdentifier: String = js.native
+  var linkageIdentifier: String
   
-  var linkageImportForRS: Boolean = js.native
+  var linkageImportForRS: Boolean
   
-  var linkageURL: String = js.native
+  var linkageURL: String
   
   /** A string that specifies the name of the library item, which includes the folder structure. */
-  var name: String = js.native
+  var name: String
   
-  def removeData(name: String): Unit = js.native
+  def removeData(name: String): Unit
   
-  var sourceFileIsCurrent: Boolean = js.native
+  var sourceFileIsCurrent: Boolean
   
-  var useDeblocking: Boolean = js.native
+  var useDeblocking: Boolean
   
-  var useImportedJPEGQuality: Boolean = js.native
+  var useImportedJPEGQuality: Boolean
   
-  var videoType: String = js.native
+  var videoType: String
 }
 object FlashItem {
   

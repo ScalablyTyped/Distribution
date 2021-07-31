@@ -3,16 +3,14 @@ package typings.nodeSnap7.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiVarsReadResult extends StObject {
   
   //Error Code
-  var Data: Buffer = js.native
+  var Data: Buffer
   
-  var Result: Double = js.native
+  var Result: Double
 }
 object MultiVarsReadResult {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLexiconInput extends StObject {
   
   /**
     * Name of the lexicon.
     */
-  var Name: LexiconName = js.native
+  var Name: LexiconName
 }
 object GetLexiconInput {
   

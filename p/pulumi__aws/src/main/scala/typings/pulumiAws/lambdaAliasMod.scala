@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaAliasMod {
@@ -64,6 +63,10 @@ object lambdaAliasMod {
   /* static members */
   object Alias {
     
+    @JSImport("@pulumi/aws/lambda/alias", "Alias")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Alias resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -73,55 +76,49 @@ object lambdaAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Alias = js.native
-    @JSImport("@pulumi/aws/lambda/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Alias = js.native
-    @JSImport("@pulumi/aws/lambda/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AliasState): Alias = js.native
-    @JSImport("@pulumi/aws/lambda/alias", "Alias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AliasState): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
     
     /**
       * Returns true if the given object is an instance of Alias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/alias", "Alias.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/alias.Alias */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/alias.Alias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/alias.Alias */ Boolean]
   }
   
-  @js.native
   trait AliasArgs extends StObject {
     
     /**
       * Description of the alias.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Lambda Function name or ARN.
       */
-    val functionName: Input[String] = js.native
+    val functionName: Input[String]
     
     /**
       * Lambda function version for which you are creating the alias. Pattern: `(\$LATEST|[0-9]+)`.
       */
-    val functionVersion: Input[String] = js.native
+    val functionVersion: Input[String]
     
     /**
       * Name for the alias you are creating. Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_]+)`
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Lambda alias' route configuration settings. Fields documented below
       */
-    val routingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.AliasRoutingConfig]] = js.native
+    val routingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.AliasRoutingConfig]] = js.undefined
   }
   object AliasArgs {
     
@@ -160,43 +157,42 @@ object lambdaAliasMod {
     }
   }
   
-  @js.native
   trait AliasState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) identifying your Lambda function alias.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the alias.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Lambda Function name or ARN.
       */
-    val functionName: js.UndefOr[Input[String]] = js.native
+    val functionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Lambda function version for which you are creating the alias. Pattern: `(\$LATEST|[0-9]+)`.
       */
-    val functionVersion: js.UndefOr[Input[String]] = js.native
+    val functionVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN to be used for invoking Lambda Function from API Gateway - to be used in `aws.apigateway.Integration`'s `uri`
       */
-    val invokeArn: js.UndefOr[Input[String]] = js.native
+    val invokeArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name for the alias you are creating. Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_]+)`
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Lambda alias' route configuration settings. Fields documented below
       */
-    val routingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.AliasRoutingConfig]] = js.native
+    val routingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.AliasRoutingConfig]] = js.undefined
   }
   object AliasState {
     

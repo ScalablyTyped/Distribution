@@ -2,26 +2,24 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevToolsConfig[Instance, TextInstance] extends StObject {
   
-  var bundleType: BundleType = js.native
+  var bundleType: BundleType
   
   // Note: this actually *does* depend on Fiber internal fields.
   // Used by "inspect clicked DOM element" in React DevTools.
-  var findFiberByHostInstance: js.UndefOr[js.Function1[/* instance */ Instance | TextInstance, Fiber]] = js.native
+  var findFiberByHostInstance: js.UndefOr[js.Function1[/* instance */ Instance | TextInstance, Fiber]] = js.undefined
   
   // Used by RN in-app inspector.
   // This API is unfortunately RN-specific.
   // TODO: Change it to accept Fiber instead and type it properly.
-  var getInspectorDataForViewTag: js.UndefOr[js.Function1[/* tag */ Double, js.Object]] = js.native
+  var getInspectorDataForViewTag: js.UndefOr[js.Function1[/* tag */ Double, js.Object]] = js.undefined
   
-  var rendererPackageName: String = js.native
+  var rendererPackageName: String
   
-  var version: String = js.native
+  var version: String
 }
 object DevToolsConfig {
   
@@ -32,7 +30,7 @@ object DevToolsConfig {
   }
   
   @scala.inline
-  implicit class DevToolsConfigMutableBuilder[Self <: DevToolsConfig[_, _], Instance, TextInstance] (val x: Self with (DevToolsConfig[Instance, TextInstance])) extends AnyVal {
+  implicit class DevToolsConfigMutableBuilder[Self <: DevToolsConfig[?, ?], Instance, TextInstance] (val x: Self & (DevToolsConfig[Instance, TextInstance])) extends AnyVal {
     
     @scala.inline
     def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])

@@ -7,34 +7,34 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconRotatorMod {
   
   @JSImport("@react-md/icon/types/IconRotator", "IconRotator")
   @js.native
-  val IconRotator: ForwardRefExoticComponent[IconRotatorProps with RefAttributes[HTMLSpanElement]] = js.native
+  val IconRotator: ForwardRefExoticComponent[IconRotatorProps & RefAttributes[HTMLSpanElement]] = js.native
   
-  @js.native
-  trait IconRotatorBaseProps extends HTMLAttributes[HTMLSpanElement] {
+  trait IconRotatorBaseProps
+    extends StObject
+       with HTMLAttributes[HTMLSpanElement] {
     
     /**
       * Boolean if the rotation should be animated instead of static.
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the child icon should be "forcefully" wrapped in a `<span>`
       * element. This should be enabled if you have a custom icon that does not
       * pass the `className` prop down.
       */
-    var forceIconWrap: js.UndefOr[Boolean] = js.native
+    var forceIconWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the icon is currently rotated.
       */
-    var rotated: Boolean = js.native
+    var rotated: Boolean
   }
   object IconRotatorBaseProps {
     
@@ -64,8 +64,9 @@ object iconRotatorMod {
     }
   }
   
-  @js.native
-  trait IconRotatorProps extends IconRotatorBaseProps {
+  trait IconRotatorProps
+    extends StObject
+       with IconRotatorBaseProps {
     
     /**
       * The icon that should be rotated. If this is a valid React Element, the
@@ -73,7 +74,7 @@ object iconRotatorMod {
       * wrapped in a span with the correct class names applied.
       */
     @JSName("children")
-    var children_IconRotatorProps: ReactNode = js.native
+    var children_IconRotatorProps: ReactNode
   }
   object IconRotatorProps {
     

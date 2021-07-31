@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resumable extends StObject {
   
-  var resumable: js.UndefOr[Multipart] = js.native
+  var resumable: js.UndefOr[Multipart] = js.undefined
   
-  var simple: js.UndefOr[Multipart] = js.native
+  var simple: js.UndefOr[Multipart] = js.undefined
 }
 object Resumable {
   

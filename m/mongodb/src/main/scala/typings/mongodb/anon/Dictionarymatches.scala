@@ -2,39 +2,37 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictionarymatches extends StObject {
   
-  var `dictionary matches`: Double = js.native
+  var `dictionary matches`: Double
   
-  var `fast-path pages deleted`: Double = js.native
+  var `fast-path pages deleted`: Double
   
-  var `internal page key bytes discarded using suffix compression`: Double = js.native
+  var `internal page key bytes discarded using suffix compression`: Double
   
-  var `internal page multi-block writes`: Double = js.native
+  var `internal page multi-block writes`: Double
   
-  var `internal-page overflow keys`: Double = js.native
+  var `internal-page overflow keys`: Double
   
-  var `leaf page key bytes discarded using prefix compression`: Double = js.native
+  var `leaf page key bytes discarded using prefix compression`: Double
   
-  var `leaf page multi-block writes`: Double = js.native
+  var `leaf page multi-block writes`: Double
   
-  var `leaf-page overflow keys`: Double = js.native
+  var `leaf-page overflow keys`: Double
   
-  var `maximum blocks required for a page`: Double = js.native
+  var `maximum blocks required for a page`: Double
   
-  var `overflow values written`: Double = js.native
+  var `overflow values written`: Double
   
-  var `page checksum matches`: Double = js.native
+  var `page checksum matches`: Double
   
-  var `page reconciliation calls`: Double = js.native
+  var `page reconciliation calls`: Double
   
-  var `page reconciliation calls for eviction`: Double = js.native
+  var `page reconciliation calls for eviction`: Double
   
-  var `pages deleted`: Double = js.native
+  var `pages deleted`: Double
 }
 object Dictionarymatches {
   

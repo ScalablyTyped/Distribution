@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlApplicationConfiguration extends StObject {
   
   /**
     * The array of Input objects describing the input streams used by the application.
     */
-  var Inputs: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.Inputs] = js.native
+  var Inputs: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.Inputs] = js.undefined
   
   /**
     * The array of Output objects describing the destination streams used by the application.
     */
-  var Outputs: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.Outputs] = js.native
+  var Outputs: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.Outputs] = js.undefined
   
   /**
     * The array of ReferenceDataSource objects describing the reference data sources used by the application.
     */
-  var ReferenceDataSources: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSources] = js.native
+  var ReferenceDataSources: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSources] = js.undefined
 }
 object SqlApplicationConfiguration {
   

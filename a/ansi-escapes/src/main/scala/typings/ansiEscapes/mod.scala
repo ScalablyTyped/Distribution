@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,34 +50,28 @@ object mod {
   	Move cursor backward a specific amount of rows.
   	@param count - Count of rows to move backward. Default is `1`.
   	*/
-  @JSImport("ansi-escapes", "cursorBackward")
-  @js.native
-  def cursorBackward(): String = js.native
-  @JSImport("ansi-escapes", "cursorBackward")
-  @js.native
-  def cursorBackward(count: Double): String = js.native
+  @scala.inline
+  def cursorBackward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorBackward")().asInstanceOf[String]
+  @scala.inline
+  def cursorBackward(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorBackward")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Move cursor down a specific amount of rows.
   	@param count - Count of rows to move down. Default is `1`.
   	*/
-  @JSImport("ansi-escapes", "cursorDown")
-  @js.native
-  def cursorDown(): String = js.native
-  @JSImport("ansi-escapes", "cursorDown")
-  @js.native
-  def cursorDown(count: Double): String = js.native
+  @scala.inline
+  def cursorDown(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorDown")().asInstanceOf[String]
+  @scala.inline
+  def cursorDown(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorDown")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Move cursor forward a specific amount of rows.
   	@param count - Count of rows to move forward. Default is `1`.
   	*/
-  @JSImport("ansi-escapes", "cursorForward")
-  @js.native
-  def cursorForward(): String = js.native
-  @JSImport("ansi-escapes", "cursorForward")
-  @js.native
-  def cursorForward(count: Double): String = js.native
+  @scala.inline
+  def cursorForward(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorForward")().asInstanceOf[String]
+  @scala.inline
+  def cursorForward(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorForward")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Get cursor position.
@@ -110,12 +103,10 @@ object mod {
   /**
   	Set the position of the cursor relative to its current position.
   	*/
-  @JSImport("ansi-escapes", "cursorMove")
-  @js.native
-  def cursorMove(x: Double): String = js.native
-  @JSImport("ansi-escapes", "cursorMove")
-  @js.native
-  def cursorMove(x: Double, y: Double): String = js.native
+  @scala.inline
+  def cursorMove(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorMove")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def cursorMove(x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorMove")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   	Move cursor to the next line.
@@ -165,23 +156,19 @@ object mod {
   /**
   	Set the absolute position of the cursor. `x0` `y0` is the top left of the screen.
   	*/
-  @JSImport("ansi-escapes", "cursorTo")
-  @js.native
-  def cursorTo(x: Double): String = js.native
-  @JSImport("ansi-escapes", "cursorTo")
-  @js.native
-  def cursorTo(x: Double, y: Double): String = js.native
+  @scala.inline
+  def cursorTo(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def cursorTo(x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   	Move cursor up a specific amount of rows.
   	@param count - Count of rows to move up. Default is `1`.
   	*/
-  @JSImport("ansi-escapes", "cursorUp")
-  @js.native
-  def cursorUp(): String = js.native
-  @JSImport("ansi-escapes", "cursorUp")
-  @js.native
-  def cursorUp(count: Double): String = js.native
+  @scala.inline
+  def cursorUp(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorUp")().asInstanceOf[String]
+  @scala.inline
+  def cursorUp(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cursorUp")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ansiEscapes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
@@ -217,9 +204,8 @@ object mod {
   	Erase from the current cursor position up the specified amount of rows.
   	@param count - Count of rows to erase.
   	*/
-  @JSImport("ansi-escapes", "eraseLines")
-  @js.native
-  def eraseLines(count: Double): String = js.native
+  @scala.inline
+  def eraseLines(count: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("eraseLines")(count.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
   	Erase the screen and move the cursor the top left position.
@@ -260,20 +246,17 @@ object mod {
   	See [term-img](https://github.com/sindresorhus/term-img) for a higher-level module.
   	@param buffer - Buffer of an image. Usually read in with `fs.readFile()`.
   	*/
-  @JSImport("ansi-escapes", "image")
-  @js.native
-  def image(buffer: Buffer): String = js.native
-  @JSImport("ansi-escapes", "image")
-  @js.native
-  def image(buffer: Buffer, options: ImageOptions): String = js.native
+  @scala.inline
+  def image(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def image(buffer: Buffer, options: ImageOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   	Create a clickable link.
   	[Supported terminals.](https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda) Use [`supports-hyperlinks`](https://github.com/jamestalmage/supports-hyperlinks) to detect link support.
   	*/
-  @JSImport("ansi-escapes", "link")
-  @js.native
-  def link(text: String, url: String): String = js.native
+  @scala.inline
+  def link(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
   	Scroll display down one line.
@@ -293,34 +276,33 @@ object mod {
   @scala.inline
   def scrollUp_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollUp")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AnnotationOptions extends StObject {
     
     /**
     		Create a "hidden" annotation.
     		Annotations created this way can be shown using the "Show Annotations" iTerm command.
     		*/
-    val isHidden: js.UndefOr[Boolean] = js.native
+    val isHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Nonzero number of columns to annotate.
     		Default: The remainder of the line.
     		*/
-    val length: js.UndefOr[Double] = js.native
+    val length: js.UndefOr[Double] = js.undefined
     
     /**
     		Starting X coordinate.
     		Must be used with `y` and `length`.
     		Default: The cursor position
     		*/
-    val x: js.UndefOr[Double] = js.native
+    val x: js.UndefOr[Double] = js.undefined
     
     /**
     		Starting Y coordinate.
     		Must be used with `x` and `length`.
     		Default: Cursor position.
     		*/
-    val y: js.UndefOr[Double] = js.native
+    val y: js.UndefOr[Double] = js.undefined
   }
   object AnnotationOptions {
     
@@ -359,7 +341,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageOptions extends StObject {
     
     /**
@@ -369,9 +350,9 @@ object mod {
     		- `N%`: N percent of the session's width or height.
     		- `auto`: The image's inherent size will be used to determine an appropriate dimension.
     		*/
-    val height: js.UndefOr[LiteralUnion[auto, Double | String]] = js.native
+    val height: js.UndefOr[LiteralUnion[auto, Double | String]] = js.undefined
     
-    val preserveAspectRatio: js.UndefOr[Boolean] = js.native
+    val preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The width is given as a number followed by a unit, or the word `'auto'`.
@@ -380,7 +361,7 @@ object mod {
     		- `N%`: N percent of the session's width or height.
     		- `auto`: The image's inherent size will be used to determine an appropriate dimension.
     		*/
-    val width: js.UndefOr[LiteralUnion[auto, Double | String]] = js.native
+    val width: js.UndefOr[LiteralUnion[auto, Double | String]] = js.undefined
   }
   object ImageOptions {
     

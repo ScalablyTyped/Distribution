@@ -2,16 +2,14 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerRex extends StObject {
   
-  def OnAsfEncoderEvent(erorCode: js.Any, bstrErrorDesc: js.Any): Unit = js.native
+  def OnAsfEncoderEvent(erorCode: js.Any, bstrErrorDesc: js.Any): Unit
   
   @JSName("PowerPoint.PowerRex_typekey")
-  var PowerPointDotPowerRex_typekey: PowerRex = js.native
+  var PowerPointDotPowerRex_typekey: PowerRex
 }
 object PowerRex {
   

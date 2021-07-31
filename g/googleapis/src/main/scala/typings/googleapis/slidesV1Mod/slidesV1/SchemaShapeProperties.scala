@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from a parent placeholder shape. Determining the rendered value of the
   * property depends on the corresponding property_state field value.
   */
-@js.native
 trait SchemaShapeProperties extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait SchemaShapeProperties extends StObject {
     * parent, the default alignment matches the alignment for new shapes
     * created in the Slides editor.
     */
-  var contentAlignment: js.UndefOr[String] = js.native
+  var contentAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * The hyperlink destination of the shape. If unset, there is no link. Links
     * are not inherited from parent placeholders.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * The outline of the shape. If unset, the outline is inherited from a
@@ -34,7 +32,7 @@ trait SchemaShapeProperties extends StObject {
     * default outline depends on the shape type, matching the defaults for new
     * shapes created in the Slides editor.
     */
-  var outline: js.UndefOr[SchemaOutline] = js.native
+  var outline: js.UndefOr[SchemaOutline] = js.undefined
   
   /**
     * The shadow properties of the shape. If unset, the shadow is inherited
@@ -42,7 +40,7 @@ trait SchemaShapeProperties extends StObject {
     * the default shadow matches the defaults for new shapes created in the
     * Slides editor. This property is read-only.
     */
-  var shadow: js.UndefOr[SchemaShadow] = js.native
+  var shadow: js.UndefOr[SchemaShadow] = js.undefined
   
   /**
     * The background fill of the shape. If unset, the background fill is
@@ -50,7 +48,7 @@ trait SchemaShapeProperties extends StObject {
     * parent, then the default background fill depends on the shape type,
     * matching the defaults for new shapes created in the Slides editor.
     */
-  var shapeBackgroundFill: js.UndefOr[SchemaShapeBackgroundFill] = js.native
+  var shapeBackgroundFill: js.UndefOr[SchemaShapeBackgroundFill] = js.undefined
 }
 object SchemaShapeProperties {
   

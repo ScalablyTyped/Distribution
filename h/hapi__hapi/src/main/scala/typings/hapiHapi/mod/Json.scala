@@ -2,7 +2,6 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Json {
@@ -10,20 +9,19 @@ object Json {
   /**
     * For context [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsjson)
     */
-  @js.native
   trait StringifyArguments extends StObject {
     
     /* calls Hoek.jsonEscape() after conversion to JSON string. Defaults to false. */
-    var escape: js.UndefOr[Boolean] = js.native
+    var escape: js.UndefOr[Boolean] = js.undefined
     
     /** the replacer function or array. Defaults to no action. */
-    var replacer: js.UndefOr[StringifyReplacer] = js.native
+    var replacer: js.UndefOr[StringifyReplacer] = js.undefined
     
     /** number of spaces to indent nested object keys. Defaults to no indentation. */
-    var space: js.UndefOr[StringifySpace] = js.native
+    var space: js.UndefOr[StringifySpace] = js.undefined
     
     /* string suffix added after conversion to JSON string. Defaults to no suffix. */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object StringifyArguments {
     

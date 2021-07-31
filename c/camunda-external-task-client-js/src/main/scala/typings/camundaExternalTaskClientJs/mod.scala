@@ -1,11 +1,9 @@
 package typings.camundaExternalTaskClientJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.camundaExternalTaskClientJs.anon.Error
 import typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonsuccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -58,28 +56,27 @@ object mod {
   @js.native
   val logger: Logger_ = js.native
   
-  @js.native
   trait ClientConfig extends StObject {
     
-    var asyncResponseTimeout: js.UndefOr[Double] = js.native
+    var asyncResponseTimeout: js.UndefOr[Double] = js.undefined
     
-    var autoPoll: js.UndefOr[Boolean] = js.native
+    var autoPoll: js.UndefOr[Boolean] = js.undefined
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var interceptors: js.UndefOr[Interceptor | js.Array[Interceptor]] = js.native
+    var interceptors: js.UndefOr[Interceptor | js.Array[Interceptor]] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var lockDuration: js.UndefOr[Double] = js.native
+    var lockDuration: js.UndefOr[Double] = js.undefined
     
-    var maxParallelExecutions: js.UndefOr[Double] = js.native
+    var maxParallelExecutions: js.UndefOr[Double] = js.undefined
     
-    var maxTasks: js.UndefOr[Double] = js.native
+    var maxTasks: js.UndefOr[Double] = js.undefined
     
-    var use: js.UndefOr[Middleware | js.Array[Middleware]] = js.native
+    var use: js.UndefOr[Middleware | js.Array[Middleware]] = js.undefined
     
-    var workerId: js.UndefOr[String] = js.native
+    var workerId: js.UndefOr[String] = js.undefined
   }
   object ClientConfig {
     
@@ -199,16 +196,15 @@ object mod {
     def unlockColonerror: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror = "unlock:error".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unlockColonerror]
   }
   
-  @js.native
   trait HandleFailureOptions extends StObject {
     
-    var errorDetails: js.UndefOr[String] = js.native
+    var errorDetails: js.UndefOr[String] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retryTimeout: js.UndefOr[Double] = js.native
+    var retryTimeout: js.UndefOr[Double] = js.undefined
   }
   object HandleFailureOptions {
     
@@ -249,12 +245,11 @@ object mod {
   
   type Handler = js.Function1[/* args */ HandlerArgs, Unit]
   
-  @js.native
   trait HandlerArgs extends StObject {
     
-    var task: Task = js.native
+    var task: Task
     
-    var taskService: TaskService = js.native
+    var taskService: TaskService
   }
   object HandlerArgs {
     
@@ -277,7 +272,13 @@ object mod {
   
   type Interceptor = js.Function1[/* config */ js.Any, js.Any]
   
-  type Logger_ = Middleware with Error
+  @js.native
+  trait Logger_ extends Middleware {
+    
+    def error(text: String): Unit = js.native
+    
+    def success(text: String): Unit = js.native
+  }
   
   type Middleware = js.Function1[/* client */ Client, Unit]
   
@@ -295,28 +296,27 @@ object mod {
     def pollColonstop: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstop = "poll:stop".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonstop]
   }
   
-  @js.native
   trait SubscribeOptions extends StObject {
     
-    var businessKey: js.UndefOr[String] = js.native
+    var businessKey: js.UndefOr[String] = js.undefined
     
-    var lockDuration: js.UndefOr[Double] = js.native
+    var lockDuration: js.UndefOr[Double] = js.undefined
     
-    var processDefinitionId: js.UndefOr[String] = js.native
+    var processDefinitionId: js.UndefOr[String] = js.undefined
     
-    var processDefinitionIdIn: js.UndefOr[String] = js.native
+    var processDefinitionIdIn: js.UndefOr[String] = js.undefined
     
-    var processDefinitionKey: js.UndefOr[String] = js.native
+    var processDefinitionKey: js.UndefOr[String] = js.undefined
     
-    var processDefinitionKeyIn: js.UndefOr[String] = js.native
+    var processDefinitionKeyIn: js.UndefOr[String] = js.undefined
     
-    var processDefinitionVersionTag: js.UndefOr[String] = js.native
+    var processDefinitionVersionTag: js.UndefOr[String] = js.undefined
     
-    var tenantIdIn: js.UndefOr[js.Array[String]] = js.native
+    var tenantIdIn: js.UndefOr[js.Array[String]] = js.undefined
     
-    var variables: js.UndefOr[js.Array[_]] = js.native
+    var variables: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var withoutTenantId: js.UndefOr[Boolean] = js.native
+    var withoutTenantId: js.UndefOr[Boolean] = js.undefined
   }
   object SubscribeOptions {
     
@@ -381,7 +381,7 @@ object mod {
       def setTenantIdInVarargs(value: String*): Self = StObject.set(x, "tenantIdIn", js.Array(value :_*))
       
       @scala.inline
-      def setVariables(value: js.Array[_]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      def setVariables(value: js.Array[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
@@ -425,43 +425,42 @@ object mod {
   
   type SuccessWithTasksEvent = pollColonsuccess
   
-  @js.native
   trait Task extends StObject {
     
     // These are not guaranteed by package documentation, but are returned according to REST API docs
-    var activityId: js.UndefOr[String] = js.native
+    var activityId: js.UndefOr[String] = js.undefined
     
-    var activityInstanceId: js.UndefOr[String] = js.native
+    var activityInstanceId: js.UndefOr[String] = js.undefined
     
-    var businessKey: js.UndefOr[String] = js.native
+    var businessKey: js.UndefOr[String] = js.undefined
     
-    var errorDetails: js.UndefOr[String] = js.native
+    var errorDetails: js.UndefOr[String] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var executionId: js.UndefOr[String] = js.native
+    var executionId: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var lockExpirationTime: js.UndefOr[String] = js.native
+    var lockExpirationTime: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var processDefinitionId: js.UndefOr[String] = js.native
+    var processDefinitionId: js.UndefOr[String] = js.undefined
     
-    var processDefinitionKey: js.UndefOr[String] = js.native
+    var processDefinitionKey: js.UndefOr[String] = js.undefined
     
-    var processInstanceId: js.UndefOr[String] = js.native
+    var processInstanceId: js.UndefOr[String] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var tenantId: js.UndefOr[String] = js.native
+    var tenantId: js.UndefOr[String] = js.undefined
     
-    var topicName: js.UndefOr[String] = js.native
+    var topicName: js.UndefOr[String] = js.undefined
     
-    var variables: Variables = js.native
+    var variables: Variables
     
-    var workerId: js.UndefOr[String] = js.native
+    var workerId: js.UndefOr[String] = js.undefined
   }
   object Task {
     
@@ -579,16 +578,16 @@ object mod {
   trait TaskService extends StObject {
     
     def complete(task: Task): js.Promise[Unit] = js.native
-    def complete(task: Task, processVariables: js.UndefOr[scala.Nothing], localVariables: Variables): js.Promise[Unit] = js.native
+    def complete(task: Task, processVariables: Unit, localVariables: Variables): js.Promise[Unit] = js.native
     def complete(task: Task, processVariables: Variables): js.Promise[Unit] = js.native
     def complete(task: Task, processVariables: Variables, localVariables: Variables): js.Promise[Unit] = js.native
     
     def extendLock(task: Task, newDuration: Double): js.Promise[Unit] = js.native
     
     def handleBpmnError(task: Task, errorCode: String): js.Promise[Unit] = js.native
-    def handleBpmnError(task: Task, errorCode: String, errorMessage: js.UndefOr[scala.Nothing], variables: Variables): js.Promise[Unit] = js.native
     def handleBpmnError(task: Task, errorCode: String, errorMessage: String): js.Promise[Unit] = js.native
     def handleBpmnError(task: Task, errorCode: String, errorMessage: String, variables: Variables): js.Promise[Unit] = js.native
+    def handleBpmnError(task: Task, errorCode: String, errorMessage: Unit, variables: Variables): js.Promise[Unit] = js.native
     
     def handleFailure(task: Task): js.Promise[Unit] = js.native
     def handleFailure(task: Task, options: HandleFailureOptions): js.Promise[Unit] = js.native
@@ -610,10 +609,9 @@ object mod {
     def unsubscribe: typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unsubscribe = "unsubscribe".asInstanceOf[typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.unsubscribe]
   }
   
-  @js.native
   trait TopicSubscription extends StObject {
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object TopicSubscription {
     
@@ -631,14 +629,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TypedValue extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: Value = js.native
+    var value: Value
     
-    var valueInfo: js.Object = js.native
+    var valueInfo: js.Object
   }
   object TypedValue {
     

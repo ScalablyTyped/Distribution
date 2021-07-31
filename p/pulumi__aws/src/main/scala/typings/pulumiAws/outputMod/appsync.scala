@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appsync {
   
-  @js.native
   trait DataSourceDynamodbConfig extends StObject {
     
     /**
       * AWS region of Elasticsearch domain. Defaults to current region.
       */
-    var region: String = js.native
+    var region: String
     
     /**
       * Name of the DynamoDB table.
       */
-    var tableName: String = js.native
+    var tableName: String
     
     /**
       * Set to `true` to use Amazon Cognito credentials with this data source.
       */
-    var useCallerCredentials: js.UndefOr[Boolean] = js.native
+    var useCallerCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object DataSourceDynamodbConfig {
     
@@ -50,18 +48,17 @@ object appsync {
     }
   }
   
-  @js.native
   trait DataSourceElasticsearchConfig extends StObject {
     
     /**
       * HTTP URL.
       */
-    var endpoint: String = js.native
+    var endpoint: String
     
     /**
       * AWS region of Elasticsearch domain. Defaults to current region.
       */
-    var region: String = js.native
+    var region: String
   }
   object DataSourceElasticsearchConfig {
     
@@ -82,13 +79,12 @@ object appsync {
     }
   }
   
-  @js.native
   trait DataSourceHttpConfig extends StObject {
     
     /**
       * HTTP URL.
       */
-    var endpoint: String = js.native
+    var endpoint: String
   }
   object DataSourceHttpConfig {
     
@@ -106,13 +102,12 @@ object appsync {
     }
   }
   
-  @js.native
   trait DataSourceLambdaConfig extends StObject {
     
     /**
       * The ARN for the Lambda function.
       */
-    var functionArn: String = js.native
+    var functionArn: String
   }
   object DataSourceLambdaConfig {
     
@@ -130,23 +125,22 @@ object appsync {
     }
   }
   
-  @js.native
   trait GraphQLApiAdditionalAuthenticationProvider extends StObject {
     
     /**
       * The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`
       */
-    var authenticationType: String = js.native
+    var authenticationType: String
     
     /**
       * Nested argument containing OpenID Connect configuration. Defined below.
       */
-    var openidConnectConfig: js.UndefOr[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig] = js.native
+    var openidConnectConfig: js.UndefOr[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig] = js.undefined
     
     /**
       * The Amazon Cognito User Pool configuration. Defined below.
       */
-    var userPoolConfig: js.UndefOr[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig] = js.native
+    var userPoolConfig: js.UndefOr[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig] = js.undefined
   }
   object GraphQLApiAdditionalAuthenticationProvider {
     
@@ -176,28 +170,27 @@ object appsync {
     }
   }
   
-  @js.native
   trait GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig extends StObject {
     
     /**
       * Number of milliseconds a token is valid after being authenticated.
       */
-    var authTtl: js.UndefOr[Double] = js.native
+    var authTtl: js.UndefOr[Double] = js.undefined
     
     /**
       * Client identifier of the Relying party at the OpenID identity provider. This identifier is typically obtained when the Relying party is registered with the OpenID identity provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time.
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * Number of milliseconds a token is valid after being issued to a user.
       */
-    var iatTtl: js.UndefOr[Double] = js.native
+    var iatTtl: js.UndefOr[Double] = js.undefined
     
     /**
       * Issuer for the OpenID Connect configuration. The issuer returned by discovery MUST exactly match the value of iss in the ID Token.
       */
-    var issuer: String = js.native
+    var issuer: String
   }
   object GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig {
     
@@ -233,23 +226,22 @@ object appsync {
     }
   }
   
-  @js.native
   trait GraphQLApiAdditionalAuthenticationProviderUserPoolConfig extends StObject {
     
     /**
       * A regular expression for validating the incoming Amazon Cognito User Pool app client ID.
       */
-    var appIdClientRegex: js.UndefOr[String] = js.native
+    var appIdClientRegex: js.UndefOr[String] = js.undefined
     
     /**
       * The AWS region in which the user pool was created.
       */
-    var awsRegion: String = js.native
+    var awsRegion: String
     
     /**
       * The user pool ID.
       */
-    var userPoolId: String = js.native
+    var userPoolId: String
   }
   object GraphQLApiAdditionalAuthenticationProviderUserPoolConfig {
     
@@ -276,23 +268,22 @@ object appsync {
     }
   }
   
-  @js.native
   trait GraphQLApiLogConfig extends StObject {
     
     /**
       * Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.
       */
-    var cloudwatchLogsRoleArn: String = js.native
+    var cloudwatchLogsRoleArn: String
     
     /**
       * Set to TRUE to exclude sections that contain information such as headers, context, and evaluated mapping templates, regardless of logging  level. Valid values: `true`, `false`. Default value: `false`
       */
-    var excludeVerboseContent: js.UndefOr[Boolean] = js.native
+    var excludeVerboseContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Field logging level. Valid values: `ALL`, `ERROR`, `NONE`.
       */
-    var fieldLogLevel: String = js.native
+    var fieldLogLevel: String
   }
   object GraphQLApiLogConfig {
     
@@ -319,28 +310,27 @@ object appsync {
     }
   }
   
-  @js.native
   trait GraphQLApiOpenidConnectConfig extends StObject {
     
     /**
       * Number of milliseconds a token is valid after being authenticated.
       */
-    var authTtl: js.UndefOr[Double] = js.native
+    var authTtl: js.UndefOr[Double] = js.undefined
     
     /**
       * Client identifier of the Relying party at the OpenID identity provider. This identifier is typically obtained when the Relying party is registered with the OpenID identity provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time.
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * Number of milliseconds a token is valid after being issued to a user.
       */
-    var iatTtl: js.UndefOr[Double] = js.native
+    var iatTtl: js.UndefOr[Double] = js.undefined
     
     /**
       * Issuer for the OpenID Connect configuration. The issuer returned by discovery MUST exactly match the value of iss in the ID Token.
       */
-    var issuer: String = js.native
+    var issuer: String
   }
   object GraphQLApiOpenidConnectConfig {
     
@@ -376,28 +366,27 @@ object appsync {
     }
   }
   
-  @js.native
   trait GraphQLApiUserPoolConfig extends StObject {
     
     /**
       * A regular expression for validating the incoming Amazon Cognito User Pool app client ID.
       */
-    var appIdClientRegex: js.UndefOr[String] = js.native
+    var appIdClientRegex: js.UndefOr[String] = js.undefined
     
     /**
       * The AWS region in which the user pool was created.
       */
-    var awsRegion: String = js.native
+    var awsRegion: String
     
     /**
       * The action that you want your GraphQL API to take when a request that uses Amazon Cognito User Pool authentication doesn't match the Amazon Cognito User Pool configuration. Valid: `ALLOW` and `DENY`
       */
-    var defaultAction: String = js.native
+    var defaultAction: String
     
     /**
       * The user pool ID.
       */
-    var userPoolId: String = js.native
+    var userPoolId: String
   }
   object GraphQLApiUserPoolConfig {
     
@@ -427,18 +416,17 @@ object appsync {
     }
   }
   
-  @js.native
   trait ResolverCachingConfig extends StObject {
     
     /**
       * The list of caching key.
       */
-    var cachingKeys: js.UndefOr[js.Array[String]] = js.native
+    var cachingKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The TTL in seconds.
       */
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object ResolverCachingConfig {
     
@@ -468,13 +456,12 @@ object appsync {
     }
   }
   
-  @js.native
   trait ResolverPipelineConfig extends StObject {
     
     /**
       * The list of Function ID.
       */
-    var functions: js.UndefOr[js.Array[String]] = js.native
+    var functions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ResolverPipelineConfig {
     

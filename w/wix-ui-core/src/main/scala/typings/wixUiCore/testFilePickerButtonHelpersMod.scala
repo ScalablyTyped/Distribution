@@ -1,0 +1,30 @@
+package typings.wixUiCore
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object testFilePickerButtonHelpersMod {
+  
+  @js.native
+  sealed trait DataHook extends StObject
+  @JSImport("wix-ui-core/src/components/file-picker-button/test/FilePickerButton.helpers", "DataHook")
+  @js.native
+  object DataHook extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[DataHook & String] = js.native
+    
+    @js.native
+    sealed trait ChooseFileButton
+      extends StObject
+         with DataHook
+    /* "file-picker-button-choose-file-button" */ val ChooseFileButton: typings.wixUiCore.testFilePickerButtonHelpersMod.DataHook.ChooseFileButton & String = js.native
+    
+    @js.native
+    sealed trait FileInput
+      extends StObject
+         with DataHook
+    /* "file-picker-button-file-input" */ val FileInput: typings.wixUiCore.testFilePickerButtonHelpersMod.DataHook.FileInput & String = js.native
+  }
+}

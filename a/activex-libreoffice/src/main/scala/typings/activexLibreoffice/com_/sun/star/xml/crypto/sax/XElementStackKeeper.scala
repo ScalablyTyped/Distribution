@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manipulate the "key SAX events" in a SAX event stream. */
-@js.native
-trait XElementStackKeeper extends XInterface {
+trait XElementStackKeeper
+  extends StObject
+     with XInterface {
   
   /**
     * Transfers the buffered key SAX events to a document handler.
@@ -19,13 +19,13 @@ trait XElementStackKeeper extends XInterface {
     * @param handler the document to receive key SAX events
     * @param includingTheLastEvent whether to transfer the last key SAX event
     */
-  def retrieve(handler: XDocumentHandler, includingTheLastEvent: Boolean): Unit = js.native
+  def retrieve(handler: XDocumentHandler, includingTheLastEvent: Boolean): Unit
   
   /** Starts to buffer key SAX events. */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /** Stops buffering key SAX events. */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object XElementStackKeeper {
   

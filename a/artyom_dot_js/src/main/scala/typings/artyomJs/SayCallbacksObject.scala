@@ -2,17 +2,15 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SayCallbacksObject extends StObject {
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var onEnd: js.UndefOr[js.Function] = js.native
+  var onEnd: js.UndefOr[js.Function] = js.undefined
   
-  var onStart: js.UndefOr[js.Function] = js.native
+  var onStart: js.UndefOr[js.Function] = js.undefined
 }
 object SayCallbacksObject {
   

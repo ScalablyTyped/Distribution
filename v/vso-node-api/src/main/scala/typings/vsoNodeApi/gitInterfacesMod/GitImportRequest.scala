@@ -2,46 +2,44 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitImportRequest extends StObject {
   
   /**
     * Links to related resources.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Detailed status of the import, including the current step and an error message, if applicable.
     */
-  var detailedStatus: GitImportStatusDetail = js.native
+  var detailedStatus: GitImportStatusDetail
   
   /**
     * The unique identifier for this import request.
     */
-  var importRequestId: Double = js.native
+  var importRequestId: Double
   
   /**
     * Parameters for creating the import request.
     */
-  var parameters: GitImportRequestParameters = js.native
+  var parameters: GitImportRequestParameters
   
   /**
     * The target repository for this import.
     */
-  var repository: GitRepository = js.native
+  var repository: GitRepository
   
   /**
     * Current status of the import.
     */
-  var status: GitAsyncOperationStatus = js.native
+  var status: GitAsyncOperationStatus
   
   /**
     * A link back to this import request resource.
     */
-  var url: String = js.native
+  var url: String
 }
 object GitImportRequest {
   

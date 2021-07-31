@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Intensity extends StObject {
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var direction: Cartesian3 = js.native
+  var direction: Cartesian3
   
-  var intensity: js.UndefOr[Double] = js.native
+  var intensity: js.UndefOr[Double] = js.undefined
 }
 object Intensity {
   

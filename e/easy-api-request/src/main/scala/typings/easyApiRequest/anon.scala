@@ -2,17 +2,15 @@ package typings.easyApiRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cb extends StObject {
     
-    var cb: js.Any = js.native
+    var cb: js.Any
     
-    var opts: js.Any = js.native
+    var opts: js.Any
   }
   object Cb {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: Cookies = js.native
+    var config: Cookies
     
-    var name: js.Any = js.native
+    var name: js.Any
   }
   object Config {
     
@@ -59,22 +56,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Cookies extends StObject {
     
-    var cookies: js.UndefOr[js.Array[String]] = js.native
+    var cookies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var headers: js.UndefOr[js.Array[String]] = js.native
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var internal: js.UndefOr[Boolean] = js.native
+    var internal: js.UndefOr[Boolean] = js.undefined
     
-    var jSend: js.UndefOr[Boolean] = js.native
+    var jSend: js.UndefOr[Boolean] = js.undefined
     
-    var opts: js.UndefOr[js.Object] = js.native
+    var opts: js.UndefOr[js.Object] = js.undefined
     
-    var replyCookies: js.UndefOr[js.Array[String]] = js.native
+    var replyCookies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Cookies {
     

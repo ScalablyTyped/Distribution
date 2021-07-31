@@ -2,25 +2,23 @@ package typings.satnav
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISatnav extends StObject {
   
-  def change(onChange: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, _]): ISatnav = js.native
+  def change(onChange: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any]): ISatnav
   
-  def go(): ISatnav = js.native
+  def go(): ISatnav
   
-  def navigate(navigationOptions: INavigationOptions): ISatnav = js.native
+  def navigate(navigationOptions: INavigationOptions): ISatnav
   
-  def otherwise(route: String): ISatnav = js.native
+  def otherwise(route: String): ISatnav
 }
 object ISatnav {
   
   @scala.inline
   def apply(
-    change: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, _] => ISatnav,
+    change: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav,
     go: () => ISatnav,
     navigate: INavigationOptions => ISatnav,
     otherwise: String => ISatnav
@@ -33,7 +31,7 @@ object ISatnav {
   implicit class ISatnavMutableBuilder[Self <: ISatnav] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChange(value: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, _] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    def setChange(value: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGo(value: () => ISatnav): Self = StObject.set(x, "go", js.Any.fromFunction0(value))

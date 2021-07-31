@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserProfilesRequest extends StObject {
   
   /**
     * An array of IAM or federated user ARNs that identify the users to be described.
     */
-  var IamUserArns: js.UndefOr[Strings] = js.native
+  var IamUserArns: js.UndefOr[Strings] = js.undefined
 }
 object DescribeUserProfilesRequest {
   

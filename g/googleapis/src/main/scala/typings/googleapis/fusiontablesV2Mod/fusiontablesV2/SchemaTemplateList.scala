@@ -2,36 +2,34 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of templates for a given table.
   */
-@js.native
 trait SchemaTemplateList extends StObject {
   
   /**
     * List of all requested templates.
     */
-  var items: js.UndefOr[js.Array[SchemaTemplate]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTemplate]] = js.undefined
   
   /**
     * The kind of item this is. For a template list, this is always
     * fusiontables#templateList .
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. No token is displayed
     * if there are no more pages left.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of templates for the table.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaTemplateList {
   

@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.anon.Items
 import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "BasePicker")
@@ -16,7 +15,10 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
 /* static members */
 object BasePicker {
   
-  @JSImport("office-ui-fabric-react/lib/index.bundle", "BasePicker.getDerivedStateFromProps")
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BasePicker")
   @js.native
-  def getDerivedStateFromProps(newProps: IBasePickerProps[_]): Items | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
 }

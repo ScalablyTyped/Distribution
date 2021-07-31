@@ -2,23 +2,21 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOperatorsOrdered extends StObject {
   
-  def delete(): OrderedBulkOperation = js.native
+  def delete(): OrderedBulkOperation
   
-  def deleteOne(): OrderedBulkOperation = js.native
+  def deleteOne(): OrderedBulkOperation
   
-  def replaceOne(doc: js.Object): OrderedBulkOperation = js.native
+  def replaceOne(doc: js.Object): OrderedBulkOperation
   
-  def update(doc: js.Object): OrderedBulkOperation = js.native
+  def update(doc: js.Object): OrderedBulkOperation
   
-  def updateOne(doc: js.Object): OrderedBulkOperation = js.native
+  def updateOne(doc: js.Object): OrderedBulkOperation
   
-  def upsert(): FindOperatorsOrdered = js.native
+  def upsert(): FindOperatorsOrdered
 }
 object FindOperatorsOrdered {
   

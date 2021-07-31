@@ -2,30 +2,25 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HashPair extends Node {
+trait HashPair
+  extends StObject
+     with Node {
   
-  var key: String = js.native
+  var key: String
   
   @JSName("type")
-  var type_HashPair: typings.handlebars.handlebarsStrings.HashPair = js.native
+  var type_HashPair: typings.handlebars.handlebarsStrings.HashPair
   
-  var value: Expression = js.native
+  var value: Expression
 }
 object HashPair {
   
   @scala.inline
-  def apply(
-    key: String,
-    loc: SourceLocation,
-    `type`: typings.handlebars.handlebarsStrings.HashPair,
-    value: Expression
-  ): HashPair = {
+  def apply(key: String, loc: SourceLocation, value: Expression): HashPair = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("HashPair")
     __obj.asInstanceOf[HashPair]
   }
   

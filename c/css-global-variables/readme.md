@@ -12,7 +12,7 @@ Manipulate CSS3 Global Variables with Javascript, like regular variables.
 | Keywords           | css global variables, css vars helper, css variables helper, cssvar, cssvars, css variable, css globals, css vars, templating, css templating, html templating |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 2108 |
+| # downloads        | 5303 |
 | # stars            | 0 |
 
 ## Links

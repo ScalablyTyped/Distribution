@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTemplateAliasRequest extends StObject {
   
   /**
     * The name of the template alias that you want to describe. If you name a specific alias, you describe the version that the alias points to. You can specify the latest version of the template by providing the keyword $LATEST in the AliasName parameter. The keyword $PUBLISHED doesn't apply to templates.
     */
-  var AliasName: typings.awsSdk.quicksightMod.AliasName = js.native
+  var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
     * The ID of the AWS account that contains the template alias that you're describing.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId = js.native
+  var TemplateId: RestrictiveResourceId
 }
 object DescribeTemplateAliasRequest {
   

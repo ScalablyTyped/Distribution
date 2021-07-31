@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Math {
@@ -37,7 +36,7 @@ object Math {
       * Set the values of this Matrix from the given array.
       * @param a The array to copy the values from.
       */
-    def fromArray(a: js.Array[_]): Matrix3 = js.native
+    def fromArray(a: js.Array[js.Any]): Matrix3 = js.native
     
     /**
       * Copy the values of a given Matrix4 into this Matrix3.
@@ -140,7 +139,7 @@ object Math {
       * Set the values of this Matrix from the given array.
       * @param a The array to copy the values from.
       */
-    def fromArray(a: js.Array[_]): Matrix4 = js.native
+    def fromArray(a: js.Array[js.Any]): Matrix4 = js.native
     
     /**
       * Set the values of this Matrix from the given Quaternion.
@@ -298,13 +297,7 @@ object Math {
       * @param projectionMatrix The projection matrix.
       */
     def setWorldMatrix(rotation: Vector3, position: Vector3, scale: Vector3): Matrix4 = js.native
-    def setWorldMatrix(
-      rotation: Vector3,
-      position: Vector3,
-      scale: Vector3,
-      viewMatrix: js.UndefOr[scala.Nothing],
-      projectionMatrix: Matrix4
-    ): Matrix4 = js.native
+    def setWorldMatrix(rotation: Vector3, position: Vector3, scale: Vector3, viewMatrix: Unit, projectionMatrix: Matrix4): Matrix4 = js.native
     def setWorldMatrix(rotation: Vector3, position: Vector3, scale: Vector3, viewMatrix: Matrix4): Matrix4 = js.native
     def setWorldMatrix(
       rotation: Vector3,
@@ -491,34 +484,29 @@ object Math {
       * @param w The w component. Default 0.
       */
     def set(): Quaternion = js.native
-    def set(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ): Quaternion = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double): Quaternion = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double): Quaternion = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Quaternion = js.native
-    def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double): Quaternion = js.native
     def set(x: js.Object): Quaternion = js.native
-    def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
-    def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
-    def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Quaternion = js.native
     def set(x: js.Object, y: Double): Quaternion = js.native
-    def set(x: js.Object, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
     def set(x: js.Object, y: Double, z: Double): Quaternion = js.native
     def set(x: js.Object, y: Double, z: Double, w: Double): Quaternion = js.native
+    def set(x: js.Object, y: Double, z: Unit, w: Double): Quaternion = js.native
+    def set(x: js.Object, y: Unit, z: Double): Quaternion = js.native
+    def set(x: js.Object, y: Unit, z: Double, w: Double): Quaternion = js.native
+    def set(x: js.Object, y: Unit, z: Unit, w: Double): Quaternion = js.native
     def set(x: Double): Quaternion = js.native
-    def set(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
-    def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
-    def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Quaternion = js.native
     def set(x: Double, y: Double): Quaternion = js.native
-    def set(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Quaternion = js.native
     def set(x: Double, y: Double, z: Double): Quaternion = js.native
     def set(x: Double, y: Double, z: Double, w: Double): Quaternion = js.native
+    def set(x: Double, y: Double, z: Unit, w: Double): Quaternion = js.native
+    def set(x: Double, y: Unit, z: Double): Quaternion = js.native
+    def set(x: Double, y: Unit, z: Double, w: Double): Quaternion = js.native
+    def set(x: Double, y: Unit, z: Unit, w: Double): Quaternion = js.native
+    def set(x: Unit, y: Double): Quaternion = js.native
+    def set(x: Unit, y: Double, z: Double): Quaternion = js.native
+    def set(x: Unit, y: Double, z: Double, w: Double): Quaternion = js.native
+    def set(x: Unit, y: Double, z: Unit, w: Double): Quaternion = js.native
+    def set(x: Unit, y: Unit, z: Double): Quaternion = js.native
+    def set(x: Unit, y: Unit, z: Double, w: Double): Quaternion = js.native
+    def set(x: Unit, y: Unit, z: Unit, w: Double): Quaternion = js.native
     
     /**
       * Set the axes of this Quaternion.
@@ -1072,9 +1060,9 @@ object Math {
     def scale(scale: Double): Vector3 = js.native
     
     def set(x: js.Object): Vector3 = js.native
-    def set(x: js.Object, y: js.UndefOr[scala.Nothing], z: Double): Vector3 = js.native
     def set(x: js.Object, y: Double): Vector3 = js.native
     def set(x: js.Object, y: Double, z: Double): Vector3 = js.native
+    def set(x: js.Object, y: Unit, z: Double): Vector3 = js.native
     /**
       * Set the `x`, `y`, and `z` components of this Vector to the given `x`, `y`, and `z` values.
       * @param x The x value to set for this Vector, or an object containing x, y and z components.
@@ -1082,9 +1070,9 @@ object Math {
       * @param z The z value to set for this Vector.
       */
     def set(x: Double): Vector3 = js.native
-    def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector3 = js.native
     def set(x: Double, y: Double): Vector3 = js.native
     def set(x: Double, y: Double, z: Double): Vector3 = js.native
+    def set(x: Double, y: Unit, z: Double): Vector3 = js.native
     
     /**
       * Subtract the given Vector from this Vector. Subtraction is component-wise.

@@ -6,7 +6,6 @@ import typings.matrixAppservice.matrixAppserviceStrings.rooms
 import typings.matrixAppservice.matrixAppserviceStrings.users
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appServiceRegistrationMod {
@@ -16,8 +15,8 @@ object appServiceRegistrationMod {
   class AppServiceRegistration () extends StObject {
     def this(url: String) = this()
     
-    def _isMatch(regexList: js.UndefOr[scala.Nothing], sample: String, onlyExclusive: Boolean): Boolean = js.native
     def _isMatch(regexList: js.Array[RegexObj], sample: String, onlyExclusive: Boolean): Boolean = js.native
+    def _isMatch(regexList: Unit, sample: String, onlyExclusive: Boolean): Boolean = js.native
     
     @JSName("addRegexPattern")
     def addRegexPattern_aliases(`type`: aliases, regex: String): Unit = js.native
@@ -204,52 +203,53 @@ object appServiceRegistrationMod {
   /* static members */
   object AppServiceRegistration {
     
+    @JSImport("matrix-appservice/lib/app-service-registration", "AppServiceRegistration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Convert a JSON object to an AppServiceRegistration object.
       * @static
       * @param obj The registration object
       * @return The registration.
       */
-    @JSImport("matrix-appservice/lib/app-service-registration", "AppServiceRegistration.fromObject")
-    @js.native
-    def fromObject(obj: AppServiceOutput): AppServiceRegistration = js.native
+    @scala.inline
+    def fromObject(obj: AppServiceOutput): AppServiceRegistration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[AppServiceRegistration]
     
     /**
       * Generate a random token.
       * @return {string} A randomly generated token.
       */
-    @JSImport("matrix-appservice/lib/app-service-registration", "AppServiceRegistration.generateToken")
-    @js.native
-    def generateToken(): String = js.native
+    @scala.inline
+    def generateToken(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")().asInstanceOf[String]
   }
   
-  @js.native
   trait AppServiceOutput extends StObject {
     
-    var as_token: String = js.native
+    var as_token: String
     
     @JSName("de.sorunome.msc2409.push_ephemeral")
-    var deDotsorunomeDotmsc2409Dotpush_ephemeral: js.UndefOr[Boolean] = js.native
+    var deDotsorunomeDotmsc2409Dotpush_ephemeral: js.UndefOr[Boolean] = js.undefined
     
-    var hs_token: String = js.native
+    var hs_token: String
     
-    var id: String = js.native
+    var id: String
     
-    var namespaces: js.UndefOr[Aliases] = js.native
+    var namespaces: js.UndefOr[Aliases] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[String] | Null] = js.native
+    var protocols: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var rate_limited: js.UndefOr[Boolean] = js.native
+    var rate_limited: js.UndefOr[Boolean] = js.undefined
     
-    var sender_localpart: String = js.native
+    var sender_localpart: String
     
-    var url: String | Null = js.native
+    var url: String | Null
   }
   object AppServiceOutput {
     
     @scala.inline
     def apply(as_token: String, hs_token: String, id: String, sender_localpart: String): AppServiceOutput = {
-      val __obj = js.Dynamic.literal(as_token = as_token.asInstanceOf[js.Any], hs_token = hs_token.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sender_localpart = sender_localpart.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(as_token = as_token.asInstanceOf[js.Any], hs_token = hs_token.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sender_localpart = sender_localpart.asInstanceOf[js.Any], url = null)
       __obj.asInstanceOf[AppServiceOutput]
     }
     
@@ -306,12 +306,11 @@ object appServiceRegistrationMod {
     }
   }
   
-  @js.native
   trait RegexObj extends StObject {
     
-    var exclusive: Boolean = js.native
+    var exclusive: Boolean
     
-    var regex: String = js.native
+    var regex: String
   }
   object RegexObj {
     

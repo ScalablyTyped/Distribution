@@ -3,15 +3,13 @@ package typings.vegaLite.anon
 import typings.vegaLite.vegaSchemaMod.VgValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandOffset extends StObject {
   
-  var band: js.UndefOr[Double | Boolean] = js.native
+  var band: js.UndefOr[Double | Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double | VgValueRef] = js.native
+  var offset: js.UndefOr[Double | VgValueRef] = js.undefined
 }
 object BandOffset {
   

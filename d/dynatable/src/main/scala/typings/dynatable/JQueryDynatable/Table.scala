@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait Table extends StObject {
     *
     * @default 'tbody tr'
     */
-  var bodyRowSelector: js.UndefOr[String] = js.native
+  var bodyRowSelector: js.UndefOr[String] = js.undefined
   
   /** Generated internally by the plugin, will be reset by the DomColumns at init */
-  var columns: js.UndefOr[js.Array[Column]] = js.native
+  var columns: js.UndefOr[js.Array[Column]] = js.undefined
   
   /**
     * By default, dynatable converts headings to JSON attribute names using:
@@ -33,21 +31,21 @@ trait Table extends StObject {
     * // `underscore` would translate it to id `favorite_music`
     * // `lowercase` would translate it to id `favorite music`
     */
-  var defaultColumnIdStyle: js.UndefOr[String] = js.native
+  var defaultColumnIdStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Optional classname that can be added by dynatable to the header cells
     *
     * @default null
     */
-  var headRowClass: js.UndefOr[String] = js.native
+  var headRowClass: js.UndefOr[String] = js.undefined
   
   /**
     * Selector used by dynatable in order to find the table header row
     *
     * @default 'thead tr'
     */
-  var headRowSelector: js.UndefOr[String] = js.native
+  var headRowSelector: js.UndefOr[String] = js.undefined
 }
 object Table {
   

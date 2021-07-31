@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapTableViewOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,22 +15,22 @@ trait OlapTableViewOptions
   /**
     * Optional="false" a value indicating whether the result has one or more hierarchies in the columns.
     */
-  var hasColumns: js.UndefOr[Boolean] = js.native
+  var hasColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional="false" a value indicating whether the result has one or more hierarchies in the rows.
     */
-  var hasRows: js.UndefOr[Boolean] = js.native
+  var hasRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional="false" an object of type $.ig.OlapResult.
     */
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Optional="false" an object containing the table view configuration options as properties.
     */
-  var viewSettings: js.UndefOr[OlapTableViewOptionsViewSettings] = js.native
+  var viewSettings: js.UndefOr[OlapTableViewOptionsViewSettings] = js.undefined
 }
 object OlapTableViewOptions {
   

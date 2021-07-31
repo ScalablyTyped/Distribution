@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailSignatureEntries extends StObject {
   
-  def Add(Name: String, Range: Range): EmailSignatureEntry = js.native
+  def Add(Name: String, Range: Range): EmailSignatureEntry
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): EmailSignatureEntry = js.native
+  def Item(Index: js.Any): EmailSignatureEntry
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.EmailSignatureEntries_typekey")
-  var WordDotEmailSignatureEntries_typekey: EmailSignatureEntries = js.native
+  var WordDotEmailSignatureEntries_typekey: EmailSignatureEntries
 }
 object EmailSignatureEntries {
   

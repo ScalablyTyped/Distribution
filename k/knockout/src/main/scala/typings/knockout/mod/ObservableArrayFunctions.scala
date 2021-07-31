@@ -2,7 +2,6 @@ package typings.knockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -124,7 +123,6 @@ trait ObservableArrayFunctions[T]
   def sorted(): js.Array[T] = js.native
   def sorted(compareFunction: js.Function2[/* left */ T, /* right */ T, Double]): js.Array[T] = js.native
   
-  def splice(start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): js.Array[T] = js.native
   /**
     * Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the array from which to start removing elements.
@@ -132,6 +130,7 @@ trait ObservableArrayFunctions[T]
     * @param items Elements to insert into the array in place of the deleted elements.
     */
   def splice(start: Double, deleteCount: Double, items: T*): js.Array[T] = js.native
+  def splice(start: Double, deleteCount: Unit, items: T*): js.Array[T] = js.native
   
   /**
     * Inserts a new item at the beginning of the array.

@@ -2,24 +2,22 @@ package typings.sourceMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined source-map.source-map.MappedPosition & {  bias :number | undefined} */
-  @js.native
   trait MappedPositionbiasnumberu extends StObject {
     
-    var bias: js.UndefOr[Double] = js.native
+    var bias: js.UndefOr[Double] = js.undefined
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var source: String = js.native
+    var source: String
   }
   object MappedPositionbiasnumberu {
     
@@ -56,14 +54,13 @@ object anon {
   }
   
   /* Inlined source-map.source-map.Position & {  bias :number | undefined} */
-  @js.native
   trait Positionbiasnumberundefin extends StObject {
     
-    var bias: js.UndefOr[Double] = js.native
+    var bias: js.UndefOr[Double] = js.undefined
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Positionbiasnumberundefin {
     

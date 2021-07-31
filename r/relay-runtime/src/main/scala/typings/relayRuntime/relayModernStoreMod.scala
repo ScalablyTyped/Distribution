@@ -7,24 +7,24 @@ import typings.relayRuntime.relayStoreTypesMod.Store
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayModernStoreMod {
   
   @JSImport("relay-runtime/lib/store/RelayModernStore", JSImport.Default)
   @js.native
-  class default protected () extends RelayModernStore {
+  class default protected ()
+    extends StObject
+       with RelayModernStore {
     def this(source: MutableRecordSource) = this()
     def this(source: MutableRecordSource, options: GcReleaseBufferSize) = this()
   }
   
-  @js.native
   trait InvalidationState extends StObject {
     
-    var dataIDs: js.Array[DataID] = js.native
+    var dataIDs: js.Array[DataID]
     
-    var invalidations: Map[DataID, js.UndefOr[Double | Null]] = js.native
+    var invalidations: Map[DataID, js.UndefOr[Double | Null]]
   }
   object InvalidationState {
     
@@ -49,7 +49,9 @@ object relayModernStoreMod {
   }
   
   @js.native
-  trait RelayModernStore extends Store {
+  trait RelayModernStore
+    extends StObject
+       with Store {
     
     def scheduleGC(): Unit = js.native
     

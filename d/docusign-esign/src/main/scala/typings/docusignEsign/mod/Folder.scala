@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Folder extends StObject {
   
   /**
@@ -13,67 +11,67 @@ trait Folder extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An object used to present a filtered view of the items in a folder.
     */
-  var filter: js.UndefOr[/* Use this object to create a filtered view of the items in a folder. */ Filter] = js.native
+  var filter: js.UndefOr[/* Use this object to create a filtered view of the items in a folder. */ Filter] = js.undefined
   
   /**
     * The id of the folder.
     */
-  var folderId: js.UndefOr[String] = js.native
+  var folderId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of envelopes and templates that the folder contains.
     */
-  var folderItems: js.UndefOr[js.Array[/* Information about folder item results. */ FolderItemV2]] = js.native
+  var folderItems: js.UndefOr[js.Array[/* Information about folder item results. */ FolderItemV2]] = js.undefined
   
   /**
     * A list of folder objects.
     */
-  var folders: js.UndefOr[js.Array[/* This object contains details about a folder. */ Folder]] = js.native
+  var folders: js.UndefOr[js.Array[/* This object contains details about a folder. */ Folder]] = js.undefined
   
   /**
     * When set to **true**, the current user has access to the folder.
     */
-  var hasAccess: js.UndefOr[String] = js.native
+  var hasAccess: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the folder has subfolders.
     */
-  var hasSubFolders: js.UndefOr[String] = js.native
+  var hasSubFolders: js.UndefOr[String] = js.undefined
   
   /**
     * The number of items in the folder.
     */
-  var itemCount: js.UndefOr[String] = js.native
+  var itemCount: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the folder.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the user who owns the folder.
     */
-  var owner: js.UndefOr[UserInfo] = js.native
+  var owner: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The id of the parent folder, or the special value `root` for the root folder.
     */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the parent folder.
     */
-  var parentFolderUri: js.UndefOr[String] = js.native
+  var parentFolderUri: js.UndefOr[String] = js.undefined
   
   /**
     * The number of subfolders.
     */
-  var subFolderCount: js.UndefOr[String] = js.native
+  var subFolderCount: js.UndefOr[String] = js.undefined
   
   /**
     * The type of folder. Possible values include:
@@ -85,12 +83,12 @@ trait Folder extends StObject {
     * - `sentitems`
     * - `custom` (a custom folder created by a user)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the folder.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Folder {
   

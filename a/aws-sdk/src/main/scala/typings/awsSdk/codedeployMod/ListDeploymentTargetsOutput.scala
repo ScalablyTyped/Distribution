@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeploymentTargetsOutput extends StObject {
   
   /**
     *  If a large amount of information is returned, a token identifier is also returned. It can be used in a subsequent ListDeploymentTargets call to return the next set of deployment targets in the list. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     *  The unique IDs of deployment targets. 
     */
-  var targetIds: js.UndefOr[TargetIdList] = js.native
+  var targetIds: js.UndefOr[TargetIdList] = js.undefined
 }
 object ListDeploymentTargetsOutput {
   

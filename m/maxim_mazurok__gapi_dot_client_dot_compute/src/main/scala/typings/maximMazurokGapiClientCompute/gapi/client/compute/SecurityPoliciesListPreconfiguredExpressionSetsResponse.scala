@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityPoliciesListPreconfiguredExpressionSetsResponse extends StObject {
   
-  var preconfiguredExpressionSets: js.UndefOr[SecurityPoliciesWafConfig] = js.native
+  var preconfiguredExpressionSets: js.UndefOr[SecurityPoliciesWafConfig] = js.undefined
 }
 object SecurityPoliciesListPreconfiguredExpressionSetsResponse {
   

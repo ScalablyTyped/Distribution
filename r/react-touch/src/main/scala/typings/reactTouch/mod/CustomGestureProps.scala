@@ -2,15 +2,13 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomGestureProps extends StObject {
   
-  var config: js.Array[moves] = js.native
+  var config: js.Array[moves]
   
-  def onGesture(): Unit = js.native
+  def onGesture(): Unit
 }
 object CustomGestureProps {
   

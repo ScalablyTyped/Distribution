@@ -2,16 +2,14 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inject_ extends StObject {
   
   /**
     * A [DI token](guide/glossary#di-token) that maps to the dependency to be injected.
     */
-  var token: js.Any = js.native
+  var token: js.Any
 }
 object Inject_ {
   

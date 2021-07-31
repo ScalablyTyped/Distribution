@@ -2,31 +2,29 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessTokenMap extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var accessTokenSource: js.UndefOr[String] = js.native
+  var accessTokenSource: js.UndefOr[String] = js.undefined
   
-  var applicationID: String = js.native
+  var applicationID: String
   
-  var dataAccessExpirationTime: Double = js.native
+  var dataAccessExpirationTime: Double
   
-  var declinedPermissions: js.Array[Permissions] = js.native
+  var declinedPermissions: js.Array[Permissions]
   
-  var expirationTime: Double = js.native
+  var expirationTime: Double
   
-  var expiredPermissions: js.Array[Permissions] = js.native
+  var expiredPermissions: js.Array[Permissions]
   
-  var lastRefreshTime: Double = js.native
+  var lastRefreshTime: Double
   
-  var permissions: js.Array[Permissions] = js.native
+  var permissions: js.Array[Permissions]
   
-  var userID: String = js.native
+  var userID: String
 }
 object AccessTokenMap {
   

@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathScrSub extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMath = js.native
+  val E: OMath
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Sub: OMath = js.native
+  val Sub: OMath
   
   @JSName("Word.OMathScrSub_typekey")
-  var WordDotOMathScrSub_typekey: OMathScrSub = js.native
+  var WordDotOMathScrSub_typekey: OMathScrSub
 }
 object OMathScrSub {
   

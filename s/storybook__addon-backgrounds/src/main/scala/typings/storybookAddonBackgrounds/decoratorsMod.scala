@@ -4,16 +4,17 @@ import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decoratorsMod {
   
-  @JSImport("@storybook/addon-backgrounds/dist/decorators", "withBackground")
+  @JSImport("@storybook/addon-backgrounds/dist/decorators", JSImport.Namespace)
   @js.native
-  def withBackground(StoryFn: StoryFn[_], context: StoryContext): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-backgrounds/dist/decorators", "withGrid")
-  @js.native
-  def withGrid(StoryFn: StoryFn[_], context: StoryContext): js.Any = js.native
+  @scala.inline
+  def withBackground(StoryFn: StoryFn[js.Any], context: StoryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withBackground")(StoryFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def withGrid(StoryFn: StoryFn[js.Any], context: StoryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withGrid")(StoryFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

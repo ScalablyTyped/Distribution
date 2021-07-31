@@ -2,23 +2,21 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Create extends StObject {
   
   /** Parsed by the [color](https://www.npmjs.org/package/color) module to extract values for red, green, blue and alpha. */
-  var background: Color = js.native
+  var background: Color
   
   /** Number of bands e.g. 3 for RGB, 4 for RGBA */
-  var channels: Channels = js.native
+  var channels: Channels
   
   /** Number of pixels high. */
-  var height: Double = js.native
+  var height: Double
   
   /** Number of pixels wide. */
-  var width: Double = js.native
+  var width: Double
 }
 object Create {
   

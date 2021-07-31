@@ -3,7 +3,6 @@ package typings.jqueryCropbox
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jQueryCropBox {
@@ -15,70 +14,77 @@ object jQueryCropBox {
   object ShowControls extends StObject {
     
     @js.native
-    sealed trait always extends ShowControls
+    sealed trait always
+      extends StObject
+         with ShowControls
     
     @js.native
-    sealed trait auto extends ShowControls
+    sealed trait auto
+      extends StObject
+         with ShowControls
     
     @js.native
-    sealed trait hover extends ShowControls
+    sealed trait hover
+      extends StObject
+         with ShowControls
     
     @js.native
-    sealed trait never extends ShowControls
+    sealed trait never
+      extends StObject
+         with ShowControls
   }
   
-  @js.native
   trait Cropbox extends StObject {
     
     /**
       * Simulate image dragging, starting from (startX,startY) and moving a delta of (dx,dy). Need to call update to reflect the changes.
       */
-    def drag(options: CropboxDragOptions): Unit = js.native
+    def drag(options: CropboxDragOptions): Unit
     
     /**
       * Generate a Blob with the cropped image (requires HTML5 compliant browser).
       */
-    def getBlob(): js.Any = js.native
+    def getBlob(): js.Any
     
     /**
       * Generate a URL for the cropped image on the client (requires HTML5 compliant browser).
       */
-    def getDataURL(): String = js.native
+    def getDataURL(): String
     
     /**
       * Attach an event handler function for one event on the Crop Box
       */
-    def on(event: String, callback: EventCallback): Unit = js.native
+    def on(event: String, callback: EventCallback): Unit
     
     /**
       * Remove the cropbox functionality from the image.
       */
-    def remove(): Unit = js.native
+    def remove(): Unit
     
     /**
       * Set crop window.
       */
-    def setCrop(options: CropboxSetCropOptions): Unit = js.native
+    def setCrop(options: CropboxSetCropOptions): Unit
     
     /**
       * Update the cropped result (must call after zoom and drag).
       */
-    def update(): Unit = js.native
+    def update(): Unit
     
     /**
       * Set zoom leevl to a value between 0 and 1. Need to call update to reflect the changes.
       */
-    def zoom(percent: Double): Unit = js.native
+    def zoom(percent: Double): Unit
     
     /**
       * Increase image zoom level by one step
       */
-    def zoomIn(): Unit = js.native
+    def zoomIn(): Unit
     
     /**
       * Decrease image zoom level by one step
       */
-    def zoomOut(): Unit = js.native
+    def zoomOut(): Unit
   }
   object Cropbox {
     
@@ -134,16 +140,15 @@ object jQueryCropBox {
     }
   }
   
-  @js.native
   trait CropboxArea extends StObject {
     
-    var cropH: Double = js.native
+    var cropH: Double
     
-    var cropW: Double = js.native
+    var cropW: Double
     
-    var cropX: Double = js.native
+    var cropX: Double
     
-    var cropY: Double = js.native
+    var cropY: Double
   }
   object CropboxArea {
     
@@ -170,16 +175,15 @@ object jQueryCropBox {
     }
   }
   
-  @js.native
   trait CropboxDragOptions extends StObject {
     
-    var dx: Double = js.native
+    var dx: Double
     
-    var dy: Double = js.native
+    var dy: Double
     
-    var startX: Double = js.native
+    var startX: Double
     
-    var startY: Double = js.native
+    var startY: Double
   }
   object CropboxDragOptions {
     
@@ -206,43 +210,42 @@ object jQueryCropBox {
     }
   }
   
-  @js.native
   trait CropboxOptions extends StObject {
     
     /**
       * If not null, this is the entire html block that should appear on hover over the image for instructions and/or buttons (could include the zoom in/out buttons for example). If null, the default html block is used which has the text "Click to drag" and the zoom in/out buttons. Use false to disable controls.
       */
-    var controls: js.UndefOr[js.Any] = js.native
+    var controls: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Height in pixels of the cropping window
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum zoom value. With the default of 1.0 users can't zoom beyond the maximum image resolution.
       */
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
     /**
       * Set the initial cropping area
       */
-    var result: js.UndefOr[CropboxArea] = js.native
+    var result: js.UndefOr[CropboxArea] = js.undefined
     
     /**
       * This flag is used to determine when to display the controls. Never, always and hover do exactly what you would expect (never show them, always show them, show them on hover). The auto flag is the same as the hover flag, except that on mobile devices it always shows the controls (since there is no hover event).
       */
-    var showControls: js.UndefOr[ShowControls] = js.native
+    var showControls: js.UndefOr[ShowControls] = js.undefined
     
     /**
       * Width in pixels of the cropping window
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of incremental zoom steps. With the default of 10, you have to click the zoom-in button 9 times to reach 100%.
       */
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object CropboxOptions {
     
@@ -299,16 +302,15 @@ object jQueryCropBox {
     }
   }
   
-  @js.native
   trait CropboxSetCropOptions extends StObject {
     
-    var cropH: Double = js.native
+    var cropH: Double
     
-    var cropW: Double = js.native
+    var cropW: Double
     
-    var cropX: Double = js.native
+    var cropX: Double
     
-    var cropY: Double = js.native
+    var cropY: Double
   }
   object CropboxSetCropOptions {
     

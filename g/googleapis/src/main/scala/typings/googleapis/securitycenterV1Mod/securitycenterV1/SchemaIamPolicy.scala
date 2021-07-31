@@ -2,7 +2,6 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Cloud SCC asset. This information is managed and defined by the GCP
   * resource and cannot be modified by the user.
   */
-@js.native
 trait SchemaIamPolicy extends StObject {
   
   /**
     * The JSON representation of the Policy associated with the asset. See
     * https://cloud.google.com/iam/reference/rest/v1/Policy for format details.
     */
-  var policyBlob: js.UndefOr[String] = js.native
+  var policyBlob: js.UndefOr[String] = js.undefined
 }
 object SchemaIamPolicy {
   

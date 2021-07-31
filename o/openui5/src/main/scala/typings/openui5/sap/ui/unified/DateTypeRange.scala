@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTypeRange extends DateRange {
+trait DateTypeRange
+  extends StObject
+     with DateRange {
   
   /**
     * Gets current value of property <code>type</code>.Type of the date range.Default value is

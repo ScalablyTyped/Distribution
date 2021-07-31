@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects implementing this interface can be used to mirror {@link Shapes} .
   * @deprecated Deprecated
   */
-@js.native
-trait XShapeMirror extends XInterface {
+trait XShapeMirror
+  extends StObject
+     with XInterface {
   
   /** mirrors the given {@link Shapes} at the given axis. */
-  def mirror(aShapes: js.Array[XShapes], eAxis: MirrorAxis): Unit = js.native
+  def mirror(aShapes: js.Array[XShapes], eAxis: MirrorAxis): Unit
   
   /** mirrors the given {@link Shapes} at the given axis. */
-  def mirrorAtAxis(aShapes: js.Array[XShapes], aLine: XShape): Unit = js.native
+  def mirrorAtAxis(aShapes: js.Array[XShapes], aLine: XShape): Unit
 }
 object XShapeMirror {
   

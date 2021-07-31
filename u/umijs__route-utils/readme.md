@@ -10,9 +10,9 @@ Quickly process the routing of umi
 | ------------------ | :-------------: |
 | Full name          | @umijs/route-utils |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 13 |
-| # downloads        | 148566 |
+| # releases         | 36 |
+| # dependents       | 18 |
+| # downloads        | 370172 |
 | # stars            | 0 |
 
 ## Links

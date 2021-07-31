@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultDataSetOperations extends StObject {
   
-  def GetDataSetExportingStatus(ID: Double): IDataSetExportingStatus = js.native
+  def GetDataSetExportingStatus(ID: Double): IDataSetExportingStatus
   
-  def GetDataSets(): IDataSets = js.native
+  def GetDataSets(): IDataSets
   
-  def GetReportAccessCredentials(): IReportAccessCredentials = js.native
+  def GetReportAccessCredentials(): IReportAccessCredentials
   
-  def StartDataSetExport(ID: Double): Unit = js.native
+  def StartDataSetExport(ID: Double): Unit
 }
 object IVaultDataSetOperations {
   

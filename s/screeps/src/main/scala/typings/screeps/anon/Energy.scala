@@ -10,21 +10,19 @@ import typings.screeps.screepsNumbers.`50`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Energy extends StObject {
   
-  var className: operator = js.native
+  var className: operator
   
-  var cooldown: typings.screeps.screepsNumbers.`20` = js.native
+  var cooldown: typings.screeps.screepsNumbers.`20`
   
-  var duration: `50` = js.native
+  var duration: `50`
   
-  var effect: js.Tuple5[`5000`, `10000`, `15000`, `20000`, `25000`] = js.native
+  var effect: js.Tuple5[`5000`, `10000`, `15000`, `20000`, `25000`]
   
-  var energy: `100` = js.native
+  var energy: `100`
   
   var level: js.Tuple5[
     typings.screeps.screepsNumbers.`0`, 
@@ -32,17 +30,13 @@ trait Energy extends StObject {
     typings.screeps.screepsNumbers.`7`, 
     typings.screeps.screepsNumbers.`14`, 
     typings.screeps.screepsNumbers.`22`
-  ] = js.native
+  ]
 }
 object Energy {
   
   @scala.inline
   def apply(
-    className: operator,
-    cooldown: typings.screeps.screepsNumbers.`20`,
-    duration: `50`,
     effect: js.Tuple5[`5000`, `10000`, `15000`, `20000`, `25000`],
-    energy: `100`,
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`0`, 
       typings.screeps.screepsNumbers.`2`, 
@@ -51,7 +45,7 @@ object Energy {
       typings.screeps.screepsNumbers.`22`
     ]
   ): Energy = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], energy = energy.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = "operator", cooldown = 20, duration = 50, effect = effect.asInstanceOf[js.Any], energy = 100, level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Energy]
   }
   

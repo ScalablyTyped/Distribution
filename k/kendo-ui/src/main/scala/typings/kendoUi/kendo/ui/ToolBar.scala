@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToolBar extends Widget {
+trait ToolBar
+  extends StObject
+     with Widget {
   
   def add(command: js.Any): Unit = js.native
   

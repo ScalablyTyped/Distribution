@@ -4,15 +4,13 @@ import typings.atom.atomStrings.none
 import typings.atom.atomStrings.textOrSnippet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `11` extends StObject {
   
-  var newValue: none | textOrSnippet = js.native
+  var newValue: none | textOrSnippet
   
-  var oldValue: js.UndefOr[none | textOrSnippet] = js.native
+  var oldValue: js.UndefOr[none | textOrSnippet] = js.undefined
 }
 object `11` {
   

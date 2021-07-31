@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,23 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param device - The source device of the touch events.
   * @param event - The original browser TouchEvent.
   */
-@js.native
 trait TouchEvent extends StObject {
   
   /**
     * A list of touches that have changed since the last event.
     */
-  var changedTouches: js.Array[Touch] = js.native
+  var changedTouches: js.Array[Touch]
   
   /**
     * The target Element that the event was fired from.
     */
-  var element: Element = js.native
+  var element: Element
   
   /**
     * The original browser TouchEvent.
     */
-  var event: TouchEvent = js.native
+  var event: TouchEvent
   
   /**
     * Get an event from one of the touch lists by the id. It is useful to access
@@ -40,12 +38,12 @@ trait TouchEvent extends StObject {
     * @param list - An array of touches to search.
     * @returns The {@link pc.Touch} object or null.
     */
-  def getTouchById(id: Double, list: js.Array[Touch]): Touch = js.native
+  def getTouchById(id: Double, list: js.Array[Touch]): Touch
   
   /**
     * A list of all touches currently in contact with the device.
     */
-  var touches: js.Array[Touch] = js.native
+  var touches: js.Array[Touch]
 }
 object TouchEvent {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecretsResponse extends StObject {
   
   /** A token to retrieve the next page of results. Pass this value in ListSecretsRequest.page_token to retrieve the next page. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of Secrets sorted in reverse by create_time (newest first). */
-  var secrets: js.UndefOr[js.Array[Secret]] = js.native
+  var secrets: js.UndefOr[js.Array[Secret]] = js.undefined
   
   /** The total number of Secrets. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object ListSecretsResponse {
   

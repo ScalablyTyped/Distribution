@@ -2,17 +2,19 @@ package typings.node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object traceEventsMod {
   
+  @JSImport("trace_events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a Tracing object for the given set of categories.
     */
-  @JSImport("trace_events", "createTracing")
-  @js.native
-  def createTracing(options: CreateTracingOptions): Tracing = js.native
+  @scala.inline
+  def createTracing(options: CreateTracingOptions): Tracing = ^.asInstanceOf[js.Dynamic].applyDynamic("createTracing")(options.asInstanceOf[js.Any]).asInstanceOf[Tracing]
   
   /**
     * Returns a comma-separated list of all currently-enabled trace event
@@ -20,11 +22,9 @@ object traceEventsMod {
     * determined by the union of all currently-enabled `Tracing` objects and
     * any categories enabled using the `--trace-event-categories` flag.
     */
-  @JSImport("trace_events", "getEnabledCategories")
-  @js.native
-  def getEnabledCategories(): js.UndefOr[java.lang.String] = js.native
+  @scala.inline
+  def getEnabledCategories(): js.UndefOr[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnabledCategories")().asInstanceOf[js.UndefOr[java.lang.String]]
   
-  @js.native
   trait CreateTracingOptions extends StObject {
     
     /**
@@ -32,7 +32,7 @@ object traceEventsMod {
       * coerced to a string when possible. An error will be thrown if the
       * value cannot be coerced.
       */
-    var categories: js.Array[java.lang.String] = js.native
+    var categories: js.Array[java.lang.String]
   }
   object CreateTracingOptions {
     
@@ -63,14 +63,13 @@ object traceEventsMod {
     * event categories. Calling `tracing.disable()` will remove the categories
     * from the set of enabled trace event categories.
     */
-  @js.native
   trait Tracing extends StObject {
     
     /**
       * A comma-separated list of the trace event categories covered by this
       * `Tracing` object.
       */
-    val categories: java.lang.String = js.native
+    val categories: java.lang.String
     
     /**
       * Disables this `Tracing` object.
@@ -79,18 +78,18 @@ object traceEventsMod {
       * objects and _not_ specified by the `--trace-event-categories` flag
       * will be disabled.
       */
-    def disable(): Unit = js.native
+    def disable(): Unit
     
     /**
       * Enables this `Tracing` object for the set of categories covered by
       * the `Tracing` object.
       */
-    def enable(): Unit = js.native
+    def enable(): Unit
     
     /**
       * `true` only if the `Tracing` object has been enabled.
       */
-    val enabled: Boolean = js.native
+    val enabled: Boolean
   }
   object Tracing {
     

@@ -5,12 +5,11 @@ import typings.styledSystem.styledSystemStrings.colors
 import typings.styledSystem.styledSystemStrings.radii
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
-  extends BorderWidthProps[ThemeType, ThemeValue[borderWidths, ThemeType, js.Any]]
+  extends StObject
+     with BorderWidthProps[ThemeType, ThemeValue[borderWidths, ThemeType, js.Any]]
      with BorderStyleProps[ThemeType]
      with BorderColorProps[ThemeType, ThemeValue[colors, ThemeType, js.Any]]
      with BorderRadiusProps[ThemeType, ThemeValue[radii, ThemeType, js.Any]]
@@ -37,11 +36,11 @@ trait BorderProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
     */
-  var border: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var border: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
-  var borderX: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderX: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
-  var borderY: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderY: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderProps {
   
@@ -52,7 +51,7 @@ object BorderProps {
   }
   
   @scala.inline
-  implicit class BorderPropsMutableBuilder[Self <: BorderProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderPropsMutableBuilder[Self <: BorderProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorder(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])

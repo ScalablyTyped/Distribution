@@ -3,16 +3,14 @@ package typings.vsoNodeApi.testInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyBag extends StObject {
   
   /**
     * Generic store for test session data
     */
-  var bag: StringDictionary[String] = js.native
+  var bag: StringDictionary[String]
 }
 object PropertyBag {
   

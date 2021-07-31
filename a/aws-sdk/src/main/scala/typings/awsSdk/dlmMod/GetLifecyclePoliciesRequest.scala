@@ -2,36 +2,34 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLifecyclePoliciesRequest extends StObject {
   
   /**
     * The identifiers of the data lifecycle policies.
     */
-  var PolicyIds: js.UndefOr[PolicyIdList] = js.native
+  var PolicyIds: js.UndefOr[PolicyIdList] = js.undefined
   
   /**
     * The resource type.
     */
-  var ResourceTypes: js.UndefOr[ResourceTypeValuesList] = js.native
+  var ResourceTypes: js.UndefOr[ResourceTypeValuesList] = js.undefined
   
   /**
     * The activation state.
     */
-  var State: js.UndefOr[GettablePolicyStateValues] = js.native
+  var State: js.UndefOr[GettablePolicyStateValues] = js.undefined
   
   /**
     * The tags to add to objects created by the policy. Tags are strings in the format key=value. These user-defined tags are added in addition to the AWS-added lifecycle tags.
     */
-  var TagsToAdd: js.UndefOr[TagsToAddFilterList] = js.native
+  var TagsToAdd: js.UndefOr[TagsToAddFilterList] = js.undefined
   
   /**
     * The target tag for a policy. Tags are strings in the format key=value.
     */
-  var TargetTags: js.UndefOr[TargetTagsFilterList] = js.native
+  var TargetTags: js.UndefOr[TargetTagsFilterList] = js.undefined
 }
 object GetLifecyclePoliciesRequest {
   

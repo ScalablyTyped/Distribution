@@ -3,7 +3,6 @@ package typings.sipJs.mod
 import typings.sipJs.anon.PartialUserAgentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "UserAgent")
@@ -39,9 +38,8 @@ object UserAgent {
     * const uri = UserAgent.makeURI("sip:edgar@example.com");
     * ```
     */
-  @JSImport("sip.js", "UserAgent.makeURI")
-  @js.native
-  def makeURI(uri: String): js.UndefOr[typings.sipJs.coreMod.URI] = js.native
+  @scala.inline
+  def makeURI(uri: String): js.UndefOr[typings.sipJs.coreMod.URI] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeURI")(uri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.sipJs.coreMod.URI]]
   
   /**
     * Strip properties with undefined values from options.

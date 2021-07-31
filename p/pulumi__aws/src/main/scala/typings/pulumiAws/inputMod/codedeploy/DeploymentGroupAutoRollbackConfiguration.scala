@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupAutoRollbackConfiguration extends StObject {
   
   /**
     * Indicates whether a defined automatic rollback configuration is currently enabled for this Deployment Group. If you enable automatic rollback, you must specify at least one event type.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.native
+  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The event type or types that trigger a rollback. Supported types are `DEPLOYMENT_FAILURE` and `DEPLOYMENT_STOP_ON_ALARM`.
     */
-  var events: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var events: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object DeploymentGroupAutoRollbackConfiguration {
   

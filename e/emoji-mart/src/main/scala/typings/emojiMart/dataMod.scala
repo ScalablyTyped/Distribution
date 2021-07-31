@@ -3,31 +3,30 @@ package typings.emojiMart
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataMod {
   
-  @JSImport("emoji-mart/dist-es/utils/data", "buildSearch")
+  @JSImport("emoji-mart/dist-es/utils/data", JSImport.Namespace)
   @js.native
-  def buildSearch(emoji: Emoji): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("emoji-mart/dist-es/utils/data", "compress")
-  @js.native
-  def compress(emoji: Emoji): Unit = js.native
+  @scala.inline
+  def buildSearch(emoji: Emoji): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSearch")(emoji.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("emoji-mart/dist-es/utils/data", "uncompress")
-  @js.native
-  def uncompress(data: Data): Unit = js.native
+  @scala.inline
+  def compress(emoji: Emoji): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(emoji.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def uncompress(data: Data): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Category extends StObject {
     
-    var emojis: js.Array[String] = js.native
+    var emojis: js.Array[String]
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Category {
     
@@ -54,16 +53,15 @@ object dataMod {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var aliases: StringDictionary[String] = js.native
+    var aliases: StringDictionary[String]
     
-    var categories: js.Array[Category] = js.native
+    var categories: js.Array[Category]
     
-    var compressed: Boolean = js.native
+    var compressed: Boolean
     
-    var emojis: StringDictionary[Emoji] = js.native
+    var emojis: StringDictionary[Emoji]
   }
   object Data {
     
@@ -98,78 +96,77 @@ object dataMod {
     }
   }
   
-  @js.native
   trait Emoji extends StObject {
     
-    var a: js.UndefOr[String] = js.native
+    var a: js.UndefOr[String] = js.undefined
     
-    var added_in: js.UndefOr[Double] = js.native
+    var added_in: js.UndefOr[Double] = js.undefined
     
-    var b: js.UndefOr[String] = js.native
+    var b: js.UndefOr[String] = js.undefined
     
-    var c: js.UndefOr[String] = js.native
+    var c: js.UndefOr[String] = js.undefined
     
-    var d: js.UndefOr[Boolean] = js.native
+    var d: js.UndefOr[Boolean] = js.undefined
     
-    var e: js.UndefOr[Boolean] = js.native
+    var e: js.UndefOr[Boolean] = js.undefined
     
-    var emoticons: js.UndefOr[js.Array[String]] = js.native
+    var emoticons: js.UndefOr[js.Array[String]] = js.undefined
     
-    var f: js.UndefOr[Boolean] = js.native
+    var f: js.UndefOr[Boolean] = js.undefined
     
-    var g: js.UndefOr[Boolean] = js.native
+    var g: js.UndefOr[Boolean] = js.undefined
     
-    var h: js.UndefOr[Boolean] = js.native
+    var h: js.UndefOr[Boolean] = js.undefined
     
-    var has_img_apple: js.UndefOr[Boolean] = js.native
+    var has_img_apple: js.UndefOr[Boolean] = js.undefined
     
-    var has_img_emojione: js.UndefOr[Boolean] = js.native
+    var has_img_emojione: js.UndefOr[Boolean] = js.undefined
     
-    var has_img_facebook: js.UndefOr[Boolean] = js.native
+    var has_img_facebook: js.UndefOr[Boolean] = js.undefined
     
-    var has_img_google: js.UndefOr[Boolean] = js.native
+    var has_img_google: js.UndefOr[Boolean] = js.undefined
     
-    var has_img_messenger: js.UndefOr[Boolean] = js.native
+    var has_img_messenger: js.UndefOr[Boolean] = js.undefined
     
-    var has_img_twitter: js.UndefOr[Boolean] = js.native
+    var has_img_twitter: js.UndefOr[Boolean] = js.undefined
     
-    var i: js.UndefOr[Boolean] = js.native
+    var i: js.UndefOr[Boolean] = js.undefined
     
-    var j: js.UndefOr[js.Array[String]] = js.native
+    var j: js.UndefOr[js.Array[String]] = js.undefined
     
-    var k: js.UndefOr[js.Array[Double]] = js.native
+    var k: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    var l: js.UndefOr[js.Array[String]] = js.native
+    var l: js.UndefOr[js.Array[String]] = js.undefined
     
-    var m: js.UndefOr[String] = js.native
+    var m: js.UndefOr[String] = js.undefined
     
-    var n: js.UndefOr[js.Array[String]] = js.native
+    var n: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var non_qualified: js.UndefOr[String] = js.native
+    var non_qualified: js.UndefOr[String] = js.undefined
     
-    var o: js.UndefOr[Double] = js.native
+    var o: js.UndefOr[Double] = js.undefined
     
-    var obsoleted_by: js.UndefOr[String] = js.native
+    var obsoleted_by: js.UndefOr[String] = js.undefined
     
-    var obsoletes: js.UndefOr[String] = js.native
+    var obsoletes: js.UndefOr[String] = js.undefined
     
-    var sheet: js.UndefOr[js.Array[Double]] = js.native
+    var sheet: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var sheet_x: js.UndefOr[Double] = js.native
+    var sheet_x: js.UndefOr[Double] = js.undefined
     
-    var sheet_y: js.UndefOr[Double] = js.native
+    var sheet_y: js.UndefOr[Double] = js.undefined
     
-    var short_names: js.UndefOr[js.Array[String]] = js.native
+    var short_names: js.UndefOr[js.Array[String]] = js.undefined
     
-    var skin_variations: js.UndefOr[StringDictionary[SkinVariation]] = js.native
+    var skin_variations: js.UndefOr[StringDictionary[SkinVariation]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var unified: js.UndefOr[String] = js.native
+    var unified: js.UndefOr[String] = js.undefined
   }
   object Emoji {
     
@@ -418,36 +415,35 @@ object dataMod {
     }
   }
   
-  @js.native
   trait SkinVariation extends StObject {
     
-    var added_in: String = js.native
+    var added_in: String
     
-    var has_img_apple: Boolean = js.native
+    var has_img_apple: Boolean
     
-    var has_img_emojione: Boolean = js.native
+    var has_img_emojione: Boolean
     
-    var has_img_facebook: Boolean = js.native
+    var has_img_facebook: Boolean
     
-    var has_img_google: Boolean = js.native
+    var has_img_google: Boolean
     
-    var has_img_messenger: Boolean = js.native
+    var has_img_messenger: Boolean
     
-    var has_img_twitter: Boolean = js.native
+    var has_img_twitter: Boolean
     
-    var image: String = js.native
+    var image: String
     
-    var non_qualified: Null | String = js.native
+    var non_qualified: Null | String
     
-    var obsoleted_by: js.UndefOr[String] = js.native
+    var obsoleted_by: js.UndefOr[String] = js.undefined
     
-    var obsoletes: js.UndefOr[String] = js.native
+    var obsoletes: js.UndefOr[String] = js.undefined
     
-    var sheet_x: Double = js.native
+    var sheet_x: Double
     
-    var sheet_y: Double = js.native
+    var sheet_y: Double
     
-    var unified: String = js.native
+    var unified: String
   }
   object SkinVariation {
     
@@ -465,7 +461,7 @@ object dataMod {
       sheet_y: Double,
       unified: String
     ): SkinVariation = {
-      val __obj = js.Dynamic.literal(added_in = added_in.asInstanceOf[js.Any], has_img_apple = has_img_apple.asInstanceOf[js.Any], has_img_emojione = has_img_emojione.asInstanceOf[js.Any], has_img_facebook = has_img_facebook.asInstanceOf[js.Any], has_img_google = has_img_google.asInstanceOf[js.Any], has_img_messenger = has_img_messenger.asInstanceOf[js.Any], has_img_twitter = has_img_twitter.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], sheet_x = sheet_x.asInstanceOf[js.Any], sheet_y = sheet_y.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(added_in = added_in.asInstanceOf[js.Any], has_img_apple = has_img_apple.asInstanceOf[js.Any], has_img_emojione = has_img_emojione.asInstanceOf[js.Any], has_img_facebook = has_img_facebook.asInstanceOf[js.Any], has_img_google = has_img_google.asInstanceOf[js.Any], has_img_messenger = has_img_messenger.asInstanceOf[js.Any], has_img_twitter = has_img_twitter.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], sheet_x = sheet_x.asInstanceOf[js.Any], sheet_y = sheet_y.asInstanceOf[js.Any], unified = unified.asInstanceOf[js.Any], non_qualified = null)
       __obj.asInstanceOf[SkinVariation]
     }
     

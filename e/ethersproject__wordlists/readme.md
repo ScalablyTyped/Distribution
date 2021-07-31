@@ -10,9 +10,9 @@ Word lists for BIP39 wallets.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/wordlists |
 | Keywords           | Ethereum, ethers |
-| # releases         | 28 |
+| # releases         | 31 |
 | # dependents       | 9 |
-| # downloads        | 545612 |
+| # downloads        | 1152002 |
 | # stars            | 0 |
 
 ## Links

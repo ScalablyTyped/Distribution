@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.outputMod.networking.v1
 import typings.pulumiKubernetes.outputMod.core.v1.LoadBalancerStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IngressStatus describe the current state of the Ingress.
   */
-@js.native
 trait IngressStatus extends StObject {
   
   /**
     * LoadBalancer contains the current status of the load-balancer.
     */
-  var loadBalancer: LoadBalancerStatus = js.native
+  var loadBalancer: LoadBalancerStatus
 }
 object IngressStatus {
   

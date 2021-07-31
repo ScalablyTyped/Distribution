@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditCellResult extends StObject {
   
-  var cell: EditCell = js.native
+  var cell: EditCell
   
-  var isRowDirty: Boolean = js.native
+  var isRowDirty: Boolean
 }
 object EditCellResult {
   

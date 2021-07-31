@@ -4,13 +4,13 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Stroke extends Modifier {
+trait Stroke
+  extends StObject
+     with Modifier {
   
-  def addEndNote(note: Note): Stroke = js.native
+  def addEndNote(note: Note): Stroke
 }
 object Stroke {
   
@@ -47,25 +47,39 @@ object Stroke {
   object Type extends StObject {
     
     @js.native
-    sealed trait ARPEGGIO_DIRECTIONLESS extends Type
+    sealed trait ARPEGGIO_DIRECTIONLESS
+      extends StObject
+         with Type
     
     @js.native
-    sealed trait BRUSH_DOWN extends Type
+    sealed trait BRUSH_DOWN
+      extends StObject
+         with Type
     
     @js.native
-    sealed trait BRUSH_UP extends Type
+    sealed trait BRUSH_UP
+      extends StObject
+         with Type
     
     @js.native
-    sealed trait RASQUEDO_DOWN extends Type
+    sealed trait RASQUEDO_DOWN
+      extends StObject
+         with Type
     
     @js.native
-    sealed trait RASQUEDO_UP extends Type
+    sealed trait RASQUEDO_UP
+      extends StObject
+         with Type
     
     @js.native
-    sealed trait ROLL_DOWN extends Type
+    sealed trait ROLL_DOWN
+      extends StObject
+         with Type
     
     @js.native
-    sealed trait ROLL_UP extends Type
+    sealed trait ROLL_UP
+      extends StObject
+         with Type
   }
   
   @scala.inline

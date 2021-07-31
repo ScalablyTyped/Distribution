@@ -2,24 +2,24 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompositeDisposable extends Disposable {
+trait CompositeDisposable
+  extends StObject
+     with Disposable {
   
   /**
     * Adds a disposable to the CompositeDisposable or disposes the disposable if the CompositeDisposable is disposed.
     * @param {Mixed} item Disposable to add.
     */
-  def add(item: IDisposable): Unit = js.native
+  def add(item: IDisposable): Unit
   
   /**
     * Removes and disposes the first occurrence of a disposable from the CompositeDisposable.
     * @param {Mixed} item Disposable to remove.
     * @returns {Boolean} true if found; false otherwise.
     */
-  def remove(item: IDisposable): Unit = js.native
+  def remove(item: IDisposable): Unit
 }
 object CompositeDisposable {
   

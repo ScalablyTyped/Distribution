@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendingCopyRecipient extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait BulkSendingCopyRecipient extends StObject {
     *
     * If blank and the signer `accessCode` property is not set, then the access code is not required.
     */
-  var accessCode: js.UndefOr[String] = js.native
+  var accessCode: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the recipient is embedded or remote.
@@ -30,23 +28,23 @@ trait BulkSendingCopyRecipient extends StObject {
     *
     * Maximum length: 100 characters.
     */
-  var clientUserId: js.UndefOr[String] = js.native
+  var clientUserId: js.UndefOr[String] = js.undefined
   
   /**
     * An optional array of strings that enables the sender to provide custom data about the recipient. This information is returned in the envelope status
     * but otherwise not used by DocuSign. Each `customField` string can be a maximum of 100 characters.
     */
-  var customFields: js.UndefOr[js.Array[String]] = js.native
+  var customFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var deliveryMethod: js.UndefOr[String] = js.native
+  var deliveryMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient's email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * An optional complex type that sets a specific email subject and body for this recipient's notification email.
@@ -54,7 +52,7 @@ trait BulkSendingCopyRecipient extends StObject {
     * **Note**: You can set the `emailNotification` property separately for each recipient. If you set the value only for certain recipients, the other recipients will
     * inherit the this value from the top-level `emailSubject` and `emailBlurb`.
     */
-  var emailNotification: js.UndefOr[RecipientEmailNotification] = js.native
+  var emailNotification: js.UndefOr[RecipientEmailNotification] = js.undefined
   
   /**
     * Specifies a sender-provided valid URL string for redirecting an embedded recipient. When using this option, the embedded recipient still receives an email from DocuSign,
@@ -81,12 +79,12 @@ trait BulkSendingCopyRecipient extends StObject {
     *
     * `http://senderHost/[[mergeField1]]/ beginSigningSession? [[mergeField2]]&[[mergeField3]]`
     */
-  var embeddedRecipientStartURL: js.UndefOr[String] = js.native
+  var embeddedRecipientStartURL: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var faxNumber: js.UndefOr[String] = js.native
+  var faxNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the authentication check to use. This value must match one of the authentication types that the account uses.
@@ -102,18 +100,18 @@ trait BulkSendingCopyRecipient extends StObject {
     * these appear as ID Check $ and SMS Auth $. To use ID Check in an envelope, the idCheckConfigurationName should be ID Check $. For SMS,
     * you would use SMS Auth $, and you would also need to add a phone number to the smsAuthentication node.
     */
-  var idCheckConfigurationName: js.UndefOr[String] = js.native
+  var idCheckConfigurationName: js.UndefOr[String] = js.undefined
   
   /**
     * An object that contains input information related to a recipient ID check.
     */
   var idCheckInformationInput: js.UndefOr[
     /* A complex element that contains input information related to a recipient ID check. */ IdCheckInformationInput
-  ] = js.native
+  ] = js.undefined
   
-  var identificationMethod: js.UndefOr[String] = js.native
+  var identificationMethod: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A note sent to the recipient in the signing email.
@@ -126,7 +124,7 @@ trait BulkSendingCopyRecipient extends StObject {
     * Maximum Length: 1000 characters.
     *
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * When `idCheckConfigurationName` is set to `Phone Auth $`, you use this complex type to provide the recipient authentication method details.
@@ -139,24 +137,24 @@ trait BulkSendingCopyRecipient extends StObject {
     *
     *
     */
-  var phoneAuthentication: js.UndefOr[RecipientPhoneAuthentication] = js.native
+  var phoneAuthentication: js.UndefOr[RecipientPhoneAuthentication] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs. Within an envelope, each `recipientId`
     * must be unique, but there is no uniqueness requirement across envelopes. For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * The default signature provider is the DocuSign Electronic signature system. This parameter is used to specify one or more Standards Based Signature
     * (digital signature) providers for the signer to use. [More information.](https://developers.docusign.com/esign-rest-api/guides/standards-based-signatures)
     */
-  var recipientSignatureProviders: js.UndefOr[js.Array[RecipientSignatureProvider]] = js.native
+  var recipientSignatureProviders: js.UndefOr[js.Array[RecipientSignatureProvider]] = js.undefined
   
   /**
     * The name of the role associated with the recipient. This property is optional and is only used in place of a `recipientId`.
     */
-  var roleName: js.UndefOr[String] = js.native
+  var roleName: js.UndefOr[String] = js.undefined
   
   /**
     * When `idCheckConfigurationName` is set to `SMS Auth $`, you use this complex type to provide the recipient authentication method details.
@@ -164,12 +162,12 @@ trait BulkSendingCopyRecipient extends StObject {
     *
     *
     */
-  var smsAuthentication: js.UndefOr[RecipientSMSAuthentication] = js.native
+  var smsAuthentication: js.UndefOr[RecipientSMSAuthentication] = js.undefined
   
   /**
     * Deprecated.
     */
-  var socialAuthentications: js.UndefOr[js.Array[SocialAuthentication]] = js.native
+  var socialAuthentications: js.UndefOr[js.Array[SocialAuthentication]] = js.undefined
   
   /**
     * A list of tabs associated with the recipient. In a bulk send request, each of these recipient tabs must match a recipient tab
@@ -185,7 +183,7 @@ trait BulkSendingCopyRecipient extends StObject {
     * - Radio group tabs (where the name of the `radioGroup` on the envelope is used as the `tabLabel` in the bulk send list)
     * - List tabs
     */
-  var tabs: js.UndefOr[js.Array[BulkSendingCopyTab]] = js.native
+  var tabs: js.UndefOr[js.Array[BulkSendingCopyTab]] = js.undefined
 }
 object BulkSendingCopyRecipient {
   

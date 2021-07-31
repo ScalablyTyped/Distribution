@@ -2,23 +2,21 @@ package typings.w3cWebUsb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USBAlternateInterface extends StObject {
   
-  val alternateSetting: Double = js.native
+  val alternateSetting: Double
   
-  val endpoints: js.Array[USBEndpoint] = js.native
+  val endpoints: js.Array[USBEndpoint]
   
-  val interfaceClass: Double = js.native
+  val interfaceClass: Double
   
-  val interfaceName: js.UndefOr[String] = js.native
+  val interfaceName: js.UndefOr[String] = js.undefined
   
-  val interfaceProtocol: Double = js.native
+  val interfaceProtocol: Double
   
-  val interfaceSubclass: Double = js.native
+  val interfaceSubclass: Double
 }
 object USBAlternateInterface {
   

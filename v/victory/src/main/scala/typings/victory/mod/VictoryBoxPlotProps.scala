@@ -7,19 +7,18 @@ import typings.victory.victoryStrings.right
 import typings.victory.victoryStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryBoxPlotProps
-  extends VictoryCommonProps
+  extends StObject
+     with VictoryCommonProps
      with VictoryDatableProps {
   
   /**
     * The boxWidth prop specifies how wide each box should be. If the whiskerWidth
     * prop is not set, this prop will also determine the width of the whisker crosshair.
     */
-  var boxWidth: js.UndefOr[Double] = js.native
+  var boxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The domainPadding prop specifies a number of pixels of padding to add to the
@@ -27,13 +26,13 @@ trait VictoryBoxPlotProps
     * from the origin to prevent crowding. This prop should be given as an object with
     * numbers specified for x and y.
     */
-  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.native
+  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.undefined
   
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -76,21 +75,21 @@ trait VictoryBoxPlotProps
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.native
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.undefined
   
   /**
     * The labelOrientation prop determines where labels are placed relative to their
     * corresponding data. If this prop is not set, it will be set to “top” for
     * horizontal charts, and “right” for vertical charts.
     */
-  var labelOrientation: js.UndefOr[top | bottom | left | right] = js.native
+  var labelOrientation: js.UndefOr[top | bottom | left | right] = js.undefined
   
   /**
     * When the boolean labels prop is set to true, the values for min, max, median,
     * q1, and q3 will be displayed for each box. For more granular label control, use
     * the individual minLabels, maxLabels, medianLabels, q1Labels, and q3Labels props.
     */
-  var labels: js.UndefOr[Boolean] = js.native
+  var labels: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use the max data accessor prop to define the max value of a box plot.
@@ -105,7 +104,7 @@ trait VictoryBoxPlotProps
     * be used as a max value
     * @example // max="bonds.max", max={["bonds", "max"]}
     */
-  var max: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
+  var max: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
   
   /**
     * The maxComponent prop takes a component instance which will be responsible for rendering
@@ -118,7 +117,7 @@ trait VictoryBoxPlotProps
     * ignored within the custom component itself. If a maxComponent is not provided,
     * VictoryBoxPlot will use its default Whisker component.
     */
-  var maxComponent: js.UndefOr[ReactElement] = js.native
+  var maxComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The maxLabelComponent prop takes a component instance which will be used to render the
@@ -129,7 +128,7 @@ trait VictoryBoxPlotProps
     * ignored within the custom component itself. If maxLabelComponent is omitted, a new
     * VictoryLabel will be created with props described above.
     */
-  var maxLabelComponent: js.UndefOr[ReactElement] = js.native
+  var maxLabelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Use the median data accessor prop to define the median value of a box plot.
@@ -144,7 +143,7 @@ trait VictoryBoxPlotProps
     * be used as a median value
     * @example // median="bonds.median", median={["bonds", "median"]}
     */
-  var median: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
+  var median: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
   
   /**
     * The medianComponent prop takes a component instance which will be responsible for rendering an
@@ -154,7 +153,7 @@ trait VictoryBoxPlotProps
     * in props to the supplied component, or modified or ignored within the custom component itself.
     * If a medianComponent is not provided, VictoryBoxPlot will use its default Line component.
     */
-  var medianComponent: js.UndefOr[ReactElement] = js.native
+  var medianComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The medianLabelComponent prop takes a component instance which will be used to render the label
@@ -164,7 +163,7 @@ trait VictoryBoxPlotProps
     * by passing in props to the supplied component, or modified or ignored within the custom component
     * itself. If medianLabelComponent is omitted, a new VictoryLabel will be created with props described above.
     */
-  var medianLabelComponent: js.UndefOr[ReactElement] = js.native
+  var medianLabelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Use the min data accessor prop to define the min value of a box plot.
@@ -179,7 +178,7 @@ trait VictoryBoxPlotProps
     * be used as a min value
     * @example // min="bonds.min", min={["bonds", "min"]}
     */
-  var min: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
+  var min: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
   
   /**
     * The medianComponent prop takes a component instance which will be responsible for rendering an
@@ -189,7 +188,7 @@ trait VictoryBoxPlotProps
     * in props to the supplied component, or modified or ignored within the custom component itself.
     * If a medianComponent is not provided, VictoryBoxPlot will use its default Line component.
     */
-  var minComponent: js.UndefOr[ReactElement] = js.native
+  var minComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The minLabelComponent prop takes a component instance which will be used to render the label
@@ -199,7 +198,7 @@ trait VictoryBoxPlotProps
     * props to the supplied component, or modified or ignored within the custom component itself. If
     * minLabelComponent is omitted, a new VictoryLabel will be created with props described above.
     */
-  var minLabelComponent: js.UndefOr[ReactElement] = js.native
+  var minLabelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Use the q1 data accessor prop to define the q1 value of a box plot.
@@ -214,7 +213,7 @@ trait VictoryBoxPlotProps
     * be used as a q1 value
     * @example // q1="bonds.q1", q1={["bonds", "q1"]}
     */
-  var q1: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
+  var q1: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
   
   /**
     * The q1Component prop takes a component instance which will be responsible for rendering an
@@ -224,7 +223,7 @@ trait VictoryBoxPlotProps
     * passing in props to the supplied component, or modified or ignored within the custom component
     * itself. If a q1Component is not provided, VictoryBoxPlot will use its default Box component.
     */
-  var q1Component: js.UndefOr[ReactElement] = js.native
+  var q1Component: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The q1LabelComponent prop takes a component instance which will be used to render the label
@@ -234,7 +233,7 @@ trait VictoryBoxPlotProps
     * the supplied component, or modified or ignored within the custom component itself. If
     * q1LabelComponent is omitted, a new VictoryLabel will be created with props described above.
     */
-  var q1LabelComponent: js.UndefOr[ReactElement] = js.native
+  var q1LabelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * Use the q3 data accessor prop to define the q3 value of a box plot.
@@ -249,7 +248,7 @@ trait VictoryBoxPlotProps
     * be used as a q3 value
     * @example // q3="bonds.q3", q3={["bonds", "q3"]}
     */
-  var q3: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.native
+  var q3: js.UndefOr[StringOrNumberOrCallback | js.Array[String]] = js.undefined
   
   /**
     * The q3Component prop takes a component instance which will be responsible for rendering an
@@ -259,7 +258,7 @@ trait VictoryBoxPlotProps
     * passing in props to the supplied component, or modified or ignored within the custom component
     * itself. If a q3Component is not provided, VictoryBoxPlot will use its default Box component.
     */
-  var q3Component: js.UndefOr[ReactElement] = js.native
+  var q3Component: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The q3LabelComponent prop takes a component instance which will be used to render the label
@@ -269,7 +268,7 @@ trait VictoryBoxPlotProps
     * the supplied component, or modified or ignored within the custom component itself. If q3LabelComponent
     * is omitted, a new VictoryLabel will be created with props described above.
     */
-  var q3LabelComponent: js.UndefOr[ReactElement] = js.native
+  var q3LabelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The style prop defines the style of the component. The style prop
@@ -280,14 +279,14 @@ trait VictoryBoxPlotProps
     * layout for components in VictoryChart. Functional styles may be
     * defined for style properties, and they will be evaluated with each datum.
     */
-  var style: js.UndefOr[VictoryBoxPlotStyleInterface] = js.native
+  var style: js.UndefOr[VictoryBoxPlotStyleInterface] = js.undefined
   
   /**
     * The whiskerWidth prop specifies how wide each whisker crosshair should be. If the
     * whiskerWidth prop is not set, the width of the whisker crosshair will match
     * the width of the box.
     */
-  var whiskerWidth: js.UndefOr[Double] = js.native
+  var whiskerWidth: js.UndefOr[Double] = js.undefined
 }
 object VictoryBoxPlotProps {
   

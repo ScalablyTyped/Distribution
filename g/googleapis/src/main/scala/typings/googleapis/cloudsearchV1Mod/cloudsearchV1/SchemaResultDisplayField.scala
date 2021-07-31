@@ -2,29 +2,27 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Display Fields for Search Results
   */
-@js.native
 trait SchemaResultDisplayField extends StObject {
   
   /**
     * The display label for the property.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The operator name of the property.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /**
     * The name value pair for the property.
     */
-  var property: js.UndefOr[SchemaNamedProperty] = js.native
+  var property: js.UndefOr[SchemaNamedProperty] = js.undefined
 }
 object SchemaResultDisplayField {
   

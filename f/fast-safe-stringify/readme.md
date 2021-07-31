@@ -11,8 +11,8 @@ Safely and quickly serialize JavaScript objects
 | Full name          | fast-safe-stringify |
 | Keywords           | stable, stringify, JSON, JSON.stringify, safe, serialize |
 | # releases         | 2 |
-| # dependents       | 288 |
-| # downloads        | 164899287 |
+| # dependents       | 325 |
+| # downloads        | 228739020 |
 | # stars            | 5 |
 
 ## Links

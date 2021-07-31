@@ -2,48 +2,46 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val BlockLevel: OlAttachmentBlockLevel = js.native
+  val BlockLevel: OlAttachmentBlockLevel
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var DisplayName: String = js.native
+  var DisplayName: String
   
-  val FileName: String = js.native
+  val FileName: String
   
-  def GetTemporaryFilePath(): String = js.native
+  def GetTemporaryFilePath(): String
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: js.Any
   
   @JSName("Outlook.Attachment_typekey")
-  var OutlookDotAttachment_typekey: Attachment = js.native
+  var OutlookDotAttachment_typekey: Attachment
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PathName: String = js.native
+  val PathName: String
   
-  var Position: Double = js.native
+  var Position: Double
   
-  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
+  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
-  def SaveAsFile(Path: String): Unit = js.native
+  def SaveAsFile(Path: String): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Size: Double = js.native
+  val Size: Double
   
-  val Type: OlAttachmentType = js.native
+  val Type: OlAttachmentType
 }
 object Attachment {
   

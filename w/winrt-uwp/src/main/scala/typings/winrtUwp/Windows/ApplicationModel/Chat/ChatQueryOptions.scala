@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the criteria for finding chat messages. */
-@js.native
 trait ChatQueryOptions extends StObject {
   
   /** Gets or sets the string to search for the in ChatMessageStore . */
-  var searchString: String = js.native
+  var searchString: String
 }
 object ChatQueryOptions {
   

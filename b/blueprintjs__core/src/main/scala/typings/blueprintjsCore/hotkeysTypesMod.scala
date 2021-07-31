@@ -3,13 +3,13 @@ package typings.blueprintjsCore
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hotkeysTypesMod {
   
-  @js.native
-  trait IHotkeysProps extends IProps {
+  trait IHotkeysProps
+    extends StObject
+       with IProps {
     
     /**
       * In order to make local hotkeys work on elements that are not normally
@@ -19,7 +19,7 @@ object hotkeysTypesMod {
       * of the component. You may even set this value to `null`, which will omit
       * the `tabIndex` from the component decorated by `HotkeysTarget`.
       */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object IHotkeysProps {
     

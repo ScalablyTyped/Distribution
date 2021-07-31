@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosNetworkUsageRule extends StObject {
   
   // If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.
-  var cellularDataBlockWhenRoaming: js.UndefOr[Boolean] = js.native
+  var cellularDataBlockWhenRoaming: js.UndefOr[Boolean] = js.undefined
   
   // If set to true, corresponding managed apps will not be allowed to use cellular data at any time.
-  var cellularDataBlocked: js.UndefOr[Boolean] = js.native
+  var cellularDataBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500
     * elements.
     */
-  var managedApps: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var managedApps: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
 }
 object IosNetworkUsageRule {
   

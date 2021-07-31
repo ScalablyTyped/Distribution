@@ -2,35 +2,63 @@ package typings.hdrHistogramJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramIterationValueMod {
   
   @JSImport("hdr-histogram-js/HistogramIterationValue", JSImport.Default)
   @js.native
-  class default () extends HistogramIterationValue
-  
-  @js.native
-  trait HistogramIterationValue extends StObject {
+  class default ()
+    extends StObject
+       with HistogramIterationValue {
     
+    /* CompleteClass */
     var countAddedInThisIterationStep: Double = js.native
     
+    /* CompleteClass */
     var countAtValueIteratedTo: Double = js.native
     
+    /* CompleteClass */
     var percentile: Double = js.native
     
+    /* CompleteClass */
     var percentileLevelIteratedTo: Double = js.native
     
-    def reset(): Unit = js.native
+    /* CompleteClass */
+    override def reset(): Unit = js.native
     
+    /* CompleteClass */
     var totalCountToThisValue: Double = js.native
     
+    /* CompleteClass */
     var totalValueToThisValue: Double = js.native
     
+    /* CompleteClass */
     var valueIteratedFrom: Double = js.native
     
+    /* CompleteClass */
     var valueIteratedTo: Double = js.native
+  }
+  
+  trait HistogramIterationValue extends StObject {
+    
+    var countAddedInThisIterationStep: Double
+    
+    var countAtValueIteratedTo: Double
+    
+    var percentile: Double
+    
+    var percentileLevelIteratedTo: Double
+    
+    def reset(): Unit
+    
+    var totalCountToThisValue: Double
+    
+    var totalValueToThisValue: Double
+    
+    var valueIteratedFrom: Double
+    
+    var valueIteratedTo: Double
   }
   object HistogramIterationValue {
     

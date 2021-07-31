@@ -2,15 +2,16 @@ package typings.popmotionPopcorn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrapMod {
   
-  @JSImport("@popmotion/popcorn/lib/utils/wrap", JSImport.Default)
+  @JSImport("@popmotion/popcorn/lib/utils/wrap", JSImport.Namespace)
   @js.native
-  def default(min: Double, max: Double): js.Any = js.native
-  @JSImport("@popmotion/popcorn/lib/utils/wrap", JSImport.Default)
-  @js.native
-  def default(min: Double, max: Double, v: Double): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(min: Double, max: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default(min: Double, max: Double, v: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

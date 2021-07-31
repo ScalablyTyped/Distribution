@@ -2,20 +2,18 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The types of timeline markers supported by the MediaPlayer.
   **/
-@js.native
 trait MarkerType extends StObject {
   
-  var advertisement: String = js.native
+  var advertisement: String
   
-  var chapter: String = js.native
+  var chapter: String
   
-  var custom: String = js.native
+  var custom: String
 }
 object MarkerType {
   

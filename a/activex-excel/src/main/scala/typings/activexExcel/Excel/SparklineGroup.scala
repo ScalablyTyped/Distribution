@@ -2,58 +2,158 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineGroup extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Axes: SparkAxes = js.native
+  val Axes: SparkAxes
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var DateRange: String = js.native
+  var DateRange: String
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var DisplayBlanksAs: XlDisplayBlanksAs = js.native
+  var DisplayBlanksAs: XlDisplayBlanksAs
   
-  var DisplayHidden: Boolean = js.native
+  var DisplayHidden: Boolean
   
   @JSName("Excel.SparklineGroup_typekey")
-  var ExcelDotSparklineGroup_typekey: SparklineGroup = js.native
+  var ExcelDotSparklineGroup_typekey: SparklineGroup
   
-  def Item(Index: js.Any): Sparkline = js.native
+  def Item(Index: js.Any): Sparkline
   
-  var LineWeight: js.Any = js.native
+  var LineWeight: js.Any
   
-  def Location(Address: String): Range = js.native
-  def Location(RowIndex: Double): Range = js.native
-  def Location(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def Location(Address: String): Range
+  def Location(RowIndex: Double): Range
+  def Location(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("Location")
-  var Location_Original: Range = js.native
+  var Location_Original: Range
   
-  def Modify(Location: Range, SourceData: String): Unit = js.native
+  def Modify(Location: Range, SourceData: String): Unit
   
-  def ModifyDateRange(DateRange: String): Unit = js.native
+  def ModifyDateRange(DateRange: String): Unit
   
-  def ModifyLocation(Location: Range): Unit = js.native
+  def ModifyLocation(Location: Range): Unit
   
-  def ModifySourceData(SourceData: String): Unit = js.native
+  def ModifySourceData(SourceData: String): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PlotBy: XlSparklineRowCol = js.native
+  var PlotBy: XlSparklineRowCol
   
-  val Points: SparkPoints = js.native
+  val Points: SparkPoints
   
-  val SeriesColor: FormatColor = js.native
+  val SeriesColor: FormatColor
   
-  var SourceData: String = js.native
+  var SourceData: String
   
-  var Type: XlSparkType = js.native
+  var Type: XlSparkType
+}
+object SparklineGroup {
+  
+  @scala.inline
+  def apply(
+    Application: Application,
+    Axes: SparkAxes,
+    Count: Double,
+    Creator: XlCreator,
+    DateRange: String,
+    Delete: () => Unit,
+    DisplayBlanksAs: XlDisplayBlanksAs,
+    DisplayHidden: Boolean,
+    ExcelDotSparklineGroup_typekey: SparklineGroup,
+    Item: js.Any => Sparkline,
+    LineWeight: js.Any,
+    Location: Range,
+    Modify: (Range, String) => Unit,
+    ModifyDateRange: String => Unit,
+    ModifyLocation: Range => Unit,
+    ModifySourceData: String => Unit,
+    Parent: js.Any,
+    PlotBy: XlSparklineRowCol,
+    Points: SparkPoints,
+    SeriesColor: FormatColor,
+    SourceData: String,
+    Type: XlSparkType
+  ): SparklineGroup = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Axes = Axes.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DateRange = DateRange.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), DisplayBlanksAs = DisplayBlanksAs.asInstanceOf[js.Any], DisplayHidden = DisplayHidden.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), LineWeight = LineWeight.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any], Modify = js.Any.fromFunction2(Modify), ModifyDateRange = js.Any.fromFunction1(ModifyDateRange), ModifyLocation = js.Any.fromFunction1(ModifyLocation), ModifySourceData = js.Any.fromFunction1(ModifySourceData), Parent = Parent.asInstanceOf[js.Any], PlotBy = PlotBy.asInstanceOf[js.Any], Points = Points.asInstanceOf[js.Any], SeriesColor = SeriesColor.asInstanceOf[js.Any], SourceData = SourceData.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.SparklineGroup_typekey")(ExcelDotSparklineGroup_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SparklineGroup]
+  }
+  
+  @scala.inline
+  implicit class SparklineGroupMutableBuilder[Self <: SparklineGroup] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAxes(value: SparkAxes): Self = StObject.set(x, "Axes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDateRange(value: String): Self = StObject.set(x, "DateRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setDisplayBlanksAs(value: XlDisplayBlanksAs): Self = StObject.set(x, "DisplayBlanksAs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDisplayHidden(value: Boolean): Self = StObject.set(x, "DisplayHidden", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExcelDotSparklineGroup_typekey(value: SparklineGroup): Self = StObject.set(x, "Excel.SparklineGroup_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setItem(value: js.Any => Sparkline): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setLineWeight(value: js.Any): Self = StObject.set(x, "LineWeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setModify(value: (Range, String) => Unit): Self = StObject.set(x, "Modify", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setModifyDateRange(value: String => Unit): Self = StObject.set(x, "ModifyDateRange", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setModifyLocation(value: Range => Unit): Self = StObject.set(x, "ModifyLocation", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPlotBy(value: XlSparklineRowCol): Self = StObject.set(x, "PlotBy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPoints(value: SparkPoints): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSeriesColor(value: FormatColor): Self = StObject.set(x, "SeriesColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSourceData(value: String): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: XlSparkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
 }

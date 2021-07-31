@@ -33,15 +33,14 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptionKeyNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionKeyNotFoundExceptionDetails> * / any */ @js.native
-  trait EncryptionKeyNotFoundException
-    extends BatchGetRepositoriesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionKeyNotFoundExceptionDetails> * / any */ trait EncryptionKeyNotFoundException
+    extends StObject
+       with BatchGetRepositoriesExceptionsUnion
        with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with CreateRepositoryExceptionsUnion
@@ -73,15 +72,13 @@ object typesEncryptionKeyNotFoundExceptionMod {
        with UpdatePullRequestStatusExceptionsUnion
        with UpdateRepositoryDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException
   }
   object EncryptionKeyNotFoundException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException
-    ): EncryptionKeyNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): EncryptionKeyNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyNotFoundException")
       __obj.asInstanceOf[EncryptionKeyNotFoundException]
     }
     
@@ -95,6 +92,5 @@ object typesEncryptionKeyNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait EncryptionKeyNotFoundExceptionDetails extends StObject
 }

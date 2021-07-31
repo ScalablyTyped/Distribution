@@ -3,17 +3,15 @@ package typings.mz.anon
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Persistent extends StObject {
   
-  var encoding: js.UndefOr[BufferEncoding | Null] = js.native
+  var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object Persistent {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subnetMod {
@@ -94,6 +93,10 @@ object subnetMod {
   /* static members */
   object Subnet {
     
+    @JSImport("@pulumi/aws/ec2/subnet", "Subnet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Subnet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -103,29 +106,23 @@ object subnetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/subnet", "Subnet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Subnet = js.native
-    @JSImport("@pulumi/aws/ec2/subnet", "Subnet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Subnet = js.native
-    @JSImport("@pulumi/aws/ec2/subnet", "Subnet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SubnetState): Subnet = js.native
-    @JSImport("@pulumi/aws/ec2/subnet", "Subnet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SubnetState, opts: CustomResourceOptions): Subnet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Subnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Subnet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Subnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Subnet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SubnetState): Subnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Subnet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SubnetState, opts: CustomResourceOptions): Subnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Subnet]
     
     /**
       * Returns true if the given object is an instance of Subnet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/subnet", "Subnet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/subnet.Subnet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/subnet.Subnet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/subnet.Subnet */ Boolean]
   }
   
-  @js.native
   trait SubnetArgs extends StObject {
     
     /**
@@ -133,50 +130,50 @@ object subnetMod {
       * that network interfaces created in the specified subnet should be
       * assigned an IPv6 address. Default is `false`
       */
-    val assignIpv6AddressOnCreation: js.UndefOr[Input[Boolean]] = js.native
+    val assignIpv6AddressOnCreation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AZ for the subnet.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AZ ID of the subnet.
       */
-    val availabilityZoneId: js.UndefOr[Input[String]] = js.native
+    val availabilityZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CIDR block for the subnet.
       */
-    val cidrBlock: Input[String] = js.native
+    val cidrBlock: Input[String]
     
     /**
       * The IPv6 network range for the subnet,
       * in CIDR notation. The subnet size must use a /64 prefix length.
       */
-    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify true to indicate
       * that instances launched into the subnet should be assigned
       * a public IP address. Default is `false`.
       */
-    val mapPublicIpOnLaunch: js.UndefOr[Input[Boolean]] = js.native
+    val mapPublicIpOnLaunch: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: js.UndefOr[Input[String]] = js.native
+    val outpostArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC ID.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object SubnetArgs {
     
@@ -239,73 +236,72 @@ object subnetMod {
     }
   }
   
-  @js.native
   trait SubnetState extends StObject {
     
     /**
       * The ARN of the subnet.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify true to indicate
       * that network interfaces created in the specified subnet should be
       * assigned an IPv6 address. Default is `false`
       */
-    val assignIpv6AddressOnCreation: js.UndefOr[Input[Boolean]] = js.native
+    val assignIpv6AddressOnCreation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The AZ for the subnet.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AZ ID of the subnet.
       */
-    val availabilityZoneId: js.UndefOr[Input[String]] = js.native
+    val availabilityZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CIDR block for the subnet.
       */
-    val cidrBlock: js.UndefOr[Input[String]] = js.native
+    val cidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv6 network range for the subnet,
       * in CIDR notation. The subnet size must use a /64 prefix length.
       */
-    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The association ID for the IPv6 CIDR block.
       */
-    val ipv6CidrBlockAssociationId: js.UndefOr[Input[String]] = js.native
+    val ipv6CidrBlockAssociationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify true to indicate
       * that instances launched into the subnet should be assigned
       * a public IP address. Default is `false`.
       */
-    val mapPublicIpOnLaunch: js.UndefOr[Input[Boolean]] = js.native
+    val mapPublicIpOnLaunch: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: js.UndefOr[Input[String]] = js.native
+    val outpostArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the subnet.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC ID.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object SubnetState {
     

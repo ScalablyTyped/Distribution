@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBuildInput extends StObject {
   
   /**
     * A unique identifier for a build to update. You can use either the build ID or ARN value. 
     */
-  var BuildId: BuildIdOrArn = js.native
+  var BuildId: BuildIdOrArn
   
   /**
     * A descriptive label that is associated with a build. Build names do not need to be unique. 
     */
-  var Name: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Version information that is associated with a build or script. Version strings do not need to be unique.
     */
-  var Version: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object UpdateBuildInput {
   

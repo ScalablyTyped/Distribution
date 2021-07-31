@@ -5,23 +5,21 @@ import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandMod {
   
-  @js.native
   trait Command[ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration] extends StObject {
     
-    val input: InputType = js.native
+    val input: InputType
     
-    val middlewareStack: MiddlewareStack[InputType, OutputType] = js.native
+    val middlewareStack: MiddlewareStack[InputType, OutputType]
     
     def resolveMiddleware(
       stack: MiddlewareStack[ClientInput, ClientOutput],
       configuration: ResolvedConfiguration,
       options: js.Any
-    ): Handler[InputType, OutputType] = js.native
+    ): Handler[InputType, OutputType]
   }
   object Command {
     
@@ -36,7 +34,7 @@ object commandMod {
     }
     
     @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command[_, _, _, _, _], ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration] (val x: Self with (Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration])) extends AnyVal {
+    implicit class CommandMutableBuilder[Self <: Command[?, ?, ?, ?, ?], ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration] (val x: Self & (Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration])) extends AnyVal {
       
       @scala.inline
       def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])

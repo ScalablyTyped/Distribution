@@ -2,18 +2,16 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 弹幕内容 */
-@js.native
 trait Danmu extends StObject {
   
   /** 弹幕颜色 */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /** 弹幕文字 */
-  var text: String = js.native
+  var text: String
 }
 object Danmu {
   

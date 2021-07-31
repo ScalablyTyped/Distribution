@@ -2,13 +2,13 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TiledImageOptions extends ImageOptions {
+trait TiledImageOptions
+  extends StObject
+     with ImageOptions {
   
-  var tileSource: String | js.Object = js.native
+  var tileSource: String | js.Object
 }
 object TiledImageOptions {
   

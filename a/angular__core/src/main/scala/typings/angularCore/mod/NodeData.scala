@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,10 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This way, no usage site can get a `NodeData` from view.nodes and then use it for different
   * purposes.
   */
-@js.native
 trait NodeData extends StObject {
   
-  var __brand: js.Any = js.native
+  var __brand: js.Any
 }
 object NodeData {
   

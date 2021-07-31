@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyCredentialRequestOptions extends StObject {
   
-  var allowCredentials: js.UndefOr[js.Array[PublicKeyCredentialDescriptor]] = js.native
+  var allowCredentials: js.UndefOr[js.Array[PublicKeyCredentialDescriptor]] = js.undefined
   
-  var challenge: BufferSource = js.native
+  var challenge: BufferSource
   
-  var extensions: js.UndefOr[AuthenticationExtensionsClientInputs] = js.native
+  var extensions: js.UndefOr[AuthenticationExtensionsClientInputs] = js.undefined
   
-  var rpId: js.UndefOr[java.lang.String] = js.native
+  var rpId: js.UndefOr[java.lang.String] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var userVerification: js.UndefOr[UserVerificationRequirement] = js.native
+  var userVerification: js.UndefOr[UserVerificationRequirement] = js.undefined
 }
 object PublicKeyCredentialRequestOptions {
   

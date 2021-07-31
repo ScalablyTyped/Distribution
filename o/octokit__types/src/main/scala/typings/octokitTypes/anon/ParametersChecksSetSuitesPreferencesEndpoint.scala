@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ChecksSetSuitesPreferencesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersChecksSetSuitesPreferencesEndpoint extends StObject {
   
-  var parameters: ChecksSetSuitesPreferencesEndpoint = js.native
+  var parameters: ChecksSetSuitesPreferencesEndpoint
   
-  var request: ChecksSetSuitesPreferencesRequestOptions = js.native
+  var request: ChecksSetSuitesPreferencesRequestOptions
   
-  var response: OctokitResponse[ChecksSetSuitesPreferencesResponseData] = js.native
+  var response: OctokitResponse[ChecksSetSuitesPreferencesResponseData]
 }
 object ParametersChecksSetSuitesPreferencesEndpoint {
   

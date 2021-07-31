@@ -8,7 +8,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -41,7 +40,7 @@ object mod {
   trait Bumblebee extends EventEmitter {
     
     def addHotword(name: String): Unit = js.native
-    def addHotword(name: String, data: js.UndefOr[scala.Nothing], sensitivity: Double): Unit = js.native
+    def addHotword(name: String, data: Unit, sensitivity: Double): Unit = js.native
     def addHotword(name: String, data: Uint8Array): Unit = js.native
     def addHotword(name: String, data: Uint8Array, sensitivity: Double): Unit = js.native
     
@@ -70,10 +69,9 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait VoiceEngine extends StObject {
     
-    def processFrame(data: js.Any): Unit = js.native
+    def processFrame(data: js.Any): Unit
   }
   object VoiceEngine {
     
@@ -91,7 +89,6 @@ object mod {
     }
   }
   
-  @js.native
   trait VoiceProcessor extends StObject {
     
     def start(
@@ -101,9 +98,9 @@ object mod {
       errorCallback: js.Function1[/* e */ Error, Unit],
       audioProcessCallback: js.Function1[/* data */ js.Any, Unit],
       audioContextCallback: js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object VoiceProcessor {
     

@@ -3,34 +3,32 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentLibraryVersion extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Comments: String = js.native
+  val Comments: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Modified: VarDate = js.native
+  val Modified: VarDate
   
-  val ModifiedBy: String = js.native
+  val ModifiedBy: String
   
   @JSName("Office.DocumentLibraryVersion_typekey")
-  var OfficeDotDocumentLibraryVersion_typekey: DocumentLibraryVersion = js.native
+  var OfficeDotDocumentLibraryVersion_typekey: DocumentLibraryVersion
   
-  def Open(): js.Any = js.native
+  def Open(): js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Restore(): js.Any = js.native
+  def Restore(): js.Any
 }
 object DocumentLibraryVersion {
   

@@ -2,15 +2,13 @@ package typings.casperjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseValues extends StObject {
   
-  var expected: Boolean = js.native
+  var expected: Boolean
   
-  var subject: Boolean = js.native
+  var subject: Boolean
 }
 object CaseValues {
   

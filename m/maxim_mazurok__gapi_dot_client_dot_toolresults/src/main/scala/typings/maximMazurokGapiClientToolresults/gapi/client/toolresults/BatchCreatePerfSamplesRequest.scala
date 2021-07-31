@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreatePerfSamplesRequest extends StObject {
   
   /** The set of PerfSamples to create should not include existing timestamps */
-  var perfSamples: js.UndefOr[js.Array[PerfSample]] = js.native
+  var perfSamples: js.UndefOr[js.Array[PerfSample]] = js.undefined
 }
 object BatchCreatePerfSamplesRequest {
   

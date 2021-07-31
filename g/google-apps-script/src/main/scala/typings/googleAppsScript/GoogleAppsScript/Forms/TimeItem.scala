@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,38 +14,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addTimeItem();
   *     item.setTitle('What time do you usually wake up in the morning?');
   */
-@js.native
 trait TimeItem extends StObject {
   
-  def createResponse(hour: Integer, minute: Integer): ItemResponse = js.native
+  def createResponse(hour: Integer, minute: Integer): ItemResponse
   
-  def duplicate(): TimeItem = js.native
+  def duplicate(): TimeItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setGeneralFeedback(feedback: QuizFeedback): TimeItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): TimeItem
   
-  def setHelpText(text: String): TimeItem = js.native
+  def setHelpText(text: String): TimeItem
   
-  def setPoints(points: Integer): TimeItem = js.native
+  def setPoints(points: Integer): TimeItem
   
-  def setRequired(enabled: Boolean): TimeItem = js.native
+  def setRequired(enabled: Boolean): TimeItem
   
-  def setTitle(title: String): TimeItem = js.native
+  def setTitle(title: String): TimeItem
 }
 object TimeItem {
   

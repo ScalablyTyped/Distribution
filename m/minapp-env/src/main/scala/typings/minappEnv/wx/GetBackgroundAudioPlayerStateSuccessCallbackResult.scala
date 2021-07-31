@@ -5,23 +5,21 @@ import typings.minappEnv.minappEnvNumbers.`1`
 import typings.minappEnv.minappEnvNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackgroundAudioPlayerStateSuccessCallbackResult extends StObject {
   
   /** 选定音频的播放位置（单位：s），只有在音乐播放中时返回 */
-  var currentPosition: Double = js.native
+  var currentPosition: Double
   
   /** 歌曲数据链接，只有在音乐播放中时返回 */
-  var dataUrl: String = js.native
+  var dataUrl: String
   
   /** 音频的下载进度百分比，只有在音乐播放中时返回 */
-  var downloadPercent: Double = js.native
+  var downloadPercent: Double
   
   /** 选定音频的长度（单位：s），只有在音乐播放中时返回 */
-  var duration: Double = js.native
+  var duration: Double
   
   /** 播放状态
     *
@@ -29,7 +27,7 @@ trait GetBackgroundAudioPlayerStateSuccessCallbackResult extends StObject {
     * - 0: 暂停中;
     * - 1: 播放中;
     * - 2: 没有音乐播放; */
-  var status: `0` | `1` | `2` = js.native
+  var status: `0` | `1` | `2`
 }
 object GetBackgroundAudioPlayerStateSuccessCallbackResult {
   

@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComprehendMedical extends Service {
   
   @JSName("config")
-  var config_ComprehendMedical: ConfigBase with ClientConfiguration = js.native
+  var config_ComprehendMedical: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Gets the properties associated with a medical entities detection job. Use this operation to get the status of a detection job.

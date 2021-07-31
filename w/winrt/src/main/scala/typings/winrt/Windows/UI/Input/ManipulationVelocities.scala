@@ -3,17 +3,15 @@ package typings.winrt.Windows.UI.Input
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManipulationVelocities extends StObject {
   
-  var angular: Double = js.native
+  var angular: Double
   
-  var expansion: Double = js.native
+  var expansion: Double
   
-  var linear: Point = js.native
+  var linear: Point
 }
 object ManipulationVelocities {
   

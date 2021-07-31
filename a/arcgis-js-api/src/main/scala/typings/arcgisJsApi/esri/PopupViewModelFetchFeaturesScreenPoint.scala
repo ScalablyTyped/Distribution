@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupViewModelFetchFeaturesScreenPoint extends Object {
+trait PopupViewModelFetchFeaturesScreenPoint
+  extends StObject
+     with Object {
   
   /**
     * The x coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#fetchFeatures)
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#fetchFeatures)
     */
-  var y: Double = js.native
+  var y: Double
 }
 object PopupViewModelFetchFeaturesScreenPoint {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterWorkspaceDirectoryRequest extends StObject {
   
   /**
     * The identifier of the directory. You cannot register a directory if it does not have a status of Active. If the directory does not have a status of Active, you will receive an InvalidResourceStateException error. If you have already registered the maximum number of directories that you can register with Amazon WorkSpaces, you will receive a ResourceLimitExceededException error. Deregister directories that you are not using for WorkSpaces, and try again.
     */
-  var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.workspacesMod.DirectoryId
   
   /**
     * Indicates whether self-service capabilities are enabled or disabled.
     */
-  var EnableSelfService: js.UndefOr[BooleanObject] = js.native
+  var EnableSelfService: js.UndefOr[BooleanObject] = js.undefined
   
   /**
     * Indicates whether Amazon WorkDocs is enabled or disabled. If you have enabled this parameter and WorkDocs is not available in the Region, you will receive an OperationNotSupportedException error. Set EnableWorkDocs to disabled, and try again.
     */
-  var EnableWorkDocs: BooleanObject = js.native
+  var EnableWorkDocs: BooleanObject
   
   /**
     * The identifiers of the subnets for your virtual private cloud (VPC). Make sure that the subnets are in supported Availability Zones. The subnets must also be in separate Availability Zones. If these conditions are not met, you will receive an OperationNotSupportedException error.
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.workspacesMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.workspacesMod.SubnetIds] = js.undefined
   
   /**
     * The tags associated with the directory.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Indicates whether your WorkSpace directory is dedicated or shared. To use Bring Your Own License (BYOL) images, this value must be set to DEDICATED and your AWS account must be enabled for BYOL. If your account has not been enabled for BYOL, you will receive an InvalidParameterValuesException error. For more information about BYOL images, see Bring Your Own Windows Desktop Images.
     */
-  var Tenancy: js.UndefOr[typings.awsSdk.workspacesMod.Tenancy] = js.native
+  var Tenancy: js.UndefOr[typings.awsSdk.workspacesMod.Tenancy] = js.undefined
 }
 object RegisterWorkspaceDirectoryRequest {
   

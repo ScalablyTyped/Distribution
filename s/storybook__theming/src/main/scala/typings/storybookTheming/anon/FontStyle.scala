@@ -2,15 +2,13 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyle extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var fontStyle: String = js.native
+  var fontStyle: String
 }
 object FontStyle {
   

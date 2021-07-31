@@ -9,8 +9,8 @@
 | Full name          | filesystem |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 57481 |
+| # dependents       | 7 |
+| # downloads        | 48321 |
 | # stars            | 0 |
 
 ## Links

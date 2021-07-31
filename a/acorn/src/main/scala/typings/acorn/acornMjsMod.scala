@@ -8,10 +8,13 @@ import typings.acorn.mod.Position
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acornMjsMod {
+  
+  @JSImport("acorn/dist/acorn.mjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("acorn/dist/acorn.mjs", "Node")
   @js.native
@@ -30,54 +33,56 @@ object acornMjsMod {
   }
   object Parser {
     
-    /* static member */
-    @JSImport("acorn/dist/acorn.mjs", "Parser.extend")
+    @JSImport("acorn/dist/acorn.mjs", "Parser")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def extend(
       plugins: (js.Function1[
-          /* BaseParser */ TypeofParser with (Instantiable3[
+          /* BaseParser */ TypeofParser & (Instantiable3[
             /* options */ Options, 
             /* input */ String, 
             /* startPos */ js.UndefOr[Double], 
             typings.acorn.mod.Parser
           ]), 
-          TypeofParser with (Instantiable3[
+          TypeofParser & (Instantiable3[
             /* options */ Options, 
             /* input */ String, 
             /* startPos */ js.UndefOr[Double], 
             typings.acorn.mod.Parser
           ])
         ])*
-    ): TypeofParser with (Instantiable3[
+    ): TypeofParser & (Instantiable3[
         /* options */ Options, 
         /* input */ String, 
         /* startPos */ js.UndefOr[Double], 
         typings.acorn.mod.Parser
-      ]) = js.native
+      ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugins.asInstanceOf[js.Any]).asInstanceOf[TypeofParser & (Instantiable3[
+        /* options */ Options, 
+        /* input */ String, 
+        /* startPos */ js.UndefOr[Double], 
+        typings.acorn.mod.Parser
+      ])]
     
     /* static member */
-    @JSImport("acorn/dist/acorn.mjs", "Parser.parse")
-    @js.native
-    def parse(input: String): typings.acorn.mod.Node = js.native
-    @JSImport("acorn/dist/acorn.mjs", "Parser.parse")
-    @js.native
-    def parse(input: String, options: Options): typings.acorn.mod.Node = js.native
+    @scala.inline
+    def parse(input: String): typings.acorn.mod.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.acorn.mod.Node]
+    @scala.inline
+    def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
     
     /* static member */
-    @JSImport("acorn/dist/acorn.mjs", "Parser.parseExpressionAt")
-    @js.native
-    def parseExpressionAt(input: String, pos: Double): typings.acorn.mod.Node = js.native
-    @JSImport("acorn/dist/acorn.mjs", "Parser.parseExpressionAt")
-    @js.native
-    def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = js.native
+    @scala.inline
+    def parseExpressionAt(input: String, pos: Double): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
+    @scala.inline
+    def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
     
     /* static member */
-    @JSImport("acorn/dist/acorn.mjs", "Parser.tokenizer")
-    @js.native
-    def tokenizer(input: String): Call = js.native
-    @JSImport("acorn/dist/acorn.mjs", "Parser.tokenizer")
-    @js.native
-    def tokenizer(input: String, options: Options): Call = js.native
+    @scala.inline
+    def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
+    @scala.inline
+    def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
   }
   
   @JSImport("acorn/dist/acorn.mjs", "SourceLocation")
@@ -119,27 +124,21 @@ object acornMjsMod {
   @js.native
   val defaultOptions: Options = js.native
   
-  @JSImport("acorn/dist/acorn.mjs", "getLineInfo")
-  @js.native
-  def getLineInfo(input: String, offset: Double): Position = js.native
+  @scala.inline
+  def getLineInfo(input: String, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineInfo")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
   
-  @JSImport("acorn/dist/acorn.mjs", "isIdentifierChar")
-  @js.native
-  def isIdentifierChar(code: Double): Boolean = js.native
-  @JSImport("acorn/dist/acorn.mjs", "isIdentifierChar")
-  @js.native
-  def isIdentifierChar(code: Double, astral: Boolean): Boolean = js.native
+  @scala.inline
+  def isIdentifierChar(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isIdentifierChar(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("acorn/dist/acorn.mjs", "isIdentifierStart")
-  @js.native
-  def isIdentifierStart(code: Double): Boolean = js.native
-  @JSImport("acorn/dist/acorn.mjs", "isIdentifierStart")
-  @js.native
-  def isIdentifierStart(code: Double, astral: Boolean): Boolean = js.native
+  @scala.inline
+  def isIdentifierStart(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isIdentifierStart(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("acorn/dist/acorn.mjs", "isNewLine")
-  @js.native
-  def isNewLine(code: Double): Boolean = js.native
+  @scala.inline
+  def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("acorn/dist/acorn.mjs", "lineBreak")
   @js.native
@@ -149,25 +148,19 @@ object acornMjsMod {
   @js.native
   val lineBreakG: RegExp = js.native
   
-  @JSImport("acorn/dist/acorn.mjs", "parse")
-  @js.native
-  def parse(input: String): typings.acorn.mod.Node = js.native
-  @JSImport("acorn/dist/acorn.mjs", "parse")
-  @js.native
-  def parse(input: String, options: Options): typings.acorn.mod.Node = js.native
+  @scala.inline
+  def parse(input: String): typings.acorn.mod.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.acorn.mod.Node]
+  @scala.inline
+  def parse(input: String, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
   
-  @JSImport("acorn/dist/acorn.mjs", "parseExpressionAt")
-  @js.native
-  def parseExpressionAt(input: String): typings.acorn.mod.Node = js.native
-  @JSImport("acorn/dist/acorn.mjs", "parseExpressionAt")
-  @js.native
-  def parseExpressionAt(input: String, pos: js.UndefOr[scala.Nothing], options: Options): typings.acorn.mod.Node = js.native
-  @JSImport("acorn/dist/acorn.mjs", "parseExpressionAt")
-  @js.native
-  def parseExpressionAt(input: String, pos: Double): typings.acorn.mod.Node = js.native
-  @JSImport("acorn/dist/acorn.mjs", "parseExpressionAt")
-  @js.native
-  def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = js.native
+  @scala.inline
+  def parseExpressionAt(input: String): typings.acorn.mod.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any]).asInstanceOf[typings.acorn.mod.Node]
+  @scala.inline
+  def parseExpressionAt(input: String, pos: Double): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
+  @scala.inline
+  def parseExpressionAt(input: String, pos: Double, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
+  @scala.inline
+  def parseExpressionAt(input: String, pos: Unit, options: Options): typings.acorn.mod.Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.acorn.mod.Node]
   
   object tokContexts {
     
@@ -308,6 +301,18 @@ object acornMjsMod {
     @scala.inline
     def break_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_break")(x.asInstanceOf[js.Any])
     
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._case")
+    @js.native
+    val `case`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._catch")
+    @js.native
+    val `catch`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._class")
+    @js.native
+    val `class`: typings.acorn.mod.TokenType = js.native
+    
     @JSImport("acorn/dist/acorn.mjs", "tokTypes.colon")
     @js.native
     def colon: typings.acorn.mod.TokenType = js.native
@@ -351,6 +356,10 @@ object acornMjsMod {
     @scala.inline
     def delete_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
     
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._do")
+    @js.native
+    val `do`: typings.acorn.mod.TokenType = js.native
+    
     @JSImport("acorn/dist/acorn.mjs", "tokTypes.dollarBraceL")
     @js.native
     def dollarBraceL: typings.acorn.mod.TokenType = js.native
@@ -368,6 +377,10 @@ object acornMjsMod {
     def ellipsis: typings.acorn.mod.TokenType = js.native
     @scala.inline
     def ellipsis_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ellipsis")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._else")
+    @js.native
+    val `else`: typings.acorn.mod.TokenType = js.native
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes.eof")
     @js.native
@@ -390,10 +403,23 @@ object acornMjsMod {
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._export")
     @js.native
-    def export: typings.acorn.mod.TokenType = js.native
+    val `export`: typings.acorn.mod.TokenType = js.native
     
-    @scala.inline
-    def export_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_export")(x.asInstanceOf[js.Any])
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._extends")
+    @js.native
+    val `extends`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._false")
+    @js.native
+    val `false`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._finally")
+    @js.native
+    val `finally`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._for")
+    @js.native
+    val `for`: typings.acorn.mod.TokenType = js.native
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._function")
     @js.native
@@ -401,6 +427,14 @@ object acornMjsMod {
     
     @scala.inline
     def function_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_function")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._if")
+    @js.native
+    val `if`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._import")
+    @js.native
+    val `import`: typings.acorn.mod.TokenType = js.native
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._in")
     @js.native
@@ -445,6 +479,14 @@ object acornMjsMod {
     def name: typings.acorn.mod.TokenType = js.native
     @scala.inline
     def name_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._new")
+    @js.native
+    val `new`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._null")
+    @js.native
+    val `null`: typings.acorn.mod.TokenType = js.native
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes.num")
     @js.native
@@ -494,6 +536,10 @@ object acornMjsMod {
     @scala.inline
     def relational_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relational")(x.asInstanceOf[js.Any])
     
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._return")
+    @js.native
+    val `return`: typings.acorn.mod.TokenType = js.native
+    
     @JSImport("acorn/dist/acorn.mjs", "tokTypes.semi")
     @js.native
     def semi: typings.acorn.mod.TokenType = js.native
@@ -524,6 +570,10 @@ object acornMjsMod {
     @scala.inline
     def string_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
     
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._super")
+    @js.native
+    val `super`: typings.acorn.mod.TokenType = js.native
+    
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._switch")
     @js.native
     def switch: typings.acorn.mod.TokenType = js.native
@@ -536,80 +586,6 @@ object acornMjsMod {
     def template: typings.acorn.mod.TokenType = js.native
     @scala.inline
     def template_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("template")(x.asInstanceOf[js.Any])
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._typeof")
-    @js.native
-    def typeof: typings.acorn.mod.TokenType = js.native
-    
-    @scala.inline
-    def typeof_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_typeof")(x.asInstanceOf[js.Any])
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._void")
-    @js.native
-    def void: typings.acorn.mod.TokenType = js.native
-    
-    @scala.inline
-    def void_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_void")(x.asInstanceOf[js.Any])
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._case")
-    @js.native
-    val `case`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._catch")
-    @js.native
-    val `catch`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._class")
-    @js.native
-    val `class`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._do")
-    @js.native
-    val `do`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._else")
-    @js.native
-    val `else`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._extends")
-    @js.native
-    val `extends`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._false")
-    @js.native
-    val `false`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._finally")
-    @js.native
-    val `finally`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._for")
-    @js.native
-    val `for`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._if")
-    @js.native
-    val `if`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._import")
-    @js.native
-    val `import`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._new")
-    @js.native
-    val `new`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._null")
-    @js.native
-    val `null`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._return")
-    @js.native
-    val `return`: typings.acorn.mod.TokenType = js.native
-    
-    @JSImport("acorn/dist/acorn.mjs", "tokTypes._super")
-    @js.native
-    val `super`: typings.acorn.mod.TokenType = js.native
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._this")
     @js.native
@@ -627,9 +603,23 @@ object acornMjsMod {
     @js.native
     val `try`: typings.acorn.mod.TokenType = js.native
     
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._typeof")
+    @js.native
+    def typeof: typings.acorn.mod.TokenType = js.native
+    
+    @scala.inline
+    def typeof_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_typeof")(x.asInstanceOf[js.Any])
+    
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._var")
     @js.native
     val `var`: typings.acorn.mod.TokenType = js.native
+    
+    @JSImport("acorn/dist/acorn.mjs", "tokTypes._void")
+    @js.native
+    def void: typings.acorn.mod.TokenType = js.native
+    
+    @scala.inline
+    def void_=(x: typings.acorn.mod.TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_void")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn/dist/acorn.mjs", "tokTypes._while")
     @js.native
@@ -640,12 +630,10 @@ object acornMjsMod {
     val `with`: typings.acorn.mod.TokenType = js.native
   }
   
-  @JSImport("acorn/dist/acorn.mjs", "tokenizer")
-  @js.native
-  def tokenizer(input: String): Call = js.native
-  @JSImport("acorn/dist/acorn.mjs", "tokenizer")
-  @js.native
-  def tokenizer(input: String, options: Options): Call = js.native
+  @scala.inline
+  def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
+  @scala.inline
+  def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
   
   @JSImport("acorn/dist/acorn.mjs", "version")
   @js.native

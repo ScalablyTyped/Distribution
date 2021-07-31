@@ -2,27 +2,25 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromoteChatMemberOptions extends StObject {
   
-  var can_change_info: js.UndefOr[Boolean] = js.native
+  var can_change_info: js.UndefOr[Boolean] = js.undefined
   
-  var can_delete_messages: js.UndefOr[Boolean] = js.native
+  var can_delete_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_edit_messages: js.UndefOr[Boolean] = js.native
+  var can_edit_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_invite_users: js.UndefOr[Boolean] = js.native
+  var can_invite_users: js.UndefOr[Boolean] = js.undefined
   
-  var can_pin_messages: js.UndefOr[Boolean] = js.native
+  var can_pin_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_post_messages: js.UndefOr[Boolean] = js.native
+  var can_post_messages: js.UndefOr[Boolean] = js.undefined
   
-  var can_promote_members: js.UndefOr[Boolean] = js.native
+  var can_promote_members: js.UndefOr[Boolean] = js.undefined
   
-  var can_restrict_members: js.UndefOr[Boolean] = js.native
+  var can_restrict_members: js.UndefOr[Boolean] = js.undefined
 }
 object PromoteChatMemberOptions {
   

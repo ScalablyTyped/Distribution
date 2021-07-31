@@ -6,17 +6,15 @@ import typings.ionicCore.mod.Side
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuInterfaceMod {
   
-  @js.native
   trait MenuChangeEventDetail extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var open: Boolean = js.native
+    var open: Boolean
   }
   object MenuChangeEventDetail {
     
@@ -37,22 +35,21 @@ object menuInterfaceMod {
     }
   }
   
-  @js.native
   trait MenuControllerI extends StObject {
     
-    def _createAnimation(`type`: String, menuCmp: MenuI): js.Promise[Animation] = js.native
+    def _createAnimation(`type`: String, menuCmp: MenuI): js.Promise[Animation]
     
-    def _register(menu: MenuI): Unit = js.native
+    def _register(menu: MenuI): Unit
     
-    def _setActiveMenu(menu: MenuI): Unit = js.native
+    def _setActiveMenu(menu: MenuI): Unit
     
-    def _setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = js.native
+    def _setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean]
     
-    def _unregister(menu: MenuI): Unit = js.native
+    def _unregister(menu: MenuI): Unit
     
-    def getMenus(): js.Promise[js.Array[HTMLIonMenuElement]] = js.native
+    def getMenus(): js.Promise[js.Array[HTMLIonMenuElement]]
     
-    def getOpenSync(): js.UndefOr[HTMLIonMenuElement] = js.native
+    def getOpenSync(): js.UndefOr[HTMLIonMenuElement]
   }
   object MenuControllerI {
     

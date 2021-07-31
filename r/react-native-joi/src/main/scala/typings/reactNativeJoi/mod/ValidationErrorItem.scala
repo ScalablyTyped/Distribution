@@ -2,21 +2,19 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationErrorItem extends StObject {
   
-  var context: js.UndefOr[Context] = js.native
+  var context: js.UndefOr[Context] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var options: js.UndefOr[ValidationOptions] = js.native
+  var options: js.UndefOr[ValidationOptions] = js.undefined
   
-  var path: js.Array[String] = js.native
+  var path: js.Array[String]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ValidationErrorItem {
   

@@ -2,76 +2,74 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleConditions extends StObject {
   
-  val Account: AccountRuleCondition = js.native
+  val Account: AccountRuleCondition
   
-  val AnyCategory: RuleCondition = js.native
+  val AnyCategory: RuleCondition
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Body: TextRuleCondition = js.native
+  val Body: TextRuleCondition
   
-  val BodyOrSubject: TextRuleCondition = js.native
+  val BodyOrSubject: TextRuleCondition
   
-  val CC: RuleCondition = js.native
+  val CC: RuleCondition
   
-  val Category: CategoryRuleCondition = js.native
+  val Category: CategoryRuleCondition
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val FormName: FormNameRuleCondition = js.native
+  val FormName: FormNameRuleCondition
   
-  val From: ToOrFromRuleCondition = js.native
+  val From: ToOrFromRuleCondition
   
-  val FromAnyRSSFeed: RuleCondition = js.native
+  val FromAnyRSSFeed: RuleCondition
   
-  val FromRssFeed: FromRssFeedRuleCondition = js.native
+  val FromRssFeed: FromRssFeedRuleCondition
   
-  val HasAttachment: RuleCondition = js.native
+  val HasAttachment: RuleCondition
   
-  val Importance: ImportanceRuleCondition = js.native
+  val Importance: ImportanceRuleCondition
   
-  def Item(Index: Double): RuleCondition = js.native
+  def Item(Index: Double): RuleCondition
   
-  val MeetingInviteOrUpdate: RuleCondition = js.native
+  val MeetingInviteOrUpdate: RuleCondition
   
-  val MessageHeader: TextRuleCondition = js.native
+  val MessageHeader: TextRuleCondition
   
-  val NotTo: RuleCondition = js.native
+  val NotTo: RuleCondition
   
-  val OnLocalMachine: RuleCondition = js.native
+  val OnLocalMachine: RuleCondition
   
-  val OnOtherMachine: RuleCondition = js.native
+  val OnOtherMachine: RuleCondition
   
-  val OnlyToMe: RuleCondition = js.native
+  val OnlyToMe: RuleCondition
   
   @JSName("Outlook.RuleConditions_typekey")
-  var OutlookDotRuleConditions_typekey: RuleConditions = js.native
+  var OutlookDotRuleConditions_typekey: RuleConditions
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val RecipientAddress: AddressRuleCondition = js.native
+  val RecipientAddress: AddressRuleCondition
   
-  val SenderAddress: AddressRuleCondition = js.native
+  val SenderAddress: AddressRuleCondition
   
-  val SenderInAddressList: SenderInAddressListRuleCondition = js.native
+  val SenderInAddressList: SenderInAddressListRuleCondition
   
-  val SentTo: ToOrFromRuleCondition = js.native
+  val SentTo: ToOrFromRuleCondition
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Subject: TextRuleCondition = js.native
+  val Subject: TextRuleCondition
   
-  val ToMe: RuleCondition = js.native
+  val ToMe: RuleCondition
   
-  val ToOrCc: RuleCondition = js.native
+  val ToOrCc: RuleCondition
 }
 object RuleConditions {
   

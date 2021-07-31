@@ -9,7 +9,6 @@ import typings.vue.vueMod.VueConstructor
 import typings.vueScrollto.vueScrolltoBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -42,54 +41,42 @@ object mod {
     @JSImport("vue-scrollto", "default.install")
     @js.native
     def install: PluginFunction[ScrollOptions] = js.native
-    @JSImport("vue-scrollto", "default.install")
-    @js.native
-    def install(Vue: VueConstructor[Vue]): Unit = js.native
-    @JSImport("vue-scrollto", "default.install")
-    @js.native
-    def install(Vue: VueConstructor[Vue], options: ScrollOptions): Unit = js.native
+    @scala.inline
+    def install(Vue: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def install(Vue: VueConstructor[Vue], options: ScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(Vue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     @scala.inline
     def install_=(x: PluginFunction[ScrollOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-scrollto", "default.scrollTo")
     @js.native
     def scrollTo: ScrollToFunction = js.native
-    @JSImport("vue-scrollto", "default.scrollTo")
-    @js.native
-    def scrollTo(element: ElementDescriptor): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.scrollTo")
-    @js.native
-    def scrollTo(element: ElementDescriptor, duration: Double): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.scrollTo")
-    @js.native
-    def scrollTo(element: ElementDescriptor, duration: Double, options: ScrollOptions): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.scrollTo")
-    @js.native
-    def scrollTo(element: ElementDescriptor, options: ScrollOptions): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.scrollTo")
-    @js.native
-    def scrollTo(options: ScrollOptions): js.Function0[Unit] = js.native
+    @scala.inline
+    def scrollTo(element: ElementDescriptor): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(element.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def scrollTo(element: ElementDescriptor, duration: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def scrollTo(element: ElementDescriptor, duration: Double, options: ScrollOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def scrollTo(element: ElementDescriptor, options: ScrollOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def scrollTo(options: ScrollOptions): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     @scala.inline
     def scrollTo_=(x: ScrollToFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollTo")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-scrollto", "default.setDefaults")
     @js.native
     def setDefaults: ScrollToFunction = js.native
-    @JSImport("vue-scrollto", "default.setDefaults")
-    @js.native
-    def setDefaults(element: ElementDescriptor): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.setDefaults")
-    @js.native
-    def setDefaults(element: ElementDescriptor, duration: Double): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.setDefaults")
-    @js.native
-    def setDefaults(element: ElementDescriptor, duration: Double, options: ScrollOptions): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.setDefaults")
-    @js.native
-    def setDefaults(element: ElementDescriptor, options: ScrollOptions): js.Function0[Unit] = js.native
-    @JSImport("vue-scrollto", "default.setDefaults")
-    @js.native
-    def setDefaults(options: ScrollOptions): js.Function0[Unit] = js.native
+    @scala.inline
+    def setDefaults(element: ElementDescriptor): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(element.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def setDefaults(element: ElementDescriptor, duration: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def setDefaults(element: ElementDescriptor, duration: Double, options: ScrollOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(element.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def setDefaults(element: ElementDescriptor, options: ScrollOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def setDefaults(options: ScrollOptions): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     @scala.inline
     def setDefaults_=(x: ScrollToFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setDefaults")(x.asInstanceOf[js.Any])
     
@@ -108,36 +95,35 @@ object mod {
   
   type ElementDescriptor = Element | String
   
-  @js.native
   trait ScrollOptions extends StObject {
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[ElementDescriptor] = js.native
+    var container: js.UndefOr[ElementDescriptor] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String | (js.Tuple4[Double, Double, Double, Double])] = js.native
+    var easing: js.UndefOr[String | (js.Tuple4[Double, Double, Double, Double])] = js.undefined
     
-    var el: js.UndefOr[ElementDescriptor] = js.native
+    var el: js.UndefOr[ElementDescriptor] = js.undefined
     
-    var element: js.UndefOr[ElementDescriptor] = js.native
+    var element: js.UndefOr[ElementDescriptor] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[
         Double | (js.Function2[/* element */ ElementDescriptor, /* container */ ElementDescriptor, Double])
-      ] = js.native
+      ] = js.undefined
     
-    var onCancel: js.UndefOr[(js.Function2[/* event */ Event, /* element */ Element, _]) | `false`] = js.native
+    var onCancel: js.UndefOr[(js.Function2[/* event */ Event, /* element */ Element, js.Any]) | `false`] = js.undefined
     
-    var onDone: js.UndefOr[(js.Function1[/* element */ Element, _]) | `false`] = js.native
+    var onDone: js.UndefOr[(js.Function1[/* element */ Element, js.Any]) | `false`] = js.undefined
     
-    var onStart: js.UndefOr[(js.Function1[/* element */ Element, _]) | `false`] = js.native
+    var onStart: js.UndefOr[(js.Function1[/* element */ Element, js.Any]) | `false`] = js.undefined
     
-    var x: js.UndefOr[Boolean] = js.native
+    var x: js.UndefOr[Boolean] = js.undefined
     
-    var y: js.UndefOr[Boolean] = js.native
+    var y: js.UndefOr[Boolean] = js.undefined
   }
   object ScrollOptions {
     
@@ -204,28 +190,28 @@ object mod {
       def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
       @scala.inline
-      def setOnCancel(value: (js.Function2[/* event */ Event, /* element */ Element, _]) | `false`): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
+      def setOnCancel(value: (js.Function2[/* event */ Event, /* element */ Element, js.Any]) | `false`): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCancelFunction2(value: (/* event */ Event, /* element */ Element) => _): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+      def setOnCancelFunction2(value: (/* event */ Event, /* element */ Element) => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
       @scala.inline
-      def setOnDone(value: (js.Function1[/* element */ Element, _]) | `false`): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
+      def setOnDone(value: (js.Function1[/* element */ Element, js.Any]) | `false`): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDoneFunction1(value: /* element */ Element => _): Self = StObject.set(x, "onDone", js.Any.fromFunction1(value))
+      def setOnDoneFunction1(value: /* element */ Element => js.Any): Self = StObject.set(x, "onDone", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
       
       @scala.inline
-      def setOnStart(value: (js.Function1[/* element */ Element, _]) | `false`): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      def setOnStart(value: (js.Function1[/* element */ Element, js.Any]) | `false`): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnStartFunction1(value: /* element */ Element => _): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      def setOnStartFunction1(value: /* element */ Element => js.Any): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
@@ -256,21 +242,35 @@ object mod {
   
   object vueTypesVueAugmentingMod {
     
-    @js.native
     trait Vue extends StObject {
       
       @JSName("$scrollTo")
-      def $scrollTo(element: ElementDescriptor): js.Function0[Unit] = js.native
+      def $scrollTo(element: ElementDescriptor): js.Function0[Unit]
       @JSName("$scrollTo")
-      def $scrollTo(element: ElementDescriptor, duration: Double): js.Function0[Unit] = js.native
+      def $scrollTo(element: ElementDescriptor, duration: Double): js.Function0[Unit]
       @JSName("$scrollTo")
-      def $scrollTo(element: ElementDescriptor, duration: Double, options: ScrollOptions): js.Function0[Unit] = js.native
+      def $scrollTo(element: ElementDescriptor, duration: Double, options: ScrollOptions): js.Function0[Unit]
       @JSName("$scrollTo")
-      def $scrollTo(element: ElementDescriptor, options: ScrollOptions): js.Function0[Unit] = js.native
+      def $scrollTo(element: ElementDescriptor, options: ScrollOptions): js.Function0[Unit]
       @JSName("$scrollTo")
-      def $scrollTo(options: ScrollOptions): js.Function0[Unit] = js.native
+      def $scrollTo(options: ScrollOptions): js.Function0[Unit]
       @JSName("$scrollTo")
-      var $scrollTo_Original: ScrollToFunction = js.native
+      var $scrollTo_Original: ScrollToFunction
+    }
+    object Vue {
+      
+      @scala.inline
+      def apply($scrollTo: ScrollToFunction): typings.vueScrollto.mod.vueTypesVueAugmentingMod.Vue = {
+        val __obj = js.Dynamic.literal($scrollTo = $scrollTo.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.vueScrollto.mod.vueTypesVueAugmentingMod.Vue]
+      }
+      
+      @scala.inline
+      implicit class VueMutableBuilder[Self <: typings.vueScrollto.mod.vueTypesVueAugmentingMod.Vue] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def set$scrollTo(value: ScrollToFunction): Self = StObject.set(x, "$scrollTo", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

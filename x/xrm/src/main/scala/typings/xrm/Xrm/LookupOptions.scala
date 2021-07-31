@@ -2,44 +2,42 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for options used in Xrm.Utility.lookupObjects
   */
-@js.native
 trait LookupOptions extends StObject {
   
   /**
     * Indicates whether the lookup allows more than one item to be selected.
     */
-  var allowMultiSelect: js.UndefOr[Boolean] = js.native
+  var allowMultiSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The default entity type to use.
     */
-  var defaultEntityType: js.UndefOr[String] = js.native
+  var defaultEntityType: js.UndefOr[String] = js.undefined
   
   /**
     * The default view to use.
     */
-  var defaultViewId: js.UndefOr[String] = js.native
+  var defaultViewId: js.UndefOr[String] = js.undefined
   
   /**
     * The entity types to display.
     */
-  var entityTypes: js.UndefOr[js.Array[String]] = js.native
+  var entityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether the lookup control should show the barcode scanner in mobile clients.
     */
-  var showBarcodeScanner: js.UndefOr[Boolean] = js.native
+  var showBarcodeScanner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The views to be available in the view picker.Only system views are supported.
     */
-  var viewIds: js.UndefOr[js.Array[String]] = js.native
+  var viewIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object LookupOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReloadTablesMessage extends StObject {
   
   /**
     * Options for reload. Specify data-reload to reload the data and re-validate it if validation is enabled. Specify validate-only to re-validate the table. This option applies only when validation is enabled for the task.  Valid values: data-reload, validate-only Default value is data-reload.
     */
-  var ReloadOption: js.UndefOr[ReloadOptionValue] = js.native
+  var ReloadOption: js.UndefOr[ReloadOptionValue] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the replication task. 
     */
-  var ReplicationTaskArn: String = js.native
+  var ReplicationTaskArn: String
   
   /**
     * The name and schema of the table to be reloaded. 
     */
-  var TablesToReload: TableListToReload = js.native
+  var TablesToReload: TableListToReload
 }
 object ReloadTablesMessage {
   

@@ -12,7 +12,6 @@ import typings.winrtUwp.winrtUwpStrings.fileremoved
 import typings.winrtUwp.winrtUwpStrings.targetfilerequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for apps that offer files through the file picker by participating in the File Open Picker contract, and for apps that act as a save location for files through file picker by participating in the File Save Picker contract or the Cached File Updater contract. */
@@ -27,19 +26,27 @@ object Provider {
     
     /** The file was successfully added to the file picker UI. */
     @js.native
-    sealed trait added extends AddFileResult
+    sealed trait added
+      extends StObject
+         with AddFileResult
     
     /** The file was already in the file picker UI. */
     @js.native
-    sealed trait alreadyAdded extends AddFileResult
+    sealed trait alreadyAdded
+      extends StObject
+         with AddFileResult
     
     /** The file wasn't added because it is not one of the allowed file types. */
     @js.native
-    sealed trait notAllowed extends AddFileResult
+    sealed trait notAllowed
+      extends StObject
+         with AddFileResult
     
     /** The file wasn't added because the file picker UI is unavailable. The file picker UI is only available while the user is interacting with your app. */
     @js.native
-    sealed trait unavailable extends AddFileResult
+    sealed trait unavailable
+      extends StObject
+         with AddFileResult
   }
   
   @js.native
@@ -51,11 +58,15 @@ object Provider {
     
     /** Multiple files can be selected. */
     @js.native
-    sealed trait multiple extends FileSelectionMode
+    sealed trait multiple
+      extends StObject
+         with FileSelectionMode
     
     /** Only a single file can be selected. */
     @js.native
-    sealed trait single extends FileSelectionMode
+    sealed trait single
+      extends StObject
+         with FileSelectionMode
   }
   
   @js.native
@@ -67,22 +78,28 @@ object Provider {
     
     /** The file name and extension were not updated because the extension wasn't one of the allowedFileTypes . */
     @js.native
-    sealed trait notAllowed extends SetFileNameResult
+    sealed trait notAllowed
+      extends StObject
+         with SetFileNameResult
     
     /** The file name and extension were updated successfully. */
     @js.native
-    sealed trait succeeded extends SetFileNameResult
+    sealed trait succeeded
+      extends StObject
+         with SetFileNameResult
     
     /** The file name and extension were not updated because the file picker UI wasn't available. The file picker UI is only available while the user is interacting with your app. */
     @js.native
-    sealed trait unavailable extends SetFileNameResult
+    sealed trait unavailable
+      extends StObject
+         with SetFileNameResult
   }
   
   /** Used to interact with the file picker if your app provides files with the File Open Picker contract. */
   @js.native
   trait FileOpenPickerUI extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_closing(`type`: closing, listener: TypedEventHandler[FileOpenPickerUI, PickerClosingEventArgs]): Unit = js.native
     @JSName("addEventListener")
@@ -114,18 +131,18 @@ object Provider {
     def containsFile(id: String): Boolean = js.native
     
     /** Fires when the user closes the file picker. */
-    def onclosing(ev: PickerClosingEventArgs with WinRTEvent[FileOpenPickerUI]): Unit = js.native
+    def onclosing(ev: PickerClosingEventArgs & WinRTEvent[FileOpenPickerUI]): Unit = js.native
     /** Fires when the user closes the file picker. */
     @JSName("onclosing")
     var onclosing_Original: TypedEventHandler[FileOpenPickerUI, PickerClosingEventArgs] = js.native
     
     /** Fires when the user removes a file from the list of files that the user has chosen if that file was added by the app that is providing files. */
-    def onfileremoved(ev: FileRemovedEventArgs with WinRTEvent[FileOpenPickerUI]): Unit = js.native
+    def onfileremoved(ev: FileRemovedEventArgs & WinRTEvent[FileOpenPickerUI]): Unit = js.native
     /** Fires when the user removes a file from the list of files that the user has chosen if that file was added by the app that is providing files. */
     @JSName("onfileremoved")
     var onfileremoved_Original: TypedEventHandler[FileOpenPickerUI, FileRemovedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_closing(`type`: closing, listener: TypedEventHandler[FileOpenPickerUI, PickerClosingEventArgs]): Unit = js.native
     @JSName("removeEventListener")
@@ -148,11 +165,10 @@ object Provider {
   }
   
   /** Provides information about a fileremoved event. */
-  @js.native
   trait FileRemovedEventArgs extends StObject {
     
     /** Gets the identifier of the file that the user removed from the list of chosen files in the file picker. This identifier was set by the providing app when it added the files to the list of chosen files. */
-    var id: String = js.native
+    var id: String
   }
   object FileRemovedEventArgs {
     
@@ -174,9 +190,9 @@ object Provider {
   @js.native
   trait FileSavePickerUI extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, _]): Unit = js.native
+    def addEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_targetfilerequested(
       `type`: targetfilerequested,
@@ -190,20 +206,20 @@ object Provider {
     var fileName: String = js.native
     
     /** Fired when the user changes the file name in the file name text box or changes the extension in the file type drop-down menu. */
-    def onfilenamechanged(ev: js.Any with WinRTEvent[FileSavePickerUI]): Unit = js.native
+    def onfilenamechanged(ev: js.Any & WinRTEvent[FileSavePickerUI]): Unit = js.native
     /** Fired when the user changes the file name in the file name text box or changes the extension in the file type drop-down menu. */
     @JSName("onfilenamechanged")
-    var onfilenamechanged_Original: TypedEventHandler[FileSavePickerUI, _] = js.native
+    var onfilenamechanged_Original: TypedEventHandler[FileSavePickerUI, js.Any] = js.native
     
     /** Fires when the user commits a file to be saved in the file picker. */
-    def ontargetfilerequested(ev: TargetFileRequestedEventArgs with WinRTEvent[FileSavePickerUI]): Unit = js.native
+    def ontargetfilerequested(ev: TargetFileRequestedEventArgs & WinRTEvent[FileSavePickerUI]): Unit = js.native
     /** Fires when the user commits a file to be saved in the file picker. */
     @JSName("ontargetfilerequested")
     var ontargetfilerequested_Original: TypedEventHandler[FileSavePickerUI, TargetFileRequestedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, _]): Unit = js.native
+    def removeEventListener_filenamechanged(`type`: filenamechanged, listener: TypedEventHandler[FileSavePickerUI, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_targetfilerequested(
       `type`: targetfilerequested,
@@ -225,11 +241,10 @@ object Provider {
   }
   
   /** Use by an app that provides files to indicate asynchronously that the app is finished responding to a closing event. */
-  @js.native
   trait PickerClosingDeferral extends StObject {
     
     /** Signals that the app providing files has finished responding to a closing event. */
-    def complete(): Unit = js.native
+    def complete(): Unit
   }
   object PickerClosingDeferral {
     
@@ -248,14 +263,13 @@ object Provider {
   }
   
   /** Provides information about a closing event. */
-  @js.native
   trait PickerClosingEventArgs extends StObject {
     
     /** Gets a pickerClosingOperation object that is used to respond to a closing event. */
-    var closingOperation: PickerClosingOperation = js.native
+    var closingOperation: PickerClosingOperation
     
     /** Gets a value that indicates whether the file picker is closing because the user cancelled it. */
-    var isCanceled: Boolean = js.native
+    var isCanceled: Boolean
   }
   object PickerClosingEventArgs {
     
@@ -277,17 +291,16 @@ object Provider {
   }
   
   /** Lets an app that provides files get the deadline for responding to a closing event and get a deferral so the app can respond to the event asynchronously. */
-  @js.native
   trait PickerClosingOperation extends StObject {
     
     /** Gets a dateTime object that indicates when the system will shut down the app that is providing files through the file picker without further notice. */
-    var deadline: Date = js.native
+    var deadline: Date
     
     /**
       * Gets a pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
       * @return The pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
       */
-    def getDeferral(): PickerClosingDeferral = js.native
+    def getDeferral(): PickerClosingDeferral
   }
   object PickerClosingOperation {
     
@@ -309,17 +322,16 @@ object Provider {
   }
   
   /** Lets an app that provides a save location specify the storageFile that represents the file to save and get a deferral so the app can respond asynchronously to a targetFileRequested event. */
-  @js.native
   trait TargetFileRequest extends StObject {
     
     /**
       * Gets a targetFileRequestDeferral that the app providing the save location can use to respond asynchronously to a targetfilerequested event.
       * @return The targetFileRequestDeferral that the providing app can use asynchronously to indicate that it is finished responding to a targetfilerequested event.
       */
-    def getDeferral(): TargetFileRequestDeferral = js.native
+    def getDeferral(): TargetFileRequestDeferral
     
     /** Gets or sets the IStorageFile object that is provided to represent the file to save by the app that is providing the save location. */
-    var targetFile: IStorageFile = js.native
+    var targetFile: IStorageFile
   }
   object TargetFileRequest {
     
@@ -341,11 +353,10 @@ object Provider {
   }
   
   /** Used by an app that provides a save location to indicate asynchronously that the app is finished responding to a targetfilerequested event. */
-  @js.native
   trait TargetFileRequestDeferral extends StObject {
     
     /** Signals that the app providing the save location finished responding to a targetfilerequested event. */
-    def complete(): Unit = js.native
+    def complete(): Unit
   }
   object TargetFileRequestDeferral {
     
@@ -364,11 +375,10 @@ object Provider {
   }
   
   /** Provides information about a targetfilerequested event. */
-  @js.native
   trait TargetFileRequestedEventArgs extends StObject {
     
     /** Gets a targetFileRequest object that is used to respond to a targetfilerequested event. */
-    var request: TargetFileRequest = js.native
+    var request: TargetFileRequest
   }
   object TargetFileRequestedEventArgs {
     

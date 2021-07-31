@@ -8,81 +8,79 @@ import typings.paypalRestSdk.mod.Link
 import typings.paypalRestSdk.mod.Phone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invoice extends StObject {
   
-  var allow_partial_payment: js.UndefOr[Boolean] = js.native
+  var allow_partial_payment: js.UndefOr[Boolean] = js.undefined
   
-  var allow_tip: js.UndefOr[Boolean] = js.native
+  var allow_tip: js.UndefOr[Boolean] = js.undefined
   
-  var attachments: js.UndefOr[js.Array[FileAttachment]] = js.native
+  var attachments: js.UndefOr[js.Array[FileAttachment]] = js.undefined
   
-  var billing_info: js.UndefOr[js.Array[BillingInfo]] = js.native
+  var billing_info: js.UndefOr[js.Array[BillingInfo]] = js.undefined
   
-  var cc_info: js.UndefOr[js.Array[Participant]] = js.native
+  var cc_info: js.UndefOr[js.Array[Participant]] = js.undefined
   
-  var custom: js.UndefOr[CustomAmount] = js.native
+  var custom: js.UndefOr[CustomAmount] = js.undefined
   
-  var discount: js.UndefOr[Cost] = js.native
+  var discount: js.UndefOr[Cost] = js.undefined
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  var invoice_date: js.UndefOr[String] = js.native
+  var invoice_date: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[InvoiceItem]] = js.native
+  var items: js.UndefOr[js.Array[InvoiceItem]] = js.undefined
   
-  val links: js.UndefOr[js.Array[Link]] = js.native
+  val links: js.UndefOr[js.Array[Link]] = js.undefined
   
-  var logo_url: js.UndefOr[String] = js.native
+  var logo_url: js.UndefOr[String] = js.undefined
   
-  var merchant_info: js.UndefOr[Merchant] = js.native
+  var merchant_info: js.UndefOr[Merchant] = js.undefined
   
-  var merchant_memo: js.UndefOr[String] = js.native
+  var merchant_memo: js.UndefOr[String] = js.undefined
   
-  val metadata: js.UndefOr[Cancelledby] = js.native
+  val metadata: js.UndefOr[Cancelledby] = js.undefined
   
-  var minimum_amount_due: js.UndefOr[Currency] = js.native
+  var minimum_amount_due: js.UndefOr[Currency] = js.undefined
   
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  val paid_amount: js.UndefOr[Other] = js.native
+  val paid_amount: js.UndefOr[Other] = js.undefined
   
-  val payment_summary: js.UndefOr[Other] = js.native
+  val payment_summary: js.UndefOr[Other] = js.undefined
   
-  var payment_term: js.UndefOr[PaymentTerm] = js.native
+  var payment_term: js.UndefOr[PaymentTerm] = js.undefined
   
-  val payments: js.UndefOr[js.Array[PaymentDetail]] = js.native
+  val payments: js.UndefOr[js.Array[PaymentDetail]] = js.undefined
   
-  var phone: js.UndefOr[Phone] = js.native
+  var phone: js.UndefOr[Phone] = js.undefined
   
-  var reference: js.UndefOr[String] = js.native
+  var reference: js.UndefOr[String] = js.undefined
   
-  val refunded_amount: js.UndefOr[Other] = js.native
+  val refunded_amount: js.UndefOr[Other] = js.undefined
   
-  val refunds: js.UndefOr[js.Array[Detail]] = js.native
+  val refunds: js.UndefOr[js.Array[Detail]] = js.undefined
   
-  var shipping_cost: js.UndefOr[ShippingCost] = js.native
+  var shipping_cost: js.UndefOr[ShippingCost] = js.undefined
   
-  var shipping_info: js.UndefOr[Address] = js.native
+  var shipping_info: js.UndefOr[Address] = js.undefined
   
-  val status: js.UndefOr[String] = js.native
+  val status: js.UndefOr[String] = js.undefined
   
-  var tax_calculated_after_discount: js.UndefOr[Boolean] = js.native
+  var tax_calculated_after_discount: js.UndefOr[Boolean] = js.undefined
   
-  var tax_inclusive: js.UndefOr[Boolean] = js.native
+  var tax_inclusive: js.UndefOr[Boolean] = js.undefined
   
-  var template_id: js.UndefOr[String] = js.native
+  var template_id: js.UndefOr[String] = js.undefined
   
-  var terms: js.UndefOr[String] = js.native
+  var terms: js.UndefOr[String] = js.undefined
   
-  val total_amount: js.UndefOr[Currency] = js.native
+  val total_amount: js.UndefOr[Currency] = js.undefined
   
-  val uri: js.UndefOr[String] = js.native
+  val uri: js.UndefOr[String] = js.undefined
 }
 object Invoice {
   

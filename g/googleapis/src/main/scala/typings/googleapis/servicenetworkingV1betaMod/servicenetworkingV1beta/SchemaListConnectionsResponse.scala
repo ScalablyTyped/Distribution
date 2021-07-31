@@ -2,20 +2,18 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListConnectionsResponse is the response to list peering states for the
   * given service and consumer project.
   */
-@js.native
 trait SchemaListConnectionsResponse extends StObject {
   
   /**
     * The list of Connections.
     */
-  var connections: js.UndefOr[js.Array[SchemaConnection]] = js.native
+  var connections: js.UndefOr[js.Array[SchemaConnection]] = js.undefined
 }
 object SchemaListConnectionsResponse {
   

@@ -2,16 +2,16 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactBeautifulDnd.mod.DraggableRubric because var conflicts: draggableId, mode. Inlined source */ @js.native
-trait DragStart extends BeforeCapture {
+- typings.reactBeautifulDnd.mod.DraggableRubric because var conflicts: draggableId, mode. Inlined source */ trait DragStart
+  extends StObject
+     with BeforeCapture {
   
-  var source: DraggableLocation = js.native
+  var source: DraggableLocation
   
-  var `type`: TypeId = js.native
+  var `type`: TypeId
 }
 object DragStart {
   

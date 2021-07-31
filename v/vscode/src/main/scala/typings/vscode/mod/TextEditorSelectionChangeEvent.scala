@@ -2,27 +2,25 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorSelectionChangeEvent extends StObject {
   
   /**
     * The [change kind](#TextEditorSelectionChangeKind) which has triggered this
     * event. Can be `undefined`.
     */
-  val kind: js.UndefOr[TextEditorSelectionChangeKind] = js.native
+  val kind: js.UndefOr[TextEditorSelectionChangeKind] = js.undefined
   
   /**
     * The new value for the [text editor's selections](#TextEditor.selections).
     */
-  val selections: js.Array[Selection] = js.native
+  val selections: js.Array[Selection]
   
   /**
     * The [text editor](#TextEditor) for which the selections have changed.
     */
-  val textEditor: TextEditor = js.native
+  val textEditor: TextEditor
 }
 object TextEditorSelectionChangeEvent {
   

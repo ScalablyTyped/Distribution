@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutdatedLibrary extends StObject {
   
   /** URLs to learn more information about the vulnerabilities in the library. */
-  var learnMoreUrls: js.UndefOr[js.Array[String]] = js.native
+  var learnMoreUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the outdated library. */
-  var libraryName: js.UndefOr[String] = js.native
+  var libraryName: js.UndefOr[String] = js.undefined
   
   /** The version number. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object OutdatedLibrary {
   

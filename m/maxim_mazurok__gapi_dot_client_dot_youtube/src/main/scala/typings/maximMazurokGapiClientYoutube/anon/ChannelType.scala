@@ -2,60 +2,58 @@ package typings.maximMazurokGapiClientYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelType extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Filter on resources belonging to this channelId. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** Add a filter on the channel search. */
-  var channelType: js.UndefOr[String] = js.native
+  var channelType: js.UndefOr[String] = js.undefined
   
   /** Filter on the livestream status of the videos. */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Search owned by a content owner. */
-  var forContentOwner: js.UndefOr[Boolean] = js.native
+  var forContentOwner: js.UndefOr[Boolean] = js.undefined
   
   /** Restrict the search to only retrieve videos uploaded using the project id of the authenticated user. */
-  var forDeveloper: js.UndefOr[Boolean] = js.native
+  var forDeveloper: js.UndefOr[Boolean] = js.undefined
   
   /** Search for the private videos of the authenticated user. */
-  var forMine: js.UndefOr[Boolean] = js.native
+  var forMine: js.UndefOr[Boolean] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Filter on location of the video */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Filter on distance from the location (specified above). */
-  var locationRadius: js.UndefOr[String] = js.native
+  var locationRadius: js.UndefOr[String] = js.undefined
   
   /** The *maxResults* parameter specifies the maximum number of items that should be returned in the result set. */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
     * *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials
@@ -63,85 +61,85 @@ trait ChannelType extends StObject {
     * manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide
     * authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /** Sort order of the results. */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other
     * pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** The *part* parameter specifies a comma-separated list of one or more search resource properties that the API response will include. Set the parameter value to snippet. */
-  var part: String | js.Array[String] = js.native
+  var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Filter on resources published after this date. */
-  var publishedAfter: js.UndefOr[String] = js.native
+  var publishedAfter: js.UndefOr[String] = js.undefined
   
   /** Filter on resources published before this date. */
-  var publishedBefore: js.UndefOr[String] = js.native
+  var publishedBefore: js.UndefOr[String] = js.undefined
   
   /** Textual search terms to match. */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Display the content as seen by viewers in this country. */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /** Search related to a resource. */
-  var relatedToVideoId: js.UndefOr[String] = js.native
+  var relatedToVideoId: js.UndefOr[String] = js.undefined
   
   /** Return results relevant to this language. */
-  var relevanceLanguage: js.UndefOr[String] = js.native
+  var relevanceLanguage: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the search results should include restricted content as well as standard content. */
-  var safeSearch: js.UndefOr[String] = js.native
+  var safeSearch: js.UndefOr[String] = js.undefined
   
   /** Restrict results to a particular topic. */
-  var topicId: js.UndefOr[String] = js.native
+  var topicId: js.UndefOr[String] = js.undefined
   
   /** Restrict results to a particular set of resource types from One Platform. */
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
   
   /** Filter on the presence of captions on the videos. */
-  var videoCaption: js.UndefOr[String] = js.native
+  var videoCaption: js.UndefOr[String] = js.undefined
   
   /** Filter on videos in a specific category. */
-  var videoCategoryId: js.UndefOr[String] = js.native
+  var videoCategoryId: js.UndefOr[String] = js.undefined
   
   /** Filter on the definition of the videos. */
-  var videoDefinition: js.UndefOr[String] = js.native
+  var videoDefinition: js.UndefOr[String] = js.undefined
   
   /** Filter on 3d videos. */
-  var videoDimension: js.UndefOr[String] = js.native
+  var videoDimension: js.UndefOr[String] = js.undefined
   
   /** Filter on the duration of the videos. */
-  var videoDuration: js.UndefOr[String] = js.native
+  var videoDuration: js.UndefOr[String] = js.undefined
   
   /** Filter on embeddable videos. */
-  var videoEmbeddable: js.UndefOr[String] = js.native
+  var videoEmbeddable: js.UndefOr[String] = js.undefined
   
   /** Filter on the license of the videos. */
-  var videoLicense: js.UndefOr[String] = js.native
+  var videoLicense: js.UndefOr[String] = js.undefined
   
   /** Filter on syndicated videos. */
-  var videoSyndicated: js.UndefOr[String] = js.native
+  var videoSyndicated: js.UndefOr[String] = js.undefined
   
   /** Filter on videos of a specific type. */
-  var videoType: js.UndefOr[String] = js.native
+  var videoType: js.UndefOr[String] = js.undefined
 }
 object ChannelType {
   

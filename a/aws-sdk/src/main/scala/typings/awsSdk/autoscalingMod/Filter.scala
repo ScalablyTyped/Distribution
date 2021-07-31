@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * The name of the filter. The valid values are: auto-scaling-group, key, value, and propagate-at-launch.
     */
-  var Name: js.UndefOr[XmlString] = js.native
+  var Name: js.UndefOr[XmlString] = js.undefined
   
   /**
     * One or more filter values. Filter values are case-sensitive.
     */
-  var Values: js.UndefOr[typings.awsSdk.autoscalingMod.Values] = js.native
+  var Values: js.UndefOr[typings.awsSdk.autoscalingMod.Values] = js.undefined
 }
 object Filter {
   

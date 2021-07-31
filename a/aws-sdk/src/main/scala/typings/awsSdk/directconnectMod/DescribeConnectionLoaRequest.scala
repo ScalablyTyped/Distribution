@@ -2,26 +2,24 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectionLoaRequest extends StObject {
   
   /**
     * The ID of the connection.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * The standard media type for the LOA-CFA document. The only supported value is application/pdf.
     */
-  var loaContentType: js.UndefOr[LoaContentType] = js.native
+  var loaContentType: js.UndefOr[LoaContentType] = js.undefined
   
   /**
     * The name of the APN partner or service provider who establishes connectivity on your behalf. If you specify this parameter, the LOA-CFA lists the provider name alongside your company name as the requester of the cross connect.
     */
-  var providerName: js.UndefOr[ProviderName] = js.native
+  var providerName: js.UndefOr[ProviderName] = js.undefined
 }
 object DescribeConnectionLoaRequest {
   

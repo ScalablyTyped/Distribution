@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAttrDimDef...
   */
-@js.native
 trait INxAttrDimDef extends StObject {
   
   /**
     * Expression or field name.
     */
-  var qDef: String = js.native
+  var qDef: String
   
   /**
     * LibraryId for dimension.
     */
-  var qLibraryId: String = js.native
+  var qLibraryId: String
   
   /**
     * Sorting
     */
-  var qSortBy: ISortCriteria = js.native
+  var qSortBy: ISortCriteria
 }
 object INxAttrDimDef {
   

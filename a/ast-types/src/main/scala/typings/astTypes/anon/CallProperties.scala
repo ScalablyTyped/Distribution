@@ -9,27 +9,25 @@ import typings.astTypes.kindsMod.ObjectTypeSpreadPropertyKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallProperties extends StObject {
   
-  var callProperties: js.UndefOr[js.Array[ObjectTypeCallPropertyKind]] = js.native
+  var callProperties: js.UndefOr[js.Array[ObjectTypeCallPropertyKind]] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var exact: js.UndefOr[Boolean] = js.native
+  var exact: js.UndefOr[Boolean] = js.undefined
   
-  var indexers: js.UndefOr[js.Array[ObjectTypeIndexerKind]] = js.native
+  var indexers: js.UndefOr[js.Array[ObjectTypeIndexerKind]] = js.undefined
   
-  var inexact: js.UndefOr[Boolean] = js.native
+  var inexact: js.UndefOr[Boolean] = js.undefined
   
-  var internalSlots: js.UndefOr[js.Array[ObjectTypeInternalSlotKind]] = js.native
+  var internalSlots: js.UndefOr[js.Array[ObjectTypeInternalSlotKind]] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var properties: js.Array[ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind] = js.native
+  var properties: js.Array[ObjectTypePropertyKind | ObjectTypeSpreadPropertyKind]
 }
 object CallProperties {
   

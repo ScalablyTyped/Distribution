@@ -32,7 +32,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sidebarSidebarMod extends Shortcut {
@@ -50,16 +49,18 @@ object sidebarSidebarMod extends Shortcut {
   val default: SidebarComponent = js.native
   
   @js.native
-  trait SidebarComponent extends ComponentClass[SidebarProps, ComponentState] {
+  trait SidebarComponent
+    extends StObject
+       with ComponentClass[SidebarProps, ComponentState] {
     
     var Pushable: StatelessComponent[SidebarPushableProps] = js.native
     
     var Pusher: StatelessComponent[SidebarPusherProps] = js.native
   }
   
-  @js.native
   trait SidebarProps
-    extends StrictSidebarProps
+    extends StObject
+       with StrictSidebarProps
        with /* key */ StringDictionary[js.Any]
   object SidebarProps {
     
@@ -70,26 +71,25 @@ object sidebarSidebarMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictSidebarProps extends StObject {
     
     /** Animation style. */
-    var animation: js.UndefOr[overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)] = js.native
+    var animation: js.UndefOr[overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Direction the sidebar should appear on. */
-    var direction: js.UndefOr[top | right | bottom | left] = js.native
+    var direction: js.UndefOr[top | right | bottom | left] = js.undefined
     
     /**
       * Called after a sidebar has finished animating out.
@@ -99,7 +99,7 @@ object sidebarSidebarMod extends Shortcut {
       */
     var onHidden: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called before a sidebar begins to animate out.
@@ -109,7 +109,7 @@ object sidebarSidebarMod extends Shortcut {
       */
     var onHide: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when a sidebar has finished animating in.
@@ -119,7 +119,7 @@ object sidebarSidebarMod extends Shortcut {
       */
     var onShow: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when a sidebar begins animating in.
@@ -129,16 +129,16 @@ object sidebarSidebarMod extends Shortcut {
       */
     var onVisible: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** A sidebar can handle clicks on the passed element. */
-    var target: js.UndefOr[Document | Window | HTMLElement | RefObject[HTMLElement]] = js.native
+    var target: js.UndefOr[Document | Window | HTMLElement | RefObject[HTMLElement]] = js.undefined
     
     /** Controls whether or not the sidebar is visible on the page. */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Sidebar width. */
-    var width: js.UndefOr[(`very thin`) | thin | wide | (`very wide`)] = js.native
+    var width: js.UndefOr[(`very thin`) | thin | wide | (`very wide`)] = js.undefined
   }
   object StrictSidebarProps {
     

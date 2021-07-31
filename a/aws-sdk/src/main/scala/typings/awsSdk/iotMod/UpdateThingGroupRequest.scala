@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThingGroupRequest extends StObject {
   
   /**
     * The expected version of the thing group. If this does not match the version of the thing group being updated, the update will fail.
     */
-  var expectedVersion: js.UndefOr[OptionalVersion] = js.native
+  var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   
   /**
     * The thing group to update.
     */
-  var thingGroupName: ThingGroupName = js.native
+  var thingGroupName: ThingGroupName
   
   /**
     * The thing group properties.
     */
-  var thingGroupProperties: ThingGroupProperties = js.native
+  var thingGroupProperties: ThingGroupProperties
 }
 object UpdateThingGroupRequest {
   

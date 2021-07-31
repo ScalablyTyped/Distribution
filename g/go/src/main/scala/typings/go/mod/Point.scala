@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -192,6 +191,10 @@ class Point () extends StObject {
 }
 object Point {
   
+  @JSImport("go", "Point")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This static function returns the angle in degrees of the line from point P to point Q.
     * @param {number} px
@@ -200,9 +203,8 @@ object Point {
     * @param {number} qy
     */
   /* static member */
-  @JSImport("go", "Point.direction")
-  @js.native
-  def direction(px: Double, py: Double, qx: Double, qy: Double): Double = js.native
+  @scala.inline
+  def direction(px: Double, py: Double, qx: Double, qy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("direction")(px.asInstanceOf[js.Any], py.asInstanceOf[js.Any], qx.asInstanceOf[js.Any], qy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * This static function returns the square of the distance from the point P
@@ -215,9 +217,8 @@ object Point {
     * @param {number} by
     */
   /* static member */
-  @JSImport("go", "Point.distanceLineSegmentSquared")
-  @js.native
-  def distanceLineSegmentSquared(px: Double, py: Double, ax: Double, ay: Double, bx: Double, by: Double): Double = js.native
+  @scala.inline
+  def distanceLineSegmentSquared(px: Double, py: Double, ax: Double, ay: Double, bx: Double, by: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceLineSegmentSquared")(px.asInstanceOf[js.Any], py.asInstanceOf[js.Any], ax.asInstanceOf[js.Any], ay.asInstanceOf[js.Any], bx.asInstanceOf[js.Any], by.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * This static function returns the square of the distance from the point P to the point Q.
@@ -227,25 +228,22 @@ object Point {
     * @param {number} qy
     */
   /* static member */
-  @JSImport("go", "Point.distanceSquared")
-  @js.native
-  def distanceSquared(px: Double, py: Double, qx: Double, qy: Double): Double = js.native
+  @scala.inline
+  def distanceSquared(px: Double, py: Double, qx: Double, qy: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquared")(px.asInstanceOf[js.Any], py.asInstanceOf[js.Any], qx.asInstanceOf[js.Any], qy.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * This static function can be used to read in a Point from a string that was produced by Point.stringify.
     * @param {string} str
     */
   /* static member */
-  @JSImport("go", "Point.parse")
-  @js.native
-  def parse(str: String): Point = js.native
+  @scala.inline
+  def parse(str: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Point]
   
   /**
     * This static function can be used to write out a Point as a string that can be read by Point.parse.
     * @param {Point} val
     */
   /* static member */
-  @JSImport("go", "Point.stringify")
-  @js.native
-  def stringify(`val`: Point): String = js.native
+  @scala.inline
+  def stringify(`val`: Point): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

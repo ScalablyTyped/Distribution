@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BookmarkCreationOptionsScreenshotSettings extends Object {
+trait BookmarkCreationOptionsScreenshotSettings
+  extends StObject
+     with Object {
   
   /**
     * Used to take a screenshot of a subregion of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var area: js.UndefOr[BookmarkCreationOptionsScreenshotSettingsArea] = js.native
+  var area: js.UndefOr[BookmarkCreationOptionsScreenshotSettingsArea] = js.undefined
   
   /**
     * The height (in pixels) of the screenshot.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional list of layers to be included in the screenshot.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var layers: js.UndefOr[js.Array[Layer]] = js.native
+  var layers: js.UndefOr[js.Array[Layer]] = js.undefined
   
   /**
     * The width (in pixels) of the screenshot.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#BookmarkCreationOptions)
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BookmarkCreationOptionsScreenshotSettings {
   

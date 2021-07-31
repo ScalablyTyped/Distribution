@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,53 +31,51 @@ object mod {
   /* static members */
   object keystore {
     
-    @JSImport("eth-lightwallet", "keystore.createVault")
+    @JSImport("eth-lightwallet", "keystore")
     @js.native
-    def createVault(options: js.Any): keystore = js.native
-    @JSImport("eth-lightwallet", "keystore.createVault")
-    @js.native
-    def createVault(options: js.Any, callback: js.Function2[/* error */ Error, /* keystore */ this.type, Unit]): keystore = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("eth-lightwallet", "keystore.deserialize")
-    @js.native
-    def deserialize(keystore: String): keystore = js.native
+    @scala.inline
+    def createVault(options: js.Any): keystore = ^.asInstanceOf[js.Dynamic].applyDynamic("createVault")(options.asInstanceOf[js.Any]).asInstanceOf[keystore]
+    @scala.inline
+    def createVault(options: js.Any, callback: js.Function2[/* error */ Error, /* keystore */ this.type, Unit]): keystore = (^.asInstanceOf[js.Dynamic].applyDynamic("createVault")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[keystore]
     
-    @JSImport("eth-lightwallet", "keystore.generateRandomSeed")
-    @js.native
-    def generateRandomSeed(): String = js.native
+    @scala.inline
+    def deserialize(keystore: String): keystore = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(keystore.asInstanceOf[js.Any]).asInstanceOf[keystore]
     
-    @JSImport("eth-lightwallet", "keystore.isSeedValid")
-    @js.native
-    def isSeedValid(seed: String): Boolean = js.native
+    @scala.inline
+    def generateRandomSeed(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomSeed")().asInstanceOf[String]
+    
+    @scala.inline
+    def isSeedValid(seed: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSeedValid")(seed.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object signing {
     
-    @JSImport("eth-lightwallet", "signing.concatSig")
+    @JSImport("eth-lightwallet", "signing")
     @js.native
-    def concatSig(signature: js.Any): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("eth-lightwallet", "signing.signMsg")
-    @js.native
-    def signMsg(keystore: keystore, pwDerivedKey: Uint8Array, rawMsg: String, signingAddress: String): ECSignatureBuffer = js.native
+    @scala.inline
+    def concatSig(signature: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("concatSig")(signature.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("eth-lightwallet", "signing.signMsgHash")
-    @js.native
-    def signMsgHash(keystore: keystore, pwDerivedKey: Uint8Array, msgHash: String, signingAddress: String): ECSignatureBuffer = js.native
+    @scala.inline
+    def signMsg(keystore: keystore, pwDerivedKey: Uint8Array, rawMsg: String, signingAddress: String): ECSignatureBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("signMsg")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], rawMsg.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[ECSignatureBuffer]
     
-    @JSImport("eth-lightwallet", "signing.signTx")
-    @js.native
-    def signTx(keystore: keystore, pwDerivedKey: Uint8Array, rawTx: String, signingAddress: String): String = js.native
+    @scala.inline
+    def signMsgHash(keystore: keystore, pwDerivedKey: Uint8Array, msgHash: String, signingAddress: String): ECSignatureBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("signMsgHash")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], msgHash.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[ECSignatureBuffer]
+    
+    @scala.inline
+    def signTx(keystore: keystore, pwDerivedKey: Uint8Array, rawTx: String, signingAddress: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signTx")(keystore.asInstanceOf[js.Any], pwDerivedKey.asInstanceOf[js.Any], rawTx.asInstanceOf[js.Any], signingAddress.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
   trait ECSignatureBuffer extends StObject {
     
-    var r: Buffer = js.native
+    var r: Buffer
     
-    var s: Buffer = js.native
+    var s: Buffer
     
-    var v: Double = js.native
+    var v: Double
   }
   object ECSignatureBuffer {
     
@@ -102,16 +99,15 @@ object mod {
     }
   }
   
-  @js.native
   trait VaultOptions extends StObject {
     
-    var hdPathString: String = js.native
+    var hdPathString: String
     
-    var password: String = js.native
+    var password: String
     
-    var salt: js.UndefOr[String] = js.native
+    var salt: js.UndefOr[String] = js.undefined
     
-    var seedPhrase: String = js.native
+    var seedPhrase: String
   }
   object VaultOptions {
     

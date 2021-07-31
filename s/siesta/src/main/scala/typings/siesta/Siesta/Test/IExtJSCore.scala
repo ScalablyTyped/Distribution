@@ -3,32 +3,30 @@ package typings.siesta.Siesta.Test
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @mixin
   */
-@js.native
 trait IExtJSCore extends StObject {
   
-  def Ext(): js.Any = js.native
+  def Ext(): js.Any
   
-  def clickCQ(selector: String, root: js.Any, callback: js.Function): js.Any = js.native
+  def clickCQ(selector: String, root: js.Any, callback: js.Function): js.Any
   
-  def clickComponentQuery(selector: String, root: js.Any, callback: js.Function): js.Any = js.native
+  def clickComponentQuery(selector: String, root: js.Any, callback: js.Function): js.Any
   
-  def compositeQuery(selector: String, root: js.Any, allowEmpty: Boolean): js.Array[HTMLElement] = js.native
+  def compositeQuery(selector: String, root: js.Any, allowEmpty: Boolean): js.Array[HTMLElement]
   
-  def cq(selector: String): js.Any = js.native
+  def cq(selector: String): js.Any
   
-  def cq1(selector: String): js.Any = js.native
+  def cq1(selector: String): js.Any
   
-  def getExt(): js.Any = js.native
+  def getExt(): js.Any
   
-  def knownBugIn(frameworkVersion: String, fn: js.Function, reason: String): js.Any = js.native
+  def knownBugIn(frameworkVersion: String, fn: js.Function, reason: String): js.Any
   
-  def requireOk(args: js.Any*): Unit = js.native
+  def requireOk(args: js.Any*): Unit
 }
 object IExtJSCore {
   

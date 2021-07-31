@@ -9,7 +9,6 @@ import typings.pulumiAws.pulumiAwsStrings.`Windows with SQL Server Web`
 import typings.pulumiAws.pulumiAwsStrings.`Windows with SQL Server`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object InstancePlatform {

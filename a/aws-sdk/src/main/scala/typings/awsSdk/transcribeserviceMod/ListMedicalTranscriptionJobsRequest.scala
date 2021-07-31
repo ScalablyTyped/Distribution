@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMedicalTranscriptionJobsRequest extends StObject {
   
   /**
     * When specified, the jobs returned in the list are limited to jobs whose name contains the specified string.
     */
-  var JobNameContains: js.UndefOr[TranscriptionJobName] = js.native
+  var JobNameContains: js.UndefOr[TranscriptionJobName] = js.undefined
   
   /**
     * The maximum number of medical transcription jobs to return in the response. IF there are fewer results in the list, this response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
     * If you a receive a truncated result in the previous request of ListMedicalTranscriptionJobs, include NextToken to fetch the next set of jobs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
     * When specified, returns only medical transcription jobs with the specified status. Jobs are ordered by creation date, with the newest jobs returned first. If you don't specify a status, Amazon Transcribe Medical returns all transcription jobs ordered by creation date.
     */
-  var Status: js.UndefOr[TranscriptionJobStatus] = js.native
+  var Status: js.UndefOr[TranscriptionJobStatus] = js.undefined
 }
 object ListMedicalTranscriptionJobsRequest {
   

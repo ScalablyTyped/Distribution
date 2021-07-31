@@ -2,16 +2,14 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceId extends StObject {
   
   /**
     * The resourceId object contains information that identifies the resource that was marked as a favorite.
     */
-  var resourceId: Kind = js.native
+  var resourceId: Kind
 }
 object ResourceId {
   

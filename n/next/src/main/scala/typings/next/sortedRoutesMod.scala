@@ -2,12 +2,14 @@ package typings.next
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortedRoutesMod {
   
-  @JSImport("next/dist/next-server/lib/router/utils/sorted-routes", "getSortedRoutes")
+  @JSImport("next/dist/next-server/lib/router/utils/sorted-routes", JSImport.Namespace)
   @js.native
-  def getSortedRoutes(normalizedPages: js.Array[String]): js.Array[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getSortedRoutes(normalizedPages: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSortedRoutes")(normalizedPages.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

@@ -10,9 +10,9 @@ Matrix Application Service Framework
 | ------------------ | :-------------: |
 | Full name          | matrix-appservice |
 | Keywords           | matrix-org |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 3 |
-| # downloads        | 15859 |
+| # downloads        | 16536 |
 | # stars            | 0 |
 
 ## Links

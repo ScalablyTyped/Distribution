@@ -11,8 +11,8 @@ A simple parser for Git diffs
 | Full name          | git-diff-parser |
 | Keywords           | git, diff, patch, parse |
 | # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 6310 |
+| # dependents       | 5 |
+| # downloads        | 12235 |
 | # stars            | 0 |
 
 ## Links

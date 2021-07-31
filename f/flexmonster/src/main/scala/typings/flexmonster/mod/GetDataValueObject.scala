@@ -2,15 +2,13 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataValueObject extends StObject {
   
-  var data: js.Array[js.Object] = js.native
+  var data: js.Array[js.Object]
   
-  var meta: js.Object = js.native
+  var meta: js.Object
 }
 object GetDataValueObject {
   

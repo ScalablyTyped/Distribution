@@ -2,13 +2,13 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait INetworkOperatorNotificationTrigger extends IBackgroundTrigger {
+trait INetworkOperatorNotificationTrigger
+  extends StObject
+     with IBackgroundTrigger {
   
-  var networkAccountId: String = js.native
+  var networkAccountId: String
 }
 object INetworkOperatorNotificationTrigger {
   

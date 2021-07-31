@@ -2,17 +2,15 @@ package typings.calidation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatorContext[T /* <: js.Object */] extends StObject {
   
-  var errors: Errors[T] = js.native
+  var errors: Errors[T]
   
-  var fields: Fields[T] = js.native
+  var fields: Fields[T]
   
-  var isDirty: Boolean = js.native
+  var isDirty: Boolean
 }
 object ValidatorContext {
   
@@ -23,7 +21,7 @@ object ValidatorContext {
   }
   
   @scala.inline
-  implicit class ValidatorContextMutableBuilder[Self <: ValidatorContext[_], T /* <: js.Object */] (val x: Self with ValidatorContext[T]) extends AnyVal {
+  implicit class ValidatorContextMutableBuilder[Self <: ValidatorContext[?], T /* <: js.Object */] (val x: Self & ValidatorContext[T]) extends AnyVal {
     
     @scala.inline
     def setErrors(value: Errors[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])

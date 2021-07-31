@@ -2,25 +2,23 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AriaRoles extends StObject {
   
-  var allowedAttrs: js.UndefOr[js.Array[String]] = js.native
+  var allowedAttrs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var nameFromContent: js.UndefOr[Boolean] = js.native
+  var nameFromContent: js.UndefOr[Boolean] = js.undefined
   
-  var requiredAttrs: js.UndefOr[js.Array[String]] = js.native
+  var requiredAttrs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requiredContext: js.UndefOr[js.Array[String]] = js.native
+  var requiredContext: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requiredOwned: js.UndefOr[js.Array[String]] = js.native
+  var requiredOwned: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `type`: AriaRolesType | DpubRolesType = js.native
+  var `type`: AriaRolesType | DpubRolesType
   
-  var unsupported: js.UndefOr[Boolean] = js.native
+  var unsupported: js.UndefOr[Boolean] = js.undefined
 }
 object AriaRoles {
   

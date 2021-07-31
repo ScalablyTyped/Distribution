@@ -2,41 +2,39 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountDetails extends StObject {
   
   /**
     * Additional email addresses where updates are sent about your account review process.
     */
-  var AdditionalContactEmailAddresses: js.UndefOr[typings.awsSdk.sesv2Mod.AdditionalContactEmailAddresses] = js.native
+  var AdditionalContactEmailAddresses: js.UndefOr[typings.awsSdk.sesv2Mod.AdditionalContactEmailAddresses] = js.undefined
   
   /**
     * The language you would prefer for the case. The contact language can be one of ENGLISH or JAPANESE.
     */
-  var ContactLanguage: js.UndefOr[typings.awsSdk.sesv2Mod.ContactLanguage] = js.native
+  var ContactLanguage: js.UndefOr[typings.awsSdk.sesv2Mod.ContactLanguage] = js.undefined
   
   /**
     * The type of email your account is sending. The mail type can be one of the following:    MARKETING – Most of your sending traffic is to keep your customers informed of your latest offering.    TRANSACTIONAL – Most of your sending traffic is to communicate during a transaction with a customer.  
     */
-  var MailType: js.UndefOr[typings.awsSdk.sesv2Mod.MailType] = js.native
+  var MailType: js.UndefOr[typings.awsSdk.sesv2Mod.MailType] = js.undefined
   
   /**
     * Information about the review of the latest details you submitted.
     */
-  var ReviewDetails: js.UndefOr[typings.awsSdk.sesv2Mod.ReviewDetails] = js.native
+  var ReviewDetails: js.UndefOr[typings.awsSdk.sesv2Mod.ReviewDetails] = js.undefined
   
   /**
     * A description of the types of email that you plan to send.
     */
-  var UseCaseDescription: js.UndefOr[typings.awsSdk.sesv2Mod.UseCaseDescription] = js.native
+  var UseCaseDescription: js.UndefOr[typings.awsSdk.sesv2Mod.UseCaseDescription] = js.undefined
   
   /**
     * The URL of your website. This information helps us better understand the type of content that you plan to send.
     */
-  var WebsiteURL: js.UndefOr[typings.awsSdk.sesv2Mod.WebsiteURL] = js.native
+  var WebsiteURL: js.UndefOr[typings.awsSdk.sesv2Mod.WebsiteURL] = js.undefined
 }
 object AccountDetails {
   

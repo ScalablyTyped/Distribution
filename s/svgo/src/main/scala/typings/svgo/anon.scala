@@ -2,17 +2,15 @@ package typings.svgo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var width: String = js.native
+    var width: String
   }
   object Height {
     

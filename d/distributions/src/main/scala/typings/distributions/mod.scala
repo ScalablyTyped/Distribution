@@ -2,59 +2,51 @@ package typings.distributions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("distributions", "Binomial")
+  @JSImport("distributions", JSImport.Namespace)
   @js.native
-  def Binomial(properbility: Double, size: Double): Distribution = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("distributions", "Normal")
-  @js.native
-  def Normal(): Distribution = js.native
-  @JSImport("distributions", "Normal")
-  @js.native
-  def Normal(mean: js.UndefOr[scala.Nothing], sd: Double): Distribution = js.native
-  @JSImport("distributions", "Normal")
-  @js.native
-  def Normal(mean: Double): Distribution = js.native
-  @JSImport("distributions", "Normal")
-  @js.native
-  def Normal(mean: Double, sd: Double): Distribution = js.native
+  @scala.inline
+  def Binomial(properbility: Double, size: Double): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("Binomial")(properbility.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Distribution]
   
-  @JSImport("distributions", "Studentt")
-  @js.native
-  def Studentt(df: Double): Distribution = js.native
+  @scala.inline
+  def Normal(): Distribution = ^.asInstanceOf[js.Dynamic].applyDynamic("Normal")().asInstanceOf[Distribution]
+  @scala.inline
+  def Normal(mean: Double): Distribution = ^.asInstanceOf[js.Dynamic].applyDynamic("Normal")(mean.asInstanceOf[js.Any]).asInstanceOf[Distribution]
+  @scala.inline
+  def Normal(mean: Double, sd: Double): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("Normal")(mean.asInstanceOf[js.Any], sd.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+  @scala.inline
+  def Normal(mean: Unit, sd: Double): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("Normal")(mean.asInstanceOf[js.Any], sd.asInstanceOf[js.Any])).asInstanceOf[Distribution]
   
-  @JSImport("distributions", "Uniform")
-  @js.native
-  def Uniform(): Distribution = js.native
-  @JSImport("distributions", "Uniform")
-  @js.native
-  def Uniform(a: js.UndefOr[scala.Nothing], b: Double): Distribution = js.native
-  @JSImport("distributions", "Uniform")
-  @js.native
-  def Uniform(a: Double): Distribution = js.native
-  @JSImport("distributions", "Uniform")
-  @js.native
-  def Uniform(a: Double, b: Double): Distribution = js.native
+  @scala.inline
+  def Studentt(df: Double): Distribution = ^.asInstanceOf[js.Dynamic].applyDynamic("Studentt")(df.asInstanceOf[js.Any]).asInstanceOf[Distribution]
   
-  @js.native
+  @scala.inline
+  def Uniform(): Distribution = ^.asInstanceOf[js.Dynamic].applyDynamic("Uniform")().asInstanceOf[Distribution]
+  @scala.inline
+  def Uniform(a: Double): Distribution = ^.asInstanceOf[js.Dynamic].applyDynamic("Uniform")(a.asInstanceOf[js.Any]).asInstanceOf[Distribution]
+  @scala.inline
+  def Uniform(a: Double, b: Double): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("Uniform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+  @scala.inline
+  def Uniform(a: Unit, b: Double): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("Uniform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+  
   trait Distribution extends StObject {
     
-    def cdf(x: Double): Double = js.native
+    def cdf(x: Double): Double
     
-    def inv(p: Double): Double = js.native
+    def inv(p: Double): Double
     
-    def mean(): Double = js.native
+    def mean(): Double
     
-    def median(): Double = js.native
+    def median(): Double
     
-    def pdf(x: Double): Double = js.native
+    def pdf(x: Double): Double
     
-    def variance(): Double = js.native
+    def variance(): Double
   }
   object Distribution {
     

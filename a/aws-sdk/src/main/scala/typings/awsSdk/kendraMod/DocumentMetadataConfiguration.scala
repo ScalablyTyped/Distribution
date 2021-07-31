@@ -2,31 +2,29 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentMetadataConfiguration extends StObject {
   
   /**
     * The name of the index field.
     */
-  var Name: DocumentMetadataConfigurationName = js.native
+  var Name: DocumentMetadataConfigurationName
   
   /**
     * Provides manual tuning parameters to determine how the field affects the search results.
     */
-  var Relevance: js.UndefOr[typings.awsSdk.kendraMod.Relevance] = js.native
+  var Relevance: js.UndefOr[typings.awsSdk.kendraMod.Relevance] = js.undefined
   
   /**
     * Provides information about how the field is used during a search.
     */
-  var Search: js.UndefOr[typings.awsSdk.kendraMod.Search] = js.native
+  var Search: js.UndefOr[typings.awsSdk.kendraMod.Search] = js.undefined
   
   /**
     * The data type of the index field. 
     */
-  var Type: DocumentAttributeValueType = js.native
+  var Type: DocumentAttributeValueType
 }
 object DocumentMetadataConfiguration {
   

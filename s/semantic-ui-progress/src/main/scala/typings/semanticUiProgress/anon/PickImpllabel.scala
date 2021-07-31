@@ -4,14 +4,12 @@ import typings.semanticUiProgress.semanticUiProgressStrings.percent
 import typings.semanticUiProgress.semanticUiProgressStrings.ratio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'label'> */
-@js.native
 trait PickImpllabel extends StObject {
   
-  var label: percent | ratio = js.native
+  var label: percent | ratio
 }
 object PickImpllabel {
   

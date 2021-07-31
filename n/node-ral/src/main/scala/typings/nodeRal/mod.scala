@@ -26,10 +26,13 @@ import typings.nodeRal.nodeRalStrings.roundrobin
 import typings.nodeRal.nodeRalStrings.soap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-ral", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-ral", "Balance")
   @js.native
@@ -77,7 +80,7 @@ object mod {
     
     def disableUpdate(): Unit = js.native
     
-    def enableUpdate(interval: Double, all: Boolean, cb: js.Function2[/* err */ js.Any, /* confs */ js.Any, _]): Unit = js.native
+    def enableUpdate(interval: Double, all: Boolean, cb: js.Function2[/* err */ js.Any, /* confs */ js.Any, js.Any]): Unit = js.native
     
     def getConf(name: String): Service = js.native
     
@@ -131,28 +134,36 @@ object mod {
   @js.native
   val Logger: LoggerFactory = js.native
   
-  @JSImport("node-ral", "Middleware")
-  @js.native
+  @scala.inline
   def Middleware(): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* resp */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
-  @JSImport("node-ral", "Middleware")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")().asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
+  @scala.inline
   def Middleware(options: Service): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* resp */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
   
   @JSImport("node-ral", "Protocol")
   @js.native
   abstract class Protocol () extends RalModule {
     
-    def _request(config: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+    def _request(config: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
     
     def beforeRequest(context: js.Any): js.Any = js.native
     
@@ -163,23 +174,27 @@ object mod {
   /* static members */
   object Protocol {
     
-    @JSImport("node-ral", "Protocol.beforeRequest")
+    @JSImport("node-ral", "Protocol")
     @js.native
-    def beforeRequest(context: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("node-ral", "Protocol.normalizeConfig")
-    @js.native
-    def normalizeConfig(context: js.Any): js.Any = js.native
+    @scala.inline
+    def beforeRequest(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def normalizeConfig(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object RAL {
     
+    @scala.inline
+    def apply(serviceName: String): RalRunner = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[RalRunner]
+    @scala.inline
+    def apply(serviceName: String, options: js.Object): RalRunner = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RalRunner]
+    
     @JSImport("node-ral", "RAL")
     @js.native
-    def apply(serviceName: String): RalRunner = js.native
-    @JSImport("node-ral", "RAL")
-    @js.native
-    def apply(serviceName: String, options: js.Object): RalRunner = js.native
+    val ^ : js.Any = js.native
     
     @JSImport("node-ral", "RAL.NormalizerManager")
     @js.native
@@ -210,43 +225,33 @@ object mod {
       def throwError(err: js.Any): Unit = js.native
     }
     
-    @JSImport("node-ral", "RAL.appendExtPath")
-    @js.native
-    def appendExtPath(extPath: String): Unit = js.native
+    @scala.inline
+    def appendExtPath(extPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendExtPath")(extPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("node-ral", "RAL.getConf")
-    @js.native
-    def getConf(name: String): typings.nodeRal.mod.Config = js.native
+    @scala.inline
+    def getConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
     
-    @JSImport("node-ral", "RAL.getRawConf")
-    @js.native
-    def getRawConf(name: String): typings.nodeRal.mod.Config = js.native
+    @scala.inline
+    def getRawConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
     
-    @JSImport("node-ral", "RAL.init")
-    @js.native
-    def init(): Unit = js.native
-    @JSImport("node-ral", "RAL.init")
-    @js.native
-    def init(options: js.Object): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    @scala.inline
+    def init(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("node-ral", "RAL.reload")
-    @js.native
-    def reload(): Unit = js.native
-    @JSImport("node-ral", "RAL.reload")
-    @js.native
-    def reload(options: js.Object): Unit = js.native
+    @scala.inline
+    def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+    @scala.inline
+    def reload(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("node-ral", "RAL.setConfigNormalizer")
-    @js.native
-    def setConfigNormalizer(normalizers: ConfigNormalizer): Unit = js.native
+    @scala.inline
+    def setConfigNormalizer(normalizers: ConfigNormalizer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigNormalizer")(normalizers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("node-ral", "RALPromise")
-  @js.native
-  def RALPromise[T](name: String): js.Promise[T] = js.native
-  @JSImport("node-ral", "RALPromise")
-  @js.native
-  def RALPromise[T](name: String, options: js.Object): js.Promise[T] = js.native
+  @scala.inline
+  def RALPromise[T](name: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def RALPromise[T](name: String, options: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("node-ral", "RalModule")
   @js.native
@@ -263,16 +268,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("node-ral", "RalModule.clearCache")
-    @js.native
-    def clearCache(): Unit = js.native
+    @scala.inline
+    def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
     
-    @JSImport("node-ral", "RalModule.load")
-    @js.native
-    def load(pathOrModule: String): Unit = js.native
-    @JSImport("node-ral", "RalModule.load")
-    @js.native
-    def load(pathOrModule: RalModule): Unit = js.native
+    @scala.inline
+    def load(pathOrModule: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def load(pathOrModule: RalModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("node-ral", "RalModule.modules")
     @js.native
@@ -283,40 +285,39 @@ object mod {
   
   type BalanceContextConstructor = Instantiable2[/* serviceID */ String, /* service */ Service, BalanceContextClass]
   
-  @js.native
   trait LogInfo extends StObject {
     
-    var conv: String = js.native
+    var conv: String
     
-    var cost: String = js.native
+    var cost: String
     
-    var method: String = js.native
+    var method: String
     
-    var pack: String = js.native
+    var pack: String
     
-    var path: String = js.native
+    var path: String
     
-    var prot: String = js.native
+    var prot: String
     
-    var proxy: String = js.native
+    var proxy: String
     
-    var query: String = js.native
+    var query: String
     
-    var read: String = js.native
+    var read: String
     
-    var remote: String = js.native
+    var remote: String
     
-    var requestID: String = js.native
+    var requestID: String
     
-    var retry: String = js.native
+    var retry: String
     
-    var service: String = js.native
+    var service: String
     
-    var talk: String = js.native
+    var talk: String
     
-    var unpack: String = js.native
+    var unpack: String
     
-    var write: String = js.native
+    var write: String
   }
   object LogInfo {
     
@@ -404,18 +405,17 @@ object mod {
     var options: App = js.native
   }
   
-  @js.native
   trait RalLogger extends StObject {
     
-    def debug(param: js.Any*): Unit = js.native
+    def debug(param: js.Any*): Unit
     
-    def fatal(param: js.Any*): Unit = js.native
+    def fatal(param: js.Any*): Unit
     
-    def notice(param: js.Any*): Unit = js.native
+    def notice(param: js.Any*): Unit
     
-    def trace(param: js.Any*): Unit = js.native
+    def trace(param: js.Any*): Unit
     
-    def warning(param: js.Any*): Unit = js.native
+    def warning(param: js.Any*): Unit
   }
   object RalLogger {
     
@@ -451,14 +451,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Server extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var idc: js.UndefOr[String] = js.native
+    var idc: js.UndefOr[String] = js.undefined
     
-    var port: String | Double = js.native
+    var port: String | Double
   }
   object Server {
     
@@ -485,36 +484,35 @@ object mod {
     }
   }
   
-  @js.native
   trait Service extends StObject {
     
-    var balance: random | roundrobin | hashring = js.native
+    var balance: random | roundrobin | hashring
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var encoding: js.UndefOr[`utf-8` | GBK] = js.native
+    var encoding: js.UndefOr[`utf-8` | GBK] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String | Double]] = js.native
+    var headers: js.UndefOr[StringDictionary[String | Double]] = js.undefined
     
-    var hybird: js.UndefOr[Boolean] = js.native
+    var hybird: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[GET | POST] = js.native
+    var method: js.UndefOr[GET | POST] = js.undefined
     
-    var pack: buildInConverter = js.native
+    var pack: buildInConverter
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var protocol: http | https | soap | redis = js.native
+    var protocol: http | https | soap | redis
     
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
-    var retry: js.UndefOr[Double] = js.native
+    var retry: js.UndefOr[Double] = js.undefined
     
-    var server: js.Array[Server] = js.native
+    var server: js.Array[Server]
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var unpack: buildInConverter = js.native
+    var unpack: buildInConverter
   }
   object Service {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Monitoring extends StObject {
   
   /**
     * Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
     */
-  var State: js.UndefOr[MonitoringState] = js.native
+  var State: js.UndefOr[MonitoringState] = js.undefined
 }
 object Monitoring {
   

@@ -10,9 +10,9 @@ TypeScript typings for Library Agent API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.libraryagent |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 57 |
 | # dependents       | 1 |
-| # downloads        | 161 |
+| # downloads        | 3900 |
 | # stars            | 0 |
 
 ## Links

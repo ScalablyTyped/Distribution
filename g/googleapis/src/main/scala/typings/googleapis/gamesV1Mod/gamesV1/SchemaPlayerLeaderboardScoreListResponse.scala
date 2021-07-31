@@ -2,35 +2,33 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of player leaderboard scores.
   */
-@js.native
 trait SchemaPlayerLeaderboardScoreListResponse extends StObject {
   
   /**
     * The leaderboard scores.
     */
-  var items: js.UndefOr[js.Array[SchemaPlayerLeaderboardScore]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPlayerLeaderboardScore]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerLeaderboardScoreListResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The pagination token for the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Player resources for the owner of this score.
     */
-  var player: js.UndefOr[SchemaPlayer] = js.native
+  var player: js.UndefOr[SchemaPlayer] = js.undefined
 }
 object SchemaPlayerLeaderboardScoreListResponse {
   

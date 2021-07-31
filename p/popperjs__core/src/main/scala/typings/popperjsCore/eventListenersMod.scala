@@ -5,7 +5,6 @@ import typings.popperjsCore.popperjsCoreStrings.eventListeners
 import typings.popperjsCore.typesMod.Modifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventListenersMod extends Shortcut {
@@ -16,12 +15,11 @@ object eventListenersMod extends Shortcut {
   
   type EventListenersModifier = Modifier[eventListeners, Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var resize: Boolean = js.native
+    var resize: Boolean
     
-    var scroll: Boolean = js.native
+    var scroll: Boolean
   }
   object Options {
     

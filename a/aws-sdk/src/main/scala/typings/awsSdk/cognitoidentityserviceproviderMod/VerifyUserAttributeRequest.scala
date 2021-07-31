@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyUserAttributeRequest extends StObject {
   
   /**
     * Represents the access token of the request to verify user attributes.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
   
   /**
     * The attribute name in the request to verify user attributes.
     */
-  var AttributeName: AttributeNameType = js.native
+  var AttributeName: AttributeNameType
   
   /**
     * The verification code in the request to verify user attributes.
     */
-  var Code: ConfirmationCodeType = js.native
+  var Code: ConfirmationCodeType
 }
 object VerifyUserAttributeRequest {
   

@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,6 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.SkinInstance")
 @js.native
 class SkinInstance protected ()
-  extends typings.playcanvas.pc.SkinInstance {
+  extends StObject
+     with typings.playcanvas.pc.SkinInstance {
   def this(skin: typings.playcanvas.pc.Skin) = this()
+  
+  /**
+    * An array of nodes representing each bone in this skin instance.
+    */
+  /* CompleteClass */
+  var bones: js.Array[typings.playcanvas.pc.GraphNode] = js.native
 }

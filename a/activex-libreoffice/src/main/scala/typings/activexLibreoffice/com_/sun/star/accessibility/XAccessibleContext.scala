@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * its description is something like "Accepts all changes made in the dialog".
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleContext extends XInterface {
+trait XAccessibleContext
+  extends StObject
+     with XInterface {
   
   /**
     * Return the number of children.
@@ -26,7 +26,7 @@ trait XAccessibleContext extends XInterface {
     * Returns the number of accessible children of the object.
     * @returns The returned value is non-negative.
     */
-  val AccessibleChildCount: Double = js.native
+  val AccessibleChildCount: Double
   
   /**
     * Returns the object's description.
@@ -34,7 +34,7 @@ trait XAccessibleContext extends XInterface {
     * Returns the object's localized description. The description should complement the more generic descriptions given by an object's role and name.
     * @returns The returned string is the object's localized description.
     */
-  val AccessibleDescription: String = js.native
+  val AccessibleDescription: String
   
   /**
     * Returns the index of this object in its accessible parent.
@@ -42,7 +42,7 @@ trait XAccessibleContext extends XInterface {
     * If you call getAccessibeChild on the object's parent with the index returned by this function you get a reference to this object.
     * @returns The returned index is zero based.
     */
-  val AccessibleIndexInParent: Double = js.native
+  val AccessibleIndexInParent: Double
   
   /**
     * Return the object's localized name.
@@ -51,7 +51,7 @@ trait XAccessibleContext extends XInterface {
     * least between children of the same parent, although the uniqueness is neither enforced nor used inside the API.
     * @returns The returned string is the object's localized name.
     */
-  val AccessibleName: String = js.native
+  val AccessibleName: String
   
   /**
     * Returns the parent of this object.
@@ -59,7 +59,7 @@ trait XAccessibleContext extends XInterface {
     * This function may be called for every node, including the root node, of the accessible tree.
     * @returns The returned reference points to a valid object for all but the root node. If called for the root node an empty reference is returned.
     */
-  val AccessibleParent: XAccessible = js.native
+  val AccessibleParent: XAccessible
   
   /**
     * Returns the set of relations defined for this object.
@@ -69,7 +69,7 @@ trait XAccessibleContext extends XInterface {
     * There are two ways to represent an empty list of relations: Return an empty reference or return a valid object that contains an empty list.
     * @returns The returned value is either an empty reference or a reference to a valid object that represents a copy of the objects list of relations.
     */
-  val AccessibleRelationSet: XAccessibleRelationSet = js.native
+  val AccessibleRelationSet: XAccessibleRelationSet
   
   /**
     * Returns the role of this object.
@@ -78,7 +78,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned value is a role defined in the enumeration {@link AccessibleRole} .
     * @see AccessibleRole for a list of the available roles.
     */
-  val AccessibleRole: Double = js.native
+  val AccessibleRole: Double
   
   /**
     * Returns the set of states that are currently active for this object.
@@ -88,7 +88,7 @@ trait XAccessibleContext extends XInterface {
     * @returns A reference to this object's state set or an empty reference if states are not supported.
     * @see XAccessibleStateSet
     */
-  val AccessibleStateSet: XAccessibleStateSet = js.native
+  val AccessibleStateSet: XAccessibleStateSet
   
   /**
     * Returns the locale of the component.
@@ -97,7 +97,7 @@ trait XAccessibleContext extends XInterface {
     * @returns If this object does not have a locale, the locale of its parent is returned. If it does not have (yet) a parent it throws the exception {@link Il
     * @throws IllegalAccessibleComponentStateException when this object does not (yet) have a parent.
     */
-  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /**
     * Returns the i-th child of this object.
@@ -107,7 +107,7 @@ trait XAccessibleContext extends XInterface {
     * @returns If the object has an i-th child the returned value is a reference to that child. Otherwise an empty reference is returned.
     * @throws com::sun::star::lang::IndexOutOfBoundsException If no child with the given index exists then an {@link com.sun.star.lang.IndexOutOfBoundsExceptio
     */
-  def getAccessibleChild(i: Double): XAccessible = js.native
+  def getAccessibleChild(i: Double): XAccessible
   
   /**
     * Return the number of children.
@@ -115,7 +115,7 @@ trait XAccessibleContext extends XInterface {
     * Returns the number of accessible children of the object.
     * @returns The returned value is non-negative.
     */
-  def getAccessibleChildCount(): Double = js.native
+  def getAccessibleChildCount(): Double
   
   /**
     * Returns the object's description.
@@ -123,7 +123,7 @@ trait XAccessibleContext extends XInterface {
     * Returns the object's localized description. The description should complement the more generic descriptions given by an object's role and name.
     * @returns The returned string is the object's localized description.
     */
-  def getAccessibleDescription(): String = js.native
+  def getAccessibleDescription(): String
   
   /**
     * Returns the index of this object in its accessible parent.
@@ -131,7 +131,7 @@ trait XAccessibleContext extends XInterface {
     * If you call getAccessibeChild on the object's parent with the index returned by this function you get a reference to this object.
     * @returns The returned index is zero based.
     */
-  def getAccessibleIndexInParent(): Double = js.native
+  def getAccessibleIndexInParent(): Double
   
   /**
     * Return the object's localized name.
@@ -140,7 +140,7 @@ trait XAccessibleContext extends XInterface {
     * least between children of the same parent, although the uniqueness is neither enforced nor used inside the API.
     * @returns The returned string is the object's localized name.
     */
-  def getAccessibleName(): String = js.native
+  def getAccessibleName(): String
   
   /**
     * Returns the parent of this object.
@@ -148,7 +148,7 @@ trait XAccessibleContext extends XInterface {
     * This function may be called for every node, including the root node, of the accessible tree.
     * @returns The returned reference points to a valid object for all but the root node. If called for the root node an empty reference is returned.
     */
-  def getAccessibleParent(): XAccessible = js.native
+  def getAccessibleParent(): XAccessible
   
   /**
     * Returns the set of relations defined for this object.
@@ -158,7 +158,7 @@ trait XAccessibleContext extends XInterface {
     * There are two ways to represent an empty list of relations: Return an empty reference or return a valid object that contains an empty list.
     * @returns The returned value is either an empty reference or a reference to a valid object that represents a copy of the objects list of relations.
     */
-  def getAccessibleRelationSet(): XAccessibleRelationSet = js.native
+  def getAccessibleRelationSet(): XAccessibleRelationSet
   
   /**
     * Returns the role of this object.
@@ -167,7 +167,7 @@ trait XAccessibleContext extends XInterface {
     * @returns The returned value is a role defined in the enumeration {@link AccessibleRole} .
     * @see AccessibleRole for a list of the available roles.
     */
-  def getAccessibleRole(): Double = js.native
+  def getAccessibleRole(): Double
   
   /**
     * Returns the set of states that are currently active for this object.
@@ -177,7 +177,7 @@ trait XAccessibleContext extends XInterface {
     * @returns A reference to this object's state set or an empty reference if states are not supported.
     * @see XAccessibleStateSet
     */
-  def getAccessibleStateSet(): XAccessibleStateSet = js.native
+  def getAccessibleStateSet(): XAccessibleStateSet
   
   /**
     * Returns the locale of the component.
@@ -186,7 +186,7 @@ trait XAccessibleContext extends XInterface {
     * @returns If this object does not have a locale, the locale of its parent is returned. If it does not have (yet) a parent it throws the exception {@link Il
     * @throws IllegalAccessibleComponentStateException when this object does not (yet) have a parent.
     */
-  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
 }
 object XAccessibleContext {
   

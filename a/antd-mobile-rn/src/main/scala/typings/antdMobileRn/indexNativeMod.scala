@@ -9,7 +9,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexNativeMod {
@@ -56,14 +55,13 @@ object indexNativeMod {
     def renderHeader(section: AccordionHeader, _underscore: Double, isActive: Boolean): Element = js.native
   }
   
-  @js.native
   trait AccordionHeader extends StObject {
     
-    var content: ReactElement = js.native
+    var content: ReactElement
     
-    var style: StyleProp[ViewStyle] = js.native
+    var style: StyleProp[ViewStyle]
     
-    var title: String = js.native
+    var title: String
   }
   object AccordionHeader {
     
@@ -93,12 +91,13 @@ object indexNativeMod {
     }
   }
   
-  @js.native
-  trait AccordionNativeProps extends AccordionPropsTypes {
+  trait AccordionNativeProps
+    extends StObject
+       with AccordionPropsTypes {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[AccordionStyle] = js.native
+    var styles: js.UndefOr[AccordionStyle] = js.undefined
   }
   object AccordionNativeProps {
     
@@ -128,12 +127,11 @@ object indexNativeMod {
     }
   }
   
-  @js.native
   trait AccordionPanelProps extends StObject {
     
-    var header: js.Any = js.native
+    var header: js.Any
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object AccordionPanelProps {
     

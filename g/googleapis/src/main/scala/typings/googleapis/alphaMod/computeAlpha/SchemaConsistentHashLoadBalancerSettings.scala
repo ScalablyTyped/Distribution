@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This message defines settings for a consistent hash style load balancer.
   */
-@js.native
 trait SchemaConsistentHashLoadBalancerSettings extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaConsistentHashLoadBalancerSettings extends StObject {
     * the cookie is not present, it will be generated. This field is applicable
     * if the sessionAffinity is set to HTTP_COOKIE.
     */
-  var httpCookie: js.UndefOr[SchemaConsistentHashLoadBalancerSettingsHttpCookie] = js.native
+  var httpCookie: js.UndefOr[SchemaConsistentHashLoadBalancerSettingsHttpCookie] = js.undefined
   
   /**
     * The hash based on the value of the specified header field. This field is
     * applicable if the sessionAffinity is set to HEADER_FIELD.
     */
-  var httpHeaderName: js.UndefOr[String] = js.native
+  var httpHeaderName: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum number of virtual nodes to use for the hash ring. Defaults to
@@ -31,7 +29,7 @@ trait SchemaConsistentHashLoadBalancerSettings extends StObject {
     * the number of hosts in the load balancing pool is larger than the ring
     * size, each host will be assigned a single virtual node.
     */
-  var minimumRingSize: js.UndefOr[String] = js.native
+  var minimumRingSize: js.UndefOr[String] = js.undefined
 }
 object SchemaConsistentHashLoadBalancerSettings {
   

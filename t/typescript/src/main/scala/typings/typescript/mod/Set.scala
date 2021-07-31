@@ -2,16 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ES6 Set interface. */
-@js.native
 trait Set[T]
-  extends ReadonlySet[T]
+  extends StObject
+     with ReadonlySet[T]
      with Collection[T] {
   
-  def add(value: T): this.type = js.native
+  def add(value: T): this.type
 }
 object Set {
   
@@ -32,7 +31,7 @@ object Set {
   }
   
   @scala.inline
-  implicit class SetMutableBuilder[Self <: Set[_], T] (val x: Self with Set[T]) extends AnyVal {
+  implicit class SetMutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
     
     @scala.inline
     def setAdd(value: T => Set[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

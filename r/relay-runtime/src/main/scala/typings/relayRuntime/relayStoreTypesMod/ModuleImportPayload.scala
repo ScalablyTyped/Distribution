@@ -5,23 +5,21 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleImportPayload extends StObject {
   
-  val data: PayloadData = js.native
+  val data: PayloadData
   
-  val dataID: DataID = js.native
+  val dataID: DataID
   
-  val operationReference: js.Any = js.native
+  val operationReference: js.Any
   
-  val path: js.Array[String] = js.native
+  val path: js.Array[String]
   
-  val typeName: String = js.native
+  val typeName: String
   
-  val variables: Variables = js.native
+  val variables: Variables
 }
 object ModuleImportPayload {
   

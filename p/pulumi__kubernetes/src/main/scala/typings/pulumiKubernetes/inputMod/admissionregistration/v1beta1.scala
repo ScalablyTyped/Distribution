@@ -6,7 +6,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.admissionregistrationDot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1 {
@@ -14,23 +13,22 @@ object v1beta1 {
   /**
     * MutatingWebhook describes an admission webhook and the resources and operations it applies to.
     */
-  @js.native
   trait MutatingWebhook extends StObject {
     
     /**
       * AdmissionReviewVersions is an ordered list of preferred `AdmissionReview` versions the Webhook expects. API server will try to use first version in the list which it supports. If none of the versions specified in this list supported by API server, validation will fail for this object. If a persisted webhook configuration specifies allowed versions and does not include any versions known to the API Server, calls to the webhook will fail and be subject to the failure policy. Default to `['v1beta1']`.
       */
-    var admissionReviewVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var admissionReviewVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * ClientConfig defines how to communicate with the hook. Required
       */
-    var clientConfig: Input[WebhookClientConfig] = js.native
+    var clientConfig: Input[WebhookClientConfig]
     
     /**
       * FailurePolicy defines how unrecognized errors from the admission endpoint are handled - allowed values are Ignore or Fail. Defaults to Ignore.
       */
-    var failurePolicy: js.UndefOr[Input[String]] = js.native
+    var failurePolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * matchPolicy defines how the "rules" list is used to match incoming requests. Allowed values are "Exact" or "Equivalent".
@@ -41,12 +39,12 @@ object v1beta1 {
       *
       * Defaults to "Exact"
       */
-    var matchPolicy: js.UndefOr[Input[String]] = js.native
+    var matchPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the admission webhook. Name should be fully qualified, e.g., imagepolicy.kubernetes.io, where "imagepolicy" is the name of the webhook, and kubernetes.io is the name of the organization. Required.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * NamespaceSelector decides whether to run the webhook on an object based on whether the namespace for that object matches the selector. If the object itself is a namespace, the matching is performed on object.metadata.labels. If the object is another cluster scoped resource, it never skips the webhook.
@@ -81,12 +79,12 @@ object v1beta1 {
       *
       * Default to the empty LabelSelector, which matches everything.
       */
-    var namespaceSelector: js.UndefOr[Input[LabelSelector]] = js.native
+    var namespaceSelector: js.UndefOr[Input[LabelSelector]] = js.undefined
     
     /**
       * ObjectSelector decides whether to run the webhook based on if the object has matching labels. objectSelector is evaluated against both the oldObject and newObject that would be sent to the webhook, and is considered to match if either object matches the selector. A null object (oldObject in the case of create, or newObject in the case of delete) or an object that cannot have labels (like a DeploymentRollback or a PodProxyOptions object) is not considered to match. Use the object selector only if the webhook is opt-in, because end users may skip the admission webhook by setting the labels. Default to the empty LabelSelector, which matches everything.
       */
-    var objectSelector: js.UndefOr[Input[LabelSelector]] = js.native
+    var objectSelector: js.UndefOr[Input[LabelSelector]] = js.undefined
     
     /**
       * reinvocationPolicy indicates whether this webhook should be called multiple times as part of a single admission evaluation. Allowed values are "Never" and "IfNeeded".
@@ -97,22 +95,22 @@ object v1beta1 {
       *
       * Defaults to "Never".
       */
-    var reinvocationPolicy: js.UndefOr[Input[String]] = js.native
+    var reinvocationPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Rules describes what operations on what resources/subresources the webhook cares about. The webhook cares about an operation if it matches _any_ Rule. However, in order to prevent ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks from putting the cluster in a state which cannot be recovered from without completely disabling the plugin, ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks are never called on admission requests for ValidatingWebhookConfiguration and MutatingWebhookConfiguration objects.
       */
-    var rules: js.UndefOr[Input[js.Array[Input[RuleWithOperations]]]] = js.native
+    var rules: js.UndefOr[Input[js.Array[Input[RuleWithOperations]]]] = js.undefined
     
     /**
       * SideEffects states whether this webhook has side effects. Acceptable values are: Unknown, None, Some, NoneOnDryRun Webhooks with side effects MUST implement a reconciliation system, since a request may be rejected by a future step in the admission change and the side effects therefore need to be undone. Requests with the dryRun attribute will be auto-rejected if they match a webhook with sideEffects == Unknown or Some. Defaults to Unknown.
       */
-    var sideEffects: js.UndefOr[Input[String]] = js.native
+    var sideEffects: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * TimeoutSeconds specifies the timeout for this webhook. After the timeout passes, the webhook call will be ignored or the API call will fail based on the failure policy. The timeout value must be between 1 and 30 seconds. Default to 30 seconds.
       */
-    var timeoutSeconds: js.UndefOr[Input[Double]] = js.native
+    var timeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
   }
   object MutatingWebhook {
     
@@ -196,30 +194,29 @@ object v1beta1 {
   /**
     * MutatingWebhookConfiguration describes the configuration of and admission webhook that accept or reject and may change the object. Deprecated in v1.16, planned for removal in v1.19. Use admissionregistration.k8s.io/v1 MutatingWebhookConfiguration instead.
     */
-  @js.native
   trait MutatingWebhookConfiguration extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: js.UndefOr[Input[admissionregistrationDotk8sDotioSlashv1beta1]] = js.native
+    var apiVersion: js.UndefOr[Input[admissionregistrationDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
     var kind: js.UndefOr[
         Input[typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
       */
-    var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     
     /**
       * Webhooks is a list of webhooks and the affected resources and operations.
       */
-    var webhooks: js.UndefOr[Input[js.Array[Input[MutatingWebhook]]]] = js.native
+    var webhooks: js.UndefOr[Input[js.Array[Input[MutatingWebhook]]]] = js.undefined
   }
   object MutatingWebhookConfiguration {
     
@@ -264,23 +261,22 @@ object v1beta1 {
   /**
     * RuleWithOperations is a tuple of Operations and Resources. It is recommended to make sure that all the tuple expansions are valid.
     */
-  @js.native
   trait RuleWithOperations extends StObject {
     
     /**
       * APIGroups is the API groups the resources belong to. '*' is all groups. If '*' is present, the length of the slice must be one. Required.
       */
-    var apiGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var apiGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * APIVersions is the API versions the resources belong to. '*' is all versions. If '*' is present, the length of the slice must be one. Required.
       */
-    var apiVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var apiVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Operations is the operations the admission hook cares about - CREATE, UPDATE, DELETE, CONNECT or * for all of those operations and any future admission operations that are added. If '*' is present, the length of the slice must be one. Required.
       */
-    var operations: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var operations: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Resources is a list of resources this rule applies to.
@@ -291,12 +287,12 @@ object v1beta1 {
       *
       * Depending on the enclosing object, subresources might not be allowed. Required.
       */
-    var resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * scope specifies the scope of this rule. Valid values are "Cluster", "Namespaced", and "*" "Cluster" means that only cluster-scoped resources will match this rule. Namespace API objects are cluster-scoped. "Namespaced" means that only namespaced resources will match this rule. "*" means that there are no scope restrictions. Subresources match the scope of their parent resource. Default is "*".
       */
-    var scope: js.UndefOr[Input[String]] = js.native
+    var scope: js.UndefOr[Input[String]] = js.undefined
   }
   object RuleWithOperations {
     
@@ -356,28 +352,27 @@ object v1beta1 {
   /**
     * ServiceReference holds a reference to Service.legacy.k8s.io
     */
-  @js.native
   trait ServiceReference extends StObject {
     
     /**
       * `name` is the name of the service. Required
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * `namespace` is the namespace of the service. Required
       */
-    var namespace: Input[String] = js.native
+    var namespace: Input[String]
     
     /**
       * `path` is an optional URL path which will be sent in any request to this service.
       */
-    var path: js.UndefOr[Input[String]] = js.native
+    var path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If specified, the port on the service that hosting webhook. Default to 443 for backward compatibility. `port` should be a valid port number (1-65535, inclusive).
       */
-    var port: js.UndefOr[Input[Double]] = js.native
+    var port: js.UndefOr[Input[Double]] = js.undefined
   }
   object ServiceReference {
     
@@ -413,23 +408,22 @@ object v1beta1 {
   /**
     * ValidatingWebhook describes an admission webhook and the resources and operations it applies to.
     */
-  @js.native
   trait ValidatingWebhook extends StObject {
     
     /**
       * AdmissionReviewVersions is an ordered list of preferred `AdmissionReview` versions the Webhook expects. API server will try to use first version in the list which it supports. If none of the versions specified in this list supported by API server, validation will fail for this object. If a persisted webhook configuration specifies allowed versions and does not include any versions known to the API Server, calls to the webhook will fail and be subject to the failure policy. Default to `['v1beta1']`.
       */
-    var admissionReviewVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var admissionReviewVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * ClientConfig defines how to communicate with the hook. Required
       */
-    var clientConfig: Input[WebhookClientConfig] = js.native
+    var clientConfig: Input[WebhookClientConfig]
     
     /**
       * FailurePolicy defines how unrecognized errors from the admission endpoint are handled - allowed values are Ignore or Fail. Defaults to Ignore.
       */
-    var failurePolicy: js.UndefOr[Input[String]] = js.native
+    var failurePolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * matchPolicy defines how the "rules" list is used to match incoming requests. Allowed values are "Exact" or "Equivalent".
@@ -440,12 +434,12 @@ object v1beta1 {
       *
       * Defaults to "Exact"
       */
-    var matchPolicy: js.UndefOr[Input[String]] = js.native
+    var matchPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the admission webhook. Name should be fully qualified, e.g., imagepolicy.kubernetes.io, where "imagepolicy" is the name of the webhook, and kubernetes.io is the name of the organization. Required.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * NamespaceSelector decides whether to run the webhook on an object based on whether the namespace for that object matches the selector. If the object itself is a namespace, the matching is performed on object.metadata.labels. If the object is another cluster scoped resource, it never skips the webhook.
@@ -480,27 +474,27 @@ object v1beta1 {
       *
       * Default to the empty LabelSelector, which matches everything.
       */
-    var namespaceSelector: js.UndefOr[Input[LabelSelector]] = js.native
+    var namespaceSelector: js.UndefOr[Input[LabelSelector]] = js.undefined
     
     /**
       * ObjectSelector decides whether to run the webhook based on if the object has matching labels. objectSelector is evaluated against both the oldObject and newObject that would be sent to the webhook, and is considered to match if either object matches the selector. A null object (oldObject in the case of create, or newObject in the case of delete) or an object that cannot have labels (like a DeploymentRollback or a PodProxyOptions object) is not considered to match. Use the object selector only if the webhook is opt-in, because end users may skip the admission webhook by setting the labels. Default to the empty LabelSelector, which matches everything.
       */
-    var objectSelector: js.UndefOr[Input[LabelSelector]] = js.native
+    var objectSelector: js.UndefOr[Input[LabelSelector]] = js.undefined
     
     /**
       * Rules describes what operations on what resources/subresources the webhook cares about. The webhook cares about an operation if it matches _any_ Rule. However, in order to prevent ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks from putting the cluster in a state which cannot be recovered from without completely disabling the plugin, ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks are never called on admission requests for ValidatingWebhookConfiguration and MutatingWebhookConfiguration objects.
       */
-    var rules: js.UndefOr[Input[js.Array[Input[RuleWithOperations]]]] = js.native
+    var rules: js.UndefOr[Input[js.Array[Input[RuleWithOperations]]]] = js.undefined
     
     /**
       * SideEffects states whether this webhook has side effects. Acceptable values are: Unknown, None, Some, NoneOnDryRun Webhooks with side effects MUST implement a reconciliation system, since a request may be rejected by a future step in the admission change and the side effects therefore need to be undone. Requests with the dryRun attribute will be auto-rejected if they match a webhook with sideEffects == Unknown or Some. Defaults to Unknown.
       */
-    var sideEffects: js.UndefOr[Input[String]] = js.native
+    var sideEffects: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * TimeoutSeconds specifies the timeout for this webhook. After the timeout passes, the webhook call will be ignored or the API call will fail based on the failure policy. The timeout value must be between 1 and 30 seconds. Default to 30 seconds.
       */
-    var timeoutSeconds: js.UndefOr[Input[Double]] = js.native
+    var timeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
   }
   object ValidatingWebhook {
     
@@ -578,30 +572,29 @@ object v1beta1 {
   /**
     * ValidatingWebhookConfiguration describes the configuration of and admission webhook that accept or reject and object without changing it. Deprecated in v1.16, planned for removal in v1.19. Use admissionregistration.k8s.io/v1 ValidatingWebhookConfiguration instead.
     */
-  @js.native
   trait ValidatingWebhookConfiguration extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: js.UndefOr[Input[admissionregistrationDotk8sDotioSlashv1beta1]] = js.native
+    var apiVersion: js.UndefOr[Input[admissionregistrationDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
     var kind: js.UndefOr[
         Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ValidatingWebhookConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Standard object metadata; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
       */
-    var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+    var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
     
     /**
       * Webhooks is a list of webhooks and the affected resources and operations.
       */
-    var webhooks: js.UndefOr[Input[js.Array[Input[ValidatingWebhook]]]] = js.native
+    var webhooks: js.UndefOr[Input[js.Array[Input[ValidatingWebhook]]]] = js.undefined
   }
   object ValidatingWebhookConfiguration {
     
@@ -646,20 +639,19 @@ object v1beta1 {
   /**
     * WebhookClientConfig contains the information to make a TLS connection with the webhook
     */
-  @js.native
   trait WebhookClientConfig extends StObject {
     
     /**
       * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server certificate. If unspecified, system trust roots on the apiserver are used.
       */
-    var caBundle: js.UndefOr[Input[String]] = js.native
+    var caBundle: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * `service` is a reference to the service for this webhook. Either `service` or `url` must be specified.
       *
       * If the webhook is running within the cluster, then you should use `service`.
       */
-    var service: js.UndefOr[Input[ServiceReference]] = js.native
+    var service: js.UndefOr[Input[ServiceReference]] = js.undefined
     
     /**
       * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`). Exactly one of `url` or `service` must be specified.
@@ -674,7 +666,7 @@ object v1beta1 {
       *
       * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments ("#...") and query parameters ("?...") are not allowed, either.
       */
-    var url: js.UndefOr[Input[String]] = js.native
+    var url: js.UndefOr[Input[String]] = js.undefined
   }
   object WebhookClientConfig {
     

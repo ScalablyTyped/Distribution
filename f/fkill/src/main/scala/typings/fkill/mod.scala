@@ -2,23 +2,18 @@ package typings.fkill
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fkill", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Promise[Unit] = js.native
-  @JSImport("fkill", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Promise[Unit] = js.native
-  @JSImport("fkill", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String | Double]): js.Promise[Unit] = js.native
-  @JSImport("fkill", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String | Double], options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def apply(input: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: js.Array[String | Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: js.Array[String | Double], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /**
   Fabulously kill processes. Cross-platform.
   @param input - One or more process IDs/names/ports to kill. To kill a port, prefix it with a colon. For example: `:8080`.
@@ -34,34 +29,35 @@ object mod {
   fkill([1337, 'Safari', ':8080']);
   ```
   */
-  @JSImport("fkill", JSImport.Namespace)
-  @js.native
-  def apply(input: Double): js.Promise[Unit] = js.native
-  @JSImport("fkill", JSImport.Namespace)
-  @js.native
-  def apply(input: Double, options: Options): js.Promise[Unit] = js.native
+  @scala.inline
+  def apply(input: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(input: Double, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
+  @JSImport("fkill", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Force kill the process.
     		@default false
     		*/
-    val force: js.UndefOr[Boolean] = js.native
+    val force: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Ignore capitalization when killing a process.
     		Note that the case is always ignored on Windows.
     		@default false
     		*/
-    val ignoreCase: js.UndefOr[Boolean] = js.native
+    val ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Kill all child processes along with the parent process. _(Windows only)_
     		@default true
     		*/
-    val tree: js.UndefOr[Boolean] = js.native
+    val tree: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

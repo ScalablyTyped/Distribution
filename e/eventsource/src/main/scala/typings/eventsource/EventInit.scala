@@ -2,17 +2,15 @@ package typings.eventsource
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventInit extends StObject {
   
-  var bubbles: js.UndefOr[Boolean] = js.native
+  var bubbles: js.UndefOr[Boolean] = js.undefined
   
-  var cancelable: js.UndefOr[Boolean] = js.native
+  var cancelable: js.UndefOr[Boolean] = js.undefined
   
-  var composed: js.UndefOr[Boolean] = js.native
+  var composed: js.UndefOr[Boolean] = js.undefined
 }
 object EventInit {
   

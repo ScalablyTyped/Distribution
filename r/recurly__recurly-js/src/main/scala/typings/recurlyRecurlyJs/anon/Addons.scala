@@ -2,25 +2,23 @@ package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Addons extends StObject {
   
-  var addons: String = js.native
+  var addons: String
   
-  var discount: String = js.native
+  var discount: String
   
-  var plan: String = js.native
+  var plan: String
   
-  var setup_fee: String = js.native
+  var setup_fee: String
   
-  var subtotal: String = js.native
+  var subtotal: String
   
-  var tax: String = js.native
+  var tax: String
   
-  var total: String = js.native
+  var total: String
 }
 object Addons {
   

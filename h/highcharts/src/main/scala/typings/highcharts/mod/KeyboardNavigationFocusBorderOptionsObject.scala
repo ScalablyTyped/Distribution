@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardNavigationFocusBorderOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable/disable focus border for
     * chart.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Hide the browser's default focus
     * indicator.
     */
-  var hideBrowserFocusOutline: js.UndefOr[Boolean] = js.native
+  var hideBrowserFocusOutline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Focus border margin around the
     * elements.
     */
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Style options for the focus
@@ -34,7 +32,7 @@ trait KeyboardNavigationFocusBorderOptionsObject extends StObject {
     *
     * In styled mode, the border is given the `.highcharts-focus-border` class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
 }
 object KeyboardNavigationFocusBorderOptionsObject {
   

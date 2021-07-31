@@ -5,31 +5,33 @@ import typings.envToObject.envToObjectStrings.boolean
 import typings.envToObject.envToObjectStrings.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("env-to-object", JSImport.Namespace)
-  @js.native
-  def apply(map: Mappings): js.Any = js.native
-  @JSImport("env-to-object", JSImport.Namespace)
-  @js.native
-  def apply(map: Mappings, options: Options): js.Any = js.native
+  @scala.inline
+  def apply(map: Mappings): js.Any = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(map: Mappings, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("env-to-object", JSImport.Namespace)
   @js.native
-  trait BooleanMapping extends Mapping {
+  val ^ : js.Any = js.native
+  
+  trait BooleanMapping
+    extends StObject
+       with Mapping {
     
-    var strict: Boolean = js.native
+    var strict: Boolean
     
-    var `type`: boolean = js.native
+    var `type`: boolean
   }
   object BooleanMapping {
     
     @scala.inline
-    def apply(strict: Boolean, `type`: boolean): BooleanMapping = {
+    def apply(strict: Boolean): BooleanMapping = {
       val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[BooleanMapping]
     }
     
@@ -44,14 +46,14 @@ object mod {
     }
   }
   
-  @js.native
   trait GenericMapping
-    extends /* opt */ StringDictionary[js.Any]
+    extends StObject
+       with /* opt */ StringDictionary[js.Any]
        with Mapping {
     
-    var keypath: String = js.native
+    var keypath: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object GenericMapping {
     
@@ -76,20 +78,21 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.envToObject.mod.Mapping because Already inherited */ @js.native
-  trait IntegerMapping extends GenericMapping {
+  - typings.envToObject.mod.Mapping because Already inherited */ trait IntegerMapping
+    extends StObject
+       with GenericMapping {
     
-    var radix: Double = js.native
+    var radix: Double
     
     @JSName("type")
-    var type_IntegerMapping: integer = js.native
+    var type_IntegerMapping: integer
   }
   object IntegerMapping {
     
     @scala.inline
-    def apply(keypath: String, radix: Double, `type`: integer): IntegerMapping = {
+    def apply(keypath: String, radix: Double): IntegerMapping = {
       val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], radix = radix.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[IntegerMapping]
     }
     
@@ -113,9 +116,9 @@ object mod {
   object Mapping {
     
     @scala.inline
-    def BooleanMapping(strict: Boolean, `type`: boolean): typings.envToObject.mod.BooleanMapping = {
+    def BooleanMapping(strict: Boolean): typings.envToObject.mod.BooleanMapping = {
       val __obj = js.Dynamic.literal(strict = strict.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[typings.envToObject.mod.BooleanMapping]
     }
     
@@ -126,19 +129,18 @@ object mod {
     }
     
     @scala.inline
-    def IntegerMapping(keypath: String, radix: Double, `type`: integer): typings.envToObject.mod.IntegerMapping = {
+    def IntegerMapping(keypath: String, radix: Double): typings.envToObject.mod.IntegerMapping = {
       val __obj = js.Dynamic.literal(keypath = keypath.asInstanceOf[js.Any], radix = radix.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[typings.envToObject.mod.IntegerMapping]
     }
   }
   
   type Mappings = StringDictionary[Mapping]
   
-  @js.native
   trait Options extends StObject {
     
-    var parsers: Parsers = js.native
+    var parsers: Parsers
   }
   object Options {
     

@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the BootstrapListEditItem object.
   */
 @js.native
-trait BootstrapClientListBoxItem extends ASPxClientListEditItem {
+trait BootstrapClientListBoxItem
+  extends StObject
+     with ASPxClientListEditItem {
   
   def GetFieldText(fieldIndex: String): String = js.native
   /**

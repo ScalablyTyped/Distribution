@@ -8,7 +8,6 @@ import typings.rss.mod.NodeRSS.RSSFactory
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,7 +15,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rss", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RSS {
+  class ^ protected ()
+    extends StObject
+       with RSS {
     /**
       * Create an RSS feed with options.
       * @param {FeedOptions} feedOptions - Options for the RSS feed.
@@ -30,30 +31,29 @@ object mod extends Shortcut {
   
   object NodeRSS {
     
-    @js.native
     trait EnclosureObject extends StObject {
       
       /**
         * Path to binary file (or URL).
         */
-      var file: js.UndefOr[String] = js.native
+      var file: js.UndefOr[String] = js.undefined
       
       /**
         * Size of the file.
         */
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
       
       /**
         * If not provided, the MIME Type will be guessed based
         * on the extension of the file or URL, passing type to
         * the enclosure will override the guessed type.
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
       /**
         * URL to file object (or file).
         */
-      var url: String = js.native
+      var url: String
     }
     object EnclosureObject {
       
@@ -89,97 +89,96 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait FeedOptions extends StObject {
       
       /**
         * One or more categories this feed belongs to.
         */
-      var categories: js.UndefOr[js.Array[String]] = js.native
+      var categories: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Copyright information for this feed.
         */
-      var copyright: js.UndefOr[String] = js.native
+      var copyright: js.UndefOr[String] = js.undefined
       
       /**
         * Put additional elements in the feed (node-xml syntax).
         */
-      var custom_elements: js.UndefOr[js.Array[_]] = js.native
+      var custom_elements: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * Put additional namespaces in element
         * (without 'xmlns:' prefix).
         */
-      var custom_namespaces: js.UndefOr[js.Object] = js.native
+      var custom_namespaces: js.UndefOr[js.Object] = js.undefined
       
       /**
         * A short description of the feed.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * URL to documentation on this feed.
         */
-      var docs: js.UndefOr[String] = js.native
+      var docs: js.UndefOr[String] = js.undefined
       
       /**
         * URL to the rss feed.
         */
-      var feed_url: String = js.native
+      var feed_url: String
       
       /**
         * Feed generator.
         */
-      var generator: js.UndefOr[String] = js.native
+      var generator: js.UndefOr[String] = js.undefined
       
       /**
         * Where is the PubSubHub hub located.
         */
-      var hub: js.UndefOr[String] = js.native
+      var hub: js.UndefOr[String] = js.undefined
       
       /**
         * Small image for feed readers to use.
         */
-      var image_url: js.UndefOr[String] = js.native
+      var image_url: js.UndefOr[String] = js.undefined
       
       /**
         * The language of the content of this feed.
         */
-      var language: js.UndefOr[String] = js.native
+      var language: js.UndefOr[String] = js.undefined
       
       /**
         * Who manages content in this feed.
         */
-      var managingEditor: js.UndefOr[String] = js.native
+      var managingEditor: js.UndefOr[String] = js.undefined
       
       /**
         * The publication date for content in the feed.
         * Accepts Date object or string with any format
         * JS Date can parse.
         */
-      var pubDate: js.UndefOr[Date | String] = js.native
+      var pubDate: js.UndefOr[Date | String] = js.undefined
       
       /**
         * URL to the site that the feed is for.
         */
-      var site_url: String = js.native
+      var site_url: String
       
       /**
         * Title of your site or feed.
         */
-      var title: String = js.native
+      var title: String
       
       /**
         * Number of minutes feed can be cached before refreshing
         * from source.
         */
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
       
       /**
         * Who manages feed availability and technical support.
         */
-      var webMaster: js.UndefOr[String] = js.native
+      var webMaster: js.UndefOr[String] = js.undefined
     }
     object FeedOptions {
       
@@ -208,7 +207,7 @@ object mod extends Shortcut {
         def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
         
         @scala.inline
-        def setCustom_elements(value: js.Array[_]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
+        def setCustom_elements(value: js.Array[js.Any]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCustom_elementsUndefined: Self = StObject.set(x, "custom_elements", js.undefined)
@@ -293,7 +292,6 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ItemOptions extends StObject {
       
       /**
@@ -301,18 +299,18 @@ object mod extends Shortcut {
         * provided the item author will be the same as the feed author.
         * This is typical except on multi-author blogs.
         */
-      var author: js.UndefOr[String] = js.native
+      var author: js.UndefOr[String] = js.undefined
       
       /**
         * If provided, each array item will be added as a category
         * element.
         */
-      var categories: js.UndefOr[js.Array[String]] = js.native
+      var categories: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Put additional elements in the item (node-xml syntax).
         */
-      var custom_elements: js.UndefOr[js.Array[_]] = js.native
+      var custom_elements: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * The date and time of when the item was created. Feed
@@ -322,18 +320,18 @@ object mod extends Shortcut {
         * Accepts Date object or string with any format
         * JS Date can parse.
         */
-      var date: Date | String = js.native
+      var date: Date | String
       
       /**
         * Content for the item. Can contain HTML but link and image
         * URLs must be absolute path including hostname.
         */
-      var description: String = js.native
+      var description: String
       
       /**
         * An enclosure object.
         */
-      var enclosure: js.UndefOr[EnclosureObject] = js.native
+      var enclosure: js.UndefOr[EnclosureObject] = js.undefined
       
       /**
         * A unique string feed readers use to know if an item is
@@ -342,27 +340,27 @@ object mod extends Shortcut {
         * urls must be unique.
         * Defaults to url.
         */
-      var guid: js.UndefOr[String] = js.native
+      var guid: js.UndefOr[String] = js.undefined
       
       /**
         * The latitude coordinate of the item for GeoRSS.
         */
-      var lat: js.UndefOr[Double] = js.native
+      var lat: js.UndefOr[Double] = js.undefined
       
       /**
         * The longitude coordinate of the item for GeoRSS.
         */
-      var long: js.UndefOr[Double] = js.native
+      var long: js.UndefOr[Double] = js.undefined
       
       /**
         * Title of this particular item.
         */
-      var title: String = js.native
+      var title: String
       
       /**
         * URL to the item. This could be a blog entry.
         */
-      var url: String = js.native
+      var url: String
     }
     object ItemOptions {
       
@@ -391,7 +389,7 @@ object mod extends Shortcut {
         def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
         
         @scala.inline
-        def setCustom_elements(value: js.Array[_]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
+        def setCustom_elements(value: js.Array[js.Any]): Self = StObject.set(x, "custom_elements", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCustom_elementsUndefined: Self = StObject.set(x, "custom_elements", js.undefined)
@@ -465,14 +463,14 @@ object mod extends Shortcut {
     
     @js.native
     trait RSSFactory
-      extends /**
+      extends StObject
+         with /**
       * Create an RSS feed with options.
       * @param {FeedOptions} feedOptions - Options for the RSS feed.
       * @returns {RSS}
       */
     Instantiable1[/* feedOptions */ FeedOptions, RSS]
     
-    @js.native
     trait XmlOptions extends StObject {
       
       /**
@@ -481,7 +479,7 @@ object mod extends Shortcut {
         * for two-space tabs. If you set it to true it will use
         * four spaces.
         */
-      var indent: js.UndefOr[Boolean | String] = js.native
+      var indent: js.UndefOr[Boolean | String] = js.undefined
     }
     object XmlOptions {
       

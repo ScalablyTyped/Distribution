@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -19,7 +18,9 @@ object global {
     * event via Eve's `DOMLoad` event. In this case the method returns `undefined`.
     * @return A new raphael paper that can be used for drawing shapes to the canvas.
     */
-  class Raphael () extends RaphaelPaper[SVG | VML] {
+  class Raphael ()
+    extends StObject
+       with RaphaelPaper[SVG | VML] {
     def this(onReadyCallback: js.ThisFunction0[/* this */ Window, Unit]) = this()
     def this(container: String, width: Double, height: Double) = this()
     /**

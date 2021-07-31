@@ -11,8 +11,8 @@ A json validator that has an option to check for duplicated keys
 | Full name          | json-dup-key-validator |
 | Keywords           | jsonvalidator, json, validator, validation |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 1228376 |
+| # dependents       | 16 |
+| # downloads        | 1778623 |
 | # stars            | 0 |
 
 ## Links

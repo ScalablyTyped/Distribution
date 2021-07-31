@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettlementReport extends StObject {
   
   /** The end date on which all transactions are included in the report, in ISO 8601 format. */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#settlementReport`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The residual amount from the previous invoice. This is set only if the previous invoices are not paid because of negative balance. */
-  var previousBalance: js.UndefOr[Price] = js.native
+  var previousBalance: js.UndefOr[Price] = js.undefined
   
   /** The ID of the settlement report. */
-  var settlementId: js.UndefOr[String] = js.native
+  var settlementId: js.UndefOr[String] = js.undefined
   
   /** The start date on which all transactions are included in the report, in ISO 8601 format. */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /** The money due to the merchant. */
-  var transferAmount: js.UndefOr[Price] = js.native
+  var transferAmount: js.UndefOr[Price] = js.undefined
   
   /** Date on which transfer for this payment was initiated by Google, in ISO 8601 format. */
-  var transferDate: js.UndefOr[String] = js.native
+  var transferDate: js.UndefOr[String] = js.undefined
   
   /** The list of bank identifiers used for the transfer. e.g. Trace ID for Federal Automated Clearing House (ACH). This may also be known as the Wire ID. */
-  var transferIds: js.UndefOr[js.Array[String]] = js.native
+  var transferIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SettlementReport {
   

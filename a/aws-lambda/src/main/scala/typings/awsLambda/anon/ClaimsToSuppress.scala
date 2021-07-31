@@ -4,17 +4,15 @@ import typings.awsLambda.commonMod.StringMap
 import typings.awsLambda.preTokenGenerationMod.GroupOverrideDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClaimsToSuppress extends StObject {
   
-  var claimsToAddOrOverride: js.UndefOr[StringMap] = js.native
+  var claimsToAddOrOverride: js.UndefOr[StringMap] = js.undefined
   
-  var claimsToSuppress: js.UndefOr[js.Array[String]] = js.native
+  var claimsToSuppress: js.UndefOr[js.Array[String]] = js.undefined
   
-  var groupOverrideDetails: js.UndefOr[GroupOverrideDetails] = js.native
+  var groupOverrideDetails: js.UndefOr[GroupOverrideDetails] = js.undefined
 }
 object ClaimsToSuppress {
   

@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -127,7 +126,7 @@ class Panel () extends GraphObject {
   def insertAt(index: Double, element: GraphObject): Unit = js.native
   
   /**Gets or sets a JavaScript Array of values or objects, each of which will be represented by a Panel as elements in this Panel.*/
-  var itemArray: js.Array[_] = js.native
+  var itemArray: js.Array[js.Any] = js.native
   
   /**Gets or sets the name of the item data property that returns a string describing that data's category, or a function that takes an item data object and returns that string; the default value is the name 'category'.*/
   var itemCategoryProperty: PropertyAccessor = js.native

@@ -4,7 +4,6 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.windows.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devtools {
@@ -18,17 +17,16 @@ object devtools {
     */
   object inspectedWindow {
     
-    @js.native
     trait EvalOptions extends StObject {
       
       /** Evaluate the expression in the context of a content script of an extension that matches the specified origin. If given, contextSecurityOrigin overrides the 'true' setting on userContentScriptContext. */
-      var contextSecurityOrigin: js.UndefOr[String] = js.native
+      var contextSecurityOrigin: js.UndefOr[String] = js.undefined
       
       /** If specified, the expression is evaluated on the iframe whose URL matches the one specified. By default, the expression is evaluated in the top frame of the inspected page. */
-      var frameURL: js.UndefOr[String] = js.native
+      var frameURL: js.UndefOr[String] = js.undefined
       
       /** Evaluate the expression in the context of the content script of the calling extension, provided that the content script is already injected into the inspected page. If not, the expression is not evaluated and the callback is invoked with the exception parameter set to an object that has the isError field set to true and the code field set to E_NOTFOUND. */
-      var useContentScriptContext: js.UndefOr[Boolean] = js.native
+      var useContentScriptContext: js.UndefOr[Boolean] = js.undefined
     }
     object EvalOptions {
       
@@ -61,26 +59,25 @@ object devtools {
       }
     }
     
-    @js.native
     trait EvaluationExceptionInfo extends StObject {
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
-      var code: String = js.native
+      var code: String
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
-      var description: String = js.native
+      var description: String
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated, contains the array of the values that may be substituted into the description string to provide more information about the cause of the error. */
-      var details: js.Array[_] = js.native
+      var details: js.Array[js.Any]
       
       /** Set if the error occurred on the DevTools side before the expression is evaluated. */
-      var isError: Boolean = js.native
+      var isError: Boolean
       
       /** Set if the evaluated code produces an unhandled exception. */
-      var isException: Boolean = js.native
+      var isException: Boolean
       
       /** Set if the evaluated code produces an unhandled exception. */
-      var value: String = js.native
+      var value: String
     }
     object EvaluationExceptionInfo {
       
@@ -88,7 +85,7 @@ object devtools {
       def apply(
         code: String,
         description: String,
-        details: js.Array[_],
+        details: js.Array[js.Any],
         isError: Boolean,
         isException: Boolean,
         value: String
@@ -107,7 +104,7 @@ object devtools {
         def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDetails(value: js.Array[_]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        def setDetails(value: js.Array[js.Any]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDetailsVarargs(value: js.Any*): Self = StObject.set(x, "details", js.Array(value :_*))
@@ -123,24 +120,23 @@ object devtools {
       }
     }
     
-    @js.native
     trait ReloadOptions extends StObject {
       
       /** Optional. When true, the loader will ignore the cache for all inspected page resources loaded before the load event is fired. The effect is similar to pressing Ctrl+Shift+R in the inspected window or within the Developer Tools window.  */
-      var ignoreCache: js.UndefOr[Boolean] = js.native
+      var ignoreCache: js.UndefOr[Boolean] = js.undefined
       
       /** Optional. If specified, the script will be injected into every frame of the inspected page immediately upon load, before any of the frame's scripts. The script will not be injected after subsequent reloads—for example, if the user presses Ctrl+R.  */
-      var injectedScript: js.UndefOr[String] = js.native
+      var injectedScript: js.UndefOr[String] = js.undefined
       
       /**
         * Optional.
         * If specified, this script evaluates into a function that accepts three string arguments: the source to preprocess, the URL of the source, and a function name if the source is an DOM event handler. The preprocessorerScript function should return a string to be compiled by Chrome in place of the input source. In the case that the source is a DOM event handler, the returned source must compile to a single JS function.
         * @deprecated Deprecated since Chrome 41. Please avoid using this parameter, it will be removed soon.
         */
-      var preprocessorScript: js.UndefOr[String] = js.native
+      var preprocessorScript: js.UndefOr[String] = js.undefined
       
       /** Optional. If specified, the string will override the value of the User-Agent HTTP header that's sent while loading the resources of the inspected page. The string will also override the value of the navigator.userAgent property that's returned to any scripts that are running within the inspected page.  */
-      var userAgent: js.UndefOr[String] = js.native
+      var userAgent: js.UndefOr[String] = js.undefined
     }
     object ReloadOptions {
       
@@ -229,8 +225,7 @@ object devtools {
     type NavigatedEvent = Event[js.Function1[/* url */ String, Unit]]
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatEntry * / any */ @js.native
-    trait Request extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HARFormatEntry * / any */ trait Request extends StObject {
       
       /**
         * Returns content of the response body.
@@ -240,7 +235,7 @@ object devtools {
         * Parameter content: Content of the response body (potentially encoded).
         * Parameter encoding: Empty if content is not encoded, encoding name otherwise. Currently, only base64 is supported.
         */
-      def getContent(callback: js.Function2[/* content */ String, /* encoding */ String, Unit]): Unit = js.native
+      def getContent(callback: js.Function2[/* content */ String, /* encoding */ String, Unit]): Unit
     }
     object Request {
       
@@ -283,19 +278,19 @@ object devtools {
         * @param disabled Whether the button is disabled.
         */
       def update(): Unit = js.native
-      def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: js.UndefOr[scala.Nothing], disabled: Boolean): Unit = js.native
-      def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: String): Unit = js.native
-      def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: String, disabled: Boolean): Unit = js.native
-      def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: Null, disabled: Boolean): Unit = js.native
       def update(iconPath: String): Unit = js.native
-      def update(iconPath: String, tooltipText: js.UndefOr[scala.Nothing], disabled: Boolean): Unit = js.native
       def update(iconPath: String, tooltipText: String): Unit = js.native
       def update(iconPath: String, tooltipText: String, disabled: Boolean): Unit = js.native
       def update(iconPath: String, tooltipText: Null, disabled: Boolean): Unit = js.native
-      def update(iconPath: Null, tooltipText: js.UndefOr[scala.Nothing], disabled: Boolean): Unit = js.native
+      def update(iconPath: String, tooltipText: Unit, disabled: Boolean): Unit = js.native
       def update(iconPath: Null, tooltipText: String): Unit = js.native
       def update(iconPath: Null, tooltipText: String, disabled: Boolean): Unit = js.native
       def update(iconPath: Null, tooltipText: Null, disabled: Boolean): Unit = js.native
+      def update(iconPath: Null, tooltipText: Unit, disabled: Boolean): Unit = js.native
+      def update(iconPath: Unit, tooltipText: String): Unit = js.native
+      def update(iconPath: Unit, tooltipText: String, disabled: Boolean): Unit = js.native
+      def update(iconPath: Unit, tooltipText: Null, disabled: Boolean): Unit = js.native
+      def update(iconPath: Unit, tooltipText: Unit, disabled: Boolean): Unit = js.native
     }
     
     type ButtonClickedEvent = Event[js.Function0[Unit]]
@@ -318,7 +313,6 @@ object devtools {
       var onSelectionChanged: SelectionChangedEvent = js.native
     }
     
-    @js.native
     trait ExtensionPanel extends StObject {
       
       /**
@@ -327,16 +321,16 @@ object devtools {
         * @param tooltipText Text shown as a tooltip when user hovers the mouse over the button.
         * @param disabled Whether the button is disabled.
         */
-      def createStatusBarButton(iconPath: String, tooltipText: String, disabled: Boolean): Button = js.native
+      def createStatusBarButton(iconPath: String, tooltipText: String, disabled: Boolean): Button
       
       /** Fired when the user switches away from the panel. */
-      var onHidden: PanelHiddenEvent = js.native
+      var onHidden: PanelHiddenEvent
       
       /** Fired upon a search action (start of a new search, search result navigation, or search being canceled). */
-      var onSearch: PanelSearchEvent = js.native
+      var onSearch: PanelSearchEvent
       
       /** Fired when the user switches to the panel. */
-      var onShown: PanelShownEvent = js.native
+      var onShown: PanelShownEvent
     }
     object ExtensionPanel {
       
@@ -387,9 +381,9 @@ object devtools {
         */
       def setExpression(expression: String): Unit = js.native
       def setExpression(expression: String, callback: js.Function0[Unit]): Unit = js.native
-      def setExpression(expression: String, rootTitle: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
       def setExpression(expression: String, rootTitle: String): Unit = js.native
       def setExpression(expression: String, rootTitle: String, callback: js.Function0[Unit]): Unit = js.native
+      def setExpression(expression: String, rootTitle: Unit, callback: js.Function0[Unit]): Unit = js.native
       
       /**
         * Sets the height of the sidebar.
@@ -407,9 +401,9 @@ object devtools {
         */
       def setObject(jsonObject: js.Object): Unit = js.native
       def setObject(jsonObject: js.Object, callback: js.Function0[Unit]): Unit = js.native
-      def setObject(jsonObject: js.Object, rootTitle: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
       def setObject(jsonObject: js.Object, rootTitle: String): Unit = js.native
       def setObject(jsonObject: js.Object, rootTitle: String, callback: js.Function0[Unit]): Unit = js.native
+      def setObject(jsonObject: js.Object, rootTitle: Unit, callback: js.Function0[Unit]): Unit = js.native
       
       /**
         * Sets an HTML page to be displayed in the sidebar pane.

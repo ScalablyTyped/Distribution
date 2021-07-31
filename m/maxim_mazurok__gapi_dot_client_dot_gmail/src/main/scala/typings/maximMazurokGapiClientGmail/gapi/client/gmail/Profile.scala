@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Profile extends StObject {
   
   /** The user's email address. */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /** The ID of the mailbox's current history record. */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** The total number of messages in the mailbox. */
-  var messagesTotal: js.UndefOr[Double] = js.native
+  var messagesTotal: js.UndefOr[Double] = js.undefined
   
   /** The total number of threads in the mailbox. */
-  var threadsTotal: js.UndefOr[Double] = js.native
+  var threadsTotal: js.UndefOr[Double] = js.undefined
 }
 object Profile {
   

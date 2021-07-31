@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsConverter.compiledApiMod.MetaGraphDef.IMetaInfoDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetaGraphDef extends StObject {
   
   /** MetaGraphDef assetFileDef */
-  var assetFileDef: js.UndefOr[js.Array[IAssetFileDef] | Null] = js.native
+  var assetFileDef: js.UndefOr[js.Array[IAssetFileDef] | Null] = js.undefined
   
   /** MetaGraphDef collectionDef */
-  var collectionDef: js.UndefOr[StringDictionary[ICollectionDef] | Null] = js.native
+  var collectionDef: js.UndefOr[StringDictionary[ICollectionDef] | Null] = js.undefined
   
   /** MetaGraphDef graphDef */
-  var graphDef: js.UndefOr[IGraphDef | Null] = js.native
+  var graphDef: js.UndefOr[IGraphDef | Null] = js.undefined
   
   /** MetaGraphDef metaInfoDef */
-  var metaInfoDef: js.UndefOr[IMetaInfoDef | Null] = js.native
+  var metaInfoDef: js.UndefOr[IMetaInfoDef | Null] = js.undefined
   
   /** MetaGraphDef saverDef */
-  var saverDef: js.UndefOr[ISaverDef | Null] = js.native
+  var saverDef: js.UndefOr[ISaverDef | Null] = js.undefined
   
   /** MetaGraphDef signatureDef */
-  var signatureDef: js.UndefOr[StringDictionary[ISignatureDef] | Null] = js.native
+  var signatureDef: js.UndefOr[StringDictionary[ISignatureDef] | Null] = js.undefined
 }
 object IMetaGraphDef {
   

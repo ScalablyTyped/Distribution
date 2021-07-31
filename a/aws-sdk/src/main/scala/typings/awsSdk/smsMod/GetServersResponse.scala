@@ -2,31 +2,29 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServersResponse extends StObject {
   
   /**
     * The time when the server was last modified.
     */
-  var lastModifiedOn: js.UndefOr[Timestamp] = js.native
+  var lastModifiedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The status of the server catalog.
     */
-  var serverCatalogStatus: js.UndefOr[ServerCatalogStatus] = js.native
+  var serverCatalogStatus: js.UndefOr[ServerCatalogStatus] = js.undefined
   
   /**
     * Information about the servers.
     */
-  var serverList: js.UndefOr[ServerList] = js.native
+  var serverList: js.UndefOr[ServerList] = js.undefined
 }
 object GetServersResponse {
   

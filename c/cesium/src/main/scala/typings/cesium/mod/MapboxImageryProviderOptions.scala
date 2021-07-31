@@ -2,33 +2,33 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapboxImageryProviderOptions extends MapboxProviderCommonOptions {
+trait MapboxImageryProviderOptions
+  extends StObject
+     with MapboxProviderCommonOptions {
   
   /**
     * The public access token for the imagery
     */
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the image request
     * @default 'png'
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The Mapbox Map ID
     */
-  var mapId: String = js.native
+  var mapId: String
   
   /**
     * The Mapbox server url
     * @default 'https://api.mapbox.com/v4/'
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object MapboxImageryProviderOptions {
   

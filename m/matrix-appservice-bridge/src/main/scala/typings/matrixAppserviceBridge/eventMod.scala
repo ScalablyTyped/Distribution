@@ -4,7 +4,6 @@ import typings.matrixAppserviceBridge.anon.EventId_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
@@ -26,7 +25,7 @@ object eventMod {
       eventId: String,
       remoteRoomId: String,
       remoteEventId: String,
-      _extras: Record[String, _]
+      _extras: Record[String, js.Any]
     ) = this()
     
     val _extras: js.Any = js.native
@@ -93,30 +92,32 @@ object eventMod {
   /* static members */
   object StoredEvent {
     
+    @JSImport("matrix-appservice-bridge/lib/models/events/event", "StoredEvent")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Set data about this event from a serialized data object.
       * @param data The serialized data
       */
-    @JSImport("matrix-appservice-bridge/lib/models/events/event", "StoredEvent.deserialize")
-    @js.native
-    def deserialize(data: StoredEventDoc): StoredEvent = js.native
+    @scala.inline
+    def deserialize(data: StoredEventDoc): StoredEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[StoredEvent]
   }
   
-  @js.native
   trait StoredEventDoc extends StObject {
     
-    var extras: Record[String, _] = js.native
+    var extras: Record[String, js.Any]
     
-    var id: String = js.native
+    var id: String
     
-    var matrix: EventId_ = js.native
+    var matrix: EventId_
     
-    var remote: EventId_ = js.native
+    var remote: EventId_
   }
   object StoredEventDoc {
     
     @scala.inline
-    def apply(extras: Record[String, _], id: String, matrix: EventId_, remote: EventId_): StoredEventDoc = {
+    def apply(extras: Record[String, js.Any], id: String, matrix: EventId_, remote: EventId_): StoredEventDoc = {
       val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoredEventDoc]
     }
@@ -125,7 +126,7 @@ object eventMod {
     implicit class StoredEventDocMutableBuilder[Self <: StoredEventDoc] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExtras(value: Record[String, _]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      def setExtras(value: Record[String, js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

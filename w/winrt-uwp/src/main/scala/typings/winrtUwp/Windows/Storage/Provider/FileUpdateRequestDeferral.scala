@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Use to complete an update asynchronously. */
-@js.native
 trait FileUpdateRequestDeferral extends StObject {
   
   /** Signals that the response to a FileUpdateRequested event is finished. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object FileUpdateRequestDeferral {
   

@@ -5,10 +5,13 @@ import typings.webcola.layoutMod.Event
 import typings.webcola.layoutMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object d3v3adaptorMod {
+  
+  @JSImport("webcola/dist/src/d3v3adaptor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webcola/dist/src/d3v3adaptor", "D3StyleLayoutAdaptor")
   @js.native
@@ -23,7 +26,6 @@ object d3v3adaptorMod {
     /* protected */ override def trigger(e: Event): Unit = js.native
   }
   
-  @JSImport("webcola/dist/src/d3v3adaptor", "d3adaptor")
-  @js.native
-  def d3adaptor(): D3StyleLayoutAdaptor = js.native
+  @scala.inline
+  def d3adaptor(): D3StyleLayoutAdaptor = ^.asInstanceOf[js.Dynamic].applyDynamic("d3adaptor")().asInstanceOf[D3StyleLayoutAdaptor]
 }

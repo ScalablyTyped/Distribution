@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientVideointelligence.maximMazurokGapiClientVideointelligenceStrings.GoogleRpc_Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleRpcStatus extends StObject {
   
   /** The status code, which should be an enum value of google.rpc.Code. */
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
   var details: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ GoogleRpc_Status with TopLevel[js.Any]
+    */ GoogleRpc_Status & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the google.rpc.Status.details field, or localized by the
     * client.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object GoogleRpcStatus {
   
@@ -50,7 +48,7 @@ object GoogleRpcStatus {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleRpc_Status with TopLevel[js.Any]
+      */ GoogleRpc_Status & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
@@ -61,7 +59,7 @@ object GoogleRpcStatus {
     def setDetailsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleRpc_Status with TopLevel[js.Any])*
+      */ GoogleRpc_Status & TopLevel[js.Any])*
     ): Self = StObject.set(x, "details", js.Array(value :_*))
     
     @scala.inline

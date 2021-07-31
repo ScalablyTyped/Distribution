@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NegativeKeywordListAssignedTargetingOptionDetails extends StObject {
   
   /** Required. ID of the negative keyword list. Should refer to the negative_keyword_list_id field of a NegativeKeywordList resource. */
-  var negativeKeywordListId: js.UndefOr[String] = js.native
+  var negativeKeywordListId: js.UndefOr[String] = js.undefined
 }
 object NegativeKeywordListAssignedTargetingOptionDetails {
   

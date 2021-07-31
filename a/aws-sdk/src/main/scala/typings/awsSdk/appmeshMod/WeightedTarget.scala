@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightedTarget extends StObject {
   
   /**
     * The virtual node to associate with the weighted target.
     */
-  var virtualNode: ResourceName = js.native
+  var virtualNode: ResourceName
   
   /**
     * The relative weight of the weighted target.
     */
-  var weight: PercentInt = js.native
+  var weight: PercentInt
 }
 object WeightedTarget {
   

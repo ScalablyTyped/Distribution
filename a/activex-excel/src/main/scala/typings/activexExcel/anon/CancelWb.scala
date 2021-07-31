@@ -3,15 +3,13 @@ package typings.activexExcel.anon
 import typings.activexExcel.Excel.Workbook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelWb extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val Wb: Workbook = js.native
+  val Wb: Workbook
 }
 object CancelWb {
   

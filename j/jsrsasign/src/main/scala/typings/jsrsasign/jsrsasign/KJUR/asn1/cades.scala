@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -159,14 +158,15 @@ object cades {
     * @example
     * o = new KJUR.asn1.cades.CompleteCertificateRefs([certPEM1,certPEM2]);
     */
-  @js.native
-  trait CompleteCertificateRefs extends Attribute {
+  trait CompleteCertificateRefs
+    extends StObject
+       with Attribute {
     
     /**
       * set value by array
       * @param a array of `KJUR.asn1.cades.OtherCertID` argument
       */
-    def setByArray(a: js.Array[OtherCertID]): Unit = js.native
+    def setByArray(a: js.Array[OtherCertID]): Unit
   }
   object CompleteCertificateRefs {
     
@@ -208,8 +208,9 @@ object cades {
     * o = new KJUR.asn1.cades.OtherCertID(certPEM);
     * o = new KJUR.asn1.cades.OtherCertID({cert:certPEM, hasis: false});
     */
-  @js.native
-  trait OtherCertID extends ASN1Object {
+  trait OtherCertID
+    extends StObject
+       with ASN1Object {
     
     /**
       * set value by PEM string of certificate
@@ -219,7 +220,7 @@ object cades {
       * This will add IssuerAndSerialNumber by default
       * which depends on hasIssuerSerial flag.
       */
-    def setByCertPEM(certPEM: String): Unit = js.native
+    def setByCertPEM(certPEM: String): Unit
   }
   object OtherCertID {
     
@@ -265,8 +266,9 @@ object cades {
     * o = new KJUR.asn1.cades.OtherHash({alg: 'sha256', cert: certPEM});
     * o = new KJUR.asn1.cades.OtherHash({cert: certPEM});
     */
-  @js.native
-  trait OtherHash extends ASN1Object {
+  trait OtherHash
+    extends StObject
+       with ASN1Object {
     
     /**
       * set value by PEM string of certificate
@@ -276,7 +278,7 @@ object cades {
       * An algorithm used to hash certificate data will
       * be defined by 'alg' property and 'sha256' is default.
       */
-    def setByCertPEM(certPEM: String): Unit = js.native
+    def setByCertPEM(certPEM: String): Unit
   }
   object OtherHash {
     

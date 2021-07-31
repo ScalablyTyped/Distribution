@@ -1,25 +1,24 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
-import typings.spotifyWebApiJs.spotifyWebApiJsStrings.user
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Object (Private)
   * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
-@js.native
-trait UserObjectPrivate extends UserObjectPublic {
+trait UserObjectPrivate
+  extends StObject
+     with UserObjectPublic {
   
-  var birthdate: String = js.native
+  var birthdate: String
   
-  var country: String = js.native
+  var country: String
   
-  var email: String = js.native
+  var email: String
   
-  var product: String = js.native
+  var product: String
 }
 object UserObjectPrivate {
   
@@ -32,11 +31,10 @@ object UserObjectPrivate {
     href: String,
     id: String,
     product: String,
-    `type`: user,
     uri: String
   ): UserObjectPrivate = {
     val __obj = js.Dynamic.literal(birthdate = birthdate.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObjectPrivate]
   }
   

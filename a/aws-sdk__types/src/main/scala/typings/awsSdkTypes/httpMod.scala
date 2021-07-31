@@ -5,23 +5,21 @@ import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
   
-  @js.native
   trait Endpoint extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var query: js.UndefOr[QueryParameterBag] = js.native
+    var query: js.UndefOr[QueryParameterBag] = js.undefined
   }
   object Endpoint {
     
@@ -60,7 +58,9 @@ object httpMod {
   type HeaderBag = StringDictionary[String]
   
   @js.native
-  trait Headers extends Map[String, String] {
+  trait Headers
+    extends StObject
+       with Map[String, String] {
     
     /**
       * Returns a new instance of Headers with the specified header set to the
@@ -80,10 +80,9 @@ object httpMod {
     def withoutHeader(headerName: String): Headers = js.native
   }
   
-  @js.native
   trait HttpHandlerOptions extends StObject {
     
-    var abortSignal: js.UndefOr[AbortSignal] = js.native
+    var abortSignal: js.UndefOr[AbortSignal] = js.undefined
   }
   object HttpHandlerOptions {
     
@@ -104,12 +103,11 @@ object httpMod {
     }
   }
   
-  @js.native
   trait HttpMessage extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: HeaderBag = js.native
+    var headers: HeaderBag
   }
   object HttpMessage {
     
@@ -133,12 +131,12 @@ object httpMod {
     }
   }
   
-  @js.native
   trait HttpRequest
-    extends HttpMessage
+    extends StObject
+       with HttpMessage
        with Endpoint {
     
-    var method: String = js.native
+    var method: String
   }
   object HttpRequest {
     
@@ -156,10 +154,11 @@ object httpMod {
     }
   }
   
-  @js.native
-  trait HttpResponse extends HttpMessage {
+  trait HttpResponse
+    extends StObject
+       with HttpMessage {
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object HttpResponse {
     
@@ -179,11 +178,12 @@ object httpMod {
   
   type QueryParameterBag = StringDictionary[String | js.Array[String] | Null]
   
-  @js.native
-  trait ResolvedHttpResponse extends HttpResponse {
+  trait ResolvedHttpResponse
+    extends StObject
+       with HttpResponse {
     
     @JSName("body")
-    var body_ResolvedHttpResponse: String = js.native
+    var body_ResolvedHttpResponse: String
   }
   object ResolvedHttpResponse {
     

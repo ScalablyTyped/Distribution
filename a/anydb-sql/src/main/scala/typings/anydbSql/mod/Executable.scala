@@ -2,25 +2,23 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Executable[T] extends StObject {
   
-  def all(): typings.bluebird.mod.^[js.Array[T]] = js.native
+  def all(): typings.bluebird.mod.^[js.Array[T]]
   
-  def allWithin(tx: DatabaseConnection): typings.bluebird.mod.^[js.Array[T]] = js.native
+  def allWithin(tx: DatabaseConnection): typings.bluebird.mod.^[js.Array[T]]
   
-  def exec(): typings.bluebird.mod.^[Unit] = js.native
+  def exec(): typings.bluebird.mod.^[Unit]
   
-  def execWithin(tx: DatabaseConnection): typings.bluebird.mod.^[Unit] = js.native
+  def execWithin(tx: DatabaseConnection): typings.bluebird.mod.^[Unit]
   
-  def get(): typings.bluebird.mod.^[T] = js.native
+  def get(): typings.bluebird.mod.^[T]
   
-  def getWithin(tx: DatabaseConnection): typings.bluebird.mod.^[T] = js.native
+  def getWithin(tx: DatabaseConnection): typings.bluebird.mod.^[T]
   
-  def toQuery(): QueryLike = js.native
+  def toQuery(): QueryLike
 }
 object Executable {
   
@@ -39,7 +37,7 @@ object Executable {
   }
   
   @scala.inline
-  implicit class ExecutableMutableBuilder[Self <: Executable[_], T] (val x: Self with Executable[T]) extends AnyVal {
+  implicit class ExecutableMutableBuilder[Self <: Executable[?], T] (val x: Self & Executable[T]) extends AnyVal {
     
     @scala.inline
     def setAll(value: () => typings.bluebird.mod.^[js.Array[T]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))

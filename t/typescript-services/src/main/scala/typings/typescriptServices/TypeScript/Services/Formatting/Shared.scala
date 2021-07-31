@@ -3,17 +3,15 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.SyntaxKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Shared {
   
-  @js.native
   trait ITokenAccess extends StObject {
     
-    def Contains(token: SyntaxKind): Boolean = js.native
+    def Contains(token: SyntaxKind): Boolean
     
-    def GetTokens(): js.Array[SyntaxKind] = js.native
+    def GetTokens(): js.Array[SyntaxKind]
   }
   object ITokenAccess {
     
@@ -34,8 +32,9 @@ object Shared {
     }
   }
   
-  @js.native
-  trait TokenAllAccess extends ITokenAccess
+  trait TokenAllAccess
+    extends StObject
+       with ITokenAccess
   object TokenAllAccess {
     
     @scala.inline
@@ -45,14 +44,13 @@ object Shared {
     }
   }
   
-  @js.native
   trait TokenRange extends StObject {
     
-    def Contains(token: SyntaxKind): Boolean = js.native
+    def Contains(token: SyntaxKind): Boolean
     
-    def GetTokens(): js.Array[SyntaxKind] = js.native
+    def GetTokens(): js.Array[SyntaxKind]
     
-    var tokenAccess: ITokenAccess = js.native
+    var tokenAccess: ITokenAccess
   }
   object TokenRange {
     
@@ -76,10 +74,11 @@ object Shared {
     }
   }
   
-  @js.native
-  trait TokenRangeAccess extends ITokenAccess {
+  trait TokenRangeAccess
+    extends StObject
+       with ITokenAccess {
     
-    var tokens: js.Any = js.native
+    var tokens: js.Any
   }
   object TokenRangeAccess {
     
@@ -97,10 +96,11 @@ object Shared {
     }
   }
   
-  @js.native
-  trait TokenSingleValueAccess extends ITokenAccess {
+  trait TokenSingleValueAccess
+    extends StObject
+       with ITokenAccess {
     
-    var token: SyntaxKind = js.native
+    var token: SyntaxKind
   }
   object TokenSingleValueAccess {
     
@@ -118,10 +118,11 @@ object Shared {
     }
   }
   
-  @js.native
-  trait TokenValuesAccess extends ITokenAccess {
+  trait TokenValuesAccess
+    extends StObject
+       with ITokenAccess {
     
-    var tokens: js.Any = js.native
+    var tokens: js.Any
   }
   object TokenValuesAccess {
     

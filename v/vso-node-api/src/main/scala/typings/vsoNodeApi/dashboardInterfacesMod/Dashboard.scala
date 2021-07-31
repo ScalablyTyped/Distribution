@@ -2,55 +2,53 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dashboard extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Description of the dashboard.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Server defined version tracking value, used for edit collision detection.
     */
-  var eTag: String = js.native
+  var eTag: String
   
   /**
     * ID of the Dashboard. Provided by service at creation time.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Name of the Dashboard.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * ID of the Owner for a dashboard. For any legacy dashboards, this would be the unique identifier for the team associated with the dashboard.
     */
-  var ownerId: String = js.native
+  var ownerId: String
   
   /**
     * Position of the dashboard, within a dashboard group. If unset at creation time, position is decided by the service.
     */
-  var position: Double = js.native
+  var position: Double
   
   /**
     * Interval for client to automatically refresh the dashboard. Expressed in minutes.
     */
-  var refreshInterval: Double = js.native
+  var refreshInterval: Double
   
-  var url: String = js.native
+  var url: String
   
   /**
     * The set of Widgets on the dashboard.
     */
-  var widgets: js.Array[Widget] = js.native
+  var widgets: js.Array[Widget]
 }
 object Dashboard {
   

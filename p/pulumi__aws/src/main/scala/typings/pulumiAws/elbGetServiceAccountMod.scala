@@ -3,32 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elbGetServiceAccountMod {
   
-  @JSImport("@pulumi/aws/elb/getServiceAccount", "getServiceAccount")
+  @JSImport("@pulumi/aws/elb/getServiceAccount", JSImport.Namespace)
   @js.native
-  def getServiceAccount(): js.Promise[GetServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/elb/getServiceAccount", "getServiceAccount")
-  @js.native
-  def getServiceAccount(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/elb/getServiceAccount", "getServiceAccount")
-  @js.native
-  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = js.native
-  @JSImport("@pulumi/aws/elb/getServiceAccount", "getServiceAccount")
-  @js.native
-  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getServiceAccount(): js.Promise[GetServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")().asInstanceOf[js.Promise[GetServiceAccountResult]]
+  @scala.inline
+  def getServiceAccount(args: Unit, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceAccountResult]]
+  @scala.inline
+  def getServiceAccount(args: GetServiceAccountArgs): js.Promise[GetServiceAccountResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceAccountResult]]
+  @scala.inline
+  def getServiceAccount(args: GetServiceAccountArgs, opts: InvokeOptions): js.Promise[GetServiceAccountResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServiceAccount")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceAccountResult]]
+  
   trait GetServiceAccountArgs extends StObject {
     
     /**
       * Name of the region whose AWS ELB account ID is desired.
       * Defaults to the region from the AWS provider configuration.
       */
-    val region: js.UndefOr[String] = js.native
+    val region: js.UndefOr[String] = js.undefined
   }
   object GetServiceAccountArgs {
     
@@ -49,20 +47,19 @@ object elbGetServiceAccountMod {
     }
   }
   
-  @js.native
   trait GetServiceAccountResult extends StObject {
     
     /**
       * The ARN of the AWS ELB service account in the selected region.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val region: js.UndefOr[String] = js.native
+    val region: js.UndefOr[String] = js.undefined
   }
   object GetServiceAccountResult {
     

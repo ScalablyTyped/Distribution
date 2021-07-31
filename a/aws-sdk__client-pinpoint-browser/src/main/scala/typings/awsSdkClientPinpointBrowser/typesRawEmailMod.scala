@@ -5,18 +5,16 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRawEmailMod {
   
-  @js.native
   trait RawEmail extends StObject {
     
     /**
       * The raw data of the email.
       */
-    var Data: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.native
+    var Data: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
   }
   object RawEmail {
     
@@ -37,14 +35,15 @@ object typesRawEmailMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRawEmail extends RawEmail {
+  trait UnmarshalledRawEmail
+    extends StObject
+       with RawEmail {
     
     /**
       * The raw data of the email.
       */
     @JSName("Data")
-    var Data_UnmarshalledRawEmail: js.UndefOr[Uint8Array] = js.native
+    var Data_UnmarshalledRawEmail: js.UndefOr[Uint8Array] = js.undefined
   }
   object UnmarshalledRawEmail {
     

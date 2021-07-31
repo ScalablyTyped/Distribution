@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2", "logging_v2.Resource$Organizations$Logs")
@@ -32,7 +31,7 @@ class ResourceOrganizationsLogs protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsLogsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceOrganizationsLogsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -64,7 +63,7 @@ class ResourceOrganizationsLogs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLogsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLogsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(params: ParamsResourceOrganizationsLogsList): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsLogsList,

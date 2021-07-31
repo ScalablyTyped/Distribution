@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputLocation extends StObject {
   
   /**
     * key used to extract the password from EC2 Parameter store
     */
-  var PasswordParam: js.UndefOr[string] = js.native
+  var PasswordParam: js.UndefOr[string] = js.undefined
   
   /**
     * Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live".
     */
-  var Uri: string = js.native
+  var Uri: string
   
   /**
     * Documentation update needed
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object InputLocation {
   

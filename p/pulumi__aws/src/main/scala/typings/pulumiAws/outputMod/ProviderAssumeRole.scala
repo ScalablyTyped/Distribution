@@ -3,27 +3,25 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderAssumeRole extends StObject {
   
-  var durationSeconds: js.UndefOr[Double] = js.native
+  var durationSeconds: js.UndefOr[Double] = js.undefined
   
-  var externalId: js.UndefOr[String] = js.native
+  var externalId: js.UndefOr[String] = js.undefined
   
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
   
-  var policyArns: js.UndefOr[js.Array[String]] = js.native
+  var policyArns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var roleArn: js.UndefOr[String] = js.native
+  var roleArn: js.UndefOr[String] = js.undefined
   
-  var sessionName: js.UndefOr[String] = js.native
+  var sessionName: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[StringDictionary[String]] = js.native
+  var tags: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var transitiveTagKeys: js.UndefOr[js.Array[String]] = js.native
+  var transitiveTagKeys: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ProviderAssumeRole {
   

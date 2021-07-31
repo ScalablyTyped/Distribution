@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeConfig extends StObject {
   
   /** The type of creative that can be assigned to the inventory source. */
-  var creativeType: js.UndefOr[String] = js.native
+  var creativeType: js.UndefOr[String] = js.undefined
   
   /** The configuration for display creatives. Applicable when creative_type is `CREATIVE_TYPE_STANDARD`. */
-  var displayCreativeConfig: js.UndefOr[InventorySourceDisplayCreativeConfig] = js.native
+  var displayCreativeConfig: js.UndefOr[InventorySourceDisplayCreativeConfig] = js.undefined
   
   /** The configuration for video creatives. Applicable when creative_type is `CREATIVE_TYPE_VIDEO`. */
-  var videoCreativeConfig: js.UndefOr[InventorySourceVideoCreativeConfig] = js.native
+  var videoCreativeConfig: js.UndefOr[InventorySourceVideoCreativeConfig] = js.undefined
 }
 object CreativeConfig {
   

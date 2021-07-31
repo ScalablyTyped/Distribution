@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Audio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of creating an audio device input node. */
-@js.native
 trait CreateAudioDeviceInputNodeResult extends StObject {
   
   /** Gets the audio device input node. */
-  var deviceInputNode: AudioDeviceInputNode = js.native
+  var deviceInputNode: AudioDeviceInputNode
   
   /** Gets the status of audio device input node creation. */
-  var status: AudioDeviceNodeCreationStatus = js.native
+  var status: AudioDeviceNodeCreationStatus
 }
 object CreateAudioDeviceInputNodeResult {
   

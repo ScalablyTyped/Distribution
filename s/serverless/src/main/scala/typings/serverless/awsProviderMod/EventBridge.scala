@@ -2,23 +2,21 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventBridge extends StObject {
   
-  var eventBus: js.UndefOr[String] = js.native
+  var eventBus: js.UndefOr[String] = js.undefined
   
-  var input: js.UndefOr[Input] = js.native
+  var input: js.UndefOr[Input] = js.undefined
   
-  var inputPath: js.UndefOr[String] = js.native
+  var inputPath: js.UndefOr[String] = js.undefined
   
-  var inputTransformer: js.UndefOr[InputTransformer] = js.native
+  var inputTransformer: js.UndefOr[InputTransformer] = js.undefined
   
-  var pattern: js.UndefOr[PatternExisting | PatternInput] = js.native
+  var pattern: js.UndefOr[PatternExisting | PatternInput] = js.undefined
   
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
 }
 object EventBridge {
   

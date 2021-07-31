@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrafficMirrorSessionsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. The value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Describes one or more Traffic Mirror sessions. By default, all Traffic Mirror sessions are described. Alternatively, you can filter the results.
     */
-  var TrafficMirrorSessions: js.UndefOr[TrafficMirrorSessionSet] = js.native
+  var TrafficMirrorSessions: js.UndefOr[TrafficMirrorSessionSet] = js.undefined
 }
 object DescribeTrafficMirrorSessionsResult {
   

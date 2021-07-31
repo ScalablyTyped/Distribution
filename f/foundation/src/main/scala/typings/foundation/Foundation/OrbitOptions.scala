@@ -2,78 +2,76 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/orbit.html#advanced
-@js.native
 trait OrbitOptions extends StObject {
   
-  var active_slide_class: js.UndefOr[String] = js.native
+  var active_slide_class: js.UndefOr[String] = js.undefined
   
-  var after_slide_change: js.UndefOr[js.Function0[_]] = js.native
+  var after_slide_change: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var animation_speed: js.UndefOr[Double] = js.native
+  var animation_speed: js.UndefOr[Double] = js.undefined
   
-  var before_slide_change: js.UndefOr[js.Function0[_]] = js.native
+  var before_slide_change: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var bullets: js.UndefOr[Boolean] = js.native
+  var bullets: js.UndefOr[Boolean] = js.undefined
   
-  var bullets_active_class: js.UndefOr[String] = js.native
+  var bullets_active_class: js.UndefOr[String] = js.undefined
   
-  var bullets_container_class: js.UndefOr[String] = js.native
+  var bullets_container_class: js.UndefOr[String] = js.undefined
   
-  var caption_class: js.UndefOr[String] = js.native
+  var caption_class: js.UndefOr[String] = js.undefined
   
-  var circular: js.UndefOr[Boolean] = js.native
+  var circular: js.UndefOr[Boolean] = js.undefined
   
-  var container_class: js.UndefOr[String] = js.native
+  var container_class: js.UndefOr[String] = js.undefined
   
-  var navigation_arrows: js.UndefOr[Boolean] = js.native
+  var navigation_arrows: js.UndefOr[Boolean] = js.undefined
   
-  var next_class: js.UndefOr[String] = js.native
+  var next_class: js.UndefOr[String] = js.undefined
   
-  var next_on_click: js.UndefOr[Boolean] = js.native
+  var next_on_click: js.UndefOr[Boolean] = js.undefined
   
-  var orbit_transition_class: js.UndefOr[String] = js.native
+  var orbit_transition_class: js.UndefOr[String] = js.undefined
   
-  var pause_on_hover: js.UndefOr[Boolean] = js.native
+  var pause_on_hover: js.UndefOr[Boolean] = js.undefined
   
-  var preloader_class: js.UndefOr[String] = js.native
+  var preloader_class: js.UndefOr[String] = js.undefined
   
-  var prev_class: js.UndefOr[String] = js.native
+  var prev_class: js.UndefOr[String] = js.undefined
   
-  var resume_on_mouseout: js.UndefOr[Boolean] = js.native
+  var resume_on_mouseout: js.UndefOr[Boolean] = js.undefined
   
-  var slide_number: js.UndefOr[Boolean] = js.native
+  var slide_number: js.UndefOr[Boolean] = js.undefined
   
-  var slide_number_class: js.UndefOr[String] = js.native
+  var slide_number_class: js.UndefOr[String] = js.undefined
   
-  var slide_number_text: js.UndefOr[String] = js.native
+  var slide_number_text: js.UndefOr[String] = js.undefined
   
-  var slide_selector: js.UndefOr[String] = js.native
+  var slide_selector: js.UndefOr[String] = js.undefined
   
-  var slides_container_class: js.UndefOr[String] = js.native
+  var slides_container_class: js.UndefOr[String] = js.undefined
   
-  var stack_on_small: js.UndefOr[Boolean] = js.native
+  var stack_on_small: js.UndefOr[Boolean] = js.undefined
   
-  var stack_on_small_class: js.UndefOr[String] = js.native
+  var stack_on_small_class: js.UndefOr[String] = js.undefined
   
-  var swipe: js.UndefOr[Boolean] = js.native
+  var swipe: js.UndefOr[Boolean] = js.undefined
   
-  var timer: js.UndefOr[Boolean] = js.native
+  var timer: js.UndefOr[Boolean] = js.undefined
   
-  var timer_container_class: js.UndefOr[String] = js.native
+  var timer_container_class: js.UndefOr[String] = js.undefined
   
-  var timer_paused_class: js.UndefOr[String] = js.native
+  var timer_paused_class: js.UndefOr[String] = js.undefined
   
-  var timer_progress_class: js.UndefOr[String] = js.native
+  var timer_progress_class: js.UndefOr[String] = js.undefined
   
-  var timer_speed: js.UndefOr[Double] = js.native
+  var timer_speed: js.UndefOr[Double] = js.undefined
   
-  var variable_height: js.UndefOr[Boolean] = js.native
+  var variable_height: js.UndefOr[Boolean] = js.undefined
 }
 object OrbitOptions {
   
@@ -93,7 +91,7 @@ object OrbitOptions {
     def setActive_slide_classUndefined: Self = StObject.set(x, "active_slide_class", js.undefined)
     
     @scala.inline
-    def setAfter_slide_change(value: () => _): Self = StObject.set(x, "after_slide_change", js.Any.fromFunction0(value))
+    def setAfter_slide_change(value: () => js.Any): Self = StObject.set(x, "after_slide_change", js.Any.fromFunction0(value))
     
     @scala.inline
     def setAfter_slide_changeUndefined: Self = StObject.set(x, "after_slide_change", js.undefined)
@@ -111,7 +109,7 @@ object OrbitOptions {
     def setAnimation_speedUndefined: Self = StObject.set(x, "animation_speed", js.undefined)
     
     @scala.inline
-    def setBefore_slide_change(value: () => _): Self = StObject.set(x, "before_slide_change", js.Any.fromFunction0(value))
+    def setBefore_slide_change(value: () => js.Any): Self = StObject.set(x, "before_slide_change", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBefore_slide_changeUndefined: Self = StObject.set(x, "before_slide_change", js.undefined)

@@ -14,7 +14,6 @@ import typings.lokijs.lokijsStrings.normal
 import typings.lokijs.lokijsStrings.pretty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.LokiConstructorOptions> & lokijs.LokiConfigOptions & std.Partial<lokijs.ThrottledSaveDrainOptions> */

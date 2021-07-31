@@ -2,60 +2,60 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureProperties extends WidgetProperties {
+trait FeatureProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#defaultPopupTemplateEnabled)
     */
-  var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.native
+  var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) used to represent the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#graphic)
     */
-  var graphic: js.UndefOr[GraphicProperties] = js.native
+  var graphic: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * A reference to the [view's](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#map)
     */
-  var map: js.UndefOr[MapProperties] = js.native
+  var map: js.UndefOr[MapProperties] = js.undefined
   
   /**
     * The spatial reference used for [Arcade](https://developers.arcgis.com/arcade) operations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#viewModel)
     */
-  var viewModel: js.UndefOr[FeatureViewModelProperties] = js.native
+  var viewModel: js.UndefOr[FeatureViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget's [graphic.popupTemplate.content](esri-PopupTemplate.html#content).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[FeatureVisibleElements] = js.native
+  var visibleElements: js.UndefOr[FeatureVisibleElements] = js.undefined
 }
 object FeatureProperties {
   

@@ -2,17 +2,16 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait List
-  extends Value
-     with Enumerable {
+  extends StObject
+     with Enumerable
+     with Value {
   
-  def getSeparator(): scala.Boolean = js.native
+  def getSeparator(): scala.Boolean
   
-  def setSeparator(isComma: scala.Boolean): Unit = js.native
+  def setSeparator(isComma: scala.Boolean): Unit
 }
 object List {
   

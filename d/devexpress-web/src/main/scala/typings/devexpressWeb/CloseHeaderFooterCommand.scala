@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to finish header/footer editing.
   */
-@js.native
-trait CloseHeaderFooterCommand extends CommandWithSimpleStateBase {
+trait CloseHeaderFooterCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the CloseHeaderFooterCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object CloseHeaderFooterCommand {
   

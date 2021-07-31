@@ -6,7 +6,6 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * });
   */
 @js.native
-trait AuthorityKeyIdentifier extends Extension {
+trait AuthorityKeyIdentifier
+  extends StObject
+     with Extension {
   
   def getExtnValueHex(): String = js.native
   

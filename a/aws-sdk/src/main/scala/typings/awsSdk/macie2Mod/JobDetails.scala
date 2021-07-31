@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobDetails extends StObject {
   
   /**
     * Specifies whether any one-time or recurring jobs are configured to analyze data in the bucket. Possible values are: TRUE - One or more jobs is configured to analyze data in the bucket, and at least one of those jobs has a status other than CANCELLED. FALSE - No jobs are configured to analyze data in the bucket, or all the jobs that are configured to analyze data in the bucket have a status of CANCELLED. UNKNOWN - An exception occurred when Amazon Macie attempted to retrieve job data for the bucket. 
     */
-  var isDefinedInJob: js.UndefOr[IsDefinedInJob] = js.native
+  var isDefinedInJob: js.UndefOr[IsDefinedInJob] = js.undefined
   
   /**
     * Specifies whether any recurring jobs are configured to analyze data in the bucket. Possible values are: TRUE - One or more recurring jobs is configured to analyze data in the bucket, and at least one of those jobs has a status other than CANCELLED. FALSE - No recurring jobs are configured to analyze data in the bucket, or all the recurring jobs that are configured to analyze data in the bucket have a status of CANCELLED. UNKNOWN - An exception occurred when Amazon Macie attempted to retrieve job data for the bucket.
     */
-  var isMonitoredByJob: js.UndefOr[IsMonitoredByJob] = js.native
+  var isMonitoredByJob: js.UndefOr[IsMonitoredByJob] = js.undefined
   
   /**
     * The unique identifier for the job that ran most recently (either the latest run of a recurring job or the only run of a one-time job) and is configured to analyze data in the bucket. This value is null if the value for the isDefinedInJob property is FALSE or UNKNOWN.
     */
-  var lastJobId: js.UndefOr[string] = js.native
+  var lastJobId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the job (lastJobId) started. If the job is a recurring job, this value indicates when the most recent run started. This value is null if the value for the isDefinedInJob property is FALSE or UNKNOWN.
     */
-  var lastJobRunTime: js.UndefOr[timestampIso8601] = js.native
+  var lastJobRunTime: js.UndefOr[timestampIso8601] = js.undefined
 }
 object JobDetails {
   

@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGCircleAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGCircleSelector extends Selectors {
+trait SVGCircleSelector
+  extends StObject
+     with Selectors {
   
-  var circle: js.UndefOr[SVGCircleAttributes] = js.native
+  var circle: js.UndefOr[SVGCircleAttributes] = js.undefined
 }
 object SVGCircleSelector {
   

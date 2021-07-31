@@ -3,51 +3,49 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Video extends StObject {
   
   /** Age restriction details related to a video. This data can only be retrieved by the video owner. */
-  var ageGating: js.UndefOr[VideoAgeGating] = js.native
+  var ageGating: js.UndefOr[VideoAgeGating] = js.undefined
   
   /** The contentDetails object contains information about the video content, including the length of the video and its aspect ratio. */
-  var contentDetails: js.UndefOr[VideoContentDetails] = js.native
+  var contentDetails: js.UndefOr[VideoContentDetails] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The fileDetails object encapsulates information about the video file that was uploaded to YouTube, including the file's resolution, duration, audio and video codecs, stream
     * bitrates, and more. This data can only be retrieved by the video owner.
     */
-  var fileDetails: js.UndefOr[VideoFileDetails] = js.native
+  var fileDetails: js.UndefOr[VideoFileDetails] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the video. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#video". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The liveStreamingDetails object contains metadata about a live video broadcast. The object will only be present in a video resource if the video is an upcoming, live, or completed
     * live broadcast.
     */
-  var liveStreamingDetails: js.UndefOr[VideoLiveStreamingDetails] = js.native
+  var liveStreamingDetails: js.UndefOr[VideoLiveStreamingDetails] = js.undefined
   
   /** The localizations object contains localized versions of the basic details about the video, such as its title and description. */
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The monetizationDetails object encapsulates information about the monetization status of the video. */
-  var monetizationDetails: js.UndefOr[VideoMonetizationDetails] = js.native
+  var monetizationDetails: js.UndefOr[VideoMonetizationDetails] = js.undefined
   
   /** The player object contains information that you would use to play the video in an embedded player. */
-  var player: js.UndefOr[VideoPlayer] = js.native
+  var player: js.UndefOr[VideoPlayer] = js.undefined
   
   /**
     * The processingDetails object encapsulates information about YouTube's progress in processing the uploaded video file. The properties in the object identify the current processing
@@ -55,31 +53,31 @@ trait Video extends StObject {
     * or thumbnail images, are available for the video. The processingProgress object is designed to be polled so that the video uploaded can track the progress that YouTube has made in
     * processing the uploaded video file. This data can only be retrieved by the video owner.
     */
-  var processingDetails: js.UndefOr[VideoProcessingDetails] = js.native
+  var processingDetails: js.UndefOr[VideoProcessingDetails] = js.undefined
   
   /** The projectDetails object contains information about the project specific video metadata. */
-  var projectDetails: js.UndefOr[VideoProjectDetails] = js.native
+  var projectDetails: js.UndefOr[VideoProjectDetails] = js.undefined
   
   /** The recordingDetails object encapsulates information about the location, date and address where the video was recorded. */
-  var recordingDetails: js.UndefOr[VideoRecordingDetails] = js.native
+  var recordingDetails: js.UndefOr[VideoRecordingDetails] = js.undefined
   
   /** The snippet object contains basic details about the video, such as its title, description, and category. */
-  var snippet: js.UndefOr[VideoSnippet] = js.native
+  var snippet: js.UndefOr[VideoSnippet] = js.undefined
   
   /** The statistics object contains statistics about the video. */
-  var statistics: js.UndefOr[VideoStatistics] = js.native
+  var statistics: js.UndefOr[VideoStatistics] = js.undefined
   
   /** The status object contains information about the video's uploading, processing, and privacy statuses. */
-  var status: js.UndefOr[VideoStatus] = js.native
+  var status: js.UndefOr[VideoStatus] = js.undefined
   
   /**
     * The suggestions object encapsulates suggestions that identify opportunities to improve the video quality or the metadata for the uploaded video. This data can only be retrieved by
     * the video owner.
     */
-  var suggestions: js.UndefOr[VideoSuggestions] = js.native
+  var suggestions: js.UndefOr[VideoSuggestions] = js.undefined
   
   /** The topicDetails object encapsulates information about Freebase topics associated with the video. */
-  var topicDetails: js.UndefOr[VideoTopicDetails] = js.native
+  var topicDetails: js.UndefOr[VideoTopicDetails] = js.undefined
 }
 object Video {
   
@@ -138,7 +136,7 @@ object Video {
     def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video & TopLevel[js.Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline

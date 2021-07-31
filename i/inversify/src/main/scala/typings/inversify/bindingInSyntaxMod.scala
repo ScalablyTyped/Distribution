@@ -1,9 +1,9 @@
 package typings.inversify
 
 import typings.inversify.interfacesMod.interfaces.Binding
+import typings.inversify.interfacesMod.interfaces.BindingWhenOnSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bindingInSyntaxMod {
@@ -11,9 +11,19 @@ object bindingInSyntaxMod {
   @JSImport("inversify/dts/syntax/binding_in_syntax", "BindingInSyntax")
   @js.native
   class BindingInSyntax[T] protected ()
-    extends typings.inversify.interfacesMod.interfaces.BindingInSyntax[T] {
+    extends StObject
+       with typings.inversify.interfacesMod.interfaces.BindingInSyntax[T] {
     def this(binding: Binding[T]) = this()
     
     var _binding: js.Any = js.native
+    
+    /* CompleteClass */
+    override def inRequestScope(): BindingWhenOnSyntax[T] = js.native
+    
+    /* CompleteClass */
+    override def inSingletonScope(): BindingWhenOnSyntax[T] = js.native
+    
+    /* CompleteClass */
+    override def inTransientScope(): BindingWhenOnSyntax[T] = js.native
   }
 }

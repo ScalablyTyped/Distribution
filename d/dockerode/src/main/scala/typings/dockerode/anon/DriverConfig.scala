@@ -3,17 +3,15 @@ package typings.dockerode.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriverConfig extends StObject {
   
-  var DriverConfig: Name = js.native
+  var DriverConfig: Name
   
-  var Labels: StringDictionary[String] = js.native
+  var Labels: StringDictionary[String]
   
-  var NoCopy: Boolean = js.native
+  var NoCopy: Boolean
 }
 object DriverConfig {
   

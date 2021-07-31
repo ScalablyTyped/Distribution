@@ -2,16 +2,14 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchBuyTradeResponse extends StObject {
   
   // state of trade after confirmTrade
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[BuyTradeStatus] = js.native
+  var status: js.UndefOr[BuyTradeStatus] = js.undefined
 }
 object WatchBuyTradeResponse {
   

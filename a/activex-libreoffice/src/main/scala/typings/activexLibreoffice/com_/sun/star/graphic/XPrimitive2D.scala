@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is the basic interface for 2D graphic primitives. They need to be able to provide a decomposition consisting of simpler graphic primitivesto
   * provide a 2D bound rectangle as a 2D range
   */
-@js.native
-trait XPrimitive2D extends XInterface {
+trait XPrimitive2D
+  extends StObject
+     with XInterface {
   
   /**
     * Retrieve decomposed list of simpler primitives
     * @param aViewParameters 2D View-specific parameter set. The defined but not mandatory parameters include:{@link com.sun.star.geometry.AffineMatrix2D} Tra
     */
-  def getDecomposition(aViewParameters: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D] = js.native
+  def getDecomposition(aViewParameters: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D]
   
   /**
     * Retrieve bound rect of primitive
@@ -33,7 +33,7 @@ trait XPrimitive2D extends XInterface {
     * adjustments are taken into account. For that reason the ViewParameters need to be given.
     * @param aViewParameters 2D View-specific parameter set, same as in getDecomposition.
     */
-  def getRange(aViewParameters: SeqEquiv[PropertyValue]): RealRectangle2D = js.native
+  def getRange(aViewParameters: SeqEquiv[PropertyValue]): RealRectangle2D
 }
 object XPrimitive2D {
   

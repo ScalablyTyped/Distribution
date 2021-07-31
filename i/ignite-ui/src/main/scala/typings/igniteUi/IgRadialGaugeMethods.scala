@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgRadialGaugeMethods extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait IgRadialGaugeMethods extends StObject {
     *
     * @param value
     */
-  def addRange(value: js.Object): Unit = js.native
+  def addRange(value: js.Object): Unit
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
@@ -31,27 +29,27 @@ trait IgRadialGaugeMethods extends StObject {
     *
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Clears the ranges in the radial gauge.
     */
-  def clearRanges(): Unit = js.native
+  def clearRanges(): Unit
   
   /**
     * Destroys widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Exports the visual data for the radial gauge.
     */
-  def exportVisualData(): Unit = js.native
+  def exportVisualData(): Unit
   
   /**
     * Flushes the gauge.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Gets the point on the gauge for a given scale value and extent.
@@ -59,12 +57,12 @@ trait IgRadialGaugeMethods extends StObject {
     * @param value
     * @param extent
     */
-  def getPointForValue(value: js.Object, extent: js.Object): Unit = js.native
+  def getPointForValue(value: js.Object, extent: js.Object): Unit
   
   /**
     * Returns a string containing the names of all the ranges delimited with a \n symbol.
     */
-  def getRangeNames(): String = js.native
+  def getRangeNames(): String
   
   /**
     * Gets the value for the main scale of the gauge for a given point within the bounds of the gauge.
@@ -72,7 +70,7 @@ trait IgRadialGaugeMethods extends StObject {
     * @param x
     * @param y
     */
-  def getValueForPoint(x: js.Object, y: js.Object): Double = js.native
+  def getValueForPoint(x: js.Object, y: js.Object): Double
   
   /**
     * Returns true if the main gauge needle bounding box contains the point provided, otherwise false.
@@ -80,40 +78,40 @@ trait IgRadialGaugeMethods extends StObject {
     * @param x
     * @param y
     */
-  def needleContainsPoint(x: js.Object, y: js.Object): Boolean = js.native
+  def needleContainsPoint(x: js.Object, y: js.Object): Boolean
   
   /**
     * Removes a specified range.
     *
     * @param value
     */
-  def removeRange(value: js.Object): Unit = js.native
+  def removeRange(value: js.Object): Unit
   
   /**
     * Scales a value on the gauge's main scale to an angle around the center point of the gauge, in radians.
     *
     * @param value
     */
-  def scaleValue(value: js.Object): Unit = js.native
+  def scaleValue(value: js.Object): Unit
   
   /**
     * Returns true if the style was updated for the radial gauge.
     */
-  def styleUpdated(): Unit = js.native
+  def styleUpdated(): Unit
   
   /**
     * Unscales a value from an angle in radians to the represented value along the main scale of the gauge.
     *
     * @param value
     */
-  def unscaleValue(value: js.Object): Unit = js.native
+  def unscaleValue(value: js.Object): Unit
   
   /**
     * Updates the range.
     *
     * @param value
     */
-  def updateRange(value: js.Object): Unit = js.native
+  def updateRange(value: js.Object): Unit
 }
 object IgRadialGaugeMethods {
   

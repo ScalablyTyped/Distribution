@@ -7,19 +7,18 @@ import typings.mongodb.mongodbStrings.insert
 import typings.mongodb.mongodbStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeEventCR[TSchema /* <: StringDictionary[js.Any] */]
-  extends ChangeEventBase[TSchema]
+  extends StObject
+     with ChangeEventBase[TSchema]
      with ChangeEvent[TSchema] {
   
-  var documentKey: `5`[TSchema] = js.native
+  var documentKey: `5`[TSchema]
   
-  var fullDocument: js.UndefOr[TSchema] = js.native
+  var fullDocument: js.UndefOr[TSchema] = js.undefined
   
-  var operationType: insert | replace = js.native
+  var operationType: insert | replace
 }
 object ChangeEventCR {
   
@@ -36,7 +35,7 @@ object ChangeEventCR {
   }
   
   @scala.inline
-  implicit class ChangeEventCRMutableBuilder[Self <: ChangeEventCR[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventCR[TSchema]) extends AnyVal {
+  implicit class ChangeEventCRMutableBuilder[Self <: ChangeEventCR[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventCR[TSchema]) extends AnyVal {
     
     @scala.inline
     def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])

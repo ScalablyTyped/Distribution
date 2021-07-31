@@ -2,10 +2,8 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventData extends StObject {
   
   /***
@@ -13,26 +11,26 @@ trait EventData extends StObject {
     * @method isImmediatePropagationStopped
     * @return {Boolean}
     */
-  def isImmediatePropagationStopped(): Boolean = js.native
+  def isImmediatePropagationStopped(): Boolean
   
   /***
     * Returns whether stopPropagation was called on this event object.
     * @method isPropagationStopped
     * @return {Boolean}
     */
-  def isPropagationStopped(): Boolean = js.native
+  def isPropagationStopped(): Boolean
   
   /***
     * Prevents the rest of the handlers from being executed.
     * @method stopImmediatePropagation
     */
-  def stopImmediatePropagation(): Unit = js.native
+  def stopImmediatePropagation(): Unit
   
   /***
     * Stops event from propagating up the DOM tree.
     * @method stopPropagation
     */
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
 }
 object EventData {
   

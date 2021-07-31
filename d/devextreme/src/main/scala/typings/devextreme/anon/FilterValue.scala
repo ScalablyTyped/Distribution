@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterValue[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var filterValue: js.UndefOr[js.Any] = js.native
+  var filterValue: js.UndefOr[js.Any] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object FilterValue {
   
@@ -23,7 +21,7 @@ object FilterValue {
   }
   
   @scala.inline
-  implicit class FilterValueMutableBuilder[Self <: FilterValue[_], T] (val x: Self with FilterValue[T]) extends AnyVal {
+  implicit class FilterValueMutableBuilder[Self <: FilterValue[?], T] (val x: Self & FilterValue[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

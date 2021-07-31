@@ -2,43 +2,41 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllAttributes extends StObject {
   
-  var allAttributes: scala.Double = js.native
+  var allAttributes: scala.Double
   
-  var excludeNonValidated: scala.Double = js.native
+  var excludeNonValidated: scala.Double
   
-  var includeAssetUri: scala.Double = js.native
+  var includeAssetUri: scala.Double
   
-  var includeCategoryAndTags: scala.Double = js.native
+  var includeCategoryAndTags: scala.Double
   
-  var includeFiles: scala.Double = js.native
+  var includeFiles: scala.Double
   
-  var includeInstallationTargets: scala.Double = js.native
+  var includeInstallationTargets: scala.Double
   
-  var includeLatestVersionOnly: scala.Double = js.native
+  var includeLatestVersionOnly: scala.Double
   
-  var includeLcids: scala.Double = js.native
+  var includeLcids: scala.Double
   
-  var includeMetadata: scala.Double = js.native
+  var includeMetadata: scala.Double
   
-  var includeMinimalPayloadForVsIde: scala.Double = js.native
+  var includeMinimalPayloadForVsIde: scala.Double
   
-  var includeSharedAccounts: scala.Double = js.native
+  var includeSharedAccounts: scala.Double
   
-  var includeStatistics: scala.Double = js.native
+  var includeStatistics: scala.Double
   
-  var includeVersionProperties: scala.Double = js.native
+  var includeVersionProperties: scala.Double
   
-  var includeVersions: scala.Double = js.native
+  var includeVersions: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var useFallbackAssetUri: scala.Double = js.native
+  var useFallbackAssetUri: scala.Double
 }
 object AllAttributes {
   

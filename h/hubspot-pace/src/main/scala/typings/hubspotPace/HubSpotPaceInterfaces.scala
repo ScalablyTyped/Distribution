@@ -3,7 +3,6 @@ package typings.hubspotPace
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HubSpotPaceInterfaces {
@@ -15,19 +14,29 @@ object HubSpotPaceInterfaces {
   object PaceEvent extends StObject {
     
     @js.native
-    sealed trait done extends PaceEvent
+    sealed trait done
+      extends StObject
+         with PaceEvent
     
     @js.native
-    sealed trait hide extends PaceEvent
+    sealed trait hide
+      extends StObject
+         with PaceEvent
     
     @js.native
-    sealed trait restart extends PaceEvent
+    sealed trait restart
+      extends StObject
+         with PaceEvent
     
     @js.native
-    sealed trait start extends PaceEvent
+    sealed trait start
+      extends StObject
+         with PaceEvent
     
     @js.native
-    sealed trait stop extends PaceEvent
+    sealed trait stop
+      extends StObject
+         with PaceEvent
   }
   
   @js.native
@@ -56,23 +65,22 @@ object HubSpotPaceInterfaces {
     def track(fn: js.Function0[Unit], args: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait PaceAjaxOptions extends StObject {
     
     /**
       * A list of regular expressions or substrings of URLS we should ignore (for both tracking and restarting)
       */
-    var ignoreURLs: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var ignoreURLs: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * Which HTTP methods should we track?
       */
-    var trackMethods: js.UndefOr[js.Array[String]] = js.native
+    var trackMethods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Should we track web socket connections?
       */
-    var trackWebSockets: js.UndefOr[Boolean] = js.native
+    var trackWebSockets: js.UndefOr[Boolean] = js.undefined
   }
   object PaceAjaxOptions {
     
@@ -111,18 +119,17 @@ object HubSpotPaceInterfaces {
     }
   }
   
-  @js.native
   trait PaceElementsOptions extends StObject {
     
     /**
       * How frequently in ms should we check for the elements being tested for using the element monitor?
       */
-    var checkInterval: js.UndefOr[Double] = js.native
+    var checkInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * What elements should we wait for before deciding the page is fully loaded (not required)
       */
-    var selectors: js.UndefOr[js.Array[String]] = js.native
+    var selectors: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PaceElementsOptions {
     
@@ -152,23 +159,22 @@ object HubSpotPaceInterfaces {
     }
   }
   
-  @js.native
   trait PaceEventLagOptions extends StObject {
     
     /**
       * Above how many ms of lag is the CPU considered busy?
       */
-    var lagThreshold: js.UndefOr[Double] = js.native
+    var lagThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * When we first start measuring event lag, not much is going on in the browser yet, so it's not uncommon for the numbers to be abnormally low for the first few samples. This configures how many samples we need before we consider a low number to mean completion.
       */
-    var minSamples: js.UndefOr[Double] = js.native
+    var minSamples: js.UndefOr[Double] = js.undefined
     
     /**
       * How many samples should we average to decide what the current lag is?
       */
-    var sampleCount: js.UndefOr[Double] = js.native
+    var sampleCount: js.UndefOr[Double] = js.undefined
   }
   object PaceEventLagOptions {
     
@@ -201,66 +207,65 @@ object HubSpotPaceInterfaces {
     }
   }
   
-  @js.native
   trait PaceOptions extends StObject {
     
-    var ajax: js.UndefOr[Boolean | PaceAjaxOptions] = js.native
+    var ajax: js.UndefOr[Boolean | PaceAjaxOptions] = js.undefined
     
     /**
       * How long should it take for the bar to animate to a new point after receiving it
       */
-    var catchupTime: js.UndefOr[Double] = js.native
+    var catchupTime: js.UndefOr[Double] = js.undefined
     
-    var document: js.UndefOr[Boolean | String] = js.native
+    var document: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * This tweaks the animation easing
       */
-    var easeFactor: js.UndefOr[Double] = js.native
+    var easeFactor: js.UndefOr[Double] = js.undefined
     
-    var elements: js.UndefOr[Boolean | PaceElementsOptions] = js.native
+    var elements: js.UndefOr[Boolean | PaceElementsOptions] = js.undefined
     
-    var eventLag: js.UndefOr[Boolean | PaceEventLagOptions] = js.native
+    var eventLag: js.UndefOr[Boolean | PaceEventLagOptions] = js.undefined
     
     /**
       * What is the minimum amount of time the bar should sit after the last update before disappearing
       */
-    var ghostTime: js.UndefOr[Double] = js.native
+    var ghostTime: js.UndefOr[Double] = js.undefined
     
     /**
       * How quickly should the bar be moving before it has any progress info from a new source in %/ms
       */
-    var initialRate: js.UndefOr[Double] = js.native
+    var initialRate: js.UndefOr[Double] = js.undefined
     
     /**
       * Its easy for a bunch of the bar to be eaten in the first few frames before we know how much there is to load. This limits how much of the bar can be used per frame
       */
-    var maxProgressPerFrame: js.UndefOr[Double] = js.native
+    var maxProgressPerFrame: js.UndefOr[Double] = js.undefined
     
     /**
       * What is the minimum amount of time the bar should be on the screen. Irrespective of this number, the bar will always be on screen for 33 * (100 / maxProgressPerFrame) + ghostTime ms.
       */
-    var minTime: js.UndefOr[Double] = js.native
+    var minTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Should we restart the browser when pushState or replaceState is called?  (Generally means ajax navigation has occured)
       */
-    var restartOnPushState: js.UndefOr[Boolean] = js.native
+    var restartOnPushState: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should we show the progress bar for every ajax request (not just regular or ajax-y page navigation)? Set to false to disable. If so, how many ms does the request have to be running for before we show the progress?
       */
-    var restartOnRequestAfter: js.UndefOr[Boolean | Double] = js.native
+    var restartOnRequestAfter: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Should pace automatically start when the page is loaded, or should it wait for `start` to be called? Always false if pace is loaded with AMD or CommonJS.
       */
-    var startOnPageLoad: js.UndefOr[Boolean] = js.native
+    var startOnPageLoad: js.UndefOr[Boolean] = js.undefined
     
     /**
       * What element should the pace element be appended to on the page?
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object PaceOptions {
     

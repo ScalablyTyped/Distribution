@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Directorysites")
@@ -31,7 +30,7 @@ class ResourceDirectorysites protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDirectorySite] = js.native
   def get(callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySite] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDirectorySite] = js.native
   def get(params: ParamsResourceDirectorysitesGet): GaxiosPromise[SchemaDirectorySite] = js.native
   def get(params: ParamsResourceDirectorysitesGet, callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourceDirectorysites protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaDirectorySite] = js.native
   def insert(callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySite] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDirectorySite] = js.native
   def insert(params: ParamsResourceDirectorysitesInsert): GaxiosPromise[SchemaDirectorySite] = js.native
   def insert(params: ParamsResourceDirectorysitesInsert, callback: BodyResponseCallback[SchemaDirectorySite]): Unit = js.native
   def insert(
@@ -102,7 +101,7 @@ class ResourceDirectorysites protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDirectorySitesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
   def list(params: ParamsResourceDirectorysitesList): GaxiosPromise[SchemaDirectorySitesListResponse] = js.native
   def list(
     params: ParamsResourceDirectorysitesList,

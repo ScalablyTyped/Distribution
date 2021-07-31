@@ -2,36 +2,34 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to send encoded debug information.
   */
-@js.native
 trait SchemaSendDebugCaptureRequest extends StObject {
   
   /**
     * The internal component id for which debug information is sent.
     */
-  var componentId: js.UndefOr[String] = js.native
+  var componentId: js.UndefOr[String] = js.undefined
   
   /**
     * The encoded debug information.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The [regional endpoint]
     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
     * contains the job specified by job_id.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The worker id, i.e., VM hostname.
     */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object SchemaSendDebugCaptureRequest {
   

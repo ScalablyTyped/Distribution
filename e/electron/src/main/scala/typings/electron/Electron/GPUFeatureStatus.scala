@@ -2,77 +2,75 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GPUFeatureStatus extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/gpu-feature-status
   /**
     * Canvas.
     */
-  var `2d_canvas`: String = js.native
+  var `2d_canvas`: String
   
   /**
     * Flash.
     */
-  var flash_3d: String = js.native
+  var flash_3d: String
   
   /**
     * Flash Stage3D.
     */
-  var flash_stage3d: String = js.native
+  var flash_stage3d: String
   
   /**
     * Flash Stage3D Baseline profile.
     */
-  var flash_stage3d_baseline: String = js.native
+  var flash_stage3d_baseline: String
   
   /**
     * Compositing.
     */
-  var gpu_compositing: String = js.native
+  var gpu_compositing: String
   
   /**
     * Multiple Raster Threads.
     */
-  var multiple_raster_threads: String = js.native
+  var multiple_raster_threads: String
   
   /**
     * Native GpuMemoryBuffers.
     */
-  var native_gpu_memory_buffers: String = js.native
+  var native_gpu_memory_buffers: String
   
   /**
     * Rasterization.
     */
-  var rasterization: String = js.native
+  var rasterization: String
   
   /**
     * Video Decode.
     */
-  var video_decode: String = js.native
+  var video_decode: String
   
   /**
     * Video Encode.
     */
-  var video_encode: String = js.native
+  var video_encode: String
   
   /**
     * VPx Video Decode.
     */
-  var vpx_decode: String = js.native
+  var vpx_decode: String
   
   /**
     * WebGL.
     */
-  var webgl: String = js.native
+  var webgl: String
   
   /**
     * WebGL2.
     */
-  var webgl2: String = js.native
+  var webgl2: String
 }
 object GPUFeatureStatus {
   

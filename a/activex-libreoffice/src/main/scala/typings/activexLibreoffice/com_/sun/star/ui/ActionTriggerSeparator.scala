@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a separator entry. Such entries are of interest for components rendering an {@link ActionTriggerContainer} . */
-@js.native
 trait ActionTriggerSeparator extends StObject {
   
   /** determines the type of the separator using constants from {@link ActionTriggerSeparatorType} . */
-  var SeparatorType: Double = js.native
+  var SeparatorType: Double
 }
 object ActionTriggerSeparator {
   

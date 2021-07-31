@@ -5,7 +5,6 @@ import typings.blocks.anon.History
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -190,7 +189,7 @@ trait BlocksStatic extends StObject {
     */
   def observable(): BlocksObservable = js.native
   def observable(value: js.Any): BlocksObservable = js.native
-  def observable(value: js.Array[_]): BlocksArray = js.native
+  def observable(value: js.Array[js.Any]): BlocksArray = js.native
   
   def optional(param: String): BlocksStatic = js.native
   def optional(param: String, defaultValue: js.Any): BlocksStatic = js.native
@@ -229,7 +228,7 @@ trait BlocksStatic extends StObject {
     * 
     * @param value The value to be converted to an array
     */
-  def toArray(value: js.Any): js.Array[_] = js.native
+  def toArray(value: js.Any): js.Array[js.Any] = js.native
   
   /**
     * Converts an integer or string to a unit. If the value could not be parsed to a number it is not converted

@@ -6,14 +6,16 @@ import typings.ldclientJsCommon.ldclientJsCommonStrings.localStorage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ldclient-js-common", "createConsoleLogger")
+  @JSImport("ldclient-js-common", JSImport.Namespace)
   @js.native
-  def createConsoleLogger(minimumLevel: String): LDLogger = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createConsoleLogger(minimumLevel: String): LDLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(minimumLevel.asInstanceOf[js.Any]).asInstanceOf[LDLogger]
   
   @JSImport("ldclient-js-common", "version")
   @js.native
@@ -100,15 +102,15 @@ object mod {
       *   (which can also be obtained by calling [[variation]]).
       */
     def identify(user: LDUser): js.Promise[LDFlagSet] = js.native
-    def identify(
-      user: LDUser,
-      hash: js.UndefOr[scala.Nothing],
-      onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
-    ): js.Promise[LDFlagSet] = js.native
     def identify(user: LDUser, hash: String): js.Promise[LDFlagSet] = js.native
     def identify(
       user: LDUser,
       hash: String,
+      onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
+    ): js.Promise[LDFlagSet] = js.native
+    def identify(
+      user: LDUser,
+      hash: Unit,
       onDone: js.Function2[/* err */ Error | Null, /* flags */ LDFlagSet | Null, Unit]
     ): js.Promise[LDFlagSet] = js.native
     
@@ -265,25 +267,24 @@ object mod {
     def waitUntilReady(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait LDEvaluationDetail extends StObject {
     
     /**
       * An object describing the main factor that influenced the flag evaluation value.
       */
-    var reason: LDEvaluationReason = js.native
+    var reason: LDEvaluationReason
     
     /**
       * The result of the flag evaluation. This will be either one of the flag's variations or
       * the default value that was passed to [[LDClient.variationDetail]].
       */
-    var value: LDFlagValue = js.native
+    var value: LDFlagValue
     
     /**
       * The index of the returned value within the flag's list of variations, e.g. 0 for the
       * first variation-- or `null` if the default value was returned.
       */
-    var variationIndex: js.UndefOr[Double] = js.native
+    var variationIndex: js.UndefOr[Double] = js.undefined
   }
   object LDEvaluationDetail {
     
@@ -310,13 +311,12 @@ object mod {
     }
   }
   
-  @js.native
   trait LDEvaluationReason extends StObject {
     
     /**
       * A further description of the error condition, if the kind was `'ERROR'`.
       */
-    var errorKind: js.UndefOr[String] = js.native
+    var errorKind: js.UndefOr[String] = js.undefined
     
     /**
       * The general category of the reason:
@@ -330,22 +330,22 @@ object mod {
       * - `'ERROR'`: The flag could not be evaluated, e.g. because it does not exist or due
       *   to an unexpected error.
       */
-    var kind: String = js.native
+    var kind: String
     
     /**
       * The key of the failed prerequisite flag, if the kind was `'PREREQUISITE_FAILED'`.
       */
-    var prerequisiteKey: js.UndefOr[String] = js.native
+    var prerequisiteKey: js.UndefOr[String] = js.undefined
     
     /**
       * The unique identifier of the matched rule, if the kind was `'RULE_MATCH'`.
       */
-    var ruleId: js.UndefOr[String] = js.native
+    var ruleId: js.UndefOr[String] = js.undefined
     
     /**
       * The index of the matched rule (0 for the first), if the kind was `'RULE_MATCH'`.
       */
-    var ruleIndex: js.UndefOr[Double] = js.native
+    var ruleIndex: js.UndefOr[Double] = js.undefined
   }
   object LDEvaluationReason {
     
@@ -393,16 +393,15 @@ object mod {
   
   type LDFlagValue = js.Any
   
-  @js.native
   trait LDLogger extends StObject {
     
-    def debug(message: String): Unit = js.native
+    def debug(message: String): Unit
     
-    def error(message: String): Unit = js.native
+    def error(message: String): Unit
     
-    def info(message: String): Unit = js.native
+    def info(message: String): Unit
     
-    def warn(message: String): Unit = js.native
+    def warn(message: String): Unit
   }
   object LDLogger {
     
@@ -429,7 +428,6 @@ object mod {
     }
   }
   
-  @js.native
   trait LDOptionsBase extends StObject {
     
     /**
@@ -438,7 +436,7 @@ object mod {
       *
       * By default, this is false.
       */
-    var allAttributesPrivate: js.UndefOr[Boolean] = js.native
+    var allAttributesPrivate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to send an analytics event for a flag evaluation even if the same flag was
@@ -446,14 +444,14 @@ object mod {
       *
       * By default, this is false (duplicate events within five minutes will be dropped).
       */
-    var allowFrequentDuplicateEvents: js.UndefOr[Boolean] = js.native
+    var allowFrequentDuplicateEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The base URL for the LaunchDarkly server.
       *
       * Most users should use the default value.
       */
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The initial set of flags to use until the remote set is retrieved.
@@ -464,7 +462,7 @@ object mod {
       *
       * For more information, see the [SDK Reference Guide](https://docs.launchdarkly.com/docs/js-sdk-reference#section-bootstrapping).
       */
-    var bootstrap: js.UndefOr[localStorage | LDFlagSet] = js.native
+    var bootstrap: js.UndefOr[localStorage | LDFlagSet] = js.undefined
     
     /**
       * Whether LaunchDarkly should provide additional information about how flag values were
@@ -474,21 +472,21 @@ object mod {
       * [[LDClient.variationDetail]] method. Since this increases the size of network requests,
       * such information is not sent unless you set this option to true.
       */
-    var evaluationReasons: js.UndefOr[Boolean] = js.native
+    var evaluationReasons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The base URL for the LaunchDarkly events server.
       *
       * Most users should use the default value.
       */
-    var eventsUrl: js.UndefOr[String] = js.native
+    var eventsUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The interval in between flushes of the analytics events queue, in milliseconds.
       *
       * The default value is 2000ms.
       */
-    var flushInterval: js.UndefOr[Double] = js.native
+    var flushInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * An object that will perform logging for the client.
@@ -496,14 +494,14 @@ object mod {
       * If not specified, the default is [[createConsoleLogger]] in the browser SDK, or a logger
       * from the `winston` package in Electron.
       */
-    var logger: js.UndefOr[LDLogger] = js.native
+    var logger: js.UndefOr[LDLogger] = js.undefined
     
     /**
       * The names of user attributes that should be marked as private, and not sent
       * to LaunchDarkly in analytics events. You can also specify this on a per-user basis
       * with [[LDUser.privateAttributeNames]].
       */
-    var privateAttributeNames: js.UndefOr[js.Array[String]] = js.native
+    var privateAttributeNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If specified, enables event sampling so that only some fraction of analytics events will be
@@ -512,12 +510,12 @@ object mod {
       * When set to greater than zero, there is a 1 in `samplingInterval` chance that events will be
       * sent: for example, a value of 20 means that on average 1 in 20, or 5%, of all events will be sent.
       */
-    var samplingInterval: js.UndefOr[Double] = js.native
+    var samplingInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to send analytics events back to LaunchDarkly. By default, this is true.
       */
-    var sendEvents: js.UndefOr[Boolean] = js.native
+    var sendEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether analytics events should be sent only when you call variation (true), or also when you
@@ -525,7 +523,7 @@ object mod {
       *
       * By default, this is false (events will be sent in both cases).
       */
-    var sendEventsOnlyForVariation: js.UndefOr[Boolean] = js.native
+    var sendEventsOnlyForVariation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to include custom HTTP headers when requesting flags from LaunchDarkly.
@@ -535,7 +533,7 @@ object mod {
       * of custom headers causes browsers to make an extra OPTIONS request (a CORS preflight check)
       * before each flag request, which could affect performance.
       */
-    var sendLDHeaders: js.UndefOr[Boolean] = js.native
+    var sendLDHeaders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How long (in milliseconds) to wait after a failure of the stream connection before trying to
@@ -544,14 +542,14 @@ object mod {
       * This only applies if streaming has been enabled by setting [[streaming]] to true or
       * subscribing to `"change"` events. The default is 1000ms.
       */
-    var streamReconnectDelay: js.UndefOr[Double] = js.native
+    var streamReconnectDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The base URL for the LaunchDarkly streaming server.
       *
       * Most users should use the default value.
       */
-    var streamUrl: js.UndefOr[String] = js.native
+    var streamUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not to open a streaming connection to LaunchDarkly for live flag updates.
@@ -562,7 +560,7 @@ object mod {
       *
       * This is equivalent to calling `client.setStreaming()` with the same value.
       */
-    var streaming: js.UndefOr[Boolean] = js.native
+    var streaming: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to use the REPORT verb to fetch flag settings.
@@ -575,7 +573,7 @@ object mod {
       *
       * Do not use unless advised by LaunchDarkly.
       */
-    var useReport: js.UndefOr[Boolean] = js.native
+    var useReport: js.UndefOr[Boolean] = js.undefined
   }
   object LDOptionsBase {
     
@@ -695,30 +693,29 @@ object mod {
     }
   }
   
-  @js.native
   trait LDUser extends StObject {
     
     /**
       * Whether to show the user on the Users page in LaunchDarkly.
       */
-    var anonymous: js.UndefOr[Boolean] = js.native
+    var anonymous: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An absolute URL to an avatar image for the user.
       */
-    var avatar: js.UndefOr[String] = js.native
+    var avatar: js.UndefOr[String] = js.undefined
     
     /**
       * The country associated with the user.
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * Any additional attributes associated with the user.
       */
     var custom: js.UndefOr[
         StringDictionary[String | Boolean | Double | (js.Array[String | Boolean | Double])]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The user's email address.
@@ -726,17 +723,17 @@ object mod {
       * If an `avatar` URL is not provided, LaunchDarkly will use Gravatar
       * to try to display an avatar for the user on the Users page.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * The user's first name.
       */
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
     /**
       * The user's IP address.
       */
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
     /**
       * A unique string identifying a user.
@@ -748,19 +745,19 @@ object mod {
       *
       * It is an error to omit the `key` property if `anonymous` is not set.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * The user's last name.
       */
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
     /**
       * The user's name.
       *
       * You can search for users on the User page by name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies a list of attribute names (either built-in or custom) which should be
@@ -768,7 +765,7 @@ object mod {
       * addition to any private attributes designated in the global configuration
       * with [[LDOptions.privateAttributeNames]] or [[LDOptions.allAttributesPrivate]].
       */
-    var privateAttributeNames: js.UndefOr[js.Array[String]] = js.native
+    var privateAttributeNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An optional secondary key for a user. This affects
@@ -776,7 +773,7 @@ object mod {
       * as follows: if you have chosen to bucket users by a specific attribute, the secondary key (if set)
       * is used to further distinguish between users who are otherwise identical according to that attribute.
       */
-    var secondary: js.UndefOr[String] = js.native
+    var secondary: js.UndefOr[String] = js.undefined
   }
   object LDUser {
     

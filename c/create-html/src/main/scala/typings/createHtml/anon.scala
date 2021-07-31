@@ -2,43 +2,41 @@ package typings.createHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
     /** Content to insert into <body> tag. */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /** CSS filename. */
-    var css: js.UndefOr[String | js.Array[String]] = js.native
+    var css: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Add async attribute to CSS tag. */
-    var cssAsync: js.UndefOr[String | js.Array[String]] = js.native
+    var cssAsync: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Direction of content. */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /** Site favicon. */
-    var favicon: js.UndefOr[String] = js.native
+    var favicon: js.UndefOr[String] = js.undefined
     
     /** Content to insert into <head> tag. */
-    var head: js.UndefOr[String] = js.native
+    var head: js.UndefOr[String] = js.undefined
     
     /** Language of content. */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /** JavaScript filename. */
-    var script: js.UndefOr[String | js.Array[String]] = js.native
+    var script: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Add async attribute to script tag. */
-    var scriptAsync: js.UndefOr[Boolean] = js.native
+    var scriptAsync: js.UndefOr[Boolean] = js.undefined
     
     /** Page title. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Body {
     

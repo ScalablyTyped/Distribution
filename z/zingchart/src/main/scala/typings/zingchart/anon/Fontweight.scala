@@ -2,118 +2,116 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fontweight extends StObject {
   
   /**
     * Sets the transparency level of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 be
     * ing completely opaque. Note that values require the leading 0 before the decimal point. 0.3 | 0.4 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#666
     * 699", #33ccff"), or RGB notation (e.g., "rgb(255,0,0)", "rgb(0,0,255)"). "none" | "transparent" | "purple" | "#33ccff" | "rgb(100,
     *  15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the transparency of the border. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `border-alpha`: js.UndefOr[Double] = js.native
+  var `border-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the border color of the object. "none" | "transparent" | "purple" | "#33ccff" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border radius (rounded corners) of the object. "3px" | "10px"
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.native
+  var `border-radius`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the border width of the object. 1 | 3 | | "6px" | ...
     */
-  var `border-width`: js.UndefOr[Double] = js.native
+  var `border-width`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the font color of the object text. "none" | "transparent" | "purple" | "#33ccff" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font family of the object text. "Courier" | "Georgia" | "Verdana" | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font size of the object text. 12 | "20px" | ...
     */
-  var `font-size`: js.UndefOr[String] = js.native
+  var `font-size`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font style of the object text. "normal" | "italic"
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font weight of the object text. "normal" | "bold"
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the height of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the padding around the object text. "10%" | "25px" ...
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * To create sticky tooltips. Use this with the "timeout" attribute, which allows you to specify how long you want the tooltips to "s
     * tick" to the chart. true | false | 1 |0
     */
-  var sticky: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies what text to display in the tooltips. Use with the %scale-value (%v) token. "Scale Tooltips" | "%v Days" | "..."
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the transparency of the text. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comple
     * tely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `text-alpha`: js.UndefOr[Double] = js.native
+  var `text-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * To create sticky tooltips. Provide a value in milliseconds. Use this with the "sticky" attribute, which specifies whether or not t
     * ooltips will "stick" to the chart. "30000 | 10000 | ...
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the visibility of the object. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the width of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets whether the text will wrap, depending on the width of the object. true | false | 1 | 0
     */
-  var `wrap-text`: js.UndefOr[Boolean] = js.native
+  var `wrap-text`: js.UndefOr[Boolean] = js.undefined
 }
 object Fontweight {
   

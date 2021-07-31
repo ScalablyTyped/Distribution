@@ -7,23 +7,22 @@ import typings.mapboxGl.mapboxGlStrings.round
 import typings.mapboxGl.mapboxGlStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineLayout
-  extends Layout
+  extends StObject
+     with Layout
      with _AnyLayout {
   
-  var `line-cap`: js.UndefOr[butt | round | square] = js.native
+  var `line-cap`: js.UndefOr[butt | round | square] = js.undefined
   
-  var `line-join`: js.UndefOr[bevel | round | miter | Expression] = js.native
+  var `line-join`: js.UndefOr[bevel | round | miter | Expression] = js.undefined
   
-  var `line-miter-limit`: js.UndefOr[Double | Expression] = js.native
+  var `line-miter-limit`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `line-round-limit`: js.UndefOr[Double | Expression] = js.native
+  var `line-round-limit`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `line-sort-key`: js.UndefOr[Double | Expression] = js.native
+  var `line-sort-key`: js.UndefOr[Double | Expression] = js.undefined
 }
 object LineLayout {
   

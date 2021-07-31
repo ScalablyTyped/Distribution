@@ -2,19 +2,17 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Number extends StObject {
   
-  def format(value: Double, config: js.Any): String = js.native
+  def format(value: Double, config: js.Any): String
   
-  def getConfig(format: String): js.Any = js.native
+  def getConfig(format: String): js.Any
   
-  def numToStr(config: js.Any): WebixCallback = js.native
+  def numToStr(config: js.Any): WebixCallback
   
-  def parse(value: String, config: js.Any): Double = js.native
+  def parse(value: String, config: js.Any): Double
 }
 object Number {
   

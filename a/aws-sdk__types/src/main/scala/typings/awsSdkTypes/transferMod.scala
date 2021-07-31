@@ -2,24 +2,22 @@ package typings.awsSdkTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferMod {
   
-  @js.native
   trait RequestHandler[RequestType, ResponseType, HandlerOptions] extends StObject {
     
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def handle(request: RequestType, handlerOptions: HandlerOptions): js.Promise[RequestHandlerOutput[ResponseType]] = js.native
+    def handle(request: RequestType, handlerOptions: HandlerOptions): js.Promise[RequestHandlerOutput[ResponseType]]
     
     /**
       * metadata contains information of a handler. For example
       * 'h2' refers this handler is for handling HTTP/2 requests,
       * whereas 'h1' refers handling HTTP1 requests
       */
-    var metadata: js.UndefOr[RequestHandlerMetadata] = js.native
+    var metadata: js.UndefOr[RequestHandlerMetadata] = js.undefined
   }
   object RequestHandler {
     
@@ -30,7 +28,7 @@ object transferMod {
     }
     
     @scala.inline
-    implicit class RequestHandlerMutableBuilder[Self <: RequestHandler[_, _, _], RequestType, ResponseType, HandlerOptions] (val x: Self with (RequestHandler[RequestType, ResponseType, HandlerOptions])) extends AnyVal {
+    implicit class RequestHandlerMutableBuilder[Self <: RequestHandler[?, ?, ?], RequestType, ResponseType, HandlerOptions] (val x: Self & (RequestHandler[RequestType, ResponseType, HandlerOptions])) extends AnyVal {
       
       @scala.inline
       def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
@@ -49,10 +47,9 @@ object transferMod {
     }
   }
   
-  @js.native
   trait RequestHandlerMetadata extends StObject {
     
-    var handlerProtocol: String = js.native
+    var handlerProtocol: String
   }
   object RequestHandlerMetadata {
     
@@ -70,10 +67,9 @@ object transferMod {
     }
   }
   
-  @js.native
   trait RequestHandlerOutput[ResponseType] extends StObject {
     
-    var response: ResponseType = js.native
+    var response: ResponseType
   }
   object RequestHandlerOutput {
     
@@ -84,7 +80,7 @@ object transferMod {
     }
     
     @scala.inline
-    implicit class RequestHandlerOutputMutableBuilder[Self <: RequestHandlerOutput[_], ResponseType] (val x: Self with RequestHandlerOutput[ResponseType]) extends AnyVal {
+    implicit class RequestHandlerOutputMutableBuilder[Self <: RequestHandlerOutput[?], ResponseType] (val x: Self & RequestHandlerOutput[ResponseType]) extends AnyVal {
       
       @scala.inline
       def setResponse(value: ResponseType): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])

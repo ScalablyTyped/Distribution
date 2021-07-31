@@ -3,19 +3,22 @@ package typings.formatjsEcma402Abstract
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libDataMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/data", "isMissingLocaleDataError")
+  @JSImport("@formatjs/ecma402-abstract/lib/data", JSImport.Namespace)
   @js.native
-  def isMissingLocaleDataError(e: Error): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait MissingLocaleDataError extends Error {
+  @scala.inline
+  def isMissingLocaleDataError(e: Error): /* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMissingLocaleDataError")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/data.MissingLocaleDataError */ Boolean]
+  
+  trait MissingLocaleDataError
+    extends StObject
+       with Error {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MissingLocaleDataError {
     

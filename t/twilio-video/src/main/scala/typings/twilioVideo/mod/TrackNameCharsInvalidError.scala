@@ -4,7 +4,6 @@ import typings.twilioVideo.twilioVideoNumbers.`53303`
 import typings.twilioVideo.twilioVideoStrings.`Track name contains invalid characters`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "TrackNameCharsInvalidError")

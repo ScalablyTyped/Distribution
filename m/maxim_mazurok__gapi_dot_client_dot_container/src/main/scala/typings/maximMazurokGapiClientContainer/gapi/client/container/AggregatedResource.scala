@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedResource extends StObject {
   
-  var usableSubnetworks: UsableSubnetworksResource = js.native
+  var usableSubnetworks: UsableSubnetworksResource
 }
 object AggregatedResource {
   

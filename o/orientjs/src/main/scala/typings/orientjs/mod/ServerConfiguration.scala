@@ -2,17 +2,15 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerConfiguration extends StObject {
   
-  def get(name: String): String = js.native
+  def get(name: String): String
   
-  def list(): js.Any = js.native
+  def list(): js.Any
   
-  def set(key: String, value: String): String = js.native
+  def set(key: String, value: String): String
 }
 object ServerConfiguration {
   

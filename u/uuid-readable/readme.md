@@ -10,9 +10,9 @@ Easy to Remember, Readable UUIDs, that are Shakespearean gramatically correct se
 | ------------------ | :-------------: |
 | Full name          | uuid-readable |
 | Keywords           | id, uuid, shortid, readable-id, shakespeare, unique, universal, identifier, readable, sentence, uuid-v4, uuid-v5 |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 202 |
+| # downloads        | 2097 |
 | # stars            | 0 |
 
 ## Links

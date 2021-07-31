@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assignment extends StObject {
   
   /** The user to whom the comment was assigned. */
-  var assignedUser: js.UndefOr[User] = js.native
+  var assignedUser: js.UndefOr[User] = js.undefined
   
   /** The sub-type of this event. */
-  var subtype: js.UndefOr[String] = js.native
+  var subtype: js.UndefOr[String] = js.undefined
 }
 object Assignment {
   

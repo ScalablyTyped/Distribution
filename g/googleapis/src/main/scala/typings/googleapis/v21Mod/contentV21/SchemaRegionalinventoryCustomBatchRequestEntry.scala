@@ -2,36 +2,34 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch regional inventory request.
   */
-@js.native
 trait SchemaRegionalinventoryCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product for which to update price and availability.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * Price and availability of the product.
     */
-  var regionalInventory: js.UndefOr[SchemaRegionalInventory] = js.native
+  var regionalInventory: js.UndefOr[SchemaRegionalInventory] = js.undefined
 }
 object SchemaRegionalinventoryCustomBatchRequestEntry {
   

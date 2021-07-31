@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportKeyPairRequest extends StObject {
   
   /**
     * The name of the key pair for which you want to import the public key.
     */
-  var keyPairName: ResourceName = js.native
+  var keyPairName: ResourceName
   
   /**
     * A base64-encoded public key of the ssh-rsa type.
     */
-  var publicKeyBase64: Base64 = js.native
+  var publicKeyBase64: Base64
 }
 object ImportKeyPairRequest {
   

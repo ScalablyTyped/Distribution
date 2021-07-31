@@ -10,13 +10,13 @@ BackstopJS: Catch CSS curveballs.
 | ------------------ | :-------------: |
 | Full name          | backstopjs |
 | Keywords           | - |
-| # releases         | 59 |
-| # dependents       | 22 |
-| # downloads        | 1687598 |
+| # releases         | 46 |
+| # dependents       | 24 |
+| # downloads        | 1964878 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/garris/backstopjs#readme)
+- [Homepage](https://github.com/garris/BackstopJS#readme)
 - [Bugs](https://github.com/garris/backstopjs/issues)
 - [Repository](https://github.com/garris/backstopjs)
 - [Npm](https://www.npmjs.com/package/backstopjs)

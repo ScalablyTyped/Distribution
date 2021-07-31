@@ -7,7 +7,6 @@ import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod extends Shortcut {
@@ -17,7 +16,9 @@ object layoutMod extends Shortcut {
   val default: LayoutType = js.native
   
   @js.native
-  trait LayoutType extends FunctionComponent[BasicProps] {
+  trait LayoutType
+    extends StObject
+       with FunctionComponent[BasicProps] {
     
     var Content: FC[BasicProps] = js.native
     

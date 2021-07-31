@@ -3,17 +3,15 @@ package typings.bip38
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Compressed extends StObject {
     
-    var compressed: Boolean = js.native
+    var compressed: Boolean
     
-    var privateKey: Buffer = js.native
+    var privateKey: Buffer
   }
   object Compressed {
     

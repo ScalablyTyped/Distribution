@@ -12,7 +12,7 @@ Simple SMTP server module to create custom SMTP servers
 | Keywords           | servers, text-based, smtp, email, mail, e-mail |
 | # releases         | 0 |
 | # dependents       | 40 |
-| # downloads        | 1126612 |
+| # downloads        | 1163122 |
 | # stars            | 2 |
 
 ## Links

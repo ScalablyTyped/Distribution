@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileHashes extends StObject {
   
   /** Collection of file hashes. */
-  var fileHash: js.UndefOr[js.Array[Hash]] = js.native
+  var fileHash: js.UndefOr[js.Array[Hash]] = js.undefined
 }
 object FileHashes {
   

@@ -2,16 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeConstraint extends StObject {
   
   // The nature of the activity, optional. The possible values are: work, personal, unrestricted, or unknown.
-  var activityDomain: js.UndefOr[NullableOption[ActivityDomain]] = js.native
+  var activityDomain: js.UndefOr[NullableOption[ActivityDomain]] = js.undefined
   
-  var timeSlots: js.UndefOr[NullableOption[js.Array[TimeSlot]]] = js.native
+  var timeSlots: js.UndefOr[NullableOption[js.Array[TimeSlot]]] = js.undefined
 }
 object TimeConstraint {
   

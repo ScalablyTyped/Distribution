@@ -12,7 +12,7 @@ Default Jimp plugin.
 | Keywords           | - |
 | # releases         | 103 |
 | # dependents       | 2 |
-| # downloads        | 37871590 |
+| # downloads        | 42452025 |
 | # stars            | 0 |
 
 ## Links

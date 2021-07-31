@@ -2,38 +2,38 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.parse5.mod.DefaultTreeNode because Already inherited
-- typings.parse5.mod.DefaultTreeParentNode because var conflicts: nodeName. Inlined childNodes */ @js.native
-trait DefaultTreeElement extends DefaultTreeChildNode {
+- typings.parse5.mod.DefaultTreeParentNode because var conflicts: nodeName. Inlined childNodes */ trait DefaultTreeElement
+  extends StObject
+     with DefaultTreeChildNode {
   
   /**
     * List of element attributes.
     */
-  var attrs: js.Array[Attribute] = js.native
+  var attrs: js.Array[Attribute]
   
   /**
     * Child nodes.
     */
-  var childNodes: js.Array[DefaultTreeNode] = js.native
+  var childNodes: js.Array[DefaultTreeNode]
   
   /**
     * Element namespace.
     */
-  var namespaceURI: String = js.native
+  var namespaceURI: String
   
   /**
     * Element source code location info. Available if location info is enabled via {@link ParserOptions}.
     */
-  var sourceCodeLocation: js.UndefOr[ElementLocation] = js.native
+  var sourceCodeLocation: js.UndefOr[ElementLocation] = js.undefined
   
   /**
     * Element tag name.
     */
-  var tagName: String = js.native
+  var tagName: String
 }
 object DefaultTreeElement {
   

@@ -2,10 +2,13 @@ package typings.symphonyApiClientNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionsClientMod {
+  
+  @JSImport("symphony-api-client-node/ConnectionsClient", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("symphony-api-client-node/ConnectionsClient", "ACCEPTED")
   @js.native
@@ -27,62 +30,50 @@ object connectionsClientMod {
   @js.native
   val REJECTED: String = js.native
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "acceptConnectionRequest")
-  @js.native
-  def acceptConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def acceptConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getAcceptedConnections")
-  @js.native
-  def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getAllConnections")
-  @js.native
-  def getAllConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getAllConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getConnectionRequestStatus")
-  @js.native
-  def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionRequestStatus")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getConnections")
-  @js.native
-  def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(status.asInstanceOf[js.Any], commaSeparatedUserIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getInboundPendingConnections")
-  @js.native
-  def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInboundPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getPendingConnections")
-  @js.native
-  def getPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "getRejectedConnections")
-  @js.native
-  def getRejectedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getRejectedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRejectedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "rejectConnectionRequest")
-  @js.native
-  def rejectConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def rejectConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("rejectConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "removeConnection")
-  @js.native
-  def removeConnection(userId: String, sessionToken: String): js.Promise[RemoveConnectionReponse] = js.native
+  @scala.inline
+  def removeConnection(userId: String, sessionToken: String): js.Promise[RemoveConnectionReponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeConnection")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RemoveConnectionReponse]]
   
-  @JSImport("symphony-api-client-node/ConnectionsClient", "sendConnectionRequest")
-  @js.native
-  def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @js.native
   trait Connection extends StObject {
     
-    var firstRequestedAt: js.UndefOr[Double] = js.native
+    var firstRequestedAt: js.UndefOr[Double] = js.undefined
     
-    var requestCounter: js.UndefOr[Double] = js.native
+    var requestCounter: js.UndefOr[Double] = js.undefined
     
-    var status: typings.symphonyApiClientNode.symphonyApiClientNodeStrings.REJECTED | typings.symphonyApiClientNode.symphonyApiClientNodeStrings.ACCEPTED | typings.symphonyApiClientNode.symphonyApiClientNodeStrings.PENDING_INCOMING | typings.symphonyApiClientNode.symphonyApiClientNodeStrings.PENDING_OUTGOING = js.native
+    var status: typings.symphonyApiClientNode.symphonyApiClientNodeStrings.REJECTED | typings.symphonyApiClientNode.symphonyApiClientNodeStrings.ACCEPTED | typings.symphonyApiClientNode.symphonyApiClientNodeStrings.PENDING_INCOMING | typings.symphonyApiClientNode.symphonyApiClientNodeStrings.PENDING_OUTGOING
     
-    var updatedAt: js.UndefOr[Double] = js.native
+    var updatedAt: js.UndefOr[Double] = js.undefined
     
-    var userId: Double = js.native
+    var userId: Double
   }
   object Connection {
     
@@ -126,12 +117,11 @@ object connectionsClientMod {
     }
   }
   
-  @js.native
   trait RemoveConnectionReponse extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var message: String = js.native
+    var message: String
   }
   object RemoveConnectionReponse {
     

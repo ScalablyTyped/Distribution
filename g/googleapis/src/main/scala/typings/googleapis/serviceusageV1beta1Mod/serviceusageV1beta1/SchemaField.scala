@@ -2,67 +2,65 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single field of a message type.
   */
-@js.native
 trait SchemaField extends StObject {
   
   /**
     * The field cardinality.
     */
-  var cardinality: js.UndefOr[String] = js.native
+  var cardinality: js.UndefOr[String] = js.undefined
   
   /**
     * The string value of the default value of this field. Proto2 syntax only.
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * The field JSON name.
     */
-  var jsonName: js.UndefOr[String] = js.native
+  var jsonName: js.UndefOr[String] = js.undefined
   
   /**
     * The field type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The field name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The field number.
     */
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
   /**
     * The index of the field type in `Type.oneofs`, for message or enumeration
     * types. The first type has index 1; zero means the type is not in the
     * list.
     */
-  var oneofIndex: js.UndefOr[Double] = js.native
+  var oneofIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The protocol buffer options.
     */
-  var options: js.UndefOr[js.Array[SchemaOption]] = js.native
+  var options: js.UndefOr[js.Array[SchemaOption]] = js.undefined
   
   /**
     * Whether to use alternative packed wire representation.
     */
-  var packed: js.UndefOr[Boolean] = js.native
+  var packed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The field type URL, without the scheme, for message or enumeration types.
     * Example: `&quot;type.googleapis.com/google.protobuf.Timestamp&quot;`.
     */
-  var typeUrl: js.UndefOr[String] = js.native
+  var typeUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaField {
   

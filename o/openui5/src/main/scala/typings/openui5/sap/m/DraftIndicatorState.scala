@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait DraftIndicatorState extends StObject
 object DraftIndicatorState extends StObject {
   
   @js.native
-  sealed trait Clear extends DraftIndicatorState
+  sealed trait Clear
+    extends StObject
+       with DraftIndicatorState
   
   @js.native
-  sealed trait Saved extends DraftIndicatorState
+  sealed trait Saved
+    extends StObject
+       with DraftIndicatorState
   
   @js.native
-  sealed trait Saving extends DraftIndicatorState
+  sealed trait Saving
+    extends StObject
+       with DraftIndicatorState
 }

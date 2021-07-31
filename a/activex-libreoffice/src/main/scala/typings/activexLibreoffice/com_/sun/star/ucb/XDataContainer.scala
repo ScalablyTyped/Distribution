@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,62 +16,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @version 1.0
   */
-@js.native
-trait XDataContainer extends XIndexContainer {
+trait XDataContainer
+  extends StObject
+     with XIndexContainer {
   
   /**
     * returns the content type (MIME Type) of the data container.
     * @returns the content type
     */
-  var ContentType: String = js.native
+  var ContentType: String
   
   /**
     * returns the data of the data container.
     * @returns the data
     */
-  var Data: SafeArray[Double] = js.native
+  var Data: SafeArray[Double]
   
   /**
     * Deprecated. Do not use!
     * @deprecated Deprecated
     */
-  var DataURL: String = js.native
+  var DataURL: String
   
   /**
     * returns the content type (MIME Type) of the data container.
     * @returns the content type
     */
-  def getContentType(): String = js.native
+  def getContentType(): String
   
   /**
     * returns the data of the data container.
     * @returns the data
     */
-  def getData(): SafeArray[Double] = js.native
+  def getData(): SafeArray[Double]
   
   /**
     * Deprecated. Do not use!
     * @deprecated Deprecated
     */
-  def getDataURL(): String = js.native
+  def getDataURL(): String
   
   /**
     * sets the content type (MIME Type) of the data container.
     * @param aType the content type
     */
-  def setContentType(aType: String): Unit = js.native
+  def setContentType(aType: String): Unit
   
   /**
     * sets the data of the data container.
     * @param aData the data
     */
-  def setData(aData: SeqEquiv[Double]): Unit = js.native
+  def setData(aData: SeqEquiv[Double]): Unit
   
   /**
     * Deprecated. Do not use!
     * @deprecated Deprecated
     */
-  def setDataURL(aURL: String): Unit = js.native
+  def setDataURL(aURL: String): Unit
 }
 object XDataContainer {
   

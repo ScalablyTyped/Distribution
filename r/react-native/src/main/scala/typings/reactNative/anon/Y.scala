@@ -3,15 +3,13 @@ package typings.reactNative.anon
 import typings.reactNative.mod.Animated.AnimatedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Y extends StObject {
   
-  var x: Double | AnimatedValue = js.native
+  var x: Double | AnimatedValue
   
-  var y: Double | AnimatedValue = js.native
+  var y: Double | AnimatedValue
 }
 object Y {
   

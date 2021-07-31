@@ -2,31 +2,29 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirmwareRelease extends StObject {
   
-  var bootloader_version: js.Array[Double] = js.native
+  var bootloader_version: js.Array[Double]
   
-  var changelog: String = js.native
+  var changelog: String
   
-  var channel: String = js.native
+  var channel: String
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var min_bootloader_version: js.Array[Double] = js.native
+  var min_bootloader_version: js.Array[Double]
   
-  var min_bridge_version: js.Array[Double] = js.native
+  var min_bridge_version: js.Array[Double]
   
-  var min_firmware_version: js.Array[Double] = js.native
+  var min_firmware_version: js.Array[Double]
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var url: String = js.native
+  var url: String
   
-  var version: js.Array[Double] = js.native
+  var version: js.Array[Double]
 }
 object FirmwareRelease {
   

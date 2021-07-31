@@ -4,34 +4,32 @@ import typings.materializeCss.M.Modal
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ModalOptions> */
-@js.native
 trait PartialModalOptions extends StObject {
   
-  var dismissible: js.UndefOr[Boolean] = js.native
+  var dismissible: js.UndefOr[Boolean] = js.undefined
   
-  var endingTop: js.UndefOr[String] = js.native
+  var endingTop: js.UndefOr[String] = js.undefined
   
-  var inDuration: js.UndefOr[Double] = js.native
+  var inDuration: js.UndefOr[Double] = js.undefined
   
-  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.native
+  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var outDuration: js.UndefOr[Double] = js.native
+  var outDuration: js.UndefOr[Double] = js.undefined
   
-  var preventScrolling: js.UndefOr[Boolean] = js.native
+  var preventScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var startingTop: js.UndefOr[String] = js.native
+  var startingTop: js.UndefOr[String] = js.undefined
 }
 object PartialModalOptions {
   

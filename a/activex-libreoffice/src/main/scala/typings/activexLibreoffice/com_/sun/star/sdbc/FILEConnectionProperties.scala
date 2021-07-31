@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.ConnectionProperties
   */
-@js.native
-trait FILEConnectionProperties extends ConnectionProperties {
+trait FILEConnectionProperties
+  extends StObject
+     with ConnectionProperties {
   
   /**
     * specifies the encoding to use to translate the backend data
     *
     * See the [IANA character set list]{@link url="http://www.iana.org/assignments/character-sets"} for a list of valid values.
     */
-  var CharSet: String = js.native
+  var CharSet: String
 }
 object FILEConnectionProperties {
   

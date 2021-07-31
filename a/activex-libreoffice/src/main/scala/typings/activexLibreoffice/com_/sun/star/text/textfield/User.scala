@@ -13,34 +13,34 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a user defined field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait User extends DependentTextField {
+trait User
+  extends StObject
+     with DependentTextField {
   
   /**
     * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
     * language.
     * @since OOo 1.1.2
     */
-  var IsFixedLanguage: Boolean = js.native
+  var IsFixedLanguage: Boolean
   
   /** determines if the content is shown as text rather than as value. */
-  var IsShowFormula: Boolean = js.native
+  var IsShowFormula: Boolean
   
   /** determines if the field is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /**
     * this is the number format for this field.
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
 }
 object User {
   

@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait FilterPivotHierarchyCollection extends ClientObject {
+trait FilterPivotHierarchyCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,
@@ -66,7 +67,7 @@ trait FilterPivotHierarchyCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): FilterPivotHierarchyCollection = js.native
-  def load(options: FilterPivotHierarchyCollectionLoadOptions with CollectionLoadOptions): FilterPivotHierarchyCollection = js.native
+  def load(options: FilterPivotHierarchyCollectionLoadOptions & CollectionLoadOptions): FilterPivotHierarchyCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): FilterPivotHierarchyCollection = js.native
   def load(propertyNames: String): FilterPivotHierarchyCollection = js.native
   def load(propertyNames: js.Array[String]): FilterPivotHierarchyCollection = js.native

@@ -3,14 +3,15 @@ package typings.rijndaelJs
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("rijndael-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RijndaelBlock {
+  class ^ protected ()
+    extends StObject
+       with RijndaelBlock {
     def this(key: String, mode: String) = this()
     def this(key: Buffer, mode: String) = this()
   }

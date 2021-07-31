@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IColorMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIColorMatrix
-  extends Instantiable0[IColorMatrix]
+  extends StObject
+     with Instantiable0[IColorMatrix]
      with Instantiable1[/* options */ Matrix, IColorMatrix] {
   
   /**

@@ -3,15 +3,13 @@ package typings.reactNativeMaps.anon
 import typings.reactNativeMaps.mod.EdgePadding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animated extends StObject {
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var edgePadding: js.UndefOr[EdgePadding] = js.native
+  var edgePadding: js.UndefOr[EdgePadding] = js.undefined
 }
 object Animated {
   

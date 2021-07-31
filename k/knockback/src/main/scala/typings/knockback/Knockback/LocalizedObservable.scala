@@ -2,17 +2,15 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalizedObservable extends StObject {
   
-  def destroy(): js.Any = js.native
+  def destroy(): js.Any
   
-  def observedValue(value: js.Any): js.Any = js.native
+  def observedValue(value: js.Any): js.Any
   
-  def resetToCurrent(): js.Any = js.native
+  def resetToCurrent(): js.Any
 }
 object LocalizedObservable {
   

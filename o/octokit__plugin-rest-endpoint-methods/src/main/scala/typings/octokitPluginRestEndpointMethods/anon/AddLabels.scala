@@ -2,89 +2,87 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddLabels extends StObject {
   
-  var addAssignees: `718` = js.native
+  var addAssignees: `718`
   
-  var addLabels: `719` = js.native
+  var addLabels: `719`
   
-  var checkUserCanBeAssigned: `720` = js.native
+  var checkUserCanBeAssigned: `720`
   
-  var create: `721` = js.native
+  var create: `721`
   
-  var createComment: `722` = js.native
+  var createComment: `722`
   
-  var createLabel: `723` = js.native
+  var createLabel: `723`
   
-  var createMilestone: `724` = js.native
+  var createMilestone: `724`
   
-  var deleteComment: `725` = js.native
+  var deleteComment: `725`
   
-  var deleteLabel: `726` = js.native
+  var deleteLabel: `726`
   
-  var deleteMilestone: `727` = js.native
+  var deleteMilestone: `727`
   
-  var get: `728` = js.native
+  var get: `728`
   
-  var getComment: `729` = js.native
+  var getComment: `729`
   
-  var getEvent: `730` = js.native
+  var getEvent: `730`
   
-  var getLabel: `731` = js.native
+  var getLabel: `731`
   
-  var getMilestone: `732` = js.native
+  var getMilestone: `732`
   
-  var list: `733` = js.native
+  var list: `733`
   
-  var listAssignees: `734` = js.native
+  var listAssignees: `734`
   
-  var listComments: `735` = js.native
+  var listComments: `735`
   
-  var listCommentsForRepo: `736` = js.native
+  var listCommentsForRepo: `736`
   
-  var listEvents: `737` = js.native
+  var listEvents: `737`
   
-  var listEventsForRepo: `738` = js.native
+  var listEventsForRepo: `738`
   
-  var listEventsForTimeline: `739` = js.native
+  var listEventsForTimeline: `739`
   
-  var listForAuthenticatedUser: `740` = js.native
+  var listForAuthenticatedUser: `740`
   
-  var listForOrg: `741` = js.native
+  var listForOrg: `741`
   
-  var listForRepo: `742` = js.native
+  var listForRepo: `742`
   
-  var listLabelsForMilestone: `743` = js.native
+  var listLabelsForMilestone: `743`
   
-  var listLabelsForRepo: `744` = js.native
+  var listLabelsForRepo: `744`
   
-  var listLabelsOnIssue: `745` = js.native
+  var listLabelsOnIssue: `745`
   
-  var listMilestones: `746` = js.native
+  var listMilestones: `746`
   
-  var lock: `747` = js.native
+  var lock: `747`
   
-  var removeAllLabels: `748` = js.native
+  var removeAllLabels: `748`
   
-  var removeAssignees: `749` = js.native
+  var removeAssignees: `749`
   
-  var removeLabel: `750` = js.native
+  var removeLabel: `750`
   
-  var setLabels: `751` = js.native
+  var setLabels: `751`
   
-  var unlock: `752` = js.native
+  var unlock: `752`
   
-  var update: `753` = js.native
+  var update: `753`
   
-  var updateComment: `754` = js.native
+  var updateComment: `754`
   
-  var updateLabel: `755` = js.native
+  var updateLabel: `755`
   
-  var updateMilestone: `756` = js.native
+  var updateMilestone: `756`
 }
 object AddLabels {
   

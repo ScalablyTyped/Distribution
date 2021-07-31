@@ -6,7 +6,6 @@ import typings.memfs.statsMod.default
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memfs/lib/volume", "StatWatcher")
@@ -27,20 +26,16 @@ class StatWatcher protected () extends EventEmitter {
   var prev: default[TStatNumber] = js.native
   
   def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit]): js.Any = js.native
-  def setTimeout(
-    callback: js.Function1[/* repeated */ js.Any, Unit],
-    time: js.UndefOr[scala.Nothing],
-    args: js.Array[_]
-  ): js.Any = js.native
   def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Double): js.Any = js.native
-  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Double, args: js.Array[_]): js.Any = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Double, args: js.Array[js.Any]): js.Any = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ js.Any, Unit], time: Unit, args: js.Array[js.Any]): js.Any = js.native
   @JSName("setTimeout")
   var setTimeout_Original: TSetTimeout = js.native
   
   def start(path: String): Unit = js.native
-  def start(path: String, persistent: js.UndefOr[scala.Nothing], interval: Double): Unit = js.native
   def start(path: String, persistent: Boolean): Unit = js.native
   def start(path: String, persistent: Boolean, interval: Double): Unit = js.native
+  def start(path: String, persistent: Unit, interval: Double): Unit = js.native
   
   def stop(): Unit = js.native
   

@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerLifecycleEvent extends StObject {
   
   /** The start time of this container. All events will report this so that events can be grouped together across container/VM restarts. */
-  var containerStartTime: js.UndefOr[String] = js.native
+  var containerStartTime: js.UndefOr[String] = js.undefined
   
   /** The event being reported. */
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
   /** Other stats that can accompany an event. E.g. { "downloaded_bytes" : "123456" } */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerLifecycleEvent with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerLifecycleEvent & TopLevel[js.Any]
+  ] = js.undefined
 }
 object WorkerLifecycleEvent {
   
@@ -49,7 +47,7 @@ object WorkerLifecycleEvent {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerLifecycleEvent with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerLifecycleEvent & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

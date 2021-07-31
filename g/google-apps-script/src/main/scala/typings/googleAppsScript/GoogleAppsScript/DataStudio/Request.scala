@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 import typings.googleAppsScript.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,30 +10,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * See https://developers.google.com/datastudio/connector/reference#getdata
   */
-@js.native
 trait Request[T] extends StObject {
   
   /** An object containing the user provided values for the config parameters defined by the connector. */
-  var configParams: T = js.native
+  var configParams: T
   
   /**
     * By default, the date range provided will be the last 28 days excluding today.
     * If a user applies a date range filter for a report, then the date range provided will reflect the user selection.
     * When sampleExtraction is set to true, the date two days earlier than today is given as both the start and end date.
     */
-  var dateRange: DateRange = js.native
+  var dateRange: DateRange
   
   /**
     * A nested array of the user selected filters.
     * The innermost arrays should be ORed together, the outermost arrays should be ANDed together.
     */
-  var dimensionsFilters: js.Array[js.Array[DimensionsFilters]] = js.native
+  var dimensionsFilters: js.Array[js.Array[DimensionsFilters]]
   
   /** The names of the requested fields. */
-  var fields: js.Array[Name] = js.native
+  var fields: js.Array[Name]
   
   /** An object containing information relevant to connector execution. */
-  var scriptParams: ScriptParams = js.native
+  var scriptParams: ScriptParams
 }
 object Request {
   
@@ -51,7 +49,7 @@ object Request {
   }
   
   @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request[_], T] (val x: Self with Request[T]) extends AnyVal {
+  implicit class RequestMutableBuilder[Self <: Request[?], T] (val x: Self & Request[T]) extends AnyVal {
     
     @scala.inline
     def setConfigParams(value: T): Self = StObject.set(x, "configParams", value.asInstanceOf[js.Any])

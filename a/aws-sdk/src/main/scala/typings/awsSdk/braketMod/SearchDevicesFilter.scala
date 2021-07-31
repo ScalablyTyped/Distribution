@@ -2,21 +2,19 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchDevicesFilter extends StObject {
   
   /**
     * The name to use to filter results.
     */
-  var name: SearchDevicesFilterNameString = js.native
+  var name: SearchDevicesFilterNameString
   
   /**
     * The values to use to filter results.
     */
-  var values: SearchDevicesFilterValuesList = js.native
+  var values: SearchDevicesFilterValuesList
 }
 object SearchDevicesFilter {
   

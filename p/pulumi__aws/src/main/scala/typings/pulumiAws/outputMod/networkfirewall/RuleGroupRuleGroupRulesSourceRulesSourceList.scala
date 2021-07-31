@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceRulesSourceList extends StObject {
   
   /**
     * String value to specify whether domains in the target list are allowed or denied access. Valid values: `ALLOWLIST`, `DENYLIST`.
     */
-  var generatedRulesType: String = js.native
+  var generatedRulesType: String
   
   /**
     * Set of types of domain specifications that are provided in the `targets` argument. Valid values: `HTTP_HOST`, `TLS_SNI`.
     */
-  var targetTypes: js.Array[String] = js.native
+  var targetTypes: js.Array[String]
   
   /**
     * Set of domains that you want to inspect for in your traffic flows.
     */
-  var targets: js.Array[String] = js.native
+  var targets: js.Array[String]
 }
 object RuleGroupRuleGroupRulesSourceRulesSourceList {
   

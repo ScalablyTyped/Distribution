@@ -10,9 +10,9 @@ Bnet authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-bnet |
 | Keywords           | passport, bnet, battlenet, auth, oauth, authentication, identity |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 16188 |
+| # downloads        | 27858 |
 | # stars            | 9 |
 
 ## Links

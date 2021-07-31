@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAvailableZonesResponse extends StObject {
   
   /**
     * The list of Availability Zones that have available AWS CloudHSM capacity.
     */
-  var AZList: js.UndefOr[typings.awsSdk.cloudhsmMod.AZList] = js.native
+  var AZList: js.UndefOr[typings.awsSdk.cloudhsmMod.AZList] = js.undefined
 }
 object ListAvailableZonesResponse {
   

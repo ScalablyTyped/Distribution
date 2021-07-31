@@ -2,51 +2,49 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user account.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
   
   /**
     * Access permissions string used for this user account.
     */
-  var AccessString: js.UndefOr[String] = js.native
+  var AccessString: js.UndefOr[String] = js.undefined
   
   /**
     * Denotes whether the user requires a password to authenticate.
     */
-  var Authentication: js.UndefOr[typings.awsSdk.elasticacheMod.Authentication] = js.native
+  var Authentication: js.UndefOr[typings.awsSdk.elasticacheMod.Authentication] = js.undefined
   
   /**
     * Must be Redis. 
     */
-  var Engine: js.UndefOr[EngineType] = js.native
+  var Engine: js.UndefOr[EngineType] = js.undefined
   
   /**
     * Indicates the user status. Can be "active", "modifying" or "deleting".
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * Returns a list of the user group IDs the user belongs to.
     */
-  var UserGroupIds: js.UndefOr[UserGroupIdList] = js.native
+  var UserGroupIds: js.UndefOr[UserGroupIdList] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var UserId: js.UndefOr[String] = js.native
+  var UserId: js.UndefOr[String] = js.undefined
   
   /**
     * The username of the user.
     */
-  var UserName: js.UndefOr[String] = js.native
+  var UserName: js.UndefOr[String] = js.undefined
 }
 object User {
   

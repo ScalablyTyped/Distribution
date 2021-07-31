@@ -13,10 +13,13 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorRectangleBaseMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", "ColorRectangleBase")
   @js.native
@@ -43,6 +46,10 @@ object colorRectangleBaseMod {
     
     var _updateColor: js.Any = js.native
     
+    /** Currently selected color. */
+    /* CompleteClass */
+    var color: IColor = js.native
+    
     @JSName("componentDidUpdate")
     def componentDidUpdate_MColorRectangleBase(prevProps: ReadonlyIColorRectanglePr, prevState: ReadonlyIColorRectangleSt): Unit = js.native
     
@@ -63,17 +70,14 @@ object colorRectangleBaseMod {
     def defaultProps_=(x: PartialIColorRectanglePro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", "_getNewColor")
-  @js.native
-  def getNewColor(ev: MouseEvent[Element, NativeMouseEvent], prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", "_getNewColor")
-  @js.native
-  def getNewColor(ev: typings.std.MouseEvent, prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = js.native
+  @scala.inline
+  def getNewColor(ev: MouseEvent[Element, NativeMouseEvent], prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNewColor")(ev.asInstanceOf[js.Any], prevColor.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IColor]]
+  @scala.inline
+  def getNewColor(ev: typings.std.MouseEvent, prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNewColor")(ev.asInstanceOf[js.Any], prevColor.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IColor]]
   
-  @js.native
   trait IColorRectangleState extends StObject {
     
-    var color: IColor = js.native
+    var color: IColor
   }
   object IColorRectangleState {
     

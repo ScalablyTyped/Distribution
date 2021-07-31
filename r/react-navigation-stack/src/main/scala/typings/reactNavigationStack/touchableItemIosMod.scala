@@ -9,7 +9,6 @@ import typings.reactNavigationStack.anon.Enabled
 import typings.reactNavigationStack.anon.ReadonlyBaseButtonPropert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object touchableItemIosMod {
@@ -31,7 +30,7 @@ object touchableItemIosMod {
     def defaultProps_=(x: Enabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type Props = (ComponentProps[Instantiable1[/* props */ ReadonlyBaseButtonPropert, BaseButton]]) with ActiveOpacity
+  type Props = (ComponentProps[Instantiable1[/* props */ ReadonlyBaseButtonPropert, BaseButton]]) & ActiveOpacity
   
   @js.native
   trait TouchableItem

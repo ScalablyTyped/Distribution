@@ -2,26 +2,24 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicy extends StObject {
   
   /**
     *  The resource policy formatted in JSON. 
     */
-  var document: js.UndefOr[PolicyDocument] = js.native
+  var document: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
     *  The ARN of the resource associated with the resource policy 
     */
-  var resourceArn: js.UndefOr[Arn] = js.native
+  var resourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The current revision of the resource policy. 
     */
-  var revision: js.UndefOr[PolicyRevision] = js.native
+  var revision: js.UndefOr[PolicyRevision] = js.undefined
 }
 object ResourcePolicy {
   

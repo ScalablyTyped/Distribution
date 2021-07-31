@@ -6,7 +6,6 @@ import typings.chrome.chrome.debugger.DebuggerEventEvent
 import typings.chrome.chrome.debugger.TargetInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,17 +24,17 @@ trait TypeofDebugger extends StObject {
   var onEvent: DebuggerEventEvent = js.native
   
   def sendCommand(target: Debuggee, method: String): Unit = js.native
-  def sendCommand(
-    target: Debuggee,
-    method: String,
-    commandParams: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ js.UndefOr[js.Object], Unit]
-  ): Unit = js.native
   def sendCommand(target: Debuggee, method: String, commandParams: js.Object): Unit = js.native
   def sendCommand(
     target: Debuggee,
     method: String,
     commandParams: js.Object,
+    callback: js.Function1[/* result */ js.UndefOr[js.Object], Unit]
+  ): Unit = js.native
+  def sendCommand(
+    target: Debuggee,
+    method: String,
+    commandParams: Unit,
     callback: js.Function1[/* result */ js.UndefOr[js.Object], Unit]
   ): Unit = js.native
 }

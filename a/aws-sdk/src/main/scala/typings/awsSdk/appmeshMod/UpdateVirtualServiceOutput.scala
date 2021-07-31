@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVirtualServiceOutput extends StObject {
   
   /**
     * A full description of the virtual service that was updated.
     */
-  var virtualService: VirtualServiceData = js.native
+  var virtualService: VirtualServiceData
 }
 object UpdateVirtualServiceOutput {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopExecutionOutput extends StObject {
   
   /**
     * The date the execution is stopped.
     */
-  var stopDate: Timestamp = js.native
+  var stopDate: Timestamp
 }
 object StopExecutionOutput {
   

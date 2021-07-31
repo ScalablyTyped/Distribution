@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.data.FileManagerDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileManager extends Widget {
+trait FileManager
+  extends StObject
+     with Widget {
   
   var dataSource: DataSource = js.native
   

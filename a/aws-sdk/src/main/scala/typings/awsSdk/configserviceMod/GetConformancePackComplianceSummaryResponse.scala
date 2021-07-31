@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConformancePackComplianceSummaryResponse extends StObject {
   
   /**
     * A list of ConformancePackComplianceSummary objects. 
     */
-  var ConformancePackComplianceSummaryList: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackComplianceSummaryList] = js.native
+  var ConformancePackComplianceSummaryList: js.UndefOr[typings.awsSdk.configserviceMod.ConformancePackComplianceSummaryList] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object GetConformancePackComplianceSummaryResponse {
   

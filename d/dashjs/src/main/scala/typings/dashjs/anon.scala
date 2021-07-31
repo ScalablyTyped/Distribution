@@ -44,21 +44,19 @@ import typings.dashjs.mod.SessionToken
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var line: js.UndefOr[String] = js.native
+    var line: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object Align {
     
@@ -97,14 +95,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Cc extends StObject {
     
-    var cc: String = js.native
+    var cc: String
     
-    var id: String = js.native
+    var id: String
     
-    var message: String = js.native
+    var message: String
   }
   object Cc {
     
@@ -128,14 +125,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21` | `22` | `23` | `24` | `25` | `27` | `28` | `29` | `31` | `32` | `33` | `34` | `35` | `100` | `101` | `102` | `103` | `104` | `105` | `106` | `107` | `108` | `109` | `110` | `111` | `112` | `113` | `114` | `200` = js.native
+    var code: `10` | `11` | `12` | `13` | `14` | `15` | `16` | `17` | `18` | `19` | `20` | `21` | `22` | `23` | `24` | `25` | `27` | `28` | `29` | `31` | `32` | `33` | `34` | `35` | `100` | `101` | `102` | `103` | `104` | `105` | `106` | `107` | `108` | `109` | `110` | `111` | `112` | `113` | `114` | `200`
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -165,12 +161,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DroppedFrames extends StObject {
     
-    var droppedFrames: js.UndefOr[Double] = js.native
+    var droppedFrames: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object DroppedFrames {
     
@@ -197,12 +192,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -223,16 +217,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var manifest: js.UndefOr[js.Object] = js.native
+    var manifest: js.UndefOr[js.Object] = js.undefined
     
-    var message: String = js.native
+    var message: String
   }
   object Event {
     
@@ -265,14 +258,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var request: XMLHttpRequest = js.native
+    var request: XMLHttpRequest
     
-    var url: String = js.native
+    var url: String
   }
   object Id {
     
@@ -296,12 +288,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MessageType extends StObject {
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var sessionToken: SessionToken = js.native
+    var sessionToken: SessionToken
   }
   object MessageType {
     
@@ -323,16 +314,15 @@ object anon {
   }
   
   /* Inlined {[ P in std.MediaKeyMessageType ]: string} */
-  @js.native
   trait PinMediaKeyMessageTypestr extends StObject {
     
-    var `individualization-request`: String = js.native
+    var `individualization-request`: String
     
-    var `license-release`: String = js.native
+    var `license-release`: String
     
-    var `license-renewal`: String = js.native
+    var `license-renewal`: String
     
-    var `license-request`: String = js.native
+    var `license-request`: String
   }
   object PinMediaKeyMessageTypestr {
     

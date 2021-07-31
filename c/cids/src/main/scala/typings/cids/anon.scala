@@ -5,19 +5,17 @@ import typings.cids.cidsNumbers.`1`
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Codec extends StObject {
     
-    var codec: String = js.native
+    var codec: String
     
-    var hash: Uint8Array = js.native
+    var hash: Uint8Array
     
-    var version: `0` | `1` = js.native
+    var version: `0` | `1`
   }
   object Codec {
     

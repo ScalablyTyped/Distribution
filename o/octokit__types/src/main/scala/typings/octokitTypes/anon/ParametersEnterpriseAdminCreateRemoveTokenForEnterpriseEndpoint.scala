@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminCreateRemoveTokenForEnte
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint
   
-  var request: EnterpriseAdminCreateRemoveTokenForEnterpriseRequestOptions = js.native
+  var request: EnterpriseAdminCreateRemoveTokenForEnterpriseRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminCreateRemoveTokenForEnterpriseResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminCreateRemoveTokenForEnterpriseResponseData]
 }
 object ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint {
   

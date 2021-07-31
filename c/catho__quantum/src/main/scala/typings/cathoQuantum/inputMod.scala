@@ -22,7 +22,6 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
@@ -36,42 +35,41 @@ object inputMod {
   
   type Input = Component[InputProps, js.Object, js.Any]
   
-  @js.native
   trait InputProps extends StObject {
     
-    var descriptionLabel: js.UndefOr[String] = js.native
+    var descriptionLabel: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var helperText: js.UndefOr[String] = js.native
+    var helperText: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var mask: js.UndefOr[Mask | js.Array[Mask]] = js.native
+    var mask: js.UndefOr[Mask | js.Array[Mask]] = js.undefined
     
-    var maxLength: js.UndefOr[Double | String] = js.native
+    var maxLength: js.UndefOr[Double | String] = js.undefined
     
-    var minLength: js.UndefOr[Double | String] = js.native
+    var minLength: js.UndefOr[Double | String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onClean: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onClean: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSizeColors] = js.native
+    var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
     
-    var `type`: js.UndefOr[email | text | tel | number | password | search] = js.native
+    var `type`: js.UndefOr[email | text | tel | number | password | search] = js.undefined
     
-    var validate: js.UndefOr[Validate | CustomValidate | (js.Array[Validate | CustomValidate])] = js.native
+    var validate: js.UndefOr[Validate | CustomValidate | (js.Array[Validate | CustomValidate])] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object InputProps {
     

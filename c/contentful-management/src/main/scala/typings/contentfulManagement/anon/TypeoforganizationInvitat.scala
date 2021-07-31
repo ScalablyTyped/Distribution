@@ -5,13 +5,11 @@ import typings.contentfulManagement.organizationInvitationMod.OrganizationInvita
 import typings.contentfulManagement.organizationInvitationMod.OrganizationInvitationProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeoforganizationInvitat extends StObject {
   
-  def wrapOrganizationInvitation(http: AxiosInstance, data: OrganizationInvitationProps): OrganizationInvitation = js.native
+  def wrapOrganizationInvitation(http: AxiosInstance, data: OrganizationInvitationProps): OrganizationInvitation
 }
 object TypeoforganizationInvitat {
   

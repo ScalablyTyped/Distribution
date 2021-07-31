@@ -2,21 +2,21 @@ package typings.elasticApmNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Transaction
-  extends GenericSpan
+  extends StObject
+     with GenericSpan
      with StartSpanFn {
   
   def end(): Unit = js.native
-  def end(result: js.UndefOr[scala.Nothing], endTime: Double): Unit = js.native
   def end(result: String): Unit = js.native
   def end(result: String, endTime: Double): Unit = js.native
   def end(result: Double): Unit = js.native
   def end(result: Double, endTime: Double): Unit = js.native
   def end(result: Null, endTime: Double): Unit = js.native
+  def end(result: Unit, endTime: Double): Unit = js.native
   
   def ensureParentId(): String = js.native
   

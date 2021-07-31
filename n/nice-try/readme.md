@@ -10,9 +10,9 @@ Tries to execute a function and discards any error that occurs
 | ------------------ | :-------------: |
 | Full name          | nice-try |
 | Keywords           | try, catch, error |
-| # releases         | 4 |
-| # dependents       | 69 |
-| # downloads        | 545039724 |
+| # releases         | 3 |
+| # dependents       | 104 |
+| # downloads        | 671298610 |
 | # stars            | 0 |
 
 ## Links

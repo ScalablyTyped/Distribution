@@ -4,71 +4,69 @@ import typings.maximMazurokGapiClientAnalytics.anon.BucketId
 import typings.maximMazurokGapiClientAnalytics.anon.DocumentId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsampledReport extends StObject {
   
   /** Account ID to which this unsampled report belongs. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Download details for a file stored in Google Cloud Storage. */
-  var cloudStorageDownloadDetails: js.UndefOr[BucketId] = js.native
+  var cloudStorageDownloadDetails: js.UndefOr[BucketId] = js.undefined
   
   /** Time this unsampled report was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** The dimensions for the unsampled report. */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /**
     * The type of download you need to use for the report data file. Possible values include `GOOGLE_DRIVE` and `GOOGLE_CLOUD_STORAGE`. If the value is `GOOGLE_DRIVE`, see the
     * `driveDownloadDetails` field. If the value is `GOOGLE_CLOUD_STORAGE`, see the `cloudStorageDownloadDetails` field.
     */
-  var downloadType: js.UndefOr[String] = js.native
+  var downloadType: js.UndefOr[String] = js.undefined
   
   /** Download details for a file stored in Google Drive. */
-  var driveDownloadDetails: js.UndefOr[DocumentId] = js.native
+  var driveDownloadDetails: js.UndefOr[DocumentId] = js.undefined
   
   /** The end date for the unsampled report. */
-  var `end-date`: js.UndefOr[String] = js.native
+  var `end-date`: js.UndefOr[String] = js.undefined
   
   /** The filters for the unsampled report. */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /** Unsampled report ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for an Analytics unsampled report. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The metrics for the unsampled report. */
-  var metrics: js.UndefOr[String] = js.native
+  var metrics: js.UndefOr[String] = js.undefined
   
   /** View (Profile) ID to which this unsampled report belongs. */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /** The segment for the unsampled report. */
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
   /** Link for this unsampled report. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The start date for the unsampled report. */
-  var `start-date`: js.UndefOr[String] = js.native
+  var `start-date`: js.UndefOr[String] = js.undefined
   
   /** Status of this unsampled report. Possible values are PENDING, COMPLETED, or FAILED. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Title of the unsampled report. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Time this unsampled report was last modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** Web property ID to which this unsampled report belongs. The web property ID is of the form UA-XXXXX-YY. */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object UnsampledReport {
   

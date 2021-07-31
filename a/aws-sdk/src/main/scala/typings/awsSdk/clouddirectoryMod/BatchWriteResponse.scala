@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchWriteResponse extends StObject {
   
   /**
     * A list of all the responses for each batch write.
     */
-  var Responses: js.UndefOr[BatchWriteOperationResponseList] = js.native
+  var Responses: js.UndefOr[BatchWriteOperationResponseList] = js.undefined
 }
 object BatchWriteResponse {
   

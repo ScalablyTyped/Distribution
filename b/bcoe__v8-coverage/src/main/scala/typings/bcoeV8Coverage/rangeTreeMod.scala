@@ -3,7 +3,6 @@ package typings.bcoeV8Coverage
 import typings.bcoeV8Coverage.typesMod.RangeCov
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeTreeMod {
@@ -39,11 +38,14 @@ object rangeTreeMod {
   /* static members */
   object RangeTree {
     
+    @JSImport("@bcoe/v8-coverage/dist/lib/range-tree", "RangeTree")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @precodition `ranges` are well-formed and pre-order sorted
       */
-    @JSImport("@bcoe/v8-coverage/dist/lib/range-tree", "RangeTree.fromSortedRanges")
-    @js.native
-    def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[RangeTree] = js.native
+    @scala.inline
+    def fromSortedRanges(ranges: js.Array[RangeCov]): js.UndefOr[RangeTree] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSortedRanges")(ranges.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RangeTree]]
   }
 }

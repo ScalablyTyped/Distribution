@@ -6,10 +6,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.traditional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterShadedReliefRendererProperties extends StObject {
   
   /**
@@ -17,56 +15,56 @@ trait RasterShadedReliefRendererProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#altitude)
     */
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   /**
     * The sun's relative position along the horizon, ranging from 0 to 360 degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#azimuth)
     */
-  var azimuth: js.UndefOr[Double] = js.native
+  var azimuth: js.UndefOr[Double] = js.undefined
   
   /**
     * The color ramp to display the shaded relief.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#colorRamp)
     */
-  var colorRamp: js.UndefOr[ColorRampProperties] = js.native
+  var colorRamp: js.UndefOr[ColorRampProperties] = js.undefined
   
   /**
     * The type of hillshading being applied on the elevation surface.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#hillshadeType)
     */
-  var hillshadeType: js.UndefOr[traditional | `multi-directional`] = js.native
+  var hillshadeType: js.UndefOr[traditional | `multi-directional`] = js.undefined
   
   /**
     * Pixel size factor accounts for changes in scale as the viewer zooms in and out on the map display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#pixelSizeFactor)
     */
-  var pixelSizeFactor: js.UndefOr[Double] = js.native
+  var pixelSizeFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Pixel Size Power accounts for the altitude changes (or scale) as the viewer zooms in and out on the map display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#pixelSizePower)
     */
-  var pixelSizePower: js.UndefOr[Double] = js.native
+  var pixelSizePower: js.UndefOr[Double] = js.undefined
   
   /**
     * Applies a constant or adjusted z-factor based on resolution changes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#scalingType)
     */
-  var scalingType: js.UndefOr[none | adjusted] = js.native
+  var scalingType: js.UndefOr[none | adjusted] = js.undefined
   
   /**
     * A ratio of z unit / xy unit, with optional exaggeration factored in.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-RasterShadedReliefRenderer.html#zFactor)
     */
-  var zFactor: js.UndefOr[Double] = js.native
+  var zFactor: js.UndefOr[Double] = js.undefined
 }
 object RasterShadedReliefRendererProperties {
   

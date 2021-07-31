@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowResizeResult extends StObject {
   
   /**
     * 变化后的窗口高度，单位 px
     */
-  var windowHeight: js.UndefOr[Double] = js.native
+  var windowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * 变化后的窗口宽度，单位 px
     */
-  var windowWidth: js.UndefOr[Double] = js.native
+  var windowWidth: js.UndefOr[Double] = js.undefined
 }
 object WindowResizeResult {
   

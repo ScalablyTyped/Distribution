@@ -2,31 +2,29 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamContext extends StObject {
   
   /**
     * The team project Id or name.  Ignored if ProjectId is set.
     */
-  var project: String = js.native
+  var project: String
   
   /**
     * The Team Project ID.  Required if Project is not set.
     */
-  var projectId: String = js.native
+  var projectId: String
   
   /**
     * The Team Id or name.  Ignored if TeamId is set.
     */
-  var team: String = js.native
+  var team: String
   
   /**
     * The Team Id
     */
-  var teamId: String = js.native
+  var teamId: String
 }
 object TeamContext {
   

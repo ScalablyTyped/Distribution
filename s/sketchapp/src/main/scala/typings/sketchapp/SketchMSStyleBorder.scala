@@ -3,33 +3,30 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.styleBorder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSStyleBorder extends StObject {
   
-  var _class: styleBorder = js.native
+  var _class: styleBorder
   
-  var color: SketchMSColor = js.native
+  var color: SketchMSColor
   
-  var contextSettings: SketchMSGraphicsContextSettings = js.native
+  var contextSettings: SketchMSGraphicsContextSettings
   
-  var fillType: Double = js.native
+  var fillType: Double
   
-  var gradient: SketchMSGradient = js.native
+  var gradient: SketchMSGradient
   
-  var isEnabled: Double = js.native
+  var isEnabled: Double
   
-  var position: Double = js.native
+  var position: Double
   
-  var thickness: Double = js.native
+  var thickness: Double
 }
 object SketchMSStyleBorder {
   
   @scala.inline
   def apply(
-    _class: styleBorder,
     color: SketchMSColor,
     contextSettings: SketchMSGraphicsContextSettings,
     fillType: Double,
@@ -38,7 +35,7 @@ object SketchMSStyleBorder {
     position: Double,
     thickness: Double
   ): SketchMSStyleBorder = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], contextSettings = contextSettings.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "styleBorder", color = color.asInstanceOf[js.Any], contextSettings = contextSettings.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleBorder]
   }
   

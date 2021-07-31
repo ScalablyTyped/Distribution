@@ -3,31 +3,29 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldsToEvaluate extends StObject {
   
   /**
     * Updated field values to evaluate.
     */
-  var fieldUpdates: StringDictionary[js.Any] = js.native
+  var fieldUpdates: StringDictionary[js.Any]
   
   /**
     * Initial field values.
     */
-  var fieldValues: StringDictionary[js.Any] = js.native
+  var fieldValues: StringDictionary[js.Any]
   
   /**
     * List of fields to evaluate.
     */
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
   /**
     * URL of the work item type for which the rules need to be executed.
     */
-  var rulesFrom: js.Array[String] = js.native
+  var rulesFrom: js.Array[String]
 }
 object FieldsToEvaluate {
   

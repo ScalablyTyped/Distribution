@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The resource ARN.
     */
-  var resourceARN: fraudDetectorArn = js.native
+  var resourceARN: fraudDetectorArn
   
   /**
     * The tags to assign to the resource.
     */
-  var tags: tagList = js.native
+  var tags: tagList
 }
 object TagResourceRequest {
   

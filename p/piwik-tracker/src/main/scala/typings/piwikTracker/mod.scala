@@ -3,7 +3,6 @@ package typings.piwikTracker
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,127 +14,126 @@ object mod {
   }
   
   // refer to http://developer.piwik.org/api-reference/tracking-api
-  @js.native
   trait PiwikTrackOptions extends StObject {
     
-    var _cvar: js.UndefOr[String] = js.native
+    var _cvar: js.UndefOr[String] = js.undefined
     
-    var _ects: js.UndefOr[Double] = js.native
+    var _ects: js.UndefOr[Double] = js.undefined
     
-    var _id: js.UndefOr[String] = js.native
+    var _id: js.UndefOr[String] = js.undefined
     
-    var _idts: js.UndefOr[String] = js.native
+    var _idts: js.UndefOr[String] = js.undefined
     
-    var _idvc: js.UndefOr[String] = js.native
+    var _idvc: js.UndefOr[String] = js.undefined
     
-    var _rck: js.UndefOr[String] = js.native
+    var _rck: js.UndefOr[String] = js.undefined
     
-    var _rcn: js.UndefOr[String] = js.native
+    var _rcn: js.UndefOr[String] = js.undefined
     
-    var _viewts: js.UndefOr[String] = js.native
+    var _viewts: js.UndefOr[String] = js.undefined
     
     // Recommended parameters
-    var action_name: js.UndefOr[String] = js.native
+    var action_name: js.UndefOr[String] = js.undefined
     
-    var apiv: js.UndefOr[Double] = js.native
+    var apiv: js.UndefOr[Double] = js.undefined
     
-    var c_i: js.UndefOr[String] = js.native
+    var c_i: js.UndefOr[String] = js.undefined
     
     // Optional Content Tracking info
-    var c_n: js.UndefOr[String] = js.native
+    var c_n: js.UndefOr[String] = js.undefined
     
-    var c_p: js.UndefOr[String] = js.native
+    var c_p: js.UndefOr[String] = js.undefined
     
-    var c_t: js.UndefOr[String] = js.native
+    var c_t: js.UndefOr[String] = js.undefined
     
-    var cdt: js.UndefOr[String] = js.native
+    var cdt: js.UndefOr[String] = js.undefined
     
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
-    var cip: js.UndefOr[String] = js.native
+    var cip: js.UndefOr[String] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var cs: js.UndefOr[String] = js.native
+    var cs: js.UndefOr[String] = js.undefined
     
     // Optional Action info
-    var cvar: js.UndefOr[String] = js.native
+    var cvar: js.UndefOr[String] = js.undefined
     
-    var download: js.UndefOr[String] = js.native
+    var download: js.UndefOr[String] = js.undefined
     
-    var e_a: js.UndefOr[String] = js.native
+    var e_a: js.UndefOr[String] = js.undefined
     
     // Optional Event Tracking info
-    var e_c: js.UndefOr[String] = js.native
+    var e_c: js.UndefOr[String] = js.undefined
     
-    var e_n: js.UndefOr[String] = js.native
+    var e_n: js.UndefOr[String] = js.undefined
     
-    var e_v: js.UndefOr[String] = js.native
+    var e_v: js.UndefOr[String] = js.undefined
     
-    var ec_dt: js.UndefOr[Double] = js.native
+    var ec_dt: js.UndefOr[Double] = js.undefined
     
     // Optional Ecommerce info
-    var ec_id: js.UndefOr[String] = js.native
+    var ec_id: js.UndefOr[String] = js.undefined
     
-    var ec_items: js.UndefOr[String] = js.native
+    var ec_items: js.UndefOr[String] = js.undefined
     
-    var ec_sh: js.UndefOr[Double] = js.native
+    var ec_sh: js.UndefOr[Double] = js.undefined
     
-    var ec_st: js.UndefOr[Double] = js.native
+    var ec_st: js.UndefOr[Double] = js.undefined
     
-    var ec_tx: js.UndefOr[Double] = js.native
+    var ec_tx: js.UndefOr[Double] = js.undefined
     
-    var gt_ms: js.UndefOr[Double] = js.native
+    var gt_ms: js.UndefOr[Double] = js.undefined
     
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
-    var idgoal: js.UndefOr[Double] = js.native
+    var idgoal: js.UndefOr[Double] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var lat: js.UndefOr[String] = js.native
+    var lat: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var long: js.UndefOr[String] = js.native
+    var long: js.UndefOr[String] = js.undefined
     
-    var m: js.UndefOr[Double] = js.native
+    var m: js.UndefOr[Double] = js.undefined
     
-    var new_visit: js.UndefOr[Double] = js.native
+    var new_visit: js.UndefOr[Double] = js.undefined
     
-    var rand: js.UndefOr[String] = js.native
+    var rand: js.UndefOr[String] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var res: js.UndefOr[String] = js.native
+    var res: js.UndefOr[String] = js.undefined
     
-    var revenue: js.UndefOr[Double] = js.native
+    var revenue: js.UndefOr[Double] = js.undefined
     
-    var s: js.UndefOr[Double] = js.native
+    var s: js.UndefOr[Double] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
-    var search_cat: js.UndefOr[String] = js.native
+    var search_cat: js.UndefOr[String] = js.undefined
     
-    var search_count: js.UndefOr[Double] = js.native
+    var search_count: js.UndefOr[Double] = js.undefined
     
     // Other parameters
-    var send_image: js.UndefOr[Double] = js.native
+    var send_image: js.UndefOr[Double] = js.undefined
     
     // Other parameters (require authentication via token_auth)
-    var token_auth: js.UndefOr[String] = js.native
+    var token_auth: js.UndefOr[String] = js.undefined
     
-    var ua: js.UndefOr[String] = js.native
+    var ua: js.UndefOr[String] = js.undefined
     
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
     
     // Required parameters
-    var url: String = js.native
+    var url: String
     
     // Optional User info
-    var urlref: js.UndefOr[String] = js.native
+    var urlref: js.UndefOr[String] = js.undefined
   }
   object PiwikTrackOptions {
     

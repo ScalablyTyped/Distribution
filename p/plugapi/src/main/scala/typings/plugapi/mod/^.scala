@@ -3,12 +3,13 @@ package typings.plugapi.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plugapi", JSImport.Namespace)
 @js.native
-class ^ protected () extends PlugAPI {
+class ^ protected ()
+  extends StObject
+     with PlugAPI {
   def this(login: PlugLogin) = this()
   def this(
     login: PlugLogin,

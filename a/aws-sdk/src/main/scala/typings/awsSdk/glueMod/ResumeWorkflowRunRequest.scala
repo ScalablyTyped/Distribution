@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResumeWorkflowRunRequest extends StObject {
   
   /**
     * The name of the workflow to resume.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * A list of the node IDs for the nodes you want to restart. The nodes that are to be restarted must have a run attempt in the original run.
     */
-  var NodeIds: NodeIdList = js.native
+  var NodeIds: NodeIdList
   
   /**
     * The ID of the workflow run to resume.
     */
-  var RunId: IdString = js.native
+  var RunId: IdString
 }
 object ResumeWorkflowRunRequest {
   

@@ -2,33 +2,31 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents PFX import parameters. */
-@js.native
 trait PfxImportParameters extends StObject {
   
   /** Gets or sets the container name prefix. */
-  var containerNamePrefix: String = js.native
+  var containerNamePrefix: String
   
   /** Gets or sets the export option. */
-  var exportable: ExportOption = js.native
+  var exportable: ExportOption
   
   /** Gets or sets the friendly name. */
-  var friendlyName: String = js.native
+  var friendlyName: String
   
   /** Gets or sets the install options. */
-  var installOptions: InstallOptions = js.native
+  var installOptions: InstallOptions
   
   /** Gets or sets the key protection level. */
-  var keyProtectionLevel: KeyProtectionLevel = js.native
+  var keyProtectionLevel: KeyProtectionLevel
   
   /** Gets or sets the key storage provider name. */
-  var keyStorageProviderName: String = js.native
+  var keyStorageProviderName: String
   
   /** Gets or sets the reader name. */
-  var readerName: String = js.native
+  var readerName: String
 }
 object PfxImportParameters {
   

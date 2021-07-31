@@ -3,76 +3,74 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Corresponds to the `Response` field in the Dialogflow console.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentMessage extends StObject {
   
   /**
     * The basic card response for Actions on Google.
     */
-  var basicCard: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageBasicCard] = js.native
+  var basicCard: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageBasicCard] = js.undefined
   
   /**
     * The card response.
     */
-  var card: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageCard] = js.native
+  var card: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageCard] = js.undefined
   
   /**
     * The carousel card response for Actions on Google.
     */
-  var carouselSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelect] = js.native
+  var carouselSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageCarouselSelect] = js.undefined
   
   /**
     * The image response.
     */
-  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /**
     * The link out suggestion chip for Actions on Google.
     */
-  var linkOutSuggestion: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] = js.native
+  var linkOutSuggestion: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] = js.undefined
   
   /**
     * The list card response for Actions on Google.
     */
-  var listSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageListSelect] = js.native
+  var listSelect: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageListSelect] = js.undefined
   
   /**
     * Returns a response containing a custom, platform-specific payload. See
     * the Intent.Message.Platform type for a description of the structure that
     * may be required for your platform.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional. The platform that this message is intended for.
     */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /**
     * The quick replies response.
     */
-  var quickReplies: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies] = js.native
+  var quickReplies: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies] = js.undefined
   
   /**
     * The voice and text-only responses for Actions on Google.
     */
-  var simpleResponses: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSimpleResponses] = js.native
+  var simpleResponses: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSimpleResponses] = js.undefined
   
   /**
     * The suggestion chips for Actions on Google.
     */
-  var suggestions: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSuggestions] = js.native
+  var suggestions: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageSuggestions] = js.undefined
   
   /**
     * The text response.
     */
-  var text: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageText] = js.native
+  var text: js.UndefOr[SchemaGoogleCloudDialogflowV2IntentMessageText] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessage {
   

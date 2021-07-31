@@ -10,9 +10,9 @@ Adjusted Cache.Get return type Started SiteContext mapping
 | ------------------ | :-------------: |
 | Full name          | akumina-core |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9349 |
+| # downloads        | 6412 |
 | # stars            | 0 |
 
 ## Links

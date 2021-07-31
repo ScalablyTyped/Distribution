@@ -2,41 +2,39 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareResult extends StObject {
   
   /**
     * The ID of the invited user.
     */
-  var InviteePrincipalId: js.UndefOr[IdType] = js.native
+  var InviteePrincipalId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The ID of the principal.
     */
-  var PrincipalId: js.UndefOr[IdType] = js.native
+  var PrincipalId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The role.
     */
-  var Role: js.UndefOr[RoleType] = js.native
+  var Role: js.UndefOr[RoleType] = js.undefined
   
   /**
     * The ID of the resource that was shared.
     */
-  var ShareId: js.UndefOr[ResourceIdType] = js.native
+  var ShareId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[ShareStatusType] = js.native
+  var Status: js.UndefOr[ShareStatusType] = js.undefined
   
   /**
     * The status message.
     */
-  var StatusMessage: js.UndefOr[MessageType] = js.native
+  var StatusMessage: js.UndefOr[MessageType] = js.undefined
 }
 object ShareResult {
   

@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the 2-dimensional size of an area using width and height. */
-@js.native
 trait Size extends StObject {
   
   /** specifies the height. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** specifies the width. */
-  var Width: Double = js.native
+  var Width: Double
 }
 object Size {
   

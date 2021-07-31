@@ -167,470 +167,468 @@ import typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.WaterfallChartSer
 import typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.WaterfallChartSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sheets extends StObject {
   
-  var Spreadsheets: js.UndefOr[SpreadsheetsCollection] = js.native
+  var Spreadsheets: js.UndefOr[SpreadsheetsCollection] = js.undefined
   
   // Create a new instance of AddBandingRequest
-  def newAddBandingRequest(): AddBandingRequest = js.native
+  def newAddBandingRequest(): AddBandingRequest
   
   // Create a new instance of AddChartRequest
-  def newAddChartRequest(): AddChartRequest = js.native
+  def newAddChartRequest(): AddChartRequest
   
   // Create a new instance of AddConditionalFormatRuleRequest
-  def newAddConditionalFormatRuleRequest(): AddConditionalFormatRuleRequest = js.native
+  def newAddConditionalFormatRuleRequest(): AddConditionalFormatRuleRequest
   
   // Create a new instance of AddDimensionGroupRequest
-  def newAddDimensionGroupRequest(): AddDimensionGroupRequest = js.native
+  def newAddDimensionGroupRequest(): AddDimensionGroupRequest
   
   // Create a new instance of AddFilterViewRequest
-  def newAddFilterViewRequest(): AddFilterViewRequest = js.native
+  def newAddFilterViewRequest(): AddFilterViewRequest
   
   // Create a new instance of AddNamedRangeRequest
-  def newAddNamedRangeRequest(): AddNamedRangeRequest = js.native
+  def newAddNamedRangeRequest(): AddNamedRangeRequest
   
   // Create a new instance of AddProtectedRangeRequest
-  def newAddProtectedRangeRequest(): AddProtectedRangeRequest = js.native
+  def newAddProtectedRangeRequest(): AddProtectedRangeRequest
   
   // Create a new instance of AddSheetRequest
-  def newAddSheetRequest(): AddSheetRequest = js.native
+  def newAddSheetRequest(): AddSheetRequest
   
   // Create a new instance of AppendCellsRequest
-  def newAppendCellsRequest(): AppendCellsRequest = js.native
+  def newAppendCellsRequest(): AppendCellsRequest
   
   // Create a new instance of AppendDimensionRequest
-  def newAppendDimensionRequest(): AppendDimensionRequest = js.native
+  def newAppendDimensionRequest(): AppendDimensionRequest
   
   // Create a new instance of AutoFillRequest
-  def newAutoFillRequest(): AutoFillRequest = js.native
+  def newAutoFillRequest(): AutoFillRequest
   
   // Create a new instance of AutoResizeDimensionsRequest
-  def newAutoResizeDimensionsRequest(): AutoResizeDimensionsRequest = js.native
+  def newAutoResizeDimensionsRequest(): AutoResizeDimensionsRequest
   
   // Create a new instance of BandedRange
-  def newBandedRange(): BandedRange = js.native
+  def newBandedRange(): BandedRange
   
   // Create a new instance of BandingProperties
-  def newBandingProperties(): BandingProperties = js.native
+  def newBandingProperties(): BandingProperties
   
   // Create a new instance of BasicChartAxis
-  def newBasicChartAxis(): BasicChartAxis = js.native
+  def newBasicChartAxis(): BasicChartAxis
   
   // Create a new instance of BasicChartDomain
-  def newBasicChartDomain(): BasicChartDomain = js.native
+  def newBasicChartDomain(): BasicChartDomain
   
   // Create a new instance of BasicChartSeries
-  def newBasicChartSeries(): BasicChartSeries = js.native
+  def newBasicChartSeries(): BasicChartSeries
   
   // Create a new instance of BasicChartSpec
-  def newBasicChartSpec(): BasicChartSpec = js.native
+  def newBasicChartSpec(): BasicChartSpec
   
   // Create a new instance of BasicFilter
-  def newBasicFilter(): BasicFilter = js.native
+  def newBasicFilter(): BasicFilter
   
   // Create a new instance of BatchClearValuesByDataFilterRequest
-  def newBatchClearValuesByDataFilterRequest(): BatchClearValuesByDataFilterRequest = js.native
+  def newBatchClearValuesByDataFilterRequest(): BatchClearValuesByDataFilterRequest
   
   // Create a new instance of BatchClearValuesRequest
-  def newBatchClearValuesRequest(): BatchClearValuesRequest = js.native
+  def newBatchClearValuesRequest(): BatchClearValuesRequest
   
   // Create a new instance of BatchGetValuesByDataFilterRequest
-  def newBatchGetValuesByDataFilterRequest(): BatchGetValuesByDataFilterRequest = js.native
+  def newBatchGetValuesByDataFilterRequest(): BatchGetValuesByDataFilterRequest
   
   // Create a new instance of BatchUpdateSpreadsheetRequest
-  def newBatchUpdateSpreadsheetRequest(): BatchUpdateSpreadsheetRequest = js.native
+  def newBatchUpdateSpreadsheetRequest(): BatchUpdateSpreadsheetRequest
   
   // Create a new instance of BatchUpdateValuesByDataFilterRequest
-  def newBatchUpdateValuesByDataFilterRequest(): BatchUpdateValuesByDataFilterRequest = js.native
+  def newBatchUpdateValuesByDataFilterRequest(): BatchUpdateValuesByDataFilterRequest
   
   // Create a new instance of BatchUpdateValuesRequest
-  def newBatchUpdateValuesRequest(): BatchUpdateValuesRequest = js.native
+  def newBatchUpdateValuesRequest(): BatchUpdateValuesRequest
   
   // Create a new instance of BooleanCondition
-  def newBooleanCondition(): BooleanCondition = js.native
+  def newBooleanCondition(): BooleanCondition
   
   // Create a new instance of BooleanRule
-  def newBooleanRule(): BooleanRule = js.native
+  def newBooleanRule(): BooleanRule
   
   // Create a new instance of Border
-  def newBorder(): Border = js.native
+  def newBorder(): Border
   
   // Create a new instance of Borders
-  def newBorders(): Borders = js.native
+  def newBorders(): Borders
   
   // Create a new instance of BubbleChartSpec
-  def newBubbleChartSpec(): BubbleChartSpec = js.native
+  def newBubbleChartSpec(): BubbleChartSpec
   
   // Create a new instance of CandlestickChartSpec
-  def newCandlestickChartSpec(): CandlestickChartSpec = js.native
+  def newCandlestickChartSpec(): CandlestickChartSpec
   
   // Create a new instance of CandlestickData
-  def newCandlestickData(): CandlestickData = js.native
+  def newCandlestickData(): CandlestickData
   
   // Create a new instance of CandlestickDomain
-  def newCandlestickDomain(): CandlestickDomain = js.native
+  def newCandlestickDomain(): CandlestickDomain
   
   // Create a new instance of CandlestickSeries
-  def newCandlestickSeries(): CandlestickSeries = js.native
+  def newCandlestickSeries(): CandlestickSeries
   
   // Create a new instance of CellData
-  def newCellData(): CellData = js.native
+  def newCellData(): CellData
   
   // Create a new instance of CellFormat
-  def newCellFormat(): CellFormat = js.native
+  def newCellFormat(): CellFormat
   
   // Create a new instance of ChartData
-  def newChartData(): ChartData = js.native
+  def newChartData(): ChartData
   
   // Create a new instance of ChartSourceRange
-  def newChartSourceRange(): ChartSourceRange = js.native
+  def newChartSourceRange(): ChartSourceRange
   
   // Create a new instance of ChartSpec
-  def newChartSpec(): ChartSpec = js.native
+  def newChartSpec(): ChartSpec
   
   // Create a new instance of ClearBasicFilterRequest
-  def newClearBasicFilterRequest(): ClearBasicFilterRequest = js.native
+  def newClearBasicFilterRequest(): ClearBasicFilterRequest
   
   // Create a new instance of ClearValuesRequest
-  def newClearValuesRequest(): js.Any = js.native
+  def newClearValuesRequest(): js.Any
   
   // Schema.ClearValuesRequest;
   // Create a new instance of Color
-  def newColor(): Color = js.native
+  def newColor(): Color
   
   // Create a new instance of ConditionValue
-  def newConditionValue(): ConditionValue = js.native
+  def newConditionValue(): ConditionValue
   
   // Create a new instance of ConditionalFormatRule
-  def newConditionalFormatRule(): ConditionalFormatRule = js.native
+  def newConditionalFormatRule(): ConditionalFormatRule
   
   // Create a new instance of CopyPasteRequest
-  def newCopyPasteRequest(): CopyPasteRequest = js.native
+  def newCopyPasteRequest(): CopyPasteRequest
   
   // Create a new instance of CopySheetToAnotherSpreadsheetRequest
-  def newCopySheetToAnotherSpreadsheetRequest(): CopySheetToAnotherSpreadsheetRequest = js.native
+  def newCopySheetToAnotherSpreadsheetRequest(): CopySheetToAnotherSpreadsheetRequest
   
   // Create a new instance of CreateDeveloperMetadataRequest
-  def newCreateDeveloperMetadataRequest(): CreateDeveloperMetadataRequest = js.native
+  def newCreateDeveloperMetadataRequest(): CreateDeveloperMetadataRequest
   
   // Create a new instance of CutPasteRequest
-  def newCutPasteRequest(): CutPasteRequest = js.native
+  def newCutPasteRequest(): CutPasteRequest
   
   // Create a new instance of DataFilter
-  def newDataFilter(): DataFilter = js.native
+  def newDataFilter(): DataFilter
   
   // Create a new instance of DataFilterValueRange
-  def newDataFilterValueRange(): DataFilterValueRange = js.native
+  def newDataFilterValueRange(): DataFilterValueRange
   
   // Create a new instance of DataValidationRule
-  def newDataValidationRule(): DataValidationRule = js.native
+  def newDataValidationRule(): DataValidationRule
   
   // Create a new instance of DateTimeRule
-  def newDateTimeRule(): DateTimeRule = js.native
+  def newDateTimeRule(): DateTimeRule
   
   // Create a new instance of DeleteBandingRequest
-  def newDeleteBandingRequest(): DeleteBandingRequest = js.native
+  def newDeleteBandingRequest(): DeleteBandingRequest
   
   // Create a new instance of DeleteConditionalFormatRuleRequest
-  def newDeleteConditionalFormatRuleRequest(): DeleteConditionalFormatRuleRequest = js.native
+  def newDeleteConditionalFormatRuleRequest(): DeleteConditionalFormatRuleRequest
   
   // Create a new instance of DeleteDeveloperMetadataRequest
-  def newDeleteDeveloperMetadataRequest(): DeleteDeveloperMetadataRequest = js.native
+  def newDeleteDeveloperMetadataRequest(): DeleteDeveloperMetadataRequest
   
   // Create a new instance of DeleteDimensionGroupRequest
-  def newDeleteDimensionGroupRequest(): DeleteDimensionGroupRequest = js.native
+  def newDeleteDimensionGroupRequest(): DeleteDimensionGroupRequest
   
   // Create a new instance of DeleteDimensionRequest
-  def newDeleteDimensionRequest(): DeleteDimensionRequest = js.native
+  def newDeleteDimensionRequest(): DeleteDimensionRequest
   
   // Create a new instance of DeleteEmbeddedObjectRequest
-  def newDeleteEmbeddedObjectRequest(): DeleteEmbeddedObjectRequest = js.native
+  def newDeleteEmbeddedObjectRequest(): DeleteEmbeddedObjectRequest
   
   // Create a new instance of DeleteFilterViewRequest
-  def newDeleteFilterViewRequest(): DeleteFilterViewRequest = js.native
+  def newDeleteFilterViewRequest(): DeleteFilterViewRequest
   
   // Create a new instance of DeleteNamedRangeRequest
-  def newDeleteNamedRangeRequest(): DeleteNamedRangeRequest = js.native
+  def newDeleteNamedRangeRequest(): DeleteNamedRangeRequest
   
   // Create a new instance of DeleteProtectedRangeRequest
-  def newDeleteProtectedRangeRequest(): DeleteProtectedRangeRequest = js.native
+  def newDeleteProtectedRangeRequest(): DeleteProtectedRangeRequest
   
   // Create a new instance of DeleteRangeRequest
-  def newDeleteRangeRequest(): DeleteRangeRequest = js.native
+  def newDeleteRangeRequest(): DeleteRangeRequest
   
   // Create a new instance of DeleteSheetRequest
-  def newDeleteSheetRequest(): DeleteSheetRequest = js.native
+  def newDeleteSheetRequest(): DeleteSheetRequest
   
   // Create a new instance of DeveloperMetadata
-  def newDeveloperMetadata(): DeveloperMetadata = js.native
+  def newDeveloperMetadata(): DeveloperMetadata
   
   // Create a new instance of DeveloperMetadataLocation
-  def newDeveloperMetadataLocation(): DeveloperMetadataLocation = js.native
+  def newDeveloperMetadataLocation(): DeveloperMetadataLocation
   
   // Create a new instance of DeveloperMetadataLookup
-  def newDeveloperMetadataLookup(): DeveloperMetadataLookup = js.native
+  def newDeveloperMetadataLookup(): DeveloperMetadataLookup
   
   // Create a new instance of DimensionGroup
-  def newDimensionGroup(): DimensionGroup = js.native
+  def newDimensionGroup(): DimensionGroup
   
   // Create a new instance of DimensionProperties
-  def newDimensionProperties(): DimensionProperties = js.native
+  def newDimensionProperties(): DimensionProperties
   
   // Create a new instance of DimensionRange
-  def newDimensionRange(): DimensionRange = js.native
+  def newDimensionRange(): DimensionRange
   
   // Create a new instance of DuplicateFilterViewRequest
-  def newDuplicateFilterViewRequest(): DuplicateFilterViewRequest = js.native
+  def newDuplicateFilterViewRequest(): DuplicateFilterViewRequest
   
   // Create a new instance of DuplicateSheetRequest
-  def newDuplicateSheetRequest(): DuplicateSheetRequest = js.native
+  def newDuplicateSheetRequest(): DuplicateSheetRequest
   
   // Create a new instance of Editors
-  def newEditors(): Editors = js.native
+  def newEditors(): Editors
   
   // Create a new instance of EmbeddedChart
-  def newEmbeddedChart(): EmbeddedChart = js.native
+  def newEmbeddedChart(): EmbeddedChart
   
   // Create a new instance of EmbeddedObjectPosition
-  def newEmbeddedObjectPosition(): EmbeddedObjectPosition = js.native
+  def newEmbeddedObjectPosition(): EmbeddedObjectPosition
   
   // Create a new instance of ErrorValue
-  def newErrorValue(): ErrorValue = js.native
+  def newErrorValue(): ErrorValue
   
   // Create a new instance of ExtendedValue
-  def newExtendedValue(): ExtendedValue = js.native
+  def newExtendedValue(): ExtendedValue
   
   // Create a new instance of FilterView
-  def newFilterView(): FilterView = js.native
+  def newFilterView(): FilterView
   
   // Create a new instance of FindReplaceRequest
-  def newFindReplaceRequest(): FindReplaceRequest = js.native
+  def newFindReplaceRequest(): FindReplaceRequest
   
   // Create a new instance of GetSpreadsheetByDataFilterRequest
-  def newGetSpreadsheetByDataFilterRequest(): GetSpreadsheetByDataFilterRequest = js.native
+  def newGetSpreadsheetByDataFilterRequest(): GetSpreadsheetByDataFilterRequest
   
   // Create a new instance of GradientRule
-  def newGradientRule(): GradientRule = js.native
+  def newGradientRule(): GradientRule
   
   // Create a new instance of GridCoordinate
-  def newGridCoordinate(): GridCoordinate = js.native
+  def newGridCoordinate(): GridCoordinate
   
   // Create a new instance of GridData
-  def newGridData(): GridData = js.native
+  def newGridData(): GridData
   
   // Create a new instance of GridProperties
-  def newGridProperties(): GridProperties = js.native
+  def newGridProperties(): GridProperties
   
   // Create a new instance of GridRange
-  def newGridRange(): GridRange = js.native
+  def newGridRange(): GridRange
   
   // Create a new instance of HistogramChartSpec
-  def newHistogramChartSpec(): HistogramChartSpec = js.native
+  def newHistogramChartSpec(): HistogramChartSpec
   
   // Create a new instance of HistogramRule
-  def newHistogramRule(): HistogramRule = js.native
+  def newHistogramRule(): HistogramRule
   
   // Create a new instance of HistogramSeries
-  def newHistogramSeries(): HistogramSeries = js.native
+  def newHistogramSeries(): HistogramSeries
   
   // Create a new instance of InsertDimensionRequest
-  def newInsertDimensionRequest(): InsertDimensionRequest = js.native
+  def newInsertDimensionRequest(): InsertDimensionRequest
   
   // Create a new instance of InsertRangeRequest
-  def newInsertRangeRequest(): InsertRangeRequest = js.native
+  def newInsertRangeRequest(): InsertRangeRequest
   
   // Create a new instance of InterpolationPoint
-  def newInterpolationPoint(): InterpolationPoint = js.native
+  def newInterpolationPoint(): InterpolationPoint
   
   // Create a new instance of IterativeCalculationSettings
-  def newIterativeCalculationSettings(): IterativeCalculationSettings = js.native
+  def newIterativeCalculationSettings(): IterativeCalculationSettings
   
   // Create a new instance of LineStyle
-  def newLineStyle(): LineStyle = js.native
+  def newLineStyle(): LineStyle
   
   // Create a new instance of ManualRule
-  def newManualRule(): ManualRule = js.native
+  def newManualRule(): ManualRule
   
   // Create a new instance of ManualRuleGroup
-  def newManualRuleGroup(): ManualRuleGroup = js.native
+  def newManualRuleGroup(): ManualRuleGroup
   
   // Create a new instance of MergeCellsRequest
-  def newMergeCellsRequest(): MergeCellsRequest = js.native
+  def newMergeCellsRequest(): MergeCellsRequest
   
   // Create a new instance of MoveDimensionRequest
-  def newMoveDimensionRequest(): MoveDimensionRequest = js.native
+  def newMoveDimensionRequest(): MoveDimensionRequest
   
   // Create a new instance of NamedRange
-  def newNamedRange(): NamedRange = js.native
+  def newNamedRange(): NamedRange
   
   // Create a new instance of NumberFormat
-  def newNumberFormat(): NumberFormat = js.native
+  def newNumberFormat(): NumberFormat
   
   // Create a new instance of OrgChartSpec
-  def newOrgChartSpec(): OrgChartSpec = js.native
+  def newOrgChartSpec(): OrgChartSpec
   
   // Create a new instance of OverlayPosition
-  def newOverlayPosition(): OverlayPosition = js.native
+  def newOverlayPosition(): OverlayPosition
   
   // Create a new instance of Padding
-  def newPadding(): Padding = js.native
+  def newPadding(): Padding
   
   // Create a new instance of PasteDataRequest
-  def newPasteDataRequest(): PasteDataRequest = js.native
+  def newPasteDataRequest(): PasteDataRequest
   
   // Create a new instance of PieChartSpec
-  def newPieChartSpec(): PieChartSpec = js.native
+  def newPieChartSpec(): PieChartSpec
   
   // Create a new instance of PivotGroup
-  def newPivotGroup(): PivotGroup = js.native
+  def newPivotGroup(): PivotGroup
   
   // Create a new instance of PivotGroupRule
-  def newPivotGroupRule(): PivotGroupRule = js.native
+  def newPivotGroupRule(): PivotGroupRule
   
   // Create a new instance of PivotGroupSortValueBucket
-  def newPivotGroupSortValueBucket(): PivotGroupSortValueBucket = js.native
+  def newPivotGroupSortValueBucket(): PivotGroupSortValueBucket
   
   // Create a new instance of PivotGroupValueMetadata
-  def newPivotGroupValueMetadata(): PivotGroupValueMetadata = js.native
+  def newPivotGroupValueMetadata(): PivotGroupValueMetadata
   
   // Create a new instance of PivotTable
-  def newPivotTable(): PivotTable = js.native
+  def newPivotTable(): PivotTable
   
   // Create a new instance of PivotValue
-  def newPivotValue(): PivotValue = js.native
+  def newPivotValue(): PivotValue
   
   // Create a new instance of ProtectedRange
-  def newProtectedRange(): ProtectedRange = js.native
+  def newProtectedRange(): ProtectedRange
   
   // Create a new instance of RandomizeRangeRequest
-  def newRandomizeRangeRequest(): RandomizeRangeRequest = js.native
+  def newRandomizeRangeRequest(): RandomizeRangeRequest
   
   // Create a new instance of RepeatCellRequest
-  def newRepeatCellRequest(): RepeatCellRequest = js.native
+  def newRepeatCellRequest(): RepeatCellRequest
   
   // Create a new instance of Request
-  def newRequest(): Request = js.native
+  def newRequest(): Request
   
   // Create a new instance of RowData
-  def newRowData(): RowData = js.native
+  def newRowData(): RowData
   
   // Create a new instance of SearchDeveloperMetadataRequest
-  def newSearchDeveloperMetadataRequest(): SearchDeveloperMetadataRequest = js.native
+  def newSearchDeveloperMetadataRequest(): SearchDeveloperMetadataRequest
   
   // Create a new instance of SetBasicFilterRequest
-  def newSetBasicFilterRequest(): SetBasicFilterRequest = js.native
+  def newSetBasicFilterRequest(): SetBasicFilterRequest
   
   // Create a new instance of SetDataValidationRequest
-  def newSetDataValidationRequest(): SetDataValidationRequest = js.native
+  def newSetDataValidationRequest(): SetDataValidationRequest
   
   // Create a new instance of Sheet
-  def newSheet(): Sheet = js.native
+  def newSheet(): Sheet
   
   // Create a new instance of SheetProperties
-  def newSheetProperties(): SheetProperties = js.native
+  def newSheetProperties(): SheetProperties
   
   // Create a new instance of SortRangeRequest
-  def newSortRangeRequest(): SortRangeRequest = js.native
+  def newSortRangeRequest(): SortRangeRequest
   
   // Create a new instance of SortSpec
-  def newSortSpec(): SortSpec = js.native
+  def newSortSpec(): SortSpec
   
   // Create a new instance of SourceAndDestination
-  def newSourceAndDestination(): SourceAndDestination = js.native
+  def newSourceAndDestination(): SourceAndDestination
   
   // Create a new instance of Spreadsheet
-  def newSpreadsheet(): typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet = js.native
+  def newSpreadsheet(): typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet
   
   // Create a new instance of SpreadsheetProperties
-  def newSpreadsheetProperties(): SpreadsheetProperties = js.native
+  def newSpreadsheetProperties(): SpreadsheetProperties
   
   // Create a new instance of TextFormat
-  def newTextFormat(): TextFormat = js.native
+  def newTextFormat(): TextFormat
   
   // Create a new instance of TextFormatRun
-  def newTextFormatRun(): TextFormatRun = js.native
+  def newTextFormatRun(): TextFormatRun
   
   // Create a new instance of TextPosition
-  def newTextPosition(): TextPosition = js.native
+  def newTextPosition(): TextPosition
   
   // Create a new instance of TextRotation
-  def newTextRotation(): TextRotation = js.native
+  def newTextRotation(): TextRotation
   
   // Create a new instance of TextToColumnsRequest
-  def newTextToColumnsRequest(): TextToColumnsRequest = js.native
+  def newTextToColumnsRequest(): TextToColumnsRequest
   
   // Create a new instance of TreemapChartColorScale
-  def newTreemapChartColorScale(): TreemapChartColorScale = js.native
+  def newTreemapChartColorScale(): TreemapChartColorScale
   
   // Create a new instance of TreemapChartSpec
-  def newTreemapChartSpec(): TreemapChartSpec = js.native
+  def newTreemapChartSpec(): TreemapChartSpec
   
   // Create a new instance of UnmergeCellsRequest
-  def newUnmergeCellsRequest(): UnmergeCellsRequest = js.native
+  def newUnmergeCellsRequest(): UnmergeCellsRequest
   
   // Create a new instance of UpdateBandingRequest
-  def newUpdateBandingRequest(): UpdateBandingRequest = js.native
+  def newUpdateBandingRequest(): UpdateBandingRequest
   
   // Create a new instance of UpdateBordersRequest
-  def newUpdateBordersRequest(): UpdateBordersRequest = js.native
+  def newUpdateBordersRequest(): UpdateBordersRequest
   
   // Create a new instance of UpdateCellsRequest
-  def newUpdateCellsRequest(): UpdateCellsRequest = js.native
+  def newUpdateCellsRequest(): UpdateCellsRequest
   
   // Create a new instance of UpdateChartSpecRequest
-  def newUpdateChartSpecRequest(): UpdateChartSpecRequest = js.native
+  def newUpdateChartSpecRequest(): UpdateChartSpecRequest
   
   // Create a new instance of UpdateConditionalFormatRuleRequest
-  def newUpdateConditionalFormatRuleRequest(): UpdateConditionalFormatRuleRequest = js.native
+  def newUpdateConditionalFormatRuleRequest(): UpdateConditionalFormatRuleRequest
   
   // Create a new instance of UpdateDeveloperMetadataRequest
-  def newUpdateDeveloperMetadataRequest(): UpdateDeveloperMetadataRequest = js.native
+  def newUpdateDeveloperMetadataRequest(): UpdateDeveloperMetadataRequest
   
   // Create a new instance of UpdateDimensionGroupRequest
-  def newUpdateDimensionGroupRequest(): UpdateDimensionGroupRequest = js.native
+  def newUpdateDimensionGroupRequest(): UpdateDimensionGroupRequest
   
   // Create a new instance of UpdateDimensionPropertiesRequest
-  def newUpdateDimensionPropertiesRequest(): UpdateDimensionPropertiesRequest = js.native
+  def newUpdateDimensionPropertiesRequest(): UpdateDimensionPropertiesRequest
   
   // Create a new instance of UpdateEmbeddedObjectPositionRequest
-  def newUpdateEmbeddedObjectPositionRequest(): UpdateEmbeddedObjectPositionRequest = js.native
+  def newUpdateEmbeddedObjectPositionRequest(): UpdateEmbeddedObjectPositionRequest
   
   // Create a new instance of UpdateFilterViewRequest
-  def newUpdateFilterViewRequest(): UpdateFilterViewRequest = js.native
+  def newUpdateFilterViewRequest(): UpdateFilterViewRequest
   
   // Create a new instance of UpdateNamedRangeRequest
-  def newUpdateNamedRangeRequest(): UpdateNamedRangeRequest = js.native
+  def newUpdateNamedRangeRequest(): UpdateNamedRangeRequest
   
   // Create a new instance of UpdateProtectedRangeRequest
-  def newUpdateProtectedRangeRequest(): UpdateProtectedRangeRequest = js.native
+  def newUpdateProtectedRangeRequest(): UpdateProtectedRangeRequest
   
   // Create a new instance of UpdateSheetPropertiesRequest
-  def newUpdateSheetPropertiesRequest(): UpdateSheetPropertiesRequest = js.native
+  def newUpdateSheetPropertiesRequest(): UpdateSheetPropertiesRequest
   
   // Create a new instance of UpdateSpreadsheetPropertiesRequest
-  def newUpdateSpreadsheetPropertiesRequest(): UpdateSpreadsheetPropertiesRequest = js.native
+  def newUpdateSpreadsheetPropertiesRequest(): UpdateSpreadsheetPropertiesRequest
   
   // Create a new instance of ValueRange
-  def newValueRange(): ValueRange = js.native
+  def newValueRange(): ValueRange
   
   // Create a new instance of WaterfallChartColumnStyle
-  def newWaterfallChartColumnStyle(): WaterfallChartColumnStyle = js.native
+  def newWaterfallChartColumnStyle(): WaterfallChartColumnStyle
   
   // Create a new instance of WaterfallChartCustomSubtotal
-  def newWaterfallChartCustomSubtotal(): WaterfallChartCustomSubtotal = js.native
+  def newWaterfallChartCustomSubtotal(): WaterfallChartCustomSubtotal
   
   // Create a new instance of WaterfallChartDomain
-  def newWaterfallChartDomain(): WaterfallChartDomain = js.native
+  def newWaterfallChartDomain(): WaterfallChartDomain
   
   // Create a new instance of WaterfallChartSeries
-  def newWaterfallChartSeries(): WaterfallChartSeries = js.native
+  def newWaterfallChartSeries(): WaterfallChartSeries
   
   // Create a new instance of WaterfallChartSpec
-  def newWaterfallChartSpec(): WaterfallChartSpec = js.native
+  def newWaterfallChartSpec(): WaterfallChartSpec
 }
 object Sheets {
   
@@ -797,20 +795,19 @@ object Sheets {
     
     object Spreadsheets {
       
-      @js.native
       trait DeveloperMetadataCollection extends StObject {
         
         // Returns the developer metadata with the specified ID.
         // The caller must specify the spreadsheet ID and the developer metadata's
         // unique metadataId.
-        def get(spreadsheetId: String, metadataId: Double): DeveloperMetadata = js.native
+        def get(spreadsheetId: String, metadataId: Double): DeveloperMetadata
         
         // Returns all developer metadata matching the specified DataFilter.
         // If the provided DataFilter represents a DeveloperMetadataLookup object,
         // this will return all DeveloperMetadata entries selected by it. If the
         // DataFilter represents a location in a spreadsheet, this will return all
         // developer metadata associated with locations intersecting that region.
-        def search(resource: SearchDeveloperMetadataRequest, spreadsheetId: String): SearchDeveloperMetadataResponse = js.native
+        def search(resource: SearchDeveloperMetadataRequest, spreadsheetId: String): SearchDeveloperMetadataResponse
       }
       object DeveloperMetadataCollection {
         
@@ -834,12 +831,11 @@ object Sheets {
         }
       }
       
-      @js.native
       trait SheetsCollection extends StObject {
         
         // Copies a single sheet from a spreadsheet to another spreadsheet.
         // Returns the properties of the newly created sheet.
-        def copyTo(resource: CopySheetToAnotherSpreadsheetRequest, spreadsheetId: String, sheetId: Double): SheetProperties = js.native
+        def copyTo(resource: CopySheetToAnotherSpreadsheetRequest, spreadsheetId: String, sheetId: Double): SheetProperties
       }
       object SheetsCollection {
         
@@ -1039,10 +1035,9 @@ object Sheets {
   
   object Schema {
     
-    @js.native
     trait AddBandingRequest extends StObject {
       
-      var bandedRange: js.UndefOr[BandedRange] = js.native
+      var bandedRange: js.UndefOr[BandedRange] = js.undefined
     }
     object AddBandingRequest {
       
@@ -1063,10 +1058,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddBandingResponse extends StObject {
       
-      var bandedRange: js.UndefOr[BandedRange] = js.native
+      var bandedRange: js.UndefOr[BandedRange] = js.undefined
     }
     object AddBandingResponse {
       
@@ -1087,10 +1081,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddChartRequest extends StObject {
       
-      var chart: js.UndefOr[EmbeddedChart] = js.native
+      var chart: js.UndefOr[EmbeddedChart] = js.undefined
     }
     object AddChartRequest {
       
@@ -1111,10 +1104,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddChartResponse extends StObject {
       
-      var chart: js.UndefOr[EmbeddedChart] = js.native
+      var chart: js.UndefOr[EmbeddedChart] = js.undefined
     }
     object AddChartResponse {
       
@@ -1135,12 +1127,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddConditionalFormatRuleRequest extends StObject {
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var rule: js.UndefOr[ConditionalFormatRule] = js.native
+      var rule: js.UndefOr[ConditionalFormatRule] = js.undefined
     }
     object AddConditionalFormatRuleRequest {
       
@@ -1167,10 +1158,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddDimensionGroupRequest extends StObject {
       
-      var range: js.UndefOr[DimensionRange] = js.native
+      var range: js.UndefOr[DimensionRange] = js.undefined
     }
     object AddDimensionGroupRequest {
       
@@ -1191,10 +1181,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddDimensionGroupResponse extends StObject {
       
-      var dimensionGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
+      var dimensionGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
     }
     object AddDimensionGroupResponse {
       
@@ -1218,10 +1207,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddFilterViewRequest extends StObject {
       
-      var filter: js.UndefOr[FilterView] = js.native
+      var filter: js.UndefOr[FilterView] = js.undefined
     }
     object AddFilterViewRequest {
       
@@ -1242,10 +1230,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddFilterViewResponse extends StObject {
       
-      var filter: js.UndefOr[FilterView] = js.native
+      var filter: js.UndefOr[FilterView] = js.undefined
     }
     object AddFilterViewResponse {
       
@@ -1266,10 +1253,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddNamedRangeRequest extends StObject {
       
-      var namedRange: js.UndefOr[NamedRange] = js.native
+      var namedRange: js.UndefOr[NamedRange] = js.undefined
     }
     object AddNamedRangeRequest {
       
@@ -1290,10 +1276,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddNamedRangeResponse extends StObject {
       
-      var namedRange: js.UndefOr[NamedRange] = js.native
+      var namedRange: js.UndefOr[NamedRange] = js.undefined
     }
     object AddNamedRangeResponse {
       
@@ -1314,10 +1299,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddProtectedRangeRequest extends StObject {
       
-      var protectedRange: js.UndefOr[ProtectedRange] = js.native
+      var protectedRange: js.UndefOr[ProtectedRange] = js.undefined
     }
     object AddProtectedRangeRequest {
       
@@ -1338,10 +1322,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddProtectedRangeResponse extends StObject {
       
-      var protectedRange: js.UndefOr[ProtectedRange] = js.native
+      var protectedRange: js.UndefOr[ProtectedRange] = js.undefined
     }
     object AddProtectedRangeResponse {
       
@@ -1362,10 +1345,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddSheetRequest extends StObject {
       
-      var properties: js.UndefOr[SheetProperties] = js.native
+      var properties: js.UndefOr[SheetProperties] = js.undefined
     }
     object AddSheetRequest {
       
@@ -1386,10 +1368,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AddSheetResponse extends StObject {
       
-      var properties: js.UndefOr[SheetProperties] = js.native
+      var properties: js.UndefOr[SheetProperties] = js.undefined
     }
     object AddSheetResponse {
       
@@ -1410,14 +1391,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AppendCellsRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var rows: js.UndefOr[js.Array[RowData]] = js.native
+      var rows: js.UndefOr[js.Array[RowData]] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object AppendCellsRequest {
       
@@ -1453,14 +1433,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AppendDimensionRequest extends StObject {
       
-      var dimension: js.UndefOr[String] = js.native
+      var dimension: js.UndefOr[String] = js.undefined
       
-      var length: js.UndefOr[Double] = js.native
+      var length: js.UndefOr[Double] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object AppendDimensionRequest {
       
@@ -1493,14 +1472,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AppendValuesResponse extends StObject {
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var tableRange: js.UndefOr[String] = js.native
+      var tableRange: js.UndefOr[String] = js.undefined
       
-      var updates: js.UndefOr[UpdateValuesResponse] = js.native
+      var updates: js.UndefOr[UpdateValuesResponse] = js.undefined
     }
     object AppendValuesResponse {
       
@@ -1533,14 +1511,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AutoFillRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var sourceAndDestination: js.UndefOr[SourceAndDestination] = js.native
+      var sourceAndDestination: js.UndefOr[SourceAndDestination] = js.undefined
       
-      var useAlternateSeries: js.UndefOr[Boolean] = js.native
+      var useAlternateSeries: js.UndefOr[Boolean] = js.undefined
     }
     object AutoFillRequest {
       
@@ -1573,10 +1550,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait AutoResizeDimensionsRequest extends StObject {
       
-      var dimensions: js.UndefOr[DimensionRange] = js.native
+      var dimensions: js.UndefOr[DimensionRange] = js.undefined
     }
     object AutoResizeDimensionsRequest {
       
@@ -1597,16 +1573,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BandedRange extends StObject {
       
-      var bandedRangeId: js.UndefOr[Double] = js.native
+      var bandedRangeId: js.UndefOr[Double] = js.undefined
       
-      var columnProperties: js.UndefOr[BandingProperties] = js.native
+      var columnProperties: js.UndefOr[BandingProperties] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var rowProperties: js.UndefOr[BandingProperties] = js.native
+      var rowProperties: js.UndefOr[BandingProperties] = js.undefined
     }
     object BandedRange {
       
@@ -1645,16 +1620,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BandingProperties extends StObject {
       
-      var firstBandColor: js.UndefOr[Color] = js.native
+      var firstBandColor: js.UndefOr[Color] = js.undefined
       
-      var footerColor: js.UndefOr[Color] = js.native
+      var footerColor: js.UndefOr[Color] = js.undefined
       
-      var headerColor: js.UndefOr[Color] = js.native
+      var headerColor: js.UndefOr[Color] = js.undefined
       
-      var secondBandColor: js.UndefOr[Color] = js.native
+      var secondBandColor: js.UndefOr[Color] = js.undefined
     }
     object BandingProperties {
       
@@ -1693,16 +1667,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BasicChartAxis extends StObject {
       
-      var format: js.UndefOr[TextFormat] = js.native
+      var format: js.UndefOr[TextFormat] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var titleTextPosition: js.UndefOr[TextPosition] = js.native
+      var titleTextPosition: js.UndefOr[TextPosition] = js.undefined
     }
     object BasicChartAxis {
       
@@ -1741,12 +1714,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BasicChartDomain extends StObject {
       
-      var domain: js.UndefOr[ChartData] = js.native
+      var domain: js.UndefOr[ChartData] = js.undefined
       
-      var reversed: js.UndefOr[Boolean] = js.native
+      var reversed: js.UndefOr[Boolean] = js.undefined
     }
     object BasicChartDomain {
       
@@ -1773,18 +1745,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BasicChartSeries extends StObject {
       
-      var color: js.UndefOr[Color] = js.native
+      var color: js.UndefOr[Color] = js.undefined
       
-      var lineStyle: js.UndefOr[LineStyle] = js.native
+      var lineStyle: js.UndefOr[LineStyle] = js.undefined
       
-      var series: js.UndefOr[ChartData] = js.native
+      var series: js.UndefOr[ChartData] = js.undefined
       
-      var targetAxis: js.UndefOr[String] = js.native
+      var targetAxis: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object BasicChartSeries {
       
@@ -1829,30 +1800,29 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BasicChartSpec extends StObject {
       
-      var axis: js.UndefOr[js.Array[BasicChartAxis]] = js.native
+      var axis: js.UndefOr[js.Array[BasicChartAxis]] = js.undefined
       
-      var chartType: js.UndefOr[String] = js.native
+      var chartType: js.UndefOr[String] = js.undefined
       
-      var compareMode: js.UndefOr[String] = js.native
+      var compareMode: js.UndefOr[String] = js.undefined
       
-      var domains: js.UndefOr[js.Array[BasicChartDomain]] = js.native
+      var domains: js.UndefOr[js.Array[BasicChartDomain]] = js.undefined
       
-      var headerCount: js.UndefOr[Double] = js.native
+      var headerCount: js.UndefOr[Double] = js.undefined
       
-      var interpolateNulls: js.UndefOr[Boolean] = js.native
+      var interpolateNulls: js.UndefOr[Boolean] = js.undefined
       
-      var legendPosition: js.UndefOr[String] = js.native
+      var legendPosition: js.UndefOr[String] = js.undefined
       
-      var lineSmoothing: js.UndefOr[Boolean] = js.native
+      var lineSmoothing: js.UndefOr[Boolean] = js.undefined
       
-      var series: js.UndefOr[js.Array[BasicChartSeries]] = js.native
+      var series: js.UndefOr[js.Array[BasicChartSeries]] = js.undefined
       
-      var stackedType: js.UndefOr[String] = js.native
+      var stackedType: js.UndefOr[String] = js.undefined
       
-      var threeDimensional: js.UndefOr[Boolean] = js.native
+      var threeDimensional: js.UndefOr[Boolean] = js.undefined
     }
     object BasicChartSpec {
       
@@ -1942,14 +1912,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BasicFilter extends StObject {
       
-      var criteria: js.UndefOr[js.Object] = js.native
+      var criteria: js.UndefOr[js.Object] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+      var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
     }
     object BasicFilter {
       
@@ -1985,10 +1954,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchClearValuesByDataFilterRequest extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
     }
     object BatchClearValuesByDataFilterRequest {
       
@@ -2012,12 +1980,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchClearValuesByDataFilterResponse extends StObject {
       
-      var clearedRanges: js.UndefOr[js.Array[String]] = js.native
+      var clearedRanges: js.UndefOr[js.Array[String]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object BatchClearValuesByDataFilterResponse {
       
@@ -2047,10 +2014,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchClearValuesRequest extends StObject {
       
-      var ranges: js.UndefOr[js.Array[String]] = js.native
+      var ranges: js.UndefOr[js.Array[String]] = js.undefined
     }
     object BatchClearValuesRequest {
       
@@ -2074,12 +2040,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchClearValuesResponse extends StObject {
       
-      var clearedRanges: js.UndefOr[js.Array[String]] = js.native
+      var clearedRanges: js.UndefOr[js.Array[String]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object BatchClearValuesResponse {
       
@@ -2109,16 +2074,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchGetValuesByDataFilterRequest extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
       
-      var dateTimeRenderOption: js.UndefOr[String] = js.native
+      var dateTimeRenderOption: js.UndefOr[String] = js.undefined
       
-      var majorDimension: js.UndefOr[String] = js.native
+      var majorDimension: js.UndefOr[String] = js.undefined
       
-      var valueRenderOption: js.UndefOr[String] = js.native
+      var valueRenderOption: js.UndefOr[String] = js.undefined
     }
     object BatchGetValuesByDataFilterRequest {
       
@@ -2160,12 +2124,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchGetValuesByDataFilterResponse extends StObject {
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var valueRanges: js.UndefOr[js.Array[MatchedValueRange]] = js.native
+      var valueRanges: js.UndefOr[js.Array[MatchedValueRange]] = js.undefined
     }
     object BatchGetValuesByDataFilterResponse {
       
@@ -2195,12 +2158,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchGetValuesResponse extends StObject {
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var valueRanges: js.UndefOr[js.Array[ValueRange]] = js.native
+      var valueRanges: js.UndefOr[js.Array[ValueRange]] = js.undefined
     }
     object BatchGetValuesResponse {
       
@@ -2230,16 +2192,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchUpdateSpreadsheetRequest extends StObject {
       
-      var includeSpreadsheetInResponse: js.UndefOr[Boolean] = js.native
+      var includeSpreadsheetInResponse: js.UndefOr[Boolean] = js.undefined
       
-      var requests: js.UndefOr[js.Array[Request]] = js.native
+      var requests: js.UndefOr[js.Array[Request]] = js.undefined
       
-      var responseIncludeGridData: js.UndefOr[Boolean] = js.native
+      var responseIncludeGridData: js.UndefOr[Boolean] = js.undefined
       
-      var responseRanges: js.UndefOr[js.Array[String]] = js.native
+      var responseRanges: js.UndefOr[js.Array[String]] = js.undefined
     }
     object BatchUpdateSpreadsheetRequest {
       
@@ -2284,14 +2245,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchUpdateSpreadsheetResponse extends StObject {
       
-      var replies: js.UndefOr[js.Array[Response]] = js.native
+      var replies: js.UndefOr[js.Array[Response]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var updatedSpreadsheet: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet] = js.native
+      var updatedSpreadsheet: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet] = js.undefined
     }
     object BatchUpdateSpreadsheetResponse {
       
@@ -2327,18 +2287,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchUpdateValuesByDataFilterRequest extends StObject {
       
-      var data: js.UndefOr[js.Array[DataFilterValueRange]] = js.native
+      var data: js.UndefOr[js.Array[DataFilterValueRange]] = js.undefined
       
-      var includeValuesInResponse: js.UndefOr[Boolean] = js.native
+      var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
       
-      var responseDateTimeRenderOption: js.UndefOr[String] = js.native
+      var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
       
-      var responseValueRenderOption: js.UndefOr[String] = js.native
+      var responseValueRenderOption: js.UndefOr[String] = js.undefined
       
-      var valueInputOption: js.UndefOr[String] = js.native
+      var valueInputOption: js.UndefOr[String] = js.undefined
     }
     object BatchUpdateValuesByDataFilterRequest {
       
@@ -2386,20 +2345,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchUpdateValuesByDataFilterResponse extends StObject {
       
-      var responses: js.UndefOr[js.Array[UpdateValuesByDataFilterResponse]] = js.native
+      var responses: js.UndefOr[js.Array[UpdateValuesByDataFilterResponse]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var totalUpdatedCells: js.UndefOr[Double] = js.native
+      var totalUpdatedCells: js.UndefOr[Double] = js.undefined
       
-      var totalUpdatedColumns: js.UndefOr[Double] = js.native
+      var totalUpdatedColumns: js.UndefOr[Double] = js.undefined
       
-      var totalUpdatedRows: js.UndefOr[Double] = js.native
+      var totalUpdatedRows: js.UndefOr[Double] = js.undefined
       
-      var totalUpdatedSheets: js.UndefOr[Double] = js.native
+      var totalUpdatedSheets: js.UndefOr[Double] = js.undefined
     }
     object BatchUpdateValuesByDataFilterResponse {
       
@@ -2453,18 +2411,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchUpdateValuesRequest extends StObject {
       
-      var data: js.UndefOr[js.Array[ValueRange]] = js.native
+      var data: js.UndefOr[js.Array[ValueRange]] = js.undefined
       
-      var includeValuesInResponse: js.UndefOr[Boolean] = js.native
+      var includeValuesInResponse: js.UndefOr[Boolean] = js.undefined
       
-      var responseDateTimeRenderOption: js.UndefOr[String] = js.native
+      var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
       
-      var responseValueRenderOption: js.UndefOr[String] = js.native
+      var responseValueRenderOption: js.UndefOr[String] = js.undefined
       
-      var valueInputOption: js.UndefOr[String] = js.native
+      var valueInputOption: js.UndefOr[String] = js.undefined
     }
     object BatchUpdateValuesRequest {
       
@@ -2512,20 +2469,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BatchUpdateValuesResponse extends StObject {
       
-      var responses: js.UndefOr[js.Array[UpdateValuesResponse]] = js.native
+      var responses: js.UndefOr[js.Array[UpdateValuesResponse]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var totalUpdatedCells: js.UndefOr[Double] = js.native
+      var totalUpdatedCells: js.UndefOr[Double] = js.undefined
       
-      var totalUpdatedColumns: js.UndefOr[Double] = js.native
+      var totalUpdatedColumns: js.UndefOr[Double] = js.undefined
       
-      var totalUpdatedRows: js.UndefOr[Double] = js.native
+      var totalUpdatedRows: js.UndefOr[Double] = js.undefined
       
-      var totalUpdatedSheets: js.UndefOr[Double] = js.native
+      var totalUpdatedSheets: js.UndefOr[Double] = js.undefined
     }
     object BatchUpdateValuesResponse {
       
@@ -2579,12 +2535,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BooleanCondition extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var values: js.UndefOr[js.Array[ConditionValue]] = js.native
+      var values: js.UndefOr[js.Array[ConditionValue]] = js.undefined
     }
     object BooleanCondition {
       
@@ -2614,12 +2569,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BooleanRule extends StObject {
       
-      var condition: js.UndefOr[BooleanCondition] = js.native
+      var condition: js.UndefOr[BooleanCondition] = js.undefined
       
-      var format: js.UndefOr[CellFormat] = js.native
+      var format: js.UndefOr[CellFormat] = js.undefined
     }
     object BooleanRule {
       
@@ -2646,14 +2600,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Border extends StObject {
       
-      var color: js.UndefOr[Color] = js.native
+      var color: js.UndefOr[Color] = js.undefined
       
-      var style: js.UndefOr[String] = js.native
+      var style: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Border {
       
@@ -2686,16 +2639,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Borders extends StObject {
       
-      var bottom: js.UndefOr[Border] = js.native
+      var bottom: js.UndefOr[Border] = js.undefined
       
-      var left: js.UndefOr[Border] = js.native
+      var left: js.UndefOr[Border] = js.undefined
       
-      var right: js.UndefOr[Border] = js.native
+      var right: js.UndefOr[Border] = js.undefined
       
-      var top: js.UndefOr[Border] = js.native
+      var top: js.UndefOr[Border] = js.undefined
     }
     object Borders {
       
@@ -2734,30 +2686,29 @@ object Sheets {
       }
     }
     
-    @js.native
     trait BubbleChartSpec extends StObject {
       
-      var bubbleBorderColor: js.UndefOr[Color] = js.native
+      var bubbleBorderColor: js.UndefOr[Color] = js.undefined
       
-      var bubbleLabels: js.UndefOr[ChartData] = js.native
+      var bubbleLabels: js.UndefOr[ChartData] = js.undefined
       
-      var bubbleMaxRadiusSize: js.UndefOr[Double] = js.native
+      var bubbleMaxRadiusSize: js.UndefOr[Double] = js.undefined
       
-      var bubbleMinRadiusSize: js.UndefOr[Double] = js.native
+      var bubbleMinRadiusSize: js.UndefOr[Double] = js.undefined
       
-      var bubbleOpacity: js.UndefOr[Double] = js.native
+      var bubbleOpacity: js.UndefOr[Double] = js.undefined
       
-      var bubbleSizes: js.UndefOr[ChartData] = js.native
+      var bubbleSizes: js.UndefOr[ChartData] = js.undefined
       
-      var bubbleTextStyle: js.UndefOr[TextFormat] = js.native
+      var bubbleTextStyle: js.UndefOr[TextFormat] = js.undefined
       
-      var domain: js.UndefOr[ChartData] = js.native
+      var domain: js.UndefOr[ChartData] = js.undefined
       
-      var groupIds: js.UndefOr[ChartData] = js.native
+      var groupIds: js.UndefOr[ChartData] = js.undefined
       
-      var legendPosition: js.UndefOr[String] = js.native
+      var legendPosition: js.UndefOr[String] = js.undefined
       
-      var series: js.UndefOr[ChartData] = js.native
+      var series: js.UndefOr[ChartData] = js.undefined
     }
     object BubbleChartSpec {
       
@@ -2838,12 +2789,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CandlestickChartSpec extends StObject {
       
-      var data: js.UndefOr[js.Array[CandlestickData]] = js.native
+      var data: js.UndefOr[js.Array[CandlestickData]] = js.undefined
       
-      var domain: js.UndefOr[CandlestickDomain] = js.native
+      var domain: js.UndefOr[CandlestickDomain] = js.undefined
     }
     object CandlestickChartSpec {
       
@@ -2873,16 +2823,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CandlestickData extends StObject {
       
-      var closeSeries: js.UndefOr[CandlestickSeries] = js.native
+      var closeSeries: js.UndefOr[CandlestickSeries] = js.undefined
       
-      var highSeries: js.UndefOr[CandlestickSeries] = js.native
+      var highSeries: js.UndefOr[CandlestickSeries] = js.undefined
       
-      var lowSeries: js.UndefOr[CandlestickSeries] = js.native
+      var lowSeries: js.UndefOr[CandlestickSeries] = js.undefined
       
-      var openSeries: js.UndefOr[CandlestickSeries] = js.native
+      var openSeries: js.UndefOr[CandlestickSeries] = js.undefined
     }
     object CandlestickData {
       
@@ -2921,12 +2870,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CandlestickDomain extends StObject {
       
-      var data: js.UndefOr[ChartData] = js.native
+      var data: js.UndefOr[ChartData] = js.undefined
       
-      var reversed: js.UndefOr[Boolean] = js.native
+      var reversed: js.UndefOr[Boolean] = js.undefined
     }
     object CandlestickDomain {
       
@@ -2953,10 +2901,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CandlestickSeries extends StObject {
       
-      var data: js.UndefOr[ChartData] = js.native
+      var data: js.UndefOr[ChartData] = js.undefined
     }
     object CandlestickSeries {
       
@@ -2977,28 +2924,27 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CellData extends StObject {
       
-      var dataValidation: js.UndefOr[DataValidationRule] = js.native
+      var dataValidation: js.UndefOr[DataValidationRule] = js.undefined
       
-      var effectiveFormat: js.UndefOr[CellFormat] = js.native
+      var effectiveFormat: js.UndefOr[CellFormat] = js.undefined
       
-      var effectiveValue: js.UndefOr[ExtendedValue] = js.native
+      var effectiveValue: js.UndefOr[ExtendedValue] = js.undefined
       
-      var formattedValue: js.UndefOr[String] = js.native
+      var formattedValue: js.UndefOr[String] = js.undefined
       
-      var hyperlink: js.UndefOr[String] = js.native
+      var hyperlink: js.UndefOr[String] = js.undefined
       
-      var note: js.UndefOr[String] = js.native
+      var note: js.UndefOr[String] = js.undefined
       
-      var pivotTable: js.UndefOr[PivotTable] = js.native
+      var pivotTable: js.UndefOr[PivotTable] = js.undefined
       
-      var textFormatRuns: js.UndefOr[js.Array[TextFormatRun]] = js.native
+      var textFormatRuns: js.UndefOr[js.Array[TextFormatRun]] = js.undefined
       
-      var userEnteredFormat: js.UndefOr[CellFormat] = js.native
+      var userEnteredFormat: js.UndefOr[CellFormat] = js.undefined
       
-      var userEnteredValue: js.UndefOr[ExtendedValue] = js.native
+      var userEnteredValue: js.UndefOr[ExtendedValue] = js.undefined
     }
     object CellData {
       
@@ -3076,30 +3022,29 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CellFormat extends StObject {
       
-      var backgroundColor: js.UndefOr[Color] = js.native
+      var backgroundColor: js.UndefOr[Color] = js.undefined
       
-      var borders: js.UndefOr[Borders] = js.native
+      var borders: js.UndefOr[Borders] = js.undefined
       
-      var horizontalAlignment: js.UndefOr[String] = js.native
+      var horizontalAlignment: js.UndefOr[String] = js.undefined
       
-      var hyperlinkDisplayType: js.UndefOr[String] = js.native
+      var hyperlinkDisplayType: js.UndefOr[String] = js.undefined
       
-      var numberFormat: js.UndefOr[NumberFormat] = js.native
+      var numberFormat: js.UndefOr[NumberFormat] = js.undefined
       
-      var padding: js.UndefOr[Padding] = js.native
+      var padding: js.UndefOr[Padding] = js.undefined
       
-      var textDirection: js.UndefOr[String] = js.native
+      var textDirection: js.UndefOr[String] = js.undefined
       
-      var textFormat: js.UndefOr[TextFormat] = js.native
+      var textFormat: js.UndefOr[TextFormat] = js.undefined
       
-      var textRotation: js.UndefOr[TextRotation] = js.native
+      var textRotation: js.UndefOr[TextRotation] = js.undefined
       
-      var verticalAlignment: js.UndefOr[String] = js.native
+      var verticalAlignment: js.UndefOr[String] = js.undefined
       
-      var wrapStrategy: js.UndefOr[String] = js.native
+      var wrapStrategy: js.UndefOr[String] = js.undefined
     }
     object CellFormat {
       
@@ -3180,10 +3125,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ChartData extends StObject {
       
-      var sourceRange: js.UndefOr[ChartSourceRange] = js.native
+      var sourceRange: js.UndefOr[ChartSourceRange] = js.undefined
     }
     object ChartData {
       
@@ -3204,10 +3148,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ChartSourceRange extends StObject {
       
-      var sources: js.UndefOr[js.Array[GridRange]] = js.native
+      var sources: js.UndefOr[js.Array[GridRange]] = js.undefined
     }
     object ChartSourceRange {
       
@@ -3231,46 +3174,45 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ChartSpec extends StObject {
       
-      var altText: js.UndefOr[String] = js.native
+      var altText: js.UndefOr[String] = js.undefined
       
-      var backgroundColor: js.UndefOr[Color] = js.native
+      var backgroundColor: js.UndefOr[Color] = js.undefined
       
-      var basicChart: js.UndefOr[BasicChartSpec] = js.native
+      var basicChart: js.UndefOr[BasicChartSpec] = js.undefined
       
-      var bubbleChart: js.UndefOr[BubbleChartSpec] = js.native
+      var bubbleChart: js.UndefOr[BubbleChartSpec] = js.undefined
       
-      var candlestickChart: js.UndefOr[CandlestickChartSpec] = js.native
+      var candlestickChart: js.UndefOr[CandlestickChartSpec] = js.undefined
       
-      var fontName: js.UndefOr[String] = js.native
+      var fontName: js.UndefOr[String] = js.undefined
       
-      var hiddenDimensionStrategy: js.UndefOr[String] = js.native
+      var hiddenDimensionStrategy: js.UndefOr[String] = js.undefined
       
-      var histogramChart: js.UndefOr[HistogramChartSpec] = js.native
+      var histogramChart: js.UndefOr[HistogramChartSpec] = js.undefined
       
-      var maximized: js.UndefOr[Boolean] = js.native
+      var maximized: js.UndefOr[Boolean] = js.undefined
       
-      var orgChart: js.UndefOr[OrgChartSpec] = js.native
+      var orgChart: js.UndefOr[OrgChartSpec] = js.undefined
       
-      var pieChart: js.UndefOr[PieChartSpec] = js.native
+      var pieChart: js.UndefOr[PieChartSpec] = js.undefined
       
-      var subtitle: js.UndefOr[String] = js.native
+      var subtitle: js.UndefOr[String] = js.undefined
       
-      var subtitleTextFormat: js.UndefOr[TextFormat] = js.native
+      var subtitleTextFormat: js.UndefOr[TextFormat] = js.undefined
       
-      var subtitleTextPosition: js.UndefOr[TextPosition] = js.native
+      var subtitleTextPosition: js.UndefOr[TextPosition] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var titleTextFormat: js.UndefOr[TextFormat] = js.native
+      var titleTextFormat: js.UndefOr[TextFormat] = js.undefined
       
-      var titleTextPosition: js.UndefOr[TextPosition] = js.native
+      var titleTextPosition: js.UndefOr[TextPosition] = js.undefined
       
-      var treemapChart: js.UndefOr[TreemapChartSpec] = js.native
+      var treemapChart: js.UndefOr[TreemapChartSpec] = js.undefined
       
-      var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.native
+      var waterfallChart: js.UndefOr[WaterfallChartSpec] = js.undefined
     }
     object ChartSpec {
       
@@ -3399,10 +3341,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ClearBasicFilterRequest extends StObject {
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object ClearBasicFilterRequest {
       
@@ -3423,12 +3364,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ClearValuesResponse extends StObject {
       
-      var clearedRange: js.UndefOr[String] = js.native
+      var clearedRange: js.UndefOr[String] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
     }
     object ClearValuesResponse {
       
@@ -3455,16 +3395,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Color extends StObject {
       
-      var alpha: js.UndefOr[Double] = js.native
+      var alpha: js.UndefOr[Double] = js.undefined
       
-      var blue: js.UndefOr[Double] = js.native
+      var blue: js.UndefOr[Double] = js.undefined
       
-      var green: js.UndefOr[Double] = js.native
+      var green: js.UndefOr[Double] = js.undefined
       
-      var red: js.UndefOr[Double] = js.native
+      var red: js.UndefOr[Double] = js.undefined
     }
     object Color {
       
@@ -3503,12 +3442,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ConditionValue extends StObject {
       
-      var relativeDate: js.UndefOr[String] = js.native
+      var relativeDate: js.UndefOr[String] = js.undefined
       
-      var userEnteredValue: js.UndefOr[String] = js.native
+      var userEnteredValue: js.UndefOr[String] = js.undefined
     }
     object ConditionValue {
       
@@ -3535,14 +3473,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ConditionalFormatRule extends StObject {
       
-      var booleanRule: js.UndefOr[BooleanRule] = js.native
+      var booleanRule: js.UndefOr[BooleanRule] = js.undefined
       
-      var gradientRule: js.UndefOr[GradientRule] = js.native
+      var gradientRule: js.UndefOr[GradientRule] = js.undefined
       
-      var ranges: js.UndefOr[js.Array[GridRange]] = js.native
+      var ranges: js.UndefOr[js.Array[GridRange]] = js.undefined
     }
     object ConditionalFormatRule {
       
@@ -3578,16 +3515,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CopyPasteRequest extends StObject {
       
-      var destination: js.UndefOr[GridRange] = js.native
+      var destination: js.UndefOr[GridRange] = js.undefined
       
-      var pasteOrientation: js.UndefOr[String] = js.native
+      var pasteOrientation: js.UndefOr[String] = js.undefined
       
-      var pasteType: js.UndefOr[String] = js.native
+      var pasteType: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[GridRange] = js.native
+      var source: js.UndefOr[GridRange] = js.undefined
     }
     object CopyPasteRequest {
       
@@ -3626,10 +3562,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CopySheetToAnotherSpreadsheetRequest extends StObject {
       
-      var destinationSpreadsheetId: js.UndefOr[String] = js.native
+      var destinationSpreadsheetId: js.UndefOr[String] = js.undefined
     }
     object CopySheetToAnotherSpreadsheetRequest {
       
@@ -3650,10 +3585,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CreateDeveloperMetadataRequest extends StObject {
       
-      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.native
+      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.undefined
     }
     object CreateDeveloperMetadataRequest {
       
@@ -3674,10 +3608,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CreateDeveloperMetadataResponse extends StObject {
       
-      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.native
+      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.undefined
     }
     object CreateDeveloperMetadataResponse {
       
@@ -3698,14 +3631,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait CutPasteRequest extends StObject {
       
-      var destination: js.UndefOr[GridCoordinate] = js.native
+      var destination: js.UndefOr[GridCoordinate] = js.undefined
       
-      var pasteType: js.UndefOr[String] = js.native
+      var pasteType: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[GridRange] = js.native
+      var source: js.UndefOr[GridRange] = js.undefined
     }
     object CutPasteRequest {
       
@@ -3738,14 +3670,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DataFilter extends StObject {
       
-      var a1Range: js.UndefOr[String] = js.native
+      var a1Range: js.UndefOr[String] = js.undefined
       
-      var developerMetadataLookup: js.UndefOr[DeveloperMetadataLookup] = js.native
+      var developerMetadataLookup: js.UndefOr[DeveloperMetadataLookup] = js.undefined
       
-      var gridRange: js.UndefOr[GridRange] = js.native
+      var gridRange: js.UndefOr[GridRange] = js.undefined
     }
     object DataFilter {
       
@@ -3778,14 +3709,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DataFilterValueRange extends StObject {
       
-      var dataFilter: js.UndefOr[DataFilter] = js.native
+      var dataFilter: js.UndefOr[DataFilter] = js.undefined
       
-      var majorDimension: js.UndefOr[String] = js.native
+      var majorDimension: js.UndefOr[String] = js.undefined
       
-      var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+      var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
     }
     object DataFilterValueRange {
       
@@ -3811,7 +3741,7 @@ object Sheets {
         def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
         
         @scala.inline
-        def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -3821,16 +3751,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DataValidationRule extends StObject {
       
-      var condition: js.UndefOr[BooleanCondition] = js.native
+      var condition: js.UndefOr[BooleanCondition] = js.undefined
       
-      var inputMessage: js.UndefOr[String] = js.native
+      var inputMessage: js.UndefOr[String] = js.undefined
       
-      var showCustomUi: js.UndefOr[Boolean] = js.native
+      var showCustomUi: js.UndefOr[Boolean] = js.undefined
       
-      var strict: js.UndefOr[Boolean] = js.native
+      var strict: js.UndefOr[Boolean] = js.undefined
     }
     object DataValidationRule {
       
@@ -3869,10 +3798,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DateTimeRule extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object DateTimeRule {
       
@@ -3893,10 +3821,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteBandingRequest extends StObject {
       
-      var bandedRangeId: js.UndefOr[Double] = js.native
+      var bandedRangeId: js.UndefOr[Double] = js.undefined
     }
     object DeleteBandingRequest {
       
@@ -3917,12 +3844,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteConditionalFormatRuleRequest extends StObject {
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object DeleteConditionalFormatRuleRequest {
       
@@ -3949,10 +3875,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteConditionalFormatRuleResponse extends StObject {
       
-      var rule: js.UndefOr[ConditionalFormatRule] = js.native
+      var rule: js.UndefOr[ConditionalFormatRule] = js.undefined
     }
     object DeleteConditionalFormatRuleResponse {
       
@@ -3973,10 +3898,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteDeveloperMetadataRequest extends StObject {
       
-      var dataFilter: js.UndefOr[DataFilter] = js.native
+      var dataFilter: js.UndefOr[DataFilter] = js.undefined
     }
     object DeleteDeveloperMetadataRequest {
       
@@ -3997,10 +3921,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteDeveloperMetadataResponse extends StObject {
       
-      var deletedDeveloperMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+      var deletedDeveloperMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
     }
     object DeleteDeveloperMetadataResponse {
       
@@ -4024,10 +3947,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteDimensionGroupRequest extends StObject {
       
-      var range: js.UndefOr[DimensionRange] = js.native
+      var range: js.UndefOr[DimensionRange] = js.undefined
     }
     object DeleteDimensionGroupRequest {
       
@@ -4048,10 +3970,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteDimensionGroupResponse extends StObject {
       
-      var dimensionGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
+      var dimensionGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
     }
     object DeleteDimensionGroupResponse {
       
@@ -4075,10 +3996,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteDimensionRequest extends StObject {
       
-      var range: js.UndefOr[DimensionRange] = js.native
+      var range: js.UndefOr[DimensionRange] = js.undefined
     }
     object DeleteDimensionRequest {
       
@@ -4099,10 +4019,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteEmbeddedObjectRequest extends StObject {
       
-      var objectId: js.UndefOr[Double] = js.native
+      var objectId: js.UndefOr[Double] = js.undefined
     }
     object DeleteEmbeddedObjectRequest {
       
@@ -4123,10 +4042,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteFilterViewRequest extends StObject {
       
-      var filterId: js.UndefOr[Double] = js.native
+      var filterId: js.UndefOr[Double] = js.undefined
     }
     object DeleteFilterViewRequest {
       
@@ -4147,10 +4065,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteNamedRangeRequest extends StObject {
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
     }
     object DeleteNamedRangeRequest {
       
@@ -4171,10 +4088,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteProtectedRangeRequest extends StObject {
       
-      var protectedRangeId: js.UndefOr[Double] = js.native
+      var protectedRangeId: js.UndefOr[Double] = js.undefined
     }
     object DeleteProtectedRangeRequest {
       
@@ -4195,12 +4111,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteRangeRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var shiftDimension: js.UndefOr[String] = js.native
+      var shiftDimension: js.UndefOr[String] = js.undefined
     }
     object DeleteRangeRequest {
       
@@ -4227,10 +4142,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeleteSheetRequest extends StObject {
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object DeleteSheetRequest {
       
@@ -4251,18 +4165,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeveloperMetadata extends StObject {
       
-      var location: js.UndefOr[DeveloperMetadataLocation] = js.native
+      var location: js.UndefOr[DeveloperMetadataLocation] = js.undefined
       
-      var metadataId: js.UndefOr[Double] = js.native
+      var metadataId: js.UndefOr[Double] = js.undefined
       
-      var metadataKey: js.UndefOr[String] = js.native
+      var metadataKey: js.UndefOr[String] = js.undefined
       
-      var metadataValue: js.UndefOr[String] = js.native
+      var metadataValue: js.UndefOr[String] = js.undefined
       
-      var visibility: js.UndefOr[String] = js.native
+      var visibility: js.UndefOr[String] = js.undefined
     }
     object DeveloperMetadata {
       
@@ -4307,16 +4220,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeveloperMetadataLocation extends StObject {
       
-      var dimensionRange: js.UndefOr[DimensionRange] = js.native
+      var dimensionRange: js.UndefOr[DimensionRange] = js.undefined
       
-      var locationType: js.UndefOr[String] = js.native
+      var locationType: js.UndefOr[String] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
       
-      var spreadsheet: js.UndefOr[Boolean] = js.native
+      var spreadsheet: js.UndefOr[Boolean] = js.undefined
     }
     object DeveloperMetadataLocation {
       
@@ -4355,22 +4267,21 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DeveloperMetadataLookup extends StObject {
       
-      var locationMatchingStrategy: js.UndefOr[String] = js.native
+      var locationMatchingStrategy: js.UndefOr[String] = js.undefined
       
-      var locationType: js.UndefOr[String] = js.native
+      var locationType: js.UndefOr[String] = js.undefined
       
-      var metadataId: js.UndefOr[Double] = js.native
+      var metadataId: js.UndefOr[Double] = js.undefined
       
-      var metadataKey: js.UndefOr[String] = js.native
+      var metadataKey: js.UndefOr[String] = js.undefined
       
-      var metadataLocation: js.UndefOr[DeveloperMetadataLocation] = js.native
+      var metadataLocation: js.UndefOr[DeveloperMetadataLocation] = js.undefined
       
-      var metadataValue: js.UndefOr[String] = js.native
+      var metadataValue: js.UndefOr[String] = js.undefined
       
-      var visibility: js.UndefOr[String] = js.native
+      var visibility: js.UndefOr[String] = js.undefined
     }
     object DeveloperMetadataLookup {
       
@@ -4427,14 +4338,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DimensionGroup extends StObject {
       
-      var collapsed: js.UndefOr[Boolean] = js.native
+      var collapsed: js.UndefOr[Boolean] = js.undefined
       
-      var depth: js.UndefOr[Double] = js.native
+      var depth: js.UndefOr[Double] = js.undefined
       
-      var range: js.UndefOr[DimensionRange] = js.native
+      var range: js.UndefOr[DimensionRange] = js.undefined
     }
     object DimensionGroup {
       
@@ -4467,16 +4377,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DimensionProperties extends StObject {
       
-      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
       
-      var hiddenByFilter: js.UndefOr[Boolean] = js.native
+      var hiddenByFilter: js.UndefOr[Boolean] = js.undefined
       
-      var hiddenByUser: js.UndefOr[Boolean] = js.native
+      var hiddenByUser: js.UndefOr[Boolean] = js.undefined
       
-      var pixelSize: js.UndefOr[Double] = js.native
+      var pixelSize: js.UndefOr[Double] = js.undefined
     }
     object DimensionProperties {
       
@@ -4518,16 +4427,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DimensionRange extends StObject {
       
-      var dimension: js.UndefOr[String] = js.native
+      var dimension: js.UndefOr[String] = js.undefined
       
-      var endIndex: js.UndefOr[Double] = js.native
+      var endIndex: js.UndefOr[Double] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
     }
     object DimensionRange {
       
@@ -4566,10 +4474,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DuplicateFilterViewRequest extends StObject {
       
-      var filterId: js.UndefOr[Double] = js.native
+      var filterId: js.UndefOr[Double] = js.undefined
     }
     object DuplicateFilterViewRequest {
       
@@ -4590,10 +4497,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DuplicateFilterViewResponse extends StObject {
       
-      var filter: js.UndefOr[FilterView] = js.native
+      var filter: js.UndefOr[FilterView] = js.undefined
     }
     object DuplicateFilterViewResponse {
       
@@ -4614,16 +4520,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DuplicateSheetRequest extends StObject {
       
-      var insertSheetIndex: js.UndefOr[Double] = js.native
+      var insertSheetIndex: js.UndefOr[Double] = js.undefined
       
-      var newSheetId: js.UndefOr[Double] = js.native
+      var newSheetId: js.UndefOr[Double] = js.undefined
       
-      var newSheetName: js.UndefOr[String] = js.native
+      var newSheetName: js.UndefOr[String] = js.undefined
       
-      var sourceSheetId: js.UndefOr[Double] = js.native
+      var sourceSheetId: js.UndefOr[Double] = js.undefined
     }
     object DuplicateSheetRequest {
       
@@ -4662,10 +4567,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait DuplicateSheetResponse extends StObject {
       
-      var properties: js.UndefOr[SheetProperties] = js.native
+      var properties: js.UndefOr[SheetProperties] = js.undefined
     }
     object DuplicateSheetResponse {
       
@@ -4686,14 +4590,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Editors extends StObject {
       
-      var domainUsersCanEdit: js.UndefOr[Boolean] = js.native
+      var domainUsersCanEdit: js.UndefOr[Boolean] = js.undefined
       
-      var groups: js.UndefOr[js.Array[String]] = js.native
+      var groups: js.UndefOr[js.Array[String]] = js.undefined
       
-      var users: js.UndefOr[js.Array[String]] = js.native
+      var users: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Editors {
       
@@ -4732,14 +4635,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait EmbeddedChart extends StObject {
       
-      var chartId: js.UndefOr[Double] = js.native
+      var chartId: js.UndefOr[Double] = js.undefined
       
-      var position: js.UndefOr[EmbeddedObjectPosition] = js.native
+      var position: js.UndefOr[EmbeddedObjectPosition] = js.undefined
       
-      var spec: js.UndefOr[ChartSpec] = js.native
+      var spec: js.UndefOr[ChartSpec] = js.undefined
     }
     object EmbeddedChart {
       
@@ -4772,14 +4674,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait EmbeddedObjectPosition extends StObject {
       
-      var newSheet: js.UndefOr[Boolean] = js.native
+      var newSheet: js.UndefOr[Boolean] = js.undefined
       
-      var overlayPosition: js.UndefOr[OverlayPosition] = js.native
+      var overlayPosition: js.UndefOr[OverlayPosition] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object EmbeddedObjectPosition {
       
@@ -4812,12 +4713,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ErrorValue extends StObject {
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ErrorValue {
       
@@ -4844,18 +4744,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ExtendedValue extends StObject {
       
-      var boolValue: js.UndefOr[Boolean] = js.native
+      var boolValue: js.UndefOr[Boolean] = js.undefined
       
-      var errorValue: js.UndefOr[ErrorValue] = js.native
+      var errorValue: js.UndefOr[ErrorValue] = js.undefined
       
-      var formulaValue: js.UndefOr[String] = js.native
+      var formulaValue: js.UndefOr[String] = js.undefined
       
-      var numberValue: js.UndefOr[Double] = js.native
+      var numberValue: js.UndefOr[Double] = js.undefined
       
-      var stringValue: js.UndefOr[String] = js.native
+      var stringValue: js.UndefOr[String] = js.undefined
     }
     object ExtendedValue {
       
@@ -4900,12 +4799,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait FilterCriteria extends StObject {
       
-      var condition: js.UndefOr[BooleanCondition] = js.native
+      var condition: js.UndefOr[BooleanCondition] = js.undefined
       
-      var hiddenValues: js.UndefOr[js.Array[String]] = js.native
+      var hiddenValues: js.UndefOr[js.Array[String]] = js.undefined
     }
     object FilterCriteria {
       
@@ -4935,20 +4833,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait FilterView extends StObject {
       
-      var criteria: js.UndefOr[js.Object] = js.native
+      var criteria: js.UndefOr[js.Object] = js.undefined
       
-      var filterViewId: js.UndefOr[Double] = js.native
+      var filterViewId: js.UndefOr[Double] = js.undefined
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+      var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object FilterView {
       
@@ -5002,26 +4899,25 @@ object Sheets {
       }
     }
     
-    @js.native
     trait FindReplaceRequest extends StObject {
       
-      var allSheets: js.UndefOr[Boolean] = js.native
+      var allSheets: js.UndefOr[Boolean] = js.undefined
       
-      var find: js.UndefOr[String] = js.native
+      var find: js.UndefOr[String] = js.undefined
       
-      var includeFormulas: js.UndefOr[Boolean] = js.native
+      var includeFormulas: js.UndefOr[Boolean] = js.undefined
       
-      var matchCase: js.UndefOr[Boolean] = js.native
+      var matchCase: js.UndefOr[Boolean] = js.undefined
       
-      var matchEntireCell: js.UndefOr[Boolean] = js.native
+      var matchEntireCell: js.UndefOr[Boolean] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var replacement: js.UndefOr[String] = js.native
+      var replacement: js.UndefOr[String] = js.undefined
       
-      var searchByRegex: js.UndefOr[Boolean] = js.native
+      var searchByRegex: js.UndefOr[Boolean] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object FindReplaceRequest {
       
@@ -5090,18 +4986,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait FindReplaceResponse extends StObject {
       
-      var formulasChanged: js.UndefOr[Double] = js.native
+      var formulasChanged: js.UndefOr[Double] = js.undefined
       
-      var occurrencesChanged: js.UndefOr[Double] = js.native
+      var occurrencesChanged: js.UndefOr[Double] = js.undefined
       
-      var rowsChanged: js.UndefOr[Double] = js.native
+      var rowsChanged: js.UndefOr[Double] = js.undefined
       
-      var sheetsChanged: js.UndefOr[Double] = js.native
+      var sheetsChanged: js.UndefOr[Double] = js.undefined
       
-      var valuesChanged: js.UndefOr[Double] = js.native
+      var valuesChanged: js.UndefOr[Double] = js.undefined
     }
     object FindReplaceResponse {
       
@@ -5146,12 +5041,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait GetSpreadsheetByDataFilterRequest extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
       
-      var includeGridData: js.UndefOr[Boolean] = js.native
+      var includeGridData: js.UndefOr[Boolean] = js.undefined
     }
     object GetSpreadsheetByDataFilterRequest {
       
@@ -5181,14 +5075,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait GradientRule extends StObject {
       
-      var maxpoint: js.UndefOr[InterpolationPoint] = js.native
+      var maxpoint: js.UndefOr[InterpolationPoint] = js.undefined
       
-      var midpoint: js.UndefOr[InterpolationPoint] = js.native
+      var midpoint: js.UndefOr[InterpolationPoint] = js.undefined
       
-      var minpoint: js.UndefOr[InterpolationPoint] = js.native
+      var minpoint: js.UndefOr[InterpolationPoint] = js.undefined
     }
     object GradientRule {
       
@@ -5221,14 +5114,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait GridCoordinate extends StObject {
       
-      var columnIndex: js.UndefOr[Double] = js.native
+      var columnIndex: js.UndefOr[Double] = js.undefined
       
-      var rowIndex: js.UndefOr[Double] = js.native
+      var rowIndex: js.UndefOr[Double] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object GridCoordinate {
       
@@ -5261,18 +5153,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait GridData extends StObject {
       
-      var columnMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.native
+      var columnMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.undefined
       
-      var rowData: js.UndefOr[js.Array[RowData]] = js.native
+      var rowData: js.UndefOr[js.Array[RowData]] = js.undefined
       
-      var rowMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.native
+      var rowMetadata: js.UndefOr[js.Array[DimensionProperties]] = js.undefined
       
-      var startColumn: js.UndefOr[Double] = js.native
+      var startColumn: js.UndefOr[Double] = js.undefined
       
-      var startRow: js.UndefOr[Double] = js.native
+      var startRow: js.UndefOr[Double] = js.undefined
     }
     object GridData {
       
@@ -5326,22 +5217,21 @@ object Sheets {
       }
     }
     
-    @js.native
     trait GridProperties extends StObject {
       
-      var columnCount: js.UndefOr[Double] = js.native
+      var columnCount: js.UndefOr[Double] = js.undefined
       
-      var columnGroupControlAfter: js.UndefOr[Boolean] = js.native
+      var columnGroupControlAfter: js.UndefOr[Boolean] = js.undefined
       
-      var frozenColumnCount: js.UndefOr[Double] = js.native
+      var frozenColumnCount: js.UndefOr[Double] = js.undefined
       
-      var frozenRowCount: js.UndefOr[Double] = js.native
+      var frozenRowCount: js.UndefOr[Double] = js.undefined
       
-      var hideGridlines: js.UndefOr[Boolean] = js.native
+      var hideGridlines: js.UndefOr[Boolean] = js.undefined
       
-      var rowCount: js.UndefOr[Double] = js.native
+      var rowCount: js.UndefOr[Double] = js.undefined
       
-      var rowGroupControlAfter: js.UndefOr[Boolean] = js.native
+      var rowGroupControlAfter: js.UndefOr[Boolean] = js.undefined
     }
     object GridProperties {
       
@@ -5398,18 +5288,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait GridRange extends StObject {
       
-      var endColumnIndex: js.UndefOr[Double] = js.native
+      var endColumnIndex: js.UndefOr[Double] = js.undefined
       
-      var endRowIndex: js.UndefOr[Double] = js.native
+      var endRowIndex: js.UndefOr[Double] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
       
-      var startColumnIndex: js.UndefOr[Double] = js.native
+      var startColumnIndex: js.UndefOr[Double] = js.undefined
       
-      var startRowIndex: js.UndefOr[Double] = js.native
+      var startRowIndex: js.UndefOr[Double] = js.undefined
     }
     object GridRange {
       
@@ -5454,18 +5343,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait HistogramChartSpec extends StObject {
       
-      var bucketSize: js.UndefOr[Double] = js.native
+      var bucketSize: js.UndefOr[Double] = js.undefined
       
-      var legendPosition: js.UndefOr[String] = js.native
+      var legendPosition: js.UndefOr[String] = js.undefined
       
-      var outlierPercentile: js.UndefOr[Double] = js.native
+      var outlierPercentile: js.UndefOr[Double] = js.undefined
       
-      var series: js.UndefOr[js.Array[HistogramSeries]] = js.native
+      var series: js.UndefOr[js.Array[HistogramSeries]] = js.undefined
       
-      var showItemDividers: js.UndefOr[Boolean] = js.native
+      var showItemDividers: js.UndefOr[Boolean] = js.undefined
     }
     object HistogramChartSpec {
       
@@ -5513,14 +5401,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait HistogramRule extends StObject {
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var interval: js.UndefOr[Double] = js.native
+      var interval: js.UndefOr[Double] = js.undefined
       
-      var start: js.UndefOr[Double] = js.native
+      var start: js.UndefOr[Double] = js.undefined
     }
     object HistogramRule {
       
@@ -5553,12 +5440,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait HistogramSeries extends StObject {
       
-      var barColor: js.UndefOr[Color] = js.native
+      var barColor: js.UndefOr[Color] = js.undefined
       
-      var data: js.UndefOr[ChartData] = js.native
+      var data: js.UndefOr[ChartData] = js.undefined
     }
     object HistogramSeries {
       
@@ -5585,12 +5471,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait InsertDimensionRequest extends StObject {
       
-      var inheritFromBefore: js.UndefOr[Boolean] = js.native
+      var inheritFromBefore: js.UndefOr[Boolean] = js.undefined
       
-      var range: js.UndefOr[DimensionRange] = js.native
+      var range: js.UndefOr[DimensionRange] = js.undefined
     }
     object InsertDimensionRequest {
       
@@ -5617,12 +5502,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait InsertRangeRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var shiftDimension: js.UndefOr[String] = js.native
+      var shiftDimension: js.UndefOr[String] = js.undefined
     }
     object InsertRangeRequest {
       
@@ -5649,14 +5533,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait InterpolationPoint extends StObject {
       
-      var color: js.UndefOr[Color] = js.native
+      var color: js.UndefOr[Color] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object InterpolationPoint {
       
@@ -5689,12 +5572,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait IterativeCalculationSettings extends StObject {
       
-      var convergenceThreshold: js.UndefOr[Double] = js.native
+      var convergenceThreshold: js.UndefOr[Double] = js.undefined
       
-      var maxIterations: js.UndefOr[Double] = js.native
+      var maxIterations: js.UndefOr[Double] = js.undefined
     }
     object IterativeCalculationSettings {
       
@@ -5721,12 +5603,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait LineStyle extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object LineStyle {
       
@@ -5753,10 +5634,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ManualRule extends StObject {
       
-      var groups: js.UndefOr[js.Array[ManualRuleGroup]] = js.native
+      var groups: js.UndefOr[js.Array[ManualRuleGroup]] = js.undefined
     }
     object ManualRule {
       
@@ -5780,12 +5660,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ManualRuleGroup extends StObject {
       
-      var groupName: js.UndefOr[ExtendedValue] = js.native
+      var groupName: js.UndefOr[ExtendedValue] = js.undefined
       
-      var items: js.UndefOr[js.Array[ExtendedValue]] = js.native
+      var items: js.UndefOr[js.Array[ExtendedValue]] = js.undefined
     }
     object ManualRuleGroup {
       
@@ -5815,12 +5694,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait MatchedDeveloperMetadata extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
       
-      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.native
+      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.undefined
     }
     object MatchedDeveloperMetadata {
       
@@ -5850,12 +5728,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait MatchedValueRange extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
       
-      var valueRange: js.UndefOr[ValueRange] = js.native
+      var valueRange: js.UndefOr[ValueRange] = js.undefined
     }
     object MatchedValueRange {
       
@@ -5885,12 +5762,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait MergeCellsRequest extends StObject {
       
-      var mergeType: js.UndefOr[String] = js.native
+      var mergeType: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
     }
     object MergeCellsRequest {
       
@@ -5917,12 +5793,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait MoveDimensionRequest extends StObject {
       
-      var destinationIndex: js.UndefOr[Double] = js.native
+      var destinationIndex: js.UndefOr[Double] = js.undefined
       
-      var source: js.UndefOr[DimensionRange] = js.native
+      var source: js.UndefOr[DimensionRange] = js.undefined
     }
     object MoveDimensionRequest {
       
@@ -5949,14 +5824,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait NamedRange extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
     }
     object NamedRange {
       
@@ -5989,12 +5863,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait NumberFormat extends StObject {
       
-      var pattern: js.UndefOr[String] = js.native
+      var pattern: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object NumberFormat {
       
@@ -6021,20 +5894,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait OrgChartSpec extends StObject {
       
-      var labels: js.UndefOr[ChartData] = js.native
+      var labels: js.UndefOr[ChartData] = js.undefined
       
-      var nodeColor: js.UndefOr[Color] = js.native
+      var nodeColor: js.UndefOr[Color] = js.undefined
       
-      var nodeSize: js.UndefOr[String] = js.native
+      var nodeSize: js.UndefOr[String] = js.undefined
       
-      var parentLabels: js.UndefOr[ChartData] = js.native
+      var parentLabels: js.UndefOr[ChartData] = js.undefined
       
-      var selectedNodeColor: js.UndefOr[Color] = js.native
+      var selectedNodeColor: js.UndefOr[Color] = js.undefined
       
-      var tooltips: js.UndefOr[ChartData] = js.native
+      var tooltips: js.UndefOr[ChartData] = js.undefined
     }
     object OrgChartSpec {
       
@@ -6085,18 +5957,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait OverlayPosition extends StObject {
       
-      var anchorCell: js.UndefOr[GridCoordinate] = js.native
+      var anchorCell: js.UndefOr[GridCoordinate] = js.undefined
       
-      var heightPixels: js.UndefOr[Double] = js.native
+      var heightPixels: js.UndefOr[Double] = js.undefined
       
-      var offsetXPixels: js.UndefOr[Double] = js.native
+      var offsetXPixels: js.UndefOr[Double] = js.undefined
       
-      var offsetYPixels: js.UndefOr[Double] = js.native
+      var offsetYPixels: js.UndefOr[Double] = js.undefined
       
-      var widthPixels: js.UndefOr[Double] = js.native
+      var widthPixels: js.UndefOr[Double] = js.undefined
     }
     object OverlayPosition {
       
@@ -6141,16 +6012,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Padding extends StObject {
       
-      var bottom: js.UndefOr[Double] = js.native
+      var bottom: js.UndefOr[Double] = js.undefined
       
-      var left: js.UndefOr[Double] = js.native
+      var left: js.UndefOr[Double] = js.undefined
       
-      var right: js.UndefOr[Double] = js.native
+      var right: js.UndefOr[Double] = js.undefined
       
-      var top: js.UndefOr[Double] = js.native
+      var top: js.UndefOr[Double] = js.undefined
     }
     object Padding {
       
@@ -6189,18 +6059,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PasteDataRequest extends StObject {
       
-      var coordinate: js.UndefOr[GridCoordinate] = js.native
+      var coordinate: js.UndefOr[GridCoordinate] = js.undefined
       
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
-      var delimiter: js.UndefOr[String] = js.native
+      var delimiter: js.UndefOr[String] = js.undefined
       
-      var html: js.UndefOr[Boolean] = js.native
+      var html: js.UndefOr[Boolean] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object PasteDataRequest {
       
@@ -6245,18 +6114,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PieChartSpec extends StObject {
       
-      var domain: js.UndefOr[ChartData] = js.native
+      var domain: js.UndefOr[ChartData] = js.undefined
       
-      var legendPosition: js.UndefOr[String] = js.native
+      var legendPosition: js.UndefOr[String] = js.undefined
       
-      var pieHole: js.UndefOr[Double] = js.native
+      var pieHole: js.UndefOr[Double] = js.undefined
       
-      var series: js.UndefOr[ChartData] = js.native
+      var series: js.UndefOr[ChartData] = js.undefined
       
-      var threeDimensional: js.UndefOr[Boolean] = js.native
+      var threeDimensional: js.UndefOr[Boolean] = js.undefined
     }
     object PieChartSpec {
       
@@ -6301,10 +6169,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotFilterCriteria extends StObject {
       
-      var visibleValues: js.UndefOr[js.Array[String]] = js.native
+      var visibleValues: js.UndefOr[js.Array[String]] = js.undefined
     }
     object PivotFilterCriteria {
       
@@ -6328,24 +6195,23 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotGroup extends StObject {
       
-      var groupRule: js.UndefOr[PivotGroupRule] = js.native
+      var groupRule: js.UndefOr[PivotGroupRule] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var repeatHeadings: js.UndefOr[Boolean] = js.native
+      var repeatHeadings: js.UndefOr[Boolean] = js.undefined
       
-      var showTotals: js.UndefOr[Boolean] = js.native
+      var showTotals: js.UndefOr[Boolean] = js.undefined
       
-      var sortOrder: js.UndefOr[String] = js.native
+      var sortOrder: js.UndefOr[String] = js.undefined
       
-      var sourceColumnOffset: js.UndefOr[Double] = js.native
+      var sourceColumnOffset: js.UndefOr[Double] = js.undefined
       
-      var valueBucket: js.UndefOr[PivotGroupSortValueBucket] = js.native
+      var valueBucket: js.UndefOr[PivotGroupSortValueBucket] = js.undefined
       
-      var valueMetadata: js.UndefOr[js.Array[PivotGroupValueMetadata]] = js.native
+      var valueMetadata: js.UndefOr[js.Array[PivotGroupValueMetadata]] = js.undefined
     }
     object PivotGroup {
       
@@ -6411,14 +6277,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotGroupRule extends StObject {
       
-      var dateTimeRule: js.UndefOr[DateTimeRule] = js.native
+      var dateTimeRule: js.UndefOr[DateTimeRule] = js.undefined
       
-      var histogramRule: js.UndefOr[HistogramRule] = js.native
+      var histogramRule: js.UndefOr[HistogramRule] = js.undefined
       
-      var manualRule: js.UndefOr[ManualRule] = js.native
+      var manualRule: js.UndefOr[ManualRule] = js.undefined
     }
     object PivotGroupRule {
       
@@ -6451,12 +6316,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotGroupSortValueBucket extends StObject {
       
-      var buckets: js.UndefOr[js.Array[ExtendedValue]] = js.native
+      var buckets: js.UndefOr[js.Array[ExtendedValue]] = js.undefined
       
-      var valuesIndex: js.UndefOr[Double] = js.native
+      var valuesIndex: js.UndefOr[Double] = js.undefined
     }
     object PivotGroupSortValueBucket {
       
@@ -6486,12 +6350,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotGroupValueMetadata extends StObject {
       
-      var collapsed: js.UndefOr[Boolean] = js.native
+      var collapsed: js.UndefOr[Boolean] = js.undefined
       
-      var value: js.UndefOr[ExtendedValue] = js.native
+      var value: js.UndefOr[ExtendedValue] = js.undefined
     }
     object PivotGroupValueMetadata {
       
@@ -6518,20 +6381,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotTable extends StObject {
       
-      var columns: js.UndefOr[js.Array[PivotGroup]] = js.native
+      var columns: js.UndefOr[js.Array[PivotGroup]] = js.undefined
       
-      var criteria: js.UndefOr[js.Object] = js.native
+      var criteria: js.UndefOr[js.Object] = js.undefined
       
-      var rows: js.UndefOr[js.Array[PivotGroup]] = js.native
+      var rows: js.UndefOr[js.Array[PivotGroup]] = js.undefined
       
-      var source: js.UndefOr[GridRange] = js.native
+      var source: js.UndefOr[GridRange] = js.undefined
       
-      var valueLayout: js.UndefOr[String] = js.native
+      var valueLayout: js.UndefOr[String] = js.undefined
       
-      var values: js.UndefOr[js.Array[PivotValue]] = js.native
+      var values: js.UndefOr[js.Array[PivotValue]] = js.undefined
     }
     object PivotTable {
       
@@ -6591,18 +6453,17 @@ object Sheets {
       }
     }
     
-    @js.native
     trait PivotValue extends StObject {
       
-      var calculatedDisplayType: js.UndefOr[String] = js.native
+      var calculatedDisplayType: js.UndefOr[String] = js.undefined
       
-      var formula: js.UndefOr[String] = js.native
+      var formula: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var sourceColumnOffset: js.UndefOr[Double] = js.native
+      var sourceColumnOffset: js.UndefOr[Double] = js.undefined
       
-      var summarizeFunction: js.UndefOr[String] = js.native
+      var summarizeFunction: js.UndefOr[String] = js.undefined
     }
     object PivotValue {
       
@@ -6647,24 +6508,23 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ProtectedRange extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var editors: js.UndefOr[Editors] = js.native
+      var editors: js.UndefOr[Editors] = js.undefined
       
-      var namedRangeId: js.UndefOr[String] = js.native
+      var namedRangeId: js.UndefOr[String] = js.undefined
       
-      var protectedRangeId: js.UndefOr[Double] = js.native
+      var protectedRangeId: js.UndefOr[Double] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var requestingUserCanEdit: js.UndefOr[Boolean] = js.native
+      var requestingUserCanEdit: js.UndefOr[Boolean] = js.undefined
       
-      var unprotectedRanges: js.UndefOr[js.Array[GridRange]] = js.native
+      var unprotectedRanges: js.UndefOr[js.Array[GridRange]] = js.undefined
       
-      var warningOnly: js.UndefOr[Boolean] = js.native
+      var warningOnly: js.UndefOr[Boolean] = js.undefined
     }
     object ProtectedRange {
       
@@ -6730,10 +6590,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait RandomizeRangeRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
     }
     object RandomizeRangeRequest {
       
@@ -6754,14 +6613,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait RepeatCellRequest extends StObject {
       
-      var cell: js.UndefOr[CellData] = js.native
+      var cell: js.UndefOr[CellData] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
     }
     object RepeatCellRequest {
       
@@ -6794,120 +6652,119 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Request extends StObject {
       
-      var addBanding: js.UndefOr[AddBandingRequest] = js.native
+      var addBanding: js.UndefOr[AddBandingRequest] = js.undefined
       
-      var addChart: js.UndefOr[AddChartRequest] = js.native
+      var addChart: js.UndefOr[AddChartRequest] = js.undefined
       
-      var addConditionalFormatRule: js.UndefOr[AddConditionalFormatRuleRequest] = js.native
+      var addConditionalFormatRule: js.UndefOr[AddConditionalFormatRuleRequest] = js.undefined
       
-      var addDimensionGroup: js.UndefOr[AddDimensionGroupRequest] = js.native
+      var addDimensionGroup: js.UndefOr[AddDimensionGroupRequest] = js.undefined
       
-      var addFilterView: js.UndefOr[AddFilterViewRequest] = js.native
+      var addFilterView: js.UndefOr[AddFilterViewRequest] = js.undefined
       
-      var addNamedRange: js.UndefOr[AddNamedRangeRequest] = js.native
+      var addNamedRange: js.UndefOr[AddNamedRangeRequest] = js.undefined
       
-      var addProtectedRange: js.UndefOr[AddProtectedRangeRequest] = js.native
+      var addProtectedRange: js.UndefOr[AddProtectedRangeRequest] = js.undefined
       
-      var addSheet: js.UndefOr[AddSheetRequest] = js.native
+      var addSheet: js.UndefOr[AddSheetRequest] = js.undefined
       
-      var appendCells: js.UndefOr[AppendCellsRequest] = js.native
+      var appendCells: js.UndefOr[AppendCellsRequest] = js.undefined
       
-      var appendDimension: js.UndefOr[AppendDimensionRequest] = js.native
+      var appendDimension: js.UndefOr[AppendDimensionRequest] = js.undefined
       
-      var autoFill: js.UndefOr[AutoFillRequest] = js.native
+      var autoFill: js.UndefOr[AutoFillRequest] = js.undefined
       
-      var autoResizeDimensions: js.UndefOr[AutoResizeDimensionsRequest] = js.native
+      var autoResizeDimensions: js.UndefOr[AutoResizeDimensionsRequest] = js.undefined
       
-      var clearBasicFilter: js.UndefOr[ClearBasicFilterRequest] = js.native
+      var clearBasicFilter: js.UndefOr[ClearBasicFilterRequest] = js.undefined
       
-      var copyPaste: js.UndefOr[CopyPasteRequest] = js.native
+      var copyPaste: js.UndefOr[CopyPasteRequest] = js.undefined
       
-      var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataRequest] = js.native
+      var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataRequest] = js.undefined
       
-      var cutPaste: js.UndefOr[CutPasteRequest] = js.native
+      var cutPaste: js.UndefOr[CutPasteRequest] = js.undefined
       
-      var deleteBanding: js.UndefOr[DeleteBandingRequest] = js.native
+      var deleteBanding: js.UndefOr[DeleteBandingRequest] = js.undefined
       
-      var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleRequest] = js.native
+      var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleRequest] = js.undefined
       
-      var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataRequest] = js.native
+      var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataRequest] = js.undefined
       
-      var deleteDimension: js.UndefOr[DeleteDimensionRequest] = js.native
+      var deleteDimension: js.UndefOr[DeleteDimensionRequest] = js.undefined
       
-      var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupRequest] = js.native
+      var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupRequest] = js.undefined
       
-      var deleteEmbeddedObject: js.UndefOr[DeleteEmbeddedObjectRequest] = js.native
+      var deleteEmbeddedObject: js.UndefOr[DeleteEmbeddedObjectRequest] = js.undefined
       
-      var deleteFilterView: js.UndefOr[DeleteFilterViewRequest] = js.native
+      var deleteFilterView: js.UndefOr[DeleteFilterViewRequest] = js.undefined
       
-      var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.native
+      var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.undefined
       
-      var deleteProtectedRange: js.UndefOr[DeleteProtectedRangeRequest] = js.native
+      var deleteProtectedRange: js.UndefOr[DeleteProtectedRangeRequest] = js.undefined
       
-      var deleteRange: js.UndefOr[DeleteRangeRequest] = js.native
+      var deleteRange: js.UndefOr[DeleteRangeRequest] = js.undefined
       
-      var deleteSheet: js.UndefOr[DeleteSheetRequest] = js.native
+      var deleteSheet: js.UndefOr[DeleteSheetRequest] = js.undefined
       
-      var duplicateFilterView: js.UndefOr[DuplicateFilterViewRequest] = js.native
+      var duplicateFilterView: js.UndefOr[DuplicateFilterViewRequest] = js.undefined
       
-      var duplicateSheet: js.UndefOr[DuplicateSheetRequest] = js.native
+      var duplicateSheet: js.UndefOr[DuplicateSheetRequest] = js.undefined
       
-      var findReplace: js.UndefOr[FindReplaceRequest] = js.native
+      var findReplace: js.UndefOr[FindReplaceRequest] = js.undefined
       
-      var insertDimension: js.UndefOr[InsertDimensionRequest] = js.native
+      var insertDimension: js.UndefOr[InsertDimensionRequest] = js.undefined
       
-      var insertRange: js.UndefOr[InsertRangeRequest] = js.native
+      var insertRange: js.UndefOr[InsertRangeRequest] = js.undefined
       
-      var mergeCells: js.UndefOr[MergeCellsRequest] = js.native
+      var mergeCells: js.UndefOr[MergeCellsRequest] = js.undefined
       
-      var moveDimension: js.UndefOr[MoveDimensionRequest] = js.native
+      var moveDimension: js.UndefOr[MoveDimensionRequest] = js.undefined
       
-      var pasteData: js.UndefOr[PasteDataRequest] = js.native
+      var pasteData: js.UndefOr[PasteDataRequest] = js.undefined
       
-      var randomizeRange: js.UndefOr[RandomizeRangeRequest] = js.native
+      var randomizeRange: js.UndefOr[RandomizeRangeRequest] = js.undefined
       
-      var repeatCell: js.UndefOr[RepeatCellRequest] = js.native
+      var repeatCell: js.UndefOr[RepeatCellRequest] = js.undefined
       
-      var setBasicFilter: js.UndefOr[SetBasicFilterRequest] = js.native
+      var setBasicFilter: js.UndefOr[SetBasicFilterRequest] = js.undefined
       
-      var setDataValidation: js.UndefOr[SetDataValidationRequest] = js.native
+      var setDataValidation: js.UndefOr[SetDataValidationRequest] = js.undefined
       
-      var sortRange: js.UndefOr[SortRangeRequest] = js.native
+      var sortRange: js.UndefOr[SortRangeRequest] = js.undefined
       
-      var textToColumns: js.UndefOr[TextToColumnsRequest] = js.native
+      var textToColumns: js.UndefOr[TextToColumnsRequest] = js.undefined
       
-      var unmergeCells: js.UndefOr[UnmergeCellsRequest] = js.native
+      var unmergeCells: js.UndefOr[UnmergeCellsRequest] = js.undefined
       
-      var updateBanding: js.UndefOr[UpdateBandingRequest] = js.native
+      var updateBanding: js.UndefOr[UpdateBandingRequest] = js.undefined
       
-      var updateBorders: js.UndefOr[UpdateBordersRequest] = js.native
+      var updateBorders: js.UndefOr[UpdateBordersRequest] = js.undefined
       
-      var updateCells: js.UndefOr[UpdateCellsRequest] = js.native
+      var updateCells: js.UndefOr[UpdateCellsRequest] = js.undefined
       
-      var updateChartSpec: js.UndefOr[UpdateChartSpecRequest] = js.native
+      var updateChartSpec: js.UndefOr[UpdateChartSpecRequest] = js.undefined
       
-      var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleRequest] = js.native
+      var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleRequest] = js.undefined
       
-      var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataRequest] = js.native
+      var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataRequest] = js.undefined
       
-      var updateDimensionGroup: js.UndefOr[UpdateDimensionGroupRequest] = js.native
+      var updateDimensionGroup: js.UndefOr[UpdateDimensionGroupRequest] = js.undefined
       
-      var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.native
+      var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.undefined
       
-      var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionRequest] = js.native
+      var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionRequest] = js.undefined
       
-      var updateFilterView: js.UndefOr[UpdateFilterViewRequest] = js.native
+      var updateFilterView: js.UndefOr[UpdateFilterViewRequest] = js.undefined
       
-      var updateNamedRange: js.UndefOr[UpdateNamedRangeRequest] = js.native
+      var updateNamedRange: js.UndefOr[UpdateNamedRangeRequest] = js.undefined
       
-      var updateProtectedRange: js.UndefOr[UpdateProtectedRangeRequest] = js.native
+      var updateProtectedRange: js.UndefOr[UpdateProtectedRangeRequest] = js.undefined
       
-      var updateSheetProperties: js.UndefOr[UpdateSheetPropertiesRequest] = js.native
+      var updateSheetProperties: js.UndefOr[UpdateSheetPropertiesRequest] = js.undefined
       
-      var updateSpreadsheetProperties: js.UndefOr[UpdateSpreadsheetPropertiesRequest] = js.native
+      var updateSpreadsheetProperties: js.UndefOr[UpdateSpreadsheetPropertiesRequest] = js.undefined
     }
     object Request {
       
@@ -7258,42 +7115,41 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Response extends StObject {
       
-      var addBanding: js.UndefOr[AddBandingResponse] = js.native
+      var addBanding: js.UndefOr[AddBandingResponse] = js.undefined
       
-      var addChart: js.UndefOr[AddChartResponse] = js.native
+      var addChart: js.UndefOr[AddChartResponse] = js.undefined
       
-      var addDimensionGroup: js.UndefOr[AddDimensionGroupResponse] = js.native
+      var addDimensionGroup: js.UndefOr[AddDimensionGroupResponse] = js.undefined
       
-      var addFilterView: js.UndefOr[AddFilterViewResponse] = js.native
+      var addFilterView: js.UndefOr[AddFilterViewResponse] = js.undefined
       
-      var addNamedRange: js.UndefOr[AddNamedRangeResponse] = js.native
+      var addNamedRange: js.UndefOr[AddNamedRangeResponse] = js.undefined
       
-      var addProtectedRange: js.UndefOr[AddProtectedRangeResponse] = js.native
+      var addProtectedRange: js.UndefOr[AddProtectedRangeResponse] = js.undefined
       
-      var addSheet: js.UndefOr[AddSheetResponse] = js.native
+      var addSheet: js.UndefOr[AddSheetResponse] = js.undefined
       
-      var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataResponse] = js.native
+      var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataResponse] = js.undefined
       
-      var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleResponse] = js.native
+      var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleResponse] = js.undefined
       
-      var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataResponse] = js.native
+      var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataResponse] = js.undefined
       
-      var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupResponse] = js.native
+      var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupResponse] = js.undefined
       
-      var duplicateFilterView: js.UndefOr[DuplicateFilterViewResponse] = js.native
+      var duplicateFilterView: js.UndefOr[DuplicateFilterViewResponse] = js.undefined
       
-      var duplicateSheet: js.UndefOr[DuplicateSheetResponse] = js.native
+      var duplicateSheet: js.UndefOr[DuplicateSheetResponse] = js.undefined
       
-      var findReplace: js.UndefOr[FindReplaceResponse] = js.native
+      var findReplace: js.UndefOr[FindReplaceResponse] = js.undefined
       
-      var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleResponse] = js.native
+      var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleResponse] = js.undefined
       
-      var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataResponse] = js.native
+      var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataResponse] = js.undefined
       
-      var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionResponse] = js.native
+      var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionResponse] = js.undefined
     }
     object Response {
       
@@ -7410,10 +7266,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait RowData extends StObject {
       
-      var values: js.UndefOr[js.Array[CellData]] = js.native
+      var values: js.UndefOr[js.Array[CellData]] = js.undefined
     }
     object RowData {
       
@@ -7437,10 +7292,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SearchDeveloperMetadataRequest extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
     }
     object SearchDeveloperMetadataRequest {
       
@@ -7464,10 +7318,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SearchDeveloperMetadataResponse extends StObject {
       
-      var matchedDeveloperMetadata: js.UndefOr[js.Array[MatchedDeveloperMetadata]] = js.native
+      var matchedDeveloperMetadata: js.UndefOr[js.Array[MatchedDeveloperMetadata]] = js.undefined
     }
     object SearchDeveloperMetadataResponse {
       
@@ -7491,10 +7344,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SetBasicFilterRequest extends StObject {
       
-      var filter: js.UndefOr[BasicFilter] = js.native
+      var filter: js.UndefOr[BasicFilter] = js.undefined
     }
     object SetBasicFilterRequest {
       
@@ -7515,12 +7367,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SetDataValidationRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var rule: js.UndefOr[DataValidationRule] = js.native
+      var rule: js.UndefOr[DataValidationRule] = js.undefined
     }
     object SetDataValidationRequest {
       
@@ -7547,32 +7398,31 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Sheet extends StObject {
       
-      var bandedRanges: js.UndefOr[js.Array[BandedRange]] = js.native
+      var bandedRanges: js.UndefOr[js.Array[BandedRange]] = js.undefined
       
-      var basicFilter: js.UndefOr[BasicFilter] = js.native
+      var basicFilter: js.UndefOr[BasicFilter] = js.undefined
       
-      var charts: js.UndefOr[js.Array[EmbeddedChart]] = js.native
+      var charts: js.UndefOr[js.Array[EmbeddedChart]] = js.undefined
       
-      var columnGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
+      var columnGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
       
-      var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatRule]] = js.native
+      var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatRule]] = js.undefined
       
-      var data: js.UndefOr[js.Array[GridData]] = js.native
+      var data: js.UndefOr[js.Array[GridData]] = js.undefined
       
-      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
       
-      var filterViews: js.UndefOr[js.Array[FilterView]] = js.native
+      var filterViews: js.UndefOr[js.Array[FilterView]] = js.undefined
       
-      var merges: js.UndefOr[js.Array[GridRange]] = js.native
+      var merges: js.UndefOr[js.Array[GridRange]] = js.undefined
       
-      var properties: js.UndefOr[SheetProperties] = js.native
+      var properties: js.UndefOr[SheetProperties] = js.undefined
       
-      var protectedRanges: js.UndefOr[js.Array[ProtectedRange]] = js.native
+      var protectedRanges: js.UndefOr[js.Array[ProtectedRange]] = js.undefined
       
-      var rowGroups: js.UndefOr[js.Array[DimensionGroup]] = js.native
+      var rowGroups: js.UndefOr[js.Array[DimensionGroup]] = js.undefined
     }
     object Sheet {
       
@@ -7689,24 +7539,23 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SheetProperties extends StObject {
       
-      var gridProperties: js.UndefOr[GridProperties] = js.native
+      var gridProperties: js.UndefOr[GridProperties] = js.undefined
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var rightToLeft: js.UndefOr[Boolean] = js.native
+      var rightToLeft: js.UndefOr[Boolean] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
       
-      var sheetType: js.UndefOr[String] = js.native
+      var sheetType: js.UndefOr[String] = js.undefined
       
-      var tabColor: js.UndefOr[Color] = js.native
+      var tabColor: js.UndefOr[Color] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SheetProperties {
       
@@ -7769,12 +7618,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SortRangeRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
+      var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
     }
     object SortRangeRequest {
       
@@ -7804,12 +7652,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SortSpec extends StObject {
       
-      var dimensionIndex: js.UndefOr[Double] = js.native
+      var dimensionIndex: js.UndefOr[Double] = js.undefined
       
-      var sortOrder: js.UndefOr[String] = js.native
+      var sortOrder: js.UndefOr[String] = js.undefined
     }
     object SortSpec {
       
@@ -7836,14 +7683,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SourceAndDestination extends StObject {
       
-      var dimension: js.UndefOr[String] = js.native
+      var dimension: js.UndefOr[String] = js.undefined
       
-      var fillLength: js.UndefOr[Double] = js.native
+      var fillLength: js.UndefOr[Double] = js.undefined
       
-      var source: js.UndefOr[GridRange] = js.native
+      var source: js.UndefOr[GridRange] = js.undefined
     }
     object SourceAndDestination {
       
@@ -7876,20 +7722,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait Spreadsheet extends StObject {
       
-      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
       
-      var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.native
+      var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.undefined
       
-      var properties: js.UndefOr[SpreadsheetProperties] = js.native
+      var properties: js.UndefOr[SpreadsheetProperties] = js.undefined
       
-      var sheets: js.UndefOr[js.Array[Sheet]] = js.native
+      var sheets: js.UndefOr[js.Array[Sheet]] = js.undefined
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var spreadsheetUrl: js.UndefOr[String] = js.native
+      var spreadsheetUrl: js.UndefOr[String] = js.undefined
     }
     object Spreadsheet {
       
@@ -7949,20 +7794,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait SpreadsheetProperties extends StObject {
       
-      var autoRecalc: js.UndefOr[String] = js.native
+      var autoRecalc: js.UndefOr[String] = js.undefined
       
-      var defaultFormat: js.UndefOr[CellFormat] = js.native
+      var defaultFormat: js.UndefOr[CellFormat] = js.undefined
       
-      var iterativeCalculationSettings: js.UndefOr[IterativeCalculationSettings] = js.native
+      var iterativeCalculationSettings: js.UndefOr[IterativeCalculationSettings] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SpreadsheetProperties {
       
@@ -8013,22 +7857,21 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TextFormat extends StObject {
       
-      var bold: js.UndefOr[Boolean] = js.native
+      var bold: js.UndefOr[Boolean] = js.undefined
       
-      var fontFamily: js.UndefOr[String] = js.native
+      var fontFamily: js.UndefOr[String] = js.undefined
       
-      var fontSize: js.UndefOr[Double] = js.native
+      var fontSize: js.UndefOr[Double] = js.undefined
       
-      var foregroundColor: js.UndefOr[Color] = js.native
+      var foregroundColor: js.UndefOr[Color] = js.undefined
       
-      var italic: js.UndefOr[Boolean] = js.native
+      var italic: js.UndefOr[Boolean] = js.undefined
       
-      var strikethrough: js.UndefOr[Boolean] = js.native
+      var strikethrough: js.UndefOr[Boolean] = js.undefined
       
-      var underline: js.UndefOr[Boolean] = js.native
+      var underline: js.UndefOr[Boolean] = js.undefined
     }
     object TextFormat {
       
@@ -8085,12 +7928,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TextFormatRun extends StObject {
       
-      var format: js.UndefOr[TextFormat] = js.native
+      var format: js.UndefOr[TextFormat] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
     }
     object TextFormatRun {
       
@@ -8117,10 +7959,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TextPosition extends StObject {
       
-      var horizontalAlignment: js.UndefOr[String] = js.native
+      var horizontalAlignment: js.UndefOr[String] = js.undefined
     }
     object TextPosition {
       
@@ -8141,12 +7982,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TextRotation extends StObject {
       
-      var angle: js.UndefOr[Double] = js.native
+      var angle: js.UndefOr[Double] = js.undefined
       
-      var vertical: js.UndefOr[Boolean] = js.native
+      var vertical: js.UndefOr[Boolean] = js.undefined
     }
     object TextRotation {
       
@@ -8173,14 +8013,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TextToColumnsRequest extends StObject {
       
-      var delimiter: js.UndefOr[String] = js.native
+      var delimiter: js.UndefOr[String] = js.undefined
       
-      var delimiterType: js.UndefOr[String] = js.native
+      var delimiterType: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[GridRange] = js.native
+      var source: js.UndefOr[GridRange] = js.undefined
     }
     object TextToColumnsRequest {
       
@@ -8213,16 +8052,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TreemapChartColorScale extends StObject {
       
-      var maxValueColor: js.UndefOr[Color] = js.native
+      var maxValueColor: js.UndefOr[Color] = js.undefined
       
-      var midValueColor: js.UndefOr[Color] = js.native
+      var midValueColor: js.UndefOr[Color] = js.undefined
       
-      var minValueColor: js.UndefOr[Color] = js.native
+      var minValueColor: js.UndefOr[Color] = js.undefined
       
-      var noDataColor: js.UndefOr[Color] = js.native
+      var noDataColor: js.UndefOr[Color] = js.undefined
     }
     object TreemapChartColorScale {
       
@@ -8261,32 +8099,31 @@ object Sheets {
       }
     }
     
-    @js.native
     trait TreemapChartSpec extends StObject {
       
-      var colorData: js.UndefOr[ChartData] = js.native
+      var colorData: js.UndefOr[ChartData] = js.undefined
       
-      var colorScale: js.UndefOr[TreemapChartColorScale] = js.native
+      var colorScale: js.UndefOr[TreemapChartColorScale] = js.undefined
       
-      var headerColor: js.UndefOr[Color] = js.native
+      var headerColor: js.UndefOr[Color] = js.undefined
       
-      var hideTooltips: js.UndefOr[Boolean] = js.native
+      var hideTooltips: js.UndefOr[Boolean] = js.undefined
       
-      var hintedLevels: js.UndefOr[Double] = js.native
+      var hintedLevels: js.UndefOr[Double] = js.undefined
       
-      var labels: js.UndefOr[ChartData] = js.native
+      var labels: js.UndefOr[ChartData] = js.undefined
       
-      var levels: js.UndefOr[Double] = js.native
+      var levels: js.UndefOr[Double] = js.undefined
       
-      var maxValue: js.UndefOr[Double] = js.native
+      var maxValue: js.UndefOr[Double] = js.undefined
       
-      var minValue: js.UndefOr[Double] = js.native
+      var minValue: js.UndefOr[Double] = js.undefined
       
-      var parentLabels: js.UndefOr[ChartData] = js.native
+      var parentLabels: js.UndefOr[ChartData] = js.undefined
       
-      var sizeData: js.UndefOr[ChartData] = js.native
+      var sizeData: js.UndefOr[ChartData] = js.undefined
       
-      var textFormat: js.UndefOr[TextFormat] = js.native
+      var textFormat: js.UndefOr[TextFormat] = js.undefined
     }
     object TreemapChartSpec {
       
@@ -8373,10 +8210,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UnmergeCellsRequest extends StObject {
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
     }
     object UnmergeCellsRequest {
       
@@ -8397,12 +8233,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateBandingRequest extends StObject {
       
-      var bandedRange: js.UndefOr[BandedRange] = js.native
+      var bandedRange: js.UndefOr[BandedRange] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
     }
     object UpdateBandingRequest {
       
@@ -8429,22 +8264,21 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateBordersRequest extends StObject {
       
-      var bottom: js.UndefOr[Border] = js.native
+      var bottom: js.UndefOr[Border] = js.undefined
       
-      var innerHorizontal: js.UndefOr[Border] = js.native
+      var innerHorizontal: js.UndefOr[Border] = js.undefined
       
-      var innerVertical: js.UndefOr[Border] = js.native
+      var innerVertical: js.UndefOr[Border] = js.undefined
       
-      var left: js.UndefOr[Border] = js.native
+      var left: js.UndefOr[Border] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var right: js.UndefOr[Border] = js.native
+      var right: js.UndefOr[Border] = js.undefined
       
-      var top: js.UndefOr[Border] = js.native
+      var top: js.UndefOr[Border] = js.undefined
     }
     object UpdateBordersRequest {
       
@@ -8501,16 +8335,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateCellsRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[GridRange] = js.native
+      var range: js.UndefOr[GridRange] = js.undefined
       
-      var rows: js.UndefOr[js.Array[RowData]] = js.native
+      var rows: js.UndefOr[js.Array[RowData]] = js.undefined
       
-      var start: js.UndefOr[GridCoordinate] = js.native
+      var start: js.UndefOr[GridCoordinate] = js.undefined
     }
     object UpdateCellsRequest {
       
@@ -8552,12 +8385,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateChartSpecRequest extends StObject {
       
-      var chartId: js.UndefOr[Double] = js.native
+      var chartId: js.UndefOr[Double] = js.undefined
       
-      var spec: js.UndefOr[ChartSpec] = js.native
+      var spec: js.UndefOr[ChartSpec] = js.undefined
     }
     object UpdateChartSpecRequest {
       
@@ -8584,16 +8416,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateConditionalFormatRuleRequest extends StObject {
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
       
-      var newIndex: js.UndefOr[Double] = js.native
+      var newIndex: js.UndefOr[Double] = js.undefined
       
-      var rule: js.UndefOr[ConditionalFormatRule] = js.native
+      var rule: js.UndefOr[ConditionalFormatRule] = js.undefined
       
-      var sheetId: js.UndefOr[Double] = js.native
+      var sheetId: js.UndefOr[Double] = js.undefined
     }
     object UpdateConditionalFormatRuleRequest {
       
@@ -8632,16 +8463,15 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateConditionalFormatRuleResponse extends StObject {
       
-      var newIndex: js.UndefOr[Double] = js.native
+      var newIndex: js.UndefOr[Double] = js.undefined
       
-      var newRule: js.UndefOr[ConditionalFormatRule] = js.native
+      var newRule: js.UndefOr[ConditionalFormatRule] = js.undefined
       
-      var oldIndex: js.UndefOr[Double] = js.native
+      var oldIndex: js.UndefOr[Double] = js.undefined
       
-      var oldRule: js.UndefOr[ConditionalFormatRule] = js.native
+      var oldRule: js.UndefOr[ConditionalFormatRule] = js.undefined
     }
     object UpdateConditionalFormatRuleResponse {
       
@@ -8680,14 +8510,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateDeveloperMetadataRequest extends StObject {
       
-      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+      var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
       
-      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.native
+      var developerMetadata: js.UndefOr[DeveloperMetadata] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
     }
     object UpdateDeveloperMetadataRequest {
       
@@ -8723,10 +8552,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateDeveloperMetadataResponse extends StObject {
       
-      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+      var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
     }
     object UpdateDeveloperMetadataResponse {
       
@@ -8750,12 +8578,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateDimensionGroupRequest extends StObject {
       
-      var dimensionGroup: js.UndefOr[DimensionGroup] = js.native
+      var dimensionGroup: js.UndefOr[DimensionGroup] = js.undefined
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
     }
     object UpdateDimensionGroupRequest {
       
@@ -8782,14 +8609,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateDimensionPropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var properties: js.UndefOr[DimensionProperties] = js.native
+      var properties: js.UndefOr[DimensionProperties] = js.undefined
       
-      var range: js.UndefOr[DimensionRange] = js.native
+      var range: js.UndefOr[DimensionRange] = js.undefined
     }
     object UpdateDimensionPropertiesRequest {
       
@@ -8822,14 +8648,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateEmbeddedObjectPositionRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var newPosition: js.UndefOr[EmbeddedObjectPosition] = js.native
+      var newPosition: js.UndefOr[EmbeddedObjectPosition] = js.undefined
       
-      var objectId: js.UndefOr[Double] = js.native
+      var objectId: js.UndefOr[Double] = js.undefined
     }
     object UpdateEmbeddedObjectPositionRequest {
       
@@ -8862,10 +8687,9 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateEmbeddedObjectPositionResponse extends StObject {
       
-      var position: js.UndefOr[EmbeddedObjectPosition] = js.native
+      var position: js.UndefOr[EmbeddedObjectPosition] = js.undefined
     }
     object UpdateEmbeddedObjectPositionResponse {
       
@@ -8886,12 +8710,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateFilterViewRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var filter: js.UndefOr[FilterView] = js.native
+      var filter: js.UndefOr[FilterView] = js.undefined
     }
     object UpdateFilterViewRequest {
       
@@ -8918,12 +8741,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateNamedRangeRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var namedRange: js.UndefOr[NamedRange] = js.native
+      var namedRange: js.UndefOr[NamedRange] = js.undefined
     }
     object UpdateNamedRangeRequest {
       
@@ -8950,12 +8772,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateProtectedRangeRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var protectedRange: js.UndefOr[ProtectedRange] = js.native
+      var protectedRange: js.UndefOr[ProtectedRange] = js.undefined
     }
     object UpdateProtectedRangeRequest {
       
@@ -8982,12 +8803,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateSheetPropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var properties: js.UndefOr[SheetProperties] = js.native
+      var properties: js.UndefOr[SheetProperties] = js.undefined
     }
     object UpdateSheetPropertiesRequest {
       
@@ -9014,12 +8834,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateSpreadsheetPropertiesRequest extends StObject {
       
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
-      var properties: js.UndefOr[SpreadsheetProperties] = js.native
+      var properties: js.UndefOr[SpreadsheetProperties] = js.undefined
     }
     object UpdateSpreadsheetPropertiesRequest {
       
@@ -9046,20 +8865,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateValuesByDataFilterResponse extends StObject {
       
-      var dataFilter: js.UndefOr[DataFilter] = js.native
+      var dataFilter: js.UndefOr[DataFilter] = js.undefined
       
-      var updatedCells: js.UndefOr[Double] = js.native
+      var updatedCells: js.UndefOr[Double] = js.undefined
       
-      var updatedColumns: js.UndefOr[Double] = js.native
+      var updatedColumns: js.UndefOr[Double] = js.undefined
       
-      var updatedData: js.UndefOr[ValueRange] = js.native
+      var updatedData: js.UndefOr[ValueRange] = js.undefined
       
-      var updatedRange: js.UndefOr[String] = js.native
+      var updatedRange: js.UndefOr[String] = js.undefined
       
-      var updatedRows: js.UndefOr[Double] = js.native
+      var updatedRows: js.UndefOr[Double] = js.undefined
     }
     object UpdateValuesByDataFilterResponse {
       
@@ -9110,20 +8928,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait UpdateValuesResponse extends StObject {
       
-      var spreadsheetId: js.UndefOr[String] = js.native
+      var spreadsheetId: js.UndefOr[String] = js.undefined
       
-      var updatedCells: js.UndefOr[Double] = js.native
+      var updatedCells: js.UndefOr[Double] = js.undefined
       
-      var updatedColumns: js.UndefOr[Double] = js.native
+      var updatedColumns: js.UndefOr[Double] = js.undefined
       
-      var updatedData: js.UndefOr[ValueRange] = js.native
+      var updatedData: js.UndefOr[ValueRange] = js.undefined
       
-      var updatedRange: js.UndefOr[String] = js.native
+      var updatedRange: js.UndefOr[String] = js.undefined
       
-      var updatedRows: js.UndefOr[Double] = js.native
+      var updatedRows: js.UndefOr[Double] = js.undefined
     }
     object UpdateValuesResponse {
       
@@ -9174,14 +8991,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait ValueRange extends StObject {
       
-      var majorDimension: js.UndefOr[String] = js.native
+      var majorDimension: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[String] = js.native
+      var range: js.UndefOr[String] = js.undefined
       
-      var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+      var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
     }
     object ValueRange {
       
@@ -9207,7 +9023,7 @@ object Sheets {
         def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
         
         @scala.inline
-        def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -9217,12 +9033,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait WaterfallChartColumnStyle extends StObject {
       
-      var color: js.UndefOr[Color] = js.native
+      var color: js.UndefOr[Color] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
     }
     object WaterfallChartColumnStyle {
       
@@ -9249,14 +9064,13 @@ object Sheets {
       }
     }
     
-    @js.native
     trait WaterfallChartCustomSubtotal extends StObject {
       
-      var dataIsSubtotal: js.UndefOr[Boolean] = js.native
+      var dataIsSubtotal: js.UndefOr[Boolean] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var subtotalIndex: js.UndefOr[Double] = js.native
+      var subtotalIndex: js.UndefOr[Double] = js.undefined
     }
     object WaterfallChartCustomSubtotal {
       
@@ -9289,12 +9103,11 @@ object Sheets {
       }
     }
     
-    @js.native
     trait WaterfallChartDomain extends StObject {
       
-      var data: js.UndefOr[ChartData] = js.native
+      var data: js.UndefOr[ChartData] = js.undefined
       
-      var reversed: js.UndefOr[Boolean] = js.native
+      var reversed: js.UndefOr[Boolean] = js.undefined
     }
     object WaterfallChartDomain {
       
@@ -9321,20 +9134,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait WaterfallChartSeries extends StObject {
       
-      var customSubtotals: js.UndefOr[js.Array[WaterfallChartCustomSubtotal]] = js.native
+      var customSubtotals: js.UndefOr[js.Array[WaterfallChartCustomSubtotal]] = js.undefined
       
-      var data: js.UndefOr[ChartData] = js.native
+      var data: js.UndefOr[ChartData] = js.undefined
       
-      var hideTrailingSubtotal: js.UndefOr[Boolean] = js.native
+      var hideTrailingSubtotal: js.UndefOr[Boolean] = js.undefined
       
-      var negativeColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.native
+      var negativeColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.undefined
       
-      var positiveColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.native
+      var positiveColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.undefined
       
-      var subtotalColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.native
+      var subtotalColumnsStyle: js.UndefOr[WaterfallChartColumnStyle] = js.undefined
     }
     object WaterfallChartSeries {
       
@@ -9388,20 +9200,19 @@ object Sheets {
       }
     }
     
-    @js.native
     trait WaterfallChartSpec extends StObject {
       
-      var connectorLineStyle: js.UndefOr[LineStyle] = js.native
+      var connectorLineStyle: js.UndefOr[LineStyle] = js.undefined
       
-      var domain: js.UndefOr[WaterfallChartDomain] = js.native
+      var domain: js.UndefOr[WaterfallChartDomain] = js.undefined
       
-      var firstValueIsTotal: js.UndefOr[Boolean] = js.native
+      var firstValueIsTotal: js.UndefOr[Boolean] = js.undefined
       
-      var hideConnectorLines: js.UndefOr[Boolean] = js.native
+      var hideConnectorLines: js.UndefOr[Boolean] = js.undefined
       
-      var series: js.UndefOr[js.Array[WaterfallChartSeries]] = js.native
+      var series: js.UndefOr[js.Array[WaterfallChartSeries]] = js.undefined
       
-      var stackedType: js.UndefOr[String] = js.native
+      var stackedType: js.UndefOr[String] = js.undefined
     }
     object WaterfallChartSpec {
       

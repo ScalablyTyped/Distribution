@@ -2,29 +2,27 @@ package typings.nodelibFsScandir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Dirent extends StObject {
     
-    def isBlockDevice(): Boolean = js.native
+    def isBlockDevice(): Boolean
     
-    def isCharacterDevice(): Boolean = js.native
+    def isCharacterDevice(): Boolean
     
-    def isDirectory(): Boolean = js.native
+    def isDirectory(): Boolean
     
-    def isFIFO(): Boolean = js.native
+    def isFIFO(): Boolean
     
-    def isFile(): Boolean = js.native
+    def isFile(): Boolean
     
-    def isSocket(): Boolean = js.native
+    def isSocket(): Boolean
     
-    def isSymbolicLink(): Boolean = js.native
+    def isSymbolicLink(): Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object Dirent {
     
@@ -72,16 +70,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Entry extends StObject {
     
-    var dirent: Dirent = js.native
+    var dirent: Dirent
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var stats: js.UndefOr[Stats] = js.native
+    var stats: js.UndefOr[Stats] = js.undefined
   }
   object Entry {
     

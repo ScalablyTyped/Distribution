@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.deltaManagerMod.IDeltaManager
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object undoManagerMod {
@@ -50,12 +49,11 @@ object undoManagerMod {
   
   type Change = js.Array[IDeltaChange]
   
-  @js.native
   trait IDeltaChange extends StObject {
     
-    var delta: Delta = js.native
+    var delta: Delta
     
-    var reversedDelta: Delta = js.native
+    var reversedDelta: Delta
   }
   object IDeltaChange {
     

@@ -5,23 +5,21 @@ import typings.storybookAddonKnobs.buttonMod.ButtonTypeOnClickProp
 import typings.storybookAddonKnobs.storybookAddonKnobsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HideLabel extends StObject {
   
-  var callback: ButtonTypeOnClickProp = js.native
+  var callback: ButtonTypeOnClickProp
   
-  var hideLabel: `true` = js.native
+  var hideLabel: `true`
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: js.UndefOr[scala.Nothing] = js.undefined
 }
 object HideLabel {
   
   @scala.inline
-  def apply(callback: /* knob */ ButtonTypeKnob => js.Any, hideLabel: `true`): HideLabel = {
-    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), hideLabel = hideLabel.asInstanceOf[js.Any])
+  def apply(callback: /* knob */ ButtonTypeKnob => js.Any): HideLabel = {
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), hideLabel = true)
     __obj.asInstanceOf[HideLabel]
   }
   

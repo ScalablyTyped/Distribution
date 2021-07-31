@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.SupplyRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodySupplyRequest extends StObject {
   
-  var body: SupplyRequest = js.native
+  var body: SupplyRequest
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.SupplyRequest = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.SupplyRequest
 }
 object BodySupplyRequest {
   
   @scala.inline
-  def apply(body: SupplyRequest, resourceType: typings.fhirKitClient.fhirKitClientStrings.SupplyRequest): BodySupplyRequest = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: SupplyRequest): BodySupplyRequest = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "SupplyRequest")
     __obj.asInstanceOf[BodySupplyRequest]
   }
   

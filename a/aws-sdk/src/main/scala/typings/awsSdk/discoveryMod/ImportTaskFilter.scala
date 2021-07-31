@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportTaskFilter extends StObject {
   
   /**
     * The name, status, or import task ID for a specific import task.
     */
-  var name: js.UndefOr[ImportTaskFilterName] = js.native
+  var name: js.UndefOr[ImportTaskFilterName] = js.undefined
   
   /**
     * An array of strings that you can provide to match against a specific name, status, or import task ID to filter the results for your import task queries.
     */
-  var values: js.UndefOr[ImportTaskFilterValueList] = js.native
+  var values: js.UndefOr[ImportTaskFilterValueList] = js.undefined
 }
 object ImportTaskFilter {
   

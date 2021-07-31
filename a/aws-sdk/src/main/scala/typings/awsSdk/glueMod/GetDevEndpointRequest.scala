@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDevEndpointRequest extends StObject {
   
   /**
     * Name of the DevEndpoint to retrieve information for.
     */
-  var EndpointName: GenericString = js.native
+  var EndpointName: GenericString
 }
 object GetDevEndpointRequest {
   

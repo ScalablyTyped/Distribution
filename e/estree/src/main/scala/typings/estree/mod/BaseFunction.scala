@@ -2,22 +2,22 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseFunction extends BaseNode {
+trait BaseFunction
+  extends StObject
+     with BaseNode {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   // The body is either BlockStatement or Expression because arrow functions
   // can have a body that's either. FunctionDeclarations and
   // FunctionExpressions have only BlockStatement bodies.
-  var body: BlockStatement | Expression = js.native
+  var body: BlockStatement | Expression
   
-  var generator: js.UndefOr[Boolean] = js.native
+  var generator: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.Array[Pattern] = js.native
+  var params: js.Array[Pattern]
 }
 object BaseFunction {
   

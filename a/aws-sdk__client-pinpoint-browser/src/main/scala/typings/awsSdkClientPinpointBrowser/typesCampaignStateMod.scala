@@ -8,12 +8,10 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.PE
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.SCHEDULED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCampaignStateMod {
   
-  @js.native
   trait CampaignState extends StObject {
     
     /**
@@ -21,7 +19,7 @@ object typesCampaignStateMod {
       *
       * Valid values: SCHEDULED, EXECUTING, PENDING_NEXT_RUN, COMPLETED, PAUSED
       */
-    var CampaignStatus: js.UndefOr[SCHEDULED | EXECUTING | PENDING_NEXT_RUN | COMPLETED | PAUSED | DELETED | String] = js.native
+    var CampaignStatus: js.UndefOr[SCHEDULED | EXECUTING | PENDING_NEXT_RUN | COMPLETED | PAUSED | DELETED | String] = js.undefined
   }
   object CampaignState {
     

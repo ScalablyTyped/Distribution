@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetInstances extends StObject {
   
   /**
     * The names of one or more Auto Scaling groups to identify a replacement environment for a blue/green deployment.
     */
-  var autoScalingGroups: js.UndefOr[AutoScalingGroupNameList] = js.native
+  var autoScalingGroups: js.UndefOr[AutoScalingGroupNameList] = js.undefined
   
   /**
     * Information about the groups of EC2 instance tags that an instance must be identified by in order for it to be included in the replacement environment for a blue/green deployment. Cannot be used in the same call as tagFilters.
     */
-  var ec2TagSet: js.UndefOr[EC2TagSet] = js.native
+  var ec2TagSet: js.UndefOr[EC2TagSet] = js.undefined
   
   /**
     * The tag filter key, type, and value used to identify Amazon EC2 instances in a replacement environment for a blue/green deployment. Cannot be used in the same call as ec2TagSet.
     */
-  var tagFilters: js.UndefOr[EC2TagFilterList] = js.native
+  var tagFilters: js.UndefOr[EC2TagFilterList] = js.undefined
 }
 object TargetInstances {
   

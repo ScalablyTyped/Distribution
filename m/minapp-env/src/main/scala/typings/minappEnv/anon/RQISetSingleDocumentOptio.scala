@@ -4,16 +4,14 @@ import typings.minappEnv.DB.IUpdateCondition
 import typings.minappEnv.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined minapp-env.RQ<minapp-env.DB.ISetSingleDocumentOptions> */
-@js.native
 trait RQISetSingleDocumentOptio extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var data: IUpdateCondition = js.native
+  var data: IUpdateCondition
 }
 object RQISetSingleDocumentOptio {
   

@@ -2,11 +2,9 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `range.toJSON()`. */
-@js.native
 trait RangeData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RangeData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontData] = js.native
+  var font: js.UndefOr[FontData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait RangeData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var hyperlink: js.UndefOr[String] = js.native
+  var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait RangeData extends StObject {
     *
     * [Api set: WordApi 1.2]
     */
-  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.native
+  var inlinePictures: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait RangeData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var isEmpty: js.UndefOr[Boolean] = js.native
+  var isEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait RangeData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait RangeData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait RangeData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object RangeData {
   

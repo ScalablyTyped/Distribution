@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListEditItemSelectedChangedEventArgs extends ProcessingModeEventArgs {
+trait ListEditItemSelectedChangedEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val index: Double = js.native
+  val index: Double
   
-  val isSelected: Boolean = js.native
+  val isSelected: Boolean
 }
 object ListEditItemSelectedChangedEventArgs {
   

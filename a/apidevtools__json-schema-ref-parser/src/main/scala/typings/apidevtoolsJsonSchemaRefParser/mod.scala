@@ -13,7 +13,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,7 +24,12 @@ object mod {
     */
   @JSImport("@apidevtools/json-schema-ref-parser", JSImport.Namespace)
   @js.native
-  class ^ () extends RefParser
+  class ^ ()
+    extends StObject
+       with RefParser
+  @JSImport("@apidevtools/json-schema-ref-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@apidevtools/json-schema-ref-parser", "InvalidPointerError")
   @js.native
@@ -37,11 +41,19 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "JSONParserError")
   @js.native
-  class JSONParserError () extends Error {
+  class JSONParserError ()
+    extends StObject
+       with Error {
     
     val code: JSONParserErrorType = js.native
     
     val errors: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     val path: js.Array[String | Double] = js.native
     
@@ -50,7 +62,9 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "JSONParserErrorGroup")
   @js.native
-  class JSONParserErrorGroup () extends Error {
+  class JSONParserErrorGroup ()
+    extends StObject
+       with Error {
     
     /**
       * List of all errors
@@ -67,6 +81,12 @@ object mod {
       * See https://apitools.dev/json-schema-ref-parser/docs/ref-parser.html
       */
     val files: RefParser = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@apidevtools/json-schema-ref-parser", "MissingPointerError")
@@ -168,23 +188,18 @@ object mod {
   }
   
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def bundle(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def bundle(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bundle(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def bundle(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: String): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def bundle(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
   /**
     * Bundles all referenced files/URLs into a single schema that only has internal `$ref` pointers. This lets you split-up your schema however you want while you're building it, but easily combine all those files together when it's time to package or distribute the schema to other people. The resulting schema size will be small, since it will still contain internal JSON references rather than being fully-dereferenced.
     *
@@ -197,48 +212,36 @@ object mod {
     * @param callback (optional) A callback that will receive the bundled schema object
     */
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: String, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def bundle(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: String, options: Options): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def bundle(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: String, options: Options, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: JSONSchema): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "bundle")
-  @js.native
-  def bundle(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def bundle(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bundle(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def bundle(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def bundle(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def bundle(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bundle")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def dereference(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def dereference(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dereference(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def dereference(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: String): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def dereference(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
   /**
     * Dereferences all `$ref` pointers in the JSON Schema, replacing each reference with its resolved value. This results in a schema object that does not contain any `$ref` pointers. Instead, it's a normal JavaScript object tree that can easily be crawled and used just like any other JavaScript object. This is great for programmatic usage, especially when using tools that don't understand JSON references.
     *
@@ -251,48 +254,36 @@ object mod {
     * @param callback (optional) A callback that will receive the dereferenced schema object
     */
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: String, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def dereference(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: String, options: Options): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def dereference(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: String, options: Options, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: JSONSchema): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "dereference")
-  @js.native
-  def dereference(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def dereference(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dereference(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def dereference(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dereference(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def dereference(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dereference")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def parse(baseUrl: String, schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def parse(baseUrl: String, schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def parse(baseUrl: String, schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: String): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def parse(schema: String): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -305,48 +296,36 @@ object mod {
     * @param callback (optional) A callback that will receive the parsed schema object, or an error
     */
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: String, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def parse(schema: String, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: String, options: Options): js.Promise[JSONSchema] = js.native
+  @scala.inline
+  def parse(schema: String, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: String, options: Options, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: JSONSchema): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: JSONSchema, callback: SchemaCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "parse")
-  @js.native
-  def parse(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = js.native
+  @scala.inline
+  def parse(schema: String, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(schema: JSONSchema): js.Promise[JSONSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def parse(schema: JSONSchema, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(schema: JSONSchema, options: Options): js.Promise[JSONSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JSONSchema]]
+  @scala.inline
+  def parse(schema: JSONSchema, options: Options, callback: SchemaCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, schema: String, options: Options): js.Promise[Refs] = js.native
+  @scala.inline
+  def resolve(baseUrl: String, schema: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, schema: String, options: Options, callback: RefsCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[Refs] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(baseUrl: String, schema: JSONSchema, options: Options, callback: RefsCallback): Unit = js.native
+  @scala.inline
+  def resolve(baseUrl: String, schema: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(baseUrl: String, schema: JSONSchema, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  @scala.inline
+  def resolve(baseUrl: String, schema: JSONSchema, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(baseUrl.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: String): js.Promise[Refs] = js.native
+  @scala.inline
+  def resolve(schema: String): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
   /**
     * *This method is used internally by other methods, such as `bundle` and `dereference`. You probably won't need to call this method yourself.*
     *
@@ -359,53 +338,46 @@ object mod {
     * @param callback (optional) A callback that will receive a `$Refs` object
     */
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: String, callback: RefsCallback): Unit = js.native
+  @scala.inline
+  def resolve(schema: String, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: String, options: Options): js.Promise[Refs] = js.native
+  @scala.inline
+  def resolve(schema: String, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
   /* static member */
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: String, options: Options, callback: RefsCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: JSONSchema): js.Promise[Refs] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: JSONSchema, callback: RefsCallback): Unit = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: JSONSchema, options: Options): js.Promise[Refs] = js.native
-  @JSImport("@apidevtools/json-schema-ref-parser", "resolve")
-  @js.native
-  def resolve(schema: JSONSchema, options: Options, callback: RefsCallback): Unit = js.native
+  @scala.inline
+  def resolve(schema: String, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(schema: JSONSchema): js.Promise[Refs] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refs]]
+  @scala.inline
+  def resolve(schema: JSONSchema, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolve(schema: JSONSchema, options: Options): js.Promise[Refs] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Refs]]
+  @scala.inline
+  def resolve(schema: JSONSchema, options: Options, callback: RefsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait FileInfo extends StObject {
     
     /**
       * The raw file contents, in whatever form they were returned by the resolver that read the file.
       */
-    var data: String | Buffer = js.native
+    var data: String | Buffer
     
     /**
       * The lowercase file extension, such as ".json", ".yaml", ".txt", etc.
       */
-    var extension: String = js.native
+    var `extension`: String
     
     /**
       * The full URL of the file. This could be any type of URL, including "http://", "https://", "file://", "ftp://", "mongodb://", or even a local filesystem path (when running in Node.js).
       */
-    var url: String = js.native
+    var url: String
   }
   object FileInfo {
     
     @scala.inline
-    def apply(data: String | Buffer, extension: String, url: String): FileInfo = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(data: String | Buffer, `extension`: String, url: String): FileInfo = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileInfo]
     }
     
@@ -424,42 +396,41 @@ object mod {
   }
   
   /* Inlined parent std.Partial<@apidevtools/json-schema-ref-parser.@apidevtools/json-schema-ref-parser.ResolverOptions> */
-  @js.native
   trait HTTPResolverOptions extends StObject {
     
     var canRead: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * You can specify any HTTP headers that should be sent when downloading files. For example, some servers may require you to set the `Accept` or `Referrer` header.
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
     
     var read: js.UndefOr[
         js.Function2[
           /* file */ FileInfo, 
-          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]], 
+          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]], 
           String | Buffer | (js.Promise[String | Buffer])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of HTTP redirects to follow per file. The default is 5. To disable automatic following of redirects, set this to zero.
       */
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of time (in milliseconds) to wait for a response from the server when downloading files. The default is 5 seconds.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Set this to `true` if you're downloading files from a CORS-enabled server that requires authentication
       */
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object HTTPResolverOptions {
     
@@ -498,7 +469,7 @@ object mod {
       
       @scala.inline
       def setRead(
-        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, _]]) => String | Buffer | (js.Promise[String | Buffer])
+        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -560,7 +531,6 @@ object mod {
   
   type JSONSchema = JSONSchema4 | JSONSchema6
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -568,26 +538,26 @@ object mod {
       * causes it to keep processing as much as possible and then throw a single error that contains all errors
       * that were encountered.
       */
-    var continueOnError: js.UndefOr[Boolean] = js.native
+    var continueOnError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The `dereference` options control how JSON Schema `$Ref` Parser will dereference `$ref` pointers within the JSON schema.
       */
-    var dereference: js.UndefOr[Circular] = js.native
+    var dereference: js.UndefOr[Circular] = js.undefined
     
     /**
       * The `parse` options determine how different types of files will be parsed.
       *
       * JSON Schema `$Ref` Parser comes with built-in JSON, YAML, plain-text, and binary parsers, any of which you can configure or disable. You can also add your own custom parsers if you want.
       */
-    var parse: js.UndefOr[Dictkey] = js.native
+    var parse: js.UndefOr[Dictkey] = js.undefined
     
     /**
       * The `resolve` options control how JSON Schema $Ref Parser will resolve file paths and URLs, and how those files will be read/downloaded.
       *
       * JSON Schema `$Ref` Parser comes with built-in support for HTTP and HTTPS, as well as support for local files (when running in Node.js). You can configure or disable either of these built-in resolvers. You can also add your own custom resolvers if you want.
       */
-    var resolve: js.UndefOr[External] = js.native
+    var resolve: js.UndefOr[External] = js.undefined
   }
   object Options {
     
@@ -657,8 +627,8 @@ object mod {
       *
       * Unlike the `canParse` function, the `parse` method can also be asynchronous. This might be important if your parser needs to retrieve data from a database or if it relies on an external HTTP service to return the parsed value.  You can return your asynchronous value via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or a Node.js-style error-first callback.  Here are examples of both approaches:
       */
-    def parse(file: FileInfo): js.Any | js.Promise[_] = js.native
-    def parse(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, _]): js.Any | js.Promise[_] = js.native
+    def parse(file: FileInfo): js.Any | js.Promise[js.Any] = js.native
+    def parse(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): js.Any | js.Promise[js.Any] = js.native
   }
   
   /**
@@ -806,7 +776,7 @@ object mod {
       * Unlike the `canRead` function, the `read` method can also be asynchronous. This might be important if your resolver needs to read data from a database or some other external source. You can return your asynchronous value using either an ES6 Promise or a Node.js-style error-first callback. Of course, if your resolver has the ability to return its data synchronously, then that's fine too. Here are examples of all three approaches:
       */
     def read(file: FileInfo): String | Buffer | (js.Promise[String | Buffer]) = js.native
-    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, _]): String | Buffer | (js.Promise[String | Buffer]) = js.native
+    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): String | Buffer | (js.Promise[String | Buffer]) = js.native
   }
   
   type SchemaCallback = js.Function2[/* err */ Error | Null, /* schema */ js.UndefOr[JSONSchema], js.Any]

@@ -3,10 +3,8 @@ package typings.slickgrid.Slick
 import typings.slickgrid.Slick.Editors.Editor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorLock[T /* <: SlickData */] extends StObject {
   
   /***
@@ -15,7 +13,7 @@ trait EditorLock[T /* <: SlickData */] extends StObject {
     * @method activate
     * @param editController {EditController} edit controller acquiring the lock
     */
-  def activate(editController: Editor[T]): Unit = js.native
+  def activate(editController: Editor[T]): Unit
   
   /***
     * Attempts to cancel the current edit by calling "cancelCurrentEdit" method on the active edit
@@ -24,7 +22,7 @@ trait EditorLock[T /* <: SlickData */] extends StObject {
     * @method cancelCurrentEdit
     * @return {Boolean}
     */
-  def cancelCurrentEdit(): Boolean = js.native
+  def cancelCurrentEdit(): Boolean
   
   /***
     * Attempts to commit the current edit by calling "commitCurrentEdit" method on the active edit
@@ -34,7 +32,7 @@ trait EditorLock[T /* <: SlickData */] extends StObject {
     * @method commitCurrentEdit
     * @return {Boolean}
     */
-  def commitCurrentEdit(): Boolean = js.native
+  def commitCurrentEdit(): Boolean
   
   /***
     * Unsets the specified edit controller as the active edit controller (release edit lock).
@@ -42,7 +40,7 @@ trait EditorLock[T /* <: SlickData */] extends StObject {
     * @method deactivate
     * @param editController {EditController} edit controller releasing the lock
     */
-  def deactivate(editController: Editor[T]): Unit = js.native
+  def deactivate(editController: Editor[T]): Unit
   
   /***
     * Returns true if a specified edit controller is active (has the edit lock).
@@ -51,7 +49,7 @@ trait EditorLock[T /* <: SlickData */] extends StObject {
     * @param editController {EditController}
     * @return {Boolean}
     */
-  def isActive(editController: Editor[T]): Boolean = js.native
+  def isActive(editController: Editor[T]): Boolean
 }
 object EditorLock {
   
@@ -68,7 +66,7 @@ object EditorLock {
   }
   
   @scala.inline
-  implicit class EditorLockMutableBuilder[Self <: EditorLock[_], T /* <: SlickData */] (val x: Self with EditorLock[T]) extends AnyVal {
+  implicit class EditorLockMutableBuilder[Self <: EditorLock[?], T /* <: SlickData */] (val x: Self & EditorLock[T]) extends AnyVal {
     
     @scala.inline
     def setActivate(value: Editor[T] => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))

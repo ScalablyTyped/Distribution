@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveItemUploadableProperties extends StObject {
   
   // Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
-  var fileSize: js.UndefOr[NullableOption[Double]] = js.native
+  var fileSize: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // File system information on client. Read-write.
-  var fileSystemInfo: js.UndefOr[NullableOption[FileSystemInfo]] = js.native
+  var fileSystemInfo: js.UndefOr[NullableOption[FileSystemInfo]] = js.undefined
   
   // The name of the item (filename and extension). Read-write.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DriveItemUploadableProperties {
   

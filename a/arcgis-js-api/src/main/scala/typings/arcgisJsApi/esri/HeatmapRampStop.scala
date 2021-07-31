@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapRampStop extends Object {
+trait HeatmapRampStop
+  extends StObject
+     with Object {
   
   /**
     * The color of the pixel corresponding to the appropriate pixel `ratio`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampStop)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The label of the color stop displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampStop)
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * A number between `0` and `1` describing the position of the label on the ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampStop)
     */
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * The ratio of a pixel's intensity value to the minPixelIntensity of the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampStop)
     */
-  var ratio: Double = js.native
+  var ratio: Double
 }
 object HeatmapRampStop {
   

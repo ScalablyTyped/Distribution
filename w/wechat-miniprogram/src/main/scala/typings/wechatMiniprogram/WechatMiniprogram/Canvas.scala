@@ -2,7 +2,6 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Canvas 实例，可通过 [SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) 获取。
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [在微信开发者工具中查看示例](https://developers.weixin.qq.com/s/qEGUOqmf7T8z)
   *
   * 最低基础库： `2.7.0` */
-@js.native
 trait Canvas extends StObject {
   
   /** [Canvas.cancelAnimationFrame(number requestID)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.cancelAnimationFrame.html)
@@ -26,21 +24,21 @@ trait Canvas extends StObject {
     * 取消由 requestAnimationFrame 添加到计划中的动画帧请求。支持在 2D Canvas 和 WebGL Canvas 下使用, 但不支持混用 2D 和 WebGL 的方法。
     *
     * 最低基础库： `2.7.0` */
-  def cancelAnimationFrame(requestID: Double): Unit = js.native
+  def cancelAnimationFrame(requestID: Double): Unit
   
   /** [[Image](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Image.html) Canvas.createImage()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.createImage.html)
     *
     * 创建一个图片对象。 支持在 2D Canvas 和 WebGL Canvas 下使用, 但不支持混用 2D 和 WebGL 的方法。
     *
     * 最低基础库： `2.7.0` */
-  def createImage(): Image = js.native
+  def createImage(): Image
   
   /** [[ImageData](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/ImageData.html) Canvas.createImageData()](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.createImageData.html)
     *
     * 创建一个 ImageData 对象。仅支持在 2D Canvas 中使用。
     *
     * 最低基础库： `2.9.0` */
-  def createImageData(): ImageData = js.native
+  def createImageData(): ImageData
   
   /** [[Path2D](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Path2D.html) Canvas.createPath2D([Path2D](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Path2D.html) path)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.createPath2D.html)
     *
@@ -52,7 +50,7 @@ trait Canvas extends StObject {
     *
     *  */
   path: Path2D
-  ): Path2D = js.native
+  ): Path2D
   
   /** [[RenderingContext](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/RenderingContext.html) Canvas.getContext(string contextType)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.getContext.html)
     *
@@ -63,10 +61,10 @@ trait Canvas extends StObject {
     * 支持获取 2D 和 WebGL 绘图上下文
     *
     * 最低基础库： `2.7.0` */
-  def getContext(contextType: String): js.Any = js.native
+  def getContext(contextType: String): js.Any
   
   /** 画布高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** [number Canvas.requestAnimationFrame(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.requestAnimationFrame.html)
     *
@@ -74,7 +72,7 @@ trait Canvas extends StObject {
     *
     * 最低基础库： `2.7.0` */
   def requestAnimationFrame(/** 执行的 callback */
-  callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Double
   
   /** [string Canvas.toDataURL(string type, number encoderOptions)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/Canvas.toDataURL.html)
     *
@@ -86,10 +84,10 @@ trait Canvas extends StObject {
   `type`: String,
     /** 在指定图片格式为 image/jpeg 或 image/webp的情况下，可以从 0 到 1 的区间内选择图片的质量。如果超出取值范围，将会使用默认值 0.92。其他参数会被忽略。 */
   encoderOptions: Double
-  ): String = js.native
+  ): String
   
   /** 画布宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object Canvas {
   
@@ -101,7 +99,7 @@ object Canvas {
     createPath2D: Path2D => Path2D,
     getContext: String => js.Any,
     height: Double,
-    requestAnimationFrame: js.Function1[/* repeated */ js.Any, _] => Double,
+    requestAnimationFrame: js.Function1[/* repeated */ js.Any, js.Any] => Double,
     toDataURL: (String, Double) => String,
     width: Double
   ): Canvas = {
@@ -131,7 +129,7 @@ object Canvas {
     def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, _] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+    def setRequestAnimationFrame(value: js.Function1[/* repeated */ js.Any, js.Any] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
     def setToDataURL(value: (String, Double) => String): Self = StObject.set(x, "toDataURL", js.Any.fromFunction2(value))

@@ -2,25 +2,23 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for text properties.
   */
-@js.native
 trait SchemaTextPropertyOptions extends StObject {
   
   /**
     * If set, describes how the property should be used as a search operator.
     */
-  var operatorOptions: js.UndefOr[SchemaTextOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[SchemaTextOperatorOptions] = js.undefined
   
   /**
     * Indicates the search quality importance of the tokens within the field
     * when used for retrieval.
     */
-  var retrievalImportance: js.UndefOr[SchemaRetrievalImportance] = js.native
+  var retrievalImportance: js.UndefOr[SchemaRetrievalImportance] = js.undefined
 }
 object SchemaTextPropertyOptions {
   

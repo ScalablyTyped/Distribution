@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -12,10 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.typescript.mod.NamedDeclaration because Already inherited
 - typings.typescript.mod.DeclarationStatement because var conflicts: _declarationBrand. Inlined  */ @js.native
 trait FunctionDeclaration
-  extends FunctionLikeDeclarationBase
+  extends StObject
+     with FunctionLikeDeclarationBase
      with FunctionLikeDeclaration
+     with HasJSDoc
      with SignatureDeclaration
-     with _HasJSDoc
      with Statement {
   
   @JSName("body")

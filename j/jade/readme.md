@@ -10,8 +10,8 @@ A clean, whitespace-sensitive template language for writing HTML
 | Full name          | jade |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2850 |
-| # downloads        | 36517289 |
+| # dependents       | 2862 |
+| # downloads        | 40192822 |
 | # stars            | 297 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegistrationsResponse extends StObject {
   
   /** When present, there are more results to retrieve. Set `page_token` to this value on a subsequent call to get the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of `Registration`s. */
-  var registrations: js.UndefOr[js.Array[Registration]] = js.native
+  var registrations: js.UndefOr[js.Array[Registration]] = js.undefined
 }
 object ListRegistrationsResponse {
   

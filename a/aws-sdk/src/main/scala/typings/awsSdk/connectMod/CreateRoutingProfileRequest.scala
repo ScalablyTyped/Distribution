@@ -2,46 +2,44 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRoutingProfileRequest extends StObject {
   
   /**
     * The default outbound queue for the routing profile.
     */
-  var DefaultOutboundQueueId: QueueId = js.native
+  var DefaultOutboundQueueId: QueueId
   
   /**
     * Description of the routing profile. Must not be more than 250 characters.
     */
-  var Description: RoutingProfileDescription = js.native
+  var Description: RoutingProfileDescription
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The channels agents can handle in the Contact Control Panel (CCP) for this routing profile.
     */
-  var MediaConcurrencies: typings.awsSdk.connectMod.MediaConcurrencies = js.native
+  var MediaConcurrencies: typings.awsSdk.connectMod.MediaConcurrencies
   
   /**
     * The name of the routing profile. Must not be more than 127 characters.
     */
-  var Name: RoutingProfileName = js.native
+  var Name: RoutingProfileName
   
   /**
     * The inbound queues associated with the routing profile. If no queue is added, the agent can only make outbound calls.
     */
-  var QueueConfigs: js.UndefOr[RoutingProfileQueueConfigList] = js.native
+  var QueueConfigs: js.UndefOr[RoutingProfileQueueConfigList] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateRoutingProfileRequest {
   

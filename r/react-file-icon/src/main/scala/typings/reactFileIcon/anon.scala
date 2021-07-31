@@ -3,40 +3,38 @@ package typings.reactFileIcon
 import typings.reactFileIcon.mod.IconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-file-icon.react-file-icon.FileIconProps> */
-  @js.native
   trait PartialFileIconProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
-    var fold: js.UndefOr[Boolean] = js.native
+    var fold: js.UndefOr[Boolean] = js.undefined
     
-    var foldColor: js.UndefOr[String] = js.native
+    var foldColor: js.UndefOr[String] = js.undefined
     
-    var glyphColor: js.UndefOr[String] = js.native
+    var glyphColor: js.UndefOr[String] = js.undefined
     
-    var gradientColor: js.UndefOr[String] = js.native
+    var gradientColor: js.UndefOr[String] = js.undefined
     
-    var gradientOpacity: js.UndefOr[Double] = js.native
+    var gradientOpacity: js.UndefOr[Double] = js.undefined
     
-    var labelColor: js.UndefOr[String] = js.native
+    var labelColor: js.UndefOr[String] = js.undefined
     
-    var labelTextColor: js.UndefOr[String] = js.native
+    var labelTextColor: js.UndefOr[String] = js.undefined
     
-    var labelTextStyle: js.UndefOr[js.Object] = js.native
+    var labelTextStyle: js.UndefOr[js.Object] = js.undefined
     
-    var labelUppercase: js.UndefOr[Boolean] = js.native
+    var labelUppercase: js.UndefOr[Boolean] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[IconType] = js.native
+    var `type`: js.UndefOr[IconType] = js.undefined
   }
   object PartialFileIconProps {
     

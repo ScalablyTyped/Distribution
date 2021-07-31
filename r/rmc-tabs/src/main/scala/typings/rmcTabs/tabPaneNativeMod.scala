@@ -3,7 +3,6 @@ package typings.rmcTabs
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPaneNativeMod {
@@ -20,16 +19,15 @@ object tabPaneNativeMod {
     def this(props: PropsType, context: js.Any) = this()
   }
   
-  @js.native
   trait PropsType extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PropsType {
     

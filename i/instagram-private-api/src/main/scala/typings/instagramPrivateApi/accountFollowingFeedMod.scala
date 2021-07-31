@@ -9,7 +9,6 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.default
 import typings.instagramPrivateApi.responsesMod.AccountFollowingFeedResponseUsersItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountFollowingFeedMod {

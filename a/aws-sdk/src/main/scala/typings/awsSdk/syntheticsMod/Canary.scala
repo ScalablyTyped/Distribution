@@ -2,77 +2,75 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canary extends StObject {
   
   /**
     * The location in Amazon S3 where Synthetics stores artifacts from the runs of this canary. Artifacts include the log file, screenshots, and HAR files.
     */
-  var ArtifactS3Location: js.UndefOr[String] = js.native
+  var ArtifactS3Location: js.UndefOr[String] = js.undefined
   
-  var Code: js.UndefOr[CanaryCodeOutput] = js.native
+  var Code: js.UndefOr[CanaryCodeOutput] = js.undefined
   
   /**
     * The ARN of the Lambda function that is used as your canary's engine. For more information about Lambda ARN format, see Resources and Conditions for Lambda Actions.
     */
-  var EngineArn: js.UndefOr[FunctionArn] = js.native
+  var EngineArn: js.UndefOr[FunctionArn] = js.undefined
   
   /**
     * The ARN of the IAM role used to run the canary. This role must include lambda.amazonaws.com as a principal in the trust policy.
     */
-  var ExecutionRoleArn: js.UndefOr[RoleArn] = js.native
+  var ExecutionRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The number of days to retain data about failed runs of this canary.
     */
-  var FailureRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.native
+  var FailureRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined
   
   /**
     * The unique ID of this canary.
     */
-  var Id: js.UndefOr[UUID] = js.native
+  var Id: js.UndefOr[UUID] = js.undefined
   
   /**
     * The name of the canary.
     */
-  var Name: js.UndefOr[CanaryName] = js.native
+  var Name: js.UndefOr[CanaryName] = js.undefined
   
-  var RunConfig: js.UndefOr[CanaryRunConfigOutput] = js.native
+  var RunConfig: js.UndefOr[CanaryRunConfigOutput] = js.undefined
   
   /**
     * Specifies the runtime version to use for the canary. For more information about runtime versions, see  Canary Runtime Versions.
     */
-  var RuntimeVersion: js.UndefOr[String] = js.native
+  var RuntimeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * A structure that contains information about how often the canary is to run, and when these runs are to stop.
     */
-  var Schedule: js.UndefOr[CanaryScheduleOutput] = js.native
+  var Schedule: js.UndefOr[CanaryScheduleOutput] = js.undefined
   
   /**
     * A structure that contains information about the canary's status.
     */
-  var Status: js.UndefOr[CanaryStatus] = js.native
+  var Status: js.UndefOr[CanaryStatus] = js.undefined
   
   /**
     * The number of days to retain data about successful runs of this canary.
     */
-  var SuccessRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.native
+  var SuccessRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined
   
   /**
     * The list of key-value pairs that are associated with the canary.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * A structure that contains information about when the canary was created, modified, and most recently run.
     */
-  var Timeline: js.UndefOr[CanaryTimeline] = js.native
+  var Timeline: js.UndefOr[CanaryTimeline] = js.undefined
   
-  var VpcConfig: js.UndefOr[VpcConfigOutput] = js.native
+  var VpcConfig: js.UndefOr[VpcConfigOutput] = js.undefined
 }
 object Canary {
   

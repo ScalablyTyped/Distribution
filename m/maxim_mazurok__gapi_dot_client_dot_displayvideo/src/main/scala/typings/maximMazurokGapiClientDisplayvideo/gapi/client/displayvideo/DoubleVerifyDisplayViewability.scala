@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleVerifyDisplayViewability extends StObject {
   
   /** Target web and app inventory to maximize IAB viewable rate. */
-  var iab: js.UndefOr[String] = js.native
+  var iab: js.UndefOr[String] = js.undefined
   
   /** Target web and app inventory to maximize 100% viewable duration. */
-  var viewableDuring: js.UndefOr[String] = js.native
+  var viewableDuring: js.UndefOr[String] = js.undefined
 }
 object DoubleVerifyDisplayViewability {
   

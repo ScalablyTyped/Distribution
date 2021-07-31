@@ -5,7 +5,6 @@ import typings.tinymce.mod.Editor
 import typings.tinymce.mod.Settings_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,140 +16,139 @@ object mod {
   
   type EventHandler = js.Function2[/* event */ js.Any, /* editor */ Editor, Unit]
   
-  @js.native
   trait ReactMCEProps extends StObject {
     
     // Non-events
-    var config: Settings_ = js.native
+    var config: Settings_
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var onActivate: js.UndefOr[EventHandler] = js.native
+    var onActivate: js.UndefOr[EventHandler] = js.undefined
     
-    var onAddUndo: js.UndefOr[EventHandler] = js.native
+    var onAddUndo: js.UndefOr[EventHandler] = js.undefined
     
-    var onBeforeAddUndo: js.UndefOr[EventHandler] = js.native
+    var onBeforeAddUndo: js.UndefOr[EventHandler] = js.undefined
     
-    var onBeforeExecCommand: js.UndefOr[EventHandler] = js.native
+    var onBeforeExecCommand: js.UndefOr[EventHandler] = js.undefined
     
-    var onBeforeGetContent: js.UndefOr[EventHandler] = js.native
+    var onBeforeGetContent: js.UndefOr[EventHandler] = js.undefined
     
-    var onBeforeRenderUI: js.UndefOr[EventHandler] = js.native
+    var onBeforeRenderUI: js.UndefOr[EventHandler] = js.undefined
     
-    var onBeforeSetContent: js.UndefOr[EventHandler] = js.native
+    var onBeforeSetContent: js.UndefOr[EventHandler] = js.undefined
     
-    var onBeforepaste: js.UndefOr[EventHandler] = js.native
+    var onBeforepaste: js.UndefOr[EventHandler] = js.undefined
     
-    var onBlur: js.UndefOr[EventHandler] = js.native
+    var onBlur: js.UndefOr[EventHandler] = js.undefined
     
-    var onChange: js.UndefOr[EventHandler] = js.native
+    var onChange: js.UndefOr[EventHandler] = js.undefined
     
-    var onClearUndos: js.UndefOr[EventHandler] = js.native
+    var onClearUndos: js.UndefOr[EventHandler] = js.undefined
     
-    var onClick: js.UndefOr[EventHandler] = js.native
+    var onClick: js.UndefOr[EventHandler] = js.undefined
     
-    var onContextmenu: js.UndefOr[EventHandler] = js.native
+    var onContextmenu: js.UndefOr[EventHandler] = js.undefined
     
-    var onCopy: js.UndefOr[EventHandler] = js.native
+    var onCopy: js.UndefOr[EventHandler] = js.undefined
     
-    var onCut: js.UndefOr[EventHandler] = js.native
+    var onCut: js.UndefOr[EventHandler] = js.undefined
     
-    var onDblclick: js.UndefOr[EventHandler] = js.native
+    var onDblclick: js.UndefOr[EventHandler] = js.undefined
     
-    var onDeactivate: js.UndefOr[EventHandler] = js.native
+    var onDeactivate: js.UndefOr[EventHandler] = js.undefined
     
-    var onDirty: js.UndefOr[EventHandler] = js.native
+    var onDirty: js.UndefOr[EventHandler] = js.undefined
     
-    var onDrag: js.UndefOr[EventHandler] = js.native
+    var onDrag: js.UndefOr[EventHandler] = js.undefined
     
-    var onDragdrop: js.UndefOr[EventHandler] = js.native
+    var onDragdrop: js.UndefOr[EventHandler] = js.undefined
     
-    var onDragend: js.UndefOr[EventHandler] = js.native
+    var onDragend: js.UndefOr[EventHandler] = js.undefined
     
-    var onDraggesture: js.UndefOr[EventHandler] = js.native
+    var onDraggesture: js.UndefOr[EventHandler] = js.undefined
     
-    var onDragover: js.UndefOr[EventHandler] = js.native
+    var onDragover: js.UndefOr[EventHandler] = js.undefined
     
-    var onDrop: js.UndefOr[EventHandler] = js.native
+    var onDrop: js.UndefOr[EventHandler] = js.undefined
     
-    var onExecCommand: js.UndefOr[EventHandler] = js.native
+    var onExecCommand: js.UndefOr[EventHandler] = js.undefined
     
-    var onFocus: js.UndefOr[EventHandler] = js.native
+    var onFocus: js.UndefOr[EventHandler] = js.undefined
     
     // Events
-    var onFocusin: js.UndefOr[EventHandler] = js.native
+    var onFocusin: js.UndefOr[EventHandler] = js.undefined
     
-    var onFocusout: js.UndefOr[EventHandler] = js.native
+    var onFocusout: js.UndefOr[EventHandler] = js.undefined
     
-    var onGetContent: js.UndefOr[EventHandler] = js.native
+    var onGetContent: js.UndefOr[EventHandler] = js.undefined
     
-    var onHide: js.UndefOr[EventHandler] = js.native
+    var onHide: js.UndefOr[EventHandler] = js.undefined
     
-    var onInit: js.UndefOr[EventHandler] = js.native
+    var onInit: js.UndefOr[EventHandler] = js.undefined
     
-    var onKeydown: js.UndefOr[EventHandler] = js.native
+    var onKeydown: js.UndefOr[EventHandler] = js.undefined
     
-    var onKeypress: js.UndefOr[EventHandler] = js.native
+    var onKeypress: js.UndefOr[EventHandler] = js.undefined
     
-    var onKeyup: js.UndefOr[EventHandler] = js.native
+    var onKeyup: js.UndefOr[EventHandler] = js.undefined
     
-    var onLoadContent: js.UndefOr[EventHandler] = js.native
+    var onLoadContent: js.UndefOr[EventHandler] = js.undefined
     
-    var onMousedown: js.UndefOr[EventHandler] = js.native
+    var onMousedown: js.UndefOr[EventHandler] = js.undefined
     
-    var onMouseenter: js.UndefOr[EventHandler] = js.native
+    var onMouseenter: js.UndefOr[EventHandler] = js.undefined
     
-    var onMouseleave: js.UndefOr[EventHandler] = js.native
+    var onMouseleave: js.UndefOr[EventHandler] = js.undefined
     
-    var onMousemove: js.UndefOr[EventHandler] = js.native
+    var onMousemove: js.UndefOr[EventHandler] = js.undefined
     
-    var onMouseout: js.UndefOr[EventHandler] = js.native
+    var onMouseout: js.UndefOr[EventHandler] = js.undefined
     
-    var onMouseover: js.UndefOr[EventHandler] = js.native
+    var onMouseover: js.UndefOr[EventHandler] = js.undefined
     
-    var onMouseup: js.UndefOr[EventHandler] = js.native
+    var onMouseup: js.UndefOr[EventHandler] = js.undefined
     
-    var onNodeChange: js.UndefOr[EventHandler] = js.native
+    var onNodeChange: js.UndefOr[EventHandler] = js.undefined
     
-    var onObjectResizeStart: js.UndefOr[EventHandler] = js.native
+    var onObjectResizeStart: js.UndefOr[EventHandler] = js.undefined
     
-    var onObjectResized: js.UndefOr[EventHandler] = js.native
+    var onObjectResized: js.UndefOr[EventHandler] = js.undefined
     
-    var onObjectSelected: js.UndefOr[EventHandler] = js.native
+    var onObjectSelected: js.UndefOr[EventHandler] = js.undefined
     
-    var onPaste: js.UndefOr[EventHandler] = js.native
+    var onPaste: js.UndefOr[EventHandler] = js.undefined
     
-    var onPostProcess: js.UndefOr[EventHandler] = js.native
+    var onPostProcess: js.UndefOr[EventHandler] = js.undefined
     
-    var onPostRender: js.UndefOr[EventHandler] = js.native
+    var onPostRender: js.UndefOr[EventHandler] = js.undefined
     
-    var onPreInit: js.UndefOr[EventHandler] = js.native
+    var onPreInit: js.UndefOr[EventHandler] = js.undefined
     
-    var onPreProcess: js.UndefOr[EventHandler] = js.native
+    var onPreProcess: js.UndefOr[EventHandler] = js.undefined
     
-    var onProgressState: js.UndefOr[EventHandler] = js.native
+    var onProgressState: js.UndefOr[EventHandler] = js.undefined
     
-    var onRedo: js.UndefOr[EventHandler] = js.native
+    var onRedo: js.UndefOr[EventHandler] = js.undefined
     
-    var onRemove: js.UndefOr[EventHandler] = js.native
+    var onRemove: js.UndefOr[EventHandler] = js.undefined
     
-    var onReset: js.UndefOr[EventHandler] = js.native
+    var onReset: js.UndefOr[EventHandler] = js.undefined
     
-    var onSaveContent: js.UndefOr[EventHandler] = js.native
+    var onSaveContent: js.UndefOr[EventHandler] = js.undefined
     
-    var onSelectionchange: js.UndefOr[EventHandler] = js.native
+    var onSelectionchange: js.UndefOr[EventHandler] = js.undefined
     
-    var onSetAttrib: js.UndefOr[EventHandler] = js.native
+    var onSetAttrib: js.UndefOr[EventHandler] = js.undefined
     
-    var onSetContent: js.UndefOr[EventHandler] = js.native
+    var onSetContent: js.UndefOr[EventHandler] = js.undefined
     
-    var onShow: js.UndefOr[EventHandler] = js.native
+    var onShow: js.UndefOr[EventHandler] = js.undefined
     
-    var onSubmit: js.UndefOr[EventHandler] = js.native
+    var onSubmit: js.UndefOr[EventHandler] = js.undefined
     
-    var onUndo: js.UndefOr[EventHandler] = js.native
+    var onUndo: js.UndefOr[EventHandler] = js.undefined
     
-    var onVisualAid: js.UndefOr[EventHandler] = js.native
+    var onVisualAid: js.UndefOr[EventHandler] = js.undefined
   }
   object ReactMCEProps {
     

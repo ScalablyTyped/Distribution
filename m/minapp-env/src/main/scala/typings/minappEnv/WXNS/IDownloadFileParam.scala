@@ -2,15 +2,15 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDownloadFileParam extends IAPIParam[IDownloadFileSuccessResult] {
+trait IDownloadFileParam
+  extends StObject
+     with IAPIParam[IDownloadFileSuccessResult] {
   
-  var header: js.UndefOr[AnyObject] = js.native
+  var header: js.UndefOr[AnyObject] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object IDownloadFileParam {
   

@@ -2,121 +2,119 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomationExecutionMetadata extends StObject {
   
   /**
     * The execution ID.
     */
-  var AutomationExecutionId: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionId] = js.native
+  var AutomationExecutionId: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionId] = js.undefined
   
   /**
     * The status of the execution.
     */
-  var AutomationExecutionStatus: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionStatus] = js.native
+  var AutomationExecutionStatus: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionStatus] = js.undefined
   
   /**
     * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that runs in multiple AWS Regions and accounts. For more information, see Running Automation workflows in multiple AWS Regions and accounts in the AWS Systems Manager User Guide. 
     */
-  var AutomationType: js.UndefOr[typings.awsSdk.ssmMod.AutomationType] = js.native
+  var AutomationType: js.UndefOr[typings.awsSdk.ssmMod.AutomationType] = js.undefined
   
   /**
     * The action of the step that is currently running.
     */
-  var CurrentAction: js.UndefOr[String] = js.native
+  var CurrentAction: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the step that is currently running.
     */
-  var CurrentStepName: js.UndefOr[String] = js.native
+  var CurrentStepName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Automation document used during execution.
     */
-  var DocumentName: js.UndefOr[typings.awsSdk.ssmMod.DocumentName] = js.native
+  var DocumentName: js.UndefOr[typings.awsSdk.ssmMod.DocumentName] = js.undefined
   
   /**
     * The document version used during the execution.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The IAM role ARN of the user who ran the Automation.
     */
-  var ExecutedBy: js.UndefOr[String] = js.native
+  var ExecutedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The time the execution finished. This is not populated if the execution is still in progress.
     */
-  var ExecutionEndTime: js.UndefOr[DateTime] = js.native
+  var ExecutionEndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The time the execution started.
     */
-  var ExecutionStartTime: js.UndefOr[DateTime] = js.native
+  var ExecutionStartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The list of execution outputs as defined in the Automation document.
     */
-  var FailureMessage: js.UndefOr[String] = js.native
+  var FailureMessage: js.UndefOr[String] = js.undefined
   
   /**
     * An S3 bucket where execution information is stored.
     */
-  var LogFile: js.UndefOr[String] = js.native
+  var LogFile: js.UndefOr[String] = js.undefined
   
   /**
     * The MaxConcurrency value specified by the user when starting the Automation.
     */
-  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.native
+  var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.undefined
   
   /**
     * The MaxErrors value specified by the user when starting the Automation.
     */
-  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.native
+  var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.undefined
   
   /**
     * The Automation execution mode.
     */
-  var Mode: js.UndefOr[ExecutionMode] = js.native
+  var Mode: js.UndefOr[ExecutionMode] = js.undefined
   
   /**
     * The list of execution outputs as defined in the Automation document.
     */
-  var Outputs: js.UndefOr[AutomationParameterMap] = js.native
+  var Outputs: js.UndefOr[AutomationParameterMap] = js.undefined
   
   /**
     * The ExecutionId of the parent Automation.
     */
-  var ParentAutomationExecutionId: js.UndefOr[AutomationExecutionId] = js.native
+  var ParentAutomationExecutionId: js.UndefOr[AutomationExecutionId] = js.undefined
   
   /**
     * A list of targets that resolved during the execution.
     */
-  var ResolvedTargets: js.UndefOr[typings.awsSdk.ssmMod.ResolvedTargets] = js.native
+  var ResolvedTargets: js.UndefOr[typings.awsSdk.ssmMod.ResolvedTargets] = js.undefined
   
   /**
     * The list of execution outputs as defined in the Automation document.
     */
-  var Target: js.UndefOr[String] = js.native
+  var Target: js.UndefOr[String] = js.undefined
   
   /**
     * The specified key-value mapping of document parameters to target resources.
     */
-  var TargetMaps: js.UndefOr[typings.awsSdk.ssmMod.TargetMaps] = js.native
+  var TargetMaps: js.UndefOr[typings.awsSdk.ssmMod.TargetMaps] = js.undefined
   
   /**
     * The list of execution outputs as defined in the Automation document.
     */
-  var TargetParameterName: js.UndefOr[AutomationParameterKey] = js.native
+  var TargetParameterName: js.UndefOr[AutomationParameterKey] = js.undefined
   
   /**
     * The targets defined by the user when starting the Automation.
     */
-  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
 }
 object AutomationExecutionMetadata {
   

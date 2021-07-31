@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to provide the details about a new voice mail message on a phone line. */
-@js.native
 trait PhoneNewVoicemailMessageTriggerDetails extends StObject {
   
   /** Gets the ID of the phone line for which the new voice mail arrived. */
-  var lineId: String = js.native
+  var lineId: String
   
   /** Gets the optional voice mail changed message set by an operator when they send a voice mail changed SMS. */
-  var operatorMessage: String = js.native
+  var operatorMessage: String
   
   /** Gets the new count of voice mail messages for the phone line. */
-  var voicemailCount: Double = js.native
+  var voicemailCount: Double
 }
 object PhoneNewVoicemailMessageTriggerDetails {
   

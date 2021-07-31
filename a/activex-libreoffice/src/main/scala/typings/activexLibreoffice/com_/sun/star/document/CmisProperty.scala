@@ -2,39 +2,37 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a CMIS property. */
-@js.native
 trait CmisProperty extends StObject {
   
   /** specifies the possible choices of the values. */
-  var Choices: js.Any = js.native
+  var Choices: js.Any
   
   /** unique ID of the Cmis property */
-  var Id: String = js.native
+  var Id: String
   
   /** specifies if the property has multiple value */
-  var MultiValued: Boolean = js.native
+  var MultiValued: Boolean
   
   /** specifies the display name of the CMIS property. */
-  var Name: String = js.native
+  var Name: String
   
   /** specifies if the property value can be freely set or is restricted from a list of choices. */
-  var OpenChoice: Boolean = js.native
+  var OpenChoice: Boolean
   
   /** specifies if the property is required and can not be empty. */
-  var Required: Boolean = js.native
+  var Required: Boolean
   
   /** type of the property */
-  var Type: String = js.native
+  var Type: String
   
   /** specifies if the property is updatable. */
-  var Updatable: Boolean = js.native
+  var Updatable: Boolean
   
   /** specifies value of the property */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object CmisProperty {
   

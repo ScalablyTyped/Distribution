@@ -2,15 +2,13 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStorage extends StObject {
   
-  var data: js.UndefOr[CreateStorageData] = js.native
+  var data: js.UndefOr[CreateStorageData] = js.undefined
   
-  var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.native
+  var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.undefined
 }
 object CreateStorage {
   

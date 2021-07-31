@@ -5,9 +5,9 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.keyValueFilesystemMod.SimpleSyncStore
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueFileSystem
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueStore
+import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localStorageMod {
@@ -21,12 +21,15 @@ object localStorageMod {
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/LocalStorage", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a LocalStorageFileSystem instance.
       */
-    @JSImport("browserfs/dist/node/backend/LocalStorage", "default.Create")
-    @js.native
-    def Create(options: js.Any, cb: BFSCallback[LocalStorageFileSystem]): Unit = js.native
+    @scala.inline
+    def Create(options: js.Any, cb: BFSCallback[LocalStorageFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/LocalStorage", "default.Name")
     @js.native
@@ -36,16 +39,26 @@ object localStorageMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/LocalStorage", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/LocalStorage", "LocalStorageStore")
   @js.native
   class LocalStorageStore ()
-    extends SyncKeyValueStore
-       with SimpleSyncStore
+    extends StObject
+       with SyncKeyValueStore
+       with SimpleSyncStore {
+    
+    /* CompleteClass */
+    override def del(key: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def get(key: String): js.UndefOr[Buffer] = js.native
+    
+    /* CompleteClass */
+    override def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
+  }
   
   type LocalStorageFileSystem = SyncKeyValueFileSystem
 }

@@ -10,9 +10,9 @@ Typings are for version 6.0.6
 | ------------------ | :-------------: |
 | Full name          | downshift |
 | Keywords           | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
-| # releases         | 111 |
-| # dependents       | 376 |
-| # downloads        | 18344621 |
+| # releases         | 109 |
+| # dependents       | 417 |
+| # downloads        | 26348561 |
 | # stars            | 12 |
 
 ## Links

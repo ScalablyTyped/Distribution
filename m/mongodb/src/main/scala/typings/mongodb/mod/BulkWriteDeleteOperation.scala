@@ -2,15 +2,13 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteDeleteOperation[TSchema] extends StObject {
   
-  var collation: js.UndefOr[js.Object] = js.native
+  var collation: js.UndefOr[js.Object] = js.undefined
   
-  var filter: FilterQuery[TSchema] = js.native
+  var filter: FilterQuery[TSchema]
 }
 object BulkWriteDeleteOperation {
   
@@ -21,7 +19,7 @@ object BulkWriteDeleteOperation {
   }
   
   @scala.inline
-  implicit class BulkWriteDeleteOperationMutableBuilder[Self <: BulkWriteDeleteOperation[_], TSchema] (val x: Self with BulkWriteDeleteOperation[TSchema]) extends AnyVal {
+  implicit class BulkWriteDeleteOperationMutableBuilder[Self <: BulkWriteDeleteOperation[?], TSchema] (val x: Self & BulkWriteDeleteOperation[TSchema]) extends AnyVal {
     
     @scala.inline
     def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])

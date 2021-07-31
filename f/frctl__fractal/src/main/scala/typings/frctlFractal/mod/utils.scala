@@ -4,72 +4,58 @@ import typings.frctlFractal.anon.Args
 import typings.frctlFractal.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
   
-  @JSImport("@frctl/fractal", "utils.defaultsDeep")
+  @JSImport("@frctl/fractal", "utils")
   @js.native
-  def defaultsDeep[T](args: T*): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@frctl/fractal", "utils.escapeForRegexp")
-  @js.native
-  def escapeForRegexp(str: String): String = js.native
+  @scala.inline
+  def defaultsDeep[T](args: T*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultsDeep")(args.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@frctl/fractal", "utils.fileExistsSync")
-  @js.native
-  def fileExistsSync(path: String): Boolean = js.native
+  @scala.inline
+  def escapeForRegexp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForRegexp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@frctl/fractal", "utils.isPromise")
-  @js.native
-  def isPromise(value: js.Any): /* is std.PromiseLike<any> */ Boolean = js.native
-  @JSImport("@frctl/fractal", "utils.isPromise")
-  @js.native
-  def isPromise[T](value: T): /* is std.PromiseLike<T> */ Boolean = js.native
-  @JSImport("@frctl/fractal", "utils.isPromise")
-  @js.native
-  def isPromise[T](value: js.Thenable[T]): /* is std.PromiseLike<T> */ Boolean = js.native
+  @scala.inline
+  def fileExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@frctl/fractal", "utils.lang")
-  @js.native
-  def lang(filePath: String): Color = js.native
+  @scala.inline
+  def isPromise(value: js.Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
+  @scala.inline
+  def isPromise[T](value: T): /* is std.PromiseLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<T> */ Boolean]
+  @scala.inline
+  def isPromise[T](value: js.Thenable[T]): /* is std.PromiseLike<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<T> */ Boolean]
   
-  @JSImport("@frctl/fractal", "utils.md5")
-  @js.native
-  def md5(str: String): String = js.native
+  @scala.inline
+  def lang(filePath: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")(filePath.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @JSImport("@frctl/fractal", "utils.mergeProp")
-  @js.native
-  def mergeProp(prop: js.Any, upstream: js.Any): js.Any = js.native
+  @scala.inline
+  def md5(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("md5")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@frctl/fractal", "utils.parseArgv")
-  @js.native
-  def parseArgv(): Args = js.native
+  @scala.inline
+  def mergeProp(prop: js.Any, upstream: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeProp")(prop.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@frctl/fractal", "utils.relUrlPath")
-  @js.native
-  def relUrlPath(toPath: String, fromPath: String): String = js.native
-  @JSImport("@frctl/fractal", "utils.relUrlPath")
-  @js.native
-  def relUrlPath(toPath: String, fromPath: String, opts: js.Any): String = js.native
+  @scala.inline
+  def parseArgv(): Args = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgv")().asInstanceOf[Args]
   
-  @JSImport("@frctl/fractal", "utils.slugify")
-  @js.native
-  def slugify(str: String): String = js.native
+  @scala.inline
+  def relUrlPath(toPath: String, fromPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relUrlPath")(toPath.asInstanceOf[js.Any], fromPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def relUrlPath(toPath: String, fromPath: String, opts: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relUrlPath")(toPath.asInstanceOf[js.Any], fromPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@frctl/fractal", "utils.stringify")
-  @js.native
-  def stringify(data: js.Any): String = js.native
-  @JSImport("@frctl/fractal", "utils.stringify")
-  @js.native
-  def stringify(data: js.Any, indent: Double): String = js.native
+  @scala.inline
+  def slugify(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@frctl/fractal", "utils.titlize")
-  @js.native
-  def titlize(str: String): String = js.native
+  @scala.inline
+  def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(data: js.Any, indent: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@frctl/fractal", "utils.toJSON")
-  @js.native
-  def toJSON(item: js.Any): js.Object = js.native
+  @scala.inline
+  def titlize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titlize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def toJSON(item: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(item.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

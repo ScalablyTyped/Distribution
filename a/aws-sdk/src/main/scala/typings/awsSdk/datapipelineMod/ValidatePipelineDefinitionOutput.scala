@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatePipelineDefinitionOutput extends StObject {
   
   /**
     * Indicates whether there were validation errors.
     */
-  var errored: Boolean = js.native
+  var errored: Boolean
   
   /**
     * Any validation errors that were found.
     */
-  var validationErrors: js.UndefOr[ValidationErrors] = js.native
+  var validationErrors: js.UndefOr[ValidationErrors] = js.undefined
   
   /**
     * Any validation warnings that were found.
     */
-  var validationWarnings: js.UndefOr[ValidationWarnings] = js.native
+  var validationWarnings: js.UndefOr[ValidationWarnings] = js.undefined
 }
 object ValidatePipelineDefinitionOutput {
   

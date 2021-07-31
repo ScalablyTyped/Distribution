@@ -5,6 +5,7 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoMessaging.mod.ConflatableMessage
 import typings.luminoMessaging.mod.IMessageHandler
 import typings.luminoMessaging.mod.Message
+import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.titleMod.Title
 import typings.luminoWidgets.widgetMod.Widget.ChildMessage
@@ -15,7 +16,6 @@ import typings.std.DOMStringMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetMod {
@@ -28,8 +28,9 @@ object widgetMod {
     * @param options - The options for initializing the widget.
     */
   class Widget ()
-    extends IObservableDisposable
-       with IMessageHandler {
+    extends StObject
+       with IMessageHandler
+       with IObservableDisposable {
     def this(options: IOptions) = this()
     
     var _disposed: js.Any = js.native
@@ -103,6 +104,26 @@ object widgetMod {
     val dataset: DOMStringMap = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * A signal emitted when the object is disposed.
+      */
+    /* CompleteClass */
+    override val disposed: ISignal[this.type, Unit] = js.native
+    
+    /**
       * Post a `'fit-request'` message to the widget.
       *
       * #### Notes
@@ -141,6 +162,15 @@ object widgetMod {
       * Test whether the widget's node is attached to the DOM.
       */
     val isAttached: Boolean = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     /**
       * Test whether the widget is explicitly hidden.
@@ -324,6 +354,14 @@ object widgetMod {
     var parent: Widget | Null = js.native
     
     /**
+      * Process a message sent to the handler.
+      *
+      * @param msg - The message to be processed.
+      */
+    /* CompleteClass */
+    override def processMessage(msg: Message): Unit = js.native
+    
+    /**
       * Remove a class name from the widget's DOM node.
       *
       * @param name - The class name to remove from the node.
@@ -411,6 +449,10 @@ object widgetMod {
   }
   object Widget {
     
+    @JSImport("@lumino/widgets/types/widget", "Widget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A message class for child related messages.
       */
@@ -442,42 +484,52 @@ object widgetMod {
     object Flag extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[Flag with Double] = js.native
+      def apply(value: Double): js.UndefOr[Flag & Double] = js.native
       
       /**
         * A layout cannot be set on the widget.
         */
       @js.native
-      sealed trait DisallowLayout extends Flag
-      /* 16 */ val DisallowLayout: typings.luminoWidgets.widgetMod.Widget.Flag.DisallowLayout with Double = js.native
+      sealed trait DisallowLayout
+        extends StObject
+           with Flag
+      /* 16 */ val DisallowLayout: typings.luminoWidgets.widgetMod.Widget.Flag.DisallowLayout & Double = js.native
       
       /**
         * The widget is attached to the DOM.
         */
       @js.native
-      sealed trait IsAttached extends Flag
-      /* 2 */ val IsAttached: typings.luminoWidgets.widgetMod.Widget.Flag.IsAttached with Double = js.native
+      sealed trait IsAttached
+        extends StObject
+           with Flag
+      /* 2 */ val IsAttached: typings.luminoWidgets.widgetMod.Widget.Flag.IsAttached & Double = js.native
       
       /**
         * The widget has been disposed.
         */
       @js.native
-      sealed trait IsDisposed extends Flag
-      /* 1 */ val IsDisposed: typings.luminoWidgets.widgetMod.Widget.Flag.IsDisposed with Double = js.native
+      sealed trait IsDisposed
+        extends StObject
+           with Flag
+      /* 1 */ val IsDisposed: typings.luminoWidgets.widgetMod.Widget.Flag.IsDisposed & Double = js.native
       
       /**
         * The widget is hidden.
         */
       @js.native
-      sealed trait IsHidden extends Flag
-      /* 4 */ val IsHidden: typings.luminoWidgets.widgetMod.Widget.Flag.IsHidden with Double = js.native
+      sealed trait IsHidden
+        extends StObject
+           with Flag
+      /* 4 */ val IsHidden: typings.luminoWidgets.widgetMod.Widget.Flag.IsHidden & Double = js.native
       
       /**
         * The widget is visible.
         */
       @js.native
-      sealed trait IsVisible extends Flag
-      /* 8 */ val IsVisible: typings.luminoWidgets.widgetMod.Widget.Flag.IsVisible with Double = js.native
+      sealed trait IsVisible
+        extends StObject
+           with Flag
+      /* 8 */ val IsVisible: typings.luminoWidgets.widgetMod.Widget.Flag.IsVisible & Double = js.native
     }
     
     /**
@@ -698,12 +750,10 @@ object widgetMod {
       * the widget is already attached, or if the host is not attached
       * to the DOM.
       */
-    @JSImport("@lumino/widgets/types/widget", "Widget.attach")
-    @js.native
-    def attach(widget: Widget, host: HTMLElement): Unit = js.native
-    @JSImport("@lumino/widgets/types/widget", "Widget.attach")
-    @js.native
-    def attach(widget: Widget, host: HTMLElement, ref: HTMLElement): Unit = js.native
+    @scala.inline
+    def attach(widget: Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def attach(widget: Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detach the widget from its host DOM node.
@@ -714,14 +764,12 @@ object widgetMod {
       * This will throw an error if the widget is not a root widget,
       * or if the widget is not attached to the DOM.
       */
-    @JSImport("@lumino/widgets/types/widget", "Widget.detach")
-    @js.native
-    def detach(widget: Widget): Unit = js.native
+    @scala.inline
+    def detach(widget: Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * An options object for initializing a widget.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -732,7 +780,7 @@ object widgetMod {
         *
         * The default is a new `<div>`.
         */
-      var node: js.UndefOr[HTMLElement] = js.native
+      var node: js.UndefOr[HTMLElement] = js.undefined
     }
     object IOptions {
       

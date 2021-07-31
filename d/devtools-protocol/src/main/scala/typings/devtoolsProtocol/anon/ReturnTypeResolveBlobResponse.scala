@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.IO.ResolveBlobRequest
 import typings.devtoolsProtocol.mod.Protocol.IO.ResolveBlobResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeResolveBlobResponse extends StObject {
   
-  var paramsType: js.Array[ResolveBlobRequest] = js.native
+  var paramsType: js.Array[ResolveBlobRequest]
   
-  var returnType: ResolveBlobResponse = js.native
+  var returnType: ResolveBlobResponse
 }
 object ReturnTypeResolveBlobResponse {
   

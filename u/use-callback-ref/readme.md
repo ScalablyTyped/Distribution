@@ -10,9 +10,9 @@ The same useRef, but with callback
 | ------------------ | :-------------: |
 | Full name          | use-callback-ref |
 | Keywords           | react, hoot, useRef, createRef |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 41232991 |
+| # releases         | 11 |
+| # dependents       | 8 |
+| # downloads        | 61863542 |
 | # stars            | 0 |
 
 ## Links

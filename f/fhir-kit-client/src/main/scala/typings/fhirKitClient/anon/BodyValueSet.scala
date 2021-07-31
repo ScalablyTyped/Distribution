@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ValueSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyValueSet extends StObject {
   
-  var body: ValueSet = js.native
+  var body: ValueSet
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ValueSet = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ValueSet
 }
 object BodyValueSet {
   
   @scala.inline
-  def apply(body: ValueSet, resourceType: typings.fhirKitClient.fhirKitClientStrings.ValueSet): BodyValueSet = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ValueSet): BodyValueSet = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ValueSet")
     __obj.asInstanceOf[BodyValueSet]
   }
   

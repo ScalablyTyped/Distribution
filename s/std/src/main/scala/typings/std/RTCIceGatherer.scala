@@ -4,41 +4,42 @@ import typings.std.stdStrings.error
 import typings.std.stdStrings.localcandidate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCIceGatherer extends RTCStatsProvider {
+trait RTCIceGatherer
+  extends StObject
+     with RTCStatsProvider {
   
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_localcandidate(
     `type`: localcandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_localcandidate(
     `type`: localcandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_localcandidate(
     `type`: localcandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -50,39 +51,39 @@ trait RTCIceGatherer extends RTCStatsProvider {
   
   def getLocalParameters(): RTCIceParameters = js.native
   
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
-  var onlocalcandidate: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _]) | Null = js.native
+  var onlocalcandidate: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any]) | Null = js.native
   
   @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_localcandidate(
     `type`: localcandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_localcandidate(
     `type`: localcandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_localcandidate(
     `type`: localcandidate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCIceGathererEvent, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
 }

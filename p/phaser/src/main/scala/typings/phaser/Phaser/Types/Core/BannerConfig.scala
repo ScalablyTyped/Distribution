@@ -2,26 +2,24 @@ package typings.phaser.Phaser.Types.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BannerConfig extends StObject {
   
   /**
     * The background colors of the banner.
     */
-  var background: js.UndefOr[js.Array[String]] = js.native
+  var background: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Omit Phaser's name and version from the banner.
     */
-  var hidePhaser: js.UndefOr[Boolean] = js.native
+  var hidePhaser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The color of the banner text.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object BannerConfig {
   

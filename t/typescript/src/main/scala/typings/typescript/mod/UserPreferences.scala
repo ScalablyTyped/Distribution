@@ -12,34 +12,32 @@ import typings.typescript.typescriptStrings.relative
 import typings.typescript.typescriptStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPreferences extends StObject {
   
-  val allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.native
+  val allowTextChangesInNewFiles: js.UndefOr[Boolean] = js.undefined
   
-  val disableSuggestions: js.UndefOr[Boolean] = js.native
+  val disableSuggestions: js.UndefOr[Boolean] = js.undefined
   
   /** Determines whether we import `foo/index.ts` as "foo", "foo/index", or "foo/index.js" */
-  val importModuleSpecifierEnding: js.UndefOr[auto | minimal | index | js_] = js.native
+  val importModuleSpecifierEnding: js.UndefOr[auto | minimal | index | js_] = js.undefined
   
-  val importModuleSpecifierPreference: js.UndefOr[auto | relative | `non-relative`] = js.native
+  val importModuleSpecifierPreference: js.UndefOr[auto | relative | `non-relative`] = js.undefined
   
-  val includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.native
+  val includeAutomaticOptionalChainCompletions: js.UndefOr[Boolean] = js.undefined
   
-  val includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.native
+  val includeCompletionsForModuleExports: js.UndefOr[Boolean] = js.undefined
   
-  val includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.native
+  val includeCompletionsWithInsertText: js.UndefOr[Boolean] = js.undefined
   
-  val includePackageJsonAutoImports: js.UndefOr[auto | on | off] = js.native
+  val includePackageJsonAutoImports: js.UndefOr[auto | on | off] = js.undefined
   
-  val providePrefixAndSuffixTextForRename: js.UndefOr[Boolean] = js.native
+  val providePrefixAndSuffixTextForRename: js.UndefOr[Boolean] = js.undefined
   
-  val provideRefactorNotApplicableReason: js.UndefOr[Boolean] = js.native
+  val provideRefactorNotApplicableReason: js.UndefOr[Boolean] = js.undefined
   
-  val quotePreference: js.UndefOr[auto | double | single] = js.native
+  val quotePreference: js.UndefOr[auto | double | single] = js.undefined
 }
 object UserPreferences {
   

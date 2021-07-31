@@ -2,13 +2,11 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignalResponse extends StObject {
   
-  var timetoken: Double = js.native
+  var timetoken: Double
 }
 object SignalResponse {
   

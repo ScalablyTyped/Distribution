@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBGPPeerResponse extends StObject {
   
   /**
     * The virtual interface.
     */
-  var virtualInterface: js.UndefOr[VirtualInterface] = js.native
+  var virtualInterface: js.UndefOr[VirtualInterface] = js.undefined
 }
 object DeleteBGPPeerResponse {
   

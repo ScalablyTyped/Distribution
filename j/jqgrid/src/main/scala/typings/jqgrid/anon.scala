@@ -2,17 +2,15 @@ package typings.jqgrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ColModel extends StObject {
     
-    var colModel: js.Any = js.native
+    var colModel: js.Any
     
-    var rowId: js.Any = js.native
+    var rowId: js.Any
   }
   object ColModel {
     
@@ -33,15 +31,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
   }
   object Data {
     
     @scala.inline
-    def apply(data: js.Array[_]): Data = {
+    def apply(data: js.Array[js.Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -50,7 +47,7 @@ object anon {
     implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))

@@ -8,21 +8,19 @@ import typings.reactNavigationStack.anon.NavigationOptions
 import typings.reactNavigationStack.vendorTypesMod.StackNavigationProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type NavigationStackScreenComponent[Params, ScreenProps] = (ComponentType[NavigationStackScreenProps[Params, ScreenProps]]) with (NavigationOptions[Params, ScreenProps])
+  type NavigationStackScreenComponent[Params, ScreenProps] = (ComponentType[NavigationStackScreenProps[Params, ScreenProps]]) & (NavigationOptions[Params, ScreenProps])
   
-  @js.native
   trait NavigationStackScreenProps[Params, ScreenProps] extends StObject {
     
-    var navigation: StackNavigationProp[NavigationRoute[NavigationParams], Params] = js.native
+    var navigation: StackNavigationProp[NavigationRoute[NavigationParams], Params]
     
-    var screenProps: ScreenProps = js.native
+    var screenProps: ScreenProps
     
-    var theme: SupportedThemes = js.native
+    var theme: SupportedThemes
   }
   object NavigationStackScreenProps {
     
@@ -37,7 +35,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class NavigationStackScreenPropsMutableBuilder[Self <: NavigationStackScreenProps[_, _], Params, ScreenProps] (val x: Self with (NavigationStackScreenProps[Params, ScreenProps])) extends AnyVal {
+    implicit class NavigationStackScreenPropsMutableBuilder[Self <: NavigationStackScreenProps[?, ?], Params, ScreenProps] (val x: Self & (NavigationStackScreenProps[Params, ScreenProps])) extends AnyVal {
       
       @scala.inline
       def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])

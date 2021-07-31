@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers the capability to extract the XML document stream from a document storage. */
-@js.native
-trait XXMLExtractor extends XInterface {
+trait XXMLExtractor
+  extends StObject
+     with XInterface {
   
   /**
     * extracts the XML stream from the document storage.
     * @returns the extracted XML stream.
     */
-  def extract(aStream: XInputStream): XInputStream = js.native
+  def extract(aStream: XInputStream): XInputStream
 }
 object XXMLExtractor {
   

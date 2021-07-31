@@ -4,31 +4,29 @@ import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Channel
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.ChannelGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidNotifications extends StObject {
   
-  def createChannel(channel: Channel): js.Promise[Unit] = js.native
+  def createChannel(channel: Channel): js.Promise[Unit]
   
-  def createChannelGroup(channelGroup: ChannelGroup): js.Promise[Unit] = js.native
+  def createChannelGroup(channelGroup: ChannelGroup): js.Promise[Unit]
   
-  def createChannelGroups(channelGroups: js.Array[ChannelGroup]): js.Promise[Unit] = js.native
+  def createChannelGroups(channelGroups: js.Array[ChannelGroup]): js.Promise[Unit]
   
-  def createChannels(channels: js.Array[Channel]): js.Promise[Unit] = js.native
+  def createChannels(channels: js.Array[Channel]): js.Promise[Unit]
   
-  def deleteChannel(channelId: String): js.Promise[Unit] = js.native
+  def deleteChannel(channelId: String): js.Promise[Unit]
   
-  def deleteChannelGroup(groupId: String): js.Promise[Unit] = js.native
+  def deleteChannelGroup(groupId: String): js.Promise[Unit]
   
-  def getChannel(channelId: String): js.Promise[NativeAndroidChannel | Null] = js.native
+  def getChannel(channelId: String): js.Promise[NativeAndroidChannel | Null]
   
-  def getChannelGroup(channelId: String): js.Promise[NativeAndroidChannelGroup | Null] = js.native
+  def getChannelGroup(channelId: String): js.Promise[NativeAndroidChannelGroup | Null]
   
-  def getChannelGroups(channelId: String): js.Promise[js.Array[NativeAndroidChannelGroup]] = js.native
+  def getChannelGroups(channelId: String): js.Promise[js.Array[NativeAndroidChannelGroup]]
   
-  def getChannels(channelId: String): js.Promise[js.Array[NativeAndroidChannel]] = js.native
+  def getChannels(channelId: String): js.Promise[js.Array[NativeAndroidChannel]]
 }
 object AndroidNotifications {
   

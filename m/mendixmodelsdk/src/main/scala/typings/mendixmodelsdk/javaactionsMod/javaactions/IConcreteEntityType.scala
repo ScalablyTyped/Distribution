@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.javaactionsMod.javaactions
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 6.6.0: introduced
   */
 @js.native
-trait IConcreteEntityType extends IEntityType {
+trait IConcreteEntityType
+  extends StObject
+     with IEntityType {
   
   /**
     * This property is required and cannot be set to null.

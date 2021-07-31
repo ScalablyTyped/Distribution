@@ -2,19 +2,17 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cavv extends StObject {
   
-  var cavv: js.UndefOr[String] = js.native
+  var cavv: js.UndefOr[String] = js.undefined
   
-  var eciFlag: String = js.native
+  var eciFlag: String
   
-  var threeDSecureVision: js.UndefOr[String] = js.native
+  var threeDSecureVision: js.UndefOr[String] = js.undefined
   
-  var xid: js.UndefOr[String] = js.native
+  var xid: js.UndefOr[String] = js.undefined
 }
 object Cavv {
   

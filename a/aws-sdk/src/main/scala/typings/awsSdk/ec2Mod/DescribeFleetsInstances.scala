@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFleetsInstances extends StObject {
   
   /**
     * The IDs of the instances.
     */
-  var InstanceIds: js.UndefOr[InstanceIdsSet] = js.native
+  var InstanceIds: js.UndefOr[InstanceIdsSet] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The launch templates and overrides that were used for launching the instances. The values that you specify in the Overrides replace the values in the launch template.
     */
-  var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.native
+  var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.undefined
   
   /**
     * Indicates if the instance that was launched is a Spot Instance or On-Demand Instance.
     */
-  var Lifecycle: js.UndefOr[InstanceLifecycle] = js.native
+  var Lifecycle: js.UndefOr[InstanceLifecycle] = js.undefined
   
   /**
     * The value is Windows for Windows instances. Otherwise, the value is blank.
     */
-  var Platform: js.UndefOr[PlatformValues] = js.native
+  var Platform: js.UndefOr[PlatformValues] = js.undefined
 }
 object DescribeFleetsInstances {
   

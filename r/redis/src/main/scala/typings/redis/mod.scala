@@ -22,7 +22,6 @@ import typings.redis.redisStrings.unsubscribe
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,7 +34,7 @@ object mod {
   @js.native
   class AbortError () extends RedisError {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.native
     
     var code: js.UndefOr[String] = js.native
     
@@ -48,19 +47,20 @@ object mod {
   
   @js.native
   trait Multi
-    extends Commands[typings.redis.mod.Multi] {
+    extends StObject
+       with Commands[typings.redis.mod.Multi] {
     
     def EXEC(): Boolean = js.native
-    def EXEC(cb: Callback[js.Array[_]]): Boolean = js.native
+    def EXEC(cb: Callback[js.Array[js.Any]]): Boolean = js.native
     
     def EXEC_ATOMIC(): Boolean = js.native
-    def EXEC_ATOMIC(cb: Callback[js.Array[_]]): Boolean = js.native
+    def EXEC_ATOMIC(cb: Callback[js.Array[js.Any]]): Boolean = js.native
     
     def exec(): Boolean = js.native
-    def exec(cb: Callback[js.Array[_]]): Boolean = js.native
+    def exec(cb: Callback[js.Array[js.Any]]): Boolean = js.native
     
     def exec_atomic(): Boolean = js.native
-    def exec_atomic(cb: Callback[js.Array[_]]): Boolean = js.native
+    def exec_atomic(cb: Callback[js.Array[js.Any]]): Boolean = js.native
   }
   @JSImport("redis", "Multi")
   @js.native
@@ -70,7 +70,8 @@ object mod {
   @JSImport("redis", "Multi")
   @js.native
   class MultiCls ()
-    extends typings.redis.mod.Multi
+    extends StObject
+       with typings.redis.mod.Multi
   
   @JSImport("redis", "ParserError")
   @js.native
@@ -87,19 +88,19 @@ object mod {
        with Commands[Boolean] {
     
     def BATCH(): typings.redis.mod.Multi = js.native
-    def BATCH(args: js.Array[js.Array[String | Double | Callback[_]]]): typings.redis.mod.Multi = js.native
+    def BATCH(args: js.Array[js.Array[String | Double | Callback[js.Any]]]): typings.redis.mod.Multi = js.native
     
     def MULTI(): typings.redis.mod.Multi = js.native
-    def MULTI(args: js.Array[js.Array[String | Double | Callback[_]]]): typings.redis.mod.Multi = js.native
+    def MULTI(args: js.Array[js.Array[String | Double | Callback[js.Any]]]): typings.redis.mod.Multi = js.native
     
     def addCommand(command: String): Unit = js.native
     
     def add_command(command: String): Unit = js.native
     
     def batch(): typings.redis.mod.Multi = js.native
-    def batch(args: js.Array[js.Array[String | Double | Callback[_]]]): typings.redis.mod.Multi = js.native
+    def batch(args: js.Array[js.Array[String | Double | Callback[js.Any]]]): typings.redis.mod.Multi = js.native
     
-    var command_queue: js.Array[_] = js.native
+    var command_queue: js.Array[js.Any] = js.native
     
     var command_queue_length: Double = js.native
     
@@ -110,7 +111,7 @@ object mod {
     def cork(): Unit = js.native
     
     def duplicate(): typings.redis.mod.RedisClient = js.native
-    def duplicate(options: js.UndefOr[scala.Nothing], cb: Callback[typings.redis.mod.RedisClient]): typings.redis.mod.RedisClient = js.native
+    def duplicate(options: Unit, cb: Callback[typings.redis.mod.RedisClient]): typings.redis.mod.RedisClient = js.native
     def duplicate(options: ClientOpts): typings.redis.mod.RedisClient = js.native
     def duplicate(options: ClientOpts, cb: Callback[typings.redis.mod.RedisClient]): typings.redis.mod.RedisClient = js.native
     
@@ -124,9 +125,9 @@ object mod {
       * Mark the start of a transaction block.
       */
     def multi(): typings.redis.mod.Multi = js.native
-    def multi(args: js.Array[js.Array[String | Double | Callback[_]]]): typings.redis.mod.Multi = js.native
+    def multi(args: js.Array[js.Array[String | Double | Callback[js.Any]]]): typings.redis.mod.Multi = js.native
     
-    var offline_queue: js.Array[_] = js.native
+    var offline_queue: js.Array[js.Any] = js.native
     
     var offline_queue_length: Double = js.native
     
@@ -158,16 +159,16 @@ object mod {
     var retry_delay: Double | Error = js.native
     
     def sendCommand(command: String): Boolean = js.native
-    def sendCommand(command: String, args: js.UndefOr[scala.Nothing], cb: Callback[_]): Boolean = js.native
-    def sendCommand(command: String, args: js.Array[_]): Boolean = js.native
-    def sendCommand(command: String, args: js.Array[_], cb: Callback[_]): Boolean = js.native
-    def sendCommand(command: String, cb: Callback[_]): Boolean = js.native
+    def sendCommand(command: String, args: js.Array[js.Any]): Boolean = js.native
+    def sendCommand(command: String, args: js.Array[js.Any], cb: Callback[js.Any]): Boolean = js.native
+    def sendCommand(command: String, args: Unit, cb: Callback[js.Any]): Boolean = js.native
+    def sendCommand(command: String, cb: Callback[js.Any]): Boolean = js.native
     
     def send_command(command: String): Boolean = js.native
-    def send_command(command: String, args: js.UndefOr[scala.Nothing], cb: Callback[_]): Boolean = js.native
-    def send_command(command: String, args: js.Array[_]): Boolean = js.native
-    def send_command(command: String, args: js.Array[_], cb: Callback[_]): Boolean = js.native
-    def send_command(command: String, cb: Callback[_]): Boolean = js.native
+    def send_command(command: String, args: js.Array[js.Any]): Boolean = js.native
+    def send_command(command: String, args: js.Array[js.Any], cb: Callback[js.Any]): Boolean = js.native
+    def send_command(command: String, args: Unit, cb: Callback[js.Any]): Boolean = js.native
+    def send_command(command: String, cb: Callback[js.Any]): Boolean = js.native
     
     var server_info: ServerInfo = js.native
     
@@ -191,43 +192,44 @@ object mod {
   
   @JSImport("redis", "RedisError")
   @js.native
-  class RedisError () extends Error
+  class RedisError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("redis", "ReplyError")
   @js.native
   class ReplyError () extends RedisError {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.native
     
     var code: String = js.native
     
     var command: String = js.native
   }
   
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(options: ClientOpts): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(port: Double): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(port: Double, host: js.UndefOr[scala.Nothing], options: ClientOpts): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(port: Double, host: String): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(unix_socket: String): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis", "createClient")
-  @js.native
-  def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
+  @scala.inline
+  def createClient(): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(options: ClientOpts): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double, host: String): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double, host: Unit, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(unix_socket: String): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
   
   @JSImport("redis", "debug_mode")
   @js.native
@@ -236,27 +238,24 @@ object mod {
   @scala.inline
   def debugMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug_mode")(x.asInstanceOf[js.Any])
   
-  @JSImport("redis", "print")
-  @js.native
-  def print(err: Null, reply: js.Any): Unit = js.native
-  @JSImport("redis", "print")
-  @js.native
-  def print(err: Error, reply: js.Any): Unit = js.native
+  @scala.inline
+  def print(err: Null, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def print(err: Error, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback[T] = js.Function2[/* err */ Error | Null, /* reply */ T, Unit]
   
-  @js.native
   trait ClientOpts extends StObject {
     
-    var auth_pass: js.UndefOr[String] = js.native
+    var auth_pass: js.UndefOr[String] = js.undefined
     
-    var connect_timeout: js.UndefOr[Double] = js.native
+    var connect_timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, client will run Redis **select** command on connect.
       * @default null
       */
-    var db: js.UndefOr[String | Double] = js.native
+    var db: js.UndefOr[String | Double] = js.undefined
     
     /**
       * If set to `true`, then replies will be sent to callbacks as Buffers.
@@ -266,13 +265,13 @@ object mod {
       * A subscriber has to either always return Strings or Buffers.
       * @default false
       */
-    var detect_buffers: js.UndefOr[Boolean] = js.native
+    var detect_buffers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, a client won't resubscribe after disconnecting.
       * @default false
       */
-    var disable_resubscribing: js.UndefOr[Boolean] = js.native
+    var disable_resubscribing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, if there is no active connection to the Redis server,
@@ -282,7 +281,7 @@ object mod {
       * or an error will be emitted if no callback is specified.
       * @default true
       */
-    var enable_offline_queue: js.UndefOr[Boolean] = js.native
+    var enable_offline_queue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can force using IPv6 if you set the family to **IPv6**.
@@ -291,15 +290,15 @@ object mod {
       * modules on how to use the family type.
       * @default IPv4
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * IP address of the Redis server.
       * @default 127.0.0.1
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var max_attempts: js.UndefOr[Double] = js.native
+    var max_attempts: js.UndefOr[Double] = js.undefined
     
     /**
       * When a connection is established to the Redis server,
@@ -311,9 +310,9 @@ object mod {
       * Setting `no_ready_check` to `true` will inhibit this check.
       * @default false
       */
-    var no_ready_check: js.UndefOr[Boolean] = js.native
+    var no_ready_check: js.UndefOr[Boolean] = js.undefined
     
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
     /**
       * If set, client will run Redis auth command on connect.
@@ -321,19 +320,19 @@ object mod {
       * **Note**: Node Redis < 2.5 must use `auth_pass`.
       * @default null
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * The UNIX socket string of the Redis server.
       * @default null
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Port of the Redis server.
       * @default 6379
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * A string used to prefix all used keys (e.g. namespace:test).
@@ -342,7 +341,7 @@ object mod {
       * and it would be impossible to determine the existing keys in Redis if this would be prefixed.
       * @default null
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Passing an object with renamed commands to use instead of the original functions.
@@ -351,9 +350,9 @@ object mod {
       * @see the [Redis security topics](http://redis.io/topics/security) for more info.
       * @default null
       */
-    var rename_commands: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var rename_commands: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var retry_max_delay: js.UndefOr[Double] = js.native
+    var retry_max_delay: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that receives an options object as parameter including the retry `attempt`,
@@ -387,7 +386,7 @@ object mod {
       *   }
       * });
       */
-    var retry_strategy: js.UndefOr[RetryStrategy] = js.native
+    var retry_strategy: js.UndefOr[RetryStrategy] = js.undefined
     
     /**
       * If set to `true`, all commands that were unfulfilled while the connection is lost
@@ -396,26 +395,26 @@ object mod {
       * This is especially useful if you use blocking commands.
       * @default false
       */
-    var retry_unfulfilled_commands: js.UndefOr[Boolean] = js.native
+    var retry_unfulfilled_commands: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, then all replies will be sent to callbacks as Buffers instead of Strings.
       * @default false
       */
-    var return_buffers: js.UndefOr[Boolean] = js.native
+    var return_buffers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial Delay in milliseconds.
       * This will also set the initial delay for keep-alive packets being sent to Redis.
       * @default 0
       */
-    var socket_initial_delay: js.UndefOr[Double] = js.native
+    var socket_initial_delay: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to `true`, the keep-alive functionality is enabled on the underlying socket.
       * @default true
       */
-    var socket_keepalive: js.UndefOr[Boolean] = js.native
+    var socket_keepalive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true`, Node Redis will return Redis number values as Strings instead of javascript Numbers.
@@ -425,7 +424,7 @@ object mod {
       * the value of the `parser` option.
       * @default null
       */
-    var string_numbers: js.UndefOr[Boolean] = js.native
+    var string_numbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object containing options to pass to
@@ -434,7 +433,7 @@ object mod {
       * (if, for example, it is set up to be accessible via a tunnel).
       * @default null
       */
-    var tls: js.UndefOr[js.Any] = js.native
+    var tls: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The URL of the Redis server.\
@@ -443,7 +442,7 @@ object mod {
       * More info avaliable at [IANA](http://www.iana.org/assignments/uri-schemes/prov/redis).
       * @default null
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ClientOpts {
     
@@ -926,20 +925,20 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): R = js.native
-    def CLIENT(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): R = js.native
-    def CLIENT(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
-    def CLIENT(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
-    def CLIENT(arg1: String, arg2: String, cb: Callback[_]): R = js.native
+    def CLIENT(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): R = js.native
+    def CLIENT(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
+    def CLIENT(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
+    def CLIENT(arg1: String, arg2: String, cb: Callback[js.Any]): R = js.native
     def CLIENT(arg1: String, arg2: js.Array[String]): R = js.native
-    def CLIENT(arg1: String, arg2: js.Array[String], cb: Callback[_]): R = js.native
-    def CLIENT(arg1: String, cb: Callback[_]): R = js.native
+    def CLIENT(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def CLIENT(arg1: String, cb: Callback[js.Any]): R = js.native
     def CLIENT(arg1: js.Array[String]): R = js.native
-    def CLIENT(arg1: js.Array[String], cb: Callback[_]): R = js.native
-    def CLIENT(args: (String | Callback[_])*): R = js.native
+    def CLIENT(arg1: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def CLIENT(args: (String | Callback[js.Any])*): R = js.native
     @JSName("CLIENT")
-    var CLIENT_Original: OverloadedCommand[String, _, R] = js.native
+    var CLIENT_Original: OverloadedCommand[String, js.Any, R] = js.native
     
     def CLUSTER(arg1: String): this.type = js.native
     def CLUSTER(arg1: String, arg2: String): this.type = js.native
@@ -954,20 +953,20 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): this.type = js.native
-    def CLUSTER(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): this.type = js.native
-    def CLUSTER(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): this.type = js.native
-    def CLUSTER(arg1: String, arg2: String, arg3: String, cb: Callback[_]): this.type = js.native
-    def CLUSTER(arg1: String, arg2: String, cb: Callback[_]): this.type = js.native
+    def CLUSTER(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): this.type = js.native
+    def CLUSTER(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): this.type = js.native
+    def CLUSTER(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): this.type = js.native
+    def CLUSTER(arg1: String, arg2: String, cb: Callback[js.Any]): this.type = js.native
     def CLUSTER(arg1: String, arg2: js.Array[String]): this.type = js.native
-    def CLUSTER(arg1: String, arg2: js.Array[String], cb: Callback[_]): this.type = js.native
-    def CLUSTER(arg1: String, cb: Callback[_]): this.type = js.native
+    def CLUSTER(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): this.type = js.native
+    def CLUSTER(arg1: String, cb: Callback[js.Any]): this.type = js.native
     def CLUSTER(arg1: js.Array[String]): this.type = js.native
-    def CLUSTER(arg1: js.Array[String], cb: Callback[_]): this.type = js.native
-    def CLUSTER(args: (String | Callback[_])*): this.type = js.native
+    def CLUSTER(arg1: js.Array[String], cb: Callback[js.Any]): this.type = js.native
+    def CLUSTER(args: (String | Callback[js.Any])*): this.type = js.native
     @JSName("CLUSTER")
-    var CLUSTER_Original: OverloadedCommand[String, _, this.type] = js.native
+    var CLUSTER_Original: OverloadedCommand[String, js.Any, this.type] = js.native
     
     def COMMAND(): R = js.native
     def COMMAND(cb: Callback[js.Array[js.Tuple6[String, Double, js.Array[String], Double, Double, Double]]]): R = js.native
@@ -1083,7 +1082,7 @@ object mod {
       arg4: String | Double,
       arg5: String | Double,
       arg6: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
     def EVAL(
       arg1: String | Double,
@@ -1091,68 +1090,68 @@ object mod {
       arg3: String | Double,
       arg4: String | Double,
       arg5: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
-    def EVAL(arg1: String | Double, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String | Double, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: String | Double): R = js.native
-    def EVAL(arg1: String, arg2: String | Double, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: String, arg3: String): R = js.native
     def EVAL(arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
-    def EVAL(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: String, arg3: String, arg4: Double): R = js.native
-    def EVAL(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: String, arg3: Double): R = js.native
     def EVAL(arg1: String, arg2: String, arg3: Double, arg4: String): R = js.native
-    def EVAL(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def EVAL(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: String, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: String, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: js.Array[String | Double]): R = js.native
-    def EVAL(arg1: String, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: Double, arg3: String): R = js.native
     def EVAL(arg1: String, arg2: Double, arg3: String, arg4: String): R = js.native
-    def EVAL(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def EVAL(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: String, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: String, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: Double, arg3: Double): R = js.native
     def EVAL(arg1: String, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def EVAL(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: String, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def EVAL(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: String, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
+    def EVAL(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: String, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: js.Array[String | Double]): R = js.native
-    def EVAL(arg1: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def EVAL(arg1: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: String | Double): R = js.native
-    def EVAL(arg1: Double, arg2: String | Double, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: String, arg3: String): R = js.native
     def EVAL(arg1: Double, arg2: String, arg3: String, arg4: String): R = js.native
-    def EVAL(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: String, arg3: String, arg4: Double): R = js.native
-    def EVAL(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: Double, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: Double, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: String, arg3: Double): R = js.native
     def EVAL(arg1: Double, arg2: String, arg3: Double, arg4: String): R = js.native
-    def EVAL(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def EVAL(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: Double, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: Double, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: js.Array[String | Double]): R = js.native
-    def EVAL(arg1: Double, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: Double, arg3: String): R = js.native
     def EVAL(arg1: Double, arg2: Double, arg3: String, arg4: String): R = js.native
-    def EVAL(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def EVAL(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: Double, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: Double, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: Double, arg3: Double): R = js.native
     def EVAL(arg1: Double, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def EVAL(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVAL(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVAL(arg1: Double, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def EVAL(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVAL(arg1: Double, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
-    def EVAL(args: (String | Double | Callback[_])*): R = js.native
+    def EVAL(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(arg1: Double, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
+    def EVAL(args: (String | Double | Callback[js.Any])*): R = js.native
     
     def EVALSHA(arg1: String | Double): R = js.native
     def EVALSHA(
@@ -1162,7 +1161,7 @@ object mod {
       arg4: String | Double,
       arg5: String | Double,
       arg6: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
     def EVALSHA(
       arg1: String | Double,
@@ -1170,73 +1169,73 @@ object mod {
       arg3: String | Double,
       arg4: String | Double,
       arg5: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
-    def EVALSHA(arg1: String | Double, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String | Double, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: String | Double): R = js.native
-    def EVALSHA(arg1: String, arg2: String | Double, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: String, arg3: String): R = js.native
     def EVALSHA(arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
-    def EVALSHA(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: String, arg3: String, arg4: Double): R = js.native
-    def EVALSHA(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: String, arg3: Double): R = js.native
     def EVALSHA(arg1: String, arg2: String, arg3: Double, arg4: String): R = js.native
-    def EVALSHA(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def EVALSHA(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: String, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: String, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: js.Array[String | Double]): R = js.native
-    def EVALSHA(arg1: String, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: Double, arg3: String): R = js.native
     def EVALSHA(arg1: String, arg2: Double, arg3: String, arg4: String): R = js.native
-    def EVALSHA(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def EVALSHA(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: String, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: String, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: Double, arg3: Double): R = js.native
     def EVALSHA(arg1: String, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def EVALSHA(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: String, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def EVALSHA(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: String, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: String, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: js.Array[String | Double]): R = js.native
-    def EVALSHA(arg1: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: String | Double): R = js.native
-    def EVALSHA(arg1: Double, arg2: String | Double, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: String, arg3: String): R = js.native
     def EVALSHA(arg1: Double, arg2: String, arg3: String, arg4: String): R = js.native
-    def EVALSHA(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: String, arg3: String, arg4: Double): R = js.native
-    def EVALSHA(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: Double, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: String, arg3: Double): R = js.native
     def EVALSHA(arg1: Double, arg2: String, arg3: Double, arg4: String): R = js.native
-    def EVALSHA(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def EVALSHA(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: Double, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: Double, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: js.Array[String | Double]): R = js.native
-    def EVALSHA(arg1: Double, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: Double, arg3: String): R = js.native
     def EVALSHA(arg1: Double, arg2: Double, arg3: String, arg4: String): R = js.native
-    def EVALSHA(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def EVALSHA(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: Double, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: Double, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: Double, arg3: Double): R = js.native
     def EVALSHA(arg1: Double, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def EVALSHA(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def EVALSHA(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def EVALSHA(arg1: Double, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def EVALSHA(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(arg1: Double, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
-    def EVALSHA(args: (String | Double | Callback[_])*): R = js.native
+    def EVALSHA(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(arg1: Double, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
+    def EVALSHA(args: (String | Double | Callback[js.Any])*): R = js.native
     @JSName("EVALSHA")
-    var EVALSHA_Original: OverloadedCommand[String | Double, _, R] = js.native
+    var EVALSHA_Original: OverloadedCommand[String | Double, js.Any, R] = js.native
     
     @JSName("EVAL")
-    var EVAL_Original: OverloadedCommand[String | Double, _, R] = js.native
+    var EVAL_Original: OverloadedCommand[String | Double, js.Any, R] = js.native
     
     def EXISTS(arg1: String): R = js.native
     def EXISTS(arg1: String, arg2: String): R = js.native
@@ -2406,11 +2405,11 @@ object mod {
     
     def INFO(): R = js.native
     def INFO(cb: Callback[ServerInfo]): R = js.native
-    def INFO(section: js.UndefOr[scala.Nothing], cb: Callback[ServerInfo]): R = js.native
     def INFO(section: String): R = js.native
     def INFO(section: String, cb: Callback[ServerInfo]): R = js.native
     def INFO(section: js.Array[String]): R = js.native
     def INFO(section: js.Array[String], cb: Callback[ServerInfo]): R = js.native
+    def INFO(section: Unit, cb: Callback[ServerInfo]): R = js.native
     
     def KEYS(pattern: String): R = js.native
     def KEYS(pattern: String, cb: Callback[js.Array[String]]): R = js.native
@@ -2554,7 +2553,7 @@ object mod {
     var MIGRATE_Original: OverloadedCommand[String, Boolean, R] = js.native
     
     def MONITOR(): R = js.native
-    def MONITOR(cb: Callback[js.UndefOr[scala.Nothing]]): R = js.native
+    def MONITOR(cb: Callback[Unit]): R = js.native
     
     def MOVE(key: String, db: String): R = js.native
     def MOVE(key: String, db: Double): R = js.native
@@ -2629,20 +2628,20 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): R = js.native
-    def OBJECT(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): R = js.native
-    def OBJECT(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
-    def OBJECT(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
-    def OBJECT(arg1: String, arg2: String, cb: Callback[_]): R = js.native
+    def OBJECT(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): R = js.native
+    def OBJECT(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
+    def OBJECT(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
+    def OBJECT(arg1: String, arg2: String, cb: Callback[js.Any]): R = js.native
     def OBJECT(arg1: String, arg2: js.Array[String]): R = js.native
-    def OBJECT(arg1: String, arg2: js.Array[String], cb: Callback[_]): R = js.native
-    def OBJECT(arg1: String, cb: Callback[_]): R = js.native
+    def OBJECT(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def OBJECT(arg1: String, cb: Callback[js.Any]): R = js.native
     def OBJECT(arg1: js.Array[String]): R = js.native
-    def OBJECT(arg1: js.Array[String], cb: Callback[_]): R = js.native
-    def OBJECT(args: (String | Callback[_])*): R = js.native
+    def OBJECT(arg1: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def OBJECT(args: (String | Callback[js.Any])*): R = js.native
     @JSName("OBJECT")
-    var OBJECT_Original: OverloadedCommand[String, _, R] = js.native
+    var OBJECT_Original: OverloadedCommand[String, js.Any, R] = js.native
     
     def PERSIST(key: String): R = js.native
     def PERSIST(key: String, cb: Callback[Double]): R = js.native
@@ -3010,20 +3009,20 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): R = js.native
-    def SCRIPT(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): R = js.native
-    def SCRIPT(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
-    def SCRIPT(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
-    def SCRIPT(arg1: String, arg2: String, cb: Callback[_]): R = js.native
+    def SCRIPT(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): R = js.native
+    def SCRIPT(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
+    def SCRIPT(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
+    def SCRIPT(arg1: String, arg2: String, cb: Callback[js.Any]): R = js.native
     def SCRIPT(arg1: String, arg2: js.Array[String]): R = js.native
-    def SCRIPT(arg1: String, arg2: js.Array[String], cb: Callback[_]): R = js.native
-    def SCRIPT(arg1: String, cb: Callback[_]): R = js.native
+    def SCRIPT(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def SCRIPT(arg1: String, cb: Callback[js.Any]): R = js.native
     def SCRIPT(arg1: js.Array[String]): R = js.native
-    def SCRIPT(arg1: js.Array[String], cb: Callback[_]): R = js.native
-    def SCRIPT(args: (String | Callback[_])*): R = js.native
+    def SCRIPT(arg1: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def SCRIPT(args: (String | Callback[js.Any])*): R = js.native
     @JSName("SCRIPT")
-    var SCRIPT_Original: OverloadedCommand[String, _, R] = js.native
+    var SCRIPT_Original: OverloadedCommand[String, js.Any, R] = js.native
     
     def SDIFF(arg1: String): R = js.native
     def SDIFF(arg1: String, arg2: String): R = js.native
@@ -3540,7 +3539,7 @@ object mod {
     var SUNION_Original: OverloadedCommand[String, js.Array[String], R] = js.native
     
     def SYNC(): R = js.native
-    def SYNC(cb: Callback[js.UndefOr[scala.Nothing]]): R = js.native
+    def SYNC(cb: Callback[Unit]): R = js.native
     
     def TIME(): R = js.native
     def TIME(cb: Callback[js.Tuple2[String, String]]): R = js.native
@@ -4783,17 +4782,17 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): R = js.native
-    def client(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): R = js.native
-    def client(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
-    def client(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
-    def client(arg1: String, arg2: String, cb: Callback[_]): R = js.native
+    def client(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): R = js.native
+    def client(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
+    def client(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
+    def client(arg1: String, arg2: String, cb: Callback[js.Any]): R = js.native
     def client(arg1: String, arg2: js.Array[String]): R = js.native
-    def client(arg1: String, arg2: js.Array[String], cb: Callback[_]): R = js.native
-    def client(arg1: String, cb: Callback[_]): R = js.native
+    def client(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def client(arg1: String, cb: Callback[js.Any]): R = js.native
     def client(arg1: js.Array[String]): R = js.native
-    def client(arg1: js.Array[String], cb: Callback[_]): R = js.native
+    def client(arg1: js.Array[String], cb: Callback[js.Any]): R = js.native
     /**
       * KILL - Kill the connection of a client.
       * LIST - Get the list of client connections.
@@ -4802,7 +4801,7 @@ object mod {
       * REPLY - Instruct the server whether to reply to commands.
       * SETNAME - Set the current connection name.
       */
-    def client(args: (String | Callback[_])*): R = js.native
+    def client(args: (String | Callback[js.Any])*): R = js.native
     /**
       * KILL - Kill the connection of a client.
       * LIST - Get the list of client connections.
@@ -4812,7 +4811,7 @@ object mod {
       * SETNAME - Set the current connection name.
       */
     @JSName("client")
-    var client_Original: OverloadedCommand[String, _, R] = js.native
+    var client_Original: OverloadedCommand[String, js.Any, R] = js.native
     
     /**
       * ADDSLOTS - Assign new hash slots to receiving node.
@@ -4947,17 +4946,17 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): this.type = js.native
-    def cluster(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): this.type = js.native
-    def cluster(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): this.type = js.native
-    def cluster(arg1: String, arg2: String, arg3: String, cb: Callback[_]): this.type = js.native
-    def cluster(arg1: String, arg2: String, cb: Callback[_]): this.type = js.native
+    def cluster(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): this.type = js.native
+    def cluster(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): this.type = js.native
+    def cluster(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): this.type = js.native
+    def cluster(arg1: String, arg2: String, cb: Callback[js.Any]): this.type = js.native
     def cluster(arg1: String, arg2: js.Array[String]): this.type = js.native
-    def cluster(arg1: String, arg2: js.Array[String], cb: Callback[_]): this.type = js.native
-    def cluster(arg1: String, cb: Callback[_]): this.type = js.native
+    def cluster(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): this.type = js.native
+    def cluster(arg1: String, cb: Callback[js.Any]): this.type = js.native
     def cluster(arg1: js.Array[String]): this.type = js.native
-    def cluster(arg1: js.Array[String], cb: Callback[_]): this.type = js.native
+    def cluster(arg1: js.Array[String], cb: Callback[js.Any]): this.type = js.native
     /**
       * ADDSLOTS - Assign new hash slots to receiving node.
       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
@@ -4978,7 +4977,7 @@ object mod {
       * SLAVES - List slave nodes of the specified master node.
       * SLOTS - Get array of Cluster slot to node mappings.
       */
-    def cluster(args: (String | Callback[_])*): this.type = js.native
+    def cluster(args: (String | Callback[js.Any])*): this.type = js.native
     /**
       * ADDSLOTS - Assign new hash slots to receiving node.
       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
@@ -5000,7 +4999,7 @@ object mod {
       * SLOTS - Get array of Cluster slot to node mappings.
       */
     @JSName("cluster")
-    var cluster_Original: OverloadedCommand[String, _, this.type] = js.native
+    var cluster_Original: OverloadedCommand[String, js.Any, this.type] = js.native
     
     /**
       * Get array of Redis command details.
@@ -5291,7 +5290,7 @@ object mod {
       arg4: String | Double,
       arg5: String | Double,
       arg6: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
     /**
       * Execute a Lua script server side.
@@ -5302,14 +5301,14 @@ object mod {
       arg3: String | Double,
       arg4: String | Double,
       arg5: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
-    def eval(arg1: String | Double, cb: Callback[_]): R = js.native
+    def eval(arg1: String | Double, cb: Callback[js.Any]): R = js.native
     /**
       * Execute a Lua script server side.
       */
     def eval(arg1: String, arg2: String | Double): R = js.native
-    def eval(arg1: String, arg2: String | Double, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     /**
       * Execute a Lua script server side.
       */
@@ -5318,69 +5317,69 @@ object mod {
       * Execute a Lua script server side.
       */
     def eval(arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
-    def eval(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: String, arg3: String, arg4: Double): R = js.native
-    def eval(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: String, arg3: Double): R = js.native
     def eval(arg1: String, arg2: String, arg3: Double, arg4: String): R = js.native
-    def eval(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def eval(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: String, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: String, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: js.Array[String | Double]): R = js.native
-    def eval(arg1: String, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: Double, arg3: String): R = js.native
     def eval(arg1: String, arg2: Double, arg3: String, arg4: String): R = js.native
-    def eval(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def eval(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: String, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: String, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: Double, arg3: Double): R = js.native
     def eval(arg1: String, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def eval(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: String, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def eval(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: String, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
+    def eval(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: String, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
     def eval(arg1: js.Array[String | Double]): R = js.native
-    def eval(arg1: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def eval(arg1: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: String | Double): R = js.native
-    def eval(arg1: Double, arg2: String | Double, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: String, arg3: String): R = js.native
     def eval(arg1: Double, arg2: String, arg3: String, arg4: String): R = js.native
-    def eval(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: String, arg3: String, arg4: Double): R = js.native
-    def eval(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: Double, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: Double, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: String, arg3: Double): R = js.native
     def eval(arg1: Double, arg2: String, arg3: Double, arg4: String): R = js.native
-    def eval(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def eval(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: Double, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: Double, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: js.Array[String | Double]): R = js.native
-    def eval(arg1: Double, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: Double, arg3: String): R = js.native
     def eval(arg1: Double, arg2: Double, arg3: String, arg4: String): R = js.native
-    def eval(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def eval(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: Double, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: Double, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: Double, arg3: Double): R = js.native
     def eval(arg1: Double, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def eval(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def eval(arg1: Double, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def eval(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def eval(arg1: Double, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
+    def eval(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def eval(arg1: Double, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
     /**
       * Execute a Lua script server side.
       */
-    def eval(args: (String | Double | Callback[_])*): R = js.native
+    def eval(args: (String | Double | Callback[js.Any])*): R = js.native
     /**
       * Execute a Lua script server side.
       */
     @JSName("eval")
-    var eval_Original: OverloadedCommand[String | Double, _, R] = js.native
+    var eval_Original: OverloadedCommand[String | Double, js.Any, R] = js.native
     
     /**
       * Execute a Lue script server side.
@@ -5396,7 +5395,7 @@ object mod {
       arg4: String | Double,
       arg5: String | Double,
       arg6: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
     /**
       * Execute a Lue script server side.
@@ -5407,14 +5406,14 @@ object mod {
       arg3: String | Double,
       arg4: String | Double,
       arg5: String | Double,
-      cb: js.UndefOr[Callback[_]]
+      cb: js.UndefOr[Callback[js.Any]]
     ): R = js.native
-    def evalsha(arg1: String | Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String | Double, cb: Callback[js.Any]): R = js.native
     /**
       * Execute a Lue script server side.
       */
     def evalsha(arg1: String, arg2: String | Double): R = js.native
-    def evalsha(arg1: String, arg2: String | Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     /**
       * Execute a Lue script server side.
       */
@@ -5423,69 +5422,69 @@ object mod {
       * Execute a Lue script server side.
       */
     def evalsha(arg1: String, arg2: String, arg3: String, arg4: String): R = js.native
-    def evalsha(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: String, arg3: String, arg4: Double): R = js.native
-    def evalsha(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: String, arg3: Double): R = js.native
     def evalsha(arg1: String, arg2: String, arg3: Double, arg4: String): R = js.native
-    def evalsha(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def evalsha(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: String, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: String, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: js.Array[String | Double]): R = js.native
-    def evalsha(arg1: String, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: Double, arg3: String): R = js.native
     def evalsha(arg1: String, arg2: Double, arg3: String, arg4: String): R = js.native
-    def evalsha(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def evalsha(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: String, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: String, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: Double, arg3: Double): R = js.native
     def evalsha(arg1: String, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def evalsha(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: String, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def evalsha(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: String, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: String, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: String, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: js.Array[String | Double]): R = js.native
-    def evalsha(arg1: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def evalsha(arg1: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: String | Double): R = js.native
-    def evalsha(arg1: Double, arg2: String | Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: String | Double, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: String, arg3: String): R = js.native
     def evalsha(arg1: Double, arg2: String, arg3: String, arg4: String): R = js.native
-    def evalsha(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: String, arg3: String, arg4: Double): R = js.native
-    def evalsha(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: Double, arg2: String, arg3: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: String, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: Double, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: String, arg3: Double): R = js.native
     def evalsha(arg1: Double, arg2: String, arg3: Double, arg4: String): R = js.native
-    def evalsha(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: String, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: String, arg3: Double, arg4: Double): R = js.native
-    def evalsha(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: Double, arg2: String, arg3: Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: String, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: Double, arg2: String, arg3: Double, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: js.Array[String | Double]): R = js.native
-    def evalsha(arg1: Double, arg2: js.Array[String | Double], cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: js.Array[String | Double], cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: Double, arg3: String): R = js.native
     def evalsha(arg1: Double, arg2: Double, arg3: String, arg4: String): R = js.native
-    def evalsha(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: Double, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: Double, arg3: String, arg4: Double): R = js.native
-    def evalsha(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: Double, arg2: Double, arg3: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: Double, arg3: String, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: Double, arg2: Double, arg3: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: Double, arg3: Double): R = js.native
     def evalsha(arg1: Double, arg2: Double, arg3: Double, arg4: String): R = js.native
-    def evalsha(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: Double, arg3: Double, arg4: String, cb: Callback[js.Any]): R = js.native
     def evalsha(arg1: Double, arg2: Double, arg3: Double, arg4: Double): R = js.native
-    def evalsha(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[_]): R = js.native
-    def evalsha(arg1: Double, arg2: Double, arg3: Double, cb: Callback[_]): R = js.native
+    def evalsha(arg1: Double, arg2: Double, arg3: Double, arg4: Double, cb: Callback[js.Any]): R = js.native
+    def evalsha(arg1: Double, arg2: Double, arg3: Double, cb: Callback[js.Any]): R = js.native
     /**
       * Execute a Lue script server side.
       */
-    def evalsha(args: (String | Double | Callback[_])*): R = js.native
+    def evalsha(args: (String | Double | Callback[js.Any])*): R = js.native
     /**
       * Execute a Lue script server side.
       */
     @JSName("evalsha")
-    var evalsha_Original: OverloadedCommand[String | Double, _, R] = js.native
+    var evalsha_Original: OverloadedCommand[String | Double, js.Any, R] = js.native
     
     /**
       * Determine if a key exists.
@@ -7040,11 +7039,11 @@ object mod {
       */
     def info(): R = js.native
     def info(cb: Callback[ServerInfo]): R = js.native
-    def info(section: js.UndefOr[scala.Nothing], cb: Callback[ServerInfo]): R = js.native
     def info(section: String): R = js.native
     def info(section: String, cb: Callback[ServerInfo]): R = js.native
     def info(section: js.Array[String]): R = js.native
     def info(section: js.Array[String], cb: Callback[ServerInfo]): R = js.native
+    def info(section: Unit, cb: Callback[ServerInfo]): R = js.native
     
     /**
       * Find all keys matching the given pattern.
@@ -7298,7 +7297,7 @@ object mod {
       * Listen for all requests received by the server in real time.
       */
     def monitor(): R = js.native
-    def monitor(cb: Callback[js.UndefOr[scala.Nothing]]): R = js.native
+    def monitor(cb: Callback[Unit]): R = js.native
     
     /**
       * Move a key to another database.
@@ -7441,26 +7440,26 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): R = js.native
-    def `object`(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): R = js.native
-    def `object`(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
-    def `object`(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
-    def `object`(arg1: String, arg2: String, cb: Callback[_]): R = js.native
+    def `object`(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): R = js.native
+    def `object`(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
+    def `object`(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
+    def `object`(arg1: String, arg2: String, cb: Callback[js.Any]): R = js.native
     def `object`(arg1: String, arg2: js.Array[String]): R = js.native
-    def `object`(arg1: String, arg2: js.Array[String], cb: Callback[_]): R = js.native
-    def `object`(arg1: String, cb: Callback[_]): R = js.native
+    def `object`(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def `object`(arg1: String, cb: Callback[js.Any]): R = js.native
     def `object`(arg1: js.Array[String]): R = js.native
-    def `object`(arg1: js.Array[String], cb: Callback[_]): R = js.native
+    def `object`(arg1: js.Array[String], cb: Callback[js.Any]): R = js.native
     /**
       * Inspect the internals of Redis objects.
       */
-    def `object`(args: (String | Callback[_])*): R = js.native
+    def `object`(args: (String | Callback[js.Any])*): R = js.native
     /**
       * Inspect the internals of Redis objects.
       */
     @JSName("object")
-    var object_Original: OverloadedCommand[String, _, R] = js.native
+    var object_Original: OverloadedCommand[String, js.Any, R] = js.native
     
     /**
       * Remove the expiration from a key.
@@ -8153,17 +8152,17 @@ object mod {
       arg4: String,
       arg5: String,
       arg6: String,
-      cb: Callback[_]
+      cb: Callback[js.Any]
     ): R = js.native
-    def script(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[_]): R = js.native
-    def script(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[_]): R = js.native
-    def script(arg1: String, arg2: String, arg3: String, cb: Callback[_]): R = js.native
-    def script(arg1: String, arg2: String, cb: Callback[_]): R = js.native
+    def script(arg1: String, arg2: String, arg3: String, arg4: String, arg5: String, cb: Callback[js.Any]): R = js.native
+    def script(arg1: String, arg2: String, arg3: String, arg4: String, cb: Callback[js.Any]): R = js.native
+    def script(arg1: String, arg2: String, arg3: String, cb: Callback[js.Any]): R = js.native
+    def script(arg1: String, arg2: String, cb: Callback[js.Any]): R = js.native
     def script(arg1: String, arg2: js.Array[String]): R = js.native
-    def script(arg1: String, arg2: js.Array[String], cb: Callback[_]): R = js.native
-    def script(arg1: String, cb: Callback[_]): R = js.native
+    def script(arg1: String, arg2: js.Array[String], cb: Callback[js.Any]): R = js.native
+    def script(arg1: String, cb: Callback[js.Any]): R = js.native
     def script(arg1: js.Array[String]): R = js.native
-    def script(arg1: js.Array[String], cb: Callback[_]): R = js.native
+    def script(arg1: js.Array[String], cb: Callback[js.Any]): R = js.native
     /**
       * DEBUG - Set the debug mode for executed scripts.
       * EXISTS - Check existence of scripts in the script cache.
@@ -8171,7 +8170,7 @@ object mod {
       * KILL - Kill the script currently in execution.
       * LOAD - Load the specified Lua script into the script cache.
       */
-    def script(args: (String | Callback[_])*): R = js.native
+    def script(args: (String | Callback[js.Any])*): R = js.native
     /**
       * DEBUG - Set the debug mode for executed scripts.
       * EXISTS - Check existence of scripts in the script cache.
@@ -8180,7 +8179,7 @@ object mod {
       * LOAD - Load the specified Lua script into the script cache.
       */
     @JSName("script")
-    var script_Original: OverloadedCommand[String, _, R] = js.native
+    var script_Original: OverloadedCommand[String, js.Any, R] = js.native
     
     /**
       * Subtract multiple sets.
@@ -9035,7 +9034,7 @@ object mod {
       * Internal command used for replication.
       */
     def sync(): R = js.native
-    def sync(cb: Callback[js.UndefOr[scala.Nothing]]): R = js.native
+    def sync(cb: Callback[Unit]): R = js.native
     
     /**
       * Return the current server time.
@@ -10209,16 +10208,15 @@ object mod {
   
   type RetryStrategy = js.Function1[/* options */ RetryStrategyOptions, Double | Error | js.Any]
   
-  @js.native
   trait RetryStrategyOptions extends StObject {
     
-    var attempt: Double = js.native
+    var attempt: Double
     
-    var error: ErrnoException = js.native
+    var error: ErrnoException
     
-    var times_connected: Double = js.native
+    var times_connected: Double
     
-    var total_retry_time: Double = js.native
+    var total_retry_time: Double
   }
   object RetryStrategyOptions {
     
@@ -10245,12 +10243,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerInfo extends StObject {
     
-    var redis_version: String = js.native
+    var redis_version: String
     
-    var versions: js.Array[Double] = js.native
+    var versions: js.Array[Double]
   }
   object ServerInfo {
     

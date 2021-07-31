@@ -2,10 +2,8 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBucketByTime extends StObject {
   
   /**
@@ -13,9 +11,9 @@ trait SchemaBucketByTime extends StObject {
     * time frames. Time frames that contain no data will be included in the
     * response with an empty dataset.
     */
-  var durationMillis: js.UndefOr[String] = js.native
+  var durationMillis: js.UndefOr[String] = js.undefined
   
-  var period: js.UndefOr[SchemaBucketByTimePeriod] = js.native
+  var period: js.UndefOr[SchemaBucketByTimePeriod] = js.undefined
 }
 object SchemaBucketByTime {
   

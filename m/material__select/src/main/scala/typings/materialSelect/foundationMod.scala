@@ -7,7 +7,6 @@ import typings.materialSelect.anon.PartialMDCSelectFoundatio
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foundationMod {
@@ -20,7 +19,7 @@ object foundationMod {
     */
   class default () extends MDCSelectFoundation {
     def this(adapter: PartialMDCSelectAdapter) = this()
-    def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCSelectFoundatio) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
   }
   
@@ -32,7 +31,7 @@ object foundationMod {
     */
   class MDCSelectFoundation () extends MDCFoundation[MDCSelectAdapter] {
     def this(adapter: PartialMDCSelectAdapter) = this()
-    def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCSelectFoundatio) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
     
     def getDisabled(): Boolean = js.native
@@ -115,9 +114,9 @@ object foundationMod {
     def setRequired(isRequired: Boolean): Unit = js.native
     
     def setSelectedIndex(index: Double): Unit = js.native
-    def setSelectedIndex(index: Double, closeMenu: js.UndefOr[scala.Nothing], skipNotify: Boolean): Unit = js.native
     def setSelectedIndex(index: Double, closeMenu: Boolean): Unit = js.native
     def setSelectedIndex(index: Double, closeMenu: Boolean, skipNotify: Boolean): Unit = js.native
+    def setSelectedIndex(index: Double, closeMenu: Unit, skipNotify: Boolean): Unit = js.native
     
     def setUseDefaultValidation(useDefaultValidation: Boolean): Unit = js.native
     

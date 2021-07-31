@@ -6,50 +6,48 @@ import typings.activexStdole.stdole.StdPicture
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkDateControl extends StObject {
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var AutoWordSelect: Boolean = js.native
+  var AutoWordSelect: Boolean
   
-  var BackColor: OLE_COLOR = js.native
+  var BackColor: OLE_COLOR
   
-  var BackStyle: OlBackStyle = js.native
+  var BackStyle: OlBackStyle
   
-  var Date: VarDate = js.native
+  var Date: VarDate
   
-  def DropDown(): Unit = js.native
+  def DropDown(): Unit
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var EnterFieldBehavior: OlEnterFieldBehavior = js.native
+  var EnterFieldBehavior: OlEnterFieldBehavior
   
-  val Font: StdFont = js.native
+  val Font: StdFont
   
-  var ForeColor: OLE_COLOR = js.native
+  var ForeColor: OLE_COLOR
   
-  var HideSelection: Boolean = js.native
+  var HideSelection: Boolean
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkDateControl_typekey")
-  var OutlookDotOlkDateControl_typekey: OlkDateControl = js.native
+  var OutlookDotOlkDateControl_typekey: OlkDateControl
   
-  var ShowNoneButton: Boolean = js.native
+  var ShowNoneButton: Boolean
   
-  var Text: String = js.native
+  var Text: String
   
-  var TextAlign: OlTextAlign = js.native
+  var TextAlign: OlTextAlign
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object OlkDateControl {
   

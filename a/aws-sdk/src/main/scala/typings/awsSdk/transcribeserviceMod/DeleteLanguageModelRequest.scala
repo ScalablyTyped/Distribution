@@ -2,16 +2,14 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLanguageModelRequest extends StObject {
   
   /**
     * The name of the model you're choosing to delete.
     */
-  var ModelName: typings.awsSdk.transcribeserviceMod.ModelName = js.native
+  var ModelName: typings.awsSdk.transcribeserviceMod.ModelName
 }
 object DeleteLanguageModelRequest {
   

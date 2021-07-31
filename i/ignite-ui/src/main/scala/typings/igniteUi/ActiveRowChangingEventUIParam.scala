@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveRowChangingEventUIParam extends StObject {
   
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the row object.
     */
-  var row: js.UndefOr[js.Any] = js.native
+  var row: js.UndefOr[js.Any] = js.undefined
 }
 object ActiveRowChangingEventUIParam {
   

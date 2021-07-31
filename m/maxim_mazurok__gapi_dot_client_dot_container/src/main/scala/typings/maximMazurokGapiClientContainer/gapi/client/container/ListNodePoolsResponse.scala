@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNodePoolsResponse extends StObject {
   
   /** A list of node pools for a cluster. */
-  var nodePools: js.UndefOr[js.Array[NodePool]] = js.native
+  var nodePools: js.UndefOr[js.Array[NodePool]] = js.undefined
 }
 object ListNodePoolsResponse {
   

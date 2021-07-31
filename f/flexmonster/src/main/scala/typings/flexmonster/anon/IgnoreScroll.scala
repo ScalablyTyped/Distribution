@@ -2,17 +2,15 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreScroll extends StObject {
   
-  var ignoreScroll: js.UndefOr[Boolean] = js.native
+  var ignoreScroll: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreSorting: js.UndefOr[Boolean] = js.native
+  var ignoreSorting: js.UndefOr[Boolean] = js.undefined
   
-  var partial: js.UndefOr[Boolean] = js.native
+  var partial: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoreScroll {
   

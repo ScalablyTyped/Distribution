@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -69,12 +68,12 @@ trait PlusPayment extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def getChannels(): Unit = js.native
-  def getChannels(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getChannels(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getChannels(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getChannels(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 请求支付操作
@@ -84,75 +83,70 @@ trait PlusPayment extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
   def request(): Unit = js.native
+  def request(channel: Unit, statement: String): Unit = js.native
   def request(
-    channel: js.UndefOr[scala.Nothing],
-    statement: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def request(
-    channel: js.UndefOr[scala.Nothing],
-    statement: js.UndefOr[scala.Nothing],
-    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit]
-  ): Unit = js.native
-  def request(
-    channel: js.UndefOr[scala.Nothing],
-    statement: js.UndefOr[scala.Nothing],
-    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def request(channel: js.UndefOr[scala.Nothing], statement: String): Unit = js.native
-  def request(
-    channel: js.UndefOr[scala.Nothing],
-    statement: String,
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def request(
-    channel: js.UndefOr[scala.Nothing],
+    channel: Unit,
     statement: String,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit]
   ): Unit = js.native
   def request(
-    channel: js.UndefOr[scala.Nothing],
+    channel: Unit,
     statement: String,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def request(
+    channel: Unit,
+    statement: String,
+    successCB: Unit,
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def request(
+    channel: Unit,
+    statement: Unit,
+    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit]
+  ): Unit = js.native
+  def request(
+    channel: Unit,
+    statement: Unit,
+    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def request(channel: Unit, statement: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def request(channel: PlusPaymentPaymentChannel): Unit = js.native
-  def request(
-    channel: PlusPaymentPaymentChannel,
-    statement: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def request(
-    channel: PlusPaymentPaymentChannel,
-    statement: js.UndefOr[scala.Nothing],
-    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit]
-  ): Unit = js.native
-  def request(
-    channel: PlusPaymentPaymentChannel,
-    statement: js.UndefOr[scala.Nothing],
-    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def request(channel: PlusPaymentPaymentChannel, statement: String): Unit = js.native
   def request(
     channel: PlusPaymentPaymentChannel,
     statement: String,
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def request(
-    channel: PlusPaymentPaymentChannel,
-    statement: String,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit]
   ): Unit = js.native
   def request(
     channel: PlusPaymentPaymentChannel,
     statement: String,
     successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def request(
+    channel: PlusPaymentPaymentChannel,
+    statement: String,
+    successCB: Unit,
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def request(
+    channel: PlusPaymentPaymentChannel,
+    statement: Unit,
+    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit]
+  ): Unit = js.native
+  def request(
+    channel: PlusPaymentPaymentChannel,
+    statement: Unit,
+    successCB: js.Function1[/* result */ PlusPaymentPaymentResult, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def request(
+    channel: PlusPaymentPaymentChannel,
+    statement: Unit,
+    successCB: Unit,
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
 }

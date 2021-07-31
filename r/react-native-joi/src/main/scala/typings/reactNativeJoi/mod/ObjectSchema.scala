@@ -3,13 +3,14 @@ package typings.reactNativeJoi.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNativeJoi.mod._SchemaLike because Already inherited
 - typings.reactNativeJoi.mod._Schema because Already inherited */ @js.native
-trait ObjectSchema extends AnySchema {
+trait ObjectSchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Defines an all-or-nothing relationship between keys where if one of the peers is present, all of them are required as well.

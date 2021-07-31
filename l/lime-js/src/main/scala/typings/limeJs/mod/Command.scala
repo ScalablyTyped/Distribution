@@ -2,23 +2,23 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Command extends Envelope {
+trait Command
+  extends StObject
+     with Envelope {
   
-  var method: String = js.native
+  var method: String
   
-  var reason: js.UndefOr[Reason] = js.native
+  var reason: js.UndefOr[Reason] = js.undefined
   
-  var resource: js.UndefOr[js.Any] = js.native
+  var resource: js.UndefOr[js.Any] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object Command {
   

@@ -4,14 +4,16 @@ import typings.accepts.acceptsBooleans.`false`
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(req: IncomingMessage): Accepts = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[Accepts]
+  
   @JSImport("accepts", JSImport.Namespace)
   @js.native
-  def apply(req: IncomingMessage): Accepts = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Accepts extends StObject {

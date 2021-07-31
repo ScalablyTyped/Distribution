@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object MediaRotation extends StObject {
   
   /** Rotate 180 degrees clockwise. */
   @js.native
-  sealed trait clockwise180Degrees extends MediaRotation
+  sealed trait clockwise180Degrees
+    extends StObject
+       with MediaRotation
   
   /** Rotate 270 degrees clockwise. */
   @js.native
-  sealed trait clockwise270Degrees extends MediaRotation
+  sealed trait clockwise270Degrees
+    extends StObject
+       with MediaRotation
   
   /** Rotate 90 degrees clockwise. */
   @js.native
-  sealed trait clockwise90Degrees extends MediaRotation
+  sealed trait clockwise90Degrees
+    extends StObject
+       with MediaRotation
   
   /** No rotation. */
   @js.native
-  sealed trait none extends MediaRotation
+  sealed trait none
+    extends StObject
+       with MediaRotation
 }

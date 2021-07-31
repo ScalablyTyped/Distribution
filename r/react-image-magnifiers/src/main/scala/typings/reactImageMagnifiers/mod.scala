@@ -13,7 +13,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -90,30 +89,29 @@ object mod {
     def TAP_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAP")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CommonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursorStyle: js.UndefOr[String] = js.native
+    var cursorStyle: js.UndefOr[String] = js.undefined
     
-    var imageAlt: js.UndefOr[String] = js.native
+    var imageAlt: js.UndefOr[String] = js.undefined
     
-    var imageSrc: String = js.native
+    var imageSrc: String
     
-    var largeImageSrc: js.UndefOr[String] = js.native
+    var largeImageSrc: js.UndefOr[String] = js.undefined
     
-    var onImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onLargeImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onLargeImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onZoomEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onZoomEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onZoomStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onZoomStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderOverlay: js.UndefOr[js.Function1[/* state */ Boolean, ReactNode]] = js.native
+    var renderOverlay: js.UndefOr[js.Function1[/* state */ Boolean, ReactNode]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CommonProps {
     
@@ -191,24 +189,25 @@ object mod {
     }
   }
   
-  @js.native
-  trait GlassMagnifierProps extends CommonProps {
+  trait GlassMagnifierProps
+    extends StObject
+       with CommonProps {
     
-    var allowOverflow: js.UndefOr[Boolean] = js.native
+    var allowOverflow: js.UndefOr[Boolean] = js.undefined
     
-    var magnifierBackgroundColor: js.UndefOr[String] = js.native
+    var magnifierBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var magnifierBorderColor: js.UndefOr[String] = js.native
+    var magnifierBorderColor: js.UndefOr[String] = js.undefined
     
-    var magnifierBorderSize: js.UndefOr[Double] = js.native
+    var magnifierBorderSize: js.UndefOr[Double] = js.undefined
     
-    var magnifierOffsetX: js.UndefOr[Double] = js.native
+    var magnifierOffsetX: js.UndefOr[Double] = js.undefined
     
-    var magnifierOffsetY: js.UndefOr[Double] = js.native
+    var magnifierOffsetY: js.UndefOr[Double] = js.undefined
     
-    var magnifierSize: js.UndefOr[String | Double] = js.native
+    var magnifierSize: js.UndefOr[String | Double] = js.undefined
     
-    var square: js.UndefOr[Boolean] = js.native
+    var square: js.UndefOr[Boolean] = js.undefined
   }
   object GlassMagnifierProps {
     
@@ -271,16 +270,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MagnifierContainerProps extends StObject {
     
-    var autoInPlace: js.UndefOr[Boolean] = js.native
+    var autoInPlace: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var inPlaceMinBreakpoint: js.UndefOr[Double] = js.native
+    var inPlaceMinBreakpoint: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
   }
   object MagnifierContainerProps {
     
@@ -319,44 +317,43 @@ object mod {
     }
   }
   
-  @js.native
   trait MagnifierPreviewProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursorStyle: js.UndefOr[String] = js.native
+    var cursorStyle: js.UndefOr[String] = js.undefined
     
-    var imageAlt: js.UndefOr[String] = js.native
+    var imageAlt: js.UndefOr[String] = js.undefined
     
-    var imageSrc: String = js.native
+    var imageSrc: String
     
-    var largeImageSrc: js.UndefOr[String] = js.native
+    var largeImageSrc: js.UndefOr[String] = js.undefined
     
-    var onImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onLargeImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onLargeImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var onZoomEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onZoomEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onZoomStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onZoomStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var overlayBackgroundColor: js.UndefOr[Double] = js.native
+    var overlayBackgroundColor: js.UndefOr[Double] = js.undefined
     
-    var overlayBoxColor: js.UndefOr[Double] = js.native
+    var overlayBoxColor: js.UndefOr[Double] = js.undefined
     
-    var overlayBoxImage: js.UndefOr[Double] = js.native
+    var overlayBoxImage: js.UndefOr[Double] = js.undefined
     
-    var overlayBoxImageSize: js.UndefOr[Double] = js.native
+    var overlayBoxImageSize: js.UndefOr[Double] = js.undefined
     
-    var overlayBoxOpacity: js.UndefOr[Double] = js.native
+    var overlayBoxOpacity: js.UndefOr[Double] = js.undefined
     
-    var overlayOpacity: js.UndefOr[Double] = js.native
+    var overlayOpacity: js.UndefOr[Double] = js.undefined
     
-    var renderOverlay: js.UndefOr[js.Function1[/* state */ Boolean, ReactNode]] = js.native
+    var renderOverlay: js.UndefOr[js.Function1[/* state */ Boolean, ReactNode]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionSpeed: js.UndefOr[Double] = js.native
+    var transitionSpeed: js.UndefOr[Double] = js.undefined
   }
   object MagnifierPreviewProps {
     
@@ -476,18 +473,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait MagnifierProps extends CommonProps {
+  trait MagnifierProps
+    extends StObject
+       with CommonProps {
     
-    var cursorStyleActive: js.UndefOr[String] = js.native
+    var cursorStyleActive: js.UndefOr[String] = js.undefined
     
-    var dragToMove: js.UndefOr[Boolean] = js.native
+    var dragToMove: js.UndefOr[Boolean] = js.undefined
     
-    var interactionSettings: js.UndefOr[ClickMoveLimit] = js.native
+    var interactionSettings: js.UndefOr[ClickMoveLimit] = js.undefined
     
-    var mouseActivation: js.UndefOr[MouseActivation] = js.native
+    var mouseActivation: js.UndefOr[MouseActivation] = js.undefined
     
-    var touchActivation: js.UndefOr[TouchActivation] = js.native
+    var touchActivation: js.UndefOr[TouchActivation] = js.undefined
   }
   object MagnifierProps {
     
@@ -532,20 +530,19 @@ object mod {
     }
   }
   
-  @js.native
   trait MagnifierZoomProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var imageAlt: js.UndefOr[String] = js.native
+    var imageAlt: js.UndefOr[String] = js.undefined
     
-    var imageSrc: String = js.native
+    var imageSrc: String
     
-    var onImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.native
+    var onImageLoad: js.UndefOr[js.Function1[/* ev */ SyntheticEvent[Element, Event], Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionSpeed: js.UndefOr[Double] = js.native
+    var transitionSpeed: js.UndefOr[Double] = js.undefined
   }
   object MagnifierZoomProps {
     
@@ -607,34 +604,35 @@ object mod {
     def doubleClick: typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleClick = "doubleClick".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleClick]
   }
   
-  @js.native
-  trait PictureInPictureMagnifierProps extends CommonProps {
+  trait PictureInPictureMagnifierProps
+    extends StObject
+       with CommonProps {
     
-    var cursorStyleActive: js.UndefOr[String] = js.native
+    var cursorStyleActive: js.UndefOr[String] = js.undefined
     
-    var previewHorizontalPos: js.UndefOr[left | right] = js.native
+    var previewHorizontalPos: js.UndefOr[left | right] = js.undefined
     
-    var previewOpacity: js.UndefOr[Double] = js.native
+    var previewOpacity: js.UndefOr[Double] = js.undefined
     
-    var previewOverlayBackgroundColor: js.UndefOr[String] = js.native
+    var previewOverlayBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var previewOverlayBoxColor: js.UndefOr[String] = js.native
+    var previewOverlayBoxColor: js.UndefOr[String] = js.undefined
     
-    var previewOverlayBoxImage: js.UndefOr[String] = js.native
+    var previewOverlayBoxImage: js.UndefOr[String] = js.undefined
     
-    var previewOverlayBoxImageSize: js.UndefOr[String] = js.native
+    var previewOverlayBoxImageSize: js.UndefOr[String] = js.undefined
     
-    var previewOverlayBoxOpacity: js.UndefOr[Double] = js.native
+    var previewOverlayBoxOpacity: js.UndefOr[Double] = js.undefined
     
-    var previewOverlayOpacity: js.UndefOr[Double] = js.native
+    var previewOverlayOpacity: js.UndefOr[Double] = js.undefined
     
-    var previewSizePercentage: js.UndefOr[Double] = js.native
+    var previewSizePercentage: js.UndefOr[Double] = js.undefined
     
-    var previewVerticalPos: js.UndefOr[top | bottom] = js.native
+    var previewVerticalPos: js.UndefOr[top | bottom] = js.undefined
     
-    var shadow: js.UndefOr[Boolean] = js.native
+    var shadow: js.UndefOr[Boolean] = js.undefined
     
-    var shadowColor: js.UndefOr[String] = js.native
+    var shadowColor: js.UndefOr[String] = js.undefined
   }
   object PictureInPictureMagnifierProps {
     
@@ -727,46 +725,47 @@ object mod {
     }
   }
   
-  @js.native
-  trait SideBySideMagnifierProps extends CommonProps {
+  trait SideBySideMagnifierProps
+    extends StObject
+       with CommonProps {
     
-    var alwaysInPlace: js.UndefOr[Boolean] = js.native
+    var alwaysInPlace: js.UndefOr[Boolean] = js.undefined
     
-    var fillAlignTop: js.UndefOr[Boolean] = js.native
+    var fillAlignTop: js.UndefOr[Boolean] = js.undefined
     
-    var fillAvailableSpace: js.UndefOr[Boolean] = js.native
+    var fillAvailableSpace: js.UndefOr[Boolean] = js.undefined
     
-    var fillGapBottom: js.UndefOr[Double] = js.native
+    var fillGapBottom: js.UndefOr[Double] = js.undefined
     
-    var fillGapLeft: js.UndefOr[Double] = js.native
+    var fillGapLeft: js.UndefOr[Double] = js.undefined
     
-    var fillGapRight: js.UndefOr[Double] = js.native
+    var fillGapRight: js.UndefOr[Double] = js.undefined
     
-    var fillGapTop: js.UndefOr[Double] = js.native
+    var fillGapTop: js.UndefOr[Double] = js.undefined
     
-    var inPlaceMinBreakpoint: js.UndefOr[Double] = js.native
+    var inPlaceMinBreakpoint: js.UndefOr[Double] = js.undefined
     
-    var overlayBackgroundColor: js.UndefOr[String] = js.native
+    var overlayBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var overlayBoxColor: js.UndefOr[String] = js.native
+    var overlayBoxColor: js.UndefOr[String] = js.undefined
     
-    var overlayBoxImage: js.UndefOr[String] = js.native
+    var overlayBoxImage: js.UndefOr[String] = js.undefined
     
-    var overlayBoxImageSize: js.UndefOr[String] = js.native
+    var overlayBoxImageSize: js.UndefOr[String] = js.undefined
     
-    var overlayBoxOpacity: js.UndefOr[Double] = js.native
+    var overlayBoxOpacity: js.UndefOr[Double] = js.undefined
     
-    var overlayOpacity: js.UndefOr[Double] = js.native
+    var overlayOpacity: js.UndefOr[Double] = js.undefined
     
-    var switchSides: js.UndefOr[Boolean] = js.native
+    var switchSides: js.UndefOr[Boolean] = js.undefined
     
-    var transitionSpeed: js.UndefOr[Double] = js.native
+    var transitionSpeed: js.UndefOr[Double] = js.undefined
     
-    var transitionSpeedInPlace: js.UndefOr[Double] = js.native
+    var transitionSpeedInPlace: js.UndefOr[Double] = js.undefined
     
-    var zoomContainerBorder: js.UndefOr[String] = js.native
+    var zoomContainerBorder: js.UndefOr[String] = js.undefined
     
-    var zoomContainerBoxShadow: js.UndefOr[String] = js.native
+    var zoomContainerBoxShadow: js.UndefOr[String] = js.undefined
   }
   object SideBySideMagnifierProps {
     

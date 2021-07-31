@@ -4,7 +4,6 @@ import typings.cassandraDriver.anon.AuthorizationId
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authMod {
@@ -13,27 +12,41 @@ object authMod {
     
     @JSImport("cassandra-driver/lib/auth", "auth.DseGssapiAuthProvider")
     @js.native
-    class DseGssapiAuthProvider () extends AuthProvider {
+    class DseGssapiAuthProvider ()
+      extends StObject
+         with AuthProvider {
       def this(gssOptions: AuthorizationId) = this()
+      
+      /* CompleteClass */
+      override def newAuthenticator(endpoint: String, name: String): Authenticator = js.native
     }
     
     @JSImport("cassandra-driver/lib/auth", "auth.DsePlainTextAuthProvider")
     @js.native
-    class DsePlainTextAuthProvider protected () extends AuthProvider {
+    class DsePlainTextAuthProvider protected ()
+      extends StObject
+         with AuthProvider {
       def this(username: String, password: String) = this()
       def this(username: String, password: String, authorizationId: String) = this()
+      
+      /* CompleteClass */
+      override def newAuthenticator(endpoint: String, name: String): Authenticator = js.native
     }
     
     @JSImport("cassandra-driver/lib/auth", "auth.PlainTextAuthProvider")
     @js.native
-    class PlainTextAuthProvider protected () extends AuthProvider {
+    class PlainTextAuthProvider protected ()
+      extends StObject
+         with AuthProvider {
       def this(username: String, password: String) = this()
+      
+      /* CompleteClass */
+      override def newAuthenticator(endpoint: String, name: String): Authenticator = js.native
     }
     
-    @js.native
     trait AuthProvider extends StObject {
       
-      def newAuthenticator(endpoint: String, name: String): Authenticator = js.native
+      def newAuthenticator(endpoint: String, name: String): Authenticator
     }
     object AuthProvider {
       

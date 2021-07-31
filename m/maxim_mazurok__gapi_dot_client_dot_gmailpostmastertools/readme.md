@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201119
 
 ## Library description:
-TypeScript typings for Gmail Postmaster Tools API v1beta1
+TypeScript typings for Gmail Postmaster Tools API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.gmailpostmastertools |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 50 |
 | # dependents       | 1 |
-| # downloads        | 153 |
+| # downloads        | 3306 |
 | # stars            | 0 |
 
 ## Links

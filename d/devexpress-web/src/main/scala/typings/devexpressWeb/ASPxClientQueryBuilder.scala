@@ -3,14 +3,15 @@ package typings.devexpressWeb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxQueryBuilder control.
   */
 @js.native
-trait ASPxClientQueryBuilder extends ASPxClientControl {
+trait ASPxClientQueryBuilder
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs before the Query Builder UI is initialized.

@@ -2,31 +2,29 @@ package typings.phaser.Phaser.Types.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginObject extends StObject {
   
   /**
     * The default set of scene plugins (names).
     */
-  var default: js.UndefOr[js.Array[String]] = js.native
+  var default: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Plugins to *add* to the default set of scene plugins.
     */
-  var defaultMerge: js.UndefOr[js.Array[String]] = js.native
+  var defaultMerge: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Global plugins to install.
     */
-  var global: js.UndefOr[js.Array[PluginObjectItem]] = js.native
+  var global: js.UndefOr[js.Array[PluginObjectItem]] = js.undefined
   
   /**
     * Scene plugins to install.
     */
-  var scene: js.UndefOr[js.Array[PluginObjectItem]] = js.native
+  var scene: js.UndefOr[js.Array[PluginObjectItem]] = js.undefined
 }
 object PluginObject {
   

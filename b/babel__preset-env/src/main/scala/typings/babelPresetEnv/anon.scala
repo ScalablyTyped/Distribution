@@ -8,15 +8,15 @@ import typings.babelPresetEnv.mod.CorejsVersion
 import typings.babelPresetEnv.mod._TargetsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Browsers extends _TargetsOptions {
+  trait Browsers
+    extends StObject
+       with _TargetsOptions {
     
-    var browsers: String | js.Array[String] = js.native
+    var browsers: String | js.Array[String]
   }
   object Browsers {
     
@@ -37,16 +37,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait Esmodules extends _TargetsOptions {
+  trait Esmodules
+    extends StObject
+       with _TargetsOptions {
     
-    var esmodules: `true` = js.native
+    var esmodules: `true`
   }
   object Esmodules {
     
     @scala.inline
-    def apply(esmodules: `true`): Esmodules = {
-      val __obj = js.Dynamic.literal(esmodules = esmodules.asInstanceOf[js.Any])
+    def apply(): Esmodules = {
+      val __obj = js.Dynamic.literal(esmodules = true)
       __obj.asInstanceOf[Esmodules]
     }
     
@@ -58,10 +59,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Node extends _TargetsOptions {
+  trait Node
+    extends StObject
+       with _TargetsOptions {
     
-    var node: String | current | `true` = js.native
+    var node: String | current | `true`
   }
   object Node {
     
@@ -79,12 +81,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Proposals extends CorejsOption {
+  trait Proposals
+    extends StObject
+       with CorejsOption {
     
-    var proposals: Boolean = js.native
+    var proposals: Boolean
     
-    var version: CorejsVersion = js.native
+    var version: CorejsVersion
   }
   object Proposals {
     
@@ -105,10 +108,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Safari extends _TargetsOptions {
+  trait Safari
+    extends StObject
+       with _TargetsOptions {
     
-    var safari: String | tp = js.native
+    var safari: String | tp
   }
   object Safari {
     
@@ -127,72 +131,73 @@ object anon {
   }
   
   /* Inlined {[ key in @babel/preset-env.@babel/preset-env.Target ]:? string} */
-  @js.native
-  trait keyinTargetstring extends _TargetsOptions {
+  trait keyinTargetstring
+    extends StObject
+       with _TargetsOptions {
     
-    var Android: js.UndefOr[String] = js.native
+    var Android: js.UndefOr[String] = js.undefined
     
-    var Baidu: js.UndefOr[String] = js.native
+    var Baidu: js.UndefOr[String] = js.undefined
     
-    var BlackBerry: js.UndefOr[String] = js.native
+    var BlackBerry: js.UndefOr[String] = js.undefined
     
-    var Chrome: js.UndefOr[String] = js.native
+    var Chrome: js.UndefOr[String] = js.undefined
     
-    var ChromeAndroid: js.UndefOr[String] = js.native
+    var ChromeAndroid: js.UndefOr[String] = js.undefined
     
-    var Edge: js.UndefOr[String] = js.native
+    var Edge: js.UndefOr[String] = js.undefined
     
-    var Electron: js.UndefOr[String] = js.native
+    var Electron: js.UndefOr[String] = js.undefined
     
-    var Explorer: js.UndefOr[String] = js.native
+    var Explorer: js.UndefOr[String] = js.undefined
     
-    var ExplorerMobile: js.UndefOr[String] = js.native
+    var ExplorerMobile: js.UndefOr[String] = js.undefined
     
-    var Firefox: js.UndefOr[String] = js.native
+    var Firefox: js.UndefOr[String] = js.undefined
     
-    var FirefoxAndroid: js.UndefOr[String] = js.native
+    var FirefoxAndroid: js.UndefOr[String] = js.undefined
     
-    var Node: js.UndefOr[String] = js.native
+    var Node: js.UndefOr[String] = js.undefined
     
-    var Opera: js.UndefOr[String] = js.native
+    var Opera: js.UndefOr[String] = js.undefined
     
-    var OperaMini: js.UndefOr[String] = js.native
+    var OperaMini: js.UndefOr[String] = js.undefined
     
-    var OperaMobile: js.UndefOr[String] = js.native
+    var OperaMobile: js.UndefOr[String] = js.undefined
     
-    var QQAndroid: js.UndefOr[String] = js.native
+    var QQAndroid: js.UndefOr[String] = js.undefined
     
-    var Safari: js.UndefOr[String] = js.native
+    var Safari: js.UndefOr[String] = js.undefined
     
-    var Samsung: js.UndefOr[String] = js.native
+    var Samsung: js.UndefOr[String] = js.undefined
     
-    var UCAndroid: js.UndefOr[String] = js.native
+    var UCAndroid: js.UndefOr[String] = js.undefined
     
-    var and_chr: js.UndefOr[String] = js.native
+    var and_chr: js.UndefOr[String] = js.undefined
     
-    var and_ff: js.UndefOr[String] = js.native
+    var and_ff: js.UndefOr[String] = js.undefined
     
-    var and_qq: js.UndefOr[String] = js.native
+    var and_qq: js.UndefOr[String] = js.undefined
     
-    var and_uc: js.UndefOr[String] = js.native
+    var and_uc: js.UndefOr[String] = js.undefined
     
-    var bb: js.UndefOr[String] = js.native
+    var bb: js.UndefOr[String] = js.undefined
     
-    var ff: js.UndefOr[String] = js.native
+    var ff: js.UndefOr[String] = js.undefined
     
-    var iOS: js.UndefOr[String] = js.native
+    var iOS: js.UndefOr[String] = js.undefined
     
-    var ie: js.UndefOr[String] = js.native
+    var ie: js.UndefOr[String] = js.undefined
     
-    var ie_mob: js.UndefOr[String] = js.native
+    var ie_mob: js.UndefOr[String] = js.undefined
     
-    var ios_saf: js.UndefOr[String] = js.native
+    var ios_saf: js.UndefOr[String] = js.undefined
     
-    var kaios: js.UndefOr[String] = js.native
+    var kaios: js.UndefOr[String] = js.undefined
     
-    var op_mini: js.UndefOr[String] = js.native
+    var op_mini: js.UndefOr[String] = js.undefined
     
-    var op_mob: js.UndefOr[String] = js.native
+    var op_mob: js.UndefOr[String] = js.undefined
   }
   object keyinTargetstring {
     

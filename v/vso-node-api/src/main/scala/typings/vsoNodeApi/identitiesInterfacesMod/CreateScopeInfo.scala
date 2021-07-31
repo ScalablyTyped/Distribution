@@ -2,23 +2,21 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateScopeInfo extends StObject {
   
-  var adminGroupDescription: String = js.native
+  var adminGroupDescription: String
   
-  var adminGroupName: String = js.native
+  var adminGroupName: String
   
-  var creatorId: String = js.native
+  var creatorId: String
   
-  var parentScopeId: String = js.native
+  var parentScopeId: String
   
-  var scopeName: String = js.native
+  var scopeName: String
   
-  var scopeType: GroupScopeType = js.native
+  var scopeType: GroupScopeType
 }
 object CreateScopeInfo {
   

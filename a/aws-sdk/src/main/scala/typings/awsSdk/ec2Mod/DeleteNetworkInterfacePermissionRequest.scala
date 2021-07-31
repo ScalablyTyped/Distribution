@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNetworkInterfacePermissionRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify true to remove the permission even if the network interface is attached to an instance.
     */
-  var Force: js.UndefOr[Boolean] = js.native
+  var Force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the network interface permission.
     */
-  var NetworkInterfacePermissionId: typings.awsSdk.ec2Mod.NetworkInterfacePermissionId = js.native
+  var NetworkInterfacePermissionId: typings.awsSdk.ec2Mod.NetworkInterfacePermissionId
 }
 object DeleteNetworkInterfacePermissionRequest {
   

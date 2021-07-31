@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileActivatedEventArgs extends IFileActivatedEventArgs
+trait FileActivatedEventArgs
+  extends StObject
+     with IFileActivatedEventArgs
 object FileActivatedEventArgs {
   
   @scala.inline

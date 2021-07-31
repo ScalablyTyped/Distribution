@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VaultNotificationConfig extends StObject {
   
   /**
     * A list of one or more events for which Amazon S3 Glacier will send a notification to the specified Amazon SNS topic.
     */
-  var Events: js.UndefOr[NotificationEventList] = js.native
+  var Events: js.UndefOr[NotificationEventList] = js.undefined
   
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic Amazon Resource Name (ARN).
     */
-  var SNSTopic: js.UndefOr[String] = js.native
+  var SNSTopic: js.UndefOr[String] = js.undefined
 }
 object VaultNotificationConfig {
   

@@ -3,11 +3,11 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2DynamicTreeBroadPhase extends IBroadPhase {
+trait b2DynamicTreeBroadPhase
+  extends StObject
+     with IBroadPhase {
   
   /**
     * Tests if two proxies overlap.
@@ -15,7 +15,7 @@ trait b2DynamicTreeBroadPhase extends IBroadPhase {
     * @param proxyB Second proxy to test.
     * @return True if the proxyA and proxyB overlap with Fat AABBs, otherwise false.
     **/
-  def TestOverlap(proxyA: b2DynamicTreeNode, proxyB: b2DynamicTreeNode): Boolean = js.native
+  def TestOverlap(proxyA: b2DynamicTreeNode, proxyB: b2DynamicTreeNode): Boolean
   
   /**
     * Update the pairs. This results in pair callbacks. This can only add pairs.
@@ -23,13 +23,13 @@ trait b2DynamicTreeBroadPhase extends IBroadPhase {
     *    param userDataA Proxy A in the pair user data.
     *    param userDataB Proxy B in the pair user data.
     **/
-  def UpdatePairs(callback: js.Function2[/* userDataA */ js.Any, /* userDataB */ js.Any, Unit]): Unit = js.native
+  def UpdatePairs(callback: js.Function2[/* userDataA */ js.Any, /* userDataB */ js.Any, Unit]): Unit
   
   /**
     * Validates the dynamic tree.
     * NOTE: this says "todo" in the current Box2DFlash code.
     **/
-  def Validate(): Unit = js.native
+  def Validate(): Unit
 }
 object b2DynamicTreeBroadPhase {
   

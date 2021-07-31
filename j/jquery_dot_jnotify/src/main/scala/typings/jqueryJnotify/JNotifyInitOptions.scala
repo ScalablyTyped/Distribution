@@ -2,15 +2,13 @@ package typings.jqueryJnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JNotifyInitOptions extends StObject {
   
-  var appendType: js.UndefOr[String] = js.native
+  var appendType: js.UndefOr[String] = js.undefined
   
-  var oneAtTime: js.UndefOr[Boolean] = js.native
+  var oneAtTime: js.UndefOr[Boolean] = js.undefined
 }
 object JNotifyInitOptions {
   

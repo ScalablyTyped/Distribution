@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XModeChangeApproveListener
   * @since OOo 1.1.2
   */
-@js.native
-trait XModeChangeBroadcaster extends XInterface {
+trait XModeChangeBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds the given listener to the list of components to be notified when the mode is about to change.
     * @throws com::sun::star::lang::NoSupportException if the component does not allow vetoing mode changes
     */
-  def addModeChangeApproveListener(rxListener: XModeChangeApproveListener): Unit = js.native
+  def addModeChangeApproveListener(rxListener: XModeChangeApproveListener): Unit
   
   /** adds the given listener to the list of components to be notified when the mode changes. */
-  def addModeChangeListener(rxListener: XModeChangeListener): Unit = js.native
+  def addModeChangeListener(rxListener: XModeChangeListener): Unit
   
   /**
     * remove the given listener from the list of components to be notified when the mode is about to change.
     * @throws com::sun::star::lang::NoSupportException if the component does not allow vetoing mode changes
     */
-  def removeModeChangeApproveListener(rxListener: XModeChangeApproveListener): Unit = js.native
+  def removeModeChangeApproveListener(rxListener: XModeChangeApproveListener): Unit
   
   /** removes the given listener from the list of components to be notified when the mode changes. */
-  def removeModeChangeListener(rxListener: XModeChangeListener): Unit = js.native
+  def removeModeChangeListener(rxListener: XModeChangeListener): Unit
 }
 object XModeChangeBroadcaster {
   

@@ -3,26 +3,24 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Dataflow service&#39;s idea of the current state of a WorkItem being
   * processed by a worker.
   */
-@js.native
 trait SchemaWorkItemServiceState extends StObject {
   
   /**
     * Other data returned by the service, specific to the particular worker
     * harness.
     */
-  var harnessData: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var harnessData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Time at which the current lease will expire.
     */
-  var leaseExpireTime: js.UndefOr[String] = js.native
+  var leaseExpireTime: js.UndefOr[String] = js.undefined
   
   /**
     * The short ids that workers should use in subsequent metric updates.
@@ -31,35 +29,35 @@ trait SchemaWorkItemServiceState extends StObject {
     * worker is recovering from a crash). NOTE: it is possible that the
     * response may have short ids for a subset of the metrics.
     */
-  var metricShortId: js.UndefOr[js.Array[SchemaMetricShortId]] = js.native
+  var metricShortId: js.UndefOr[js.Array[SchemaMetricShortId]] = js.undefined
   
   /**
     * The index value to use for the next report sent by the worker. Note: If
     * the report call fails for whatever reason, the worker should reuse this
     * index for subsequent report attempts.
     */
-  var nextReportIndex: js.UndefOr[String] = js.native
+  var nextReportIndex: js.UndefOr[String] = js.undefined
   
   /**
     * New recommended reporting interval.
     */
-  var reportStatusInterval: js.UndefOr[String] = js.native
+  var reportStatusInterval: js.UndefOr[String] = js.undefined
   
   /**
     * The progress point in the WorkItem where the Dataflow service suggests
     * that the worker truncate the task.
     */
-  var splitRequest: js.UndefOr[SchemaApproximateSplitRequest] = js.native
+  var splitRequest: js.UndefOr[SchemaApproximateSplitRequest] = js.undefined
   
   /**
     * DEPRECATED in favor of split_request.
     */
-  var suggestedStopPoint: js.UndefOr[SchemaApproximateProgress] = js.native
+  var suggestedStopPoint: js.UndefOr[SchemaApproximateProgress] = js.undefined
   
   /**
     * Obsolete, always empty.
     */
-  var suggestedStopPosition: js.UndefOr[SchemaPosition] = js.native
+  var suggestedStopPosition: js.UndefOr[SchemaPosition] = js.undefined
 }
 object SchemaWorkItemServiceState {
   

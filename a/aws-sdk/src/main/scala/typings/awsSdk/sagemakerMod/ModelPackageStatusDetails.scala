@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelPackageStatusDetails extends StObject {
   
   /**
     * The status of the scan of the Docker image container for the model package.
     */
-  var ImageScanStatuses: js.UndefOr[ModelPackageStatusItemList] = js.native
+  var ImageScanStatuses: js.UndefOr[ModelPackageStatusItemList] = js.undefined
   
   /**
     * The validation status of the model package.
     */
-  var ValidationStatuses: ModelPackageStatusItemList = js.native
+  var ValidationStatuses: ModelPackageStatusItemList
 }
 object ModelPackageStatusDetails {
   

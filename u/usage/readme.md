@@ -10,8 +10,8 @@ simple way to lookup linux process usage
 | Full name          | usage |
 | Keywords           | usage, ps, cpu, ram, memory |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 471683 |
+| # dependents       | 50 |
+| # downloads        | 404294 |
 | # stars            | 8 |
 
 ## Links

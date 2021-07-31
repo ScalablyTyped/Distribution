@@ -1,28 +1,20 @@
 package typings.byline
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
 import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("byline", JSImport.Namespace)
-  @js.native
-  def apply(): LineStream = js.native
-  @JSImport("byline", JSImport.Namespace)
-  @js.native
-  def apply(stream: ReadableStream): LineStream = js.native
-  @JSImport("byline", JSImport.Namespace)
-  @js.native
-  def apply(stream: ReadableStream, options: LineStreamOptions): LineStream = js.native
+  @scala.inline
+  def apply(): LineStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LineStream]
+  @scala.inline
+  def apply(stream: ReadableStream): LineStream = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[LineStream]
+  @scala.inline
+  def apply(stream: ReadableStream, options: LineStreamOptions): LineStream = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineStream]
   
   @JSImport("byline", JSImport.Namespace)
   @js.native
@@ -43,32 +35,32 @@ object mod {
   @scala.inline
   def LineStream_=(x: LineStreamCreatable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LineStream")(x.asInstanceOf[js.Any])
   
-  @JSImport("byline", "createStream")
-  @js.native
-  def createStream(): LineStream = js.native
-  @JSImport("byline", "createStream")
-  @js.native
-  def createStream(stream: ReadableStream): LineStream = js.native
-  @JSImport("byline", "createStream")
-  @js.native
-  def createStream(stream: ReadableStream, options: LineStreamOptions): LineStream = js.native
+  @scala.inline
+  def createStream(): LineStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[LineStream]
+  @scala.inline
+  def createStream(stream: ReadableStream): LineStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(stream.asInstanceOf[js.Any]).asInstanceOf[LineStream]
+  @scala.inline
+  def createStream(stream: ReadableStream, options: LineStreamOptions): LineStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LineStream]
   
-  @js.native
-  trait LineStreamCreatable
-    extends Transform
-       with Instantiable0[LineStream]
-       with Instantiable1[/* options */ LineStreamOptions, LineStream] {
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-  }
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
+  trait LineStreamCreatable extends Transform
   
-  @js.native
-  trait LineStreamOptions extends TransformOptions {
+  trait LineStreamOptions
+    extends StObject
+       with TransformOptions {
     
-    var keepEmptyLines: js.UndefOr[Boolean] = js.native
+    var keepEmptyLines: js.UndefOr[Boolean] = js.undefined
   }
   object LineStreamOptions {
     

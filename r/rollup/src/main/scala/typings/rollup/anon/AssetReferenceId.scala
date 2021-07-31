@@ -3,27 +3,25 @@ package typings.rollup.anon
 import typings.rollup.mod.InternalModuleFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetReferenceId extends StObject {
   
-  var assetReferenceId: String | Null = js.native
+  var assetReferenceId: String | Null
   
-  var chunkId: String = js.native
+  var chunkId: String
   
-  var chunkReferenceId: String | Null = js.native
+  var chunkReferenceId: String | Null
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var format: InternalModuleFormat = js.native
+  var format: InternalModuleFormat
   
-  var moduleId: String = js.native
+  var moduleId: String
   
-  var referenceId: String = js.native
+  var referenceId: String
   
-  var relativePath: String = js.native
+  var relativePath: String
 }
 object AssetReferenceId {
   
@@ -36,7 +34,7 @@ object AssetReferenceId {
     referenceId: String,
     relativePath: String
   ): AssetReferenceId = {
-    val __obj = js.Dynamic.literal(chunkId = chunkId.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], referenceId = referenceId.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chunkId = chunkId.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], referenceId = referenceId.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any], assetReferenceId = null, chunkReferenceId = null)
     __obj.asInstanceOf[AssetReferenceId]
   }
   

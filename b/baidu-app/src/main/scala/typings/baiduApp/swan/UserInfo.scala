@@ -2,24 +2,22 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 开放接口-----用户信息
-@js.native
 trait UserInfo extends StObject {
   
-  var avatarUrl: String = js.native
+  var avatarUrl: String
   
-  var city: String = js.native
+  var city: String
   
-  var country: String = js.native
+  var country: String
   
-  var gender: Double = js.native
+  var gender: Double
   
-  var nickName: String = js.native
+  var nickName: String
   
-  var province: String = js.native
+  var province: String
 }
 object UserInfo {
   

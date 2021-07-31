@@ -3,44 +3,42 @@ package typings.reactNativeElements.anon
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.Colors>> */
-@js.native
 trait RecursivePartialRecursive extends StObject {
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var divider: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var divider: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var error: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var error: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var grey0: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var grey0: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var grey1: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var grey1: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var grey2: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var grey2: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var grey3: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var grey3: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var grey4: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var grey4: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var grey5: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var grey5: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var greyOutline: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var greyOutline: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var platform: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartialiosprimarAndroid]]] = js.native
+  var platform: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartialiosprimarAndroid]]] = js.undefined
   
-  var primary: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var primary: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var searchBg: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var searchBg: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var secondary: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var secondary: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var success: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var success: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
   
-  var warning: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.native
+  var warning: js.UndefOr[RecursivePartial[js.UndefOr[RecursivePartial[String]]]] = js.undefined
 }
 object RecursivePartialRecursive {
   

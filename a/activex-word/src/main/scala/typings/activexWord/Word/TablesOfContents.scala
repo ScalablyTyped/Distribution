@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -60,68 +59,21 @@ trait TablesOfContents extends StObject {
   def Item(Index: Double): TableOfContents = js.native
   
   def MarkEntry(Range: Range): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.UndefOr[scala.Nothing],
-    EntryAutoText: js.UndefOr[scala.Nothing],
-    TableID: js.UndefOr[scala.Nothing],
-    Level: js.Any
-  ): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.UndefOr[scala.Nothing],
-    EntryAutoText: js.UndefOr[scala.Nothing],
-    TableID: js.Any
-  ): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.UndefOr[scala.Nothing],
-    EntryAutoText: js.UndefOr[scala.Nothing],
-    TableID: js.Any,
-    Level: js.Any
-  ): Field = js.native
-  def MarkEntry(Range: Range, Entry: js.UndefOr[scala.Nothing], EntryAutoText: js.Any): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.UndefOr[scala.Nothing],
-    EntryAutoText: js.Any,
-    TableID: js.UndefOr[scala.Nothing],
-    Level: js.Any
-  ): Field = js.native
-  def MarkEntry(Range: Range, Entry: js.UndefOr[scala.Nothing], EntryAutoText: js.Any, TableID: js.Any): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.UndefOr[scala.Nothing],
-    EntryAutoText: js.Any,
-    TableID: js.Any,
-    Level: js.Any
-  ): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.Any,
-    EntryAutoText: js.UndefOr[scala.Nothing],
-    TableID: js.UndefOr[scala.Nothing],
-    Level: js.Any
-  ): Field = js.native
-  def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.UndefOr[scala.Nothing], TableID: js.Any): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.Any,
-    EntryAutoText: js.UndefOr[scala.Nothing],
-    TableID: js.Any,
-    Level: js.Any
-  ): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any): Field = js.native
-  def MarkEntry(
-    Range: Range,
-    Entry: js.Any,
-    EntryAutoText: js.Any,
-    TableID: js.UndefOr[scala.Nothing],
-    Level: js.Any
-  ): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any, TableID: js.Any): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any, TableID: js.Any, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any, TableID: Unit, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: Unit, TableID: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: Unit, TableID: js.Any, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: Unit, TableID: Unit, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: js.Any, TableID: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: js.Any, TableID: js.Any, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: js.Any, TableID: Unit, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: Unit, TableID: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: Unit, TableID: js.Any, Level: js.Any): Field = js.native
+  def MarkEntry(Range: Range, Entry: Unit, EntryAutoText: Unit, TableID: Unit, Level: js.Any): Field = js.native
   
   val Parent: js.Any = js.native
   

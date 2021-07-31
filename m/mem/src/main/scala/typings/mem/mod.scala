@@ -4,7 +4,6 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,36 +29,36 @@ memoized('bar');
 */
 object mod {
   
+  @scala.inline
+  def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[FunctionToMemoize]
+  @scala.inline
+  def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], hasCacheKeyCacheMaxAge.asInstanceOf[js.Any])).asInstanceOf[FunctionToMemoize]
+  
   @JSImport("mem", JSImport.Namespace)
   @js.native
-  def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize): FunctionToMemoize = js.native
-  @JSImport("mem", JSImport.Namespace)
-  @js.native
-  def apply[FunctionToMemoize /* <: AnyFunction */, CacheKeyType](fn: FunctionToMemoize, hasCacheKeyCacheMaxAge: Options[FunctionToMemoize, CacheKeyType]): FunctionToMemoize = js.native
+  val ^ : js.Any = js.native
   
   /**
     Clear all cached data of a memoized function.
     
     @param fn - Memoized function.
     */
-  @JSImport("mem", "clear")
-  @js.native
-  def clear(fn: AnyFunction): Unit = js.native
+  @scala.inline
+  def clear(fn: AnyFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AnyFunction = js.Function1[/* arguments_ */ js.Any, js.Any]
   
-  @js.native
   trait CacheStorage[KeyType, ValueType] extends StObject {
     
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def delete(key: KeyType): Unit = js.native
+    def delete(key: KeyType): Unit
     
-    def get(key: KeyType): js.UndefOr[CacheStorageContent[ValueType]] = js.native
+    def get(key: KeyType): js.UndefOr[CacheStorageContent[ValueType]]
     
-    def has(key: KeyType): Boolean = js.native
+    def has(key: KeyType): Boolean
     
-    def set(key: KeyType, value: CacheStorageContent[ValueType]): Unit = js.native
+    def set(key: KeyType, value: CacheStorageContent[ValueType]): Unit
   }
   object CacheStorage {
     
@@ -75,7 +74,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CacheStorageMutableBuilder[Self <: CacheStorage[_, _], KeyType, ValueType] (val x: Self with (CacheStorage[KeyType, ValueType])) extends AnyVal {
+    implicit class CacheStorageMutableBuilder[Self <: CacheStorage[?, ?], KeyType, ValueType] (val x: Self & (CacheStorage[KeyType, ValueType])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -97,12 +96,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CacheStorageContent[ValueType] extends StObject {
     
-    var data: ValueType = js.native
+    var data: ValueType
     
-    var maxAge: Double = js.native
+    var maxAge: Double
   }
   object CacheStorageContent {
     
@@ -113,7 +111,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CacheStorageContentMutableBuilder[Self <: CacheStorageContent[_], ValueType] (val x: Self with CacheStorageContent[ValueType]) extends AnyVal {
+    implicit class CacheStorageContentMutableBuilder[Self <: CacheStorageContent[?], ValueType] (val x: Self & CacheStorageContent[ValueType]) extends AnyVal {
       
       @scala.inline
       def setData(value: ValueType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -123,7 +121,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options[FunctionToMemoize /* <: AnyFunction */, CacheKeyType] extends StObject {
     
     /**
@@ -131,7 +128,7 @@ object mod {
       @default new Map()
       @example new WeakMap()
       */
-    val cache: js.UndefOr[CacheStorage[CacheKeyType, ReturnType[FunctionToMemoize]]] = js.native
+    val cache: js.UndefOr[CacheStorage[CacheKeyType, ReturnType[FunctionToMemoize]]] = js.undefined
     
     /**
       Determines the cache key for storing the result based on the function arguments. By default, __only the first argument is considered__ and it only works with [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive).
@@ -150,13 +147,13 @@ object mod {
       @default arguments_ => arguments_[0]
       @example arguments_ => JSON.stringify(arguments_)
       */
-    val cacheKey: js.UndefOr[js.Function1[/* arguments_ */ Parameters[FunctionToMemoize], CacheKeyType]] = js.native
+    val cacheKey: js.UndefOr[js.Function1[/* arguments_ */ Parameters[FunctionToMemoize], CacheKeyType]] = js.undefined
     
     /**
       Milliseconds until the cache expires.
       @default Infinity
       */
-    val maxAge: js.UndefOr[Double] = js.native
+    val maxAge: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -167,7 +164,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], FunctionToMemoize /* <: AnyFunction */, CacheKeyType] (val x: Self with (Options[FunctionToMemoize, CacheKeyType])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], FunctionToMemoize /* <: AnyFunction */, CacheKeyType] (val x: Self & (Options[FunctionToMemoize, CacheKeyType])) extends AnyVal {
       
       @scala.inline
       def setCache(value: CacheStorage[CacheKeyType, ReturnType[FunctionToMemoize]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])

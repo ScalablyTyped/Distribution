@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsListSelfHostedRunnerGroupsForOrg
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint extends StObject {
   
-  var parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint = js.native
+  var parameters: ActionsListSelfHostedRunnerGroupsForOrgEndpoint
   
-  var request: ActionsListSelfHostedRunnerGroupsForOrgRequestOptions = js.native
+  var request: ActionsListSelfHostedRunnerGroupsForOrgRequestOptions
   
-  var response: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData] = js.native
+  var response: OctokitResponse[ActionsListSelfHostedRunnerGroupsForOrgResponseData]
 }
 object ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint {
   

@@ -3,12 +3,15 @@ package typings.luminoDomutils
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
   
   object ElementExt {
+    
+    @JSImport("@lumino/domutils/types/element", "ElementExt")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compute the box sizing for an element.
@@ -17,9 +20,8 @@ object elementMod {
       *
       * @returns The box sizing data for the specified element.
       */
-    @JSImport("@lumino/domutils/types/element", "ElementExt.boxSizing")
-    @js.native
-    def boxSizing(element: Element): IBoxSizing = js.native
+    @scala.inline
+    def boxSizing(element: Element): IBoxSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("boxSizing")(element.asInstanceOf[js.Any]).asInstanceOf[IBoxSizing]
     
     /**
       * Test whether a client position lies within an element.
@@ -32,9 +34,8 @@ object elementMod {
       *
       * @returns Whether the point is within the given element.
       */
-    @JSImport("@lumino/domutils/types/element", "ElementExt.hitTest")
-    @js.native
-    def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = js.native
+    @scala.inline
+    def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hitTest")(element.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Vertically scroll an element into view if needed.
@@ -52,9 +53,8 @@ object elementMod {
       * within the visible area, no scrolling will take place. Otherwise,
       * the nearest edges of the area and element are aligned.
       */
-    @JSImport("@lumino/domutils/types/element", "ElementExt.scrollIntoViewIfNeeded")
-    @js.native
-    def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = js.native
+    @scala.inline
+    def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewIfNeeded")(area.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Compute the size limits for an element.
@@ -63,65 +63,63 @@ object elementMod {
       *
       * @returns The size limit data for the specified element.
       */
-    @JSImport("@lumino/domutils/types/element", "ElementExt.sizeLimits")
-    @js.native
-    def sizeLimits(element: Element): ISizeLimits = js.native
+    @scala.inline
+    def sizeLimits(element: Element): ISizeLimits = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeLimits")(element.asInstanceOf[js.Any]).asInstanceOf[ISizeLimits]
     
     /**
       * An object which holds the border and padding data for an element.
       */
-    @js.native
     trait IBoxSizing extends StObject {
       
       /**
         * The bottom border width, in pixels.
         */
-      var borderBottom: Double = js.native
+      var borderBottom: Double
       
       /**
         * The left border width, in pixels.
         */
-      var borderLeft: Double = js.native
+      var borderLeft: Double
       
       /**
         * The right border width, in pixels.
         */
-      var borderRight: Double = js.native
+      var borderRight: Double
       
       /**
         * The top border width, in pixels.
         */
-      var borderTop: Double = js.native
+      var borderTop: Double
       
       /**
         * The sum of horizontal border and padding.
         */
-      var horizontalSum: Double = js.native
+      var horizontalSum: Double
       
       /**
         * The bottom padding width, in pixels.
         */
-      var paddingBottom: Double = js.native
+      var paddingBottom: Double
       
       /**
         * The left padding width, in pixels.
         */
-      var paddingLeft: Double = js.native
+      var paddingLeft: Double
       
       /**
         * The right padding width, in pixels.
         */
-      var paddingRight: Double = js.native
+      var paddingRight: Double
       
       /**
         * The top padding width, in pixels.
         */
-      var paddingTop: Double = js.native
+      var paddingTop: Double
       
       /**
         * The sum of vertical border and padding.
         */
-      var verticalSum: Double = js.native
+      var verticalSum: Double
     }
     object IBoxSizing {
       
@@ -180,28 +178,27 @@ object elementMod {
     /**
       * An object which holds the min and max size data for an element.
       */
-    @js.native
     trait ISizeLimits extends StObject {
       
       /**
         * The maximum height, in pixels.
         */
-      var maxHeight: Double = js.native
+      var maxHeight: Double
       
       /**
         * The maximum width, in pixels.
         */
-      var maxWidth: Double = js.native
+      var maxWidth: Double
       
       /**
         * The minimum height, in pixels.
         */
-      var minHeight: Double = js.native
+      var minHeight: Double
       
       /**
         * The minimum width, in pixels.
         */
-      var minWidth: Double = js.native
+      var minWidth: Double
     }
     object ISizeLimits {
       

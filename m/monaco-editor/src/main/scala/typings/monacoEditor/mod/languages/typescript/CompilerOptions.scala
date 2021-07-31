@@ -3,171 +3,170 @@ package typings.monacoEditor.mod.languages.typescript
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompilerOptions
-  extends /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
+  extends StObject
+     with /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
   
-  var allowJs: js.UndefOr[Boolean] = js.native
+  var allowJs: js.UndefOr[Boolean] = js.undefined
   
-  var allowSyntheticDefaultImports: js.UndefOr[Boolean] = js.native
+  var allowSyntheticDefaultImports: js.UndefOr[Boolean] = js.undefined
   
-  var allowUmdGlobalAccess: js.UndefOr[Boolean] = js.native
+  var allowUmdGlobalAccess: js.UndefOr[Boolean] = js.undefined
   
-  var allowUnreachableCode: js.UndefOr[Boolean] = js.native
+  var allowUnreachableCode: js.UndefOr[Boolean] = js.undefined
   
-  var allowUnusedLabels: js.UndefOr[Boolean] = js.native
+  var allowUnusedLabels: js.UndefOr[Boolean] = js.undefined
   
-  var alwaysStrict: js.UndefOr[Boolean] = js.native
+  var alwaysStrict: js.UndefOr[Boolean] = js.undefined
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
-  var checkJs: js.UndefOr[Boolean] = js.native
+  var checkJs: js.UndefOr[Boolean] = js.undefined
   
-  var composite: js.UndefOr[Boolean] = js.native
+  var composite: js.UndefOr[Boolean] = js.undefined
   
-  var declaration: js.UndefOr[Boolean] = js.native
+  var declaration: js.UndefOr[Boolean] = js.undefined
   
-  var declarationDir: js.UndefOr[String] = js.native
+  var declarationDir: js.UndefOr[String] = js.undefined
   
-  var declarationMap: js.UndefOr[Boolean] = js.native
+  var declarationMap: js.UndefOr[Boolean] = js.undefined
   
-  var disableSizeLimit: js.UndefOr[Boolean] = js.native
+  var disableSizeLimit: js.UndefOr[Boolean] = js.undefined
   
-  var disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.native
+  var disableSourceOfProjectReferenceRedirect: js.UndefOr[Boolean] = js.undefined
   
-  var downlevelIteration: js.UndefOr[Boolean] = js.native
+  var downlevelIteration: js.UndefOr[Boolean] = js.undefined
   
-  var emitBOM: js.UndefOr[Boolean] = js.native
+  var emitBOM: js.UndefOr[Boolean] = js.undefined
   
-  var emitDeclarationOnly: js.UndefOr[Boolean] = js.native
+  var emitDeclarationOnly: js.UndefOr[Boolean] = js.undefined
   
-  var emitDecoratorMetadata: js.UndefOr[Boolean] = js.native
+  var emitDecoratorMetadata: js.UndefOr[Boolean] = js.undefined
   
-  var esModuleInterop: js.UndefOr[Boolean] = js.native
+  var esModuleInterop: js.UndefOr[Boolean] = js.undefined
   
-  var experimentalDecorators: js.UndefOr[Boolean] = js.native
+  var experimentalDecorators: js.UndefOr[Boolean] = js.undefined
   
-  var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.native
+  var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined
   
-  var importHelpers: js.UndefOr[Boolean] = js.native
+  var importHelpers: js.UndefOr[Boolean] = js.undefined
   
-  var inlineSourceMap: js.UndefOr[Boolean] = js.native
+  var inlineSourceMap: js.UndefOr[Boolean] = js.undefined
   
-  var inlineSources: js.UndefOr[Boolean] = js.native
+  var inlineSources: js.UndefOr[Boolean] = js.undefined
   
-  var isolatedModules: js.UndefOr[Boolean] = js.native
+  var isolatedModules: js.UndefOr[Boolean] = js.undefined
   
-  var jsx: js.UndefOr[JsxEmit] = js.native
+  var jsx: js.UndefOr[JsxEmit] = js.undefined
   
-  var jsxFactory: js.UndefOr[String] = js.native
+  var jsxFactory: js.UndefOr[String] = js.undefined
   
-  var keyofStringsOnly: js.UndefOr[Boolean] = js.native
+  var keyofStringsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var lib: js.UndefOr[js.Array[String]] = js.native
+  var lib: js.UndefOr[js.Array[String]] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var mapRoot: js.UndefOr[String] = js.native
+  var mapRoot: js.UndefOr[String] = js.undefined
   
-  var maxNodeModuleJsDepth: js.UndefOr[Double] = js.native
+  var maxNodeModuleJsDepth: js.UndefOr[Double] = js.undefined
   
-  var module: js.UndefOr[ModuleKind] = js.native
+  var module: js.UndefOr[ModuleKind] = js.undefined
   
-  var moduleResolution: js.UndefOr[ModuleResolutionKind] = js.native
+  var moduleResolution: js.UndefOr[ModuleResolutionKind] = js.undefined
   
-  var newLine: js.UndefOr[NewLineKind] = js.native
+  var newLine: js.UndefOr[NewLineKind] = js.undefined
   
-  var noEmit: js.UndefOr[Boolean] = js.native
+  var noEmit: js.UndefOr[Boolean] = js.undefined
   
-  var noEmitHelpers: js.UndefOr[Boolean] = js.native
+  var noEmitHelpers: js.UndefOr[Boolean] = js.undefined
   
-  var noEmitOnError: js.UndefOr[Boolean] = js.native
+  var noEmitOnError: js.UndefOr[Boolean] = js.undefined
   
-  var noErrorTruncation: js.UndefOr[Boolean] = js.native
+  var noErrorTruncation: js.UndefOr[Boolean] = js.undefined
   
-  var noFallthroughCasesInSwitch: js.UndefOr[Boolean] = js.native
+  var noFallthroughCasesInSwitch: js.UndefOr[Boolean] = js.undefined
   
-  var noImplicitAny: js.UndefOr[Boolean] = js.native
+  var noImplicitAny: js.UndefOr[Boolean] = js.undefined
   
-  var noImplicitReturns: js.UndefOr[Boolean] = js.native
+  var noImplicitReturns: js.UndefOr[Boolean] = js.undefined
   
-  var noImplicitThis: js.UndefOr[Boolean] = js.native
+  var noImplicitThis: js.UndefOr[Boolean] = js.undefined
   
-  var noImplicitUseStrict: js.UndefOr[Boolean] = js.native
+  var noImplicitUseStrict: js.UndefOr[Boolean] = js.undefined
   
-  var noLib: js.UndefOr[Boolean] = js.native
+  var noLib: js.UndefOr[Boolean] = js.undefined
   
-  var noResolve: js.UndefOr[Boolean] = js.native
+  var noResolve: js.UndefOr[Boolean] = js.undefined
   
-  var noStrictGenericChecks: js.UndefOr[Boolean] = js.native
+  var noStrictGenericChecks: js.UndefOr[Boolean] = js.undefined
   
-  var noUnusedLocals: js.UndefOr[Boolean] = js.native
+  var noUnusedLocals: js.UndefOr[Boolean] = js.undefined
   
-  var noUnusedParameters: js.UndefOr[Boolean] = js.native
+  var noUnusedParameters: js.UndefOr[Boolean] = js.undefined
   
-  var out: js.UndefOr[String] = js.native
+  var out: js.UndefOr[String] = js.undefined
   
-  var outDir: js.UndefOr[String] = js.native
+  var outDir: js.UndefOr[String] = js.undefined
   
-  var outFile: js.UndefOr[String] = js.native
+  var outFile: js.UndefOr[String] = js.undefined
   
-  var paths: js.UndefOr[MapLike[js.Array[String]]] = js.native
+  var paths: js.UndefOr[MapLike[js.Array[String]]] = js.undefined
   
-  var preserveConstEnums: js.UndefOr[Boolean] = js.native
+  var preserveConstEnums: js.UndefOr[Boolean] = js.undefined
   
-  var preserveSymlinks: js.UndefOr[Boolean] = js.native
+  var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
   
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
-  var reactNamespace: js.UndefOr[String] = js.native
+  var reactNamespace: js.UndefOr[String] = js.undefined
   
-  var removeComments: js.UndefOr[Boolean] = js.native
+  var removeComments: js.UndefOr[Boolean] = js.undefined
   
-  var resolveJsonModule: js.UndefOr[Boolean] = js.native
+  var resolveJsonModule: js.UndefOr[Boolean] = js.undefined
   
-  var rootDir: js.UndefOr[String] = js.native
+  var rootDir: js.UndefOr[String] = js.undefined
   
-  var rootDirs: js.UndefOr[js.Array[String]] = js.native
+  var rootDirs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var skipDefaultLibCheck: js.UndefOr[Boolean] = js.native
+  var skipDefaultLibCheck: js.UndefOr[Boolean] = js.undefined
   
-  var skipLibCheck: js.UndefOr[Boolean] = js.native
+  var skipLibCheck: js.UndefOr[Boolean] = js.undefined
   
-  var sourceMap: js.UndefOr[Boolean] = js.native
+  var sourceMap: js.UndefOr[Boolean] = js.undefined
   
-  var sourceRoot: js.UndefOr[String] = js.native
+  var sourceRoot: js.UndefOr[String] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
-  var strictBindCallApply: js.UndefOr[Boolean] = js.native
+  var strictBindCallApply: js.UndefOr[Boolean] = js.undefined
   
-  var strictFunctionTypes: js.UndefOr[Boolean] = js.native
+  var strictFunctionTypes: js.UndefOr[Boolean] = js.undefined
   
-  var strictNullChecks: js.UndefOr[Boolean] = js.native
+  var strictNullChecks: js.UndefOr[Boolean] = js.undefined
   
-  var strictPropertyInitialization: js.UndefOr[Boolean] = js.native
+  var strictPropertyInitialization: js.UndefOr[Boolean] = js.undefined
   
-  var stripInternal: js.UndefOr[Boolean] = js.native
+  var stripInternal: js.UndefOr[Boolean] = js.undefined
   
-  var suppressExcessPropertyErrors: js.UndefOr[Boolean] = js.native
+  var suppressExcessPropertyErrors: js.UndefOr[Boolean] = js.undefined
   
-  var suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.native
+  var suppressImplicitAnyIndexErrors: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[ScriptTarget] = js.native
+  var target: js.UndefOr[ScriptTarget] = js.undefined
   
-  var traceResolution: js.UndefOr[Boolean] = js.native
+  var traceResolution: js.UndefOr[Boolean] = js.undefined
   
   /** Paths used to compute primary types search locations */
-  var typeRoots: js.UndefOr[js.Array[String]] = js.native
+  var typeRoots: js.UndefOr[js.Array[String]] = js.undefined
   
-  var types: js.UndefOr[js.Array[String]] = js.native
+  var types: js.UndefOr[js.Array[String]] = js.undefined
   
-  var useDefineForClassFields: js.UndefOr[Boolean] = js.native
+  var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
 }
 object CompilerOptions {
   

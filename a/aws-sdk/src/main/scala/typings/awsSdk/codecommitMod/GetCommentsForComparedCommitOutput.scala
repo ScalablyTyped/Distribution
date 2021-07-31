@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCommentsForComparedCommitOutput extends StObject {
   
   /**
     * A list of comment objects on the compared commit.
     */
-  var commentsForComparedCommitData: js.UndefOr[CommentsForComparedCommitData] = js.native
+  var commentsForComparedCommitData: js.UndefOr[CommentsForComparedCommitData] = js.undefined
   
   /**
     * An enumeration token that can be used in a request to return the next batch of the results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetCommentsForComparedCommitOutput {
   

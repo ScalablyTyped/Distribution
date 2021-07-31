@@ -2,31 +2,29 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCampaignRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the campaign.
     */
-  var campaignArn: Arn = js.native
+  var campaignArn: Arn
   
   /**
     * The configuration details of a campaign.
     */
-  var campaignConfig: js.UndefOr[CampaignConfig] = js.native
+  var campaignConfig: js.UndefOr[CampaignConfig] = js.undefined
   
   /**
     * Specifies the requested minimum provisioned transactions (recommendations) per second that Amazon Personalize will support.
     */
-  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.native
+  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined
   
   /**
     * The ARN of a new solution version to deploy.
     */
-  var solutionVersionArn: js.UndefOr[Arn] = js.native
+  var solutionVersionArn: js.UndefOr[Arn] = js.undefined
 }
 object UpdateCampaignRequest {
   

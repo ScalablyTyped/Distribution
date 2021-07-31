@@ -2,7 +2,6 @@ package typings.hdrHistogramJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zigZagEncodingMod {
@@ -25,8 +24,14 @@ object zigZagEncodingMod {
     */
   @JSImport("hdr-histogram-js/ZigZagEncoding", JSImport.Default)
   @js.native
-  class default () extends ZigZagEncoding
+  class default ()
+    extends StObject
+       with ZigZagEncoding
   object default {
+    
+    @JSImport("hdr-histogram-js/ZigZagEncoding", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Read an LEB128-64b9B ZigZag encoded long value from the given buffer
@@ -35,9 +40,8 @@ object zigZagEncodingMod {
       * @return the value read from the buffer
       */
     /* static member */
-    @JSImport("hdr-histogram-js/ZigZagEncoding", "default.decode")
-    @js.native
-    def decode(buffer: typings.hdrHistogramJs.byteBufferMod.default): Double = js.native
+    @scala.inline
+    def decode(buffer: typings.hdrHistogramJs.byteBufferMod.default): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Writes a long value to the given buffer in LEB128 ZigZag encoded format
@@ -46,9 +50,8 @@ object zigZagEncodingMod {
       * @param value  the value to write to the buffer
       */
     /* static member */
-    @JSImport("hdr-histogram-js/ZigZagEncoding", "default.encode")
-    @js.native
-    def encode(buffer: typings.hdrHistogramJs.byteBufferMod.default, value: Double): Unit = js.native
+    @scala.inline
+    def encode(buffer: typings.hdrHistogramJs.byteBufferMod.default, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -67,6 +70,5 @@ object zigZagEncodingMod {
     * As such, this encoder/decoder should NOT be used for encoding or decoding
     * "standard" LEB128 formats (e.g. Google Protocol Buffers).
     */
-  @js.native
   trait ZigZagEncoding extends StObject
 }

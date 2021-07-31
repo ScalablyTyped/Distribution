@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ChecksRerequestSuiteRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersChecksRerequestSuiteEndpoint extends StObject {
   
-  var parameters: ChecksRerequestSuiteEndpoint = js.native
+  var parameters: ChecksRerequestSuiteEndpoint
   
-  var request: ChecksRerequestSuiteRequestOptions = js.native
+  var request: ChecksRerequestSuiteRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersChecksRerequestSuiteEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersChecksRerequestSuiteEndpoint {
   def apply(
     parameters: ChecksRerequestSuiteEndpoint,
     request: ChecksRerequestSuiteRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersChecksRerequestSuiteEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersChecksRerequestSuiteEndpoint]
@@ -39,6 +37,6 @@ object ParametersChecksRerequestSuiteEndpoint {
     def setRequest(value: ChecksRerequestSuiteRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

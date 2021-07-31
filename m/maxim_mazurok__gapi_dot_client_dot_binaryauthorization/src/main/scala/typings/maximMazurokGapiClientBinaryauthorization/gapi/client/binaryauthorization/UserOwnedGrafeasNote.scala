@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserOwnedGrafeasNote extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait UserOwnedGrafeasNote extends StObject {
     * is fixed for the lifetime of the Attestor, but callers should not make any other assumptions about the service account email; future versions may use an email based on a different
     * naming pattern.
     */
-  var delegationServiceAccountEmail: js.UndefOr[String] = js.native
+  var delegationServiceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Grafeas resource name of a Attestation.Authority Note, created by the user, in the format: `projects/∗/notes/ *`. This field may not be updated. An attestation by this
     * attestor is stored as a Grafeas Attestation.Authority Occurrence that names a container image and that links to this Note. Grafeas is an external dependency.
     */
-  var noteReference: js.UndefOr[String] = js.native
+  var noteReference: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Public keys that verify attestations signed by this attestor. This field may be updated. If this field is non-empty, one of the specified public keys must verify that an
     * attestation was signed by this attestor for the image specified in the admission request. If this field is empty, this attestor always returns that no valid attestations exist.
     */
-  var publicKeys: js.UndefOr[js.Array[AttestorPublicKey]] = js.native
+  var publicKeys: js.UndefOr[js.Array[AttestorPublicKey]] = js.undefined
 }
 object UserOwnedGrafeasNote {
   

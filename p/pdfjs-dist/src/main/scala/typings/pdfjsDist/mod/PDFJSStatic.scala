@@ -2,10 +2,8 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFJSStatic extends StObject {
   
   /**
@@ -13,20 +11,20 @@ trait PDFJSStatic extends StObject {
     * very important for mobile development
     * @params {PDFViewerParams}
     */
-  def PDFSinglePageViewer(params: PDFViewerParams): Unit = js.native
+  def PDFSinglePageViewer(params: PDFViewerParams): Unit
   
-  def PDFViewer(params: PDFViewerParams): Unit = js.native
+  def PDFViewer(params: PDFViewerParams): Unit
   
   /**
     * Specifies if CMaps are binary packed.
     */
-  var cMapPacked: Boolean = js.native
+  var cMapPacked: Boolean
   
   /**
     * The url of where the predefined Adobe CMaps are located. Include trailing
     * slash.
     */
-  var cMapUrl: String = js.native
+  var cMapUrl: String
   
   /**
     * Disable pre-fetching of PDF file data. When range requests are enabled PDF.js
@@ -36,98 +34,98 @@ trait PDFJSStatic extends StObject {
     * NOTE: It is also necessary to disable streaming, see above,
     *       in order for disabling of pre-fetching to work correctly.
     */
-  var disableAutoFetch: Boolean = js.native
+  var disableAutoFetch: Boolean
   
   /**
     * Disables URL.createObjectURL usage.
     */
-  var disableCreateObjectURL: Boolean = js.native
+  var disableCreateObjectURL: Boolean
   
   /**
     * By default fonts are converted to OpenType fonts and loaded via font face rules.  If disabled, the font will be rendered using a built in font renderer that constructs the glyphs with primitive path commands.
     **/
-  var disableFontFace: Boolean = js.native
+  var disableFontFace: Boolean
   
   /**
     * Disables fullscreen support, and by extension Presentation Mode,
     * in browsers which support the fullscreen API.
     */
-  var disableFullscreen: Boolean = js.native
+  var disableFullscreen: Boolean
   
   /**
     * Disable range request loading of PDF files. When enabled and if the server
     * supports partial content requests then the PDF will be fetched in chunks.
     * Enabled (false) by default.
     */
-  var disableRange: Boolean = js.native
+  var disableRange: Boolean
   
   /**
     * Disable streaming of PDF file data. By default PDF.js attempts to load PDF
     * in chunks. This default behavior can be disabled.
     */
-  var disableStream: Boolean = js.native
+  var disableStream: Boolean
   
   /**
     * Disable the text layer of PDF when used PDF.js renders a canvas instead of div elements
     *
     */
-  var disableTextLayer: Boolean = js.native
+  var disableTextLayer: Boolean
   
   /**
     * Disables WebGL usage.
     */
-  var disableWebGL: Boolean = js.native
+  var disableWebGL: Boolean
   
   /**
     * Disable the web worker and run all code on the main thread. This will happen
     * automatically if the browser doesn't support workers or sending typed arrays
     * to workers.
     */
-  var disableWorker: Boolean = js.native
+  var disableWorker: Boolean
   
   /**
     * Path for image resources, mainly for annotation icons. Include trailing
     * slash.
     */
-  var imageResourcesPath: String = js.native
+  var imageResourcesPath: String
   
   /**
     * Determines if we can eval strings as JS. Primarily used to improve
     * performance for font rendering.
     */
-  var isEvalSupported: Boolean = js.native
+  var isEvalSupported: Boolean
   
   /**
     * The maximum supported canvas size in total pixels e.g. width * height.
     * The default value is 4096 * 4096. Use -1 for no limit.
     */
-  var maxCanvasPixels: Double = js.native
+  var maxCanvasPixels: Double
   
   /**
     * The maximum allowed image size in total pixels e.g. width * height.  Images above this value will not be drawn.  Use -1 for no limit.
     **/
-  var maxImageSize: Double = js.native
+  var maxImageSize: Double
   
   /**
     * Opens external links in a new window if enabled. The default behavior opens
     * external links in the PDF.js window.
     */
-  var openExternalLinksInNewWindow: Boolean = js.native
+  var openExternalLinksInNewWindow: Boolean
   
   /**
     * Enables special hooks for debugging PDF.js.
     */
-  var pdfBug: Boolean = js.native
+  var pdfBug: Boolean
   
   /**
     * Enables transfer usage in postMessage for ArrayBuffers.
     */
-  var postMessageTransfers: Boolean = js.native
+  var postMessageTransfers: Boolean
   
   /**
     * Enables CSS only zooming.
     */
-  var useOnlyCssZoom: Boolean = js.native
+  var useOnlyCssZoom: Boolean
   
   /**
     * Controls the logging level.
@@ -136,14 +134,14 @@ trait PDFJSStatic extends StObject {
     * - warnings [default]
     * - infos
     */
-  var verbosity: Double = js.native
+  var verbosity: Double
   
   /**
     * Path and filename of the worker file. Required when the worker is enabled in
     * development mode. If unspecified in the production build, the worker will be
     * loaded based on the location of the pdf.js file.
     */
-  var workerSrc: String = js.native
+  var workerSrc: String
 }
 object PDFJSStatic {
   

@@ -2,50 +2,50 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedEBook extends Entity {
+trait ManagedEBook
+  extends StObject
+     with Entity {
   
   // The list of assignments for this eBook.
-  var assignments: js.UndefOr[NullableOption[js.Array[ManagedEBookAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[ManagedEBookAssignment]]] = js.undefined
   
   // The date and time when the eBook file was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Description.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of installation states for this eBook.
-  var deviceStates: js.UndefOr[NullableOption[js.Array[DeviceInstallState]]] = js.native
+  var deviceStates: js.UndefOr[NullableOption[js.Array[DeviceInstallState]]] = js.undefined
   
   // Name of the eBook.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // The more information Url.
-  var informationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var informationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Mobile App Install Summary.
-  var installSummary: js.UndefOr[NullableOption[EBookInstallSummary]] = js.native
+  var installSummary: js.UndefOr[NullableOption[EBookInstallSummary]] = js.undefined
   
   // Book cover.
-  var largeCover: js.UndefOr[NullableOption[MimeContent]] = js.native
+  var largeCover: js.UndefOr[NullableOption[MimeContent]] = js.undefined
   
   // The date and time when the eBook was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // The privacy statement Url.
-  var privacyInformationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var privacyInformationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date and time when the eBook was published.
-  var publishedDateTime: js.UndefOr[String] = js.native
+  var publishedDateTime: js.UndefOr[String] = js.undefined
   
   // Publisher.
-  var publisher: js.UndefOr[NullableOption[String]] = js.native
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of installation states for this eBook.
-  var userStateSummary: js.UndefOr[NullableOption[js.Array[UserInstallStateSummary]]] = js.native
+  var userStateSummary: js.UndefOr[NullableOption[js.Array[UserInstallStateSummary]]] = js.undefined
 }
 object ManagedEBook {
   

@@ -10,9 +10,9 @@ TypeScript typings for Chrome UX Report API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.chromeuxreport |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 47 |
 | # dependents       | 1 |
-| # downloads        | 126 |
+| # downloads        | 3020 |
 | # stars            | 0 |
 
 ## Links

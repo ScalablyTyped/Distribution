@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisualVariablesMixinProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait VisualVariablesMixinProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-mixins-VisualVariablesMixin.html#visualVariables)
     */
-  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.native
+  var visualVariables: js.UndefOr[js.Array[VisualVariableProperties]] = js.undefined
 }
 object VisualVariablesMixinProperties {
   

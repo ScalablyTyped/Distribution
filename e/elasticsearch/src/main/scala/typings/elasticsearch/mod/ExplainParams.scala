@@ -2,45 +2,45 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExplainParams extends GenericParams {
+trait ExplainParams
+  extends StObject
+     with GenericParams {
   
-  var _source: js.UndefOr[NameList] = js.native
+  var _source: js.UndefOr[NameList] = js.undefined
   
-  var _sourceExclude: js.UndefOr[NameList] = js.native
+  var _sourceExclude: js.UndefOr[NameList] = js.undefined
   
-  var _sourceInclude: js.UndefOr[NameList] = js.native
+  var _sourceInclude: js.UndefOr[NameList] = js.undefined
   
-  var analyzeWildcard: js.UndefOr[Boolean] = js.native
+  var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var defaultOperator: js.UndefOr[DefaultOperator] = js.native
+  var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.native
+  var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var storedFields: js.UndefOr[NameList] = js.native
+  var storedFields: js.UndefOr[NameList] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ExplainParams {
   

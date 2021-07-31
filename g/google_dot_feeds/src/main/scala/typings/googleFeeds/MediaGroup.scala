@@ -2,13 +2,11 @@ package typings.googleFeeds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaGroup extends StObject {
   
-  var content: js.Array[MediaContent] = js.native
+  var content: js.Array[MediaContent]
 }
 object MediaGroup {
   

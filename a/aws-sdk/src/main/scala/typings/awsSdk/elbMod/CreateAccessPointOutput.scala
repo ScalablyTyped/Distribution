@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAccessPointOutput extends StObject {
   
   /**
     * The DNS name of the load balancer.
     */
-  var DNSName: js.UndefOr[typings.awsSdk.elbMod.DNSName] = js.native
+  var DNSName: js.UndefOr[typings.awsSdk.elbMod.DNSName] = js.undefined
 }
 object CreateAccessPointOutput {
   

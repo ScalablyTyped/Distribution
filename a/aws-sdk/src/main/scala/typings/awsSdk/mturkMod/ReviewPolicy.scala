@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewPolicy extends StObject {
   
   /**
     * Name of the parameter from the Review policy.
     */
-  var Parameters: js.UndefOr[PolicyParameterList] = js.native
+  var Parameters: js.UndefOr[PolicyParameterList] = js.undefined
   
   /**
     *  Name of a Review Policy: SimplePlurality/2011-09-01 or ScoreMyKnownAnswers/2011-09-01 
     */
-  var PolicyName: String = js.native
+  var PolicyName: String
 }
 object ReviewPolicy {
   

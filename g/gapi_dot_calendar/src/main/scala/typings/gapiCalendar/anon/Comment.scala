@@ -4,31 +4,29 @@ import typings.gapiCalendar.gapi.client.calendar.AttendeeResponseStatus
 import typings.gapiCalendar.gapi.client.calendar.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
-  var additionalGuests: js.UndefOr[integer] = js.native
+  var additionalGuests: js.UndefOr[integer] = js.undefined
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var email: String = js.native
+  var email: String
   
-  var id: String = js.native
+  var id: String
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
-  var organizer: Boolean = js.native
+  var organizer: Boolean
   
-  var resource: Boolean = js.native
+  var resource: Boolean
   
-  var responseStatus: AttendeeResponseStatus = js.native
+  var responseStatus: AttendeeResponseStatus
   
-  var self: Boolean = js.native
+  var self: Boolean
 }
 object Comment {
   

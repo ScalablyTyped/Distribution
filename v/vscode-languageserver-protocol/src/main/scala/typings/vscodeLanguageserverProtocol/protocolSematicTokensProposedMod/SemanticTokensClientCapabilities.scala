@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensClientCapabilities extends StObject {
   
   /**
     * The text document client capabilities
     */
-  var textDocument: js.UndefOr[typings.vscodeLanguageserverProtocol.anon.SemanticTokens] = js.native
+  var textDocument: js.UndefOr[typings.vscodeLanguageserverProtocol.anon.SemanticTokens] = js.undefined
 }
 object SemanticTokensClientCapabilities {
   

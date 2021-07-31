@@ -7,7 +7,6 @@ import typings.leaflet.mod.MarkerOptions
 import typings.leaflet.mod.PolylineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -45,7 +44,7 @@ object mod {
       * it will be passed to the marker class constructor.
       */
     def startMarker(): Marker = js.native
-    def startMarker(latLng: js.UndefOr[scala.Nothing], options: MarkerOptions): Marker = js.native
+    def startMarker(latLng: Unit, options: MarkerOptions): Marker = js.native
     def startMarker(latLng: LatLng_): Marker = js.native
     def startMarker(latLng: LatLng_, options: MarkerOptions): Marker = js.native
     
@@ -54,7 +53,7 @@ object mod {
       * click. If options is given, it will be passed to the polygon class constructor.
       */
     def startPolygon(): Polygon = js.native
-    def startPolygon(latLng: js.UndefOr[scala.Nothing], options: PolylineOptions): Polygon = js.native
+    def startPolygon(latLng: Unit, options: PolylineOptions): Polygon = js.native
     def startPolygon(latLng: LatLng_): Polygon = js.native
     def startPolygon(latLng: LatLng_, options: PolylineOptions): Polygon = js.native
     
@@ -63,7 +62,7 @@ object mod {
       * click. If options is given, it will be passed to the polyline class constructor.
       */
     def startPolyline(): Polyline = js.native
-    def startPolyline(latLng: js.UndefOr[scala.Nothing], options: PolylineOptions): Polyline = js.native
+    def startPolyline(latLng: Unit, options: PolylineOptions): Polyline = js.native
     def startPolyline(latLng: LatLng_): Polyline = js.native
     def startPolyline(latLng: LatLng_, options: PolylineOptions): Polyline = js.native
     
@@ -82,18 +81,17 @@ object mod {
     * When editing a feature (marker, polyline…), an editor is attached to it. This editor basically knows
     * how to handle the edition.
     */
-  @js.native
   trait BaseEditor extends StObject {
     
     /**
       * Remove editing tools.
       */
-    def disable(): MarkerEditor | PolylineEditor | PolygonEditor = js.native
+    def disable(): MarkerEditor | PolylineEditor | PolygonEditor
     
     /**
       * Set up the drawing tools for the feature to be editable.
       */
-    def enable(): MarkerEditor | PolylineEditor | PolygonEditor = js.native
+    def enable(): MarkerEditor | PolylineEditor | PolygonEditor
   }
   object BaseEditor {
     
@@ -120,77 +118,76 @@ object mod {
   /**
     * Options to pass to L.Editable when instanciating.
     */
-  @js.native
   trait EditOptions extends StObject {
     
     /**
       * CSS class to be added to the map container while drawing.
       */
-    var drawingCSSClass: js.UndefOr[String] = js.native
+    var drawingCSSClass: js.UndefOr[String] = js.undefined
     
     /**
       * Layer used to store edit tools (vertex, line guide…).
       */
     var editLayer: js.UndefOr[
         LayerGroup_[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Default layer used to store drawn features (marker, polyline…).
       */
-    var featuresLayer: js.UndefOr[LayerGroup_[Polyline | Polygon | Marker]] = js.native
+    var featuresLayer: js.UndefOr[LayerGroup_[Polyline | Polygon | Marker]] = js.undefined
     
     /**
       * Options to be passed to the line guides.
       */
-    var lineGuideOptions: js.UndefOr[js.Object] = js.native
+    var lineGuideOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used when creating a new Marker.
       */
-    var markerClass: js.UndefOr[js.Object] = js.native
+    var markerClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used as Marker editor.
       */
-    var markerEditorClass: js.UndefOr[js.Object] = js.native
+    var markerEditorClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used as middle vertex, pulled by the user to create a new point in the middle of a path.
       */
-    var middleMarkerClass: js.UndefOr[js.Object] = js.native
+    var middleMarkerClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used when creating a new Polygon.
       */
-    var polygonClass: js.UndefOr[js.Object] = js.native
+    var polygonClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used as Polygon editor.
       */
-    var polygonEditorClass: js.UndefOr[js.Object] = js.native
+    var polygonEditorClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used when creating a new Polyline.
       */
-    var polylineClass: js.UndefOr[js.Object] = js.native
+    var polylineClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Class to be used as Polyline editor.
       */
-    var polylineEditorClass: js.UndefOr[js.Object] = js.native
+    var polylineEditorClass: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Set this to true if you don't want middle markers.
       */
-    var skipMiddleMarkers: js.UndefOr[Boolean] = js.native
+    var skipMiddleMarkers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class to be used as vertex, for path editing.
       */
-    var vertexMarkerClass: js.UndefOr[js.Object] = js.native
+    var vertexMarkerClass: js.UndefOr[js.Object] = js.undefined
   }
   object EditOptions {
     
@@ -212,7 +209,7 @@ object mod {
       @scala.inline
       def setEditLayer(
         value: LayerGroup_[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ js.Any
             ]
       ): Self = StObject.set(x, "editLayer", value.asInstanceOf[js.Any])
       
@@ -292,28 +289,27 @@ object mod {
     *
     * When editing is enabled, the editor is accessible on the instance with the editor property.
     */
-  @js.native
   trait EditableMixin extends StObject {
     
     /**
       * Disable editing, also remove the editor property reference.
       */
-    def disableEdit(): Unit = js.native
+    def disableEdit(): Unit
     
     /**
       * Return true if current instance has an editor attached, and this editor is enabled.
       */
-    def editEnabled(): Boolean = js.native
+    def editEnabled(): Boolean
     
     /**
       * Enable editing, by creating an editor if not existing, and then calling enable on it.
       */
-    def enableEdit(): js.Any = js.native
+    def enableEdit(): js.Any
     
     /**
       * Enable or disable editing, according to current status.
       */
-    def toggleEdit(): Unit = js.native
+    def toggleEdit(): Unit
   }
   object EditableMixin {
     
@@ -352,25 +348,26 @@ object mod {
     * control editing of geometries. So you can easily build your own UI with your own needs and choices.
     */
   @js.native
-  trait EditableStatic extends Instantiable2[/* map */ Map, /* options */ EditOptions, Editable]
+  trait EditableStatic
+    extends StObject
+       with Instantiable2[/* map */ Map, /* options */ EditOptions, Editable]
   
-  @js.native
   trait Map extends StObject {
     
     /**
       * Options to pass to L.Editable when instanciating.
       */
-    var editOptions: EditOptions = js.native
+    var editOptions: EditOptions
     
     /**
       * L.Editable plugin instance.
       */
-    var editTools: Editable = js.native
+    var editTools: Editable
     
     /**
       * Whether to create a L.Editable instance at map init or not.
       */
-    var editable: Boolean = js.native
+    var editable: Boolean
   }
   object Map {
     
@@ -393,18 +390,17 @@ object mod {
       def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     }
     
-    @js.native
     trait MapOptions extends StObject {
       
       /**
         * Options to pass to L.Editable when instanciating.
         */
-      var editOptions: js.UndefOr[EditOptions] = js.native
+      var editOptions: js.UndefOr[EditOptions] = js.undefined
       
       /**
         * Whether to create a L.Editable instance at map init or not.
         */
-      var editable: js.UndefOr[Boolean] = js.native
+      var editable: js.UndefOr[Boolean] = js.undefined
     }
     object MapOptions {
       
@@ -432,9 +428,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Marker
-    extends EditableMixin
+    extends StObject
+       with EditableMixin
        with BaseEditor
   object Marker {
     
@@ -462,13 +458,14 @@ object mod {
     * Inherit from L.Editable.BaseEditor.
     * Inherited by L.Editable.PolylineEditor and L.Editable.PolygonEditor.
     */
-  @js.native
-  trait PathEditor extends BaseEditor {
+  trait PathEditor
+    extends StObject
+       with BaseEditor {
     
     /**
       * Rebuild edit elements (vertex, middlemarker, etc.).
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object PathEditor {
     
@@ -490,10 +487,10 @@ object mod {
     }
   }
   
-  @js.native
   trait Polygon
-    extends PolygonEditor
+    extends StObject
        with EditableMixin
+       with PolygonEditor
   object Polygon {
     
     @scala.inline
@@ -515,14 +512,15 @@ object mod {
   /**
     * Inherit from L.Editable.PathEditor.
     */
-  @js.native
-  trait PolygonEditor extends PathEditor {
+  trait PolygonEditor
+    extends StObject
+       with PathEditor {
     
     /**
       * Set up drawing tools for creating a new hole on the polygon. If the latlng param is given, a first
       * point is created.
       */
-    def newHole(latlng: LatLng_): Unit = js.native
+    def newHole(latlng: LatLng_): Unit
   }
   object PolygonEditor {
     
@@ -546,10 +544,10 @@ object mod {
   }
   
   // tslint:disable-next-line:no-empty-interface
-  @js.native
   trait Polyline
-    extends PolylineEditor
+    extends StObject
        with EditableMixin
+       with PolylineEditor
   object Polyline {
     
     @scala.inline
@@ -572,18 +570,19 @@ object mod {
   /**
     * Inherit from L.Editable.PathEditor.
     */
-  @js.native
-  trait PolylineEditor extends PathEditor {
+  trait PolylineEditor
+    extends StObject
+       with PathEditor {
     
     /**
       * Set up drawing tools to continue the line backward.
       */
-    def continueBackward(): Unit = js.native
+    def continueBackward(): Unit
     
     /**
       * Set up drawing tools to continue the line forward.
       */
-    def continueForward(): Unit = js.native
+    def continueForward(): Unit
   }
   object PolylineEditor {
     

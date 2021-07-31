@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for `TestIamPermissions` method.
   */
-@js.native
 trait SchemaTestIamPermissionsRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaTestIamPermissionsRequest extends StObject {
     * Permissions with wildcards (such as &#39;*&#39;, &#39;spanner.*&#39;,
     * &#39;spanner.instances.*&#39;) are not allowed.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTestIamPermissionsRequest {
   

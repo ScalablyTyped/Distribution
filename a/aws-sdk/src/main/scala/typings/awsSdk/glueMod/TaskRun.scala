@@ -2,61 +2,59 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskRun extends StObject {
   
   /**
     * The last point in time that the requested task run was completed.
     */
-  var CompletedOn: js.UndefOr[Timestamp] = js.native
+  var CompletedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The list of error strings associated with this task run.
     */
-  var ErrorString: js.UndefOr[GenericString] = js.native
+  var ErrorString: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The amount of time (in seconds) that the task run consumed resources.
     */
-  var ExecutionTime: js.UndefOr[typings.awsSdk.glueMod.ExecutionTime] = js.native
+  var ExecutionTime: js.UndefOr[typings.awsSdk.glueMod.ExecutionTime] = js.undefined
   
   /**
     * The last point in time that the requested task run was updated.
     */
-  var LastModifiedOn: js.UndefOr[Timestamp] = js.native
+  var LastModifiedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The names of the log group for secure logging, associated with this task run.
     */
-  var LogGroupName: js.UndefOr[GenericString] = js.native
+  var LogGroupName: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Specifies configuration properties associated with this task run.
     */
-  var Properties: js.UndefOr[TaskRunProperties] = js.native
+  var Properties: js.UndefOr[TaskRunProperties] = js.undefined
   
   /**
     * The date and time that this task run started.
     */
-  var StartedOn: js.UndefOr[Timestamp] = js.native
+  var StartedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current status of the requested task run.
     */
-  var Status: js.UndefOr[TaskStatusType] = js.native
+  var Status: js.UndefOr[TaskStatusType] = js.undefined
   
   /**
     * The unique identifier for this task run.
     */
-  var TaskRunId: js.UndefOr[HashString] = js.native
+  var TaskRunId: js.UndefOr[HashString] = js.undefined
   
   /**
     * The unique identifier for the transform.
     */
-  var TransformId: js.UndefOr[HashString] = js.native
+  var TransformId: js.UndefOr[HashString] = js.undefined
 }
 object TaskRun {
   

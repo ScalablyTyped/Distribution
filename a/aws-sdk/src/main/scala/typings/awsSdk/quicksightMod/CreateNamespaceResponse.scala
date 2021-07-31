@@ -2,46 +2,44 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNamespaceResponse extends StObject {
   
   /**
     * The ARN of the QuickSight namespace you created. 
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The AWS Region that you want to use for the free SPICE capacity for the new namespace. This is set to the region that you run CreateNamespace in. 
     */
-  var CapacityRegion: js.UndefOr[String] = js.native
+  var CapacityRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the creation of the namespace. This is an asynchronous process. A status of CREATED means that your namespace is ready to use. If an error occurs, it indicates if the process is retryable or non-retryable. In the case of a non-retryable error, refer to the error message for follow-up tasks.
     */
-  var CreationStatus: js.UndefOr[NamespaceStatus] = js.native
+  var CreationStatus: js.UndefOr[NamespaceStatus] = js.undefined
   
   /**
     * Specifies the type of your user identity directory. Currently, this supports users with an identity type of QUICKSIGHT.
     */
-  var IdentityStore: js.UndefOr[typings.awsSdk.quicksightMod.IdentityStore] = js.native
+  var IdentityStore: js.UndefOr[typings.awsSdk.quicksightMod.IdentityStore] = js.undefined
   
   /**
     * The name of the new namespace that you created.
     */
-  var Name: js.UndefOr[Namespace] = js.native
+  var Name: js.UndefOr[Namespace] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object CreateNamespaceResponse {
   

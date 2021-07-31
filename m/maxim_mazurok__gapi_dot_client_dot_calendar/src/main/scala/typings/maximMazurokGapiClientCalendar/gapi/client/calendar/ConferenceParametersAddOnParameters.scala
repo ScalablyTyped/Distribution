@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConferenceParametersAddOnParameters extends StObject {
   
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.ConferenceParametersAddOnParameters with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.ConferenceParametersAddOnParameters & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ConferenceParametersAddOnParameters {
   
@@ -30,7 +28,7 @@ object ConferenceParametersAddOnParameters {
     def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.ConferenceParametersAddOnParameters with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.ConferenceParametersAddOnParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

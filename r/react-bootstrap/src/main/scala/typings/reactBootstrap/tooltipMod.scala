@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -19,25 +18,26 @@ object tooltipMod {
   trait Tooltip
     extends Component[TooltipProps, js.Object, js.Any]
   
-  @js.native
-  trait TooltipProps extends HTMLProps[Tooltip] {
+  trait TooltipProps
+    extends StObject
+       with HTMLProps[Tooltip] {
     
     // Optional
-    var arrowOffsetLeft: js.UndefOr[Double | String] = js.native
+    var arrowOffsetLeft: js.UndefOr[Double | String] = js.undefined
     
-    var arrowOffsetTop: js.UndefOr[Double | String] = js.native
+    var arrowOffsetTop: js.UndefOr[Double | String] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var positionLeft: js.UndefOr[Double] = js.native
+    var positionLeft: js.UndefOr[Double] = js.undefined
     
-    var positionTop: js.UndefOr[Double] = js.native
+    var positionTop: js.UndefOr[Double] = js.undefined
   }
   object TooltipProps {
     

@@ -3,10 +3,8 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverTypes.mod.CompletionItemKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait `0` extends StObject {
     * the completion items kinds from `Text` to `Reference` as defined in
     * the initial version of the protocol.
     */
-  var valueSet: js.UndefOr[js.Array[CompletionItemKind]] = js.native
+  var valueSet: js.UndefOr[js.Array[CompletionItemKind]] = js.undefined
 }
 object `0` {
   

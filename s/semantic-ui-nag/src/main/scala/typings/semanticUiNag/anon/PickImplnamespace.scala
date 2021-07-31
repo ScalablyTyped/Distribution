@@ -2,14 +2,12 @@ package typings.semanticUiNag.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-nag.SemanticUI.NagSettings._Impl, 'namespace'> */
-@js.native
 trait PickImplnamespace extends StObject {
   
-  var namespace: String = js.native
+  var namespace: String
 }
 object PickImplnamespace {
   

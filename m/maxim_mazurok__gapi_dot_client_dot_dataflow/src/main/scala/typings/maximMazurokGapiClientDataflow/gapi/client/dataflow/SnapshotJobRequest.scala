@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotJobRequest extends StObject {
   
   /** User specified description of the snapshot. Maybe empty. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The location that contains this job. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** If true, perform snapshots for sources which support this. */
-  var snapshotSources: js.UndefOr[Boolean] = js.native
+  var snapshotSources: js.UndefOr[Boolean] = js.undefined
   
   /** TTL for the snapshot. */
-  var ttl: js.UndefOr[String] = js.native
+  var ttl: js.UndefOr[String] = js.undefined
 }
 object SnapshotJobRequest {
   

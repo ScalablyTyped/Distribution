@@ -6,7 +6,6 @@ import typings.crossfilter.anon.CallArrayLoHi
 import typings.crossfilter.anon.CallBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CrossFilter {
@@ -25,20 +24,19 @@ object CrossFilter {
     var right_Original: Bisection[T, U] = js.native
   }
   
-  @js.native
   trait CrossFilter[T] extends StObject {
     
-    def GroupAll(): typings.crossfilter.CrossFilter.GroupAll[T, T] = js.native
+    def GroupAll(): typings.crossfilter.CrossFilter.GroupAll[T, T]
     
-    def add(records: js.Array[T]): typings.crossfilter.CrossFilter.CrossFilter[T] = js.native
+    def add(records: js.Array[T]): typings.crossfilter.CrossFilter.CrossFilter[T]
     
-    def dimension[TDimension](value: js.Function1[/* data */ T, TDimension]): Dimension[T, TDimension] = js.native
+    def dimension[TDimension](value: js.Function1[/* data */ T, TDimension]): Dimension[T, TDimension]
     
-    def groupAll[TValue](): GroupAll[T, TValue] = js.native
+    def groupAll[TValue](): GroupAll[T, TValue]
     
-    def remove(): typings.crossfilter.CrossFilter.CrossFilter[T] = js.native
+    def remove(): typings.crossfilter.CrossFilter.CrossFilter[T]
     
-    def size(): Double = js.native
+    def size(): Double
   }
   object CrossFilter {
     
@@ -56,7 +54,7 @@ object CrossFilter {
     }
     
     @scala.inline
-    implicit class CrossFilterMutableBuilder[Self <: typings.crossfilter.CrossFilter.CrossFilter[_], T] (val x: Self with typings.crossfilter.CrossFilter.CrossFilter[T]) extends AnyVal {
+    implicit class CrossFilterMutableBuilder[Self <: typings.crossfilter.CrossFilter.CrossFilter[?], T] (val x: Self & typings.crossfilter.CrossFilter.CrossFilter[T]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
@@ -161,22 +159,21 @@ object CrossFilter {
     def top(k: Double): js.Array[Grouping[TKey, TValue]] = js.native
   }
   
-  @js.native
   trait GroupAll[T, TValue] extends StObject {
     
-    def dispose(): GroupAll[T, TValue] = js.native
+    def dispose(): GroupAll[T, TValue]
     
     def reduce[TValue](
       add: js.Function2[/* p */ TValue, /* v */ T, TValue],
       remove: js.Function2[/* p */ TValue, /* v */ T, TValue],
       initial: js.Function0[TValue]
-    ): GroupAll[T, TValue] = js.native
+    ): GroupAll[T, TValue]
     
-    def reduceCount(): GroupAll[T, TValue] = js.native
+    def reduceCount(): GroupAll[T, TValue]
     
-    def reduceSum(value: Selector[T]): GroupAll[T, TValue] = js.native
+    def reduceSum(value: Selector[T]): GroupAll[T, TValue]
     
-    def value(): TValue = js.native
+    def value(): TValue
   }
   object GroupAll {
     
@@ -193,7 +190,7 @@ object CrossFilter {
     }
     
     @scala.inline
-    implicit class GroupAllMutableBuilder[Self <: GroupAll[_, _], T, TValue] (val x: Self with (GroupAll[T, TValue])) extends AnyVal {
+    implicit class GroupAllMutableBuilder[Self <: GroupAll[?, ?], T, TValue] (val x: Self & (GroupAll[T, TValue])) extends AnyVal {
       
       @scala.inline
       def setDispose(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
@@ -214,12 +211,11 @@ object CrossFilter {
     }
   }
   
-  @js.native
   trait Grouping[TKey, TValue] extends StObject {
     
-    var key: TKey = js.native
+    var key: TKey
     
-    var value: TValue = js.native
+    var value: TValue
   }
   object Grouping {
     
@@ -230,7 +226,7 @@ object CrossFilter {
     }
     
     @scala.inline
-    implicit class GroupingMutableBuilder[Self <: Grouping[_, _], TKey, TValue] (val x: Self with (Grouping[TKey, TValue])) extends AnyVal {
+    implicit class GroupingMutableBuilder[Self <: Grouping[?, ?], TKey, TValue] (val x: Self & (Grouping[TKey, TValue])) extends AnyVal {
       
       @scala.inline
       def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

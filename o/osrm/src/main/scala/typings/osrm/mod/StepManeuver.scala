@@ -2,41 +2,39 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#stepmaneuver-object
   */
-@js.native
 trait StepManeuver extends StObject {
   
   /**
     * The clockwise angle from true north to the direction of travel immediately after the maneuver. Range 0-359.
     */
-  var bearing_after: Double = js.native
+  var bearing_after: Double
   
   /**
     * The clockwise angle from true north to the direction of travel immediately before the maneuver. Range 0-359.
     */
-  var bearing_before: Double = js.native
+  var bearing_before: Double
   
   /**
     * A [longitude, latitude] pair describing the location of the turn.
     */
-  var location: Coordinate = js.native
+  var location: Coordinate
   
   /**
     * An optional string indicating the direction change of the maneuver.
     */
-  var modifier: Indication = js.native
+  var modifier: Indication
   
   /**
     * A string indicating the type of maneuver.
     * new identifiers might be introduced without API change Types unknown to the client should be handled like the turn type,
     * the existence of correct modifier values is guranteed.
     */
-  var `type`: StepManeuverTypes = js.native
+  var `type`: StepManeuverTypes
 }
 object StepManeuver {
   

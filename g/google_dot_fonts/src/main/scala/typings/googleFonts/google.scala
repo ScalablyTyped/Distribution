@@ -3,31 +3,29 @@ package typings.googleFonts
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object google {
   
   object fonts {
     
-    @js.native
     trait WebfontFamily extends StObject {
       
-      var category: js.UndefOr[String] = js.native
+      var category: js.UndefOr[String] = js.undefined
       
-      var family: String = js.native
+      var family: String
       
-      var files: StringDictionary[String] = js.native
+      var files: StringDictionary[String]
       
-      var kind: String = js.native
+      var kind: String
       
-      var lastModified: String = js.native
+      var lastModified: String
       
-      var subsets: js.Array[String] = js.native
+      var subsets: js.Array[String]
       
-      var variants: js.Array[String] = js.native
+      var variants: js.Array[String]
       
-      var version: String = js.native
+      var version: String
     }
     object WebfontFamily {
       
@@ -83,12 +81,11 @@ object google {
       }
     }
     
-    @js.native
     trait WebfontList extends StObject {
       
-      var items: js.Array[WebfontFamily] = js.native
+      var items: js.Array[WebfontFamily]
       
-      var kind: String = js.native
+      var kind: String
     }
     object WebfontList {
       

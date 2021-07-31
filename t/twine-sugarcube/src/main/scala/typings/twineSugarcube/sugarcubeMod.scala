@@ -21,53 +21,51 @@ import typings.twineSugarcube.userdataMod.SugarCubeSetupObject
 import typings.twineSugarcube.wikiMod.WikifierAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sugarcubeMod {
   
-  @js.native
   trait SugarCubeObject extends StObject {
     
-    val Browser: IeVersion = js.native
+    val Browser: IeVersion
     
-    val Config: ConfigAPI = js.native
+    val Config: ConfigAPI
     
-    val Dialog: DialogAPI = js.native
+    val Dialog: DialogAPI
     
-    val Engine: EngineAPI = js.native
+    val Engine: EngineAPI
     
-    val Fullscreen: FullscreenAPI = js.native
+    val Fullscreen: FullscreenAPI
     
-    val Has: Audio = js.native
+    val Has: Audio
     
-    val Macro: MacroAPI = js.native
+    val Macro: MacroAPI
     
-    val Save: SaveAPI = js.native
+    val Save: SaveAPI
     
-    val Scripting: ScriptingAPI = js.native
+    val Scripting: ScriptingAPI
     
-    val Setting: SettingsAPI = js.native
+    val Setting: SettingsAPI
     
-    val SimpleAudio: SimpleAudioAPI = js.native
+    val SimpleAudio: SimpleAudioAPI
     
-    val State: StateAPI = js.native
+    val State: StateAPI
     
-    val Story: StoryAPI = js.native
+    val Story: StoryAPI
     
-    val UI: UIAPI = js.native
+    val UI: UIAPI
     
-    val UIBar: UIBarAPI = js.native
+    val UIBar: UIBarAPI
     
-    val Wikifier: WikifierAPI = js.native
+    val Wikifier: WikifierAPI
     
-    val session: js.Any = js.native
+    val session: js.Any
     
     /**
       * Player settings object, set up by the author/developer. See Setting API for more information.
       * @since 2.0.0
       */
-    val settings: SugarCubeSettingVariables = js.native
+    val settings: SugarCubeSettingVariables
     
     /**
       * Object that authors/developers may use to set up various bits of static data.
@@ -76,11 +74,11 @@ object sugarcubeMod {
       * within story variables, which would make it part of the history.
       * @since 2.0.0
       */
-    val setup: SugarCubeSetupObject = js.native
+    val setup: SugarCubeSetupObject
     
-    val storage: js.Any = js.native
+    val storage: js.Any
     
-    val version: Build = js.native
+    val version: Build
   }
   object SugarCubeObject {
     

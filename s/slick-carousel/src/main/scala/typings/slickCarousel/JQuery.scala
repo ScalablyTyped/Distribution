@@ -17,7 +17,6 @@ import typings.slickCarousel.slickCarouselStrings.unslick
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,19 +50,19 @@ trait JQuery extends StObject {
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String): JQuery = js.native
   @JSName("slick")
-  def slick_slickAdd(methodName: slickAdd, html: String, index: js.UndefOr[scala.Nothing], addBefore: Double): JQuery = js.native
-  @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String, index: Double): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String, index: Double, addBefore: Double): JQuery = js.native
   @JSName("slick")
-  def slick_slickAdd(methodName: slickAdd, html: js.Object): JQuery = js.native
+  def slick_slickAdd(methodName: slickAdd, html: String, index: Unit, addBefore: Double): JQuery = js.native
   @JSName("slick")
-  def slick_slickAdd(methodName: slickAdd, html: js.Object, index: js.UndefOr[scala.Nothing], addBefore: Double): JQuery = js.native
+  def slick_slickAdd(methodName: slickAdd, html: js.Object): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Double): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Double, addBefore: Double): JQuery = js.native
+  @JSName("slick")
+  def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Unit, addBefore: Double): JQuery = js.native
   /**
     * Returns the current slide index
     * @param methodName The name of the method
@@ -76,7 +75,7 @@ trait JQuery extends StObject {
     * @param func
     */
   @JSName("slick")
-  def slick_slickFilter(methodName: slickFilter, func: js.Function2[/* index */ Double, /* element */ Element, _]): JQuery = js.native
+  def slick_slickFilter(methodName: slickFilter, func: js.Function2[/* index */ Double, /* element */ Element, js.Any]): JQuery = js.native
   /**
     * Filters slides using jQuery .filter()
     * @param methodName The name of the method

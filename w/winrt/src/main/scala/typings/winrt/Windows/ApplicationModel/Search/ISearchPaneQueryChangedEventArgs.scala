@@ -2,17 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchPaneQueryChangedEventArgs extends StObject {
   
-  var language: String = js.native
+  var language: String
   
-  var linguisticDetails: SearchPaneQueryLinguisticDetails = js.native
+  var linguisticDetails: SearchPaneQueryLinguisticDetails
   
-  var queryText: String = js.native
+  var queryText: String
 }
 object ISearchPaneQueryChangedEventArgs {
   

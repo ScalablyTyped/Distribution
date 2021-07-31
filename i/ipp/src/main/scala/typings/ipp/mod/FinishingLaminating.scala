@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingLaminating extends StObject {
   
-  var `laminating-sides`: js.UndefOr[FinishingSides] = js.native
+  var `laminating-sides`: js.UndefOr[FinishingSides] = js.undefined
   
-  var `laminating-type`: js.UndefOr[LaminatingType] = js.native
+  var `laminating-type`: js.UndefOr[LaminatingType] = js.undefined
 }
 object FinishingLaminating {
   

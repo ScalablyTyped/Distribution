@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationCustomRuleMod {
@@ -88,6 +87,10 @@ object organizationCustomRuleMod {
   /* static members */
   object OrganizationCustomRule {
     
+    @JSImport("@pulumi/aws/cfg/organizationCustomRule", "OrganizationCustomRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OrganizationCustomRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -97,85 +100,79 @@ object organizationCustomRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/organizationCustomRule", "OrganizationCustomRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): OrganizationCustomRule = js.native
-    @JSImport("@pulumi/aws/cfg/organizationCustomRule", "OrganizationCustomRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): OrganizationCustomRule = js.native
-    @JSImport("@pulumi/aws/cfg/organizationCustomRule", "OrganizationCustomRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationCustomRuleState): OrganizationCustomRule = js.native
-    @JSImport("@pulumi/aws/cfg/organizationCustomRule", "OrganizationCustomRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationCustomRuleState, opts: CustomResourceOptions): OrganizationCustomRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): OrganizationCustomRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationCustomRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationCustomRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationCustomRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationCustomRuleState): OrganizationCustomRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationCustomRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationCustomRuleState, opts: CustomResourceOptions): OrganizationCustomRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationCustomRule]
     
     /**
       * Returns true if the given object is an instance of OrganizationCustomRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/organizationCustomRule", "OrganizationCustomRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/organizationCustomRule.OrganizationCustomRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/organizationCustomRule.OrganizationCustomRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/organizationCustomRule.OrganizationCustomRule */ Boolean]
   }
   
-  @js.native
   trait OrganizationCustomRuleArgs extends StObject {
     
     /**
       * Description of the rule
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of AWS account identifiers to exclude from the rule
       */
-    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A string in JSON format that is passed to the AWS Config Rule Lambda Function
       */
-    val inputParameters: js.UndefOr[Input[String]] = js.native
+    val inputParameters: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the rule Lambda Function
       */
-    val lambdaFunctionArn: Input[String] = js.native
+    val lambdaFunctionArn: Input[String]
     
     /**
       * The maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered at a periodic frequency. Defaults to `TwentyFour_Hours` for periodic frequency triggered rules. Valid values: `One_Hour`, `Three_Hours`, `Six_Hours`, `Twelve_Hours`, or `TwentyFour_Hours`.
       */
-    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
+    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the AWS resource to evaluate
       */
-    val resourceIdScope: js.UndefOr[Input[String]] = js.native
+    val resourceIdScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of types of AWS resources to evaluate
       */
-    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Tag key of AWS resources to evaluate
       */
-    val tagKeyScope: js.UndefOr[Input[String]] = js.native
+    val tagKeyScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tag value of AWS resources to evaluate
       */
-    val tagValueScope: js.UndefOr[Input[String]] = js.native
+    val tagValueScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of notification types that trigger AWS Config to run an evaluation for the rule. Valid values: `ConfigurationItemChangeNotification`, `OversizedConfigurationItemChangeNotification`, and `ScheduledNotification`
       */
-    val triggerTypes: Input[js.Array[Input[String]]] = js.native
+    val triggerTypes: Input[js.Array[Input[String]]]
   }
   object OrganizationCustomRuleArgs {
     
@@ -259,68 +256,67 @@ object organizationCustomRuleMod {
     }
   }
   
-  @js.native
   trait OrganizationCustomRuleState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the rule
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the rule
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of AWS account identifiers to exclude from the rule
       */
-    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A string in JSON format that is passed to the AWS Config Rule Lambda Function
       */
-    val inputParameters: js.UndefOr[Input[String]] = js.native
+    val inputParameters: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the rule Lambda Function
       */
-    val lambdaFunctionArn: js.UndefOr[Input[String]] = js.native
+    val lambdaFunctionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered at a periodic frequency. Defaults to `TwentyFour_Hours` for periodic frequency triggered rules. Valid values: `One_Hour`, `Three_Hours`, `Six_Hours`, `Twelve_Hours`, or `TwentyFour_Hours`.
       */
-    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
+    val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the rule
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the AWS resource to evaluate
       */
-    val resourceIdScope: js.UndefOr[Input[String]] = js.native
+    val resourceIdScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of types of AWS resources to evaluate
       */
-    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Tag key of AWS resources to evaluate
       */
-    val tagKeyScope: js.UndefOr[Input[String]] = js.native
+    val tagKeyScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tag value of AWS resources to evaluate
       */
-    val tagValueScope: js.UndefOr[Input[String]] = js.native
+    val tagValueScope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of notification types that trigger AWS Config to run an evaluation for the rule. Valid values: `ConfigurationItemChangeNotification`, `OversizedConfigurationItemChangeNotification`, and `ScheduledNotification`
       */
-    val triggerTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val triggerTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object OrganizationCustomRuleState {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUploadStatusRequest extends StObject {
   
   /**
     * The ID of the upload. This value is returned by the UploadEntityDefinitions action.
     */
-  var uploadId: UploadId = js.native
+  var uploadId: UploadId
 }
 object GetUploadStatusRequest {
   

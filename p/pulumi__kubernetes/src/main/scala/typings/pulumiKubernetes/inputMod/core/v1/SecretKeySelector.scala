@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SecretKeySelector selects a key of a Secret.
   */
-@js.native
 trait SecretKeySelector extends StObject {
   
   /**
     * The key of the secret to select from.  Must be a valid secret key.
     */
-  var key: Input[String] = js.native
+  var key: Input[String]
   
   /**
     * Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specify whether the Secret or its key must be defined
     */
-  var optional: js.UndefOr[Input[Boolean]] = js.native
+  var optional: js.UndefOr[Input[Boolean]] = js.undefined
 }
 object SecretKeySelector {
   

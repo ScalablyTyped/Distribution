@@ -2,15 +2,13 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsEnabled extends StObject {
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var rootTagName: String = js.native
+  var rootTagName: String
 }
 object IsEnabled {
   

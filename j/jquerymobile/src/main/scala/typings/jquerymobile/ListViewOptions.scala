@@ -2,43 +2,41 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListViewOptions extends StObject {
   
-  var autodividers: js.UndefOr[Boolean] = js.native
+  var autodividers: js.UndefOr[Boolean] = js.undefined
   
-  var autodividersSelector: js.UndefOr[js.Function1[/* jq */ js.UndefOr[JQuery], String]] = js.native
+  var autodividersSelector: js.UndefOr[js.Function1[/* jq */ js.UndefOr[JQuery], String]] = js.undefined
   
-  var countTheme: js.UndefOr[String] = js.native
+  var countTheme: js.UndefOr[String] = js.undefined
   
-  var defaults: js.UndefOr[Boolean] = js.native
+  var defaults: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dividerTheme: js.UndefOr[String] = js.native
+  var dividerTheme: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.undefined
   
-  var filterCallback: js.UndefOr[js.Function] = js.native
+  var filterCallback: js.UndefOr[js.Function] = js.undefined
   
-  var filterPlaceholder: js.UndefOr[String] = js.native
+  var filterPlaceholder: js.UndefOr[String] = js.undefined
   
-  var filterTheme: js.UndefOr[String] = js.native
+  var filterTheme: js.UndefOr[String] = js.undefined
   
-  var headerTheme: js.UndefOr[String] = js.native
+  var headerTheme: js.UndefOr[String] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[Boolean] = js.native
+  var inset: js.UndefOr[Boolean] = js.undefined
   
-  var splitIcon: js.UndefOr[String] = js.native
+  var splitIcon: js.UndefOr[String] = js.undefined
   
-  var splitTheme: js.UndefOr[String] = js.native
+  var splitTheme: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object ListViewOptions {
   

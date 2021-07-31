@@ -5,24 +5,24 @@ import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glyphPropsMod {
   
-  @js.native
-  trait GlyphProps extends ViewProps {
+  trait GlyphProps
+    extends StObject
+       with ViewProps {
     
-    var colorEnabled: js.UndefOr[Boolean] = js.native
+    var colorEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var emSize: js.UndefOr[Double] = js.native
+    var emSize: js.UndefOr[Double] = js.undefined
     
-    var fontUri: String = js.native
+    var fontUri: String
     
-    var glyph: String = js.native
+    var glyph: String
     
     @JSName("style")
-    var style_GlyphProps: js.UndefOr[StyleProp[GlyphStyle]] = js.native
+    var style_GlyphProps: js.UndefOr[StyleProp[GlyphStyle]] = js.undefined
   }
   object GlyphProps {
     
@@ -64,10 +64,11 @@ object glyphPropsMod {
     }
   }
   
-  @js.native
-  trait GlyphStyle extends ViewStyle {
+  trait GlyphStyle
+    extends StObject
+       with ViewStyle {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object GlyphStyle {
     

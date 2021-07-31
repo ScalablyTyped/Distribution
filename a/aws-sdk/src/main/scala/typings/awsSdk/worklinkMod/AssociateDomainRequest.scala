@@ -2,31 +2,29 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateDomainRequest extends StObject {
   
   /**
     * The ARN of an issued ACM certificate that is valid for the domain being associated.
     */
-  var AcmCertificateArn: typings.awsSdk.worklinkMod.AcmCertificateArn = js.native
+  var AcmCertificateArn: typings.awsSdk.worklinkMod.AcmCertificateArn
   
   /**
     * The name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * The fully qualified domain name (FQDN).
     */
-  var DomainName: typings.awsSdk.worklinkMod.DomainName = js.native
+  var DomainName: typings.awsSdk.worklinkMod.DomainName
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
 }
 object AssociateDomainRequest {
   

@@ -3,35 +3,32 @@ package typings.mailgunJs.mod
 import typings.mailgunJs.mailgunJsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggerHttpOptions extends StObject {
   
-  var agent: `false` = js.native
+  var agent: `false`
   
-  var auth: String = js.native
+  var auth: String
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object LoggerHttpOptions {
   
   @scala.inline
   def apply(
-    agent: `false`,
     auth: String,
     headers: js.Any,
     hostname: String,
@@ -41,7 +38,7 @@ object LoggerHttpOptions {
     protocol: String,
     timeout: Double
   ): LoggerHttpOptions = {
-    val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(agent = false, auth = auth.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerHttpOptions]
   }
   

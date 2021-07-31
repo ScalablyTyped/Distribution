@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountTakeoverActionType extends StObject {
   
   /**
     * The event action.    BLOCK Choosing this action will block the request.    MFA_IF_CONFIGURED Throw MFA challenge if user has configured it, else allow the request.    MFA_REQUIRED Throw MFA challenge if user has configured it, else block the request.    NO_ACTION Allow the user sign-in.  
     */
-  var EventAction: AccountTakeoverEventActionType = js.native
+  var EventAction: AccountTakeoverEventActionType
   
   /**
     * Flag specifying whether to send a notification.
     */
-  var Notify: AccountTakeoverActionNotifyType = js.native
+  var Notify: AccountTakeoverActionNotifyType
 }
 object AccountTakeoverActionType {
   

@@ -4,38 +4,38 @@ import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Endpoint extends UIComponent {
+trait Endpoint
+  extends StObject
+     with UIComponent {
   
-  var anchor: Anchor = js.native
+  var anchor: Anchor
   
-  var connections: js.UndefOr[js.Array[Connection]] = js.native
+  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
   
-  def connectorSelector(): Connection = js.native
+  def connectorSelector(): Connection
   
-  def getElement(): Element = js.native
+  def getElement(): Element
   
   //= 1?
-  var id: String = js.native
+  var id: String
   
-  def isEnabled(): Boolean = js.native
+  def isEnabled(): Boolean
   
-  var maxConnections: Double = js.native
+  var maxConnections: Double
   
-  var scope: String = js.native
+  var scope: String
   
-  def setElement(el: Element): Unit = js.native
+  def setElement(el: Element): Unit
   
-  def setEnabled(enabled: Boolean): Unit = js.native
+  def setEnabled(enabled: Boolean): Unit
   
-  def setEndpoint(spec: EndpointSpec): Unit = js.native
+  def setEndpoint(spec: EndpointSpec): Unit
   
-  def setHover(hover: Boolean): Unit = js.native
+  def setHover(hover: Boolean): Unit
   
-  var `type`: EndpointId = js.native
+  var `type`: EndpointId
 }
 object Endpoint {
   
@@ -45,7 +45,7 @@ object Endpoint {
     connectorSelector: () => Connection,
     getElement: () => Element,
     getParameter: String => js.Any,
-    getParameters: () => Record[String, _],
+    getParameters: () => Record[String, js.Any],
     id: String,
     isEnabled: () => Boolean,
     maxConnections: Double,
@@ -55,7 +55,7 @@ object Endpoint {
     setEndpoint: EndpointSpec => Unit,
     setHover: Boolean => Unit,
     setParameter: (String, js.Any) => Unit,
-    setParameters: Record[String, _] => Unit,
+    setParameters: Record[String, js.Any] => Unit,
     `type`: EndpointId
   ): Endpoint = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], connectorSelector = js.Any.fromFunction0(connectorSelector), getElement = js.Any.fromFunction0(getElement), getParameter = js.Any.fromFunction1(getParameter), getParameters = js.Any.fromFunction0(getParameters), id = id.asInstanceOf[js.Any], isEnabled = js.Any.fromFunction0(isEnabled), maxConnections = maxConnections.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], setElement = js.Any.fromFunction1(setElement), setEnabled = js.Any.fromFunction1(setEnabled), setEndpoint = js.Any.fromFunction1(setEndpoint), setHover = js.Any.fromFunction1(setHover), setParameter = js.Any.fromFunction2(setParameter), setParameters = js.Any.fromFunction1(setParameters))

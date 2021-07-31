@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEditsListingsPatch extends StandardParameters {
+trait ParamsResourceEditsListingsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Unique identifier for this edit.
     */
-  var editId: js.UndefOr[String] = js.native
+  var editId: js.UndefOr[String] = js.undefined
   
   /**
     * The language code (a BCP-47 language tag) of the localized listing to
     * read or modify. For example, to select Austrian German, pass "de-AT".
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for the Android app that is being updated; for example,
     * "com.spiffygame".
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaListing] = js.native
+  var requestBody: js.UndefOr[SchemaListing] = js.undefined
 }
 object ParamsResourceEditsListingsPatch {
   

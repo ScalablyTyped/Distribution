@@ -2,20 +2,20 @@ package typings.numberToWords
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("number-to-words", "toOrdinal")
+  @JSImport("number-to-words", JSImport.Namespace)
   @js.native
-  def toOrdinal(number: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("number-to-words", "toWords")
-  @js.native
-  def toWords(number: Double): String = js.native
+  @scala.inline
+  def toOrdinal(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOrdinal")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("number-to-words", "toWordsOrdinal")
-  @js.native
-  def toWordsOrdinal(number: Double): String = js.native
+  @scala.inline
+  def toWords(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWords")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def toWordsOrdinal(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toWordsOrdinal")(number.asInstanceOf[js.Any]).asInstanceOf[String]
 }

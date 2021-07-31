@@ -2,15 +2,15 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An IRemoteSystemFilter that limits the set of discoverable remote systems by allowing only those of a specific availability status. */
-@js.native
-trait RemoteSystemStatusTypeFilter extends IRemoteSystemFilter {
+trait RemoteSystemStatusTypeFilter
+  extends StObject
+     with IRemoteSystemFilter {
   
   /** The status type that the containing RemoteSystemStatusTypeFilter object targets. */
-  var remoteSystemStatusType: RemoteSystemStatusType = js.native
+  var remoteSystemStatusType: RemoteSystemStatusType
 }
 object RemoteSystemStatusTypeFilter {
   

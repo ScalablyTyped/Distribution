@@ -20,7 +20,6 @@ import typings.semanticUiReact.semanticUiReactStrings.large
 import typings.semanticUiReact.semanticUiReactStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedFeedMod extends Shortcut {
@@ -30,7 +29,9 @@ object feedFeedMod extends Shortcut {
   val default: FeedComponent = js.native
   
   @js.native
-  trait FeedComponent extends FunctionComponent[FeedProps] {
+  trait FeedComponent
+    extends StObject
+       with FunctionComponent[FeedProps] {
     
     var Content: StatelessComponent[FeedContentProps] = js.native
     
@@ -51,9 +52,9 @@ object feedFeedMod extends Shortcut {
     var User: StatelessComponent[FeedUserProps] = js.native
   }
   
-  @js.native
   trait FeedProps
-    extends StrictFeedProps
+    extends StObject
+       with StrictFeedProps
        with /* key */ StringDictionary[js.Any]
   object FeedProps {
     
@@ -64,23 +65,22 @@ object feedFeedMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFeedProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand array of props for FeedEvent. */
-    var events: js.UndefOr[SemanticShorthandCollection[FeedEventProps]] = js.native
+    var events: js.UndefOr[SemanticShorthandCollection[FeedEventProps]] = js.undefined
     
     /** A feed can have different sizes. */
-    var size: js.UndefOr[small | large] = js.native
+    var size: js.UndefOr[small | large] = js.undefined
   }
   object StrictFeedProps {
     

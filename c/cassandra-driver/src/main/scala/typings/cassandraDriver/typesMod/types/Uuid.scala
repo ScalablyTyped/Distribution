@@ -4,7 +4,6 @@ import typings.cassandraDriver.mod.ValueCallback
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Uuid")
@@ -20,17 +19,18 @@ class Uuid protected () extends StObject {
 }
 object Uuid {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Uuid.fromString")
+  @JSImport("cassandra-driver/lib/types", "types.Uuid")
   @js.native
-  def fromString(value: String): Uuid = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Uuid.random")
-  @js.native
-  def random(): Uuid = js.native
+  @scala.inline
+  def fromString(value: String): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[Uuid]
+  
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Uuid.random")
-  @js.native
-  def random(callback: ValueCallback[Uuid]): Unit = js.native
+  @scala.inline
+  def random(): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Uuid]
+  /* static member */
+  @scala.inline
+  def random(callback: ValueCallback[Uuid]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

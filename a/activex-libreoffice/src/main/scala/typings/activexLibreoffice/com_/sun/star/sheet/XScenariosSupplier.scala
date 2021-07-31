@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a collection of scenarios. */
-@js.native
-trait XScenariosSupplier extends XInterface {
+trait XScenariosSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of scenarios.
     * @see com.sun.star.sheet.Scenarios
     */
-  val Scenarios: XScenarios = js.native
+  val Scenarios: XScenarios
   
   /**
     * returns the collection of scenarios.
     * @see com.sun.star.sheet.Scenarios
     */
-  def getScenarios(): XScenarios = js.native
+  def getScenarios(): XScenarios
 }
 object XScenariosSupplier {
   

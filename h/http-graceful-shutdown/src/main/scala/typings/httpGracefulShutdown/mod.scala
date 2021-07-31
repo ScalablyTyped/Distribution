@@ -2,30 +2,30 @@ package typings.httpGracefulShutdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-graceful-shutdown", JSImport.Namespace)
-  @js.native
-  def apply(server: js.Any): js.Function0[js.Promise[Unit]] = js.native
-  @JSImport("http-graceful-shutdown", JSImport.Namespace)
-  @js.native
-  def apply(server: js.Any, options: Options): js.Function0[js.Promise[Unit]] = js.native
+  @scala.inline
+  def apply(server: js.Any): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  @scala.inline
+  def apply(server: js.Any, options: Options): js.Function0[js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Promise[Unit]]]
   
+  @JSImport("http-graceful-shutdown", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var development: js.UndefOr[Boolean] = js.native
+    var development: js.UndefOr[Boolean] = js.undefined
     
-    var `finally`: js.UndefOr[js.Function0[Unit]] = js.native
+    var `finally`: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShutdown: js.UndefOr[js.Function1[/* signal */ String, js.Promise[Unit]]] = js.native
+    var onShutdown: js.UndefOr[js.Function1[/* signal */ String, js.Promise[Unit]]] = js.undefined
     
-    var signals: js.UndefOr[String] = js.native
+    var signals: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

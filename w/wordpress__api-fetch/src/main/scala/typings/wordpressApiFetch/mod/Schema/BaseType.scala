@@ -7,31 +7,31 @@ import typings.wordpressApiFetch.anon.Createposts
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseType[T /* <: Context */] extends BaseResponse {
+trait BaseType[T /* <: Context */]
+  extends StObject
+     with BaseResponse {
   
-  var capabilities: Createposts = js.native
+  var capabilities: Createposts
   
-  var description: String = js.native
+  var description: String
   
-  var hierarchical: Boolean = js.native
+  var hierarchical: Boolean
   
-  var labels: Addnew = js.native
+  var labels: Addnew
   
-  var name: String = js.native
+  var name: String
   
-  var rest_base: String = js.native
+  var rest_base: String
   
-  var slug: String = js.native
+  var slug: String
   
-  var supports: Author = js.native
+  var supports: Author
   
-  var taxonomies: js.Array[TaxonomyKind] = js.native
+  var taxonomies: js.Array[TaxonomyKind]
   
-  var viewable: Boolean = js.native
+  var viewable: Boolean
 }
 object BaseType {
   
@@ -54,7 +54,7 @@ object BaseType {
   }
   
   @scala.inline
-  implicit class BaseTypeMutableBuilder[Self <: BaseType[_], T /* <: Context */] (val x: Self with BaseType[T]) extends AnyVal {
+  implicit class BaseTypeMutableBuilder[Self <: BaseType[?], T /* <: Context */] (val x: Self & BaseType[T]) extends AnyVal {
     
     @scala.inline
     def setCapabilities(value: Createposts): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])

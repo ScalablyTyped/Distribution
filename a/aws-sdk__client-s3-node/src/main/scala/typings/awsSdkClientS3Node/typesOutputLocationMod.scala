@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.typesS3LocationMod.S3Location
 import typings.awsSdkClientS3Node.typesS3LocationMod.UnmarshalledS3Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesOutputLocationMod {
   
-  @js.native
   trait OutputLocation extends StObject {
     
     /**
       * <p>Describes an S3 location that will receive the results of the restore request.</p>
       */
-    var S3: js.UndefOr[S3Location] = js.native
+    var S3: js.UndefOr[S3Location] = js.undefined
   }
   object OutputLocation {
     
@@ -36,14 +34,15 @@ object typesOutputLocationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledOutputLocation extends OutputLocation {
+  trait UnmarshalledOutputLocation
+    extends StObject
+       with OutputLocation {
     
     /**
       * <p>Describes an S3 location that will receive the results of the restore request.</p>
       */
     @JSName("S3")
-    var S3_UnmarshalledOutputLocation: js.UndefOr[UnmarshalledS3Location] = js.native
+    var S3_UnmarshalledOutputLocation: js.UndefOr[UnmarshalledS3Location] = js.undefined
   }
   object UnmarshalledOutputLocation {
     

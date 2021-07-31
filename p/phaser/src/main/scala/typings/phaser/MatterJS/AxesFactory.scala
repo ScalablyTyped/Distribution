@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxesFactory extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait AxesFactory extends StObject {
     * @param {vertices} vertices
     * @return {axes} A new axes from the given vertices
     */
-  def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = js.native
+  def fromVertices(vertices: js.Array[Vector]): js.Array[Vector]
   
   /**
     * Rotates a set of axes by the given angle.
@@ -22,7 +20,7 @@ trait AxesFactory extends StObject {
     * @param {axes} axes
     * @param {number} angle
     */
-  def rotate(axes: js.Array[Vector], angle: Double): Unit = js.native
+  def rotate(axes: js.Array[Vector], angle: Double): Unit
 }
 object AxesFactory {
   

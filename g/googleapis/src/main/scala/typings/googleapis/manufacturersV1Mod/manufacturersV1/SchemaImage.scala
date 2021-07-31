@@ -2,13 +2,11 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An image.
   */
-@js.native
 trait SchemaImage extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaImage extends StObject {
     * uploaded images, this is a serving URL from Google if the image has been
     * processed successfully.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the image. @OutputOnly
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the image, i.e., crawled or uploaded. @OutputOnly
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaImage {
   

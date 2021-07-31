@@ -2,21 +2,19 @@ package typings.typedGithubApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesLabelMod {
   
-  @js.native
   trait Label extends StObject {
     
-    var default: Boolean = js.native
+    var default: Boolean
     
-    var color: String = js.native
+    var color: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
   }
   object Label {
     

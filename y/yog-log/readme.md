@@ -10,9 +10,9 @@ yog logger
 | ------------------ | :-------------: |
 | Full name          | yog-log |
 | Keywords           | fis, yog, express, kraken-js |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 7659 |
+| # downloads        | 7661 |
 | # stars            | 0 |
 
 ## Links

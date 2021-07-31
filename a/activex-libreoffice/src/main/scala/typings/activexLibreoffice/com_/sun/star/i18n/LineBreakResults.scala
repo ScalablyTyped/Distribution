@@ -3,18 +3,16 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.activexLibreoffice.com_.sun.star.linguistic2.XHyphenatedWord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Results of method {@link XBreakIterator.getLineBreak()} . */
-@js.native
 trait LineBreakResults extends StObject {
   
-  var breakIndex: Double = js.native
+  var breakIndex: Double
   
-  var breakType: Double = js.native
+  var breakType: Double
   
-  var rHyphenatedWord: XHyphenatedWord = js.native
+  var rHyphenatedWord: XHyphenatedWord
 }
 object LineBreakResults {
   

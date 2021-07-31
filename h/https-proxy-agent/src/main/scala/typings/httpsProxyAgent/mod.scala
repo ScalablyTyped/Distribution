@@ -6,17 +6,18 @@ import typings.httpsProxyAgent.agentMod.default
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def apply(opts: HttpsProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  
   @JSImport("https-proxy-agent", JSImport.Namespace)
   @js.native
-  def apply(opts: String): default = js.native
-  @JSImport("https-proxy-agent", JSImport.Namespace)
-  @js.native
-  def apply(opts: HttpsProxyAgentOptions): default = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("https-proxy-agent", "HttpsProxyAgent")
   @js.native
@@ -31,18 +32,17 @@ object mod {
     def this(_opts: HttpsProxyAgentOptions) = this()
   }
   
-  @js.native
   trait BaseHttpsProxyAgentOptions extends StObject {
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
-    var port: js.UndefOr[String | Double | Null] = js.native
+    var port: js.UndefOr[String | Double | Null] = js.undefined
     
-    var secureProxy: js.UndefOr[Boolean] = js.native
+    var secureProxy: js.UndefOr[Boolean] = js.undefined
   }
   object BaseHttpsProxyAgentOptions {
     
@@ -97,9 +97,9 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Omit<node.url.Url & node.net.NetConnectOpts & node.tls.ConnectionOptions, 'headers' | 'secureProxy' | 'host' | 'path' | 'port'> ]:? std.Omit<node.url.Url & node.net.NetConnectOpts & node.tls.ConnectionOptions, 'headers' | 'secureProxy' | 'host' | 'path' | 'port'>[P]} */ @js.native
-  trait HttpsProxyAgentOptions
-    extends AgentOptions
+  - Dropped {[ P in keyof std.Omit<node.url.Url & node.net.NetConnectOpts & node.tls.ConnectionOptions, 'headers' | 'secureProxy' | 'host' | 'path' | 'port'> ]:? std.Omit<node.url.Url & node.net.NetConnectOpts & node.tls.ConnectionOptions, 'headers' | 'secureProxy' | 'host' | 'path' | 'port'>[P]} */ trait HttpsProxyAgentOptions
+    extends StObject
+       with AgentOptions
        with BaseHttpsProxyAgentOptions
   object HttpsProxyAgentOptions {
     

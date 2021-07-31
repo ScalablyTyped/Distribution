@@ -11,7 +11,6 @@ import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referenceMod {
@@ -69,74 +68,59 @@ object referenceMod {
   /* static members */
   object Reference {
     
-    @JSImport("nodegit/reference", "Reference.create")
+    @JSImport("nodegit/reference", "Reference")
     @js.native
-    def create(repo: Repository, name: String, id: Oid, force: Double, logMessage: String): js.Promise[Reference] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/reference", "Reference.createMatching")
-    @js.native
-    def createMatching(repo: Repository, name: String, id: Oid, force: Double, currentId: Oid, logMessage: String): js.Promise[Reference] = js.native
+    @scala.inline
+    def create(repo: Repository, name: String, id: Oid, force: Double, logMessage: String): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], force.asInstanceOf[js.Any], logMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/reference", "Reference.dwim")
-    @js.native
-    def dwim(repo: Repository, id: String): js.Promise[Reference] = js.native
-    @JSImport("nodegit/reference", "Reference.dwim")
-    @js.native
-    def dwim(repo: Repository, id: String, callback: js.Function): js.Promise[Reference] = js.native
-    @JSImport("nodegit/reference", "Reference.dwim")
-    @js.native
-    def dwim(repo: Repository, id: Reference): js.Promise[Reference] = js.native
-    @JSImport("nodegit/reference", "Reference.dwim")
-    @js.native
-    def dwim(repo: Repository, id: Reference, callback: js.Function): js.Promise[Reference] = js.native
+    @scala.inline
+    def createMatching(repo: Repository, name: String, id: Oid, force: Double, currentId: Oid, logMessage: String): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatching")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], force.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], logMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/reference", "Reference.ensureLog")
-    @js.native
-    def ensureLog(repo: Repository, refname: String): Double = js.native
+    @scala.inline
+    def dwim(repo: Repository, id: String): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("dwim")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    @scala.inline
+    def dwim(repo: Repository, id: String, callback: js.Function): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("dwim")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    @scala.inline
+    def dwim(repo: Repository, id: Reference): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("dwim")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    @scala.inline
+    def dwim(repo: Repository, id: Reference, callback: js.Function): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("dwim")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/reference", "Reference.hasLog")
-    @js.native
-    def hasLog(repo: Repository, refname: String): Double = js.native
+    @scala.inline
+    def ensureLog(repo: Repository, refname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureLog")(repo.asInstanceOf[js.Any], refname.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/reference", "Reference.isValidName")
-    @js.native
-    def isValidName(refname: String): Double = js.native
+    @scala.inline
+    def hasLog(repo: Repository, refname: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLog")(repo.asInstanceOf[js.Any], refname.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/reference", "Reference.list")
-    @js.native
-    def list(repo: Repository): js.Promise[js.Array[_]] = js.native
+    @scala.inline
+    def isValidName(refname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(refname.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("nodegit/reference", "Reference.lookup")
-    @js.native
-    def lookup(repo: Repository, id: String): js.Promise[Reference] = js.native
-    @JSImport("nodegit/reference", "Reference.lookup")
-    @js.native
-    def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Reference] = js.native
-    @JSImport("nodegit/reference", "Reference.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Reference): js.Promise[Reference] = js.native
-    @JSImport("nodegit/reference", "Reference.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Reference, callback: js.Function): js.Promise[Reference] = js.native
+    @scala.inline
+    def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
     
-    @JSImport("nodegit/reference", "Reference.nameToId")
-    @js.native
-    def nameToId(repo: Repository, name: String): js.Promise[Oid] = js.native
+    @scala.inline
+    def lookup(repo: Repository, id: String): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    @scala.inline
+    def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    @scala.inline
+    def lookup(repo: Repository, id: Reference): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    @scala.inline
+    def lookup(repo: Repository, id: Reference, callback: js.Function): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/reference", "Reference.normalizeName")
-    @js.native
-    def normalizeName(bufferOut: String, bufferSize: Double, name: String, flags: Double): Double = js.native
+    @scala.inline
+    def nameToId(repo: Repository, name: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("nameToId")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
-    @JSImport("nodegit/reference", "Reference.remove")
-    @js.native
-    def remove(repo: Repository, name: String): Double = js.native
+    @scala.inline
+    def normalizeName(bufferOut: String, bufferSize: Double, name: String, flags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeName")(bufferOut.asInstanceOf[js.Any], bufferSize.asInstanceOf[js.Any], name.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/reference", "Reference.symbolicCreate")
-    @js.native
-    def symbolicCreate(repo: Repository, name: String, target: String, force: Double, logMessage: String): js.Promise[Reference] = js.native
+    @scala.inline
+    def remove(repo: Repository, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/reference", "Reference.symbolicCreateMatching")
-    @js.native
+    @scala.inline
+    def symbolicCreate(repo: Repository, name: String, target: String, force: Double, logMessage: String): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolicCreate")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], force.asInstanceOf[js.Any], logMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
+    
+    @scala.inline
     def symbolicCreateMatching(
       repo: Repository,
       name: String,
@@ -144,7 +128,7 @@ object referenceMod {
       force: Double,
       currentValue: String,
       logMessage: String
-    ): js.Promise[Reference] = js.native
+    ): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolicCreateMatching")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], force.asInstanceOf[js.Any], currentValue.asInstanceOf[js.Any], logMessage.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

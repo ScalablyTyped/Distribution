@@ -4,22 +4,22 @@ import typings.filesizeParser.filesizeParserNumbers.`10`
 import typings.filesizeParser.filesizeParserNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("filesize-parser", JSImport.Namespace)
-  @js.native
-  def apply(size: String): Double = js.native
-  @JSImport("filesize-parser", JSImport.Namespace)
-  @js.native
-  def apply(size: String, options: Options): Double = js.native
+  @scala.inline
+  def apply(size: String): Double = ^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def apply(size: String, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  @JSImport("filesize-parser", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var base: `2` | `10` = js.native
+    var base: `2` | `10`
   }
   object Options {
     

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerPropertyOptions extends StObject {
   
   /**
     * The maximum value of the property. The minimum and maximum values for the property are used to rank results according to the ordered ranking. Indexing requests with values greater
     * than the maximum are accepted and ranked with the same weight as items indexed with the maximum value.
     */
-  var maximumValue: js.UndefOr[String] = js.native
+  var maximumValue: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum value of the property. The minimum and maximum values for the property are used to rank results according to the ordered ranking. Indexing requests with values less than
     * the minimum are accepted and ranked with the same weight as items indexed with the minimum value.
     */
-  var minimumValue: js.UndefOr[String] = js.native
+  var minimumValue: js.UndefOr[String] = js.undefined
   
   /** If set, describes how the integer should be used as a search operator. */
-  var operatorOptions: js.UndefOr[IntegerOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[IntegerOperatorOptions] = js.undefined
   
   /** Used to specify the ordered ranking for the integer. Can only be used if isRepeatable is false. */
-  var orderedRanking: js.UndefOr[String] = js.native
+  var orderedRanking: js.UndefOr[String] = js.undefined
 }
 object IntegerPropertyOptions {
   

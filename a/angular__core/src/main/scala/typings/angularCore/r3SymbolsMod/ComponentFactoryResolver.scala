@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see [Dynamic Components](guide/dynamic-component-loader)
   * @publicApi
   */
-@js.native
 trait ComponentFactoryResolver extends StObject {
   
   /**
     * Retrieves the factory object that creates a component of the given type.
     * @param component The component type.
     */
-  def resolveComponentFactory[T](component: Type[T]): ComponentFactory[T] = js.native
+  def resolveComponentFactory[T](component: Type[T]): ComponentFactory[T]
 }
 object ComponentFactoryResolver {
   

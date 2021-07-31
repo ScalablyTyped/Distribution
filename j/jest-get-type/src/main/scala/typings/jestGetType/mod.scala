@@ -2,14 +2,12 @@ package typings.jestGetType
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-get-type", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any): ValueType = js.native
+  @scala.inline
+  def apply(value: js.Any): ValueType = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ValueType]
   
   @JSImport("jest-get-type", JSImport.Namespace)
   @js.native

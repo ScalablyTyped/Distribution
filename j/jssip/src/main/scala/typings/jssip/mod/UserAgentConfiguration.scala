@@ -2,49 +2,47 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentConfiguration extends StObject {
   
-  var authorization_user: js.UndefOr[String] = js.native
+  var authorization_user: js.UndefOr[String] = js.undefined
   
-  var connection_recovery_max_interval: js.UndefOr[Double] = js.native
+  var connection_recovery_max_interval: js.UndefOr[Double] = js.undefined
   
-  var connection_recovery_min_interval: js.UndefOr[Double] = js.native
+  var connection_recovery_min_interval: js.UndefOr[Double] = js.undefined
   
-  var contact_uri: js.UndefOr[String] = js.native
+  var contact_uri: js.UndefOr[String] = js.undefined
   
-  var display_name: js.UndefOr[String] = js.native
+  var display_name: js.UndefOr[String] = js.undefined
   
-  var ha1: js.UndefOr[String] = js.native
+  var ha1: js.UndefOr[String] = js.undefined
   
-  var instance_id: js.UndefOr[String] = js.native
+  var instance_id: js.UndefOr[String] = js.undefined
   
-  var no_answer_timeout: js.UndefOr[Double] = js.native
+  var no_answer_timeout: js.UndefOr[Double] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var realm: js.UndefOr[String] = js.native
+  var realm: js.UndefOr[String] = js.undefined
   
-  var register: js.UndefOr[Boolean] = js.native
+  var register: js.UndefOr[Boolean] = js.undefined
   
-  var register_expires: js.UndefOr[Double] = js.native
+  var register_expires: js.UndefOr[Double] = js.undefined
   
-  var registrar_server: js.UndefOr[String] = js.native
+  var registrar_server: js.UndefOr[String] = js.undefined
   
-  var session_timers: js.UndefOr[Boolean] = js.native
+  var session_timers: js.UndefOr[Boolean] = js.undefined
   
-  var session_timers_refresh_method: js.UndefOr[String] = js.native
+  var session_timers_refresh_method: js.UndefOr[String] = js.undefined
   
-  var sockets: Socket | js.Array[Socket] = js.native
+  var sockets: Socket | js.Array[Socket]
   
-  var uri: String = js.native
+  var uri: String
   
-  var use_reloaded_route: js.UndefOr[Boolean] = js.native
+  var use_reloaded_route: js.UndefOr[Boolean] = js.undefined
   
-  var user_agent: js.UndefOr[String] = js.native
+  var user_agent: js.UndefOr[String] = js.undefined
 }
 object UserAgentConfiguration {
   

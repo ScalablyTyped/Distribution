@@ -6,11 +6,12 @@ import typings.vexflow.anon.Highestline
 import typings.vexflow.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaveNote extends StemmableNote {
+trait StaveNote
+  extends StObject
+     with StemmableNote {
   
   def addAccidental(index: Double, accidental: Accidental): StaveNote = js.native
   

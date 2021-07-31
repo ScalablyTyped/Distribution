@@ -10,7 +10,6 @@ import typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validatorSetPbMod {
@@ -20,7 +19,7 @@ object validatorSetPbMod {
   class ValidatorSet () extends Message {
     
     def addValidatorPublicKeys(): ValidatorPublicKeys = js.native
-    def addValidatorPublicKeys(value: js.UndefOr[scala.Nothing], index: Double): ValidatorPublicKeys = js.native
+    def addValidatorPublicKeys(value: Unit, index: Double): ValidatorPublicKeys = js.native
     def addValidatorPublicKeys(value: ValidatorPublicKeys): ValidatorPublicKeys = js.native
     def addValidatorPublicKeys(value: ValidatorPublicKeys, index: Double): ValidatorPublicKeys = js.native
     
@@ -37,13 +36,11 @@ object validatorSetPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("libra-core/lib/@/generated/validator_set_pb", "ValidatorSet.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): ValidatorSet = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): ValidatorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorSet]
     
-    @JSImport("libra-core/lib/@/generated/validator_set_pb", "ValidatorSet.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: ValidatorSet, reader: BinaryReader): ValidatorSet = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: ValidatorSet, reader: BinaryReader): ValidatorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorSet]
     
     @JSImport("libra-core/lib/@/generated/validator_set_pb", "ValidatorSet.extensions")
     @js.native
@@ -58,18 +55,15 @@ object validatorSetPbMod {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("libra-core/lib/@/generated/validator_set_pb", "ValidatorSet.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: ValidatorSet, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: ValidatorSet, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("libra-core/lib/@/generated/validator_set_pb", "ValidatorSet.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: ValidatorSet): AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: ValidatorSet): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var validatorPublicKeysList: js.Array[typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys.AsObject] = js.native
+      var validatorPublicKeysList: js.Array[typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys.AsObject]
     }
     object AsObject {
       

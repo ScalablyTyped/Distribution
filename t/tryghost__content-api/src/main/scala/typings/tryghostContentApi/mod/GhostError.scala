@@ -3,13 +3,11 @@ package typings.tryghostContentApi.mod
 import typings.tryghostContentApi.anon.ErrorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GhostError extends StObject {
   
-  var errors: js.Array[ErrorType] = js.native
+  var errors: js.Array[ErrorType]
 }
 object GhostError {
   

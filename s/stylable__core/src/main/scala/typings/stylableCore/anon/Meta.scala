@@ -4,15 +4,13 @@ import typings.stylableCore.stylableMetaMod.KeyframesSymbol
 import typings.stylableCore.stylableProcessorMod.StylableMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meta extends StObject {
   
-  var meta: StylableMeta = js.native
+  var meta: StylableMeta
   
-  var symbol: KeyframesSymbol = js.native
+  var symbol: KeyframesSymbol
 }
 object Meta {
   

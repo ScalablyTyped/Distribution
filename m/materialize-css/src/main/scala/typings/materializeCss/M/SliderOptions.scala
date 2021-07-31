@@ -2,35 +2,33 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderOptions extends StObject {
   
   /**
     * Set the duration of the transition animation in ms
     * @default 500
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Set height of slider
     * @default 400
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Set to false to hide slide indicators
     * @default true
     */
-  var indicators: Boolean = js.native
+  var indicators: Boolean
   
   /**
     * Set the duration between transitions in ms
     * @default 6000
     */
-  var interval: Double = js.native
+  var interval: Double
 }
 object SliderOptions {
   

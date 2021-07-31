@@ -2,11 +2,12 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Frame extends FrameBase {
+trait Frame
+  extends StObject
+     with FrameBase {
   
   def childFrames(): js.Array[Frame] = js.native
   

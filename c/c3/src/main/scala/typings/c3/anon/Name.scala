@@ -3,10 +3,8 @@ package typings.c3.anon
 import typings.c3.mod.Primitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait Name extends StObject {
       /* index */ Double, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set format for the title of tooltip.
     * @param x Value of the data point to show.
     * @param index Index of the data point to show.
     */
-  var title: js.UndefOr[js.Function2[/* x */ Primitive, /* index */ Double, String]] = js.native
+  var title: js.UndefOr[js.Function2[/* x */ Primitive, /* index */ Double, String]] = js.undefined
   
   /**
     * Set format for the value of each data in tooltip.
@@ -43,7 +41,7 @@ trait Name extends StObject {
       /* index */ Double, 
       js.UndefOr[String]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Name {
   

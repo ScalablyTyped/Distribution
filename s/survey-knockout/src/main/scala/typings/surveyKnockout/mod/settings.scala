@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settings {
@@ -43,9 +42,8 @@ object settings {
     * Override this function, set your function, if you want to show your own dialog confirm window instead of standard browser window.
     * @param message
     */
-  @JSImport("survey-knockout", "settings.confirmActionFunc")
-  @js.native
-  def confirmActionFunc(message: String): Boolean = js.native
+  @scala.inline
+  def confirmActionFunc(message: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("confirmActionFunc")(message.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * default locale name for localizable strings that uses during serialization, {"default": "My text", "de": "Mein Text"}

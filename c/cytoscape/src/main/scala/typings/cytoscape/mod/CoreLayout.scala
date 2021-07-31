@@ -2,16 +2,14 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#core/layout
   */
-@js.native
 trait CoreLayout extends StObject {
   
-  def createLayout(options: LayoutOptions): Layouts = js.native
+  def createLayout(options: LayoutOptions): Layouts
   
   /**
     * Run a layout, which algorithmically positions the nodes in the graph.
@@ -22,7 +20,7 @@ trait CoreLayout extends StObject {
     * An analogue to run a layout on a subset of the graph exists as eles.layout().
     * http://js.cytoscape.org/#cy.layout
     */
-  def layout(layout: LayoutOptions): Layouts = js.native
+  def layout(layout: LayoutOptions): Layouts
   
   /**
     * Get a new layout, which can be used to algorithmically
@@ -36,7 +34,7 @@ trait CoreLayout extends StObject {
     * Note that you must call layout.run() in order for it to affect the graph.
     * An analogue to make a layout on a subset of the graph exists as eles.makeLayout().
     */
-  def makeLayout(options: LayoutOptions): Layouts = js.native
+  def makeLayout(options: LayoutOptions): Layouts
 }
 object CoreLayout {
   

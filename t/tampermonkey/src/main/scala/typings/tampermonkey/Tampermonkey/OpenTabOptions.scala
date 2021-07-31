@@ -2,20 +2,18 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenTabOptions extends StObject {
   
   /** Decides whether the new tab should be focused */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Inserts the new tab after the current one */
-  var insert: js.UndefOr[Boolean] = js.native
+  var insert: js.UndefOr[Boolean] = js.undefined
   
   /** Makes the browser re-focus the current tab on close */
-  var setParent: js.UndefOr[Boolean] = js.native
+  var setParent: js.UndefOr[Boolean] = js.undefined
 }
 object OpenTabOptions {
   

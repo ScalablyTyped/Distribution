@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,50 +17,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param hand - Hand that joint relates to
   * @param [finger] - Finger that joint is related to, can be null in case of wrist joint
   */
-@js.native
 trait XrJoint extends StObject {
   
   /**
     * Finger that joint relates to
     */
-  var finger: XrFinger | Null = js.native
+  var finger: XrFinger | Null
   
   /**
     * Get the world space position of a joint
     * @returns The world space position of a joint
     */
-  def getPosition(): Vec3 = js.native
+  def getPosition(): Vec3
   
   /**
     * Get the world space rotation of a joint
     * @returns The world space rotation of a joint
     */
-  def getRotation(): Quat = js.native
+  def getRotation(): Quat
   
   /**
     * Hand that joint relates to
     */
-  var hand: XrHand = js.native
+  var hand: XrHand
   
   /**
     * Index of a joint within a finger, starting from 0 (root of a finger) all the way to tip of the finger
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * The radius of a joint, which is a distance from joint to the edge of a skin
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * True if joint is a tip of a finger
     */
-  var tip: Boolean = js.native
+  var tip: Boolean
   
   /**
     * True if joint is a wrist
     */
-  var wrist: Boolean = js.native
+  var wrist: Boolean
 }
 object XrJoint {
   
@@ -75,7 +73,7 @@ object XrJoint {
     tip: Boolean,
     wrist: Boolean
   ): XrJoint = {
-    val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction0(getPosition), getRotation = js.Any.fromFunction0(getRotation), hand = hand.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tip = tip.asInstanceOf[js.Any], wrist = wrist.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getPosition = js.Any.fromFunction0(getPosition), getRotation = js.Any.fromFunction0(getRotation), hand = hand.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tip = tip.asInstanceOf[js.Any], wrist = wrist.asInstanceOf[js.Any], finger = null)
     __obj.asInstanceOf[XrJoint]
   }
   

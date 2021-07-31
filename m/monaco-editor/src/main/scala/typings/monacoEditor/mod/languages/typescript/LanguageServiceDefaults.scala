@@ -4,7 +4,6 @@ import typings.monacoEditor.anon.Content
 import typings.monacoEditor.mod.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -47,14 +46,14 @@ trait LanguageServiceDefaults extends StObject {
   /**
     * Event fired when compiler options or diagnostics options are changed.
     */
-  def onDidChange(listener: js.Function1[/* e */ Unit, _]): IDisposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Unit, _], thisArg: js.Any): IDisposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Unit, js.Any]): IDisposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Unit, js.Any], thisArg: js.Any): IDisposable = js.native
   
   /**
     * Event fired when extra libraries registered with the language service change.
     */
-  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, _]): IDisposable = js.native
-  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, _], thisArg: js.Any): IDisposable = js.native
+  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, js.Any]): IDisposable = js.native
+  def onDidExtraLibsChange(listener: js.Function1[/* e */ Unit, js.Any], thisArg: js.Any): IDisposable = js.native
   
   /**
     * Set TypeScript compiler options.

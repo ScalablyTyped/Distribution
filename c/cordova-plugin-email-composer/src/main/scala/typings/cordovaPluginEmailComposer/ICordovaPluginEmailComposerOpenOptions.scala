@@ -2,28 +2,26 @@ package typings.cordovaPluginEmailComposer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICordovaPluginEmailComposerOpenOptions extends StObject {
   
   /** Attachments can be either base64 encoded datas, files from the the device storage or assets from within the www folder */
-  var attachments: js.UndefOr[js.Array[_]] = js.native
+  var attachments: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var bcc: js.UndefOr[js.Array[String]] = js.native
+  var bcc: js.UndefOr[js.Array[String]] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var cc: js.UndefOr[js.Array[String]] = js.native
+  var cc: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The default value for isHTML is true */
-  var isHtml: js.UndefOr[Boolean] = js.native
+  var isHtml: js.UndefOr[Boolean] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /** An configured email account is required to send emails */
-  var to: js.UndefOr[js.Array[String]] = js.native
+  var to: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ICordovaPluginEmailComposerOpenOptions {
   
@@ -37,7 +35,7 @@ object ICordovaPluginEmailComposerOpenOptions {
   implicit class ICordovaPluginEmailComposerOpenOptionsMutableBuilder[Self <: ICordovaPluginEmailComposerOpenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAttachments(value: js.Array[_]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)

@@ -16,7 +16,6 @@ import typings.reactNativeSortableList.reactNativeSortableListStrings.handled
 import typings.reactNativeSortableList.reactNativeSortableListStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,18 +28,17 @@ object mod {
   
   type DataByString[T] = StringDictionary[T]
   
-  @js.native
   trait RowProps[T, K] extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var data: T = js.native
+    var data: T
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[K] = js.native
+    var key: js.UndefOr[K] = js.undefined
     
     var toggleRowActive: js.UndefOr[
         js.Function2[
@@ -48,7 +46,7 @@ object mod {
           /* gestureState */ js.UndefOr[PanResponderGestureState], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object RowProps {
     
@@ -59,7 +57,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps[_, _], T, K] (val x: Self with (RowProps[T, K])) extends AnyVal {
+    implicit class RowPropsMutableBuilder[Self <: RowProps[?, ?], T, K] (val x: Self & (RowProps[T, K])) extends AnyVal {
       
       @scala.inline
       def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
@@ -115,35 +113,34 @@ object mod {
     def scrollToRowKey(hasKeyAnimated: Key[K]): Unit = js.native
   }
   
-  @js.native
   trait SortableListProps[T, K] extends StObject {
     
     /**
       * determines the height for vertical list and the width for horizontal list of the area at the begining and
       * the end of the list that will trigger autoscrolling. Defaults to 60.
       */
-    var autoscrollAreaSize: js.UndefOr[Double] = js.native
+    var autoscrollAreaSize: js.UndefOr[Double] = js.undefined
     
     /**
       * these styles will be applied to the inner scroll view content container
       */
-    var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * data source
       */
-    var data: DataByNumber[T] | DataByString[T] = js.native
+    var data: DataByNumber[T] | DataByString[T]
     
     /**
       * when true, the SortableList's children are arranged horizontally in a row instead of vertically in a column.
       * The default value is false.
       */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * these styles will be applied to the inner scroll view content container, excluding the header and footer
       */
-    var innerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var innerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * Determines when the keyboard should stay visible after a tap.
@@ -154,52 +151,52 @@ object mod {
       *  - 'handled', the keyboard will not dismiss automatically when the tap was handled by a children,
       *    (or captured by an ancestor).
       */
-    var keyboardShouldPersistTaps: js.UndefOr[never | always | handled] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[never | always | handled] = js.undefined
     
     /**
       * whether you intend to use the toggleRowActive method to activate a row or use the out of box solution.
       */
-    var manuallyActivateRows: js.UndefOr[Boolean] = js.native
+    var manuallyActivateRows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called when a row was activated (user long tapped).
       */
-    var onActivateRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.native
+    var onActivateRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.undefined
     
     /**
       * Called when rows were reordered, takes an array of rows keys of the next rows order.
       */
-    var onChangeOrder: js.UndefOr[js.Function1[/* nextOrder */ js.Array[K], Unit]] = js.native
+    var onChangeOrder: js.UndefOr[js.Function1[/* nextOrder */ js.Array[K], Unit]] = js.undefined
     
     /**
       * Called when a row was pressed.
       */
-    var onPressRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.native
+    var onPressRow: js.UndefOr[js.Function1[/* key */ K, Unit]] = js.undefined
     
     /**
       * Called when the active row was released.
       */
-    var onReleaseRow: js.UndefOr[js.Function2[/* key */ K, /* currentOrder */ js.Array[K], Unit]] = js.native
+    var onReleaseRow: js.UndefOr[js.Function2[/* key */ K, /* currentOrder */ js.Array[K], Unit]] = js.undefined
     
     /**
       * an array of keys from data, the order of keys from the array will be used to initial rows order
       */
-    var order: js.UndefOr[js.Array[K]] = js.native
+    var order: js.UndefOr[js.Array[K]] = js.undefined
     
     /**
       * A RefreshControl that works the same way as a ScrollView's refreshControl.
       */
-    var refreshControl: js.UndefOr[ReactElement] = js.native
+    var refreshControl: js.UndefOr[ReactElement] = js.undefined
     
     /**
       * Renders returned component at the bottom of the list.
       */
-    var renderFooter: js.UndefOr[js.Function0[ReactElement]] = js.native
+    var renderFooter: js.UndefOr[js.Function0[ReactElement]] = js.undefined
     
     /**
       * Renders returned component at the top of the list.
       */
-    var renderHeader: js.UndefOr[js.Function0[ReactElement]] = js.native
+    var renderHeader: js.UndefOr[js.Function0[ReactElement]] = js.undefined
     
     /**
       * Takes a row key, row index, data entry from the data source and its statuses disabled, active and should
@@ -207,37 +204,37 @@ object mod {
       * toggleRowActive (only if manuallyActivateRows={true}) to manually activate the row. Useful if you have
       * multiple touch responders in your view.
       */
-    def renderRow(props: RowProps[T, K]): ReactElement | Null = js.native
+    def renderRow(props: RowProps[T, K]): ReactElement | Null
     
     /**
       * determines time delay in ms before pressed row becomes active. Defaults to 200 ms.
       */
-    var rowActivationTime: js.UndefOr[Double] = js.native
+    var rowActivationTime: js.UndefOr[Double] = js.undefined
     
     /**
       * when false, the content does not scrollable. The default value is true.
       */
-    var scrollEnabled: js.UndefOr[Boolean] = js.native
+    var scrollEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * when false, the horizontal scroll indicator will not be visible. The default value is true.
       */
-    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * when false, the vertical scroll indicator will not be visible. The default value is true.
       */
-    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * when false, rows are not sortable. The default value is true.
       */
-    var sortingEnabled: js.UndefOr[Boolean] = js.native
+    var sortingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * style of HOC
       */
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object SortableListProps {
     
@@ -248,7 +245,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SortableListPropsMutableBuilder[Self <: SortableListProps[_, _], T, K] (val x: Self with (SortableListProps[T, K])) extends AnyVal {
+    implicit class SortableListPropsMutableBuilder[Self <: SortableListProps[?, ?], T, K] (val x: Self & (SortableListProps[T, K])) extends AnyVal {
       
       @scala.inline
       def setAutoscrollAreaSize(value: Double): Self = StObject.set(x, "autoscrollAreaSize", value.asInstanceOf[js.Any])

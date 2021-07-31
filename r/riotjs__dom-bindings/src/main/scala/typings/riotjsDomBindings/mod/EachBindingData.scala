@@ -2,28 +2,27 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EachBindingData
-  extends BaseBindingData
+  extends StObject
+     with BaseBindingData
      with BindingData {
   
-  var condition: js.UndefOr[(js.Function1[/* scope */ js.Any, _]) | Null] = js.native
+  var condition: js.UndefOr[(js.Function1[/* scope */ js.Any, js.Any]) | Null] = js.undefined
   
-  var getKey: js.UndefOr[(js.Function1[/* scope */ js.Any, _]) | Null] = js.native
+  var getKey: js.UndefOr[(js.Function1[/* scope */ js.Any, js.Any]) | Null] = js.undefined
   
-  var indexName: js.UndefOr[Double] = js.native
+  var indexName: js.UndefOr[Double] = js.undefined
   
-  var itemName: String = js.native
+  var itemName: String
   
-  var template: TemplateChunk[_, _] = js.native
+  var template: TemplateChunk[js.Any, js.Any]
 }
 object EachBindingData {
   
   @scala.inline
-  def apply(itemName: String, template: TemplateChunk[_, _]): EachBindingData = {
+  def apply(itemName: String, template: TemplateChunk[js.Any, js.Any]): EachBindingData = {
     val __obj = js.Dynamic.literal(itemName = itemName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[EachBindingData]
   }
@@ -32,7 +31,7 @@ object EachBindingData {
   implicit class EachBindingDataMutableBuilder[Self <: EachBindingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCondition(value: /* scope */ js.Any => _): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    def setCondition(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
     @scala.inline
     def setConditionNull: Self = StObject.set(x, "condition", null)
@@ -41,7 +40,7 @@ object EachBindingData {
     def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def setGetKey(value: /* scope */ js.Any => _): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    def setGetKey(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetKeyNull: Self = StObject.set(x, "getKey", null)
@@ -59,6 +58,6 @@ object EachBindingData {
     def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: TemplateChunk[_, _]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    def setTemplate(value: TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

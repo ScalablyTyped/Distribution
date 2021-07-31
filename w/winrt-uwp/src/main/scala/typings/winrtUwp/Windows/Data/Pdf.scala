@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains classes for converting a page in a Portable Document Format (PDF) document to an image file. */
@@ -22,23 +21,30 @@ object Pdf {
     
     /** No rotation. */
     @js.native
-    sealed trait normal extends PdfPageRotation
+    sealed trait normal
+      extends StObject
+         with PdfPageRotation
     
     /** A 180-degree rotation. */
     @js.native
-    sealed trait rotate180 extends PdfPageRotation
+    sealed trait rotate180
+      extends StObject
+         with PdfPageRotation
     
     /** A 270-degree rotation. */
     @js.native
-    sealed trait rotate270 extends PdfPageRotation
+    sealed trait rotate270
+      extends StObject
+         with PdfPageRotation
     
     /** A 90-degree rotation. */
     @js.native
-    sealed trait rotate90 extends PdfPageRotation
+    sealed trait rotate90
+      extends StObject
+         with PdfPageRotation
   }
   
   /** Represents a Portable Document Format (PDF) document. */
-  @js.native
   trait PdfDocument extends StObject {
     
     /**
@@ -46,13 +52,13 @@ object Pdf {
       * @param pageIndex The location of the PDF page relative to its parent document.
       * @return The PDF page.
       */
-    def getPage(pageIndex: Double): PdfPage = js.native
+    def getPage(pageIndex: Double): PdfPage
     
     /** Gets whether the Portable Document Format (PDF) document is password-protected. */
-    var isPasswordProtected: Boolean = js.native
+    var isPasswordProtected: Boolean
     
     /** Gets the number of pages in the Portable Document Format (PDF) document. */
-    var pageCount: Double = js.native
+    var pageCount: Double
   }
   object PdfDocument {
     
@@ -120,23 +126,22 @@ object Pdf {
   }
   
   /** Represents the dimensions of a single page in a Portable Document Format (PDF) document. */
-  @js.native
   trait PdfPageDimensions extends StObject {
     
     /** Gets the size of a rectangle that contains the Portable Document Format (PDF) page's contents, including any meaningful surrounding white space, as intended by the PDF page's creator. */
-    var artBox: Rect = js.native
+    var artBox: Rect
     
     /** Gets the size of a rectangle that specifies the clipped region of a Portable Document Format (PDF) page's contents when it is displayed. */
-    var bleedBox: Rect = js.native
+    var bleedBox: Rect
     
     /** Gets the size of a rectangle that specifies the cropped region of a Portable Document Format (PDF) page's contents when it is displayed. */
-    var cropBox: Rect = js.native
+    var cropBox: Rect
     
     /** Gets the size of a rectangle that defines the boundaries of the area that the Portable Document Format (PDF) page will be displayed or printed to. */
-    var mediaBox: Rect = js.native
+    var mediaBox: Rect
     
     /** Gets the size of a rectangle that specifies the intended dimensions of the Portable Document Format (PDF) page after it has been trimmed. */
-    var trimBox: Rect = js.native
+    var trimBox: Rect
   }
   object PdfPageDimensions {
     
@@ -167,26 +172,25 @@ object Pdf {
   }
   
   /** Represents display settings for a single page of a Portable Document Format (PDF) document, such as the page's background color and its encoding type. */
-  @js.native
   trait PdfPageRenderOptions extends StObject {
     
     /** Gets or sets the Portable Document Format (PDF) page's background color. */
-    var backgroundColor: Color = js.native
+    var backgroundColor: Color
     
     /** Gets or sets the Portable Document Format (PDF) page's encoding type to be used while the page is being converted to a bitmap. */
-    var bitmapEncoderId: String = js.native
+    var bitmapEncoderId: String
     
     /** Gets or sets the final size of the rendering of the Portable Document Format (PDF) page in device-independent pixels (DIPs). */
-    var destinationHeight: Double = js.native
+    var destinationHeight: Double
     
     /** Gets or sets the final size of the rendering of the Portable Document Format (PDF) page in device-independent pixels (DIPs). */
-    var destinationWidth: Double = js.native
+    var destinationWidth: Double
     
     /** Gets or sets whether the Portable Document Format (PDF) page uses the system's high contrast display setting. */
-    var isIgnoringHighContrast: Boolean = js.native
+    var isIgnoringHighContrast: Boolean
     
     /** Gets or sets a portion of the Portable Document Format (PDF) page to be displayed. */
-    var sourceRect: Rect = js.native
+    var sourceRect: Rect
   }
   object PdfPageRenderOptions {
     

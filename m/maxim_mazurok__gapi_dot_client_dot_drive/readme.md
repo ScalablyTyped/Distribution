@@ -10,9 +10,9 @@ TypeScript typings for Drive API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.drive |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 188 |
+| # downloads        | 224251 |
 | # stars            | 0 |
 
 ## Links

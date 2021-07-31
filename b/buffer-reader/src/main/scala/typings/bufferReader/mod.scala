@@ -3,7 +3,6 @@ package typings.bufferReader
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
   /**
     * Create a new reader, if no buffer provided, a empty buffer will be used.
     */
-  class ^ () extends BufferReader {
+  class ^ ()
+    extends StObject
+       with BufferReader {
     def this(buffer: Buffer) = this()
   }
   

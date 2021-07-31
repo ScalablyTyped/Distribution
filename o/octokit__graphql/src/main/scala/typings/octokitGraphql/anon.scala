@@ -6,17 +6,15 @@ import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data[ResponseData] extends StObject {
     
-    var data: Required[GraphQlQueryResponse[ResponseData]] = js.native
+    var data: Required[GraphQlQueryResponse[ResponseData]]
     
-    var headers: ResponseHeaders = js.native
+    var headers: ResponseHeaders
   }
   object Data {
     
@@ -53,7 +50,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], ResponseData] (val x: Self with Data[ResponseData]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], ResponseData] (val x: Self & Data[ResponseData]) extends AnyVal {
       
       @scala.inline
       def setData(value: Required[GraphQlQueryResponse[ResponseData]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -63,16 +60,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Extensions extends StObject {
     
-    var extensions: StringDictionary[js.Any] = js.native
+    var extensions: StringDictionary[js.Any]
     
-    var locations: js.Array[Column] = js.native
+    var locations: js.Array[Column]
     
-    var message: String = js.native
+    var message: String
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
   }
   object Extensions {
     

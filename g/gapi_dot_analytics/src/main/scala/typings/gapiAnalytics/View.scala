@@ -2,17 +2,15 @@ package typings.gapiAnalytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait View extends StObject {
   
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
   
-  var webViewId: js.UndefOr[String] = js.native
+  var webViewId: js.UndefOr[String] = js.undefined
 }
 object View {
   

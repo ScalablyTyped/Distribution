@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DatabaseInfo...
   */
-@js.native
 trait IDatabaseInfo extends StObject {
   
   /**
     *  If set to true, it means that the database is displayed first, before the owners and tables.
     */
-  var qDBFirst: Boolean = js.native
+  var qDBFirst: Boolean
   
   /**
     * Name of the product accessed by the provider
     */
-  var qDBMSName: String = js.native
+  var qDBMSName: String
   
   /**
     * Character string used after the database name
@@ -30,22 +28,22 @@ trait IDatabaseInfo extends StObject {
     *       - dbo is the owner name
     *       - Months is the table name
     */
-  var qDBSeparator: String = js.native
+  var qDBSeparator: String
   
   /**
     * If set to true, it means that the data source contains some databases.
     */
-  var qDBUsage: Boolean = js.native
+  var qDBUsage: Boolean
   
   /**
     * Name of the default database
     */
-  var qDefaultDatabase: String = js.native
+  var qDefaultDatabase: String
   
   /**
     * List of the script keywords
     */
-  var qKeywords: js.Array[String] = js.native
+  var qKeywords: js.Array[String]
   
   /**
     * Character string used after the owner name
@@ -56,27 +54,27 @@ trait IDatabaseInfo extends StObject {
     *       - dbo is the owner name
     *       - Months is the table name
     */
-  var qOwnerSeparator: String = js.native
+  var qOwnerSeparator: String
   
   /**
     * If set to true, it means that the data source contains some owners.
     */
-  var qOwnerUsage: Boolean = js.native
+  var qOwnerUsage: Boolean
   
   /**
     * Prefix used with field, database or owner names that contain special characters or keywords.
     */
-  var qQuotePreffix: String = js.native
+  var qQuotePreffix: String
   
   /**
     * Suffix used with field, database or owner names that contain special characters or keywords.
     */
-  var qQuoteSuffix: String = js.native
+  var qQuoteSuffix: String
   
   /**
     * List of the special characters
     */
-  var qSpecialChars: String = js.native
+  var qSpecialChars: String
 }
 object IDatabaseInfo {
   

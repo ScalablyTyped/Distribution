@@ -2,15 +2,13 @@ package typings.webLocksApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LockManagerSnapshot extends StObject {
   
-  var held: js.Array[Lock] = js.native
+  var held: js.Array[Lock]
   
-  var pending: js.Array[Lock] = js.native
+  var pending: js.Array[Lock]
 }
 object LockManagerSnapshot {
   

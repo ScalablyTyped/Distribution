@@ -4,7 +4,6 @@ import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import typings.std.Float64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object float64HistogramMod {

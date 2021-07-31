@@ -7,7 +7,6 @@ import typings.serverless.mod.Options
 import typings.serverless.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
@@ -16,14 +15,13 @@ object pluginMod {
   
   type Hooks = StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @js.native
   trait Plugin extends StObject {
     
-    var commands: js.UndefOr[Commands] = js.native
+    var commands: js.UndefOr[Commands] = js.undefined
     
-    var hooks: Hooks = js.native
+    var hooks: Hooks
     
-    var variableResolvers: js.UndefOr[VariableResolvers] = js.native
+    var variableResolvers: js.UndefOr[VariableResolvers] = js.undefined
   }
   object Plugin {
     
@@ -54,7 +52,9 @@ object pluginMod {
   }
   
   @js.native
-  trait PluginStatic extends Instantiable2[/* serverless */ ^, /* options */ Options, Plugin]
+  trait PluginStatic
+    extends StObject
+       with Instantiable2[/* serverless */ ^, /* options */ Options, Plugin]
   
   type VariableResolver = js.Function1[/* variableSource */ String, js.Promise[js.Any]]
   

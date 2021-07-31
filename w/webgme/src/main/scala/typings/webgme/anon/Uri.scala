@@ -2,23 +2,21 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uri extends StObject {
   
   /**
     * Options for MongoClient.connect
     * config.mongo.options = see config
     */
-  var options: String = js.native
+  var options: String
   
   /**
     * MongoDB connection uri
     * config.mongo.uri = 'mongodb://127.0.0.1:27017/multi';
     */
-  var uri: String = js.native
+  var uri: String
 }
 object Uri {
   

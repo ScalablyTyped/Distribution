@@ -3,24 +3,22 @@ package typings.electron.Electron
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersReceivedResponse extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When provided, the server is assumed to have responded with these headers.
     */
-  var responseHeaders: js.UndefOr[Record[String, String | js.Array[String]]] = js.native
+  var responseHeaders: js.UndefOr[Record[String, String | js.Array[String]]] = js.undefined
   
   /**
     * Should be provided when overriding `responseHeaders` to change header status
     * otherwise original response header's status will be used.
     */
-  var statusLine: js.UndefOr[String] = js.native
+  var statusLine: js.UndefOr[String] = js.undefined
 }
 object HeadersReceivedResponse {
   

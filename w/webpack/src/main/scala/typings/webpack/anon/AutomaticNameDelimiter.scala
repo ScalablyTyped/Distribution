@@ -6,91 +6,89 @@ import typings.webpack.webpackStrings.async
 import typings.webpack.webpackStrings.initial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticNameDelimiter extends StObject {
   
   /**
   					 * Sets the name delimiter for created chunks
   					 */
-  var automaticNameDelimiter: js.UndefOr[String] = js.native
+  var automaticNameDelimiter: js.UndefOr[String] = js.undefined
   
   /**
   					 * Sets the max length for the name of a created chunk
   					 */
-  var automaticNameMaxLength: js.UndefOr[Double] = js.native
+  var automaticNameMaxLength: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Sets the name prefix for created chunks
   					 */
-  var automaticNamePrefix: js.UndefOr[String] = js.native
+  var automaticNamePrefix: js.UndefOr[String] = js.undefined
   
   /**
   					 * Select chunks for determining cache group content (defaults to "initial", "initial" and "all" requires adding these chunks to the HTML)
   					 */
-  var chunks: js.UndefOr[initial | async | all | js.Function] = js.native
+  var chunks: js.UndefOr[initial | async | all | js.Function] = js.undefined
   
   /**
   					 * Ignore minimum size, minimum chunks and maximum requests and always create chunks for this cache group
   					 */
-  var enforce: js.UndefOr[Boolean] = js.native
+  var enforce: js.UndefOr[Boolean] = js.undefined
   
   /**
   					 * Size threshold at which splitting is enforced and other restrictions (maxAsyncRequests, maxInitialRequests) are ignored.
   					 */
-  var enforceSizeThreshold: js.UndefOr[Double] = js.native
+  var enforceSizeThreshold: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Sets the template for the filename for created chunks (Only works for initial chunks)
   					 */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
   					 * Maximum number of requests which are accepted for on-demand loading
   					 */
-  var maxAsyncRequests: js.UndefOr[Double] = js.native
+  var maxAsyncRequests: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Maximum number of initial chunks which are accepted for an entry point
   					 */
-  var maxInitialRequests: js.UndefOr[Double] = js.native
+  var maxInitialRequests: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Maximal size hint for the created chunks
   					 */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Minimum number of times a module has to be duplicated until it's considered for splitting
   					 */
-  var minChunks: js.UndefOr[Double] = js.native
+  var minChunks: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Minimal size for the created chunk
   					 */
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Give chunks for this cache group a name (chunks with equal name are merged)
   					 */
-  var name: js.UndefOr[Boolean | js.Function | String] = js.native
+  var name: js.UndefOr[Boolean | js.Function | String] = js.undefined
   
   /**
   					 * Priority of this cache group
   					 */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
   					 * Try to reuse existing chunk (with name) when it has matching modules
   					 */
-  var reuseExistingChunk: js.UndefOr[Boolean] = js.native
+  var reuseExistingChunk: js.UndefOr[Boolean] = js.undefined
   
   /**
   					 * Assign modules to a cache group
   					 */
-  var test: js.UndefOr[js.Function | String | RegExp] = js.native
+  var test: js.UndefOr[js.Function | String | RegExp] = js.undefined
 }
 object AutomaticNameDelimiter {
   

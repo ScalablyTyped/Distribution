@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSecurityConfigurationResponse extends StObject {
   
   /**
     * The time at which the new security configuration was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampValue] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampValue] = js.undefined
   
   /**
     * The name assigned to the new security configuration.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
 }
 object CreateSecurityConfigurationResponse {
   

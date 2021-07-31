@@ -4,13 +4,14 @@ import typings.reactWidgets.calendarMod.CalendarView
 import typings.reactWidgets.dateTimePickerMod.Open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactWidgetsStrings {
   
   @js.native
-  sealed trait century extends CalendarView
+  sealed trait century
+    extends StObject
+       with CalendarView
   @scala.inline
   def century: century = "century".asInstanceOf[century]
   
@@ -25,12 +26,16 @@ object reactWidgetsStrings {
   def contains: contains = "contains".asInstanceOf[contains]
   
   @js.native
-  sealed trait date extends Open
+  sealed trait date
+    extends StObject
+       with Open
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait decade extends CalendarView
+  sealed trait decade
+    extends StObject
+       with CalendarView
   @scala.inline
   def decade: decade = "decade".asInstanceOf[decade]
   
@@ -50,7 +55,9 @@ object reactWidgetsStrings {
   def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait month extends CalendarView
+  sealed trait month
+    extends StObject
+       with CalendarView
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
@@ -70,12 +77,16 @@ object reactWidgetsStrings {
   def startsWith: startsWith = "startsWith".asInstanceOf[startsWith]
   
   @js.native
-  sealed trait time extends Open
+  sealed trait time
+    extends StObject
+       with Open
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait year extends CalendarView
+  sealed trait year
+    extends StObject
+       with CalendarView
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

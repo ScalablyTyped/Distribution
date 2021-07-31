@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveNonInheritableGroupAttrs extends PluginConfig {
+trait PluginRemoveNonInheritableGroupAttrs
+  extends StObject
+     with PluginConfig {
   
-  var removeNonInheritableGroupAttrs: Boolean | js.Object = js.native
+  var removeNonInheritableGroupAttrs: Boolean | js.Object
 }
 object PluginRemoveNonInheritableGroupAttrs {
   

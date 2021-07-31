@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Records extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Records extends StObject {
     *
     * @return The length of the records Array
     */
-  def count(): Double = js.native
+  def count(): Double
   
   /**
     * Get initial recordset to populate table
@@ -22,44 +20,44 @@ trait Records extends StObject {
     *
     * @return An Array with the records
     */
-  def getFromTable(): js.Array[js.Object] = js.native
+  def getFromTable(): js.Array[js.Object]
   
   /** Create and init the records */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Check if ajax feature is enabled
     *
     * @return A boolean if ajax feature is enabled
     */
-  def initOnLoad(): Boolean = js.native
+  def initOnLoad(): Boolean
   
   /**
     * Get the first and the last indexes based on current page and number of items per page
     *
     * @return An Array with the first index ([0]) and the last index ([1])
     */
-  def pageBounds(): js.Array[Double] = js.native
+  def pageBounds(): js.Array[Double]
   
   /** Update the records with the new page */
-  def paginate(): Unit = js.native
+  def paginate(): Unit
   
   /** Reset the records */
-  def resetOriginal(): Unit = js.native
+  def resetOriginal(): Unit
   
   /**
     * Call the appropriated sort function
     *
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def sort(): Double = js.native
+  def sort(): Double
   
   /**
     * Merge ajax response json with cached data including (meta-data and records)
     *
     * @param data The new data
     */
-  def updateFromJson(data: js.Any): Unit = js.native
+  def updateFromJson(data: js.Any): Unit
 }
 object Records {
   

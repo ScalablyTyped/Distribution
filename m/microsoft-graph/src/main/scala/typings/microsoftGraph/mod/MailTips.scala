@@ -2,45 +2,43 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailTips extends StObject {
   
   // Mail tips for automatic reply if it has been set up by the recipient.
-  var automaticReplies: js.UndefOr[NullableOption[AutomaticRepliesMailTips]] = js.native
+  var automaticReplies: js.UndefOr[NullableOption[AutomaticRepliesMailTips]] = js.undefined
   
   // A custom mail tip that can be set on the recipient's mailbox.
-  var customMailTip: js.UndefOr[NullableOption[String]] = js.native
+  var customMailTip: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Whether the recipient's mailbox is restricted, for example, accepting messages from only a predefined list of senders,
     * rejecting messages from a predefined list of senders, or accepting messages from only authenticated senders.
     */
-  var deliveryRestricted: js.UndefOr[NullableOption[Boolean]] = js.native
+  var deliveryRestricted: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The email address of the recipient to get mailtips for.
-  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.native
+  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
   
   // Errors that occur during the getMailTips action.
-  var error: js.UndefOr[NullableOption[MailTipsError]] = js.native
+  var error: js.UndefOr[NullableOption[MailTipsError]] = js.undefined
   
   // The number of external members if the recipient is a distribution list.
-  var externalMemberCount: js.UndefOr[NullableOption[Double]] = js.native
+  var externalMemberCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Whether sending messages to the recipient requires approval. For example, if the recipient is a large distribution list
     * and a moderator has been set up to approve messages sent to that distribution list, or if sending messages to a
     * recipient requires approval of the recipient's manager.
     */
-  var isModerated: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isModerated: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The mailbox full status of the recipient.
-  var mailboxFull: js.UndefOr[NullableOption[Boolean]] = js.native
+  var mailboxFull: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The maximum message size that has been configured for the recipient's organization or mailbox.
-  var maxMessageSize: js.UndefOr[NullableOption[Double]] = js.native
+  var maxMessageSize: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * The scope of the recipient. Possible values are: none, internal, external, externalPartner, externalNonParther. For
@@ -48,13 +46,13 @@ trait MailTips extends StObject {
     * wants certain mailtips to be accessible to certain scopes. It's also useful to senders to inform them that their
     * message may leave the organization, helping them make the correct decisions about wording, tone and content.
     */
-  var recipientScope: js.UndefOr[NullableOption[RecipientScopeType]] = js.native
+  var recipientScope: js.UndefOr[NullableOption[RecipientScopeType]] = js.undefined
   
   // Recipients suggested based on previous contexts where they appear in the same message.
-  var recipientSuggestions: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var recipientSuggestions: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // The number of members if the recipient is a distribution list.
-  var totalMemberCount: js.UndefOr[NullableOption[Double]] = js.native
+  var totalMemberCount: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object MailTips {
   

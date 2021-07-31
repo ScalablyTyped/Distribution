@@ -15,13 +15,14 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait Autocomplete extends EventEmitter {
+  trait Autocomplete
+    extends StObject
+       with EventEmitter {
     
     /**
       * 返回查询语言
@@ -90,25 +91,24 @@ object AMap {
       def poi: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.poi = "poi".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.poi]
     }
     
-    @js.native
     trait EventMap extends StObject {
       
       var choose: Event_[
             typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.choose, 
             typings.amapJsApiAutocomplete.anon.Tip
-          ] = js.native
+          ]
       
       var complete: Event_[
             typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.complete, 
             SearchResult | Info
-          ] = js.native
+          ]
       
-      var error: Event_[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.error, Info]
       
       var select: Event_[
             typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.select, 
             typings.amapJsApiAutocomplete.anon.Tip
-          ] = js.native
+          ]
     }
     object EventMap {
       
@@ -140,48 +140,47 @@ object AMap {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 输入提示时限定城市
         */
-      var city: js.UndefOr[String] = js.native
+      var city: js.UndefOr[String] = js.undefined
       
       /**
         * 是否强制限制在设置的城市内搜索
         */
-      var citylimit: js.UndefOr[Boolean] = js.native
+      var citylimit: js.UndefOr[Boolean] = js.undefined
       
       // internal
-      var closeResultOnScroll: js.UndefOr[Boolean] = js.native
+      var closeResultOnScroll: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 返回的数据类型
         */
-      var datatype: js.UndefOr[DataType] = js.native
+      var datatype: js.UndefOr[DataType] = js.undefined
       
       /**
         * 指定输入框
         */
-      var input: js.UndefOr[String | HTMLInputElement] = js.native
+      var input: js.UndefOr[String | HTMLInputElement] = js.undefined
       
-      var lang: js.UndefOr[Lang] = js.native
+      var lang: js.UndefOr[Lang] = js.undefined
       
       /**
         * 是否在input位于页面较下方的时候自动将输入面板显示在input上方以避免被遮挡
         */
-      var outPutDirAuto: js.UndefOr[Boolean] = js.native
+      var outPutDirAuto: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 指定输出面板
         */
-      var output: js.UndefOr[String | HTMLDivElement] = js.native
+      var output: js.UndefOr[String | HTMLDivElement] = js.undefined
       
       /**
         * 输入提示时限定POI类型，多个类型用“|”分隔
         */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -250,23 +249,22 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
       /**
         * 输入提示条数
         */
-      var count: Double = js.native
+      var count: Double
       
       /**
         * 查询状态说明
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 输入提示列表
         */
-      var tips: js.Array[Tip] = js.native
+      var tips: js.Array[Tip]
     }
     object SearchResult {
       
@@ -311,48 +309,47 @@ object AMap {
       def no_data: typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiAutocomplete.amapJsApiAutocompleteStrings.no_data]
     }
     
-    @js.native
     trait Tip extends StObject {
       
       /**
         * 区域编码
         */
-      var adcode: String = js.native
+      var adcode: String
       
       /**
         * 地址
         */
-      var address: String = js.native
+      var address: String
       
       /**
         * 城市
         */
-      var city: js.Array[_] = js.native
+      var city: js.Array[js.Any]
       
       /**
         * 所属区域
         */
-      var district: String = js.native
+      var district: String
       
       /**
         * ID
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * 坐标经纬度
         */
-      var location: LngLat = js.native
+      var location: LngLat
       
       /**
         * 名称
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * 类型编码
         */
-      var typecode: String = js.native
+      var typecode: String
     }
     object Tip {
       
@@ -360,7 +357,7 @@ object AMap {
       def apply(
         adcode: String,
         address: String,
-        city: js.Array[_],
+        city: js.Array[js.Any],
         district: String,
         id: String,
         location: LngLat,
@@ -381,7 +378,7 @@ object AMap {
         def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setCity(value: js.Array[_]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        def setCity(value: js.Array[js.Any]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCityVarargs(value: js.Any*): Self = StObject.set(x, "city", js.Array(value :_*))

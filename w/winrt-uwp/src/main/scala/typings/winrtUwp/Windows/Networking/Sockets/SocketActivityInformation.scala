@@ -2,33 +2,31 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information on the transferred socket from the Socket Broker. */
-@js.native
 trait SocketActivityInformation extends StObject {
   
   /** Get the context associated while transferring ownership of the socket. */
-  var context: SocketActivityContext = js.native
+  var context: SocketActivityContext
   
   /** Based on the socket type, the app can reclaim the ownership of the appropriate DatagramSocket . */
-  var datagramSocket: DatagramSocket = js.native
+  var datagramSocket: DatagramSocket
   
   /** A unique string for this app used to identify the transferred socket. This is passed by the app while transferring the socket ownership to the service. */
-  var id: String = js.native
+  var id: String
   
   /** Gets a SocketActivityKind enumeration value that identifies socket kind. */
-  var socketKind: SocketActivityKind = js.native
+  var socketKind: SocketActivityKind
   
   /** Based on the socket type, the app can reclaim the ownership of the appropriate StreamSocket . */
-  var streamSocket: StreamSocket = js.native
+  var streamSocket: StreamSocket
   
   /** Based on the socket type, the app can reclaim the ownership of the appropriate StreamSocketListener . */
-  var streamSocketListener: StreamSocketListener = js.native
+  var streamSocketListener: StreamSocketListener
   
   /** The background task ID used while transferring ownership of the socket. */
-  var taskId: String = js.native
+  var taskId: String
 }
 object SocketActivityInformation {
   

@@ -9,51 +9,56 @@ import typings.redisRateLimiter.redisRateLimiterStrings.ip
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("redis-rate-limiter", JSImport.Namespace)
   @js.native
-  class ^ () extends RedisRateLimiter
+  class ^ ()
+    extends StObject
+       with RedisRateLimiter
+  @JSImport("redis-rate-limiter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("redis-rate-limiter", "create")
-  @js.native
+  @scala.inline
   def create(options: Options): js.Function2[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* callback */ js.Function2[/* err */ Error, /* res */ Response, Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* callback */ js.Function2[/* err */ Error, /* res */ Response, Unit], 
+    Unit
+  ]]
   
   /* static member */
-  @JSImport("redis-rate-limiter", "middleware")
-  @js.native
-  def middleware(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def middleware(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @js.native
   trait Options extends StObject {
     
-    var deleteImmediatelyIfRaceCondition: js.UndefOr[Boolean] = js.native
+    var deleteImmediatelyIfRaceCondition: js.UndefOr[Boolean] = js.undefined
     
-    var key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) = js.native
+    var key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String])
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var onPossibleRaceCondition: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+    var onPossibleRaceCondition: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var rate: js.UndefOr[String] = js.native
+    var rate: js.UndefOr[String] = js.undefined
     
-    var redis: RedisClient = js.native
+    var redis: RedisClient
     
-    var window: js.UndefOr[Double] = js.native
+    var window: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
     @scala.inline
     def apply(
-      key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]),
+      key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]),
       redis: RedisClient
     ): Options = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any])
@@ -70,10 +75,10 @@ object mod {
       def setDeleteImmediatelyIfRaceConditionUndefined: Self = StObject.set(x, "deleteImmediatelyIfRaceCondition", js.undefined)
       
       @scala.inline
-      def setKey(value: ip | (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      def setKey(value: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setKeyFunction1(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      def setKeyFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
       @scala.inline
       def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
@@ -104,21 +109,19 @@ object mod {
     }
   }
   
-  @js.native
   trait RedisRateLimiter extends StObject
   
-  @js.native
   trait Response extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var key: String = js.native
+    var key: String
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var over: Boolean = js.native
+    var over: Boolean
     
-    var window: Double = js.native
+    var window: Double
   }
   object Response {
     

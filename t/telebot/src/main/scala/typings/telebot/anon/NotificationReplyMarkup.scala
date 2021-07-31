@@ -2,17 +2,15 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationReplyMarkup extends StObject {
   
-  var notification: js.UndefOr[Boolean] = js.native
+  var notification: js.UndefOr[Boolean] = js.undefined
   
-  var replyMarkup: js.UndefOr[js.Any] = js.native
+  var replyMarkup: js.UndefOr[js.Any] = js.undefined
   
-  var replyToMessage: js.UndefOr[Double] = js.native
+  var replyToMessage: js.UndefOr[Double] = js.undefined
 }
 object NotificationReplyMarkup {
   

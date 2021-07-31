@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * enterprises to create user or device accounts as needed. These accounts
   * provide access to managed Google Play.
   */
-@js.native
 trait SchemaUser extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaUser extends StObject {
     * information (PII) for this property. Must always be set for EMM-managed
     * users. Not set for Google-managed users.
     */
-  var accountIdentifier: js.UndefOr[String] = js.native
+  var accountIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The type of account that this user represents. A userAccount can be
@@ -34,7 +32,7 @@ trait SchemaUser extends StObject {
     * (userAccount, deviceAccount), but a Google-managed user (googleManaged)
     * is always a userAccount.
     */
-  var accountType: js.UndefOr[String] = js.native
+  var accountType: js.UndefOr[String] = js.undefined
   
   /**
     * The name that will appear in user interfaces. Setting this property is
@@ -43,32 +41,32 @@ trait SchemaUser extends StObject {
     * Inc.&quot;) or your name (as EMM). Not used for Google-managed user
     * accounts.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID for the user.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#user&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The entity that manages the user. With googleManaged users, the source of
     * truth is Google so EMMs have to make sure a Google Account exists for the
     * user. With emmManaged users, the EMM is in charge.
     */
-  var managementType: js.UndefOr[String] = js.native
+  var managementType: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s primary email address, for example,
     * &quot;jsmith@example.com&quot;. Will always be set for Google managed
     * users and not set for EMM managed users.
     */
-  var primaryEmail: js.UndefOr[String] = js.native
+  var primaryEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaUser {
   

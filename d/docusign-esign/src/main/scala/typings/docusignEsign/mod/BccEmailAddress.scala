@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BccEmailAddress extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BccEmailAddress extends StObject {
     * Example: If your account has BCC for Email Archive set up for the email address 'archive@mycompany.com' and you send an envelope using the BCC
     * Email Override to send a BCC email to 'salesarchive@mycompany.com', then a copy of the envelope is only sent to the 'salesarchive@mycompany.com' email address.
     */
-  var bccEmailAddressId: js.UndefOr[String] = js.native
+  var bccEmailAddressId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the BCC email address. DocuSign verifies that the email format is correct, but does not verify that the email is active.Using this overrides the BCC
@@ -22,7 +20,7 @@ trait BccEmailAddress extends StObject {
     *
     * Maximum of length: 100 characters.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
 }
 object BccEmailAddress {
   

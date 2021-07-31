@@ -4,28 +4,28 @@ import typings.std.RegExp
 import typings.whyDidYouUpdate.anon.Typeofreact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("why-did-you-update", "whyDidYouUpdate")
+  @JSImport("why-did-you-update", JSImport.Namespace)
   @js.native
-  def whyDidYouUpdate(react: Typeofreact): Unit = js.native
-  @JSImport("why-did-you-update", "whyDidYouUpdate")
-  @js.native
-  def whyDidYouUpdate(react: Typeofreact, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def whyDidYouUpdate(react: Typeofreact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("whyDidYouUpdate")(react.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def whyDidYouUpdate(react: Typeofreact, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("whyDidYouUpdate")(react.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Diffs extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var next: js.Any = js.native
+    var next: js.Any
     
-    var prev: js.Any = js.native
+    var prev: js.Any
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
   }
   object Diffs {
     
@@ -53,16 +53,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var collapseComponentGroups: js.UndefOr[Boolean] = js.native
+    var collapseComponentGroups: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[RegExp] = js.native
+    var exclude: js.UndefOr[RegExp] = js.undefined
     
-    var groupByComment: js.UndefOr[Boolean] = js.native
+    var groupByComment: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[RegExp] = js.native
+    var include: js.UndefOr[RegExp] = js.undefined
     
     var notifier: js.UndefOr[
         js.Function4[
@@ -72,7 +71,7 @@ object mod {
           /* diffs */ js.Array[Diffs], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

@@ -2,27 +2,25 @@ package typings.baseui.selectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectState extends StObject {
   
-  var activeDescendant: String | Null = js.native
+  var activeDescendant: String | Null
   
-  var inputValue: String = js.native
+  var inputValue: String
   
-  var isFocused: Boolean = js.native
+  var isFocused: Boolean
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var isPseudoFocused: Boolean = js.native
+  var isPseudoFocused: Boolean
 }
 object SelectState {
   
   @scala.inline
   def apply(inputValue: String, isFocused: Boolean, isOpen: Boolean, isPseudoFocused: Boolean): SelectState = {
-    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isPseudoFocused = isPseudoFocused.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inputValue = inputValue.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], isPseudoFocused = isPseudoFocused.asInstanceOf[js.Any], activeDescendant = null)
     __obj.asInstanceOf[SelectState]
   }
   

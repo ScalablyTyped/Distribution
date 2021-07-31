@@ -3,21 +3,19 @@ package typings.reactNativeMaps.anon
 import typings.reactNativeMaps.reactNativeMapsStrings.`marker-press`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var action: `marker-press` = js.native
+  var action: `marker-press`
   
-  var id: String = js.native
+  var id: String
 }
 object Action {
   
   @scala.inline
-  def apply(action: `marker-press`, id: String): Action = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  def apply(id: String): Action = {
+    val __obj = js.Dynamic.literal(action = "marker-press", id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   

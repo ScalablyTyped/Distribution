@@ -2,18 +2,16 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitySubscriberMetadataArgsMod {
   
-  @js.native
   trait EntitySubscriberMetadataArgs extends StObject {
     
     /**
       * Class to which subscriber is applied.
       */
-    val target: js.Function = js.native
+    val target: js.Function
   }
   object EntitySubscriberMetadataArgs {
     

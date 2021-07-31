@@ -10,9 +10,9 @@ scroll to an element or a position with easing
 | ------------------ | :-------------: |
 | Full name          | motion-scroll |
 | Keywords           | scroll, element, easing, window |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 1337 |
+| # downloads        | 7788 |
 | # stars            | 0 |
 
 ## Links

@@ -21,23 +21,21 @@ import typings.youtubePlayer.youtubePlayerStrings.user_uploads
 import typings.youtubePlayer.youtubePlayerStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AcceptableStates extends StObject {
     
-    var acceptableStates: js.Tuple2[ENDED, PAUSED] = js.native
+    var acceptableStates: js.Tuple2[ENDED, PAUSED]
     
-    var stateChangeRequired: `false` = js.native
+    var stateChangeRequired: `false`
   }
   object AcceptableStates {
     
     @scala.inline
-    def apply(acceptableStates: js.Tuple2[ENDED, PAUSED], stateChangeRequired: `false`): AcceptableStates = {
-      val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = stateChangeRequired.asInstanceOf[js.Any])
+    def apply(acceptableStates: js.Tuple2[ENDED, PAUSED]): AcceptableStates = {
+      val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = false)
       __obj.asInstanceOf[AcceptableStates]
     }
     
@@ -52,50 +50,49 @@ object anon {
     }
   }
   
-  @js.native
   trait Autoplay extends StObject {
     
-    var autoplay: js.UndefOr[`0` | `1`] = js.native
+    var autoplay: js.UndefOr[`0` | `1`] = js.undefined
     
-    var cc_lang_pref: js.UndefOr[String] = js.native
+    var cc_lang_pref: js.UndefOr[String] = js.undefined
     
-    var cc_load_policy: js.UndefOr[`1`] = js.native
+    var cc_load_policy: js.UndefOr[`1`] = js.undefined
     
-    var color: js.UndefOr[red | white] = js.native
+    var color: js.UndefOr[red | white] = js.undefined
     
-    var controls: js.UndefOr[`0` | `1`] = js.native
+    var controls: js.UndefOr[`0` | `1`] = js.undefined
     
-    var disablekb: js.UndefOr[`0` | `1`] = js.native
+    var disablekb: js.UndefOr[`0` | `1`] = js.undefined
     
-    var enablejsapi: js.UndefOr[`0` | `1`] = js.native
+    var enablejsapi: js.UndefOr[`0` | `1`] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var fs: js.UndefOr[`0` | `1`] = js.native
+    var fs: js.UndefOr[`0` | `1`] = js.undefined
     
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
-    var iv_load_policy: js.UndefOr[`1` | `3`] = js.native
+    var iv_load_policy: js.UndefOr[`1` | `3`] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
-    var listType: js.UndefOr[playlist | search | user_uploads] = js.native
+    var listType: js.UndefOr[playlist | search | user_uploads] = js.undefined
     
-    var loop: js.UndefOr[`0` | `1`] = js.native
+    var loop: js.UndefOr[`0` | `1`] = js.undefined
     
-    var modestbranding: js.UndefOr[`1`] = js.native
+    var modestbranding: js.UndefOr[`1`] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var playlist: js.UndefOr[String] = js.native
+    var playlist: js.UndefOr[String] = js.undefined
     
-    var playsinline: js.UndefOr[`0` | `1`] = js.native
+    var playsinline: js.UndefOr[`0` | `1`] = js.undefined
     
-    var rel: js.UndefOr[`0` | `1`] = js.native
+    var rel: js.UndefOr[`0` | `1`] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var widget_referrer: js.UndefOr[String] = js.native
+    var widget_referrer: js.UndefOr[String] = js.undefined
   }
   object Autoplay {
     
@@ -295,9 +292,9 @@ object anon {
     def initCustomEvent(typeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean, detailArg: js.Any): Unit = js.native
     
     def initEvent(`type`: String): Unit = js.native
-    def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
     
     /**
       * Returns true if event was dispatched by the user agent, and false otherwise.
@@ -340,16 +337,15 @@ object anon {
     val `type`: String = js.native
   }
   
-  @js.native
   trait EndSeconds extends StObject {
     
-    var endSeconds: js.UndefOr[Double] = js.native
+    var endSeconds: js.UndefOr[Double] = js.undefined
     
-    var startSeconds: js.UndefOr[Double] = js.native
+    var startSeconds: js.UndefOr[Double] = js.undefined
     
-    var suggestedQuality: js.UndefOr[String] = js.native
+    var suggestedQuality: js.UndefOr[String] = js.undefined
     
-    var videoId: String = js.native
+    var videoId: String
   }
   object EndSeconds {
     
@@ -385,18 +381,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var list: js.UndefOr[String] = js.native
+    var list: js.UndefOr[String] = js.undefined
     
-    var listType: String = js.native
+    var listType: String
     
-    var startSeconds: js.UndefOr[Double] = js.native
+    var startSeconds: js.UndefOr[Double] = js.undefined
     
-    var suggestedQuality: js.UndefOr[String] = js.native
+    var suggestedQuality: js.UndefOr[String] = js.undefined
   }
   object Index {
     
@@ -439,18 +434,19 @@ object anon {
   }
   
   @js.native
-  trait Instantiable extends Instantiable2[/* elementId */ String, /* options */ Options, YouTubePlayer]
+  trait Instantiable
+    extends StObject
+       with Instantiable2[/* elementId */ String, /* options */ Options, YouTubePlayer]
   
-  @js.native
   trait MediaContentUrl extends StObject {
     
-    var endSeconds: js.UndefOr[Double] = js.native
+    var endSeconds: js.UndefOr[Double] = js.undefined
     
-    var mediaContentUrl: String = js.native
+    var mediaContentUrl: String
     
-    var startSeconds: js.UndefOr[Double] = js.native
+    var startSeconds: js.UndefOr[Double] = js.undefined
     
-    var suggestedQuality: js.UndefOr[String] = js.native
+    var suggestedQuality: js.UndefOr[String] = js.undefined
   }
   object MediaContentUrl {
     
@@ -486,18 +482,17 @@ object anon {
     }
   }
   
-  @js.native
   trait StateChangeRequired extends StObject {
     
-    var acceptableStates: js.Tuple2[ENDED, PLAYING] = js.native
+    var acceptableStates: js.Tuple2[ENDED, PLAYING]
     
-    var stateChangeRequired: `false` = js.native
+    var stateChangeRequired: `false`
   }
   object StateChangeRequired {
     
     @scala.inline
-    def apply(acceptableStates: js.Tuple2[ENDED, PLAYING], stateChangeRequired: `false`): StateChangeRequired = {
-      val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = stateChangeRequired.asInstanceOf[js.Any])
+    def apply(acceptableStates: js.Tuple2[ENDED, PLAYING]): StateChangeRequired = {
+      val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = false)
       __obj.asInstanceOf[StateChangeRequired]
     }
     
@@ -512,21 +507,20 @@ object anon {
     }
   }
   
-  @js.native
   trait Timeout extends StObject {
     
-    var acceptableStates: js.Tuple3[ENDED, PLAYING, PAUSED] = js.native
+    var acceptableStates: js.Tuple3[ENDED, PLAYING, PAUSED]
     
-    var stateChangeRequired: `true` = js.native
+    var stateChangeRequired: `true`
     
     // TRICKY: `seekTo` may not cause a state change if no buffering is required.
-    var timeout: `3000` = js.native
+    var timeout: `3000`
   }
   object Timeout {
     
     @scala.inline
-    def apply(acceptableStates: js.Tuple3[ENDED, PLAYING, PAUSED], stateChangeRequired: `true`, timeout: `3000`): Timeout = {
-      val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = stateChangeRequired.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    def apply(acceptableStates: js.Tuple3[ENDED, PLAYING, PAUSED]): Timeout = {
+      val __obj = js.Dynamic.literal(acceptableStates = acceptableStates.asInstanceOf[js.Any], stateChangeRequired = true, timeout = 3000)
       __obj.asInstanceOf[Timeout]
     }
     
@@ -545,22 +539,21 @@ object anon {
   }
   
   /* Inlined {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]:? (event : std.CustomEvent<any>): void} */
-  @js.native
   trait eventTypeinEventTypeevent extends StObject {
     
-    var apiChange: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var apiChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var playbackQualityChange: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var playbackQualityChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var playbackRateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var playbackRateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var stateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var stateChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
     
-    var volumeChange: js.UndefOr[js.Function1[/* event */ CustomEvent[_], Unit]] = js.native
+    var volumeChange: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
   }
   object eventTypeinEventTypeevent {
     
@@ -574,43 +567,43 @@ object anon {
     implicit class eventTypeinEventTypeeventMutableBuilder[Self <: eventTypeinEventTypeevent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setApiChange(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "apiChange", js.Any.fromFunction1(value))
+      def setApiChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "apiChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setApiChangeUndefined: Self = StObject.set(x, "apiChange", js.undefined)
       
       @scala.inline
-      def setError(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      def setError(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       @scala.inline
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       @scala.inline
-      def setPlaybackQualityChange(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "playbackQualityChange", js.Any.fromFunction1(value))
+      def setPlaybackQualityChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "playbackQualityChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPlaybackQualityChangeUndefined: Self = StObject.set(x, "playbackQualityChange", js.undefined)
       
       @scala.inline
-      def setPlaybackRateChange(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "playbackRateChange", js.Any.fromFunction1(value))
+      def setPlaybackRateChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "playbackRateChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPlaybackRateChangeUndefined: Self = StObject.set(x, "playbackRateChange", js.undefined)
       
       @scala.inline
-      def setReady(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      def setReady(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
       @scala.inline
       def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
       @scala.inline
-      def setStateChange(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
+      def setStateChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "stateChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
       
       @scala.inline
-      def setVolumeChange(value: /* event */ CustomEvent[_] => Unit): Self = StObject.set(x, "volumeChange", js.Any.fromFunction1(value))
+      def setVolumeChange(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "volumeChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setVolumeChangeUndefined: Self = StObject.set(x, "volumeChange", js.undefined)

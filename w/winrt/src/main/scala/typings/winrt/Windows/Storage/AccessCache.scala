@@ -4,7 +4,6 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AccessCache {
@@ -16,27 +15,36 @@ object AccessCache {
   object AccessCacheOptions extends StObject {
     
     @js.native
-    sealed trait disallowUserInput extends AccessCacheOptions
+    sealed trait disallowUserInput
+      extends StObject
+         with AccessCacheOptions
     
     @js.native
-    sealed trait fastLocationsOnly extends AccessCacheOptions
+    sealed trait fastLocationsOnly
+      extends StObject
+         with AccessCacheOptions
     
     @js.native
-    sealed trait none extends AccessCacheOptions
+    sealed trait none
+      extends StObject
+         with AccessCacheOptions
     
     @js.native
-    sealed trait suppressAccessTimeUpdate extends AccessCacheOptions
+    sealed trait suppressAccessTimeUpdate
+      extends StObject
+         with AccessCacheOptions
     
     @js.native
-    sealed trait useReadOnlyCachedCopy extends AccessCacheOptions
+    sealed trait useReadOnlyCachedCopy
+      extends StObject
+         with AccessCacheOptions
   }
   
-  @js.native
   trait AccessListEntry extends StObject {
     
-    var metadata: String = js.native
+    var metadata: String
     
-    var token: String = js.native
+    var token: String
   }
   object AccessListEntry {
     
@@ -58,12 +66,13 @@ object AccessCache {
   }
   
   @js.native
-  trait AccessListEntryView extends IVectorView[AccessListEntry]
+  trait AccessListEntryView
+    extends StObject
+       with IVectorView[AccessListEntry]
   
-  @js.native
   trait IItemRemovedEventArgs extends StObject {
     
-    var removedEntry: AccessListEntry = js.native
+    var removedEntry: AccessListEntry
   }
   object IItemRemovedEventArgs {
     
@@ -81,12 +90,11 @@ object AccessCache {
     }
   }
   
-  @js.native
   trait IStorageApplicationPermissionsStatics extends StObject {
     
-    var futureAccessList: StorageItemAccessList = js.native
+    var futureAccessList: StorageItemAccessList
     
-    var mostRecentlyUsedList: StorageItemMostRecentlyUsedList = js.native
+    var mostRecentlyUsedList: StorageItemMostRecentlyUsedList
   }
   object IStorageApplicationPermissionsStatics {
     
@@ -139,13 +147,16 @@ object AccessCache {
   }
   
   @js.native
-  trait IStorageItemMostRecentlyUsedList extends IStorageItemAccessList {
+  trait IStorageItemMostRecentlyUsedList
+    extends StObject
+       with IStorageItemAccessList {
     
     var onitemremoved: js.Any = js.native
   }
   
-  @js.native
-  trait ItemRemovedEventArgs extends IItemRemovedEventArgs
+  trait ItemRemovedEventArgs
+    extends StObject
+       with IItemRemovedEventArgs
   object ItemRemovedEventArgs {
     
     @scala.inline
@@ -155,12 +166,15 @@ object AccessCache {
     }
   }
   
-  @js.native
   trait StorageApplicationPermissions extends StObject
   
   @js.native
-  trait StorageItemAccessList extends IStorageItemAccessList
+  trait StorageItemAccessList
+    extends StObject
+       with IStorageItemAccessList
   
   @js.native
-  trait StorageItemMostRecentlyUsedList extends IStorageItemMostRecentlyUsedList
+  trait StorageItemMostRecentlyUsedList
+    extends StObject
+       with IStorageItemMostRecentlyUsedList
 }

@@ -5,24 +5,23 @@ import typings.prettier.prettierBooleans.`true`
 import typings.prettier.prettierStrings.path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathArraySupportOption
-  extends BaseSupportOption[path]
+  extends StObject
+     with BaseSupportOption[path]
      with _SupportOption {
   
-  var default: js.Array[`0`] = js.native
+  var default: js.Array[`0`]
   
-  var array: `true` = js.native
+  var array: `true`
 }
 object PathArraySupportOption {
   
   @scala.inline
-  def apply(array: `true`, category: String, default: js.Array[`0`], since: String, `type`: path): PathArraySupportOption = {
-    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(category: String, default: js.Array[`0`], since: String): PathArraySupportOption = {
+    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[PathArraySupportOption]
   }
   

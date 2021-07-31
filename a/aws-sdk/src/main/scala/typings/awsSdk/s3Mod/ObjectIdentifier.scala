@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectIdentifier extends StObject {
   
   /**
     * Key name of the object to delete.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
   /**
     * VersionId for the specific version of the object to delete.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
 }
 object ObjectIdentifier {
   

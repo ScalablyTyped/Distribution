@@ -2,17 +2,15 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionRequestHandler extends StObject {
   
   /** Allow the permission request. */
-  def allow(): Unit = js.native
+  def allow(): Unit
   
   /** Deny the permission request. This is the default behavior if allow is not called. */
-  def deny(): Unit = js.native
+  def deny(): Unit
 }
 object PermissionRequestHandler {
   

@@ -5,32 +5,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewHitTestResult extends Object {
+trait SceneViewHitTestResult
+  extends StObject
+     with Object {
   
   /**
     * Ground intersection result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var ground: HitTestResultGround = js.native
+  var ground: HitTestResultGround
   
   /**
     * An array of result objects returned from the [hitTest()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var results: js.Array[SceneViewHitTestResultResults] = js.native
+  var results: js.Array[SceneViewHitTestResultResults]
   
   /**
     * The screen coordinates (or native mouse event) of the click on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var screenPoint: SceneViewScreenPoint | MouseEvent = js.native
+  var screenPoint: SceneViewScreenPoint | MouseEvent
 }
 object SceneViewHitTestResult {
   

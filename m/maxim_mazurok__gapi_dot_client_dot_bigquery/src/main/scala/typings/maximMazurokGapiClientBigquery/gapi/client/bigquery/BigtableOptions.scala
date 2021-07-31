@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigtableOptions extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait BigtableOptions extends StObject {
     * their value types. You can use this list to do type conversions - see the 'type' field for more details. If you leave this list empty, all column families are present in the table
     * schema and their values are read as BYTES. During a query only the column families referenced in that query are read from Bigtable.
     */
-  var columnFamilies: js.UndefOr[js.Array[BigtableColumnFamily]] = js.native
+  var columnFamilies: js.UndefOr[js.Array[BigtableColumnFamily]] = js.undefined
   
   /**
     * [Optional] If field is true, then the column families that are not specified in columnFamilies list are not exposed in the table schema. Otherwise, they are read with BYTES type
     * values. The default value is false.
     */
-  var ignoreUnspecifiedColumnFamilies: js.UndefOr[Boolean] = js.native
+  var ignoreUnspecifiedColumnFamilies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] If field is true, then the rowkey column families will be read and converted to string. Otherwise they are read with BYTES type values and users need to manually cast
     * them with CAST if necessary. The default value is false.
     */
-  var readRowkeyAsString: js.UndefOr[Boolean] = js.native
+  var readRowkeyAsString: js.UndefOr[Boolean] = js.undefined
 }
 object BigtableOptions {
   

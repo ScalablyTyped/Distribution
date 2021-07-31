@@ -20,7 +20,6 @@ import typings.stylableCore.typesMod.IStylableOptimizer
 import typings.stylableCore.typesMod.ModuleResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableMod {
@@ -31,7 +30,7 @@ object stylableMod {
     def this(
       projectRoot: String,
       fileSystem: MinimalFS,
-      requireModule: js.Function1[/* path */ String, _],
+      requireModule: js.Function1[/* path */ String, js.Any],
       delimiter: js.UndefOr[String],
       onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]],
       diagnostics: js.UndefOr[Diagnostics],
@@ -70,9 +69,9 @@ object stylableMod {
     var optimizer: js.UndefOr[IStylableOptimizer] = js.native
     
     def process(fullpath: String): StylableMeta = js.native
-    def process(fullpath: String, context: js.UndefOr[scala.Nothing], ignoreCache: Boolean): StylableMeta = js.native
     def process(fullpath: String, context: String): StylableMeta = js.native
     def process(fullpath: String, context: String, ignoreCache: Boolean): StylableMeta = js.native
+    def process(fullpath: String, context: Unit, ignoreCache: Boolean): StylableMeta = js.native
     
     var projectRoot: String = js.native
     
@@ -84,8 +83,8 @@ object stylableMod {
     
     var resolveOptions: js.Any = js.native
     
-    def resolvePath(ctx: js.UndefOr[scala.Nothing], path: String): String = js.native
     def resolvePath(ctx: String, path: String): String = js.native
+    def resolvePath(ctx: Unit, path: String): String = js.native
     
     var resolver: StylableResolver = js.native
     
@@ -97,41 +96,43 @@ object stylableMod {
   /* static members */
   object Stylable {
     
-    @JSImport("@stylable/core/cjs/stylable", "Stylable.create")
+    @JSImport("@stylable/core/cjs/stylable", "Stylable")
     @js.native
-    def create(config: StylableConfig): Stylable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(config: StylableConfig): Stylable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[Stylable]
   }
   
-  @js.native
   trait StylableConfig extends StObject {
     
-    var cssParser: js.UndefOr[CssParser] = js.native
+    var cssParser: js.UndefOr[CssParser] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var diagnostics: js.UndefOr[Diagnostics] = js.native
+    var diagnostics: js.UndefOr[Diagnostics] = js.undefined
     
-    var fileSystem: MinimalFS = js.native
+    var fileSystem: MinimalFS
     
-    var hooks: js.UndefOr[TransformHooks] = js.native
+    var hooks: js.UndefOr[TransformHooks] = js.undefined
     
-    var mode: js.UndefOr[production | development] = js.native
+    var mode: js.UndefOr[production | development] = js.undefined
     
-    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.native
+    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.undefined
     
-    var optimizer: js.UndefOr[IStylableOptimizer] = js.native
+    var optimizer: js.UndefOr[IStylableOptimizer] = js.undefined
     
-    var projectRoot: String = js.native
+    var projectRoot: String
     
-    var requireModule: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+    var requireModule: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
     
-    var resolveModule: js.UndefOr[ModuleResolver] = js.native
+    var resolveModule: js.UndefOr[ModuleResolver] = js.undefined
     
-    var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.native
+    var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.undefined
     
-    var resolveOptions: js.UndefOr[Dictkey] = js.native
+    var resolveOptions: js.UndefOr[Dictkey] = js.undefined
     
-    var timedCacheOptions: js.UndefOr[OmitTimedCacheOptionscrea] = js.native
+    var timedCacheOptions: js.UndefOr[OmitTimedCacheOptionscrea] = js.undefined
   }
   object StylableConfig {
     
@@ -193,7 +194,7 @@ object stylableMod {
       def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRequireModule(value: /* path */ String => _): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+      def setRequireModule(value: /* path */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)

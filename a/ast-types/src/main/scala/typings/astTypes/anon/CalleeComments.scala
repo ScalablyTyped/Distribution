@@ -5,25 +5,24 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalleeComments extends StObject {
   
-  var callee: ExpressionKind = js.native
+  var callee: ExpressionKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `object`: ExpressionKind | Null = js.native
+  var `object`: ExpressionKind | Null
 }
 object CalleeComments {
   
   @scala.inline
   def apply(callee: ExpressionKind): CalleeComments = {
     val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(null)
     __obj.asInstanceOf[CalleeComments]
   }
   

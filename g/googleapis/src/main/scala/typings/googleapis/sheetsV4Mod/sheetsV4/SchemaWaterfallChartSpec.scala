@@ -2,44 +2,42 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A waterfall chart.
   */
-@js.native
 trait SchemaWaterfallChartSpec extends StObject {
   
   /**
     * The line style for the connector lines.
     */
-  var connectorLineStyle: js.UndefOr[SchemaLineStyle] = js.native
+  var connectorLineStyle: js.UndefOr[SchemaLineStyle] = js.undefined
   
   /**
     * The domain data (horizontal axis) for the waterfall chart.
     */
-  var domain: js.UndefOr[SchemaWaterfallChartDomain] = js.native
+  var domain: js.UndefOr[SchemaWaterfallChartDomain] = js.undefined
   
   /**
     * True to interpret the first value as a total.
     */
-  var firstValueIsTotal: js.UndefOr[Boolean] = js.native
+  var firstValueIsTotal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True to hide connector lines between columns.
     */
-  var hideConnectorLines: js.UndefOr[Boolean] = js.native
+  var hideConnectorLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The data this waterfall chart is visualizing.
     */
-  var series: js.UndefOr[js.Array[SchemaWaterfallChartSeries]] = js.native
+  var series: js.UndefOr[js.Array[SchemaWaterfallChartSeries]] = js.undefined
   
   /**
     * The stacked type.
     */
-  var stackedType: js.UndefOr[String] = js.native
+  var stackedType: js.UndefOr[String] = js.undefined
 }
 object SchemaWaterfallChartSpec {
   

@@ -2,31 +2,32 @@ package typings.parsePasswd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(passwdText: String): js.Array[PasswdEntry] = ^.asInstanceOf[js.Dynamic].apply(passwdText.asInstanceOf[js.Any]).asInstanceOf[js.Array[PasswdEntry]]
+  
   @JSImport("parse-passwd", JSImport.Namespace)
   @js.native
-  def apply(passwdText: String): js.Array[PasswdEntry] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait PasswdEntry extends StObject {
     
-    var gecos: String = js.native
+    var gecos: String
     
-    var gid: String = js.native
+    var gid: String
     
-    var homedir: String = js.native
+    var homedir: String
     
-    var password: String = js.native
+    var password: String
     
-    var shell: String = js.native
+    var shell: String
     
-    var uid: String = js.native
+    var uid: String
     
-    var username: String = js.native
+    var username: String
   }
   object PasswdEntry {
     

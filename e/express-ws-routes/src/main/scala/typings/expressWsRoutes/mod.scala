@@ -5,33 +5,33 @@ import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.IRouter
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
-import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Express = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Express]
+  
   @JSImport("express-ws-routes", JSImport.Namespace)
   @js.native
-  def apply(): Express = js.native
+  val ^ : js.Any = js.native
   
   type CbHandler = js.Function1[/* connectHandler */ WebSocketHandler | Boolean, Unit]
   
-  @js.native
   trait ClientInfo extends StObject {
     
-    var origin: String = js.native
+    var origin: String
     
-    var req: Request_[ParamsDictionary, _, _, Query] = js.native
+    var req: Request_[ParamsDictionary, js.Any, js.Any, Query]
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object ClientInfo {
     
     @scala.inline
-    def apply(origin: String, req: Request_[ParamsDictionary, _, _, Query], secure: Boolean): ClientInfo = {
+    def apply(origin: String, req: Request_[ParamsDictionary, js.Any, js.Any, Query], secure: Boolean): ClientInfo = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientInfo]
     }
@@ -43,7 +43,7 @@ object mod {
       def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReq(value: Request_[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object mod {
     var wsServer: typings.ws.mod.Server = js.native
   }
   
-  type WebSocketHandler = js.Function1[/* socket */ ^, Unit]
+  type WebSocketHandler = js.Function1[/* socket */ typings.ws.mod.^, Unit]
   
   type WebSocketRouteHandler = js.Function3[/* info */ ClientInfo, /* cb */ CbHandler, /* next */ NextFunction, Unit]
 }

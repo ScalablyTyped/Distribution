@@ -4,7 +4,6 @@ import typings.seamlessImmutable.mod.ImmutableArray.AdditionalMutatingArrayMetho
 import typings.seamlessImmutable.mod.ImmutableDate.MutatingDateMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object seamlessImmutableStrings {
@@ -35,12 +34,16 @@ object seamlessImmutableStrings {
   def concat: concat = "concat".asInstanceOf[concat]
   
   @js.native
-  sealed trait copyWithin extends AdditionalMutatingArrayMethods
+  sealed trait copyWithin
+    extends StObject
+       with AdditionalMutatingArrayMethods
   @scala.inline
   def copyWithin: copyWithin = "copyWithin".asInstanceOf[copyWithin]
   
   @js.native
-  sealed trait fill extends AdditionalMutatingArrayMethods
+  sealed trait fill
+    extends StObject
+       with AdditionalMutatingArrayMethods
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   
@@ -95,77 +98,107 @@ object seamlessImmutableStrings {
   def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
-  sealed trait setDate extends MutatingDateMethods
+  sealed trait setDate
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setDate: setDate = "setDate".asInstanceOf[setDate]
   
   @js.native
-  sealed trait setFullYear extends MutatingDateMethods
+  sealed trait setFullYear
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setFullYear: setFullYear = "setFullYear".asInstanceOf[setFullYear]
   
   @js.native
-  sealed trait setHours extends MutatingDateMethods
+  sealed trait setHours
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setHours: setHours = "setHours".asInstanceOf[setHours]
   
   @js.native
-  sealed trait setMilliseconds extends MutatingDateMethods
+  sealed trait setMilliseconds
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setMilliseconds: setMilliseconds = "setMilliseconds".asInstanceOf[setMilliseconds]
   
   @js.native
-  sealed trait setMinutes extends MutatingDateMethods
+  sealed trait setMinutes
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setMinutes: setMinutes = "setMinutes".asInstanceOf[setMinutes]
   
   @js.native
-  sealed trait setMonth extends MutatingDateMethods
+  sealed trait setMonth
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setMonth: setMonth = "setMonth".asInstanceOf[setMonth]
   
   @js.native
-  sealed trait setSeconds extends MutatingDateMethods
+  sealed trait setSeconds
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setSeconds: setSeconds = "setSeconds".asInstanceOf[setSeconds]
   
   @js.native
-  sealed trait setTime extends MutatingDateMethods
+  sealed trait setTime
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setTime: setTime = "setTime".asInstanceOf[setTime]
   
   @js.native
-  sealed trait setUTCDate extends MutatingDateMethods
+  sealed trait setUTCDate
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCDate: setUTCDate = "setUTCDate".asInstanceOf[setUTCDate]
   
   @js.native
-  sealed trait setUTCFullYear extends MutatingDateMethods
+  sealed trait setUTCFullYear
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCFullYear: setUTCFullYear = "setUTCFullYear".asInstanceOf[setUTCFullYear]
   
   @js.native
-  sealed trait setUTCHours extends MutatingDateMethods
+  sealed trait setUTCHours
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCHours: setUTCHours = "setUTCHours".asInstanceOf[setUTCHours]
   
   @js.native
-  sealed trait setUTCMilliseconds extends MutatingDateMethods
+  sealed trait setUTCMilliseconds
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCMilliseconds: setUTCMilliseconds = "setUTCMilliseconds".asInstanceOf[setUTCMilliseconds]
   
   @js.native
-  sealed trait setUTCMinutes extends MutatingDateMethods
+  sealed trait setUTCMinutes
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCMinutes: setUTCMinutes = "setUTCMinutes".asInstanceOf[setUTCMinutes]
   
   @js.native
-  sealed trait setUTCMonth extends MutatingDateMethods
+  sealed trait setUTCMonth
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCMonth: setUTCMonth = "setUTCMonth".asInstanceOf[setUTCMonth]
   
   @js.native
-  sealed trait setUTCSeconds extends MutatingDateMethods
+  sealed trait setUTCSeconds
+    extends StObject
+       with MutatingDateMethods
   @scala.inline
   def setUTCSeconds: setUTCSeconds = "setUTCSeconds".asInstanceOf[setUTCSeconds]
   

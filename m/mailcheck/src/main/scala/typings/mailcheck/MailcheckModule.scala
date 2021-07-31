@@ -2,27 +2,25 @@ package typings.mailcheck
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MailcheckModule {
   
-  @js.native
   trait IAsynchronousOptions extends StObject {
     
-    var distanceFunction: js.UndefOr[IDistanceFunction] = js.native
+    var distanceFunction: js.UndefOr[IDistanceFunction] = js.undefined
     
-    var domains: js.UndefOr[js.Array[String]] = js.native
+    var domains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var email: String = js.native
+    var email: String
     
-    var empty: js.UndefOr[IEmpty | IJQueryEmpty] = js.native
+    var empty: js.UndefOr[IEmpty | IJQueryEmpty] = js.undefined
     
-    var secondLevelDomains: js.UndefOr[js.Array[String]] = js.native
+    var secondLevelDomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var suggested: ISuggested | IJQuerySuggested = js.native
+    var suggested: ISuggested | IJQuerySuggested
     
-    var topLevelDomains: js.UndefOr[js.Array[String]] = js.native
+    var topLevelDomains: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IAsynchronousOptions {
     
@@ -102,14 +100,13 @@ object MailcheckModule {
   
   type IJQuerySuggested = js.Function2[/* element */ JQuery, /* suggested */ ISuggestion, Unit]
   
-  @js.native
   trait ISplitEmail extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var topLevelDomain: js.UndefOr[String] = js.native
+    var topLevelDomain: js.UndefOr[String] = js.undefined
   }
   object ISplitEmail {
     
@@ -152,14 +149,13 @@ object MailcheckModule {
   
   type ISuggested = js.Function1[/* suggested */ ISuggestion, Unit]
   
-  @js.native
   trait ISuggestion extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var domain: String = js.native
+    var domain: String
     
-    var full: String = js.native
+    var full: String
   }
   object ISuggestion {
     
@@ -183,18 +179,17 @@ object MailcheckModule {
     }
   }
   
-  @js.native
   trait ISynchronousOptions extends StObject {
     
-    var distanceFunction: js.UndefOr[IDistanceFunction] = js.native
+    var distanceFunction: js.UndefOr[IDistanceFunction] = js.undefined
     
-    var domains: js.UndefOr[js.Array[String]] = js.native
+    var domains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var email: String = js.native
+    var email: String
     
-    var secondLevelDomains: js.UndefOr[js.Array[String]] = js.native
+    var secondLevelDomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var topLevelDomains: js.UndefOr[js.Array[String]] = js.native
+    var topLevelDomains: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ISynchronousOptions {
     
@@ -259,12 +254,7 @@ object MailcheckModule {
     def encodeEmail(email: String): String = js.native
     
     def findClosestDomain(domain: String, domains: js.Array[String]): Boolean | String = js.native
-    def findClosestDomain(
-      domain: String,
-      domains: js.Array[String],
-      distanceFunction: js.UndefOr[scala.Nothing],
-      threshold: Double
-    ): Boolean | String = js.native
+    def findClosestDomain(domain: String, domains: js.Array[String], distanceFunction: Unit, threshold: Double): Boolean | String = js.native
     def findClosestDomain(domain: String, domains: js.Array[String], distanceFunction: IDistanceFunction): Boolean | String = js.native
     def findClosestDomain(domain: String, domains: js.Array[String], distanceFunction: IDistanceFunction, threshold: Double): Boolean | String = js.native
     
@@ -276,26 +266,7 @@ object MailcheckModule {
     def splitEmail(email: String): ISplitEmail = js.native
     
     def suggest(email: String): Unit = js.native
-    def suggest(
-      email: String,
-      domains: js.UndefOr[scala.Nothing],
-      topLevelDomains: js.UndefOr[scala.Nothing],
-      distanceFunction: IDistanceFunction
-    ): Unit = js.native
-    def suggest(email: String, domains: js.UndefOr[scala.Nothing], topLevelDomains: js.Array[String]): Unit = js.native
-    def suggest(
-      email: String,
-      domains: js.UndefOr[scala.Nothing],
-      topLevelDomains: js.Array[String],
-      distanceFunction: IDistanceFunction
-    ): Unit = js.native
     def suggest(email: String, domains: js.Array[String]): Unit = js.native
-    def suggest(
-      email: String,
-      domains: js.Array[String],
-      topLevelDomains: js.UndefOr[scala.Nothing],
-      distanceFunction: IDistanceFunction
-    ): Unit = js.native
     def suggest(email: String, domains: js.Array[String], topLevelDomains: js.Array[String]): Unit = js.native
     def suggest(
       email: String,
@@ -303,6 +274,20 @@ object MailcheckModule {
       topLevelDomains: js.Array[String],
       distanceFunction: IDistanceFunction
     ): Unit = js.native
+    def suggest(
+      email: String,
+      domains: js.Array[String],
+      topLevelDomains: Unit,
+      distanceFunction: IDistanceFunction
+    ): Unit = js.native
+    def suggest(email: String, domains: Unit, topLevelDomains: js.Array[String]): Unit = js.native
+    def suggest(
+      email: String,
+      domains: Unit,
+      topLevelDomains: js.Array[String],
+      distanceFunction: IDistanceFunction
+    ): Unit = js.native
+    def suggest(email: String, domains: Unit, topLevelDomains: Unit, distanceFunction: IDistanceFunction): Unit = js.native
     @JSName("suggest")
     var suggest_Original: ISuggestFunction = js.native
     

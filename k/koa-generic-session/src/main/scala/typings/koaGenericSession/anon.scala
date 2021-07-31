@@ -5,29 +5,27 @@ import typings.koaGenericSession.koaGenericSessionStrings.none
 import typings.koaGenericSession.koaGenericSessionStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HttpOnly extends StObject {
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double | Null] = js.native
+    var maxAge: js.UndefOr[Double | Null] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var rewrite: js.UndefOr[Boolean] = js.native
+    var rewrite: js.UndefOr[Boolean] = js.undefined
     
-    var sameSite: js.UndefOr[Boolean | lax | none | strict] = js.native
+    var sameSite: js.UndefOr[Boolean | lax | none | strict] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object HttpOnly {
     

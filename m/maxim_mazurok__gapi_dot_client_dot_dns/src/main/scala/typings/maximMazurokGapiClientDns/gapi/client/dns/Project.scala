@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Project extends StObject {
   
   /** User assigned unique identifier for the resource (output only). */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Unique numeric identifier for the resource; defined by the server (output only). */
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
   /** Quotas assigned to this project (output only). */
-  var quota: js.UndefOr[Quota] = js.native
+  var quota: js.UndefOr[Quota] = js.undefined
 }
 object Project {
   

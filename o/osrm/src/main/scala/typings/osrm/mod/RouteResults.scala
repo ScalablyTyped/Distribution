@@ -2,15 +2,13 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteResults extends StObject {
   
-  var routes: js.Array[Route] = js.native
+  var routes: js.Array[Route]
   
-  var waypoints: js.Array[Waypoint] = js.native
+  var waypoints: js.Array[Waypoint]
 }
 object RouteResults {
   

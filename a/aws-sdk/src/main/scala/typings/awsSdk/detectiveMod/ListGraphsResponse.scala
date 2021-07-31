@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGraphsResponse extends StObject {
   
   /**
     * A list of behavior graphs that the account is a master for.
     */
-  var GraphList: js.UndefOr[typings.awsSdk.detectiveMod.GraphList] = js.native
+  var GraphList: js.UndefOr[typings.awsSdk.detectiveMod.GraphList] = js.undefined
   
   /**
     * If there are more behavior graphs remaining in the results, then this is the pagination token to use to request the next page of behavior graphs.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListGraphsResponse {
   

@@ -2,33 +2,31 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogEntry extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var blockHash: String | Null = js.native
+  var blockHash: String | Null
   
-  var blockNumber: Double | Null = js.native
+  var blockNumber: Double | Null
   
-  var data: String = js.native
+  var data: String
   
-  var logIndex: Double | Null = js.native
+  var logIndex: Double | Null
   
-  var topics: js.Array[String] = js.native
+  var topics: js.Array[String]
   
-  var transactionHash: String = js.native
+  var transactionHash: String
   
-  var transactionIndex: Double | Null = js.native
+  var transactionIndex: Double | Null
 }
 object LogEntry {
   
   @scala.inline
   def apply(address: String, data: String, topics: js.Array[String], transactionHash: String): LogEntry = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], blockHash = null, blockNumber = null, logIndex = null, transactionIndex = null)
     __obj.asInstanceOf[LogEntry]
   }
   

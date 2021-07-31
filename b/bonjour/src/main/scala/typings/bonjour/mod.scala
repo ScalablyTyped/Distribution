@@ -12,36 +12,36 @@ import typings.node.dgramMod.RemoteInfo
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bonjour", JSImport.Namespace)
-  @js.native
-  def apply(): Bonjour = js.native
-  @JSImport("bonjour", JSImport.Namespace)
-  @js.native
-  def apply(opts: BonjourOptions): Bonjour = js.native
+  @scala.inline
+  def apply(): Bonjour = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Bonjour]
+  @scala.inline
+  def apply(opts: BonjourOptions): Bonjour = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Bonjour]
   
+  @JSImport("bonjour", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait BaseService extends StObject {
     
-    var fqdn: String = js.native
+    var fqdn: String
     
-    var host: String = js.native
+    var host: String
     
-    var name: String = js.native
+    var name: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var subtypes: js.Array[String] = js.native
+    var subtypes: js.Array[String]
     
-    var txt: StringDictionary[String] = js.native
+    var txt: StringDictionary[String]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BaseService {
     
@@ -113,24 +113,23 @@ object mod {
     def unpublishAll(cb: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait BonjourOptions extends StObject {
     
-    var interface: js.UndefOr[String] = js.native
+    var interface: js.UndefOr[String] = js.undefined
     
-    var ip: js.UndefOr[String] = js.native
+    var ip: js.UndefOr[String] = js.undefined
     
-    var loopback: js.UndefOr[Boolean] = js.native
+    var loopback: js.UndefOr[Boolean] = js.undefined
     
-    var multicast: js.UndefOr[Boolean] = js.native
+    var multicast: js.UndefOr[Boolean] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var reuseAddr: js.UndefOr[Boolean] = js.native
+    var reuseAddr: js.UndefOr[Boolean] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[udp4 | udp6] = js.native
+    var `type`: js.UndefOr[udp4 | udp6] = js.undefined
   }
   object BonjourOptions {
     
@@ -208,7 +207,9 @@ object mod {
     * with that service.
     */
   @js.native
-  trait Browser extends EventEmitter {
+  trait Browser
+    extends StObject
+       with EventEmitter {
     
     @JSName("on")
     def on_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
@@ -239,16 +240,15 @@ object mod {
     def update(): Unit = js.native
   }
   
-  @js.native
   trait BrowserOptions extends StObject {
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var subtypes: js.UndefOr[js.Array[String]] = js.native
+    var subtypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var txt: js.UndefOr[StringDictionary[String]] = js.native
+    var txt: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BrowserOptions {
     
@@ -290,14 +290,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RemoteService extends BaseService {
+  trait RemoteService
+    extends StObject
+       with BaseService {
     
-    var addresses: js.Array[String] = js.native
+    var addresses: js.Array[String]
     
-    var rawTxt: Buffer = js.native
+    var rawTxt: Buffer
     
-    var referer: RemoteInfo = js.native
+    var referer: RemoteInfo
   }
   object RemoteService {
     
@@ -339,7 +340,8 @@ object mod {
   
   @js.native
   trait Service
-    extends BaseService
+    extends StObject
+       with BaseService
        with EventEmitter {
     
     var addresses: js.Array[String] = js.native
@@ -352,24 +354,23 @@ object mod {
     def stop(cb: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait ServiceOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var probe: js.UndefOr[Boolean] = js.native
+    var probe: js.UndefOr[Boolean] = js.undefined
     
-    var protocol: js.UndefOr[udp | tcp] = js.native
+    var protocol: js.UndefOr[udp | tcp] = js.undefined
     
-    var subtypes: js.UndefOr[js.Array[String]] = js.native
+    var subtypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var txt: js.UndefOr[StringDictionary[String]] = js.native
+    var txt: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ServiceOptions {
     

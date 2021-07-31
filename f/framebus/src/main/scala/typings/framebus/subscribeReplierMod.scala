@@ -3,12 +3,14 @@ package typings.framebus
 import typings.framebus.typesMod.FramebusSubscribeHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscribeReplierMod {
   
-  @JSImport("framebus/dist/lib/subscribe-replier", "subscribeReplier")
+  @JSImport("framebus/dist/lib/subscribe-replier", JSImport.Namespace)
   @js.native
-  def subscribeReplier(fn: FramebusSubscribeHandler, origin: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def subscribeReplier(fn: FramebusSubscribeHandler, origin: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeReplier")(fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
 }

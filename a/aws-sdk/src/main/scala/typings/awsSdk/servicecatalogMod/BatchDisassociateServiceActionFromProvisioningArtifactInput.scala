@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisassociateServiceActionFromProvisioningArtifactInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * One or more associations, each consisting of the Action ID, the Product ID, and the Provisioning Artifact ID.
     */
-  var ServiceActionAssociations: typings.awsSdk.servicecatalogMod.ServiceActionAssociations = js.native
+  var ServiceActionAssociations: typings.awsSdk.servicecatalogMod.ServiceActionAssociations
 }
 object BatchDisassociateServiceActionFromProvisioningArtifactInput {
   

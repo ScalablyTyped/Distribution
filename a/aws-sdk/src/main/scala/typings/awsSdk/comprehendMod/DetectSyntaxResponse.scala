@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectSyntaxResponse extends StObject {
   
   /**
     * A collection of syntax tokens describing the text. For each token, the response provides the text, the token type, where the text begins and ends, and the level of confidence that Amazon Comprehend has that the token is correct. For a list of token types, see how-syntax.
     */
-  var SyntaxTokens: js.UndefOr[ListOfSyntaxTokens] = js.native
+  var SyntaxTokens: js.UndefOr[ListOfSyntaxTokens] = js.undefined
 }
 object DetectSyntaxResponse {
   

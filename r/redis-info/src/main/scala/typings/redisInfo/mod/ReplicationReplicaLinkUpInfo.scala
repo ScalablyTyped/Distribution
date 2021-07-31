@@ -3,13 +3,11 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.LinkStatus.UP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationReplicaLinkUpInfo extends StObject {
   
-  var master_link_status: UP = js.native
+  var master_link_status: UP
 }
 object ReplicationReplicaLinkUpInfo {
   

@@ -3,25 +3,23 @@ package typings.chrome.chrome.cast.media
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueItem extends StObject {
   
-  var activeTrackIds: js.Array[Number] = js.native
+  var activeTrackIds: js.Array[Number]
   
-  var autoplay: Boolean = js.native
+  var autoplay: Boolean
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var itemId: Double = js.native
+  var itemId: Double
   
-  var media: MediaInfo = js.native
+  var media: MediaInfo
   
-  var preloadTime: Double = js.native
+  var preloadTime: Double
   
-  var startTime: Double = js.native
+  var startTime: Double
 }
 object QueueItem {
   

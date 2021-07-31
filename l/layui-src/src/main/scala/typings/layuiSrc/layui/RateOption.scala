@@ -3,29 +3,27 @@ package typings.layuiSrc.layui
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateOption extends StObject {
   
-  var choose: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var choose: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var half: js.UndefOr[Boolean] = js.native
+  var half: js.UndefOr[Boolean] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var setText: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var setText: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object RateOption {
   

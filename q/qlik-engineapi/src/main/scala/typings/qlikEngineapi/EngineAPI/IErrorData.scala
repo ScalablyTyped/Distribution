@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ErrorData...
   */
-@js.native
 trait IErrorData extends StObject {
   
   /**
     * Type of the error messages.
     */
-  var qErrorDataCode: ErrorDataCodeType = js.native
+  var qErrorDataCode: ErrorDataCodeType
   
   /**
     * Detailed information about the error message.
     */
-  var qErrorString: String = js.native
+  var qErrorString: String
   
   /**
     * Script statement where the error occurs.
     */
-  var qLine: String = js.native
+  var qLine: String
   
   /**
     * Line termination characters.
     */
-  var qLineEnd: String = js.native
+  var qLineEnd: String
 }
 object IErrorData {
   

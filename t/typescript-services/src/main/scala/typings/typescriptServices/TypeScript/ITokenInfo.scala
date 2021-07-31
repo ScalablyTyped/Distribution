@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITokenInfo extends StObject {
   
-  var leadingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.native
+  var leadingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var trailingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.native
+  var trailingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.undefined
 }
 object ITokenInfo {
   

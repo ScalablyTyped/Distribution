@@ -4,7 +4,6 @@ import typings.videoJs.mod.videojs.TextTrack.Mode
 import typings.videoJs.mod.videojs.TextTrackCueList.TextTrackCue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *        If this track should default to on or off.
   */
 @js.native
-trait TextTrack extends Track {
+trait TextTrack
+  extends StObject
+     with Track {
   
   /**
     * If this track was set to be on or off by default. Cannot be changed after creation.

@@ -6,10 +6,13 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("asmcrypto.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("asmcrypto.js", "AES_CBC")
   @js.native
@@ -17,106 +20,68 @@ object mod {
     extends typings.asmcryptoJs.cbcMod.AES_CBC {
     def this(key: Uint8Array) = this()
     def this(key: Uint8Array, iv: Uint8Array) = this()
-    def this(key: Uint8Array, iv: js.UndefOr[scala.Nothing], padding: Boolean) = this()
+    def this(key: Uint8Array, iv: Unit, padding: Boolean) = this()
     def this(key: Uint8Array, iv: Uint8Array, padding: Boolean) = this()
   }
   /* static members */
   object AES_CBC {
     
-    @JSImport("asmcrypto.js", "AES_CBC.decrypt")
+    @JSImport("asmcrypto.js", "AES_CBC")
     @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CBC.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, padding: js.UndefOr[scala.Nothing], iv: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CBC.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CBC.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, padding: Boolean, iv: Uint8Array): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_CBC.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CBC.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, padding: js.UndefOr[scala.Nothing], iv: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CBC.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CBC.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, padding: Boolean, iv: Uint8Array): Uint8Array = js.native
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, padding: Boolean, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, padding: Unit, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, padding: Boolean, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, padding: Unit, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_CCM")
   @js.native
   class AES_CCM protected ()
     extends typings.asmcryptoJs.ccmMod.AES_CCM {
-    def this(
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: js.UndefOr[scala.Nothing],
-      tagSize: js.UndefOr[scala.Nothing],
-      dataLength: Double
-    ) = this()
-    def this(
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: js.UndefOr[scala.Nothing],
-      tagSize: Double,
-      dataLength: Double
-    ) = this()
-    def this(
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: Uint8Array,
-      tagSize: js.UndefOr[scala.Nothing],
-      dataLength: Double
-    ) = this()
+    def this(key: Uint8Array, nonce: Uint8Array, adata: Unit, tagSize: Double, dataLength: Double) = this()
+    def this(key: Uint8Array, nonce: Uint8Array, adata: Unit, tagSize: Unit, dataLength: Double) = this()
     def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Double, dataLength: Double) = this()
+    def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Unit, dataLength: Double) = this()
   }
   /* static members */
   object AES_CCM {
     
-    @JSImport("asmcrypto.js", "AES_CCM.decrypt")
+    @JSImport("asmcrypto.js", "AES_CCM")
     @js.native
-    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CCM.decrypt")
-    @js.native
-    def decrypt(
-      cipher: Uint8Array,
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: js.UndefOr[scala.Nothing],
-      tagsize: Double
-    ): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CCM.decrypt")
-    @js.native
-    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CCM.decrypt")
-    @js.native
-    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_CCM.encrypt")
-    @js.native
-    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CCM.encrypt")
-    @js.native
-    def encrypt(
-      clear: Uint8Array,
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: js.UndefOr[scala.Nothing],
-      tagsize: Double
-    ): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CCM.encrypt")
-    @js.native
-    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CCM.encrypt")
-    @js.native
-    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
+    @scala.inline
+    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Unit, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(cipher: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(clear.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Unit, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(clear.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(clear.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(clear: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(clear.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_CFB")
@@ -129,19 +94,19 @@ object mod {
   /* static members */
   object AES_CFB {
     
-    @JSImport("asmcrypto.js", "AES_CFB.decrypt")
+    @JSImport("asmcrypto.js", "AES_CFB")
     @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CFB.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_CFB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_CFB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = js.native
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_CMAC")
@@ -153,9 +118,12 @@ object mod {
   /* static members */
   object AES_CMAC {
     
-    @JSImport("asmcrypto.js", "AES_CMAC.bytes")
+    @JSImport("asmcrypto.js", "AES_CMAC")
     @js.native
-    def bytes(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def bytes(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("bytes")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_CTR")
@@ -167,13 +135,15 @@ object mod {
   /* static members */
   object AES_CTR {
     
-    @JSImport("asmcrypto.js", "AES_CTR.decrypt")
+    @JSImport("asmcrypto.js", "AES_CTR")
     @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_CTR.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_ECB")
@@ -186,19 +156,19 @@ object mod {
   /* static members */
   object AES_ECB {
     
-    @JSImport("asmcrypto.js", "AES_ECB.decrypt")
+    @JSImport("asmcrypto.js", "AES_ECB")
     @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_ECB.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_ECB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_ECB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = js.native
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, padding: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_GCM")
@@ -207,49 +177,33 @@ object mod {
     extends typings.asmcryptoJs.gcmMod.AES_GCM {
     def this(key: Uint8Array, nonce: Uint8Array) = this()
     def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array) = this()
-    def this(key: Uint8Array, nonce: Uint8Array, adata: js.UndefOr[scala.Nothing], tagSize: Double) = this()
+    def this(key: Uint8Array, nonce: Uint8Array, adata: Unit, tagSize: Double) = this()
     def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Double) = this()
   }
   /* static members */
   object AES_GCM {
     
-    @JSImport("asmcrypto.js", "AES_GCM.decrypt")
+    @JSImport("asmcrypto.js", "AES_GCM")
     @js.native
-    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_GCM.decrypt")
-    @js.native
-    def decrypt(
-      ciphertext: Uint8Array,
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: js.UndefOr[scala.Nothing],
-      tagsize: Double
-    ): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_GCM.decrypt")
-    @js.native
-    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_GCM.decrypt")
-    @js.native
-    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_GCM.encrypt")
-    @js.native
-    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_GCM.encrypt")
-    @js.native
-    def encrypt(
-      cleartext: Uint8Array,
-      key: Uint8Array,
-      nonce: Uint8Array,
-      adata: js.UndefOr[scala.Nothing],
-      tagsize: Double
-    ): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_GCM.encrypt")
-    @js.native
-    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_GCM.encrypt")
-    @js.native
-    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
+    @scala.inline
+    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Unit, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cleartext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Unit, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cleartext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cleartext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(cleartext.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any], tagsize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "AES_OFB")
@@ -262,19 +216,19 @@ object mod {
   /* static members */
   object AES_OFB {
     
-    @JSImport("asmcrypto.js", "AES_OFB.decrypt")
+    @JSImport("asmcrypto.js", "AES_OFB")
     @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_OFB.decrypt")
-    @js.native
-    def decrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("asmcrypto.js", "AES_OFB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = js.native
-    @JSImport("asmcrypto.js", "AES_OFB.encrypt")
-    @js.native
-    def encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = js.native
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def decrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def encrypt(data: Uint8Array, key: Uint8Array, iv: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   @JSImport("asmcrypto.js", "BigNumber")
@@ -305,27 +259,22 @@ object mod {
     @JSImport("asmcrypto.js", "BigNumber.extGCD")
     @js.native
     def extGCD: js.Function2[/* a */ this.type, /* b */ this.type, Gcd] = js.native
-    @JSImport("asmcrypto.js", "BigNumber.extGCD")
-    @js.native
-    def extGCD(a: this.type, b: this.type): Gcd = js.native
+    @scala.inline
+    def extGCD(a: this.type, b: this.type): Gcd = (^.asInstanceOf[js.Dynamic].applyDynamic("extGCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Gcd]
     @scala.inline
     def extGCD_=(x: js.Function2[/* a */ this.type, /* b */ this.type, Gcd]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extGCD")(x.asInstanceOf[js.Any])
     
-    @JSImport("asmcrypto.js", "BigNumber.fromArrayBuffer")
-    @js.native
-    def fromArrayBuffer(buffer: ArrayBuffer): typings.asmcryptoJs.bignumMod.BigNumber = js.native
+    @scala.inline
+    def fromArrayBuffer(buffer: ArrayBuffer): typings.asmcryptoJs.bignumMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.asmcryptoJs.bignumMod.BigNumber]
     
-    @JSImport("asmcrypto.js", "BigNumber.fromConfig")
-    @js.native
-    def fromConfig(obj: BitLength): typings.asmcryptoJs.bignumMod.BigNumber = js.native
+    @scala.inline
+    def fromConfig(obj: BitLength): typings.asmcryptoJs.bignumMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.asmcryptoJs.bignumMod.BigNumber]
     
-    @JSImport("asmcrypto.js", "BigNumber.fromNumber")
-    @js.native
-    def fromNumber(num: Double): typings.asmcryptoJs.bignumMod.BigNumber = js.native
+    @scala.inline
+    def fromNumber(num: Double): typings.asmcryptoJs.bignumMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(num.asInstanceOf[js.Any]).asInstanceOf[typings.asmcryptoJs.bignumMod.BigNumber]
     
-    @JSImport("asmcrypto.js", "BigNumber.fromString")
-    @js.native
-    def fromString(str: String): typings.asmcryptoJs.bignumMod.BigNumber = js.native
+    @scala.inline
+    def fromString(str: String): typings.asmcryptoJs.bignumMod.BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.asmcryptoJs.bignumMod.BigNumber]
   }
   
   @JSImport("asmcrypto.js", "HmacSha1")
@@ -375,22 +324,22 @@ object mod {
   /* static members */
   object Modulus {
     
-    @JSImport("asmcrypto.js", "Modulus._Montgomery_reduce")
+    @JSImport("asmcrypto.js", "Modulus")
     @js.native
-    def _Montgomery_reduce(a: typings.asmcryptoJs.bignumMod.BigNumber, n: typings.asmcryptoJs.bignumMod.Modulus): typings.asmcryptoJs.bignumMod.BigNumber = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def _Montgomery_reduce(a: typings.asmcryptoJs.bignumMod.BigNumber, n: typings.asmcryptoJs.bignumMod.Modulus): typings.asmcryptoJs.bignumMod.BigNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("_Montgomery_reduce")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.asmcryptoJs.bignumMod.BigNumber]
   }
   
-  @JSImport("asmcrypto.js", "Pbkdf2HmacSha1")
-  @js.native
-  def Pbkdf2HmacSha1(password: Uint8Array, salt: Uint8Array, count: Double, length: Double): Uint8Array = js.native
+  @scala.inline
+  def Pbkdf2HmacSha1(password: Uint8Array, salt: Uint8Array, count: Double, length: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Pbkdf2HmacSha1")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], count.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("asmcrypto.js", "Pbkdf2HmacSha256")
-  @js.native
-  def Pbkdf2HmacSha256(password: Uint8Array, salt: Uint8Array, count: Double, length: Double): Uint8Array = js.native
+  @scala.inline
+  def Pbkdf2HmacSha256(password: Uint8Array, salt: Uint8Array, count: Double, length: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Pbkdf2HmacSha256")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], count.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("asmcrypto.js", "Pbkdf2HmacSha512")
-  @js.native
-  def Pbkdf2HmacSha512(password: Uint8Array, salt: Uint8Array, count: Double, length: Double): Uint8Array = js.native
+  @scala.inline
+  def Pbkdf2HmacSha512(password: Uint8Array, salt: Uint8Array, count: Double, length: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Pbkdf2HmacSha512")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], count.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
   @JSImport("asmcrypto.js", "RSA")
   @js.native
@@ -493,33 +442,25 @@ object mod {
     def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("asmcrypto.js", "base64_to_bytes")
-  @js.native
-  def base64ToBytes(str: String): Uint8Array = js.native
+  @scala.inline
+  def base64ToBytes(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("base64_to_bytes")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("asmcrypto.js", "bytes_to_base64")
-  @js.native
-  def bytesToBase64(arr: Uint8Array): String = js.native
+  @scala.inline
+  def bytesToBase64(arr: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes_to_base64")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("asmcrypto.js", "bytes_to_hex")
-  @js.native
-  def bytesToHex(arr: Uint8Array): String = js.native
+  @scala.inline
+  def bytesToHex(arr: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes_to_hex")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("asmcrypto.js", "bytes_to_string")
-  @js.native
-  def bytesToString(bytes: Uint8Array): String = js.native
-  @JSImport("asmcrypto.js", "bytes_to_string")
-  @js.native
-  def bytesToString(bytes: Uint8Array, utf8: Boolean): String = js.native
+  @scala.inline
+  def bytesToString(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytes_to_string")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def bytesToString(bytes: Uint8Array, utf8: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bytes_to_string")(bytes.asInstanceOf[js.Any], utf8.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("asmcrypto.js", "hex_to_bytes")
-  @js.native
-  def hexToBytes(str: String): Uint8Array = js.native
+  @scala.inline
+  def hexToBytes(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hex_to_bytes")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("asmcrypto.js", "string_to_bytes")
-  @js.native
-  def stringToBytes(str: String): Uint8Array = js.native
-  @JSImport("asmcrypto.js", "string_to_bytes")
-  @js.native
-  def stringToBytes(str: String, utf8: Boolean): Uint8Array = js.native
+  @scala.inline
+  def stringToBytes(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("string_to_bytes")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def stringToBytes(str: String, utf8: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("string_to_bytes")(str.asInstanceOf[js.Any], utf8.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

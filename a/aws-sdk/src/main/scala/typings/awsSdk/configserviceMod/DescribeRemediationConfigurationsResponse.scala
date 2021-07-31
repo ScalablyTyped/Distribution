@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRemediationConfigurationsResponse extends StObject {
   
   /**
     * Returns a remediation configuration object.
     */
-  var RemediationConfigurations: js.UndefOr[typings.awsSdk.configserviceMod.RemediationConfigurations] = js.native
+  var RemediationConfigurations: js.UndefOr[typings.awsSdk.configserviceMod.RemediationConfigurations] = js.undefined
 }
 object DescribeRemediationConfigurationsResponse {
   

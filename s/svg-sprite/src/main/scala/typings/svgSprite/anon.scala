@@ -3,33 +3,31 @@ package typings.svgSprite
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
     /**
       * Width and height attributes on embedded shapes
       */
-    var attributes: js.UndefOr[Boolean] = js.native
+    var attributes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Max. shape height
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Max. shape width
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Floating point precision
       */
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
   }
   object Attributes {
     
@@ -68,18 +66,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Box extends StObject {
     
     /**
       * Padding strategy (similar to CSS `box-sizing`)
       */
-    var box: js.UndefOr[String] = js.native
+    var box: js.UndefOr[String] = js.undefined
     
     /**
       * Padding around all shapes
       */
-    var padding: js.UndefOr[Double | js.Array[Double]] = js.native
+    var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object Box {
     
@@ -109,28 +106,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Generator extends StObject {
     
     /**
       * SVG shape ID generator callback
       */
-    var generator: js.UndefOr[String | (js.Function1[/* svg */ String, String])] = js.native
+    var generator: js.UndefOr[String | (js.Function1[/* svg */ String, String])] = js.undefined
     
     /**
       * File name separator for shape states (e.g. ':hover')
       */
-    var pseudo: js.UndefOr[String] = js.native
+    var pseudo: js.UndefOr[String] = js.undefined
     
     /**
       * Separator for directory name traversal
       */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /**
       * Whitespace replacement for shape IDs
       */
-    var whitespace: js.UndefOr[String] = js.native
+    var whitespace: js.UndefOr[String] = js.undefined
   }
   object Generator {
     
@@ -172,10 +168,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Plugins extends StObject {
     
-    var plugins: js.UndefOr[js.Array[StringDictionary[Boolean]]] = js.native
+    var plugins: js.UndefOr[js.Array[StringDictionary[Boolean]]] = js.undefined
   }
   object Plugins {
     

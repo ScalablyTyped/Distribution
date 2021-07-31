@@ -2,22 +2,20 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencyAmount extends StObject {
   
   /**
     * The three-character ISO-4217 currency code. PayPal does not support all currencies.
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * The amount the shipping option will cost. Includes the specified number of digits after
     * decimal separator for the ISO-4217 currency code.
     */
-  var value: String = js.native
+  var value: String
 }
 object CurrencyAmount {
   

@@ -6,10 +6,13 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringifiersMod {
+  
+  @JSImport("node-object-hash/dist/stringifiers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object PREFIX {
     
@@ -47,6 +50,10 @@ object stringifiersMod {
     @scala.inline
     def map_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("map")(x.asInstanceOf[js.Any])
     
+    @JSImport("node-object-hash/dist/stringifiers", "PREFIX.null")
+    @js.native
+    val `null`: String = js.native
+    
     @JSImport("node-object-hash/dist/stringifiers", "PREFIX.number")
     @js.native
     def number: String = js.native
@@ -76,131 +83,97 @@ object stringifiersMod {
     def undefined: String = js.native
     @scala.inline
     def undefined_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefined")(x.asInstanceOf[js.Any])
-    
-    @JSImport("node-object-hash/dist/stringifiers", "PREFIX.null")
-    @js.native
-    val `null`: String = js.native
   }
   
-  @JSImport("node-object-hash/dist/stringifiers", "_array")
-  @js.native
-  def array(obj: js.Array[_]): String = js.native
+  @scala.inline
+  def array(obj: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_array")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_arraySort")
-  @js.native
-  def arraySort(obj: js.Array[_]): String = js.native
+  @scala.inline
+  def arraySort(obj: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_arraySort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_boolean")
-  @js.native
-  def boolean(obj: Boolean): String = js.native
+  @scala.inline
+  def boolean(obj: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_boolean")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_booleanCoerce")
-  @js.native
-  def booleanCoerce(obj: Boolean): String = js.native
+  @scala.inline
+  def booleanCoerce(obj: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_booleanCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_date")
-  @js.native
-  def date(obj: Date): String = js.native
+  @scala.inline
+  def date(obj: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_date")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_dateCoerce")
-  @js.native
-  def dateCoerce(obj: Date): String = js.native
+  @scala.inline
+  def dateCoerce(obj: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_dateCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_function")
-  @js.native
-  def function(obj: js.Function): String = js.native
+  @scala.inline
+  def function(obj: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_function")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_functionCoerce")
-  @js.native
-  def functionCoerce(obj: js.Function): String = js.native
+  @scala.inline
+  def functionCoerce(obj: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_functionCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_functionTrim")
-  @js.native
-  def functionTrim(obj: js.Function): String = js.native
+  @scala.inline
+  def functionTrim(obj: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_functionTrim")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_functionTrimCoerce")
-  @js.native
-  def functionTrimCoerce(obj: js.Function): String = js.native
+  @scala.inline
+  def functionTrimCoerce(obj: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_functionTrimCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_map")
-  @js.native
-  def map(obj: Map[_, _]): String = js.native
+  @scala.inline
+  def map(obj: Map[js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_map")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_mapSort")
-  @js.native
-  def mapSort(obj: Map[_, _]): String = js.native
+  @scala.inline
+  def mapSort(obj: Map[js.Any, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_mapSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_nullCoerce")
-  @js.native
-  def nullCoerce(): String = js.native
+  @scala.inline
+  def `null`(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_null")().asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_number")
-  @js.native
-  def number(obj: Double): String = js.native
+  @scala.inline
+  def nullCoerce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_nullCoerce")().asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_numberCoerce")
-  @js.native
-  def numberCoerce(obj: Double): String = js.native
+  @scala.inline
+  def number(obj: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_number")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_objectSort")
-  @js.native
-  def objectSort(obj: StringDictionary[js.Any]): String = js.native
+  @scala.inline
+  def numberCoerce(obj: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_numberCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_set")
-  @js.native
-  def set(obj: Set[_]): String = js.native
+  @scala.inline
+  def `object`(obj: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_object")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_setCoerce")
-  @js.native
-  def setCoerce(obj: Set[_]): String = js.native
+  @scala.inline
+  def objectSort(obj: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_objectSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_setSort")
-  @js.native
-  def setSort(obj: Set[_]): String = js.native
+  @scala.inline
+  def set(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_set")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_setSortCoerce")
-  @js.native
-  def setSortCoerce(obj: Set[_]): String = js.native
+  @scala.inline
+  def setCoerce(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_string")
-  @js.native
-  def string(obj: String): String = js.native
+  @scala.inline
+  def setSort(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setSort")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_stringCoerce")
-  @js.native
-  def stringCoerce(obj: String): String = js.native
+  @scala.inline
+  def setSortCoerce(obj: Set[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_setSortCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_stringTrim")
-  @js.native
-  def stringTrim(obj: String): String = js.native
+  @scala.inline
+  def string(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_string")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_stringTrimCoerce")
-  @js.native
-  def stringTrimCoerce(obj: String): String = js.native
+  @scala.inline
+  def stringCoerce(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_stringCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_symbol")
-  @js.native
-  def symbol(obj: js.Symbol): String = js.native
+  @scala.inline
+  def stringTrim(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_stringTrim")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_symbolCoerce")
-  @js.native
-  def symbolCoerce(): String = js.native
+  @scala.inline
+  def stringTrimCoerce(obj: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_stringTrimCoerce")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_undefined")
-  @js.native
-  def undefined(): String = js.native
+  @scala.inline
+  def symbol(obj: js.Symbol): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_symbol")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-object-hash/dist/stringifiers", "_undefinedCoerce")
-  @js.native
-  def undefinedCoerce(): String = js.native
+  @scala.inline
+  def symbolCoerce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_symbolCoerce")().asInstanceOf[String]
+  
+  @scala.inline
+  def undefined(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_undefined")().asInstanceOf[String]
+  
+  @scala.inline
+  def undefinedCoerce(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_undefinedCoerce")().asInstanceOf[String]
   
   type Stringifiers = StringDictionary[js.Function1[/* obj */ js.Any, String]]
-  
-  @JSImport("node-object-hash/dist/stringifiers", "_null")
-  @js.native
-  def `null`(): String = js.native
-  
-  @JSImport("node-object-hash/dist/stringifiers", "_object")
-  @js.native
-  def `object`(obj: StringDictionary[js.Any]): String = js.native
 }

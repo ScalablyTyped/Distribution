@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,17 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object alarms {
   
-  @js.native
   trait Alarm extends StObject {
     
     /** Name of this alarm. */
-    var name: String = js.native
+    var name: String
     
     /** Optional. If not null, the alarm is a repeating alarm and will fire again in periodInMinutes minutes.  */
-    var periodInMinutes: js.UndefOr[Double] = js.native
+    var periodInMinutes: js.UndefOr[Double] = js.undefined
     
     /** Time at which this alarm was scheduled to fire, in milliseconds past the epoch (e.g. Date.now() + n). For performance reasons, the alarm may have been delayed an arbitrary amount beyond this. */
-    var scheduledTime: Double = js.native
+    var scheduledTime: Double
   }
   object Alarm {
     
@@ -53,17 +51,16 @@ object alarms {
     }
   }
   
-  @js.native
   trait AlarmCreateInfo extends StObject {
     
     /** Optional. Length of time in minutes after which the onAlarm event should fire.  */
-    var delayInMinutes: js.UndefOr[Double] = js.native
+    var delayInMinutes: js.UndefOr[Double] = js.undefined
     
     /** Optional. If set, the onAlarm event should fire every periodInMinutes minutes after the initial event specified by when or delayInMinutes. If not set, the alarm will only fire once.  */
-    var periodInMinutes: js.UndefOr[Double] = js.native
+    var periodInMinutes: js.UndefOr[Double] = js.undefined
     
     /** Optional. Time at which the alarm should fire, in milliseconds past the epoch (e.g. Date.now() + n).  */
-    var when: js.UndefOr[Double] = js.native
+    var when: js.UndefOr[Double] = js.undefined
   }
   object AlarmCreateInfo {
     

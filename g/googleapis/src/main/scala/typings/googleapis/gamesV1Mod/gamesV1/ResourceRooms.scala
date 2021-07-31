@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Rooms")
@@ -32,7 +31,7 @@ class ResourceRooms protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaRoom] = js.native
   def create(callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
   def create(params: ParamsResourceRoomsCreate): GaxiosPromise[SchemaRoom] = js.native
   def create(params: ParamsResourceRoomsCreate, callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
   def create(
@@ -63,7 +62,7 @@ class ResourceRooms protected () extends StObject {
     */
   def decline(): GaxiosPromise[SchemaRoom] = js.native
   def decline(callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
-  def decline(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
+  def decline(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
   def decline(params: ParamsResourceRoomsDecline): GaxiosPromise[SchemaRoom] = js.native
   def decline(params: ParamsResourceRoomsDecline, callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
   def decline(
@@ -93,7 +92,7 @@ class ResourceRooms protected () extends StObject {
     */
   def dismiss(): GaxiosPromise[Unit] = js.native
   def dismiss(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def dismiss(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def dismiss(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourceRoomsDismiss): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourceRoomsDismiss, callback: BodyResponseCallback[Unit]): Unit = js.native
   def dismiss(
@@ -119,7 +118,7 @@ class ResourceRooms protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaRoom] = js.native
   def get(callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
   def get(params: ParamsResourceRoomsGet): GaxiosPromise[SchemaRoom] = js.native
   def get(params: ParamsResourceRoomsGet, callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
   def get(
@@ -147,7 +146,7 @@ class ResourceRooms protected () extends StObject {
     */
   def join(): GaxiosPromise[SchemaRoom] = js.native
   def join(callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
-  def join(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
+  def join(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
   def join(params: ParamsResourceRoomsJoin): GaxiosPromise[SchemaRoom] = js.native
   def join(params: ParamsResourceRoomsJoin, callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
   def join(
@@ -179,7 +178,7 @@ class ResourceRooms protected () extends StObject {
     */
   def leave(): GaxiosPromise[SchemaRoom] = js.native
   def leave(callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
-  def leave(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
+  def leave(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoom] = js.native
   def leave(params: ParamsResourceRoomsLeave): GaxiosPromise[SchemaRoom] = js.native
   def leave(params: ParamsResourceRoomsLeave, callback: BodyResponseCallback[SchemaRoom]): Unit = js.native
   def leave(
@@ -210,7 +209,7 @@ class ResourceRooms protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaRoomList] = js.native
   def list(callback: BodyResponseCallback[SchemaRoomList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoomList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoomList] = js.native
   def list(params: ParamsResourceRoomsList): GaxiosPromise[SchemaRoomList] = js.native
   def list(params: ParamsResourceRoomsList, callback: BodyResponseCallback[SchemaRoomList]): Unit = js.native
   def list(
@@ -243,7 +242,7 @@ class ResourceRooms protected () extends StObject {
     */
   def reportStatus(): GaxiosPromise[SchemaRoomStatus] = js.native
   def reportStatus(callback: BodyResponseCallback[SchemaRoomStatus]): Unit = js.native
-  def reportStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoomStatus] = js.native
+  def reportStatus(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoomStatus] = js.native
   def reportStatus(params: ParamsResourceRoomsReportstatus): GaxiosPromise[SchemaRoomStatus] = js.native
   def reportStatus(params: ParamsResourceRoomsReportstatus, callback: BodyResponseCallback[SchemaRoomStatus]): Unit = js.native
   def reportStatus(

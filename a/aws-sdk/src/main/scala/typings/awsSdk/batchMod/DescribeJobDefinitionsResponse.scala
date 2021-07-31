@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobDefinitionsResponse extends StObject {
   
   /**
     * The list of job definitions.
     */
-  var jobDefinitions: js.UndefOr[JobDefinitionList] = js.native
+  var jobDefinitions: js.UndefOr[JobDefinitionList] = js.undefined
   
   /**
     * The nextToken value to include in a future DescribeJobDefinitions request. When the results of a DescribeJobDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeJobDefinitionsResponse {
   

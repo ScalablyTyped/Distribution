@@ -10,46 +10,44 @@ import typings.mangopay2NodejsSdk.mod.user.KYCLevel
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.UserNaturalData>, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserNaturalData> */
-@js.native
 trait MakeKeysRequiredPartialUsAddress extends StObject {
   
-  var Address: js.UndefOr[String | AddressData] = js.native
+  var Address: js.UndefOr[String | AddressData] = js.undefined
   
-  var Birthday: Timestamp = js.native
+  var Birthday: Timestamp
   
-  var Capacity: js.UndefOr[NORMAL | DECLARATIVE] = js.native
+  var Capacity: js.UndefOr[NORMAL | DECLARATIVE] = js.undefined
   
-  var CountryOfResidence: CountryISO = js.native
+  var CountryOfResidence: CountryISO
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var Email: String = js.native
+  var Email: String
   
-  var FirstName: String = js.native
+  var FirstName: String
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.native
+  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.undefined
   
-  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.KYCLevel] = js.native
+  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.KYCLevel] = js.undefined
   
-  var LastName: String = js.native
+  var LastName: String
   
-  var Nationality: CountryISO = js.native
+  var Nationality: CountryISO
   
-  var Occupation: js.UndefOr[String] = js.native
+  var Occupation: js.UndefOr[String] = js.undefined
   
-  var PersonType: js.UndefOr[NATURAL] = js.native
+  var PersonType: js.UndefOr[NATURAL] = js.undefined
   
-  var ProofOfAddress: js.UndefOr[String | Null] = js.native
+  var ProofOfAddress: js.UndefOr[String | Null] = js.undefined
   
-  var ProofOfIdentity: js.UndefOr[String | Null] = js.native
+  var ProofOfIdentity: js.UndefOr[String | Null] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object MakeKeysRequiredPartialUsAddress {
   

@@ -10,10 +10,10 @@ node
 | ------------------ | :-------------: |
 | Full name          | node |
 | Keywords           | runtime |
-| # releases         | 122 |
-| # dependents       | 245 |
-| # downloads        | 5328351 |
-| # stars            | 23 |
+| # releases         | 111 |
+| # dependents       | 256 |
+| # downloads        | 6404951 |
+| # stars            | 24 |
 
 ## Links
 - [Homepage](https://github.com/aredridel/node-bin-gen#readme)

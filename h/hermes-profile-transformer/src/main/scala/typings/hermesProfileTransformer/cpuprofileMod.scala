@@ -3,27 +3,25 @@ package typings.hermesProfileTransformer
 import typings.hermesProfileTransformer.anon.Category
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cpuprofileMod {
   
-  @js.native
   trait CPUProfileChunk extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var nodes: js.Array[CPUProfileChunkNode] = js.native
+    var nodes: js.Array[CPUProfileChunkNode]
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var samples: js.Array[Double] = js.native
+    var samples: js.Array[Double]
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var tid: String = js.native
+    var tid: String
     
-    var timeDeltas: js.Array[Double] = js.native
+    var timeDeltas: js.Array[Double]
   }
   object CPUProfileChunk {
     
@@ -76,14 +74,13 @@ object cpuprofileMod {
     }
   }
   
-  @js.native
   trait CPUProfileChunkNode extends StObject {
     
-    var callFrame: Category = js.native
+    var callFrame: Category
     
-    var id: Double = js.native
+    var id: Double
     
-    var parent: js.UndefOr[Double] = js.native
+    var parent: js.UndefOr[Double] = js.undefined
   }
   object CPUProfileChunkNode {
     
@@ -110,14 +107,13 @@ object cpuprofileMod {
     }
   }
   
-  @js.native
   trait CPUProfileChunker extends StObject {
     
-    var nodes: js.Array[CPUProfileChunkNode] = js.native
+    var nodes: js.Array[CPUProfileChunkNode]
     
-    var sampleNumbers: js.Array[Double] = js.native
+    var sampleNumbers: js.Array[Double]
     
-    var timeDeltas: js.Array[Double] = js.native
+    var timeDeltas: js.Array[Double]
   }
   object CPUProfileChunker {
     

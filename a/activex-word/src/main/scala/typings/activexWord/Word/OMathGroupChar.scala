@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathGroupChar extends StObject {
   
-  var AlignTop: Boolean = js.native
+  var AlignTop: Boolean
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Char: Double = js.native
+  var Char: Double
   
-  var CharTop: Boolean = js.native
+  var CharTop: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMath = js.native
+  val E: OMath
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.OMathGroupChar_typekey")
-  var WordDotOMathGroupChar_typekey: OMathGroupChar = js.native
+  var WordDotOMathGroupChar_typekey: OMathGroupChar
 }
 object OMathGroupChar {
   

@@ -8,14 +8,16 @@ import typings.std.Array
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(promise: js.Any): ISpex = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[ISpex]
+  
   @JSImport("spex", JSImport.Namespace)
   @js.native
-  def apply(promise: js.Any): ISpex = js.native
+  val ^ : js.Any = js.native
   
   // PromiseAdapter class;
   // API: http://vitaly-t.github.io/spex/PromiseAdapter.html
@@ -36,7 +38,9 @@ object mod {
     // API: http://vitaly-t.github.io/spex/errors.BatchError.html
     @JSImport("spex", "errors.BatchError")
     @js.native
-    class BatchError () extends Error {
+    class BatchError ()
+      extends StObject
+         with Error {
       
       // extended properties:
       var data: js.Array[IBatchData] = js.native
@@ -44,7 +48,13 @@ object mod {
       var first: js.Any = js.native
       
       // API: http://vitaly-t.github.io/spex/errors.BatchError.html#.getErrors
-      def getErrors(): js.Array[_] = js.native
+      def getErrors(): js.Array[js.Any] = js.native
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       
       @JSName("stack")
       var stack_BatchError: String = js.native
@@ -55,7 +65,9 @@ object mod {
     // API: http://vitaly-t.github.io/spex/errors.PageError.html
     @JSImport("spex", "errors.PageError")
     @js.native
-    class PageError () extends Error {
+    class PageError ()
+      extends StObject
+         with Error {
       
       var dest: js.Any = js.native
       
@@ -65,6 +77,12 @@ object mod {
       var error: js.Any = js.native
       
       var index: Double = js.native
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       
       var reason: String = js.native
       
@@ -77,7 +95,9 @@ object mod {
     // API: http://vitaly-t.github.io/spex/errors.SequenceError.html
     @JSImport("spex", "errors.SequenceError")
     @js.native
-    class SequenceError () extends Error {
+    class SequenceError ()
+      extends StObject
+         with Error {
       
       var dest: js.Any = js.native
       
@@ -87,6 +107,12 @@ object mod {
       var error: js.Any = js.native
       
       var index: Double = js.native
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       
       var reason: String = js.native
       
@@ -98,19 +124,20 @@ object mod {
   }
   
   @js.native
-  trait IArrayExt[T] extends Array[T] {
+  trait IArrayExt[T]
+    extends StObject
+       with Array[T] {
     
     var duration: Double = js.native
   }
   
-  @js.native
   trait IBatchData extends StObject {
     
-    var origin: js.UndefOr[IOriginData] = js.native
+    var origin: js.UndefOr[IOriginData] = js.undefined
     
-    var result: js.Any = js.native
+    var result: js.Any
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object IBatchData {
     
@@ -137,16 +164,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IBatchStat extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var failed: Double = js.native
+    var failed: Double
     
-    var succeeded: Double = js.native
+    var succeeded: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object IBatchStat {
     
@@ -173,12 +199,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IOriginData extends StObject {
     
-    var result: js.Any = js.native
+    var result: js.Any
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object IOriginData {
     
@@ -199,14 +224,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IPageResult extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var pages: Double = js.native
+    var pages: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object IPageResult {
     
@@ -230,12 +254,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ISequenceResult extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object ISequenceResult {
     
@@ -257,7 +280,9 @@ object mod {
   }
   
   @js.native
-  trait ISpex extends ISpexBase {
+  trait ISpex
+    extends StObject
+       with ISpexBase {
     
     // API: http://vitaly-t.github.io/spex/errors.html
     var errors: Typeoferrors = js.native
@@ -271,16 +296,22 @@ object mod {
   trait ISpexBase extends StObject {
     
     // API: http://vitaly-t.github.io/spex/global.html#batch
-    def batch(values: js.Array[_]): js.Promise[IArrayExt[_]] = js.native
-    def batch(values: js.Array[_], options: Cb): js.Promise[IArrayExt[_]] = js.native
+    def batch(values: js.Array[js.Any]): js.Promise[IArrayExt[js.Any]] = js.native
+    def batch(values: js.Array[js.Any], options: Cb): js.Promise[IArrayExt[js.Any]] = js.native
     
     // API: http://vitaly-t.github.io/spex/global.html#page
-    def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[IPageResult] = js.native
-    def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _], options: Dest): js.Promise[IPageResult] = js.native
+    def page(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]): js.Promise[IPageResult] = js.native
+    def page(
+      source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any],
+      options: Dest
+    ): js.Promise[IPageResult] = js.native
     
     // API: http://vitaly-t.github.io/spex/global.html#sequence
-    def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _]): js.Promise[ISequenceResult | IArrayExt[_]] = js.native
-    def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, _], options: Limit): js.Promise[ISequenceResult | IArrayExt[_]] = js.native
+    def sequence(source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any]): js.Promise[ISequenceResult | IArrayExt[js.Any]] = js.native
+    def sequence(
+      source: js.Function3[/* index */ Double, /* data */ js.Any, /* delay */ Double, js.Any],
+      options: Limit
+    ): js.Promise[ISequenceResult | IArrayExt[js.Any]] = js.native
   }
   
   // API: http://vitaly-t.github.io/spex/stream.html
@@ -290,23 +321,22 @@ object mod {
     // API: http://vitaly-t.github.io/spex/stream.html#.read
     def read(
       stream: js.Any,
-      receiver: js.Function3[/* index */ Double, /* data */ js.Array[_], /* delay */ Double, _]
+      receiver: js.Function3[/* index */ Double, /* data */ js.Array[js.Any], /* delay */ Double, js.Any]
     ): js.Promise[IStreamReadResult] = js.native
     def read(
       stream: js.Any,
-      receiver: js.Function3[/* index */ Double, /* data */ js.Array[_], /* delay */ Double, _],
+      receiver: js.Function3[/* index */ Double, /* data */ js.Array[js.Any], /* delay */ Double, js.Any],
       options: IStreamReadOptions
     ): js.Promise[IStreamReadResult] = js.native
   }
   
-  @js.native
   trait IStreamReadOptions extends StObject {
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var readChunks: js.UndefOr[Boolean] = js.native
+    var readChunks: js.UndefOr[Boolean] = js.undefined
     
-    var readSize: js.UndefOr[Double] = js.native
+    var readSize: js.UndefOr[Double] = js.undefined
   }
   object IStreamReadOptions {
     
@@ -339,16 +369,15 @@ object mod {
     }
   }
   
-  @js.native
   trait IStreamReadResult extends StObject {
     
-    var calls: Double = js.native
+    var calls: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var reads: Double = js.native
+    var reads: Double
   }
   object IStreamReadResult {
     

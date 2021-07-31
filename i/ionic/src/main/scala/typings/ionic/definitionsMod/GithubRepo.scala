@@ -2,15 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GithubRepo extends StObject {
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var id: Double = js.native
+  var id: Double
 }
 object GithubRepo {
   

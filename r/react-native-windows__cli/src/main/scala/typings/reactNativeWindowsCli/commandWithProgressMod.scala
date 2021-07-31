@@ -3,39 +3,34 @@ package typings.reactNativeWindowsCli
 import typings.ora.mod.Ora
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandWithProgressMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "commandWithProgress")
+  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", JSImport.Namespace)
   @js.native
-  def commandWithProgress(spinner: Ora, taskDoingName: String, command: String, args: js.Array[String], verbose: Boolean): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "newError")
-  @js.native
-  def newError(text: String): Unit = js.native
+  @scala.inline
+  def commandWithProgress(spinner: Ora, taskDoingName: String, command: String, args: js.Array[String], verbose: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("commandWithProgress")(spinner.asInstanceOf[js.Any], taskDoingName.asInstanceOf[js.Any], command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "newInfo")
-  @js.native
-  def newInfo(text: String): Unit = js.native
+  @scala.inline
+  def newError(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newError")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "newSpinner")
-  @js.native
-  def newSpinner(text: String): Ora = js.native
+  @scala.inline
+  def newInfo(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newInfo")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "newSuccess")
-  @js.native
-  def newSuccess(text: String): Unit = js.native
+  @scala.inline
+  def newSpinner(text: String): Ora = ^.asInstanceOf[js.Dynamic].applyDynamic("newSpinner")(text.asInstanceOf[js.Any]).asInstanceOf[Ora]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "newWarn")
-  @js.native
-  def newWarn(text: String): Unit = js.native
+  @scala.inline
+  def newSuccess(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newSuccess")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "runPowerShellScriptFunction")
-  @js.native
-  def runPowerShellScriptFunction(taskDescription: String, script: String, funcName: String, verbose: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/commandWithProgress", "runPowerShellScriptFunction")
-  @js.native
-  def runPowerShellScriptFunction(taskDescription: String, script: Null, funcName: String, verbose: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def newWarn(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("newWarn")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def runPowerShellScriptFunction(taskDescription: String, script: String, funcName: String, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runPowerShellScriptFunction")(taskDescription.asInstanceOf[js.Any], script.asInstanceOf[js.Any], funcName.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def runPowerShellScriptFunction(taskDescription: String, script: Null, funcName: String, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runPowerShellScriptFunction")(taskDescription.asInstanceOf[js.Any], script.asInstanceOf[js.Any], funcName.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

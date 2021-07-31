@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows notification when the selected range is changed.
   * @see com.sun.star.sheet.XRangeSelection
   */
-@js.native
-trait XRangeSelectionChangeListener extends XEventListener {
+trait XRangeSelectionChangeListener
+  extends StObject
+     with XEventListener {
   
   /** is called when the selected range is changed while range selection is active. */
-  def descriptorChanged(aEvent: RangeSelectionEvent): Unit = js.native
+  def descriptorChanged(aEvent: RangeSelectionEvent): Unit
 }
 object XRangeSelectionChangeListener {
   

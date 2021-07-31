@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKeyCredentialDescriptor extends StObject {
   
-  var id: BufferSource = js.native
+  var id: BufferSource
   
-  var transports: js.UndefOr[js.Array[AuthenticatorTransport]] = js.native
+  var transports: js.UndefOr[js.Array[AuthenticatorTransport]] = js.undefined
   
-  var `type`: PublicKeyCredentialType = js.native
+  var `type`: PublicKeyCredentialType
 }
 object PublicKeyCredentialDescriptor {
   

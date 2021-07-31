@@ -2,25 +2,23 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var enableConnectProtocol: js.UndefOr[Boolean] = js.native
+  var enableConnectProtocol: js.UndefOr[Boolean] = js.undefined
   
-  var enablePush: js.UndefOr[Boolean] = js.native
+  var enablePush: js.UndefOr[Boolean] = js.undefined
   
-  var headerTableSize: js.UndefOr[Double] = js.native
+  var headerTableSize: js.UndefOr[Double] = js.undefined
   
-  var initialWindowSize: js.UndefOr[Double] = js.native
+  var initialWindowSize: js.UndefOr[Double] = js.undefined
   
-  var maxConcurrentStreams: js.UndefOr[Double] = js.native
+  var maxConcurrentStreams: js.UndefOr[Double] = js.undefined
   
-  var maxFrameSize: js.UndefOr[Double] = js.native
+  var maxFrameSize: js.UndefOr[Double] = js.undefined
   
-  var maxHeaderListSize: js.UndefOr[Double] = js.native
+  var maxHeaderListSize: js.UndefOr[Double] = js.undefined
 }
 object Settings {
   

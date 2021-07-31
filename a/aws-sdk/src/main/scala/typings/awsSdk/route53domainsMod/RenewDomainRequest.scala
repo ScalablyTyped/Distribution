@@ -2,26 +2,24 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenewDomainRequest extends StObject {
   
   /**
     * The year when the registration for the domain is set to expire. This value must match the current expiration date for the domain.
     */
-  var CurrentExpiryYear: typings.awsSdk.route53domainsMod.CurrentExpiryYear = js.native
+  var CurrentExpiryYear: typings.awsSdk.route53domainsMod.CurrentExpiryYear
   
   /**
     * The name of the domain that you want to renew.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
   
   /**
     * The number of years that you want to renew the domain for. The maximum number of years depends on the top-level domain. For the range of valid values for your domain, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide. Default: 1
     */
-  var DurationInYears: js.UndefOr[typings.awsSdk.route53domainsMod.DurationInYears] = js.native
+  var DurationInYears: js.UndefOr[typings.awsSdk.route53domainsMod.DurationInYears] = js.undefined
 }
 object RenewDomainRequest {
   

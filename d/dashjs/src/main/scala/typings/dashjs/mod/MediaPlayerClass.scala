@@ -11,7 +11,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -248,13 +247,13 @@ trait MediaPlayerClass extends StObject {
   def getXHRWithCredentialsForType(`type`: String): Boolean = js.native
   
   def initialize(): Unit = js.native
-  def initialize(view: js.UndefOr[scala.Nothing], source: js.UndefOr[scala.Nothing], autoPlay: Boolean): Unit = js.native
-  def initialize(view: js.UndefOr[scala.Nothing], source: String): Unit = js.native
-  def initialize(view: js.UndefOr[scala.Nothing], source: String, autoPlay: Boolean): Unit = js.native
+  def initialize(view: Unit, source: String): Unit = js.native
+  def initialize(view: Unit, source: String, autoPlay: Boolean): Unit = js.native
+  def initialize(view: Unit, source: Unit, autoPlay: Boolean): Unit = js.native
   def initialize(view: HTMLElement): Unit = js.native
-  def initialize(view: HTMLElement, source: js.UndefOr[scala.Nothing], autoPlay: Boolean): Unit = js.native
   def initialize(view: HTMLElement, source: String): Unit = js.native
   def initialize(view: HTMLElement, source: String, autoPlay: Boolean): Unit = js.native
+  def initialize(view: HTMLElement, source: Unit, autoPlay: Boolean): Unit = js.native
   
   def isDynamic(): Boolean = js.native
   

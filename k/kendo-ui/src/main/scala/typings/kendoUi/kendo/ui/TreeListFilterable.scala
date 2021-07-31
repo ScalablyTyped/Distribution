@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListFilterable extends StObject {
   
-  var extra: js.UndefOr[Boolean] = js.native
+  var extra: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[TreeListFilterableMessages] = js.native
+  var messages: js.UndefOr[TreeListFilterableMessages] = js.undefined
   
-  var operators: js.UndefOr[TreeListFilterableOperators] = js.native
+  var operators: js.UndefOr[TreeListFilterableOperators] = js.undefined
 }
 object TreeListFilterable {
   

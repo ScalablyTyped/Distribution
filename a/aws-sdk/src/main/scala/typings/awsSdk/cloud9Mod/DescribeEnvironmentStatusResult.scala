@@ -2,21 +2,19 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentStatusResult extends StObject {
   
   /**
     * Any informational message about the status of the environment.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the environment. Available values include:    connecting: The environment is connecting.    creating: The environment is being created.    deleting: The environment is being deleted.    error: The environment is in an error state.    ready: The environment is ready.    stopped: The environment is stopped.    stopping: The environment is stopping.  
     */
-  var status: js.UndefOr[EnvironmentStatus] = js.native
+  var status: js.UndefOr[EnvironmentStatus] = js.undefined
 }
 object DescribeEnvironmentStatusResult {
   

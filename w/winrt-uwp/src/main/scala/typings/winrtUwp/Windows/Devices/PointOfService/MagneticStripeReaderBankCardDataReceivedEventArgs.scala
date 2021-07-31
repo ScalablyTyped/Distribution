@@ -2,39 +2,37 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides bank card data from the BankCardDataReceived event. */
-@js.native
 trait MagneticStripeReaderBankCardDataReceivedEventArgs extends StObject {
   
   /** Gets the account number from the swiped bank card. */
-  var accountNumber: String = js.native
+  var accountNumber: String
   
   /** Gets the expiration date from the swiped card. */
-  var expirationDate: String = js.native
+  var expirationDate: String
   
   /** Gets the first name from the swiped bank card. */
-  var firstName: String = js.native
+  var firstName: String
   
   /** Gets the middle initial from the swiped bank card. */
-  var middleInitial: String = js.native
+  var middleInitial: String
   
   /** Gets the data from the swiped bank card. */
-  var report: MagneticStripeReaderReport = js.native
+  var report: MagneticStripeReaderReport
   
   /** Gets the service code for the swiped bank card. */
-  var serviceCode: String = js.native
+  var serviceCode: String
   
   /** Gets the suffix from the swiped bank card. */
-  var suffix: String = js.native
+  var suffix: String
   
   /** Gets the surname from the swiped bank card. */
-  var surname: String = js.native
+  var surname: String
   
   /** Gets the title from the swiped bank card. */
-  var title: String = js.native
+  var title: String
 }
 object MagneticStripeReaderBankCardDataReceivedEventArgs {
   

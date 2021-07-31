@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherCreated extends StObject {
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var publisherCreated: scala.Double = js.native
+  var publisherCreated: scala.Double
   
-  var userEditable: scala.Double = js.native
+  var userEditable: scala.Double
 }
 object PublisherCreated {
   

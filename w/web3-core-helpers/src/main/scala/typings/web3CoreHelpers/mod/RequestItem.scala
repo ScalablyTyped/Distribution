@@ -2,15 +2,13 @@ package typings.web3CoreHelpers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestItem extends StObject {
   
-  def callback(error: js.Any, result: js.Any): Unit = js.native
+  def callback(error: js.Any, result: js.Any): Unit
   
-  var payload: JsonRpcPayload = js.native
+  var payload: JsonRpcPayload
 }
 object RequestItem {
   

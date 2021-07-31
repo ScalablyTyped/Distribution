@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextColumn2 extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Number: Double = js.native
+  var Number: Double
   
   @JSName("Office.TextColumn2_typekey")
-  var OfficeDotTextColumn2_typekey: TextColumn2 = js.native
+  var OfficeDotTextColumn2_typekey: TextColumn2
   
-  var Spacing: Double = js.native
+  var Spacing: Double
   
-  var TextDirection: MsoTextDirection = js.native
+  var TextDirection: MsoTextDirection
 }
 object TextColumn2 {
   

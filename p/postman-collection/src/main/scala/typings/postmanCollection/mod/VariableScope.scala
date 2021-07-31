@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.postmanCollection.anon.Created
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -34,9 +33,9 @@ class VariableScope protected () extends Property[VariableScopeDefinition] {
   def set(key: String, value: js.Any, `type`: String): Unit = js.native
   
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition]): js.UndefOr[Created] = js.native
-  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: js.UndefOr[scala.Nothing], prune: Boolean): js.UndefOr[Created] = js.native
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean): js.UndefOr[Created] = js.native
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean, prune: Boolean): js.UndefOr[Created] = js.native
+  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Unit, prune: Boolean): js.UndefOr[Created] = js.native
   
   def syncVariablesTo(): StringDictionary[VariableDefinition] = js.native
   def syncVariablesTo(obj: StringDictionary[VariableDefinition]): StringDictionary[VariableDefinition] = js.native
@@ -52,7 +51,10 @@ class VariableScope protected () extends Property[VariableScopeDefinition] {
 /* static members */
 object VariableScope {
   
-  @JSImport("postman-collection", "VariableScope.isVariableScope")
+  @JSImport("postman-collection", "VariableScope")
   @js.native
-  def isVariableScope(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isVariableScope(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableScope")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

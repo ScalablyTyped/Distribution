@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elastictranscoderPipelineMod {
@@ -85,6 +84,10 @@ object elastictranscoderPipelineMod {
   /* static members */
   object Pipeline {
     
+    @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Pipeline resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,40 +97,34 @@ object elastictranscoderPipelineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Pipeline = js.native
-    @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Pipeline = js.native
-    @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState): Pipeline = js.native
-    @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ Boolean]
   }
   
-  @js.native
   trait PipelineArgs extends StObject {
     
     /**
       * The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.
       */
-    val awsKmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val awsKmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
       */
-    val contentConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]] = js.native
+    val contentConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]] = js.undefined
     
     /**
       * The permissions for the `contentConfig` object. (documented below)
@@ -138,37 +135,37 @@ object elastictranscoderPipelineMod {
             Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
       */
-    val inputBucket: Input[String] = js.native
+    val inputBucket: Input[String]
     
     /**
       * The name of the pipeline. Maximum 40 characters
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
       */
-    val notifications: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]] = js.native
+    val notifications: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]] = js.undefined
     
     /**
       * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
       */
-    val outputBucket: js.UndefOr[Input[String]] = js.native
+    val outputBucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.
       */
-    val role: Input[String] = js.native
+    val role: Input[String]
     
     /**
       * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
       */
-    val thumbnailConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]] = js.native
+    val thumbnailConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]] = js.undefined
     
     /**
       * The permissions for the `thumbnailConfig` object. (documented below)
@@ -179,7 +176,7 @@ object elastictranscoderPipelineMod {
             Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PipelineArgs {
     
@@ -266,20 +263,19 @@ object elastictranscoderPipelineMod {
     }
   }
   
-  @js.native
   trait PipelineState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.
       */
-    val awsKmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val awsKmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
       */
-    val contentConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]] = js.native
+    val contentConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfig]] = js.undefined
     
     /**
       * The permissions for the `contentConfig` object. (documented below)
@@ -290,37 +286,37 @@ object elastictranscoderPipelineMod {
             Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineContentConfigPermission]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
       */
-    val inputBucket: js.UndefOr[Input[String]] = js.native
+    val inputBucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the pipeline. Maximum 40 characters
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
       */
-    val notifications: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]] = js.native
+    val notifications: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineNotifications]] = js.undefined
     
     /**
       * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
       */
-    val outputBucket: js.UndefOr[Input[String]] = js.native
+    val outputBucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.
       */
-    val role: js.UndefOr[Input[String]] = js.native
+    val role: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
       */
-    val thumbnailConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]] = js.native
+    val thumbnailConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfig]] = js.undefined
     
     /**
       * The permissions for the `thumbnailConfig` object. (documented below)
@@ -331,7 +327,7 @@ object elastictranscoderPipelineMod {
             Input[typings.pulumiAws.inputMod.elastictranscoder.PipelineThumbnailConfigPermission]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PipelineState {
     

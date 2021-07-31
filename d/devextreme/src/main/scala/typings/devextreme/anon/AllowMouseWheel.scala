@@ -10,25 +10,23 @@ import typings.devextreme.devextremeStrings.shift
 import typings.devextreme.devextremeStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowMouseWheel extends StObject {
   
-  var allowMouseWheel: js.UndefOr[Boolean] = js.native
+  var allowMouseWheel: js.UndefOr[Boolean] = js.undefined
   
-  var allowTouchGestures: js.UndefOr[Boolean] = js.native
+  var allowTouchGestures: js.UndefOr[Boolean] = js.undefined
   
-  var argumentAxis: js.UndefOr[both | none | pan | zoom] = js.native
+  var argumentAxis: js.UndefOr[both | none | pan | zoom] = js.undefined
   
-  var dragBoxStyle: js.UndefOr[Opacity] = js.native
+  var dragBoxStyle: js.UndefOr[Opacity] = js.undefined
   
-  var dragToZoom: js.UndefOr[Boolean] = js.native
+  var dragToZoom: js.UndefOr[Boolean] = js.undefined
   
-  var panKey: js.UndefOr[alt | ctrl | meta | shift] = js.native
+  var panKey: js.UndefOr[alt | ctrl | meta | shift] = js.undefined
   
-  var valueAxis: js.UndefOr[both | none | pan | zoom] = js.native
+  var valueAxis: js.UndefOr[both | none | pan | zoom] = js.undefined
 }
 object AllowMouseWheel {
   

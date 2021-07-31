@@ -7,7 +7,6 @@ import typings.typescript.mod.Identifier
 import typings.typescript.mod.NamedImports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noDefaultImportRuleMod {
@@ -34,9 +33,8 @@ object noDefaultImportRuleMod {
     @scala.inline
     def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/noDefaultImportRule", "Rule.getNamedDefaultImport")
-    @js.native
-    def getNamedDefaultImport(namedBindings: NamedImports): Identifier | Null = js.native
+    @scala.inline
+    def getNamedDefaultImport(namedBindings: NamedImports): Identifier | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamedDefaultImport")(namedBindings.asInstanceOf[js.Any]).asInstanceOf[Identifier | Null]
     
     @JSImport("tslint/lib/rules/noDefaultImportRule", "Rule.metadata")
     @js.native

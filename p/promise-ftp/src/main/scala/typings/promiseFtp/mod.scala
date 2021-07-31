@@ -27,51 +27,51 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("promise-ftp", JSImport.Namespace)
   @js.native
-  class ^ () extends PromiseFtp
+  class ^ ()
+    extends StObject
+       with PromiseFtp
   
-  @js.native
   trait ERROR_CODES extends StObject {
     
-    var `421`: `Service not availableComma closing control connection` = js.native
+    var `421`: `Service not availableComma closing control connection`
     
-    var `425`: `CanApostrophet open data connection` = js.native
+    var `425`: `CanApostrophet open data connection`
     
-    var `426`: `Connection closedComma transfer aborted` = js.native
+    var `426`: `Connection closedComma transfer aborted`
     
-    var `450`: `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis` = js.native
+    var `450`: `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`
     
-    var `451`: `Requested action abortedColon local error in processing` = js.native
+    var `451`: `Requested action abortedColon local error in processing`
     
-    var `452`: `Requested action not taken Slash Insufficient storage space in system` = js.native
+    var `452`: `Requested action not taken Slash Insufficient storage space in system`
     
-    var `500`: `Syntax error Slash Command unrecognized` = js.native
+    var `500`: `Syntax error Slash Command unrecognized`
     
-    var `501`: `Syntax error in parameters or arguments` = js.native
+    var `501`: `Syntax error in parameters or arguments`
     
-    var `502`: `Command not implemented` = js.native
+    var `502`: `Command not implemented`
     
-    var `503`: `Bad sequence of commands` = js.native
+    var `503`: `Bad sequence of commands`
     
-    var `504`: `Command not implemented for that parameter` = js.native
+    var `504`: `Command not implemented for that parameter`
     
-    var `530`: `Not logged in` = js.native
+    var `530`: `Not logged in`
     
-    var `532`: `Need account for storing files` = js.native
+    var `532`: `Need account for storing files`
     
-    var `550`: `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis` = js.native
+    var `550`: `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`
     
-    var `551`: `Requested action abortedColon page type unknown` = js.native
+    var `551`: `Requested action abortedColon page type unknown`
     
-    var `552`: `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis` = js.native
+    var `552`: `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`
     
-    var `553`: `Requested action not taken Slash File name not allowed` = js.native
+    var `553`: `Requested action not taken Slash File name not allowed`
   }
   object ERROR_CODES {
     
@@ -152,24 +152,20 @@ object mod {
     extends typings.promiseFtpCommon.mod.FtpReconnectError {
     def this(disconnectError: String) = this()
     def this(disconnectError: Error) = this()
-    def this(disconnectError: js.UndefOr[scala.Nothing], connectError: String) = this()
-    def this(disconnectError: js.UndefOr[scala.Nothing], connectError: Error) = this()
     def this(disconnectError: String, connectError: String) = this()
     def this(disconnectError: String, connectError: Error) = this()
+    def this(disconnectError: Unit, connectError: String) = this()
+    def this(disconnectError: Unit, connectError: Error) = this()
     def this(disconnectError: Error, connectError: String) = this()
     def this(disconnectError: Error, connectError: Error) = this()
-    def this(
-      disconnectError: js.UndefOr[scala.Nothing],
-      connectError: js.UndefOr[scala.Nothing],
-      onCwd: Boolean
-    ) = this()
-    def this(disconnectError: js.UndefOr[scala.Nothing], connectError: String, onCwd: Boolean) = this()
-    def this(disconnectError: js.UndefOr[scala.Nothing], connectError: Error, onCwd: Boolean) = this()
-    def this(disconnectError: String, connectError: js.UndefOr[scala.Nothing], onCwd: Boolean) = this()
     def this(disconnectError: String, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: String, connectError: Unit, onCwd: Boolean) = this()
     def this(disconnectError: String, connectError: Error, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: js.UndefOr[scala.Nothing], onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: Unit, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: Error, onCwd: Boolean) = this()
     def this(disconnectError: Error, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: Error, connectError: Unit, onCwd: Boolean) = this()
     def this(disconnectError: Error, connectError: Error, onCwd: Boolean) = this()
   }
   
@@ -178,21 +174,21 @@ object mod {
   object STATUSES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.promiseFtpCommon.mod.STATUSES with String] = js.native
+    def apply(value: String): js.UndefOr[typings.promiseFtpCommon.mod.STATUSES & String] = js.native
     
-    /* "connected" */ val CONNECTED: typings.promiseFtpCommon.mod.STATUSES.CONNECTED with String = js.native
+    /* "connected" */ val CONNECTED: typings.promiseFtpCommon.mod.STATUSES.CONNECTED & String = js.native
     
-    /* "connecting" */ val CONNECTING: typings.promiseFtpCommon.mod.STATUSES.CONNECTING with String = js.native
+    /* "connecting" */ val CONNECTING: typings.promiseFtpCommon.mod.STATUSES.CONNECTING & String = js.native
     
-    /* "disconnected" */ val DISCONNECTED: typings.promiseFtpCommon.mod.STATUSES.DISCONNECTED with String = js.native
+    /* "disconnected" */ val DISCONNECTED: typings.promiseFtpCommon.mod.STATUSES.DISCONNECTED & String = js.native
     
-    /* "disconnecting" */ val DISCONNECTING: typings.promiseFtpCommon.mod.STATUSES.DISCONNECTING with String = js.native
+    /* "disconnecting" */ val DISCONNECTING: typings.promiseFtpCommon.mod.STATUSES.DISCONNECTING & String = js.native
     
-    /* "logging out" */ val LOGGING_OUT: typings.promiseFtpCommon.mod.STATUSES.LOGGING_OUT with String = js.native
+    /* "logging out" */ val LOGGING_OUT: typings.promiseFtpCommon.mod.STATUSES.LOGGING_OUT & String = js.native
     
-    /* "not yet connected" */ val NOT_YET_CONNECTED: typings.promiseFtpCommon.mod.STATUSES.NOT_YET_CONNECTED with String = js.native
+    /* "not yet connected" */ val NOT_YET_CONNECTED: typings.promiseFtpCommon.mod.STATUSES.NOT_YET_CONNECTED & String = js.native
     
-    /* "reconnecting" */ val RECONNECTING: typings.promiseFtpCommon.mod.STATUSES.RECONNECTING with String = js.native
+    /* "reconnecting" */ val RECONNECTING: typings.promiseFtpCommon.mod.STATUSES.RECONNECTING & String = js.native
   }
   
   @js.native
@@ -292,9 +288,9 @@ object mod {
       * @returns the contents of the specified directory
       */
     def list(): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
-    def list(path: js.UndefOr[scala.Nothing], useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     def list(path: String): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     def list(path: String, useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
+    def list(path: Unit, useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     def list(useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     
     /**
@@ -310,9 +306,9 @@ object mod {
       * @returns the contents of the specified directory
       */
     def listSafe(): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
-    def listSafe(path: js.UndefOr[scala.Nothing], useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     def listSafe(path: String): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     def listSafe(path: String, useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
+    def listSafe(path: Unit, useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     def listSafe(useCompression: Boolean): typings.bluebird.mod.^[js.Array[ListingElement | String]] = js.native
     
     /**

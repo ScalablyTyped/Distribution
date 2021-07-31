@@ -2,26 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Point...
   */
-@js.native
 trait IPoint extends StObject {
   
   /**
     * x-coordinate in pixels.
     * The origin is the top left of the screen.
     */
-  var qx: Double = js.native
+  var qx: Double
   
   /**
     * y-coordinate in pixels.
     * The origin is the top left of the screen.
     */
-  var qy: Double = js.native
+  var qy: Double
 }
 object IPoint {
   

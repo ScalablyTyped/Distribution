@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,23 +14,37 @@ sealed trait TapObjectType extends StObject
 object TapObjectType extends StObject {
   
   @js.native
-  sealed trait chart extends TapObjectType
+  sealed trait chart
+    extends StObject
+       with TapObjectType
   
   @js.native
-  sealed trait image extends TapObjectType
+  sealed trait image
+    extends StObject
+       with TapObjectType
   
   @js.native
-  sealed trait ole extends TapObjectType
+  sealed trait ole
+    extends StObject
+       with TapObjectType
   
   @js.native
-  sealed trait slide extends TapObjectType
+  sealed trait slide
+    extends StObject
+       with TapObjectType
   
   @js.native
-  sealed trait smartArt extends TapObjectType
+  sealed trait smartArt
+    extends StObject
+       with TapObjectType
   
   @js.native
-  sealed trait table extends TapObjectType
+  sealed trait table
+    extends StObject
+       with TapObjectType
   
   @js.native
-  sealed trait text extends TapObjectType
+  sealed trait text
+    extends StObject
+       with TapObjectType
 }

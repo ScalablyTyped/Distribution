@@ -3,93 +3,91 @@ package typings.maximMazurokGapiClientBooks.anon
 import typings.maximMazurokGapiClientBooks.gapi.client.books.Volumeseriesinfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowAnonLogging extends StObject {
   
   /** Whether anonymous logging should be allowed. */
-  var allowAnonLogging: js.UndefOr[Boolean] = js.native
+  var allowAnonLogging: js.UndefOr[Boolean] = js.undefined
   
   /** The names of the authors and/or editors for this volume. (In LITE projection) */
-  var authors: js.UndefOr[js.Array[String]] = js.native
+  var authors: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The mean review rating for this volume. (min = 1.0, max = 5.0) */
-  var averageRating: js.UndefOr[Double] = js.native
+  var averageRating: js.UndefOr[Double] = js.undefined
   
   /** Canonical URL for a volume. (In LITE projection.) */
-  var canonicalVolumeLink: js.UndefOr[String] = js.native
+  var canonicalVolumeLink: js.UndefOr[String] = js.undefined
   
   /** A list of subject categories, such as "Fiction", "Suspense", etc. */
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether the volume has comics content. */
-  var comicsContent: js.UndefOr[Boolean] = js.native
+  var comicsContent: js.UndefOr[Boolean] = js.undefined
   
   /** An identifier for the version of the volume content (text & images). (In LITE projection) */
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
   /** A synopsis of the volume. The text of the description is formatted in HTML and includes simple formatting elements, such as b, i, and br tags. (In LITE projection.) */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Physical dimensions of this volume. */
-  var dimensions: js.UndefOr[Height] = js.native
+  var dimensions: js.UndefOr[Height] = js.undefined
   
   /** A list of image links for all the sizes that are available. (In LITE projection.) */
-  var imageLinks: js.UndefOr[ExtraLarge] = js.native
+  var imageLinks: js.UndefOr[ExtraLarge] = js.undefined
   
   /** Industry standard identifiers for this volume. */
-  var industryIdentifiers: js.UndefOr[js.Array[Identifier]] = js.native
+  var industryIdentifiers: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /** URL to view information about this volume on the Google Books site. (In LITE projection) */
-  var infoLink: js.UndefOr[String] = js.native
+  var infoLink: js.UndefOr[String] = js.undefined
   
   /** Best language for this volume (based on content). It is the two-letter ISO 639-1 code such as 'fr', 'en', etc. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** The main category to which this volume belongs. It will be the category from the categories list returned below that has the highest weight. */
-  var mainCategory: js.UndefOr[String] = js.native
+  var mainCategory: js.UndefOr[String] = js.undefined
   
-  var maturityRating: js.UndefOr[String] = js.native
+  var maturityRating: js.UndefOr[String] = js.undefined
   
   /** Total number of pages as per publisher metadata. */
-  var pageCount: js.UndefOr[Double] = js.native
+  var pageCount: js.UndefOr[Double] = js.undefined
   
   /** A top-level summary of the panelization info in this volume. */
-  var panelizationSummary: js.UndefOr[ContainsEpubBubbles] = js.native
+  var panelizationSummary: js.UndefOr[ContainsEpubBubbles] = js.undefined
   
   /** URL to preview this volume on the Google Books site. */
-  var previewLink: js.UndefOr[String] = js.native
+  var previewLink: js.UndefOr[String] = js.undefined
   
   /** Type of publication of this volume. Possible values are BOOK or MAGAZINE. */
-  var printType: js.UndefOr[String] = js.native
+  var printType: js.UndefOr[String] = js.undefined
   
   /** Total number of printed pages in generated pdf representation. */
-  var printedPageCount: js.UndefOr[Double] = js.native
+  var printedPageCount: js.UndefOr[Double] = js.undefined
   
   /** Date of publication. (In LITE projection.) */
-  var publishedDate: js.UndefOr[String] = js.native
+  var publishedDate: js.UndefOr[String] = js.undefined
   
   /** Publisher of this volume. (In LITE projection.) */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /** The number of review ratings for this volume. */
-  var ratingsCount: js.UndefOr[Double] = js.native
+  var ratingsCount: js.UndefOr[Double] = js.undefined
   
   /** The reading modes available for this volume. */
-  var readingModes: js.UndefOr[Image] = js.native
+  var readingModes: js.UndefOr[Image] = js.undefined
   
   /** Total number of sample pages as per publisher metadata. */
-  var samplePageCount: js.UndefOr[Double] = js.native
+  var samplePageCount: js.UndefOr[Double] = js.undefined
   
-  var seriesInfo: js.UndefOr[Volumeseriesinfo] = js.native
+  var seriesInfo: js.UndefOr[Volumeseriesinfo] = js.undefined
   
   /** Volume subtitle. (In LITE projection.) */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /** Volume title. (In LITE projection.) */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object AllowAnonLogging {
   

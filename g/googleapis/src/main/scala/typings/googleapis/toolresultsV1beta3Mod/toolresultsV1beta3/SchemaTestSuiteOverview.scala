@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * only. This message is also being used in ExecutionService in a read only
   * mode for the corresponding step.
   */
-@js.native
 trait SchemaTestSuiteOverview extends StObject {
   
   /**
@@ -19,32 +17,32 @@ trait SchemaTestSuiteOverview extends StObject {
     * the xml_source.  - In create/response: always set - In update request:
     * never
     */
-  var errorCount: js.UndefOr[Double] = js.native
+  var errorCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of failed test cases, typically set by the service by parsing the
     * xml_source. May also be set by the user.  - In create/response: always
     * set - In update request: never
     */
-  var failureCount: js.UndefOr[Double] = js.native
+  var failureCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the test suite.  - In create/response: always set - In update
     * request: never
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of test cases not run, typically set by the service by parsing the
     * xml_source.  - In create/response: always set - In update request: never
     */
-  var skippedCount: js.UndefOr[Double] = js.native
+  var skippedCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Number of test cases, typically set by the service by parsing the
     * xml_source.  - In create/response: always set - In update request: never
     */
-  var totalCount: js.UndefOr[Double] = js.native
+  var totalCount: js.UndefOr[Double] = js.undefined
   
   /**
     * If this test suite was parsed from XML, this is the URI where the
@@ -52,7 +50,7 @@ trait SchemaTestSuiteOverview extends StObject {
     * same xml_source  Returns INVALID_ARGUMENT if the uri format is not
     * supported.  - In create/response: optional - In update request: never
     */
-  var xmlSource: js.UndefOr[SchemaFileReference] = js.native
+  var xmlSource: js.UndefOr[SchemaFileReference] = js.undefined
 }
 object SchemaTestSuiteOverview {
   

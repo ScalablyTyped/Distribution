@@ -2,13 +2,13 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WeightedDiGraph extends WeightedGraph {
+trait WeightedDiGraph
+  extends StObject
+     with WeightedGraph {
   
-  def toDiGraph(): DiGraph = js.native
+  def toDiGraph(): DiGraph
 }
 object WeightedDiGraph {
   

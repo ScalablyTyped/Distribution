@@ -4,55 +4,51 @@ import typings.jscodeshift.coreMod.Options
 import typings.jscodeshift.coreMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testUtilsMod {
   
-  @JSImport("jscodeshift/src/testUtils", "defineInlineTest")
+  @JSImport("jscodeshift/src/testUtils", JSImport.Namespace)
   @js.native
-  def defineInlineTest(module: Transform, options: Options, inputSource: String, expectedOutputSource: String): js.Function0[_] = js.native
-  @JSImport("jscodeshift/src/testUtils", "defineInlineTest")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def defineInlineTest(module: Transform, options: Options, inputSource: String, expectedOutputSource: String): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineInlineTest")(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any], inputSource.asInstanceOf[js.Any], expectedOutputSource.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+  @scala.inline
   def defineInlineTest(
     module: Transform,
     options: Options,
     inputSource: String,
     expectedOutputSource: String,
     testName: String
-  ): js.Function0[_] = js.native
+  ): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineInlineTest")(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any], inputSource.asInstanceOf[js.Any], expectedOutputSource.asInstanceOf[js.Any], testName.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
   
-  @JSImport("jscodeshift/src/testUtils", "defineTest")
-  @js.native
-  def defineTest(dirName: String, transformName: String, options: Options): js.Function0[_] = js.native
-  @JSImport("jscodeshift/src/testUtils", "defineTest")
-  @js.native
-  def defineTest(
-    dirName: String,
-    transformName: String,
-    options: Options,
-    testFilePrefix: js.UndefOr[scala.Nothing],
-    testOptions: TestOptions
-  ): js.Function0[_] = js.native
-  @JSImport("jscodeshift/src/testUtils", "defineTest")
-  @js.native
-  def defineTest(dirName: String, transformName: String, options: Options, testFilePrefix: String): js.Function0[_] = js.native
-  @JSImport("jscodeshift/src/testUtils", "defineTest")
-  @js.native
+  @scala.inline
+  def defineTest(dirName: String, transformName: String, options: Options): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTest")(dirName.asInstanceOf[js.Any], transformName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+  @scala.inline
+  def defineTest(dirName: String, transformName: String, options: Options, testFilePrefix: String): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTest")(dirName.asInstanceOf[js.Any], transformName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testFilePrefix.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+  @scala.inline
   def defineTest(
     dirName: String,
     transformName: String,
     options: Options,
     testFilePrefix: String,
     testOptions: TestOptions
-  ): js.Function0[_] = js.native
+  ): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTest")(dirName.asInstanceOf[js.Any], transformName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testFilePrefix.asInstanceOf[js.Any], testOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+  @scala.inline
+  def defineTest(
+    dirName: String,
+    transformName: String,
+    options: Options,
+    testFilePrefix: Unit,
+    testOptions: TestOptions
+  ): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTest")(dirName.asInstanceOf[js.Any], transformName.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testFilePrefix.asInstanceOf[js.Any], testOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
   
-  @js.native
   trait TestOptions extends StObject {
     
     var parser: js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Parser */ js.Any) | String
-      ] = js.native
+      ] = js.undefined
   }
   object TestOptions {
     

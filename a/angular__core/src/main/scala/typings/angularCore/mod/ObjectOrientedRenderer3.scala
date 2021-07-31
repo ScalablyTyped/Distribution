@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * like HTMLElement. With this style, no additional code is needed as a facade
   * (reducing payload size).
   * */
-@js.native
-trait ObjectOrientedRenderer3 extends Renderer3 {
+trait ObjectOrientedRenderer3
+  extends StObject
+     with Renderer3 {
   
-  def createComment(data: String): RComment = js.native
+  def createComment(data: String): RComment
   
-  def createElement(tagName: String): RElement = js.native
+  def createElement(tagName: String): RElement
   
-  def createElementNS(namespace: String, tagName: String): RElement = js.native
+  def createElementNS(namespace: String, tagName: String): RElement
   
-  def createTextNode(data: String): RText = js.native
+  def createTextNode(data: String): RText
   
-  def querySelector(selectors: String): RElement | Null = js.native
+  def querySelector(selectors: String): RElement | Null
 }
 object ObjectOrientedRenderer3 {
   

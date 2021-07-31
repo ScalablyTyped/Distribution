@@ -4,21 +4,19 @@ import typings.co.coBooleans.`false`
 import typings.co.coBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var done: `false` = js.native
+    var done: `false`
   }
   object `0` {
     
     @scala.inline
-    def apply(done: `false`): `0` = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(done = false)
       __obj.asInstanceOf[`0`]
     }
     
@@ -30,10 +28,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    def next(): `0` = js.native
+    def next(): `0`
   }
   object `1` {
     
@@ -58,10 +55,9 @@ object anon {
     var iterator: js.Function0[`1`] = js.native
   }
   
-  @js.native
   trait `3` extends StObject {
     
-    def next(): Value = js.native
+    def next(): Value
   }
   object `3` {
     
@@ -90,24 +86,20 @@ object anon {
   trait `5` extends StObject {
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[_] = js.native
+    var iterator: js.Function0[js.Any] = js.native
   }
   
-  @js.native
   trait Done extends StObject {
     
-    var done: `true` = js.native
+    var done: `true`
     
-    var value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any = js.native
+    var value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
   }
   object Done {
     
     @scala.inline
-    def apply(
-      done: `true`,
-      value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-    ): Done = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any): Done = {
+      val __obj = js.Dynamic.literal(done = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done]
     }
     
@@ -129,10 +121,9 @@ object anon {
     var iterator: js.Function0[Next] = js.native
   }
   
-  @js.native
   trait Next extends StObject {
     
-    def next(): Done = js.native
+    def next(): Done
   }
   object Next {
     
@@ -150,10 +141,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any = js.native
+    var value: /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
   }
   object Value {
     

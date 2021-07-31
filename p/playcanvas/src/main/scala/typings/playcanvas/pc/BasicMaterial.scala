@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   modulated by the color property.
   */
 @js.native
-trait BasicMaterial extends Material {
+trait BasicMaterial
+  extends StObject
+     with Material {
   
   /**
     * The flat color of the material (RGBA, where each component is 0 to 1).

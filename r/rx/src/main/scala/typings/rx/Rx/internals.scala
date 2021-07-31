@@ -7,26 +7,25 @@ import org.scalablytyped.runtime.Instantiable5
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internals {
   
-  @js.native
   trait AbstractObserver[T]
-    extends IObserver[T]
+    extends StObject
+       with IObserver[T]
        with IDisposable {
     
-    def completed(): Unit = js.native
+    def completed(): Unit
     
-    def error(error: js.Any): Unit = js.native
+    def error(error: js.Any): Unit
     
-    def fail(e: js.Any): Boolean = js.native
+    def fail(e: js.Any): Boolean
     
-    var isStopped: Boolean = js.native
+    var isStopped: Boolean
     
     // Must be implemented by other observers
-    def next(value: T): Unit = js.native
+    def next(value: T): Unit
   }
   object AbstractObserver {
     
@@ -47,7 +46,7 @@ object internals {
     }
     
     @scala.inline
-    implicit class AbstractObserverMutableBuilder[Self <: AbstractObserver[_], T] (val x: Self with AbstractObserver[T]) extends AnyVal {
+    implicit class AbstractObserverMutableBuilder[Self <: AbstractObserver[?], T] (val x: Self & AbstractObserver[T]) extends AnyVal {
       
       @scala.inline
       def setCompleted(value: () => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
@@ -68,10 +67,12 @@ object internals {
   
   @js.native
   trait AbstractObserverStatic
-    extends Instantiable0[AbstractObserver[js.Object]]
+    extends StObject
+       with Instantiable0[AbstractObserver[js.Object]]
   
-  @js.native
-  trait ArgumentOutOfRangeError extends Error
+  trait ArgumentOutOfRangeError
+    extends StObject
+       with Error
   object ArgumentOutOfRangeError {
     
     @scala.inline
@@ -82,10 +83,13 @@ object internals {
   }
   
   @js.native
-  trait ArgumentOutOfRangeErrorStatic extends Instantiable0[ArgumentOutOfRangeError]
+  trait ArgumentOutOfRangeErrorStatic
+    extends StObject
+       with Instantiable0[ArgumentOutOfRangeError]
   
-  @js.native
-  trait EmptyError extends Error
+  trait EmptyError
+    extends StObject
+       with Error
   object EmptyError {
     
     @scala.inline
@@ -96,10 +100,13 @@ object internals {
   }
   
   @js.native
-  trait EmptyErrorStatic extends Instantiable0[EmptyError]
+  trait EmptyErrorStatic
+    extends StObject
+       with Instantiable0[EmptyError]
   
-  @js.native
-  trait NotImplementedError extends Error
+  trait NotImplementedError
+    extends StObject
+       with Error
   object NotImplementedError {
     
     @scala.inline
@@ -110,10 +117,13 @@ object internals {
   }
   
   @js.native
-  trait NotImplementedErrorStatic extends Instantiable0[NotImplementedError]
+  trait NotImplementedErrorStatic
+    extends StObject
+       with Instantiable0[NotImplementedError]
   
-  @js.native
-  trait NotSupportedError extends Error
+  trait NotSupportedError
+    extends StObject
+       with Error
   object NotSupportedError {
     
     @scala.inline
@@ -124,10 +134,13 @@ object internals {
   }
   
   @js.native
-  trait NotSupportedErrorStatic extends Instantiable0[NotSupportedError]
+  trait NotSupportedErrorStatic
+    extends StObject
+       with Instantiable0[NotSupportedError]
   
-  @js.native
-  trait ObjectDisposedError extends Error
+  trait ObjectDisposedError
+    extends StObject
+       with Error
   object ObjectDisposedError {
     
     @scala.inline
@@ -138,32 +151,33 @@ object internals {
   }
   
   @js.native
-  trait ObjectDisposedErrorStatic extends Instantiable0[ObjectDisposedError]
+  trait ObjectDisposedErrorStatic
+    extends StObject
+       with Instantiable0[ObjectDisposedError]
   
-  @js.native
   trait PriorityQueue[TTime] extends StObject {
     
-    def dequeue(): js.Any = js.native
+    def dequeue(): js.Any
     
     def enqueue(
       item: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any
-    ): Unit = js.native
+    ): Unit
     
-    def heapify(index: Double): Unit = js.native
+    def heapify(index: Double): Unit
     
-    def isHigherPriority(left: Double, right: Double): Boolean = js.native
+    def isHigherPriority(left: Double, right: Double): Boolean
     
-    var length: Double = js.native
+    var length: Double
     
-    def peek(): js.Any = js.native
+    def peek(): js.Any
     
-    def percolate(index: Double): Unit = js.native
+    def percolate(index: Double): Unit
     
     def remove(
       item: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ScheduledItem<TTime> */ js.Any
-    ): Boolean = js.native
+    ): Boolean
     
-    def removeAt(index: Double): Unit = js.native
+    def removeAt(index: Double): Unit
   }
   object PriorityQueue {
     
@@ -184,7 +198,7 @@ object internals {
     }
     
     @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[_], TTime] (val x: Self with PriorityQueue[TTime]) extends AnyVal {
+    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], TTime] (val x: Self & PriorityQueue[TTime]) extends AnyVal {
       
       @scala.inline
       def setDequeue(value: () => js.Any): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
@@ -221,15 +235,15 @@ object internals {
   
   @js.native
   trait PriorityQueueStatic
-    extends Instantiable1[/* capacity */ Double, PriorityQueue[js.Object]] {
+    extends StObject
+       with Instantiable1[/* capacity */ Double, PriorityQueue[js.Object]] {
     
     var count: Double = js.native
   }
   
-  @js.native
   trait SchedulePeriodicRecursive extends StObject {
     
-    def start(): IDisposable = js.native
+    def start(): IDisposable
   }
   object SchedulePeriodicRecursive {
     
@@ -249,7 +263,8 @@ object internals {
   
   @js.native
   trait SchedulePeriodicRecursiveStatic
-    extends Instantiable4[
+    extends StObject
+       with Instantiable4[
           /* scheduler */ js.Any, 
           /* state */ js.Any, 
           /* period */ js.Any, 
@@ -257,28 +272,27 @@ object internals {
           SchedulePeriodicRecursive
         ]
   
-  @js.native
   trait ScheduledItem[TTime] extends StObject {
     
-    def action(scheduler: IScheduler, state: js.Any): IDisposable = js.native
+    def action(scheduler: IScheduler, state: js.Any): IDisposable
     
-    def compareTo(other: ScheduledItem[TTime]): Double = js.native
+    def compareTo(other: ScheduledItem[TTime]): Double
     
-    def comparer(x: TTime, y: TTime): Double = js.native
+    def comparer(x: TTime, y: TTime): Double
     
-    var disposable: SingleAssignmentDisposable = js.native
+    var disposable: SingleAssignmentDisposable
     
-    var dueTime: TTime = js.native
+    var dueTime: TTime
     
-    def invoke(): Unit = js.native
+    def invoke(): Unit
     
-    def invokeCore(): IDisposable = js.native
+    def invokeCore(): IDisposable
     
-    def isCancelled(): Boolean = js.native
+    def isCancelled(): Boolean
     
-    var scheduler: IScheduler = js.native
+    var scheduler: IScheduler
     
-    var state: TTime = js.native
+    var state: TTime
   }
   object ScheduledItem {
     
@@ -300,7 +314,7 @@ object internals {
     }
     
     @scala.inline
-    implicit class ScheduledItemMutableBuilder[Self <: ScheduledItem[_], TTime] (val x: Self with ScheduledItem[TTime]) extends AnyVal {
+    implicit class ScheduledItemMutableBuilder[Self <: ScheduledItem[?], TTime] (val x: Self & ScheduledItem[TTime]) extends AnyVal {
       
       @scala.inline
       def setAction(value: (IScheduler, js.Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
@@ -336,7 +350,8 @@ object internals {
   
   @js.native
   trait ScheduledItemStatic
-    extends Instantiable4[
+    extends StObject
+       with Instantiable4[
           /* scheduler */ IScheduler, 
           /* state */ js.Any, 
           /* action */ js.Function2[/* scheduler */ IScheduler, /* state */ js.Any, IDisposable], 
@@ -352,10 +367,11 @@ object internals {
           ScheduledItem[js.Object]
         ]
   
-  @js.native
-  trait ScheduledObserver[T] extends Observer[T] {
+  trait ScheduledObserver[T]
+    extends StObject
+       with Observer[T] {
     
-    def ensureActive(): Unit = js.native
+    def ensureActive(): Unit
   }
   object ScheduledObserver {
     
@@ -376,7 +392,7 @@ object internals {
     }
     
     @scala.inline
-    implicit class ScheduledObserverMutableBuilder[Self <: ScheduledObserver[_], T] (val x: Self with ScheduledObserver[T]) extends AnyVal {
+    implicit class ScheduledObserverMutableBuilder[Self <: ScheduledObserver[?], T] (val x: Self & ScheduledObserver[T]) extends AnyVal {
       
       @scala.inline
       def setEnsureActive(value: () => Unit): Self = StObject.set(x, "ensureActive", js.Any.fromFunction0(value))

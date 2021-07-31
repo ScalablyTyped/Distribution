@@ -2,35 +2,33 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  var callTimeout: Double = js.native
+  var callTimeout: Double
   
-  def create(name: String, body: String, callback: CbCallback): Unit = js.native
+  def create(name: String, body: String, callback: CbCallback): Unit
   
-  def delete(name: String, callback: CbCallback): Unit = js.native
+  def delete(name: String, callback: CbCallback): Unit
   
-  def execute(name: String, params: js.Object, callback: CbCallback): Unit = js.native
+  def execute(name: String, params: js.Object, callback: CbCallback): Unit
   
-  def getAllServices(callback: CbCallback): Unit = js.native
+  def getAllServices(callback: CbCallback): Unit
   
-  def getCompletedServices(callback: CbCallback): Unit = js.native
+  def getCompletedServices(callback: CbCallback): Unit
   
-  def getFailedServices(callback: CbCallback): Unit = js.native
+  def getFailedServices(callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(name: String, body: String, callback: CbCallback): Unit = js.native
+  def update(name: String, body: String, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Code {
   

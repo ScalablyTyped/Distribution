@@ -2,26 +2,24 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPendingChanges extends StObject {
   
   /**
     * Enables access to the the ActiveMQ Web Console for the ActiveMQ user.
     */
-  var ConsoleAccess: js.UndefOr[boolean] = js.native
+  var ConsoleAccess: js.UndefOr[boolean] = js.undefined
   
   /**
     * The list of groups (20 maximum) to which the ActiveMQ user belongs. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Groups: js.UndefOr[listOfString] = js.native
+  var Groups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * Required. The type of change pending for the ActiveMQ user.
     */
-  var PendingChange: js.UndefOr[ChangeType] = js.native
+  var PendingChange: js.UndefOr[ChangeType] = js.undefined
 }
 object UserPendingChanges {
   

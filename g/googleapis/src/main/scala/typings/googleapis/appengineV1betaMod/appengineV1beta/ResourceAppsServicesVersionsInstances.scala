@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Services$Versions$Instances")
@@ -39,7 +38,7 @@ class ResourceAppsServicesVersionsInstances protected () extends StObject {
     */
   def debug(): GaxiosPromise[SchemaOperation] = js.native
   def debug(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def debug(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def debug(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def debug(params: ParamsResourceAppsServicesVersionsInstancesDebug): GaxiosPromise[SchemaOperation] = js.native
   def debug(
     params: ParamsResourceAppsServicesVersionsInstancesDebug,
@@ -74,7 +73,7 @@ class ResourceAppsServicesVersionsInstances protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAppsServicesVersionsInstancesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceAppsServicesVersionsInstancesDelete,
@@ -109,7 +108,7 @@ class ResourceAppsServicesVersionsInstances protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
   def get(params: ParamsResourceAppsServicesVersionsInstancesGet): GaxiosPromise[SchemaInstance] = js.native
   def get(
     params: ParamsResourceAppsServicesVersionsInstancesGet,
@@ -147,7 +146,7 @@ class ResourceAppsServicesVersionsInstances protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListInstancesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListInstancesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(params: ParamsResourceAppsServicesVersionsInstancesList): GaxiosPromise[SchemaListInstancesResponse] = js.native
   def list(
     params: ParamsResourceAppsServicesVersionsInstancesList,

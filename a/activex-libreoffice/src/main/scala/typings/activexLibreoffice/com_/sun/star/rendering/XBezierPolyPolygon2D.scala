@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * By convention, a RealBezierSegment2D is a straight line segment, if all three contained points are strictly equal.
   * @since OOo 2.0
   */
-@js.native
-trait XBezierPolyPolygon2D extends XPolyPolygon2D {
+trait XBezierPolyPolygon2D
+  extends StObject
+     with XPolyPolygon2D {
   
   /**
     * Get a single point from the poly-polygon.
@@ -30,7 +30,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @returns the requested point.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
-  def getBezierSegment(nPolygonIndex: Double, nPointIndex: Double): RealBezierSegment2D = js.native
+  def getBezierSegment(nPolygonIndex: Double, nPointIndex: Double): RealBezierSegment2D
   
   /**
     * Query subset of this poly-polygon.
@@ -44,7 +44,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @returns the sequence of extracted points.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
-  def getBezierSegments(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealBezierSegment2D]] = js.native
+  def getBezierSegments(nPolygonIndex: Double, nNumberOfPolygons: Double, nPointIndex: Double, nNumberOfPoints: Double): SafeArray[SafeArray[RealBezierSegment2D]]
   
   /**
     * Set a single point on the poly-polygon.
@@ -56,7 +56,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @param nPointIndex The index of the point in the polygon specified by nPolygonIndex, which is to be set. This value must not exceed the number of points
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
-  def setBezierSegment(point: RealBezierSegment2D, nPolygonIndex: Double, nPointIndex: Double): Unit = js.native
+  def setBezierSegment(point: RealBezierSegment2D, nPolygonIndex: Double, nPointIndex: Double): Unit
   
   /**
     * Set the specified sequence of Bezier segments to the poly-polygon.
@@ -66,7 +66,7 @@ trait XBezierPolyPolygon2D extends XPolyPolygon2D {
     * @param nPolygonIndex The index of the polygon to start segment insertion with. This index must be in the range [0,numPolygons], and the insertion will t
     * @throws com::sun::star::lang::IndexOutOfBoundsException if one of the given values exceed the permissible range.
     */
-  def setBezierSegments(points: SeqEquiv[SeqEquiv[RealBezierSegment2D]], nPolygonIndex: Double): Unit = js.native
+  def setBezierSegments(points: SeqEquiv[SeqEquiv[RealBezierSegment2D]], nPolygonIndex: Double): Unit
 }
 object XBezierPolyPolygon2D {
   

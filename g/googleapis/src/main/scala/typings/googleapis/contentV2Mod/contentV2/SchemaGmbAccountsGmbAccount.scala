@@ -2,31 +2,29 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGmbAccountsGmbAccount extends StObject {
   
   /**
     * The email which identifies the GMB account.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Number of listings under this account.
     */
-  var listingCount: js.UndefOr[String] = js.native
+  var listingCount: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the GMB account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the GMB account (User or Business).
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGmbAccountsGmbAccount {
   

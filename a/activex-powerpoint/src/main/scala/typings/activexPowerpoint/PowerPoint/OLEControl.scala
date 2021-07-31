@@ -2,30 +2,28 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OLEControl extends StObject {
   
-  var AltHTML: String = js.native
+  var AltHTML: String
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var Left: Double = js.native
+  var Left: Double
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("PowerPoint.OLEControl_typekey")
-  var PowerPointDotOLEControl_typekey: OLEControl = js.native
+  var PowerPointDotOLEControl_typekey: OLEControl
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
-  var Width: Double = js.native
+  var Width: Double
   
-  val ZOrderPosition: Double = js.native
+  val ZOrderPosition: Double
 }
 object OLEControl {
   

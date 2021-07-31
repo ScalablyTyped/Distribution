@@ -1,13 +1,18 @@
 package typings.i18nextNodeFsBackend
 
+import typings.i18next.i18nextStrings.`3rdParty`
+import typings.i18next.i18nextStrings.backend
+import typings.i18next.i18nextStrings.i18nFormat
+import typings.i18next.i18nextStrings.languageDetector
+import typings.i18next.i18nextStrings.logger
+import typings.i18next.i18nextStrings.postProcessor
 import typings.i18next.mod.BackendModule
 import typings.i18next.mod.InitOptions
+import typings.i18next.mod.ReadCallback
 import typings.i18next.mod.Services
 import typings.i18nextNodeFsBackend.i18nextNodeFsBackEnd.i18nextNodeFsBackEndOptions
-import typings.i18nextNodeFsBackend.i18nextNodeFsBackendStrings.backend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,21 +20,41 @@ object mod {
   /* was `typeof Backend` */
   @JSImport("i18next-node-fs-backend", JSImport.Namespace)
   @js.native
-  class ^ () extends Backend {
+  class ^ ()
+    extends StObject
+       with Backend {
     def this(services: js.Any) = this()
-    def this(services: js.UndefOr[scala.Nothing], options: i18nextNodeFsBackEndOptions) = this()
     def this(services: js.Any, options: i18nextNodeFsBackEndOptions) = this()
+    def this(services: Unit, options: i18nextNodeFsBackEndOptions) = this()
+    
+    /** Save the missing translation */
+    /* CompleteClass */
+    override def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def init(services: Services, backendOptions: i18nextNodeFsBackEndOptions, i18nextOptions: InitOptions): Unit = js.native
+    
+    /* CompleteClass */
+    override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
+    
+    /* CompleteClass */
+    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    /* CompleteClass */
+    @JSName("type")
+    var type_BackendModule: backend = js.native
   }
   
   @js.native
-  trait Backend extends BackendModule[i18nextNodeFsBackEndOptions] {
+  trait Backend
+    extends StObject
+       with BackendModule[i18nextNodeFsBackEndOptions] {
     
     def init(services: Services): Unit = js.native
-    def init(services: Services, backendOptions: js.UndefOr[scala.Nothing], i18nextOptions: InitOptions): Unit = js.native
+    def init(services: Services, backendOptions: Unit, i18nextOptions: InitOptions): Unit = js.native
     def init(services: Services, backendOptions: i18nextNodeFsBackEndOptions): Unit = js.native
     
     @JSName("type")
-    var type_Backend: backend = js.native
+    var type_Backend: typings.i18nextNodeFsBackend.i18nextNodeFsBackendStrings.backend = js.native
   }
   
   /* was `typeof Backend` */

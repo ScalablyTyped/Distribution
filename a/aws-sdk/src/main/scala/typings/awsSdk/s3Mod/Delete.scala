@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delete extends StObject {
   
   /**
     * The objects to delete.
     */
-  var Objects: ObjectIdentifierList = js.native
+  var Objects: ObjectIdentifierList
   
   /**
     * Element to enable quiet mode for the request. When you add this element, you must set its value to true.
     */
-  var Quiet: js.UndefOr[typings.awsSdk.s3Mod.Quiet] = js.native
+  var Quiet: js.UndefOr[typings.awsSdk.s3Mod.Quiet] = js.undefined
 }
 object Delete {
   

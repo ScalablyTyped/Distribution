@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCompatibleImagesRequest extends StObject {
   
   /**
     * The maximum number of results for the list of compatible images. Currently, a Snowball Edge device can store 10 AMIs.
     */
-  var MaxResults: js.UndefOr[ListLimit] = js.native
+  var MaxResults: js.UndefOr[ListLimit] = js.undefined
   
   /**
     * HTTP requests are stateless. To identify what object comes "next" in the list of compatible images, you can specify a value for NextToken as the starting point for your list of returned images.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListCompatibleImagesRequest {
   

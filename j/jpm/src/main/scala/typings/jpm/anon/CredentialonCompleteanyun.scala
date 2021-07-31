@@ -3,30 +3,28 @@ package typings.jpm.anon
 import typings.jpm.FFAddonSDK.NSIException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined jpm.sdk/passwords.Credential & {  onComplete :(): any | undefined,   onError :(error : jpm.FFAddonSDK.NSIException): any | undefined} */
-@js.native
 trait CredentialonCompleteanyun extends StObject {
   
-  var formSubmitURL: js.UndefOr[String] = js.native
+  var formSubmitURL: js.UndefOr[String] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function0[_]] = js.native
+  var onComplete: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ NSIException, _]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ NSIException, js.Any]] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var passwordField: js.UndefOr[String] = js.native
+  var passwordField: js.UndefOr[String] = js.undefined
   
-  var realm: js.UndefOr[String] = js.native
+  var realm: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var username: String = js.native
+  var username: String
   
-  var usernameField: js.UndefOr[String] = js.native
+  var usernameField: js.UndefOr[String] = js.undefined
 }
 object CredentialonCompleteanyun {
   
@@ -46,13 +44,13 @@ object CredentialonCompleteanyun {
     def setFormSubmitURLUndefined: Self = StObject.set(x, "formSubmitURL", js.undefined)
     
     @scala.inline
-    def setOnComplete(value: () => _): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    def setOnComplete(value: () => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def setOnError(value: /* error */ NSIException => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: /* error */ NSIException => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)

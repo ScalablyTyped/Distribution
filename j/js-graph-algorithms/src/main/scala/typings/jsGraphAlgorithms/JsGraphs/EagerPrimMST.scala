@@ -2,19 +2,17 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EagerPrimMST extends StObject {
   
-  var marked: js.Any = js.native
+  var marked: js.Any
   
-  var mst: js.Array[Edge] = js.native
+  var mst: js.Array[Edge]
   
-  var pq: js.Any = js.native
+  var pq: js.Any
   
-  def visit(G: WeightedGraph, v: Double): Unit = js.native
+  def visit(G: WeightedGraph, v: Double): Unit
 }
 object EagerPrimMST {
   

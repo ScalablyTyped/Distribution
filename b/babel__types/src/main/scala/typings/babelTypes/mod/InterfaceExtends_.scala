@@ -3,28 +3,27 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.InterfaceExtends
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait InterfaceExtends_
-  extends Flow
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait InterfaceExtends_
+  extends StObject
+     with BaseNode
+     with Flow {
   
-  var id: Identifier_ | QualifiedTypeIdentifier_ = js.native
+  var id: Identifier_ | QualifiedTypeIdentifier_
   
-  var typeParameters: TypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_InterfaceExtends_ : InterfaceExtends = js.native
+  var type_InterfaceExtends_ : InterfaceExtends
 }
 object InterfaceExtends_ {
   
   @scala.inline
-  def apply(id: Identifier_ | QualifiedTypeIdentifier_, `type`: InterfaceExtends): InterfaceExtends_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_ | QualifiedTypeIdentifier_): InterfaceExtends_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("InterfaceExtends")
     __obj.asInstanceOf[InterfaceExtends_]
   }
   

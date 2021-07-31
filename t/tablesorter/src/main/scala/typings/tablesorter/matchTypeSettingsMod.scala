@@ -3,23 +3,21 @@ package typings.tablesorter
 import typings.tablesorter.matchTypeMod.MatchType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchTypeSettingsMod {
   
-  @js.native
   trait MatchTypeSettings extends StObject {
     
     /**
       * The match-type for `input`-controls.
       */
-    var input: js.UndefOr[MatchType] = js.native
+    var input: js.UndefOr[MatchType] = js.undefined
     
     /**
       * The match-type for `select`-controls.
       */
-    var select: js.UndefOr[MatchType] = js.native
+    var select: js.UndefOr[MatchType] = js.undefined
   }
   object MatchTypeSettings {
     

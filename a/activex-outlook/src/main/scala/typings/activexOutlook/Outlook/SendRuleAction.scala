@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendRuleAction extends StObject {
   
-  val ActionType: OlRuleActionType = js.native
+  val ActionType: OlRuleActionType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Outlook.SendRuleAction_typekey")
-  var OutlookDotSendRuleAction_typekey: SendRuleAction = js.native
+  var OutlookDotSendRuleAction_typekey: SendRuleAction
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Recipients: typings.activexOutlook.Outlook.Recipients = js.native
+  val Recipients: typings.activexOutlook.Outlook.Recipients
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object SendRuleAction {
   

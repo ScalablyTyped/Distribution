@@ -11,18 +11,19 @@ import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.sunos
 import typings.mongodbMemoryServerCore.mongodbMemoryServerCoreStrings.win32
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getosMod {
   
-  @JSImport("mongodb-memory-server-core/lib/util/getos", JSImport.Default)
+  @JSImport("mongodb-memory-server-core/lib/util/getos", JSImport.Namespace)
   @js.native
-  def default(): js.Promise[AnyOS] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mongodb-memory-server-core/lib/util/getos", "isLinuxOS")
-  @js.native
-  def isLinuxOS(os: AnyOS): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean = js.native
+  @scala.inline
+  def default(): js.Promise[AnyOS] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[AnyOS]]
+  
+  @scala.inline
+  def isLinuxOS(os: AnyOS): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinuxOS")(os.asInstanceOf[js.Any]).asInstanceOf[/* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mongodbMemoryServerCore.getosMod.OtherOS
@@ -32,8 +33,8 @@ object getosMod {
   object AnyOS {
     
     @scala.inline
-    def LinuxOS(dist: String, os: linux, release: String): typings.mongodbMemoryServerCore.getosMod.LinuxOS = {
-      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+    def LinuxOS(dist: String, release: String): typings.mongodbMemoryServerCore.getosMod.LinuxOS = {
+      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = "linux", release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mongodbMemoryServerCore.getosMod.LinuxOS]
     }
     
@@ -45,23 +46,24 @@ object getosMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.mongodbMemoryServerCore.getosMod.AnyOS because Already inherited */ @js.native
-  trait LinuxOS extends OtherOS {
+  - typings.mongodbMemoryServerCore.getosMod.AnyOS because Already inherited */ trait LinuxOS
+    extends StObject
+       with OtherOS {
     
-    var codename: js.UndefOr[String] = js.native
+    var codename: js.UndefOr[String] = js.undefined
     
-    var dist: String = js.native
+    var dist: String
     
     @JSName("os")
-    var os_LinuxOS: linux = js.native
+    var os_LinuxOS: linux
     
-    var release: String = js.native
+    var release: String
   }
   object LinuxOS {
     
     @scala.inline
-    def apply(dist: String, os: linux, release: String): LinuxOS = {
-      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+    def apply(dist: String, release: String): LinuxOS = {
+      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = "linux", release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinuxOS]
     }
     
@@ -85,10 +87,11 @@ object getosMod {
     }
   }
   
-  @js.native
-  trait OtherOS extends AnyOS {
+  trait OtherOS
+    extends StObject
+       with AnyOS {
     
-    var os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin | String = js.native
+    var os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin | String
   }
   object OtherOS {
     

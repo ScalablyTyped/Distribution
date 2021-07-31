@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,11 +19,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XInteractionFilterSelect
   * @see com.sun.star.task.XInteractionAbort
   */
-@js.native
-trait NoSuchFilterRequest extends Exception {
+trait NoSuchFilterRequest
+  extends StObject
+     with Exception {
   
   /** transport URL which couldn't be detected */
-  var URL: String = js.native
+  var URL: String
 }
 object NoSuchFilterRequest {
   

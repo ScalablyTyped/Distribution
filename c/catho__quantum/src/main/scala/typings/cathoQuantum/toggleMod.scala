@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleMod {
@@ -19,16 +18,15 @@ object toggleMod {
   
   type Toggle = Component[ToggleProps, js.Object, js.Any]
   
-  @js.native
   trait ToggleProps extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSize] = js.native
+    var theme: js.UndefOr[BaseFontSize] = js.undefined
   }
   object ToggleProps {
     

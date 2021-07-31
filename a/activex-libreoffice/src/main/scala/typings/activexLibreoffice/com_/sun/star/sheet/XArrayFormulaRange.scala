@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides handling of array formulas in a cell range. */
-@js.native
-trait XArrayFormulaRange extends XInterface {
+trait XArrayFormulaRange
+  extends StObject
+     with XInterface {
   
   /** returns the array formula of the range or an empty string, if the range does not contain an array formula. */
-  var ArrayFormula: String = js.native
+  var ArrayFormula: String
   
   /** returns the array formula of the range or an empty string, if the range does not contain an array formula. */
-  def getArrayFormula(): String = js.native
+  def getArrayFormula(): String
   
   /**
     * applies the array formula to the entire cell range.
     * @param aFormula the formula that will be applied as array formula. Passing an empty string erases an existing array formula.
     */
-  def setArrayFormula(aFormula: String): Unit = js.native
+  def setArrayFormula(aFormula: String): Unit
 }
 object XArrayFormulaRange {
   

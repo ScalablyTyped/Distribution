@@ -2,11 +2,12 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StalkerThumbIterator extends ThumbWriter {
+trait StalkerThumbIterator
+  extends StObject
+     with ThumbWriter {
   
   def keep(): Unit = js.native
   

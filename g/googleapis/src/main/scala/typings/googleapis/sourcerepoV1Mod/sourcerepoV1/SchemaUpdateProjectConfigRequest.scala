@@ -2,26 +2,24 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for UpdateProjectConfig.
   */
-@js.native
 trait SchemaUpdateProjectConfigRequest extends StObject {
   
   /**
     * The new configuration for the project.
     */
-  var projectConfig: js.UndefOr[SchemaProjectConfig] = js.native
+  var projectConfig: js.UndefOr[SchemaProjectConfig] = js.undefined
   
   /**
     * A FieldMask specifying which fields of the project_config to modify. Only
     * the fields in the mask will be modified. If no mask is provided, this
     * request is no-op.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateProjectConfigRequest {
   

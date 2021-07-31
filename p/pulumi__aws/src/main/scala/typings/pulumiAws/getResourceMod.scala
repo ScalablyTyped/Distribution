@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getResourceMod {
   
-  @JSImport("@pulumi/aws/apigateway/getResource", "getResource")
+  @JSImport("@pulumi/aws/apigateway/getResource", JSImport.Namespace)
   @js.native
-  def getResource(args: GetResourceArgs): js.Promise[GetResourceResult] = js.native
-  @JSImport("@pulumi/aws/apigateway/getResource", "getResource")
-  @js.native
-  def getResource(args: GetResourceArgs, opts: InvokeOptions): js.Promise[GetResourceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getResource(args: GetResourceArgs): js.Promise[GetResourceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResource")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResourceResult]]
+  @scala.inline
+  def getResource(args: GetResourceArgs, opts: InvokeOptions): js.Promise[GetResourceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResource")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResourceResult]]
+  
   trait GetResourceArgs extends StObject {
     
     /**
       * The full path of the resource.  If no path is found, an error will be returned.
       */
-    val path: String = js.native
+    val path: String
     
     /**
       * The REST API id that owns the resource. If no REST API is found, an error will be returned.
       */
-    val restApiId: String = js.native
+    val restApiId: String
   }
   object GetResourceArgs {
     
@@ -47,27 +47,26 @@ object getResourceMod {
     }
   }
   
-  @js.native
   trait GetResourceResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set to the ID of the parent Resource.
       */
-    val parentId: String = js.native
+    val parentId: String
     
-    val path: String = js.native
+    val path: String
     
     /**
       * Set to the path relative to the parent Resource.
       */
-    val pathPart: String = js.native
+    val pathPart: String
     
-    val restApiId: String = js.native
+    val restApiId: String
   }
   object GetResourceResult {
     

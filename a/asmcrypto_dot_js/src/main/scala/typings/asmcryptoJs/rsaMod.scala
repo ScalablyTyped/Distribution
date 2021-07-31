@@ -5,7 +5,6 @@ import typings.asmcryptoJs.bignumMod.Modulus
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsaMod {
@@ -24,24 +23,23 @@ object rsaMod {
     var result: Uint8Array = js.native
   }
   
-  @js.native
   trait key extends StObject {
     
-    var `0`: Modulus = js.native
+    var `0`: Modulus
     
-    var `1`: BigNumber = js.native
+    var `1`: BigNumber
     
-    var `2`: js.UndefOr[BigNumber] = js.native
+    var `2`: js.UndefOr[BigNumber] = js.undefined
     
-    var `3`: js.UndefOr[Modulus] = js.native
+    var `3`: js.UndefOr[Modulus] = js.undefined
     
-    var `4`: js.UndefOr[Modulus] = js.native
+    var `4`: js.UndefOr[Modulus] = js.undefined
     
-    var `5`: js.UndefOr[BigNumber] = js.native
+    var `5`: js.UndefOr[BigNumber] = js.undefined
     
-    var `6`: js.UndefOr[BigNumber] = js.native
+    var `6`: js.UndefOr[BigNumber] = js.undefined
     
-    var `7`: js.UndefOr[BigNumber] = js.native
+    var `7`: js.UndefOr[BigNumber] = js.undefined
   }
   object key {
     

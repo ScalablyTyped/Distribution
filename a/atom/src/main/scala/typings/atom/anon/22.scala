@@ -4,15 +4,13 @@ import typings.atom.atomStrings.Subsequence
 import typings.atom.atomStrings.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `22` extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
+  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
   
-  var value: Subsequence | Symbol = js.native
+  var value: Subsequence | Symbol
 }
 object `22` {
   

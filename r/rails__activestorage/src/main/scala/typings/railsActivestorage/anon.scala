@@ -4,17 +4,15 @@ import typings.std.File
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DirectUploadData extends StObject {
     
-    var directUploadData: Headers = js.native
+    var directUploadData: Headers
     
-    var file: File = js.native
+    var file: File
   }
   object DirectUploadData {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: Record[String, String] = js.native
+    var headers: Record[String, String]
     
-    var url: String = js.native
+    var url: String
   }
   object Headers {
     

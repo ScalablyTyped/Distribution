@@ -2,20 +2,18 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration of MQTT for a device registry.
   */
-@js.native
 trait SchemaMqttConfig extends StObject {
   
   /**
     * If enabled, allows connections using the MQTT protocol. Otherwise, MQTT
     * connections to this registry will fail.
     */
-  var mqttEnabledState: js.UndefOr[String] = js.native
+  var mqttEnabledState: js.UndefOr[String] = js.undefined
 }
 object SchemaMqttConfig {
   

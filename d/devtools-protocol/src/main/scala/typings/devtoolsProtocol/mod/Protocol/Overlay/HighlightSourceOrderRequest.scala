@@ -5,31 +5,29 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightSourceOrderRequest extends StObject {
   
   /**
     * Identifier of the backend node to highlight.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * Identifier of the node to highlight.
     */
-  var nodeId: js.UndefOr[NodeId] = js.native
+  var nodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * JavaScript object id of the node to be highlighted.
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * A descriptor for the appearance of the overlay drawing.
     */
-  var sourceOrderConfig: SourceOrderConfig = js.native
+  var sourceOrderConfig: SourceOrderConfig
 }
 object HighlightSourceOrderRequest {
   

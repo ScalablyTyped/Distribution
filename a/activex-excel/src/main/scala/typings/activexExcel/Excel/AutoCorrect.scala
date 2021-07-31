@@ -3,44 +3,42 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoCorrect extends StObject {
   
   /** @returns The string to be replaced */
-  def AddReplacement(What: String, Replacement: String): String = js.native
+  def AddReplacement(What: String, Replacement: String): String
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AutoExpandListRange: Boolean = js.native
+  var AutoExpandListRange: Boolean
   
-  var AutoFillFormulasInLists: Boolean = js.native
+  var AutoFillFormulasInLists: Boolean
   
-  var CapitalizeNamesOfDays: Boolean = js.native
+  var CapitalizeNamesOfDays: Boolean
   
-  var CorrectCapsLock: Boolean = js.native
+  var CorrectCapsLock: Boolean
   
-  var CorrectSentenceCap: Boolean = js.native
+  var CorrectSentenceCap: Boolean
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   /** @returns The string to be replaced */
-  def DeleteReplacement(What: String): String = js.native
+  def DeleteReplacement(What: String): String
   
-  var DisplayAutoCorrectOptions: Boolean = js.native
+  var DisplayAutoCorrectOptions: Boolean
   
   @JSName("Excel.AutoCorrect_typekey")
-  var ExcelDotAutoCorrect_typekey: AutoCorrect = js.native
+  var ExcelDotAutoCorrect_typekey: AutoCorrect
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ReplaceText: Boolean = js.native
+  var ReplaceText: Boolean
   
-  def ReplacementList(Index: Double): SafeArray[String] = js.native
+  def ReplacementList(Index: Double): SafeArray[String]
   
-  var TwoInitialCapitals: Boolean = js.native
+  var TwoInitialCapitals: Boolean
 }
 object AutoCorrect {
   

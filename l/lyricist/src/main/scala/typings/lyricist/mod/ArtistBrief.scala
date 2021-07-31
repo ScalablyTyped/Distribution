@@ -2,27 +2,25 @@ package typings.lyricist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtistBrief extends StObject {
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var header_image_url: String = js.native
+  var header_image_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var image_url: String = js.native
+  var image_url: String
   
-  var is_meme_verified: Boolean = js.native
+  var is_meme_verified: Boolean
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var url: String = js.native
+  var url: String
 }
 object ArtistBrief {
   

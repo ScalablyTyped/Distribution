@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,23 +30,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;b2c941073e...&quot;,         size: 1294,       }, is_executable: true
   * }   ] } ```
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2Directory extends StObject {
   
   /**
     * The subdirectories in the directory.
     */
-  var directories: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2DirectoryNode]] = js.native
+  var directories: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2DirectoryNode]] = js.undefined
   
   /**
     * The files in the directory.
     */
-  var files: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2FileNode]] = js.native
+  var files: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2FileNode]] = js.undefined
   
   /**
     * The symlinks in the directory.
     */
-  var symlinks: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2SymlinkNode]] = js.native
+  var symlinks: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2SymlinkNode]] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2Directory {
   

@@ -2,7 +2,6 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * returns google.rpc.Code.INVALID_ARGUMENT. See [content
   * limits](/speech-to-text/quotas#content).
   */
-@js.native
 trait SchemaRecognitionAudio extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaRecognitionAudio extends StObject {
     * as with all bytes fields, protobuffers use a pure binary representation,
     * whereas JSON representations use base64.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * URI that points to a file that contains audio data bytes as specified in
@@ -30,7 +28,7 @@ trait SchemaRecognitionAudio extends StObject {
     * information, see [Request
     * URIs](https://cloud.google.com/storage/docs/reference-uris).
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaRecognitionAudio {
   

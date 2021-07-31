@@ -14,10 +14,13 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.right
 import typings.blueprintjsCore.blueprintjsCoreStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positionMod {
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/position", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined {  BOTTOM :'bottom',   BOTTOM_LEFT :'bottom-left',   BOTTOM_RIGHT :'bottom-right',   LEFT :'left',   LEFT_BOTTOM :'left-bottom',   LEFT_TOP :'left-top',   RIGHT :'right',   RIGHT_BOTTOM :'right-bottom',   RIGHT_TOP :'right-top',   TOP :'top',   TOP_LEFT :'top-left',   TOP_RIGHT :'top-right'}[keyof {  BOTTOM :'bottom',   BOTTOM_LEFT :'bottom-left',   BOTTOM_RIGHT :'bottom-right',   LEFT :'left',   LEFT_BOTTOM :'left-bottom',   LEFT_TOP :'left-top',   RIGHT :'right',   RIGHT_BOTTOM :'right-bottom',   RIGHT_TOP :'right-top',   TOP :'top',   TOP_LEFT :'top-left',   TOP_RIGHT :'top-right'}] */
   /* Rewritten from type alias, can be one of: 
@@ -114,15 +117,12 @@ object positionMod {
     def TOP_RIGHT_=(x: `top-right`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_RIGHT")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/core/lib/esm/common/position", "getPositionIgnoreAngles")
-  @js.native
-  def getPositionIgnoreAngles(position: Position): left | right | bottom | top = js.native
+  @scala.inline
+  def getPositionIgnoreAngles(position: Position): left | right | bottom | top = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionIgnoreAngles")(position.asInstanceOf[js.Any]).asInstanceOf[left | right | bottom | top]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/position", "isPositionHorizontal")
-  @js.native
-  def isPositionHorizontal(position: Position): Boolean = js.native
+  @scala.inline
+  def isPositionHorizontal(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionHorizontal")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/position", "isPositionVertical")
-  @js.native
-  def isPositionVertical(position: Position): Boolean = js.native
+  @scala.inline
+  def isPositionVertical(position: Position): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionVertical")(position.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

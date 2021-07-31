@@ -9,7 +9,6 @@ import typings.winrtUwp.winrtUwpStrings.cueexited
 import typings.winrtUwp.winrtUwpStrings.trackfailed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a timed metadata track. The track contains a list of IMediaCue objects and raises events at the beginning and end of the time window of each cue. */
@@ -25,7 +24,7 @@ trait TimedMetadataTrack extends StObject {
     */
   def addCue(cue: IMediaCue): Unit = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cueentered(`type`: cueentered, listener: TypedEventHandler[TimedMetadataTrack, MediaCueEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -52,19 +51,19 @@ trait TimedMetadataTrack extends StObject {
   var language: String = js.native
   
   /** Occurs when a media time window of a media cue is entered. The time window is defined by the StartTime and Duration of the cue. */
-  def oncueentered(ev: MediaCueEventArgs with WinRTEvent[TimedMetadataTrack]): Unit = js.native
+  def oncueentered(ev: MediaCueEventArgs & WinRTEvent[TimedMetadataTrack]): Unit = js.native
   /** Occurs when a media time window of a media cue is entered. The time window is defined by the StartTime and Duration of the cue. */
   @JSName("oncueentered")
   var oncueentered_Original: TypedEventHandler[TimedMetadataTrack, MediaCueEventArgs] = js.native
   
   /** Occurs when a media time window of a media cue is exited. The time window is defined by the StartTime and Duration of the cue. */
-  def oncueexited(ev: MediaCueEventArgs with WinRTEvent[TimedMetadataTrack]): Unit = js.native
+  def oncueexited(ev: MediaCueEventArgs & WinRTEvent[TimedMetadataTrack]): Unit = js.native
   /** Occurs when a media time window of a media cue is exited. The time window is defined by the StartTime and Duration of the cue. */
   @JSName("oncueexited")
   var oncueexited_Original: TypedEventHandler[TimedMetadataTrack, MediaCueEventArgs] = js.native
   
   /** Raised when an error occurs with the TimedMetadataTrack . */
-  def ontrackfailed(ev: TimedMetadataTrackFailedEventArgs with WinRTEvent[TimedMetadataTrack]): Unit = js.native
+  def ontrackfailed(ev: TimedMetadataTrackFailedEventArgs & WinRTEvent[TimedMetadataTrack]): Unit = js.native
   /** Raised when an error occurs with the TimedMetadataTrack . */
   @JSName("ontrackfailed")
   var ontrackfailed_Original: TypedEventHandler[TimedMetadataTrack, TimedMetadataTrackFailedEventArgs] = js.native
@@ -75,7 +74,7 @@ trait TimedMetadataTrack extends StObject {
     */
   def removeCue(cue: IMediaCue): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cueentered(`type`: cueentered, listener: TypedEventHandler[TimedMetadataTrack, MediaCueEventArgs]): Unit = js.native
   @JSName("removeEventListener")

@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetEmulatedMediaRequest extends StObject {
   
   /**
     * Media features to emulate.
     */
-  var features: js.UndefOr[js.Array[MediaFeature]] = js.native
+  var features: js.UndefOr[js.Array[MediaFeature]] = js.undefined
   
   /**
     * Media type to emulate. Empty string disables the override.
     */
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
 }
 object SetEmulatedMediaRequest {
   

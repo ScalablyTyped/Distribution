@@ -3,13 +3,11 @@ package typings.kendoUi
 import typings.kendoUi.kendo.data.BindingTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElement extends StObject {
   
-  var kendoBindingTarget: BindingTarget = js.native
+  var kendoBindingTarget: BindingTarget
 }
 object HTMLElement {
   

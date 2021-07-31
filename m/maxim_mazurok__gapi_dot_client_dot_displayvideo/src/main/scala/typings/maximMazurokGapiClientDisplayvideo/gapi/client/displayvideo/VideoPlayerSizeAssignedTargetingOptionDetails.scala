@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoPlayerSizeAssignedTargetingOptionDetails extends StObject {
   
   /** Required. The targeting_option_id field when targeting_type is `TARGETING_TYPE_VIDEO_PLAYER_SIZE`. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
   
   /** Output only. The video player size. */
-  var videoPlayerSize: js.UndefOr[String] = js.native
+  var videoPlayerSize: js.UndefOr[String] = js.undefined
 }
 object VideoPlayerSizeAssignedTargetingOptionDetails {
   

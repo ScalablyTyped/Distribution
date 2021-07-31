@@ -2,61 +2,59 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LdapServerMetadataOutput extends StObject {
   
   /**
     * Fully qualified domain name of the LDAP server. Optional failover server.
     */
-  var Hosts: js.UndefOr[listOfString] = js.native
+  var Hosts: js.UndefOr[listOfString] = js.undefined
   
   /**
     * Fully qualified name of the directory to search for a user’s groups.
     */
-  var RoleBase: js.UndefOr[string] = js.native
+  var RoleBase: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies the LDAP attribute that identifies the group name attribute in the object returned from the group membership query.
     */
-  var RoleName: js.UndefOr[string] = js.native
+  var RoleName: js.UndefOr[string] = js.undefined
   
   /**
     * The search criteria for groups.
     */
-  var RoleSearchMatching: js.UndefOr[string] = js.native
+  var RoleSearchMatching: js.UndefOr[string] = js.undefined
   
   /**
     * The directory search scope for the role. If set to true, scope is to search the entire sub-tree.
     */
-  var RoleSearchSubtree: js.UndefOr[boolean] = js.native
+  var RoleSearchSubtree: js.UndefOr[boolean] = js.undefined
   
   /**
     * Service account username.
     */
-  var ServiceAccountUsername: js.UndefOr[string] = js.native
+  var ServiceAccountUsername: js.UndefOr[string] = js.undefined
   
   /**
     * Fully qualified name of the directory where you want to search for users.
     */
-  var UserBase: js.UndefOr[string] = js.native
+  var UserBase: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies the name of the LDAP attribute for the user group membership.
     */
-  var UserRoleName: js.UndefOr[string] = js.native
+  var UserRoleName: js.UndefOr[string] = js.undefined
   
   /**
     * The search criteria for users.
     */
-  var UserSearchMatching: js.UndefOr[string] = js.native
+  var UserSearchMatching: js.UndefOr[string] = js.undefined
   
   /**
     * The directory search scope for the user. If set to true, scope is to search the entire sub-tree.
     */
-  var UserSearchSubtree: js.UndefOr[boolean] = js.native
+  var UserSearchSubtree: js.UndefOr[boolean] = js.undefined
 }
 object LdapServerMetadataOutput {
   

@@ -6,10 +6,8 @@ import typings.electron.electronStrings.strict
 import typings.electron.electronStrings.unspecified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cookie extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/cookie
@@ -17,56 +15,56 @@ trait Cookie extends StObject {
     * The domain of the cookie; this will be normalized with a preceding dot so that
     * it's also valid for subdomains.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * The expiration date of the cookie as the number of seconds since the UNIX epoch.
     * Not provided for session cookies.
     */
-  var expirationDate: js.UndefOr[Double] = js.native
+  var expirationDate: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the cookie is a host-only cookie; this will only be `true` if no domain
     * was passed.
     */
-  var hostOnly: js.UndefOr[Boolean] = js.native
+  var hostOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the cookie is marked as HTTP only.
     */
-  var httpOnly: js.UndefOr[Boolean] = js.native
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the cookie.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The path of the cookie.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The Same Site policy applied to this cookie.  Can be `unspecified`,
     * `no_restriction`, `lax` or `strict`.
     */
-  var sameSite: unspecified | no_restriction | lax | strict = js.native
+  var sameSite: unspecified | no_restriction | lax | strict
   
   /**
     * Whether the cookie is marked as secure.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the cookie is a session cookie or a persistent cookie with an expiration
     * date.
     */
-  var session: js.UndefOr[Boolean] = js.native
+  var session: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the cookie.
     */
-  var value: String = js.native
+  var value: String
 }
 object Cookie {
   

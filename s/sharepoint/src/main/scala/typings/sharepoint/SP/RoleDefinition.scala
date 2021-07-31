@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleDefinition extends ClientObject {
+trait RoleDefinition
+  extends StObject
+     with ClientObject {
   
   def deleteObject(): Unit = js.native
   

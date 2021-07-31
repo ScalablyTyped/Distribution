@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the style of a font face (for example, normal or italic). */
@@ -11,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FontStyle extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.FontStyle with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.FontStyle & Double] = js.native
   
-  /* 2 */ val italic: typings.winrtUwp.Windows.UI.Text.FontStyle.italic with Double = js.native
+  /* 2 */ val italic: typings.winrtUwp.Windows.UI.Text.FontStyle.italic & Double = js.native
   
-  /* 0 */ val normal: typings.winrtUwp.Windows.UI.Text.FontStyle.normal with Double = js.native
+  /* 0 */ val normal: typings.winrtUwp.Windows.UI.Text.FontStyle.normal & Double = js.native
   
-  /* 1 */ val oblique: typings.winrtUwp.Windows.UI.Text.FontStyle.oblique with Double = js.native
+  /* 1 */ val oblique: typings.winrtUwp.Windows.UI.Text.FontStyle.oblique & Double = js.native
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCollectionResponse extends StObject {
   
   /**
     * HTTP status code that indicates the result of the operation.
     */
-  var StatusCode: js.UndefOr[UInteger] = js.native
+  var StatusCode: js.UndefOr[UInteger] = js.undefined
 }
 object DeleteCollectionResponse {
   

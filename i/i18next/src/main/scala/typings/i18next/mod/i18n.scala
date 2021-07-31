@@ -15,7 +15,6 @@ import typings.i18next.i18nextStrings.removed
 import typings.i18next.i18nextStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,9 +32,9 @@ trait i18n extends StObject {
     * Setting overwrite to true it will overwrite existing translations in that file.
     */
   def addResourceBundle(lng: String, ns: String, resources: js.Any): i18n = js.native
-  def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: js.UndefOr[scala.Nothing], overwrite: Boolean): i18n = js.native
   def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: Boolean): i18n = js.native
   def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: Boolean, overwrite: Boolean): i18n = js.native
+  def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: Unit, overwrite: Boolean): i18n = js.native
   
   /**
     * Adds multiple key/values.
@@ -54,7 +53,7 @@ trait i18n extends StObject {
     * Can be used to create an instance sharing storage but being independent on set language or namespaces.
     */
   def cloneInstance(): i18n = js.native
-  def cloneInstance(options: js.UndefOr[scala.Nothing], callback: Callback): i18n = js.native
+  def cloneInstance(options: Unit, callback: Callback): i18n = js.native
   def cloneInstance(options: InitOptions): i18n = js.native
   def cloneInstance(options: InitOptions, callback: Callback): i18n = js.native
   
@@ -65,7 +64,7 @@ trait i18n extends StObject {
     * The callback will be called after all translations were loaded or with an error when failed (in case of using a backend).
     */
   def createInstance(): i18n = js.native
-  def createInstance(options: js.UndefOr[scala.Nothing], callback: Callback): i18n = js.native
+  def createInstance(options: Unit, callback: Callback): i18n = js.native
   def createInstance(options: InitOptions): i18n = js.native
   def createInstance(options: InitOptions, callback: Callback): i18n = js.native
   
@@ -97,18 +96,13 @@ trait i18n extends StObject {
     * Exposes interpolation.format function added on init.
     */
   def format(value: js.Any): String = js.native
-  def format(
-    value: js.Any,
-    format: js.UndefOr[scala.Nothing],
-    lng: js.UndefOr[scala.Nothing],
-    options: InterpolationOptionskeyst
-  ): String = js.native
-  def format(value: js.Any, format: js.UndefOr[scala.Nothing], lng: String): String = js.native
-  def format(value: js.Any, format: js.UndefOr[scala.Nothing], lng: String, options: InterpolationOptionskeyst): String = js.native
   def format(value: js.Any, format: String): String = js.native
-  def format(value: js.Any, format: String, lng: js.UndefOr[scala.Nothing], options: InterpolationOptionskeyst): String = js.native
   def format(value: js.Any, format: String, lng: String): String = js.native
   def format(value: js.Any, format: String, lng: String, options: InterpolationOptionskeyst): String = js.native
+  def format(value: js.Any, format: String, lng: Unit, options: InterpolationOptionskeyst): String = js.native
+  def format(value: js.Any, format: Unit, lng: String): String = js.native
+  def format(value: js.Any, format: Unit, lng: String, options: InterpolationOptionskeyst): String = js.native
+  def format(value: js.Any, format: Unit, lng: Unit, options: InterpolationOptionskeyst): String = js.native
   /**
     * Exposes interpolation.format function added on init.
     */
@@ -267,27 +261,27 @@ trait i18n extends StObject {
     * Reloads resources on given state. Optionally you can pass an array of languages and namespaces as params if you don't want to reload all.
     */
   def reloadResources(): js.Promise[Unit] = js.native
-  def reloadResources(lngs: js.UndefOr[scala.Nothing], ns: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
-  def reloadResources(lngs: js.UndefOr[scala.Nothing], ns: String): js.Promise[Unit] = js.native
-  def reloadResources(lngs: js.UndefOr[scala.Nothing], ns: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
-  def reloadResources(lngs: js.UndefOr[scala.Nothing], ns: js.Array[String]): js.Promise[Unit] = js.native
-  def reloadResources(lngs: js.UndefOr[scala.Nothing], ns: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: String): js.Promise[Unit] = js.native
-  def reloadResources(lngs: String, ns: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: String, ns: String): js.Promise[Unit] = js.native
   def reloadResources(lngs: String, ns: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: String, ns: js.Array[String]): js.Promise[Unit] = js.native
   def reloadResources(lngs: String, ns: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def reloadResources(lngs: String, ns: Unit, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: js.Array[String]): js.Promise[Unit] = js.native
-  def reloadResources(lngs: js.Array[String], ns: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: js.Array[String], ns: String): js.Promise[Unit] = js.native
   def reloadResources(lngs: js.Array[String], ns: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: js.Array[String], ns: js.Array[String]): js.Promise[Unit] = js.native
   def reloadResources(lngs: js.Array[String], ns: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def reloadResources(lngs: js.Array[String], ns: Unit, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: Null, ns: String): js.Promise[Unit] = js.native
   def reloadResources(lngs: Null, ns: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def reloadResources(lngs: Null, ns: js.Array[String]): js.Promise[Unit] = js.native
   def reloadResources(lngs: Null, ns: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def reloadResources(lngs: Unit, ns: String): js.Promise[Unit] = js.native
+  def reloadResources(lngs: Unit, ns: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def reloadResources(lngs: Unit, ns: js.Array[String]): js.Promise[Unit] = js.native
+  def reloadResources(lngs: Unit, ns: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
+  def reloadResources(lngs: Unit, ns: Unit, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   
   /**
     * Removes an existing bundle.
@@ -312,21 +306,17 @@ trait i18n extends StObject {
   // basic usage
   // Expose parameterized t in the i18next interface hierarchy
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys): TResult = js.native
-  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: js.UndefOr[scala.Nothing], options: String): TResult = js.native
-  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: js.UndefOr[scala.Nothing], options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: Unit, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: Unit, options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
-  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: js.UndefOr[scala.Nothing], options: String): TResult = js.native
-  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](
-    key: js.Array[TKeys],
-    defaultValue: js.UndefOr[scala.Nothing],
-    options: TOptions[TInterpolationMap]
-  ): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: Unit, options: String): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: Unit, options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
   // Expose parameterized t in the i18next interface hierarchy

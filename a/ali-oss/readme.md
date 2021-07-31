@@ -10,10 +10,10 @@ aliyun oss(object storage service) node client
 | ------------------ | :-------------: |
 | Full name          | ali-oss |
 | Keywords           | oss, client, file, aliyun |
-| # releases         | 21 |
-| # dependents       | 532 |
-| # downloads        | 807347 |
-| # stars            | 7 |
+| # releases         | 26 |
+| # dependents       | 639 |
+| # downloads        | 1093038 |
+| # stars            | 8 |
 
 ## Links
 - [Homepage](https://github.com/aliyun/oss-nodejs-sdk)

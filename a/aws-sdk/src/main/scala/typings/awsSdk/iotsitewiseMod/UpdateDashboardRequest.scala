@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDashboardRequest extends StObject {
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The new dashboard definition, as specified in a JSON literal. For detailed information, see Creating dashboards (CLI) in the AWS IoT SiteWise User Guide.
     */
-  var dashboardDefinition: DashboardDefinition = js.native
+  var dashboardDefinition: DashboardDefinition
   
   /**
     * A new description for the dashboard.
     */
-  var dashboardDescription: js.UndefOr[Description] = js.native
+  var dashboardDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The ID of the dashboard to update.
     */
-  var dashboardId: ID = js.native
+  var dashboardId: ID
   
   /**
     * A new friendly name for the dashboard.
     */
-  var dashboardName: Name = js.native
+  var dashboardName: Name
 }
 object UpdateDashboardRequest {
   

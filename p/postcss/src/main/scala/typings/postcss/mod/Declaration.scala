@@ -2,7 +2,6 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,8 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Declaration
-  extends ChildNode
-     with NodeBase {
+  extends StObject
+     with NodeBase
+     with ChildNode {
   
   /**
     * True if the declaration has an !important annotation.

@@ -11,7 +11,7 @@ __Contributors:__
 | Keywords           | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 30821 |
+| # downloads        | 31075 |
 | # stars            | 1 |
 
 ## Links

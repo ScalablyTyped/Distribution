@@ -5,15 +5,16 @@ import typings.geojson.mod.FeatureCollection
 import typings.geojson.mod.GeoJsonProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("geojson2osm", "geojson2osm")
+  @JSImport("geojson2osm", JSImport.Namespace)
   @js.native
-  def geojson2osm(features: Feature[_, GeoJsonProperties]): js.Any = js.native
-  @JSImport("geojson2osm", "geojson2osm")
-  @js.native
-  def geojson2osm(features: FeatureCollection[_, GeoJsonProperties]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def geojson2osm(features: Feature[js.Any, GeoJsonProperties]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("geojson2osm")(features.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def geojson2osm(features: FeatureCollection[js.Any, GeoJsonProperties]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("geojson2osm")(features.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

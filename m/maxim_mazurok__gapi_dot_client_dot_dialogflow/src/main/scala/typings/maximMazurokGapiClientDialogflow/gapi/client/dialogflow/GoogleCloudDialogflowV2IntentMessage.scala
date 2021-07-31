@@ -3,60 +3,58 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessage extends StObject {
   
   /** The basic card response for Actions on Google. */
-  var basicCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageBasicCard] = js.native
+  var basicCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageBasicCard] = js.undefined
   
   /** Browse carousel card for Actions on Google. */
-  var browseCarouselCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] = js.native
+  var browseCarouselCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] = js.undefined
   
   /** The card response. */
-  var card: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCard] = js.native
+  var card: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCard] = js.undefined
   
   /** The carousel card response for Actions on Google. */
-  var carouselSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCarouselSelect] = js.native
+  var carouselSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageCarouselSelect] = js.undefined
   
   /** The image response. */
-  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.native
+  var image: js.UndefOr[GoogleCloudDialogflowV2IntentMessageImage] = js.undefined
   
   /** The link out suggestion chip for Actions on Google. */
-  var linkOutSuggestion: js.UndefOr[GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] = js.native
+  var linkOutSuggestion: js.UndefOr[GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] = js.undefined
   
   /** The list card response for Actions on Google. */
-  var listSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageListSelect] = js.native
+  var listSelect: js.UndefOr[GoogleCloudDialogflowV2IntentMessageListSelect] = js.undefined
   
   /** The media content card for Actions on Google. */
-  var mediaContent: js.UndefOr[GoogleCloudDialogflowV2IntentMessageMediaContent] = js.native
+  var mediaContent: js.UndefOr[GoogleCloudDialogflowV2IntentMessageMediaContent] = js.undefined
   
   /** A custom platform-specific response. */
   var payload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2IntentMessage with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2IntentMessage & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. The platform that this message is intended for. */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /** The quick replies response. */
-  var quickReplies: js.UndefOr[GoogleCloudDialogflowV2IntentMessageQuickReplies] = js.native
+  var quickReplies: js.UndefOr[GoogleCloudDialogflowV2IntentMessageQuickReplies] = js.undefined
   
   /** The voice and text-only responses for Actions on Google. */
-  var simpleResponses: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSimpleResponses] = js.native
+  var simpleResponses: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSimpleResponses] = js.undefined
   
   /** The suggestion chips for Actions on Google. */
-  var suggestions: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSuggestions] = js.native
+  var suggestions: js.UndefOr[GoogleCloudDialogflowV2IntentMessageSuggestions] = js.undefined
   
   /** Table card for Actions on Google. */
-  var tableCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageTableCard] = js.native
+  var tableCard: js.UndefOr[GoogleCloudDialogflowV2IntentMessageTableCard] = js.undefined
   
   /** The text response. */
-  var text: js.UndefOr[GoogleCloudDialogflowV2IntentMessageText] = js.native
+  var text: js.UndefOr[GoogleCloudDialogflowV2IntentMessageText] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessage {
   
@@ -121,7 +119,7 @@ object GoogleCloudDialogflowV2IntentMessage {
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2IntentMessage with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2IntentMessage & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline

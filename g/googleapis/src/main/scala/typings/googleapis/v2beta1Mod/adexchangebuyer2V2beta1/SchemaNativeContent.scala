@@ -2,80 +2,78 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Native content for a creative.
   */
-@js.native
 trait SchemaNativeContent extends StObject {
   
   /**
     * The name of the advertiser or sponsor, to be displayed in the ad
     * creative.
     */
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
   /**
     * The app icon, for app download ads.
     */
-  var appIcon: js.UndefOr[SchemaImage] = js.native
+  var appIcon: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * A long description of the ad.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * A label for the button that the user is supposed to click.
     */
-  var callToAction: js.UndefOr[String] = js.native
+  var callToAction: js.UndefOr[String] = js.undefined
   
   /**
     * The URL that the browser/SDK will load when the user clicks the ad.
     */
-  var clickLinkUrl: js.UndefOr[String] = js.native
+  var clickLinkUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to use for click tracking.
     */
-  var clickTrackingUrl: js.UndefOr[String] = js.native
+  var clickTrackingUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A short title for the ad.
     */
-  var headline: js.UndefOr[String] = js.native
+  var headline: js.UndefOr[String] = js.undefined
   
   /**
     * A large image.
     */
-  var image: js.UndefOr[SchemaImage] = js.native
+  var image: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * A smaller image, for the advertiser&#39;s logo.
     */
-  var logo: js.UndefOr[SchemaImage] = js.native
+  var logo: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * The price of the promoted app including currency info.
     */
-  var priceDisplayText: js.UndefOr[String] = js.native
+  var priceDisplayText: js.UndefOr[String] = js.undefined
   
   /**
     * The app rating in the app store. Must be in the range [0-5].
     */
-  var starRating: js.UndefOr[Double] = js.native
+  var starRating: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL to the app store to purchase/download the promoted app.
     */
-  var storeUrl: js.UndefOr[String] = js.native
+  var storeUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to fetch a native video ad.
     */
-  var videoUrl: js.UndefOr[String] = js.native
+  var videoUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaNativeContent {
   

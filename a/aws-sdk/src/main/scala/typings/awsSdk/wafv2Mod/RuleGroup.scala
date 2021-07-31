@@ -2,46 +2,44 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the entity.
     */
-  var ARN: ResourceArn = js.native
+  var ARN: ResourceArn
   
   /**
     * The web ACL capacity units (WCUs) required for this rule group. When you create your own rule group, you define this, and you cannot change it after creation. When you add or modify the rules in a rule group, AWS WAF enforces this limit. You can check the capacity for a set of rules using CheckCapacity. AWS WAF uses WCUs to calculate and control the operating resources that are used to run your rules, rule groups, and web ACLs. AWS WAF calculates capacity differently for each rule type, to reflect the relative cost of each rule. Simple rules that cost little to run use fewer WCUs than more complex rules that use more processing power. Rule group capacity is fixed at creation, which helps users plan their web ACL WCU usage when they use a rule group. The WCU limit for web ACLs is 1,500. 
     */
-  var Capacity: CapacityUnit = js.native
+  var Capacity: CapacityUnit
   
   /**
     * A description of the rule group that helps with identification. You cannot change the description of a rule group after you create it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * A unique identifier for the rule group. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
     */
-  var Id: EntityId = js.native
+  var Id: EntityId
   
   /**
     * The name of the rule group. You cannot change the name of a rule group after you create it.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
   /**
     * The Rule statements used to identify the web requests that you want to allow, block, or count. Each rule includes one top-level statement that AWS WAF uses to identify matching web requests, and parameters that govern how AWS WAF handles them. 
     */
-  var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.native
+  var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.undefined
   
   /**
     * Defines and enables Amazon CloudWatch metrics and web request sample collection. 
     */
-  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig = js.native
+  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig
 }
 object RuleGroup {
   

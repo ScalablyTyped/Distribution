@@ -2,25 +2,23 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileMapOptions extends StObject {
   
-  var buffer: js.UndefOr[Double] = js.native
+  var buffer: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var posx: js.UndefOr[Double] = js.native
+  var posx: js.UndefOr[Double] = js.undefined
   
-  var posy: js.UndefOr[Double] = js.native
+  var posy: js.UndefOr[Double] = js.undefined
   
-  var sizex: js.UndefOr[Double] = js.native
+  var sizex: js.UndefOr[Double] = js.undefined
   
-  var sizey: js.UndefOr[Double] = js.native
+  var sizey: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TileMapOptions {
   

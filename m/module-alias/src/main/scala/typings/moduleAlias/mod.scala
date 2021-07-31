@@ -3,7 +3,6 @@ package typings.moduleAlias
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,57 +10,52 @@ object mod {
   /**
     * Import aliases from package.json
     */
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: String): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("module-alias", JSImport.Namespace)
   @js.native
-  def apply(): Unit = js.native
-  @JSImport("module-alias", JSImport.Namespace)
-  @js.native
-  def apply(options: String): Unit = js.native
-  @JSImport("module-alias", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Register a single alias
     */
-  @JSImport("module-alias", "addAlias")
-  @js.native
-  def addAlias(alias: String, path: String): Unit = js.native
+  @scala.inline
+  def addAlias(alias: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAlias")(alias.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Register mutliple aliases
     */
-  @JSImport("module-alias", "addAliases")
-  @js.native
-  def addAliases(aliases: StringDictionary[String]): Unit = js.native
+  @scala.inline
+  def addAliases(aliases: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAliases")(aliases.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Register a custom modules directory
     */
-  @JSImport("module-alias", "addPath")
-  @js.native
-  def addPath(path: String): Unit = js.native
+  @scala.inline
+  def addPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("module-alias", "isPathMatchesAlias")
-  @js.native
-  def isPathMatchesAlias(path: String, alias: String): Boolean = js.native
+  @scala.inline
+  def isPathMatchesAlias(path: String, alias: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPathMatchesAlias")(path.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Reset any changes maded (resets all registered aliases
     * and custom module directories)
     * The function is undocumented and for testing purposes only
     */
-  @JSImport("module-alias", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   /**
     * module intialis options type
     */
-  @js.native
   trait Options extends StObject {
     
-    var base: String = js.native
+    var base: String
   }
   object Options {
     

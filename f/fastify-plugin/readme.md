@@ -10,9 +10,9 @@ Plugin helper for Fastify
 | ------------------ | :-------------: |
 | Full name          | fastify-plugin |
 | Keywords           | plugin, helper, fastify |
-| # releases         | 17 |
-| # dependents       | 430 |
-| # downloads        | 4797041 |
+| # releases         | 16 |
+| # dependents       | 513 |
+| # downloads        | 7955994 |
 | # stars            | 2 |
 
 ## Links

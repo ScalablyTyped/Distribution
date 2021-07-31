@@ -2,71 +2,69 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReplayResponse extends StObject {
   
   /**
     * The description of the replay.
     */
-  var Description: js.UndefOr[ReplayDescription] = js.native
+  var Description: js.UndefOr[ReplayDescription] = js.undefined
   
   /**
     * A ReplayDestination object that contains details about the replay.
     */
-  var Destination: js.UndefOr[ReplayDestination] = js.native
+  var Destination: js.UndefOr[ReplayDestination] = js.undefined
   
   /**
     * The time stamp for the last event that was replayed from the archive.
     */
-  var EventEndTime: js.UndefOr[Timestamp] = js.native
+  var EventEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time that the event was last replayed.
     */
-  var EventLastReplayedTime: js.UndefOr[Timestamp] = js.native
+  var EventLastReplayedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the archive events were replayed from.
     */
-  var EventSourceArn: js.UndefOr[Arn] = js.native
+  var EventSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time stamp of the first event that was last replayed from the archive.
     */
-  var EventStartTime: js.UndefOr[Timestamp] = js.native
+  var EventStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ARN of the replay.
     */
-  var ReplayArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayArn] = js.native
+  var ReplayArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayArn] = js.undefined
   
   /**
     * A time stamp for the time that the replay stopped.
     */
-  var ReplayEndTime: js.UndefOr[Timestamp] = js.native
+  var ReplayEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the replay.
     */
-  var ReplayName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayName] = js.native
+  var ReplayName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayName] = js.undefined
   
   /**
     * A time stamp for the time that the replay started.
     */
-  var ReplayStartTime: js.UndefOr[Timestamp] = js.native
+  var ReplayStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current state of the replay.
     */
-  var State: js.UndefOr[ReplayState] = js.native
+  var State: js.UndefOr[ReplayState] = js.undefined
   
   /**
     * The reason that the replay is in the current state.
     */
-  var StateReason: js.UndefOr[ReplayStateReason] = js.native
+  var StateReason: js.UndefOr[ReplayStateReason] = js.undefined
 }
 object DescribeReplayResponse {
   

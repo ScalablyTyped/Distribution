@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.unified.CalendarIntervalType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlanningCalendarView extends Element {
+trait PlanningCalendarView
+  extends StObject
+     with Element {
   
   /**
     * Gets current value of property <code>description</code>.Description of the

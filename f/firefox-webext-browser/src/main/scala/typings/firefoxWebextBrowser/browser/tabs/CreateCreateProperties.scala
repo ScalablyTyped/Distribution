@@ -2,55 +2,53 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCreateProperties extends StObject {
   
   /**
     * Whether the tab should become the active tab in the window. Does not affect whether the window is focused (see `windows.update`). Defaults to `true`.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** The CookieStoreId for the tab that opened this tab. */
-  var cookieStoreId: js.UndefOr[String] = js.native
+  var cookieStoreId: js.UndefOr[String] = js.undefined
   
   /** Whether the tab is marked as 'discarded' when created. */
-  var discarded: js.UndefOr[Boolean] = js.native
+  var discarded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The position the tab should take in the window. The provided value will be clamped to between zero and the number of tabs in the window.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** Whether the document in the tab should be opened in reader mode. */
-  var openInReaderMode: js.UndefOr[Boolean] = js.native
+  var openInReaderMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as the newly created tab.
     */
-  var openerTabId: js.UndefOr[Double] = js.native
+  var openerTabId: js.UndefOr[Double] = js.undefined
   
   /** Whether the tab should be pinned. Defaults to `false` */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the tab should become the selected tab in the window. Defaults to `true`
     * @deprecated Please use _active_.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /** The title used for display if the tab is created in discarded mode. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to navigate the tab to initially. Fully-qualified URLs must include a scheme (i.e. 'http://www.google.com', not 'www.google.com'). Relative URLs will be relative to the current page within the extension. Defaults to the New Tab Page.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** The window to create the new tab in. Defaults to the current window. */
-  var windowId: js.UndefOr[Double] = js.native
+  var windowId: js.UndefOr[Double] = js.undefined
 }
 object CreateCreateProperties {
   

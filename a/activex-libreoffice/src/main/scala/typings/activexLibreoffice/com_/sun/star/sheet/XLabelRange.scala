@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These can be column or row labels, depending on where they are used.
   * @see com.sun.star.sheet.LabelRange
   */
-@js.native
-trait XLabelRange extends XInterface {
+trait XLabelRange
+  extends StObject
+     with XInterface {
   
   /** returns the cell range address for which the labels are valid. */
-  var DataArea: CellRangeAddress = js.native
+  var DataArea: CellRangeAddress
   
   /** returns the cell range address that contains the labels. */
-  var LabelArea: CellRangeAddress = js.native
+  var LabelArea: CellRangeAddress
   
   /** returns the cell range address for which the labels are valid. */
-  def getDataArea(): CellRangeAddress = js.native
+  def getDataArea(): CellRangeAddress
   
   /** returns the cell range address that contains the labels. */
-  def getLabelArea(): CellRangeAddress = js.native
+  def getLabelArea(): CellRangeAddress
   
   /** sets the cell range address for which the labels are valid. */
-  def setDataArea(aDataArea: CellRangeAddress): Unit = js.native
+  def setDataArea(aDataArea: CellRangeAddress): Unit
   
   /** sets the cell range address that contains the labels. */
-  def setLabelArea(aLabelArea: CellRangeAddress): Unit = js.native
+  def setLabelArea(aLabelArea: CellRangeAddress): Unit
 }
 object XLabelRange {
   

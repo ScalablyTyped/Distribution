@@ -2,32 +2,30 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextFieldExpression extends StObject {
   
   /** Checks whether the value of the field begins with the specified substring */
-  def BeginsWith(value: String): IExpression = js.native
+  def BeginsWith(value: String): IExpression
   
   /** Checks whether the value of the field contains the specified substring */
-  def Contains(value: String): IExpression = js.native
+  def Contains(value: String): IExpression
   
   /** Checks whether the value of the field is equal to the specified value */
-  def EqualTo(value: String): IExpression = js.native
+  def EqualTo(value: String): IExpression
   
   /** Checks whether the value of the field is equal to one of the specified values */
-  def In(arrayOfValues: js.Array[String]): IExpression = js.native
+  def In(arrayOfValues: js.Array[String]): IExpression
   
   /** Checks whether the value of the field was not specified by user */
-  def IsNotNull(): IExpression = js.native
+  def IsNotNull(): IExpression
   
   /** Checks whether the value of the field was specified by user */
-  def IsNull(): IExpression = js.native
+  def IsNull(): IExpression
   
   /** Checks whether the value of the field is not equal to the specified value */
-  def NotEqualTo(value: String): IExpression = js.native
+  def NotEqualTo(value: String): IExpression
 }
 object ITextFieldExpression {
   

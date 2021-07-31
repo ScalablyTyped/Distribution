@@ -7,16 +7,16 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChannelbannersInsert extends StandardParameters {
+trait ParamsResourceChannelbannersInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The channelId parameter identifies the YouTube channel to which the
@@ -28,12 +28,12 @@ trait ParamsResourceChannelbannersInsert extends StandardParameters {
     * official policy regarding backward incompatible changes and the API
     * revision history for the exact date that the parameter was introduced.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -47,12 +47,12 @@ trait ParamsResourceChannelbannersInsert extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaChannelBannerResource] = js.native
+  var requestBody: js.UndefOr[SchemaChannelBannerResource] = js.undefined
 }
 object ParamsResourceChannelbannersInsert {
   

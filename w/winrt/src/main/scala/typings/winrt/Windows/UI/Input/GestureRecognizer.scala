@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GestureRecognizer extends IGestureRecognizer
+trait GestureRecognizer
+  extends StObject
+     with IGestureRecognizer
 object GestureRecognizer {
   
   @scala.inline

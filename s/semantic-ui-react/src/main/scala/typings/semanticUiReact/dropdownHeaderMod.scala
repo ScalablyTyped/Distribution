@@ -14,7 +14,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.iconIconMod.IconProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownHeaderMod extends Shortcut {
@@ -31,9 +30,9 @@ object dropdownHeaderMod extends Shortcut {
   @js.native
   val default: ComponentClass[DropdownHeaderProps, ComponentState] = js.native
   
-  @js.native
   trait DropdownHeaderProps
-    extends StrictDropdownHeaderProps
+    extends StObject
+       with StrictDropdownHeaderProps
        with /* key */ StringDictionary[js.Any]
   object DropdownHeaderProps {
     
@@ -44,23 +43,22 @@ object dropdownHeaderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictDropdownHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for Icon. */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
   }
   object StrictDropdownHeaderProps {
     

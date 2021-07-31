@@ -6,7 +6,6 @@ import typings.googleMaps.googleMapsStrings.subway_
 import typings.googleMaps.googleMapsStrings.tram_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

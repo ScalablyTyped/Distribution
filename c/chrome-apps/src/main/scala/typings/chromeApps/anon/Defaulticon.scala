@@ -3,28 +3,26 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.read_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Defaulticon extends StObject {
   
   /** Icon */
-  var default_icon: String = js.native
+  var default_icon: String
   
   /** What the button will display */
-  var default_title: String = js.native
+  var default_title: String
   
   /** ['read'] = read only mode */
-  var file_access: js.UndefOr[js.Array[read_ | String]] = js.native
+  var file_access: js.UndefOr[js.Array[read_ | String]] = js.undefined
   
   /**
     * To match all files, use 'filesystem:*.*'
     */
-  var file_filters: js.Array[String] = js.native
+  var file_filters: js.Array[String]
   
   /** Handler id */
-  var id: String = js.native
+  var id: String
 }
 object Defaulticon {
   

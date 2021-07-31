@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to import a document from a given URL into this document. */
-@js.native
-trait XDocumentInsertable extends XInterface {
+trait XDocumentInsertable
+  extends StObject
+     with XInterface {
   
   /** inserts the document that is specified by the URL. */
-  def insertDocumentFromURL(aURL: String, aOptions: SeqEquiv[PropertyValue]): Unit = js.native
+  def insertDocumentFromURL(aURL: String, aOptions: SeqEquiv[PropertyValue]): Unit
 }
 object XDocumentInsertable {
   

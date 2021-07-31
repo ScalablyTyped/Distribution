@@ -4,15 +4,13 @@ import typings.std.SyntaxError
 import typings.vueCompilerCore.mod.CompilerError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCParseResult extends StObject {
   
-  var descriptor: SFCDescriptor = js.native
+  var descriptor: SFCDescriptor
   
-  var errors: js.Array[CompilerError | SyntaxError] = js.native
+  var errors: js.Array[CompilerError | SyntaxError]
 }
 object SFCParseResult {
   

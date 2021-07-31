@@ -3,7 +3,6 @@ package typings.operationRetrier
 import typings.operationRetrier.anon.Initial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,10 +28,13 @@ object mod {
   }
   object Backoff {
     
-    /* static member */
-    @JSImport("operation-retrier", "Backoff.exponential")
+    @JSImport("operation-retrier", "Backoff")
     @js.native
-    def exponential(options: js.Any): typings.operationRetrier.backoffMod.Backoff = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def exponential(options: js.Any): typings.operationRetrier.backoffMod.Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[typings.operationRetrier.backoffMod.Backoff]
   }
   
   /**

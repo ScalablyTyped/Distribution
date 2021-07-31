@@ -54,7 +54,6 @@ import typings.std.Window
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -152,7 +151,7 @@ trait JQueryStatic extends StObject {
     */
   // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
-  def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery[TElement] = js.native
+  def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[js.Any]): JQuery[TElement] = js.native
   def apply[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
@@ -169,7 +168,7 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
     * @since 1.8
     */
-  def Animation[TElement](element: TElement, props: PlainObject[_], opts: EffectsOptions[TElement]): typings.jquery.JQuery.Animation[TElement] = js.native
+  def Animation[TElement](element: TElement, props: PlainObject[js.Any], opts: EffectsOptions[TElement]): typings.jquery.JQuery.Animation[TElement] = js.native
   @JSName("Animation")
   var Animation_Original: AnimationStatic = js.native
   
@@ -218,8 +217,8 @@ trait JQueryStatic extends StObject {
   jQuery( "body" ).trigger( e );
   ```
     */
-  def Event[T /* <: js.Object */](event: String): typings.jquery.JQuery.Event with T = js.native
-  def Event[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQuery.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String): typings.jquery.JQuery.Event & T = js.native
+  def Event[T /* <: js.Object */](event: String, properties: T): typings.jquery.JQuery.Event & T = js.native
   @JSName("Event")
   var Event_Original: EventStatic = js.native
   
@@ -228,14 +227,6 @@ trait JQueryStatic extends StObject {
     * @since 1.8
     */
   def Tween[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double): typings.jquery.JQuery.Tween[TElement] = js.native
-  def Tween[TElement](
-    elem: TElement,
-    options: EffectsOptions[TElement],
-    prop: String,
-    end: Double,
-    easing: js.UndefOr[scala.Nothing],
-    unit: String
-  ): typings.jquery.JQuery.Tween[TElement] = js.native
   def Tween[TElement](elem: TElement, options: EffectsOptions[TElement], prop: String, end: Double, easing: String): typings.jquery.JQuery.Tween[TElement] = js.native
   def Tween[TElement](
     elem: TElement,
@@ -243,6 +234,14 @@ trait JQueryStatic extends StObject {
     prop: String,
     end: Double,
     easing: String,
+    unit: String
+  ): typings.jquery.JQuery.Tween[TElement] = js.native
+  def Tween[TElement](
+    elem: TElement,
+    options: EffectsOptions[TElement],
+    prop: String,
+    end: Double,
+    easing: Unit,
     unit: String
   ): typings.jquery.JQuery.Tween[TElement] = js.native
   @JSName("Tween")
@@ -314,8 +313,8 @@ trait JQueryStatic extends StObject {
   });
   ```
     */
-  def ajax(): jqXHR[_] = js.native
-  def ajax(settings: AjaxSettings[_]): jqXHR[_] = js.native
+  def ajax(): jqXHR[js.Any] = js.native
+  def ajax(settings: AjaxSettings[js.Any]): jqXHR[js.Any] = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     * @param url A string containing the URL to which the request is sent.
@@ -324,8 +323,8 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
     * @since 1.5
     */
-  def ajax(url: String): jqXHR[_] = js.native
-  def ajax(url: String, settings: AjaxSettings[_]): jqXHR[_] = js.native
+  def ajax(url: String): jqXHR[js.Any] = js.native
+  def ajax(url: String, settings: AjaxSettings[js.Any]): jqXHR[js.Any] = js.native
   
   /**
     * Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().
@@ -337,9 +336,9 @@ trait JQueryStatic extends StObject {
   def ajaxPrefilter(
     dataTypes: String,
     handler: js.Function3[
-      /* options */ AjaxSettings[_], 
-      /* originalOptions */ AjaxSettings[_], 
-      /* jqXHR */ jqXHR[_], 
+      /* options */ AjaxSettings[js.Any], 
+      /* originalOptions */ AjaxSettings[js.Any], 
+      /* jqXHR */ jqXHR[js.Any], 
       String | Unit
     ]
   ): Unit = js.native
@@ -351,9 +350,9 @@ trait JQueryStatic extends StObject {
     */
   def ajaxPrefilter(
     handler: js.Function3[
-      /* options */ AjaxSettings[_], 
-      /* originalOptions */ AjaxSettings[_], 
-      /* jqXHR */ jqXHR[_], 
+      /* options */ AjaxSettings[js.Any], 
+      /* originalOptions */ AjaxSettings[js.Any], 
+      /* jqXHR */ jqXHR[js.Any], 
       String | Unit
     ]
   ): Unit = js.native
@@ -362,7 +361,7 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax1 }\`
     * @deprecated ​ Deprecated. Use \`{@link ajaxSetup }\`.
     */
-  var ajaxSettings: AjaxSettings[_] = js.native
+  var ajaxSettings: AjaxSettings[js.Any] = js.native
   
   /**
     * Set default values for future Ajax requests. Its use is not recommended.
@@ -379,7 +378,7 @@ trait JQueryStatic extends StObject {
   $.ajax({ data: myData });
   ```
     */
-  def ajaxSetup(options: AjaxSettings[_]): AjaxSettings[_] = js.native
+  def ajaxSetup(options: AjaxSettings[js.Any]): AjaxSettings[js.Any] = js.native
   
   /**
     * Creates an object that handles the actual transmission of Ajax data.
@@ -391,9 +390,9 @@ trait JQueryStatic extends StObject {
   def ajaxTransport(
     dataType: String,
     handler: js.Function3[
-      /* options */ AjaxSettings[_], 
-      /* originalOptions */ AjaxSettings[_], 
-      /* jqXHR */ jqXHR[_], 
+      /* options */ AjaxSettings[js.Any], 
+      /* originalOptions */ AjaxSettings[js.Any], 
+      /* jqXHR */ jqXHR[js.Any], 
       Transport | Unit
     ]
   ): Unit = js.native
@@ -403,7 +402,7 @@ trait JQueryStatic extends StObject {
     */
   def camelCase(value: String): String = js.native
   
-  def cleanData(elems: ArrayLike[Element | Document | Window | PlainObject[_]]): Unit = js.native
+  def cleanData(elems: ArrayLike[Element | Document | Window | PlainObject[js.Any]]): Unit = js.native
   
   /**
     * Check to see if a DOM element is a descendant of another DOM element.
@@ -435,12 +434,12 @@ trait JQueryStatic extends StObject {
     */
   var cssNumber: PlainObject[Boolean] = js.native
   
-  def data(element: PlainObject[_]): js.Any = js.native
-  def data(element: PlainObject[_], key: String): js.Any = js.native
-  def data(element: PlainObject[_], key: String, value: String): String = js.native
-  def data(element: PlainObject[_], key: String, value: js.Symbol): js.Symbol = js.native
-  def data(element: PlainObject[_], key: String, value: Boolean): Boolean = js.native
-  def data(element: PlainObject[_], key: String, value: Double): Double = js.native
+  def data(element: PlainObject[js.Any]): js.Any = js.native
+  def data(element: PlainObject[js.Any], key: String): js.Any = js.native
+  def data(element: PlainObject[js.Any], key: String, value: String): String = js.native
+  def data(element: PlainObject[js.Any], key: String, value: js.Symbol): js.Symbol = js.native
+  def data(element: PlainObject[js.Any], key: String, value: Boolean): Boolean = js.native
+  def data(element: PlainObject[js.Any], key: String, value: Double): Double = js.native
   def data(element: Document): js.Any = js.native
   def data(element: Document, key: String): js.Any = js.native
   def data(element: Document, key: String, value: String): String = js.native
@@ -589,12 +588,12 @@ trait JQueryStatic extends StObject {
   def data(element: Window, key: String, value: js.Symbol): js.Symbol = js.native
   def data(element: Window, key: String, value: Boolean): Boolean = js.native
   def data(element: Window, key: String, value: Double): Double = js.native
-  def data[T /* <: js.Object */](element: PlainObject[_], key: String, value: T): T = js.native
+  def data[T /* <: js.Object */](element: PlainObject[js.Any], key: String, value: T): T = js.native
   def data[T /* <: js.Object */](element: Document, key: String, value: T): T = js.native
   def data[T /* <: js.Object */](element: Element, key: String, value: T): T = js.native
   def data[T /* <: js.Object */](element: Window, key: String, value: T): T = js.native
   @JSName("data")
-  def data_Null(element: PlainObject[_], key: String): Null = js.native
+  def data_Null(element: PlainObject[js.Any], key: String): Null = js.native
   @JSName("data")
   def data_Null(element: Document, key: String): Null = js.native
   @JSName("data")
@@ -715,7 +714,7 @@ trait JQueryStatic extends StObject {
     */
   def each[T](
     array: ArrayLike[T],
-    callback: js.ThisFunction2[/* this */ T, /* indexInArray */ Double, /* value */ T, _]
+    callback: js.ThisFunction2[/* this */ T, /* indexInArray */ Double, /* value */ T, js.Any]
   ): ArrayLike[T] = js.native
   /**
     * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
@@ -780,7 +779,7 @@ trait JQueryStatic extends StObject {
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* this */ js.Any, 
       /* propertyName */ K, 
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* valueOfProperty */ js.Any, 
-      _
+      js.Any
     ]
   ): T = js.native
   
@@ -901,7 +900,7 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
     * @since 1.0
     */
-  def extend[T](target: T): this.type with T = js.native
+  def extend[T](target: T): this.type & T = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -973,7 +972,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def extend[T, U](target: T, object1: U): T with U = js.native
+  def extend[T, U](target: T, object1: U): T & U = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1046,7 +1045,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def extend[T, U, V](target: T, object1: U, object2: V): T with U with V = js.native
+  def extend[T, U, V](target: T, object1: U, object2: V): T & U & V = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1120,7 +1119,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def extend[T, U, V, W](target: T, object1: U, object2: V, object3: W): T with U with V with W = js.native
+  def extend[T, U, V, W](target: T, object1: U, object2: V, object3: W): T & U & V & W = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1195,7 +1194,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def extend[T, U, V, W, X](target: T, object1: U, object2: V, object3: W, object4: X): T with U with V with W with X = js.native
+  def extend[T, U, V, W, X](target: T, object1: U, object2: V, object3: W, object4: X): T & U & V & W & X = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1271,7 +1270,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def extend[T, U, V, W, X, Y](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T with U with V with W with X with Y = js.native
+  def extend[T, U, V, W, X, Y](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T & U & V & W & X & Y = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param target An object that will receive the new properties if additional objects are passed in or that will
@@ -1348,7 +1347,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def extend[T, U, V, W, X, Y, Z](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T with U with V with W with X with Y with Z = js.native
+  def extend[T, U, V, W, X, Y, Z](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T & U & V & W & X & Y & Z = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1402,7 +1401,7 @@ trait JQueryStatic extends StObject {
     * @since 1.1.4
     */
   @JSName("extend")
-  def extend_true[T](deep: `true`, target: T): this.type with T = js.native
+  def extend_true[T](deep: `true`, target: T): this.type & T = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1446,7 +1445,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("extend")
-  def extend_true[T, U](deep: `true`, target: T, object1: U): T with U = js.native
+  def extend_true[T, U](deep: `true`, target: T, object1: U): T & U = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1491,7 +1490,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("extend")
-  def extend_true[T, U, V](deep: `true`, target: T, object1: U, object2: V): T with U with V = js.native
+  def extend_true[T, U, V](deep: `true`, target: T, object1: U, object2: V): T & U & V = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1537,7 +1536,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("extend")
-  def extend_true[T, U, V, W](deep: `true`, target: T, object1: U, object2: V, object3: W): T with U with V with W = js.native
+  def extend_true[T, U, V, W](deep: `true`, target: T, object1: U, object2: V, object3: W): T & U & V & W = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1584,7 +1583,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("extend")
-  def extend_true[T, U, V, W, X](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X): T with U with V with W with X = js.native
+  def extend_true[T, U, V, W, X](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X): T & U & V & W & X = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1632,7 +1631,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("extend")
-  def extend_true[T, U, V, W, X, Y](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T with U with V with W with X with Y = js.native
+  def extend_true[T, U, V, W, X, Y](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T & U & V & W & X & Y = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
@@ -1681,7 +1680,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("extend")
-  def extend_true[T, U, V, W, X, Y, Z](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T with U with V with W with X with Y with Z = js.native
+  def extend_true[T, U, V, W, X, Y, Z](deep: `true`, target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T & U & V & W & X & Y & Z = js.native
   
   // Set to HTMLElement to minimize breaks but should probably be Element.
   val fn: JQuery[HTMLElement] = js.native
@@ -1705,13 +1704,13 @@ trait JQueryStatic extends StObject {
   $.get( "test.php" );
   ```
     */
-  def get(): jqXHR[_] = js.native
-  def get(url_settings: String): jqXHR[_] = js.native
-  def get(url_settings: UrlAjaxSettings[_]): jqXHR[_] = js.native
-  def get(url: String, data: String): jqXHR[_] = js.native
-  def get(url: String, data: String, success: Null, dataType: String): jqXHR[_] = js.native
-  def get(url: String, data: String, success: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def get(url: String, data: String, success: DoneCallback[_, jqXHR[_]], dataType: String): jqXHR[_] = js.native
+  def get(): jqXHR[js.Any] = js.native
+  def get(url_settings: String): jqXHR[js.Any] = js.native
+  def get(url_settings: UrlAjaxSettings[js.Any]): jqXHR[js.Any] = js.native
+  def get(url: String, data: String): jqXHR[js.Any] = js.native
+  def get(url: String, data: String, success: Null, dataType: String): jqXHR[js.Any] = js.native
+  def get(url: String, data: String, success: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def get(url: String, data: String, success: DoneCallback[js.Any, jqXHR[js.Any]], dataType: String): jqXHR[js.Any] = js.native
   /**
     * Load data from the server using a HTTP GET request.
     * @param url A string containing the URL to which the request is sent.
@@ -1722,10 +1721,15 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
     * @since 1.0
     */
-  def get(url: String, data: PlainObject[_]): jqXHR[_] = js.native
-  def get(url: String, data: PlainObject[_], success: Null, dataType: String): jqXHR[_] = js.native
-  def get(url: String, data: PlainObject[_], success: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def get(url: String, data: PlainObject[_], success: DoneCallback[_, jqXHR[_]], dataType: String): jqXHR[_] = js.native
+  def get(url: String, data: PlainObject[js.Any]): jqXHR[js.Any] = js.native
+  def get(url: String, data: PlainObject[js.Any], success: Null, dataType: String): jqXHR[js.Any] = js.native
+  def get(url: String, data: PlainObject[js.Any], success: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def get(
+    url: String,
+    data: PlainObject[js.Any],
+    success: DoneCallback[js.Any, jqXHR[js.Any]],
+    dataType: String
+  ): jqXHR[js.Any] = js.native
   /**
     * Load data from the server using a HTTP GET request.
     * @param url A string containing the URL to which the request is sent.
@@ -1758,8 +1762,8 @@ trait JQueryStatic extends StObject {
     });
   ```
     */
-  def get(url: String, success_data: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def get(url: String, success: Null, dataType: String): jqXHR[_] = js.native
+  def get(url: String, success_data: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def get(url: String, success: Null, dataType: String): jqXHR[js.Any] = js.native
   /**
     * Load data from the server using a HTTP GET request.
     * @param url A string containing the URL to which the request is sent.
@@ -1777,7 +1781,7 @@ trait JQueryStatic extends StObject {
   }, "json" );
   ```
     */
-  def get(url: String, success: DoneCallback[_, jqXHR[_]], dataType: String): jqXHR[_] = js.native
+  def get(url: String, success: DoneCallback[js.Any, jqXHR[js.Any]], dataType: String): jqXHR[js.Any] = js.native
   
   /**
     * Load JSON-encoded data from the server using a GET HTTP request.
@@ -1848,8 +1852,8 @@ trait JQueryStatic extends StObject {
   });
   ```
     */
-  def getJSON(url: String): jqXHR[_] = js.native
-  def getJSON(url: String, data: String, success: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
+  def getJSON(url: String): jqXHR[js.Any] = js.native
+  def getJSON(url: String, data: String, success: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
   /**
     * Load JSON-encoded data from the server using a GET HTTP request.
     * @param url A string containing the URL to which the request is sent.
@@ -1858,10 +1862,10 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
     * @since 1.0
     */
-  def getJSON(url: String, data: PlainObject[_], success: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def getJSON(url: String, success_data: String): jqXHR[_] = js.native
-  def getJSON(url: String, success_data: PlainObject[_]): jqXHR[_] = js.native
-  def getJSON(url: String, success_data: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
+  def getJSON(url: String, data: PlainObject[js.Any], success: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def getJSON(url: String, success_data: String): jqXHR[js.Any] = js.native
+  def getJSON(url: String, success_data: PlainObject[js.Any]): jqXHR[js.Any] = js.native
+  def getJSON(url: String, success_data: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
   
   /**
     * Load a JavaScript file from the server using a GET HTTP request, then execute it.
@@ -1869,7 +1873,7 @@ trait JQueryStatic extends StObject {
     * @since 1.12
     * @since 2.2
     */
-  def getScript(options: UrlAjaxSettings[_]): jqXHR[js.UndefOr[String]] = js.native
+  def getScript(options: UrlAjaxSettings[js.Any]): jqXHR[js.UndefOr[String]] = js.native
   /**
     * Load a JavaScript file from the server using a GET HTTP request, then execute it.
     * @param url A string containing the URL to which the request is sent.
@@ -2042,7 +2046,7 @@ trait JQueryStatic extends StObject {
     invert: Boolean
   ): js.Array[T] = js.native
   
-  def hasData(element: PlainObject[_]): Boolean = js.native
+  def hasData(element: PlainObject[js.Any]): Boolean = js.native
   def hasData(element: Document): Boolean = js.native
   /**
     * Determine whether an element has any jQuery data associated with it.
@@ -2650,7 +2654,7 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery.noop/ }\`
     * @since 1.4
     */
-  def noop(): js.UndefOr[scala.Nothing] = js.native
+  def noop(): Unit = js.native
   
   /**
     * Return a number representing the current time.
@@ -2729,11 +2733,11 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def param(obj: js.Array[_]): String = js.native
-  def param(obj: js.Array[_], traditional: Boolean): String = js.native
+  def param(obj: js.Array[js.Any]): String = js.native
+  def param(obj: js.Array[js.Any], traditional: Boolean): String = js.native
   def param(obj: JQuery[HTMLElement]): String = js.native
-  def param(obj: PlainObject[_]): String = js.native
-  def param(obj: PlainObject[_], traditional: Boolean): String = js.native
+  def param(obj: PlainObject[js.Any]): String = js.native
+  def param(obj: PlainObject[js.Any], traditional: Boolean): String = js.native
   def param(obj: JQuery[HTMLElement], traditional: Boolean): String = js.native
   
   /**
@@ -2788,8 +2792,8 @@ trait JQueryStatic extends StObject {
   def parseHTML(data: String): js.Array[typings.jquery.JQuery.Node] = js.native
   def parseHTML(data: String, context_keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
   def parseHTML(data: String, context_keepScripts: Document): js.Array[typings.jquery.JQuery.Node] = js.native
-  def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
   def parseHTML(data: String, context: Null, keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
+  def parseHTML(data: String, context: Unit, keepScripts: Boolean): js.Array[typings.jquery.JQuery.Node] = js.native
   /**
     * Parses a string into an array of DOM nodes.
     * @param data HTML string to be parsed
@@ -2876,13 +2880,13 @@ trait JQueryStatic extends StObject {
   $.post( "test.php" );
   ```
     */
-  def post(): jqXHR[_] = js.native
-  def post(url_settings: String): jqXHR[_] = js.native
-  def post(url_settings: UrlAjaxSettings[_]): jqXHR[_] = js.native
-  def post(url: String, data: String): jqXHR[_] = js.native
-  def post(url: String, data: String, success: Null, dataType: String): jqXHR[_] = js.native
-  def post(url: String, data: String, success: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def post(url: String, data: String, success: DoneCallback[_, jqXHR[_]], dataType: String): jqXHR[_] = js.native
+  def post(): jqXHR[js.Any] = js.native
+  def post(url_settings: String): jqXHR[js.Any] = js.native
+  def post(url_settings: UrlAjaxSettings[js.Any]): jqXHR[js.Any] = js.native
+  def post(url: String, data: String): jqXHR[js.Any] = js.native
+  def post(url: String, data: String, success: Null, dataType: String): jqXHR[js.Any] = js.native
+  def post(url: String, data: String, success: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def post(url: String, data: String, success: DoneCallback[js.Any, jqXHR[js.Any]], dataType: String): jqXHR[js.Any] = js.native
   /**
     * Load data from the server using a HTTP POST request.
     * @param url A string containing the URL to which the request is sent.
@@ -2900,10 +2904,15 @@ trait JQueryStatic extends StObject {
   }, "json");
   ```
     */
-  def post(url: String, data: PlainObject[_]): jqXHR[_] = js.native
-  def post(url: String, data: PlainObject[_], success: Null, dataType: String): jqXHR[_] = js.native
-  def post(url: String, data: PlainObject[_], success: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def post(url: String, data: PlainObject[_], success: DoneCallback[_, jqXHR[_]], dataType: String): jqXHR[_] = js.native
+  def post(url: String, data: PlainObject[js.Any]): jqXHR[js.Any] = js.native
+  def post(url: String, data: PlainObject[js.Any], success: Null, dataType: String): jqXHR[js.Any] = js.native
+  def post(url: String, data: PlainObject[js.Any], success: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def post(
+    url: String,
+    data: PlainObject[js.Any],
+    success: DoneCallback[js.Any, jqXHR[js.Any]],
+    dataType: String
+  ): jqXHR[js.Any] = js.native
   /**
     * Load data from the server using a HTTP POST request.
     * @param url A string containing the URL to which the request is sent.
@@ -2984,8 +2993,8 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def post(url: String, success_data: DoneCallback[_, jqXHR[_]]): jqXHR[_] = js.native
-  def post(url: String, success: Null, dataType: String): jqXHR[_] = js.native
+  def post(url: String, success_data: DoneCallback[js.Any, jqXHR[js.Any]]): jqXHR[js.Any] = js.native
+  def post(url: String, success: Null, dataType: String): jqXHR[js.Any] = js.native
   /**
     * Load data from the server using a HTTP POST request.
     * @param url A string containing the URL to which the request is sent.
@@ -2995,7 +3004,7 @@ trait JQueryStatic extends StObject {
     * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
     * @since 1.0
     */
-  def post(url: String, success: DoneCallback[_, jqXHR[_]], dataType: String): jqXHR[_] = js.native
+  def post(url: String, success: DoneCallback[js.Any, jqXHR[js.Any]], dataType: String): jqXHR[js.Any] = js.native
   
   // #endregion
   // #endregion
@@ -3039,7 +3048,7 @@ trait JQueryStatic extends StObject {
   </html>
   ```
     */
-  def proxy[TContext](context: TContext, name: /* keyof TContext */ String, additionalArguments: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
+  def proxy[TContext](context: TContext, name: /* keyof TContext */ String, additionalArguments: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3049,11 +3058,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn](funсtion: js.Function0[TReturn]): js.Function0[TReturn] = js.native
-  def proxy[TReturn](
-    funсtion: js.Function1[/* repeated */ js.Any, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    additionalArguments: js.Any*
-  ): js.Function1[/* repeated */ js.Any, TReturn] = js.native
   // #endregion
   // #endregion
   // region 8+ additional arguments
@@ -3072,6 +3076,11 @@ trait JQueryStatic extends StObject {
     context: Null,
     additionalArguments: js.Any*
   ): js.Function1[/* repeated */ js.Any, TReturn] = js.native
+  def proxy[TReturn](
+    funсtion: js.Function1[/* repeated */ js.Any, TReturn],
+    context: Unit,
+    additionalArguments: js.Any*
+  ): js.Function1[/* repeated */ js.Any, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3081,7 +3090,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, T](funсtion: js.Function1[/* t */ T, TReturn]): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A](funсtion: js.Function1[/* a */ A, TReturn], context: js.UndefOr[scala.Nothing], a: A): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3092,6 +3100,7 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, A](funсtion: js.Function1[/* a */ A, TReturn], context: Null, a: A): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A](funсtion: js.Function1[/* a */ A, TReturn], context: Unit, a: A): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3366,13 +3375,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, T, U](funсtion: js.Function2[/* t */ T, /* u */ U, TReturn]): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, T](funсtion: js.Function2[/* a */ A, /* t */ T, TReturn], context: js.UndefOr[scala.Nothing], a: A): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, B](
-    funсtion: js.Function2[/* a */ A, /* b */ B, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3394,6 +3396,8 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, A, B](funсtion: js.Function2[/* a */ A, /* b */ B, TReturn], context: Null, a: A, b: B): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A, T](funсtion: js.Function2[/* a */ A, /* t */ T, TReturn], context: Unit, a: A): js.Function1[/* t */ T, TReturn] = js.native
+  def proxy[TReturn, A, B](funсtion: js.Function2[/* a */ A, /* b */ B, TReturn], context: Unit, a: A, b: B): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3660,24 +3664,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, T, U, V](funсtion: js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn]): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, T, U](
-    funсtion: js.Function3[/* a */ A, /* t */ T, /* u */ U, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, T](
-    funсtion: js.Function3[/* a */ A, /* b */ B, /* t */ T, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, B, C](
-    funсtion: js.Function3[/* a */ A, /* b */ B, /* c */ C, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C
-  ): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -3711,6 +3697,9 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, A, B, C](funсtion: js.Function3[/* a */ A, /* b */ B, /* c */ C, TReturn], context: Null, a: A, b: B, c: C): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A, T, U](funсtion: js.Function3[/* a */ A, /* t */ T, /* u */ U, TReturn], context: Unit, a: A): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, T](funсtion: js.Function3[/* a */ A, /* b */ B, /* t */ T, TReturn], context: Unit, a: A, b: B): js.Function1[/* t */ T, TReturn] = js.native
+  def proxy[TReturn, A, B, C](funсtion: js.Function3[/* a */ A, /* b */ B, /* c */ C, TReturn], context: Unit, a: A, b: B, c: C): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -4116,32 +4105,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, T, U, V, W](funсtion: js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn]): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, T, U, V](
-    funсtion: js.Function4[/* a */ A, /* t */ T, /* u */ U, /* v */ V, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, T, U](
-    funсtion: js.Function4[/* a */ A, /* b */ B, /* t */ T, /* u */ U, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, C, T](
-    funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* t */ T, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C
-  ): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D](
-    funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -4201,6 +4164,28 @@ trait JQueryStatic extends StObject {
   def proxy[TReturn, A, B, C, D](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TReturn],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A, T, U, V](funсtion: js.Function4[/* a */ A, /* t */ T, /* u */ U, /* v */ V, TReturn], context: Unit, a: A): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
+  def proxy[TReturn, A, B, T, U](
+    funсtion: js.Function4[/* a */ A, /* b */ B, /* t */ T, /* u */ U, TReturn],
+    context: Unit,
+    a: A,
+    b: B
+  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, C, T](
+    funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* t */ T, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function1[/* t */ T, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D](
+    funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TReturn],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -4751,41 +4736,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, T, U, V, W, X](funсtion: js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn]): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, T, U, V, W](
-    funсtion: js.Function5[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, T, U, V](
-    funсtion: js.Function5[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, C, T, U](
-    funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, T](
-    funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E](
-    funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -4870,6 +4820,41 @@ trait JQueryStatic extends StObject {
   def proxy[TReturn, A, B, C, D, E](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, TReturn],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A, T, U, V, W](
+    funсtion: js.Function5[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
+    context: Unit,
+    a: A
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
+  def proxy[TReturn, A, B, T, U, V](
+    funсtion: js.Function5[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, TReturn],
+    context: Unit,
+    a: A,
+    b: B
+  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
+  def proxy[TReturn, A, B, C, T, U](
+    funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, T](
+    funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function1[/* t */ T, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E](
+    funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, TReturn],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -5560,51 +5545,6 @@ trait JQueryStatic extends StObject {
     * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
     */
   def proxy[TReturn, T, U, V, W, X, Y](funсtion: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn]): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, T, U, V, W, X](
-    funсtion: js.Function6[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, T, U, V, W](
-    funсtion: js.Function6[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, C, T, U, V](
-    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, T, U](
-    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T](
-    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F](
-    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -5712,6 +5652,51 @@ trait JQueryStatic extends StObject {
   def proxy[TReturn, A, B, C, D, E, F](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, TReturn],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A, T, U, V, W, X](
+    funсtion: js.Function6[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
+    context: Unit,
+    a: A
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
+  def proxy[TReturn, A, B, T, U, V, W](
+    funсtion: js.Function6[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
+    context: Unit,
+    a: A,
+    b: B
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
+  def proxy[TReturn, A, B, C, T, U, V](
+    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, T, U](
+    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, T](
+    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function1[/* t */ T, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F](
+    funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, TReturn],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -6535,62 +6520,6 @@ trait JQueryStatic extends StObject {
     d: D,
     e: E
   ): js.Function0[TReturn] = js.native
-  def proxy[TReturn, A, T, U, V, W, X, Y](
-    funсtion: js.Function7[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, T, U, V, W, X](
-    funсtion: js.Function7[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, C, T, U, V, W](
-    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, T, U, V](
-    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T, U](
-    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T](
-    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G](
-    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function0[TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -6731,6 +6660,62 @@ trait JQueryStatic extends StObject {
   def proxy[TReturn, A, B, C, D, E, F, G](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, TReturn],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function0[TReturn] = js.native
+  def proxy[TReturn, A, T, U, V, W, X, Y](
+    funсtion: js.Function7[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
+    context: Unit,
+    a: A
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
+  def proxy[TReturn, A, B, T, U, V, W, X](
+    funсtion: js.Function7[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
+    context: Unit,
+    a: A,
+    b: B
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
+  def proxy[TReturn, A, B, C, T, U, V, W](
+    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, T, U, V](
+    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, T, U](
+    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, T](
+    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function1[/* t */ T, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G](
+    funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, TReturn],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -7729,57 +7714,6 @@ trait JQueryStatic extends StObject {
     e: E,
     f: F
   ): js.Function0[TReturn] = js.native
-  def proxy[TReturn, A, B, T, U, V, W, X, Y](
-    funсtion: js.Function8[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, C, T, U, V, W, X](
-    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, T, U, V, W](
-    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T, U, V](
-    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, /* v */ V, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T, U](
-    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, /* u */ U, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T](
-    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, /* t */ T, TReturn],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function1[/* t */ T, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -7909,32 +7843,57 @@ trait JQueryStatic extends StObject {
     f: F,
     g: G
   ): js.Function1[/* t */ T, TReturn] = js.native
-  def proxy[TReturn, A, T, U, V, W, X, Y, Z](
-    funсtion: js.Function9[
-      /* a */ A, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
+  def proxy[TReturn, A, B, T, U, V, W, X, Y](
+    funсtion: js.Function8[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
+    context: Unit,
+    a: A,
+    b: B
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
+  def proxy[TReturn, A, B, C, T, U, V, W, X](
+    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, T, U, V, W](
+    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, T, U, V](
+    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, /* v */ V, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, T, U](
+    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, /* u */ U, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G, T](
+    funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, /* t */ T, TReturn],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function1[/* t */ T, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -7958,6 +7917,32 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
+  def proxy[TReturn, A, T, U, V, W, X, Y, Z](
+    funсtion: js.Function9[
+      /* a */ A, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
+      TReturn
+    ],
+    context: Unit,
     a: A
   ): js.Function8[
     /* t */ T, 
@@ -9173,34 +9158,6 @@ trait JQueryStatic extends StObject {
     /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  def proxy[TReturn, A, B, T, U, V, W, X, Y, Z](
-    funсtion: js.Function10[
-      /* a */ A, 
-      /* b */ B, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -9239,106 +9196,34 @@ trait JQueryStatic extends StObject {
     /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  def proxy[TReturn, A, B, C, T, U, V, W, X, Y](
-    funсtion: js.Function9[
+  def proxy[TReturn, A, B, T, U, V, W, X, Y, Z](
+    funсtion: js.Function10[
       /* a */ A, 
       /* b */ B, 
-      /* c */ C, 
       /* t */ T, 
       /* u */ U, 
       /* v */ V, 
       /* w */ W, 
       /* x */ X, 
       /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
       TReturn
     ],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     a: A,
-    b: B,
-    c: C
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, T, U, V, W, X](
-    funсtion: js.Function9[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T, U, V, W](
-    funсtion: js.Function9[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T, U, V](
-    funсtion: js.Function9[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T, U](
-    funсtion: js.Function9[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* g */ G, 
-      /* t */ T, 
-      /* u */ U, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+    b: B
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -9499,6 +9384,106 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
+  def proxy[TReturn, A, B, C, T, U, V, W, X, Y](
+    funсtion: js.Function9[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, T, U, V, W, X](
+    funсtion: js.Function9[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, T, U, V, W](
+    funсtion: js.Function9[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, T, U, V](
+    funсtion: js.Function9[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G, T, U](
+    funсtion: js.Function9[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* g */ G, 
+      /* t */ T, 
+      /* u */ U, 
+      TReturn
+    ],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -10571,92 +10556,6 @@ trait JQueryStatic extends StObject {
     /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y](
-    funсtion: js.Function10[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T, U, V, W, X](
-    funсtion: js.Function10[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W](
-    funсtion: js.Function10[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V](
-    funсtion: js.Function10[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* g */ G, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -10800,36 +10699,92 @@ trait JQueryStatic extends StObject {
     f: F,
     g: G
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  def proxy[TReturn, A, B, C, T, U, V, W, X, Y, Z](
-    funсtion: js.Function11[
+  def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y](
+    funсtion: js.Function10[
       /* a */ A, 
       /* b */ B, 
       /* c */ C, 
+      /* d */ D, 
       /* t */ T, 
       /* u */ U, 
       /* v */ V, 
       /* w */ W, 
       /* x */ X, 
       /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
       TReturn
     ],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     a: A,
     b: B,
-    c: C
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
+    c: C,
+    d: D
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, T, U, V, W, X](
+    funсtion: js.Function10[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W](
+    funсtion: js.Function10[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V](
+    funсtion: js.Function10[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* g */ G, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -10857,6 +10812,36 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A,
+    b: B,
+    c: C
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
+  def proxy[TReturn, A, B, C, T, U, V, W, X, Y, Z](
+    funсtion: js.Function11[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
+      TReturn
+    ],
+    context: Unit,
     a: A,
     b: B,
     c: C
@@ -11797,75 +11782,6 @@ trait JQueryStatic extends StObject {
     f: F,
     g: G
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y](
-    funсtion: js.Function11[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X](
-    funсtion: js.Function11[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W](
-    funсtion: js.Function11[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* g */ G, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -11980,38 +11896,75 @@ trait JQueryStatic extends StObject {
     f: F,
     g: G
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y, Z](
-    funсtion: js.Function12[
+  def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y](
+    funсtion: js.Function11[
       /* a */ A, 
       /* b */ B, 
       /* c */ C, 
       /* d */ D, 
+      /* e */ E, 
       /* t */ T, 
       /* u */ U, 
       /* v */ V, 
       /* w */ W, 
       /* x */ X, 
       /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
       TReturn
     ],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     a: A,
     b: B,
     c: C,
-    d: D
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
+    d: D,
+    e: E
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X](
+    funсtion: js.Function11[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W](
+    funсtion: js.Function11[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* g */ G, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -12041,6 +11994,38 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
+  def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y, Z](
+    funсtion: js.Function12[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
+      TReturn
+    ],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -12840,55 +12825,6 @@ trait JQueryStatic extends StObject {
     /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y](
-    funсtion: js.Function12[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X](
-    funсtion: js.Function12[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* g */ G, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -12970,40 +12906,55 @@ trait JQueryStatic extends StObject {
     f: F,
     g: G
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y, Z](
-    funсtion: js.Function13[
+  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y](
+    funсtion: js.Function12[
       /* a */ A, 
       /* b */ B, 
       /* c */ C, 
       /* d */ D, 
       /* e */ E, 
+      /* f */ F, 
       /* t */ T, 
       /* u */ U, 
       /* v */ V, 
       /* w */ W, 
       /* x */ X, 
       /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
       TReturn
     ],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     a: A,
     b: B,
     c: C,
     d: D,
-    e: E
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
+    e: E,
+    f: F
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X](
+    funсtion: js.Function12[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* g */ G, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      TReturn
+    ],
+    context: Unit,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -13035,6 +12986,40 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
+  def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y, Z](
+    funсtion: js.Function13[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
+      TReturn
+    ],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -13689,32 +13674,6 @@ trait JQueryStatic extends StObject {
     /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y](
-    funсtion: js.Function13[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* g */ G, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   // #endregion
   // region 6 parameters
   // #region 6 parameters
@@ -13759,42 +13718,32 @@ trait JQueryStatic extends StObject {
     f: F,
     g: G
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y, Z](
-    funсtion: js.Function14[
+  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y](
+    funсtion: js.Function13[
       /* a */ A, 
       /* b */ B, 
       /* c */ C, 
       /* d */ D, 
       /* e */ E, 
       /* f */ F, 
+      /* g */ G, 
       /* t */ T, 
       /* u */ U, 
       /* v */ V, 
       /* w */ W, 
       /* x */ X, 
       /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
       TReturn
     ],
-    context: js.UndefOr[scala.Nothing],
+    context: Unit,
     a: A,
     b: B,
     c: C,
     d: D,
     e: E,
-    f: F
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
+    f: F,
+    g: G
+  ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
     * Takes a function and returns a new one that will always have a particular context.
     * @param funсtion The function whose context will be changed.
@@ -13828,6 +13777,42 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y, Z](
+    funсtion: js.Function14[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
+      TReturn
+    ],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -14333,44 +14318,6 @@ trait JQueryStatic extends StObject {
     /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y, Z](
-    funсtion: js.Function15[
-      /* a */ A, 
-      /* b */ B, 
-      /* c */ C, 
-      /* d */ D, 
-      /* e */ E, 
-      /* f */ F, 
-      /* g */ G, 
-      /* t */ T, 
-      /* u */ U, 
-      /* v */ V, 
-      /* w */ W, 
-      /* x */ X, 
-      /* y */ Y, 
-      /* z */ Z, 
-      /* repeated */ js.Any, 
-      TReturn
-    ],
-    context: js.UndefOr[scala.Nothing],
-    a: A,
-    b: B,
-    c: C,
-    d: D,
-    e: E,
-    f: F,
-    g: G
-  ): js.Function8[
-    /* t */ T, 
-    /* u */ U, 
-    /* v */ V, 
-    /* w */ W, 
-    /* x */ X, 
-    /* y */ Y, 
-    /* z */ Z, 
-    /* repeated */ js.Any, 
-    TReturn
-  ] = js.native
   // #endregion
   // region 7+ parameters
   // #region 7+ parameters
@@ -14409,6 +14356,44 @@ trait JQueryStatic extends StObject {
       TReturn
     ],
     context: Null,
+    a: A,
+    b: B,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G
+  ): js.Function8[
+    /* t */ T, 
+    /* u */ U, 
+    /* v */ V, 
+    /* w */ W, 
+    /* x */ X, 
+    /* y */ Y, 
+    /* z */ Z, 
+    /* repeated */ js.Any, 
+    TReturn
+  ] = js.native
+  def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y, Z](
+    funсtion: js.Function15[
+      /* a */ A, 
+      /* b */ B, 
+      /* c */ C, 
+      /* d */ D, 
+      /* e */ E, 
+      /* f */ F, 
+      /* g */ G, 
+      /* t */ T, 
+      /* u */ U, 
+      /* v */ V, 
+      /* w */ W, 
+      /* x */ X, 
+      /* y */ Y, 
+      /* z */ Z, 
+      /* repeated */ js.Any, 
+      TReturn
+    ],
+    context: Unit,
     a: A,
     b: B,
     c: C,
@@ -15116,9 +15101,9 @@ trait JQueryStatic extends StObject {
   ```
     */
   def queue[T /* <: Element */](element: T): Queue[T] = js.native
-  def queue[T /* <: Element */](element: T, queueName: js.UndefOr[scala.Nothing], newQueue: TypeOrArray[QueueFunction[T]]): Queue[T] = js.native
   def queue[T /* <: Element */](element: T, queueName: String): Queue[T] = js.native
   def queue[T /* <: Element */](element: T, queueName: String, newQueue: TypeOrArray[QueueFunction[T]]): Queue[T] = js.native
+  def queue[T /* <: Element */](element: T, queueName: Unit, newQueue: TypeOrArray[QueueFunction[T]]): Queue[T] = js.native
   
   /**
     * A Promise-like object (or "thenable") that resolves when the document is ready.
@@ -15157,8 +15142,8 @@ trait JQueryStatic extends StObject {
     */
   def readyException(error: Error): js.Any = js.native
   
-  def removeData(element: PlainObject[_]): Unit = js.native
-  def removeData(element: PlainObject[_], name: String): Unit = js.native
+  def removeData(element: PlainObject[js.Any]): Unit = js.native
+  def removeData(element: PlainObject[js.Any], name: String): Unit = js.native
   def removeData(element: Document): Unit = js.native
   def removeData(element: Document, name: String): Unit = js.native
   /**
@@ -15224,8 +15209,9 @@ trait JQueryStatic extends StObject {
     * @since 1.1
     */
   def speed[TElement /* <: Element */](): EffectsOptions[TElement] = js.native
-  def speed[TElement /* <: Element */](duration_complete_settings: Duration | SpeedSettings[TElement]): EffectsOptions[TElement] = js.native
   def speed[TElement /* <: Element */](duration_complete_settings: js.ThisFunction0[/* this */ TElement, Unit]): EffectsOptions[TElement] = js.native
+  def speed[TElement /* <: Element */](duration_complete_settings: Duration): EffectsOptions[TElement] = js.native
+  def speed[TElement /* <: Element */](duration_complete_settings: SpeedSettings[TElement]): EffectsOptions[TElement] = js.native
   /**
     * Creates an object containing a set of properties ready to be used in the definition of custom animations.
     * @param duration A string or number determining how long the animation will run.
@@ -15255,9 +15241,9 @@ trait JQueryStatic extends StObject {
     * @since 1.3
     * @deprecated ​ Deprecated since 1.9. See \`{@link https://api.jquery.com/jQuery.support/ }\`.
     */
-  var support: PlainObject[_] = js.native
+  var support: PlainObject[js.Any] = js.native
   
-  var timers: js.Array[TickFunction[_]] = js.native
+  var timers: js.Array[TickFunction[js.Any]] = js.native
   
   /**
     * Remove the whitespace from the beginning and end of a string.
@@ -15451,7 +15437,7 @@ trait JQueryStatic extends StObject {
     .then( myFunc, myFailure );
   ```
     */
-  def when(deferreds: js.Any*): Promise[_, _, scala.Nothing] = js.native
+  def when(deferreds: js.Any*): Promise[js.Any, js.Any, scala.Nothing] = js.native
   def when[TR1, TJ1](deferred: TR1): Promise[TR1, TJ1, scala.Nothing] = js.native
   /**
     * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
@@ -15474,12 +15460,12 @@ trait JQueryStatic extends StObject {
     .then( myFunc, myFailure );
   ```
     */
-  def when[TR1, TJ1](deferred: Promise[TR1, TJ1, _]): Promise[TR1, TJ1, scala.Nothing] = js.native
+  def when[TR1, TJ1](deferred: Promise[TR1, TJ1, js.Any]): Promise[TR1, TJ1, scala.Nothing] = js.native
   def when[TR1, TJ1](deferred: Thenable[TR1]): Promise[TR1, TJ1, scala.Nothing] = js.native
   def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: UR1): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, _]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, js.Any]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: Thenable[UR1]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, TJ1, UJ1](deferredT: Promise[TR1, TJ1, _], deferredU: UR1): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, TJ1, UJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: UR1): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   /**
     * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
     * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
@@ -15501,24 +15487,24 @@ trait JQueryStatic extends StObject {
     .then( myFunc, myFailure );
   ```
     */
-  def when[TR1, UR1, TJ1, UJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Promise[UR1, UJ1, _]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, TJ1, UJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Thenable[UR1]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, TJ1, UJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: Promise[UR1, UJ1, js.Any]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, TJ1, UJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: Thenable[UR1]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   def when[TR1, UR1, TJ1, UJ1](deferredT: Thenable[TR1], deferredU: UR1): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, TJ1, UJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, _]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, TJ1, UJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, js.Any]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   def when[TR1, UR1, TJ1, UJ1](deferredT: Thenable[TR1], deferredU: Thenable[UR1]): Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: UR1, deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: UR1, deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: UR1, deferredV: Promise[VR1, VJ1, js.Any]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: UR1, deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, _], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, _], deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, _], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, js.Any], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, js.Any], deferredV: Promise[VR1, VJ1, js.Any]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Promise[UR1, UJ1, js.Any], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Thenable[UR1], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Thenable[UR1], deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Thenable[UR1], deferredV: Promise[VR1, VJ1, js.Any]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: TR1, deferredU: Thenable[UR1], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: UR1, deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: UR1, deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: UR1, deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Promise[UR1, UJ1, _], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: UR1, deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: UR1, deferredV: Promise[VR1, VJ1, js.Any]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: UR1, deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: Promise[UR1, UJ1, js.Any], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   /**
     * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
     * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
@@ -15540,19 +15526,35 @@ trait JQueryStatic extends StObject {
     .then( myFunc, myFailure );
   ```
     */
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Promise[UR1, UJ1, _], deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Promise[UR1, UJ1, _], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Thenable[UR1], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Thenable[UR1], deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, _], deferredU: Thenable[UR1], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](
+    deferredT: Promise[TR1, TJ1, js.Any],
+    deferredU: Promise[UR1, UJ1, js.Any],
+    deferredV: Promise[VR1, VJ1, js.Any]
+  ): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](
+    deferredT: Promise[TR1, TJ1, js.Any],
+    deferredU: Promise[UR1, UJ1, js.Any],
+    deferredV: Thenable[VR1]
+  ): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: Thenable[UR1], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](
+    deferredT: Promise[TR1, TJ1, js.Any],
+    deferredU: Thenable[UR1],
+    deferredV: Promise[VR1, VJ1, js.Any]
+  ): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Promise[TR1, TJ1, js.Any], deferredU: Thenable[UR1], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: UR1, deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: UR1, deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: UR1, deferredV: Promise[VR1, VJ1, js.Any]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: UR1, deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, _], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, _], deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, _], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, js.Any], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](
+    deferredT: Thenable[TR1],
+    deferredU: Promise[UR1, UJ1, js.Any],
+    deferredV: Promise[VR1, VJ1, js.Any]
+  ): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Promise[UR1, UJ1, js.Any], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Thenable[UR1], deferredV: VR1): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
-  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Thenable[UR1], deferredV: Promise[VR1, VJ1, _]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
+  def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Thenable[UR1], deferredV: Promise[VR1, VJ1, js.Any]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](deferredT: Thenable[TR1], deferredU: Thenable[UR1], deferredV: Thenable[VR1]): Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   /**
     * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
@@ -15577,7 +15579,7 @@ trait JQueryStatic extends StObject {
   ```
     */
   @JSName("when")
-  def when_TR1TJ1[TR1, TJ1](deferreds: ((Promise[TR1, TJ1, _]) | Thenable[TR1] | TR1)*): Promise[TR1, TJ1, scala.Nothing] = js.native
+  def when_TR1TJ1[TR1, TJ1](deferreds: ((Promise[TR1, TJ1, js.Any]) | Thenable[TR1] | TR1)*): Promise[TR1, TJ1, scala.Nothing] = js.native
   /**
     * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
     * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
@@ -15601,6 +15603,6 @@ trait JQueryStatic extends StObject {
     */
   @JSName("when")
   def when_TR1TJ1TR2TJ2TR3TJ3_Promise3[TR1, TJ1, TR2, TJ2, TR3, TJ3](
-    deferredT: (Promise2[TR1, TJ1, _, TR2, TJ2, _]) | (Promise3[TR1, TJ1, _, TR2, TJ2, _, TR3, TJ3, _])
+    deferredT: (Promise2[TR1, TJ1, js.Any, TR2, TJ2, js.Any]) | (Promise3[TR1, TJ1, js.Any, TR2, TJ2, js.Any, TR3, TJ3, js.Any])
   ): Promise3[TR1, TJ1, scala.Nothing, TR2, TJ2, scala.Nothing, TR3, TJ3, scala.Nothing] = js.native
 }

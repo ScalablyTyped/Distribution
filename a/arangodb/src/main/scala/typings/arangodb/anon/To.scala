@@ -2,15 +2,13 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait To extends StObject {
   
-  var _from: String = js.native
+  var _from: String
   
-  var _to: String = js.native
+  var _to: String
 }
 object To {
   

@@ -3,22 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.`identifier-list`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedAttributeRightHandSideIdentifierList extends ExtendedAttributeRightHandSideList {
+trait ExtendedAttributeRightHandSideIdentifierList
+  extends StObject
+     with ExtendedAttributeRightHandSideList {
   
-  var `type`: `identifier-list` = js.native
+  var `type`: `identifier-list`
   
-  var value: js.Array[ExtendedAttributeRightHandSideIdentifier] = js.native
+  var value: js.Array[ExtendedAttributeRightHandSideIdentifier]
 }
 object ExtendedAttributeRightHandSideIdentifierList {
   
   @scala.inline
-  def apply(`type`: `identifier-list`, value: js.Array[ExtendedAttributeRightHandSideIdentifier]): ExtendedAttributeRightHandSideIdentifierList = {
+  def apply(value: js.Array[ExtendedAttributeRightHandSideIdentifier]): ExtendedAttributeRightHandSideIdentifierList = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("identifier-list")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideIdentifierList]
   }
   

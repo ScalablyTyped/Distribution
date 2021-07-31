@@ -3,15 +3,13 @@ package typings.mz.anon
 import typings.mz.mzBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var encoding: js.UndefOr[String | Null] = js.native
+  var encoding: js.UndefOr[String | Null] = js.undefined
   
-  var withFileTypes: js.UndefOr[`false`] = js.native
+  var withFileTypes: js.UndefOr[`false`] = js.undefined
 }
 object `2` {
   

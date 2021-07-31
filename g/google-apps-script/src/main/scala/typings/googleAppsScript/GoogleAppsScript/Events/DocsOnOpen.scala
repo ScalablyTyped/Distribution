@@ -5,13 +5,13 @@ import typings.googleAppsScript.GoogleAppsScript.Document.Document
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DocsOnOpen extends AppsScriptEvent {
+trait DocsOnOpen
+  extends StObject
+     with AppsScriptEvent {
   
-  var source: Document = js.native
+  var source: Document
 }
 object DocsOnOpen {
   

@@ -2,118 +2,161 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screepsStrings {
   
   @js.native
-  sealed trait `1` extends ExitKey
+  sealed trait `1`
+    extends StObject
+       with ExitKey
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
-  sealed trait `3` extends ExitKey
+  sealed trait `3`
+    extends StObject
+       with ExitKey
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   
   @js.native
-  sealed trait `5` extends ExitKey
+  sealed trait `5`
+    extends StObject
+       with ExitKey
   @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
   
   @js.native
-  sealed trait `7` extends ExitKey
+  sealed trait `7`
+    extends StObject
+       with ExitKey
   @scala.inline
   def `7`: `7` = "7".asInstanceOf[`7`]
   
   @js.native
-  sealed trait G extends ResourceConstantSansEnergy
+  sealed trait G
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def G: G = "G".asInstanceOf[G]
   
   @js.native
-  sealed trait GH extends ResourceConstantSansEnergy
+  sealed trait GH
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def GH: GH = "GH".asInstanceOf[GH]
   
   @js.native
-  sealed trait GH2O extends ResourceConstantSansEnergy
+  sealed trait GH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def GH2O: GH2O = "GH2O".asInstanceOf[GH2O]
   
   @js.native
-  sealed trait GHO2 extends ResourceConstantSansEnergy
+  sealed trait GHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def GHO2: GHO2 = "GHO2".asInstanceOf[GHO2]
   
   @js.native
-  sealed trait GO extends ResourceConstantSansEnergy
+  sealed trait GO
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def GO: GO = "GO".asInstanceOf[GO]
   
   @js.native
-  sealed trait H extends ResourceConstantSansEnergy
+  sealed trait H
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait K extends ResourceConstantSansEnergy
+  sealed trait K
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def K: K = "K".asInstanceOf[K]
   
   @js.native
-  sealed trait KH extends ResourceConstantSansEnergy
+  sealed trait KH
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def KH: KH = "KH".asInstanceOf[KH]
   
   @js.native
-  sealed trait KH2O extends ResourceConstantSansEnergy
+  sealed trait KH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def KH2O: KH2O = "KH2O".asInstanceOf[KH2O]
   
   @js.native
-  sealed trait KHO2 extends ResourceConstantSansEnergy
+  sealed trait KHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def KHO2: KHO2 = "KHO2".asInstanceOf[KHO2]
   
   @js.native
-  sealed trait KO extends ResourceConstantSansEnergy
+  sealed trait KO
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def KO: KO = "KO".asInstanceOf[KO]
   
   @js.native
-  sealed trait L extends ResourceConstantSansEnergy
+  sealed trait L
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait LH extends ResourceConstantSansEnergy
+  sealed trait LH
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def LH: LH = "LH".asInstanceOf[LH]
   
   @js.native
-  sealed trait LH2O extends ResourceConstantSansEnergy
+  sealed trait LH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def LH2O: LH2O = "LH2O".asInstanceOf[LH2O]
   
   @js.native
-  sealed trait LHO2 extends ResourceConstantSansEnergy
+  sealed trait LHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def LHO2: LHO2 = "LHO2".asInstanceOf[LHO2]
   
   @js.native
-  sealed trait LO extends ResourceConstantSansEnergy
+  sealed trait LO
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def LO: LO = "LO".asInstanceOf[LO]
   
   @js.native
-  sealed trait O extends ResourceConstantSansEnergy
+  sealed trait O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def O: O = "O".asInstanceOf[O]
   
   @js.native
-  sealed trait OH extends ResourceConstantSansEnergy
+  sealed trait OH
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def OH: OH = "OH".asInstanceOf[OH]
   
@@ -123,117 +166,163 @@ object screepsStrings {
   def Store: Store = "Store".asInstanceOf[Store]
   
   @js.native
-  sealed trait U extends ResourceConstantSansEnergy
+  sealed trait U
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def U: U = "U".asInstanceOf[U]
   
   @js.native
-  sealed trait UH extends ResourceConstantSansEnergy
+  sealed trait UH
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def UH: UH = "UH".asInstanceOf[UH]
   
   @js.native
-  sealed trait UH2O extends ResourceConstantSansEnergy
+  sealed trait UH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def UH2O: UH2O = "UH2O".asInstanceOf[UH2O]
   
   @js.native
-  sealed trait UHO2 extends ResourceConstantSansEnergy
+  sealed trait UHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def UHO2: UHO2 = "UHO2".asInstanceOf[UHO2]
   
   @js.native
-  sealed trait UL extends ResourceConstantSansEnergy
+  sealed trait UL
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def UL: UL = "UL".asInstanceOf[UL]
   
   @js.native
-  sealed trait UO extends ResourceConstantSansEnergy
+  sealed trait UO
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def UO: UO = "UO".asInstanceOf[UO]
   
   @js.native
-  sealed trait X extends ResourceConstantSansEnergy
+  sealed trait X
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   
   @js.native
-  sealed trait XGH2O extends ResourceConstantSansEnergy
+  sealed trait XGH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XGH2O: XGH2O = "XGH2O".asInstanceOf[XGH2O]
   
   @js.native
-  sealed trait XGHO2 extends ResourceConstantSansEnergy
+  sealed trait XGHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XGHO2: XGHO2 = "XGHO2".asInstanceOf[XGHO2]
   
   @js.native
-  sealed trait XKH2O extends ResourceConstantSansEnergy
+  sealed trait XKH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XKH2O: XKH2O = "XKH2O".asInstanceOf[XKH2O]
   
   @js.native
-  sealed trait XKHO2 extends ResourceConstantSansEnergy
+  sealed trait XKHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XKHO2: XKHO2 = "XKHO2".asInstanceOf[XKHO2]
   
   @js.native
-  sealed trait XLH2O extends ResourceConstantSansEnergy
+  sealed trait XLH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XLH2O: XLH2O = "XLH2O".asInstanceOf[XLH2O]
   
   @js.native
-  sealed trait XLHO2 extends ResourceConstantSansEnergy
+  sealed trait XLHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XLHO2: XLHO2 = "XLHO2".asInstanceOf[XLHO2]
   
   @js.native
-  sealed trait XUH2O extends ResourceConstantSansEnergy
+  sealed trait XUH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XUH2O: XUH2O = "XUH2O".asInstanceOf[XUH2O]
   
   @js.native
-  sealed trait XUHO2 extends ResourceConstantSansEnergy
+  sealed trait XUHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XUHO2: XUHO2 = "XUHO2".asInstanceOf[XUHO2]
   
   @js.native
-  sealed trait XZH2O extends ResourceConstantSansEnergy
+  sealed trait XZH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XZH2O: XZH2O = "XZH2O".asInstanceOf[XZH2O]
   
   @js.native
-  sealed trait XZHO2 extends ResourceConstantSansEnergy
+  sealed trait XZHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def XZHO2: XZHO2 = "XZHO2".asInstanceOf[XZHO2]
   
   @js.native
-  sealed trait Z extends ResourceConstantSansEnergy
+  sealed trait Z
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
   
   @js.native
-  sealed trait ZH extends ResourceConstantSansEnergy
+  sealed trait ZH
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ZH: ZH = "ZH".asInstanceOf[ZH]
   
   @js.native
-  sealed trait ZH2O extends ResourceConstantSansEnergy
+  sealed trait ZH2O
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ZH2O: ZH2O = "ZH2O".asInstanceOf[ZH2O]
   
   @js.native
-  sealed trait ZHO2 extends ResourceConstantSansEnergy
+  sealed trait ZHO2
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ZHO2: ZHO2 = "ZHO2".asInstanceOf[ZHO2]
   
   @js.native
-  sealed trait ZK extends ResourceConstantSansEnergy
+  sealed trait ZK
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ZK: ZK = "ZK".asInstanceOf[ZK]
   
   @js.native
-  sealed trait ZO extends ResourceConstantSansEnergy
+  sealed trait ZO
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ZO: ZO = "ZO".asInstanceOf[ZO]
   
@@ -243,12 +332,16 @@ object screepsStrings {
   def accessKey: accessKey = "accessKey".asInstanceOf[accessKey]
   
   @js.native
-  sealed trait alloy extends ResourceConstantSansEnergy
+  sealed trait alloy
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def alloy: alloy = "alloy".asInstanceOf[alloy]
   
   @js.native
-  sealed trait astar extends FindClosestByPathAlgorithm
+  sealed trait astar
+    extends StObject
+       with FindClosestByPathAlgorithm
   @scala.inline
   def astar: astar = "astar".asInstanceOf[astar]
   
@@ -258,12 +351,16 @@ object screepsStrings {
   def attack: attack = "attack".asInstanceOf[attack]
   
   @js.native
-  sealed trait battery extends ResourceConstantSansEnergy
+  sealed trait battery
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def battery: battery = "battery".asInstanceOf[battery]
   
   @js.native
-  sealed trait biomass extends ResourceConstantSansEnergy
+  sealed trait biomass
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def biomass: biomass = "biomass".asInstanceOf[biomass]
   
@@ -278,7 +375,9 @@ object screepsStrings {
   def carry: carry = "carry".asInstanceOf[carry]
   
   @js.native
-  sealed trait cell extends ResourceConstantSansEnergy
+  sealed trait cell
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
   
@@ -288,7 +387,9 @@ object screepsStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait circuit extends ResourceConstantSansEnergy
+  sealed trait circuit
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def circuit: circuit = "circuit".asInstanceOf[circuit]
   
@@ -303,17 +404,23 @@ object screepsStrings {
   def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait composite extends ResourceConstantSansEnergy
+  sealed trait composite
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def composite: composite = "composite".asInstanceOf[composite]
   
   @js.native
-  sealed trait concentrate extends ResourceConstantSansEnergy
+  sealed trait concentrate
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def concentrate: concentrate = "concentrate".asInstanceOf[concentrate]
   
   @js.native
-  sealed trait condensate extends ResourceConstantSansEnergy
+  sealed trait condensate
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def condensate: condensate = "condensate".asInstanceOf[condensate]
   
@@ -348,7 +455,9 @@ object screepsStrings {
   def creep: creep = "creep".asInstanceOf[creep]
   
   @js.native
-  sealed trait crystal extends ResourceConstantSansEnergy
+  sealed trait crystal
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def crystal: crystal = "crystal".asInstanceOf[crystal]
   
@@ -363,12 +472,16 @@ object screepsStrings {
   def deposit: deposit = "deposit".asInstanceOf[deposit]
   
   @js.native
-  sealed trait device extends ResourceConstantSansEnergy
+  sealed trait device
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def device: device = "device".asInstanceOf[device]
   
   @js.native
-  sealed trait dijkstra extends FindClosestByPathAlgorithm
+  sealed trait dijkstra
+    extends StObject
+       with FindClosestByPathAlgorithm
   @scala.inline
   def dijkstra: dijkstra = "dijkstra".asInstanceOf[dijkstra]
   
@@ -378,7 +491,9 @@ object screepsStrings {
   def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
-  sealed trait emanation extends ResourceConstantSansEnergy
+  sealed trait emanation
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def emanation: emanation = "emanation".asInstanceOf[emanation]
   
@@ -388,7 +503,9 @@ object screepsStrings {
   def energy: energy = "energy".asInstanceOf[energy]
   
   @js.native
-  sealed trait essence extends ResourceConstantSansEnergy
+  sealed trait essence
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def essence: essence = "essence".asInstanceOf[essence]
   
@@ -398,12 +515,14 @@ object screepsStrings {
   def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
-  sealed trait extension extends StObject
+  sealed trait `extension` extends StObject
   @scala.inline
-  def extension: extension = "extension".asInstanceOf[extension]
+  def `extension`: `extension` = "extension".asInstanceOf[`extension`]
   
   @js.native
-  sealed trait extract extends ResourceConstantSansEnergy
+  sealed trait extract
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def extract: extract = "extract".asInstanceOf[extract]
   
@@ -418,7 +537,9 @@ object screepsStrings {
   def factory: factory = "factory".asInstanceOf[factory]
   
   @js.native
-  sealed trait fixtures extends ResourceConstantSansEnergy
+  sealed trait fixtures
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def fixtures: fixtures = "fixtures".asInstanceOf[fixtures]
   
@@ -428,12 +549,16 @@ object screepsStrings {
   def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
-  sealed trait frame extends ResourceConstantSansEnergy
+  sealed trait frame
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   
   @js.native
-  sealed trait ghodium_melt extends ResourceConstantSansEnergy
+  sealed trait ghodium_melt
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ghodium_melt: ghodium_melt = "ghodium_melt".asInstanceOf[ghodium_melt]
   
@@ -443,7 +568,9 @@ object screepsStrings {
   def heal: heal = "heal".asInstanceOf[heal]
   
   @js.native
-  sealed trait hydraulics extends ResourceConstantSansEnergy
+  sealed trait hydraulics
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def hydraulics: hydraulics = "hydraulics".asInstanceOf[hydraulics]
   
@@ -453,7 +580,9 @@ object screepsStrings {
   def invaderCore: invaderCore = "invaderCore".asInstanceOf[invaderCore]
   
   @js.native
-  sealed trait keanium_bar extends ResourceConstantSansEnergy
+  sealed trait keanium_bar
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def keanium_bar: keanium_bar = "keanium_bar".asInstanceOf[keanium_bar]
   
@@ -473,7 +602,9 @@ object screepsStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lemergium_bar extends ResourceConstantSansEnergy
+  sealed trait lemergium_bar
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def lemergium_bar: lemergium_bar = "lemergium_bar".asInstanceOf[lemergium_bar]
   
@@ -483,22 +614,30 @@ object screepsStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait liquid extends ResourceConstantSansEnergy
+  sealed trait liquid
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def liquid: liquid = "liquid".asInstanceOf[liquid]
   
   @js.native
-  sealed trait machine extends ResourceConstantSansEnergy
+  sealed trait machine
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def machine: machine = "machine".asInstanceOf[machine]
   
   @js.native
-  sealed trait metal extends ResourceConstantSansEnergy
+  sealed trait metal
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def metal: metal = "metal".asInstanceOf[metal]
   
   @js.native
-  sealed trait microchip extends ResourceConstantSansEnergy
+  sealed trait microchip
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def microchip: microchip = "microchip".asInstanceOf[microchip]
   
@@ -508,7 +647,9 @@ object screepsStrings {
   def mineral: mineral = "mineral".asInstanceOf[mineral]
   
   @js.native
-  sealed trait mist extends ResourceConstantSansEnergy
+  sealed trait mist
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def mist: mist = "mist".asInstanceOf[mist]
   
@@ -518,7 +659,9 @@ object screepsStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait muscle extends ResourceConstantSansEnergy
+  sealed trait muscle
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def muscle: muscle = "muscle".asInstanceOf[muscle]
   
@@ -553,27 +696,37 @@ object screepsStrings {
   def operator: operator = "operator".asInstanceOf[operator]
   
   @js.native
-  sealed trait ops extends ResourceConstantSansEnergy
+  sealed trait ops
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def ops: ops = "ops".asInstanceOf[ops]
   
   @js.native
-  sealed trait organism extends ResourceConstantSansEnergy
+  sealed trait organism
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def organism: organism = "organism".asInstanceOf[organism]
   
   @js.native
-  sealed trait organoid extends ResourceConstantSansEnergy
+  sealed trait organoid
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def organoid: organoid = "organoid".asInstanceOf[organoid]
   
   @js.native
-  sealed trait oxidant extends ResourceConstantSansEnergy
+  sealed trait oxidant
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def oxidant: oxidant = "oxidant".asInstanceOf[oxidant]
   
   @js.native
-  sealed trait phlegm extends ResourceConstantSansEnergy
+  sealed trait phlegm
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def phlegm: phlegm = "phlegm".asInstanceOf[phlegm]
   
@@ -583,7 +736,9 @@ object screepsStrings {
   def pixel: pixel = "pixel".asInstanceOf[pixel]
   
   @js.native
-  sealed trait plain extends Terrain
+  sealed trait plain
+    extends StObject
+       with Terrain
   @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
   
@@ -593,7 +748,9 @@ object screepsStrings {
   def portal: portal = "portal".asInstanceOf[portal]
   
   @js.native
-  sealed trait power extends ResourceConstantSansEnergy
+  sealed trait power
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def power: power = "power".asInstanceOf[power]
   
@@ -613,7 +770,9 @@ object screepsStrings {
   def powerSpawn: powerSpawn = "powerSpawn".asInstanceOf[powerSpawn]
   
   @js.native
-  sealed trait purifier extends ResourceConstantSansEnergy
+  sealed trait purifier
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def purifier: purifier = "purifier".asInstanceOf[purifier]
   
@@ -628,7 +787,9 @@ object screepsStrings {
   def ranged_attack: ranged_attack = "ranged_attack".asInstanceOf[ranged_attack]
   
   @js.native
-  sealed trait reductant extends ResourceConstantSansEnergy
+  sealed trait reductant
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def reductant: reductant = "reductant".asInstanceOf[reductant]
   
@@ -663,7 +824,9 @@ object screepsStrings {
   def sell: sell = "sell".asInstanceOf[sell]
   
   @js.native
-  sealed trait silicon extends ResourceConstantSansEnergy
+  sealed trait silicon
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def silicon: silicon = "silicon".asInstanceOf[silicon]
   
@@ -683,7 +846,9 @@ object screepsStrings {
   def spawn: spawn = "spawn".asInstanceOf[spawn]
   
   @js.native
-  sealed trait spirit extends ResourceConstantSansEnergy
+  sealed trait spirit
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def spirit: spirit = "spirit".asInstanceOf[spirit]
   
@@ -698,12 +863,16 @@ object screepsStrings {
   def structure: structure = "structure".asInstanceOf[structure]
   
   @js.native
-  sealed trait swamp extends Terrain
+  sealed trait swamp
+    extends StObject
+       with Terrain
   @scala.inline
   def swamp: swamp = "swamp".asInstanceOf[swamp]
   
   @js.native
-  sealed trait switch extends ResourceConstantSansEnergy
+  sealed trait switch
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   
@@ -718,7 +887,9 @@ object screepsStrings {
   def terrain: terrain = "terrain".asInstanceOf[terrain]
   
   @js.native
-  sealed trait tissue extends ResourceConstantSansEnergy
+  sealed trait tissue
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def tissue: tissue = "tissue".asInstanceOf[tissue]
   
@@ -743,27 +914,37 @@ object screepsStrings {
   def tower: tower = "tower".asInstanceOf[tower]
   
   @js.native
-  sealed trait transistor extends ResourceConstantSansEnergy
+  sealed trait transistor
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def transistor: transistor = "transistor".asInstanceOf[transistor]
   
   @js.native
-  sealed trait tube extends ResourceConstantSansEnergy
+  sealed trait tube
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def tube: tube = "tube".asInstanceOf[tube]
   
   @js.native
-  sealed trait utrium_bar extends ResourceConstantSansEnergy
+  sealed trait utrium_bar
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def utrium_bar: utrium_bar = "utrium_bar".asInstanceOf[utrium_bar]
   
   @js.native
-  sealed trait wall extends Terrain
+  sealed trait wall
+    extends StObject
+       with Terrain
   @scala.inline
   def wall: wall = "wall".asInstanceOf[wall]
   
   @js.native
-  sealed trait wire extends ResourceConstantSansEnergy
+  sealed trait wire
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def wire: wire = "wire".asInstanceOf[wire]
   
@@ -773,7 +954,9 @@ object screepsStrings {
   def work: work = "work".asInstanceOf[work]
   
   @js.native
-  sealed trait zynthium_bar extends ResourceConstantSansEnergy
+  sealed trait zynthium_bar
+    extends StObject
+       with ResourceConstantSansEnergy
   @scala.inline
   def zynthium_bar: zynthium_bar = "zynthium_bar".asInstanceOf[zynthium_bar]
 }

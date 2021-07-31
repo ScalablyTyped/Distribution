@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.sumoLogger.anon.PartialPerMessageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,25 +15,26 @@ object mod {
     */
   @JSImport("sumo-logger", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SumoLogger {
+  class ^ protected ()
+    extends StObject
+       with SumoLogger {
     def this(options: SumoLoggerOptions) = this()
   }
   
-  @js.native
   trait PerMessageOptions extends StObject {
     
     /** Override a session key set in the `config` call. */
-    var sessionKey: String = js.native
+    var sessionKey: String
     
     /**
       * Defaults to `new Date()` called when processing the log call.
       * Use this when the event being logged occurred
       * at a different time than when the log was sent.
       */
-    var timestamp: Date = js.native
+    var timestamp: Date
     
     /** Override client URL set in the config call. (Node version only) */
-    var url: String = js.native
+    var url: String
   }
   object PerMessageOptions {
     
@@ -92,8 +92,8 @@ object mod {
       * If you call the function with a JSON object, each field in the object is included as a separate field.
       * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
       */
-    def log(message: String): Boolean | js.Promise[_] = js.native
-    def log(message: String, options: PerMessageOptions): Boolean | js.Promise[_] = js.native
+    def log(message: String): Boolean | js.Promise[js.Any] = js.native
+    def log(message: String, options: PerMessageOptions): Boolean | js.Promise[js.Any] = js.native
     /**
       * Set a log message to be sent.
       * All logs are sent as JSON objects.
@@ -101,7 +101,7 @@ object mod {
       * If you call the function with a JSON object, each field in the object is included as a separate field.
       * Fields called `sessionId`, `url`, and `timestamp` are sent in both cases.
       */
-    def log[T /* <: js.Object */](event: PartialPerMessageOptions with T): Boolean | js.Promise[_] = js.native
+    def log[T /* <: js.Object */](event: PartialPerMessageOptions & T): Boolean | js.Promise[js.Any] = js.native
     
     /**
       * Start sending batched logs at the preconfigured interval
@@ -114,7 +114,6 @@ object mod {
     def stopLogSending(): Unit = js.native
   }
   
-  @js.native
   trait SumoLoggerOptions extends StObject {
     
     /**
@@ -124,7 +123,7 @@ object mod {
       * If both batchSize and interval are configured sending will be triggered when the pending logs' aggregate message length
       * is reached or when the specified interval is hit, and in either case the interval will be reset on send.
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * You can provide a URL, in the Node version of this SDK only,
@@ -132,48 +131,48 @@ object mod {
       * In the vanilla JS version, the URL is detected from the browser's
       * `window.location` value.
       */
-    var clientUrl: js.UndefOr[String] = js.native
+    var clientUrl: js.UndefOr[String] = js.undefined
     
     /**
       * To send your logs, the script must know which HTTP Source to use.
       * Pass this value (which you can get from the Collectors page) in
       * the `endpoint` parameter.
       */
-    var endpoint: String = js.native
+    var endpoint: String
     
     /**
       * This value enables and disables sending data as graphite metrics
       */
-    var graphite: js.UndefOr[Boolean] = js.native
+    var graphite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This value identifies the host from which the log is being sent.
       */
-    var hostName: js.UndefOr[String] = js.native
+    var hostName: js.UndefOr[String] = js.undefined
     
     /**
       * A number of milliseconds. Messages will be batched and sent at the interval specified.
       * Default value is zero, meaning messages are sent each time `log()` is called.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * You can provide a function that is executed if an error
       * occurs when the logs are sent.
       */
-    var onError: js.UndefOr[js.Function0[Unit]] = js.native
+    var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * You can provide a function that is executed only when logs are successfully sent.
       * The only information you can be sure of in the callback is that the call succeeded.
       * There is no other response information.
       */
-    var onSuccess: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * This value enables and disables sending data as a raw string
       */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting `sendErrors` to `true` will send all the unhandled errors to Sumo Logic
@@ -181,25 +180,25 @@ object mod {
       * This attribute plays well with any other `window.onerror` functions that
       * have been defined.
       */
-    var sendErrors: js.UndefOr[Boolean] = js.native
+    var sendErrors: js.UndefOr[Boolean] = js.undefined
     
     /** To identify specific user sessions, set a value for this field. */
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
     /**
       * This value sets the Source Category for the logged message.
       */
-    var sourceCategory: js.UndefOr[String] = js.native
+    var sourceCategory: js.UndefOr[String] = js.undefined
     
     /**
       * This value sets the Source Name for the logged message.
       */
-    var sourceName: js.UndefOr[String] = js.native
+    var sourceName: js.UndefOr[String] = js.undefined
     
     /**
       * If enabled batchSize is ignored and only interval is used to trigger when the pending logs will be sent.
       */
-    var useIntervalOnly: js.UndefOr[Boolean] = js.native
+    var useIntervalOnly: js.UndefOr[Boolean] = js.undefined
   }
   object SumoLoggerOptions {
     

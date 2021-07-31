@@ -8,7 +8,6 @@ import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import typings.ckeditor.CKEDITOR.style.definition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,14 +47,13 @@ trait style extends StObject {
 }
 object style {
   
-  @js.native
   trait customHandler extends StObject {
     
-    var assignedTo: js.UndefOr[Double] = js.native
+    var assignedTo: js.UndefOr[Double] = js.undefined
     
-    var setup: js.UndefOr[js.Function1[/* style */ definition, Unit]] = js.native
+    var setup: js.UndefOr[js.Function1[/* style */ definition, Unit]] = js.undefined
     
-    var `type`: String | Double = js.native
+    var `type`: String | Double
   }
   object customHandler {
     
@@ -89,13 +87,15 @@ object style {
   object customHandlers {
     
     @js.native
-    trait widget extends style {
+    trait widget
+      extends StObject
+         with style {
       
       def checkElement(element: element): Boolean = js.native
       
       def getClassesArray(): js.Array[String] = js.native
       
-      var group: js.Array[_] = js.native
+      var group: js.Array[js.Any] = js.native
       
       def removeStylesFromSameGroup(editor: editor): Boolean = js.native
       
@@ -103,18 +103,17 @@ object style {
     }
   }
   
-  @js.native
   trait definition extends StObject {
     
-    var attributes: js.UndefOr[StringDictionary[String]] = js.native
+    var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var element: String = js.native
+    var element: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[StringDictionary[String]] = js.native
+    var styles: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var `type`: js.UndefOr[String | Double] = js.native
+    var `type`: js.UndefOr[String | Double] = js.undefined
   }
   object definition {
     

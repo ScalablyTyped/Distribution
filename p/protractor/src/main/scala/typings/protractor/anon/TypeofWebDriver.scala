@@ -6,11 +6,12 @@ import typings.seleniumWebdriver.mod.Session
 import typings.seleniumWebdriver.mod.WebDriver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofWebDriver extends Instantiable2[/* session */ Session, /* executor */ Executor, WebDriver] {
+trait TypeofWebDriver
+  extends StObject
+     with Instantiable2[/* session */ Session, /* executor */ Executor, WebDriver] {
   
   // endregion
   // region StaticMethods

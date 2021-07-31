@@ -5,30 +5,30 @@ import typings.lestate.anon.Id
 import typings.lestate.anon.InitialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lestate", "createState")
+  @JSImport("lestate", JSImport.Namespace)
   @js.native
-  def createState(): LeState = js.native
-  @JSImport("lestate", "createState")
-  @js.native
-  def createState(props: InitialState): LeState = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createState(): LeState = ^.asInstanceOf[js.Dynamic].applyDynamic("createState")().asInstanceOf[LeState]
+  @scala.inline
+  def createState(props: InitialState): LeState = ^.asInstanceOf[js.Dynamic].applyDynamic("createState")(props.asInstanceOf[js.Any]).asInstanceOf[LeState]
+  
   trait LeState extends StObject {
     
-    def createListener(options: Force): Unit = js.native
+    def createListener(options: Force): Unit
     
-    def get(): js.Any = js.native
+    def get(): js.Any
     
-    def getDescription(): js.Object = js.native
+    def getDescription(): js.Object
     
-    def insert(newValue: js.Object): Unit = js.native
+    def insert(newValue: js.Object): Unit
     
-    def set(newValue: js.Object): js.Array[Id] = js.native
+    def set(newValue: js.Object): js.Array[Id]
   }
   object LeState {
     

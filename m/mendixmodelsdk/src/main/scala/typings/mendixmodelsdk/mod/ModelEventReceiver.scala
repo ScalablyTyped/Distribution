@@ -4,7 +4,6 @@ import typings.mendixmodelsdk.anon.HandleError
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "ModelEventReceiver")

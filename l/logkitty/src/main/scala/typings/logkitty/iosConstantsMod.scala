@@ -6,7 +6,6 @@ import typings.logkitty.logkittyStrings.ERROR
 import typings.logkitty.logkittyStrings.INFO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iosConstantsMod {
@@ -41,30 +40,26 @@ object iosConstantsMod {
     @scala.inline
     def INFO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
     
-    @JSImport("logkitty/build/ios/constants", "Priority.fromLetter")
-    @js.native
-    def fromLetter(letter: String): Double = js.native
+    @scala.inline
+    def fromLetter(letter: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLetter")(letter.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/ios/constants", "Priority.fromName")
-    @js.native
-    def fromName_DEBUG(name: DEBUG): Double = js.native
-    @JSImport("logkitty/build/ios/constants", "Priority.fromName")
-    @js.native
-    def fromName_DEFAULT(name: DEFAULT): Double = js.native
-    @JSImport("logkitty/build/ios/constants", "Priority.fromName")
-    @js.native
-    def fromName_ERROR(name: ERROR): Double = js.native
-    @JSImport("logkitty/build/ios/constants", "Priority.fromName")
-    @js.native
-    def fromName_INFO(name: INFO): Double = js.native
+    @scala.inline
+    def fromName_DEBUG(name: DEBUG): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/ios/constants", "Priority.toLetter")
-    @js.native
-    def toLetter(code: Double): String = js.native
+    @scala.inline
+    def fromName_DEFAULT(name: DEFAULT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/ios/constants", "Priority.toName")
-    @js.native
-    def toName(code: Double): DEBUG | INFO | ERROR | DEFAULT = js.native
+    @scala.inline
+    def fromName_ERROR(name: ERROR): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_INFO(name: INFO): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def toLetter(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLetter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def toName(code: Double): DEBUG | INFO | ERROR | DEFAULT = ^.asInstanceOf[js.Dynamic].applyDynamic("toName")(code.asInstanceOf[js.Any]).asInstanceOf[DEBUG | INFO | ERROR | DEFAULT]
   }
   
   /* keyof logkitty.anon.DEFAULT */ /* Rewritten from type alias, can be one of: 

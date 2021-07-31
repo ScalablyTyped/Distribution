@@ -3,19 +3,17 @@ package typings.reactAsync.mod
 import typings.reactAsync.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalScope_ extends StObject {
   
   var AbortController: js.UndefOr[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AbortController */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var __REACT_ASYNC__ : js.Any = js.native
+  var __REACT_ASYNC__ : js.Any
   
-  var fetch: FnCall = js.native
+  var fetch: FnCall
 }
 object GlobalScope_ {
   

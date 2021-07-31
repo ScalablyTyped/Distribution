@@ -10,9 +10,9 @@ app-builder precompiled binaries
 | ------------------ | :-------------: |
 | Full name          | app-builder-bin |
 | Keywords           | snap, appimage, icns |
-| # releases         | 70 |
+| # releases         | 54 |
 | # dependents       | 12 |
-| # downloads        | 6281205 |
+| # downloads        | 7057466 |
 | # stars            | 0 |
 
 ## Links

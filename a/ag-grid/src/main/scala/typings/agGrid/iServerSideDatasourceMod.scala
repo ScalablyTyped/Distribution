@@ -4,17 +4,15 @@ import typings.agGrid.iColumnVOMod.ColumnVO
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iServerSideDatasourceMod {
   
-  @js.native
   trait IServerSideDatasource extends StObject {
     
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def getRows(params: IServerSideGetRowsParams): Unit = js.native
+    def getRows(params: IServerSideGetRowsParams): Unit
   }
   object IServerSideDatasource {
     
@@ -38,16 +36,15 @@ object iServerSideDatasourceMod {
     }
   }
   
-  @js.native
   trait IServerSideGetRowsParams extends StObject {
     
-    def failCallback(): Unit = js.native
+    def failCallback(): Unit
     
-    var parentNode: RowNode = js.native
+    var parentNode: RowNode
     
-    var request: IServerSideGetRowsRequest = js.native
+    var request: IServerSideGetRowsRequest
     
-    def successCallback(rowsThisPage: js.Array[_], lastRow: Double): Unit = js.native
+    def successCallback(rowsThisPage: js.Array[js.Any], lastRow: Double): Unit
   }
   object IServerSideGetRowsParams {
     
@@ -56,7 +53,7 @@ object iServerSideDatasourceMod {
       failCallback: () => Unit,
       parentNode: RowNode,
       request: IServerSideGetRowsRequest,
-      successCallback: (js.Array[_], Double) => Unit
+      successCallback: (js.Array[js.Any], Double) => Unit
     ): IServerSideGetRowsParams = {
       val __obj = js.Dynamic.literal(failCallback = js.Any.fromFunction0(failCallback), parentNode = parentNode.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], successCallback = js.Any.fromFunction2(successCallback))
       __obj.asInstanceOf[IServerSideGetRowsParams]
@@ -75,30 +72,29 @@ object iServerSideDatasourceMod {
       def setRequest(value: IServerSideGetRowsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSuccessCallback(value: (js.Array[_], Double) => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction2(value))
+      def setSuccessCallback(value: (js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait IServerSideGetRowsRequest extends StObject {
     
-    var endRow: Double = js.native
+    var endRow: Double
     
-    var filterModel: js.Any = js.native
+    var filterModel: js.Any
     
-    var groupKeys: js.Array[String] = js.native
+    var groupKeys: js.Array[String]
     
-    var pivotCols: js.Array[ColumnVO] = js.native
+    var pivotCols: js.Array[ColumnVO]
     
-    var pivotMode: Boolean = js.native
+    var pivotMode: Boolean
     
-    var rowGroupCols: js.Array[ColumnVO] = js.native
+    var rowGroupCols: js.Array[ColumnVO]
     
-    var sortModel: js.Any = js.native
+    var sortModel: js.Any
     
-    var startRow: Double = js.native
+    var startRow: Double
     
-    var valueCols: js.Array[ColumnVO] = js.native
+    var valueCols: js.Array[ColumnVO]
   }
   object IServerSideGetRowsRequest {
     

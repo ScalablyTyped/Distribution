@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTLINK_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertLinkCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+trait ASPxClientHtmlEditorInsertLinkCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
   
   /**
     * Contains the style settings defining the appearance of the target link element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   
   /**
     * Determines where to open the target link.
     */
-  var target: String = js.native
+  var target: String
   
   /**
     * Specifiies the text of the target link.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * Defines the title of the target link.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Specifies the url of the page the target link goes to.
     */
-  var url: String = js.native
+  var url: String
 }
 object ASPxClientHtmlEditorInsertLinkCommandArguments {
   

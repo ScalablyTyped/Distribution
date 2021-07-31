@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message representing a single field of a struct.
   */
-@js.native
 trait SchemaField extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait SchemaField extends StObject {
     * UPPER(ColName)&quot;`). Note that a query result can contain multiple
     * fields with the same name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the field.
     */
-  var `type`: js.UndefOr[SchemaType] = js.native
+  var `type`: js.UndefOr[SchemaType] = js.undefined
 }
 object SchemaField {
   

@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait Attributes extends StObject {
   var attributeMap: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
-    */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The number of attributes that were discarded. Attributes can be discarded because their keys are too long or because there are too many attributes. If this value is 0 then all
     * attributes are valid.
     */
-  var droppedAttributesCount: js.UndefOr[Double] = js.native
+  var droppedAttributesCount: js.UndefOr[Double] = js.undefined
 }
 object Attributes {
   
@@ -40,7 +38,7 @@ object Attributes {
     def setAttributeMap(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudtrace.gapi.client.cloudtrace.AttributeValue}
-      */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudtrace.maximMazurokGapiClientCloudtraceStrings.Attributes & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributeMap", value.asInstanceOf[js.Any])
     
     @scala.inline

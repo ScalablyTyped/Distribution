@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PciId extends StObject {
   
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[String] = js.native
+  var DeviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the subsystem.
     */
-  var SubsystemId: js.UndefOr[String] = js.native
+  var SubsystemId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the vendor for the subsystem.
     */
-  var SubsystemVendorId: js.UndefOr[String] = js.native
+  var SubsystemVendorId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the vendor.
     */
-  var VendorId: js.UndefOr[String] = js.native
+  var VendorId: js.UndefOr[String] = js.undefined
 }
 object PciId {
   

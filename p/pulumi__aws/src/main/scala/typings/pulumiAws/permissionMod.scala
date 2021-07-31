@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionMod {
@@ -78,6 +77,10 @@ object permissionMod {
   /* static members */
   object Permission {
     
+    @JSImport("@pulumi/aws/lambda/permission", "Permission")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Permission resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -87,60 +90,54 @@ object permissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Permission = js.native
-    @JSImport("@pulumi/aws/lambda/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Permission = js.native
-    @JSImport("@pulumi/aws/lambda/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PermissionState): Permission = js.native
-    @JSImport("@pulumi/aws/lambda/permission", "Permission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PermissionState): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Permission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PermissionState, opts: CustomResourceOptions): Permission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Permission]
     
     /**
       * Returns true if the given object is an instance of Permission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/permission", "Permission.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ Boolean]
   }
   
-  @js.native
   trait PermissionArgs extends StObject {
     
     /**
       * The AWS Lambda action you want to allow in this statement. (e.g. `lambda:InvokeFunction`)
       */
-    val action: Input[String] = js.native
+    val action: Input[String]
     
     /**
       * The Event Source Token to validate.  Used with [Alexa Skills](https://developer.amazon.com/docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html#use-aws-cli).
       */
-    val eventSourceToken: js.UndefOr[Input[String]] = js.native
+    val eventSourceToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the Lambda function whose resource policy you are updating
       */
-    val function: Input[String | Function] = js.native
+    val function: Input[String | Function]
     
     /**
       * The principal who is getting this permission. e.g. `s3.amazonaws.com`, an AWS account ID, or any valid AWS service principal such as `events.amazonaws.com` or `sns.amazonaws.com`.
       */
-    val principal: Input[String] = js.native
+    val principal: Input[String]
     
     /**
       * Query parameter to specify function version or alias name. The permission will then apply to the specific qualified ARN. e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
       */
-    val qualifier: js.UndefOr[Input[String]] = js.native
+    val qualifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * This parameter is used for S3 and SES. The AWS account ID (without a hyphen) of the source owner.
       */
-    val sourceAccount: js.UndefOr[Input[String]] = js.native
+    val sourceAccount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When the principal is an AWS service, the ARN of the specific resource within that service to grant permission to.
@@ -149,17 +146,17 @@ object permissionMod {
       * For CloudWatch Events, this should be the ARN of the CloudWatch Events Rule.
       * For API Gateway, this should be the ARN of the API, as described [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html).
       */
-    val sourceArn: js.UndefOr[Input[String]] = js.native
+    val sourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique statement identifier. By default generated by this provider.
       */
-    val statementId: js.UndefOr[Input[String]] = js.native
+    val statementId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A statement identifier prefix. This provider will generate a unique suffix. Conflicts with `statementId`.
       */
-    val statementIdPrefix: js.UndefOr[Input[String]] = js.native
+    val statementIdPrefix: js.UndefOr[Input[String]] = js.undefined
   }
   object PermissionArgs {
     
@@ -219,38 +216,37 @@ object permissionMod {
     }
   }
   
-  @js.native
   trait PermissionState extends StObject {
     
     /**
       * The AWS Lambda action you want to allow in this statement. (e.g. `lambda:InvokeFunction`)
       */
-    val action: js.UndefOr[Input[String]] = js.native
+    val action: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Event Source Token to validate.  Used with [Alexa Skills](https://developer.amazon.com/docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html#use-aws-cli).
       */
-    val eventSourceToken: js.UndefOr[Input[String]] = js.native
+    val eventSourceToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the Lambda function whose resource policy you are updating
       */
-    val function: js.UndefOr[Input[String | Function]] = js.native
+    val function: js.UndefOr[Input[String | Function]] = js.undefined
     
     /**
       * The principal who is getting this permission. e.g. `s3.amazonaws.com`, an AWS account ID, or any valid AWS service principal such as `events.amazonaws.com` or `sns.amazonaws.com`.
       */
-    val principal: js.UndefOr[Input[String]] = js.native
+    val principal: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Query parameter to specify function version or alias name. The permission will then apply to the specific qualified ARN. e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
       */
-    val qualifier: js.UndefOr[Input[String]] = js.native
+    val qualifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * This parameter is used for S3 and SES. The AWS account ID (without a hyphen) of the source owner.
       */
-    val sourceAccount: js.UndefOr[Input[String]] = js.native
+    val sourceAccount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When the principal is an AWS service, the ARN of the specific resource within that service to grant permission to.
@@ -259,17 +255,17 @@ object permissionMod {
       * For CloudWatch Events, this should be the ARN of the CloudWatch Events Rule.
       * For API Gateway, this should be the ARN of the API, as described [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-control-access-using-iam-policies-to-invoke-api.html).
       */
-    val sourceArn: js.UndefOr[Input[String]] = js.native
+    val sourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique statement identifier. By default generated by this provider.
       */
-    val statementId: js.UndefOr[Input[String]] = js.native
+    val statementId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A statement identifier prefix. This provider will generate a unique suffix. Conflicts with `statementId`.
       */
-    val statementIdPrefix: js.UndefOr[Input[String]] = js.native
+    val statementIdPrefix: js.UndefOr[Input[String]] = js.undefined
   }
   object PermissionState {
     

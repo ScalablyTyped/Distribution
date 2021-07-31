@@ -3,30 +3,29 @@ package typings.aliApp.my
 import typings.aliApp.anon.characteristiccharacteris
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadBLECharacteristicValueOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 蓝牙特征值的 uuid
     */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * 蓝牙特征值对应服务的 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
   
   @JSName("success")
-  def success_MReadBLECharacteristicValueOptions(res: characteristiccharacteris): Unit = js.native
+  def success_MReadBLECharacteristicValueOptions(res: characteristiccharacteris): Unit
 }
 object ReadBLECharacteristicValueOptions {
   

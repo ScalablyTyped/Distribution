@@ -2,39 +2,37 @@ package typings.amplitudeJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Carrier extends StObject {
     
-    var carrier: js.UndefOr[Boolean] = js.native
+    var carrier: js.UndefOr[Boolean] = js.undefined
     
-    var city: js.UndefOr[Boolean] = js.native
+    var city: js.UndefOr[Boolean] = js.undefined
     
-    var country: js.UndefOr[Boolean] = js.native
+    var country: js.UndefOr[Boolean] = js.undefined
     
-    var device_manufacturer: js.UndefOr[Boolean] = js.native
+    var device_manufacturer: js.UndefOr[Boolean] = js.undefined
     
-    var device_model: js.UndefOr[Boolean] = js.native
+    var device_model: js.UndefOr[Boolean] = js.undefined
     
-    var dma: js.UndefOr[Boolean] = js.native
+    var dma: js.UndefOr[Boolean] = js.undefined
     
-    var ip_address: js.UndefOr[Boolean] = js.native
+    var ip_address: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[Boolean] = js.native
+    var language: js.UndefOr[Boolean] = js.undefined
     
-    var os_name: js.UndefOr[Boolean] = js.native
+    var os_name: js.UndefOr[Boolean] = js.undefined
     
-    var os_version: js.UndefOr[Boolean] = js.native
+    var os_version: js.UndefOr[Boolean] = js.undefined
     
-    var platform: js.UndefOr[Boolean] = js.native
+    var platform: js.UndefOr[Boolean] = js.undefined
     
-    var region: js.UndefOr[Boolean] = js.native
+    var region: js.UndefOr[Boolean] = js.undefined
     
-    var version_name: js.UndefOr[Boolean] = js.native
+    var version_name: js.UndefOr[Boolean] = js.undefined
   }
   object Carrier {
     
@@ -127,10 +125,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Reason extends StObject {
     
-    var reason: String = js.native
+    var reason: String
   }
   object Reason {
     

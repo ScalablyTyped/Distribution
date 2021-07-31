@@ -3,15 +3,13 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportAs extends StObject {
   
-  var exportAs: String = js.native
+  var exportAs: String
   
-  var symbol: StaticSymbol = js.native
+  var symbol: StaticSymbol
 }
 object ExportAs {
   

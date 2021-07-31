@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemBehavior extends StObject {
   
-  var `abstract`: Boolean = js.native
+  var `abstract`: Boolean
   
-  var color: String = js.native
+  var color: String
   
-  var description: String = js.native
+  var description: String
   
-  var fields: js.Array[WorkItemBehaviorField] = js.native
+  var fields: js.Array[WorkItemBehaviorField]
   
-  var id: String = js.native
+  var id: String
   
-  var inherits: WorkItemBehaviorReference = js.native
+  var inherits: WorkItemBehaviorReference
   
-  var name: String = js.native
+  var name: String
   
-  var overriden: Boolean = js.native
+  var overriden: Boolean
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var url: String = js.native
+  var url: String
 }
 object WorkItemBehavior {
   

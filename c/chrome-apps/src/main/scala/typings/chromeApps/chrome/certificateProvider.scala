@@ -11,7 +11,6 @@ import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -28,14 +27,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object certificateProvider {
   
-  @js.native
   trait CertificateInfo extends StObject {
     
     /**
       * Must be the DER encoding of a X.509 certificate. Currently, only
       * certificates of RSA keys are supported.
       */
-    var certificate: js.UndefOr[ArrayBuffer] = js.native
+    var certificate: js.UndefOr[ArrayBuffer] = js.undefined
     
     /**
       * Must be set to all hashes supported for this certificate. This app
@@ -43,7 +41,7 @@ object certificateProvider {
       * hash algorithms. This should be in order of decreasing hash preference.
       * @see Hash
       */
-    var supportedHashes: js.UndefOr[js.Array[Hash]] = js.native
+    var supportedHashes: js.UndefOr[js.Array[Hash]] = js.undefined
   }
   object CertificateInfo {
     
@@ -100,10 +98,9 @@ object certificateProvider {
     def SHA512: typings.chromeApps.chromeAppsStrings.SHA512 = "SHA512".asInstanceOf[typings.chromeApps.chromeAppsStrings.SHA512]
   }
   
-  @js.native
   trait PinResponseDetails extends StObject {
     
-    var userInput: js.UndefOr[String] = js.native
+    var userInput: js.UndefOr[String] = js.undefined
   }
   object PinResponseDetails {
     
@@ -124,7 +121,6 @@ object certificateProvider {
     }
   }
   
-  @js.native
   trait RequestPinDetails extends StObject {
     
     /**
@@ -134,7 +130,7 @@ object certificateProvider {
       * errorType = MAX_ATTEMPTS_EXCEEDED when the number of pin requests is
       * exceeded.
       */
-    var attemptsLeft: js.UndefOr[Double] = js.native
+    var attemptsLeft: js.UndefOr[Double] = js.undefined
     
     /**
       * The error template displayed to the user. This should be set if the
@@ -150,7 +146,7 @@ object certificateProvider {
             INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of code requested. Default is PIN.
@@ -165,12 +161,12 @@ object certificateProvider {
             typings.chromeApps.chromeAppsStrings.PIN | PUK
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ID given by Chrome in SignRequest.
       */
-    var signRequestId: Double = js.native
+    var signRequestId: Double
   }
   object RequestPinDetails {
     
@@ -224,26 +220,25 @@ object certificateProvider {
     }
   }
   
-  @js.native
   trait SignRequest extends StObject {
     
     /**
       * The DER encoding of a X.509 certificate. The app must sign
       * *digest* using the associated private key.
       */
-    var certificate: ArrayBuffer = js.native
+    var certificate: ArrayBuffer
     
     /** The digest that must be signed */
-    var digest: ArrayBuffer = js.native
+    var digest: ArrayBuffer
     
     /** Refers to the hash algorithm that was used to create *digest*. */
-    var hash: Hash = js.native
+    var hash: Hash
     
     /**
       * The unique ID to be used by the app should it need to call a method
       * that requires it, e.g. requestPin.
       */
-    var signRequestId: integer = js.native
+    var signRequestId: integer
   }
   object SignRequest {
     
@@ -270,7 +265,6 @@ object certificateProvider {
     }
   }
   
-  @js.native
   trait StopRequestPinDetails extends StObject {
     
     /**
@@ -288,12 +282,12 @@ object certificateProvider {
             INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ID given by Chrome in SignRequest
       */
-    var signRequestId: Double = js.native
+    var signRequestId: Double
   }
   object StopRequestPinDetails {
     

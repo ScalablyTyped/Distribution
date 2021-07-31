@@ -2,15 +2,13 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserCredential extends StObject {
   
-  var additionalUserInfo: js.UndefOr[AdditionalUserInfo] = js.native
+  var additionalUserInfo: js.UndefOr[AdditionalUserInfo] = js.undefined
   
-  var user: User = js.native
+  var user: User
 }
 object UserCredential {
   

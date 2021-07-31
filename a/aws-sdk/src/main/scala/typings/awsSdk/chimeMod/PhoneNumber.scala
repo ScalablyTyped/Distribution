@@ -2,71 +2,69 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumber extends StObject {
   
   /**
     * The phone number associations.
     */
-  var Associations: js.UndefOr[PhoneNumberAssociationList] = js.native
+  var Associations: js.UndefOr[PhoneNumberAssociationList] = js.undefined
   
   /**
     * The outbound calling name associated with the phone number.
     */
-  var CallingName: js.UndefOr[typings.awsSdk.chimeMod.CallingName] = js.native
+  var CallingName: js.UndefOr[typings.awsSdk.chimeMod.CallingName] = js.undefined
   
   /**
     * The outbound calling name status.
     */
-  var CallingNameStatus: js.UndefOr[typings.awsSdk.chimeMod.CallingNameStatus] = js.native
+  var CallingNameStatus: js.UndefOr[typings.awsSdk.chimeMod.CallingNameStatus] = js.undefined
   
   /**
     * The phone number capabilities.
     */
-  var Capabilities: js.UndefOr[PhoneNumberCapabilities] = js.native
+  var Capabilities: js.UndefOr[PhoneNumberCapabilities] = js.undefined
   
   /**
     * The phone number creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The deleted phone number timestamp, in ISO 8601 format.
     */
-  var DeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var DeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The phone number, in E.164 format.
     */
-  var E164PhoneNumber: js.UndefOr[typings.awsSdk.chimeMod.E164PhoneNumber] = js.native
+  var E164PhoneNumber: js.UndefOr[typings.awsSdk.chimeMod.E164PhoneNumber] = js.undefined
   
   /**
     * The phone number ID.
     */
-  var PhoneNumberId: js.UndefOr[String] = js.native
+  var PhoneNumberId: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number product type.
     */
-  var ProductType: js.UndefOr[PhoneNumberProductType] = js.native
+  var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
   
   /**
     * The phone number status.
     */
-  var Status: js.UndefOr[PhoneNumberStatus] = js.native
+  var Status: js.UndefOr[PhoneNumberStatus] = js.undefined
   
   /**
     * The phone number type.
     */
-  var Type: js.UndefOr[PhoneNumberType] = js.native
+  var Type: js.UndefOr[PhoneNumberType] = js.undefined
   
   /**
     * The updated phone number timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object PhoneNumber {
   

@@ -2,14 +2,12 @@ package typings.officeJsPreview.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "paragraphCollection.toJSON()". */
-@js.native
 trait ParagraphCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var items: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
 object ParagraphCollectionData {
   

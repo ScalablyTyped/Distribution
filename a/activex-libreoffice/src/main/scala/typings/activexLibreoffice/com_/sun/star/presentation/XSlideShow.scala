@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,14 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: To control a running slide show inside a presentation, please use {@link XPresentation2} and {@link XSlideShowController} .
   * @since OOo 3.0
   */
-@js.native
-trait XSlideShow extends XInterface {
+trait XSlideShow
+  extends StObject
+     with XInterface {
   
   /**
     * Query the currently displayed slide.
     * @returns the instance of the current slide. If there's no slide show running at the moment, this method returns an empty reference.
     */
-  val CurrentSlide: XDrawPage = js.native
+  val CurrentSlide: XDrawPage
   
   /**
     * Add a shape event listener.
@@ -40,7 +40,7 @@ trait XSlideShow extends XInterface {
     * @param xListener Listener to add.
     * @param xShape {@link Shape} to register a listener for.
     */
-  def addShapeEventListener(xListener: XShapeEventListener, xShape: XShape): Unit = js.native
+  def addShapeEventListener(xListener: XShapeEventListener, xShape: XShape): Unit
   
   /**
     * Add a slide show listener.
@@ -50,7 +50,7 @@ trait XSlideShow extends XInterface {
     * {@link displaySlide()} methods.
     * @param xListener Listener to add.
     */
-  def addSlideShowListener(xListener: XSlideShowListener): Unit = js.native
+  def addSlideShowListener(xListener: XSlideShowListener): Unit
   
   /**
     * Add a view to the slide show.
@@ -60,7 +60,7 @@ trait XSlideShow extends XInterface {
     * @param xView The view to add
     * @returns `TRUE` , if the view has been successfully added. Otherwise, `FALSE` is returned (e.g. if the view is already added).
     */
-  def addView(xView: XSlideShowView): Boolean = js.native
+  def addView(xView: XSlideShowView): Boolean
   
   /**
     * Jump to the given slide.
@@ -77,13 +77,13 @@ trait XSlideShow extends XInterface {
     xDrawPages: XDrawPagesSupplier,
     AnimationNode: XAnimationNode,
     aProperties: SeqEquiv[PropertyValue]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Query the currently displayed slide.
     * @returns the instance of the current slide. If there's no slide show running at the moment, this method returns an empty reference.
     */
-  def getCurrentSlide(): XDrawPage = js.native
+  def getCurrentSlide(): XDrawPage
   
   /**
     * Trigger the next effect of the slide show.
@@ -92,7 +92,7 @@ trait XSlideShow extends XInterface {
     * are no more effects on the current slide, a possible slide transition effect is issued and the next slide is displayed.
     * @returns `TRUE` , if the next effect was successfully triggered. This method returns `FALSE` , if there is no show running, the last effect on the last sl
     */
-  def nextEffect(): Boolean = js.native
+  def nextEffect(): Boolean
   
   /**
     * Change the pause state of the slide show.
@@ -102,7 +102,7 @@ trait XSlideShow extends XInterface {
     * @param bPauseShow When `TRUE` , the show is paused. When `FALSE` , and the show was paused, it starts running at the paused position again.
     * @returns `TRUE` , if the requested action was successfully performed.
     */
-  def pause(bPauseShow: Boolean): Boolean = js.native
+  def pause(bPauseShow: Boolean): Boolean
   
   /**
     * Undo the last effect in the main sequence of the slide show.
@@ -113,26 +113,26 @@ trait XSlideShow extends XInterface {
     * running, this method does nothing.
     * @returns `TRUE` , if the previous effect was successfully triggered. This method returns `FALSE` , if there is no show running, the first effect on the fi
     */
-  def previousEffect(): Boolean = js.native
+  def previousEffect(): Boolean
   
   /**
     * Register drawn polygons in presentation mode
     * @param xDocFactory
     */
-  def registerUserPaintPolygons(xDocFactory: XMultiServiceFactory): Unit = js.native
+  def registerUserPaintPolygons(xDocFactory: XMultiServiceFactory): Unit
   
   /**
     * Revoke a previously registered shape event listener.
     * @param xListener Listener interface to revoke from being called.
     * @param xShape {@link Shape} for which the listener should be revoked.
     */
-  def removeShapeEventListener(xListener: XShapeEventListener, xShape: XShape): Unit = js.native
+  def removeShapeEventListener(xListener: XShapeEventListener, xShape: XShape): Unit
   
   /**
     * Revoke a previously registered slide show listener.
     * @param xListener Listener interface to revoke from being called.
     */
-  def removeSlideShowListener(xListener: XSlideShowListener): Unit = js.native
+  def removeSlideShowListener(xListener: XSlideShowListener): Unit
   
   /**
     * Remove view from the slide show.
@@ -141,13 +141,13 @@ trait XSlideShow extends XInterface {
     * @param xView View to remove
     * @returns `TRUE` , if the view was successfully removed, `FALSE` otherwise (e.g. if the view was not added in the first place).
     */
-  def removeView(xView: XSlideShowView): Boolean = js.native
+  def removeView(xView: XSlideShowView): Boolean
   
   /**
     * Change a property of the slide show.
     * @param aShowProperty Property values, which influence the way the slides are shown. Note that this might possibly be a subset of what is supported on sh
     */
-  def setProperty(aShowProperty: PropertyValue): Boolean = js.native
+  def setProperty(aShowProperty: PropertyValue): Boolean
   
   /**
     * Set a special mouse cursor for a shape.
@@ -156,7 +156,7 @@ trait XSlideShow extends XInterface {
     * @param xShape {@link Shape} to display a special mouse cursor.
     * @param nPointerShape Type of mouse cursor to display. Must be one of the {@link com.sun.star.awt.SystemPointer} values.
     */
-  def setShapeCursor(xShape: XShape, nPointerShape: Double): Unit = js.native
+  def setShapeCursor(xShape: XShape, nPointerShape: Double): Unit
   
   /**
     * Start a shape-intrinsic animation or activity.
@@ -165,7 +165,7 @@ trait XSlideShow extends XInterface {
     * shapes, sounds, GIF animations and drawing layer animations (flipping between shapes in a group, or scroll text).
     * @param xShape The shape to start the activity for
     */
-  def startShapeActivity(xShape: XShape): Boolean = js.native
+  def startShapeActivity(xShape: XShape): Boolean
   
   /**
     * Stop a shape-intrinsic animation or activity.
@@ -174,7 +174,7 @@ trait XSlideShow extends XInterface {
     * shapes, sounds, GIF animations and drawing layer animations (flipping between shapes in a group, or scroll text).
     * @param xShape The shape to stop the activity for
     */
-  def stopShapeActivity(xShape: XShape): Boolean = js.native
+  def stopShapeActivity(xShape: XShape): Boolean
   
   /**
     * Update the animations.
@@ -185,7 +185,7 @@ trait XSlideShow extends XInterface {
     * @param nNextTimeout Via this value, the implementation can return a timeout value, denoting the maximal time span that must not be exceeded from the ret
     * @returns `TRUE` , if further update calls are required. If `FALSE` is returned, no further update calls are necessary, until anyone of the other interface
     */
-  def update(nNextTimeout: js.Array[Double]): Boolean = js.native
+  def update(nNextTimeout: js.Array[Double]): Boolean
 }
 object XSlideShow {
   

@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationPlaybackEventInit extends EventInit {
+trait AnimationPlaybackEventInit
+  extends StObject
+     with EventInit {
   
-  var currentTime: js.UndefOr[Double | Null] = js.native
+  var currentTime: js.UndefOr[Double | Null] = js.undefined
   
-  var timelineTime: js.UndefOr[Double | Null] = js.native
+  var timelineTime: js.UndefOr[Double | Null] = js.undefined
 }
 object AnimationPlaybackEventInit {
   

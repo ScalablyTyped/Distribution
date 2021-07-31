@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudtrail {
   
-  @js.native
   trait TrailEventSelector extends StObject {
     
     /**
       * Specifies logging data events. Fields documented below.
       */
-    var dataResources: js.UndefOr[Input[js.Array[Input[TrailEventSelectorDataResource]]]] = js.native
+    var dataResources: js.UndefOr[Input[js.Array[Input[TrailEventSelectorDataResource]]]] = js.undefined
     
     /**
       * Specify if you want your event selector to include management events for your trail.
       */
-    var includeManagementEvents: js.UndefOr[Input[Boolean]] = js.native
+    var includeManagementEvents: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
       */
-    var readWriteType: js.UndefOr[Input[String]] = js.native
+    var readWriteType: js.UndefOr[Input[String]] = js.undefined
   }
   object TrailEventSelector {
     
@@ -60,18 +58,17 @@ object cloudtrail {
     }
   }
   
-  @js.native
   trait TrailEventSelectorDataResource extends StObject {
     
     /**
       * The resource type in which you want to log data events. You can specify only the following value: "AWS::S3::Object", "AWS::Lambda::Function"
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
     
     /**
       * A list of ARN for the specified S3 buckets and object prefixes..
       */
-    var values: Input[js.Array[Input[String]]] = js.native
+    var values: Input[js.Array[Input[String]]]
   }
   object TrailEventSelectorDataResource {
     
@@ -96,13 +93,12 @@ object cloudtrail {
     }
   }
   
-  @js.native
   trait TrailInsightSelector extends StObject {
     
     /**
       * The type of insights to log on a trail. In this release, only `ApiCallRateInsight` is supported as an insight type.
       */
-    var insightType: Input[String] = js.native
+    var insightType: Input[String]
   }
   object TrailInsightSelector {
     

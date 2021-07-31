@@ -2,10 +2,8 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbsoluteLocation extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait AbsoluteLocation extends StObject {
     *
     * @default 'normal'
     */
-  var priority: js.UndefOr[Priority] = js.native
+  var priority: js.UndefOr[Priority] = js.undefined
 }
 object AbsoluteLocation {
   

@@ -25,7 +25,6 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMessageMod extends Shortcut {
@@ -43,7 +42,9 @@ object messageMessageMod extends Shortcut {
   val default: MessageComponent = js.native
   
   @js.native
-  trait MessageComponent extends ComponentClass[MessageProps, ComponentState] {
+  trait MessageComponent
+    extends StObject
+       with ComponentClass[MessageProps, ComponentState] {
     
     var Content: StatelessComponent[MessageContentProps] = js.native
     
@@ -54,9 +55,9 @@ object messageMessageMod extends Shortcut {
     var List: StatelessComponent[MessageListProps] = js.native
   }
   
-  @js.native
   trait MessageProps
-    extends StrictMessageProps
+    extends StObject
+       with StrictMessageProps
        with /* key */ StringDictionary[js.Any]
   object MessageProps {
     
@@ -101,53 +102,52 @@ object messageMessageMod extends Shortcut {
     def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
   }
   
-  @js.native
   trait StrictMessageProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A message can be formatted to attach itself to other content. */
-    var attached: js.UndefOr[Boolean | bottom | top] = js.native
+    var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A message can be formatted to be different colors. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** A message can only take up the width of its content. */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A message may be formatted to display a negative message. Same as `negative`. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** A message can float above content that it is related to. */
-    var floating: js.UndefOr[Boolean] = js.native
+    var floating: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for MessageHeader. */
-    var header: js.UndefOr[SemanticShorthandItem[MessageHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[MessageHeaderProps]] = js.undefined
     
     /** A message can be hidden. */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** Add an icon by icon name or pass an <Icon /.> */
-    var icon: js.UndefOr[js.Any | Boolean] = js.native
+    var icon: js.UndefOr[js.Any | Boolean] = js.undefined
     
     /** A message may be formatted to display information. */
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
     /** Array shorthand items for the MessageList. Mutually exclusive with children. */
-    var list: js.UndefOr[SemanticShorthandCollection[MessageItemProps]] = js.native
+    var list: js.UndefOr[SemanticShorthandCollection[MessageItemProps]] = js.undefined
     
     /** A message may be formatted to display a negative message. Same as `error`. */
-    var negative: js.UndefOr[Boolean] = js.native
+    var negative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A message that the user can choose to hide.
@@ -158,22 +158,22 @@ object messageMessageMod extends Shortcut {
       */
     var onDismiss: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ MessageProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** A message may be formatted to display a positive message.  Same as `success`. */
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
     /** A message can have different sizes. */
-    var size: js.UndefOr[MessageSizeProp] = js.native
+    var size: js.UndefOr[MessageSizeProp] = js.undefined
     
     /** A message may be formatted to display a positive message.  Same as `positive`. */
-    var success: js.UndefOr[Boolean] = js.native
+    var success: js.UndefOr[Boolean] = js.undefined
     
     /** A message can be set to visible to force itself to be shown. */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** A message may be formatted to display warning messages. */
-    var warning: js.UndefOr[Boolean] = js.native
+    var warning: js.UndefOr[Boolean] = js.undefined
   }
   object StrictMessageProps {
     

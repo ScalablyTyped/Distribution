@@ -10,13 +10,13 @@ import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import typings.winrt.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageStream extends IRandomAccessStreamWithContentType {
+trait ImageStream
+  extends StObject
+     with IRandomAccessStreamWithContentType {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object ImageStream {
   

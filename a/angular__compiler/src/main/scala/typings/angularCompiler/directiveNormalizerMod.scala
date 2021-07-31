@@ -10,7 +10,6 @@ import typings.angularCompiler.srcUtilMod.SyncAsync
 import typings.angularCompiler.urlResolverMod.UrlResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directiveNormalizerMod {
@@ -58,43 +57,42 @@ object directiveNormalizerMod {
     def normalizeTemplate(prenormData: PrenormalizedTemplateMetadata): SyncAsync[CompileTemplateMetadata] = js.native
   }
   
-  @js.native
   trait PrenormalizedTemplateMetadata extends StObject {
     
-    var animations: js.Array[_] = js.native
+    var animations: js.Array[js.Any]
     
-    var componentType: js.Any = js.native
+    var componentType: js.Any
     
-    var encapsulation: ViewEncapsulation | Null = js.native
+    var encapsulation: ViewEncapsulation | Null
     
-    var interpolation: (js.Tuple2[String, String]) | Null = js.native
+    var interpolation: (js.Tuple2[String, String]) | Null
     
-    var moduleUrl: String = js.native
+    var moduleUrl: String
     
-    var ngModuleType: js.Any = js.native
+    var ngModuleType: js.Any
     
-    var preserveWhitespaces: Boolean | Null = js.native
+    var preserveWhitespaces: Boolean | Null
     
-    var styleUrls: js.Array[String] = js.native
+    var styleUrls: js.Array[String]
     
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
     
-    var template: String | Null = js.native
+    var template: String | Null
     
-    var templateUrl: String | Null = js.native
+    var templateUrl: String | Null
   }
   object PrenormalizedTemplateMetadata {
     
     @scala.inline
     def apply(
-      animations: js.Array[_],
+      animations: js.Array[js.Any],
       componentType: js.Any,
       moduleUrl: String,
       ngModuleType: js.Any,
       styleUrls: js.Array[String],
       styles: js.Array[String]
     ): PrenormalizedTemplateMetadata = {
-      val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], componentType = componentType.asInstanceOf[js.Any], moduleUrl = moduleUrl.asInstanceOf[js.Any], ngModuleType = ngModuleType.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], componentType = componentType.asInstanceOf[js.Any], moduleUrl = moduleUrl.asInstanceOf[js.Any], ngModuleType = ngModuleType.asInstanceOf[js.Any], styleUrls = styleUrls.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], encapsulation = null, interpolation = null, preserveWhitespaces = null, template = null, templateUrl = null)
       __obj.asInstanceOf[PrenormalizedTemplateMetadata]
     }
     
@@ -102,7 +100,7 @@ object directiveNormalizerMod {
     implicit class PrenormalizedTemplateMetadataMutableBuilder[Self <: PrenormalizedTemplateMetadata] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))

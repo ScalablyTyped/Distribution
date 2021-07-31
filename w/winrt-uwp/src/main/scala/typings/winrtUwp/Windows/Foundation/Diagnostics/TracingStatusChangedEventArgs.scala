@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TracingStatusChanged event. */
-@js.native
 trait TracingStatusChangedEventArgs extends StObject {
   
   /** Gets a value that indicates whether tracing is active. */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /** Gets the trace level for the current tracing session. */
-  var traceLevel: CausalityTraceLevel = js.native
+  var traceLevel: CausalityTraceLevel
 }
 object TracingStatusChangedEventArgs {
   

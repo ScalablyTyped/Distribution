@@ -11,7 +11,6 @@ import typings.jointjs.mod.g.Line
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionPoints {
@@ -44,12 +43,13 @@ object connectionPoints {
   @scala.inline
   def rectangle_=(x: GenericConnectionPoint[rectangle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rectangle")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait AlignConnectionPointArguments extends DefaultConnectionPointArguments {
+  trait AlignConnectionPointArguments
+    extends StObject
+       with DefaultConnectionPointArguments {
     
-    var align: js.UndefOr[ConnectionPointAlignment | Null] = js.native
+    var align: js.UndefOr[ConnectionPointAlignment | Null] = js.undefined
     
-    var alignOffset: js.UndefOr[Double] = js.native
+    var alignOffset: js.UndefOr[Double] = js.undefined
   }
   object AlignConnectionPointArguments {
     
@@ -79,18 +79,19 @@ object connectionPoints {
     }
   }
   
-  @js.native
-  trait BoundaryConnectionPointArguments extends StrokeConnectionPointArguments {
+  trait BoundaryConnectionPointArguments
+    extends StObject
+       with StrokeConnectionPointArguments {
     
-    var extrapolate: js.UndefOr[Boolean] = js.native
+    var extrapolate: js.UndefOr[Boolean] = js.undefined
     
-    var insideout: js.UndefOr[Boolean] = js.native
+    var insideout: js.UndefOr[Boolean] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var selector: js.UndefOr[(js.Array[String | Double]) | String] = js.native
+    var selector: js.UndefOr[(js.Array[String | Double]) | String] = js.undefined
     
-    var sticky: js.UndefOr[Boolean] = js.native
+    var sticky: js.UndefOr[Boolean] = js.undefined
   }
   object BoundaryConnectionPointArguments {
     
@@ -197,17 +198,17 @@ object connectionPoints {
     def stroke: typings.jointjs.jointjsStrings.stroke = "stroke".asInstanceOf[typings.jointjs.jointjsStrings.stroke]
   }
   
-  @js.native
   trait ConnectionPointArgumentsMap
-    extends /* key */ StringDictionary[StringDictionary[js.Any]] {
+    extends StObject
+       with /* key */ StringDictionary[StringDictionary[js.Any]] {
     
-    var anchor: DefaultConnectionPointArguments = js.native
+    var anchor: DefaultConnectionPointArguments
     
-    var bbox: StrokeConnectionPointArguments = js.native
+    var bbox: StrokeConnectionPointArguments
     
-    var boundary: BoundaryConnectionPointArguments = js.native
+    var boundary: BoundaryConnectionPointArguments
     
-    var rectangle: StrokeConnectionPointArguments = js.native
+    var rectangle: StrokeConnectionPointArguments
   }
   object ConnectionPointArgumentsMap {
     
@@ -249,10 +250,9 @@ object connectionPoints {
   */
   trait ConnectionPointType extends StObject
   
-  @js.native
   trait DefaultConnectionPointArguments extends StObject {
     
-    var offset: js.UndefOr[Double | Point] = js.native
+    var offset: js.UndefOr[Double | Point] = js.undefined
   }
   object DefaultConnectionPointArguments {
     
@@ -283,14 +283,13 @@ object connectionPoints {
   
   type GenericConnectionPointArguments[K /* <: ConnectionPointType */] = /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.Any
   
-  @js.native
   trait GenericConnectionPointJSON[K /* <: ConnectionPointType */] extends StObject {
     
     var args: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var name: K = js.native
+    var name: K
   }
   object GenericConnectionPointJSON {
     
@@ -301,7 +300,7 @@ object connectionPoints {
     }
     
     @scala.inline
-    implicit class GenericConnectionPointJSONMutableBuilder[Self <: GenericConnectionPointJSON[_], K /* <: ConnectionPointType */] (val x: Self with GenericConnectionPointJSON[K]) extends AnyVal {
+    implicit class GenericConnectionPointJSONMutableBuilder[Self <: GenericConnectionPointJSON[?], K /* <: ConnectionPointType */] (val x: Self & GenericConnectionPointJSON[K]) extends AnyVal {
       
       @scala.inline
       def setArgs(
@@ -316,10 +315,11 @@ object connectionPoints {
     }
   }
   
-  @js.native
-  trait StrokeConnectionPointArguments extends DefaultConnectionPointArguments {
+  trait StrokeConnectionPointArguments
+    extends StObject
+       with DefaultConnectionPointArguments {
     
-    var stroke: js.UndefOr[Boolean] = js.native
+    var stroke: js.UndefOr[Boolean] = js.undefined
   }
   object StrokeConnectionPointArguments {
     

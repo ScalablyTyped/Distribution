@@ -4,36 +4,32 @@ import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolatedStyle
 import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolationProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardStyleInterpolatorsMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forFadeFromBottomAndroid")
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", JSImport.Namespace)
   @js.native
-  def forFadeFromBottomAndroid(hasCurrentInvertedLayoutsClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forHorizontalIOS")
-  @js.native
-  def forHorizontalIOS(hasCurrentNextInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+  @scala.inline
+  def forFadeFromBottomAndroid(hasCurrentInvertedHasScreenClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFadeFromBottomAndroid")(hasCurrentInvertedHasScreenClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forModalPresentationIOS")
-  @js.native
-  def forModalPresentationIOS(hasIndexCurrentNextInvertedLayoutsInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+  @scala.inline
+  def forHorizontalIOS(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forHorizontalIOS")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forNoAnimation")
-  @js.native
-  def forNoAnimation(): StackCardInterpolatedStyle = js.native
+  @scala.inline
+  def forModalPresentationIOS(hasIndexCurrentNextInvertedHasScreenInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forModalPresentationIOS")(hasIndexCurrentNextInvertedHasScreenInsets.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forRevealFromBottomAndroid")
-  @js.native
-  def forRevealFromBottomAndroid(hasCurrentNextInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+  @scala.inline
+  def forNoAnimation(): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackCardInterpolatedStyle]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forScaleFromCenterAndroid")
-  @js.native
-  def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+  @scala.inline
+  def forRevealFromBottomAndroid(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forRevealFromBottomAndroid")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", "forVerticalIOS")
-  @js.native
-  def forVerticalIOS(hasCurrentInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+  @scala.inline
+  def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forScaleFromCenterAndroid")(hasCurrentNextClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+  
+  @scala.inline
+  def forVerticalIOS(hasCurrentInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forVerticalIOS")(hasCurrentInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
 }

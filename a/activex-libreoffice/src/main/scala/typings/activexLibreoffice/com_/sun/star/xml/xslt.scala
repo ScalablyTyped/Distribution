@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XStreamListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xslt {
@@ -20,10 +19,11 @@ object xslt {
     * Get XSLT filter transformer supporting XSLT 2.0.
     * @since LibreOffice 4.0
     */
-  @js.native
-  trait XSLT2Transformer extends XXSLTTransformer {
+  trait XSLT2Transformer
+    extends StObject
+       with XXSLTTransformer {
     
-    def create(args: SeqEquiv[_]): Unit = js.native
+    def create(args: SeqEquiv[js.Any]): Unit
   }
   object XSLT2Transformer {
     
@@ -33,10 +33,10 @@ object xslt {
       OutputStream: XOutputStream,
       acquire: () => Unit,
       addListener: XStreamListener => Unit,
-      create: SeqEquiv[_] => Unit,
+      create: SeqEquiv[js.Any] => Unit,
       getInputStream: () => XInputStream,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       removeListener: XStreamListener => Unit,
@@ -53,7 +53,7 @@ object xslt {
     implicit class XSLT2TransformerMutableBuilder[Self <: XSLT2Transformer] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreate(value: SeqEquiv[_] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -63,10 +63,11 @@ object xslt {
     * It is not safe to expect support for any features except XSLT 1.0 .
     * @since LibreOffice 4.0
     */
-  @js.native
-  trait XSLTTransformer extends XXSLTTransformer {
+  trait XSLTTransformer
+    extends StObject
+       with XXSLTTransformer {
     
-    def create(args: SeqEquiv[_]): Unit = js.native
+    def create(args: SeqEquiv[js.Any]): Unit
   }
   object XSLTTransformer {
     
@@ -76,10 +77,10 @@ object xslt {
       OutputStream: XOutputStream,
       acquire: () => Unit,
       addListener: XStreamListener => Unit,
-      create: SeqEquiv[_] => Unit,
+      create: SeqEquiv[js.Any] => Unit,
       getInputStream: () => XInputStream,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       removeListener: XStreamListener => Unit,
@@ -96,7 +97,7 @@ object xslt {
     implicit class XSLTTransformerMutableBuilder[Self <: XSLTTransformer] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreate(value: SeqEquiv[_] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -104,9 +105,9 @@ object xslt {
     * An interface for XSLT transformers.
     * @since LibreOffice 4.0
     */
-  @js.native
   trait XXSLTTransformer
-    extends XActiveDataControl
+    extends StObject
+       with XActiveDataControl
        with XActiveDataSink
        with XActiveDataSource
        with XInitialization
@@ -120,7 +121,7 @@ object xslt {
       addListener: XStreamListener => Unit,
       getInputStream: () => XInputStream,
       getOutputStream: () => XOutputStream,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       removeListener: XStreamListener => Unit,

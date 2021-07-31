@@ -3,10 +3,8 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountProvider extends StObject {
   
   /**
@@ -14,18 +12,18 @@ trait AccountProvider extends StObject {
     * authorization process. Implementations should use this to cancel any polling process
     * and call the end OAuth method.
     */
-  def autoOAuthCancelled(): Thenable[Unit] = js.native
+  def autoOAuthCancelled(): Thenable[Unit]
   
   /**
     * Clears sensitive information for an account. To be called when account is removed
     * @param accountKey - Key that uniquely identifies the account to clear
     */
-  def clear(accountKey: AccountKey): Thenable[Unit] = js.native
+  def clear(accountKey: AccountKey): Thenable[Unit]
   
   /**
     * Clears token cache
     */
-  def clearTokenCache(): Thenable[Unit] = js.native
+  def clearTokenCache(): Thenable[Unit]
   
   /**
     * Generates a security token for the provided account
@@ -34,20 +32,20 @@ trait AccountProvider extends StObject {
     * @return Promise to return a security token object
     * @deprecated use getAccountSecurityToken
     */
-  def getSecurityToken(account: Account, resource: AzureResource): Thenable[js.UndefOr[js.Object]] = js.native
+  def getSecurityToken(account: Account, resource: AzureResource): Thenable[js.UndefOr[js.Object]]
   
   /**
     * Initializes the account provider with the accounts restored from the memento,
     * @param storedAccounts Accounts restored from the memento
     * @return Account objects after being rehydrated (if necessary)
     */
-  def initialize(storedAccounts: js.Array[Account]): Thenable[js.Array[Account]] = js.native
+  def initialize(storedAccounts: js.Array[Account]): Thenable[js.Array[Account]]
   
   /**
     * Prompts the user to enter account information.
     * Returns an error if the user canceled the operation.
     */
-  def prompt(): Thenable[Account | PromptFailedResult] = js.native
+  def prompt(): Thenable[Account | PromptFailedResult]
   
   /**
     * Refreshes a stale account.
@@ -55,7 +53,7 @@ trait AccountProvider extends StObject {
     * Otherwise, returns a new updated account instance.
     * @param account - An account.
     */
-  def refresh(account: Account): Thenable[Account | PromptFailedResult] = js.native
+  def refresh(account: Account): Thenable[Account | PromptFailedResult]
 }
 object AccountProvider {
   

@@ -3,25 +3,23 @@ package typings.highlightJs
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HLJSOptions extends StObject {
   
-  var __emitter: EmitterConstructor = js.native
+  var __emitter: EmitterConstructor
   
-  var classPrefix: String = js.native
+  var classPrefix: String
   
-  var languageDetectRe: RegExp = js.native
+  var languageDetectRe: RegExp
   
-  var languages: js.UndefOr[js.Array[String]] = js.native
+  var languages: js.UndefOr[js.Array[String]] = js.undefined
   
-  var noHighlightRe: RegExp = js.native
+  var noHighlightRe: RegExp
   
-  var tabReplace: js.UndefOr[String] = js.native
+  var tabReplace: js.UndefOr[String] = js.undefined
   
-  var useBR: Boolean = js.native
+  var useBR: Boolean
 }
 object HLJSOptions {
   

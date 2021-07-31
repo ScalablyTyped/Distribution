@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The progress data for an asynchronous photo import operation. */
-@js.native
 trait PhotoImportProgress extends StObject {
   
   /** The number of bytes that have been imported. */
-  var bytesImported: Double = js.native
+  var bytesImported: Double
   
   /** The current import progress, expressed as a floating point value from 0 to 1. */
-  var importProgress: Double = js.native
+  var importProgress: Double
   
   /** The number of items that have been imported. */
-  var itemsImported: Double = js.native
+  var itemsImported: Double
   
   /** The total number of bytes to be imported. */
-  var totalBytesToImport: Double = js.native
+  var totalBytesToImport: Double
   
   /** The total number of items to be imported. */
-  var totalItemsToImport: Double = js.native
+  var totalItemsToImport: Double
 }
 object PhotoImportProgress {
   

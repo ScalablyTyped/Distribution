@@ -8,22 +8,22 @@ import typings.dashjs.dashjsStrings.fragmentedText
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BufferStateChangedEvent extends Event {
+trait BufferStateChangedEvent
+  extends StObject
+     with Event {
   
-  var mediaType: video | audio | fragmentedText = js.native
+  var mediaType: video | audio | fragmentedText
   
-  var sender: js.Object = js.native
+  var sender: js.Object
   
-  var state: bufferStalled | bufferLoaded = js.native
+  var state: bufferStalled | bufferLoaded
   
-  var streamInfo: StreamInfo = js.native
+  var streamInfo: StreamInfo
   
   @JSName("type")
-  var type_BufferStateChangedEvent: bufferStateChanged = js.native
+  var type_BufferStateChangedEvent: bufferStateChanged
 }
 object BufferStateChangedEvent {
   
@@ -32,11 +32,10 @@ object BufferStateChangedEvent {
     mediaType: video | audio | fragmentedText,
     sender: js.Object,
     state: bufferStalled | bufferLoaded,
-    streamInfo: StreamInfo,
-    `type`: bufferStateChanged
+    streamInfo: StreamInfo
   ): BufferStateChangedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], streamInfo = streamInfo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bufferStateChanged")
     __obj.asInstanceOf[BufferStateChangedEvent]
   }
   

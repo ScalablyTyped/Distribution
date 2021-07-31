@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaitTime extends StObject {
   
   /**
     * The amount of time to wait, as a duration in ISO 8601 format, before determining whether the activity's conditions have been met or moving participants to the next activity in the journey.
     */
-  var WaitFor: js.UndefOr[string] = js.native
+  var WaitFor: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format, when Amazon Pinpoint determines whether the activity's conditions have been met or the activity moves participants to the next activity in the journey.
     */
-  var WaitUntil: js.UndefOr[string] = js.native
+  var WaitUntil: js.UndefOr[string] = js.undefined
 }
 object WaitTime {
   

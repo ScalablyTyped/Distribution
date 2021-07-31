@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscalersScopedList extends StObject {
   
   /** [Output Only] A list of autoscalers contained in this scope. */
-  var autoscalers: js.UndefOr[js.Array[Autoscaler]] = js.native
+  var autoscalers: js.UndefOr[js.Array[Autoscaler]] = js.undefined
   
   /** [Output Only] Informational warning which replaces the list of autoscalers when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object AutoscalersScopedList {
   

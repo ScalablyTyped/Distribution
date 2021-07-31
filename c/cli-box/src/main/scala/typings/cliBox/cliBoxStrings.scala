@@ -3,13 +3,14 @@ package typings.cliBox
 import typings.cliBox.mod.MarksKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cliBoxStrings {
   
   @js.native
-  sealed trait b extends MarksKeys
+  sealed trait b
+    extends StObject
+       with MarksKeys
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   
@@ -24,7 +25,9 @@ object cliBoxStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait e extends MarksKeys
+  sealed trait e
+    extends StObject
+       with MarksKeys
   @scala.inline
   def e: e = "e".asInstanceOf[e]
   
@@ -39,17 +42,23 @@ object cliBoxStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait n extends MarksKeys
+  sealed trait n
+    extends StObject
+       with MarksKeys
   @scala.inline
   def n: n = "n".asInstanceOf[n]
   
   @js.native
-  sealed trait ne extends MarksKeys
+  sealed trait ne
+    extends StObject
+       with MarksKeys
   @scala.inline
   def ne: ne = "ne".asInstanceOf[ne]
   
   @js.native
-  sealed trait nw extends MarksKeys
+  sealed trait nw
+    extends StObject
+       with MarksKeys
   @scala.inline
   def nw: nw = "nw".asInstanceOf[nw]
   
@@ -59,12 +68,16 @@ object cliBoxStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait s extends MarksKeys
+  sealed trait s
+    extends StObject
+       with MarksKeys
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait se extends MarksKeys
+  sealed trait se
+    extends StObject
+       with MarksKeys
   @scala.inline
   def se: se = "se".asInstanceOf[se]
   
@@ -74,7 +87,9 @@ object cliBoxStrings {
   def stringify: stringify = "stringify".asInstanceOf[stringify]
   
   @js.native
-  sealed trait sw extends MarksKeys
+  sealed trait sw
+    extends StObject
+       with MarksKeys
   @scala.inline
   def sw: sw = "sw".asInstanceOf[sw]
   
@@ -84,7 +99,9 @@ object cliBoxStrings {
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait w extends MarksKeys
+  sealed trait w
+    extends StObject
+       with MarksKeys
   @scala.inline
   def w: w = "w".asInstanceOf[w]
 }

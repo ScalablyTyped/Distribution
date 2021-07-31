@@ -6,21 +6,21 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An error specifying an invalid certificate. */
-@js.native
-trait CertificateValidationRequest extends ClassifiedInteractionRequest {
+trait CertificateValidationRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** The certificate itself. */
-  var Certificate: XCertificate = js.native
+  var Certificate: XCertificate
   
   /** This value describes the validity of the certificate. */
-  var CertificateValidity: Double = js.native
+  var CertificateValidity: Double
   
   /** The host name. */
-  var HostName: String = js.native
+  var HostName: String
 }
 object CertificateValidationRequest {
   

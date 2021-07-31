@@ -2,66 +2,64 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterMetadata extends StObject {
   
   /**
     * A parameter name can include only the following letters and symbols. a-zA-Z0-9_.-
     */
-  var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.native
+  var AllowedPattern: js.UndefOr[typings.awsSdk.ssmMod.AllowedPattern] = js.undefined
   
   /**
     * The data type of the parameter, such as text or aws:ec2:image. The default is text.
     */
-  var DataType: js.UndefOr[ParameterDataType] = js.native
+  var DataType: js.UndefOr[ParameterDataType] = js.undefined
   
   /**
     * Description of the parameter actions.
     */
-  var Description: js.UndefOr[ParameterDescription] = js.native
+  var Description: js.UndefOr[ParameterDescription] = js.undefined
   
   /**
     * The ID of the query key used for this parameter.
     */
-  var KeyId: js.UndefOr[ParameterKeyId] = js.native
+  var KeyId: js.UndefOr[ParameterKeyId] = js.undefined
   
   /**
     * Date the parameter was last changed or updated.
     */
-  var LastModifiedDate: js.UndefOr[DateTime] = js.native
+  var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the AWS user who last changed the parameter.
     */
-  var LastModifiedUser: js.UndefOr[String] = js.native
+  var LastModifiedUser: js.UndefOr[String] = js.undefined
   
   /**
     * The parameter name.
     */
-  var Name: js.UndefOr[PSParameterName] = js.native
+  var Name: js.UndefOr[PSParameterName] = js.undefined
   
   /**
     * A list of policies associated with a parameter.
     */
-  var Policies: js.UndefOr[ParameterPolicyList] = js.native
+  var Policies: js.UndefOr[ParameterPolicyList] = js.undefined
   
   /**
     * The parameter tier.
     */
-  var Tier: js.UndefOr[ParameterTier] = js.native
+  var Tier: js.UndefOr[ParameterTier] = js.undefined
   
   /**
     * The type of parameter. Valid parameter types include the following: String, StringList, and SecureString.
     */
-  var Type: js.UndefOr[ParameterType] = js.native
+  var Type: js.UndefOr[ParameterType] = js.undefined
   
   /**
     * The parameter version.
     */
-  var Version: js.UndefOr[PSParameterVersion] = js.native
+  var Version: js.UndefOr[PSParameterVersion] = js.undefined
 }
 object ParameterMetadata {
   

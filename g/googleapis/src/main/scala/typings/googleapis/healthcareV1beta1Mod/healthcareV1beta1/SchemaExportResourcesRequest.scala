@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to export resources.
   */
-@js.native
 trait SchemaExportResourcesRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaExportResourcesRequest extends StObject {
     * roles: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.  The
     * output will be one BigQuery table per resource type.
     */
-  var bigqueryDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirBigQueryDestination] = js.undefined
   
   /**
     * The Cloud Storage output destination.  The Cloud Storage location
@@ -25,7 +23,7 @@ trait SchemaExportResourcesRequest extends StObject {
     * object per resource type. Each object contains newline delimited JSON,
     * and each line is a FHIR resource.
     */
-  var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirRestGcsDestination] = js.native
+  var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirRestGcsDestination] = js.undefined
 }
 object SchemaExportResourcesRequest {
   

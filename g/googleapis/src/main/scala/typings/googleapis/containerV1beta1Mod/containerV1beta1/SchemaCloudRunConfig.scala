@@ -2,19 +2,17 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options for the Cloud Run feature.
   */
-@js.native
 trait SchemaCloudRunConfig extends StObject {
   
   /**
     * Whether Cloud Run addon is enabled for this cluster.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCloudRunConfig {
   

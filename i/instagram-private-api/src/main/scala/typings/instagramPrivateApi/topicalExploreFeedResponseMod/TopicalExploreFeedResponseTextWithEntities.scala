@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseTextWithEntities extends StObject {
   
-  var inline_style_ranges: js.Array[TopicalExploreFeedResponseInlineStyleRangesItem] = js.native
+  var inline_style_ranges: js.Array[TopicalExploreFeedResponseInlineStyleRangesItem]
   
-  var text: String = js.native
+  var text: String
 }
 object TopicalExploreFeedResponseTextWithEntities {
   

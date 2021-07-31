@@ -21,33 +21,29 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("light-my-request", "inject")
+  @JSImport("light-my-request", JSImport.Namespace)
   @js.native
-  def inject(dispatchFunc: DispatchFunc): Chain = js.native
-  @JSImport("light-my-request", "inject")
-  @js.native
-  def inject(dispatchFunc: DispatchFunc, options: String): Chain = js.native
-  @JSImport("light-my-request", "inject")
-  @js.native
-  def inject(dispatchFunc: DispatchFunc, options: String, callback: CallbackFunc): Unit = js.native
-  @JSImport("light-my-request", "inject")
-  @js.native
-  def inject(dispatchFunc: DispatchFunc, options: InjectOptions): Chain = js.native
-  @JSImport("light-my-request", "inject")
-  @js.native
-  def inject(dispatchFunc: DispatchFunc, options: InjectOptions, callback: CallbackFunc): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("light-my-request", "isInjection")
-  @js.native
-  def isInjection(obj: Request): Boolean = js.native
-  @JSImport("light-my-request", "isInjection")
-  @js.native
-  def isInjection(obj: Response): Boolean = js.native
+  @scala.inline
+  def inject(dispatchFunc: DispatchFunc): Chain = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any]).asInstanceOf[Chain]
+  @scala.inline
+  def inject(dispatchFunc: DispatchFunc, options: String): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
+  @scala.inline
+  def inject(dispatchFunc: DispatchFunc, options: String, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def inject(dispatchFunc: DispatchFunc, options: InjectOptions): Chain = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain]
+  @scala.inline
+  def inject(dispatchFunc: DispatchFunc, options: InjectOptions, callback: CallbackFunc): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(dispatchFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def isInjection(obj: Request): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isInjection(obj: Response): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInjection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type CallbackFunc = js.Function2[/* err */ Error, /* response */ Response, Unit]
   
@@ -150,32 +146,31 @@ object mod {
     def put: put_ = "put".asInstanceOf[put_]
   }
   
-  @js.native
   trait InjectOptions extends StObject {
     
-    var authority: js.UndefOr[String] = js.native
+    var authority: js.UndefOr[String] = js.undefined
     
-    var cookies: js.UndefOr[StringDictionary[String]] = js.native
+    var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var headers: js.UndefOr[IncomingHttpHeaders | OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders | OutgoingHttpHeaders] = js.undefined
     
-    var method: js.UndefOr[HTTPMethods] = js.native
+    var method: js.UndefOr[HTTPMethods] = js.undefined
     
-    var path: js.UndefOr[String | Hostname] = js.native
+    var path: js.UndefOr[String | Hostname] = js.undefined
     
-    var payload: js.UndefOr[InjectPayload] = js.native
+    var payload: js.UndefOr[InjectPayload] = js.undefined
     
-    var query: js.UndefOr[String | (StringDictionary[String | js.Array[String]])] = js.native
+    var query: js.UndefOr[String | (StringDictionary[String | js.Array[String]])] = js.undefined
     
-    var remoteAddress: js.UndefOr[String] = js.native
+    var remoteAddress: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[Server] = js.native
+    var server: js.UndefOr[Server] = js.undefined
     
-    var simulate: js.UndefOr[Close] = js.native
+    var simulate: js.UndefOr[Close] = js.undefined
     
-    var url: js.UndefOr[String | Hostname] = js.native
+    var url: js.UndefOr[String | Hostname] = js.undefined
     
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
   }
   object InjectOptions {
     

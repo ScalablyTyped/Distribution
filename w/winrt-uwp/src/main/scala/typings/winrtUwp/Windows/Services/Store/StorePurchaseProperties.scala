@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains additional details that you can pass to a purchase request for a product, including the product name to display to the user during the purchase. */
-@js.native
 trait StorePurchaseProperties extends StObject {
   
   /** Gets or sets a JSON-formatted string that contains extended data to pass with the purchase request to the Windows Store. */
-  var extendedJsonData: String = js.native
+  var extendedJsonData: String
   
   /** Gets or sets the product name that is displayed to the user during the purchase. The specified name appears in the title bar of the purchase UI. */
-  var name: String = js.native
+  var name: String
 }
 object StorePurchaseProperties {
   

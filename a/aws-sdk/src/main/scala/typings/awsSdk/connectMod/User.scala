@@ -2,61 +2,59 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user account.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the user account in the directory used for identity management.
     */
-  var DirectoryUserId: js.UndefOr[typings.awsSdk.connectMod.DirectoryUserId] = js.native
+  var DirectoryUserId: js.UndefOr[typings.awsSdk.connectMod.DirectoryUserId] = js.undefined
   
   /**
     * The identifier of the hierarchy group for the user.
     */
-  var HierarchyGroupId: js.UndefOr[typings.awsSdk.connectMod.HierarchyGroupId] = js.native
+  var HierarchyGroupId: js.UndefOr[typings.awsSdk.connectMod.HierarchyGroupId] = js.undefined
   
   /**
     * The identifier of the user account.
     */
-  var Id: js.UndefOr[UserId] = js.native
+  var Id: js.UndefOr[UserId] = js.undefined
   
   /**
     * Information about the user identity.
     */
-  var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.native
+  var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.undefined
   
   /**
     * Information about the phone configuration for the user.
     */
-  var PhoneConfig: js.UndefOr[UserPhoneConfig] = js.native
+  var PhoneConfig: js.UndefOr[UserPhoneConfig] = js.undefined
   
   /**
     * The identifier of the routing profile for the user.
     */
-  var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.native
+  var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.undefined
   
   /**
     * The identifiers of the security profiles for the user.
     */
-  var SecurityProfileIds: js.UndefOr[typings.awsSdk.connectMod.SecurityProfileIds] = js.native
+  var SecurityProfileIds: js.UndefOr[typings.awsSdk.connectMod.SecurityProfileIds] = js.undefined
   
   /**
     * The tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The user name assigned to the user account.
     */
-  var Username: js.UndefOr[AgentUsername] = js.native
+  var Username: js.UndefOr[AgentUsername] = js.undefined
 }
 object User {
   

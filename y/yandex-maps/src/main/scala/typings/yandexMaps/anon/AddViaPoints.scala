@@ -2,23 +2,21 @@ package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddViaPoints extends StObject {
   
-  var addViaPoints: js.UndefOr[Boolean] = js.native
+  var addViaPoints: js.UndefOr[Boolean] = js.undefined
   
-  var addWayPoints: js.UndefOr[Boolean] = js.native
+  var addWayPoints: js.UndefOr[Boolean] = js.undefined
   
-  var editViaPoints: js.UndefOr[Boolean] = js.native
+  var editViaPoints: js.UndefOr[Boolean] = js.undefined
   
-  var editWayPoints: js.UndefOr[Boolean] = js.native
+  var editWayPoints: js.UndefOr[Boolean] = js.undefined
   
-  var removeViaPoints: js.UndefOr[Boolean] = js.native
+  var removeViaPoints: js.UndefOr[Boolean] = js.undefined
   
-  var removeWayPoints: js.UndefOr[Boolean] = js.native
+  var removeWayPoints: js.UndefOr[Boolean] = js.undefined
 }
 object AddViaPoints {
   

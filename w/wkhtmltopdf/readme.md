@@ -11,8 +11,8 @@ A wrapper for the wkhtmltopdf HTML to PDF converter using WebKit
 | Full name          | wkhtmltopdf |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1052371 |
+| # dependents       | 49 |
+| # downloads        | 1187279 |
 | # stars            | 18 |
 
 ## Links

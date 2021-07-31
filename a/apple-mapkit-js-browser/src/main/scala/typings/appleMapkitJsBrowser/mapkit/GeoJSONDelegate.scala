@@ -3,14 +3,12 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A delegate object that controls a GeoJSON import in order to override
   * default behavior and provide custom style.
   */
-@js.native
 trait GeoJSONDelegate extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait GeoJSONDelegate extends StObject {
     * @param result The mapped item collection.
     * @param geoJSON The original parsed GeoJSON object.
     */
-  var geoJSONDidComplete: js.UndefOr[js.Function2[/* result */ ItemCollection, /* geoJSON */ js.Object, Unit]] = js.native
+  var geoJSONDidComplete: js.UndefOr[js.Function2[/* result */ ItemCollection, /* geoJSON */ js.Object, Unit]] = js.undefined
   
   /**
     * Indicates the GeoJSON import failed.
@@ -27,7 +25,7 @@ trait GeoJSONDelegate extends StObject {
     * @param error An Error instance related to the last blocking error.
     * @param geoJSON The original parsed GeoJSON object.
     */
-  var geoJSONDidError: js.UndefOr[js.Function2[/* error */ Error, /* geoJSON */ js.Object, Unit]] = js.native
+  var geoJSONDidError: js.UndefOr[js.Function2[/* error */ Error, /* geoJSON */ js.Object, Unit]] = js.undefined
   
   /**
     * Overrides a feature.
@@ -42,7 +40,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a feature collection.
@@ -58,7 +56,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a line string.
@@ -72,7 +70,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a multiline string.
@@ -87,7 +85,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a multipoint object.
@@ -102,7 +100,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a multipolygon.
@@ -117,7 +115,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a point.
@@ -129,7 +127,7 @@ trait GeoJSONDelegate extends StObject {
     */
   var itemForPoint: js.UndefOr[
     js.Function2[/* coordinate */ Coordinate, /* geoJSON */ js.Object, js.Array[Annotation | Overlay]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides a polygon.
@@ -144,7 +142,7 @@ trait GeoJSONDelegate extends StObject {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Overrides the style of overlays.
@@ -152,7 +150,7 @@ trait GeoJSONDelegate extends StObject {
     * @param overlay The overlay to style.
     * @param geoJSON The original GeoJSON for this feature or geometry object.
     */
-  var styleForOverlay: js.UndefOr[js.Function2[/* overlay */ Overlay, /* geoJSON */ js.Object, Style]] = js.native
+  var styleForOverlay: js.UndefOr[js.Function2[/* overlay */ Overlay, /* geoJSON */ js.Object, Style]] = js.undefined
 }
 object GeoJSONDelegate {
   

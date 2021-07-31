@@ -5,7 +5,6 @@ import typings.officeJs.anon.AsyncContextOptionsisRest
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,7 +31,7 @@ trait Mailbox extends StObject {
   def addHandlerAsync(
     eventType: String,
     handler: js.Function1[/* type */ EventType, Unit],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Function1[/* type */ EventType, Unit], options: AsyncContextOptions): Unit = js.native
@@ -66,7 +65,7 @@ trait Mailbox extends StObject {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* type */ EventType, Unit],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(
@@ -256,11 +255,7 @@ trait Mailbox extends StObject {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def displayAppointmentFormAsync(itemId: String): Unit = js.native
-  def displayAppointmentFormAsync(
-    itemId: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def displayAppointmentFormAsync(itemId: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayAppointmentFormAsync(itemId: String, options: AsyncContextOptions): Unit = js.native
   def displayAppointmentFormAsync(
     itemId: String,
@@ -324,11 +319,7 @@ trait Mailbox extends StObject {
     *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def displayMessageFormAsync(itemId: String): Unit = js.native
-  def displayMessageFormAsync(
-    itemId: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def displayMessageFormAsync(itemId: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def displayMessageFormAsync(itemId: String, options: AsyncContextOptions): Unit = js.native
   def displayMessageFormAsync(
     itemId: String,
@@ -399,7 +390,7 @@ trait Mailbox extends StObject {
   def displayNewAppointmentFormAsync(parameters: AppointmentForm): Unit = js.native
   def displayNewAppointmentFormAsync(
     parameters: AppointmentForm,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayNewAppointmentFormAsync(parameters: AppointmentForm, options: AsyncContextOptions): Unit = js.native
@@ -508,7 +499,7 @@ trait Mailbox extends StObject {
   def displayNewMessageFormAsync(parameters: js.Any): Unit = js.native
   def displayNewMessageFormAsync(
     parameters: js.Any,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def displayNewMessageFormAsync(parameters: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -703,7 +694,7 @@ trait Mailbox extends StObject {
     * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
     * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
     */
-  var item: Item with ItemCompose with ItemRead with Message with MessageCompose with MessageRead with Appointment with AppointmentCompose with AppointmentRead = js.native
+  var item: Item & ItemCompose & ItemRead & Message & MessageCompose & MessageRead & Appointment & AppointmentCompose & AppointmentRead = js.native
   
   /**
     * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.
@@ -779,7 +770,7 @@ trait Mailbox extends StObject {
   def removeHandlerAsync(eventType: String): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
@@ -809,7 +800,7 @@ trait Mailbox extends StObject {
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native

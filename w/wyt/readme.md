@@ -12,7 +12,7 @@ A time-based rate limiter using promises
 | Keywords           | throttle, throttling, time, interval, rate limit, rate-limit, ratelimit, rate, limit, limiter, promise, concurrency, async, await, bottleneck, typescript |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 14885 |
+| # downloads        | 14726 |
 | # stars            | 0 |
 
 ## Links

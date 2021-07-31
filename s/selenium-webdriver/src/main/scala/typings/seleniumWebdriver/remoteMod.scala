@@ -5,7 +5,6 @@ import typings.seleniumWebdriver.remoteMod.SeleniumServer.Options
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteMod {
@@ -40,7 +39,7 @@ object remoteMod {
       * @return {!promise.Promise} A promise that will be resolved when
       *     the server has been stopped.
       */
-    def kill(): js.Promise[_] = js.native
+    def kill(): js.Promise[js.Any] = js.native
     
     /**
       * Starts the server if it is not already running.
@@ -177,31 +176,30 @@ object remoteMod {
     /**
       * Options for the Selenium server
       */
-    @js.native
     trait Options extends StObject {
       
       /** The arguments to pass to the service. If a promise is provided, the
         service will wait for it to resolve before starting. */
-      var args: js.UndefOr[js.Array[String] | js.Promise[js.Array[String]]] = js.native
+      var args: js.UndefOr[js.Array[String] | js.Promise[js.Array[String]]] = js.undefined
       
       /** The environment variables that should be visible to the server process.
         Defaults to inheriting the current process's environment.*/
-      var env: js.UndefOr[StringDictionary[String]] = js.native
+      var env: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /** The arguments to pass to the JVM. If a promise is provided, the service
         will wait for it to resolve before starting. */
-      var jvmArgs: js.UndefOr[js.Array[String] | js.Promise[js.Array[String]]] = js.native
+      var jvmArgs: js.UndefOr[js.Array[String] | js.Promise[js.Array[String]]] = js.undefined
       
       /** Whether the server should only be accessed on this host's loopback address.*/
-      var loopback: js.UndefOr[Boolean] = js.native
+      var loopback: js.UndefOr[Boolean] = js.undefined
       
       /** The port to start the server on (must be > 0). If the port is provided
         as a promise, the service will wait for the promise to resolve before starting. */
-      var port: js.UndefOr[Double | js.Promise[Double]] = js.native
+      var port: js.UndefOr[Double | js.Promise[Double]] = js.undefined
       
       /** IO configuration for the spawned server process. For more information,
         refer to the documentation of `child_process.spawn`*/
-      var stdio: js.UndefOr[String | (js.Array[String | Double])] = js.native
+      var stdio: js.UndefOr[String | (js.Array[String | Double])] = js.undefined
     }
     object Options {
       
@@ -262,6 +260,5 @@ object remoteMod {
     }
   }
   
-  @js.native
   trait ServiceOptions extends StObject
 }

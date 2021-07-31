@@ -2,45 +2,45 @@ package typings.extjs.Ext.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IClickRepeater extends IObservable {
+trait IClickRepeater
+  extends StObject
+     with IObservable {
   
   /** [Config Option] (Boolean) */
-  var accelerate: js.UndefOr[Boolean] = js.native
+  var accelerate: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /** [Method] Disables the repeater and stops events from firing
     * @param force Object
     */
-  var disable: js.UndefOr[js.Function1[/* force */ js.UndefOr[js.Any], Unit]] = js.native
+  var disable: js.UndefOr[js.Function1[/* force */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var el: js.UndefOr[js.Any] = js.native
+  var el: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Enables the repeater and allows events to fire  */
-  var enable: js.UndefOr[js.Function0[Unit]] = js.native
+  var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var pressedCls: js.UndefOr[String] = js.native
+  var pressedCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var preventDefault: js.UndefOr[Boolean] = js.native
+  var preventDefault: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Convenience function for setting disabled enabled by boolean
     * @param disabled Boolean
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var stopDefault: js.UndefOr[Boolean] = js.native
+  var stopDefault: js.UndefOr[Boolean] = js.undefined
 }
 object IClickRepeater {
   

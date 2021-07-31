@@ -7,31 +7,32 @@ import typings.storybookApi.storybookApiStrings.external
 import typings.storybookApi.storybookApiStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @JSImport("@storybook/api/dist/lib/events", "getEventMetadata")
+  @JSImport("@storybook/api/dist/lib/events", JSImport.Namespace)
   @js.native
-  def getEventMetadata(context: Meta, fullAPI: API): Ref = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEventMetadata(context: Meta, fullAPI: API): Ref = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventMetadata")(context.asInstanceOf[js.Any], fullAPI.asInstanceOf[js.Any])).asInstanceOf[Ref]
+  
   trait Meta extends StObject {
     
-    var ref: js.UndefOr[ComposedRef] = js.native
+    var ref: js.UndefOr[ComposedRef] = js.undefined
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var sourceLocation: js.UndefOr[String] = js.native
+    var sourceLocation: js.UndefOr[String] = js.undefined
     
-    var sourceType: js.UndefOr[local | external] = js.native
+    var sourceType: js.UndefOr[local | external] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var v: js.UndefOr[Double] = js.native
+    var v: js.UndefOr[Double] = js.undefined
   }
   object Meta {
     

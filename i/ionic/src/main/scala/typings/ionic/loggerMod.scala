@@ -10,10 +10,13 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
+  
+  @JSImport("ionic/lib/utils/logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/utils/logger", "Logger")
   @js.native
@@ -21,24 +24,18 @@ object loggerMod {
     def this(hasLevelHandlers: LoggerOptions) = this()
   }
   
-  @JSImport("ionic/lib/utils/logger", "createDefaultLoggerHandlers")
-  @js.native
-  def createDefaultLoggerHandlers(): Set[StreamHandler] = js.native
-  @JSImport("ionic/lib/utils/logger", "createDefaultLoggerHandlers")
-  @js.native
-  def createDefaultLoggerHandlers(formatter: LoggerFormatter): Set[StreamHandler] = js.native
+  @scala.inline
+  def createDefaultLoggerHandlers(): Set[StreamHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLoggerHandlers")().asInstanceOf[Set[StreamHandler]]
+  @scala.inline
+  def createDefaultLoggerHandlers(formatter: LoggerFormatter): Set[StreamHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultLoggerHandlers")(formatter.asInstanceOf[js.Any]).asInstanceOf[Set[StreamHandler]]
   
-  @JSImport("ionic/lib/utils/logger", "createFormatter")
-  @js.native
-  def createFormatter(): LoggerFormatter = js.native
-  @JSImport("ionic/lib/utils/logger", "createFormatter")
-  @js.native
-  def createFormatter(options: CreateTaggedFormatterOptions): LoggerFormatter = js.native
+  @scala.inline
+  def createFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")().asInstanceOf[LoggerFormatter]
+  @scala.inline
+  def createFormatter(options: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(options.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @JSImport("ionic/lib/utils/logger", "createPrefixedWriteStream")
-  @js.native
-  def createPrefixedWriteStream(log: ILogger, prefix: String): WritableStream = js.native
-  @JSImport("ionic/lib/utils/logger", "createPrefixedWriteStream")
-  @js.native
-  def createPrefixedWriteStream(log: ILogger, prefix: String, level: LoggerLevelWeight): WritableStream = js.native
+  @scala.inline
+  def createPrefixedWriteStream(log: ILogger, prefix: String): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedWriteStream")(log.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+  @scala.inline
+  def createPrefixedWriteStream(log: ILogger, prefix: String, level: LoggerLevelWeight): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedWriteStream")(log.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
 }

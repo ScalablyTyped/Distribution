@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.thrift.anon.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebServerOptions[TProcessor, THandler] extends StObject {
   
-  var services: StringDictionary[Handler[TProcessor, THandler]] = js.native
+  var services: StringDictionary[Handler[TProcessor, THandler]]
 }
 object WebServerOptions {
   
@@ -21,7 +19,7 @@ object WebServerOptions {
   }
   
   @scala.inline
-  implicit class WebServerOptionsMutableBuilder[Self <: WebServerOptions[_, _], TProcessor, THandler] (val x: Self with (WebServerOptions[TProcessor, THandler])) extends AnyVal {
+  implicit class WebServerOptionsMutableBuilder[Self <: WebServerOptions[?, ?], TProcessor, THandler] (val x: Self & (WebServerOptions[TProcessor, THandler])) extends AnyVal {
     
     @scala.inline
     def setServices(value: StringDictionary[Handler[TProcessor, THandler]]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])

@@ -11,7 +11,6 @@ import typings.std.Text
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchMod {
@@ -49,7 +48,7 @@ object searchMod {
       
       /* private */ def removeSelectedResult(): Unit = js.native
       
-      /* private */ def resultLayer(result: SearchResult): LayerGroup_[_] = js.native
+      /* private */ def resultLayer(result: SearchResult): LayerGroup_[js.Any] = js.native
       
       /* private */ def show(): Unit = js.native
       
@@ -84,7 +83,7 @@ object searchMod {
       @scala.inline
       def SearchResultBounds(
         bounds: LatLngBoundsExpression,
-        description: JQuery | js.Array[_] | Element | Text | String,
+        description: JQuery | js.Array[js.Any] | Element | Text | String,
         title: String
       ): typings.iitc.searchMod.global.SearchResultBounds = {
         val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -93,7 +92,7 @@ object searchMod {
       
       @scala.inline
       def SearchResultPosition(
-        description: JQuery | js.Array[_] | Element | Text | String,
+        description: JQuery | js.Array[js.Any] | Element | Text | String,
         position: LatLngExpression,
         title: String
       ): typings.iitc.searchMod.global.SearchResultPosition = {
@@ -102,23 +101,22 @@ object searchMod {
       }
     }
     
-    @js.native
     trait SearchResultBase extends StObject {
       
       /** secondary information for this result.Will be interpreted as HTML, so make sure to escape properly. */
-      var description: JQuery | js.Array[_] | Element | Text | String = js.native
+      var description: JQuery | js.Array[js.Any] | Element | Text | String
       
       /** a URL to a icon to display in the result list. Should be 12x12. */
-      var icon: js.UndefOr[String] = js.native
+      var icon: js.UndefOr[String] = js.undefined
       
       /** a ILayer to be added to the map when the user selects this search result. Will be generated if not set. Set to `null` to prevent the result from being added to the map. */
-      var layer: js.UndefOr[Layer] = js.native
+      var layer: js.UndefOr[Layer] = js.undefined
       
       /**
         * a handler to be called when the result is removed from the map(because another result has been
         * selected or the search was cancelled by the user).
         */
-      var onRemove: js.UndefOr[js.Function1[/* result */ SearchResult, Unit]] = js.native
+      var onRemove: js.UndefOr[js.Function1[/* result */ SearchResult, Unit]] = js.undefined
       
       /**
         * a handler to be called when the result is selected. May return `true` to prevent the map from being repositioned.
@@ -126,15 +124,15 @@ object searchMod {
         */
       var onSelected: js.UndefOr[
             js.Function2[/* result */ SearchResult, /* event */ UIEvent, js.UndefOr[Boolean]]
-          ] = js.native
+          ] = js.undefined
       
       /** Will be interpreted as HTML, so make sure to escape properly. */
-      var title: String = js.native
+      var title: String
     }
     object SearchResultBase {
       
       @scala.inline
-      def apply(description: JQuery | js.Array[_] | Element | Text | String, title: String): SearchResultBase = {
+      def apply(description: JQuery | js.Array[js.Any] | Element | Text | String, title: String): SearchResultBase = {
         val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResultBase]
       }
@@ -143,7 +141,7 @@ object searchMod {
       implicit class SearchResultBaseMutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setDescription(value: JQuery | js.Array[_] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        def setDescription(value: JQuery | js.Array[js.Any] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDescriptionVarargs(value: js.Any*): Self = StObject.set(x, "description", js.Array(value :_*))
@@ -177,19 +175,19 @@ object searchMod {
       }
     }
     
-    @js.native
     trait SearchResultBounds
-      extends SearchResultBase
+      extends StObject
+         with SearchResultBase
          with SearchResult {
       
-      var bounds: LatLngBoundsExpression = js.native
+      var bounds: LatLngBoundsExpression
     }
     object SearchResultBounds {
       
       @scala.inline
       def apply(
         bounds: LatLngBoundsExpression,
-        description: JQuery | js.Array[_] | Element | Text | String,
+        description: JQuery | js.Array[js.Any] | Element | Text | String,
         title: String
       ): SearchResultBounds = {
         val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
@@ -207,18 +205,18 @@ object searchMod {
       }
     }
     
-    @js.native
     trait SearchResultPosition
-      extends SearchResultBase
+      extends StObject
+         with SearchResultBase
          with SearchResult {
       
-      var position: LatLngExpression = js.native
+      var position: LatLngExpression
     }
     object SearchResultPosition {
       
       @scala.inline
       def apply(
-        description: JQuery | js.Array[_] | Element | Text | String,
+        description: JQuery | js.Array[js.Any] | Element | Text | String,
         position: LatLngExpression,
         title: String
       ): SearchResultPosition = {

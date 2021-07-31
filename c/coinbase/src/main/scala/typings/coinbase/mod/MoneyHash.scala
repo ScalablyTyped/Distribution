@@ -2,21 +2,19 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoneyHash extends StObject {
   
   /**
     * Amount as floating-point in a string
     */
-  var amount: String = js.native
+  var amount: String
   
   /**
     * Currency e.g. "BTC" (see Client#getCurrencies() for available strings)
     */
-  var currency: String = js.native
+  var currency: String
 }
 object MoneyHash {
   

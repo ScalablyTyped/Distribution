@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3LogsConfiguration extends StObject {
   
   /**
     *  The status of S3 data event logs as a data source.
     */
-  var Enable: Boolean = js.native
+  var Enable: Boolean
 }
 object S3LogsConfiguration {
   

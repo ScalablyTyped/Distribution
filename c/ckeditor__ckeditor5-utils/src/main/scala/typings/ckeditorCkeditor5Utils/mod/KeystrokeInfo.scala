@@ -2,19 +2,17 @@ package typings.ckeditorCkeditor5Utils.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeystrokeInfo extends StObject {
   
-  var altKey: js.UndefOr[Boolean] = js.native
+  var altKey: js.UndefOr[Boolean] = js.undefined
   
-  var ctrlKey: js.UndefOr[Boolean] = js.native
+  var ctrlKey: js.UndefOr[Boolean] = js.undefined
   
-  var keyCode: Double = js.native
+  var keyCode: Double
   
-  var shiftKey: js.UndefOr[Boolean] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.undefined
 }
 object KeystrokeInfo {
   

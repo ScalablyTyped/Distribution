@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DialogNodesVisited. */
-@js.native
 trait DialogNodesVisited extends StObject {
   
   /** The conditions that trigger the dialog node. */
-  var conditions: js.UndefOr[String] = js.native
+  var conditions: js.UndefOr[String] = js.undefined
   
   /** A dialog node that was triggered during processing of the input message. */
-  var dialog_node: js.UndefOr[String] = js.native
+  var dialog_node: js.UndefOr[String] = js.undefined
   
   /** The title of the dialog node. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogNodesVisited {
   

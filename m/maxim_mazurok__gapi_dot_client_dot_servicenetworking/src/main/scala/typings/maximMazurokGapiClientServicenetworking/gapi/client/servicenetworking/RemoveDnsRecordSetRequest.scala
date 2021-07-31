@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveDnsRecordSetRequest extends StObject {
   
   /**
     * Required. The network that the consumer is using to connect with services. Must be in the form of projects/{project}/global/networks/{network} {project} is the project number, as in
     * '12345' {network} is the network name.
     */
-  var consumerNetwork: js.UndefOr[String] = js.native
+  var consumerNetwork: js.UndefOr[String] = js.undefined
   
   /** Required. The DNS record set to remove. */
-  var dnsRecordSet: js.UndefOr[DnsRecordSet] = js.native
+  var dnsRecordSet: js.UndefOr[DnsRecordSet] = js.undefined
   
   /** Required. The name of the private DNS zone in the shared producer host project from which the record set will be removed. */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object RemoveDnsRecordSetRequest {
   

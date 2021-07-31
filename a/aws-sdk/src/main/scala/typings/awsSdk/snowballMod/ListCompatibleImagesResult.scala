@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCompatibleImagesResult extends StObject {
   
   /**
     * A JSON-formatted object that describes a compatible AMI, including the ID and name for a Snow device AMI.
     */
-  var CompatibleImages: js.UndefOr[CompatibleImageList] = js.native
+  var CompatibleImages: js.UndefOr[CompatibleImageList] = js.undefined
   
   /**
     * Because HTTP requests are stateless, this is the starting point for your next list of returned images.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListCompatibleImagesResult {
   

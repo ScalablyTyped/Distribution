@@ -2,48 +2,46 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Repository extends StObject {
   
   /**
     * The date and time, in JavaScript date format, when the repository was created.
     */
-  var createdAt: js.UndefOr[CreationTimestamp] = js.native
+  var createdAt: js.UndefOr[CreationTimestamp] = js.undefined
   
   /**
     * The encryption configuration for the repository. This determines how the contents of your repository are encrypted at rest.
     */
-  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
-  var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.native
+  var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.undefined
   
   /**
     * The tag mutability setting for the repository.
     */
-  var imageTagMutability: js.UndefOr[ImageTagMutability] = js.native
+  var imageTagMutability: js.UndefOr[ImageTagMutability] = js.undefined
   
   /**
     * The AWS account ID associated with the registry that contains the repository.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that identifies the repository. The ARN contains the arn:aws:ecr namespace, followed by the region of the repository, AWS account ID of the repository owner, repository namespace, and repository name. For example, arn:aws:ecr:region:012345678910:repository/test.
     */
-  var repositoryArn: js.UndefOr[Arn] = js.native
+  var repositoryArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the repository.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
   
   /**
     * The URI for the repository. You can use this URI for container image push and pull operations.
     */
-  var repositoryUri: js.UndefOr[Url] = js.native
+  var repositoryUri: js.UndefOr[Url] = js.undefined
 }
 object Repository {
   

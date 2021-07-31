@@ -2,14 +2,12 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes policy settings that need to be applied to a newly created tenant
   * project.
   */
-@js.native
 trait SchemaTenantProjectPolicy extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaTenantProjectPolicy extends StObject {
     * Among the list of members for `roles/owner`, at least one of them must be
     * either the `user` or `group` type.
     */
-  var policyBindings: js.UndefOr[js.Array[SchemaPolicyBinding]] = js.native
+  var policyBindings: js.UndefOr[js.Array[SchemaPolicyBinding]] = js.undefined
 }
 object SchemaTenantProjectPolicy {
   

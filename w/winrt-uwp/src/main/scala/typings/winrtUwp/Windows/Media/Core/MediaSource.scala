@@ -9,14 +9,13 @@ import typings.winrtUwp.winrtUwpStrings.openoperationcompleted
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media source. Provides a common way to reference media from different sources and exposes a common model for accessing media data regardless of the underlying media format. */
 @js.native
 trait MediaSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_openoperationcompleted(
     `type`: openoperationcompleted,
@@ -44,18 +43,18 @@ trait MediaSource extends StObject {
   var isOpen: Boolean = js.native
   
   /** Occurs when a MediaSource open operation completes. */
-  def onopenoperationcompleted(ev: MediaSourceOpenOperationCompletedEventArgs with WinRTEvent[MediaSource]): Unit = js.native
+  def onopenoperationcompleted(ev: MediaSourceOpenOperationCompletedEventArgs & WinRTEvent[MediaSource]): Unit = js.native
   /** Occurs when a MediaSource open operation completes. */
   @JSName("onopenoperationcompleted")
   var onopenoperationcompleted_Original: TypedEventHandler[MediaSource, MediaSourceOpenOperationCompletedEventArgs] = js.native
   
   /** Occurs when the current state of the MediaSource changes. */
-  def onstatechanged(ev: MediaSourceStateChangedEventArgs with WinRTEvent[MediaSource]): Unit = js.native
+  def onstatechanged(ev: MediaSourceStateChangedEventArgs & WinRTEvent[MediaSource]): Unit = js.native
   /** Occurs when the current state of the MediaSource changes. */
   @JSName("onstatechanged")
   var onstatechanged_Original: TypedEventHandler[MediaSource, MediaSourceStateChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_openoperationcompleted(
     `type`: openoperationcompleted,

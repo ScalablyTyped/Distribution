@@ -4,7 +4,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.KeepSourceFormatting
 import typings.officeJsPreview.officeJsPreviewStrings.UseDestinationTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait InsertSlideOptions extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait InsertSlideOptions extends StObject {
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var formatting: js.UndefOr[InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme] = js.native
+  var formatting: js.UndefOr[InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait InsertSlideOptions extends StObject {
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var sourceSlideIds: js.UndefOr[js.Array[String]] = js.native
+  var sourceSlideIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait InsertSlideOptions extends StObject {
     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var targetSlideId: js.UndefOr[String] = js.native
+  var targetSlideId: js.UndefOr[String] = js.undefined
 }
 object InsertSlideOptions {
   

@@ -10,9 +10,9 @@ Bindings to wiringPi
 | ------------------ | :-------------: |
 | Full name          | wiring-pi |
 | Keywords           | wiringPi, gpio, raspberry, pi, raspberrypi, bcm2835 |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 4460 |
+| # downloads        | 4063 |
 | # stars            | 13 |
 
 ## Links

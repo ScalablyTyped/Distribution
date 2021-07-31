@@ -4,24 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.BlockInstance<{[k: string] : any}>> */
-@js.native
 trait PartialBlockInstancekstri extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var innerBlocks: js.UndefOr[js.Array[BlockInstance[StringDictionary[_]]]] = js.native
+  var innerBlocks: js.UndefOr[js.Array[BlockInstance[StringDictionary[js.Any]]]] = js.undefined
   
-  var isValid: js.UndefOr[Boolean] = js.native
+  var isValid: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var originalContent: js.UndefOr[String] = js.native
+  var originalContent: js.UndefOr[String] = js.undefined
 }
 object PartialBlockInstancekstri {
   
@@ -47,7 +45,7 @@ object PartialBlockInstancekstri {
     def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
+    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[js.Any]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInnerBlocksUndefined: Self = StObject.set(x, "innerBlocks", js.undefined)

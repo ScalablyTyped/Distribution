@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutomaticFacetFilter extends StObject {
   
   /**
     * Whether the filter is disjunctive (true) or conjunctive (false).
     */
-  val disjunctive: js.UndefOr[Boolean] = js.native
+  val disjunctive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Attribute to filter on. This must match a facet placeholder in the rule’s pattern.
     */
-  val facet: String = js.native
+  val facet: String
   
   /**
     * Score for the filter. Typically used for optional or disjunctive filters.
     */
-  val score: js.UndefOr[Double] = js.native
+  val score: js.UndefOr[Double] = js.undefined
 }
 object AutomaticFacetFilter {
   

@@ -2,13 +2,11 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Onselect extends StObject {
   
-  var onselect: js.UndefOr[js.Function0[Unit]] = js.native
+  var onselect: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object Onselect {
   

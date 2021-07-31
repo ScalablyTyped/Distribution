@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionListItem extends ListItemBase {
+trait ActionListItem
+  extends StObject
+     with ListItemBase {
   
   /**
     * Determines item specific modeActionListItems are not selectable because they are command controls

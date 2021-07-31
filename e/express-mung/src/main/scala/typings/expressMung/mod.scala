@@ -9,7 +9,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,27 +17,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("express-mung", "headers")
-  @js.native
-  def headers(fn: TransformHeader): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def headers(fn: TransformHeader): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("headers")(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("express-mung", "headersAsync")
-  @js.native
-  def headersAsync(fn: TransformHeaderAsync): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def headersAsync(fn: TransformHeaderAsync): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("headersAsync")(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("express-mung", "json")
-  @js.native
-  def json(fn: Transform): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-mung", "json")
-  @js.native
-  def json(fn: Transform, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def json(fn: Transform): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def json(fn: Transform, options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("express-mung", "jsonAsync")
-  @js.native
-  def jsonAsync(fn: TransformAsync): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-mung", "jsonAsync")
-  @js.native
-  def jsonAsync(fn: TransformAsync, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def jsonAsync(fn: TransformAsync): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonAsync")(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def jsonAsync(fn: TransformAsync, options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonAsync")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-mung", "onError")
   @js.native
@@ -46,17 +39,14 @@ object mod {
   @scala.inline
   def onError_=(x: ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
   
-  @JSImport("express-mung", "write")
-  @js.native
-  def write(fn: TransformChunk): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-mung", "write")
-  @js.native
-  def write(fn: TransformChunk, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def write(fn: TransformChunk): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def write(fn: TransformChunk, options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @js.native
   trait Options extends StObject {
     
-    var mungError: Boolean = js.native
+    var mungError: Boolean
   }
   object Options {
     

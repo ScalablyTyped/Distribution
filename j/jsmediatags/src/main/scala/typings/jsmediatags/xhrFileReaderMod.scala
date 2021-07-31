@@ -6,7 +6,6 @@ import typings.jsmediatags.typesMod.LoadCallbackType
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xhrFileReaderMod {
@@ -29,23 +28,20 @@ object xhrFileReaderMod {
     @scala.inline
     def _config_=(x: AvoidHeadRequests): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_config")(x.asInstanceOf[js.Any])
     
-    @JSImport("jsmediatags/build2/XhrFileReader", "default.canReadFile")
-    @js.native
-    def canReadFile(file: js.Any): Boolean = js.native
+    @scala.inline
+    def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("jsmediatags/build2/XhrFileReader", "default.setConfig")
-    @js.native
-    def setConfig(config: js.Any): Unit = js.native
+    @scala.inline
+    def setConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait ContentRangeType extends StObject {
     
-    var firstBytePosition: js.UndefOr[Double] = js.native
+    var firstBytePosition: js.UndefOr[Double] = js.undefined
     
-    var instanceLength: js.UndefOr[Double] = js.native
+    var instanceLength: js.UndefOr[Double] = js.undefined
     
-    var lastBytePosition: js.UndefOr[Double] = js.native
+    var lastBytePosition: js.UndefOr[Double] = js.undefined
   }
   object ContentRangeType {
     

@@ -9,7 +9,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CommandActionComplete. */
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CommandActionComplete.
   * @param [properties] Properties to set
   */
-class CommandActionComplete () extends ICommandActionComplete {
+class CommandActionComplete ()
+  extends StObject
+     with ICommandActionComplete {
   def this(properties: ICommandActionComplete) = this()
   
   /** CommandActionComplete completedId. */
@@ -41,18 +42,20 @@ class CommandActionComplete () extends ICommandActionComplete {
 }
 object CommandActionComplete {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new CommandActionComplete instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CommandActionComplete instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.create")
-  @js.native
-  def create(): CommandActionComplete = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.create")
-  @js.native
-  def create(properties: ICommandActionComplete): CommandActionComplete = js.native
+  @scala.inline
+  def create(): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandActionComplete]
+  @scala.inline
+  def create(properties: ICommandActionComplete): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
   
   /**
     * Decodes a CommandActionComplete message from the specified reader or buffer.
@@ -63,18 +66,14 @@ object CommandActionComplete {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.decode")
-  @js.native
-  def decode(reader: Reader): CommandActionComplete = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): CommandActionComplete = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.decode")
-  @js.native
-  def decode(reader: Uint8Array): CommandActionComplete = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): CommandActionComplete = js.native
+  @scala.inline
+  def decode(reader: Reader): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  @scala.inline
+  def decode(reader: Reader, length: Double): CommandActionComplete = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandActionComplete]
+  @scala.inline
+  def decode(reader: Uint8Array): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): CommandActionComplete = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandActionComplete]
   
   /**
     * Decodes a CommandActionComplete message from the specified reader or buffer, length delimited.
@@ -84,12 +83,10 @@ object CommandActionComplete {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): CommandActionComplete = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): CommandActionComplete = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
   
   /**
     * Encodes the specified CommandActionComplete message. Does not implicitly {@link io.cucumber.messages.CommandActionComplete.verify|verify} messages.
@@ -98,12 +95,10 @@ object CommandActionComplete {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.encode")
-  @js.native
-  def encode(message: ICommandActionComplete): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.encode")
-  @js.native
-  def encode(message: ICommandActionComplete, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ICommandActionComplete): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ICommandActionComplete, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandActionComplete message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandActionComplete.verify|verify} messages.
@@ -112,12 +107,10 @@ object CommandActionComplete {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandActionComplete): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICommandActionComplete, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ICommandActionComplete): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ICommandActionComplete, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandActionComplete message from a plain object. Also converts values to their respective internal types.
@@ -125,9 +118,8 @@ object CommandActionComplete {
     * @returns CommandActionComplete
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): CommandActionComplete = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): CommandActionComplete = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandActionComplete]
   
   /**
     * Creates a plain object from a CommandActionComplete message. Also converts values to other types if specified.
@@ -136,12 +128,10 @@ object CommandActionComplete {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.toObject")
-  @js.native
-  def toObject(message: CommandActionComplete): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.toObject")
-  @js.native
-  def toObject(message: CommandActionComplete, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: CommandActionComplete): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: CommandActionComplete, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandActionComplete message.
@@ -149,7 +139,6 @@ object CommandActionComplete {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.CommandActionComplete.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

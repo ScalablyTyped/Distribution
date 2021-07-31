@@ -2,26 +2,26 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowOpenOption extends WindowOption {
+trait WindowOpenOption
+  extends StObject
+     with WindowOption {
   
   /**
     * (Optional) The script to be injected before document unloaded.
     */
-  var inject_js_end: js.UndefOr[String] = js.native
+  var inject_js_end: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) The script to be injected before document loaded.
     */
-  var inject_js_start: js.UndefOr[String] = js.native
+  var inject_js_start: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) Whether to open a new window in a separate render process.
     */
-  var new_instance: js.UndefOr[Boolean] = js.native
+  var new_instance: js.UndefOr[Boolean] = js.undefined
 }
 object WindowOpenOption {
   

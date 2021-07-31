@@ -3,7 +3,6 @@ package typings.winjs.WinJS.Utilities
 import typings.winjs.WinJS.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,43 +24,57 @@ object Scheduler {
       * A priority higher than the normal priority level.
       **/
     @js.native
-    sealed trait aboveNormal extends Priority
+    sealed trait aboveNormal
+      extends StObject
+         with Priority
     
     /**
       * A priority less than the normal priority level.
       **/
     @js.native
-    sealed trait belowNormal extends Priority
+    sealed trait belowNormal
+      extends StObject
+         with Priority
     
     /**
       * A high priority.
       **/
     @js.native
-    sealed trait high extends Priority
+    sealed trait high
+      extends StObject
+         with Priority
     
     /**
       * The idle priority for work items.
       **/
     @js.native
-    sealed trait idle extends Priority
+    sealed trait idle
+      extends StObject
+         with Priority
     
     /**
       * The highest priority.
       **/
     @js.native
-    sealed trait max extends Priority
+    sealed trait max
+      extends StObject
+         with Priority
     
     /**
       * The lowest priority.
       **/
     @js.native
-    sealed trait min extends Priority
+    sealed trait min
+      extends StObject
+         with Priority
     
     /**
       * The normal priority for work items.
       **/
     @js.native
-    sealed trait normal extends Priority
+    sealed trait normal
+      extends StObject
+         with Priority
   }
   
   //#endregion Enumerations
@@ -69,51 +82,50 @@ object Scheduler {
   /**
     * Represents a work item that's executed by the Scheduler.
     **/
-  @js.native
   trait IJob extends StObject {
     
     //#region Methods
     /**
       * Cancels the job.
       **/
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
     //#endregion Methods
     //#region Properties
     /**
       * Gets a value that indicates whether the job has successfully completed.
       **/
-    var completed: Boolean = js.native
+    var completed: Boolean
     
     /**
       * Gets the unique numeric identifier assigned to the job.
       **/
-    var id: Double = js.native
+    var id: Double
     
     /**
       * Gets or sets the name of the job.
       **/
-    var name: String = js.native
+    var name: String
     
     /**
       * Gets or sets the owner of the job.
       **/
-    var owner: IOwnerToken = js.native
+    var owner: IOwnerToken
     
     /**
       * Pauses the job.
       **/
-    def pause(): Unit = js.native
+    def pause(): Unit
     
     /**
       * Gets or sets the priority of the job.
       **/
-    var priority: Priority = js.native
+    var priority: Priority
     
     /**
       * Resumes the job.
       **/
-    def resume(): Unit = js.native
+    def resume(): Unit
   }
   object IJob {
     
@@ -164,7 +176,6 @@ object Scheduler {
   /**
     * Provides a control mechanism that allows a job to cooperatively yield. This object is passed to your work function when you schedule it.
     **/
-  @js.native
   trait IJobInfo extends StObject {
     
     //#endregion Methods
@@ -172,30 +183,30 @@ object Scheduler {
     /**
       * Gets the work item associated with this IJobInfo.
       **/
-    var job: IJob = js.native
+    var job: IJob
     
     //#region Methods
     /**
       * Uses a Promise to determine how long the scheduler should wait before rescheduling the job after it yields.
       * @param promise Once the work item yields, the scheduler will wait for this Promise to complete before rescheduling the job.
       **/
-    def setPromise(promise: Promise[_]): Unit = js.native
+    def setPromise(promise: Promise[js.Any]): Unit
     
     /**
       * Specifies the next unit of work to run once this job yields.
       * @param work The next unit of work to run once this job yields.
       **/
-    def setWork(work: js.Function): Unit = js.native
+    def setWork(work: js.Function): Unit
     
     /**
       * Gets a value that specifies whether the job should yield.
       **/
-    var shouldYield: Boolean = js.native
+    var shouldYield: Boolean
   }
   object IJobInfo {
     
     @scala.inline
-    def apply(job: IJob, setPromise: Promise[_] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
+    def apply(job: IJob, setPromise: Promise[js.Any] => Unit, setWork: js.Function => Unit, shouldYield: Boolean): IJobInfo = {
       val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any], setPromise = js.Any.fromFunction1(setPromise), setWork = js.Any.fromFunction1(setWork), shouldYield = shouldYield.asInstanceOf[js.Any])
       __obj.asInstanceOf[IJobInfo]
     }
@@ -207,7 +218,7 @@ object Scheduler {
       def setJob(value: IJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSetPromise(value: Promise[_] => Unit): Self = StObject.set(x, "setPromise", js.Any.fromFunction1(value))
+      def setSetPromise(value: Promise[js.Any] => Unit): Self = StObject.set(x, "setPromise", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSetWork(value: js.Function => Unit): Self = StObject.set(x, "setWork", js.Any.fromFunction1(value))
@@ -220,14 +231,13 @@ object Scheduler {
   /**
     * Represents an object that owns jobs. You can use this object to cancel a set of jobs.
     **/
-  @js.native
   trait IOwnerToken extends StObject {
     
     //#region Methods
     /**
       * Synchronously cancels the job that this token owns, including paused and blocked jobs.
       **/
-    def cancelAll(): Unit = js.native
+    def cancelAll(): Unit
   }
   object IOwnerToken {
     

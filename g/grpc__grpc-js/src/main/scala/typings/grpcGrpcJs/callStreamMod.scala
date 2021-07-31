@@ -17,14 +17,19 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callStreamMod {
   
+  @JSImport("@grpc/grpc-js/build/src/call-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@grpc/grpc-js/build/src/call-stream", "Http2CallStream")
   @js.native
-  class Http2CallStream protected () extends Call {
+  class Http2CallStream protected ()
+    extends StObject
+       with Call {
     def this(
       methodName: String,
       channel: ChannelImplementation,
@@ -40,6 +45,9 @@ object callStreamMod {
     val callNumber: js.Any = js.native
     
     var canPush: js.Any = js.native
+    
+    /* CompleteClass */
+    override def cancelWithStatus(status: Status, details: String): Unit = js.native
     
     val channel: js.Any = js.native
     
@@ -66,7 +74,25 @@ object callStreamMod {
     
     var finalStatus: js.Any = js.native
     
+    /* CompleteClass */
+    override def getCredentials(): CallCredentials = js.native
+    
+    /* CompleteClass */
+    override def getDeadline(): Deadline = js.native
+    
+    /* CompleteClass */
+    override def getHost(): String = js.native
+    
+    /* CompleteClass */
+    override def getMethod(): String = js.native
+    
+    /* CompleteClass */
+    override def getPeer(): String = js.native
+    
     def getStatus(): StatusObject | Null = js.native
+    
+    /* CompleteClass */
+    override def halfClose(): Unit = js.native
     
     var handleFilterError: js.Any = js.native
     
@@ -108,6 +134,18 @@ object callStreamMod {
       */
     var readsClosed: js.Any = js.native
     
+    /* CompleteClass */
+    override def sendMessageWithContext(context: MessageContext, message: Buffer): Unit = js.native
+    
+    /* CompleteClass */
+    override def setCredentials(credentials: CallCredentials): Unit = js.native
+    
+    /* CompleteClass */
+    override def start(metadata: Metadata, listener: InterceptingListener): Unit = js.native
+    
+    /* CompleteClass */
+    override def startRead(): Unit = js.native
+    
     var statusOutput: js.Any = js.native
     
     var subchannel: js.Any = js.native
@@ -125,49 +163,57 @@ object callStreamMod {
   
   @JSImport("@grpc/grpc-js/build/src/call-stream", "InterceptingListenerImpl")
   @js.native
-  class InterceptingListenerImpl protected () extends InterceptingListener {
+  class InterceptingListenerImpl protected ()
+    extends StObject
+       with InterceptingListener {
     def this(listener: FullListener, nextListener: InterceptingListener) = this()
     
     var listener: js.Any = js.native
     
     var nextListener: js.Any = js.native
     
+    /* CompleteClass */
+    override def onReceiveMessage(message: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def onReceiveMetadata(metadata: Metadata): Unit = js.native
+    
+    /* CompleteClass */
+    override def onReceiveStatus(status: StatusObject): Unit = js.native
+    
     var pendingStatus: js.Any = js.native
     
     var processingMessage: js.Any = js.native
   }
   
-  @JSImport("@grpc/grpc-js/build/src/call-stream", "isInterceptingListener")
-  @js.native
-  def isInterceptingListener(listener: InterceptingListener): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean = js.native
-  @JSImport("@grpc/grpc-js/build/src/call-stream", "isInterceptingListener")
-  @js.native
-  def isInterceptingListener(listener: Listener): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean = js.native
+  @scala.inline
+  def isInterceptingListener(listener: InterceptingListener): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterceptingListener")(listener.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean]
+  @scala.inline
+  def isInterceptingListener(listener: Listener): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterceptingListener")(listener.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener */ Boolean]
   
-  @js.native
   trait Call extends StObject {
     
-    def cancelWithStatus(status: Status, details: String): Unit = js.native
+    def cancelWithStatus(status: Status, details: String): Unit
     
-    def getCredentials(): CallCredentials = js.native
+    def getCredentials(): CallCredentials
     
-    def getDeadline(): Deadline = js.native
+    def getDeadline(): Deadline
     
-    def getHost(): String = js.native
+    def getHost(): String
     
-    def getMethod(): String = js.native
+    def getMethod(): String
     
-    def getPeer(): String = js.native
+    def getPeer(): String
     
-    def halfClose(): Unit = js.native
+    def halfClose(): Unit
     
-    def sendMessageWithContext(context: MessageContext, message: Buffer): Unit = js.native
+    def sendMessageWithContext(context: MessageContext, message: Buffer): Unit
     
-    def setCredentials(credentials: CallCredentials): Unit = js.native
+    def setCredentials(credentials: CallCredentials): Unit
     
-    def start(metadata: Metadata, listener: InterceptingListener): Unit = js.native
+    def start(metadata: Metadata, listener: InterceptingListener): Unit
     
-    def startRead(): Unit = js.native
+    def startRead(): Unit
   }
   object Call {
     
@@ -227,22 +273,21 @@ object callStreamMod {
     }
   }
   
-  @js.native
   trait CallStreamOptions extends StObject {
     
-    var deadline: Deadline = js.native
+    var deadline: Deadline
     
-    var flags: Double = js.native
+    var flags: Double
     
-    var host: String = js.native
+    var host: String
     
-    var parentCall: Call | Null = js.native
+    var parentCall: Call | Null
   }
   object CallStreamOptions {
     
     @scala.inline
     def apply(deadline: Deadline, flags: Double, host: String): CallStreamOptions = {
-      val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], parentCall = null)
       __obj.asInstanceOf[CallStreamOptions]
     }
     
@@ -268,30 +313,55 @@ object callStreamMod {
   
   type Deadline = Date | Double
   
-  @js.native
   trait FullListener extends StObject {
     
-    def onReceiveMessage(message: js.Any, next: js.Function1[/* message */ js.Any, Unit]): Unit = js.native
+    def onReceiveMessage(message: js.Any, next: js.Function1[/* message */ js.Any, Unit]): Unit
     @JSName("onReceiveMessage")
-    var onReceiveMessage_Original: MessageListener = js.native
+    var onReceiveMessage_Original: MessageListener
     
-    def onReceiveMetadata(metadata: Metadata, next: js.Function1[/* metadata */ Metadata, Unit]): Unit = js.native
+    def onReceiveMetadata(metadata: Metadata, next: js.Function1[/* metadata */ Metadata, Unit]): Unit
     @JSName("onReceiveMetadata")
-    var onReceiveMetadata_Original: MetadataListener = js.native
+    var onReceiveMetadata_Original: MetadataListener
     
-    def onReceiveStatus(status: StatusObject, next: js.Function1[/* status */ StatusObject, Unit]): Unit = js.native
+    def onReceiveStatus(status: StatusObject, next: js.Function1[/* status */ StatusObject, Unit]): Unit
     @JSName("onReceiveStatus")
-    var onReceiveStatus_Original: StatusListener = js.native
+    var onReceiveStatus_Original: StatusListener
+  }
+  object FullListener {
+    
+    @scala.inline
+    def apply(
+      onReceiveMessage: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit,
+      onReceiveMetadata: (/* metadata */ Metadata, /* next */ js.Function1[/* metadata */ Metadata, Unit]) => Unit,
+      onReceiveStatus: (/* status */ StatusObject, /* next */ js.Function1[/* status */ StatusObject, Unit]) => Unit
+    ): FullListener = {
+      val __obj = js.Dynamic.literal(onReceiveMessage = js.Any.fromFunction2(onReceiveMessage), onReceiveMetadata = js.Any.fromFunction2(onReceiveMetadata), onReceiveStatus = js.Any.fromFunction2(onReceiveStatus))
+      __obj.asInstanceOf[FullListener]
+    }
+    
+    @scala.inline
+    implicit class FullListenerMutableBuilder[Self <: FullListener] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOnReceiveMessage(value: (/* message */ js.Any, /* next */ js.Function1[/* message */ js.Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnReceiveMetadata(value: (/* metadata */ Metadata, /* next */ js.Function1[/* metadata */ Metadata, Unit]) => Unit): Self = StObject.set(x, "onReceiveMetadata", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOnReceiveStatus(
+        value: (/* status */ StatusObject, /* next */ js.Function1[/* status */ StatusObject, Unit]) => Unit
+      ): Self = StObject.set(x, "onReceiveStatus", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait InterceptingListener extends StObject {
     
-    def onReceiveMessage(message: js.Any): Unit = js.native
+    def onReceiveMessage(message: js.Any): Unit
     
-    def onReceiveMetadata(metadata: Metadata): Unit = js.native
+    def onReceiveMetadata(metadata: Metadata): Unit
     
-    def onReceiveStatus(status: StatusObject): Unit = js.native
+    def onReceiveStatus(status: StatusObject): Unit
   }
   object InterceptingListener {
     
@@ -320,14 +390,13 @@ object callStreamMod {
   }
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.FullListener> */
-  @js.native
   trait Listener extends StObject {
     
-    var onReceiveMessage: js.UndefOr[MessageListener] = js.native
+    var onReceiveMessage: js.UndefOr[MessageListener] = js.undefined
     
-    var onReceiveMetadata: js.UndefOr[MetadataListener] = js.native
+    var onReceiveMetadata: js.UndefOr[MetadataListener] = js.undefined
     
-    var onReceiveStatus: js.UndefOr[StatusListener] = js.native
+    var onReceiveStatus: js.UndefOr[StatusListener] = js.undefined
   }
   object Listener {
     
@@ -362,12 +431,11 @@ object callStreamMod {
     }
   }
   
-  @js.native
   trait MessageContext extends StObject {
     
-    var callback: js.UndefOr[WriteCallback] = js.native
+    var callback: js.UndefOr[WriteCallback] = js.undefined
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
   }
   object MessageContext {
     
@@ -403,16 +471,15 @@ object callStreamMod {
   ]
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.CallStreamOptions> */
-  @js.native
   trait PartialCallStreamOptions extends StObject {
     
-    var deadline: js.UndefOr[Deadline] = js.native
+    var deadline: js.UndefOr[Deadline] = js.undefined
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var parentCall: js.UndefOr[Call | Null] = js.native
+    var parentCall: js.UndefOr[Call | Null] = js.undefined
   }
   object PartialCallStreamOptions {
     
@@ -460,14 +527,13 @@ object callStreamMod {
     Unit
   ]
   
-  @js.native
   trait StatusObject extends StObject {
     
-    var code: Status = js.native
+    var code: Status
     
-    var details: String = js.native
+    var details: String
     
-    var metadata: Metadata = js.native
+    var metadata: Metadata
   }
   object StatusObject {
     
@@ -511,12 +577,11 @@ object callStreamMod {
     def WriteThrough: `4` = 4.asInstanceOf[`4`]
   }
   
-  @js.native
   trait WriteObject extends StObject {
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var message: Buffer = js.native
+    var message: Buffer
   }
   object WriteObject {
     

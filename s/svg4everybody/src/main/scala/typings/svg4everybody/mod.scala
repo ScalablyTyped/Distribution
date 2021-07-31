@@ -4,34 +4,34 @@ import typings.std.SVGElement
 import typings.std.SVGUseElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("svg4everybody", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("svg4everybody", JSImport.Namespace)
-  @js.native
-  def apply(options: Svg4everybodyOpts): Unit = js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Svg4everybodyOpts): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  @JSImport("svg4everybody", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Svg4everybodyOpts extends StObject {
     
-    var attributeName: js.UndefOr[String] = js.native
+    var attributeName: js.UndefOr[String] = js.undefined
     
     var fallback: js.UndefOr[
         js.Function3[/* src */ String, /* svg */ SVGElement, /* use */ SVGUseElement, String]
-      ] = js.native
+      ] = js.undefined
     
-    var nosvg: js.UndefOr[Boolean] = js.native
+    var nosvg: js.UndefOr[Boolean] = js.undefined
     
-    var polyfill: js.UndefOr[Boolean] = js.native
+    var polyfill: js.UndefOr[Boolean] = js.undefined
     
     var validate: js.UndefOr[
         js.Function3[/* src */ String, /* svg */ SVGElement, /* use */ SVGUseElement, Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object Svg4everybodyOpts {
     

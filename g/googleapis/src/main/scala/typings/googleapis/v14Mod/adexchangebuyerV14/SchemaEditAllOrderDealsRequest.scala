@@ -2,10 +2,8 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaEditAllOrderDealsRequest extends StObject {
   
   /**
@@ -21,24 +19,24 @@ trait SchemaEditAllOrderDealsRequest extends StObject {
     * proposal is not present in this list, the service will delete that deal
     * from the proposal. Validation will follow DeleteOrderDealsRequest.
     */
-  var deals: js.UndefOr[js.Array[SchemaMarketplaceDeal]] = js.native
+  var deals: js.UndefOr[js.Array[SchemaMarketplaceDeal]] = js.undefined
   
   /**
     * If specified, also updates the proposal in the batch transaction. This is
     * useful when the proposal and the deals need to be updated in one
     * transaction.
     */
-  var proposal: js.UndefOr[SchemaProposal] = js.native
+  var proposal: js.UndefOr[SchemaProposal] = js.undefined
   
   /**
     * The last known revision number for the proposal.
     */
-  var proposalRevisionNumber: js.UndefOr[String] = js.native
+  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates an optional action to take on the proposal
     */
-  var updateAction: js.UndefOr[String] = js.native
+  var updateAction: js.UndefOr[String] = js.undefined
 }
 object SchemaEditAllOrderDealsRequest {
   

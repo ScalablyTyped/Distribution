@@ -18,7 +18,6 @@ import typings.facebookJsSdk.facebook.ShareOpenGraphDialogParams
 import typings.ngFacebook.anon.PartialInitParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -57,7 +56,7 @@ object mod {
       def api(path: String, method: String, params: js.Object): IPromise[js.Object] = js.native
       def api(path: String, params: js.Object): IPromise[js.Object] = js.native
       
-      def cachedApi(path: String): IPromise[_] = js.native
+      def cachedApi(path: String): IPromise[js.Any] = js.native
       
       def clearCache(): Unit = js.native
       
@@ -75,15 +74,15 @@ object mod {
       def isConnected(): Boolean = js.native
       
       def login(): IPromise[js.Object] = js.native
-      def login(permissions: js.UndefOr[scala.Nothing], rerequest: Boolean): IPromise[js.Object] = js.native
       def login(permissions: String): IPromise[js.Object] = js.native
       def login(permissions: String, rerequest: Boolean): IPromise[js.Object] = js.native
+      def login(permissions: Unit, rerequest: Boolean): IPromise[js.Object] = js.native
       
       def logout(): IPromise[Unit] = js.native
       
       def setCache[T](attr: String, `val`: T): Unit = js.native
       
-      def ui(params: FBUIParams): IPromise[_] = js.native
+      def ui(params: FBUIParams): IPromise[js.Any] = js.native
     }
   }
 }

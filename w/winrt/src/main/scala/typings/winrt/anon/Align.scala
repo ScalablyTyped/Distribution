@@ -4,17 +4,15 @@ import typings.winrt.Windows.UI.Text.TabAlignment
 import typings.winrt.Windows.UI.Text.TabLeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: TabAlignment = js.native
+  var align: TabAlignment
   
-  var leader: TabLeader = js.native
+  var leader: TabLeader
   
-  var position: Double = js.native
+  var position: Double
 }
 object Align {
   

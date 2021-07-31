@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCRtpUnhandled extends StObject {
   
-  var muxId: js.UndefOr[java.lang.String] = js.native
+  var muxId: js.UndefOr[java.lang.String] = js.undefined
   
-  var payloadType: js.UndefOr[Double] = js.native
+  var payloadType: js.UndefOr[Double] = js.undefined
   
-  var ssrc: js.UndefOr[Double] = js.native
+  var ssrc: js.UndefOr[Double] = js.undefined
 }
 object RTCRtpUnhandled {
   

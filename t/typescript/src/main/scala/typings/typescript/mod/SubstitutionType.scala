@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubstitutionType extends Type {
+trait SubstitutionType
+  extends StObject
+     with Type {
   
-  var baseType: Type = js.native
+  var baseType: Type
   
-  var substitute: Type = js.native
+  var substitute: Type
 }
 object SubstitutionType {
   

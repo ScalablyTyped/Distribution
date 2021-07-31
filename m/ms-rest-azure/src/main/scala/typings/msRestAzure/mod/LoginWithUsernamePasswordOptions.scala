@@ -2,23 +2,23 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoginWithUsernamePasswordOptions extends AzureTokenCredentialsOptions {
+trait LoginWithUsernamePasswordOptions
+  extends StObject
+     with AzureTokenCredentialsOptions {
   
   /** 
     * The active directory application client id. 
     * See {@link https://azure.microsoft.com/en-us/documentation/articles/active-directory-devquickstarts-dotnet/ Active Directory Quickstart for .Net} 
     * for an example.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The domain or tenant id containing this application. Default value is 'common'.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
 }
 object LoginWithUsernamePasswordOptions {
   

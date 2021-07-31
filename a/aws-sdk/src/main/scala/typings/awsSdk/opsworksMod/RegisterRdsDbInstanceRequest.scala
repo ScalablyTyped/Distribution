@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterRdsDbInstanceRequest extends StObject {
   
   /**
     * The database password.
     */
-  var DbPassword: String = js.native
+  var DbPassword: String
   
   /**
     * The database's master user name.
     */
-  var DbUser: String = js.native
+  var DbUser: String
   
   /**
     * The Amazon RDS instance's ARN.
     */
-  var RdsDbInstanceArn: String = js.native
+  var RdsDbInstanceArn: String
   
   /**
     * The stack ID.
     */
-  var StackId: String = js.native
+  var StackId: String
 }
 object RegisterRdsDbInstanceRequest {
   

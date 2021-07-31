@@ -3,74 +3,72 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResource extends StObject {
   
   /**
     * The Access Control Policy set on this resource.
     */
-  var accessControl: js.UndefOr[SchemaResourceAccessControl] = js.native
+  var accessControl: js.UndefOr[SchemaResourceAccessControl] = js.undefined
   
   /**
     * Output only. The evaluated properties of the resource with references
     * expanded. Returned as serialized YAML.
     */
-  var finalProperties: js.UndefOr[String] = js.native
+  var finalProperties: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Creation timestamp in RFC3339 text format.
     */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. URL of the manifest representing the current configuration
     * of this resource.
     */
-  var manifest: js.UndefOr[String] = js.native
+  var manifest: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The name of the resource as it appears in the YAML config.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current properties of the resource before any references
     * have been filled in. Returned as serialized YAML.
     */
-  var properties: js.UndefOr[String] = js.native
+  var properties: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The type of the resource, for example compute.v1.instance,
     * or cloudfunctions.v1beta1.function.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If Deployment Manager is currently updating or previewing an
     * update to this resource, the updated configuration appears here.
     */
-  var update: js.UndefOr[SchemaResourceUpdate] = js.native
+  var update: js.UndefOr[SchemaResourceUpdate] = js.undefined
   
   /**
     * Output only. Update timestamp in RFC3339 text format.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The URL of the actual resource.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If warning messages are generated during processing of this
     * resource, this field will be populated.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
 }
 object SchemaResource {
   

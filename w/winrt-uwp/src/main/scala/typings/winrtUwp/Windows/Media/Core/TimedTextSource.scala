@@ -6,14 +6,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.resolved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a source of timed text data. */
 @js.native
 trait TimedTextSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_resolved(
     `type`: resolved,
@@ -21,12 +20,12 @@ trait TimedTextSource extends StObject {
   ): Unit = js.native
   
   /** Occurs when the TimedTextSource is resolved. */
-  def onresolved(ev: TimedTextSourceResolveResultEventArgs with WinRTEvent[TimedTextSource]): Unit = js.native
+  def onresolved(ev: TimedTextSourceResolveResultEventArgs & WinRTEvent[TimedTextSource]): Unit = js.native
   /** Occurs when the TimedTextSource is resolved. */
   @JSName("onresolved")
   var onresolved_Original: TypedEventHandler[TimedTextSource, TimedTextSourceResolveResultEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_resolved(
     `type`: resolved,

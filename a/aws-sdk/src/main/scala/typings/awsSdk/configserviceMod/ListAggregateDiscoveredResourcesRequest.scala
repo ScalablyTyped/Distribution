@@ -2,36 +2,34 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAggregateDiscoveredResourcesRequest extends StObject {
   
   /**
     * The name of the configuration aggregator. 
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * Filters the results based on the ResourceFilters object.
     */
-  var Filters: js.UndefOr[ResourceFilters] = js.native
+  var Filters: js.UndefOr[ResourceFilters] = js.undefined
   
   /**
     * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
     */
-  var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
   
   /**
     * The type of resources that you want AWS Config to list in the response.
     */
-  var ResourceType: typings.awsSdk.configserviceMod.ResourceType = js.native
+  var ResourceType: typings.awsSdk.configserviceMod.ResourceType
 }
 object ListAggregateDiscoveredResourcesRequest {
   

@@ -2,13 +2,11 @@ package typings.astring.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Write extends StObject {
   
-  def write(s: String): Unit = js.native
+  def write(s: String): Unit
 }
 object Write {
   

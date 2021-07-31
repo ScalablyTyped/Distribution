@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleMatcher extends StObject {
   
   /** If specified, the input double value must be equal to the value specified here. */
-  var exact: js.UndefOr[Double] = js.native
+  var exact: js.UndefOr[Double] = js.undefined
   
   /** If specified, the input double value must be in the range specified here. Note: The range is using half-open interval semantics [start, end). */
-  var range: js.UndefOr[DoubleRange] = js.native
+  var range: js.UndefOr[DoubleRange] = js.undefined
 }
 object DoubleMatcher {
   

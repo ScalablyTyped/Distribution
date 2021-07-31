@@ -10,12 +10,15 @@ Trim string whitespace
 | ------------------ | :-------------: |
 | Full name          | trim |
 | Keywords           | string, trim |
-| # releases         | 0 |
-| # dependents       | 172 |
-| # downloads        | 118164584 |
+| # releases         | 4 |
+| # dependents       | 171 |
+| # downloads        | 146992790 |
 | # stars            | 6 |
 
 ## Links
+- [Homepage](https://github.com/component/trim#readme)
+- [Bugs](https://github.com/component/trim/issues)
+- [Repository](https://github.com/component/trim)
 - [Npm](https://www.npmjs.com/package/trim)
     
 

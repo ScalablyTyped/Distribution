@@ -12,7 +12,7 @@ Typings are for version 1.1.3
 | Keywords           | fs, file system, posix, linux, windows, testing, mock |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5588 |
+| # downloads        | 5890 |
 | # stars            | 2 |
 
 ## Links

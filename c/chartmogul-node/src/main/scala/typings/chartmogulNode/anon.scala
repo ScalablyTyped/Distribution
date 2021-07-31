@@ -5,21 +5,19 @@ import typings.chartmogulNode.mod.Customer.NewCustomAttributes
 import typings.chartmogulNode.mod.Invoice.Invoice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Addresszip extends StObject {
     
-    var address_zip: js.UndefOr[String] = js.native
+    var address_zip: js.UndefOr[String] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Addresszip {
     
@@ -58,26 +56,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Arpa extends StObject {
     
-    var arpa: Double = js.native
+    var arpa: Double
     
-    var arr: Double = js.native
+    var arr: Double
     
-    var asp: Double = js.native
+    var asp: Double
     
-    var `customer-churn-rate`: Double = js.native
+    var `customer-churn-rate`: Double
     
-    var customers: Double = js.native
+    var customers: Double
     
-    var date: String = js.native
+    var date: String
     
-    var ltv: Double = js.native
+    var ltv: Double
     
-    var mrr: Double = js.native
+    var mrr: Double
     
-    var `mrr-churn-rate`: Double = js.native
+    var `mrr-churn-rate`: Double
   }
   object Arpa {
     
@@ -131,12 +128,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Custom extends StObject {
     
-    var custom: js.Array[NewCustomAttributes] = js.native
+    var custom: js.Array[NewCustomAttributes]
     
-    var email: String = js.native
+    var email: String
   }
   object Custom {
     
@@ -160,10 +156,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomArray extends StObject {
     
-    var custom: js.Array[NewCustomAttributes] = js.native
+    var custom: js.Array[NewCustomAttributes]
   }
   object CustomArray {
     
@@ -184,10 +179,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomStrings extends StObject {
     
-    var custom: Strings = js.native
+    var custom: Strings
   }
   object CustomStrings {
     
@@ -208,10 +202,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Invoices extends StObject {
     
-    var invoices: js.Array[Invoice] = js.native
+    var invoices: js.Array[Invoice]
   }
   object Invoices {
     

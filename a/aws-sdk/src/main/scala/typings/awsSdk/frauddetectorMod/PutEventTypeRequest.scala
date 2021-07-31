@@ -2,41 +2,39 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutEventTypeRequest extends StObject {
   
   /**
     * The description of the event type.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The entity type for the event type. Example entity types: customer, merchant, account.
     */
-  var entityTypes: NonEmptyListOfStrings = js.native
+  var entityTypes: NonEmptyListOfStrings
   
   /**
     * The event type variables.
     */
-  var eventVariables: NonEmptyListOfStrings = js.native
+  var eventVariables: NonEmptyListOfStrings
   
   /**
     * The event type labels.
     */
-  var labels: js.UndefOr[ListOfStrings] = js.native
+  var labels: js.UndefOr[ListOfStrings] = js.undefined
   
   /**
     * The name.
     */
-  var name: identifier = js.native
+  var name: identifier
   
   /**
     * A collection of key and value pairs.
     */
-  var tags: js.UndefOr[tagList] = js.native
+  var tags: js.UndefOr[tagList] = js.undefined
 }
 object PutEventTypeRequest {
   

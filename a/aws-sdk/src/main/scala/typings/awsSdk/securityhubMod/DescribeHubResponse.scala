@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHubResponse extends StObject {
   
   /**
     * Whether to automatically enable new controls when they are added to standards that are enabled. If set to true, then new controls for enabled standards are enabled automatically. If set to false, then new controls are not enabled.
     */
-  var AutoEnableControls: js.UndefOr[Boolean] = js.native
+  var AutoEnableControls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ARN of the Hub resource that was retrieved.
     */
-  var HubArn: js.UndefOr[NonEmptyString] = js.native
+  var HubArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date and time when Security Hub was enabled in the account.
     */
-  var SubscribedAt: js.UndefOr[NonEmptyString] = js.native
+  var SubscribedAt: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DescribeHubResponse {
   

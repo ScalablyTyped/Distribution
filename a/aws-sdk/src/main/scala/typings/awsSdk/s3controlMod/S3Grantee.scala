@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Grantee extends StObject {
   
   /**
     * 
     */
-  var DisplayName: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var DisplayName: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var Identifier: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var Identifier: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var TypeIdentifier: js.UndefOr[S3GranteeTypeIdentifier] = js.native
+  var TypeIdentifier: js.UndefOr[S3GranteeTypeIdentifier] = js.undefined
 }
 object S3Grantee {
   

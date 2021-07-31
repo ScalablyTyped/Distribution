@@ -2,7 +2,6 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * before it is fully operational. The methods delete, insert, patch, and
   * update require the admin role.
   */
-@js.native
 trait SchemaAccount extends StObject {
   
   /**
     * Indicates whether the merchant sells adult content.
     */
-  var adultContent: js.UndefOr[Boolean] = js.native
+  var adultContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of linked AdWords accounts that are active or pending approval. To
@@ -25,56 +23,56 @@ trait SchemaAccount extends StObject {
     * the AdWords interface or through the  AdWords API. To delete an active
     * link, or to cancel a link request, remove it from the list.
     */
-  var adwordsLinks: js.UndefOr[js.Array[SchemaAccountAdwordsLink]] = js.native
+  var adwordsLinks: js.UndefOr[js.Array[SchemaAccountAdwordsLink]] = js.undefined
   
   /**
     * The business information of the account.
     */
-  var businessInformation: js.UndefOr[SchemaAccountBusinessInformation] = js.native
+  var businessInformation: js.UndefOr[SchemaAccountBusinessInformation] = js.undefined
   
   /**
     * The GMB account which is linked or in the process of being linked with
     * the Merchant Center account.
     */
-  var googleMyBusinessLink: js.UndefOr[SchemaAccountGoogleMyBusinessLink] = js.native
+  var googleMyBusinessLink: js.UndefOr[SchemaAccountGoogleMyBusinessLink] = js.undefined
   
   /**
     * Merchant Center account ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#account&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Display name for the account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [DEPRECATED] This field is never returned and will be ignored if
     * provided.
     */
-  var reviewsUrl: js.UndefOr[String] = js.native
+  var reviewsUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Client-specific, locally-unique, internal ID for the child account.
     */
-  var sellerId: js.UndefOr[String] = js.native
+  var sellerId: js.UndefOr[String] = js.undefined
   
   /**
     * Users with access to the account. Every account (except for subaccounts)
     * must have at least one admin user.
     */
-  var users: js.UndefOr[js.Array[SchemaAccountUser]] = js.native
+  var users: js.UndefOr[js.Array[SchemaAccountUser]] = js.undefined
   
   /**
     * The merchant&#39;s website.
     */
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
   
   /**
     * List of linked YouTube channels that are active or pending approval. To
@@ -83,7 +81,7 @@ trait SchemaAccount extends StObject {
     * Creator Studio interface. To delete an active link, or to cancel a link
     * request, remove it from the list.
     */
-  var youtubeChannelLinks: js.UndefOr[js.Array[SchemaAccountYouTubeChannelLink]] = js.native
+  var youtubeChannelLinks: js.UndefOr[js.Array[SchemaAccountYouTubeChannelLink]] = js.undefined
 }
 object SchemaAccount {
   

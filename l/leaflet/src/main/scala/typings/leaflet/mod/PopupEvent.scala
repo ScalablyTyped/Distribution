@@ -2,13 +2,13 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupEvent extends LeafletEvent {
+trait PopupEvent
+  extends StObject
+     with LeafletEvent {
   
-  var popup: Popup_ = js.native
+  var popup: Popup_
 }
 object PopupEvent {
   

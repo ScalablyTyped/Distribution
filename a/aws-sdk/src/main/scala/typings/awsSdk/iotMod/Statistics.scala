@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statistics extends StObject {
   
   /**
     * The average of the aggregated field values.
     */
-  var average: js.UndefOr[Average] = js.native
+  var average: js.UndefOr[Average] = js.undefined
   
   /**
     * The count of things that match the query.
     */
-  var count: js.UndefOr[Count] = js.native
+  var count: js.UndefOr[Count] = js.undefined
   
   /**
     * The maximum aggregated field value.
     */
-  var maximum: js.UndefOr[Maximum] = js.native
+  var maximum: js.UndefOr[Maximum] = js.undefined
   
   /**
     * The minimum aggregated field value.
     */
-  var minimum: js.UndefOr[Minimum] = js.native
+  var minimum: js.UndefOr[Minimum] = js.undefined
   
   /**
     * The standard deviation of the aggregated field values.
     */
-  var stdDeviation: js.UndefOr[StdDeviation] = js.native
+  var stdDeviation: js.UndefOr[StdDeviation] = js.undefined
   
   /**
     * The sum of the aggregated field values.
     */
-  var sum: js.UndefOr[Sum] = js.native
+  var sum: js.UndefOr[Sum] = js.undefined
   
   /**
     * The sum of the squares of the aggregated field values.
     */
-  var sumOfSquares: js.UndefOr[SumOfSquares] = js.native
+  var sumOfSquares: js.UndefOr[SumOfSquares] = js.undefined
   
   /**
     * The variance of the aggregated field values.
     */
-  var variance: js.UndefOr[Variance] = js.native
+  var variance: js.UndefOr[Variance] = js.undefined
 }
 object Statistics {
   

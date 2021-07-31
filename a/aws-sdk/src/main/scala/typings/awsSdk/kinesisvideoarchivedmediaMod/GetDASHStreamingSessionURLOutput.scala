@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDASHStreamingSessionURLOutput extends StObject {
   
   /**
     * The URL (containing the session token) that a media player can use to retrieve the MPEG-DASH manifest.
     */
-  var DASHStreamingSessionURL: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.DASHStreamingSessionURL] = js.native
+  var DASHStreamingSessionURL: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.DASHStreamingSessionURL] = js.undefined
 }
 object GetDASHStreamingSessionURLOutput {
   

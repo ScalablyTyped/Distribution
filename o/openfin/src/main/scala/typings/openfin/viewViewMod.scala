@@ -16,7 +16,6 @@ import typings.openfin.windowOptionMod.WindowOption
 import typings.openfin.windowWindowMod.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewViewMod {
@@ -164,7 +163,7 @@ object viewViewMod {
       * @tutorial View.getBounds
       * @experimental
       */
-    def getBounds(): js.Promise[_] = js.native
+    def getBounds(): js.Promise[js.Any] = js.native
     
     /**
       * Retrieves the window the view is currently attached to.
@@ -179,7 +178,7 @@ object viewViewMod {
       * @tutorial View.getInfo
       * @experimental
       */
-    def getInfo(): js.Promise[_] = js.native
+    def getInfo(): js.Promise[js.Any] = js.native
     
     /**
       * Gets the View's options.
@@ -237,35 +236,34 @@ object viewViewMod {
       * @tutorial View.updateOptions
       * @experimental
       */
-    def updateOptions(options: PartialViewOptions): js.Promise[_] = js.native
+    def updateOptions(options: PartialViewOptions): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait AutoResizeOptions extends StObject {
     
     /**
       * If true, the view's height will grow and shrink together with the window. false
       * by default.
       */
-    var height: js.UndefOr[Boolean] = js.native
+    var height: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the view's x position and width will grow and shrink proportionally with
       * the window. false by default.
       */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the view's y position and height will grow and shrink proportionally with
       * the window. false by default.
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the view's width will grow and shrink together with the window. false
       * by default.
       */
-    var width: js.UndefOr[Boolean] = js.native
+    var width: js.UndefOr[Boolean] = js.undefined
   }
   object AutoResizeOptions {
     
@@ -304,24 +302,25 @@ object viewViewMod {
     }
   }
   
-  @js.native
-  trait ViewCreationOptions extends ViewOptions {
+  trait ViewCreationOptions
+    extends StObject
+       with ViewOptions {
     
-    var bounds: js.UndefOr[ViewBounds] = js.native
+    var bounds: js.UndefOr[ViewBounds] = js.undefined
     
-    var customRequestHeaders: js.UndefOr[js.Array[CustomRequestHeaders]] = js.native
+    var customRequestHeaders: js.UndefOr[js.Array[CustomRequestHeaders]] = js.undefined
     
-    var hotkeys: js.UndefOr[js.Array[Hotkey]] = js.native
+    var hotkeys: js.UndefOr[js.Array[Hotkey]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var preloadScripts: js.UndefOr[js.Array[PreloadScript]] = js.native
+    var preloadScripts: js.UndefOr[js.Array[PreloadScript]] = js.undefined
     
-    var processAffinity: js.UndefOr[String] = js.native
+    var processAffinity: js.UndefOr[String] = js.undefined
     
-    var target: Identity = js.native
+    var target: Identity
     
-    var url: String = js.native
+    var url: String
   }
   object ViewCreationOptions {
     
@@ -438,24 +437,23 @@ object viewViewMod {
     def wrapSync(identity: Identity): View = js.native
   }
   
-  @js.native
   trait ViewOptions extends StObject {
     
-    var api: js.UndefOr[Api] = js.native
+    var api: js.UndefOr[Api] = js.undefined
     
-    var autoResize: js.UndefOr[AutoResizeOptions] = js.native
+    var autoResize: js.UndefOr[AutoResizeOptions] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var contentNavigation: js.UndefOr[ContentNavigation] = js.native
+    var contentNavigation: js.UndefOr[ContentNavigation] = js.undefined
     
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
-    var customContext: js.UndefOr[js.Any] = js.native
+    var customContext: js.UndefOr[js.Any] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var experimental: js.UndefOr[js.Any] = js.native
+    var experimental: js.UndefOr[js.Any] = js.undefined
   }
   object ViewOptions {
     

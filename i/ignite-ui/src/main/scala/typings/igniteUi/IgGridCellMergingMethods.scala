@@ -2,15 +2,13 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridCellMergingMethods extends StObject {
   
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
@@ -18,19 +16,19 @@ trait IgGridCellMergingMethods extends StObject {
     *
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Removes all igGridCellMerging UI changes and destroys the widget
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns the merge state of a column.
     *
     * @param column The column index or column key to get the state for.
     */
-  def isMerged(column: js.Object): Boolean = js.native
+  def isMerged(column: js.Object): Boolean
   
   /**
     * Merges the specified column unless it is already merged.
@@ -38,18 +36,18 @@ trait IgGridCellMergingMethods extends StObject {
     * @param column The column index or column key to merge.
     * @param raiseEvents Specifies if the operation should raise merging-related events.
     */
-  def mergeColumn(column: js.Object, raiseEvents: Boolean): String = js.native
+  def mergeColumn(column: js.Object, raiseEvents: Boolean): String
   
-  def mergeRow(id: js.Object, fireEvents: js.Object): Unit = js.native
+  def mergeRow(id: js.Object, fireEvents: js.Object): Unit
   
   /**
     * Restores the column to its unmerged state. Does nothing if the column is not merged.
     *
     * @param column The column index or column key to unmerge.
     */
-  def unmergeColumn(column: js.Object): String = js.native
+  def unmergeColumn(column: js.Object): String
   
-  def unmergeRow(id: js.Object, index: js.Object): Unit = js.native
+  def unmergeRow(id: js.Object, index: js.Object): Unit
 }
 object IgGridCellMergingMethods {
   

@@ -7,7 +7,6 @@ import typings.std.HTMLImageElement
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ImagesLoaded {
@@ -16,7 +15,8 @@ object ImagesLoaded {
   
   @js.native
   trait ImagesLoaded
-    extends Instantiable2[
+    extends StObject
+       with Instantiable2[
           /* elem */ ElementSelector, 
           /* callback */ ImagesLoadedCallback, 
           typings.imagesloaded.ImagesLoaded.ImagesLoaded
@@ -55,10 +55,9 @@ object ImagesLoaded {
     Unit
   ]
   
-  @js.native
   trait ImagesLoadedOptions extends StObject {
     
-    var background: `true` | String = js.native
+    var background: `true` | String
   }
   object ImagesLoadedOptions {
     
@@ -77,12 +76,11 @@ object ImagesLoaded {
   }
   
   /** interface for an image currently loading or completed */
-  @js.native
   trait LoadingImage extends StObject {
     
-    var img: HTMLImageElement = js.native
+    var img: HTMLImageElement
     
-    var isLoaded: Boolean = js.native
+    var isLoaded: Boolean
   }
   object LoadingImage {
     

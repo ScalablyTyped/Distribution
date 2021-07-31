@@ -3,14 +3,15 @@ package typings.typeorm
 import typings.typeorm.loggerLoggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerDebugLoggerMod {
   
   @JSImport("typeorm/logger/DebugLogger", "DebugLogger")
   @js.native
-  class DebugLogger () extends Logger {
+  class DebugLogger ()
+    extends StObject
+       with Logger {
     
     var debugInfo: js.Any = js.native
     

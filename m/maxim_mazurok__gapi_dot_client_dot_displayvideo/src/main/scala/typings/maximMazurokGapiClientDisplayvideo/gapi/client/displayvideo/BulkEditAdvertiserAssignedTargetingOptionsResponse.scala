@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditAdvertiserAssignedTargetingOptionsResponse extends StObject {
   
   /** The list of assigned targeting options that have been successfully created. This list will be absent if empty. */
-  var createdAssignedTargetingOptions: js.UndefOr[js.Array[AssignedTargetingOption]] = js.native
+  var createdAssignedTargetingOptions: js.UndefOr[js.Array[AssignedTargetingOption]] = js.undefined
 }
 object BulkEditAdvertiserAssignedTargetingOptionsResponse {
   

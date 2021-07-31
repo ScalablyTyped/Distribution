@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientTreeListColumn")
 @js.native
 class ASPxClientTreeListColumn ()
-  extends typings.devexpressWeb.ASPxClientTreeListColumn
+  extends StObject
+     with typings.devexpressWeb.ASPxClientTreeListColumn {
+  
+  /**
+    * Gets the name of the database field assigned to the current column.
+    */
+  /* CompleteClass */
+  var fieldName: String = js.native
+  
+  /**
+    * Gets the column's position within the collection.
+    */
+  /* CompleteClass */
+  var index: Double = js.native
+  
+  /**
+    * Gets the name that uniquely identifies the column.
+    */
+  /* CompleteClass */
+  var name: String = js.native
+}

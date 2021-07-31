@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricOrderBy extends StObject {
   
   /** A metric name in the request to order by. */
-  var metricName: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.undefined
 }
 object MetricOrderBy {
   

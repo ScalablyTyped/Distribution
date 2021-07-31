@@ -5,10 +5,8 @@ import typings.chromeApps.chrome.idle.IdleState
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofidle extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Typeofidle extends StObject {
     * 'idle' if the system is unlocked and the user has not generated any input for a
     * specified number of seconds, and 'active' when the user generates input on an idle system.
     */
-  val onStateChanged: Event[js.Function1[/* newState */ IdleState, Unit]] = js.native
+  val onStateChanged: Event[js.Function1[/* newState */ IdleState, Unit]]
   
   /**
     * Returns 'locked' if the system is locked, 'idle' if the user has not generated any input for a specified number of seconds, or 'active' otherwise.
@@ -26,7 +24,7 @@ trait Typeofidle extends StObject {
     * @param callback The callback parameter should be a function that looks like this:
     * function( IdleState newState) {...};
     */
-  def queryState(detectionIntervalInSeconds: integer, callback: js.Function1[/* newState */ IdleState, Unit]): Unit = js.native
+  def queryState(detectionIntervalInSeconds: integer, callback: js.Function1[/* newState */ IdleState, Unit]): Unit
   
   /**
     * Sets the interval, in seconds, used to determine when the system is in an idle state for
@@ -35,7 +33,7 @@ trait Typeofidle extends StObject {
     * @since Chrome 25.
     * @param intervalInSeconds Threshold, in seconds, used to determine when the system is in an idle state.
     */
-  def setDetectionInterval(intervalInSeconds: integer): Unit = js.native
+  def setDetectionInterval(intervalInSeconds: integer): Unit
 }
 object Typeofidle {
   

@@ -2,13 +2,11 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageSettings extends StObject {
   
-  var buttons: js.UndefOr[js.Object] = js.native
+  var buttons: js.UndefOr[js.Object] = js.undefined
 }
 object LanguageSettings {
   

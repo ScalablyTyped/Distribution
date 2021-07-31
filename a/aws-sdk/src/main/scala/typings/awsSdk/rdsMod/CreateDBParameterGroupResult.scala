@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBParameterGroupResult extends StObject {
   
-  var DBParameterGroup: js.UndefOr[typings.awsSdk.rdsMod.DBParameterGroup] = js.native
+  var DBParameterGroup: js.UndefOr[typings.awsSdk.rdsMod.DBParameterGroup] = js.undefined
 }
 object CreateDBParameterGroupResult {
   

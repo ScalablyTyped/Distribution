@@ -11,7 +11,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`512`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SearchFlags {

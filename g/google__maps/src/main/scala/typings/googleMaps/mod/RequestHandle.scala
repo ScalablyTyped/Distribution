@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestHandle[T] extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait RequestHandle[T] extends StObject {
     * The ResponseCallback will not be invoked, and promises will not be settled.
     * Use the RequestHandle#finally handler will still be called.
     */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
     * Registers a callback that will be called when the response is finished, either successfully, or with an error,
     * or having been cancelled. Use this to clean up resources.
     * Returns this handle, for chaining.
     */
-  def `finally`(callback: js.Function0[Unit]): RequestHandle[T] = js.native
+  def `finally`(callback: js.Function0[Unit]): RequestHandle[T]
 }
 object RequestHandle {
   
@@ -32,7 +30,7 @@ object RequestHandle {
   }
   
   @scala.inline
-  implicit class RequestHandleMutableBuilder[Self <: RequestHandle[_], T] (val x: Self with RequestHandle[T]) extends AnyVal {
+  implicit class RequestHandleMutableBuilder[Self <: RequestHandle[?], T] (val x: Self & RequestHandle[T]) extends AnyVal {
     
     @scala.inline
     def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))

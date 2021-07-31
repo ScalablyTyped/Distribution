@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyVersionSpec extends StObject {
   
   /** Required. The algorithm to use for creating a managed Cloud KMS key for a for a simplified experience. All managed keys will be have their ProtectionLevel as `HSM`. */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The resource name for an existing Cloud KMS CryptoKeyVersion in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/cryptoKeyVersions/ *`. This option enables full
     * flexibility in the key's capabilities and properties.
     */
-  var cloudKmsKeyVersion: js.UndefOr[String] = js.native
+  var cloudKmsKeyVersion: js.UndefOr[String] = js.undefined
 }
 object KeyVersionSpec {
   

@@ -6,10 +6,13 @@ import typings.node.tlsMod.TlsOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("nats", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("nats", "BAD_AUTHENTICATION")
   @js.native
@@ -127,31 +130,23 @@ object mod {
   @js.native
   val SUB_DRAINING: String = js.native
   
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(): Client = js.native
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(opts: ClientOpts): Client = js.native
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(url: js.UndefOr[scala.Nothing], opts: ClientOpts): Client = js.native
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(url: String): Client = js.native
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(url: String, opts: ClientOpts): Client = js.native
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(url: Double): Client = js.native
-  @JSImport("nats", "connect")
-  @js.native
-  def connect(url: Double, opts: ClientOpts): Client = js.native
+  @scala.inline
+  def connect(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Client]
+  @scala.inline
+  def connect(opts: ClientOpts): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def connect(url: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def connect(url: String, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
+  @scala.inline
+  def connect(url: Double): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def connect(url: Double, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
+  @scala.inline
+  def connect(url: Unit, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
   
-  @JSImport("nats", "createInbox")
-  @js.native
-  def createInbox(): String = js.native
+  @scala.inline
+  def createInbox(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createInbox")().asInstanceOf[String]
   
   @JSImport("nats", "version")
   @js.native
@@ -258,70 +253,69 @@ object mod {
     def unsubscribe(sid: Double, max: Double): Unit = js.native
   }
   
-  @js.native
   trait ClientOpts extends StObject {
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var maxPingOut: js.UndefOr[Double] = js.native
+    var maxPingOut: js.UndefOr[Double] = js.undefined
     
-    var maxReconnectAttempts: js.UndefOr[Double] = js.native
+    var maxReconnectAttempts: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nkey: js.UndefOr[String] = js.native
+    var nkey: js.UndefOr[String] = js.undefined
     
-    var noEcho: js.UndefOr[Boolean] = js.native
+    var noEcho: js.UndefOr[Boolean] = js.undefined
     
-    var noRandomize: js.UndefOr[Boolean] = js.native
+    var noRandomize: js.UndefOr[Boolean] = js.undefined
     
-    var nonceSigner: js.UndefOr[js.Function] = js.native
+    var nonceSigner: js.UndefOr[js.Function] = js.undefined
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var pedantic: js.UndefOr[Boolean] = js.native
+    var pedantic: js.UndefOr[Boolean] = js.undefined
     
-    var pingInterval: js.UndefOr[Double] = js.native
+    var pingInterval: js.UndefOr[Double] = js.undefined
     
-    var preserveBuffers: js.UndefOr[Boolean] = js.native
+    var preserveBuffers: js.UndefOr[Boolean] = js.undefined
     
-    var reconnect: js.UndefOr[Boolean] = js.native
+    var reconnect: js.UndefOr[Boolean] = js.undefined
     
-    var reconnectDelayHandler: js.UndefOr[js.Function0[Double]] = js.native
+    var reconnectDelayHandler: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var reconnectJitter: js.UndefOr[Double] = js.native
+    var reconnectJitter: js.UndefOr[Double] = js.undefined
     
-    var reconnectJitterTLS: js.UndefOr[Double] = js.native
+    var reconnectJitterTLS: js.UndefOr[Double] = js.undefined
     
-    var reconnectTimeWait: js.UndefOr[Double] = js.native
+    var reconnectTimeWait: js.UndefOr[Double] = js.undefined
     
-    var servers: js.UndefOr[js.Array[String]] = js.native
+    var servers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tls: js.UndefOr[Boolean | TlsOptions] = js.native
+    var tls: js.UndefOr[Boolean | TlsOptions] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var tokenHandler: js.UndefOr[js.Function0[String]] = js.native
+    var tokenHandler: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var useOldRequestStyle: js.UndefOr[Boolean] = js.native
+    var useOldRequestStyle: js.UndefOr[Boolean] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
     
-    var userCreds: js.UndefOr[String] = js.native
+    var userCreds: js.UndefOr[String] = js.undefined
     
-    var userJWT: js.UndefOr[js.Function0[String]] = js.native
+    var userJWT: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var waitOnFirstConnect: js.UndefOr[Boolean] = js.native
+    var waitOnFirstConnect: js.UndefOr[Boolean] = js.undefined
     
-    var yieldTime: js.UndefOr[Double] = js.native
+    var yieldTime: js.UndefOr[Double] = js.undefined
   }
   object ClientOpts {
     
@@ -525,12 +519,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait NatsError extends Error {
+  trait NatsError
+    extends StObject
+       with Error {
     
-    var chainedError: Error = js.native
+    var chainedError: Error
     
-    var code: String = js.native
+    var code: String
   }
   object NatsError {
     
@@ -551,12 +546,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RequestOptions {
     
@@ -583,12 +577,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SubscribeOptions extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var queue: js.UndefOr[String] = js.native
+    var queue: js.UndefOr[String] = js.undefined
   }
   object SubscribeOptions {
     

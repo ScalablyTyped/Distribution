@@ -4,29 +4,28 @@ import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BooleanSupportOption
-  extends BaseSupportOption[boolean]
+  extends StObject
+     with BaseSupportOption[boolean]
      with _SupportOption {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var array: js.UndefOr[`false`] = js.native
+  var array: js.UndefOr[`false`] = js.undefined
   
   @JSName("description")
-  var description_BooleanSupportOption: String = js.native
+  var description_BooleanSupportOption: String
   
-  var oppositeDescription: js.UndefOr[Boolean] = js.native
+  var oppositeDescription: js.UndefOr[Boolean] = js.undefined
 }
 object BooleanSupportOption {
   
   @scala.inline
-  def apply(category: String, default: Boolean, description: String, since: String, `type`: boolean): BooleanSupportOption = {
+  def apply(category: String, default: Boolean, description: String, since: String): BooleanSupportOption = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanSupportOption]
   }
   

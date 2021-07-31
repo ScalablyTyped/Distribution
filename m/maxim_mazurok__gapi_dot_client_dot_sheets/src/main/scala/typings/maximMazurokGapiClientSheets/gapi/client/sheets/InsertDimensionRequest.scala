@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertDimensionRequest extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait InsertDimensionRequest extends StObject {
     * inserting 2 rows at index 1 can inherit either the green or red background. If `inheritFromBefore` is true, the two new rows will be red (because the row before the insertion point
     * was red), whereas if `inheritFromBefore` is false, the two new rows will be green (because the row after the insertion point was green).
     */
-  var inheritFromBefore: js.UndefOr[Boolean] = js.native
+  var inheritFromBefore: js.UndefOr[Boolean] = js.undefined
   
   /** The dimensions to insert. Both the start and end indexes must be bounded. */
-  var range: js.UndefOr[DimensionRange] = js.native
+  var range: js.UndefOr[DimensionRange] = js.undefined
 }
 object InsertDimensionRequest {
   

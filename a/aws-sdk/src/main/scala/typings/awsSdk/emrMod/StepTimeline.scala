@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepTimeline extends StObject {
   
   /**
     * The date and time when the cluster step was created.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.native
+  var CreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time when the cluster step execution completed or failed.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time when the cluster step execution started.
     */
-  var StartDateTime: js.UndefOr[Date] = js.native
+  var StartDateTime: js.UndefOr[Date] = js.undefined
 }
 object StepTimeline {
   

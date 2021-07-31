@@ -6,52 +6,50 @@ import typings.highcharts.highchartsStrings.text
 import typings.highcharts.highchartsStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxSettingsObject extends StObject {
   
   /**
     * The payload to send.
     */
-  var data: String | Dictionary[_] = js.native
+  var data: String | Dictionary[js.Any]
   
   /**
     * The data type expected.
     */
-  var dataType: json | octet | text | xml = js.native
+  var dataType: json | octet | text | xml
   
   /**
     * Function to call on error.
     */
-  var error: js.Function = js.native
+  var error: js.Function
   
   /**
     * The headers; keyed on header name.
     */
-  var headers: Dictionary[String] = js.native
+  var headers: Dictionary[String]
   
   /**
     * Function to call on success.
     */
-  var success: js.Function = js.native
+  var success: js.Function
   
   /**
     * The HTTP method to use. For example GET or POST.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The URL to call.
     */
-  var url: String = js.native
+  var url: String
 }
 object AjaxSettingsObject {
   
   @scala.inline
   def apply(
-    data: String | Dictionary[_],
+    data: String | Dictionary[js.Any],
     dataType: json | octet | text | xml,
     error: js.Function,
     headers: Dictionary[String],
@@ -68,7 +66,7 @@ object AjaxSettingsObject {
   implicit class AjaxSettingsObjectMutableBuilder[Self <: AjaxSettingsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: String | Dictionary[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | Dictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataType(value: json | octet | text | xml): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])

@@ -2,15 +2,13 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerClass extends StObject {
   
-  def Create(name: String, options: TriggerCreateOptions, callback: CbCallback): Unit = js.native
+  def Create(name: String, options: TriggerCreateOptions, callback: CbCallback): Unit
   
-  def Fetch(name: String, callback: CbCallback): Unit = js.native
+  def Fetch(name: String, callback: CbCallback): Unit
 }
 object TriggerClass {
   

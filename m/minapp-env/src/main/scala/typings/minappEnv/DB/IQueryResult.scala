@@ -4,13 +4,13 @@ import typings.minappEnv.Array
 import typings.minappEnv.IAPISuccessParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IQueryResult extends IAPISuccessParam {
+trait IQueryResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var data: Array[IDocumentData] = js.native
+  var data: Array[IDocumentData]
 }
 object IQueryResult {
   

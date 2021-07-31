@@ -6,7 +6,6 @@ import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait WorksheetProtection extends ClientObject {
+trait WorksheetProtection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -50,7 +51,7 @@ trait WorksheetProtection extends ClientObject {
     * @param password Optional. Sheet protection password.
     */
   def protect(): Unit = js.native
-  def protect(options: js.UndefOr[scala.Nothing], password: String): Unit = js.native
+  def protect(options: Unit, password: String): Unit = js.native
   def protect(options: WorksheetProtectionOptions): Unit = js.native
   def protect(options: WorksheetProtectionOptions, password: String): Unit = js.native
   

@@ -3,36 +3,34 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRepository extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var defaultBranch: String = js.native
+  var defaultBranch: String
   
-  var id: String = js.native
+  var id: String
   
   /**
     * True if the repository was created as a fork
     */
-  var isFork: Boolean = js.native
+  var isFork: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var parentRepository: GitRepositoryRef = js.native
+  var parentRepository: GitRepositoryRef
   
-  var project: TeamProjectReference = js.native
+  var project: TeamProjectReference
   
-  var remoteUrl: String = js.native
+  var remoteUrl: String
   
-  var sshUrl: String = js.native
+  var sshUrl: String
   
-  var url: String = js.native
+  var url: String
   
-  var validRemoteUrls: js.Array[String] = js.native
+  var validRemoteUrls: js.Array[String]
 }
 object GitRepository {
   

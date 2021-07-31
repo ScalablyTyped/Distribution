@@ -2,21 +2,19 @@ package typings.winrt.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICachedFileUpdaterUI extends StObject {
   
-  var onfileupdaterequested: js.Any = js.native
+  var onfileupdaterequested: js.Any
   
-  var onuirequested: js.Any = js.native
+  var onuirequested: js.Any
   
-  var title: String = js.native
+  var title: String
   
-  var uIStatus: UIStatus = js.native
+  var uIStatus: UIStatus
   
-  var updateTarget: CachedFileTarget = js.native
+  var updateTarget: CachedFileTarget
 }
 object ICachedFileUpdaterUI {
   

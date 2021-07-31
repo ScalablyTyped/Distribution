@@ -2,13 +2,11 @@ package typings.leafletDraw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipText extends StObject {
   
-  var tooltip: Text = js.native
+  var tooltip: Text
 }
 object TooltipText {
   

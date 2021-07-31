@@ -2,16 +2,14 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteJobQueueRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the queue to delete.
     */
-  var jobQueue: String = js.native
+  var jobQueue: String
 }
 object DeleteJobQueueRequest {
   

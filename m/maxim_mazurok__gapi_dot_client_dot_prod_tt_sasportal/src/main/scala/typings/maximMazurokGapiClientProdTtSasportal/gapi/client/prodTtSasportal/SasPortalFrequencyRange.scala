@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalFrequencyRange extends StObject {
   
   /** The highest frequency of the frequency range in MHz. */
-  var highFrequencyMhz: js.UndefOr[Double] = js.native
+  var highFrequencyMhz: js.UndefOr[Double] = js.undefined
   
   /** The lowest frequency of the frequency range in MHz. */
-  var lowFrequencyMhz: js.UndefOr[Double] = js.native
+  var lowFrequencyMhz: js.UndefOr[Double] = js.undefined
 }
 object SasPortalFrequencyRange {
   

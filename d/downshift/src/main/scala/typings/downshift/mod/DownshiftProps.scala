@@ -5,49 +5,47 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownshiftProps[Item] extends StObject {
   
-  var children: js.UndefOr[ChildrenFunction[Item]] = js.native
+  var children: js.UndefOr[ChildrenFunction[Item]] = js.undefined
   
-  var defaultHighlightedIndex: js.UndefOr[Double | Null] = js.native
+  var defaultHighlightedIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var defaultIsOpen: js.UndefOr[Boolean] = js.native
+  var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
   
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
-  var getA11yStatusMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.native
+  var getA11yStatusMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.undefined
   
-  var getItemId: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], String]] = js.native
+  var getItemId: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], String]] = js.undefined
   
-  var highlightedIndex: js.UndefOr[Double | Null] = js.native
+  var highlightedIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var initialHighlightedIndex: js.UndefOr[Double | Null] = js.native
+  var initialHighlightedIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var initialInputValue: js.UndefOr[String] = js.native
+  var initialInputValue: js.UndefOr[String] = js.undefined
   
-  var initialIsOpen: js.UndefOr[Boolean] = js.native
+  var initialIsOpen: js.UndefOr[Boolean] = js.undefined
   
-  var initialSelectedItem: js.UndefOr[Item] = js.native
+  var initialSelectedItem: js.UndefOr[Item] = js.undefined
   
-  var inputId: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.undefined
   
-  var inputValue: js.UndefOr[String | Null] = js.native
+  var inputValue: js.UndefOr[String | Null] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var itemCount: js.UndefOr[Double] = js.native
+  var itemCount: js.UndefOr[Double] = js.undefined
   
-  var itemToString: js.UndefOr[js.Function1[/* item */ Item | Null, String]] = js.native
+  var itemToString: js.UndefOr[js.Function1[/* item */ Item | Null, String]] = js.undefined
   
-  var labelId: js.UndefOr[String] = js.native
+  var labelId: js.UndefOr[String] = js.undefined
   
-  var menuId: js.UndefOr[String] = js.native
+  var menuId: js.UndefOr[String] = js.undefined
   
   var onChange: js.UndefOr[
     js.Function2[
@@ -55,13 +53,13 @@ trait DownshiftProps[Item] extends StObject {
       /* stateAndHelpers */ ControllerStateAndHelpers[Item], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onInputValueChange: js.UndefOr[
     js.Function2[/* inputValue */ String, /* stateAndHelpers */ ControllerStateAndHelpers[Item], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onOuterClick: js.UndefOr[js.Function1[/* stateAndHelpers */ ControllerStateAndHelpers[Item], Unit]] = js.native
+  var onOuterClick: js.UndefOr[js.Function1[/* stateAndHelpers */ ControllerStateAndHelpers[Item], Unit]] = js.undefined
   
   var onSelect: js.UndefOr[
     js.Function2[
@@ -69,7 +67,7 @@ trait DownshiftProps[Item] extends StObject {
       /* stateAndHelpers */ ControllerStateAndHelpers[Item], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onStateChange: js.UndefOr[
     js.Function2[
@@ -77,7 +75,7 @@ trait DownshiftProps[Item] extends StObject {
       /* stateAndHelpers */ ControllerStateAndHelpers[Item], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onUserAction: js.UndefOr[
     js.Function2[
@@ -85,13 +83,13 @@ trait DownshiftProps[Item] extends StObject {
       /* stateAndHelpers */ ControllerStateAndHelpers[Item], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var scrollIntoView: js.UndefOr[js.Function2[/* node */ HTMLElement, /* menuNode */ HTMLElement, Unit]] = js.native
+  var scrollIntoView: js.UndefOr[js.Function2[/* node */ HTMLElement, /* menuNode */ HTMLElement, Unit]] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var selectedItemChanged: js.UndefOr[js.Function2[/* prevItem */ Item, /* item */ Item, Boolean]] = js.native
+  var selectedItemChanged: js.UndefOr[js.Function2[/* prevItem */ Item, /* item */ Item, Boolean]] = js.undefined
   
   var stateReducer: js.UndefOr[
     js.Function2[
@@ -99,9 +97,9 @@ trait DownshiftProps[Item] extends StObject {
       /* changes */ StateChangeOptions[Item], 
       Partial[StateChangeOptions[Item]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var suppressRefError: js.UndefOr[Boolean] = js.native
+  var suppressRefError: js.UndefOr[Boolean] = js.undefined
 }
 object DownshiftProps {
   
@@ -112,7 +110,7 @@ object DownshiftProps {
   }
   
   @scala.inline
-  implicit class DownshiftPropsMutableBuilder[Self <: DownshiftProps[_], Item] (val x: Self with DownshiftProps[Item]) extends AnyVal {
+  implicit class DownshiftPropsMutableBuilder[Self <: DownshiftProps[?], Item] (val x: Self & DownshiftProps[Item]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: /* options */ ControllerStateAndHelpers[Item] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

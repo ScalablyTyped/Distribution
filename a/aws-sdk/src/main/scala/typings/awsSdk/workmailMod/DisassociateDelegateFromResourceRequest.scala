@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateDelegateFromResourceRequest extends StObject {
   
   /**
     * The identifier for the member (user, group) to be removed from the resource's delegates.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The identifier for the organization under which the resource exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier of the resource from which delegates' set members are removed. 
     */
-  var ResourceId: typings.awsSdk.workmailMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.workmailMod.ResourceId
 }
 object DisassociateDelegateFromResourceRequest {
   

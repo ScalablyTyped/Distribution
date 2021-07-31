@@ -2,75 +2,66 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsBufferTimeMod {
   
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
+  @JSImport("rxjs/operators/bufferTime", JSImport.Namespace)
   @js.native
-  def bufferTime[T](bufferTimeSpan: Double): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[scala.Nothing],
-    maxBufferSize: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](
-    bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[scala.Nothing],
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Double,
     maxBufferSize: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Null,
     maxBufferSize: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     bufferCreationInterval: Null,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/bufferTime", "bufferTime")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Unit, maxBufferSize: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Unit,
+    maxBufferSize: Double,
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], maxBufferSize.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Unit,
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], bufferCreationInterval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def bufferTime[T](
     bufferTimeSpan: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferTime")(bufferTimeSpan.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

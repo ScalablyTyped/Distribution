@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceMonitoring extends StObject {
   
   /**
     * If true, detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
     */
-  var Enabled: js.UndefOr[MonitoringEnabled] = js.native
+  var Enabled: js.UndefOr[MonitoringEnabled] = js.undefined
 }
 object InstanceMonitoring {
   

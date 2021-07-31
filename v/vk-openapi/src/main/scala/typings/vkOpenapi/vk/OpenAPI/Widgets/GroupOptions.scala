@@ -7,27 +7,25 @@ import typings.vkOpenapi.vkOpenapiNumbers.`4`
 import typings.vkOpenapi.vkOpenapiStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupOptions extends StObject {
   
-  var color1: js.UndefOr[String] = js.native
+  var color1: js.UndefOr[String] = js.undefined
   
-  var color2: js.UndefOr[String] = js.native
+  var color2: js.UndefOr[String] = js.undefined
   
-  var color3: js.UndefOr[String] = js.native
+  var color3: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[`1` | `3` | `4`] = js.native
+  var mode: js.UndefOr[`1` | `3` | `4`] = js.undefined
   
-  var no_cover: js.UndefOr[NumericBoolean] = js.native
+  var no_cover: js.UndefOr[NumericBoolean] = js.undefined
   
-  var wide: js.UndefOr[NumericBoolean] = js.native
+  var wide: js.UndefOr[NumericBoolean] = js.undefined
   
-  var width: js.UndefOr[Double | auto] = js.native
+  var width: js.UndefOr[Double | auto] = js.undefined
 }
 object GroupOptions {
   

@@ -4,7 +4,6 @@ import typings.atom.mod.FileEncoding
 import typings.atom.mod.TooltipPlacement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object atomStrings {
@@ -115,27 +114,37 @@ object atomStrings {
   def `atom-text-editor`: `atom-text-editor` = "atom-text-editor".asInstanceOf[`atom-text-editor`]
   
   @js.native
-  sealed trait auto extends TooltipPlacement
+  sealed trait auto
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `auto bottom` extends TooltipPlacement
+  sealed trait `auto bottom`
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def `auto bottom`: `auto bottom` = ("auto bottom").asInstanceOf[`auto bottom`]
   
   @js.native
-  sealed trait `auto left` extends TooltipPlacement
+  sealed trait `auto left`
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def `auto left`: `auto left` = ("auto left").asInstanceOf[`auto left`]
   
   @js.native
-  sealed trait `auto right` extends TooltipPlacement
+  sealed trait `auto right`
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def `auto right`: `auto right` = ("auto right").asInstanceOf[`auto right`]
   
   @js.native
-  sealed trait `auto top` extends TooltipPlacement
+  sealed trait `auto top`
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def `auto top`: `auto top` = ("auto top").asInstanceOf[`auto top`]
   
@@ -265,7 +274,9 @@ object atomStrings {
   def beta: beta = "beta".asInstanceOf[beta]
   
   @js.native
-  sealed trait big5hkscs extends FileEncoding
+  sealed trait big5hkscs
+    extends StObject
+       with FileEncoding
   @scala.inline
   def big5hkscs: big5hkscs = "big5hkscs".asInstanceOf[big5hkscs]
   
@@ -275,7 +286,9 @@ object atomStrings {
   def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait bottom_ extends TooltipPlacement
+  sealed trait bottom_
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def bottom_ : bottom_ = "bottom".asInstanceOf[bottom_]
   
@@ -410,27 +423,37 @@ object atomStrings {
   def coreDotwarnOnLargeFileLimit: coreDotwarnOnLargeFileLimit = "core.warnOnLargeFileLimit".asInstanceOf[coreDotwarnOnLargeFileLimit]
   
   @js.native
-  sealed trait cp437 extends FileEncoding
+  sealed trait cp437
+    extends StObject
+       with FileEncoding
   @scala.inline
   def cp437: cp437 = "cp437".asInstanceOf[cp437]
   
   @js.native
-  sealed trait cp850 extends FileEncoding
+  sealed trait cp850
+    extends StObject
+       with FileEncoding
   @scala.inline
   def cp850: cp850 = "cp850".asInstanceOf[cp850]
   
   @js.native
-  sealed trait cp866 extends FileEncoding
+  sealed trait cp866
+    extends StObject
+       with FileEncoding
   @scala.inline
   def cp866: cp866 = "cp866".asInstanceOf[cp866]
   
   @js.native
-  sealed trait cp932 extends FileEncoding
+  sealed trait cp932
+    extends StObject
+       with FileEncoding
   @scala.inline
   def cp932: cp932 = "cp932".asInstanceOf[cp932]
   
   @js.native
-  sealed trait cp950 extends FileEncoding
+  sealed trait cp950
+    extends StObject
+       with FileEncoding
   @scala.inline
   def cp950: cp950 = "cp950".asInstanceOf[cp950]
   
@@ -630,12 +653,16 @@ object atomStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait eucjp extends FileEncoding
+  sealed trait eucjp
+    extends StObject
+       with FileEncoding
   @scala.inline
   def eucjp: eucjp = "eucjp".asInstanceOf[eucjp]
   
   @js.native
-  sealed trait euckr extends FileEncoding
+  sealed trait euckr
+    extends StObject
+       with FileEncoding
   @scala.inline
   def euckr: euckr = "euckr".asInstanceOf[euckr]
   
@@ -680,12 +707,16 @@ object atomStrings {
   def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
-  sealed trait gb18030 extends FileEncoding
+  sealed trait gb18030
+    extends StObject
+       with FileEncoding
   @scala.inline
   def gb18030: gb18030 = "gb18030".asInstanceOf[gb18030]
   
   @js.native
-  sealed trait gbk extends FileEncoding
+  sealed trait gbk
+    extends StObject
+       with FileEncoding
   @scala.inline
   def gbk: gbk = "gbk".asInstanceOf[gbk]
   
@@ -745,87 +776,121 @@ object atomStrings {
   def ion: ion = "ion".asInstanceOf[ion]
   
   @js.native
-  sealed trait iso88591 extends FileEncoding
+  sealed trait iso88591
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88591: iso88591 = "iso88591".asInstanceOf[iso88591]
   
   @js.native
-  sealed trait iso885910 extends FileEncoding
+  sealed trait iso885910
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso885910: iso885910 = "iso885910".asInstanceOf[iso885910]
   
   @js.native
-  sealed trait iso885913 extends FileEncoding
+  sealed trait iso885913
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso885913: iso885913 = "iso885913".asInstanceOf[iso885913]
   
   @js.native
-  sealed trait iso885914 extends FileEncoding
+  sealed trait iso885914
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso885914: iso885914 = "iso885914".asInstanceOf[iso885914]
   
   @js.native
-  sealed trait iso885915 extends FileEncoding
+  sealed trait iso885915
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso885915: iso885915 = "iso885915".asInstanceOf[iso885915]
   
   @js.native
-  sealed trait iso885916 extends FileEncoding
+  sealed trait iso885916
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso885916: iso885916 = "iso885916".asInstanceOf[iso885916]
   
   @js.native
-  sealed trait iso88592 extends FileEncoding
+  sealed trait iso88592
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88592: iso88592 = "iso88592".asInstanceOf[iso88592]
   
   @js.native
-  sealed trait iso88593 extends FileEncoding
+  sealed trait iso88593
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88593: iso88593 = "iso88593".asInstanceOf[iso88593]
   
   @js.native
-  sealed trait iso88594 extends FileEncoding
+  sealed trait iso88594
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88594: iso88594 = "iso88594".asInstanceOf[iso88594]
   
   @js.native
-  sealed trait iso88595 extends FileEncoding
+  sealed trait iso88595
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88595: iso88595 = "iso88595".asInstanceOf[iso88595]
   
   @js.native
-  sealed trait iso88596 extends FileEncoding
+  sealed trait iso88596
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88596: iso88596 = "iso88596".asInstanceOf[iso88596]
   
   @js.native
-  sealed trait iso88597 extends FileEncoding
+  sealed trait iso88597
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88597: iso88597 = "iso88597".asInstanceOf[iso88597]
   
   @js.native
-  sealed trait iso88598 extends FileEncoding
+  sealed trait iso88598
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88598: iso88598 = "iso88598".asInstanceOf[iso88598]
   
   @js.native
-  sealed trait iso88599 extends FileEncoding
+  sealed trait iso88599
+    extends StObject
+       with FileEncoding
   @scala.inline
   def iso88599: iso88599 = "iso88599".asInstanceOf[iso88599]
   
   @js.native
-  sealed trait koi8r extends FileEncoding
+  sealed trait koi8r
+    extends StObject
+       with FileEncoding
   @scala.inline
   def koi8r: koi8r = "koi8r".asInstanceOf[koi8r]
   
   @js.native
-  sealed trait koi8u extends FileEncoding
+  sealed trait koi8u
+    extends StObject
+       with FileEncoding
   @scala.inline
   def koi8u: koi8u = "koi8u".asInstanceOf[koi8u]
   
   @js.native
-  sealed trait left_ extends TooltipPlacement
+  sealed trait left_
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def left_ : left_ = "left".asInstanceOf[left_]
   
@@ -875,7 +940,9 @@ object atomStrings {
   def linterDotlintPreviewTabs: linterDotlintPreviewTabs = "linter.lintPreviewTabs".asInstanceOf[linterDotlintPreviewTabs]
   
   @js.native
-  sealed trait macroman extends FileEncoding
+  sealed trait macroman
+    extends StObject
+       with FileEncoding
   @scala.inline
   def macroman: macroman = "macroman".asInstanceOf[macroman]
   
@@ -955,7 +1022,9 @@ object atomStrings {
   def renamed: renamed = "renamed".asInstanceOf[renamed]
   
   @js.native
-  sealed trait right_ extends TooltipPlacement
+  sealed trait right_
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def right_ : right_ = "right".asInstanceOf[right_]
   
@@ -965,7 +1034,9 @@ object atomStrings {
   def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
-  sealed trait shiftjis extends FileEncoding
+  sealed trait shiftjis
+    extends StObject
+       with FileEncoding
   @scala.inline
   def shiftjis: shiftjis = "shiftjis".asInstanceOf[shiftjis]
   
@@ -1075,7 +1146,9 @@ object atomStrings {
   def `tool-barDotvisible`: `tool-barDotvisible` = "tool-bar.visible".asInstanceOf[`tool-barDotvisible`]
   
   @js.native
-  sealed trait top_ extends TooltipPlacement
+  sealed trait top_
+    extends StObject
+       with TooltipPlacement
   @scala.inline
   def top_ : top_ = "top".asInstanceOf[top_]
   
@@ -1095,17 +1168,23 @@ object atomStrings {
   def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait utf16be extends FileEncoding
+  sealed trait utf16be
+    extends StObject
+       with FileEncoding
   @scala.inline
   def utf16be: utf16be = "utf16be".asInstanceOf[utf16be]
   
   @js.native
-  sealed trait utf16le extends FileEncoding
+  sealed trait utf16le
+    extends StObject
+       with FileEncoding
   @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
-  sealed trait utf8 extends FileEncoding
+  sealed trait utf8
+    extends StObject
+       with FileEncoding
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
@@ -1115,47 +1194,65 @@ object atomStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait windows1250 extends FileEncoding
+  sealed trait windows1250
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1250: windows1250 = "windows1250".asInstanceOf[windows1250]
   
   @js.native
-  sealed trait windows1251 extends FileEncoding
+  sealed trait windows1251
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1251: windows1251 = "windows1251".asInstanceOf[windows1251]
   
   @js.native
-  sealed trait windows1252 extends FileEncoding
+  sealed trait windows1252
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1252: windows1252 = "windows1252".asInstanceOf[windows1252]
   
   @js.native
-  sealed trait windows1253 extends FileEncoding
+  sealed trait windows1253
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1253: windows1253 = "windows1253".asInstanceOf[windows1253]
   
   @js.native
-  sealed trait windows1254 extends FileEncoding
+  sealed trait windows1254
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1254: windows1254 = "windows1254".asInstanceOf[windows1254]
   
   @js.native
-  sealed trait windows1255 extends FileEncoding
+  sealed trait windows1255
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1255: windows1255 = "windows1255".asInstanceOf[windows1255]
   
   @js.native
-  sealed trait windows1256 extends FileEncoding
+  sealed trait windows1256
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1256: windows1256 = "windows1256".asInstanceOf[windows1256]
   
   @js.native
-  sealed trait windows1257 extends FileEncoding
+  sealed trait windows1257
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1257: windows1257 = "windows1257".asInstanceOf[windows1257]
   
   @js.native
-  sealed trait windows1258 extends FileEncoding
+  sealed trait windows1258
+    extends StObject
+       with FileEncoding
   @scala.inline
   def windows1258: windows1258 = "windows1258".asInstanceOf[windows1258]
   

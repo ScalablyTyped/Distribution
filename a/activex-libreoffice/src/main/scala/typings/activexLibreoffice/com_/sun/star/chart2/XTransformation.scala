@@ -6,24 +6,24 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows the transformation of numeric values from one coordinate-system into an other. Values may be transformed using any mapping. */
-@js.native
-trait XTransformation extends XInterface {
+trait XTransformation
+  extends StObject
+     with XInterface {
   
   /** the dimension of the input coordinate sequence that is to be transformed by the {@link transform()} method. */
-  val SourceDimension: Double = js.native
+  val SourceDimension: Double
   
   /** the dimension of the output coordinate sequence that is the result of the {@link transform()} method. */
-  val TargetDimension: Double = js.native
+  val TargetDimension: Double
   
   /** the dimension of the input coordinate sequence that is to be transformed by the {@link transform()} method. */
-  def getSourceDimension(): Double = js.native
+  def getSourceDimension(): Double
   
   /** the dimension of the output coordinate sequence that is the result of the {@link transform()} method. */
-  def getTargetDimension(): Double = js.native
+  def getTargetDimension(): Double
   
   /**
     * transforms the given input data tuple, given in the source coordinate system, according to the internal transformation rules, into a tuple of
@@ -34,7 +34,7 @@ trait XTransformation extends XInterface {
     * @returns the transformed data tuple. The length of this sequence is equal to the dimension of the output coordinate system.
     * @throws com::sun::star::lang::IllegalArgumentException if the dimension of the input vector is not equal to the dimension given in {@link getSourceDimens
     */
-  def transform(aValues: SeqEquiv[Double]): SafeArray[Double] = js.native
+  def transform(aValues: SeqEquiv[Double]): SafeArray[Double]
 }
 object XTransformation {
   

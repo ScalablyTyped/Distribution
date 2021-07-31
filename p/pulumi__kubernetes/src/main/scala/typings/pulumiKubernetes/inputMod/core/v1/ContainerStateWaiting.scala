@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerStateWaiting is a waiting state of a container.
   */
-@js.native
 trait ContainerStateWaiting extends StObject {
   
   /**
     * Message regarding why the container is not yet running.
     */
-  var message: js.UndefOr[Input[String]] = js.native
+  var message: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * (brief) reason the container is not yet running.
     */
-  var reason: js.UndefOr[Input[String]] = js.native
+  var reason: js.UndefOr[Input[String]] = js.undefined
 }
 object ContainerStateWaiting {
   

@@ -4,19 +4,19 @@ import typings.googleapis.googleapisStrings.v1_3
 import typings.googleapisCommon.apiMod.GlobalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Options extends GlobalOptions {
+trait Options
+  extends StObject
+     with GlobalOptions {
   
-  var version: v1_3 = js.native
+  var version: v1_3
 }
 object Options {
   
   @scala.inline
-  def apply(version: v1_3): Options = {
-    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+  def apply(): Options = {
+    val __obj = js.Dynamic.literal(version = "v1_3")
     __obj.asInstanceOf[Options]
   }
   

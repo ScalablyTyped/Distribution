@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Topics")
@@ -35,7 +34,7 @@ class ResourceCoursesTopics protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaTopic] = js.native
   def create(callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
   def create(params: ParamsResourceCoursesTopicsCreate): GaxiosPromise[SchemaTopic] = js.native
   def create(params: ParamsResourceCoursesTopicsCreate, callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
   def create(
@@ -69,7 +68,7 @@ class ResourceCoursesTopics protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesTopicsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesTopicsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -103,7 +102,7 @@ class ResourceCoursesTopics protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTopic] = js.native
   def get(callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
   def get(params: ParamsResourceCoursesTopicsGet): GaxiosPromise[SchemaTopic] = js.native
   def get(params: ParamsResourceCoursesTopicsGet, callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
   def get(
@@ -138,7 +137,7 @@ class ResourceCoursesTopics protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListTopicResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTopicResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTopicResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTopicResponse] = js.native
   def list(params: ParamsResourceCoursesTopicsList): GaxiosPromise[SchemaListTopicResponse] = js.native
   def list(params: ParamsResourceCoursesTopicsList, callback: BodyResponseCallback[SchemaListTopicResponse]): Unit = js.native
   def list(
@@ -174,7 +173,7 @@ class ResourceCoursesTopics protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaTopic] = js.native
   def patch(callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
   def patch(params: ParamsResourceCoursesTopicsPatch): GaxiosPromise[SchemaTopic] = js.native
   def patch(params: ParamsResourceCoursesTopicsPatch, callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
   def patch(

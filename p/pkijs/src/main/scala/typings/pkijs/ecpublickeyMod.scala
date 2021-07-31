@@ -4,60 +4,85 @@ import typings.std.ArrayBuffer
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecpublickeyMod {
   
   @JSImport("pkijs/src/ECPublicKey", JSImport.Default)
   @js.native
-  class default () extends ECPublicKey {
+  class default ()
+    extends StObject
+       with ECPublicKey {
     def this(params: js.Any) = this()
+    
+    /**
+      * Convert JSON value into current object
+      * @param {JsonWebKey} json
+      */
+    /* CompleteClass */
+    override def fromJSON(json: JsonWebKey): Unit = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var namedCurve: String = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    var x: ArrayBuffer = js.native
+    
+    /* CompleteClass */
+    var y: ArrayBuffer = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/ECPublicKey", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/ECPublicKey", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/ECPublicKey", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/ECPublicKey", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/ECPublicKey", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait ECPublicKey extends StObject {
     
     /**
       * Convert JSON value into current object
       * @param {JsonWebKey} json
       */
-    def fromJSON(json: JsonWebKey): Unit = js.native
+    def fromJSON(json: JsonWebKey): Unit
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var namedCurve: String = js.native
+    var namedCurve: String
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var x: ArrayBuffer = js.native
+    var x: ArrayBuffer
     
-    var y: ArrayBuffer = js.native
+    var y: ArrayBuffer
   }
   object ECPublicKey {
     

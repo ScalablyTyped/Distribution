@@ -3,19 +3,19 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.setExtremes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AxisSetExtremesEventObject extends ExtremesObject {
+trait AxisSetExtremesEventObject
+  extends StObject
+     with ExtremesObject {
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var target: SVGElement = js.native
+  var target: SVGElement
   
-  var trigger: String | AxisExtremesTriggerValue = js.native
+  var trigger: String | AxisExtremesTriggerValue
   
-  var `type`: setExtremes = js.native
+  var `type`: setExtremes
 }
 object AxisSetExtremesEventObject {
   
@@ -28,12 +28,11 @@ object AxisSetExtremesEventObject {
     preventDefault: js.Function,
     target: SVGElement,
     trigger: String | AxisExtremesTriggerValue,
-    `type`: setExtremes,
     userMax: Double,
     userMin: Double
   ): AxisSetExtremesEventObject = {
     val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], userMax = userMax.asInstanceOf[js.Any], userMin = userMin.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setExtremes")
     __obj.asInstanceOf[AxisSetExtremesEventObject]
   }
   

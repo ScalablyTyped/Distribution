@@ -2,17 +2,15 @@ package typings.amqpRpc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoDelete extends StObject {
     
-    var autoDelete: js.UndefOr[Boolean] = js.native
+    var autoDelete: js.UndefOr[Boolean] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
   }
   object AutoDelete {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultExchangeName extends StObject {
     
-    var defaultExchangeName: js.UndefOr[String] = js.native
+    var defaultExchangeName: js.UndefOr[String] = js.undefined
   }
   object DefaultExchangeName {
     

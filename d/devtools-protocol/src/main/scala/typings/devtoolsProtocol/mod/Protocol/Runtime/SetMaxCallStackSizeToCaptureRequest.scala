@@ -3,13 +3,11 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetMaxCallStackSizeToCaptureRequest extends StObject {
   
-  var size: integer = js.native
+  var size: integer
 }
 object SetMaxCallStackSizeToCaptureRequest {
   

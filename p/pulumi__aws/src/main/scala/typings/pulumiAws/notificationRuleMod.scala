@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationRuleMod {
@@ -71,6 +70,10 @@ object notificationRuleMod {
   /* static members */
   object NotificationRule {
     
+    @JSImport("@pulumi/aws/codestarnotifications/notificationRule", "NotificationRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NotificationRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -80,61 +83,55 @@ object notificationRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codestarnotifications/notificationRule", "NotificationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NotificationRule = js.native
-    @JSImport("@pulumi/aws/codestarnotifications/notificationRule", "NotificationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NotificationRule = js.native
-    @JSImport("@pulumi/aws/codestarnotifications/notificationRule", "NotificationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotificationRuleState): NotificationRule = js.native
-    @JSImport("@pulumi/aws/codestarnotifications/notificationRule", "NotificationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotificationRuleState, opts: CustomResourceOptions): NotificationRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotificationRuleState): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotificationRuleState, opts: CustomResourceOptions): NotificationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotificationRule]
     
     /**
       * Returns true if the given object is an instance of NotificationRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codestarnotifications/notificationRule", "NotificationRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codestarnotifications/notificationRule.NotificationRule */ Boolean]
   }
   
-  @js.native
   trait NotificationRuleArgs extends StObject {
     
     /**
       * The level of detail to include in the notifications for this resource. Possible values are `BASIC` and `FULL`.
       */
-    val detailType: Input[String] = js.native
+    val detailType: Input[String]
     
     /**
       * A list of event types associated with this notification rule.
       * For list of allowed events see [here](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/concepts.html#concepts-api).
       */
-    val eventTypeIds: Input[js.Array[Input[String]]] = js.native
+    val eventTypeIds: Input[js.Array[Input[String]]]
     
     /**
       * The name of notification rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource to associate with the notification rule.
       */
-    val resource: Input[String] = js.native
+    val resource: Input[String]
     
     /**
       * The status of the notification rule. Possible values are `ENABLED` and `DISABLED`, default is `ENABLED`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration blocks containing notification target information. Can be specified multiple times. At least one target must be specified on creation.
@@ -143,7 +140,7 @@ object notificationRuleMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object NotificationRuleArgs {
     
@@ -201,44 +198,43 @@ object notificationRuleMod {
     }
   }
   
-  @js.native
   trait NotificationRuleState extends StObject {
     
     /**
       * The codestar notification rule ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The level of detail to include in the notifications for this resource. Possible values are `BASIC` and `FULL`.
       */
-    val detailType: js.UndefOr[Input[String]] = js.native
+    val detailType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of event types associated with this notification rule.
       * For list of allowed events see [here](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/concepts.html#concepts-api).
       */
-    val eventTypeIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val eventTypeIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of notification rule.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource to associate with the notification rule.
       */
-    val resource: js.UndefOr[Input[String]] = js.native
+    val resource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the notification rule. Possible values are `ENABLED` and `DISABLED`, default is `ENABLED`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration blocks containing notification target information. Can be specified multiple times. At least one target must be specified on creation.
@@ -247,7 +243,7 @@ object notificationRuleMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.codestarnotifications.NotificationRuleTarget]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object NotificationRuleState {
     

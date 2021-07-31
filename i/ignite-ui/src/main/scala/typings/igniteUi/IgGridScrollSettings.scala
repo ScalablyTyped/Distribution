@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridScrollSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,49 +16,49 @@ trait IgGridScrollSettings
     * Sets gets the modifier for how long the inertia last on touch devices.
     *
     */
-  var inertiaDuration: js.UndefOr[Double] = js.native
+  var inertiaDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets the modifier for how much the inertia scrolls on touch devices. Note: Value set to 0 would disable touch movements. Value set to -1 would invert them.
     *
     */
-  var inertiaStep: js.UndefOr[Double] = js.native
+  var inertiaStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets current horizontal position.
     *
     */
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets current vertical position.
     *
     */
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets if smoother scrolling with small intertia should be used when using the mouse wheel.
     *
     */
-  var smoothing: js.UndefOr[Boolean] = js.native
+  var smoothing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets or gets the modifier for how long the scroll ‘animation’ lasts when using the mouse wheel once. This is used only for the [smooth scrolling behavior](ui.iggrid#options:scrollSettings.smoothing).
     *
     */
-  var smoothingDuration: js.UndefOr[Double] = js.native
+  var smoothingDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets or gets the modifier for how many pixels will be scrolled when using the mouse wheel once. This is used only for the [smooth scrolling behavior](ui.iggrid#options:scrollSettings.smoothing).
     *
     */
-  var smoothingStep: js.UndefOr[Double] = js.native
+  var smoothingStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets gets the step of the default scrolling behavior when using the mouse wheel.
     *
     */
-  var wheelStep: js.UndefOr[Double] = js.native
+  var wheelStep: js.UndefOr[Double] = js.undefined
 }
 object IgGridScrollSettings {
   

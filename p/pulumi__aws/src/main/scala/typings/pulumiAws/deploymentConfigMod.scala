@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deploymentConfigMod {
@@ -55,6 +54,10 @@ object deploymentConfigMod {
   /* static members */
   object DeploymentConfig {
     
+    @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DeploymentConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,52 +67,46 @@ object deploymentConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DeploymentConfig = js.native
-    @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DeploymentConfig = js.native
-    @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentConfigState): DeploymentConfig = js.native
-    @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentConfigState, opts: CustomResourceOptions): DeploymentConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentConfigState): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentConfigState, opts: CustomResourceOptions): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
     
     /**
       * Returns true if the given object is an instance of DeploymentConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean]
   }
   
-  @js.native
   trait DeploymentConfigArgs extends StObject {
     
     /**
       * The compute platform can be `Server`, `Lambda`, or `ECS`. Default is `Server`.
       */
-    val computePlatform: js.UndefOr[Input[String]] = js.native
+    val computePlatform: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the deployment config.
       */
-    val deploymentConfigName: Input[String] = js.native
+    val deploymentConfigName: Input[String]
     
     /**
       * A minimumHealthyHosts block. Required for `Server` compute platform. Minimum Healthy Hosts are documented below.
       */
-    val minimumHealthyHosts: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]] = js.native
+    val minimumHealthyHosts: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]] = js.undefined
     
     /**
       * A trafficRoutingConfig block. Traffic Routing Config is documented below.
       */
     val trafficRoutingConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigTrafficRoutingConfig]
-      ] = js.native
+      ] = js.undefined
   }
   object DeploymentConfigArgs {
     
@@ -145,35 +142,34 @@ object deploymentConfigMod {
     }
   }
   
-  @js.native
   trait DeploymentConfigState extends StObject {
     
     /**
       * The compute platform can be `Server`, `Lambda`, or `ECS`. Default is `Server`.
       */
-    val computePlatform: js.UndefOr[Input[String]] = js.native
+    val computePlatform: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS Assigned deployment config id
       */
-    val deploymentConfigId: js.UndefOr[Input[String]] = js.native
+    val deploymentConfigId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the deployment config.
       */
-    val deploymentConfigName: js.UndefOr[Input[String]] = js.native
+    val deploymentConfigName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A minimumHealthyHosts block. Required for `Server` compute platform. Minimum Healthy Hosts are documented below.
       */
-    val minimumHealthyHosts: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]] = js.native
+    val minimumHealthyHosts: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]] = js.undefined
     
     /**
       * A trafficRoutingConfig block. Traffic Routing Config is documented below.
       */
     val trafficRoutingConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigTrafficRoutingConfig]
-      ] = js.native
+      ] = js.undefined
   }
   object DeploymentConfigState {
     

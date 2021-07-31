@@ -10,9 +10,9 @@ TypeScript typings for Cloud Build API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudbuild |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 54 |
+| # downloads        | 1246 |
 | # stars            | 0 |
 
 ## Links

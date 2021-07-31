@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetContentQuadsRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetContentQuadsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetContentQuadsResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetContentQuadsRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetContentQuadsRequest]]
   
-  var returnType: GetContentQuadsResponse = js.native
+  var returnType: GetContentQuadsResponse
 }
 object ReturnTypeGetContentQuadsResponse {
   

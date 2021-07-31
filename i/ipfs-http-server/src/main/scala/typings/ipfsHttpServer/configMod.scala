@@ -4,16 +4,18 @@ import typings.ipfsHttpServer.anon.AssignMethod
 import typings.ipfsHttpServer.anon.Method
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
   
   object get {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/config", "get.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/config", "get")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options2 {
       
@@ -39,9 +41,12 @@ object configMod {
   
   object getOrSet {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/config", "getOrSet.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/config", "getOrSet")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options {
       
@@ -84,9 +89,12 @@ object configMod {
     
     object apply {
       
-      @JSImport("ipfs-http-server/dist/src/api/resources/config", "profiles.apply.handler_2")
+      @JSImport("ipfs-http-server/dist/src/api/resources/config", "profiles.apply")
       @js.native
-      def handler2(request: js.Any, h: js.Any): js.Promise[_] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def handler2(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_2")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
       
       object options8 {
         
@@ -112,9 +120,12 @@ object configMod {
     
     object list {
       
-      @JSImport("ipfs-http-server/dist/src/api/resources/config", "profiles.list.handler_3")
+      @JSImport("ipfs-http-server/dist/src/api/resources/config", "profiles.list")
       @js.native
-      def handler3(request: js.Any, h: js.Any): js.Promise[_] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def handler3(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_3")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
       
       object options10 {
         
@@ -141,9 +152,12 @@ object configMod {
   
   object replace {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/config", "replace.handler")
+    @JSImport("ipfs-http-server/dist/src/api/resources/config", "replace")
     @js.native
-    def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options6 {
       
@@ -184,9 +198,12 @@ object configMod {
   
   object show {
     
-    @JSImport("ipfs-http-server/dist/src/api/resources/config", "show.handler_1")
+    @JSImport("ipfs-http-server/dist/src/api/resources/config", "show")
     @js.native
-    def handler1(request: js.Any, h: js.Any): js.Promise[_] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handler1(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler_1")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     object options4 {
       

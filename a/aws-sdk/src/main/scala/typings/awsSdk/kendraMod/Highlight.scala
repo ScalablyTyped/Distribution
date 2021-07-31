@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Highlight extends StObject {
   
   /**
     * The zero-based location in the response string where the highlight starts.
     */
-  var BeginOffset: Integer = js.native
+  var BeginOffset: Integer
   
   /**
     * The zero-based location in the response string where the highlight ends.
     */
-  var EndOffset: Integer = js.native
+  var EndOffset: Integer
   
   /**
     * Indicates whether the response is the best response. True if this is the best response; otherwise, false.
     */
-  var TopAnswer: js.UndefOr[Boolean] = js.native
+  var TopAnswer: js.UndefOr[Boolean] = js.undefined
 }
 object Highlight {
   

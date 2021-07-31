@@ -3,7 +3,6 @@ package typings.angularForms.mod
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "AbstractControlDirective")
@@ -181,7 +180,7 @@ abstract class AbstractControlDirective () extends StObject {
     * Returns a multicasting observable that emits a validation status whenever it is
     * calculated for the control. If the control is not present, null is returned.
     */
-  def statusChanges: Observable_[_] | Null = js.native
+  def statusChanges: Observable_[js.Any] | Null = js.native
   
   /**
     * @description
@@ -224,5 +223,5 @@ abstract class AbstractControlDirective () extends StObject {
     * value of the control changes in the UI or programmatically.
     * If the control is not present, null is returned.
     */
-  def valueChanges: Observable_[_] | Null = js.native
+  def valueChanges: Observable_[js.Any] | Null = js.native
 }

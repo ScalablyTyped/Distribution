@@ -3,25 +3,23 @@ package typings.gapiDrive.gapi.client.drive
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignfileList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileListResource extends StObject {
   
-  var etag: String = js.native
+  var etag: String
   
-  var incompleteSearch: Boolean = js.native
+  var incompleteSearch: Boolean
   
-  var items: js.Array[FileResource] = js.native
+  var items: js.Array[FileResource]
   
-  var kind: driveNumbersignfileList = js.native
+  var kind: driveNumbersignfileList
   
-  var nextLink: String = js.native
+  var nextLink: String
   
-  var nextPageToken: String = js.native
+  var nextPageToken: String
   
-  var selfLink: String = js.native
+  var selfLink: String
 }
 object FileListResource {
   
@@ -30,12 +28,11 @@ object FileListResource {
     etag: String,
     incompleteSearch: Boolean,
     items: js.Array[FileResource],
-    kind: driveNumbersignfileList,
     nextLink: String,
     nextPageToken: String,
     selfLink: String
   ): FileListResource = {
-    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], incompleteSearch = incompleteSearch.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], incompleteSearch = incompleteSearch.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], kind = "drive#fileList", nextLink = nextLink.asInstanceOf[js.Any], nextPageToken = nextPageToken.asInstanceOf[js.Any], selfLink = selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileListResource]
   }
   

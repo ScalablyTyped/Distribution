@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsToStreamInput extends StObject {
   
   /**
     * The name of the stream.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
   
   /**
     * A set of up to 10 key-value pairs to use to create the tags.
     */
-  var Tags: TagMap = js.native
+  var Tags: TagMap
 }
 object AddTagsToStreamInput {
   

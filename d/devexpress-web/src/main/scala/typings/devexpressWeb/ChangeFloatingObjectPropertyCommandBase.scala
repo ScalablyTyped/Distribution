@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A base class for commands that modify floating object settings.
   */
-@js.native
 trait ChangeFloatingObjectPropertyCommandBase[T] extends StObject {
   
   /**
     * Executes a command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param settings An object that contains settings for the execute method.
     */
-  def execute(settings: T): Boolean = js.native
+  def execute(settings: T): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[T] = js.native
+  def getState(): CommandState[T]
 }
 object ChangeFloatingObjectPropertyCommandBase {
   
@@ -31,7 +29,7 @@ object ChangeFloatingObjectPropertyCommandBase {
   }
   
   @scala.inline
-  implicit class ChangeFloatingObjectPropertyCommandBaseMutableBuilder[Self <: ChangeFloatingObjectPropertyCommandBase[_], T] (val x: Self with ChangeFloatingObjectPropertyCommandBase[T]) extends AnyVal {
+  implicit class ChangeFloatingObjectPropertyCommandBaseMutableBuilder[Self <: ChangeFloatingObjectPropertyCommandBase[?], T] (val x: Self & ChangeFloatingObjectPropertyCommandBase[T]) extends AnyVal {
     
     @scala.inline
     def setExecute(value: T => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))

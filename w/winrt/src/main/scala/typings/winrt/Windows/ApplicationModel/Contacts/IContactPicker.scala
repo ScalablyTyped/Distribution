@@ -5,21 +5,19 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContactPicker extends StObject {
   
-  var commitButtonText: String = js.native
+  var commitButtonText: String
   
-  var desiredFields: IVector[String] = js.native
+  var desiredFields: IVector[String]
   
-  def pickMultipleContactsAsync(): IAsyncOperation[IVectorView[ContactInformation]] = js.native
+  def pickMultipleContactsAsync(): IAsyncOperation[IVectorView[ContactInformation]]
   
-  def pickSingleContactAsync(): IAsyncOperation[ContactInformation] = js.native
+  def pickSingleContactAsync(): IAsyncOperation[ContactInformation]
   
-  var selectionMode: ContactSelectionMode = js.native
+  var selectionMode: ContactSelectionMode
 }
 object IContactPicker {
   

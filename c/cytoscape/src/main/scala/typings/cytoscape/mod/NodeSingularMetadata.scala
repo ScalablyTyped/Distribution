@@ -2,32 +2,30 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/metadata
   */
-@js.native
 trait NodeSingularMetadata extends StObject {
   
   /**
     * Get the degree of a node.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def degree(includeLoops: Boolean): Double = js.native
+  def degree(includeLoops: Boolean): Double
   
   /**
     * Get the indegree of a node.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def indegree(includeLoops: Boolean): Double = js.native
+  def indegree(includeLoops: Boolean): Double
   
   /**
     * Get the outdegree of a node.
     * @param includeLoops A boolean, indicating whether loops are to be included in degree calculations.
     */
-  def outdegree(includeLoops: Boolean): Double = js.native
+  def outdegree(includeLoops: Boolean): Double
 }
 object NodeSingularMetadata {
   

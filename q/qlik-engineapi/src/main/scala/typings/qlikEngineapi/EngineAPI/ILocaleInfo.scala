@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LocaleInfo...
   */
-@js.native
 trait ILocaleInfo extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait ILocaleInfo extends StObject {
     * If qBrokenWeeks is set to true, qReferenceDay is irrelevant.
     * If this property has not been set in a script, the returned value comes from the Windows operating system.
     */
-  var qBrokenWeeks: Double = js.native
+  var qBrokenWeeks: Double
   
   /**
     * Information about the calendar.
     */
-  var qCalendarStrings: ICalenderStrings = js.native
+  var qCalendarStrings: ICalenderStrings
   
   /**
     * Locale name (following language tagging convention RFC 4646):
@@ -34,23 +32,23 @@ trait ILocaleInfo extends StObject {
     * REGION specifies an uppercase ISO 3166 country code.
     * If this property has not been set in a script, the returned value comes from the Windows operating system.
     */
-  var qCollation: String = js.native
+  var qCollation: String
   
   /**
     * Current year.
     */
-  var qCurrentYear: Double = js.native
+  var qCurrentYear: Double
   
   /**
     * Date format.
     * Example: YYYY-MM-DD
     */
-  var qDateFmt: String = js.native
+  var qDateFmt: String
   
   /**
     * Decimal separator.
     */
-  var qDecimalSep: String = js.native
+  var qDecimalSep: String
   
   /**
     * First month of the year, starting from 1.
@@ -62,7 +60,7 @@ trait ILocaleInfo extends StObject {
     *
     * If this property has not been set in a script, the returned value comes from the Windows operating system.
     */
-  var qFirstMonthOfYear: Double = js.native
+  var qFirstMonthOfYear: Double
   
   /**
     * First day of the week, starting from 0.
@@ -75,28 +73,28 @@ trait ILocaleInfo extends StObject {
     *
     * If this property has not been set in a script, the returned value comes from the Windows operating system.
     */
-  var qFirstWeekDay: Boolean = js.native
+  var qFirstWeekDay: Boolean
   
   /**
     * List separator.
     */
-  var qListSep: String = js.native
+  var qListSep: String
   
   /**
     * Money decimal separator.
     */
-  var qMoneyDecimalSep: String = js.native
+  var qMoneyDecimalSep: String
   
   /**
     * Money format.
     * Example: #.##0,00 kr;-#.##0,00 kr
     */
-  var qMoneyFmt: String = js.native
+  var qMoneyFmt: String
   
   /**
     * Money thousand separator.
     */
-  var qMoneyThousandSep: String = js.native
+  var qMoneyThousandSep: String
   
   /**
     * Day in the year that is always in week 1.
@@ -105,24 +103,24 @@ trait ILocaleInfo extends StObject {
     * If this property has not been set in a script, the returned value comes from the Windows operating system.
     * This property is not relevant if there are broken weeks in the year.
     */
-  var qReferenceDay: Double = js.native
+  var qReferenceDay: Double
   
   /**
     * Thousand separator.
     */
-  var qThousandSep: String = js.native
+  var qThousandSep: String
   
   /**
     * Time format.
     * Example: hh:mm:ss
     */
-  var qTimeFmt: String = js.native
+  var qTimeFmt: String
   
   /**
     * Time stamp format.
     * Example: YYYY-MM-DD hh:mm:ss[.fff]
     */
-  var qTimestampFmt: String = js.native
+  var qTimestampFmt: String
 }
 object ILocaleInfo {
   

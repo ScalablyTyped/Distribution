@@ -4,14 +4,14 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tiledrendering {
   
   /** tiled rendering using a system-specific handle to a window */
-  @js.native
-  trait XTiledRenderable extends XInterface {
+  trait XTiledRenderable
+    extends StObject
+       with XInterface {
     
     /**
       * paint a tile to a system-specific window
@@ -32,7 +32,7 @@ object tiledrendering {
       nTilePosY: Double,
       nTileWidth: Double,
       nTileHeight: Double
-    ): Unit = js.native
+    ): Unit
   }
   object XTiledRenderable {
     

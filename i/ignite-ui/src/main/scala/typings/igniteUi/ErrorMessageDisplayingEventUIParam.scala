@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorMessageDisplayingEventUIParam extends StObject {
   
   /**
     * Used to get or set the error message that is to be shown.
     */
-  var errorMessage: js.UndefOr[js.Any] = js.native
+  var errorMessage: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to the barcode widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ErrorMessageDisplayingEventUIParam {
   

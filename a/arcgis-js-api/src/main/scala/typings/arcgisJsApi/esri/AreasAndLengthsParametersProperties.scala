@@ -18,10 +18,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.planar
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreasAndLengthsParametersProperties extends StObject {
   
   /**
@@ -31,28 +29,28 @@ trait AreasAndLengthsParametersProperties extends StObject {
     */
   var areaUnit: js.UndefOr[
     acres | hectares | `square-miles` | `square-kilometers` | `square-meters` | `square-feet` | `square-yards`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Defines the type of calculation for the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#calculationType)
     */
-  var calculationType: js.UndefOr[planar | geodesic | `preserve-shape`] = js.native
+  var calculationType: js.UndefOr[planar | geodesic | `preserve-shape`] = js.undefined
   
   /**
     * The length unit in which perimeters of polygons will be calculated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#lengthUnit)
     */
-  var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.native
+  var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
     * Polygon geometries for which to compute areas and lengths.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AreasAndLengthsParameters.html#polygons)
     */
-  var polygons: js.UndefOr[js.Array[PolygonProperties]] = js.native
+  var polygons: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
 }
 object AreasAndLengthsParametersProperties {
   

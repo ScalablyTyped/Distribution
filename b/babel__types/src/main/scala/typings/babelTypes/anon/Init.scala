@@ -5,23 +5,21 @@ import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.LVal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Init extends StObject {
   
-  var id: LVal = js.native
+  var id: LVal
   
-  var init: js.UndefOr[Expression] = js.native
+  var init: js.UndefOr[Expression] = js.undefined
   
-  var kind: `var` = js.native
+  var kind: `var`
 }
 object Init {
   
   @scala.inline
-  def apply(id: LVal, kind: `var`): Init = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  def apply(id: LVal): Init = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = "var")
     __obj.asInstanceOf[Init]
   }
   

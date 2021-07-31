@@ -8,7 +8,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileContainerApiBaseMod {
@@ -30,9 +29,9 @@ object fileContainerApiBaseMod {
     def deleteItem(containerId: Double, itemPath: String, scope: String): js.Promise[Unit] = js.native
     
     def getContainers(): js.Promise[js.Array[FileContainer]] = js.native
-    def getContainers(scope: js.UndefOr[scala.Nothing], artifactUris: String): js.Promise[js.Array[FileContainer]] = js.native
     def getContainers(scope: String): js.Promise[js.Array[FileContainer]] = js.native
     def getContainers(scope: String, artifactUris: String): js.Promise[js.Array[FileContainer]] = js.native
+    def getContainers(scope: Unit, artifactUris: String): js.Promise[js.Array[FileContainer]] = js.native
     
     def getItems(
       containerId: Double,

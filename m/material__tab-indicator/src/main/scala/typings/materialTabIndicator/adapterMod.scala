@@ -3,37 +3,35 @@ package typings.materialTabIndicator
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCTabIndicatorAdapter extends StObject {
     
     /**
       * Adds the given className to the root element.
       * @param className The className to add
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Returns the client rect of the content element.
       */
-    def computeContentClientRect(): ClientRect = js.native
+    def computeContentClientRect(): ClientRect
     
     /**
       * Removes the given className from the root element.
       * @param className The className to remove
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Sets a style property of the content element to the passed value
       * @param propName The style property name to set
       * @param value The style property value
       */
-    def setContentStyleProperty(propName: String, value: String): Unit = js.native
+    def setContentStyleProperty(propName: String, value: String): Unit
   }
   object MDCTabIndicatorAdapter {
     

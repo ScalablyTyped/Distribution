@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobSummary extends StObject {
   
   /**
     * The time, in seconds since the epoch, when the job completed.
     */
-  var completedAt: js.UndefOr[DateType] = js.native
+  var completedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.native
+  var createdAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The job ARN.
     */
-  var jobArn: js.UndefOr[JobArn] = js.native
+  var jobArn: js.UndefOr[JobArn] = js.undefined
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The job summary status.
     */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
   
   /**
     * Specifies whether the job will continue to run (CONTINUOUS), or will be complete after all those things specified as targets have completed the job (SNAPSHOT). If continuous, the job may also be run on a thing when a change is detected in a target. For example, a job will run on a thing when the thing is added to a target group, even after the job was completed by all things originally in the group.
     */
-  var targetSelection: js.UndefOr[TargetSelection] = js.native
+  var targetSelection: js.UndefOr[TargetSelection] = js.undefined
   
   /**
     * The ID of the thing group.
     */
-  var thingGroupId: js.UndefOr[ThingGroupId] = js.native
+  var thingGroupId: js.UndefOr[ThingGroupId] = js.undefined
 }
 object JobSummary {
   

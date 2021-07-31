@@ -3,20 +3,20 @@ package typings.stripe.mod.charges
 import typings.stripe.stripeStrings.eps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEpsPaymentMethodDetails extends IPaymentMethodDetails {
+trait IEpsPaymentMethodDetails
+  extends StObject
+     with IPaymentMethodDetails {
   
-  var `type`: eps = js.native
+  var `type`: eps
 }
 object IEpsPaymentMethodDetails {
   
   @scala.inline
-  def apply(`type`: eps): IEpsPaymentMethodDetails = {
+  def apply(): IEpsPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("eps")
     __obj.asInstanceOf[IEpsPaymentMethodDetails]
   }
   

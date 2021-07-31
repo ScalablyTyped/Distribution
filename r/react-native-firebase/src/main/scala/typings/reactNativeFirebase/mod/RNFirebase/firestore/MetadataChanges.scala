@@ -2,13 +2,11 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataChanges extends StObject {
   
-  var includeMetadataChanges: Boolean = js.native
+  var includeMetadataChanges: Boolean
 }
 object MetadataChanges {
   

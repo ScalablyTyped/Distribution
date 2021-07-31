@@ -4,30 +4,30 @@ import typings.credential.anon.Expired
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Expired = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Expired]
+  @scala.inline
+  def apply(defaultOptions: defaultOptions): Expired = ^.asInstanceOf[js.Dynamic].apply(defaultOptions.asInstanceOf[js.Any]).asInstanceOf[Expired]
+  
   @JSImport("credential", JSImport.Namespace)
   @js.native
-  def apply(): Expired = js.native
-  @JSImport("credential", JSImport.Namespace)
-  @js.native
-  def apply(defaultOptions: defaultOptions): Expired = js.native
+  val ^ : js.Any = js.native
   
   type HashCallback = js.Function2[/* err */ Error, /* hash */ String, Unit]
   
   type VerifyCallback = js.Function2[/* err */ Error, /* isValid */ Boolean, Unit]
   
-  @js.native
   trait defaultOptions extends StObject {
     
-    var hashMethod: String = js.native
+    var hashMethod: String
     
-    var keyLength: Double = js.native
+    var keyLength: Double
     
-    var work: Double = js.native
+    var work: Double
   }
   object defaultOptions {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAttributeGroupResponse extends StObject {
   
   /**
     * Information about the attribute group.
     */
-  var attributeGroup: js.UndefOr[AttributeGroup] = js.native
+  var attributeGroup: js.UndefOr[AttributeGroup] = js.undefined
 }
 object CreateAttributeGroupResponse {
   

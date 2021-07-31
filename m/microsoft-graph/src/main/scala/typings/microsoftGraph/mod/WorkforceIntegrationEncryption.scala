@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkforceIntegrationEncryption extends StObject {
   
   // Possible values are: sharedSecret, unknownFutureValue.
-  var protocol: js.UndefOr[NullableOption[WorkforceIntegrationEncryptionProtocol]] = js.native
+  var protocol: js.UndefOr[NullableOption[WorkforceIntegrationEncryptionProtocol]] = js.undefined
   
   // Encryption shared secret.
-  var secret: js.UndefOr[NullableOption[String]] = js.native
+  var secret: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WorkforceIntegrationEncryption {
   

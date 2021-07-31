@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCanariesResponse extends StObject {
   
   /**
     * Returns an array. Each item in the array contains the full information about one canary.
     */
-  var Canaries: js.UndefOr[typings.awsSdk.syntheticsMod.Canaries] = js.native
+  var Canaries: js.UndefOr[typings.awsSdk.syntheticsMod.Canaries] = js.undefined
   
   /**
     * A token that indicates that there is more data available. You can use this token in a subsequent DescribeCanaries operation to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object DescribeCanariesResponse {
   

@@ -2,17 +2,15 @@ package typings.node.cryptoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasePrivateKeyEncodingOptions[T /* <: KeyFormat */] extends StObject {
   
-  var cipher: js.UndefOr[String] = js.native
+  var cipher: js.UndefOr[String] = js.undefined
   
-  var format: T = js.native
+  var format: T
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
 }
 object BasePrivateKeyEncodingOptions {
   
@@ -23,7 +21,7 @@ object BasePrivateKeyEncodingOptions {
   }
   
   @scala.inline
-  implicit class BasePrivateKeyEncodingOptionsMutableBuilder[Self <: BasePrivateKeyEncodingOptions[_], T /* <: KeyFormat */] (val x: Self with BasePrivateKeyEncodingOptions[T]) extends AnyVal {
+  implicit class BasePrivateKeyEncodingOptionsMutableBuilder[Self <: BasePrivateKeyEncodingOptions[?], T /* <: KeyFormat */] (val x: Self & BasePrivateKeyEncodingOptions[T]) extends AnyVal {
     
     @scala.inline
     def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])

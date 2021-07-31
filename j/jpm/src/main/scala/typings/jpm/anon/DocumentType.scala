@@ -2,29 +2,27 @@ package typings.jpm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentType extends StObject {
   
-  var documentType: String = js.native
+  var documentType: String
   
-  var documentURL: String = js.native
+  var documentURL: String
   
-  var isEditable: Boolean = js.native
+  var isEditable: Boolean
   
-  var linkURL: js.UndefOr[String] = js.native
+  var linkURL: js.UndefOr[String] = js.undefined
   
-  var selectionText: js.UndefOr[String] = js.native
+  var selectionText: js.UndefOr[String] = js.undefined
   
-  var srcURL: js.UndefOr[String] = js.native
+  var srcURL: js.UndefOr[String] = js.undefined
   
-  var targetID: js.UndefOr[String] = js.native
+  var targetID: js.UndefOr[String] = js.undefined
   
-  var targetName: String = js.native
+  var targetName: String
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object DocumentType {
   

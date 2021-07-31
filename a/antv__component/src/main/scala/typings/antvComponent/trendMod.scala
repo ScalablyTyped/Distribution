@@ -4,7 +4,6 @@ import typings.antvComponent.typesMod.GroupComponentCfg
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trendMod {
@@ -18,28 +17,29 @@ object trendMod {
   class Trend ()
     extends typings.antvComponent.groupComponentMod.default[TrendCfg]
   
-  @js.native
-  trait TrendCfg extends GroupComponentCfg {
+  trait TrendCfg
+    extends StObject
+       with GroupComponentCfg {
     
-    val areaStyle: js.UndefOr[js.Object] = js.native
+    val areaStyle: js.UndefOr[js.Object] = js.undefined
     
-    val backgroundStyle: js.UndefOr[js.Object] = js.native
+    val backgroundStyle: js.UndefOr[js.Object] = js.undefined
     
-    val data: js.UndefOr[js.Array[Double]] = js.native
+    val data: js.UndefOr[js.Array[Double]] = js.undefined
     
-    val height: js.UndefOr[Double] = js.native
+    val height: js.UndefOr[Double] = js.undefined
     
-    val isArea: js.UndefOr[Boolean] = js.native
+    val isArea: js.UndefOr[Boolean] = js.undefined
     
-    val lineStyle: js.UndefOr[js.Object] = js.native
+    val lineStyle: js.UndefOr[js.Object] = js.undefined
     
-    val smooth: js.UndefOr[Boolean] = js.native
+    val smooth: js.UndefOr[Boolean] = js.undefined
     
-    val width: js.UndefOr[Double] = js.native
+    val width: js.UndefOr[Double] = js.undefined
     
-    val x: js.UndefOr[Double] = js.native
+    val x: js.UndefOr[Double] = js.undefined
     
-    val y: js.UndefOr[Double] = js.native
+    val y: js.UndefOr[Double] = js.undefined
   }
   object TrendCfg {
     

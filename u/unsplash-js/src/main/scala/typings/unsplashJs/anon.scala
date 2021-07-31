@@ -19,29 +19,27 @@ import typings.unsplashJs.unsplashJsStrings.white
 import typings.unsplashJs.unsplashJsStrings.yellow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessKey extends StObject {
     
-    var accessKey: String = js.native
+    var accessKey: String
     
-    var apiUrl: js.UndefOr[String] = js.native
+    var apiUrl: js.UndefOr[String] = js.undefined
     
-    var apiVersion: js.UndefOr[String] = js.native
+    var apiVersion: js.UndefOr[String] = js.undefined
     
-    var bearerToken: js.UndefOr[String] = js.native
+    var bearerToken: js.UndefOr[String] = js.undefined
     
-    var callbackUrl: js.UndefOr[String] = js.native
+    var callbackUrl: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AccessKey {
     
@@ -101,24 +99,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Bio extends StObject {
     
-    var bio: js.UndefOr[String] = js.native
+    var bio: js.UndefOr[String] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var instagramUsername: js.UndefOr[String] = js.native
+    var instagramUsername: js.UndefOr[String] = js.undefined
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Bio {
     
@@ -181,20 +178,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.Object = js.native
+    var body: js.Object
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var method: String = js.native
+    var method: String
     
-    var oauth: Boolean = js.native
+    var oauth: Boolean
     
-    var query: js.Object = js.native
+    var query: js.Object
     
-    var url: String = js.native
+    var url: String
   }
   object Body {
     
@@ -227,22 +223,21 @@ object anon {
     }
   }
   
-  @js.native
   trait C extends StObject {
     
-    var c: js.UndefOr[String] = js.native
+    var c: js.UndefOr[String] = js.undefined
     
-    var collections: js.UndefOr[CollectionIds] = js.native
+    var collections: js.UndefOr[CollectionIds] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var featured: js.UndefOr[Boolean] = js.native
+    var featured: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.native
+    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object C {
     
@@ -302,22 +297,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Collections extends StObject {
     
-    var collections: js.UndefOr[CollectionIds] = js.native
+    var collections: js.UndefOr[CollectionIds] = js.undefined
     
     var color: js.UndefOr[
         black_and_white | black | white | yellow | orange | red | purple | magenta | green | teal | blue
-      ] = js.native
+      ] = js.undefined
     
-    var contentFilter: js.UndefOr[ContentSafety] = js.native
+    var contentFilter: js.UndefOr[ContentSafety] = js.undefined
     
-    var lang: js.UndefOr[Languages] = js.native
+    var lang: js.UndefOr[Languages] = js.undefined
     
-    var orderBy: js.UndefOr[latest | relevant] = js.native
+    var orderBy: js.UndefOr[latest | relevant] = js.undefined
     
-    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.native
+    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.undefined
   }
   object Collections {
     
@@ -373,10 +367,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Downloadlocation extends StObject {
     
-    var download_location: String = js.native
+    var download_location: String
   }
   object Downloadlocation {
     
@@ -394,10 +387,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Links extends StObject {
     
-    var links: Downloadlocation = js.native
+    var links: Downloadlocation
   }
   object Links {
     
@@ -415,10 +407,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Orientation extends StObject {
     
-    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.native
+    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.undefined
   }
   object Orientation {
     
@@ -439,10 +430,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OrientationOrientation extends StObject {
     
-    var orientation: typings.unsplashJs.mod.Orientation = js.native
+    var orientation: typings.unsplashJs.mod.Orientation
   }
   object OrientationOrientation {
     
@@ -460,12 +450,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.native
+    var orientation: js.UndefOr[typings.unsplashJs.mod.Orientation] = js.undefined
     
-    var stats: js.UndefOr[Boolean] = js.native
+    var stats: js.UndefOr[Boolean] = js.undefined
   }
   object Stats {
     

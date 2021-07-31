@@ -2,7 +2,6 @@ package typings.officeUiFabricReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "PanelVisibilityState")
@@ -10,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PanelVisibilityState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState & Double] = js.native
   
-  /* 3 */ val animatingClosed: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.animatingClosed with Double = js.native
+  /* 3 */ val animatingClosed: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.animatingClosed & Double = js.native
   
-  /* 1 */ val animatingOpen: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.animatingOpen with Double = js.native
+  /* 1 */ val animatingOpen: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.animatingOpen & Double = js.native
   
-  /* 0 */ val closed: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.closed with Double = js.native
+  /* 0 */ val closed: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.closed & Double = js.native
   
-  /* 2 */ val open: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.open with Double = js.native
+  /* 2 */ val open: typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState.open & Double = js.native
 }

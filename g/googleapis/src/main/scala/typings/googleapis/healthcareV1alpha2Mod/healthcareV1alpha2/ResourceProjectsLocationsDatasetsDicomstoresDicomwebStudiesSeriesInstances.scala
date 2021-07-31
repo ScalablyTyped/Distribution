@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha2", "healthcare_v1alpha2.Resource$Projects$Locations$Datasets$Dicomstores$Dicomweb$Studies$Series$Instances")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstances
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesDelete,
@@ -76,7 +75,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstances
     */
   def metadata(): GaxiosPromise[SchemaHttpBody] = js.native
   def metadata(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def metadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def metadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def metadata(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesMetadata): GaxiosPromise[SchemaHttpBody] = js.native
   def metadata(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesMetadata,
@@ -116,7 +115,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstances
     */
   def rendered(): GaxiosPromise[SchemaHttpBody] = js.native
   def rendered(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def rendered(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def rendered(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def rendered(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesRendered): GaxiosPromise[SchemaHttpBody] = js.native
   def rendered(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesRendered,
@@ -155,7 +154,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstances
     */
   def retrieveInstance(): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveInstance(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def retrieveInstance(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def retrieveInstance(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveInstance(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesRetrieveinstance
   ): GaxiosPromise[SchemaHttpBody] = js.native

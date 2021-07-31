@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobS3DataSource extends StObject {
   
   /**
     * The Amazon S3 location of the manifest file that describes the input data objects.
     */
-  var ManifestS3Uri: S3Uri = js.native
+  var ManifestS3Uri: S3Uri
 }
 object LabelingJobS3DataSource {
   

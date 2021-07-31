@@ -5,22 +5,20 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminListProvisionedGroupsEnt
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
   
-  var response: OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16` = js.native
+  var response: OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`
 }
 object ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint {
   
   @scala.inline
   def apply(
     parameters: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
-    response: OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`
+    response: OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`
   ): ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint]
@@ -33,6 +31,6 @@ object ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint {
     def setParameters(value: EnterpriseAdminListProvisionedGroupsEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] with `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedGroupsEnterpriseResponseData] & `16`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

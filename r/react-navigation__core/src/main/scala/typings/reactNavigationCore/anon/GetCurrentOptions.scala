@@ -2,15 +2,13 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCurrentOptions extends StObject {
   
-  def addOptionsGetter(key: String, getter: js.Function0[js.UndefOr[js.Object | Null]]): js.Function0[Unit] = js.native
+  def addOptionsGetter(key: String, getter: js.Function0[js.UndefOr[js.Object | Null]]): js.Function0[Unit]
   
-  def getCurrentOptions(): js.UndefOr[js.Object | Null] = js.native
+  def getCurrentOptions(): js.UndefOr[js.Object | Null]
 }
 object GetCurrentOptions {
   

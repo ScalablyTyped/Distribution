@@ -3,21 +3,19 @@ package typings.iitc.hooksMod.global
 import typings.leaflet.mod.LatLngBounds_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventMapDataRefreshStart extends StObject {
   
-  var bounds: LatLngBounds_ = js.native
+  var bounds: LatLngBounds_
   
-  var dataZoom: Double = js.native
+  var dataZoom: Double
   
-  var mapZoom: Double = js.native
+  var mapZoom: Double
   
-  var minPortalLevel: Double = js.native
+  var minPortalLevel: Double
   
-  var tileBounds: LatLngBounds_ = js.native
+  var tileBounds: LatLngBounds_
 }
 object EventMapDataRefreshStart {
   

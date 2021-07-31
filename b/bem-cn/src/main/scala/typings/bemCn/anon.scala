@@ -4,24 +4,22 @@ import typings.bemCn.mod._BemMix
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<bem-cn.bem-cn.BemSettings> */
-  @js.native
   trait PartialBemSettings extends StObject {
     
-    var classMap: js.UndefOr[Record[String, String]] = js.native
+    var classMap: js.UndefOr[Record[String, String]] = js.undefined
     
-    var el: js.UndefOr[String] = js.native
+    var el: js.UndefOr[String] = js.undefined
     
-    var mod: js.UndefOr[String] = js.native
+    var mod: js.UndefOr[String] = js.undefined
     
-    var modValue: js.UndefOr[String] = js.native
+    var modValue: js.UndefOr[String] = js.undefined
     
-    var ns: js.UndefOr[String] = js.native
+    var ns: js.UndefOr[String] = js.undefined
   }
   object PartialBemSettings {
     
@@ -66,6 +64,7 @@ object anon {
     }
   }
   
-  @js.native
-  trait ToString extends _BemMix
+  trait ToString
+    extends StObject
+       with _BemMix
 }

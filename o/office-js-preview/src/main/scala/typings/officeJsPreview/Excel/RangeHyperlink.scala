@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait RangeHyperlink extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait RangeHyperlink extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait RangeHyperlink extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var documentReference: js.UndefOr[String] = js.native
+  var documentReference: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait RangeHyperlink extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var screenTip: js.UndefOr[String] = js.native
+  var screenTip: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait RangeHyperlink extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var textToDisplay: js.UndefOr[String] = js.native
+  var textToDisplay: js.UndefOr[String] = js.undefined
 }
 object RangeHyperlink {
   

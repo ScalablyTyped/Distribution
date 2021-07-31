@@ -31,7 +31,6 @@ import typings.typescript.mod.WatchCompilerHostOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchOfFilesAndCompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -56,22 +55,21 @@ object interfacesMod {
   
   type DependencyGraph = StringDictionary[js.UndefOr[js.Array[ResolvedModule]]]
   
-  @js.native
   trait ErrorInfo extends StObject {
     
-    var character: Double = js.native
+    var character: Double
     
-    var code: Double = js.native
+    var code: Double
     
-    var content: String = js.native
+    var content: String
     
-    var context: String = js.native
+    var context: String
     
-    var file: String = js.native
+    var file: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var severity: Severity = js.native
+    var severity: Severity
   }
   object ErrorInfo {
     
@@ -115,12 +113,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait FileLocation extends StObject {
     
-    var character: Double = js.native
+    var character: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object FileLocation {
     
@@ -141,48 +138,47 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait LoaderOptions extends StObject {
     
-    var allowTsInNodeModules: Boolean = js.native
+    var allowTsInNodeModules: Boolean
     
-    var appendTsSuffixTo: js.Array[RegExp] = js.native
+    var appendTsSuffixTo: js.Array[RegExp]
     
-    var appendTsxSuffixTo: js.Array[RegExp] = js.native
+    var appendTsxSuffixTo: js.Array[RegExp]
     
-    var colors: Boolean = js.native
+    var colors: Boolean
     
-    var compiler: String = js.native
+    var compiler: String
     
-    var compilerOptions: CompilerOptions = js.native
+    var compilerOptions: CompilerOptions
     
-    var configFile: String = js.native
+    var configFile: String
     
-    var context: String = js.native
+    var context: String
     
-    def errorFormatter(message: ErrorInfo, colors: Chalk): String = js.native
+    def errorFormatter(message: ErrorInfo, colors: Chalk): String
     
-    var experimentalFileCaching: Boolean = js.native
+    var experimentalFileCaching: Boolean
     
-    var experimentalWatchApi: Boolean = js.native
+    var experimentalWatchApi: Boolean
     
-    var getCustomTransformers: String | (js.Function1[/* program */ Program, js.UndefOr[CustomTransformers]]) = js.native
+    var getCustomTransformers: String | (js.Function1[/* program */ Program, js.UndefOr[CustomTransformers]])
     
-    var happyPackMode: Boolean = js.native
+    var happyPackMode: Boolean
     
-    var ignoreDiagnostics: js.Array[Double] = js.native
+    var ignoreDiagnostics: js.Array[Double]
     
-    var instance: String = js.native
+    var instance: String
     
-    var logInfoToStdOut: Boolean = js.native
+    var logInfoToStdOut: Boolean
     
-    var logLevel: LogLevel = js.native
+    var logLevel: LogLevel
     
-    var onlyCompileBundledFiles: Boolean = js.native
+    var onlyCompileBundledFiles: Boolean
     
-    var projectReferences: Boolean = js.native
+    var projectReferences: Boolean
     
-    var reportFiles: js.Array[String] = js.native
+    var reportFiles: js.Array[String]
     
     def resolveModuleName(
       moduleName: String,
@@ -190,9 +186,9 @@ object interfacesMod {
       compilerOptions: CompilerOptions,
       moduleResolutionHost: ModuleResolutionHost,
       parentResolver: ResolveModuleName
-    ): ResolvedModuleWithFailedLookupLocations = js.native
+    ): ResolvedModuleWithFailedLookupLocations
     @JSName("resolveModuleName")
-    var resolveModuleName_Original: CustomResolveModuleName = js.native
+    var resolveModuleName_Original: CustomResolveModuleName
     
     def resolveTypeReferenceDirective(
       typeDirectiveName: String,
@@ -200,13 +196,141 @@ object interfacesMod {
       compilerOptions: CompilerOptions,
       moduleResolutionHost: ModuleResolutionHost,
       parentResolver: FnCall
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations
     @JSName("resolveTypeReferenceDirective")
-    var resolveTypeReferenceDirective_Original: CustomResolveTypeReferenceDirective = js.native
+    var resolveTypeReferenceDirective_Original: CustomResolveTypeReferenceDirective
     
-    var silent: Boolean = js.native
+    var silent: Boolean
     
-    var transpileOnly: Boolean = js.native
+    var transpileOnly: Boolean
+  }
+  object LoaderOptions {
+    
+    @scala.inline
+    def apply(
+      allowTsInNodeModules: Boolean,
+      appendTsSuffixTo: js.Array[RegExp],
+      appendTsxSuffixTo: js.Array[RegExp],
+      colors: Boolean,
+      compiler: String,
+      compilerOptions: CompilerOptions,
+      configFile: String,
+      context: String,
+      errorFormatter: (ErrorInfo, Chalk) => String,
+      experimentalFileCaching: Boolean,
+      experimentalWatchApi: Boolean,
+      getCustomTransformers: String | (js.Function1[/* program */ Program, js.UndefOr[CustomTransformers]]),
+      happyPackMode: Boolean,
+      ignoreDiagnostics: js.Array[Double],
+      instance: String,
+      logInfoToStdOut: Boolean,
+      logLevel: LogLevel,
+      onlyCompileBundledFiles: Boolean,
+      projectReferences: Boolean,
+      reportFiles: js.Array[String],
+      resolveModuleName: (/* moduleName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ ResolveModuleName) => ResolvedModuleWithFailedLookupLocations,
+      resolveTypeReferenceDirective: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCall) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations,
+      silent: Boolean,
+      transpileOnly: Boolean
+    ): LoaderOptions = {
+      val __obj = js.Dynamic.literal(allowTsInNodeModules = allowTsInNodeModules.asInstanceOf[js.Any], appendTsSuffixTo = appendTsSuffixTo.asInstanceOf[js.Any], appendTsxSuffixTo = appendTsxSuffixTo.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], compiler = compiler.asInstanceOf[js.Any], compilerOptions = compilerOptions.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], errorFormatter = js.Any.fromFunction2(errorFormatter), experimentalFileCaching = experimentalFileCaching.asInstanceOf[js.Any], experimentalWatchApi = experimentalWatchApi.asInstanceOf[js.Any], getCustomTransformers = getCustomTransformers.asInstanceOf[js.Any], happyPackMode = happyPackMode.asInstanceOf[js.Any], ignoreDiagnostics = ignoreDiagnostics.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], logInfoToStdOut = logInfoToStdOut.asInstanceOf[js.Any], logLevel = logLevel.asInstanceOf[js.Any], onlyCompileBundledFiles = onlyCompileBundledFiles.asInstanceOf[js.Any], projectReferences = projectReferences.asInstanceOf[js.Any], reportFiles = reportFiles.asInstanceOf[js.Any], resolveModuleName = js.Any.fromFunction5(resolveModuleName), resolveTypeReferenceDirective = js.Any.fromFunction5(resolveTypeReferenceDirective), silent = silent.asInstanceOf[js.Any], transpileOnly = transpileOnly.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LoaderOptions]
+    }
+    
+    @scala.inline
+    implicit class LoaderOptionsMutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAllowTsInNodeModules(value: Boolean): Self = StObject.set(x, "allowTsInNodeModules", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAppendTsSuffixTo(value: js.Array[RegExp]): Self = StObject.set(x, "appendTsSuffixTo", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAppendTsSuffixToVarargs(value: RegExp*): Self = StObject.set(x, "appendTsSuffixTo", js.Array(value :_*))
+      
+      @scala.inline
+      def setAppendTsxSuffixTo(value: js.Array[RegExp]): Self = StObject.set(x, "appendTsxSuffixTo", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAppendTsxSuffixToVarargs(value: RegExp*): Self = StObject.set(x, "appendTsxSuffixTo", js.Array(value :_*))
+      
+      @scala.inline
+      def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setErrorFormatter(value: (ErrorInfo, Chalk) => String): Self = StObject.set(x, "errorFormatter", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setExperimentalFileCaching(value: Boolean): Self = StObject.set(x, "experimentalFileCaching", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExperimentalWatchApi(value: Boolean): Self = StObject.set(x, "experimentalWatchApi", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGetCustomTransformers(value: String | (js.Function1[/* program */ Program, js.UndefOr[CustomTransformers]])): Self = StObject.set(x, "getCustomTransformers", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGetCustomTransformersFunction1(value: /* program */ Program => js.UndefOr[CustomTransformers]): Self = StObject.set(x, "getCustomTransformers", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHappyPackMode(value: Boolean): Self = StObject.set(x, "happyPackMode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIgnoreDiagnostics(value: js.Array[Double]): Self = StObject.set(x, "ignoreDiagnostics", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIgnoreDiagnosticsVarargs(value: Double*): Self = StObject.set(x, "ignoreDiagnostics", js.Array(value :_*))
+      
+      @scala.inline
+      def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLogInfoToStdOut(value: Boolean): Self = StObject.set(x, "logInfoToStdOut", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOnlyCompileBundledFiles(value: Boolean): Self = StObject.set(x, "onlyCompileBundledFiles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProjectReferences(value: Boolean): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReportFiles(value: js.Array[String]): Self = StObject.set(x, "reportFiles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReportFilesVarargs(value: String*): Self = StObject.set(x, "reportFiles", js.Array(value :_*))
+      
+      @scala.inline
+      def setResolveModuleName(
+        value: (/* moduleName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ ResolveModuleName) => ResolvedModuleWithFailedLookupLocations
+      ): Self = StObject.set(x, "resolveModuleName", js.Any.fromFunction5(value))
+      
+      @scala.inline
+      def setResolveTypeReferenceDirective(
+        value: (/* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost, /* parentResolver */ FnCall) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations
+      ): Self = StObject.set(x, "resolveTypeReferenceDirective", js.Any.fromFunction5(value))
+      
+      @scala.inline
+      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTranspileOnly(value: Boolean): Self = StObject.set(x, "transpileOnly", value.asInstanceOf[js.Any])
+    }
   }
   
   type LoaderOptionsCache = StringDictionary[WeakMap[LoaderOptions, LoaderOptions]]
@@ -239,16 +363,15 @@ object interfacesMod {
   
   type ResolveSync = js.Function3[/* context */ js.UndefOr[String], /* path */ String, /* moduleName */ String, String]
   
-  @js.native
   trait ResolvedModule extends StObject {
     
-    var isExternalLibraryImport: js.UndefOr[Boolean] = js.native
+    var isExternalLibraryImport: js.UndefOr[Boolean] = js.undefined
     
-    var originalFileName: String = js.native
+    var originalFileName: String
     
-    var resolvedFileName: String = js.native
+    var resolvedFileName: String
     
-    var resolvedModule: js.UndefOr[ResolvedModule] = js.native
+    var resolvedModule: js.UndefOr[ResolvedModule] = js.undefined
   }
   object ResolvedModule {
     
@@ -299,7 +422,8 @@ object interfacesMod {
   
   @js.native
   trait SolutionBuilderWithWatchHost
-    extends typings.typescript.mod.SolutionBuilderWithWatchHost[EmitAndSemanticDiagnosticsBuilderProgram]
+    extends StObject
+       with typings.typescript.mod.SolutionBuilderWithWatchHost[EmitAndSemanticDiagnosticsBuilderProgram]
        with WatchFactory {
     
     var diagnostics: SolutionDiagnostics = js.native
@@ -308,41 +432,30 @@ object interfacesMod {
     /* InferMemberOverrides */
     override def watchDirectory(path: String, callback: DirectoryWatcherCallback): FileWatcher = js.native
     /* InferMemberOverrides */
-    override def watchDirectory(
-      path: String,
-      callback: DirectoryWatcherCallback,
-      recursive: js.UndefOr[scala.Nothing],
-      options: CompilerOptions
-    ): FileWatcher = js.native
-    /* InferMemberOverrides */
     override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
     /* InferMemberOverrides */
     override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: CompilerOptions): FileWatcher = js.native
+    /* InferMemberOverrides */
+    override def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: CompilerOptions): FileWatcher = js.native
     
     /** Used to watch changes in source files, missing files needed to update the program or config file */
     /* InferMemberOverrides */
     override def watchFile(path: String, callback: FileWatcherCallback): FileWatcher = js.native
     /* InferMemberOverrides */
-    override def watchFile(
-      path: String,
-      callback: FileWatcherCallback,
-      pollingInterval: js.UndefOr[scala.Nothing],
-      options: CompilerOptions
-    ): FileWatcher = js.native
-    /* InferMemberOverrides */
     override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
     /* InferMemberOverrides */
     override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: CompilerOptions): FileWatcher = js.native
+    /* InferMemberOverrides */
+    override def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: CompilerOptions): FileWatcher = js.native
   }
   
-  @js.native
   trait SolutionDiagnostics extends StObject {
     
-    var global: js.Array[Diagnostic] = js.native
+    var global: js.Array[Diagnostic]
     
-    var perFile: Map[String, js.Array[Diagnostic]] = js.native
+    var perFile: Map[String, js.Array[Diagnostic]]
     
-    var transpileErrors: js.Array[js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]]] = js.native
+    var transpileErrors: js.Array[js.Tuple2[js.UndefOr[String], js.Array[Diagnostic]]]
   }
   object SolutionDiagnostics {
     
@@ -376,14 +489,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait TSFile extends StObject {
     
-    var projectReference: js.UndefOr[OutputFileName] = js.native
+    var projectReference: js.UndefOr[OutputFileName] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object TSFile {
     
@@ -415,17 +527,16 @@ object interfacesMod {
   
   type TSFiles = Map[String, TSFile]
   
-  @js.native
   trait TSInstance extends StObject {
     
     /** Used for Vue for the most part */
-    def appendTsTsxSuffixesIfRequired(filePath: String): String = js.native
+    def appendTsTsxSuffixesIfRequired(filePath: String): String
     
-    var builderProgram: js.UndefOr[EmitAndSemanticDiagnosticsBuilderProgram] = js.native
+    var builderProgram: js.UndefOr[EmitAndSemanticDiagnosticsBuilderProgram] = js.undefined
     
-    var changedFilesList: js.UndefOr[Boolean] = js.native
+    var changedFilesList: js.UndefOr[Boolean] = js.undefined
     
-    def colors(text: js.Any*): String = js.native
+    def colors(text: js.Any*): String
     /**
     		Use a template string.
     		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
@@ -444,62 +555,206 @@ object interfacesMod {
     		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
-    def colors(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    def colors(text: TemplateStringsArray, placeholders: js.Any*): String
     @JSName("colors")
-    var colors_Original: Chalk = js.native
+    var colors_Original: Chalk
     
-    var compiler: Typeoftypescript = js.native
+    var compiler: Typeoftypescript
     
-    var compilerOptions: CompilerOptions = js.native
+    var compilerOptions: CompilerOptions
     
-    var configFilePath: js.UndefOr[String] = js.native
+    var configFilePath: js.UndefOr[String] = js.undefined
     
-    var dependencyGraph: DependencyGraph = js.native
+    var dependencyGraph: DependencyGraph
     
     /**
       * a cache of all the files
       */
-    var files: TSFiles = js.native
+    var files: TSFiles
     
-    var filesWithErrors: js.UndefOr[TSFiles] = js.native
+    var filesWithErrors: js.UndefOr[TSFiles] = js.undefined
     
-    var hasUnaccountedModifiedFiles: js.UndefOr[Boolean] = js.native
+    var hasUnaccountedModifiedFiles: js.UndefOr[Boolean] = js.undefined
     
-    var languageService: js.UndefOr[LanguageService | Null] = js.native
+    var languageService: js.UndefOr[LanguageService | Null] = js.undefined
     
-    var loaderOptions: LoaderOptions = js.native
+    var loaderOptions: LoaderOptions
     
     /**
       * contains the modified files - cleared each time after-compile is called
       */
-    var modifiedFiles: js.UndefOr[TSFiles] = js.native
+    var modifiedFiles: js.UndefOr[TSFiles] = js.undefined
     
-    var otherFiles: TSFiles = js.native
+    var otherFiles: TSFiles
     
-    var program: js.UndefOr[Program] = js.native
+    var program: js.UndefOr[Program] = js.undefined
     
     /**
       * Paths to project references that are missing source maps.
       * Cleared each time after-compile is called. Used to dedupe
       * warnings about source maps during a single compilation.
       */
-    var projectsMissingSourceMaps: js.UndefOr[Set[String]] = js.native
+    var projectsMissingSourceMaps: js.UndefOr[Set[String]] = js.undefined
     
-    var reverseDependencyGraph: ReverseDependencyGraph = js.native
+    var reverseDependencyGraph: ReverseDependencyGraph
     
-    var rootFileNames: Set[String] = js.native
+    var rootFileNames: Set[String]
     
-    var solutionBuilder: js.UndefOr[SolutionBuilder[EmitAndSemanticDiagnosticsBuilderProgram]] = js.native
+    var solutionBuilder: js.UndefOr[SolutionBuilder[EmitAndSemanticDiagnosticsBuilderProgram]] = js.undefined
     
-    var solutionBuilderHost: js.UndefOr[SolutionBuilderWithWatchHost] = js.native
+    var solutionBuilderHost: js.UndefOr[SolutionBuilderWithWatchHost] = js.undefined
     
-    var transformers: CustomTransformers = js.native
+    var transformers: CustomTransformers
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
     
-    var watchHost: js.UndefOr[WatchHost] = js.native
+    var watchHost: js.UndefOr[WatchHost] = js.undefined
     
-    var watchOfFilesAndCompilerOptions: js.UndefOr[WatchOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram]] = js.native
+    var watchOfFilesAndCompilerOptions: js.UndefOr[WatchOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram]] = js.undefined
+  }
+  object TSInstance {
+    
+    @scala.inline
+    def apply(
+      appendTsTsxSuffixesIfRequired: String => String,
+      colors: Chalk,
+      compiler: Typeoftypescript,
+      compilerOptions: CompilerOptions,
+      dependencyGraph: DependencyGraph,
+      files: TSFiles,
+      loaderOptions: LoaderOptions,
+      otherFiles: TSFiles,
+      reverseDependencyGraph: ReverseDependencyGraph,
+      rootFileNames: Set[String],
+      transformers: CustomTransformers
+    ): TSInstance = {
+      val __obj = js.Dynamic.literal(appendTsTsxSuffixesIfRequired = js.Any.fromFunction1(appendTsTsxSuffixesIfRequired), colors = colors.asInstanceOf[js.Any], compiler = compiler.asInstanceOf[js.Any], compilerOptions = compilerOptions.asInstanceOf[js.Any], dependencyGraph = dependencyGraph.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], loaderOptions = loaderOptions.asInstanceOf[js.Any], otherFiles = otherFiles.asInstanceOf[js.Any], reverseDependencyGraph = reverseDependencyGraph.asInstanceOf[js.Any], rootFileNames = rootFileNames.asInstanceOf[js.Any], transformers = transformers.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TSInstance]
+    }
+    
+    @scala.inline
+    implicit class TSInstanceMutableBuilder[Self <: TSInstance] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAppendTsTsxSuffixesIfRequired(value: String => String): Self = StObject.set(x, "appendTsTsxSuffixesIfRequired", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setBuilderProgram(value: EmitAndSemanticDiagnosticsBuilderProgram): Self = StObject.set(x, "builderProgram", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBuilderProgramUndefined: Self = StObject.set(x, "builderProgram", js.undefined)
+      
+      @scala.inline
+      def setChangedFilesList(value: Boolean): Self = StObject.set(x, "changedFilesList", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setChangedFilesListUndefined: Self = StObject.set(x, "changedFilesList", js.undefined)
+      
+      @scala.inline
+      def setColors(value: Chalk): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompiler(value: Typeoftypescript): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConfigFilePath(value: String): Self = StObject.set(x, "configFilePath", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConfigFilePathUndefined: Self = StObject.set(x, "configFilePath", js.undefined)
+      
+      @scala.inline
+      def setDependencyGraph(value: DependencyGraph): Self = StObject.set(x, "dependencyGraph", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFiles(value: TSFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFilesWithErrors(value: TSFiles): Self = StObject.set(x, "filesWithErrors", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFilesWithErrorsUndefined: Self = StObject.set(x, "filesWithErrors", js.undefined)
+      
+      @scala.inline
+      def setHasUnaccountedModifiedFiles(value: Boolean): Self = StObject.set(x, "hasUnaccountedModifiedFiles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHasUnaccountedModifiedFilesUndefined: Self = StObject.set(x, "hasUnaccountedModifiedFiles", js.undefined)
+      
+      @scala.inline
+      def setLanguageService(value: LanguageService): Self = StObject.set(x, "languageService", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLanguageServiceNull: Self = StObject.set(x, "languageService", null)
+      
+      @scala.inline
+      def setLanguageServiceUndefined: Self = StObject.set(x, "languageService", js.undefined)
+      
+      @scala.inline
+      def setLoaderOptions(value: LoaderOptions): Self = StObject.set(x, "loaderOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setModifiedFiles(value: TSFiles): Self = StObject.set(x, "modifiedFiles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setModifiedFilesUndefined: Self = StObject.set(x, "modifiedFiles", js.undefined)
+      
+      @scala.inline
+      def setOtherFiles(value: TSFiles): Self = StObject.set(x, "otherFiles", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      
+      @scala.inline
+      def setProjectsMissingSourceMaps(value: Set[String]): Self = StObject.set(x, "projectsMissingSourceMaps", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProjectsMissingSourceMapsUndefined: Self = StObject.set(x, "projectsMissingSourceMaps", js.undefined)
+      
+      @scala.inline
+      def setReverseDependencyGraph(value: ReverseDependencyGraph): Self = StObject.set(x, "reverseDependencyGraph", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRootFileNames(value: Set[String]): Self = StObject.set(x, "rootFileNames", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSolutionBuilder(value: SolutionBuilder[EmitAndSemanticDiagnosticsBuilderProgram]): Self = StObject.set(x, "solutionBuilder", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSolutionBuilderHost(value: SolutionBuilderWithWatchHost): Self = StObject.set(x, "solutionBuilderHost", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSolutionBuilderHostUndefined: Self = StObject.set(x, "solutionBuilderHost", js.undefined)
+      
+      @scala.inline
+      def setSolutionBuilderUndefined: Self = StObject.set(x, "solutionBuilder", js.undefined)
+      
+      @scala.inline
+      def setTransformers(value: CustomTransformers): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      
+      @scala.inline
+      def setWatchHost(value: WatchHost): Self = StObject.set(x, "watchHost", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWatchHostUndefined: Self = StObject.set(x, "watchHost", js.undefined)
+      
+      @scala.inline
+      def setWatchOfFilesAndCompilerOptions(value: WatchOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram]): Self = StObject.set(x, "watchOfFilesAndCompilerOptions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWatchOfFilesAndCompilerOptionsUndefined: Self = StObject.set(x, "watchOfFilesAndCompilerOptions", js.undefined)
+    }
   }
   
   type TSInstances = StringDictionary[TSInstance]
@@ -515,25 +770,15 @@ object interfacesMod {
     
     /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
     def watchDirectory(path: String, callback: DirectoryWatcherCallback): FileWatcher = js.native
-    def watchDirectory(
-      path: String,
-      callback: DirectoryWatcherCallback,
-      recursive: js.UndefOr[scala.Nothing],
-      options: CompilerOptions
-    ): FileWatcher = js.native
     def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
     def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: CompilerOptions): FileWatcher = js.native
+    def watchDirectory(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: CompilerOptions): FileWatcher = js.native
     
     /** Used to watch changes in source files, missing files needed to update the program or config file */
     def watchFile(path: String, callback: FileWatcherCallback): FileWatcher = js.native
-    def watchFile(
-      path: String,
-      callback: FileWatcherCallback,
-      pollingInterval: js.UndefOr[scala.Nothing],
-      options: CompilerOptions
-    ): FileWatcher = js.native
     def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
     def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: CompilerOptions): FileWatcher = js.native
+    def watchFile(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: CompilerOptions): FileWatcher = js.native
     
     var watchedDirectories: WatchCallbacks[DirectoryWatcherCallback] = js.native
     
@@ -543,7 +788,9 @@ object interfacesMod {
   }
   
   @js.native
-  trait WatchHost extends WatchCompilerHostOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram] {
+  trait WatchHost
+    extends StObject
+       with WatchCompilerHostOfFilesAndCompilerOptions[EmitAndSemanticDiagnosticsBuilderProgram] {
     
     def invokeDirectoryWatcher(directory: String, fileAddedOrRemoved: String): Unit = js.native
     
@@ -556,18 +803,17 @@ object interfacesMod {
     def updateRootFileNames(): Unit = js.native
   }
   
-  @js.native
   trait WebpackError extends StObject {
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var loaderSource: String = js.native
+    var loaderSource: String
     
-    var location: js.UndefOr[FileLocation] = js.native
+    var location: js.UndefOr[FileLocation] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var module: js.UndefOr[js.Any] = js.native
+    var module: js.UndefOr[js.Any] = js.undefined
   }
   object WebpackError {
     
@@ -606,14 +852,13 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait WebpackModule extends StObject {
     
-    var buildMeta: TsLoaderDefinitionFileVersions = js.native
+    var buildMeta: TsLoaderDefinitionFileVersions
     
-    var errors: js.Array[WebpackError] = js.native
+    var errors: js.Array[WebpackError]
     
-    var resource: String = js.native
+    var resource: String
   }
   object WebpackModule {
     

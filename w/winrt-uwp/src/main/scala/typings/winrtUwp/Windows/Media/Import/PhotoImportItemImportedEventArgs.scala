@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Import
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PhotoImportFindItemsResult::ItemImported event. */
-@js.native
 trait PhotoImportItemImportedEventArgs extends StObject {
   
   /** Gets the imported item associated with the PhotoImportFindItemsResult::ItemImported event. */
-  var importedItem: PhotoImportItem = js.native
+  var importedItem: PhotoImportItem
 }
 object PhotoImportItemImportedEventArgs {
   

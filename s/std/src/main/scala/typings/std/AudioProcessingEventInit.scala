@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AudioProcessingEventInit extends EventInit {
+trait AudioProcessingEventInit
+  extends StObject
+     with EventInit {
   
-  var inputBuffer: AudioBuffer = js.native
+  var inputBuffer: AudioBuffer
   
-  var outputBuffer: AudioBuffer = js.native
+  var outputBuffer: AudioBuffer
   
-  var playbackTime: Double = js.native
+  var playbackTime: Double
 }
 object AudioProcessingEventInit {
   

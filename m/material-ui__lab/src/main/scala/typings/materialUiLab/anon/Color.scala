@@ -19,51 +19,49 @@ import typings.materialUiLab.materialUiLabStrings.standard
 import typings.materialUiLab.materialUiLabStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
   /**
     * The active color.
     */
-  var color: js.UndefOr[standard | primary | secondary] = js.native
+  var color: js.UndefOr[standard | primary | secondary] = js.undefined
   
   /**
     * If `true`, the item will be disabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current page number.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true` the pagination item is selected.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The shape of the pagination item.
     */
-  var shape: js.UndefOr[round | rounded] = js.native
+  var shape: js.UndefOr[round | rounded] = js.undefined
   
   /**
     * The size of the pagination item.
     */
-  var size: js.UndefOr[small | medium | large] = js.native
+  var size: js.UndefOr[small | medium | large] = js.undefined
   
   /**
     * The type of pagination item.
     */
-  var `type`: js.UndefOr[page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`] = js.native
+  var `type`: js.UndefOr[page | first | last | next | previous | `start-ellipsis` | `end-ellipsis`] = js.undefined
   
   /**
     * The pagination item variant.
     */
-  var variant: js.UndefOr[text | outlined] = js.native
+  var variant: js.UndefOr[text | outlined] = js.undefined
 }
 object Color {
   

@@ -10,9 +10,9 @@ Splits a hostname into subdomains, domain and (effective) top-level domains
 | ------------------ | :-------------: |
 | Full name          | parse-domain |
 | Keywords           | domain, url, sub-domain, tld, parse, sanitize, top-level |
-| # releases         | 27 |
-| # dependents       | 79 |
-| # downloads        | 4900490 |
+| # releases         | 24 |
+| # dependents       | 90 |
+| # downloads        | 4732307 |
 | # stars            | 5 |
 
 ## Links

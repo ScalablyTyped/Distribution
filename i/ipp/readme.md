@@ -12,7 +12,7 @@ Internet Printing Protocol (IPP) for nodejs
 | Keywords           | ipp, print, printing |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 134031 |
+| # downloads        | 99748 |
 | # stars            | 8 |
 
 ## Links

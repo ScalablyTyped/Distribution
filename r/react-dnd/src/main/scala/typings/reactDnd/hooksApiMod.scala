@@ -9,15 +9,13 @@ import typings.reactDnd.optionsMod.DragPreviewOptions
 import typings.reactDnd.optionsMod.DragSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksApiMod {
   
-  @js.native
   trait DragObjectWithType extends StObject {
     
-    var `type`: SourceType = js.native
+    var `type`: SourceType
   }
   object DragObjectWithType {
     
@@ -36,13 +34,12 @@ object hooksApiMod {
     }
   }
   
-  @js.native
   trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] extends StObject {
     
     /**
       * When the dragging starts, beginDrag is called. If an object is returned from this function it will overide the default dragItem
       */
-    var begin: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, js.UndefOr[DragObject | Unit]]] = js.native
+    var begin: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, js.UndefOr[DragObject | Unit]]] = js.undefined
     
     /**
       * Optional.
@@ -50,12 +47,12 @@ object hooksApiMod {
       * Specifying it is handy if you'd like to disable dragging based on some predicate over props. Note: You may not call
       * monitor.canDrag() inside this method.
       */
-    var canDrag: js.UndefOr[Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean])] = js.native
+    var canDrag: js.UndefOr[Boolean | (js.Function1[/* monitor */ DragSourceMonitor, Boolean])] = js.undefined
     
     /**
       * A function to collect rendering properties
       */
-    var collect: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, CollectedProps]] = js.native
+    var collect: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, CollectedProps]] = js.undefined
     
     /**
       * Optional.
@@ -67,7 +64,7 @@ object hooksApiMod {
       */
     var end: js.UndefOr[
         js.Function2[/* draggedItem */ js.UndefOr[DragObject], /* monitor */ DragSourceMonitor, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional.
@@ -79,7 +76,7 @@ object hooksApiMod {
       *
       * Note: You may not call monitor.isDragging() inside this method.
       */
-    var isDragging: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, Boolean]] = js.native
+    var isDragging: js.UndefOr[js.Function1[/* monitor */ DragSourceMonitor, Boolean]] = js.undefined
     
     /**
       * A plain javascript item describing the data being dragged.
@@ -92,17 +89,17 @@ object hooksApiMod {
       * { id: props.id }
       *
       */
-    var item: DragObject = js.native
+    var item: DragObject
     
     /**
       * The drag source options
       */
-    var options: js.UndefOr[DragSourceOptions] = js.native
+    var options: js.UndefOr[DragSourceOptions] = js.undefined
     
     /**
       * DragPreview options
       */
-    var previewOptions: js.UndefOr[DragPreviewOptions] = js.native
+    var previewOptions: js.UndefOr[DragPreviewOptions] = js.undefined
   }
   object DragSourceHookSpec {
     
@@ -113,7 +110,7 @@ object hooksApiMod {
     }
     
     @scala.inline
-    implicit class DragSourceHookSpecMutableBuilder[Self <: DragSourceHookSpec[_, _, _], DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] (val x: Self with (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
+    implicit class DragSourceHookSpecMutableBuilder[Self <: DragSourceHookSpec[?, ?, ?], DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] (val x: Self & (DragSourceHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
       
       @scala.inline
       def setBegin(value: /* monitor */ DragSourceMonitor => js.UndefOr[DragObject | Unit]): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
@@ -165,25 +162,24 @@ object hooksApiMod {
     }
   }
   
-  @js.native
   trait DropTargetHookSpec[DragObject, DropResult, CollectedProps] extends StObject {
     
     /**
       * The kinds of dragItems this dropTarget accepts
       */
-    var accept: TargetType = js.native
+    var accept: TargetType
     
     /**
       * Optional. Use it to specify whether the drop target is able to accept the item. If you want to always allow it, just
       * omit this method. Specifying it is handy if you'd like to disable dropping based on some predicate over props or
       * monitor.getItem(). Note: You may not call monitor.canDrop() inside this method.
       */
-    var canDrop: js.UndefOr[js.Function2[/* item */ DragObject, /* monitor */ DropTargetMonitor, Boolean]] = js.native
+    var canDrop: js.UndefOr[js.Function2[/* item */ DragObject, /* monitor */ DropTargetMonitor, Boolean]] = js.undefined
     
     /**
       * A function to collect rendering properties
       */
-    var collect: js.UndefOr[js.Function1[/* monitor */ DropTargetMonitor, CollectedProps]] = js.native
+    var collect: js.UndefOr[js.Function1[/* monitor */ DropTargetMonitor, CollectedProps]] = js.undefined
     
     /**
       * Optional.
@@ -197,7 +193,7 @@ object hooksApiMod {
       */
     var drop: js.UndefOr[
         js.Function2[/* item */ DragObject, /* monitor */ DropTargetMonitor, js.UndefOr[DropResult]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional.
@@ -205,12 +201,12 @@ object hooksApiMod {
       * the hover happens over just the current target, or over a nested one. Unlike drop(), this method will be called even
       * if canDrop() is defined and returns false. You can check monitor.canDrop() to test whether this is the case.
       */
-    var hover: js.UndefOr[js.Function2[/* item */ DragObject, /* monitor */ DropTargetMonitor, Unit]] = js.native
+    var hover: js.UndefOr[js.Function2[/* item */ DragObject, /* monitor */ DropTargetMonitor, Unit]] = js.undefined
     
     /**
       * The drop target optinos
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
   }
   object DropTargetHookSpec {
     
@@ -221,7 +217,7 @@ object hooksApiMod {
     }
     
     @scala.inline
-    implicit class DropTargetHookSpecMutableBuilder[Self <: DropTargetHookSpec[_, _, _], DragObject, DropResult, CollectedProps] (val x: Self with (DropTargetHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
+    implicit class DropTargetHookSpecMutableBuilder[Self <: DropTargetHookSpec[?, ?, ?], DragObject, DropResult, CollectedProps] (val x: Self & (DropTargetHookSpec[DragObject, DropResult, CollectedProps])) extends AnyVal {
       
       @scala.inline
       def setAccept(value: TargetType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])

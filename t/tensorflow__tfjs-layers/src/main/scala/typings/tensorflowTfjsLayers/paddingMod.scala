@@ -7,10 +7,13 @@ import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paddingMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "ZeroPadding2D")
   @js.native
@@ -36,32 +39,27 @@ object paddingMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "spatial2dPadding")
-  @js.native
-  def spatial2dPadding(x: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "spatial2dPadding")
-  @js.native
-  def spatial2dPadding(x: Tensor[Rank], padding: js.UndefOr[scala.Nothing], dataFormat: DataFormat): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "spatial2dPadding")
-  @js.native
-  def spatial2dPadding(x: Tensor[Rank], padding: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "spatial2dPadding")
-  @js.native
+  @scala.inline
+  def spatial2dPadding(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def spatial2dPadding(x: Tensor[Rank], padding: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def spatial2dPadding(
     x: Tensor[Rank],
     padding: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def spatial2dPadding(x: Tensor[Rank], padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "temporalPadding")
-  @js.native
-  def temporalPadding(x: Tensor[Rank]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "temporalPadding")
-  @js.native
-  def temporalPadding(x: Tensor[Rank], padding: js.Tuple2[Double, Double]): Tensor[Rank] = js.native
+  @scala.inline
+  def temporalPadding(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporalPadding")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def temporalPadding(x: Tensor[Rank], padding: js.Tuple2[Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporalPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @js.native
-  trait ZeroPadding2DLayerArgs extends LayerArgs {
+  trait ZeroPadding2DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * One of `'channelsLast'` (default) and `'channelsFirst'`.
@@ -72,7 +70,7 @@ object paddingMod {
       * corresponds to inputs with shape
       * `[batch, channels, height, width]`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /**
       * Integer, or `Array` of 2 integers, or `Array` of 2 `Array`s, each of
@@ -86,7 +84,7 @@ object paddingMod {
       */
     var padding: js.UndefOr[
         Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
-      ] = js.native
+      ] = js.undefined
   }
   object ZeroPadding2DLayerArgs {
     

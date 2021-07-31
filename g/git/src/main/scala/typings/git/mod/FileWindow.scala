@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "FileWindow")
@@ -16,7 +15,7 @@ class FileWindow protected () extends StObject {
   
   var idxfile: js.Any = js.native
   
-  def index(idx: js.Array[_]): Unit = js.native
+  def index(idx: js.Array[js.Any]): Unit = js.native
   def index(idx: Double): Unit = js.native
   
   var offset: js.Any = js.native

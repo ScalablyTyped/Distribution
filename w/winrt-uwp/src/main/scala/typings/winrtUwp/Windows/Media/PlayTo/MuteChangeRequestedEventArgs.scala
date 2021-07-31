@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the MuteChangeRequested event. */
-@js.native
 trait MuteChangeRequestedEventArgs extends StObject {
   
   /** Gets a value that indicates whether mute or unmute was requested. */
-  var mute: Boolean = js.native
+  var mute: Boolean
 }
 object MuteChangeRequestedEventArgs {
   

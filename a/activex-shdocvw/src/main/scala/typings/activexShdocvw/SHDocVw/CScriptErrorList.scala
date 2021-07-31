@@ -2,42 +2,40 @@ package typings.activexShdocvw.SHDocVw
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CScriptErrorList extends StObject {
   
   @JSName("SHDocVw.CScriptErrorList_typekey")
-  var SHDocVwDotCScriptErrorList_typekey: CScriptErrorList = js.native
+  var SHDocVwDotCScriptErrorList_typekey: CScriptErrorList
   
-  def advanceError(): Unit = js.native
+  def advanceError(): Unit
   
-  def canAdvanceError(): Double = js.native
+  def canAdvanceError(): Double
   
-  def canRetreatError(): Double = js.native
+  def canRetreatError(): Double
   
-  def getAlwaysShowLockState(): Double = js.native
+  def getAlwaysShowLockState(): Double
   
-  def getDetailsPaneOpen(): Double = js.native
+  def getDetailsPaneOpen(): Double
   
-  def getErrorChar(): Double = js.native
+  def getErrorChar(): Double
   
-  def getErrorCode(): Double = js.native
+  def getErrorCode(): Double
   
-  def getErrorLine(): Double = js.native
+  def getErrorLine(): Double
   
-  def getErrorMsg(): String = js.native
+  def getErrorMsg(): String
   
-  def getErrorUrl(): String = js.native
+  def getErrorUrl(): String
   
-  def getPerErrorDisplay(): Double = js.native
+  def getPerErrorDisplay(): Double
   
-  def retreatError(): Unit = js.native
+  def retreatError(): Unit
   
-  def setDetailsPaneOpen(fDetailsPaneOpen: Double): Unit = js.native
+  def setDetailsPaneOpen(fDetailsPaneOpen: Double): Unit
   
-  def setPerErrorDisplay(fPerErrorDisplay: Double): Unit = js.native
+  def setPerErrorDisplay(fPerErrorDisplay: Double): Unit
 }
 object CScriptErrorList {
   

@@ -3,17 +3,15 @@ package typings.ngCordova.ngCordova
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEmailComposerService extends StObject {
   
-  def addAlias(app: String, schema: String): Unit = js.native
+  def addAlias(app: String, schema: String): Unit
   
-  def isAvailable(): IPromise[Boolean] = js.native
+  def isAvailable(): IPromise[Boolean]
   
-  def open(properties: IEmailComposerOptions): IPromise[_] = js.native
+  def open(properties: IEmailComposerOptions): IPromise[js.Any]
 }
 object IEmailComposerService {
   
@@ -21,7 +19,7 @@ object IEmailComposerService {
   def apply(
     addAlias: (String, String) => Unit,
     isAvailable: () => IPromise[Boolean],
-    open: IEmailComposerOptions => IPromise[_]
+    open: IEmailComposerOptions => IPromise[js.Any]
   ): IEmailComposerService = {
     val __obj = js.Dynamic.literal(addAlias = js.Any.fromFunction2(addAlias), isAvailable = js.Any.fromFunction0(isAvailable), open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[IEmailComposerService]
@@ -37,6 +35,6 @@ object IEmailComposerService {
     def setIsAvailable(value: () => IPromise[Boolean]): Self = StObject.set(x, "isAvailable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpen(value: IEmailComposerOptions => IPromise[_]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    def setOpen(value: IEmailComposerOptions => IPromise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

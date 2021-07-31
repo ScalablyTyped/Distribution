@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlayerSessionInput extends StObject {
   
   /**
     * A unique identifier for the game session to add a player to.
     */
-  var GameSessionId: ArnStringModel = js.native
+  var GameSessionId: ArnStringModel
   
   /**
     * Developer-defined information related to a player. Amazon GameLift does not use this data, so it can be formatted as needed for use in the game.
     */
-  var PlayerData: js.UndefOr[typings.awsSdk.gameliftMod.PlayerData] = js.native
+  var PlayerData: js.UndefOr[typings.awsSdk.gameliftMod.PlayerData] = js.undefined
   
   /**
     * A unique identifier for a player. Player IDs are developer-defined.
     */
-  var PlayerId: NonZeroAndMaxString = js.native
+  var PlayerId: NonZeroAndMaxString
 }
 object CreatePlayerSessionInput {
   

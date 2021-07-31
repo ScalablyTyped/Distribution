@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Media.PlayTo
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a media element to connect to a Play To target. */
-@js.native
 trait PlayToSource extends StObject {
   
   /** Gets the connection to the Play To target. */
-  var connection: PlayToConnection = js.native
+  var connection: PlayToConnection
   
   /** Gets or sets the next Play To source element. */
-  var next: PlayToSource = js.native
+  var next: PlayToSource
   
   /** Connects the next Play To source element to the Play To target. */
-  def playNext(): Unit = js.native
+  def playNext(): Unit
   
   /** Specifies a preferred Uniform Resource Identifier (URI) for the media stream, such as a cloud based media server, used is used for Play To by reference. */
-  var preferredSourceUri: Uri = js.native
+  var preferredSourceUri: Uri
 }
 object PlayToSource {
   

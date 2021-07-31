@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionTrustedSignerItem extends StObject {
   
   /**
     * AWS account ID or `self`
     */
-  var awsAccountNumber: String = js.native
+  var awsAccountNumber: String
   
   /**
     * Set of active CloudFront key pairs associated with the signer account
     */
-  var keyPairIds: js.Array[String] = js.native
+  var keyPairIds: js.Array[String]
 }
 object DistributionTrustedSignerItem {
   

@@ -10,28 +10,31 @@ import typings.apostrophe.apostropheStrings.user
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: AposConstructor[js.Object, js.Object], args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("apostrophe", JSImport.Namespace)
   @js.native
-  def apply(options: AposConstructor[js.Object, js.Object], args: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
   object adminBar {
     
-    @JSImport("apostrophe", "adminBar.link")
+    @JSImport("apostrophe", "adminBar")
     @js.native
-    def link(name: String, callback: js.Function0[_]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def link(name: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("apostrophe", "change")
-  @js.native
-  def change(arg: String): js.Any = js.native
-  @JSImport("apostrophe", "change")
-  @js.native
-  def change(arg: js.Object): js.Any = js.native
+  @scala.inline
+  def change(arg: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def change(arg: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object contextPiece {
     
@@ -63,64 +66,52 @@ object mod {
     val `type`: String = js.native
   }
   
-  @JSImport("apostrophe", "create")
-  @js.native
-  def create(`type`: String, options: js.Any): js.Any = js.native
-  @JSImport("apostrophe", "create")
-  @js.native
-  def create(`type`: String, options: js.Any, callback: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def create(`type`: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def create(`type`: String, options: js.Any, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("apostrophe", "define")
-  @js.native
-  def define(`type`: String, definition: js.Any): js.Any = js.native
-  @JSImport("apostrophe", "define")
-  @js.native
-  def define(`type`: String, definition: js.Any, extending: js.Any): js.Any = js.native
-  @JSImport("apostrophe", "define")
-  @js.native
-  def define(`type`: js.Array[String], definition: js.Any): js.Any = js.native
-  @JSImport("apostrophe", "define")
-  @js.native
-  def define(`type`: js.Array[String], definition: js.Any, extending: js.Any): js.Any = js.native
+  @scala.inline
+  def define(`type`: String, definition: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def define(`type`: String, definition: js.Any, extending: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any], extending.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def define(`type`: js.Array[String], definition: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def define(`type`: js.Array[String], definition: js.Any, extending: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any], extending.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   object docs {
     
-    @JSImport("apostrophe", "docs.getManager")
+    @JSImport("apostrophe", "docs")
     @js.native
-    def getManager(`type`: String): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apostrophe", "docs.lock")
-    @js.native
-    def lock(id: String): Unit = js.native
-    @JSImport("apostrophe", "docs.lock")
-    @js.native
-    def lock(id: String, callback: js.Function0[_]): Unit = js.native
+    @scala.inline
+    def getManager(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getManager")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("apostrophe", "docs.lockAndWatch")
-    @js.native
-    def lockAndWatch(id: String): Unit = js.native
-    @JSImport("apostrophe", "docs.lockAndWatch")
-    @js.native
-    def lockAndWatch(id: String, callback: js.Function0[_]): Unit = js.native
+    @scala.inline
+    def lock(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def lock(id: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("apostrophe", "docs.setManager")
-    @js.native
-    def setManager(`type`: String, manager: js.Any): Unit = js.native
+    @scala.inline
+    def lockAndWatch(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockAndWatch")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def lockAndWatch(id: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lockAndWatch")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("apostrophe", "docs.unlock")
-    @js.native
-    def unlock(_id: String, sync: js.Any): js.Any = js.native
-    @JSImport("apostrophe", "docs.unlock")
-    @js.native
-    def unlock(_id: String, sync: js.Any, callback: js.Function0[_]): js.Any = js.native
+    @scala.inline
+    def setManager(`type`: String, manager: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setManager")(`type`.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def unlock(_id: String, sync: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(_id.asInstanceOf[js.Any], sync.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def unlock(_id: String, sync: js.Any, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(_id.asInstanceOf[js.Any], sync.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @JSImport("apostrophe", "emit")
-  @js.native
-  def emit(name: String): js.Any = js.native
-  @JSImport("apostrophe", "emit")
-  @js.native
-  def emit(name: String, arg: js.Any): js.Any = js.native
+  @scala.inline
+  def emit(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def emit(name: String, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   object modalSupport {
     
@@ -134,13 +125,11 @@ object mod {
     @scala.inline
     def all_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
     
-    @JSImport("apostrophe", "modalSupport.cancelTopModal")
-    @js.native
-    def cancelTopModal(): Unit = js.native
+    @scala.inline
+    def cancelTopModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelTopModal")().asInstanceOf[Unit]
     
-    @JSImport("apostrophe", "modalSupport.closeTopModal")
-    @js.native
-    def closeTopModal(): Unit = js.native
+    @scala.inline
+    def closeTopModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeTopModal")().asInstanceOf[Unit]
     
     @JSImport("apostrophe", "modalSupport.depth")
     @js.native
@@ -148,13 +137,11 @@ object mod {
     @scala.inline
     def depth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("depth")(x.asInstanceOf[js.Any])
     
-    @JSImport("apostrophe", "modalSupport.getLatestModal")
-    @js.native
-    def getLatestModal(): Null | String = js.native
+    @scala.inline
+    def getLatestModal(): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatestModal")().asInstanceOf[Null | String]
     
-    @JSImport("apostrophe", "modalSupport.getTopModalOrBody")
-    @js.native
-    def getTopModalOrBody(): String = js.native
+    @scala.inline
+    def getTopModalOrBody(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopModalOrBody")().asInstanceOf[String]
     
     @JSImport("apostrophe", "modalSupport.initialized")
     @js.native
@@ -192,26 +179,20 @@ object mod {
     def modules_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("apostrophe", "notify")
-  @js.native
-  def notify_(message: String, options: AposObject): js.Any = js.native
-  @JSImport("apostrophe", "notify")
-  @js.native
-  def notify_(message: js.Object, options: AposObject): js.Any = js.native
+  @scala.inline
+  def notify_(message: String, options: AposObject): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def notify_(message: js.Object, options: AposObject): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("apostrophe", "off")
-  @js.native
-  def off(eventName: String): js.Any = js.native
-  @JSImport("apostrophe", "off")
-  @js.native
-  def off(eventName: String, fn: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def off(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def off(eventName: String, fn: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("apostrophe", "on")
-  @js.native
-  def on(eventName: String): js.Any = js.native
-  @JSImport("apostrophe", "on")
-  @js.native
-  def on(eventName: String, fn: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def on(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def on(eventName: String, fn: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   object pages {
     
@@ -228,61 +209,27 @@ object mod {
   
   object schemas {
     
-    @JSImport("apostrophe", "schemas.convert")
+    @JSImport("apostrophe", "schemas")
     @js.native
-    def convert($el: HTMLElement, schema: Schema, data: js.Any, options: js.Any): js.Any = js.native
-    @JSImport("apostrophe", "schemas.convert")
-    @js.native
-    def convert($el: HTMLElement, schema: Schema, data: js.Any, options: js.Any, callback: js.Function0[_]): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apostrophe", "schemas.newInstance")
-    @js.native
-    def newInstance(schema: Schema): js.Any = js.native
+    @scala.inline
+    def convert($el: HTMLElement, schema: Schema, data: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def convert($el: HTMLElement, schema: Schema, data: js.Any, options: js.Any, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(data: js.Any, name: String, $field: js.Any): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(
-      data: js.Any,
-      name: String,
-      $field: js.Any,
-      callback: js.UndefOr[scala.Nothing],
-      $el: js.UndefOr[scala.Nothing],
-      field: js.Any
-    ): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(data: js.Any, name: String, $field: js.Any, callback: js.UndefOr[scala.Nothing], $el: HTMLElement): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(
-      data: js.Any,
-      name: String,
-      $field: js.Any,
-      callback: js.UndefOr[scala.Nothing],
-      $el: HTMLElement,
-      field: js.Any
-    ): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit]): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(
-      data: js.Any,
-      name: String,
-      $field: js.Any,
-      callback: js.Function0[Unit],
-      $el: js.UndefOr[scala.Nothing],
-      field: js.Any
-    ): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
-    def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit], $el: HTMLElement): js.Any = js.native
-    @JSImport("apostrophe", "schemas.populate")
-    @js.native
+    @scala.inline
+    def newInstance(schema: Schema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit], $el: Unit, field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit], $el: HTMLElement): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def populate(
       data: js.Any,
       name: String,
@@ -290,80 +237,87 @@ object mod {
       callback: js.Function0[Unit],
       $el: HTMLElement,
       field: js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any, callback: Unit, $el: Unit, field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any, callback: Unit, $el: HTMLElement): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def populate(data: js.Any, name: String, $field: js.Any, callback: Unit, $el: HTMLElement, field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("apostrophe", "schemas.returnToError")
-    @js.native
-    def returnToError($el: HTMLElement, schema: Schema, errorPath: js.Any, error: js.Any, callback: js.Function0[_]): Unit = js.native
+    @scala.inline
+    def returnToError($el: HTMLElement, schema: Schema, errorPath: js.Any, error: js.Any, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("returnToError")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], errorPath.asInstanceOf[js.Any], error.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object ui {
     
-    @JSImport("apostrophe", "ui.globalBusy")
+    @JSImport("apostrophe", "ui")
     @js.native
-    def globalBusy(state: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apostrophe", "ui.link")
-    @js.native
-    def link(sel: String, verb: String, `object`: js.Object): js.Any = js.native
-    @JSImport("apostrophe", "ui.link")
-    @js.native
-    def link(sel: String, verb: String, `object`: js.Object, callback: js.Function0[_]): js.Any = js.native
+    @scala.inline
+    def globalBusy(state: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("globalBusy")(state.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def link(sel: String, verb: String, `object`: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(sel.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def link(sel: String, verb: String, `object`: js.Object, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(sel.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object utils {
     
-    @JSImport("apostrophe", "utils.camelName")
+    @JSImport("apostrophe", "utils")
     @js.native
-    def camelName(s: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apostrophe", "utils.capitalizeFirst")
-    @js.native
-    def capitalizeFirst(s: String): String = js.native
+    @scala.inline
+    def camelName(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelName")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("apostrophe", "utils.error")
-    @js.native
-    def error(msg: String): Unit = js.native
+    @scala.inline
+    def capitalizeFirst(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalizeFirst")(s.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("apostrophe", "utils.generateId")
-    @js.native
-    def generateId(): String = js.native
+    @scala.inline
+    def error(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   }
   
   object versions {
     
-    @JSImport("apostrophe", "versions.edit")
+    @JSImport("apostrophe", "versions")
     @js.native
-    def edit(id: String): js.Any = js.native
-    @JSImport("apostrophe", "versions.edit")
-    @js.native
-    def edit(id: String, afterRevert: js.Function0[Unit]): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def edit(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("edit")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def edit(id: String, afterRevert: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("edit")(id.asInstanceOf[js.Any], afterRevert.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   // Pass in custom modules as first argument
   // second argument is additional custom options e.g. restApi exposed by apostrophe-headless
-  @js.native
   trait AposConstructor[M, O] extends StObject {
     
-    var afterInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterListen: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterListen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var initFailed: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.native
+    var initFailed: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
     
     var modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-      */ typings.apostrophe.apostropheStrings.AposConstructor with TopLevel[js.Any] = js.native
+      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[js.Any]
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var rootDir: js.UndefOr[String] = js.native
+    var rootDir: js.UndefOr[String] = js.undefined
     
-    var shortName: String = js.native
+    var shortName: String
   }
   object AposConstructor {
     
@@ -371,7 +325,7 @@ object mod {
     def apply[M, O](
       modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-      */ typings.apostrophe.apostropheStrings.AposConstructor with TopLevel[js.Any],
+      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[js.Any],
       shortName: String
     ): AposConstructor[M, O] = {
       val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any])
@@ -379,7 +333,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AposConstructorMutableBuilder[Self <: AposConstructor[_, _], M, O] (val x: Self with (AposConstructor[M, O])) extends AnyVal {
+    implicit class AposConstructorMutableBuilder[Self <: AposConstructor[?, ?], M, O] (val x: Self & (AposConstructor[M, O])) extends AnyVal {
       
       @scala.inline
       def setAfterInit(value: () => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction0(value))
@@ -409,7 +363,7 @@ object mod {
       def setModules(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-        */ typings.apostrophe.apostropheStrings.AposConstructor with TopLevel[js.Any]
+        */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[js.Any]
       ): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -657,17 +611,16 @@ object mod {
     def `apostrophe-widgets`: typings.apostrophe.apostropheStrings.`apostrophe-widgets` = "apostrophe-widgets".asInstanceOf[typings.apostrophe.apostropheStrings.`apostrophe-widgets`]
   }
   
-  @js.native
   trait AposModule extends StObject {
     
-    def emit(name: String): Unit = js.native
+    def emit(name: String): Unit
     
-    def on(name: String, methodName: js.Any, fn: js.Function0[_]): Unit = js.native
+    def on(name: String, methodName: js.Any, fn: js.Function0[js.Any]): Unit
   }
   object AposModule {
     
     @scala.inline
-    def apply(emit: String => Unit, on: (String, js.Any, js.Function0[_]) => Unit): AposModule = {
+    def apply(emit: String => Unit, on: (String, js.Any, js.Function0[js.Any]) => Unit): AposModule = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), on = js.Any.fromFunction3(on))
       __obj.asInstanceOf[AposModule]
     }
@@ -679,37 +632,36 @@ object mod {
       def setEmit(value: String => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOn(value: (String, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
+      def setOn(value: (String, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     }
   }
   
   // Pass in custom modules to AposModuleOptions to allow them in extend
-  @js.native
   trait AposModuleOptions[C] extends StObject {
     
-    var addFields: js.UndefOr[js.Array[Field]] = js.native
+    var addFields: js.UndefOr[js.Array[Field]] = js.undefined
     
-    var arrangeFields: js.UndefOr[js.Array[typings.apostrophe.anon.Fields]] = js.native
+    var arrangeFields: js.UndefOr[js.Array[typings.apostrophe.anon.Fields]] = js.undefined
     
-    var beforeConstruct: js.UndefOr[js.Function2[/* self */ js.Any, /* options */ js.Any, _]] = js.native
+    var beforeConstruct: js.UndefOr[js.Function2[/* self */ js.Any, /* options */ js.Any, js.Any]] = js.undefined
     
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
-    var extend: AposCoreModules | C = js.native
+    var extend: AposCoreModules | C
     
-    var filters: js.UndefOr[Projection] = js.native
+    var filters: js.UndefOr[Projection] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var playerData: js.UndefOr[`false` | js.Array[String]] = js.native
+    var playerData: js.UndefOr[`false` | js.Array[String]] = js.undefined
     
-    var pluralLabel: js.UndefOr[String] = js.native
+    var pluralLabel: js.UndefOr[String] = js.undefined
     
-    var removeFields: js.UndefOr[js.Array[Field]] = js.native
+    var removeFields: js.UndefOr[js.Array[Field]] = js.undefined
     
-    var scene: js.UndefOr[user] = js.native
+    var scene: js.UndefOr[user] = js.undefined
   }
   object AposModuleOptions {
     
@@ -720,7 +672,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AposModuleOptionsMutableBuilder[Self <: AposModuleOptions[_], C] (val x: Self with AposModuleOptions[C]) extends AnyVal {
+    implicit class AposModuleOptionsMutableBuilder[Self <: AposModuleOptions[?], C] (val x: Self & AposModuleOptions[C]) extends AnyVal {
       
       @scala.inline
       def setAddFields(value: js.Array[Field]): Self = StObject.set(x, "addFields", value.asInstanceOf[js.Any])
@@ -741,7 +693,7 @@ object mod {
       def setArrangeFieldsVarargs(value: typings.apostrophe.anon.Fields*): Self = StObject.set(x, "arrangeFields", js.Array(value :_*))
       
       @scala.inline
-      def setBeforeConstruct(value: (/* self */ js.Any, /* options */ js.Any) => _): Self = StObject.set(x, "beforeConstruct", js.Any.fromFunction2(value))
+      def setBeforeConstruct(value: (/* self */ js.Any, /* options */ js.Any) => js.Any): Self = StObject.set(x, "beforeConstruct", js.Any.fromFunction2(value))
       
       @scala.inline
       def setBeforeConstructUndefined: Self = StObject.set(x, "beforeConstruct", js.undefined)
@@ -804,18 +756,17 @@ object mod {
   
   type AposObject = StringDictionary[js.Any]
   
-  @js.native
   trait AposType extends StObject {
     
-    var bless: js.UndefOr[js.Function2[/* req */ js.Any, /* field */ js.Any, Unit]] = js.native
+    var bless: js.UndefOr[js.Function2[/* req */ js.Any, /* field */ js.Any, Unit]] = js.undefined
     
-    var converters: Form = js.native
+    var converters: Form
     
-    var empty: js.UndefOr[js.Function2[/* field */ js.Any, /* value */ js.Any, Unit]] = js.native
+    var empty: js.UndefOr[js.Function2[/* field */ js.Any, /* value */ js.Any, Unit]] = js.undefined
     
-    def index(value: js.Any, field: js.Any, texts: js.Any): Unit = js.native
+    def index(value: js.Any, field: js.Any, texts: js.Any): Unit
     
-    var name: String = js.native
+    var name: String
   }
   object AposType {
     
@@ -851,28 +802,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Field extends StObject {
     
-    var choices: js.UndefOr[js.Array[SelectChoice]] = js.native
+    var choices: js.UndefOr[js.Array[SelectChoice]] = js.undefined
     
-    var help: js.UndefOr[String] = js.native
+    var help: js.UndefOr[String] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.UndefOr[AposObject] = js.native
+    var options: js.UndefOr[AposObject] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var schema: js.UndefOr[js.Array[Field]] = js.native
+    var schema: js.UndefOr[js.Array[Field]] = js.undefined
     
-    var titleField: js.UndefOr[String] = js.native
+    var titleField: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var widgetType: js.UndefOr[String] = js.native
+    var widgetType: js.UndefOr[String] = js.undefined
   }
   object Field {
     
@@ -947,18 +897,17 @@ object mod {
   
   type Fields = js.Array[Field]
   
-  @js.native
   trait Schema extends StObject {
     
-    def addFieldType(`type`: AposType): Unit = js.native
+    def addFieldType(`type`: AposType): Unit
     
-    def addFilters(schema: Schema, options: js.Any, cursor: js.Any): Unit = js.native
+    def addFilters(schema: Schema, options: js.Any, cursor: js.Any): Unit
     
-    def addJoinSlugFilter(field: js.Any, cursor: js.Any, suffix: js.Any): Unit = js.native
+    def addJoinSlugFilter(field: js.Any, cursor: js.Any, suffix: js.Any): Unit
     
-    def afterInit(): Unit = js.native
+    def afterInit(): Unit
     
-    def compose(options: AposObject): Unit = js.native
+    def compose(options: AposObject): Unit
     
     def convert(
       req: js.Any,
@@ -966,31 +915,37 @@ object mod {
       to: js.Any,
       `object`: AposObject,
       output: js.Any,
-      callback: js.Function0[_]
-    ): Unit = js.native
+      callback: js.Function0[js.Any]
+    ): Unit
     
-    def createRoutes(): js.Array[_] = js.native
+    def createRoutes(): js.Array[js.Any]
     
-    def cursorFilterInterested(cursor: js.Any, name: String): Unit = js.native
+    def cursorFilterInterested(cursor: js.Any, name: String): Unit
     
-    def empty(schema: Schema, `object`: AposObject): Unit = js.native
+    def empty(schema: Schema, `object`: AposObject): Unit
     
-    def export(
+    def `export`(
       req: js.Any,
       schema: Schema,
       to: js.Any,
       `object`: AposObject,
       output: js.Any,
-      callback: js.Function0[_]
-    ): Unit = js.native
+      callback: js.Function0[js.Any]
+    ): Unit
     
-    def getFieldType(typeName: String): Unit = js.native
+    def getFieldType(typeName: String): Unit
     
-    def indexFields(schema: Schema, `object`: AposObject, texts: js.Any): Unit = js.native
+    def indexFields(schema: Schema, `object`: AposObject, texts: js.Any): Unit
     
-    def isVisible(schema: Schema, `object`: AposObject, name: String): Unit = js.native
+    def isVisible(schema: Schema, `object`: AposObject, name: String): Unit
     
-    def join(req: js.Any, schema: Schema, objectOrArray: js.Any, withJoins: js.Any, callback: js.Function0[_]): Unit = js.native
+    def join(
+      req: js.Any,
+      schema: Schema,
+      objectOrArray: js.Any,
+      withJoins: js.Any,
+      callback: js.Function0[js.Any]
+    ): Unit
     
     def joinDriver(
       req: js.Any,
@@ -1001,30 +956,30 @@ object mod {
       relationshipsField: js.Any,
       objectField: js.Any,
       options: js.Any,
-      callback: js.Function0[_]
-    ): Unit = js.native
+      callback: js.Function0[js.Any]
+    ): Unit
     
-    def joinFilterChoices(field: js.Any, cursor: js.Any, valueField: js.Any): Unit = js.native
+    def joinFilterChoices(field: js.Any, cursor: js.Any, valueField: js.Any): Unit
     
-    def newInstance(schema: Schema): js.Any = js.native
+    def newInstance(schema: Schema): js.Any
     
-    def pageServe(req: js.Any): Unit = js.native
+    def pageServe(req: js.Any): Unit
     
-    def pushAssets(): Unit = js.native
+    def pushAssets(): Unit
     
-    def pushCreateSingleton(): Unit = js.native
+    def pushCreateSingleton(): Unit
     
-    def refine(schema: Schema, options: AposObject): Unit = js.native
+    def refine(schema: Schema, options: AposObject): Unit
     
-    def sortedDistinct(property: js.Any, cursor: js.Any, callback: js.Function0[_]): Unit = js.native
+    def sortedDistinct(property: js.Any, cursor: js.Any, callback: js.Function0[js.Any]): Unit
     
-    def subset(schema: Schema, fields: Fields): Schema = js.native
+    def subset(schema: Schema, fields: Fields): Schema
     
-    def subsetInstance(schema: Schema, instance: AposObject): js.Any = js.native
+    def subsetInstance(schema: Schema, instance: AposObject): js.Any
     
-    def toGroups(fields: Fields): Unit = js.native
+    def toGroups(fields: Fields): Unit
     
-    def validate(schema: Schema, options: js.Any): Unit = js.native
+    def validate(schema: Schema, options: js.Any): Unit
   }
   object Schema {
     
@@ -1035,29 +990,30 @@ object mod {
       addJoinSlugFilter: (js.Any, js.Any, js.Any) => Unit,
       afterInit: () => Unit,
       compose: AposObject => Unit,
-      convert: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_]) => Unit,
-      createRoutes: () => js.Array[_],
+      convert: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit,
+      createRoutes: () => js.Array[js.Any],
       cursorFilterInterested: (js.Any, String) => Unit,
       empty: (Schema, AposObject) => Unit,
-      export: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_]) => Unit,
+      `export`: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit,
       getFieldType: String => Unit,
       indexFields: (Schema, AposObject, js.Any) => Unit,
       isVisible: (Schema, AposObject, String) => Unit,
-      join: (js.Any, Schema, js.Any, js.Any, js.Function0[_]) => Unit,
-      joinDriver: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[_]) => Unit,
+      join: (js.Any, Schema, js.Any, js.Any, js.Function0[js.Any]) => Unit,
+      joinDriver: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[js.Any]) => Unit,
       joinFilterChoices: (js.Any, js.Any, js.Any) => Unit,
       newInstance: Schema => js.Any,
       pageServe: js.Any => Unit,
       pushAssets: () => Unit,
       pushCreateSingleton: () => Unit,
       refine: (Schema, AposObject) => Unit,
-      sortedDistinct: (js.Any, js.Any, js.Function0[_]) => Unit,
+      sortedDistinct: (js.Any, js.Any, js.Function0[js.Any]) => Unit,
       subset: (Schema, Fields) => Schema,
       subsetInstance: (Schema, AposObject) => js.Any,
       toGroups: Fields => Unit,
       validate: (Schema, js.Any) => Unit
     ): Schema = {
-      val __obj = js.Dynamic.literal(addFieldType = js.Any.fromFunction1(addFieldType), addFilters = js.Any.fromFunction3(addFilters), addJoinSlugFilter = js.Any.fromFunction3(addJoinSlugFilter), afterInit = js.Any.fromFunction0(afterInit), compose = js.Any.fromFunction1(compose), convert = js.Any.fromFunction6(convert), createRoutes = js.Any.fromFunction0(createRoutes), cursorFilterInterested = js.Any.fromFunction2(cursorFilterInterested), empty = js.Any.fromFunction2(empty), export = js.Any.fromFunction6(export), getFieldType = js.Any.fromFunction1(getFieldType), indexFields = js.Any.fromFunction3(indexFields), isVisible = js.Any.fromFunction3(isVisible), join = js.Any.fromFunction5(join), joinDriver = js.Any.fromFunction9(joinDriver), joinFilterChoices = js.Any.fromFunction3(joinFilterChoices), newInstance = js.Any.fromFunction1(newInstance), pageServe = js.Any.fromFunction1(pageServe), pushAssets = js.Any.fromFunction0(pushAssets), pushCreateSingleton = js.Any.fromFunction0(pushCreateSingleton), refine = js.Any.fromFunction2(refine), sortedDistinct = js.Any.fromFunction3(sortedDistinct), subset = js.Any.fromFunction2(subset), subsetInstance = js.Any.fromFunction2(subsetInstance), toGroups = js.Any.fromFunction1(toGroups), validate = js.Any.fromFunction2(validate))
+      val __obj = js.Dynamic.literal(addFieldType = js.Any.fromFunction1(addFieldType), addFilters = js.Any.fromFunction3(addFilters), addJoinSlugFilter = js.Any.fromFunction3(addJoinSlugFilter), afterInit = js.Any.fromFunction0(afterInit), compose = js.Any.fromFunction1(compose), convert = js.Any.fromFunction6(convert), createRoutes = js.Any.fromFunction0(createRoutes), cursorFilterInterested = js.Any.fromFunction2(cursorFilterInterested), empty = js.Any.fromFunction2(empty), getFieldType = js.Any.fromFunction1(getFieldType), indexFields = js.Any.fromFunction3(indexFields), isVisible = js.Any.fromFunction3(isVisible), join = js.Any.fromFunction5(join), joinDriver = js.Any.fromFunction9(joinDriver), joinFilterChoices = js.Any.fromFunction3(joinFilterChoices), newInstance = js.Any.fromFunction1(newInstance), pageServe = js.Any.fromFunction1(pageServe), pushAssets = js.Any.fromFunction0(pushAssets), pushCreateSingleton = js.Any.fromFunction0(pushCreateSingleton), refine = js.Any.fromFunction2(refine), sortedDistinct = js.Any.fromFunction3(sortedDistinct), subset = js.Any.fromFunction2(subset), subsetInstance = js.Any.fromFunction2(subsetInstance), toGroups = js.Any.fromFunction1(toGroups), validate = js.Any.fromFunction2(validate))
+      __obj.updateDynamic("export")(js.Any.fromFunction6(`export`))
       __obj.asInstanceOf[Schema]
     }
     
@@ -1080,10 +1036,10 @@ object mod {
       def setCompose(value: AposObject => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setConvert(value: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction6(value))
+      def setConvert(value: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction6(value))
       
       @scala.inline
-      def setCreateRoutes(value: () => js.Array[_]): Self = StObject.set(x, "createRoutes", js.Any.fromFunction0(value))
+      def setCreateRoutes(value: () => js.Array[js.Any]): Self = StObject.set(x, "createRoutes", js.Any.fromFunction0(value))
       
       @scala.inline
       def setCursorFilterInterested(value: (js.Any, String) => Unit): Self = StObject.set(x, "cursorFilterInterested", js.Any.fromFunction2(value))
@@ -1092,7 +1048,7 @@ object mod {
       def setEmpty(value: (Schema, AposObject) => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setExport(value: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction6(value))
+      def setExport(value: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction6(value))
       
       @scala.inline
       def setGetFieldType(value: String => Unit): Self = StObject.set(x, "getFieldType", js.Any.fromFunction1(value))
@@ -1104,10 +1060,12 @@ object mod {
       def setIsVisible(value: (Schema, AposObject, String) => Unit): Self = StObject.set(x, "isVisible", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setJoin(value: (js.Any, Schema, js.Any, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "join", js.Any.fromFunction5(value))
+      def setJoin(value: (js.Any, Schema, js.Any, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "join", js.Any.fromFunction5(value))
       
       @scala.inline
-      def setJoinDriver(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "joinDriver", js.Any.fromFunction9(value))
+      def setJoinDriver(
+        value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[js.Any]) => Unit
+      ): Self = StObject.set(x, "joinDriver", js.Any.fromFunction9(value))
       
       @scala.inline
       def setJoinFilterChoices(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "joinFilterChoices", js.Any.fromFunction3(value))
@@ -1128,7 +1086,7 @@ object mod {
       def setRefine(value: (Schema, AposObject) => Unit): Self = StObject.set(x, "refine", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSortedDistinct(value: (js.Any, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "sortedDistinct", js.Any.fromFunction3(value))
+      def setSortedDistinct(value: (js.Any, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "sortedDistinct", js.Any.fromFunction3(value))
       
       @scala.inline
       def setSubset(value: (Schema, Fields) => Schema): Self = StObject.set(x, "subset", js.Any.fromFunction2(value))
@@ -1144,12 +1102,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SelectChoice extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: String = js.native
+    var value: String
   }
   object SelectChoice {
     

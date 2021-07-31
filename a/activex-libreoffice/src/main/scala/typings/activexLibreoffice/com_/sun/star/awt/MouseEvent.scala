@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XMouseMotionListener
   * @see InputEvent
   */
-@js.native
-trait MouseEvent extends InputEvent {
+trait MouseEvent
+  extends StObject
+     with InputEvent {
   
   /**
     * contains the pressed mouse buttons.
     *
     * Zero ore more constants from the {@link com.sun.star.awt.MouseButton} group.
     */
-  var Buttons: Double = js.native
+  var Buttons: Double
   
   /** contains the number of mouse clicks associated with event. */
-  var ClickCount: Double = js.native
+  var ClickCount: Double
   
   /**
     * specifies if this event is a pop-up menu trigger event.
@@ -36,13 +36,13 @@ trait MouseEvent extends InputEvent {
     * by pressing the operating-system dependent key combination for this purpose.
     * @see XMouseListener.mousePressed
     */
-  var PopupTrigger: Boolean = js.native
+  var PopupTrigger: Boolean
   
   /** contains the x coordinate location of the mouse. */
-  var X: Double = js.native
+  var X: Double
   
   /** contains the y coordinate location of the mouse. */
-  var Y: Double = js.native
+  var Y: Double
 }
 object MouseEvent {
   

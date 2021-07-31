@@ -5,7 +5,6 @@ import typings.instagramPrivateApi.igResponseErrorMod.IgResponseError
 import typings.instagramPrivateApi.spamResponseMod.SpamResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igActionSpamErrorMod {

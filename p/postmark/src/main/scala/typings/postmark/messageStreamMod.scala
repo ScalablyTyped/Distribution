@@ -2,7 +2,6 @@ package typings.postmark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageStreamMod {
@@ -26,36 +25,35 @@ object messageStreamMod {
   @js.native
   class UpdateMessageStreamRequest () extends StObject {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], description: String) = this()
     def this(name: String, description: String) = this()
+    def this(name: Unit, description: String) = this()
     
     var Description: js.UndefOr[String] = js.native
     
     var Name: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait MessageStream extends StObject {
     
-    var ArchivedAt: js.UndefOr[String] = js.native
+    var ArchivedAt: js.UndefOr[String] = js.undefined
     
-    var CreatedAt: String = js.native
+    var CreatedAt: String
     
-    var Description: String = js.native
+    var Description: String
     
-    var ExpectedPurgeDate: js.UndefOr[String] = js.native
+    var ExpectedPurgeDate: js.UndefOr[String] = js.undefined
     
-    var ID: String = js.native
+    var ID: String
     
-    var MessageStreamType: String = js.native
+    var MessageStreamType: String
     
-    var Name: String = js.native
+    var Name: String
     
-    var ServerID: Double = js.native
+    var ServerID: Double
     
-    var SubscriptionManagementConfiguration: typings.postmark.messageStreamMod.SubscriptionManagementConfiguration = js.native
+    var SubscriptionManagementConfiguration: typings.postmark.messageStreamMod.SubscriptionManagementConfiguration
     
-    var UpdatedAt: js.UndefOr[String] = js.native
+    var UpdatedAt: js.UndefOr[String] = js.undefined
   }
   object MessageStream {
     
@@ -117,14 +115,13 @@ object messageStreamMod {
     }
   }
   
-  @js.native
   trait MessageStreamArchiveResponse extends StObject {
     
-    var ExpectedPurgeDate: String = js.native
+    var ExpectedPurgeDate: String
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var ServerID: Double = js.native
+    var ServerID: Double
   }
   object MessageStreamArchiveResponse {
     
@@ -148,28 +145,27 @@ object messageStreamMod {
     }
   }
   
-  @js.native
   trait MessageStreamUnarchiveResponse extends StObject {
     
-    var ArchivedAt: js.UndefOr[Null] = js.native
+    var ArchivedAt: js.UndefOr[Null] = js.undefined
     
-    var CreatedAt: String = js.native
+    var CreatedAt: String
     
-    var Description: String = js.native
+    var Description: String
     
-    var ExpectedPurgeDate: js.UndefOr[String] = js.native
+    var ExpectedPurgeDate: js.UndefOr[String] = js.undefined
     
-    var ID: String = js.native
+    var ID: String
     
-    var MessageStreamType: String = js.native
+    var MessageStreamType: String
     
-    var Name: String = js.native
+    var Name: String
     
-    var ServerID: Double = js.native
+    var ServerID: Double
     
-    var SubscriptionManagementConfiguration: typings.postmark.messageStreamMod.SubscriptionManagementConfiguration = js.native
+    var SubscriptionManagementConfiguration: typings.postmark.messageStreamMod.SubscriptionManagementConfiguration
     
-    var UpdatedAt: js.UndefOr[String] = js.native
+    var UpdatedAt: js.UndefOr[String] = js.undefined
   }
   object MessageStreamUnarchiveResponse {
     
@@ -225,12 +221,11 @@ object messageStreamMod {
     }
   }
   
-  @js.native
   trait MessageStreams extends StObject {
     
-    var MessageStreams: js.Array[MessageStream] = js.native
+    var MessageStreams: js.Array[MessageStream]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object MessageStreams {
     
@@ -254,10 +249,9 @@ object messageStreamMod {
     }
   }
   
-  @js.native
   trait SubscriptionManagementConfiguration extends StObject {
     
-    var UnsubscribeHandlingType: String = js.native
+    var UnsubscribeHandlingType: String
   }
   object SubscriptionManagementConfiguration {
     

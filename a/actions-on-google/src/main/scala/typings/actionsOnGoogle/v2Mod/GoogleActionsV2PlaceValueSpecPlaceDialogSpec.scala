@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2PlaceValueSpecPlaceDialogSpec extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait GoogleActionsV2PlaceValueSpecPlaceDialogSpec extends StObject {
     * juice stores*, I just need to check your location. Can I get that from
     * Google?\". The first part of this permission prompt is configurable.
     */
-  var permissionContext: js.UndefOr[String] = js.native
+  var permissionContext: js.UndefOr[String] = js.undefined
   
   /**
     * This is the initial prompt by AskForPlace sub-dialog. For example \"What
     * place do you want?\"
     */
-  var requestPrompt: js.UndefOr[String] = js.native
+  var requestPrompt: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2PlaceValueSpecPlaceDialogSpec {
   

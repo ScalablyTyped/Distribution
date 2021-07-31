@@ -2,42 +2,48 @@ package typings.pProps
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.pProps.pPropsStrings.^
 import typings.std.Map
 import typings.std.ReadonlyMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^ with TopLevel[js.Any]
-  ] = js.native
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: js.UndefOr[scala.Nothing], options: Options): js.Promise[
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^ with TopLevel[js.Any]
-  ] = js.native
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ]]
+  @scala.inline
+  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Unit, options: Options): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof InputType ]: MappedValueType}
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof InputType ]: MappedValueType}
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ]]
+  @scala.inline
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType]
   ): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^ with TopLevel[js.Any]
-  ] = js.native
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof InputType ]: MappedValueType}
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ]]
+  @scala.inline
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType],
@@ -45,8 +51,12 @@ object mod {
   ): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
-    */ ^ with TopLevel[js.Any]
-  ] = js.native
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof InputType ]: MappedValueType}
+    */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
+  ]]
   /**
   Like [`Promise.all()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) but for `Map` and `Object`.
   @param map - Resolves entry values that are promises. Other values are passed through.
@@ -78,35 +88,35 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType]
-  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Map[KeyType, MappedValueType]] = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  @scala.inline
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
-    mapper: js.UndefOr[scala.Nothing],
+    mapper: Unit,
     options: Options
-  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  @scala.inline
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
-  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
-  @JSImport("p-props", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  @scala.inline
   def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType],
     options: Options
-  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
+  
+  @JSImport("p-props", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type Mapper[ValueType, KeyType, MappedValueType] = js.Function2[
     /* value */ ValueType, 

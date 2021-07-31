@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Contains limited user information for developer callbacks.
   */
-@js.native
 trait IntermediatePaymentData extends StObject {
   
   /**
     * Indicate the changing field that triggers the callback.
     */
-  var callbackTrigger: js.Array[CallbackTrigger] = js.native
+  var callbackTrigger: js.Array[CallbackTrigger]
   
   /**
     * Contains limited data for user selected card information.
     */
-  var paymentMethodData: IntermediatePaymentMethodData = js.native
+  var paymentMethodData: IntermediatePaymentMethodData
   
   /**
     * Contains limited data for user selected shipping address information.
     */
-  var shippingAddress: js.UndefOr[IntermediateAddress] = js.native
+  var shippingAddress: js.UndefOr[IntermediateAddress] = js.undefined
   
   /**
     * Contains the data for shipping option selected by the user.
     */
-  var shippingOptionData: js.UndefOr[SelectionOptionData] = js.native
+  var shippingOptionData: js.UndefOr[SelectionOptionData] = js.undefined
 }
 object IntermediatePaymentData {
   

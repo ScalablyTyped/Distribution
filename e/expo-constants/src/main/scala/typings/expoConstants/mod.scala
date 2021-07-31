@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.expoConstants.constantsTypesMod.Constants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,13 +17,13 @@ object mod extends Shortcut {
   object AppOwnership extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.AppOwnership with String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.AppOwnership & String] = js.native
     
-    /* "expo" */ val Expo: typings.expoConstants.constantsTypesMod.AppOwnership.Expo with String = js.native
+    /* "expo" */ val Expo: typings.expoConstants.constantsTypesMod.AppOwnership.Expo & String = js.native
     
-    /* "guest" */ val Guest: typings.expoConstants.constantsTypesMod.AppOwnership.Guest with String = js.native
+    /* "guest" */ val Guest: typings.expoConstants.constantsTypesMod.AppOwnership.Guest & String = js.native
     
-    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.AppOwnership.Standalone with String = js.native
+    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.AppOwnership.Standalone & String = js.native
   }
   
   @JSImport("expo-constants", "UserInterfaceIdiom")
@@ -32,13 +31,13 @@ object mod extends Shortcut {
   object UserInterfaceIdiom extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.UserInterfaceIdiom with String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.UserInterfaceIdiom & String] = js.native
     
-    /* "handset" */ val Handset: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Handset with String = js.native
+    /* "handset" */ val Handset: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Handset & String = js.native
     
-    /* "tablet" */ val Tablet: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Tablet with String = js.native
+    /* "tablet" */ val Tablet: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Tablet & String = js.native
     
-    /* "unsupported" */ val Unsupported: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Unsupported with String = js.native
+    /* "unsupported" */ val Unsupported: typings.expoConstants.constantsTypesMod.UserInterfaceIdiom.Unsupported & String = js.native
   }
   
   type _To = Constants

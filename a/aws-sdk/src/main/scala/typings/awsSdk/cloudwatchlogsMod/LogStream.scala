@@ -2,51 +2,49 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogStream extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the log stream.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The creation time of the stream, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time of the first event, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var firstEventTimestamp: js.UndefOr[Timestamp] = js.native
+  var firstEventTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time of the most recent log event in the log stream in CloudWatch Logs. This number is expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. The lastEventTime value updates on an eventual consistency basis. It typically updates in less than an hour from ingestion, but in rare situations might take longer.
     */
-  var lastEventTimestamp: js.UndefOr[Timestamp] = js.native
+  var lastEventTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The ingestion time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var lastIngestionTime: js.UndefOr[Timestamp] = js.native
+  var lastIngestionTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the log stream.
     */
-  var logStreamName: js.UndefOr[LogStreamName] = js.native
+  var logStreamName: js.UndefOr[LogStreamName] = js.undefined
   
   /**
     * The number of bytes stored.  Important: On June 17, 2019, this parameter was deprecated for log streams, and is always reported as zero. This change applies only to log streams. The storedBytes parameter for log groups is not affected.
     */
-  var storedBytes: js.UndefOr[StoredBytes] = js.native
+  var storedBytes: js.UndefOr[StoredBytes] = js.undefined
   
   /**
     * The sequence token.
     */
-  var uploadSequenceToken: js.UndefOr[SequenceToken] = js.native
+  var uploadSequenceToken: js.UndefOr[SequenceToken] = js.undefined
 }
 object LogStream {
   

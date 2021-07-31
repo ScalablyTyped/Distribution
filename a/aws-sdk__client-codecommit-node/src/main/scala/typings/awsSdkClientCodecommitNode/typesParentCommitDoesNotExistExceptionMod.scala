@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.deleteFileExceptionsUnionMod.DeleteFil
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesParentCommitDoesNotExistExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ParentCommitDoesNotExistExceptionDetails> * / any */ @js.native
-  trait ParentCommitDoesNotExistException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ParentCommitDoesNotExistExceptionDetails> * / any */ trait ParentCommitDoesNotExistException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitDoesNotExistException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitDoesNotExistException
   }
   object ParentCommitDoesNotExistException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitDoesNotExistException
-    ): ParentCommitDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ParentCommitDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "ParentCommitDoesNotExistException")
       __obj.asInstanceOf[ParentCommitDoesNotExistException]
     }
     
@@ -37,6 +34,5 @@ object typesParentCommitDoesNotExistExceptionMod {
     }
   }
   
-  @js.native
   trait ParentCommitDoesNotExistExceptionDetails extends StObject
 }

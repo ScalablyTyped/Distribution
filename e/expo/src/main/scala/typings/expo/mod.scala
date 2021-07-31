@@ -4,10 +4,13 @@ import typings.expo.appLoadingMod.default
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("expo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo", "AppLoading")
   @js.native
@@ -19,20 +22,20 @@ object mod {
   
   object Logs {
     
-    @JSImport("expo", "Logs.disableExpoCliLogging")
+    @JSImport("expo", "Logs")
     @js.native
-    def disableExpoCliLogging(): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expo", "Logs.enableExpoCliLogging")
-    @js.native
-    def enableExpoCliLogging(): Unit = js.native
+    @scala.inline
+    def disableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableExpoCliLogging")().asInstanceOf[Unit]
+    
+    @scala.inline
+    def enableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableExpoCliLogging")().asInstanceOf[Unit]
   }
   
-  @JSImport("expo", "apisAreAvailable")
-  @js.native
-  def apisAreAvailable(): Boolean = js.native
+  @scala.inline
+  def apisAreAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("apisAreAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("expo", "registerRootComponent")
-  @js.native
-  def registerRootComponent[P](component: ComponentType[P]): Unit = js.native
+  @scala.inline
+  def registerRootComponent[P](component: ComponentType[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRootComponent")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

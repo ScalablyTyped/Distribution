@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSNullKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSNullKeyword_
-  extends TSBaseType
+- typings.babelTypes.mod._Node because Already inherited */ trait TSNullKeyword_
+  extends StObject
      with BaseNode
+     with TSBaseType
      with TSType {
   
   @JSName("type")
-  var type_TSNullKeyword_ : TSNullKeyword = js.native
+  var type_TSNullKeyword_ : TSNullKeyword
 }
 object TSNullKeyword_ {
   
   @scala.inline
-  def apply(`type`: TSNullKeyword): TSNullKeyword_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): TSNullKeyword_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSNullKeyword")
     __obj.asInstanceOf[TSNullKeyword_]
   }
   

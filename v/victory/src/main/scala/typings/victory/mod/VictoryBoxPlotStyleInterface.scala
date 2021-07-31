@@ -2,31 +2,31 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryBoxPlotStyleInterface extends VictoryStyleInterface {
+trait VictoryBoxPlotStyleInterface
+  extends StObject
+     with VictoryStyleInterface {
   
-  var max: js.UndefOr[VictoryStyleObject] = js.native
+  var max: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var maxLabels: js.UndefOr[VictoryStyleObject] = js.native
+  var maxLabels: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var median: js.UndefOr[VictoryStyleObject] = js.native
+  var median: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var medianLabels: js.UndefOr[VictoryStyleObject] = js.native
+  var medianLabels: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var min: js.UndefOr[VictoryStyleObject] = js.native
+  var min: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var minLabels: js.UndefOr[VictoryStyleObject] = js.native
+  var minLabels: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var q1: js.UndefOr[VictoryStyleObject] = js.native
+  var q1: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var q1Labels: js.UndefOr[VictoryStyleObject] = js.native
+  var q1Labels: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var q3: js.UndefOr[VictoryStyleObject] = js.native
+  var q3: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var q3Labels: js.UndefOr[VictoryStyleObject] = js.native
+  var q3Labels: js.UndefOr[VictoryStyleObject] = js.undefined
 }
 object VictoryBoxPlotStyleInterface {
   

@@ -3,7 +3,6 @@ package typings.guacamoleClient.mod
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "AudioRecorder")
@@ -12,6 +11,10 @@ class AudioRecorder ()
   extends typings.guacamoleClient.audioRecorderMod.AudioRecorder
 /* static members */
 object AudioRecorder {
+  
+  @JSImport("guacamole-client", "AudioRecorder")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns an instance of Guacamole.AudioRecorder providing support for the
@@ -24,9 +27,8 @@ object AudioRecorder {
     * @return A Guacamole.AudioRecorder instance supporting the given mimetype and
     * writing to the given stream, or null if support for the given mimetype is absent.
     */
-  @JSImport("guacamole-client", "AudioRecorder.getInstance")
-  @js.native
-  def getInstance(stream: typings.guacamoleClient.outputStreamMod.OutputStream, mimetype: Mimetype): typings.guacamoleClient.audioRecorderMod.AudioRecorder | Null = js.native
+  @scala.inline
+  def getInstance(stream: typings.guacamoleClient.outputStreamMod.OutputStream, mimetype: Mimetype): typings.guacamoleClient.audioRecorderMod.AudioRecorder | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[typings.guacamoleClient.audioRecorderMod.AudioRecorder | Null]
   
   /**
     * Returns a list of all mimetypes supported by any built-in
@@ -40,9 +42,8 @@ object AudioRecorder {
     * A list of all mimetypes supported by any built-in
     * Guacamole.AudioRecorder, excluding any parameters.
     */
-  @JSImport("guacamole-client", "AudioRecorder.getSupportedTypes")
-  @js.native
-  def getSupportedTypes(): js.Array[String] = js.native
+  @scala.inline
+  def getSupportedTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[String]]
   
   /**
     * Determines whether the given mimetype is supported by any built-in
@@ -53,7 +54,6 @@ object AudioRecorder {
     *
     * @returns true if the given mimetype is supported by any built-in Guacamole.AudioRecorder, false otherwise.
     */
-  @JSImport("guacamole-client", "AudioRecorder.isSupportedType")
-  @js.native
-  def isSupportedType(mimetype: Mimetype): Boolean = js.native
+  @scala.inline
+  def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

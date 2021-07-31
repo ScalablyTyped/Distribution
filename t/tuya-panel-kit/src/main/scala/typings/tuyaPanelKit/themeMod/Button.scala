@@ -2,28 +2,26 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.ButtonTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.ButtonTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.ButtonTheme> */
-@js.native
 trait Button extends StObject {
   
-  var bgHeight: js.UndefOr[Double | Null] = js.native
+  var bgHeight: js.UndefOr[Double | Null] = js.undefined
   
-  var bgRadius: js.UndefOr[Double | Null] = js.native
+  var bgRadius: js.UndefOr[Double | Null] = js.undefined
   
-  var bgWidth: js.UndefOr[Double | Null] = js.native
+  var bgWidth: js.UndefOr[Double | Null] = js.undefined
   
-  var dark: ButtonTheme = js.native
+  var dark: ButtonTheme
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
-  var light: ButtonTheme = js.native
+  var light: ButtonTheme
   
-  var margin: js.UndefOr[js.Array[Double]] = js.native
+  var margin: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Button {
   

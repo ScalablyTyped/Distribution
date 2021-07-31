@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event indicating a received message or truncation event.
   */
-@js.native
 trait SchemaPubsubEvent extends StObject {
   
   /**
@@ -16,22 +14,22 @@ trait SchemaPubsubEvent extends StObject {
     * subscribers will always receive NOT_FOUND in response in their pull
     * request on the subscription, rather than seeing this boolean.)
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A received message.
     */
-  var message: js.UndefOr[SchemaPubsubMessage] = js.native
+  var message: js.UndefOr[SchemaPubsubMessage] = js.undefined
   
   /**
     * The subscription that received the event.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that this subscription has been truncated.
     */
-  var truncated: js.UndefOr[Boolean] = js.native
+  var truncated: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPubsubEvent {
   

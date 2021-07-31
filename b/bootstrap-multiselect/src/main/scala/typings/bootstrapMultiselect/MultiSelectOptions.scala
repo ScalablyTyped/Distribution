@@ -10,16 +10,14 @@ import typings.std.HTMLOptionsCollection
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiSelectOptions extends StObject {
   
   /**
     * allSelectedText is the text displayed if all options are selected. You can disable displaying the allSelectedText by setting it to false.
     */
-  var allSelectedText: js.UndefOr[String | Boolean] = js.native
+  var allSelectedText: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * The class of the multiselect button.
@@ -28,7 +26,7 @@ trait MultiSelectOptions extends StObject {
     *      buttonClass: 'btn btn-link'
     *   });
     */
-  var buttonClass: js.UndefOr[String] = js.native
+  var buttonClass: js.UndefOr[String] = js.undefined
   
   /**
     * The container holding both the button as well as the dropdown.
@@ -37,7 +35,7 @@ trait MultiSelectOptions extends StObject {
     *       buttonContainer: '<div class="btn-group" />'
     *   });
     */
-  var buttonContainer: js.UndefOr[String] = js.native
+  var buttonContainer: js.UndefOr[String] = js.undefined
   
   /**
     * A callback specifying the text shown on the button dependent on the currently selected options.
@@ -50,7 +48,7 @@ trait MultiSelectOptions extends StObject {
     */
   var buttonText: js.UndefOr[
     js.Function2[/* options */ HTMLOptionsCollection, /* select */ HTMLSelectElement, String]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A callback specifying the title of the button.
@@ -62,7 +60,7 @@ trait MultiSelectOptions extends StObject {
     */
   var buttonTitle: js.UndefOr[
     js.Function2[/* options */ js.Array[HTMLOptionElement], /* select */ HTMLSelectElement, String]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The width of the multiselect button may be fixed using this option.
@@ -72,79 +70,79 @@ trait MultiSelectOptions extends StObject {
     *       buttonWidth: '400px'
     *   });
     */
-  var buttonWidth: js.UndefOr[String] = js.native
+  var buttonWidth: js.UndefOr[String] = js.undefined
   
   /**
     * The name used for the generated checkboxes.
     * See {@link https://davidstutz.github.io/bootstrap-multiselect/#post|Server-Side Processing} for details.
     */
-  var checkboxName: js.UndefOr[String] = js.native
+  var checkboxName: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the separator for the list of selected items for mouse-over. Defaults to ', '. Set to '\n' for a neater display.
     */
-  var delimiterText: js.UndefOr[String] = js.native
+  var delimiterText: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, the multiselect will be disabled if no options are given.
     */
-  var disableIfEmpty: js.UndefOr[Boolean] = js.native
+  var disableIfEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text shown if the multiselect is disabled.
     * Note that this option is set to the empty string '' by default,
     * that is nonSelectedText is shown if the multiselect is disabled and no options are selected.
     */
-  var disabledText: js.UndefOr[String] = js.native
+  var disabledText: js.UndefOr[String] = js.undefined
   
   /**
     * The dropdown can also be dropped right.
     */
-  var dropRight: js.UndefOr[Boolean] = js.native
+  var dropRight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The dropdown can also be dropped up. Note that it is recommended to also set {@link maxHeight}.
     * The plugin calculates the necessary height of the dropdown and takes the minimum of the calculated value and maxHeight.
     */
-  var dropUp: js.UndefOr[Boolean] = js.native
+  var dropUp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The filter as configured above will use case sensitive filtering.
     * by setting enableCaseInsensitiveFiltering to true this behavior can be changed to use case insensitive filtering.
     */
-  var enableCaseInsensitiveFiltering: js.UndefOr[Boolean] = js.native
+  var enableCaseInsensitiveFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, optgroup's will be clickable, allowing to easily select multiple options belonging to the same group.
     * enableClickableOptGroups is not available in single selection mode, i.e. when the multiple attribute is not present.
     * When using selectedClass, the selected classes are also applied on the option groups.
     */
-  var enableClickableOptGroups: js.UndefOr[Boolean] = js.native
+  var enableClickableOptGroups: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, optgroup's will be collapsible.
     */
-  var enableCollapsibleOptGroups: js.UndefOr[Boolean] = js.native
+  var enableCollapsibleOptGroups: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true or false to enable or disable the filter. A filter input will be added to dynamically filter all options.
     */
-  var enableFiltering: js.UndefOr[Boolean] = js.native
+  var enableFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true to enable full value filtering, that is all options are shown where the query is a prefix of.
     */
-  var enableFullValueFiltering: js.UndefOr[Boolean] = js.native
+  var enableFullValueFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * XSS injection is a serious threat for all modern web applications. Setting enableHTML to false (default setting) will create a XSS safe multiselect.
     */
-  var enableHTML: js.UndefOr[Boolean] = js.native
+  var enableHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The options are filtered based on their text. This behavior can be changed to use the value of the options or both the text and the value.
     */
-  var filterBehavior: js.UndefOr[text | value | both] = js.native
+  var filterBehavior: js.UndefOr[text | value | both] = js.undefined
   
   /**
     * The placeholder used for the filter input.
@@ -153,37 +151,37 @@ trait MultiSelectOptions extends StObject {
     *        filterPlaceholder: 'Search for something...'
     *   });
     */
-  var filterPlaceholder: js.UndefOr[String] = js.native
+  var filterPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     *  Set to true or false to enable or disable the select all option.
     */
-  var includeSelectAllOption: js.UndefOr[Boolean] = js.native
+  var includeSelectAllOption: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Inherit the class of the button from the original select.
     */
-  var inheritClass: js.UndefOr[Boolean] = js.native
+  var inheritClass: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum height of the dropdown. This is useful when using the plugin with plenty of options.
     */
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The text displayed if more than  {@link numberDisplayed} options are selected. This option is used by the default buttonText and buttonTitle callbacks.
     */
-  var nSelectedText: js.UndefOr[String] = js.native
+  var nSelectedText: js.UndefOr[String] = js.undefined
   
   /**
     * The text displayed when no option is selected. This option is used in the default buttonText and buttonTitle functions.
     */
-  var nonSelectedText: js.UndefOr[String] = js.native
+  var nonSelectedText: js.UndefOr[String] = js.undefined
   
   /**
     * This option is used by the buttonText and buttonTitle functions to determine of too much options would be displayed.
     */
-  var numberDisplayed: js.UndefOr[Double] = js.native
+  var numberDisplayed: js.UndefOr[Double] = js.undefined
   
   /**
     * A function which is triggered on the change event of the options.
@@ -191,7 +189,7 @@ trait MultiSelectOptions extends StObject {
     * @param option The option item that was changed, wrapped in a JQuery object.
     * @param checked Whether the checkbox was checked or not.
     */
-  var onChange: js.UndefOr[js.Function2[/* option */ JQuery, /* checked */ Boolean, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function2[/* option */ JQuery, /* checked */ Boolean, Unit]] = js.undefined
   
   /**
     * This function is triggered when the select all option is used to deselect all options.
@@ -200,36 +198,36 @@ trait MultiSelectOptions extends StObject {
     * The onDeselectAll option is only triggered if the select all option was unchecked.
     * it is not triggered if all options were unchecked manually (causing the select all option to be unchecked as well).
     */
-  var onDeselectAll: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDeselectAll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * A callback called after the dropdown has been closed.
     * The onDropdownHidden option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownHidden: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onDropdownHidden: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
   /**
     * A callback called when the dropdown is closed.
     * The onDropdownHide option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownHide: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onDropdownHide: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
   /**
     * A callback called when the dropdown is shown.
     * The onDropdownShow option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownShow: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onDropdownShow: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
   /**
     * A callback called after the dropdown has been shown.
     * The onDropdownShown option is not available when using Twitter Bootstrap 2.3.
     */
-  var onDropdownShown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onDropdownShown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
   /**
     * A function which is triggered when the multiselect is finished initializing.
     */
-  var onInitialized: js.UndefOr[js.Function2[/* select */ HTMLSelectElement, /* container */ HTMLElement, Unit]] = js.native
+  var onInitialized: js.UndefOr[js.Function2[/* select */ HTMLSelectElement, /* container */ HTMLElement, Unit]] = js.undefined
   
   /**
     * This function is triggered when the select all option is used to select all options.
@@ -238,55 +236,55 @@ trait MultiSelectOptions extends StObject {
     * The onSelectAll option is only triggered if the select all option was checked.
     * it is not triggered if all options were checked manually (causing the select all option to be checked as well).
     */
-  var onSelectAll: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSelectAll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * A callback used to define the classes for the li elements containing checkboxes and labels.
     */
-  var optionClass: js.UndefOr[js.Function1[/* element */ HTMLElement, String]] = js.native
+  var optionClass: js.UndefOr[js.Function1[/* element */ HTMLElement, String]] = js.undefined
   
   /**
     * A callback used to define the labels of the options.
     */
-  var optionLabel: js.UndefOr[js.Function1[/* element */ HTMLElement, String]] = js.native
+  var optionLabel: js.UndefOr[js.Function1[/* element */ HTMLElement, String]] = js.undefined
   
   /**
     * Setting both {@link includeSelectAllOption} and {@link enableFiltering} to true, the select all option does always select only the visible option.
     * With setting selectAllJustVisible to false this behavior is changed such that always all options (irrespective of whether they are visible) are selected.
     */
-  var selectAllJustVisible: js.UndefOr[Boolean] = js.native
+  var selectAllJustVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option allows to control the name given to the select all option.
     * See {@link https://davidstutz.github.io/bootstrap-multiselect/#post|Server-Side Processing} for more details.
     */
-  var selectAllName: js.UndefOr[String] = js.native
+  var selectAllName: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true (default), the number of selected options will be shown in parantheses when all options are seleted.
     */
-  var selectAllNumber: js.UndefOr[Boolean] = js.native
+  var selectAllNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text displayed for the select all option.
     */
-  var selectAllText: js.UndefOr[String] = js.native
+  var selectAllText: js.UndefOr[String] = js.undefined
   
   /**
     * The select all option is added as additional option within the select.
     * To distinguish this option from the original options the value used for the select all option can be configured using the selectAllValue option.
     */
-  var selectAllValue: js.UndefOr[String | Double] = js.native
+  var selectAllValue: js.UndefOr[String | Double] = js.undefined
   
   /**
     * The class(es) applied on selected options.
     */
-  var selectedClass: js.UndefOr[String] = js.native
+  var selectedClass: js.UndefOr[String] = js.undefined
   
   /**
     * The generated HTML markup can be controlled using templates. Basically, templates are simple configuration options.
     */
-  var templates: js.UndefOr[Templates] = js.native
+  var templates: js.UndefOr[Templates] = js.undefined
 }
 object MultiSelectOptions {
   

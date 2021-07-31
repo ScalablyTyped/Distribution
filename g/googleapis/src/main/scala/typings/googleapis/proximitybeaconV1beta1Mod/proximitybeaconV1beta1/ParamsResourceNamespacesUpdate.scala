@@ -6,34 +6,34 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceNamespacesUpdate extends StandardParameters {
+trait ParamsResourceNamespacesUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Resource name of this namespace. Namespaces names have the format:
     * <code>namespaces/<var>namespace</var></code>.
     */
-  var namespaceName: js.UndefOr[String] = js.native
+  var namespaceName: js.UndefOr[String] = js.undefined
   
   /**
     * The project id of the namespace to update. If the project id is not
     * specified then the project making the request is used. The project id
     * must match the project that owns the beacon. Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaNamespace] = js.native
+  var requestBody: js.UndefOr[SchemaNamespace] = js.undefined
 }
 object ParamsResourceNamespacesUpdate {
   

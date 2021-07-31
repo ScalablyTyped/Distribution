@@ -8,29 +8,28 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.definitionchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Lets you add and remove folders from a library like Music or Videos and lets you get a list of folders included in the library. */
 @js.native
 trait StorageLibrary extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, _]): Unit = js.native
+  def addEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, js.Any]): Unit = js.native
   
   /** Gets the folders in the current library. */
   var folders: IObservableVector[StorageFolder] = js.native
   
   /** Occurs when the list of folders in the current library changes. */
-  def ondefinitionchanged(ev: js.Any with WinRTEvent[StorageLibrary]): Unit = js.native
+  def ondefinitionchanged(ev: js.Any & WinRTEvent[StorageLibrary]): Unit = js.native
   /** Occurs when the list of folders in the current library changes. */
   @JSName("ondefinitionchanged")
-  var ondefinitionchanged_Original: TypedEventHandler[StorageLibrary, _] = js.native
+  var ondefinitionchanged_Original: TypedEventHandler[StorageLibrary, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, _]): Unit = js.native
+  def removeEventListener_definitionchanged(`type`: definitionchanged, listener: TypedEventHandler[StorageLibrary, js.Any]): Unit = js.native
   
   /**
     * Prompts the user to select a folder, and then adds the folder to the library.

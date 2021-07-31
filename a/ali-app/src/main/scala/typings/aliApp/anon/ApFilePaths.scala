@@ -2,16 +2,14 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApFilePaths extends StObject {
   
   /**
     * 图片文件描述
     */
-  var apFilePaths: js.Array[String] = js.native
+  var apFilePaths: js.Array[String]
 }
 object ApFilePaths {
   

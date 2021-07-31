@@ -1,33 +1,45 @@
 package typings.wonderJs
 
 import typings.wonderJs.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/structure/Color", JSImport.Namespace)
-@js.native
-object colorMod extends js.Object {
+object colorMod {
+  
+  @JSImport("wonder.js/dist/es2015/structure/Color", "Color")
   @js.native
-  class Color () extends js.Object {
+  class Color () extends StObject {
+    
     var a: Double = js.native
+    
     var b: Double = js.native
+    
     var dirty: Boolean = js.native
+    
     var g: Double = js.native
-    var r: Double = js.native
+    
     def initWhenCreate(): Unit = js.native
     def initWhenCreate(colorVal: String): Unit = js.native
+    
     def isEqual(color: Color): Boolean = js.native
+    
+    var r: Double = js.native
+    
     def toVector3(): Vector3 = js.native
+    
     def toVector4(): js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object Color extends js.Object {
-    def create(): Color = js.native
-    def create(colorVal: String): Color = js.native
+  object Color {
+    
+    @JSImport("wonder.js/dist/es2015/structure/Color", "Color")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Color]
+    @scala.inline
+    def create(colorVal: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(colorVal.asInstanceOf[js.Any]).asInstanceOf[Color]
   }
-  
 }
-

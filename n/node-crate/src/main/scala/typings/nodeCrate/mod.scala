@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -79,18 +78,17 @@ object mod extends Shortcut {
     def update(tableName: String, data: js.Object, where: String): js.Promise[DBResultObject] = js.native
   }
   
-  @js.native
   trait DBResultObject extends StObject {
     
-    var cols: js.Array[String] = js.native
+    var cols: js.Array[String]
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var json: js.Array[js.Object] = js.native
+    var json: js.Array[js.Object]
     
-    var rowcount: Double = js.native
+    var rowcount: Double
     
-    var rows: js.Array[js.Array[js.Object]] = js.native
+    var rows: js.Array[js.Array[js.Object]]
   }
   object DBResultObject {
     

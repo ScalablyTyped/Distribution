@@ -4,28 +4,26 @@ import typings.awsSdkClientCodecommitNode.typesMergeMetadataMod.MergeMetadata
 import typings.awsSdkClientCodecommitNode.typesMergeMetadataMod.UnmarshalledMergeMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestMergedStateChangedEventMetadataMod {
   
-  @js.native
   trait PullRequestMergedStateChangedEventMetadata extends StObject {
     
     /**
       * <p>The name of the branch that the pull request will be merged into.</p>
       */
-    var destinationReference: js.UndefOr[String] = js.native
+    var destinationReference: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Information about the merge state change event.</p>
       */
-    var mergeMetadata: js.UndefOr[MergeMetadata] = js.native
+    var mergeMetadata: js.UndefOr[MergeMetadata] = js.undefined
     
     /**
       * <p>The name of the repository where the pull request was created.</p>
       */
-    var repositoryName: js.UndefOr[String] = js.native
+    var repositoryName: js.UndefOr[String] = js.undefined
   }
   object PullRequestMergedStateChangedEventMetadata {
     
@@ -58,14 +56,15 @@ object typesPullRequestMergedStateChangedEventMetadataMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledPullRequestMergedStateChangedEventMetadata extends PullRequestMergedStateChangedEventMetadata {
+  trait UnmarshalledPullRequestMergedStateChangedEventMetadata
+    extends StObject
+       with PullRequestMergedStateChangedEventMetadata {
     
     /**
       * <p>Information about the merge state change event.</p>
       */
     @JSName("mergeMetadata")
-    var mergeMetadata_UnmarshalledPullRequestMergedStateChangedEventMetadata: js.UndefOr[UnmarshalledMergeMetadata] = js.native
+    var mergeMetadata_UnmarshalledPullRequestMergedStateChangedEventMetadata: js.UndefOr[UnmarshalledMergeMetadata] = js.undefined
   }
   object UnmarshalledPullRequestMergedStateChangedEventMetadata {
     

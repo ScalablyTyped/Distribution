@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.applicationloadbalancing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetListenerDefaultActionRedirect extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var path: String = js.native
+  var path: String
   
   /**
     * The port of the listener. Required if `arn` is not set.
     */
-  var port: String = js.native
+  var port: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var query: String = js.native
+  var query: String
   
-  var statusCode: String = js.native
+  var statusCode: String
 }
 object GetListenerDefaultActionRedirect {
   

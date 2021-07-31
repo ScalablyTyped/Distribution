@@ -2,39 +2,57 @@ package typings.levenshtein
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("levenshtein", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Levenshtein {
+  class ^ protected ()
+    extends StObject
+       with Levenshtein {
     /**
       * Levenshtein string difference
       * @param m First string
       * @param n Second string
       */
     def this(m: String, n: String) = this()
-  }
-  
-  @js.native
-  trait Levenshtein extends StObject {
     
     /**
       * Distance between strings
       */
+    /* CompleteClass */
     var distance: Double = js.native
     
     /**
       * Return the Levenshtein table.
       */
-    def getMatrix(): js.Array[js.Array[Double]] = js.native
+    /* CompleteClass */
+    override def getMatrix(): js.Array[js.Array[Double]] = js.native
     
     /**
       * Pretty print Levenshtein table.
       */
-    def inspect(): String = js.native
+    /* CompleteClass */
+    override def inspect(): String = js.native
+  }
+  
+  trait Levenshtein extends StObject {
+    
+    /**
+      * Distance between strings
+      */
+    var distance: Double
+    
+    /**
+      * Return the Levenshtein table.
+      */
+    def getMatrix(): js.Array[js.Array[Double]]
+    
+    /**
+      * Pretty print Levenshtein table.
+      */
+    def inspect(): String
   }
   object Levenshtein {
     

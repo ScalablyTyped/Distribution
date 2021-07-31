@@ -2,19 +2,17 @@ package typings.reactNativeFirebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AUTOVERIFIED extends StObject {
   
-  var AUTO_VERIFIED: String = js.native
+  var AUTO_VERIFIED: String
   
-  var AUTO_VERIFY_TIMEOUT: String = js.native
+  var AUTO_VERIFY_TIMEOUT: String
   
-  var CODE_SENT: String = js.native
+  var CODE_SENT: String
   
-  var ERROR: String = js.native
+  var ERROR: String
 }
 object AUTOVERIFIED {
   

@@ -4,7 +4,6 @@ import typings.videoJs.anon.All
 import typings.videoJs.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,7 +53,7 @@ trait Log extends StObject {
     *
     * @return
     */
-  def history(): js.Array[_] = js.native
+  def history(): js.Array[js.Any] = js.native
   @JSName("history")
   var history_Original: Call = js.native
   

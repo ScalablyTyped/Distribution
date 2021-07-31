@@ -10,9 +10,9 @@ Combines an array of AbortSignals into a single signal that is aborted when any 
 | ------------------ | :-------------: |
 | Full name          | any-signal |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 116566 |
+| # releases         | 7 |
+| # dependents       | 10 |
+| # downloads        | 550653 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.merklePatriciaTree.checkpointTrieMod.CheckpointTrie
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secureMod {
@@ -18,14 +17,17 @@ object secureMod {
   /* static members */
   object SecureTrie {
     
+    @JSImport("merkle-patricia-tree/dist/secure", "SecureTrie")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a proof that can be verified using [[SecureTrie.verifyProof]].
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree/dist/secure", "SecureTrie.createProof")
-    @js.native
-    def createProof(trie: SecureTrie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def createProof(trie: SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProof")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * prove has been renamed to [[SecureTrie.createProof]].
@@ -33,9 +35,8 @@ object secureMod {
       * @param {Trie} trie
       * @param {Buffer} key
       */
-    @JSImport("merkle-patricia-tree/dist/secure", "SecureTrie.prove")
-    @js.native
-    def prove(trie: SecureTrie, key: Buffer): js.Promise[Proof] = js.native
+    @scala.inline
+    def prove(trie: SecureTrie, key: Buffer): js.Promise[Proof] = (^.asInstanceOf[js.Dynamic].applyDynamic("prove")(trie.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Proof]]
     
     /**
       * Verifies a proof.
@@ -45,8 +46,7 @@ object secureMod {
       * @throws If proof is found to be invalid.
       * @returns The value from the key.
       */
-    @JSImport("merkle-patricia-tree/dist/secure", "SecureTrie.verifyProof")
-    @js.native
-    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = js.native
+    @scala.inline
+    def verifyProof(rootHash: Buffer, key: Buffer, proof: Proof): js.Promise[Buffer | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyProof")(rootHash.asInstanceOf[js.Any], key.asInstanceOf[js.Any], proof.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | Null]]
   }
 }

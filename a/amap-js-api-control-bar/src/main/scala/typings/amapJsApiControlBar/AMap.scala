@@ -6,13 +6,14 @@ import typings.amapJsApiControlBar.amapJsApiControlBarStrings.hide
 import typings.amapJsApiControlBar.amapJsApiControlBarStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait ControlBar extends EventEmitter {
+  trait ControlBar
+    extends StObject
+       with EventEmitter {
     
     def hide(): Unit = js.native
     
@@ -21,23 +22,16 @@ object AMap {
   }
   object ControlBar {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var hide: Event_[
-            typings.amapJsApiControlBar.amapJsApiControlBarStrings.hide, 
-            js.UndefOr[scala.Nothing]
-          ] = js.native
+      var hide: Event_[typings.amapJsApiControlBar.amapJsApiControlBarStrings.hide, Unit]
       
-      var show: Event_[
-            typings.amapJsApiControlBar.amapJsApiControlBarStrings.show, 
-            js.UndefOr[scala.Nothing]
-          ] = js.native
+      var show: Event_[typings.amapJsApiControlBar.amapJsApiControlBarStrings.show, Unit]
     }
     object EventMap {
       
       @scala.inline
-      def apply(hide: Event_[hide, js.UndefOr[scala.Nothing]], show: Event_[show, js.UndefOr[scala.Nothing]]): EventMap = {
+      def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
@@ -46,30 +40,29 @@ object AMap {
       implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setHide(value: Event_[hide, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setShow(value: Event_[show, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 显示位置
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
       /**
         * 是否显示倾斜、旋转按钮
         */
-      var showControlButton: js.UndefOr[Boolean] = js.native
+      var showControlButton: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 是否显示缩放按钮
         */
-      var showZoomBar: js.UndefOr[Boolean] = js.native
+      var showZoomBar: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -102,16 +95,15 @@ object AMap {
       }
     }
     
-    @js.native
     trait Position extends StObject {
       
-      var bottom: js.UndefOr[String] = js.native
+      var bottom: js.UndefOr[String] = js.undefined
       
-      var left: js.UndefOr[String] = js.native
+      var left: js.UndefOr[String] = js.undefined
       
-      var right: js.UndefOr[String] = js.native
+      var right: js.UndefOr[String] = js.undefined
       
-      var top: js.UndefOr[String] = js.native
+      var top: js.UndefOr[String] = js.undefined
     }
     object Position {
       

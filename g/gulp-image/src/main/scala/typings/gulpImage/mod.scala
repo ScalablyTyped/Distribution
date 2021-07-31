@@ -3,42 +3,42 @@ package typings.gulpImage
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("gulp-image", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-image", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
   type OptimizerSetting = Boolean | js.Array[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var concurrent: js.UndefOr[Double] = js.native
+    var concurrent: js.UndefOr[Double] = js.undefined
     
-    var gifsicle: js.UndefOr[OptimizerSetting] = js.native
+    var gifsicle: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var guetzli: js.UndefOr[OptimizerSetting] = js.native
+    var guetzli: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var jpegRecompress: js.UndefOr[OptimizerSetting] = js.native
+    var jpegRecompress: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var mozjpeg: js.UndefOr[OptimizerSetting] = js.native
+    var mozjpeg: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var optipng: js.UndefOr[OptimizerSetting] = js.native
+    var optipng: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var pngquant: js.UndefOr[OptimizerSetting] = js.native
+    var pngquant: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var svgo: js.UndefOr[OptimizerSetting] = js.native
+    var svgo: js.UndefOr[OptimizerSetting] = js.undefined
     
-    var zopflipng: js.UndefOr[OptimizerSetting] = js.native
+    var zopflipng: js.UndefOr[OptimizerSetting] = js.undefined
   }
   object Options {
     

@@ -3,7 +3,6 @@ package typings.slonik.mod
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,7 +24,7 @@ trait SqlTaggedTemplateType extends StObject {
     // Value might be ReadonlyArray<ReadonlyArray<PrimitiveValueExpressionType>>,
   // or it can be infinitely nested array, e.g.
   // https://github.com/gajus/slonik/issues/44
-  tuples: js.Array[js.Array[_]],
+  tuples: js.Array[js.Array[js.Any]],
     columnTypes: js.Array[String]
   ): UnnestSqlTokenType = js.native
 }

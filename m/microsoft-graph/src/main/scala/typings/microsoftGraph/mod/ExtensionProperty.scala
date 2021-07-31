@@ -2,30 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtensionProperty extends DirectoryObject {
+trait ExtensionProperty
+  extends StObject
+     with DirectoryObject {
   
   // Display name of the application object on which this extension property is defined. Read-only.
-  var appDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable.
     * Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format. Will be stored in UTC.Integer -
     * 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   // Indicates if this extension property was sycned from onpremises directory using Azure AD Connect. Read-only.
-  var isSyncedFromOnPremises: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isSyncedFromOnPremises: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Name of the extension property. Not nullable.
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // Following values are supported. Not nullable. UserGroupOrganizationDeviceApplication
-  var targetObjects: js.UndefOr[js.Array[String]] = js.native
+  var targetObjects: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExtensionProperty {
   

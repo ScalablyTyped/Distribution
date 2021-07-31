@@ -2,37 +2,35 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveChatSuperStickerDetails extends StObject {
   
   /**
     * A rendered string that displays the fund amount and currency to the user.
     */
-  var amountDisplayString: js.UndefOr[String] = js.native
+  var amountDisplayString: js.UndefOr[String] = js.undefined
   
   /**
     * The amount purchased by the user, in micros (1,750,000 micros = 1.75).
     */
-  var amountMicros: js.UndefOr[String] = js.native
+  var amountMicros: js.UndefOr[String] = js.undefined
   
   /**
     * The currency in which the purchase was made.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the Super Sticker.
     */
-  var superStickerMetadata: js.UndefOr[SchemaSuperStickerMetadata] = js.native
+  var superStickerMetadata: js.UndefOr[SchemaSuperStickerMetadata] = js.undefined
   
   /**
     * The tier in which the amount belongs. Lower amounts belong to lower
     * tiers. The lowest tier is 1.
     */
-  var tier: js.UndefOr[Double] = js.native
+  var tier: js.UndefOr[Double] = js.undefined
 }
 object SchemaLiveChatSuperStickerDetails {
   

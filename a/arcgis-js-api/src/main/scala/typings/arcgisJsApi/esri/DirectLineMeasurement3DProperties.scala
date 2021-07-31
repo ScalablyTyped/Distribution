@@ -12,18 +12,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectLineMeasurement3DProperties extends WidgetProperties {
+trait DirectLineMeasurement3DProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the distance values.
@@ -32,7 +32,7 @@ trait DirectLineMeasurement3DProperties extends WidgetProperties {
     */
   var unit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of unit systems (imperial, metric) and specific units for displaying the distance values.
@@ -43,21 +43,21 @@ trait DirectLineMeasurement3DProperties extends WidgetProperties {
     js.Array[
       metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#viewModel)
     */
-  var viewModel: js.UndefOr[DirectLineMeasurement3DViewModelProperties] = js.native
+  var viewModel: js.UndefOr[DirectLineMeasurement3DViewModelProperties] = js.undefined
 }
 object DirectLineMeasurement3DProperties {
   

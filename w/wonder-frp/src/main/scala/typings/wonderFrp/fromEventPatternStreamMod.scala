@@ -1,25 +1,29 @@
 package typings.wonderFrp
 
 import typings.wonderFrp.baseStreamMod.BaseStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/stream/FromEventPatternStream", JSImport.Namespace)
-@js.native
-object fromEventPatternStreamMod extends js.Object {
+object fromEventPatternStreamMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/stream/FromEventPatternStream", "FromEventPatternStream")
   @js.native
   class FromEventPatternStream protected () extends BaseStream {
     def this(addHandler: js.Function, removeHandler: js.Function) = this()
+    
     var _addHandler: js.Any = js.native
+    
     var _removeHandler: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object FromEventPatternStream extends js.Object {
-    def create(addHandler: js.Function, removeHandler: js.Function): FromEventPatternStream = js.native
+  object FromEventPatternStream {
+    
+    @JSImport("wonder-frp/dist/commonjs/stream/FromEventPatternStream", "FromEventPatternStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(addHandler: js.Function, removeHandler: js.Function): FromEventPatternStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[FromEventPatternStream]
   }
-  
 }
-

@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormFields extends StObject {
   
-  def Add(Range: Range, Type: WdFieldType): FormField = js.native
+  def Add(Range: Range, Type: WdFieldType): FormField
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): FormField = js.native
+  def Item(Index: js.Any): FormField
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Shaded: Boolean = js.native
+  var Shaded: Boolean
   
   @JSName("Word.FormFields_typekey")
-  var WordDotFormFields_typekey: FormFields = js.native
+  var WordDotFormFields_typekey: FormFields
 }
 object FormFields {
   

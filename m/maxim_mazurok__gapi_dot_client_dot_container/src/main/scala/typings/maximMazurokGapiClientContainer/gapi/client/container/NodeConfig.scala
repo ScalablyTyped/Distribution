@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeConfig extends StObject {
   
   /** A list of hardware accelerators to be attached to each node. See https://cloud.google.com/compute/docs/gpus for more information about support for GPUs. */
-  var accelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.native
+  var accelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
   
   /**
     * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool. This should be of the form
     * projects/[KEY_PROJECT_ID]/locations/[LOCATION]/keyRings/[RING_NAME]/cryptoKeys/[KEY_NAME]. For more information about protecting resources with Cloud KMS Keys please see:
     * https://cloud.google.com/compute/docs/disks/customer-managed-encryption
     */
-  var bootDiskKmsKey: js.UndefOr[String] = js.native
+  var bootDiskKmsKey: js.UndefOr[String] = js.undefined
   
   /** Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. If unspecified, the default disk size is 100GB. */
-  var diskSizeGb: js.UndefOr[Double] = js.native
+  var diskSizeGb: js.UndefOr[Double] = js.undefined
   
   /** Type of the disk attached to each node (e.g. 'pd-standard' or 'pd-ssd') If unspecified, the default disk type is 'pd-standard' */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /** The image type to use for this node. Note that for a given image type, the latest version of it will be used. */
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
   /**
     * The map of Kubernetes labels (key/value pairs) to be applied to each node. These will added in addition to any default label(s) that Kubernetes may apply to the node. In case of
@@ -36,17 +34,17 @@ trait NodeConfig extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The number of local SSD disks to be attached to the node. The limit for this value is dependent upon the maximum number of disks available on a machine per zone. See:
     * https://cloud.google.com/compute/docs/disks/local-ssd for more information.
     */
-  var localSsdCount: js.UndefOr[Double] = js.native
+  var localSsdCount: js.UndefOr[Double] = js.undefined
   
   /** The name of a Google Compute Engine [machine type](https://cloud.google.com/compute/docs/machine-types) If unspecified, the default machine type is `e2-medium`. */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs assigned to instances in the cluster. Keys must conform to the regexp `[a-zA-Z0-9-_]+` and be less than 128 bytes in length. These are reflected as part
@@ -60,21 +58,21 @@ trait NodeConfig extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Minimum CPU platform to be used by this instance. The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU platforms,
     * such as `minCpuPlatform: "Intel Haswell"` or `minCpuPlatform: "Intel Sandy Bridge"`. For more information, read [how to specify min CPU
     * platform](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform)
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * Setting this field will assign instances of this pool to run on the specified node group. This is useful for running workloads on [sole tenant
     * nodes](https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes).
     */
-  var nodeGroup: js.UndefOr[String] = js.native
+  var nodeGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The set of Google API scopes to be made available on all of the node VMs under the "default" service account. The following scopes are recommended, but not required, and by default
@@ -82,43 +80,43 @@ trait NodeConfig extends StObject {
     * required for communicating with **gcr.io** (the [Google Container Registry](https://cloud.google.com/container-registry/)). If unspecified, no scopes are added, unless Cloud Logging
     * or Cloud Monitoring are enabled, in which case their required scopes will be added.
     */
-  var oauthScopes: js.UndefOr[js.Array[String]] = js.native
+  var oauthScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether the nodes are created as preemptible VM instances. See: https://cloud.google.com/compute/docs/instances/preemptible for more information about preemptible VM instances. */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The optional reservation affinity. Setting this field will apply the specified [Zonal Compute Reservation](https://cloud.google.com/compute/docs/instances/reserving-zonal-resources)
     * to this node pool.
     */
-  var reservationAffinity: js.UndefOr[ReservationAffinity] = js.native
+  var reservationAffinity: js.UndefOr[ReservationAffinity] = js.undefined
   
   /** Sandbox configuration for this node. */
-  var sandboxConfig: js.UndefOr[SandboxConfig] = js.native
+  var sandboxConfig: js.UndefOr[SandboxConfig] = js.undefined
   
   /**
     * The Google Cloud Platform Service Account to be used by the node VMs. Specify the email address of the Service Account; otherwise, if no Service Account is specified, the "default"
     * service account is used.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /** Shielded Instance options. */
-  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.native
+  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.undefined
   
   /**
     * The list of instance tags applied to all nodes. Tags are used to identify valid sources or targets for network firewalls and are specified by the client during cluster or node pool
     * creation. Each tag within the list must comply with RFC1035.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of kubernetes taints to be applied to each node. For more information, including usage and the valid values, see:
     * https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
     */
-  var taints: js.UndefOr[js.Array[NodeTaint]] = js.native
+  var taints: js.UndefOr[js.Array[NodeTaint]] = js.undefined
   
   /** The workload metadata configuration for this node. */
-  var workloadMetadataConfig: js.UndefOr[WorkloadMetadataConfig] = js.native
+  var workloadMetadataConfig: js.UndefOr[WorkloadMetadataConfig] = js.undefined
 }
 object NodeConfig {
   
@@ -168,7 +166,7 @@ object NodeConfig {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -190,7 +188,7 @@ object NodeConfig {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContainer.maximMazurokGapiClientContainerStrings.NodeConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

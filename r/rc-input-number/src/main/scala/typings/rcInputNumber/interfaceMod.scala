@@ -8,7 +8,6 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -31,75 +30,75 @@ object interfaceMod {
     def small: typings.rcInputNumber.rcInputNumberStrings.small = "small".asInstanceOf[typings.rcInputNumber.rcInputNumberStrings.small]
   }
   
-  @js.native
   trait InputNumberProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var autoComplete: String = js.native
+    var autoComplete: String
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var decimalSeparator: js.UndefOr[String] = js.native
+    var decimalSeparator: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var downHandler: ReactElement = js.native
+    var downHandler: ReactElement
     
-    var focusOnUpDown: Boolean = js.native
+    var focusOnUpDown: Boolean
     
-    var formatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], String]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    def onBlur(arg: js.Any*): Unit = js.native
+    def onBlur(arg: js.Any*): Unit
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.undefined
     
-    def onFocus(arg: js.Any*): Unit = js.native
+    def onFocus(arg: js.Any*): Unit
     
-    def onKeyDown(e: js.Any, arg: js.Any*): Unit = js.native
+    def onKeyDown(e: js.Any, arg: js.Any*): Unit
     
-    def onKeyUp(e: js.Any, arg: js.Any*): Unit = js.native
+    def onKeyUp(e: js.Any, arg: js.Any*): Unit
     
-    def onMouseUp(arg: js.Any*): Unit = js.native
+    def onMouseUp(arg: js.Any*): Unit
     
-    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], Double | String]] = js.native
+    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], Double | String]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var size: js.UndefOr[ISize] = js.native
+    var size: js.UndefOr[ISize] = js.undefined
     
-    var step: js.UndefOr[Double | String] = js.native
+    var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var upHandler: ReactElement = js.native
+    var upHandler: ReactElement
     
-    var useTouch: Boolean = js.native
+    var useTouch: Boolean
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object InputNumberProps {
     
@@ -289,14 +288,13 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait InputNumberState extends StObject {
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object InputNumberState {
     

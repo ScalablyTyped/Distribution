@@ -10,9 +10,9 @@ Display differences clearly so people can review changes confidently.
 | ------------------ | :-------------: |
 | Full name          | jest-diff |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 142 |
-| # downloads        | 414429329 |
+| # releases         | 41 |
+| # dependents       | 179 |
+| # downloads        | 620392567 |
 | # stars            | 0 |
 
 ## Links

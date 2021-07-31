@@ -4,19 +4,17 @@ import typings.std.HTMLTemplateElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStaticViewConfig extends StObject {
   
   var dependencies: js.UndefOr[
     js.Array[js.Function] | (js.Function0[
       js.Array[js.Function | (js.Promise[js.Function | (Record[String, js.Function])])]
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var template: String | HTMLTemplateElement = js.native
+  var template: String | HTMLTemplateElement
 }
 object IStaticViewConfig {
   

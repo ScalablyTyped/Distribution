@@ -3,15 +3,13 @@ package typings.natsHemera.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecoderResult extends StObject {
   
-  var error: Error = js.native
+  var error: Error
   
-  var value: js.Object = js.native
+  var value: js.Object
 }
 object DecoderResult {
   

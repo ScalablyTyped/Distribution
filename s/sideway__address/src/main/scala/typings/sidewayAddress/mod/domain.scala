@@ -6,10 +6,13 @@ import typings.sidewayAddress.sidewayAddressBooleans.`true`
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domain {
+  
+  @JSImport("@sideway/address", "domain")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Analyzes a string to verify it is a valid domain name.
@@ -19,12 +22,10 @@ object domain {
     * 
     * @return - undefined when valid, otherwise an object with single error key with a string message value.
     */
-  @JSImport("@sideway/address", "domain.analyze")
-  @js.native
-  def analyze(domain: String): Analysis | Null = js.native
-  @JSImport("@sideway/address", "domain.analyze")
-  @js.native
-  def analyze(domain: String, options: Options): Analysis | Null = js.native
+  @scala.inline
+  def analyze(domain: String): Analysis | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(domain.asInstanceOf[js.Any]).asInstanceOf[Analysis | Null]
+  @scala.inline
+  def analyze(domain: String, options: Options): Analysis | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(domain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Analysis | Null]
   
   /**
     * Analyzes a string to verify it is a valid domain name.
@@ -34,14 +35,11 @@ object domain {
     * 
     * @return - true when valid, otherwise false.
     */
-  @JSImport("@sideway/address", "domain.isValid")
-  @js.native
-  def isValid(domain: String): Boolean = js.native
-  @JSImport("@sideway/address", "domain.isValid")
-  @js.native
-  def isValid(domain: String, options: Options): Boolean = js.native
+  @scala.inline
+  def isValid(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(domain: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(domain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -49,21 +47,21 @@ object domain {
       * 
       * @default true
       */
-    val allowUnicode: js.UndefOr[Boolean] = js.native
+    val allowUnicode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The minimum number of domain segments (e.g. `x.y.z` has 3 segments) required.
       * 
       * @default 2
       */
-    val minDomainSegments: js.UndefOr[Double] = js.native
+    val minDomainSegments: js.UndefOr[Double] = js.undefined
     
     /**
       * Top-level-domain options
       * 
       * @default true
       */
-    val tlds: js.UndefOr[Allow | Deny | Boolean] = js.native
+    val tlds: js.UndefOr[Allow | Deny | Boolean] = js.undefined
   }
   object Options {
     
@@ -98,10 +96,9 @@ object domain {
   
   object Tlds {
     
-    @js.native
     trait Allow extends StObject {
       
-      val allow: Set[String] | `true` = js.native
+      val allow: Set[String] | `true`
     }
     object Allow {
       
@@ -119,10 +116,9 @@ object domain {
       }
     }
     
-    @js.native
     trait Deny extends StObject {
       
-      val deny: Set[String] = js.native
+      val deny: Set[String]
     }
     object Deny {
       

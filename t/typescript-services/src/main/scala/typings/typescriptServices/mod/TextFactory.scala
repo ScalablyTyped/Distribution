@@ -3,12 +3,14 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.IText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TextFactory {
   
-  @JSImport("typescript-services", "TextFactory.createText")
+  @JSImport("typescript-services", "TextFactory")
   @js.native
-  def createText(value: String): IText = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createText(value: String): IText = ^.asInstanceOf[js.Dynamic].applyDynamic("createText")(value.asInstanceOf[js.Any]).asInstanceOf[IText]
 }

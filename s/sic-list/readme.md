@@ -12,7 +12,7 @@ Standard industrial classification list based on the excellent country-list pack
 | Keywords           | standard industrial classification, sic |
 | # releases         | 26 |
 | # dependents       | 0 |
-| # downloads        | 4762 |
+| # downloads        | 4549 |
 | # stars            | 0 |
 
 ## Links

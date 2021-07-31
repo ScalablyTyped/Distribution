@@ -3,25 +3,23 @@ package typings.rascal.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerConfig extends StObject {
   
-  var defaults: js.UndefOr[VhostConfig] = js.native
+  var defaults: js.UndefOr[VhostConfig] = js.undefined
   
-  var encryption: js.UndefOr[StringDictionary[Encryption]] = js.native
+  var encryption: js.UndefOr[StringDictionary[Encryption]] = js.undefined
   
-  var publications: js.UndefOr[StringDictionary[PublicationConfig]] = js.native
+  var publications: js.UndefOr[StringDictionary[PublicationConfig]] = js.undefined
   
-  var recovery: js.UndefOr[StringDictionary[Recovery | js.Array[Recovery]]] = js.native
+  var recovery: js.UndefOr[StringDictionary[Recovery | js.Array[Recovery]]] = js.undefined
   
-  var redeliveries: js.UndefOr[Redelivery] = js.native
+  var redeliveries: js.UndefOr[Redelivery] = js.undefined
   
-  var subscriptions: js.UndefOr[StringDictionary[SubscriptionConfig]] = js.native
+  var subscriptions: js.UndefOr[StringDictionary[SubscriptionConfig]] = js.undefined
   
-  var vhosts: js.UndefOr[StringDictionary[VhostConfig]] = js.native
+  var vhosts: js.UndefOr[StringDictionary[VhostConfig]] = js.undefined
 }
 object BrokerConfig {
   

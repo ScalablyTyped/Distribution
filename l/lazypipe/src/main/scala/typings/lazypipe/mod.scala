@@ -3,7 +3,6 @@ package typings.lazypipe
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,9 +10,12 @@ object mod {
   /**
     * Initializes a lazypipe.
     */
+  @scala.inline
+  def apply(): IPipelineBuilder = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IPipelineBuilder]
+  
   @JSImport("lazypipe", JSImport.Namespace)
   @js.native
-  def apply(): IPipelineBuilder = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait IPipelineBuilder extends StObject {

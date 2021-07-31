@@ -13,7 +13,6 @@ import typings.std.Blob
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
@@ -43,17 +42,18 @@ object interfacesMod {
     def configureRequest(req: Request): Unit = js.native
   }
   
-  @js.native
-  trait RequestArgs extends RequestOptionsArgs {
+  trait RequestArgs
+    extends StObject
+       with RequestOptionsArgs {
     
     @JSName("url")
-    var url_RequestArgs: String | Null = js.native
+    var url_RequestArgs: String | Null
   }
   object RequestArgs {
     
     @scala.inline
     def apply(): RequestArgs = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(url = null)
       __obj.asInstanceOf[RequestArgs]
     }
     
@@ -68,25 +68,24 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait RequestOptionsArgs extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[Headers | Null] = js.native
+    var headers: js.UndefOr[Headers | Null] = js.undefined
     
-    var method: js.UndefOr[String | RequestMethod | Null] = js.native
+    var method: js.UndefOr[String | RequestMethod | Null] = js.undefined
     
-    var params: js.UndefOr[String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]]) | Null] = js.native
+    var params: js.UndefOr[String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]]) | Null] = js.undefined
     
-    var responseType: js.UndefOr[ResponseContentType | Null] = js.native
+    var responseType: js.UndefOr[ResponseContentType | Null] = js.undefined
     
     /** @deprecated from 4.0.0. Use params instead. */
-    var search: js.UndefOr[String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]]) | Null] = js.native
+    var search: js.UndefOr[String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]]) | Null] = js.undefined
     
-    var url: js.UndefOr[String | Null] = js.native
+    var url: js.UndefOr[String | Null] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean | Null] = js.native
+    var withCredentials: js.UndefOr[Boolean | Null] = js.undefined
   }
   object RequestOptionsArgs {
     
@@ -124,7 +123,7 @@ object interfacesMod {
       def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
       @scala.inline
-      def setParams(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsNull: Self = StObject.set(x, "params", null)
@@ -142,7 +141,7 @@ object interfacesMod {
       def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
       @scala.inline
-      def setSearch(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[_]])): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      def setSearch(value: String | URLSearchParams | (StringDictionary[js.Any | js.Array[js.Any]])): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSearchNull: Self = StObject.set(x, "search", null)
@@ -170,20 +169,19 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ResponseOptionsArgs extends StObject {
     
-    var body: js.UndefOr[String | js.Object | FormData | ArrayBuffer | Blob | Null] = js.native
+    var body: js.UndefOr[String | js.Object | FormData | ArrayBuffer | Blob | Null] = js.undefined
     
-    var headers: js.UndefOr[Headers | Null] = js.native
+    var headers: js.UndefOr[Headers | Null] = js.undefined
     
-    var status: js.UndefOr[Double | Null] = js.native
+    var status: js.UndefOr[Double | Null] = js.undefined
     
-    var statusText: js.UndefOr[String | Null] = js.native
+    var statusText: js.UndefOr[String | Null] = js.undefined
     
-    var `type`: js.UndefOr[ResponseType | Null] = js.native
+    var `type`: js.UndefOr[ResponseType | Null] = js.undefined
     
-    var url: js.UndefOr[String | Null] = js.native
+    var url: js.UndefOr[String | Null] = js.undefined
   }
   object ResponseOptionsArgs {
     

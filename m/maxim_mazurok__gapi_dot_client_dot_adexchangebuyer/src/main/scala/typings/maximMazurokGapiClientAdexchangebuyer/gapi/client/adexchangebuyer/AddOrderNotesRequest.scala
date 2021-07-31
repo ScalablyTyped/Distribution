@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOrderNotesRequest extends StObject {
   
   /** The list of notes to add. */
-  var notes: js.UndefOr[js.Array[MarketplaceNote]] = js.native
+  var notes: js.UndefOr[js.Array[MarketplaceNote]] = js.undefined
 }
 object AddOrderNotesRequest {
   

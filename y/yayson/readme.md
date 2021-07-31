@@ -12,7 +12,7 @@ A library for serializing and reading JSON API standardized data in JavaScript.
 | Keywords           | json-api, json, api, response, format, serialization, deserialization, yay, wow, omg |
 | # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 75920 |
+| # downloads        | 71912 |
 | # stars            | 2 |
 
 ## Links

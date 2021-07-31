@@ -2,65 +2,63 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISK extends StObject {
   
-  var AUD: js.Array[js.UndefOr[String]] = js.native
+  var AUD: js.Array[js.UndefOr[String]]
   
-  var BBD: js.Array[String] = js.native
+  var BBD: js.Array[String]
   
-  var BMD: js.Array[String] = js.native
+  var BMD: js.Array[String]
   
-  var BRL: js.Array[String] = js.native
+  var BRL: js.Array[String]
   
-  var BSD: js.Array[String] = js.native
+  var BSD: js.Array[String]
   
-  var BZD: js.Array[String] = js.native
+  var BZD: js.Array[String]
   
-  var CNY: js.Array[js.UndefOr[String]] = js.native
+  var CNY: js.Array[js.UndefOr[String]]
   
-  var DKK: js.Array[String] = js.native
+  var DKK: js.Array[String]
   
-  var DOP: js.Array[String] = js.native
+  var DOP: js.Array[String]
   
-  var EEK: js.Array[String] = js.native
+  var EEK: js.Array[String]
   
-  var EGP: js.Array[String] = js.native
+  var EGP: js.Array[String]
   
-  var ESP: js.Array[scala.Nothing] = js.native
+  var ESP: js.Array[scala.Nothing]
   
-  var GBP: js.Array[js.UndefOr[String]] = js.native
+  var GBP: js.Array[js.UndefOr[String]]
   
-  var HKD: js.Array[js.UndefOr[String]] = js.native
+  var HKD: js.Array[js.UndefOr[String]]
   
-  var IEP: js.Array[String] = js.native
+  var IEP: js.Array[String]
   
-  var INR: js.Array[js.UndefOr[String]] = js.native
+  var INR: js.Array[js.UndefOr[String]]
   
-  var ISK: js.Array[String] = js.native
+  var ISK: js.Array[String]
   
-  var JMD: js.Array[String] = js.native
+  var JMD: js.Array[String]
   
-  var JPY: js.Array[js.UndefOr[String]] = js.native
+  var JPY: js.Array[js.UndefOr[String]]
   
-  var KRW: js.Array[js.UndefOr[String]] = js.native
+  var KRW: js.Array[js.UndefOr[String]]
   
-  var NOK: js.Array[String] = js.native
+  var NOK: js.Array[String]
   
-  var NZD: js.Array[js.UndefOr[String]] = js.native
+  var NZD: js.Array[js.UndefOr[String]]
   
-  var RON: js.Array[js.UndefOr[String]] = js.native
+  var RON: js.Array[js.UndefOr[String]]
   
-  var SEK: js.Array[String] = js.native
+  var SEK: js.Array[String]
   
-  var TWD: js.Array[js.UndefOr[String]] = js.native
+  var TWD: js.Array[js.UndefOr[String]]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
   
-  var VND: js.Array[js.UndefOr[String]] = js.native
+  var VND: js.Array[js.UndefOr[String]]
 }
 object ISK {
   

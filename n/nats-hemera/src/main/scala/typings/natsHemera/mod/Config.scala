@@ -4,37 +4,35 @@ import typings.natsHemera.natsHemeraNumbers.`2000`
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var bloomrun: js.UndefOr[BloomrunConfig] = js.native
+  var bloomrun: js.UndefOr[BloomrunConfig] = js.undefined
   
-  var childLogger: js.UndefOr[Boolean] = js.native
+  var childLogger: js.UndefOr[Boolean] = js.undefined
   
-  var errio: js.UndefOr[ErrioConfig] = js.native
+  var errio: js.UndefOr[ErrioConfig] = js.undefined
   
-  var load: js.UndefOr[LoadConfig] = js.native
+  var load: js.UndefOr[LoadConfig] = js.undefined
   
-  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   
-  var logger: js.UndefOr[Logger | Stream] = js.native
+  var logger: js.UndefOr[Logger | Stream] = js.undefined
   
-  var maxRecursion: js.UndefOr[Double] = js.native
+  var maxRecursion: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pluginTimeout: js.UndefOr[Double] = js.native
+  var pluginTimeout: js.UndefOr[Double] = js.undefined
   
-  var prettyLog: js.UndefOr[Boolean] = js.native
+  var prettyLog: js.UndefOr[Boolean] = js.undefined
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[Double | `2000`] = js.native
+  var timeout: js.UndefOr[Double | `2000`] = js.undefined
   
-  var traceLog: js.UndefOr[Boolean] = js.native
+  var traceLog: js.UndefOr[Boolean] = js.undefined
 }
 object Config {
   

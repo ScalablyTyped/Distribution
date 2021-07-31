@@ -3,30 +3,28 @@ package typings.domSerializer
 import typings.domSerializer.domSerializerStrings.foreign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dom-serializer", JSImport.Default)
+  @JSImport("dom-serializer", JSImport.Namespace)
   @js.native
-  def default(nodes: js.Array[js.Object]): String = js.native
-  @JSImport("dom-serializer", JSImport.Default)
-  @js.native
-  def default(nodes: js.Array[js.Object], options: DomSerializerOptions): String = js.native
-  @JSImport("dom-serializer", JSImport.Default)
-  @js.native
-  def default(nodes: js.Object): String = js.native
-  @JSImport("dom-serializer", JSImport.Default)
-  @js.native
-  def default(nodes: js.Object, options: DomSerializerOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(nodes: js.Array[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(nodes: js.Array[js.Object], options: DomSerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(nodes: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(nodes: js.Object, options: DomSerializerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait DomSerializerOptions extends StObject {
     
-    var decodeEntities: js.UndefOr[Boolean] = js.native
+    var decodeEntities: js.UndefOr[Boolean] = js.undefined
     
-    var xmlMode: js.UndefOr[Boolean | foreign] = js.native
+    var xmlMode: js.UndefOr[Boolean | foreign] = js.undefined
   }
   object DomSerializerOptions {
     

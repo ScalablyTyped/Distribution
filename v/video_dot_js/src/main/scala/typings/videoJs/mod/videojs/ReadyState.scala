@@ -2,7 +2,6 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait ReadyState extends StObject
 object ReadyState extends StObject {
   
   @js.native
-  sealed trait HaveCurrentData extends ReadyState
+  sealed trait HaveCurrentData
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait HaveEnoughData extends ReadyState
+  sealed trait HaveEnoughData
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait HaveFutureData extends ReadyState
+  sealed trait HaveFutureData
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait HaveMetadata extends ReadyState
+  sealed trait HaveMetadata
+    extends StObject
+       with ReadyState
   
   @js.native
-  sealed trait HaveNothing extends ReadyState
+  sealed trait HaveNothing
+    extends StObject
+       with ReadyState
 }

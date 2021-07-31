@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTagsListResponse extends StObject {
   
   /** Event tag collection. */
-  var eventTags: js.UndefOr[js.Array[EventTag]] = js.native
+  var eventTags: js.UndefOr[js.Array[EventTag]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#eventTagsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object EventTagsListResponse {
   

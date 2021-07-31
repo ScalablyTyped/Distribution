@@ -3,69 +3,56 @@ package typings.ethjsUtil
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ethjs-util", "arrayContainsArray")
+  @JSImport("ethjs-util", JSImport.Namespace)
   @js.native
-  def arrayContainsArray(superset: js.Array[_], subset: js.Array[_]): Boolean = js.native
-  @JSImport("ethjs-util", "arrayContainsArray")
-  @js.native
-  def arrayContainsArray(superset: js.Array[_], subset: js.Array[_], some: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethjs-util", "fromAscii")
-  @js.native
-  def fromAscii(stringValue: String): String = js.native
+  @scala.inline
+  def arrayContainsArray(superset: js.Array[js.Any], subset: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayContainsArray")(superset.asInstanceOf[js.Any], subset.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def arrayContainsArray(superset: js.Array[js.Any], subset: js.Array[js.Any], some: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayContainsArray")(superset.asInstanceOf[js.Any], subset.asInstanceOf[js.Any], some.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ethjs-util", "fromUtf8")
-  @js.native
-  def fromUtf8(stringValue: String): String = js.native
+  @scala.inline
+  def fromAscii(stringValue: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAscii")(stringValue.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethjs-util", "getBinarySize")
-  @js.native
-  def getBinarySize(str: String): Double = js.native
+  @scala.inline
+  def fromUtf8(stringValue: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUtf8")(stringValue.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethjs-util", "getKeys")
-  @js.native
-  def getKeys(params: js.Array[_], key: String): js.Array[_] = js.native
-  @JSImport("ethjs-util", "getKeys")
-  @js.native
-  def getKeys(params: js.Array[_], key: String, allowEmpty: Boolean): js.Array[_] = js.native
+  @scala.inline
+  def getBinarySize(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinarySize")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ethjs-util", "intToBuffer")
-  @js.native
-  def intToBuffer(i: Double): Buffer = js.native
+  @scala.inline
+  def getKeys(params: js.Array[js.Any], key: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeys")(params.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def getKeys(params: js.Array[js.Any], key: String, allowEmpty: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeys")(params.asInstanceOf[js.Any], key.asInstanceOf[js.Any], allowEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("ethjs-util", "intToHex")
-  @js.native
-  def intToHex(i: Double): String = js.native
+  @scala.inline
+  def intToBuffer(i: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("intToBuffer")(i.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethjs-util", "isHexPrefixed")
-  @js.native
-  def isHexPrefixed(str: String): Boolean = js.native
+  @scala.inline
+  def intToHex(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intToHex")(i.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethjs-util", "isHexString")
-  @js.native
-  def isHexString(value: String): Boolean = js.native
-  @JSImport("ethjs-util", "isHexString")
-  @js.native
-  def isHexString(value: String, length: Double): Boolean = js.native
+  @scala.inline
+  def isHexPrefixed(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexPrefixed")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ethjs-util", "padToEven")
-  @js.native
-  def padToEven(value: String): String = js.native
+  @scala.inline
+  def isHexString(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isHexString(value: String, length: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHexString")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ethjs-util", "stripHexPrefix")
-  @js.native
-  def stripHexPrefix(str: String): String = js.native
+  @scala.inline
+  def padToEven(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("padToEven")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethjs-util", "toAscii")
-  @js.native
-  def toAscii(hex: String): String = js.native
+  @scala.inline
+  def stripHexPrefix(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripHexPrefix")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ethjs-util", "toUtf8")
-  @js.native
-  def toUtf8(hex: String): String = js.native
+  @scala.inline
+  def toAscii(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAscii")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def toUtf8(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUtf8")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
 }

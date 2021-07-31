@@ -3,13 +3,13 @@ package typings.msRest.mod
 import typings.msRest.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DictionaryType extends BaseMapperType {
+trait DictionaryType
+  extends StObject
+     with BaseMapperType {
   
-  var `type`: Value = js.native
+  var `type`: Value
 }
 object DictionaryType {
   

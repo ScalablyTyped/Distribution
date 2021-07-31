@@ -3,38 +3,38 @@ package typings.mainBowerFiles
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(options: IOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
   @JSImport("main-bower-files", JSImport.Namespace)
   @js.native
-  def apply(): js.Array[String] = js.native
-  @JSImport("main-bower-files", JSImport.Namespace)
-  @js.native
-  def apply(options: IOptions): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
   type IFilterFunction = js.Function1[/* filepath */ String, Boolean]
   
-  @js.native
   trait IOptions extends StObject {
     
-    var checkExistence: js.UndefOr[Boolean] = js.native
+    var checkExistence: js.UndefOr[Boolean] = js.undefined
     
-    var debugging: js.UndefOr[Boolean] = js.native
+    var debugging: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[RegExp | IFilterFunction | String | js.Array[String]] = js.native
+    var filter: js.UndefOr[RegExp | IFilterFunction | String | js.Array[String]] = js.undefined
     
-    var includeDev: js.UndefOr[Boolean | String] = js.native
+    var includeDev: js.UndefOr[Boolean | String] = js.undefined
     
-    var includeSelf: js.UndefOr[Boolean] = js.native
+    var includeSelf: js.UndefOr[Boolean] = js.undefined
     
-    var main: js.UndefOr[String | js.Array[String] | js.Object] = js.native
+    var main: js.UndefOr[String | js.Array[String] | js.Object] = js.undefined
     
-    var paths: js.UndefOr[IPaths | String] = js.native
+    var paths: js.UndefOr[IPaths | String] = js.undefined
   }
   object IOptions {
     
@@ -106,14 +106,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IPaths extends StObject {
     
-    var bowerDirectory: js.UndefOr[String] = js.native
+    var bowerDirectory: js.UndefOr[String] = js.undefined
     
-    var bowerJson: js.UndefOr[String] = js.native
+    var bowerJson: js.UndefOr[String] = js.undefined
     
-    var bowerrc: js.UndefOr[String] = js.native
+    var bowerrc: js.UndefOr[String] = js.undefined
   }
   object IPaths {
     

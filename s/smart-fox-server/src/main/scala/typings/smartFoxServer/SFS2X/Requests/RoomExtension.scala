@@ -2,20 +2,18 @@ package typings.smartFoxServer.SFS2X.Requests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoomExtension extends StObject {
   
   /** @type {string} Returns the fully qualified name of the main class of the Extension. */
-  var className: String = js.native
+  var className: String
   
   /** @type {string} Returns the name of the Extension to be attached to the Room. */
-  var id: String = js.native
+  var id: String
   
   /** @type {string} Sets the name of an optional properties file that should be loaded on the server-side during the Extension initialization. */
-  var propertiesFile: String = js.native
+  var propertiesFile: String
 }
 object RoomExtension {
   

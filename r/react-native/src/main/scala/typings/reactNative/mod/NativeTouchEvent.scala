@@ -2,56 +2,54 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeTouchEvent extends StObject {
   
   /**
     * Array of all touch events that have changed since the last event
     */
-  var changedTouches: js.Array[NativeTouchEvent] = js.native
+  var changedTouches: js.Array[NativeTouchEvent]
   
   /**
     * The ID of the touch
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * The X position of the touch, relative to the element
     */
-  var locationX: Double = js.native
+  var locationX: Double
   
   /**
     * The Y position of the touch, relative to the element
     */
-  var locationY: Double = js.native
+  var locationY: Double
   
   /**
     * The X position of the touch, relative to the screen
     */
-  var pageX: Double = js.native
+  var pageX: Double
   
   /**
     * The Y position of the touch, relative to the screen
     */
-  var pageY: Double = js.native
+  var pageY: Double
   
   /**
     * The node id of the element receiving the touch event
     */
-  var target: String = js.native
+  var target: String
   
   /**
     * A time identifier for the touch, useful for velocity calculation
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
   
   /**
     * Array of all current touches on the screen
     */
-  var touches: js.Array[NativeTouchEvent] = js.native
+  var touches: js.Array[NativeTouchEvent]
 }
 object NativeTouchEvent {
   

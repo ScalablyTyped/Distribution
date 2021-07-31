@@ -10,7 +10,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,14 +27,9 @@ trait Icon extends StObject {
     * @param opt_scope {Object=} - scope for the handler function
     */
   def addEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
-  def addEventListener(
-    `type`: String,
-    handler: js.Function0[Unit],
-    opt_capture: js.UndefOr[scala.Nothing],
-    opt_scope: js.Object
-  ): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Unit, opt_scope: js.Object): Unit = js.native
   
   /**
     * This method adds callback which is triggered when the object is being disposed
@@ -95,14 +89,9 @@ trait Icon extends StObject {
     * @param opt_scope {Object=} - scope for the handler function
     */
   def removeEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
-  def removeEventListener(
-    `type`: String,
-    handler: js.Function0[Unit],
-    opt_capture: js.UndefOr[scala.Nothing],
-    opt_scope: js.Object
-  ): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Unit, opt_scope: js.Object): Unit = js.native
 }
 object Icon {
   
@@ -116,13 +105,19 @@ object Icon {
   object State extends StObject {
     
     @js.native
-    sealed trait ERROR extends State
+    sealed trait ERROR
+      extends StObject
+         with State
     
     @js.native
-    sealed trait LOADING extends State
+    sealed trait LOADING
+      extends StObject
+         with State
     
     @js.native
-    sealed trait READY extends State
+    sealed trait READY
+      extends StObject
+         with State
   }
   
   /**
@@ -135,18 +130,17 @@ object Icon {
     * @property crossOrigin {boolean} - Specifies whether to use anonynous Cross-Origin Resource Sharing (CORS) when fetching an image to prevent resulting canvas from tainting, default is
     * false. The option is ignored by IE9-10.
     */
-  @js.native
   trait Options extends StObject {
     
-    var anchor: js.UndefOr[IPoint] = js.native
+    var anchor: js.UndefOr[IPoint] = js.undefined
     
-    var asCanvas: js.UndefOr[HitArea] = js.native
+    var asCanvas: js.UndefOr[HitArea] = js.undefined
     
-    var crossOrigin: Boolean = js.native
+    var crossOrigin: Boolean
     
-    var hitArea: js.UndefOr[HitArea] = js.native
+    var hitArea: js.UndefOr[HitArea] = js.undefined
     
-    var size: js.UndefOr[ISize | Double] = js.native
+    var size: js.UndefOr[ISize | Double] = js.undefined
   }
   object Options {
     

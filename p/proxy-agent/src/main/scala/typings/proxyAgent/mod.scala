@@ -7,7 +7,6 @@ import typings.agentBase.mod.AgentOptions
 import typings.proxyAgent.mod.ProxyAgent.ProxyAgent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,7 +28,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait ProxyAgentConstructor extends Instantiable1[(/* options */ AgentOptions) | (/* options */ String), ProxyAgent] {
+  trait ProxyAgentConstructor
+    extends StObject
+       with Instantiable1[(/* options */ AgentOptions) | (/* options */ String), ProxyAgent] {
     
     def apply(options: String): ProxyAgent = js.native
     def apply(options: AgentOptions): ProxyAgent = js.native

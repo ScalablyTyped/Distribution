@@ -9,14 +9,15 @@ import typings.googleGax.streamingMod.StreamProxy
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamingApiCallerMod {
   
   @JSImport("google-gax/build/src/streamingCalls/streamingApiCaller", "StreamingApiCaller")
   @js.native
-  class StreamingApiCaller protected () extends APICaller {
+  class StreamingApiCaller protected ()
+    extends StObject
+       with APICaller {
     /**
       * An API caller for methods of gRPC streaming.
       * @private

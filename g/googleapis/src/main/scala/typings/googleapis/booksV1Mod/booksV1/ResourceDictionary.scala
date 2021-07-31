@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Dictionary")
@@ -30,7 +29,7 @@ class ResourceDictionary protected () extends StObject {
     */
   def listOfflineMetadata(): GaxiosPromise[SchemaMetadata] = js.native
   def listOfflineMetadata(callback: BodyResponseCallback[SchemaMetadata]): Unit = js.native
-  def listOfflineMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetadata] = js.native
+  def listOfflineMetadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetadata] = js.native
   def listOfflineMetadata(params: ParamsResourceDictionaryListofflinemetadata): GaxiosPromise[SchemaMetadata] = js.native
   def listOfflineMetadata(
     params: ParamsResourceDictionaryListofflinemetadata,

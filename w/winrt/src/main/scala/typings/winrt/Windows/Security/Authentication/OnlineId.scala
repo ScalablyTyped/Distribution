@@ -11,7 +11,6 @@ import typings.winrt.anon.CompletedGetResults
 import typings.winrt.anon.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OnlineId {
@@ -23,13 +22,19 @@ object OnlineId {
   object CredentialPromptType extends StObject {
     
     @js.native
-    sealed trait doNotPrompt extends CredentialPromptType
+    sealed trait doNotPrompt
+      extends StObject
+         with CredentialPromptType
     
     @js.native
-    sealed trait promptIfNeeded extends CredentialPromptType
+    sealed trait promptIfNeeded
+      extends StObject
+         with CredentialPromptType
     
     @js.native
-    sealed trait retypeCredentials extends CredentialPromptType
+    sealed trait retypeCredentials
+      extends StObject
+         with CredentialPromptType
   }
   
   @js.native
@@ -47,14 +52,13 @@ object OnlineId {
     def signOutUserAsync(): SignOutUserOperation = js.native
   }
   
-  @js.native
   trait IOnlineIdServiceTicket extends StObject {
     
-    var errorCode: Double = js.native
+    var errorCode: Double
     
-    var request: OnlineIdServiceTicketRequest = js.native
+    var request: OnlineIdServiceTicketRequest
     
-    var value: String = js.native
+    var value: String
   }
   object IOnlineIdServiceTicket {
     
@@ -78,12 +82,11 @@ object OnlineId {
     }
   }
   
-  @js.native
   trait IOnlineIdServiceTicketRequest extends StObject {
     
-    var policy: String = js.native
+    var policy: String
     
-    var service: String = js.native
+    var service: String
   }
   object IOnlineIdServiceTicketRequest {
     
@@ -111,24 +114,23 @@ object OnlineId {
     def createOnlineIdServiceTicketRequest(service: String, policy: String): OnlineIdServiceTicketRequest = js.native
   }
   
-  @js.native
   trait IUserIdentity extends StObject {
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var id: String = js.native
+    var id: String
     
-    var isBetaAccount: Boolean = js.native
+    var isBetaAccount: Boolean
     
-    var isConfirmedPC: Boolean = js.native
+    var isConfirmedPC: Boolean
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var safeCustomerId: String = js.native
+    var safeCustomerId: String
     
-    var signInName: String = js.native
+    var signInName: String
     
-    var tickets: IVectorView[OnlineIdServiceTicket] = js.native
+    var tickets: IVectorView[OnlineIdServiceTicket]
   }
   object IUserIdentity {
     
@@ -177,10 +179,13 @@ object OnlineId {
   }
   
   @js.native
-  trait OnlineIdAuthenticator extends IOnlineIdAuthenticator
+  trait OnlineIdAuthenticator
+    extends StObject
+       with IOnlineIdAuthenticator
   
-  @js.native
-  trait OnlineIdServiceTicket extends IOnlineIdServiceTicket
+  trait OnlineIdServiceTicket
+    extends StObject
+       with IOnlineIdServiceTicket
   object OnlineIdServiceTicket {
     
     @scala.inline
@@ -190,8 +195,9 @@ object OnlineId {
     }
   }
   
-  @js.native
-  trait OnlineIdServiceTicketRequest extends IOnlineIdServiceTicketRequest
+  trait OnlineIdServiceTicketRequest
+    extends StObject
+       with IOnlineIdServiceTicketRequest
   object OnlineIdServiceTicketRequest {
     
     @scala.inline
@@ -202,47 +208,42 @@ object OnlineId {
   }
   
   @js.native
-  trait SignOutUserOperation extends IAsyncAction {
+  trait SignOutUserOperation
+    extends StObject
+       with IAsyncAction {
     
     @JSName("done")
     def done_MSignOutUserOperation[U](): Unit = js.native
     @JSName("done")
+    def done_MSignOutUserOperation[U](success: js.Function0[js.Any]): Unit = js.native
+    @JSName("done")
+    def done_MSignOutUserOperation[U](success: js.Function0[js.Any], error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+    @JSName("done")
     def done_MSignOutUserOperation[U](
-      success: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
+      success: js.Function0[js.Any],
+      error: js.Function1[/* error */ js.Any, js.Any],
       progress: js.Function1[/* progress */ js.Any, Unit]
     ): Unit = js.native
     @JSName("done")
-    def done_MSignOutUserOperation[U](success: js.UndefOr[scala.Nothing], error: js.Function1[/* error */ js.Any, _]): Unit = js.native
+    def done_MSignOutUserOperation[U](success: js.Function0[js.Any], error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): Unit = js.native
+    @JSName("done")
+    def done_MSignOutUserOperation[U](success: Unit, error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
     @JSName("done")
     def done_MSignOutUserOperation[U](
-      success: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* error */ js.Any, _],
+      success: Unit,
+      error: js.Function1[/* error */ js.Any, js.Any],
       progress: js.Function1[/* progress */ js.Any, Unit]
     ): Unit = js.native
     @JSName("done")
-    def done_MSignOutUserOperation[U](success: js.Function0[_]): Unit = js.native
-    @JSName("done")
-    def done_MSignOutUserOperation[U](
-      success: js.Function0[_],
-      error: js.UndefOr[scala.Nothing],
-      progress: js.Function1[/* progress */ js.Any, Unit]
-    ): Unit = js.native
-    @JSName("done")
-    def done_MSignOutUserOperation[U](success: js.Function0[_], error: js.Function1[/* error */ js.Any, _]): Unit = js.native
-    @JSName("done")
-    def done_MSignOutUserOperation[U](
-      success: js.Function0[_],
-      error: js.Function1[/* error */ js.Any, _],
-      progress: js.Function1[/* progress */ js.Any, Unit]
-    ): Unit = js.native
+    def done_MSignOutUserOperation[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): Unit = js.native
     
     var operation: CompletedGetResults = js.native
   }
   
   @js.native
   trait UserAuthenticationOperation
-    extends IAsyncOperation[UserIdentity]
+    extends StObject
+       with IAsyncOperation[UserIdentity]
        with IAsyncInfo {
     
     /* InferMemberOverrides */
@@ -258,8 +259,9 @@ object OnlineId {
     var operation_UserAuthenticationOperation: `6` = js.native
   }
   
-  @js.native
-  trait UserIdentity extends IUserIdentity
+  trait UserIdentity
+    extends StObject
+       with IUserIdentity
   object UserIdentity {
     
     @scala.inline

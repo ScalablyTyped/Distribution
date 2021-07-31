@@ -2,17 +2,15 @@ package typings.leafletDraw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cont extends StObject {
   
-  var cont: String = js.native
+  var cont: String
   
-  var end: String = js.native
+  var end: String
   
-  var start: String = js.native
+  var start: String
 }
 object Cont {
   

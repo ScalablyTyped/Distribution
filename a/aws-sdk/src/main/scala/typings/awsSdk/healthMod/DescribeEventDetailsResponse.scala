@@ -2,21 +2,19 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventDetailsResponse extends StObject {
   
   /**
     * Error messages for any events that could not be retrieved.
     */
-  var failedSet: js.UndefOr[DescribeEventDetailsFailedSet] = js.native
+  var failedSet: js.UndefOr[DescribeEventDetailsFailedSet] = js.undefined
   
   /**
     * Information about the events that could be retrieved.
     */
-  var successfulSet: js.UndefOr[DescribeEventDetailsSuccessfulSet] = js.native
+  var successfulSet: js.UndefOr[DescribeEventDetailsSuccessfulSet] = js.undefined
 }
 object DescribeEventDetailsResponse {
   

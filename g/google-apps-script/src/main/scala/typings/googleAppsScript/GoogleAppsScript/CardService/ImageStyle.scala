@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ImageStyle extends StObject
 object ImageStyle extends StObject {
   
   @js.native
-  sealed trait CIRCLE extends ImageStyle
+  sealed trait CIRCLE
+    extends StObject
+       with ImageStyle
   
   @js.native
-  sealed trait SQUARE extends ImageStyle
+  sealed trait SQUARE
+    extends StObject
+       with ImageStyle
 }

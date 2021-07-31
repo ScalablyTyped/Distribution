@@ -23,14 +23,15 @@ import typings.node.fsMod.WriteStream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fSMod {
   
   @JSImport("browserfs/dist/node/core/FS", JSImport.Default)
   @js.native
-  class default () extends FS
+  class default ()
+    extends StObject
+       with FS
   /* static members */
   object default {
     
@@ -90,7 +91,7 @@ object fSMod {
     def appendFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
     def appendFile(filename: String, data: js.Any, encoding: String): Unit = js.native
     def appendFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
-    def appendFile(filename: String, data: js.Any, options: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
+    def appendFile(filename: String, data: js.Any, options: Unit, cb: BFSOneArgCallback): Unit = js.native
     def appendFile(filename: String, data: js.Any, options: EncodingFlag): Unit = js.native
     def appendFile(filename: String, data: js.Any, options: EncodingFlag, cb: BFSOneArgCallback): Unit = js.native
     
@@ -184,7 +185,7 @@ object fSMod {
       * @param callback
       */
     def exists(path: String): Unit = js.native
-    def exists(path: String, cb: js.Function1[/* exists */ Boolean, _]): Unit = js.native
+    def exists(path: String, cb: js.Function1[/* exists */ Boolean, js.Any]): Unit = js.native
     
     /**
       * Test whether or not the given path exists by checking with the file system.
@@ -287,9 +288,9 @@ object fSMod {
       */
     def ftruncate(fd: Double): Unit = js.native
     def ftruncate(fd: Double, cb: BFSOneArgCallback): Unit = js.native
-    def ftruncate(fd: Double, len: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def ftruncate(fd: Double, len: Double): Unit = js.native
     def ftruncate(fd: Double, len: Double, cb: BFSOneArgCallback): Unit = js.native
+    def ftruncate(fd: Double, len: Unit, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * Synchronous ftruncate.
@@ -418,9 +419,9 @@ object fSMod {
       * @param callback
       */
     def mkdir(path: String): Unit = js.native
-    def mkdir(path: String, mode: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def mkdir(path: String, mode: js.Any): Unit = js.native
     def mkdir(path: String, mode: js.Any, cb: BFSOneArgCallback): Unit = js.native
+    def mkdir(path: String, mode: Unit, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * Synchronous `mkdir`.
@@ -693,9 +694,9 @@ object fSMod {
       */
     def symlink(srcpath: String, dstpath: String): Unit = js.native
     def symlink(srcpath: String, dstpath: String, cb: BFSOneArgCallback): Unit = js.native
-    def symlink(srcpath: String, dstpath: String, `type`: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def symlink(srcpath: String, dstpath: String, `type`: String): Unit = js.native
     def symlink(srcpath: String, dstpath: String, `type`: String, cb: BFSOneArgCallback): Unit = js.native
+    def symlink(srcpath: String, dstpath: String, `type`: Unit, cb: BFSOneArgCallback): Unit = js.native
     
     /**
       * Synchronous `symlink`.
@@ -777,12 +778,12 @@ object fSMod {
     def utimesSync(path: String, atime: Date, mtime: Date): Unit = js.native
     
     def watch(filename: String): FSWatcher = js.native
-    def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
+    def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = js.native
     def watch(filename: String, options: Persistent): FSWatcher = js.native
     def watch(
       filename: String,
       options: Persistent,
-      listener: js.Function2[/* event */ String, /* filename */ String, _]
+      listener: js.Function2[/* event */ String, /* filename */ String, js.Any]
     ): FSWatcher = js.native
     
     def watchFile(
@@ -890,9 +891,9 @@ object fSMod {
       */
     def writeFile(filename: String, data: js.Any): Unit = js.native
     def writeFile(filename: String, data: js.Any, cb: BFSOneArgCallback): Unit = js.native
-    def writeFile(filename: String, data: js.Any, encoding: js.UndefOr[scala.Nothing], cb: BFSOneArgCallback): Unit = js.native
     def writeFile(filename: String, data: js.Any, encoding: String): Unit = js.native
     def writeFile(filename: String, data: js.Any, encoding: String, cb: BFSOneArgCallback): Unit = js.native
+    def writeFile(filename: String, data: js.Any, encoding: Unit, cb: BFSOneArgCallback): Unit = js.native
     def writeFile(filename: String, data: js.Any, options: Mode): Unit = js.native
     def writeFile(filename: String, data: js.Any, options: Mode, cb: BFSOneArgCallback): Unit = js.native
     
@@ -928,14 +929,16 @@ object fSMod {
     def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double): Double = js.native
     def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
     def writeSync(fd: Double, data: String): Double = js.native
-    def writeSync(fd: Double, data: String, position: js.UndefOr[scala.Nothing], encoding: String): Double = js.native
     def writeSync(fd: Double, data: String, position: Double): Double = js.native
     def writeSync(fd: Double, data: String, position: Double, encoding: String): Double = js.native
     def writeSync(fd: Double, data: String, position: Null, encoding: String): Double = js.native
+    def writeSync(fd: Double, data: String, position: Unit, encoding: String): Double = js.native
   }
   
   @js.native
-  trait FSModule extends FS {
+  trait FSModule
+    extends StObject
+       with FS {
     
     /**
       * The FS constructor.

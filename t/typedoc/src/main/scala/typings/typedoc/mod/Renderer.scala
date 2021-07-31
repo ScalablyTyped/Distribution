@@ -2,7 +2,6 @@ package typings.typedoc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "Renderer")
@@ -15,11 +14,13 @@ class Renderer protected ()
 /* static members */
 object Renderer {
   
-  @JSImport("typedoc", "Renderer.getDefaultTheme")
+  @JSImport("typedoc", "Renderer")
   @js.native
-  def getDefaultTheme(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typedoc", "Renderer.getThemeDirectory")
-  @js.native
-  def getThemeDirectory(): String = js.native
+  @scala.inline
+  def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
+  
+  @scala.inline
+  def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
 }

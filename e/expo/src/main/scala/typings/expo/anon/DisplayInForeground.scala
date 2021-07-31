@@ -2,15 +2,13 @@ package typings.expo.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayInForeground extends StObject {
   
-  var _displayInForeground: js.UndefOr[Boolean] = js.native
+  var _displayInForeground: js.UndefOr[Boolean] = js.undefined
   
-  var sound: js.UndefOr[Boolean] = js.native
+  var sound: js.UndefOr[Boolean] = js.undefined
 }
 object DisplayInForeground {
   

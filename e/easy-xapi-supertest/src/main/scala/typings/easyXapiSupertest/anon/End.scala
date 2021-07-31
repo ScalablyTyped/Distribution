@@ -2,13 +2,11 @@ package typings.easyXapiSupertest.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: js.UndefOr[Boolean] = js.native
+  var end: js.UndefOr[Boolean] = js.undefined
 }
 object End {
   

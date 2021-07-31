@@ -3,15 +3,13 @@ package typings.reachRouter.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationProviderProps extends StObject {
   
-  var children: js.UndefOr[ReactNode | LocationProviderRenderFn] = js.native
+  var children: js.UndefOr[ReactNode | LocationProviderRenderFn] = js.undefined
   
-  var history: js.UndefOr[History] = js.native
+  var history: js.UndefOr[History] = js.undefined
 }
 object LocationProviderProps {
   

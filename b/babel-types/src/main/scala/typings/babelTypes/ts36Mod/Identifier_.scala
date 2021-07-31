@@ -3,29 +3,28 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.Identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identifier_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with LVal
      with TSEntityName {
   
-  var name: String = js.native
+  var name: String
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
   
   @JSName("type")
-  var type_Identifier_ : Identifier = js.native
+  var type_Identifier_ : Identifier
 }
 object Identifier_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, name: String, start: Double, `type`: Identifier): Identifier_ = {
+  def apply(end: Double, loc: SourceLocation, name: String, start: Double): Identifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[Identifier_]
   }
   

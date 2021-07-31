@@ -2,15 +2,13 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarScrollEdgeAppearance extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var background: js.UndefOr[OptionsTopBarScrollEdgeAppearanceBackground] = js.native
+  var background: js.UndefOr[OptionsTopBarScrollEdgeAppearanceBackground] = js.undefined
 }
 object OptionsTopBarScrollEdgeAppearance {
   

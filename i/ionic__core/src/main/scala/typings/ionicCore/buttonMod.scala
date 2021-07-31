@@ -5,21 +5,23 @@ import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.ionicCoreStrings.block
+import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.clear
 import typings.ionicCore.ionicCoreStrings.default
 import typings.ionicCore.ionicCoreStrings.full
 import typings.ionicCore.ionicCoreStrings.large
 import typings.ionicCore.ionicCoreStrings.outline
+import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.round
 import typings.ionicCore.ionicCoreStrings.small
 import typings.ionicCore.ionicCoreStrings.solid
+import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -27,7 +29,8 @@ object buttonMod {
   @JSImport("@ionic/core/dist/types/components/button/button", "Button")
   @js.native
   class Button ()
-    extends ComponentInterface
+    extends StObject
+       with ComponentInterface
        with AnchorInterface
        with ButtonInterface {
     
@@ -45,6 +48,9 @@ object buttonMod {
     
     @JSName("componentWillLoad")
     def componentWillLoad_MButton(): Unit = js.native
+    
+    /* CompleteClass */
+    var disabled: Boolean = js.native
     
     var el: HTMLElement = js.native
     
@@ -116,5 +122,8 @@ object buttonMod {
       * If `true`, activates a button with a heavier font weight.
       */
     var strong: Boolean = js.native
+    
+    /* CompleteClass */
+    var `type`: submit | reset | button = js.native
   }
 }

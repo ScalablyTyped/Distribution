@@ -3,20 +3,18 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.textMod.TextTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.TextTypeKnob, 'value'> */
-@js.native
 trait PickTextTypeKnobvalue extends StObject {
   
-  var value: TextTypeKnobValue = js.native
+  var value: js.UndefOr[TextTypeKnobValue] = js.undefined
 }
 object PickTextTypeKnobvalue {
   
   @scala.inline
-  def apply(value: TextTypeKnobValue): PickTextTypeKnobvalue = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def apply(): PickTextTypeKnobvalue = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickTextTypeKnobvalue]
   }
   
@@ -25,5 +23,8 @@ object PickTextTypeKnobvalue {
     
     @scala.inline
     def setValue(value: TextTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

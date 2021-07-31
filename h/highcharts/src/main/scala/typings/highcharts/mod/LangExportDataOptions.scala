@@ -2,27 +2,25 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangExportDataOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The annotation column title.
     */
-  var annotationHeader: js.UndefOr[String] = js.native
+  var annotationHeader: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The category column title when
     * axis type set to "datetime".
     */
-  var categoryDatetimeHeader: js.UndefOr[String] = js.native
+  var categoryDatetimeHeader: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The category column title.
     */
-  var categoryHeader: js.UndefOr[String] = js.native
+  var categoryHeader: js.UndefOr[String] = js.undefined
 }
 object LangExportDataOptions {
   

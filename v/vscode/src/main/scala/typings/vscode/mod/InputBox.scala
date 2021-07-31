@@ -2,11 +2,12 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputBox extends QuickInput {
+trait InputBox
+  extends StObject
+     with QuickInput {
   
   /**
     * Buttons for actions in the UI.
@@ -16,40 +17,36 @@ trait InputBox extends QuickInput {
   /**
     * An event signaling when the user indicated acceptance of the input value.
     */
-  def onDidAccept(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-  def onDidAccept(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidAccept(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-  def onDidAccept(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidAccept(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event signaling when the value has changed.
     */
-  def onDidChangeValue(listener: js.Function1[/* e */ String, _]): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, js.Any]): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, js.Any], thisArgs: js.Any): Disposable = js.native
   def onDidChangeValue(
-    listener: js.Function1[/* e */ String, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ String, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onDidChangeValue(listener: js.Function1[/* e */ String, _], thisArgs: js.Any): Disposable = js.native
-  def onDidChangeValue(listener: js.Function1[/* e */ String, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChangeValue(listener: js.Function1[/* e */ String, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event signaling when a button was triggered.
     */
-  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, _]): Disposable = js.native
+  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, js.Any]): Disposable = js.native
+  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, js.Any], thisArgs: js.Any): Disposable = js.native
   def onDidTriggerButton(
-    listener: js.Function1[/* e */ QuickInputButton, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ QuickInputButton, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, _], thisArgs: js.Any): Disposable = js.native
   def onDidTriggerButton(
-    listener: js.Function1[/* e */ QuickInputButton, _],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ QuickInputButton, js.Any],
+    thisArgs: Unit,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
   

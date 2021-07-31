@@ -2,26 +2,24 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dimension extends StObject {
   
   /**
     * The data type of the dimension for the time series data point.
     */
-  var DimensionValueType: js.UndefOr[typings.awsSdk.timestreamwriteMod.DimensionValueType] = js.native
+  var DimensionValueType: js.UndefOr[typings.awsSdk.timestreamwriteMod.DimensionValueType] = js.undefined
   
   /**
     *  Dimension represents the meta data attributes of the time series. For example, the name and availability zone of an EC2 instance or the name of the manufacturer of a wind turbine are dimensions. Dimension names can only contain alphanumeric characters and underscores. Dimension names cannot end with an underscore. 
     */
-  var Name: StringValue256 = js.native
+  var Name: StringValue256
   
   /**
     * The value of the dimension.
     */
-  var Value: StringValue2048 = js.native
+  var Value: StringValue2048
 }
 object Dimension {
   

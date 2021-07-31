@@ -2,38 +2,36 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JavascriptDialogOpeningEvent extends StObject {
   
   /**
     * Default dialog prompt.
     */
-  var defaultPrompt: js.UndefOr[String] = js.native
+  var defaultPrompt: js.UndefOr[String] = js.undefined
   
   /**
     * True iff browser is capable showing or acting on the given dialog. When browser has no
     * dialog handler for given target, calling alert while Page domain is engaged will stall
     * the page execution. Execution can be resumed via calling Page.handleJavaScriptDialog.
     */
-  var hasBrowserHandler: Boolean = js.native
+  var hasBrowserHandler: Boolean
   
   /**
     * Message that will be displayed by the dialog.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Dialog type.
     */
-  var `type`: DialogType = js.native
+  var `type`: DialogType
   
   /**
     * Frame url.
     */
-  var url: String = js.native
+  var url: String
 }
 object JavascriptDialogOpeningEvent {
   

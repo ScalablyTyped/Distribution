@@ -3,13 +3,11 @@ package typings.elasticsearch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldStatsResponseIndex extends StObject {
   
-  var fields: StringDictionary[FieldStatsResponseField] = js.native
+  var fields: StringDictionary[FieldStatsResponseField]
 }
 object FieldStatsResponseIndex {
   

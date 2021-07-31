@@ -3,20 +3,18 @@ package typings.exceljs.anon
 import typings.exceljs.mod.BorderStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.BorderDiagonal> */
-@js.native
 trait PartialBorderDiagonal extends StObject {
   
-  var color: js.UndefOr[PartialColor] = js.native
+  var color: js.UndefOr[PartialColor] = js.undefined
   
-  var down: js.UndefOr[Boolean] = js.native
+  var down: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[BorderStyle] = js.native
+  var style: js.UndefOr[BorderStyle] = js.undefined
   
-  var up: js.UndefOr[Boolean] = js.native
+  var up: js.UndefOr[Boolean] = js.undefined
 }
 object PartialBorderDiagonal {
   

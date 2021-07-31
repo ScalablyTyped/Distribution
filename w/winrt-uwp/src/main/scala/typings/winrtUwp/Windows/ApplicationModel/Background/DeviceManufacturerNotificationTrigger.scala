@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task to enable device manufacturer operations. */
-@js.native
 trait DeviceManufacturerNotificationTrigger extends StObject {
   
   /** Gets whether the trigger is used only once. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
   
   /** Gets an app-defined string that qualifies the trigger. */
-  var triggerQualifier: String = js.native
+  var triggerQualifier: String
 }
 object DeviceManufacturerNotificationTrigger {
   

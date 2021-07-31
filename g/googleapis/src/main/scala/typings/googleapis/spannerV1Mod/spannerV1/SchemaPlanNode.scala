@@ -3,24 +3,22 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Node information for nodes appearing in a QueryPlan.plan_nodes.
   */
-@js.native
 trait SchemaPlanNode extends StObject {
   
   /**
     * List of child node `index`es and their relationship to this parent.
     */
-  var childLinks: js.UndefOr[js.Array[SchemaChildLink]] = js.native
+  var childLinks: js.UndefOr[js.Array[SchemaChildLink]] = js.undefined
   
   /**
     * The display name for the node.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The execution statistics associated with the node, contained in a group
@@ -28,12 +26,12 @@ trait SchemaPlanNode extends StObject {
     * a profile query. For example, number of executions, number of rows/time
     * per execution etc.
     */
-  var executionStats: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var executionStats: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The `PlanNode`&#39;s index in node list.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Used to determine the type of node. May be needed for visualizing
@@ -41,7 +39,7 @@ trait SchemaPlanNode extends StObject {
     * SCALAR node, it will have a condensed representation which can be used to
     * directly embed a description of the node in its parent.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Attributes relevant to the node contained in a group of key-value pairs.
@@ -49,12 +47,12 @@ trait SchemaPlanNode extends StObject {
     * information in its metadata:      { &quot;parameter_reference&quot;:
     * &quot;param1&quot;,       &quot;parameter_type&quot;: &quot;array&quot; }
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Condensed representation for SCALAR nodes.
     */
-  var shortRepresentation: js.UndefOr[SchemaShortRepresentation] = js.native
+  var shortRepresentation: js.UndefOr[SchemaShortRepresentation] = js.undefined
 }
 object SchemaPlanNode {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.datatransfer.dnd.XDragGestureRecognizer
   * @see com.sun.star.datatransfer.dnd.XDragSource
   */
-@js.native
-trait XDragSourceListener extends XEventListener {
+trait XDragSourceListener
+  extends StObject
+     with XEventListener {
   
   /**
     * This method is invoked to signify that the Drag and Drop operation is complete.
     * @param dsde The {@link DragSourceDropEvent}
     */
-  def dragDropEnd(dsde: DragSourceDropEvent): Unit = js.native
+  def dragDropEnd(dsde: DragSourceDropEvent): Unit
   
   /**
     * Called as the hotspot enters a platform dependent drop site.
@@ -28,7 +28,7 @@ trait XDragSourceListener extends XEventListener {
     * **NOTE:** currently this notification can not be ensured by all implementations. Do not rely on it !
     * @param dsde The {@link DragSourceDragEvent} .
     */
-  def dragEnter(dsde: DragSourceDragEvent): Unit = js.native
+  def dragEnter(dsde: DragSourceDragEvent): Unit
   
   /**
     * Called as the hotspot exits a platform dependent drop site.
@@ -36,19 +36,19 @@ trait XDragSourceListener extends XEventListener {
     * **NOTE:** Currently this notification can not be ensured by all implementations. Do not rely on it !
     * @param dse The {@link DragSourceEvent} .
     */
-  def dragExit(dse: DragSourceEvent): Unit = js.native
+  def dragExit(dse: DragSourceEvent): Unit
   
   /**
     * Called as the hotspot moves over a platform dependent drop site.
     * @param dsde The {@link DragSourceEvent}
     */
-  def dragOver(dsde: DragSourceDragEvent): Unit = js.native
+  def dragOver(dsde: DragSourceDragEvent): Unit
   
   /**
     * Called when the user has modified the drop gesture.
     * @param dsde The {@link DragSourceEvent} .
     */
-  def dropActionChanged(dsde: DragSourceDragEvent): Unit = js.native
+  def dropActionChanged(dsde: DragSourceDragEvent): Unit
 }
 object XDragSourceListener {
   

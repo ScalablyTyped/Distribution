@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devicefarmProjectMod {
@@ -24,7 +23,7 @@ object devicefarmProjectMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ProjectArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ProjectArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -40,6 +39,10 @@ object devicefarmProjectMod {
   /* static members */
   object Project {
     
+    @JSImport("@pulumi/aws/devicefarm/project", "Project")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Project resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,35 +52,29 @@ object devicefarmProjectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/devicefarm/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Project = js.native
-    @JSImport("@pulumi/aws/devicefarm/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Project = js.native
-    @JSImport("@pulumi/aws/devicefarm/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProjectState): Project = js.native
-    @JSImport("@pulumi/aws/devicefarm/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): Project = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Project]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProjectState): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Project]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
     
     /**
       * Returns true if the given object is an instance of Project.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/devicefarm/project", "Project.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/devicefarm/project.Project */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/devicefarm/project.Project */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/devicefarm/project.Project */ Boolean]
   }
   
-  @js.native
   trait ProjectArgs extends StObject {
     
     /**
       * The name of the project
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ProjectArgs {
     
@@ -98,18 +95,17 @@ object devicefarmProjectMod {
     }
   }
   
-  @js.native
   trait ProjectState extends StObject {
     
     /**
       * The Amazon Resource Name of this project
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the project
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ProjectState {
     

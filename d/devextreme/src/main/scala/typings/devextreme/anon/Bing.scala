@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bing extends StObject {
   
-  var bing: js.UndefOr[String] = js.native
+  var bing: js.UndefOr[String] = js.undefined
   
-  var google: js.UndefOr[String] = js.native
+  var google: js.UndefOr[String] = js.undefined
   
-  var googleStatic: js.UndefOr[String] = js.native
+  var googleStatic: js.UndefOr[String] = js.undefined
 }
 object Bing {
   

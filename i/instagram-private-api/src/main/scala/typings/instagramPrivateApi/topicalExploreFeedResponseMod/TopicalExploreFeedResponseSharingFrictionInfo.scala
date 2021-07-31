@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseSharingFrictionInfo extends StObject {
   
-  var bloks_app_url: Null = js.native
+  var bloks_app_url: Null
   
-  var should_have_sharing_friction: Boolean = js.native
+  var should_have_sharing_friction: Boolean
 }
 object TopicalExploreFeedResponseSharingFrictionInfo {
   

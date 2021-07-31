@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Inherits properties from its parent, AudioNode. */
 @js.native
-trait DynamicsCompressorNode extends AudioNode {
+trait DynamicsCompressorNode
+  extends StObject
+     with AudioNode {
   
   val attack: AudioParam = js.native
   

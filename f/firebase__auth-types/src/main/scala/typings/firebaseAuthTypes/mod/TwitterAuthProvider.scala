@@ -2,7 +2,6 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "TwitterAuthProvider")
@@ -27,7 +26,6 @@ object TwitterAuthProvider {
   @scala.inline
   def TWITTER_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWITTER_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
-  @JSImport("@firebase/auth-types", "TwitterAuthProvider.credential")
-  @js.native
-  def credential(token: String, secret: String): AuthCredential = js.native
+  @scala.inline
+  def credential(token: String, secret: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
 }

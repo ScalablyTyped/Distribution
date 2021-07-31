@@ -2,26 +2,24 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
   /**
     * x 轴的角速度
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * y 轴的角速度
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * z 轴的角速度
     */
-  var z: Double = js.native
+  var z: Double
 }
 object X {
   

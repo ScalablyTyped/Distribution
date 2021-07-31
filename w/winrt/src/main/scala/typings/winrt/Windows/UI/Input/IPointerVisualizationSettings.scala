@@ -2,15 +2,13 @@ package typings.winrt.Windows.UI.Input
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerVisualizationSettings extends StObject {
   
-  var isBarrelButtonFeedbackEnabled: Boolean = js.native
+  var isBarrelButtonFeedbackEnabled: Boolean
   
-  var isContactFeedbackEnabled: Boolean = js.native
+  var isContactFeedbackEnabled: Boolean
 }
 object IPointerVisualizationSettings {
   

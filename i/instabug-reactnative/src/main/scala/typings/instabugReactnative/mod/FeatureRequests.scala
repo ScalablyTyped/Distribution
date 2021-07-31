@@ -2,10 +2,13 @@ package typings.instabugReactnative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FeatureRequests {
+  
+  @JSImport("instabug-reactnative", "FeatureRequests")
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait actionTypes extends StObject
@@ -14,41 +17,42 @@ object FeatureRequests {
   object actionTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.FeatureRequests.actionTypes with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.FeatureRequests.actionTypes & Double] = js.native
     
     @js.native
     sealed trait addCommentToFeature
-      extends typings.instabugReactnative.mod.FeatureRequests.actionTypes
-    /* 3 */ val addCommentToFeature: typings.instabugReactnative.mod.FeatureRequests.actionTypes.addCommentToFeature with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.FeatureRequests.actionTypes
+    /* 3 */ val addCommentToFeature: typings.instabugReactnative.mod.FeatureRequests.actionTypes.addCommentToFeature & Double = js.native
     
     @js.native
     sealed trait allActions
-      extends typings.instabugReactnative.mod.FeatureRequests.actionTypes
-    /* 0 */ val allActions: typings.instabugReactnative.mod.FeatureRequests.actionTypes.allActions with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.FeatureRequests.actionTypes
+    /* 0 */ val allActions: typings.instabugReactnative.mod.FeatureRequests.actionTypes.allActions & Double = js.native
     
     @js.native
     sealed trait reportBug
-      extends typings.instabugReactnative.mod.FeatureRequests.actionTypes
-    /* 1 */ val reportBug: typings.instabugReactnative.mod.FeatureRequests.actionTypes.reportBug with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.FeatureRequests.actionTypes
+    /* 1 */ val reportBug: typings.instabugReactnative.mod.FeatureRequests.actionTypes.reportBug & Double = js.native
     
     @js.native
     sealed trait requestNewFeature
-      extends typings.instabugReactnative.mod.FeatureRequests.actionTypes
-    /* 2 */ val requestNewFeature: typings.instabugReactnative.mod.FeatureRequests.actionTypes.requestNewFeature with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.FeatureRequests.actionTypes
+    /* 2 */ val requestNewFeature: typings.instabugReactnative.mod.FeatureRequests.actionTypes.requestNewFeature & Double = js.native
   }
   
-  @JSImport("instabug-reactnative", "FeatureRequests.setEmailFieldRequired")
-  @js.native
+  @scala.inline
   def setEmailFieldRequired(
     isEmailFieldRequired: Boolean,
     actionTypes: js.Array[typings.instabugReactnative.mod.FeatureRequests.actionTypes]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEmailFieldRequired")(isEmailFieldRequired.asInstanceOf[js.Any], actionTypes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "FeatureRequests.setEnabled")
-  @js.native
-  def setEnabled(isEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "FeatureRequests.show")
-  @js.native
-  def show(): Unit = js.native
+  @scala.inline
+  def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
 }

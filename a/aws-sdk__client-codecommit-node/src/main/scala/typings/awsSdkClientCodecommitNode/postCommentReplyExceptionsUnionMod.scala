@@ -2,7 +2,6 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postCommentReplyExceptionsUnionMod {
@@ -21,66 +20,50 @@ object postCommentReplyExceptionsUnionMod {
   object PostCommentReplyExceptionsUnion {
     
     @scala.inline
-    def ClientRequestTokenRequiredException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ClientRequestTokenRequiredException
-    ): typings.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def ClientRequestTokenRequiredException(): typings.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException = {
+      val __obj = js.Dynamic.literal(name = "ClientRequestTokenRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException]
     }
     
     @scala.inline
-    def CommentContentRequiredException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentRequiredException
-    ): typings.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def CommentContentRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException = {
+      val __obj = js.Dynamic.literal(name = "CommentContentRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException]
     }
     
     @scala.inline
-    def CommentContentSizeLimitExceededException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentSizeLimitExceededException
-    ): typings.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def CommentContentSizeLimitExceededException(): typings.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "CommentContentSizeLimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException]
     }
     
     @scala.inline
-    def CommentDoesNotExistException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDoesNotExistException
-    ): typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def CommentDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "CommentDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException]
     }
     
     @scala.inline
-    def CommentIdRequiredException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentIdRequiredException
-    ): typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def CommentIdRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException = {
+      val __obj = js.Dynamic.literal(name = "CommentIdRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException]
     }
     
     @scala.inline
-    def IdempotencyParameterMismatchException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.IdempotencyParameterMismatchException
-    ): typings.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def IdempotencyParameterMismatchException(): typings.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException = {
+      val __obj = js.Dynamic.literal(name = "IdempotencyParameterMismatchException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException]
     }
     
     @scala.inline
-    def InvalidClientRequestTokenException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidClientRequestTokenException
-    ): typings.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidClientRequestTokenException(): typings.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException = {
+      val __obj = js.Dynamic.literal(name = "InvalidClientRequestTokenException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException]
     }
     
     @scala.inline
-    def InvalidCommentIdException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommentIdException
-    ): typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidCommentIdException(): typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException = {
+      val __obj = js.Dynamic.literal(name = "InvalidCommentIdException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException]
     }
   }

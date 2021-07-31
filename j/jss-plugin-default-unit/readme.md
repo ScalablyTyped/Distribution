@@ -10,9 +10,9 @@ JSS plugin that adds default custom unit to numeric values where needed
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-default-unit |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, px, unit, default-unit |
-| # releases         | 40 |
+| # releases         | 30 |
 | # dependents       | 12 |
-| # downloads        | 49015542 |
+| # downloads        | 56912875 |
 | # stars            | 0 |
 
 ## Links

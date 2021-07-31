@@ -2,7 +2,6 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -50,7 +49,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.eip
   - typings.fridaGum.fridaGumStrings.rip
 */
-trait X86Register extends _X86CallArgument
+trait X86Register
+  extends StObject
+     with _X86CallArgument
 object X86Register {
   
   @scala.inline

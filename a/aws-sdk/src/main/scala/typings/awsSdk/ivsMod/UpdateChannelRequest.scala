@@ -2,36 +2,34 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelRequest extends StObject {
   
   /**
     * ARN of the channel to be updated.
     */
-  var arn: ChannelArn = js.native
+  var arn: ChannelArn
   
   /**
     * Whether the channel is authorized. Default: false.
     */
-  var authorized: js.UndefOr[Boolean] = js.native
+  var authorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Channel latency mode. Default: LOW.
     */
-  var latencyMode: js.UndefOr[ChannelLatencyMode] = js.native
+  var latencyMode: js.UndefOr[ChannelLatencyMode] = js.undefined
   
   /**
     * Channel name.
     */
-  var name: js.UndefOr[ChannelName] = js.native
+  var name: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * Channel type, which determines the allowable resolution and bitrate. If you exceed the allowable resolution or bitrate, the stream probably will disconnect immediately. Valid values:    STANDARD: Multiple qualities are generated from the original input, to automatically give viewers the best experience for their devices and network conditions. Vertical resolution can be up to 1080 and bitrate can be up to 8.5 Mbps.    BASIC: Amazon IVS delivers the original input to viewers. The viewer’s video-quality choice is limited to the original input. Vertical resolution can be up to 480 and bitrate can be up to 1.5 Mbps.   Default: STANDARD.
     */
-  var `type`: js.UndefOr[ChannelType] = js.native
+  var `type`: js.UndefOr[ChannelType] = js.undefined
 }
 object UpdateChannelRequest {
   

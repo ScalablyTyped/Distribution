@@ -3,17 +3,15 @@ package typings.reactNativePopupDialog
 import typings.reactNativePopupDialog.mod.SlideFromTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AnimationDuration extends StObject {
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var toValue: js.UndefOr[Double] = js.native
+    var toValue: js.UndefOr[Double] = js.undefined
   }
   object AnimationDuration {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SlideFrom extends StObject {
     
-    var slideFrom: js.UndefOr[SlideFromTypes] = js.native
+    var slideFrom: js.UndefOr[SlideFromTypes] = js.undefined
     
-    var toValue: js.UndefOr[Double] = js.native
+    var toValue: js.UndefOr[Double] = js.undefined
   }
   object SlideFrom {
     

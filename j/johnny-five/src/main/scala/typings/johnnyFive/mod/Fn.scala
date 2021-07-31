@@ -2,7 +2,6 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Fn")
@@ -11,75 +10,61 @@ class Fn () extends StObject
 /* static members */
 object Fn {
   
-  @JSImport("johnny-five", "Fn.bitSize")
+  @JSImport("johnny-five", "Fn")
   @js.native
-  def bitSize(n: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("johnny-five", "Fn.bitValue")
-  @js.native
-  def bitValue(bit: Double): Double = js.native
+  @scala.inline
+  def bitSize(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bitSize")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.constrain")
-  @js.native
-  def constrain(value: Double, lower: Double, upper: Double): Double = js.native
+  @scala.inline
+  def bitValue(bit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bitValue")(bit.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.fmap")
-  @js.native
-  def fmap(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = js.native
+  @scala.inline
+  def constrain(value: Double, lower: Double, upper: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("constrain")(value.asInstanceOf[js.Any], lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.fscale")
-  @js.native
-  def fscale(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = js.native
+  @scala.inline
+  def fmap(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fmap")(value.asInstanceOf[js.Any], fromLow.asInstanceOf[js.Any], fromHigh.asInstanceOf[js.Any], toLow.asInstanceOf[js.Any], toHigh.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.inRange")
-  @js.native
-  def inRange(value: Double, lower: Double, upper: Double): Boolean = js.native
+  @scala.inline
+  def fscale(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fscale")(value.asInstanceOf[js.Any], fromLow.asInstanceOf[js.Any], fromHigh.asInstanceOf[js.Any], toLow.asInstanceOf[js.Any], toHigh.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.int16")
-  @js.native
-  def int16(msb: Double, lsb: Double): Double = js.native
+  @scala.inline
+  def inRange(value: Double, lower: Double, upper: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inRange")(value.asInstanceOf[js.Any], lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("johnny-five", "Fn.int24")
-  @js.native
-  def int24(b16: Double, b8: Double, b0: Double): Double = js.native
+  @scala.inline
+  def int16(msb: Double, lsb: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("int16")(msb.asInstanceOf[js.Any], lsb.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.int32")
-  @js.native
-  def int32(b24: Double, b16: Double, b8: Double, b0: Double): Double = js.native
+  @scala.inline
+  def int24(b16: Double, b8: Double, b0: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("int24")(b16.asInstanceOf[js.Any], b8.asInstanceOf[js.Any], b0.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.map")
-  @js.native
-  def map(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = js.native
+  @scala.inline
+  def int32(b24: Double, b16: Double, b8: Double, b0: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("int32")(b24.asInstanceOf[js.Any], b16.asInstanceOf[js.Any], b8.asInstanceOf[js.Any], b0.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.range")
-  @js.native
-  def range(lower: Double, upper: Double, tick: Double): js.Array[Double] = js.native
+  @scala.inline
+  def map(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(value.asInstanceOf[js.Any], fromLow.asInstanceOf[js.Any], fromHigh.asInstanceOf[js.Any], toLow.asInstanceOf[js.Any], toHigh.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.scale")
-  @js.native
-  def scale(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = js.native
+  @scala.inline
+  def range(lower: Double, upper: Double, tick: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(lower.asInstanceOf[js.Any], upper.asInstanceOf[js.Any], tick.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("johnny-five", "Fn.sum")
-  @js.native
-  def sum(values: js.Array[Double]): Double = js.native
+  @scala.inline
+  def scale(value: Double, fromLow: Double, fromHigh: Double, toLow: Double, toHigh: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(value.asInstanceOf[js.Any], fromLow.asInstanceOf[js.Any], fromHigh.asInstanceOf[js.Any], toLow.asInstanceOf[js.Any], toHigh.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.toFixed")
-  @js.native
-  def toFixed(number: Double, digits: Double): Double = js.native
+  @scala.inline
+  def sum(values: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.uid")
-  @js.native
-  def uid(): String = js.native
+  @scala.inline
+  def toFixed(number: Double, digits: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(number.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.uint16")
-  @js.native
-  def uint16(msb: Double, lsb: Double): Double = js.native
+  @scala.inline
+  def uid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[String]
   
-  @JSImport("johnny-five", "Fn.uint24")
-  @js.native
-  def uint24(b16: Double, b8: Double, b0: Double): Double = js.native
+  @scala.inline
+  def uint16(msb: Double, lsb: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("uint16")(msb.asInstanceOf[js.Any], lsb.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("johnny-five", "Fn.uint32")
-  @js.native
-  def uint32(b24: Double, b16: Double, b8: Double, b0: Double): Double = js.native
+  @scala.inline
+  def uint24(b16: Double, b8: Double, b0: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("uint24")(b16.asInstanceOf[js.Any], b8.asInstanceOf[js.Any], b0.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def uint32(b24: Double, b16: Double, b8: Double, b0: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("uint32")(b24.asInstanceOf[js.Any], b16.asInstanceOf[js.Any], b8.asInstanceOf[js.Any], b0.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -33,197 +33,170 @@ import typings.std.Pick
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@mdx-js/react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@mdx-js/react", "MDXProvider")
   @js.native
   val MDXProvider: FC[MDXProviderProps] = js.native
   
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
   def mdx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-    props: (ClassAttributes[ClassicComponent[P, ComponentState]]) with P,
+    props: (ClassAttributes[ClassicComponent[P, ComponentState]]) & P,
     children: ReactNode*
-  ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
+  ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](
-    `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-    props: js.UndefOr[scala.Nothing],
-    children: ReactNode*
-  ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-  /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
   def mdx[P /* <: js.Object */](
     `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
     props: Null,
     children: ReactNode*
-  ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
+  ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes with P, children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](
+    `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+    props: Unit,
+    children: ReactNode*
+  ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  /* was `typeof createElement` */
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   // Custom components
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
   def mdx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-    props: ClassAttributes[T] with P,
+    props: ClassAttributes[T] & P,
     children: ReactNode*
-  ): ReactSVGElement = js.native
+  ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-    props: js.UndefOr[scala.Nothing],
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
   def mdx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
     props: Null,
     children: ReactNode*
-  ): ReactSVGElement = js.native
+  ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
+  @scala.inline
+  def mdx[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+    props: Unit,
+    children: ReactNode*
+  ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: js.UndefOr[scala.Nothing], children: ReactNode*): CElement[P, T] = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx[P /* <: js.Object */, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): DOMElement[P, T] = js.native
+  @scala.inline
+  def mdx[P /* <: js.Object */, T /* <: Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+  
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = js.native
+  @scala.inline
+  def mdx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
+  def mdx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  /* was `typeof createElement` */
+  @scala.inline
+  def mdx_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+  
+  /* was `typeof createElement` */
+  @scala.inline
   def mdx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-    props: ClassAttributes[T] with P,
+    props: ClassAttributes[T] & P,
     children: ReactNode*
-  ): DetailedReactHTMLElement[P, T] = js.native
+  ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-    props: js.UndefOr[scala.Nothing],
-    children: ReactNode*
-  ): DetailedReactHTMLElement[P, T] = js.native
-  /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
   def mdx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
     `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
     props: Null,
     children: ReactNode*
-  ): DetailedReactHTMLElement[P, T] = js.native
+  ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+    props: Unit,
+    children: ReactNode*
+  ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+  
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = js.native
+  @scala.inline
+  def mdx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  /* was `typeof createElement` */
+  @scala.inline
+  def mdx_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  
   // DOM Elements
   // TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
+  @scala.inline
   def mdx_input(
     `type`: input,
-    props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
+    props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
     children: ReactNode*
-  ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_input(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  @scala.inline
+  def mdx_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
   /* was `typeof createElement` */
-  @JSImport("@mdx-js/react", "mdx")
-  @js.native
-  def mdx_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+  @scala.inline
+  def mdx_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("mdx")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
   
-  @JSImport("@mdx-js/react", "useMDXComponents")
-  @js.native
-  def useMDXComponents(): MDXProviderComponents = js.native
-  @JSImport("@mdx-js/react", "useMDXComponents")
-  @js.native
-  def useMDXComponents(components: MDXProviderComponentsProp): MDXProviderComponents = js.native
+  @scala.inline
+  def useMDXComponents(): MDXProviderComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")().asInstanceOf[MDXProviderComponents]
+  @scala.inline
+  def useMDXComponents(components: MDXProviderComponentsProp): MDXProviderComponents = ^.asInstanceOf[js.Dynamic].applyDynamic("useMDXComponents")(components.asInstanceOf[js.Any]).asInstanceOf[MDXProviderComponents]
   
-  @JSImport("@mdx-js/react", "withMDXComponents")
-  @js.native
-  def withMDXComponents[GProps /* <: InjectedMDXProviderProps */](Component: ComponentType[GProps]): FC[Except[GProps, components]] = js.native
+  @scala.inline
+  def withMDXComponents[GProps /* <: InjectedMDXProviderProps */](Component: ComponentType[GProps]): FC[Except[GProps, components]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMDXComponents")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[Except[GProps, components]]]
   
   // Taken from https://github.com/sindresorhus/type-fest/blob/794de74c6e0d1650fe07b91d22d970b68c1d3e37/source/except.d.ts#L1-L22
   type Except[ObjectType, KeysType /* <: /* keyof ObjectType */ String */] = Pick[ObjectType, Exclude[/* keyof ObjectType */ String, KeysType]]
   
-  @js.native
   trait InjectedMDXProviderProps extends StObject {
     
-    var components: MDXProviderComponents = js.native
+    var components: MDXProviderComponents
   }
   object InjectedMDXProviderProps {
     
@@ -241,8 +214,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait MDXProviderComponents extends /**
+  trait MDXProviderComponents
+    extends StObject
+       with /**
     * Any other components we wish to define
     */
   /* key */ StringDictionary[ReactNode] {
@@ -250,124 +224,124 @@ object mod {
     /**
       * Link    <https://mdxjs.com> or [MDX](https://mdxjs.com)
       */
-    var a: js.UndefOr[ComponentType[_]] = js.native
+    var a: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Blockquote    >
       */
-    var blockquote: js.UndefOr[ComponentType[_]] = js.native
+    var blockquote: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Code    `\code```
       */
-    var code: js.UndefOr[ComponentType[_]] = js.native
+    var code: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Delete    ~~strikethrough~~
       */
-    var delete: js.UndefOr[ComponentType[_]] = js.native
+    var delete: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Emphasis    _emphasis_
       */
-    var em: js.UndefOr[ComponentType[_]] = js.native
+    var em: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Heading 1    #
       */
-    var h1: js.UndefOr[ComponentType[_]] = js.native
+    var h1: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Heading 2    ##
       */
-    var h2: js.UndefOr[ComponentType[_]] = js.native
+    var h2: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Heading 3    ###
       */
-    var h3: js.UndefOr[ComponentType[_]] = js.native
+    var h3: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Heading 4    ####
       */
-    var h4: js.UndefOr[ComponentType[_]] = js.native
+    var h4: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Heading 5    #####
       */
-    var h5: js.UndefOr[ComponentType[_]] = js.native
+    var h5: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Heading 6    ######
       */
-    var h6: js.UndefOr[ComponentType[_]] = js.native
+    var h6: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Break    ---
       */
-    var hr: js.UndefOr[ComponentType[_]] = js.native
+    var hr: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Image    ![alt](https://mdx-logo.now.sh)
       */
-    var img: js.UndefOr[ComponentType[_]] = js.native
+    var img: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * InlineCode    `inlineCode`
       */
-    var inlineCode: js.UndefOr[ComponentType[_]] = js.native
+    var inlineCode: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * List item
       */
-    var li: js.UndefOr[ComponentType[_]] = js.native
+    var li: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Ordered list    1.
       */
-    var ol: js.UndefOr[ComponentType[_]] = js.native
+    var ol: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Paragraph
       */
-    var p: js.UndefOr[ComponentType[_]] = js.native
+    var p: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Pre
       */
-    var pre: js.UndefOr[ComponentType[_]] = js.native
+    var pre: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Strong    **strong**
       */
-    var strong: js.UndefOr[ComponentType[_]] = js.native
+    var strong: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Table
       */
-    var table: js.UndefOr[ComponentType[_]] = js.native
+    var table: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
-    var td: js.UndefOr[ComponentType[_]] = js.native
+    var td: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Table Cell
       */
-    var th: js.UndefOr[ComponentType[_]] = js.native
+    var th: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Thematic break    ***
       */
-    var thematicBreak: js.UndefOr[ComponentType[_]] = js.native
+    var thematicBreak: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * Table row
       */
-    var tr: js.UndefOr[ComponentType[_]] = js.native
+    var tr: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * List    -
       */
-    var ul: js.UndefOr[ComponentType[_]] = js.native
+    var ul: js.UndefOr[ComponentType[js.Any]] = js.undefined
     
     /**
       * The wrapper component can be used to set the layout for the MDX document.
@@ -378,7 +352,7 @@ object mod {
       * This means that you can do powerful things with the MDX document
       * elements.
       */
-    var wrapper: js.UndefOr[ComponentType[_]] = js.native
+    var wrapper: js.UndefOr[ComponentType[js.Any]] = js.undefined
   }
   object MDXProviderComponents {
     
@@ -392,157 +366,157 @@ object mod {
     implicit class MDXProviderComponentsMutableBuilder[Self <: MDXProviderComponents] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setA(value: ComponentType[_]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      def setA(value: ComponentType[js.Any]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
       @scala.inline
-      def setBlockquote(value: ComponentType[_]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+      def setBlockquote(value: ComponentType[js.Any]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
       
       @scala.inline
-      def setCode(value: ComponentType[_]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      def setCode(value: ComponentType[js.Any]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
       @scala.inline
-      def setDelete(value: ComponentType[_]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      def setDelete(value: ComponentType[js.Any]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
       @scala.inline
-      def setEm(value: ComponentType[_]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+      def setEm(value: ComponentType[js.Any]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEmUndefined: Self = StObject.set(x, "em", js.undefined)
       
       @scala.inline
-      def setH1(value: ComponentType[_]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+      def setH1(value: ComponentType[js.Any]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
       
       @scala.inline
-      def setH2(value: ComponentType[_]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+      def setH2(value: ComponentType[js.Any]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
       
       @scala.inline
-      def setH3(value: ComponentType[_]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+      def setH3(value: ComponentType[js.Any]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
       
       @scala.inline
-      def setH4(value: ComponentType[_]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+      def setH4(value: ComponentType[js.Any]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
       
       @scala.inline
-      def setH5(value: ComponentType[_]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+      def setH5(value: ComponentType[js.Any]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
       
       @scala.inline
-      def setH6(value: ComponentType[_]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+      def setH6(value: ComponentType[js.Any]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
       
       @scala.inline
-      def setHr(value: ComponentType[_]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+      def setHr(value: ComponentType[js.Any]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHrUndefined: Self = StObject.set(x, "hr", js.undefined)
       
       @scala.inline
-      def setImg(value: ComponentType[_]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      def setImg(value: ComponentType[js.Any]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
       @scala.inline
-      def setInlineCode(value: ComponentType[_]): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
+      def setInlineCode(value: ComponentType[js.Any]): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInlineCodeUndefined: Self = StObject.set(x, "inlineCode", js.undefined)
       
       @scala.inline
-      def setLi(value: ComponentType[_]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+      def setLi(value: ComponentType[js.Any]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLiUndefined: Self = StObject.set(x, "li", js.undefined)
       
       @scala.inline
-      def setOl(value: ComponentType[_]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+      def setOl(value: ComponentType[js.Any]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
       
       @scala.inline
-      def setP(value: ComponentType[_]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      def setP(value: ComponentType[js.Any]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
       @scala.inline
-      def setPre(value: ComponentType[_]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      def setPre(value: ComponentType[js.Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
       @scala.inline
-      def setStrong(value: ComponentType[_]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      def setStrong(value: ComponentType[js.Any]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
       
       @scala.inline
-      def setTable(value: ComponentType[_]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      def setTable(value: ComponentType[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
       @scala.inline
-      def setTd(value: ComponentType[_]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+      def setTd(value: ComponentType[js.Any]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTdUndefined: Self = StObject.set(x, "td", js.undefined)
       
       @scala.inline
-      def setTh(value: ComponentType[_]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+      def setTh(value: ComponentType[js.Any]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setThUndefined: Self = StObject.set(x, "th", js.undefined)
       
       @scala.inline
-      def setThematicBreak(value: ComponentType[_]): Self = StObject.set(x, "thematicBreak", value.asInstanceOf[js.Any])
+      def setThematicBreak(value: ComponentType[js.Any]): Self = StObject.set(x, "thematicBreak", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setThematicBreakUndefined: Self = StObject.set(x, "thematicBreak", js.undefined)
       
       @scala.inline
-      def setTr(value: ComponentType[_]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      def setTr(value: ComponentType[js.Any]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
       
       @scala.inline
-      def setUl(value: ComponentType[_]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+      def setUl(value: ComponentType[js.Any]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
       
       @scala.inline
-      def setWrapper(value: ComponentType[_]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      def setWrapper(value: ComponentType[js.Any]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
@@ -551,12 +525,11 @@ object mod {
   
   type MDXProviderComponentsProp = MDXProviderComponents | (js.Function1[/* components */ MDXProviderComponents, MDXProviderComponents])
   
-  @js.native
   trait MDXProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var components: MDXProviderComponentsProp = js.native
+    var components: MDXProviderComponentsProp
   }
   object MDXProviderProps {
     

@@ -6,68 +6,66 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about a package. */
-@js.native
 trait Package extends StObject {
   
   /** Gets the packages on which the current package depends. */
-  var dependencies: IVectorView[Package] = js.native
+  var dependencies: IVectorView[Package]
   
   /** Gets the description of the package. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the display name of the package. */
-  var displayName: String = js.native
+  var displayName: String
   
-  var getAppListEntriesAsync: js.Any = js.native
+  var getAppListEntriesAsync: js.Any
   
   /* unmapped type */
   /**
     * Windows Phone only. Returns a token that can be used to retrieve the thumbnail image associated with this application package.
     * @return A token that can be used to retrieve the thumbnail image associated with this application package.
     */
-  def getThumbnailToken(): String = js.native
+  def getThumbnailToken(): String
   
   /** Gets the package identity of the current package. */
-  var id: PackageId = js.native
+  var id: PackageId
   
   /** Windows Phone only. Gets the date the application package was installed on the user's phone. */
-  var installDate: Date = js.native
+  var installDate: Date
   
   /** Gets the date on which the application package was installed or last updated. */
-  var installedDate: Date = js.native
+  var installedDate: Date
   
   /** Gets the location of the installed package. */
-  var installedLocation: StorageFolder = js.native
+  var installedLocation: StorageFolder
   
   /** Indicates whether the package is a bundle package. */
-  var isBundle: Boolean = js.native
+  var isBundle: Boolean
   
   /** Indicates whether the package is installed in development mode. */
-  var isDevelopmentMode: Boolean = js.native
+  var isDevelopmentMode: Boolean
   
   /** Indicates whether other packages can declare a dependency on this package. */
-  var isFramework: Boolean = js.native
+  var isFramework: Boolean
   
   /** Indicates whether the package is a resource package. */
-  var isResourcePackage: Boolean = js.native
+  var isResourcePackage: Boolean
   
   /**
     * Windows Phone only. Launches the specified application.
     * @param parameters The navigation URI that specifies the page to launch and optional parameters. Use an empty string to specify the default page for the app.
     */
-  def launch(parameters: String): Unit = js.native
+  def launch(parameters: String): Unit
   
   /** Gets the logo of the package. */
-  var logo: Uri = js.native
+  var logo: Uri
   
   /** Gets the publisher display name of the package. */
-  var publisherDisplayName: String = js.native
+  var publisherDisplayName: String
   
-  var status: js.Any = js.native
+  var status: js.Any
 }
 object Package {
   

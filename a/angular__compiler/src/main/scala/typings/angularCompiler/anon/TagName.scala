@@ -4,15 +4,15 @@ import typings.angularCompiler.outputAstMod.JSDocTag
 import typings.angularCompiler.outputAstMod.JSDocTagName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TagName extends JSDocTag {
+trait TagName
+  extends StObject
+     with JSDocTag {
   
-  var tagName: JSDocTagName | String = js.native
+  var tagName: JSDocTagName | String
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TagName {
   

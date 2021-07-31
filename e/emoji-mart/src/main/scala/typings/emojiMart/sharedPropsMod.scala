@@ -17,7 +17,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedPropsMod {
@@ -74,10 +73,9 @@ object sharedPropsMod {
     def symbols: typings.emojiMart.emojiMartStrings.symbols = "symbols".asInstanceOf[typings.emojiMart.emojiMartStrings.symbols]
   }
   
-  @js.native
   trait CustomIcons extends StObject {
     
-    var categories: RecordCategoryNameReactNo = js.native
+    var categories: RecordCategoryNameReactNo
   }
   object CustomIcons {
     
@@ -95,58 +93,57 @@ object sharedPropsMod {
     }
   }
   
-  @js.native
   trait EmojiProps extends StObject {
     
     /** defaults to returning a png from unpkg.com-hosted emoji-datasource-${set} */
-    var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.native
+    var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.undefined
     
-    var emoji: String | EmojiData = js.native
+    var emoji: String | EmojiData
     
     var fallback: js.UndefOr[
         js.Function2[
           /* emoji */ EmojiData, 
           /* props */ this.type, 
-          (Component[js.Object, js.Object, _]) | Element
+          (Component[js.Object, js.Object, js.Any]) | Element
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var forceSize: js.UndefOr[Boolean] = js.native
+    var forceSize: js.UndefOr[Boolean] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var native: js.UndefOr[Boolean] = js.native
+    var native: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onLeave: js.UndefOr[
         js.Function2[/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onOver: js.UndefOr[
         js.Function2[/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** defaults to 'apple' */
-    var set: js.UndefOr[EmojiSet] = js.native
+    var set: js.UndefOr[EmojiSet] = js.undefined
     
     /** defaults to 52 */
-    var sheetColumns: js.UndefOr[Double] = js.native
+    var sheetColumns: js.UndefOr[Double] = js.undefined
     
     /** defaults to 52 */
-    var sheetRows: js.UndefOr[Double] = js.native
+    var sheetRows: js.UndefOr[Double] = js.undefined
     
     /** defaults to 64 */
-    var sheetSize: js.UndefOr[EmojiSheetSize] = js.native
+    var sheetSize: js.UndefOr[EmojiSheetSize] = js.undefined
     
-    var size: Double = js.native
+    var size: Double
     
     /** defaults to 1 */
-    var skin: js.UndefOr[EmojiSkin] = js.native
+    var skin: js.UndefOr[EmojiSkin] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean] = js.native
+    var tooltip: js.UndefOr[Boolean] = js.undefined
   }
   object EmojiProps {
     
@@ -169,7 +166,7 @@ object sharedPropsMod {
       def setEmoji(value: String | EmojiData): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFallback(value: (/* emoji */ EmojiData, EmojiProps) => (Component[js.Object, js.Object, _]) | Element): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
+      def setFallback(value: (/* emoji */ EmojiData, EmojiProps) => (Component[js.Object, js.Object, js.Any]) | Element): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
@@ -303,16 +300,15 @@ object sharedPropsMod {
     def `64`: typings.emojiMart.emojiMartNumbers.`64` = 64.asInstanceOf[typings.emojiMart.emojiMartNumbers.`64`]
   }
   
-  @js.native
   trait I18n extends StObject {
     
-    var categories: RecordCategoryNamestring = js.native
+    var categories: RecordCategoryNamestring
     
-    var notfound: String = js.native
+    var notfound: String
     
-    var search: String = js.native
+    var search: String
     
-    var skintext: String = js.native
+    var skintext: String
   }
   object I18n {
     
@@ -340,14 +336,13 @@ object sharedPropsMod {
   }
   
   /* Inlined std.Partial<std.Pick<emoji-mart.emoji-mart/dist-es/utils/shared-props.I18n, 'search' | 'notfound'> & {  categories :std.Partial<emoji-mart.emoji-mart/dist-es/utils/shared-props.I18n['categories']>}> */
-  @js.native
   trait PartialI18n extends StObject {
     
-    var categories: js.UndefOr[PartialRecordCategoryName] = js.native
+    var categories: js.UndefOr[PartialRecordCategoryName] = js.undefined
     
-    var notfound: js.UndefOr[String] = js.native
+    var notfound: js.UndefOr[String] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
   }
   object PartialI18n {
     
@@ -380,76 +375,75 @@ object sharedPropsMod {
     }
   }
   
-  @js.native
   trait PickerProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.native
+    var backgroundImageFn: js.UndefOr[BackgroundImageFn] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** NOTE: custom emoji are copied into a singleton object on every new mount */
-    var custom: js.UndefOr[js.Array[CustomEmoji]] = js.native
+    var custom: js.UndefOr[js.Array[CustomEmoji]] = js.undefined
     
-    var defaultSkin: js.UndefOr[EmojiSkin] = js.native
+    var defaultSkin: js.UndefOr[EmojiSkin] = js.undefined
     
-    var emoji: js.UndefOr[String] = js.native
+    var emoji: js.UndefOr[String] = js.undefined
     
-    var emojiSize: js.UndefOr[Double] = js.native
+    var emojiSize: js.UndefOr[Double] = js.undefined
     
-    var emojiTooltip: js.UndefOr[Boolean] = js.native
+    var emojiTooltip: js.UndefOr[Boolean] = js.undefined
     
-    var emojisToShowFilter: js.UndefOr[js.Function1[/* emoji */ EmojiData, Boolean]] = js.native
+    var emojisToShowFilter: js.UndefOr[js.Function1[/* emoji */ EmojiData, Boolean]] = js.undefined
     
-    var enableFrequentEmojiSort: js.UndefOr[Boolean] = js.native
+    var enableFrequentEmojiSort: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[CategoryName]] = js.native
+    var exclude: js.UndefOr[js.Array[CategoryName]] = js.undefined
     
-    var i18n: js.UndefOr[PartialI18n] = js.native
+    var i18n: js.UndefOr[PartialI18n] = js.undefined
     
-    var icons: js.UndefOr[CustomIcons] = js.native
+    var icons: js.UndefOr[CustomIcons] = js.undefined
     
-    var include: js.UndefOr[js.Array[CategoryName]] = js.native
+    var include: js.UndefOr[js.Array[CategoryName]] = js.undefined
     
-    var native: js.UndefOr[Boolean] = js.native
+    var native: js.UndefOr[Boolean] = js.undefined
     
-    var notFound: js.UndefOr[js.Function0[Component[js.Object, js.Object, _]]] = js.native
+    var notFound: js.UndefOr[js.Function0[Component[js.Object, js.Object, js.Any]]] = js.undefined
     
-    var notFoundEmoji: js.UndefOr[String] = js.native
+    var notFoundEmoji: js.UndefOr[String] = js.undefined
     
     /** NOTE: default is not preventable */
     var onClick: js.UndefOr[
         js.Function2[/* emoji */ EmojiData, /* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* emoji */ EmojiData, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* emoji */ EmojiData, Unit]] = js.undefined
     
-    var onSkinChange: js.UndefOr[js.Function1[/* skin */ EmojiSkin, Unit]] = js.native
+    var onSkinChange: js.UndefOr[js.Function1[/* skin */ EmojiSkin, Unit]] = js.undefined
     
-    var perLine: js.UndefOr[Double] = js.native
+    var perLine: js.UndefOr[Double] = js.undefined
     
-    var recent: js.UndefOr[js.Array[String]] = js.native
+    var recent: js.UndefOr[js.Array[String]] = js.undefined
     
-    var set: js.UndefOr[EmojiSet] = js.native
+    var set: js.UndefOr[EmojiSet] = js.undefined
     
-    var sheetSize: js.UndefOr[EmojiSheetSize] = js.native
+    var sheetSize: js.UndefOr[EmojiSheetSize] = js.undefined
     
-    var showPreview: js.UndefOr[Boolean] = js.native
+    var showPreview: js.UndefOr[Boolean] = js.undefined
     
-    var showSkinTones: js.UndefOr[Boolean] = js.native
+    var showSkinTones: js.UndefOr[Boolean] = js.undefined
     
-    var skin: js.UndefOr[EmojiSkin] = js.native
+    var skin: js.UndefOr[EmojiSkin] = js.undefined
     
-    var skinEmoji: js.UndefOr[String] = js.native
+    var skinEmoji: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var theme: js.UndefOr[auto | light | dark] = js.native
+    var theme: js.UndefOr[auto | light | dark] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var useButton: js.UndefOr[Boolean] = js.native
+    var useButton: js.UndefOr[Boolean] = js.undefined
   }
   object PickerProps {
     
@@ -562,7 +556,7 @@ object sharedPropsMod {
       def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
       
       @scala.inline
-      def setNotFound(value: () => Component[js.Object, js.Object, _]): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
+      def setNotFound(value: () => Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "notFound", js.Any.fromFunction0(value))
       
       @scala.inline
       def setNotFoundEmoji(value: String): Self = StObject.set(x, "notFoundEmoji", value.asInstanceOf[js.Any])

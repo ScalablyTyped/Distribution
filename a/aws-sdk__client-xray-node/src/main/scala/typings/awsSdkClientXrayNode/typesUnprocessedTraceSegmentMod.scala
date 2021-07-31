@@ -2,30 +2,28 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUnprocessedTraceSegmentMod {
   
   type UnmarshalledUnprocessedTraceSegment = UnprocessedTraceSegment
   
-  @js.native
   trait UnprocessedTraceSegment extends StObject {
     
     /**
       * <p>The error that caused processing to fail.</p>
       */
-    var ErrorCode: js.UndefOr[String] = js.native
+    var ErrorCode: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The segment's ID.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The error message.</p>
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
   }
   object UnprocessedTraceSegment {
     

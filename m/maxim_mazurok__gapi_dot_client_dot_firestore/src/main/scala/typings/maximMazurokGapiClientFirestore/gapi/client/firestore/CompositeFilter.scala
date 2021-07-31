@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositeFilter extends StObject {
   
   /** The list of filters to combine. Must contain at least one filter. */
-  var filters: js.UndefOr[js.Array[Filter]] = js.native
+  var filters: js.UndefOr[js.Array[Filter]] = js.undefined
   
   /** The operator for combining multiple filters. */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
 }
 object CompositeFilter {
   

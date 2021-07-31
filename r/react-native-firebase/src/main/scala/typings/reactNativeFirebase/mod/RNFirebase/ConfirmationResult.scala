@@ -2,21 +2,19 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmationResult extends StObject {
   
-  def confirm(verificationCode: String): js.Promise[User | Null] = js.native
+  def confirm(verificationCode: String): js.Promise[User | Null]
   
-  var verificationId: String | Null = js.native
+  var verificationId: String | Null
 }
 object ConfirmationResult {
   
   @scala.inline
   def apply(confirm: String => js.Promise[User | Null]): ConfirmationResult = {
-    val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm))
+    val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), verificationId = null)
     __obj.asInstanceOf[ConfirmationResult]
   }
   

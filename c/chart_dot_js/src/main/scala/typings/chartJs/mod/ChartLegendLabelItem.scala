@@ -2,13 +2,13 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartLegendLabelItem extends ChartLegendItem {
+trait ChartLegendLabelItem
+  extends StObject
+     with ChartLegendItem {
   
-  var datasetIndex: js.UndefOr[Double] = js.native
+  var datasetIndex: js.UndefOr[Double] = js.undefined
 }
 object ChartLegendLabelItem {
   

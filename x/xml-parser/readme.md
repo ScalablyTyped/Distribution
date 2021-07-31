@@ -12,7 +12,7 @@ the little xml parser that could
 | Keywords           | xml, sucks |
 | # releases         | 0 |
 | # dependents       | 105 |
-| # downloads        | 1772484 |
+| # downloads        | 2859267 |
 | # stars            | 10 |
 
 ## Links

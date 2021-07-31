@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstanceRefreshesAnswer extends StObject {
   
   /**
     * The instance refreshes for the specified group.
     */
-  var InstanceRefreshes: js.UndefOr[typings.awsSdk.autoscalingMod.InstanceRefreshes] = js.native
+  var InstanceRefreshes: js.UndefOr[typings.awsSdk.autoscalingMod.InstanceRefreshes] = js.undefined
   
   /**
     * A string that indicates that the response contains more items than can be returned in a single response. To receive additional items, specify this string for the NextToken value when requesting the next set of items. This value is null when there are no more items to return.
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
 }
 object DescribeInstanceRefreshesAnswer {
   

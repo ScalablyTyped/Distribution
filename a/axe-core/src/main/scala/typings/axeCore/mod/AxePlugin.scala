@@ -3,19 +3,17 @@ package typings.axeCore.mod
 import typings.axeCore.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxePlugin extends StObject {
   
-  var cleanup: js.UndefOr[js.Function1[/* callback */ js.Function, Unit]] = js.native
+  var cleanup: js.UndefOr[js.Function1[/* callback */ js.Function, Unit]] = js.undefined
   
-  var commands: js.Array[Callback] = js.native
+  var commands: js.Array[Callback]
   
-  var id: String = js.native
+  var id: String
   
-  def run(args: js.Any*): js.Any = js.native
+  def run(args: js.Any*): js.Any
 }
 object AxePlugin {
   

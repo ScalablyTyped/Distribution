@@ -2,7 +2,6 @@ package typings.replaceString
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,33 +22,32 @@ object mod {
   //=> 'Foo 🐑❤️ Bar'
   ```
   */
-  @JSImport("replace-string", JSImport.Namespace)
-  @js.native
-  def apply(input: String, needle: String, replacement: String): String = js.native
-  @JSImport("replace-string", JSImport.Namespace)
-  @js.native
-  def apply(input: String, needle: String, replacement: String, options: Options): String = js.native
-  @JSImport("replace-string", JSImport.Namespace)
-  @js.native
-  def apply(input: String, needle: String, replacement: ReplacementFunction): String = js.native
-  @JSImport("replace-string", JSImport.Namespace)
-  @js.native
-  def apply(input: String, needle: String, replacement: ReplacementFunction, options: Options): String = js.native
+  @scala.inline
+  def apply(input: String, needle: String, replacement: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, needle: String, replacement: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, needle: String, replacement: ReplacementFunction): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, needle: String, replacement: ReplacementFunction, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("replace-string", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Whether or not substring matching should be case-insensitive.
     		@default false
     		*/
-    val caseInsensitive: js.UndefOr[Boolean] = js.native
+    val caseInsensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Index at which to start replacing.
     		@default 0
     		*/
-    val fromIndex: js.UndefOr[Double] = js.native
+    val fromIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

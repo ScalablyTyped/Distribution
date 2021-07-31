@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Perception
 import typings.winrtUwp.Windows.Foundation.Collections.CollectionChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about an attempt to change properties on a frame source. */
-@js.native
 trait PerceptionFrameSourcePropertiesChangedEventArgs extends StObject {
   
   /** Gets the type of change that occurred as a result of the property change request. */
-  var collectionChange: CollectionChange = js.native
+  var collectionChange: CollectionChange
   
   /** Gets a string key indicating the location of the change in the collection. */
-  var key: String = js.native
+  var key: String
 }
 object PerceptionFrameSourcePropertiesChangedEventArgs {
   

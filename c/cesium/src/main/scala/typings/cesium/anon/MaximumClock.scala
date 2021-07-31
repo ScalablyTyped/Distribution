@@ -3,29 +3,27 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaximumClock extends StObject {
   
-  var innerRadii: js.UndefOr[Cartesian3] = js.native
+  var innerRadii: js.UndefOr[Cartesian3] = js.undefined
   
-  var maximumClock: js.UndefOr[Double] = js.native
+  var maximumClock: js.UndefOr[Double] = js.undefined
   
-  var maximumCone: js.UndefOr[Double] = js.native
+  var maximumCone: js.UndefOr[Double] = js.undefined
   
-  var minimumClock: js.UndefOr[Double] = js.native
+  var minimumClock: js.UndefOr[Double] = js.undefined
   
-  var minimumCone: js.UndefOr[Double] = js.native
+  var minimumCone: js.UndefOr[Double] = js.undefined
   
-  var radii: js.UndefOr[Cartesian3] = js.native
+  var radii: js.UndefOr[Cartesian3] = js.undefined
   
-  var slicePartitions: js.UndefOr[Double] = js.native
+  var slicePartitions: js.UndefOr[Double] = js.undefined
   
-  var stackPartitions: js.UndefOr[Double] = js.native
+  var stackPartitions: js.UndefOr[Double] = js.undefined
   
-  var subdivisions: js.UndefOr[Double] = js.native
+  var subdivisions: js.UndefOr[Double] = js.undefined
 }
 object MaximumClock {
   

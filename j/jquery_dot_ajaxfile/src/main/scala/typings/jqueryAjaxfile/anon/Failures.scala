@@ -2,21 +2,19 @@ package typings.jqueryAjaxfile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Failures extends StObject {
   
-  var failures: Double = js.native
+  var failures: Double
   
-  var passes: Double = js.native
+  var passes: Double
   
-  var pending: Double = js.native
+  var pending: Double
   
-  var suites: Double = js.native
+  var suites: Double
   
-  var tests: Double = js.native
+  var tests: Double
 }
 object Failures {
   

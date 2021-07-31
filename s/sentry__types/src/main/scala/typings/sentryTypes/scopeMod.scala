@@ -14,7 +14,6 @@ import typings.sentryTypes.transactionMod.Transaction
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scopeMod {
@@ -27,7 +26,9 @@ object scopeMod {
   type CaptureContext = _CaptureContext | (js.Function1[/* scope */ Scope, Scope])
   
   @js.native
-  trait Scope extends _CaptureContext {
+  trait Scope
+    extends StObject
+       with _CaptureContext {
     
     /**
       * Sets the breadcrumbs in the scope
@@ -152,20 +153,19 @@ object scopeMod {
     def update(captureContext: CaptureContext): this.type = js.native
   }
   
-  @js.native
   trait ScopeContext extends StObject {
     
-    var contexts: Contexts = js.native
+    var contexts: Contexts
     
-    var extra: Extras = js.native
+    var extra: Extras
     
-    var fingerprint: js.Array[String] = js.native
+    var fingerprint: js.Array[String]
     
-    var level: Severity = js.native
+    var level: Severity
     
-    var tags: StringDictionary[String] = js.native
+    var tags: StringDictionary[String]
     
-    var user: User = js.native
+    var user: User
   }
   object ScopeContext {
     

@@ -3,7 +3,6 @@ package typings.vueResource
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -14,7 +13,7 @@ object anon {
     def apply(
       options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpOptions */ js.Any
     ): js.Thenable[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpResponse */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpResponse */ js.Any
       ] = js.native
     
     var delete: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify $http */ js.Any = js.native
@@ -30,13 +29,13 @@ object anon {
     var put: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify $http */ js.Any = js.native
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     var headers: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpHeaders */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object Dictkey {
     

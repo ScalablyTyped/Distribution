@@ -9,49 +9,47 @@ import typings.exceljs.exceljsStrings.topLeft
 import typings.exceljs.exceljsStrings.topRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetViewSplit extends StObject {
   
   /**
   	 * Which pane will be active
   	 */
-  var activePane: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight] = js.native
+  var activePane: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight] = js.undefined
   
   /**
   	 * Where the view is split into 4 sections, each semi-independently scrollable.
   	 */
-  var state: split = js.native
+  var state: split
   
   /**
   	 * Presentation style
   	 */
-  var style: js.UndefOr[pageBreakPreview | pageLayout] = js.native
+  var style: js.UndefOr[pageBreakPreview | pageLayout] = js.undefined
   
   /**
   	 * Which cell will be top-left in the bottom-right pane
   	 */
-  var topLeftCell: js.UndefOr[String] = js.native
+  var topLeftCell: js.UndefOr[String] = js.undefined
   
   /**
   	 * How many points from the left to place the splitter.
   	 * To split vertically, set this to 0 or undefined
   	 */
-  var xSplit: js.UndefOr[Double] = js.native
+  var xSplit: js.UndefOr[Double] = js.undefined
   
   /**
   	 * How many points from the top to place the splitter.
   	 * To split horizontally, set this to 0 or undefined
   	 */
-  var ySplit: js.UndefOr[Double] = js.native
+  var ySplit: js.UndefOr[Double] = js.undefined
 }
 object WorksheetViewSplit {
   
   @scala.inline
-  def apply(state: split): WorksheetViewSplit = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+  def apply(): WorksheetViewSplit = {
+    val __obj = js.Dynamic.literal(state = "split")
     __obj.asInstanceOf[WorksheetViewSplit]
   }
   

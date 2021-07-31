@@ -2,46 +2,44 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNetworkProfileRequest extends StObject {
   
   /**
     * The ARN of the Private Certificate Authority (PCA) created in AWS Certificate Manager (ACM). This is used to issue certificates to the devices. 
     */
-  var CertificateAuthorityArn: js.UndefOr[Arn] = js.native
+  var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The current password of the Wi-Fi network.
     */
-  var CurrentPassword: js.UndefOr[CurrentWiFiPassword] = js.native
+  var CurrentPassword: js.UndefOr[CurrentWiFiPassword] = js.undefined
   
   /**
     * Detailed information about a device's network profile.
     */
-  var Description: js.UndefOr[NetworkProfileDescription] = js.native
+  var Description: js.UndefOr[NetworkProfileDescription] = js.undefined
   
   /**
     * The ARN of the network profile associated with a device.
     */
-  var NetworkProfileArn: Arn = js.native
+  var NetworkProfileArn: Arn
   
   /**
     * The name of the network profile associated with a device.
     */
-  var NetworkProfileName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NetworkProfileName] = js.native
+  var NetworkProfileName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NetworkProfileName] = js.undefined
   
   /**
     * The next, or subsequent, password of the Wi-Fi network. This password is asynchronously transmitted to the device and is used when the password of the network changes to NextPassword. 
     */
-  var NextPassword: js.UndefOr[NextWiFiPassword] = js.native
+  var NextPassword: js.UndefOr[NextWiFiPassword] = js.undefined
   
   /**
     * The root certificate(s) of your authentication server that will be installed on your devices and used to trust your authentication server during EAP negotiation. 
     */
-  var TrustAnchors: js.UndefOr[TrustAnchorList] = js.native
+  var TrustAnchors: js.UndefOr[TrustAnchorList] = js.undefined
 }
 object UpdateNetworkProfileRequest {
   

@@ -3,35 +3,35 @@ package typings.msRestAzure.mod
 import typings.msRest.mod.ServiceClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AzureServiceClientOptions extends ServiceClientOptions {
+trait AzureServiceClientOptions
+  extends StObject
+     with ServiceClientOptions {
   
   /**
     * @property {string} [acceptLanguage] - Gets or sets the preferred language for the response. 
     * Default value is: 'en-US'.
     */
-  var acceptLanguage: js.UndefOr[String] = js.native
+  var acceptLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * @property {boolean} [generateClientRequestId] - When set to true a unique x-ms-client-request-id value 
     * is generated and included in each request. Default is true.
     */
-  var generateClientRequestId: js.UndefOr[Boolean] = js.native
+  var generateClientRequestId: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @property {number} [longRunningOperationRetryTimeout] - The retry timeout in seconds for 
     * Long Running Operations. Default value is 30 seconds.
     */
-  var longRunningOperationRetryTimeout: js.UndefOr[Double] = js.native
+  var longRunningOperationRetryTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * @property {number} [rpRegistrationRetryTimeout] - Gets or sets the retry timeout in seconds for 
     * AutomaticRPRegistration. Default value is 30 seconds.
     */
-  var rpRegistrationRetryTimeout: js.UndefOr[Double] = js.native
+  var rpRegistrationRetryTimeout: js.UndefOr[Double] = js.undefined
 }
 object AzureServiceClientOptions {
   

@@ -3,17 +3,15 @@ package typings.knuddelsUserappsApi.anon
 import typings.knuddelsUserappsApi.mod.global.KnuddelAmount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnError extends StObject {
   
   var onError: js.UndefOr[
     js.Function3[/* knuddelAmount */ KnuddelAmount, /* reason */ String, /* message */ String, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onSuccess: js.UndefOr[js.Function2[/* knuddelAmount */ KnuddelAmount, /* reason */ String, Unit]] = js.native
+  var onSuccess: js.UndefOr[js.Function2[/* knuddelAmount */ KnuddelAmount, /* reason */ String, Unit]] = js.undefined
 }
 object OnError {
   

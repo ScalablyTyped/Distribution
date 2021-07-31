@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /**
     * A cron expression used to specify the schedule (see Time-Based Schedules for Jobs and Crawlers. For example, to run something every day at 12:15 UTC, you would specify: cron(15 12 * * ? *).
     */
-  var ScheduleExpression: js.UndefOr[CronExpression] = js.native
+  var ScheduleExpression: js.UndefOr[CronExpression] = js.undefined
   
   /**
     * The state of the schedule.
     */
-  var State: js.UndefOr[ScheduleState] = js.native
+  var State: js.UndefOr[ScheduleState] = js.undefined
 }
 object Schedule {
   

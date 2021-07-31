@@ -3,16 +3,14 @@ package typings.aliApp.anon
 import typings.aliApp.my.MultiLevelSelectItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
   // 是否选择完成,取消返回false
-  var result: js.Array[MultiLevelSelectItem] = js.native
+  var result: js.Array[MultiLevelSelectItem]
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object Result {
   

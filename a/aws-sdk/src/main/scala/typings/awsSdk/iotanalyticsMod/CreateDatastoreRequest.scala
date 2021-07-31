@@ -2,31 +2,29 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatastoreRequest extends StObject {
   
   /**
     * The name of the data store.
     */
-  var datastoreName: DatastoreName = js.native
+  var datastoreName: DatastoreName
   
   /**
     * Where data store data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You cannot change this storage option after the data store is created.
     */
-  var datastoreStorage: js.UndefOr[DatastoreStorage] = js.native
+  var datastoreStorage: js.UndefOr[DatastoreStorage] = js.undefined
   
   /**
     * How long, in days, message data is kept for the data store. When customerManagedS3 storage is selected, this parameter is ignored.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
     * Metadata which can be used to manage the data store.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDatastoreRequest {
   

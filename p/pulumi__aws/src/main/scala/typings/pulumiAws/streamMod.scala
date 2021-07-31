@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
@@ -91,6 +90,10 @@ object streamMod {
   /* static members */
   object Stream {
     
+    @JSImport("@pulumi/aws/kinesis/stream", "Stream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Stream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -100,76 +103,70 @@ object streamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kinesis/stream", "Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Stream = js.native
-    @JSImport("@pulumi/aws/kinesis/stream", "Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Stream = js.native
-    @JSImport("@pulumi/aws/kinesis/stream", "Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StreamState): Stream = js.native
-    @JSImport("@pulumi/aws/kinesis/stream", "Stream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): Stream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StreamState): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): Stream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stream]
     
     /**
       * Returns true if the given object is an instance of Stream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kinesis/stream", "Stream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean]
   }
   
-  @js.native
   trait StreamArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the Stream (same as `id`)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The encryption type to use. The only acceptable values are `NONE` or `KMS`. The default value is `NONE`.
       */
-    val encryptionType: js.UndefOr[Input[String]] = js.native
+    val encryptionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is `false`.
       */
-    val enforceConsumerDeletion: js.UndefOr[Input[Boolean]] = js.native
+    val enforceConsumerDeletion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The GUID for the customer-managed KMS key to use for encryption. You can also use a Kinesis-owned master key by specifying the alias `alias/aws/kinesis`.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name to identify the stream. This is unique to the AWS account and region the Stream is created in.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Length of time data records are accessible after they are added to the stream. The maximum value of a stream's retention period is 168 hours. Minimum value is 24. Default is 24.
       */
-    val retentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val retentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of shards that the stream will use.
       * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams](https://docs.aws.amazon.com/kinesis/latest/dev/amazon-kinesis-streams.html) for more.
       */
-    val shardCount: Input[Double] = js.native
+    val shardCount: Input[Double]
     
     /**
       * A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch](https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html) for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.
       */
-    val shardLevelMetrics: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val shardLevelMetrics: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object StreamArgs {
     
@@ -238,54 +235,53 @@ object streamMod {
     }
   }
   
-  @js.native
   trait StreamState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the Stream (same as `id`)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The encryption type to use. The only acceptable values are `NONE` or `KMS`. The default value is `NONE`.
       */
-    val encryptionType: js.UndefOr[Input[String]] = js.native
+    val encryptionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is `false`.
       */
-    val enforceConsumerDeletion: js.UndefOr[Input[Boolean]] = js.native
+    val enforceConsumerDeletion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The GUID for the customer-managed KMS key to use for encryption. You can also use a Kinesis-owned master key by specifying the alias `alias/aws/kinesis`.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name to identify the stream. This is unique to the AWS account and region the Stream is created in.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Length of time data records are accessible after they are added to the stream. The maximum value of a stream's retention period is 168 hours. Minimum value is 24. Default is 24.
       */
-    val retentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val retentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of shards that the stream will use.
       * Amazon has guidelines for specifying the Stream size that should be referenced when creating a Kinesis stream. See [Amazon Kinesis Streams](https://docs.aws.amazon.com/kinesis/latest/dev/amazon-kinesis-streams.html) for more.
       */
-    val shardCount: js.UndefOr[Input[Double]] = js.native
+    val shardCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of shard-level CloudWatch metrics which can be enabled for the stream. See [Monitoring with CloudWatch](https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html) for more. Note that the value ALL should not be used; instead you should provide an explicit list of metrics you wish to enable.
       */
-    val shardLevelMetrics: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val shardLevelMetrics: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object StreamState {
     

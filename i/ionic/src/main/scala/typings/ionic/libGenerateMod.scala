@@ -19,14 +19,15 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libGenerateMod {
   
   @JSImport("ionic/lib/generate", "GenerateRunner")
   @js.native
-  abstract class GenerateRunner[T /* <: GenerateOptions */] () extends Runner[T, Unit] {
+  abstract class GenerateRunner[T /* <: GenerateOptions */] ()
+    extends StObject
+       with Runner[T, Unit] {
     
     def createOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): GenerateOptions = js.native
     
@@ -35,25 +36,64 @@ object libGenerateMod {
     def ensureCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
     
     def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
+    
+    /* CompleteClass */
+    override def run(options: T): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait GenerateRunnerDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val ctx: IonicContext = js.native
+    val ctx: IonicContext
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    val project: IProject = js.native
+    val project: IProject
     
-    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox] = js.native
-    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm] = js.native
-    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther] = js.native
+    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox]
+    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm]
+    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther]
     @JSName("prompt")
-    val prompt_Original: PromptModule = js.native
+    val prompt_Original: PromptModule
     
-    val shell: IShell = js.native
+    val shell: IShell
+  }
+  object GenerateRunnerDeps {
+    
+    @scala.inline
+    def apply(
+      config: IConfig,
+      ctx: IonicContext,
+      log: ILogger,
+      project: IProject,
+      prompt: PromptModule,
+      shell: IShell
+    ): GenerateRunnerDeps = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GenerateRunnerDeps]
+    }
+    
+    @scala.inline
+    implicit class GenerateRunnerDepsMutableBuilder[Self <: GenerateRunnerDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    }
   }
 }

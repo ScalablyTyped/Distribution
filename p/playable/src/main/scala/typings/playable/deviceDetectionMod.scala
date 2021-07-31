@@ -2,36 +2,32 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceDetectionMod {
   
-  @JSImport("playable/dist/src/utils/device-detection", "isAndroid")
+  @JSImport("playable/dist/src/utils/device-detection", JSImport.Namespace)
   @js.native
-  def isAndroid(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("playable/dist/src/utils/device-detection", "isDesktopSafari")
-  @js.native
-  def isDesktopSafari(): Boolean = js.native
+  @scala.inline
+  def isAndroid(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAndroid")().asInstanceOf[Boolean]
   
-  @JSImport("playable/dist/src/utils/device-detection", "isIOS")
-  @js.native
-  def isIOS(): Boolean = js.native
+  @scala.inline
+  def isDesktopSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDesktopSafari")().asInstanceOf[Boolean]
   
-  @JSImport("playable/dist/src/utils/device-detection", "isIPad")
-  @js.native
-  def isIPad(): Boolean = js.native
+  @scala.inline
+  def isIOS(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIOS")().asInstanceOf[Boolean]
   
-  @JSImport("playable/dist/src/utils/device-detection", "isIPhone")
-  @js.native
-  def isIPhone(): Boolean = js.native
+  @scala.inline
+  def isIPad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPad")().asInstanceOf[Boolean]
   
-  @JSImport("playable/dist/src/utils/device-detection", "isIPod")
-  @js.native
-  def isIPod(): Boolean = js.native
+  @scala.inline
+  def isIPhone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone")().asInstanceOf[Boolean]
   
-  @JSImport("playable/dist/src/utils/device-detection", "isSafari")
-  @js.native
-  def isSafari(): Boolean = js.native
+  @scala.inline
+  def isIPod(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPod")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
 }

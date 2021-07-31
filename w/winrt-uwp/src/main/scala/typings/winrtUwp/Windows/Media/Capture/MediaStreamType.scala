@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object MediaStreamType extends StObject {
   
   /** An audio stream. */
   @js.native
-  sealed trait audio extends MediaStreamType
+  sealed trait audio
+    extends StObject
+       with MediaStreamType
   
   /** A photo stream. */
   @js.native
-  sealed trait photo extends MediaStreamType
+  sealed trait photo
+    extends StObject
+       with MediaStreamType
   
   /** A video preview stream. */
   @js.native
-  sealed trait videoPreview extends MediaStreamType
+  sealed trait videoPreview
+    extends StObject
+       with MediaStreamType
   
   /** A video recording stream. */
   @js.native
-  sealed trait videoRecord extends MediaStreamType
+  sealed trait videoRecord
+    extends StObject
+       with MediaStreamType
 }

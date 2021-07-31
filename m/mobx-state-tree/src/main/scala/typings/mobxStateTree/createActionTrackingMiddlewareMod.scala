@@ -4,29 +4,30 @@ import typings.mobxStateTree.actionMod.IMiddlewareEvent
 import typings.mobxStateTree.actionMod.IMiddlewareHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createActionTrackingMiddlewareMod {
   
-  @JSImport("mobx-state-tree/dist/middlewares/create-action-tracking-middleware", "createActionTrackingMiddleware")
+  @JSImport("mobx-state-tree/dist/middlewares/create-action-tracking-middleware", JSImport.Namespace)
   @js.native
-  def createActionTrackingMiddleware[T](hooks: IActionTrackingMiddlewareHooks[T]): IMiddlewareHandler = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createActionTrackingMiddleware[T](hooks: IActionTrackingMiddlewareHooks[T]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware")(hooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
+  
   trait IActionTrackingMiddlewareHooks[T] extends StObject {
     
-    var filter: js.UndefOr[js.Function1[/* call */ IMiddlewareEvent, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* call */ IMiddlewareEvent, Boolean]] = js.undefined
     
-    def onFail(call: IMiddlewareEvent, context: T, error: js.Any): Unit = js.native
+    def onFail(call: IMiddlewareEvent, context: T, error: js.Any): Unit
     
-    def onResume(call: IMiddlewareEvent, context: T): Unit = js.native
+    def onResume(call: IMiddlewareEvent, context: T): Unit
     
-    def onStart(call: IMiddlewareEvent): T = js.native
+    def onStart(call: IMiddlewareEvent): T
     
-    def onSuccess(call: IMiddlewareEvent, context: T, result: js.Any): Unit = js.native
+    def onSuccess(call: IMiddlewareEvent, context: T, result: js.Any): Unit
     
-    def onSuspend(call: IMiddlewareEvent, context: T): Unit = js.native
+    def onSuspend(call: IMiddlewareEvent, context: T): Unit
   }
   object IActionTrackingMiddlewareHooks {
     
@@ -43,7 +44,7 @@ object createActionTrackingMiddlewareMod {
     }
     
     @scala.inline
-    implicit class IActionTrackingMiddlewareHooksMutableBuilder[Self <: IActionTrackingMiddlewareHooks[_], T] (val x: Self with IActionTrackingMiddlewareHooks[T]) extends AnyVal {
+    implicit class IActionTrackingMiddlewareHooksMutableBuilder[Self <: IActionTrackingMiddlewareHooks[?], T] (val x: Self & IActionTrackingMiddlewareHooks[T]) extends AnyVal {
       
       @scala.inline
       def setFilter(value: /* call */ IMiddlewareEvent => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))

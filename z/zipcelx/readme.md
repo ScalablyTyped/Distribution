@@ -10,9 +10,9 @@ JSON Transformer to create .xlsx files
 | ------------------ | :-------------: |
 | Full name          | zipcelx |
 | Keywords           | JSON, Excel, xlsx |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 114939 |
+| # releases         | 3 |
+| # dependents       | 4 |
+| # downloads        | 176279 |
 | # stars            | 0 |
 
 ## Links

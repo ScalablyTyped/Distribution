@@ -10,53 +10,51 @@ import typings.wegameApi.wegameApiStrings.on
 import typings.wegameApi.wegameApiStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wegame-api.wx.types.Callbacks & {  x :number | undefined,   y :number | undefined,   width :number | undefined,   height :number | undefined,   devicePosition :'front' | 'back' | undefined,   flash :'auto' | 'on' | 'off' | undefined,   size :'small' | 'medium' | 'large' | undefined} */
-@js.native
 trait Callbacksxnumberundefined extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 摄像头朝向，值为 front, back，默认值back
     */
-  var devicePosition: js.UndefOr[front | back] = js.native
+  var devicePosition: js.UndefOr[front | back] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 闪光灯，值为 auto, on, off，默认值auto
     */
-  var flash: js.UndefOr[auto | on | off] = js.native
+  var flash: js.UndefOr[auto | on | off] = js.undefined
   
   /**
     * 相机的高度，默认值150
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * 帧数据图像尺寸，值为 small, medium, large，默认值small
     */
-  var size: js.UndefOr[small | medium | large] = js.native
+  var size: js.UndefOr[small | medium | large] = js.undefined
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 相机的宽度，默认值300
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * 相机的左上角横坐标，默认值0
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * 相机的左上角纵坐标，默认值0
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Callbacksxnumberundefined {
   

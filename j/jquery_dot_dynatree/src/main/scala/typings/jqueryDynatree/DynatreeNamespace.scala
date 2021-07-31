@@ -3,17 +3,15 @@ package typings.jqueryDynatree
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynatreeNamespace extends StObject {
   
-  def getNode(element: HTMLElement): DynaTreeNode = js.native
+  def getNode(element: HTMLElement): DynaTreeNode
   
-  def getPersistData(cookieId: String, cookieOpts: DynaTreeCookieOptions): js.Any = js.native
+  def getPersistData(cookieId: String, cookieOpts: DynaTreeCookieOptions): js.Any
   
-  var version: Double = js.native
+  var version: Double
 }
 object DynatreeNamespace {
   

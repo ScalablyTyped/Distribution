@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessorParameter extends StObject {
   
   /**
     * The name of the parameter.
     */
-  var ParameterName: ProcessorParameterName = js.native
+  var ParameterName: ProcessorParameterName
   
   /**
     * The parameter value.
     */
-  var ParameterValue: ProcessorParameterValue = js.native
+  var ParameterValue: ProcessorParameterValue
 }
 object ProcessorParameter {
   

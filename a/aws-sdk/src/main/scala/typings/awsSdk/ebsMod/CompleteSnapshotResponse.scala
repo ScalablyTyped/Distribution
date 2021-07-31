@@ -2,16 +2,14 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteSnapshotResponse extends StObject {
   
   /**
     * The status of the snapshot.
     */
-  var Status: js.UndefOr[typings.awsSdk.ebsMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.ebsMod.Status] = js.undefined
 }
 object CompleteSnapshotResponse {
   

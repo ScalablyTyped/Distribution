@@ -3,16 +3,15 @@ package typings.expo.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var errorRecovery: js.UndefOr[js.Any] = js.native
+  var errorRecovery: js.UndefOr[js.Any] = js.undefined
   
-  var notification: js.UndefOr[js.Any] = js.native
+  var notification: js.UndefOr[js.Any] = js.undefined
 }
 object Dictkey {
   

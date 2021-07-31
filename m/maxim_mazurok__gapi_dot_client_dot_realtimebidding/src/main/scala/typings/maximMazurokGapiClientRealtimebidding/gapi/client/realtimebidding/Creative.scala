@@ -2,87 +2,85 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Creative extends StObject {
   
   /** Output only. ID of the buyer account that this creative is owned by. Can be used to filter the response of the creatives.list method with equality and inequality check. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The link to AdChoices destination page. This is only supported for native ads. */
-  var adChoicesDestinationUrl: js.UndefOr[String] = js.native
+  var adChoicesDestinationUrl: js.UndefOr[String] = js.undefined
   
   /** The name of the company being advertised in the creative. Can be used to filter the response of the creatives.list method. */
-  var advertiserName: js.UndefOr[String] = js.native
+  var advertiserName: js.UndefOr[String] = js.undefined
   
   /** The agency ID for this creative. */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /** Output only. The last update timestamp of the creative via API. */
-  var apiUpdateTime: js.UndefOr[String] = js.native
+  var apiUpdateTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The format of this creative. Can be used to filter the response of the creatives.list method. */
-  var creativeFormat: js.UndefOr[String] = js.native
+  var creativeFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Buyer-specific creative ID that references this creative in bid responses. This field is Ignored in update operations. Can be used to filter the response of the creatives.list
     * method. The maximum length of the creative ID is 128 bytes.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Top level status and detected attributes of a creative (for example domain, language, advertiser, product category, etc.) that affect whether (status) and where
     * (context) a creative will be allowed to serve.
     */
-  var creativeServingDecision: js.UndefOr[CreativeServingDecision] = js.native
+  var creativeServingDecision: js.UndefOr[CreativeServingDecision] = js.undefined
   
   /** Output only. IDs of all of the deals with which this creative has been used in bidding. Can be used to filter the response of the creatives.list method. */
-  var dealIds: js.UndefOr[js.Array[String]] = js.native
+  var dealIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * All declared attributes for the ads that may be shown from this creative. Can be used to filter the response of the creatives.list method. If the `excluded_attribute` field of a
     * [bid request](https://developers.google.com/authorized-buyers/rtb/downloads/realtime-bidding-proto") contains one of the attributes that were declared or detected for a given
     * creative, and a bid is submitted with that creative, the bid will be filtered before the auction.
     */
-  var declaredAttributes: js.UndefOr[js.Array[String]] = js.native
+  var declaredAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The set of declared destination URLs for the creative. Can be used to filter the response of the creatives.list method. */
-  var declaredClickThroughUrls: js.UndefOr[js.Array[String]] = js.native
+  var declaredClickThroughUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** All declared restricted categories for the ads that may be shown from this creative. Can be used to filter the response of the creatives.list method. */
-  var declaredRestrictedCategories: js.UndefOr[js.Array[String]] = js.native
+  var declaredRestrictedCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * IDs for the declared ad technology vendors that may be used by this creative. See https://storage.googleapis.com/adx-rtb-dictionaries/vendors.txt for possible values. Can be used to
     * filter the response of the creatives.list method.
     */
-  var declaredVendorIds: js.UndefOr[js.Array[Double]] = js.native
+  var declaredVendorIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** An HTML creative. */
-  var html: js.UndefOr[HtmlContent] = js.native
+  var html: js.UndefOr[HtmlContent] = js.undefined
   
   /** The set of URLs to be called to record an impression. */
-  var impressionTrackingUrls: js.UndefOr[js.Array[String]] = js.native
+  var impressionTrackingUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. Name of the creative. Follows the pattern `buyers/{buyer}/creatives/{creative}`, where `{buyer}` represents the account ID of the buyer who owns the creative, and
     * `{creative}` is the buyer-specific creative ID that references this creative in the bid response.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A native creative. */
-  var native: js.UndefOr[NativeContent] = js.native
+  var native: js.UndefOr[NativeContent] = js.undefined
   
   /** All restricted categories for the ads that may be shown from this creative. */
-  var restrictedCategories: js.UndefOr[js.Array[String]] = js.native
+  var restrictedCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. The version of this creative. Version for a new creative is 1 and it increments during subsequent creative updates. */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /** A video creative. */
-  var video: js.UndefOr[VideoContent] = js.native
+  var video: js.UndefOr[VideoContent] = js.undefined
 }
 object Creative {
   

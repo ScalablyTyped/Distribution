@@ -7,15 +7,15 @@ import typings.recurlyRecurlyJs.emitterMod.Emitter
 import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paypalMod {
   
-  @js.native
-  trait BraintreeConfig extends PayPalConfig {
+  trait BraintreeConfig
+    extends StObject
+       with PayPalConfig {
     
-    var braintree: ClientAuthorization = js.native
+    var braintree: ClientAuthorization
   }
   object BraintreeConfig {
     
@@ -33,10 +33,11 @@ object paypalMod {
     }
   }
   
-  @js.native
-  trait DirectConfig extends PayPalConfig {
+  trait DirectConfig
+    extends StObject
+       with PayPalConfig {
     
-    var display: js.UndefOr[DisplayName] = js.native
+    var display: js.UndefOr[DisplayName] = js.undefined
   }
   object DirectConfig {
     
@@ -102,7 +103,9 @@ object paypalMod {
   }
   
   @js.native
-  trait PayPalInstance extends Emitter[PayPalEvent] {
+  trait PayPalInstance
+    extends StObject
+       with Emitter[PayPalEvent] {
     
     def destroy(): Unit = js.native
     @JSName("destroy")
@@ -115,10 +118,9 @@ object paypalMod {
     def start(payPalStartOptions: PayPalStartOptions): Unit = js.native
   }
   
-  @js.native
   trait PayPalStartOptions extends StObject {
     
-    var options: Description = js.native
+    var options: Description
   }
   object PayPalStartOptions {
     

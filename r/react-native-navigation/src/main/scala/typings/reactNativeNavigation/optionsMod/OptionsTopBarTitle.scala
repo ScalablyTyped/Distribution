@@ -5,60 +5,58 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.center
 import typings.reactNativeNavigation.reactNativeNavigationStrings.fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarTitle extends StObject {
   
   /**
     * Title alignment
     * #### (Android specific)
     */
-  var alignment: js.UndefOr[center | fill] = js.native
+  var alignment: js.UndefOr[center | fill] = js.undefined
   
   /**
     * Text color
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Custom component as the title view
     */
-  var component: js.UndefOr[Alignment] = js.native
+  var component: js.UndefOr[Alignment] = js.undefined
   
   /**
     * Set the font family for the title
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Font size
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the font style for the title
     */
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
     * for most fonts. Not all fonts have a variant for each of the numeric
     * values, in that case the closest one is chosen.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * Top Bar title height in densitiy pixels
     * #### (Android specific)
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Text to display in the title area
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object OptionsTopBarTitle {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PricingDetail extends StObject {
   
   /**
     * The number of reservations available for the price.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * The price per instance.
     */
-  var Price: js.UndefOr[Double] = js.native
+  var Price: js.UndefOr[Double] = js.undefined
 }
 object PricingDetail {
   

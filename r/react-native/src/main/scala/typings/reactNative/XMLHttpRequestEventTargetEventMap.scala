@@ -2,25 +2,23 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLHttpRequestEventTargetEventMap extends StObject {
   
-  var abort: ProgressEvent = js.native
+  var abort: ProgressEvent
   
-  var error: ProgressEvent = js.native
+  var error: ProgressEvent
   
-  var load: ProgressEvent = js.native
+  var load: ProgressEvent
   
-  var loadend: ProgressEvent = js.native
+  var loadend: ProgressEvent
   
-  var loadstart: ProgressEvent = js.native
+  var loadstart: ProgressEvent
   
-  var progress: ProgressEvent = js.native
+  var progress: ProgressEvent
   
-  var timeout: ProgressEvent = js.native
+  var timeout: ProgressEvent
 }
 object XMLHttpRequestEventTargetEventMap {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectionStatusRequest extends StObject {
   
   /**
     * The ID of the instance.
     */
-  var Target: SessionTarget = js.native
+  var Target: SessionTarget
 }
 object GetConnectionStatusRequest {
   

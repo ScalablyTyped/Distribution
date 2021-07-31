@@ -21,7 +21,6 @@ import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemMod {
@@ -162,15 +161,15 @@ object listItemMod {
     def this(props: BriefProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BriefProps
-    extends typings.antdMobile.listPropsTypeMod.BriefProps {
+    extends StObject
+       with typings.antdMobile.listPropsTypeMod.BriefProps {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
   }
   object BriefProps {
     
@@ -215,18 +214,19 @@ object listItemMod {
     def onClick(ev: typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent]): Unit = js.native
   }
   
-  @js.native
-  trait ListItemProps extends ListItemPropsType {
+  trait ListItemProps
+    extends StObject
+       with ListItemPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ListItemProps {
     

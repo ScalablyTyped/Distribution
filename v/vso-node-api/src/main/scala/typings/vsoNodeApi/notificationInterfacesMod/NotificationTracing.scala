@@ -3,31 +3,31 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NotificationTracing extends NotificationTracingSetParameters {
+trait NotificationTracing
+  extends StObject
+     with NotificationTracingSetParameters {
   
   /**
     * Trace until the specified end date.
     */
-  var endDate: Date = js.native
+  var endDate: Date
   
   /**
     * The maximum number of result details to trace.
     */
-  var maxTracedEntries: Double = js.native
+  var maxTracedEntries: Double
   
   /**
     * The date and time tracing started.
     */
-  var startDate: Date = js.native
+  var startDate: Date
   
   /**
     * Trace until remaining count reaches 0.
     */
-  var tracedEntries: Double = js.native
+  var tracedEntries: Double
 }
 object NotificationTracing {
   

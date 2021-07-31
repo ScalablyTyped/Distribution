@@ -2,53 +2,51 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOrganizationsAccessReportResponse extends StObject {
   
   /**
     * An object that contains details about the most recent attempt to access the service.
     */
-  var AccessDetails: js.UndefOr[typings.awsSdk.iamMod.AccessDetails] = js.native
+  var AccessDetails: js.UndefOr[typings.awsSdk.iamMod.AccessDetails] = js.undefined
   
-  var ErrorDetails: js.UndefOr[typings.awsSdk.iamMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.iamMod.ErrorDetails] = js.undefined
   
   /**
     * A flag that indicates whether there are more items to return. If your results were truncated, you can make a subsequent pagination request using the Marker request parameter to retrieve more items. Note that IAM might return fewer than the MaxItems number of results even when there are more results available. We recommend that you check IsTruncated after every call to ensure that you receive all your results.
     */
-  var IsTruncated: js.UndefOr[booleanType] = js.native
+  var IsTruncated: js.UndefOr[booleanType] = js.undefined
   
   /**
     * The date and time, in ISO 8601 date-time format, when the generated report job was completed or failed. This field is null if the job is still in progress, as indicated by a job status value of IN_PROGRESS.
     */
-  var JobCompletionDate: js.UndefOr[dateType] = js.native
+  var JobCompletionDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * The date and time, in ISO 8601 date-time format, when the report job was created.
     */
-  var JobCreationDate: dateType = js.native
+  var JobCreationDate: dateType
   
   /**
     * The status of the job.
     */
-  var JobStatus: jobStatusType = js.native
+  var JobStatus: jobStatusType
   
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.native
+  var Marker: js.UndefOr[markerType] = js.undefined
   
   /**
     * The number of services that the applicable SCPs allow account principals to access.
     */
-  var NumberOfServicesAccessible: js.UndefOr[integerType] = js.native
+  var NumberOfServicesAccessible: js.UndefOr[integerType] = js.undefined
   
   /**
     * The number of services that account principals are allowed but did not attempt to access.
     */
-  var NumberOfServicesNotAccessed: js.UndefOr[integerType] = js.native
+  var NumberOfServicesNotAccessed: js.UndefOr[integerType] = js.undefined
 }
 object GetOrganizationsAccessReportResponse {
   

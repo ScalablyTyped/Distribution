@@ -2,56 +2,56 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMouseEventArgs extends ILayerMouseEventArgs {
+trait IMouseEventArgs
+  extends StObject
+     with ILayerMouseEventArgs {
   
   /** The event that occurred. */
-  var eventName: String = js.native
+  var eventName: String
   
   /**
     * Returns the x-value of the pixel coordinate, relative to the map, of the mouse.
     * @returns The x-value of the pixel coordinate, relative to the map, of the mouse.
     */
-  def getX(): Double = js.native
+  def getX(): Double
   
   /**
     * Returns the y-value of the pixel coordinate, relative to the map, of the mouse.
     * @returns The y-value of the pixel coordinate, relative to the map, of the mouse.
     */
-  def getY(): Double = js.native
+  def getY(): Double
   
   /** A boolean indicating if the primary button, such as the left mouse button or a tap on a touch screen, was used during a mouse down or up event. */
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
   /** A boolean indicating if the secondary mouse button, such as the right mouse button, was used during a mouse down or up event. */
-  var isSecondary: Boolean = js.native
+  var isSecondary: Boolean
   
   /** If the target is a shape, this will be the layer that the shape is in. */
-  var layer: Layer = js.native
+  var layer: Layer
   
   /** The map location of where the event occurred. */
-  var location: Location = js.native
+  var location: Location
   
   /** The x-value of the pixel coordinate on the page of the mouse cursor. */
-  var pageX: Double = js.native
+  var pageX: Double
   
   /** The y-value of the pixel coordinate on the page of the mouse cursor. */
-  var pageY: Double = js.native
+  var pageY: Double
   
   /** The pixel coordinate of the mouse cusrsor relative to the top left corner of the map div. */
-  var point: Point = js.native
+  var point: Point
   
   /** The object that triggered the event. */
-  var target: Map | IPrimitive = js.native
+  var target: Map | IPrimitive
   
   /** The type of the object that the event is attached to. Valid values include the following: ‘map’, 'layer', ‘polygon’, ‘polyline’, or ‘pushpin’ */
-  var targetType: String = js.native
+  var targetType: String
   
   /**	The number of units that the mouse wheel has changed. */
-  var wheelDelta: Double = js.native
+  var wheelDelta: Double
 }
 object IMouseEventArgs {
   

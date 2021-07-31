@@ -8,7 +8,6 @@ import typings.agGrid.originalColumnGroupChildMod.OriginalColumnGroupChild
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnMod {
@@ -16,7 +15,8 @@ object columnMod {
   @JSImport("ag-grid/dist/lib/entities/column", "Column")
   @js.native
   class Column protected ()
-    extends ColumnGroupChild
+    extends StObject
+       with ColumnGroupChild
        with OriginalColumnGroupChild {
     def this(colDef: ColDef, colId: String, primary: Boolean) = this()
     
@@ -60,6 +60,9 @@ object columnMod {
     
     /* InferMemberOverrides */
     override def getColumnGroupShow(): String = js.native
+    
+    /* CompleteClass */
+    override def getId(): String = js.native
     
     def getMaxWidth(): Double = js.native
     
@@ -148,6 +151,9 @@ object columnMod {
     def isTooltipFieldContainsDots(): Boolean = js.native
     
     def isValueActive(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isVisible(): Boolean = js.native
     
     var lastLeftPinned: js.Any = js.native
     

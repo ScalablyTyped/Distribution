@@ -2,15 +2,14 @@ package typings.swaggerizeExpress.mod.Swagger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeneralParameterObject
-  extends ParameterObject
+  extends StObject
+     with ParameterObject
      with ItemsObject {
   
-  var allowEmptyValue: js.UndefOr[Boolean] = js.native
+  var allowEmptyValue: js.UndefOr[Boolean] = js.undefined
 }
 object GeneralParameterObject {
   

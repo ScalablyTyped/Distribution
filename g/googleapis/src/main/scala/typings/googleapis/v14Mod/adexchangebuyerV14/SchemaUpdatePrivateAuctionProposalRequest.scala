@@ -2,31 +2,29 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUpdatePrivateAuctionProposalRequest extends StObject {
   
   /**
     * The externalDealId of the deal to be updated.
     */
-  var externalDealId: js.UndefOr[String] = js.native
+  var externalDealId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional note to be added.
     */
-  var note: js.UndefOr[SchemaMarketplaceNote] = js.native
+  var note: js.UndefOr[SchemaMarketplaceNote] = js.undefined
   
   /**
     * The current revision number of the proposal to be updated.
     */
-  var proposalRevisionNumber: js.UndefOr[String] = js.native
+  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The proposed action on the private auction proposal.
     */
-  var updateAction: js.UndefOr[String] = js.native
+  var updateAction: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdatePrivateAuctionProposalRequest {
   

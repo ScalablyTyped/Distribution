@@ -6,7 +6,6 @@ import typings.reactNativeFabric.anon.Crash
 import typings.reactNativeFabric.anon.LogAddToCart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,7 +19,6 @@ object mod extends Shortcut {
     */
   type Attributes = StringDictionary[String]
   
-  @js.native
   trait Fabric extends StObject {
     
     /**
@@ -28,14 +26,14 @@ object mod extends Shortcut {
       *
       * https://docs.fabric.io/ios/answers/index.html
       */
-    var Answers: LogAddToCart = js.native
+    var Answers: LogAddToCart
     
     /**
       * API for interacting with the Crashlytics kit.
       *
       * https://docs.fabric.io/ios/crashlytics/index.html
       */        
-    var Crashlytics: Crash = js.native
+    var Crashlytics: Crash
   }
   object Fabric {
     

@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connection {
@@ -53,14 +52,13 @@ object connection {
     * any port between 1024 and 65535 on the local host.
     * @since OOo 1.1.2
     */
-  @js.native
   trait SocketPermission extends StObject {
     
     /** comma separated actions list */
-    var Actions: String = js.native
+    var Actions: String
     
     /** target host with optional portrange */
-    var Host: String = js.native
+    var Host: String
   }
   object SocketPermission {
     
@@ -86,8 +84,9 @@ object connection {
     *
     * This is the counterpart to the {@link XConnector} interface.
     */
-  @js.native
-  trait XAcceptor extends XInterface {
+  trait XAcceptor
+    extends StObject
+       with XInterface {
     
     /**
       * accepts an interprocess connection. Waits until someone connects to the resource.
@@ -99,10 +98,10 @@ object connection {
       * @throws ConnectionSetupException Problems during setting up the acceptor. (e.g., Security-reasons, socket already busy, etc.)
       * @throws com::sun::star::lang::IllegalArgumentException sConnectionDescription could not be interpreted
       */
-    def accept(sConnectionDescription: String): XConnection = js.native
+    def accept(sConnectionDescription: String): XConnection
     
     /** pushes acceptor out of the accept-call. */
-    def stopAccepting(): Unit = js.native
+    def stopAccepting(): Unit
   }
   object XAcceptor {
     
@@ -135,8 +134,9 @@ object connection {
     * You should additionally implement {@link XConnection2} .
     * @see XConnection2
     */
-  @js.native
-  trait XConnection extends XInterface {
+  trait XConnection
+    extends StObject
+       with XInterface {
     
     /**
       * A unique string describing the connection.
@@ -144,13 +144,13 @@ object connection {
       * This string is different from the arguments to XConnection::accept() and {@link XConnector.connect()} . In general, the string contains an additional
       * handle value. For example, "socket,host=localhost,port=2002,uniqueValue=2324".
       */
-    val Description: String = js.native
+    val Description: String
     
     /** Immediately terminates any ongoing read or write calls. All subsequent read or write calls() */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /** Empties all internal buffers. */
-    def flush(): Unit = js.native
+    def flush(): Unit
     
     /**
       * A unique string describing the connection.
@@ -158,7 +158,7 @@ object connection {
       * This string is different from the arguments to XConnection::accept() and {@link XConnector.connect()} . In general, the string contains an additional
       * handle value. For example, "socket,host=localhost,port=2002,uniqueValue=2324".
       */
-    def getDescription(): String = js.native
+    def getDescription(): String
     
     /**
       * reads a requested number of bytes from the connection.
@@ -172,7 +172,7 @@ object connection {
       * @returns The read number of bytes. The return value and the length of the returned sequence must be identical.
       * @throws com::sun::star::io::IOException in case an error occurred during reading from the stream.
       */
-    def read(aReadBytes: js.Array[SeqEquiv[Double]], nBytesToRead: Double): Double = js.native
+    def read(aReadBytes: js.Array[SeqEquiv[Double]], nBytesToRead: Double): Double
     
     /**
       * writes the given bytesequence to the stream.
@@ -180,7 +180,7 @@ object connection {
       * The method blocks until the whole sequence is written.
       * @throws com::sun::star::io::IOException in case an error occurred during writing to the stream.
       */
-    def write(aData: SeqEquiv[Double]): Unit = js.native
+    def write(aData: SeqEquiv[Double]): Unit
   }
   object XConnection {
     
@@ -224,14 +224,15 @@ object connection {
   }
   
   /** {@link XConnection2} extends the `XConnection` interface with `available` and `readSomeBytes` */
-  @js.native
-  trait XConnection2 extends XConnection {
+  trait XConnection2
+    extends StObject
+       with XConnection {
     
     /** Gives the number of bytes available via `read` without blocking. */
-    def available(): Double = js.native
+    def available(): Double
     
     /** Blocks if no data is available otherwise reads at max **nMaxBytesToRead** but at least 1 byte. */
-    def readSomeBytes(aData: js.Array[SeqEquiv[Double]], nMaxBytesToRead: Double): Double = js.native
+    def readSomeBytes(aData: js.Array[SeqEquiv[Double]], nMaxBytesToRead: Double): Double
   }
   object XConnection2 {
     
@@ -269,22 +270,23 @@ object connection {
     *
     * Maybe supported by connections returned from {@link XAcceptor.accept()} or {@link XConnector.connect()} .
     */
-  @js.native
-  trait XConnectionBroadcaster extends XInterface {
+  trait XConnectionBroadcaster
+    extends StObject
+       with XInterface {
     
     /**
       * registers an object to receive events from this connection.
       *
       * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
       */
-    def addStreamListener(aListener: XStreamListener): Unit = js.native
+    def addStreamListener(aListener: XStreamListener): Unit
     
     /**
       * unregisters an object to receive events from this connection.
       *
       * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
       */
-    def removeStreamListener(aListener: XStreamListener): Unit = js.native
+    def removeStreamListener(aListener: XStreamListener): Unit
   }
   object XConnectionBroadcaster {
     
@@ -312,8 +314,9 @@ object connection {
   }
   
   /** allows to actively establish an interprocess connection. */
-  @js.native
-  trait XConnector extends XInterface {
+  trait XConnector
+    extends StObject
+       with XInterface {
     
     /**
       * creates a new connection interprocess connection.
@@ -324,7 +327,7 @@ object connection {
       * @throws ConnectionSetupException Problems during setting up the connector on client side, (e.g., Security-reasons, socket already busy .. ), or the strin
       * @throws NoConnectException Couldn't reach a server (e.g. network failure), no server is listening
       */
-    def connect(sConnectionDescription: String): XConnection = js.native
+    def connect(sConnectionDescription: String): XConnection
   }
   object XConnector {
     

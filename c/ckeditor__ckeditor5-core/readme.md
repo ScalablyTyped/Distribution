@@ -10,9 +10,9 @@ The core architecture of CKEditor 5 – the best browser-based rich text editor.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-core |
 | Keywords           | ckeditor5-lib, ckeditor, ckeditor5, ckeditor 5, wysiwyg, rich text, editor, html, contentEditable, editing, operational transformation, ot, collaboration, collaborative, real-time, framework |
-| # releases         | 16 |
-| # dependents       | 217 |
-| # downloads        | 1439724 |
+| # releases         | 18 |
+| # dependents       | 269 |
+| # downloads        | 1878241 |
 | # stars            | 0 |
 
 ## Links

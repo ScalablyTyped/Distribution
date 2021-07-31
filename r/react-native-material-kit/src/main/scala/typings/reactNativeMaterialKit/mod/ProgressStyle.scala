@@ -2,17 +2,15 @@ package typings.reactNativeMaterialKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressStyle extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var bufferColor: js.UndefOr[String] = js.native
+  var bufferColor: js.UndefOr[String] = js.undefined
   
-  var progressColor: js.UndefOr[String] = js.native
+  var progressColor: js.UndefOr[String] = js.undefined
 }
 object ProgressStyle {
   

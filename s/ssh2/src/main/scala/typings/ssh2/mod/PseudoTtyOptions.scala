@@ -2,26 +2,24 @@ package typings.ssh2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PseudoTtyOptions extends StObject {
   
   /** The number of columns (default: `80`). */
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
   /** The height in pixels (default: `480`). */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** The number of rows (default: `24`). */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /** The value to use for $TERM (default: `'vt100'`) */
-  var term: js.UndefOr[String] = js.native
+  var term: js.UndefOr[String] = js.undefined
   
   /** The width in pixels (default: `640`). */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PseudoTtyOptions {
   

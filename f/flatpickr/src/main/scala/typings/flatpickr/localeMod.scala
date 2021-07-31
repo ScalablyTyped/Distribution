@@ -4,43 +4,41 @@ import typings.flatpickr.anon.Longhand
 import typings.flatpickr.anon.Shorthand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
   
-  @js.native
   trait CustomLocale extends StObject {
     
-    var amPM: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var amPM: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
     var daysInMonth: js.UndefOr[
         js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double]
-      ] = js.native
+      ] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[Double] = js.native
+    var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var hourAriaLabel: js.UndefOr[String] = js.native
+    var hourAriaLabel: js.UndefOr[String] = js.undefined
     
-    var minuteAriaLabel: js.UndefOr[String] = js.native
+    var minuteAriaLabel: js.UndefOr[String] = js.undefined
     
-    var months: Shorthand = js.native
+    var months: Shorthand
     
-    var ordinal: js.UndefOr[js.Function1[/* nth */ Double, String]] = js.native
+    var ordinal: js.UndefOr[js.Function1[/* nth */ Double, String]] = js.undefined
     
-    var rangeSeparator: js.UndefOr[String] = js.native
+    var rangeSeparator: js.UndefOr[String] = js.undefined
     
-    var scrollTitle: js.UndefOr[String] = js.native
+    var scrollTitle: js.UndefOr[String] = js.undefined
     
-    var time_24hr: js.UndefOr[Boolean] = js.native
+    var time_24hr: js.UndefOr[Boolean] = js.undefined
     
-    var toggleTitle: js.UndefOr[String] = js.native
+    var toggleTitle: js.UndefOr[String] = js.undefined
     
-    var weekAbbreviation: js.UndefOr[String] = js.native
+    var weekAbbreviation: js.UndefOr[String] = js.undefined
     
-    var weekdays: Longhand = js.native
+    var weekdays: Longhand
     
-    var yearAriaLabel: js.UndefOr[String] = js.native
+    var yearAriaLabel: js.UndefOr[String] = js.undefined
   }
   object CustomLocale {
     
@@ -135,38 +133,37 @@ object localeMod {
     }
   }
   
-  @js.native
   trait Locale extends StObject {
     
-    var amPM: js.Tuple2[String, String] = js.native
+    var amPM: js.Tuple2[String, String]
     
-    var daysInMonth: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double] = js.native
+    var daysInMonth: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double]
     
-    var firstDayOfWeek: Double = js.native
+    var firstDayOfWeek: Double
     
-    var hourAriaLabel: String = js.native
+    var hourAriaLabel: String
     
-    var minuteAriaLabel: String = js.native
+    var minuteAriaLabel: String
     
-    var monthAriaLabel: String = js.native
+    var monthAriaLabel: String
     
-    var months: Shorthand = js.native
+    var months: Shorthand
     
-    def ordinal(nth: Double): String = js.native
+    def ordinal(nth: Double): String
     
-    var rangeSeparator: String = js.native
+    var rangeSeparator: String
     
-    var scrollTitle: String = js.native
+    var scrollTitle: String
     
-    var time_24hr: Boolean = js.native
+    var time_24hr: Boolean
     
-    var toggleTitle: String = js.native
+    var toggleTitle: String
     
-    var weekAbbreviation: String = js.native
+    var weekAbbreviation: String
     
-    var weekdays: Longhand = js.native
+    var weekdays: Longhand
     
-    var yearAriaLabel: String = js.native
+    var yearAriaLabel: String
   }
   object Locale {
     

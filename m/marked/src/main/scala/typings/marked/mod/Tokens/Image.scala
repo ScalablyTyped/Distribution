@@ -4,28 +4,28 @@ import typings.marked.markedStrings.image
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Image extends Token {
+trait Image
+  extends StObject
+     with Token {
   
-  var href: String = js.native
+  var href: String
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: image = js.native
+  var `type`: image
 }
 object Image {
   
   @scala.inline
-  def apply(href: String, raw: String, text: String, title: String, `type`: image): Image = {
+  def apply(href: String, raw: String, text: String, title: String): Image = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[Image]
   }
   

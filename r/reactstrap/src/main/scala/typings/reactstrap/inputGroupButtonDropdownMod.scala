@@ -6,7 +6,6 @@ import typings.reactstrap.reactstrapStrings.append
 import typings.reactstrap.reactstrapStrings.prepend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupButtonDropdownMod {
@@ -18,11 +17,12 @@ object inputGroupButtonDropdownMod {
   
   type InputGroupButtonDropdown = Component[InputGroupButtonDropdownProps, js.Object, js.Any]
   
-  @js.native
-  trait InputGroupButtonDropdownProps extends DropdownProps {
+  trait InputGroupButtonDropdownProps
+    extends StObject
+       with DropdownProps {
     
     @JSName("addonType")
-    var addonType_InputGroupButtonDropdownProps: prepend | append = js.native
+    var addonType_InputGroupButtonDropdownProps: prepend | append
   }
   object InputGroupButtonDropdownProps {
     

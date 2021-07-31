@@ -4,24 +4,24 @@ import typings.reactMdStates.typesMod.MergableRippleHandlers
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usePressedStatesMod {
   
-  @JSImport("@react-md/states/types/usePressedStates", "usePressedStates")
+  @JSImport("@react-md/states/types/usePressedStates", JSImport.Namespace)
   @js.native
-  def usePressedStates[E /* <: HTMLElement */](): ReturnValue[E] = js.native
-  @JSImport("@react-md/states/types/usePressedStates", "usePressedStates")
-  @js.native
-  def usePressedStates[E /* <: HTMLElement */](hasHandlersDisableSpacebarClick: PressedStatesOptions[E]): ReturnValue[E] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def usePressedStates[E /* <: HTMLElement */](): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePressedStates")().asInstanceOf[ReturnValue[E]]
+  @scala.inline
+  def usePressedStates[E /* <: HTMLElement */](hasHandlersDisableSpacebarClick: PressedStatesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePressedStates")(hasHandlersDisableSpacebarClick.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
+  
   trait PressedStatesOptions[E /* <: HTMLElement */] extends StObject {
     
-    var disableSpacebarClick: js.UndefOr[Boolean] = js.native
+    var disableSpacebarClick: js.UndefOr[Boolean] = js.undefined
     
-    var handlers: js.UndefOr[MergableRippleHandlers[E]] = js.native
+    var handlers: js.UndefOr[MergableRippleHandlers[E]] = js.undefined
   }
   object PressedStatesOptions {
     
@@ -32,7 +32,7 @@ object usePressedStatesMod {
     }
     
     @scala.inline
-    implicit class PressedStatesOptionsMutableBuilder[Self <: PressedStatesOptions[_], E /* <: HTMLElement */] (val x: Self with PressedStatesOptions[E]) extends AnyVal {
+    implicit class PressedStatesOptionsMutableBuilder[Self <: PressedStatesOptions[?], E /* <: HTMLElement */] (val x: Self & PressedStatesOptions[E]) extends AnyVal {
       
       @scala.inline
       def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
@@ -48,12 +48,11 @@ object usePressedStatesMod {
     }
   }
   
-  @js.native
   trait ReturnValue[E /* <: HTMLElement */] extends StObject {
     
-    var handlers: MergableRippleHandlers[E] = js.native
+    var handlers: MergableRippleHandlers[E]
     
-    var pressed: Boolean = js.native
+    var pressed: Boolean
   }
   object ReturnValue {
     
@@ -64,7 +63,7 @@ object usePressedStatesMod {
     }
     
     @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue[_], E /* <: HTMLElement */] (val x: Self with ReturnValue[E]) extends AnyVal {
+    implicit class ReturnValueMutableBuilder[Self <: ReturnValue[?], E /* <: HTMLElement */] (val x: Self & ReturnValue[E]) extends AnyVal {
       
       @scala.inline
       def setHandlers(value: MergableRippleHandlers[E]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])

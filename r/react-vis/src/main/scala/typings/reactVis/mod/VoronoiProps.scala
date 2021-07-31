@@ -5,32 +5,30 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoronoiProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: ''
-  var extent: js.Array[js.Array[Double]] = js.native
+  var extent: js.Array[js.Array[Double]]
   
-  var nodes: js.Array[VoronoiPoint] = js.native
+  var nodes: js.Array[VoronoiPoint]
   
-  var onBlur: js.UndefOr[RVMouseEventHandler] = js.native
+  var onBlur: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onClick: js.UndefOr[RVMouseEventHandler] = js.native
+  var onClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onHover: js.UndefOr[RVMouseEventHandler] = js.native
+  var onHover: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseDown: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseDown: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var onMouseUp: js.UndefOr[RVMouseEventHandler] = js.native
+  var onMouseUp: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var x: js.UndefOr[js.Function1[/* d */ js.Any, Double]] = js.native
+  var x: js.UndefOr[js.Function1[/* d */ js.Any, Double]] = js.undefined
   
-  var y: js.UndefOr[js.Function1[/* d */ js.Any, Double]] = js.native
+  var y: js.UndefOr[js.Function1[/* d */ js.Any, Double]] = js.undefined
 }
 object VoronoiProps {
   

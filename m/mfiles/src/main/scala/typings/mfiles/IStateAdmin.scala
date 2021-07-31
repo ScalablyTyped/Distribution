@@ -2,63 +2,61 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStateAdmin extends StObject {
   
-  var ActionAssignToUser: Boolean = js.native
+  var ActionAssignToUser: Boolean
   
-  var ActionAssignToUserDefinition: IActionCreateAssignment = js.native
+  var ActionAssignToUserDefinition: IActionCreateAssignment
   
-  var ActionConvertToPDF: Boolean = js.native
+  var ActionConvertToPDF: Boolean
   
-  var ActionConvertToPDFDefinition: IActionConvertToPDF = js.native
+  var ActionConvertToPDFDefinition: IActionConvertToPDF
   
-  var ActionCreateSeparateAssignment: Boolean = js.native
+  var ActionCreateSeparateAssignment: Boolean
   
-  var ActionDefinitions: IActionDefinitions = js.native
+  var ActionDefinitions: IActionDefinitions
   
-  var ActionDelete: Boolean = js.native
+  var ActionDelete: Boolean
   
-  var ActionMarkForArchiving: Boolean = js.native
+  var ActionMarkForArchiving: Boolean
   
-  var ActionRunVBScript: Boolean = js.native
+  var ActionRunVBScript: Boolean
   
-  var ActionRunVBScriptDefinition: String = js.native
+  var ActionRunVBScriptDefinition: String
   
-  var ActionSendNotification: Boolean = js.native
+  var ActionSendNotification: Boolean
   
-  var ActionSendNotificationDefinition: IActionSendNotification = js.native
+  var ActionSendNotificationDefinition: IActionSendNotification
   
-  var ActionSetPermissions: Boolean = js.native
+  var ActionSetPermissions: Boolean
   
-  var ActionSetPermissionsDetailedDefinition: IActionSetPermissions = js.native
+  var ActionSetPermissionsDetailedDefinition: IActionSetPermissions
   
-  var ActionSetProperties: Boolean = js.native
+  var ActionSetProperties: Boolean
   
-  var ActionSetPropertiesDefinition: IActionSetProperties = js.native
+  var ActionSetPropertiesDefinition: IActionSetProperties
   
-  var CheckInOutPermissions: Boolean = js.native
+  var CheckInOutPermissions: Boolean
   
-  def Clone(): IStateAdmin = js.native
+  def Clone(): IStateAdmin
   
-  var Description: String = js.native
+  var Description: String
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var InOutPermissions: IAccessControlList = js.native
+  var InOutPermissions: IAccessControlList
   
-  var Name: String = js.native
+  var Name: String
   
-  var Postconditions: IStateConditions = js.native
+  var Postconditions: IStateConditions
   
-  var Preconditions: IStateConditions = js.native
+  var Preconditions: IStateConditions
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
   
-  var TransitionsRequireEditAccessToObject: Boolean = js.native
+  var TransitionsRequireEditAccessToObject: Boolean
 }
 object IStateAdmin {
   

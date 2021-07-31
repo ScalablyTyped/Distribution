@@ -2,14 +2,15 @@ package typings.eventEmitterEs6
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("event-emitter-es6", JSImport.Namespace)
   @js.native
-  class ^ () extends EventEmitter {
+  class ^ ()
+    extends StObject
+       with EventEmitter {
     def this(options: Options) = this()
   }
   
@@ -30,14 +31,17 @@ object mod {
     def once(`type`: String, listener: Listener): Unit = js.native
   }
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
-  
   @js.native
+  trait Listener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
+  
   trait Options extends StObject {
     
-    var emitDelay: js.UndefOr[Double] = js.native
+    var emitDelay: js.UndefOr[Double] = js.undefined
     
-    var strictMode: js.UndefOr[Boolean] = js.native
+    var strictMode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

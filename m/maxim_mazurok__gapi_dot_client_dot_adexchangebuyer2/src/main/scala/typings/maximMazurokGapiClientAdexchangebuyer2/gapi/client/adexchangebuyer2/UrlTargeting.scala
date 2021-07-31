@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlTargeting extends StObject {
   
   /** A list of URLs to be excluded. */
-  var excludedUrls: js.UndefOr[js.Array[String]] = js.native
+  var excludedUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of URLs to be included. */
-  var targetedUrls: js.UndefOr[js.Array[String]] = js.native
+  var targetedUrls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UrlTargeting {
   

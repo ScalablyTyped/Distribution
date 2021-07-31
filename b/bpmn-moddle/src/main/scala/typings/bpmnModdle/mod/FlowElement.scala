@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlowElement extends BaseElement {
+trait FlowElement
+  extends StObject
+     with BaseElement {
   
-  var auditing: Auditing = js.native
+  var auditing: Auditing
   
-  var categoryValueRef: js.Array[CategoryValue] = js.native
+  var categoryValueRef: js.Array[CategoryValue]
   
-  var monitoring: Monitoring = js.native
+  var monitoring: Monitoring
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object FlowElement {
   

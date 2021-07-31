@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[FillLayout] = js.native
+  var layout: js.UndefOr[FillLayout] = js.undefined
   
-  var paint: js.UndefOr[FillPaint] = js.native
+  var paint: js.UndefOr[FillPaint] = js.undefined
   
-  var `type`: fill = js.native
+  var `type`: fill
 }
 object FillLayer {
   
   @scala.inline
-  def apply(id: String, `type`: fill): FillLayer = {
+  def apply(id: String): FillLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fill")
     __obj.asInstanceOf[FillLayer]
   }
   

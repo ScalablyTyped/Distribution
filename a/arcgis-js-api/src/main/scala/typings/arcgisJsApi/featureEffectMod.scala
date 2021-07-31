@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.FeatureEffectConstructor
 import typings.arcgisJsApi.esri.FeatureEffectProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureEffectMod extends Shortcut {
   
   @JSImport("esri/views/layers/support/FeatureEffect", JSImport.Namespace)
   @js.native
-  val ^ : FeatureEffectConstructor = js.native
+  val ^ : js.Object & FeatureEffectConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/layers/support/FeatureEffect", JSImport.Namespace)
@@ -23,12 +22,22 @@ object featureEffectMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html)
     */
-  class Class () extends FeatureEffect {
+  class Class ()
+    extends StObject
+       with FeatureEffect {
     def this(properties: FeatureEffectProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = FeatureEffectConstructor
+  type _To = js.Object & FeatureEffectConstructor
   
   /* This means you don't have to write `^`, but can instead just say `featureEffectMod.foo` */
-  override def _to: FeatureEffectConstructor = ^
+  override def _to: js.Object & FeatureEffectConstructor = ^
 }

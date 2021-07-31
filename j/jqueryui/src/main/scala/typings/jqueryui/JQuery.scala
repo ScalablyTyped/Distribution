@@ -95,7 +95,6 @@ import typings.std.MouseEvent
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -119,25 +118,20 @@ trait JQuery extends StObject {
   def accordion_widget(methodName: widget): JQuery = js.native
   
   def addClass(classNames: String): JQuery = js.native
-  def addClass(classNames: String, speed: js.UndefOr[scala.Nothing], callback: js.Function): JQuery = js.native
-  def addClass(
-    classNames: String,
-    speed: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): JQuery = js.native
-  def addClass(classNames: String, speed: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
-  def addClass(classNames: String, speed: js.UndefOr[scala.Nothing], easing: String, callback: js.Function): JQuery = js.native
   def addClass(classNames: String, speed: String): JQuery = js.native
   def addClass(classNames: String, speed: String, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: String, easing: js.UndefOr[scala.Nothing], callback: js.Function): JQuery = js.native
   def addClass(classNames: String, speed: String, easing: String): JQuery = js.native
   def addClass(classNames: String, speed: String, easing: String, callback: js.Function): JQuery = js.native
+  def addClass(classNames: String, speed: String, easing: Unit, callback: js.Function): JQuery = js.native
   def addClass(classNames: String, speed: Double): JQuery = js.native
   def addClass(classNames: String, speed: Double, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function): JQuery = js.native
   def addClass(classNames: String, speed: Double, easing: String): JQuery = js.native
   def addClass(classNames: String, speed: Double, easing: String, callback: js.Function): JQuery = js.native
+  def addClass(classNames: String, speed: Double, easing: Unit, callback: js.Function): JQuery = js.native
+  def addClass(classNames: String, speed: Unit, callback: js.Function): JQuery = js.native
+  def addClass(classNames: String, speed: Unit, easing: String): JQuery = js.native
+  def addClass(classNames: String, speed: Unit, easing: String, callback: js.Function): JQuery = js.native
+  def addClass(classNames: String, speed: Unit, easing: Unit, callback: js.Function): JQuery = js.native
   
   def autocomplete(): JQuery = js.native
   def autocomplete(methodName: String): JQuery = js.native
@@ -296,7 +290,7 @@ trait JQuery extends StObject {
     * @param methodName 'option'
     * @param optionName 'beforeShowDay'
     */
-  def datepicker(methodName: option, optionName: beforeShowDay): js.Function1[/* date */ Date, js.Array[_]] = js.native
+  def datepicker(methodName: option, optionName: beforeShowDay): js.Function1[/* date */ Date, js.Array[js.Any]] = js.native
   /**
     * Set the beforeShow option, after initialization
     *
@@ -311,7 +305,7 @@ trait JQuery extends StObject {
   def datepicker(
     methodName: option,
     optionName: beforeShowDay,
-    beforeShowDayValue: js.Function1[/* date */ Date, js.Array[_]]
+    beforeShowDayValue: js.Function1[/* date */ Date, js.Array[js.Any]]
   ): JQuery = js.native
   /**
     * Set the beforeShow option, after initialization
@@ -630,57 +624,17 @@ trait JQuery extends StObject {
   @JSName("datepicker")
   def datepicker_dialog(methodName: dialog, date: String): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: String,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: js.UndefOr[scala.Nothing],
-    pos: js.Array[Double]
-  ): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: String,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: js.UndefOr[scala.Nothing],
-    pos: MouseEvent
-  ): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: String, onSelect: js.UndefOr[scala.Nothing], settings: DatepickerOptions): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: String,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: DatepickerOptions,
-    pos: js.Array[Double]
-  ): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: String,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: DatepickerOptions,
-    pos: MouseEvent
-  ): JQuery = js.native
-  @JSName("datepicker")
   def datepicker_dialog(methodName: dialog, date: String, onSelect: js.Function0[Unit]): JQuery = js.native
   @JSName("datepicker")
   def datepicker_dialog(
     methodName: dialog,
     date: String,
     onSelect: js.Function0[Unit],
-    settings: js.UndefOr[scala.Nothing],
+    settings: Unit,
     pos: js.Array[Double]
   ): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: String,
-    onSelect: js.Function0[Unit],
-    settings: js.UndefOr[scala.Nothing],
-    pos: MouseEvent
-  ): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: String, onSelect: js.Function0[Unit], settings: Unit, pos: MouseEvent): JQuery = js.native
   @JSName("datepicker")
   def datepicker_dialog(methodName: dialog, date: String, onSelect: js.Function0[Unit], settings: DatepickerOptions): JQuery = js.native
   @JSName("datepicker")
@@ -699,6 +653,22 @@ trait JQuery extends StObject {
     settings: DatepickerOptions,
     pos: MouseEvent
   ): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: String, onSelect: Unit, settings: Unit, pos: js.Array[Double]): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: String, onSelect: Unit, settings: Unit, pos: MouseEvent): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: String, onSelect: Unit, settings: DatepickerOptions): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(
+    methodName: dialog,
+    date: String,
+    onSelect: Unit,
+    settings: DatepickerOptions,
+    pos: js.Array[Double]
+  ): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: String, onSelect: Unit, settings: DatepickerOptions, pos: MouseEvent): JQuery = js.native
   /**
     * Opens the datepicker in a dialog box.
     *
@@ -711,57 +681,17 @@ trait JQuery extends StObject {
   @JSName("datepicker")
   def datepicker_dialog(methodName: dialog, date: Date): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: Date,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: js.UndefOr[scala.Nothing],
-    pos: js.Array[Double]
-  ): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: Date,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: js.UndefOr[scala.Nothing],
-    pos: MouseEvent
-  ): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.UndefOr[scala.Nothing], settings: DatepickerOptions): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: Date,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: DatepickerOptions,
-    pos: js.Array[Double]
-  ): JQuery = js.native
-  @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: Date,
-    onSelect: js.UndefOr[scala.Nothing],
-    settings: DatepickerOptions,
-    pos: MouseEvent
-  ): JQuery = js.native
-  @JSName("datepicker")
   def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.Function0[Unit]): JQuery = js.native
   @JSName("datepicker")
   def datepicker_dialog(
     methodName: dialog,
     date: Date,
     onSelect: js.Function0[Unit],
-    settings: js.UndefOr[scala.Nothing],
+    settings: Unit,
     pos: js.Array[Double]
   ): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(
-    methodName: dialog,
-    date: Date,
-    onSelect: js.Function0[Unit],
-    settings: js.UndefOr[scala.Nothing],
-    pos: MouseEvent
-  ): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.Function0[Unit], settings: Unit, pos: MouseEvent): JQuery = js.native
   @JSName("datepicker")
   def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.Function0[Unit], settings: DatepickerOptions): JQuery = js.native
   @JSName("datepicker")
@@ -780,6 +710,16 @@ trait JQuery extends StObject {
     settings: DatepickerOptions,
     pos: MouseEvent
   ): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: Unit, pos: js.Array[Double]): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: Unit, pos: MouseEvent): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: DatepickerOptions): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: DatepickerOptions, pos: js.Array[Double]): JQuery = js.native
+  @JSName("datepicker")
+  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: DatepickerOptions, pos: MouseEvent): JQuery = js.native
   /**
     * Returns the current date for the datepicker or null if no date has been selected.
     *
@@ -901,22 +841,17 @@ trait JQuery extends StObject {
   def droppable_widget(methodName: widget): JQuery = js.native
   
   def effect(effect: String): JQuery = js.native
-  def effect(
-    effect: String,
-    options: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def effect(effect: String, options: js.UndefOr[scala.Nothing], duration: String): JQuery = js.native
-  def effect(effect: String, options: js.UndefOr[scala.Nothing], duration: String, complete: js.Function): JQuery = js.native
-  def effect(effect: String, options: js.UndefOr[scala.Nothing], duration: Double): JQuery = js.native
-  def effect(effect: String, options: js.UndefOr[scala.Nothing], duration: Double, complete: js.Function): JQuery = js.native
   def effect(effect: String, options: js.Any): JQuery = js.native
-  def effect(effect: String, options: js.Any, duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def effect(effect: String, options: js.Any, duration: String): JQuery = js.native
   def effect(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
   def effect(effect: String, options: js.Any, duration: Double): JQuery = js.native
   def effect(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
+  def effect(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
+  def effect(effect: String, options: Unit, duration: String): JQuery = js.native
+  def effect(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
+  def effect(effect: String, options: Unit, duration: Double): JQuery = js.native
+  def effect(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
+  def effect(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
   def effect(options: js.Any): JQuery = js.native
   
   def enableSelection(): JQuery = js.native
@@ -925,22 +860,17 @@ trait JQuery extends StObject {
   def focus(delay: Double, callback: js.Function): JQuery = js.native
   
   def hide(effect: String): JQuery = js.native
-  def hide(
-    effect: String,
-    options: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def hide(effect: String, options: js.UndefOr[scala.Nothing], duration: String): JQuery = js.native
-  def hide(effect: String, options: js.UndefOr[scala.Nothing], duration: String, complete: js.Function): JQuery = js.native
-  def hide(effect: String, options: js.UndefOr[scala.Nothing], duration: Double): JQuery = js.native
-  def hide(effect: String, options: js.UndefOr[scala.Nothing], duration: Double, complete: js.Function): JQuery = js.native
   def hide(effect: String, options: js.Any): JQuery = js.native
-  def hide(effect: String, options: js.Any, duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def hide(effect: String, options: js.Any, duration: String): JQuery = js.native
   def hide(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
   def hide(effect: String, options: js.Any, duration: Double): JQuery = js.native
   def hide(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
+  def hide(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
+  def hide(effect: String, options: Unit, duration: String): JQuery = js.native
+  def hide(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
+  def hide(effect: String, options: Unit, duration: Double): JQuery = js.native
+  def hide(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
+  def hide(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
   def hide(options: js.Any): JQuery = js.native
   
   var jQuery: JQueryStatic = js.native
@@ -963,7 +893,7 @@ trait JQuery extends StObject {
   @JSName("menu")
   def menu_collapseAll(methodName: collapseAll): Unit = js.native
   @JSName("menu")
-  def menu_collapseAll(methodName: collapseAll, event: js.UndefOr[scala.Nothing], all: Boolean): Unit = js.native
+  def menu_collapseAll(methodName: collapseAll, event: Unit, all: Boolean): Unit = js.native
   @JSName("menu")
   def menu_collapseAll(methodName: collapseAll, event: JQueryEventObject): Unit = js.native
   @JSName("menu")
@@ -1032,25 +962,20 @@ trait JQuery extends StObject {
   def progressbar_widget(methodName: widget): JQuery = js.native
   
   def removeClass(classNames: String): JQuery = js.native
-  def removeClass(classNames: String, speed: js.UndefOr[scala.Nothing], callback: js.Function): JQuery = js.native
-  def removeClass(
-    classNames: String,
-    speed: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): JQuery = js.native
-  def removeClass(classNames: String, speed: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
-  def removeClass(classNames: String, speed: js.UndefOr[scala.Nothing], easing: String, callback: js.Function): JQuery = js.native
   def removeClass(classNames: String, speed: String): JQuery = js.native
   def removeClass(classNames: String, speed: String, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: String, easing: js.UndefOr[scala.Nothing], callback: js.Function): JQuery = js.native
   def removeClass(classNames: String, speed: String, easing: String): JQuery = js.native
   def removeClass(classNames: String, speed: String, easing: String, callback: js.Function): JQuery = js.native
+  def removeClass(classNames: String, speed: String, easing: Unit, callback: js.Function): JQuery = js.native
   def removeClass(classNames: String, speed: Double): JQuery = js.native
   def removeClass(classNames: String, speed: Double, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function): JQuery = js.native
   def removeClass(classNames: String, speed: Double, easing: String): JQuery = js.native
   def removeClass(classNames: String, speed: Double, easing: String, callback: js.Function): JQuery = js.native
+  def removeClass(classNames: String, speed: Double, easing: Unit, callback: js.Function): JQuery = js.native
+  def removeClass(classNames: String, speed: Unit, callback: js.Function): JQuery = js.native
+  def removeClass(classNames: String, speed: Unit, easing: String): JQuery = js.native
+  def removeClass(classNames: String, speed: Unit, easing: String, callback: js.Function): JQuery = js.native
+  def removeClass(classNames: String, speed: Unit, easing: Unit, callback: js.Function): JQuery = js.native
   
   def removeUniqueId(): JQuery = js.native
   
@@ -1112,22 +1037,17 @@ trait JQuery extends StObject {
   def selectmenu_widget(methodName: widget): JQuery = js.native
   
   def show(effect: String): JQuery = js.native
-  def show(
-    effect: String,
-    options: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def show(effect: String, options: js.UndefOr[scala.Nothing], duration: String): JQuery = js.native
-  def show(effect: String, options: js.UndefOr[scala.Nothing], duration: String, complete: js.Function): JQuery = js.native
-  def show(effect: String, options: js.UndefOr[scala.Nothing], duration: Double): JQuery = js.native
-  def show(effect: String, options: js.UndefOr[scala.Nothing], duration: Double, complete: js.Function): JQuery = js.native
   def show(effect: String, options: js.Any): JQuery = js.native
-  def show(effect: String, options: js.Any, duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def show(effect: String, options: js.Any, duration: String): JQuery = js.native
   def show(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
   def show(effect: String, options: js.Any, duration: Double): JQuery = js.native
   def show(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
+  def show(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
+  def show(effect: String, options: Unit, duration: String): JQuery = js.native
+  def show(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
+  def show(effect: String, options: Unit, duration: Double): JQuery = js.native
+  def show(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
+  def show(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
   def show(options: js.Any): JQuery = js.native
   
   def slider(): JQuery = js.native
@@ -1220,29 +1140,7 @@ trait JQuery extends StObject {
   def spinner_widget(methodName: widget): JQuery = js.native
   
   def switchClass(removeClassName: String, addClassName: String): JQuery = js.native
-  def switchClass(
-    removeClassName: String,
-    addClassName: String,
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
-  def switchClass(
-    removeClassName: String,
-    addClassName: String,
-    duration: js.UndefOr[scala.Nothing],
-    easing: String,
-    complete: js.Function
-  ): JQuery = js.native
   def switchClass(removeClassName: String, addClassName: String, duration: String): JQuery = js.native
-  def switchClass(
-    removeClassName: String,
-    addClassName: String,
-    duration: String,
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
   def switchClass(removeClassName: String, addClassName: String, duration: String, easing: String): JQuery = js.native
   def switchClass(
     removeClassName: String,
@@ -1251,14 +1149,14 @@ trait JQuery extends StObject {
     easing: String,
     complete: js.Function
   ): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: Double): JQuery = js.native
   def switchClass(
     removeClassName: String,
     addClassName: String,
-    duration: Double,
-    easing: js.UndefOr[scala.Nothing],
+    duration: String,
+    easing: Unit,
     complete: js.Function
   ): JQuery = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Double): JQuery = js.native
   def switchClass(removeClassName: String, addClassName: String, duration: Double, easing: String): JQuery = js.native
   def switchClass(
     removeClassName: String,
@@ -1267,6 +1165,22 @@ trait JQuery extends StObject {
     easing: String,
     complete: js.Function
   ): JQuery = js.native
+  def switchClass(
+    removeClassName: String,
+    addClassName: String,
+    duration: Double,
+    easing: Unit,
+    complete: js.Function
+  ): JQuery = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Unit, easing: String): JQuery = js.native
+  def switchClass(
+    removeClassName: String,
+    addClassName: String,
+    duration: Unit,
+    easing: String,
+    complete: js.Function
+  ): JQuery = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
   
   def tabs(): JQuery = js.native
   def tabs(methodName: String): JQuery = js.native
@@ -1294,128 +1208,53 @@ trait JQuery extends StObject {
   def tabs_widget(methodName: widget): JQuery = js.native
   
   def toggle(effect: String): JQuery = js.native
-  def toggle(
-    effect: String,
-    options: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def toggle(effect: String, options: js.UndefOr[scala.Nothing], duration: String): JQuery = js.native
-  def toggle(effect: String, options: js.UndefOr[scala.Nothing], duration: String, complete: js.Function): JQuery = js.native
-  def toggle(effect: String, options: js.UndefOr[scala.Nothing], duration: Double): JQuery = js.native
-  def toggle(effect: String, options: js.UndefOr[scala.Nothing], duration: Double, complete: js.Function): JQuery = js.native
   def toggle(effect: String, options: js.Any): JQuery = js.native
-  def toggle(effect: String, options: js.Any, duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def toggle(effect: String, options: js.Any, duration: String): JQuery = js.native
   def toggle(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
   def toggle(effect: String, options: js.Any, duration: Double): JQuery = js.native
   def toggle(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
+  def toggle(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
+  def toggle(effect: String, options: Unit, duration: String): JQuery = js.native
+  def toggle(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
+  def toggle(effect: String, options: Unit, duration: Double): JQuery = js.native
+  def toggle(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
+  def toggle(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
   def toggle(options: js.Any): JQuery = js.native
   
   def toggleClass(className: String): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    easing: String
-  ): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: js.UndefOr[scala.Nothing],
-    easing: String,
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: String,
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(className: String, aswitch: js.UndefOr[scala.Nothing], duration: String, easing: String): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: String,
-    easing: String,
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(className: String, aswitch: js.UndefOr[scala.Nothing], duration: Double): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: Double,
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(className: String, aswitch: js.UndefOr[scala.Nothing], duration: Double, easing: String): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: js.UndefOr[scala.Nothing],
-    duration: Double,
-    easing: String,
-    complete: js.Function
-  ): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: Boolean,
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: Boolean,
-    duration: js.UndefOr[scala.Nothing],
-    easing: String,
-    complete: js.Function
-  ): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean, duration: String): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: Boolean,
-    duration: String,
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean, duration: String, easing: String): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean, duration: String, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: Unit, complete: js.Function): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean, duration: Double): JQuery = js.native
-  def toggleClass(
-    className: String,
-    aswitch: Boolean,
-    duration: Double,
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: String): JQuery = js.native
   def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(
-    className: String,
-    duration: js.UndefOr[scala.Nothing],
-    easing: js.UndefOr[scala.Nothing],
-    complete: js.Function
-  ): JQuery = js.native
-  def toggleClass(className: String, duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
-  def toggleClass(className: String, duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: Unit, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: String): JQuery = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: String, easing: String): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: String, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: String, easing: Unit, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: String): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: Unit, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: String): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
   def toggleClass(className: String, duration: String): JQuery = js.native
-  def toggleClass(className: String, duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def toggleClass(className: String, duration: String, easing: String): JQuery = js.native
   def toggleClass(className: String, duration: String, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, duration: String, easing: Unit, complete: js.Function): JQuery = js.native
   def toggleClass(className: String, duration: Double): JQuery = js.native
-  def toggleClass(className: String, duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def toggleClass(className: String, duration: Double, easing: String): JQuery = js.native
   def toggleClass(className: String, duration: Double, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, duration: Double, easing: Unit, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, duration: Unit, easing: String): JQuery = js.native
+  def toggleClass(className: String, duration: Unit, easing: String, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
   
   def tooltip(): JQuery = js.native
   def tooltip(methodName: String): JQuery = js.native
@@ -1444,8 +1283,8 @@ trait JQuery extends StObject {
   def widget(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def widget(options: AccordionOptions): JQuery = js.native
   def widget(options: WidgetOptions): JQuery = js.native
-  def widget[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def widget[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def widget[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def widget[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("widget")
   var widget_Original: Widget = js.native
   

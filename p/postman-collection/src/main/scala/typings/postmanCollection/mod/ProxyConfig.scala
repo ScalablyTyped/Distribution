@@ -3,7 +3,6 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -36,7 +35,10 @@ class ProxyConfig () extends Property[ProxyConfigDefinition] {
 /* static members */
 object ProxyConfig {
   
-  @JSImport("postman-collection", "ProxyConfig.isProxyConfig")
+  @JSImport("postman-collection", "ProxyConfig")
   @js.native
-  def isProxyConfig(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isProxyConfig(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProxyConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

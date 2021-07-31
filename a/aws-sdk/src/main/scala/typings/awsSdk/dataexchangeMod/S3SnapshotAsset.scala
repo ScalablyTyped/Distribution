@@ -2,16 +2,14 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3SnapshotAsset extends StObject {
   
   /**
     * The size of the S3 object that is the object.
     */
-  var Size: doubleMin0 = js.native
+  var Size: doubleMin0
 }
 object S3SnapshotAsset {
   

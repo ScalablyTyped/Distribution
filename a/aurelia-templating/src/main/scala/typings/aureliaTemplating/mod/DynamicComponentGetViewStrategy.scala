@@ -2,16 +2,14 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicComponentGetViewStrategy extends StObject {
   
   /**
     * Implement this hook if you want to provide custom view strategy when this component is used with the compose element or the router.
     */
-  def getViewStrategy(): String | ViewStrategy_ = js.native
+  def getViewStrategy(): String | ViewStrategy_
 }
 object DynamicComponentGetViewStrategy {
   

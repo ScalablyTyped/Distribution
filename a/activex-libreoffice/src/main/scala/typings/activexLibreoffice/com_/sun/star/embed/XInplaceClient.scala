@@ -10,12 +10,12 @@ import typings.activexLibreoffice.com_.sun.star.frame.XLayoutManager
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents common functionality for inplace clients. */
-@js.native
-trait XInplaceClient extends XInterface {
+trait XInplaceClient
+  extends StObject
+     with XInterface {
   
   /**
     * gets the inplace object clip rectangle.
@@ -25,21 +25,21 @@ trait XInplaceClient extends XInterface {
     * @returns specifies a new clip rectangle
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  val ClipRectangle: Rectangle = js.native
+  val ClipRectangle: Rectangle
   
   /**
     * allows to retrieve the container's dispatch provider.
     * @returns reference to object implementing the {@link com.sun.star.frame.XDispatchProvider}
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  val InplaceDispatchProvider: XDispatchProvider = js.native
+  val InplaceDispatchProvider: XDispatchProvider
   
   /**
     * allows to retrieve the {@link com.sun.star.frame.LayoutManager} of the container.
     * @returns reference to object representing the {@link com.sun.star.frame.LayoutManager} of the container
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  val LayoutManager: XLayoutManager = js.native
+  val LayoutManager: XLayoutManager
   
   /**
     * gets the inplace object position rectangle.
@@ -49,25 +49,25 @@ trait XInplaceClient extends XInterface {
     * @returns specifies a new position rectangle
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  val Placement: Rectangle = js.native
+  val Placement: Rectangle
   
   /**
     * notifies container through the client that the object is to be inplace activated.
     * @throws com::sun::star::embed::WrongStateException the container is not ready for activation
     */
-  def activatingInplace(): Unit = js.native
+  def activatingInplace(): Unit
   
   /**
     * notifies container through the client that the object is to be UI-activated.
     * @throws com::sun::star::embed::WrongStateException the container is not ready for activation
     */
-  def activatingUI(): Unit = js.native
+  def activatingUI(): Unit
   
   /**
     * checks if the container can activate the object inplace.
     * @returns `TRUE` the container can activate the object inplace. `FALSE` otherwise.
     */
-  def canInplaceActivate(): Boolean = js.native
+  def canInplaceActivate(): Boolean
   
   /**
     * notifies the container that the position of the object is changed.
@@ -75,13 +75,13 @@ trait XInplaceClient extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object state is not correct
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def changedPlacement(aPosRect: Rectangle): Unit = js.native
+  def changedPlacement(aPosRect: Rectangle): Unit
   
   /**
     * notifies container through the client that the object is deactivated.
     * @throws com::sun::star::embed::WrongStateException the container is not ready for deactivation
     */
-  def deactivatedInplace(): Unit = js.native
+  def deactivatedInplace(): Unit
   
   /**
     * notifies container through the client that the object is UI-deactivated.
@@ -89,7 +89,7 @@ trait XInplaceClient extends XInterface {
     * After this notification the container can restore it's own UI and take focus.
     * @throws com::sun::star::embed::WrongStateException the container is not ready for deactivation
     */
-  def deactivatedUI(): Unit = js.native
+  def deactivatedUI(): Unit
   
   /**
     * gets the inplace object clip rectangle.
@@ -99,21 +99,21 @@ trait XInplaceClient extends XInterface {
     * @returns specifies a new clip rectangle
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  def getClipRectangle(): Rectangle = js.native
+  def getClipRectangle(): Rectangle
   
   /**
     * allows to retrieve the container's dispatch provider.
     * @returns reference to object implementing the {@link com.sun.star.frame.XDispatchProvider}
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  def getInplaceDispatchProvider(): XDispatchProvider = js.native
+  def getInplaceDispatchProvider(): XDispatchProvider
   
   /**
     * allows to retrieve the {@link com.sun.star.frame.LayoutManager} of the container.
     * @returns reference to object representing the {@link com.sun.star.frame.LayoutManager} of the container
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  def getLayoutManager(): XLayoutManager = js.native
+  def getLayoutManager(): XLayoutManager
   
   /**
     * gets the inplace object position rectangle.
@@ -123,21 +123,21 @@ trait XInplaceClient extends XInterface {
     * @returns specifies a new position rectangle
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state to make such request
     */
-  def getPlacement(): Rectangle = js.native
+  def getPlacement(): Rectangle
   
   /**
     * scrolls the object.
     * @param aOffset scrolls the object to specified offset in pixels
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state
     */
-  def scrollObject(aOffset: Size): Unit = js.native
+  def scrollObject(aOffset: Size): Unit
   
   /**
     * provides accelerator table the object wants to use while it is inplace active.
     * @param aKeys an accelerator table from object
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state
     */
-  def translateAccelerators(aKeys: SeqEquiv[KeyEvent]): Unit = js.native
+  def translateAccelerators(aKeys: SeqEquiv[KeyEvent]): Unit
 }
 object XInplaceClient {
   

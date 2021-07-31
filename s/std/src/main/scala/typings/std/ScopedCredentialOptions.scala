@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopedCredentialOptions extends StObject {
   
-  var excludeList: js.UndefOr[js.Array[ScopedCredentialDescriptor]] = js.native
+  var excludeList: js.UndefOr[js.Array[ScopedCredentialDescriptor]] = js.undefined
   
-  var extensions: js.UndefOr[WebAuthnExtensions] = js.native
+  var extensions: js.UndefOr[WebAuthnExtensions] = js.undefined
   
-  var rpId: js.UndefOr[java.lang.String] = js.native
+  var rpId: js.UndefOr[java.lang.String] = js.undefined
   
-  var timeoutSeconds: js.UndefOr[Double] = js.native
+  var timeoutSeconds: js.UndefOr[Double] = js.undefined
 }
 object ScopedCredentialOptions {
   

@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -35,33 +34,34 @@ object mod extends Shortcut {
   @js.native
   val List: FC[IContentLoaderProps] = js.native
   
-  @js.native
-  trait IContentLoaderProps extends SVGAttributes[SVGElement] {
+  trait IContentLoaderProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var backgroundOpacity: js.UndefOr[Double] = js.native
+    var backgroundOpacity: js.UndefOr[Double] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var foregroundColor: js.UndefOr[String] = js.native
+    var foregroundColor: js.UndefOr[String] = js.undefined
     
-    var foregroundOpacity: js.UndefOr[Double] = js.native
+    var foregroundOpacity: js.UndefOr[Double] = js.undefined
     
-    var gradientRatio: js.UndefOr[Double] = js.native
+    var gradientRatio: js.UndefOr[Double] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
     @JSName("speed")
-    var speed_IContentLoaderProps: js.UndefOr[Double] = js.native
+    var speed_IContentLoaderProps: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var uniqueKey: js.UndefOr[String] = js.native
+    var uniqueKey: js.UndefOr[String] = js.undefined
   }
   object IContentLoaderProps {
     

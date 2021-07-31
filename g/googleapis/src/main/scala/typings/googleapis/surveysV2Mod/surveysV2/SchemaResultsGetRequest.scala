@@ -2,13 +2,11 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResultsGetRequest extends StObject {
   
-  var resultMask: js.UndefOr[SchemaResultsMask] = js.native
+  var resultMask: js.UndefOr[SchemaResultsMask] = js.undefined
 }
 object SchemaResultsGetRequest {
   

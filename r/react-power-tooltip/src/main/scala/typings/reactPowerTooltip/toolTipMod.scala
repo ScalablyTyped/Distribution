@@ -3,7 +3,6 @@ package typings.reactPowerTooltip
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolTipMod {
@@ -101,46 +100,45 @@ object toolTipMod {
   
   type Tooltip = Component[TooltipProps, js.Object, js.Any]
   
-  @js.native
   trait TooltipProps extends StObject {
     
-    var animation: js.UndefOr[AnimationType] = js.native
+    var animation: js.UndefOr[AnimationType] = js.undefined
     
-    var arrowAlign: js.UndefOr[ArrowAlignType] = js.native
+    var arrowAlign: js.UndefOr[ArrowAlignType] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var flat: js.UndefOr[Boolean] = js.native
+    var flat: js.UndefOr[Boolean] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
-    var hoverBackground: js.UndefOr[String] = js.native
+    var hoverBackground: js.UndefOr[String] = js.undefined
     
-    var lineSeparated: js.UndefOr[Boolean | String] = js.native
+    var lineSeparated: js.UndefOr[Boolean | String] = js.undefined
     
-    var moveDown: js.UndefOr[String] = js.native
+    var moveDown: js.UndefOr[String] = js.undefined
     
-    var moveLeft: js.UndefOr[String] = js.native
+    var moveLeft: js.UndefOr[String] = js.undefined
     
-    var moveRight: js.UndefOr[String] = js.native
+    var moveRight: js.UndefOr[String] = js.undefined
     
-    var moveUp: js.UndefOr[String] = js.native
+    var moveUp: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[PositionType] = js.native
+    var position: js.UndefOr[PositionType] = js.undefined
     
-    var show: Boolean = js.native
+    var show: Boolean
     
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var zIndex: js.UndefOr[String] = js.native
+    var zIndex: js.UndefOr[String] = js.undefined
   }
   object TooltipProps {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedS3Resource extends StObject {
   
   /**
     * The status code of a failed item.
     */
-  var errorCode: js.UndefOr[ErrorCode] = js.native
+  var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
     * The error message of a failed item.
     */
-  var errorMessage: js.UndefOr[ExceptionMessage] = js.native
+  var errorMessage: js.UndefOr[ExceptionMessage] = js.undefined
   
   /**
     * The failed S3 resources.
     */
-  var failedItem: js.UndefOr[S3Resource] = js.native
+  var failedItem: js.UndefOr[S3Resource] = js.undefined
 }
 object FailedS3Resource {
   

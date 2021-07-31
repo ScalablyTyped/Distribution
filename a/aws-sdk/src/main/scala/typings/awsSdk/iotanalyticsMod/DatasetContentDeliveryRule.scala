@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetContentDeliveryRule extends StObject {
   
   /**
     * The destination to which dataset contents are delivered.
     */
-  var destination: DatasetContentDeliveryDestination = js.native
+  var destination: DatasetContentDeliveryDestination
   
   /**
     * The name of the dataset content delivery rules entry.
     */
-  var entryName: js.UndefOr[EntryName] = js.native
+  var entryName: js.UndefOr[EntryName] = js.undefined
 }
 object DatasetContentDeliveryRule {
   

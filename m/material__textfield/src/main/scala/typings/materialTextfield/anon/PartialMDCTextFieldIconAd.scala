@@ -4,30 +4,28 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/icon/adapter.MDCTextFieldIconAdapter> */
-@js.native
 trait PartialMDCTextFieldIconAd extends StObject {
   
   var deregisterInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+  var getAttr: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
   
-  var notifyIconAction: js.UndefOr[js.Function0[Unit]] = js.native
+  var notifyIconAction: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var registerInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+  var removeAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
   
-  var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+  var setAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
   
-  var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+  var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
 }
 object PartialMDCTextFieldIconAd {
   

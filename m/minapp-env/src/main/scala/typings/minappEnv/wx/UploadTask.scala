@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadTask extends StObject {
   
   /** [UploadTask.abort()](UploadTask.abort.md)
@@ -13,7 +11,7 @@ trait UploadTask extends StObject {
     * 中断上传任务
     *
     * 最低基础库： `1.4.0` */
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   /** [UploadTask.offHeadersReceived(function callback)](UploadTask.offHeadersReceived.md)
     *
@@ -21,7 +19,7 @@ trait UploadTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def offHeadersReceived(/** HTTP Response Header 事件的回调函数 */
-  callback: UploadTaskOffHeadersReceivedCallback): Unit = js.native
+  callback: UploadTaskOffHeadersReceivedCallback): Unit
   
   /** [UploadTask.offProgressUpdate(function callback)](UploadTask.offProgressUpdate.md)
     *
@@ -29,7 +27,7 @@ trait UploadTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def offProgressUpdate(/** 上传进度变化事件的回调函数 */
-  callback: UploadTaskOffProgressUpdateCallback): Unit = js.native
+  callback: UploadTaskOffProgressUpdateCallback): Unit
   
   /** [UploadTask.onHeadersReceived(function callback)](UploadTask.onHeadersReceived.md)
     *
@@ -37,7 +35,7 @@ trait UploadTask extends StObject {
     *
     * 最低基础库： `2.1.0` */
   def onHeadersReceived(/** HTTP Response Header 事件的回调函数 */
-  callback: UploadTaskOnHeadersReceivedCallback): Unit = js.native
+  callback: UploadTaskOnHeadersReceivedCallback): Unit
   
   /** [UploadTask.onProgressUpdate(function callback)](UploadTask.onProgressUpdate.md)
     *
@@ -45,7 +43,7 @@ trait UploadTask extends StObject {
     *
     * 最低基础库： `1.4.0` */
   def onProgressUpdate(/** 上传进度变化事件的回调函数 */
-  callback: UploadTaskOnProgressUpdateCallback): Unit = js.native
+  callback: UploadTaskOnProgressUpdateCallback): Unit
 }
 object UploadTask {
   

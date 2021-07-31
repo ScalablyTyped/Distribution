@@ -3,7 +3,6 @@ package typings.chromaJs
 import typings.chromaJs.mod.InterpolationMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromaJsStrings {
@@ -59,7 +58,9 @@ object chromaJsStrings {
   def gl: gl = "gl".asInstanceOf[gl]
   
   @js.native
-  sealed trait hcl extends InterpolationMode
+  sealed trait hcl
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def hcl: hcl = "hcl".asInstanceOf[hcl]
   
@@ -69,17 +70,23 @@ object chromaJsStrings {
   def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait hsi extends InterpolationMode
+  sealed trait hsi
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def hsi: hsi = "hsi".asInstanceOf[hsi]
   
   @js.native
-  sealed trait hsl extends InterpolationMode
+  sealed trait hsl
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
   
   @js.native
-  sealed trait hsv extends InterpolationMode
+  sealed trait hsv
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def hsv: hsv = "hsv".asInstanceOf[hsv]
   
@@ -94,12 +101,16 @@ object chromaJsStrings {
   def l: l = "l".asInstanceOf[l]
   
   @js.native
-  sealed trait lab extends InterpolationMode
+  sealed trait lab
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
   
   @js.native
-  sealed trait lch extends InterpolationMode
+  sealed trait lch
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def lch: lch = "lch".asInstanceOf[lch]
   
@@ -109,7 +120,9 @@ object chromaJsStrings {
   def lighten: lighten = "lighten".asInstanceOf[lighten]
   
   @js.native
-  sealed trait lrgb extends InterpolationMode
+  sealed trait lrgb
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def lrgb: lrgb = "lrgb".asInstanceOf[lrgb]
   
@@ -139,7 +152,9 @@ object chromaJsStrings {
   def q: q = "q".asInstanceOf[q]
   
   @js.native
-  sealed trait rgb extends InterpolationMode
+  sealed trait rgb
+    extends StObject
+       with InterpolationMode
   @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
   

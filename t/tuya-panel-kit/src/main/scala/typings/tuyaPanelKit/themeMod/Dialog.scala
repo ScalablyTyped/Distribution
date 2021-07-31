@@ -2,48 +2,46 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  type :string,   basic :tuya-panel-kit.tuya-panel-kit/theme.DialogTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.DialogTheme,   system :tuya-panel-kit.tuya-panel-kit/theme.DialogTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.DialogTheme> */
-@js.native
 trait Dialog extends StObject {
   
-  var basic: DialogTheme = js.native
+  var basic: DialogTheme
   
-  var bg: js.UndefOr[String] = js.native
+  var bg: js.UndefOr[String] = js.undefined
   
-  var cancelFontColor: js.UndefOr[String] = js.native
+  var cancelFontColor: js.UndefOr[String] = js.undefined
   
-  var cancelFontSize: js.UndefOr[Double] = js.native
+  var cancelFontSize: js.UndefOr[Double] = js.undefined
   
-  var cellHeight: js.UndefOr[Double] = js.native
+  var cellHeight: js.UndefOr[Double] = js.undefined
   
-  var confirmFontColor: js.UndefOr[String] = js.native
+  var confirmFontColor: js.UndefOr[String] = js.undefined
   
-  var confirmFontSize: js.UndefOr[Double] = js.native
+  var confirmFontSize: js.UndefOr[Double] = js.undefined
   
-  var dark: DialogTheme = js.native
+  var dark: DialogTheme
   
-  var lineColor: js.UndefOr[String] = js.native
+  var lineColor: js.UndefOr[String] = js.undefined
   
-  var prompt: js.UndefOr[PromptTheme] = js.native
+  var prompt: js.UndefOr[PromptTheme] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var subTitleFontColor: js.UndefOr[String] = js.native
+  var subTitleFontColor: js.UndefOr[String] = js.undefined
   
-  var subTitleFontSize: js.UndefOr[Double] = js.native
+  var subTitleFontSize: js.UndefOr[Double] = js.undefined
   
-  var system: DialogTheme = js.native
+  var system: DialogTheme
   
-  var titleFontColor: js.UndefOr[String] = js.native
+  var titleFontColor: js.UndefOr[String] = js.undefined
   
-  var titleFontSize: js.UndefOr[Double] = js.native
+  var titleFontSize: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Dialog {
   

@@ -12,17 +12,15 @@ import typings.bunyan.mod.RotatingFileStreamOptions
 import typings.bunyan.mod.StdSerializers_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ConsoleFormattedStream extends StObject {
     
-    var ConsoleFormattedStream: typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStream = js.native
+    var ConsoleFormattedStream: typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStream
     
-    var ConsoleRawStream: typings.browserBunyan.mod.BrowserBunyan.ConsoleRawStream = js.native
+    var ConsoleRawStream: typings.browserBunyan.mod.BrowserBunyan.ConsoleRawStream
   }
   object ConsoleFormattedStream {
     
@@ -47,20 +45,19 @@ object anon {
   }
   
   /* Inlined std.Partial<browser-bunyan.browser-bunyan.BrowserBunyan.ConsoleFormattedStreamLevelStyle> */
-  @js.native
   trait PartialConsoleFormattedSt extends StObject {
     
-    var debug: js.UndefOr[String] = js.native
+    var debug: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var fatal: js.UndefOr[String] = js.native
+    var fatal: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var trace: js.UndefOr[String] = js.native
+    var trace: js.UndefOr[String] = js.undefined
     
-    var warn: js.UndefOr[String] = js.native
+    var warn: js.UndefOr[String] = js.undefined
   }
   object PartialConsoleFormattedSt {
     
@@ -112,16 +109,15 @@ object anon {
   }
   
   /* Inlined std.Partial<browser-bunyan.browser-bunyan.BrowserBunyan.ConsoleFormattedStreamStyle> */
-  @js.native
   trait PartialConsoleFormattedStDef extends StObject {
     
-    var `def`: js.UndefOr[String] = js.native
+    var `def`: js.UndefOr[String] = js.undefined
     
-    var levels: js.UndefOr[PartialConsoleFormattedSt] = js.native
+    var levels: js.UndefOr[PartialConsoleFormattedSt] = js.undefined
     
-    var msg: js.UndefOr[String] = js.native
+    var msg: js.UndefOr[String] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object PartialConsoleFormattedStDef {
     
@@ -160,37 +156,36 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofbunyan extends StObject {
     
-    val DEBUG: Double = js.native
+    val DEBUG: Double
     
-    val ERROR: Double = js.native
+    val ERROR: Double
     
-    val FATAL: Double = js.native
+    val FATAL: Double
     
-    val INFO: Double = js.native
+    val INFO: Double
     
-    var RingBuffer: Instantiable1[/* options */ RingBufferOptions, typings.bunyan.mod.RingBuffer] = js.native
+    var RingBuffer: Instantiable1[/* options */ RingBufferOptions, typings.bunyan.mod.RingBuffer]
     
-    var RotatingFileStream: Instantiable1[/* options */ RotatingFileStreamOptions, typings.bunyan.mod.RotatingFileStream] = js.native
+    var RotatingFileStream: Instantiable1[/* options */ RotatingFileStreamOptions, typings.bunyan.mod.RotatingFileStream]
     
-    val TRACE: Double = js.native
+    val TRACE: Double
     
-    val WARN: Double = js.native
+    val WARN: Double
     
-    def createLogger(options: LoggerOptions): Logger = js.native
+    def createLogger(options: LoggerOptions): Logger
     
     /* Inlined {[ name in bunyan.bunyan.LogLevelString ]: number} */
-    val levelFromName: TypeoflevelFromName = js.native
+    val levelFromName: TypeoflevelFromName
     
-    val nameFromLevel: js.Any = js.native
+    val nameFromLevel: js.Any
     
-    def resolveLevel(value: LogLevel): Double = js.native
+    def resolveLevel(value: LogLevel): Double
     
-    def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, _] = js.native
+    def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any]
     
-    val stdSerializers: StdSerializers_ = js.native
+    val stdSerializers: StdSerializers_
   }
   object Typeofbunyan {
     
@@ -208,7 +203,7 @@ object anon {
       levelFromName: TypeoflevelFromName,
       nameFromLevel: js.Any,
       resolveLevel: LogLevel => Double,
-      safeCycles: () => js.Function2[/* key */ String, /* value */ js.Any, _],
+      safeCycles: () => js.Function2[/* key */ String, /* value */ js.Any, js.Any],
       stdSerializers: StdSerializers_
     ): Typeofbunyan = {
       val __obj = js.Dynamic.literal(DEBUG = DEBUG.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], FATAL = FATAL.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], RingBuffer = RingBuffer.asInstanceOf[js.Any], RotatingFileStream = RotatingFileStream.asInstanceOf[js.Any], TRACE = TRACE.asInstanceOf[js.Any], WARN = WARN.asInstanceOf[js.Any], createLogger = js.Any.fromFunction1(createLogger), levelFromName = levelFromName.asInstanceOf[js.Any], nameFromLevel = nameFromLevel.asInstanceOf[js.Any], resolveLevel = js.Any.fromFunction1(resolveLevel), safeCycles = js.Any.fromFunction0(safeCycles), stdSerializers = stdSerializers.asInstanceOf[js.Any])
@@ -249,7 +244,7 @@ object anon {
       def setRotatingFileStream(value: Instantiable1[/* options */ RotatingFileStreamOptions, RotatingFileStream]): Self = StObject.set(x, "RotatingFileStream", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSafeCycles(value: () => js.Function2[/* key */ String, /* value */ js.Any, _]): Self = StObject.set(x, "safeCycles", js.Any.fromFunction0(value))
+      def setSafeCycles(value: () => js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Self = StObject.set(x, "safeCycles", js.Any.fromFunction0(value))
       
       @scala.inline
       def setStdSerializers(value: StdSerializers_): Self = StObject.set(x, "stdSerializers", value.asInstanceOf[js.Any])
@@ -262,20 +257,19 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeoflevelFromName extends StObject {
     
-    var debug: Double = js.native
+    var debug: Double
     
-    var error: Double = js.native
+    var error: Double
     
-    var fatal: Double = js.native
+    var fatal: Double
     
-    var info: Double = js.native
+    var info: Double
     
-    var trace: Double = js.native
+    var trace: Double
     
-    var warn: Double = js.native
+    var warn: Double
   }
   object TypeoflevelFromName {
     

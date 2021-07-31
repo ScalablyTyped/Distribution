@@ -2,7 +2,6 @@ package typings.azureSb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acstokenresultMod {
@@ -14,12 +13,11 @@ object acstokenresultMod {
       object Results {
         
         /* import warning: RemoveDifficultInheritance.summarizeChanges 
-        - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string | Dictionary<string>> * / any */ @js.native
-        trait AcsTokenResponse extends StObject {
+        - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string | Dictionary<string>> * / any */ trait AcsTokenResponse extends StObject {
           
-          var WrapAccessToken: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any = js.native
+          var WrapAccessToken: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
           
-          var WrapAccessTokenExpiresIn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any = js.native
+          var WrapAccessTokenExpiresIn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
         }
         object AcsTokenResponse {
           
@@ -47,10 +45,9 @@ object acstokenresultMod {
           }
         }
         
-        @js.native
         trait AcsTokenResult extends StObject {
           
-          def parse(acsTokenQueryString: String): AcsTokenResponse = js.native
+          def parse(acsTokenQueryString: String): AcsTokenResponse
         }
         object AcsTokenResult {
           

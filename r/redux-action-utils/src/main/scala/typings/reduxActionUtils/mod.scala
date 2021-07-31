@@ -2,29 +2,27 @@ package typings.reduxActionUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-action-utils", "actionCreator")
+  @JSImport("redux-action-utils", JSImport.Namespace)
   @js.native
-  def actionCreator[T](`type`: String, props: String*): ActionCreator_[T] = js.native
-  @JSImport("redux-action-utils", "actionCreator")
-  @js.native
-  def actionCreator[T](`type`: String, props: js.Array[String]): ActionCreator_[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("redux-action-utils", "optionsActionCreator")
-  @js.native
-  def optionsActionCreator[T](`type`: String, props: String*): OptionsActionCreator_[T] = js.native
-  @JSImport("redux-action-utils", "optionsActionCreator")
-  @js.native
-  def optionsActionCreator[T](`type`: String, props: js.Array[String]): OptionsActionCreator_[T] = js.native
+  @scala.inline
+  def actionCreator[T](`type`: String, props: String*): ActionCreator_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("actionCreator")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ActionCreator_[T]]
+  @scala.inline
+  def actionCreator[T](`type`: String, props: js.Array[String]): ActionCreator_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("actionCreator")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ActionCreator_[T]]
   
-  @js.native
+  @scala.inline
+  def optionsActionCreator[T](`type`: String, props: String*): OptionsActionCreator_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsActionCreator")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[OptionsActionCreator_[T]]
+  @scala.inline
+  def optionsActionCreator[T](`type`: String, props: js.Array[String]): OptionsActionCreator_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsActionCreator")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[OptionsActionCreator_[T]]
+  
   trait Action extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Action {
     
@@ -43,7 +41,7 @@ object mod {
     }
   }
   
-  type ActionCreator_[T] = js.Function1[/* repeated */ js.Any, Action with T]
+  type ActionCreator_[T] = js.Function1[/* repeated */ js.Any, Action & T]
   
-  type OptionsActionCreator_[T] = js.Function1[/* data */ T, Action with T]
+  type OptionsActionCreator_[T] = js.Function1[/* data */ T, Action & T]
 }

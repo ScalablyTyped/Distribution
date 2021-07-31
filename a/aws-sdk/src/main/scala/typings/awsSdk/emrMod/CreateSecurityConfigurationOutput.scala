@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSecurityConfigurationOutput extends StObject {
   
   /**
     * The date and time the security configuration was created.
     */
-  var CreationDateTime: Date = js.native
+  var CreationDateTime: Date
   
   /**
     * The name of the security configuration.
     */
-  var Name: XmlString = js.native
+  var Name: XmlString
 }
 object CreateSecurityConfigurationOutput {
   

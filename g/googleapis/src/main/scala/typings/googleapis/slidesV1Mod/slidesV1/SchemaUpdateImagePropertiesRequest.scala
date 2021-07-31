@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update the properties of an Image.
   */
-@js.native
 trait SchemaUpdateImagePropertiesRequest extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaUpdateImagePropertiesRequest extends StObject {
     * to its default value, include its field name in the field mask but leave
     * the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The image properties to update.
     */
-  var imageProperties: js.UndefOr[SchemaImageProperties] = js.native
+  var imageProperties: js.UndefOr[SchemaImageProperties] = js.undefined
   
   /**
     * The object ID of the image the updates are applied to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateImagePropertiesRequest {
   

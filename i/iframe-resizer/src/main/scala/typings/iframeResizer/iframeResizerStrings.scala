@@ -4,7 +4,6 @@ import typings.iframeResizer.mod.HeightCalculationMethod
 import typings.iframeResizer.mod.WidthCalculationMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iframeResizerStrings {
@@ -16,14 +15,16 @@ object iframeResizerStrings {
   
   @js.native
   sealed trait bodyOffset
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def bodyOffset: bodyOffset = "bodyOffset".asInstanceOf[bodyOffset]
   
   @js.native
   sealed trait bodyScroll
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def bodyScroll: bodyScroll = "bodyScroll".asInstanceOf[bodyScroll]
@@ -35,38 +36,46 @@ object iframeResizerStrings {
   
   @js.native
   sealed trait documentElementOffset
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def documentElementOffset: documentElementOffset = "documentElementOffset".asInstanceOf[documentElementOffset]
   
   @js.native
   sealed trait documentElementScroll
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def documentElementScroll: documentElementScroll = "documentElementScroll".asInstanceOf[documentElementScroll]
   
   @js.native
-  sealed trait grow extends HeightCalculationMethod
+  sealed trait grow
+    extends StObject
+       with HeightCalculationMethod
   @scala.inline
   def grow: grow = "grow".asInstanceOf[grow]
   
   @js.native
-  sealed trait lowestElement extends HeightCalculationMethod
+  sealed trait lowestElement
+    extends StObject
+       with HeightCalculationMethod
   @scala.inline
   def lowestElement: lowestElement = "lowestElement".asInstanceOf[lowestElement]
   
   @js.native
   sealed trait max
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
   @js.native
   sealed trait min
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def min: min = "min".asInstanceOf[min]
@@ -77,18 +86,23 @@ object iframeResizerStrings {
   def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait rightMostElement extends WidthCalculationMethod
+  sealed trait rightMostElement
+    extends StObject
+       with WidthCalculationMethod
   @scala.inline
   def rightMostElement: rightMostElement = "rightMostElement".asInstanceOf[rightMostElement]
   
   @js.native
-  sealed trait scroll extends WidthCalculationMethod
+  sealed trait scroll
+    extends StObject
+       with WidthCalculationMethod
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
   sealed trait taggedElement
-    extends HeightCalculationMethod
+    extends StObject
+       with HeightCalculationMethod
        with WidthCalculationMethod
   @scala.inline
   def taggedElement: taggedElement = "taggedElement".asInstanceOf[taggedElement]

@@ -3,17 +3,15 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2SignedData extends StObject {
   
   /**
     * Matches IN_APP_DATA_SIGNATURE from getPurchases() method in Play InApp
     * Billing API.
     */
-  var inAppDataSignature: js.UndefOr[String] = js.native
+  var inAppDataSignature: js.UndefOr[String] = js.undefined
   
   /**
     * Match INAPP_PURCHASE_DATA
@@ -21,7 +19,7 @@ trait GoogleActionsV2SignedData extends StObject {
     * See details in table 6 of
     * https://developer.android.com/google/play/billing/billing_reference.html.
     */
-  var inAppPurchaseData: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var inAppPurchaseData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object GoogleActionsV2SignedData {
   
@@ -41,7 +39,7 @@ object GoogleActionsV2SignedData {
     def setInAppDataSignatureUndefined: Self = StObject.set(x, "inAppDataSignature", js.undefined)
     
     @scala.inline
-    def setInAppPurchaseData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "inAppPurchaseData", value.asInstanceOf[js.Any])
+    def setInAppPurchaseData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "inAppPurchaseData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInAppPurchaseDataUndefined: Self = StObject.set(x, "inAppPurchaseData", js.undefined)

@@ -2,36 +2,34 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSyncJobMetrics extends StObject {
   
   /**
     * The number of documents added from the data source up to now in the data source sync.
     */
-  var DocumentsAdded: js.UndefOr[MetricValue] = js.native
+  var DocumentsAdded: js.UndefOr[MetricValue] = js.undefined
   
   /**
     * The number of documents deleted from the data source up to now in the data source sync run.
     */
-  var DocumentsDeleted: js.UndefOr[MetricValue] = js.native
+  var DocumentsDeleted: js.UndefOr[MetricValue] = js.undefined
   
   /**
     * The number of documents that failed to sync from the data source up to now in the data source sync run.
     */
-  var DocumentsFailed: js.UndefOr[MetricValue] = js.native
+  var DocumentsFailed: js.UndefOr[MetricValue] = js.undefined
   
   /**
     * The number of documents modified in the data source up to now in the data source sync run.
     */
-  var DocumentsModified: js.UndefOr[MetricValue] = js.native
+  var DocumentsModified: js.UndefOr[MetricValue] = js.undefined
   
   /**
     * The current number of documents crawled by the current sync job in the data source.
     */
-  var DocumentsScanned: js.UndefOr[MetricValue] = js.native
+  var DocumentsScanned: js.UndefOr[MetricValue] = js.undefined
 }
 object DataSourceSyncJobMetrics {
   

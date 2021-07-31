@@ -5,7 +5,6 @@ import typings.navermaps.naver.maps.drawing.DrawingMode
 import typings.navermaps.naver.maps.drawing.DrawingOverlay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visualization {
@@ -17,41 +16,65 @@ object visualization {
   object SpectrumStyle extends StObject {
     
     @js.native
-    sealed trait COOL extends SpectrumStyle
+    sealed trait COOL
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait GREYS extends SpectrumStyle
+    sealed trait GREYS
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait HOT extends SpectrumStyle
+    sealed trait HOT
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait HSV extends SpectrumStyle
+    sealed trait HSV
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait JET extends SpectrumStyle
+    sealed trait JET
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait OXYGEN extends SpectrumStyle
+    sealed trait OXYGEN
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait PORTLAND extends SpectrumStyle
+    sealed trait PORTLAND
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait RAINBOW extends SpectrumStyle
+    sealed trait RAINBOW
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait RdBu extends SpectrumStyle
+    sealed trait RdBu
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait YIGnBu extends SpectrumStyle
+    sealed trait YIGnBu
+      extends StObject
+         with SpectrumStyle
     
     @js.native
-    sealed trait YIOrRd extends SpectrumStyle
+    sealed trait YIOrRd
+      extends StObject
+         with SpectrumStyle
   }
   
   @js.native
-  trait DotMap extends KVO {
+  trait DotMap
+    extends StObject
+       with KVO {
     
     def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode): Unit = js.native
     def addDrawing(overlay: DrawingOverlay, drawingMode: DrawingMode, id: String): Unit = js.native
@@ -72,26 +95,25 @@ object visualization {
     def toGeoJson(): js.Any = js.native
   }
   
-  @js.native
   trait DotMapOptions extends StObject {
     
-    var data: js.Array[LatLng | PointArrayLiteral | WeightedLocation] = js.native
+    var data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var map: Map = js.native
+    var map: Map
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
-    var strokeLineCap: js.UndefOr[strokeLineCapType] = js.native
+    var strokeLineCap: js.UndefOr[strokeLineCapType] = js.undefined
     
-    var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.native
+    var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.undefined
     
-    var strokeWeight: js.UndefOr[Double] = js.native
+    var strokeWeight: js.UndefOr[Double] = js.undefined
   }
   object DotMapOptions {
     
@@ -182,18 +204,17 @@ object visualization {
     def setOptions(options: HeatMapOptions): Unit = js.native
   }
   
-  @js.native
   trait HeatMapOptions extends StObject {
     
-    var colorMap: js.UndefOr[SpectrumStyle] = js.native
+    var colorMap: js.UndefOr[SpectrumStyle] = js.undefined
     
-    var data: js.Array[LatLng | PointArrayLiteral | WeightedLocation] = js.native
+    var data: js.Array[LatLng | PointArrayLiteral | WeightedLocation]
     
-    var map: Map = js.native
+    var map: Map
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object HeatMapOptions {
     
@@ -235,16 +256,15 @@ object visualization {
     }
   }
   
-  @js.native
   trait WeightedLocation extends StObject {
     
-    def getLocation(): LatLng = js.native
+    def getLocation(): LatLng
     
-    def getWeight(): Double = js.native
+    def getWeight(): Double
     
-    def lat(): Double = js.native
+    def lat(): Double
     
-    def lng(): Double = js.native
+    def lng(): Double
   }
   object WeightedLocation {
     

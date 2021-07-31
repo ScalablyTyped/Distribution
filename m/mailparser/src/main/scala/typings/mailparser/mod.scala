@@ -19,10 +19,13 @@ import typings.std.Date
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mailparser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mailparser", "MailParser")
   @js.native
@@ -37,40 +40,37 @@ object mod {
     def on_readable(event: readable, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
   }
   
-  @JSImport("mailparser", "simpleParser")
-  @js.native
-  def simpleParser(source: Source): js.Promise[ParsedMail] = js.native
-  @JSImport("mailparser", "simpleParser")
-  @js.native
-  def simpleParser(source: Source, callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]): Unit = js.native
-  @JSImport("mailparser", "simpleParser")
-  @js.native
-  def simpleParser(source: Source, options: SimpleParserOptions): js.Promise[ParsedMail] = js.native
-  @JSImport("mailparser", "simpleParser")
-  @js.native
+  @scala.inline
+  def simpleParser(source: Source): js.Promise[ParsedMail] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedMail]]
+  @scala.inline
+  def simpleParser(source: Source, callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def simpleParser(source: Source, options: SimpleParserOptions): js.Promise[ParsedMail] = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParsedMail]]
+  @scala.inline
   def simpleParser(
     source: Source,
     options: SimpleParserOptions,
     callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait AddressObject extends _HeaderValue {
+  trait AddressObject
+    extends StObject
+       with _HeaderValue {
     
     /**
       * A formatted address string for HTML context.
       */
-    var html: String = js.native
+    var html: String
     
     /**
       * A formatted address string for plaintext context.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * An array with address details.
       */
-    var value: js.Array[EmailAddress] = js.native
+    var value: js.Array[EmailAddress]
   }
   object AddressObject {
     
@@ -97,21 +97,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait Attachment extends AttachmentCommon {
+  trait Attachment
+    extends StObject
+       with AttachmentCommon {
     
     /**
       * A Buffer that contains the attachment contents.
       */
     @JSName("content")
-    var content_Attachment: Buffer = js.native
+    var content_Attachment: Buffer
     
     /**
       * If true then this attachment should not be offered for download
       * (at least not in the main attachments list).
       */
     @JSName("related")
-    var related_Attachment: Boolean = js.native
+    var related_Attachment: Boolean
   }
   object Attachment {
     
@@ -124,11 +125,10 @@ object mod {
       headerLines: HeaderLines,
       headers: Headers,
       related: Boolean,
-      size: Double,
-      `type`: attachment
+      size: Double
     ): Attachment = {
       val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], related = related.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("attachment")
       __obj.asInstanceOf[Attachment]
     }
     
@@ -143,71 +143,70 @@ object mod {
     }
   }
   
-  @js.native
   trait AttachmentCommon extends StObject {
     
     /**
       * A MD5 hash of the message content.
       */
-    var checksum: String = js.native
+    var checksum: String
     
     /**
       * `contentId` without `<` and `>`.
       */
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
     /**
       * Attachment contents.
       */
-    var content: js.Any = js.native
+    var content: js.Any
     
     /**
       * Content disposition type for the attachment,
       * most probably `'attachment'`.
       */
-    var contentDisposition: String = js.native
+    var contentDisposition: String
     
     /**
       * The header value from `Content-ID`.
       */
-    var contentId: js.UndefOr[String] = js.native
+    var contentId: js.UndefOr[String] = js.undefined
     
     /**
       * MIME type of the message.
       */
-    var contentType: String = js.native
+    var contentType: String
     
     /**
       * File name of the attachment.
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * An array of raw header lines for the attachment node.
       */
-    var headerLines: HeaderLines = js.native
+    var headerLines: HeaderLines
     
     /**
       * A Map value that holds MIME headers for the attachment node.
       */
-    var headers: Headers = js.native
+    var headers: Headers
     
     // e.g. '5.1321281380971@localhost'
     /**
       * If true then this attachment should not be offered for download
       * (at least not in the main attachments list).
       */
-    var related: js.UndefOr[Boolean] = js.native
+    var related: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Message size in bytes.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Message type.
       */
-    var `type`: attachment = js.native
+    var `type`: attachment
   }
   object AttachmentCommon {
     
@@ -219,11 +218,10 @@ object mod {
       contentType: String,
       headerLines: HeaderLines,
       headers: Headers,
-      size: Double,
-      `type`: attachment
+      size: Double
     ): AttachmentCommon = {
       val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("attachment")
       __obj.asInstanceOf[AttachmentCommon]
     }
     
@@ -283,19 +281,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait AttachmentStream extends AttachmentCommon {
+  trait AttachmentStream
+    extends StObject
+       with AttachmentCommon {
     
     /**
       * A Buffer that contains the attachment contents.
       */
     @JSName("content")
-    var content_AttachmentStream: Stream = js.native
+    var content_AttachmentStream: Stream
     
     /**
       * Method must be called once you have processed the attachment.
       */
-    def release(): Unit = js.native
+    def release(): Unit
   }
   object AttachmentStream {
     
@@ -308,11 +307,10 @@ object mod {
       headerLines: HeaderLines,
       headers: Headers,
       release: () => Unit,
-      size: Double,
-      `type`: attachment
+      size: Double
     ): AttachmentStream = {
       val __obj = js.Dynamic.literal(checksum = checksum.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentDisposition = contentDisposition.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], headerLines = headerLines.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], release = js.Any.fromFunction0(release), size = size.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("attachment")
       __obj.asInstanceOf[AttachmentStream]
     }
     
@@ -327,23 +325,22 @@ object mod {
     }
   }
   
-  @js.native
   trait EmailAddress extends StObject {
     
     /**
       * The email address.
       */
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
     /**
       * An array of grouped addresses.
       */
-    var group: js.UndefOr[js.Array[EmailAddress]] = js.native
+    var group: js.UndefOr[js.Array[EmailAddress]] = js.undefined
     
     /**
       * The name part of the email/group.
       */
-    var name: String = js.native
+    var name: String
   }
   object EmailAddress {
     
@@ -389,7 +386,6 @@ object mod {
   
   type Headers = Map[String, HeaderValue]
   
-  @js.native
   trait MessageText extends StObject {
     
     /**
@@ -397,33 +393,33 @@ object mod {
       *
       * Is set if the message has at least one `text/html` node.
       */
-    var html: js.UndefOr[String | Boolean] = js.native
+    var html: js.UndefOr[String | Boolean] = js.undefined
     
     /**
       * Includes the plaintext version of the message.
       *
       * Is set if the message has at least one `text/plain` node.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * Includes the plaintext version of the message in HTML format.
       *
       * Is set if the message has at least one `text/plain` node.
       */
-    var textAsHtml: js.UndefOr[String] = js.native
+    var textAsHtml: js.UndefOr[String] = js.undefined
     
     /**
       * Message type.
       */
-    var `type`: text = js.native
+    var `type`: text
   }
   object MessageText {
     
     @scala.inline
-    def apply(`type`: text): MessageText = {
+    def apply(): MessageText = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[MessageText]
     }
     
@@ -453,38 +449,37 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedMail extends StObject {
     
     /**
       * An array of attachments.
       */
-    var attachments: js.Array[Attachment] = js.native
+    var attachments: js.Array[Attachment]
     
     /**
       * An address object for the `Bcc:` header (usually not present).
       */
-    var bcc: js.UndefOr[AddressObject] = js.native
+    var bcc: js.UndefOr[AddressObject] = js.undefined
     
     /**
       * An address object for the `Cc:` header.
       */
-    var cc: js.UndefOr[AddressObject] = js.native
+    var cc: js.UndefOr[AddressObject] = js.undefined
     
     /**
       * A Date object for the `Date:` header.
       */
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
     /**
       * An address object for the `From:` header.
       */
-    var from: js.UndefOr[AddressObject] = js.native
+    var from: js.UndefOr[AddressObject] = js.undefined
     
     /**
       * An array of raw header lines
       */
-    var headerLines: HeaderLines = js.native
+    var headerLines: HeaderLines
     
     /**
       * A Map object with lowercase header keys.
@@ -494,7 +489,7 @@ object mod {
       *    array if multiple ids exist.
       * - `date` value is a Date object.
       */
-    var headers: Headers = js.native
+    var headers: Headers
     
     /**
       * The HTML body of the message.
@@ -504,54 +499,54 @@ object mod {
       * If the message included embedded images as cid: urls then these are all
       * replaced with base64 formatted data: URIs.
       */
-    var html: String | `false` = js.native
+    var html: String | `false`
     
     /**
       * The In-Reply-To value string.
       */
-    var inReplyTo: js.UndefOr[String] = js.native
+    var inReplyTo: js.UndefOr[String] = js.undefined
     
     /**
       * The Message-ID value string.
       */
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
     
     /**
       * Priority of the e-mail.
       */
-    var priority: js.UndefOr[normal | low | high] = js.native
+    var priority: js.UndefOr[normal | low | high] = js.undefined
     
     /**
       * An array of referenced Message-ID values.
       *
       * Not set if no reference values present.
       */
-    var references: js.UndefOr[js.Array[String]] = js.native
+    var references: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An address object for the `Reply-To:` header.
       */
-    var replyTo: js.UndefOr[AddressObject] = js.native
+    var replyTo: js.UndefOr[AddressObject] = js.undefined
     
     /**
       * The subject line.
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
     /**
       * The plaintext body of the message.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * The plaintext body of the message formatted as HTML.
       */
-    var textAsHtml: js.UndefOr[String] = js.native
+    var textAsHtml: js.UndefOr[String] = js.undefined
     
     /**
       * An address object for the `To:` header.
       */
-    var to: js.UndefOr[AddressObject] = js.native
+    var to: js.UndefOr[AddressObject] = js.undefined
   }
   object ParsedMail {
     
@@ -670,10 +665,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait SimpleParserOptions extends TransformOptions {
+  trait SimpleParserOptions
+    extends StObject
+       with TransformOptions {
     
-    var keepCidLinks: js.UndefOr[Boolean] = js.native
+    var keepCidLinks: js.UndefOr[Boolean] = js.undefined
   }
   object SimpleParserOptions {
     
@@ -696,18 +692,19 @@ object mod {
   
   type Source = Buffer | Stream | String
   
-  @js.native
-  trait StructuredHeader extends _HeaderValue {
+  trait StructuredHeader
+    extends StObject
+       with _HeaderValue {
     
     /**
       * Additional arguments.
       */
-    var params: StringDictionary[String] = js.native
+    var params: StringDictionary[String]
     
     /**
       * The main value.
       */
-    var value: String = js.native
+    var value: String
   }
   object StructuredHeader {
     

@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a list of the custom print task option items. */
-@js.native
 trait PrintCustomItemListOptionDetails extends StObject {
   
   /**
@@ -15,35 +13,35 @@ trait PrintCustomItemListOptionDetails extends StObject {
     * @param itemId The ID of the option item.
     * @param displayName The display name of the option item.
     */
-  def addItem(itemId: String, displayName: String): Unit = js.native
+  def addItem(itemId: String, displayName: String): Unit
   
   /** Gets or sets the display name of an item in the list of custom print task options. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Gets or sets the string for an error condition. */
-  var errorText: String = js.native
+  var errorText: String
   
   /** Gets an item from the list of custom print tasks. */
-  var items: IVectorView[_] = js.native
+  var items: IVectorView[js.Any]
   
   /** Gets the ID of a custom print task option. */
-  var optionId: String = js.native
+  var optionId: String
   
   /** Gets the option type for a custom print task option. */
-  var optionType: PrintOptionType = js.native
+  var optionType: PrintOptionType
   
   /** Gets or sets the state of the list of custom print task option items. */
-  var state: PrintOptionStates = js.native
+  var state: PrintOptionStates
   
   /**
     * Sets the value for the item ID or the display name of the custom item.
     * @param value Value for the item ID or the display name of the custom item.
     * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
     */
-  def trySetValue(value: js.Any): Boolean = js.native
+  def trySetValue(value: js.Any): Boolean
   
   /** Gets or sets the value of the list of custom print tasks. */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object PrintCustomItemListOptionDetails {
   
@@ -52,7 +50,7 @@ object PrintCustomItemListOptionDetails {
     addItem: (String, String) => Unit,
     displayName: String,
     errorText: String,
-    items: IVectorView[_],
+    items: IVectorView[js.Any],
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,
@@ -76,7 +74,7 @@ object PrintCustomItemListOptionDetails {
     def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: IVectorView[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionId(value: String): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])

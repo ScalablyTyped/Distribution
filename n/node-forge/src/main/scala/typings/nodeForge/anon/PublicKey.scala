@@ -3,15 +3,13 @@ package typings.nodeForge.anon
 import typings.nodeForge.mod.pki.ed25519.BinaryBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
-  var publicKey: BinaryBuffer = js.native
+  var publicKey: BinaryBuffer
   
-  var signature: BinaryBuffer = js.native
+  var signature: BinaryBuffer
 }
 object PublicKey {
   

@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shared extends StObject {
   
   // The identity of the owner of the shared item. Read-only.
-  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Indicates the scope of how the item is shared: anonymous, organization, or users. Read-only.
-  var scope: js.UndefOr[NullableOption[String]] = js.native
+  var scope: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The identity of the user who shared the item. Read-only.
-  var sharedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var sharedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // The UTC date and time when the item was shared. Read-only.
-  var sharedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var sharedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Shared {
   

@@ -14,25 +14,26 @@ import typings.randomcolor.randomcolorStrings.rgbArray
 import typings.randomcolor.randomcolorStrings.rgba
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("randomcolor", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("randomcolor", JSImport.Namespace)
-  @js.native
-  def apply(options: RandomColorOptionsMultiple): js.Array[String] = js.native
-  @JSImport("randomcolor", JSImport.Namespace)
-  @js.native
-  def apply(options: RandomColorOptionsSingle): String = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: RandomColorOptionsMultiple): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(options: RandomColorOptionsSingle): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  @JSImport("randomcolor", JSImport.Namespace)
   @js.native
-  trait RandomColorOptionsMultiple extends RandomColorOptionsSingle {
+  val ^ : js.Any = js.native
+  
+  trait RandomColorOptionsMultiple
+    extends StObject
+       with RandomColorOptionsSingle {
     
-    var count: Double = js.native
+    var count: Double
   }
   object RandomColorOptionsMultiple {
     
@@ -50,18 +51,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RandomColorOptionsSingle extends StObject {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[hsvArray | hslArray | hsl | hsla | rgbArray | rgb | rgba | hex] = js.native
+    var format: js.UndefOr[hsvArray | hslArray | hsl | hsla | rgbArray | rgb | rgba | hex] = js.undefined
     
-    var hue: js.UndefOr[Double | String] = js.native
+    var hue: js.UndefOr[Double | String] = js.undefined
     
-    var luminosity: js.UndefOr[bright | light | dark | random] = js.native
+    var luminosity: js.UndefOr[bright | light | dark | random] = js.undefined
     
-    var seed: js.UndefOr[Double | String] = js.native
+    var seed: js.UndefOr[Double | String] = js.undefined
   }
   object RandomColorOptionsSingle {
     

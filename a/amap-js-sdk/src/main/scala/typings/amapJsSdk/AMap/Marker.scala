@@ -5,14 +5,15 @@ import typings.amapJsSdk.anon.Offset
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 点标记。
   */
 @js.native
-trait Marker extends EventBindable {
+trait Marker
+  extends StObject
+     with EventBindable {
   
   def getAngle(): Double = js.native
   
@@ -49,25 +50,7 @@ trait Marker extends EventBindable {
   def markOnAMAP(obj: Name): Unit = js.native
   
   def moveAlong(lnglatlist: js.Array[LngLat]): Unit = js.native
-  def moveAlong(
-    lnglatlist: js.Array[LngLat],
-    speed: js.UndefOr[scala.Nothing],
-    f: js.UndefOr[scala.Nothing],
-    circlable: Boolean
-  ): Unit = js.native
-  def moveAlong(
-    lnglatlist: js.Array[LngLat],
-    speed: js.UndefOr[scala.Nothing],
-    f: js.Function1[/* k */ Double, Double]
-  ): Unit = js.native
-  def moveAlong(
-    lnglatlist: js.Array[LngLat],
-    speed: js.UndefOr[scala.Nothing],
-    f: js.Function1[/* k */ Double, Double],
-    circlable: Boolean
-  ): Unit = js.native
   def moveAlong(lnglatlist: js.Array[LngLat], speed: Double): Unit = js.native
-  def moveAlong(lnglatlist: js.Array[LngLat], speed: Double, f: js.UndefOr[scala.Nothing], circlable: Boolean): Unit = js.native
   def moveAlong(lnglatlist: js.Array[LngLat], speed: Double, f: js.Function1[/* k */ Double, Double]): Unit = js.native
   def moveAlong(
     lnglatlist: js.Array[LngLat],
@@ -75,11 +58,20 @@ trait Marker extends EventBindable {
     f: js.Function1[/* k */ Double, Double],
     circlable: Boolean
   ): Unit = js.native
+  def moveAlong(lnglatlist: js.Array[LngLat], speed: Double, f: Unit, circlable: Boolean): Unit = js.native
+  def moveAlong(lnglatlist: js.Array[LngLat], speed: Unit, f: js.Function1[/* k */ Double, Double]): Unit = js.native
+  def moveAlong(
+    lnglatlist: js.Array[LngLat],
+    speed: Unit,
+    f: js.Function1[/* k */ Double, Double],
+    circlable: Boolean
+  ): Unit = js.native
+  def moveAlong(lnglatlist: js.Array[LngLat], speed: Unit, f: Unit, circlable: Boolean): Unit = js.native
   
   def moveTo(lnglat: LngLat): Unit = js.native
-  def moveTo(lnglat: LngLat, speed: js.UndefOr[scala.Nothing], f: js.Function1[/* k */ Double, Double]): Unit = js.native
   def moveTo(lnglat: LngLat, speed: Double): Unit = js.native
   def moveTo(lnglat: LngLat, speed: Double, f: js.Function1[/* k */ Double, Double]): Unit = js.native
+  def moveTo(lnglat: LngLat, speed: Unit, f: js.Function1[/* k */ Double, Double]): Unit = js.native
   
   def setAngle(angle: Double): Unit = js.native
   

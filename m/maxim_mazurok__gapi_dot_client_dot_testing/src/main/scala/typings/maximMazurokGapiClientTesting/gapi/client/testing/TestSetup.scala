@@ -2,45 +2,43 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSetup extends StObject {
   
   /** The device will be logged in on this account for the duration of the test. */
-  var account: js.UndefOr[Account] = js.native
+  var account: js.UndefOr[Account] = js.undefined
   
   /** APKs to install in addition to those being directly tested. Currently capped at 100. */
-  var additionalApks: js.UndefOr[js.Array[Apk]] = js.native
+  var additionalApks: js.UndefOr[js.Array[Apk]] = js.undefined
   
   /**
     * List of directories on the device to upload to GCS at the end of the test; they must be absolute paths under /sdcard, /storage or /data/local/tmp. Path names are restricted to
     * characters a-z A-Z 0-9 _ - . + and / Note: The paths /sdcard and /data will be made available and treated as implicit path substitutions. E.g. if /sdcard on a particular device does
     * not map to external storage, the system will replace it with the external storage path prefix for that device.
     */
-  var directoriesToPull: js.UndefOr[js.Array[String]] = js.native
+  var directoriesToPull: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether to prevent all runtime permissions to be granted at app install */
-  var dontAutograntPermissions: js.UndefOr[Boolean] = js.native
+  var dontAutograntPermissions: js.UndefOr[Boolean] = js.undefined
   
   /** Environment variables to set for the test (only applicable for instrumentation tests). */
-  var environmentVariables: js.UndefOr[js.Array[EnvironmentVariable]] = js.native
+  var environmentVariables: js.UndefOr[js.Array[EnvironmentVariable]] = js.undefined
   
   /** List of files to push to the device before starting the test. */
-  var filesToPush: js.UndefOr[js.Array[DeviceFile]] = js.native
+  var filesToPush: js.UndefOr[js.Array[DeviceFile]] = js.undefined
   
   /**
     * The network traffic profile used for running the test. Available network profiles can be queried by using the NETWORK_CONFIGURATION environment type when calling
     * TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
     */
-  var networkProfile: js.UndefOr[String] = js.native
+  var networkProfile: js.UndefOr[String] = js.undefined
   
   /**
     * Systrace configuration for the run. If set a systrace will be taken, starting on test start and lasting for the configured duration. The systrace file thus obtained is put in the
     * results bucket together with the other artifacts from the run.
     */
-  var systrace: js.UndefOr[SystraceSetup] = js.native
+  var systrace: js.UndefOr[SystraceSetup] = js.undefined
 }
 object TestSetup {
   

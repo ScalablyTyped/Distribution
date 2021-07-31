@@ -3,34 +3,32 @@ package typings.c3.anon
 import typings.c3.mod.ChartInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Onclick extends StObject {
   
   /**
     * Set click event handler to the legend item.
     * @param id The ID of the legend item.
     */
-  var onclick: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.native
+  var onclick: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.undefined
   
   /**
     * Set mouseout event handler to the legend item.
     * @param id The ID of the legend item.
     */
-  var onmouseout: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.native
+  var onmouseout: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.undefined
   
   /**
     * Set mouseover event handler to the legend item.
     * @param id The ID of the legend item.
     */
-  var onmouseover: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.native
+  var onmouseover: js.UndefOr[js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]] = js.undefined
   
   /**
     * Tile settings for legend color display.
     */
-  var tile: js.UndefOr[Height] = js.native
+  var tile: js.UndefOr[Height] = js.undefined
 }
 object Onclick {
   

@@ -10,16 +10,18 @@ import typings.winrtUwp.winrtUwpStrings.sourceremoved
 import typings.winrtUwp.winrtUwpStrings.stopped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Monitors changes to the list of depth frame sources, and provides notifications when the list changes. */
 @js.native
 trait PerceptionDepthFrameSourceWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, _]): Unit = js.native
+  def addEventListener_enumerationcompleted(
+    `type`: enumerationcompleted,
+    listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sourceadded(
     `type`: sourceadded,
@@ -31,35 +33,38 @@ trait PerceptionDepthFrameSourceWatcher extends StObject {
     listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, PerceptionDepthFrameSourceRemovedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, _]): Unit = js.native
+  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, js.Any]): Unit = js.native
   
   /** Subscribes to the EnumerationCompleted event. This event is fired after the initial enumeration of known depth frame sources is complete. */
-  def onenumerationcompleted(ev: js.Any with WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
+  def onenumerationcompleted(ev: js.Any & WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
   /** Subscribes to the EnumerationCompleted event. This event is fired after the initial enumeration of known depth frame sources is complete. */
   @JSName("onenumerationcompleted")
-  var onenumerationcompleted_Original: TypedEventHandler[PerceptionDepthFrameSourceWatcher, _] = js.native
+  var onenumerationcompleted_Original: TypedEventHandler[PerceptionDepthFrameSourceWatcher, js.Any] = js.native
   
   /** Subscribes to the SourceAdded event. */
-  def onsourceadded(ev: PerceptionDepthFrameSourceAddedEventArgs with WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
+  def onsourceadded(ev: PerceptionDepthFrameSourceAddedEventArgs & WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
   /** Subscribes to the SourceAdded event. */
   @JSName("onsourceadded")
   var onsourceadded_Original: TypedEventHandler[PerceptionDepthFrameSourceWatcher, PerceptionDepthFrameSourceAddedEventArgs] = js.native
   
   /** Subscribes to the SourceRemoved event. This event is fired once for every depth frame source that is removed. */
-  def onsourceremoved(ev: PerceptionDepthFrameSourceRemovedEventArgs with WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
+  def onsourceremoved(ev: PerceptionDepthFrameSourceRemovedEventArgs & WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
   /** Subscribes to the SourceRemoved event. This event is fired once for every depth frame source that is removed. */
   @JSName("onsourceremoved")
   var onsourceremoved_Original: TypedEventHandler[PerceptionDepthFrameSourceWatcher, PerceptionDepthFrameSourceRemovedEventArgs] = js.native
   
   /** Subscribes to the Stopped event. This event is fired when the IPerceptionColorFrameSourceWatcher has stopped listening for changes to the list of depth frame sources. */
-  def onstopped(ev: js.Any with WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
+  def onstopped(ev: js.Any & WinRTEvent[PerceptionDepthFrameSourceWatcher]): Unit = js.native
   /** Subscribes to the Stopped event. This event is fired when the IPerceptionColorFrameSourceWatcher has stopped listening for changes to the list of depth frame sources. */
   @JSName("onstopped")
-  var onstopped_Original: TypedEventHandler[PerceptionDepthFrameSourceWatcher, _] = js.native
+  var onstopped_Original: TypedEventHandler[PerceptionDepthFrameSourceWatcher, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, _]): Unit = js.native
+  def removeEventListener_enumerationcompleted(
+    `type`: enumerationcompleted,
+    listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, js.Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sourceadded(
     `type`: sourceadded,
@@ -71,7 +76,7 @@ trait PerceptionDepthFrameSourceWatcher extends StObject {
     listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, PerceptionDepthFrameSourceRemovedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, _]): Unit = js.native
+  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PerceptionDepthFrameSourceWatcher, js.Any]): Unit = js.native
   
   /** When this method is called, the depth frame source watcher enumerates any existing depth frame sources it has not already enumerated by firing a SourceAdded event for each one. An EnumerationCompleted event is fired when this enumeration is complete. The depth frame source then starts watching for new depth frame sources. */
   def start(): Unit = js.native

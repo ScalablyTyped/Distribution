@@ -2,17 +2,15 @@ package typings.wampy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallAdvancedOptions extends StObject {
   
-  var disclose_me: js.UndefOr[Boolean] = js.native
+  var disclose_me: js.UndefOr[Boolean] = js.undefined
   
-  var receive_progress: js.UndefOr[Boolean] = js.native
+  var receive_progress: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object CallAdvancedOptions {
   

@@ -5,7 +5,6 @@ import typings.jqueryui.JQueryUI.SpinnerEvent
 import typings.jqueryui.JQueryUI.SpinnerUIParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uispinneroptionsMod {
@@ -18,78 +17,77 @@ object uispinneroptionsMod {
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/ComparableOptions.ComparableOptions */
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/DelayableOptions.DelayableOptions */
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/StrictOptions.StrictOptions */
-  @js.native
   trait UISpinnerOptions extends StObject {
     
     /**
       * A value indicating whether to add a box for enabling/disabling the control.
       */
-    var addToggle: js.UndefOr[Boolean] = js.native
+    var addToggle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The label of the control.
       */
-    var cellText: js.UndefOr[String] = js.native
+    var cellText: js.UndefOr[String] = js.undefined
     
-    var change: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+    var change: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
     
     /**
       * The compare-operators supported by the control.
       */
-    var compare: js.UndefOr[String | js.Array[String]] = js.native
+    var compare: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var create: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+    var create: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
     
-    var culture: js.UndefOr[String] = js.native
+    var culture: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether the value of the filter should be set delayed.
       */
-    var delayed: js.UndefOr[Boolean] = js.native
+    var delayed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the control is initially disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicatin whether only exact matching values should be included.
       */
-    var exactMatch: js.UndefOr[Boolean] = js.native
+    var exactMatch: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[js.Any] = js.native
+    var icons: js.UndefOr[js.Any] = js.undefined
     
-    var incremental: js.UndefOr[js.Any] = js.native
+    var incremental: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The maximum value of the control.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum value of the control.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var numberFormat: js.UndefOr[String] = js.native
+    var numberFormat: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var spin: js.UndefOr[SpinnerEvent[SpinnerUIParam]] = js.native
+    var spin: js.UndefOr[SpinnerEvent[SpinnerUIParam]] = js.undefined
     
-    var start: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+    var start: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
     
     /**
       * The interval of the control.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var stop: js.UndefOr[SpinnerEvent[js.Object]] = js.native
+    var stop: js.UndefOr[SpinnerEvent[js.Object]] = js.undefined
     
     /**
       * The default value of the control.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object UISpinnerOptions {
     

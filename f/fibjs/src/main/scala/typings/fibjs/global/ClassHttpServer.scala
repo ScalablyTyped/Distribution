@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_HttpServer")
 @js.native
 class ClassHttpServer protected ()
-  extends typings.fibjs.ClassHttpServer {
+  extends StObject
+     with typings.fibjs.ClassHttpServer {
   /**
     * 
     * @brief HttpServer 构造函数，在所有本机地址侦听

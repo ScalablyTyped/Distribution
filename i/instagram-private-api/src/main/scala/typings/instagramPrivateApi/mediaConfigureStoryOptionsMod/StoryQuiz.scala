@@ -3,27 +3,27 @@ package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 import typings.instagramPrivateApi.anon.Count
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StoryQuiz extends StorySticker {
+trait StoryQuiz
+  extends StObject
+     with StorySticker {
   
-  var correct_answer: String = js.native
+  var correct_answer: String
   
-  var end_background_color: String = js.native
+  var end_background_color: String
   
-  var options: js.Array[Count] = js.native
+  var options: js.Array[Count]
   
-  var question: String = js.native
+  var question: String
   
-  var start_background_color: String = js.native
+  var start_background_color: String
   
-  var text_color: String = js.native
+  var text_color: String
   
-  var viewer_answer: Double = js.native
+  var viewer_answer: Double
   
-  var viewer_can_answer: Boolean = js.native
+  var viewer_can_answer: Boolean
 }
 object StoryQuiz {
   

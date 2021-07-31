@@ -4,45 +4,42 @@ import typings.antd.antdBooleans.`false`
 import typings.antd.tableInterfaceMod.TablePaginationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usePaginationMod {
   
-  @JSImport("antd/lib/table/hooks/usePagination", JSImport.Default)
+  @JSImport("antd/lib/table/hooks/usePagination", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
     total: Double,
-    pagination: js.UndefOr[scala.Nothing],
+    pagination: Unit,
     onChange: js.Function2[/* current */ Double, /* pageSize */ Double, Unit]
-  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = js.native
-  @JSImport("antd/lib/table/hooks/usePagination", JSImport.Default)
-  @js.native
+  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(total.asInstanceOf[js.Any], pagination.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TablePaginationConfig, js.Function0[Unit]]]
+  @scala.inline
   def default(
     total: Double,
     pagination: TablePaginationConfig,
     onChange: js.Function2[/* current */ Double, /* pageSize */ Double, Unit]
-  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = js.native
+  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(total.asInstanceOf[js.Any], pagination.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TablePaginationConfig, js.Function0[Unit]]]
   
   @JSImport("antd/lib/table/hooks/usePagination", "DEFAULT_PAGE_SIZE")
   @js.native
   val DEFAULT_PAGE_SIZE: /* 10 */ Double = js.native
   
-  @JSImport("antd/lib/table/hooks/usePagination", JSImport.Default)
-  @js.native
+  @scala.inline
   def default_false(
     total: Double,
     pagination: `false`,
     onChange: js.Function2[/* current */ Double, /* pageSize */ Double, Unit]
-  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = js.native
+  ): js.Tuple2[TablePaginationConfig, js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(total.asInstanceOf[js.Any], pagination.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[TablePaginationConfig, js.Function0[Unit]]]
   
-  @JSImport("antd/lib/table/hooks/usePagination", "getPaginationParam")
-  @js.native
-  def getPaginationParam(pagination: js.UndefOr[scala.Nothing], mergedPagination: TablePaginationConfig): js.Any = js.native
-  @JSImport("antd/lib/table/hooks/usePagination", "getPaginationParam")
-  @js.native
-  def getPaginationParam(pagination: Boolean, mergedPagination: TablePaginationConfig): js.Any = js.native
-  @JSImport("antd/lib/table/hooks/usePagination", "getPaginationParam")
-  @js.native
-  def getPaginationParam(pagination: TablePaginationConfig, mergedPagination: TablePaginationConfig): js.Any = js.native
+  @scala.inline
+  def getPaginationParam(pagination: Boolean, mergedPagination: TablePaginationConfig): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPaginationParam")(pagination.asInstanceOf[js.Any], mergedPagination.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getPaginationParam(pagination: Unit, mergedPagination: TablePaginationConfig): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPaginationParam")(pagination.asInstanceOf[js.Any], mergedPagination.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getPaginationParam(pagination: TablePaginationConfig, mergedPagination: TablePaginationConfig): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPaginationParam")(pagination.asInstanceOf[js.Any], mergedPagination.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

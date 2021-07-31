@@ -2,18 +2,16 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualRowSelectedKey :react-table.react-table.IdType<D>,   autoResetSelectedRows :boolean,   selectSubRows :boolean}> */
-@js.native
 trait UseRowSelectOptions[D /* <: js.Object */] extends StObject {
   
-  var autoResetSelectedRows: js.UndefOr[Boolean] = js.native
+  var autoResetSelectedRows: js.UndefOr[Boolean] = js.undefined
   
-  var manualRowSelectedKey: js.UndefOr[IdType[D]] = js.native
+  var manualRowSelectedKey: js.UndefOr[IdType[D]] = js.undefined
   
-  var selectSubRows: js.UndefOr[Boolean] = js.native
+  var selectSubRows: js.UndefOr[Boolean] = js.undefined
 }
 object UseRowSelectOptions {
   
@@ -24,7 +22,7 @@ object UseRowSelectOptions {
   }
   
   @scala.inline
-  implicit class UseRowSelectOptionsMutableBuilder[Self <: UseRowSelectOptions[_], D /* <: js.Object */] (val x: Self with UseRowSelectOptions[D]) extends AnyVal {
+  implicit class UseRowSelectOptionsMutableBuilder[Self <: UseRowSelectOptions[?], D /* <: js.Object */] (val x: Self & UseRowSelectOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAutoResetSelectedRows(value: Boolean): Self = StObject.set(x, "autoResetSelectedRows", value.asInstanceOf[js.Any])

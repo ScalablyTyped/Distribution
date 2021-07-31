@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Colors")
@@ -29,7 +28,7 @@ class ResourceColors protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaColors] = js.native
   def get(callback: BodyResponseCallback[SchemaColors]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaColors] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaColors] = js.native
   def get(params: ParamsResourceColorsGet): GaxiosPromise[SchemaColors] = js.native
   def get(params: ParamsResourceColorsGet, callback: BodyResponseCallback[SchemaColors]): Unit = js.native
   def get(

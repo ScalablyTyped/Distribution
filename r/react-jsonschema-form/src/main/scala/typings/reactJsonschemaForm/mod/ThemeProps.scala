@@ -5,92 +5,90 @@ import typings.react.mod.StatelessComponent
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react-jsonschema-form.react-jsonschema-form.FormProps<T>, 'schema'> */
-@js.native
 trait ThemeProps[T] extends StObject {
   
-  var ArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[_]]] = js.native
+  var ArrayFieldTemplate: js.UndefOr[StatelessComponent[ArrayFieldTemplateProps[js.Any]]] = js.undefined
   
-  var ErrorList: js.UndefOr[StatelessComponent[ErrorListProps]] = js.native
+  var ErrorList: js.UndefOr[StatelessComponent[ErrorListProps]] = js.undefined
   
-  var FieldTemplate: js.UndefOr[StatelessComponent[FieldTemplateProps]] = js.native
+  var FieldTemplate: js.UndefOr[StatelessComponent[FieldTemplateProps]] = js.undefined
   
-  var ObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[_]]] = js.native
+  var ObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[js.Any]]] = js.undefined
   
-  var acceptcharset: js.UndefOr[String] = js.native
+  var acceptcharset: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var additionalMetaSchemas: js.UndefOr[js.Array[js.Object]] = js.native
+  var additionalMetaSchemas: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var autocomplete: js.UndefOr[String] = js.native
+  var autocomplete: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]] = js.native
+  var customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var enctype: js.UndefOr[String] = js.native
+  var enctype: js.UndefOr[String] = js.undefined
   
-  var fields: js.UndefOr[StringDictionary[Field]] = js.native
+  var fields: js.UndefOr[StringDictionary[Field]] = js.undefined
   
-  var formContext: js.UndefOr[js.Any] = js.native
+  var formContext: js.UndefOr[js.Any] = js.undefined
   
-  var formData: js.UndefOr[T] = js.native
+  var formData: js.UndefOr[T] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var idPrefix: js.UndefOr[String] = js.native
+  var idPrefix: js.UndefOr[String] = js.undefined
   
-  var liveOmit: js.UndefOr[Boolean] = js.native
+  var liveOmit: js.UndefOr[Boolean] = js.undefined
   
-  var liveValidate: js.UndefOr[Boolean] = js.native
+  var liveValidate: js.UndefOr[Boolean] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noHtml5Validate: js.UndefOr[Boolean] = js.native
+  var noHtml5Validate: js.UndefOr[Boolean] = js.undefined
   
-  var noValidate: js.UndefOr[Boolean] = js.native
+  var noValidate: js.UndefOr[Boolean] = js.undefined
   
-  var omitExtraData: js.UndefOr[Boolean] = js.native
+  var omitExtraData: js.UndefOr[Boolean] = js.undefined
   
   var onBlur: js.UndefOr[
     js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], _]] = js.native
+  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], js.Any]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var onError: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
   var onFocus: js.UndefOr[
     js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], _]] = js.native
+  var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], js.Any]] = js.undefined
   
-  var safeRenderCompletion: js.UndefOr[Boolean] = js.native
+  var safeRenderCompletion: js.UndefOr[Boolean] = js.undefined
   
-  var showErrorList: js.UndefOr[Boolean] = js.native
+  var showErrorList: js.UndefOr[Boolean] = js.undefined
   
   var tagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]] = js.native
+  var transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]] = js.undefined
   
-  var uiSchema: js.UndefOr[UiSchema] = js.native
+  var uiSchema: js.UndefOr[UiSchema] = js.undefined
   
-  var validate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]] = js.native
+  var validate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]] = js.undefined
   
-  var widgets: js.UndefOr[StringDictionary[Widget]] = js.native
+  var widgets: js.UndefOr[StringDictionary[Widget]] = js.undefined
 }
 object ThemeProps {
   
@@ -101,7 +99,7 @@ object ThemeProps {
   }
   
   @scala.inline
-  implicit class ThemePropsMutableBuilder[Self <: ThemeProps[_], T] (val x: Self with ThemeProps[T]) extends AnyVal {
+  implicit class ThemePropsMutableBuilder[Self <: ThemeProps[?], T] (val x: Self & ThemeProps[T]) extends AnyVal {
     
     @scala.inline
     def setAcceptcharset(value: String): Self = StObject.set(x, "acceptcharset", value.asInstanceOf[js.Any])
@@ -125,7 +123,7 @@ object ThemeProps {
     def setAdditionalMetaSchemasVarargs(value: js.Object*): Self = StObject.set(x, "additionalMetaSchemas", js.Array(value :_*))
     
     @scala.inline
-    def setArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[_]]): Self = StObject.set(x, "ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    def setArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ArrayFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArrayFieldTemplateUndefined: Self = StObject.set(x, "ArrayFieldTemplate", js.undefined)
@@ -239,7 +237,7 @@ object ThemeProps {
     def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
     
     @scala.inline
-    def setObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[_]]): Self = StObject.set(x, "ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    def setObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ObjectFieldTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setObjectFieldTemplateUndefined: Self = StObject.set(x, "ObjectFieldTemplate", js.undefined)
@@ -257,13 +255,13 @@ object ThemeProps {
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => _): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    def setOnChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnError(value: /* e */ js.Any => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
@@ -275,7 +273,7 @@ object ThemeProps {
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnSubmit(value: /* e */ ISubmitEvent[T] => _): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    def setOnSubmit(value: /* e */ ISubmitEvent[T] => js.Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)

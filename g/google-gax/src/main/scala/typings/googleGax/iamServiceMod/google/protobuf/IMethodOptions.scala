@@ -4,29 +4,27 @@ import typings.googleGax.iamServiceMod.google.api.IHttpRule
 import typings.googleGax.iamServiceMod.google.protobuf.MethodOptions.IdempotencyLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a MethodOptions. */
-@js.native
 trait IMethodOptions extends StObject {
   
   /** MethodOptions .google.api.http */
   @JSName(".google.api.http")
-  var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.native
+  var DotgoogleDotapiDothttp: js.UndefOr[IHttpRule | Null] = js.undefined
   
   /** MethodOptions .google.api.methodSignature */
   @JSName(".google.api.methodSignature")
-  var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.native
+  var DotgoogleDotapiDotmethodSignature: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** MethodOptions deprecated */
-  var deprecated: js.UndefOr[Boolean | Null] = js.native
+  var deprecated: js.UndefOr[Boolean | Null] = js.undefined
   
   /** MethodOptions idempotencyLevel */
-  var idempotencyLevel: js.UndefOr[IdempotencyLevel | Null] = js.native
+  var idempotencyLevel: js.UndefOr[IdempotencyLevel | Null] = js.undefined
   
   /** MethodOptions uninterpretedOption */
-  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.native
+  var uninterpretedOption: js.UndefOr[js.Array[IUninterpretedOption] | Null] = js.undefined
 }
 object IMethodOptions {
   

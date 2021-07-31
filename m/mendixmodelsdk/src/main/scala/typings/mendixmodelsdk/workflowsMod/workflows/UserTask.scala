@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -85,9 +84,8 @@ object UserTask {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.create")
-  @js.native
-  def create(model: IModel): UserTask = js.native
+  @scala.inline
+  def create(model: IModel): UserTask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[UserTask]
   
   /**
     * Creates and returns a new UserTask instance in the SDK and on the server.
@@ -98,9 +96,8 @@ object UserTask {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.createIn")
-  @js.native
-  def createIn(container: Flow): UserTask = js.native
+  @scala.inline
+  def createIn(container: Flow): UserTask = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[UserTask]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.UserTask.structureTypeName")

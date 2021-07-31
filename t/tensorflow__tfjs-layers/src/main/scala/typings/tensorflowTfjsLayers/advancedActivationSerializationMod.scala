@@ -13,7 +13,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object advancedActivationSerializationMod {
@@ -55,10 +54,11 @@ object advancedActivationSerializationMod {
   
   type AdvancedActivationLayerSerialization = ReLULayerSerialization | LeakyReLULayerSerialization | PReLULayerSerialization | ELULayerSerialization | ThresholdedReLULayerSerialization | SoftmaxLayerSerialization
   
-  @js.native
-  trait ELULayerConfig extends LayerConfig {
+  trait ELULayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
   }
   object ELULayerConfig {
     
@@ -81,10 +81,11 @@ object advancedActivationSerializationMod {
   
   type ELULayerSerialization = BaseLayerSerialization[ELU, ELULayerConfig]
   
-  @js.native
-  trait LeakyReLULayerConfig extends LayerConfig {
+  trait LeakyReLULayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
   }
   object LeakyReLULayerConfig {
     
@@ -107,16 +108,17 @@ object advancedActivationSerializationMod {
   
   type LeakyReLULayerSerialization = BaseLayerSerialization[LeakyReLU, LeakyReLULayerConfig]
   
-  @js.native
-  trait PReLULayerConfig extends LayerConfig {
+  trait PReLULayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var alpha_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var alpha_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var alpha_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var alpha_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var alpha_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var alpha_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var shared_axes: js.UndefOr[Double | js.Array[Double]] = js.native
+    var shared_axes: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object PReLULayerConfig {
     
@@ -160,10 +162,11 @@ object advancedActivationSerializationMod {
   
   type PReLULayerSerialization = BaseLayerSerialization[PReLU, PReLULayerConfig]
   
-  @js.native
-  trait ReLULayerConfig extends LayerConfig {
+  trait ReLULayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var max_value: js.UndefOr[Double] = js.native
+    var max_value: js.UndefOr[Double] = js.undefined
   }
   object ReLULayerConfig {
     
@@ -186,10 +189,11 @@ object advancedActivationSerializationMod {
   
   type ReLULayerSerialization = BaseLayerSerialization[ReLU, ReLULayerConfig]
   
-  @js.native
-  trait SoftmaxLayerConfig extends LayerConfig {
+  trait SoftmaxLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
   }
   object SoftmaxLayerConfig {
     
@@ -212,10 +216,11 @@ object advancedActivationSerializationMod {
   
   type SoftmaxLayerSerialization = BaseLayerSerialization[Softmax, SoftmaxLayerConfig]
   
-  @js.native
-  trait ThresholdedReLULayerConfig extends LayerConfig {
+  trait ThresholdedReLULayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var theta: js.UndefOr[Double] = js.native
+    var theta: js.UndefOr[Double] = js.undefined
   }
   object ThresholdedReLULayerConfig {
     

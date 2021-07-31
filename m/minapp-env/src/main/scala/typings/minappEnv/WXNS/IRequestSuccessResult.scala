@@ -3,17 +3,15 @@ package typings.minappEnv.WXNS
 import typings.minappEnv.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRequestSuccessResult extends StObject {
   
-  var data: AnyObject | String | ArrayBuffer = js.native
+  var data: AnyObject | String | ArrayBuffer
   
-  var header: AnyObject = js.native
+  var header: AnyObject
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object IRequestSuccessResult {
   

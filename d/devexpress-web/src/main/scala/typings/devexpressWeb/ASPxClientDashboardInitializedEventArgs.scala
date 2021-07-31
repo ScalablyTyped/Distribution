@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.DashboardInitialized event.
   */
-@js.native
-trait ASPxClientDashboardInitializedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDashboardInitializedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the dashboard's unique name.
     */
-  var DashboardId: String = js.native
+  var DashboardId: String
 }
 object ASPxClientDashboardInitializedEventArgs {
   

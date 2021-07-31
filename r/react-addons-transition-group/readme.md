@@ -11,8 +11,8 @@ The code in this package has moved. We recommend you to use `TransitionGroup` fr
 | Full name          | react-addons-transition-group |
 | Keywords           | react, react-addon |
 | # releases         | 0 |
-| # dependents       | 188 |
-| # downloads        | 3864970 |
+| # dependents       | 189 |
+| # downloads        | 4339760 |
 | # stars            | 4 |
 
 ## Links

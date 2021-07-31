@@ -3,93 +3,73 @@ package typings.humps
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("humps", "camelize")
+  @JSImport("humps", JSImport.Namespace)
   @js.native
-  def camelize(value: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("humps", "camelizeKeys")
-  @js.native
-  def camelizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("humps", "camelizeKeys")
-  @js.native
-  def camelizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = js.native
-  @JSImport("humps", "camelizeKeys")
-  @js.native
-  def camelizeKeys(str: js.Object): js.Object = js.native
-  @JSImport("humps", "camelizeKeys")
-  @js.native
-  def camelizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = js.native
+  @scala.inline
+  def camelize(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("humps", "decamelize")
-  @js.native
-  def decamelize(value: String): String = js.native
-  @JSImport("humps", "decamelize")
-  @js.native
-  def decamelize(value: String, optionsOrProcessor: OptionOrProcessor): String = js.native
+  @scala.inline
+  def camelizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("camelizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def camelizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("camelizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def camelizeKeys(str: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("camelizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def camelizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("camelizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("humps", "decamelizeKeys")
-  @js.native
-  def decamelizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("humps", "decamelizeKeys")
-  @js.native
-  def decamelizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = js.native
-  @JSImport("humps", "decamelizeKeys")
-  @js.native
-  def decamelizeKeys(str: js.Object): js.Object = js.native
-  @JSImport("humps", "decamelizeKeys")
-  @js.native
-  def decamelizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = js.native
+  @scala.inline
+  def decamelize(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decamelize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decamelize(value: String, optionsOrProcessor: OptionOrProcessor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decamelize")(value.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humps", "depascalize")
-  @js.native
-  def depascalize(value: String): String = js.native
-  @JSImport("humps", "depascalize")
-  @js.native
-  def depascalize(value: String, optionsOrProcessor: OptionOrProcessor): String = js.native
+  @scala.inline
+  def decamelizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decamelizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def decamelizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("decamelizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def decamelizeKeys(str: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("decamelizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def decamelizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("decamelizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("humps", "depascalizeKeys")
-  @js.native
-  def depascalizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("humps", "depascalizeKeys")
-  @js.native
-  def depascalizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = js.native
-  @JSImport("humps", "depascalizeKeys")
-  @js.native
-  def depascalizeKeys(str: js.Object): js.Object = js.native
-  @JSImport("humps", "depascalizeKeys")
-  @js.native
-  def depascalizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = js.native
+  @scala.inline
+  def depascalize(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("depascalize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def depascalize(value: String, optionsOrProcessor: OptionOrProcessor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("depascalize")(value.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("humps", "pascalize")
-  @js.native
-  def pascalize(value: String): String = js.native
+  @scala.inline
+  def depascalizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("depascalizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def depascalizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("depascalizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def depascalizeKeys(str: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("depascalizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def depascalizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("depascalizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("humps", "pascalizeKeys")
-  @js.native
-  def pascalizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = js.native
-  @JSImport("humps", "pascalizeKeys")
-  @js.native
-  def pascalizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = js.native
-  @JSImport("humps", "pascalizeKeys")
-  @js.native
-  def pascalizeKeys(str: js.Object): js.Object = js.native
-  @JSImport("humps", "pascalizeKeys")
-  @js.native
-  def pascalizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = js.native
+  @scala.inline
+  def pascalize(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def pascalizeKeys(str: js.Array[js.Object]): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def pascalizeKeys(str: js.Array[js.Object], optionsOrProcessor: OptionOrProcessor): js.Array[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+  @scala.inline
+  def pascalizeKeys(str: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("pascalizeKeys")(str.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def pascalizeKeys(str: js.Object, optionsOrProcessor: OptionOrProcessor): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("pascalizeKeys")(str.asInstanceOf[js.Any], optionsOrProcessor.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   trait HumpsOptions extends StObject {
     
-    var process: js.UndefOr[HumpsProcessor] = js.native
+    var process: js.UndefOr[HumpsProcessor] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var split: js.UndefOr[RegExp] = js.native
+    var split: js.UndefOr[RegExp] = js.undefined
   }
   object HumpsOptions {
     

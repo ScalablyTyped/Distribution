@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a factory for XPropertyControls
   * @since OOo 2.0.3
   */
-@js.native
 trait XPropertyControlFactory extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait XPropertyControlFactory extends StObject {
     * @returns a control of the given type.
     * @throws com::sun::star::lang::IllegalArgumentException if the given ControlType is not a value {@link PropertyControlType}
     */
-  def createPropertyControl(ControlType: Double, CreateReadOnly: Boolean): XPropertyControl = js.native
+  def createPropertyControl(ControlType: Double, CreateReadOnly: Boolean): XPropertyControl
 }
 object XPropertyControlFactory {
   

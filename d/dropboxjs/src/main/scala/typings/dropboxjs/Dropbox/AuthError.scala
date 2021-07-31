@@ -2,17 +2,15 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthError extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var description: String = js.native
+  var description: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object AuthError {
   

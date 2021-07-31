@@ -10,9 +10,9 @@ Turns a blob into an async iterator
 | ------------------ | :-------------: |
 | Full name          | blob-to-it |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 22601 |
+| # downloads        | 276576 |
 | # stars            | 0 |
 
 ## Links

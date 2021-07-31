@@ -8,7 +8,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerStyleIndexNativeMod {
@@ -51,18 +50,17 @@ object pickerStyleIndexNativeMod {
     def title_=(x: ColorFontSizeTextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPickerStyle extends StObject {
     
-    var actionText: TextStyle = js.native
+    var actionText: TextStyle
     
-    var header: ViewStyle = js.native
+    var header: ViewStyle
     
-    var headerItem: ViewStyle = js.native
+    var headerItem: ViewStyle
     
-    var modal: ViewStyle = js.native
+    var modal: ViewStyle
     
-    var title: TextStyle = js.native
+    var title: TextStyle
   }
   object IPickerStyle {
     

@@ -6,26 +6,27 @@ import typings.expressServeStaticCore.mod.RequestHandler
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("csurf", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
-  @JSImport("csurf", JSImport.Namespace)
-  @js.native
-  def apply(options: Cookie): RequestHandler[ParamsDictionary, _, _, ParsedQs] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  @scala.inline
+  def apply(options: Cookie): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
   
+  @JSImport("csurf", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CookieOptions
-    extends typings.expressServeStaticCore.mod.CookieOptions {
+    extends StObject
+       with typings.expressServeStaticCore.mod.CookieOptions {
     
     /**
       * @defautl '_csrf'
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object CookieOptions {
     
@@ -50,10 +51,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        def csrfToken(): String = js.native
+        def csrfToken(): String
       }
       object Request {
         

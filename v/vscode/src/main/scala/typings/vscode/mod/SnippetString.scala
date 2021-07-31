@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SnippetString")
@@ -34,8 +33,8 @@ class SnippetString () extends StObject {
     */
   def appendPlaceholder(value: String): SnippetString = js.native
   def appendPlaceholder(value: String, number: Double): SnippetString = js.native
-  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, _]): SnippetString = js.native
-  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, _], number: Double): SnippetString = js.native
+  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, js.Any]): SnippetString = js.native
+  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, js.Any], number: Double): SnippetString = js.native
   
   /**
     * Builder-function that appends a tabstop (`$1`, `$2` etc) to
@@ -67,7 +66,7 @@ class SnippetString () extends StObject {
     * @return This snippet string.
     */
   def appendVariable(name: String, defaultValue: String): SnippetString = js.native
-  def appendVariable(name: String, defaultValue: js.Function1[/* snippet */ this.type, _]): SnippetString = js.native
+  def appendVariable(name: String, defaultValue: js.Function1[/* snippet */ this.type, js.Any]): SnippetString = js.native
   
   /**
     * The snippet string.

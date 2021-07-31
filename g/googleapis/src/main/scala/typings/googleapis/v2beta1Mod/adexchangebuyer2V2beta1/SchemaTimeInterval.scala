@@ -2,26 +2,24 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interval of time, with an absolute start and end.
   */
-@js.native
 trait SchemaTimeInterval extends StObject {
   
   /**
     * The timestamp marking the end of the range (exclusive) for which data is
     * included.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp marking the start of the range (inclusive) for which data
     * is included.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeInterval {
   

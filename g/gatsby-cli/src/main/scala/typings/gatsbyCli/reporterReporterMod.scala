@@ -21,7 +21,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterReporterMod {
@@ -49,18 +48,13 @@ object reporterReporterMod {
       * Create a progress bar for an activity
       */
     def createProgress(text: String): IProgressReporter = js.native
-    def createProgress(
-      text: String,
-      total: js.UndefOr[scala.Nothing],
-      start: js.UndefOr[scala.Nothing],
-      activityArgs: IActivityArgs
-    ): IProgressReporter = js.native
-    def createProgress(text: String, total: js.UndefOr[scala.Nothing], start: Double): IProgressReporter = js.native
-    def createProgress(text: String, total: js.UndefOr[scala.Nothing], start: Double, activityArgs: IActivityArgs): IProgressReporter = js.native
     def createProgress(text: String, total: Double): IProgressReporter = js.native
-    def createProgress(text: String, total: Double, start: js.UndefOr[scala.Nothing], activityArgs: IActivityArgs): IProgressReporter = js.native
     def createProgress(text: String, total: Double, start: Double): IProgressReporter = js.native
     def createProgress(text: String, total: Double, start: Double, activityArgs: IActivityArgs): IProgressReporter = js.native
+    def createProgress(text: String, total: Double, start: Unit, activityArgs: IActivityArgs): IProgressReporter = js.native
+    def createProgress(text: String, total: Unit, start: Double): IProgressReporter = js.native
+    def createProgress(text: String, total: Unit, start: Double, activityArgs: IActivityArgs): IProgressReporter = js.native
+    def createProgress(text: String, total: Unit, start: Unit, activityArgs: IActivityArgs): IProgressReporter = js.native
     
     def error(errorMeta: js.Array[ErrorMeta]): IStructuredError | js.Array[IStructuredError] = js.native
     def error(errorMeta: js.Array[ErrorMeta], error: js.Array[Error]): IStructuredError | js.Array[IStructuredError] = js.native
@@ -149,14 +143,13 @@ object reporterReporterMod {
   @js.native
   val reporter: Reporter_ = js.native
   
-  @js.native
   trait IActivityArgs extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var parentSpan: js.UndefOr[Span] = js.native
+    var parentSpan: js.UndefOr[Span] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object IActivityArgs {
     

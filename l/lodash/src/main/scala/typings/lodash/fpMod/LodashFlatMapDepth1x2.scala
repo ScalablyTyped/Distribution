@@ -5,14 +5,13 @@ import typings.lodash.mod.ListOfRecursiveArraysOrValues
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashFlatMapDepth1x2 extends StObject {
   
   def apply(iteratee: String): LodashFlatMapDepth3x3 = js.native
-  def apply(iteratee: String, collection: js.Object): js.Array[_] = js.native
+  def apply(iteratee: String, collection: js.Object): js.Array[js.Any] = js.native
   def apply(iteratee: js.Object): LodashFlatMapDepth4x3 = js.native
   def apply(iteratee: js.Object, collection: js.Object): js.Array[Boolean] = js.native
   def apply(iteratee: __): LodashFlatMapDepth3x6 = js.native

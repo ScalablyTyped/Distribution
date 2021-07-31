@@ -3,102 +3,102 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupViewModelProperties extends GoToProperties {
+trait PopupViewModelProperties
+  extends StObject
+     with GoToProperties {
   
   /**
     * [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html) objects.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#actions)
     */
-  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.native
+  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.undefined
   
   /**
     * This closes the popup when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoCloseEnabled)
     */
-  var autoCloseEnabled: js.UndefOr[Boolean] = js.native
+  var autoCloseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#autoOpenEnabled)
     */
-  var autoOpenEnabled: js.UndefOr[Boolean] = js.native
+  var autoOpenEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The content of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#content)
     */
-  var content: js.UndefOr[String | HTMLElement | WidgetProperties] = js.native
+  var content: js.UndefOr[String | HTMLElement | WidgetProperties] = js.undefined
   
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultPopupTemplateEnabled)
     */
-  var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.native
+  var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of features associated with the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#features)
     */
-  var features: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
     * Highlight the selected popup feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#highlightEnabled)
     */
-  var highlightEnabled: js.UndefOr[Boolean] = js.native
+  var highlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Geometry used to position the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#location)
     */
-  var location: js.UndefOr[PointProperties] = js.native
+  var location: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * An array of pending Promises that have not yet been fulfilled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#promises)
     */
-  var promises: js.UndefOr[js.Array[js.Promise[_]]] = js.native
+  var promises: js.UndefOr[js.Array[js.Promise[js.Any]]] = js.undefined
   
   /**
     * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeatureIndex)
     */
-  var selectedFeatureIndex: js.UndefOr[Double] = js.native
+  var selectedFeatureIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The title of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The view associated with the Popup instance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * Indicates whether the popup is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#visible)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PopupViewModelProperties {
   
@@ -166,7 +166,7 @@ object PopupViewModelProperties {
     def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setPromises(value: js.Array[js.Promise[_]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+    def setPromises(value: js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)

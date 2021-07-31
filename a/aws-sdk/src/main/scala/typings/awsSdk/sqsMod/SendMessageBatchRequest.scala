@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMessageBatchRequest extends StObject {
   
   /**
     * A list of  SendMessageBatchRequestEntry  items.
     */
-  var Entries: SendMessageBatchRequestEntryList = js.native
+  var Entries: SendMessageBatchRequestEntryList
   
   /**
     * The URL of the Amazon SQS queue to which batched messages are sent. Queue URLs and names are case-sensitive.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
 }
 object SendMessageBatchRequest {
   

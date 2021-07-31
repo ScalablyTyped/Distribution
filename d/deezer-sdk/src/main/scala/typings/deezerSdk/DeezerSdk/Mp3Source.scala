@@ -2,20 +2,18 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
   */
-@js.native
 trait Mp3Source extends StObject {
   
-  val artist: String = js.native
+  val artist: String
   
-  val title: String = js.native
+  val title: String
   
-  val url: String = js.native
+  val url: String
 }
 object Mp3Source {
   

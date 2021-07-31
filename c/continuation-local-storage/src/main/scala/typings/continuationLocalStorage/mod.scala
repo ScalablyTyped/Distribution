@@ -4,30 +4,33 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("continuation-local-storage", "createNamespace")
+  @JSImport("continuation-local-storage", JSImport.Namespace)
   @js.native
-  def createNamespace(name: String): Namespace = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("continuation-local-storage", "destroyNamespace")
-  @js.native
-  def destroyNamespace(name: String): Unit = js.native
+  @scala.inline
+  def createNamespace(name: String): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Namespace]
   
-  @JSImport("continuation-local-storage", "getNamespace")
-  @js.native
-  def getNamespace(name: String): Namespace = js.native
+  @scala.inline
+  def destroyNamespace(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("continuation-local-storage", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def getNamespace(name: String): Namespace = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Namespace]
+  
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
   type Context = StringDictionary[js.Any]
   
-  type Func[T] = js.Function1[/* repeated */ js.Any, T]
+  @js.native
+  trait Func[T] extends StObject {
+    
+    def apply(args: js.Any*): T = js.native
+  }
   
   @js.native
   trait Namespace extends StObject {

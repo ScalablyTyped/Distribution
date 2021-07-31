@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiRequestLogsResult extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var apiRequestLogs: js.UndefOr[js.Array[/* Contains API request log information. */ ApiRequestLog]] = js.native
+  var apiRequestLogs: js.UndefOr[js.Array[/* Contains API request log information. */ ApiRequestLog]] = js.undefined
 }
 object ApiRequestLogsResult {
   

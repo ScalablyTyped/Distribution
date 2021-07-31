@@ -2,7 +2,6 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait NetworkState extends StObject
 object NetworkState extends StObject {
   
   @js.native
-  sealed trait Empty extends NetworkState
+  sealed trait Empty
+    extends StObject
+       with NetworkState
   
   @js.native
-  sealed trait Idle extends NetworkState
+  sealed trait Idle
+    extends StObject
+       with NetworkState
   
   @js.native
-  sealed trait Loading extends NetworkState
+  sealed trait Loading
+    extends StObject
+       with NetworkState
   
   @js.native
-  sealed trait NoSource extends NetworkState
+  sealed trait NoSource
+    extends StObject
+       with NetworkState
 }

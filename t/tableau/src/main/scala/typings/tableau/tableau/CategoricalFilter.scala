@@ -2,12 +2,11 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CategoricalFilter
-  extends Filter
+  extends StObject
+     with Filter
      with ConcreteFilter {
   
   /**
@@ -15,10 +14,10 @@ trait CategoricalFilter
     * This is a native JavaScript array and not a keyed collection.
     * Note that only the first 200 values are returned.
     */
-  def getAppliedValues(): js.Array[DataValue] = js.native
+  def getAppliedValues(): js.Array[DataValue]
   
   /** Gets a value indicating whether the filter is exclude or include (default). */
-  def getIsExcludeMode(): Boolean = js.native
+  def getIsExcludeMode(): Boolean
 }
 object CategoricalFilter {
   

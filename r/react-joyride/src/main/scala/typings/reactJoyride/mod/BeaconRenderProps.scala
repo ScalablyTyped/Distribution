@@ -2,23 +2,21 @@ package typings.reactJoyride.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeaconRenderProps extends StObject {
   
-  var continuous: Boolean = js.native
+  var continuous: Boolean
   
-  var index: Double = js.native
+  var index: Double
   
-  var isLastStep: Boolean = js.native
+  var isLastStep: Boolean
   
-  def setTooltipRef(): Unit = js.native
+  def setTooltipRef(): Unit
   
-  var size: Double = js.native
+  var size: Double
   
-  var step: Step = js.native
+  var step: Step
 }
 object BeaconRenderProps {
   

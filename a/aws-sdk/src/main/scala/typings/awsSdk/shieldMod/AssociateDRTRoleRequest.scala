@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateDRTRoleRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the role the DRT will use to access your AWS account. Prior to making the AssociateDRTRole request, you must attach the AWSShieldDRTAccessPolicy managed policy to this role. For more information see Attaching and Detaching IAM Policies.
     */
-  var RoleArn: typings.awsSdk.shieldMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.shieldMod.RoleArn
 }
 object AssociateDRTRoleRequest {
   

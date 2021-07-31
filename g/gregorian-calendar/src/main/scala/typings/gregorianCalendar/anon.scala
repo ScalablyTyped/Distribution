@@ -2,15 +2,13 @@ package typings.gregorianCalendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: js.Object = js.native
+    var locale: js.Object
   }
   object Locale {
     

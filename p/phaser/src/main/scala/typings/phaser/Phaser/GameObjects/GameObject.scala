@@ -16,7 +16,6 @@ import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait GameObject
-  extends EventEmitter
+  extends StObject
+     with EventEmitter
      with MatterBody
      with _ArcadeColliderType {
   
@@ -258,15 +258,15 @@ trait GameObject
     * @param dropZone Should this Game Object be treated as a drop zone target? Default false.
     */
   def setInteractive(): this.type = js.native
-  def setInteractive(shape: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
-  def setInteractive(shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
-  def setInteractive(shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: js.Any): this.type = js.native
-  def setInteractive(shape: js.Any, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: js.Any, callback: Unit, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: js.Any, callback: HitAreaCallback): this.type = js.native
   def setInteractive(shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: Unit, callback: Unit, dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: Unit, callback: HitAreaCallback): this.type = js.native
+  def setInteractive(shape: Unit, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: InputConfiguration): this.type = js.native
-  def setInteractive(shape: InputConfiguration, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
+  def setInteractive(shape: InputConfiguration, callback: Unit, dropZone: Boolean): this.type = js.native
   def setInteractive(shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
   def setInteractive(shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   

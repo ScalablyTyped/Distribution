@@ -2,28 +2,26 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object escapeMod {
   
-  @JSImport("xmlcreate/lib/escape", "escapeAmpersands")
+  @JSImport("xmlcreate/lib/escape", JSImport.Namespace)
   @js.native
-  def escapeAmpersands(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xmlcreate/lib/escape", "escapeDoubleQuotes")
-  @js.native
-  def escapeDoubleQuotes(str: String): String = js.native
+  @scala.inline
+  def escapeAmpersands(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAmpersands")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xmlcreate/lib/escape", "escapeLeftAngleBrackets")
-  @js.native
-  def escapeLeftAngleBrackets(str: String): String = js.native
+  @scala.inline
+  def escapeDoubleQuotes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeDoubleQuotes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xmlcreate/lib/escape", "escapeRightAngleBracketsInCdataTerminator")
-  @js.native
-  def escapeRightAngleBracketsInCdataTerminator(str: String): String = js.native
+  @scala.inline
+  def escapeLeftAngleBrackets(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeLeftAngleBrackets")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xmlcreate/lib/escape", "escapeSingleQuotes")
-  @js.native
-  def escapeSingleQuotes(str: String): String = js.native
+  @scala.inline
+  def escapeRightAngleBracketsInCdataTerminator(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeRightAngleBracketsInCdataTerminator")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def escapeSingleQuotes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeSingleQuotes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

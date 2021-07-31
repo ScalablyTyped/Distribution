@@ -2,7 +2,6 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constMod {
@@ -38,8 +37,11 @@ object constMod {
   /* static members */
   object ConstInterval {
     
-    @JSImport("@devexpress/utils/lib/intervals/const", "ConstInterval.isCollapsed")
+    @JSImport("@devexpress/utils/lib/intervals/const", "ConstInterval")
     @js.native
-    def isCollapsed(intervals: js.Array[ConstInterval]): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isCollapsed(intervals: js.Array[ConstInterval]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(intervals.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

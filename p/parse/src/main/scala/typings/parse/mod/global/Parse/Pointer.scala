@@ -4,19 +4,18 @@ import typings.parse.mod.global.Parse.Object._Encode
 import typings.parse.mod.global.Parse.Schema._FieldType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pointer
-  extends _Encode[js.Any]
+  extends StObject
+     with _Encode[js.Any]
      with _FieldType {
   
-  var __type: String = js.native
+  var __type: String
   
-  var className: String = js.native
+  var className: String
   
-  var objectId: String = js.native
+  var objectId: String
 }
 object Pointer {
   

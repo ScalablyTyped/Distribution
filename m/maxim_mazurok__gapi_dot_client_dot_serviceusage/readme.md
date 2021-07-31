@@ -10,9 +10,9 @@ TypeScript typings for Service Usage API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.serviceusage |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 34 |
 | # dependents       | 1 |
-| # downloads        | 112 |
+| # downloads        | 2409 |
 | # stars            | 0 |
 
 ## Links

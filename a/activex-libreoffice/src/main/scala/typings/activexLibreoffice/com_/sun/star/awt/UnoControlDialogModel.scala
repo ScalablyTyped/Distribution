@@ -8,13 +8,13 @@ import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the standard model of an {@link UnoControlDialog} . */
 @js.native
 trait UnoControlDialogModel
-  extends UnoControlModel
+  extends StObject
+     with UnoControlModel
      with XMultiServiceFactory
      with XContainer
      with XNameContainer {

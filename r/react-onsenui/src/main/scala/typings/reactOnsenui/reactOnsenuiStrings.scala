@@ -5,7 +5,6 @@ import typings.reactOnsenui.mod.SpeedDialPosition
 import typings.reactOnsenui.mod._NavigatorAnimationTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactOnsenuiStrings {
@@ -316,17 +315,23 @@ object reactOnsenuiStrings {
   def autoSave: autoSave = "autoSave".asInstanceOf[autoSave]
   
   @js.native
-  sealed trait bottom extends SpeedDialPosition
+  sealed trait bottom
+    extends StObject
+       with SpeedDialPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom left` extends SpeedDialPosition
+  sealed trait `bottom left`
+    extends StObject
+       with SpeedDialPosition
   @scala.inline
   def `bottom left`: `bottom left` = ("bottom left").asInstanceOf[`bottom left`]
   
   @js.native
-  sealed trait `bottom right` extends SpeedDialPosition
+  sealed trait `bottom right`
+    extends StObject
+       with SpeedDialPosition
   @scala.inline
   def `bottom right`: `bottom right` = ("bottom right").asInstanceOf[`bottom right`]
   
@@ -411,7 +416,9 @@ object reactOnsenuiStrings {
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait down extends SpeedDialDirection
+  sealed trait down
+    extends StObject
+       with SpeedDialDirection
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
@@ -426,7 +433,9 @@ object reactOnsenuiStrings {
   def enterKeyHint: enterKeyHint = "enterKeyHint".asInstanceOf[enterKeyHint]
   
   @js.native
-  sealed trait fade extends _NavigatorAnimationTypes
+  sealed trait fade
+    extends StObject
+       with _NavigatorAnimationTypes
   @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
   
@@ -547,13 +556,16 @@ object reactOnsenuiStrings {
   
   @js.native
   sealed trait left
-    extends SpeedDialDirection
+    extends StObject
+       with SpeedDialDirection
        with SpeedDialPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lift extends _NavigatorAnimationTypes
+  sealed trait lift
+    extends StObject
+       with _NavigatorAnimationTypes
   @scala.inline
   def lift: lift = "lift".asInstanceOf[lift]
   
@@ -593,7 +605,9 @@ object reactOnsenuiStrings {
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait none extends _NavigatorAnimationTypes
+  sealed trait none
+    extends StObject
+       with _NavigatorAnimationTypes
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -1054,7 +1068,8 @@ object reactOnsenuiStrings {
   
   @js.native
   sealed trait right
-    extends SpeedDialDirection
+    extends StObject
+       with SpeedDialDirection
        with SpeedDialPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
@@ -1075,7 +1090,9 @@ object reactOnsenuiStrings {
   def size: size = "size".asInstanceOf[size]
   
   @js.native
-  sealed trait slide extends _NavigatorAnimationTypes
+  sealed trait slide
+    extends StObject
+       with _NavigatorAnimationTypes
   @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
   
@@ -1130,17 +1147,23 @@ object reactOnsenuiStrings {
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait top extends SpeedDialPosition
+  sealed trait top
+    extends StObject
+       with SpeedDialPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top left` extends SpeedDialPosition
+  sealed trait `top left`
+    extends StObject
+       with SpeedDialPosition
   @scala.inline
   def `top left`: `top left` = ("top left").asInstanceOf[`top left`]
   
   @js.native
-  sealed trait `top right` extends SpeedDialPosition
+  sealed trait `top right`
+    extends StObject
+       with SpeedDialPosition
   @scala.inline
   def `top right`: `top right` = ("top right").asInstanceOf[`top right`]
   
@@ -1165,7 +1188,9 @@ object reactOnsenuiStrings {
   def unselectable: unselectable = "unselectable".asInstanceOf[unselectable]
   
   @js.native
-  sealed trait up extends SpeedDialDirection
+  sealed trait up
+    extends StObject
+       with SpeedDialDirection
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   

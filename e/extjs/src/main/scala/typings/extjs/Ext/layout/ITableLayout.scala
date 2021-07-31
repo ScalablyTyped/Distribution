@@ -3,24 +3,24 @@ package typings.extjs.Ext.layout
 import typings.extjs.Ext.layout.container.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITableLayout extends IContainer {
+trait ITableLayout
+  extends StObject
+     with IContainer {
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_ITableLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var calculate_ITableLayout: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /** [Method] This method if implemented is called after all layouts have completed  */
   @JSName("finalizeLayout")
-  var finalizeLayout_ITableLayout: js.UndefOr[js.Function0[Unit]] = js.native
+  var finalizeLayout_ITableLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Validates item is in the proper place in the dom
     * @param item Object
@@ -37,16 +37,16 @@ trait ITableLayout extends IContainer {
       /* cellIdx */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Object) */
-  var tableAttrs: js.UndefOr[js.Any] = js.native
+  var tableAttrs: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var tdAttrs: js.UndefOr[js.Any] = js.native
+  var tdAttrs: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var trAttrs: js.UndefOr[js.Any] = js.native
+  var trAttrs: js.UndefOr[js.Any] = js.undefined
 }
 object ITableLayout {
   

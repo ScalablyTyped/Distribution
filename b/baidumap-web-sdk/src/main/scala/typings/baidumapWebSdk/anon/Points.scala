@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Points extends StObject {
   
-  var points: js.Array[typings.baidumapWebSdk.BMap.Point] = js.native
+  var points: js.Array[typings.baidumapWebSdk.BMap.Point]
   
-  var status: Double = js.native
+  var status: Double
 }
 object Points {
   

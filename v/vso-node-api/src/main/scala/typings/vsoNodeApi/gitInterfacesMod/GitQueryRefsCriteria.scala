@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitQueryRefsCriteria extends StObject {
   
   /**
     * List of commit Ids to be searched
     */
-  var commitIds: js.Array[String] = js.native
+  var commitIds: js.Array[String]
   
   /**
     * List of complete or partial names for refs to be searched
     */
-  var refNames: js.Array[String] = js.native
+  var refNames: js.Array[String]
   
   /**
     * Type of search on refNames, if provided
     */
-  var searchType: GitRefSearchType = js.native
+  var searchType: GitRefSearchType
 }
 object GitQueryRefsCriteria {
   

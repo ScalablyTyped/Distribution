@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingStoppingCondition extends StObject {
   
   /**
     * Specifies the maximum runtime in seconds.
     */
-  var MaxRuntimeInSeconds: ProcessingMaxRuntimeInSeconds = js.native
+  var MaxRuntimeInSeconds: ProcessingMaxRuntimeInSeconds
 }
 object ProcessingStoppingCondition {
   

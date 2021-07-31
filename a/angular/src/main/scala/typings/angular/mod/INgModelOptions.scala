@@ -3,36 +3,34 @@ package typings.angular.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Allows tuning how model updates are done.
 // https://docs.angularjs.org/api/ng/directive/ngModelOptions
-@js.native
 trait INgModelOptions extends StObject {
   
-  var allowInvalid: js.UndefOr[Boolean] = js.native
+  var allowInvalid: js.UndefOr[Boolean] = js.undefined
   
-  var debounce: js.UndefOr[Double | StringDictionary[Double]] = js.native
+  var debounce: js.UndefOr[Double | StringDictionary[Double]] = js.undefined
   
-  var getterSetter: js.UndefOr[Boolean] = js.native
+  var getterSetter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines if the time and datetime-local types should show seconds and milliseconds.
     * The option follows the format string of date filter.
     * By default, the options is undefined which is equal to 'ss.sss' (seconds and milliseconds)
     */
-  var timeSecondsFormat: js.UndefOr[String] = js.native
+  var timeSecondsFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Defines if the time and datetime-local types should strip the seconds and milliseconds
     * from the formatted value if they are zero. This option is applied after `timeSecondsFormat`
     */
-  var timeStripZeroSeconds: js.UndefOr[Boolean] = js.native
+  var timeStripZeroSeconds: js.UndefOr[Boolean] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var updateOn: js.UndefOr[String] = js.native
+  var updateOn: js.UndefOr[String] = js.undefined
 }
 object INgModelOptions {
   

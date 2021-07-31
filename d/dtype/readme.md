@@ -12,7 +12,7 @@ Return a data type from a string representing the type
 | Keywords           | ndarray, array, typed |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 3482707 |
+| # downloads        | 4296358 |
 | # stars            | 0 |
 
 ## Links

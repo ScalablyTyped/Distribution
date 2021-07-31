@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopReturnType extends StObject {
   
   /**
     * Recorded profile.
     */
-  var profile: Profile = js.native
+  var profile: Profile
 }
 object StopReturnType {
   

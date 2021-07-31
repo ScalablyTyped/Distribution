@@ -12,7 +12,7 @@ Computes the sample standard deviation over an array of values.
 | Keywords           | compute.io, compute, computation, statistics, stats, standard deviation, stdev, variance |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 90219 |
+| # downloads        | 108213 |
 | # stars            | 2 |
 
 ## Links

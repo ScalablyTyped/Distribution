@@ -3,15 +3,13 @@ package typings.knockout.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscription extends StObject {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  def disposeWhenNodeIsRemoved(node: Node): Unit = js.native
+  def disposeWhenNodeIsRemoved(node: Node): Unit
 }
 object Subscription {
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides read access to the data contained in a layer.
   * @since OOo 1.1.2
   */
-@js.native
-trait XLayer extends XInterface {
+trait XLayer
+  extends StObject
+     with XInterface {
   
   /**
     * describes the contents of the layer to an {@link XLayerHandler} .
@@ -21,7 +21,7 @@ trait XLayer extends XInterface {
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs in the access to or processing of the data.
     * @throws com::sun::star::configuration::backend::MalformedDataException if the data read from the layer is rejected as invalid by the {@link XLayerHandler} .
     */
-  def readData(aHandler: XLayerHandler): Unit = js.native
+  def readData(aHandler: XLayerHandler): Unit
 }
 object XLayer {
   

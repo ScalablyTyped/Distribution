@@ -2,26 +2,26 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeOpenDialog event.
   */
-@js.native
-trait ASPxClientReportDesignerCustomizeOpenDialogEventArgs extends ASPxClientEventArgs {
+trait ASPxClientReportDesignerCustomizeOpenDialogEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Customizes the Open Report dialog based on the specified template and model.
     * @param template A string that specifies the name of an HTML template for the dialog.
     * @param model A model of the Open Report dialog.
     */
-  def Customize(template: String, model: ASPxDesignerDialogModel): Unit = js.native
+  def Customize(template: String, model: ASPxDesignerDialogModel): Unit
   
   /**
     * Provides access to the Open Report dialog.
     */
-  var Popup: ASPxDesignerOpenDialog = js.native
+  var Popup: ASPxDesignerOpenDialog
 }
 object ASPxClientReportDesignerCustomizeOpenDialogEventArgs {
   

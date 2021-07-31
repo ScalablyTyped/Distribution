@@ -6,43 +6,43 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRoleassignmentsList extends StandardParameters {
+trait ParamsResourceRoleassignmentsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Immutable ID of the G Suite account.
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Token to specify the next page in the list.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable ID of a role. If included in the request, returns only role
     * assignments containing this role ID.
     */
-  var roleId: js.UndefOr[String] = js.native
+  var roleId: js.UndefOr[String] = js.undefined
   
   /**
     * The user's primary email address, alias email address, or unique user ID.
     * If included in the request, returns role assignments only for this user.
     */
-  var userKey: js.UndefOr[String] = js.native
+  var userKey: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceRoleassignmentsList {
   

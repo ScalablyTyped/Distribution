@@ -2,15 +2,13 @@ package typings.winrt.Windows.Networking.BackgroundTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTransferContentPartFactory extends StObject {
   
-  def createWithName(name: String): BackgroundTransferContentPart = js.native
+  def createWithName(name: String): BackgroundTransferContentPart
   
-  def createWithNameAndFileName(name: String, fileName: String): BackgroundTransferContentPart = js.native
+  def createWithNameAndFileName(name: String, fileName: String): BackgroundTransferContentPart
 }
 object IBackgroundTransferContentPartFactory {
   

@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events when the active spreadsheet changes. */
-@js.native
-trait XActivationEventListener extends XEventListener {
+trait XActivationEventListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called whenever data or a selection changed.
@@ -22,7 +22,7 @@ trait XActivationEventListener extends XEventListener {
     * @see XSpreadsheetViewEventProvider
     * @since OOo 2.0
     */
-  def activeSpreadsheetChanged(aEvent: ActivationEvent): Unit = js.native
+  def activeSpreadsheetChanged(aEvent: ActivationEvent): Unit
 }
 object XActivationEventListener {
   

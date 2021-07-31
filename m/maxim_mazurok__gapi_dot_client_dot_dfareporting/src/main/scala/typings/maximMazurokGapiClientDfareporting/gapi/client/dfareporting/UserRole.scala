@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserRole extends StObject {
   
   /** Account ID of this user role. This is a read-only field that can be left blank. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this is a default user role. Default user roles are created by the system for the account/subaccount and cannot be modified or deleted. Each default user role comes with a
     * basic set of preassigned permissions.
     */
-  var defaultUserRole: js.UndefOr[Boolean] = js.native
+  var defaultUserRole: js.UndefOr[Boolean] = js.undefined
   
   /** ID of this user role. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#userRole". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this user role. This is a required field. Must be less than 256 characters long. If this user role is under a subaccount, the name must be unique among sites of the same
     * subaccount. Otherwise, this user role is a top-level user role, and the name must be unique among top-level user roles of the same account.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** ID of the user role that this user role is based on or copied from. This is a required field. */
-  var parentUserRoleId: js.UndefOr[String] = js.native
+  var parentUserRoleId: js.UndefOr[String] = js.undefined
   
   /** List of permissions associated with this user role. */
-  var permissions: js.UndefOr[js.Array[UserRolePermission]] = js.native
+  var permissions: js.UndefOr[js.Array[UserRolePermission]] = js.undefined
   
   /** Subaccount ID of this user role. This is a read-only field that can be left blank. */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object UserRole {
   

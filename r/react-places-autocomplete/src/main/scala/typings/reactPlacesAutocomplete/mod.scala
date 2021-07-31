@@ -11,56 +11,55 @@ import typings.reactPlacesAutocomplete.anon.MainText
 import typings.reactPlacesAutocomplete.anon.Readonlyloadingbooleansug
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-places-autocomplete", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-places-autocomplete", JSImport.Default)
   @js.native
   class default ()
     extends Component[PropTypes, js.Object, js.Any]
   
-  @JSImport("react-places-autocomplete", "geocodeByAddress")
-  @js.native
-  def geocodeByAddress(address: String): js.Promise[js.Array[GeocoderResult]] = js.native
+  @scala.inline
+  def geocodeByAddress(address: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
   
-  @JSImport("react-places-autocomplete", "geocodeByPlaceId")
-  @js.native
-  def geocodeByPlaceId(placeId: String): js.Promise[js.Array[GeocoderResult]] = js.native
+  @scala.inline
+  def geocodeByPlaceId(placeId: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByPlaceId")(placeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
   
-  @JSImport("react-places-autocomplete", "getLatLng")
-  @js.native
-  def getLatLng(results: GeocoderResult): js.Promise[LatLngLiteral] = js.native
+  @scala.inline
+  def getLatLng(results: GeocoderResult): js.Promise[LatLngLiteral] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatLng")(results.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LatLngLiteral]]
   
   type AutocompletePrediction = typings.googlemaps.google.maps.places.AutocompletePrediction
   
   type PlacesAutocomplete = Component[PropTypes, js.Object, js.Any]
   
-  @js.native
   trait PropTypes extends StObject {
     
-    def children(opts: Readonlyloadingbooleansug): ReactNode = js.native
+    def children(opts: Readonlyloadingbooleansug): ReactNode
     
-    var debounce: js.UndefOr[Double] = js.native
+    var debounce: js.UndefOr[Double] = js.undefined
     
-    var googleCallbackName: js.UndefOr[String] = js.native
+    var googleCallbackName: js.UndefOr[String] = js.undefined
     
-    var highlightFirstSuggestion: js.UndefOr[Boolean] = js.native
+    var highlightFirstSuggestion: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     var onError: js.UndefOr[
         js.Function2[/* status */ String, /* clearSuggestion */ js.Function0[Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* address */ String, /* placeID */ String, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* address */ String, /* placeID */ String, Unit]] = js.undefined
     
-    var searchOptions: js.UndefOr[Bounds] = js.native
+    var searchOptions: js.UndefOr[Bounds] = js.undefined
     
-    var shouldFetchSuggestions: js.UndefOr[Boolean] = js.native
+    var shouldFetchSuggestions: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PropTypes {
     
@@ -132,26 +131,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Suggestion extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var description: String = js.native
+    var description: String
     
-    var formattedSuggestion: MainText = js.native
+    var formattedSuggestion: MainText
     
-    var id: String = js.native
+    var id: String
     
-    var index: Double = js.native
+    var index: Double
     
-    var matchedSubstrings: js.Array[PredictionSubstring] = js.native
+    var matchedSubstrings: js.Array[PredictionSubstring]
     
-    var placeId: String = js.native
+    var placeId: String
     
-    var terms: js.Array[PredictionTerm] = js.native
+    var terms: js.Array[PredictionTerm]
     
-    var types: js.Array[String] = js.native
+    var types: js.Array[String]
   }
   object Suggestion {
     

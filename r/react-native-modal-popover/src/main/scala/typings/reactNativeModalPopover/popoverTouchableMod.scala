@@ -5,7 +5,6 @@ import typings.reactNativeModalPopover.anon.OnPopoverDisplayed
 import typings.reactNativeModalPopover.popoverGeometryMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverTouchableMod {
@@ -48,10 +47,9 @@ object popoverTouchableMod {
     def propTypes_=(x: OnPopoverDisplayed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var onPopoverDisplayed: js.UndefOr[js.Function0[_]] = js.native
+    var onPopoverDisplayed: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object Props {
     
@@ -65,19 +63,18 @@ object popoverTouchableMod {
     implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnPopoverDisplayed(value: () => _): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
+      def setOnPopoverDisplayed(value: () => js.Any): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnPopoverDisplayedUndefined: Self = StObject.set(x, "onPopoverDisplayed", js.undefined)
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var popoverAnchor: Rect = js.native
+    var popoverAnchor: Rect
     
-    var showPopover: Boolean = js.native
+    var showPopover: Boolean
   }
   object State {
     

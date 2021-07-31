@@ -5,13 +5,11 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayArray extends StObject {
   
-  var array: js.Array[ObjectIdentifierParam | HexParam | NameParam] = js.native
+  var array: js.Array[ObjectIdentifierParam | HexParam | NameParam]
 }
 object ArrayArray {
   

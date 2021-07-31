@@ -7,14 +7,15 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2MediaResponseMediaType
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsImage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseMediaMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/media", "MediaObject")
   @js.native
-  class MediaObject protected () extends GoogleActionsV2MediaObject {
+  class MediaObject protected ()
+    extends StObject
+       with GoogleActionsV2MediaObject {
     def this(options: String) = this()
     /**
       * @param options MediaObject options or just a string for the url
@@ -26,8 +27,9 @@ object responseMediaMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/media", "MediaResponse")
   @js.native
   class MediaResponse protected ()
-    extends _RichResponseItem
-       with GoogleActionsV2MediaResponse {
+    extends StObject
+       with GoogleActionsV2MediaResponse
+       with _RichResponseItem {
     /**
       * @param objects MediaObjects
       * @public
@@ -45,35 +47,34 @@ object responseMediaMod {
     def this(options: MediaResponseOptions) = this()
   }
   
-  @js.native
   trait MediaObjectOptions extends StObject {
     
     /** @public */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Icon image.
       * @public
       */
-    var icon: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+    var icon: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /**
       * Large image.
       * @public
       */
-    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /**
       * Name of the MediaObject.
       * @public
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * MediaObject URL.
       * @public
       */
-    var url: String = js.native
+    var url: String
   }
   object MediaObjectOptions {
     
@@ -117,21 +118,20 @@ object responseMediaMod {
   
   type MediaObjectString = GoogleActionsV2MediaObject | String
   
-  @js.native
   trait MediaResponseOptions extends StObject {
     
     /**
       * Array of MediaObject held in the MediaResponse.
       * @public
       */
-    var objects: js.Array[MediaObjectString] = js.native
+    var objects: js.Array[MediaObjectString]
     
     /**
       * Type of the media within this MediaResponse.
       * Defaults to 'AUDIO'
       * @public
       */
-    var `type`: js.UndefOr[GoogleActionsV2MediaResponseMediaType] = js.native
+    var `type`: js.UndefOr[GoogleActionsV2MediaResponseMediaType] = js.undefined
   }
   object MediaResponseOptions {
     

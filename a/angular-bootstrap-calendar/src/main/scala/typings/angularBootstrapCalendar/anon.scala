@@ -3,17 +3,15 @@ package typings.angularBootstrapCalendar
 import typings.angularBootstrapCalendar.mod.bootstrap.calendar.IFormats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Angular extends StObject {
     
-    var angular: IFormats = js.native
+    var angular: IFormats
     
-    var moment: IFormats = js.native
+    var moment: IFormats
   }
   object Angular {
     
@@ -34,24 +32,23 @@ object anon {
     }
   }
   
-  @js.native
   trait CalendarDayView extends StObject {
     
-    var calendarDayView: String = js.native
+    var calendarDayView: String
     
-    var calendarHourList: String = js.native
+    var calendarHourList: String
     
-    var calendarMonthCell: String = js.native
+    var calendarMonthCell: String
     
-    var calendarMonthCellEvents: String = js.native
+    var calendarMonthCellEvents: String
     
-    var calendarMonthView: String = js.native
+    var calendarMonthView: String
     
-    var calendarSlideBox: String = js.native
+    var calendarSlideBox: String
     
-    var calendarWeekView: String = js.native
+    var calendarWeekView: String
     
-    var calendarYearView: String = js.native
+    var calendarYearView: String
   }
   object CalendarDayView {
     
@@ -99,10 +96,9 @@ object anon {
     }
   }
   
-  @js.native
   trait WeekNumber extends StObject {
     
-    var weekNumber: String = js.native
+    var weekNumber: String
   }
   object WeekNumber {
     

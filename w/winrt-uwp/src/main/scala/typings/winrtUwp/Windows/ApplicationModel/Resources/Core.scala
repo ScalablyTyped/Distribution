@@ -27,7 +27,6 @@ import typings.winrtUwp.anon.SecondIMapView
 import typings.winrtUwp.winrtUwpStrings.mapchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes that enable advanced resource loading. */
@@ -42,11 +41,15 @@ object Core {
     
     /** The override value persists on the local machine. */
     @js.native
-    sealed trait localMachine extends ResourceQualifierPersistence
+    sealed trait localMachine
+      extends StObject
+         with ResourceQualifierPersistence
     
     /** The override value is not persistent. */
     @js.native
-    sealed trait none extends ResourceQualifierPersistence
+    sealed trait none
+      extends StObject
+         with ResourceQualifierPersistence
   }
   
   /** Represents a single logical, named resource, such as a string resource named 'Header1'. */
@@ -85,7 +88,6 @@ object Core {
   }
   
   /** Represents a single possible value for a given NamedResource , the qualifiers associated with that resource, and how well those qualifiers match the context against which it was resolved. */
-  @js.native
   trait ResourceCandidate extends StObject {
     
     /**
@@ -93,34 +95,34 @@ object Core {
       * @param qualifierName The name of the qualifier.
       * @return The value of the qualifier.
       */
-    def getQualifierValue(qualifierName: String): String = js.native
+    def getQualifierValue(qualifierName: String): String
     
     /**
       * Asynchronously returns a StorageFile that accesses the value of this ResourceCandidate . This only works on certain types of ResourceCandidates that are files.
       * @return An asynchronous operation to return the requested StorageFile .
       */
-    def getValueAsFileAsync(): IPromiseWithIAsyncOperation[StorageFile] = js.native
+    def getValueAsFileAsync(): IPromiseWithIAsyncOperation[StorageFile]
     
     /**
       * Asynchronously returns an IRandomAccessStream that accesses the value of this ResourceCandidate .
       * @return An asynchronous operation to return the requested IRandomAccessStream .
       */
-    def getValueAsStreamAsync(): IPromiseWithIAsyncOperation[IRandomAccessStream] = js.native
+    def getValueAsStreamAsync(): IPromiseWithIAsyncOperation[IRandomAccessStream]
     
     /** Indicates whether this ResourceCandidate can be used as a default fallback value for any context. */
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
     /** Indicates whether this ResourceCandidate matched the ResourceContext against which it was evaluated. */
-    var isMatch: Boolean = js.native
+    var isMatch: Boolean
     
     /** Indicates whether this ResourceCandidate matched the ResourceContext against which it was evaluated as a result of being a true match, a default fallback value, or a mixed match with default fallback (that is, a match in relation to some qualifiers but using default fallback values for other qualifiers). */
-    var isMatchAsDefault: Boolean = js.native
+    var isMatchAsDefault: Boolean
     
     /** Gets the qualifiers associated with this ResourceCandidate . */
-    var qualifiers: IVectorView[ResourceQualifier] = js.native
+    var qualifiers: IVectorView[ResourceQualifier]
     
     /** Gets the value of this ResourceCandidate , expressed as a string. */
-    var valueAsString: String = js.native
+    var valueAsString: String
   }
   object ResourceCandidate {
     
@@ -170,7 +172,9 @@ object Core {
   
   /** Represents a collection of ResourceCandidate objects. */
   @js.native
-  trait ResourceCandidateVectorView extends Array[ResourceCandidate] {
+  trait ResourceCandidateVectorView
+    extends StObject
+       with Array[ResourceCandidate] {
     
     /**
       * Returns an iterator to enumerate the items in the set of ResourceCandidate objects.
@@ -227,7 +231,9 @@ object Core {
   
   /** Represents a collection of ResourceContext language qualifiers. */
   @js.native
-  trait ResourceContextLanguagesVectorView extends Array[String] {
+  trait ResourceContextLanguagesVectorView
+    extends StObject
+       with Array[String] {
     
     /**
       * Returns an iterator to enumerate the items in the set of ResourceContext language qualifiers.
@@ -258,23 +264,22 @@ object Core {
   }
   
   /** Structure that determines version and counts of resources returned for the app package. */
-  @js.native
   trait ResourceLayoutInfo extends StObject {
     
     /** Framework-generated checksum. */
-    var checksum: Double = js.native
+    var checksum: Double
     
     /** Major version of resources to be returned. */
-    var majorVersion: Double = js.native
+    var majorVersion: Double
     
     /** Minor version of resources to be returned. */
-    var minorVersion: Double = js.native
+    var minorVersion: Double
     
     /** Number of named resources to be returned. */
-    var namedResourceCount: Double = js.native
+    var namedResourceCount: Double
     
     /** Number of resource subtrees to be returned. */
-    var resourceSubtreeCount: Double = js.native
+    var resourceSubtreeCount: Double
   }
   object ResourceLayoutInfo {
     
@@ -311,14 +316,13 @@ object Core {
   }
   
   /** Provides access to application resource maps and more advanced resource functionality. */
-  @js.native
   trait ResourceManager extends StObject {
     
     /** Gets a map of ResourceMap objects typically associated with the app packages, indexed by package name. */
-    var allResourceMaps: IMapView[String, ResourceMap] = js.native
+    var allResourceMaps: IMapView[String, ResourceMap]
     
     /** Gets the default ResourceContext for the currently running application. Unless explicitly overridden, the default ResourceContext is used to determine the most appropriate representation of any given named resource. */
-    var defaultContext: ResourceContext = js.native
+    var defaultContext: ResourceContext
     
     /**
       * Gets a list of all named resources for an app package.
@@ -326,7 +330,7 @@ object Core {
       * @param resourceLayoutInfo Specifies the resource version and the named resource count.
       * @return A list of NamedResource objects.
       */
-    def getAllNamedResourcesForPackage(packageName: String, resourceLayoutInfo: ResourceLayoutInfo): IVectorView[NamedResource] = js.native
+    def getAllNamedResourcesForPackage(packageName: String, resourceLayoutInfo: ResourceLayoutInfo): IVectorView[NamedResource]
     
     /**
       * Gets a list of all collections of resource subtrees for an app package.
@@ -334,22 +338,22 @@ object Core {
       * @param resourceLayoutInfo Specifies the resource version and the resource subtree count.
       * @return A list of resource subtrees ( ResourceMap objects).
       */
-    def getAllSubtreesForPackage(packageName: String, resourceLayoutInfo: ResourceLayoutInfo): IVectorView[ResourceMap] = js.native
+    def getAllSubtreesForPackage(packageName: String, resourceLayoutInfo: ResourceLayoutInfo): IVectorView[ResourceMap]
     
     /**
       * Loads one or more PRI files and adds their contents to the default resource manager.
       * @param files The files you want to add.
       */
-    def loadPriFiles(files: IIterable[IStorageFile]): Unit = js.native
+    def loadPriFiles(files: IIterable[IStorageFile]): Unit
     
     /** Gets the ResourceMap that is associated with the main package of the currently running application. */
-    var mainResourceMap: ResourceMap = js.native
+    var mainResourceMap: ResourceMap
     
     /**
       * Unloads one or more PRI files.
       * @param files The files you want unloaded.
       */
-    def unloadPriFiles(files: IIterable[IStorageFile]): Unit = js.native
+    def unloadPriFiles(files: IIterable[IStorageFile]): Unit
   }
   object ResourceManager {
     
@@ -401,7 +405,7 @@ object Core {
       * Returns an iterator to enumerate the items in the map.
       * @return The iterator. The current position of the iterator is index 0, or the end of the set if the map is empty.
       */
-    def first(): IIterator[IKeyValuePair[_, _]] = js.native
+    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
     
     /**
       * Returns a ResourceMap that represents a subtree of another ResourceMap, typically used to access a particular resource file within an app package.
@@ -451,25 +455,24 @@ object Core {
   }
   
   /** Supports iteration over a ResourceMap . */
-  @js.native
   trait ResourceMapIterator extends StObject {
     
     /** Gets the current item in the ResourceMap . */
-    var current: IKeyValuePair[String, NamedResource] = js.native
+    var current: IKeyValuePair[String, NamedResource]
     
     /**
       * Returns all the items in the ResourceMap .
       */
-    def getMany(): ItemsIKeyValuePair = js.native
+    def getMany(): ItemsIKeyValuePair
     
     /** Gets a value that indicates whether there is a current item, or whether the iterator is at the end of the ResourceMap . */
-    var hasCurrent: Boolean = js.native
+    var hasCurrent: Boolean
     
     /**
       * Moves the iterator forward to the next item and returns HasCurrent .
       * @return TRUE if the iterator refers to a valid item that is in the map, and otherwise FALSE.
       */
-    def moveNext(): Boolean = js.native
+    def moveNext(): Boolean
   }
   object ResourceMapIterator {
     
@@ -502,42 +505,41 @@ object Core {
   }
   
   /** An unchangeable view into a map of ResourceMap objects. */
-  @js.native
   trait ResourceMapMapView extends StObject {
     
     /**
       * Returns an iterator to enumerate the items in the map view.
       * @return The iterator. The current position of the iterator is index 0, or the end of the map if the map is empty.
       */
-    def first(): IIterator[IKeyValuePair[_, _]] = js.native
+    def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
     
     /**
       * Determines whether the map view contains the specified key.
       * @param key The key to locate in the map view.
       * @return TRUE if the key is found, otherwise FALSE if it is not found.
       */
-    def hasKey(key: String): Boolean = js.native
+    def hasKey(key: String): Boolean
     
     /**
       * Returns the ResourceMap at the specified key in the map view.
       * @param key The key to locate in the map view.
       * @return The ResourceMap associated with the specified key.
       */
-    def lookup(key: String): ResourceMap = js.native
+    def lookup(key: String): ResourceMap
     
     /** Gets the number of ResourceMap objects in the map. */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Splits the map view into two views.
       */
-    def split(): FirstIMapView = js.native
+    def split(): FirstIMapView
   }
   object ResourceMapMapView {
     
     @scala.inline
     def apply(
-      first: () => IIterator[IKeyValuePair[_, _]],
+      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: String => Boolean,
       lookup: String => ResourceMap,
       size: Double,
@@ -551,7 +553,7 @@ object Core {
     implicit class ResourceMapMapViewMutableBuilder[Self <: ResourceMapMapView] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
       @scala.inline
       def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
@@ -568,25 +570,24 @@ object Core {
   }
   
   /** Supports iteration over a ResourceMapMapView object. */
-  @js.native
   trait ResourceMapMapViewIterator extends StObject {
     
     /** Gets the current item in the ResourceMapMapView . */
-    var current: IKeyValuePair[String, ResourceMap] = js.native
+    var current: IKeyValuePair[String, ResourceMap]
     
     /**
       * Returns all the items in the ResourceMapMapView .
       */
-    def getMany(): ItemsIKeyValuePair = js.native
+    def getMany(): ItemsIKeyValuePair
     
     /** Gets a value that indicates whether there is a current item, or whether the iterator is at the end of the ResourceMapMapView . */
-    var hasCurrent: Boolean = js.native
+    var hasCurrent: Boolean
     
     /**
       * Moves the iterator forward to the next item and returns HasCurrent .
       * @return TRUE if the iterator refers to a valid item that is in the map view, and otherwise FALSE.
       */
-    def moveNext(): Boolean = js.native
+    def moveNext(): Boolean
   }
   object ResourceMapMapViewIterator {
     
@@ -619,23 +620,22 @@ object Core {
   }
   
   /** Defines the qualifiers associated with a ResourceCandidate . */
-  @js.native
   trait ResourceQualifier extends StObject {
     
     /** Indicates whether this qualifier should be considered as a default match when no match is found. */
-    var isDefault: Boolean = js.native
+    var isDefault: Boolean
     
     /** Indicates whether a given qualifier for a given candidate matched the context when a named resource is resolved to a candidate for some given context. */
-    var isMatch: Boolean = js.native
+    var isMatch: Boolean
     
     /** The name of the qualifier. */
-    var qualifierName: String = js.native
+    var qualifierName: String
     
     /** The value of the qualifier. */
-    var qualifierValue: String = js.native
+    var qualifierValue: String
     
     /** A score that indicates how well the qualifier matched the context against which it was resolved. */
-    var score: Double = js.native
+    var score: Double
   }
   object ResourceQualifier {
     
@@ -666,42 +666,41 @@ object Core {
   }
   
   /** An unchangeable view into a map of ResourceQualifier objects. */
-  @js.native
   trait ResourceQualifierMapView extends StObject {
     
     /**
       * Returns an iterator to enumerate the items in the map view.
       * @return The iterator. The current position of the iterator is index 0, or the end of the map view if the map view is empty.
       */
-    def first(): IIterator[IKeyValuePair[_, _]] = js.native
+    def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
     
     /**
       * Determines whether the map view contains the specified key.
       * @param key The key to locate in the map view.
       * @return TRUE if the key is found, otherwise FALSE if it is not found.
       */
-    def hasKey(key: String): Boolean = js.native
+    def hasKey(key: String): Boolean
     
     /**
       * Returns the qualifier name at the specified key in the map view.
       * @param key The key to locate in the map view.
       * @return The qualifier name associated with the specified key.
       */
-    def lookup(key: String): String = js.native
+    def lookup(key: String): String
     
     /** Gets the number of ResourceQualifier objects in the map. */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Splits the map view into two views.
       */
-    def split(): SecondIMapView = js.native
+    def split(): SecondIMapView
   }
   object ResourceQualifierMapView {
     
     @scala.inline
     def apply(
-      first: () => IIterator[IKeyValuePair[_, _]],
+      first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
       hasKey: String => Boolean,
       lookup: String => String,
       size: Double,
@@ -715,7 +714,7 @@ object Core {
     implicit class ResourceQualifierMapViewMutableBuilder[Self <: ResourceQualifierMapView] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
       @scala.inline
       def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
@@ -735,7 +734,7 @@ object Core {
   @js.native
   trait ResourceQualifierObservableMap extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, String]): Unit = js.native
     
@@ -746,7 +745,7 @@ object Core {
       * Returns an iterator to enumerate the items in the observable map.
       * @return The iterator. The current position of the iterator is index 0, or the end of the observable map if the observable map is empty.
       */
-    def first(): IIterator[IKeyValuePair[_, _]] = js.native
+    def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
     
     /**
       * Returns an unchangeable view of the observable map.
@@ -777,7 +776,7 @@ object Core {
     def lookup(key: String): String = js.native
     
     /** Occurs when the map changes. */
-    def onmapchanged(ev: IMapChangedEventArgs[String] with (WinRTEvent[IObservableMap[String, String]])): Unit = js.native
+    def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, String]])): Unit = js.native
     /** Occurs when the map changes. */
     @JSName("onmapchanged")
     var onmapchanged_Original: MapChangedEventHandler[String, String] = js.native
@@ -788,7 +787,7 @@ object Core {
       */
     def remove(key: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, String]): Unit = js.native
     
@@ -798,7 +797,9 @@ object Core {
   
   /** An unchangeable view into a vector of ResourceQualifier objects. */
   @js.native
-  trait ResourceQualifierVectorView extends Array[ResourceQualifier] {
+  trait ResourceQualifierVectorView
+    extends StObject
+       with Array[ResourceQualifier] {
     
     /**
       * Returns an iterator to enumerate the items in the view.

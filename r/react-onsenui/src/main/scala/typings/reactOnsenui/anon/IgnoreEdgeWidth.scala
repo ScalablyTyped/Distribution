@@ -9,25 +9,23 @@ import typings.reactOnsenui.reactOnsenuiStrings.slide
 import typings.reactOnsenui.reactOnsenuiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreEdgeWidth extends StObject {
   
-  var animation: js.UndefOr[none | slide] = js.native
+  var animation: js.UndefOr[none | slide] = js.undefined
   
-  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.native
+  var animationOptions: js.UndefOr[typings.reactOnsenui.mod.AnimationOptions] = js.undefined
   
-  var ignoreEdgeWidth: js.UndefOr[Double] = js.native
+  var ignoreEdgeWidth: js.UndefOr[Double] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var onPostChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPreChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onReactive: js.UndefOr[js.Function0[Unit]] = js.native
+  var onReactive: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onSwipe: js.UndefOr[
     js.Function2[
@@ -35,15 +33,15 @@ trait IgnoreEdgeWidth extends StObject {
       /* animationOptions */ typings.reactOnsenui.mod.AnimationOptions, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var position: js.UndefOr[bottom | top | auto] = js.native
+  var position: js.UndefOr[bottom | top | auto] = js.undefined
   
-  def renderTabs(index: Double, tabbar: Tabbar): js.Array[TabbarRenderTab] = js.native
+  def renderTabs(index: Double, tabbar: Tabbar): js.Array[TabbarRenderTab]
   
-  var swipeable: js.UndefOr[Boolean] = js.native
+  var swipeable: js.UndefOr[Boolean] = js.undefined
   
-  var tabBorder: js.UndefOr[Boolean] = js.native
+  var tabBorder: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoreEdgeWidth {
   

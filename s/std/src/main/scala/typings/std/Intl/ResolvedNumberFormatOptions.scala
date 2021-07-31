@@ -2,43 +2,41 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedNumberFormatOptions extends StObject {
   
-  var compactDisplay: js.UndefOr[String] = js.native
+  var compactDisplay: js.UndefOr[String] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var currencyDisplay: js.UndefOr[String] = js.native
+  var currencyDisplay: js.UndefOr[String] = js.undefined
   
-  var locale: String = js.native
+  var locale: String
   
-  var maximumFractionDigits: Double = js.native
+  var maximumFractionDigits: Double
   
-  var maximumSignificantDigits: js.UndefOr[Double] = js.native
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumFractionDigits: Double = js.native
+  var minimumFractionDigits: Double
   
-  var minimumIntegerDigits: Double = js.native
+  var minimumIntegerDigits: Double
   
-  var minimumSignificantDigits: js.UndefOr[Double] = js.native
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var notation: js.UndefOr[String] = js.native
+  var notation: js.UndefOr[String] = js.undefined
   
-  var numberingSystem: String = js.native
+  var numberingSystem: String
   
-  var signDisplay: js.UndefOr[String] = js.native
+  var signDisplay: js.UndefOr[String] = js.undefined
   
-  var style: String = js.native
+  var style: String
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: js.UndefOr[String] = js.native
+  var unitDisplay: js.UndefOr[String] = js.undefined
   
-  var useGrouping: Boolean = js.native
+  var useGrouping: Boolean
 }
 object ResolvedNumberFormatOptions {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedDriveInfo extends StObject {
   
   /** List of Shared drive IDs, as provided by Drive API. */
-  var sharedDriveIds: js.UndefOr[js.Array[String]] = js.native
+  var sharedDriveIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SharedDriveInfo {
   

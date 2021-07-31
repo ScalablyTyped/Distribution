@@ -7,17 +7,20 @@ import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object priorityQueueMod {
   
   @JSImport("p-queue/dist/priority-queue", JSImport.Default)
   @js.native
-  class default () extends PriorityQueue
+  class default ()
+    extends StObject
+       with PriorityQueue
   
   @js.native
-  trait PriorityQueue extends Queue[RunFunction, PriorityQueueOptions] {
+  trait PriorityQueue
+    extends StObject
+       with Queue[RunFunction, PriorityQueueOptions] {
     
     val _queue: js.Any = js.native
     
@@ -29,10 +32,11 @@ object priorityQueueMod {
     def size_MPriorityQueue: Double = js.native
   }
   
-  @js.native
-  trait PriorityQueueOptions extends QueueAddOptions {
+  trait PriorityQueueOptions
+    extends StObject
+       with QueueAddOptions {
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object PriorityQueueOptions {
     

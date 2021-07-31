@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManifestFileLocation extends StObject {
   
   /**
     * Amazon S3 bucket.
     */
-  var Bucket: S3Bucket = js.native
+  var Bucket: S3Bucket
   
   /**
     * Amazon S3 key that identifies an object.
     */
-  var Key: S3Key = js.native
+  var Key: S3Key
 }
 object ManifestFileLocation {
   

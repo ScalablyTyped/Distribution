@@ -2,17 +2,15 @@ package typings.rnFetchBlob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Count extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
   }
   object Count {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Decode extends StObject {
     
-    def decode(input: String): String = js.native
+    def decode(input: String): String
     
-    def encode(input: String): String = js.native
+    def encode(input: String): String
   }
   object Decode {
     
@@ -65,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Free extends StObject {
     
-    var free: Double = js.native
+    var free: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Free {
     

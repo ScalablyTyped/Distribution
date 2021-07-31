@@ -14,14 +14,16 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object speedDialSpeedDialMod {
   
-  @JSImport("@material-ui/lab/SpeedDial/SpeedDial", JSImport.Default)
+  @JSImport("@material-ui/lab/SpeedDial/SpeedDial", JSImport.Namespace)
   @js.native
-  def default(props: SpeedDialProps): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: SpeedDialProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.toggle
@@ -102,15 +104,15 @@ object speedDialSpeedDialMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, 'classes' | 'children'>> : never */ @js.native
-  trait SpeedDialProps
-    extends StyledComponentProps[SpeedDialClassKey]
+  - Dropped react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionHandlerProps * / any>, 'classes' | 'children'>> : never */ trait SpeedDialProps
+    extends StObject
+       with StyledComponentProps[SpeedDialClassKey]
        with ClassName {
     
     /**
       * Props applied to the [`Fab`](/api/fab/) element.
       */
-    var FabProps: js.UndefOr[PartialFabProps] = js.native
+    var FabProps: js.UndefOr[PartialFabProps] = js.undefined
     
     /**
       * The component used for the transition.
@@ -118,43 +120,43 @@ object speedDialSpeedDialMod {
       */
     var TransitionComponent: js.UndefOr[
         ComponentType[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Props applied to the [`Transition`](http://reactcommunity.org/react-transition-group/transition#Transition-props) element.
       */
     var TransitionProps: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The aria-label of the button element.
       * Also used to provide the `id` for the `SpeedDial` element and its children.
       */
-    var ariaLabel: String = js.native
+    var ariaLabel: String
     
     /**
       * SpeedDialActions to display when the SpeedDial is `open`.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The direction the actions open relative to the floating action button.
       */
-    var direction: js.UndefOr[up | down | left | right] = js.native
+    var direction: js.UndefOr[up | down | left | right] = js.undefined
     
     /**
       * If `true`, the SpeedDial will be hidden.
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The icon to display in the SpeedDial Fab. The `SpeedDialIcon` component
       * provides a default Icon with animation.
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Callback fired when the component requests to be closed.
@@ -164,7 +166,7 @@ object speedDialSpeedDialMod {
       */
     var onClose: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* reason */ CloseReason, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback fired when the component requests to be open.
@@ -174,17 +176,17 @@ object speedDialSpeedDialMod {
       */
     var onOpen: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[js.Object, Event], /* reason */ OpenReason, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If `true`, the SpeedDial is open.
       */
-    var open: Boolean = js.native
+    var open: Boolean
     
     /**
       * The icon to display in the SpeedDial Fab when the SpeedDial is open.
       */
-    var openIcon: js.UndefOr[ReactNode] = js.native
+    var openIcon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The duration for the transition, in milliseconds.
@@ -192,7 +194,7 @@ object speedDialSpeedDialMod {
       */
     var transitionDuration: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps * / any['timeout'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SpeedDialProps {
     
@@ -262,7 +264,7 @@ object speedDialSpeedDialMod {
       @scala.inline
       def setTransitionComponent(
         value: ComponentType[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionProps */ js.Any
             ]
       ): Self = StObject.set(x, "TransitionComponent", value.asInstanceOf[js.Any])
       

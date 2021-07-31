@@ -2,41 +2,39 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSchemaRequest extends StObject {
   
   /**
     * The source of the schema definition.
     */
-  var Content: stringMin1Max100000 = js.native
+  var Content: stringMin1Max100000
   
   /**
     * A description of the schema.
     */
-  var Description: js.UndefOr[stringMin0Max256] = js.native
+  var Description: js.UndefOr[stringMin0Max256] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: string = js.native
+  var RegistryName: string
   
   /**
     * The name of the schema.
     */
-  var SchemaName: string = js.native
+  var SchemaName: string
   
   /**
     * Tags associated with the schema.
     */
-  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.undefined
   
   /**
     * The type of schema.
     */
-  var Type: typings.awsSdk.schemasMod.Type = js.native
+  var Type: typings.awsSdk.schemasMod.Type
 }
 object CreateSchemaRequest {
   

@@ -4,7 +4,6 @@ import typings.typedoc.componentsMod.ConverterComponent
 import typings.typedoc.converterConverterMod.Converter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gitHubPluginMod {
@@ -52,8 +51,11 @@ object gitHubPluginMod {
   /* static members */
   object Repository {
     
-    @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "Repository.tryCreateRepository")
+    @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "Repository")
     @js.native
-    def tryCreateRepository(path: String, gitRevision: String, gitRemote: String): js.UndefOr[Repository] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def tryCreateRepository(path: String, gitRevision: String, gitRemote: String): js.UndefOr[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateRepository")(path.asInstanceOf[js.Any], gitRevision.asInstanceOf[js.Any], gitRemote.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Repository]]
   }
 }

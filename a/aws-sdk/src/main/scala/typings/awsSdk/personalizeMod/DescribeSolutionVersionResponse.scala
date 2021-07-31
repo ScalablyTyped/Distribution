@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSolutionVersionResponse extends StObject {
   
   /**
     * The solution version.
     */
-  var solutionVersion: js.UndefOr[SolutionVersion] = js.native
+  var solutionVersion: js.UndefOr[SolutionVersion] = js.undefined
 }
 object DescribeSolutionVersionResponse {
   

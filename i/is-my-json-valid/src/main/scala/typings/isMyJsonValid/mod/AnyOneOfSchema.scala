@@ -2,13 +2,13 @@ package typings.isMyJsonValid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnyOneOfSchema extends _AnySchema {
+trait AnyOneOfSchema
+  extends StObject
+     with _AnySchema {
   
-  var oneOf: js.Array[AnySchema] = js.native
+  var oneOf: js.Array[AnySchema]
 }
 object AnyOneOfSchema {
   

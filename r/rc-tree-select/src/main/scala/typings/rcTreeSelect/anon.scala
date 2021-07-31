@@ -7,17 +7,15 @@ import typings.rcTreeSelect.interfaceMod.SimpleModeConfig
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FilterOption extends StObject {
     
-    var filterOption: Boolean | FilterFunc[LegacyDataNode] = js.native
+    var filterOption: Boolean | FilterFunc[LegacyDataNode]
     
-    var optionFilterProp: String = js.native
+    var optionFilterProp: String
   }
   object FilterOption {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait GetLabelProp extends StObject {
     
-    def getLabelProp(node: DataNode): ReactNode = js.native
+    def getLabelProp(node: DataNode): ReactNode
     
-    var simpleMode: Boolean | SimpleModeConfig = js.native
+    var simpleMode: Boolean | SimpleModeConfig
   }
   object GetLabelProp {
     
@@ -67,10 +64,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Selected extends StObject {
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object Selected {
     

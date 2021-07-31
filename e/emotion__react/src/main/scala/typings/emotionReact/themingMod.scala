@@ -11,34 +11,35 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themingMod {
+  
+  @JSImport("@emotion/react/types/theming", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@emotion/react/types/theming", "ThemeProvider")
   @js.native
   val ThemeProvider: typings.emotionReact.themingMod.ThemeProvider = js.native
   type ThemeProvider = js.Function1[/* props */ ThemeProviderProps, ReactElement]
   
-  @JSImport("@emotion/react/types/theming", "useTheme")
-  @js.native
-  def useTheme(): Theme = js.native
+  @scala.inline
+  def useTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Theme]
   
   @JSImport("@emotion/react/types/theming", "withTheme")
   @js.native
   val withTheme: typings.emotionReact.themingMod.withTheme = js.native
   type withTheme = js.Function1[
     /* component */ js.Any, 
-    FC[(DistributiveOmit[PropsOf[_], theme]) with typings.emotionReact.anon.Theme]
+    FC[(DistributiveOmit[PropsOf[js.Any], theme]) & typings.emotionReact.anon.Theme]
   ]
   
-  @js.native
   trait ThemeProviderProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var theme: js.Object | (js.Function1[/* outerTheme */ Theme, Theme]) = js.native
+    var theme: js.Object | (js.Function1[/* outerTheme */ Theme, Theme])
   }
   object ThemeProviderProps {
     
@@ -65,5 +66,5 @@ object themingMod {
     }
   }
   
-  type WithTheme_[P, T] = (P with ThemeT[T]) | (P with ThemeExclude)
+  type WithTheme_[P, T] = (P & ThemeT[T]) | (P & ThemeExclude)
 }

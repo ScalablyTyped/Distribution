@@ -2,17 +2,15 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptParams extends StObject {
   
   /** A timestamp that marks the most recent request for a refresh of data. */
-  var lastRefresh: String = js.native
+  var lastRefresh: String
   
   /** If true, the getData() request is for automatic semantic type detection. */
-  var sampleExtraction: js.UndefOr[Boolean] = js.native
+  var sampleExtraction: js.UndefOr[Boolean] = js.undefined
 }
 object ScriptParams {
   

@@ -2,17 +2,15 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollisionFilter extends StObject {
   
-  var category: js.UndefOr[Double] = js.native
+  var category: js.UndefOr[Double] = js.undefined
   
-  var group: js.UndefOr[Double] = js.native
+  var group: js.UndefOr[Double] = js.undefined
   
-  var mask: js.UndefOr[Double] = js.native
+  var mask: js.UndefOr[Double] = js.undefined
 }
 object ICollisionFilter {
   

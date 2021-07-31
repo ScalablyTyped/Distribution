@@ -2,93 +2,85 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵNgModuleDef[T] extends StObject {
   
   /** List of components to bootstrap. */
-  var bootstrap: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]] = js.native
+  var bootstrap: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
   
   /** List of components, directives, and pipes declared by this module. */
-  var declarations: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]] = js.native
+  var declarations: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
   
   /**
     * List of modules, `ModuleWithProviders`, components, directives, or pipes exported by this
     * module.
     */
-  var exports: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]] = js.native
+  var exports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
   
   /** Unique ID for the module with which it should be registered.  */
-  var id: String | Null = js.native
+  var id: String | Null
   
   /** List of modules or `ModuleWithProviders` imported by this module. */
-  var imports: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]] = js.native
+  var imports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
   
   /** The set of schemas that declare elements to be allowed in the NgModule. */
-  var schemas: js.Array[SchemaMetadata] | Null = js.native
+  var schemas: js.Array[SchemaMetadata] | Null
   
   /**
     * Cached value of computed `transitiveCompileScopes` for this module.
     *
     * This should never be read directly, but accessed via `transitiveScopesFor`.
     */
-  var transitiveCompileScopes: ɵNgModuleTransitiveScopes | Null = js.native
+  var transitiveCompileScopes: ɵNgModuleTransitiveScopes | Null
   
   /** Token representing the module. Used by DI. */
-  var `type`: T = js.native
+  var `type`: T
 }
 object ɵNgModuleDef {
   
   @scala.inline
   def apply[T](
-    bootstrap: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]],
-    declarations: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]],
-    exports: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]],
-    imports: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]],
+    bootstrap: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
+    declarations: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
+    exports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
+    imports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
     `type`: T
   ): ɵNgModuleDef[T] = {
-    val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], id = null, schemas = null, transitiveCompileScopes = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵNgModuleDef[T]]
   }
   
   @scala.inline
-  implicit class ɵNgModuleDefMutableBuilder[Self <: ɵNgModuleDef[_], T] (val x: Self with ɵNgModuleDef[T]) extends AnyVal {
+  implicit class ɵNgModuleDefMutableBuilder[Self <: ɵNgModuleDef[?], T] (val x: Self & ɵNgModuleDef[T]) extends AnyVal {
     
     @scala.inline
-    def setBootstrap(
-      value: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]]
-    ): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
+    def setBootstrap(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapFunction0(value: () => js.Array[typings.angularCore.mod.Type[_]]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
+    def setBootstrapFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBootstrapVarargs(value: typings.angularCore.mod.Type[js.Any]*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
+    def setBootstrapVarargs(value: Type[js.Any]*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
     
     @scala.inline
-    def setDeclarations(
-      value: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]]
-    ): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    def setDeclarations(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclarationsFunction0(value: () => js.Array[typings.angularCore.mod.Type[_]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
+    def setDeclarationsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeclarationsVarargs(value: typings.angularCore.mod.Type[js.Any]*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    def setDeclarationsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
     @scala.inline
-    def setExports(
-      value: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]]
-    ): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    def setExports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportsFunction0(value: () => js.Array[typings.angularCore.mod.Type[_]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
+    def setExportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExportsVarargs(value: typings.angularCore.mod.Type[js.Any]*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    def setExportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
     @scala.inline
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -97,15 +89,13 @@ object ɵNgModuleDef {
     def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setImports(
-      value: js.Array[typings.angularCore.mod.Type[_]] | js.Function0[js.Array[typings.angularCore.mod.Type[_]]]
-    ): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsFunction0(value: () => js.Array[typings.angularCore.mod.Type[_]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
+    def setImportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImportsVarargs(value: typings.angularCore.mod.Type[js.Any]*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    def setImportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
     def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])

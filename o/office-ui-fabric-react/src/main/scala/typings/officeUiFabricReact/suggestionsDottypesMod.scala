@@ -11,13 +11,14 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsDottypesMod {
   
   @js.native
-  trait ISuggestionsControlProps[T] extends ISuggestionsCoreProps[T] {
+  trait ISuggestionsControlProps[T]
+    extends StObject
+       with ISuggestionsCoreProps[T] {
     
     /**
       * The CSS classname of the suggestions list.
@@ -57,7 +58,8 @@ object suggestionsDottypesMod {
   
   @js.native
   trait ISuggestionsCoreProps[T]
-    extends ClassAttributes[js.Any] {
+    extends StObject
+       with ClassAttributes[js.Any] {
     
     /**
       * Gets the component ref.
@@ -75,13 +77,13 @@ object suggestionsDottypesMod {
       * What should occur when a suggestion is clicked
       */
     def onSuggestionClick(): Unit = js.native
-    def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-    def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.Any): Unit = js.native
-    def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: js.Any): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: Unit, index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
-    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Unit, index: Double): Unit = js.native
     
     /**
       * Function to fire when one of the optional remove buttons on a suggestion is clicked.
@@ -132,20 +134,19 @@ object suggestionsDottypesMod {
     var suggestionsItemClassName: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ISuggestionsHeaderFooterItemProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.native
+    var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
     
-    var onExecute: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExecute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def renderItem(): Element = js.native
+    def renderItem(): Element
   }
   object ISuggestionsHeaderFooterItemProps {
     
@@ -190,18 +191,17 @@ object suggestionsDottypesMod {
     }
   }
   
-  @js.native
   trait ISuggestionsHeaderFooterProps extends StObject {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onExecute: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExecute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def renderItem(): Element = js.native
+    def renderItem(): Element
     
-    def shouldShow(): Boolean = js.native
+    def shouldShow(): Boolean
   }
   object ISuggestionsHeaderFooterProps {
     

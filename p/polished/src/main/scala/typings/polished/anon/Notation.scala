@@ -7,36 +7,29 @@ import typings.polished.polishedStrings.Asterisk
 import typings.polished.polishedStrings.infix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notation extends StObject {
   
-  var argCount: `2` = js.native
+  var argCount: `2`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify multiplication */ js.Any = js.native
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify multiplication */ js.Any
   
-  var notation: infix = js.native
+  var notation: infix
   
-  var precedence: `4` = js.native
+  var precedence: `4`
   
-  var rightToLeft: `0` = js.native
+  var rightToLeft: `0`
   
-  var symbol: Asterisk = js.native
+  var symbol: Asterisk
 }
 object Notation {
   
   @scala.inline
   def apply(
-    argCount: `2`,
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify multiplication */ js.Any,
-    notation: infix,
-    precedence: `4`,
-    rightToLeft: `0`,
-    symbol: Asterisk
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify multiplication */ js.Any
   ): Notation = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 4, rightToLeft = 0, symbol = "*")
     __obj.asInstanceOf[Notation]
   }
   

@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a general error graphic filter exception. It can be used to transport the error code information. E.g. that can be useful for interactions.
   * @since OOo 3.0
   */
-@js.native
-trait GraphicFilterRequest extends Exception {
+trait GraphicFilterRequest
+  extends StObject
+     with Exception {
   
   /** specifies the error code. */
-  var ErrCode: Double = js.native
+  var ErrCode: Double
 }
 object GraphicFilterRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectAttributeRange extends StObject {
   
   /**
     * The key of the attribute that the attribute range covers.
     */
-  var AttributeKey: js.UndefOr[typings.awsSdk.clouddirectoryMod.AttributeKey] = js.native
+  var AttributeKey: js.UndefOr[typings.awsSdk.clouddirectoryMod.AttributeKey] = js.undefined
   
   /**
     * The range of attribute values being selected.
     */
-  var Range: js.UndefOr[TypedAttributeValueRange] = js.native
+  var Range: js.UndefOr[TypedAttributeValueRange] = js.undefined
 }
 object ObjectAttributeRange {
   

@@ -4,7 +4,6 @@ import typings.std.Iterable
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/model/element
@@ -12,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Element protected () extends Node {
   protected def this(name: String) = this()
-  protected def this(name: String, attrs: js.Array[js.Tuple2[String, _]]) = this()
-  protected def this(name: String, attrs: Map[String, _]) = this()
-  protected def this(name: String, attrs: js.UndefOr[scala.Nothing], children: Node) = this()
-  protected def this(name: String, attrs: js.UndefOr[scala.Nothing], children: Iterable[Node]) = this()
-  protected def this(name: String, attrs: js.Array[js.Tuple2[String, _]], children: Node) = this()
-  protected def this(name: String, attrs: js.Array[js.Tuple2[String, _]], children: Iterable[Node]) = this()
-  protected def this(name: String, attrs: Map[String, _], children: Node) = this()
-  protected def this(name: String, attrs: Map[String, _], children: Iterable[Node]) = this()
+  protected def this(name: String, attrs: js.Array[js.Tuple2[String, js.Any]]) = this()
+  protected def this(name: String, attrs: Map[String, js.Any]) = this()
+  protected def this(name: String, attrs: js.Array[js.Tuple2[String, js.Any]], children: Node) = this()
+  protected def this(name: String, attrs: js.Array[js.Tuple2[String, js.Any]], children: Iterable[Node]) = this()
+  protected def this(name: String, attrs: Unit, children: Node) = this()
+  protected def this(name: String, attrs: Unit, children: Iterable[Node]) = this()
+  protected def this(name: String, attrs: Map[String, js.Any], children: Node) = this()
+  protected def this(name: String, attrs: Map[String, js.Any], children: Iterable[Node]) = this()
   
   /* protected */ def _appendChild(nodes: Item): Unit = js.native
   /* protected */ def _appendChild(nodes: Iterable[Item]): Unit = js.native
@@ -57,8 +56,11 @@ class Element protected () extends Node {
 }
 object Element {
   
-  /* static member */
-  @JSImport("@ckeditor/ckeditor5-engine", "model.Element.fromJSON")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.Element")
   @js.native
-  def fromJSON(json: js.Object): Element = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromJSON(json: js.Object): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

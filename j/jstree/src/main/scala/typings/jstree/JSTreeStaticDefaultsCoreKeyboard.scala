@@ -3,32 +3,30 @@ package typings.jstree
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsCoreKeyboard extends StObject {
   
   @JSName("*")
-  def Asterisk(e: Event): Unit = js.native
+  def Asterisk(e: Event): Unit
   
-  def `ctrl-space`(e: Event): Unit = js.native
+  def `ctrl-space`(e: Event): Unit
   
-  def down(e: Event): Unit = js.native
+  def down(e: Event): Unit
   
-  def end(e: Event): Unit = js.native
+  def end(e: Event): Unit
   
-  def enter(e: Event): Unit = js.native
+  def enter(e: Event): Unit
   
-  def f2(e: Event): Unit = js.native
+  def f2(e: Event): Unit
   
-  def home(e: Event): Unit = js.native
+  def home(e: Event): Unit
   
-  def left(e: Event): Unit = js.native
+  def left(e: Event): Unit
   
-  def right(e: Event): Unit = js.native
+  def right(e: Event): Unit
   
-  def up(e: Event): Unit = js.native
+  def up(e: Event): Unit
 }
 object JSTreeStaticDefaultsCoreKeyboard {
   

@@ -2,23 +2,23 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Spec extends Annotations {
+trait Spec
+  extends StObject
+     with Annotations {
   
-  var CAConfig: js.UndefOr[typings.dockerode.mod.CAConfig] = js.native
+  var CAConfig: js.UndefOr[typings.dockerode.mod.CAConfig] = js.undefined
   
-  var Dispatcher: js.UndefOr[DispatcherConfig] = js.native
+  var Dispatcher: js.UndefOr[DispatcherConfig] = js.undefined
   
-  var EncryptionConfig: js.UndefOr[typings.dockerode.mod.EncryptionConfig] = js.native
+  var EncryptionConfig: js.UndefOr[typings.dockerode.mod.EncryptionConfig] = js.undefined
   
-  var Orchestration: js.UndefOr[OrchestrationConfig] = js.native
+  var Orchestration: js.UndefOr[OrchestrationConfig] = js.undefined
   
-  var Raft: RaftConfig = js.native
+  var Raft: RaftConfig
   
-  var TaskDefaults: js.UndefOr[typings.dockerode.mod.TaskDefaults] = js.native
+  var TaskDefaults: js.UndefOr[typings.dockerode.mod.TaskDefaults] = js.undefined
 }
 object Spec {
   

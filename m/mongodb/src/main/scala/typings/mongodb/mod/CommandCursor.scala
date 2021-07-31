@@ -5,7 +5,6 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "CommandCursor")
@@ -45,8 +44,8 @@ class CommandCursor () extends Readable {
   def setReadPreference(readPreference: ReadPreferenceOrMode): CommandCursor = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#toArray */
-  def toArray(): js.Promise[js.Array[_]] = js.native
-  def toArray(callback: MongoCallback[js.Array[_]]): Unit = js.native
+  def toArray(): js.Promise[js.Array[js.Any]] = js.native
+  def toArray(callback: MongoCallback[js.Array[js.Any]]): Unit = js.native
   
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#unshift */
   def unshift(stream: Buffer): Unit = js.native

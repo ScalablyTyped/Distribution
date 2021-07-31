@@ -3,10 +3,13 @@ package typings.angularCompiler
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlHelperMod {
+  
+  @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "CR")
   @js.native
@@ -16,63 +19,80 @@ object xmlHelperMod {
   
   @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "Declaration")
   @js.native
-  class Declaration protected () extends Node {
+  class Declaration protected ()
+    extends StObject
+       with Node {
     def this(unescapedAttrs: StringDictionary[String]) = this()
     
     var attrs: StringDictionary[String] = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: IVisitor): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "Doctype")
   @js.native
-  class Doctype protected () extends Node {
+  class Doctype protected ()
+    extends StObject
+       with Node {
     def this(rootTag: String, dtd: String) = this()
     
     var dtd: String = js.native
     
     var rootTag: String = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: IVisitor): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "Tag")
   @js.native
-  class Tag protected () extends Node {
+  class Tag protected ()
+    extends StObject
+       with Node {
     def this(name: String) = this()
     def this(name: String, unescapedAttrs: StringDictionary[String]) = this()
-    def this(name: String, unescapedAttrs: js.UndefOr[scala.Nothing], children: js.Array[Node]) = this()
     def this(name: String, unescapedAttrs: StringDictionary[String], children: js.Array[Node]) = this()
+    def this(name: String, unescapedAttrs: Unit, children: js.Array[Node]) = this()
     
     var attrs: StringDictionary[String] = js.native
     
     var children: js.Array[Node] = js.native
     
     var name: String = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: IVisitor): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "Text")
   @js.native
-  class Text protected () extends Node {
+  class Text protected ()
+    extends StObject
+       with Node {
     def this(unescapedValue: String) = this()
     
     var value: String = js.native
+    
+    /* CompleteClass */
+    override def visit(visitor: IVisitor): js.Any = js.native
   }
   
-  @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "escapeXml")
-  @js.native
-  def escapeXml(text: String): String = js.native
+  @scala.inline
+  def escapeXml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@angular/compiler/src/i18n/serializers/xml_helper", "serialize")
-  @js.native
-  def serialize(nodes: js.Array[Node]): String = js.native
+  @scala.inline
+  def serialize(nodes: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait IVisitor extends StObject {
     
-    def visitDeclaration(decl: Declaration): js.Any = js.native
+    def visitDeclaration(decl: Declaration): js.Any
     
-    def visitDoctype(doctype: Doctype): js.Any = js.native
+    def visitDoctype(doctype: Doctype): js.Any
     
-    def visitTag(tag: Tag): js.Any = js.native
+    def visitTag(tag: Tag): js.Any
     
-    def visitText(text: Text): js.Any = js.native
+    def visitText(text: Text): js.Any
   }
   object IVisitor {
     
@@ -104,10 +124,9 @@ object xmlHelperMod {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    def visit(visitor: IVisitor): js.Any = js.native
+    def visit(visitor: IVisitor): js.Any
   }
   object Node {
     

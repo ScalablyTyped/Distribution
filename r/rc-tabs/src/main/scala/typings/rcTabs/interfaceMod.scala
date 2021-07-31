@@ -13,17 +13,15 @@ import typings.react.mod.ReactNode
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  @js.native
   trait AnimatedConfig extends StObject {
     
-    var inkBar: js.UndefOr[Boolean] = js.native
+    var inkBar: js.UndefOr[Boolean] = js.undefined
     
-    var tabPane: js.UndefOr[Boolean] = js.native
+    var tabPane: js.UndefOr[Boolean] = js.undefined
   }
   object AnimatedConfig {
     
@@ -69,12 +67,13 @@ object interfaceMod {
   
   type RenderTabBar = js.Function2[/* props */ js.Any, /* DefaultTabBar */ ComponentType[js.Object], ReactElement]
   
-  @js.native
-  trait Tab extends TabPaneProps {
+  trait Tab
+    extends StObject
+       with TabPaneProps {
     
-    var key: String = js.native
+    var key: String
     
-    var node: ReactElement = js.native
+    var node: ReactElement
   }
   object Tab {
     
@@ -98,12 +97,11 @@ object interfaceMod {
   type TabBarExtraContent = ReactNode | TabBarExtraMap
   
   /* Inlined std.Partial<std.Record<rc-tabs.rc-tabs/es/interface.TabBarExtraPosition, react.react.ReactNode>> */
-  @js.native
   trait TabBarExtraMap extends StObject {
     
-    var left: js.UndefOr[ReactNode] = js.native
+    var left: js.UndefOr[ReactNode] = js.undefined
     
-    var right: js.UndefOr[ReactNode] = js.native
+    var right: js.UndefOr[ReactNode] = js.undefined
   }
   object TabBarExtraMap {
     
@@ -144,18 +142,17 @@ object interfaceMod {
     def right: typings.rcTabs.rcTabsStrings.right = "right".asInstanceOf[typings.rcTabs.rcTabsStrings.right]
   }
   
-  @js.native
   trait TabOffset extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object TabOffset {
     
@@ -211,14 +208,13 @@ object interfaceMod {
   
   type TabSizeMap = Map[Key, Height]
   
-  @js.native
   trait TabsLocale extends StObject {
     
-    var addAriaLabel: js.UndefOr[String] = js.native
+    var addAriaLabel: js.UndefOr[String] = js.undefined
     
-    var dropdownAriaLabel: js.UndefOr[String] = js.native
+    var dropdownAriaLabel: js.UndefOr[String] = js.undefined
     
-    var removeAriaLabel: js.UndefOr[String] = js.native
+    var removeAriaLabel: js.UndefOr[String] = js.undefined
   }
   object TabsLocale {
     

@@ -4,17 +4,15 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRandomAccessStreamReferenceStatics extends StObject {
   
-  def createFromFile(file: IStorageFile): RandomAccessStreamReference = js.native
+  def createFromFile(file: IStorageFile): RandomAccessStreamReference
   
-  def createFromStream(stream: IRandomAccessStream): RandomAccessStreamReference = js.native
+  def createFromStream(stream: IRandomAccessStream): RandomAccessStreamReference
   
-  def createFromUri(uri: Uri): RandomAccessStreamReference = js.native
+  def createFromUri(uri: Uri): RandomAccessStreamReference
 }
 object IRandomAccessStreamReferenceStatics {
   

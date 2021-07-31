@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataprocMod {
+  
+  @JSImport("googleapis/build/src/apis/dataproc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -93,9 +96,12 @@ object dataprocMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/dataproc", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/dataproc", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -139,16 +145,14 @@ object dataprocMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/dataproc", "dataproc")
-  @js.native
-  def dataproc(options: Options): Dataproc = js.native
-  @JSImport("googleapis/build/src/apis/dataproc", "dataproc")
-  @js.native
-  def dataproc(options: typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Options): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = js.native
-  @JSImport("googleapis/build/src/apis/dataproc", "dataproc")
-  @js.native
-  def dataproc_v1(version: v1): Dataproc = js.native
-  @JSImport("googleapis/build/src/apis/dataproc", "dataproc")
-  @js.native
-  def dataproc_v1beta2(version: v1beta2): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = js.native
+  @scala.inline
+  def dataproc(options: Options): Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(options.asInstanceOf[js.Any]).asInstanceOf[Dataproc]
+  @scala.inline
+  def dataproc(options: typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Options): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc]
+  
+  @scala.inline
+  def dataproc_v1(version: v1): Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(version.asInstanceOf[js.Any]).asInstanceOf[Dataproc]
+  
+  @scala.inline
+  def dataproc_v1beta2(version: v1beta2): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc]
 }

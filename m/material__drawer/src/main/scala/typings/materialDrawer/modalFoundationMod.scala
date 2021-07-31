@@ -4,7 +4,6 @@ import typings.materialDrawer.anon.PartialMDCDrawerAdapter
 import typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalFoundationMod {

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,11 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * complicated. When reading data, one has to check for both {@link VolatileContentDestroyedException} and mismatching {@link FloatingPointBitmapLayout}
   * return values. If either of them occurs, the whole bitmap read operation should be repeated.
   */
-@js.native
-trait XHalfFloatReadOnlyBitmap extends XBitmap {
+trait XHalfFloatReadOnlyBitmap
+  extends StObject
+     with XBitmap {
   
   /** Query the memory layout for this bitmap. */
-  val MemoryLayout: FloatingPointBitmapLayout = js.native
+  val MemoryLayout: FloatingPointBitmapLayout
   
   /**
     * Query the raw data of this bitmap.
@@ -35,16 +35,16 @@ trait XHalfFloatReadOnlyBitmap extends XBitmap {
     * have no 16 bit float UNO data type, the values are transported as 16 bit integers across the API (which requires casting on both sides).
     * @throws VolatileContentDestroyedException if the bitmap is volatile, and the content has been destroyed by the system.
     */
-  def getData(rect: IntegerRectangle2D): SafeArray[Double] = js.native
+  def getData(rect: IntegerRectangle2D): SafeArray[Double]
   
   /** Query the memory layout for this bitmap. */
-  def getMemoryLayout(): FloatingPointBitmapLayout = js.native
+  def getMemoryLayout(): FloatingPointBitmapLayout
   
   /**
     * Get a single pixel of the bitmap, returning its color value.
     * @throws VolatileContentDestroyedException if the bitmap is volatile, and the content has been destroyed by the system.
     */
-  def getPixel(pos: IntegerPoint2D): SafeArray[Double] = js.native
+  def getPixel(pos: IntegerPoint2D): SafeArray[Double]
 }
 object XHalfFloatReadOnlyBitmap {
   

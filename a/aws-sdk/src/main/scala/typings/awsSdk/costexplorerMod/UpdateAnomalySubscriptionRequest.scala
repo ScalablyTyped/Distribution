@@ -2,41 +2,39 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAnomalySubscriptionRequest extends StObject {
   
   /**
     *  The update to the frequency value at which subscribers will receive notifications. 
     */
-  var Frequency: js.UndefOr[AnomalySubscriptionFrequency] = js.native
+  var Frequency: js.UndefOr[AnomalySubscriptionFrequency] = js.undefined
   
   /**
     *  A list of cost anomaly subscription ARNs. 
     */
-  var MonitorArnList: js.UndefOr[Values] = js.native
+  var MonitorArnList: js.UndefOr[Values] = js.undefined
   
   /**
     *  The update to the subscriber list. 
     */
-  var Subscribers: js.UndefOr[typings.awsSdk.costexplorerMod.Subscribers] = js.native
+  var Subscribers: js.UndefOr[typings.awsSdk.costexplorerMod.Subscribers] = js.undefined
   
   /**
     *  A cost anomaly subscription Amazon Resource Name (ARN). 
     */
-  var SubscriptionArn: GenericString = js.native
+  var SubscriptionArn: GenericString
   
   /**
     *  The subscription's new name. 
     */
-  var SubscriptionName: js.UndefOr[GenericString] = js.native
+  var SubscriptionName: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The update to the threshold value for receiving notifications. 
     */
-  var Threshold: js.UndefOr[NullableNonNegativeDouble] = js.native
+  var Threshold: js.UndefOr[NullableNonNegativeDouble] = js.undefined
 }
 object UpdateAnomalySubscriptionRequest {
   

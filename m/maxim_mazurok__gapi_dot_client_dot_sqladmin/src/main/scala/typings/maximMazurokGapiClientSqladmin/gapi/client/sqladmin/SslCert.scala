@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCert extends StObject {
   
   /** PEM representation. */
-  var cert: js.UndefOr[String] = js.native
+  var cert: js.UndefOr[String] = js.undefined
   
   /** Serial number, as extracted from the certificate. */
-  var certSerialNumber: js.UndefOr[String] = js.native
+  var certSerialNumber: js.UndefOr[String] = js.undefined
   
   /** User supplied name. Constrained to [a-zA-Z.-_ ]+. */
-  var commonName: js.UndefOr[String] = js.native
+  var commonName: js.UndefOr[String] = js.undefined
   
   /** The time when the certificate was created in RFC 3339 format, for example *2012-11-15T16:19:00.094Z* */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The time when the certificate expires in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /** Name of the database instance. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#sslCert*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The URI of this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Sha1 Fingerprint. */
-  var sha1Fingerprint: js.UndefOr[String] = js.native
+  var sha1Fingerprint: js.UndefOr[String] = js.undefined
 }
 object SslCert {
   

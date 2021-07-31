@@ -2,31 +2,29 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePortfolioOutput extends StObject {
   
   /**
     * Information about the associated budgets.
     */
-  var Budgets: js.UndefOr[typings.awsSdk.servicecatalogMod.Budgets] = js.native
+  var Budgets: js.UndefOr[typings.awsSdk.servicecatalogMod.Budgets] = js.undefined
   
   /**
     * Information about the portfolio.
     */
-  var PortfolioDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.PortfolioDetail] = js.native
+  var PortfolioDetail: js.UndefOr[typings.awsSdk.servicecatalogMod.PortfolioDetail] = js.undefined
   
   /**
     * Information about the TagOptions associated with the portfolio.
     */
-  var TagOptions: js.UndefOr[TagOptionDetails] = js.native
+  var TagOptions: js.UndefOr[TagOptionDetails] = js.undefined
   
   /**
     * Information about the tags associated with the portfolio.
     */
-  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.servicecatalogMod.Tags] = js.undefined
 }
 object DescribePortfolioOutput {
   

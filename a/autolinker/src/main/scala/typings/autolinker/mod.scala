@@ -18,7 +18,6 @@ import typings.autolinker.urlMatchMod.UrlMatchConfig
 import typings.autolinker.urlMatcherMod.UrlMatcherConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,6 +35,10 @@ object mod {
   }
   /* static members */
   object default {
+    
+    @JSImport("autolinker", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * For backwards compatibility with Autolinker 1.x, the AnchorTagBuilder
@@ -78,12 +81,18 @@ object mod {
       *   example call.
       * @return {String} The HTML text, with matches automatically linked.
       */
-    @JSImport("autolinker", "default.link")
+    @scala.inline
+    def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    /**
+      * For backwards compatibility with Autolinker 1.x, the Match classes are
+      * provided as statics on the Autolinker class.
+      */
+    @JSImport("autolinker", "default.match")
     @js.native
-    def link(textOrHtml: String): String = js.native
-    @JSImport("autolinker", "default.link")
-    @js.native
-    def link(textOrHtml: String, options: AutolinkerConfig): String = js.native
+    val `match`: Hashtag = js.native
     
     /**
       * For backwards compatibility with Autolinker 1.x, the Matcher classes are
@@ -126,9 +135,8 @@ object mod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `textOrHtml`.
       */
-    @JSImport("autolinker", "default.parse")
-    @js.native
-    def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = js.native
+    @scala.inline
+    def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
     
     /**
       * @static
@@ -141,14 +149,6 @@ object mod {
     @JSImport("autolinker", "default.version")
     @js.native
     val version: /* "3.14.2" */ String = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Match classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker", "default.match")
-    @js.native
-    val `match`: Hashtag = js.native
   }
   
   @JSImport("autolinker", "AnchorTagBuilder")
@@ -175,6 +175,10 @@ object mod {
   }
   /* static members */
   object Autolinker {
+    
+    @JSImport("autolinker", "Autolinker")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * For backwards compatibility with Autolinker 1.x, the AnchorTagBuilder
@@ -217,12 +221,18 @@ object mod {
       *   example call.
       * @return {String} The HTML text, with matches automatically linked.
       */
-    @JSImport("autolinker", "Autolinker.link")
+    @scala.inline
+    def link(textOrHtml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def link(textOrHtml: String, options: AutolinkerConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    /**
+      * For backwards compatibility with Autolinker 1.x, the Match classes are
+      * provided as statics on the Autolinker class.
+      */
+    @JSImport("autolinker", "Autolinker.match")
     @js.native
-    def link(textOrHtml: String): String = js.native
-    @JSImport("autolinker", "Autolinker.link")
-    @js.native
-    def link(textOrHtml: String, options: AutolinkerConfig): String = js.native
+    val `match`: Hashtag = js.native
     
     /**
       * For backwards compatibility with Autolinker 1.x, the Matcher classes are
@@ -265,9 +275,8 @@ object mod {
       * @return {Autolinker.match.Match[]} The array of Matches found in the
       *   given input `textOrHtml`.
       */
-    @JSImport("autolinker", "Autolinker.parse")
-    @js.native
-    def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = js.native
+    @scala.inline
+    def parse(textOrHtml: String, options: AutolinkerConfig): js.Array[typings.autolinker.matchMatchMod.Match] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(textOrHtml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.autolinker.matchMatchMod.Match]]
     
     /**
       * @static
@@ -280,14 +289,6 @@ object mod {
     @JSImport("autolinker", "Autolinker.version")
     @js.native
     val version: /* "3.14.2" */ String = js.native
-    
-    /**
-      * For backwards compatibility with Autolinker 1.x, the Match classes are
-      * provided as statics on the Autolinker class.
-      */
-    @JSImport("autolinker", "Autolinker.match")
-    @js.native
-    val `match`: Hashtag = js.native
   }
   
   @JSImport("autolinker", "EmailMatch")

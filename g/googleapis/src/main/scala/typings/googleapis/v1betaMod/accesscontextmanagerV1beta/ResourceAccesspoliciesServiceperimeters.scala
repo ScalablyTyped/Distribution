@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/accesscontextmanager/v1beta", "accesscontextmanager_v1beta.Resource$Accesspolicies$Serviceperimeters")
@@ -34,7 +33,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAccesspoliciesServiceperimetersCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceAccesspoliciesServiceperimetersCreate,
@@ -68,7 +67,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAccesspoliciesServiceperimetersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceAccesspoliciesServiceperimetersDelete,
@@ -100,7 +99,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaServicePerimeter] = js.native
   def get(callback: BodyResponseCallback[SchemaServicePerimeter]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServicePerimeter] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServicePerimeter] = js.native
   def get(params: ParamsResourceAccesspoliciesServiceperimetersGet): GaxiosPromise[SchemaServicePerimeter] = js.native
   def get(
     params: ParamsResourceAccesspoliciesServiceperimetersGet,
@@ -134,7 +133,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServicePerimetersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServicePerimetersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServicePerimetersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServicePerimetersResponse] = js.native
   def list(params: ParamsResourceAccesspoliciesServiceperimetersList): GaxiosPromise[SchemaListServicePerimetersResponse] = js.native
   def list(
     params: ParamsResourceAccesspoliciesServiceperimetersList,
@@ -172,7 +171,7 @@ class ResourceAccesspoliciesServiceperimeters protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAccesspoliciesServiceperimetersPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceAccesspoliciesServiceperimetersPatch,

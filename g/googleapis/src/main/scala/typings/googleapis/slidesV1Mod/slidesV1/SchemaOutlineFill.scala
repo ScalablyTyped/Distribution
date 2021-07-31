@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The fill of the outline.
   */
-@js.native
 trait SchemaOutlineFill extends StObject {
   
   /**
     * Solid color fill.
     */
-  var solidFill: js.UndefOr[SchemaSolidFill] = js.native
+  var solidFill: js.UndefOr[SchemaSolidFill] = js.undefined
 }
 object SchemaOutlineFill {
   

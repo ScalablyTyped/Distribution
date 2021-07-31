@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditorPasteEvent extends EditorEvent {
+trait EditorPasteEvent
+  extends StObject
+     with EditorEvent {
   
-  var html: js.UndefOr[js.Any] = js.native
+  var html: js.UndefOr[js.Any] = js.undefined
 }
 object EditorPasteEvent {
   

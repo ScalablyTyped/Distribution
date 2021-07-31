@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.UsersGetContextForUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersGetContextForUserEndpoint extends StObject {
   
-  var parameters: UsersGetContextForUserEndpoint = js.native
+  var parameters: UsersGetContextForUserEndpoint
   
-  var request: UsersGetContextForUserRequestOptions = js.native
+  var request: UsersGetContextForUserRequestOptions
   
-  var response: OctokitResponse[UsersGetContextForUserResponseData] = js.native
+  var response: OctokitResponse[UsersGetContextForUserResponseData]
 }
 object ParametersUsersGetContextForUserEndpoint {
   

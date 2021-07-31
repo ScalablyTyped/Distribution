@@ -3,27 +3,25 @@ package typings.kendoUi.kendo.drawing
 import typings.kendoUi.kendo.geometry.Transformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupOptions extends StObject {
   
-  var clip: js.UndefOr[Path] = js.native
+  var clip: js.UndefOr[Path] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var pdf: js.UndefOr[PDFOptions] = js.native
+  var pdf: js.UndefOr[PDFOptions] = js.undefined
   
-  var tooltip: js.UndefOr[TooltipOptions] = js.native
+  var tooltip: js.UndefOr[TooltipOptions] = js.undefined
   
-  var transform: js.UndefOr[Transformation] = js.native
+  var transform: js.UndefOr[Transformation] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object GroupOptions {
   

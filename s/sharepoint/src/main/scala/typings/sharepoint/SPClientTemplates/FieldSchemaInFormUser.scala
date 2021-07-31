@@ -2,32 +2,32 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents schema for a Number field in list form or in list view in grid mode */
-@js.native
-trait FieldSchemaInFormUser extends FieldSchemaInForm {
+trait FieldSchemaInFormUser
+  extends StObject
+     with FieldSchemaInForm {
   
-  var DefaultRender: Boolean = js.native
+  var DefaultRender: Boolean
   
-  var EntitySeparator: String = js.native
+  var EntitySeparator: String
   
   /** Server relative Url for ~site/_layouts/listform.aspx */
-  var ListFormUrl: String = js.native
+  var ListFormUrl: String
   
-  var PictureOnly: Boolean = js.native
+  var PictureOnly: Boolean
   
-  var PictureSize: String = js.native
+  var PictureSize: String
   
-  var Presence: Boolean = js.native
+  var Presence: Boolean
   
   /** Server relative Url for ~site/_layouts/userdisp.aspx */
-  var UserDisplayUrl: String = js.native
+  var UserDisplayUrl: String
   
-  var WithPicture: Boolean = js.native
+  var WithPicture: Boolean
   
-  var WithPictureDetail: Boolean = js.native
+  var WithPictureDetail: Boolean
 }
 object FieldSchemaInFormUser {
   

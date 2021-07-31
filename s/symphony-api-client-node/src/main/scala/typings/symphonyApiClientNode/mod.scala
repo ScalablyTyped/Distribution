@@ -32,10 +32,13 @@ import typings.symphonyApiClientNode.usersClientMod.UserFilter
 import typings.symphonyApiClientNode.usersClientMod.UsersList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("symphony-api-client-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("symphony-api-client-node", "ACCEPTED")
   @js.native
@@ -97,20 +100,16 @@ object mod {
   @js.native
   val STATUS_OUT_OF_OFFICE: String = js.native
   
-  @JSImport("symphony-api-client-node", "acceptConnectionRequest")
-  @js.native
-  def acceptConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def acceptConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node", "activateRoom")
-  @js.native
-  def activateRoom(streamId: String): js.Promise[ActivateRoomResponse] = js.native
+  @scala.inline
+  def activateRoom(streamId: String): js.Promise[ActivateRoomResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("activateRoom")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ActivateRoomResponse]]
   
-  @JSImport("symphony-api-client-node", "addMemberToRoom")
-  @js.native
-  def addMemberToRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = js.native
+  @scala.inline
+  def addMemberToRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMemberToRoom")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @JSImport("symphony-api-client-node", "adminListEnterpriseStreamsV2")
-  @js.native
+  @scala.inline
   def adminListEnterpriseStreamsV2(
     streamTypes: js.Array[StreamType],
     scope: String,
@@ -121,22 +120,18 @@ object mod {
     endDate: Double,
     skip: Double,
     limit: Double
-  ): js.Promise[AdminStreamListResponse] = js.native
+  ): js.Promise[AdminStreamListResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("adminListEnterpriseStreamsV2")(streamTypes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], privacy.asInstanceOf[js.Any], status.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AdminStreamListResponse]]
   
-  @JSImport("symphony-api-client-node", "authenticateBot")
-  @js.native
-  def authenticateBot(SymConfig: SymphonyConfiguration): js.Promise[AuthInfo] = js.native
+  @scala.inline
+  def authenticateBot(SymConfig: SymphonyConfiguration): js.Promise[AuthInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBot")(SymConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AuthInfo]]
   
-  @JSImport("symphony-api-client-node", "authenticateExtApp")
-  @js.native
-  def authenticateExtApp(): js.Promise[AppInfo] = js.native
+  @scala.inline
+  def authenticateExtApp(): js.Promise[AppInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateExtApp")().asInstanceOf[js.Promise[AppInfo]]
   
-  @JSImport("symphony-api-client-node", "authenticateOboApp")
-  @js.native
-  def authenticateOboApp(): js.Promise[Token] = js.native
+  @scala.inline
+  def authenticateOboApp(): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticateOboApp")().asInstanceOf[js.Promise[Token]]
   
-  @JSImport("symphony-api-client-node", "createRoom")
-  @js.native
+  @scala.inline
   def createRoom(
     room: String,
     description: js.UndefOr[String],
@@ -148,214 +143,161 @@ object mod {
     copyProtected: js.UndefOr[Boolean],
     crossPod: js.UndefOr[Boolean],
     viewHistory: js.UndefOr[Boolean]
-  ): js.Promise[RoomInfo] = js.native
+  ): js.Promise[RoomInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoom")(room.asInstanceOf[js.Any], description.asInstanceOf[js.Any], keywords.asInstanceOf[js.Any], membersCanInvite.asInstanceOf[js.Any], discoverable.asInstanceOf[js.Any], anyoneCanJoin.asInstanceOf[js.Any], readOnly.asInstanceOf[js.Any], copyProtected.asInstanceOf[js.Any], crossPod.asInstanceOf[js.Any], viewHistory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomInfo]]
   
-  @JSImport("symphony-api-client-node", "createSignal")
-  @js.native
-  def createSignal(name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean, sessionToken: String): js.Promise[Signal] = js.native
+  @scala.inline
+  def createSignal(name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignal")(name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @JSImport("symphony-api-client-node", "deactivateRoom")
-  @js.native
-  def deactivateRoom(streamId: String): js.Promise[ActivateRoomResponse] = js.native
+  @scala.inline
+  def deactivateRoom(streamId: String): js.Promise[ActivateRoomResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateRoom")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ActivateRoomResponse]]
   
-  @JSImport("symphony-api-client-node", "deleteSignal")
-  @js.native
-  def deleteSignal(id: String, sessionToken: String): js.Promise[DeleteOperationResult] = js.native
+  @scala.inline
+  def deleteSignal(id: String, sessionToken: String): js.Promise[DeleteOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteOperationResult]]
   
-  @JSImport("symphony-api-client-node", "demoteUserFromOwner")
-  @js.native
-  def demoteUserFromOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = js.native
+  @scala.inline
+  def demoteUserFromOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("demoteUserFromOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @JSImport("symphony-api-client-node", "formBuilder")
-  @js.native
-  def formBuilder(formId: js.Any): js.Any = js.native
+  @scala.inline
+  def formBuilder(formId: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("formBuilder")(formId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("symphony-api-client-node", "forwardMessage")
-  @js.native
-  def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = js.native
+  @scala.inline
+  def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @JSImport("symphony-api-client-node", "getAcceptedConnections")
-  @js.native
-  def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getAcceptedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "getAllConnections")
-  @js.native
-  def getAllConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getAllConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "getAttachment")
-  @js.native
-  def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = js.native
+  @scala.inline
+  def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("symphony-api-client-node", "getBotUser")
-  @js.native
-  def getBotUser(): Unit = js.native
+  @scala.inline
+  def getBotUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotUser")().asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "getCashtags")
-  @js.native
-  def getCashtags(message: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def getCashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("symphony-api-client-node", "getConnectionRequestStatus")
-  @js.native
-  def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def getConnectionRequestStatus(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionRequestStatus")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node", "getConnections")
-  @js.native
-  def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getConnections(status: String, commaSeparatedUserIds: String, sessionToken: String): js.Promise[js.Array[Connection]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnections")(status.asInstanceOf[js.Any], commaSeparatedUserIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "getDatafeedEventsService")
-  @js.native
-  def getDatafeedEventsService(options: js.Any): js.Any = js.native
+  @scala.inline
+  def getDatafeedEventsService(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatafeedEventsService")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("symphony-api-client-node", "getFirehoseEventsService")
-  @js.native
-  def getFirehoseEventsService(subscriberCallback: js.Any): Unit = js.native
+  @scala.inline
+  def getFirehoseEventsService(subscriberCallback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirehoseEventsService")(subscriberCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "getHashtags")
-  @js.native
-  def getHashtags(message: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def getHashtags(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashtags")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("symphony-api-client-node", "getInboundPendingConnections")
-  @js.native
-  def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getInboundPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInboundPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "getMentions")
-  @js.native
-  def getMentions(message: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def getMentions(message: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMentions")(message.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("symphony-api-client-node", "getMessage")
-  @js.native
-  def getMessage(messageId: String): js.Promise[Message] = js.native
+  @scala.inline
+  def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
   
-  @JSImport("symphony-api-client-node", "getMessages")
-  @js.native
-  def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = js.native
+  @scala.inline
+  def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
   
-  @JSImport("symphony-api-client-node", "getPendingConnections")
-  @js.native
-  def getPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getPendingConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPendingConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "getRejectedConnections")
-  @js.native
-  def getRejectedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def getRejectedConnections(sessionToken: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRejectedConnections")(sessionToken.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "getRoomInfo")
-  @js.native
-  def getRoomInfo(streamId: String): js.Promise[RoomInfo] = js.native
+  @scala.inline
+  def getRoomInfo(streamId: String): js.Promise[RoomInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoomInfo")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RoomInfo]]
   
-  @JSImport("symphony-api-client-node", "getRoomMembers")
-  @js.native
-  def getRoomMembers(streamId: String): js.Promise[js.Array[RoomMember]] = js.native
+  @scala.inline
+  def getRoomMembers(streamId: String): js.Promise[js.Array[RoomMember]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoomMembers")(streamId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[RoomMember]]]
   
-  @JSImport("symphony-api-client-node", "getSignal")
-  @js.native
-  def getSignal(id: String, sessionToken: String): js.Promise[Signal] = js.native
+  @scala.inline
+  def getSignal(id: String, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @JSImport("symphony-api-client-node", "getSignalSubscribers")
-  @js.native
-  def getSignalSubscribers(id: String, skip: Double, limit: Double, sessionToken: String): js.Promise[SignalSubscribersResponse] = js.native
+  @scala.inline
+  def getSignalSubscribers(id: String, skip: Double, limit: Double, sessionToken: String): js.Promise[SignalSubscribersResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignalSubscribers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscribersResponse]]
   
-  @JSImport("symphony-api-client-node", "getUser")
-  @js.native
-  def getUser(id: String): js.Promise[AdminUserInfo] = js.native
+  @scala.inline
+  def getUser(id: String): js.Promise[AdminUserInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AdminUserInfo]]
   
-  @JSImport("symphony-api-client-node", "getUserFromEmail")
-  @js.native
-  def getUserFromEmail(email: String): js.Promise[User] = js.native
-  @JSImport("symphony-api-client-node", "getUserFromEmail")
-  @js.native
-  def getUserFromEmail(email: String, local: Boolean): js.Promise[User] = js.native
+  @scala.inline
+  def getUserFromEmail(email: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
+  @scala.inline
+  def getUserFromEmail(email: String, local: Boolean): js.Promise[User] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromEmail")(email.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[User]]
   
-  @JSImport("symphony-api-client-node", "getUserFromUsername")
-  @js.native
-  def getUserFromUsername(username: String): js.Promise[User] = js.native
+  @scala.inline
+  def getUserFromUsername(username: String): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserFromUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
   
-  @JSImport("symphony-api-client-node", "getUserIMStreamId")
-  @js.native
-  def getUserIMStreamId(userIDs: js.Array[Double]): js.Promise[UserId] = js.native
+  @scala.inline
+  def getUserIMStreamId(userIDs: js.Array[Double]): js.Promise[UserId] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserIMStreamId")(userIDs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserId]]
   
-  @JSImport("symphony-api-client-node", "getUserPresence")
-  @js.native
-  def getUserPresence(userId: Double, local: Boolean): Unit = js.native
+  @scala.inline
+  def getUserPresence(userId: Double, local: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPresence")(userId.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "getUserStreams")
-  @js.native
-  def getUserStreams(skip: Double, limit: Double, streamTypes: js.Array[StreamType], includeInactiveStreams: Boolean): js.Promise[UserStream] = js.native
+  @scala.inline
+  def getUserStreams(skip: Double, limit: Double, streamTypes: js.Array[StreamType], includeInactiveStreams: Boolean): js.Promise[UserStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserStreams")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], streamTypes.asInstanceOf[js.Any], includeInactiveStreams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserStream]]
   
-  @JSImport("symphony-api-client-node", "getUsersFromEmailList")
-  @js.native
-  def getUsersFromEmailList(commaSeparatedEmails: String): js.Promise[UsersList] = js.native
-  @JSImport("symphony-api-client-node", "getUsersFromEmailList")
-  @js.native
-  def getUsersFromEmailList(commaSeparatedEmails: String, local: Boolean): js.Promise[UsersList] = js.native
+  @scala.inline
+  def getUsersFromEmailList(commaSeparatedEmails: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
+  @scala.inline
+  def getUsersFromEmailList(commaSeparatedEmails: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromEmailList")(commaSeparatedEmails.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
   
-  @JSImport("symphony-api-client-node", "getUsersFromIdList")
-  @js.native
-  def getUsersFromIdList(commaSeparatedIds: String): js.Promise[UsersList] = js.native
-  @JSImport("symphony-api-client-node", "getUsersFromIdList")
-  @js.native
-  def getUsersFromIdList(commaSeparatedIds: String, local: Boolean): js.Promise[UsersList] = js.native
+  @scala.inline
+  def getUsersFromIdList(commaSeparatedIds: String): js.Promise[UsersList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UsersList]]
+  @scala.inline
+  def getUsersFromIdList(commaSeparatedIds: String, local: Boolean): js.Promise[UsersList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUsersFromIdList")(commaSeparatedIds.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UsersList]]
   
-  @JSImport("symphony-api-client-node", "importMessages")
-  @js.native
-  def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = js.native
+  @scala.inline
+  def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importMessages")(messageList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ImportMessageResult]]]
   
-  @JSImport("symphony-api-client-node", "initBot")
-  @js.native
-  def initBot(pathToConfigFile: String): js.Promise[AuthInfo] = js.native
-  @JSImport("symphony-api-client-node", "initBot")
-  @js.native
-  def initBot(pathToConfigFile: String, pathToLoadBalancerConfigFile: String): js.Promise[AuthInfo] = js.native
+  @scala.inline
+  def initBot(pathToConfigFile: String): js.Promise[AuthInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("initBot")(pathToConfigFile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AuthInfo]]
+  @scala.inline
+  def initBot(pathToConfigFile: String, pathToLoadBalancerConfigFile: String): js.Promise[AuthInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("initBot")(pathToConfigFile.asInstanceOf[js.Any], pathToLoadBalancerConfigFile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthInfo]]
   
-  @JSImport("symphony-api-client-node", "listSignals")
-  @js.native
-  def listSignals(skip: Double, limit: Double, sessionToken: String): js.Promise[js.Array[Signal]] = js.native
+  @scala.inline
+  def listSignals(skip: Double, limit: Double, sessionToken: String): js.Promise[js.Array[Signal]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSignals")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Signal]]]
   
-  @JSImport("symphony-api-client-node", "listUsers")
-  @js.native
-  def listUsers(skip: Double, limit: Double): js.Promise[js.Array[AdminUserInfo]] = js.native
+  @scala.inline
+  def listUsers(skip: Double, limit: Double): js.Promise[js.Array[AdminUserInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listUsers")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[AdminUserInfo]]]
   
-  @JSImport("symphony-api-client-node", "oboAuthenticateByUserId")
-  @js.native
-  def oboAuthenticateByUserId(userId: Double): js.Promise[Token] = js.native
+  @scala.inline
+  def oboAuthenticateByUserId(userId: Double): js.Promise[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboAuthenticateByUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Token]]
   
-  @JSImport("symphony-api-client-node", "oboGetAllConnections")
-  @js.native
-  def oboGetAllConnections(status: String): js.Promise[js.Array[Connection]] = js.native
+  @scala.inline
+  def oboGetAllConnections(status: String): js.Promise[js.Array[Connection]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetAllConnections")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Connection]]]
   
-  @JSImport("symphony-api-client-node", "oboGetConnection")
-  @js.native
-  def oboGetConnection(userId: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def oboGetConnection(userId: String): js.Promise[Connection] = ^.asInstanceOf[js.Dynamic].applyDynamic("oboGetConnection")(userId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node", "oboGetUserIMStreamId")
-  @js.native
-  def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = js.native
+  @scala.inline
+  def oboGetUserIMStreamId(userToken: String, userIds: js.Array[Double]): js.Promise[UserId] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboGetUserIMStreamId")(userToken.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserId]]
   
-  @JSImport("symphony-api-client-node", "oboSendMessage")
-  @js.native
-  def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = js.native
+  @scala.inline
+  def oboSendMessage(userToken: String, conversationId: String, message: String, data: js.Any, format: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("oboSendMessage")(userToken.asInstanceOf[js.Any], conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @JSImport("symphony-api-client-node", "promoteUserToOwner")
-  @js.native
-  def promoteUserToOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = js.native
+  @scala.inline
+  def promoteUserToOwner(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("promoteUserToOwner")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @JSImport("symphony-api-client-node", "registerInterestExtUser")
-  @js.native
-  def registerInterestExtUser(userIds: js.Array[Double]): Unit = js.native
+  @scala.inline
+  def registerInterestExtUser(userIds: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInterestExtUser")(userIds.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "rejectConnectionRequest")
-  @js.native
-  def rejectConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def rejectConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("rejectConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node", "removeConnection")
-  @js.native
-  def removeConnection(userId: String, sessionToken: String): js.Promise[RemoveConnectionReponse] = js.native
+  @scala.inline
+  def removeConnection(userId: String, sessionToken: String): js.Promise[RemoveConnectionReponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeConnection")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RemoveConnectionReponse]]
   
-  @JSImport("symphony-api-client-node", "removeMemberFromRoom")
-  @js.native
-  def removeMemberFromRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = js.native
+  @scala.inline
+  def removeMemberFromRoom(streamId: String, userId: Double): js.Promise[RoomMemberOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeMemberFromRoom")(streamId.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomMemberOperationResult]]
   
-  @JSImport("symphony-api-client-node", "searchRooms")
-  @js.native
+  @scala.inline
   def searchRooms(
     skip: js.UndefOr[Double],
     limit: js.UndefOr[Double],
@@ -367,91 +309,48 @@ object mod {
     owner: js.UndefOr[UserId],
     member: js.UndefOr[UserId],
     sortOrder: js.UndefOr[BASIC | RELEVANCE]
-  ): js.Promise[SearchRoomResponse] = js.native
+  ): js.Promise[SearchRoomResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchRooms")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], query.asInstanceOf[js.Any], labels.asInstanceOf[js.Any], active.asInstanceOf[js.Any], includePrivateRooms.asInstanceOf[js.Any], creator.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], member.asInstanceOf[js.Any], sortOrder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchRoomResponse]]
   
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: js.UndefOr[scala.Nothing],
-    skip: js.UndefOr[scala.Nothing],
-    limit: js.UndefOr[scala.Nothing],
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: js.UndefOr[scala.Nothing], limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: js.UndefOr[scala.Nothing],
-    skip: js.UndefOr[scala.Nothing],
-    limit: Double,
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: js.UndefOr[scala.Nothing],
-    skip: Double,
-    limit: js.UndefOr[scala.Nothing],
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: Double, limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: js.UndefOr[scala.Nothing], skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(
-    query: String,
-    local: Boolean,
-    skip: js.UndefOr[scala.Nothing],
-    limit: js.UndefOr[scala.Nothing],
-    filter: UserFilter
-  ): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: js.UndefOr[scala.Nothing], limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: js.UndefOr[scala.Nothing], limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: js.UndefOr[scala.Nothing], filter: UserFilter): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double): js.Promise[SearchUserResponse] = js.native
-  @JSImport("symphony-api-client-node", "searchUsers")
-  @js.native
-  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = js.native
+  @scala.inline
+  def searchUsers(query: String): js.Promise[SearchUserResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Boolean, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Double, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Unit, limit: Double): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Unit, limit: Double, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
+  @scala.inline
+  def searchUsers(query: String, local: Unit, skip: Unit, limit: Unit, filter: UserFilter): js.Promise[SearchUserResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchUsers")(query.asInstanceOf[js.Any], local.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchUserResponse]]
   
-  @JSImport("symphony-api-client-node", "sendConnectionRequest")
-  @js.native
-  def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = js.native
+  @scala.inline
+  def sendConnectionRequest(userId: String, sessionToken: String): js.Promise[Connection] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendConnectionRequest")(userId.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Connection]]
   
-  @JSImport("symphony-api-client-node", "sendMessage")
-  @js.native
-  def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = js.native
+  @scala.inline
+  def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @JSImport("symphony-api-client-node", "sendMessageWithAttachment")
-  @js.native
+  @scala.inline
   def sendMessageWithAttachment(
     conversationId: String,
     message: String,
@@ -460,46 +359,37 @@ object mod {
     fileType: String,
     fileContent: js.Any,
     format: String
-  ): js.Promise[Message] = js.native
+  ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageWithAttachment")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], fileType.asInstanceOf[js.Any], fileContent.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   @JSImport("symphony-api-client-node", "sessionToken")
   @js.native
   val sessionToken: String = js.native
   
-  @JSImport("symphony-api-client-node", "setDebugMode")
-  @js.native
-  def setDebugMode(mode: String): Unit = js.native
+  @scala.inline
+  def setDebugMode(mode: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "setPresence")
-  @js.native
-  def setPresence(status: String): js.Promise[UserPresenceResponse] = js.native
+  @scala.inline
+  def setPresence(status: String): js.Promise[UserPresenceResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPresence")(status.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UserPresenceResponse]]
   
-  @JSImport("symphony-api-client-node", "stopDatafeedEventsService")
-  @js.native
-  def stopDatafeedEventsService(): Unit = js.native
+  @scala.inline
+  def stopDatafeedEventsService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopDatafeedEventsService")().asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "stopFirehoseEventsService")
-  @js.native
-  def stopFirehoseEventsService(): Unit = js.native
+  @scala.inline
+  def stopFirehoseEventsService(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopFirehoseEventsService")().asInstanceOf[Unit]
   
-  @JSImport("symphony-api-client-node", "streamMembers")
-  @js.native
-  def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = js.native
+  @scala.inline
+  def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamMembers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StreamMembers_]]
   
-  @JSImport("symphony-api-client-node", "subscribeSignal")
-  @js.native
-  def subscribeSignal(id: String, userIds: js.Array[Double], userCanUnsubscribe: Boolean, sessionToken: String): js.Promise[SignalSubscriptionResult] = js.native
+  @scala.inline
+  def subscribeSignal(id: String, userIds: js.Array[Double], userCanUnsubscribe: Boolean, sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], userCanUnsubscribe.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
   
-  @JSImport("symphony-api-client-node", "suppressMessage")
-  @js.native
-  def suppressMessage(id: String): js.Promise[SuppressedMessage] = js.native
+  @scala.inline
+  def suppressMessage(id: String): js.Promise[SuppressedMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressMessage")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuppressedMessage]]
   
-  @JSImport("symphony-api-client-node", "unsubscribeSignal")
-  @js.native
-  def unsubscribeSignal(id: String, userIds: js.Array[Double], sessionToken: String): js.Promise[SignalSubscriptionResult] = js.native
+  @scala.inline
+  def unsubscribeSignal(id: String, userIds: js.Array[Double], sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
   
-  @JSImport("symphony-api-client-node", "updateRoom")
-  @js.native
+  @scala.inline
   def updateRoom(
     streamId: String,
     room: String,
@@ -512,255 +402,19 @@ object mod {
     copyProtected: js.UndefOr[Boolean],
     crossPod: js.UndefOr[Boolean],
     viewHistory: js.UndefOr[Boolean]
-  ): js.Promise[RoomInfo] = js.native
+  ): js.Promise[RoomInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRoom")(streamId.asInstanceOf[js.Any], room.asInstanceOf[js.Any], description.asInstanceOf[js.Any], keywords.asInstanceOf[js.Any], membersCanInvite.asInstanceOf[js.Any], discoverable.asInstanceOf[js.Any], anyoneCanJoin.asInstanceOf[js.Any], readOnly.asInstanceOf[js.Any], copyProtected.asInstanceOf[js.Any], crossPod.asInstanceOf[js.Any], viewHistory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RoomInfo]]
   
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: js.UndefOr[scala.Nothing], query: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: js.UndefOr[scala.Nothing], query: String, visibleOnProfile: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: js.UndefOr[scala.Nothing], visibleOnProfile: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node", "updateSignal")
-  @js.native
+  @scala.inline
+  def updateSignal(id: String): js.Promise[Signal] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
   def updateSignal(
     id: String,
     name: String,
@@ -768,18 +422,173 @@ object mod {
     visibleOnProfile: Boolean,
     companyWide: Boolean,
     sessionToken: String
-  ): js.Promise[Signal] = js.native
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: String,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Boolean,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @JSImport("symphony-api-client-node", "verifyJwt")
-  @js.native
-  def verifyJwt(jwt: String): js.Promise[String] = js.native
+  @scala.inline
+  def verifyJwt(jwt: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyJwt")(jwt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
   trait AppInfo extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    var appToken: String = js.native
+    var appToken: String
   }
   object AppInfo {
     
@@ -800,12 +609,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthInfo extends StObject {
     
-    var kmAuthToken: String = js.native
+    var kmAuthToken: String
     
-    var sessionAuthToken: String = js.native
+    var sessionAuthToken: String
   }
   object AuthInfo {
     
@@ -826,82 +634,81 @@ object mod {
     }
   }
   
-  @js.native
   trait SymphonyConfiguration extends StObject {
     
-    var agentContextPath: js.UndefOr[String] = js.native
+    var agentContextPath: js.UndefOr[String] = js.undefined
     
-    var agentHost: js.UndefOr[String] = js.native
+    var agentHost: js.UndefOr[String] = js.undefined
     
-    var agentPort: js.UndefOr[Double] = js.native
+    var agentPort: js.UndefOr[Double] = js.undefined
     
-    var appCertName: js.UndefOr[String] = js.native
+    var appCertName: js.UndefOr[String] = js.undefined
     
-    var appCertPassword: js.UndefOr[String] = js.native
+    var appCertPassword: js.UndefOr[String] = js.undefined
     
-    var appCertPath: js.UndefOr[String] = js.native
+    var appCertPath: js.UndefOr[String] = js.undefined
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var appPrivateKeyName: js.UndefOr[String] = js.native
+    var appPrivateKeyName: js.UndefOr[String] = js.undefined
     
-    var appPrivateKeyPath: js.UndefOr[String] = js.native
+    var appPrivateKeyPath: js.UndefOr[String] = js.undefined
     
-    var botCertName: js.UndefOr[String] = js.native
+    var botCertName: js.UndefOr[String] = js.undefined
     
-    var botCertPassword: js.UndefOr[String] = js.native
+    var botCertPassword: js.UndefOr[String] = js.undefined
     
-    var botCertPath: js.UndefOr[String] = js.native
+    var botCertPath: js.UndefOr[String] = js.undefined
     
-    var botEmailAddress: js.UndefOr[String] = js.native
+    var botEmailAddress: js.UndefOr[String] = js.undefined
     
-    var botPrivateKeyName: js.UndefOr[String] = js.native
+    var botPrivateKeyName: js.UndefOr[String] = js.undefined
     
-    var botPrivateKeyPath: js.UndefOr[String] = js.native
+    var botPrivateKeyPath: js.UndefOr[String] = js.undefined
     
-    var botUsername: js.UndefOr[String] = js.native
+    var botUsername: js.UndefOr[String] = js.undefined
     
-    var keyAuthContextPath: js.UndefOr[String] = js.native
+    var keyAuthContextPath: js.UndefOr[String] = js.undefined
     
-    var keyAuthHost: js.UndefOr[String] = js.native
+    var keyAuthHost: js.UndefOr[String] = js.undefined
     
-    var keyAuthPort: js.UndefOr[Double] = js.native
+    var keyAuthPort: js.UndefOr[Double] = js.undefined
     
-    var keyManagerProxyPassword: js.UndefOr[String] = js.native
+    var keyManagerProxyPassword: js.UndefOr[String] = js.undefined
     
-    var keyManagerProxyURL: js.UndefOr[String] = js.native
+    var keyManagerProxyURL: js.UndefOr[String] = js.undefined
     
-    var keyManagerProxyUsername: js.UndefOr[String] = js.native
+    var keyManagerProxyUsername: js.UndefOr[String] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var maxWaitInterval: js.UndefOr[Double] = js.native
+    var maxWaitInterval: js.UndefOr[Double] = js.undefined
     
-    var nodeTlsRejectUnauthorized: js.UndefOr[Double] = js.native
+    var nodeTlsRejectUnauthorized: js.UndefOr[Double] = js.undefined
     
-    var podContextPath: js.UndefOr[String] = js.native
+    var podContextPath: js.UndefOr[String] = js.undefined
     
-    var podHost: js.UndefOr[String] = js.native
+    var podHost: js.UndefOr[String] = js.undefined
     
-    var podPort: js.UndefOr[Double] = js.native
+    var podPort: js.UndefOr[Double] = js.undefined
     
-    var podProxyPassword: js.UndefOr[String] = js.native
+    var podProxyPassword: js.UndefOr[String] = js.undefined
     
-    var podProxyURL: js.UndefOr[String] = js.native
+    var podProxyURL: js.UndefOr[String] = js.undefined
     
-    var podProxyUsername: js.UndefOr[String] = js.native
+    var podProxyUsername: js.UndefOr[String] = js.undefined
     
-    var proxyPassword: js.UndefOr[String] = js.native
+    var proxyPassword: js.UndefOr[String] = js.undefined
     
-    var proxyURL: js.UndefOr[String] = js.native
+    var proxyURL: js.UndefOr[String] = js.undefined
     
-    var proxyUsername: js.UndefOr[String] = js.native
+    var proxyUsername: js.UndefOr[String] = js.undefined
     
-    var sessionAuthContextPath: js.UndefOr[String] = js.native
+    var sessionAuthContextPath: js.UndefOr[String] = js.undefined
     
-    var sessionAuthHost: js.UndefOr[String] = js.native
+    var sessionAuthHost: js.UndefOr[String] = js.undefined
     
-    var sessionAuthPort: js.UndefOr[Double] = js.native
+    var sessionAuthPort: js.UndefOr[Double] = js.undefined
   }
   object SymphonyConfiguration {
     

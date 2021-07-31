@@ -18,58 +18,54 @@ import typings.angularCompiler.srcUtilMod.OutputContext
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewCompilerMod {
   
-  @JSImport("@angular/compiler/src/render3/view/compiler", "compileComponentFromMetadata")
+  @JSImport("@angular/compiler/src/render3/view/compiler", JSImport.Namespace)
   @js.native
-  def compileComponentFromMetadata(meta: R3ComponentMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3ComponentDef = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/src/render3/view/compiler", "compileComponentFromRender2")
-  @js.native
+  @scala.inline
+  def compileComponentFromMetadata(meta: R3ComponentMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3ComponentDef = (^.asInstanceOf[js.Dynamic].applyDynamic("compileComponentFromMetadata")(meta.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[R3ComponentDef]
+  
+  @scala.inline
   def compileComponentFromRender2(
     outputCtx: OutputContext,
     component: CompileDirectiveMetadata,
     render3Ast: Render3ParseResult,
     reflector: CompileReflector,
     bindingParser: BindingParser,
-    directiveTypeBySel: Map[String, _],
-    pipeTypeByName: Map[String, _]
-  ): Unit = js.native
+    directiveTypeBySel: Map[String, js.Any],
+    pipeTypeByName: Map[String, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileComponentFromRender2")(outputCtx.asInstanceOf[js.Any], component.asInstanceOf[js.Any], render3Ast.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any], directiveTypeBySel.asInstanceOf[js.Any], pipeTypeByName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@angular/compiler/src/render3/view/compiler", "compileDirectiveFromMetadata")
-  @js.native
-  def compileDirectiveFromMetadata(meta: R3DirectiveMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3DirectiveDef = js.native
+  @scala.inline
+  def compileDirectiveFromMetadata(meta: R3DirectiveMetadata, constantPool: ConstantPool, bindingParser: BindingParser): R3DirectiveDef = (^.asInstanceOf[js.Dynamic].applyDynamic("compileDirectiveFromMetadata")(meta.asInstanceOf[js.Any], constantPool.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[R3DirectiveDef]
   
-  @JSImport("@angular/compiler/src/render3/view/compiler", "compileDirectiveFromRender2")
-  @js.native
+  @scala.inline
   def compileDirectiveFromRender2(
     outputCtx: OutputContext,
     directive: CompileDirectiveMetadata,
     reflector: CompileReflector,
     bindingParser: BindingParser
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileDirectiveFromRender2")(outputCtx.asInstanceOf[js.Any], directive.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], bindingParser.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@angular/compiler/src/render3/view/compiler", "parseHostBindings")
-  @js.native
-  def parseHostBindings(host: StringDictionary[String | Expression]): ParsedHostBindings = js.native
+  @scala.inline
+  def parseHostBindings(host: StringDictionary[String | Expression]): ParsedHostBindings = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHostBindings")(host.asInstanceOf[js.Any]).asInstanceOf[ParsedHostBindings]
   
-  @JSImport("@angular/compiler/src/render3/view/compiler", "verifyHostBindings")
-  @js.native
-  def verifyHostBindings(bindings: ParsedHostBindings, sourceSpan: ParseSourceSpan): js.Array[ParseError] = js.native
+  @scala.inline
+  def verifyHostBindings(bindings: ParsedHostBindings, sourceSpan: ParseSourceSpan): js.Array[ParseError] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyHostBindings")(bindings.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseError]]
   
-  @js.native
   trait ParsedHostBindings extends StObject {
     
-    var attributes: StringDictionary[Expression] = js.native
+    var attributes: StringDictionary[Expression]
     
-    var listeners: StringDictionary[String] = js.native
+    var listeners: StringDictionary[String]
     
-    var properties: StringDictionary[String] = js.native
+    var properties: StringDictionary[String]
     
-    var specialAttributes: ClassAttr = js.native
+    var specialAttributes: ClassAttr
   }
   object ParsedHostBindings {
     

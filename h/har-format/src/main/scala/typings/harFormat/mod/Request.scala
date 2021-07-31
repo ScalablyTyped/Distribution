@@ -2,10 +2,8 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait Request extends StObject {
     *
     * Set to `-1` if the info is not available.
     */
-  var bodySize: Double = js.native
+  var bodySize: Double
   
   /**  A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** List of cookie objects. */
-  var cookies: js.Array[Cookie] = js.native
+  var cookies: js.Array[Cookie]
   
   /** List of header objects. */
-  var headers: js.Array[Header] = js.native
+  var headers: js.Array[Header]
   
   /**
     * Total number of bytes from the start of the HTTP request message until
@@ -30,22 +28,22 @@ trait Request extends StObject {
     *
     * Set to `-1` if the info is not available.
     */
-  var headersSize: Double = js.native
+  var headersSize: Double
   
   /** Request HTTP Version. */
-  var httpVersion: String = js.native
+  var httpVersion: String
   
   /** Request method (`GET`, `POST`, ...). */
-  var method: String = js.native
+  var method: String
   
   /** Posted data info. */
-  var postData: js.UndefOr[PostData] = js.native
+  var postData: js.UndefOr[PostData] = js.undefined
   
   /** List of query parameter objects. */
-  var queryString: js.Array[QueryString] = js.native
+  var queryString: js.Array[QueryString]
   
   /** Absolute URL of the request (fragments are not included). */
-  var url: String = js.native
+  var url: String
 }
 object Request {
   

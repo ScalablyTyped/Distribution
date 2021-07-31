@@ -2,31 +2,29 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIpGroupRequest extends StObject {
   
   /**
     * The description of the group.
     */
-  var GroupDesc: js.UndefOr[IpGroupDesc] = js.native
+  var GroupDesc: js.UndefOr[IpGroupDesc] = js.undefined
   
   /**
     * The name of the group.
     */
-  var GroupName: IpGroupName = js.native
+  var GroupName: IpGroupName
   
   /**
     * The tags. Each WorkSpaces resource can have a maximum of 50 tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The rules to add to the group.
     */
-  var UserRules: js.UndefOr[IpRuleList] = js.native
+  var UserRules: js.UndefOr[IpRuleList] = js.undefined
 }
 object CreateIpGroupRequest {
   

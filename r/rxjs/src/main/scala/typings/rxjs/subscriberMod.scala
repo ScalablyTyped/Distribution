@@ -4,7 +4,6 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.PartialObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberMod {
@@ -17,12 +16,12 @@ object subscriberMod {
     def this(_parentSubscriber: Subscriber[T], observerOrNext: PartialObserver[T]) = this()
     def this(
       _parentSubscriber: Subscriber[T],
-      observerOrNext: js.UndefOr[scala.Nothing],
+      observerOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
     def this(
       _parentSubscriber: Subscriber[T],
-      observerOrNext: js.Function1[/* value */ T, Unit],
+      observerOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
     def this(
@@ -32,38 +31,33 @@ object subscriberMod {
     ) = this()
     def this(
       _parentSubscriber: Subscriber[T],
-      observerOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      _parentSubscriber: Subscriber[T],
-      observerOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      _parentSubscriber: Subscriber[T],
-      observerOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      _parentSubscriber: Subscriber[T],
       observerOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
     def this(
       _parentSubscriber: Subscriber[T],
+      observerOrNext: js.Function1[/* value */ T, Unit],
+      error: Unit,
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
+      observerOrNext: Unit,
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(_parentSubscriber: Subscriber[T], observerOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
       observerOrNext: PartialObserver[T],
-      error: js.UndefOr[scala.Nothing],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
     def this(
       _parentSubscriber: Subscriber[T],
       observerOrNext: PartialObserver[T],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      error: Unit,
       complete: js.Function0[Unit]
     ) = this()
     
@@ -92,46 +86,31 @@ object subscriberMod {
     */
   class Subscriber[T] () extends Subscription {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
-    def this(destinationOrNext: PartialObserver[_]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
-    def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: js.Function1[/* value */ T, Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
+    def this(destinationOrNext: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: js.Function1[/* value */ T, Unit], error: Unit, complete: js.Function0[Unit]) = this()
     def this(
-      destinationOrNext: PartialObserver[_],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ) = this()
-    def this(
-      destinationOrNext: PartialObserver[_],
+      destinationOrNext: Unit,
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
     ) = this()
+    def this(destinationOrNext: Unit, error: Unit, complete: js.Function0[Unit]) = this()
+    def this(
+      destinationOrNext: PartialObserver[js.Any],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(destinationOrNext: PartialObserver[js.Any], error: Unit, complete: js.Function0[Unit]) = this()
     
     /* protected */ def _complete(): Unit = js.native
     
@@ -150,7 +129,7 @@ object subscriberMod {
       */
     def complete(): Unit = js.native
     
-    var destination: PartialObserver[_] | Subscriber[_] = js.native
+    var destination: PartialObserver[js.Any] | Subscriber[js.Any] = js.native
     
     /**
       * The {@link Observer} callback to receive notifications of type `error` from
@@ -183,6 +162,10 @@ object subscriberMod {
   /* static members */
   object Subscriber {
     
+    @JSImport("rxjs/internal/Subscriber", "Subscriber")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A static factory for a Subscriber, given a (potentially partial) definition
       * of an Observer.
@@ -195,44 +178,28 @@ object subscriberMod {
       * Observer represented by the given arguments.
       * @nocollapse
       */
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
-    def create[T](): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
-    def create[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
-    def create[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
-    def create[T](
-      next: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
-      complete: js.Function0[Unit]
-    ): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
-    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
-    def create[T](
-      next: js.Function1[/* x */ js.UndefOr[T], Unit],
-      error: js.UndefOr[scala.Nothing],
-      complete: js.Function0[Unit]
-    ): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
+    @scala.inline
+    def create[T](): Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Subscriber[T]]
+    @scala.inline
+    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): Subscriber[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any]).asInstanceOf[Subscriber[T]]
+    @scala.inline
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
-    ): Subscriber[T] = js.native
-    @JSImport("rxjs/internal/Subscriber", "Subscriber.create")
-    @js.native
+    ): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    @scala.inline
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
       complete: js.Function0[Unit]
-    ): Subscriber[T] = js.native
+    ): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    @scala.inline
+    def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit], error: Unit, complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: js.Function1[/* e */ js.UndefOr[js.Any], Unit], complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
+    @scala.inline
+    def create[T](next: Unit, error: Unit, complete: js.Function0[Unit]): Subscriber[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(next.asInstanceOf[js.Any], error.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Subscriber[T]]
   }
 }

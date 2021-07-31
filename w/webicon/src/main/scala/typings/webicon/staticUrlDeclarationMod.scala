@@ -3,16 +3,16 @@ package typings.webicon
 import typings.webicon.urlDeclarationBaseMod.UrlDeclarationBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticUrlDeclarationMod {
   
-  @js.native
-  trait StaticUrlDeclaration extends UrlDeclarationBase {
+  trait StaticUrlDeclaration
+    extends StObject
+       with UrlDeclarationBase {
     
     @JSName("url")
-    var url_StaticUrlDeclaration: js.UndefOr[String] = js.native
+    var url_StaticUrlDeclaration: js.UndefOr[String] = js.undefined
   }
   object StaticUrlDeclaration {
     

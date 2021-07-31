@@ -2,41 +2,39 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackCapabilities extends StObject {
   
-  var aspectRatio: js.UndefOr[DoubleRange] = js.native
+  var aspectRatio: js.UndefOr[DoubleRange] = js.undefined
   
-  var autoGainControl: js.UndefOr[js.Array[scala.Boolean]] = js.native
+  var autoGainControl: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
   
-  var channelCount: js.UndefOr[ULongRange] = js.native
+  var channelCount: js.UndefOr[ULongRange] = js.undefined
   
-  var deviceId: js.UndefOr[java.lang.String] = js.native
+  var deviceId: js.UndefOr[java.lang.String] = js.undefined
   
-  var echoCancellation: js.UndefOr[js.Array[scala.Boolean]] = js.native
+  var echoCancellation: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
   
-  var facingMode: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var facingMode: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var frameRate: js.UndefOr[DoubleRange] = js.native
+  var frameRate: js.UndefOr[DoubleRange] = js.undefined
   
-  var groupId: js.UndefOr[java.lang.String] = js.native
+  var groupId: js.UndefOr[java.lang.String] = js.undefined
   
-  var height: js.UndefOr[ULongRange] = js.native
+  var height: js.UndefOr[ULongRange] = js.undefined
   
-  var latency: js.UndefOr[DoubleRange] = js.native
+  var latency: js.UndefOr[DoubleRange] = js.undefined
   
-  var noiseSuppression: js.UndefOr[js.Array[scala.Boolean]] = js.native
+  var noiseSuppression: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
   
-  var resizeMode: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var resizeMode: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var sampleRate: js.UndefOr[ULongRange] = js.native
+  var sampleRate: js.UndefOr[ULongRange] = js.undefined
   
-  var sampleSize: js.UndefOr[ULongRange] = js.native
+  var sampleSize: js.UndefOr[ULongRange] = js.undefined
   
-  var width: js.UndefOr[ULongRange] = js.native
+  var width: js.UndefOr[ULongRange] = js.undefined
 }
 object MediaTrackCapabilities {
   

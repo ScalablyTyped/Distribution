@@ -2,16 +2,14 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Precondition extends StObject {
   
   /**
     * If set, the last update time to enforce.
     */
-  val lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  val lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
 }
 object Precondition {
   

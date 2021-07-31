@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInputDeviceTransfersResponse extends StObject {
   
   /**
     * The list of devices that you are transferring or are being transferred to you.
     */
-  var InputDeviceTransfers: js.UndefOr[listOfTransferringInputDeviceSummary] = js.native
+  var InputDeviceTransfers: js.UndefOr[listOfTransferringInputDeviceSummary] = js.undefined
   
   /**
     * A token to get additional list results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListInputDeviceTransfersResponse {
   

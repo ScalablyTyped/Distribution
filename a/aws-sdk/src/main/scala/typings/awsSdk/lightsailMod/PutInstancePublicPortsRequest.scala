@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutInstancePublicPortsRequest extends StObject {
   
   /**
     * The name of the instance for which to open ports.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
   
   /**
     * An array of objects to describe the ports to open for the specified instance.
     */
-  var portInfos: PortInfoList = js.native
+  var portInfos: PortInfoList
 }
 object PutInstancePublicPortsRequest {
   

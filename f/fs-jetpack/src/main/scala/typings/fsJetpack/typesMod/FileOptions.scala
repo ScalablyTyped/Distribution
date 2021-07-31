@@ -2,17 +2,15 @@ package typings.fsJetpack.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileOptions extends StObject {
   
-  var content: js.UndefOr[WritableData] = js.native
+  var content: js.UndefOr[WritableData] = js.undefined
   
-  var jsonIndent: js.UndefOr[Double] = js.native
+  var jsonIndent: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String | Double] = js.native
+  var mode: js.UndefOr[String | Double] = js.undefined
 }
 object FileOptions {
   

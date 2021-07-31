@@ -2,23 +2,21 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteObjectsOutput extends StObject {
   
   /**
     * Container element for a successful delete. It identifies the object that was successfully deleted.
     */
-  var Deleted: js.UndefOr[DeletedObjects] = js.native
+  var Deleted: js.UndefOr[DeletedObjects] = js.undefined
   
   /**
     * Container for a failed delete operation that describes the object that Amazon S3 attempted to delete and the error it encountered.
     */
-  var Errors: js.UndefOr[typings.awsSdk.s3Mod.Errors] = js.native
+  var Errors: js.UndefOr[typings.awsSdk.s3Mod.Errors] = js.undefined
   
-  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.native
+  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
 }
 object DeleteObjectsOutput {
   

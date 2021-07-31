@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,20 +24,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .addOption(option1)
   *       .addOption(option2);
   */
-@js.native
 trait SelectSingle extends StObject {
   
-  def addOption(optionBuilder: OptionBuilder): SelectSingle = js.native
+  def addOption(optionBuilder: OptionBuilder): SelectSingle
   
-  def setAllowOverride(allowOverride: Boolean): SelectSingle = js.native
+  def setAllowOverride(allowOverride: Boolean): SelectSingle
   
-  def setHelpText(helpText: String): SelectSingle = js.native
+  def setHelpText(helpText: String): SelectSingle
   
-  def setId(id: String): SelectSingle = js.native
+  def setId(id: String): SelectSingle
   
-  def setIsDynamic(isDynamic: Boolean): SelectSingle = js.native
+  def setIsDynamic(isDynamic: Boolean): SelectSingle
   
-  def setName(name: String): SelectSingle = js.native
+  def setName(name: String): SelectSingle
 }
 object SelectSingle {
   

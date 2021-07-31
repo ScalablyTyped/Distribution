@@ -2,31 +2,29 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateScalingPlanRequest extends StObject {
   
   /**
     * A CloudFormation stack or set of tags.
     */
-  var ApplicationSource: js.UndefOr[typings.awsSdk.autoscalingplansMod.ApplicationSource] = js.native
+  var ApplicationSource: js.UndefOr[typings.awsSdk.autoscalingplansMod.ApplicationSource] = js.undefined
   
   /**
     * The scaling instructions.
     */
-  var ScalingInstructions: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingInstructions] = js.native
+  var ScalingInstructions: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingInstructions] = js.undefined
   
   /**
     * The name of the scaling plan.
     */
-  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName = js.native
+  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
   
   /**
     * The version number of the scaling plan.
     */
-  var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion = js.native
+  var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
 }
 object UpdateScalingPlanRequest {
   

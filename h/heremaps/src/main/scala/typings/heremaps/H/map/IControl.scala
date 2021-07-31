@@ -4,7 +4,6 @@ import typings.heremaps.H.map.ViewModel.ILookAtData
 import typings.heremaps.H.util.kinetics.IKinetics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,12 +52,9 @@ trait IControl extends StObject {
     * should return a modified H.map.ViewModel.CameraData which will be set as the final view
     */
   def endControl(): Unit = js.native
-  def endControl(
-    opt_preventKinetics: js.UndefOr[scala.Nothing],
-    opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]
-  ): Unit = js.native
   def endControl(opt_preventKinetics: Boolean): Unit = js.native
   def endControl(opt_preventKinetics: Boolean, opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]): Unit = js.native
+  def endControl(opt_preventKinetics: Unit, opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]): Unit = js.native
   
   /**
     * This method starts control action for camera. This action allows to control camera animation and movement according to provided values in the H.map.IControl#control function
@@ -67,11 +63,11 @@ trait IControl extends StObject {
     * @param opt_atY {number=} - control starts at y screen coordinate
     */
   def startControl(): Unit = js.native
-  def startControl(opt_kinetics: js.UndefOr[scala.Nothing], opt_atX: js.UndefOr[scala.Nothing], opt_atY: Double): Unit = js.native
-  def startControl(opt_kinetics: js.UndefOr[scala.Nothing], opt_atX: Double): Unit = js.native
-  def startControl(opt_kinetics: js.UndefOr[scala.Nothing], opt_atX: Double, opt_atY: Double): Unit = js.native
+  def startControl(opt_kinetics: Unit, opt_atX: Double): Unit = js.native
+  def startControl(opt_kinetics: Unit, opt_atX: Double, opt_atY: Double): Unit = js.native
+  def startControl(opt_kinetics: Unit, opt_atX: Unit, opt_atY: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics): Unit = js.native
-  def startControl(opt_kinetics: IKinetics, opt_atX: js.UndefOr[scala.Nothing], opt_atY: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics, opt_atX: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics, opt_atX: Double, opt_atY: Double): Unit = js.native
+  def startControl(opt_kinetics: IKinetics, opt_atX: Unit, opt_atY: Double): Unit = js.native
 }

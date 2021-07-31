@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BehaviorReplaceModel extends StObject {
   
   /**
     * Color
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Behavior Name
     */
-  var name: String = js.native
+  var name: String
 }
 object BehaviorReplaceModel {
   

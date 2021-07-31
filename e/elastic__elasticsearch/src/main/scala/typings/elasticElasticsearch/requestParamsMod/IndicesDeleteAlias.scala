@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesDeleteAlias extends Generic {
+trait IndicesDeleteAlias
+  extends StObject
+     with Generic {
   
-  var index: String | js.Array[String] = js.native
+  var index: String | js.Array[String]
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var name: String | js.Array[String] = js.native
+  var name: String | js.Array[String]
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object IndicesDeleteAlias {
   

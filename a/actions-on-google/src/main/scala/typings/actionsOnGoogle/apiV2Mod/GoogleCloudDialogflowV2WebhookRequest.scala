@@ -2,19 +2,17 @@ package typings.actionsOnGoogle.apiV2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2WebhookRequest extends StObject {
   
-  var originalDetectIntentRequest: js.UndefOr[GoogleCloudDialogflowV2OriginalDetectIntentRequest] = js.native
+  var originalDetectIntentRequest: js.UndefOr[GoogleCloudDialogflowV2OriginalDetectIntentRequest] = js.undefined
   
-  var queryResult: js.UndefOr[GoogleCloudDialogflowV2QueryResult] = js.native
+  var queryResult: js.UndefOr[GoogleCloudDialogflowV2QueryResult] = js.undefined
   
-  var responseId: js.UndefOr[String] = js.native
+  var responseId: js.UndefOr[String] = js.undefined
   
-  var session: js.UndefOr[String] = js.native
+  var session: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2WebhookRequest {
   

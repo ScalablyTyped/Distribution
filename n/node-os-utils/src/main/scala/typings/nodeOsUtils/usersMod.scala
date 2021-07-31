@@ -2,19 +2,23 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usersMod {
   
   @JSImport("node-os-utils/lib/users", JSImport.Default)
   @js.native
-  class default () extends Users
+  class default ()
+    extends StObject
+       with Users {
+    
+    /* CompleteClass */
+    override def openedCount(): js.Promise[Double | String] = js.native
+  }
   
-  @js.native
   trait Users extends StObject {
     
-    def openedCount(): js.Promise[Double | String] = js.native
+    def openedCount(): js.Promise[Double | String]
   }
   object Users {
     

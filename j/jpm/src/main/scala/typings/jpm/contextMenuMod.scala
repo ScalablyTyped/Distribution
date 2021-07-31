@@ -7,7 +7,6 @@ import typings.std.Array
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMenuMod {
@@ -16,24 +15,25 @@ object contextMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @js.native
-  trait Item extends ItemMenuSeparator {
+  trait Item
+    extends StObject
+       with ItemMenuSeparator {
     
-    var contentScript: js.UndefOr[String | js.Array[String]] = js.native
+    var contentScript: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
+    var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var context: ItemContext = js.native
+    var context: ItemContext
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var image: String | URL = js.native
+    var image: String | URL
     
-    var label: String = js.native
+    var label: String
     
-    var parentMenu: js.UndefOr[Menu] = js.native
+    var parentMenu: js.UndefOr[Menu] = js.undefined
   }
   object Item {
     
@@ -85,28 +85,29 @@ object contextMenuMod {
     }
   }
   
-  @js.native
-  trait Menu extends ItemMenuSeparator {
+  trait Menu
+    extends StObject
+       with ItemMenuSeparator {
     
-    def addItem(item: ItemMenuSeparator): Unit = js.native
+    def addItem(item: ItemMenuSeparator): Unit
     
-    var contentScript: String | js.Array[String] = js.native
+    var contentScript: String | js.Array[String]
     
-    var contentScriptFile: String | js.Array[String] = js.native
+    var contentScriptFile: String | js.Array[String]
     
-    var context: ItemContext = js.native
+    var context: ItemContext
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var image: String | URL = js.native
+    var image: String | URL
     
-    var items: js.Array[ItemMenuSeparator] = js.native
+    var items: js.Array[ItemMenuSeparator]
     
-    var label: String = js.native
+    var label: String
     
-    var parentMenu: js.UndefOr[Menu] = js.native
+    var parentMenu: js.UndefOr[Menu] = js.undefined
     
-    def removeItem(item: ItemMenuSeparator): Unit = js.native
+    def removeItem(item: ItemMenuSeparator): Unit
   }
   object Menu {
     
@@ -162,7 +163,9 @@ object contextMenuMod {
   }
   
   @js.native
-  trait PageContext extends Context {
+  trait PageContext
+    extends StObject
+       with Context {
     
     def apply(): js.Object = js.native
   }
@@ -173,7 +176,9 @@ object contextMenuMod {
   def PageContext_=(x: PageContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PageContext")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait PredicateContext extends Context {
+  trait PredicateContext
+    extends StObject
+       with Context {
     
     def apply(predicateFunction: js.Function1[/* context */ DocumentType, Boolean]): js.Object = js.native
   }
@@ -184,7 +189,9 @@ object contextMenuMod {
   def PredicateContext_=(x: PredicateContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PredicateContext")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait SelectionContext extends Context {
+  trait SelectionContext
+    extends StObject
+       with Context {
     
     def apply(): js.Object = js.native
   }
@@ -195,7 +202,9 @@ object contextMenuMod {
   def SelectionContext_=(x: SelectionContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectionContext")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait SelectorContext extends Context {
+  trait SelectorContext
+    extends StObject
+       with Context {
     
     def apply(selector: String): js.Object = js.native
   }
@@ -205,12 +214,13 @@ object contextMenuMod {
   @scala.inline
   def SelectorContext_=(x: SelectorContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectorContext")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Separator extends ItemMenuSeparator {
+  trait Separator
+    extends StObject
+       with ItemMenuSeparator {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var parentMenu: Menu = js.native
+    var parentMenu: Menu
   }
   object Separator {
     
@@ -230,7 +240,9 @@ object contextMenuMod {
   }
   
   @js.native
-  trait URLContext extends Context {
+  trait URLContext
+    extends StObject
+       with Context {
     
     def apply(matchPattern: String): js.Object = js.native
   }
@@ -243,11 +255,12 @@ object contextMenuMod {
   /**
     * The context determines when the menu item will be visible
     */
-  @js.native
   trait Context extends StObject
   
   @js.native
-  trait ItemContext extends Array[Context] {
+  trait ItemContext
+    extends StObject
+       with Array[Context] {
     
     // a list of Context that also has add, remove methods
     def add(context: Context): Unit = js.native

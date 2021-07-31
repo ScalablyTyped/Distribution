@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotsRequest extends StObject {
   
   /**
     * The identifier of the directory for which to retrieve snapshot information.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The maximum number of objects to return.
     */
-  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.undefined
   
   /**
     * The DescribeSnapshotsResult.NextToken value from a previous call to DescribeSnapshots. Pass null if this is the first call.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * A list of identifiers of the snapshots to obtain the information for. If this member is null or empty, all snapshots are returned using the Limit and NextToken members.
     */
-  var SnapshotIds: js.UndefOr[typings.awsSdk.directoryserviceMod.SnapshotIds] = js.native
+  var SnapshotIds: js.UndefOr[typings.awsSdk.directoryserviceMod.SnapshotIds] = js.undefined
 }
 object DescribeSnapshotsRequest {
   

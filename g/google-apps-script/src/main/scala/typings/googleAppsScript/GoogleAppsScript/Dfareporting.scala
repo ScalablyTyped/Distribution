@@ -272,539 +272,537 @@ import typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.VideoOffset
 import typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.VideoSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dfareporting extends StObject {
   
-  var AccountActiveAdSummaries: js.UndefOr[AccountActiveAdSummariesCollection] = js.native
+  var AccountActiveAdSummaries: js.UndefOr[AccountActiveAdSummariesCollection] = js.undefined
   
-  var AccountPermissionGroups: js.UndefOr[AccountPermissionGroupsCollection] = js.native
+  var AccountPermissionGroups: js.UndefOr[AccountPermissionGroupsCollection] = js.undefined
   
-  var AccountPermissions: js.UndefOr[AccountPermissionsCollection] = js.native
+  var AccountPermissions: js.UndefOr[AccountPermissionsCollection] = js.undefined
   
-  var AccountUserProfiles: js.UndefOr[AccountUserProfilesCollection] = js.native
+  var AccountUserProfiles: js.UndefOr[AccountUserProfilesCollection] = js.undefined
   
-  var Accounts: js.UndefOr[AccountsCollection] = js.native
+  var Accounts: js.UndefOr[AccountsCollection] = js.undefined
   
-  var Ads: js.UndefOr[AdsCollection] = js.native
+  var Ads: js.UndefOr[AdsCollection] = js.undefined
   
-  var AdvertiserGroups: js.UndefOr[AdvertiserGroupsCollection] = js.native
+  var AdvertiserGroups: js.UndefOr[AdvertiserGroupsCollection] = js.undefined
   
-  var AdvertiserLandingPages: js.UndefOr[AdvertiserLandingPagesCollection] = js.native
+  var AdvertiserLandingPages: js.UndefOr[AdvertiserLandingPagesCollection] = js.undefined
   
-  var Advertisers: js.UndefOr[AdvertisersCollection] = js.native
+  var Advertisers: js.UndefOr[AdvertisersCollection] = js.undefined
   
-  var Browsers: js.UndefOr[BrowsersCollection] = js.native
+  var Browsers: js.UndefOr[BrowsersCollection] = js.undefined
   
-  var CampaignCreativeAssociations: js.UndefOr[CampaignCreativeAssociationsCollection] = js.native
+  var CampaignCreativeAssociations: js.UndefOr[CampaignCreativeAssociationsCollection] = js.undefined
   
-  var Campaigns: js.UndefOr[CampaignsCollection] = js.native
+  var Campaigns: js.UndefOr[CampaignsCollection] = js.undefined
   
-  var ChangeLogs: js.UndefOr[ChangeLogsCollection] = js.native
+  var ChangeLogs: js.UndefOr[ChangeLogsCollection] = js.undefined
   
-  var Cities: js.UndefOr[CitiesCollection] = js.native
+  var Cities: js.UndefOr[CitiesCollection] = js.undefined
   
-  var ConnectionTypes: js.UndefOr[ConnectionTypesCollection] = js.native
+  var ConnectionTypes: js.UndefOr[ConnectionTypesCollection] = js.undefined
   
-  var ContentCategories: js.UndefOr[ContentCategoriesCollection] = js.native
+  var ContentCategories: js.UndefOr[ContentCategoriesCollection] = js.undefined
   
-  var Conversions: js.UndefOr[ConversionsCollection] = js.native
+  var Conversions: js.UndefOr[ConversionsCollection] = js.undefined
   
-  var Countries: js.UndefOr[CountriesCollection] = js.native
+  var Countries: js.UndefOr[CountriesCollection] = js.undefined
   
-  var CreativeAssets: js.UndefOr[CreativeAssetsCollection] = js.native
+  var CreativeAssets: js.UndefOr[CreativeAssetsCollection] = js.undefined
   
-  var CreativeFieldValues: js.UndefOr[CreativeFieldValuesCollection] = js.native
+  var CreativeFieldValues: js.UndefOr[CreativeFieldValuesCollection] = js.undefined
   
-  var CreativeFields: js.UndefOr[CreativeFieldsCollection] = js.native
+  var CreativeFields: js.UndefOr[CreativeFieldsCollection] = js.undefined
   
-  var CreativeGroups: js.UndefOr[CreativeGroupsCollection] = js.native
+  var CreativeGroups: js.UndefOr[CreativeGroupsCollection] = js.undefined
   
-  var Creatives: js.UndefOr[CreativesCollection] = js.native
+  var Creatives: js.UndefOr[CreativesCollection] = js.undefined
   
-  var DimensionValues: js.UndefOr[DimensionValuesCollection] = js.native
+  var DimensionValues: js.UndefOr[DimensionValuesCollection] = js.undefined
   
-  var DirectorySites: js.UndefOr[DirectorySitesCollection] = js.native
+  var DirectorySites: js.UndefOr[DirectorySitesCollection] = js.undefined
   
-  var DynamicTargetingKeys: js.UndefOr[DynamicTargetingKeysCollection] = js.native
+  var DynamicTargetingKeys: js.UndefOr[DynamicTargetingKeysCollection] = js.undefined
   
-  var EventTags: js.UndefOr[EventTagsCollection] = js.native
+  var EventTags: js.UndefOr[EventTagsCollection] = js.undefined
   
-  var Files: js.UndefOr[FilesCollection] = js.native
+  var Files: js.UndefOr[FilesCollection] = js.undefined
   
-  var FloodlightActivities: js.UndefOr[FloodlightActivitiesCollection] = js.native
+  var FloodlightActivities: js.UndefOr[FloodlightActivitiesCollection] = js.undefined
   
-  var FloodlightActivityGroups: js.UndefOr[FloodlightActivityGroupsCollection] = js.native
+  var FloodlightActivityGroups: js.UndefOr[FloodlightActivityGroupsCollection] = js.undefined
   
-  var FloodlightConfigurations: js.UndefOr[FloodlightConfigurationsCollection] = js.native
+  var FloodlightConfigurations: js.UndefOr[FloodlightConfigurationsCollection] = js.undefined
   
-  var InventoryItems: js.UndefOr[InventoryItemsCollection] = js.native
+  var InventoryItems: js.UndefOr[InventoryItemsCollection] = js.undefined
   
-  var Languages: js.UndefOr[LanguagesCollection] = js.native
+  var Languages: js.UndefOr[LanguagesCollection] = js.undefined
   
-  var Metros: js.UndefOr[MetrosCollection] = js.native
+  var Metros: js.UndefOr[MetrosCollection] = js.undefined
   
-  var MobileApps: js.UndefOr[MobileAppsCollection] = js.native
+  var MobileApps: js.UndefOr[MobileAppsCollection] = js.undefined
   
-  var MobileCarriers: js.UndefOr[MobileCarriersCollection] = js.native
+  var MobileCarriers: js.UndefOr[MobileCarriersCollection] = js.undefined
   
-  var OperatingSystemVersions: js.UndefOr[OperatingSystemVersionsCollection] = js.native
+  var OperatingSystemVersions: js.UndefOr[OperatingSystemVersionsCollection] = js.undefined
   
-  var OperatingSystems: js.UndefOr[OperatingSystemsCollection] = js.native
+  var OperatingSystems: js.UndefOr[OperatingSystemsCollection] = js.undefined
   
-  var OrderDocuments: js.UndefOr[OrderDocumentsCollection] = js.native
+  var OrderDocuments: js.UndefOr[OrderDocumentsCollection] = js.undefined
   
-  var Orders: js.UndefOr[OrdersCollection] = js.native
+  var Orders: js.UndefOr[OrdersCollection] = js.undefined
   
-  var PlacementGroups: js.UndefOr[PlacementGroupsCollection] = js.native
+  var PlacementGroups: js.UndefOr[PlacementGroupsCollection] = js.undefined
   
-  var PlacementStrategies: js.UndefOr[PlacementStrategiesCollection] = js.native
+  var PlacementStrategies: js.UndefOr[PlacementStrategiesCollection] = js.undefined
   
-  var Placements: js.UndefOr[PlacementsCollection] = js.native
+  var Placements: js.UndefOr[PlacementsCollection] = js.undefined
   
-  var PlatformTypes: js.UndefOr[PlatformTypesCollection] = js.native
+  var PlatformTypes: js.UndefOr[PlatformTypesCollection] = js.undefined
   
-  var PostalCodes: js.UndefOr[PostalCodesCollection] = js.native
+  var PostalCodes: js.UndefOr[PostalCodesCollection] = js.undefined
   
-  var Projects: js.UndefOr[ProjectsCollection] = js.native
+  var Projects: js.UndefOr[ProjectsCollection] = js.undefined
   
-  var Regions: js.UndefOr[RegionsCollection] = js.native
+  var Regions: js.UndefOr[RegionsCollection] = js.undefined
   
-  var RemarketingListShares: js.UndefOr[RemarketingListSharesCollection] = js.native
+  var RemarketingListShares: js.UndefOr[RemarketingListSharesCollection] = js.undefined
   
-  var RemarketingLists: js.UndefOr[RemarketingListsCollection] = js.native
+  var RemarketingLists: js.UndefOr[RemarketingListsCollection] = js.undefined
   
-  var Reports: js.UndefOr[ReportsCollection] = js.native
+  var Reports: js.UndefOr[ReportsCollection] = js.undefined
   
-  var Sites: js.UndefOr[SitesCollection] = js.native
+  var Sites: js.UndefOr[SitesCollection] = js.undefined
   
-  var Sizes: js.UndefOr[SizesCollection] = js.native
+  var Sizes: js.UndefOr[SizesCollection] = js.undefined
   
-  var Subaccounts: js.UndefOr[SubaccountsCollection] = js.native
+  var Subaccounts: js.UndefOr[SubaccountsCollection] = js.undefined
   
-  var TargetableRemarketingLists: js.UndefOr[TargetableRemarketingListsCollection] = js.native
+  var TargetableRemarketingLists: js.UndefOr[TargetableRemarketingListsCollection] = js.undefined
   
-  var TargetingTemplates: js.UndefOr[TargetingTemplatesCollection] = js.native
+  var TargetingTemplates: js.UndefOr[TargetingTemplatesCollection] = js.undefined
   
-  var UserProfiles: js.UndefOr[UserProfilesCollection] = js.native
+  var UserProfiles: js.UndefOr[UserProfilesCollection] = js.undefined
   
-  var UserRolePermissionGroups: js.UndefOr[UserRolePermissionGroupsCollection] = js.native
+  var UserRolePermissionGroups: js.UndefOr[UserRolePermissionGroupsCollection] = js.undefined
   
-  var UserRolePermissions: js.UndefOr[UserRolePermissionsCollection] = js.native
+  var UserRolePermissions: js.UndefOr[UserRolePermissionsCollection] = js.undefined
   
-  var UserRoles: js.UndefOr[UserRolesCollection] = js.native
+  var UserRoles: js.UndefOr[UserRolesCollection] = js.undefined
   
-  var VideoFormats: js.UndefOr[VideoFormatsCollection] = js.native
+  var VideoFormats: js.UndefOr[VideoFormatsCollection] = js.undefined
   
   // Create a new instance of Account
-  def newAccount(): Account = js.native
+  def newAccount(): Account
   
   // Create a new instance of AccountUserProfile
-  def newAccountUserProfile(): AccountUserProfile = js.native
+  def newAccountUserProfile(): AccountUserProfile
   
   // Create a new instance of Activities
-  def newActivities(): Activities = js.native
+  def newActivities(): Activities
   
   // Create a new instance of Ad
-  def newAd(): Ad = js.native
+  def newAd(): Ad
   
   // Create a new instance of AdBlockingConfiguration
-  def newAdBlockingConfiguration(): AdBlockingConfiguration = js.native
+  def newAdBlockingConfiguration(): AdBlockingConfiguration
   
   // Create a new instance of Advertiser
-  def newAdvertiser(): Advertiser = js.native
+  def newAdvertiser(): Advertiser
   
   // Create a new instance of AdvertiserGroup
-  def newAdvertiserGroup(): AdvertiserGroup = js.native
+  def newAdvertiserGroup(): AdvertiserGroup
   
   // Create a new instance of AudienceSegment
-  def newAudienceSegment(): AudienceSegment = js.native
+  def newAudienceSegment(): AudienceSegment
   
   // Create a new instance of AudienceSegmentGroup
-  def newAudienceSegmentGroup(): AudienceSegmentGroup = js.native
+  def newAudienceSegmentGroup(): AudienceSegmentGroup
   
   // Create a new instance of Browser
-  def newBrowser(): Browser = js.native
+  def newBrowser(): Browser
   
   // Create a new instance of Campaign
-  def newCampaign(): Campaign = js.native
+  def newCampaign(): Campaign
   
   // Create a new instance of CampaignCreativeAssociation
-  def newCampaignCreativeAssociation(): CampaignCreativeAssociation = js.native
+  def newCampaignCreativeAssociation(): CampaignCreativeAssociation
   
   // Create a new instance of City
-  def newCity(): City = js.native
+  def newCity(): City
   
   // Create a new instance of ClickTag
-  def newClickTag(): ClickTag = js.native
+  def newClickTag(): ClickTag
   
   // Create a new instance of ClickThroughUrl
-  def newClickThroughUrl(): ClickThroughUrl = js.native
+  def newClickThroughUrl(): ClickThroughUrl
   
   // Create a new instance of ClickThroughUrlSuffixProperties
-  def newClickThroughUrlSuffixProperties(): ClickThroughUrlSuffixProperties = js.native
+  def newClickThroughUrlSuffixProperties(): ClickThroughUrlSuffixProperties
   
   // Create a new instance of CompanionClickThroughOverride
-  def newCompanionClickThroughOverride(): CompanionClickThroughOverride = js.native
+  def newCompanionClickThroughOverride(): CompanionClickThroughOverride
   
   // Create a new instance of CompanionSetting
-  def newCompanionSetting(): CompanionSetting = js.native
+  def newCompanionSetting(): CompanionSetting
   
   // Create a new instance of ConnectionType
-  def newConnectionType(): ConnectionType = js.native
+  def newConnectionType(): ConnectionType
   
   // Create a new instance of ContentCategory
-  def newContentCategory(): ContentCategory = js.native
+  def newContentCategory(): ContentCategory
   
   // Create a new instance of Conversion
-  def newConversion(): Conversion = js.native
+  def newConversion(): Conversion
   
   // Create a new instance of ConversionsBatchInsertRequest
-  def newConversionsBatchInsertRequest(): ConversionsBatchInsertRequest = js.native
+  def newConversionsBatchInsertRequest(): ConversionsBatchInsertRequest
   
   // Create a new instance of ConversionsBatchUpdateRequest
-  def newConversionsBatchUpdateRequest(): ConversionsBatchUpdateRequest = js.native
+  def newConversionsBatchUpdateRequest(): ConversionsBatchUpdateRequest
   
   // Create a new instance of Country
-  def newCountry(): Country = js.native
+  def newCountry(): Country
   
   // Create a new instance of Creative
-  def newCreative(): Creative = js.native
+  def newCreative(): Creative
   
   // Create a new instance of CreativeAsset
-  def newCreativeAsset(): CreativeAsset = js.native
+  def newCreativeAsset(): CreativeAsset
   
   // Create a new instance of CreativeAssetId
-  def newCreativeAssetId(): CreativeAssetId = js.native
+  def newCreativeAssetId(): CreativeAssetId
   
   // Create a new instance of CreativeAssetMetadata
-  def newCreativeAssetMetadata(): CreativeAssetMetadata = js.native
+  def newCreativeAssetMetadata(): CreativeAssetMetadata
   
   // Create a new instance of CreativeAssetSelection
-  def newCreativeAssetSelection(): CreativeAssetSelection = js.native
+  def newCreativeAssetSelection(): CreativeAssetSelection
   
   // Create a new instance of CreativeAssignment
-  def newCreativeAssignment(): CreativeAssignment = js.native
+  def newCreativeAssignment(): CreativeAssignment
   
   // Create a new instance of CreativeClickThroughUrl
-  def newCreativeClickThroughUrl(): CreativeClickThroughUrl = js.native
+  def newCreativeClickThroughUrl(): CreativeClickThroughUrl
   
   // Create a new instance of CreativeCustomEvent
-  def newCreativeCustomEvent(): CreativeCustomEvent = js.native
+  def newCreativeCustomEvent(): CreativeCustomEvent
   
   // Create a new instance of CreativeField
-  def newCreativeField(): CreativeField = js.native
+  def newCreativeField(): CreativeField
   
   // Create a new instance of CreativeFieldAssignment
-  def newCreativeFieldAssignment(): CreativeFieldAssignment = js.native
+  def newCreativeFieldAssignment(): CreativeFieldAssignment
   
   // Create a new instance of CreativeFieldValue
-  def newCreativeFieldValue(): CreativeFieldValue = js.native
+  def newCreativeFieldValue(): CreativeFieldValue
   
   // Create a new instance of CreativeGroup
-  def newCreativeGroup(): CreativeGroup = js.native
+  def newCreativeGroup(): CreativeGroup
   
   // Create a new instance of CreativeGroupAssignment
-  def newCreativeGroupAssignment(): CreativeGroupAssignment = js.native
+  def newCreativeGroupAssignment(): CreativeGroupAssignment
   
   // Create a new instance of CreativeOptimizationConfiguration
-  def newCreativeOptimizationConfiguration(): CreativeOptimizationConfiguration = js.native
+  def newCreativeOptimizationConfiguration(): CreativeOptimizationConfiguration
   
   // Create a new instance of CreativeRotation
-  def newCreativeRotation(): CreativeRotation = js.native
+  def newCreativeRotation(): CreativeRotation
   
   // Create a new instance of CustomFloodlightVariable
-  def newCustomFloodlightVariable(): CustomFloodlightVariable = js.native
+  def newCustomFloodlightVariable(): CustomFloodlightVariable
   
   // Create a new instance of CustomRichMediaEvents
-  def newCustomRichMediaEvents(): CustomRichMediaEvents = js.native
+  def newCustomRichMediaEvents(): CustomRichMediaEvents
   
   // Create a new instance of CustomViewabilityMetric
-  def newCustomViewabilityMetric(): CustomViewabilityMetric = js.native
+  def newCustomViewabilityMetric(): CustomViewabilityMetric
   
   // Create a new instance of CustomViewabilityMetricConfiguration
-  def newCustomViewabilityMetricConfiguration(): CustomViewabilityMetricConfiguration = js.native
+  def newCustomViewabilityMetricConfiguration(): CustomViewabilityMetricConfiguration
   
   // Create a new instance of DateRange
-  def newDateRange(): DateRange = js.native
+  def newDateRange(): DateRange
   
   // Create a new instance of DayPartTargeting
-  def newDayPartTargeting(): DayPartTargeting = js.native
+  def newDayPartTargeting(): DayPartTargeting
   
   // Create a new instance of DeepLink
-  def newDeepLink(): DeepLink = js.native
+  def newDeepLink(): DeepLink
   
   // Create a new instance of DefaultClickThroughEventTagProperties
-  def newDefaultClickThroughEventTagProperties(): DefaultClickThroughEventTagProperties = js.native
+  def newDefaultClickThroughEventTagProperties(): DefaultClickThroughEventTagProperties
   
   // Create a new instance of DeliverySchedule
-  def newDeliverySchedule(): DeliverySchedule = js.native
+  def newDeliverySchedule(): DeliverySchedule
   
   // Create a new instance of DfpSettings
-  def newDfpSettings(): DfpSettings = js.native
+  def newDfpSettings(): DfpSettings
   
   // Create a new instance of DimensionFilter
-  def newDimensionFilter(): DimensionFilter = js.native
+  def newDimensionFilter(): DimensionFilter
   
   // Create a new instance of DimensionValue
-  def newDimensionValue(): DimensionValue = js.native
+  def newDimensionValue(): DimensionValue
   
   // Create a new instance of DimensionValueRequest
-  def newDimensionValueRequest(): DimensionValueRequest = js.native
+  def newDimensionValueRequest(): DimensionValueRequest
   
   // Create a new instance of DirectorySite
-  def newDirectorySite(): DirectorySite = js.native
+  def newDirectorySite(): DirectorySite
   
   // Create a new instance of DirectorySiteSettings
-  def newDirectorySiteSettings(): DirectorySiteSettings = js.native
+  def newDirectorySiteSettings(): DirectorySiteSettings
   
   // Create a new instance of DynamicTargetingKey
-  def newDynamicTargetingKey(): DynamicTargetingKey = js.native
+  def newDynamicTargetingKey(): DynamicTargetingKey
   
   // Create a new instance of EncryptionInfo
-  def newEncryptionInfo(): EncryptionInfo = js.native
+  def newEncryptionInfo(): EncryptionInfo
   
   // Create a new instance of EventTag
-  def newEventTag(): EventTag = js.native
+  def newEventTag(): EventTag
   
   // Create a new instance of EventTagOverride
-  def newEventTagOverride(): EventTagOverride = js.native
+  def newEventTagOverride(): EventTagOverride
   
   // Create a new instance of FloodlightActivity
-  def newFloodlightActivity(): FloodlightActivity = js.native
+  def newFloodlightActivity(): FloodlightActivity
   
   // Create a new instance of FloodlightActivityDynamicTag
-  def newFloodlightActivityDynamicTag(): FloodlightActivityDynamicTag = js.native
+  def newFloodlightActivityDynamicTag(): FloodlightActivityDynamicTag
   
   // Create a new instance of FloodlightActivityGroup
-  def newFloodlightActivityGroup(): FloodlightActivityGroup = js.native
+  def newFloodlightActivityGroup(): FloodlightActivityGroup
   
   // Create a new instance of FloodlightActivityPublisherDynamicTag
-  def newFloodlightActivityPublisherDynamicTag(): FloodlightActivityPublisherDynamicTag = js.native
+  def newFloodlightActivityPublisherDynamicTag(): FloodlightActivityPublisherDynamicTag
   
   // Create a new instance of FloodlightConfiguration
-  def newFloodlightConfiguration(): FloodlightConfiguration = js.native
+  def newFloodlightConfiguration(): FloodlightConfiguration
   
   // Create a new instance of FrequencyCap
-  def newFrequencyCap(): FrequencyCap = js.native
+  def newFrequencyCap(): FrequencyCap
   
   // Create a new instance of FsCommand
-  def newFsCommand(): FsCommand = js.native
+  def newFsCommand(): FsCommand
   
   // Create a new instance of GeoTargeting
-  def newGeoTargeting(): GeoTargeting = js.native
+  def newGeoTargeting(): GeoTargeting
   
   // Create a new instance of KeyValueTargetingExpression
-  def newKeyValueTargetingExpression(): KeyValueTargetingExpression = js.native
+  def newKeyValueTargetingExpression(): KeyValueTargetingExpression
   
   // Create a new instance of LandingPage
-  def newLandingPage(): LandingPage = js.native
+  def newLandingPage(): LandingPage
   
   // Create a new instance of Language
-  def newLanguage(): typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language = js.native
+  def newLanguage(): typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language
   
   // Create a new instance of LanguageTargeting
-  def newLanguageTargeting(): LanguageTargeting = js.native
+  def newLanguageTargeting(): LanguageTargeting
   
   // Create a new instance of LastModifiedInfo
-  def newLastModifiedInfo(): LastModifiedInfo = js.native
+  def newLastModifiedInfo(): LastModifiedInfo
   
   // Create a new instance of ListPopulationClause
-  def newListPopulationClause(): ListPopulationClause = js.native
+  def newListPopulationClause(): ListPopulationClause
   
   // Create a new instance of ListPopulationRule
-  def newListPopulationRule(): ListPopulationRule = js.native
+  def newListPopulationRule(): ListPopulationRule
   
   // Create a new instance of ListPopulationTerm
-  def newListPopulationTerm(): ListPopulationTerm = js.native
+  def newListPopulationTerm(): ListPopulationTerm
   
   // Create a new instance of ListTargetingExpression
-  def newListTargetingExpression(): ListTargetingExpression = js.native
+  def newListTargetingExpression(): ListTargetingExpression
   
   // Create a new instance of LookbackConfiguration
-  def newLookbackConfiguration(): LookbackConfiguration = js.native
+  def newLookbackConfiguration(): LookbackConfiguration
   
   // Create a new instance of Metro
-  def newMetro(): Metro = js.native
+  def newMetro(): Metro
   
   // Create a new instance of MobileApp
-  def newMobileApp(): MobileApp = js.native
+  def newMobileApp(): MobileApp
   
   // Create a new instance of MobileCarrier
-  def newMobileCarrier(): MobileCarrier = js.native
+  def newMobileCarrier(): MobileCarrier
   
   // Create a new instance of ObjectFilter
-  def newObjectFilter(): ObjectFilter = js.native
+  def newObjectFilter(): ObjectFilter
   
   // Create a new instance of OffsetPosition
-  def newOffsetPosition(): OffsetPosition = js.native
+  def newOffsetPosition(): OffsetPosition
   
   // Create a new instance of OmnitureSettings
-  def newOmnitureSettings(): OmnitureSettings = js.native
+  def newOmnitureSettings(): OmnitureSettings
   
   // Create a new instance of OperatingSystem
-  def newOperatingSystem(): OperatingSystem = js.native
+  def newOperatingSystem(): OperatingSystem
   
   // Create a new instance of OperatingSystemVersion
-  def newOperatingSystemVersion(): OperatingSystemVersion = js.native
+  def newOperatingSystemVersion(): OperatingSystemVersion
   
   // Create a new instance of OptimizationActivity
-  def newOptimizationActivity(): OptimizationActivity = js.native
+  def newOptimizationActivity(): OptimizationActivity
   
   // Create a new instance of Placement
-  def newPlacement(): Placement = js.native
+  def newPlacement(): Placement
   
   // Create a new instance of PlacementAssignment
-  def newPlacementAssignment(): PlacementAssignment = js.native
+  def newPlacementAssignment(): PlacementAssignment
   
   // Create a new instance of PlacementGroup
-  def newPlacementGroup(): PlacementGroup = js.native
+  def newPlacementGroup(): PlacementGroup
   
   // Create a new instance of PlacementStrategy
-  def newPlacementStrategy(): PlacementStrategy = js.native
+  def newPlacementStrategy(): PlacementStrategy
   
   // Create a new instance of PlatformType
-  def newPlatformType(): PlatformType = js.native
+  def newPlatformType(): PlatformType
   
   // Create a new instance of PopupWindowProperties
-  def newPopupWindowProperties(): PopupWindowProperties = js.native
+  def newPopupWindowProperties(): PopupWindowProperties
   
   // Create a new instance of PostalCode
-  def newPostalCode(): PostalCode = js.native
+  def newPostalCode(): PostalCode
   
   // Create a new instance of PricingSchedule
-  def newPricingSchedule(): PricingSchedule = js.native
+  def newPricingSchedule(): PricingSchedule
   
   // Create a new instance of PricingSchedulePricingPeriod
-  def newPricingSchedulePricingPeriod(): PricingSchedulePricingPeriod = js.native
+  def newPricingSchedulePricingPeriod(): PricingSchedulePricingPeriod
   
   // Create a new instance of Recipient
-  def newRecipient(): Recipient = js.native
+  def newRecipient(): Recipient
   
   // Create a new instance of Region
-  def newRegion(): Region = js.native
+  def newRegion(): Region
   
   // Create a new instance of RemarketingList
-  def newRemarketingList(): RemarketingList = js.native
+  def newRemarketingList(): RemarketingList
   
   // Create a new instance of RemarketingListShare
-  def newRemarketingListShare(): RemarketingListShare = js.native
+  def newRemarketingListShare(): RemarketingListShare
   
   // Create a new instance of Report
-  def newReport(): Report = js.native
+  def newReport(): Report
   
   // Create a new instance of ReportCriteria
-  def newReportCriteria(): ReportCriteria = js.native
+  def newReportCriteria(): ReportCriteria
   
   // Create a new instance of ReportCrossDimensionReachCriteria
-  def newReportCrossDimensionReachCriteria(): ReportCrossDimensionReachCriteria = js.native
+  def newReportCrossDimensionReachCriteria(): ReportCrossDimensionReachCriteria
   
   // Create a new instance of ReportDelivery
-  def newReportDelivery(): ReportDelivery = js.native
+  def newReportDelivery(): ReportDelivery
   
   // Create a new instance of ReportFloodlightCriteria
-  def newReportFloodlightCriteria(): ReportFloodlightCriteria = js.native
+  def newReportFloodlightCriteria(): ReportFloodlightCriteria
   
   // Create a new instance of ReportFloodlightCriteriaReportProperties
-  def newReportFloodlightCriteriaReportProperties(): ReportFloodlightCriteriaReportProperties = js.native
+  def newReportFloodlightCriteriaReportProperties(): ReportFloodlightCriteriaReportProperties
   
   // Create a new instance of ReportPathToConversionCriteria
-  def newReportPathToConversionCriteria(): ReportPathToConversionCriteria = js.native
+  def newReportPathToConversionCriteria(): ReportPathToConversionCriteria
   
   // Create a new instance of ReportPathToConversionCriteriaReportProperties
-  def newReportPathToConversionCriteriaReportProperties(): ReportPathToConversionCriteriaReportProperties = js.native
+  def newReportPathToConversionCriteriaReportProperties(): ReportPathToConversionCriteriaReportProperties
   
   // Create a new instance of ReportReachCriteria
-  def newReportReachCriteria(): ReportReachCriteria = js.native
+  def newReportReachCriteria(): ReportReachCriteria
   
   // Create a new instance of ReportSchedule
-  def newReportSchedule(): ReportSchedule = js.native
+  def newReportSchedule(): ReportSchedule
   
   // Create a new instance of ReportsConfiguration
-  def newReportsConfiguration(): ReportsConfiguration = js.native
+  def newReportsConfiguration(): ReportsConfiguration
   
   // Create a new instance of RichMediaExitOverride
-  def newRichMediaExitOverride(): RichMediaExitOverride = js.native
+  def newRichMediaExitOverride(): RichMediaExitOverride
   
   // Create a new instance of Rule
-  def newRule(): Rule = js.native
+  def newRule(): Rule
   
   // Create a new instance of Site
-  def newSite(): Site = js.native
+  def newSite(): Site
   
   // Create a new instance of SiteCompanionSetting
-  def newSiteCompanionSetting(): SiteCompanionSetting = js.native
+  def newSiteCompanionSetting(): SiteCompanionSetting
   
   // Create a new instance of SiteContact
-  def newSiteContact(): SiteContact = js.native
+  def newSiteContact(): SiteContact
   
   // Create a new instance of SiteSettings
-  def newSiteSettings(): SiteSettings = js.native
+  def newSiteSettings(): SiteSettings
   
   // Create a new instance of SiteSkippableSetting
-  def newSiteSkippableSetting(): SiteSkippableSetting = js.native
+  def newSiteSkippableSetting(): SiteSkippableSetting
   
   // Create a new instance of SiteTranscodeSetting
-  def newSiteTranscodeSetting(): SiteTranscodeSetting = js.native
+  def newSiteTranscodeSetting(): SiteTranscodeSetting
   
   // Create a new instance of SiteVideoSettings
-  def newSiteVideoSettings(): SiteVideoSettings = js.native
+  def newSiteVideoSettings(): SiteVideoSettings
   
   // Create a new instance of Size
-  def newSize(): Size = js.native
+  def newSize(): Size
   
   // Create a new instance of SkippableSetting
-  def newSkippableSetting(): SkippableSetting = js.native
+  def newSkippableSetting(): SkippableSetting
   
   // Create a new instance of SortedDimension
-  def newSortedDimension(): SortedDimension = js.native
+  def newSortedDimension(): SortedDimension
   
   // Create a new instance of Subaccount
-  def newSubaccount(): Subaccount = js.native
+  def newSubaccount(): Subaccount
   
   // Create a new instance of TagSetting
-  def newTagSetting(): TagSetting = js.native
+  def newTagSetting(): TagSetting
   
   // Create a new instance of TagSettings
-  def newTagSettings(): TagSettings = js.native
+  def newTagSettings(): TagSettings
   
   // Create a new instance of TargetWindow
-  def newTargetWindow(): TargetWindow = js.native
+  def newTargetWindow(): TargetWindow
   
   // Create a new instance of TargetingTemplate
-  def newTargetingTemplate(): TargetingTemplate = js.native
+  def newTargetingTemplate(): TargetingTemplate
   
   // Create a new instance of TechnologyTargeting
-  def newTechnologyTargeting(): TechnologyTargeting = js.native
+  def newTechnologyTargeting(): TechnologyTargeting
   
   // Create a new instance of ThirdPartyAuthenticationToken
-  def newThirdPartyAuthenticationToken(): ThirdPartyAuthenticationToken = js.native
+  def newThirdPartyAuthenticationToken(): ThirdPartyAuthenticationToken
   
   // Create a new instance of ThirdPartyTrackingUrl
-  def newThirdPartyTrackingUrl(): ThirdPartyTrackingUrl = js.native
+  def newThirdPartyTrackingUrl(): ThirdPartyTrackingUrl
   
   // Create a new instance of TranscodeSetting
-  def newTranscodeSetting(): TranscodeSetting = js.native
+  def newTranscodeSetting(): TranscodeSetting
   
   // Create a new instance of UniversalAdId
-  def newUniversalAdId(): UniversalAdId = js.native
+  def newUniversalAdId(): UniversalAdId
   
   // Create a new instance of UserDefinedVariableConfiguration
-  def newUserDefinedVariableConfiguration(): UserDefinedVariableConfiguration = js.native
+  def newUserDefinedVariableConfiguration(): UserDefinedVariableConfiguration
   
   // Create a new instance of UserRole
-  def newUserRole(): UserRole = js.native
+  def newUserRole(): UserRole
   
   // Create a new instance of UserRolePermission
-  def newUserRolePermission(): UserRolePermission = js.native
+  def newUserRolePermission(): UserRolePermission
   
   // Create a new instance of VideoOffset
-  def newVideoOffset(): VideoOffset = js.native
+  def newVideoOffset(): VideoOffset
   
   // Create a new instance of VideoSettings
-  def newVideoSettings(): VideoSettings = js.native
+  def newVideoSettings(): VideoSettings
 }
 object Dfareporting {
   
@@ -953,11 +951,10 @@ object Dfareporting {
   
   object Collection {
     
-    @js.native
     trait AccountActiveAdSummariesCollection extends StObject {
       
       // Gets the account's active ad summary by account ID.
-      def get(profileId: String, summaryAccountId: String): AccountActiveAdSummary = js.native
+      def get(profileId: String, summaryAccountId: String): AccountActiveAdSummary
     }
     object AccountActiveAdSummariesCollection {
       
@@ -975,14 +972,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountPermissionGroupsCollection extends StObject {
       
       // Gets one account permission group by ID.
-      def get(profileId: String, id: String): AccountPermissionGroup = js.native
+      def get(profileId: String, id: String): AccountPermissionGroup
       
       // Retrieves the list of account permission groups.
-      def list(profileId: String): AccountPermissionGroupsListResponse = js.native
+      def list(profileId: String): AccountPermissionGroupsListResponse
     }
     object AccountPermissionGroupsCollection {
       
@@ -1006,14 +1002,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountPermissionsCollection extends StObject {
       
       // Gets one account permission by ID.
-      def get(profileId: String, id: String): AccountPermission = js.native
+      def get(profileId: String, id: String): AccountPermission
       
       // Retrieves the list of account permissions.
-      def list(profileId: String): AccountPermissionsListResponse = js.native
+      def list(profileId: String): AccountPermissionsListResponse
     }
     object AccountPermissionsCollection {
       
@@ -1160,11 +1155,10 @@ object Dfareporting {
       def update(resource: Advertiser, profileId: String): Advertiser = js.native
     }
     
-    @js.native
     trait BrowsersCollection extends StObject {
       
       // Retrieves a list of browsers.
-      def list(profileId: String): BrowsersListResponse = js.native
+      def list(profileId: String): BrowsersListResponse
     }
     object BrowsersCollection {
       
@@ -1236,14 +1230,13 @@ object Dfareporting {
       def list(profileId: String, optionalArgs: js.Object): CitiesListResponse = js.native
     }
     
-    @js.native
     trait ConnectionTypesCollection extends StObject {
       
       // Gets one connection type by ID.
-      def get(profileId: String, id: String): ConnectionType = js.native
+      def get(profileId: String, id: String): ConnectionType
       
       // Retrieves a list of connection types.
-      def list(profileId: String): ConnectionTypesListResponse = js.native
+      def list(profileId: String): ConnectionTypesListResponse
     }
     object ConnectionTypesCollection {
       
@@ -1288,14 +1281,13 @@ object Dfareporting {
       def update(resource: ContentCategory, profileId: String): ContentCategory = js.native
     }
     
-    @js.native
     trait ConversionsCollection extends StObject {
       
       // Inserts conversions.
-      def batchinsert(resource: ConversionsBatchInsertRequest, profileId: String): ConversionsBatchInsertResponse = js.native
+      def batchinsert(resource: ConversionsBatchInsertRequest, profileId: String): ConversionsBatchInsertResponse
       
       // Updates existing conversions.
-      def batchupdate(resource: ConversionsBatchUpdateRequest, profileId: String): ConversionsBatchUpdateResponse = js.native
+      def batchupdate(resource: ConversionsBatchUpdateRequest, profileId: String): ConversionsBatchUpdateResponse
     }
     object ConversionsCollection {
       
@@ -1319,14 +1311,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CountriesCollection extends StObject {
       
       // Gets one country by ID.
-      def get(profileId: String, dartId: String): Country = js.native
+      def get(profileId: String, dartId: String): Country
       
       // Retrieves a list of countries.
-      def list(profileId: String): CountriesListResponse = js.native
+      def list(profileId: String): CountriesListResponse
     }
     object CountriesCollection {
       
@@ -1601,11 +1592,10 @@ object Dfareporting {
       def list(profileId: String, projectId: String, optionalArgs: js.Object): InventoryItemsListResponse = js.native
     }
     
-    @js.native
     trait LanguagesCollection extends StObject {
       
       // Retrieves a list of languages.
-      def list(profileId: String): LanguagesListResponse = js.native
+      def list(profileId: String): LanguagesListResponse
     }
     object LanguagesCollection {
       
@@ -1623,11 +1613,10 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait MetrosCollection extends StObject {
       
       // Retrieves a list of metros.
-      def list(profileId: String): MetrosListResponse = js.native
+      def list(profileId: String): MetrosListResponse
     }
     object MetrosCollection {
       
@@ -1657,14 +1646,13 @@ object Dfareporting {
       def list(profileId: String, optionalArgs: js.Object): MobileAppsListResponse = js.native
     }
     
-    @js.native
     trait MobileCarriersCollection extends StObject {
       
       // Gets one mobile carrier by ID.
-      def get(profileId: String, id: String): MobileCarrier = js.native
+      def get(profileId: String, id: String): MobileCarrier
       
       // Retrieves a list of mobile carriers.
-      def list(profileId: String): MobileCarriersListResponse = js.native
+      def list(profileId: String): MobileCarriersListResponse
     }
     object MobileCarriersCollection {
       
@@ -1685,14 +1673,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OperatingSystemVersionsCollection extends StObject {
       
       // Gets one operating system version by ID.
-      def get(profileId: String, id: String): OperatingSystemVersion = js.native
+      def get(profileId: String, id: String): OperatingSystemVersion
       
       // Retrieves a list of operating system versions.
-      def list(profileId: String): OperatingSystemVersionsListResponse = js.native
+      def list(profileId: String): OperatingSystemVersionsListResponse
     }
     object OperatingSystemVersionsCollection {
       
@@ -1716,14 +1703,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OperatingSystemsCollection extends StObject {
       
       // Gets one operating system by DART ID.
-      def get(profileId: String, dartId: String): OperatingSystem = js.native
+      def get(profileId: String, dartId: String): OperatingSystem
       
       // Retrieves a list of operating systems.
-      def list(profileId: String): OperatingSystemsListResponse = js.native
+      def list(profileId: String): OperatingSystemsListResponse
     }
     object OperatingSystemsCollection {
       
@@ -1839,14 +1825,13 @@ object Dfareporting {
       def update(resource: Placement, profileId: String): Placement = js.native
     }
     
-    @js.native
     trait PlatformTypesCollection extends StObject {
       
       // Gets one platform type by ID.
-      def get(profileId: String, id: String): PlatformType = js.native
+      def get(profileId: String, id: String): PlatformType
       
       // Retrieves a list of platform types.
-      def list(profileId: String): PlatformTypesListResponse = js.native
+      def list(profileId: String): PlatformTypesListResponse
     }
     object PlatformTypesCollection {
       
@@ -1867,14 +1852,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PostalCodesCollection extends StObject {
       
       // Gets one postal code by ID.
-      def get(profileId: String, code: String): PostalCode = js.native
+      def get(profileId: String, code: String): PostalCode
       
       // Retrieves a list of postal codes.
-      def list(profileId: String): PostalCodesListResponse = js.native
+      def list(profileId: String): PostalCodesListResponse
     }
     object PostalCodesCollection {
       
@@ -1907,11 +1891,10 @@ object Dfareporting {
       def list(profileId: String, optionalArgs: js.Object): ProjectsListResponse = js.native
     }
     
-    @js.native
     trait RegionsCollection extends StObject {
       
       // Retrieves a list of regions.
-      def list(profileId: String): RegionsListResponse = js.native
+      def list(profileId: String): RegionsListResponse
     }
     object RegionsCollection {
       
@@ -1929,17 +1912,16 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait RemarketingListSharesCollection extends StObject {
       
       // Gets one remarketing list share by remarketing list ID.
-      def get(profileId: String, remarketingListId: String): RemarketingListShare = js.native
+      def get(profileId: String, remarketingListId: String): RemarketingListShare
       
       // Updates an existing remarketing list share. This method supports patch semantics.
-      def patch(resource: RemarketingListShare, profileId: String, remarketingListId: String): RemarketingListShare = js.native
+      def patch(resource: RemarketingListShare, profileId: String, remarketingListId: String): RemarketingListShare
       
       // Updates an existing remarketing list share.
-      def update(resource: RemarketingListShare, profileId: String): RemarketingListShare = js.native
+      def update(resource: RemarketingListShare, profileId: String): RemarketingListShare
     }
     object RemarketingListSharesCollection {
       
@@ -1990,11 +1972,10 @@ object Dfareporting {
     
     object Reports {
       
-      @js.native
       trait CompatibleFieldsCollection extends StObject {
         
         // Returns the fields that are compatible to be selected in the respective sections of a report criteria, given the fields already selected in the input report and user permissions.
-        def query(resource: Report, profileId: String): CompatibleFields = js.native
+        def query(resource: Report, profileId: String): CompatibleFields
       }
       object CompatibleFieldsCollection {
         
@@ -2150,14 +2131,13 @@ object Dfareporting {
       def update(resource: TargetingTemplate, profileId: String): TargetingTemplate = js.native
     }
     
-    @js.native
     trait UserProfilesCollection extends StObject {
       
       // Gets one user profile by ID.
-      def get(profileId: String): UserProfile = js.native
+      def get(profileId: String): UserProfile
       
       // Retrieves list of user profiles for a user.
-      def list(): UserProfileList = js.native
+      def list(): UserProfileList
     }
     object UserProfilesCollection {
       
@@ -2178,14 +2158,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRolePermissionGroupsCollection extends StObject {
       
       // Gets one user role permission group by ID.
-      def get(profileId: String, id: String): UserRolePermissionGroup = js.native
+      def get(profileId: String, id: String): UserRolePermissionGroup
       
       // Gets a list of all supported user role permission groups.
-      def list(profileId: String): UserRolePermissionGroupsListResponse = js.native
+      def list(profileId: String): UserRolePermissionGroupsListResponse
     }
     object UserRolePermissionGroupsCollection {
       
@@ -2245,14 +2224,13 @@ object Dfareporting {
       def update(resource: UserRole, profileId: String): UserRole = js.native
     }
     
-    @js.native
     trait VideoFormatsCollection extends StObject {
       
       // Gets one video format by ID.
-      def get(profileId: String, id: Double): VideoFormat = js.native
+      def get(profileId: String, id: Double): VideoFormat
       
       // Lists available video formats.
-      def list(profileId: String): VideoFormatsListResponse = js.native
+      def list(profileId: String): VideoFormatsListResponse
     }
     object VideoFormatsCollection {
       
@@ -3048,46 +3026,45 @@ object Dfareporting {
   
   object Schema {
     
-    @js.native
     trait Account extends StObject {
       
-      var accountPermissionIds: js.UndefOr[js.Array[String]] = js.native
+      var accountPermissionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var accountProfile: js.UndefOr[String] = js.native
+      var accountProfile: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var activeAdsLimitTier: js.UndefOr[String] = js.native
+      var activeAdsLimitTier: js.UndefOr[String] = js.undefined
       
-      var activeViewOptOut: js.UndefOr[Boolean] = js.native
+      var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
       
-      var availablePermissionIds: js.UndefOr[js.Array[String]] = js.native
+      var availablePermissionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var countryId: js.UndefOr[String] = js.native
+      var countryId: js.UndefOr[String] = js.undefined
       
-      var currencyId: js.UndefOr[String] = js.native
+      var currencyId: js.UndefOr[String] = js.undefined
       
-      var defaultCreativeSizeId: js.UndefOr[String] = js.native
+      var defaultCreativeSizeId: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var maximumImageSize: js.UndefOr[String] = js.native
+      var maximumImageSize: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var nielsenOcrEnabled: js.UndefOr[Boolean] = js.native
+      var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var reportsConfiguration: js.UndefOr[ReportsConfiguration] = js.native
+      var reportsConfiguration: js.UndefOr[ReportsConfiguration] = js.undefined
       
-      var shareReportsWithTwitter: js.UndefOr[Boolean] = js.native
+      var shareReportsWithTwitter: js.UndefOr[Boolean] = js.undefined
       
-      var teaserSizeLimit: js.UndefOr[String] = js.native
+      var teaserSizeLimit: js.UndefOr[String] = js.undefined
     }
     object Account {
       
@@ -3222,18 +3199,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountActiveAdSummary extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var activeAds: js.UndefOr[String] = js.native
+      var activeAds: js.UndefOr[String] = js.undefined
       
-      var activeAdsLimitTier: js.UndefOr[String] = js.native
+      var activeAdsLimitTier: js.UndefOr[String] = js.undefined
       
-      var availableAds: js.UndefOr[String] = js.native
+      var availableAds: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountActiveAdSummary {
       
@@ -3278,20 +3254,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountPermission extends StObject {
       
-      var accountProfiles: js.UndefOr[js.Array[String]] = js.native
+      var accountProfiles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var level: js.UndefOr[String] = js.native
+      var level: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissionGroupId: js.UndefOr[String] = js.native
+      var permissionGroupId: js.UndefOr[String] = js.undefined
     }
     object AccountPermission {
       
@@ -3345,14 +3320,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountPermissionGroup extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object AccountPermissionGroup {
       
@@ -3385,12 +3359,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountPermissionGroupsListResponse extends StObject {
       
-      var accountPermissionGroups: js.UndefOr[js.Array[AccountPermissionGroup]] = js.native
+      var accountPermissionGroups: js.UndefOr[js.Array[AccountPermissionGroup]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountPermissionGroupsListResponse {
       
@@ -3420,12 +3393,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountPermissionsListResponse extends StObject {
       
-      var accountPermissions: js.UndefOr[js.Array[AccountPermission]] = js.native
+      var accountPermissions: js.UndefOr[js.Array[AccountPermission]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AccountPermissionsListResponse {
       
@@ -3455,40 +3427,39 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountUserProfile extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var advertiserFilter: js.UndefOr[ObjectFilter] = js.native
+      var advertiserFilter: js.UndefOr[ObjectFilter] = js.undefined
       
-      var campaignFilter: js.UndefOr[ObjectFilter] = js.native
+      var campaignFilter: js.UndefOr[ObjectFilter] = js.undefined
       
-      var comments: js.UndefOr[String] = js.native
+      var comments: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var siteFilter: js.UndefOr[ObjectFilter] = js.native
+      var siteFilter: js.UndefOr[ObjectFilter] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var traffickerType: js.UndefOr[String] = js.native
+      var traffickerType: js.UndefOr[String] = js.undefined
       
-      var userAccessType: js.UndefOr[String] = js.native
+      var userAccessType: js.UndefOr[String] = js.undefined
       
-      var userRoleFilter: js.UndefOr[ObjectFilter] = js.native
+      var userRoleFilter: js.UndefOr[ObjectFilter] = js.undefined
       
-      var userRoleId: js.UndefOr[String] = js.native
+      var userRoleId: js.UndefOr[String] = js.undefined
     }
     object AccountUserProfile {
       
@@ -3599,14 +3570,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountUserProfilesListResponse extends StObject {
       
-      var accountUserProfiles: js.UndefOr[js.Array[AccountUserProfile]] = js.native
+      var accountUserProfiles: js.UndefOr[js.Array[AccountUserProfile]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AccountUserProfilesListResponse {
       
@@ -3642,14 +3612,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AccountsListResponse extends StObject {
       
-      var accounts: js.UndefOr[js.Array[Account]] = js.native
+      var accounts: js.UndefOr[js.Array[Account]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AccountsListResponse {
       
@@ -3685,14 +3654,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Activities extends StObject {
       
-      var filters: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var filters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metricNames: js.UndefOr[js.Array[String]] = js.native
+      var metricNames: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Activities {
       
@@ -3731,86 +3699,85 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Ad extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var audienceSegmentId: js.UndefOr[String] = js.native
+      var audienceSegmentId: js.UndefOr[String] = js.undefined
       
-      var campaignId: js.UndefOr[String] = js.native
+      var campaignId: js.UndefOr[String] = js.undefined
       
-      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
+      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined
       
-      var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.native
+      var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.undefined
       
-      var comments: js.UndefOr[String] = js.native
+      var comments: js.UndefOr[String] = js.undefined
       
-      var compatibility: js.UndefOr[String] = js.native
+      var compatibility: js.UndefOr[String] = js.undefined
       
-      var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.native
+      var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.undefined
       
-      var creativeRotation: js.UndefOr[CreativeRotation] = js.native
+      var creativeRotation: js.UndefOr[CreativeRotation] = js.undefined
       
-      var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.native
+      var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.undefined
       
-      var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.native
+      var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
       
-      var deliverySchedule: js.UndefOr[DeliverySchedule] = js.native
+      var deliverySchedule: js.UndefOr[DeliverySchedule] = js.undefined
       
-      var dynamicClickTracker: js.UndefOr[Boolean] = js.native
+      var dynamicClickTracker: js.UndefOr[Boolean] = js.undefined
       
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
-      var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.native
+      var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
       
-      var geoTargeting: js.UndefOr[GeoTargeting] = js.native
+      var geoTargeting: js.UndefOr[GeoTargeting] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.native
+      var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var languageTargeting: js.UndefOr[LanguageTargeting] = js.native
+      var languageTargeting: js.UndefOr[LanguageTargeting] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var placementAssignments: js.UndefOr[js.Array[PlacementAssignment]] = js.native
+      var placementAssignments: js.UndefOr[js.Array[PlacementAssignment]] = js.undefined
       
-      var remarketingListExpression: js.UndefOr[ListTargetingExpression] = js.native
+      var remarketingListExpression: js.UndefOr[ListTargetingExpression] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var sslCompliant: js.UndefOr[Boolean] = js.native
+      var sslCompliant: js.UndefOr[Boolean] = js.undefined
       
-      var sslRequired: js.UndefOr[Boolean] = js.native
+      var sslRequired: js.UndefOr[Boolean] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var targetingTemplateId: js.UndefOr[String] = js.native
+      var targetingTemplateId: js.UndefOr[String] = js.undefined
       
-      var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.native
+      var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Ad {
       
@@ -4068,16 +4035,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdBlockingConfiguration extends StObject {
       
-      var clickThroughUrl: js.UndefOr[String] = js.native
+      var clickThroughUrl: js.UndefOr[String] = js.undefined
       
-      var creativeBundleId: js.UndefOr[String] = js.native
+      var creativeBundleId: js.UndefOr[String] = js.undefined
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
       
-      var overrideClickThroughUrl: js.UndefOr[Boolean] = js.native
+      var overrideClickThroughUrl: js.UndefOr[Boolean] = js.undefined
     }
     object AdBlockingConfiguration {
       
@@ -4116,24 +4082,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdSlot extends StObject {
       
-      var comment: js.UndefOr[String] = js.native
+      var comment: js.UndefOr[String] = js.undefined
       
-      var compatibility: js.UndefOr[String] = js.native
+      var compatibility: js.UndefOr[String] = js.undefined
       
-      var height: js.UndefOr[String] = js.native
+      var height: js.UndefOr[String] = js.undefined
       
-      var linkedPlacementId: js.UndefOr[String] = js.native
+      var linkedPlacementId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var paymentSourceType: js.UndefOr[String] = js.native
+      var paymentSourceType: js.UndefOr[String] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var width: js.UndefOr[String] = js.native
+      var width: js.UndefOr[String] = js.undefined
     }
     object AdSlot {
       
@@ -4196,14 +4161,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdsListResponse extends StObject {
       
-      var ads: js.UndefOr[js.Array[Ad]] = js.native
+      var ads: js.UndefOr[js.Array[Ad]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AdsListResponse {
       
@@ -4239,38 +4203,37 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Advertiser extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserGroupId: js.UndefOr[String] = js.native
+      var advertiserGroupId: js.UndefOr[String] = js.undefined
       
-      var clickThroughUrlSuffix: js.UndefOr[String] = js.native
+      var clickThroughUrlSuffix: js.UndefOr[String] = js.undefined
       
-      var defaultClickThroughEventTagId: js.UndefOr[String] = js.native
+      var defaultClickThroughEventTagId: js.UndefOr[String] = js.undefined
       
-      var defaultEmail: js.UndefOr[String] = js.native
+      var defaultEmail: js.UndefOr[String] = js.undefined
       
-      var floodlightConfigurationId: js.UndefOr[String] = js.native
+      var floodlightConfigurationId: js.UndefOr[String] = js.undefined
       
-      var floodlightConfigurationIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var floodlightConfigurationIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var originalFloodlightConfigurationId: js.UndefOr[String] = js.native
+      var originalFloodlightConfigurationId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var suspended: js.UndefOr[Boolean] = js.native
+      var suspended: js.UndefOr[Boolean] = js.undefined
     }
     object Advertiser {
       
@@ -4375,16 +4338,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdvertiserGroup extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object AdvertiserGroup {
       
@@ -4423,14 +4385,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdvertiserGroupsListResponse extends StObject {
       
-      var advertiserGroups: js.UndefOr[js.Array[AdvertiserGroup]] = js.native
+      var advertiserGroups: js.UndefOr[js.Array[AdvertiserGroup]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AdvertiserGroupsListResponse {
       
@@ -4466,14 +4427,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdvertiserLandingPagesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var landingPages: js.UndefOr[js.Array[LandingPage]] = js.native
+      var landingPages: js.UndefOr[js.Array[LandingPage]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AdvertiserLandingPagesListResponse {
       
@@ -4509,14 +4469,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AdvertisersListResponse extends StObject {
       
-      var advertisers: js.UndefOr[js.Array[Advertiser]] = js.native
+      var advertisers: js.UndefOr[js.Array[Advertiser]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AdvertisersListResponse {
       
@@ -4552,14 +4511,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AudienceSegment extends StObject {
       
-      var allocation: js.UndefOr[Double] = js.native
+      var allocation: js.UndefOr[Double] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object AudienceSegment {
       
@@ -4592,14 +4550,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait AudienceSegmentGroup extends StObject {
       
-      var audienceSegments: js.UndefOr[js.Array[AudienceSegment]] = js.native
+      var audienceSegments: js.UndefOr[js.Array[AudienceSegment]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object AudienceSegmentGroup {
       
@@ -4635,20 +4592,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Browser extends StObject {
       
-      var browserVersionId: js.UndefOr[String] = js.native
+      var browserVersionId: js.UndefOr[String] = js.undefined
       
-      var dartId: js.UndefOr[String] = js.native
+      var dartId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var majorVersion: js.UndefOr[String] = js.native
+      var majorVersion: js.UndefOr[String] = js.undefined
       
-      var minorVersion: js.UndefOr[String] = js.native
+      var minorVersion: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Browser {
       
@@ -4699,12 +4655,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait BrowsersListResponse extends StObject {
       
-      var browsers: js.UndefOr[js.Array[Browser]] = js.native
+      var browsers: js.UndefOr[js.Array[Browser]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object BrowsersListResponse {
       
@@ -4734,64 +4689,63 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Campaign extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var adBlockingConfiguration: js.UndefOr[AdBlockingConfiguration] = js.native
+      var adBlockingConfiguration: js.UndefOr[AdBlockingConfiguration] = js.undefined
       
-      var additionalCreativeOptimizationConfigurations: js.UndefOr[js.Array[CreativeOptimizationConfiguration]] = js.native
+      var additionalCreativeOptimizationConfigurations: js.UndefOr[js.Array[CreativeOptimizationConfiguration]] = js.undefined
       
-      var advertiserGroupId: js.UndefOr[String] = js.native
+      var advertiserGroupId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var audienceSegmentGroups: js.UndefOr[js.Array[AudienceSegmentGroup]] = js.native
+      var audienceSegmentGroups: js.UndefOr[js.Array[AudienceSegmentGroup]] = js.undefined
       
-      var billingInvoiceCode: js.UndefOr[String] = js.native
+      var billingInvoiceCode: js.UndefOr[String] = js.undefined
       
-      var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.native
+      var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.undefined
       
-      var comment: js.UndefOr[String] = js.native
+      var comment: js.UndefOr[String] = js.undefined
       
-      var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var creativeGroupIds: js.UndefOr[js.Array[String]] = js.native
+      var creativeGroupIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var creativeOptimizationConfiguration: js.UndefOr[CreativeOptimizationConfiguration] = js.native
+      var creativeOptimizationConfiguration: js.UndefOr[CreativeOptimizationConfiguration] = js.undefined
       
-      var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.native
+      var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
       
-      var defaultLandingPageId: js.UndefOr[String] = js.native
+      var defaultLandingPageId: js.UndefOr[String] = js.undefined
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.native
+      var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
       
-      var externalId: js.UndefOr[String] = js.native
+      var externalId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var nielsenOcrEnabled: js.UndefOr[Boolean] = js.native
+      var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var traffickerEmails: js.UndefOr[js.Array[String]] = js.native
+      var traffickerEmails: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Campaign {
       
@@ -4989,12 +4943,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CampaignCreativeAssociation extends StObject {
       
-      var creativeId: js.UndefOr[String] = js.native
+      var creativeId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object CampaignCreativeAssociation {
       
@@ -5021,14 +4974,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CampaignCreativeAssociationsListResponse extends StObject {
       
-      var campaignCreativeAssociations: js.UndefOr[js.Array[CampaignCreativeAssociation]] = js.native
+      var campaignCreativeAssociations: js.UndefOr[js.Array[CampaignCreativeAssociation]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CampaignCreativeAssociationsListResponse {
       
@@ -5064,14 +5016,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CampaignsListResponse extends StObject {
       
-      var campaigns: js.UndefOr[js.Array[Campaign]] = js.native
+      var campaigns: js.UndefOr[js.Array[Campaign]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CampaignsListResponse {
       
@@ -5107,36 +5058,35 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ChangeLog extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var changeTime: js.UndefOr[String] = js.native
+      var changeTime: js.UndefOr[String] = js.undefined
       
-      var fieldName: js.UndefOr[String] = js.native
+      var fieldName: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var newValue: js.UndefOr[String] = js.native
+      var newValue: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var objectType: js.UndefOr[String] = js.native
+      var objectType: js.UndefOr[String] = js.undefined
       
-      var oldValue: js.UndefOr[String] = js.native
+      var oldValue: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var transactionId: js.UndefOr[String] = js.native
+      var transactionId: js.UndefOr[String] = js.undefined
       
-      var userProfileId: js.UndefOr[String] = js.native
+      var userProfileId: js.UndefOr[String] = js.undefined
       
-      var userProfileName: js.UndefOr[String] = js.native
+      var userProfileName: js.UndefOr[String] = js.undefined
     }
     object ChangeLog {
       
@@ -5235,14 +5185,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ChangeLogsListResponse extends StObject {
       
-      var changeLogs: js.UndefOr[js.Array[ChangeLog]] = js.native
+      var changeLogs: js.UndefOr[js.Array[ChangeLog]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ChangeLogsListResponse {
       
@@ -5278,12 +5227,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CitiesListResponse extends StObject {
       
-      var cities: js.UndefOr[js.Array[City]] = js.native
+      var cities: js.UndefOr[js.Array[City]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object CitiesListResponse {
       
@@ -5313,26 +5261,25 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait City extends StObject {
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var countryDartId: js.UndefOr[String] = js.native
+      var countryDartId: js.UndefOr[String] = js.undefined
       
-      var dartId: js.UndefOr[String] = js.native
+      var dartId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metroCode: js.UndefOr[String] = js.native
+      var metroCode: js.UndefOr[String] = js.undefined
       
-      var metroDmaId: js.UndefOr[String] = js.native
+      var metroDmaId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var regionCode: js.UndefOr[String] = js.native
+      var regionCode: js.UndefOr[String] = js.undefined
       
-      var regionDartId: js.UndefOr[String] = js.native
+      var regionDartId: js.UndefOr[String] = js.undefined
     }
     object City {
       
@@ -5401,14 +5348,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ClickTag extends StObject {
       
-      var clickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.native
+      var clickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.undefined
       
-      var eventName: js.UndefOr[String] = js.native
+      var eventName: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ClickTag {
       
@@ -5441,16 +5387,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ClickThroughUrl extends StObject {
       
-      var computedClickThroughUrl: js.UndefOr[String] = js.native
+      var computedClickThroughUrl: js.UndefOr[String] = js.undefined
       
-      var customClickThroughUrl: js.UndefOr[String] = js.native
+      var customClickThroughUrl: js.UndefOr[String] = js.undefined
       
-      var defaultLandingPage: js.UndefOr[Boolean] = js.native
+      var defaultLandingPage: js.UndefOr[Boolean] = js.undefined
       
-      var landingPageId: js.UndefOr[String] = js.native
+      var landingPageId: js.UndefOr[String] = js.undefined
     }
     object ClickThroughUrl {
       
@@ -5489,12 +5434,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ClickThroughUrlSuffixProperties extends StObject {
       
-      var clickThroughUrlSuffix: js.UndefOr[String] = js.native
+      var clickThroughUrlSuffix: js.UndefOr[String] = js.undefined
       
-      var overrideInheritedSuffix: js.UndefOr[Boolean] = js.native
+      var overrideInheritedSuffix: js.UndefOr[Boolean] = js.undefined
     }
     object ClickThroughUrlSuffixProperties {
       
@@ -5521,12 +5465,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CompanionClickThroughOverride extends StObject {
       
-      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
+      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined
       
-      var creativeId: js.UndefOr[String] = js.native
+      var creativeId: js.UndefOr[String] = js.undefined
     }
     object CompanionClickThroughOverride {
       
@@ -5553,16 +5496,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CompanionSetting extends StObject {
       
-      var companionsDisabled: js.UndefOr[Boolean] = js.native
+      var companionsDisabled: js.UndefOr[Boolean] = js.undefined
       
-      var enabledSizes: js.UndefOr[js.Array[Size]] = js.native
+      var enabledSizes: js.UndefOr[js.Array[Size]] = js.undefined
       
-      var imageOnly: js.UndefOr[Boolean] = js.native
+      var imageOnly: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object CompanionSetting {
       
@@ -5604,20 +5546,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CompatibleFields extends StObject {
       
-      var crossDimensionReachReportCompatibleFields: js.UndefOr[CrossDimensionReachReportCompatibleFields] = js.native
+      var crossDimensionReachReportCompatibleFields: js.UndefOr[CrossDimensionReachReportCompatibleFields] = js.undefined
       
-      var floodlightReportCompatibleFields: js.UndefOr[FloodlightReportCompatibleFields] = js.native
+      var floodlightReportCompatibleFields: js.UndefOr[FloodlightReportCompatibleFields] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var pathToConversionReportCompatibleFields: js.UndefOr[PathToConversionReportCompatibleFields] = js.native
+      var pathToConversionReportCompatibleFields: js.UndefOr[PathToConversionReportCompatibleFields] = js.undefined
       
-      var reachReportCompatibleFields: js.UndefOr[ReachReportCompatibleFields] = js.native
+      var reachReportCompatibleFields: js.UndefOr[ReachReportCompatibleFields] = js.undefined
       
-      var reportCompatibleFields: js.UndefOr[ReportCompatibleFields] = js.native
+      var reportCompatibleFields: js.UndefOr[ReportCompatibleFields] = js.undefined
     }
     object CompatibleFields {
       
@@ -5668,14 +5609,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConnectionType extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ConnectionType {
       
@@ -5708,12 +5648,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConnectionTypesListResponse extends StObject {
       
-      var connectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.native
+      var connectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ConnectionTypesListResponse {
       
@@ -5743,14 +5682,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ContentCategoriesListResponse extends StObject {
       
-      var contentCategories: js.UndefOr[js.Array[ContentCategory]] = js.native
+      var contentCategories: js.UndefOr[js.Array[ContentCategory]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ContentCategoriesListResponse {
       
@@ -5786,16 +5724,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ContentCategory extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object ContentCategory {
       
@@ -5834,40 +5771,39 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Conversion extends StObject {
       
-      var childDirectedTreatment: js.UndefOr[Boolean] = js.native
+      var childDirectedTreatment: js.UndefOr[Boolean] = js.undefined
       
-      var customVariables: js.UndefOr[js.Array[CustomFloodlightVariable]] = js.native
+      var customVariables: js.UndefOr[js.Array[CustomFloodlightVariable]] = js.undefined
       
-      var encryptedUserId: js.UndefOr[String] = js.native
+      var encryptedUserId: js.UndefOr[String] = js.undefined
       
-      var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.native
+      var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.undefined
       
-      var floodlightActivityId: js.UndefOr[String] = js.native
+      var floodlightActivityId: js.UndefOr[String] = js.undefined
       
-      var floodlightConfigurationId: js.UndefOr[String] = js.native
+      var floodlightConfigurationId: js.UndefOr[String] = js.undefined
       
-      var gclid: js.UndefOr[String] = js.native
+      var gclid: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var limitAdTracking: js.UndefOr[Boolean] = js.native
+      var limitAdTracking: js.UndefOr[Boolean] = js.undefined
       
-      var mobileDeviceId: js.UndefOr[String] = js.native
+      var mobileDeviceId: js.UndefOr[String] = js.undefined
       
-      var nonPersonalizedAd: js.UndefOr[Boolean] = js.native
+      var nonPersonalizedAd: js.UndefOr[Boolean] = js.undefined
       
-      var ordinal: js.UndefOr[String] = js.native
+      var ordinal: js.UndefOr[String] = js.undefined
       
-      var quantity: js.UndefOr[String] = js.native
+      var quantity: js.UndefOr[String] = js.undefined
       
-      var timestampMicros: js.UndefOr[String] = js.native
+      var timestampMicros: js.UndefOr[String] = js.undefined
       
-      var treatmentForUnderage: js.UndefOr[Boolean] = js.native
+      var treatmentForUnderage: js.UndefOr[Boolean] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object Conversion {
       
@@ -5984,14 +5920,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConversionError extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object ConversionError {
       
@@ -6024,14 +5959,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConversionStatus extends StObject {
       
-      var conversion: js.UndefOr[Conversion] = js.native
+      var conversion: js.UndefOr[Conversion] = js.undefined
       
-      var errors: js.UndefOr[js.Array[ConversionError]] = js.native
+      var errors: js.UndefOr[js.Array[ConversionError]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ConversionStatus {
       
@@ -6067,14 +6001,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConversionsBatchInsertRequest extends StObject {
       
-      var conversions: js.UndefOr[js.Array[Conversion]] = js.native
+      var conversions: js.UndefOr[js.Array[Conversion]] = js.undefined
       
-      var encryptionInfo: js.UndefOr[EncryptionInfo] = js.native
+      var encryptionInfo: js.UndefOr[EncryptionInfo] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ConversionsBatchInsertRequest {
       
@@ -6110,14 +6043,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConversionsBatchInsertResponse extends StObject {
       
-      var hasFailures: js.UndefOr[Boolean] = js.native
+      var hasFailures: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[js.Array[ConversionStatus]] = js.native
+      var status: js.UndefOr[js.Array[ConversionStatus]] = js.undefined
     }
     object ConversionsBatchInsertResponse {
       
@@ -6153,14 +6085,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConversionsBatchUpdateRequest extends StObject {
       
-      var conversions: js.UndefOr[js.Array[Conversion]] = js.native
+      var conversions: js.UndefOr[js.Array[Conversion]] = js.undefined
       
-      var encryptionInfo: js.UndefOr[EncryptionInfo] = js.native
+      var encryptionInfo: js.UndefOr[EncryptionInfo] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ConversionsBatchUpdateRequest {
       
@@ -6196,14 +6127,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ConversionsBatchUpdateResponse extends StObject {
       
-      var hasFailures: js.UndefOr[Boolean] = js.native
+      var hasFailures: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[js.Array[ConversionStatus]] = js.native
+      var status: js.UndefOr[js.Array[ConversionStatus]] = js.undefined
     }
     object ConversionsBatchUpdateResponse {
       
@@ -6239,12 +6169,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CountriesListResponse extends StObject {
       
-      var countries: js.UndefOr[js.Array[Country]] = js.native
+      var countries: js.UndefOr[js.Array[Country]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object CountriesListResponse {
       
@@ -6274,18 +6203,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Country extends StObject {
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var dartId: js.UndefOr[String] = js.native
+      var dartId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var sslEnabled: js.UndefOr[Boolean] = js.native
+      var sslEnabled: js.UndefOr[Boolean] = js.undefined
     }
     object Country {
       
@@ -6330,136 +6258,135 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Creative extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var adParameters: js.UndefOr[String] = js.native
+      var adParameters: js.UndefOr[String] = js.undefined
       
-      var adTagKeys: js.UndefOr[js.Array[String]] = js.native
+      var adTagKeys: js.UndefOr[js.Array[String]] = js.undefined
       
-      var additionalSizes: js.UndefOr[js.Array[Size]] = js.native
+      var additionalSizes: js.UndefOr[js.Array[Size]] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var allowScriptAccess: js.UndefOr[Boolean] = js.native
+      var allowScriptAccess: js.UndefOr[Boolean] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var artworkType: js.UndefOr[String] = js.native
+      var artworkType: js.UndefOr[String] = js.undefined
       
-      var authoringSource: js.UndefOr[String] = js.native
+      var authoringSource: js.UndefOr[String] = js.undefined
       
-      var authoringTool: js.UndefOr[String] = js.native
+      var authoringTool: js.UndefOr[String] = js.undefined
       
-      var autoAdvanceImages: js.UndefOr[Boolean] = js.native
+      var autoAdvanceImages: js.UndefOr[Boolean] = js.undefined
       
-      var backgroundColor: js.UndefOr[String] = js.native
+      var backgroundColor: js.UndefOr[String] = js.undefined
       
-      var backupImageClickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.native
+      var backupImageClickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.undefined
       
-      var backupImageFeatures: js.UndefOr[js.Array[String]] = js.native
+      var backupImageFeatures: js.UndefOr[js.Array[String]] = js.undefined
       
-      var backupImageReportingLabel: js.UndefOr[String] = js.native
+      var backupImageReportingLabel: js.UndefOr[String] = js.undefined
       
-      var backupImageTargetWindow: js.UndefOr[TargetWindow] = js.native
+      var backupImageTargetWindow: js.UndefOr[TargetWindow] = js.undefined
       
-      var clickTags: js.UndefOr[js.Array[ClickTag]] = js.native
+      var clickTags: js.UndefOr[js.Array[ClickTag]] = js.undefined
       
-      var commercialId: js.UndefOr[String] = js.native
+      var commercialId: js.UndefOr[String] = js.undefined
       
-      var companionCreatives: js.UndefOr[js.Array[String]] = js.native
+      var companionCreatives: js.UndefOr[js.Array[String]] = js.undefined
       
-      var compatibility: js.UndefOr[js.Array[String]] = js.native
+      var compatibility: js.UndefOr[js.Array[String]] = js.undefined
       
-      var convertFlashToHtml5: js.UndefOr[Boolean] = js.native
+      var convertFlashToHtml5: js.UndefOr[Boolean] = js.undefined
       
-      var counterCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.native
+      var counterCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.undefined
       
-      var creativeAssetSelection: js.UndefOr[CreativeAssetSelection] = js.native
+      var creativeAssetSelection: js.UndefOr[CreativeAssetSelection] = js.undefined
       
-      var creativeAssets: js.UndefOr[js.Array[CreativeAsset]] = js.native
+      var creativeAssets: js.UndefOr[js.Array[CreativeAsset]] = js.undefined
       
-      var creativeFieldAssignments: js.UndefOr[js.Array[CreativeFieldAssignment]] = js.native
+      var creativeFieldAssignments: js.UndefOr[js.Array[CreativeFieldAssignment]] = js.undefined
       
-      var customKeyValues: js.UndefOr[js.Array[String]] = js.native
+      var customKeyValues: js.UndefOr[js.Array[String]] = js.undefined
       
-      var dynamicAssetSelection: js.UndefOr[Boolean] = js.native
+      var dynamicAssetSelection: js.UndefOr[Boolean] = js.undefined
       
-      var exitCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.native
+      var exitCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.undefined
       
-      var fsCommand: js.UndefOr[FsCommand] = js.native
+      var fsCommand: js.UndefOr[FsCommand] = js.undefined
       
-      var htmlCode: js.UndefOr[String] = js.native
+      var htmlCode: js.UndefOr[String] = js.undefined
       
-      var htmlCodeLocked: js.UndefOr[Boolean] = js.native
+      var htmlCodeLocked: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var latestTraffickedCreativeId: js.UndefOr[String] = js.native
+      var latestTraffickedCreativeId: js.UndefOr[String] = js.undefined
       
-      var mediaDescription: js.UndefOr[String] = js.native
+      var mediaDescription: js.UndefOr[String] = js.undefined
       
-      var mediaDuration: js.UndefOr[Double] = js.native
+      var mediaDuration: js.UndefOr[Double] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var overrideCss: js.UndefOr[String] = js.native
+      var overrideCss: js.UndefOr[String] = js.undefined
       
-      var progressOffset: js.UndefOr[VideoOffset] = js.native
+      var progressOffset: js.UndefOr[VideoOffset] = js.undefined
       
-      var redirectUrl: js.UndefOr[String] = js.native
+      var redirectUrl: js.UndefOr[String] = js.undefined
       
-      var renderingId: js.UndefOr[String] = js.native
+      var renderingId: js.UndefOr[String] = js.undefined
       
-      var renderingIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var renderingIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var requiredFlashPluginVersion: js.UndefOr[String] = js.native
+      var requiredFlashPluginVersion: js.UndefOr[String] = js.undefined
       
-      var requiredFlashVersion: js.UndefOr[Double] = js.native
+      var requiredFlashVersion: js.UndefOr[Double] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var skipOffset: js.UndefOr[VideoOffset] = js.native
+      var skipOffset: js.UndefOr[VideoOffset] = js.undefined
       
-      var skippable: js.UndefOr[Boolean] = js.native
+      var skippable: js.UndefOr[Boolean] = js.undefined
       
-      var sslCompliant: js.UndefOr[Boolean] = js.native
+      var sslCompliant: js.UndefOr[Boolean] = js.undefined
       
-      var sslOverride: js.UndefOr[Boolean] = js.native
+      var sslOverride: js.UndefOr[Boolean] = js.undefined
       
-      var studioAdvertiserId: js.UndefOr[String] = js.native
+      var studioAdvertiserId: js.UndefOr[String] = js.undefined
       
-      var studioCreativeId: js.UndefOr[String] = js.native
+      var studioCreativeId: js.UndefOr[String] = js.undefined
       
-      var studioTraffickedCreativeId: js.UndefOr[String] = js.native
+      var studioTraffickedCreativeId: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var thirdPartyBackupImageImpressionsUrl: js.UndefOr[String] = js.native
+      var thirdPartyBackupImageImpressionsUrl: js.UndefOr[String] = js.undefined
       
-      var thirdPartyRichMediaImpressionsUrl: js.UndefOr[String] = js.native
+      var thirdPartyRichMediaImpressionsUrl: js.UndefOr[String] = js.undefined
       
-      var thirdPartyUrls: js.UndefOr[js.Array[ThirdPartyTrackingUrl]] = js.native
+      var thirdPartyUrls: js.UndefOr[js.Array[ThirdPartyTrackingUrl]] = js.undefined
       
-      var timerCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.native
+      var timerCustomEvents: js.UndefOr[js.Array[CreativeCustomEvent]] = js.undefined
       
-      var totalFileSize: js.UndefOr[String] = js.native
+      var totalFileSize: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var universalAdId: js.UndefOr[UniversalAdId] = js.native
+      var universalAdId: js.UndefOr[UniversalAdId] = js.undefined
       
-      var version: js.UndefOr[Double] = js.native
+      var version: js.UndefOr[Double] = js.undefined
     }
     object Creative {
       
@@ -6897,108 +6824,107 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeAsset extends StObject {
       
-      var actionScript3: js.UndefOr[Boolean] = js.native
+      var actionScript3: js.UndefOr[Boolean] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var additionalSizes: js.UndefOr[js.Array[Size]] = js.native
+      var additionalSizes: js.UndefOr[js.Array[Size]] = js.undefined
       
-      var alignment: js.UndefOr[String] = js.native
+      var alignment: js.UndefOr[String] = js.undefined
       
-      var artworkType: js.UndefOr[String] = js.native
+      var artworkType: js.UndefOr[String] = js.undefined
       
-      var assetIdentifier: js.UndefOr[CreativeAssetId] = js.native
+      var assetIdentifier: js.UndefOr[CreativeAssetId] = js.undefined
       
-      var audioBitRate: js.UndefOr[Double] = js.native
+      var audioBitRate: js.UndefOr[Double] = js.undefined
       
-      var audioSampleRate: js.UndefOr[Double] = js.native
+      var audioSampleRate: js.UndefOr[Double] = js.undefined
       
-      var backupImageExit: js.UndefOr[CreativeCustomEvent] = js.native
+      var backupImageExit: js.UndefOr[CreativeCustomEvent] = js.undefined
       
-      var bitRate: js.UndefOr[Double] = js.native
+      var bitRate: js.UndefOr[Double] = js.undefined
       
-      var childAssetType: js.UndefOr[String] = js.native
+      var childAssetType: js.UndefOr[String] = js.undefined
       
-      var collapsedSize: js.UndefOr[Size] = js.native
+      var collapsedSize: js.UndefOr[Size] = js.undefined
       
-      var companionCreativeIds: js.UndefOr[js.Array[String]] = js.native
+      var companionCreativeIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var customStartTimeValue: js.UndefOr[Double] = js.native
+      var customStartTimeValue: js.UndefOr[Double] = js.undefined
       
-      var detectedFeatures: js.UndefOr[js.Array[String]] = js.native
+      var detectedFeatures: js.UndefOr[js.Array[String]] = js.undefined
       
-      var displayType: js.UndefOr[String] = js.native
+      var displayType: js.UndefOr[String] = js.undefined
       
-      var duration: js.UndefOr[Double] = js.native
+      var duration: js.UndefOr[Double] = js.undefined
       
-      var durationType: js.UndefOr[String] = js.native
+      var durationType: js.UndefOr[String] = js.undefined
       
-      var expandedDimension: js.UndefOr[Size] = js.native
+      var expandedDimension: js.UndefOr[Size] = js.undefined
       
-      var fileSize: js.UndefOr[String] = js.native
+      var fileSize: js.UndefOr[String] = js.undefined
       
-      var flashVersion: js.UndefOr[Double] = js.native
+      var flashVersion: js.UndefOr[Double] = js.undefined
       
-      var frameRate: js.UndefOr[Double] = js.native
+      var frameRate: js.UndefOr[Double] = js.undefined
       
-      var hideFlashObjects: js.UndefOr[Boolean] = js.native
+      var hideFlashObjects: js.UndefOr[Boolean] = js.undefined
       
-      var hideSelectionBoxes: js.UndefOr[Boolean] = js.native
+      var hideSelectionBoxes: js.UndefOr[Boolean] = js.undefined
       
-      var horizontallyLocked: js.UndefOr[Boolean] = js.native
+      var horizontallyLocked: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var mediaDuration: js.UndefOr[Double] = js.native
+      var mediaDuration: js.UndefOr[Double] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var offset: js.UndefOr[OffsetPosition] = js.native
+      var offset: js.UndefOr[OffsetPosition] = js.undefined
       
-      var orientation: js.UndefOr[String] = js.native
+      var orientation: js.UndefOr[String] = js.undefined
       
-      var originalBackup: js.UndefOr[Boolean] = js.native
+      var originalBackup: js.UndefOr[Boolean] = js.undefined
       
-      var politeLoad: js.UndefOr[Boolean] = js.native
+      var politeLoad: js.UndefOr[Boolean] = js.undefined
       
-      var position: js.UndefOr[OffsetPosition] = js.native
+      var position: js.UndefOr[OffsetPosition] = js.undefined
       
-      var positionLeftUnit: js.UndefOr[String] = js.native
+      var positionLeftUnit: js.UndefOr[String] = js.undefined
       
-      var positionTopUnit: js.UndefOr[String] = js.native
+      var positionTopUnit: js.UndefOr[String] = js.undefined
       
-      var progressiveServingUrl: js.UndefOr[String] = js.native
+      var progressiveServingUrl: js.UndefOr[String] = js.undefined
       
-      var pushdown: js.UndefOr[Boolean] = js.native
+      var pushdown: js.UndefOr[Boolean] = js.undefined
       
-      var pushdownDuration: js.UndefOr[Double] = js.native
+      var pushdownDuration: js.UndefOr[Double] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var sslCompliant: js.UndefOr[Boolean] = js.native
+      var sslCompliant: js.UndefOr[Boolean] = js.undefined
       
-      var startTimeType: js.UndefOr[String] = js.native
+      var startTimeType: js.UndefOr[String] = js.undefined
       
-      var streamingServingUrl: js.UndefOr[String] = js.native
+      var streamingServingUrl: js.UndefOr[String] = js.undefined
       
-      var transparency: js.UndefOr[Boolean] = js.native
+      var transparency: js.UndefOr[Boolean] = js.undefined
       
-      var verticallyLocked: js.UndefOr[Boolean] = js.native
+      var verticallyLocked: js.UndefOr[Boolean] = js.undefined
       
-      var windowMode: js.UndefOr[String] = js.native
+      var windowMode: js.UndefOr[String] = js.undefined
       
-      var zIndex: js.UndefOr[Double] = js.native
+      var zIndex: js.UndefOr[Double] = js.undefined
       
-      var zipFilename: js.UndefOr[String] = js.native
+      var zipFilename: js.UndefOr[String] = js.undefined
       
-      var zipFilesize: js.UndefOr[String] = js.native
+      var zipFilesize: js.UndefOr[String] = js.undefined
     }
     object CreativeAsset {
       
@@ -7322,12 +7248,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeAssetId extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object CreativeAssetId {
       
@@ -7354,22 +7279,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeAssetMetadata extends StObject {
       
-      var assetIdentifier: js.UndefOr[CreativeAssetId] = js.native
+      var assetIdentifier: js.UndefOr[CreativeAssetId] = js.undefined
       
-      var clickTags: js.UndefOr[js.Array[ClickTag]] = js.native
+      var clickTags: js.UndefOr[js.Array[ClickTag]] = js.undefined
       
-      var detectedFeatures: js.UndefOr[js.Array[String]] = js.native
+      var detectedFeatures: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var warnedValidationRules: js.UndefOr[js.Array[String]] = js.native
+      var warnedValidationRules: js.UndefOr[js.Array[String]] = js.undefined
     }
     object CreativeAssetMetadata {
       
@@ -7435,12 +7359,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeAssetSelection extends StObject {
       
-      var defaultAssetId: js.UndefOr[String] = js.native
+      var defaultAssetId: js.UndefOr[String] = js.undefined
       
-      var rules: js.UndefOr[js.Array[Rule]] = js.native
+      var rules: js.UndefOr[js.Array[Rule]] = js.undefined
     }
     object CreativeAssetSelection {
       
@@ -7470,34 +7393,33 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeAssignment extends StObject {
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var applyEventTags: js.UndefOr[Boolean] = js.native
+      var applyEventTags: js.UndefOr[Boolean] = js.undefined
       
-      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
+      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined
       
-      var companionCreativeOverrides: js.UndefOr[js.Array[CompanionClickThroughOverride]] = js.native
+      var companionCreativeOverrides: js.UndefOr[js.Array[CompanionClickThroughOverride]] = js.undefined
       
-      var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.native
+      var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.undefined
       
-      var creativeId: js.UndefOr[String] = js.native
+      var creativeId: js.UndefOr[String] = js.undefined
       
-      var creativeIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var creativeIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var endTime: js.UndefOr[String] = js.native
+      var endTime: js.UndefOr[String] = js.undefined
       
-      var richMediaExitOverrides: js.UndefOr[js.Array[RichMediaExitOverride]] = js.native
+      var richMediaExitOverrides: js.UndefOr[js.Array[RichMediaExitOverride]] = js.undefined
       
-      var sequence: js.UndefOr[Double] = js.native
+      var sequence: js.UndefOr[Double] = js.undefined
       
-      var sslCompliant: js.UndefOr[Boolean] = js.native
+      var sslCompliant: js.UndefOr[Boolean] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
     }
     object CreativeAssignment {
       
@@ -7599,14 +7521,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeClickThroughUrl extends StObject {
       
-      var computedClickThroughUrl: js.UndefOr[String] = js.native
+      var computedClickThroughUrl: js.UndefOr[String] = js.undefined
       
-      var customClickThroughUrl: js.UndefOr[String] = js.native
+      var customClickThroughUrl: js.UndefOr[String] = js.undefined
       
-      var landingPageId: js.UndefOr[String] = js.native
+      var landingPageId: js.UndefOr[String] = js.undefined
     }
     object CreativeClickThroughUrl {
       
@@ -7639,28 +7560,27 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeCustomEvent extends StObject {
       
-      var advertiserCustomEventId: js.UndefOr[String] = js.native
+      var advertiserCustomEventId: js.UndefOr[String] = js.undefined
       
-      var advertiserCustomEventName: js.UndefOr[String] = js.native
+      var advertiserCustomEventName: js.UndefOr[String] = js.undefined
       
-      var advertiserCustomEventType: js.UndefOr[String] = js.native
+      var advertiserCustomEventType: js.UndefOr[String] = js.undefined
       
-      var artworkLabel: js.UndefOr[String] = js.native
+      var artworkLabel: js.UndefOr[String] = js.undefined
       
-      var artworkType: js.UndefOr[String] = js.native
+      var artworkType: js.UndefOr[String] = js.undefined
       
-      var exitClickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.native
+      var exitClickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var popupWindowProperties: js.UndefOr[PopupWindowProperties] = js.native
+      var popupWindowProperties: js.UndefOr[PopupWindowProperties] = js.undefined
       
-      var targetType: js.UndefOr[String] = js.native
+      var targetType: js.UndefOr[String] = js.undefined
       
-      var videoReportingId: js.UndefOr[String] = js.native
+      var videoReportingId: js.UndefOr[String] = js.undefined
     }
     object CreativeCustomEvent {
       
@@ -7735,22 +7655,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeField extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
     }
     object CreativeField {
       
@@ -7807,12 +7726,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeFieldAssignment extends StObject {
       
-      var creativeFieldId: js.UndefOr[String] = js.native
+      var creativeFieldId: js.UndefOr[String] = js.undefined
       
-      var creativeFieldValueId: js.UndefOr[String] = js.native
+      var creativeFieldValueId: js.UndefOr[String] = js.undefined
     }
     object CreativeFieldAssignment {
       
@@ -7839,14 +7757,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeFieldValue extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object CreativeFieldValue {
       
@@ -7879,14 +7796,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeFieldValuesListResponse extends StObject {
       
-      var creativeFieldValues: js.UndefOr[js.Array[CreativeFieldValue]] = js.native
+      var creativeFieldValues: js.UndefOr[js.Array[CreativeFieldValue]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CreativeFieldValuesListResponse {
       
@@ -7922,14 +7838,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeFieldsListResponse extends StObject {
       
-      var creativeFields: js.UndefOr[js.Array[CreativeField]] = js.native
+      var creativeFields: js.UndefOr[js.Array[CreativeField]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CreativeFieldsListResponse {
       
@@ -7965,24 +7880,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeGroup extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var groupNumber: js.UndefOr[Double] = js.native
+      var groupNumber: js.UndefOr[Double] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
     }
     object CreativeGroup {
       
@@ -8045,12 +7959,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeGroupAssignment extends StObject {
       
-      var creativeGroupId: js.UndefOr[String] = js.native
+      var creativeGroupId: js.UndefOr[String] = js.undefined
       
-      var creativeGroupNumber: js.UndefOr[String] = js.native
+      var creativeGroupNumber: js.UndefOr[String] = js.undefined
     }
     object CreativeGroupAssignment {
       
@@ -8077,14 +7990,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeGroupsListResponse extends StObject {
       
-      var creativeGroups: js.UndefOr[js.Array[CreativeGroup]] = js.native
+      var creativeGroups: js.UndefOr[js.Array[CreativeGroup]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CreativeGroupsListResponse {
       
@@ -8120,16 +8032,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeOptimizationConfiguration extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var optimizationActivitys: js.UndefOr[js.Array[OptimizationActivity]] = js.native
+      var optimizationActivitys: js.UndefOr[js.Array[OptimizationActivity]] = js.undefined
       
-      var optimizationModel: js.UndefOr[String] = js.native
+      var optimizationModel: js.UndefOr[String] = js.undefined
     }
     object CreativeOptimizationConfiguration {
       
@@ -8171,16 +8082,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativeRotation extends StObject {
       
-      var creativeAssignments: js.UndefOr[js.Array[CreativeAssignment]] = js.native
+      var creativeAssignments: js.UndefOr[js.Array[CreativeAssignment]] = js.undefined
       
-      var creativeOptimizationConfigurationId: js.UndefOr[String] = js.native
+      var creativeOptimizationConfigurationId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var weightCalculationStrategy: js.UndefOr[String] = js.native
+      var weightCalculationStrategy: js.UndefOr[String] = js.undefined
     }
     object CreativeRotation {
       
@@ -8222,14 +8132,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CreativesListResponse extends StObject {
       
-      var creatives: js.UndefOr[js.Array[Creative]] = js.native
+      var creatives: js.UndefOr[js.Array[Creative]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CreativesListResponse {
       
@@ -8265,18 +8174,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CrossDimensionReachReportCompatibleFields extends StObject {
       
-      var breakdown: js.UndefOr[js.Array[Dimension]] = js.native
+      var breakdown: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var overlapMetrics: js.UndefOr[js.Array[Metric]] = js.native
+      var overlapMetrics: js.UndefOr[js.Array[Metric]] = js.undefined
     }
     object CrossDimensionReachReportCompatibleFields {
       
@@ -8333,14 +8241,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CustomFloodlightVariable extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object CustomFloodlightVariable {
       
@@ -8373,12 +8280,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CustomRichMediaEvents extends StObject {
       
-      var filteredEventIds: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var filteredEventIds: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object CustomRichMediaEvents {
       
@@ -8408,14 +8314,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CustomViewabilityMetric extends StObject {
       
-      var configuration: js.UndefOr[CustomViewabilityMetricConfiguration] = js.native
+      var configuration: js.UndefOr[CustomViewabilityMetricConfiguration] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object CustomViewabilityMetric {
       
@@ -8448,16 +8353,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait CustomViewabilityMetricConfiguration extends StObject {
       
-      var audible: js.UndefOr[Boolean] = js.native
+      var audible: js.UndefOr[Boolean] = js.undefined
       
-      var timeMillis: js.UndefOr[Double] = js.native
+      var timeMillis: js.UndefOr[Double] = js.undefined
       
-      var timePercent: js.UndefOr[Double] = js.native
+      var timePercent: js.UndefOr[Double] = js.undefined
       
-      var viewabilityPercent: js.UndefOr[Double] = js.native
+      var viewabilityPercent: js.UndefOr[Double] = js.undefined
     }
     object CustomViewabilityMetricConfiguration {
       
@@ -8496,16 +8400,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DateRange extends StObject {
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var relativeDateRange: js.UndefOr[String] = js.native
+      var relativeDateRange: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
     }
     object DateRange {
       
@@ -8544,14 +8447,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DayPartTargeting extends StObject {
       
-      var daysOfWeek: js.UndefOr[js.Array[String]] = js.native
+      var daysOfWeek: js.UndefOr[js.Array[String]] = js.undefined
       
-      var hoursOfDay: js.UndefOr[js.Array[Double]] = js.native
+      var hoursOfDay: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var userLocalTime: js.UndefOr[Boolean] = js.native
+      var userLocalTime: js.UndefOr[Boolean] = js.undefined
     }
     object DayPartTargeting {
       
@@ -8590,18 +8492,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DeepLink extends StObject {
       
-      var appUrl: js.UndefOr[String] = js.native
+      var appUrl: js.UndefOr[String] = js.undefined
       
-      var fallbackUrl: js.UndefOr[String] = js.native
+      var fallbackUrl: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mobileApp: js.UndefOr[MobileApp] = js.native
+      var mobileApp: js.UndefOr[MobileApp] = js.undefined
       
-      var remarketingListIds: js.UndefOr[js.Array[String]] = js.native
+      var remarketingListIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object DeepLink {
       
@@ -8649,12 +8550,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DefaultClickThroughEventTagProperties extends StObject {
       
-      var defaultClickThroughEventTagId: js.UndefOr[String] = js.native
+      var defaultClickThroughEventTagId: js.UndefOr[String] = js.undefined
       
-      var overrideInheritedEventTag: js.UndefOr[Boolean] = js.native
+      var overrideInheritedEventTag: js.UndefOr[Boolean] = js.undefined
     }
     object DefaultClickThroughEventTagProperties {
       
@@ -8681,16 +8581,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DeliverySchedule extends StObject {
       
-      var frequencyCap: js.UndefOr[FrequencyCap] = js.native
+      var frequencyCap: js.UndefOr[FrequencyCap] = js.undefined
       
-      var hardCutoff: js.UndefOr[Boolean] = js.native
+      var hardCutoff: js.UndefOr[Boolean] = js.undefined
       
-      var impressionRatio: js.UndefOr[String] = js.native
+      var impressionRatio: js.UndefOr[String] = js.undefined
       
-      var priority: js.UndefOr[String] = js.native
+      var priority: js.UndefOr[String] = js.undefined
     }
     object DeliverySchedule {
       
@@ -8729,18 +8628,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DfpSettings extends StObject {
       
-      var dfpNetworkCode: js.UndefOr[String] = js.native
+      var dfpNetworkCode: js.UndefOr[String] = js.undefined
       
-      var dfpNetworkName: js.UndefOr[String] = js.native
+      var dfpNetworkName: js.UndefOr[String] = js.undefined
       
-      var programmaticPlacementAccepted: js.UndefOr[Boolean] = js.native
+      var programmaticPlacementAccepted: js.UndefOr[Boolean] = js.undefined
       
-      var pubPaidPlacementAccepted: js.UndefOr[Boolean] = js.native
+      var pubPaidPlacementAccepted: js.UndefOr[Boolean] = js.undefined
       
-      var publisherPortalOnly: js.UndefOr[Boolean] = js.native
+      var publisherPortalOnly: js.UndefOr[Boolean] = js.undefined
     }
     object DfpSettings {
       
@@ -8785,12 +8683,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Dimension extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Dimension {
       
@@ -8817,14 +8714,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DimensionFilter extends StObject {
       
-      var dimensionName: js.UndefOr[String] = js.native
+      var dimensionName: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object DimensionFilter {
       
@@ -8857,20 +8753,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DimensionValue extends StObject {
       
-      var dimensionName: js.UndefOr[String] = js.native
+      var dimensionName: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var matchType: js.UndefOr[String] = js.native
+      var matchType: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object DimensionValue {
       
@@ -8921,16 +8816,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DimensionValueList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var items: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object DimensionValueList {
       
@@ -8972,18 +8866,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DimensionValueRequest extends StObject {
       
-      var dimensionName: js.UndefOr[String] = js.native
+      var dimensionName: js.UndefOr[String] = js.undefined
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var filters: js.UndefOr[js.Array[DimensionFilter]] = js.native
+      var filters: js.UndefOr[js.Array[DimensionFilter]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
     }
     object DimensionValueRequest {
       
@@ -9031,26 +8924,25 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DirectorySite extends StObject {
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var inpageTagFormats: js.UndefOr[js.Array[String]] = js.native
+      var inpageTagFormats: js.UndefOr[js.Array[String]] = js.undefined
       
-      var interstitialTagFormats: js.UndefOr[js.Array[String]] = js.native
+      var interstitialTagFormats: js.UndefOr[js.Array[String]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var settings: js.UndefOr[DirectorySiteSettings] = js.native
+      var settings: js.UndefOr[DirectorySiteSettings] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object DirectorySite {
       
@@ -9125,16 +9017,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DirectorySiteSettings extends StObject {
       
-      var activeViewOptOut: js.UndefOr[Boolean] = js.native
+      var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
       
-      var dfpSettings: js.UndefOr[DfpSettings] = js.native
+      var dfpSettings: js.UndefOr[DfpSettings] = js.undefined
       
-      var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.native
+      var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.undefined
       
-      var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.native
+      var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.undefined
     }
     object DirectorySiteSettings {
       
@@ -9173,14 +9064,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DirectorySitesListResponse extends StObject {
       
-      var directorySites: js.UndefOr[js.Array[DirectorySite]] = js.native
+      var directorySites: js.UndefOr[js.Array[DirectorySite]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object DirectorySitesListResponse {
       
@@ -9216,16 +9106,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DynamicTargetingKey extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var objectId: js.UndefOr[String] = js.native
+      var objectId: js.UndefOr[String] = js.undefined
       
-      var objectType: js.UndefOr[String] = js.native
+      var objectType: js.UndefOr[String] = js.undefined
     }
     object DynamicTargetingKey {
       
@@ -9264,12 +9153,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait DynamicTargetingKeysListResponse extends StObject {
       
-      var dynamicTargetingKeys: js.UndefOr[js.Array[DynamicTargetingKey]] = js.native
+      var dynamicTargetingKeys: js.UndefOr[js.Array[DynamicTargetingKey]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object DynamicTargetingKeysListResponse {
       
@@ -9299,16 +9187,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait EncryptionInfo extends StObject {
       
-      var encryptionEntityId: js.UndefOr[String] = js.native
+      var encryptionEntityId: js.UndefOr[String] = js.undefined
       
-      var encryptionEntityType: js.UndefOr[String] = js.native
+      var encryptionEntityType: js.UndefOr[String] = js.undefined
       
-      var encryptionSource: js.UndefOr[String] = js.native
+      var encryptionSource: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object EncryptionInfo {
       
@@ -9347,44 +9234,43 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait EventTag extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var campaignId: js.UndefOr[String] = js.native
+      var campaignId: js.UndefOr[String] = js.undefined
       
-      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var enabledByDefault: js.UndefOr[Boolean] = js.native
+      var enabledByDefault: js.UndefOr[Boolean] = js.undefined
       
-      var excludeFromAdxRequests: js.UndefOr[Boolean] = js.native
+      var excludeFromAdxRequests: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var siteFilterType: js.UndefOr[String] = js.native
+      var siteFilterType: js.UndefOr[String] = js.undefined
       
-      var siteIds: js.UndefOr[js.Array[String]] = js.native
+      var siteIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var sslCompliant: js.UndefOr[Boolean] = js.native
+      var sslCompliant: js.UndefOr[Boolean] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
-      var urlEscapeLevels: js.UndefOr[Double] = js.native
+      var urlEscapeLevels: js.UndefOr[Double] = js.undefined
     }
     object EventTag {
       
@@ -9510,12 +9396,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait EventTagOverride extends StObject {
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
     }
     object EventTagOverride {
       
@@ -9542,12 +9427,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait EventTagsListResponse extends StObject {
       
-      var eventTags: js.UndefOr[js.Array[EventTag]] = js.native
+      var eventTags: js.UndefOr[js.Array[EventTag]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object EventTagsListResponse {
       
@@ -9577,28 +9461,27 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait File extends StObject {
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var fileName: js.UndefOr[String] = js.native
+      var fileName: js.UndefOr[String] = js.undefined
       
-      var format: js.UndefOr[String] = js.native
+      var format: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedTime: js.UndefOr[String] = js.native
+      var lastModifiedTime: js.UndefOr[String] = js.undefined
       
-      var reportId: js.UndefOr[String] = js.native
+      var reportId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var urls: js.UndefOr[FileUrls] = js.native
+      var urls: js.UndefOr[FileUrls] = js.undefined
     }
     object File {
       
@@ -9673,16 +9556,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FileList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[File]] = js.native
+      var items: js.UndefOr[js.Array[File]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object FileList {
       
@@ -9724,12 +9606,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FileUrls extends StObject {
       
-      var apiUrl: js.UndefOr[String] = js.native
+      var apiUrl: js.UndefOr[String] = js.undefined
       
-      var browserUrl: js.UndefOr[String] = js.native
+      var browserUrl: js.UndefOr[String] = js.undefined
     }
     object FileUrls {
       
@@ -9756,16 +9637,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Flight extends StObject {
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var rateOrCost: js.UndefOr[String] = js.native
+      var rateOrCost: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
       
-      var units: js.UndefOr[String] = js.native
+      var units: js.UndefOr[String] = js.undefined
     }
     object Flight {
       
@@ -9804,14 +9684,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivitiesGenerateTagResponse extends StObject {
       
-      var floodlightActivityTag: js.UndefOr[String] = js.native
+      var floodlightActivityTag: js.UndefOr[String] = js.undefined
       
-      var globalSiteTagGlobalSnippet: js.UndefOr[String] = js.native
+      var globalSiteTagGlobalSnippet: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object FloodlightActivitiesGenerateTagResponse {
       
@@ -9844,14 +9723,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivitiesListResponse extends StObject {
       
-      var floodlightActivities: js.UndefOr[js.Array[FloodlightActivity]] = js.native
+      var floodlightActivities: js.UndefOr[js.Array[FloodlightActivity]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object FloodlightActivitiesListResponse {
       
@@ -9887,64 +9765,63 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivity extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var cacheBustingType: js.UndefOr[String] = js.native
+      var cacheBustingType: js.UndefOr[String] = js.undefined
       
-      var countingMethod: js.UndefOr[String] = js.native
+      var countingMethod: js.UndefOr[String] = js.undefined
       
-      var defaultTags: js.UndefOr[js.Array[FloodlightActivityDynamicTag]] = js.native
+      var defaultTags: js.UndefOr[js.Array[FloodlightActivityDynamicTag]] = js.undefined
       
-      var expectedUrl: js.UndefOr[String] = js.native
+      var expectedUrl: js.UndefOr[String] = js.undefined
       
-      var floodlightActivityGroupId: js.UndefOr[String] = js.native
+      var floodlightActivityGroupId: js.UndefOr[String] = js.undefined
       
-      var floodlightActivityGroupName: js.UndefOr[String] = js.native
+      var floodlightActivityGroupName: js.UndefOr[String] = js.undefined
       
-      var floodlightActivityGroupTagString: js.UndefOr[String] = js.native
+      var floodlightActivityGroupTagString: js.UndefOr[String] = js.undefined
       
-      var floodlightActivityGroupType: js.UndefOr[String] = js.native
+      var floodlightActivityGroupType: js.UndefOr[String] = js.undefined
       
-      var floodlightConfigurationId: js.UndefOr[String] = js.native
+      var floodlightConfigurationId: js.UndefOr[String] = js.undefined
       
-      var floodlightConfigurationIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var floodlightConfigurationIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var floodlightTagType: js.UndefOr[String] = js.native
+      var floodlightTagType: js.UndefOr[String] = js.undefined
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var publisherTags: js.UndefOr[js.Array[FloodlightActivityPublisherDynamicTag]] = js.native
+      var publisherTags: js.UndefOr[js.Array[FloodlightActivityPublisherDynamicTag]] = js.undefined
       
-      var secure: js.UndefOr[Boolean] = js.native
+      var secure: js.UndefOr[Boolean] = js.undefined
       
-      var sslCompliant: js.UndefOr[Boolean] = js.native
+      var sslCompliant: js.UndefOr[Boolean] = js.undefined
       
-      var sslRequired: js.UndefOr[Boolean] = js.native
+      var sslRequired: js.UndefOr[Boolean] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var tagFormat: js.UndefOr[String] = js.native
+      var tagFormat: js.UndefOr[String] = js.undefined
       
-      var tagString: js.UndefOr[String] = js.native
+      var tagString: js.UndefOr[String] = js.undefined
       
-      var userDefinedVariableTypes: js.UndefOr[js.Array[String]] = js.native
+      var userDefinedVariableTypes: js.UndefOr[js.Array[String]] = js.undefined
     }
     object FloodlightActivity {
       
@@ -10136,14 +10013,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivityDynamicTag extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var tag: js.UndefOr[String] = js.native
+      var tag: js.UndefOr[String] = js.undefined
     }
     object FloodlightActivityDynamicTag {
       
@@ -10176,32 +10052,31 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivityGroup extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var floodlightConfigurationId: js.UndefOr[String] = js.native
+      var floodlightConfigurationId: js.UndefOr[String] = js.undefined
       
-      var floodlightConfigurationIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var floodlightConfigurationIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var tagString: js.UndefOr[String] = js.native
+      var tagString: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object FloodlightActivityGroup {
       
@@ -10288,14 +10163,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivityGroupsListResponse extends StObject {
       
-      var floodlightActivityGroups: js.UndefOr[js.Array[FloodlightActivityGroup]] = js.native
+      var floodlightActivityGroups: js.UndefOr[js.Array[FloodlightActivityGroup]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object FloodlightActivityGroupsListResponse {
       
@@ -10331,20 +10205,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightActivityPublisherDynamicTag extends StObject {
       
-      var clickThrough: js.UndefOr[Boolean] = js.native
+      var clickThrough: js.UndefOr[Boolean] = js.undefined
       
-      var directorySiteId: js.UndefOr[String] = js.native
+      var directorySiteId: js.UndefOr[String] = js.undefined
       
-      var dynamicTag: js.UndefOr[FloodlightActivityDynamicTag] = js.native
+      var dynamicTag: js.UndefOr[FloodlightActivityDynamicTag] = js.undefined
       
-      var siteId: js.UndefOr[String] = js.native
+      var siteId: js.UndefOr[String] = js.undefined
       
-      var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var viewThrough: js.UndefOr[Boolean] = js.native
+      var viewThrough: js.UndefOr[Boolean] = js.undefined
     }
     object FloodlightActivityPublisherDynamicTag {
       
@@ -10395,44 +10268,43 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightConfiguration extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var analyticsDataSharingEnabled: js.UndefOr[Boolean] = js.native
+      var analyticsDataSharingEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var customViewabilityMetric: js.UndefOr[CustomViewabilityMetric] = js.native
+      var customViewabilityMetric: js.UndefOr[CustomViewabilityMetric] = js.undefined
       
-      var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
+      var exposureToConversionEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var firstDayOfWeek: js.UndefOr[String] = js.native
+      var firstDayOfWeek: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var inAppAttributionTrackingEnabled: js.UndefOr[Boolean] = js.native
+      var inAppAttributionTrackingEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
+      var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
       
-      var naturalSearchConversionAttributionOption: js.UndefOr[String] = js.native
+      var naturalSearchConversionAttributionOption: js.UndefOr[String] = js.undefined
       
-      var omnitureSettings: js.UndefOr[OmnitureSettings] = js.native
+      var omnitureSettings: js.UndefOr[OmnitureSettings] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var tagSettings: js.UndefOr[TagSettings] = js.native
+      var tagSettings: js.UndefOr[TagSettings] = js.undefined
       
-      var thirdPartyAuthenticationTokens: js.UndefOr[js.Array[ThirdPartyAuthenticationToken]] = js.native
+      var thirdPartyAuthenticationTokens: js.UndefOr[js.Array[ThirdPartyAuthenticationToken]] = js.undefined
       
-      var userDefinedVariableConfigurations: js.UndefOr[js.Array[UserDefinedVariableConfiguration]] = js.native
+      var userDefinedVariableConfigurations: js.UndefOr[js.Array[UserDefinedVariableConfiguration]] = js.undefined
     }
     object FloodlightConfiguration {
       
@@ -10561,12 +10433,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightConfigurationsListResponse extends StObject {
       
-      var floodlightConfigurations: js.UndefOr[js.Array[FloodlightConfiguration]] = js.native
+      var floodlightConfigurations: js.UndefOr[js.Array[FloodlightConfiguration]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object FloodlightConfigurationsListResponse {
       
@@ -10596,16 +10467,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FloodlightReportCompatibleFields extends StObject {
       
-      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
     }
     object FloodlightReportCompatibleFields {
       
@@ -10653,12 +10523,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FrequencyCap extends StObject {
       
-      var duration: js.UndefOr[String] = js.native
+      var duration: js.UndefOr[String] = js.undefined
       
-      var impressions: js.UndefOr[String] = js.native
+      var impressions: js.UndefOr[String] = js.undefined
     }
     object FrequencyCap {
       
@@ -10685,18 +10554,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait FsCommand extends StObject {
       
-      var left: js.UndefOr[Double] = js.native
+      var left: js.UndefOr[Double] = js.undefined
       
-      var positionOption: js.UndefOr[String] = js.native
+      var positionOption: js.UndefOr[String] = js.undefined
       
-      var top: js.UndefOr[Double] = js.native
+      var top: js.UndefOr[Double] = js.undefined
       
-      var windowHeight: js.UndefOr[Double] = js.native
+      var windowHeight: js.UndefOr[Double] = js.undefined
       
-      var windowWidth: js.UndefOr[Double] = js.native
+      var windowWidth: js.UndefOr[Double] = js.undefined
     }
     object FsCommand {
       
@@ -10741,20 +10609,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait GeoTargeting extends StObject {
       
-      var cities: js.UndefOr[js.Array[City]] = js.native
+      var cities: js.UndefOr[js.Array[City]] = js.undefined
       
-      var countries: js.UndefOr[js.Array[Country]] = js.native
+      var countries: js.UndefOr[js.Array[Country]] = js.undefined
       
-      var excludeCountries: js.UndefOr[Boolean] = js.native
+      var excludeCountries: js.UndefOr[Boolean] = js.undefined
       
-      var metros: js.UndefOr[js.Array[Metro]] = js.native
+      var metros: js.UndefOr[js.Array[Metro]] = js.undefined
       
-      var postalCodes: js.UndefOr[js.Array[PostalCode]] = js.native
+      var postalCodes: js.UndefOr[js.Array[PostalCode]] = js.undefined
       
-      var regions: js.UndefOr[js.Array[Region]] = js.native
+      var regions: js.UndefOr[js.Array[Region]] = js.undefined
     }
     object GeoTargeting {
       
@@ -10820,48 +10687,47 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait InventoryItem extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var adSlots: js.UndefOr[js.Array[AdSlot]] = js.native
+      var adSlots: js.UndefOr[js.Array[AdSlot]] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var contentCategoryId: js.UndefOr[String] = js.native
+      var contentCategoryId: js.UndefOr[String] = js.undefined
       
-      var estimatedClickThroughRate: js.UndefOr[String] = js.native
+      var estimatedClickThroughRate: js.UndefOr[String] = js.undefined
       
-      var estimatedConversionRate: js.UndefOr[String] = js.native
+      var estimatedConversionRate: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var inPlan: js.UndefOr[Boolean] = js.native
+      var inPlan: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var negotiationChannelId: js.UndefOr[String] = js.native
+      var negotiationChannelId: js.UndefOr[String] = js.undefined
       
-      var orderId: js.UndefOr[String] = js.native
+      var orderId: js.UndefOr[String] = js.undefined
       
-      var placementStrategyId: js.UndefOr[String] = js.native
+      var placementStrategyId: js.UndefOr[String] = js.undefined
       
-      var pricing: js.UndefOr[Pricing] = js.native
+      var pricing: js.UndefOr[Pricing] = js.undefined
       
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
-      var rfpId: js.UndefOr[String] = js.native
+      var rfpId: js.UndefOr[String] = js.undefined
       
-      var siteId: js.UndefOr[String] = js.native
+      var siteId: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object InventoryItem {
       
@@ -10999,14 +10865,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait InventoryItemsListResponse extends StObject {
       
-      var inventoryItems: js.UndefOr[js.Array[InventoryItem]] = js.native
+      var inventoryItems: js.UndefOr[js.Array[InventoryItem]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object InventoryItemsListResponse {
       
@@ -11042,10 +10907,9 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait KeyValueTargetingExpression extends StObject {
       
-      var expression: js.UndefOr[String] = js.native
+      var expression: js.UndefOr[String] = js.undefined
     }
     object KeyValueTargetingExpression {
       
@@ -11066,22 +10930,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait LandingPage extends StObject {
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var deepLinks: js.UndefOr[js.Array[DeepLink]] = js.native
+      var deepLinks: js.UndefOr[js.Array[DeepLink]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object LandingPage {
       
@@ -11141,16 +11004,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Language extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Language {
       
@@ -11189,10 +11051,9 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait LanguageTargeting extends StObject {
       
-      var languages: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language]] = js.native
+      var languages: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language]] = js.undefined
     }
     object LanguageTargeting {
       
@@ -11216,12 +11077,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait LanguagesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var languages: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language]] = js.native
+      var languages: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Dfareporting.Schema.Language]] = js.undefined
     }
     object LanguagesListResponse {
       
@@ -11251,10 +11111,9 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait LastModifiedInfo extends StObject {
       
-      var time: js.UndefOr[String] = js.native
+      var time: js.UndefOr[String] = js.undefined
     }
     object LastModifiedInfo {
       
@@ -11275,10 +11134,9 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ListPopulationClause extends StObject {
       
-      var terms: js.UndefOr[js.Array[ListPopulationTerm]] = js.native
+      var terms: js.UndefOr[js.Array[ListPopulationTerm]] = js.undefined
     }
     object ListPopulationClause {
       
@@ -11302,14 +11160,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ListPopulationRule extends StObject {
       
-      var floodlightActivityId: js.UndefOr[String] = js.native
+      var floodlightActivityId: js.UndefOr[String] = js.undefined
       
-      var floodlightActivityName: js.UndefOr[String] = js.native
+      var floodlightActivityName: js.UndefOr[String] = js.undefined
       
-      var listPopulationClauses: js.UndefOr[js.Array[ListPopulationClause]] = js.native
+      var listPopulationClauses: js.UndefOr[js.Array[ListPopulationClause]] = js.undefined
     }
     object ListPopulationRule {
       
@@ -11345,24 +11202,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ListPopulationTerm extends StObject {
       
-      var contains: js.UndefOr[Boolean] = js.native
+      var contains: js.UndefOr[Boolean] = js.undefined
       
-      var negation: js.UndefOr[Boolean] = js.native
+      var negation: js.UndefOr[Boolean] = js.undefined
       
-      var operator: js.UndefOr[String] = js.native
+      var operator: js.UndefOr[String] = js.undefined
       
-      var remarketingListId: js.UndefOr[String] = js.native
+      var remarketingListId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
       
-      var variableFriendlyName: js.UndefOr[String] = js.native
+      var variableFriendlyName: js.UndefOr[String] = js.undefined
       
-      var variableName: js.UndefOr[String] = js.native
+      var variableName: js.UndefOr[String] = js.undefined
     }
     object ListPopulationTerm {
       
@@ -11425,10 +11281,9 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ListTargetingExpression extends StObject {
       
-      var expression: js.UndefOr[String] = js.native
+      var expression: js.UndefOr[String] = js.undefined
     }
     object ListTargetingExpression {
       
@@ -11449,12 +11304,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait LookbackConfiguration extends StObject {
       
-      var clickDuration: js.UndefOr[Double] = js.native
+      var clickDuration: js.UndefOr[Double] = js.undefined
       
-      var postImpressionActivitiesDuration: js.UndefOr[Double] = js.native
+      var postImpressionActivitiesDuration: js.UndefOr[Double] = js.undefined
     }
     object LookbackConfiguration {
       
@@ -11481,12 +11335,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Metric extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Metric {
       
@@ -11513,22 +11366,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Metro extends StObject {
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var countryDartId: js.UndefOr[String] = js.native
+      var countryDartId: js.UndefOr[String] = js.undefined
       
-      var dartId: js.UndefOr[String] = js.native
+      var dartId: js.UndefOr[String] = js.undefined
       
-      var dmaId: js.UndefOr[String] = js.native
+      var dmaId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metroCode: js.UndefOr[String] = js.native
+      var metroCode: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Metro {
       
@@ -11585,12 +11437,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait MetrosListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metros: js.UndefOr[js.Array[Metro]] = js.native
+      var metros: js.UndefOr[js.Array[Metro]] = js.undefined
     }
     object MetrosListResponse {
       
@@ -11620,18 +11471,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait MobileApp extends StObject {
       
-      var directory: js.UndefOr[String] = js.native
+      var directory: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var publisherName: js.UndefOr[String] = js.native
+      var publisherName: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object MobileApp {
       
@@ -11676,14 +11526,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait MobileAppsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mobileApps: js.UndefOr[js.Array[MobileApp]] = js.native
+      var mobileApps: js.UndefOr[js.Array[MobileApp]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object MobileAppsListResponse {
       
@@ -11719,18 +11568,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait MobileCarrier extends StObject {
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var countryDartId: js.UndefOr[String] = js.native
+      var countryDartId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object MobileCarrier {
       
@@ -11775,12 +11623,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait MobileCarriersListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.native
+      var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.undefined
     }
     object MobileCarriersListResponse {
       
@@ -11810,14 +11657,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ObjectFilter extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var objectIds: js.UndefOr[js.Array[String]] = js.native
+      var objectIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object ObjectFilter {
       
@@ -11853,12 +11699,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OffsetPosition extends StObject {
       
-      var left: js.UndefOr[Double] = js.native
+      var left: js.UndefOr[Double] = js.undefined
       
-      var top: js.UndefOr[Double] = js.native
+      var top: js.UndefOr[Double] = js.undefined
     }
     object OffsetPosition {
       
@@ -11885,12 +11730,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OmnitureSettings extends StObject {
       
-      var omnitureCostDataEnabled: js.UndefOr[Boolean] = js.native
+      var omnitureCostDataEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var omnitureIntegrationEnabled: js.UndefOr[Boolean] = js.native
+      var omnitureIntegrationEnabled: js.UndefOr[Boolean] = js.undefined
     }
     object OmnitureSettings {
       
@@ -11917,18 +11761,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OperatingSystem extends StObject {
       
-      var dartId: js.UndefOr[String] = js.native
+      var dartId: js.UndefOr[String] = js.undefined
       
-      var desktop: js.UndefOr[Boolean] = js.native
+      var desktop: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mobile: js.UndefOr[Boolean] = js.native
+      var mobile: js.UndefOr[Boolean] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object OperatingSystem {
       
@@ -11973,20 +11816,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OperatingSystemVersion extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var majorVersion: js.UndefOr[String] = js.native
+      var majorVersion: js.UndefOr[String] = js.undefined
       
-      var minorVersion: js.UndefOr[String] = js.native
+      var minorVersion: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var operatingSystem: js.UndefOr[OperatingSystem] = js.native
+      var operatingSystem: js.UndefOr[OperatingSystem] = js.undefined
     }
     object OperatingSystemVersion {
       
@@ -12037,12 +11879,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OperatingSystemVersionsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var operatingSystemVersions: js.UndefOr[js.Array[OperatingSystemVersion]] = js.native
+      var operatingSystemVersions: js.UndefOr[js.Array[OperatingSystemVersion]] = js.undefined
     }
     object OperatingSystemVersionsListResponse {
       
@@ -12072,12 +11913,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OperatingSystemsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var operatingSystems: js.UndefOr[js.Array[OperatingSystem]] = js.native
+      var operatingSystems: js.UndefOr[js.Array[OperatingSystem]] = js.undefined
     }
     object OperatingSystemsListResponse {
       
@@ -12107,14 +11947,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OptimizationActivity extends StObject {
       
-      var floodlightActivityId: js.UndefOr[String] = js.native
+      var floodlightActivityId: js.UndefOr[String] = js.undefined
       
-      var floodlightActivityIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var floodlightActivityIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
     }
     object OptimizationActivity {
       
@@ -12147,48 +11986,47 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Order extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var approverUserProfileIds: js.UndefOr[js.Array[String]] = js.native
+      var approverUserProfileIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var buyerInvoiceId: js.UndefOr[String] = js.native
+      var buyerInvoiceId: js.UndefOr[String] = js.undefined
       
-      var buyerOrganizationName: js.UndefOr[String] = js.native
+      var buyerOrganizationName: js.UndefOr[String] = js.undefined
       
-      var comments: js.UndefOr[String] = js.native
+      var comments: js.UndefOr[String] = js.undefined
       
-      var contacts: js.UndefOr[js.Array[OrderContact]] = js.native
+      var contacts: js.UndefOr[js.Array[OrderContact]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var planningTermId: js.UndefOr[String] = js.native
+      var planningTermId: js.UndefOr[String] = js.undefined
       
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
-      var sellerOrderId: js.UndefOr[String] = js.native
+      var sellerOrderId: js.UndefOr[String] = js.undefined
       
-      var sellerOrganizationName: js.UndefOr[String] = js.native
+      var sellerOrganizationName: js.UndefOr[String] = js.undefined
       
-      var siteId: js.UndefOr[js.Array[String]] = js.native
+      var siteId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var siteNames: js.UndefOr[js.Array[String]] = js.native
+      var siteNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var termsAndConditions: js.UndefOr[String] = js.native
+      var termsAndConditions: js.UndefOr[String] = js.undefined
     }
     object Order {
       
@@ -12335,18 +12173,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OrderContact extends StObject {
       
-      var contactInfo: js.UndefOr[String] = js.native
+      var contactInfo: js.UndefOr[String] = js.undefined
       
-      var contactName: js.UndefOr[String] = js.native
+      var contactName: js.UndefOr[String] = js.undefined
       
-      var contactTitle: js.UndefOr[String] = js.native
+      var contactTitle: js.UndefOr[String] = js.undefined
       
-      var contactType: js.UndefOr[String] = js.native
+      var contactType: js.UndefOr[String] = js.undefined
       
-      var signatureUserProfileId: js.UndefOr[String] = js.native
+      var signatureUserProfileId: js.UndefOr[String] = js.undefined
     }
     object OrderContact {
       
@@ -12391,42 +12228,41 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OrderDocument extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var amendedOrderDocumentId: js.UndefOr[String] = js.native
+      var amendedOrderDocumentId: js.UndefOr[String] = js.undefined
       
-      var approvedByUserProfileIds: js.UndefOr[js.Array[String]] = js.native
+      var approvedByUserProfileIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var cancelled: js.UndefOr[Boolean] = js.native
+      var cancelled: js.UndefOr[Boolean] = js.undefined
       
-      var createdInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var createdInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var effectiveDate: js.UndefOr[String] = js.native
+      var effectiveDate: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastSentRecipients: js.UndefOr[js.Array[String]] = js.native
+      var lastSentRecipients: js.UndefOr[js.Array[String]] = js.undefined
       
-      var lastSentTime: js.UndefOr[String] = js.native
+      var lastSentTime: js.UndefOr[String] = js.undefined
       
-      var orderId: js.UndefOr[String] = js.native
+      var orderId: js.UndefOr[String] = js.undefined
       
-      var projectId: js.UndefOr[String] = js.native
+      var projectId: js.UndefOr[String] = js.undefined
       
-      var signed: js.UndefOr[Boolean] = js.native
+      var signed: js.UndefOr[Boolean] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object OrderDocument {
       
@@ -12549,14 +12385,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OrderDocumentsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var orderDocuments: js.UndefOr[js.Array[OrderDocument]] = js.native
+      var orderDocuments: js.UndefOr[js.Array[OrderDocument]] = js.undefined
     }
     object OrderDocumentsListResponse {
       
@@ -12592,14 +12427,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait OrdersListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var orders: js.UndefOr[js.Array[Order]] = js.native
+      var orders: js.UndefOr[js.Array[Order]] = js.undefined
     }
     object OrdersListResponse {
       
@@ -12635,18 +12469,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PathToConversionReportCompatibleFields extends StObject {
       
-      var conversionDimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var conversionDimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var customFloodlightVariables: js.UndefOr[js.Array[Dimension]] = js.native
+      var customFloodlightVariables: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var perInteractionDimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var perInteractionDimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
     }
     object PathToConversionReportCompatibleFields {
       
@@ -12703,90 +12536,89 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Placement extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var adBlockingOptOut: js.UndefOr[Boolean] = js.native
+      var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
       
-      var additionalSizes: js.UndefOr[js.Array[Size]] = js.native
+      var additionalSizes: js.UndefOr[js.Array[Size]] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var campaignId: js.UndefOr[String] = js.native
+      var campaignId: js.UndefOr[String] = js.undefined
       
-      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var comment: js.UndefOr[String] = js.native
+      var comment: js.UndefOr[String] = js.undefined
       
-      var compatibility: js.UndefOr[String] = js.native
+      var compatibility: js.UndefOr[String] = js.undefined
       
-      var contentCategoryId: js.UndefOr[String] = js.native
+      var contentCategoryId: js.UndefOr[String] = js.undefined
       
-      var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var directorySiteId: js.UndefOr[String] = js.native
+      var directorySiteId: js.UndefOr[String] = js.undefined
       
-      var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var externalId: js.UndefOr[String] = js.native
+      var externalId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var keyName: js.UndefOr[String] = js.native
+      var keyName: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
+      var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var paymentApproved: js.UndefOr[Boolean] = js.native
+      var paymentApproved: js.UndefOr[Boolean] = js.undefined
       
-      var paymentSource: js.UndefOr[String] = js.native
+      var paymentSource: js.UndefOr[String] = js.undefined
       
-      var placementGroupId: js.UndefOr[String] = js.native
+      var placementGroupId: js.UndefOr[String] = js.undefined
       
-      var placementGroupIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var placementGroupIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var placementStrategyId: js.UndefOr[String] = js.native
+      var placementStrategyId: js.UndefOr[String] = js.undefined
       
-      var pricingSchedule: js.UndefOr[PricingSchedule] = js.native
+      var pricingSchedule: js.UndefOr[PricingSchedule] = js.undefined
       
-      var primary: js.UndefOr[Boolean] = js.native
+      var primary: js.UndefOr[Boolean] = js.undefined
       
-      var publisherUpdateInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var publisherUpdateInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var siteId: js.UndefOr[String] = js.native
+      var siteId: js.UndefOr[String] = js.undefined
       
-      var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var size: js.UndefOr[Size] = js.native
+      var size: js.UndefOr[Size] = js.undefined
       
-      var sslRequired: js.UndefOr[Boolean] = js.native
+      var sslRequired: js.UndefOr[Boolean] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var tagFormats: js.UndefOr[js.Array[String]] = js.native
+      var tagFormats: js.UndefOr[js.Array[String]] = js.undefined
       
-      var tagSetting: js.UndefOr[TagSetting] = js.native
+      var tagSetting: js.UndefOr[TagSetting] = js.undefined
       
-      var videoActiveViewOptOut: js.UndefOr[Boolean] = js.native
+      var videoActiveViewOptOut: js.UndefOr[Boolean] = js.undefined
       
-      var videoSettings: js.UndefOr[VideoSettings] = js.native
+      var videoSettings: js.UndefOr[VideoSettings] = js.undefined
       
-      var vpaidAdapterChoice: js.UndefOr[String] = js.native
+      var vpaidAdapterChoice: js.UndefOr[String] = js.undefined
     }
     object Placement {
       
@@ -13053,16 +12885,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementAssignment extends StObject {
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var placementId: js.UndefOr[String] = js.native
+      var placementId: js.UndefOr[String] = js.undefined
       
-      var placementIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var placementIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var sslRequired: js.UndefOr[Boolean] = js.native
+      var sslRequired: js.UndefOr[Boolean] = js.undefined
     }
     object PlacementAssignment {
       
@@ -13101,60 +12932,59 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementGroup extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var archived: js.UndefOr[Boolean] = js.native
+      var archived: js.UndefOr[Boolean] = js.undefined
       
-      var campaignId: js.UndefOr[String] = js.native
+      var campaignId: js.UndefOr[String] = js.undefined
       
-      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var childPlacementIds: js.UndefOr[js.Array[String]] = js.native
+      var childPlacementIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var comment: js.UndefOr[String] = js.native
+      var comment: js.UndefOr[String] = js.undefined
       
-      var contentCategoryId: js.UndefOr[String] = js.native
+      var contentCategoryId: js.UndefOr[String] = js.undefined
       
-      var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var directorySiteId: js.UndefOr[String] = js.native
+      var directorySiteId: js.UndefOr[String] = js.undefined
       
-      var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var externalId: js.UndefOr[String] = js.native
+      var externalId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var placementGroupType: js.UndefOr[String] = js.native
+      var placementGroupType: js.UndefOr[String] = js.undefined
       
-      var placementStrategyId: js.UndefOr[String] = js.native
+      var placementStrategyId: js.UndefOr[String] = js.undefined
       
-      var pricingSchedule: js.UndefOr[PricingSchedule] = js.native
+      var pricingSchedule: js.UndefOr[PricingSchedule] = js.undefined
       
-      var primaryPlacementId: js.UndefOr[String] = js.native
+      var primaryPlacementId: js.UndefOr[String] = js.undefined
       
-      var primaryPlacementIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var primaryPlacementIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var siteId: js.UndefOr[String] = js.native
+      var siteId: js.UndefOr[String] = js.undefined
       
-      var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var siteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
     }
     object PlacementGroup {
       
@@ -13328,14 +13158,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementGroupsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var placementGroups: js.UndefOr[js.Array[PlacementGroup]] = js.native
+      var placementGroups: js.UndefOr[js.Array[PlacementGroup]] = js.undefined
     }
     object PlacementGroupsListResponse {
       
@@ -13371,14 +13200,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementStrategiesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var placementStrategies: js.UndefOr[js.Array[PlacementStrategy]] = js.native
+      var placementStrategies: js.UndefOr[js.Array[PlacementStrategy]] = js.undefined
     }
     object PlacementStrategiesListResponse {
       
@@ -13414,16 +13242,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementStrategy extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object PlacementStrategy {
       
@@ -13462,12 +13289,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementTag extends StObject {
       
-      var placementId: js.UndefOr[String] = js.native
+      var placementId: js.UndefOr[String] = js.undefined
       
-      var tagDatas: js.UndefOr[js.Array[TagData]] = js.native
+      var tagDatas: js.UndefOr[js.Array[TagData]] = js.undefined
     }
     object PlacementTag {
       
@@ -13497,12 +13323,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementsGenerateTagsResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var placementTags: js.UndefOr[js.Array[PlacementTag]] = js.native
+      var placementTags: js.UndefOr[js.Array[PlacementTag]] = js.undefined
     }
     object PlacementsGenerateTagsResponse {
       
@@ -13532,14 +13357,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlacementsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var placements: js.UndefOr[js.Array[Placement]] = js.native
+      var placements: js.UndefOr[js.Array[Placement]] = js.undefined
     }
     object PlacementsListResponse {
       
@@ -13575,14 +13399,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlatformType extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object PlatformType {
       
@@ -13615,12 +13438,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PlatformTypesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.native
+      var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.undefined
     }
     object PlatformTypesListResponse {
       
@@ -13650,26 +13472,25 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PopupWindowProperties extends StObject {
       
-      var dimension: js.UndefOr[Size] = js.native
+      var dimension: js.UndefOr[Size] = js.undefined
       
-      var offset: js.UndefOr[OffsetPosition] = js.native
+      var offset: js.UndefOr[OffsetPosition] = js.undefined
       
-      var positionType: js.UndefOr[String] = js.native
+      var positionType: js.UndefOr[String] = js.undefined
       
-      var showAddressBar: js.UndefOr[Boolean] = js.native
+      var showAddressBar: js.UndefOr[Boolean] = js.undefined
       
-      var showMenuBar: js.UndefOr[Boolean] = js.native
+      var showMenuBar: js.UndefOr[Boolean] = js.undefined
       
-      var showScrollBar: js.UndefOr[Boolean] = js.native
+      var showScrollBar: js.UndefOr[Boolean] = js.undefined
       
-      var showStatusBar: js.UndefOr[Boolean] = js.native
+      var showStatusBar: js.UndefOr[Boolean] = js.undefined
       
-      var showToolBar: js.UndefOr[Boolean] = js.native
+      var showToolBar: js.UndefOr[Boolean] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object PopupWindowProperties {
       
@@ -13738,18 +13559,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PostalCode extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var countryDartId: js.UndefOr[String] = js.native
+      var countryDartId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object PostalCode {
       
@@ -13794,12 +13614,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PostalCodesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var postalCodes: js.UndefOr[js.Array[PostalCode]] = js.native
+      var postalCodes: js.UndefOr[js.Array[PostalCode]] = js.undefined
     }
     object PostalCodesListResponse {
       
@@ -13829,20 +13648,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Pricing extends StObject {
       
-      var capCostType: js.UndefOr[String] = js.native
+      var capCostType: js.UndefOr[String] = js.undefined
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var flights: js.UndefOr[js.Array[Flight]] = js.native
+      var flights: js.UndefOr[js.Array[Flight]] = js.undefined
       
-      var groupType: js.UndefOr[String] = js.native
+      var groupType: js.UndefOr[String] = js.undefined
       
-      var pricingType: js.UndefOr[String] = js.native
+      var pricingType: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
     }
     object Pricing {
       
@@ -13896,26 +13714,25 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PricingSchedule extends StObject {
       
-      var capCostOption: js.UndefOr[String] = js.native
+      var capCostOption: js.UndefOr[String] = js.undefined
       
-      var disregardOverdelivery: js.UndefOr[Boolean] = js.native
+      var disregardOverdelivery: js.UndefOr[Boolean] = js.undefined
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var flighted: js.UndefOr[Boolean] = js.native
+      var flighted: js.UndefOr[Boolean] = js.undefined
       
-      var floodlightActivityId: js.UndefOr[String] = js.native
+      var floodlightActivityId: js.UndefOr[String] = js.undefined
       
-      var pricingPeriods: js.UndefOr[js.Array[PricingSchedulePricingPeriod]] = js.native
+      var pricingPeriods: js.UndefOr[js.Array[PricingSchedulePricingPeriod]] = js.undefined
       
-      var pricingType: js.UndefOr[String] = js.native
+      var pricingType: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
       
-      var testingStartDate: js.UndefOr[String] = js.native
+      var testingStartDate: js.UndefOr[String] = js.undefined
     }
     object PricingSchedule {
       
@@ -13987,18 +13804,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait PricingSchedulePricingPeriod extends StObject {
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var pricingComment: js.UndefOr[String] = js.native
+      var pricingComment: js.UndefOr[String] = js.undefined
       
-      var rateOrCostNanos: js.UndefOr[String] = js.native
+      var rateOrCostNanos: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
       
-      var units: js.UndefOr[String] = js.native
+      var units: js.UndefOr[String] = js.undefined
     }
     object PricingSchedulePricingPeriod {
       
@@ -14043,52 +13859,51 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Project extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var audienceAgeGroup: js.UndefOr[String] = js.native
+      var audienceAgeGroup: js.UndefOr[String] = js.undefined
       
-      var audienceGender: js.UndefOr[String] = js.native
+      var audienceGender: js.UndefOr[String] = js.undefined
       
-      var budget: js.UndefOr[String] = js.native
+      var budget: js.UndefOr[String] = js.undefined
       
-      var clientBillingCode: js.UndefOr[String] = js.native
+      var clientBillingCode: js.UndefOr[String] = js.undefined
       
-      var clientName: js.UndefOr[String] = js.native
+      var clientName: js.UndefOr[String] = js.undefined
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+      var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var overview: js.UndefOr[String] = js.native
+      var overview: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var targetClicks: js.UndefOr[String] = js.native
+      var targetClicks: js.UndefOr[String] = js.undefined
       
-      var targetConversions: js.UndefOr[String] = js.native
+      var targetConversions: js.UndefOr[String] = js.undefined
       
-      var targetCpaNanos: js.UndefOr[String] = js.native
+      var targetCpaNanos: js.UndefOr[String] = js.undefined
       
-      var targetCpcNanos: js.UndefOr[String] = js.native
+      var targetCpcNanos: js.UndefOr[String] = js.undefined
       
-      var targetCpmActiveViewNanos: js.UndefOr[String] = js.native
+      var targetCpmActiveViewNanos: js.UndefOr[String] = js.undefined
       
-      var targetCpmNanos: js.UndefOr[String] = js.native
+      var targetCpmNanos: js.UndefOr[String] = js.undefined
       
-      var targetImpressions: js.UndefOr[String] = js.native
+      var targetImpressions: js.UndefOr[String] = js.undefined
     }
     object Project {
       
@@ -14235,14 +14050,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ProjectsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var projects: js.UndefOr[js.Array[Project]] = js.native
+      var projects: js.UndefOr[js.Array[Project]] = js.undefined
     }
     object ProjectsListResponse {
       
@@ -14278,20 +14092,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReachReportCompatibleFields extends StObject {
       
-      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var pivotedActivityMetrics: js.UndefOr[js.Array[Metric]] = js.native
+      var pivotedActivityMetrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var reachByFrequencyMetrics: js.UndefOr[js.Array[Metric]] = js.native
+      var reachByFrequencyMetrics: js.UndefOr[js.Array[Metric]] = js.undefined
     }
     object ReachReportCompatibleFields {
       
@@ -14357,14 +14170,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Recipient extends StObject {
       
-      var deliveryType: js.UndefOr[String] = js.native
+      var deliveryType: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Recipient {
       
@@ -14397,20 +14209,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Region extends StObject {
       
-      var countryCode: js.UndefOr[String] = js.native
+      var countryCode: js.UndefOr[String] = js.undefined
       
-      var countryDartId: js.UndefOr[String] = js.native
+      var countryDartId: js.UndefOr[String] = js.undefined
       
-      var dartId: js.UndefOr[String] = js.native
+      var dartId: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var regionCode: js.UndefOr[String] = js.native
+      var regionCode: js.UndefOr[String] = js.undefined
     }
     object Region {
       
@@ -14461,12 +14272,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait RegionsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var regions: js.UndefOr[js.Array[Region]] = js.native
+      var regions: js.UndefOr[js.Array[Region]] = js.undefined
     }
     object RegionsListResponse {
       
@@ -14496,34 +14306,33 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait RemarketingList extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lifeSpan: js.UndefOr[String] = js.native
+      var lifeSpan: js.UndefOr[String] = js.undefined
       
-      var listPopulationRule: js.UndefOr[ListPopulationRule] = js.native
+      var listPopulationRule: js.UndefOr[ListPopulationRule] = js.undefined
       
-      var listSize: js.UndefOr[String] = js.native
+      var listSize: js.UndefOr[String] = js.undefined
       
-      var listSource: js.UndefOr[String] = js.native
+      var listSource: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
     }
     object RemarketingList {
       
@@ -14616,16 +14425,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait RemarketingListShare extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var remarketingListId: js.UndefOr[String] = js.native
+      var remarketingListId: js.UndefOr[String] = js.undefined
       
-      var sharedAccountIds: js.UndefOr[js.Array[String]] = js.native
+      var sharedAccountIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var sharedAdvertiserIds: js.UndefOr[js.Array[String]] = js.native
+      var sharedAdvertiserIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object RemarketingListShare {
       
@@ -14670,14 +14478,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait RemarketingListsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var remarketingLists: js.UndefOr[js.Array[RemarketingList]] = js.native
+      var remarketingLists: js.UndefOr[js.Array[RemarketingList]] = js.undefined
     }
     object RemarketingListsListResponse {
       
@@ -14713,44 +14520,43 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Report extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var criteria: js.UndefOr[ReportCriteria] = js.native
+      var criteria: js.UndefOr[ReportCriteria] = js.undefined
       
-      var crossDimensionReachCriteria: js.UndefOr[ReportCrossDimensionReachCriteria] = js.native
+      var crossDimensionReachCriteria: js.UndefOr[ReportCrossDimensionReachCriteria] = js.undefined
       
-      var delivery: js.UndefOr[ReportDelivery] = js.native
+      var delivery: js.UndefOr[ReportDelivery] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var fileName: js.UndefOr[String] = js.native
+      var fileName: js.UndefOr[String] = js.undefined
       
-      var floodlightCriteria: js.UndefOr[ReportFloodlightCriteria] = js.native
+      var floodlightCriteria: js.UndefOr[ReportFloodlightCriteria] = js.undefined
       
-      var format: js.UndefOr[String] = js.native
+      var format: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifiedTime: js.UndefOr[String] = js.native
+      var lastModifiedTime: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var ownerProfileId: js.UndefOr[String] = js.native
+      var ownerProfileId: js.UndefOr[String] = js.undefined
       
-      var pathToConversionCriteria: js.UndefOr[ReportPathToConversionCriteria] = js.native
+      var pathToConversionCriteria: js.UndefOr[ReportPathToConversionCriteria] = js.undefined
       
-      var reachCriteria: js.UndefOr[ReportReachCriteria] = js.native
+      var reachCriteria: js.UndefOr[ReportReachCriteria] = js.undefined
       
-      var schedule: js.UndefOr[ReportSchedule] = js.native
+      var schedule: js.UndefOr[ReportSchedule] = js.undefined
       
-      var subAccountId: js.UndefOr[String] = js.native
+      var subAccountId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Report {
       
@@ -14873,18 +14679,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportCompatibleFields extends StObject {
       
-      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metrics: js.UndefOr[js.Array[Metric]] = js.native
+      var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
       
-      var pivotedActivityMetrics: js.UndefOr[js.Array[Metric]] = js.native
+      var pivotedActivityMetrics: js.UndefOr[js.Array[Metric]] = js.undefined
     }
     object ReportCompatibleFields {
       
@@ -14941,20 +14746,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportCriteria extends StObject {
       
-      var activities: js.UndefOr[Activities] = js.native
+      var activities: js.UndefOr[Activities] = js.undefined
       
-      var customRichMediaEvents: js.UndefOr[CustomRichMediaEvents] = js.native
+      var customRichMediaEvents: js.UndefOr[CustomRichMediaEvents] = js.undefined
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var metricNames: js.UndefOr[js.Array[String]] = js.native
+      var metricNames: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ReportCriteria {
       
@@ -15014,22 +14818,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportCrossDimensionReachCriteria extends StObject {
       
-      var breakdown: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var breakdown: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var dimension: js.UndefOr[String] = js.native
+      var dimension: js.UndefOr[String] = js.undefined
       
-      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var metricNames: js.UndefOr[js.Array[String]] = js.native
+      var metricNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var overlapMetricNames: js.UndefOr[js.Array[String]] = js.native
+      var overlapMetricNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var pivoted: js.UndefOr[Boolean] = js.native
+      var pivoted: js.UndefOr[Boolean] = js.undefined
     }
     object ReportCrossDimensionReachCriteria {
       
@@ -15098,16 +14901,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportDelivery extends StObject {
       
-      var emailOwner: js.UndefOr[Boolean] = js.native
+      var emailOwner: js.UndefOr[Boolean] = js.undefined
       
-      var emailOwnerDeliveryType: js.UndefOr[String] = js.native
+      var emailOwnerDeliveryType: js.UndefOr[String] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var recipients: js.UndefOr[js.Array[Recipient]] = js.native
+      var recipients: js.UndefOr[js.Array[Recipient]] = js.undefined
     }
     object ReportDelivery {
       
@@ -15149,22 +14951,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportFloodlightCriteria extends StObject {
       
-      var customRichMediaEvents: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var customRichMediaEvents: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var floodlightConfigId: js.UndefOr[DimensionValue] = js.native
+      var floodlightConfigId: js.UndefOr[DimensionValue] = js.undefined
       
-      var metricNames: js.UndefOr[js.Array[String]] = js.native
+      var metricNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var reportProperties: js.UndefOr[ReportFloodlightCriteriaReportProperties] = js.native
+      var reportProperties: js.UndefOr[ReportFloodlightCriteriaReportProperties] = js.undefined
     }
     object ReportFloodlightCriteria {
       
@@ -15233,14 +15034,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportFloodlightCriteriaReportProperties extends StObject {
       
-      var includeAttributedIPConversions: js.UndefOr[Boolean] = js.native
+      var includeAttributedIPConversions: js.UndefOr[Boolean] = js.undefined
       
-      var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.native
+      var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.undefined
       
-      var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.native
+      var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.undefined
     }
     object ReportFloodlightCriteriaReportProperties {
       
@@ -15273,16 +15073,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Report]] = js.native
+      var items: js.UndefOr[js.Array[Report]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ReportList {
       
@@ -15324,26 +15123,25 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportPathToConversionCriteria extends StObject {
       
-      var activityFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var activityFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var conversionDimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var conversionDimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var customFloodlightVariables: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var customFloodlightVariables: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var customRichMediaEvents: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var customRichMediaEvents: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var floodlightConfigId: js.UndefOr[DimensionValue] = js.native
+      var floodlightConfigId: js.UndefOr[DimensionValue] = js.undefined
       
-      var metricNames: js.UndefOr[js.Array[String]] = js.native
+      var metricNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var perInteractionDimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var perInteractionDimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var reportProperties: js.UndefOr[ReportPathToConversionCriteriaReportProperties] = js.native
+      var reportProperties: js.UndefOr[ReportPathToConversionCriteriaReportProperties] = js.undefined
     }
     object ReportPathToConversionCriteria {
       
@@ -15430,26 +15228,25 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportPathToConversionCriteriaReportProperties extends StObject {
       
-      var clicksLookbackWindow: js.UndefOr[Double] = js.native
+      var clicksLookbackWindow: js.UndefOr[Double] = js.undefined
       
-      var impressionsLookbackWindow: js.UndefOr[Double] = js.native
+      var impressionsLookbackWindow: js.UndefOr[Double] = js.undefined
       
-      var includeAttributedIPConversions: js.UndefOr[Boolean] = js.native
+      var includeAttributedIPConversions: js.UndefOr[Boolean] = js.undefined
       
-      var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.native
+      var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.undefined
       
-      var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.native
+      var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.undefined
       
-      var maximumClickInteractions: js.UndefOr[Double] = js.native
+      var maximumClickInteractions: js.UndefOr[Double] = js.undefined
       
-      var maximumImpressionInteractions: js.UndefOr[Double] = js.native
+      var maximumImpressionInteractions: js.UndefOr[Double] = js.undefined
       
-      var maximumInteractionGap: js.UndefOr[Double] = js.native
+      var maximumInteractionGap: js.UndefOr[Double] = js.undefined
       
-      var pivotOnInteractionPath: js.UndefOr[Boolean] = js.native
+      var pivotOnInteractionPath: js.UndefOr[Boolean] = js.undefined
     }
     object ReportPathToConversionCriteriaReportProperties {
       
@@ -15518,24 +15315,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportReachCriteria extends StObject {
       
-      var activities: js.UndefOr[Activities] = js.native
+      var activities: js.UndefOr[Activities] = js.undefined
       
-      var customRichMediaEvents: js.UndefOr[CustomRichMediaEvents] = js.native
+      var customRichMediaEvents: js.UndefOr[CustomRichMediaEvents] = js.undefined
       
-      var dateRange: js.UndefOr[DateRange] = js.native
+      var dateRange: js.UndefOr[DateRange] = js.undefined
       
-      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.native
+      var dimensionFilters: js.UndefOr[js.Array[DimensionValue]] = js.undefined
       
-      var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.native
+      var dimensions: js.UndefOr[js.Array[SortedDimension]] = js.undefined
       
-      var enableAllDimensionCombinations: js.UndefOr[Boolean] = js.native
+      var enableAllDimensionCombinations: js.UndefOr[Boolean] = js.undefined
       
-      var metricNames: js.UndefOr[js.Array[String]] = js.native
+      var metricNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var reachByFrequencyMetricNames: js.UndefOr[js.Array[String]] = js.native
+      var reachByFrequencyMetricNames: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ReportReachCriteria {
       
@@ -15610,22 +15406,21 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportSchedule extends StObject {
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var every: js.UndefOr[Double] = js.native
+      var every: js.UndefOr[Double] = js.undefined
       
-      var expirationDate: js.UndefOr[String] = js.native
+      var expirationDate: js.UndefOr[String] = js.undefined
       
-      var repeats: js.UndefOr[String] = js.native
+      var repeats: js.UndefOr[String] = js.undefined
       
-      var repeatsOnWeekDays: js.UndefOr[js.Array[String]] = js.native
+      var repeatsOnWeekDays: js.UndefOr[js.Array[String]] = js.undefined
       
-      var runsOnDayOfMonth: js.UndefOr[String] = js.native
+      var runsOnDayOfMonth: js.UndefOr[String] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
     }
     object ReportSchedule {
       
@@ -15685,14 +15480,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ReportsConfiguration extends StObject {
       
-      var exposureToConversionEnabled: js.UndefOr[Boolean] = js.native
+      var exposureToConversionEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.native
+      var lookbackConfiguration: js.UndefOr[LookbackConfiguration] = js.undefined
       
-      var reportGenerationTimeZoneId: js.UndefOr[String] = js.native
+      var reportGenerationTimeZoneId: js.UndefOr[String] = js.undefined
     }
     object ReportsConfiguration {
       
@@ -15725,14 +15519,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait RichMediaExitOverride extends StObject {
       
-      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
+      var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined
       
-      var enabled: js.UndefOr[Boolean] = js.native
+      var enabled: js.UndefOr[Boolean] = js.undefined
       
-      var exitId: js.UndefOr[String] = js.native
+      var exitId: js.UndefOr[String] = js.undefined
     }
     object RichMediaExitOverride {
       
@@ -15765,14 +15558,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Rule extends StObject {
       
-      var assetId: js.UndefOr[String] = js.native
+      var assetId: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var targetingTemplateId: js.UndefOr[String] = js.native
+      var targetingTemplateId: js.UndefOr[String] = js.undefined
     }
     object Rule {
       
@@ -15805,34 +15597,33 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Site extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var approved: js.UndefOr[Boolean] = js.native
+      var approved: js.UndefOr[Boolean] = js.undefined
       
-      var directorySiteId: js.UndefOr[String] = js.native
+      var directorySiteId: js.UndefOr[String] = js.undefined
       
-      var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var directorySiteIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var keyName: js.UndefOr[String] = js.native
+      var keyName: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var siteContacts: js.UndefOr[js.Array[SiteContact]] = js.native
+      var siteContacts: js.UndefOr[js.Array[SiteContact]] = js.undefined
       
-      var siteSettings: js.UndefOr[SiteSettings] = js.native
+      var siteSettings: js.UndefOr[SiteSettings] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var videoSettings: js.UndefOr[SiteVideoSettings] = js.native
+      var videoSettings: js.UndefOr[SiteVideoSettings] = js.undefined
     }
     object Site {
       
@@ -15928,16 +15719,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SiteCompanionSetting extends StObject {
       
-      var companionsDisabled: js.UndefOr[Boolean] = js.native
+      var companionsDisabled: js.UndefOr[Boolean] = js.undefined
       
-      var enabledSizes: js.UndefOr[js.Array[Size]] = js.native
+      var enabledSizes: js.UndefOr[js.Array[Size]] = js.undefined
       
-      var imageOnly: js.UndefOr[Boolean] = js.native
+      var imageOnly: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object SiteCompanionSetting {
       
@@ -15979,24 +15769,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SiteContact extends StObject {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var contactType: js.UndefOr[String] = js.native
+      var contactType: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var firstName: js.UndefOr[String] = js.native
+      var firstName: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var lastName: js.UndefOr[String] = js.native
+      var lastName: js.UndefOr[String] = js.undefined
       
-      var phone: js.UndefOr[String] = js.native
+      var phone: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SiteContact {
       
@@ -16059,20 +15848,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SiteSettings extends StObject {
       
-      var activeViewOptOut: js.UndefOr[Boolean] = js.native
+      var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
       
-      var adBlockingOptOut: js.UndefOr[Boolean] = js.native
+      var adBlockingOptOut: js.UndefOr[Boolean] = js.undefined
       
-      var disableNewCookie: js.UndefOr[Boolean] = js.native
+      var disableNewCookie: js.UndefOr[Boolean] = js.undefined
       
-      var tagSetting: js.UndefOr[TagSetting] = js.native
+      var tagSetting: js.UndefOr[TagSetting] = js.undefined
       
-      var videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.native
+      var videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.undefined
       
-      var vpaidAdapterChoiceTemplate: js.UndefOr[String] = js.native
+      var vpaidAdapterChoiceTemplate: js.UndefOr[String] = js.undefined
     }
     object SiteSettings {
       
@@ -16123,16 +15911,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SiteSkippableSetting extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var progressOffset: js.UndefOr[VideoOffset] = js.native
+      var progressOffset: js.UndefOr[VideoOffset] = js.undefined
       
-      var skipOffset: js.UndefOr[VideoOffset] = js.native
+      var skipOffset: js.UndefOr[VideoOffset] = js.undefined
       
-      var skippable: js.UndefOr[Boolean] = js.native
+      var skippable: js.UndefOr[Boolean] = js.undefined
     }
     object SiteSkippableSetting {
       
@@ -16171,12 +15958,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SiteTranscodeSetting extends StObject {
       
-      var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.native
+      var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object SiteTranscodeSetting {
       
@@ -16206,18 +15992,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SiteVideoSettings extends StObject {
       
-      var companionSettings: js.UndefOr[SiteCompanionSetting] = js.native
+      var companionSettings: js.UndefOr[SiteCompanionSetting] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var orientation: js.UndefOr[String] = js.native
+      var orientation: js.UndefOr[String] = js.undefined
       
-      var skippableSettings: js.UndefOr[SiteSkippableSetting] = js.native
+      var skippableSettings: js.UndefOr[SiteSkippableSetting] = js.undefined
       
-      var transcodeSettings: js.UndefOr[SiteTranscodeSetting] = js.native
+      var transcodeSettings: js.UndefOr[SiteTranscodeSetting] = js.undefined
     }
     object SiteVideoSettings {
       
@@ -16262,14 +16047,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SitesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var sites: js.UndefOr[js.Array[Site]] = js.native
+      var sites: js.UndefOr[js.Array[Site]] = js.undefined
     }
     object SitesListResponse {
       
@@ -16305,18 +16089,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Size extends StObject {
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var iab: js.UndefOr[Boolean] = js.native
+      var iab: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object Size {
       
@@ -16361,12 +16144,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SizesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var sizes: js.UndefOr[js.Array[Size]] = js.native
+      var sizes: js.UndefOr[js.Array[Size]] = js.undefined
     }
     object SizesListResponse {
       
@@ -16396,16 +16178,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SkippableSetting extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var progressOffset: js.UndefOr[VideoOffset] = js.native
+      var progressOffset: js.UndefOr[VideoOffset] = js.undefined
       
-      var skipOffset: js.UndefOr[VideoOffset] = js.native
+      var skipOffset: js.UndefOr[VideoOffset] = js.undefined
       
-      var skippable: js.UndefOr[Boolean] = js.native
+      var skippable: js.UndefOr[Boolean] = js.undefined
     }
     object SkippableSetting {
       
@@ -16444,14 +16225,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SortedDimension extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var sortOrder: js.UndefOr[String] = js.native
+      var sortOrder: js.UndefOr[String] = js.undefined
     }
     object SortedDimension {
       
@@ -16484,18 +16264,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait Subaccount extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var availablePermissionIds: js.UndefOr[js.Array[String]] = js.native
+      var availablePermissionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Subaccount {
       
@@ -16543,14 +16322,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait SubaccountsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var subaccounts: js.UndefOr[js.Array[Subaccount]] = js.native
+      var subaccounts: js.UndefOr[js.Array[Subaccount]] = js.undefined
     }
     object SubaccountsListResponse {
       
@@ -16586,18 +16364,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TagData extends StObject {
       
-      var adId: js.UndefOr[String] = js.native
+      var adId: js.UndefOr[String] = js.undefined
       
-      var clickTag: js.UndefOr[String] = js.native
+      var clickTag: js.UndefOr[String] = js.undefined
       
-      var creativeId: js.UndefOr[String] = js.native
+      var creativeId: js.UndefOr[String] = js.undefined
       
-      var format: js.UndefOr[String] = js.native
+      var format: js.UndefOr[String] = js.undefined
       
-      var impressionTag: js.UndefOr[String] = js.native
+      var impressionTag: js.UndefOr[String] = js.undefined
     }
     object TagData {
       
@@ -16642,16 +16419,15 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TagSetting extends StObject {
       
-      var additionalKeyValues: js.UndefOr[String] = js.native
+      var additionalKeyValues: js.UndefOr[String] = js.undefined
       
-      var includeClickThroughUrls: js.UndefOr[Boolean] = js.native
+      var includeClickThroughUrls: js.UndefOr[Boolean] = js.undefined
       
-      var includeClickTracking: js.UndefOr[Boolean] = js.native
+      var includeClickTracking: js.UndefOr[Boolean] = js.undefined
       
-      var keywordOption: js.UndefOr[String] = js.native
+      var keywordOption: js.UndefOr[String] = js.undefined
     }
     object TagSetting {
       
@@ -16690,12 +16466,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TagSettings extends StObject {
       
-      var dynamicTagEnabled: js.UndefOr[Boolean] = js.native
+      var dynamicTagEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var imageTagEnabled: js.UndefOr[Boolean] = js.native
+      var imageTagEnabled: js.UndefOr[Boolean] = js.undefined
     }
     object TagSettings {
       
@@ -16722,12 +16497,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TargetWindow extends StObject {
       
-      var customHtml: js.UndefOr[String] = js.native
+      var customHtml: js.UndefOr[String] = js.undefined
       
-      var targetWindowOption: js.UndefOr[String] = js.native
+      var targetWindowOption: js.UndefOr[String] = js.undefined
     }
     object TargetWindow {
       
@@ -16754,32 +16528,31 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TargetableRemarketingList extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var active: js.UndefOr[Boolean] = js.native
+      var active: js.UndefOr[Boolean] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lifeSpan: js.UndefOr[String] = js.native
+      var lifeSpan: js.UndefOr[String] = js.undefined
       
-      var listSize: js.UndefOr[String] = js.native
+      var listSize: js.UndefOr[String] = js.undefined
       
-      var listSource: js.UndefOr[String] = js.native
+      var listSource: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
     }
     object TargetableRemarketingList {
       
@@ -16866,14 +16639,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TargetableRemarketingListsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var targetableRemarketingLists: js.UndefOr[js.Array[TargetableRemarketingList]] = js.native
+      var targetableRemarketingLists: js.UndefOr[js.Array[TargetableRemarketingList]] = js.undefined
     }
     object TargetableRemarketingListsListResponse {
       
@@ -16909,34 +16681,33 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TargetingTemplate extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var advertiserId: js.UndefOr[String] = js.native
+      var advertiserId: js.UndefOr[String] = js.undefined
       
-      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+      var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
       
-      var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.native
+      var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.undefined
       
-      var geoTargeting: js.UndefOr[GeoTargeting] = js.native
+      var geoTargeting: js.UndefOr[GeoTargeting] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.native
+      var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var languageTargeting: js.UndefOr[LanguageTargeting] = js.native
+      var languageTargeting: js.UndefOr[LanguageTargeting] = js.undefined
       
-      var listTargetingExpression: js.UndefOr[ListTargetingExpression] = js.native
+      var listTargetingExpression: js.UndefOr[ListTargetingExpression] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
       
-      var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.native
+      var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.undefined
     }
     object TargetingTemplate {
       
@@ -17029,14 +16800,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TargetingTemplatesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var targetingTemplates: js.UndefOr[js.Array[TargetingTemplate]] = js.native
+      var targetingTemplates: js.UndefOr[js.Array[TargetingTemplate]] = js.undefined
     }
     object TargetingTemplatesListResponse {
       
@@ -17072,20 +16842,19 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TechnologyTargeting extends StObject {
       
-      var browsers: js.UndefOr[js.Array[Browser]] = js.native
+      var browsers: js.UndefOr[js.Array[Browser]] = js.undefined
       
-      var connectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.native
+      var connectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.undefined
       
-      var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.native
+      var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.undefined
       
-      var operatingSystemVersions: js.UndefOr[js.Array[OperatingSystemVersion]] = js.native
+      var operatingSystemVersions: js.UndefOr[js.Array[OperatingSystemVersion]] = js.undefined
       
-      var operatingSystems: js.UndefOr[js.Array[OperatingSystem]] = js.native
+      var operatingSystems: js.UndefOr[js.Array[OperatingSystem]] = js.undefined
       
-      var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.native
+      var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.undefined
     }
     object TechnologyTargeting {
       
@@ -17154,12 +16923,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ThirdPartyAuthenticationToken extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object ThirdPartyAuthenticationToken {
       
@@ -17186,12 +16954,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait ThirdPartyTrackingUrl extends StObject {
       
-      var thirdPartyUrlType: js.UndefOr[String] = js.native
+      var thirdPartyUrlType: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object ThirdPartyTrackingUrl {
       
@@ -17218,12 +16985,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait TranscodeSetting extends StObject {
       
-      var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.native
+      var enabledVideoFormats: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object TranscodeSetting {
       
@@ -17253,12 +17019,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UniversalAdId extends StObject {
       
-      var registry: js.UndefOr[String] = js.native
+      var registry: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UniversalAdId {
       
@@ -17285,14 +17050,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserDefinedVariableConfiguration extends StObject {
       
-      var dataType: js.UndefOr[String] = js.native
+      var dataType: js.UndefOr[String] = js.undefined
       
-      var reportName: js.UndefOr[String] = js.native
+      var reportName: js.UndefOr[String] = js.undefined
       
-      var variableType: js.UndefOr[String] = js.native
+      var variableType: js.UndefOr[String] = js.undefined
     }
     object UserDefinedVariableConfiguration {
       
@@ -17325,24 +17089,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserProfile extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var accountName: js.UndefOr[String] = js.native
+      var accountName: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var subAccountId: js.UndefOr[String] = js.native
+      var subAccountId: js.UndefOr[String] = js.undefined
       
-      var subAccountName: js.UndefOr[String] = js.native
+      var subAccountName: js.UndefOr[String] = js.undefined
       
-      var userName: js.UndefOr[String] = js.native
+      var userName: js.UndefOr[String] = js.undefined
     }
     object UserProfile {
       
@@ -17405,14 +17168,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserProfileList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[UserProfile]] = js.native
+      var items: js.UndefOr[js.Array[UserProfile]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object UserProfileList {
       
@@ -17448,24 +17210,23 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRole extends StObject {
       
-      var accountId: js.UndefOr[String] = js.native
+      var accountId: js.UndefOr[String] = js.undefined
       
-      var defaultUserRole: js.UndefOr[Boolean] = js.native
+      var defaultUserRole: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parentUserRoleId: js.UndefOr[String] = js.native
+      var parentUserRoleId: js.UndefOr[String] = js.undefined
       
-      var permissions: js.UndefOr[js.Array[UserRolePermission]] = js.native
+      var permissions: js.UndefOr[js.Array[UserRolePermission]] = js.undefined
       
-      var subaccountId: js.UndefOr[String] = js.native
+      var subaccountId: js.UndefOr[String] = js.undefined
     }
     object UserRole {
       
@@ -17531,18 +17292,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRolePermission extends StObject {
       
-      var availability: js.UndefOr[String] = js.native
+      var availability: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissionGroupId: js.UndefOr[String] = js.native
+      var permissionGroupId: js.UndefOr[String] = js.undefined
     }
     object UserRolePermission {
       
@@ -17587,14 +17347,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRolePermissionGroup extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object UserRolePermissionGroup {
       
@@ -17627,12 +17386,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRolePermissionGroupsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var userRolePermissionGroups: js.UndefOr[js.Array[UserRolePermissionGroup]] = js.native
+      var userRolePermissionGroups: js.UndefOr[js.Array[UserRolePermissionGroup]] = js.undefined
     }
     object UserRolePermissionGroupsListResponse {
       
@@ -17662,12 +17420,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRolePermissionsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var userRolePermissions: js.UndefOr[js.Array[UserRolePermission]] = js.native
+      var userRolePermissions: js.UndefOr[js.Array[UserRolePermission]] = js.undefined
     }
     object UserRolePermissionsListResponse {
       
@@ -17697,14 +17454,13 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait UserRolesListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var userRoles: js.UndefOr[js.Array[UserRole]] = js.native
+      var userRoles: js.UndefOr[js.Array[UserRole]] = js.undefined
     }
     object UserRolesListResponse {
       
@@ -17740,18 +17496,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait VideoFormat extends StObject {
       
-      var fileType: js.UndefOr[String] = js.native
+      var fileType: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[Double] = js.native
+      var id: js.UndefOr[Double] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var resolution: js.UndefOr[Size] = js.native
+      var resolution: js.UndefOr[Size] = js.undefined
       
-      var targetBitRate: js.UndefOr[Double] = js.native
+      var targetBitRate: js.UndefOr[Double] = js.undefined
     }
     object VideoFormat {
       
@@ -17796,12 +17551,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait VideoFormatsListResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var videoFormats: js.UndefOr[js.Array[VideoFormat]] = js.native
+      var videoFormats: js.UndefOr[js.Array[VideoFormat]] = js.undefined
     }
     object VideoFormatsListResponse {
       
@@ -17831,12 +17585,11 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait VideoOffset extends StObject {
       
-      var offsetPercentage: js.UndefOr[Double] = js.native
+      var offsetPercentage: js.UndefOr[Double] = js.undefined
       
-      var offsetSeconds: js.UndefOr[Double] = js.native
+      var offsetSeconds: js.UndefOr[Double] = js.undefined
     }
     object VideoOffset {
       
@@ -17863,18 +17616,17 @@ object Dfareporting {
       }
     }
     
-    @js.native
     trait VideoSettings extends StObject {
       
-      var companionSettings: js.UndefOr[CompanionSetting] = js.native
+      var companionSettings: js.UndefOr[CompanionSetting] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var orientation: js.UndefOr[String] = js.native
+      var orientation: js.UndefOr[String] = js.undefined
       
-      var skippableSettings: js.UndefOr[SkippableSetting] = js.native
+      var skippableSettings: js.UndefOr[SkippableSetting] = js.undefined
       
-      var transcodeSettings: js.UndefOr[TranscodeSetting] = js.native
+      var transcodeSettings: js.UndefOr[TranscodeSetting] = js.undefined
     }
     object VideoSettings {
       

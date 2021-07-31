@@ -2,27 +2,25 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a found unused range.
   */
-@js.native
 trait SchemaRange extends StObject {
   
   /**
     * CIDR range in &quot;10.x.x.x/y&quot; format that is within the allocated
     * ranges and currently unused.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * In the Shared VPC host project, the VPC network that&#39;s peered with
     * the consumer network. For example:
     * `projects/1234321/global/networks/host-network`
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
 }
 object SchemaRange {
   

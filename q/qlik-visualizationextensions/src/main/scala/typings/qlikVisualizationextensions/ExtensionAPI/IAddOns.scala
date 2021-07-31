@@ -3,19 +3,17 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.addons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAddOns extends StObject {
   
-  var uses: addons = js.native
+  var uses: addons
 }
 object IAddOns {
   
   @scala.inline
-  def apply(uses: addons): IAddOns = {
-    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+  def apply(): IAddOns = {
+    val __obj = js.Dynamic.literal(uses = "addons")
     __obj.asInstanceOf[IAddOns]
   }
   

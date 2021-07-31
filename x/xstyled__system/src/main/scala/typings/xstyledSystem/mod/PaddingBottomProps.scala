@@ -2,23 +2,21 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaddingBottomProps[TLength] extends StObject {
   
   val paddingBottom: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   val pb: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PaddingBottomProps {
   
@@ -29,12 +27,12 @@ object PaddingBottomProps {
   }
   
   @scala.inline
-  implicit class PaddingBottomPropsMutableBuilder[Self <: PaddingBottomProps[_], TLength] (val x: Self with PaddingBottomProps[TLength]) extends AnyVal {
+  implicit class PaddingBottomPropsMutableBuilder[Self <: PaddingBottomProps[?], TLength] (val x: Self & PaddingBottomProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setPaddingBottom(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
@@ -42,12 +40,14 @@ object PaddingBottomProps {
     def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def setPaddingBottomVarargs(value: js.Any*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+    def setPaddingBottomVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
     
     @scala.inline
     def setPb(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
@@ -55,6 +55,8 @@ object PaddingBottomProps {
     def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
     @scala.inline
-    def setPbVarargs(value: js.Any*): Self = StObject.set(x, "pb", js.Array(value :_*))
+    def setPbVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "pb", js.Array(value :_*))
   }
 }

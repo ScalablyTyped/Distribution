@@ -2,15 +2,13 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetStreamKeyResponse extends StObject {
   
-  var errors: js.UndefOr[BatchErrors] = js.native
+  var errors: js.UndefOr[BatchErrors] = js.undefined
   
-  var streamKeys: js.UndefOr[StreamKeys] = js.native
+  var streamKeys: js.UndefOr[StreamKeys] = js.undefined
 }
 object BatchGetStreamKeyResponse {
   

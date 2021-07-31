@@ -2,13 +2,13 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformProps extends TransformObject {
+trait TransformProps
+  extends StObject
+     with TransformObject {
   
-  var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.native
+  var transform: js.UndefOr[ColumnMajorTransformMatrix | String | TransformObject] = js.undefined
 }
 object TransformProps {
   

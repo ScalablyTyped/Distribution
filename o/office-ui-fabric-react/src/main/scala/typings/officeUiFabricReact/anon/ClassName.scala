@@ -5,23 +5,21 @@ import typings.officeUiFabricReact.officeUiFabricReactBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassName extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  def onMouseDown(event: MouseTouchEvent[HTMLElement]): js.UndefOr[`false`] = js.native
+  def onMouseDown(event: MouseTouchEvent[HTMLElement]): js.UndefOr[`false`]
   
-  def onMouseUp(event: MouseTouchEvent[HTMLElement]): scala.Unit = js.native
+  def onMouseUp(event: MouseTouchEvent[HTMLElement]): scala.Unit
   
-  def onTouchEnd(event: MouseTouchEvent[HTMLElement]): scala.Unit = js.native
+  def onTouchEnd(event: MouseTouchEvent[HTMLElement]): scala.Unit
   
-  def onTouchStart(event: MouseTouchEvent[HTMLElement]): js.UndefOr[`false`] = js.native
+  def onTouchStart(event: MouseTouchEvent[HTMLElement]): js.UndefOr[`false`]
   
-  var style: js.Any = js.native
+  var style: js.Any
 }
 object ClassName {
   

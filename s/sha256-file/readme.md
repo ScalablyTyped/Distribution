@@ -11,8 +11,8 @@ return an sha256sum of a given file
 | Full name          | sha256-file |
 | Keywords           | sha256, sha256sum, checksum |
 | # releases         | 1 |
-| # dependents       | 17 |
-| # downloads        | 1690038 |
+| # dependents       | 24 |
+| # downloads        | 2379651 |
 | # stars            | 1 |
 
 ## Links

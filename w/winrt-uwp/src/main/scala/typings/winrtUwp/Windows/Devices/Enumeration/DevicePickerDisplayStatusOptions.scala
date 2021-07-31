@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object DevicePickerDisplayStatusOptions extends StObject {
   
   /** Picker should show nothing, or no changes. */
   @js.native
-  sealed trait none extends DevicePickerDisplayStatusOptions
+  sealed trait none
+    extends StObject
+       with DevicePickerDisplayStatusOptions
   
   /** Picker should display a disconnect button. */
   @js.native
-  sealed trait showDisconnectButton extends DevicePickerDisplayStatusOptions
+  sealed trait showDisconnectButton
+    extends StObject
+       with DevicePickerDisplayStatusOptions
   
   /** Picker should display progress. */
   @js.native
-  sealed trait showProgress extends DevicePickerDisplayStatusOptions
+  sealed trait showProgress
+    extends StObject
+       with DevicePickerDisplayStatusOptions
   
   /** Picker should display a retry button. */
   @js.native
-  sealed trait showRetryButton extends DevicePickerDisplayStatusOptions
+  sealed trait showRetryButton
+    extends StObject
+       with DevicePickerDisplayStatusOptions
 }

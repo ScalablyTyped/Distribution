@@ -40,89 +40,99 @@ import typings.semanticUiNag.semanticUiNagStrings.value
 import typings.semanticUiNag.semanticUiNagStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def nag(): JQuery = js.native
-  def nag(behavior: setting, name: animation, value: AnimationSettings): JQuery = js.native
-  def nag(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def nag(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
-  def nag(behavior: setting, name: context, value: String): JQuery = js.native
-  def nag(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def nag(behavior: setting, name: context, value: `false`): JQuery = js.native
-  def nag(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def nag(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def nag(behavior: setting, name: detachable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def nag(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-  def nag(behavior: setting, name: displayTime, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def nag(behavior: setting, name: displayTime, value: Double): JQuery = js.native
-  def nag(behavior: setting, name: domain, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def nag(behavior: setting, name: domain, value: String): JQuery = js.native
-  def nag(behavior: setting, name: domain, value: `false`): JQuery = js.native
-  def nag(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
-  def nag(behavior: setting, name: easing, value: String): JQuery = js.native
-  def nag(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def nag(behavior: setting, name: expires, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def nag(behavior: setting, name: expires, value: Double): JQuery = js.native
-  def nag(behavior: setting, name: key, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any = js.native
+  def nag(): JQuery
+  def nag(behavior: setting, name: animation, value: Unit): AnimationSettings
+  def nag(behavior: setting, name: animation, value: AnimationSettings): JQuery
+  def nag(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def nag(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def nag(behavior: setting, name: context, value: String): JQuery
+  def nag(behavior: setting, name: context, value: Unit): `false` | String | JQuery
+  def nag(behavior: setting, name: context, value: JQuery): JQuery
+  def nag(behavior: setting, name: context, value: `false`): JQuery
+  def nag(behavior: setting, name: debug, value: Boolean): JQuery
+  def nag(behavior: setting, name: debug, value: Unit): Boolean
+  def nag(behavior: setting, name: detachable, value: Boolean): JQuery
+  def nag(behavior: setting, name: detachable, value: Unit): Boolean
+  def nag(behavior: setting, name: displayTime, value: Double): JQuery
+  def nag(behavior: setting, name: displayTime, value: Unit): Double
+  def nag(behavior: setting, name: domain, value: String): JQuery
+  def nag(behavior: setting, name: domain, value: Unit): `false` | String
+  def nag(behavior: setting, name: domain, value: `false`): JQuery
+  def nag(behavior: setting, name: easing, value: String): JQuery
+  def nag(behavior: setting, name: easing, value: Unit): String
+  def nag(behavior: setting, name: error, value: Unit): ErrorSettings
+  def nag(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def nag(behavior: setting, name: expires, value: Double): JQuery
+  def nag(behavior: setting, name: expires, value: Unit): Double
   def nag(
     behavior: setting,
     name: key,
     value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any
-  ): JQuery = js.native
-  def nag(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def nag(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def nag(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def nag(behavior: setting, name: name, value: String): JQuery = js.native
-  def nag(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def nag(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def nag(behavior: setting, name: path, value: js.UndefOr[scala.Nothing]): String = js.native
-  def nag(behavior: setting, name: path, value: String): JQuery = js.native
-  def nag(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def nag(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def nag(behavior: setting, name: persist, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def nag(behavior: setting, name: persist, value: Boolean): JQuery = js.native
-  def nag(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def nag(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def nag(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def nag(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def nag(behavior: setting, name: speed, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def nag(behavior: setting, name: speed, value: Double): JQuery = js.native
-  def nag(behavior: setting, name: storageMethod, value: js.UndefOr[scala.Nothing]): cookie | localstorage | sessionstorage = js.native
-  def nag(behavior: setting, name: storageMethod, value: cookie): JQuery = js.native
-  def nag(behavior: setting, name: storageMethod, value: localstorage): JQuery = js.native
-  def nag(behavior: setting, name: storageMethod, value: sessionstorage): JQuery = js.native
-  def nag(behavior: setting, name: value, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any = js.native
+  ): JQuery
+  def nag(behavior: setting, name: key, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any
+  def nag(behavior: setting, name: namespace, value: String): JQuery
+  def nag(behavior: setting, name: namespace, value: Unit): String
+  def nag(behavior: setting, name: name, value: String): JQuery
+  def nag(behavior: setting, name: name, value: Unit): String
+  def nag(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def nag(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def nag(behavior: setting, name: path, value: String): JQuery
+  def nag(behavior: setting, name: path, value: Unit): String
+  def nag(behavior: setting, name: performance, value: Boolean): JQuery
+  def nag(behavior: setting, name: performance, value: Unit): Boolean
+  def nag(behavior: setting, name: persist, value: Boolean): JQuery
+  def nag(behavior: setting, name: persist, value: Unit): Boolean
+  def nag(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def nag(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def nag(behavior: setting, name: silent, value: Boolean): JQuery
+  def nag(behavior: setting, name: silent, value: Unit): Boolean
+  def nag(behavior: setting, name: speed, value: Double): JQuery
+  def nag(behavior: setting, name: speed, value: Unit): Double
+  def nag(behavior: setting, name: storageMethod, value: Unit): cookie | localstorage | sessionstorage
+  def nag(behavior: setting, name: storageMethod, value: cookie): JQuery
+  def nag(behavior: setting, name: storageMethod, value: localstorage): JQuery
+  def nag(behavior: setting, name: storageMethod, value: sessionstorage): JQuery
   def nag(
     behavior: setting,
     name: value,
     value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any
-  ): JQuery = js.native
-  def nag(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def nag(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def nag(settings: NagSettings): JQuery = js.native
+  ): JQuery
+  def nag(behavior: setting, name: value, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any
+  def nag(behavior: setting, name: verbose, value: Boolean): JQuery
+  def nag(behavior: setting, name: verbose, value: Unit): Boolean
+  def nag(settings: NagSettings): JQuery
   @JSName("nag")
-  def nag_AnimationSettings(behavior: setting, name: animation, value: js.UndefOr[scala.Nothing]): AnimationSettings = js.native
-  @JSName("nag")
-  def nag_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  @JSName("nag")
-  def nag_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  @JSName("nag")
-  var nag_Original: Nag = js.native
+  var nag_Original: Nag
   /**
     * Clears cookie so nag shows again
     */
   @JSName("nag")
-  def nag_clear(behavior: clear): JQuery = js.native
+  def nag_clear(behavior: clear): JQuery
   @JSName("nag")
-  def nag_destroy(behavior: destroy): JQuery = js.native
+  def nag_destroy(behavior: destroy): JQuery
   @JSName("nag")
-  def nag_hide(behavior: hide): JQuery = js.native
+  def nag_hide(behavior: hide): JQuery
   @JSName("nag")
-  def nag_setting(behavior: setting, value: NagSettings): JQuery = js.native
+  def nag_setting(behavior: setting, value: NagSettings): JQuery
   @JSName("nag")
-  def nag_show(behavior: show): JQuery = js.native
+  def nag_show(behavior: show): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(nag: Nag): JQuery = {
+    val __obj = js.Dynamic.literal(nag = nag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setNag(value: Nag): Self = StObject.set(x, "nag", value.asInstanceOf[js.Any])
+  }
 }

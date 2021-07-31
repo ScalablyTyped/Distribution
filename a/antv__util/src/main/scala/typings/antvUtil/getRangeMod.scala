@@ -2,21 +2,22 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRangeMod {
   
-  @JSImport("@antv/util/lib/get-range", JSImport.Default)
+  @JSImport("@antv/util/lib/get-range", JSImport.Namespace)
   @js.native
-  def default(values: js.Array[Double]): RangeType = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(values: js.Array[Double]): RangeType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[RangeType]
+  
   trait RangeType extends StObject {
     
-    val max: Double = js.native
+    val max: Double
     
-    val min: Double = js.native
+    val min: Double
   }
   object RangeType {
     

@@ -2,27 +2,25 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableHeadCell extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var hint: String = js.native
+  var hint: String
   
-  var options: MUIDataTableOptions = js.native
+  var options: MUIDataTableOptions
   
-  var sort: Boolean = js.native
+  var sort: Boolean
   
-  var sortOrder: js.UndefOr[MUISortOptions] = js.native
+  var sortOrder: js.UndefOr[MUISortOptions] = js.undefined
   
   def toggleSort(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = js.native
+  ): js.Any
 }
 object MUIDataTableHeadCell {
   

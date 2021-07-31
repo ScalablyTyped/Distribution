@@ -10,13 +10,13 @@ JavaScript implementation of the IPFS specification
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-server |
 | Keywords           | IPFS |
-| # releases         | 34 |
-| # dependents       | 1 |
-| # downloads        | 3785 |
+| # releases         | 59 |
+| # dependents       | 2 |
+| # downloads        | 23276 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs#readme)
+- [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-server#readme)
 - [Bugs](https://github.com/ipfs/js-ipfs/issues)
 - [Repository](https://github.com/ipfs/js-ipfs)
 - [Npm](https://www.npmjs.com/package/ipfs-http-server)

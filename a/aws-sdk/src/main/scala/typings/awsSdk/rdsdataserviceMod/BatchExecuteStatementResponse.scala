@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchExecuteStatementResponse extends StObject {
   
   /**
     * The execution results of each batch entry.
     */
-  var updateResults: js.UndefOr[UpdateResults] = js.native
+  var updateResults: js.UndefOr[UpdateResults] = js.undefined
 }
 object BatchExecuteStatementResponse {
   

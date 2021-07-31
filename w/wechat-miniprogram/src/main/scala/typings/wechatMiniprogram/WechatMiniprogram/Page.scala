@@ -10,7 +10,6 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.button
 import typings.wechatMiniprogram.wechatMiniprogramStrings.menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Page {
@@ -19,7 +18,6 @@ object Page {
   
   type CustomOption = Record[String, js.Any]
   
-  @js.native
   trait Data[D /* <: DataOption */] extends StObject {
     
     /** 页面的初始数据
@@ -30,7 +28,7 @@ object Page {
       *
       * 渲染层可以通过 `WXML` 对数据进行绑定。
       */
-    var data: D = js.native
+    var data: D
   }
   object Data {
     
@@ -41,7 +39,7 @@ object Page {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], D /* <: DataOption */] (val x: Self with Data[D]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], D /* <: DataOption */] (val x: Self & Data[D]) extends AnyVal {
       
       @scala.inline
       def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -52,17 +50,16 @@ object Page {
   
   type GetCurrentPages = js.Function0[js.Array[Instance[IAnyObject, IAnyObject]]]
   
-  @js.native
   trait IAddToFavoritesContent extends StObject {
     
     /** 自定义图片，显示图片长宽比为 1：1，默认值：页面截图 */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** 自定义query字段，默认值：当前页面的query */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
     /** 自定义标题，默认值：页面标题或账号名称 */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object IAddToFavoritesContent {
     
@@ -95,11 +92,10 @@ object Page {
     }
   }
   
-  @js.native
   trait IAddToFavoritesOption extends StObject {
     
     /** 页面中包含web-view组件时，返回当前web-view的url */
-    var webviewUrl: js.UndefOr[String] = js.native
+    var webviewUrl: js.UndefOr[String] = js.undefined
   }
   object IAddToFavoritesOption {
     
@@ -120,17 +116,16 @@ object Page {
     }
   }
   
-  @js.native
   trait ICustomShareContent extends StObject {
     
     /** 自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径。支持PNG及JPG。显示图片长宽比是 5:4，最低基础库： `1.5.0`。默认值：使用默认截图 */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** 转发路径，必须是以 / 开头的完整路径。默认值：当前页面 path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** 转发标题。默认值：当前小程序名称 */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ICustomShareContent {
     
@@ -163,17 +158,16 @@ object Page {
     }
   }
   
-  @js.native
   trait ICustomTimelineContent extends StObject {
     
     /** 自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径。支持 PNG 及 JPG。显示图片长宽比是 1:1。默认值：默认使用小程序 Logo*/
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** 自定义页面路径中携带的参数，如 `path?a=1&b=2` 的 “?” 后面部分 默认值：当前页面路径携带的参数 */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
     /** 自定义标题，即朋友圈列表页上显示的标题。默认值：当前小程序名称 */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ICustomTimelineContent {
     
@@ -206,34 +200,33 @@ object Page {
     }
   }
   
-  @js.native
   trait ILifetime extends StObject {
     
     /**
       * 监听用户点击右上角菜单“收藏”按钮的行为，并自定义收藏内容。
       * 基础库 2.10.3，安卓 7.0.15 版本起支持，iOS 暂不支持
       */
-    def onAddToFavorites(options: IAddToFavoritesOption): IAddToFavoritesContent = js.native
+    def onAddToFavorites(options: IAddToFavoritesOption): IAddToFavoritesContent
     
     /** 生命周期回调—监听页面隐藏
       *
       * 页面隐藏/切入后台时触发。 如 `navigateTo` 或底部 `tab` 切换到其他页面，小程序切入后台等。
       */
-    def onHide(): Unit | js.Promise[Unit] = js.native
+    def onHide(): Unit | js.Promise[Unit]
     
     /** 生命周期回调—监听页面加载
       *
       * 页面加载时触发。一个页面只会调用一次，可以在 onLoad 的参数中获取打开当前页面路径中的参数。
       */
     def onLoad(/** 打开当前页面路径中的参数 */
-    query: Record[String, js.UndefOr[String]]): Unit | js.Promise[Unit] = js.native
+    query: Record[String, js.UndefOr[String]]): Unit | js.Promise[Unit]
     
     /** 页面滚动触发事件的处理函数
       *
       * 监听用户滑动页面事件。
       */
     def onPageScroll(/** 页面滚动参数 */
-    options: IPageScrollOption): Unit | js.Promise[Unit] = js.native
+    options: IPageScrollOption): Unit | js.Promise[Unit]
     
     /** 监听用户下拉动作
       *
@@ -242,7 +235,7 @@ object Page {
       * - 可以通过`wx.startPullDownRefresh`触发下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致。
       * - 当处理完数据刷新后，`wx.stopPullDownRefresh`可以停止当前页面的下拉刷新。
       */
-    def onPullDownRefresh(): Unit | js.Promise[Unit] = js.native
+    def onPullDownRefresh(): Unit | js.Promise[Unit]
     
     /** 页面上拉触底事件的处理函数
       *
@@ -250,7 +243,7 @@ object Page {
       * - 可以在`app.json`的`window`选项中或页面配置中设置触发距离`onReachBottomDistance`。
       * - 在触发距离内滑动期间，本事件只会被触发一次。
       */
-    def onReachBottom(): Unit | js.Promise[Unit] = js.native
+    def onReachBottom(): Unit | js.Promise[Unit]
     
     /** 生命周期回调—监听页面初次渲染完成
       *
@@ -258,11 +251,11 @@ object Page {
       *
       * 注意：对界面内容进行设置的 API 如`wx.setNavigationBarTitle`，请在`onReady`之后进行。
       */
-    def onReady(): Unit | js.Promise[Unit] = js.native
+    def onReady(): Unit | js.Promise[Unit]
     
     /** 窗口尺寸改变时触发，最低基础库：`2.4.0` */
     def onResize(/** 窗口尺寸参数 */
-    options: IResizeOption): Unit | js.Promise[Unit] = js.native
+    options: IResizeOption): Unit | js.Promise[Unit]
     
     /** 用户点击右上角转发
       *
@@ -273,7 +266,7 @@ object Page {
       * 此事件需要 return 一个 Object，用于自定义转发内容
       */
     def onShareAppMessage(/** 分享发起来源参数 */
-    options: IShareAppMessageOption): ICustomShareContent | Unit = js.native
+    options: IShareAppMessageOption): ICustomShareContent | Unit
     
     /**
       * 监听右上角菜单“分享到朋友圈”按钮的行为，并自定义分享内容
@@ -282,23 +275,23 @@ object Page {
       *
       * 基础库 2.11.3 开始支持，低版本需做兼容处理。
       */
-    def onShareTimeline(): ICustomTimelineContent | Unit = js.native
+    def onShareTimeline(): ICustomTimelineContent | Unit
     
     /** 生命周期回调—监听页面显示
       *
       * 页面显示/切入前台时触发。
       */
-    def onShow(): Unit | js.Promise[Unit] = js.native
+    def onShow(): Unit | js.Promise[Unit]
     
     /** 当前是 tab 页时，点击 tab 时触发，最低基础库： `1.9.0` */
     def onTabItemTap(/** tab 点击参数 */
-    options: ITabItemTapOption): Unit | js.Promise[Unit] = js.native
+    options: ITabItemTapOption): Unit | js.Promise[Unit]
     
     /** 生命周期回调—监听页面卸载
       *
       * 页面卸载时触发。如`redirectTo`或`navigateBack`到其他页面时。
       */
-    def onUnload(): Unit | js.Promise[Unit] = js.native
+    def onUnload(): Unit | js.Promise[Unit]
   }
   object ILifetime {
     
@@ -366,11 +359,10 @@ object Page {
     }
   }
   
-  @js.native
   trait IPageScrollOption extends StObject {
     
     /** 页面在垂直方向已滚动的距离（单位px） */
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object IPageScrollOption {
     
@@ -388,10 +380,9 @@ object Page {
     }
   }
   
-  @js.native
   trait IResizeOption extends StObject {
     
-    var size: WindowHeight = js.native
+    var size: WindowHeight
   }
   object IResizeOption {
     
@@ -409,7 +400,6 @@ object Page {
     }
   }
   
-  @js.native
   trait IShareAppMessageOption extends StObject {
     
     /** 转发事件来源。
@@ -420,18 +410,18 @@ object Page {
       *
       * 最低基础库： `1.2.4`
       */
-    var from: button | menu | String = js.native
+    var from: button | menu | String
     
     /** 如果 `from` 值是 `button`，则 `target` 是触发这次转发事件的 `button`，否则为 `undefined`
       *
       * 最低基础库： `1.2.4` */
-    var target: js.Any = js.native
+    var target: js.Any
     
     /** 页面中包含`<web-view>`组件时，返回当前`<web-view>`的url
       *
       * 最低基础库： `1.6.4`
       */
-    var webViewUrl: js.UndefOr[String] = js.native
+    var webViewUrl: js.UndefOr[String] = js.undefined
   }
   object IShareAppMessageOption {
     
@@ -458,17 +448,16 @@ object Page {
     }
   }
   
-  @js.native
   trait ITabItemTapOption extends StObject {
     
     /** 被点击tabItem的序号，从0开始，最低基础库： `1.9.0` */
-    var index: String = js.native
+    var index: String
     
     /** 被点击tabItem的页面路径，最低基础库： `1.9.0` */
-    var pagePath: String = js.native
+    var pagePath: String
     
     /** 被点击tabItem的按钮文字，最低基础库： `1.9.0` */
-    var text: String = js.native
+    var text: String
   }
   object ITabItemTapOption {
     
@@ -492,21 +481,20 @@ object Page {
     }
   }
   
-  type Instance[TData /* <: DataOption */, TCustom /* <: CustomOption */] = OptionalInterfaceILifetim with InstanceProperties with InstanceMethods[TData] with Data[TData] with TCustom
+  type Instance[TData /* <: DataOption */, TCustom /* <: CustomOption */] = OptionalInterfaceILifetim & InstanceProperties & InstanceMethods[TData] & Data[TData] & TCustom
   
   type InstanceMethods[D /* <: DataOption */] = typings.wechatMiniprogram.WechatMiniprogram.Component.InstanceMethods[D]
   
-  @js.native
   trait InstanceProperties extends StObject {
     
     /** 页面的文件路径 */
-    var is: String = js.native
+    var is: String
     
     /** 打开当前页面路径中的参数 */
-    var options: Record[String, js.UndefOr[String]] = js.native
+    var options: Record[String, js.UndefOr[String]]
     
     /** 到当前页面的路径 */
-    var route: String = js.native
+    var route: String
   }
   object InstanceProperties {
     
@@ -530,7 +518,7 @@ object Page {
     }
   }
   
-  type Options[TData /* <: DataOption */, TCustom /* <: CustomOption */] = TCustom with Partial[Data[TData]] with PartialILifetime with (ThisType[Instance[TData, TCustom]])
+  type Options[TData /* <: DataOption */, TCustom /* <: CustomOption */] = TCustom & Partial[Data[TData]] & PartialILifetime & (ThisType[Instance[TData, TCustom]])
   
   type TrivialInstance = Instance[IAnyObject, IAnyObject]
 }

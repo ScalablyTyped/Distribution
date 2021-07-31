@@ -15,7 +15,6 @@ import typings.plottable.symbolFactoriesMod.SymbolFactory
 import typings.plottable.xyPlotMod.XYPlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scatterPlotMod {
@@ -31,7 +30,7 @@ object scatterPlotMod {
     
     /* private */ def _calculateLabelProperties(pointCoordinates: js.Any, diameter: js.Any, measurement: js.Any): js.Any = js.native
     
-    /* protected */ def _constructSymbolGenerator(): js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, _] = js.native
+    /* protected */ def _constructSymbolGenerator(): js.Function3[/* datum */ js.Any, /* index */ Double, /* dataset */ Dataset, js.Any] = js.native
     
     /* private */ def _createLabelContainer(labelArea: js.Any, labelContainerOrigin: js.Any, labelOrigin: js.Any, measurement: js.Any): js.Any = js.native
     
@@ -91,7 +90,7 @@ object scatterPlotMod {
       * Gets the AccessorScaleBinding for the symbol property of the plot.
       * The symbol property corresponds to how the symbol will be drawn.
       */
-    def symbol(): IAccessorScaleBinding[_, _] = js.native
+    def symbol(): IAccessorScaleBinding[js.Any, js.Any] = js.native
     /**
       * Sets the symbol property to an Accessor<SymbolFactory>.
       *
@@ -132,10 +131,11 @@ object scatterPlotMod {
     def _SYMBOL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ILightweightScatterPlotEntity extends ILightweightPlotEntity {
+  trait ILightweightScatterPlotEntity
+    extends StObject
+       with ILightweightPlotEntity {
     
-    var diameter: Double = js.native
+    var diameter: Double
   }
   object ILightweightScatterPlotEntity {
     

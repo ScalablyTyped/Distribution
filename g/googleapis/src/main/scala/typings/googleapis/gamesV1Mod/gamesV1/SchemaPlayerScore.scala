@@ -2,36 +2,34 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a player score.
   */
-@js.native
 trait SchemaPlayerScore extends StObject {
   
   /**
     * The formatted score for this player score.
     */
-  var formattedScore: js.UndefOr[String] = js.native
+  var formattedScore: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerScore.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The numerical value for this player score.
     */
-  var score: js.UndefOr[String] = js.native
+  var score: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information about this score. Values will contain no more than
     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
     */
-  var scoreTag: js.UndefOr[String] = js.native
+  var scoreTag: js.UndefOr[String] = js.undefined
   
   /**
     * The time span for this player score. Possible values are:   -
@@ -39,7 +37,7 @@ trait SchemaPlayerScore extends StObject {
     * &quot;WEEKLY&quot; - The score is a weekly score.  - &quot;DAILY&quot; -
     * The score is a daily score.
     */
-  var timeSpan: js.UndefOr[String] = js.native
+  var timeSpan: js.UndefOr[String] = js.undefined
 }
 object SchemaPlayerScore {
   

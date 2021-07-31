@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionSucceededEventDetails extends StObject {
   
   /**
     * The JSON data output by the lambda function. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var output: js.UndefOr[SensitiveData] = js.native
+  var output: js.UndefOr[SensitiveData] = js.undefined
   
   /**
     * Contains details about the output of an execution history event.
     */
-  var outputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.native
+  var outputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
 }
 object LambdaFunctionSucceededEventDetails {
   

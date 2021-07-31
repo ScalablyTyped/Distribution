@@ -6,10 +6,13 @@ import typings.antvScale.typesMod.ScaleConfig
 import typings.antvScale.typesMod.TickMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@antv/scale", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 分类度量
@@ -83,19 +86,15 @@ object mod {
   class TimeCat ()
     extends typings.antvScale.timeMod.default
   
-  @JSImport("@antv/scale", "getScale")
-  @js.native
-  def getScale(key: String): ScaleConstructor[typings.antvScale.baseMod.default] = js.native
+  @scala.inline
+  def getScale(key: String): ScaleConstructor[typings.antvScale.baseMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(key.asInstanceOf[js.Any]).asInstanceOf[ScaleConstructor[typings.antvScale.baseMod.default]]
   
-  @JSImport("@antv/scale", "getTickMethod")
-  @js.native
-  def getTickMethod(key: String): TickMethod = js.native
+  @scala.inline
+  def getTickMethod(key: String): TickMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickMethod")(key.asInstanceOf[js.Any]).asInstanceOf[TickMethod]
   
-  @JSImport("@antv/scale", "registerScale")
-  @js.native
-  def registerScale(key: String, cls: ScaleConstructor[typings.antvScale.baseMod.default]): Unit = js.native
+  @scala.inline
+  def registerScale(key: String, cls: ScaleConstructor[typings.antvScale.baseMod.default]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScale")(key.asInstanceOf[js.Any], cls.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@antv/scale", "registerTickMethod")
-  @js.native
-  def registerTickMethod(key: String, method: TickMethod): Unit = js.native
+  @scala.inline
+  def registerTickMethod(key: String, method: TickMethod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTickMethod")(key.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

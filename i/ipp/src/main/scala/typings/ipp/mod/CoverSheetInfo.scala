@@ -2,23 +2,21 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverSheetInfo extends StObject {
   
-  var `from-name`: js.UndefOr[String] = js.native
+  var `from-name`: js.UndefOr[String] = js.undefined
   
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var `organization-name`: js.UndefOr[String] = js.native
+  var `organization-name`: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var `to-name`: js.UndefOr[String] = js.native
+  var `to-name`: js.UndefOr[String] = js.undefined
 }
 object CoverSheetInfo {
   

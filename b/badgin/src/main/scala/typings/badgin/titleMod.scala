@@ -4,34 +4,32 @@ import typings.badgin.anon.PartialOptionsIndicator
 import typings.badgin.mod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
   
-  @JSImport("badgin/build/title", "changeTitle")
+  @JSImport("badgin/build/title", JSImport.Namespace)
   @js.native
-  def changeTitle(title: Title, value: Value, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("badgin/build/title", "clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def changeTitle(title: Title, value: Value, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changeTitle")(title.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
   @JSImport("badgin/build/title", "defaultOptions")
   @js.native
   val defaultOptions: Options = js.native
   
-  @JSImport("badgin/build/title", "set")
-  @js.native
-  def set(value: Value): Boolean = js.native
-  @JSImport("badgin/build/title", "set")
-  @js.native
-  def set(value: Value, options: PartialOptionsIndicator): Boolean = js.native
+  @scala.inline
+  def set(value: Value): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def set(value: Value, options: PartialOptionsIndicator): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var indicator: String = js.native
+    var indicator: String
   }
   object Options {
     

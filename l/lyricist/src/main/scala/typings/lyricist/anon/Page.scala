@@ -4,17 +4,15 @@ import typings.lyricist.lyricistStrings.asc
 import typings.lyricist.lyricistStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var perPage: js.UndefOr[Double] = js.native
+  var perPage: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[asc | desc] = js.native
+  var sort: js.UndefOr[asc | desc] = js.undefined
 }
 object Page {
   

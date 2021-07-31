@@ -5,7 +5,6 @@ import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libModelsMod {
@@ -68,23 +67,22 @@ object libModelsMod {
     var uiDefinitionUri: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ApplianceArtifact extends StObject {
     
     /**
       * The appliance artifact name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The the appliance artifact type. Possible values include: 'Template', 'Custom'
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * The appliance artifact blob uri.
       */
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object ApplianceArtifact {
     
@@ -153,7 +151,9 @@ object libModelsMod {
   }
   
   @js.native
-  trait ApplianceDefinitionListResult extends Array[ApplianceDefinition] {
+  trait ApplianceDefinitionListResult
+    extends StObject
+       with Array[ApplianceDefinition] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -162,7 +162,9 @@ object libModelsMod {
   }
   
   @js.native
-  trait ApplianceListResult extends Array[Appliance] {
+  trait ApplianceListResult
+    extends StObject
+       with Array[Appliance] {
     
     /**
       * The URL to use for getting the next set of results.
@@ -216,21 +218,20 @@ object libModelsMod {
     var uiDefinitionUri: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait ApplianceProviderAuthorization extends StObject {
     
     /**
       * The provider's principal identifier. This is the identity that the provider will use to call
       * ARM to manage the appliance resources.
       */
-    var principalId: String = js.native
+    var principalId: String
     
     /**
       * The provider's role definition identifier. This role will define all the permissions that the
       * provider must have on the appliance's container resource group. This role definition cannot
       * have permission to delete the resource group.
       */
-    var roleDefinitionId: String = js.native
+    var roleDefinitionId: String
   }
   object ApplianceProviderAuthorization {
     
@@ -251,23 +252,22 @@ object libModelsMod {
     }
   }
   
-  @js.native
   trait ErrorResponse extends StObject {
     
     /**
       * Error code.
       */
-    var errorCode: js.UndefOr[String] = js.native
+    var errorCode: js.UndefOr[String] = js.undefined
     
     /**
       * Error message indicating why the operation failed.
       */
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Http status code.
       */
-    var httpStatus: js.UndefOr[String] = js.native
+    var httpStatus: js.UndefOr[String] = js.undefined
   }
   object ErrorResponse {
     
@@ -319,23 +319,22 @@ object libModelsMod {
     var sku: js.UndefOr[Sku] = js.native
   }
   
-  @js.native
   trait Identity extends StObject {
     
     /**
       * The principal ID of resource identity.
       */
-    val principalId: js.UndefOr[String] = js.native
+    val principalId: js.UndefOr[String] = js.undefined
     
     /**
       * The tenant ID of resource.
       */
-    val tenantId: js.UndefOr[String] = js.native
+    val tenantId: js.UndefOr[String] = js.undefined
     
     /**
       * The identity type. Possible values include: 'SystemAssigned'
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Identity {
     
@@ -368,18 +367,17 @@ object libModelsMod {
     }
   }
   
-  @js.native
   trait Operation extends StObject {
     
     /**
       * The object that represents the operation.
       */
-    var display: js.UndefOr[OperationDisplay] = js.native
+    var display: js.UndefOr[OperationDisplay] = js.undefined
     
     /**
       * Operation name: {provider}/{resource}/{operation}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Operation {
     
@@ -406,23 +404,22 @@ object libModelsMod {
     }
   }
   
-  @js.native
   trait OperationDisplay extends StObject {
     
     /**
       * Operation type: Read, write, delete, etc.
       */
-    var operation: js.UndefOr[String] = js.native
+    var operation: js.UndefOr[String] = js.undefined
     
     /**
       * Service provider: Microsoft.Solutions
       */
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
     /**
       * Resource on which the operation is performed: Profile, endpoint, etc.
       */
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
   }
   object OperationDisplay {
     
@@ -456,7 +453,9 @@ object libModelsMod {
   }
   
   @js.native
-  trait OperationListResult extends Array[Operation] {
+  trait OperationListResult
+    extends StObject
+       with Array[Operation] {
     
     /**
       * URL to get the next set of operation list results if there are any.
@@ -464,33 +463,32 @@ object libModelsMod {
     var nextLink: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Plan extends StObject {
     
     /**
       * The plan name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The product code.
       */
-    var product: String = js.native
+    var product: String
     
     /**
       * The promotion code.
       */
-    var promotionCode: js.UndefOr[String] = js.native
+    var promotionCode: js.UndefOr[String] = js.undefined
     
     /**
       * The publisher ID.
       */
-    var publisher: String = js.native
+    var publisher: String
     
     /**
       * The plan's version.
       */
-    var version: String = js.native
+    var version: String
   }
   object Plan {
     
@@ -523,33 +521,32 @@ object libModelsMod {
     }
   }
   
-  @js.native
   trait PlanPatchable extends StObject {
     
     /**
       * The plan name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The product code.
       */
-    var product: js.UndefOr[String] = js.native
+    var product: js.UndefOr[String] = js.undefined
     
     /**
       * The promotion code.
       */
-    var promotionCode: js.UndefOr[String] = js.native
+    var promotionCode: js.UndefOr[String] = js.undefined
     
     /**
       * The publisher ID.
       */
-    var publisher: js.UndefOr[String] = js.native
+    var publisher: js.UndefOr[String] = js.undefined
     
     /**
       * The plan's version.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PlanPatchable {
     
@@ -624,38 +621,37 @@ object libModelsMod {
     val `type`: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Sku extends StObject {
     
     /**
       * The SKU capacity.
       */
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The SKU family.
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * The SKU model.
       */
-    var model: js.UndefOr[String] = js.native
+    var model: js.UndefOr[String] = js.undefined
     
     /**
       * The SKU name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The SKU size.
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /**
       * The SKU tier.
       */
-    var tier: js.UndefOr[String] = js.native
+    var tier: js.UndefOr[String] = js.undefined
   }
   object Sku {
     

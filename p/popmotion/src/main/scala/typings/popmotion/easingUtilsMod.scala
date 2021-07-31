@@ -4,22 +4,22 @@ import typings.popmotion.easingTypesMod.Easing
 import typings.popmotion.easingTypesMod.EasingModifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object easingUtilsMod {
   
-  @JSImport("popmotion/lib/easing/utils", "createAnticipate")
+  @JSImport("popmotion/lib/easing/utils", JSImport.Namespace)
   @js.native
-  def createAnticipate(power: Double): Easing = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("popmotion/lib/easing/utils", "createBackIn")
-  @js.native
-  def createBackIn(power: Double): Easing = js.native
+  @scala.inline
+  def createAnticipate(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnticipate")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
-  @JSImport("popmotion/lib/easing/utils", "createExpoIn")
-  @js.native
-  def createExpoIn(power: Double): Easing = js.native
+  @scala.inline
+  def createBackIn(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createBackIn")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
+  
+  @scala.inline
+  def createExpoIn(power: Double): Easing = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpoIn")(power.asInstanceOf[js.Any]).asInstanceOf[Easing]
   
   @JSImport("popmotion/lib/easing/utils", "mirrorEasing")
   @js.native

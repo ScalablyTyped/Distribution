@@ -2,25 +2,23 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchSummary extends StObject {
   
-  var executionElapsed: String = js.native
+  var executionElapsed: String
   
-  var executionEnd: String = js.native
+  var executionEnd: String
   
-  var executionStart: String = js.native
+  var executionStart: String
   
-  var hasError: Boolean = js.native
+  var hasError: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var resultSetSummaries: js.Array[ResultSetSummary] = js.native
+  var resultSetSummaries: js.Array[ResultSetSummary]
   
-  var selection: ISelectionData = js.native
+  var selection: ISelectionData
 }
 object BatchSummary {
   

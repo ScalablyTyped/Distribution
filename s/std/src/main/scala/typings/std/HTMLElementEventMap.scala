@@ -2,12 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElementEventMap
-  extends ElementEventMap
+  extends StObject
+     with ElementEventMap
      with GlobalEventHandlersEventMap
      with DocumentAndElementEventHandlersEventMap
 object HTMLElementEventMap {

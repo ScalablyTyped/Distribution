@@ -4,26 +4,24 @@ import typings.antvG2.mod.Styles.line
 import typings.bizcharts.anon.AutoRotate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.Guide.LineProps> */
-@js.native
 trait ReadonlyLineProps extends StObject {
   
   val end: js.UndefOr[
-    js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.native
+    js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+  ] = js.undefined
   
-  val lineStyle: js.UndefOr[line] = js.native
+  val lineStyle: js.UndefOr[line] = js.undefined
   
   val start: js.UndefOr[
-    js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.native
+    js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
+  ] = js.undefined
   
-  val text: js.UndefOr[AutoRotate] = js.native
+  val text: js.UndefOr[AutoRotate] = js.undefined
   
-  val top: js.UndefOr[Boolean] = js.native
+  val top: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyLineProps {
   
@@ -38,11 +36,11 @@ object ReadonlyLineProps {
     
     @scala.inline
     def setEnd(
-      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+      value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
+    def setEndFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
     
     @scala.inline
     def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
@@ -58,11 +56,11 @@ object ReadonlyLineProps {
     
     @scala.inline
     def setStart(
-      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+      value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    def setStartFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
     def setStartUndefined: Self = StObject.set(x, "start", js.undefined)

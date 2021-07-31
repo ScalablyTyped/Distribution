@@ -2,25 +2,23 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChartRect extends StObject {
   
-  def height(): Unit = js.native
+  def height(): Unit
   
-  var padding: IChartPadding = js.native
+  var padding: IChartPadding
   
-  def width(): Unit = js.native
+  def width(): Unit
   
-  var x1: Double = js.native
+  var x1: Double
   
-  var x2: Double = js.native
+  var x2: Double
   
-  var y1: Double = js.native
+  var y1: Double
   
-  var y2: Double = js.native
+  var y2: Double
 }
 object IChartRect {
   

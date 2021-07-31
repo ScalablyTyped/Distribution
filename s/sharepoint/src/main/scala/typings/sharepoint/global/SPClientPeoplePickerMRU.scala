@@ -1,14 +1,26 @@
 package typings.sharepoint.global
 
+import typings.sharepoint.anon.Dictname
+import typings.sharepoint.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SPClientPeoplePickerMRU")
 @js.native
 class SPClientPeoplePickerMRU ()
-  extends typings.sharepoint.SPClientPeoplePickerMRU
+  extends StObject
+     with typings.sharepoint.SPClientPeoplePickerMRU {
+  
+  /* CompleteClass */
+  override def GetItems(strKey: String): Dictname = js.native
+  
+  /* CompleteClass */
+  override def ResetCache(): Unit = js.native
+  
+  /* CompleteClass */
+  override def SetItem[T /* <: Key */](strSearchTerm: String, objEntity: T): Unit = js.native
+}
 object SPClientPeoplePickerMRU {
   
   @JSGlobal("SPClientPeoplePickerMRU")
@@ -17,9 +29,8 @@ object SPClientPeoplePickerMRU {
   
   // = "ClientPeoplePickerMRU";
   /* static member */
-  @JSGlobal("SPClientPeoplePickerMRU.GetSPClientPeoplePickerMRU")
-  @js.native
-  def GetSPClientPeoplePickerMRU(): typings.sharepoint.SPClientPeoplePickerMRU = js.native
+  @scala.inline
+  def GetSPClientPeoplePickerMRU(): typings.sharepoint.SPClientPeoplePickerMRU = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSPClientPeoplePickerMRU")().asInstanceOf[typings.sharepoint.SPClientPeoplePickerMRU]
   
   // = 1;
   /* static member */

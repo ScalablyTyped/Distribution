@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Participants involved in appointment
   */
-@js.native
-trait AppointmentParticipant extends BackboneElement {
+trait AppointmentParticipant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'required'.
     */
-  var _required: js.UndefOr[Element] = js.native
+  var _required: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Person, Location/HealthcareService or Device
     */
-  var actor: js.UndefOr[Reference] = js.native
+  var actor: js.UndefOr[Reference] = js.undefined
   
   /**
     * required | optional | information-only
     */
-  var required: js.UndefOr[code] = js.native
+  var required: js.UndefOr[code] = js.undefined
   
   /**
     * accepted | declined | tentative | needs-action
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Role of participant in the appointment
     */
-  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object AppointmentParticipant {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CounterOptions extends StObject {
   
   /** Custom fields. */
-  var customFields: js.UndefOr[js.Array[CustomField]] = js.native
+  var customFields: js.UndefOr[js.Array[CustomField]] = js.undefined
   
   /** The field value to attribute. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** The metric to update. */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
 }
 object CounterOptions {
   

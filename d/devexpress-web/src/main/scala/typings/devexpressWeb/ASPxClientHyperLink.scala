@@ -2,36 +2,36 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxHyperLink control.
   */
-@js.native
-trait ASPxClientHyperLink extends ASPxClientStaticEdit {
+trait ASPxClientHyperLink
+  extends StObject
+     with ASPxClientStaticEdit {
   
   /**
     * Gets an URL which defines the navigation location for the editor's hyperlink.
     */
-  def GetNavigateUrl(): String = js.native
+  def GetNavigateUrl(): String
   
   /**
     * Gets the text caption displayed for the hyperlink in the hyperlink editor.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Specifies an URL which defines the navigation location for the editor's hyperlink.
     * @param url A string value which specifies an URL to where the client web browser will navigate when a hyperlink in the editor is clicked.
     */
-  def SetNavigateUrl(url: String): Unit = js.native
+  def SetNavigateUrl(url: String): Unit
   
   /**
     * Specifies the text caption displayed for the hyperlink in the hyperlink editor.
     * @param text A string value specifying the text caption for the hyperlink in the editor.
     */
-  def SetText(text: String): Unit = js.native
+  def SetText(text: String): Unit
 }
 object ASPxClientHyperLink {
   

@@ -2,21 +2,19 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILockData extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var lockId: js.UndefOr[String] = js.native
+  var lockId: js.UndefOr[String] = js.undefined
   
-  var lockType: LockType = js.native
+  var lockType: LockType
   
-  var requestedBy: String = js.native
+  var requestedBy: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object ILockData {
   

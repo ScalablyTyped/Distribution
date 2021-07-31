@@ -2,25 +2,23 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the user's login status.
   */
-@js.native
 trait ILoginStatus extends StObject {
   
   /**
     * A JSON object that contains the properties of the current session.
     */
-  var session: ISession = js.native
+  var session: ISession
   
   /**
     * The sign-in status of the user. Valid values are "connected",
     * "notConnected", or "unknown".
     */
-  var status: String = js.native
+  var status: String
 }
 object ILoginStatus {
   

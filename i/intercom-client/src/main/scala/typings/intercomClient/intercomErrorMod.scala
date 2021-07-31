@@ -4,19 +4,17 @@ import typings.intercomClient.anon.Dictk
 import typings.intercomClient.anon.Errors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intercomErrorMod {
   
-  @js.native
   trait IntercomError extends StObject {
     
-    var body: Errors = js.native
+    var body: Errors
     
-    var headers: Dictk = js.native
+    var headers: Dictk
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object IntercomError {
     

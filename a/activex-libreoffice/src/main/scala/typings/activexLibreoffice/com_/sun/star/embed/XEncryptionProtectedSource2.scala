@@ -5,28 +5,28 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface allows to set a password for an object.
   * @since OOo 3.4
   */
-@js.native
-trait XEncryptionProtectedSource2 extends XEncryptionProtectedSource {
+trait XEncryptionProtectedSource2
+  extends StObject
+     with XEncryptionProtectedSource {
   
   /**
     * determine if an encryption data is set for this object.
     * @returns true if some encryption data was set, false otherwise
     */
-  def hasEncryptionData(): Boolean = js.native
+  def hasEncryptionData(): Boolean
   
   /**
     * sets an encryption data for the object.
     * @param aEncryptionData the new encryption data
     * @throws com::sun::star::io::IOException in case the data could not be set
     */
-  def setEncryptionData(aEncryptionData: SeqEquiv[NamedValue]): Unit = js.native
+  def setEncryptionData(aEncryptionData: SeqEquiv[NamedValue]): Unit
 }
 object XEncryptionProtectedSource2 {
   

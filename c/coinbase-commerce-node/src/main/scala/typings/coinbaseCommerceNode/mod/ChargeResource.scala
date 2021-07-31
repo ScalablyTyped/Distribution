@@ -7,7 +7,6 @@ import typings.coinbaseCommerceNode.anon.PartialRecordCryptoNamest
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.charge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,79 +14,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @link https://commerce.coinbase.com/docs/api/#charge-resource
   */
-@js.native
-trait ChargeResource extends BaseCharge {
+trait ChargeResource
+  extends StObject
+     with BaseCharge {
   
   /**
     * Set of addresses associated with the charge.
     */
-  var addresses: PartialRecordCryptoNamest = js.native
+  var addresses: PartialRecordCryptoNamest
   
   /**
     * Associated checkout resource.
     */
-  var checkout: js.UndefOr[Id] = js.native
+  var checkout: js.UndefOr[Id] = js.undefined
   
   /**
     * User fiendly primary key.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Charge confirmation time.
     */
-  var confirmed_at: js.UndefOr[Timestamp] = js.native
+  var confirmed_at: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Charge creation time.
     */
-  var created_at: Timestamp = js.native
+  var created_at: Timestamp
   
   /**
     * Charge expiration time.
     */
-  var expires_at: Timestamp = js.native
+  var expires_at: Timestamp
   
   /**
     * Hosted charge URL.
     */
-  var hosted_url: String = js.native
+  var hosted_url: String
   
   /**
     * Charge UUID
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Charge image URL.
     */
-  var logo_url: js.UndefOr[String] = js.native
+  var logo_url: js.UndefOr[String] = js.undefined
   
   /**
     * Charge metadata provided by you, the developer.
     */
   @JSName("metadata")
-  var metadata_ChargeResource: KeyVal = js.native
+  var metadata_ChargeResource: KeyVal
   
   /**
     * Array of charge payment objects.
     */
-  var payments: js.Array[Block] = js.native
+  var payments: js.Array[Block]
   
   /**
     * Charge price information object.
     */
-  var pricing: Pricing = js.native
+  var pricing: Pricing
   
   /**
     * Resource name.
     */
-  var resource: charge = js.native
+  var resource: charge
   
   /**
     * Array of status update objects.
     */
-  var timeline: js.Array[Context] = js.native
+  var timeline: js.Array[Context]
 }
 object ChargeResource {
   
@@ -105,10 +105,9 @@ object ChargeResource {
     payments: js.Array[Block],
     pricing: Pricing,
     pricing_type: PricingType,
-    resource: charge,
     timeline: js.Array[Context]
   ): ChargeResource = {
-    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], hosted_url = hosted_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], payments = payments.asInstanceOf[js.Any], pricing = pricing.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], timeline = timeline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], expires_at = expires_at.asInstanceOf[js.Any], hosted_url = hosted_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], payments = payments.asInstanceOf[js.Any], pricing = pricing.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], resource = "charge", timeline = timeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChargeResource]
   }
   

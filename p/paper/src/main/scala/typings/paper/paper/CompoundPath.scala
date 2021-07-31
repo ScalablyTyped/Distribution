@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can be accessed through its {@link Item#children} list.
   */
 @js.native
-trait CompoundPath extends PathItem {
+trait CompoundPath
+  extends StObject
+     with PathItem {
   
   /** 
     * The area that the compound-path's geometry is covering, calculated by

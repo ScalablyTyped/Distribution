@@ -2,17 +2,15 @@ package typings.reactCoinhive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Authedmine extends StObject {
     
-    var authedmine: String = js.native
+    var authedmine: String
     
-    var coinhive: String = js.native
+    var coinhive: String
   }
   object Authedmine {
     

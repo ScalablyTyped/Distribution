@@ -3,21 +3,19 @@ package typings.googleCloudTasks.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEngineHttpRequest extends StObject {
   
-  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.native
+  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.undefined
   
-  var body: String = js.native
+  var body: String
   
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var httpMethod: String = js.native
+  var httpMethod: String
   
-  var relativeUri: String = js.native
+  var relativeUri: String
 }
 object AppEngineHttpRequest {
   

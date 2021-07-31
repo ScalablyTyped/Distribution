@@ -5,72 +5,57 @@ import typings.std.HTMLElement
 import typings.std.TransitionEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationUtilsMod {
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "addClassToArray")
+  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", JSImport.Namespace)
   @js.native
-  def addClassToArray(): js.Array[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "addClassToArray")
-  @js.native
-  def addClassToArray(classes: js.UndefOr[scala.Nothing], className: String): js.Array[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "addClassToArray")
-  @js.native
-  def addClassToArray(classes: js.UndefOr[scala.Nothing], className: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "addClassToArray")
-  @js.native
-  def addClassToArray(classes: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "addClassToArray")
-  @js.native
-  def addClassToArray(classes: js.Array[String], className: String): js.Array[String] = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "addClassToArray")
-  @js.native
-  def addClassToArray(classes: js.Array[String], className: js.Array[String]): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "animationEnd")
-  @js.native
-  def animationEnd(el: Null, callback: js.Function1[/* ev */ js.UndefOr[TransitionEvent], Unit]): js.Function0[Unit] = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "animationEnd")
-  @js.native
-  def animationEnd(el: HTMLElement, callback: js.Function1[/* ev */ js.UndefOr[TransitionEvent], Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def addClassToArray(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("addClassToArray")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addClassToArray(classes: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("addClassToArray")(classes.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addClassToArray(classes: js.Array[String], className: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassToArray")(classes.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addClassToArray(classes: js.Array[String], className: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassToArray")(classes.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addClassToArray(classes: Unit, className: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassToArray")(classes.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def addClassToArray(classes: Unit, className: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassToArray")(classes.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "createKeyframeStylesheet")
-  @js.native
-  def createKeyframeStylesheet(keyframeName: String, keyframeRules: String, element: HTMLElement): HTMLElement = js.native
+  @scala.inline
+  def animationEnd(el: Null, callback: js.Function1[/* ev */ js.UndefOr[TransitionEvent], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("animationEnd")(el.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def animationEnd(el: HTMLElement, callback: js.Function1[/* ev */ js.UndefOr[TransitionEvent], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("animationEnd")(el.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "generateKeyframeName")
-  @js.native
-  def generateKeyframeName(keyframeRules: String): String = js.native
+  @scala.inline
+  def createKeyframeStylesheet(keyframeName: String, keyframeRules: String, element: HTMLElement): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyframeStylesheet")(keyframeName.asInstanceOf[js.Any], keyframeRules.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "generateKeyframeRules")
-  @js.native
-  def generateKeyframeRules(): String = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "generateKeyframeRules")
-  @js.native
-  def generateKeyframeRules(keyframes: js.Array[_]): String = js.native
+  @scala.inline
+  def generateKeyframeName(keyframeRules: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyframeName")(keyframeRules.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "getAnimationPrefix")
-  @js.native
-  def getAnimationPrefix(el: HTMLElement): String = js.native
+  @scala.inline
+  def generateKeyframeRules(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyframeRules")().asInstanceOf[String]
+  @scala.inline
+  def generateKeyframeRules(keyframes: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyframeRules")(keyframes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "getStyleContainer")
-  @js.native
-  def getStyleContainer(element: HTMLElement): js.Any = js.native
+  @scala.inline
+  def getAnimationPrefix(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimationPrefix")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "processKeyframes")
-  @js.native
-  def processKeyframes(keyframes: AnimationKeyFrames): AnimationKeyFrames = js.native
+  @scala.inline
+  def getStyleContainer(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleContainer")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "removeStyleProperty")
-  @js.native
-  def removeStyleProperty(element: HTMLElement, propertyName: String): Unit = js.native
+  @scala.inline
+  def processKeyframes(keyframes: AnimationKeyFrames): AnimationKeyFrames = ^.asInstanceOf[js.Dynamic].applyDynamic("processKeyframes")(keyframes.asInstanceOf[js.Any]).asInstanceOf[AnimationKeyFrames]
   
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "setStyleProperty")
-  @js.native
-  def setStyleProperty(element: HTMLElement, propertyName: String): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/animation/animation-utils", "setStyleProperty")
-  @js.native
-  def setStyleProperty(element: HTMLElement, propertyName: String, value: String): Unit = js.native
+  @scala.inline
+  def removeStyleProperty(element: HTMLElement, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStyleProperty")(element.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setStyleProperty(element: HTMLElement, propertyName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyleProperty")(element.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setStyleProperty(element: HTMLElement, propertyName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyleProperty")(element.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,19 +2,23 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noiseNoiseMod {
   
   @JSImport("rot-js/lib/noise/noise", JSImport.Default)
   @js.native
-  abstract class default () extends Noise
+  abstract class default ()
+    extends StObject
+       with Noise {
+    
+    /* CompleteClass */
+    override def get(x: Double, y: Double): Double = js.native
+  }
   
-  @js.native
   trait Noise extends StObject {
     
-    def get(x: Double, y: Double): Double = js.native
+    def get(x: Double, y: Double): Double
   }
   object Noise {
     

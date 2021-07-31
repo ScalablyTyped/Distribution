@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XAxisEventsOptions extends StObject {
   
   /**
     * (Highcharts, Gantt) An event fired after the breaks have rendered.
     */
-  var afterBreaks: js.UndefOr[AxisEventCallbackFunction] = js.native
+  var afterBreaks: js.UndefOr[AxisEventCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) As opposed to the `setExtremes`
@@ -28,19 +26,19 @@ trait XAxisEventsOptions extends StObject {
     * values. The actual data extremes are found in `event.dataMin` and
     * `event.dataMax`.
     */
-  var afterSetExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.native
+  var afterSetExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Gantt) An event fired when a break from this axis occurs on
     * a point.
     */
-  var pointBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.native
+  var pointBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An event fired when a point falls inside a
     * break from this axis.
     */
-  var pointInBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.native
+  var pointInBreak: js.UndefOr[AxisPointBreakEventCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the minimum and
@@ -54,7 +52,7 @@ trait XAxisEventsOptions extends StObject {
     * button, `event.min` and `event.max` are null, and the new extremes are
     * set based on `this.dataMin` and `this.dataMax`.
     */
-  var setExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.native
+  var setExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
 }
 object XAxisEventsOptions {
   

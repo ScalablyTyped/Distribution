@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows transacted access to an object. */
-@js.native
-trait XTransactedObject extends XInterface {
+trait XTransactedObject
+  extends StObject
+     with XInterface {
   
   /** commits the changes made for object. */
-  def commit(): Unit = js.native
+  def commit(): Unit
   
   /** removes all the changes made for the object after last commit or loading. */
-  def revert(): Unit = js.native
+  def revert(): Unit
 }
 object XTransactedObject {
   

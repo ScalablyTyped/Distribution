@@ -4,18 +4,18 @@ import typings.arcgisJsApi.HashMap
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtrudeSymbol3DLayerMaterial extends AnonymousAccessor {
+trait ExtrudeSymbol3DLayerMaterial
+  extends StObject
+     with AnonymousAccessor {
   
   /**
     * The fill color of the extrusion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#material)
     */
-  var color: js.UndefOr[Color_] = js.native
+  var color: js.UndefOr[Color_] = js.undefined
 }
 object ExtrudeSymbol3DLayerMaterial {
   
@@ -26,7 +26,7 @@ object ExtrudeSymbol3DLayerMaterial {
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
       js.Function2[/* propertyName */ String, /* value */ js.Any, ExtrudeSymbol3DLayerMaterial]
-    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], ExtrudeSymbol3DLayerMaterial]])
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], ExtrudeSymbol3DLayerMaterial]])
   ): ExtrudeSymbol3DLayerMaterial = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtrudeSymbol3DLayerMaterial]

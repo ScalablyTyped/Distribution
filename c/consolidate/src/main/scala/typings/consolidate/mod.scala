@@ -5,7 +5,6 @@ import typings.consolidate.anon.DictotherOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,341 +13,774 @@ object mod extends Shortcut {
   @js.native
   val ^ : Consolidate = js.native
   
-  @js.native
-  trait Consolidate extends ConsolidateType {
+  trait Consolidate
+    extends StObject
+       with ConsolidateType {
     
     /**
       * Clear the cache.
       *
       * @api public
       */
-    def clearCache(): Unit = js.native
+    def clearCache(): Unit
     
     /**
       * expose the instance of the engine
       */
-    var requires: RequiresType = js.native
+    var requires: RequiresType
+  }
+  object Consolidate {
+    
+    @scala.inline
+    def apply(
+      `arc-templates`: RendererInterface,
+      atpl: RendererInterface,
+      bracket: RendererInterface,
+      clearCache: () => Unit,
+      dot: RendererInterface,
+      dust: RendererInterface,
+      eco: RendererInterface,
+      ect: RendererInterface,
+      ejs: RendererInterface,
+      haml: RendererInterface,
+      `haml-coffee`: RendererInterface,
+      hamlet: RendererInterface,
+      handlebars: RendererInterface,
+      hogan: RendererInterface,
+      htmling: RendererInterface,
+      jade: RendererInterface,
+      jazz: RendererInterface,
+      jqtpl: RendererInterface,
+      just: RendererInterface,
+      liquid: RendererInterface,
+      liquor: RendererInterface,
+      lodash: RendererInterface,
+      marko: RendererInterface,
+      mote: RendererInterface,
+      mustache: RendererInterface,
+      nunjucks: RendererInterface,
+      plates: RendererInterface,
+      pug: RendererInterface,
+      qejs: RendererInterface,
+      ractive: RendererInterface,
+      razor: RendererInterface,
+      react: RendererInterface,
+      requires: RequiresType,
+      slm: RendererInterface,
+      squirrelly: RendererInterface,
+      swig: RendererInterface,
+      teacup: RendererInterface,
+      templayed: RendererInterface,
+      toffee: RendererInterface,
+      twig: RendererInterface,
+      underscore: RendererInterface,
+      vash: RendererInterface,
+      velocityjs: RendererInterface,
+      walrus: RendererInterface,
+      whiskers: RendererInterface
+    ): Consolidate = {
+      val __obj = js.Dynamic.literal(atpl = atpl.asInstanceOf[js.Any], bracket = bracket.asInstanceOf[js.Any], clearCache = js.Any.fromFunction0(clearCache), dot = dot.asInstanceOf[js.Any], dust = dust.asInstanceOf[js.Any], eco = eco.asInstanceOf[js.Any], ect = ect.asInstanceOf[js.Any], ejs = ejs.asInstanceOf[js.Any], haml = haml.asInstanceOf[js.Any], hamlet = hamlet.asInstanceOf[js.Any], handlebars = handlebars.asInstanceOf[js.Any], hogan = hogan.asInstanceOf[js.Any], htmling = htmling.asInstanceOf[js.Any], jade = jade.asInstanceOf[js.Any], jazz = jazz.asInstanceOf[js.Any], jqtpl = jqtpl.asInstanceOf[js.Any], just = just.asInstanceOf[js.Any], liquid = liquid.asInstanceOf[js.Any], liquor = liquor.asInstanceOf[js.Any], lodash = lodash.asInstanceOf[js.Any], marko = marko.asInstanceOf[js.Any], mote = mote.asInstanceOf[js.Any], mustache = mustache.asInstanceOf[js.Any], nunjucks = nunjucks.asInstanceOf[js.Any], plates = plates.asInstanceOf[js.Any], pug = pug.asInstanceOf[js.Any], qejs = qejs.asInstanceOf[js.Any], ractive = ractive.asInstanceOf[js.Any], razor = razor.asInstanceOf[js.Any], react = react.asInstanceOf[js.Any], requires = requires.asInstanceOf[js.Any], slm = slm.asInstanceOf[js.Any], squirrelly = squirrelly.asInstanceOf[js.Any], swig = swig.asInstanceOf[js.Any], teacup = teacup.asInstanceOf[js.Any], templayed = templayed.asInstanceOf[js.Any], toffee = toffee.asInstanceOf[js.Any], twig = twig.asInstanceOf[js.Any], underscore = underscore.asInstanceOf[js.Any], vash = vash.asInstanceOf[js.Any], velocityjs = velocityjs.asInstanceOf[js.Any], walrus = walrus.asInstanceOf[js.Any], whiskers = whiskers.asInstanceOf[js.Any])
+      __obj.updateDynamic("arc-templates")(`arc-templates`.asInstanceOf[js.Any])
+      __obj.updateDynamic("haml-coffee")(`haml-coffee`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Consolidate]
+    }
+    
+    @scala.inline
+    implicit class ConsolidateMutableBuilder[Self <: Consolidate] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setRequires(value: RequiresType): Self = StObject.set(x, "requires", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Inlined {[ engine in consolidate.consolidate.SupportedTemplateEngines ]: consolidate.consolidate.RendererInterface} */
-  @js.native
   trait ConsolidateType extends StObject {
     
-    def `arc-templates`(path: String): typings.bluebird.mod.^[String] = js.native
-    def `arc-templates`(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def `arc-templates`(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def `arc-templates`(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def `arc-templates`(path: String): typings.bluebird.mod.^[String]
+    def `arc-templates`(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def `arc-templates`(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def `arc-templates`(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("arc-templates")
-    var `arc-templates_Original`: RendererInterface = js.native
+    var `arc-templates_Original`: RendererInterface
     
-    def atpl(path: String): typings.bluebird.mod.^[String] = js.native
-    def atpl(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def atpl(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def atpl(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def atpl(path: String): typings.bluebird.mod.^[String]
+    def atpl(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def atpl(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def atpl(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("atpl")
-    var atpl_Original: RendererInterface = js.native
+    var atpl_Original: RendererInterface
     
-    def bracket(path: String): typings.bluebird.mod.^[String] = js.native
-    def bracket(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def bracket(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def bracket(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def bracket(path: String): typings.bluebird.mod.^[String]
+    def bracket(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def bracket(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def bracket(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("bracket")
-    var bracket_Original: RendererInterface = js.native
+    var bracket_Original: RendererInterface
     
-    def dot(path: String): typings.bluebird.mod.^[String] = js.native
-    def dot(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def dot(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def dot(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def dot(path: String): typings.bluebird.mod.^[String]
+    def dot(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def dot(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def dot(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("dot")
-    var dot_Original: RendererInterface = js.native
+    var dot_Original: RendererInterface
     
-    def dust(path: String): typings.bluebird.mod.^[String] = js.native
-    def dust(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def dust(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def dust(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def dust(path: String): typings.bluebird.mod.^[String]
+    def dust(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def dust(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def dust(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("dust")
-    var dust_Original: RendererInterface = js.native
+    var dust_Original: RendererInterface
     
-    def eco(path: String): typings.bluebird.mod.^[String] = js.native
-    def eco(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def eco(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def eco(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def eco(path: String): typings.bluebird.mod.^[String]
+    def eco(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def eco(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def eco(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("eco")
-    var eco_Original: RendererInterface = js.native
+    var eco_Original: RendererInterface
     
-    def ect(path: String): typings.bluebird.mod.^[String] = js.native
-    def ect(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def ect(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def ect(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def ect(path: String): typings.bluebird.mod.^[String]
+    def ect(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def ect(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def ect(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("ect")
-    var ect_Original: RendererInterface = js.native
+    var ect_Original: RendererInterface
     
-    def ejs(path: String): typings.bluebird.mod.^[String] = js.native
-    def ejs(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def ejs(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def ejs(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def ejs(path: String): typings.bluebird.mod.^[String]
+    def ejs(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def ejs(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def ejs(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("ejs")
-    var ejs_Original: RendererInterface = js.native
+    var ejs_Original: RendererInterface
     
-    def haml(path: String): typings.bluebird.mod.^[String] = js.native
-    def haml(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def haml(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def haml(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def haml(path: String): typings.bluebird.mod.^[String]
+    def haml(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def haml(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def haml(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     
-    def `haml-coffee`(path: String): typings.bluebird.mod.^[String] = js.native
-    def `haml-coffee`(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def `haml-coffee`(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def `haml-coffee`(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def `haml-coffee`(path: String): typings.bluebird.mod.^[String]
+    def `haml-coffee`(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def `haml-coffee`(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def `haml-coffee`(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("haml-coffee")
-    var `haml-coffee_Original`: RendererInterface = js.native
+    var `haml-coffee_Original`: RendererInterface
     
     @JSName("haml")
-    var haml_Original: RendererInterface = js.native
+    var haml_Original: RendererInterface
     
-    def hamlet(path: String): typings.bluebird.mod.^[String] = js.native
-    def hamlet(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def hamlet(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def hamlet(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def hamlet(path: String): typings.bluebird.mod.^[String]
+    def hamlet(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def hamlet(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def hamlet(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("hamlet")
-    var hamlet_Original: RendererInterface = js.native
+    var hamlet_Original: RendererInterface
     
-    def handlebars(path: String): typings.bluebird.mod.^[String] = js.native
-    def handlebars(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def handlebars(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def handlebars(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def handlebars(path: String): typings.bluebird.mod.^[String]
+    def handlebars(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def handlebars(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def handlebars(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("handlebars")
-    var handlebars_Original: RendererInterface = js.native
+    var handlebars_Original: RendererInterface
     
-    def hogan(path: String): typings.bluebird.mod.^[String] = js.native
-    def hogan(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def hogan(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def hogan(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def hogan(path: String): typings.bluebird.mod.^[String]
+    def hogan(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def hogan(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def hogan(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("hogan")
-    var hogan_Original: RendererInterface = js.native
+    var hogan_Original: RendererInterface
     
-    def htmling(path: String): typings.bluebird.mod.^[String] = js.native
-    def htmling(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def htmling(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def htmling(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def htmling(path: String): typings.bluebird.mod.^[String]
+    def htmling(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def htmling(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def htmling(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("htmling")
-    var htmling_Original: RendererInterface = js.native
+    var htmling_Original: RendererInterface
     
-    def jade(path: String): typings.bluebird.mod.^[String] = js.native
-    def jade(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def jade(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def jade(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def jade(path: String): typings.bluebird.mod.^[String]
+    def jade(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def jade(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def jade(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("jade")
-    var jade_Original: RendererInterface = js.native
+    var jade_Original: RendererInterface
     
-    def jazz(path: String): typings.bluebird.mod.^[String] = js.native
-    def jazz(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def jazz(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def jazz(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def jazz(path: String): typings.bluebird.mod.^[String]
+    def jazz(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def jazz(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def jazz(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("jazz")
-    var jazz_Original: RendererInterface = js.native
+    var jazz_Original: RendererInterface
     
-    def jqtpl(path: String): typings.bluebird.mod.^[String] = js.native
-    def jqtpl(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def jqtpl(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def jqtpl(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def jqtpl(path: String): typings.bluebird.mod.^[String]
+    def jqtpl(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def jqtpl(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def jqtpl(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("jqtpl")
-    var jqtpl_Original: RendererInterface = js.native
+    var jqtpl_Original: RendererInterface
     
-    def just(path: String): typings.bluebird.mod.^[String] = js.native
-    def just(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def just(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def just(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def just(path: String): typings.bluebird.mod.^[String]
+    def just(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def just(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def just(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("just")
-    var just_Original: RendererInterface = js.native
+    var just_Original: RendererInterface
     
-    def liquid(path: String): typings.bluebird.mod.^[String] = js.native
-    def liquid(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def liquid(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def liquid(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def liquid(path: String): typings.bluebird.mod.^[String]
+    def liquid(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def liquid(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def liquid(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("liquid")
-    var liquid_Original: RendererInterface = js.native
+    var liquid_Original: RendererInterface
     
-    def liquor(path: String): typings.bluebird.mod.^[String] = js.native
-    def liquor(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def liquor(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def liquor(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def liquor(path: String): typings.bluebird.mod.^[String]
+    def liquor(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def liquor(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def liquor(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("liquor")
-    var liquor_Original: RendererInterface = js.native
+    var liquor_Original: RendererInterface
     
-    def lodash(path: String): typings.bluebird.mod.^[String] = js.native
-    def lodash(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def lodash(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def lodash(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def lodash(path: String): typings.bluebird.mod.^[String]
+    def lodash(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def lodash(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def lodash(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("lodash")
-    var lodash_Original: RendererInterface = js.native
+    var lodash_Original: RendererInterface
     
-    def marko(path: String): typings.bluebird.mod.^[String] = js.native
-    def marko(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def marko(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def marko(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def marko(path: String): typings.bluebird.mod.^[String]
+    def marko(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def marko(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def marko(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("marko")
-    var marko_Original: RendererInterface = js.native
+    var marko_Original: RendererInterface
     
-    def mote(path: String): typings.bluebird.mod.^[String] = js.native
-    def mote(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def mote(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def mote(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def mote(path: String): typings.bluebird.mod.^[String]
+    def mote(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def mote(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def mote(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("mote")
-    var mote_Original: RendererInterface = js.native
+    var mote_Original: RendererInterface
     
-    def mustache(path: String): typings.bluebird.mod.^[String] = js.native
-    def mustache(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def mustache(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def mustache(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def mustache(path: String): typings.bluebird.mod.^[String]
+    def mustache(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def mustache(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def mustache(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("mustache")
-    var mustache_Original: RendererInterface = js.native
+    var mustache_Original: RendererInterface
     
-    def nunjucks(path: String): typings.bluebird.mod.^[String] = js.native
-    def nunjucks(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def nunjucks(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def nunjucks(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def nunjucks(path: String): typings.bluebird.mod.^[String]
+    def nunjucks(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def nunjucks(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def nunjucks(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("nunjucks")
-    var nunjucks_Original: RendererInterface = js.native
+    var nunjucks_Original: RendererInterface
     
-    def plates(path: String): typings.bluebird.mod.^[String] = js.native
-    def plates(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def plates(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def plates(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def plates(path: String): typings.bluebird.mod.^[String]
+    def plates(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def plates(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def plates(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("plates")
-    var plates_Original: RendererInterface = js.native
+    var plates_Original: RendererInterface
     
-    def pug(path: String): typings.bluebird.mod.^[String] = js.native
-    def pug(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def pug(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def pug(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def pug(path: String): typings.bluebird.mod.^[String]
+    def pug(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def pug(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def pug(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("pug")
-    var pug_Original: RendererInterface = js.native
+    var pug_Original: RendererInterface
     
-    def qejs(path: String): typings.bluebird.mod.^[String] = js.native
-    def qejs(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def qejs(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def qejs(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def qejs(path: String): typings.bluebird.mod.^[String]
+    def qejs(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def qejs(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def qejs(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("qejs")
-    var qejs_Original: RendererInterface = js.native
+    var qejs_Original: RendererInterface
     
-    def ractive(path: String): typings.bluebird.mod.^[String] = js.native
-    def ractive(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def ractive(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def ractive(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def ractive(path: String): typings.bluebird.mod.^[String]
+    def ractive(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def ractive(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def ractive(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("ractive")
-    var ractive_Original: RendererInterface = js.native
+    var ractive_Original: RendererInterface
     
-    def razor(path: String): typings.bluebird.mod.^[String] = js.native
-    def razor(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def razor(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def razor(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def razor(path: String): typings.bluebird.mod.^[String]
+    def razor(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def razor(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def razor(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("razor")
-    var razor_Original: RendererInterface = js.native
+    var razor_Original: RendererInterface
     
-    def react(path: String): typings.bluebird.mod.^[String] = js.native
-    def react(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def react(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def react(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def react(path: String): typings.bluebird.mod.^[String]
+    def react(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def react(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def react(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("react")
-    var react_Original: RendererInterface = js.native
+    var react_Original: RendererInterface
     
-    def slm(path: String): typings.bluebird.mod.^[String] = js.native
-    def slm(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def slm(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def slm(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def slm(path: String): typings.bluebird.mod.^[String]
+    def slm(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def slm(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def slm(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("slm")
-    var slm_Original: RendererInterface = js.native
+    var slm_Original: RendererInterface
     
-    def squirrelly(path: String): typings.bluebird.mod.^[String] = js.native
-    def squirrelly(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def squirrelly(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def squirrelly(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def squirrelly(path: String): typings.bluebird.mod.^[String]
+    def squirrelly(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def squirrelly(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def squirrelly(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("squirrelly")
-    var squirrelly_Original: RendererInterface = js.native
+    var squirrelly_Original: RendererInterface
     
-    def swig(path: String): typings.bluebird.mod.^[String] = js.native
-    def swig(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def swig(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def swig(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def swig(path: String): typings.bluebird.mod.^[String]
+    def swig(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def swig(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def swig(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("swig")
-    var swig_Original: RendererInterface = js.native
+    var swig_Original: RendererInterface
     
-    def teacup(path: String): typings.bluebird.mod.^[String] = js.native
-    def teacup(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def teacup(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def teacup(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def teacup(path: String): typings.bluebird.mod.^[String]
+    def teacup(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def teacup(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def teacup(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("teacup")
-    var teacup_Original: RendererInterface = js.native
+    var teacup_Original: RendererInterface
     
-    def templayed(path: String): typings.bluebird.mod.^[String] = js.native
-    def templayed(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def templayed(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def templayed(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def templayed(path: String): typings.bluebird.mod.^[String]
+    def templayed(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def templayed(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def templayed(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("templayed")
-    var templayed_Original: RendererInterface = js.native
+    var templayed_Original: RendererInterface
     
-    def toffee(path: String): typings.bluebird.mod.^[String] = js.native
-    def toffee(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def toffee(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def toffee(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def toffee(path: String): typings.bluebird.mod.^[String]
+    def toffee(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def toffee(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def toffee(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("toffee")
-    var toffee_Original: RendererInterface = js.native
+    var toffee_Original: RendererInterface
     
-    def twig(path: String): typings.bluebird.mod.^[String] = js.native
-    def twig(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def twig(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def twig(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def twig(path: String): typings.bluebird.mod.^[String]
+    def twig(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def twig(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def twig(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("twig")
-    var twig_Original: RendererInterface = js.native
+    var twig_Original: RendererInterface
     
-    def underscore(path: String): typings.bluebird.mod.^[String] = js.native
-    def underscore(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def underscore(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def underscore(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def underscore(path: String): typings.bluebird.mod.^[String]
+    def underscore(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def underscore(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def underscore(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("underscore")
-    var underscore_Original: RendererInterface = js.native
+    var underscore_Original: RendererInterface
     
-    def vash(path: String): typings.bluebird.mod.^[String] = js.native
-    def vash(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def vash(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def vash(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def vash(path: String): typings.bluebird.mod.^[String]
+    def vash(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def vash(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def vash(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("vash")
-    var vash_Original: RendererInterface = js.native
+    var vash_Original: RendererInterface
     
-    def velocityjs(path: String): typings.bluebird.mod.^[String] = js.native
-    def velocityjs(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def velocityjs(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def velocityjs(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def velocityjs(path: String): typings.bluebird.mod.^[String]
+    def velocityjs(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def velocityjs(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def velocityjs(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("velocityjs")
-    var velocityjs_Original: RendererInterface = js.native
+    var velocityjs_Original: RendererInterface
     
-    def walrus(path: String): typings.bluebird.mod.^[String] = js.native
-    def walrus(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def walrus(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def walrus(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def walrus(path: String): typings.bluebird.mod.^[String]
+    def walrus(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def walrus(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def walrus(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("walrus")
-    var walrus_Original: RendererInterface = js.native
+    var walrus_Original: RendererInterface
     
-    def whiskers(path: String): typings.bluebird.mod.^[String] = js.native
-    def whiskers(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
-    def whiskers(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def whiskers(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def whiskers(path: String): typings.bluebird.mod.^[String]
+    def whiskers(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any
+    def whiskers(path: String, options: DictotherOptions): typings.bluebird.mod.^[String]
+    def whiskers(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any
     @JSName("whiskers")
-    var whiskers_Original: RendererInterface = js.native
+    var whiskers_Original: RendererInterface
+  }
+  object ConsolidateType {
+    
+    @scala.inline
+    def apply(
+      `arc-templates`: RendererInterface,
+      atpl: RendererInterface,
+      bracket: RendererInterface,
+      dot: RendererInterface,
+      dust: RendererInterface,
+      eco: RendererInterface,
+      ect: RendererInterface,
+      ejs: RendererInterface,
+      haml: RendererInterface,
+      `haml-coffee`: RendererInterface,
+      hamlet: RendererInterface,
+      handlebars: RendererInterface,
+      hogan: RendererInterface,
+      htmling: RendererInterface,
+      jade: RendererInterface,
+      jazz: RendererInterface,
+      jqtpl: RendererInterface,
+      just: RendererInterface,
+      liquid: RendererInterface,
+      liquor: RendererInterface,
+      lodash: RendererInterface,
+      marko: RendererInterface,
+      mote: RendererInterface,
+      mustache: RendererInterface,
+      nunjucks: RendererInterface,
+      plates: RendererInterface,
+      pug: RendererInterface,
+      qejs: RendererInterface,
+      ractive: RendererInterface,
+      razor: RendererInterface,
+      react: RendererInterface,
+      slm: RendererInterface,
+      squirrelly: RendererInterface,
+      swig: RendererInterface,
+      teacup: RendererInterface,
+      templayed: RendererInterface,
+      toffee: RendererInterface,
+      twig: RendererInterface,
+      underscore: RendererInterface,
+      vash: RendererInterface,
+      velocityjs: RendererInterface,
+      walrus: RendererInterface,
+      whiskers: RendererInterface
+    ): ConsolidateType = {
+      val __obj = js.Dynamic.literal(atpl = atpl.asInstanceOf[js.Any], bracket = bracket.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], dust = dust.asInstanceOf[js.Any], eco = eco.asInstanceOf[js.Any], ect = ect.asInstanceOf[js.Any], ejs = ejs.asInstanceOf[js.Any], haml = haml.asInstanceOf[js.Any], hamlet = hamlet.asInstanceOf[js.Any], handlebars = handlebars.asInstanceOf[js.Any], hogan = hogan.asInstanceOf[js.Any], htmling = htmling.asInstanceOf[js.Any], jade = jade.asInstanceOf[js.Any], jazz = jazz.asInstanceOf[js.Any], jqtpl = jqtpl.asInstanceOf[js.Any], just = just.asInstanceOf[js.Any], liquid = liquid.asInstanceOf[js.Any], liquor = liquor.asInstanceOf[js.Any], lodash = lodash.asInstanceOf[js.Any], marko = marko.asInstanceOf[js.Any], mote = mote.asInstanceOf[js.Any], mustache = mustache.asInstanceOf[js.Any], nunjucks = nunjucks.asInstanceOf[js.Any], plates = plates.asInstanceOf[js.Any], pug = pug.asInstanceOf[js.Any], qejs = qejs.asInstanceOf[js.Any], ractive = ractive.asInstanceOf[js.Any], razor = razor.asInstanceOf[js.Any], react = react.asInstanceOf[js.Any], slm = slm.asInstanceOf[js.Any], squirrelly = squirrelly.asInstanceOf[js.Any], swig = swig.asInstanceOf[js.Any], teacup = teacup.asInstanceOf[js.Any], templayed = templayed.asInstanceOf[js.Any], toffee = toffee.asInstanceOf[js.Any], twig = twig.asInstanceOf[js.Any], underscore = underscore.asInstanceOf[js.Any], vash = vash.asInstanceOf[js.Any], velocityjs = velocityjs.asInstanceOf[js.Any], walrus = walrus.asInstanceOf[js.Any], whiskers = whiskers.asInstanceOf[js.Any])
+      __obj.updateDynamic("arc-templates")(`arc-templates`.asInstanceOf[js.Any])
+      __obj.updateDynamic("haml-coffee")(`haml-coffee`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConsolidateType]
+    }
+    
+    @scala.inline
+    implicit class ConsolidateTypeMutableBuilder[Self <: ConsolidateType] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def `setArc-templates`(value: RendererInterface): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAtpl(value: RendererInterface): Self = StObject.set(x, "atpl", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBracket(value: RendererInterface): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDot(value: RendererInterface): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDust(value: RendererInterface): Self = StObject.set(x, "dust", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEco(value: RendererInterface): Self = StObject.set(x, "eco", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEct(value: RendererInterface): Self = StObject.set(x, "ect", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEjs(value: RendererInterface): Self = StObject.set(x, "ejs", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHaml(value: RendererInterface): Self = StObject.set(x, "haml", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def `setHaml-coffee`(value: RendererInterface): Self = StObject.set(x, "haml-coffee", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHamlet(value: RendererInterface): Self = StObject.set(x, "hamlet", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHandlebars(value: RendererInterface): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHogan(value: RendererInterface): Self = StObject.set(x, "hogan", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHtmling(value: RendererInterface): Self = StObject.set(x, "htmling", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJade(value: RendererInterface): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJazz(value: RendererInterface): Self = StObject.set(x, "jazz", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJqtpl(value: RendererInterface): Self = StObject.set(x, "jqtpl", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJust(value: RendererInterface): Self = StObject.set(x, "just", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLiquid(value: RendererInterface): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLiquor(value: RendererInterface): Self = StObject.set(x, "liquor", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLodash(value: RendererInterface): Self = StObject.set(x, "lodash", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMarko(value: RendererInterface): Self = StObject.set(x, "marko", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMote(value: RendererInterface): Self = StObject.set(x, "mote", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMustache(value: RendererInterface): Self = StObject.set(x, "mustache", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNunjucks(value: RendererInterface): Self = StObject.set(x, "nunjucks", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPlates(value: RendererInterface): Self = StObject.set(x, "plates", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPug(value: RendererInterface): Self = StObject.set(x, "pug", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setQejs(value: RendererInterface): Self = StObject.set(x, "qejs", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRactive(value: RendererInterface): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRazor(value: RendererInterface): Self = StObject.set(x, "razor", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReact(value: RendererInterface): Self = StObject.set(x, "react", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSlm(value: RendererInterface): Self = StObject.set(x, "slm", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSquirrelly(value: RendererInterface): Self = StObject.set(x, "squirrelly", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSwig(value: RendererInterface): Self = StObject.set(x, "swig", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTeacup(value: RendererInterface): Self = StObject.set(x, "teacup", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTemplayed(value: RendererInterface): Self = StObject.set(x, "templayed", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setToffee(value: RendererInterface): Self = StObject.set(x, "toffee", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTwig(value: RendererInterface): Self = StObject.set(x, "twig", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUnderscore(value: RendererInterface): Self = StObject.set(x, "underscore", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVash(value: RendererInterface): Self = StObject.set(x, "vash", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVelocityjs(value: RendererInterface): Self = StObject.set(x, "velocityjs", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWalrus(value: RendererInterface): Self = StObject.set(x, "walrus", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWhiskers(value: RendererInterface): Self = StObject.set(x, "whiskers", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
   trait RendererInterface extends StObject {
     
     def apply(path: String): typings.bluebird.mod.^[String] = js.native
-    def apply(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def apply(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any = js.native
     def apply(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def apply(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def apply(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any = js.native
     
     def render(path: String): typings.bluebird.mod.^[String] = js.native
-    def render(path: String, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def render(path: String, fn: js.Function2[/* err */ Error, /* html */ String, js.Any]): js.Any = js.native
     def render(path: String, options: DictotherOptions): typings.bluebird.mod.^[String] = js.native
-    def render(path: String, options: DictotherOptions, fn: js.Function2[/* err */ Error, /* html */ String, _]): js.Any = js.native
+    def render(
+      path: String,
+      options: DictotherOptions,
+      fn: js.Function2[/* err */ Error, /* html */ String, js.Any]
+    ): js.Any = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -542,100 +974,99 @@ object mod extends Shortcut {
   }
   
   /* Inlined {[ engine in consolidate.consolidate.Requires ]: any} */
-  @js.native
   trait RequiresType extends StObject {
     
-    var ReactDOM: js.Any = js.native
+    var ReactDOM: js.Any
     
-    var `arc-templates`: js.Any = js.native
+    var `arc-templates`: js.Any
     
-    var atpl: js.Any = js.native
+    var atpl: js.Any
     
-    var babel: js.Any = js.native
+    var babel: js.Any
     
-    var bracket: js.Any = js.native
+    var bracket: js.Any
     
-    var dot: js.Any = js.native
+    var dot: js.Any
     
-    var dust: js.Any = js.native
+    var dust: js.Any
     
-    var eco: js.Any = js.native
+    var eco: js.Any
     
-    var ect: js.Any = js.native
+    var ect: js.Any
     
-    var ejs: js.Any = js.native
+    var ejs: js.Any
     
-    var extend: js.Any = js.native
+    var extend: js.Any
     
-    var haml: js.Any = js.native
+    var haml: js.Any
     
-    var `haml-coffee`: js.Any = js.native
+    var `haml-coffee`: js.Any
     
-    var hamlet: js.Any = js.native
+    var hamlet: js.Any
     
-    var handlebars: js.Any = js.native
+    var handlebars: js.Any
     
-    var hogan: js.Any = js.native
+    var hogan: js.Any
     
-    var htmling: js.Any = js.native
+    var htmling: js.Any
     
-    var jade: js.Any = js.native
+    var jade: js.Any
     
-    var jazz: js.Any = js.native
+    var jazz: js.Any
     
-    var jqtpl: js.Any = js.native
+    var jqtpl: js.Any
     
-    var just: js.Any = js.native
+    var just: js.Any
     
-    var liquid: js.Any = js.native
+    var liquid: js.Any
     
-    var liquor: js.Any = js.native
+    var liquor: js.Any
     
-    var lodash: js.Any = js.native
+    var lodash: js.Any
     
-    var marko: js.Any = js.native
+    var marko: js.Any
     
-    var mote: js.Any = js.native
+    var mote: js.Any
     
-    var mustache: js.Any = js.native
+    var mustache: js.Any
     
-    var nunjucks: js.Any = js.native
+    var nunjucks: js.Any
     
-    var plates: js.Any = js.native
+    var plates: js.Any
     
-    var pug: js.Any = js.native
+    var pug: js.Any
     
-    var qejs: js.Any = js.native
+    var qejs: js.Any
     
-    var ractive: js.Any = js.native
+    var ractive: js.Any
     
-    var razor: js.Any = js.native
+    var razor: js.Any
     
-    var react: js.Any = js.native
+    var react: js.Any
     
-    var slm: js.Any = js.native
+    var slm: js.Any
     
-    var squirrelly: js.Any = js.native
+    var squirrelly: js.Any
     
-    var swig: js.Any = js.native
+    var swig: js.Any
     
-    var teacup: js.Any = js.native
+    var teacup: js.Any
     
-    var templayed: js.Any = js.native
+    var templayed: js.Any
     
-    var toffee: js.Any = js.native
+    var toffee: js.Any
     
-    var twig: js.Any = js.native
+    var twig: js.Any
     
-    var underscore: js.Any = js.native
+    var underscore: js.Any
     
-    var vash: js.Any = js.native
+    var vash: js.Any
     
-    var velocityjs: js.Any = js.native
+    var velocityjs: js.Any
     
-    var walrus: js.Any = js.native
+    var walrus: js.Any
     
-    var whiskers: js.Any = js.native
+    var whiskers: js.Any
   }
   object RequiresType {
     

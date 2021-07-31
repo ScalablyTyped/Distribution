@@ -6,21 +6,19 @@ import typings.std.RegExp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var encoding: buffer = js.native
+    var encoding: buffer
   }
   object `0` {
     
     @scala.inline
-    def apply(encoding: buffer): `0` = {
-      val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(encoding = "buffer")
       __obj.asInstanceOf[`0`]
     }
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
   }
   object `1` {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var encoding: js.UndefOr[BufferEncoding | Null] = js.native
+    var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   }
   object `2` {
     
@@ -86,20 +82,19 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoClose extends StObject {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var defaultEncoding: js.UndefOr[String] = js.native
+    var defaultEncoding: js.UndefOr[String] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object AutoClose {
     
@@ -150,12 +145,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Buffer extends StObject {
     
-    var buffer: typings.node.Buffer = js.native
+    var buffer: typings.node.Buffer
     
-    var bytesRead: Double = js.native
+    var bytesRead: Double
   }
   object Buffer {
     
@@ -176,12 +170,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BufferBytesWritten extends StObject {
     
-    var buffer: String = js.native
+    var buffer: String
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
   }
   object BufferBytesWritten {
     
@@ -202,12 +195,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BytesRead extends StObject {
     
-    var buffer: Uint8Array = js.native
+    var buffer: Uint8Array
     
-    var bytesRead: Double = js.native
+    var bytesRead: Double
   }
   object BytesRead {
     
@@ -228,12 +220,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BytesWritten[TBuffer /* <: typings.node.Buffer | Uint8Array */] extends StObject {
     
-    var buffer: TBuffer = js.native
+    var buffer: TBuffer
     
-    var bytesWritten: Double = js.native
+    var bytesWritten: Double
   }
   object BytesWritten {
     
@@ -244,7 +235,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class BytesWrittenMutableBuilder[Self <: BytesWritten[_], TBuffer /* <: typings.node.Buffer | Uint8Array */] (val x: Self with BytesWritten[TBuffer]) extends AnyVal {
+    implicit class BytesWrittenMutableBuilder[Self <: BytesWritten[?], TBuffer /* <: typings.node.Buffer | Uint8Array */] (val x: Self & BytesWritten[TBuffer]) extends AnyVal {
       
       @scala.inline
       def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
@@ -255,14 +246,13 @@ object anon {
   }
   
   /* Inlined hexo-fs.hexo-fs.DirectoryOptions & {  exclude :std.Array<string> | undefined} */
-  @js.native
   trait DirectoryOptionsexcludeAr extends StObject {
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreHidden: js.UndefOr[Boolean] = js.native
+    var ignoreHidden: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePattern: js.UndefOr[RegExp] = js.native
+    var ignorePattern: js.UndefOr[RegExp] = js.undefined
   }
   object DirectoryOptionsexcludeAr {
     
@@ -298,16 +288,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: BufferEncoding | Null = js.native
+    var encoding: BufferEncoding | Null
   }
   object Encoding {
     
     @scala.inline
     def apply(): Encoding = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(encoding = null)
       __obj.asInstanceOf[Encoding]
     }
     
@@ -322,14 +311,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Escape extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var escape: js.UndefOr[Boolean] = js.native
+    var escape: js.UndefOr[Boolean] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Escape {
     
@@ -362,14 +350,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Flag extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[String | Double] = js.native
+    var mode: js.UndefOr[String | Double] = js.undefined
   }
   object Flag {
     

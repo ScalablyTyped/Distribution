@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Validated extends StObject {
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var validated: scala.Double = js.native
+  var validated: scala.Double
 }
 object Validated {
   

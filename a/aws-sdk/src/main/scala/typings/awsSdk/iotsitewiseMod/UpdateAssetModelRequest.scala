@@ -2,41 +2,39 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAssetModelRequest extends StObject {
   
   /**
     * A description for the asset model.
     */
-  var assetModelDescription: js.UndefOr[Description] = js.native
+  var assetModelDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The updated hierarchy definitions of the asset model. Each hierarchy specifies an asset model whose assets can be children of any other assets created from this asset model. For more information, see Asset hierarchies in the AWS IoT SiteWise User Guide. You can specify up to 10 hierarchies per asset model. For more information, see Quotas in the AWS IoT SiteWise User Guide.
     */
-  var assetModelHierarchies: js.UndefOr[AssetModelHierarchies] = js.native
+  var assetModelHierarchies: js.UndefOr[AssetModelHierarchies] = js.undefined
   
   /**
     * The ID of the asset model to update.
     */
-  var assetModelId: ID = js.native
+  var assetModelId: ID
   
   /**
     * A unique, friendly name for the asset model.
     */
-  var assetModelName: Name = js.native
+  var assetModelName: Name
   
   /**
     * The updated property definitions of the asset model. For more information, see Asset properties in the AWS IoT SiteWise User Guide. You can specify up to 200 properties per asset model. For more information, see Quotas in the AWS IoT SiteWise User Guide.
     */
-  var assetModelProperties: js.UndefOr[AssetModelProperties] = js.native
+  var assetModelProperties: js.UndefOr[AssetModelProperties] = js.undefined
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
 }
 object UpdateAssetModelRequest {
   

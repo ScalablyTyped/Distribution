@@ -6,73 +6,73 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceConversionGet extends StandardParameters {
+trait ParamsResourceConversionGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Numeric ID of the ad group.
     */
-  var adGroupId: js.UndefOr[String] = js.native
+  var adGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Numeric ID of the ad.
     */
-  var adId: js.UndefOr[String] = js.native
+  var adId: js.UndefOr[String] = js.undefined
   
   /**
     * Numeric ID of the advertiser.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Numeric ID of the agency.
     */
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Numeric ID of the campaign.
     */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /**
     * Numeric ID of the criterion.
     */
-  var criterionId: js.UndefOr[String] = js.native
+  var criterionId: js.UndefOr[String] = js.undefined
   
   /**
     * Last date (inclusive) on which to retrieve conversions. Format is
     * yyyymmdd.
     */
-  var endDate: js.UndefOr[Double] = js.native
+  var endDate: js.UndefOr[Double] = js.undefined
   
   /**
     * Numeric ID of the engine account.
     */
-  var engineAccountId: js.UndefOr[String] = js.native
+  var engineAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of conversions to return per call.
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     * First date (inclusive) on which to retrieve conversions. Format is
     * yyyymmdd.
     */
-  var startDate: js.UndefOr[Double] = js.native
+  var startDate: js.UndefOr[Double] = js.undefined
   
   /**
     * The 0-based starting index for retrieving conversions results.
     */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceConversionGet {
   

@@ -2,13 +2,11 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeTablePaste extends StObject {
   
-  def insert(data: js.Array[_]): Unit = js.native
+  def insert(data: js.Array[js.Any]): Unit
 }
 object TreeTablePaste {
   
@@ -20,6 +18,6 @@ object TreeTablePaste {
   implicit class TreeTablePasteMutableBuilder[Self <: TreeTablePaste] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInsert(value: js.Array[_] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    def setInsert(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }
 }

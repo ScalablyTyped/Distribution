@@ -13,7 +13,6 @@ import typings.luminoDatagrid.textrendererMod.TextRenderer.FormatFunc
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,6 +61,10 @@ object mod {
     extends typings.luminoDatagrid.cellrendererMod.CellRenderer
   object CellRenderer {
     
+    @JSImport("@lumino/datagrid", "CellRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Resolve a config option for a cell renderer.
       *
@@ -71,9 +74,8 @@ object mod {
       *
       * @returns The resolved value for the option.
       */
-    @JSImport("@lumino/datagrid", "CellRenderer.resolveOption")
-    @js.native
-    def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = js.native
+    @scala.inline
+    def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOption")(option.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
   @JSImport("@lumino/datagrid", "DataGrid")
@@ -89,6 +91,10 @@ object mod {
   }
   object DataGrid {
     
+    @JSImport("@lumino/datagrid", "DataGrid")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A generic format function for the copy handler.
       *
@@ -99,9 +105,8 @@ object mod {
       * #### Notes
       * This function uses `String()` to coerce a value to a string.
       */
-    @JSImport("@lumino/datagrid", "DataGrid.copyFormatGeneric")
-    @js.native
-    def copyFormatGeneric(args: CopyFormatArgs): String = js.native
+    @scala.inline
+    def copyFormatGeneric(args: CopyFormatArgs): String = ^.asInstanceOf[js.Dynamic].applyDynamic("copyFormatGeneric")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * The default copy config for a data grid.
@@ -243,7 +248,7 @@ object mod {
   class RendererMap ()
     extends typings.luminoDatagrid.renderermapMod.RendererMap {
     def this(values: Values) = this()
-    def this(values: js.UndefOr[scala.Nothing], fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
+    def this(values: Unit, fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
     def this(values: Values, fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
   }
   
@@ -285,6 +290,10 @@ object mod {
   }
   object TextRenderer {
     
+    @JSImport("@lumino/datagrid", "TextRenderer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The namespace for the `formatDate` function statics.
       */
@@ -305,12 +314,14 @@ object mod {
         *
         * The `formatIntlDateTime()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatDate")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatDate")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -331,12 +342,14 @@ object mod {
         *
         * The `formatIntlNumber()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatExponential")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatExponential")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -357,12 +370,14 @@ object mod {
         *
         * The `formatIntlNumber()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatFixed")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatFixed")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -381,12 +396,14 @@ object mod {
         * This formatter uses the builtin `String()` to coerce any value
         * to a string.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatGeneric")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatGeneric")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -409,12 +426,14 @@ object mod {
         *
         * The `formatIntlDateTime()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatISODateTime")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatISODateTime")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -435,12 +454,14 @@ object mod {
         *
         * This is the most flexible (but slowest) datetime formatter.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatIntlDateTime")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatIntlDateTime")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -461,12 +482,14 @@ object mod {
         *
         * This is the most flexible (but slowest) number formatter.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatIntlNumber")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatIntlNumber")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -487,12 +510,14 @@ object mod {
         *
         * The `formatIntlNumber()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatPrecision")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatPrecision")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -515,12 +540,14 @@ object mod {
         *
         * The `formatIntlDateTime()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatTime")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatTime")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -543,12 +570,14 @@ object mod {
         *
         * The `formatIntlDateTime()` formatter is more flexible, but slower.
         */
+      @scala.inline
+      def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
+      @scala.inline
+      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+      
       @JSImport("@lumino/datagrid", "TextRenderer.formatUTCDateTime")
       @js.native
-      def apply(): FormatFunc = js.native
-      @JSImport("@lumino/datagrid", "TextRenderer.formatUTCDateTime")
-      @js.native
-      def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = js.native
+      val ^ : js.Any = js.native
     }
     
     /**
@@ -564,9 +593,8 @@ object mod {
       * will incur a DOM reflow, but the return value is cached, so any
       * subsequent call for the same font will return the cached value.
       */
-    @JSImport("@lumino/datagrid", "TextRenderer.measureFontHeight")
-    @js.native
-    def measureFontHeight(font: String): Double = js.native
+    @scala.inline
+    def measureFontHeight(font: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFontHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   /**

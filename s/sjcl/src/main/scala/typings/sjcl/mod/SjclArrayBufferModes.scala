@@ -2,13 +2,11 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclArrayBufferModes extends StObject {
   
-  var ccm: SjclArrayBufferCCMMode = js.native
+  var ccm: SjclArrayBufferCCMMode
 }
 object SjclArrayBufferModes {
   

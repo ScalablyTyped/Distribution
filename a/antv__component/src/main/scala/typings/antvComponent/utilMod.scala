@@ -8,82 +8,66 @@ import typings.antvGBase.typesMod.Point
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("@antv/component/lib/util/util", "clearDom")
+  @JSImport("@antv/component/lib/util/util", JSImport.Namespace)
   @js.native
-  def clearDom(container: HTMLElement): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/component/lib/util/util", "createBBox")
-  @js.native
-  def createBBox(x: Double, y: Double, width: Double, height: Double): BBox = js.native
+  @scala.inline
+  def clearDom(container: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearDom")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@antv/component/lib/util/util", "distance")
-  @js.native
-  def distance(p1: Point, p2: Point): Double = js.native
+  @scala.inline
+  def createBBox(x: Double, y: Double, width: Double, height: Double): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("createBBox")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[BBox]
   
-  @JSImport("@antv/component/lib/util/util", "formatPadding")
-  @js.native
-  def formatPadding(padding: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("@antv/component/lib/util/util", "formatPadding")
-  @js.native
-  def formatPadding(padding: Double): js.Array[Double] = js.native
+  @scala.inline
+  def distance(p1: Point, p2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/component/lib/util/util", "getBBoxWithClip")
-  @js.native
-  def getBBoxWithClip(element: IElement): BBox = js.native
+  @scala.inline
+  def formatPadding(padding: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPadding")(padding.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def formatPadding(padding: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPadding")(padding.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@antv/component/lib/util/util", "getCirclePoint")
-  @js.native
-  def getCirclePoint(center: Point, radius: Double, angle: Double): X = js.native
+  @scala.inline
+  def getBBoxWithClip(element: IElement): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("getBBoxWithClip")(element.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
-  @JSImport("@antv/component/lib/util/util", "getTextPoint")
-  @js.native
-  def getTextPoint(start: Point, end: Point, position: String, offset: Double): Point = js.native
+  @scala.inline
+  def getCirclePoint(center: Point, radius: Double, angle: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getCirclePoint")(center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[X]
   
-  @JSImport("@antv/component/lib/util/util", "getValueByPercent")
-  @js.native
-  def getValueByPercent(min: Double, max: Double, percent: Double): Double = js.native
+  @scala.inline
+  def getTextPoint(start: Point, end: Point, position: String, offset: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextPoint")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], position.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("@antv/component/lib/util/util", "hasClass")
-  @js.native
-  def hasClass(elements: js.Any, cName: js.Any): Boolean = js.native
+  @scala.inline
+  def getValueByPercent(min: Double, max: Double, percent: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueByPercent")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/component/lib/util/util", "intersectBBox")
-  @js.native
-  def intersectBBox(box1: BBox, box2: BBox): BBox = js.native
+  @scala.inline
+  def hasClass(elements: js.Any, cName: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(elements.asInstanceOf[js.Any], cName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/component/lib/util/util", "mergeBBox")
-  @js.native
-  def mergeBBox(box1: BBox, box2: BBox): BBox = js.native
+  @scala.inline
+  def intersectBBox(box1: BBox, box2: BBox): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectBBox")(box1.asInstanceOf[js.Any], box2.asInstanceOf[js.Any])).asInstanceOf[BBox]
   
-  @JSImport("@antv/component/lib/util/util", "near")
-  @js.native
-  def near(x: Double, y: Double): Boolean = js.native
-  @JSImport("@antv/component/lib/util/util", "near")
-  @js.native
-  def near(x: Double, y: Double, e: Double): Boolean = js.native
+  @scala.inline
+  def mergeBBox(box1: BBox, box2: BBox): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeBBox")(box1.asInstanceOf[js.Any], box2.asInstanceOf[js.Any])).asInstanceOf[BBox]
   
-  @JSImport("@antv/component/lib/util/util", "pointsToBBox")
-  @js.native
-  def pointsToBBox(points: js.Array[Point]): BBox = js.native
+  @scala.inline
+  def near(x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("near")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def near(x: Double, y: Double, e: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("near")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/component/lib/util/util", "regionToBBox")
-  @js.native
-  def regionToBBox(region: Region): BBox = js.native
+  @scala.inline
+  def pointsToBBox(points: js.Array[Point]): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("pointsToBBox")(points.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
-  @JSImport("@antv/component/lib/util/util", "toPx")
-  @js.native
-  def toPx(number: js.Any): String = js.native
+  @scala.inline
+  def regionToBBox(region: Region): BBox = ^.asInstanceOf[js.Dynamic].applyDynamic("regionToBBox")(region.asInstanceOf[js.Any]).asInstanceOf[BBox]
   
-  @JSImport("@antv/component/lib/util/util", "updateClip")
-  @js.native
-  def updateClip(element: IElement, newElement: IElement): Unit = js.native
+  @scala.inline
+  def toPx(number: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toPx")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/component/lib/util/util", "wait")
-  @js.native
-  def wait_(interval: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def updateClip(element: IElement, newElement: IElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateClip")(element.asInstanceOf[js.Any], newElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def wait_(interval: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(interval.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

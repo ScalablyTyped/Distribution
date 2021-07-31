@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -61,10 +60,10 @@ trait PlusOauth extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def getServices(): Unit = js.native
-  def getServices(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getServices(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getServices(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getServices(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

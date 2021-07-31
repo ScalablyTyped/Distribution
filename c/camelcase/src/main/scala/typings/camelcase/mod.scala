@@ -2,7 +2,6 @@ package typings.camelcase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,20 +45,19 @@ object mod {
   //=> 'loremIpsum'
   ```
   */
-  @JSImport("camelcase", JSImport.Namespace)
-  @js.native
-  def apply(input: String): String = js.native
-  @JSImport("camelcase", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): String = js.native
-  @JSImport("camelcase", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String]): String = js.native
-  @JSImport("camelcase", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Options): String = js.native
+  @scala.inline
+  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(input: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(input: js.Array[String], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("camelcase", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -78,19 +76,19 @@ object mod {
     		//=> 'loremİpsum'
     		```
     		*/
-    val locale: js.UndefOr[String | js.Array[String]] = js.native
+    val locale: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
     		Uppercase the first character: `foo-bar` → `FooBar`.
     		@default false
     		*/
-    val pascalCase: js.UndefOr[Boolean] = js.native
+    val pascalCase: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Preserve the consecutive uppercase characters: `foo-BAR` → `FooBAR`.
     		@default false
     		*/
-    val preserveConsecutiveUppercase: js.UndefOr[Boolean] = js.native
+    val preserveConsecutiveUppercase: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -196,25 +196,23 @@ import typings.stylableRuntime.stylableRuntimeStrings.wbr
 import typings.stylableRuntime.stylableRuntimeStrings.xmp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Css extends StObject {
     
     @JSName("$css")
-    var $css: String = js.native
+    var $css: String
     
     @JSName("$depth")
-    var $depth: String | Double = js.native
+    var $depth: String | Double
     
     @JSName("$id")
-    var $id: String | Double = js.native
+    var $id: String | Double
     
     @JSName("$theme")
-    var $theme: Boolean = js.native
+    var $theme: Boolean
   }
   object Css {
     

@@ -4,14 +4,15 @@ import typings.terminalKit.anon.DstRect
 import typings.terminalKit.terminalMod.Terminal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rectMod {
   
   @JSImport("terminal-kit/Rect", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Rect {
+  class ^ protected ()
+    extends StObject
+       with Rect {
     def this(options: AbsoluteOptions) = this()
     def this(options: Rect) = this()
     def this(options: Region) = this()
@@ -19,23 +20,53 @@ object rectMod {
     def this(options: Terminal) = this()
     def this(options: typings.terminalKit.textBufferMod.^) = this()
     def this(xmin: Double, xmax: Double, ymin: Double, ymax: Double) = this()
+    
+    /* CompleteClass */
+    override def clip(dstRect: Rect, offsetX: Double, offsetY: Double, dstClipping: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override val height: Double = js.native
+    
+    /* CompleteClass */
+    override val isNull: Boolean = js.native
+    
+    /* CompleteClass */
+    override def set(obj: Region): Unit = js.native
+    
+    /* CompleteClass */
+    override val width: Double = js.native
+    
+    /* CompleteClass */
+    override val xmax: Double = js.native
+    
+    /* CompleteClass */
+    override val xmin: Double = js.native
+    
+    /* CompleteClass */
+    override val ymax: Double = js.native
+    
+    /* CompleteClass */
+    override val ymin: Double = js.native
   }
+  @JSImport("terminal-kit/Rect", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("terminal-kit/Rect", "wrappingRect")
-  @js.native
-  def wrappingRect(params: DstRect): Unit = js.native
+  @scala.inline
+  def wrappingRect(params: DstRect): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("wrappingRect")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
-  trait AbsoluteOptions extends Options {
+  trait AbsoluteOptions
+    extends StObject
+       with Options {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object AbsoluteOptions {
     
@@ -88,26 +119,25 @@ object rectMod {
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    def clip(dstRect: Rect, offsetX: Double, offsetY: Double, dstClipping: Boolean): Unit = js.native
+    def clip(dstRect: Rect, offsetX: Double, offsetY: Double, dstClipping: Boolean): Unit
     
-    val height: Double = js.native
+    val height: Double
     
-    val isNull: Boolean = js.native
+    val isNull: Boolean
     
-    def set(obj: Region): Unit = js.native
+    def set(obj: Region): Unit
     
-    val width: Double = js.native
+    val width: Double
     
-    val xmax: Double = js.native
+    val xmax: Double
     
-    val xmin: Double = js.native
+    val xmin: Double
     
-    val ymax: Double = js.native
+    val ymax: Double
     
-    val ymin: Double = js.native
+    val ymin: Double
   }
   object Rect {
     
@@ -159,16 +189,17 @@ object rectMod {
     }
   }
   
-  @js.native
-  trait Region extends Options {
+  trait Region
+    extends StObject
+       with Options {
     
-    var xmax: Double = js.native
+    var xmax: Double
     
-    var xmin: Double = js.native
+    var xmin: Double
     
-    var ymax: Double = js.native
+    var ymax: Double
     
-    var ymin: Double = js.native
+    var ymin: Double
   }
   object Region {
     

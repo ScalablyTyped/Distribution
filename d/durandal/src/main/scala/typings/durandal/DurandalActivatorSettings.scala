@@ -2,17 +2,15 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalActivatorSettings extends StObject {
   
   /**
     * Lower-cased words which represent a truthy value.
     * @default ['yes', 'ok', 'true']
     */
-  var affirmations: js.Array[String] = js.native
+  var affirmations: js.Array[String]
   
   /**
     * Called immediately after the old item is deactivated.
@@ -20,7 +18,7 @@ trait DurandalActivatorSettings extends StObject {
     * @param {boolean} close Whether or not the previous item was closed.
     * @param {function} setter The activate item setter function.
     */
-  def afterDeactivate(oldItem: js.Any, close: Boolean, setter: js.Function): Unit = js.native
+  def afterDeactivate(oldItem: js.Any, close: Boolean, setter: js.Function): Unit
   
   /**
     * Determines whether or not the current item and the new item are the same.
@@ -30,26 +28,26 @@ trait DurandalActivatorSettings extends StObject {
     * @param {object} newActivationData
     * @returns {boolean}
     */
-  def areSameItem(currentItem: js.Any, newItem: js.Any, currentActivationData: js.Any, newActivationData: js.Any): Boolean = js.native
+  def areSameItem(currentItem: js.Any, newItem: js.Any, currentActivationData: js.Any, newActivationData: js.Any): Boolean
   
   /**
     * Called immediately before the new item is activated.
     * @param {object} newItem
     */
-  def beforeActivate(newItem: js.Any): js.Any = js.native
+  def beforeActivate(newItem: js.Any): js.Any
   
   /**
     * The default value passed to an object's deactivate function as its close parameter.
     * @default true
     */
-  var closeOnDeactivate: Boolean = js.native
+  var closeOnDeactivate: Boolean
   
   /**
     * Interprets the response of a `canActivate` or `canDeactivate` call using the known affirmative values in the `affirmations` array.
     * @param {object} value
     * @returns {boolean}
     */
-  def interpretResponse(value: js.Any): Boolean = js.native
+  def interpretResponse(value: js.Any): Boolean
 }
 object DurandalActivatorSettings {
   

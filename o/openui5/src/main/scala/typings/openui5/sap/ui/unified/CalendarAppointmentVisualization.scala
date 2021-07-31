@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.unified
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait CalendarAppointmentVisualization extends StObject
 object CalendarAppointmentVisualization extends StObject {
   
   @js.native
-  sealed trait Filled extends CalendarAppointmentVisualization
+  sealed trait Filled
+    extends StObject
+       with CalendarAppointmentVisualization
   
   @js.native
-  sealed trait Standard extends CalendarAppointmentVisualization
+  sealed trait Standard
+    extends StObject
+       with CalendarAppointmentVisualization
 }

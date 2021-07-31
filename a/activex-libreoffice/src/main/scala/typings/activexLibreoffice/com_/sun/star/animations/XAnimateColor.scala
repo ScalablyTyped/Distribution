@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * XAnimate.Values}{@link XAnimate.From}{@link XAnimate.To}{@link XAnimate.By}
   * @see http://www.w3.org/TR/smil20/animation.html#edef-animateColor
   */
-@js.native
-trait XAnimateColor extends XAnimate {
+trait XAnimateColor
+  extends StObject
+     with XAnimate {
   
   /**
     * defines the color space which is used to perform the interpolation. ;
     * @see AnimationColorSpace
     */
-  var ColorInterpolation: Double = js.native
+  var ColorInterpolation: Double
   
   /**
     * defines the direction which is used to perform the interpolation inside the color space defined with {@link ColorInterpolation} . ;  Values could be
@@ -29,7 +29,7 @@ trait XAnimateColor extends XAnimate {
     *
     * This attribute will be ignored for color spaces where this does not make any sense.
     */
-  var Direction: Boolean = js.native
+  var Direction: Boolean
 }
 object XAnimateColor {
   
@@ -66,7 +66,7 @@ object XAnimateColor {
     Type: Double,
     UserData: SafeArray[NamedValue],
     ValueType: Double,
-    Values: SafeArray[_],
+    Values: SafeArray[js.Any],
     acquire: () => Unit,
     getParent: () => XInterface,
     queryInterface: `type` => js.Any,

@@ -3,21 +3,20 @@ package typings.jasmine
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* env */ js.Any, js.Any]
+    extends StObject
+       with Instantiable1[/* env */ js.Any, js.Any]
   
-  @js.native
   trait Random extends StObject {
     
-    var random: Boolean = js.native
+    var random: Boolean
     
-    var seed: String = js.native
+    var seed: String
   }
   object Random {
     

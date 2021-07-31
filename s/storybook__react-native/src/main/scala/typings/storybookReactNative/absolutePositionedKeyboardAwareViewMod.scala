@@ -6,7 +6,6 @@ import typings.reactNative.mod.KeyboardEvent
 import typings.reactNative.mod.LayoutChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object absolutePositionedKeyboardAwareViewMod {
@@ -39,12 +38,11 @@ object absolutePositionedKeyboardAwareViewMod {
     def removeKeyboardOnOrientationChange(): Unit = js.native
   }
   
-  @js.native
   trait PreviewDimens extends StObject {
     
-    var previewHeight: Double = js.native
+    var previewHeight: Double
     
-    var previewWidth: Double = js.native
+    var previewWidth: Double
   }
   object PreviewDimens {
     
@@ -65,15 +63,11 @@ object absolutePositionedKeyboardAwareViewMod {
     }
   }
   
-  /* Inlined {onLayout (dimens : @storybook/react-native.@storybook/react-native/dist/preview/components/OnDeviceUI/absolute-positioned-keyboard-aware-view.PreviewDimens): void} & @storybook/react-native.@storybook/react-native/dist/preview/components/OnDeviceUI/absolute-positioned-keyboard-aware-view.PreviewDimens */
-  @js.native
-  trait Props extends StObject {
+  trait Props
+    extends StObject
+       with PreviewDimens {
     
-    def onLayout(dimens: PreviewDimens): Unit = js.native
-    
-    var previewHeight: Double = js.native
-    
-    var previewWidth: Double = js.native
+    def onLayout(dimens: PreviewDimens): Unit
   }
   object Props {
     
@@ -88,12 +82,6 @@ object absolutePositionedKeyboardAwareViewMod {
       
       @scala.inline
       def setOnLayout(value: PreviewDimens => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPreviewWidth(value: Double): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
     }
   }
 }

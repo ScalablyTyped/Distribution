@@ -2,86 +2,84 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FpgaImage extends StObject {
   
   /**
     * The date and time the AFI was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Indicates whether data retention support is enabled for the AFI.
     */
-  var DataRetentionSupport: js.UndefOr[Boolean] = js.native
+  var DataRetentionSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The description of the AFI.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The global FPGA image identifier (AGFI ID).
     */
-  var FpgaImageGlobalId: js.UndefOr[String] = js.native
+  var FpgaImageGlobalId: js.UndefOr[String] = js.undefined
   
   /**
     * The FPGA image identifier (AFI ID).
     */
-  var FpgaImageId: js.UndefOr[String] = js.native
+  var FpgaImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the AFI.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The alias of the AFI owner. Possible values include self, amazon, and aws-marketplace.
     */
-  var OwnerAlias: js.UndefOr[String] = js.native
+  var OwnerAlias: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID of the AFI owner.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the PCI bus.
     */
-  var PciId: js.UndefOr[typings.awsSdk.ec2Mod.PciId] = js.native
+  var PciId: js.UndefOr[typings.awsSdk.ec2Mod.PciId] = js.undefined
   
   /**
     * The product codes for the AFI.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * Indicates whether the AFI is public.
     */
-  var Public: js.UndefOr[Boolean] = js.native
+  var Public: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The version of the AWS Shell that was used to create the bitstream.
     */
-  var ShellVersion: js.UndefOr[String] = js.native
+  var ShellVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the state of the AFI.
     */
-  var State: js.UndefOr[FpgaImageState] = js.native
+  var State: js.UndefOr[FpgaImageState] = js.undefined
   
   /**
     * Any tags assigned to the AFI.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The time of the most recent update to the AFI.
     */
-  var UpdateTime: js.UndefOr[DateTime] = js.native
+  var UpdateTime: js.UndefOr[DateTime] = js.undefined
 }
 object FpgaImage {
   

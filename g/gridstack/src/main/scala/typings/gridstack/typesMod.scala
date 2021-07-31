@@ -4,12 +4,14 @@ import typings.gridstack.anon.TypeofGridStackDD
 import typings.gridstack.gridstackBooleans.`false`
 import typings.gridstack.gridstackStrings.auto
 import typings.gridstack.mod.GridStack
+import typings.std.AddEventListenerOptions
 import typings.std.Element
 import typings.std.Event
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -34,14 +36,15 @@ object typesMod {
     Unit
   ])
   
-  @js.native
-  trait DDDragInOpt extends DDDragOpt {
+  trait DDDragInOpt
+    extends StObject
+       with DDDragOpt {
     
     /** helper function when dropping (ex: 'clone' or your own method) */
-    var helper: js.UndefOr[String | (js.Function1[/* event */ Event, HTMLElement])] = js.native
+    var helper: js.UndefOr[String | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
     
     /** used when dragging item from the outside, and canceling (ex: 'invalid' or your own method)*/
-    var revert: js.UndefOr[String | (js.Function1[/* event */ Event, HTMLElement])] = js.native
+    var revert: js.UndefOr[String | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
   }
   object DDDragInOpt {
     
@@ -74,20 +77,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DDDragOpt extends StObject {
     
     /** default to 'body' */
-    var appendTo: js.UndefOr[String] = js.native
+    var appendTo: js.UndefOr[String] = js.undefined
     
     /** parent constraining where item can be dragged out from (default: null = no constrain) */
-    var containment: js.UndefOr[String] = js.native
+    var containment: js.UndefOr[String] = js.undefined
     
     /** class selector of items that can be dragged. default to '.grid-stack-item-content' */
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
     /** default to `true` */
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
   }
   object DDDragOpt {
     
@@ -126,11 +128,10 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DDRemoveOpt extends StObject {
     
     /** class that can be removed (default?: '.' + opts.itemClass) */
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
   }
   object DDRemoveOpt {
     
@@ -151,17 +152,16 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DDResizeOpt extends StObject {
     
     /** do resize handle hide by default until mouse over ? - default: true */
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * sides where you can resize from (ex: 'e, se, s, sw, w') - default 'se' (south-east)
       * Note: it is not recommended to resize from the top sides as weird side effect may occur.
       */
-    var handles: js.UndefOr[String] = js.native
+    var handles: js.UndefOr[String] = js.undefined
   }
   object DDResizeOpt {
     
@@ -189,20 +189,37 @@ object typesMod {
   }
   
   @js.native
-  trait GridItemHTMLElement extends HTMLElement {
+  trait GridItemHTMLElement
+    extends StObject
+       with HTMLElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     /** pointer to grid node instance */
     var gridstackNode: js.UndefOr[GridStackNode] = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
-  @js.native
-  trait GridStackNode extends GridStackWidget {
+  trait GridStackNode
+    extends StObject
+       with GridStackWidget {
     
     /** pointer back to HTML element */
-    var el: js.UndefOr[GridItemHTMLElement] = js.native
+    var el: js.UndefOr[GridItemHTMLElement] = js.undefined
     
     /** pointer back to Grid instance */
-    var grid: js.UndefOr[GridStack] = js.native
+    var grid: js.UndefOr[GridStack] = js.undefined
   }
   object GridStackNode {
     
@@ -229,7 +246,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait GridStackOptions extends StObject {
     
     /**
@@ -238,16 +254,16 @@ object typesMod {
       * string for explicit class name,
       * function returning a boolean. See [example](http://gridstack.github.io/gridstack.js/demo/two.html)
       */
-    var acceptWidgets: js.UndefOr[Boolean | String | (js.Function1[/* element */ Element, Boolean])] = js.native
+    var acceptWidgets: js.UndefOr[Boolean | String | (js.Function1[/* element */ Element, Boolean])] = js.undefined
     
     /** if true the resizing handles are shown even if the user is not hovering over the widget (default?: false) */
-    var alwaysShowResizeHandle: js.UndefOr[Boolean] = js.native
+    var alwaysShowResizeHandle: js.UndefOr[Boolean] = js.undefined
     
     /** turns animation on (default?: true) */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /** if false gridstack will not initialize existing items (default?: true) */
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
     /**
       * one cell height (default?: 60). Can be:
@@ -256,51 +272,51 @@ object typesMod {
       *  0 or null, in which case the library will not generate styles for rows. Everything must be defined in CSS files.
       *  'auto' - height will be calculated to match cell width (initial square grid).
       */
-    var cellHeight: js.UndefOr[numberOrString] = js.native
+    var cellHeight: js.UndefOr[numberOrString] = js.undefined
     
     /** (internal) unit for cellHeight (default? 'px') which is set when a string cellHeight with a unit is passed (ex: '10rem') */
-    var cellHeightUnit: js.UndefOr[String] = js.native
+    var cellHeightUnit: js.UndefOr[String] = js.undefined
     
     /** number of columns (default?: 12). Note: IF you change this, CSS also have to change. See https://github.com/gridstack/gridstack.js#change-grid-columns */
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
     /** class that implement drag'n'drop functionality for gridstack. If false grid will be static.
       * (default?: undefined - first available plugin will be used)
       */
-    var ddPlugin: js.UndefOr[`false` | TypeofGridStackDD] = js.native
+    var ddPlugin: js.UndefOr[`false` | TypeofGridStackDD] = js.undefined
     
     /** disallows dragging of widgets (default?: false) */
-    var disableDrag: js.UndefOr[Boolean] = js.native
+    var disableDrag: js.UndefOr[Boolean] = js.undefined
     
     /** disables the onColumnMode when the grid width is less than minWidth (default?: false) */
-    var disableOneColumnMode: js.UndefOr[Boolean] = js.native
+    var disableOneColumnMode: js.UndefOr[Boolean] = js.undefined
     
     /** disallows resizing of widgets (default?: false). */
-    var disableResize: js.UndefOr[Boolean] = js.native
+    var disableResize: js.UndefOr[Boolean] = js.undefined
     
     /** allows to drag external items using this selector - see dragInOptions. (default: undefined) */
-    var dragIn: js.UndefOr[String] = js.native
+    var dragIn: js.UndefOr[String] = js.undefined
     
     /** allows to drag external items using these options. (default?: { handle: '.grid-stack-item-content', revert: 'invalid', scroll: false, appendTo: 'body', helper: 'clone' }) */
-    var dragInOptions: js.UndefOr[DDDragInOpt] = js.native
+    var dragInOptions: js.UndefOr[DDDragInOpt] = js.undefined
     
     /** let user drag nested grid items out of a parent or not (default false) */
-    var dragOut: js.UndefOr[Boolean] = js.native
+    var dragOut: js.UndefOr[Boolean] = js.undefined
     
     /** allows to override UI draggable options. (default?: { handle?: '.grid-stack-item-content', scroll?: true, appendTo?: 'body', containment: null }) */
-    var draggable: js.UndefOr[DDDragOpt] = js.native
+    var draggable: js.UndefOr[DDDragOpt] = js.undefined
     
     /** enable floating widgets (default?: false) See example (http://gridstack.github.io/gridstack.js/demo/float.html) */
-    var float: js.UndefOr[Boolean] = js.native
+    var float: js.UndefOr[Boolean] = js.undefined
     
     /** draggable handle selector (default?: '.grid-stack-item-content') */
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
     /** draggable handle class (e.g. 'grid-stack-item-content'). If set 'handle' is ignored (default?: null) */
-    var handleClass: js.UndefOr[String] = js.native
+    var handleClass: js.UndefOr[String] = js.undefined
     
     /** widget class (default?: 'grid-stack-item') */
-    var itemClass: js.UndefOr[String] = js.native
+    var itemClass: js.UndefOr[String] = js.undefined
     
     /**
       * gap between grid item and content (default?: 10). This will set all 4 sides and support the CSS formats below
@@ -309,77 +325,77 @@ object typesMod {
       *  string with space separated values (ex: '5px 10px 0 20px' for all 4 sides, or '5em 10em' for top/bottom and left/right pairs like CSS).
       * Note: all sides must have same units (last one wins, default px)
       */
-    var margin: js.UndefOr[numberOrString] = js.native
+    var margin: js.UndefOr[numberOrString] = js.undefined
     
-    var marginBottom: js.UndefOr[numberOrString] = js.native
+    var marginBottom: js.UndefOr[numberOrString] = js.undefined
     
-    var marginLeft: js.UndefOr[numberOrString] = js.native
+    var marginLeft: js.UndefOr[numberOrString] = js.undefined
     
-    var marginRight: js.UndefOr[numberOrString] = js.native
+    var marginRight: js.UndefOr[numberOrString] = js.undefined
     
     /** OLD way to optionally set each side - use margin: '5px 10px 0 20px' instead. Used internally to store each side. */
-    var marginTop: js.UndefOr[numberOrString] = js.native
+    var marginTop: js.UndefOr[numberOrString] = js.undefined
     
     /** (internal) unit for margin (default? 'px') set when `margin` is set as string with unit (ex: 2rem') */
-    var marginUnit: js.UndefOr[String] = js.native
+    var marginUnit: js.UndefOr[String] = js.undefined
     
     /** maximum rows amount. Default? is 0 which means no maximum rows */
-    var maxRow: js.UndefOr[Double] = js.native
+    var maxRow: js.UndefOr[Double] = js.undefined
     
     /** minimum rows amount. Default is `0`. You can also do this with `min-height` CSS attribute
       * on the grid div in pixels, which will round to the closest row.
       */
-    var minRow: js.UndefOr[Double] = js.native
+    var minRow: js.UndefOr[Double] = js.undefined
     
     /** minimal width. If grid width is less, grid will be shown in one column mode (default?: 768) */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * set to true if you want oneColumnMode to use the DOM order and ignore x,y from normal multi column
       * layouts during sorting. This enables you to have custom 1 column layout that differ from the rest. (default?: false)
       */
-    var oneColumnModeDomSort: js.UndefOr[Boolean] = js.native
+    var oneColumnModeDomSort: js.UndefOr[Boolean] = js.undefined
     
     /** class for placeholder (default?: 'grid-stack-placeholder') */
-    var placeholderClass: js.UndefOr[String] = js.native
+    var placeholderClass: js.UndefOr[String] = js.undefined
     
     /** placeholder default content (default?: '') */
-    var placeholderText: js.UndefOr[String] = js.native
+    var placeholderText: js.UndefOr[String] = js.undefined
     
     /**
       * if true widgets could be removed by dragging outside of the grid. It could also be a selector string (ex: ".trash"),
       * in this case widgets will be removed by dropping them there (default?: false)
       * See example (http://gridstack.github.io/gridstack.js/demo/two.html)
       */
-    var removable: js.UndefOr[Boolean | String] = js.native
+    var removable: js.UndefOr[Boolean | String] = js.undefined
     
     /** allows to override UI removable options. (default?: { accept: '.' + opts.itemClass }) */
-    var removableOptions: js.UndefOr[DDRemoveOpt] = js.native
+    var removableOptions: js.UndefOr[DDRemoveOpt] = js.undefined
     
     /** time in milliseconds before widget is being removed while dragging outside of the grid. (default?: 2000) */
-    var removeTimeout: js.UndefOr[Double] = js.native
+    var removeTimeout: js.UndefOr[Double] = js.undefined
     
     /** allows to override UI resizable options. (default?: { autoHide: true, handles: 'se' }) */
-    var resizable: js.UndefOr[DDResizeOpt] = js.native
+    var resizable: js.UndefOr[DDResizeOpt] = js.undefined
     
     /** fix grid number of rows. This is a shortcut of writing `minRow:N, maxRow:N`. (default `0` no constrain) */
-    var row: js.UndefOr[Double] = js.native
+    var row: js.UndefOr[Double] = js.undefined
     
     /**
       * if true turns grid to RTL. Possible values are true, false, 'auto' (default?: 'auto')
       * See [example](http://gridstack.github.io/gridstack.js/demo/rtl.html)
       */
-    var rtl: js.UndefOr[Boolean | auto] = js.native
+    var rtl: js.UndefOr[Boolean | auto] = js.undefined
     
     /**
       * makes grid static (default?: false). If `true` widgets are not movable/resizable.
       * You don't even need draggable/resizable. A CSS class
       * 'grid-stack-static' is also added to the element.
       */
-    var staticGrid: js.UndefOr[Boolean] = js.native
+    var staticGrid: js.UndefOr[Boolean] = js.undefined
     
     /** if `true` will add style element to `<head>` otherwise will add it to element's parent node (default `false`). */
-    var styleInHead: js.UndefOr[Boolean] = js.native
+    var styleInHead: js.UndefOr[Boolean] = js.undefined
   }
   object GridStackOptions {
     
@@ -631,53 +647,52 @@ object typesMod {
     }
   }
   
-  @js.native
   trait GridStackWidget extends StObject {
     
     /** if true then x, y parameters will be ignored and widget will be places on the first available position (default?: false) */
-    var autoPosition: js.UndefOr[Boolean] = js.native
+    var autoPosition: js.UndefOr[Boolean] = js.undefined
     
     /** html to append inside as content */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** widget dimension height (default?: 1) */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** value for `data-gs-id` stored on the widget (default?: undefined) */
-    var id: js.UndefOr[numberOrString] = js.native
+    var id: js.UndefOr[numberOrString] = js.undefined
     
     /** prevents moving and resizing (default?: undefined = un-constrained) */
-    var locked: js.UndefOr[Boolean] = js.native
+    var locked: js.UndefOr[Boolean] = js.undefined
     
     /** maximum height allowed during resize/creation (default?: undefined = un-constrained) */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** maximum width allowed during resize/creation (default?: undefined = un-constrained) */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** minimum height allowed during resize/creation (default?: undefined = un-constrained) */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /** minimum width allowed during resize/creation (default?: undefined = un-constrained) */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** prevents moving (default?: undefined = un-constrained) */
-    var noMove: js.UndefOr[Boolean] = js.native
+    var noMove: js.UndefOr[Boolean] = js.undefined
     
     /** prevent resizing (default?: undefined = un-constrained) */
-    var noResize: js.UndefOr[Boolean] = js.native
+    var noResize: js.UndefOr[Boolean] = js.undefined
     
     /** widgets can have their own resize handles. For example 'e,w' will make the particular widget only resize east and west. */
-    var resizeHandles: js.UndefOr[String] = js.native
+    var resizeHandles: js.UndefOr[String] = js.undefined
     
     /** widget dimension width (default?: 1) */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** widget position x (default?: 0) */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** widget position y (default?: 0) */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object GridStackWidget {
     

@@ -10,9 +10,9 @@ A simple, minimal PostgreSQL session store for Connect/Express
 | ------------------ | :-------------: |
 | Full name          | connect-pg-simple |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 625905 |
+| # releases         | 7 |
+| # dependents       | 25 |
+| # downloads        | 714081 |
 | # stars            | 12 |
 
 ## Links

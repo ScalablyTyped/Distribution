@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientLicensing.anon.Fields
 import typings.maximMazurokGapiClientLicensing.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -19,38 +18,36 @@ object gapi {
     object licensing {
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait LicenseAssignment extends StObject {
         
         /** ETag of the resource. */
-        var etags: js.UndefOr[String] = js.native
+        var etags: js.UndefOr[String] = js.undefined
         
         /** Identifies the resource as a LicenseAssignment, which is `licensing#licenseAssignment`. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** A product's unique identifier. For more information about products in this version of the API, see Product and SKU IDs. */
-        var productId: js.UndefOr[String] = js.native
+        var productId: js.UndefOr[String] = js.undefined
         
         /** Display Name of the product. */
-        var productName: js.UndefOr[String] = js.native
+        var productName: js.UndefOr[String] = js.undefined
         
         /** Link to this page. */
-        var selfLink: js.UndefOr[String] = js.native
+        var selfLink: js.UndefOr[String] = js.undefined
         
         /** A product SKU's unique identifier. For more information about available SKUs in this version of the API, see Products and SKUs. */
-        var skuId: js.UndefOr[String] = js.native
+        var skuId: js.UndefOr[String] = js.undefined
         
         /** Display Name of the sku of the product. */
-        var skuName: js.UndefOr[String] = js.native
+        var skuName: js.UndefOr[String] = js.undefined
         
         /**
           * The user's current primary email address. If the user's email address changes, use the new email address in your API requests. Since a `userId` is subject to change, do not use a
           * `userId` value as a key for persistent data. This key could break if the current user's email address changes. If the `userId` is suspended, the license status changes.
           */
-        var userId: js.UndefOr[String] = js.native
+        var userId: js.UndefOr[String] = js.undefined
       }
       object LicenseAssignment {
         
@@ -113,11 +110,10 @@ object gapi {
         }
       }
       
-      @js.native
       trait LicenseAssignmentInsert extends StObject {
         
         /** Email id of the user */
-        var userId: js.UndefOr[String] = js.native
+        var userId: js.UndefOr[String] = js.undefined
       }
       object LicenseAssignmentInsert {
         
@@ -138,23 +134,22 @@ object gapi {
         }
       }
       
-      @js.native
       trait LicenseAssignmentList extends StObject {
         
         /** ETag of the resource. */
-        var etag: js.UndefOr[String] = js.native
+        var etag: js.UndefOr[String] = js.undefined
         
         /** The LicenseAssignments in this page of results. */
-        var items: js.UndefOr[js.Array[LicenseAssignment]] = js.native
+        var items: js.UndefOr[js.Array[LicenseAssignment]] = js.undefined
         
         /** Identifies the resource as a collection of LicenseAssignments. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * The token that you must submit in a subsequent request to retrieve additional license results matching your query parameters. The `maxResults` query string is related to the
           * `nextPageToken` since `maxResults` determines how many entries are returned on each next page.
           */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object LicenseAssignmentList {
         

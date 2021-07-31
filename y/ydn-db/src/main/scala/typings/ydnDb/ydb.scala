@@ -2,7 +2,6 @@ package typings.ydnDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ydb {
@@ -13,7 +12,6 @@ object ydb {
       
       type NestedLoop = Solver
       
-      @js.native
       trait Solver extends StObject
       
       type SortedMerge = Solver

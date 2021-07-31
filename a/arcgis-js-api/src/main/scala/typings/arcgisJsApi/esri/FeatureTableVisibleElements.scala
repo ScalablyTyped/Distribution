@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureTableVisibleElements extends Object {
+trait FeatureTableVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to display the feature table's header information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
-  var header: js.UndefOr[Boolean] = js.native
+  var header: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display the feature table's menu.Default value is `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
-  var menu: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The menu items within the feature table menu.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#VisibleElements)
     */
-  var menuItems: js.UndefOr[VisibleElementsMenuItems] = js.native
+  var menuItems: js.UndefOr[VisibleElementsMenuItems] = js.undefined
 }
 object FeatureTableVisibleElements {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityPoolRolesInput extends StObject {
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitoidentityMod.IdentityPoolId
 }
 object GetIdentityPoolRolesInput {
   

@@ -8,7 +8,6 @@ import typings.reactNativeNavigation.optionsMod.LayoutOrientation
 import typings.reactNativeNavigation.optionsMod.SystemItemIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeNavigationStrings {
@@ -19,67 +18,93 @@ object reactNativeNavigationStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `100` extends FontWeight
+  sealed trait `100`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   
   @js.native
-  sealed trait `200` extends FontWeight
+  sealed trait `200`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `200`: `200` = "200".asInstanceOf[`200`]
   
   @js.native
-  sealed trait `300` extends FontWeight
+  sealed trait `300`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `300`: `300` = "300".asInstanceOf[`300`]
   
   @js.native
-  sealed trait `400` extends FontWeight
+  sealed trait `400`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `400`: `400` = "400".asInstanceOf[`400`]
   
   @js.native
-  sealed trait `500` extends FontWeight
+  sealed trait `500`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
-  sealed trait `600` extends FontWeight
+  sealed trait `600`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `600`: `600` = "600".asInstanceOf[`600`]
   
   @js.native
-  sealed trait `700` extends FontWeight
+  sealed trait `700`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `700`: `700` = "700".asInstanceOf[`700`]
   
   @js.native
-  sealed trait `800` extends FontWeight
+  sealed trait `800`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `800`: `800` = "800".asInstanceOf[`800`]
   
   @js.native
-  sealed trait `900` extends FontWeight
+  sealed trait `900`
+    extends StObject
+       with FontWeight
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
   
   @js.native
-  sealed trait Component extends ComponentType
+  sealed trait Component
+    extends StObject
+       with ComponentType
   @scala.inline
   def Component: Component = "Component".asInstanceOf[Component]
   
   @js.native
-  sealed trait TopBarBackground extends ComponentType
+  sealed trait TopBarBackground
+    extends StObject
+       with ComponentType
   @scala.inline
   def TopBarBackground: TopBarBackground = "TopBarBackground".asInstanceOf[TopBarBackground]
   
   @js.native
-  sealed trait TopBarButton extends ComponentType
+  sealed trait TopBarButton
+    extends StObject
+       with ComponentType
   @scala.inline
   def TopBarButton: TopBarButton = "TopBarButton".asInstanceOf[TopBarButton]
   
   @js.native
-  sealed trait TopBarTitle extends ComponentType
+  sealed trait TopBarTitle
+    extends StObject
+       with ComponentType
   @scala.inline
   def TopBarTitle: TopBarTitle = "TopBarTitle".asInstanceOf[TopBarTitle]
   
@@ -94,12 +119,16 @@ object reactNativeNavigationStrings {
   def accelerateDecelerate: accelerateDecelerate = "accelerateDecelerate".asInstanceOf[accelerateDecelerate]
   
   @js.native
-  sealed trait action extends SystemItemIcon
+  sealed trait action
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait add extends SystemItemIcon
+  sealed trait add
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   
@@ -135,30 +164,38 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait black
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def black: black = "black".asInstanceOf[black]
   
   @js.native
   sealed trait bold
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait bookmarks extends SystemItemIcon
+  sealed trait bookmarks
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
   
   @js.native
-  sealed trait camera extends SystemItemIcon
+  sealed trait camera
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
-  sealed trait cancel extends SystemItemIcon
+  sealed trait cancel
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
@@ -168,7 +205,9 @@ object reactNativeNavigationStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait compose extends SystemItemIcon
+  sealed trait compose
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def compose: compose = "compose".asInstanceOf[compose]
   
@@ -189,7 +228,8 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait demibold
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def demibold: demibold = "demibold".asInstanceOf[demibold]
@@ -200,12 +240,16 @@ object reactNativeNavigationStrings {
   def destructive: destructive = "destructive".asInstanceOf[destructive]
   
   @js.native
-  sealed trait done extends SystemItemIcon
+  sealed trait done
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait edit extends SystemItemIcon
+  sealed trait edit
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   
@@ -216,13 +260,16 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait extrabold
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def extrabold: extrabold = "extrabold".asInstanceOf[extrabold]
   
   @js.native
-  sealed trait fastForward extends SystemItemIcon
+  sealed trait fastForward
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def fastForward: fastForward = "fastForward".asInstanceOf[fastForward]
   
@@ -232,18 +279,23 @@ object reactNativeNavigationStrings {
   def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait fixedSpace extends SystemItemIcon
+  sealed trait fixedSpace
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def fixedSpace: fixedSpace = "fixedSpace".asInstanceOf[fixedSpace]
   
   @js.native
-  sealed trait flexibleSpace extends SystemItemIcon
+  sealed trait flexibleSpace
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def flexibleSpace: flexibleSpace = "flexibleSpace".asInstanceOf[flexibleSpace]
   
   @js.native
   sealed trait heavy
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def heavy: heavy = "heavy".asInstanceOf[heavy]
@@ -259,12 +311,16 @@ object reactNativeNavigationStrings {
   def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
   
   @js.native
-  sealed trait italic extends FontStyle
+  sealed trait italic
+    extends StObject
+       with FontStyle
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait landscape extends LayoutOrientation
+  sealed trait landscape
+    extends StObject
+       with LayoutOrientation
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
@@ -280,7 +336,8 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait light
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def light: light = "light".asInstanceOf[light]
@@ -302,7 +359,8 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait medium
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
@@ -324,7 +382,8 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait normal
-    extends FontStyle
+    extends StObject
+       with FontStyle
        with FontWeight
        with FontWeightIOS
   @scala.inline
@@ -336,7 +395,9 @@ object reactNativeNavigationStrings {
   def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
   
   @js.native
-  sealed trait organize extends SystemItemIcon
+  sealed trait organize
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def organize: organize = "organize".asInstanceOf[organize]
   
@@ -351,44 +412,59 @@ object reactNativeNavigationStrings {
   def overshoot: overshoot = "overshoot".asInstanceOf[overshoot]
   
   @js.native
-  sealed trait pause extends SystemItemIcon
+  sealed trait pause
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait play extends SystemItemIcon
+  sealed trait play
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait portrait extends LayoutOrientation
+  sealed trait portrait
+    extends StObject
+       with LayoutOrientation
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
-  sealed trait redo extends SystemItemIcon
+  sealed trait redo
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def redo: redo = "redo".asInstanceOf[redo]
   
   @js.native
-  sealed trait refresh extends SystemItemIcon
+  sealed trait refresh
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
   sealed trait regular
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
-  sealed trait reply extends SystemItemIcon
+  sealed trait reply
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def reply: reply = "reply".asInstanceOf[reply]
   
   @js.native
-  sealed trait rewind extends SystemItemIcon
+  sealed trait rewind
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def rewind: rewind = "rewind".asInstanceOf[rewind]
   
@@ -403,12 +479,16 @@ object reactNativeNavigationStrings {
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait save extends SystemItemIcon
+  sealed trait save
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def save: save = "save".asInstanceOf[save]
   
   @js.native
-  sealed trait search extends SystemItemIcon
+  sealed trait search
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
@@ -419,7 +499,8 @@ object reactNativeNavigationStrings {
   
   @js.native
   sealed trait semibold
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def semibold: semibold = "semibold".asInstanceOf[semibold]
@@ -445,13 +526,16 @@ object reactNativeNavigationStrings {
   def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
-  sealed trait stop extends SystemItemIcon
+  sealed trait stop
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait thin
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
@@ -467,26 +551,32 @@ object reactNativeNavigationStrings {
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   
   @js.native
-  sealed trait trash extends SystemItemIcon
+  sealed trait trash
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def trash: trash = "trash".asInstanceOf[trash]
   
   @js.native
   sealed trait ultrabold
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def ultrabold: ultrabold = "ultrabold".asInstanceOf[ultrabold]
   
   @js.native
   sealed trait ultralight
-    extends FontWeight
+    extends StObject
+       with FontWeight
        with FontWeightIOS
   @scala.inline
   def ultralight: ultralight = "ultralight".asInstanceOf[ultralight]
   
   @js.native
-  sealed trait undo extends SystemItemIcon
+  sealed trait undo
+    extends StObject
+       with SystemItemIcon
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   

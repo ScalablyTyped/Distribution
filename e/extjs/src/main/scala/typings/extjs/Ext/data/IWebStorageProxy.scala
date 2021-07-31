@@ -3,14 +3,14 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.data.proxy.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWebStorageProxy extends IClient {
+trait IWebStorageProxy
+  extends StObject
+     with IClient {
   
   /** [Property] (Object) */
-  var cache: js.UndefOr[js.Any] = js.native
+  var cache: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] inherit docs
     * @param operation Object
@@ -25,7 +25,7 @@ trait IWebStorageProxy extends IClient {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] inherit
     * @param operation Object
@@ -40,10 +40,10 @@ trait IWebStorageProxy extends IClient {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Method] inherit docs
     * @param operation Object
@@ -58,13 +58,13 @@ trait IWebStorageProxy extends IClient {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Saves the given record in the Proxy
     * @param record Ext.data.Model The model instance
     * @param id String The id to save the record under (defaults to the value of the record's getId() function)
     */
-  var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.native
+  var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] inherit docs
     * @param operation Object
@@ -79,7 +79,7 @@ trait IWebStorageProxy extends IClient {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IWebStorageProxy {
   

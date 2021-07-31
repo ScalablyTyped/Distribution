@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,7 +54,7 @@ trait RDSDataService extends Service {
   ): Request[CommitTransactionResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_RDSDataService: ConfigBase with ClientConfiguration = js.native
+  var config_RDSDataService: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Runs one or more SQL statements.  This operation is deprecated. Use the BatchExecuteStatement or ExecuteStatement operation. 

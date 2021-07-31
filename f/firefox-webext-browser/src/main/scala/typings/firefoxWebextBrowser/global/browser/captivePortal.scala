@@ -7,7 +7,6 @@ import typings.firefoxWebextBrowser.browser.captivePortal.OnStateChangedDetailsS
 import typings.firefoxWebextBrowser.browser.types.Setting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,6 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object captivePortal {
   
+  @JSGlobal("browser.captivePortal")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* captivePortal properties */
   /** Return the canonical captive-portal detection URL. Read-only. */
   @JSGlobal("browser.captivePortal.canonicalURL")
@@ -26,17 +29,15 @@ object captivePortal {
   val canonicalURL: Setting = js.native
   
   /** Returns the time difference between NOW and the last time a request was completed in milliseconds. */
-  @JSGlobal("browser.captivePortal.getLastChecked")
-  @js.native
-  def getLastChecked(): js.Promise[Double] = js.native
+  @scala.inline
+  def getLastChecked(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastChecked")().asInstanceOf[js.Promise[Double]]
   
   /* captivePortal functions */
   /**
     * Returns the current portal state, one of `unknown`, `not_captive`, `unlocked_portal`, `locked_portal`.
     */
-  @JSGlobal("browser.captivePortal.getState")
-  @js.native
-  def getState(): js.Promise[OnStateChangedDetailsState] = js.native
+  @scala.inline
+  def getState(): js.Promise[OnStateChangedDetailsState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[js.Promise[OnStateChangedDetailsState]]
   
   /**
     * This notification will be emitted when the captive portal service has determined that we can connect to the internet. The service will pass either `captive` if there is an unlocked captive portal present, or `clear` if no captive portal was detected.

@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharingSettings extends StObject {
   
   /**
     * Whether to include the notebook cell output when sharing the notebook. The default is Disabled.
     */
-  var NotebookOutputOption: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookOutputOption] = js.native
+  var NotebookOutputOption: js.UndefOr[typings.awsSdk.sagemakerMod.NotebookOutputOption] = js.undefined
   
   /**
     * When NotebookOutputOption is Allowed, the AWS Key Management Service (KMS) encryption key ID used to encrypt the notebook cell output in the Amazon S3 bucket.
     */
-  var S3KmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var S3KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * When NotebookOutputOption is Allowed, the Amazon S3 bucket used to save the notebook cell output.
     */
-  var S3OutputPath: js.UndefOr[S3Uri] = js.native
+  var S3OutputPath: js.UndefOr[S3Uri] = js.undefined
 }
 object SharingSettings {
   

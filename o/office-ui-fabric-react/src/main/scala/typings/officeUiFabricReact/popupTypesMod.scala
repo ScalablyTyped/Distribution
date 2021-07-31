@@ -9,28 +9,28 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupTypesMod {
   
-  @js.native
-  trait IPopupProps extends HTMLAttributes[Popup] {
+  trait IPopupProps
+    extends StObject
+       with HTMLAttributes[Popup] {
     
     /**
       * Defines the element id referencing the element containing the description for the popup.
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Accessible label text for the popup.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       *  Defines the element id referencing the element containing label text for popup.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * A callback function for when the popup is dismissed from the close button or light dismiss. If provided, will
@@ -39,9 +39,9 @@ object popupTypesMod {
     var onDismiss: js.UndefOr[
         js.Function1[
           /* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the component is unmounting, and focus needs to be restored.
@@ -50,7 +50,7 @@ object popupTypesMod {
       * contains focus. If this is provided, focus will not be restored automatically,
       * you'll need to call originalElement.focus()
       */
-    var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.native
+    var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.undefined
     
     /**
       * If true, when this component is unmounted, focus will be restored to the element that had focus when the component
@@ -58,7 +58,7 @@ object popupTypesMod {
       * @defaultvalue true
       * @deprecated use restoreFocus callback instead
       */
-    var shouldRestoreFocus: js.UndefOr[Boolean] = js.native
+    var shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined
   }
   object IPopupProps {
     
@@ -91,7 +91,7 @@ object popupTypesMod {
       
       @scala.inline
       def setOnDismiss(
-        value: /* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]] => _
+        value: /* ev */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]] => js.Any
       ): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       @scala.inline

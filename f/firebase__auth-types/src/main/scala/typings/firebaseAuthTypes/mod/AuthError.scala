@@ -2,19 +2,19 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AuthError extends Error {
+trait AuthError
+  extends StObject
+     with Error {
   
-  var credential: js.UndefOr[AuthCredential] = js.native
+  var credential: js.UndefOr[AuthCredential] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
-  var tenantId: js.UndefOr[String] = js.native
+  var tenantId: js.UndefOr[String] = js.undefined
 }
 object AuthError {
   

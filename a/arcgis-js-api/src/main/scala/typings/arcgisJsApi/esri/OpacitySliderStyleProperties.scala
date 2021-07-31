@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpacitySliderStyleProperties extends Object {
+trait OpacitySliderStyleProperties
+  extends StObject
+     with Object {
   
   /**
     * The color of the slider's track.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
     */
-  var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object OpacitySliderStyleProperties {
   

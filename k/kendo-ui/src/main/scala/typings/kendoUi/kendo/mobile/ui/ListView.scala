@@ -5,12 +5,12 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListView
-  extends typings.kendoUi.kendo.ui.Widget {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Widget {
   
   def append(dataItems: js.Any): Unit = js.native
   

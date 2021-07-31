@@ -2,23 +2,21 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileQueryMetadata extends StObject {
   
-  var descendants: Boolean = js.native
+  var descendants: Boolean
   
-  var first: Boolean = js.native
+  var first: Boolean
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var read: CompileTokenMetadata = js.native
+  var read: CompileTokenMetadata
   
-  var selectors: js.Array[CompileTokenMetadata] = js.native
+  var selectors: js.Array[CompileTokenMetadata]
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
 }
 object CompileQueryMetadata {
   

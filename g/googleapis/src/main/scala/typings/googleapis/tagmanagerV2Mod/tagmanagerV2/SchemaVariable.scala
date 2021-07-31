@@ -2,24 +2,22 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Variable.
   */
-@js.native
 trait SchemaVariable extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * For mobile containers only: A list of trigger IDs for disabling
@@ -27,7 +25,7 @@ trait SchemaVariable extends StObject {
     * trigger is true while all the disabling trigger are false. Treated as an
     * unordered set.
     */
-  var disablingTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var disablingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For mobile containers only: A list of trigger IDs for enabling
@@ -35,73 +33,73 @@ trait SchemaVariable extends StObject {
     * triggers is true while all the disabling triggers are false. Treated as
     * an unordered set.
     */
-  var enablingTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var enablingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The fingerprint of the GTM Variable as computed at storage time. This
     * value is recomputed whenever the variable is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Option to convert a variable value to other value.
     */
-  var formatValue: js.UndefOr[SchemaVariableFormatValue] = js.native
+  var formatValue: js.UndefOr[SchemaVariableFormatValue] = js.undefined
   
   /**
     * Variable display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User notes on how to apply this variable in the container.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * The variable&#39;s parameters.
     */
-  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
   
   /**
     * Parent folder id.
     */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Variable&#39;s API relative path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The end timestamp in milliseconds to schedule a variable.
     */
-  var scheduleEndMs: js.UndefOr[String] = js.native
+  var scheduleEndMs: js.UndefOr[String] = js.undefined
   
   /**
     * The start timestamp in milliseconds to schedule a variable.
     */
-  var scheduleStartMs: js.UndefOr[String] = js.native
+  var scheduleStartMs: js.UndefOr[String] = js.undefined
   
   /**
     * Auto generated link to the tag manager UI
     */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Variable Type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The Variable ID uniquely identifies the GTM Variable.
     */
-  var variableId: js.UndefOr[String] = js.native
+  var variableId: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Workspace ID.
     */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
 }
 object SchemaVariable {
   

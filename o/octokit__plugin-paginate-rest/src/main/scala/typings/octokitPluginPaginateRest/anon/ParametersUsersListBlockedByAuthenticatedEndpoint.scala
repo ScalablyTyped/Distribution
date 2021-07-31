@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.UsersListBlockedByAuthenticatedResponse
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersListBlockedByAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersListBlockedByAuthenticatedEndpoint = js.native
+  var parameters: UsersListBlockedByAuthenticatedEndpoint
   
-  var response: OctokitResponse[UsersListBlockedByAuthenticatedResponseData] = js.native
+  var response: OctokitResponse[UsersListBlockedByAuthenticatedResponseData]
 }
 object ParametersUsersListBlockedByAuthenticatedEndpoint {
   

@@ -4,10 +4,13 @@ import typings.ionic.ailmentsBaseMod.AilmentDeps
 import typings.ionic.definitionsMod.IAilment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libDoctorMod {
+  
+  @JSImport("ionic/lib/doctor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/doctor", "Ailment")
   @js.native
@@ -84,7 +87,6 @@ object libDoctorMod {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
-  @JSImport("ionic/lib/doctor", "formatAilmentMessage")
-  @js.native
-  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
+  @scala.inline
+  def formatAilmentMessage(ailment: IAilment): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAilmentMessage")(ailment.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

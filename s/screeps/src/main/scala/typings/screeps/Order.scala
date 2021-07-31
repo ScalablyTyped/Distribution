@@ -2,31 +2,29 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var created: Double = js.native
+  var created: Double
   
-  var id: String = js.native
+  var id: String
   
-  var price: Double = js.native
+  var price: Double
   
-  var remainingAmount: Double = js.native
+  var remainingAmount: Double
   
-  var resourceType: MarketResourceConstant = js.native
+  var resourceType: MarketResourceConstant
   
-  var roomName: js.UndefOr[String] = js.native
+  var roomName: js.UndefOr[String] = js.undefined
   
-  var totalAmount: js.UndefOr[Double] = js.native
+  var totalAmount: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Order {
   

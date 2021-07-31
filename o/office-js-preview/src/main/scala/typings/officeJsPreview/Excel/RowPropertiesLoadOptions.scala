@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.anon.CellPropertiesFormatLoadO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
-trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
+trait RowPropertiesLoadOptions
+  extends StObject
+     with CellPropertiesLoadOptions {
   
   /**
     *
@@ -22,7 +22,7 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_RowPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadO] = js.native
+  var format_RowPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadO] = js.undefined
   
   /**
     *
@@ -30,7 +30,7 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rowHidden: js.UndefOr[Boolean] = js.native
+  var rowHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -38,7 +38,7 @@ trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rowIndex: js.UndefOr[Boolean] = js.native
+  var rowIndex: js.UndefOr[Boolean] = js.undefined
 }
 object RowPropertiesLoadOptions {
   

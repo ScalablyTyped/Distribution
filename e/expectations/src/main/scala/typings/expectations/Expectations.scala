@@ -2,7 +2,6 @@ package typings.expectations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Expectations {
@@ -15,9 +14,9 @@ object Expectations {
     var expr: js.Any = js.native
     
     def fail(): js.Any = js.native
-    def fail(why: js.UndefOr[scala.Nothing], what: js.Any): js.Any = js.native
     def fail(why: String): js.Any = js.native
     def fail(why: String, what: js.Any): js.Any = js.native
+    def fail(why: Unit, what: js.Any): js.Any = js.native
     
     def generateMessage(value: js.Any, expr: js.Any, toDo: String): String = js.native
     def generateMessage(value: js.Any, expr: js.Any, toDo: String, otherVal: js.Any): String = js.native

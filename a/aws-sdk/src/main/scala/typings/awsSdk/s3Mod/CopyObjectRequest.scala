@@ -2,203 +2,201 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyObjectRequest extends StObject {
   
   /**
     * The canned ACL to apply to the object. This action is not supported by Amazon S3 on Outposts.
     */
-  var ACL: js.UndefOr[ObjectCannedACL] = js.native
+  var ACL: js.UndefOr[ObjectCannedACL] = js.undefined
   
   /**
     * The name of the destination bucket. When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide. When using this API with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this operation using S3 on Outposts through the AWS SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using S3 on Outposts in the Amazon Simple Storage Service Developer Guide.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * Specifies caching behavior along the request/reply chain.
     */
-  var CacheControl: js.UndefOr[typings.awsSdk.s3Mod.CacheControl] = js.native
+  var CacheControl: js.UndefOr[typings.awsSdk.s3Mod.CacheControl] = js.undefined
   
   /**
     * Specifies presentational information for the object.
     */
-  var ContentDisposition: js.UndefOr[typings.awsSdk.s3Mod.ContentDisposition] = js.native
+  var ContentDisposition: js.UndefOr[typings.awsSdk.s3Mod.ContentDisposition] = js.undefined
   
   /**
     * Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
     */
-  var ContentEncoding: js.UndefOr[typings.awsSdk.s3Mod.ContentEncoding] = js.native
+  var ContentEncoding: js.UndefOr[typings.awsSdk.s3Mod.ContentEncoding] = js.undefined
   
   /**
     * The language the content is in.
     */
-  var ContentLanguage: js.UndefOr[typings.awsSdk.s3Mod.ContentLanguage] = js.native
+  var ContentLanguage: js.UndefOr[typings.awsSdk.s3Mod.ContentLanguage] = js.undefined
   
   /**
     * A standard MIME type describing the format of the object data.
     */
-  var ContentType: js.UndefOr[typings.awsSdk.s3Mod.ContentType] = js.native
+  var ContentType: js.UndefOr[typings.awsSdk.s3Mod.ContentType] = js.undefined
   
   /**
     * Specifies the source object for the copy operation. You specify the value in one of two formats, depending on whether you want to access the source object through an access point:   For objects not accessed through an access point, specify the name of the source bucket and the key of the source object, separated by a slash (/). For example, to copy the object reports/january.pdf from the bucket awsexamplebucket, use awsexamplebucket/reports/january.pdf. The value must be URL encoded.   For objects accessed through access points, specify the Amazon Resource Name (ARN) of the object as accessed through the access point, in the format arn:aws:s3:&lt;Region&gt;:&lt;account-id&gt;:accesspoint/&lt;access-point-name&gt;/object/&lt;key&gt;. For example, to copy the object reports/january.pdf through access point my-access-point owned by account 123456789012 in Region us-west-2, use the URL encoding of arn:aws:s3:us-west-2:123456789012:accesspoint/my-access-point/object/reports/january.pdf. The value must be URL encoded.  Amazon S3 supports copy operations using access points only when the source and destination buckets are in the same AWS Region.  Alternatively, for objects accessed through Amazon S3 on Outposts, specify the ARN of the object as accessed in the format arn:aws:s3-outposts:&lt;Region&gt;:&lt;account-id&gt;:outpost/&lt;outpost-id&gt;/object/&lt;key&gt;. For example, to copy the object reports/january.pdf through outpost my-outpost owned by account 123456789012 in Region us-west-2, use the URL encoding of arn:aws:s3-outposts:us-west-2:123456789012:outpost/my-outpost/object/reports/january.pdf. The value must be URL encoded.    To copy a specific version of an object, append ?versionId=&lt;version-id&gt; to the value (for example, awsexamplebucket/reports/january.pdf?versionId=QUpfdndhfd8438MNFDN93jdnJFkdmqnh893). If you don't specify a version ID, Amazon S3 copies the latest version of the source object.
     */
-  var CopySource: typings.awsSdk.s3Mod.CopySource = js.native
+  var CopySource: typings.awsSdk.s3Mod.CopySource
   
   /**
     * Copies the object if its entity tag (ETag) matches the specified tag.
     */
-  var CopySourceIfMatch: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfMatch] = js.native
+  var CopySourceIfMatch: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfMatch] = js.undefined
   
   /**
     * Copies the object if it has been modified since the specified time.
     */
-  var CopySourceIfModifiedSince: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfModifiedSince] = js.native
+  var CopySourceIfModifiedSince: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfModifiedSince] = js.undefined
   
   /**
     * Copies the object if its entity tag (ETag) is different than the specified ETag.
     */
-  var CopySourceIfNoneMatch: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfNoneMatch] = js.native
+  var CopySourceIfNoneMatch: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfNoneMatch] = js.undefined
   
   /**
     * Copies the object if it hasn't been modified since the specified time.
     */
-  var CopySourceIfUnmodifiedSince: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfUnmodifiedSince] = js.native
+  var CopySourceIfUnmodifiedSince: js.UndefOr[typings.awsSdk.s3Mod.CopySourceIfUnmodifiedSince] = js.undefined
   
   /**
     * Specifies the algorithm to use when decrypting the source object (for example, AES256).
     */
-  var CopySourceSSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.CopySourceSSECustomerAlgorithm] = js.native
+  var CopySourceSSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.CopySourceSSECustomerAlgorithm] = js.undefined
   
   /**
     * Specifies the customer-provided encryption key for Amazon S3 to use to decrypt the source object. The encryption key provided in this header must be one that was used when the source object was created.
     */
-  var CopySourceSSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.CopySourceSSECustomerKey] = js.native
+  var CopySourceSSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.CopySourceSSECustomerKey] = js.undefined
   
   /**
     * Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.
     */
-  var CopySourceSSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.CopySourceSSECustomerKeyMD5] = js.native
+  var CopySourceSSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.CopySourceSSECustomerKeyMD5] = js.undefined
   
   /**
     * The account id of the expected destination bucket owner. If the destination bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The account id of the expected source bucket owner. If the source bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedSourceBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedSourceBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The date and time at which the object is no longer cacheable.
     */
-  var Expires: js.UndefOr[typings.awsSdk.s3Mod.Expires] = js.native
+  var Expires: js.UndefOr[typings.awsSdk.s3Mod.Expires] = js.undefined
   
   /**
     * Gives the grantee READ, READ_ACP, and WRITE_ACP permissions on the object. This action is not supported by Amazon S3 on Outposts.
     */
-  var GrantFullControl: js.UndefOr[typings.awsSdk.s3Mod.GrantFullControl] = js.native
+  var GrantFullControl: js.UndefOr[typings.awsSdk.s3Mod.GrantFullControl] = js.undefined
   
   /**
     * Allows grantee to read the object data and its metadata. This action is not supported by Amazon S3 on Outposts.
     */
-  var GrantRead: js.UndefOr[typings.awsSdk.s3Mod.GrantRead] = js.native
+  var GrantRead: js.UndefOr[typings.awsSdk.s3Mod.GrantRead] = js.undefined
   
   /**
     * Allows grantee to read the object ACL. This action is not supported by Amazon S3 on Outposts.
     */
-  var GrantReadACP: js.UndefOr[typings.awsSdk.s3Mod.GrantReadACP] = js.native
+  var GrantReadACP: js.UndefOr[typings.awsSdk.s3Mod.GrantReadACP] = js.undefined
   
   /**
     * Allows grantee to write the ACL for the applicable object. This action is not supported by Amazon S3 on Outposts.
     */
-  var GrantWriteACP: js.UndefOr[typings.awsSdk.s3Mod.GrantWriteACP] = js.native
+  var GrantWriteACP: js.UndefOr[typings.awsSdk.s3Mod.GrantWriteACP] = js.undefined
   
   /**
     * The key of the destination object.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
   /**
     * A map of metadata to store with the object in S3.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.s3Mod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.s3Mod.Metadata] = js.undefined
   
   /**
     * Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request.
     */
-  var MetadataDirective: js.UndefOr[typings.awsSdk.s3Mod.MetadataDirective] = js.native
+  var MetadataDirective: js.UndefOr[typings.awsSdk.s3Mod.MetadataDirective] = js.undefined
   
   /**
     * Specifies whether you want to apply a Legal Hold to the copied object.
     */
-  var ObjectLockLegalHoldStatus: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockLegalHoldStatus] = js.native
+  var ObjectLockLegalHoldStatus: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockLegalHoldStatus] = js.undefined
   
   /**
     * The Object Lock mode that you want to apply to the copied object.
     */
-  var ObjectLockMode: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockMode] = js.native
+  var ObjectLockMode: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockMode] = js.undefined
   
   /**
     * The date and time when you want the copied object's Object Lock to expire.
     */
-  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockRetainUntilDate] = js.native
+  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockRetainUntilDate] = js.undefined
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
+  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
   
   /**
     * Specifies the algorithm to use to when encrypting the object (for example, AES256).
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.native
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.
     */
-  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.native
+  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.undefined
   
   /**
     * Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.native
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * Specifies the AWS KMS Encryption Context to use for object encryption. The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
     */
-  var SSEKMSEncryptionContext: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSEncryptionContext] = js.native
+  var SSEKMSEncryptionContext: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSEncryptionContext] = js.undefined
   
   /**
     * Specifies the AWS KMS key ID to use for object encryption. All GET and PUT requests for an object protected by AWS KMS will fail if not made via SSL or using SigV4. For information about configuring using any of the officially supported AWS SDKs and AWS CLI, see Specifying the Signature Version in Request Authentication in the Amazon S3 Developer Guide.
     */
-  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.native
+  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
   /**
     * The server-side encryption algorithm used when storing this object in Amazon S3 (for example, AES256, aws:kms).
     */
-  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.native
+  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.undefined
   
   /**
     * By default, Amazon S3 uses the STANDARD Storage Class to store newly created objects. The STANDARD storage class provides high durability and high availability. Depending on performance needs, you can specify a different Storage Class. Amazon S3 on Outposts only uses the OUTPOSTS Storage Class. For more information, see Storage Classes in the Amazon S3 Service Developer Guide.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.undefined
   
   /**
     * The tag-set for the object destination object this value must be used in conjunction with the TaggingDirective. The tag-set must be encoded as URL Query parameters.
     */
-  var Tagging: js.UndefOr[TaggingHeader] = js.native
+  var Tagging: js.UndefOr[TaggingHeader] = js.undefined
   
   /**
     * Specifies whether the object tag-set are copied from the source object or replaced with tag-set provided in the request.
     */
-  var TaggingDirective: js.UndefOr[typings.awsSdk.s3Mod.TaggingDirective] = js.native
+  var TaggingDirective: js.UndefOr[typings.awsSdk.s3Mod.TaggingDirective] = js.undefined
   
   /**
     * If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.
     */
-  var WebsiteRedirectLocation: js.UndefOr[typings.awsSdk.s3Mod.WebsiteRedirectLocation] = js.native
+  var WebsiteRedirectLocation: js.UndefOr[typings.awsSdk.s3Mod.WebsiteRedirectLocation] = js.undefined
 }
 object CopyObjectRequest {
   

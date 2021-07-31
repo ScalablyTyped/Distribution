@@ -4,15 +4,16 @@ import typings.react.mod.ReactInstance
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findDOMNodeMod {
   
-  @JSImport("rc-util/lib/Dom/findDOMNode", JSImport.Default)
+  @JSImport("rc-util/lib/Dom/findDOMNode", JSImport.Namespace)
   @js.native
-  def default[T](node: ReactInstance): T = js.native
-  @JSImport("rc-util/lib/Dom/findDOMNode", JSImport.Default)
-  @js.native
-  def default[T](node: HTMLElement): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](node: ReactInstance): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def default[T](node: HTMLElement): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[T]
 }

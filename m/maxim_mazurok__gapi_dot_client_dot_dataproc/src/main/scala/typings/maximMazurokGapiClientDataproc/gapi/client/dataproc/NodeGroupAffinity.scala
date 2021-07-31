@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupAffinity extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait NodeGroupAffinity extends StObject {
     * URI, or node group name are valid. Examples: https://www.googleapis.com/compute/v1/projects/[project_id]/zones/us-central1-a/nodeGroups/node-group-1
     * projects/[project_id]/zones/us-central1-a/nodeGroups/node-group-1 node-group-1
     */
-  var nodeGroupUri: js.UndefOr[String] = js.native
+  var nodeGroupUri: js.UndefOr[String] = js.undefined
 }
 object NodeGroupAffinity {
   

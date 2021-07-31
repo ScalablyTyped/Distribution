@@ -10,12 +10,10 @@ import typings.awsSdkClientPinpointBrowser.typesEndpointSendConfigurationMod.Unm
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMessageRequestMod {
   
-  @js.native
   trait MessageRequest extends StObject {
     
     /**
@@ -23,29 +21,29 @@ object typesMessageRequestMod {
       */
     var Addresses: js.UndefOr[
         StringDictionary[AddressConfiguration] | (Iterable[js.Tuple2[String, AddressConfiguration]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A map of custom attributes to attributes to be attached to the message. This payload is added to the push notification's 'data.pinpoint' object or added to the email/sms delivery receipt event attributes.
       */
-    var Context: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Context: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * A map of key-value pairs, where each key is an endpoint ID and each value is an EndpointSendConfiguration object. Within an EndpointSendConfiguration object, you can tailor the message for an endpoint by specifying message overrides or substitutions.
       */
     var Endpoints: js.UndefOr[
         StringDictionary[EndpointSendConfiguration] | (Iterable[js.Tuple2[String, EndpointSendConfiguration]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Message configuration.
       */
-    var MessageConfiguration: js.UndefOr[DirectMessageConfiguration] = js.native
+    var MessageConfiguration: js.UndefOr[DirectMessageConfiguration] = js.undefined
     
     /**
       * A unique ID that you can use to trace a message. This ID is visible to recipients.
       */
-    var TraceId: js.UndefOr[String] = js.native
+    var TraceId: js.UndefOr[String] = js.undefined
   }
   object MessageRequest {
     
@@ -94,32 +92,33 @@ object typesMessageRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMessageRequest extends MessageRequest {
+  trait UnmarshalledMessageRequest
+    extends StObject
+       with MessageRequest {
     
     /**
       * A map of key-value pairs, where each key is an address and each value is an AddressConfiguration object. An address can be a push notification token, a phone number, or an email address.
       */
     @JSName("Addresses")
-    var Addresses_UnmarshalledMessageRequest: js.UndefOr[StringDictionary[UnmarshalledAddressConfiguration]] = js.native
+    var Addresses_UnmarshalledMessageRequest: js.UndefOr[StringDictionary[UnmarshalledAddressConfiguration]] = js.undefined
     
     /**
       * A map of custom attributes to attributes to be attached to the message. This payload is added to the push notification's 'data.pinpoint' object or added to the email/sms delivery receipt event attributes.
       */
     @JSName("Context")
-    var Context_UnmarshalledMessageRequest: js.UndefOr[StringDictionary[String]] = js.native
+    var Context_UnmarshalledMessageRequest: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * A map of key-value pairs, where each key is an endpoint ID and each value is an EndpointSendConfiguration object. Within an EndpointSendConfiguration object, you can tailor the message for an endpoint by specifying message overrides or substitutions.
       */
     @JSName("Endpoints")
-    var Endpoints_UnmarshalledMessageRequest: js.UndefOr[StringDictionary[UnmarshalledEndpointSendConfiguration]] = js.native
+    var Endpoints_UnmarshalledMessageRequest: js.UndefOr[StringDictionary[UnmarshalledEndpointSendConfiguration]] = js.undefined
     
     /**
       * Message configuration.
       */
     @JSName("MessageConfiguration")
-    var MessageConfiguration_UnmarshalledMessageRequest: js.UndefOr[UnmarshalledDirectMessageConfiguration] = js.native
+    var MessageConfiguration_UnmarshalledMessageRequest: js.UndefOr[UnmarshalledDirectMessageConfiguration] = js.undefined
   }
   object UnmarshalledMessageRequest {
     

@@ -3,12 +3,12 @@ package typings.chunkedDc.jasmine
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Spec
-  extends SuiteOrSpec
+  extends StObject
+     with SuiteOrSpec
      with Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ String, js.Any] {
   
   def addBeforesAndAftersToQueue(): Unit = js.native
@@ -63,7 +63,7 @@ trait Spec
   def waits(timeout: Double): Spec = js.native
   
   def waitsFor(latchFunction: SpecFunction): Spec = js.native
-  def waitsFor(latchFunction: SpecFunction, timeoutMessage: js.UndefOr[scala.Nothing], timeout: Double): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String, timeout: Double): Spec = js.native
+  def waitsFor(latchFunction: SpecFunction, timeoutMessage: Unit, timeout: Double): Spec = js.native
 }

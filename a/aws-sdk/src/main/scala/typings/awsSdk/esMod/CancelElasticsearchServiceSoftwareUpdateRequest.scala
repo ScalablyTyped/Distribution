@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelElasticsearchServiceSoftwareUpdateRequest extends StObject {
   
   /**
     * The name of the domain that you want to stop the latest service software update on.
     */
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
 }
 object CancelElasticsearchServiceSoftwareUpdateRequest {
   

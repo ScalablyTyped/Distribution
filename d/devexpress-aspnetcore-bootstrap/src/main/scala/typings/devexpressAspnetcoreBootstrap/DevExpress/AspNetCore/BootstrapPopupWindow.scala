@@ -2,43 +2,41 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapPopupWindow extends StObject {
   
-  def getFooterImageUrl(): String = js.native
+  def getFooterImageUrl(): String
   
-  def getFooterNavigateUrl(): String = js.native
+  def getFooterNavigateUrl(): String
   
-  def getFooterText(): String = js.native
+  def getFooterText(): String
   
-  def getHeaderImageUrl(): String = js.native
+  def getHeaderImageUrl(): String
   
-  def getHeaderNavigateUrl(): String = js.native
+  def getHeaderNavigateUrl(): String
   
-  def getHeaderText(): String = js.native
+  def getHeaderText(): String
   
-  val index: Double = js.native
+  val index: Double
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  val name: String = js.native
+  val name: String
   
-  val popupControl: BootstrapPopupControl | Null = js.native
+  val popupControl: BootstrapPopupControl | Null
   
-  def setFooterImageUrl(value: String): Unit = js.native
+  def setFooterImageUrl(value: String): Unit
   
-  def setFooterNavigateUrl(value: String): Unit = js.native
+  def setFooterNavigateUrl(value: String): Unit
   
-  def setFooterText(value: String): Unit = js.native
+  def setFooterText(value: String): Unit
   
-  def setHeaderImageUrl(value: String): Unit = js.native
+  def setHeaderImageUrl(value: String): Unit
   
-  def setHeaderNavigateUrl(value: String): Unit = js.native
+  def setHeaderNavigateUrl(value: String): Unit
   
-  def setHeaderText(value: String): Unit = js.native
+  def setHeaderText(value: String): Unit
 }
 object BootstrapPopupWindow {
   
@@ -60,7 +58,7 @@ object BootstrapPopupWindow {
     setHeaderNavigateUrl: String => Unit,
     setHeaderText: String => Unit
   ): BootstrapPopupWindow = {
-    val __obj = js.Dynamic.literal(getFooterImageUrl = js.Any.fromFunction0(getFooterImageUrl), getFooterNavigateUrl = js.Any.fromFunction0(getFooterNavigateUrl), getFooterText = js.Any.fromFunction0(getFooterText), getHeaderImageUrl = js.Any.fromFunction0(getHeaderImageUrl), getHeaderNavigateUrl = js.Any.fromFunction0(getHeaderNavigateUrl), getHeaderText = js.Any.fromFunction0(getHeaderText), index = index.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setFooterImageUrl = js.Any.fromFunction1(setFooterImageUrl), setFooterNavigateUrl = js.Any.fromFunction1(setFooterNavigateUrl), setFooterText = js.Any.fromFunction1(setFooterText), setHeaderImageUrl = js.Any.fromFunction1(setHeaderImageUrl), setHeaderNavigateUrl = js.Any.fromFunction1(setHeaderNavigateUrl), setHeaderText = js.Any.fromFunction1(setHeaderText))
+    val __obj = js.Dynamic.literal(getFooterImageUrl = js.Any.fromFunction0(getFooterImageUrl), getFooterNavigateUrl = js.Any.fromFunction0(getFooterNavigateUrl), getFooterText = js.Any.fromFunction0(getFooterText), getHeaderImageUrl = js.Any.fromFunction0(getHeaderImageUrl), getHeaderNavigateUrl = js.Any.fromFunction0(getHeaderNavigateUrl), getHeaderText = js.Any.fromFunction0(getHeaderText), index = index.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setFooterImageUrl = js.Any.fromFunction1(setFooterImageUrl), setFooterNavigateUrl = js.Any.fromFunction1(setFooterNavigateUrl), setFooterText = js.Any.fromFunction1(setFooterText), setHeaderImageUrl = js.Any.fromFunction1(setHeaderImageUrl), setHeaderNavigateUrl = js.Any.fromFunction1(setHeaderNavigateUrl), setHeaderText = js.Any.fromFunction1(setHeaderText), popupControl = null)
     __obj.asInstanceOf[BootstrapPopupWindow]
   }
   

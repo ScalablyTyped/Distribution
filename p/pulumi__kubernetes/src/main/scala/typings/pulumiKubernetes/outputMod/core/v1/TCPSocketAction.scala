@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TCPSocketAction describes an action based on opening a socket
   */
-@js.native
 trait TCPSocketAction extends StObject {
   
   /**
     * Optional: Host name to connect to, defaults to the pod IP.
     */
-  var host: String = js.native
+  var host: String
   
   /**
     * Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
     */
-  var port: Double | String = js.native
+  var port: Double | String
 }
 object TCPSocketAction {
   

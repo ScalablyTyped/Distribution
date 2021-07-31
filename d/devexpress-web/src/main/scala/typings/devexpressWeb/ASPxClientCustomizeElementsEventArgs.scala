@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeElements, ASPxClientReportDesigner.PreviewCustomizeElements and ASPxClientWebDocumentViewer.CustomizeElements events.
   */
-@js.native
-trait ASPxClientCustomizeElementsEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCustomizeElementsEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to the collection of UI elements.
     */
-  var Elements: js.Array[ASPxReportUIElement] = js.native
+  var Elements: js.Array[ASPxReportUIElement]
   
   /**
     * Returns UI elements with the specified ID. An array of ASPxReportUIElement objects.
     * @param templateId A string that specifies the element ID.
     */
-  def GetById(templateId: String): js.Array[ASPxReportUIElement] = js.native
+  def GetById(templateId: String): js.Array[ASPxReportUIElement]
 }
 object ASPxClientCustomizeElementsEventArgs {
   

@@ -13,10 +13,13 @@ import typings.node.childProcessMod.ChildProcess
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("jest-dev-server", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jest-dev-server", "ERROR_NO_COMMAND")
   @js.native
@@ -32,24 +35,28 @@ object mod {
   
   @JSImport("jest-dev-server", "JestDevServerError")
   @js.native
-  class JestDevServerError () extends Error
+  class JestDevServerError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @JSImport("jest-dev-server", "getServers")
-  @js.native
-  def getServers(): js.Array[ChildProcess] = js.native
+  @scala.inline
+  def getServers(): js.Array[ChildProcess] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServers")().asInstanceOf[js.Array[ChildProcess]]
   
-  @JSImport("jest-dev-server", "setup")
-  @js.native
-  def setup(options: js.Array[JestDevServerOptions]): js.Promise[Unit] = js.native
-  @JSImport("jest-dev-server", "setup")
-  @js.native
-  def setup(options: JestDevServerOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def setup(options: js.Array[JestDevServerOptions]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def setup(options: JestDevServerOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("jest-dev-server", "teardown")
-  @js.native
-  def teardown(): js.Promise[Unit] = js.native
+  @scala.inline
+  def teardown(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("teardown")().asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait JestDevServerOptions extends StObject {
     
     /**
@@ -61,7 +68,7 @@ object mod {
       * }
       * ```
       */
-    var command: String = js.native
+    var command: String
     
     /**
       * Log server output, useful if server is crashing at start.
@@ -73,7 +80,7 @@ object mod {
       * }
       * ```
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Host to wait for activity on before considering the server running. Must be used in conjunction with port.
@@ -87,7 +94,7 @@ object mod {
       * }
       * ```
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * How many milliseconds to wait for the spawned server to be available before giving up. Defaults to wait-port's default.
@@ -99,7 +106,7 @@ object mod {
       * }
       * ```
       */
-    var launchTimeout: js.UndefOr[Double] = js.native
+    var launchTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Port to wait for activity on before considering the server running. If not provided, the server is assumed to immediately be running.
@@ -112,7 +119,7 @@ object mod {
       * }
       * ```
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * To wait for an HTTP or TCP endpoint before considering the server running, include http or tcp as a protocol. Must be used in conjunction with port.
@@ -125,7 +132,7 @@ object mod {
       * }
       * ```
       */
-    var protocol: js.UndefOr[https | http | tcp | socket] = js.native
+    var protocol: js.UndefOr[https | http | tcp | socket] = js.undefined
     
     /**
       * It defines the action to take if port is already used:
@@ -143,7 +150,7 @@ object mod {
       *   usedPortAction: 'kill',
       * }
       */
-    var usedPortAction: js.UndefOr[ask | error | ignore | kill] = js.native
+    var usedPortAction: js.UndefOr[ask | error | ignore | kill] = js.undefined
     
     /**
       * jest-dev-server uses the wait-on npm package to wait for resources to become available before calling callback.
@@ -159,7 +166,7 @@ object mod {
       *   },
       * }
       */
-    var waitOnScheme: js.UndefOr[PartialWaitOnOptions] = js.native
+    var waitOnScheme: js.UndefOr[PartialWaitOnOptions] = js.undefined
   }
   object JestDevServerOptions {
     

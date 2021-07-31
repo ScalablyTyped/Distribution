@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
-@js.native
 trait PlusOauthAuthOptions extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait PlusOauthAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var appid: js.UndefOr[String] = js.native
+  var appid: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权认证服务平台申请的appkey
@@ -33,7 +31,7 @@ trait PlusOauthAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var appkey: js.UndefOr[String] = js.native
+  var appkey: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权认证服务平台申请的appsecret
@@ -42,7 +40,7 @@ trait PlusOauthAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var appsecret: js.UndefOr[String] = js.native
+  var appsecret: js.UndefOr[String] = js.undefined
   
   /**
     * 登录授权认证服务平台申请的redirect_url
@@ -51,7 +49,7 @@ trait PlusOauthAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var redirect_url: js.UndefOr[String] = js.native
+  var redirect_url: js.UndefOr[String] = js.undefined
   
   /**
     * 申请的权限作用范围
@@ -59,14 +57,14 @@ trait PlusOauthAuthOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * 客户端的当前状态，可以指定任意值，登录认证后原封不动的返回保存到AuthService对象的extra中
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object PlusOauthAuthOptions {
   

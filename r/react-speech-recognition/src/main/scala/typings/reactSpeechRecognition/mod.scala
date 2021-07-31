@@ -1,38 +1,37 @@
 package typings.reactSpeechRecognition
 
-import org.scalablytyped.runtime.Shortcut
 import typings.reactSpeechRecognition.anon.FinalTranscript
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("react-speech-recognition", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-speech-recognition", JSImport.Default)
   @js.native
   val default: SpeechRecognition = js.native
   
-  @JSImport("react-speech-recognition", "useSpeechRecognition")
-  @js.native
-  def useSpeechRecognition(): FinalTranscript = js.native
-  @JSImport("react-speech-recognition", "useSpeechRecognition")
-  @js.native
-  def useSpeechRecognition(options: SpeechRecognitionOptions): FinalTranscript = js.native
+  @scala.inline
+  def useSpeechRecognition(): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")().asInstanceOf[FinalTranscript]
+  @scala.inline
+  def useSpeechRecognition(options: SpeechRecognitionOptions): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")(options.asInstanceOf[js.Any]).asInstanceOf[FinalTranscript]
   
-  @js.native
   trait Command extends StObject {
     
-    def callback(args: js.Any*): js.Any = js.native
+    def callback(args: js.Any*): js.Any
     
-    var command: String | RegExp = js.native
+    var command: String | RegExp
     
-    var fuzzyMatchingThreshold: js.UndefOr[Double] = js.native
+    var fuzzyMatchingThreshold: js.UndefOr[Double] = js.undefined
     
-    var isFuzzyMatch: js.UndefOr[Boolean] = js.native
+    var isFuzzyMatch: js.UndefOr[Boolean] = js.undefined
     
-    var matchInterim: js.UndefOr[Boolean] = js.native
+    var matchInterim: js.UndefOr[Boolean] = js.undefined
   }
   object Command {
     
@@ -71,12 +70,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ListeningOptions extends StObject {
     
-    var continuous: js.UndefOr[Boolean] = js.native
+    var continuous: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
   }
   object ListeningOptions {
     
@@ -118,14 +116,13 @@ object mod extends Shortcut {
     def stopListening(): Unit = js.native
   }
   
-  @js.native
   trait SpeechRecognitionOptions extends StObject {
     
-    var clearTranscriptOnListen: js.UndefOr[Boolean] = js.native
+    var clearTranscriptOnListen: js.UndefOr[Boolean] = js.undefined
     
-    var commands: js.UndefOr[js.Array[Command]] = js.native
+    var commands: js.UndefOr[js.Array[Command]] = js.undefined
     
-    var transcribing: js.UndefOr[Boolean] = js.native
+    var transcribing: js.UndefOr[Boolean] = js.undefined
   }
   object SpeechRecognitionOptions {
     
@@ -160,9 +157,4 @@ object mod extends Shortcut {
       def setTranscribingUndefined: Self = StObject.set(x, "transcribing", js.undefined)
     }
   }
-  
-  type _To = SpeechRecognition
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: SpeechRecognition = default
 }

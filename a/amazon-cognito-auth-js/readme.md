@@ -11,8 +11,8 @@ Amazon Cognito Auth JavaScript SDK
 | Full name          | amazon-cognito-auth-js |
 | Keywords           | amazon, aws, cognito, auth |
 | # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 900981 |
+| # dependents       | 15 |
+| # downloads        | 780413 |
 | # stars            | 0 |
 
 ## Links

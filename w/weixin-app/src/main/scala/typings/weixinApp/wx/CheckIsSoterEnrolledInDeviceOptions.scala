@@ -3,18 +3,17 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.IsEnrolled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIsSoterEnrolledInDeviceOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var checkAuthMode: AuthModes = js.native
+  var checkAuthMode: AuthModes
   
   // 认证方式
   @JSName("success")
-  var success_CheckIsSoterEnrolledInDeviceOptions: js.UndefOr[js.Function1[/* res */ IsEnrolled, Unit]] = js.native
+  var success_CheckIsSoterEnrolledInDeviceOptions: js.UndefOr[js.Function1[/* res */ IsEnrolled, Unit]] = js.undefined
 }
 object CheckIsSoterEnrolledInDeviceOptions {
   

@@ -7,33 +7,34 @@ import typings.expressUnless.anon.Method
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-unless", JSImport.Namespace)
-  @js.native
-  def apply(): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-unless", JSImport.Namespace)
-  @js.native
-  def apply(options: js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Boolean]): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-unless", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): typings.express.mod.RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("express-unless", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var custom: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Boolean]] = js.native
+    var custom: js.UndefOr[
+        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]
+      ] = js.undefined
     
-    var ext: js.UndefOr[String | js.Array[String]] = js.native
+    var ext: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var method: js.UndefOr[String | js.Array[String]] = js.native
+    var method: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var path: js.UndefOr[pathFilter | js.Array[pathFilter]] = js.native
+    var path: js.UndefOr[pathFilter | js.Array[pathFilter]] = js.undefined
     
-    var useOriginalUrl: js.UndefOr[Boolean] = js.native
+    var useOriginalUrl: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -47,7 +48,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCustom(value: /* req */ Request_[ParamsDictionary, _, _, Query] => Boolean): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+      def setCustom(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Boolean): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

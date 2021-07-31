@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -69,13 +68,13 @@ trait Rating extends StObject {
     * Raised when the user commits a change to the userRating.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.tentativeRating.
     **/
-  def onchange(eventInfo: CustomEvent[_]): Unit = js.native
+  def onchange(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Raised when the user is choosing a new tentative Rating.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.tentativeRating.
     **/
-  def onpreviewchange(eventInfo: CustomEvent[_]): Unit = js.native
+  def onpreviewchange(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

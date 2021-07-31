@@ -3,26 +3,24 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashJUMP_TO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationJumpToAction extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var preserveFocus: js.UndefOr[Boolean] = js.native
+  var preserveFocus: js.UndefOr[Boolean] = js.undefined
   
-  var routeName: String = js.native
+  var routeName: String
   
-  var `type`: NavigationSlashJUMP_TO = js.native
+  var `type`: NavigationSlashJUMP_TO
 }
 object NavigationJumpToAction {
   
   @scala.inline
-  def apply(key: String, routeName: String, `type`: NavigationSlashJUMP_TO): NavigationJumpToAction = {
+  def apply(key: String, routeName: String): NavigationJumpToAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/JUMP_TO")
     __obj.asInstanceOf[NavigationJumpToAction]
   }
   

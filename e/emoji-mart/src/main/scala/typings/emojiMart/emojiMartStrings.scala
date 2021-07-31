@@ -4,7 +4,6 @@ import typings.emojiMart.sharedPropsMod.CategoryName
 import typings.emojiMart.sharedPropsMod.EmojiSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emojiMartStrings {
@@ -15,12 +14,16 @@ object emojiMartStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait activity extends CategoryName
+  sealed trait activity
+    extends StObject
+       with CategoryName
   @scala.inline
   def activity: activity = "activity".asInstanceOf[activity]
   
   @js.native
-  sealed trait apple extends EmojiSet
+  sealed trait apple
+    extends StObject
+       with EmojiSet
   @scala.inline
   def apple: apple = "apple".asInstanceOf[apple]
   
@@ -30,7 +33,9 @@ object emojiMartStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait custom extends CategoryName
+  sealed trait custom
+    extends StObject
+       with CategoryName
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   
@@ -40,27 +45,37 @@ object emojiMartStrings {
   def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait emojione extends EmojiSet
+  sealed trait emojione
+    extends StObject
+       with EmojiSet
   @scala.inline
   def emojione: emojione = "emojione".asInstanceOf[emojione]
   
   @js.native
-  sealed trait facebook extends EmojiSet
+  sealed trait facebook
+    extends StObject
+       with EmojiSet
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
-  sealed trait flags extends CategoryName
+  sealed trait flags
+    extends StObject
+       with CategoryName
   @scala.inline
   def flags: flags = "flags".asInstanceOf[flags]
   
   @js.native
-  sealed trait foods extends CategoryName
+  sealed trait foods
+    extends StObject
+       with CategoryName
   @scala.inline
   def foods: foods = "foods".asInstanceOf[foods]
   
   @js.native
-  sealed trait google extends EmojiSet
+  sealed trait google
+    extends StObject
+       with EmojiSet
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   
@@ -70,47 +85,65 @@ object emojiMartStrings {
   def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait messenger extends EmojiSet
+  sealed trait messenger
+    extends StObject
+       with EmojiSet
   @scala.inline
   def messenger: messenger = "messenger".asInstanceOf[messenger]
   
   @js.native
-  sealed trait nature extends CategoryName
+  sealed trait nature
+    extends StObject
+       with CategoryName
   @scala.inline
   def nature: nature = "nature".asInstanceOf[nature]
   
   @js.native
-  sealed trait objects extends CategoryName
+  sealed trait objects
+    extends StObject
+       with CategoryName
   @scala.inline
   def objects: objects = "objects".asInstanceOf[objects]
   
   @js.native
-  sealed trait people extends CategoryName
+  sealed trait people
+    extends StObject
+       with CategoryName
   @scala.inline
   def people: people = "people".asInstanceOf[people]
   
   @js.native
-  sealed trait places extends CategoryName
+  sealed trait places
+    extends StObject
+       with CategoryName
   @scala.inline
   def places: places = "places".asInstanceOf[places]
   
   @js.native
-  sealed trait recent extends CategoryName
+  sealed trait recent
+    extends StObject
+       with CategoryName
   @scala.inline
   def recent: recent = "recent".asInstanceOf[recent]
   
   @js.native
-  sealed trait search extends CategoryName
+  sealed trait search
+    extends StObject
+       with CategoryName
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait symbols extends CategoryName
+  sealed trait symbols
+    extends StObject
+       with CategoryName
   @scala.inline
   def symbols: symbols = "symbols".asInstanceOf[symbols]
   
   @js.native
-  sealed trait twitter extends EmojiSet
+  sealed trait twitter
+    extends StObject
+       with EmojiSet
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
 }

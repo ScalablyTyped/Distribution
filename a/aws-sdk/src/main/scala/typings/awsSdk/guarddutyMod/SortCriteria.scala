@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortCriteria extends StObject {
   
   /**
     * Represents the finding attribute (for example, accountId) to sort findings by.
     */
-  var AttributeName: js.UndefOr[String] = js.native
+  var AttributeName: js.UndefOr[String] = js.undefined
   
   /**
     * The order by which the sorted findings are to be displayed.
     */
-  var OrderBy: js.UndefOr[typings.awsSdk.guarddutyMod.OrderBy] = js.native
+  var OrderBy: js.UndefOr[typings.awsSdk.guarddutyMod.OrderBy] = js.undefined
 }
 object SortCriteria {
   

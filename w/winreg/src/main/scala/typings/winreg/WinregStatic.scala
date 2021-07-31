@@ -5,12 +5,12 @@ import typings.winreg.Winreg.Options
 import typings.winreg.Winreg.Registry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WinregStatic
-  extends /**
+  extends StObject
+     with /**
   * Creates a registry object, which provides access to a single registry key.
   * Note: This class is returned by a call to ```require('winreg')```.
   *

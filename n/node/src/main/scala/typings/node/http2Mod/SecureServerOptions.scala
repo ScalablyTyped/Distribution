@@ -2,15 +2,15 @@ package typings.node.http2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecureServerOptions extends SecureServerSessionOptions {
+trait SecureServerOptions
+  extends StObject
+     with SecureServerSessionOptions {
   
-  var allowHTTP1: js.UndefOr[Boolean] = js.native
+  var allowHTTP1: js.UndefOr[Boolean] = js.undefined
   
-  var origins: js.UndefOr[js.Array[String]] = js.native
+  var origins: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SecureServerOptions {
   

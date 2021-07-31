@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasync {
   
-  @js.native
   trait EfsLocationEc2Config extends StObject {
     
     /**
       * List of Amazon Resource Names (ARNs) of the EC2 Security Groups that are associated with the EFS Mount Target.
       */
-    var securityGroupArns: js.Array[String] = js.native
+    var securityGroupArns: js.Array[String]
     
     /**
       * Amazon Resource Name (ARN) of the EC2 Subnet that is associated with the EFS Mount Target.
       */
-    var subnetArn: String = js.native
+    var subnetArn: String
   }
   object EfsLocationEc2Config {
     
@@ -42,13 +40,12 @@ object datasync {
     }
   }
   
-  @js.native
   trait LocationSmbMountOptions extends StObject {
     
     /**
       * The specific SMB version that you want DataSync to use for mounting your SMB share. Valid values: `AUTOMATIC`, `SMB2`, and `SMB3`. Default: `AUTOMATIC`
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object LocationSmbMountOptions {
     
@@ -69,13 +66,12 @@ object datasync {
     }
   }
   
-  @js.native
   trait NfsLocationOnPremConfig extends StObject {
     
     /**
       * List of Amazon Resource Names (ARNs) of the DataSync Agents used to connect to the NFS server.
       */
-    var agentArns: js.Array[String] = js.native
+    var agentArns: js.Array[String]
   }
   object NfsLocationOnPremConfig {
     
@@ -96,13 +92,12 @@ object datasync {
     }
   }
   
-  @js.native
   trait S3LocationS3Config extends StObject {
     
     /**
       * Amazon Resource Names (ARN) of the IAM Role used to connect to the S3 Bucket.
       */
-    var bucketAccessRoleArn: String = js.native
+    var bucketAccessRoleArn: String
   }
   object S3LocationS3Config {
     
@@ -120,53 +115,52 @@ object datasync {
     }
   }
   
-  @js.native
   trait TaskOptions extends StObject {
     
     /**
       * A file metadata that shows the last time a file was accessed (that is when the file was read or written to). If set to `BEST_EFFORT`, the DataSync Task attempts to preserve the original (that is, the version before sync `PREPARING` phase) `atime` attribute on all source files. Valid values: `BEST_EFFORT`, `NONE`. Default: `BEST_EFFORT`.
       */
-    var atime: js.UndefOr[String] = js.native
+    var atime: js.UndefOr[String] = js.undefined
     
     /**
       * Limits the bandwidth utilized. For example, to set a maximum of 1 MB, set this value to `1048576`. Value values: `-1` or greater. Default: `-1` (unlimited).
       */
-    var bytesPerSecond: js.UndefOr[Double] = js.native
+    var bytesPerSecond: js.UndefOr[Double] = js.undefined
     
     /**
       * Group identifier of the file's owners. Valid values: `BOTH`, `INT_VALUE`, `NAME`, `NONE`. Default: `INT_VALUE` (preserve integer value of the ID).
       */
-    var gid: js.UndefOr[String] = js.native
+    var gid: js.UndefOr[String] = js.undefined
     
     /**
       * A file metadata that indicates the last time a file was modified (written to) before the sync `PREPARING` phase. Value values: `NONE`, `PRESERVE`. Default: `PRESERVE`.
       */
-    var mtime: js.UndefOr[String] = js.native
+    var mtime: js.UndefOr[String] = js.undefined
     
     /**
       * Determines which users or groups can access a file for a specific purpose such as reading, writing, or execution of the file. Valid values: `NONE`, `PRESERVE`. Default: `PRESERVE`.
       */
-    var posixPermissions: js.UndefOr[String] = js.native
+    var posixPermissions: js.UndefOr[String] = js.undefined
     
     /**
       * Whether files deleted in the source should be removed or preserved in the destination file system. Valid values: `PRESERVE`, `REMOVE`. Default: `PRESERVE`.
       */
-    var preserveDeletedFiles: js.UndefOr[String] = js.native
+    var preserveDeletedFiles: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the DataSync Task should preserve the metadata of block and character devices in the source files system, and recreate the files with that device name and metadata on the destination. The DataSync Task can’t sync the actual contents of such devices, because many of the devices are non-terminal and don’t return an end of file (EOF) marker. Valid values: `NONE`, `PRESERVE`. Default: `NONE` (ignore special devices).
       */
-    var preserveDevices: js.UndefOr[String] = js.native
+    var preserveDevices: js.UndefOr[String] = js.undefined
     
     /**
       * User identifier of the file's owners. Valid values: `BOTH`, `INT_VALUE`, `NAME`, `NONE`. Default: `INT_VALUE` (preserve integer value of the ID).
       */
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
     
     /**
       * Whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred. Valid values: `NONE`, `POINT_IN_TIME_CONSISTENT`, `ONLY_FILES_TRANSFERRED`. Default: `POINT_IN_TIME_CONSISTENT`.
       */
-    var verifyMode: js.UndefOr[String] = js.native
+    var verifyMode: js.UndefOr[String] = js.undefined
   }
   object TaskOptions {
     

@@ -20,7 +20,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,8 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Every time when a new package of data is loaded, the so far loaded data will be released, so the cash will not grow and grow and grow.
   */
-@js.native
-trait CachedContentResultSet extends ContentResultSet
+trait CachedContentResultSet
+  extends StObject
+     with ContentResultSet
 object CachedContentResultSet {
   
   @scala.inline

@@ -2,16 +2,14 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopDataAttributes extends StObject {
   
   /**
     * Sets whether the input image is free of personally identifiable information or adult content.
     */
-  var ContentClassifiers: js.UndefOr[typings.awsSdk.textractMod.ContentClassifiers] = js.native
+  var ContentClassifiers: js.UndefOr[typings.awsSdk.textractMod.ContentClassifiers] = js.undefined
 }
 object HumanLoopDataAttributes {
   

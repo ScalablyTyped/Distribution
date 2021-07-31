@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A field of an index.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta1IndexField extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaGoogleFirestoreAdminV1beta1IndexField extends StObject {
     * `__name__` may be used by itself or at the end of a path. `__type__` may
     * be used only at the end of path.
     */
-  var fieldPath: js.UndefOr[String] = js.native
+  var fieldPath: js.UndefOr[String] = js.undefined
   
   /**
     * The field&#39;s mode.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta1IndexField {
   

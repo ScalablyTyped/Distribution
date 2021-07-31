@@ -7,10 +7,13 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wfsMod {
+  
+  @JSImport("ol/format/WFS", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/format/WFS", JSImport.Default)
   @js.native
@@ -18,16 +21,14 @@ object wfsMod {
     def this(opt_options: Options) = this()
   }
   
-  @JSImport("ol/format/WFS", "writeFilter")
-  @js.native
-  def writeFilter(filter: typings.ol.filterFilterMod.default): Node = js.native
+  @scala.inline
+  def writeFilter(filter: typings.ol.filterFilterMod.default): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("writeFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @js.native
   trait FeatureCollectionMetadata extends StObject {
     
-    var bounds: Extent = js.native
+    var bounds: Extent
     
-    var numberOfFeatures: Double = js.native
+    var numberOfFeatures: Double
   }
   object FeatureCollectionMetadata {
     
@@ -48,16 +49,15 @@ object wfsMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var featureNS: js.UndefOr[StringDictionary[String] | String] = js.native
+    var featureNS: js.UndefOr[StringDictionary[String] | String] = js.undefined
     
-    var featureType: js.UndefOr[js.Array[String] | String] = js.native
+    var featureType: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var gmlFormat: js.UndefOr[typings.ol.gmlbaseMod.default] = js.native
+    var gmlFormat: js.UndefOr[typings.ol.gmlbaseMod.default] = js.undefined
     
-    var schemaLocation: js.UndefOr[String] = js.native
+    var schemaLocation: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -99,16 +99,15 @@ object wfsMod {
     }
   }
   
-  @js.native
   trait TransactionResponse extends StObject {
     
-    var insertIds: js.Array[String] = js.native
+    var insertIds: js.Array[String]
     
-    var totalDeleted: Double = js.native
+    var totalDeleted: Double
     
-    var totalInserted: Double = js.native
+    var totalInserted: Double
     
-    var totalUpdated: Double = js.native
+    var totalUpdated: Double
   }
   object TransactionResponse {
     
@@ -188,38 +187,37 @@ object wfsMod {
     ): Node = js.native
   }
   
-  @js.native
   trait WriteGetFeatureOptions extends StObject {
     
-    var bbox: js.UndefOr[Extent] = js.native
+    var bbox: js.UndefOr[Extent] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var featureNS: String = js.native
+    var featureNS: String
     
-    var featurePrefix: String = js.native
+    var featurePrefix: String
     
-    var featureTypes: js.Array[String] = js.native
+    var featureTypes: js.Array[String]
     
-    var filter: js.UndefOr[typings.ol.filterFilterMod.default] = js.native
+    var filter: js.UndefOr[typings.ol.filterFilterMod.default] = js.undefined
     
-    var geometryName: js.UndefOr[String] = js.native
+    var geometryName: js.UndefOr[String] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var maxFeatures: js.UndefOr[Double] = js.native
+    var maxFeatures: js.UndefOr[Double] = js.undefined
     
-    var outputFormat: js.UndefOr[String] = js.native
+    var outputFormat: js.UndefOr[String] = js.undefined
     
-    var propertyNames: js.UndefOr[js.Array[String]] = js.native
+    var propertyNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var resultType: js.UndefOr[String] = js.native
+    var resultType: js.UndefOr[String] = js.undefined
     
-    var srsName: js.UndefOr[String] = js.native
+    var srsName: js.UndefOr[String] = js.undefined
     
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
-    var viewParams: js.UndefOr[String] = js.native
+    var viewParams: js.UndefOr[String] = js.undefined
   }
   object WriteGetFeatureOptions {
     
@@ -321,26 +319,25 @@ object wfsMod {
     }
   }
   
-  @js.native
   trait WriteTransactionOptions extends StObject {
     
-    var featureNS: String = js.native
+    var featureNS: String
     
-    var featurePrefix: String = js.native
+    var featurePrefix: String
     
-    var featureType: String = js.native
+    var featureType: String
     
-    var gmlOptions: js.UndefOr[typings.ol.gmlbaseMod.Options] = js.native
+    var gmlOptions: js.UndefOr[typings.ol.gmlbaseMod.Options] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var hasZ: js.UndefOr[Boolean] = js.native
+    var hasZ: js.UndefOr[Boolean] = js.undefined
     
-    var nativeElements: js.Array[js.Object] = js.native
+    var nativeElements: js.Array[js.Object]
     
-    var srsName: js.UndefOr[String] = js.native
+    var srsName: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object WriteTransactionOptions {
     

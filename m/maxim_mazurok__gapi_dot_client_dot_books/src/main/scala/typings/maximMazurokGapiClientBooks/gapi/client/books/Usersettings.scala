@@ -4,19 +4,17 @@ import typings.maximMazurokGapiClientBooks.anon.FolderName
 import typings.maximMazurokGapiClientBooks.anon.MatchMyInterests
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Usersettings extends StObject {
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** User settings in sub-objects, each for different purposes. */
-  var notesExport: js.UndefOr[FolderName] = js.native
+  var notesExport: js.UndefOr[FolderName] = js.undefined
   
-  var notification: js.UndefOr[MatchMyInterests] = js.native
+  var notification: js.UndefOr[MatchMyInterests] = js.undefined
 }
 object Usersettings {
   

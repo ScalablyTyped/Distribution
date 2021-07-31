@@ -2,40 +2,38 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A workspace entity that may represent a tag, trigger, variable, or folder
   * in addition to its status in the workspace.
   */
-@js.native
 trait SchemaEntity extends StObject {
   
   /**
     * Represents how the entity has been changed in the workspace.
     */
-  var changeStatus: js.UndefOr[String] = js.native
+  var changeStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The Folder being represented by the entity.
     */
-  var folder: js.UndefOr[SchemaFolder] = js.native
+  var folder: js.UndefOr[SchemaFolder] = js.undefined
   
   /**
     * The tag being represented by the entity.
     */
-  var tag: js.UndefOr[SchemaTag] = js.native
+  var tag: js.UndefOr[SchemaTag] = js.undefined
   
   /**
     * The trigger being represented by the entity.
     */
-  var trigger: js.UndefOr[SchemaTrigger] = js.native
+  var trigger: js.UndefOr[SchemaTrigger] = js.undefined
   
   /**
     * The variable being represented by the entity.
     */
-  var variable: js.UndefOr[SchemaVariable] = js.native
+  var variable: js.UndefOr[SchemaVariable] = js.undefined
 }
 object SchemaEntity {
   

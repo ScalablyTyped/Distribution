@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlobsOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait BlobsOptions extends StObject {
     *
     * @default `Misc data`
     */
-  var defaultName: js.UndefOr[String] = js.native
+  var defaultName: js.UndefOr[String] = js.undefined
 }
 object BlobsOptions {
   

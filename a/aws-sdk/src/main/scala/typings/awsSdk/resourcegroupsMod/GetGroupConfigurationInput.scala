@@ -2,16 +2,14 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupConfigurationInput extends StObject {
   
   /**
     * The name or the ARN of the resource group.
     */
-  var Group: js.UndefOr[GroupString] = js.native
+  var Group: js.UndefOr[GroupString] = js.undefined
 }
 object GetGroupConfigurationInput {
   

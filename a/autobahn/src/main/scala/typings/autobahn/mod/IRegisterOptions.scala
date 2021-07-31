@@ -7,15 +7,13 @@ import typings.autobahn.autobahnStrings.roundrobin
 import typings.autobahn.autobahnStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRegisterOptions extends StObject {
   
-  var disclose_caller: js.UndefOr[Boolean] = js.native
+  var disclose_caller: js.UndefOr[Boolean] = js.undefined
   
-  var invoke: js.UndefOr[single | roundrobin | random | first | last] = js.native
+  var invoke: js.UndefOr[single | roundrobin | random | first | last] = js.undefined
 }
 object IRegisterOptions {
   

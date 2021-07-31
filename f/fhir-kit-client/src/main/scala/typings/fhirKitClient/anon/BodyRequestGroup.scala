@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.RequestGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyRequestGroup extends StObject {
   
-  var body: RequestGroup = js.native
+  var body: RequestGroup
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.RequestGroup = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.RequestGroup
 }
 object BodyRequestGroup {
   
   @scala.inline
-  def apply(body: RequestGroup, resourceType: typings.fhirKitClient.fhirKitClientStrings.RequestGroup): BodyRequestGroup = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: RequestGroup): BodyRequestGroup = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "RequestGroup")
     __obj.asInstanceOf[BodyRequestGroup]
   }
   

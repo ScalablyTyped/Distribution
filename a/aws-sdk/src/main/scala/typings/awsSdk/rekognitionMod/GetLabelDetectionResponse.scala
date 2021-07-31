@@ -2,41 +2,39 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLabelDetectionResponse extends StObject {
   
   /**
     * The current status of the label detection job.
     */
-  var JobStatus: js.UndefOr[VideoJobStatus] = js.native
+  var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
   
   /**
     * Version number of the label detection model that was used to detect labels.
     */
-  var LabelModelVersion: js.UndefOr[String] = js.native
+  var LabelModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * An array of labels detected in the video. Each element contains the detected label and the time, in milliseconds from the start of the video, that the label was detected. 
     */
-  var Labels: js.UndefOr[LabelDetections] = js.native
+  var Labels: js.UndefOr[LabelDetections] = js.undefined
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of labels.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * If the job fails, StatusMessage provides a descriptive error message.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.undefined
   
   /**
     * Information about a video that Amazon Rekognition Video analyzed. Videometadata is returned in every page of paginated responses from a Amazon Rekognition video operation.
     */
-  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.native
+  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.undefined
 }
 object GetLabelDetectionResponse {
   

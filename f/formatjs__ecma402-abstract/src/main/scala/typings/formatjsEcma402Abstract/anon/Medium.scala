@@ -2,19 +2,17 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Medium extends StObject {
   
-  var full: String = js.native
+  var full: String
   
-  var long: String = js.native
+  var long: String
   
-  var medium: String = js.native
+  var medium: String
   
-  var short: String = js.native
+  var short: String
 }
 object Medium {
   

@@ -3,21 +3,19 @@ package typings.reactRnd
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -44,24 +42,23 @@ object anon {
     }
   }
   
-  @js.native
   trait BottomLeft extends StObject {
     
-    var bottom: js.UndefOr[Boolean] = js.native
+    var bottom: js.UndefOr[Boolean] = js.undefined
     
-    var bottomLeft: js.UndefOr[Boolean] = js.native
+    var bottomLeft: js.UndefOr[Boolean] = js.undefined
     
-    var bottomRight: js.UndefOr[Boolean] = js.native
+    var bottomRight: js.UndefOr[Boolean] = js.undefined
     
-    var left: js.UndefOr[Boolean] = js.native
+    var left: js.UndefOr[Boolean] = js.undefined
     
-    var right: js.UndefOr[Boolean] = js.native
+    var right: js.UndefOr[Boolean] = js.undefined
     
-    var top: js.UndefOr[Boolean] = js.native
+    var top: js.UndefOr[Boolean] = js.undefined
     
-    var topLeft: js.UndefOr[Boolean] = js.native
+    var topLeft: js.UndefOr[Boolean] = js.undefined
     
-    var topRight: js.UndefOr[Boolean] = js.native
+    var topRight: js.UndefOr[Boolean] = js.undefined
   }
   object BottomLeft {
     
@@ -124,16 +121,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Current extends StObject {
     
-    var current: HTMLElement | Null = js.native
+    var current: HTMLElement | Null
   }
   object Current {
     
     @scala.inline
     def apply(): Current = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(current = null)
       __obj.asInstanceOf[Current]
     }
     
@@ -148,12 +144,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -174,12 +169,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HeightWidth extends StObject {
     
-    var height: Double | String = js.native
+    var height: Double | String
     
-    var width: Double | String = js.native
+    var width: Double | String
   }
   object HeightWidth {
     
@@ -200,12 +194,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -226,12 +219,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Top extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Top {
     
@@ -252,12 +244,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Width {
     
@@ -278,12 +269,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -305,16 +295,15 @@ object anon {
   }
   
   /* Inlined {  x :number,   y :number} & react-rnd.react-rnd.Size */
-  @js.native
   trait xnumberynumberSize extends StObject {
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var width: String | Double = js.native
+    var width: String | Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object xnumberynumberSize {
     

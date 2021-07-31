@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Savedadstyles")
@@ -30,7 +29,7 @@ class ResourceSavedadstyles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(callback: BodyResponseCallback[SchemaSavedAdStyle]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedAdStyle] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(params: ParamsResourceSavedadstylesGet): GaxiosPromise[SchemaSavedAdStyle] = js.native
   def get(params: ParamsResourceSavedadstylesGet, callback: BodyResponseCallback[SchemaSavedAdStyle]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourceSavedadstyles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedAdStyles]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedAdStyles] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(params: ParamsResourceSavedadstylesList): GaxiosPromise[SchemaSavedAdStyles] = js.native
   def list(params: ParamsResourceSavedadstylesList, callback: BodyResponseCallback[SchemaSavedAdStyles]): Unit = js.native
   def list(

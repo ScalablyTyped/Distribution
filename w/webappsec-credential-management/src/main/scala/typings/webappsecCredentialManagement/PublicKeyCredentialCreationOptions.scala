@@ -4,32 +4,30 @@ import typings.std.AttestationConveyancePreference
 import typings.std.BufferSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#dictdef-makepublickeycredentialoptions}
   */
-@js.native
 trait PublicKeyCredentialCreationOptions extends StObject {
   
-  var attestation: js.UndefOr[AttestationConveyancePreference] = js.native
+  var attestation: js.UndefOr[AttestationConveyancePreference] = js.undefined
   
-  var authenticatorSelection: js.UndefOr[AuthenticatorSelectionCriteria] = js.native
+  var authenticatorSelection: js.UndefOr[AuthenticatorSelectionCriteria] = js.undefined
   
-  var challenge: BufferSource = js.native
+  var challenge: BufferSource
   
-  var excludeCredentials: js.UndefOr[js.Array[PublicKeyCredentialDescriptor]] = js.native
+  var excludeCredentials: js.UndefOr[js.Array[PublicKeyCredentialDescriptor]] = js.undefined
   
-  var extensions: js.UndefOr[AuthenticationExtensionsClientInputs] = js.native
+  var extensions: js.UndefOr[AuthenticationExtensionsClientInputs] = js.undefined
   
-  var pubKeyCredParams: js.Array[PublicKeyCredentialParameters] = js.native
+  var pubKeyCredParams: js.Array[PublicKeyCredentialParameters]
   
-  var rp: PublicKeyCredentialRpEntity = js.native
+  var rp: PublicKeyCredentialRpEntity
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var user: PublicKeyCredentialUserEntity = js.native
+  var user: PublicKeyCredentialUserEntity
 }
 object PublicKeyCredentialCreationOptions {
   

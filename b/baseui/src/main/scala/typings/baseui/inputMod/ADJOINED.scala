@@ -6,19 +6,17 @@ import typings.baseui.baseuiStrings.none
 import typings.baseui.baseuiStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ADJOINED extends StObject {
   
-  var both: typings.baseui.baseuiStrings.both = js.native
+  var both: typings.baseui.baseuiStrings.both
   
-  var left: typings.baseui.baseuiStrings.left = js.native
+  var left: typings.baseui.baseuiStrings.left
   
-  var none: typings.baseui.baseuiStrings.none = js.native
+  var none: typings.baseui.baseuiStrings.none
   
-  var right: typings.baseui.baseuiStrings.right = js.native
+  var right: typings.baseui.baseuiStrings.right
 }
 object ADJOINED {
   

@@ -2,17 +2,15 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Opts extends StObject {
   
-  var charset: String = js.native
+  var charset: String
   
-  var mode: String = js.native
+  var mode: String
   
-  var nobuffer: Boolean = js.native
+  var nobuffer: Boolean
 }
 object Opts {
   

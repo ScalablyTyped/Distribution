@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,17 +50,13 @@ trait Cells extends StObject {
   val Shading: typings.activexWord.Word.Shading = js.native
   
   def Split(): Unit = js.native
-  def Split(
-    NumRows: js.UndefOr[scala.Nothing],
-    NumColumns: js.UndefOr[scala.Nothing],
-    MergeBeforeSplit: js.Any
-  ): Unit = js.native
-  def Split(NumRows: js.UndefOr[scala.Nothing], NumColumns: js.Any): Unit = js.native
-  def Split(NumRows: js.UndefOr[scala.Nothing], NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
   def Split(NumRows: js.Any): Unit = js.native
-  def Split(NumRows: js.Any, NumColumns: js.UndefOr[scala.Nothing], MergeBeforeSplit: js.Any): Unit = js.native
   def Split(NumRows: js.Any, NumColumns: js.Any): Unit = js.native
   def Split(NumRows: js.Any, NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
+  def Split(NumRows: js.Any, NumColumns: Unit, MergeBeforeSplit: js.Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: js.Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: js.Any, MergeBeforeSplit: js.Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: Unit, MergeBeforeSplit: js.Any): Unit = js.native
   
   var VerticalAlignment: WdCellVerticalAlignment = js.native
   

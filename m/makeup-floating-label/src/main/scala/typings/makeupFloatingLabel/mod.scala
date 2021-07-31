@@ -2,22 +2,25 @@ package typings.makeupFloatingLabel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("makeup-floating-label", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FloatingLabel {
+  class ^ protected ()
+    extends StObject
+       with FloatingLabel {
     def this(el: js.Any) = this()
     def this(el: js.Any, userOptions: js.Any) = this()
+    
+    /* CompleteClass */
+    override def refresh(): Unit = js.native
   }
   
-  @js.native
   trait FloatingLabel extends StObject {
     
-    def refresh(): Unit = js.native
+    def refresh(): Unit
   }
   object FloatingLabel {
     

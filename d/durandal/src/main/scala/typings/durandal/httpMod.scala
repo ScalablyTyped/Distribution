@@ -2,7 +2,6 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,77 +21,51 @@ object httpMod {
   @scala.inline
   def callbackParam_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("callbackParam")(x.asInstanceOf[js.Any])
   
-  @JSImport("plugins/http", "get")
-  @js.native
-  def get(url: String): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "get")
-  @js.native
-  def get(url: String, query: js.UndefOr[scala.Nothing], headers: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "get")
-  @js.native
-  def get(url: String, query: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "get")
-  @js.native
-  def get(url: String, query: js.Object, headers: js.Object): DurandalPromise[_] = js.native
+  @scala.inline
+  def get(url: String): DurandalPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def get(url: String, query: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def get(url: String, query: js.Object, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def get(url: String, query: Unit, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
   
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(
-    url: String,
-    query: js.UndefOr[scala.Nothing],
-    callbackParam: js.UndefOr[scala.Nothing],
-    headers: js.Object
-  ): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String, query: js.UndefOr[scala.Nothing], callbackParam: String): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String, query: js.UndefOr[scala.Nothing], callbackParam: String, headers: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String, query: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String, query: js.Object, callbackParam: js.UndefOr[scala.Nothing], headers: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String, query: js.Object, callbackParam: String): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "jsonp")
-  @js.native
-  def jsonp(url: String, query: js.Object, callbackParam: String, headers: js.Object): DurandalPromise[_] = js.native
+  @scala.inline
+  def jsonp(url: String): DurandalPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: js.Object, callbackParam: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callbackParam.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: js.Object, callbackParam: String, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callbackParam.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: js.Object, callbackParam: Unit, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callbackParam.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: Unit, callbackParam: String): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callbackParam.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: Unit, callbackParam: String, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callbackParam.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def jsonp(url: String, query: Unit, callbackParam: Unit, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callbackParam.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
   
-  @JSImport("plugins/http", "post")
-  @js.native
-  def post(url: String, data: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "post")
-  @js.native
-  def post(url: String, data: js.Object, headers: js.Object): DurandalPromise[_] = js.native
+  @scala.inline
+  def post(url: String, data: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def post(url: String, data: js.Object, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
   
-  @JSImport("plugins/http", "put")
-  @js.native
-  def put(url: String, data: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "put")
-  @js.native
-  def put(url: String, data: js.Object, headers: js.Object): DurandalPromise[_] = js.native
+  @scala.inline
+  def put(url: String, data: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def put(url: String, data: js.Object, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
   
-  @JSImport("plugins/http", "remove")
-  @js.native
-  def remove(url: String): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "remove")
-  @js.native
-  def remove(url: String, query: js.UndefOr[scala.Nothing], headers: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "remove")
-  @js.native
-  def remove(url: String, query: js.Object): DurandalPromise[_] = js.native
-  @JSImport("plugins/http", "remove")
-  @js.native
-  def remove(url: String, query: js.Object, headers: js.Object): DurandalPromise[_] = js.native
+  @scala.inline
+  def remove(url: String): DurandalPromise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(url.asInstanceOf[js.Any]).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def remove(url: String, query: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def remove(url: String, query: js.Object, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
+  @scala.inline
+  def remove(url: String, query: Unit, headers: js.Object): DurandalPromise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(url.asInstanceOf[js.Any], query.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[DurandalPromise[js.Any]]
   
-  @JSImport("plugins/http", "toJSON")
-  @js.native
-  def toJSON(data: js.Object): String = js.native
+  @scala.inline
+  def toJSON(data: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDeveloperMetadataRequest extends StObject {
   
   /** The data filter describing the criteria used to select which developer metadata entry to delete. */
-  var dataFilter: js.UndefOr[DataFilter] = js.native
+  var dataFilter: js.UndefOr[DataFilter] = js.undefined
 }
 object DeleteDeveloperMetadataRequest {
   

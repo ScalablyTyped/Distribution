@@ -6,7 +6,6 @@ import typings.antd.buttonButtonMod.LegacyButtonType
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionButtonMod extends Shortcut {
@@ -15,20 +14,19 @@ object actionButtonMod extends Shortcut {
   @js.native
   val default: FC[ActionButtonProps] = js.native
   
-  @js.native
   trait ActionButtonProps extends StObject {
     
-    var actionFn: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.native
+    var actionFn: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any | js.Thenable[js.Any]]] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var buttonProps: js.UndefOr[ButtonProps] = js.native
+    var buttonProps: js.UndefOr[ButtonProps] = js.undefined
     
-    var closeModal: js.Function = js.native
+    var closeModal: js.Function
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var `type`: js.UndefOr[LegacyButtonType] = js.native
+    var `type`: js.UndefOr[LegacyButtonType] = js.undefined
   }
   object ActionButtonProps {
     
@@ -42,7 +40,7 @@ object actionButtonMod extends Shortcut {
     implicit class ActionButtonPropsMutableBuilder[Self <: ActionButtonProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActionFn(value: /* repeated */ js.Any => _ | js.Thenable[_]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
+      def setActionFn(value: /* repeated */ js.Any => js.Any | js.Thenable[js.Any]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
       
       @scala.inline
       def setActionFnUndefined: Self = StObject.set(x, "actionFn", js.undefined)

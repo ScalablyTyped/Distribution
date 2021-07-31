@@ -2,27 +2,27 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DivContainerProperties extends ComponentProperties {
+trait DivContainerProperties
+  extends StObject
+     with ComponentProperties {
   
   /**
     * Indicates whether the element is clickable
     */
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Matches the overflow-y CSS property and its available values.
     */
-  var overflowY: js.UndefOr[String] = js.native
+  var overflowY: js.UndefOr[String] = js.undefined
   
   /**
     * Setting the scroll based on the y offset
     * This is used when its child component is webview
     */
-  var yOffsetChange: js.UndefOr[Double] = js.native
+  var yOffsetChange: js.UndefOr[Double] = js.undefined
 }
 object DivContainerProperties {
   

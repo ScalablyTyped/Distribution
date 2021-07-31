@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerImage extends StObject {
   
   /** Required. The path to the container image repository. For example: `gcr.io/{project_id}/{image_name}` */
-  var repository: js.UndefOr[String] = js.native
+  var repository: js.UndefOr[String] = js.undefined
   
   /** The tag of the container image. If not specified, this defaults to the latest tag. */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object ContainerImage {
   

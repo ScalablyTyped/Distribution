@@ -2,28 +2,26 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateTopicOptions> */
-@js.native
 trait CreateTopicOptions extends StObject {
   
-  var DefaultMessageTimeToLive: js.UndefOr[String] = js.native
+  var DefaultMessageTimeToLive: js.UndefOr[String] = js.undefined
   
-  var DuplicateDetectionHistoryTimeWindow: js.UndefOr[String] = js.native
+  var DuplicateDetectionHistoryTimeWindow: js.UndefOr[String] = js.undefined
   
-  var EnableBatchedOperations: js.UndefOr[Boolean] = js.native
+  var EnableBatchedOperations: js.UndefOr[Boolean] = js.undefined
   
-  var EnablePartitioning: js.UndefOr[Boolean] = js.native
+  var EnablePartitioning: js.UndefOr[Boolean] = js.undefined
   
-  var MaxSizeInMegabytes: js.UndefOr[Double] = js.native
+  var MaxSizeInMegabytes: js.UndefOr[Double] = js.undefined
   
-  var RequiresDuplicateDetection: js.UndefOr[Boolean] = js.native
+  var RequiresDuplicateDetection: js.UndefOr[Boolean] = js.undefined
   
-  var SizeInBytes: js.UndefOr[Boolean] = js.native
+  var SizeInBytes: js.UndefOr[Boolean] = js.undefined
   
-  var SupportOrdering: js.UndefOr[Boolean] = js.native
+  var SupportOrdering: js.UndefOr[Boolean] = js.undefined
 }
 object CreateTopicOptions {
   

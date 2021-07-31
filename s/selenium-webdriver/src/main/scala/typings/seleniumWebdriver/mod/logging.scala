@@ -3,10 +3,13 @@ package typings.seleniumWebdriver.mod
 import typings.seleniumWebdriver.loggingMod.IType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logging {
+  
+  @JSImport("selenium-webdriver", "logging")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver", "logging.Entry")
   @js.native
@@ -27,36 +30,36 @@ object logging {
     def this(level: String, message: String, opt_timestamp: Double) = this()
     def this(level: Double, message: String, opt_timestamp: Double) = this()
     def this(level: typings.seleniumWebdriver.loggingMod.Level, message: String, opt_timestamp: Double) = this()
-    def this(level: String, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
-    def this(level: String, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: IType) = this()
-    def this(level: Double, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: String) = this()
-    def this(level: Double, message: String, opt_timestamp: js.UndefOr[scala.Nothing], opt_type: IType) = this()
+    def this(level: String, message: String, opt_timestamp: Unit, opt_type: String) = this()
+    def this(level: String, message: String, opt_timestamp: Unit, opt_type: IType) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: IType) = this()
+    def this(level: Double, message: String, opt_timestamp: Unit, opt_type: String) = this()
+    def this(level: Double, message: String, opt_timestamp: Unit, opt_type: IType) = this()
     def this(
       level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,
-      opt_timestamp: js.UndefOr[scala.Nothing],
+      opt_timestamp: Double,
       opt_type: String
     ) = this()
     def this(
       level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,
-      opt_timestamp: js.UndefOr[scala.Nothing],
+      opt_timestamp: Double,
       opt_type: IType
     ) = this()
     def this(
       level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,
-      opt_timestamp: Double,
+      opt_timestamp: Unit,
       opt_type: String
     ) = this()
     def this(
       level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,
-      opt_timestamp: Double,
+      opt_timestamp: Unit,
       opt_type: IType
     ) = this()
   }
@@ -196,35 +199,26 @@ object logging {
   @js.native
   val Type: IType = js.native
   
-  @JSImport("selenium-webdriver", "logging.addConsoleHandler")
-  @js.native
-  def addConsoleHandler(): Unit = js.native
-  @JSImport("selenium-webdriver", "logging.addConsoleHandler")
-  @js.native
-  def addConsoleHandler(opt_logger: typings.seleniumWebdriver.loggingMod.Logger): Unit = js.native
+  @scala.inline
+  def addConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def addConsoleHandler(opt_logger: typings.seleniumWebdriver.loggingMod.Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("selenium-webdriver", "logging.getLevel")
-  @js.native
-  def getLevel(nameOrValue: String): typings.seleniumWebdriver.loggingMod.Level = js.native
-  @JSImport("selenium-webdriver", "logging.getLevel")
-  @js.native
-  def getLevel(nameOrValue: Double): typings.seleniumWebdriver.loggingMod.Level = js.native
+  @scala.inline
+  def getLevel(nameOrValue: String): typings.seleniumWebdriver.loggingMod.Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.loggingMod.Level]
+  @scala.inline
+  def getLevel(nameOrValue: Double): typings.seleniumWebdriver.loggingMod.Level = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")(nameOrValue.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.loggingMod.Level]
   
-  @JSImport("selenium-webdriver", "logging.getLogger")
-  @js.native
-  def getLogger(): typings.seleniumWebdriver.loggingMod.Logger = js.native
-  @JSImport("selenium-webdriver", "logging.getLogger")
-  @js.native
-  def getLogger(name: String): typings.seleniumWebdriver.loggingMod.Logger = js.native
+  @scala.inline
+  def getLogger(): typings.seleniumWebdriver.loggingMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[typings.seleniumWebdriver.loggingMod.Logger]
+  @scala.inline
+  def getLogger(name: String): typings.seleniumWebdriver.loggingMod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(name.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.loggingMod.Logger]
   
-  @JSImport("selenium-webdriver", "logging.installConsoleHandler")
-  @js.native
-  def installConsoleHandler(): Unit = js.native
+  @scala.inline
+  def installConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installConsoleHandler")().asInstanceOf[Unit]
   
-  @JSImport("selenium-webdriver", "logging.removeConsoleHandler")
-  @js.native
-  def removeConsoleHandler(): Unit = js.native
-  @JSImport("selenium-webdriver", "logging.removeConsoleHandler")
-  @js.native
-  def removeConsoleHandler(opt_logger: typings.seleniumWebdriver.loggingMod.Logger): Unit = js.native
+  @scala.inline
+  def removeConsoleHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def removeConsoleHandler(opt_logger: typings.seleniumWebdriver.loggingMod.Logger): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeConsoleHandler")(opt_logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

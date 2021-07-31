@@ -3,37 +3,35 @@ package typings.playable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactionIndicatorTypesMod {
   
-  @js.native
   trait IInteractionIndicator extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def hideIcons(): Unit = js.native
+    def hideIcons(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def showDecreaseVolume(): Unit = js.native
+    def showDecreaseVolume(): Unit
     
-    def showForward(): Unit = js.native
+    def showForward(): Unit
     
-    def showIncreaseVolume(): Unit = js.native
+    def showIncreaseVolume(): Unit
     
-    def showMute(): Unit = js.native
+    def showMute(): Unit
     
-    def showPause(): Unit = js.native
+    def showPause(): Unit
     
-    def showPlay(): Unit = js.native
+    def showPlay(): Unit
     
-    def showRewind(): Unit = js.native
+    def showRewind(): Unit
   }
   object IInteractionIndicator {
     
@@ -97,22 +95,21 @@ object interactionIndicatorTypesMod {
     }
   }
   
-  @js.native
   trait IInteractionIndicatorViewStyles extends StObject {
     
-    var animatedIcon: String = js.native
+    var animatedIcon: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var iconContainer: String = js.native
+    var iconContainer: String
     
-    var pauseIcon: String = js.native
+    var pauseIcon: String
     
-    var playIcon: String = js.native
+    var playIcon: String
     
-    var seconds: String = js.native
+    var seconds: String
   }
   object IInteractionIndicatorViewStyles {
     

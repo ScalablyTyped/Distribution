@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTagsForResourceMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resouce to be updated. Must be the ARN of an Elastic Beanstalk resource.
     */
-  var ResourceArn: typings.awsSdk.elasticbeanstalkMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.elasticbeanstalkMod.ResourceArn
   
   /**
     * A list of tags to add or update. If a key of an existing tag is added, the tag's value is updated. Specify at least one of these parameters: TagsToAdd, TagsToRemove.
     */
-  var TagsToAdd: js.UndefOr[TagList] = js.native
+  var TagsToAdd: js.UndefOr[TagList] = js.undefined
   
   /**
     * A list of tag keys to remove. If a tag key doesn't exist, it is silently ignored. Specify at least one of these parameters: TagsToAdd, TagsToRemove.
     */
-  var TagsToRemove: js.UndefOr[TagKeyList] = js.native
+  var TagsToRemove: js.UndefOr[TagKeyList] = js.undefined
 }
 object UpdateTagsForResourceMessage {
   

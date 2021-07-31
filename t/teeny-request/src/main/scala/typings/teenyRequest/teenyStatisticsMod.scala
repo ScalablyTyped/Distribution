@@ -3,7 +3,6 @@ package typings.teenyRequest
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teenyStatisticsMod {
@@ -107,11 +106,19 @@ object teenyStatisticsMod {
   
   @JSImport("teeny-request/build/src/TeenyStatistics", "TeenyStatisticsWarning")
   @js.native
-  class TeenyStatisticsWarning protected () extends Error {
+  class TeenyStatisticsWarning protected ()
+    extends StObject
+       with Error {
     /**
       * @param {string} message
       */
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var threshold: Double = js.native
     
@@ -128,10 +135,9 @@ object teenyStatisticsMod {
   }
   
   /* Inlined std.Required<teeny-request.teeny-request/build/src/TeenyStatistics.TeenyStatisticsOptions> */
-  @js.native
   trait TeenyStatisticsConfig extends StObject {
     
-    var concurrentRequests: Double = js.native
+    var concurrentRequests: Double
   }
   object TeenyStatisticsConfig {
     
@@ -149,10 +155,9 @@ object teenyStatisticsMod {
     }
   }
   
-  @js.native
   trait TeenyStatisticsCounters extends StObject {
     
-    var concurrentRequests: Double = js.native
+    var concurrentRequests: Double
   }
   object TeenyStatisticsCounters {
     
@@ -170,7 +175,6 @@ object teenyStatisticsMod {
     }
   }
   
-  @js.native
   trait TeenyStatisticsOptions extends StObject {
     
     /**
@@ -180,7 +184,7 @@ object teenyStatisticsMod {
       * Corresponds to the TEENY_REQUEST_WARN_CONCURRENT_REQUESTS environment
       * variable.
       */
-    var concurrentRequests: js.UndefOr[Double] = js.native
+    var concurrentRequests: js.UndefOr[Double] = js.undefined
   }
   object TeenyStatisticsOptions {
     

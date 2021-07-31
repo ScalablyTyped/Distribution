@@ -2,23 +2,21 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRegionSetPolicyRequest extends StObject {
   
   /**
     * Flatten Policy to create a backwacd compatible wire-format. Deprecated.
     * Use &#39;policy&#39; to specify bindings.
     */
-  var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.native
+  var bindings: js.UndefOr[js.Array[SchemaBinding]] = js.undefined
   
   /**
     * Flatten Policy to create a backward compatible wire-format. Deprecated.
     * Use &#39;policy&#39; to specify the etag.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * REQUIRED: The complete policy to be applied to the &#39;resource&#39;.
@@ -26,7 +24,7 @@ trait SchemaRegionSetPolicyRequest extends StObject {
     * in general a valid policy but certain services (like Projects) might
     * reject them.
     */
-  var policy: js.UndefOr[SchemaPolicy] = js.native
+  var policy: js.UndefOr[SchemaPolicy] = js.undefined
 }
 object SchemaRegionSetPolicyRequest {
   

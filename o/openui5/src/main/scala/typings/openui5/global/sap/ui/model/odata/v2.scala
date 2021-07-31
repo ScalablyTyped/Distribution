@@ -5,7 +5,6 @@ import typings.openui5.sap.ui.model.Model
 import typings.openui5.sap.ui.model.Sorter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2 {
@@ -13,13 +12,15 @@ object v2 {
   @JSGlobal("sap.ui.model.odata.v2.ODataAnnotations")
   @js.native
   class ODataAnnotations ()
-    extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations
+    extends StObject
+       with typings.openui5.sap.ui.model.odata.v2.ODataAnnotations
   object ODataAnnotations {
     
     @JSGlobal("sap.ui.model.odata.v2.ODataAnnotations.constructor")
     @js.native
     class constructor protected ()
-      extends typings.openui5.sap.ui.model.odata.v2.ODataAnnotations.constructor {
+      extends StObject
+         with typings.openui5.sap.ui.model.odata.v2.ODataAnnotations.constructor {
       /**
         * Creates a new instance of the ODataAnnotations annotation loader.
         * @param oMetadata Metadata object with the metadata information needed to parse the annotations
@@ -32,7 +33,8 @@ object v2 {
   @JSGlobal("sap.ui.model.odata.v2.ODataContextBinding")
   @js.native
   abstract class ODataContextBinding protected ()
-    extends typings.openui5.sap.ui.model.odata.v2.ODataContextBinding {
+    extends StObject
+       with typings.openui5.sap.ui.model.odata.v2.ODataContextBinding {
     /**
       * Constructor for odata.ODataContextBinding
       * @param oModel undefined
@@ -47,47 +49,48 @@ object v2 {
   @JSGlobal("sap.ui.model.odata.v2.ODataListBinding")
   @js.native
   class ODataListBinding protected ()
-    extends typings.openui5.sap.ui.model.odata.v2.ODataListBinding {
+    extends StObject
+       with typings.openui5.sap.ui.model.odata.v2.ODataListBinding {
     def this(oModel: Model, sPath: String, oContext: Context) = this()
-    def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[_]) = this()
+    def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[js.Any]) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aSorters: js.UndefOr[scala.Nothing],
-      aFilters: js.Array[_]
+      aSorters: js.Array[js.Any],
+      aFilters: js.Array[js.Any]
     ) = this()
-    def this(oModel: Model, sPath: String, oContext: Context, aSorters: js.Array[_], aFilters: js.Array[_]) = this()
+    def this(oModel: Model, sPath: String, oContext: Context, aSorters: Unit, aFilters: js.Array[js.Any]) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aSorters: js.UndefOr[scala.Nothing],
-      aFilters: js.UndefOr[scala.Nothing],
+      aSorters: js.Array[js.Any],
+      aFilters: js.Array[js.Any],
       mParameters: js.Any
     ) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aSorters: js.UndefOr[scala.Nothing],
-      aFilters: js.Array[_],
+      aSorters: js.Array[js.Any],
+      aFilters: Unit,
       mParameters: js.Any
     ) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aSorters: js.Array[_],
-      aFilters: js.UndefOr[scala.Nothing],
+      aSorters: Unit,
+      aFilters: js.Array[js.Any],
       mParameters: js.Any
     ) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aSorters: js.Array[_],
-      aFilters: js.Array[_],
+      aSorters: Unit,
+      aFilters: Unit,
       mParameters: js.Any
     ) = this()
   }
@@ -95,7 +98,8 @@ object v2 {
   @JSGlobal("sap.ui.model.odata.v2.ODataModel")
   @js.native
   class ODataModel protected ()
-    extends typings.openui5.sap.ui.model.odata.v2.ODataModel {
+    extends StObject
+       with typings.openui5.sap.ui.model.odata.v2.ODataModel {
     /**
       * Constructor for a new ODataModel.
       * @param sServiceUrl base uri of the service to request data from; additional URL parameters appended
@@ -110,7 +114,8 @@ object v2 {
   @JSGlobal("sap.ui.model.odata.v2.ODataTreeBinding")
   @js.native
   class ODataTreeBinding protected ()
-    extends typings.openui5.sap.ui.model.odata.v2.ODataTreeBinding {
+    extends StObject
+       with typings.openui5.sap.ui.model.odata.v2.ODataTreeBinding {
     def this(oModel: Model, sPath: String, oContext: Context) = this()
     def this(
       oModel: Model,
@@ -122,29 +127,15 @@ object v2 {
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aApplicationFilters: js.UndefOr[scala.Nothing],
+      aApplicationFilters: js.Array[typings.openui5.sap.ui.model.Filter],
       mParameters: js.Any
     ) = this()
+    def this(oModel: Model, sPath: String, oContext: Context, aApplicationFilters: Unit, mParameters: js.Any) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
       aApplicationFilters: js.Array[typings.openui5.sap.ui.model.Filter],
-      mParameters: js.Any
-    ) = this()
-    def this(
-      oModel: Model,
-      sPath: String,
-      oContext: Context,
-      aApplicationFilters: js.UndefOr[scala.Nothing],
-      mParameters: js.UndefOr[scala.Nothing],
-      aSorters: js.Array[Sorter]
-    ) = this()
-    def this(
-      oModel: Model,
-      sPath: String,
-      oContext: Context,
-      aApplicationFilters: js.UndefOr[scala.Nothing],
       mParameters: js.Any,
       aSorters: js.Array[Sorter]
     ) = this()
@@ -153,15 +144,23 @@ object v2 {
       sPath: String,
       oContext: Context,
       aApplicationFilters: js.Array[typings.openui5.sap.ui.model.Filter],
-      mParameters: js.UndefOr[scala.Nothing],
+      mParameters: Unit,
       aSorters: js.Array[Sorter]
     ) = this()
     def this(
       oModel: Model,
       sPath: String,
       oContext: Context,
-      aApplicationFilters: js.Array[typings.openui5.sap.ui.model.Filter],
+      aApplicationFilters: Unit,
       mParameters: js.Any,
+      aSorters: js.Array[Sorter]
+    ) = this()
+    def this(
+      oModel: Model,
+      sPath: String,
+      oContext: Context,
+      aApplicationFilters: Unit,
+      mParameters: Unit,
       aSorters: js.Array[Sorter]
     ) = this()
   }

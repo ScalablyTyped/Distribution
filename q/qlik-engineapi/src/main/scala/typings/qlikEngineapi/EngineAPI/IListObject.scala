@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,40 +10,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: ListObject is used by the GetLayout method to display the properties of a list object.
   */
-@js.native
 trait IListObject extends StObject {
   
   /**
     * Set of data.
     * Is empty if nothing has been defined in qInitialDataFetch in ListObjectDef.
     */
-  var qDataPages: js.Array[INxDataPage] = js.native
+  var qDataPages: js.Array[INxDataPage]
   
   /**
     * Information about the dimension.
     */
-  var qDimensionInfo: INxDimensionInfo = js.native
+  var qDimensionInfo: INxDimensionInfo
   
   /**
     * This parameter is optional and is displayed in case of error.
     */
-  var qError: js.UndefOr[INxValidationError] = js.native
+  var qError: js.UndefOr[INxValidationError] = js.undefined
   
   /**
     * Lists the expressions in the list object.
     */
-  var qExpressions: js.Array[INxListObjectExpression] = js.native
+  var qExpressions: js.Array[INxListObjectExpression]
   
   /**
     * Defines the size of a list object.
     */
-  var qSize: ISize = js.native
+  var qSize: ISize
   
   /**
     * Name of the alternate state.
     * Default is current selections $.
     */
-  var qStateName: String = js.native
+  var qStateName: String
 }
 object IListObject {
   

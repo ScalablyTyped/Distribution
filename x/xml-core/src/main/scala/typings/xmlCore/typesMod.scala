@@ -6,43 +6,41 @@ import typings.std.Node
 import typings.xmlCore.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type AssocArray[T] = StringDictionary[T]
   
-  @js.native
   trait ICollection[I] extends StObject {
     
-    def Add(item: I): Unit = js.native
+    def Add(item: I): Unit
     
-    def Clear(): Unit = js.native
+    def Clear(): Unit
     
-    val Count: Double = js.native
+    val Count: Double
     
-    def Every(cb: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean]): Boolean = js.native
+    def Every(cb: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean]): Boolean
     
-    def Filter(cb: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Boolean]): ICollection[I] = js.native
+    def Filter(cb: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Boolean]): ICollection[I]
     
-    def ForEach(cb: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Unit]): Unit = js.native
+    def ForEach(cb: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], Unit]): Unit
     
-    def GetIterator(): js.Array[I] = js.native
+    def GetIterator(): js.Array[I]
     
-    def IsEmpty(): Boolean = js.native
+    def IsEmpty(): Boolean
     
-    def Item(index: Double): I | Null = js.native
+    def Item(index: Double): I | Null
     
-    def Map[U](cb: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], U]): ICollection[U] = js.native
+    def Map[U](cb: js.Function3[/* item */ I, /* index */ Double, /* array */ js.Array[I], U]): ICollection[U]
     
-    def Pop(): js.UndefOr[I] = js.native
+    def Pop(): js.UndefOr[I]
     
-    def RemoveAt(index: Double): Unit = js.native
+    def RemoveAt(index: Double): Unit
     
-    def Some(cb: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean]): Boolean = js.native
+    def Some(cb: js.Function3[/* value */ I, /* index */ Double, /* array */ js.Array[I], Boolean]): Boolean
     
-    def Sort(cb: js.Function2[/* a */ I, /* b */ I, Double]): ICollection[I] = js.native
+    def Sort(cb: js.Function2[/* a */ I, /* b */ I, Double]): ICollection[I]
   }
   object ICollection {
     
@@ -68,7 +66,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class ICollectionMutableBuilder[Self <: ICollection[_], I] (val x: Self with ICollection[I]) extends AnyVal {
+    implicit class ICollectionMutableBuilder[Self <: ICollection[?], I] (val x: Self & ICollection[I]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: I => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
@@ -122,7 +120,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IConverter[T] extends StObject {
     
     /**
@@ -130,14 +127,14 @@ object typesMod {
       *
       * @memberOf IConverter
       */
-    def get(value: T): js.UndefOr[String] = js.native
+    def get(value: T): js.UndefOr[String]
     
     /**
       * Converts value from Xml element to Object
       *
       * @memberOf IConverter
       */
-    def set(value: String): T = js.native
+    def set(value: String): T
   }
   object IConverter {
     
@@ -148,7 +145,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class IConverterMutableBuilder[Self <: IConverter[_], T] (val x: Self with IConverter[T]) extends AnyVal {
+    implicit class IConverterMutableBuilder[Self <: IConverter[?], T] (val x: Self & IConverter[T]) extends AnyVal {
       
       @scala.inline
       def setGet(value: T => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
@@ -193,9 +190,9 @@ object typesMod {
   */
   type XmlBufferEncoding = _XmlBufferEncoding | String
   
-  @js.native
   trait XmlChildElementType[T]
-    extends XmlSchemaItem[T]
+    extends StObject
+       with XmlSchemaItem[T]
        with XmlSchemaItemParser {
     
     /**
@@ -204,7 +201,7 @@ object typesMod {
       * @type {number}
       * @memberOf XmlChildElementType
       */
-    var maxOccurs: js.UndefOr[Double] = js.native
+    var maxOccurs: js.UndefOr[Double] = js.undefined
     
     /**
       * min occurs of items in collection
@@ -212,7 +209,7 @@ object typesMod {
       * @type {number}
       * @memberOf XmlChildElementType
       */
-    var minOccurs: js.UndefOr[Double] = js.native
+    var minOccurs: js.UndefOr[Double] = js.undefined
     
     /**
       * Don't add root element of XmlCollection to compiled element
@@ -220,7 +217,7 @@ object typesMod {
       * @type {boolean}
       * @memberOf XmlChildElementType
       */
-    var noRoot: js.UndefOr[Boolean] = js.native
+    var noRoot: js.UndefOr[Boolean] = js.undefined
   }
   object XmlChildElementType {
     
@@ -231,7 +228,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class XmlChildElementTypeMutableBuilder[Self <: XmlChildElementType[_], T] (val x: Self with XmlChildElementType[T]) extends AnyVal {
+    implicit class XmlChildElementTypeMutableBuilder[Self <: XmlChildElementType[?], T] (val x: Self & XmlChildElementType[T]) extends AnyVal {
       
       @scala.inline
       def setMaxOccurs(value: Double): Self = StObject.set(x, "maxOccurs", value.asInstanceOf[js.Any])
@@ -253,7 +250,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait XmlContentType[T] extends StObject {
     
     /**
@@ -262,7 +258,7 @@ object typesMod {
       * @type {IConverter<T>}
       * @memberOf XmlContentType
       */
-    var converter: js.UndefOr[IConverter[T]] = js.native
+    var converter: js.UndefOr[IConverter[T]] = js.undefined
     
     /**
       * Default value for item
@@ -270,7 +266,7 @@ object typesMod {
       * @type {(T |)}
       * @memberOf XmlContentType
       */
-    var defaultValue: js.UndefOr[T | Null] = js.native
+    var defaultValue: js.UndefOr[T | Null] = js.undefined
     
     /**
       * Determine where item is required
@@ -278,7 +274,7 @@ object typesMod {
       * @type {boolean}
       * @memberOf XmlContentType
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object XmlContentType {
     
@@ -289,7 +285,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class XmlContentTypeMutableBuilder[Self <: XmlContentType[_], T] (val x: Self with XmlContentType[T]) extends AnyVal {
+    implicit class XmlContentTypeMutableBuilder[Self <: XmlContentType[?], T] (val x: Self & XmlContentType[T]) extends AnyVal {
       
       @scala.inline
       def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
@@ -314,9 +310,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait XmlElementType
-    extends XmlSchemaItemBase
+    extends StObject
+       with XmlSchemaItemBase
        with XmlSchemaItemParser {
     
     /**
@@ -326,7 +322,7 @@ object typesMod {
       * @memberOf XmlElementType
       */
     @JSName("localName")
-    var localName_XmlElementType: String = js.native
+    var localName_XmlElementType: String
   }
   object XmlElementType {
     
@@ -344,7 +340,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait XmlNamespace extends StObject {
     
     /**
@@ -353,7 +348,7 @@ object typesMod {
       * @type {(string |)}
       * @memberOf XmlNamespace
       */
-    var namespace: String | Null = js.native
+    var namespace: String | Null
     
     /**
       * Prefix
@@ -361,13 +356,13 @@ object typesMod {
       * @type {(string |)}
       * @memberOf XmlNamespace
       */
-    var prefix: String | Null = js.native
+    var prefix: String | Null
   }
   object XmlNamespace {
     
     @scala.inline
     def apply(): XmlNamespace = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(namespace = null, prefix = null)
       __obj.asInstanceOf[XmlNamespace]
     }
     
@@ -388,20 +383,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait XmlSchema extends StObject {
     
-    var items: js.UndefOr[StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type]] = js.native
+    var items: js.UndefOr[
+        StringDictionary[(XmlChildElementType[js.Any] | XmlAttributeType[js.Any]) & Type]
+      ] = js.undefined
     
-    var localName: js.UndefOr[String] = js.native
+    var localName: js.UndefOr[String] = js.undefined
     
-    var namespaceURI: js.UndefOr[String | Null] = js.native
+    var namespaceURI: js.UndefOr[String | Null] = js.undefined
     
-    var parser: js.UndefOr[IXmlSerializableConstructor] = js.native
+    var parser: js.UndefOr[IXmlSerializableConstructor] = js.undefined
     
-    var prefix: js.UndefOr[String | Null] = js.native
+    var prefix: js.UndefOr[String | Null] = js.undefined
     
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
   }
   object XmlSchema {
     
@@ -415,7 +411,7 @@ object typesMod {
     implicit class XmlSchemaMutableBuilder[Self <: XmlSchema] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setItems(value: StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: StringDictionary[(XmlChildElementType[js.Any] | XmlAttributeType[js.Any]) & Type]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -458,8 +454,9 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait XmlSchemaItem[T] extends XmlSchemaItemBase {
+  trait XmlSchemaItem[T]
+    extends StObject
+       with XmlSchemaItemBase {
     
     /**
       * Custom converter for item value
@@ -467,7 +464,7 @@ object typesMod {
       * @type {IConverter<T>}
       * @memberOf XmlAttributeType
       */
-    var converter: js.UndefOr[IConverter[T]] = js.native
+    var converter: js.UndefOr[IConverter[T]] = js.undefined
     
     /**
       * Default value for item
@@ -475,7 +472,7 @@ object typesMod {
       * @type {(T |)}
       * @memberOf XmlSchemaItem
       */
-    var defaultValue: js.UndefOr[T | Null] = js.native
+    var defaultValue: js.UndefOr[T | Null] = js.undefined
     
     /**
       * Determine where item is required
@@ -483,7 +480,7 @@ object typesMod {
       * @type {boolean}
       * @memberOf XmlSchemaItem
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   object XmlSchemaItem {
     
@@ -494,7 +491,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class XmlSchemaItemMutableBuilder[Self <: XmlSchemaItem[_], T] (val x: Self with XmlSchemaItem[T]) extends AnyVal {
+    implicit class XmlSchemaItemMutableBuilder[Self <: XmlSchemaItem[?], T] (val x: Self & XmlSchemaItem[T]) extends AnyVal {
       
       @scala.inline
       def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
@@ -519,7 +516,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait XmlSchemaItemBase extends StObject {
     
     /**
@@ -528,7 +524,7 @@ object typesMod {
       * @type {string}
       * @memberOf XmlSchemaItemBase
       */
-    var localName: js.UndefOr[String] = js.native
+    var localName: js.UndefOr[String] = js.undefined
     
     /**
       * Namespace URI of attribute
@@ -536,7 +532,7 @@ object typesMod {
       * @type {(string |)}
       * @memberOf XmlSchemaItemBase
       */
-    var namespaceURI: js.UndefOr[String | Null] = js.native
+    var namespaceURI: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Default prefix for Xml element
@@ -544,7 +540,7 @@ object typesMod {
       * @type {(string |)}
       * @memberOf XmlSchemaItemBase
       */
-    var prefix: js.UndefOr[String | Null] = js.native
+    var prefix: js.UndefOr[String | Null] = js.undefined
   }
   object XmlSchemaItemBase {
     
@@ -583,7 +579,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait XmlSchemaItemParser extends StObject {
     
     /**
@@ -592,7 +587,7 @@ object typesMod {
       * @type {*}
       * @memberOf XmlSchemaItemParser
       */
-    var parser: js.UndefOr[IXmlSerializableConstructor] = js.native
+    var parser: js.UndefOr[IXmlSerializableConstructor] = js.undefined
   }
   object XmlSchemaItemParser {
     

@@ -2,35 +2,33 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticipantInfo extends StObject {
   
   /**
     * The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
     * Read-only.
     */
-  var countryCode: js.UndefOr[NullableOption[String]] = js.native
+  var countryCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The type of endpoint the participant is using. Possible values are: default, skypeForBusiness, or
     * skypeForBusinessVoipPhone. Read-only.
     */
-  var endpointType: js.UndefOr[NullableOption[EndpointType]] = js.native
+  var endpointType: js.UndefOr[NullableOption[EndpointType]] = js.undefined
   
   // The identitySet associated with this participant. Read-only.
-  var identity: js.UndefOr[IdentitySet] = js.native
+  var identity: js.UndefOr[IdentitySet] = js.undefined
   
   // The language culture string. Read-only.
-  var languageId: js.UndefOr[NullableOption[String]] = js.native
+  var languageId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not
     * change based on the participant's current physical location. Read-only.
     */
-  var region: js.UndefOr[NullableOption[String]] = js.native
+  var region: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ParticipantInfo {
   

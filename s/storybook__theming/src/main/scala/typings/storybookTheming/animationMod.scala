@@ -4,7 +4,6 @@ import typings.emotionSerialize.mod.Keyframes
 import typings.emotionUtils.mod.SerializedStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationMod {

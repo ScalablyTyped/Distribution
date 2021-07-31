@@ -2,17 +2,15 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaNodeGroupsSetNodeTemplateRequest extends StObject {
   
   /**
     * Full or partial URL of the node template resource to be updated for this
     * node group.
     */
-  var nodeTemplate: js.UndefOr[String] = js.native
+  var nodeTemplate: js.UndefOr[String] = js.undefined
 }
 object SchemaNodeGroupsSetNodeTemplateRequest {
   

@@ -2,15 +2,13 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BingMapsApiType extends StObject {
   
-  var defaultKey: String = js.native
+  var defaultKey: String
   
-  def getKey(providedKey: String): String = js.native
+  def getKey(providedKey: String): String
 }
 object BingMapsApiType {
   

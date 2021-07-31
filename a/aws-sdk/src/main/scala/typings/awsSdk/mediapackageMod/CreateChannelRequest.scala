@@ -2,24 +2,22 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChannelRequest extends StObject {
   
   /**
     * A short text description of the Channel.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the Channel. The ID must be unique within the region and it
   cannot be changed after a Channel is created.
     */
-  var Id: string = js.native
+  var Id: string
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackageMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackageMod.Tags] = js.undefined
 }
 object CreateChannelRequest {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   * @throws com::sun::star::uno::RuntimeException
   */
-@js.native
-trait XFilterAdapter extends XInterface {
+trait XFilterAdapter
+  extends StObject
+     with XInterface {
   
   def convert(
     xml: XInputStream,
@@ -23,7 +23,7 @@ trait XFilterAdapter extends XInterface {
     convertToOffice: Boolean,
     pluginUrl: String,
     fileName: String
-  ): Unit = js.native
+  ): Unit
 }
 object XFilterAdapter {
   

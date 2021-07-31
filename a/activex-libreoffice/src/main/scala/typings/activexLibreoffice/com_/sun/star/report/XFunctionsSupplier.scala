@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.report
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the functions supplier which are located in a report definition or a group. */
-@js.native
 trait XFunctionsSupplier extends StObject {
   
   /** access to the functions */
-  var Functions: XFunctions = js.native
+  var Functions: XFunctions
 }
 object XFunctionsSupplier {
   

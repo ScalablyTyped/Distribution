@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,29 +11,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For a discussion of this in Redhat/Fedora/Centos:
   * http://blog.jasonantman.com/2014/07/how-yum-and-rpm-compare-versions/
   */
-@js.native
 trait SchemaVersion extends StObject {
   
   /**
     * Used to correct mistakes in the version numbering scheme.
     */
-  var epoch: js.UndefOr[Double] = js.native
+  var epoch: js.UndefOr[Double] = js.undefined
   
   /**
     * Distinguish between sentinel MIN/MAX versions and normal versions. If
     * kind is not NORMAL, then the other fields are ignored.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The main part of the version name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The iteration of the package build from the above version.
     */
-  var revision: js.UndefOr[String] = js.native
+  var revision: js.UndefOr[String] = js.undefined
 }
 object SchemaVersion {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionCut extends StObject {
   
   /**
     * A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries aggregating values. Must have ValueType = DISTRIBUTION and MetricKind = DELTA or
     * MetricKind = CUMULATIVE.
     */
-  var distributionFilter: js.UndefOr[String] = js.native
+  var distributionFilter: js.UndefOr[String] = js.undefined
   
   /** Range of values considered "good." For a one-sided range, set one bound to an infinite value. */
-  var range: js.UndefOr[GoogleMonitoringV3Range] = js.native
+  var range: js.UndefOr[GoogleMonitoringV3Range] = js.undefined
 }
 object DistributionCut {
   

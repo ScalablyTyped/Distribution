@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPaneMod extends Shortcut {
@@ -16,26 +15,25 @@ object tabPaneMod extends Shortcut {
   @js.native
   val default: StatelessComponent[TabPaneProps] = js.native
   
-  @js.native
   trait StrictTabPaneProps extends StObject {
     
     /** A tab pane can be active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A Tab.Pane can display a loading indicator. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
   }
   object StrictTabPaneProps {
     
@@ -86,9 +84,9 @@ object tabPaneMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TabPaneProps
-    extends StrictTabPaneProps
+    extends StObject
+       with StrictTabPaneProps
        with /* key */ StringDictionary[js.Any]
   object TabPaneProps {
     

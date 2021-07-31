@@ -3,7 +3,6 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
@@ -11,15 +10,6 @@ object connectionMod {
   @JSImport("@firebase/database/dist/src/realtime/Connection", "Connection")
   @js.native
   class Connection protected () extends StObject {
-    def this(
-      id: String,
-      repoInfo_ : RepoInfo,
-      applicationId_ : js.UndefOr[scala.Nothing],
-      onMessage_ : js.Function1[/* a */ js.Object, Unit],
-      onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
-      onDisconnect_ : js.Function0[Unit],
-      onKill_ : js.Function1[/* a */ String, Unit]
-    ) = this()
     /**
       * @param id - an id for this connection
       * @param repoInfo_ - the info for the endpoint to connect to
@@ -42,7 +32,16 @@ object connectionMod {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
-      applicationId_ : js.UndefOr[scala.Nothing],
+      applicationId_ : Unit,
+      onMessage_ : js.Function1[/* a */ js.Object, Unit],
+      onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
+      onDisconnect_ : js.Function0[Unit],
+      onKill_ : js.Function1[/* a */ String, Unit]
+    ) = this()
+    def this(
+      id: String,
+      repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
@@ -52,7 +51,7 @@ object connectionMod {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
-      applicationId_ : String,
+      applicationId_ : Unit,
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
@@ -145,7 +144,7 @@ object connectionMod {
     
     var onSecondaryMessageReceived_ : js.Any = js.native
     
-    var pendingDataMessages: js.Array[_] = js.native
+    var pendingDataMessages: js.Array[js.Any] = js.native
     
     var primaryResponsesRequired_ : js.Any = js.native
     

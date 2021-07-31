@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The listeners are called in the order in which they are registered.
   */
-@js.native
 trait XConfigurationControllerBroadcaster extends StObject {
   
   /**
@@ -23,16 +21,16 @@ trait XConfigurationControllerBroadcaster extends StObject {
     * @param sEventType The event type that the listener is interested in. The set of event types is not fixed and there can be no exhaustive list. The empty
     * @param aUserData Arbitrary data that is passed to the listener when it is called for the specified event type. When one listener is registered for more
     */
-  def addConfigurationChangeListener(xListener: XConfigurationChangeListener, sEventType: String, aUserData: js.Any): Unit = js.native
+  def addConfigurationChangeListener(xListener: XConfigurationChangeListener, sEventType: String, aUserData: js.Any): Unit
   
   /** With this method other objects can send events to all the registered listeners. */
-  def notifyEvent(aEvent: ConfigurationChangeEvent): Unit = js.native
+  def notifyEvent(aEvent: ConfigurationChangeEvent): Unit
   
   /**
     * Remove a listener for configuration changes.
     * @param xListener The listener that is to be removed.
     */
-  def removeConfigurationChangeListener(xListener: XConfigurationChangeListener): Unit = js.native
+  def removeConfigurationChangeListener(xListener: XConfigurationChangeListener): Unit
 }
 object XConfigurationControllerBroadcaster {
   

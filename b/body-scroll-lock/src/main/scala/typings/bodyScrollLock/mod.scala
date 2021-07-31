@@ -4,41 +4,36 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("body-scroll-lock", "clearAllBodyScrollLocks")
+  @JSImport("body-scroll-lock", JSImport.Namespace)
   @js.native
-  def clearAllBodyScrollLocks(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("body-scroll-lock", "disableBodyScroll")
-  @js.native
-  def disableBodyScroll(targetElement: Element): Unit = js.native
-  @JSImport("body-scroll-lock", "disableBodyScroll")
-  @js.native
-  def disableBodyScroll(targetElement: Element, options: BodyScrollOptions): Unit = js.native
-  @JSImport("body-scroll-lock", "disableBodyScroll")
-  @js.native
-  def disableBodyScroll(targetElement: HTMLElement): Unit = js.native
-  @JSImport("body-scroll-lock", "disableBodyScroll")
-  @js.native
-  def disableBodyScroll(targetElement: HTMLElement, options: BodyScrollOptions): Unit = js.native
+  @scala.inline
+  def clearAllBodyScrollLocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllBodyScrollLocks")().asInstanceOf[Unit]
   
-  @JSImport("body-scroll-lock", "enableBodyScroll")
-  @js.native
-  def enableBodyScroll(targetElement: Element): Unit = js.native
-  @JSImport("body-scroll-lock", "enableBodyScroll")
-  @js.native
-  def enableBodyScroll(targetElement: HTMLElement): Unit = js.native
+  @scala.inline
+  def disableBodyScroll(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def disableBodyScroll(targetElement: Element, options: BodyScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def disableBodyScroll(targetElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def disableBodyScroll(targetElement: HTMLElement, options: BodyScrollOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disableBodyScroll")(targetElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def enableBodyScroll(targetElement: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enableBodyScroll(targetElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableBodyScroll")(targetElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait BodyScrollOptions extends StObject {
     
-    var allowTouchMove: js.UndefOr[js.Function1[/* el */ HTMLElement | Element, Unit]] = js.native
+    var allowTouchMove: js.UndefOr[js.Function1[/* el */ HTMLElement | Element, Unit]] = js.undefined
     
-    var reserveScrollBarGap: js.UndefOr[Boolean] = js.native
+    var reserveScrollBarGap: js.UndefOr[Boolean] = js.undefined
   }
   object BodyScrollOptions {
     

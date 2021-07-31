@@ -2,7 +2,6 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XML HTTP Request class 6.0 */
@@ -26,31 +25,13 @@ trait XMLHTTP60 extends StObject {
   
   /** Open HTTP connection */
   def open(bstrMethod: String, bstrUrl: String): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrUrl: String,
-    varAsync: js.UndefOr[scala.Nothing],
-    bstrUser: js.UndefOr[scala.Nothing],
-    bstrPassword: js.Any
-  ): Unit = js.native
-  def open(bstrMethod: String, bstrUrl: String, varAsync: js.UndefOr[scala.Nothing], bstrUser: js.Any): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrUrl: String,
-    varAsync: js.UndefOr[scala.Nothing],
-    bstrUser: js.Any,
-    bstrPassword: js.Any
-  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any): Unit = js.native
-  def open(
-    bstrMethod: String,
-    bstrUrl: String,
-    varAsync: js.Any,
-    bstrUser: js.UndefOr[scala.Nothing],
-    bstrPassword: js.Any
-  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: Unit, bstrUser: Unit, bstrPassword: js.Any): Unit = js.native
   
   /** Get ready state */
   val readyState: Double = js.native

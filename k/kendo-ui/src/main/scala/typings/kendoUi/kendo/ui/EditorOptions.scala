@@ -2,55 +2,53 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.undefined
   
-  var deserialization: js.UndefOr[EditorDeserialization] = js.native
+  var deserialization: js.UndefOr[EditorDeserialization] = js.undefined
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var encoded: js.UndefOr[Boolean] = js.native
+  var encoded: js.UndefOr[Boolean] = js.undefined
   
-  var execute: js.UndefOr[js.Function1[/* e */ EditorExecuteEvent, Unit]] = js.native
+  var execute: js.UndefOr[js.Function1[/* e */ EditorExecuteEvent, Unit]] = js.undefined
   
-  var fileBrowser: js.UndefOr[EditorFileBrowser] = js.native
+  var fileBrowser: js.UndefOr[EditorFileBrowser] = js.undefined
   
-  var imageBrowser: js.UndefOr[EditorImageBrowser] = js.native
+  var imageBrowser: js.UndefOr[EditorImageBrowser] = js.undefined
   
-  var immutables: js.UndefOr[Boolean | EditorImmutables] = js.native
+  var immutables: js.UndefOr[Boolean | EditorImmutables] = js.undefined
   
-  var keydown: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.native
+  var keydown: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.undefined
   
-  var keyup: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.native
+  var keyup: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.undefined
   
-  var messages: js.UndefOr[EditorMessages] = js.native
+  var messages: js.UndefOr[EditorMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var paste: js.UndefOr[js.Function1[/* e */ EditorPasteEvent, Unit]] = js.native
+  var paste: js.UndefOr[js.Function1[/* e */ EditorPasteEvent, Unit]] = js.undefined
   
-  var pasteCleanup: js.UndefOr[EditorPasteCleanup] = js.native
+  var pasteCleanup: js.UndefOr[EditorPasteCleanup] = js.undefined
   
-  var pdf: js.UndefOr[EditorPdf] = js.native
+  var pdf: js.UndefOr[EditorPdf] = js.undefined
   
-  var pdfExport: js.UndefOr[js.Function1[/* e */ EditorPdfExportEvent, Unit]] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ EditorPdfExportEvent, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var resizable: js.UndefOr[Boolean | EditorResizable] = js.native
+  var resizable: js.UndefOr[Boolean | EditorResizable] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ EditorEvent, Unit]] = js.undefined
   
-  var serialization: js.UndefOr[EditorSerialization] = js.native
+  var serialization: js.UndefOr[EditorSerialization] = js.undefined
   
-  var stylesheets: js.UndefOr[js.Any] = js.native
+  var stylesheets: js.UndefOr[js.Any] = js.undefined
   
-  var tools: js.UndefOr[js.Array[EditorTool | String]] = js.native
+  var tools: js.UndefOr[js.Array[EditorTool | String]] = js.undefined
 }
 object EditorOptions {
   

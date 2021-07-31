@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOrganizationResponse extends StObject {
   
   /**
     * The organization ID.
     */
-  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.native
+  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.undefined
   
   /**
     * The state of the organization.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
 }
 object DeleteOrganizationResponse {
   

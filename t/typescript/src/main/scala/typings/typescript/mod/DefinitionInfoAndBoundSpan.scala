@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinitionInfoAndBoundSpan extends StObject {
   
-  var definitions: js.UndefOr[js.Array[DefinitionInfo]] = js.native
+  var definitions: js.UndefOr[js.Array[DefinitionInfo]] = js.undefined
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object DefinitionInfoAndBoundSpan {
   

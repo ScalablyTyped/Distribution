@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialComponentMetricSummary extends StObject {
   
   /**
     * The average value of the metric.
     */
-  var Avg: js.UndefOr[OptionalDouble] = js.native
+  var Avg: js.UndefOr[OptionalDouble] = js.undefined
   
   /**
     * The number of samples used to generate the metric.
     */
-  var Count: js.UndefOr[OptionalInteger] = js.native
+  var Count: js.UndefOr[OptionalInteger] = js.undefined
   
   /**
     * The most recent value of the metric.
     */
-  var Last: js.UndefOr[OptionalDouble] = js.native
+  var Last: js.UndefOr[OptionalDouble] = js.undefined
   
   /**
     * The maximum value of the metric.
     */
-  var Max: js.UndefOr[OptionalDouble] = js.native
+  var Max: js.UndefOr[OptionalDouble] = js.undefined
   
   /**
     * The name of the metric.
     */
-  var MetricName: js.UndefOr[typings.awsSdk.sagemakerMod.MetricName] = js.native
+  var MetricName: js.UndefOr[typings.awsSdk.sagemakerMod.MetricName] = js.undefined
   
   /**
     * The minimum value of the metric.
     */
-  var Min: js.UndefOr[OptionalDouble] = js.native
+  var Min: js.UndefOr[OptionalDouble] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source.
     */
-  var SourceArn: js.UndefOr[TrialComponentSourceArn] = js.native
+  var SourceArn: js.UndefOr[TrialComponentSourceArn] = js.undefined
   
   /**
     * The standard deviation of the metric.
     */
-  var StdDev: js.UndefOr[OptionalDouble] = js.native
+  var StdDev: js.UndefOr[OptionalDouble] = js.undefined
   
   /**
     * When the metric was last updated.
     */
-  var TimeStamp: js.UndefOr[Timestamp] = js.native
+  var TimeStamp: js.UndefOr[Timestamp] = js.undefined
 }
 object TrialComponentMetricSummary {
   

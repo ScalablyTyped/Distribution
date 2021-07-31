@@ -5,7 +5,6 @@ import typings.officeJs.officeJsStrings.Normal
 import typings.officeJs.officeJsStrings.Unlocked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.2]
   */
-@js.native
 trait WorksheetProtectionOptions extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowAutoFilter: js.UndefOr[Boolean] = js.native
+  var allowAutoFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowDeleteColumns: js.UndefOr[Boolean] = js.native
+  var allowDeleteColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowDeleteRows: js.UndefOr[Boolean] = js.native
+  var allowDeleteRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var allowEditObjects: js.UndefOr[Boolean] = js.native
+  var allowEditObjects: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var allowEditScenarios: js.UndefOr[Boolean] = js.native
+  var allowEditScenarios: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowFormatCells: js.UndefOr[Boolean] = js.native
+  var allowFormatCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowFormatColumns: js.UndefOr[Boolean] = js.native
+  var allowFormatColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowFormatRows: js.UndefOr[Boolean] = js.native
+  var allowFormatRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowInsertColumns: js.UndefOr[Boolean] = js.native
+  var allowInsertColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowInsertHyperlinks: js.UndefOr[Boolean] = js.native
+  var allowInsertHyperlinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowInsertRows: js.UndefOr[Boolean] = js.native
+  var allowInsertRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -111,7 +109,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowPivotTables: js.UndefOr[Boolean] = js.native
+  var allowPivotTables: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -119,7 +117,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var allowSort: js.UndefOr[Boolean] = js.native
+  var allowSort: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -127,7 +125,7 @@ trait WorksheetProtectionOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var selectionMode: js.UndefOr[ProtectionSelectionMode | Normal | Unlocked | None] = js.native
+  var selectionMode: js.UndefOr[ProtectionSelectionMode | Normal | Unlocked | None] = js.undefined
 }
 object WorksheetProtectionOptions {
   

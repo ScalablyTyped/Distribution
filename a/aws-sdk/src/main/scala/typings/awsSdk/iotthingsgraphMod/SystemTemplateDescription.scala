@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemTemplateDescription extends StObject {
   
   /**
     * The definition document of a system.
     */
-  var definition: js.UndefOr[DefinitionDocument] = js.native
+  var definition: js.UndefOr[DefinitionDocument] = js.undefined
   
   /**
     * An object that contains summary information about a system.
     */
-  var summary: js.UndefOr[SystemTemplateSummary] = js.native
+  var summary: js.UndefOr[SystemTemplateSummary] = js.undefined
   
   /**
     * The namespace version against which the system was validated. Use this value in your system instance.
     */
-  var validatedNamespaceVersion: js.UndefOr[Version] = js.native
+  var validatedNamespaceVersion: js.UndefOr[Version] = js.undefined
 }
 object SystemTemplateDescription {
   

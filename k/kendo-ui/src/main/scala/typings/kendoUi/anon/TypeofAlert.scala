@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Alert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofAlert extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Alert = js.native
+  def extend(proto: js.Object): Alert
   
   /* static member */
-  var fn: Alert = js.native
+  var fn: Alert
 }
 object TypeofAlert {
   

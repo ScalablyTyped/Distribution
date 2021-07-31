@@ -4,54 +4,54 @@ import typings.stripe.stripeStrings.file_link
 import typings.stripe.stripeStrings.now
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileLinks {
   
-  @js.native
-  trait IFileLink extends IResourceObject {
+  trait IFileLink
+    extends StObject
+       with IResourceObject {
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Whether this link is already expired.
       */
-    var expired: Boolean = js.native
+    var expired: Boolean
     
     /**
       * Time at which the link expires.
       */
-    var expires_at: Double | Null = js.native
+    var expires_at: Double | Null
     
     /**
       * The file object this link points to
       */
-    var file: String = js.native
+    var file: String
     
     /**
       * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is 'file_link'
       */
     @JSName("object")
-    var object_IFileLink: file_link = js.native
+    var object_IFileLink: file_link
     
     /**
       * The publicly accessible URL to download the file.
       */
-    var url: String = js.native
+    var url: String
   }
   object IFileLink {
     
@@ -63,11 +63,10 @@ object fileLinks {
       id: String,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: file_link,
       url: String
     ): IFileLink = {
-      val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], expired = expired.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], expires_at = null)
+      __obj.updateDynamic("object")("file_link")
       __obj.asInstanceOf[IFileLink]
     }
     
@@ -103,18 +102,19 @@ object fileLinks {
     }
   }
   
-  @js.native
-  trait IFileLinksCreationOptions extends IDataOptionsWithMetadata {
+  trait IFileLinksCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A future timestamp after which the link will no longer be usable.
       */
-    var expires_at: js.UndefOr[Double] = js.native
+    var expires_at: js.UndefOr[Double] = js.undefined
     
     /**
       * The ID of the file
       */
-    var file: String = js.native
+    var file: String
   }
   object IFileLinksCreationOptions {
     
@@ -138,18 +138,19 @@ object fileLinks {
     }
   }
   
-  @js.native
-  trait IFileLinksListOptions extends IListOptionsCreated {
+  trait IFileLinksListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * Filter links by their expiration status. By default, all links are returned.
       */
-    var expired: js.UndefOr[Boolean] = js.native
+    var expired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only return links for the given file.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
   }
   object IFileLinksListOptions {
     
@@ -176,10 +177,11 @@ object fileLinks {
     }
   }
   
-  @js.native
-  trait IFileLinksUpdateOptions extends IDataOptionsWithMetadata {
+  trait IFileLinksUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
-    var expires_at: js.UndefOr[Double | now] = js.native
+    var expires_at: js.UndefOr[Double | now] = js.undefined
   }
   object IFileLinksUpdateOptions {
     

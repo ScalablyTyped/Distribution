@@ -4,7 +4,6 @@ import typings.fabric.anon.LeftTop
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -73,7 +72,7 @@ trait IUtilDomMisc extends StObject {
   /**
     * Converts an array-like object (e.g. arguments or NodeList) to an array
     */
-  def toArray(arrayLike: js.Any): js.Array[_] = js.native
+  def toArray(arrayLike: js.Any): js.Array[js.Any] = js.native
   
   def wrapElement(element: HTMLElement, wrapper: String): HTMLElement = js.native
   def wrapElement(element: HTMLElement, wrapper: String, attributes: js.Any): HTMLElement = js.native

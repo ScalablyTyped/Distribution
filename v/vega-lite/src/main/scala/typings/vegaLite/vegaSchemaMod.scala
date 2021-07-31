@@ -33,6 +33,8 @@ import typings.vegaTypings.scaleMod.ScaleData
 import typings.vegaTypings.scaleMod.ScaleDataRef
 import typings.vegaTypings.scaleMod.ScaleField
 import typings.vegaTypings.scaleMod.ScaleInterpolate
+import typings.vegaTypings.scaleMod.ScaleMultiDataRef
+import typings.vegaTypings.scaleMod.ScaleMultiFieldsRef
 import typings.vegaTypings.scaleMod.ScaleType
 import typings.vegaTypings.scaleMod.SortField
 import typings.vegaTypings.scaleMod.TimeInterval
@@ -44,10 +46,13 @@ import typings.vegaTypings.transformMod.GeoShapeTransform
 import typings.vegaTypings.transformMod.Transforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vegaSchemaMod {
+  
+  @JSImport("vega-lite/build/src/vega.schema", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/vega.schema", "VG_CORNERRADIUS_CHANNELS")
   @js.native
@@ -145,47 +150,40 @@ object vegaSchemaMod {
     def trail_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trail")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("vega-lite/build/src/vega.schema", "isDataRefDomain")
-  @js.native
-  def isDataRefDomain(domain: js.Any): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = js.native
-  @JSImport("vega-lite/build/src/vega.schema", "isDataRefDomain")
-  @js.native
-  def isDataRefDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = js.native
+  @scala.inline
+  def isDataRefDomain(domain: js.Any): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean]
+  @scala.inline
+  def isDataRefDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort */ Boolean]
   
-  @JSImport("vega-lite/build/src/vega.schema", "isDataRefUnionedDomain")
-  @js.native
-  def isDataRefUnionedDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleMultiDataRefWithSort */ Boolean = js.native
+  @scala.inline
+  def isDataRefUnionedDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgScaleMultiDataRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataRefUnionedDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgScaleMultiDataRefWithSort */ Boolean]
   
-  @JSImport("vega-lite/build/src/vega.schema", "isFieldRefUnionDomain")
-  @js.native
-  def isFieldRefUnionDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgMultiFieldsRefWithSort */ Boolean = js.native
+  @scala.inline
+  def isFieldRefUnionDomain(domain: VgDomain): /* is vega-lite.vega-lite/build/src/vega.schema.VgMultiFieldsRefWithSort */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRefUnionDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgMultiFieldsRefWithSort */ Boolean]
   
-  @JSImport("vega-lite/build/src/vega.schema", "isSignalRef")
-  @js.native
-  def isSignalRef(o: js.Any): /* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean = js.native
+  @scala.inline
+  def isSignalRef(o: js.Any): /* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignalRef")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/signal.SignalRef */ Boolean]
   
-  @JSImport("vega-lite/build/src/vega.schema", "isVgRangeStep")
-  @js.native
-  def isVgRangeStep(range: VgRange): /* is vega-lite.vega-lite/build/src/vega.schema.VgRangeStep */ Boolean = js.native
+  @scala.inline
+  def isVgRangeStep(range: VgRange): /* is vega-lite.vega-lite/build/src/vega.schema.VgRangeStep */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgRangeStep")(range.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/vega.schema.VgRangeStep */ Boolean]
   
   type MapExcludeAndKeepSignalAs[T, E, S /* <: ExprOrSignalRef */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: vega-typings.vega-typings/types/spec/signal.SignalRef extends T[P]? std.Exclude<T[P], E> | S : std.Exclude<T[P], E>}
-    */ typings.vegaLite.vegaLiteStrings.MapExcludeAndKeepSignalAs with TopLevel[js.Any]
+    */ typings.vegaLite.vegaLiteStrings.MapExcludeAndKeepSignalAs & TopLevel[js.Any]
   
   type MapExcludeValueRefAndReplaceSignalWith[T, S /* <: ExprOrSignalRef */] = MapExcludeAndKeepSignalAs[T, ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef, S]
   
   type MappedExclude[T, E] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.Exclude<T[P], E>}
-    */ typings.vegaLite.vegaLiteStrings.MappedExclude with TopLevel[T]
+    */ typings.vegaLite.vegaLiteStrings.MappedExclude & TopLevel[T]
   
   type MappedExcludeValueRef[T] = MappedExclude[T, ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]
   
-  @js.native
   trait RowCol[T] extends StObject {
     
-    var column: js.UndefOr[T] = js.native
+    var column: js.UndefOr[T] = js.undefined
     
-    var row: js.UndefOr[T] = js.native
+    var row: js.UndefOr[T] = js.undefined
   }
   object RowCol {
     
@@ -196,7 +194,7 @@ object vegaSchemaMod {
     }
     
     @scala.inline
-    implicit class RowColMutableBuilder[Self <: RowCol[_], T] (val x: Self with RowCol[T]) extends AnyVal {
+    implicit class RowColMutableBuilder[Self <: RowCol[?], T] (val x: Self & RowCol[T]) extends AnyVal {
       
       @scala.inline
       def setColumn(value: T): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
@@ -212,12 +210,11 @@ object vegaSchemaMod {
     }
   }
   
-  @js.native
   trait VgComparator extends StObject {
     
-    var field: js.UndefOr[String | js.Array[String]] = js.native
+    var field: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var order: js.UndefOr[SortOrder | js.Array[SortOrder]] = js.native
+    var order: js.UndefOr[SortOrder | js.Array[SortOrder]] = js.undefined
   }
   object VgComparator {
     
@@ -250,20 +247,19 @@ object vegaSchemaMod {
     }
   }
   
-  @js.native
   trait VgData extends StObject {
     
-    var format: js.UndefOr[Feature] = js.native
+    var format: js.UndefOr[Feature] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[js.Array[Transforms]] = js.native
+    var transform: js.UndefOr[js.Array[Transforms]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Any] = js.native
+    var values: js.UndefOr[js.Any] = js.undefined
   }
   object VgData {
     
@@ -559,126 +555,125 @@ object vegaSchemaMod {
   }
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/vega.schema.VgEncodeChannel, vega-lite.vega-lite/build/src/vega.schema.VgValueRef | std.Array<vega-lite.vega-lite/build/src/vega.schema.VgValueRef & {  test :string | undefined}>>> */
-  @js.native
   trait VgEncodeEntry extends StObject {
     
-    var align: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var align: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var angle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var angle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var baseline: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var baseline: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var clip: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var clip: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var cornerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var cornerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var cornerRadiusBottomLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var cornerRadiusBottomLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var cornerRadiusBottomRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var cornerRadiusBottomRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var cornerRadiusTopLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var cornerRadiusTopLeft: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var cornerRadiusTopRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var cornerRadiusTopRight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var cursor: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var cursor: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var defined: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var defined: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var dir: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var dir: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var dx: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var dx: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var dy: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var dy: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var ellipsis: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var ellipsis: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var endAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var endAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var fill: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var fill: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var fillOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var fillOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var font: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var font: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var fontSize: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var fontSize: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var fontStyle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var fontStyle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var fontWeight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var fontWeight: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var height: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var height: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var href: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var href: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var innerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var innerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var interpolate: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var interpolate: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var limit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var limit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var opacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var opacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var orient: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var orient: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var outerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var outerRadius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var path: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var path: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var radius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var radius: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var scaleX: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var scaleX: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var scaleY: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var scaleY: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var shape: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var shape: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var size: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var size: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var startAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var startAngle: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var stroke: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var stroke: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeCap: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeCap: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeDash: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeDash: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeDashOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeDashOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeForeground: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeForeground: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeJoin: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeJoin: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeMiterLimit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeMiterLimit: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeOffset: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeOpacity: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var strokeWidth: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var strokeWidth: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var tension: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var tension: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var text: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var text: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var theta: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var theta: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var tooltip: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var tooltip: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var url: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var url: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var width: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var width: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var x: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var x: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var x2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var x2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var xc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var xc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var y: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var y: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var y2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var y2: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
     
-    var yc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.native
+    var yc: js.UndefOr[VgValueRef | js.Array[VgValueRefteststringundef]] = js.undefined
   }
   object VgEncodeEntry {
     
@@ -1224,25 +1219,24 @@ object vegaSchemaMod {
     }
   }
   
-  @js.native
   trait VgJoinAggregateTransform extends StObject {
     
-    var as: js.UndefOr[js.Array[String]] = js.native
+    var as: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var groupby: js.UndefOr[js.Array[String]] = js.native
+    var groupby: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ops: js.UndefOr[js.Array[AggregateOp]] = js.native
+    var ops: js.UndefOr[js.Array[AggregateOp]] = js.undefined
     
-    var `type`: joinaggregate = js.native
+    var `type`: joinaggregate
   }
   object VgJoinAggregateTransform {
     
     @scala.inline
-    def apply(`type`: joinaggregate): VgJoinAggregateTransform = {
+    def apply(): VgJoinAggregateTransform = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("joinaggregate")
       __obj.asInstanceOf[VgJoinAggregateTransform]
     }
     
@@ -1290,26 +1284,25 @@ object vegaSchemaMod {
     }
   }
   
-  @js.native
   trait VgLayout extends StObject {
     
-    var align: js.UndefOr[LayoutAlign | RowCol[LayoutAlign]] = js.native
+    var align: js.UndefOr[LayoutAlign | RowCol[LayoutAlign]] = js.undefined
     
-    var bounds: js.UndefOr[full | flush] = js.native
+    var bounds: js.UndefOr[full | flush] = js.undefined
     
-    var center: js.UndefOr[Boolean | RowCol[Boolean]] = js.native
+    var center: js.UndefOr[Boolean | RowCol[Boolean]] = js.undefined
     
-    var columns: js.UndefOr[Double | Signal] = js.native
+    var columns: js.UndefOr[Double | Signal] = js.undefined
     
-    var footerBand: js.UndefOr[Double | RowCol[Double]] = js.native
+    var footerBand: js.UndefOr[Double | RowCol[Double]] = js.undefined
     
-    var headerBand: js.UndefOr[Double | RowCol[Double]] = js.native
+    var headerBand: js.UndefOr[Double | RowCol[Double]] = js.undefined
     
-    var offset: js.UndefOr[Double | ColumnFooter] = js.native
+    var offset: js.UndefOr[Double | ColumnFooter] = js.undefined
     
-    var padding: js.UndefOr[Double | RowCol[Double]] = js.native
+    var padding: js.UndefOr[Double | RowCol[Double]] = js.undefined
     
-    var titleAnchor: js.UndefOr[start | end | (RowCol[start | end])] = js.native
+    var titleAnchor: js.UndefOr[start | end | (RowCol[start | end])] = js.undefined
   }
   object VgLayout {
     
@@ -1380,15 +1373,11 @@ object vegaSchemaMod {
   
   type VgMarkGroup = js.Any
   
-  /* Inlined vega.vega.ScaleMultiFieldsRef & {  sort :vega.vega.UnionSortField | undefined} */
-  @js.native
-  trait VgMultiFieldsRefWithSort extends StObject {
+  trait VgMultiFieldsRefWithSort
+    extends StObject
+       with ScaleMultiFieldsRef {
     
-    var data: String = js.native
-    
-    var fields: js.Array[ScaleField] = js.native
-    
-    var sort: js.UndefOr[UnionSortField] = js.native
+    var sort: js.UndefOr[UnionSortField] = js.undefined
   }
   object VgMultiFieldsRefWithSort {
     
@@ -1400,15 +1389,6 @@ object vegaSchemaMod {
     
     @scala.inline
     implicit class VgMultiFieldsRefWithSortMutableBuilder[Self <: VgMultiFieldsRefWithSort] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
       @scala.inline
       def setSort(value: UnionSortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
@@ -1424,10 +1404,9 @@ object vegaSchemaMod {
   
   type VgRange = RangeScheme | ScaleData | RangeBand | RangeRaw
   
-  @js.native
   trait VgRangeStep extends StObject {
     
-    var step: Double | SignalRef = js.native
+    var step: Double | SignalRef
   }
   object VgRangeStep {
     
@@ -1447,54 +1426,53 @@ object vegaSchemaMod {
   
   /* Inlined std.Pick<vega.vega.BaseScale, 'type'> & {  range :vega.vega.RangeScheme | vega.vega.RangeBand | vega.vega.ScaleData | undefined,   nice :boolean | number | vega.vega.TimeInterval | vega.vega.TimeIntervalStep | vega.vega.SignalRef | undefined,   zero :boolean | vega.vega.SignalRef | undefined} & std.Omit<std.Omit<vega.vega.LinearScale, 'type'> & std.Omit<vega.vega.LogScale, 'type'> & std.Omit<vega.vega.SymLogScale, 'type'> & std.Omit<std.Partial<vega.vega.PowScale>, 'type'> & // use partial so exponent is not required
   std.Omit<vega.vega.SqrtScale, 'type'> & std.Omit<vega.vega.IdentityScale, 'type'> & std.Omit<vega.vega.TimeScale, 'type'> & std.Omit<vega.vega.QuantileScale, 'type'> & std.Omit<vega.vega.QuantizeScale, 'type'> & std.Omit<vega.vega.ThresholdScale, 'type'> & std.Omit<vega.vega.BinOrdinalScale, 'type'> & std.Omit<vega.vega.SequentialScale, 'type'> & std.Omit<vega.vega.BandScale, 'type'> & std.Omit<vega.vega.PointScale, 'type'> & std.Omit<vega.vega.OrdinalScale, 'type'>, 'range' | 'nice' | 'zero'> */
-  @js.native
   trait VgScale extends StObject {
     
-    var align: js.UndefOr[Double | SignalRef] = js.native
+    var align: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var base: js.UndefOr[Double | SignalRef] = js.native
+    var base: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var bins: js.UndefOr[ScaleBins] = js.native
+    var bins: js.UndefOr[ScaleBins] = js.undefined
     
-    var clamp: js.UndefOr[Boolean | SignalRef] = js.native
+    var clamp: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var constant: js.UndefOr[Double | SignalRef] = js.native
+    var constant: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domain: js.UndefOr[(js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef] = js.native
+    var domain: js.UndefOr[(js.Array[Null | String | Double | Boolean | SignalRef]) | ScaleData | SignalRef] = js.undefined
     
-    var domainImplicit: js.UndefOr[Boolean | SignalRef] = js.native
+    var domainImplicit: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var domainMax: js.UndefOr[Double | SignalRef] = js.native
+    var domainMax: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainMid: js.UndefOr[Double | SignalRef] = js.native
+    var domainMid: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainMin: js.UndefOr[Double | SignalRef] = js.native
+    var domainMin: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainRaw: js.UndefOr[Null | js.Array[_] | SignalRef] = js.native
+    var domainRaw: js.UndefOr[Null | js.Array[js.Any] | SignalRef] = js.undefined
     
-    var exponent: js.UndefOr[Double | SignalRef] = js.native
+    var exponent: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+    var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | SignalRef] = js.native
+    var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | SignalRef] = js.undefined
     
-    var padding: js.UndefOr[Double | SignalRef] = js.native
+    var padding: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var paddingInner: js.UndefOr[Double | SignalRef] = js.native
+    var paddingInner: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var paddingOuter: js.UndefOr[Double | SignalRef] = js.native
+    var paddingOuter: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var range: js.UndefOr[RangeScheme | RangeBand | ScaleData] = js.native
+    var range: js.UndefOr[RangeScheme | RangeBand | ScaleData] = js.undefined
     
-    var reverse: js.UndefOr[Boolean | SignalRef] = js.native
+    var reverse: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var round: js.UndefOr[Boolean | SignalRef] = js.native
+    var round: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var `type`: js.UndefOr[ScaleType] = js.native
+    var `type`: js.UndefOr[ScaleType] = js.undefined
     
-    var zero: js.UndefOr[Boolean | SignalRef] = js.native
+    var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
   }
   object VgScale {
     
@@ -1568,7 +1546,7 @@ object vegaSchemaMod {
       def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
       
       @scala.inline
-      def setDomainRaw(value: js.Array[_] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
+      def setDomainRaw(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "domainRaw", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDomainRawNull: Self = StObject.set(x, "domainRaw", null)
@@ -1659,15 +1637,11 @@ object vegaSchemaMod {
     }
   }
   
-  /* Inlined vega.vega.ScaleDataRef & {  sort :vega.vega.SortField | undefined} */
-  @js.native
-  trait VgScaleDataRefWithSort extends StObject {
+  trait VgScaleDataRefWithSort
+    extends StObject
+       with ScaleDataRef {
     
-    var data: String = js.native
-    
-    var field: ScaleField = js.native
-    
-    var sort: js.UndefOr[SortField] = js.native
+    var sort: js.UndefOr[SortField] = js.undefined
   }
   object VgScaleDataRefWithSort {
     
@@ -1681,12 +1655,6 @@ object vegaSchemaMod {
     implicit class VgScaleDataRefWithSortMutableBuilder[Self <: VgScaleDataRefWithSort] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setField(value: ScaleField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -1694,20 +1662,19 @@ object vegaSchemaMod {
     }
   }
   
-  /* Inlined vega.vega.ScaleMultiDataRef & {  fields :std.Array<std.Array<any> | vega-lite.vega-lite/build/src/vega.schema.VgScaleDataRefWithSort | vega.vega.SignalRef>,   sort :vega.vega.UnionSortField | undefined} */
-  @js.native
-  trait VgScaleMultiDataRefWithSort extends StObject {
+  trait VgScaleMultiDataRefWithSort
+    extends StObject
+       with ScaleMultiDataRef {
     
-    var fields: (js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]) with (js.Array[js.Array[_] | VgScaleDataRefWithSort | SignalRef]) = js.native
+    @JSName("fields")
+    var fields_VgScaleMultiDataRefWithSort: js.Array[js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef]
     
-    var sort: js.UndefOr[UnionSortField] = js.native
+    var sort: js.UndefOr[UnionSortField] = js.undefined
   }
   object VgScaleMultiDataRefWithSort {
     
     @scala.inline
-    def apply(
-      fields: (js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]) with (js.Array[js.Array[_] | VgScaleDataRefWithSort | SignalRef])
-    ): VgScaleMultiDataRefWithSort = {
+    def apply(fields: js.Array[js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef]): VgScaleMultiDataRefWithSort = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[VgScaleMultiDataRefWithSort]
     }
@@ -1716,9 +1683,10 @@ object vegaSchemaMod {
     implicit class VgScaleMultiDataRefWithSortMutableBuilder[Self <: VgScaleMultiDataRefWithSort] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFields(
-        value: (js.Array[(js.Array[String | Double | Boolean]) | ScaleDataRef | SignalRef]) with (js.Array[js.Array[_] | VgScaleDataRefWithSort | SignalRef])
-      ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: js.Array[js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFieldsVarargs(value: (js.Array[js.Any] | VgScaleDataRefWithSort | SignalRef)*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
       @scala.inline
       def setSort(value: UnionSortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
@@ -1728,24 +1696,23 @@ object vegaSchemaMod {
     }
   }
   
-  @js.native
   trait VgValueRef extends StObject {
     
-    var band: js.UndefOr[Boolean | Double | VgValueRef] = js.native
+    var band: js.UndefOr[Boolean | Double | VgValueRef] = js.undefined
     
-    var field: js.UndefOr[String | Datum] = js.native
+    var field: js.UndefOr[String | Datum] = js.undefined
     
-    var mult: js.UndefOr[Double] = js.native
+    var mult: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double | VgValueRef] = js.native
+    var offset: js.UndefOr[Double | VgValueRef] = js.undefined
     
-    var scale: js.UndefOr[String] = js.native
+    var scale: js.UndefOr[String] = js.undefined
     
-    var signal: js.UndefOr[String] = js.native
+    var signal: js.UndefOr[String] = js.undefined
     
-    var test: js.UndefOr[String] = js.native
+    var test: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Value[Null]] = js.native
+    var value: js.UndefOr[Value[Null]] = js.undefined
   }
   object VgValueRef {
     

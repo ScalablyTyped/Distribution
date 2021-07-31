@@ -2,31 +2,29 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousSizeLegendProps extends StObject {
   
   // default: ''
-  var circlesTotal: js.UndefOr[Double] = js.native
+  var circlesTotal: js.UndefOr[Double] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: 10
-  var endSize: js.UndefOr[Double] = js.native
+  var endSize: js.UndefOr[Double] = js.undefined
   
   // default: 20
-  var endTitle: Double | String = js.native
+  var endTitle: Double | String
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var startSize: js.UndefOr[Double] = js.native
+  var startSize: js.UndefOr[Double] = js.undefined
   
   // default: 2
-  var startTitle: Double | String = js.native
+  var startTitle: Double | String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ContinuousSizeLegendProps {
   

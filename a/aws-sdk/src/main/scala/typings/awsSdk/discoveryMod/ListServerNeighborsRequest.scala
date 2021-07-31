@@ -2,36 +2,34 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServerNeighborsRequest extends StObject {
   
   /**
     * Configuration ID of the server for which neighbors are being listed.
     */
-  var configurationId: ConfigurationId = js.native
+  var configurationId: ConfigurationId
   
   /**
     * Maximum number of results to return in a single page of output.
     */
-  var maxResults: js.UndefOr[Integer] = js.native
+  var maxResults: js.UndefOr[Integer] = js.undefined
   
   /**
     * List of configuration IDs to test for one-hop-away.
     */
-  var neighborConfigurationIds: js.UndefOr[ConfigurationIdList] = js.native
+  var neighborConfigurationIds: js.UndefOr[ConfigurationIdList] = js.undefined
   
   /**
     * Token to retrieve the next set of results. For example, if you previously specified 100 IDs for ListServerNeighborsRequest$neighborConfigurationIds but set ListServerNeighborsRequest$maxResults to 10, you received a set of 10 results along with a token. Use that token in this query to get the next set of 10.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Flag to indicate if port and protocol information is needed as part of the response.
     */
-  var portInformationNeeded: js.UndefOr[Boolean] = js.native
+  var portInformationNeeded: js.UndefOr[Boolean] = js.undefined
 }
 object ListServerNeighborsRequest {
   

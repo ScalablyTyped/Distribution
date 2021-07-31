@@ -2,17 +2,15 @@ package typings.autoSni
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Http extends StObject {
     
-    var http: js.UndefOr[Double] = js.native
+    var http: js.UndefOr[Double] = js.undefined
     
-    var https: js.UndefOr[Double] = js.native
+    var https: js.UndefOr[Double] = js.undefined
   }
   object Http {
     

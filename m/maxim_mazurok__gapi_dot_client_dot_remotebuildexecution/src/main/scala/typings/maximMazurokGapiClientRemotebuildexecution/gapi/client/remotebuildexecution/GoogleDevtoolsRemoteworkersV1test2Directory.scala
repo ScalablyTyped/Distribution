@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemoteworkersV1test2Directory extends StObject {
   
   /** Any subdirectories */
-  var directories: js.UndefOr[js.Array[GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]] = js.native
+  var directories: js.UndefOr[js.Array[GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]] = js.undefined
   
   /** The files in this directory */
-  var files: js.UndefOr[js.Array[GoogleDevtoolsRemoteworkersV1test2FileMetadata]] = js.native
+  var files: js.UndefOr[js.Array[GoogleDevtoolsRemoteworkersV1test2FileMetadata]] = js.undefined
 }
 object GoogleDevtoolsRemoteworkersV1test2Directory {
   

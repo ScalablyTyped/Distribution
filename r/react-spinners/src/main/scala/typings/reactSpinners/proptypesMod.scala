@@ -6,27 +6,25 @@ import typings.reactSpinners.anon.RequiredLoaderSizeMarginP
 import typings.reactSpinners.anon.RequiredLoaderSizeProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proptypesMod {
   
-  @JSImport("react-spinners/helpers/proptypes", "heightWidthDefaults")
+  @JSImport("react-spinners/helpers/proptypes", JSImport.Namespace)
   @js.native
-  def heightWidthDefaults(height: Double, width: Double): RequiredLoaderHeightWidth = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-spinners/helpers/proptypes", "heightWidthRadiusDefaults")
-  @js.native
-  def heightWidthRadiusDefaults(height: Double, width: Double): RequiredLoaderHeightWidthColor = js.native
-  @JSImport("react-spinners/helpers/proptypes", "heightWidthRadiusDefaults")
-  @js.native
-  def heightWidthRadiusDefaults(height: Double, width: Double, radius: Double): RequiredLoaderHeightWidthColor = js.native
+  @scala.inline
+  def heightWidthDefaults(height: Double, width: Double): RequiredLoaderHeightWidth = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidth]
   
-  @JSImport("react-spinners/helpers/proptypes", "sizeDefaults")
-  @js.native
-  def sizeDefaults(sizeValue: Double): RequiredLoaderSizeProps = js.native
+  @scala.inline
+  def heightWidthRadiusDefaults(height: Double, width: Double): RequiredLoaderHeightWidthColor = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthRadiusDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidthColor]
+  @scala.inline
+  def heightWidthRadiusDefaults(height: Double, width: Double, radius: Double): RequiredLoaderHeightWidthColor = (^.asInstanceOf[js.Dynamic].applyDynamic("heightWidthRadiusDefaults")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[RequiredLoaderHeightWidthColor]
   
-  @JSImport("react-spinners/helpers/proptypes", "sizeMarginDefaults")
-  @js.native
-  def sizeMarginDefaults(sizeValue: Double): RequiredLoaderSizeMarginP = js.native
+  @scala.inline
+  def sizeDefaults(sizeValue: Double): RequiredLoaderSizeProps = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeDefaults")(sizeValue.asInstanceOf[js.Any]).asInstanceOf[RequiredLoaderSizeProps]
+  
+  @scala.inline
+  def sizeMarginDefaults(sizeValue: Double): RequiredLoaderSizeMarginP = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeMarginDefaults")(sizeValue.asInstanceOf[js.Any]).asInstanceOf[RequiredLoaderSizeMarginP]
 }

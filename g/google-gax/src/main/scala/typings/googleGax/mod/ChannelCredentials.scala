@@ -5,7 +5,6 @@ import typings.grpcGrpcJs.channelCredentialsMod.VerifyOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "ChannelCredentials")
@@ -17,12 +16,15 @@ abstract class ChannelCredentials protected ()
 /* static members */
 object ChannelCredentials {
   
+  @JSImport("google-gax", "ChannelCredentials")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Return a new ChannelCredentials instance with no credentials.
     */
-  @JSImport("google-gax", "ChannelCredentials.createInsecure")
-  @js.native
-  def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  @scala.inline
+  def createInsecure(): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
   
   /**
     * Return a new ChannelCredentials instance with a given set of credentials.
@@ -32,12 +34,11 @@ object ChannelCredentials {
     * @param privateKey The client certificate private key, if available.
     * @param certChain The client certificate key chain, if available.
     */
-  @JSImport("google-gax", "ChannelCredentials.createSsl")
-  @js.native
+  @scala.inline
   def createSsl(
     rootCerts: js.UndefOr[Buffer | Null],
     privateKey: js.UndefOr[Buffer | Null],
     certChain: js.UndefOr[Buffer | Null],
     verifyOptions: js.UndefOr[VerifyOptions]
-  ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = js.native
+  ): typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials]
 }

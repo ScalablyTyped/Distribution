@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElasticsearchDomainVPCOptions extends StObject {
   
   /**
     * The list of Availability Zones associated with the VPC subnets.
     */
-  var AvailabilityZones: js.UndefOr[NonEmptyStringList] = js.native
+  var AvailabilityZones: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * The list of security group IDs associated with the VPC endpoints for the domain.
     */
-  var SecurityGroupIds: js.UndefOr[NonEmptyStringList] = js.native
+  var SecurityGroupIds: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * A list of subnet IDs associated with the VPC endpoints for the domain.
     */
-  var SubnetIds: js.UndefOr[NonEmptyStringList] = js.native
+  var SubnetIds: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * ID for the VPC.
     */
-  var VPCId: js.UndefOr[NonEmptyString] = js.native
+  var VPCId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsElasticsearchDomainVPCOptions {
   

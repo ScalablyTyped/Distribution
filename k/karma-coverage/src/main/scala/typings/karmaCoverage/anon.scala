@@ -7,64 +7,63 @@ import typings.karmaCoverage.mod.Reporter
 import typings.karmaCoverage.mod.ReporterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined karma-coverage.karma.KarmaCoverageReporter & {  reporters :std.Array<karma-coverage.karma.KarmaCoverageReporter> | undefined} */
-  @js.native
   trait KarmaCoverageReporterrepo
-    extends /* moreSettings */ StringDictionary[js.Any] {
+    extends StObject
+       with /* moreSettings */ StringDictionary[js.Any] {
     
     /** This will be used to configure minimum threshold enforcement for coverage results */
-    var check: js.UndefOr[js.Any] = js.native
+    var check: js.UndefOr[js.Any] = js.undefined
     
     /** This will be used to output coverage reports. When you set a relative path, the directory is resolved against the basePath. */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /** If you use one of these reporters, `cobertura`, `lcovonly`, `teamcity`, `text` or `text-summary`, you may set the file option to specify the output file */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * You can opt to include all sources files, as indicated by the coverage preprocessor,
       * in your code coverage data, even if there are no tests covering them
       */
-    var includeAllSources: js.UndefOr[Boolean] = js.native
+    var includeAllSources: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Karma-coverage can infers the instrumenter regarding of the file extension.
       * It is possible to override this behavior and point out an instrumenter
       * for the files matching a specific pattern.
       */
-    var instrumenter: js.UndefOr[js.Any] = js.native
+    var instrumenter: js.UndefOr[js.Any] = js.undefined
     
     /** You can use multiple reporters, by providing array of options */
-    var reporters: js.UndefOr[js.Array[Reporter]] with js.UndefOr[js.Array[KarmaCoverageReporter]] = js.native
+    var reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]
     
     /** You can opt to specify a source store allowing for external coverage collectors access to the instrumented code. */
-    var sourceStore: js.UndefOr[Store] = js.native
+    var sourceStore: js.UndefOr[Store] = js.undefined
     
     /** This will be used in complement of the coverageReporter.dir option to generate the full output directory path */
-    var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.native
+    var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.undefined
     
     /** Specify a reporter type */
-    var `type`: js.UndefOr[ReporterType] = js.native
+    var `type`: js.UndefOr[ReporterType] = js.undefined
     
     /**
       * If set to true, then CoffeeScript files instrumented with Ibrik will use
       * the .js extension for the transpiled source (without this option,
       * the JavaScript files will keep the original .coffee extension)
       */
-    var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.native
+    var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.undefined
     
     /** This will be used to set the coverage threshold colors */
-    var watermarks: js.UndefOr[js.Any] = js.native
+    var watermarks: js.UndefOr[js.Any] = js.undefined
   }
   object KarmaCoverageReporterrepo {
     
     @scala.inline
-    def apply(reporters: js.UndefOr[js.Array[Reporter]] with js.UndefOr[js.Array[KarmaCoverageReporter]]): KarmaCoverageReporterrepo = {
+    def apply(reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): KarmaCoverageReporterrepo = {
       val __obj = js.Dynamic.literal(reporters = reporters.asInstanceOf[js.Any])
       __obj.asInstanceOf[KarmaCoverageReporterrepo]
     }
@@ -103,7 +102,7 @@ object anon {
       def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
       
       @scala.inline
-      def setReporters(value: js.UndefOr[js.Array[Reporter]] with js.UndefOr[js.Array[KarmaCoverageReporter]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      def setReporters(value: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])

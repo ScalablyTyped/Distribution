@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchSuggestionCollection extends ISearchSuggestionCollection
+trait SearchSuggestionCollection
+  extends StObject
+     with ISearchSuggestionCollection
 object SearchSuggestionCollection {
   
   @scala.inline

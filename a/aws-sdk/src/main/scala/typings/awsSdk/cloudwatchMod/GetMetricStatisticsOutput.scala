@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMetricStatisticsOutput extends StObject {
   
   /**
     * The data points for the specified metric.
     */
-  var Datapoints: js.UndefOr[typings.awsSdk.cloudwatchMod.Datapoints] = js.native
+  var Datapoints: js.UndefOr[typings.awsSdk.cloudwatchMod.Datapoints] = js.undefined
   
   /**
     * A label for the specified metric.
     */
-  var Label: js.UndefOr[MetricLabel] = js.native
+  var Label: js.UndefOr[MetricLabel] = js.undefined
 }
 object GetMetricStatisticsOutput {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminAccount extends StObject {
   
   /**
     * The AWS account ID for the account.
     */
-  var AdminAccountId: js.UndefOr[String] = js.native
+  var AdminAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the account is enabled as the delegated administrator.
     */
-  var AdminStatus: js.UndefOr[typings.awsSdk.guarddutyMod.AdminStatus] = js.native
+  var AdminStatus: js.UndefOr[typings.awsSdk.guarddutyMod.AdminStatus] = js.undefined
 }
 object AdminAccount {
   

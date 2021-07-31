@@ -2,7 +2,6 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,30 +12,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * your private network -- you can request Cloud Build to run the workers in
   * your own project by creating a custom workers pool.
   */
-@js.native
 trait SchemaWorkerPool extends StObject {
   
   /**
     * Output only. Time at which the request to create the `WorkerPool` was
     * received.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time at which the request to delete the `WorkerPool` was
     * received.
     */
-  var deleteTime: js.UndefOr[String] = js.native
+  var deleteTime: js.UndefOr[String] = js.undefined
   
   /**
     * User-defined name of the `WorkerPool`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The project ID of the GCP project in which the `WorkerPool` is created.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * List of regions to create the `WorkerPool`. Regions can&#39;t be empty.
@@ -45,35 +43,35 @@ trait SchemaWorkerPool extends StObject {
     * must add the new region to the `regions` field to enable the `WorkerPool`
     * in that region.
     */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Output only. The service account used to manage the `WorkerPool`. The
     * service account must have the Compute Instance Admin (Beta) permission at
     * the project level.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. WorkerPool Status.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time at which the request to update the `WorkerPool` was
     * received.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration to be used for a creating workers in the `WorkerPool`.
     */
-  var workerConfig: js.UndefOr[SchemaWorkerConfig] = js.native
+  var workerConfig: js.UndefOr[SchemaWorkerConfig] = js.undefined
   
   /**
     * Total number of workers to be created across all requested regions.
     */
-  var workerCount: js.UndefOr[String] = js.native
+  var workerCount: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerPool {
   

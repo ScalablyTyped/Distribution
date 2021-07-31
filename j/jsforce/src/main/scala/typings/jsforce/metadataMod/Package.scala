@@ -4,31 +4,29 @@ import typings.jsforce.jsforceStrings.Restricted
 import typings.jsforce.jsforceStrings.Unrestricted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Package extends StObject {
   
-  var apiAccessLevel: js.UndefOr[Unrestricted | Restricted] = js.native
+  var apiAccessLevel: js.UndefOr[Unrestricted | Restricted] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
-  var namespacePrefix: js.UndefOr[String] = js.native
+  var namespacePrefix: js.UndefOr[String] = js.undefined
   
-  var objectPermissions: js.UndefOr[js.Array[ProfileObjectPermissions]] = js.native
+  var objectPermissions: js.UndefOr[js.Array[ProfileObjectPermissions]] = js.undefined
   
-  var postInstallClass: js.UndefOr[String] = js.native
+  var postInstallClass: js.UndefOr[String] = js.undefined
   
-  var setupWeblink: js.UndefOr[String] = js.native
+  var setupWeblink: js.UndefOr[String] = js.undefined
   
-  var types: js.Array[PackageTypeMembers] = js.native
+  var types: js.Array[PackageTypeMembers]
   
-  var uninstallClass: js.UndefOr[String] = js.native
+  var uninstallClass: js.UndefOr[String] = js.undefined
   
-  var version: String = js.native
+  var version: String
 }
 object Package {
   

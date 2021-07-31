@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storagegatewayGatewayMod {
@@ -115,6 +114,10 @@ object storagegatewayGatewayMod {
   /* static members */
   object Gateway {
     
+    @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Gateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -124,107 +127,101 @@ object storagegatewayGatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Gateway = js.native
-    @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Gateway = js.native
-    @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayState): Gateway = js.native
-    @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): Gateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayState): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
     
     /**
       * Returns true if the given object is an instance of Gateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ Boolean]
   }
   
-  @js.native
   trait GatewayArgs extends StObject {
     
     /**
       * Gateway activation key during resource creation. Conflicts with `gatewayIpAddress`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
       */
-    val activationKey: js.UndefOr[Input[String]] = js.native
+    val activationKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The average download bandwidth rate limit in bits per second. This is supported for the `CACHED`, `STORED`, and `VTL` gateway types.
       */
-    val averageDownloadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.native
+    val averageDownloadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The average upload bandwidth rate limit in bits per second. This is supported for the `CACHED`, `STORED`, and `VTL` gateway types.
       */
-    val averageUploadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.native
+    val averageUploadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group to use to monitor and log events in the gateway.
       */
-    val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.native
+    val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activationKey`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
       */
-    val gatewayIpAddress: js.UndefOr[Input[String]] = js.native
+    val gatewayIpAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the gateway.
       */
-    val gatewayName: Input[String] = js.native
+    val gatewayName: Input[String]
     
     /**
       * Time zone for the gateway. The time zone is of the format "GMT", "GMT-hr:mm", or "GMT+hr:mm". For example, `GMT-4:00` indicates the time is 4 hours behind GMT. The time zone is used, for example, for scheduling snapshots and your gateway's maintenance schedule.
       */
-    val gatewayTimezone: Input[String] = js.native
+    val gatewayTimezone: Input[String]
     
     /**
       * Type of the gateway. The default value is `STORED`. Valid values: `CACHED`, `FILE_S3`, `STORED`, `VTL`.
       */
-    val gatewayType: js.UndefOr[Input[String]] = js.native
+    val gatewayType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VPC endpoint address to be used when activating your gateway. This should be used when your instance is in a private subnet. Requires HTTP access from client computer running Pulumi. More info on what ports are required by your VPC Endpoint Security group in [Activating a Gateway in a Virtual Private Cloud](https://docs.aws.amazon.com/storagegateway/latest/userguide/gateway-private-link.html).
       */
-    val gatewayVpcEndpoint: js.UndefOr[Input[String]] = js.native
+    val gatewayVpcEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of medium changer to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `STK-L700`, `AWS-Gateway-VTL`.
       */
-    val mediumChangerType: js.UndefOr[Input[String]] = js.native
+    val mediumChangerType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
       */
     val smbActiveDirectorySettings: js.UndefOr[
         Input[typings.pulumiAws.inputMod.storagegateway.GatewaySmbActiveDirectorySettings]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. This provider can only detect drift of the existence of a guest password, not its actual value from the gateway. This provider can however update the password with changing the argument.
       */
-    val smbGuestPassword: js.UndefOr[Input[String]] = js.native
+    val smbGuestPassword: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the type of security strategy. Valid values are: `ClientSpecified`, `MandatorySigning`, and `MandatoryEncryption`. See [Setting a Security Level for Your Gateway](https://docs.aws.amazon.com/storagegateway/latest/userguide/managing-gateway-file.html#security-strategy) for more information.
       */
-    val smbSecurityStrategy: js.UndefOr[Input[String]] = js.native
+    val smbSecurityStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Type of tape drive to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.
       */
-    val tapeDriveType: js.UndefOr[Input[String]] = js.native
+    val tapeDriveType: js.UndefOr[Input[String]] = js.undefined
   }
   object GatewayArgs {
     
@@ -323,95 +320,94 @@ object storagegatewayGatewayMod {
     }
   }
   
-  @js.native
   trait GatewayState extends StObject {
     
     /**
       * Gateway activation key during resource creation. Conflicts with `gatewayIpAddress`. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
       */
-    val activationKey: js.UndefOr[Input[String]] = js.native
+    val activationKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the gateway.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The average download bandwidth rate limit in bits per second. This is supported for the `CACHED`, `STORED`, and `VTL` gateway types.
       */
-    val averageDownloadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.native
+    val averageDownloadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The average upload bandwidth rate limit in bits per second. This is supported for the `CACHED`, `STORED`, and `VTL` gateway types.
       */
-    val averageUploadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.native
+    val averageUploadRateLimitInBitsPerSec: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group to use to monitor and log events in the gateway.
       */
-    val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.native
+    val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the gateway.
       */
-    val gatewayId: js.UndefOr[Input[String]] = js.native
+    val gatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activationKey`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
       */
-    val gatewayIpAddress: js.UndefOr[Input[String]] = js.native
+    val gatewayIpAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the gateway.
       */
-    val gatewayName: js.UndefOr[Input[String]] = js.native
+    val gatewayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Time zone for the gateway. The time zone is of the format "GMT", "GMT-hr:mm", or "GMT+hr:mm". For example, `GMT-4:00` indicates the time is 4 hours behind GMT. The time zone is used, for example, for scheduling snapshots and your gateway's maintenance schedule.
       */
-    val gatewayTimezone: js.UndefOr[Input[String]] = js.native
+    val gatewayTimezone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of the gateway. The default value is `STORED`. Valid values: `CACHED`, `FILE_S3`, `STORED`, `VTL`.
       */
-    val gatewayType: js.UndefOr[Input[String]] = js.native
+    val gatewayType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VPC endpoint address to be used when activating your gateway. This should be used when your instance is in a private subnet. Requires HTTP access from client computer running Pulumi. More info on what ports are required by your VPC Endpoint Security group in [Activating a Gateway in a Virtual Private Cloud](https://docs.aws.amazon.com/storagegateway/latest/userguide/gateway-private-link.html).
       */
-    val gatewayVpcEndpoint: js.UndefOr[Input[String]] = js.native
+    val gatewayVpcEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of medium changer to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `STK-L700`, `AWS-Gateway-VTL`.
       */
-    val mediumChangerType: js.UndefOr[Input[String]] = js.native
+    val mediumChangerType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
       */
     val smbActiveDirectorySettings: js.UndefOr[
         Input[typings.pulumiAws.inputMod.storagegateway.GatewaySmbActiveDirectorySettings]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. This provider can only detect drift of the existence of a guest password, not its actual value from the gateway. This provider can however update the password with changing the argument.
       */
-    val smbGuestPassword: js.UndefOr[Input[String]] = js.native
+    val smbGuestPassword: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the type of security strategy. Valid values are: `ClientSpecified`, `MandatorySigning`, and `MandatoryEncryption`. See [Setting a Security Level for Your Gateway](https://docs.aws.amazon.com/storagegateway/latest/userguide/managing-gateway-file.html#security-strategy) for more information.
       */
-    val smbSecurityStrategy: js.UndefOr[Input[String]] = js.native
+    val smbSecurityStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Type of tape drive to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.
       */
-    val tapeDriveType: js.UndefOr[Input[String]] = js.native
+    val tapeDriveType: js.UndefOr[Input[String]] = js.undefined
   }
   object GatewayState {
     

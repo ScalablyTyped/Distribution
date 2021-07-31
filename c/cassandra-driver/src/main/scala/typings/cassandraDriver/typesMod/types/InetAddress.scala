@@ -3,7 +3,6 @@ package typings.cassandraDriver.typesMod.types
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.InetAddress")
@@ -23,8 +22,11 @@ class InetAddress protected () extends StObject {
 }
 object InetAddress {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.InetAddress.fromString")
+  @JSImport("cassandra-driver/lib/types", "types.InetAddress")
   @js.native
-  def fromString(value: String): InetAddress = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromString(value: String): InetAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[InetAddress]
 }

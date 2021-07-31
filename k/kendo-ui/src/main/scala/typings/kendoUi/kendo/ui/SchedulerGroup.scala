@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerGroup extends StObject {
   
-  var date: js.UndefOr[Boolean] = js.native
+  var date: js.UndefOr[Boolean] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[js.Any] = js.native
+  var resources: js.UndefOr[js.Any] = js.undefined
 }
 object SchedulerGroup {
   

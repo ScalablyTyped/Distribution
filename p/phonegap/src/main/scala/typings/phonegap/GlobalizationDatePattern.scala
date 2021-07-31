@@ -2,19 +2,17 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalizationDatePattern extends StObject {
   
-  var dst_offset: Double = js.native
+  var dst_offset: Double
   
-  var pattern: String = js.native
+  var pattern: String
   
-  var timezone: String = js.native
+  var timezone: String
   
-  var utc_offset: Double = js.native
+  var utc_offset: Double
 }
 object GlobalizationDatePattern {
   

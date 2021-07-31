@@ -3,14 +3,12 @@ package typings.semanticUiTab.anon
 import typings.semanticUiTab.semanticUiTabStrings.once
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'evaluateScripts'> */
-@js.native
 trait PickImplevaluateScripts extends StObject {
   
-  var evaluateScripts: once | Boolean = js.native
+  var evaluateScripts: once | Boolean
 }
 object PickImplevaluateScripts {
   

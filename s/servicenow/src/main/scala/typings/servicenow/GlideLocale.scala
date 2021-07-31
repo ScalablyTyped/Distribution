@@ -2,15 +2,13 @@ package typings.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideLocale extends StObject {
   
-  def getDecimalSeparator(): String = js.native
+  def getDecimalSeparator(): String
   
-  def getGroupingSeparator(): String = js.native
+  def getGroupingSeparator(): String
 }
 object GlideLocale {
   

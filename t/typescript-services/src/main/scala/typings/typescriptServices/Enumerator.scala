@@ -2,17 +2,15 @@ package typings.typescriptServices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enumerator extends StObject {
   
-  def atEnd(): Boolean = js.native
+  def atEnd(): Boolean
   
-  def item(): js.Any = js.native
+  def item(): js.Any
   
-  def moveNext(): Boolean = js.native
+  def moveNext(): Boolean
 }
 object Enumerator {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCertificateAuthorityAuditReportResponse extends StObject {
   
   /**
     * An alphanumeric string that contains a report identifier.
     */
-  var AuditReportId: js.UndefOr[typings.awsSdk.acmpcaMod.AuditReportId] = js.native
+  var AuditReportId: js.UndefOr[typings.awsSdk.acmpcaMod.AuditReportId] = js.undefined
   
   /**
     * The key that uniquely identifies the report file in your S3 bucket.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.acmpcaMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.acmpcaMod.S3Key] = js.undefined
 }
 object CreateCertificateAuthorityAuditReportResponse {
   

@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,23 @@ object DominantSizeAxis extends StObject {
     * Dominant on the X axis.
     */
   @js.native
-  sealed trait X extends DominantSizeAxis
+  sealed trait X
+    extends StObject
+       with DominantSizeAxis
   
   /**
     * Dominant on the Y axis.
     */
   @js.native
-  sealed trait Y extends DominantSizeAxis
+  sealed trait Y
+    extends StObject
+       with DominantSizeAxis
   
   /**
     * Dominant on the Z axis.
     */
   @js.native
-  sealed trait Z extends DominantSizeAxis
+  sealed trait Z
+    extends StObject
+       with DominantSizeAxis
 }

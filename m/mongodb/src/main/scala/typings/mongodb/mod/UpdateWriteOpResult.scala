@@ -4,23 +4,21 @@ import typings.mongodb.anon.IdObjectId
 import typings.mongodb.anon.NModified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWriteOpResult extends StObject {
   
-  var connection: js.Any = js.native
+  var connection: js.Any
   
-  var matchedCount: scala.Double = js.native
+  var matchedCount: scala.Double
   
-  var modifiedCount: scala.Double = js.native
+  var modifiedCount: scala.Double
   
-  var result: NModified = js.native
+  var result: NModified
   
-  var upsertedCount: scala.Double = js.native
+  var upsertedCount: scala.Double
   
-  var upsertedId: IdObjectId = js.native
+  var upsertedId: IdObjectId
 }
 object UpdateWriteOpResult {
   

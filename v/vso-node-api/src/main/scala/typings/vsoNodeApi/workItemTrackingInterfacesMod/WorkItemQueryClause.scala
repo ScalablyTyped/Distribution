@@ -2,46 +2,44 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemQueryClause extends StObject {
   
   /**
     * Child clauses if the current clause is a logical operator
     */
-  var clauses: js.Array[WorkItemQueryClause] = js.native
+  var clauses: js.Array[WorkItemQueryClause]
   
   /**
     * Field associated with condition
     */
-  var field: WorkItemFieldReference = js.native
+  var field: WorkItemFieldReference
   
   /**
     * Right side of the condition when a field to field comparison
     */
-  var fieldValue: WorkItemFieldReference = js.native
+  var fieldValue: WorkItemFieldReference
   
   /**
     * Determines if this is a field to field comparison
     */
-  var isFieldValue: Boolean = js.native
+  var isFieldValue: Boolean
   
   /**
     * Logical operator separating the condition clause
     */
-  var logicalOperator: LogicalOperation = js.native
+  var logicalOperator: LogicalOperation
   
   /**
     * The field operator
     */
-  var operator: WorkItemFieldOperation = js.native
+  var operator: WorkItemFieldOperation
   
   /**
     * Right side of the condition when a field to value comparison
     */
-  var value: String = js.native
+  var value: String
 }
 object WorkItemQueryClause {
   

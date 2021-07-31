@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecListenerTimeout extends StObject {
   
   /**
     * Timeouts for gRPC listeners.
     */
-  var grpc: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutGrpc]] = js.native
+  var grpc: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutGrpc]] = js.undefined
   
   /**
     * Timeouts for HTTP listeners.
     */
-  var http: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutHttp]] = js.native
+  var http: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutHttp]] = js.undefined
   
   /**
     * Timeouts for HTTP2 listeners.
     */
-  var http2: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutHttp2]] = js.native
+  var http2: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutHttp2]] = js.undefined
   
   /**
     * Timeouts for TCP listeners.
     */
-  var tcp: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutTcp]] = js.native
+  var tcp: js.UndefOr[Input[VirtualNodeSpecListenerTimeoutTcp]] = js.undefined
 }
 object VirtualNodeSpecListenerTimeout {
   

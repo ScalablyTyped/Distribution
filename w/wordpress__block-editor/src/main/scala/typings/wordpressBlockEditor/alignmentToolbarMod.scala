@@ -6,7 +6,6 @@ import typings.wordpressBlockEditor.alignmentToolbarMod.AlignmentToolbar.Props
 import typings.wordpressBlockEditor.anon.Align
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignmentToolbarMod {

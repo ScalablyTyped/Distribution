@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpecServiceDiscoveryDns extends StObject {
   
   /**
     * The DNS host name for your virtual node.
     */
-  var hostname: String = js.native
+  var hostname: String
 }
 object VirtualNodeSpecServiceDiscoveryDns {
   

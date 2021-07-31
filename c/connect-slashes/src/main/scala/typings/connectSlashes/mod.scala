@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,31 +13,30 @@ object mod {
   /**
     * @see https://github.com/avinoamr/connect-slashes#usage
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(addTrailingSlashes: Boolean): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(addTrailingSlashes.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(addTrailingSlashes: Boolean, options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(addTrailingSlashes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(addTrailingSlashes: Unit, options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(addTrailingSlashes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("connect-slashes", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-slashes", JSImport.Namespace)
-  @js.native
-  def apply(addTrailingSlashes: js.UndefOr[scala.Nothing], options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-slashes", JSImport.Namespace)
-  @js.native
-  def apply(addTrailingSlashes: Boolean): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("connect-slashes", JSImport.Namespace)
-  @js.native
-  def apply(addTrailingSlashes: Boolean, options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Additional settings
     * @see https://github.com/avinoamr/connect-slashes#additional-settings
     */
-  @js.native
   trait Options extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var code: js.UndefOr[Double] = js.native
+    var code: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object Options {
     

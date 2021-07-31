@@ -3,24 +3,22 @@ package typings.vegaLite.anon
 import typings.vegaTypings.transformMod.Transforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<vega-lite.vega-lite/build/src/vega.schema.VgData> */
-@js.native
 trait PartialVgData extends StObject {
   
-  var format: js.UndefOr[Feature] = js.native
+  var format: js.UndefOr[Feature] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var transform: js.UndefOr[js.Array[Transforms]] = js.native
+  var transform: js.UndefOr[js.Array[Transforms]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 object PartialVgData {
   

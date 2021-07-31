@@ -2,30 +2,28 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppProfile extends StObject {
   
   /** Long form description of the use case for this AppProfile. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Strongly validated etag for optimistic concurrency control. Preserve the value returned from `GetAppProfile` when calling `UpdateAppProfile` to fail the request if there has been a
     * modification in the mean time. The `update_mask` of the request need not include `etag` for this protection to apply. See [Wikipedia](https://en.wikipedia.org/wiki/HTTP_ETag) and
     * [RFC 7232](https://tools.ietf.org/html/rfc7232#section-2.3) for more details.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Use a multi-cluster routing policy. */
-  var multiClusterRoutingUseAny: js.UndefOr[js.Any] = js.native
+  var multiClusterRoutingUseAny: js.UndefOr[js.Any] = js.undefined
   
   /** The unique name of the app profile. Values are of the form `projects/{project}/instances/{instance}/appProfiles/_a-zA-Z0-9*`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Use a single-cluster routing policy. */
-  var singleClusterRouting: js.UndefOr[SingleClusterRouting] = js.native
+  var singleClusterRouting: js.UndefOr[SingleClusterRouting] = js.undefined
 }
 object AppProfile {
   

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaInfo extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait MediaInfo extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-MediaInfo.html#altText)
     */
-  var altText: String = js.native
+  var altText: String
   
   /**
     * Defines a caption for the media.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-MediaInfo.html#caption)
     */
-  var caption: String = js.native
+  var caption: String
   
   /**
     * The title of the media element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-mixins-MediaInfo.html#title)
     */
-  var title: String = js.native
+  var title: String
 }
 object MediaInfo {
   

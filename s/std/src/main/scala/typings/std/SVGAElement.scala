@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the properties of <a> element, as well as methods to manipulate them. */
 @js.native
 trait SVGAElement
-  extends SVGGraphicsElement
+  extends StObject
+     with SVGGraphicsElement
      with SVGURIReference {
   
   /* InferMemberOverrides */

@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientStorage.anon
 import typings.maximMazurokGapiClientStorage.gapi.client.storage.Expr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /**
     * The condition that is associated with this binding. NOTE: an unsatisfied condition will not allow user access via current binding. Different bindings, including their
     * conditions, are examined independently.
     */
-  var condition: js.UndefOr[Expr] = js.native
+  var condition: js.UndefOr[Expr] = js.undefined
   
   /**
     * A collection of identifiers for members who may assume the provided role. Recognized identifiers are as follows:
@@ -27,7 +25,7 @@ trait Condition extends StObject {
     * - projectEditor:projectid — Editors of the given project. For example, projectEditor:my-example-project
     * - projectViewer:projectid — Viewers of the given project. For example, projectViewer:my-example-project
     */
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The role to which members belong. Two types of roles are supported: new IAM roles, which grant permissions that do not map directly to those provided by ACLs, and legacy IAM
@@ -43,7 +41,7 @@ trait Condition extends StObject {
     * - roles/storage.legacyBucketWriter — Read access to buckets with object listing/creation/deletion. Equivalent to an ACL entry on a bucket with the WRITER role.
     * - roles/storage.legacyBucketOwner — Read and write access to existing buckets with object listing/creation/deletion. Equivalent to an ACL entry on a bucket with the OWNER role.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object Condition {
   

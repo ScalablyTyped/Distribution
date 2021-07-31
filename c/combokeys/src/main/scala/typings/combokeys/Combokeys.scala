@@ -6,7 +6,6 @@ import typings.std.Event
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Combokeys {
@@ -103,7 +102,8 @@ object Combokeys {
   
   @js.native
   trait CombokeysStatic
-    extends Instantiable1[/* element */ Element, typings.combokeys.Combokeys.Combokeys] {
+    extends StObject
+       with Instantiable1[/* element */ Element, typings.combokeys.Combokeys.Combokeys] {
     
     /**
       * all instances of Combokeys

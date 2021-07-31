@@ -2,41 +2,41 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PromptArgs extends AsyncCallback[Unit] {
+trait PromptArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Message alignment, supporting enumeration left/center/right, iOS center, android left.
     */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * OK button text, which is “Cancel” by default.
     */
-  var cancelButtonText: js.UndefOr[String] = js.native
+  var cancelButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Text of prompt box, which is “Enter contents here” by default.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * OK button text, which is “OK” by default.
     */
-  var okButtonText: js.UndefOr[String] = js.native
+  var okButtonText: js.UndefOr[String] = js.undefined
   
   /**
     * Prompt text for the entry box.
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * Title of prompt box.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PromptArgs {
   

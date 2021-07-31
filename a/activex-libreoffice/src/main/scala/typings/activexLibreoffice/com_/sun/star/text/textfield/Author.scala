@@ -12,37 +12,37 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of an author text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Author extends TextField_ {
+trait Author
+  extends StObject
+     with TextField_ {
   
   /**
     * this is the display format for this field
     * @see com.sun.star.text.AuthorDisplayFormat
     */
-  var AuthorFormat: Double = js.native
+  var AuthorFormat: Double
   
   /** the is the content of this field */
-  var Content: String = js.native
+  var Content: String
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /** determines whether the full name of the author is displayed rather than the initials. */
-  var FullName: Boolean = js.native
+  var FullName: Boolean
   
   /** If this flag is set to false the author will be overridden by the current author each time the document is saved. */
-  var IsFixed: Boolean = js.native
+  var IsFixed: Boolean
 }
 object Author {
   

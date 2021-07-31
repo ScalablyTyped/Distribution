@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchJobInstanceDetails extends StObject {
   
   /** The number of times the agent that the agent attempts to apply the patch. */
-  var attemptCount: js.UndefOr[String] = js.native
+  var attemptCount: js.UndefOr[String] = js.undefined
   
   /** If the patch fails, this field provides the reason. */
-  var failureReason: js.UndefOr[String] = js.native
+  var failureReason: js.UndefOr[String] = js.undefined
   
   /** The unique identifier for the instance. This identifier is defined by the server. */
-  var instanceSystemId: js.UndefOr[String] = js.native
+  var instanceSystemId: js.UndefOr[String] = js.undefined
   
   /** The instance name in the form `projects/∗/zones/∗/instances/ *` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Current state of instance patch. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object PatchJobInstanceDetails {
   

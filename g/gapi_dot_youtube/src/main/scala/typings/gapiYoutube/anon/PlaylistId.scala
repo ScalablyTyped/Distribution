@@ -2,26 +2,24 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistId extends StObject {
   
   /**
     * The value that YouTube uses to uniquely identify the playlist.
     */
-  var playlistId: String = js.native
+  var playlistId: String
   
   /**
     * The value that YouTube uses to uniquely identify the item in the playlist.
     */
-  var playlistItemId: String = js.native
+  var playlistItemId: String
   
   /**
     *  The resourceId object contains information that identifies the resource that was added to the playlist.
     */
-  var resourceId: Kind = js.native
+  var resourceId: Kind
 }
 object PlaylistId {
   

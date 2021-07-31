@@ -12,7 +12,7 @@ Koa middleware to make other middleware conditional
 | Keywords           | koa, skip, condition |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1153 |
+| # downloads        | 795 |
 | # stars            | 0 |
 
 ## Links

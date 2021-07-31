@@ -8,21 +8,19 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerPropsTypeMod {
   
-  @js.native
   trait DrawerProps extends StObject {
     
-    var onOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[left | right | top | bottom] = js.native
+    var position: js.UndefOr[left | right | top | bottom] = js.undefined
     
-    var sidebar: js.UndefOr[ReactNode] = js.native
+    var sidebar: js.UndefOr[ReactNode] = js.undefined
   }
   object DrawerProps {
     
@@ -61,30 +59,31 @@ object drawerPropsTypeMod {
     }
   }
   
-  @js.native
-  trait DrawerWebProps extends DrawerProps {
+  trait DrawerWebProps
+    extends StObject
+       with DrawerProps {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentStyle: js.UndefOr[CSSProperties] = js.native
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var docked: js.UndefOr[Boolean] = js.native
+    var docked: js.UndefOr[Boolean] = js.undefined
     
-    var dragHandleStyle: js.UndefOr[CSSProperties] = js.native
+    var dragHandleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var dragToggleDistance: js.UndefOr[Double] = js.native
+    var dragToggleDistance: js.UndefOr[Double] = js.undefined
     
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var sidebarStyle: js.UndefOr[CSSProperties] = js.native
+    var sidebarStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
-    var transitions: js.UndefOr[Boolean] = js.native
+    var transitions: js.UndefOr[Boolean] = js.undefined
   }
   object DrawerWebProps {
     

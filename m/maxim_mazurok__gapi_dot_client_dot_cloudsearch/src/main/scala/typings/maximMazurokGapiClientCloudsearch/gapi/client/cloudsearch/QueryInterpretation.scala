@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryInterpretation extends StObject {
   
-  var interpretationType: js.UndefOr[String] = js.native
+  var interpretationType: js.UndefOr[String] = js.undefined
   
   /**
     * The interpretation of the query used in search. For example, queries with natural language intent like "email from john" will be interpreted as "from:john source:mail". This field
     * will not be filled when the reason is NOT_ENOUGH_RESULTS_FOUND_FOR_USER_QUERY.
     */
-  var interpretedQuery: js.UndefOr[String] = js.native
+  var interpretedQuery: js.UndefOr[String] = js.undefined
   
   /** The reason for interpretation of the query. This field will not be UNSPECIFIED if the interpretation type is not NONE. */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object QueryInterpretation {
   

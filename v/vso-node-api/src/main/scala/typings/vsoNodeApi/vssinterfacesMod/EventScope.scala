@@ -2,26 +2,24 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventScope extends StObject {
   
   /**
     * Required: This is the identity of the scope for the type.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Optional: The display name of the scope
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Required: The event specific type of a scope.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object EventScope {
   

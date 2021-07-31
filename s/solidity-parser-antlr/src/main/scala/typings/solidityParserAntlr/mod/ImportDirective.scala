@@ -2,34 +2,28 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportDirective
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var path: String = js.native
+  var path: String
   
-  var symbolAliases: js.Array[js.Tuple2[String, String]] = js.native
+  var symbolAliases: js.Array[js.Tuple2[String, String]]
   
   @JSName("type")
-  var type_ImportDirective: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective = js.native
+  var type_ImportDirective: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective
   
-  var unitAlias: String = js.native
+  var unitAlias: String
 }
 object ImportDirective {
   
   @scala.inline
-  def apply(
-    path: String,
-    symbolAliases: js.Array[js.Tuple2[String, String]],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ImportDirective,
-    unitAlias: String
-  ): ImportDirective = {
+  def apply(path: String, symbolAliases: js.Array[js.Tuple2[String, String]], unitAlias: String): ImportDirective = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], symbolAliases = symbolAliases.asInstanceOf[js.Any], unitAlias = unitAlias.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDirective")
     __obj.asInstanceOf[ImportDirective]
   }
   

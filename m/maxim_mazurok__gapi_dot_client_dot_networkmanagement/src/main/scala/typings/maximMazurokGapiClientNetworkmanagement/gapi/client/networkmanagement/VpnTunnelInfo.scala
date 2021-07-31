@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnTunnelInfo extends StObject {
   
   /** Name of a VPN tunnel. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine network where the VPN tunnel is configured. */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /** Name of a GCP region where this VPN tunnel is configured. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** URI of a VPN gateway at remote end of the tunnel. */
-  var remoteGateway: js.UndefOr[String] = js.native
+  var remoteGateway: js.UndefOr[String] = js.undefined
   
   /** Remote VPN gateway's IP address. */
-  var remoteGatewayIp: js.UndefOr[String] = js.native
+  var remoteGatewayIp: js.UndefOr[String] = js.undefined
   
   /** Type of the routing policy. */
-  var routingType: js.UndefOr[String] = js.native
+  var routingType: js.UndefOr[String] = js.undefined
   
   /** URI of the VPN gateway at local end of the tunnel. */
-  var sourceGateway: js.UndefOr[String] = js.native
+  var sourceGateway: js.UndefOr[String] = js.undefined
   
   /** Local VPN gateway's IP address. */
-  var sourceGatewayIp: js.UndefOr[String] = js.native
+  var sourceGatewayIp: js.UndefOr[String] = js.undefined
   
   /** URI of a VPN tunnel. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object VpnTunnelInfo {
   

@@ -3,58 +3,56 @@ package typings.googleapis.v1managementMod.gamesManagementV1management
 import typings.googleapis.anon.FamilyName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a Player resource.
   */
-@js.native
 trait SchemaPlayer extends StObject {
   
   /**
     * The base URL for the image that represents the player.
     */
-  var avatarImageUrl: js.UndefOr[String] = js.native
+  var avatarImageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The url to the landscape mode player banner image.
     */
-  var bannerUrlLandscape: js.UndefOr[String] = js.native
+  var bannerUrlLandscape: js.UndefOr[String] = js.undefined
   
   /**
     * The url to the portrait mode player banner image.
     */
-  var bannerUrlPortrait: js.UndefOr[String] = js.native
+  var bannerUrlPortrait: js.UndefOr[String] = js.undefined
   
   /**
     * The name to display for the player.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * An object to represent Play Game experience information for the player.
     */
-  var experienceInfo: js.UndefOr[SchemaGamesPlayerExperienceInfoResource] = js.native
+  var experienceInfo: js.UndefOr[SchemaGamesPlayerExperienceInfoResource] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesManagement#player.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the last time this player played a multiplayer game with
     * the currently authenticated player. Populated for PLAYED_WITH player
     * collection members.
     */
-  var lastPlayedWith: js.UndefOr[SchemaGamesPlayedResource] = js.native
+  var lastPlayedWith: js.UndefOr[SchemaGamesPlayedResource] = js.undefined
   
   /**
     * An object representation of the individual components of the player&#39;s
     * name. For some players, these fields may not be present.
     */
-  var name: js.UndefOr[FamilyName] = js.native
+  var name: js.UndefOr[FamilyName] = js.undefined
   
   /**
     * The player ID that was used for this player the first time they signed
@@ -62,23 +60,23 @@ trait SchemaPlayer extends StObject {
     * for the requesting player, only if the player ID has subsequently
     * changed, and only to clients that support remapping player IDs.
     */
-  var originalPlayerId: js.UndefOr[String] = js.native
+  var originalPlayerId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the player.
     */
-  var playerId: js.UndefOr[String] = js.native
+  var playerId: js.UndefOr[String] = js.undefined
   
   /**
     * The player&#39;s profile settings. Controls whether or not the
     * player&#39;s profile is visible to other players.
     */
-  var profileSettings: js.UndefOr[SchemaProfileSettings] = js.native
+  var profileSettings: js.UndefOr[SchemaProfileSettings] = js.undefined
   
   /**
     * The player&#39;s title rewarded for their game activities.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaPlayer {
   

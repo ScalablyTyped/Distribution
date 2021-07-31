@@ -2,13 +2,11 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extra extends StObject {
   
-  var extra: Boolean = js.native
+  var extra: Boolean
 }
 object Extra {
   

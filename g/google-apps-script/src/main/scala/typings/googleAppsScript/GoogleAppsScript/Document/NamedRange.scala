@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,16 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   *     doc.addNamedRange('myUniquePrefix-tables', rangeBuilder.build());
   */
-@js.native
 trait NamedRange extends StObject {
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getRange(): Range = js.native
+  def getRange(): Range
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object NamedRange {
   

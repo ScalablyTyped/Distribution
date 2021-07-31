@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key for the tag. Keys are not case sensitive and must be unique for the index, FAQ, or data source.
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     * The value associated with the tag. The value may be an empty string but it can't be null.
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,12 +30,11 @@ object mod {
     def this(props: StatelessProps, context: js.Any) = this()
   }
   
-  @js.native
   trait GroupType extends StObject {
     
-    var heading: js.UndefOr[String] = js.native
+    var heading: js.UndefOr[String] = js.undefined
     
-    var items: js.Array[ItemType] = js.native
+    var items: js.Array[ItemType]
   }
   object GroupType {
     
@@ -63,28 +61,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ItemType extends StObject {
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var elemBefore: js.UndefOr[ReactNode] = js.native
+    var elemBefore: js.UndefOr[ReactNode] = js.undefined
     
-    var filterValues: js.UndefOr[js.Array[String]] = js.native
+    var filterValues: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var tooltipDescription: js.UndefOr[String] = js.native
+    var tooltipDescription: js.UndefOr[String] = js.undefined
     
-    var tooltipPosition: js.UndefOr[top | bottom | left] = js.native
+    var tooltipPosition: js.UndefOr[top | bottom | left] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object ItemType {
     
@@ -162,102 +159,101 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
     /** Subtle items do not have a background color. */
-    var appearance: js.UndefOr[typings.atlaskitSingleSelect.atlaskitSingleSelectStrings.default | subtle] = js.native
+    var appearance: js.UndefOr[typings.atlaskitSingleSelect.atlaskitSingleSelectStrings.default | subtle] = js.undefined
     
     /** Item to be selected on component mount. */
-    var defaultSelected: js.UndefOr[ItemType] = js.native
+    var defaultSelected: js.UndefOr[ItemType] = js.undefined
     
     /** Sets whether the dropdown should be constrained to the width of its trigger */
-    var droplistShouldFitContainer: js.UndefOr[Boolean] = js.native
+    var droplistShouldFitContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets whether the field should be selectable. If it is, the field will be
       * a text box, which will filter the items.
       */
-    var hasAutocomplete: js.UndefOr[Boolean] = js.native
+    var hasAutocomplete: js.UndefOr[Boolean] = js.undefined
     
     /** id property to be passed down to the html select component. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** message to show on the dialog when isInvalid is true */
-    var invalidMessage: js.UndefOr[ReactNode] = js.native
+    var invalidMessage: js.UndefOr[ReactNode] = js.undefined
     
     /** Sets whether the component should be open on mount. */
-    var isDefaultOpen: js.UndefOr[Boolean] = js.native
+    var isDefaultOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the select is selectable. Changes hover state. */
-    var isDisabled: js.UndefOr[Boolean] = js.native
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
     
     /** controls the top margin of the label component rendered. */
-    var isFirstChild: js.UndefOr[Boolean] = js.native
+    var isFirstChild: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set whether there is an error with the selection. Sets an orange border
       * and shows the warning icon.
       */
-    var isInvalid: js.UndefOr[Boolean] = js.native
+    var isInvalid: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets whether form including select can be submitted without an option
       * being made.
       */
-    var isRequired: js.UndefOr[Boolean] = js.native
+    var isRequired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of objects, each one of which must have an array of items, and
       * may have a heading. All items should have content and value properties, with
       * content being the displayed text.
       */
-    var items: js.UndefOr[js.Array[GroupType]] = js.native
+    var items: js.UndefOr[js.Array[GroupType]] = js.undefined
     
     /** Label to be displayed above select. */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** Set the max height of the dropdown list in pixels. */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** name property to be passed to the html select element. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Message to display in any group in items if there are no items in it,
       * including if there is one item that has been selected.
       */
-    var noMatchesFound: js.UndefOr[String] = js.native
+    var noMatchesFound: js.UndefOr[String] = js.undefined
     
     /** Handler to be called when the filtered items changes. */
-    var onFilterChange: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.native
+    var onFilterChange: js.UndefOr[js.Function1[/* filter */ String, Unit]] = js.undefined
     
     /**
       * Handler called when the select is opened or closed. Called with an object
       * that has both the event, and the new isOpen state.
       */
-    var onOpenChange: js.UndefOr[js.Function1[/* change */ Event, Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function1[/* change */ Event, Unit]] = js.undefined
     
     /**
       * Handler to be called when an item is selected. Called with an object that
       * has the item selected as a property on the object.
       */
-    var onSelected: js.UndefOr[js.Function1[/* item */ ItemType, Unit]] = js.native
+    var onSelected: js.UndefOr[js.Function1[/* item */ ItemType, Unit]] = js.undefined
     
     /** Text to be shown within the select when no item is selected. */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /** Where the select dropdown should be displayed relative to the field position. */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /** Sets whether the field should be constrained to the width of its trigger */
-    var shouldFitContainer: js.UndefOr[Boolean] = js.native
+    var shouldFitContainer: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the droplist should flip its position when there is not enough space. */
-    var shouldFlip: js.UndefOr[Boolean] = js.native
+    var shouldFlip: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the field will become focused. */
-    var shouldFocus: js.UndefOr[Boolean] = js.native
+    var shouldFocus: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     
@@ -421,11 +417,12 @@ object mod {
   
   type SingleSelect = Component[Props, js.Object, js.Any]
   
-  @js.native
-  trait StatelessProps extends Props {
+  trait StatelessProps
+    extends StObject
+       with Props {
     
     /** Value to be used when filtering the items. Compared against 'content'. */
-    var filterValue: js.UndefOr[String] = js.native
+    var filterValue: js.UndefOr[String] = js.undefined
     
     /**
       * Sets whether the field is loading data. The same property is used
@@ -433,20 +430,20 @@ object mod {
       * subsequent loading of more options. The component reacts accordingly
       * based on the `items` provided.
       */
-    var isLoading: js.UndefOr[Boolean] = js.native
+    var isLoading: js.UndefOr[Boolean] = js.undefined
     
     /** Sets whether the Select dropdown is open. */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Message to be displayed when the component is set to its loading state.
       * The message might be displayed differently depending on whether or not
       * there are items already being rendered.
       */
-    var loadingMessage: js.UndefOr[String] = js.native
+    var loadingMessage: js.UndefOr[String] = js.undefined
     
     /** The selected item data */
-    var selectedItem: js.UndefOr[ItemType] = js.native
+    var selectedItem: js.UndefOr[ItemType] = js.undefined
   }
   object StatelessProps {
     

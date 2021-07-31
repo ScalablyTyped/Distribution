@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBackupInput extends StObject {
   
   /**
     * Specified name for the backup.
     */
-  var BackupName: typings.awsSdk.dynamodbMod.BackupName = js.native
+  var BackupName: typings.awsSdk.dynamodbMod.BackupName
   
   /**
     * The name of the table.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object CreateBackupInput {
   

@@ -2,16 +2,14 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of object values.
   */
-@js.native
 trait SchemaObjectValues extends StObject {
   
-  var values: js.UndefOr[js.Array[SchemaStructuredDataObject]] = js.native
+  var values: js.UndefOr[js.Array[SchemaStructuredDataObject]] = js.undefined
 }
 object SchemaObjectValues {
   

@@ -12,7 +12,7 @@ setImmediate polyfill for the browser and node
 | Keywords           | setImmediate, task, setAsap, setTimeout, process.nextTick |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 63709 |
+| # downloads        | 79064 |
 | # stars            | 0 |
 
 ## Links

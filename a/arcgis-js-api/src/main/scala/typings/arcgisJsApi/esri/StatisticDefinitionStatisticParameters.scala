@@ -6,25 +6,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StatisticDefinitionStatisticParameters extends Object {
+trait StatisticDefinitionStatisticParameters
+  extends StObject
+     with Object {
   
   /**
     * Specify `ASC` (ascending) or `DESC` (descending) to control the order of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
     */
-  var orderBy: js.UndefOr[ASC | DESC] = js.native
+  var orderBy: js.UndefOr[ASC | DESC] = js.undefined
   
   /**
     * Percentile value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
     */
-  var value: Double = js.native
+  var value: Double
 }
 object StatisticDefinitionStatisticParameters {
   

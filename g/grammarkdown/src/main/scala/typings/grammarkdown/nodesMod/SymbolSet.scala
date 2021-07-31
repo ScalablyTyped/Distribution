@@ -4,7 +4,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.CloseBraceToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBraceToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "SymbolSet")
@@ -15,14 +14,10 @@ class SymbolSet protected ()
   def this(openBraceToken: Token[OpenBraceToken], elements: js.Array[SymbolSpan]) = this()
   def this(
     openBraceToken: Token[OpenBraceToken],
-    elements: js.UndefOr[scala.Nothing],
-    closeBraceToken: Token[CloseBraceToken]
-  ) = this()
-  def this(
-    openBraceToken: Token[OpenBraceToken],
     elements: js.Array[SymbolSpan],
     closeBraceToken: Token[CloseBraceToken]
   ) = this()
+  def this(openBraceToken: Token[OpenBraceToken], elements: Unit, closeBraceToken: Token[CloseBraceToken]) = this()
   
   val closeBraceToken: js.UndefOr[Token[CloseBraceToken]] = js.native
   

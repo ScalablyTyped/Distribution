@@ -2,35 +2,34 @@ package typings.jsonPointer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(`object`: js.Object): JSONPointerWrap = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[JSONPointerWrap]
+  
   @JSImport("json-pointer", JSImport.Namespace)
   @js.native
-  def apply(`object`: js.Object): JSONPointerWrap = js.native
+  val ^ : js.Any = js.native
   
   /**
     *  Builds a json pointer from an array of reference tokens.
     */
-  @JSImport("json-pointer", "compile")
-  @js.native
-  def compile(str: js.Array[String]): String = js.native
+  @scala.inline
+  def compile(str: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *  Creates a dictionary object (pointer -> value).
     */
-  @JSImport("json-pointer", "dict")
-  @js.native
-  def dict(`object`: js.Object): js.Object = js.native
+  @scala.inline
+  def dict(`object`: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("dict")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   /**
     *  Escapes a reference token.
     */
-  @JSImport("json-pointer", "escape")
-  @js.native
-  def escape(str: String): String = js.native
+  @scala.inline
+  def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *  Wrap an object with accessors
@@ -38,84 +37,76 @@ object mod {
   /**
     *  Looks up a JSON pointer in an object.
     */
-  @JSImport("json-pointer", "get")
-  @js.native
-  def get(`object`: js.Object, pointer: String): js.Any = js.native
+  @scala.inline
+  def get(`object`: js.Object, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     *  Tests if an object has a value for a JSON pointer.
     */
-  @JSImport("json-pointer", "has")
-  @js.native
-  def has(`object`: js.Object, pointer: String): Boolean = js.native
+  @scala.inline
+  def has(`object`: js.Object, pointer: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     *  Converts a JSON pointer into an array of reference tokens.
     */
-  @JSImport("json-pointer", "parse")
-  @js.native
-  def parse(str: String): js.Array[String] = js.native
+  @scala.inline
+  def parse(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     *  Removes an attribute of object referenced by pointer
     */
-  @JSImport("json-pointer", "remove")
-  @js.native
-  def remove(`object`: js.Object, pointer: String): Unit = js.native
+  @scala.inline
+  def remove(`object`: js.Object, pointer: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *  Set a value for a JSON pointer on object.
     */
-  @JSImport("json-pointer", "set")
-  @js.native
-  def set(`object`: js.Object, pointer: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def set(`object`: js.Object, pointer: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *  Unescape a reference token.
     */
-  @JSImport("json-pointer", "unescape")
-  @js.native
-  def unescape(str: String): String = js.native
+  @scala.inline
+  def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *  Just like: each(pointer.dict(obj), iterator);
     */
-  @JSImport("json-pointer", "walk")
-  @js.native
-  def walk(`object`: js.Object, iterator: js.Function2[/* value */ js.Any, /* key */ String, Unit]): Unit = js.native
+  @scala.inline
+  def walk(`object`: js.Object, iterator: js.Function2[/* value */ js.Any, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(`object`.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait JSONPointerWrap extends StObject {
     
     /**
       *  Creates a dictionary object (pointer -> value).
       */
-    def dict(): js.Object = js.native
+    def dict(): js.Object
     
     /**
       *  Looks up a JSON pointer in an object.
       */
-    def get(pointer: String): js.Any = js.native
+    def get(pointer: String): js.Any
     
     /**
       *  Tests if an object has a value for a JSON pointer.
       */
-    def has(pointer: String): Boolean = js.native
+    def has(pointer: String): Boolean
     
     /**
       *  Removes an attribute of object referenced by pointer
       */
-    def remove(pointer: String): Unit = js.native
+    def remove(pointer: String): Unit
     
     /**
       *  Set a value for a JSON pointer on object.
       */
-    def set(pointer: String, value: js.Any): Unit = js.native
+    def set(pointer: String, value: js.Any): Unit
     
     /**
       *  Just like: each(pointer.dict(obj), iterator);
       */
-    def walk(iterator: js.Function2[/* value */ js.Any, /* key */ String, Unit]): Unit = js.native
+    def walk(iterator: js.Function2[/* value */ js.Any, /* key */ String, Unit]): Unit
   }
   object JSONPointerWrap {
     

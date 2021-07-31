@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionalConfiguration extends StObject {
   
   /**
     * The name of the secondary cluster
     */
-  var ReplicationGroupId: String = js.native
+  var ReplicationGroupId: String
   
   /**
     * The AWS region where the cluster is stored
     */
-  var ReplicationGroupRegion: String = js.native
+  var ReplicationGroupRegion: String
   
   /**
     * A list of PreferredAvailabilityZones objects that specifies the configuration of a node group in the resharded cluster. 
     */
-  var ReshardingConfiguration: ReshardingConfigurationList = js.native
+  var ReshardingConfiguration: ReshardingConfigurationList
 }
 object RegionalConfiguration {
   

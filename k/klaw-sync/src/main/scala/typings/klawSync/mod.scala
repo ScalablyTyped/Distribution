@@ -4,26 +4,26 @@ import typings.klawSync.anon.ReaddirSync
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(root: String): js.Array[Item] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Item]]
+  @scala.inline
+  def apply(root: String, options: Options): js.Array[Item] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
+  
   @JSImport("klaw-sync", JSImport.Namespace)
   @js.native
-  def apply(root: String): js.Array[Item] = js.native
-  @JSImport("klaw-sync", JSImport.Namespace)
-  @js.native
-  def apply(root: String, options: Options): js.Array[Item] = js.native
+  val ^ : js.Any = js.native
   
   type Filter = js.Function1[/* item */ Item, Boolean]
   
-  @js.native
   trait Item extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var stats: Stats = js.native
+    var stats: Stats
   }
   object Item {
     
@@ -44,7 +44,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -53,35 +52,35 @@ object mod {
       * @default -1
       * @since v5.0.0
       */
-    var depthLimit: js.UndefOr[Double] = js.native
+    var depthLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * @description function that gets one argument fn({path: '', stats: {}}) and returns true to include
       *              or false to exclude the item
       * @since v2.0.0
       */
-    var filter: js.UndefOr[Filter] = js.native
+    var filter: js.UndefOr[Filter] = js.undefined
     
     /**
       * @description Custom fs, useful when mocking fs object.
       * @default graceful-fs
       * @since v4.0.0
       */
-    var fs: js.UndefOr[ReaddirSync] = js.native
+    var fs: js.UndefOr[ReaddirSync] = js.undefined
     
     /**
       * @description True to only return files (ignore directories).
       *              Defaults to false if not specified.
       * @default false
       */
-    var nodir: js.UndefOr[Boolean] = js.native
+    var nodir: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description True to only return directories (ignore files).
       *              Defaults to false if not specified.
       * @default false
       */
-    var nofile: js.UndefOr[Boolean] = js.native
+    var nofile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @description traverse all subdirectories, regardless of `filter` option.
@@ -92,7 +91,7 @@ object mod {
       *
       * @since v6.0.0
       */
-    var traverseAll: js.UndefOr[Boolean] = js.native
+    var traverseAll: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

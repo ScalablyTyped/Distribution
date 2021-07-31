@@ -3,14 +3,16 @@ package typings.keya
 import typings.keya.sqliteMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMainMod {
   
-  @JSImport("keya/out/node/main", "store")
+  @JSImport("keya/out/node/main", JSImport.Namespace)
   @js.native
-  def store[T](name: String): js.Promise[default[T]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def store[T](name: String): js.Promise[default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("store")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[default[T]]]
   
   @JSImport("keya/out/node/main", "stores")
   @js.native

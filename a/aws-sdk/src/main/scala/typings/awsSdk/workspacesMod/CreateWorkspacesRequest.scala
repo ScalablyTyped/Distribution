@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorkspacesRequest extends StObject {
   
   /**
     * The WorkSpaces to create. You can specify up to 25 WorkSpaces.
     */
-  var Workspaces: WorkspaceRequestList = js.native
+  var Workspaces: WorkspaceRequestList
 }
 object CreateWorkspacesRequest {
   

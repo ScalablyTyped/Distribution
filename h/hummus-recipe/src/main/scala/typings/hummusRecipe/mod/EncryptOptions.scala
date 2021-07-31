@@ -2,17 +2,15 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptOptions extends StObject {
   
-  var ownerPassword: js.UndefOr[String] = js.native
+  var ownerPassword: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var userProtectionFlag: js.UndefOr[Double] = js.native
+  var userProtectionFlag: js.UndefOr[Double] = js.undefined
 }
 object EncryptOptions {
   

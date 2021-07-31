@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the FilterControl extension.
   */
-@js.native
-trait MVCxClientFilterControl extends ASPxClientFilterControl {
+trait MVCxClientFilterControl
+  extends StObject
+     with ASPxClientFilterControl {
   
   /**
     * Returns the filter control's state.
     * @param obj An object that receives a filter control's callback parameters.
     */
-  def FillStateObject(obj: js.Any): Unit = js.native
+  def FillStateObject(obj: js.Any): Unit
 }
 object MVCxClientFilterControl {
   

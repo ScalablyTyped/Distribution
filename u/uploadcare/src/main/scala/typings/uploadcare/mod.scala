@@ -4,41 +4,42 @@ import typings.uploadcare.anon.FromUrl
 import typings.uploadcare.anon.Remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(publicKey: String, privateKey: String): Instance = (^.asInstanceOf[js.Dynamic].apply(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  
   @JSImport("uploadcare", JSImport.Namespace)
   @js.native
-  def apply(publicKey: String, privateKey: String): Instance = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait File extends StObject {
     
-    var datetime_removed: String | Null = js.native
+    var datetime_removed: String | Null
     
-    var datetime_stored: String = js.native
+    var datetime_stored: String
     
-    var datetime_uploaded: String = js.native
+    var datetime_uploaded: String
     
-    var image_info: ImageInfo = js.native
+    var image_info: ImageInfo
     
-    var is_image: Boolean = js.native
+    var is_image: Boolean
     
-    var is_ready: Boolean = js.native
+    var is_ready: Boolean
     
-    var mime_type: String = js.native
+    var mime_type: String
     
-    var original_file_url: String = js.native
+    var original_file_url: String
     
-    var original_filename: String = js.native
+    var original_filename: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var url: String = js.native
+    var url: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object File {
     
@@ -56,7 +57,7 @@ object mod {
       url: String,
       uuid: String
     ): File = {
-      val __obj = js.Dynamic.literal(datetime_stored = datetime_stored.asInstanceOf[js.Any], datetime_uploaded = datetime_uploaded.asInstanceOf[js.Any], image_info = image_info.asInstanceOf[js.Any], is_image = is_image.asInstanceOf[js.Any], is_ready = is_ready.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], original_file_url = original_file_url.asInstanceOf[js.Any], original_filename = original_filename.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(datetime_stored = datetime_stored.asInstanceOf[js.Any], datetime_uploaded = datetime_uploaded.asInstanceOf[js.Any], image_info = image_info.asInstanceOf[js.Any], is_image = is_image.asInstanceOf[js.Any], is_ready = is_ready.asInstanceOf[js.Any], mime_type = mime_type.asInstanceOf[js.Any], original_file_url = original_file_url.asInstanceOf[js.Any], original_filename = original_filename.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], datetime_removed = null)
       __obj.asInstanceOf[File]
     }
     
@@ -104,24 +105,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageInfo extends StObject {
     
-    var datetime_original: Null = js.native
+    var datetime_original: Null
     
-    var dpi: js.Array[Double] = js.native
+    var dpi: js.Array[Double]
     
-    var format: String = js.native
+    var format: String
     
-    var geo_location: Null = js.native
+    var geo_location: Null
     
-    var height: Double = js.native
+    var height: Double
     
-    var orientation: Null = js.native
+    var orientation: Null
     
-    var sequence: Boolean = js.native
+    var sequence: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImageInfo {
     
@@ -172,12 +172,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Instance extends StObject {
     
-    var file: FromUrl = js.native
+    var file: FromUrl
     
-    var files: Remove = js.native
+    var files: Remove
   }
   object Instance {
     

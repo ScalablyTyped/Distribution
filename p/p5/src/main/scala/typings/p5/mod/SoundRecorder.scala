@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,13 +22,9 @@ trait SoundRecorder extends StObject {
     *   be called once the recording completes
     */
   def record(soundFile: SoundFile): Unit = js.native
-  def record(
-    soundFile: SoundFile,
-    duration: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
   def record(soundFile: SoundFile, duration: Double): Unit = js.native
-  def record(soundFile: SoundFile, duration: Double, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def record(soundFile: SoundFile, duration: Double, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def record(soundFile: SoundFile, duration: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     *   Connect a specific device to the p5.SoundRecorder.

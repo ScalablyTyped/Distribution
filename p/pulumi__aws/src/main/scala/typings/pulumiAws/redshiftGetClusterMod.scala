@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redshiftGetClusterMod {
   
-  @JSImport("@pulumi/aws/redshift/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/redshift/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/redshift/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * The cluster identifier
       */
-    val clusterIdentifier: String = js.native
+    val clusterIdentifier: String
     
     /**
       * The tags associated to the cluster
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetClusterArgs {
     
@@ -51,160 +51,159 @@ object redshiftGetClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
     /**
       * Whether major version upgrades can be applied during maintenance period
       */
-    val allowVersionUpgrade: Boolean = js.native
+    val allowVersionUpgrade: Boolean
     
     /**
       * The backup retention period
       */
-    val automatedSnapshotRetentionPeriod: Double = js.native
+    val automatedSnapshotRetentionPeriod: Double
     
     /**
       * The availability zone of the cluster
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * The name of the S3 bucket where the log files are to be stored
       */
-    val bucketName: String = js.native
+    val bucketName: String
     
     /**
       * The cluster identifier
       */
-    val clusterIdentifier: String = js.native
+    val clusterIdentifier: String
     
     /**
       * The name of the parameter group to be associated with this cluster
       */
-    val clusterParameterGroupName: String = js.native
+    val clusterParameterGroupName: String
     
     /**
       * The public key for the cluster
       */
-    val clusterPublicKey: String = js.native
+    val clusterPublicKey: String
     
     /**
       * The cluster revision number
       */
-    val clusterRevisionNumber: String = js.native
+    val clusterRevisionNumber: String
     
     /**
       * The security groups associated with the cluster
       */
-    val clusterSecurityGroups: js.Array[String] = js.native
+    val clusterSecurityGroups: js.Array[String]
     
     /**
       * The name of a cluster subnet group to be associated with this cluster
       */
-    val clusterSubnetGroupName: String = js.native
+    val clusterSubnetGroupName: String
     
     /**
       * The cluster type
       */
-    val clusterType: String = js.native
+    val clusterType: String
     
-    val clusterVersion: String = js.native
+    val clusterVersion: String
     
     /**
       * The name of the default database in the cluster
       */
-    val databaseName: String = js.native
+    val databaseName: String
     
     /**
       * The Elastic IP of the cluster
       */
-    val elasticIp: String = js.native
+    val elasticIp: String
     
     /**
       * Whether cluster logging is enabled
       */
-    val enableLogging: Boolean = js.native
+    val enableLogging: Boolean
     
     /**
       * Whether the cluster data is encrypted
       */
-    val encrypted: Boolean = js.native
+    val encrypted: Boolean
     
     /**
       * The cluster endpoint
       */
-    val endpoint: String = js.native
+    val endpoint: String
     
     /**
       * Whether enhanced VPC routing is enabled
       */
-    val enhancedVpcRouting: Boolean = js.native
+    val enhancedVpcRouting: Boolean
     
     /**
       * The IAM roles associated to the cluster
       */
-    val iamRoles: js.Array[String] = js.native
+    val iamRoles: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The KMS encryption key associated to the cluster
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
     /**
       * Username for the master DB user
       */
-    val masterUsername: String = js.native
+    val masterUsername: String
     
     /**
       * The cluster node type
       */
-    val nodeType: String = js.native
+    val nodeType: String
     
     /**
       * The number of nodes in the cluster
       */
-    val numberOfNodes: Double = js.native
+    val numberOfNodes: Double
     
     /**
       * The port the cluster responds on
       */
-    val port: Double = js.native
+    val port: Double
     
     /**
       * The maintenance window
       */
-    val preferredMaintenanceWindow: String = js.native
+    val preferredMaintenanceWindow: String
     
     /**
       * Whether the cluster is publicly accessible
       */
-    val publiclyAccessible: Boolean = js.native
+    val publiclyAccessible: Boolean
     
     /**
       * The folder inside the S3 bucket where the log files are stored
       */
-    val s3KeyPrefix: String = js.native
+    val s3KeyPrefix: String
     
     /**
       * The tags associated to the cluster
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The VPC Id associated with the cluster
       */
-    val vpcId: String = js.native
+    val vpcId: String
     
     /**
       * The VPC security group Ids associated with the cluster
       */
-    val vpcSecurityGroupIds: js.Array[String] = js.native
+    val vpcSecurityGroupIds: js.Array[String]
   }
   object GetClusterResult {
     

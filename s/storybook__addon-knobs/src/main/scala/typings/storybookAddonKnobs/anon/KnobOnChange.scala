@@ -4,15 +4,13 @@ import typings.react.mod.Validator
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnobOnChange extends StObject {
   
-  var knob: Validator[KnobControlConfig[Double]] = js.native
+  var knob: Validator[KnobControlConfig[Double]]
   
-  var onChange: Validator[js.Function1[/* value */ Double, Double]] = js.native
+  var onChange: Validator[js.Function1[/* value */ Double, Double]]
 }
 object KnobOnChange {
   

@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.mark_open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait MarkOpenToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait MarkOpenToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_MarkOpenToken: mark_open = js.native
+  var type_MarkOpenToken: mark_open
 }
 object MarkOpenToken {
   
   @scala.inline
-  def apply(level: Double, `type`: mark_open): MarkOpenToken = {
+  def apply(level: Double): MarkOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mark_open")
     __obj.asInstanceOf[MarkOpenToken]
   }
   

@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionItem extends StObject {
   
   /**
@@ -17,52 +15,52 @@ trait CompletionItem extends StObject {
     * (for example adding an import statement at the top of the file if the completion item will
     * insert an unqualified type).
     */
-  var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.native
+  var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
   
   /**
     * An optional [command](#Command) that is executed *after* inserting this completion. *Note* that
     * additional modifications to the current document should be described with the
     * [additionalTextEdits](#CompletionItem.additionalTextEdits)-property.
     */
-  var command: js.UndefOr[Command] = js.native
+  var command: js.UndefOr[Command] = js.undefined
   
   /**
     * An optional set of characters that when pressed while this completion is active will accept it first and
     * then type that character. *Note* that all commit characters should have `length=1` and that superfluous
     * characters will be ignored.
     */
-  var commitCharacters: js.UndefOr[js.Array[String]] = js.native
+  var commitCharacters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An data entry field that is preserved on a completion item between
     * a [CompletionRequest](#CompletionRequest) and a [CompletionResolveRequest]
     * (#CompletionResolveRequest)
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates if this item is deprecated.
     * @deprecated Use `tags` instead.
     */
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A human-readable string with additional information
     * about this item, like type or symbol information.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * A human-readable string that represents a doc-comment.
     */
-  var documentation: js.UndefOr[String | MarkupContent] = js.native
+  var documentation: js.UndefOr[String | MarkupContent] = js.undefined
   
   /**
     * A string that should be used when filtering a set of
     * completion items. When `falsy` the [label](#CompletionItem.label)
     * is used.
     */
-  var filterText: js.UndefOr[String] = js.native
+  var filterText: js.UndefOr[String] = js.undefined
   
   /**
     * A string that should be inserted into a document when selecting
@@ -76,27 +74,27 @@ trait CompletionItem extends StObject {
     * will only insert `sole`. Therefore it is recommended to use `textEdit` instead
     * since it avoids additional client side interpretation.
     */
-  var insertText: js.UndefOr[String] = js.native
+  var insertText: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the insert text. The format applies to both the `insertText` property
     * and the `newText` property of a provided `textEdit`. If ommitted defaults to
     * `InsertTextFormat.PlainText`.
     */
-  var insertTextFormat: js.UndefOr[InsertTextFormat] = js.native
+  var insertTextFormat: js.UndefOr[InsertTextFormat] = js.undefined
   
   /**
     * The kind of this completion item. Based of the kind
     * an icon is chosen by the editor.
     */
-  var kind: js.UndefOr[CompletionItemKind] = js.native
+  var kind: js.UndefOr[CompletionItemKind] = js.undefined
   
   /**
     * The label of this completion item. By default
     * also the text that is inserted when selecting
     * this completion.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Select this item when showing.
@@ -105,21 +103,21 @@ trait CompletionItem extends StObject {
     * tool / client decides which item that is. The rule is that the *first*
     * item of those that match best is selected.
     */
-  var preselect: js.UndefOr[Boolean] = js.native
+  var preselect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string that should be used when comparing this item
     * with other items. When `falsy` the [label](#CompletionItem.label)
     * is used.
     */
-  var sortText: js.UndefOr[String] = js.native
+  var sortText: js.UndefOr[String] = js.undefined
   
   /**
     * Tags for this completion item.
     *
     * @since 3.15.0
     */
-  var tags: js.UndefOr[js.Array[CompletionItemTag]] = js.native
+  var tags: js.UndefOr[js.Array[CompletionItemTag]] = js.undefined
   
   /**
     * An [edit](#TextEdit) which is applied to a document when selecting
@@ -129,7 +127,7 @@ trait CompletionItem extends StObject {
     * *Note:* The text edit's range must be a [single line] and it must contain the position
     * at which completion has been requested.
     */
-  var textEdit: js.UndefOr[TextEdit] = js.native
+  var textEdit: js.UndefOr[TextEdit] = js.undefined
 }
 object CompletionItem {
   
@@ -139,13 +137,16 @@ object CompletionItem {
     __obj.asInstanceOf[CompletionItem]
   }
   
+  @JSImport("vscode-languageserver-types", "CompletionItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a completion item and seed it with a label.
     * @param label The completion item's label
     */
-  @JSImport("vscode-languageserver-types", "CompletionItem.create")
-  @js.native
-  def create(label: String): CompletionItem = js.native
+  @scala.inline
+  def create(label: String): CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[CompletionItem]
   
   @scala.inline
   implicit class CompletionItemMutableBuilder[Self <: CompletionItem] (val x: Self) extends AnyVal {

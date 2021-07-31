@@ -4,15 +4,13 @@ import typings.vis.visStrings.cap
 import typings.vis.visStrings.flip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineTooltipOption extends StObject {
   
-  var followMouse: js.UndefOr[Boolean] = js.native
+  var followMouse: js.UndefOr[Boolean] = js.undefined
   
-  var overflowMethod: js.UndefOr[cap | flip] = js.native
+  var overflowMethod: js.UndefOr[cap | flip] = js.undefined
 }
 object TimelineTooltipOption {
   

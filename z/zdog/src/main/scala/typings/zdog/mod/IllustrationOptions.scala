@@ -4,12 +4,11 @@ import typings.std.HTMLCanvasElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IllustrationOptions
-  extends AnchorOptions
+  extends StObject
+     with AnchorOptions
      with DraggerOptions {
   
   /**
@@ -17,31 +16,31 @@ trait IllustrationOptions
     * @default true
     * @see {@link https://zzz.dog/api#illustration-centered Zdog API}
     */
-  val centered: js.UndefOr[Boolean] = js.native
+  val centered: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables dragging to rotate on an item.
     * @default false
     * @see {@link https://zzz.dog/api#illustration-dragrotate Zdog API}
     */
-  val dragRotate: js.UndefOr[Boolean | Anchor] = js.native
+  val dragRotate: js.UndefOr[Boolean | Anchor] = js.undefined
   
   /**
     * The HTML element to render on, either a <canvas> or an  <svg>.
     * @see {@link https://zzz.dog/api#illustration-element Zdog API}
     */
-  val element: String | HTMLCanvasElement | SVGSVGElement = js.native
+  val element: String | HTMLCanvasElement | SVGSVGElement
   
-  val onPrerender: js.UndefOr[PrerenderListener] = js.native
+  val onPrerender: js.UndefOr[PrerenderListener] = js.undefined
   
-  val onResize: js.UndefOr[ResizeListener] = js.native
+  val onResize: js.UndefOr[ResizeListener] = js.undefined
   
   /**
     * Enables fluid resizing of element.
     * @default false
     * @see {@link https://zzz.dog/api#illustration-resize Zdog API}
     */
-  val resize: js.UndefOr[Boolean] = js.native
+  val resize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enlarges or shrinks the displayed size of the rendering.
@@ -49,7 +48,7 @@ trait IllustrationOptions
     * @default 1
     * @see {@link https://zzz.dog/api#illustration-zoom Zdog API}
     */
-  val zoom: js.UndefOr[Double] = js.native
+  val zoom: js.UndefOr[Double] = js.undefined
 }
 object IllustrationOptions {
   

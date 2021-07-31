@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortConfig extends StObject {
   
   /**
     * The list of criteria that determine when and how to abort the job.
     */
-  var criteriaList: AbortCriteriaList = js.native
+  var criteriaList: AbortCriteriaList
 }
 object AbortConfig {
   

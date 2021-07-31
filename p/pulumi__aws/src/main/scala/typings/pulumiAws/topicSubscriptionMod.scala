@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicSubscriptionMod {
@@ -74,6 +73,10 @@ object topicSubscriptionMod {
   /* static members */
   object TopicSubscription {
     
+    @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TopicSubscription resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,70 +86,64 @@ object topicSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TopicSubscription = js.native
-    @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TopicSubscription = js.native
-    @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicSubscriptionState): TopicSubscription = js.native
-    @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicSubscriptionState, opts: CustomResourceOptions): TopicSubscription = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicSubscriptionState): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicSubscriptionState, opts: CustomResourceOptions): TopicSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicSubscription]
     
     /**
       * Returns true if the given object is an instance of TopicSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ Boolean]
   }
   
-  @js.native
   trait TopicSubscriptionArgs extends StObject {
     
     /**
       * Integer indicating number of minutes to wait in retying mode for fetching subscription arn before marking it as failure. Only applicable for http and https protocols (default is 1 minute).
       */
-    val confirmationTimeoutInMinutes: js.UndefOr[Input[Double]] = js.native
+    val confirmationTimeoutInMinutes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * JSON String with the delivery policy (retries, backoff, etc.) that will be used in the subscription - this only applies to HTTP/S subscriptions. Refer to the [SNS docs](https://docs.aws.amazon.com/sns/latest/dg/DeliveryPolicies.html) for more details.
       */
-    val deliveryPolicy: js.UndefOr[Input[String]] = js.native
+    val deliveryPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The endpoint to send data to, the contents will vary with the protocol. (see below for more information)
       */
-    val endpoint: Input[String] = js.native
+    val endpoint: Input[String]
     
     /**
       * Boolean indicating whether the end point is capable of [auto confirming subscription](http://docs.aws.amazon.com/sns/latest/dg/SendMessageToHttp.html#SendMessageToHttp.prepare) e.g., PagerDuty (default is false)
       */
-    val endpointAutoConfirms: js.UndefOr[Input[Boolean]] = js.native
+    val endpointAutoConfirms: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * JSON String with the filter policy that will be used in the subscription to filter messages seen by the target resource. Refer to the [SNS docs](https://docs.aws.amazon.com/sns/latest/dg/message-filtering.html) for more details.
       */
-    val filterPolicy: js.UndefOr[Input[String]] = js.native
+    val filterPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The protocol to use. The possible values for this are: `sqs`, `sms`, `lambda`, `application`. (`http` or `https` are partially supported, see below) (`email` is an option but is unsupported, see below).
       */
-    val protocol: Input[String] = js.native
+    val protocol: Input[String]
     
     /**
       * Boolean indicating whether or not to enable raw message delivery (the original message is directly passed, not wrapped in JSON with the original message in the message property) (default is false).
       */
-    val rawMessageDelivery: js.UndefOr[Input[Boolean]] = js.native
+    val rawMessageDelivery: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the SNS topic to subscribe to
       */
-    val topic: Input[String | Topic] = js.native
+    val topic: Input[String | Topic]
   }
   object TopicSubscriptionArgs {
     
@@ -200,53 +197,52 @@ object topicSubscriptionMod {
     }
   }
   
-  @js.native
   trait TopicSubscriptionState extends StObject {
     
     /**
       * The ARN of the subscription stored as a more user-friendly property
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Integer indicating number of minutes to wait in retying mode for fetching subscription arn before marking it as failure. Only applicable for http and https protocols (default is 1 minute).
       */
-    val confirmationTimeoutInMinutes: js.UndefOr[Input[Double]] = js.native
+    val confirmationTimeoutInMinutes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * JSON String with the delivery policy (retries, backoff, etc.) that will be used in the subscription - this only applies to HTTP/S subscriptions. Refer to the [SNS docs](https://docs.aws.amazon.com/sns/latest/dg/DeliveryPolicies.html) for more details.
       */
-    val deliveryPolicy: js.UndefOr[Input[String]] = js.native
+    val deliveryPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The endpoint to send data to, the contents will vary with the protocol. (see below for more information)
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean indicating whether the end point is capable of [auto confirming subscription](http://docs.aws.amazon.com/sns/latest/dg/SendMessageToHttp.html#SendMessageToHttp.prepare) e.g., PagerDuty (default is false)
       */
-    val endpointAutoConfirms: js.UndefOr[Input[Boolean]] = js.native
+    val endpointAutoConfirms: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * JSON String with the filter policy that will be used in the subscription to filter messages seen by the target resource. Refer to the [SNS docs](https://docs.aws.amazon.com/sns/latest/dg/message-filtering.html) for more details.
       */
-    val filterPolicy: js.UndefOr[Input[String]] = js.native
+    val filterPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The protocol to use. The possible values for this are: `sqs`, `sms`, `lambda`, `application`. (`http` or `https` are partially supported, see below) (`email` is an option but is unsupported, see below).
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean indicating whether or not to enable raw message delivery (the original message is directly passed, not wrapped in JSON with the original message in the message property) (default is false).
       */
-    val rawMessageDelivery: js.UndefOr[Input[Boolean]] = js.native
+    val rawMessageDelivery: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the SNS topic to subscribe to
       */
-    val topic: js.UndefOr[Input[String | Topic]] = js.native
+    val topic: js.UndefOr[Input[String | Topic]] = js.undefined
   }
   object TopicSubscriptionState {
     

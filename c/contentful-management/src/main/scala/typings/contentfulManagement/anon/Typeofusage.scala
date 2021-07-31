@@ -7,15 +7,13 @@ import typings.contentfulManagement.usageMod.Usage
 import typings.contentfulManagement.usageMod.UsageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofusage extends StObject {
   
-  def wrapUsage(http: AxiosInstance, data: UsageProps): Usage = js.native
+  def wrapUsage(http: AxiosInstance, data: UsageProps): Usage
   
-  def wrapUsageCollection(http: AxiosInstance, data: CollectionProp[UsageProps]): Collection[Usage, UsageProps] = js.native
+  def wrapUsageCollection(http: AxiosInstance, data: CollectionProp[UsageProps]): Collection[Usage, UsageProps]
 }
 object Typeofusage {
   

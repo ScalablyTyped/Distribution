@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildbotResourceUsageStat extends StObject {
   
-  var total: js.UndefOr[String] = js.native
+  var total: js.UndefOr[String] = js.undefined
   
-  var used: js.UndefOr[String] = js.native
+  var used: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildbotResourceUsageStat {
   

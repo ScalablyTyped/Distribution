@@ -3,19 +3,17 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.multiRouter.MultiRoute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRoutePanel extends StObject {
   
-  def getRoute(): MultiRoute = js.native
+  def getRoute(): MultiRoute
   
-  var options: IOptionManager = js.native
+  var options: IOptionManager
   
-  var state: IDataManager = js.native
+  var state: IDataManager
   
-  def switchPoints(): Unit = js.native
+  def switchPoints(): Unit
 }
 object IRoutePanel {
   

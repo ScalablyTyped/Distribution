@@ -2,15 +2,13 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltipLabelColor extends StObject {
   
-  var backgroundColor: ChartColor = js.native
+  var backgroundColor: ChartColor
   
-  var borderColor: ChartColor = js.native
+  var borderColor: ChartColor
 }
 object ChartTooltipLabelColor {
   

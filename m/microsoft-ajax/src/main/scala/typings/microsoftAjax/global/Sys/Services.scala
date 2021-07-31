@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -30,7 +29,8 @@ object Services {
     * Initializes a new instance of the Sys.Services.AuthenticationService class.
     */
   class AuthenticationService ()
-    extends typings.microsoftAjax.Sys.Services.AuthenticationService
+    extends StObject
+       with typings.microsoftAjax.Sys.Services.AuthenticationService
   
   /**
     * Defines a profile group.
@@ -42,7 +42,8 @@ object Services {
   @js.native
   //#region Constructors
   class ProfileGroup ()
-    extends typings.microsoftAjax.Sys.Services.ProfileGroup {
+    extends StObject
+       with typings.microsoftAjax.Sys.Services.ProfileGroup {
     /**
       * Initializes a new instance of the Sys.Services.ProfileGroup class.
       * @param properties
@@ -58,7 +59,8 @@ object Services {
   @JSGlobal("Sys.Services.ProfileService")
   @js.native
   class ProfileService ()
-    extends typings.microsoftAjax.Sys.Services.ProfileService
+    extends StObject
+       with typings.microsoftAjax.Sys.Services.ProfileService
   object ProfileService {
     
     @JSGlobal("Sys.Services.ProfileService")
@@ -82,13 +84,11 @@ object Services {
       *      A reference to the succeeded callback function for the service.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.defaultSucceededCallback")
-    @js.native
-    def defaultSucceededCallback(): js.Function = js.native
+    @scala.inline
+    def defaultSucceededCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSucceededCallback")().asInstanceOf[js.Function]
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.defaultSucceededCallback")
-    @js.native
-    def defaultSucceededCallback(value: js.Function): Unit = js.native
+    @scala.inline
+    def defaultSucceededCallback(value: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSucceededCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the default user context for the service.
@@ -96,31 +96,26 @@ object Services {
       *      A reference to the user context for the service.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.defaultUserContext")
-    @js.native
-    def defaultUserContext(): js.Object = js.native
+    @scala.inline
+    def defaultUserContext(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserContext")().asInstanceOf[js.Object]
     /**
       * Gets or sets the default user context for the service.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.defaultUserContext")
-    @js.native
-    def defaultUserContext(value: js.Object): Unit = js.native
+    @scala.inline
+    def defaultUserContext(value: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserContext")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.get_defaultFailedCallback")
-    @js.native
-    def getDefaultFailedCallback(): js.Function = js.native
+    @scala.inline
+    def getDefaultFailedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultFailedCallback")().asInstanceOf[js.Function]
     
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.get_defaultLoadCompletedCallback")
-    @js.native
-    def getDefaultLoadCompletedCallback(): js.Function = js.native
+    @scala.inline
+    def getDefaultLoadCompletedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultLoadCompletedCallback")().asInstanceOf[js.Function]
     
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.get_defaultSaveCompletedCallback")
-    @js.native
-    def getDefaultSaveCompletedCallback(): js.Function = js.native
+    @scala.inline
+    def getDefaultSaveCompletedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultSaveCompletedCallback")().asInstanceOf[js.Function]
     
     /**
       * Gets or sets the profile service path.
@@ -128,17 +123,15 @@ object Services {
       *      The profile path
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.get_path")
-    @js.native
-    def getPath(): String = js.native
+    @scala.inline
+    def getPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_path")().asInstanceOf[String]
     
     /**
       * Gets or sets the profile service time-out value.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.get_timeout")
-    @js.native
-    def getTimeout(): Double = js.native
+    @scala.inline
+    def getTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_timeout")().asInstanceOf[Double]
     
     //#endregion
     //#region Methods
@@ -161,14 +154,13 @@ object Services {
       *      User context information passed to the callback functions.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.load")
-    @js.native
+    @scala.inline
     def load(
       propertyNames: js.Array[String],
       loadCompletedCallback: js.Function,
       failedCallback: js.Function,
       userContext: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(propertyNames.asInstanceOf[js.Any], loadCompletedCallback.asInstanceOf[js.Any], failedCallback.asInstanceOf[js.Any], userContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Contains the loaded profile data. You can access the loaded profile data directly from the properties field.
@@ -192,14 +184,13 @@ object Services {
       *      User context information passed to the callback functions.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.save")
-    @js.native
+    @scala.inline
     def save(
       propertyNames: js.Array[String],
       saveCompletedCallback: js.Function,
       failedCallback: js.Function,
       userContext: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(propertyNames.asInstanceOf[js.Any], saveCompletedCallback.asInstanceOf[js.Any], failedCallback.asInstanceOf[js.Any], userContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     //#endregion
     //#region Properties
@@ -209,9 +200,8 @@ object Services {
       *      A string that contains the name of the default failure callback function.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.set_defaultFailedCallback")
-    @js.native
-    def setDefaultFailedCallback(value: String): Unit = js.native
+    @scala.inline
+    def setDefaultFailedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultFailedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the name of the default load-completed callback function.
@@ -220,9 +210,8 @@ object Services {
       *      A string that contains the name of the default load-completed callback function.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.set_defaultLoadCompletedCallback")
-    @js.native
-    def setDefaultLoadCompletedCallback(value: String): Unit = js.native
+    @scala.inline
+    def setDefaultLoadCompletedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultLoadCompletedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the name of the default save-completed callback function.
@@ -230,9 +219,8 @@ object Services {
       *      A string that contains the name of the default save-completed callback function.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.set_defaultSaveCompletedCallback")
-    @js.native
-    def setDefaultSaveCompletedCallback(value: String): Unit = js.native
+    @scala.inline
+    def setDefaultSaveCompletedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultSaveCompletedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the profile service path.
@@ -240,9 +228,8 @@ object Services {
       *          A string that contains the profile service path.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.set_path")
-    @js.native
-    def setPath(value: String): Unit = js.native
+    @scala.inline
+    def setPath(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_path")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the profile service time-out value.
@@ -253,9 +240,8 @@ object Services {
       *          The time-out value in milliseconds.
       */
     /* static member */
-    @JSGlobal("Sys.Services.ProfileService.set_timeout")
-    @js.native
-    def setTimeout(value: Double): Unit = js.native
+    @scala.inline
+    def setTimeout(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_timeout")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -265,5 +251,6 @@ object Services {
   @JSGlobal("Sys.Services.RoleService")
   @js.native
   class RoleService ()
-    extends typings.microsoftAjax.Sys.Services.RoleService
+    extends StObject
+       with typings.microsoftAjax.Sys.Services.RoleService
 }

@@ -6,62 +6,60 @@ import typings.reactDnd.anon.HandlerIds
 import typings.reactDnd.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monitorsMod {
   
-  @js.native
   trait DragLayerMonitor extends StObject {
     
     /**
       * Returns the last recorded { x, y } client offset of the pointer while a drag operation is in progress.
       * Returns null if no item is being dragged.
       */
-    def getClientOffset(): XYCoord | Null = js.native
+    def getClientOffset(): XYCoord | Null
     
     /**
       * Returns the { x, y } difference between the last recorded client offset of the pointer and the client
       * offset when current the drag operation has started. Returns null if no item is being dragged.
       */
-    def getDifferenceFromInitialOffset(): XYCoord | Null = js.native
+    def getDifferenceFromInitialOffset(): XYCoord | Null
     
     /**
       * Returns the { x, y } client offset of the pointer at the time when the current drag operation has started.
       * Returns null if no item is being dragged.
       */
-    def getInitialClientOffset(): XYCoord | Null = js.native
+    def getInitialClientOffset(): XYCoord | Null
     
     /**
       * Returns the { x, y } client offset of the drag source component's root DOM node at the time when the current
       * drag operation has started. Returns null if no item is being dragged.
       */
-    def getInitialSourceClientOffset(): XYCoord | Null = js.native
+    def getInitialSourceClientOffset(): XYCoord | Null
     
     /**
       * Returns a plain object representing the currently dragged item.
       * Every drag source must specify it by returning an object from its beginDrag() method.
       * Returns null if no item is being dragged.
       */
-    def getItem(): js.Any = js.native
+    def getItem(): js.Any
     
     /**
       * Returns a string or an ES6 symbol identifying the type of the current dragged item.
       * Returns null if no item is being dragged.
       */
-    def getItemType(): Identifier | Null = js.native
+    def getItemType(): Identifier | Null
     
     /**
       * Returns the projected { x, y } client offset of the drag source component's root DOM node, based on its
       * position at the time when the current drag operation has started, and the movement difference.
       * Returns null if no item is being dragged.
       */
-    def getSourceClientOffset(): XYCoord | Null = js.native
+    def getSourceClientOffset(): XYCoord | Null
     
     /**
       * Returns true if a drag operation is in progress. Returns false otherwise.
       */
-    def isDragging(): Boolean = js.native
+    def isDragging(): Boolean
   }
   object DragLayerMonitor {
     
@@ -111,7 +109,8 @@ object monitorsMod {
   
   @js.native
   trait DragSourceMonitor
-    extends HandlerManager
+    extends StObject
+       with HandlerManager
        with MonitorEventEmitter {
     
     /**
@@ -184,7 +183,8 @@ object monitorsMod {
   
   @js.native
   trait DropTargetMonitor
-    extends HandlerManager
+    extends StObject
+       with HandlerManager
        with MonitorEventEmitter {
     
     /**
@@ -271,12 +271,11 @@ object monitorsMod {
     def subscribeToStateChange(fn: js.Function0[Unit], options: HandlerIds): Unsubscribe = js.native
   }
   
-  @js.native
   trait XYCoord extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object XYCoord {
     

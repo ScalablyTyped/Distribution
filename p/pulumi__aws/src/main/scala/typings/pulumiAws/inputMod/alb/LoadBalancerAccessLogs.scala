@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.alb
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerAccessLogs extends StObject {
   
   /**
     * The S3 bucket name to store the logs in.
     */
-  var bucket: Input[String] = js.native
+  var bucket: Input[String]
   
   /**
     * Boolean to enable / disable `accessLogs`. Defaults to `false`, even when `bucket` is specified.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.native
+  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The S3 bucket prefix. Logs are stored in the root if not configured.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
 }
 object LoadBalancerAccessLogs {
   

@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileAppContentFile extends Entity {
+trait MobileAppContentFile
+  extends StObject
+     with Entity {
   
   // The Azure Storage URI.
-  var azureStorageUri: js.UndefOr[NullableOption[String]] = js.native
+  var azureStorageUri: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The time the Azure storage Uri expires.
-  var azureStorageUriExpirationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var azureStorageUriExpirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The time the file was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // A value indicating whether the file is committed.
-  var isCommitted: js.UndefOr[Boolean] = js.native
+  var isCommitted: js.UndefOr[Boolean] = js.undefined
   
   // The manifest information.
-  var manifest: js.UndefOr[NullableOption[Double]] = js.native
+  var manifest: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // the file name.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The size of the file prior to encryption.
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   // The size of the file after encryption.
-  var sizeEncrypted: js.UndefOr[Double] = js.native
+  var sizeEncrypted: js.UndefOr[Double] = js.undefined
   
   /**
     * The state of the current upload request. Possible values are: success, transientError, error, unknown,
@@ -39,7 +39,7 @@ trait MobileAppContentFile extends Entity {
     * azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed,
     * commitFileTimedOut.
     */
-  var uploadState: js.UndefOr[MobileAppContentFileUploadState] = js.native
+  var uploadState: js.UndefOr[MobileAppContentFileUploadState] = js.undefined
 }
 object MobileAppContentFile {
   

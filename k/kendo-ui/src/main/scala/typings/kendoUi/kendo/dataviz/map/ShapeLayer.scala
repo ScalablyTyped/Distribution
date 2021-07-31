@@ -3,16 +3,16 @@ package typings.kendoUi.kendo.dataviz.map
 import typings.kendoUi.kendo.dataviz.ui.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShapeLayer extends Layer_ {
+trait ShapeLayer
+  extends StObject
+     with Layer_ {
   
   @JSName("options")
-  var options_ShapeLayer: ShapeLayerOptions = js.native
+  var options_ShapeLayer: ShapeLayerOptions
   
-  def setDataSource(): Unit = js.native
+  def setDataSource(): Unit
 }
 object ShapeLayer {
   

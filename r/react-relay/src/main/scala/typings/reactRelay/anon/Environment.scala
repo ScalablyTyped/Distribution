@@ -4,28 +4,24 @@ import typings.reactRelay.reactRelayStrings.reset
 import typings.reactRelay.useRefetchableFragmentNodeMod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Environment extends Action {
+trait Environment
+  extends StObject
+     with Action {
   
-  var environment: typings.relayRuntime.relayStoreTypesMod.Environment = js.native
+  var environment: typings.relayRuntime.relayStoreTypesMod.Environment
   
-  var fragmentIdentifier: String = js.native
+  var fragmentIdentifier: String
   
-  var `type`: reset = js.native
+  var `type`: reset
 }
 object Environment {
   
   @scala.inline
-  def apply(
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
-    fragmentIdentifier: String,
-    `type`: reset
-  ): Environment = {
+  def apply(environment: typings.relayRuntime.relayStoreTypesMod.Environment, fragmentIdentifier: String): Environment = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], fragmentIdentifier = fragmentIdentifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reset")
     __obj.asInstanceOf[Environment]
   }
   

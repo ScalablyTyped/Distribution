@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorSchemeForPolygonOutline extends Object {
+trait ColorSchemeForPolygonOutline
+  extends StObject
+     with Object {
   
   /**
     * The outline color of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The width of the symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolygon)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object ColorSchemeForPolygonOutline {
   

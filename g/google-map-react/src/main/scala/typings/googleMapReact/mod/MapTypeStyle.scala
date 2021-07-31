@@ -2,22 +2,20 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTypeStyle extends StObject {
   
-  var elementType: js.UndefOr[String] = js.native
+  var elementType: js.UndefOr[String] = js.undefined
   
-  var featureType: js.UndefOr[String] = js.native
+  var featureType: js.UndefOr[String] = js.undefined
   
-  var stylers: js.Array[_] = js.native
+  var stylers: js.Array[js.Any]
 }
 object MapTypeStyle {
   
   @scala.inline
-  def apply(stylers: js.Array[_]): MapTypeStyle = {
+  def apply(stylers: js.Array[js.Any]): MapTypeStyle = {
     val __obj = js.Dynamic.literal(stylers = stylers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeStyle]
   }
@@ -38,7 +36,7 @@ object MapTypeStyle {
     def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
     @scala.inline
-    def setStylers(value: js.Array[_]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
+    def setStylers(value: js.Array[js.Any]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStylersVarargs(value: js.Any*): Self = StObject.set(x, "stylers", js.Array(value :_*))

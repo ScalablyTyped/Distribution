@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DaylightTimeZoneOffset extends StandardTimeZoneOffset {
+trait DaylightTimeZoneOffset
+  extends StObject
+     with StandardTimeZoneOffset {
   
   // The time offset from Coordinated Universal Time (UTC) for daylight saving time. This value is in minutes.
-  var daylightBias: js.UndefOr[NullableOption[Double]] = js.native
+  var daylightBias: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object DaylightTimeZoneOffset {
   

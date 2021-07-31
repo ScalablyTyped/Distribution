@@ -9,9 +9,9 @@ Typings are for version 26.6.2
 | ------------------ | :-------------: |
 | Full name          | @jest/globals |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 10 |
-| # downloads        | 34945464 |
+| # releases         | 25 |
+| # dependents       | 26 |
+| # downloads        | 152890910 |
 | # stars            | 0 |
 
 ## Links

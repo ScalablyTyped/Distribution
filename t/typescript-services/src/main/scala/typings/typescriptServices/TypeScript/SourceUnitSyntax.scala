@@ -2,11 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceUnitSyntax extends SyntaxNode {
+trait SourceUnitSyntax
+  extends StObject
+     with SyntaxNode {
   
   var endOfFileToken: ISyntaxToken = js.native
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ec2clientvpnRouteMod {
@@ -58,6 +57,10 @@ object ec2clientvpnRouteMod {
   /* static members */
   object Route {
     
+    @JSImport("@pulumi/aws/ec2clientvpn/route", "Route")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,50 +70,44 @@ object ec2clientvpnRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Route = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Route = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState): Route = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/route", "Route.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/route.Route */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/route.Route */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/route.Route */ Boolean]
   }
   
-  @js.native
   trait RouteArgs extends StObject {
     
     /**
       * The ID of the Client VPN endpoint.
       */
-    val clientVpnEndpointId: Input[String] = js.native
+    val clientVpnEndpointId: Input[String]
     
     /**
       * A brief description of the authorization rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 address range, in CIDR notation, of the route destination.
       */
-    val destinationCidrBlock: Input[String] = js.native
+    val destinationCidrBlock: Input[String]
     
     /**
       * The ID of the Subnet to route the traffic through. It must already be attached to the Client VPN.
       */
-    val targetVpcSubnetId: Input[String] = js.native
+    val targetVpcSubnetId: Input[String]
   }
   object RouteArgs {
     
@@ -144,38 +141,37 @@ object ec2clientvpnRouteMod {
     }
   }
   
-  @js.native
   trait RouteState extends StObject {
     
     /**
       * The ID of the Client VPN endpoint.
       */
-    val clientVpnEndpointId: js.UndefOr[Input[String]] = js.native
+    val clientVpnEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A brief description of the authorization rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 address range, in CIDR notation, of the route destination.
       */
-    val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates how the Client VPN route was added. Will be `add-route` for routes created by this resource.
       */
-    val origin: js.UndefOr[Input[String]] = js.native
+    val origin: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Subnet to route the traffic through. It must already be attached to the Client VPN.
       */
-    val targetVpcSubnetId: js.UndefOr[Input[String]] = js.native
+    val targetVpcSubnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the route.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteState {
     

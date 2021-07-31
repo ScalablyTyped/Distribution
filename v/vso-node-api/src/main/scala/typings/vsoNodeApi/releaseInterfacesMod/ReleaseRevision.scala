@@ -4,25 +4,23 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseRevision extends StObject {
   
-  var changeDetails: String = js.native
+  var changeDetails: String
   
-  var changeType: String = js.native
+  var changeType: String
   
-  var changedBy: IdentityRef = js.native
+  var changedBy: IdentityRef
   
-  var changedDate: Date = js.native
+  var changedDate: Date
   
-  var comment: String = js.native
+  var comment: String
   
-  var definitionSnapshotRevision: Double = js.native
+  var definitionSnapshotRevision: Double
   
-  var releaseId: Double = js.native
+  var releaseId: Double
 }
 object ReleaseRevision {
   

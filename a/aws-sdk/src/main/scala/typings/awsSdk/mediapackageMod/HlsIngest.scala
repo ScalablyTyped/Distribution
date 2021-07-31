@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsIngest extends StObject {
   
   /**
     * A list of endpoints to which the source stream should be sent.
     */
-  var IngestEndpoints: js.UndefOr[listOfIngestEndpoint] = js.native
+  var IngestEndpoints: js.UndefOr[listOfIngestEndpoint] = js.undefined
 }
 object HlsIngest {
   

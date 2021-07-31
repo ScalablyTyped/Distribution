@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridSortable extends StObject {
   
-  var allowUnsort: js.UndefOr[Boolean] = js.native
+  var allowUnsort: js.UndefOr[Boolean] = js.undefined
   
-  var initialDirection: js.UndefOr[String] = js.native
+  var initialDirection: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var showIndexes: js.UndefOr[Boolean] = js.native
+  var showIndexes: js.UndefOr[Boolean] = js.undefined
 }
 object GridSortable {
   

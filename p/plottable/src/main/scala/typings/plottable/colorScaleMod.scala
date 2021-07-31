@@ -3,7 +3,6 @@ package typings.plottable
 import typings.plottable.scaleMod.Scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorScaleMod {
@@ -46,9 +45,8 @@ object colorScaleMod {
     @scala.inline
     def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/scales/colorScale", "Color._getPlottableColors")
-    @js.native
-    def _getPlottableColors(): js.Any = js.native
+    @scala.inline
+    def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
     
     @JSImport("plottable/build/src/scales/colorScale", "Color._plottableColorCache")
     @js.native
@@ -56,8 +54,7 @@ object colorScaleMod {
     @scala.inline
     def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/scales/colorScale", "Color.invalidateColorCache")
-    @js.native
-    def invalidateColorCache(): Unit = js.native
+    @scala.inline
+    def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
   }
 }

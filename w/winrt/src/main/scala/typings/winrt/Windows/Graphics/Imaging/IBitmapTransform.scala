@@ -2,23 +2,21 @@ package typings.winrt.Windows.Graphics.Imaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBitmapTransform extends StObject {
   
-  var bounds: BitmapBounds = js.native
+  var bounds: BitmapBounds
   
-  var flip: BitmapFlip = js.native
+  var flip: BitmapFlip
   
-  var interpolationMode: BitmapInterpolationMode = js.native
+  var interpolationMode: BitmapInterpolationMode
   
-  var rotation: BitmapRotation = js.native
+  var rotation: BitmapRotation
   
-  var scaledHeight: Double = js.native
+  var scaledHeight: Double
   
-  var scaledWidth: Double = js.native
+  var scaledWidth: Double
 }
 object IBitmapTransform {
   

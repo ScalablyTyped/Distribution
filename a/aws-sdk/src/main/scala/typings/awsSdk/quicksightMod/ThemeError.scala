@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeError extends StObject {
   
   /**
     * The error message.
     */
-  var Message: js.UndefOr[NonEmptyString] = js.native
+  var Message: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The type of error.
     */
-  var Type: js.UndefOr[ThemeErrorType] = js.native
+  var Type: js.UndefOr[ThemeErrorType] = js.undefined
 }
 object ThemeError {
   

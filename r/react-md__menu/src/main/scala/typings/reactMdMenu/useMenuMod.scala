@@ -12,18 +12,19 @@ import typings.reactMdMenu.reactMdMenuStrings.last
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMenuMod {
   
-  @JSImport("@react-md/menu/types/useMenu", "useMenu")
+  @JSImport("@react-md/menu/types/useMenu", JSImport.Namespace)
   @js.native
-  def useMenu(
-    hasRefVisibleControlIdHorizontalOnClickOnKeyDownPortalledDefaultFocusOnRequestCloseDisableControlClickOkay: MenuOptions
-  ): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useMenu(
+    hasPropRefVisibleControlIdHorizontalPropOnClickPropOnKeyDownPortalledDefaultFocusOnRequestCloseDisableControlClickOkay: MenuOptions
+  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useMenu")(hasPropRefVisibleControlIdHorizontalPropOnClickPropOnKeyDownPortalledDefaultFocusOnRequestCloseDisableControlClickOkay.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
   trait MenuOptions extends StObject {
     
     /**
@@ -31,12 +32,12 @@ object useMenuMod {
       * so that the menu won't be closed when the control element is clicked since
       * it'll have it's own toggle functionality built-in already.
       */
-    var controlId: String = js.native
+    var controlId: String
     
     /**
       * The default focusable element within the menu.
       */
-    var defaultFocus: first | last | String = js.native
+    var defaultFocus: first | last | String
     
     /**
       * Boolean if the close on outside click logic should consider the control
@@ -45,21 +46,21 @@ object useMenuMod {
       * normally should remain `false` otherwise since the control element has it's
       * own toggle logic that conflicts with this close click.
       */
-    var disableControlClickOkay: js.UndefOr[Boolean] = js.native
+    var disableControlClickOkay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the menu is oriented horizontally instead of vertically.  This
       * will update the keydown handlers to use the `ArrowLeft` and `ArrowRight`
       * keys instead of `ArrowUp` and `ArrrowDown` to navigate.
       */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional click handler to call when the `Menu` (or any child item) is
       * clicked. This will be merged with the default implementation to close the
       * menu once clicked.
       */
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     /**
       * An optional keydown handler to call when the `Menu` (or any child item)
@@ -67,28 +68,28 @@ object useMenuMod {
       * allowing items to be focused with the arrow keys or closing when the escape
       * or tab key is pressed.
       */
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
     /**
       * The function that should close the menu.
       */
-    def onRequestClose(): Unit = js.native
+    def onRequestClose(): Unit
     
     /**
       * Boolean if the menu has been portalled so that the tab keypress behavior
       * can be fixed since tab order is destroyed when portalling.
       */
-    var portalled: js.UndefOr[Boolean] = js.native
+    var portalled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional ref to be merged into the menu's required ref handler.
       */
-    var ref: js.UndefOr[Ref[HTMLDivElement | Null]] = js.native
+    var ref: js.UndefOr[Ref[HTMLDivElement | Null]] = js.undefined
     
     /**
       * Boolean if the menu is currently visible.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object MenuOptions {
     

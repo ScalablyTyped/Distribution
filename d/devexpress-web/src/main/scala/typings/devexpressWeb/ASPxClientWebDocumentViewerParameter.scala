@@ -2,19 +2,17 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientWebDocumentViewerParameter extends StObject {
   
-  def getParameterDescriptor(): ASPxDesignerElementParameterDescriptor = js.native
+  def getParameterDescriptor(): ASPxDesignerElementParameterDescriptor
   
-  var isMultiValue: Boolean = js.native
+  var isMultiValue: Boolean
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ASPxClientWebDocumentViewerParameter {
   

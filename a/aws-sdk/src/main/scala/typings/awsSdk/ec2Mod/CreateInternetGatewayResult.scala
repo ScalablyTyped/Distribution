@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInternetGatewayResult extends StObject {
   
   /**
     * Information about the internet gateway.
     */
-  var InternetGateway: js.UndefOr[typings.awsSdk.ec2Mod.InternetGateway] = js.native
+  var InternetGateway: js.UndefOr[typings.awsSdk.ec2Mod.InternetGateway] = js.undefined
 }
 object CreateInternetGatewayResult {
   

@@ -9,25 +9,23 @@ import typings.reactBootstrapTableNext.anon.State
 import typings.reactBootstrapTableNext.anon.StateSortColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapTableRef[T /* <: js.Object */] extends StObject {
   
-  var cellEditContext: js.UndefOr[StartEditing] = js.native
+  var cellEditContext: js.UndefOr[StartEditing] = js.undefined
   
-  var filterContext: js.UndefOr[CurrFilters] = js.native
+  var filterContext: js.UndefOr[CurrFilters] = js.undefined
   
-  var paginationContext: js.UndefOr[CurrPage] = js.native
+  var paginationContext: js.UndefOr[CurrPage] = js.undefined
   
-  var rowExpandContext: js.UndefOr[State] = js.native
+  var rowExpandContext: js.UndefOr[State] = js.undefined
   
-  var selectionContext: js.UndefOr[Selected] = js.native
+  var selectionContext: js.UndefOr[Selected] = js.undefined
   
-  var sortContext: js.UndefOr[StateSortColumn[T]] = js.native
+  var sortContext: js.UndefOr[StateSortColumn[T]] = js.undefined
   
-  var table: Props[T] = js.native
+  var table: Props[T]
 }
 object BootstrapTableRef {
   
@@ -38,7 +36,7 @@ object BootstrapTableRef {
   }
   
   @scala.inline
-  implicit class BootstrapTableRefMutableBuilder[Self <: BootstrapTableRef[_], T /* <: js.Object */] (val x: Self with BootstrapTableRef[T]) extends AnyVal {
+  implicit class BootstrapTableRefMutableBuilder[Self <: BootstrapTableRef[?], T /* <: js.Object */] (val x: Self & BootstrapTableRef[T]) extends AnyVal {
     
     @scala.inline
     def setCellEditContext(value: StartEditing): Self = StObject.set(x, "cellEditContext", value.asInstanceOf[js.Any])

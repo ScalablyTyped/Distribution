@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents x- and y-coordinate values that define a point in a two-dimensional plane. */
-@js.native
 trait Point extends StObject {
   
   /** The horizontal position of the point. */
-  var x: Double = js.native
+  var x: Double
   
   /** The vertical position of the point. */
-  var y: Double = js.native
+  var y: Double
 }
 object Point {
   

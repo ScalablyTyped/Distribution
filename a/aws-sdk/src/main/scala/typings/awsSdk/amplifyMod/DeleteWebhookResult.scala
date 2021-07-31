@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWebhookResult extends StObject {
   
   /**
     *  Describes a webhook that connects repository events to an Amplify app. 
     */
-  var webhook: Webhook = js.native
+  var webhook: Webhook
 }
 object DeleteWebhookResult {
   

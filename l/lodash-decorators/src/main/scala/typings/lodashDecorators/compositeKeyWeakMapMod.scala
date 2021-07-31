@@ -2,7 +2,6 @@ package typings.lodashDecorators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compositeKeyWeakMapMod {
@@ -13,10 +12,10 @@ object compositeKeyWeakMapMod {
     
     var _weakMap: js.Any = js.native
     
-    def get(keys: js.Array[_]): T = js.native
+    def get(keys: js.Array[js.Any]): T = js.native
     
-    def has(keys: js.Array[_]): Boolean = js.native
+    def has(keys: js.Array[js.Any]): Boolean = js.native
     
-    def set(keys: js.Array[_], value: T): Unit = js.native
+    def set(keys: js.Array[js.Any], value: T): Unit = js.native
   }
 }

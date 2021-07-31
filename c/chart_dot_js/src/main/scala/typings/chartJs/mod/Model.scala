@@ -2,60 +2,58 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NOTE: This model is generic with a bunch of optional properties to represent all types of chart models.
 // Each chart type defines their own unique model structure so some of these optional properties
 // might always have values depending on the chart type.
-@js.native
 trait Model extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var base: Double = js.native
+  var base: Double
   
-  var borderAlign: js.UndefOr[BorderAlignment] = js.native
+  var borderAlign: js.UndefOr[BorderAlignment] = js.undefined
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var circumference: js.UndefOr[Double] = js.native
+  var circumference: js.UndefOr[Double] = js.undefined
   
-  var controlPointNextX: Double = js.native
+  var controlPointNextX: Double
   
-  var controlPointNextY: Double = js.native
+  var controlPointNextY: Double
   
-  var controlPointPreviousX: Double = js.native
+  var controlPointPreviousX: Double
   
-  var controlPointPreviousY: Double = js.native
+  var controlPointPreviousY: Double
   
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
-  var head: Double = js.native
+  var head: Double
   
-  var hitRadius: Double = js.native
+  var hitRadius: Double
   
-  var innerRadius: js.UndefOr[Double] = js.native
+  var innerRadius: js.UndefOr[Double] = js.undefined
   
-  var outerRadius: js.UndefOr[Double] = js.native
+  var outerRadius: js.UndefOr[Double] = js.undefined
   
-  var pointStyle: String = js.native
+  var pointStyle: String
   
-  var radius: String = js.native
+  var radius: String
   
-  var skip: js.UndefOr[Boolean] = js.native
+  var skip: js.UndefOr[Boolean] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var steppedLine: js.UndefOr[scala.Nothing] = js.native
+  var steppedLine: Unit
   
-  var tension: Double = js.native
+  var tension: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Model {
   
@@ -72,11 +70,12 @@ object Model {
     hitRadius: Double,
     pointStyle: String,
     radius: String,
+    steppedLine: Unit,
     tension: Double,
     x: Double,
     y: Double
   ): Model = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], controlPointNextX = controlPointNextX.asInstanceOf[js.Any], controlPointNextY = controlPointNextY.asInstanceOf[js.Any], controlPointPreviousX = controlPointPreviousX.asInstanceOf[js.Any], controlPointPreviousY = controlPointPreviousY.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], hitRadius = hitRadius.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], tension = tension.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any], controlPointNextX = controlPointNextX.asInstanceOf[js.Any], controlPointNextY = controlPointNextY.asInstanceOf[js.Any], controlPointPreviousX = controlPointPreviousX.asInstanceOf[js.Any], controlPointPreviousY = controlPointPreviousY.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], hitRadius = hitRadius.asInstanceOf[js.Any], pointStyle = pointStyle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], steppedLine = steppedLine.asInstanceOf[js.Any], tension = tension.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
   
@@ -163,6 +162,9 @@ object Model {
     
     @scala.inline
     def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    
+    @scala.inline
+    def setSteppedLine(value: Unit): Self = StObject.set(x, "steppedLine", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])

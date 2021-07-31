@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WindowsSecurityContextOptions contain Windows-specific options and credentials.
   */
-@js.native
 trait WindowsSecurityContextOptions extends StObject {
   
   /**
     * GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.
     */
-  var gmsaCredentialSpec: js.UndefOr[Input[String]] = js.native
+  var gmsaCredentialSpec: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * GMSACredentialSpecName is the name of the GMSA credential spec to use.
     */
-  var gmsaCredentialSpecName: js.UndefOr[Input[String]] = js.native
+  var gmsaCredentialSpecName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
     */
-  var runAsUserName: js.UndefOr[Input[String]] = js.native
+  var runAsUserName: js.UndefOr[Input[String]] = js.undefined
 }
 object WindowsSecurityContextOptions {
   

@@ -2,76 +2,74 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportJobResponse extends StObject {
   
   /**
     * The unique identifier for the application that's associated with the export job.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The number of pieces that were processed successfully (completed) by the export job, as of the time of the request.
     */
-  var CompletedPieces: js.UndefOr[integer] = js.native
+  var CompletedPieces: js.UndefOr[integer] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the export job was completed.
     */
-  var CompletionDate: js.UndefOr[string] = js.native
+  var CompletionDate: js.UndefOr[string] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the export job was created.
     */
-  var CreationDate: string = js.native
+  var CreationDate: string
   
   /**
     * The resource settings that apply to the export job.
     */
-  var Definition: ExportJobResource = js.native
+  var Definition: ExportJobResource
   
   /**
     * The number of pieces that weren't processed successfully (failed) by the export job, as of the time of the request.
     */
-  var FailedPieces: js.UndefOr[integer] = js.native
+  var FailedPieces: js.UndefOr[integer] = js.undefined
   
   /**
     * An array of entries, one for each of the first 100 entries that weren't processed successfully (failed) by the export job, if any.
     */
-  var Failures: js.UndefOr[ListOfString] = js.native
+  var Failures: js.UndefOr[ListOfString] = js.undefined
   
   /**
     * The unique identifier for the export job.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The status of the export job. The job status is FAILED if Amazon Pinpoint wasn't able to process one or more pieces in the job.
     */
-  var JobStatus: typings.awsSdk.pinpointMod.JobStatus = js.native
+  var JobStatus: typings.awsSdk.pinpointMod.JobStatus
   
   /**
     * The total number of endpoint definitions that weren't processed successfully (failed) by the export job, typically because an error, such as a syntax error, occurred.
     */
-  var TotalFailures: js.UndefOr[integer] = js.native
+  var TotalFailures: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of pieces that must be processed to complete the export job. Each piece consists of an approximately equal portion of the endpoint definitions that are part of the export job.
     */
-  var TotalPieces: js.UndefOr[integer] = js.native
+  var TotalPieces: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of endpoint definitions that were processed by the export job.
     */
-  var TotalProcessed: js.UndefOr[integer] = js.native
+  var TotalProcessed: js.UndefOr[integer] = js.undefined
   
   /**
     * The job type. This value is EXPORT for export jobs.
     */
-  var Type: string = js.native
+  var Type: string
 }
 object ExportJobResponse {
   

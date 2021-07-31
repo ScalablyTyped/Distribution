@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cascade extends StObject {
   
-  var cascade: Boolean = js.native
+  var cascade: Boolean
   
-  var cols: Double = js.native
+  var cols: Double
   
-  def format(values: js.Array[String]): String = js.native
+  def format(values: js.Array[String]): String
   
-  var pickerPrefixCls: String = js.native
+  var pickerPrefixCls: String
   
-  var popupPrefixCls: String = js.native
+  var popupPrefixCls: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
   
-  var title: String = js.native
+  var title: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object Cascade {
   
@@ -38,7 +36,7 @@ object Cascade {
     pickerPrefixCls: String,
     popupPrefixCls: String,
     prefixCls: String,
-    styles: StringDictionary[RegisteredStyle[_]],
+    styles: StringDictionary[RegisteredStyle[js.Any]],
     title: String,
     triggerType: String
   ): Cascade = {
@@ -68,7 +66,7 @@ object Cascade {
     def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])

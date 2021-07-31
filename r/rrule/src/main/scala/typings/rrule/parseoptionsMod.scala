@@ -6,20 +6,20 @@ import typings.rrule.datetimeMod.Time
 import typings.rrule.typesMod.ParsedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseoptionsMod {
   
-  @JSImport("rrule/dist/esm/src/parseoptions", "buildTimeset")
+  @JSImport("rrule/dist/esm/src/parseoptions", JSImport.Namespace)
   @js.native
-  def buildTimeset(opts: ParsedOptions): js.Array[Time] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rrule/dist/esm/src/parseoptions", "initializeOptions")
-  @js.native
-  def initializeOptions(options: PartialOptions): Byeaster = js.native
+  @scala.inline
+  def buildTimeset(opts: ParsedOptions): js.Array[Time] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildTimeset")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[Time]]
   
-  @JSImport("rrule/dist/esm/src/parseoptions", "parseOptions")
-  @js.native
-  def parseOptions(options: PartialOptions): typings.rrule.anon.ParsedOptions = js.native
+  @scala.inline
+  def initializeOptions(options: PartialOptions): Byeaster = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Byeaster]
+  
+  @scala.inline
+  def parseOptions(options: PartialOptions): typings.rrule.anon.ParsedOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseOptions")(options.asInstanceOf[js.Any]).asInstanceOf[typings.rrule.anon.ParsedOptions]
 }

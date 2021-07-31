@@ -2,23 +2,21 @@ package typings.reactNativeMaterialUi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadioButtonProps extends StObject {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  def onSelect(value: String): Unit = js.native
+  def onSelect(value: String): Unit
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var value: String | Double = js.native
+  var value: String | Double
 }
 object RadioButtonProps {
   

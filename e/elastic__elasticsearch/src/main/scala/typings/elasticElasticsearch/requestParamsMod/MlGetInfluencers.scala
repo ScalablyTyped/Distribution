@@ -2,31 +2,31 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetInfluencers[T] extends Generic {
+trait MlGetInfluencers[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var desc: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var exclude_interim: js.UndefOr[Boolean] = js.native
+  var exclude_interim: js.UndefOr[Boolean] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var influencer_score: js.UndefOr[Double] = js.native
+  var influencer_score: js.UndefOr[Double] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object MlGetInfluencers {
   
@@ -37,7 +37,7 @@ object MlGetInfluencers {
   }
   
   @scala.inline
-  implicit class MlGetInfluencersMutableBuilder[Self <: MlGetInfluencers[_], T] (val x: Self with MlGetInfluencers[T]) extends AnyVal {
+  implicit class MlGetInfluencersMutableBuilder[Self <: MlGetInfluencers[?], T] (val x: Self & MlGetInfluencers[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

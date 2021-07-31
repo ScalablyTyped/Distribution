@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerEBSVolumeInfo extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait BrokerEBSVolumeInfo extends StObject {
     The ID of the broker to update.
     
     */
-  var KafkaBrokerNodeId: string = js.native
+  var KafkaBrokerNodeId: string
   
   /**
     * 
     Size of the EBS volume to update.
     
     */
-  var VolumeSizeGB: integer = js.native
+  var VolumeSizeGB: integer
 }
 object BrokerEBSVolumeInfo {
   

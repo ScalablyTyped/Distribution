@@ -3,33 +3,32 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ClassPrivateProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ClassPrivateProperty_
-  extends Private
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ClassPrivateProperty_
+  extends StObject
      with BaseNode
+     with Private
      with Property {
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var key: PrivateName_ = js.native
+  var key: PrivateName_
   
-  var static: js.Any = js.native
+  var static: js.Any
   
   @JSName("type")
-  var type_ClassPrivateProperty_ : ClassPrivateProperty = js.native
+  var type_ClassPrivateProperty_ : ClassPrivateProperty
   
-  var value: Expression | Null = js.native
+  var value: Expression | Null
 }
 object ClassPrivateProperty_ {
   
   @scala.inline
-  def apply(key: PrivateName_, static: js.Any, `type`: ClassPrivateProperty): ClassPrivateProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(key: PrivateName_, static: js.Any): ClassPrivateProperty_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, value = null)
+    __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[ClassPrivateProperty_]
   }
   

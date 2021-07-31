@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppEngineRouting extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait AppEngineRouting extends StObject {
     * service, version, and instance. Tasks which were created using the App Engine SDK might have a custom domain name. For more information, see [How Requests are
     * Routed](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed).
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * App instance. By default, the task is sent to an instance which is available when the task is attempted. Requests can only be sent to a specific instance if [manual scaling is used
@@ -21,21 +19,21 @@ trait AppEngineRouting extends StObject {
     * instances. For more information, see [App Engine Standard request routing](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed) and [App Engine Flex
     * request routing](https://cloud.google.com/appengine/docs/flexible/python/how-requests-are-routed).
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * App service. By default, the task is sent to the service which is the default service when the task is attempted. For some queues or tasks which were created using the App Engine
     * Task Queue API, host is not parsable into service, version, and instance. For example, some tasks which were created using the App Engine SDK use a custom domain name; custom
     * domains are not parsed by Cloud Tasks. If host is not parsable, then service, version, and instance are the empty string.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * App version. By default, the task is sent to the version which is the default version when the task is attempted. For some queues or tasks which were created using the App Engine
     * Task Queue API, host is not parsable into service, version, and instance. For example, some tasks which were created using the App Engine SDK use a custom domain name; custom
     * domains are not parsed by Cloud Tasks. If host is not parsable, then service, version, and instance are the empty string.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object AppEngineRouting {
   

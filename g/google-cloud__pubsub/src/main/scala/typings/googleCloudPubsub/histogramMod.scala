@@ -3,7 +3,6 @@ package typings.googleCloudPubsub
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object histogramMod {
@@ -37,12 +36,11 @@ object histogramMod {
     def percentile(percent: Double): Double = js.native
   }
   
-  @js.native
   trait HistogramOptions extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object HistogramOptions {
     

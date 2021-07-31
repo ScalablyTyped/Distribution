@@ -3,21 +3,19 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
     */
-  var IdentityId: js.UndefOr[String] = js.native
+  var IdentityId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A set of optional name-value pairs that map provider names to provider tokens. Each
@@ -29,7 +27,7 @@ trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
     *          identifier from your backend that uniquely identifies a user. When you create an identity
     *          pool, you can specify the supported logins.</p>
     */
-  var Logins: js.UndefOr[StringDictionary[String]] = js.native
+  var Logins: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * <p>The expiration time of the token, in seconds. You can specify a custom expiration
@@ -43,7 +41,7 @@ trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
     *             <p>Please provide for a small grace period, usually no more than 5 minutes, to account for clock skew.</p>
     *          </note>
     */
-  var TokenDuration: js.UndefOr[Double] = js.native
+  var TokenDuration: js.UndefOr[Double] = js.undefined
 }
 object GetOpenIdTokenForDeveloperIdentityInput {
   
@@ -53,9 +51,12 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenForDeveloperIdentityInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenForDeveloperIdentityInput")
   @js.native
-  def filterSensitiveLog(obj: GetOpenIdTokenForDeveloperIdentityInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: GetOpenIdTokenForDeveloperIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class GetOpenIdTokenForDeveloperIdentityInputMutableBuilder[Self <: GetOpenIdTokenForDeveloperIdentityInput] (val x: Self) extends AnyVal {

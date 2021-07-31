@@ -3,7 +3,6 @@ package typings.firefoxWebextBrowser.browser
 import typings.firefoxWebextBrowser.browser.extensionTypes.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,50 +13,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object normandyAddonStudy {
   
   /* normandyAddonStudy types */
-  @js.native
   trait Study extends StObject {
     
     /** The state of the study. */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /** The ID of the extension installed by the study. */
-    var addonId: String = js.native
+    var addonId: String
     
     /** The URL of the XPI that was downloaded and installed by the study. */
-    var addonUrl: String = js.native
+    var addonUrl: String
     
     /** The version of the extension installed by the study. */
-    var addonVersion: String = js.native
+    var addonVersion: String
     
     /** The study branch in which the user is enrolled. */
-    var branch: String = js.native
+    var branch: String
     
     /** The record ID for the extension in Normandy server's database. */
-    var extensionApiId: Double = js.native
+    var extensionApiId: Double
     
     /** A hash of the extension XPI file. */
-    var extensionHash: String = js.native
+    var extensionHash: String
     
     /** The algorithm used to hash the extension XPI file. */
-    var extensionHashAlgorithm: String = js.native
+    var extensionHashAlgorithm: String
     
     /** The ID of the recipe for the study. */
-    var recipeId: Double = js.native
+    var recipeId: Double
     
     /** A slug to identify the study. */
-    var slug: String = js.native
+    var slug: String
     
     /** The end date for the study. */
-    var studyEndDate: Date = js.native
+    var studyEndDate: Date
     
     /** The start date for the study. */
-    var studyStartDate: Date = js.native
+    var studyStartDate: Date
     
     /** The description presented on about:studies. */
-    var userFacingDescription: String = js.native
+    var userFacingDescription: String
     
     /** The name presented on about:studies. */
-    var userFacingName: String = js.native
+    var userFacingName: String
   }
   object Study {
     

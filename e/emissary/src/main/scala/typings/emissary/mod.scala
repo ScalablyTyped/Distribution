@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.mixto.Mixto.IMixinStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,7 +22,48 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("emissary", "Emitter")
   @js.native
-  class Emitter () extends IEmitter
+  class Emitter ()
+    extends StObject
+       with IEmitter {
+    
+    /* CompleteClass */
+    override def behavior(eventName: String, initialValue: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def decrementSubscriptionCount(eventName: String): Double = js.native
+    
+    /* CompleteClass */
+    override def emit(eventName: String, args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def getSubscriptionCount(eventName: String): Double = js.native
+    
+    /* CompleteClass */
+    override def hasSubscriptions(eventName: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def incrementSubscriptionCount(eventName: String): Double = js.native
+    
+    /* CompleteClass */
+    override def off(eventNames: String, handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def on(eventNames: String, handler: js.Function): js.Any = js.native
+    
+    // return value type are Signal
+    /* CompleteClass */
+    override def once(eventName: String, handler: js.Function): js.Any = js.native
+    
+    /* CompleteClass */
+    override def pauseEvents(eventNames: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def resumeEvents(eventNames: String): Unit = js.native
+    
+    // return value type are Signal
+    /* CompleteClass */
+    override def signal(eventName: String): Unit = js.native
+  }
   @JSImport("emissary", "Emitter")
   @js.native
   def Emitter: IEmitterStatic = js.native
@@ -39,7 +79,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("emissary", "Subscriber")
   @js.native
-  class Subscriber () extends ISubscriber
+  class Subscriber ()
+    extends StObject
+       with ISubscriber
   @JSImport("emissary", "Subscriber")
   @js.native
   def Subscriber: ISubscriberStatic = js.native
@@ -52,34 +94,33 @@ object mod {
   @scala.inline
   def combine_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait IEmitter extends StObject {
     
-    def behavior(eventName: String, initialValue: js.Any): Unit = js.native
+    def behavior(eventName: String, initialValue: js.Any): Unit
     
-    def decrementSubscriptionCount(eventName: String): Double = js.native
+    def decrementSubscriptionCount(eventName: String): Double
     
-    def emit(eventName: String, args: js.Any*): Unit = js.native
+    def emit(eventName: String, args: js.Any*): Unit
     
-    def getSubscriptionCount(eventName: String): Double = js.native
+    def getSubscriptionCount(eventName: String): Double
     
-    def hasSubscriptions(eventName: String): Boolean = js.native
+    def hasSubscriptions(eventName: String): Boolean
     
-    def incrementSubscriptionCount(eventName: String): Double = js.native
+    def incrementSubscriptionCount(eventName: String): Double
     
-    def off(eventNames: String, handler: js.Function): Unit = js.native
+    def off(eventNames: String, handler: js.Function): Unit
     
-    def on(eventNames: String, handler: js.Function): js.Any = js.native
-    
-    // return value type are Signal
-    def once(eventName: String, handler: js.Function): js.Any = js.native
-    
-    def pauseEvents(eventNames: String): Unit = js.native
-    
-    def resumeEvents(eventNames: String): Unit = js.native
+    def on(eventNames: String, handler: js.Function): js.Any
     
     // return value type are Signal
-    def signal(eventName: String): Unit = js.native
+    def once(eventName: String, handler: js.Function): js.Any
+    
+    def pauseEvents(eventNames: String): Unit
+    
+    def resumeEvents(eventNames: String): Unit
+    
+    // return value type are Signal
+    def signal(eventName: String): Unit
   }
   object IEmitter {
     
@@ -145,7 +186,8 @@ object mod {
   
   @js.native
   trait IEmitterStatic
-    extends IMixinStatic
+    extends StObject
+       with IMixinStatic
        with Instantiable0[IEmitter]
   
   @js.native
@@ -165,15 +207,17 @@ object mod {
   
   @js.native
   trait ISubscriberStatic
-    extends IMixinStatic
+    extends StObject
+       with IMixinStatic
        with Instantiable0[ISubscriber]
   
-  @js.native
-  trait ISubscription extends IEmitter {
+  trait ISubscription
+    extends StObject
+       with IEmitter {
     
-    var cancelled: Boolean = js.native
+    var cancelled: Boolean
     
-    def off(): js.Any = js.native
+    def off(): js.Any
   }
   object ISubscription {
     
@@ -210,7 +254,8 @@ object mod {
   
   @js.native
   trait ISubscriptionStatic
-    extends Instantiable3[
+    extends StObject
+       with Instantiable3[
           /* emitter */ js.Any, 
           /* eventNames */ String, 
           /* handler */ js.Function, 

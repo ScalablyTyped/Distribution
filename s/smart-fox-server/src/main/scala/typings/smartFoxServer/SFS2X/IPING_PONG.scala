@@ -2,13 +2,11 @@ package typings.smartFoxServer.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPING_PONG extends StObject {
   
-  var lagValue: Double = js.native
+  var lagValue: Double
 }
 object IPING_PONG {
   

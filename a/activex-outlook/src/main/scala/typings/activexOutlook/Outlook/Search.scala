@@ -2,40 +2,38 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Search extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Filter: String = js.native
+  val Filter: String
   
-  def GetTable(): Table = js.native
+  def GetTable(): Table
   
-  val IsSynchronous: Boolean = js.native
+  val IsSynchronous: Boolean
   
   @JSName("Outlook.Search_typekey")
-  var OutlookDotSearch_typekey: Search = js.native
+  var OutlookDotSearch_typekey: Search
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Results: typings.activexOutlook.Outlook.Results = js.native
+  val Results: typings.activexOutlook.Outlook.Results
   
-  def Save(Name: String): Folder = js.native
+  def Save(Name: String): Folder
   
-  val Scope: String = js.native
+  val Scope: String
   
-  val SearchSubFolders: Boolean = js.native
+  val SearchSubFolders: Boolean
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def Stop(): Unit = js.native
+  def Stop(): Unit
   
-  val Tag: String = js.native
+  val Tag: String
 }
 object Search {
   

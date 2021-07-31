@@ -3,24 +3,22 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.protobuf.IDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SpeechWordInfo. */
-@js.native
 trait ISpeechWordInfo extends StObject {
   
   /** SpeechWordInfo confidence */
-  var confidence: js.UndefOr[Double | Null] = js.native
+  var confidence: js.UndefOr[Double | Null] = js.undefined
   
   /** SpeechWordInfo endOffset */
-  var endOffset: js.UndefOr[IDuration | Null] = js.native
+  var endOffset: js.UndefOr[IDuration | Null] = js.undefined
   
   /** SpeechWordInfo startOffset */
-  var startOffset: js.UndefOr[IDuration | Null] = js.native
+  var startOffset: js.UndefOr[IDuration | Null] = js.undefined
   
   /** SpeechWordInfo word */
-  var word: js.UndefOr[String | Null] = js.native
+  var word: js.UndefOr[String | Null] = js.undefined
 }
 object ISpeechWordInfo {
   

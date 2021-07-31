@@ -2,41 +2,39 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobFlowExecutionStatusDetail extends StObject {
   
   /**
     * The creation date and time of the job flow.
     */
-  var CreationDateTime: Date = js.native
+  var CreationDateTime: Date
   
   /**
     * The completion date and time of the job flow.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Description of the job flow last changed state.
     */
-  var LastStateChangeReason: js.UndefOr[XmlString] = js.native
+  var LastStateChangeReason: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The date and time when the job flow was ready to start running bootstrap actions.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.native
+  var ReadyDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The start date and time of the job flow.
     */
-  var StartDateTime: js.UndefOr[Date] = js.native
+  var StartDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The state of the job flow.
     */
-  var State: JobFlowExecutionState = js.native
+  var State: JobFlowExecutionState
 }
 object JobFlowExecutionStatusDetail {
   

@@ -3,20 +3,18 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/FormControlLabel.FormControlLabelClassKey>> */
-@js.native
 trait PartialStyleRulesFormContDisabled extends StObject {
   
-  var disabled: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.undefined
   
-  var label: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var start: js.UndefOr[CSSProperties] = js.native
+  var start: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesFormContDisabled {
   

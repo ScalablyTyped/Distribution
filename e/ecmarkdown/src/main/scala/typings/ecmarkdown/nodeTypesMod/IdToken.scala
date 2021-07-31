@@ -3,23 +3,21 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdToken extends StObject {
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: id = js.native
+  var name: id
   
-  var value: String = js.native
+  var value: String
 }
 object IdToken {
   
   @scala.inline
-  def apply(location: LocationRange, name: id, value: String): IdToken = {
-    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(location: LocationRange, value: String): IdToken = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = "id", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdToken]
   }
   

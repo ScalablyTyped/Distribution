@@ -2,13 +2,13 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CipherKeyValue extends CommonParams {
+trait CipherKeyValue
+  extends StObject
+     with CommonParams {
   
-  var value: String = js.native
+  var value: String
 }
 object CipherKeyValue {
   

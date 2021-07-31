@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Map extends Widget_ {
+trait Map
+  extends StObject
+     with Widget_ {
   
   /** Add markers dynamically based on layer and sublayer index value.
     * @returns {void}
@@ -72,15 +73,21 @@ object Map {
     
     //specifies the aerial type
     @js.native
-    sealed trait Aerial extends BingMapType
+    sealed trait Aerial
+      extends StObject
+         with BingMapType
     
     //specifies the aerialwithlabel type
     @js.native
-    sealed trait Aerialwithlabel extends BingMapType
+    sealed trait Aerialwithlabel
+      extends StObject
+         with BingMapType
     
     //specifies the road type
     @js.native
-    sealed trait Road extends BingMapType
+    sealed trait Road
+      extends StObject
+         with BingMapType
   }
   
   @js.native
@@ -91,19 +98,27 @@ object Map {
     
     //specifies the custom color
     @js.native
-    sealed trait Custompalette extends ColorPalette
+    sealed trait Custompalette
+      extends StObject
+         with ColorPalette
     
     //specifies the palette1 color
     @js.native
-    sealed trait Palette1 extends ColorPalette
+    sealed trait Palette1
+      extends StObject
+         with ColorPalette
     
     //specifies the palette2 color
     @js.native
-    sealed trait Palette2 extends ColorPalette
+    sealed trait Palette2
+      extends StObject
+         with ColorPalette
     
     //specifies the palette3 color
     @js.native
-    sealed trait Palette3 extends ColorPalette
+    sealed trait Palette3
+      extends StObject
+         with ColorPalette
   }
   
   @js.native
@@ -114,19 +129,27 @@ object Map {
     
     //specifies the bottom position
     @js.native
-    sealed trait Bottom extends DockPosition
+    sealed trait Bottom
+      extends StObject
+         with DockPosition
     
     //specifies the left position
     @js.native
-    sealed trait Left extends DockPosition
+    sealed trait Left
+      extends StObject
+         with DockPosition
     
     //specifies the bottom position
     @js.native
-    sealed trait Right extends DockPosition
+    sealed trait Right
+      extends StObject
+         with DockPosition
     
     //specifies the top position
     @js.native
-    sealed trait Top extends DockPosition
+    sealed trait Top
+      extends StObject
+         with DockPosition
   }
   
   @js.native
@@ -137,11 +160,15 @@ object Map {
     
     //string
     @js.native
-    sealed trait Italic extends FontStyle
+    sealed trait Italic
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Normal extends FontStyle
+    sealed trait Normal
+      extends StObject
+         with FontStyle
   }
   
   @js.native
@@ -152,15 +179,21 @@ object Map {
     
     //string
     @js.native
-    sealed trait Bold extends FontWeight
+    sealed trait Bold
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Lighter extends FontWeight
+    sealed trait Lighter
+      extends StObject
+         with FontWeight
     
     //string
     @js.native
-    sealed trait Regular extends FontWeight
+    sealed trait Regular
+      extends StObject
+         with FontWeight
   }
   
   @js.native
@@ -171,11 +204,15 @@ object Map {
     
     //specifies the geographic view of map
     @js.native
-    sealed trait Geographic extends GeometryType
+    sealed trait Geographic
+      extends StObject
+         with GeometryType
     
     //specifies the normal land view of map
     @js.native
-    sealed trait Normal extends GeometryType
+    sealed trait Normal
+      extends StObject
+         with GeometryType
   }
   
   @js.native
@@ -186,11 +223,15 @@ object Map {
     
     //specifies the horizontal position
     @js.native
-    sealed trait Horizontal extends LabelOrientation
+    sealed trait Horizontal
+      extends StObject
+         with LabelOrientation
     
     //specifies the vertical position
     @js.native
-    sealed trait Vertical extends LabelOrientation
+    sealed trait Vertical
+      extends StObject
+         with LabelOrientation
   }
   
   @js.native
@@ -201,11 +242,15 @@ object Map {
     
     //specifies the default size
     @js.native
-    sealed trait Default extends LabelSize
+    sealed trait Default
+      extends StObject
+         with LabelSize
     
     //specifies the fixed size
     @js.native
-    sealed trait Fixed extends LabelSize
+    sealed trait Fixed
+      extends StObject
+         with LabelSize
   }
   
   @js.native
@@ -216,15 +261,21 @@ object Map {
     
     //specifies the bing type
     @js.native
-    sealed trait Bing extends LayerType
+    sealed trait Bing
+      extends StObject
+         with LayerType
     
     //specifies the geometry type
     @js.native
-    sealed trait Geometry extends LayerType
+    sealed trait Geometry
+      extends StObject
+         with LayerType
     
     //specifies the osm type
     @js.native
-    sealed trait Osm extends LayerType
+    sealed trait Osm
+      extends StObject
+         with LayerType
   }
   
   @js.native
@@ -235,11 +286,15 @@ object Map {
     
     //specifies the circle position
     @js.native
-    sealed trait Circle extends LegendIcons
+    sealed trait Circle
+      extends StObject
+         with LegendIcons
     
     //specifies the rectangle position
     @js.native
-    sealed trait Rectangle extends LegendIcons
+    sealed trait Rectangle
+      extends StObject
+         with LegendIcons
   }
   
   @js.native
@@ -250,11 +305,15 @@ object Map {
     
     //specifies the bubbles type
     @js.native
-    sealed trait Bubbles extends LegendType
+    sealed trait Bubbles
+      extends StObject
+         with LegendType
     
     //specifies the layers type
     @js.native
-    sealed trait Layers extends LegendType
+    sealed trait Layers
+      extends StObject
+         with LegendType
   }
   
   @js.native
@@ -265,11 +324,15 @@ object Map {
     
     //specifies the default mode
     @js.native
-    sealed trait Default extends Mode
+    sealed trait Default
+      extends StObject
+         with Mode
     
     //specifies the interactive mode
     @js.native
-    sealed trait Interactive extends Mode
+    sealed trait Interactive
+      extends StObject
+         with Mode
   }
   
   @js.native
@@ -280,43 +343,63 @@ object Map {
     
     //specifies the bottomcenter position
     @js.native
-    sealed trait Bottomcenter extends Position
+    sealed trait Bottomcenter
+      extends StObject
+         with Position
     
     //specifies the bottomleft position
     @js.native
-    sealed trait Bottomleft extends Position
+    sealed trait Bottomleft
+      extends StObject
+         with Position
     
     //specifies the bottomright position
     @js.native
-    sealed trait Bottomright extends Position
+    sealed trait Bottomright
+      extends StObject
+         with Position
     
     //specifies the center position
     @js.native
-    sealed trait Center extends Position
+    sealed trait Center
+      extends StObject
+         with Position
     
     //specifies the centerleft position
     @js.native
-    sealed trait Centerleft extends Position
+    sealed trait Centerleft
+      extends StObject
+         with Position
     
     //specifies the centerright position
     @js.native
-    sealed trait Centerright extends Position
+    sealed trait Centerright
+      extends StObject
+         with Position
     
     //specifies the none position
     @js.native
-    sealed trait None extends Position
+    sealed trait None
+      extends StObject
+         with Position
     
     //specifies the topcenter position
     @js.native
-    sealed trait Topcenter extends Position
+    sealed trait Topcenter
+      extends StObject
+         with Position
     
     //specifies the topleft position
     @js.native
-    sealed trait Topleft extends Position
+    sealed trait Topleft
+      extends StObject
+         with Position
     
     //specifies the topright position
     @js.native
-    sealed trait Topright extends Position
+    sealed trait Topright
+      extends StObject
+         with Position
   }
   
   @js.native
@@ -327,19 +410,22 @@ object Map {
     
     //specifies the default position
     @js.native
-    sealed trait Default extends SelectionMode
+    sealed trait Default
+      extends StObject
+         with SelectionMode
     
     //specifies the multiple position
     @js.native
-    sealed trait Multiple extends SelectionMode
+    sealed trait Multiple
+      extends StObject
+         with SelectionMode
   }
   
-  @js.native
   trait BubbleRenderingEventArgs extends StObject {
     
     /** Returns the bubble values.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object BubbleRenderingEventArgs {
     
@@ -360,12 +446,11 @@ object Map {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** Returns clicked shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object ClickEventArgs {
     
@@ -386,25 +471,24 @@ object Map {
     }
   }
   
-  @js.native
   trait DisplayTextRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** text - Text displayed in data label. You can add custom text to the data label    locationX - X-coordinate of data label location    locationY - Y-coordinate of data label
       * location
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the map model object.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DisplayTextRenderingEventArgs {
     
@@ -443,12 +527,11 @@ object Map {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Returns double clicked shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -469,116 +552,115 @@ object Map {
     }
   }
   
-  @js.native
   trait Layer extends StObject {
     
     /** to get the type of bing map.
       * @Default {aerial}
       */
-    var bingMapType: js.UndefOr[BingMapType | String] = js.native
+    var bingMapType: js.UndefOr[BingMapType | String] = js.undefined
     
     /** Specifies the bubble settings for map
       */
-    var bubbleSettings: js.UndefOr[LayersBubbleSettings] = js.native
+    var bubbleSettings: js.UndefOr[LayersBubbleSettings] = js.undefined
     
     /** Specifies the datasource for the shape layer
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Enables or disables the shape mouse hover
       * @Default {false}
       */
-    var enableMouseHover: js.UndefOr[Boolean] = js.native
+    var enableMouseHover: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the shape selection
       * @Default {true}
       */
-    var enableSelection: js.UndefOr[Boolean] = js.native
+    var enableSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the map view type.
       * @Default {'geographic'}
       */
-    var geometryType: js.UndefOr[GeometryType | String] = js.native
+    var geometryType: js.UndefOr[GeometryType | String] = js.undefined
     
     /** to get the key of bing map
       * @Default {null}
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
       */
-    var labelSettings: js.UndefOr[LayersLabelSettings] = js.native
+    var labelSettings: js.UndefOr[LayersLabelSettings] = js.undefined
     
     /** Specifies the map type.
       * @Default {'geometry'}
       */
-    var layerType: js.UndefOr[LayerType | String] = js.native
+    var layerType: js.UndefOr[LayerType | String] = js.undefined
     
     /** Options for enabling and configuring legendSettings position, height, width, mode, type etc.,
       */
-    var legendSettings: js.UndefOr[LayersLegendSettings] = js.native
+    var legendSettings: js.UndefOr[LayersLegendSettings] = js.undefined
     
     /** Specifies the map items template for shapes.
       */
-    var mapItemsTemplate: js.UndefOr[String] = js.native
+    var mapItemsTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the map marker template for map layer.
       * @Default {null}
       */
-    var markerTemplate: js.UndefOr[String] = js.native
+    var markerTemplate: js.UndefOr[String] = js.undefined
     
     /** Specify markers for shape layer.
       */
-    var markers: js.UndefOr[js.Array[_]] = js.native
+    var markers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specify selectedMapShapes for shape layer
       * @Default {[]}
       */
-    var selectedMapShapes: js.UndefOr[js.Array[_]] = js.native
+    var selectedMapShapes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
       * @Default {default}
       */
-    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.native
+    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.undefined
     
     /** Specifies the shape data for the shape layer
       */
-    var shapeData: js.UndefOr[js.Any] = js.native
+    var shapeData: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the data path of shape
       */
-    var shapeDataPath: js.UndefOr[String] = js.native
+    var shapeDataPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the data path of shape
       */
-    var shapePropertyPath: js.UndefOr[String] = js.native
+    var shapePropertyPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape settings of map layer
       */
-    var shapeSettings: js.UndefOr[LayersShapeSettings] = js.native
+    var shapeSettings: js.UndefOr[LayersShapeSettings] = js.undefined
     
     /** Shows or hides the map items.
       * @Default {false}
       */
-    var showMapItems: js.UndefOr[Boolean] = js.native
+    var showMapItems: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the tooltip for shapes
       * @Default {false}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Sublayer is the collection of shape Layer
       */
-    var subLayers: js.UndefOr[js.Array[LayersSubLayer]] = js.native
+    var subLayers: js.UndefOr[js.Array[LayersSubLayer]] = js.undefined
     
     /** Specifies the tooltip template for shapes.
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the URL template for the OSM type map.
       * @Default {'http://a.tile.openstreetmap.org/level/tileX/tileY.png'}
       */
-    var urlTemplate: js.UndefOr[String] = js.native
+    var urlTemplate: js.UndefOr[String] = js.undefined
   }
   object Layer {
     
@@ -664,7 +746,7 @@ object Map {
       def setMarkerTemplateUndefined: Self = StObject.set(x, "markerTemplate", js.undefined)
       
       @scala.inline
-      def setMarkers(value: js.Array[_]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
@@ -673,7 +755,7 @@ object Map {
       def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
       
       @scala.inline
-      def setSelectedMapShapes(value: js.Array[_]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
+      def setSelectedMapShapes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedMapShapesUndefined: Self = StObject.set(x, "selectedMapShapes", js.undefined)
@@ -746,58 +828,57 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersBubbleSettings extends StObject {
     
     /** Specifies the bubble Opacity value of bubbles for shape layer in map
       * @Default {0.9}
       */
-    var bubbleOpacity: js.UndefOr[Double] = js.native
+    var bubbleOpacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mouse hover color of the shape layer in map
       * @Default {gray}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the colorMappings of the shape layer in map
       * @Default {null}
       */
-    var colorMappings: js.UndefOr[LayersBubbleSettingsColorMappings] = js.native
+    var colorMappings: js.UndefOr[LayersBubbleSettingsColorMappings] = js.undefined
     
     /** Specifies the bubble color valuePath of the shape layer in map
       * @Default {null}
       */
-    var colorValuePath: js.UndefOr[String] = js.native
+    var colorValuePath: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum size value of bubbles for shape layer in map
       * @Default {20}
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum size value of bubbles for shape layer in map
       * @Default {10}
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the showBubble visibility status map
       * @Default {true}
       */
-    var showBubble: js.UndefOr[Boolean] = js.native
+    var showBubble: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the tooltip visibility status of the shape layer in map
       * @Default {false}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the bubble tooltip template of the shape layer in map
       * @Default {null}
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the bubble valuePath of the shape layer in map
       * @Default {null}
       */
-    var valuePath: js.UndefOr[String] = js.native
+    var valuePath: js.UndefOr[String] = js.undefined
   }
   object LayersBubbleSettings {
     
@@ -872,13 +953,12 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersBubbleSettingsColorMappings extends StObject {
     
     /** Specifies the range colorMappings in the bubble layer.
       * @Default {null}
       */
-    var rangeColorMapping: js.UndefOr[js.Array[LayersBubbleSettingsColorMappingsRangeColorMapping]] = js.native
+    var rangeColorMapping: js.UndefOr[js.Array[LayersBubbleSettingsColorMappingsRangeColorMapping]] = js.undefined
   }
   object LayersBubbleSettingsColorMappings {
     
@@ -902,27 +982,26 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersBubbleSettingsColorMappingsRangeColorMapping extends StObject {
     
     /** Color of the bubble layer.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Start range colorMappings in the bubble layer.
       * @Default {null}
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /** GradientColors in the bubble layer of map.
       */
-    var gradientColors: js.UndefOr[js.Array[_]] = js.native
+    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** End range colorMappings in the bubble layer.
       * @Default {null}
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object LayersBubbleSettingsColorMappingsRangeColorMapping {
     
@@ -948,7 +1027,7 @@ object Map {
       def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
       @scala.inline
-      def setGradientColors(value: js.Array[_]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
@@ -964,37 +1043,36 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersLabelSettings extends StObject {
     
     /** enable or disable the enableSmartLabel property
       * @Default {false}
       */
-    var enableSmartLabel: js.UndefOr[Boolean] = js.native
+    var enableSmartLabel: js.UndefOr[Boolean] = js.undefined
     
     /** Options for customizing the data label font.
       */
-    var font: js.UndefOr[LayersLabelSettingsFont] = js.native
+    var font: js.UndefOr[LayersLabelSettingsFont] = js.undefined
     
     /** set the labelLength property
       * @Default {'2'}
       */
-    var labelLength: js.UndefOr[Double] = js.native
+    var labelLength: js.UndefOr[Double] = js.undefined
     
     /** set the labelPath property
       * @Default {null}
       */
-    var labelPath: js.UndefOr[String] = js.native
+    var labelPath: js.UndefOr[String] = js.undefined
     
     /** The property specifies whether to show labels or not.
       * @Default {false}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** set the smartLabelSize property
       * @Default {fixed}
       */
-    var smartLabelSize: js.UndefOr[LabelSize | String] = js.native
+    var smartLabelSize: js.UndefOr[LabelSize | String] = js.undefined
   }
   object LayersLabelSettings {
     
@@ -1045,38 +1123,37 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersLabelSettingsFont extends StObject {
     
     /** Font color of the data label text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
       * @Default {normal.}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** NameType DescriptionRegularstring Specifies the font weight as regular.BoldstringSpecifies the font weight as bold.LighterstringSpecifies the font weight as lighter.
       * @Default {regular. See}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LayersLabelSettingsFont {
     
@@ -1127,108 +1204,107 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersLegendSettings extends StObject {
     
     /** Determines whether the legend should be placed outside or inside the map bounds
       * @Default {false}
       */
-    var dockOnMap: js.UndefOr[Boolean] = js.native
+    var dockOnMap: js.UndefOr[Boolean] = js.undefined
     
     /** Determines the legend placement and it is valid only when dockOnMap is true
       * @Default {top}
       */
-    var dockPosition: js.UndefOr[DockPosition | String] = js.native
+    var dockPosition: js.UndefOr[DockPosition | String] = js.undefined
     
     /** height value for legend setting
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** to get icon value for legend setting
       * @Default {rectangle}
       */
-    var icon: js.UndefOr[LegendIcons | String] = js.native
+    var icon: js.UndefOr[LegendIcons | String] = js.undefined
     
     /** icon height value for legend setting
       * @Default {20}
       */
-    var iconHeight: js.UndefOr[Double] = js.native
+    var iconHeight: js.UndefOr[Double] = js.undefined
     
     /** icon Width value for legend setting
       * @Default {20}
       */
-    var iconWidth: js.UndefOr[Double] = js.native
+    var iconWidth: js.UndefOr[Double] = js.undefined
     
     /** set the orientation of legend labels
       * @Default {vertical}
       */
-    var labelOrientation: js.UndefOr[LabelOrientation | String] = js.native
+    var labelOrientation: js.UndefOr[LabelOrientation | String] = js.undefined
     
     /** to get leftLabel value for legend setting
       * @Default {null}
       */
-    var leftLabel: js.UndefOr[String] = js.native
+    var leftLabel: js.UndefOr[String] = js.undefined
     
     /** to get mode of legend setting
       * @Default {default}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** set the position of legend settings
       * @Default {topleft}
       */
-    var position: js.UndefOr[Position | String] = js.native
+    var position: js.UndefOr[Position | String] = js.undefined
     
     /** x position value for legend setting
       * @Default {0}
       */
-    var positionX: js.UndefOr[Double] = js.native
+    var positionX: js.UndefOr[Double] = js.undefined
     
     /** y position value for legend setting
       * @Default {0}
       */
-    var positionY: js.UndefOr[Double] = js.native
+    var positionY: js.UndefOr[Double] = js.undefined
     
     /** to get rightLabel value for legend setting
       * @Default {null}
       */
-    var rightLabel: js.UndefOr[String] = js.native
+    var rightLabel: js.UndefOr[String] = js.undefined
     
     /** Enables or Disables the showLabels
       * @Default {false}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the showLegend
       * @Default {false}
       */
-    var showLegend: js.UndefOr[Boolean] = js.native
+    var showLegend: js.UndefOr[Boolean] = js.undefined
     
     /** To get the field name in the datasource for generating legend items.
       * @Default {null}
       */
-    var textPath: js.UndefOr[String] = js.native
+    var textPath: js.UndefOr[String] = js.undefined
     
     /** to get title of legend setting
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Toggle the visibility of the legend.
       * @Default {false}
       */
-    var toggleVisibility: js.UndefOr[Boolean] = js.native
+    var toggleVisibility: js.UndefOr[Boolean] = js.undefined
     
     /** to get type of legend setting
       * @Default {layers}
       */
-    var `type`: js.UndefOr[LegendType | String] = js.native
+    var `type`: js.UndefOr[LegendType | String] = js.undefined
     
     /** width value for legend setting
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LayersLegendSettings {
     
@@ -1363,88 +1439,87 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersShapeSettings extends StObject {
     
     /** Enables or Disables the auto fill colors for shape layer in map. When this property value set to true, shapes will be filled with palette colors.
       * @Default {false}
       */
-    var autoFill: js.UndefOr[Boolean] = js.native
+    var autoFill: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the colorMappings of the shape layer in map
       * @Default {null}
       */
-    var colorMappings: js.UndefOr[LayersShapeSettingsColorMappings] = js.native
+    var colorMappings: js.UndefOr[LayersShapeSettingsColorMappings] = js.undefined
     
     /** Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
       * @Default {palette1}
       */
-    var colorPalette: js.UndefOr[ColorPalette | String] = js.native
+    var colorPalette: js.UndefOr[ColorPalette | String] = js.undefined
     
     /** Specifies the field name in the datasource that contains color values for each shapes.
       * @Default {null}
       */
-    var colorPath: js.UndefOr[String] = js.native
+    var colorPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape color valuePath of the shape layer in map
       * @Default {null}
       */
-    var colorValuePath: js.UndefOr[String] = js.native
+    var colorValuePath: js.UndefOr[String] = js.undefined
     
     /** Enables or Disables the gradient colors for map shapes.
       * @Default {false}
       */
-    var enableGradient: js.UndefOr[Boolean] = js.native
+    var enableGradient: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the shape fill color of the shape layer in map
       * @Default {#E5E5E5}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mouse over width of the shape layer in map
       * @Default {1}
       */
-    var highlightBorderWidth: js.UndefOr[Double] = js.native
+    var highlightBorderWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mouse hover color of the shape layer in map
       * @Default {gray}
       */
-    var highlightColor: js.UndefOr[String] = js.native
+    var highlightColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the mouse over stroke color of the shape layer in map
       * @Default {#C1C1C1}
       */
-    var highlightStroke: js.UndefOr[String] = js.native
+    var highlightStroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape selection color of the shape layer in map
       * @Default {gray}
       */
-    var selectionColor: js.UndefOr[String] = js.native
+    var selectionColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape selection stroke color of the shape layer in map
       * @Default {#C1C1C1}
       */
-    var selectionStroke: js.UndefOr[String] = js.native
+    var selectionStroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape selection stroke width of the shape layer in map
       * @Default {1}
       */
-    var selectionStrokeWidth: js.UndefOr[Double] = js.native
+    var selectionStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape stroke color of the shape layer in map
       * @Default {#C1C1C1}
       */
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape stroke thickness value of the shape layer in map
       * @Default {0.2}
       */
-    var strokeThickness: js.UndefOr[Double] = js.native
+    var strokeThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape valuePath of the shape layer in map
       * @Default {null}
       */
-    var valuePath: js.UndefOr[String] = js.native
+    var valuePath: js.UndefOr[String] = js.undefined
   }
   object LayersShapeSettings {
     
@@ -1555,18 +1630,17 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersShapeSettingsColorMappings extends StObject {
     
     /** Specifies the equalColorMapping in the shape layer of map.
       * @Default {null}
       */
-    var equalColorMapping: js.UndefOr[js.Array[LayersShapeSettingsColorMappingsEqualColorMapping]] = js.native
+    var equalColorMapping: js.UndefOr[js.Array[LayersShapeSettingsColorMappingsEqualColorMapping]] = js.undefined
     
     /** Specifies the range colorMappings in the shape layer of map.
       * @Default {null}
       */
-    var rangeColorMapping: js.UndefOr[js.Array[LayersShapeSettingsColorMappingsRangeColorMapping]] = js.native
+    var rangeColorMapping: js.UndefOr[js.Array[LayersShapeSettingsColorMappingsRangeColorMapping]] = js.undefined
   }
   object LayersShapeSettingsColorMappings {
     
@@ -1599,18 +1673,17 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersShapeSettingsColorMappingsEqualColorMapping extends StObject {
     
     /** Specifies the equalColorMapping color in the shape layer of map.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the equalColorMapping value in the shape layer of map.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object LayersShapeSettingsColorMappingsEqualColorMapping {
     
@@ -1637,23 +1710,22 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersShapeSettingsColorMappingsRangeColorMapping extends StObject {
     
     /** Specifies the start range colorMappings in the shape layer of map.
       * @Default {null}
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /** Specifies the gradientColors in the shape layer of map.
       * @Default {null}
       */
-    var gradientColors: js.UndefOr[js.Array[_]] = js.native
+    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the to range colorMappings in the shape layer of map.
       * @Default {null}
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object LayersShapeSettingsColorMappingsRangeColorMapping {
     
@@ -1673,7 +1745,7 @@ object Map {
       def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
       @scala.inline
-      def setGradientColors(value: js.Array[_]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
@@ -1689,112 +1761,111 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayer extends StObject {
     
     /** to get the type of bing map.
       * @Default {aerial}
       */
-    var bingMapType: js.UndefOr[BingMapType | String] = js.native
+    var bingMapType: js.UndefOr[BingMapType | String] = js.undefined
     
     /** Specifies the bubble settings for map
       */
-    var bubbleSettings: js.UndefOr[LayersSubLayersBubbleSettings] = js.native
+    var bubbleSettings: js.UndefOr[LayersSubLayersBubbleSettings] = js.undefined
     
     /** Specifies the datasource for the shape layer
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Enables or disables the shape mouse hover
       * @Default {false}
       */
-    var enableMouseHover: js.UndefOr[Boolean] = js.native
+    var enableMouseHover: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the shape selection
       * @Default {true}
       */
-    var enableSelection: js.UndefOr[Boolean] = js.native
+    var enableSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the map view type.
       * @Default {'geographic'}
       */
-    var geometryType: js.UndefOr[GeometryType | String] = js.native
+    var geometryType: js.UndefOr[GeometryType | String] = js.undefined
     
     /** to get the key of bing map
       * @Default {null}
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
       */
-    var labelSettings: js.UndefOr[LayersSubLayersLabelSettings] = js.native
+    var labelSettings: js.UndefOr[LayersSubLayersLabelSettings] = js.undefined
     
     /** Specifies the map type.
       * @Default {'geometry'}
       */
-    var layerType: js.UndefOr[LayerType | String] = js.native
+    var layerType: js.UndefOr[LayerType | String] = js.undefined
     
     /** Options for enabling and configuring legendSettings position, height, width, mode, type etc.,
       */
-    var legendSettings: js.UndefOr[LayersSubLayersLegendSettings] = js.native
+    var legendSettings: js.UndefOr[LayersSubLayersLegendSettings] = js.undefined
     
     /** Specifies the map items template for shapes.
       */
-    var mapItemsTemplate: js.UndefOr[String] = js.native
+    var mapItemsTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the map marker template for map layer.
       * @Default {null}
       */
-    var markerTemplate: js.UndefOr[String] = js.native
+    var markerTemplate: js.UndefOr[String] = js.undefined
     
     /** Specify markers for shape layer.
       */
-    var markers: js.UndefOr[js.Array[_]] = js.native
+    var markers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specify selectedMapShapes for shape layer
       * @Default {[]}
       */
-    var selectedMapShapes: js.UndefOr[js.Array[_]] = js.native
+    var selectedMapShapes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
       * @Default {default}
       */
-    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.native
+    var selectionMode: js.UndefOr[typings.std.SelectionMode | String] = js.undefined
     
     /** Specifies the shape data for the shape layer
       */
-    var shapeData: js.UndefOr[js.Any] = js.native
+    var shapeData: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the data path of shape
       */
-    var shapeDataPath: js.UndefOr[String] = js.native
+    var shapeDataPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the data path of shape
       */
-    var shapePropertyPath: js.UndefOr[String] = js.native
+    var shapePropertyPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape settings of map layer
       */
-    var shapeSettings: js.UndefOr[LayersSubLayersShapeSettings] = js.native
+    var shapeSettings: js.UndefOr[LayersSubLayersShapeSettings] = js.undefined
     
     /** Shows or hides the map items.
       * @Default {false}
       */
-    var showMapItems: js.UndefOr[Boolean] = js.native
+    var showMapItems: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the tooltip for shapes
       * @Default {false}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the tooltip template for shapes.
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the URL template for the OSM type map.
       * @Default {'http://a.tile.openstreetmap.org/level/tileX/tileY.png'}
       */
-    var urlTemplate: js.UndefOr[String] = js.native
+    var urlTemplate: js.UndefOr[String] = js.undefined
   }
   object LayersSubLayer {
     
@@ -1880,7 +1951,7 @@ object Map {
       def setMarkerTemplateUndefined: Self = StObject.set(x, "markerTemplate", js.undefined)
       
       @scala.inline
-      def setMarkers(value: js.Array[_]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+      def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
@@ -1889,7 +1960,7 @@ object Map {
       def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
       
       @scala.inline
-      def setSelectedMapShapes(value: js.Array[_]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
+      def setSelectedMapShapes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedMapShapes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedMapShapesUndefined: Self = StObject.set(x, "selectedMapShapes", js.undefined)
@@ -1953,63 +2024,62 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersBubbleSettings extends StObject {
     
     /** Specifies the bubble Opacity value of bubbles for shape layer in map
       * @Default {0.9}
       */
-    var bubbleOpacity: js.UndefOr[Double] = js.native
+    var bubbleOpacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mouse hover color of the shape layer in map
       * @Default {gray}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the colorMappings of the shape layer in map
       * @Default {null}
       */
-    var colorMappings: js.UndefOr[LayersSubLayersBubbleSettingsColorMappings] = js.native
+    var colorMappings: js.UndefOr[LayersSubLayersBubbleSettingsColorMappings] = js.undefined
     
     /** Specifies the field name in the datasource that contains color values for each bubbles.
       * @Default {null}
       */
-    var colorPath: js.UndefOr[String] = js.native
+    var colorPath: js.UndefOr[String] = js.undefined
     
     /** Specifies the bubble color valuePath of the shape layer in map
       * @Default {null}
       */
-    var colorValuePath: js.UndefOr[String] = js.native
+    var colorValuePath: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum size value of bubbles for shape layer in map
       * @Default {20}
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum size value of bubbles for shape layer in map
       * @Default {10}
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the showBubble visibility status map
       * @Default {true}
       */
-    var showBubble: js.UndefOr[Boolean] = js.native
+    var showBubble: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the tooltip visibility status of the shape layer in map
       * @Default {false}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the bubble tooltip template of the shape layer in map
       * @Default {null}
       */
-    var tooltipTemplate: js.UndefOr[String] = js.native
+    var tooltipTemplate: js.UndefOr[String] = js.undefined
     
     /** Specifies the bubble valuePath of the shape layer in map
       * @Default {null}
       */
-    var valuePath: js.UndefOr[String] = js.native
+    var valuePath: js.UndefOr[String] = js.undefined
   }
   object LayersSubLayersBubbleSettings {
     
@@ -2090,13 +2160,12 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersBubbleSettingsColorMappings extends StObject {
     
     /** Specifies the range colorMappings in the bubble layer.
       * @Default {null}
       */
-    var rangeColorMapping: js.UndefOr[js.Array[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping]] = js.native
+    var rangeColorMapping: js.UndefOr[js.Array[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping]] = js.undefined
   }
   object LayersSubLayersBubbleSettingsColorMappings {
     
@@ -2120,27 +2189,26 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping extends StObject {
     
     /** Color of the bubble layer.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Start range colorMappings in the bubble layer.
       * @Default {null}
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /** GradientColors in the bubble layer of map.
       */
-    var gradientColors: js.UndefOr[js.Array[_]] = js.native
+    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** End range colorMappings in the bubble layer.
       * @Default {null}
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping {
     
@@ -2166,7 +2234,7 @@ object Map {
       def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
       @scala.inline
-      def setGradientColors(value: js.Array[_]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
@@ -2182,33 +2250,32 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersLabelSettings extends StObject {
     
     /** enable or disable the enableSmartLabel property
       * @Default {false}
       */
-    var enableSmartLabel: js.UndefOr[Boolean] = js.native
+    var enableSmartLabel: js.UndefOr[Boolean] = js.undefined
     
     /** set the labelLength property
       * @Default {'2'}
       */
-    var labelLength: js.UndefOr[Double] = js.native
+    var labelLength: js.UndefOr[Double] = js.undefined
     
     /** set the labelPath property
       * @Default {null}
       */
-    var labelPath: js.UndefOr[String] = js.native
+    var labelPath: js.UndefOr[String] = js.undefined
     
     /** The property specifies whether to show labels or not.
       * @Default {false}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** set the smartLabelSize property
       * @Default {fixed}
       */
-    var smartLabelSize: js.UndefOr[LabelSize | String] = js.native
+    var smartLabelSize: js.UndefOr[LabelSize | String] = js.undefined
   }
   object LayersSubLayersLabelSettings {
     
@@ -2253,103 +2320,102 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersLegendSettings extends StObject {
     
     /** Determines whether the legend should be placed outside or inside the map bounds
       * @Default {false}
       */
-    var dockOnMap: js.UndefOr[Boolean] = js.native
+    var dockOnMap: js.UndefOr[Boolean] = js.undefined
     
     /** Determines the legend placement and it is valid only when dockOnMap is true
       * @Default {top}
       */
-    var dockPosition: js.UndefOr[DockPosition | String] = js.native
+    var dockPosition: js.UndefOr[DockPosition | String] = js.undefined
     
     /** height value for legend setting
       * @Default {0}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** to get icon value for legend setting
       * @Default {rectangle}
       */
-    var icon: js.UndefOr[LegendIcons | String] = js.native
+    var icon: js.UndefOr[LegendIcons | String] = js.undefined
     
     /** icon height value for legend setting
       * @Default {20}
       */
-    var iconHeight: js.UndefOr[Double] = js.native
+    var iconHeight: js.UndefOr[Double] = js.undefined
     
     /** icon Width value for legend setting
       * @Default {20}
       */
-    var iconWidth: js.UndefOr[Double] = js.native
+    var iconWidth: js.UndefOr[Double] = js.undefined
     
     /** set the orientation of legend labels
       * @Default {vertical}
       */
-    var labelOrientation: js.UndefOr[LabelOrientation | String] = js.native
+    var labelOrientation: js.UndefOr[LabelOrientation | String] = js.undefined
     
     /** to get leftLabel value for legend setting
       * @Default {null}
       */
-    var leftLabel: js.UndefOr[String] = js.native
+    var leftLabel: js.UndefOr[String] = js.undefined
     
     /** to get mode of legend setting
       * @Default {default}
       */
-    var mode: js.UndefOr[Mode | String] = js.native
+    var mode: js.UndefOr[Mode | String] = js.undefined
     
     /** set the position of legend settings
       * @Default {topleft}
       */
-    var position: js.UndefOr[Position | String] = js.native
+    var position: js.UndefOr[Position | String] = js.undefined
     
     /** x position value for legend setting
       * @Default {0}
       */
-    var positionX: js.UndefOr[Double] = js.native
+    var positionX: js.UndefOr[Double] = js.undefined
     
     /** y position value for legend setting
       * @Default {0}
       */
-    var positionY: js.UndefOr[Double] = js.native
+    var positionY: js.UndefOr[Double] = js.undefined
     
     /** to get rightLabel value for legend setting
       * @Default {null}
       */
-    var rightLabel: js.UndefOr[String] = js.native
+    var rightLabel: js.UndefOr[String] = js.undefined
     
     /** Enables or Disables the showLabels
       * @Default {false}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the showLegend
       * @Default {false}
       */
-    var showLegend: js.UndefOr[Boolean] = js.native
+    var showLegend: js.UndefOr[Boolean] = js.undefined
     
     /** To get the field name in the datasource for generating legend items.
       * @Default {null}
       */
-    var textPath: js.UndefOr[String] = js.native
+    var textPath: js.UndefOr[String] = js.undefined
     
     /** to get title of legend setting
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** to get type of legend setting
       * @Default {layers}
       */
-    var `type`: js.UndefOr[LegendType | String] = js.native
+    var `type`: js.UndefOr[LegendType | String] = js.undefined
     
     /** width value for legend setting
       * @Default {0}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LayersSubLayersLegendSettings {
     
@@ -2478,83 +2544,82 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersShapeSettings extends StObject {
     
     /** Enables or Disables the auto fill colors for shape layer in map. When this property value set to true, shapes will be filled with palette colors.
       * @Default {false}
       */
-    var autoFill: js.UndefOr[Boolean] = js.native
+    var autoFill: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the colorMappings of the shape layer in map
       * @Default {null}
       */
-    var colorMappings: js.UndefOr[LayersSubLayersShapeSettingsColorMappings] = js.native
+    var colorMappings: js.UndefOr[LayersSubLayersShapeSettingsColorMappings] = js.undefined
     
     /** Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
       * @Default {palette1}
       */
-    var colorPalette: js.UndefOr[ColorPalette | String] = js.native
+    var colorPalette: js.UndefOr[ColorPalette | String] = js.undefined
     
     /** Specifies the shape color valuePath of the shape layer in map
       * @Default {null}
       */
-    var colorValuePath: js.UndefOr[String] = js.native
+    var colorValuePath: js.UndefOr[String] = js.undefined
     
     /** Enables or Disables the gradient colors for map shapes.
       * @Default {false}
       */
-    var enableGradient: js.UndefOr[Boolean] = js.native
+    var enableGradient: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the shape fill color of the shape layer in map
       * @Default {#E5E5E5}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Specifies the mouse over width of the shape layer in map
       * @Default {1}
       */
-    var highlightBorderWidth: js.UndefOr[Double] = js.native
+    var highlightBorderWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the mouse hover color of the shape layer in map
       * @Default {gray}
       */
-    var highlightColor: js.UndefOr[String] = js.native
+    var highlightColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the mouse over stroke color of the shape layer in map
       * @Default {#C1C1C1}
       */
-    var highlightStroke: js.UndefOr[String] = js.native
+    var highlightStroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape selection color of the shape layer in map
       * @Default {gray}
       */
-    var selectionColor: js.UndefOr[String] = js.native
+    var selectionColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape selection stroke color of the shape layer in map
       * @Default {#C1C1C1}
       */
-    var selectionStroke: js.UndefOr[String] = js.native
+    var selectionStroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape selection stroke width of the shape layer in map
       * @Default {1}
       */
-    var selectionStrokeWidth: js.UndefOr[Double] = js.native
+    var selectionStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape stroke color of the shape layer in map
       * @Default {#C1C1C1}
       */
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
     /** Specifies the shape stroke thickness value of the shape layer in map
       * @Default {0.2}
       */
-    var strokeThickness: js.UndefOr[Double] = js.native
+    var strokeThickness: js.UndefOr[Double] = js.undefined
     
     /** Specifies the shape valuePath of the shape layer in map
       * @Default {null}
       */
-    var valuePath: js.UndefOr[String] = js.native
+    var valuePath: js.UndefOr[String] = js.undefined
   }
   object LayersSubLayersShapeSettings {
     
@@ -2659,18 +2724,17 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersShapeSettingsColorMappings extends StObject {
     
     /** Specifies the equalColorMapping in the shape layer of map.
       * @Default {null}
       */
-    var equalColorMapping: js.UndefOr[js.Array[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping]] = js.native
+    var equalColorMapping: js.UndefOr[js.Array[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping]] = js.undefined
     
     /** Specifies the range colorMappings in the shape layer of map.
       * @Default {null}
       */
-    var rangeColorMapping: js.UndefOr[js.Array[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]] = js.native
+    var rangeColorMapping: js.UndefOr[js.Array[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]] = js.undefined
   }
   object LayersSubLayersShapeSettingsColorMappings {
     
@@ -2703,18 +2767,17 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersShapeSettingsColorMappingsEqualColorMapping extends StObject {
     
     /** Specifies the equalColorMapping color in the shape layer of map.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the equalColorMapping value in the shape layer of map.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object LayersSubLayersShapeSettingsColorMappingsEqualColorMapping {
     
@@ -2741,23 +2804,22 @@ object Map {
     }
   }
   
-  @js.native
   trait LayersSubLayersShapeSettingsColorMappingsRangeColorMapping extends StObject {
     
     /** Specifies the start range colorMappings in the shape layer of map.
       * @Default {null}
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
     /** Specifies the gradientColors in the shape layer of map.
       * @Default {null}
       */
-    var gradientColors: js.UndefOr[js.Array[_]] = js.native
+    var gradientColors: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the to range colorMappings in the shape layer of map.
       * @Default {null}
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object LayersSubLayersShapeSettingsColorMappingsRangeColorMapping {
     
@@ -2777,7 +2839,7 @@ object Map {
       def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
       @scala.inline
-      def setGradientColors(value: js.Array[_]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
+      def setGradientColors(value: js.Array[js.Any]): Self = StObject.set(x, "gradientColors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGradientColorsUndefined: Self = StObject.set(x, "gradientColors", js.undefined)
@@ -2793,26 +2855,25 @@ object Map {
     }
   }
   
-  @js.native
   trait LegendItemClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** startX - X-coordinate of legend item in pixel        LegendItem - Instance of the legend item object that is about to be rendered    style - Options to customize the legend item
       * styles such as border, color, size, etcâ€¦,        symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering    map - Instance
       * of the map object corresponding to the legend item
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendItemClickEventArgs {
     
@@ -2851,12 +2912,11 @@ object Map {
     }
   }
   
-  @js.native
   trait LegendItemRenderingEventArgs extends StObject {
     
     /** Returns the legend item.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object LegendItemRenderingEventArgs {
     
@@ -2877,20 +2937,19 @@ object Map {
     }
   }
   
-  @js.native
   trait MarkerEnterEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MarkerEnterEventArgs {
     
@@ -2923,20 +2982,19 @@ object Map {
     }
   }
   
-  @js.native
   trait MarkerLeaveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MarkerLeaveEventArgs {
     
@@ -2969,12 +3027,11 @@ object Map {
     }
   }
   
-  @js.native
   trait MarkerSelectedEventArgs extends StObject {
     
     /** Returns marker object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object MarkerSelectedEventArgs {
     
@@ -2995,156 +3052,155 @@ object Map {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, on clicking the map.
       */
-    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the background color for map
       * @Default {transparent}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Specifies the index of the map to determine the shape layer to be displayed
       * @Default {0}
       */
-    var baseMapIndex: js.UndefOr[Double] = js.native
+    var baseMapIndex: js.UndefOr[Double] = js.undefined
     
     /** Triggered while rendering the each bubbles in maps.
       */
-    var bubbleRendering: js.UndefOr[js.Function1[/* e */ BubbleRenderingEventArgs, Unit]] = js.native
+    var bubbleRendering: js.UndefOr[js.Function1[/* e */ BubbleRenderingEventArgs, Unit]] = js.undefined
     
     /** Specify the center position where map should be displayed
       * @Default {[0,0]}
       */
-    var centerPosition: js.UndefOr[js.Any] = js.native
+    var centerPosition: js.UndefOr[js.Any] = js.undefined
     
     /** Fires before rendering the data labels. This event is triggered for each data label in the layers. You can use this event to add custom text in data labels.
       */
-    var displayTextRendering: js.UndefOr[js.Function1[/* e */ DisplayTextRenderingEventArgs, Unit]] = js.native
+    var displayTextRendering: js.UndefOr[js.Function1[/* e */ DisplayTextRenderingEventArgs, Unit]] = js.undefined
     
     /** Fires, on double clicking the map.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Controls the selection through dragging
       * @Default {false}
       */
-    var draggingOnSelection: js.UndefOr[Boolean] = js.native
+    var draggingOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the map animation
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the animation for layer change in map
       * @Default {false}
       */
-    var enableLayerChangeAnimation: js.UndefOr[Boolean] = js.native
+    var enableLayerChangeAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the map panning
       * @Default {true}
       */
-    var enablePan: js.UndefOr[Boolean] = js.native
+    var enablePan: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables right to left(RTL) support for maps.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Determines whether map need to resize when container is resized
       * @Default {true}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** Determines whether map need to resize when container is resized
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Layer for holding the map shapes
       */
-    var layers: js.UndefOr[js.Array[Layer]] = js.native
+    var layers: js.UndefOr[js.Array[Layer]] = js.undefined
     
     /** Fires on clicking the legend item.
       */
-    var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, Unit]] = js.native
+    var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, Unit]] = js.undefined
     
     /** Triggered while rendering the each legend in maps.
       */
-    var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, Unit]] = js.native
+    var legendItemRendering: js.UndefOr[js.Function1[/* e */ LegendItemRenderingEventArgs, Unit]] = js.undefined
     
     /** Name of the culture based on which map should be localized. Labels are localized with respect to the culture name.String type properties like template text are not localized
       * automatically. Provide localized text as value to string type properties.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Triggers while entering the hovered marker shape.
       */
-    var markerEnter: js.UndefOr[js.Function1[/* e */ MarkerEnterEventArgs, Unit]] = js.native
+    var markerEnter: js.UndefOr[js.Function1[/* e */ MarkerEnterEventArgs, Unit]] = js.undefined
     
     /** Triggers while leaving the hovered marker shape.
       */
-    var markerLeave: js.UndefOr[js.Function1[/* e */ MarkerLeaveEventArgs, Unit]] = js.native
+    var markerLeave: js.UndefOr[js.Function1[/* e */ MarkerLeaveEventArgs, Unit]] = js.undefined
     
     /** Triggered on selecting the map markers.
       */
-    var markerSelected: js.UndefOr[js.Function1[/* e */ MarkerSelectedEventArgs, Unit]] = js.native
+    var markerSelected: js.UndefOr[js.Function1[/* e */ MarkerSelectedEventArgs, Unit]] = js.undefined
     
     /** Triggers while leaving the hovered map shape
       */
-    var mouseleave: js.UndefOr[js.Function1[/* e */ MouseleaveEventArgs, Unit]] = js.native
+    var mouseleave: js.UndefOr[js.Function1[/* e */ MouseleaveEventArgs, Unit]] = js.undefined
     
     /** Triggers while hovering the map shape.
       */
-    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
+    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Enables or Disables the navigation control for map to perform zooming and panning on map shapes.
       */
-    var navigationControl: js.UndefOr[NavigationControl] = js.native
+    var navigationControl: js.UndefOr[NavigationControl] = js.undefined
     
     /** Fires before loading the map.
       */
-    var onLoad: js.UndefOr[js.Function1[/* e */ OnLoadEventArgs, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* e */ OnLoadEventArgs, Unit]] = js.undefined
     
     /** Triggers once map render completed.
       */
-    var onRenderComplete: js.UndefOr[js.Function1[/* e */ OnRenderCompleteEventArgs, Unit]] = js.native
+    var onRenderComplete: js.UndefOr[js.Function1[/* e */ OnRenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when map panning ends.
       */
-    var panned: js.UndefOr[js.Function1[/* e */ PannedEventArgs, Unit]] = js.native
+    var panned: js.UndefOr[js.Function1[/* e */ PannedEventArgs, Unit]] = js.undefined
     
     /** Triggers after refreshing the map items.
       */
-    var refreshed: js.UndefOr[js.Function1[/* e */ RefreshedEventArgs, Unit]] = js.native
+    var refreshed: js.UndefOr[js.Function1[/* e */ RefreshedEventArgs, Unit]] = js.undefined
     
     /** Fires, on right clicking the map.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Triggered while rendering the each shapes in maps.
       */
-    var shapeRendering: js.UndefOr[js.Function1[/* e */ ShapeRenderingEventArgs, Unit]] = js.native
+    var shapeRendering: js.UndefOr[js.Function1[/* e */ ShapeRenderingEventArgs, Unit]] = js.undefined
     
     /** Triggered on selecting the map shapes.
       */
-    var shapeSelected: js.UndefOr[js.Function1[/* e */ ShapeSelectedEventArgs, Unit]] = js.native
+    var shapeSelected: js.UndefOr[js.Function1[/* e */ ShapeSelectedEventArgs, Unit]] = js.undefined
     
     /** Enables or Disables the Zooming for map.
       */
-    var zoomSettings: js.UndefOr[ZoomSettings] = js.native
+    var zoomSettings: js.UndefOr[ZoomSettings] = js.undefined
     
     /** Triggered when map is zoomed-in.
       */
-    var zoomedIn: js.UndefOr[js.Function1[/* e */ ZoomedInEventArgs, Unit]] = js.native
+    var zoomedIn: js.UndefOr[js.Function1[/* e */ ZoomedInEventArgs, Unit]] = js.undefined
     
     /** Triggers when map is zoomed out.
       */
-    var zoomedOut: js.UndefOr[js.Function1[/* e */ ZoomedOutEventArgs, Unit]] = js.native
+    var zoomedOut: js.UndefOr[js.Function1[/* e */ ZoomedOutEventArgs, Unit]] = js.undefined
   }
   object Model {
     
@@ -3366,12 +3422,11 @@ object Map {
     }
   }
   
-  @js.native
   trait MouseleaveEventArgs extends StObject {
     
     /** Returns hovered map shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object MouseleaveEventArgs {
     
@@ -3392,12 +3447,11 @@ object Map {
     }
   }
   
-  @js.native
   trait MouseoverEventArgs extends StObject {
     
     /** Returns hovered map shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object MouseoverEventArgs {
     
@@ -3418,33 +3472,32 @@ object Map {
     }
   }
   
-  @js.native
   trait NavigationControl extends StObject {
     
     /** Set the absolutePosition for navigation control
       * @Default {{x:0,y:0}}
       */
-    var absolutePosition: js.UndefOr[js.Any] = js.native
+    var absolutePosition: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the navigation control template for map
       * @Default {null}
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** Set the dockPosition value for navigation control
       * @Default {centerleft}
       */
-    var dockPosition: js.UndefOr[Position | String] = js.native
+    var dockPosition: js.UndefOr[Position | String] = js.undefined
     
     /** Enables or Disables the Navigation for handling zooming map
       * @Default {false}
       */
-    var enableNavigation: js.UndefOr[Boolean] = js.native
+    var enableNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Set the orientation value for navigation control
       * @Default {vertical}
       */
-    var orientation: js.UndefOr[LabelOrientation | String] = js.native
+    var orientation: js.UndefOr[LabelOrientation | String] = js.undefined
   }
   object NavigationControl {
     
@@ -3489,20 +3542,19 @@ object Map {
     }
   }
   
-  @js.native
   trait OnLoadEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the map model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OnLoadEventArgs {
     
@@ -3535,12 +3587,11 @@ object Map {
     }
   }
   
-  @js.native
   trait OnRenderCompleteEventArgs extends StObject {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object OnRenderCompleteEventArgs {
     
@@ -3561,12 +3612,11 @@ object Map {
     }
   }
   
-  @js.native
   trait PannedEventArgs extends StObject {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object PannedEventArgs {
     
@@ -3587,12 +3637,11 @@ object Map {
     }
   }
   
-  @js.native
   trait RefreshedEventArgs extends StObject {
     
     /** Refresh and load the map.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object RefreshedEventArgs {
     
@@ -3613,12 +3662,11 @@ object Map {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Returns right clicked shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -3639,12 +3687,11 @@ object Map {
     }
   }
   
-  @js.native
   trait ShapeRenderingEventArgs extends StObject {
     
     /** Returns the shape values.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object ShapeRenderingEventArgs {
     
@@ -3665,12 +3712,11 @@ object Map {
     }
   }
   
-  @js.native
   trait ShapeSelectedEventArgs extends StObject {
     
     /** Returns selected shape object.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object ShapeSelectedEventArgs {
     
@@ -3691,48 +3737,47 @@ object Map {
     }
   }
   
-  @js.native
   trait ZoomSettings extends StObject {
     
     /** Specifies animation duration for map shapes while zooming.
       * @Default {600}
       */
-    var animationDuration: js.UndefOr[String] = js.native
+    var animationDuration: js.UndefOr[String] = js.undefined
     
     /** Enables or Disables the zoom on mouse wheel the map.
       * @Default {true}
       */
-    var enableMouseWheelZoom: js.UndefOr[Boolean] = js.native
+    var enableMouseWheelZoom: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the zooming of map
       * @Default {true}
       */
-    var enableZoom: js.UndefOr[Boolean] = js.native
+    var enableZoom: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disables the zoom on selecting the map shape
       * @Default {false}
       */
-    var enableZoomOnSelection: js.UndefOr[Boolean] = js.native
+    var enableZoomOnSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the zoom factor for map zoom value.
       * @Default {1}
       */
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
     /** Specifies the zoom level value for which map to be zoomed
       * @Default {1}
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /** Specifies the maximum zoom level of the map
       * @Default {100}
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum zoomSettings level of the map
       * @Default {1}
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
   }
   object ZoomSettings {
     
@@ -3795,16 +3840,15 @@ object Map {
     }
   }
   
-  @js.native
   trait ZoomedInEventArgs extends StObject {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** Returns zoom level value for which the map is zoomed.
       */
-    var zoomLevel: js.UndefOr[js.Any] = js.native
+    var zoomLevel: js.UndefOr[js.Any] = js.undefined
   }
   object ZoomedInEventArgs {
     
@@ -3831,16 +3875,15 @@ object Map {
     }
   }
   
-  @js.native
   trait ZoomedOutEventArgs extends StObject {
     
     /** Event parameters from map
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** Returns zoom level value for which the map is zoomed.
       */
-    var zoomLevel: js.UndefOr[js.Any] = js.native
+    var zoomLevel: js.UndefOr[js.Any] = js.undefined
   }
   object ZoomedOutEventArgs {
     

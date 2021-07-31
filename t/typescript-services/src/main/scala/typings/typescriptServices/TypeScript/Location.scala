@@ -2,31 +2,29 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var _fileName: js.Any = js.native
+  var _fileName: js.Any
   
-  var _length: js.Any = js.native
+  var _length: js.Any
   
-  var _lineMap: js.Any = js.native
+  var _lineMap: js.Any
   
-  var _start: js.Any = js.native
+  var _start: js.Any
   
-  def character(): Double = js.native
+  def character(): Double
   
-  def fileName(): String = js.native
+  def fileName(): String
   
-  def length(): Double = js.native
+  def length(): Double
   
-  def line(): Double = js.native
+  def line(): Double
   
-  def lineMap(): LineMap = js.native
+  def lineMap(): LineMap
   
-  def start(): Double = js.native
+  def start(): Double
 }
 object Location {
   

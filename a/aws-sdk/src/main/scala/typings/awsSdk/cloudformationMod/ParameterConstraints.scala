@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterConstraints extends StObject {
   
   /**
     * A list of values that are permitted for a parameter.
     */
-  var AllowedValues: js.UndefOr[typings.awsSdk.cloudformationMod.AllowedValues] = js.native
+  var AllowedValues: js.UndefOr[typings.awsSdk.cloudformationMod.AllowedValues] = js.undefined
 }
 object ParameterConstraints {
   

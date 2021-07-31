@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionDeferralInfo extends StObject {
   
   /** The desired next expiry time to assign to the subscription, in milliseconds since the Epoch. The given time must be later/greater than the current expiry time for the subscription. */
-  var desiredExpiryTimeMillis: js.UndefOr[String] = js.native
+  var desiredExpiryTimeMillis: js.UndefOr[String] = js.undefined
   
   /** The expected expiry time for the subscription. If the current expiry time for the subscription is not the value specified here, the deferral will not occur. */
-  var expectedExpiryTimeMillis: js.UndefOr[String] = js.native
+  var expectedExpiryTimeMillis: js.UndefOr[String] = js.undefined
 }
 object SubscriptionDeferralInfo {
   

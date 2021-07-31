@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,22 +20,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * allow a programmer to access the SQL **BLOB** . ;  The `Blob` interface provides methods for getting the length of a SQL ** BLOB ** (Binary Large
   * Object) value, for materializing a ** BLOB ** value on the client and for determining the position of a pattern of bytes within a ** BLOB ** value.
   */
-@js.native
-trait XBlob extends XInterface {
+trait XBlob
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the ** BLOB ** designated by this `Blob` instance as a stream.
     * @returns the stream
     * @throws SQLException if a database access error occurs.
     */
-  val BinaryStream: XInputStream = js.native
+  val BinaryStream: XInputStream
   
   /**
     * retrieves the ** BLOB ** designated by this `Blob` instance as a stream.
     * @returns the stream
     * @throws SQLException if a database access error occurs.
     */
-  def getBinaryStream(): XInputStream = js.native
+  def getBinaryStream(): XInputStream
   
   /**
     * returns as an array of bytes part or all of the ** BLOB ** value that this `Blob` object designates. The byte array contains up to `length`
@@ -46,14 +46,14 @@ trait XBlob extends XInterface {
     * @returns a byte array containing up to `length` consecutive bytes from the ** BLOB ** value designated by this `Blob` object, starting with the byte at po
     * @throws SQLException if there is an error accessing the **BLOB** .
     */
-  def getBytes(pos: Double, length: Double): SafeArray[Double] = js.native
+  def getBytes(pos: Double, length: Double): SafeArray[Double]
   
   /**
     * returns the number of bytes in the ** BLOB ** value designated by this `Blob` object.
     * @returns the length
     * @throws SQLException if a database access error occurs.
     */
-  def length(): Double = js.native
+  def length(): Double
   
   /**
     * determines the byte position at which the specified byte `pattern` begins within the ** BLOB ** value that this `Blob` object represents. The search
@@ -63,7 +63,7 @@ trait XBlob extends XInterface {
     * @returns the position
     * @throws SQLException if a database access error occurs.
     */
-  def position(pattern: SeqEquiv[Double], start: Double): Double = js.native
+  def position(pattern: SeqEquiv[Double], start: Double): Double
   
   /**
     * determines the byte position in the ** BLOB ** value designated by this `Blob` object at which `pattern` begins. The search begins at position `start`
@@ -73,7 +73,7 @@ trait XBlob extends XInterface {
     * @returns the position
     * @throws SQLException if a database access error occurs.
     */
-  def positionOfBlob(pattern: XBlob, start: Double): Double = js.native
+  def positionOfBlob(pattern: XBlob, start: Double): Double
 }
 object XBlob {
   

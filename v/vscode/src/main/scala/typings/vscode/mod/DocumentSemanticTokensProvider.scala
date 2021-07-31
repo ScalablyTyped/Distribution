@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSemanticTokensProvider extends StObject {
   
   /**
     * An optional event to signal that the semantic tokens from this provider have changed.
     */
-  var onDidChangeSemanticTokens: js.UndefOr[Event[Unit]] = js.native
+  var onDidChangeSemanticTokens: js.UndefOr[Event[Unit]] = js.undefined
   
   /**
     * Tokens in a file are represented as an array of integers. The position of each token is expressed relative to
@@ -72,7 +70,7 @@ trait DocumentSemanticTokensProvider extends StObject {
     * *NOTE*: When doing edits, it is possible that multiple edits occur until VS Code decides to invoke the semantic tokens provider.
     * *NOTE*: If the provider cannot temporarily compute semantic tokens, it can indicate this by throwing an error with the message 'Busy'.
     */
-  def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens] = js.native
+  def provideDocumentSemanticTokens(document: TextDocument, token: CancellationToken): ProviderResult[SemanticTokens]
   
   /**
     * Instead of always returning all the tokens in a file, it is possible for a `DocumentSemanticTokensProvider` to implement
@@ -110,7 +108,7 @@ trait DocumentSemanticTokensProvider extends StObject {
       /* token */ CancellationToken, 
       ProviderResult[SemanticTokens | SemanticTokensEdits]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object DocumentSemanticTokensProvider {
   

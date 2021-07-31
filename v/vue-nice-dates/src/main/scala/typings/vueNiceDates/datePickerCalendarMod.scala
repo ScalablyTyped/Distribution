@@ -9,13 +9,14 @@ import typings.vueNiceDates.anon.OmitDatePickerPropsisFocu
 import typings.vueNiceDates.anon.ReceivedDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerCalendarMod {
   
   @js.native
-  trait DatePickerCalendar extends VueConstructor[Vue] {
+  trait DatePickerCalendar
+    extends StObject
+       with VueConstructor[Vue] {
     
     def date(): ReceivedDate = js.native
     

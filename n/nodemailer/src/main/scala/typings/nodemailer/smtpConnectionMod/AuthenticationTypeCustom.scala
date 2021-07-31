@@ -5,18 +5,17 @@ import typings.nodemailer.nodemailerStrings.Custom_
 import typings.nodemailer.nodemailerStrings.custom__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationTypeCustom
-  extends Credentials
+  extends StObject
+     with Credentials
      with AuthenticationType {
   
-  var method: String = js.native
+  var method: String
   
   /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ or ‘custom’ */
-  var `type`: custom__ | Custom_ | CUSTOM = js.native
+  var `type`: custom__ | Custom_ | CUSTOM
 }
 object AuthenticationTypeCustom {
   

@@ -2,16 +2,14 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the server/instance capabilities for updating the action cache.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends StObject {
   
-  var updateEnabled: js.UndefOr[Boolean] = js.native
+  var updateEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities {
   

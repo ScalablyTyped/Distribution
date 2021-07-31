@@ -12,7 +12,7 @@ Creates SEO friendly URL slugs with multiple language support
 | Keywords           | slug, slugs, slugify, url, page url, unique url, seo |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 1083 |
+| # downloads        | 16275 |
 | # stars            | 0 |
 
 ## Links

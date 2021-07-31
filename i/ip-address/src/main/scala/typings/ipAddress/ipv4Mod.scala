@@ -4,7 +4,6 @@ import typings.ipAddress.ipv6Mod.Address6
 import typings.jsbn.mod.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipv4Mod {
@@ -192,6 +191,10 @@ object ipv4Mod {
   /* static members */
   object Address4 {
     
+    @JSImport("ip-address/dist/lib/ipv4", "Address4")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Converts a BigInteger to a v4 address object
       * @memberof Address4
@@ -199,9 +202,8 @@ object ipv4Mod {
       * @param {BigInteger} bigInteger - a BigInteger to convert
       * @returns {Address4}
       */
-    @JSImport("ip-address/dist/lib/ipv4", "Address4.fromBigInteger")
-    @js.native
-    def fromBigInteger(bigInteger: BigInteger): Address4 = js.native
+    @scala.inline
+    def fromBigInteger(bigInteger: BigInteger): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
     /**
       * Converts a hex string to an IPv4 address object
@@ -210,9 +212,8 @@ object ipv4Mod {
       * @param {string} hex - a hex string to convert
       * @returns {Address4}
       */
-    @JSImport("ip-address/dist/lib/ipv4", "Address4.fromHex")
-    @js.native
-    def fromHex(hex: String): Address4 = js.native
+    @scala.inline
+    def fromHex(hex: String): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
     /**
       * Converts an integer into a IPv4 address object
@@ -221,12 +222,10 @@ object ipv4Mod {
       * @param {integer} integer - a number to convert
       * @returns {Address4}
       */
-    @JSImport("ip-address/dist/lib/ipv4", "Address4.fromInteger")
-    @js.native
-    def fromInteger(integer: Double): Address4 = js.native
+    @scala.inline
+    def fromInteger(integer: Double): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(integer.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
-    @JSImport("ip-address/dist/lib/ipv4", "Address4.isValid")
-    @js.native
-    def isValid(address: String): Boolean = js.native
+    @scala.inline
+    def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

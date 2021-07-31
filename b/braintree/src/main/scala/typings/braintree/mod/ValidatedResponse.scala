@@ -3,43 +3,41 @@ package typings.braintree.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidatedResponse[T] extends StObject {
   
-  var address: Address = js.native
+  var address: Address
   
-  var clientToken: String = js.native
+  var clientToken: String
   
-  var credentials: OAuthToken = js.native
+  var credentials: OAuthToken
   
-  var creditCard: CreditCard = js.native
+  var creditCard: CreditCard
   
-  var customer: Customer = js.native
+  var customer: Customer
   
-  var dispute: Dispute = js.native
+  var dispute: Dispute
   
-  var errors: ValidationErrorsCollection = js.native
+  var errors: ValidationErrorsCollection
   
-  var merchantAccount: MerchantAccount = js.native
+  var merchantAccount: MerchantAccount
   
-  var message: String = js.native
+  var message: String
   
-  var params: Record[String, _] = js.native
+  var params: Record[String, js.Any]
   
-  var paymentMethod: PaymentMethod = js.native
+  var paymentMethod: PaymentMethod
   
-  var paymentMethodNonce: PaymentMethodNonce = js.native
+  var paymentMethodNonce: PaymentMethodNonce
   
-  var settlementBatchSumary: SettlementBatchSummary = js.native
+  var settlementBatchSumary: SettlementBatchSummary
   
-  var subscription: Subscription = js.native
+  var subscription: Subscription
   
-  var success: Boolean = js.native
+  var success: Boolean
   
-  var transaction: Transaction = js.native
+  var transaction: Transaction
 }
 object ValidatedResponse {
   
@@ -54,7 +52,7 @@ object ValidatedResponse {
     errors: ValidationErrorsCollection,
     merchantAccount: MerchantAccount,
     message: String,
-    params: Record[String, _],
+    params: Record[String, js.Any],
     paymentMethod: PaymentMethod,
     paymentMethodNonce: PaymentMethodNonce,
     settlementBatchSumary: SettlementBatchSummary,
@@ -67,7 +65,7 @@ object ValidatedResponse {
   }
   
   @scala.inline
-  implicit class ValidatedResponseMutableBuilder[Self <: ValidatedResponse[_], T] (val x: Self with ValidatedResponse[T]) extends AnyVal {
+  implicit class ValidatedResponseMutableBuilder[Self <: ValidatedResponse[?], T] (val x: Self & ValidatedResponse[T]) extends AnyVal {
     
     @scala.inline
     def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
@@ -97,7 +95,7 @@ object ValidatedResponse {
     def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaymentMethod(value: PaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])

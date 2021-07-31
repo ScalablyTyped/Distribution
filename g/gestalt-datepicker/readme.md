@@ -10,9 +10,9 @@ A React UI datepicker component which enforces Pinterest’s design language
 | ------------------ | :-------------: |
 | Full name          | gestalt-datepicker |
 | Keywords           | design system, react, react component, pinterest, ui library, datepicker |
-| # releases         | 282 |
+| # releases         | 356 |
 | # dependents       | 0 |
-| # downloads        | 212680 |
+| # downloads        | 261137 |
 | # stars            | 0 |
 
 ## Links

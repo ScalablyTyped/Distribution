@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCertificateResponse extends StObject {
   
   /**
     * The Secure Sockets Layer (SSL) certificate.
     */
-  var Certificate: js.UndefOr[typings.awsSdk.dmsMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.dmsMod.Certificate] = js.undefined
 }
 object DeleteCertificateResponse {
   

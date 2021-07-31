@@ -4,11 +4,12 @@ import typings.kendoUi.kendo.Class
 import typings.kendoUi.kendo.geometry.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Segment extends Class {
+trait Segment
+  extends StObject
+     with Class {
   
   def anchor(): Point = js.native
   def anchor(value: Point): Unit = js.native

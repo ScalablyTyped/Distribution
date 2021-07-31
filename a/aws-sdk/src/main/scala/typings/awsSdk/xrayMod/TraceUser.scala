@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraceUser extends StObject {
   
   /**
     * Services that the user's request hit.
     */
-  var ServiceIds: js.UndefOr[typings.awsSdk.xrayMod.ServiceIds] = js.native
+  var ServiceIds: js.UndefOr[typings.awsSdk.xrayMod.ServiceIds] = js.undefined
   
   /**
     * The user's name.
     */
-  var UserName: js.UndefOr[String] = js.native
+  var UserName: js.UndefOr[String] = js.undefined
 }
 object TraceUser {
   

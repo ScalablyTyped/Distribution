@@ -4,7 +4,6 @@ import typings.typeorm.abstractSqliteQueryRunnerMod.AbstractSqliteQueryRunner
 import typings.typeorm.betterSqlite3DriverMod.BetterSqlite3Driver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object betterSqlite3QueryRunnerMod {

@@ -6,15 +6,13 @@ import typings.monacoEditor.mod.IEvent
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeLensProvider extends StObject {
   
-  var onDidChange: js.UndefOr[IEvent[this.type]] = js.native
+  var onDidChange: js.UndefOr[IEvent[this.type]] = js.undefined
   
-  def provideCodeLenses(model: ITextModel, token: CancellationToken): ProviderResult[CodeLensList] = js.native
+  def provideCodeLenses(model: ITextModel, token: CancellationToken): ProviderResult[CodeLensList]
   
   var resolveCodeLens: js.UndefOr[
     js.Function3[
@@ -23,7 +21,7 @@ trait CodeLensProvider extends StObject {
       /* token */ CancellationToken, 
       ProviderResult[CodeLens]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object CodeLensProvider {
   

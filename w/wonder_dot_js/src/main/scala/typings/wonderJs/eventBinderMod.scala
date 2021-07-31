@@ -1,17 +1,17 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/binder/EventBinder", JSImport.Namespace)
-@js.native
-object eventBinderMod extends js.Object {
+object eventBinderMod {
+  
+  @JSImport("wonder.js/dist/es2015/event/binder/EventBinder", "EventBinder")
   @js.native
-  abstract class EventBinder () extends js.Object {
+  abstract class EventBinder () extends StObject {
+    
     def off(args: js.Any*): Unit = js.native
+    
     def on(args: js.Any*): Unit = js.native
   }
-  
 }
-

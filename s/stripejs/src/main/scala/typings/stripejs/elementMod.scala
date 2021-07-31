@@ -44,36 +44,34 @@ import typings.stripejs.stripejsStrings.unset
 import typings.stripejs.stripejsStrings.zh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
   
-  @js.native
   trait BaseOptions extends StObject {
     
     /**
       * Set custom class names on the container DOM element when the Stripe Element is in a
       * particular state.
       */
-    var classes: js.UndefOr[Empty] = js.native
+    var classes: js.UndefOr[Empty] = js.undefined
     
     /**
       * Whether or not the input is disabled
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the icon should be hidden
       * @default false
       */
-    var hideIcon: js.UndefOr[Boolean] = js.native
+    var hideIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Customize appearance using CSS properties
       */
-    var style: js.UndefOr[Invalid] = js.native
+    var style: js.UndefOr[Invalid] = js.undefined
   }
   object BaseOptions {
     
@@ -112,26 +110,27 @@ object elementMod {
     }
   }
   
-  @js.native
-  trait CardElementOptions extends BaseOptions {
+  trait CardElementOptions
+    extends StObject
+       with BaseOptions {
     
     /**
       * Whether or not to hide the postal code
       * NOTE: If you are already collecting a full billing address or postal code elsewhere, set this to `true`
       * @default false
       */
-    var hidePostalCode: js.UndefOr[Boolean] = js.native
+    var hidePostalCode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Appearance of the icon in the Element
       */
-    var iconStyle: js.UndefOr[solid | default] = js.native
+    var iconStyle: js.UndefOr[solid | default] = js.undefined
     
     /**
       * A placeholder text
       * NOTE: This is only available for `cardNumber`, `cardExpiry` & `cardCvc` elements
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * A pre-filled value
@@ -140,7 +139,7 @@ object elementMod {
       *
       * @example {postalCode: '94110'}
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object CardElementOptions {
     
@@ -179,14 +178,13 @@ object elementMod {
     }
   }
   
-  @js.native
   trait ElementCreatorOptions extends StObject {
     
     /**
       * Fonts that should be used for styling the element
       * @see https://stripe.com/docs/stripe-js/reference#stripe-elements
       */
-    var fonts: js.UndefOr[js.Array[FontCSSElement | FontConfigElement]] = js.native
+    var fonts: js.UndefOr[js.Array[FontCSSElement | FontConfigElement]] = js.undefined
     
     /**
       * The translation that should be used for the element text
@@ -194,7 +192,7 @@ object elementMod {
       *
       * @default 'auto'
       */
-    var locale: js.UndefOr[auto | da | de | en | es | fi | fr | it | ja | no | nl | sv | zh | String] = js.native
+    var locale: js.UndefOr[auto | da | de | en | es | fi | fr | it | ja | no | nl | sv | zh | String] = js.undefined
   }
   object ElementCreatorOptions {
     
@@ -292,14 +290,13 @@ object elementMod {
     def postalCode: typings.stripejs.stripejsStrings.postalCode = "postalCode".asInstanceOf[typings.stripejs.stripejsStrings.postalCode]
   }
   
-  @js.native
   trait FontCSSElement extends StObject {
     
     /**
       * A relative or absolute URL pointing to a CSS file with `@font-face` definitions
       * @example 'https://fonts.googleapis.com/css?family=Open+Sans'
       */
-    var cssSrc: String = js.native
+    var cssSrc: String
   }
   object FontCSSElement {
     
@@ -317,14 +314,13 @@ object elementMod {
     }
   }
   
-  @js.native
   trait FontConfigElement extends StObject {
     
     /**
       * The name of the font family
       * @example 'Times New Roman'
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * A src value pointing to your custom font file.
@@ -332,25 +328,25 @@ object elementMod {
       * 'url(https://somewebsite.com/path/to/font.woff)'
       * 'url(path/to/font.woff)'
       */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
     /**
       * The style of the text
       * @default 'normal'
       */
-    var style: js.UndefOr[normal | italic | oblique] = js.native
+    var style: js.UndefOr[normal | italic | oblique] = js.undefined
     
     /**
       * A unicode range for the font that should be used
       * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range
       */
-    var unicodeRange: js.UndefOr[String] = js.native
+    var unicodeRange: js.UndefOr[String] = js.undefined
     
     /**
       * The weight of the font
       * NOTE: This cannot be a number!
       */
-    var weight: js.UndefOr[initial | inherit | bold | bolder | lighter | normal | revert | unset] = js.native
+    var weight: js.UndefOr[initial | inherit | bold | bolder | lighter | normal | revert | unset] = js.undefined
   }
   object FontConfigElement {
     
@@ -395,24 +391,25 @@ object elementMod {
     }
   }
   
-  @js.native
-  trait IBANElementOptions extends BaseOptions {
+  trait IBANElementOptions
+    extends StObject
+       with BaseOptions {
     
     /**
       * Appearance of the icon in the Element
       */
-    var iconStyle: js.UndefOr[solid | default] = js.native
+    var iconStyle: js.UndefOr[solid | default] = js.undefined
     
     /**
       * Customize the country and format of the placeholder IBAN
       * @default 'DE"
       */
-    var placeholderCountry: js.UndefOr[String] = js.native
+    var placeholderCountry: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the list of countries or country-groups whose IBANs you want to allow
       */
-    var supportedCountries: js.UndefOr[js.Array[String]] = js.native
+    var supportedCountries: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IBANElementOptions {
     
@@ -448,8 +445,9 @@ object elementMod {
     }
   }
   
-  @js.native
-  trait IdealBankOptions extends BaseOptions {
+  trait IdealBankOptions
+    extends StObject
+       with BaseOptions {
     
     /**
       * A pre-filled value for the Element. Can be one of the banks listed in the
@@ -457,7 +455,7 @@ object elementMod {
       *
       * @example 'abn_amro'
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IdealBankOptions {
     
@@ -478,10 +476,11 @@ object elementMod {
     }
   }
   
-  @js.native
-  trait MSClearAttributes extends StyleAttributes {
+  trait MSClearAttributes
+    extends StObject
+       with StyleAttributes {
     
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
   }
   object MSClearAttributes {
     
@@ -502,47 +501,46 @@ object elementMod {
     }
   }
   
-  @js.native
   trait OnChange extends StObject {
     
     /**
       * The financial institution that services the account whose IBAN was entered into the Element.
       * NOTE: This is only available when the element is of IBAN type
       */
-    var bankName: String = js.native
+    var bankName: String
     
     /**
       * The type of card that was used
       * @example 'visa'
       * NOTE: This is only available when the element is of Card or Cardnumber type
       */
-    var brand: js.UndefOr[String] = js.native
+    var brand: js.UndefOr[String] = js.undefined
     
     /**
       * true if the value is well-formed and potentially complete
       */
-    var complete: Boolean = js.native
+    var complete: Boolean
     
     /**
       * The country code of the entered IBAN
       * NOTE: This is only available when the element is of IBAN type
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the Element that changed.
       */
-    var elementType: ElementType = js.native
+    var elementType: ElementType
     
     /**
       * true if the value is empty
       */
-    var empty: Boolean = js.native
+    var empty: Boolean
     
     /**
       * The current validation error if any
       */
-    var error: StripeError = js.native
+    var error: StripeError
     
     /**
       * The value of the element
@@ -555,7 +553,7 @@ object elementMod {
       * @see https://stripe.com/docs/sources/ideal#optional-specifying-the-customers-bank
       * NOTE: This is also filled when the element is of IdealBank type
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object OnChange {
     
@@ -603,18 +601,17 @@ object elementMod {
     }
   }
   
-  @js.native
   trait PaymentButtonOptions extends StObject {
     
     /**
       * Set custom class names on the container DOM element when the Stripe Element is in a
       * particular state.
       */
-    var classes: js.UndefOr[Base] = js.native
+    var classes: js.UndefOr[Base] = js.undefined
     
-    var paymentRequest: js.Any = js.native
+    var paymentRequest: js.Any
     
-    var style: js.UndefOr[Complete] = js.native
+    var style: js.UndefOr[Complete] = js.undefined
   }
   object PaymentButtonOptions {
     
@@ -644,26 +641,25 @@ object elementMod {
     }
   }
   
-  @js.native
   trait PaymentRequestButtonStyle extends StObject {
     
     /**
       * The height of the button
       * @example '25px'
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * The theme of the button that should be used
       * @default 'dark'
       */
-    var theme: js.UndefOr[dark | light | `light-outline`] = js.native
+    var theme: js.UndefOr[dark | light | `light-outline`] = js.undefined
     
     /**
       * The type of button that should be shown
       * @default 'default'
       */
-    var `type`: js.UndefOr[default | donate | buy] = js.native
+    var `type`: js.UndefOr[default | donate | buy] = js.undefined
   }
   object PaymentRequestButtonStyle {
     
@@ -773,65 +769,64 @@ object elementMod {
     def update(options: PaymentButtonOptions): Unit = js.native
   }
   
-  @js.native
   trait StyleAttributes extends StObject {
     
     @JSName(":-webkit-autofill")
-    var `Colon-webkit-autofill`: js.UndefOr[StyleAttributes] = js.native
+    var `Colon-webkit-autofill`: js.UndefOr[StyleAttributes] = js.undefined
     
     @JSName("::-ms-clear")
-    var `ColonColon-ms-clear`: js.UndefOr[MSClearAttributes] = js.native
+    var `ColonColon-ms-clear`: js.UndefOr[MSClearAttributes] = js.undefined
     
     @JSName("::placeholder")
-    var ColonColonplaceholder: js.UndefOr[StyleAttributes] = js.native
+    var ColonColonplaceholder: js.UndefOr[StyleAttributes] = js.undefined
     
     @JSName("::selection")
-    var ColonColonselection: js.UndefOr[StyleAttributes] = js.native
+    var ColonColonselection: js.UndefOr[StyleAttributes] = js.undefined
     
     @JSName(":disabled")
-    var Colondisabled: js.UndefOr[StyleAttributes] = js.native
+    var Colondisabled: js.UndefOr[StyleAttributes] = js.undefined
     
     @JSName(":focus")
-    var Colonfocus: js.UndefOr[StyleAttributes] = js.native
+    var Colonfocus: js.UndefOr[StyleAttributes] = js.undefined
     
     @JSName(":hover")
-    var Colonhover: js.UndefOr[StyleAttributes] = js.native
+    var Colonhover: js.UndefOr[StyleAttributes] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
-    var fontSmoothing: js.UndefOr[String] = js.native
+    var fontSmoothing: js.UndefOr[String] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontVariant: js.UndefOr[js.Any] = js.native
+    var fontVariant: js.UndefOr[js.Any] = js.undefined
     
-    var iconColor: js.UndefOr[String] = js.native
+    var iconColor: js.UndefOr[String] = js.undefined
     
-    var letterSpacing: js.UndefOr[String] = js.native
+    var letterSpacing: js.UndefOr[String] = js.undefined
     
-    var lineHeight: js.UndefOr[String] = js.native
+    var lineHeight: js.UndefOr[String] = js.undefined
     
     /**
       * Add padding to the element
       * NOTE: Only available for the `idealBank` Element
       */
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
     
     /**
       * Align text inside the element
       * NOTE: Only available for the `cardNumber`, `cardExpiry`, and `cardCvc` Elements
       */
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textDecoration: js.UndefOr[String] = js.native
+    var textDecoration: js.UndefOr[String] = js.undefined
     
-    var textShadow: js.UndefOr[String] = js.native
+    var textShadow: js.UndefOr[String] = js.undefined
     
-    var textTransform: js.UndefOr[String] = js.native
+    var textTransform: js.UndefOr[String] = js.undefined
   }
   object StyleAttributes {
     

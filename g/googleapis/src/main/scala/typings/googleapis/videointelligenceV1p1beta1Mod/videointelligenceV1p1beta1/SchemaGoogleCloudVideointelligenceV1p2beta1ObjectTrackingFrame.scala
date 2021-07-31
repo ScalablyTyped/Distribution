@@ -2,25 +2,23 @@ package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video frame level annotations for object detection and tracking. This field
   * stores per frame location, time offset, and confidence.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1ObjectTrackingFrame extends StObject {
   
   /**
     * The normalized bounding box location of this object track for the frame.
     */
-  var normalizedBoundingBox: js.UndefOr[SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingBox] = js.native
+  var normalizedBoundingBox: js.UndefOr[SchemaGoogleCloudVideointelligenceV1p2beta1NormalizedBoundingBox] = js.undefined
   
   /**
     * The timestamp of the frame in microseconds.
     */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1ObjectTrackingFrame {
   

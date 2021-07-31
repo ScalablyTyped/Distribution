@@ -2,7 +2,6 @@ package typings.rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,13 +25,13 @@ trait Promise[T] extends StObject {
     * @returns A Promise for the completion of which ever callback is executed.
     */
   def `then`[TResult](): Promise[TResult] = js.native
-  def `then`[TResult](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
-  ): Promise[TResult] = js.native
   def `then`[TResult](onfulfilled: js.Function1[/* value */ T, TResult | PromiseLike[TResult]]): Promise[TResult] = js.native
   def `then`[TResult](
     onfulfilled: js.Function1[/* value */ T, PromiseLike[TResult] | TResult],
+    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
+  ): Promise[TResult] = js.native
+  def `then`[TResult](
+    onfulfilled: Unit,
     onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
   ): Promise[TResult] = js.native
   

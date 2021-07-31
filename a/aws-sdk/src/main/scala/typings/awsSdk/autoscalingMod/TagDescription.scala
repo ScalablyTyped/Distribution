@@ -2,36 +2,34 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagDescription extends StObject {
   
   /**
     * The tag key.
     */
-  var Key: js.UndefOr[TagKey] = js.native
+  var Key: js.UndefOr[TagKey] = js.undefined
   
   /**
     * Determines whether the tag is added to new instances as they are launched in the group.
     */
-  var PropagateAtLaunch: js.UndefOr[typings.awsSdk.autoscalingMod.PropagateAtLaunch] = js.native
+  var PropagateAtLaunch: js.UndefOr[typings.awsSdk.autoscalingMod.PropagateAtLaunch] = js.undefined
   
   /**
     * The name of the group.
     */
-  var ResourceId: js.UndefOr[XmlString] = js.native
+  var ResourceId: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The type of resource. The only supported value is auto-scaling-group.
     */
-  var ResourceType: js.UndefOr[XmlString] = js.native
+  var ResourceType: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The tag value.
     */
-  var Value: js.UndefOr[TagValue] = js.native
+  var Value: js.UndefOr[TagValue] = js.undefined
 }
 object TagDescription {
   

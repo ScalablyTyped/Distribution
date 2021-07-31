@@ -2,7 +2,6 @@ package typings.typeorm.browserMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser", "Timestamp")
@@ -59,27 +58,24 @@ object Timestamp {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @JSImport("typeorm/browser", "Timestamp.fromBits")
-  @js.native
-  def fromBits(lowBits: scala.Double, highBits: scala.Double): typings.typeorm.typingsMod.Timestamp = js.native
+  @scala.inline
+  def fromBits(lowBits: scala.Double, highBits: scala.Double): typings.typeorm.typingsMod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.typeorm.typingsMod.Timestamp]
   
   /**
     * Returns a Timestamp representing the given (32-bit) integer value.
     *
     * @param value The 32-bit integer in question.
     */
-  @JSImport("typeorm/browser", "Timestamp.fromInt")
-  @js.native
-  def fromInt(value: scala.Double): typings.typeorm.typingsMod.Timestamp = js.native
+  @scala.inline
+  def fromInt(value: scala.Double): typings.typeorm.typingsMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.typingsMod.Timestamp]
   
   /**
     * Returns a Timestamp representing the given value, provided that it is a finite number. Otherwise, zero is returned.
     *
     * @param value The number in question.
     */
-  @JSImport("typeorm/browser", "Timestamp.fromNumber")
-  @js.native
-  def fromNumber(value: scala.Double): typings.typeorm.typingsMod.Timestamp = js.native
+  @scala.inline
+  def fromNumber(value: scala.Double): typings.typeorm.typingsMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.typingsMod.Timestamp]
   
   /**
     * Returns a Timestamp representation of the given string, written using the given radix.
@@ -87,10 +83,8 @@ object Timestamp {
     * @param str The textual representation of the Timestamp.
     * @param radix The radix in which the text is written.
     */
-  @JSImport("typeorm/browser", "Timestamp.fromString")
-  @js.native
-  def fromString(str: String): typings.typeorm.typingsMod.Timestamp = js.native
-  @JSImport("typeorm/browser", "Timestamp.fromString")
-  @js.native
-  def fromString(str: String, radix: scala.Double): typings.typeorm.typingsMod.Timestamp = js.native
+  @scala.inline
+  def fromString(str: String): typings.typeorm.typingsMod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.typeorm.typingsMod.Timestamp]
+  @scala.inline
+  def fromString(str: String, radix: scala.Double): typings.typeorm.typingsMod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[typings.typeorm.typingsMod.Timestamp]
 }

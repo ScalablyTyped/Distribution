@@ -2,31 +2,29 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Files extends StObject {
   
-  var files: js.Array[_] = js.native
+  var files: js.Array[js.Any]
   
-  var lang: MaxError = js.native
+  var lang: MaxError
   
-  var maxCount: Double = js.native
+  var maxCount: Double
   
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
-  var onChange: js.Any = js.native
+  var onChange: js.Any
   
-  var onError: js.Any = js.native
+  var onError: js.Any
   
-  var title: String = js.native
+  var title: String
 }
 object Files {
   
   @scala.inline
   def apply(
-    files: js.Array[_],
+    files: js.Array[js.Any],
     lang: MaxError,
     maxCount: Double,
     maxWidth: Double,
@@ -42,7 +40,7 @@ object Files {
   implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFiles(value: js.Array[_]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))

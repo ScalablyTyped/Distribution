@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicediscovery {
   
-  @js.native
   trait ServiceDnsConfig extends StObject {
     
     /**
       * An array that contains one DnsRecord object for each resource record set.
       */
-    var dnsRecords: js.Array[ServiceDnsConfigDnsRecord] = js.native
+    var dnsRecords: js.Array[ServiceDnsConfigDnsRecord]
     
     /**
       * The ID of the namespace to use for DNS configuration.
       */
-    var namespaceId: String = js.native
+    var namespaceId: String
     
     /**
       * The routing policy that you want to apply to all records that Route 53 creates when you register an instance and specify the service. Valid Values: MULTIVALUE, WEIGHTED
       */
-    var routingPolicy: js.UndefOr[String] = js.native
+    var routingPolicy: js.UndefOr[String] = js.undefined
   }
   object ServiceDnsConfig {
     
@@ -53,18 +51,17 @@ object servicediscovery {
     }
   }
   
-  @js.native
   trait ServiceDnsConfigDnsRecord extends StObject {
     
     /**
       * The amount of time, in seconds, that you want DNS resolvers to cache the settings for this resource record set.
       */
-    var ttl: Double = js.native
+    var ttl: Double
     
     /**
       * The type of health check that you want to create, which indicates how Route 53 determines whether an endpoint is healthy. Valid Values: HTTP, HTTPS, TCP
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ServiceDnsConfigDnsRecord {
     
@@ -86,23 +83,22 @@ object servicediscovery {
     }
   }
   
-  @js.native
   trait ServiceHealthCheckConfig extends StObject {
     
     /**
       * The number of 30-second intervals that you want service discovery to wait before it changes the health status of a service instance.  Maximum value of 10.
       */
-    var failureThreshold: js.UndefOr[Double] = js.native
+    var failureThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * The path that you want Route 53 to request when performing health checks. Route 53 automatically adds the DNS name for the service. If you don't specify a value, the default value is /.
       */
-    var resourcePath: js.UndefOr[String] = js.native
+    var resourcePath: js.UndefOr[String] = js.undefined
     
     /**
       * The type of health check that you want to create, which indicates how Route 53 determines whether an endpoint is healthy. Valid Values: HTTP, HTTPS, TCP
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ServiceHealthCheckConfig {
     
@@ -135,13 +131,12 @@ object servicediscovery {
     }
   }
   
-  @js.native
   trait ServiceHealthCheckCustomConfig extends StObject {
     
     /**
       * The number of 30-second intervals that you want service discovery to wait before it changes the health status of a service instance.  Maximum value of 10.
       */
-    var failureThreshold: js.UndefOr[Double] = js.native
+    var failureThreshold: js.UndefOr[Double] = js.undefined
   }
   object ServiceHealthCheckCustomConfig {
     

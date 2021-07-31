@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowBase
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowParameterBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.9.0: introduced
   */
 @js.native
-trait IDataType extends IElement {
+trait IDataType
+  extends StObject
+     with IElement {
   
   val containerAsAppServiceAction: IAppServiceAction = js.native
   

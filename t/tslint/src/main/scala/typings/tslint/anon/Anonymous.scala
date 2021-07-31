@@ -2,21 +2,19 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anonymous extends StObject {
   
-  var anonymous: String = js.native
+  var anonymous: String
   
-  var asyncArrow: String = js.native
+  var asyncArrow: String
   
-  var constructor: String = js.native
+  var constructor: String
   
-  var method: String = js.native
+  var method: String
   
-  var named: String = js.native
+  var named: String
 }
 object Anonymous {
   

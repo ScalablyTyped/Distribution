@@ -2,15 +2,13 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Excerpt extends StObject {
   
-  var custom_excerpt: js.UndefOr[String] = js.native
+  var custom_excerpt: js.UndefOr[String] = js.undefined
   
-  var excerpt: js.UndefOr[String] = js.native
+  var excerpt: js.UndefOr[String] = js.undefined
 }
 object Excerpt {
   

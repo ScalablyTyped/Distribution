@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTrainingDocumentClassifierRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the document classifier currently being trained.
     */
-  var DocumentClassifierArn: typings.awsSdk.comprehendMod.DocumentClassifierArn = js.native
+  var DocumentClassifierArn: typings.awsSdk.comprehendMod.DocumentClassifierArn
 }
 object StopTrainingDocumentClassifierRequest {
   

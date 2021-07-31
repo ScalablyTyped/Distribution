@@ -6,17 +6,15 @@ import typings.atom.atomStrings.enter
 import typings.atom.atomStrings.tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `8` extends StObject {
   
-  var newValue: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`) = js.native
+  var newValue: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
   
   var oldValue: js.UndefOr[
     tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
-  ] = js.native
+  ] = js.undefined
 }
 object `8` {
   

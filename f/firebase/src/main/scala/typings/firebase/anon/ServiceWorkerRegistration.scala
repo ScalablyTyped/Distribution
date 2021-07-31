@@ -2,15 +2,13 @@ package typings.firebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceWorkerRegistration extends StObject {
   
-  var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.native
+  var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.undefined
   
-  var vapidKey: js.UndefOr[String] = js.native
+  var vapidKey: js.UndefOr[String] = js.undefined
 }
 object ServiceWorkerRegistration {
   

@@ -3,13 +3,11 @@ package typings.exceljs.anon
 import typings.exceljs.mod.CellErrorValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: CellErrorValue = js.native
+  var error: CellErrorValue
 }
 object Error {
   

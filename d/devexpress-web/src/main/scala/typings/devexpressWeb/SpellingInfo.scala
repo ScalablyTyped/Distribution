@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains spell checking related settings.
   */
-@js.native
 trait SpellingInfo extends StObject {
   
   /**
     * Provides access to an array containing misspelled intervals.
     */
-  val misspelledIntervals: js.Array[MisspelledInterval] = js.native
+  val misspelledIntervals: js.Array[MisspelledInterval]
   
   /**
     * Gets a value specifying the spell checking state.
     */
-  val spellCheckerState: SpellCheckerState = js.native
+  val spellCheckerState: SpellCheckerState
 }
 object SpellingInfo {
   

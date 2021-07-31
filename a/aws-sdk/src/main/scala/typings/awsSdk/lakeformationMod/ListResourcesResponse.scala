@@ -2,21 +2,19 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesResponse extends StObject {
   
   /**
     * A continuation token, if this is not the first call to retrieve these resources.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A summary of the data lake resources.
     */
-  var ResourceInfoList: js.UndefOr[typings.awsSdk.lakeformationMod.ResourceInfoList] = js.native
+  var ResourceInfoList: js.UndefOr[typings.awsSdk.lakeformationMod.ResourceInfoList] = js.undefined
 }
 object ListResourcesResponse {
   

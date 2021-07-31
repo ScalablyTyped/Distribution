@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionSpecification extends StObject {
   
   /**
     * A unique namespace identifying the option's associated AWS resource.
     */
-  var Namespace: js.UndefOr[OptionNamespace] = js.native
+  var Namespace: js.UndefOr[OptionNamespace] = js.undefined
   
   /**
     * The name of the configuration option.
     */
-  var OptionName: js.UndefOr[ConfigurationOptionName] = js.native
+  var OptionName: js.UndefOr[ConfigurationOptionName] = js.undefined
   
   /**
     * A unique resource name for a time-based scaling configuration option.
     */
-  var ResourceName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceName] = js.native
+  var ResourceName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ResourceName] = js.undefined
 }
 object OptionSpecification {
   

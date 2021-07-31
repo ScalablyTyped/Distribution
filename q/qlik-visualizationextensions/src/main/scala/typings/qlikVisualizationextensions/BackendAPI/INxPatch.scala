@@ -2,10 +2,8 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxPatch extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait INxPatch extends StObject {
     *       # Remove
     *       # Replace
     */
-  var qOp: PatchType = js.native
+  var qOp: PatchType
   
   /**
     * Path to the property to add, remove or replace.
     * String
     */
-  var qPath: String = js.native
+  var qPath: String
   
   /**
     * This parameter is not used in a remove operation. Corresponds to the value of the
@@ -29,7 +27,7 @@ trait INxPatch extends StObject {
     * Examples: "false", "2", "\"New title\""
     * String
     */
-  var qValue: String = js.native
+  var qValue: String
 }
 object INxPatch {
   

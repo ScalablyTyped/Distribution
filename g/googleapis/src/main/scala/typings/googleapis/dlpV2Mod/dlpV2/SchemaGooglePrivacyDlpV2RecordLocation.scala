@@ -2,29 +2,27 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location of a finding within a row or record.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2RecordLocation extends StObject {
   
   /**
     * Field id of the field containing the finding.
     */
-  var fieldId: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var fieldId: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * Key of the finding.
     */
-  var recordKey: js.UndefOr[SchemaGooglePrivacyDlpV2RecordKey] = js.native
+  var recordKey: js.UndefOr[SchemaGooglePrivacyDlpV2RecordKey] = js.undefined
   
   /**
     * Location within a `ContentItem.Table`.
     */
-  var tableLocation: js.UndefOr[SchemaGooglePrivacyDlpV2TableLocation] = js.native
+  var tableLocation: js.UndefOr[SchemaGooglePrivacyDlpV2TableLocation] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2RecordLocation {
   

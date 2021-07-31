@@ -5,7 +5,6 @@ import typings.memcached.anon.Dictkey
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,14 +31,13 @@ object mod {
   @scala.inline
   def config_=(x: options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait CacheDumpData extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var key: String = js.native
+    var key: String
     
-    var s: Double = js.native
+    var s: Double
   }
   object CacheDumpData {
     
@@ -63,30 +61,29 @@ object mod {
     }
   }
   
-  @js.native
   trait CommandData extends StObject {
     
-    def callback(args: js.Any*): js.Any = js.native
+    def callback(args: js.Any*): js.Any
     
-    var cas: js.UndefOr[String] = js.native
+    var cas: js.UndefOr[String] = js.undefined
     
-    var command: String = js.native
+    var command: String
     
-    var execution: Double = js.native
+    var execution: Double
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var lifetime: js.UndefOr[Double] = js.native
+    var lifetime: js.UndefOr[Double] = js.undefined
     
-    var redundancyEnabled: js.UndefOr[Boolean] = js.native
+    var redundancyEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var start: Double = js.native
+    var start: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ _, _]]] = js.native
+    var validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object CommandData {
     
@@ -97,7 +94,7 @@ object mod {
       execution: Double,
       start: Double,
       `type`: String,
-      validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ _, _]]]
+      validate: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]
     ): CommandData = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command.asInstanceOf[js.Any], execution = execution.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -147,10 +144,10 @@ object mod {
       def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValidate(value: js.Array[js.Tuple2[String, js.Function1[/* repeated */ _, _]]]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      def setValidate(value: js.Array[js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]]]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValidateVarargs(value: (js.Tuple2[String, js.Function1[js.Any, js.Any]])*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      def setValidateVarargs(value: (js.Tuple2[String, js.Function1[/* repeated */ js.Any, js.Any]])*): Self = StObject.set(x, "validate", js.Array(value :_*))
       
       @scala.inline
       def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
@@ -195,26 +192,25 @@ object mod {
     def remove: typings.memcached.memcachedStrings.remove = "remove".asInstanceOf[typings.memcached.memcachedStrings.remove]
   }
   
-  @js.native
   trait IssueData extends StObject {
     
-    var failures: js.UndefOr[Double] = js.native
+    var failures: js.UndefOr[Double] = js.undefined
     
-    var messages: js.Array[String] = js.native
+    var messages: js.Array[String]
     
-    var server: String = js.native
+    var server: String
     
-    var tokens: js.Tuple2[String, String] = js.native
+    var tokens: js.Tuple2[String, String]
     
-    var totalDownTime: js.UndefOr[Double] = js.native
+    var totalDownTime: js.UndefOr[Double] = js.undefined
     
-    var totalFailures: js.UndefOr[Double] = js.native
+    var totalFailures: js.UndefOr[Double] = js.undefined
     
-    var totalReconnectsAttempted: js.UndefOr[Double] = js.native
+    var totalReconnectsAttempted: js.UndefOr[Double] = js.undefined
     
-    var totalReconnectsFailed: js.UndefOr[Double] = js.native
+    var totalReconnectsFailed: js.UndefOr[Double] = js.undefined
     
-    var totalReconnectsSuccess: js.UndefOr[Double] = js.native
+    var totalReconnectsSuccess: js.UndefOr[Double] = js.undefined
   }
   object IssueData {
     
@@ -368,14 +364,7 @@ object mod {
     /**
       * Flushes the memcached server.
       */
-    def flush(
-      cb: js.ThisFunction2[
-          /* this */ js.UndefOr[scala.Nothing], 
-          /* err */ js.Any, 
-          /* results */ js.Array[Boolean], 
-          Unit
-        ]
-    ): Unit = js.native
+    def flush(cb: js.ThisFunction2[/* this */ Unit, /* err */ js.Any, /* results */ js.Array[Boolean], Unit]): Unit = js.native
     
     /**
       * Get the value for the given key.
@@ -392,12 +381,7 @@ object mod {
       */
     def getMulti(
       keys: js.Array[String],
-      cb: js.ThisFunction2[
-          /* this */ js.UndefOr[scala.Nothing], 
-          /* err */ js.Any, 
-          /* data */ StringDictionary[js.Any], 
-          Unit
-        ]
+      cb: js.ThisFunction2[/* this */ Unit, /* err */ js.Any, /* data */ StringDictionary[js.Any], Unit]
     ): Unit = js.native
     
     /**
@@ -498,11 +482,11 @@ object mod {
     def version(cb: js.Function2[/* err */ js.Any, /* version */ js.Array[VersionData], Unit]): Unit = js.native
   }
   
-  @js.native
   trait StatusData
-    extends /* key */ StringDictionary[js.UndefOr[String | Boolean | Double]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String | Boolean | Double]] {
     
-    var server: js.UndefOr[String] = js.native
+    var server: js.UndefOr[String] = js.undefined
   }
   object StatusData {
     
@@ -523,16 +507,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait VersionData extends StatusData {
+  trait VersionData
+    extends StObject
+       with StatusData {
     
-    var bugfix: String = js.native
+    var bugfix: String
     
-    var major: String = js.native
+    var major: String
     
-    var minor: String = js.native
+    var minor: String
     
-    var version: String = js.native
+    var version: String
   }
   object VersionData {
     
@@ -559,83 +544,82 @@ object mod {
     }
   }
   
-  @js.native
   trait options extends StObject {
     
     /**
       * md5, the hashing algorithm used to generate the hashRing values.
       */
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
     /**
       * undefined, an array of server_locations to replace servers that fail and that are removed from the consistent hashing scheme.
       */
-    var failOverServers: js.UndefOr[String | js.Array[String]] = js.native
+    var failOverServers: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * 5, the number of failed-attempts to a server before it is regarded as 'dead'.
       */
-    var failures: js.UndefOr[Double] = js.native
+    var failures: js.UndefOr[Double] = js.undefined
     
     /**
       * 5000, the idle timeout for the connections.
       */
-    var idle: js.UndefOr[Double] = js.native
+    var idle: js.UndefOr[Double] = js.undefined
     
     /**
       * true, whether to use md5 as hashing scheme when keys exceed maxKeySize.
       */
-    var keyCompression: js.UndefOr[Boolean] = js.native
+    var keyCompression: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 2592000, the maximum expiration time of keys (in seconds).
       */
-    var maxExpiration: js.UndefOr[Double] = js.native
+    var maxExpiration: js.UndefOr[Double] = js.undefined
     
     /**
       * 250, the maximum key size allowed.
       */
-    var maxKeySize: js.UndefOr[Double] = js.native
+    var maxKeySize: js.UndefOr[Double] = js.undefined
     
     /**
       * 1048576, the maximum size of a value.
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /**
       * '', sentinel to prepend to all memcache keys for namespacing the entries.
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * 10, the maximum size of the connection pool.
       */
-    var poolSize: js.UndefOr[Double] = js.native
+    var poolSize: js.UndefOr[Double] = js.undefined
     
     /**
       * 18000000, the time between reconnection attempts (in milliseconds).
       */
-    var reconnect: js.UndefOr[Double] = js.native
+    var reconnect: js.UndefOr[Double] = js.undefined
     
     /**
       * false, if true, authorizes the automatic removal of dead servers from the pool.
       */
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 5, the number of socket allocation retries per request.
       */
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
     /**
       * 30000, the time between a server failure and an attempt to set it up back in service.
       */
-    var retry: js.UndefOr[Double] = js.native
+    var retry: js.UndefOr[Double] = js.undefined
     
     /**
       * 5000, the time after which Memcached sends a connection timeout (in milliseconds).
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object options {
     

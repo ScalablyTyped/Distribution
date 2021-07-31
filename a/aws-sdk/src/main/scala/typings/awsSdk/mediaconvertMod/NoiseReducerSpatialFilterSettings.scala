@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoiseReducerSpatialFilterSettings extends StObject {
   
   /**
     * Specify strength of post noise reduction sharpening filter, with 0 disabling the filter and 3 enabling it at maximum strength.
     */
-  var PostFilterSharpenStrength: js.UndefOr[integerMin0Max3] = js.native
+  var PostFilterSharpenStrength: js.UndefOr[integerMin0Max3] = js.undefined
   
   /**
     * The speed of the filter, from -2 (lower speed) to 3 (higher speed), with 0 being the nominal value.
     */
-  var Speed: js.UndefOr[integerMinNegative2Max3] = js.native
+  var Speed: js.UndefOr[integerMinNegative2Max3] = js.undefined
   
   /**
     * Relative strength of noise reducing filter. Higher values produce stronger filtering.
     */
-  var Strength: js.UndefOr[integerMin0Max16] = js.native
+  var Strength: js.UndefOr[integerMin0Max16] = js.undefined
 }
 object NoiseReducerSpatialFilterSettings {
   

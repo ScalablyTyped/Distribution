@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversionStatus extends StObject {
   
   /** The original conversion that was inserted or updated. */
-  var conversion: js.UndefOr[Conversion] = js.native
+  var conversion: js.UndefOr[Conversion] = js.undefined
   
   /** A list of errors related to this conversion. */
-  var errors: js.UndefOr[js.Array[ConversionError]] = js.native
+  var errors: js.UndefOr[js.Array[ConversionError]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#conversionStatus". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ConversionStatus {
   

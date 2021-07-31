@@ -2,7 +2,6 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * updated time, which changes when the content or the metadata of the object
   * is updated.
   */
-@js.native
 trait SchemaGcsData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaGcsData extends StObject {
     * Requirements](https://cloud.google.com/storage/docs/naming#requirements)).
     * Required.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
 }
 object SchemaGcsData {
   

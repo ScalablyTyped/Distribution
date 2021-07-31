@@ -2,230 +2,228 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single kind of update to apply to a presentation.
   */
-@js.native
 trait SchemaRequest extends StObject {
   
   /**
     * Creates an image.
     */
-  var createImage: js.UndefOr[SchemaCreateImageRequest] = js.native
+  var createImage: js.UndefOr[SchemaCreateImageRequest] = js.undefined
   
   /**
     * Creates a line.
     */
-  var createLine: js.UndefOr[SchemaCreateLineRequest] = js.native
+  var createLine: js.UndefOr[SchemaCreateLineRequest] = js.undefined
   
   /**
     * Creates bullets for paragraphs.
     */
-  var createParagraphBullets: js.UndefOr[SchemaCreateParagraphBulletsRequest] = js.native
+  var createParagraphBullets: js.UndefOr[SchemaCreateParagraphBulletsRequest] = js.undefined
   
   /**
     * Creates a new shape.
     */
-  var createShape: js.UndefOr[SchemaCreateShapeRequest] = js.native
+  var createShape: js.UndefOr[SchemaCreateShapeRequest] = js.undefined
   
   /**
     * Creates an embedded Google Sheets chart.
     */
-  var createSheetsChart: js.UndefOr[SchemaCreateSheetsChartRequest] = js.native
+  var createSheetsChart: js.UndefOr[SchemaCreateSheetsChartRequest] = js.undefined
   
   /**
     * Creates a new slide.
     */
-  var createSlide: js.UndefOr[SchemaCreateSlideRequest] = js.native
+  var createSlide: js.UndefOr[SchemaCreateSlideRequest] = js.undefined
   
   /**
     * Creates a new table.
     */
-  var createTable: js.UndefOr[SchemaCreateTableRequest] = js.native
+  var createTable: js.UndefOr[SchemaCreateTableRequest] = js.undefined
   
   /**
     * Creates a video.
     */
-  var createVideo: js.UndefOr[SchemaCreateVideoRequest] = js.native
+  var createVideo: js.UndefOr[SchemaCreateVideoRequest] = js.undefined
   
   /**
     * Deletes a page or page element from the presentation.
     */
-  var deleteObject: js.UndefOr[SchemaDeleteObjectRequest] = js.native
+  var deleteObject: js.UndefOr[SchemaDeleteObjectRequest] = js.undefined
   
   /**
     * Deletes bullets from paragraphs.
     */
-  var deleteParagraphBullets: js.UndefOr[SchemaDeleteParagraphBulletsRequest] = js.native
+  var deleteParagraphBullets: js.UndefOr[SchemaDeleteParagraphBulletsRequest] = js.undefined
   
   /**
     * Deletes a column from a table.
     */
-  var deleteTableColumn: js.UndefOr[SchemaDeleteTableColumnRequest] = js.native
+  var deleteTableColumn: js.UndefOr[SchemaDeleteTableColumnRequest] = js.undefined
   
   /**
     * Deletes a row from a table.
     */
-  var deleteTableRow: js.UndefOr[SchemaDeleteTableRowRequest] = js.native
+  var deleteTableRow: js.UndefOr[SchemaDeleteTableRowRequest] = js.undefined
   
   /**
     * Deletes text from a shape or a table cell.
     */
-  var deleteText: js.UndefOr[SchemaDeleteTextRequest] = js.native
+  var deleteText: js.UndefOr[SchemaDeleteTextRequest] = js.undefined
   
   /**
     * Duplicates a slide or page element.
     */
-  var duplicateObject: js.UndefOr[SchemaDuplicateObjectRequest] = js.native
+  var duplicateObject: js.UndefOr[SchemaDuplicateObjectRequest] = js.undefined
   
   /**
     * Groups objects, such as page elements.
     */
-  var groupObjects: js.UndefOr[SchemaGroupObjectsRequest] = js.native
+  var groupObjects: js.UndefOr[SchemaGroupObjectsRequest] = js.undefined
   
   /**
     * Inserts columns into a table.
     */
-  var insertTableColumns: js.UndefOr[SchemaInsertTableColumnsRequest] = js.native
+  var insertTableColumns: js.UndefOr[SchemaInsertTableColumnsRequest] = js.undefined
   
   /**
     * Inserts rows into a table.
     */
-  var insertTableRows: js.UndefOr[SchemaInsertTableRowsRequest] = js.native
+  var insertTableRows: js.UndefOr[SchemaInsertTableRowsRequest] = js.undefined
   
   /**
     * Inserts text into a shape or table cell.
     */
-  var insertText: js.UndefOr[SchemaInsertTextRequest] = js.native
+  var insertText: js.UndefOr[SchemaInsertTextRequest] = js.undefined
   
   /**
     * Merges cells in a Table.
     */
-  var mergeTableCells: js.UndefOr[SchemaMergeTableCellsRequest] = js.native
+  var mergeTableCells: js.UndefOr[SchemaMergeTableCellsRequest] = js.undefined
   
   /**
     * Refreshes a Google Sheets chart.
     */
-  var refreshSheetsChart: js.UndefOr[SchemaRefreshSheetsChartRequest] = js.native
+  var refreshSheetsChart: js.UndefOr[SchemaRefreshSheetsChartRequest] = js.undefined
   
   /**
     * Replaces all shapes matching some criteria with an image.
     */
-  var replaceAllShapesWithImage: js.UndefOr[SchemaReplaceAllShapesWithImageRequest] = js.native
+  var replaceAllShapesWithImage: js.UndefOr[SchemaReplaceAllShapesWithImageRequest] = js.undefined
   
   /**
     * Replaces all shapes matching some criteria with a Google Sheets chart.
     */
-  var replaceAllShapesWithSheetsChart: js.UndefOr[SchemaReplaceAllShapesWithSheetsChartRequest] = js.native
+  var replaceAllShapesWithSheetsChart: js.UndefOr[SchemaReplaceAllShapesWithSheetsChartRequest] = js.undefined
   
   /**
     * Replaces all instances of specified text.
     */
-  var replaceAllText: js.UndefOr[SchemaReplaceAllTextRequest] = js.native
+  var replaceAllText: js.UndefOr[SchemaReplaceAllTextRequest] = js.undefined
   
   /**
     * Replaces an existing image with a new image.
     */
-  var replaceImage: js.UndefOr[SchemaReplaceImageRequest] = js.native
+  var replaceImage: js.UndefOr[SchemaReplaceImageRequest] = js.undefined
   
   /**
     * Reroutes a line such that it&#39;s connected at the two closest
     * connection sites on the connected page elements.
     */
-  var rerouteLine: js.UndefOr[SchemaRerouteLineRequest] = js.native
+  var rerouteLine: js.UndefOr[SchemaRerouteLineRequest] = js.undefined
   
   /**
     * Ungroups objects, such as groups.
     */
-  var ungroupObjects: js.UndefOr[SchemaUngroupObjectsRequest] = js.native
+  var ungroupObjects: js.UndefOr[SchemaUngroupObjectsRequest] = js.undefined
   
   /**
     * Unmerges cells in a Table.
     */
-  var unmergeTableCells: js.UndefOr[SchemaUnmergeTableCellsRequest] = js.native
+  var unmergeTableCells: js.UndefOr[SchemaUnmergeTableCellsRequest] = js.undefined
   
   /**
     * Updates the properties of an Image.
     */
-  var updateImageProperties: js.UndefOr[SchemaUpdateImagePropertiesRequest] = js.native
+  var updateImageProperties: js.UndefOr[SchemaUpdateImagePropertiesRequest] = js.undefined
   
   /**
     * Updates the category of a line.
     */
-  var updateLineCategory: js.UndefOr[SchemaUpdateLineCategoryRequest] = js.native
+  var updateLineCategory: js.UndefOr[SchemaUpdateLineCategoryRequest] = js.undefined
   
   /**
     * Updates the properties of a Line.
     */
-  var updateLineProperties: js.UndefOr[SchemaUpdateLinePropertiesRequest] = js.native
+  var updateLineProperties: js.UndefOr[SchemaUpdateLinePropertiesRequest] = js.undefined
   
   /**
     * Updates the alt text title and/or description of a page element.
     */
-  var updatePageElementAltText: js.UndefOr[SchemaUpdatePageElementAltTextRequest] = js.native
+  var updatePageElementAltText: js.UndefOr[SchemaUpdatePageElementAltTextRequest] = js.undefined
   
   /**
     * Updates the transform of a page element.
     */
-  var updatePageElementTransform: js.UndefOr[SchemaUpdatePageElementTransformRequest] = js.native
+  var updatePageElementTransform: js.UndefOr[SchemaUpdatePageElementTransformRequest] = js.undefined
   
   /**
     * Updates the Z-order of page elements.
     */
-  var updatePageElementsZOrder: js.UndefOr[SchemaUpdatePageElementsZOrderRequest] = js.native
+  var updatePageElementsZOrder: js.UndefOr[SchemaUpdatePageElementsZOrderRequest] = js.undefined
   
   /**
     * Updates the properties of a Page.
     */
-  var updatePageProperties: js.UndefOr[SchemaUpdatePagePropertiesRequest] = js.native
+  var updatePageProperties: js.UndefOr[SchemaUpdatePagePropertiesRequest] = js.undefined
   
   /**
     * Updates the styling of paragraphs within a Shape or Table.
     */
-  var updateParagraphStyle: js.UndefOr[SchemaUpdateParagraphStyleRequest] = js.native
+  var updateParagraphStyle: js.UndefOr[SchemaUpdateParagraphStyleRequest] = js.undefined
   
   /**
     * Updates the properties of a Shape.
     */
-  var updateShapeProperties: js.UndefOr[SchemaUpdateShapePropertiesRequest] = js.native
+  var updateShapeProperties: js.UndefOr[SchemaUpdateShapePropertiesRequest] = js.undefined
   
   /**
     * Updates the position of a set of slides in the presentation.
     */
-  var updateSlidesPosition: js.UndefOr[SchemaUpdateSlidesPositionRequest] = js.native
+  var updateSlidesPosition: js.UndefOr[SchemaUpdateSlidesPositionRequest] = js.undefined
   
   /**
     * Updates the properties of the table borders in a Table.
     */
-  var updateTableBorderProperties: js.UndefOr[SchemaUpdateTableBorderPropertiesRequest] = js.native
+  var updateTableBorderProperties: js.UndefOr[SchemaUpdateTableBorderPropertiesRequest] = js.undefined
   
   /**
     * Updates the properties of a TableCell.
     */
-  var updateTableCellProperties: js.UndefOr[SchemaUpdateTableCellPropertiesRequest] = js.native
+  var updateTableCellProperties: js.UndefOr[SchemaUpdateTableCellPropertiesRequest] = js.undefined
   
   /**
     * Updates the properties of a Table column.
     */
-  var updateTableColumnProperties: js.UndefOr[SchemaUpdateTableColumnPropertiesRequest] = js.native
+  var updateTableColumnProperties: js.UndefOr[SchemaUpdateTableColumnPropertiesRequest] = js.undefined
   
   /**
     * Updates the properties of a Table row.
     */
-  var updateTableRowProperties: js.UndefOr[SchemaUpdateTableRowPropertiesRequest] = js.native
+  var updateTableRowProperties: js.UndefOr[SchemaUpdateTableRowPropertiesRequest] = js.undefined
   
   /**
     * Updates the styling of text within a Shape or Table.
     */
-  var updateTextStyle: js.UndefOr[SchemaUpdateTextStyleRequest] = js.native
+  var updateTextStyle: js.UndefOr[SchemaUpdateTextStyleRequest] = js.undefined
   
   /**
     * Updates the properties of a Video.
     */
-  var updateVideoProperties: js.UndefOr[SchemaUpdateVideoPropertiesRequest] = js.native
+  var updateVideoProperties: js.UndefOr[SchemaUpdateVideoPropertiesRequest] = js.undefined
 }
 object SchemaRequest {
   

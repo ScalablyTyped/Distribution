@@ -3,13 +3,13 @@ package typings.downshift.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UseComboboxStateChangeOptions[Item] extends UseComboboxDispatchAction[Item] {
+trait UseComboboxStateChangeOptions[Item]
+  extends StObject
+     with UseComboboxDispatchAction[Item] {
   
-  var changes: Partial[UseComboboxState[Item]] = js.native
+  var changes: Partial[UseComboboxState[Item]]
 }
 object UseComboboxStateChangeOptions {
   
@@ -21,7 +21,7 @@ object UseComboboxStateChangeOptions {
   }
   
   @scala.inline
-  implicit class UseComboboxStateChangeOptionsMutableBuilder[Self <: UseComboboxStateChangeOptions[_], Item] (val x: Self with UseComboboxStateChangeOptions[Item]) extends AnyVal {
+  implicit class UseComboboxStateChangeOptionsMutableBuilder[Self <: UseComboboxStateChangeOptions[?], Item] (val x: Self & UseComboboxStateChangeOptions[Item]) extends AnyVal {
     
     @scala.inline
     def setChanges(value: Partial[UseComboboxState[Item]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])

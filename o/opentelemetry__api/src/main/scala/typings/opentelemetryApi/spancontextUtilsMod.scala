@@ -3,10 +3,13 @@ package typings.opentelemetryApi
 import typings.opentelemetryApi.spanContextMod.SpanContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spancontextUtilsMod {
+  
+  @JSImport("@opentelemetry/api/build/src/trace/spancontext-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@opentelemetry/api/build/src/trace/spancontext-utils", "INVALID_SPANID")
   @js.native
@@ -20,15 +23,12 @@ object spancontextUtilsMod {
   @js.native
   val INVALID_TRACEID: /* "00000000000000000000000000000000" */ String = js.native
   
-  @JSImport("@opentelemetry/api/build/src/trace/spancontext-utils", "isSpanContextValid")
-  @js.native
-  def isSpanContextValid(spanContext: SpanContext): Boolean = js.native
+  @scala.inline
+  def isSpanContextValid(spanContext: SpanContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpanContextValid")(spanContext.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/api/build/src/trace/spancontext-utils", "isValidSpanId")
-  @js.native
-  def isValidSpanId(spanId: String): Boolean = js.native
+  @scala.inline
+  def isValidSpanId(spanId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidSpanId")(spanId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/api/build/src/trace/spancontext-utils", "isValidTraceId")
-  @js.native
-  def isValidTraceId(traceId: String): Boolean = js.native
+  @scala.inline
+  def isValidTraceId(traceId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidTraceId")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

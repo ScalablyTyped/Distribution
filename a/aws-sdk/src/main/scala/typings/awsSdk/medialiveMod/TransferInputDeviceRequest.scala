@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferInputDeviceRequest extends StObject {
   
   /**
     * The unique ID of this input device. For example, hd-123456789abcdef.
     */
-  var InputDeviceId: string = js.native
+  var InputDeviceId: string
   
   /**
     * The AWS account ID (12 digits) for the recipient of the device transfer.
     */
-  var TargetCustomerId: js.UndefOr[string] = js.native
+  var TargetCustomerId: js.UndefOr[string] = js.undefined
   
   /**
     * An optional message for the recipient. Maximum 280 characters.
     */
-  var TransferMessage: js.UndefOr[string] = js.native
+  var TransferMessage: js.UndefOr[string] = js.undefined
 }
 object TransferInputDeviceRequest {
   

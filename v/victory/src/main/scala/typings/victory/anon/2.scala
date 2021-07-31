@@ -4,15 +4,13 @@ import typings.victory.mod.D3Scale
 import typings.victory.mod.ScalePropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var x: js.UndefOr[ScalePropType | D3Scale] = js.native
+  var x: js.UndefOr[ScalePropType | D3Scale] = js.undefined
   
-  var y: js.UndefOr[ScalePropType | D3Scale] = js.native
+  var y: js.UndefOr[ScalePropType | D3Scale] = js.undefined
 }
 object `2` {
   

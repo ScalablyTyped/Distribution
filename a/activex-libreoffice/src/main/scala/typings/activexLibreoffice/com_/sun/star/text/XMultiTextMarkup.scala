@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functionality to apply multiple text markups in one call.
   * @since OOo 3.0.1
   */
-@js.native
 trait XMultiTextMarkup extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait XMultiTextMarkup extends StObject {
     * @see com.sun.star.text.XTextMarkup
     * @see com.sun.star.text.TextMarkupType
     */
-  def commitMultiTextMarkup(aMarkups: SeqEquiv[TextMarkupDescriptor]): Unit = js.native
+  def commitMultiTextMarkup(aMarkups: SeqEquiv[TextMarkupDescriptor]): Unit
 }
 object XMultiTextMarkup {
   

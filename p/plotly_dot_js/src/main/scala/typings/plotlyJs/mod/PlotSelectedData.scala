@@ -2,30 +2,28 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotDatum> */
-@js.native
 trait PlotSelectedData extends StObject {
   
-  var curveNumber: js.UndefOr[Double] = js.native
+  var curveNumber: js.UndefOr[Double] = js.undefined
   
-  var customdata: js.UndefOr[Datum] = js.native
+  var customdata: js.UndefOr[Datum] = js.undefined
   
-  var data: js.UndefOr[PlotData] = js.native
+  var data: js.UndefOr[PlotData] = js.undefined
   
-  var pointIndex: js.UndefOr[Double] = js.native
+  var pointIndex: js.UndefOr[Double] = js.undefined
   
-  var pointNumber: js.UndefOr[Double] = js.native
+  var pointNumber: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Datum] = js.native
+  var x: js.UndefOr[Datum] = js.undefined
   
-  var xaxis: js.UndefOr[LayoutAxis] = js.native
+  var xaxis: js.UndefOr[LayoutAxis] = js.undefined
   
-  var y: js.UndefOr[Datum] = js.native
+  var y: js.UndefOr[Datum] = js.undefined
   
-  var yaxis: js.UndefOr[LayoutAxis] = js.native
+  var yaxis: js.UndefOr[LayoutAxis] = js.undefined
 }
 object PlotSelectedData {
   

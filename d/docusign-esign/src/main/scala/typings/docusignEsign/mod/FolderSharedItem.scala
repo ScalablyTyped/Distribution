@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderSharedItem extends StObject {
   
   /**
@@ -13,32 +11,32 @@ trait FolderSharedItem extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The id of the folder.
     */
-  var folderId: js.UndefOr[String] = js.native
+  var folderId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the folder.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the user who owns the folder.
     */
-  var owner: js.UndefOr[UserInfo] = js.native
+  var owner: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The id of the parent folder.
     */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the parent folder.
     */
-  var parentFolderUri: js.UndefOr[String] = js.native
+  var parentFolderUri: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates how the folder is shared. Valid values are:
@@ -46,29 +44,29 @@ trait FolderSharedItem extends StObject {
     * - `not_shared`
     * - `shared_to`
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
   /**
     * A list of groups that share the folder.
     */
   var sharedGroups: js.UndefOr[
     js.Array[/* Information about items shared among groups. */ MemberGroupSharedItem]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A list of users that share the folder.
     */
-  var sharedUsers: js.UndefOr[js.Array[/* Information about a shared item. */ UserSharedItem]] = js.native
+  var sharedUsers: js.UndefOr[js.Array[/* Information about a shared item. */ UserSharedItem]] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the user associated with the folder.
     */
-  var user: js.UndefOr[UserInfo] = js.native
+  var user: js.UndefOr[UserInfo] = js.undefined
 }
 object FolderSharedItem {
   

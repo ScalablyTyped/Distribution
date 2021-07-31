@@ -19,12 +19,11 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartDocument
-  extends XChartDocument
+  extends StObject
+     with XChartDocument
      with XDataReceiver
      with XTitled
      with XStyleFamiliesSupplier
@@ -76,7 +75,7 @@ object ChartDocument {
     getUsedRangeRepresentations: () => SafeArray[String],
     hasControllersLocked: () => Boolean,
     hasInternalDataProvider: () => Boolean,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isOpenGLChart: () => Boolean,
     lockControllers: () => Unit,
     queryInterface: `type` => js.Any,

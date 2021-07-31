@@ -5,76 +5,65 @@ import typings.typeorm.commonObjectTypeMod.ObjectType
 import typings.typeorm.optionsRelationOptionsMod.RelationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationsManyToManyMod {
   
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
+  @JSImport("typeorm/decorator/relations/ManyToMany", JSImport.Namespace)
   @js.native
-  def ManyToMany[T](typeFunctionOrTarget: String): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: js.UndefOr[scala.Nothing], options: RelationOptions): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: String): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: String, options: RelationOptions): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: js.Function1[/* object */ T, _]): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: String, options: RelationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: js.Function1[/* object */ T, js.Any]): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ManyToMany[T](
     typeFunctionOrTarget: String,
-    inverseSide: js.Function1[/* object */ T, _],
+    inverseSide: js.Function1[/* object */ T, js.Any],
     options: RelationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](typeFunctionOrTarget: String, options: RelationOptions): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](typeFunctionOrTarget: js.Function1[js.UndefOr[js.Any], ObjectType[T]]): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
-  def ManyToMany[T](
-    typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
-    inverseSide: js.UndefOr[scala.Nothing],
-    options: RelationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: String, inverseSide: Unit, options: RelationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: String, options: RelationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](typeFunctionOrTarget: js.Function1[js.UndefOr[js.Any], ObjectType[T]]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ManyToMany[T](
     typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
     inverseSide: String
-  ): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ManyToMany[T](
     typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
     inverseSide: String,
     options: RelationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ManyToMany[T](
     typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
-    inverseSide: js.Function1[/* object */ T, _]
-  ): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
+    inverseSide: js.Function1[/* object */ T, js.Any]
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ManyToMany[T](
     typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
-    inverseSide: js.Function1[/* object */ T, _],
+    inverseSide: js.Function1[/* object */ T, js.Any],
     options: RelationOptions
-  ): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/ManyToMany", "ManyToMany")
-  @js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ManyToMany[T](
+    typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
+    inverseSide: Unit,
+    options: RelationOptions
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], inverseSide.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
   def ManyToMany[T](
     typeFunctionOrTarget: js.Function1[/* type */ js.UndefOr[js.Any], ObjectType[T]],
     options: RelationOptions
-  ): PropertyDecorator = js.native
+  ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ManyToMany")(typeFunctionOrTarget.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
 }

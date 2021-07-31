@@ -8,7 +8,6 @@ import typings.rxjs.mod.Observable_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedMod {
@@ -34,9 +33,9 @@ object feedMod {
     var moreAvailable: Boolean = js.native
     
     def observable(): Observable_[js.Array[Item]] = js.native
-    def observable(semaphore: js.UndefOr[scala.Nothing], attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native
-    def observable(semaphore: js.Function0[js.Promise[_]]): Observable_[js.Array[Item]] = js.native
-    def observable(semaphore: js.Function0[js.Promise[_]], attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native
+    def observable(semaphore: js.Function0[js.Promise[js.Any]]): Observable_[js.Array[Item]] = js.native
+    def observable(semaphore: js.Function0[js.Promise[js.Any]], attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native
+    def observable(semaphore: Unit, attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native
     
     var rankToken: String = js.native
     
@@ -46,6 +45,6 @@ object feedMod {
     
     /* protected */ def state_=(response: Response): Unit = js.native
     
-    def toPlain(): Record[String, _] = js.native
+    def toPlain(): Record[String, js.Any] = js.native
   }
 }

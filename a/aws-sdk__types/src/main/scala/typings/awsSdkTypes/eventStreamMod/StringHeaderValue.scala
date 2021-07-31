@@ -3,22 +3,22 @@ package typings.awsSdkTypes.eventStreamMod
 import typings.awsSdkTypes.awsSdkTypesStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringHeaderValue extends MessageHeaderValue {
+trait StringHeaderValue
+  extends StObject
+     with MessageHeaderValue {
   
-  var `type`: string = js.native
+  var `type`: string
   
-  var value: String = js.native
+  var value: String
 }
 object StringHeaderValue {
   
   @scala.inline
-  def apply(`type`: string, value: String): StringHeaderValue = {
+  def apply(value: String): StringHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringHeaderValue]
   }
   

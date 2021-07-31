@@ -2,19 +2,17 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to start manual transfer runs.
   */
-@js.native
 trait SchemaStartManualTransferRunsResponse extends StObject {
   
   /**
     * The transfer runs that were created.
     */
-  var runs: js.UndefOr[js.Array[SchemaTransferRun]] = js.native
+  var runs: js.UndefOr[js.Array[SchemaTransferRun]] = js.undefined
 }
 object SchemaStartManualTransferRunsResponse {
   

@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the margin settings.
   */
-@js.native
 trait Margins extends StObject {
   
   /**
     * Gets or sets the bottom margin.
     */
-  var bottom: Double = js.native
+  var bottom: Double
   
   /**
     * Gets or sets the left margin.
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * Gets or sets the right margin.
     */
-  var right: Double = js.native
+  var right: Double
   
   /**
     * Gets or sets the top margin.
     */
-  var top: Double = js.native
+  var top: Double
 }
 object Margins {
   

@@ -12,7 +12,7 @@ Array of "void elements" defined by the HTML specification.
 | Keywords           | html, void, elements |
 | # releases         | 0 |
 | # dependents       | 69 |
-| # downloads        | 139130369 |
+| # downloads        | 163218388 |
 | # stars            | 3 |
 
 ## Links

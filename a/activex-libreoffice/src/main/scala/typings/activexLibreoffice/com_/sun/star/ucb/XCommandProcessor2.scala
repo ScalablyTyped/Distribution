@@ -3,12 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An improved version of a {@link com.sun.star.ucb.XCommandProcessor} that helps avoid ever-increasing resource consumption. */
-@js.native
-trait XCommandProcessor2 extends XCommandProcessor {
+trait XCommandProcessor2
+  extends StObject
+     with XCommandProcessor {
   
   /**
     * releases a command identifier obtained through {@link XCommandProcessor.createCommandIdentifier()} when it is no longer used.
@@ -17,7 +17,7 @@ trait XCommandProcessor2 extends XCommandProcessor {
     * . (But it can happen that a call to {@link XCommandProcessor.createCommandIdentifier()} reuses this identifier.)
     * @param CommandId A command identifier obtained through {@link XCommandProcessor.createCommandIdentifier()} . If the identifier is zero, the request is s
     */
-  def releaseCommandIdentifier(CommandId: Double): Unit = js.native
+  def releaseCommandIdentifier(CommandId: Double): Unit
 }
 object XCommandProcessor2 {
   

@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyVPNProperties extends StObject {
   
   /** ID of the third-party VPN provider extension. */
-  var ExtensionID: String = js.native
+  var ExtensionID: String
   
   /** The VPN provider name. */
-  var ProviderName: js.UndefOr[String] = js.native
+  var ProviderName: js.UndefOr[String] = js.undefined
 }
 object ThirdPartyVPNProperties {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke a browser-specific Print dialog allowing one to print the current document.
   */
-@js.native
-trait FilePrintCommand extends CommandWithSimpleStateBase {
+trait FilePrintCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the FilePrintCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object FilePrintCommand {
   

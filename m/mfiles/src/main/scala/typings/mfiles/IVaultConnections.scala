@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultConnections extends StObject {
   
-  def Add(Index: Double, VaultConnection: IVaultConnection): Unit = js.native
+  def Add(Index: Double, VaultConnection: IVaultConnection): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetVaultConnectionByName(VaultConnectionName: String): IVaultConnection = js.native
+  def GetVaultConnectionByName(VaultConnectionName: String): IVaultConnection
   
-  def GetVaultConnectionIndexByName(VaultConnectionName: String): Double = js.native
+  def GetVaultConnectionIndexByName(VaultConnectionName: String): Double
   
-  def Item(Index: Double): IVaultConnection = js.native
+  def Item(Index: Double): IVaultConnection
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IVaultConnections {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateObjectAttributesRequest extends StObject {
   
   /**
     * The attributes update structure.
     */
-  var AttributeUpdates: ObjectAttributeUpdateList = js.native
+  var AttributeUpdates: ObjectAttributeUpdateList
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory where the object resides. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * The reference that identifies the object.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
 }
 object UpdateObjectAttributesRequest {
   

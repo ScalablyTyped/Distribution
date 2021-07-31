@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountWarning extends StObject {
   
   /** Required. The email of the user that this event belongs to. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Details of the login action associated with the warning event. This is only available for: * Suspicious login * Suspicious login (less secure app) * Suspicious
     * programmatic login * User suspended (suspicious activity)
     */
-  var loginDetails: js.UndefOr[LoginDetails] = js.native
+  var loginDetails: js.UndefOr[LoginDetails] = js.undefined
 }
 object AccountWarning {
   

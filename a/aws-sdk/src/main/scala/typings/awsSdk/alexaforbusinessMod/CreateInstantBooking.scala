@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstantBooking extends StObject {
   
   /**
     * Duration between 15 and 240 minutes at increments of 15 that determines how long to book an available room when a meeting is started with Alexa.
     */
-  var DurationInMinutes: Minutes = js.native
+  var DurationInMinutes: Minutes
   
   /**
     * Whether instant booking is enabled or not.
     */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
 }
 object CreateInstantBooking {
   

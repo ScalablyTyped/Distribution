@@ -2,21 +2,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationVariableValue extends StObject {
   
   /**
     * Gets or sets as variable is secret or not.
     */
-  var isSecret: Boolean = js.native
+  var isSecret: Boolean
   
   /**
     * Gets or sets value of the configuration variable.
     */
-  var value: String = js.native
+  var value: String
 }
 object ConfigurationVariableValue {
   

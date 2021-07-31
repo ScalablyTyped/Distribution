@@ -9,66 +9,64 @@ import typings.activexOffice.Office.MsoWarpFormat
 import typings.activexOffice.Office.TextColumn2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFrame extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var AutoSize: Double = js.native
+  var AutoSize: Double
   
-  def BreakForwardLink(): Unit = js.native
+  def BreakForwardLink(): Unit
   
-  val Column: TextColumn2 = js.native
+  val Column: TextColumn2
   
-  val ContainingRange: Range = js.native
+  val ContainingRange: Range
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def DeleteText(): Unit = js.native
+  def DeleteText(): Unit
   
-  val HasText: Double = js.native
+  val HasText: Double
   
-  var HorizontalAnchor: MsoHorizontalAnchor = js.native
+  var HorizontalAnchor: MsoHorizontalAnchor
   
-  var MarginBottom: Double = js.native
+  var MarginBottom: Double
   
-  var MarginLeft: Double = js.native
+  var MarginLeft: Double
   
-  var MarginRight: Double = js.native
+  var MarginRight: Double
   
-  var MarginTop: Double = js.native
+  var MarginTop: Double
   
-  var Next: TextFrame = js.native
+  var Next: TextFrame
   
-  var NoTextRotation: MsoTriState = js.native
+  var NoTextRotation: MsoTriState
   
-  var Orientation: MsoTextOrientation = js.native
+  var Orientation: MsoTextOrientation
   
-  val Overflowing: Boolean = js.native
+  val Overflowing: Boolean
   
-  val Parent: Shape = js.native
+  val Parent: Shape
   
-  var PathFormat: MsoPathFormat = js.native
+  var PathFormat: MsoPathFormat
   
-  var Previous: TextFrame = js.native
+  var Previous: TextFrame
   
-  val TextRange: Range = js.native
+  val TextRange: Range
   
-  val ThreeD: ThreeDFormat = js.native
+  val ThreeD: ThreeDFormat
   
-  def ValidLinkTarget(TargetTextFrame: TextFrame): Boolean = js.native
+  def ValidLinkTarget(TargetTextFrame: TextFrame): Boolean
   
-  var VerticalAnchor: MsoVerticalAnchor = js.native
+  var VerticalAnchor: MsoVerticalAnchor
   
-  var WarpFormat: MsoWarpFormat = js.native
+  var WarpFormat: MsoWarpFormat
   
   @JSName("Word.TextFrame_typekey")
-  var WordDotTextFrame_typekey: TextFrame = js.native
+  var WordDotTextFrame_typekey: TextFrame
   
-  var WordWrap: Double = js.native
+  var WordWrap: Double
 }
 object TextFrame {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateScalingPlanRequest extends StObject {
   
   /**
     * A CloudFormation stack or set of tags. You can create one scaling plan per application source.
     */
-  var ApplicationSource: typings.awsSdk.autoscalingplansMod.ApplicationSource = js.native
+  var ApplicationSource: typings.awsSdk.autoscalingplansMod.ApplicationSource
   
   /**
     * The scaling instructions.
     */
-  var ScalingInstructions: typings.awsSdk.autoscalingplansMod.ScalingInstructions = js.native
+  var ScalingInstructions: typings.awsSdk.autoscalingplansMod.ScalingInstructions
   
   /**
     * The name of the scaling plan. Names cannot contain vertical bars, colons, or forward slashes.
     */
-  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName = js.native
+  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
 }
 object CreateScalingPlanRequest {
   

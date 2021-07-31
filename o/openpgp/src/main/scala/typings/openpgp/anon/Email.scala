@@ -2,15 +2,13 @@ package typings.openpgp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var rawBytes: js.UndefOr[Boolean] = js.native
+  var rawBytes: js.UndefOr[Boolean] = js.undefined
 }
 object Email {
   

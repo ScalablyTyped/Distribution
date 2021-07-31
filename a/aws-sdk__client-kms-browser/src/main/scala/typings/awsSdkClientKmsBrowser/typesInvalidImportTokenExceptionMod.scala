@@ -3,22 +3,22 @@ package typings.awsSdkClientKmsBrowser
 import typings.awsSdkClientKmsBrowser.importKeyMaterialExceptionsUnionMod.ImportKeyMaterialExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidImportTokenExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidImportTokenExceptionDetails> * / any */ @js.native
-  trait InvalidImportTokenException extends ImportKeyMaterialExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidImportTokenExceptionDetails> * / any */ trait InvalidImportTokenException
+    extends StObject
+       with ImportKeyMaterialExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidImportTokenException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidImportTokenException
   }
   object InvalidImportTokenException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidImportTokenException): InvalidImportTokenException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidImportTokenException = {
+      val __obj = js.Dynamic.literal(name = "InvalidImportTokenException")
       __obj.asInstanceOf[InvalidImportTokenException]
     }
     
@@ -30,13 +30,12 @@ object typesInvalidImportTokenExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidImportTokenExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidImportTokenExceptionDetails {
     

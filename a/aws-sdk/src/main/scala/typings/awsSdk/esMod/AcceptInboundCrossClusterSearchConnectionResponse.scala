@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptInboundCrossClusterSearchConnectionResponse extends StObject {
   
   /**
     * Specifies the InboundCrossClusterSearchConnection of accepted inbound connection. 
     */
-  var CrossClusterSearchConnection: js.UndefOr[InboundCrossClusterSearchConnection] = js.native
+  var CrossClusterSearchConnection: js.UndefOr[InboundCrossClusterSearchConnection] = js.undefined
 }
 object AcceptInboundCrossClusterSearchConnectionResponse {
   

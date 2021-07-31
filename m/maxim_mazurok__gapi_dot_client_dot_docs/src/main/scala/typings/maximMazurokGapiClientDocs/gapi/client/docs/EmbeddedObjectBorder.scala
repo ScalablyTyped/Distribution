@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbeddedObjectBorder extends StObject {
   
   /** The color of the border. */
-  var color: js.UndefOr[OptionalColor] = js.native
+  var color: js.UndefOr[OptionalColor] = js.undefined
   
   /** The dash style of the border. */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /** The property state of the border property. */
-  var propertyState: js.UndefOr[String] = js.native
+  var propertyState: js.UndefOr[String] = js.undefined
   
   /** The width of the border. */
-  var width: js.UndefOr[Dimension] = js.native
+  var width: js.UndefOr[Dimension] = js.undefined
 }
 object EmbeddedObjectBorder {
   

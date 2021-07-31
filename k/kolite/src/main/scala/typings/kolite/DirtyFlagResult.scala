@@ -2,17 +2,15 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirtyFlagResult extends StObject {
   
-  def forceDirty(): Unit = js.native
+  def forceDirty(): Unit
   
-  var isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
+  var isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object DirtyFlagResult {
   

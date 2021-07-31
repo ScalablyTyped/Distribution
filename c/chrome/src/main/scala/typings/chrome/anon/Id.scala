@@ -2,15 +2,13 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var minimum_version: js.UndefOr[String] = js.native
+  var minimum_version: js.UndefOr[String] = js.undefined
 }
 object Id {
   

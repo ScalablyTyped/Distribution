@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TcpRoute extends StObject {
   
   /**
     * The action to take if a match is determined.
     */
-  var action: TcpRouteAction = js.native
+  var action: TcpRouteAction
   
   /**
     * An object that represents types of timeouts. 
     */
-  var timeout: js.UndefOr[TcpTimeout] = js.native
+  var timeout: js.UndefOr[TcpTimeout] = js.undefined
 }
 object TcpRoute {
   

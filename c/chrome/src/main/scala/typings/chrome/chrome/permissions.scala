@@ -2,7 +2,6 @@ package typings.chrome.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -14,20 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object permissions {
   
-  @js.native
   trait Permissions extends StObject {
     
     /**
       * Optional.
       * List of origin permissions. Anything listed here must be a subset of a host that appears in the optional_permissions list in the manifest. For example, if http:// *.example.com/ or http:// * appears in optional_permissions, you can request an origin of http://help.example.com/. Any path is ignored.
       */
-    var origins: js.UndefOr[js.Array[String]] = js.native
+    var origins: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Optional.
       * List of named permissions (does not include hosts or origins). Anything listed here must appear in the optional_permissions list in the manifest.
       */
-    var permissions: js.UndefOr[js.Array[String]] = js.native
+    var permissions: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Permissions {
     
@@ -60,7 +58,6 @@ object permissions {
     }
   }
   
-  @js.native
   trait PermissionsAddedEvent extends StObject {
     
     /**
@@ -68,7 +65,7 @@ object permissions {
       * function( Permissions permissions) {...};
       * Parameter permissions: The newly acquired permissions.
       */
-    def addListener(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit = js.native
+    def addListener(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit
   }
   object PermissionsAddedEvent {
     
@@ -86,7 +83,6 @@ object permissions {
     }
   }
   
-  @js.native
   trait PermissionsRemovedEvent extends StObject {
     
     /**
@@ -94,7 +90,7 @@ object permissions {
       * function( Permissions permissions) {...};
       * Parameter permissions: The permissions that have been removed.
       */
-    def addListener(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit = js.native
+    def addListener(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit
   }
   object PermissionsRemovedEvent {
     

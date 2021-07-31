@@ -2,17 +2,15 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key[T /* <: js.Object */] extends StObject {
   
-  var key: /* keyof T */ String = js.native
+  var key: /* keyof T */ String
   
-  var valueA: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any = js.native
+  var valueA: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   
-  var valueB: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any = js.native
+  var valueB: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }
 object Key {
   
@@ -27,7 +25,7 @@ object Key {
   }
   
   @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key[_], T /* <: js.Object */] (val x: Self with Key[T]) extends AnyVal {
+  implicit class KeyMutableBuilder[Self <: Key[?], T /* <: js.Object */] (val x: Self & Key[T]) extends AnyVal {
     
     @scala.inline
     def setKey(value: /* keyof T */ String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

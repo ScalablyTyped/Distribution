@@ -2,33 +2,31 @@ package typings.awsSdkClientS3Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeletedObjectMod {
   
-  @js.native
   trait DeletedObject extends StObject {
     
     /**
       * _DeleteMarker shape
       */
-    var DeleteMarker: js.UndefOr[Boolean] = js.native
+    var DeleteMarker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * _DeleteMarkerVersionId shape
       */
-    var DeleteMarkerVersionId: js.UndefOr[String] = js.native
+    var DeleteMarkerVersionId: js.UndefOr[String] = js.undefined
     
     /**
       * _ObjectKey shape
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * _ObjectVersionId shape
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object DeletedObject {
     

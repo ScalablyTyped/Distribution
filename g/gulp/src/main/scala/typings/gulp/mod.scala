@@ -9,7 +9,6 @@ import typings.vinylFs.mod.DestOptions
 import typings.vinylFs.mod.SrcOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -83,27 +82,27 @@ object mod extends Shortcut {
     
     def apply(globs: Globs): FSWatcher = js.native
     def apply(globs: Globs, fn: typings.undertaker.mod.TaskFunction): FSWatcher = js.native
-    def apply(globs: Globs, opts: js.UndefOr[scala.Nothing], fn: typings.undertaker.mod.TaskFunction): FSWatcher = js.native
+    def apply(globs: Globs, opts: Unit, fn: typings.undertaker.mod.TaskFunction): FSWatcher = js.native
     def apply(globs: Globs, opts: WatchOptions): FSWatcher = js.native
     def apply(globs: Globs, opts: WatchOptions, fn: typings.undertaker.mod.TaskFunction): FSWatcher = js.native
   }
   
-  @js.native
   trait WatchOptions
-    extends typings.chokidar.mod.WatchOptions {
+    extends StObject
+       with typings.chokidar.mod.WatchOptions {
     
     /**
       * The delay to wait before triggering the fn.
       * Useful for waiting on many changes before doing the work on changed files, e.g. find-and-replace on many files.
       * @default 200
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether or not a file change should queue the fn execution if the fn is already running. Useful for a long running fn.
       * @default true
       */
-    var queue: js.UndefOr[Boolean] = js.native
+    var queue: js.UndefOr[Boolean] = js.undefined
   }
   object WatchOptions {
     

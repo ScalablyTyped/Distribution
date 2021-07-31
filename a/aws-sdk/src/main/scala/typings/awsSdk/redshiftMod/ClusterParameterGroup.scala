@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterParameterGroup extends StObject {
   
   /**
     * The description of the parameter group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the cluster parameter group family that this cluster parameter group is compatible with.
     */
-  var ParameterGroupFamily: js.UndefOr[String] = js.native
+  var ParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the cluster parameter group.
     */
-  var ParameterGroupName: js.UndefOr[String] = js.native
+  var ParameterGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tags for the cluster parameter group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ClusterParameterGroup {
   

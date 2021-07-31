@@ -11,30 +11,28 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRowExpandableProps extends StObject {
   
-  var accessibilityCollapseLabel: String = js.native
+  var accessibilityCollapseLabel: String
   
-  var accessibilityExpandLabel: String = js.native
+  var accessibilityExpandLabel: String
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var expandedContents: ReactNode = js.native
+  var expandedContents: ReactNode
   
-  var hoverStyle: js.UndefOr[none | gray] = js.native
+  var hoverStyle: js.UndefOr[none | gray] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
   var onExpand: js.UndefOr[
     AbstractEventHandler[
       (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
       js.Object
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object TableRowExpandableProps {
   
@@ -76,7 +74,7 @@ object TableRowExpandableProps {
     
     @scala.inline
     def setOnExpand(
-      value: /* arg */ js.Object with (Event[
+      value: /* arg */ js.Object & (Event[
           (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
         ]) => Unit
     ): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))

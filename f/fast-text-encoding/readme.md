@@ -11,8 +11,8 @@ Fast polyfill for TextEncoder and TextDecoder, only supports utf-8
 | Full name          | fast-text-encoding |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 57 |
-| # downloads        | 91973533 |
+| # dependents       | 75 |
+| # downloads        | 122861884 |
 | # stars            | 0 |
 
 ## Links

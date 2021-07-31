@@ -2,33 +2,31 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iam {
   
-  @js.native
   trait GetGroupUser extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the iam user.
       */
-    var arn: String = js.native
+    var arn: String
     
     /**
       * The path to the iam user.
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * The stable and unique string identifying the iam user.
       */
-    var userId: String = js.native
+    var userId: String
     
     /**
       * The name of the iam user.
       */
-    var userName: String = js.native
+    var userName: String
   }
   object GetGroupUser {
     
@@ -55,64 +53,63 @@ object iam {
     }
   }
   
-  @js.native
   trait GetPolicyDocumentStatement extends StObject {
     
     /**
       * A list of actions that this statement either allows
       * or denies. For example, ``["ec2:RunInstances", "s3:*"]``.
       */
-    var actions: js.UndefOr[js.Array[String]] = js.native
+    var actions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A nested configuration block (described below)
       * that defines a further, possibly-service-specific condition that constrains
       * whether this statement applies.
       */
-    var conditions: js.UndefOr[js.Array[GetPolicyDocumentStatementCondition]] = js.native
+    var conditions: js.UndefOr[js.Array[GetPolicyDocumentStatementCondition]] = js.undefined
     
     /**
       * Either "Allow" or "Deny", to specify whether this
       * statement allows or denies the given actions. The default is "Allow".
       */
-    var effect: js.UndefOr[String] = js.native
+    var effect: js.UndefOr[String] = js.undefined
     
     /**
       * A list of actions that this statement does *not*
       * apply to. Used to apply a policy statement to all actions *except* those
       * listed.
       */
-    var notActions: js.UndefOr[js.Array[String]] = js.native
+    var notActions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Like `principals` except gives principals that
       * the statement does *not* apply to.
       */
-    var notPrincipals: js.UndefOr[js.Array[GetPolicyDocumentStatementNotPrincipal]] = js.native
+    var notPrincipals: js.UndefOr[js.Array[GetPolicyDocumentStatementNotPrincipal]] = js.undefined
     
     /**
       * A list of resource ARNs that this statement
       * does *not* apply to. Used to apply a policy statement to all resources
       * *except* those listed.
       */
-    var notResources: js.UndefOr[js.Array[String]] = js.native
+    var notResources: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A nested configuration block (described below)
       * specifying a principal (or principal pattern) to which this statement applies.
       */
-    var principals: js.UndefOr[js.Array[GetPolicyDocumentStatementPrincipal]] = js.native
+    var principals: js.UndefOr[js.Array[GetPolicyDocumentStatementPrincipal]] = js.undefined
     
     /**
       * A list of resource ARNs that this statement applies
       * to. This is required by AWS if used for an IAM policy.
       */
-    var resources: js.UndefOr[js.Array[String]] = js.native
+    var resources: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An ID for the policy statement.
       */
-    var sid: js.UndefOr[String] = js.native
+    var sid: js.UndefOr[String] = js.undefined
   }
   object GetPolicyDocumentStatement {
     
@@ -202,7 +199,6 @@ object iam {
     }
   }
   
-  @js.native
   trait GetPolicyDocumentStatementCondition extends StObject {
     
     /**
@@ -210,14 +206,14 @@ object iam {
       * [IAM condition operator](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html)
       * to evaluate.
       */
-    var test: String = js.native
+    var test: String
     
     /**
       * The values to evaluate the condition against. If multiple
       * values are provided, the condition matches if at least one of them applies.
       * (That is, the tests are combined with the "OR" boolean operation.)
       */
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
     
     /**
       * The name of a
@@ -226,7 +222,7 @@ object iam {
       * variables starting with `aws:`, or service-specific variables prefixed with
       * the service name.
       */
-    var variable: String = js.native
+    var variable: String
   }
   object GetPolicyDocumentStatementCondition {
     
@@ -253,19 +249,18 @@ object iam {
     }
   }
   
-  @js.native
   trait GetPolicyDocumentStatementNotPrincipal extends StObject {
     
     /**
       * List of identifiers for principals. When `type`
       * is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are AWS Service roles e.g. `lambda.amazonaws.com`. When `type` is "Federated", these are web identity users or SAML provider ARNs.
       */
-    var identifiers: js.Array[String] = js.native
+    var identifiers: js.Array[String]
     
     /**
       * The type of principal. For AWS ARNs this is "AWS".  For AWS services (e.g. Lambda), this is "Service". For Federated access the type is "Federated".
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object GetPolicyDocumentStatementNotPrincipal {
     
@@ -290,19 +285,18 @@ object iam {
     }
   }
   
-  @js.native
   trait GetPolicyDocumentStatementPrincipal extends StObject {
     
     /**
       * List of identifiers for principals. When `type`
       * is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are AWS Service roles e.g. `lambda.amazonaws.com`. When `type` is "Federated", these are web identity users or SAML provider ARNs.
       */
-    var identifiers: js.Array[String] = js.native
+    var identifiers: js.Array[String]
     
     /**
       * The type of principal. For AWS ARNs this is "AWS".  For AWS services (e.g. Lambda), this is "Service". For Federated access the type is "Federated".
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object GetPolicyDocumentStatementPrincipal {
     

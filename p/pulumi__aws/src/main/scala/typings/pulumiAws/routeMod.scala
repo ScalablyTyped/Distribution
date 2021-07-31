@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeMod {
@@ -87,6 +86,10 @@ object routeMod {
   /* static members */
   object Route {
     
+    @JSImport("@pulumi/aws/apigatewayv2/route", "Route")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Route resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -96,45 +99,39 @@ object routeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Route = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Route = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState): Route = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/route", "Route.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Route]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RouteState, opts: CustomResourceOptions): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Route]
     
     /**
       * Returns true if the given object is an instance of Route.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/route", "Route.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/route.Route */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/route.Route */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/route.Route */ Boolean]
   }
   
-  @js.native
   trait RouteArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * Boolean whether an API key is required for the route. Defaults to `false`.
       */
-    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.native
+    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The authorization scopes supported by this route. The scopes are used with a JWT authorizer to authorize the method invocation.
       */
-    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The authorization type for the route.
@@ -142,42 +139,42 @@ object routeMod {
       * For HTTP APIs, valid values are `NONE` for open access, or `JWT` for using JSON Web Tokens.
       * Defaults to `NONE`.
       */
-    val authorizationType: js.UndefOr[Input[String]] = js.native
+    val authorizationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the `aws.apigatewayv2.Authorizer` resource to be associated with this route, if the authorizationType is `CUSTOM`.
       */
-    val authorizerId: js.UndefOr[Input[String]] = js.native
+    val authorizerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [model selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions) for the route.
       */
-    val modelSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val modelSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The operation name for the route. Must be between 1 and 64 characters in length.
       */
-    val operationName: js.UndefOr[Input[String]] = js.native
+    val operationName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The request models for the route.
       */
-    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The route key for the route. For HTTP APIs, the route key can be either `$default`, or a combination of an HTTP method and resource path, for example, `GET /pets`.
       */
-    val routeKey: Input[String] = js.native
+    val routeKey: Input[String]
     
     /**
       * The [route response selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-response-selection-expressions) for the route.
       */
-    val routeResponseSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val routeResponseSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The target for the route. Must be between 1 and 128 characters in length.
       */
-    val target: js.UndefOr[Input[String]] = js.native
+    val target: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteArgs {
     
@@ -255,23 +252,22 @@ object routeMod {
     }
   }
   
-  @js.native
   trait RouteState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean whether an API key is required for the route. Defaults to `false`.
       */
-    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.native
+    val apiKeyRequired: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The authorization scopes supported by this route. The scopes are used with a JWT authorizer to authorize the method invocation.
       */
-    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val authorizationScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The authorization type for the route.
@@ -279,42 +275,42 @@ object routeMod {
       * For HTTP APIs, valid values are `NONE` for open access, or `JWT` for using JSON Web Tokens.
       * Defaults to `NONE`.
       */
-    val authorizationType: js.UndefOr[Input[String]] = js.native
+    val authorizationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the `aws.apigatewayv2.Authorizer` resource to be associated with this route, if the authorizationType is `CUSTOM`.
       */
-    val authorizerId: js.UndefOr[Input[String]] = js.native
+    val authorizerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [model selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-model-selection-expressions) for the route.
       */
-    val modelSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val modelSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The operation name for the route. Must be between 1 and 64 characters in length.
       */
-    val operationName: js.UndefOr[Input[String]] = js.native
+    val operationName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The request models for the route.
       */
-    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val requestModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The route key for the route. For HTTP APIs, the route key can be either `$default`, or a combination of an HTTP method and resource path, for example, `GET /pets`.
       */
-    val routeKey: js.UndefOr[Input[String]] = js.native
+    val routeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [route response selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-response-selection-expressions) for the route.
       */
-    val routeResponseSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val routeResponseSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The target for the route. Must be between 1 and 128 characters in length.
       */
-    val target: js.UndefOr[Input[String]] = js.native
+    val target: js.UndefOr[Input[String]] = js.undefined
   }
   object RouteState {
     

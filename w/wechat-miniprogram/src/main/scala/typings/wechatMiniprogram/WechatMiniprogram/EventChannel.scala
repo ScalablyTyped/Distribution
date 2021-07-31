@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventChannel extends StObject {
   
   /** [EventChannel.emit(string eventName, any args)](https://developers.weixin.qq.com/miniprogram/dev/api/route/EventChannel.emit.html)
@@ -18,7 +16,7 @@ trait EventChannel extends StObject {
   eventName: String,
     /** 事件参数 */
   /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): Unit = js.native
+  ): Unit
   
   /** [EventChannel.off(string eventName, function fn)](https://developers.weixin.qq.com/miniprogram/dev/api/route/EventChannel.off.html)
     *
@@ -27,7 +25,7 @@ trait EventChannel extends StObject {
     * 最低基础库： `2.7.3` */
   def off(/** 事件名称 */
   eventName: String, /** 事件监听函数 */
-  fn: EventCallback): Unit = js.native
+  fn: EventCallback): Unit
   
   /** [EventChannel.on(string eventName, function fn)](https://developers.weixin.qq.com/miniprogram/dev/api/route/EventChannel.on.html)
     *
@@ -36,7 +34,7 @@ trait EventChannel extends StObject {
     * 最低基础库： `2.7.3` */
   def on(/** 事件名称 */
   eventName: String, /** 事件监听函数 */
-  fn: EventCallback): Unit = js.native
+  fn: EventCallback): Unit
   
   /** [EventChannel.once(string eventName, function fn)](https://developers.weixin.qq.com/miniprogram/dev/api/route/EventChannel.once.html)
     *
@@ -45,7 +43,7 @@ trait EventChannel extends StObject {
     * 最低基础库： `2.7.3` */
   def once(/** 事件名称 */
   eventName: String, /** 事件监听函数 */
-  fn: EventCallback): Unit = js.native
+  fn: EventCallback): Unit
 }
 object EventChannel {
   

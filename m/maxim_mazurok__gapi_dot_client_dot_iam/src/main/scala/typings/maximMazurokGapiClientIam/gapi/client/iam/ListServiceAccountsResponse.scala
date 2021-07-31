@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServiceAccountsResponse extends StObject {
   
   /** The list of matching service accounts. */
-  var accounts: js.UndefOr[js.Array[ServiceAccount]] = js.native
+  var accounts: js.UndefOr[js.Array[ServiceAccount]] = js.undefined
   
   /** To retrieve the next page of results, set ListServiceAccountsRequest.page_token to this value. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListServiceAccountsResponse {
   

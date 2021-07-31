@@ -2,37 +2,35 @@ package typings.modernizr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputTypesBoolean extends StObject {
   
-  var color: Boolean = js.native
+  var color: Boolean
   
-  var date: Boolean = js.native
+  var date: Boolean
   
-  var datetime: Boolean = js.native
+  var datetime: Boolean
   
-  var `datetime-local`: Boolean = js.native
+  var `datetime-local`: Boolean
   
-  var email: Boolean = js.native
+  var email: Boolean
   
-  var month: Boolean = js.native
+  var month: Boolean
   
-  var number: Boolean = js.native
+  var number: Boolean
   
-  var range: Boolean = js.native
+  var range: Boolean
   
-  var search: Boolean = js.native
+  var search: Boolean
   
-  var tel: Boolean = js.native
+  var tel: Boolean
   
-  var time: Boolean = js.native
+  var time: Boolean
   
-  var url: Boolean = js.native
+  var url: Boolean
   
-  var week: Boolean = js.native
+  var week: Boolean
 }
 object InputTypesBoolean {
   

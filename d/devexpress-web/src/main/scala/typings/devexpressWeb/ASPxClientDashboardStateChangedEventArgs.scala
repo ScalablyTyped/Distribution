@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.DashboardStateChanged event.
   */
-@js.native
-trait ASPxClientDashboardStateChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDashboardStateChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the current state of the dashboard.
     */
-  var DashboardState: String = js.native
+  var DashboardState: String
 }
 object ASPxClientDashboardStateChangedEventArgs {
   

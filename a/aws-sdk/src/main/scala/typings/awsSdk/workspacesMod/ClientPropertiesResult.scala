@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientPropertiesResult extends StObject {
   
   /**
     * Information about the Amazon WorkSpaces client.
     */
-  var ClientProperties: js.UndefOr[typings.awsSdk.workspacesMod.ClientProperties] = js.native
+  var ClientProperties: js.UndefOr[typings.awsSdk.workspacesMod.ClientProperties] = js.undefined
   
   /**
     * The resource identifier, in the form of a directory ID.
     */
-  var ResourceId: js.UndefOr[NonEmptyString] = js.native
+  var ResourceId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ClientPropertiesResult {
   

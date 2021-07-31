@@ -2,7 +2,6 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromEventPatternObservableMod {
@@ -14,28 +13,28 @@ object fromEventPatternObservableMod {
   /* static members */
   object FromEventPatternObservable {
     
-    @JSImport("rxjs-compat/observable/FromEventPatternObservable", "FromEventPatternObservable.create")
+    @JSImport("rxjs-compat/observable/FromEventPatternObservable", "FromEventPatternObservable")
     @js.native
-    def create[T](addHandler: js.Function1[/* handler */ js.Function, _]): js.Any = js.native
-    @JSImport("rxjs-compat/observable/FromEventPatternObservable", "FromEventPatternObservable.create")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create[T](addHandler: js.Function1[/* handler */ js.Function, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
     def create[T](
-      addHandler: js.Function1[/* handler */ js.Function, _],
-      removeHandler: js.UndefOr[scala.Nothing],
-      selector: js.Function1[/* repeated */ js.Any, T]
-    ): js.Any = js.native
-    @JSImport("rxjs-compat/observable/FromEventPatternObservable", "FromEventPatternObservable.create")
-    @js.native
-    def create[T](
-      addHandler: js.Function1[/* handler */ js.Function, _],
+      addHandler: js.Function1[/* handler */ js.Function, js.Any],
       removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit]
-    ): js.Any = js.native
-    @JSImport("rxjs-compat/observable/FromEventPatternObservable", "FromEventPatternObservable.create")
-    @js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
     def create[T](
-      addHandler: js.Function1[/* handler */ js.Function, _],
+      addHandler: js.Function1[/* handler */ js.Function, js.Any],
       removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], Unit],
       selector: js.Function1[/* repeated */ js.Any, T]
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def create[T](
+      addHandler: js.Function1[/* handler */ js.Function, js.Any],
+      removeHandler: Unit,
+      selector: js.Function1[/* repeated */ js.Any, T]
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(addHandler.asInstanceOf[js.Any], removeHandler.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

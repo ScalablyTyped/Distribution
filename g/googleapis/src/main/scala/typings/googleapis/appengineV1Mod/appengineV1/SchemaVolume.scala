@@ -2,30 +2,28 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Volumes mounted within the app container. Only applicable in the App Engine
   * flexible environment.
   */
-@js.native
 trait SchemaVolume extends StObject {
   
   /**
     * Unique name for the volume.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Volume size in gigabytes.
     */
-  var sizeGb: js.UndefOr[Double] = js.native
+  var sizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Underlying volume type, e.g. &#39;tmpfs&#39;.
     */
-  var volumeType: js.UndefOr[String] = js.native
+  var volumeType: js.UndefOr[String] = js.undefined
 }
 object SchemaVolume {
   

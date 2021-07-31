@@ -4,35 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCipherTextMod {
   
-  @JSImport("@pulumi/aws/kms/getCipherText", "getCipherText")
+  @JSImport("@pulumi/aws/kms/getCipherText", JSImport.Namespace)
   @js.native
-  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = js.native
-  @JSImport("@pulumi/aws/kms/getCipherText", "getCipherText")
-  @js.native
-  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCipherText(args: GetCipherTextArgs): js.Promise[GetCipherTextResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCipherTextResult]]
+  @scala.inline
+  def getCipherText(args: GetCipherTextArgs, opts: InvokeOptions): js.Promise[GetCipherTextResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCipherText")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCipherTextResult]]
+  
   trait GetCipherTextArgs extends StObject {
     
     /**
       * An optional mapping that makes up the encryption context.
       */
-    val context: js.UndefOr[StringDictionary[String]] = js.native
+    val context: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Globally unique key ID for the customer master key.
       */
-    val keyId: String = js.native
+    val keyId: String
     
     /**
       * Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.
       */
-    val plaintext: String = js.native
+    val plaintext: String
   }
   object GetCipherTextArgs {
     
@@ -59,24 +59,23 @@ object getCipherTextMod {
     }
   }
   
-  @js.native
   trait GetCipherTextResult extends StObject {
     
     /**
       * Base64 encoded ciphertext
       */
-    val ciphertextBlob: String = js.native
+    val ciphertextBlob: String
     
-    val context: js.UndefOr[StringDictionary[String]] = js.native
+    val context: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val keyId: String = js.native
+    val keyId: String
     
-    val plaintext: String = js.native
+    val plaintext: String
   }
   object GetCipherTextResult {
     

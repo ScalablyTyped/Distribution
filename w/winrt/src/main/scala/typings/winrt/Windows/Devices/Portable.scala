@@ -3,7 +3,6 @@ package typings.winrt.Windows.Devices
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Portable {
@@ -15,33 +14,46 @@ object Portable {
   object ServiceDeviceType extends StObject {
     
     @js.native
-    sealed trait calendarService extends ServiceDeviceType
+    sealed trait calendarService
+      extends StObject
+         with ServiceDeviceType
     
     @js.native
-    sealed trait contactsService extends ServiceDeviceType
+    sealed trait contactsService
+      extends StObject
+         with ServiceDeviceType
     
     @js.native
-    sealed trait deviceStatusService extends ServiceDeviceType
+    sealed trait deviceStatusService
+      extends StObject
+         with ServiceDeviceType
     
     @js.native
-    sealed trait notesService extends ServiceDeviceType
+    sealed trait notesService
+      extends StObject
+         with ServiceDeviceType
     
     @js.native
-    sealed trait ringtonesService extends ServiceDeviceType
+    sealed trait ringtonesService
+      extends StObject
+         with ServiceDeviceType
     
     @js.native
-    sealed trait smsService extends ServiceDeviceType
+    sealed trait smsService
+      extends StObject
+         with ServiceDeviceType
     
     @js.native
-    sealed trait tasksService extends ServiceDeviceType
+    sealed trait tasksService
+      extends StObject
+         with ServiceDeviceType
   }
   
-  @js.native
   trait IServiceDeviceStatics extends StObject {
     
-    def getDeviceSelector(serviceType: ServiceDeviceType): String = js.native
+    def getDeviceSelector(serviceType: ServiceDeviceType): String
     
-    def getDeviceSelectorFromServiceId(serviceId: String): String = js.native
+    def getDeviceSelectorFromServiceId(serviceId: String): String
   }
   object IServiceDeviceStatics {
     
@@ -62,12 +74,11 @@ object Portable {
     }
   }
   
-  @js.native
   trait IStorageDeviceStatics extends StObject {
     
-    def fromId(interfaceId: String): StorageFolder = js.native
+    def fromId(interfaceId: String): StorageFolder
     
-    def getDeviceSelector(): String = js.native
+    def getDeviceSelector(): String
   }
   object IStorageDeviceStatics {
     
@@ -88,9 +99,7 @@ object Portable {
     }
   }
   
-  @js.native
   trait ServiceDevice extends StObject
   
-  @js.native
   trait StorageDevice extends StObject
 }

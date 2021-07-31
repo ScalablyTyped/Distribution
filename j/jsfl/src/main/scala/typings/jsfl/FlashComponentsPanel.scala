@@ -2,15 +2,13 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashComponentsPanel extends StObject {
   
-  def addItemToDocument(): js.Any = js.native
+  def addItemToDocument(): js.Any
   
-  def reload(): js.Any = js.native
+  def reload(): js.Any
 }
 object FlashComponentsPanel {
   

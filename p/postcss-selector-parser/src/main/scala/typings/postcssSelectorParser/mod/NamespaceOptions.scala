@@ -3,13 +3,13 @@ package typings.postcssSelectorParser.mod
 import typings.postcssSelectorParser.postcssSelectorParserBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NamespaceOptions[Value /* <: js.UndefOr[String] */] extends NodeOptions[Value] {
+trait NamespaceOptions[Value /* <: js.UndefOr[String] */]
+  extends StObject
+     with NodeOptions[Value] {
   
-  var namespace: js.UndefOr[String | `true`] = js.native
+  var namespace: js.UndefOr[String | `true`] = js.undefined
 }
 object NamespaceOptions {
   
@@ -20,7 +20,7 @@ object NamespaceOptions {
   }
   
   @scala.inline
-  implicit class NamespaceOptionsMutableBuilder[Self <: NamespaceOptions[_], Value /* <: js.UndefOr[String] */] (val x: Self with NamespaceOptions[Value]) extends AnyVal {
+  implicit class NamespaceOptionsMutableBuilder[Self <: NamespaceOptions[?], Value /* <: js.UndefOr[String] */] (val x: Self & NamespaceOptions[Value]) extends AnyVal {
     
     @scala.inline
     def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])

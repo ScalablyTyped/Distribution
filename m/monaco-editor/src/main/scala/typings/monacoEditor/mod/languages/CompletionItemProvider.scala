@@ -5,16 +5,14 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionItemProvider extends StObject {
   
   /**
     * Provide completion items for the given position and document.
     */
-  def provideCompletionItems(model: ITextModel, position: Position, context: CompletionContext, token: CancellationToken): ProviderResult[CompletionList] = js.native
+  def provideCompletionItems(model: ITextModel, position: Position, context: CompletionContext, token: CancellationToken): ProviderResult[CompletionList]
   
   /**
     * Given a completion item fill in more data, like [doc-comment](#CompletionItem.documentation)
@@ -28,9 +26,9 @@ trait CompletionItemProvider extends StObject {
       /* token */ CancellationToken, 
       ProviderResult[CompletionItem]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var triggerCharacters: js.UndefOr[js.Array[String]] = js.native
+  var triggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CompletionItemProvider {
   

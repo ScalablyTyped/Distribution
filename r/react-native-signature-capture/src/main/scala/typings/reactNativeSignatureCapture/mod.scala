@@ -6,7 +6,6 @@ import typings.reactNativeSignatureCapture.reactNativeSignatureCaptureStrings.la
 import typings.reactNativeSignatureCapture.reactNativeSignatureCaptureStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,18 +14,17 @@ object mod {
   @js.native
   class default () extends SignatureCapture
   
-  @js.native
   trait SaveEventParams extends StObject {
     
     /**
       * The base64 encoded png
       */
-    var encoded: String = js.native
+    var encoded: String
     
     /**
       * The file path name
       */
-    var pathName: String = js.native
+    var pathName: String
   }
   object SaveEventParams {
     
@@ -62,15 +60,16 @@ object mod {
     def saveImage(): Unit = js.native
   }
   
-  @js.native
-  trait SignatureCaptureProps extends ViewProps {
+  trait SignatureCaptureProps
+    extends StObject
+       with ViewProps {
     
     /**
       * sets the max size of the image maintains aspect ratio,
       *
       * @default 500
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Triggered when user marks their signature on the canvas.
@@ -78,14 +77,14 @@ object mod {
       *
       * @param event - the event when a drag is performed
       */
-    var onDragEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onDragEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
     /**
       * Triggered when saveImage() is called, which return Base64 Encoded String and image file path.
       *
       * @param params - the file path and encoded png
       */
-    var onSaveEvent: js.UndefOr[js.Function1[/* params */ SaveEventParams, Unit]] = js.native
+    var onSaveEvent: js.UndefOr[js.Function1[/* params */ SaveEventParams, Unit]] = js.undefined
     
     /**
       * Make this props true, if you want to save the image file in external storage.
@@ -93,34 +92,34 @@ object mod {
       *
       * @default false
       */
-    var saveImageFileInExtStorage: js.UndefOr[Boolean] = js.native
+    var saveImageFileInExtStorage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this props is made to false, it will hide the dashed border (the border is shown on iOS only).
       *
       * @default false
       */
-    var showBorder: js.UndefOr[Boolean] = js.native
+    var showBorder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this props is made to true, it will display the native buttons "Save" and "Reset".
       *
       * @default false
       */
-    var showNativeButtons: js.UndefOr[Boolean] = js.native
+    var showNativeButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this props is made to true, it will display the "x_ _ _ _ _ _ _ _ _ _ _" placeholder indicating where to sign.
       *
       * @default false
       */
-    var showTitleLabel: js.UndefOr[Boolean] = js.native
+    var showTitleLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Change the screen orientation based on boolean value
       * "portrait" or "landscape"
       */
-    var viewMode: js.UndefOr[portrait | landscape] = js.native
+    var viewMode: js.UndefOr[portrait | landscape] = js.undefined
   }
   object SignatureCaptureProps {
     

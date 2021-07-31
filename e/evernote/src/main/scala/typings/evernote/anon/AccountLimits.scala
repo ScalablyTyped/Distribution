@@ -9,47 +9,45 @@ import typings.evernote.mod.Types.UserAttributes
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountLimits extends StObject {
   
-  var accountLimits: js.UndefOr[typings.evernote.mod.Types.AccountLimits] = js.native
+  var accountLimits: js.UndefOr[typings.evernote.mod.Types.AccountLimits] = js.undefined
   
-  var accounting: js.UndefOr[Accounting] = js.native
+  var accounting: js.UndefOr[Accounting] = js.undefined
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var attributes: js.UndefOr[UserAttributes] = js.native
+  var attributes: js.UndefOr[UserAttributes] = js.undefined
   
-  var businessUserInfo: js.UndefOr[BusinessUserInfo] = js.native
+  var businessUserInfo: js.UndefOr[BusinessUserInfo] = js.undefined
   
-  var created: js.UndefOr[Timestamp] = js.native
+  var created: js.UndefOr[Timestamp] = js.undefined
   
-  var deleted: js.UndefOr[Timestamp] = js.native
+  var deleted: js.UndefOr[Timestamp] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[UserID] = js.native
+  var id: js.UndefOr[UserID] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var photoLastUpdated: js.UndefOr[Timestamp] = js.native
+  var photoLastUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
-  var privilege: js.UndefOr[PrivilegeLevel] = js.native
+  var privilege: js.UndefOr[PrivilegeLevel] = js.undefined
   
-  var serviceLevel: js.UndefOr[ServiceLevel] = js.native
+  var serviceLevel: js.UndefOr[ServiceLevel] = js.undefined
   
-  var shardId: js.UndefOr[String] = js.native
+  var shardId: js.UndefOr[String] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object AccountLimits {
   

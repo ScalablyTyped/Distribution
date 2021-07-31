@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleDependentStops extends Object {
+trait ScaleDependentStops
+  extends StObject
+     with Object {
   
   /**
     * The only supported expression is `view.scale`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * An array of objects that define the size of the icon (or alternatively the width of the polygon outline) at the given scale `value`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
     */
-  var stops: js.Array[SizeStop] = js.native
+  var stops: js.Array[SizeStop]
   
   /**
     * This value must be `outline` when scaling polygon outline widths based on the view scale.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /**
     * Value must be `size`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * This value must be `$view.scale`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentStops)
     */
-  var valueExpression: String = js.native
+  var valueExpression: String
 }
 object ScaleDependentStops {
   

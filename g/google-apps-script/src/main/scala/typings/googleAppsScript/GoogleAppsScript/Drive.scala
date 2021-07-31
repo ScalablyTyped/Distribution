@@ -66,128 +66,126 @@ import typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User
 import typings.googleAppsScript.GoogleAppsScript.Drive.Schema.UserPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Drive extends StObject {
   
-  var About: js.UndefOr[AboutCollection] = js.native
+  var About: js.UndefOr[AboutCollection] = js.undefined
   
-  var Apps: js.UndefOr[AppsCollection] = js.native
+  var Apps: js.UndefOr[AppsCollection] = js.undefined
   
-  var Changes: js.UndefOr[ChangesCollection] = js.native
+  var Changes: js.UndefOr[ChangesCollection] = js.undefined
   
-  var Channels: js.UndefOr[ChannelsCollection] = js.native
+  var Channels: js.UndefOr[ChannelsCollection] = js.undefined
   
-  var Children: js.UndefOr[ChildrenCollection] = js.native
+  var Children: js.UndefOr[ChildrenCollection] = js.undefined
   
-  var Comments: js.UndefOr[CommentsCollection] = js.native
+  var Comments: js.UndefOr[CommentsCollection] = js.undefined
   
-  var Drives: js.UndefOr[DrivesCollection] = js.native
+  var Drives: js.UndefOr[DrivesCollection] = js.undefined
   
-  var Files: js.UndefOr[FilesCollection] = js.native
+  var Files: js.UndefOr[FilesCollection] = js.undefined
   
-  var Parents: js.UndefOr[ParentsCollection] = js.native
+  var Parents: js.UndefOr[ParentsCollection] = js.undefined
   
-  var Permissions: js.UndefOr[PermissionsCollection] = js.native
+  var Permissions: js.UndefOr[PermissionsCollection] = js.undefined
   
-  var Properties: js.UndefOr[PropertiesCollection] = js.native
+  var Properties: js.UndefOr[PropertiesCollection] = js.undefined
   
-  var Realtime: js.UndefOr[RealtimeCollection] = js.native
+  var Realtime: js.UndefOr[RealtimeCollection] = js.undefined
   
-  var Replies: js.UndefOr[RepliesCollection] = js.native
+  var Replies: js.UndefOr[RepliesCollection] = js.undefined
   
-  var Revisions: js.UndefOr[RevisionsCollection] = js.native
+  var Revisions: js.UndefOr[RevisionsCollection] = js.undefined
   
-  var Teamdrives: js.UndefOr[TeamdrivesCollection] = js.native
+  var Teamdrives: js.UndefOr[TeamdrivesCollection] = js.undefined
   
   // Create a new instance of Channel
-  def newChannel(): Channel = js.native
+  def newChannel(): Channel
   
   // Create a new instance of ChildReference
-  def newChildReference(): ChildReference = js.native
+  def newChildReference(): ChildReference
   
   // Create a new instance of Comment
-  def newComment(): Comment = js.native
+  def newComment(): Comment
   
   // Create a new instance of CommentContext
-  def newCommentContext(): CommentContext = js.native
+  def newCommentContext(): CommentContext
   
   // Create a new instance of CommentReply
-  def newCommentReply(): CommentReply = js.native
+  def newCommentReply(): CommentReply
   
   // Create a new instance of Drive
-  def newDrive(): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive = js.native
+  def newDrive(): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive
   
   // Create a new instance of DriveBackgroundImageFile
-  def newDriveBackgroundImageFile(): DriveBackgroundImageFile = js.native
+  def newDriveBackgroundImageFile(): DriveBackgroundImageFile
   
   // Create a new instance of DriveCapabilities
-  def newDriveCapabilities(): DriveCapabilities = js.native
+  def newDriveCapabilities(): DriveCapabilities
   
   // Create a new instance of DriveRestrictions
-  def newDriveRestrictions(): DriveRestrictions = js.native
+  def newDriveRestrictions(): DriveRestrictions
   
   // Create a new instance of File
-  def newFile(): File = js.native
+  def newFile(): File
   
   // Create a new instance of FileCapabilities
-  def newFileCapabilities(): FileCapabilities = js.native
+  def newFileCapabilities(): FileCapabilities
   
   // Create a new instance of FileImageMediaMetadata
-  def newFileImageMediaMetadata(): FileImageMediaMetadata = js.native
+  def newFileImageMediaMetadata(): FileImageMediaMetadata
   
   // Create a new instance of FileImageMediaMetadataLocation
-  def newFileImageMediaMetadataLocation(): FileImageMediaMetadataLocation = js.native
+  def newFileImageMediaMetadataLocation(): FileImageMediaMetadataLocation
   
   // Create a new instance of FileIndexableText
-  def newFileIndexableText(): FileIndexableText = js.native
+  def newFileIndexableText(): FileIndexableText
   
   // Create a new instance of FileLabels
-  def newFileLabels(): FileLabels = js.native
+  def newFileLabels(): FileLabels
   
   // Create a new instance of FileThumbnail
-  def newFileThumbnail(): FileThumbnail = js.native
+  def newFileThumbnail(): FileThumbnail
   
   // Create a new instance of FileVideoMediaMetadata
-  def newFileVideoMediaMetadata(): FileVideoMediaMetadata = js.native
+  def newFileVideoMediaMetadata(): FileVideoMediaMetadata
   
   // Create a new instance of ParentReference
-  def newParentReference(): ParentReference = js.native
+  def newParentReference(): ParentReference
   
   // Create a new instance of Permission
-  def newPermission(): Permission = js.native
+  def newPermission(): Permission
   
   // Create a new instance of PermissionPermissionDetails
-  def newPermissionPermissionDetails(): PermissionPermissionDetails = js.native
+  def newPermissionPermissionDetails(): PermissionPermissionDetails
   
   // Create a new instance of PermissionTeamDrivePermissionDetails
-  def newPermissionTeamDrivePermissionDetails(): PermissionTeamDrivePermissionDetails = js.native
+  def newPermissionTeamDrivePermissionDetails(): PermissionTeamDrivePermissionDetails
   
   // Create a new instance of Property
-  def newProperty(): Property = js.native
+  def newProperty(): Property
   
   // Create a new instance of Revision
-  def newRevision(): Revision = js.native
+  def newRevision(): Revision
   
   // Create a new instance of TeamDrive
-  def newTeamDrive(): TeamDrive = js.native
+  def newTeamDrive(): TeamDrive
   
   // Create a new instance of TeamDriveBackgroundImageFile
-  def newTeamDriveBackgroundImageFile(): TeamDriveBackgroundImageFile = js.native
+  def newTeamDriveBackgroundImageFile(): TeamDriveBackgroundImageFile
   
   // Create a new instance of TeamDriveCapabilities
-  def newTeamDriveCapabilities(): TeamDriveCapabilities = js.native
+  def newTeamDriveCapabilities(): TeamDriveCapabilities
   
   // Create a new instance of TeamDriveRestrictions
-  def newTeamDriveRestrictions(): TeamDriveRestrictions = js.native
+  def newTeamDriveRestrictions(): TeamDriveRestrictions
   
   // Create a new instance of User
-  def newUser(): User = js.native
+  def newUser(): User
   
   // Create a new instance of UserPicture
-  def newUserPicture(): UserPicture = js.native
+  def newUserPicture(): UserPicture
 }
 object Drive {
   
@@ -243,19 +241,29 @@ object Drive {
   object Access extends StObject {
     
     @js.native
-    sealed trait ANYONE extends Access
+    sealed trait ANYONE
+      extends StObject
+         with Access
     
     @js.native
-    sealed trait ANYONE_WITH_LINK extends Access
+    sealed trait ANYONE_WITH_LINK
+      extends StObject
+         with Access
     
     @js.native
-    sealed trait DOMAIN extends Access
+    sealed trait DOMAIN
+      extends StObject
+         with Access
     
     @js.native
-    sealed trait DOMAIN_WITH_LINK extends Access
+    sealed trait DOMAIN_WITH_LINK
+      extends StObject
+         with Access
     
     @js.native
-    sealed trait PRIVATE extends Access
+    sealed trait PRIVATE
+      extends StObject
+         with Access
   }
   
   @js.native
@@ -276,27 +284,33 @@ object Drive {
     
     @js.native
     sealed trait COMMENT
-      extends typings.googleAppsScript.GoogleAppsScript.Drive.Permission
+      extends StObject
+         with typings.googleAppsScript.GoogleAppsScript.Drive.Permission
     
     @js.native
     sealed trait EDIT
-      extends typings.googleAppsScript.GoogleAppsScript.Drive.Permission
+      extends StObject
+         with typings.googleAppsScript.GoogleAppsScript.Drive.Permission
     
     @js.native
     sealed trait NONE
-      extends typings.googleAppsScript.GoogleAppsScript.Drive.Permission
+      extends StObject
+         with typings.googleAppsScript.GoogleAppsScript.Drive.Permission
     
     @js.native
     sealed trait ORGANIZER
-      extends typings.googleAppsScript.GoogleAppsScript.Drive.Permission
+      extends StObject
+         with typings.googleAppsScript.GoogleAppsScript.Drive.Permission
     
     @js.native
     sealed trait OWNER
-      extends typings.googleAppsScript.GoogleAppsScript.Drive.Permission
+      extends StObject
+         with typings.googleAppsScript.GoogleAppsScript.Drive.Permission
     
     @js.native
     sealed trait VIEW
-      extends typings.googleAppsScript.GoogleAppsScript.Drive.Permission
+      extends StObject
+         with typings.googleAppsScript.GoogleAppsScript.Drive.Permission
   }
   
   object Collection {
@@ -346,11 +360,10 @@ object Drive {
       def watch(resource: Channel, optionalArgs: js.Object): Channel = js.native
     }
     
-    @js.native
     trait ChannelsCollection extends StObject {
       
       // Stop watching resources through this channel
-      def stop(resource: Channel): Unit = js.native
+      def stop(resource: Channel): Unit
     }
     object ChannelsCollection {
       
@@ -465,7 +478,7 @@ object Drive {
       def emptyTrash(): Unit = js.native
       
       // Exports a Google Doc to the requested MIME type and returns the exported content. Please note that the exported content is limited to 10MB.
-      def export(fileId: String, mimeType: String): Unit = js.native
+      def `export`(fileId: String, mimeType: String): Unit = js.native
       
       // Generates a set of file IDs which can be provided in insert requests.
       def generateIds(): GeneratedIds = js.native
@@ -1181,7 +1194,6 @@ object Drive {
     *       Logger.log(file.getName());
     *     }
     */
-  @js.native
   trait FileIterator extends StObject {
     
     /**
@@ -1189,16 +1201,16 @@ object Drive {
       * This method is useful if processing an iterator in one execution would
       * exceed the maximum execution time. Continuation tokens are generally valid for one week.
       */
-    def getContinuationToken(): String = js.native
+    def getContinuationToken(): String
     
     /** Determines whether calling next() will return an item. */
-    def hasNext(): Boolean = js.native
+    def hasNext(): Boolean
     
     /**
       * Gets the next item in the collection of files or folders.
       * Throws an exception if no items remain.
       */
-    def next(): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    def next(): typings.googleAppsScript.GoogleAppsScript.Drive.File
   }
   object FileIterator {
     
@@ -1348,14 +1360,13 @@ object Drive {
     *       Logger.log(folder.getName());
     *     }
     */
-  @js.native
   trait FolderIterator extends StObject {
     
-    def getContinuationToken(): String = js.native
+    def getContinuationToken(): String
     
-    def hasNext(): Boolean = js.native
+    def hasNext(): Boolean
     
-    def next(): Folder = js.native
+    def next(): Folder
   }
   object FolderIterator {
     
@@ -1381,64 +1392,63 @@ object Drive {
   
   object Schema {
     
-    @js.native
     trait About extends StObject {
       
-      var additionalRoleInfo: js.UndefOr[js.Array[AboutAdditionalRoleInfo]] = js.native
+      var additionalRoleInfo: js.UndefOr[js.Array[AboutAdditionalRoleInfo]] = js.undefined
       
-      var canCreateDrives: js.UndefOr[Boolean] = js.native
+      var canCreateDrives: js.UndefOr[Boolean] = js.undefined
       
-      var canCreateTeamDrives: js.UndefOr[Boolean] = js.native
+      var canCreateTeamDrives: js.UndefOr[Boolean] = js.undefined
       
-      var domainSharingPolicy: js.UndefOr[String] = js.native
+      var domainSharingPolicy: js.UndefOr[String] = js.undefined
       
-      var driveThemes: js.UndefOr[js.Array[AboutDriveThemes]] = js.native
+      var driveThemes: js.UndefOr[js.Array[AboutDriveThemes]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var exportFormats: js.UndefOr[js.Array[AboutExportFormats]] = js.native
+      var exportFormats: js.UndefOr[js.Array[AboutExportFormats]] = js.undefined
       
-      var features: js.UndefOr[js.Array[AboutFeatures]] = js.native
+      var features: js.UndefOr[js.Array[AboutFeatures]] = js.undefined
       
-      var folderColorPalette: js.UndefOr[js.Array[String]] = js.native
+      var folderColorPalette: js.UndefOr[js.Array[String]] = js.undefined
       
-      var importFormats: js.UndefOr[js.Array[AboutImportFormats]] = js.native
+      var importFormats: js.UndefOr[js.Array[AboutImportFormats]] = js.undefined
       
-      var isCurrentAppInstalled: js.UndefOr[Boolean] = js.native
+      var isCurrentAppInstalled: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
       
-      var largestChangeId: js.UndefOr[String] = js.native
+      var largestChangeId: js.UndefOr[String] = js.undefined
       
-      var maxUploadSizes: js.UndefOr[js.Array[AboutMaxUploadSizes]] = js.native
+      var maxUploadSizes: js.UndefOr[js.Array[AboutMaxUploadSizes]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissionId: js.UndefOr[String] = js.native
+      var permissionId: js.UndefOr[String] = js.undefined
       
-      var quotaBytesByService: js.UndefOr[js.Array[AboutQuotaBytesByService]] = js.native
+      var quotaBytesByService: js.UndefOr[js.Array[AboutQuotaBytesByService]] = js.undefined
       
-      var quotaBytesTotal: js.UndefOr[String] = js.native
+      var quotaBytesTotal: js.UndefOr[String] = js.undefined
       
-      var quotaBytesUsed: js.UndefOr[String] = js.native
+      var quotaBytesUsed: js.UndefOr[String] = js.undefined
       
-      var quotaBytesUsedAggregate: js.UndefOr[String] = js.native
+      var quotaBytesUsedAggregate: js.UndefOr[String] = js.undefined
       
-      var quotaBytesUsedInTrash: js.UndefOr[String] = js.native
+      var quotaBytesUsedInTrash: js.UndefOr[String] = js.undefined
       
-      var quotaType: js.UndefOr[String] = js.native
+      var quotaType: js.UndefOr[String] = js.undefined
       
-      var remainingChangeIds: js.UndefOr[String] = js.native
+      var remainingChangeIds: js.UndefOr[String] = js.undefined
       
-      var rootFolderId: js.UndefOr[String] = js.native
+      var rootFolderId: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var teamDriveThemes: js.UndefOr[js.Array[AboutTeamDriveThemes]] = js.native
+      var teamDriveThemes: js.UndefOr[js.Array[AboutTeamDriveThemes]] = js.undefined
       
-      var user: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var user: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
     }
     object About {
       
@@ -1648,12 +1658,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutAdditionalRoleInfo extends StObject {
       
-      var roleSets: js.UndefOr[js.Array[AboutAdditionalRoleInfoRoleSets]] = js.native
+      var roleSets: js.UndefOr[js.Array[AboutAdditionalRoleInfoRoleSets]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AboutAdditionalRoleInfo {
       
@@ -1683,12 +1692,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutAdditionalRoleInfoRoleSets extends StObject {
       
-      var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+      var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var primaryRole: js.UndefOr[String] = js.native
+      var primaryRole: js.UndefOr[String] = js.undefined
     }
     object AboutAdditionalRoleInfoRoleSets {
       
@@ -1718,14 +1726,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutDriveThemes extends StObject {
       
-      var backgroundImageLink: js.UndefOr[String] = js.native
+      var backgroundImageLink: js.UndefOr[String] = js.undefined
       
-      var colorRgb: js.UndefOr[String] = js.native
+      var colorRgb: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
     }
     object AboutDriveThemes {
       
@@ -1758,12 +1765,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutExportFormats extends StObject {
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
       
-      var targets: js.UndefOr[js.Array[String]] = js.native
+      var targets: js.UndefOr[js.Array[String]] = js.undefined
     }
     object AboutExportFormats {
       
@@ -1793,12 +1799,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutFeatures extends StObject {
       
-      var featureName: js.UndefOr[String] = js.native
+      var featureName: js.UndefOr[String] = js.undefined
       
-      var featureRate: js.UndefOr[Double] = js.native
+      var featureRate: js.UndefOr[Double] = js.undefined
     }
     object AboutFeatures {
       
@@ -1825,12 +1830,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutImportFormats extends StObject {
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
       
-      var targets: js.UndefOr[js.Array[String]] = js.native
+      var targets: js.UndefOr[js.Array[String]] = js.undefined
     }
     object AboutImportFormats {
       
@@ -1860,12 +1864,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutMaxUploadSizes extends StObject {
       
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AboutMaxUploadSizes {
       
@@ -1892,12 +1895,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutQuotaBytesByService extends StObject {
       
-      var bytesUsed: js.UndefOr[String] = js.native
+      var bytesUsed: js.UndefOr[String] = js.undefined
       
-      var serviceName: js.UndefOr[String] = js.native
+      var serviceName: js.UndefOr[String] = js.undefined
     }
     object AboutQuotaBytesByService {
       
@@ -1924,14 +1926,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait AboutTeamDriveThemes extends StObject {
       
-      var backgroundImageLink: js.UndefOr[String] = js.native
+      var backgroundImageLink: js.UndefOr[String] = js.undefined
       
-      var colorRgb: js.UndefOr[String] = js.native
+      var colorRgb: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
     }
     object AboutTeamDriveThemes {
       
@@ -1964,56 +1965,55 @@ object Drive {
       }
     }
     
-    @js.native
     trait App extends StObject {
       
-      var authorized: js.UndefOr[Boolean] = js.native
+      var authorized: js.UndefOr[Boolean] = js.undefined
       
-      var createInFolderTemplate: js.UndefOr[String] = js.native
+      var createInFolderTemplate: js.UndefOr[String] = js.undefined
       
-      var createUrl: js.UndefOr[String] = js.native
+      var createUrl: js.UndefOr[String] = js.undefined
       
-      var hasDriveWideScope: js.UndefOr[Boolean] = js.native
+      var hasDriveWideScope: js.UndefOr[Boolean] = js.undefined
       
-      var icons: js.UndefOr[js.Array[AppIcons]] = js.native
+      var icons: js.UndefOr[js.Array[AppIcons]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var installed: js.UndefOr[Boolean] = js.native
+      var installed: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var longDescription: js.UndefOr[String] = js.native
+      var longDescription: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var objectType: js.UndefOr[String] = js.native
+      var objectType: js.UndefOr[String] = js.undefined
       
-      var openUrlTemplate: js.UndefOr[String] = js.native
+      var openUrlTemplate: js.UndefOr[String] = js.undefined
       
-      var primaryFileExtensions: js.UndefOr[js.Array[String]] = js.native
+      var primaryFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var primaryMimeTypes: js.UndefOr[js.Array[String]] = js.native
+      var primaryMimeTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
-      var productUrl: js.UndefOr[String] = js.native
+      var productUrl: js.UndefOr[String] = js.undefined
       
-      var secondaryFileExtensions: js.UndefOr[js.Array[String]] = js.native
+      var secondaryFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var secondaryMimeTypes: js.UndefOr[js.Array[String]] = js.native
+      var secondaryMimeTypes: js.UndefOr[js.Array[String]] = js.undefined
       
-      var shortDescription: js.UndefOr[String] = js.native
+      var shortDescription: js.UndefOr[String] = js.undefined
       
-      var supportsCreate: js.UndefOr[Boolean] = js.native
+      var supportsCreate: js.UndefOr[Boolean] = js.undefined
       
-      var supportsImport: js.UndefOr[Boolean] = js.native
+      var supportsImport: js.UndefOr[Boolean] = js.undefined
       
-      var supportsMultiOpen: js.UndefOr[Boolean] = js.native
+      var supportsMultiOpen: js.UndefOr[Boolean] = js.undefined
       
-      var supportsOfflineCreate: js.UndefOr[Boolean] = js.native
+      var supportsOfflineCreate: js.UndefOr[Boolean] = js.undefined
       
-      var useByDefault: js.UndefOr[Boolean] = js.native
+      var useByDefault: js.UndefOr[Boolean] = js.undefined
     }
     object App {
       
@@ -2187,14 +2187,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait AppIcons extends StObject {
       
-      var category: js.UndefOr[String] = js.native
+      var category: js.UndefOr[String] = js.undefined
       
-      var iconUrl: js.UndefOr[String] = js.native
+      var iconUrl: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
     }
     object AppIcons {
       
@@ -2227,18 +2226,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait AppList extends StObject {
       
-      var defaultAppIds: js.UndefOr[js.Array[String]] = js.native
+      var defaultAppIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[App]] = js.native
+      var items: js.UndefOr[js.Array[App]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object AppList {
       
@@ -2289,32 +2287,31 @@ object Drive {
       }
     }
     
-    @js.native
     trait Change extends StObject {
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var drive: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive] = js.native
+      var drive: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive] = js.undefined
       
-      var driveId: js.UndefOr[String] = js.native
+      var driveId: js.UndefOr[String] = js.undefined
       
-      var file: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File] = js.native
+      var file: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File] = js.undefined
       
-      var fileId: js.UndefOr[String] = js.native
+      var fileId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var modificationDate: js.UndefOr[String] = js.native
+      var modificationDate: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var teamDrive: js.UndefOr[TeamDrive] = js.native
+      var teamDrive: js.UndefOr[TeamDrive] = js.undefined
       
-      var teamDriveId: js.UndefOr[String] = js.native
+      var teamDriveId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Change {
       
@@ -2401,24 +2398,23 @@ object Drive {
       }
     }
     
-    @js.native
     trait ChangeList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Change]] = js.native
+      var items: js.UndefOr[js.Array[Change]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var largestChangeId: js.UndefOr[String] = js.native
+      var largestChangeId: js.UndefOr[String] = js.undefined
       
-      var newStartPageToken: js.UndefOr[String] = js.native
+      var newStartPageToken: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object ChangeList {
       
@@ -2484,28 +2480,27 @@ object Drive {
       }
     }
     
-    @js.native
     trait Channel extends StObject {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var expiration: js.UndefOr[String] = js.native
+      var expiration: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var params: js.UndefOr[js.Object] = js.native
+      var params: js.UndefOr[js.Object] = js.undefined
       
-      var payload: js.UndefOr[Boolean] = js.native
+      var payload: js.UndefOr[Boolean] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var resourceUri: js.UndefOr[String] = js.native
+      var resourceUri: js.UndefOr[String] = js.undefined
       
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Channel {
       
@@ -2580,20 +2575,19 @@ object Drive {
       }
     }
     
-    @js.native
     trait ChildList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[ChildReference]] = js.native
+      var items: js.UndefOr[js.Array[ChildReference]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object ChildList {
       
@@ -2647,16 +2641,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait ChildReference extends StObject {
       
-      var childLink: js.UndefOr[String] = js.native
+      var childLink: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object ChildReference {
       
@@ -2695,38 +2688,37 @@ object Drive {
       }
     }
     
-    @js.native
     trait Comment extends StObject {
       
-      var anchor: js.UndefOr[String] = js.native
+      var anchor: js.UndefOr[String] = js.undefined
       
-      var author: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var author: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
       
-      var commentId: js.UndefOr[String] = js.native
+      var commentId: js.UndefOr[String] = js.undefined
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var context: js.UndefOr[CommentContext] = js.native
+      var context: js.UndefOr[CommentContext] = js.undefined
       
-      var createdDate: js.UndefOr[String] = js.native
+      var createdDate: js.UndefOr[String] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var fileId: js.UndefOr[String] = js.native
+      var fileId: js.UndefOr[String] = js.undefined
       
-      var fileTitle: js.UndefOr[String] = js.native
+      var fileTitle: js.UndefOr[String] = js.undefined
       
-      var htmlContent: js.UndefOr[String] = js.native
+      var htmlContent: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var modifiedDate: js.UndefOr[String] = js.native
+      var modifiedDate: js.UndefOr[String] = js.undefined
       
-      var replies: js.UndefOr[js.Array[CommentReply]] = js.native
+      var replies: js.UndefOr[js.Array[CommentReply]] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object Comment {
       
@@ -2834,12 +2826,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait CommentContext extends StObject {
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object CommentContext {
       
@@ -2866,18 +2857,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait CommentList extends StObject {
       
-      var items: js.UndefOr[js.Array[Comment]] = js.native
+      var items: js.UndefOr[js.Array[Comment]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object CommentList {
       
@@ -2925,26 +2915,25 @@ object Drive {
       }
     }
     
-    @js.native
     trait CommentReply extends StObject {
       
-      var author: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var author: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var createdDate: js.UndefOr[String] = js.native
+      var createdDate: js.UndefOr[String] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var htmlContent: js.UndefOr[String] = js.native
+      var htmlContent: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var modifiedDate: js.UndefOr[String] = js.native
+      var modifiedDate: js.UndefOr[String] = js.undefined
       
-      var replyId: js.UndefOr[String] = js.native
+      var replyId: js.UndefOr[String] = js.undefined
       
-      var verb: js.UndefOr[String] = js.native
+      var verb: js.UndefOr[String] = js.undefined
     }
     object CommentReply {
       
@@ -3013,18 +3002,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait CommentReplyList extends StObject {
       
-      var items: js.UndefOr[js.Array[CommentReply]] = js.native
+      var items: js.UndefOr[js.Array[CommentReply]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object CommentReplyList {
       
@@ -3072,30 +3060,29 @@ object Drive {
       }
     }
     
-    @js.native
     trait Drive extends StObject {
       
-      var backgroundImageFile: js.UndefOr[DriveBackgroundImageFile] = js.native
+      var backgroundImageFile: js.UndefOr[DriveBackgroundImageFile] = js.undefined
       
-      var backgroundImageLink: js.UndefOr[String] = js.native
+      var backgroundImageLink: js.UndefOr[String] = js.undefined
       
-      var capabilities: js.UndefOr[DriveCapabilities] = js.native
+      var capabilities: js.UndefOr[DriveCapabilities] = js.undefined
       
-      var colorRgb: js.UndefOr[String] = js.native
+      var colorRgb: js.UndefOr[String] = js.undefined
       
-      var createdDate: js.UndefOr[String] = js.native
+      var createdDate: js.UndefOr[String] = js.undefined
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var restrictions: js.UndefOr[DriveRestrictions] = js.native
+      var restrictions: js.UndefOr[DriveRestrictions] = js.undefined
       
-      var themeId: js.UndefOr[String] = js.native
+      var themeId: js.UndefOr[String] = js.undefined
     }
     object Drive {
       
@@ -3176,16 +3163,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait DriveBackgroundImageFile extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
       
-      var xCoordinate: js.UndefOr[Double] = js.native
+      var xCoordinate: js.UndefOr[Double] = js.undefined
       
-      var yCoordinate: js.UndefOr[Double] = js.native
+      var yCoordinate: js.UndefOr[Double] = js.undefined
     }
     object DriveBackgroundImageFile {
       
@@ -3224,44 +3210,43 @@ object Drive {
       }
     }
     
-    @js.native
     trait DriveCapabilities extends StObject {
       
-      var canAddChildren: js.UndefOr[Boolean] = js.native
+      var canAddChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.native
+      var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.native
+      var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeDriveBackground: js.UndefOr[Boolean] = js.native
+      var canChangeDriveBackground: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeDriveMembersOnlyRestriction: js.UndefOr[Boolean] = js.native
+      var canChangeDriveMembersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
       
-      var canComment: js.UndefOr[Boolean] = js.native
+      var canComment: js.UndefOr[Boolean] = js.undefined
       
-      var canCopy: js.UndefOr[Boolean] = js.native
+      var canCopy: js.UndefOr[Boolean] = js.undefined
       
-      var canDeleteChildren: js.UndefOr[Boolean] = js.native
+      var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canDeleteDrive: js.UndefOr[Boolean] = js.native
+      var canDeleteDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canDownload: js.UndefOr[Boolean] = js.native
+      var canDownload: js.UndefOr[Boolean] = js.undefined
       
-      var canEdit: js.UndefOr[Boolean] = js.native
+      var canEdit: js.UndefOr[Boolean] = js.undefined
       
-      var canListChildren: js.UndefOr[Boolean] = js.native
+      var canListChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canManageMembers: js.UndefOr[Boolean] = js.native
+      var canManageMembers: js.UndefOr[Boolean] = js.undefined
       
-      var canReadRevisions: js.UndefOr[Boolean] = js.native
+      var canReadRevisions: js.UndefOr[Boolean] = js.undefined
       
-      var canRename: js.UndefOr[Boolean] = js.native
+      var canRename: js.UndefOr[Boolean] = js.undefined
       
-      var canRenameDrive: js.UndefOr[Boolean] = js.native
+      var canRenameDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canShare: js.UndefOr[Boolean] = js.native
+      var canShare: js.UndefOr[Boolean] = js.undefined
       
-      var canTrashChildren: js.UndefOr[Boolean] = js.native
+      var canTrashChildren: js.UndefOr[Boolean] = js.undefined
     }
     object DriveCapabilities {
       
@@ -3384,14 +3369,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait DriveList extends StObject {
       
-      var items: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive]] = js.native
+      var items: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object DriveList {
       
@@ -3427,16 +3411,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait DriveRestrictions extends StObject {
       
-      var adminManagedRestrictions: js.UndefOr[Boolean] = js.native
+      var adminManagedRestrictions: js.UndefOr[Boolean] = js.undefined
       
-      var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+      var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
       
-      var domainUsersOnly: js.UndefOr[Boolean] = js.native
+      var domainUsersOnly: js.UndefOr[Boolean] = js.undefined
       
-      var driveMembersOnly: js.UndefOr[Boolean] = js.native
+      var driveMembersOnly: js.UndefOr[Boolean] = js.undefined
     }
     object DriveRestrictions {
       
@@ -3475,144 +3458,143 @@ object Drive {
       }
     }
     
-    @js.native
     trait File extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var appDataContents: js.UndefOr[Boolean] = js.native
+      var appDataContents: js.UndefOr[Boolean] = js.undefined
       
-      var canComment: js.UndefOr[Boolean] = js.native
+      var canComment: js.UndefOr[Boolean] = js.undefined
       
-      var canReadRevisions: js.UndefOr[Boolean] = js.native
+      var canReadRevisions: js.UndefOr[Boolean] = js.undefined
       
-      var capabilities: js.UndefOr[FileCapabilities] = js.native
+      var capabilities: js.UndefOr[FileCapabilities] = js.undefined
       
-      var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+      var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
       
-      var copyable: js.UndefOr[Boolean] = js.native
+      var copyable: js.UndefOr[Boolean] = js.undefined
       
-      var createdDate: js.UndefOr[String] = js.native
+      var createdDate: js.UndefOr[String] = js.undefined
       
-      var defaultOpenWithLink: js.UndefOr[String] = js.native
+      var defaultOpenWithLink: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var downloadUrl: js.UndefOr[String] = js.native
+      var downloadUrl: js.UndefOr[String] = js.undefined
       
-      var driveId: js.UndefOr[String] = js.native
+      var driveId: js.UndefOr[String] = js.undefined
       
-      var editable: js.UndefOr[Boolean] = js.native
+      var editable: js.UndefOr[Boolean] = js.undefined
       
-      var embedLink: js.UndefOr[String] = js.native
+      var embedLink: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var explicitlyTrashed: js.UndefOr[Boolean] = js.native
+      var explicitlyTrashed: js.UndefOr[Boolean] = js.undefined
       
-      var exportLinks: js.UndefOr[js.Object] = js.native
+      var exportLinks: js.UndefOr[js.Object] = js.undefined
       
-      var fileExtension: js.UndefOr[String] = js.native
+      var fileExtension: js.UndefOr[String] = js.undefined
       
-      var fileSize: js.UndefOr[String] = js.native
+      var fileSize: js.UndefOr[String] = js.undefined
       
-      var folderColorRgb: js.UndefOr[String] = js.native
+      var folderColorRgb: js.UndefOr[String] = js.undefined
       
-      var fullFileExtension: js.UndefOr[String] = js.native
+      var fullFileExtension: js.UndefOr[String] = js.undefined
       
-      var hasAugmentedPermissions: js.UndefOr[Boolean] = js.native
+      var hasAugmentedPermissions: js.UndefOr[Boolean] = js.undefined
       
-      var hasThumbnail: js.UndefOr[Boolean] = js.native
+      var hasThumbnail: js.UndefOr[Boolean] = js.undefined
       
-      var headRevisionId: js.UndefOr[String] = js.native
+      var headRevisionId: js.UndefOr[String] = js.undefined
       
-      var iconLink: js.UndefOr[String] = js.native
+      var iconLink: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var imageMediaMetadata: js.UndefOr[FileImageMediaMetadata] = js.native
+      var imageMediaMetadata: js.UndefOr[FileImageMediaMetadata] = js.undefined
       
-      var indexableText: js.UndefOr[FileIndexableText] = js.native
+      var indexableText: js.UndefOr[FileIndexableText] = js.undefined
       
-      var isAppAuthorized: js.UndefOr[Boolean] = js.native
+      var isAppAuthorized: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var labels: js.UndefOr[FileLabels] = js.native
+      var labels: js.UndefOr[FileLabels] = js.undefined
       
-      var lastModifyingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var lastModifyingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
       
-      var lastModifyingUserName: js.UndefOr[String] = js.native
+      var lastModifyingUserName: js.UndefOr[String] = js.undefined
       
-      var lastViewedByMeDate: js.UndefOr[String] = js.native
+      var lastViewedByMeDate: js.UndefOr[String] = js.undefined
       
-      var markedViewedByMeDate: js.UndefOr[String] = js.native
+      var markedViewedByMeDate: js.UndefOr[String] = js.undefined
       
-      var md5Checksum: js.UndefOr[String] = js.native
+      var md5Checksum: js.UndefOr[String] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var modifiedByMeDate: js.UndefOr[String] = js.native
+      var modifiedByMeDate: js.UndefOr[String] = js.undefined
       
-      var modifiedDate: js.UndefOr[String] = js.native
+      var modifiedDate: js.UndefOr[String] = js.undefined
       
-      var openWithLinks: js.UndefOr[js.Object] = js.native
+      var openWithLinks: js.UndefOr[js.Object] = js.undefined
       
-      var originalFilename: js.UndefOr[String] = js.native
+      var originalFilename: js.UndefOr[String] = js.undefined
       
-      var ownedByMe: js.UndefOr[Boolean] = js.native
+      var ownedByMe: js.UndefOr[Boolean] = js.undefined
       
-      var ownerNames: js.UndefOr[js.Array[String]] = js.native
+      var ownerNames: js.UndefOr[js.Array[String]] = js.undefined
       
-      var owners: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User]] = js.native
+      var owners: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User]] = js.undefined
       
-      var parents: js.UndefOr[js.Array[ParentReference]] = js.native
+      var parents: js.UndefOr[js.Array[ParentReference]] = js.undefined
       
-      var permissionIds: js.UndefOr[js.Array[String]] = js.native
+      var permissionIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var permissions: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission]] = js.native
+      var permissions: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission]] = js.undefined
       
-      var properties: js.UndefOr[js.Array[Property]] = js.native
+      var properties: js.UndefOr[js.Array[Property]] = js.undefined
       
-      var quotaBytesUsed: js.UndefOr[String] = js.native
+      var quotaBytesUsed: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var shareable: js.UndefOr[Boolean] = js.native
+      var shareable: js.UndefOr[Boolean] = js.undefined
       
-      var shared: js.UndefOr[Boolean] = js.native
+      var shared: js.UndefOr[Boolean] = js.undefined
       
-      var sharedWithMeDate: js.UndefOr[String] = js.native
+      var sharedWithMeDate: js.UndefOr[String] = js.undefined
       
-      var sharingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var sharingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
       
-      var spaces: js.UndefOr[js.Array[String]] = js.native
+      var spaces: js.UndefOr[js.Array[String]] = js.undefined
       
-      var teamDriveId: js.UndefOr[String] = js.native
+      var teamDriveId: js.UndefOr[String] = js.undefined
       
-      var thumbnail: js.UndefOr[FileThumbnail] = js.native
+      var thumbnail: js.UndefOr[FileThumbnail] = js.undefined
       
-      var thumbnailLink: js.UndefOr[String] = js.native
+      var thumbnailLink: js.UndefOr[String] = js.undefined
       
-      var thumbnailVersion: js.UndefOr[String] = js.native
+      var thumbnailVersion: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var trashedDate: js.UndefOr[String] = js.native
+      var trashedDate: js.UndefOr[String] = js.undefined
       
-      var trashingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var trashingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
       
-      var userPermission: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission] = js.native
+      var userPermission: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission] = js.undefined
       
-      var version: js.UndefOr[String] = js.native
+      var version: js.UndefOr[String] = js.undefined
       
-      var videoMediaMetadata: js.UndefOr[FileVideoMediaMetadata] = js.native
+      var videoMediaMetadata: js.UndefOr[FileVideoMediaMetadata] = js.undefined
       
-      var webContentLink: js.UndefOr[String] = js.native
+      var webContentLink: js.UndefOr[String] = js.undefined
       
-      var webViewLink: js.UndefOr[String] = js.native
+      var webViewLink: js.UndefOr[String] = js.undefined
       
-      var writersCanShare: js.UndefOr[Boolean] = js.native
+      var writersCanShare: js.UndefOr[Boolean] = js.undefined
     }
     object File {
       
@@ -4056,66 +4038,65 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileCapabilities extends StObject {
       
-      var canAddChildren: js.UndefOr[Boolean] = js.native
+      var canAddChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeCopyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+      var canChangeCopyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeRestrictedDownload: js.UndefOr[Boolean] = js.native
+      var canChangeRestrictedDownload: js.UndefOr[Boolean] = js.undefined
       
-      var canComment: js.UndefOr[Boolean] = js.native
+      var canComment: js.UndefOr[Boolean] = js.undefined
       
-      var canCopy: js.UndefOr[Boolean] = js.native
+      var canCopy: js.UndefOr[Boolean] = js.undefined
       
-      var canDelete: js.UndefOr[Boolean] = js.native
+      var canDelete: js.UndefOr[Boolean] = js.undefined
       
-      var canDeleteChildren: js.UndefOr[Boolean] = js.native
+      var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canDownload: js.UndefOr[Boolean] = js.native
+      var canDownload: js.UndefOr[Boolean] = js.undefined
       
-      var canEdit: js.UndefOr[Boolean] = js.native
+      var canEdit: js.UndefOr[Boolean] = js.undefined
       
-      var canListChildren: js.UndefOr[Boolean] = js.native
+      var canListChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveChildrenOutOfDrive: js.UndefOr[Boolean] = js.native
+      var canMoveChildrenOutOfDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveChildrenOutOfTeamDrive: js.UndefOr[Boolean] = js.native
+      var canMoveChildrenOutOfTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveChildrenWithinDrive: js.UndefOr[Boolean] = js.native
+      var canMoveChildrenWithinDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveChildrenWithinTeamDrive: js.UndefOr[Boolean] = js.native
+      var canMoveChildrenWithinTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveItemIntoTeamDrive: js.UndefOr[Boolean] = js.native
+      var canMoveItemIntoTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveItemOutOfDrive: js.UndefOr[Boolean] = js.native
+      var canMoveItemOutOfDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveItemOutOfTeamDrive: js.UndefOr[Boolean] = js.native
+      var canMoveItemOutOfTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveItemWithinDrive: js.UndefOr[Boolean] = js.native
+      var canMoveItemWithinDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveItemWithinTeamDrive: js.UndefOr[Boolean] = js.native
+      var canMoveItemWithinTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canMoveTeamDriveItem: js.UndefOr[Boolean] = js.native
+      var canMoveTeamDriveItem: js.UndefOr[Boolean] = js.undefined
       
-      var canReadDrive: js.UndefOr[Boolean] = js.native
+      var canReadDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canReadRevisions: js.UndefOr[Boolean] = js.native
+      var canReadRevisions: js.UndefOr[Boolean] = js.undefined
       
-      var canReadTeamDrive: js.UndefOr[Boolean] = js.native
+      var canReadTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canRemoveChildren: js.UndefOr[Boolean] = js.native
+      var canRemoveChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canRename: js.UndefOr[Boolean] = js.native
+      var canRename: js.UndefOr[Boolean] = js.undefined
       
-      var canShare: js.UndefOr[Boolean] = js.native
+      var canShare: js.UndefOr[Boolean] = js.undefined
       
-      var canTrash: js.UndefOr[Boolean] = js.native
+      var canTrash: js.UndefOr[Boolean] = js.undefined
       
-      var canTrashChildren: js.UndefOr[Boolean] = js.native
+      var canTrashChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canUntrash: js.UndefOr[Boolean] = js.native
+      var canUntrash: js.UndefOr[Boolean] = js.undefined
     }
     object FileCapabilities {
       
@@ -4304,50 +4285,49 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileImageMediaMetadata extends StObject {
       
-      var aperture: js.UndefOr[Double] = js.native
+      var aperture: js.UndefOr[Double] = js.undefined
       
-      var cameraMake: js.UndefOr[String] = js.native
+      var cameraMake: js.UndefOr[String] = js.undefined
       
-      var cameraModel: js.UndefOr[String] = js.native
+      var cameraModel: js.UndefOr[String] = js.undefined
       
-      var colorSpace: js.UndefOr[String] = js.native
+      var colorSpace: js.UndefOr[String] = js.undefined
       
-      var date: js.UndefOr[String] = js.native
+      var date: js.UndefOr[String] = js.undefined
       
-      var exposureBias: js.UndefOr[Double] = js.native
+      var exposureBias: js.UndefOr[Double] = js.undefined
       
-      var exposureMode: js.UndefOr[String] = js.native
+      var exposureMode: js.UndefOr[String] = js.undefined
       
-      var exposureTime: js.UndefOr[Double] = js.native
+      var exposureTime: js.UndefOr[Double] = js.undefined
       
-      var flashUsed: js.UndefOr[Boolean] = js.native
+      var flashUsed: js.UndefOr[Boolean] = js.undefined
       
-      var focalLength: js.UndefOr[Double] = js.native
+      var focalLength: js.UndefOr[Double] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var isoSpeed: js.UndefOr[Double] = js.native
+      var isoSpeed: js.UndefOr[Double] = js.undefined
       
-      var lens: js.UndefOr[String] = js.native
+      var lens: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[FileImageMediaMetadataLocation] = js.native
+      var location: js.UndefOr[FileImageMediaMetadataLocation] = js.undefined
       
-      var maxApertureValue: js.UndefOr[Double] = js.native
+      var maxApertureValue: js.UndefOr[Double] = js.undefined
       
-      var meteringMode: js.UndefOr[String] = js.native
+      var meteringMode: js.UndefOr[String] = js.undefined
       
-      var rotation: js.UndefOr[Double] = js.native
+      var rotation: js.UndefOr[Double] = js.undefined
       
-      var sensor: js.UndefOr[String] = js.native
+      var sensor: js.UndefOr[String] = js.undefined
       
-      var subjectDistance: js.UndefOr[Double] = js.native
+      var subjectDistance: js.UndefOr[Double] = js.undefined
       
-      var whiteBalance: js.UndefOr[String] = js.native
+      var whiteBalance: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object FileImageMediaMetadata {
       
@@ -4488,14 +4468,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileImageMediaMetadataLocation extends StObject {
       
-      var altitude: js.UndefOr[Double] = js.native
+      var altitude: js.UndefOr[Double] = js.undefined
       
-      var latitude: js.UndefOr[Double] = js.native
+      var latitude: js.UndefOr[Double] = js.undefined
       
-      var longitude: js.UndefOr[Double] = js.native
+      var longitude: js.UndefOr[Double] = js.undefined
     }
     object FileImageMediaMetadataLocation {
       
@@ -4528,10 +4507,9 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileIndexableText extends StObject {
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
     }
     object FileIndexableText {
       
@@ -4552,20 +4530,19 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileLabels extends StObject {
       
-      var hidden: js.UndefOr[Boolean] = js.native
+      var hidden: js.UndefOr[Boolean] = js.undefined
       
-      var modified: js.UndefOr[Boolean] = js.native
+      var modified: js.UndefOr[Boolean] = js.undefined
       
-      var restricted: js.UndefOr[Boolean] = js.native
+      var restricted: js.UndefOr[Boolean] = js.undefined
       
-      var starred: js.UndefOr[Boolean] = js.native
+      var starred: js.UndefOr[Boolean] = js.undefined
       
-      var trashed: js.UndefOr[Boolean] = js.native
+      var trashed: js.UndefOr[Boolean] = js.undefined
       
-      var viewed: js.UndefOr[Boolean] = js.native
+      var viewed: js.UndefOr[Boolean] = js.undefined
     }
     object FileLabels {
       
@@ -4616,22 +4593,21 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var incompleteSearch: js.UndefOr[Boolean] = js.native
+      var incompleteSearch: js.UndefOr[Boolean] = js.undefined
       
-      var items: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File]] = js.native
+      var items: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextLink: js.UndefOr[String] = js.native
+      var nextLink: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object FileList {
       
@@ -4691,12 +4667,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileThumbnail extends StObject {
       
-      var image: js.UndefOr[String] = js.native
+      var image: js.UndefOr[String] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
     }
     object FileThumbnail {
       
@@ -4723,14 +4698,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait FileVideoMediaMetadata extends StObject {
       
-      var durationMillis: js.UndefOr[String] = js.native
+      var durationMillis: js.UndefOr[String] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object FileVideoMediaMetadata {
       
@@ -4763,14 +4737,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait GeneratedIds extends StObject {
       
-      var ids: js.UndefOr[js.Array[String]] = js.native
+      var ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var space: js.UndefOr[String] = js.native
+      var space: js.UndefOr[String] = js.undefined
     }
     object GeneratedIds {
       
@@ -4806,16 +4779,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait ParentList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[ParentReference]] = js.native
+      var items: js.UndefOr[js.Array[ParentReference]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object ParentList {
       
@@ -4857,18 +4829,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait ParentReference extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isRoot: js.UndefOr[Boolean] = js.native
+      var isRoot: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var parentLink: js.UndefOr[String] = js.native
+      var parentLink: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object ParentReference {
       
@@ -4913,44 +4884,43 @@ object Drive {
       }
     }
     
-    @js.native
     trait Permission extends StObject {
       
-      var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+      var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var authKey: js.UndefOr[String] = js.native
+      var authKey: js.UndefOr[String] = js.undefined
       
-      var deleted: js.UndefOr[Boolean] = js.native
+      var deleted: js.UndefOr[Boolean] = js.undefined
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var expirationDate: js.UndefOr[String] = js.native
+      var expirationDate: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var permissionDetails: js.UndefOr[js.Array[PermissionPermissionDetails]] = js.native
+      var permissionDetails: js.UndefOr[js.Array[PermissionPermissionDetails]] = js.undefined
       
-      var photoLink: js.UndefOr[String] = js.native
+      var photoLink: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var teamDrivePermissionDetails: js.UndefOr[js.Array[PermissionTeamDrivePermissionDetails]] = js.native
+      var teamDrivePermissionDetails: js.UndefOr[js.Array[PermissionTeamDrivePermissionDetails]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
       
-      var withLink: js.UndefOr[Boolean] = js.native
+      var withLink: js.UndefOr[Boolean] = js.undefined
     }
     object Permission {
       
@@ -5082,12 +5052,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait PermissionId extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object PermissionId {
       
@@ -5114,18 +5083,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait PermissionList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission]] = js.native
+      var items: js.UndefOr[js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object PermissionList {
       
@@ -5173,18 +5141,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait PermissionPermissionDetails extends StObject {
       
-      var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+      var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var inherited: js.UndefOr[Boolean] = js.native
+      var inherited: js.UndefOr[Boolean] = js.undefined
       
-      var inheritedFrom: js.UndefOr[String] = js.native
+      var inheritedFrom: js.UndefOr[String] = js.undefined
       
-      var permissionType: js.UndefOr[String] = js.native
+      var permissionType: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
     }
     object PermissionPermissionDetails {
       
@@ -5232,18 +5199,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait PermissionTeamDrivePermissionDetails extends StObject {
       
-      var additionalRoles: js.UndefOr[js.Array[String]] = js.native
+      var additionalRoles: js.UndefOr[js.Array[String]] = js.undefined
       
-      var inherited: js.UndefOr[Boolean] = js.native
+      var inherited: js.UndefOr[Boolean] = js.undefined
       
-      var inheritedFrom: js.UndefOr[String] = js.native
+      var inheritedFrom: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var teamDrivePermissionType: js.UndefOr[String] = js.native
+      var teamDrivePermissionType: js.UndefOr[String] = js.undefined
     }
     object PermissionTeamDrivePermissionDetails {
       
@@ -5291,20 +5257,19 @@ object Drive {
       }
     }
     
-    @js.native
     trait Property extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
       
-      var visibility: js.UndefOr[String] = js.native
+      var visibility: js.UndefOr[String] = js.undefined
     }
     object Property {
       
@@ -5355,16 +5320,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait PropertyList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Property]] = js.native
+      var items: js.UndefOr[js.Array[Property]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object PropertyList {
       
@@ -5406,44 +5370,43 @@ object Drive {
       }
     }
     
-    @js.native
     trait Revision extends StObject {
       
-      var downloadUrl: js.UndefOr[String] = js.native
+      var downloadUrl: js.UndefOr[String] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var exportLinks: js.UndefOr[js.Object] = js.native
+      var exportLinks: js.UndefOr[js.Object] = js.undefined
       
-      var fileSize: js.UndefOr[String] = js.native
+      var fileSize: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var lastModifyingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.native
+      var lastModifyingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
       
-      var lastModifyingUserName: js.UndefOr[String] = js.native
+      var lastModifyingUserName: js.UndefOr[String] = js.undefined
       
-      var md5Checksum: js.UndefOr[String] = js.native
+      var md5Checksum: js.UndefOr[String] = js.undefined
       
-      var mimeType: js.UndefOr[String] = js.native
+      var mimeType: js.UndefOr[String] = js.undefined
       
-      var modifiedDate: js.UndefOr[String] = js.native
+      var modifiedDate: js.UndefOr[String] = js.undefined
       
-      var originalFilename: js.UndefOr[String] = js.native
+      var originalFilename: js.UndefOr[String] = js.undefined
       
-      var pinned: js.UndefOr[Boolean] = js.native
+      var pinned: js.UndefOr[Boolean] = js.undefined
       
-      var publishAuto: js.UndefOr[Boolean] = js.native
+      var publishAuto: js.UndefOr[Boolean] = js.undefined
       
-      var published: js.UndefOr[Boolean] = js.native
+      var published: js.UndefOr[Boolean] = js.undefined
       
-      var publishedLink: js.UndefOr[String] = js.native
+      var publishedLink: js.UndefOr[String] = js.undefined
       
-      var publishedOutsideDomain: js.UndefOr[Boolean] = js.native
+      var publishedOutsideDomain: js.UndefOr[Boolean] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object Revision {
       
@@ -5566,18 +5529,17 @@ object Drive {
       }
     }
     
-    @js.native
     trait RevisionList extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Revision]] = js.native
+      var items: js.UndefOr[js.Array[Revision]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
     }
     object RevisionList {
       
@@ -5625,12 +5587,11 @@ object Drive {
       }
     }
     
-    @js.native
     trait StartPageToken extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var startPageToken: js.UndefOr[String] = js.native
+      var startPageToken: js.UndefOr[String] = js.undefined
     }
     object StartPageToken {
       
@@ -5657,28 +5618,27 @@ object Drive {
       }
     }
     
-    @js.native
     trait TeamDrive extends StObject {
       
-      var backgroundImageFile: js.UndefOr[TeamDriveBackgroundImageFile] = js.native
+      var backgroundImageFile: js.UndefOr[TeamDriveBackgroundImageFile] = js.undefined
       
-      var backgroundImageLink: js.UndefOr[String] = js.native
+      var backgroundImageLink: js.UndefOr[String] = js.undefined
       
-      var capabilities: js.UndefOr[TeamDriveCapabilities] = js.native
+      var capabilities: js.UndefOr[TeamDriveCapabilities] = js.undefined
       
-      var colorRgb: js.UndefOr[String] = js.native
+      var colorRgb: js.UndefOr[String] = js.undefined
       
-      var createdDate: js.UndefOr[String] = js.native
+      var createdDate: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var restrictions: js.UndefOr[TeamDriveRestrictions] = js.native
+      var restrictions: js.UndefOr[TeamDriveRestrictions] = js.undefined
       
-      var themeId: js.UndefOr[String] = js.native
+      var themeId: js.UndefOr[String] = js.undefined
     }
     object TeamDrive {
       
@@ -5753,16 +5713,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait TeamDriveBackgroundImageFile extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
       
-      var xCoordinate: js.UndefOr[Double] = js.native
+      var xCoordinate: js.UndefOr[Double] = js.undefined
       
-      var yCoordinate: js.UndefOr[Double] = js.native
+      var yCoordinate: js.UndefOr[Double] = js.undefined
     }
     object TeamDriveBackgroundImageFile {
       
@@ -5801,46 +5760,45 @@ object Drive {
       }
     }
     
-    @js.native
     trait TeamDriveCapabilities extends StObject {
       
-      var canAddChildren: js.UndefOr[Boolean] = js.native
+      var canAddChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.native
+      var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.native
+      var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeTeamDriveBackground: js.UndefOr[Boolean] = js.native
+      var canChangeTeamDriveBackground: js.UndefOr[Boolean] = js.undefined
       
-      var canChangeTeamMembersOnlyRestriction: js.UndefOr[Boolean] = js.native
+      var canChangeTeamMembersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
       
-      var canComment: js.UndefOr[Boolean] = js.native
+      var canComment: js.UndefOr[Boolean] = js.undefined
       
-      var canCopy: js.UndefOr[Boolean] = js.native
+      var canCopy: js.UndefOr[Boolean] = js.undefined
       
-      var canDeleteChildren: js.UndefOr[Boolean] = js.native
+      var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canDeleteTeamDrive: js.UndefOr[Boolean] = js.native
+      var canDeleteTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canDownload: js.UndefOr[Boolean] = js.native
+      var canDownload: js.UndefOr[Boolean] = js.undefined
       
-      var canEdit: js.UndefOr[Boolean] = js.native
+      var canEdit: js.UndefOr[Boolean] = js.undefined
       
-      var canListChildren: js.UndefOr[Boolean] = js.native
+      var canListChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canManageMembers: js.UndefOr[Boolean] = js.native
+      var canManageMembers: js.UndefOr[Boolean] = js.undefined
       
-      var canReadRevisions: js.UndefOr[Boolean] = js.native
+      var canReadRevisions: js.UndefOr[Boolean] = js.undefined
       
-      var canRemoveChildren: js.UndefOr[Boolean] = js.native
+      var canRemoveChildren: js.UndefOr[Boolean] = js.undefined
       
-      var canRename: js.UndefOr[Boolean] = js.native
+      var canRename: js.UndefOr[Boolean] = js.undefined
       
-      var canRenameTeamDrive: js.UndefOr[Boolean] = js.native
+      var canRenameTeamDrive: js.UndefOr[Boolean] = js.undefined
       
-      var canShare: js.UndefOr[Boolean] = js.native
+      var canShare: js.UndefOr[Boolean] = js.undefined
       
-      var canTrashChildren: js.UndefOr[Boolean] = js.native
+      var canTrashChildren: js.UndefOr[Boolean] = js.undefined
     }
     object TeamDriveCapabilities {
       
@@ -5969,14 +5927,13 @@ object Drive {
       }
     }
     
-    @js.native
     trait TeamDriveList extends StObject {
       
-      var items: js.UndefOr[js.Array[TeamDrive]] = js.native
+      var items: js.UndefOr[js.Array[TeamDrive]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object TeamDriveList {
       
@@ -6012,16 +5969,15 @@ object Drive {
       }
     }
     
-    @js.native
     trait TeamDriveRestrictions extends StObject {
       
-      var adminManagedRestrictions: js.UndefOr[Boolean] = js.native
+      var adminManagedRestrictions: js.UndefOr[Boolean] = js.undefined
       
-      var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+      var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
       
-      var domainUsersOnly: js.UndefOr[Boolean] = js.native
+      var domainUsersOnly: js.UndefOr[Boolean] = js.undefined
       
-      var teamMembersOnly: js.UndefOr[Boolean] = js.native
+      var teamMembersOnly: js.UndefOr[Boolean] = js.undefined
     }
     object TeamDriveRestrictions {
       
@@ -6060,20 +6016,19 @@ object Drive {
       }
     }
     
-    @js.native
     trait User extends StObject {
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var isAuthenticatedUser: js.UndefOr[Boolean] = js.native
+      var isAuthenticatedUser: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var permissionId: js.UndefOr[String] = js.native
+      var permissionId: js.UndefOr[String] = js.undefined
       
-      var picture: js.UndefOr[UserPicture] = js.native
+      var picture: js.UndefOr[UserPicture] = js.undefined
     }
     object User {
       
@@ -6124,10 +6079,9 @@ object Drive {
       }
     }
     
-    @js.native
     trait UserPicture extends StObject {
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object UserPicture {
       
@@ -6159,11 +6113,10 @@ object Drive {
     *       Logger.log(editors[i].getEmail());
     *     }
     */
-  @js.native
   trait User extends StObject {
     
     /** Gets the domain name associated with the user's account. */
-    def getDomain(): String = js.native
+    def getDomain(): String
     
     /**
       * Gets the user's email address. The user's email address is only available
@@ -6172,15 +6125,15 @@ object Drive {
       * and the domain administrator has allowed all users within the domain to see
       * other users' email addresses.
       */
-    def getEmail(): String = js.native
+    def getEmail(): String
     
     /** Gets the user's name. This method returns null if the user's name is not available. */
-    def getName(): String = js.native
+    def getName(): String
     
     /** Gets the URL for the user's photo. This method returns null if the user's photo is not available. */
-    def getPhotoUrl(): String = js.native
+    def getPhotoUrl(): String
     
-    /** @deprecated DO NOT USE */ def getUserLoginId(): String = js.native
+    /** @deprecated DO NOT USE */ def getUserLoginId(): String
   }
   object User {
     

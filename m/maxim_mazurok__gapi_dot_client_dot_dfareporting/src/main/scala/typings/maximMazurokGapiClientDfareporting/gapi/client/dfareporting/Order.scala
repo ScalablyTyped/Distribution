@@ -2,71 +2,69 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
   /** Account ID of this order. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Advertiser ID of this order. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** IDs for users that have to approve documents created for this order. */
-  var approverUserProfileIds: js.UndefOr[js.Array[String]] = js.native
+  var approverUserProfileIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Buyer invoice ID associated with this order. */
-  var buyerInvoiceId: js.UndefOr[String] = js.native
+  var buyerInvoiceId: js.UndefOr[String] = js.undefined
   
   /** Name of the buyer organization. */
-  var buyerOrganizationName: js.UndefOr[String] = js.native
+  var buyerOrganizationName: js.UndefOr[String] = js.undefined
   
   /** Comments in this order. */
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
   /** Contacts for this order. */
-  var contacts: js.UndefOr[js.Array[OrderContact]] = js.native
+  var contacts: js.UndefOr[js.Array[OrderContact]] = js.undefined
   
   /** ID of this order. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#order". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Information about the most recent modification of this order. */
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   
   /** Name of this order. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Notes of this order. */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /** ID of the terms and conditions template used in this order. */
-  var planningTermId: js.UndefOr[String] = js.native
+  var planningTermId: js.UndefOr[String] = js.undefined
   
   /** Project ID of this order. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Seller order ID associated with this order. */
-  var sellerOrderId: js.UndefOr[String] = js.native
+  var sellerOrderId: js.UndefOr[String] = js.undefined
   
   /** Name of the seller organization. */
-  var sellerOrganizationName: js.UndefOr[String] = js.native
+  var sellerOrganizationName: js.UndefOr[String] = js.undefined
   
   /** Site IDs this order is associated with. */
-  var siteId: js.UndefOr[js.Array[String]] = js.native
+  var siteId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Free-form site names this order is associated with. */
-  var siteNames: js.UndefOr[js.Array[String]] = js.native
+  var siteNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Subaccount ID of this order. */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /** Terms and conditions of this order. */
-  var termsAndConditions: js.UndefOr[String] = js.native
+  var termsAndConditions: js.UndefOr[String] = js.undefined
 }
 object Order {
   

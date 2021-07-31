@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRealtimeEndpointInput extends StObject {
   
   /**
     * The ID assigned to the MLModel during creation.
     */
-  var MLModelId: EntityId = js.native
+  var MLModelId: EntityId
 }
 object CreateRealtimeEndpointInput {
   

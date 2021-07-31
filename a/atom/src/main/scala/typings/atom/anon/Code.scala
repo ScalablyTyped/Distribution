@@ -2,17 +2,15 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var stderr: String = js.native
+  var stderr: String
   
-  var stdout: String = js.native
+  var stdout: String
 }
 object Code {
   

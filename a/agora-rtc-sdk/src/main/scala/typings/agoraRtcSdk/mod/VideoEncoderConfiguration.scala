@@ -4,7 +4,6 @@ import typings.agoraRtcSdk.anon.Height
 import typings.agoraRtcSdk.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Depending on the OS, browser, and camera, the actual resolution, frame rate, and bitrate might be different from the set values.
   */
-@js.native
 trait VideoEncoderConfiguration extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait VideoEncoderConfiguration extends StObject {
     *
     * [[include:VideoProfileDefinition.md]]
     */
-  var bitrate: js.UndefOr[Max] = js.native
+  var bitrate: js.UndefOr[Max] = js.undefined
   
   /**
     * The video frame rate (fps).
@@ -35,7 +33,7 @@ trait VideoEncoderConfiguration extends StObject {
     * - This parameter sets the local capturing video frame rate. The actual encoding frame rate depends on the device, system, and browser.
     * - When the network conditions change, the browser adjusts the encoding frame rate automatically.
     */
-  var frameRate: js.UndefOr[Max] = js.native
+  var frameRate: js.UndefOr[Max] = js.undefined
   
   /**
     * Resolution of the video.
@@ -47,7 +45,7 @@ trait VideoEncoderConfiguration extends StObject {
     * - 960 &times; 720
     *
     */
-  var resolution: js.UndefOr[Height] = js.native
+  var resolution: js.UndefOr[Height] = js.undefined
 }
 object VideoEncoderConfiguration {
   

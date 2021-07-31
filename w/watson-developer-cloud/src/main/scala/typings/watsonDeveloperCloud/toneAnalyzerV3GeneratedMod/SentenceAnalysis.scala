@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SentenceAnalysis. */
-@js.native
 trait SentenceAnalysis extends StObject {
   
   /** **`2017-09-21`:** Not returned. **`2016-05-19`:** The offset of the first character of the sentence in the overall input content. */
-  var input_from: js.UndefOr[Double] = js.native
+  var input_from: js.UndefOr[Double] = js.undefined
   
   /** **`2017-09-21`:** Not returned. **`2016-05-19`:** The offset of the last character of the sentence in the overall input content. */
-  var input_to: js.UndefOr[Double] = js.native
+  var input_to: js.UndefOr[Double] = js.undefined
   
   /** The unique identifier of a sentence of the input content. The first sentence has ID 0, and the ID of each subsequent sentence is incremented by one. */
-  var sentence_id: Double = js.native
+  var sentence_id: Double
   
   /** The text of the input sentence. */
-  var text: String = js.native
+  var text: String
   
   /** **`2017-09-21`:** Not returned. **`2016-05-19`:** An array of `ToneCategory` objects that provides the results of the tone analysis for the sentence. The service returns results only for the tones specified with the `tones` parameter of the request. */
-  var tone_categories: js.UndefOr[js.Array[ToneCategory]] = js.native
+  var tone_categories: js.UndefOr[js.Array[ToneCategory]] = js.undefined
   
   /** **`2017-09-21`:** An array of `ToneScore` objects that provides the results of the analysis for each qualifying tone of the sentence. The array includes results for any tone whose score is at least 0.5. The array is empty if no tone has a score that meets this threshold. **`2016-05-19`:** Not returned. */
-  var tones: js.UndefOr[js.Array[ToneScore]] = js.native
+  var tones: js.UndefOr[js.Array[ToneScore]] = js.undefined
 }
 object SentenceAnalysis {
   

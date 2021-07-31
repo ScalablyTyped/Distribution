@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeRampElement
-  extends Object
+  extends StObject
+     with Object
      with LegendElement {
   
   /**
@@ -17,21 +16,21 @@ trait SizeRampElement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
     */
-  var infos: js.Array[SizeRampStop] = js.native
+  var infos: js.Array[SizeRampStop]
   
   /**
     * The title of the size ramp as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
     */
-  var title: js.UndefOr[String | RampTitle] = js.native
+  var title: js.UndefOr[String | RampTitle] = js.undefined
   
   /**
     * The type of this element is always `size-ramp`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampElement)
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object SizeRampElement {
   

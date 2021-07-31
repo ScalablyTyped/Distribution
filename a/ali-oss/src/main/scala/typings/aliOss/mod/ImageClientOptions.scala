@@ -2,31 +2,29 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageClientOptions extends StObject {
   
   // your image service domain that binding to a OSS bucket
-  var accessKeyId: String = js.native
+  var accessKeyId: String
   
   // access key you create on aliyun console website
-  var accessKeySecret: String = js.native
+  var accessKeySecret: String
   
   // access secret you create
-  var bucket: String = js.native
+  var bucket: String
   
-  var imageHost: String = js.native
+  var imageHost: String
   
   // the bucket data region location, please see Data Regions, default is oss-cn-hangzhou
-  var internal: js.UndefOr[Boolean] = js.native
+  var internal: js.UndefOr[Boolean] = js.undefined
   
   //  the default bucket you want to access If you don't have any bucket, please use putBucket() create one first.
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   // access OSS with aliyun internal network or not, default is false If your servers are running on aliyun too, you can set true to save lot of money.
-  var timeout: js.UndefOr[String | Double] = js.native
+  var timeout: js.UndefOr[String | Double] = js.undefined
 }
 object ImageClientOptions {
   

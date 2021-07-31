@@ -2,13 +2,13 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectWrapper extends NativePointerValue {
+trait ObjectWrapper
+  extends StObject
+     with NativePointerValue {
   
-  var handle: NativePointer = js.native
+  var handle: NativePointer
 }
 object ObjectWrapper {
   

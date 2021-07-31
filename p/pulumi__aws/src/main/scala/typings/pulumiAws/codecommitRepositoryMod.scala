@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codecommitRepositoryMod {
@@ -69,6 +68,10 @@ object codecommitRepositoryMod {
   /* static members */
   object Repository {
     
+    @JSImport("@pulumi/aws/codecommit/repository", "Repository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Repository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -78,50 +81,44 @@ object codecommitRepositoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codecommit/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Repository = js.native
-    @JSImport("@pulumi/aws/codecommit/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Repository = js.native
-    @JSImport("@pulumi/aws/codecommit/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState): Repository = js.native
-    @JSImport("@pulumi/aws/codecommit/repository", "Repository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Repository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): Repository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Repository]
     
     /**
       * Returns true if the given object is an instance of Repository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codecommit/repository", "Repository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ Boolean]
   }
   
-  @js.native
   trait RepositoryArgs extends StObject {
     
     /**
       * The default branch of the repository. The branch specified here needs to exist.
       */
-    val defaultBranch: js.UndefOr[Input[String]] = js.native
+    val defaultBranch: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the repository. This needs to be less than 1000 characters
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the repository. This needs to be less than 100 characters.
       */
-    val repositoryName: Input[String] = js.native
+    val repositoryName: Input[String]
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RepositoryArgs {
     
@@ -157,48 +154,47 @@ object codecommitRepositoryMod {
     }
   }
   
-  @js.native
   trait RepositoryState extends StObject {
     
     /**
       * The ARN of the repository
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL to use for cloning the repository over HTTPS.
       */
-    val cloneUrlHttp: js.UndefOr[Input[String]] = js.native
+    val cloneUrlHttp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL to use for cloning the repository over SSH.
       */
-    val cloneUrlSsh: js.UndefOr[Input[String]] = js.native
+    val cloneUrlSsh: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default branch of the repository. The branch specified here needs to exist.
       */
-    val defaultBranch: js.UndefOr[Input[String]] = js.native
+    val defaultBranch: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the repository. This needs to be less than 1000 characters
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the repository
       */
-    val repositoryId: js.UndefOr[Input[String]] = js.native
+    val repositoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the repository. This needs to be less than 100 characters.
       */
-    val repositoryName: js.UndefOr[Input[String]] = js.native
+    val repositoryName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object RepositoryState {
     

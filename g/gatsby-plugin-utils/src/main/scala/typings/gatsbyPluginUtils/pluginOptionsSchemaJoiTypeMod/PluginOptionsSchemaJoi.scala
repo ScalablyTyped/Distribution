@@ -5,7 +5,6 @@ import typings.gatsbyPluginUtils.anon.Alternatives
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -114,8 +113,8 @@ trait PluginOptionsSchemaJoi extends StObject {
   /**
     * Creates a custom validation schema.
     */
-  def custom(fn: CustomValidator[_]): Schema = js.native
-  def custom(fn: CustomValidator[_], description: String): Schema = js.native
+  def custom(fn: CustomValidator[js.Any]): Schema = js.native
+  def custom(fn: CustomValidator[js.Any], description: String): Schema = js.native
   
   /**
     * Generates a schema object that matches a date type (as well as a JavaScript date string or number of milliseconds).

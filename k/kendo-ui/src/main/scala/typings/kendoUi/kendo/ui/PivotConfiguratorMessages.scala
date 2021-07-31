@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotConfiguratorMessages extends StObject {
   
-  var columns: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[String] = js.undefined
   
-  var columnsLabel: js.UndefOr[String] = js.native
+  var columnsLabel: js.UndefOr[String] = js.undefined
   
-  var fieldMenu: js.UndefOr[PivotConfiguratorMessagesFieldMenu] = js.native
+  var fieldMenu: js.UndefOr[PivotConfiguratorMessagesFieldMenu] = js.undefined
   
-  var fieldsLabel: js.UndefOr[String] = js.native
+  var fieldsLabel: js.UndefOr[String] = js.undefined
   
-  var measures: js.UndefOr[String] = js.native
+  var measures: js.UndefOr[String] = js.undefined
   
-  var measuresLabel: js.UndefOr[String] = js.native
+  var measuresLabel: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[String] = js.undefined
   
-  var rowsLabel: js.UndefOr[String] = js.native
+  var rowsLabel: js.UndefOr[String] = js.undefined
 }
 object PivotConfiguratorMessages {
   

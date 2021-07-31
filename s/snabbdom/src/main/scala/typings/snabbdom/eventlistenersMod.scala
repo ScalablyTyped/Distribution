@@ -21,7 +21,6 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventlistenersMod {
@@ -33,197 +32,197 @@ object eventlistenersMod {
   type Listener[T] = js.ThisFunction2[/* this */ VNode_, /* ev */ T, /* vnode */ VNode_, Unit]
   
   /* Inlined {[ N in keyof std.HTMLElementEventMap ]:? snabbdom.snabbdom/build/package/modules/eventlisteners.Listener<std.HTMLElementEventMap[N]> | std.Array<snabbdom.snabbdom/build/package/modules/eventlisteners.Listener<std.HTMLElementEventMap[N]>>} & {[event: string] : snabbdom.snabbdom/build/package/modules/eventlisteners.Listener<any> | std.Array<snabbdom.snabbdom/build/package/modules/eventlisteners.Listener<any>>} */
-  @js.native
   trait On
-    extends /* event */ StringDictionary[Listener[_] | js.Array[Listener[_]]] {
+    extends StObject
+       with /* event */ StringDictionary[Listener[js.Any] | js.Array[Listener[js.Any]]] {
     
-    var abort: js.UndefOr[Listener[UIEvent] | js.Array[Listener[UIEvent]]] = js.native
+    var abort: js.UndefOr[Listener[UIEvent] | js.Array[Listener[UIEvent]]] = js.undefined
     
-    var animationcancel: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.native
+    var animationcancel: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.undefined
     
-    var animationend: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.native
+    var animationend: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.undefined
     
-    var animationiteration: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.native
+    var animationiteration: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.undefined
     
-    var animationstart: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.native
+    var animationstart: js.UndefOr[Listener[AnimationEvent] | js.Array[Listener[AnimationEvent]]] = js.undefined
     
-    var auxclick: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var auxclick: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var blur: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.native
+    var blur: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.undefined
     
-    var cancel: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var cancel: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var canplay: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var canplay: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var canplaythrough: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var canplaythrough: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var change: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var change: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var click: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var click: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var close: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var close: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var contextmenu: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var contextmenu: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var copy: js.UndefOr[Listener[ClipboardEvent] | js.Array[Listener[ClipboardEvent]]] = js.native
+    var copy: js.UndefOr[Listener[ClipboardEvent] | js.Array[Listener[ClipboardEvent]]] = js.undefined
     
-    var cuechange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var cuechange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var cut: js.UndefOr[Listener[ClipboardEvent] | js.Array[Listener[ClipboardEvent]]] = js.native
+    var cut: js.UndefOr[Listener[ClipboardEvent] | js.Array[Listener[ClipboardEvent]]] = js.undefined
     
-    var dblclick: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var dblclick: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var drag: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var drag: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var dragend: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var dragend: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var dragenter: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var dragenter: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var dragexit: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var dragexit: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var dragleave: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var dragleave: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var dragover: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var dragover: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var dragstart: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var dragstart: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var drop: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.native
+    var drop: js.UndefOr[Listener[DragEvent] | js.Array[Listener[DragEvent]]] = js.undefined
     
-    var durationchange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var durationchange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var emptied: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var emptied: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var ended: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var ended: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var error: js.UndefOr[Listener[ErrorEvent] | js.Array[Listener[ErrorEvent]]] = js.native
+    var error: js.UndefOr[Listener[ErrorEvent] | js.Array[Listener[ErrorEvent]]] = js.undefined
     
-    var focus: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.native
+    var focus: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.undefined
     
-    var focusin: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.native
+    var focusin: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.undefined
     
-    var focusout: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.native
+    var focusout: js.UndefOr[Listener[FocusEvent] | js.Array[Listener[FocusEvent]]] = js.undefined
     
-    var fullscreenchange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var fullscreenchange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var fullscreenerror: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var fullscreenerror: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var gotpointercapture: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var gotpointercapture: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var input: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var input: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var invalid: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var invalid: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var keydown: js.UndefOr[Listener[KeyboardEvent] | js.Array[Listener[KeyboardEvent]]] = js.native
+    var keydown: js.UndefOr[Listener[KeyboardEvent] | js.Array[Listener[KeyboardEvent]]] = js.undefined
     
-    var keypress: js.UndefOr[Listener[KeyboardEvent] | js.Array[Listener[KeyboardEvent]]] = js.native
+    var keypress: js.UndefOr[Listener[KeyboardEvent] | js.Array[Listener[KeyboardEvent]]] = js.undefined
     
-    var keyup: js.UndefOr[Listener[KeyboardEvent] | js.Array[Listener[KeyboardEvent]]] = js.native
+    var keyup: js.UndefOr[Listener[KeyboardEvent] | js.Array[Listener[KeyboardEvent]]] = js.undefined
     
-    var load: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var load: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var loadeddata: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var loadeddata: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var loadedmetadata: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var loadedmetadata: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var loadstart: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var loadstart: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var lostpointercapture: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var lostpointercapture: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var mousedown: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mousedown: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var mouseenter: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mouseenter: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var mouseleave: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mouseleave: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var mousemove: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mousemove: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var mouseout: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mouseout: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var mouseover: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mouseover: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var mouseup: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.native
+    var mouseup: js.UndefOr[Listener[MouseEvent] | js.Array[Listener[MouseEvent]]] = js.undefined
     
-    var paste: js.UndefOr[Listener[ClipboardEvent] | js.Array[Listener[ClipboardEvent]]] = js.native
+    var paste: js.UndefOr[Listener[ClipboardEvent] | js.Array[Listener[ClipboardEvent]]] = js.undefined
     
-    var pause: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var pause: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var play: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var play: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var playing: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var playing: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var pointercancel: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointercancel: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointerdown: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointerdown: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointerenter: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointerenter: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointerleave: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointerleave: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointermove: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointermove: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointerout: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointerout: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointerover: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointerover: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
-    var pointerup: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.native
+    var pointerup: js.UndefOr[Listener[PointerEvent] | js.Array[Listener[PointerEvent]]] = js.undefined
     
     var progress: js.UndefOr[
         Listener[ProgressEvent[EventTarget]] | js.Array[Listener[ProgressEvent[EventTarget]]]
-      ] = js.native
+      ] = js.undefined
     
-    var ratechange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var ratechange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var reset: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var reset: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var resize: js.UndefOr[Listener[UIEvent] | js.Array[Listener[UIEvent]]] = js.native
+    var resize: js.UndefOr[Listener[UIEvent] | js.Array[Listener[UIEvent]]] = js.undefined
     
-    var scroll: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var scroll: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
     var securitypolicyviolation: js.UndefOr[
         Listener[SecurityPolicyViolationEvent] | js.Array[Listener[SecurityPolicyViolationEvent]]
-      ] = js.native
+      ] = js.undefined
     
-    var seeked: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var seeked: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var seeking: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var seeking: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var select: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var select: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var selectionchange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var selectionchange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var selectstart: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var selectstart: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var stalled: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var stalled: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var submit: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var submit: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var suspend: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var suspend: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var timeupdate: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var timeupdate: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var toggle: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var toggle: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var touchcancel: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.native
+    var touchcancel: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.undefined
     
-    var touchend: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.native
+    var touchend: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.undefined
     
-    var touchmove: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.native
+    var touchmove: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.undefined
     
-    var touchstart: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.native
+    var touchstart: js.UndefOr[Listener[TouchEvent] | js.Array[Listener[TouchEvent]]] = js.undefined
     
-    var transitioncancel: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.native
+    var transitioncancel: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.undefined
     
-    var transitionend: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.native
+    var transitionend: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.undefined
     
-    var transitionrun: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.native
+    var transitionrun: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.undefined
     
-    var transitionstart: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.native
+    var transitionstart: js.UndefOr[Listener[TransitionEvent] | js.Array[Listener[TransitionEvent]]] = js.undefined
     
-    var volumechange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var volumechange: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var waiting: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.native
+    var waiting: js.UndefOr[Listener[Event] | js.Array[Listener[Event]]] = js.undefined
     
-    var wheel: js.UndefOr[Listener[WheelEvent] | js.Array[Listener[WheelEvent]]] = js.native
+    var wheel: js.UndefOr[Listener[WheelEvent] | js.Array[Listener[WheelEvent]]] = js.undefined
   }
   object On {
     

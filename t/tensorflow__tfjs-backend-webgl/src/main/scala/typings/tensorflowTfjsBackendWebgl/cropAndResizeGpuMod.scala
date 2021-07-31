@@ -5,14 +5,15 @@ import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.bili
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.nearest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cropAndResizeGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/crop_and_resize_gpu", "CropAndResizeProgram")
   @js.native
-  class CropAndResizeProgram protected () extends GPGPUProgram {
+  class CropAndResizeProgram protected ()
+    extends StObject
+       with GPGPUProgram {
     def this(
       imageShape: js.Tuple4[Double, Double, Double, Double],
       boxShape: js.Tuple2[Double, Double],
@@ -27,5 +28,14 @@ object cropAndResizeGpuMod {
       method: nearest,
       extrapolationValue: Double
     ) = this()
+    
+    /* CompleteClass */
+    var outputShape: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var userCode: String = js.native
+    
+    /* CompleteClass */
+    var variableNames: js.Array[String] = js.native
   }
 }

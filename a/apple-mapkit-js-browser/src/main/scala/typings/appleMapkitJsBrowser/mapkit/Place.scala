@@ -2,99 +2,97 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A place object returned from a geocoder lookup or reverse lookup.
   */
-@js.native
 trait Place extends StObject {
   
   /**
     * The state or province of the place.
     */
-  var administrativeArea: js.UndefOr[String] = js.native
+  var administrativeArea: js.UndefOr[String] = js.undefined
   
   /**
     * The short code for the state or area.
     */
-  var administrativeAreaCode: js.UndefOr[String] = js.native
+  var administrativeAreaCode: js.UndefOr[String] = js.undefined
   
   /**
     * Common names of the area in which the place resides.
     */
-  var areasOfInterest: js.UndefOr[js.Array[String]] = js.native
+  var areasOfInterest: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The latitude and longitude for the place.
     */
-  var coordinate: Coordinate = js.native
+  var coordinate: Coordinate
   
   /**
     * The country of the place.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The country code associated with the place.
     */
-  var countryCode: String = js.native
+  var countryCode: String
   
   /**
     * Common names for the local area or neighborhood of the place.
     */
-  var dependentLocalities: js.UndefOr[js.Array[String]] = js.native
+  var dependentLocalities: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The address of the place, formatted using its country's conventions.
     */
-  var formattedAddress: String = js.native
+  var formattedAddress: String
   
   /**
     * A combination of thoroughfare and subthoroughfare.
     */
-  var fullThoroughfare: js.UndefOr[String] = js.native
+  var fullThoroughfare: js.UndefOr[String] = js.undefined
   
   /**
     * The city of the place.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the place.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The category of the place.
     */
-  var pointOfInterestCategory: js.UndefOr[PointOfInterestCategory] = js.native
+  var pointOfInterestCategory: js.UndefOr[PointOfInterestCategory] = js.undefined
   
   /**
     * The postal code of the place.
     */
-  var postCode: js.UndefOr[String] = js.native
+  var postCode: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic region associated with the place.
     */
-  var region: CoordinateRegion = js.native
+  var region: CoordinateRegion
   
   /**
     * The name of the area within the locality.
     */
-  var subLocality: js.UndefOr[String] = js.native
+  var subLocality: js.UndefOr[String] = js.undefined
   
   /**
     * The number on the street at the place.
     */
-  var subThoroughfare: js.UndefOr[String] = js.native
+  var subThoroughfare: js.UndefOr[String] = js.undefined
   
   /**
     * The street name at the place.
     */
-  var thoroughfare: js.UndefOr[String] = js.native
+  var thoroughfare: js.UndefOr[String] = js.undefined
 }
 object Place {
   

@@ -3,25 +3,23 @@ package typings.codemirror
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MimeType extends StObject {
   
-  var alias: js.UndefOr[js.Array[String]] = js.native
+  var alias: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ext: js.UndefOr[js.Array[String]] = js.native
+  var ext: js.UndefOr[js.Array[String]] = js.undefined
   
-  var file: js.UndefOr[RegExp] = js.native
+  var file: js.UndefOr[RegExp] = js.undefined
   
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
-  var mimes: js.UndefOr[String] = js.native
+  var mimes: js.UndefOr[String] = js.undefined
   
-  var mode: String = js.native
+  var mode: String
   
-  var name: String = js.native
+  var name: String
 }
 object MimeType {
   

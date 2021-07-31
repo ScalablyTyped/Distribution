@@ -3,21 +3,19 @@ package typings.chromeApps.anon
 import typings.chromeApps.chromeAppsStrings.WRITE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait READ extends StObject {
   
-  var READ: typings.chromeApps.chromeAppsStrings.READ = js.native
+  var READ: typings.chromeApps.chromeAppsStrings.READ
   
-  var WRITE: typings.chromeApps.chromeAppsStrings.WRITE = js.native
+  var WRITE: typings.chromeApps.chromeAppsStrings.WRITE
 }
 object READ {
   
   @scala.inline
-  def apply(READ: typings.chromeApps.chromeAppsStrings.READ, WRITE: WRITE): READ = {
-    val __obj = js.Dynamic.literal(READ = READ.asInstanceOf[js.Any], WRITE = WRITE.asInstanceOf[js.Any])
+  def apply(): READ = {
+    val __obj = js.Dynamic.literal(READ = "READ", WRITE = "WRITE")
     __obj.asInstanceOf[READ]
   }
   

@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lockLockedSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object lockLockedSmallMod extends Shortcut {
   @js.native
   val default: SFC[LockLockedSmallProps] = js.native
   
-  @js.native
-  trait LockLockedSmallProps extends SVGAttributes[SVGElement] {
+  trait LockLockedSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LockLockedSmallProps {
     

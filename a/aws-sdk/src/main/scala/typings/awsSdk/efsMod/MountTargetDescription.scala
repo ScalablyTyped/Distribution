@@ -2,61 +2,59 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MountTargetDescription extends StObject {
   
   /**
     * The unique and consistent identifier of the Availability Zone (AZ) that the mount target resides in. For example, use1-az1 is an AZ ID for the us-east-1 Region and it has the same location in every AWS account.
     */
-  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneId] = js.native
+  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneId] = js.undefined
   
   /**
     * The name of the Availability Zone (AZ) that the mount target resides in. AZs are independently mapped to names for each AWS account. For example, the Availability Zone us-east-1a for your AWS account might not be the same location as us-east-1a for another AWS account.
     */
-  var AvailabilityZoneName: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneName] = js.native
+  var AvailabilityZoneName: js.UndefOr[typings.awsSdk.efsMod.AvailabilityZoneName] = js.undefined
   
   /**
     * The ID of the file system for which the mount target is intended.
     */
-  var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.efsMod.FileSystemId
   
   /**
     * Address at which the file system can be mounted by using the mount target.
     */
-  var IpAddress: js.UndefOr[typings.awsSdk.efsMod.IpAddress] = js.native
+  var IpAddress: js.UndefOr[typings.awsSdk.efsMod.IpAddress] = js.undefined
   
   /**
     * Lifecycle state of the mount target.
     */
-  var LifeCycleState: typings.awsSdk.efsMod.LifeCycleState = js.native
+  var LifeCycleState: typings.awsSdk.efsMod.LifeCycleState
   
   /**
     * System-assigned mount target ID.
     */
-  var MountTargetId: typings.awsSdk.efsMod.MountTargetId = js.native
+  var MountTargetId: typings.awsSdk.efsMod.MountTargetId
   
   /**
     * The ID of the network interface that Amazon EFS created when it created the mount target.
     */
-  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.efsMod.NetworkInterfaceId] = js.native
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.efsMod.NetworkInterfaceId] = js.undefined
   
   /**
     * AWS account ID that owns the resource.
     */
-  var OwnerId: js.UndefOr[AwsAccountId] = js.native
+  var OwnerId: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The ID of the mount target's subnet.
     */
-  var SubnetId: typings.awsSdk.efsMod.SubnetId = js.native
+  var SubnetId: typings.awsSdk.efsMod.SubnetId
   
   /**
     * The Virtual Private Cloud (VPC) ID that the mount target is configured in.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.efsMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.efsMod.VpcId] = js.undefined
 }
 object MountTargetDescription {
   

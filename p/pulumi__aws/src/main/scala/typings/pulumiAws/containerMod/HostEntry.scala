@@ -2,15 +2,13 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostEntry extends StObject {
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var ipAddress: String = js.native
+  var ipAddress: String
 }
 object HostEntry {
   

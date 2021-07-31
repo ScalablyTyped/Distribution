@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionRequest extends StObject {
   
   /**
     * The GraphQL API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The Function ID.
     */
-  var functionId: ResourceName = js.native
+  var functionId: ResourceName
 }
 object GetFunctionRequest {
   

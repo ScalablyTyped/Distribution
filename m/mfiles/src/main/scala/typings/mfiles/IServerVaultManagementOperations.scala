@@ -2,37 +2,35 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IServerVaultManagementOperations extends StObject {
   
-  def AttachVault(VaultProperties: IVaultProperties, UpdateAttachmentGUID: Boolean): IVaultProperties = js.native
+  def AttachVault(VaultProperties: IVaultProperties, UpdateAttachmentGUID: Boolean): IVaultProperties
   
-  def AttachVaultWithOptions(VaultProperties: IVaultProperties, Options: IAttachVaultOptions): IVaultProperties = js.native
+  def AttachVaultWithOptions(VaultProperties: IVaultProperties, Options: IAttachVaultOptions): IVaultProperties
   
-  def BackupVault(BackupJob: IBackupJob): Unit = js.native
+  def BackupVault(BackupJob: IBackupJob): Unit
   
-  def BringVaultOnline(VaultGUID: String): Unit = js.native
+  def BringVaultOnline(VaultGUID: String): Unit
   
-  def CopyVault(CopyVaultJob: ICopyVaultJob): ICopyVaultJobOutputInfo = js.native
+  def CopyVault(CopyVaultJob: ICopyVaultJob): ICopyVaultJobOutputInfo
   
-  def CreateNewVault(VaultProperties: IVaultProperties): String = js.native
+  def CreateNewVault(VaultProperties: IVaultProperties): String
   
-  def DestroyVault(VaultGUID: String): Unit = js.native
+  def DestroyVault(VaultGUID: String): Unit
   
-  def DetachVault(VaultGUID: String): Unit = js.native
+  def DetachVault(VaultGUID: String): Unit
   
-  def GetBackupFileContents(BackupFileFull: String, BackupFileDifferential: String, Impersonation: IImpersonation): IVaultProperties = js.native
+  def GetBackupFileContents(BackupFileFull: String, BackupFileDifferential: String, Impersonation: IImpersonation): IVaultProperties
   
-  def GetVaultProperties(VaultGUID: String): IVaultProperties = js.native
+  def GetVaultProperties(VaultGUID: String): IVaultProperties
   
-  def OptimizeVault(OptimizeVaultJob: IOptimizeVaultJob): Unit = js.native
+  def OptimizeVault(OptimizeVaultJob: IOptimizeVaultJob): Unit
   
-  def RestoreVault(RestoreJob: IRestoreJob): Unit = js.native
+  def RestoreVault(RestoreJob: IRestoreJob): Unit
   
-  def TakeVaultOffline(VaultGUID: String, DisconnectUsers: Boolean): Unit = js.native
+  def TakeVaultOffline(VaultGUID: String, DisconnectUsers: Boolean): Unit
 }
 object IServerVaultManagementOperations {
   

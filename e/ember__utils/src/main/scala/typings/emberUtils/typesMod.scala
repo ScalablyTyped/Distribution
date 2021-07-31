@@ -7,7 +7,6 @@ import typings.std.FileList
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -16,36 +15,35 @@ object typesMod {
   
   type KeysOfType[Base, Condition] = /* keyof std.Pick<Base, {[ Key in keyof Base ]: Base[Key] extends Condition? Key : never}[keyof Base]> */ String
   
-  @js.native
   trait TypeLookup extends StObject {
     
-    var array: js.Array[_] = js.native
+    var array: js.Array[js.Any]
     
-    var boolean: Boolean = js.native
+    var boolean: Boolean
     
-    var date: Date = js.native
+    var date: Date
     
-    var error: Error = js.native
+    var error: Error
     
-    var filelist: FileList = js.native
+    var filelist: FileList
     
-    def function(args: js.Any*): js.Any = js.native
+    def function(args: js.Any*): js.Any
     
-    var `null`: Null = js.native
+    var `null`: Null
     
-    var number: Double = js.native
+    var number: Double
     
-    var regexp: RegExp = js.native
+    var regexp: RegExp
     
-    var string: String = js.native
+    var string: String
     
-    var undefined: js.UndefOr[scala.Nothing] = js.native
+    var undefined: Unit
   }
   object TypeLookup {
     
     @scala.inline
     def apply(
-      array: js.Array[_],
+      array: js.Array[js.Any],
       boolean: Boolean,
       date: Date,
       error: Error,
@@ -54,9 +52,10 @@ object typesMod {
       `null`: Null,
       number: Double,
       regexp: RegExp,
-      string: String
+      string: String,
+      undefined: Unit
     ): TypeLookup = {
-      val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], filelist = filelist.asInstanceOf[js.Any], function = js.Any.fromFunction1(function), number = number.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], boolean = boolean.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], filelist = filelist.asInstanceOf[js.Any], function = js.Any.fromFunction1(function), number = number.asInstanceOf[js.Any], regexp = regexp.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any], undefined = undefined.asInstanceOf[js.Any])
       __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeLookup]
     }
@@ -65,7 +64,7 @@ object typesMod {
     implicit class TypeLookupMutableBuilder[Self <: TypeLookup] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArray(value: js.Array[_]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      def setArray(value: js.Array[js.Any]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArrayVarargs(value: js.Any*): Self = StObject.set(x, "array", js.Array(value :_*))
@@ -96,6 +95,9 @@ object typesMod {
       
       @scala.inline
       def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUndefined(value: Unit): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     }
   }
   

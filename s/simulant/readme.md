@@ -11,8 +11,8 @@ Simulated DOM events for automated testing
 | Full name          | simulant |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 536362 |
+| # dependents       | 7 |
+| # downloads        | 451896 |
 | # stars            | 1 |
 
 ## Links

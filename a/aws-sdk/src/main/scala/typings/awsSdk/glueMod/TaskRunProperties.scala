@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskRunProperties extends StObject {
   
   /**
     * The configuration properties for an exporting labels task run.
     */
-  var ExportLabelsTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.ExportLabelsTaskRunProperties] = js.native
+  var ExportLabelsTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.ExportLabelsTaskRunProperties] = js.undefined
   
   /**
     * The configuration properties for a find matches task run.
     */
-  var FindMatchesTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.FindMatchesTaskRunProperties] = js.native
+  var FindMatchesTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.FindMatchesTaskRunProperties] = js.undefined
   
   /**
     * The configuration properties for an importing labels task run.
     */
-  var ImportLabelsTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.ImportLabelsTaskRunProperties] = js.native
+  var ImportLabelsTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.ImportLabelsTaskRunProperties] = js.undefined
   
   /**
     * The configuration properties for a labeling set generation task run.
     */
-  var LabelingSetGenerationTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.LabelingSetGenerationTaskRunProperties] = js.native
+  var LabelingSetGenerationTaskRunProperties: js.UndefOr[typings.awsSdk.glueMod.LabelingSetGenerationTaskRunProperties] = js.undefined
   
   /**
     * The type of task run.
     */
-  var TaskType: js.UndefOr[typings.awsSdk.glueMod.TaskType] = js.native
+  var TaskType: js.UndefOr[typings.awsSdk.glueMod.TaskType] = js.undefined
 }
 object TaskRunProperties {
   

@@ -2,31 +2,29 @@ package typings.geometryDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMRectInit extends StObject {
   
   /**
     * height value
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * width value
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * x coordinate
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * y coordinate
     */
-  var y: Double = js.native
+  var y: Double
 }
 object DOMRectInit {
   

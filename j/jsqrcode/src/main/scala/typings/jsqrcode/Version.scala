@@ -2,29 +2,27 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
-  val AlignmentPatternCenters: js.Array[Double] = js.native
+  val AlignmentPatternCenters: js.Array[Double]
   
-  val DimensionForVersion: Double = js.native
+  val DimensionForVersion: Double
   
-  val TotalCodewords: Double = js.native
+  val TotalCodewords: Double
   
-  val VersionNumber: Double = js.native
+  val VersionNumber: Double
   
-  var alignmentPatternCenters: js.Array[Double] = js.native
+  var alignmentPatternCenters: js.Array[Double]
   
-  def buildFunctionPattern(): BitMatrix = js.native
+  def buildFunctionPattern(): BitMatrix
   
-  var ecBlocks: js.Array[ECBlocks] = js.native
+  var ecBlocks: js.Array[ECBlocks]
   
-  def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks = js.native
+  def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks
   
-  var versionNumber: Double = js.native
+  var versionNumber: Double
 }
 object Version {
   

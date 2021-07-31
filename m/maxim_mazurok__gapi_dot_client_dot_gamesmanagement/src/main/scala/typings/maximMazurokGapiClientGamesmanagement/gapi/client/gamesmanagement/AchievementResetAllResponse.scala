@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchievementResetAllResponse extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesManagement#achievementResetAllResponse`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The achievement reset results. */
-  var results: js.UndefOr[js.Array[AchievementResetResponse]] = js.native
+  var results: js.UndefOr[js.Array[AchievementResetResponse]] = js.undefined
 }
 object AchievementResetAllResponse {
   

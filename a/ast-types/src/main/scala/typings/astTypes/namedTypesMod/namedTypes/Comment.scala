@@ -3,17 +3,17 @@ package typings.astTypes.namedTypesMod.namedTypes
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Comment extends Printable {
+trait Comment
+  extends StObject
+     with Printable {
   
-  var leading: js.UndefOr[Boolean] = js.native
+  var leading: js.UndefOr[Boolean] = js.undefined
   
-  var trailing: js.UndefOr[Boolean] = js.native
+  var trailing: js.UndefOr[Boolean] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object Comment {
   

@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-create-request/rc.svg)](https://www.npmjs.com/package/@aws-sdk/util-create-request) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-create-request.svg)](https://www.npmjs.com/package
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/util-create-request/latest.svg)](https://www.npmjs.com/package/@aws-sdk/util-create-request) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/util-create-request.svg)](https://www.npmjs.com/pac
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-create-request |
 | Keywords           | - |
-| # releases         | 38 |
+| # releases         | 50 |
 | # dependents       | 3 |
-| # downloads        | 2360612 |
+| # downloads        | 4154941 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/util-create-request)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-create-request)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-create-request)

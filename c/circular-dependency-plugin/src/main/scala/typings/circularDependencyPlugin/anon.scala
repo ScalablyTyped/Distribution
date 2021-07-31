@@ -2,19 +2,17 @@ package typings.circularDependencyPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Compilation extends StObject {
     
-    var compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any = js.native
+    var compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
     
-    var module: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Module */ js.Any = js.native
+    var module: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Module */ js.Any
     
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
   }
   object Compilation {
     
@@ -49,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CompilationAny extends StObject {
     
-    var compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any = js.native
+    var compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
   }
   object CompilationAny {
     

@@ -4,92 +4,90 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarTheme extends StObject {
   
-  var arrowColor: js.UndefOr[String] = js.native
+  var arrowColor: js.UndefOr[String] = js.undefined
   
-  var arrowStyle: js.UndefOr[ViewStyle] = js.native
+  var arrowStyle: js.UndefOr[ViewStyle] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var calendarBackground: js.UndefOr[String] = js.native
+  var calendarBackground: js.UndefOr[String] = js.undefined
   
-  var dayTextColor: js.UndefOr[String] = js.native
+  var dayTextColor: js.UndefOr[String] = js.undefined
   
-  var dotColor: js.UndefOr[String] = js.native
+  var dotColor: js.UndefOr[String] = js.undefined
   
-  var dotStyle: js.UndefOr[ViewStyle] = js.native
+  var dotStyle: js.UndefOr[ViewStyle] = js.undefined
   
-  var indicatorColor: js.UndefOr[String] = js.native
+  var indicatorColor: js.UndefOr[String] = js.undefined
   
-  var monthTextColor: js.UndefOr[String] = js.native
+  var monthTextColor: js.UndefOr[String] = js.undefined
   
-  var selectedDayBackgroundColor: js.UndefOr[String] = js.native
+  var selectedDayBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var selectedDayTextColor: js.UndefOr[String] = js.native
+  var selectedDayTextColor: js.UndefOr[String] = js.undefined
   
-  var selectedDotColor: js.UndefOr[String] = js.native
+  var selectedDotColor: js.UndefOr[String] = js.undefined
   
   @JSName("stylesheet.agenda.list")
-  var stylesheetDotagendaDotlist: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotagendaDotlist: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.agenda.main")
-  var stylesheetDotagendaDotmain: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotagendaDotmain: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.calendar-list.main")
-  var `stylesheetDotcalendar-listDotmain`: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var `stylesheetDotcalendar-listDotmain`: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   // Theme ID's to style for
   @JSName("stylesheet.calendar.header")
-  var stylesheetDotcalendarDotheader: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotcalendarDotheader: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.calendar.main")
-  var stylesheetDotcalendarDotmain: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotcalendarDotmain: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.day.basic")
-  var stylesheetDotdayDotbasic: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotdayDotbasic: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.day.multiDot")
-  var stylesheetDotdayDotmultiDot: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotdayDotmultiDot: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.day.period")
-  var stylesheetDotdayDotperiod: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotdayDotperiod: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.day.single")
-  var stylesheetDotdayDotsingle: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotdayDotsingle: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
   @JSName("stylesheet.dot")
-  var stylesheetDotdot: js.UndefOr[CalendarThemeIdStyle] = js.native
+  var stylesheetDotdot: js.UndefOr[CalendarThemeIdStyle] = js.undefined
   
-  var textDayFontFamily: js.UndefOr[String] = js.native
+  var textDayFontFamily: js.UndefOr[String] = js.undefined
   
-  var textDayFontSize: js.UndefOr[Double] = js.native
+  var textDayFontSize: js.UndefOr[Double] = js.undefined
   
-  var textDayFontWeight: js.UndefOr[String] = js.native
+  var textDayFontWeight: js.UndefOr[String] = js.undefined
   
-  var textDayHeaderFontFamily: js.UndefOr[String] = js.native
+  var textDayHeaderFontFamily: js.UndefOr[String] = js.undefined
   
-  var textDayHeaderFontSize: js.UndefOr[Double] = js.native
+  var textDayHeaderFontSize: js.UndefOr[Double] = js.undefined
   
-  var textDayHeaderFontWeight: js.UndefOr[String] = js.native
+  var textDayHeaderFontWeight: js.UndefOr[String] = js.undefined
   
-  var textDayStyle: js.UndefOr[TextStyle] = js.native
+  var textDayStyle: js.UndefOr[TextStyle] = js.undefined
   
-  var textDisabledColor: js.UndefOr[String] = js.native
+  var textDisabledColor: js.UndefOr[String] = js.undefined
   
-  var textMonthFontFamily: js.UndefOr[String] = js.native
+  var textMonthFontFamily: js.UndefOr[String] = js.undefined
   
-  var textMonthFontSize: js.UndefOr[Double] = js.native
+  var textMonthFontSize: js.UndefOr[Double] = js.undefined
   
-  var textMonthFontWeight: js.UndefOr[String] = js.native
+  var textMonthFontWeight: js.UndefOr[String] = js.undefined
   
-  var textSectionTitleColor: js.UndefOr[String] = js.native
+  var textSectionTitleColor: js.UndefOr[String] = js.undefined
   
-  var todayTextColor: js.UndefOr[String] = js.native
+  var todayTextColor: js.UndefOr[String] = js.undefined
 }
 object CalendarTheme {
   

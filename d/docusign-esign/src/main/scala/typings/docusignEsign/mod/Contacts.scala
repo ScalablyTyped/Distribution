@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contacts extends StObject {
   
   /**
@@ -24,17 +22,17 @@ trait Contacts extends StObject {
     *
     * -->
     */
-  var cloudProvider: js.UndefOr[String] = js.native
+  var cloudProvider: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the container at the cloud provider. For example, this might be the room id for a DocuSign Transaction Room.
     */
-  var cloudProviderContainerId: js.UndefOr[String] = js.native
+  var cloudProviderContainerId: js.UndefOr[String] = js.undefined
   
   /**
     * The id of a contact person in the account's address book.
     */
-  var contactId: js.UndefOr[String] = js.native
+  var contactId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the contact's phone numbers.
@@ -51,39 +49,39 @@ trait Contacts extends StObject {
     js.Array[
       /* Details about the phone numbers associated with a specific contact. */ ContactPhoneNumber
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The URI for retrieving information about the contact.
     */
-  var contactUri: js.UndefOr[String] = js.native
+  var contactUri: js.UndefOr[String] = js.undefined
   
   /**
     * The email address or addresses associated with the contact.
     */
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the current user is the owner of the contact.
     */
-  var isOwner: js.UndefOr[Boolean] = js.native
+  var isOwner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the contact.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the contact's organization.
     */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the contact is shared. For more information, see [Shared Contacts](https://support.docusign.com/guides/ndse-user-guide-manage-contacts).
@@ -96,17 +94,17 @@ trait Contacts extends StObject {
     *
     * You must ask the user who added the contact for the phone number and then manually enter it into the authentication box.
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
   /**
     * If the contact belongs to a signing group, this property contains the `signingGroupId`.
     */
-  var signingGroup: js.UndefOr[String] = js.native
+  var signingGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the signing group that the contact belongs to.
     */
-  var signingGroupName: js.UndefOr[String] = js.native
+  var signingGroupName: js.UndefOr[String] = js.undefined
 }
 object Contacts {
   

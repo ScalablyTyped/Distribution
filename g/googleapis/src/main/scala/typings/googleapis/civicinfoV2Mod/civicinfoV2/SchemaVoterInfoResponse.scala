@@ -2,19 +2,17 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of a voter info lookup query.
   */
-@js.native
 trait SchemaVoterInfoResponse extends StObject {
   
   /**
     * Contests that will appear on the voter&#39;s ballot.
     */
-  var contests: js.UndefOr[js.Array[SchemaContest]] = js.native
+  var contests: js.UndefOr[js.Array[SchemaContest]] = js.undefined
   
   /**
     * Locations where a voter is eligible to drop off a completed ballot. The
@@ -23,35 +21,35 @@ trait SchemaVoterInfoResponse extends StObject {
     * These locations could be open on or before election day as indicated in
     * the pollingHours field.
     */
-  var dropOffLocations: js.UndefOr[js.Array[SchemaPollingLocation]] = js.native
+  var dropOffLocations: js.UndefOr[js.Array[SchemaPollingLocation]] = js.undefined
   
   /**
     * Locations where the voter is eligible to vote early, prior to election
     * day.
     */
-  var earlyVoteSites: js.UndefOr[js.Array[SchemaPollingLocation]] = js.native
+  var earlyVoteSites: js.UndefOr[js.Array[SchemaPollingLocation]] = js.undefined
   
   /**
     * The election that was queried.
     */
-  var election: js.UndefOr[SchemaElection] = js.native
+  var election: js.UndefOr[SchemaElection] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;civicinfo#voterInfoResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether voters in the precinct vote only by mailing their
     * ballots (with the possible option of dropping off their ballots as well).
     */
-  var mailOnly: js.UndefOr[Boolean] = js.native
+  var mailOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The normalized version of the requested address
     */
-  var normalizedInput: js.UndefOr[SchemaSimpleAddressType] = js.native
+  var normalizedInput: js.UndefOr[SchemaSimpleAddressType] = js.undefined
   
   /**
     * When there are multiple elections for a voter address, the otherElections
@@ -65,22 +63,22 @@ trait SchemaVoterInfoResponse extends StObject {
     * user to disambiguate. A second API request using the electionId field
     * should be made for the election that is relevant to the user.
     */
-  var otherElections: js.UndefOr[js.Array[SchemaElection]] = js.native
+  var otherElections: js.UndefOr[js.Array[SchemaElection]] = js.undefined
   
   /**
     * Locations where the voter is eligible to vote on election day.
     */
-  var pollingLocations: js.UndefOr[js.Array[SchemaPollingLocation]] = js.native
+  var pollingLocations: js.UndefOr[js.Array[SchemaPollingLocation]] = js.undefined
   
-  var precinctId: js.UndefOr[String] = js.native
+  var precinctId: js.UndefOr[String] = js.undefined
   
-  var segments: js.UndefOr[js.Array[SchemaStreetSegment]] = js.native
+  var segments: js.UndefOr[js.Array[SchemaStreetSegment]] = js.undefined
   
   /**
     * Local Election Information for the state that the voter votes in. For the
     * US, there will only be one element in this array.
     */
-  var state: js.UndefOr[js.Array[SchemaAdministrationRegion]] = js.native
+  var state: js.UndefOr[js.Array[SchemaAdministrationRegion]] = js.undefined
 }
 object SchemaVoterInfoResponse {
   

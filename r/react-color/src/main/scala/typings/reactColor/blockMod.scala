@@ -10,7 +10,6 @@ import typings.reactColor.reactColorStrings.top
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMod {
@@ -24,19 +23,20 @@ object blockMod {
   trait BlockPicker
     extends Component[BlockPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait BlockPickerProps extends ColorPickerProps[BlockPicker] {
+  trait BlockPickerProps
+    extends StObject
+       with ColorPickerProps[BlockPicker] {
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
     @JSName("styles")
-    var styles_BlockPickerProps: js.UndefOr[PartialClassesBlockPicker] = js.native
+    var styles_BlockPickerProps: js.UndefOr[PartialClassesBlockPicker] = js.undefined
     
-    var triangle: js.UndefOr[hide | top] = js.native
+    var triangle: js.UndefOr[hide | top] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object BlockPickerProps {
     
@@ -84,20 +84,19 @@ object blockMod {
     }
   }
   
-  @js.native
   trait BlockPickerStylesProps extends StObject {
     
-    var body: CSSProperties = js.native
+    var body: CSSProperties
     
-    var card: CSSProperties = js.native
+    var card: CSSProperties
     
-    var head: CSSProperties = js.native
+    var head: CSSProperties
     
-    var input: CSSProperties = js.native
+    var input: CSSProperties
     
-    var label: CSSProperties = js.native
+    var label: CSSProperties
     
-    var triangle: CSSProperties = js.native
+    var triangle: CSSProperties
   }
   object BlockPickerStylesProps {
     

@@ -2,15 +2,13 @@ package typings.node.inspectorMod.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastSeenObjectIdEventDataType extends StObject {
   
-  var lastSeenObjectId: Double = js.native
+  var lastSeenObjectId: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object LastSeenObjectIdEventDataType {
   

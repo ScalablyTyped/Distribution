@@ -2,18 +2,16 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashEncryption extends StObject {
   
   /**
     * Time (in seconds) between each encryption key rotation.
     */
-  var KeyRotationIntervalSeconds: js.UndefOr[integer] = js.native
+  var KeyRotationIntervalSeconds: js.UndefOr[integer] = js.undefined
   
-  var SpekeKeyProvider: typings.awsSdk.mediapackageMod.SpekeKeyProvider = js.native
+  var SpekeKeyProvider: typings.awsSdk.mediapackageMod.SpekeKeyProvider
 }
 object DashEncryption {
   

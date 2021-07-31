@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * To transform a {@link XGraphic} , just the corresponding method has to be used, a new {@link XGraphic} instance will be returned
   */
-@js.native
-trait XGraphicTransformer extends XInterface {
+trait XGraphicTransformer
+  extends StObject
+     with XInterface {
   
   /**
     * changes brightness/contrast
@@ -23,19 +23,19 @@ trait XGraphicTransformer extends XInterface {
     * @param mso whether to use MSOffice brightness/contrast formula
     * @returns The modified graphic
     */
-  def applyBrightnessContrast(In: XGraphic, brightness: Double, contrast: Double, mso: Boolean): XGraphic = js.native
+  def applyBrightnessContrast(In: XGraphic, brightness: Double, contrast: Double, mso: Boolean): XGraphic
   
   /**
     * applies Duotone effect
     * @returns The modified graphic
     */
-  def applyDuotone(In: XGraphic, ColorOne: Double, ColorTwo: Double): XGraphic = js.native
+  def applyDuotone(In: XGraphic, ColorOne: Double, ColorTwo: Double): XGraphic
   
   /**
     * transforms a {@link Graphic}
     * @returns The transformed graphic
     */
-  def colorChange(In: XGraphic, ColorFrom: Double, tolerance: Double, ColorTo: Double, AlphaTo: Double): XGraphic = js.native
+  def colorChange(In: XGraphic, ColorFrom: Double, tolerance: Double, ColorTo: Double, AlphaTo: Double): XGraphic
 }
 object XGraphicTransformer {
   

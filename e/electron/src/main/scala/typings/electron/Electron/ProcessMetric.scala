@@ -16,17 +16,15 @@ import typings.electron.electronStrings.unknown_
 import typings.electron.electronStrings.untrusted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessMetric extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/process-metric
   /**
     * CPU usage of the process.
     */
-  var cpu: CPUUsage = js.native
+  var cpu: CPUUsage
   
   /**
     * Creation time for this process. The time is represented as number of
@@ -34,43 +32,43 @@ trait ProcessMetric extends StObject {
     * is useful to use both the `pid` and the `creationTime` to uniquely identify a
     * process.
     */
-  var creationTime: Double = js.native
+  var creationTime: Double
   
   /**
     * One of the following values:
     *
     * @platform win32
     */
-  var integrityLevel: js.UndefOr[untrusted | low | medium | high | unknown_] = js.native
+  var integrityLevel: js.UndefOr[untrusted | low | medium | high | unknown_] = js.undefined
   
   /**
     * Memory information for the process.
     */
-  var memory: MemoryInfo = js.native
+  var memory: MemoryInfo
   
   /**
     * The name of the process. i.e. for plugins it might be Flash. Examples for
     * utility: `Audio Service`, `Content Decryption Module Service`, `Network
     * Service`, `Video Capture`, etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Process id of the process.
     */
-  var pid: Double = js.native
+  var pid: Double
   
   /**
     * Whether the process is sandboxed on OS level.
     *
     * @platform darwin,win32
     */
-  var sandboxed: js.UndefOr[Boolean] = js.native
+  var sandboxed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Process type. One of the following values:
     */
-  var `type`: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown = js.native
+  var `type`: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
 }
 object ProcessMetric {
   

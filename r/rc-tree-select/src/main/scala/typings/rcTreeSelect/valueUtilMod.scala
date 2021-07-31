@@ -10,29 +10,27 @@ import typings.rcTreeSelect.useKeyValueMappingMod.SkipType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueUtilMod {
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "addValue")
+  @JSImport("rc-tree-select/es/utils/valueUtil", JSImport.Namespace)
   @js.native
-  def addValue(rawValues: js.Array[RawValueType], value: RawValueType): js.Array[String | Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "filterOptions")
-  @js.native
-  def filterOptions(searchValue: String, options: js.Array[DataNode], hasOptionFilterPropFilterOption: FilterOption): js.Array[DataNode] = js.native
+  @scala.inline
+  def addValue(rawValues: js.Array[RawValueType], value: RawValueType): js.Array[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("addValue")(rawValues.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | Double]]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "findValueOption")
-  @js.native
-  def findValueOption(values: js.Array[RawValueType], options: js.Array[FlattenDataNode]): js.Array[DataNode] = js.native
+  @scala.inline
+  def filterOptions(searchValue: String, options: js.Array[DataNode], hasOptionFilterPropFilterOption: FilterOption): js.Array[DataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOptions")(searchValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasOptionFilterPropFilterOption.asInstanceOf[js.Any])).asInstanceOf[js.Array[DataNode]]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "flattenOptions")
-  @js.native
-  def flattenOptions(options: js.Array[DataNode]): js.Array[FlattenDataNode] = js.native
+  @scala.inline
+  def findValueOption(values: js.Array[RawValueType], options: js.Array[FlattenDataNode]): js.Array[DataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findValueOption")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[DataNode]]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "getRawValueLabeled")
-  @js.native
+  @scala.inline
+  def flattenOptions(options: js.Array[DataNode]): js.Array[FlattenDataNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenDataNode]]
+  
+  @scala.inline
   def getRawValueLabeled(
     values: js.Array[RawValueType],
     prevValue: DefaultValueType,
@@ -43,24 +41,19 @@ object valueUtilMod {
       FlattenDataNode
     ],
     getLabelProp: js.Function1[/* node */ DataNode, ReactNode]
-  ): js.Array[LabelValueType] = js.native
+  ): js.Array[LabelValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRawValueLabeled")(values.asInstanceOf[js.Any], prevValue.asInstanceOf[js.Any], getEntityByValue.asInstanceOf[js.Any], getLabelProp.asInstanceOf[js.Any])).asInstanceOf[js.Array[LabelValueType]]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "isCheckDisabled")
-  @js.native
-  def isCheckDisabled(node: DataNode): Boolean = js.native
+  @scala.inline
+  def isCheckDisabled(node: DataNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCheckDisabled")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "isValueDisabled")
-  @js.native
-  def isValueDisabled(value: RawValueType, options: js.Array[FlattenDataNode]): Boolean = js.native
+  @scala.inline
+  def isValueDisabled(value: RawValueType, options: js.Array[FlattenDataNode]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValueDisabled")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "removeValue")
-  @js.native
-  def removeValue(rawValues: js.Array[RawValueType], value: RawValueType): js.Array[String | Double] = js.native
+  @scala.inline
+  def removeValue(rawValues: js.Array[RawValueType], value: RawValueType): js.Array[String | Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeValue")(rawValues.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | Double]]
   
-  @JSImport("rc-tree-select/es/utils/valueUtil", "toArray")
-  @js.native
-  def toArray[T](value: T): js.Array[T] = js.native
-  @JSImport("rc-tree-select/es/utils/valueUtil", "toArray")
-  @js.native
-  def toArray[T](value: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def toArray[T](value: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

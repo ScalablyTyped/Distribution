@@ -8,7 +8,6 @@ import typings.amapJsApiScale.amapJsApiScaleStrings.hide
 import typings.amapJsApiScale.amapJsApiScaleStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -17,7 +16,9 @@ object AMap {
     * 比例尺插件
     */
   @js.native
-  trait Scale extends EventEmitter {
+  trait Scale
+    extends StObject
+       with EventEmitter {
     
     /**
       * 隐藏比例尺
@@ -46,17 +47,16 @@ object AMap {
   }
   object Scale {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var hide: Event_[typings.amapJsApiScale.amapJsApiScaleStrings.hide, js.UndefOr[scala.Nothing]] = js.native
+      var hide: Event_[typings.amapJsApiScale.amapJsApiScaleStrings.hide, Unit]
       
-      var show: Event_[typings.amapJsApiScale.amapJsApiScaleStrings.show, js.UndefOr[scala.Nothing]] = js.native
+      var show: Event_[typings.amapJsApiScale.amapJsApiScaleStrings.show, Unit]
     }
     object EventMap {
       
       @scala.inline
-      def apply(hide: Event_[hide, js.UndefOr[scala.Nothing]], show: Event_[show, js.UndefOr[scala.Nothing]]): EventMap = {
+      def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
@@ -65,20 +65,19 @@ object AMap {
       implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setHide(value: Event_[hide, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setShow(value: Event_[show, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 相对于地图容器左上角的偏移量
         */
-      var offset: js.UndefOr[Pixel] = js.native
+      var offset: js.UndefOr[Pixel] = js.undefined
       
       /**
         * 控件停靠位置
@@ -88,12 +87,12 @@ object AMap {
         * RB:右下角;
         * 默认位置：LB
         */
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
       /**
         * 是否可见
         */
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

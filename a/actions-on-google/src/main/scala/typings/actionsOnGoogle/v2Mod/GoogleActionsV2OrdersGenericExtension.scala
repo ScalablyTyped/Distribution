@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersGenericExtension extends StObject {
   
   /**
     * Locations associated with the order. Up to 2 locations.
     */
-  var locations: js.UndefOr[js.Array[GoogleActionsV2OrdersOrderLocation]] = js.native
+  var locations: js.UndefOr[js.Array[GoogleActionsV2OrdersOrderLocation]] = js.undefined
   
   /**
     * Time indicator associated with the proposed order.
     */
-  var time: js.UndefOr[GoogleActionsV2OrdersTime] = js.native
+  var time: js.UndefOr[GoogleActionsV2OrdersTime] = js.undefined
 }
 object GoogleActionsV2OrdersGenericExtension {
   

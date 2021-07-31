@@ -6,21 +6,21 @@ import typings.expressValidator.schemaMod.ValidatorSchemaOptions
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorMessage[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] extends ValidatorSchemaOptions[K] {
+trait ErrorMessage[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */]
+  extends StObject
+     with ValidatorSchemaOptions[K] {
   
-  var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.native
+  var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
   
-  var negated: js.UndefOr[Boolean] = js.native
+  var negated: js.UndefOr[Boolean] = js.undefined
   
   var options: js.UndefOr[
     (Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: express-validator.express-validator/src/chain/validators.Validators<any>[K] */ js.Any
     ]) | (/* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<express-validator.express-validator/src/chain/validators.Validators<any>[K]>[0] */ js.Any)
-  ] = js.native
+  ] = js.undefined
 }
 object ErrorMessage {
   
@@ -31,7 +31,7 @@ object ErrorMessage {
   }
   
   @scala.inline
-  implicit class ErrorMessageMutableBuilder[Self <: ErrorMessage[_], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] (val x: Self with ErrorMessage[K]) extends AnyVal {
+  implicit class ErrorMessageMutableBuilder[Self <: ErrorMessage[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] (val x: Self & ErrorMessage[K]) extends AnyVal {
     
     @scala.inline
     def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])

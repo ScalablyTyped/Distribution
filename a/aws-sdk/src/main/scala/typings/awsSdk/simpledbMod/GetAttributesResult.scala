@@ -2,16 +2,14 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAttributesResult extends StObject {
   
   /**
     * The list of attributes returned by the operation.
     */
-  var Attributes: js.UndefOr[AttributeList] = js.native
+  var Attributes: js.UndefOr[AttributeList] = js.undefined
 }
 object GetAttributesResult {
   

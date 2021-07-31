@@ -2,28 +2,26 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicConfigurationDeprecated extends StObject {
   
   /**
     * Bucket event for which to send notifications.
     */
-  var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.native
+  var Event: js.UndefOr[typings.awsSdk.s3Mod.Event] = js.undefined
   
   /**
     * A collection of events related to objects
     */
-  var Events: js.UndefOr[EventList] = js.native
+  var Events: js.UndefOr[EventList] = js.undefined
   
-  var Id: js.UndefOr[NotificationId] = js.native
+  var Id: js.UndefOr[NotificationId] = js.undefined
   
   /**
     * Amazon SNS topic to which Amazon S3 will publish a message to report the specified events for the bucket.
     */
-  var Topic: js.UndefOr[TopicArn] = js.native
+  var Topic: js.UndefOr[TopicArn] = js.undefined
 }
 object TopicConfigurationDeprecated {
   

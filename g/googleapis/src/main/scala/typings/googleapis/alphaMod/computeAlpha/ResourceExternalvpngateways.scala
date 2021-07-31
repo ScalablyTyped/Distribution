@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Externalvpngateways")
@@ -32,7 +31,7 @@ class ResourceExternalvpngateways protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceExternalvpngatewaysDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceExternalvpngatewaysDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceExternalvpngateways protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaExternalVpnGateway] = js.native
   def get(callback: BodyResponseCallback[SchemaExternalVpnGateway]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExternalVpnGateway] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExternalVpnGateway] = js.native
   def get(params: ParamsResourceExternalvpngatewaysGet): GaxiosPromise[SchemaExternalVpnGateway] = js.native
   def get(
     params: ParamsResourceExternalvpngatewaysGet,
@@ -98,7 +97,7 @@ class ResourceExternalvpngateways protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceExternalvpngatewaysInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceExternalvpngatewaysInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -132,7 +131,7 @@ class ResourceExternalvpngateways protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
   def list(callback: BodyResponseCallback[SchemaExternalVpnGatewayList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
   def list(params: ParamsResourceExternalvpngatewaysList): GaxiosPromise[SchemaExternalVpnGatewayList] = js.native
   def list(
     params: ParamsResourceExternalvpngatewaysList,
@@ -167,7 +166,7 @@ class ResourceExternalvpngateways protected () extends StObject {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceExternalvpngatewaysSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(
     params: ParamsResourceExternalvpngatewaysSetlabels,
@@ -201,7 +200,7 @@ class ResourceExternalvpngateways protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceExternalvpngatewaysTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceExternalvpngatewaysTestiampermissions,

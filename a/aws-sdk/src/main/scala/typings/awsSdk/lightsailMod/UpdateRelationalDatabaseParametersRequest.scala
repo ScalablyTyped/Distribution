@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRelationalDatabaseParametersRequest extends StObject {
   
   /**
     * The database parameters to update.
     */
-  var parameters: RelationalDatabaseParameterList = js.native
+  var parameters: RelationalDatabaseParameterList
   
   /**
     * The name of your database for which to update parameters.
     */
-  var relationalDatabaseName: ResourceName = js.native
+  var relationalDatabaseName: ResourceName
 }
 object UpdateRelationalDatabaseParametersRequest {
   

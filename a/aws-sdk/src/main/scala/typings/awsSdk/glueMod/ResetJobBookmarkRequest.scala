@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResetJobBookmarkRequest extends StObject {
   
   /**
     * The name of the job in question.
     */
-  var JobName: typings.awsSdk.glueMod.JobName = js.native
+  var JobName: typings.awsSdk.glueMod.JobName
   
   /**
     * The unique run identifier associated with this job run.
     */
-  var RunId: js.UndefOr[typings.awsSdk.glueMod.RunId] = js.native
+  var RunId: js.UndefOr[typings.awsSdk.glueMod.RunId] = js.undefined
 }
 object ResetJobBookmarkRequest {
   

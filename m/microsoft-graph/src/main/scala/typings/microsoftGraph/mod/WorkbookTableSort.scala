@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookTableSort extends Entity {
+trait WorkbookTableSort
+  extends StObject
+     with Entity {
   
   // Represents the current conditions used to last sort the table. Read-only.
-  var fields: js.UndefOr[NullableOption[js.Array[WorkbookSortField]]] = js.native
+  var fields: js.UndefOr[NullableOption[js.Array[WorkbookSortField]]] = js.undefined
   
   // Represents whether the casing impacted the last sort of the table. Read-only.
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Represents Chinese character ordering method last used to sort the table. The possible values are: PinYin, StrokeCount.
     * Read-only.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
 }
 object WorkbookTableSort {
   

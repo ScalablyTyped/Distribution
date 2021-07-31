@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -19,24 +18,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link PathItem#getIntersections},
   * etc.
   */
-@js.native
 trait CurveLocation extends StObject {
   
   /** 
     * The curvature of the {@link #curve} at the given location.
     */
-  val curvature: Double = js.native
+  val curvature: Double
   
   /** 
     * The curve that this location belongs to.
     */
-  val curve: Curve = js.native
+  val curve: Curve
   
   /** 
     * The length of the curve from its beginning up to the location described
     * by this object.
     */
-  val curveOffset: Double = js.native
+  val curveOffset: Double
   
   /** 
     * The distance from the queried point to the returned location.
@@ -44,7 +42,7 @@ trait CurveLocation extends StObject {
     * @see Curve#getNearestLocation(point)
     * @see PathItem#getNearestLocation(point)
     */
-  val distance: Double = js.native
+  val distance: Double
   
   /** 
     * Checks whether tow CurveLocation objects are describing the same location
@@ -53,7 +51,7 @@ trait CurveLocation extends StObject {
     * 
     * @return true if the locations are equal
     */
-  def equals(location: CurveLocation): Boolean = js.native
+  def equals(location: CurveLocation): Boolean
   
   /** 
     * Checks if the location is an intersection with another curve and is
@@ -65,20 +63,20 @@ trait CurveLocation extends StObject {
     * @return true if the location is an intersection that is
     * part of an overlap between the two involved paths
     */
-  def hasOverlap(): Boolean = js.native
+  def hasOverlap(): Boolean
   
   /** 
     * The index of the {@link #curve} within the {@link Path#curves} list, if
     * it is part of a {@link Path} item.
     */
-  val index: Double = js.native
+  val index: Double
   
   /** 
     * The curve location on the intersecting curve, if this location is the
     * result of a call to {@link PathItem#getIntersections} /
     * {@link Curve#getIntersections}.
     */
-  val intersection: CurveLocation = js.native
+  val intersection: CurveLocation
   
   /** 
     * Checks if the location is an intersection with another curve and is
@@ -89,7 +87,7 @@ trait CurveLocation extends StObject {
     * @return true if the location is an intersection that is
     * crossing another curve
     */
-  def isCrossing(): Boolean = js.native
+  def isCrossing(): Boolean
   
   /** 
     * Checks if the location is an intersection with another curve and is
@@ -100,47 +98,47 @@ trait CurveLocation extends StObject {
     * @return true if the location is an intersection that is
     * merely touching another curve
     */
-  def isTouching(): Boolean = js.native
+  def isTouching(): Boolean
   
   /** 
     * The normal vector to the {@link #curve} at the given location.
     */
-  val normal: Point = js.native
+  val normal: Point
   
   /** 
     * The length of the path from its beginning up to the location described
     * by this object. If the curve is not part of a path, then the length
     * within the curve is returned instead.
     */
-  val offset: Double = js.native
+  val offset: Double
   
   /** 
     * The path that this locations is situated on.
     */
-  val path: Path = js.native
+  val path: Path
   
   /** 
     * The point which is defined by the {@link #curve} and
     * {@link #time}.
     */
-  val point: Point = js.native
+  val point: Point
   
   /** 
     * The segment of the curve which is closer to the described location.
     */
-  val segment: Segment = js.native
+  val segment: Segment
   
   /** 
     * The tangential vector to the {@link #curve} at the given location.
     */
-  val tangent: Point = js.native
+  val tangent: Point
   
   /** 
     * The curve-time parameter, as used by various bezier curve calculations.
     * It is value between `0` (beginning of the curve) and `1` (end of the
     * curve).
     */
-  val time: Double = js.native
+  val time: Double
 }
 object CurveLocation {
   

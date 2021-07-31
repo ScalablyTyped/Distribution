@@ -2,20 +2,20 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackgroundColorOptions extends CommonCallbackOptions {
+trait BackgroundColorOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   // 窗口的背景色，必须为十六进制颜色值
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   //  底部窗口的背景色，必须为十六进制颜色值，仅 iOS 支持
-  var backgroundColorBottom: js.UndefOr[String] = js.native
+  var backgroundColorBottom: js.UndefOr[String] = js.undefined
   
   // 顶部窗口的背景色，必须为十六进制颜色值，仅 iOS 支持
-  var backgroundColorTop: js.UndefOr[String] = js.native
+  var backgroundColorTop: js.UndefOr[String] = js.undefined
 }
 object BackgroundColorOptions {
   

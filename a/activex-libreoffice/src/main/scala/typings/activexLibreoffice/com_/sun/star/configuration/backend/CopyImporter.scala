@@ -4,15 +4,15 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * imports data into a configuration layer by copying over existing data.
   * @since OOo 1.1.2
   */
-@js.native
-trait CopyImporter extends Importer
+trait CopyImporter
+  extends StObject
+     with Importer
 object CopyImporter {
   
   @scala.inline
@@ -22,7 +22,7 @@ object CopyImporter {
     getTargetBackend: () => XBackend,
     importLayer: XLayer => Unit,
     importLayerForEntity: (XLayer, String) => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     setTargetBackend: XBackend => Unit

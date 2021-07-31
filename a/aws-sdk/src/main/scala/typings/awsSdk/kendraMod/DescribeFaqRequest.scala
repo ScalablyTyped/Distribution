@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFaqRequest extends StObject {
   
   /**
     * The unique identifier of the FAQ.
     */
-  var Id: FaqId = js.native
+  var Id: FaqId
   
   /**
     * The identifier of the index that contains the FAQ.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
 }
 object DescribeFaqRequest {
   

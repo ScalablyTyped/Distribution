@@ -8,7 +8,6 @@ import typings.webpackSources.libMod.CachedData
 import typings.webpackSources.libMod.SourceLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,10 +32,13 @@ object mod {
   }
   object CompatSource {
     
-    /* static member */
-    @JSImport("webpack-sources", "CompatSource.from")
+    @JSImport("webpack-sources", "CompatSource")
     @js.native
-    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource]
   }
   
   /**
@@ -133,20 +135,6 @@ object mod {
       sourceCode: String,
       name: String,
       sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: String
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: RawSourceMap
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
       originalSource: String,
       innerSourceMap: String
     ) = this()
@@ -160,15 +148,15 @@ object mod {
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: String
     ) = this()
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: RawSourceMap
     ) = this()
     def this(
@@ -188,16 +176,22 @@ object mod {
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: String
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: RawSourceMap
     ) = this()
     def this(
       sourceCode: String,
       name: String,
       sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
+      originalSource: String,
       innerSourceMap: String,
       removeOriginalSource: Boolean
     ) = this()
@@ -205,24 +199,8 @@ object mod {
       sourceCode: String,
       name: String,
       sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: RawSourceMap,
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
       originalSource: String,
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
-      originalSource: String,
-      innerSourceMap: String,
+      innerSourceMap: Unit,
       removeOriginalSource: Boolean
     ) = this()
     def this(
@@ -236,24 +214,24 @@ object mod {
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: String,
       removeOriginalSource: Boolean
     ) = this()
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
+      innerSourceMap: Unit,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: RawSourceMap,
       removeOriginalSource: Boolean
     ) = this()
@@ -262,14 +240,6 @@ object mod {
       name: String,
       sourceMap: SourceMapGenerator,
       originalSource: String,
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: String,
       innerSourceMap: String,
       removeOriginalSource: Boolean
     ) = this()
@@ -278,6 +248,38 @@ object mod {
       name: String,
       sourceMap: SourceMapGenerator,
       originalSource: String,
+      innerSourceMap: Unit,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: String,
+      innerSourceMap: RawSourceMap,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: String,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: Unit,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
       innerSourceMap: RawSourceMap,
       removeOriginalSource: Boolean
     ) = this()

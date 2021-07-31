@@ -7,17 +7,16 @@ import typings.vegaTypings.marktypeMod.MarkType
 import typings.vegaTypings.onEventsMod._EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
   
-  @js.native
   trait DerivedStream
-    extends _Stream
-       with StreamParameters {
+    extends StObject
+       with StreamParameters
+       with _Stream {
     
-    var stream: Stream = js.native
+    var stream: Stream
   }
   object DerivedStream {
     
@@ -35,9 +34,9 @@ object streamMod {
     }
   }
   
-  type EventSource = (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/stream.EventStream['source'] */ js.Any) with js.Object
+  type EventSource = (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/stream.EventStream['source'] */ js.Any) & js.Object
   
-  type EventStream = StreamParameters with (Source | Type)
+  type EventStream = StreamParameters & (Source | Type)
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.vegaTypingsStrings.click
@@ -121,12 +120,12 @@ object streamMod {
     def wheel: typings.vegaTypings.vegaTypingsStrings.wheel = "wheel".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.wheel]
   }
   
-  @js.native
   trait MergedStream
-    extends _Stream
-       with StreamParameters {
+    extends StObject
+       with StreamParameters
+       with _Stream {
     
-    var merge: js.Array[Stream] = js.native
+    var merge: js.Array[Stream]
   }
   object MergedStream {
     
@@ -154,22 +153,21 @@ object streamMod {
   */
   type Stream = _Stream | EventStream
   
-  @js.native
   trait StreamParameters extends StObject {
     
-    var between: js.UndefOr[js.Array[Stream]] = js.native
+    var between: js.UndefOr[js.Array[Stream]] = js.undefined
     
-    var consume: js.UndefOr[Boolean] = js.native
+    var consume: js.UndefOr[Boolean] = js.undefined
     
-    var debounce: js.UndefOr[Double] = js.native
+    var debounce: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[Expr | js.Array[Expr]] = js.native
+    var filter: js.UndefOr[Expr | js.Array[Expr]] = js.undefined
     
-    var markname: js.UndefOr[String] = js.native
+    var markname: js.UndefOr[String] = js.undefined
     
-    var marktype: js.UndefOr[MarkType] = js.native
+    var marktype: js.UndefOr[MarkType] = js.undefined
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object StreamParameters {
     
@@ -234,7 +232,9 @@ object streamMod {
   
   type WindowEventType = EventType | String
   
-  trait _Stream extends _EventListener
+  trait _Stream
+    extends StObject
+       with _EventListener
   object _Stream {
     
     @scala.inline

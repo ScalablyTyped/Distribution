@@ -3,32 +3,29 @@ package typings.dependencySolver
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dependency-solver", "addMissingKeys")
+  @JSImport("dependency-solver", JSImport.Namespace)
   @js.native
-  def addMissingKeys(g: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dependency-solver", "getDependedBy")
-  @js.native
-  def getDependedBy(g: StringDictionary[js.Array[String]]): StringDictionary[Double] = js.native
+  @scala.inline
+  def addMissingKeys(g: StringDictionary[js.Array[String]]): StringDictionary[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMissingKeys")(g.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[String]]]
   
-  @JSImport("dependency-solver", "getDependencyLines")
-  @js.native
-  def getDependencyLines(g: StringDictionary[js.Array[String]]): js.Array[js.Tuple2[String, String]] = js.native
+  @scala.inline
+  def getDependedBy(g: StringDictionary[js.Array[String]]): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependedBy")(g.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Double]]
   
-  @JSImport("dependency-solver", "getEdges")
-  @js.native
-  def getEdges(g: StringDictionary[js.Array[String]]): StringDictionary[Double] = js.native
+  @scala.inline
+  def getDependencyLines(g: StringDictionary[js.Array[String]]): js.Array[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependencyLines")(g.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, String]]]
   
-  @JSImport("dependency-solver", "getInDegree")
-  @js.native
-  def getInDegree(g: StringDictionary[js.Array[String]]): js.Array[js.Tuple2[String, String]] = js.native
+  @scala.inline
+  def getEdges(g: StringDictionary[js.Array[String]]): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdges")(g.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Double]]
   
-  @JSImport("dependency-solver", "solve")
-  @js.native
-  def solve(g: StringDictionary[js.Array[String]]): js.Array[String] = js.native
+  @scala.inline
+  def getInDegree(g: StringDictionary[js.Array[String]]): js.Array[js.Tuple2[String, String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInDegree")(g.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[String, String]]]
+  
+  @scala.inline
+  def solve(g: StringDictionary[js.Array[String]]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("solve")(g.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

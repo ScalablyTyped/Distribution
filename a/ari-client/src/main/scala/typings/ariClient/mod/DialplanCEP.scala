@@ -2,36 +2,34 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialplanCEP extends StObject {
   
   /**
     * Parameter of current dialplan application.
     */
-  var app_data: String = js.native
+  var app_data: String
   
   /**
     * Name of current dialplan application.
     */
-  var app_name: String = js.native
+  var app_name: String
   
   /**
     * Context in the dialplan.
     */
-  var context: String = js.native
+  var context: String
   
   /**
     * Extension in the dialplan.
     */
-  var exten: String = js.native
+  var exten: String
   
   /**
     * Priority in the dialplan.
     */
-  var priority: Double = js.native
+  var priority: Double
 }
 object DialplanCEP {
   

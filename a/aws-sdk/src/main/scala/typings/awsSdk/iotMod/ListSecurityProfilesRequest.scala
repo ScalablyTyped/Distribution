@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecurityProfilesRequest extends StObject {
   
   /**
     * A filter to limit results to the security profiles that use the defined dimension.
     */
-  var dimensionName: js.UndefOr[DimensionName] = js.native
+  var dimensionName: js.UndefOr[DimensionName] = js.undefined
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListSecurityProfilesRequest {
   

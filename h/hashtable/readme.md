@@ -12,7 +12,7 @@ Native HashTable and ES6 compatible Map for Node.js
 | Keywords           | hash, map, hashmap, hashtable, container |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 8221 |
+| # downloads        | 5437 |
 | # stars            | 13 |
 
 ## Links

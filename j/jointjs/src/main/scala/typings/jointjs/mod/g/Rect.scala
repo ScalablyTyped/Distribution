@@ -2,33 +2,29 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Rect")
 @js.native
-class Rect () extends PlainRect {
+class Rect ()
+  extends StObject
+     with PlainRect {
   def this(r: PlainRect) = this()
   def this(x: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
+  def this(x: Unit, y: Double) = this()
   def this(x: Double, y: Double, width: Double) = this()
-  def this(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
-  def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
-  def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
-  def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+  def this(x: Double, y: Unit, width: Double) = this()
+  def this(x: Unit, y: Double, width: Double) = this()
+  def this(x: Unit, y: Unit, width: Double) = this()
   def this(x: Double, y: Double, width: Double, height: Double) = this()
+  def this(x: Double, y: Double, width: Unit, height: Double) = this()
+  def this(x: Double, y: Unit, width: Double, height: Double) = this()
+  def this(x: Double, y: Unit, width: Unit, height: Double) = this()
+  def this(x: Unit, y: Double, width: Double, height: Double) = this()
+  def this(x: Unit, y: Double, width: Unit, height: Double) = this()
+  def this(x: Unit, y: Unit, width: Double, height: Double) = this()
+  def this(x: Unit, y: Unit, width: Unit, height: Double) = this()
   
   def bbox(): Rect = js.native
   def bbox(angle: Double): Rect = js.native
@@ -52,10 +48,13 @@ class Rect () extends PlainRect {
   
   def equals(r: PlainRect): Boolean = js.native
   
+  /* CompleteClass */
+  var height: Double = js.native
+  
   def inflate(): this.type = js.native
-  def inflate(dx: js.UndefOr[scala.Nothing], dy: Double): this.type = js.native
   def inflate(dx: Double): this.type = js.native
   def inflate(dx: Double, dy: Double): this.type = js.native
+  def inflate(dx: Unit, dy: Double): this.type = js.native
   
   def intersect(r: Rect): Rect | Null = js.native
   
@@ -81,9 +80,9 @@ class Rect () extends PlainRect {
   def normalize(): this.type = js.native
   
   def offset(): this.type = js.native
-  def offset(dx: js.UndefOr[scala.Nothing], dy: Double): this.type = js.native
   def offset(dx: Double): this.type = js.native
   def offset(dx: Double, dy: Double): this.type = js.native
+  def offset(dx: Unit, dy: Double): this.type = js.native
   def offset(p: PlainPoint): this.type = js.native
   
   def origin(): Point = js.native
@@ -119,17 +118,29 @@ class Rect () extends PlainRect {
   def topRight(): Point = js.native
   
   def translate(): this.type = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): this.type = js.native
   def translate(tx: Double): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
+  def translate(tx: Unit, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
   
   def union(rect: PlainRect): Rect = js.native
+  
+  /* CompleteClass */
+  var width: Double = js.native
+  
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /* CompleteClass */
+  var y: Double = js.native
 }
 object Rect {
   
-  /* static member */
-  @JSImport("jointjs", "g.Rect.fromEllipse")
+  @JSImport("jointjs", "g.Rect")
   @js.native
-  def fromEllipse(e: Ellipse): Rect = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromEllipse(e: Ellipse): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEllipse")(e.asInstanceOf[js.Any]).asInstanceOf[Rect]
 }

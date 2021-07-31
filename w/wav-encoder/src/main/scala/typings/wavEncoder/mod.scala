@@ -5,7 +5,6 @@ import typings.std.Float32Array
 import typings.wavEncoder.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,21 +16,18 @@ object mod {
   @JSImport("wav-encoder", "encode")
   @js.native
   def encode: Call = js.native
-  @JSImport("wav-encoder", "encode")
-  @js.native
-  def encode(audioData: AudioData): js.Promise[ArrayBuffer] = js.native
-  @JSImport("wav-encoder", "encode")
-  @js.native
-  def encode(audioData: AudioData, opts: Options): js.Promise[ArrayBuffer] = js.native
+  @scala.inline
+  def encode(audioData: AudioData): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(audioData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
+  @scala.inline
+  def encode(audioData: AudioData, opts: Options): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(audioData.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
   @scala.inline
   def encode_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encode")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait AudioData extends StObject {
     
-    var channelData: js.Array[Float32Array] = js.native
+    var channelData: js.Array[Float32Array]
     
-    var sampleRate: Double = js.native
+    var sampleRate: Double
   }
   object AudioData {
     
@@ -55,14 +51,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var bitDepth: Double = js.native
+    var bitDepth: Double
     
-    var float: Boolean = js.native
+    var float: Boolean
     
-    var symmetric: Boolean = js.native
+    var symmetric: Boolean
   }
   object Options {
     

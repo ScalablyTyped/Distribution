@@ -2,17 +2,15 @@ package typings.reactAsync.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenInitial extends StObject {
   
-  var children: js.Any = js.native
+  var children: js.Any
   
-  var initial: js.Any = js.native
+  var initial: js.Any
   
-  var state: js.Any = js.native
+  var state: js.Any
 }
 object ChildrenInitial {
   

@@ -3,40 +3,38 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.TextRange2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selection extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val ChildShapeRange: typings.activexPowerpoint.PowerPoint.ShapeRange = js.native
+  val ChildShapeRange: typings.activexPowerpoint.PowerPoint.ShapeRange
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val HasChildShapeRange: Boolean = js.native
+  val HasChildShapeRange: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Selection_typekey")
-  var PowerPointDotSelection_typekey: Selection = js.native
+  var PowerPointDotSelection_typekey: Selection
   
-  val ShapeRange: typings.activexPowerpoint.PowerPoint.ShapeRange = js.native
+  val ShapeRange: typings.activexPowerpoint.PowerPoint.ShapeRange
   
-  val SlideRange: typings.activexPowerpoint.PowerPoint.SlideRange = js.native
+  val SlideRange: typings.activexPowerpoint.PowerPoint.SlideRange
   
-  val TextRange: typings.activexPowerpoint.PowerPoint.TextRange = js.native
+  val TextRange: typings.activexPowerpoint.PowerPoint.TextRange
   
-  val TextRange2: typings.activexOffice.Office.TextRange2 = js.native
+  val TextRange2: typings.activexOffice.Office.TextRange2
   
-  val Type: PpSelectionType = js.native
+  val Type: PpSelectionType
   
-  def Unselect(): Unit = js.native
+  def Unselect(): Unit
 }
 object Selection {
   

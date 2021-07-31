@@ -3,11 +3,11 @@ package typings.extjs.Ext.grid
 import typings.extjs.Ext.container.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRowEditorButtons extends IContainer
+trait IRowEditorButtons
+  extends StObject
+     with IContainer
 object IRowEditorButtons {
   
   @scala.inline

@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableAddOnRequest extends StObject {
   
   /**
     * An array of strings representing the add-on to enable or modify.
     */
-  var addOnRequest: AddOnRequest = js.native
+  var addOnRequest: AddOnRequest
   
   /**
     * The name of the source resource for which to enable or modify the add-on.
     */
-  var resourceName: ResourceName = js.native
+  var resourceName: ResourceName
 }
 object EnableAddOnRequest {
   

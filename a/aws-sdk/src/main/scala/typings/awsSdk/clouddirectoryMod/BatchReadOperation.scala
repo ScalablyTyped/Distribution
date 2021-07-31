@@ -2,78 +2,76 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchReadOperation extends StObject {
   
   /**
     * Retrieves attributes that are associated with a typed link.
     */
-  var GetLinkAttributes: js.UndefOr[BatchGetLinkAttributes] = js.native
+  var GetLinkAttributes: js.UndefOr[BatchGetLinkAttributes] = js.undefined
   
   /**
     * Retrieves attributes within a facet that are associated with an object.
     */
-  var GetObjectAttributes: js.UndefOr[BatchGetObjectAttributes] = js.native
+  var GetObjectAttributes: js.UndefOr[BatchGetObjectAttributes] = js.undefined
   
   /**
     * Retrieves metadata about an object.
     */
-  var GetObjectInformation: js.UndefOr[BatchGetObjectInformation] = js.native
+  var GetObjectInformation: js.UndefOr[BatchGetObjectInformation] = js.undefined
   
   /**
     * Lists indices attached to an object.
     */
-  var ListAttachedIndices: js.UndefOr[BatchListAttachedIndices] = js.native
+  var ListAttachedIndices: js.UndefOr[BatchListAttachedIndices] = js.undefined
   
   /**
     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
     */
-  var ListIncomingTypedLinks: js.UndefOr[BatchListIncomingTypedLinks] = js.native
+  var ListIncomingTypedLinks: js.UndefOr[BatchListIncomingTypedLinks] = js.undefined
   
   /**
     * Lists objects attached to the specified index.
     */
-  var ListIndex: js.UndefOr[BatchListIndex] = js.native
+  var ListIndex: js.UndefOr[BatchListIndex] = js.undefined
   
   /**
     * Lists all attributes that are associated with an object.
     */
-  var ListObjectAttributes: js.UndefOr[BatchListObjectAttributes] = js.native
+  var ListObjectAttributes: js.UndefOr[BatchListObjectAttributes] = js.undefined
   
   /**
     * Returns a paginated list of child objects that are associated with a given object.
     */
-  var ListObjectChildren: js.UndefOr[BatchListObjectChildren] = js.native
+  var ListObjectChildren: js.UndefOr[BatchListObjectChildren] = js.undefined
   
   /**
     * Retrieves all available parent paths for any object type such as node, leaf node, policy node, and index node objects. For more information about objects, see Directory Structure.
     */
-  var ListObjectParentPaths: js.UndefOr[BatchListObjectParentPaths] = js.native
+  var ListObjectParentPaths: js.UndefOr[BatchListObjectParentPaths] = js.undefined
   
-  var ListObjectParents: js.UndefOr[BatchListObjectParents] = js.native
+  var ListObjectParents: js.UndefOr[BatchListObjectParents] = js.undefined
   
   /**
     * Returns policies attached to an object in pagination fashion.
     */
-  var ListObjectPolicies: js.UndefOr[BatchListObjectPolicies] = js.native
+  var ListObjectPolicies: js.UndefOr[BatchListObjectPolicies] = js.undefined
   
   /**
     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
     */
-  var ListOutgoingTypedLinks: js.UndefOr[BatchListOutgoingTypedLinks] = js.native
+  var ListOutgoingTypedLinks: js.UndefOr[BatchListOutgoingTypedLinks] = js.undefined
   
   /**
     * Returns all of the ObjectIdentifiers to which a given policy is attached.
     */
-  var ListPolicyAttachments: js.UndefOr[BatchListPolicyAttachments] = js.native
+  var ListPolicyAttachments: js.UndefOr[BatchListPolicyAttachments] = js.undefined
   
   /**
     * Lists all policies from the root of the Directory to the object specified. If there are no policies present, an empty list is returned. If policies are present, and if some objects don't have the policies attached, it returns the ObjectIdentifier for such objects. If policies are present, it returns ObjectIdentifier, policyId, and policyType. Paths that don't lead to the root from the target object are ignored. For more information, see Policies.
     */
-  var LookupPolicy: js.UndefOr[BatchLookupPolicy] = js.native
+  var LookupPolicy: js.UndefOr[BatchLookupPolicy] = js.undefined
 }
 object BatchReadOperation {
   

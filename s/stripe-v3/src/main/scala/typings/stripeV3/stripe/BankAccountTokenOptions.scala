@@ -4,41 +4,39 @@ import typings.stripeV3.stripeV3Strings.company
 import typings.stripeV3.stripeV3Strings.individual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BankAccountTokenOptions extends StObject {
   
   /**
     * The name of the account holder.
     */
-  var account_holder_name: String = js.native
+  var account_holder_name: String
   
   /**
     * The type of entity that holds the account. Can be either individual or company.
     */
-  var account_holder_type: individual | company = js.native
+  var account_holder_type: individual | company
   
   /**
     * The bank account number (e.g., 000123456789).
     */
-  var account_number: String = js.native
+  var account_number: String
   
   /**
     * Two character country code (e.g., US).
     */
-  var country: String = js.native
+  var country: String
   
   /**
     * Three character currency code (e.g., usd).
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * The bank routing number (e.g., 111000025). Optional if the currency is eur, as the account number is an IBAN.
     */
-  var routing_number: js.UndefOr[String] = js.native
+  var routing_number: js.UndefOr[String] = js.undefined
 }
 object BankAccountTokenOptions {
   

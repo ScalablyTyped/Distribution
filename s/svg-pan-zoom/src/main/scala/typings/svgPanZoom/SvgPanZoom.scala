@@ -8,19 +8,17 @@ import typings.svgPanZoom.anon.Height
 import typings.svgPanZoom.svgPanZoomStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SvgPanZoom {
   
-  @js.native
   trait CustomEventHandler extends StObject {
     
-    var destroy: js.Function = js.native
+    var destroy: js.Function
     
-    var haltEventListeners: js.Array[String] = js.native
+    var haltEventListeners: js.Array[String]
     
-    def init(options: CustomEventOptions): Unit = js.native
+    def init(options: CustomEventOptions): Unit
   }
   object CustomEventHandler {
     
@@ -47,7 +45,6 @@ object SvgPanZoom {
     }
   }
   
-  @js.native
   trait CustomEventOptions extends StObject {
     
     /**
@@ -57,16 +54,34 @@ object SvgPanZoom {
       * @param  {Object} options        provides customization options at the initialization of the object.
       * @return {Instance}              Current instance
       */
-    def instance(svg: String): Instance = js.native
-    def instance(svg: String, options: Options): Instance = js.native
-    def instance(svg: HTMLElement): Instance = js.native
-    def instance(svg: HTMLElement, options: Options): Instance = js.native
-    def instance(svg: SVGElement): Instance = js.native
-    def instance(svg: SVGElement, options: Options): Instance = js.native
+    def instance(svg: String): Instance
+    def instance(svg: String, options: Options): Instance
+    def instance(svg: HTMLElement): Instance
+    def instance(svg: HTMLElement, options: Options): Instance
+    def instance(svg: SVGElement): Instance
+    def instance(svg: SVGElement, options: Options): Instance
     @JSName("instance")
-    var instance_Original: Instance = js.native
+    var instance_Original: Instance
     
-    var svgElement: SVGSVGElement = js.native
+    var svgElement: SVGSVGElement
+  }
+  object CustomEventOptions {
+    
+    @scala.inline
+    def apply(instance: Instance, svgElement: SVGSVGElement): CustomEventOptions = {
+      val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], svgElement = svgElement.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomEventOptions]
+    }
+    
+    @scala.inline
+    implicit class CustomEventOptionsMutableBuilder[Self <: CustomEventOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSvgElement(value: SVGSVGElement): Self = StObject.set(x, "svgElement", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -242,88 +257,87 @@ object SvgPanZoom {
     def zoomOut(): Instance = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     var beforePan: js.UndefOr[
         js.Function2[/* oldPan */ Point, /* newPan */ Point, Unit | Boolean | PointModifier]
-      ] = js.native
+      ] = js.undefined
     
     // (default 'auto')
-    var beforeZoom: js.UndefOr[js.Function2[/* oldScale */ Double, /* newScale */ Double, Unit | Boolean]] = js.native
+    var beforeZoom: js.UndefOr[js.Function2[/* oldScale */ Double, /* newScale */ Double, Unit | Boolean]] = js.undefined
     
     // (default true)
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     // enable or disable viewport fit in SVG (default true)
-    var contain: js.UndefOr[Boolean] = js.native
+    var contain: js.UndefOr[Boolean] = js.undefined
     
     /**
       * insert icons to give user an option in addition to mouse events to control pan/zoom (default disabled)
       * @type {boolean}
       */
-    var controlIconsEnabled: js.UndefOr[Boolean] = js.native
+    var controlIconsEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var customEventsHandler: js.UndefOr[CustomEventHandler] = js.native
+    var customEventsHandler: js.UndefOr[CustomEventHandler] = js.undefined
     
     /**
       * enable or disable zooming by double clicking (default enabled)
       * @type {boolean}
       */
-    var dblClickZoomEnabled: js.UndefOr[Boolean] = js.native
+    var dblClickZoomEnabled: js.UndefOr[Boolean] = js.undefined
     
     // (default null)
-    var eventsListenerElement: js.UndefOr[SVGElement] = js.native
+    var eventsListenerElement: js.UndefOr[SVGElement] = js.undefined
     
     // Maximum Zoom level  (Default 10)
-    var fit: js.UndefOr[Boolean] = js.native
+    var fit: js.UndefOr[Boolean] = js.undefined
     
     // Minimum Zoom level (Default 0.5)
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
     // Zoom sensitivity (Default 0.2)
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
     /**
       * enable or disable zooming by scrolling (default enabled)
       * @type {boolean}
       */
-    var mouseWheelZoomEnabled: js.UndefOr[Boolean] = js.native
+    var mouseWheelZoomEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var onPan: js.UndefOr[js.Function1[/* newPan */ Point, Unit]] = js.native
+    var onPan: js.UndefOr[js.Function1[/* newPan */ Point, Unit]] = js.undefined
     
-    var onUpdatedCTM: js.UndefOr[js.Function1[/* newCTM */ SVGMatrix, Unit]] = js.native
+    var onUpdatedCTM: js.UndefOr[js.Function1[/* newCTM */ SVGMatrix, Unit]] = js.undefined
     
-    var onZoom: js.UndefOr[js.Function1[/* newScale */ Double, Unit]] = js.native
+    var onZoom: js.UndefOr[js.Function1[/* newScale */ Double, Unit]] = js.undefined
     
     /**
       * enable or disable panning (default enabled)
       * @type {boolean}
       */
-    var panEnabled: js.UndefOr[Boolean] = js.native
+    var panEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * prevent mouse events to bubble up (default enabled)
       * @type {boolean}
       */
-    var preventMouseEventsDefault: js.UndefOr[Boolean] = js.native
+    var preventMouseEventsDefault: js.UndefOr[Boolean] = js.undefined
     
     // enable or disable viewport centering in SVG (default true)
-    var refreshRate: js.UndefOr[Double | auto] = js.native
+    var refreshRate: js.UndefOr[Double | auto] = js.undefined
     
     /**
       * can be querySelector string or SVGElement (default enabled)
       * @type {string|HTMLElement|SVGElement}
       */
-    var viewportSelector: js.UndefOr[String | HTMLElement | SVGElement] = js.native
+    var viewportSelector: js.UndefOr[String | HTMLElement | SVGElement] = js.undefined
     
     /**
       * enable or disable zooming (default enabled)
       * @type {boolean}
       */
-    var zoomEnabled: js.UndefOr[Boolean] = js.native
+    var zoomEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var zoomScaleSensitivity: js.UndefOr[Double] = js.native
+    var zoomScaleSensitivity: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -464,12 +478,11 @@ object SvgPanZoom {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -490,12 +503,11 @@ object SvgPanZoom {
     }
   }
   
-  @js.native
   trait PointModifier extends StObject {
     
-    var x: Double | Boolean = js.native
+    var x: Double | Boolean
     
-    var y: Double | Boolean = js.native
+    var y: Double | Boolean
   }
   object PointModifier {
     
@@ -516,16 +528,15 @@ object SvgPanZoom {
     }
   }
   
-  @js.native
   trait Sizes extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var realZoom: Double = js.native
+    var realZoom: Double
     
-    var viewBox: Height = js.native
+    var viewBox: Height
     
-    var width: Double = js.native
+    var width: Double
   }
   object Sizes {
     

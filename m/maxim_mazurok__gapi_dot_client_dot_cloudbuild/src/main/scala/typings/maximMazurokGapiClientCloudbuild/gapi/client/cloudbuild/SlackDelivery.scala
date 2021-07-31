@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlackDelivery extends StObject {
   
   /** The secret reference for the Slack webhook URI for sending messages to a channel. */
-  var webhookUri: js.UndefOr[NotifierSecretRef] = js.native
+  var webhookUri: js.UndefOr[NotifierSecretRef] = js.undefined
 }
 object SlackDelivery {
   

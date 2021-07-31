@@ -2,27 +2,27 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadControlUploadingProgressChangedEventArgs extends EventArgs {
+trait UploadControlUploadingProgressChangedEventArgs
+  extends StObject
+     with EventArgs {
   
-  val currentFileContentLength: Double = js.native
+  val currentFileContentLength: Double
   
-  val currentFileName: String = js.native
+  val currentFileName: String
   
-  val currentFileProgress: Double = js.native
+  val currentFileProgress: Double
   
-  val currentFileUploadedContentLength: Double = js.native
+  val currentFileUploadedContentLength: Double
   
-  val fileCount: Double = js.native
+  val fileCount: Double
   
-  val progress: Double = js.native
+  val progress: Double
   
-  val totalContentLength: Double = js.native
+  val totalContentLength: Double
   
-  val uploadedContentLength: Double = js.native
+  val uploadedContentLength: Double
 }
 object UploadControlUploadingProgressChangedEventArgs {
   

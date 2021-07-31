@@ -2,34 +2,32 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An offline file annotation request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1AsyncAnnotateFileRequest extends StObject {
   
   /**
     * Required. Requested features.
     */
-  var features: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1Feature]] = js.native
+  var features: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1Feature]] = js.undefined
   
   /**
     * Additional context that may accompany the image(s) in the file.
     */
-  var imageContext: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ImageContext] = js.native
+  var imageContext: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ImageContext] = js.undefined
   
   /**
     * Required. Information about the input file.
     */
-  var inputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1InputConfig] = js.native
+  var inputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1InputConfig] = js.undefined
   
   /**
     * Required. The desired output location and metadata (e.g. format).
     */
-  var outputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1OutputConfig] = js.native
+  var outputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1OutputConfig] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1AsyncAnnotateFileRequest {
   

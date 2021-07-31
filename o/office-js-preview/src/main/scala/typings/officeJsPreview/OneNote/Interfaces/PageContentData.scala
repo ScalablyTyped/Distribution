@@ -7,11 +7,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Other
 import typings.officeJsPreview.officeJsPreviewStrings.Outline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "pageContent.toJSON()". */
-@js.native
 trait PageContentData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var image: js.UndefOr[ImageData] = js.native
+  var image: js.UndefOr[ImageData] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ink: js.UndefOr[FloatingInkData] = js.native
+  var ink: js.UndefOr[FloatingInkData] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var outline: js.UndefOr[OutlineData] = js.native
+  var outline: js.UndefOr[OutlineData] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait PageContentData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var `type`: js.UndefOr[PageContentType | Outline | Image | Ink | Other] = js.native
+  var `type`: js.UndefOr[PageContentType | Outline | Image | Ink | Other] = js.undefined
 }
 object PageContentData {
   

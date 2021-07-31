@@ -2,21 +2,19 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOperationsResponse extends StObject {
   
   /**
     * If there are more operations than you specified for MaxItems in the request, submit another request and include the value of NextPageMarker in the value of Marker.
     */
-  var NextPageMarker: js.UndefOr[PageMarker] = js.native
+  var NextPageMarker: js.UndefOr[PageMarker] = js.undefined
   
   /**
     * Lists summaries of the operations.
     */
-  var Operations: OperationSummaryList = js.native
+  var Operations: OperationSummaryList
 }
 object ListOperationsResponse {
   

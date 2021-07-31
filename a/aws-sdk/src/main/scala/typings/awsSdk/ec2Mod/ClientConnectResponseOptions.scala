@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientConnectResponseOptions extends StObject {
   
   /**
     * Indicates whether client connect options are enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Lambda function used for connection authorization.
     */
-  var LambdaFunctionArn: js.UndefOr[String] = js.native
+  var LambdaFunctionArn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of any updates to the client connect options.
     */
-  var Status: js.UndefOr[ClientVpnEndpointAttributeStatus] = js.native
+  var Status: js.UndefOr[ClientVpnEndpointAttributeStatus] = js.undefined
 }
 object ClientConnectResponseOptions {
   

@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartClickEventAxisObject extends StObject {
   
   /**
     * Axis at the clicked spot.
     */
-  var axis: Axis = js.native
+  var axis: Axis
   
   /**
     * Axis value at the clicked spot.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object ChartClickEventAxisObject {
   

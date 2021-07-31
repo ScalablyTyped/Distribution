@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,18 +25,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .addItem("radio button two title", "radio_two_value", true)
   *         .addItem("radio button three title", "radio_three_value", false);
   */
-@js.native
 trait SelectionInput extends StObject {
   
-  def addItem(text: js.Any, value: js.Any, selected: Boolean): SelectionInput = js.native
+  def addItem(text: js.Any, value: js.Any, selected: Boolean): SelectionInput
   
-  def setFieldName(fieldName: String): SelectionInput = js.native
+  def setFieldName(fieldName: String): SelectionInput
   
-  def setOnChangeAction(action: Action): SelectionInput = js.native
+  def setOnChangeAction(action: Action): SelectionInput
   
-  def setTitle(title: String): SelectionInput = js.native
+  def setTitle(title: String): SelectionInput
   
-  def setType(`type`: SelectionInputType): SelectionInput = js.native
+  def setType(`type`: SelectionInputType): SelectionInput
 }
 object SelectionInput {
   

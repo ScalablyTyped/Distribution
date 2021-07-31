@@ -9,30 +9,24 @@ import typings.vexflow.anon.Name
 import typings.vexflow.anon.Visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stave extends StObject {
   
   def addClef(clef: String): Stave = js.native
-  def addClef(
-    clef: String,
-    size: js.UndefOr[scala.Nothing],
-    annotation: js.UndefOr[scala.Nothing],
-    position: Position
-  ): Stave = js.native
-  def addClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String): Stave = js.native
-  def addClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String, position: Position): Stave = js.native
   def addClef(clef: String, size: String): Stave = js.native
-  def addClef(clef: String, size: String, annotation: js.UndefOr[scala.Nothing], position: Position): Stave = js.native
   def addClef(clef: String, size: String, annotation: String): Stave = js.native
   def addClef(clef: String, size: String, annotation: String, position: Position): Stave = js.native
+  def addClef(clef: String, size: String, annotation: Unit, position: Position): Stave = js.native
+  def addClef(clef: String, size: Unit, annotation: String): Stave = js.native
+  def addClef(clef: String, size: Unit, annotation: String, position: Position): Stave = js.native
+  def addClef(clef: String, size: Unit, annotation: Unit, position: Position): Stave = js.native
   
   def addEndClef(clef: String): Stave = js.native
-  def addEndClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String): Stave = js.native
   def addEndClef(clef: String, size: String): Stave = js.native
   def addEndClef(clef: String, size: String, annotation: String): Stave = js.native
+  def addEndClef(clef: String, size: Unit, annotation: String): Stave = js.native
   
   def addEndGlyph(glypg: Glyph): Stave = js.native
   
@@ -76,9 +70,9 @@ trait Stave extends StObject {
   def getModifierXShift(index: Double): Double = js.native
   
   def getModifiers(): js.Array[StaveModifier] = js.native
-  def getModifiers(position: js.UndefOr[scala.Nothing], category: String): js.Array[StaveModifier] = js.native
   def getModifiers(position: Double): js.Array[StaveModifier] = js.native
   def getModifiers(position: Double, category: String): js.Array[StaveModifier] = js.native
+  def getModifiers(position: Unit, category: String): js.Array[StaveModifier] = js.native
   
   def getNoteEndX(): Double = js.native
   
@@ -124,9 +118,9 @@ trait Stave extends StObject {
   def setEndBarType(`type`: `type`): Stave = js.native
   
   def setEndClef(clef: String): Stave = js.native
-  def setEndClef(clef: String, size: js.UndefOr[scala.Nothing], annotation: String): Stave = js.native
   def setEndClef(clef: String, size: String): Stave = js.native
   def setEndClef(clef: String, size: String, annotation: String): Stave = js.native
+  def setEndClef(clef: String, size: Unit, annotation: String): Stave = js.native
   
   def setKeySignature(keySpec: String, cancelKeySpec: String): Stave = js.native
   def setKeySignature(keySpec: String, cancelKeySpec: String, position: Position): Stave = js.native

@@ -10,9 +10,9 @@ Node.js object hash library with properties/arrays sorting to provide constant h
 | ------------------ | :-------------: |
 | Full name          | node-object-hash |
 | Keywords           | hash, object, hash-object, object-hash, es6, crypto |
-| # releases         | 4 |
-| # dependents       | 74 |
-| # downloads        | 27995388 |
+| # releases         | 5 |
+| # dependents       | 76 |
+| # downloads        | 39451017 |
 | # stars            | 2 |
 
 ## Links

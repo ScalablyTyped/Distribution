@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInputRequest extends StObject {
   
   /**
     * The definition of the input.
     */
-  var inputDefinition: InputDefinition = js.native
+  var inputDefinition: InputDefinition
   
   /**
     * A brief description of the input.
     */
-  var inputDescription: js.UndefOr[InputDescription] = js.native
+  var inputDescription: js.UndefOr[InputDescription] = js.undefined
   
   /**
     * The name you want to give to the input.
     */
-  var inputName: InputName = js.native
+  var inputName: InputName
   
   /**
     * Metadata that can be used to manage the input.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateInputRequest {
   

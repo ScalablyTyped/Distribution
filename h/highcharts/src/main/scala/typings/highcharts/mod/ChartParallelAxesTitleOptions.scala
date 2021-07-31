@@ -2,15 +2,13 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartParallelAxesTitleOptions extends StObject {
   
-  var reserveSpace: js.UndefOr[Boolean] = js.native
+  var reserveSpace: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Alignment of the text, can be `"left"`, `"right"` or
@@ -40,7 +38,7 @@ trait ChartParallelAxesTitleOptions extends StObject {
     * - for `align` = `"high"` and `opposite` = `false` `textAlign` is set to
     * `right`
     */
-  var textAlign: js.UndefOr[AlignValue] = js.native
+  var textAlign: js.UndefOr[AlignValue] = js.undefined
 }
 object ChartParallelAxesTitleOptions {
   

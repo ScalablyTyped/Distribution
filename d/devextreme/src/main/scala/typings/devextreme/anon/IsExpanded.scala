@@ -6,49 +6,47 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsExpanded extends StObject {
   
-  var cellElement: js.UndefOr[dxElement] = js.native
+  var cellElement: js.UndefOr[dxElement] = js.undefined
   
-  var column: js.UndefOr[dxDataGridColumn] = js.native
+  var column: js.UndefOr[dxDataGridColumn] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var displayValue: js.UndefOr[js.Any] = js.native
+  var displayValue: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var isNewRow: js.UndefOr[Boolean] = js.native
+  var isNewRow: js.UndefOr[Boolean] = js.undefined
   
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var oldValue: js.UndefOr[js.Any] = js.native
+  var oldValue: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowType: js.UndefOr[String] = js.native
+  var rowType: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
-  var watch: js.UndefOr[js.Function] = js.native
+  var watch: js.UndefOr[js.Function] = js.undefined
 }
 object IsExpanded {
   

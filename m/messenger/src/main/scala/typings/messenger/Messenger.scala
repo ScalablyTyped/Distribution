@@ -2,21 +2,19 @@ package typings.messenger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Messenger extends StObject {
   
   /**
     * Hides all messages.
     */
-  def hideAll(): Unit = js.native
+  def hideAll(): Unit
   
   /**
     * Posts a message.
     */
-  def post(options: MessageOptions): Message = js.native
+  def post(options: MessageOptions): Message
 }
 object Messenger {
   

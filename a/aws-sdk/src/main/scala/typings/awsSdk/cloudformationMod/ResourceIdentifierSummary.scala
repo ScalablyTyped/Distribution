@@ -2,26 +2,24 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIdentifierSummary extends StObject {
   
   /**
     * The logical IDs of the target resources of the specified ResourceType, as defined in the import template.
     */
-  var LogicalResourceIds: js.UndefOr[typings.awsSdk.cloudformationMod.LogicalResourceIds] = js.native
+  var LogicalResourceIds: js.UndefOr[typings.awsSdk.cloudformationMod.LogicalResourceIds] = js.undefined
   
   /**
     * The resource properties you can provide during the import to identify your target resources. For example, BucketName is a possible identifier property for AWS::S3::Bucket resources.
     */
-  var ResourceIdentifiers: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceIdentifiers] = js.native
+  var ResourceIdentifiers: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceIdentifiers] = js.undefined
   
   /**
     * The template resource type of the target resources, such as AWS::S3::Bucket.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceType] = js.undefined
 }
 object ResourceIdentifierSummary {
   

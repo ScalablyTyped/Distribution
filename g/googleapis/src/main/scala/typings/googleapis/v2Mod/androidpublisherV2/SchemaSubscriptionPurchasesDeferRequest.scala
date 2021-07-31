@@ -2,16 +2,14 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSubscriptionPurchasesDeferRequest extends StObject {
   
   /**
     * The information about the new desired expiry time for the subscription.
     */
-  var deferralInfo: js.UndefOr[SchemaSubscriptionDeferralInfo] = js.native
+  var deferralInfo: js.UndefOr[SchemaSubscriptionDeferralInfo] = js.undefined
 }
 object SchemaSubscriptionPurchasesDeferRequest {
   

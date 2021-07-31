@@ -11,8 +11,8 @@ Compact binary encoding for geographic data
 | Full name          | geobuf |
 | Keywords           | geographic, data, buffer, protobuf, format, compression, geojson, topojson |
 | # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 932064 |
+| # dependents       | 18 |
+| # downloads        | 1038730 |
 | # stars            | 1 |
 
 ## Links

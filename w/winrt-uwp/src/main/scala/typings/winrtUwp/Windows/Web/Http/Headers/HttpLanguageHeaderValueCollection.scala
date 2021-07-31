@@ -8,12 +8,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Content-Language HTTP header on HTTP content in a request or a response. */
 @js.native
-trait HttpLanguageHeaderValueCollection extends Array[Language] {
+trait HttpLanguageHeaderValueCollection
+  extends StObject
+     with Array[Language] {
   
   /**
     * Adds a new Language item to the end of the collection.

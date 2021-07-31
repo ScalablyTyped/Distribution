@@ -2,21 +2,19 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompilerOptions extends StObject {
   
-  var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.native
+  var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
-  var missingTranslation: js.UndefOr[MissingTranslationStrategy] = js.native
+  var missingTranslation: js.UndefOr[MissingTranslationStrategy] = js.undefined
   
-  var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+  var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
   
-  var providers: js.UndefOr[js.Array[StaticProvider]] = js.native
+  var providers: js.UndefOr[js.Array[StaticProvider]] = js.undefined
   
-  var useJit: js.UndefOr[Boolean] = js.native
+  var useJit: js.UndefOr[Boolean] = js.undefined
 }
 object CompilerOptions {
   

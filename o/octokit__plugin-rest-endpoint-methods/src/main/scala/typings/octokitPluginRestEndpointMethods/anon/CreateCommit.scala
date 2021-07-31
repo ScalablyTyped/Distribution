@@ -2,37 +2,35 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCommit extends StObject {
   
-  var createBlob: `697` = js.native
+  var createBlob: `697`
   
-  var createCommit: `698` = js.native
+  var createCommit: `698`
   
-  var createRef: `699` = js.native
+  var createRef: `699`
   
-  var createTag: `700` = js.native
+  var createTag: `700`
   
-  var createTree: `701` = js.native
+  var createTree: `701`
   
-  var deleteRef: `702` = js.native
+  var deleteRef: `702`
   
-  var getBlob: `703` = js.native
+  var getBlob: `703`
   
-  var getCommit: `704` = js.native
+  var getCommit: `704`
   
-  var getRef: `705` = js.native
+  var getRef: `705`
   
-  var getTag: `706` = js.native
+  var getTag: `706`
   
-  var getTree: `707` = js.native
+  var getTree: `707`
   
-  var listMatchingRefs: `708` = js.native
+  var listMatchingRefs: `708`
   
-  var updateRef: `709` = js.native
+  var updateRef: `709`
 }
 object CreateCommit {
   

@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputNumberMod {
@@ -24,96 +23,95 @@ object inputNumberMod {
     def this(props: InputNumberProps, context: js.Any) = this()
   }
   
-  @js.native
   trait InputNumberProps extends StObject {
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var buttonLayout: js.UndefOr[String] = js.native
+    var buttonLayout: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var currencyDisplay: js.UndefOr[String] = js.native
+    var currencyDisplay: js.UndefOr[String] = js.undefined
     
-    var decrementButtonClassName: js.UndefOr[String] = js.native
+    var decrementButtonClassName: js.UndefOr[String] = js.undefined
     
-    var decrementButtonIcon: js.UndefOr[String] = js.native
+    var decrementButtonIcon: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Boolean] = js.native
+    var format: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var incrementButtonClassName: js.UndefOr[String] = js.native
+    var incrementButtonClassName: js.UndefOr[String] = js.undefined
     
-    var incrementButtonIcon: js.UndefOr[String] = js.native
+    var incrementButtonIcon: js.UndefOr[String] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
-    var inputMode: js.UndefOr[String] = js.native
+    var inputMode: js.UndefOr[String] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.native
+    var inputStyle: js.UndefOr[js.Object] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var localeMatcher: js.UndefOr[String] = js.native
+    var localeMatcher: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxFractionDigits: js.UndefOr[Double] = js.native
+    var maxFractionDigits: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var minFractionDigits: js.UndefOr[Double] = js.native
+    var minFractionDigits: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var showButtons: js.UndefOr[Boolean] = js.native
+    var showButtons: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var useGrouping: js.UndefOr[Boolean] = js.native
+    var useGrouping: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object InputNumberProps {
     

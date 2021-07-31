@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationTimeline extends StObject {
   
-  val currentTime: Double | Null = js.native
+  val currentTime: Double | Null
 }
 object AnimationTimeline {
   
   @scala.inline
   def apply(): AnimationTimeline = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(currentTime = null)
     __obj.asInstanceOf[AnimationTimeline]
   }
   

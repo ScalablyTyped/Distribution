@@ -2,37 +2,35 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginConfig extends StObject {
   
-  var Args: typings.dockerode.mod.Args = js.native
+  var Args: typings.dockerode.mod.Args
   
-  var Description: String = js.native
+  var Description: String
   
-  var Documentation: String = js.native
+  var Documentation: String
   
-  var Entrypoint: js.Array[String] = js.native
+  var Entrypoint: js.Array[String]
   
-  var Env: js.Array[PluginEnv] = js.native
+  var Env: js.Array[PluginEnv]
   
-  var Interface: js.Any = js.native
+  var Interface: js.Any
   
-  var Linux: typings.dockerode.mod.Linux = js.native
+  var Linux: typings.dockerode.mod.Linux
   
-  var Mounts: js.Array[PluginMount] = js.native
+  var Mounts: js.Array[PluginMount]
   
-  var Network: typings.dockerode.mod.Network = js.native
+  var Network: typings.dockerode.mod.Network
   
-  var PropagatedMount: String = js.native
+  var PropagatedMount: String
   
-  var User: js.UndefOr[typings.dockerode.mod.User] = js.native
+  var User: js.UndefOr[typings.dockerode.mod.User] = js.undefined
   
-  var WorkDir: String = js.native
+  var WorkDir: String
   
-  var rootfs: js.Any = js.native
+  var rootfs: js.Any
 }
 object PluginConfig {
   

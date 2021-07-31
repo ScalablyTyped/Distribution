@@ -7,7 +7,6 @@ import typings.activexShell.activexShellNumbers.`2`
 import typings.activexShell.activexShellNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for Folder2.OfflineStatus */

@@ -6,33 +6,31 @@ import typings.octokitTypes.octokitTypesStrings.desc
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsListAccountsForPlanStubbedEndpoint extends StObject {
   
   /**
     * To return the oldest accounts first, set to `asc`. Can be one of `asc` or `desc`. Ignored without the `sort` parameter.
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var plan_id: Double = js.native
+  var plan_id: Double
   
   /**
     * Sorts the GitHub accounts by the date they were created or last updated. Can be one of `created` or `updated`.
     */
-  var sort: js.UndefOr[created | updated] = js.native
+  var sort: js.UndefOr[created | updated] = js.undefined
 }
 object AppsListAccountsForPlanStubbedEndpoint {
   

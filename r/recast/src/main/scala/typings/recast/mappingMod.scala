@@ -5,14 +5,15 @@ import typings.astTypes.namedTypesMod.namedTypes.SourceLocation
 import typings.recast.linesMod.Lines
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mappingMod {
   
   @JSImport("recast/lib/mapping", JSImport.Default)
   @js.native
-  class default protected () extends Mapping {
+  class default protected ()
+    extends StObject
+       with Mapping {
     def this(sourceLines: Lines, sourceLoc: Loc) = this()
     def this(sourceLines: Lines, sourceLoc: Loc, targetLoc: Loc) = this()
   }
@@ -25,9 +26,9 @@ object mappingMod {
     def add(line: Double, column: Double): Mapping = js.native
     
     def indent(by: Double): Mapping = js.native
-    def indent(by: Double, skipFirstLine: js.UndefOr[scala.Nothing], noNegativeColumns: Boolean): Mapping = js.native
     def indent(by: Double, skipFirstLine: Boolean): Mapping = js.native
     def indent(by: Double, skipFirstLine: Boolean, noNegativeColumns: Boolean): Mapping = js.native
+    def indent(by: Double, skipFirstLine: Unit, noNegativeColumns: Boolean): Mapping = js.native
     
     def slice(lines: Lines, start: Pos): Mapping | Null = js.native
     def slice(lines: Lines, start: Pos, end: Pos): Mapping | Null = js.native

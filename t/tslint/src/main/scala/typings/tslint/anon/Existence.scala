@@ -2,15 +2,13 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Existence extends StObject {
   
-  var content: Items = js.native
+  var content: Items
   
-  var existence: Items = js.native
+  var existence: Items
 }
 object Existence {
   

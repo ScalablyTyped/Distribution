@@ -2,17 +2,15 @@ package typings.javascriptAstar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Closest extends StObject {
     
-    var closest: js.UndefOr[Boolean] = js.native
+    var closest: js.UndefOr[Boolean] = js.undefined
     
-    var heuristic: js.UndefOr[Heuristic] = js.native
+    var heuristic: js.UndefOr[Heuristic] = js.undefined
   }
   object Closest {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Diagonal extends StObject {
     
-    var diagonal: js.UndefOr[Boolean] = js.native
+    var diagonal: js.UndefOr[Boolean] = js.undefined
   }
   object Diagonal {
     
@@ -63,12 +60,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

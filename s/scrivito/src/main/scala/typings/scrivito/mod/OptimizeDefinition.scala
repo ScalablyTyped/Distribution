@@ -9,20 +9,18 @@ import typings.scrivito.scrivitoStrings.right
 import typings.scrivito.scrivitoStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimizeDefinition extends StObject {
   
   // Fix this being able to be filled when using fit = resize
-  var crop: center | top | left | right | bottom = js.native
+  var crop: center | top | left | right | bottom
   
-  var fit: resize | crop = js.native
+  var fit: resize | crop
   
-  var height: Double | String = js.native
+  var height: Double | String
   
-  var width: Double | String = js.native
+  var width: Double | String
 }
 object OptimizeDefinition {
   

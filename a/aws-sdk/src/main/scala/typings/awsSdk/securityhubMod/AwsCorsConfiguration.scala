@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCorsConfiguration extends StObject {
   
   /**
     * Indicates whether the CORS request includes credentials.
     */
-  var AllowCredentials: js.UndefOr[Boolean] = js.native
+  var AllowCredentials: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The allowed headers for CORS requests.
     */
-  var AllowHeaders: js.UndefOr[NonEmptyStringList] = js.native
+  var AllowHeaders: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * The allowed methods for CORS requests.
     */
-  var AllowMethods: js.UndefOr[NonEmptyStringList] = js.native
+  var AllowMethods: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * The allowed origins for CORS requests.
     */
-  var AllowOrigins: js.UndefOr[NonEmptyStringList] = js.native
+  var AllowOrigins: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * The exposed headers for CORS requests.
     */
-  var ExposeHeaders: js.UndefOr[NonEmptyStringList] = js.native
+  var ExposeHeaders: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * The number of seconds for which the browser caches preflight request results.
     */
-  var MaxAge: js.UndefOr[Integer] = js.native
+  var MaxAge: js.UndefOr[Integer] = js.undefined
 }
 object AwsCorsConfiguration {
   

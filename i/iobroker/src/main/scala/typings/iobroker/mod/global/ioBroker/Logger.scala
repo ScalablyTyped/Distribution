@@ -2,29 +2,27 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
   /** log message with debug level */
-  def debug(message: String): Unit = js.native
+  def debug(message: String): Unit
   
   /** log message with error severity */
-  def error(message: String): Unit = js.native
+  def error(message: String): Unit
   
   /** log message with info level (default output level for all adapters) */
-  def info(message: String): Unit = js.native
+  def info(message: String): Unit
   
   /** Verbosity of the log output */
-  var level: LogLevel = js.native
+  var level: LogLevel
   
   /** log message with silly level */
-  def silly(message: String): Unit = js.native
+  def silly(message: String): Unit
   
   /** log message with warning severity */
-  def warn(message: String): Unit = js.native
+  def warn(message: String): Unit
 }
 object Logger {
   

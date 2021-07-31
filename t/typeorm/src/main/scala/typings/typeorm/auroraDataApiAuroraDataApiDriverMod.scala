@@ -9,14 +9,15 @@ import typings.typeorm.tableTableColumnMod.TableColumn
 import typings.typeorm.typesColumnTypesMod.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auroraDataApiAuroraDataApiDriverMod {
   
   @JSImport("typeorm/driver/aurora-data-api/AuroraDataApiDriver", "AuroraDataApiDriver")
   @js.native
-  class AuroraDataApiDriver protected () extends Driver {
+  class AuroraDataApiDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /**
@@ -36,12 +37,12 @@ object auroraDataApiAuroraDataApiDriverMod {
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createConnectionOptions(options: AuroraDataApiConnectionOptions, credentials: AuroraDataApiConnectionCredentialsOptions): js.Promise[_] = js.native
+    /* protected */ def createConnectionOptions(options: AuroraDataApiConnectionOptions, credentials: AuroraDataApiConnectionCredentialsOptions): js.Promise[js.Any] = js.native
     
     /**
       * Creates a new connection pool for a given database credentials.
       */
-    /* protected */ def createPool(connectionOptions: js.Any): js.Promise[_] = js.native
+    /* protected */ def createPool(connectionOptions: js.Any): js.Promise[js.Any] = js.native
     
     def getColumnLength(column: TableColumn): String = js.native
     

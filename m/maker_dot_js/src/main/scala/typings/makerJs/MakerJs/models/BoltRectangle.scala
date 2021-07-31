@@ -4,14 +4,14 @@ import typings.makerJs.MakerJs.IModel
 import typings.makerJs.MakerJs.IPathMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoltRectangle extends IModel {
+trait BoltRectangle
+  extends StObject
+     with IModel {
   
   @JSName("paths")
-  var paths_BoltRectangle: IPathMap = js.native
+  var paths_BoltRectangle: IPathMap
 }
 object BoltRectangle {
   

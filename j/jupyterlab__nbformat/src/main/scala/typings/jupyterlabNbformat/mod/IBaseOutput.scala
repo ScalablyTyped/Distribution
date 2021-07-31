@@ -3,16 +3,16 @@ package typings.jupyterlabNbformat.mod
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBaseOutput extends PartialJSONObject {
+trait IBaseOutput
+  extends StObject
+     with PartialJSONObject {
   
   /**
     * Type of cell output.
     */
-  var output_type: String = js.native
+  var output_type: String
 }
 object IBaseOutput {
   

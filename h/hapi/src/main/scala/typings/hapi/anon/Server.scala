@@ -2,23 +2,21 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Server extends StObject {
   
   /**
     * Response timeout in milliseconds. Sets the maximum time allowed for the server to respond to an incoming request before giving up and responding with a Service Unavailable (503) error
     * response.
     */
-  var server: js.UndefOr[Boolean | Double] = js.native
+  var server: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * Default value: none (use node default of 2 minutes).
     * By default, node sockets automatically timeout after 2 minutes. Use this option to override this behavior. Set to false to disable socket timeouts.
     */
-  var socket: js.UndefOr[Boolean | Double] = js.native
+  var socket: js.UndefOr[Boolean | Double] = js.undefined
 }
 object Server {
   

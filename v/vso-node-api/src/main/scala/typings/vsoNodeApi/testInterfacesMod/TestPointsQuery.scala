@@ -2,19 +2,17 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestPointsQuery extends StObject {
   
-  var orderBy: String = js.native
+  var orderBy: String
   
-  var points: js.Array[TestPoint] = js.native
+  var points: js.Array[TestPoint]
   
-  var pointsFilter: PointsFilter = js.native
+  var pointsFilter: PointsFilter
   
-  var witFields: js.Array[String] = js.native
+  var witFields: js.Array[String]
 }
 object TestPointsQuery {
   

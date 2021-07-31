@@ -2,87 +2,85 @@ package typings.activexShdocvw.SHDocVw
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShellNameSpace extends StObject {
   
-  var Columns: String = js.native
+  var Columns: String
   
   /** number of view types */
-  val CountViewTypes: Double = js.native
+  val CountViewTypes: Double
   
   /** method CreateSubscriptionForSelection */
-  def CreateSubscriptionForSelection(): Boolean = js.native
+  def CreateSubscriptionForSelection(): Boolean
   
   /** method DeleteSubscriptionForSelection */
-  def DeleteSubscriptionForSelection(): Boolean = js.native
+  def DeleteSubscriptionForSelection(): Boolean
   
-  var Depth: Double = js.native
+  var Depth: Double
   
   /** options  */
-  var EnumOptions: Double = js.native
+  var EnumOptions: Double
   
   /** expands item specified depth */
-  def Expand(var_0: js.Any, iDepth: Double): Unit = js.native
+  def Expand(var_0: js.Any, iDepth: Double): Unit
   
   /** method Export */
-  def Export(): Unit = js.native
+  def Export(): Unit
   
-  var Flags: Double = js.native
+  var Flags: Double
   
   /** method Import */
-  def Import(): Unit = js.native
+  def Import(): Unit
   
   /** method InvokeContextMenuCommand */
-  def InvokeContextMenuCommand(strCommand: String): Unit = js.native
+  def InvokeContextMenuCommand(strCommand: String): Unit
   
-  var Mode: Double = js.native
+  var Mode: Double
   
   /** method MoveSelectionDown */
-  def MoveSelectionDown(): Unit = js.native
+  def MoveSelectionDown(): Unit
   
   /** method MoveSelectionTo */
-  def MoveSelectionTo(): Unit = js.native
+  def MoveSelectionTo(): Unit
   
   /** method MoveSelectionUp */
-  def MoveSelectionUp(): Unit = js.native
+  def MoveSelectionUp(): Unit
   
   /** method NewFolder */
-  def NewFolder(): Unit = js.native
+  def NewFolder(): Unit
   
   /** method ResetSort */
-  def ResetSort(): Unit = js.native
+  def ResetSort(): Unit
   
   /** get the root item */
-  var Root: js.Any = js.native
+  var Root: js.Any
   
   @JSName("SHDocVw.ShellNameSpace_typekey")
-  var SHDocVwDotShellNameSpace_typekey: ShellNameSpace = js.native
+  var SHDocVwDotShellNameSpace_typekey: ShellNameSpace
   
   /** get the selected item */
-  var SelectedItem: js.Any = js.native
+  var SelectedItem: js.Any
   
   /** collection of selected items */
-  def SelectedItems(): js.Any = js.native
+  def SelectedItems(): js.Any
   
   /** old, use put_Root() instead */
-  def SetRoot(bstrFullPath: String): Unit = js.native
+  def SetRoot(bstrFullPath: String): Unit
   
   /** set view type */
-  def SetViewType(iType: Double): Unit = js.native
+  def SetViewType(iType: Double): Unit
   
   /** Query to see if subscriptions are enabled */
-  val SubscriptionsEnabled: Boolean = js.native
+  val SubscriptionsEnabled: Boolean
   
   /** method Synchronize */
-  def Synchronize(): Unit = js.native
+  def Synchronize(): Unit
   
-  var TVFlags: Double = js.native
+  var TVFlags: Double
   
   /** unselects all items */
-  def UnselectAll(): Unit = js.native
+  def UnselectAll(): Unit
 }
 object ShellNameSpace {
   

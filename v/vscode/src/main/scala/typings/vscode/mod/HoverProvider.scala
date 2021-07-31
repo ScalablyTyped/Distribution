@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverProvider extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait HoverProvider extends StObject {
     * @return A hover or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideHover(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Hover] = js.native
+  def provideHover(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Hover]
 }
 object HoverProvider {
   

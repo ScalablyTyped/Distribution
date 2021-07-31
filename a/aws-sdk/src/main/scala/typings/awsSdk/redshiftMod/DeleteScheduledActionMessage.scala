@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteScheduledActionMessage extends StObject {
   
   /**
     * The name of the scheduled action to delete. 
     */
-  var ScheduledActionName: String = js.native
+  var ScheduledActionName: String
 }
 object DeleteScheduledActionMessage {
   

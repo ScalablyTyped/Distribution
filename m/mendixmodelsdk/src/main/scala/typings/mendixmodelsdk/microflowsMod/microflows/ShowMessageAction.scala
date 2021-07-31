@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object ShowMessageAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowMessageAction.create")
-  @js.native
-  def create(model: IModel): ShowMessageAction = js.native
+  @scala.inline
+  def create(model: IModel): ShowMessageAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ShowMessageAction]
   
   /**
     * Creates and returns a new ShowMessageAction instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object ShowMessageAction {
     * of the parent ActionActivity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowMessageAction.createIn")
-  @js.native
-  def createIn(container: ActionActivity): ShowMessageAction = js.native
+  @scala.inline
+  def createIn(container: ActionActivity): ShowMessageAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ShowMessageAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowMessageAction.structureTypeName")

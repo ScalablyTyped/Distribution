@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnChooserButtonApplyClickEventUIParam extends StObject {
   
   /**
     * Gets a reference to the Column Chooser element. This is a jQuery object.
     */
-  var columnChooserElement: js.UndefOr[String] = js.native
+  var columnChooserElement: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the array of columns identifiers which should be hidden.
     */
-  var columnsToHide: js.UndefOr[js.Array[_]] = js.native
+  var columnsToHide: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets the array of columns identifiers which should be shown.
     */
-  var columnsToShow: js.UndefOr[js.Array[_]] = js.native
+  var columnsToShow: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets a reference to the GridHiding widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnChooserButtonApplyClickEventUIParam {
   
@@ -46,7 +44,7 @@ object ColumnChooserButtonApplyClickEventUIParam {
     def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
     
     @scala.inline
-    def setColumnsToHide(value: js.Array[_]): Self = StObject.set(x, "columnsToHide", value.asInstanceOf[js.Any])
+    def setColumnsToHide(value: js.Array[js.Any]): Self = StObject.set(x, "columnsToHide", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsToHideUndefined: Self = StObject.set(x, "columnsToHide", js.undefined)
@@ -55,7 +53,7 @@ object ColumnChooserButtonApplyClickEventUIParam {
     def setColumnsToHideVarargs(value: js.Any*): Self = StObject.set(x, "columnsToHide", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsToShow(value: js.Array[_]): Self = StObject.set(x, "columnsToShow", value.asInstanceOf[js.Any])
+    def setColumnsToShow(value: js.Array[js.Any]): Self = StObject.set(x, "columnsToShow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsToShowUndefined: Self = StObject.set(x, "columnsToShow", js.undefined)

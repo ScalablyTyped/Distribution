@@ -12,7 +12,6 @@ import typings.reactNativeSwiper.reactNativeSwiperStrings.x
 import typings.reactNativeSwiper.reactNativeSwiperStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,48 +27,49 @@ object mod {
     def scrollBy(index: Double, animated: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait SwiperProperties extends Props[Swiper] {
+  trait SwiperProperties
+    extends StObject
+       with Props[Swiper] {
     
-    var activeDot: js.UndefOr[Element] = js.native
+    var activeDot: js.UndefOr[Element] = js.undefined
     
-    var activeDotColor: js.UndefOr[String] = js.native
+    var activeDotColor: js.UndefOr[String] = js.undefined
     
-    var activeDotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var activeDotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.native
+    var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var autoplayDirection: js.UndefOr[Boolean] = js.native
+    var autoplayDirection: js.UndefOr[Boolean] = js.undefined
     
-    var autoplayTimeout: js.UndefOr[Double] = js.native
+    var autoplayTimeout: js.UndefOr[Double] = js.undefined
     
-    var bounces: js.UndefOr[Boolean] = js.native
+    var bounces: js.UndefOr[Boolean] = js.undefined
     
-    var buttonWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var buttonWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dot: js.UndefOr[Element] = js.native
+    var dot: js.UndefOr[Element] = js.undefined
     
-    var dotColor: js.UndefOr[String] = js.native
+    var dotColor: js.UndefOr[String] = js.undefined
     
-    var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var loadMinimal: js.UndefOr[Boolean] = js.native
+    var loadMinimal: js.UndefOr[Boolean] = js.undefined
     
-    var loadMinimalLoader: js.UndefOr[Element] = js.native
+    var loadMinimalLoader: js.UndefOr[Element] = js.undefined
     
-    var loadMinimalSize: js.UndefOr[Double] = js.native
+    var loadMinimalSize: js.UndefOr[Double] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var nextButton: js.UndefOr[Element] = js.native
+    var nextButton: js.UndefOr[Element] = js.undefined
     
     var onMomentumScrollEnd: js.UndefOr[
         js.Function3[
@@ -78,7 +78,7 @@ object mod {
           /* context */ Swiper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onResponderRelease: js.UndefOr[
         js.Function3[
@@ -87,7 +87,7 @@ object mod {
           /* context */ Swiper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onScrollBeginDrag: js.UndefOr[
         js.Function3[
@@ -96,7 +96,7 @@ object mod {
           /* context */ Swiper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onTouchEnd: js.UndefOr[
         js.Function3[
@@ -105,7 +105,7 @@ object mod {
           /* context */ Swiper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onTouchStart: js.UndefOr[
         js.Function3[
@@ -114,7 +114,7 @@ object mod {
           /* context */ Swiper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onTouchStartCapture: js.UndefOr[
         js.Function3[
@@ -123,35 +123,35 @@ object mod {
           /* context */ Swiper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var paginationStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var paginationStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var pagingEnabled: js.UndefOr[Boolean] = js.native
+    var pagingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var prevButton: js.UndefOr[Element] = js.native
+    var prevButton: js.UndefOr[Element] = js.undefined
     
-    var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+    var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
     
     var renderPagination: js.UndefOr[
         js.Function3[/* index */ Double, /* total */ Double, /* thisObject */ Swiper, Element]
-      ] = js.native
+      ] = js.undefined
     
-    var scrollEnabled: js.UndefOr[Boolean] = js.native
+    var scrollEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var scrollsToTop: js.UndefOr[Boolean] = js.native
+    var scrollsToTop: js.UndefOr[Boolean] = js.undefined
     
-    var showsButtons: js.UndefOr[Boolean] = js.native
+    var showsButtons: js.UndefOr[Boolean] = js.undefined
     
-    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var showsPagination: js.UndefOr[Boolean] = js.native
+    var showsPagination: js.UndefOr[Boolean] = js.undefined
     
-    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+    var showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SwiperProperties {
     
@@ -427,26 +427,25 @@ object mod {
     }
   }
   
-  @js.native
   trait SwiperState extends StObject {
     
-    var autoplayEnd: Boolean = js.native
+    var autoplayEnd: Boolean
     
-    var dir: x | y = js.native
+    var dir: x | y
     
-    var height: Double = js.native
+    var height: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
     
-    var loopJump: Boolean = js.native
+    var loopJump: Boolean
     
-    var offset: X = js.native
+    var offset: X
     
-    var total: Double = js.native
+    var total: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object SwiperState {
     

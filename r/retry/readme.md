@@ -11,8 +11,8 @@ Abstraction for exponential and custom retry strategies for failed operations.
 | Full name          | retry |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 371 |
-| # downloads        | 391511252 |
+| # dependents       | 397 |
+| # downloads        | 517350484 |
 | # stars            | 38 |
 
 ## Links

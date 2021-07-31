@@ -13,7 +13,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,9 +34,8 @@ object mod {
     def defaultProps_=(x: SplitPaneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("react-split-pane", "default.getSizeUpdate")
-    @js.native
-    def getSizeUpdate(props: SplitPaneProps, state: SplitPaneState): PartialSplitPaneState = js.native
+    @scala.inline
+    def getSizeUpdate(props: SplitPaneProps, state: SplitPaneState): PartialSplitPaneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeUpdate")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialSplitPaneState]
   }
   
   @JSImport("react-split-pane", "Pane")
@@ -52,18 +50,17 @@ object mod {
     def this(props: PaneProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PaneProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var eleRef: js.UndefOr[js.Function1[/* el */ HTMLDivElement, Unit]] = js.native
+    var eleRef: js.UndefOr[js.Function1[/* el */ HTMLDivElement, Unit]] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var split: js.UndefOr[Split] = js.native
+    var split: js.UndefOr[Split] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PaneProps {
     
@@ -139,48 +136,47 @@ object mod {
     def onTouchStart(event: TouchEvent): Unit = js.native
   }
   
-  @js.native
   trait SplitPaneProps extends StObject {
     
-    var allowResize: js.UndefOr[Boolean] = js.native
+    var allowResize: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultSize: js.UndefOr[Size] = js.native
+    var defaultSize: js.UndefOr[Size] = js.undefined
     
-    var maxSize: js.UndefOr[Size] = js.native
+    var maxSize: js.UndefOr[Size] = js.undefined
     
-    var minSize: js.UndefOr[Size] = js.native
+    var minSize: js.UndefOr[Size] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* newSize */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* newSize */ Double, Unit]] = js.undefined
     
-    var onDragFinished: js.UndefOr[js.Function1[/* newSize */ Double, Unit]] = js.native
+    var onDragFinished: js.UndefOr[js.Function1[/* newSize */ Double, Unit]] = js.undefined
     
-    var onDragStarted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onResizerClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onResizerClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+    var onResizerDoubleClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
     
-    var pane1Style: js.UndefOr[CSSProperties] = js.native
+    var pane1Style: js.UndefOr[CSSProperties] = js.undefined
     
-    var pane2Style: js.UndefOr[CSSProperties] = js.native
+    var pane2Style: js.UndefOr[CSSProperties] = js.undefined
     
-    var paneStyle: js.UndefOr[CSSProperties] = js.native
+    var paneStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var primary: js.UndefOr[first | second] = js.native
+    var primary: js.UndefOr[first | second] = js.undefined
     
-    var resizerClassName: js.UndefOr[String] = js.native
+    var resizerClassName: js.UndefOr[String] = js.undefined
     
-    var resizerStyle: js.UndefOr[CSSProperties] = js.native
+    var resizerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var split: js.UndefOr[vertical | horizontal] = js.native
+    var split: js.UndefOr[vertical | horizontal] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SplitPaneProps {
     
@@ -315,12 +311,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SplitPaneState extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var resized: Boolean = js.native
+    var resized: Boolean
   }
   object SplitPaneState {
     

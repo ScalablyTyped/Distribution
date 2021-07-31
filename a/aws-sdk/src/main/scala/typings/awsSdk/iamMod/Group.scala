@@ -2,36 +2,34 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) specifying the group. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
     */
-  var Arn: arnType = js.native
+  var Arn: arnType
   
   /**
     * The date and time, in ISO 8601 date-time format, when the group was created.
     */
-  var CreateDate: dateType = js.native
+  var CreateDate: dateType
   
   /**
     *  The stable and unique string identifying the group. For more information about IDs, see IAM Identifiers in the IAM User Guide. 
     */
-  var GroupId: idType = js.native
+  var GroupId: idType
   
   /**
     * The friendly name that identifies the group.
     */
-  var GroupName: groupNameType = js.native
+  var GroupName: groupNameType
   
   /**
     * The path to the group. For more information about paths, see IAM Identifiers in the IAM User Guide. 
     */
-  var Path: pathType = js.native
+  var Path: pathType
 }
 object Group {
   

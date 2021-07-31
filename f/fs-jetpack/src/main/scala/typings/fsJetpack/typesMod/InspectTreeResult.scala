@@ -5,15 +5,15 @@ import typings.fsJetpack.fsJetpackStrings.file
 import typings.fsJetpack.fsJetpackStrings.symlink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InspectTreeResult extends InspectResult {
+trait InspectTreeResult
+  extends StObject
+     with InspectResult {
   
-  var children: js.Array[InspectTreeResult] = js.native
+  var children: js.Array[InspectTreeResult]
   
-  var relativePath: String = js.native
+  var relativePath: String
 }
 object InspectTreeResult {
   

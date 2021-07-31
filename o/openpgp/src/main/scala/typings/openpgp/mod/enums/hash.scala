@@ -2,7 +2,6 @@ package typings.openpgp.mod.enums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,33 +14,47 @@ sealed trait hash extends StObject
 object hash extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[hash with Double] = js.native
+  def apply(value: Double): js.UndefOr[hash & Double] = js.native
   
   @js.native
-  sealed trait md5 extends hash
-  /* 1 */ val md5: typings.openpgp.mod.enums.hash.md5 with Double = js.native
+  sealed trait md5
+    extends StObject
+       with hash
+  /* 1 */ val md5: typings.openpgp.mod.enums.hash.md5 & Double = js.native
   
   @js.native
-  sealed trait ripemd extends hash
-  /* 3 */ val ripemd: typings.openpgp.mod.enums.hash.ripemd with Double = js.native
+  sealed trait ripemd
+    extends StObject
+       with hash
+  /* 3 */ val ripemd: typings.openpgp.mod.enums.hash.ripemd & Double = js.native
   
   @js.native
-  sealed trait sha1 extends hash
-  /* 2 */ val sha1: typings.openpgp.mod.enums.hash.sha1 with Double = js.native
+  sealed trait sha1
+    extends StObject
+       with hash
+  /* 2 */ val sha1: typings.openpgp.mod.enums.hash.sha1 & Double = js.native
   
   @js.native
-  sealed trait sha224 extends hash
-  /* 11 */ val sha224: typings.openpgp.mod.enums.hash.sha224 with Double = js.native
+  sealed trait sha224
+    extends StObject
+       with hash
+  /* 11 */ val sha224: typings.openpgp.mod.enums.hash.sha224 & Double = js.native
   
   @js.native
-  sealed trait sha256 extends hash
-  /* 8 */ val sha256: typings.openpgp.mod.enums.hash.sha256 with Double = js.native
+  sealed trait sha256
+    extends StObject
+       with hash
+  /* 8 */ val sha256: typings.openpgp.mod.enums.hash.sha256 & Double = js.native
   
   @js.native
-  sealed trait sha384 extends hash
-  /* 9 */ val sha384: typings.openpgp.mod.enums.hash.sha384 with Double = js.native
+  sealed trait sha384
+    extends StObject
+       with hash
+  /* 9 */ val sha384: typings.openpgp.mod.enums.hash.sha384 & Double = js.native
   
   @js.native
-  sealed trait sha512 extends hash
-  /* 10 */ val sha512: typings.openpgp.mod.enums.hash.sha512 with Double = js.native
+  sealed trait sha512
+    extends StObject
+       with hash
+  /* 10 */ val sha512: typings.openpgp.mod.enums.hash.sha512 & Double = js.native
 }

@@ -2,25 +2,23 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Locations. This is the response from the server to GET requests
   * on the locations collection.
   */
-@js.native
 trait SchemaLocationsListResponse extends StObject {
   
   /**
     * The list of locations.
     */
-  var items: js.UndefOr[js.Array[SchemaLocation]] = js.native
+  var items: js.UndefOr[js.Array[SchemaLocation]] = js.undefined
   
   /**
     * The type of resource. This is always mirror#locationsList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaLocationsListResponse {
   

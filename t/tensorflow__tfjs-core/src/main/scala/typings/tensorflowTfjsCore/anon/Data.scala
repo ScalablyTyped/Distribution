@@ -4,15 +4,13 @@ import typings.std.ArrayBuffer
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
-  var specs: js.Array[WeightsManifestEntry] = js.native
+  var specs: js.Array[WeightsManifestEntry]
 }
 object Data {
   

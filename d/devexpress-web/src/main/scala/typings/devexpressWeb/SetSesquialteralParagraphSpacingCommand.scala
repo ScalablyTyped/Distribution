@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to format a current paragraph with one and a half line spacing.
   */
-@js.native
-trait SetSesquialteralParagraphSpacingCommand extends CommandWithBooleanStateBase {
+trait SetSesquialteralParagraphSpacingCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the SetSesquialteralParagraphSpacingCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object SetSesquialteralParagraphSpacingCommand {
   

@@ -12,7 +12,7 @@ The lodash method `_.head` exported as a module.
 | Keywords           | lodash-modularized, head |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 1247125 |
+| # downloads        | 1300117 |
 | # stars            | 0 |
 
 ## Links

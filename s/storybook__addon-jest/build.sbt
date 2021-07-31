@@ -1,27 +1,25 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-jest"
-version := "6.1.2-8fbe6f"
-scalaVersion := "2.13.3"
+version := "6.1.2-7ef7ae"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
-  "org.scalablytyped" %%% "emotion__core" % "10.1.1-2311cd",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.16-65a8a4",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.27-f96a4e",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.31-dde0c8",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.3-2c7f18",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-df0d91",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
-  "org.scalablytyped" %%% "reach__router" % "1.3-dt-20200925Z-382d1c",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
-  "org.scalablytyped" %%% "std" % "4.1-40053c",
-  "org.scalablytyped" %%% "storybook__api" % "6.1.2-1888a2",
-  "org.scalablytyped" %%% "storybook__channels" % "6.1.2-52513c",
-  "org.scalablytyped" %%% "storybook__router" % "6.1.2-86a300",
-  "org.scalablytyped" %%% "storybook__theming" % "6.1.2-415149")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
+  "org.scalablytyped" %%% "emotion__core" % "10.1.1-9ae3af",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.16-1f167e",
+  "org.scalablytyped" %%% "emotion__styled" % "10.0.27-ed180a",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.31-139019",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.3-d9c993",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20201002Z-9e47d2",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
+  "org.scalablytyped" %%% "reach__router" % "1.3-dt-20200925Z-bad438",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
+  "org.scalablytyped" %%% "std" % "4.1-044efb",
+  "org.scalablytyped" %%% "storybook__api" % "6.1.2-d49d1a",
+  "org.scalablytyped" %%% "storybook__channels" % "6.1.2-f854de",
+  "org.scalablytyped" %%% "storybook__router" % "6.1.2-a446d7",
+  "org.scalablytyped" %%% "storybook__theming" % "6.1.2-40305b")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

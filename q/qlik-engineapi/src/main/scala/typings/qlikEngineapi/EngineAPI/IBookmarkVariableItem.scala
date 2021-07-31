@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BookmarkVariableItem...
   */
-@js.native
 trait IBookmarkVariableItem extends StObject {
   
   /**
     * Name of the variable.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Value of the variable.
     */
-  var qValue: IFieldValue = js.native
+  var qValue: IFieldValue
 }
 object IBookmarkVariableItem {
   

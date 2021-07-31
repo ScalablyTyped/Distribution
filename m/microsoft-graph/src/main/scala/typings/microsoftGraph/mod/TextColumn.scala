@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextColumn extends StObject {
   
   // Whether to allow multiple lines of text.
-  var allowMultipleLines: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowMultipleLines: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Whether updates to this column should replace existing text, or append to it.
-  var appendChangesToExistingText: js.UndefOr[NullableOption[Boolean]] = js.native
+  var appendChangesToExistingText: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The size of the text box.
-  var linesForEditing: js.UndefOr[NullableOption[Double]] = js.native
+  var linesForEditing: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The maximum number of characters for the value.
-  var maxLength: js.UndefOr[NullableOption[Double]] = js.native
+  var maxLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The type of text being stored. Must be one of plain or richText
-  var textType: js.UndefOr[NullableOption[String]] = js.native
+  var textType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object TextColumn {
   

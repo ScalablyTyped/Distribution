@@ -2,31 +2,29 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassifierMetadata extends StObject {
   
   /**
     *  Describes the result metrics for the test data associated with an documentation classifier.
     */
-  var EvaluationMetrics: js.UndefOr[ClassifierEvaluationMetrics] = js.native
+  var EvaluationMetrics: js.UndefOr[ClassifierEvaluationMetrics] = js.undefined
   
   /**
     * The number of labels in the input data. 
     */
-  var NumberOfLabels: js.UndefOr[Integer] = js.native
+  var NumberOfLabels: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of documents in the input data that were used to test the classifier. Typically this is 10 to 20 percent of the input documents, up to 10,000 documents.
     */
-  var NumberOfTestDocuments: js.UndefOr[Integer] = js.native
+  var NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of documents in the input data that were used to train the classifier. Typically this is 80 to 90 percent of the input documents.
     */
-  var NumberOfTrainedDocuments: js.UndefOr[Integer] = js.native
+  var NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
 }
 object ClassifierMetadata {
   

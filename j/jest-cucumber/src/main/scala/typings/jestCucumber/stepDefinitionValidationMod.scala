@@ -8,30 +8,29 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepDefinitionValidationMod {
   
-  @JSImport("jest-cucumber/dist/src/validation/step-definition-validation", "ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps")
+  @JSImport("jest-cucumber/dist/src/validation/step-definition-validation", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps(
     options: Options,
     parsedScenario: ParsedScenarioOutline,
     scenarioFromStepDefinitions: ScenarioFromStepDefinitions
-  ): Unit = js.native
-  @JSImport("jest-cucumber/dist/src/validation/step-definition-validation", "ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps")(options.asInstanceOf[js.Any], parsedScenario.asInstanceOf[js.Any], scenarioFromStepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps(
     options: Options,
     parsedScenario: ParsedScenario,
     scenarioFromStepDefinitions: ScenarioFromStepDefinitions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureFeatureFileAndStepDefinitionScenarioHaveSameSteps")(options.asInstanceOf[js.Any], parsedScenario.asInstanceOf[js.Any], scenarioFromStepDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber/dist/src/validation/step-definition-validation", "matchSteps")
-  @js.native
-  def matchSteps(stepFromFeatureFile: String, stepMatcher: String): Boolean | RegExpMatchArray | Null = js.native
-  @JSImport("jest-cucumber/dist/src/validation/step-definition-validation", "matchSteps")
-  @js.native
-  def matchSteps(stepFromFeatureFile: String, stepMatcher: RegExp): Boolean | RegExpMatchArray | Null = js.native
+  @scala.inline
+  def matchSteps(stepFromFeatureFile: String, stepMatcher: String): Boolean | RegExpMatchArray | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSteps")(stepFromFeatureFile.asInstanceOf[js.Any], stepMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean | RegExpMatchArray | Null]
+  @scala.inline
+  def matchSteps(stepFromFeatureFile: String, stepMatcher: RegExp): Boolean | RegExpMatchArray | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSteps")(stepFromFeatureFile.asInstanceOf[js.Any], stepMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean | RegExpMatchArray | Null]
 }

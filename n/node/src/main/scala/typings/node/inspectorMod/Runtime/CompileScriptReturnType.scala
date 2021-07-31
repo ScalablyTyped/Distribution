@@ -2,21 +2,19 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileScriptReturnType extends StObject {
   
   /**
     * Exception details.
     */
-  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.native
+  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   
   /**
     * Id of the script.
     */
-  var scriptId: js.UndefOr[ScriptId] = js.native
+  var scriptId: js.UndefOr[ScriptId] = js.undefined
 }
 object CompileScriptReturnType {
   

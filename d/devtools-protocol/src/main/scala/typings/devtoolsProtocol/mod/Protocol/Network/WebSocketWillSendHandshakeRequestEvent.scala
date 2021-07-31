@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebSocketWillSendHandshakeRequestEvent extends StObject {
   
   /**
     * WebSocket request data.
     */
-  var request: WebSocketRequest = js.native
+  var request: WebSocketRequest
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
   
   /**
     * UTC Timestamp.
     */
-  var wallTime: TimeSinceEpoch = js.native
+  var wallTime: TimeSinceEpoch
 }
 object WebSocketWillSendHandshakeRequestEvent {
   

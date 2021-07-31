@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Quests")
@@ -30,7 +29,7 @@ class ResourceQuests protected () extends StObject {
     */
   def accept(): GaxiosPromise[SchemaQuest] = js.native
   def accept(callback: BodyResponseCallback[SchemaQuest]): Unit = js.native
-  def accept(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuest] = js.native
+  def accept(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQuest] = js.native
   def accept(params: ParamsResourceQuestsAccept): GaxiosPromise[SchemaQuest] = js.native
   def accept(params: ParamsResourceQuestsAccept, callback: BodyResponseCallback[SchemaQuest]): Unit = js.native
   def accept(
@@ -65,7 +64,7 @@ class ResourceQuests protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaQuestListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaQuestListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQuestListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQuestListResponse] = js.native
   def list(params: ParamsResourceQuestsList): GaxiosPromise[SchemaQuestListResponse] = js.native
   def list(params: ParamsResourceQuestsList, callback: BodyResponseCallback[SchemaQuestListResponse]): Unit = js.native
   def list(

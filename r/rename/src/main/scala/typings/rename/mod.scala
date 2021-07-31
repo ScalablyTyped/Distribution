@@ -2,39 +2,37 @@ package typings.rename
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(filepath: String, transformer: Transformer): FilePath = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[FilePath]
+  @scala.inline
+  def apply(filepath: FileObject, transformer: Transformer): FilePath = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[FilePath]
+  
   @JSImport("rename", JSImport.Namespace)
   @js.native
-  def apply(filepath: String, transformer: Transformer): FilePath = js.native
-  @JSImport("rename", JSImport.Namespace)
-  @js.native
-  def apply(filepath: FileObject, transformer: Transformer): FilePath = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rename", "parse")
-  @js.native
-  def parse(filename: String): FileObject = js.native
+  @scala.inline
+  def parse(filename: String): FileObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filename.asInstanceOf[js.Any]).asInstanceOf[FileObject]
   
-  @JSImport("rename", "stringify")
-  @js.native
-  def stringify(obj: FileObject): String = js.native
+  @scala.inline
+  def stringify(obj: FileObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait FileObject extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
     // using package's terminology
-    var dirname: js.UndefOr[String] = js.native
+    var dirname: js.UndefOr[String] = js.undefined
     
-    var extname: js.UndefOr[String] = js.native
+    var extname: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object FileObject {
     
@@ -81,18 +79,17 @@ object mod {
   
   type FilePath = String | Specification
   
-  @js.native
   trait Specification extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
-    var dirname: js.UndefOr[String] = js.native
+    var dirname: js.UndefOr[String] = js.undefined
     
-    var extname: js.UndefOr[String] = js.native
+    var extname: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object Specification {
     

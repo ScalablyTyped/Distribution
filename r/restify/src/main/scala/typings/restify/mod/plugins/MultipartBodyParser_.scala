@@ -2,33 +2,31 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipartBodyParser_ extends StObject {
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
-  var keepExtensions: js.UndefOr[Boolean] = js.native
+  var keepExtensions: js.UndefOr[Boolean] = js.undefined
   
-  var mapFiles: js.UndefOr[Boolean] = js.native
+  var mapFiles: js.UndefOr[Boolean] = js.undefined
   
-  var mapParams: js.UndefOr[Boolean] = js.native
+  var mapParams: js.UndefOr[Boolean] = js.undefined
   
-  var maxFieldsSize: js.UndefOr[Double] = js.native
+  var maxFieldsSize: js.UndefOr[Double] = js.undefined
   
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
   
-  var multipartFileHandler: js.UndefOr[js.Any] = js.native
+  var multipartFileHandler: js.UndefOr[js.Any] = js.undefined
   
-  var multipartHandler: js.UndefOr[js.Any] = js.native
+  var multipartHandler: js.UndefOr[js.Any] = js.undefined
   
-  var multiples: js.UndefOr[Boolean] = js.native
+  var multiples: js.UndefOr[Boolean] = js.undefined
   
-  var overrideParams: js.UndefOr[Boolean] = js.native
+  var overrideParams: js.UndefOr[Boolean] = js.undefined
   
-  var uploadDir: js.UndefOr[String] = js.native
+  var uploadDir: js.UndefOr[String] = js.undefined
 }
 object MultipartBodyParser_ {
   

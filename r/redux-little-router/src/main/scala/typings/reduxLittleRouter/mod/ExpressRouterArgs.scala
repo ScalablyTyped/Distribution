@@ -3,15 +3,13 @@ package typings.reduxLittleRouter.mod
 import typings.reduxLittleRouter.anon.BaseUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressRouterArgs extends StObject {
   
-  var request: BaseUrl = js.native
+  var request: BaseUrl
   
-  var routes: Routes = js.native
+  var routes: Routes
 }
 object ExpressRouterArgs {
   

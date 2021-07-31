@@ -5,17 +5,15 @@ import typings.jqueryAjaxfile.Object
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTemplate extends StObject {
   
-  def addTemplate(templateName: String, templateMarkup: String): Unit = js.native
+  def addTemplate(templateName: String, templateMarkup: String): Unit
   
-  def createJavaScriptEvaluatorBlock(script: String): String = js.native
+  def createJavaScriptEvaluatorBlock(script: String): String
   
-  def renderTemplateSource(templateSource: Object, bindingContext: KnockoutBindingContext, options: Object): js.Array[Node] = js.native
+  def renderTemplateSource(templateSource: Object, bindingContext: KnockoutBindingContext, options: Object): js.Array[Node]
 }
 object AddTemplate {
   

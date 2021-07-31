@@ -2,15 +2,13 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INotificationChannel extends StObject {
   
-  def onNotification(notification: Notification): js.Any = js.native
+  def onNotification(notification: Notification): js.Any
   
-  def sendNotification(notification: Notification): Unit = js.native
+  def sendNotification(notification: Notification): Unit
 }
 object INotificationChannel {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketLifecycleConfigurationMod {
@@ -39,6 +38,10 @@ object bucketLifecycleConfigurationMod {
   /* static members */
   object BucketLifecycleConfiguration {
     
+    @JSImport("@pulumi/aws/s3control/bucketLifecycleConfiguration", "BucketLifecycleConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BucketLifecycleConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,42 +51,36 @@ object bucketLifecycleConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3control/bucketLifecycleConfiguration", "BucketLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BucketLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws/s3control/bucketLifecycleConfiguration", "BucketLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws/s3control/bucketLifecycleConfiguration", "BucketLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketLifecycleConfigurationState): BucketLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws/s3control/bucketLifecycleConfiguration", "BucketLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketLifecycleConfigurationState, opts: CustomResourceOptions): BucketLifecycleConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BucketLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketLifecycleConfigurationState): BucketLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketLifecycleConfigurationState, opts: CustomResourceOptions): BucketLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketLifecycleConfiguration]
     
     /**
       * Returns true if the given object is an instance of BucketLifecycleConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3control/bucketLifecycleConfiguration", "BucketLifecycleConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3control/bucketLifecycleConfiguration.BucketLifecycleConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3control/bucketLifecycleConfiguration.BucketLifecycleConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3control/bucketLifecycleConfiguration.BucketLifecycleConfiguration */ Boolean]
   }
   
-  @js.native
   trait BucketLifecycleConfigurationArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the bucket.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Configuration block(s) containing lifecycle rules for the bucket.
       */
     val rules: Input[
         js.Array[Input[typings.pulumiAws.inputMod.s3control.BucketLifecycleConfigurationRule]]
-      ] = js.native
+      ]
   }
   object BucketLifecycleConfigurationArgs {
     
@@ -116,13 +113,12 @@ object bucketLifecycleConfigurationMod {
     }
   }
   
-  @js.native
   trait BucketLifecycleConfigurationState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the bucket.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block(s) containing lifecycle rules for the bucket.
@@ -131,7 +127,7 @@ object bucketLifecycleConfigurationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.s3control.BucketLifecycleConfigurationRule]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object BucketLifecycleConfigurationState {
     

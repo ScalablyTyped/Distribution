@@ -2,14 +2,12 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataResponse extends StObject {
   
   /** 回调函数返回的内容 */
-  var data: js.Any = js.native
+  var data: js.Any
 }
 object DataResponse {
   

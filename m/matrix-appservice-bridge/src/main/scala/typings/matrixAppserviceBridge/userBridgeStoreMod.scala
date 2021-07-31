@@ -7,7 +7,6 @@ import typings.nedb.mod.^
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userBridgeStoreMod {
@@ -19,7 +18,7 @@ object userBridgeStoreMod {
       * Construct a store suitable for user bridging information.
       * @param db The connected NEDB database instance
       */
-    def this(db: ^[_]) = this()
+    def this(db: ^[js.Any]) = this()
     
     /**
       * Get Matrix users by some data about them, previously stored via the set
@@ -46,7 +45,7 @@ object userBridgeStoreMod {
       *   })
       * });
       */
-    def getByMatrixData(dataQuery: Record[String, _]): js.Promise[js.Array[MatrixUser]] = js.native
+    def getByMatrixData(dataQuery: Record[String, js.Any]): js.Promise[js.Array[MatrixUser]] = js.native
     
     /**
       * Retrieve a MatrixUser based on their user ID localpart. If there is more than
@@ -82,7 +81,7 @@ object userBridgeStoreMod {
       *   })
       * });
       */
-    def getByRemoteData(dataQuery: Record[String, _]): js.Promise[js.Array[RemoteUser]] = js.native
+    def getByRemoteData(dataQuery: Record[String, js.Any]): js.Promise[js.Array[RemoteUser]] = js.native
     
     /**
       * Retrieve a list of matrix user IDs linked to this remote ID.

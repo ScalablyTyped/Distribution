@@ -2,29 +2,42 @@ package typings.enhancedResolve
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object descriptionFilePluginMod {
   
   @JSImport("enhanced-resolve/lib/DescriptionFilePlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends DescriptionFilePlugin {
+  class ^ protected ()
+    extends StObject
+       with DescriptionFilePlugin {
     def this(source: String, filenames: String, target: String) = this()
     def this(source: String, filenames: js.Array[String], target: String) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    
+    /* CompleteClass */
+    var filenames: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var target: String = js.native
   }
   
-  @js.native
   trait DescriptionFilePlugin extends StObject {
     
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
     
-    var filenames: js.Array[String] = js.native
+    var filenames: js.Array[String]
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object DescriptionFilePlugin {
     

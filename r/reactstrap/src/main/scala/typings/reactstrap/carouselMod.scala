@@ -10,7 +10,6 @@ import typings.reactstrap.reactstrapStrings.hover
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod {
@@ -22,12 +21,13 @@ object carouselMod {
   
   type Carousel = Component[CarouselProps, js.Object, js.Any]
   
-  @js.native
-  trait CarouselProps extends CommonCarouselProps {
+  trait CarouselProps
+    extends StObject
+       with CommonCarouselProps {
     
-    def next(): Unit = js.native
+    def next(): Unit
     
-    def previous(): Unit = js.native
+    def previous(): Unit
   }
   object CarouselProps {
     
@@ -48,30 +48,30 @@ object carouselMod {
     }
   }
   
-  @js.native
   trait CommonCarouselProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var enableTouch: js.UndefOr[Boolean] = js.native
+    var enableTouch: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[Double | String | Boolean] = js.native
+    var interval: js.UndefOr[Double | String | Boolean] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mouseEnter: js.UndefOr[js.Function0[Unit]] = js.native
+    var mouseEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var mouseExit: js.UndefOr[js.Function0[Unit]] = js.native
+    var mouseExit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var pause: js.UndefOr[hover | `false`] = js.native
+    var pause: js.UndefOr[hover | `false`] = js.undefined
     
-    var ride: js.UndefOr[carousel] = js.native
+    var ride: js.UndefOr[carousel] = js.undefined
     
-    var slide: js.UndefOr[Boolean] = js.native
+    var slide: js.UndefOr[Boolean] = js.undefined
   }
   object CommonCarouselProps {
     
@@ -146,25 +146,26 @@ object carouselMod {
     }
   }
   
-  @js.native
-  trait UncontrolledCarouselProps extends CommonCarouselProps {
+  trait UncontrolledCarouselProps
+    extends StObject
+       with CommonCarouselProps {
     
-    var autoPlay: js.UndefOr[Boolean] = js.native
+    var autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
-    var indicators: js.UndefOr[Boolean] = js.native
+    var indicators: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any]
     
-    var next: js.UndefOr[js.Function0[Unit]] = js.native
+    var next: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var previous: js.UndefOr[js.Function0[Unit]] = js.native
+    var previous: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object UncontrolledCarouselProps {
     
     @scala.inline
-    def apply(items: js.Array[_]): UncontrolledCarouselProps = {
+    def apply(items: js.Array[js.Any]): UncontrolledCarouselProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[UncontrolledCarouselProps]
     }
@@ -191,7 +192,7 @@ object carouselMod {
       def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))

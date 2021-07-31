@@ -2,13 +2,11 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCompatibleElasticsearchVersionsRequest extends StObject {
   
-  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.undefined
 }
 object GetCompatibleElasticsearchVersionsRequest {
   

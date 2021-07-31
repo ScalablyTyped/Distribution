@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpec extends StObject {
   
   /**
     * The defaults for backends.
     */
-  var backendDefaults: js.UndefOr[VirtualGatewaySpecBackendDefaults] = js.native
+  var backendDefaults: js.UndefOr[VirtualGatewaySpecBackendDefaults] = js.undefined
   
   /**
     * The listeners that the mesh endpoint is expected to receive inbound traffic from. You can specify one listener.
     */
-  var listener: VirtualGatewaySpecListener = js.native
+  var listener: VirtualGatewaySpecListener
   
   /**
     * The inbound and outbound access logging information for the virtual gateway.
     */
-  var logging: js.UndefOr[VirtualGatewaySpecLogging] = js.native
+  var logging: js.UndefOr[VirtualGatewaySpecLogging] = js.undefined
 }
 object VirtualGatewaySpec {
   

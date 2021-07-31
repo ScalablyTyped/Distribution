@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumDeclaration extends AST {
+trait EnumDeclaration
+  extends StObject
+     with AST {
   
-  var enumElements: ISeparatedSyntaxList2 = js.native
+  var enumElements: ISeparatedSyntaxList2
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
 }
 object EnumDeclaration {
   

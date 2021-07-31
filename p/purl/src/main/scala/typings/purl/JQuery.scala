@@ -3,16 +3,14 @@ package typings.purl
 import typings.purl.mod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
   /** 
     * extract the URL from the selected element and parse that - will work on any element with a `src`, `href` or `action` attribute.
     */
-  def url(): Url = js.native
+  def url(): Url
 }
 object JQuery {
   

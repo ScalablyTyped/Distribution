@@ -2,105 +2,103 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinonFakeXMLHttpRequest extends StObject {
   
   /**
     * Whether or not the request is asynchronous.
     */
-  var async: Boolean = js.native
+  var async: Boolean
   
-  def autoRespond(ms: Double): Unit = js.native
+  def autoRespond(ms: Double): Unit
   
   /**
     * Simulates a network error on the request. The onerror handler will be called and the status will be 0.
     */
-  def error(): Unit = js.native
+  def error(): Unit
   
   /**
     * All response headers as an object.
     */
-  def getAllResponseHeaders(): js.Any = js.native
+  def getAllResponseHeaders(): js.Any
   
   /**
     * The value of the given response header, if the request has been responded to (see respond).
     * @param header
     */
-  def getResponseHeader(header: String): String = js.native
+  def getResponseHeader(header: String): String
   
   /**
     * The request method as a string.
     */
-  var method: String = js.native
+  var method: String
   
-  def onerror(): Unit = js.native
+  def onerror(): Unit
   
   /**
     * Password, if any.
     */
-  var password: String = js.native
+  var password: String
   
   /**
     * The request body
     */
-  var requestBody: String = js.native
+  var requestBody: String
   
   /**
     * An object of all request headers, i.e.:
     */
-  var requestHeaders: js.Any = js.native
+  var requestHeaders: js.Any
   
   /**
     * Calls the above three methods.
     */
-  def respond(status: Double, headers: js.Any, body: String): Unit = js.native
+  def respond(status: Double, headers: js.Any, body: String): Unit
   
   /**
     * When using respond, this property is populated with a parsed document if response headers indicate as much (see the spec)
     */
-  var responseXML: Document = js.native
+  var responseXML: Document
   
   /**
     * Sets the respond body, updates the readyState property and fires onreadystatechange.
     * Additionally, populates responseXML with a parsed document if response headers indicate as much.
     */
-  def setResponseBody(body: String): Unit = js.native
+  def setResponseBody(body: String): Unit
   
   // Methods
   /**
     * Sets response headers (e.g. { "Content-Type": "text/html", ... }, updates the readyState property and fires onreadystatechange.
     * @param headers
     */
-  def setResponseHeaders(headers: js.Any): Unit = js.native
+  def setResponseHeaders(headers: js.Any): Unit
   
   /**
     * The request’s status code.
     * undefined if the request has not been handled (see respond below)
     */
-  var status: Double = js.native
+  var status: Double
   
   /**
     * Only populated if the respond method is called (see below).
     */
-  var statusText: String = js.native
+  var statusText: String
   
-  var upload: SinonFakeUploadProgress = js.native
+  var upload: SinonFakeUploadProgress
   
   // Properties
   /**
     * The URL set on the request object.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Username, if any.
     */
-  var username: String = js.native
+  var username: String
   
-  var withCredentials: Boolean = js.native
+  var withCredentials: Boolean
 }
 object SinonFakeXMLHttpRequest {
   

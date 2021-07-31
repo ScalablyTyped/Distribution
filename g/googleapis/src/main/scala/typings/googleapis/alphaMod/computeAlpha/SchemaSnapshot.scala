@@ -3,56 +3,54 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A persistent disk snapshot resource. (== resource_for beta.snapshots ==)
   * (== resource_for v1.snapshots ==)
   */
-@js.native
 trait SchemaSnapshot extends StObject {
   
   /**
     * [Output Only] Set to true if snapshots are automatically by applying
     * resource policy on the target disk.
     */
-  var autoCreated: js.UndefOr[Boolean] = js.native
+  var autoCreated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Size of the snapshot, specified in GB.
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A list of features to enable on the guest operating system.
     * Applicable only for bootable images. Read  Enabling guest operating
     * system features to see a list of available options.
     */
-  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#snapshot for Snapshot
     * resources.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this snapshot, which is
@@ -63,26 +61,26 @@ trait SchemaSnapshot extends StObject {
     * otherwise the request will fail with error 412 conditionNotMet.  To see
     * the latest fingerprint, make a get() request to retrieve a snapshot.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this snapshot. These can be later modified by the
     * setLabels method. Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Output Only] Integer license codes indicating which licenses are
     * attached to this snapshot.
     */
-  var licenseCodes: js.UndefOr[js.Array[String]] = js.native
+  var licenseCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] A list of public visible licenses that apply to this
     * snapshot. This can be because the original image had licenses attached
     * (such as a Windows image).
     */
-  var licenses: js.UndefOr[js.Array[String]] = js.native
+  var licenses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -93,17 +91,17 @@ trait SchemaSnapshot extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource&#39;s resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * Encrypts the snapshot using a customer-supplied encryption key.  After
@@ -116,38 +114,38 @@ trait SchemaSnapshot extends StObject {
     * automatically generated key and you do not need to provide a key to use
     * the snapshot later.
     */
-  var snapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var snapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The source disk used to create this snapshot.
     */
-  var sourceDisk: js.UndefOr[String] = js.native
+  var sourceDisk: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source disk. Required if the
     * source disk is protected by a customer-supplied encryption key.
     */
-  var sourceDiskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceDiskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The ID value of the disk used to create this snapshot. This
     * value may be used to determine whether the snapshot was taken from the
     * current or a previous instance of a given disk name.
     */
-  var sourceDiskId: js.UndefOr[String] = js.native
+  var sourceDiskId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the snapshot. This can be CREATING, DELETING,
     * FAILED, READY, or UPLOADING.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A size of the storage used by the snapshot. As snapshots
     * share storage, this number is expected to change with snapshot
     * creation/deletion.
     */
-  var storageBytes: js.UndefOr[String] = js.native
+  var storageBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An indicator whether storageBytes is in a stable state or
@@ -155,12 +153,12 @@ trait SchemaSnapshot extends StObject {
     * status can either be UPDATING, meaning the size of the snapshot is being
     * updated, or UP_TO_DATE, meaning the size of the snapshot is up-to-date.
     */
-  var storageBytesStatus: js.UndefOr[String] = js.native
+  var storageBytesStatus: js.UndefOr[String] = js.undefined
   
   /**
     * GCS bucket storage location of the snapshot (regional or multi-regional).
     */
-  var storageLocations: js.UndefOr[js.Array[String]] = js.native
+  var storageLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSnapshot {
   

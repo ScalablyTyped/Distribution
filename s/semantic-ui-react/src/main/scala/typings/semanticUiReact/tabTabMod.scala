@@ -15,7 +15,6 @@ import typings.semanticUiReact.tabPaneMod.TabPaneProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabTabMod extends Shortcut {
@@ -32,26 +31,25 @@ object tabTabMod extends Shortcut {
   @js.native
   val default: TabComponent = js.native
   
-  @js.native
   trait StrictTabProps extends StObject {
     
     /** Index of the currently active tab. */
-    var activeIndex: js.UndefOr[Double | String] = js.native
+    var activeIndex: js.UndefOr[Double | String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** The initial activeIndex. */
-    var defaultActiveIndex: js.UndefOr[Double | String] = js.native
+    var defaultActiveIndex: js.UndefOr[Double | String] = js.undefined
     
     /** Shorthand props for the Grid. */
-    var grid: js.UndefOr[js.Any] = js.native
+    var grid: js.UndefOr[js.Any] = js.undefined
     
     /** Shorthand props for the Menu. */
-    var menu: js.UndefOr[js.Any] = js.native
+    var menu: js.UndefOr[js.Any] = js.undefined
     
     /** Align vertical menu */
-    var menuPosition: js.UndefOr[left | right] = js.native
+    var menuPosition: js.UndefOr[left | right] = js.undefined
     
     /**
       * Called on tab change.
@@ -63,7 +61,7 @@ object tabTabMod extends Shortcut {
       */
     var onTabChange: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ TabProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Array of objects describing each Menu.Item and Tab.Pane:
@@ -77,10 +75,10 @@ object tabTabMod extends Shortcut {
       *   pane: 'Welcome',
       * }
       */
-    var panes: js.UndefOr[js.Array[MenuItem]] = js.native
+    var panes: js.UndefOr[js.Array[MenuItem]] = js.undefined
     
     /** A Tab can render only active pane. */
-    var renderActiveOnly: js.UndefOr[Boolean] = js.native
+    var renderActiveOnly: js.UndefOr[Boolean] = js.undefined
   }
   object StrictTabProps {
     
@@ -153,14 +151,16 @@ object tabTabMod extends Shortcut {
   }
   
   @js.native
-  trait TabComponent extends ComponentClass[TabProps, ComponentState] {
+  trait TabComponent
+    extends StObject
+       with ComponentClass[TabProps, ComponentState] {
     
     var Pane: StatelessComponent[TabPaneProps] = js.native
   }
   
-  @js.native
   trait TabProps
-    extends StrictTabProps
+    extends StObject
+       with StrictTabProps
        with /* key */ StringDictionary[js.Any]
   object TabProps {
     

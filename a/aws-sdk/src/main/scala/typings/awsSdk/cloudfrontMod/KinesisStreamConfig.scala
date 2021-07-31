@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisStreamConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that CloudFront can use to send real-time log data to your Kinesis data stream. For more information the IAM role, see Real-time log configuration IAM role in the Amazon CloudFront Developer Guide.
     */
-  var RoleARN: String = js.native
+  var RoleARN: String
   
   /**
     * The Amazon Resource Name (ARN) of the Kinesis data stream where you are sending real-time log data.
     */
-  var StreamARN: String = js.native
+  var StreamARN: String
 }
 object KinesisStreamConfig {
   

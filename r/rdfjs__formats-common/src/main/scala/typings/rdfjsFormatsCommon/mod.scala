@@ -6,7 +6,6 @@ import typings.rdfJs.mod.Stream
 import typings.rdfjsSinkMap.mod.SinkMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

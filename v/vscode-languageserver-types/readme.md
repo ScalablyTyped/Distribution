@@ -10,9 +10,9 @@ Types used by the Language server for node
 | ------------------ | :-------------: |
 | Full name          | vscode-languageserver-types |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 108 |
-| # downloads        | 56209350 |
+| # releases         | 20 |
+| # dependents       | 112 |
+| # downloads        | 63980254 |
 | # stars            | 0 |
 
 ## Links

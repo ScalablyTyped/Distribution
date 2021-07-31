@@ -6,38 +6,36 @@ import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionInviteOptionsMod {
   
-  @js.native
   trait SessionInviteOptions extends StObject {
     
     /**
       * See `core` API.
       */
-    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.native
+    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.undefined
     
     /**
       * See `core` API.
       */
-    var requestOptions: js.UndefOr[RequestOptions] = js.native
+    var requestOptions: js.UndefOr[RequestOptions] = js.undefined
     
     /**
       * Modifiers to pass to SessionDescriptionHandler during re-INVITE transaction.
       */
-    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
+    var sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.undefined
     
     /**
       * Options to pass to SessionDescriptionHandler during re-INVITE transaction.
       */
-    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
+    var sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.undefined
     
     /**
       * If true, send INVITE without SDP. Default is false.
       */
-    var withoutSdp: js.UndefOr[Boolean] = js.native
+    var withoutSdp: js.UndefOr[Boolean] = js.undefined
   }
   object SessionInviteOptions {
     

@@ -5,7 +5,6 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeProviderMod {
@@ -14,12 +13,11 @@ object themeProviderMod {
   @js.native
   val ThemeProvider: FunctionComponent[IThemeProviderProps] = js.native
   
-  @js.native
   trait IThemeProviderProps extends StObject {
     
-    var scheme: js.UndefOr[ISchemeNames] = js.native
+    var scheme: js.UndefOr[ISchemeNames] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IThemeProviderProps {
     

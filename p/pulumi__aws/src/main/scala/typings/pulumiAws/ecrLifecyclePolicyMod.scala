@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecrLifecyclePolicyMod {
@@ -44,6 +43,10 @@ object ecrLifecyclePolicyMod {
   /* static members */
   object LifecyclePolicy {
     
+    @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LifecyclePolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,40 +56,34 @@ object ecrLifecyclePolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState): LifecyclePolicy = js.native
-    @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): LifecyclePolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): LifecyclePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecyclePolicy]
     
     /**
       * Returns true if the given object is an instance of LifecyclePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecr/lifecyclePolicy.LifecyclePolicy */ Boolean]
   }
   
-  @js.native
   trait LifecyclePolicyArgs extends StObject {
     
     /**
       * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs.
       */
-    val policy: Input[String | LifecyclePolicyDocument] = js.native
+    val policy: Input[String | LifecyclePolicyDocument]
     
     /**
       * Name of the repository to apply the policy.
       */
-    val repository: Input[String] = js.native
+    val repository: Input[String]
   }
   object LifecyclePolicyArgs {
     
@@ -107,23 +104,22 @@ object ecrLifecyclePolicyMod {
     }
   }
   
-  @js.native
   trait LifecyclePolicyState extends StObject {
     
     /**
       * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs.
       */
-    val policy: js.UndefOr[Input[String | LifecyclePolicyDocument]] = js.native
+    val policy: js.UndefOr[Input[String | LifecyclePolicyDocument]] = js.undefined
     
     /**
       * The registry ID where the repository was created.
       */
-    val registryId: js.UndefOr[Input[String]] = js.native
+    val registryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the repository to apply the policy.
       */
-    val repository: js.UndefOr[Input[String]] = js.native
+    val repository: js.UndefOr[Input[String]] = js.undefined
   }
   object LifecyclePolicyState {
     

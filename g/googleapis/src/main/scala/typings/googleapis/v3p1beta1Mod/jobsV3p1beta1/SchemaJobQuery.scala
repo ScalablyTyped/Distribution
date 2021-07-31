@@ -2,13 +2,11 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  The query required to perform a search query.
   */
-@js.native
 trait SchemaJobQuery extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaJobQuery extends StObject {
     * with COMMUTE  MODE. When specified, [JobQuery.location_filters] is
     * ignored.   Currently we don&#39;t support sorting by commute time.
     */
-  var commuteFilter: js.UndefOr[SchemaCommuteFilter] = js.native
+  var commuteFilter: js.UndefOr[SchemaCommuteFilter] = js.undefined
   
   /**
     * Optional.  This filter specifies the exact company display name of the
@@ -27,7 +25,7 @@ trait SchemaJobQuery extends StObject {
     * the specified companies.  At most 20 company display name filters are
     * allowed.
     */
-  var companyDisplayNames: js.UndefOr[js.Array[String]] = js.native
+  var companyDisplayNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  This filter specifies the company entities to search against.
@@ -38,7 +36,7 @@ trait SchemaJobQuery extends StObject {
     * &quot;projects/api-test-project/companies/foo&quot;.  At most 20 company
     * filters are allowed.
     */
-  var companyNames: js.UndefOr[js.Array[String]] = js.native
+  var companyNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  This search filter is applied only to Job.compensation_info.
@@ -46,7 +44,7 @@ trait SchemaJobQuery extends StObject {
     * compensation &gt; $15&quot;, only jobs meeting these criteria are
     * searched. If a filter isn&#39;t defined, all open jobs are searched.
     */
-  var compensationFilter: js.UndefOr[SchemaCompensationFilter] = js.native
+  var compensationFilter: js.UndefOr[SchemaCompensationFilter] = js.undefined
   
   /**
     * Optional.  This filter specifies a structured syntax to match against the
@@ -64,7 +62,7 @@ trait SchemaJobQuery extends StObject {
     * Query: `(LOWER(driving_license)=&quot;class \&quot;a\&quot;&quot; OR
     * EMPTY(driving_license)) AND driving_years &gt; 10`
     */
-  var customAttributeFilter: js.UndefOr[String] = js.native
+  var customAttributeFilter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  This flag controls the spell-check feature. If false, the
@@ -72,7 +70,7 @@ trait SchemaJobQuery extends StObject {
     * &quot;enginee&quot; is corrected to &quot;engineer&quot;.  Defaults to
     * false: a spell check is performed.
     */
-  var disableSpellCheck: js.UndefOr[Boolean] = js.native
+  var disableSpellCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  The employment type filter specifies the employment type of
@@ -81,13 +79,13 @@ trait SchemaJobQuery extends StObject {
     * If multiple values are specified, jobs in the search results include any
     * of the specified employment types.
     */
-  var employmentTypes: js.UndefOr[js.Array[String]] = js.native
+  var employmentTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  This filter specifies a list of job names to be excluded
     * during search.  At most 200 excluded job names are allowed.
     */
-  var excludedJobs: js.UndefOr[js.Array[String]] = js.native
+  var excludedJobs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  The category filter specifies the categories of jobs to search
@@ -96,7 +94,7 @@ trait SchemaJobQuery extends StObject {
     * specified, jobs from any of the specified categories are searched
     * against.
     */
-  var jobCategories: js.UndefOr[js.Array[String]] = js.native
+  var jobCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  This filter specifies the locale of jobs to search against,
@@ -107,7 +105,7 @@ trait SchemaJobQuery extends StObject {
     * Languages](https://tools.ietf.org/html/bcp47).  At most 10 language code
     * filters are allowed.
     */
-  var languageCodes: js.UndefOr[js.Array[String]] = js.native
+  var languageCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  The location filter specifies geo-regions containing the jobs
@@ -119,20 +117,20 @@ trait SchemaJobQuery extends StObject {
     * LocationFilter.distance_in_miles parameter, the maximum provided distance
     * is used for all locations.  At most 5 location filters are allowed.
     */
-  var locationFilters: js.UndefOr[js.Array[SchemaLocationFilter]] = js.native
+  var locationFilters: js.UndefOr[js.Array[SchemaLocationFilter]] = js.undefined
   
   /**
     * Optional.  Jobs published within a range specified by this filter are
     * searched against.
     */
-  var publishTimeRange: js.UndefOr[SchemaTimestampRange] = js.native
+  var publishTimeRange: js.UndefOr[SchemaTimestampRange] = js.undefined
   
   /**
     * Optional.  The query string that matches against the job title,
     * description, and location fields.  The maximum number of allowed
     * characters is 255.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object SchemaJobQuery {
   

@@ -3,34 +3,33 @@ package typings.openidClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackParamsType
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var error_description: js.UndefOr[String] = js.native
+  var error_description: js.UndefOr[String] = js.undefined
   
-  var error_uri: js.UndefOr[String] = js.native
+  var error_uri: js.UndefOr[String] = js.undefined
   
-  var expires_in: js.UndefOr[String] = js.native
+  var expires_in: js.UndefOr[String] = js.undefined
   
-  var id_token: js.UndefOr[String] = js.native
+  var id_token: js.UndefOr[String] = js.undefined
   
-  var response: js.UndefOr[String] = js.native
+  var response: js.UndefOr[String] = js.undefined
   
-  var session_state: js.UndefOr[String] = js.native
+  var session_state: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
-  var token_type: js.UndefOr[String] = js.native
+  var token_type: js.UndefOr[String] = js.undefined
 }
 object CallbackParamsType {
   

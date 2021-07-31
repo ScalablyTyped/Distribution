@@ -13,7 +13,6 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.agGrid.selectionControllerMod.SelectionController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientSideNodeManagerMod {
@@ -64,7 +63,7 @@ object clientSideNodeManagerMod {
     
     var gridOptionsWrapper: js.Any = js.native
     
-    def insertItemsAtIndex(index: Double, rowData: js.Array[_]): js.Array[RowNode] = js.native
+    def insertItemsAtIndex(index: Double, rowData: js.Array[js.Any]): js.Array[RowNode] = js.native
     
     /* private */ def isExpanded(level: js.Any): js.Any = js.native
     
@@ -86,7 +85,7 @@ object clientSideNodeManagerMod {
     
     /* private */ def setLeafChildren(node: js.Any): js.Any = js.native
     
-    def setRowData(rowData: js.Array[_]): js.Array[RowNode] = js.native
+    def setRowData(rowData: js.Array[js.Any]): js.Array[RowNode] = js.native
     
     var suppressParentsInRowNodes: js.Any = js.native
     

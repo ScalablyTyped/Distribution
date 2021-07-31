@@ -11,17 +11,15 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupHeaderTypesMod {
   
-  @js.native
   trait IGroupHeaderCheckboxProps extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IGroupHeaderCheckboxProps {
     
@@ -45,38 +43,39 @@ object groupHeaderTypesMod {
     }
   }
   
-  @js.native
-  trait IGroupHeaderProps extends IGroupDividerProps {
+  trait IGroupHeaderProps
+    extends StObject
+       with IGroupDividerProps {
     
     /** Defines an element's number or position in the current set of listitems or treeitems */
-    var ariaPosInSet: js.UndefOr[Double] = js.native
+    var ariaPosInSet: js.UndefOr[Double] = js.undefined
     
     /** Defines the number of items in the current set of listitems or treeitems */
-    var ariaSetSize: js.UndefOr[Double] = js.native
+    var ariaSetSize: js.UndefOr[Double] = js.undefined
     
     /** Defines the name of a custom icon to be used for group headers. If not set, the default icon will be used */
-    var expandButtonIcon: js.UndefOr[String] = js.native
+    var expandButtonIcon: js.UndefOr[String] = js.undefined
     
     /** GroupedList id for aria-controls */
-    var groupedListId: js.UndefOr[String] = js.native
+    var groupedListId: js.UndefOr[String] = js.undefined
     
     /**
       * If provided, can be used to render a custom checkbox
       */
-    var onRenderGroupHeaderCheckbox: js.UndefOr[IRenderFunction[IGroupHeaderCheckboxProps]] = js.native
+    var onRenderGroupHeaderCheckbox: js.UndefOr[IRenderFunction[IGroupHeaderCheckboxProps]] = js.undefined
     
     /** Native props for the GroupHeader select all button */
-    var selectAllButtonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.native
+    var selectAllButtonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.undefined
     
     /** Style function to be passed in to override the themed or default styles */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles]] = js.undefined
     
     /**
       * Whether to use fast icon and check components. The icons can't be targeted by customization
       * but are still customizable via class names.
       * @defaultvalue true
       */
-    var useFastIcons: js.UndefOr[Boolean] = js.native
+    var useFastIcons: js.UndefOr[Boolean] = js.undefined
   }
   object IGroupHeaderProps {
     
@@ -145,20 +144,19 @@ object groupHeaderTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupHeader.types.IGroupHeaderProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/GroupedList/GroupHeader.types.IGroupHeaderProps, 'selected' | 'className'> & {  isCollapsed :boolean | undefined,   compact :boolean | undefined} */
-  @js.native
   trait IGroupHeaderStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether the group header is in compact mode or not */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Is Header collapsed */
-    var isCollapsed: js.UndefOr[Boolean] = js.native
+    var isCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IGroupHeaderStyleProps {
     
@@ -200,24 +198,23 @@ object groupHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IGroupHeaderStyles extends StObject {
     
-    var check: IStyle = js.native
+    var check: IStyle
     
-    var dropIcon: IStyle = js.native
+    var dropIcon: IStyle
     
-    var expand: IStyle = js.native
+    var expand: IStyle
     
-    var expandIsCollapsed: IStyle = js.native
+    var expandIsCollapsed: IStyle
     
-    var groupHeaderContainer: IStyle = js.native
+    var groupHeaderContainer: IStyle
     
-    var headerCount: IStyle = js.native
+    var headerCount: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var title: IStyle = js.native
+    var title: IStyle
   }
   object IGroupHeaderStyles {
     

@@ -2,17 +2,15 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaResourceGroupReference extends StObject {
   
   /**
     * A URI referencing one of the instance groups or network endpoint groups
     * listed in the backend service.
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
 }
 object SchemaResourceGroupReference {
   

@@ -2,41 +2,41 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxColorEdit control.
   */
-@js.native
-trait ASPxClientColorEdit extends ASPxClientDropDownEditBase {
+trait ASPxClientColorEdit
+  extends StObject
+     with ASPxClientDropDownEditBase {
   
   /**
     * Fires after the selected color has been changed within the color editor via end-user interaction.
     */
-  var ColorChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]] = js.native
+  var ColorChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]
   
   /**
     * Returns the color editor's value.
     */
-  def GetColor(): String = js.native
+  def GetColor(): String
   
   /**
     * Indicates whether the automatic color item is selected.
     */
-  def IsAutomaticColorSelected(): Boolean = js.native
+  def IsAutomaticColorSelected(): Boolean
   
   /**
     * Specifies the color value for the color editor.
     * @param value A string value specifying the editor color.
     */
-  def SetColor(value: String): Unit = js.native
+  def SetColor(value: String): Unit
   
   /**
     * This event is not in effect for the ASPxClientColorEdit. Use the ASPxClientColorEdit.ColorChanged event instead.
     */
   @JSName("TextChanged")
-  var TextChanged_ASPxClientColorEdit: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]] = js.native
+  var TextChanged_ASPxClientColorEdit: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]
 }
 object ASPxClientColorEdit {
   

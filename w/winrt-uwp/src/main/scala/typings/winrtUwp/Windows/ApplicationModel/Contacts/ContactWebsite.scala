@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the info about a Web site for a contact. */
-@js.native
 trait ContactWebsite extends StObject {
   
   /** Gets and sets the description of a Web site for a contact. The maximum string length for the description is 512 characters. */
-  var description: String = js.native
+  var description: String
   
-  var rawValue: js.Any = js.native
+  var rawValue: js.Any
   
   /* unmapped type */
   /** Gets and sets the Uniform Resource Identifier (URI) of a Web site for a contact. */
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object ContactWebsite {
   

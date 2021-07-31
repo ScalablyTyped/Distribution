@@ -2,17 +2,15 @@ package typings.mapboxMapboxSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapId extends StObject {
   
-  var mapId: String = js.native
+  var mapId: String
   
-  var tilesetName: js.UndefOr[String] = js.native
+  var tilesetName: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object MapId {
   

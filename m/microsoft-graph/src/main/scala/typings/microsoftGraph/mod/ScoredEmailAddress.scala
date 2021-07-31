@@ -2,25 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScoredEmailAddress extends StObject {
   
   // The email address.
-  var address: js.UndefOr[NullableOption[String]] = js.native
+  var address: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var itemId: js.UndefOr[NullableOption[String]] = js.native
+  var itemId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned
     * results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s
     * communication and collaboration patterns and business relationships.
     */
-  var relevanceScore: js.UndefOr[NullableOption[Double]] = js.native
+  var relevanceScore: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  var selectionLikelihood: js.UndefOr[NullableOption[SelectionLikelihoodInfo]] = js.native
+  var selectionLikelihood: js.UndefOr[NullableOption[SelectionLikelihoodInfo]] = js.undefined
 }
 object ScoredEmailAddress {
   

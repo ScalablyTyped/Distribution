@@ -3,27 +3,26 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.double
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Double
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("type")
-  val type_Double: double = js.native
+  val type_Double: double
 }
 object Double {
   
   @scala.inline
-  def apply(`type`: double): Double = {
+  def apply(): Double = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("double")
     __obj.asInstanceOf[Double]
   }
   

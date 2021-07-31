@@ -31,14 +31,14 @@ import typings.ractive.ractiveStrings.slow
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable0[
+    extends StObject
+       with Instantiable0[
           Ractive[Ractive[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]]
         ]
        with Instantiable1[
@@ -52,7 +52,7 @@ object anon {
     var DEBUG_PROMISES: Boolean = js.native
     
     /** The parent constructor used to create this constructor. */
-    var Parent: Static[Ractive[Ractive[_]]] = js.native
+    var Parent: Static[Ractive[Ractive[js.Any]]] = js.native
     
     val VERSION: String = js.native
     
@@ -67,25 +67,25 @@ object anon {
     
     var components: Registry[Component] = js.native
     
-    var decorators: Registry[Decorator[Ractive[Ractive[_]]]] = js.native
+    var decorators: Registry[Decorator[Ractive[Ractive[js.Any]]]] = js.native
     
     /** The registries that are inherited by all instance. */
-    var defaults: Registries[Ractive[Ractive[_]]] = js.native
+    var defaults: Registries[Ractive[Ractive[js.Any]]] = js.native
     
     var easings: Registry[Easing] = js.native
     
     /** Escape the given key, so that it can be safely used in a keypath e.g. 'foo.bar' becomes 'foo\.bar' */
     def escapeKey(key: String): String = js.native
     
-    var events: Registry[EventPlugin[Ractive[Ractive[_]]]] = js.native
+    var events: Registry[EventPlugin[Ractive[Ractive[js.Any]]]] = js.native
     
     /** Create a new component with this constructor as a starting point. */
-    def extend[U](): Static[Ractive[Ractive[Ractive[_]] with U]] = js.native
-    def extend[U](opts: ExtendOpts[Ractive[Ractive[_]] with U]): Static[Ractive[Ractive[Ractive[_]] with U]] = js.native
+    def extend[U](): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = js.native
+    def extend[U](opts: ExtendOpts[Ractive[Ractive[js.Any]] & U]): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = js.native
     
     /** Create a new component with this constuuctor as a starting point using the given constructor. */
-    def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[Ractive[Ractive[_]] with U]] = js.native
-    def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V], opts: W): Static[Ractive[Ractive[Ractive[_]] with U]] = js.native
+    def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = js.native
+    def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V], opts: W): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = js.native
     
     /** Retrieve the CSS string for all loaded components. */
     def getCSS(): String = js.native
@@ -148,15 +148,14 @@ object anon {
     /** Unescape the given key e.g. 'foo\.bar' becomes 'foo.bar'.k */
     def unescapeKey(key: String): String = js.native
     
-    def use(args: PluginExtend*): Static[Ractive[Ractive[_]]] = js.native
+    def use(args: PluginExtend*): Static[Ractive[Ractive[js.Any]]] = js.native
   }
   
-  @js.native
   trait Optional extends StObject {
     
-    var optional: js.UndefOr[js.Array[String]] = js.native
+    var optional: js.UndefOr[js.Array[String]] = js.undefined
     
-    var required: js.UndefOr[js.Array[String]] = js.native
+    var required: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optional {
     
@@ -189,10 +188,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Teardown extends StObject {
     
-    def teardown(): Unit = js.native
+    def teardown(): Unit
   }
   object Teardown {
     
@@ -211,17 +209,16 @@ object anon {
   }
   
   /* Inlined ractive.ractive.TransitionOpts & {} */
-  @js.native
   trait TransitionOpts extends StObject {
     
     /** The delay in milliseconds to wait before triggering the transition. */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /** The duration for the transition in milliseconds, slow for 600ms, fast for 200ms, and any other string for 400ms. */
-    var duration: js.UndefOr[Double | slow | fast | String] = js.native
+    var duration: js.UndefOr[Double | slow | fast | String] = js.undefined
     
     /** The easing to use for the transition. */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
   }
   object TransitionOpts {
     

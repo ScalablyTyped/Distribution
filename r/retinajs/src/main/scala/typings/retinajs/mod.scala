@@ -2,7 +2,6 @@ package typings.retinajs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,10 +21,12 @@ object mod {
   // function manualSwapImage(image: any, hdsrc: string): void;
   // function getImages(images: any[] | null): any[];
   // function cleanBgImg(img: any): any;
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(images: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("retinajs", JSImport.Namespace)
   @js.native
-  def apply(): Unit = js.native
-  @JSImport("retinajs", JSImport.Namespace)
-  @js.native
-  def apply(images: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
 }

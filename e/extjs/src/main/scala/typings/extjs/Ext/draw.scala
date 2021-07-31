@@ -1,76 +1,76 @@
 package typings.extjs.Ext
 
 import typings.extjs.Ext.dd.IDragSource
+import typings.extjs.Ext.util.IAnimate
 import typings.extjs.Ext.util.IMixedCollection
 import typings.extjs.Ext.util.IObservable
 import typings.extjs.Ext.util.IRegion
+import typings.extjs.Ext.util.ISorter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object draw {
   
-  @js.native
   trait Color extends StObject
   
-  @js.native
   trait Draw extends StObject
   
-  @js.native
-  trait IColor extends IBase {
+  trait IColor
+    extends StObject
+       with IBase {
     
     /** [Method] Get the blue component of the color in the range 0 255
       * @returns Number
       */
-    var getBlue: js.UndefOr[js.Function0[Double]] = js.native
+    var getBlue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Return a new color that is darker than this color
       * @param factor Number Darker factor (0..1), default to 0.2
       * @returns Object Ext.draw.Color
       */
-    var getDarker: js.UndefOr[js.Function1[/* factor */ js.UndefOr[Double], _]] = js.native
+    var getDarker: js.UndefOr[js.Function1[/* factor */ js.UndefOr[Double], js.Any]] = js.undefined
     
     /** [Method] Returns the gray value 0 to 255 of the color
       * @returns Number
       */
-    var getGrayscale: js.UndefOr[js.Function0[Double]] = js.native
+    var getGrayscale: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Get the green component of the color in the range 0 255
       * @returns Number
       */
-    var getGreen: js.UndefOr[js.Function0[Double]] = js.native
+    var getGreen: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Get the equivalent HSL components of the color
       * @returns Number[]
       */
-    var getHSL: js.UndefOr[js.Function0[Array]] = js.native
+    var getHSL: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Return a new color that is lighter than this color
       * @param factor Number Lighter factor (0..1), default to 0.2
       * @returns Object Ext.draw.Color
       */
-    var getLighter: js.UndefOr[js.Function1[/* factor */ js.UndefOr[Double], _]] = js.native
+    var getLighter: js.UndefOr[js.Function1[/* factor */ js.UndefOr[Double], js.Any]] = js.undefined
     
     /** [Method] Get the RGB values
       * @returns Number[]
       */
-    var getRGB: js.UndefOr[js.Function0[Array]] = js.native
+    var getRGB: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Get the red component of the color in the range 0 255
       * @returns Number
       */
-    var getRed: js.UndefOr[js.Function0[Double]] = js.native
+    var getRed: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Number) */
-    var lightnessFactor: js.UndefOr[Double] = js.native
+    var lightnessFactor: js.UndefOr[Double] = js.undefined
     
     /** [Method] Return the color in the hex format i e
       * @returns String
       */
     @JSName("toString")
-    var toString_FIColor: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var toString_FIColor: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   }
   object IColor {
     
@@ -90,7 +90,7 @@ object draw {
       def setGetBlueUndefined: Self = StObject.set(x, "getBlue", js.undefined)
       
       @scala.inline
-      def setGetDarker(value: /* factor */ js.UndefOr[Double] => _): Self = StObject.set(x, "getDarker", js.Any.fromFunction1(value))
+      def setGetDarker(value: /* factor */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getDarker", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetDarkerUndefined: Self = StObject.set(x, "getDarker", js.undefined)
@@ -114,7 +114,7 @@ object draw {
       def setGetHSLUndefined: Self = StObject.set(x, "getHSL", js.undefined)
       
       @scala.inline
-      def setGetLighter(value: /* factor */ js.UndefOr[Double] => _): Self = StObject.set(x, "getLighter", js.Any.fromFunction1(value))
+      def setGetLighter(value: /* factor */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getLighter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetLighterUndefined: Self = StObject.set(x, "getLighter", js.undefined)
@@ -145,27 +145,27 @@ object draw {
     }
   }
   
-  @js.native
   trait IComponent
-    extends typings.extjs.Ext.IComponent {
+    extends StObject
+       with typings.extjs.Ext.IComponent {
     
     /** [Config Option] (Boolean) */
-    var autoSize: js.UndefOr[Boolean] = js.native
+    var autoSize: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String[]) */
-    var enginePriority: js.UndefOr[Array] = js.native
+    var enginePriority: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Object[]) */
-    var gradients: js.UndefOr[Array] = js.native
+    var gradients: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Ext.draw.Sprite[]) */
-    var items: js.UndefOr[Array] = js.native
+    var items: js.UndefOr[Array] = js.undefined
     
     /** [Property] (Ext.draw.Surface) */
-    var surface: js.UndefOr[ISurface] = js.native
+    var surface: js.UndefOr[ISurface] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var viewBox: js.UndefOr[Boolean] = js.native
+    var viewBox: js.UndefOr[Boolean] = js.undefined
   }
   object IComponent {
     
@@ -219,43 +219,322 @@ object draw {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.util.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx */ @js.native
-  trait ICompositeSprite extends IMixedCollection {
+  - typings.extjs.Ext.util.IObservable because var conflicts: addEvents, addListener, addManagedListener, alias, alternateClassName, callOverridden, callParent, callSuper, clearListeners, clearManagedListeners, config, enableBubble, extend, fireEvent, fireEventArgs, getInitialConfig, hasListener, inheritableStatics, initConfig, mixins, mon, mun, on, relayEvents, removeListener, removeManagedListener, requires, resumeEvent, resumeEvents, self, singleton, statics, suspendEvent, suspendEvents, un, uses. Inlined listeners, hasListeners, isObservable
+  - typings.extjs.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, generateComparator, getFirstSorter, getInitialConfig, inheritableStatics, initConfig, initSortable, mixins, requires, self, singleton, sort, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable
+  - typings.extjs.Ext.util.IAbstractMixedCollection because var conflicts: alias, allowFunctions, alternateClassName, callOverridden, callParent, callSuper, clone, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined isMixedCollection, add, addAll, addEvents, addListener, addManagedListener, clear, clearListeners, clearManagedListeners, collect, contains, containsKey, each, eachKey, enableBubble, filter, filterBy, find, findBy, findIndex, findIndexBy, fireEvent, fireEventArgs, first, get, getAt, getByKey, getCount, getKey, getRange, hasListener, indexOf, indexOfKey, insert, last, mon, mun, on, relayEvents, remove, removeAll, removeAt, removeAtKey, removeListener, removeManagedListener, removeRange, replace, resumeEvent, resumeEvents, sum, suspendEvent, suspendEvents, un, updateKey
+  - typings.extjs.Ext.util.IMixedCollection because var conflicts: clone. Inlined allowFunctions, findInsertionIndex, generateComparator, getFirstSorter, initSortable, reorder, sort, sortBy, sortByKey */ trait ICompositeSprite
+    extends StObject
+       with IAnimate {
+    
+    /** [Method] Inherit docs from MixedCollection
+      * @param key Object
+      * @param o Object
+      * @returns Object The item added.
+      */
+    var add: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]] = js.undefined
+    
+    /** [Method] Adds all elements of an Array or an Object to the collection
+      * @param objs Object/Array An Object containing properties which will be added to the collection, or an Array of values, each of which are added to the collection. Functions references will be added to the collection if allowFunctions has been set to true.
+      */
+    var addAll: js.UndefOr[js.Function1[/* objs */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Adds class to all sprites
       * @param cls String CSS class name
       */
-    var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var addCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+    
+    /** [Method] Adds the specified events to the list of events which this Observable may fire
+      * @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
+      */
+    var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+    
+    /** [Method] Appends an event handler to this object
+      * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
+      * @param fn Function The method the event invokes, or if scope is specified, the name* of the method within the specified scope. Will be called with arguments given to Ext.util.Observable.fireEvent plus the options parameter described below.
+      * @param scope Object The scope (this reference) in which the handler function is executed. If omitted, defaults to the object which fired the event.
+      * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
+      * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+      */
+    var addListener: js.UndefOr[
+        js.Function4[
+          /* eventName */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          js.Any
+        ]
+      ] = js.undefined
+    
+    /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
+      * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
+      * @param ename Object/String The event name, or an object containing event name properties.
+      * @param fn Function If the ename parameter was an event name, this is the handler function.
+      * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+      * @param options Object If the ename parameter was an event name, this is the addListener options.
+      * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+      */
+    var addManagedListener: js.UndefOr[
+        js.Function5[
+          /* item */ js.UndefOr[js.Any], 
+          /* ename */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          js.Any
+        ]
+      ] = js.undefined
+    
+    /** [Config Option] (Boolean) */
+    var allowFunctions: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Performs custom animation on this object
       * @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
       * @returns Object this
       */
-    var animate: js.UndefOr[js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _])] = js.native
+    @JSName("animate")
+    var animate_ICompositeSprite: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    
+    /** [Method] Removes all items from the collection  */
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /** [Method] Removes all listeners for this object including the managed listeners */
+    var clearListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /** [Method] Removes all managed listeners for this object  */
+    var clearManagedListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /** [Method] Collects unique values of a particular property in this MixedCollection
+      * @param property String The property to collect on
+      * @param root String 'root' property to extract the first argument from. This is used mainly when summing fields in records, where the fields are all stored inside the 'data' object
+      * @param allowBlank Boolean Pass true to allow null, undefined or empty string values
+      * @returns Array The unique values
+      */
+    var collect: js.UndefOr[
+        js.Function3[
+          /* property */ js.UndefOr[java.lang.String], 
+          /* root */ js.UndefOr[java.lang.String], 
+          /* allowBlank */ js.UndefOr[Boolean], 
+          Array
+        ]
+      ] = js.undefined
+    
+    /** [Method] Returns true if the collection contains the passed Object as an item
+      * @param o Object The Object to look for in the collection.
+      * @returns Boolean True if the collection contains the Object as an item.
+      */
+    var contains: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    
+    /** [Method] Returns true if the collection contains the passed Object as a key
+      * @param key String The key to look for in the collection.
+      * @returns Boolean True if the collection contains the Object as a key.
+      */
+    var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+    
+    /** [Config Option] (String) */
+    var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Destroys this CompositeSprite  */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-      * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    /** [Method] Executes the specified function once for every item in the collection
+      * @param fn Function The function to execute for each item.
+      * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
       */
-    var getActiveAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    
+    /** [Method] Executes the specified function once for every key in the collection passing each key and its associated item as th
+      * @param fn Function The function to execute for each item.
+      * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
+      */
+    var eachKey: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    
+    /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
+      * @param eventNames String/String[] The event name to bubble, or an Array of event names.
+      */
+    var enableBubble: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
+    
+    /** [Method] Filters the objects in this collection by a set of Filters or by a single property value pair with optional paramete
+      * @param property Ext.util.Filter[]/String A property on your objects, or an array of Filter objects
+      * @param value String/RegExp Either string that the property values should start with or a RegExp to test against the property
+      * @param anyMatch Boolean True to match any part of the string, not just the beginning
+      * @param caseSensitive Boolean True for case sensitive comparison.
+      * @returns Ext.util.MixedCollection The new filtered collection
+      */
+    var filter: js.UndefOr[
+        js.Function4[
+          /* property */ js.UndefOr[js.Any], 
+          /* value */ js.UndefOr[js.Any], 
+          /* anyMatch */ js.UndefOr[Boolean], 
+          /* caseSensitive */ js.UndefOr[Boolean], 
+          IMixedCollection
+        ]
+      ] = js.undefined
+    
+    /** [Method] Filter by a function
+      * @param fn Function The function to be called.
+      * @param scope Object The scope (this reference) in which the function is executed. Defaults to this MixedCollection.
+      * @returns Ext.util.MixedCollection The new filtered collection
+      */
+    var filterBy: js.UndefOr[
+        js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
+      ] = js.undefined
+    
+    /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function  */
+    var find: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function
+      * @param fn Function The selection function to execute for each item.
+      * @param scope Object The scope (this reference) in which the function is executed. Defaults to the browser window.
+      * @returns Object The first item in the collection which returned true from the selection function, or null if none was found.
+      */
+    var findBy: js.UndefOr[
+        js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
+    
+    /** [Method] Finds the index of the first matching object in this collection by a specific property value
+      * @param property String The name of a property on your objects.
+      * @param value String/RegExp A string that the property values should start with or a RegExp to test against the property.
+      * @param start Number The index to start searching at.
+      * @param anyMatch Boolean True to match any part of the string, not just the beginning.
+      * @param caseSensitive Boolean True for case sensitive comparison.
+      * @returns Number The matched index or -1
+      */
+    var findIndex: js.UndefOr[
+        js.Function5[
+          /* property */ js.UndefOr[java.lang.String], 
+          /* value */ js.UndefOr[js.Any], 
+          /* start */ js.UndefOr[Double], 
+          /* anyMatch */ js.UndefOr[Boolean], 
+          /* caseSensitive */ js.UndefOr[Boolean], 
+          Double
+        ]
+      ] = js.undefined
+    
+    /** [Method] Find the index of the first matching object in this collection by a function
+      * @param fn Function The function to be called.
+      * @param scope Object The scope (this reference) in which the function is executed. Defaults to this MixedCollection.
+      * @param start Number The index to start searching at.
+      * @returns Number The matched index or -1
+      */
+    var findIndexBy: js.UndefOr[
+        js.Function3[
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          /* start */ js.UndefOr[Double], 
+          Double
+        ]
+      ] = js.undefined
+    
+    /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
+      * @param newItem Object The new object to find the insertion position of.
+      * @param sorterFn Function The function to sort by. This is the same as the sorting function passed to sortBy. It accepts 2 items from this MixedCollection, and returns -1 0, or 1 depending on the relative sort positions of the 2 compared items. If omitted, a function generated from the currently defined set of sorters will be used.
+      * @returns Number The insertion point to add the new item into this MixedCollection at using insert
+      */
+    var findInsertionIndex: js.UndefOr[
+        js.Function2[/* newItem */ js.UndefOr[js.Any], /* sorterFn */ js.UndefOr[js.Any], Double]
+      ] = js.undefined
+    
+    /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
+      * @param eventName String The name of the event to fire.
+      * @param args Object... Variable number of parameters are passed to handlers.
+      * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
+      */
+    var fireEvent: js.UndefOr[js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, Boolean]] = js.undefined
+    
+    /** [Method] Fires the specified event with the passed parameter list
+      * @param eventName String The name of the event to fire.
+      * @param args Object[] An array of parameters which are passed to handlers.
+      * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
+      */
+    var fireEventArgs: js.UndefOr[
+        js.Function2[/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array], Boolean]
+      ] = js.undefined
+    
+    /** [Method] Returns the first item in the collection
+      * @returns Object the first item in the collection..
+      */
+    var first: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    
+    /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
+    var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /** [Method] Returns the item associated with the passed key OR index
+      * @param key String/Number The key or index of the item.
+      * @returns Object If the item is found, returns the item. If the item was not found, returns undefined. If an item was found, but is a Class, returns null.
+      */
+    var get: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    
+    /** [Method] Returns the item at the specified index
+      * @param index Number The index of the item.
+      * @returns Object The item at the specified index.
+      */
+    var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
     
     /** [Method] Returns the group bounding box
       * @returns Object an object with x, y, width, and height properties.
       */
-    var getBBox: js.UndefOr[js.Function0[_]] = js.native
+    var getBBox: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
-      * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
+    /** [Method] Returns the item associated with the passed key
+      * @param key String/Number The key of the item.
+      * @returns Object The item associated with the passed key.
       */
-    var hasActiveFx: js.UndefOr[js.Function0[_]] = js.native
+    var getByKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    
+    /** [Method] Returns the number of items in the collection
+      * @returns Number the number of items in the collection.
+      */
+    var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
+    
+    /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
+      * @returns Ext.util.Sorter The sorter, null if none exist
+      */
+    var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.undefined
+    
+    /** [Method] A function which will be called passing a newly added object when the object is added without a separate id
+      * @param item Object The item for which to find the key.
+      * @returns Object The key for the passed item.
+      */
+    var getKey: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    
+    /** [Method] Returns a range of items in this collection
+      * @param startIndex Number The starting index. Defaults to 0.
+      * @param endIndex Number The ending index. Defaults to the last item.
+      * @returns Array An array of items
+      */
+    var getRange: js.UndefOr[
+        js.Function2[/* startIndex */ js.UndefOr[Double], /* endIndex */ js.UndefOr[Double], Array]
+      ] = js.undefined
+    
+    /** [Method] Checks to see if this object has any listeners for a specified event or whether the event bubbles
+      * @param eventName String The name of the event to check for
+      * @returns Boolean true if the event is being listened for or bubbles, else false
+      */
+    var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+    
+    /** [Property] (Object) */
+    var hasListeners: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Hides all sprites
       * @param redraw Boolean Flag to immediately draw the change.
       * @returns Ext.draw.CompositeSprite this
       */
-    var hide: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.native
+    var hide: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
+    
+    /** [Method] Returns index within the collection of the passed Object
+      * @param o Object The item to find the index of.
+      * @returns Number index of the item. Returns -1 if not found.
+      */
+    var indexOf: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Double]] = js.undefined
+    
+    /** [Method] Returns index within the collection of the passed key
+      * @param key String The key to find the index of.
+      * @returns Number index of the key.
+      */
+    var indexOfKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], Double]] = js.undefined
+    
+    /** [Method] Performs initialization of this mixin  */
+    var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Inserts an item at the specified index in the collection
       * @param index Object
@@ -263,28 +542,186 @@ object draw {
       * @param o Object
       * @returns Object The item inserted or an array of items inserted.
       */
-    @JSName("insert")
-    var insert_ICompositeSprite: js.UndefOr[
-        js.Function3[
-          /* index */ js.UndefOr[js.Any], 
-          /* key */ js.UndefOr[js.Any], 
-          /* o */ js.UndefOr[js.Any], 
-          _
+    var insert: js.UndefOr[
+        js.Function3[js.UndefOr[js.Any | Double], js.UndefOr[js.Any], js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
+    
+    /** [Property] (Boolean) */
+    var isMixedCollection: js.UndefOr[Boolean] = js.undefined
+    
+    /** [Property] (Boolean) */
+    var isObservable: js.UndefOr[Boolean] = js.undefined
+    
+    /** [Property] (Boolean) */
+    var isSortable: js.UndefOr[Boolean] = js.undefined
+    
+    /** [Method] Returns the last item in the collection
+      * @returns Object the last item in the collection..
+      */
+    var last: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    
+    /** [Config Option] (Object) */
+    var listeners: js.UndefOr[js.Any] = js.undefined
+    
+    /** [Method] Shorthand for addManagedListener
+      * @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
+      * @param ename Object/String The event name, or an object containing event name properties.
+      * @param fn Function If the ename parameter was an event name, this is the handler function.
+      * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+      * @param options Object If the ename parameter was an event name, this is the addListener options.
+      * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+      */
+    var mon: js.UndefOr[
+        js.Function5[
+          /* item */ js.UndefOr[js.Any], 
+          /* ename */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
+    
+    /** [Method] Shorthand for removeManagedListener
+      * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
+      * @param ename Object/String The event name, or an object containing event name properties.
+      * @param fn Function If the ename parameter was an event name, this is the handler function.
+      * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+      */
+    var mun: js.UndefOr[
+        js.Function4[
+          /* item */ js.UndefOr[js.Any], 
+          /* ename */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /** [Method] Shorthand for addListener
+      * @param eventName String/Object The name of the event to listen for. May also be an object who's property names are event names.
+      * @param fn Function The method the event invokes, or if scope is specified, the name* of the method within the specified scope. Will be called with arguments given to Ext.util.Observable.fireEvent plus the options parameter described below.
+      * @param scope Object The scope (this reference) in which the handler function is executed. If omitted, defaults to the object which fired the event.
+      * @param options Object An object containing handler configuration.  Note: Unlike in ExtJS 3.x, the options object will also be passed as the last argument to every event handler.  This object may contain any of the following properties:
+      * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
+      */
+    var on: js.UndefOr[
+        js.Function4[
+          /* eventName */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Method] Force redraw of all sprites  */
-    var redraw: js.UndefOr[js.Function0[Unit]] = js.native
+    var redraw: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    /** [Method] Relays selected events from the specified Observable as if the events were fired by this
+      * @param origin Object The Observable whose events this object is to relay.
+      * @param events String[] Array of event names to relay.
+      * @param prefix String A common prefix to prepend to the event names. For example: this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Now the grid will forward 'load' and 'clear' events of store as 'storeload' and 'storeclear'.
+      * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
+      */
+    var relayEvents: js.UndefOr[
+        js.Function3[
+          /* origin */ js.UndefOr[js.Any], 
+          /* events */ js.UndefOr[Array], 
+          /* prefix */ js.UndefOr[java.lang.String], 
+          js.Any
+        ]
+      ] = js.undefined
+    
+    /** [Method] Inherit docs from MixedCollection
+      * @param o Object
+      * @returns Object The item removed or false if no item was removed.
+      */
+    var remove: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    
+    /** [Method] Remove all items in the collection
+      * @param items Array An array of items to be removed.
+      * @returns Ext.util.MixedCollection this object
+      */
+    var removeAll: js.UndefOr[js.Function1[/* items */ js.UndefOr[Array], IMixedCollection]] = js.undefined
+    
+    /** [Method] Remove an item from a specified index in the collection
+      * @param index Number The index within the collection of the item to remove.
+      * @returns Object The item removed or false if no item was removed.
+      */
+    var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+    
+    /** [Method] Removes an item associated with the passed key fom the collection
+      * @param key String The key of the item to remove. If null is passed, all objects which yielded no key from the configured getKey function are removed.
+      * @returns Object Only returned if removing at a specified key. The item removed or false if no item was removed.
+      */
+    var removeAtKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Method] Removes class from all sprites
       * @param cls String CSS class name
       */
-    var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var removeCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
-    /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
-      * @returns Object this
+    /** [Method] Removes an event handler
+      * @param eventName String The type of event the handler was associated with.
+      * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
+      * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
       */
-    var sequenceFx: js.UndefOr[js.Function0[_]] = js.native
+    var removeListener: js.UndefOr[
+        js.Function3[
+          /* eventName */ js.UndefOr[java.lang.String], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /** [Method] Removes listeners that were added by the mon method
+      * @param item Ext.util.Observable/Ext.Element The item from which to remove a listener/listeners.
+      * @param ename Object/String The event name, or an object containing event name properties.
+      * @param fn Function If the ename parameter was an event name, this is the handler function.
+      * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
+      */
+    var removeManagedListener: js.UndefOr[
+        js.Function4[
+          /* item */ js.UndefOr[js.Any], 
+          /* ename */ js.UndefOr[js.Any], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /** [Method] Remove a range of items starting at a specified index in the collection
+      * @param index Number The index within the collection of the item to remove.
+      * @param removeCount Number The nuber of items to remove beginning at the specified index.
+      * @returns Object The last item removed or false if no item was removed.
+      */
+    var removeRange: js.UndefOr[
+        js.Function2[/* index */ js.UndefOr[Double], /* removeCount */ js.UndefOr[Double], js.Any]
+      ] = js.undefined
+    
+    /** [Method] Reorders each of the items based on a mapping from old index to new index
+      * @param mapping Object Mapping from old item index to new item index
+      */
+    var reorder: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
+    
+    /** [Method] Replaces an item in the collection
+      * @param key String The key associated with the item to replace, or the replacement item. If you supplied a getKey implementation for this MixedCollection, or if the key of your stored items is in a property called id, then the MixedCollection will be able to derive the key of the replacement item. If you want to replace an item with one having the same key value, then just pass the replacement item in this parameter.
+      * @param o Object {Object} o (optional) If the first parameter passed was a key, the item to associate with that key.
+      * @returns Object The new item.
+      */
+    var replace: js.UndefOr[
+        js.Function2[/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
+    
+    /** [Method] Resumes firing of the named event s
+      * @param eventName String... Multiple event names to resume.
+      */
+    var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    
+    /** [Method] Resumes firing events see suspendEvents */
+    var resumeEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Iterates through all sprites calling setAttributes on each one
       * @param attrs Object Attributes to be changed on the sprite.
@@ -293,33 +730,99 @@ object draw {
       */
     var setAttributes: js.UndefOr[
         js.Function2[/* attrs */ js.UndefOr[js.Any], /* redraw */ js.UndefOr[Boolean], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets style for all sprites
       * @param style String CSS Style definition.
       */
-    var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Shows all sprites
       * @param redraw Boolean Flag to immediately draw the change.
       * @returns Ext.draw.CompositeSprite this
       */
-    var show: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.native
+    var show: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
     
-    /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-      * @returns Ext.Element The Element
+    /** [Method] Sorts the data in the Store by one or more of its properties
+      * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
+      * @param direction String The overall direction to sort the data by.
+      * @returns Ext.util.Sorter[]
       */
-    var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.native
+    var sort: js.UndefOr[
+        js.Function2[
+          /* sorters */ js.UndefOr[js.Any], 
+          /* direction */ js.UndefOr[java.lang.String], 
+          Array
+        ]
+      ] = js.undefined
     
-    /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
-      * @returns Ext.Element The Element
+    /** [Method] Sorts the collection by a single sorter function
+      * @param sorterFn Function The function to sort by
       */
-    var stopFx: js.UndefOr[js.Function0[IElement]] = js.native
+    var sortBy: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
-      * @returns Object this
+    /** [Method] Sorts this collection by keys
+      * @param direction String 'ASC' or 'DESC'. Defaults to 'ASC'.
+      * @param fn Function Comparison function that defines the sort order. Defaults to sorting by case insensitive string.
       */
-    var syncFx: js.UndefOr[js.Function0[_]] = js.native
+    var sortByKey: js.UndefOr[
+        js.Function2[/* direction */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], Unit]
+      ] = js.undefined
+    
+    /** [Config Option] (String) */
+    var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+    
+    /** [Config Option] (Ext.util.Sorter[]/Object[]) */
+    var sorters: js.UndefOr[js.Any] = js.undefined
+    
+    /** [Method] Collects all of the values of the given property and returns their sum
+      * @param property String The property to sum by
+      * @param root String 'root' property to extract the first argument from. This is used mainly when summing fields in records, where the fields are all stored inside the 'data' object
+      * @param start Number The record index to start at
+      * @param end Number The record index to end at
+      * @returns Number The total
+      */
+    var sum: js.UndefOr[
+        js.Function4[
+          /* property */ js.UndefOr[java.lang.String], 
+          /* root */ js.UndefOr[java.lang.String], 
+          /* start */ js.UndefOr[Double], 
+          /* end */ js.UndefOr[Double], 
+          Double
+        ]
+      ] = js.undefined
+    
+    /** [Method] Suspends firing of the named event s
+      * @param eventName String... Multiple event names to suspend.
+      */
+    var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    
+    /** [Method] Suspends the firing of all events
+      * @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
+      */
+    var suspendEvents: js.UndefOr[js.Function1[/* queueSuspended */ js.UndefOr[Boolean], Unit]] = js.undefined
+    
+    /** [Method] Shorthand for removeListener
+      * @param eventName String The type of event the handler was associated with.
+      * @param fn Function The handler to remove. This must be a reference to the function passed into the Ext.util.Observable.addListener call.
+      * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
+      */
+    var un: js.UndefOr[
+        js.Function3[
+          /* eventName */ js.UndefOr[java.lang.String], 
+          /* fn */ js.UndefOr[js.Any], 
+          /* scope */ js.UndefOr[js.Any], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /** [Method] Change the key for an existing item in the collection
+      * @param oldKey Object The old key
+      * @param newKey Object The new key
+      */
+    var updateKey: js.UndefOr[
+        js.Function2[/* oldKey */ js.UndefOr[js.Any], /* newKey */ js.UndefOr[js.Any], Unit]
+      ] = js.undefined
   }
   object ICompositeSprite {
     
@@ -333,19 +836,100 @@ object draw {
     implicit class ICompositeSpriteMutableBuilder[Self <: ICompositeSprite] (val x: Self) extends AnyVal {
       
       @scala.inline
+      def setAdd(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setAddAll(value: /* objs */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
+      
+      @scala.inline
       def setAddCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "addCls", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
       
       @scala.inline
-      def setAnimate(value: js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _])): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      def setAddEvents(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setAnimateFunction1(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
+      def setAddEventsUndefined: Self = StObject.set(x, "addEvents", js.undefined)
+      
+      @scala.inline
+      def setAddListener(
+        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
+      
+      @scala.inline
+      def setAddManagedListener(
+        value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      ): Self = StObject.set(x, "addManagedListener", js.Any.fromFunction5(value))
+      
+      @scala.inline
+      def setAddManagedListenerUndefined: Self = StObject.set(x, "addManagedListener", js.undefined)
+      
+      @scala.inline
+      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      
+      @scala.inline
+      def setAllowFunctions(value: Boolean): Self = StObject.set(x, "allowFunctions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAllowFunctionsUndefined: Self = StObject.set(x, "allowFunctions", js.undefined)
+      
+      @scala.inline
+      def setAnimate(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      
+      @scala.inline
+      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setClearListeners(value: () => Unit): Self = StObject.set(x, "clearListeners", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setClearListenersUndefined: Self = StObject.set(x, "clearListeners", js.undefined)
+      
+      @scala.inline
+      def setClearManagedListeners(value: () => Unit): Self = StObject.set(x, "clearManagedListeners", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setClearManagedListenersUndefined: Self = StObject.set(x, "clearManagedListeners", js.undefined)
+      
+      @scala.inline
+      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      
+      @scala.inline
+      def setCollect(
+        value: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* allowBlank */ js.UndefOr[Boolean]) => Array
+      ): Self = StObject.set(x, "collect", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
+      
+      @scala.inline
+      def setContains(value: /* o */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setContainsKey(value: /* key */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setContainsKeyUndefined: Self = StObject.set(x, "containsKey", js.undefined)
+      
+      @scala.inline
+      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      
+      @scala.inline
+      def setDefaultSortDirection(value: java.lang.String): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
       
       @scala.inline
       def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
@@ -354,22 +938,154 @@ object draw {
       def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
       @scala.inline
-      def setGetActiveAnimation(value: () => _): Self = StObject.set(x, "getActiveAnimation", js.Any.fromFunction0(value))
+      def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetActiveAnimationUndefined: Self = StObject.set(x, "getActiveAnimation", js.undefined)
+      def setEachKey(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachKey", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetBBox(value: () => _): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
+      def setEachKeyUndefined: Self = StObject.set(x, "eachKey", js.undefined)
+      
+      @scala.inline
+      def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+      
+      @scala.inline
+      def setEnableBubble(value: /* eventNames */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "enableBubble", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setEnableBubbleUndefined: Self = StObject.set(x, "enableBubble", js.undefined)
+      
+      @scala.inline
+      def setFilter(
+        value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => IMixedCollection
+      ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setFilterBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
+      
+      @scala.inline
+      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      @scala.inline
+      def setFind(value: () => Unit): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
+      
+      @scala.inline
+      def setFindIndex(
+        value: (/* property */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean]) => Double
+      ): Self = StObject.set(x, "findIndex", js.Any.fromFunction5(value))
+      
+      @scala.inline
+      def setFindIndexBy(
+        value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* start */ js.UndefOr[Double]) => Double
+      ): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
+      
+      @scala.inline
+      def setFindIndexUndefined: Self = StObject.set(x, "findIndex", js.undefined)
+      
+      @scala.inline
+      def setFindInsertionIndex(value: (/* newItem */ js.UndefOr[js.Any], /* sorterFn */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findInsertionIndex", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFindInsertionIndexUndefined: Self = StObject.set(x, "findInsertionIndex", js.undefined)
+      
+      @scala.inline
+      def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
+      
+      @scala.inline
+      def setFireEvent(value: (/* eventName */ java.lang.String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFireEventArgs(value: (/* eventName */ js.UndefOr[java.lang.String], /* args */ js.UndefOr[Array]) => Boolean): Self = StObject.set(x, "fireEventArgs", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setFireEventArgsUndefined: Self = StObject.set(x, "fireEventArgs", js.undefined)
+      
+      @scala.inline
+      def setFireEventUndefined: Self = StObject.set(x, "fireEvent", js.undefined)
+      
+      @scala.inline
+      def setFirst(value: () => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      
+      @scala.inline
+      def setGenerateComparator(value: () => Unit): Self = StObject.set(x, "generateComparator", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGenerateComparatorUndefined: Self = StObject.set(x, "generateComparator", js.undefined)
+      
+      @scala.inline
+      def setGet(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
+      
+      @scala.inline
+      def setGetBBox(value: () => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
       
       @scala.inline
-      def setHasActiveFx(value: () => _): Self = StObject.set(x, "hasActiveFx", js.Any.fromFunction0(value))
+      def setGetByKey(value: /* key */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setHasActiveFxUndefined: Self = StObject.set(x, "hasActiveFx", js.undefined)
+      def setGetByKeyUndefined: Self = StObject.set(x, "getByKey", js.undefined)
+      
+      @scala.inline
+      def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
+      
+      @scala.inline
+      def setGetFirstSorter(value: () => ISorter): Self = StObject.set(x, "getFirstSorter", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetFirstSorterUndefined: Self = StObject.set(x, "getFirstSorter", js.undefined)
+      
+      @scala.inline
+      def setGetKey(value: /* item */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+      
+      @scala.inline
+      def setGetRange(value: (/* startIndex */ js.UndefOr[Double], /* endIndex */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "getRange", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setGetRangeUndefined: Self = StObject.set(x, "getRange", js.undefined)
+      
+      @scala.inline
+      def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+      
+      @scala.inline
+      def setHasListener(value: /* eventName */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setHasListenerUndefined: Self = StObject.set(x, "hasListener", js.undefined)
+      
+      @scala.inline
+      def setHasListeners(value: js.Any): Self = StObject.set(x, "hasListeners", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHasListenersUndefined: Self = StObject.set(x, "hasListeners", js.undefined)
       
       @scala.inline
       def setHide(value: /* redraw */ js.UndefOr[Boolean] => ICompositeSprite): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
@@ -378,12 +1094,82 @@ object draw {
       def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
       @scala.inline
-      def setInsert(
-        value: (/* index */ js.UndefOr[js.Any], /* key */ js.UndefOr[js.Any], /* o */ js.UndefOr[js.Any]) => _
-      ): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
+      def setIndexOf(value: /* o */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setIndexOfKey(value: /* key */ js.UndefOr[java.lang.String] => Double): Self = StObject.set(x, "indexOfKey", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setIndexOfKeyUndefined: Self = StObject.set(x, "indexOfKey", js.undefined)
+      
+      @scala.inline
+      def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
+      
+      @scala.inline
+      def setInitSortable(value: () => Unit): Self = StObject.set(x, "initSortable", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setInitSortableUndefined: Self = StObject.set(x, "initSortable", js.undefined)
+      
+      @scala.inline
+      def setInsert(value: (js.UndefOr[js.Any | Double], js.UndefOr[js.Any], js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "insert", js.Any.fromFunction3(value))
       
       @scala.inline
       def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      
+      @scala.inline
+      def setIsMixedCollection(value: Boolean): Self = StObject.set(x, "isMixedCollection", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsMixedCollectionUndefined: Self = StObject.set(x, "isMixedCollection", js.undefined)
+      
+      @scala.inline
+      def setIsObservable(value: Boolean): Self = StObject.set(x, "isObservable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsObservableUndefined: Self = StObject.set(x, "isObservable", js.undefined)
+      
+      @scala.inline
+      def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
+      
+      @scala.inline
+      def setLast(value: () => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+      
+      @scala.inline
+      def setListeners(value: js.Any): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      
+      @scala.inline
+      def setMon(
+        value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      ): Self = StObject.set(x, "mon", js.Any.fromFunction5(value))
+      
+      @scala.inline
+      def setMonUndefined: Self = StObject.set(x, "mon", js.undefined)
+      
+      @scala.inline
+      def setMun(
+        value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      ): Self = StObject.set(x, "mun", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setMunUndefined: Self = StObject.set(x, "mun", js.undefined)
+      
+      @scala.inline
+      def setOn(
+        value: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => js.Any
+      ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
       @scala.inline
       def setRedraw(value: () => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
@@ -392,16 +1178,88 @@ object draw {
       def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
       
       @scala.inline
+      def setRelayEvents(
+        value: (/* origin */ js.UndefOr[js.Any], /* events */ js.UndefOr[Array], /* prefix */ js.UndefOr[java.lang.String]) => js.Any
+      ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+      
+      @scala.inline
+      def setRemove(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRemoveAll(value: /* items */ js.UndefOr[Array] => IMixedCollection): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+      
+      @scala.inline
+      def setRemoveAt(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "removeAt", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRemoveAtKey(value: /* key */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "removeAtKey", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRemoveAtKeyUndefined: Self = StObject.set(x, "removeAtKey", js.undefined)
+      
+      @scala.inline
+      def setRemoveAtUndefined: Self = StObject.set(x, "removeAt", js.undefined)
+      
+      @scala.inline
       def setRemoveCls(value: /* cls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "removeCls", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
       
       @scala.inline
-      def setSequenceFx(value: () => _): Self = StObject.set(x, "sequenceFx", js.Any.fromFunction0(value))
+      def setRemoveListener(
+        value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      ): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setSequenceFxUndefined: Self = StObject.set(x, "sequenceFx", js.undefined)
+      def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
+      
+      @scala.inline
+      def setRemoveManagedListener(
+        value: (/* item */ js.UndefOr[js.Any], /* ename */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      ): Self = StObject.set(x, "removeManagedListener", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setRemoveManagedListenerUndefined: Self = StObject.set(x, "removeManagedListener", js.undefined)
+      
+      @scala.inline
+      def setRemoveRange(value: (/* index */ js.UndefOr[Double], /* removeCount */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "removeRange", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRemoveRangeUndefined: Self = StObject.set(x, "removeRange", js.undefined)
+      
+      @scala.inline
+      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      
+      @scala.inline
+      def setReorder(value: /* mapping */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reorder", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setReorderUndefined: Self = StObject.set(x, "reorder", js.undefined)
+      
+      @scala.inline
+      def setReplace(value: (/* key */ js.UndefOr[java.lang.String], /* o */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
+      @scala.inline
+      def setResumeEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "resumeEvent", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setResumeEventUndefined: Self = StObject.set(x, "resumeEvent", js.undefined)
+      
+      @scala.inline
+      def setResumeEvents(value: () => Unit): Self = StObject.set(x, "resumeEvents", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setResumeEventsUndefined: Self = StObject.set(x, "resumeEvents", js.undefined)
       
       @scala.inline
       def setSetAttributes(value: (/* attrs */ js.UndefOr[js.Any], /* redraw */ js.UndefOr[Boolean]) => ICompositeSprite): Self = StObject.set(x, "setAttributes", js.Any.fromFunction2(value))
@@ -422,22 +1280,68 @@ object draw {
       def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
       @scala.inline
-      def setStopAnimation(value: () => IElement): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
+      def setSort(value: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[java.lang.String]) => Array): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setStopAnimationUndefined: Self = StObject.set(x, "stopAnimation", js.undefined)
+      def setSortBy(value: /* sorterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "sortBy", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setStopFx(value: () => IElement): Self = StObject.set(x, "stopFx", js.Any.fromFunction0(value))
+      def setSortByKey(value: (/* direction */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "sortByKey", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setStopFxUndefined: Self = StObject.set(x, "stopFx", js.undefined)
+      def setSortByKeyUndefined: Self = StObject.set(x, "sortByKey", js.undefined)
       
       @scala.inline
-      def setSyncFx(value: () => _): Self = StObject.set(x, "syncFx", js.Any.fromFunction0(value))
+      def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
       
       @scala.inline
-      def setSyncFxUndefined: Self = StObject.set(x, "syncFx", js.undefined)
+      def setSortRoot(value: java.lang.String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSortRootUndefined: Self = StObject.set(x, "sortRoot", js.undefined)
+      
+      @scala.inline
+      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      
+      @scala.inline
+      def setSorters(value: js.Any): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSortersUndefined: Self = StObject.set(x, "sorters", js.undefined)
+      
+      @scala.inline
+      def setSum(
+        value: (/* property */ js.UndefOr[java.lang.String], /* root */ js.UndefOr[java.lang.String], /* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Double
+      ): Self = StObject.set(x, "sum", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+      
+      @scala.inline
+      def setSuspendEvent(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "suspendEvent", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSuspendEventUndefined: Self = StObject.set(x, "suspendEvent", js.undefined)
+      
+      @scala.inline
+      def setSuspendEvents(value: /* queueSuspended */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "suspendEvents", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSuspendEventsUndefined: Self = StObject.set(x, "suspendEvents", js.undefined)
+      
+      @scala.inline
+      def setUn(
+        value: (/* eventName */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      ): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
+      
+      @scala.inline
+      def setUpdateKey(value: (/* oldKey */ js.UndefOr[js.Any], /* newKey */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateKey", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setUpdateKeyUndefined: Self = StObject.set(x, "updateKey", js.undefined)
     }
   }
   
@@ -448,101 +1352,102 @@ object draw {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.util.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx */ @js.native
-  trait ISprite extends IObservable {
+  - typings.extjs.Ext.util.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx */ trait ISprite
+    extends StObject
+       with IObservable {
     
     /** [Method] Adds one or more CSS classes to the element
       * @param className String/String[] The CSS class to add, or an array of classes
       * @returns Ext.draw.Sprite this
       */
-    var addCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], this.type]] = js.native
+    var addCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Performs custom animation on this object
       * @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
       * @returns Object this
       */
-    var animate: js.UndefOr[js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _])] = js.native
+    var animate: js.UndefOr[js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], js.Any])] = js.undefined
     
     /** [Property] (Ext.dd.DragSource) */
-    var dd: js.UndefOr[IDragSource] = js.native
+    var dd: js.UndefOr[IDragSource] = js.undefined
     
     /** [Method] Removes the sprite and clears all listeners  */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var fill: js.UndefOr[java.lang.String] = js.native
+    var fill: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var font: js.UndefOr[java.lang.String] = js.native
+    var font: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
       * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
       */
-    var getActiveAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var getActiveAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Retrieves the bounding box of the sprite
       * @returns Object bbox
       */
-    var getBBox: js.UndefOr[js.Function0[_]] = js.native
+    var getBBox: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var group: js.UndefOr[js.Any] = js.native
+    var group: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the current animation if this object has any effects actively running or queued else returns false
       * @returns Ext.fx.Anim/Boolean Anim if element has active effects, else false
       */
-    var hasActiveFx: js.UndefOr[js.Function0[_]] = js.native
+    var hasActiveFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** [Method] Hides the sprite
       * @param redraw Boolean Flag to immediately draw the change.
       * @returns Ext.draw.Sprite this
       */
-    var hide: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.native
+    var hide: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isSprite: js.UndefOr[Boolean] = js.native
+    var isSprite: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var path: js.UndefOr[java.lang.String] = js.native
+    var path: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var radiusX: js.UndefOr[Double] = js.native
+    var radiusX: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var radiusY: js.UndefOr[Double] = js.native
+    var radiusY: js.UndefOr[Double] = js.undefined
     
     /** [Method] Redraws the sprite
       * @returns Ext.draw.Sprite this
       */
-    var redraw: js.UndefOr[js.Function0[this.type]] = js.native
+    var redraw: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Removes the sprite
       * @returns Boolean True if sprite was successfully removed. False when there was no surface to remove it from.
       */
-    var remove: js.UndefOr[js.Function0[Boolean]] = js.native
+    var remove: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Removes one or more CSS classes from the element
       * @param className String/String[] The CSS class to remove, or an array of classes. Note this method is severly limited in VML.
       * @returns Ext.draw.Sprite this
       */
-    var removeCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], this.type]] = js.native
+    var removeCls: js.UndefOr[js.Function1[/* className */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
       * @returns Object this
       */
-    var sequenceFx: js.UndefOr[js.Function0[_]] = js.native
+    var sequenceFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Change the attributes of the sprite
       * @param attrs Object attributes to be changed on the sprite.
@@ -551,7 +1456,7 @@ object draw {
       */
     var setAttributes: js.UndefOr[
         js.Function2[/* attrs */ js.UndefOr[js.Any], /* redraw */ js.UndefOr[Boolean], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
       * @param property String/Object The style property to be set, or an object of multiple styles.
@@ -564,52 +1469,52 @@ object draw {
           /* value */ js.UndefOr[java.lang.String], 
           this.type
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Shows the sprite
       * @param redraw Boolean Flag to immediately draw the change.
       * @returns Ext.draw.Sprite this
       */
-    var show: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.native
+    var show: js.UndefOr[js.Function1[/* redraw */ js.UndefOr[Boolean], this.type]] = js.undefined
     
     /** [Config Option] (String) */
-    var src: js.UndefOr[java.lang.String] = js.native
+    var src: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
       * @returns Ext.Element The Element
       */
-    var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.native
+    var stopAnimation: js.UndefOr[js.Function0[IElement]] = js.undefined
     
     /** [Method] Stops any running effects and clears this object s internal effects queue if it contains any additional effects that
       * @returns Ext.Element The Element
       */
-    var stopFx: js.UndefOr[js.Function0[IElement]] = js.native
+    var stopFx: js.UndefOr[js.Function0[IElement]] = js.undefined
     
     /** [Config Option] (String) */
-    var stroke: js.UndefOr[java.lang.String] = js.native
+    var stroke: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var strokewidth: js.UndefOr[Double] = js.native
+    var strokewidth: js.UndefOr[Double] = js.undefined
     
     /** [Method] Ensures that all effects queued after syncFx is called on this object are run concurrently
       * @returns Object this
       */
-    var syncFx: js.UndefOr[js.Function0[_]] = js.native
+    var syncFx: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (String) */
-    var text: js.UndefOr[java.lang.String] = js.native
+    var text: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var `type`: js.UndefOr[java.lang.String] = js.native
+    var `type`: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ISprite {
     
@@ -629,10 +1534,10 @@ object draw {
       def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
       
       @scala.inline
-      def setAnimate(value: js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _])): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      def setAnimate(value: js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], js.Any])): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAnimateFunction1(value: /* config */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
+      def setAnimateFunction1(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
@@ -668,13 +1573,13 @@ object draw {
       def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
       @scala.inline
-      def setGetActiveAnimation(value: () => _): Self = StObject.set(x, "getActiveAnimation", js.Any.fromFunction0(value))
+      def setGetActiveAnimation(value: () => js.Any): Self = StObject.set(x, "getActiveAnimation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetActiveAnimationUndefined: Self = StObject.set(x, "getActiveAnimation", js.undefined)
       
       @scala.inline
-      def setGetBBox(value: () => _): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
+      def setGetBBox(value: () => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
@@ -686,7 +1591,7 @@ object draw {
       def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
       @scala.inline
-      def setHasActiveFx(value: () => _): Self = StObject.set(x, "hasActiveFx", js.Any.fromFunction0(value))
+      def setHasActiveFx(value: () => js.Any): Self = StObject.set(x, "hasActiveFx", js.Any.fromFunction0(value))
       
       @scala.inline
       def setHasActiveFxUndefined: Self = StObject.set(x, "hasActiveFx", js.undefined)
@@ -758,7 +1663,7 @@ object draw {
       def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
       @scala.inline
-      def setSequenceFx(value: () => _): Self = StObject.set(x, "sequenceFx", js.Any.fromFunction0(value))
+      def setSequenceFx(value: () => js.Any): Self = StObject.set(x, "sequenceFx", js.Any.fromFunction0(value))
       
       @scala.inline
       def setSequenceFxUndefined: Self = StObject.set(x, "sequenceFx", js.undefined)
@@ -812,7 +1717,7 @@ object draw {
       def setStrokewidthUndefined: Self = StObject.set(x, "strokewidth", js.undefined)
       
       @scala.inline
-      def setSyncFx(value: () => _): Self = StObject.set(x, "syncFx", js.Any.fromFunction0(value))
+      def setSyncFx(value: () => js.Any): Self = StObject.set(x, "syncFx", js.Any.fromFunction0(value))
       
       @scala.inline
       def setSyncFxUndefined: Self = StObject.set(x, "syncFx", js.undefined)
@@ -849,25 +1754,26 @@ object draw {
     }
   }
   
-  @js.native
-  trait ISpriteDD extends IDragSource {
+  trait ISpriteDD
+    extends StObject
+       with IDragSource {
     
     /** [Method] Returns a reference to the actual element to drag
       * @param e Object
       * @returns HTMLElement the html element
       */
     @JSName("getDragEl")
-    var getDragEl_ISpriteDD: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], HTMLElement]] = js.native
+    var getDragEl_ISpriteDD: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], HTMLElement]] = js.undefined
     
     /** [Method] Abstract method called during the onMouseMove event while dragging an object
       * @param e Object
       */
     @JSName("onDrag")
-    var onDrag_ISpriteDD: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onDrag_ISpriteDD: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the drag element to the location of the mousedown or click event maintaining the cursor location relative to th  */
     @JSName("setDragElPos")
-    var setDragElPos_ISpriteDD: js.UndefOr[js.Function0[Unit]] = js.native
+    var setDragElPos_ISpriteDD: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ISpriteDD {
     
@@ -900,14 +1806,15 @@ object draw {
     }
   }
   
-  @js.native
-  trait ISurface extends IObservable {
+  trait ISurface
+    extends StObject
+       with IObservable {
     
     /** [Method] Adds a Sprite to the surface
       * @param args Ext.draw.Sprite[]/Ext.draw.Sprite... One or more Sprite objects or configs.
       * @returns Ext.draw.Sprite[]/Ext.draw.Sprite The sprites added.
       */
-    var add: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], _]] = js.native
+    var add: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Adds one or more CSS classes to the element
       * @param sprite Object The sprite to add the class to.
@@ -915,30 +1822,30 @@ object draw {
       */
     var addCls: js.UndefOr[
         js.Function2[/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds a gradient definition to the Surface
       * @param gradient Object A gradient config.
       */
-    var addGradient: js.UndefOr[js.Function1[/* gradient */ js.UndefOr[js.Any], Unit]] = js.native
+    var addGradient: js.UndefOr[js.Function1[/* gradient */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Destroys the surface  */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns a new group or an existent group associated with the current surface
       * @param id String The unique identifier of the group.
       * @returns Object The Ext.draw.CompositeSprite.
       */
-    var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.native
+    var getGroup: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Method] Retrieves the id of this component  */
-    var getId: js.UndefOr[js.Function0[Unit]] = js.native
+    var getId: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Ext.draw.Sprite[]) */
-    var items: js.UndefOr[Array] = js.native
+    var items: js.UndefOr[Array] = js.undefined
     
     /** [Method] Removes a given sprite from the surface optionally destroying the sprite in the process
       * @param sprite Ext.draw.Sprite
@@ -946,12 +1853,12 @@ object draw {
       */
     var remove: js.UndefOr[
         js.Function2[/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes all sprites from the surface optionally destroying the sprites in the process
       * @param destroySprites Boolean Whether to destroy all sprites when removing them.
       */
-    var removeAll: js.UndefOr[js.Function1[/* destroySprites */ js.UndefOr[Boolean], Unit]] = js.native
+    var removeAll: js.UndefOr[js.Function1[/* destroySprites */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Removes one or more CSS classes from the element
       * @param sprite Object The sprite to remove the class from.
@@ -959,13 +1866,13 @@ object draw {
       */
     var removeCls: js.UndefOr[
         js.Function2[/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the size of the surface
       * @param w Number The new width of the canvas.
       * @param h Number The new height of the canvas.
       */
-    var setSize: js.UndefOr[js.Function2[/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double], Unit]] = js.native
+    var setSize: js.UndefOr[js.Function2[/* w */ js.UndefOr[Double], /* h */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets CSS style attributes to an element
       * @param sprite Object The sprite to add, or an array of classes to
@@ -973,7 +1880,7 @@ object draw {
       */
     var setStyle: js.UndefOr[
         js.Function2[/* sprite */ js.UndefOr[js.Any], /* styles */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Changes the text in the sprite element
       * @param sprite Object The Sprite to change the text.
@@ -981,10 +1888,10 @@ object draw {
       */
     var setText: js.UndefOr[
         js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[java.lang.String], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Number) */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ISurface {
     
@@ -998,7 +1905,7 @@ object draw {
     implicit class ISurfaceMutableBuilder[Self <: ISurface] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdd(value: /* args */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      def setAdd(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAddCls(value: (/* sprite */ js.UndefOr[js.Any], /* className */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "addCls", js.Any.fromFunction2(value))
@@ -1022,7 +1929,7 @@ object draw {
       def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
       @scala.inline
-      def setGetGroup(value: /* id */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "getGroup", js.Any.fromFunction1(value))
+      def setGetGroup(value: /* id */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getGroup", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetGroupUndefined: Self = StObject.set(x, "getGroup", js.undefined)
@@ -1089,28 +1996,28 @@ object draw {
     }
   }
   
-  @js.native
   trait IText
-    extends typings.extjs.Ext.draw.IComponent {
+    extends StObject
+       with typings.extjs.Ext.draw.IComponent {
     
     /** [Config Option] (Number) */
-    var degrees: js.UndefOr[Double] = js.native
+    var degrees: js.UndefOr[Double] = js.undefined
     
     /** [Method] Sets the clockwise rotation angle relative to the horizontal axis
       * @param degrees Number The clockwise angle (in degrees) from the horizontal axis by which the text should be rotated.
       */
-    var setAngle: js.UndefOr[js.Function1[/* degrees */ js.UndefOr[Double], Unit]] = js.native
+    var setAngle: js.UndefOr[js.Function1[/* degrees */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Updates this item s text
       * @param t String The text to display (html not accepted).
       */
-    var setText: js.UndefOr[js.Function1[/* t */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setText: js.UndefOr[js.Function1[/* t */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var styleSelector: js.UndefOr[java.lang.String] = js.native
+    var styleSelector: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var text: js.UndefOr[java.lang.String] = js.native
+    var text: js.UndefOr[java.lang.String] = js.undefined
   }
   object IText {
     
@@ -1155,25 +2062,25 @@ object draw {
     }
   }
   
-  @js.native
   trait Surface extends StObject
   
   object engine {
     
     type IImageExporter = IBase
     
-    @js.native
-    trait ISvg extends ISurface {
+    trait ISvg
+      extends StObject
+         with ISurface {
       
       /** [Method] Insert or move a given sprite s element to the correct place in the DOM list for its zIndex
         * @param sprite Ext.draw.Sprite
         */
-      var applyZIndex: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.native
+      var applyZIndex: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
       
       /** [Method] Get the region for the surface s canvas area
         * @returns Ext.util.Region
         */
-      var getRegion: js.UndefOr[js.Function0[IRegion]] = js.native
+      var getRegion: js.UndefOr[js.Function0[IRegion]] = js.undefined
       
       /** [Method] Checks if the specified CSS class exists on this element s DOM node
         * @param sprite Ext.draw.Sprite The sprite to look into.
@@ -1186,7 +2093,7 @@ object draw {
               /* className */ js.UndefOr[java.lang.String], 
               Boolean
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** [Method] Sets the size of the surface
         * @param width Object
@@ -1195,7 +2102,7 @@ object draw {
       @JSName("setSize")
       var setSize_ISvg: js.UndefOr[
             js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /** [Method] Changes the text in the sprite element
         * @param sprite Object
@@ -1204,7 +2111,7 @@ object draw {
       @JSName("setText")
       var setText_ISvg: js.UndefOr[
             js.Function2[/* sprite */ js.UndefOr[js.Any], /* textString */ js.UndefOr[js.Any], Unit]
-          ] = js.native
+          ] = js.undefined
     }
     object ISvg {
       
@@ -1251,8 +2158,9 @@ object draw {
     
     type ISvgExporter = IBase
     
-    @js.native
-    trait IVml extends ISurface {
+    trait IVml
+      extends StObject
+         with ISurface {
       
       /** [Method] Sets the size of the surface
         * @param width Object
@@ -1261,7 +2169,7 @@ object draw {
       @JSName("setSize")
       var setSize_IVml: js.UndefOr[
             js.Function2[/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /** [Method] Changes the text in the sprite element
         * @param sprite Object
@@ -1270,7 +2178,7 @@ object draw {
       @JSName("setText")
       var setText_IVml: js.UndefOr[
             js.Function2[/* sprite */ js.UndefOr[js.Any], /* text */ js.UndefOr[js.Any], Unit]
-          ] = js.native
+          ] = js.undefined
     }
     object IVml {
       
@@ -1297,10 +2205,8 @@ object draw {
       }
     }
     
-    @js.native
     trait ImageExporter extends StObject
     
-    @js.native
     trait SvgExporter extends StObject
   }
 }

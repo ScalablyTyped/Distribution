@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides methods for moving ranges of cells in a sheet. */
-@js.native
-trait XCellRangeMovement extends XInterface {
+trait XCellRangeMovement
+  extends StObject
+     with XInterface {
   
   /**
     * copies a cell range to another position in the document.
@@ -20,7 +20,7 @@ trait XCellRangeMovement extends XInterface {
     * @param aDestination the address of the top left cell of the destination range.
     * @param aSource the cell range which will be copied.
     */
-  def copyRange(aDestination: CellAddress, aSource: CellRangeAddress): Unit = js.native
+  def copyRange(aDestination: CellAddress, aSource: CellRangeAddress): Unit
   
   /**
     * inserts cells, moving other cells down or right.
@@ -29,7 +29,7 @@ trait XCellRangeMovement extends XInterface {
     * @param aRange the cell range in which empty cells will be inserted.
     * @param nMode describes how to move existing cells.
     */
-  def insertCells(aRange: CellRangeAddress, nMode: CellInsertMode): Unit = js.native
+  def insertCells(aRange: CellRangeAddress, nMode: CellInsertMode): Unit
   
   /**
     * moves a cell range to another position in the document.
@@ -38,14 +38,14 @@ trait XCellRangeMovement extends XInterface {
     * @param aDestination the address of the top left cell of the destination range.
     * @param aSource the cell range which will be copied.
     */
-  def moveRange(aDestination: CellAddress, aSource: CellRangeAddress): Unit = js.native
+  def moveRange(aDestination: CellAddress, aSource: CellRangeAddress): Unit
   
   /**
     * deletes cells, moving other cells up or left.
     * @param aRange the cell range to remove.
     * @param nMode describes how to move following cells.
     */
-  def removeRange(aRange: CellRangeAddress, nMode: CellDeleteMode): Unit = js.native
+  def removeRange(aRange: CellRangeAddress, nMode: CellDeleteMode): Unit
 }
 object XCellRangeMovement {
   

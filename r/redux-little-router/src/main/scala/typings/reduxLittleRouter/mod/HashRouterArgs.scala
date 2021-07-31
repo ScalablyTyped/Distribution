@@ -2,19 +2,17 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HashRouterArgs extends StObject {
   
-  var basename: js.UndefOr[String] = js.native
+  var basename: js.UndefOr[String] = js.undefined
   
-  var hashType: js.UndefOr[String] = js.native
+  var hashType: js.UndefOr[String] = js.undefined
   
-  var history: js.UndefOr[History] = js.native
+  var history: js.UndefOr[History] = js.undefined
   
-  var routes: Routes = js.native
+  var routes: Routes
 }
 object HashRouterArgs {
   

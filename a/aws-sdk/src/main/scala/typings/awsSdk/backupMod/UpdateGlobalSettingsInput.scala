@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGlobalSettingsInput extends StObject {
   
   /**
     * A list of resources along with the opt-in preferences for the account.
     */
-  var GlobalSettings: js.UndefOr[typings.awsSdk.backupMod.GlobalSettings] = js.native
+  var GlobalSettings: js.UndefOr[typings.awsSdk.backupMod.GlobalSettings] = js.undefined
 }
 object UpdateGlobalSettingsInput {
   

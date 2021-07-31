@@ -2,19 +2,17 @@ package typings.winrt.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEndpointPair extends StObject {
   
-  var localHostName: HostName = js.native
+  var localHostName: HostName
   
-  var localServiceName: String = js.native
+  var localServiceName: String
   
-  var remoteHostName: HostName = js.native
+  var remoteHostName: HostName
   
-  var remoteServiceName: String = js.native
+  var remoteServiceName: String
 }
 object IEndpointPair {
   

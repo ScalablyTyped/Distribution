@@ -2,10 +2,13 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalUtilsMod {
+  
+  @JSImport("@opentelemetry/api/build/src/api/global-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@opentelemetry/api/build/src/api/global-utils", "API_BACKWARDS_COMPATIBILITY_VERSION")
   @js.native
@@ -27,9 +30,8 @@ object globalUtilsMod {
   @js.native
   val GLOBAL_TRACE_API_KEY: js.Symbol = js.native
   
-  @JSImport("@opentelemetry/api/build/src/api/global-utils", "makeGetter")
-  @js.native
-  def makeGetter[T](requiredVersion: Double, instance: T, fallback: T): Get[T] = js.native
+  @scala.inline
+  def makeGetter[T](requiredVersion: Double, instance: T, fallback: T): Get[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeGetter")(requiredVersion.asInstanceOf[js.Any], instance.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Get[T]]
   
   type Get[T] = js.Function1[/* version */ Double, T]
   

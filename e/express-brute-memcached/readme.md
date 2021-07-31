@@ -11,7 +11,7 @@ A memcached store for express-brute
 | Keywords           | express, brute, memcached, store |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 26149 |
+| # downloads        | 40288 |
 | # stars            | 1 |
 
 ## Links

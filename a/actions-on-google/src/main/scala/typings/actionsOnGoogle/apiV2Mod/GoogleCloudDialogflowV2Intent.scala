@@ -2,47 +2,45 @@ package typings.actionsOnGoogle.apiV2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2Intent extends StObject {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var defaultResponsePlatforms: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentDefaultResponsePlatforms]] = js.native
+  var defaultResponsePlatforms: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentDefaultResponsePlatforms]] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var events: js.UndefOr[js.Array[String]] = js.native
+  var events: js.UndefOr[js.Array[String]] = js.undefined
   
-  var followupIntentInfo: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentFollowupIntentInfo]] = js.native
+  var followupIntentInfo: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentFollowupIntentInfo]] = js.undefined
   
-  var inputContextNames: js.UndefOr[js.Array[String]] = js.native
+  var inputContextNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var isFallback: js.UndefOr[Boolean] = js.native
+  var isFallback: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.native
+  var messages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
-  var mlDisabled: js.UndefOr[Boolean] = js.native
+  var mlDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.undefined
   
-  var parameters: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentParameter]] = js.undefined
   
-  var parentFollowupIntentName: js.UndefOr[String] = js.native
+  var parentFollowupIntentName: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var resetContexts: js.UndefOr[Boolean] = js.native
+  var resetContexts: js.UndefOr[Boolean] = js.undefined
   
-  var rootFollowupIntentName: js.UndefOr[String] = js.native
+  var rootFollowupIntentName: js.UndefOr[String] = js.undefined
   
-  var trainingPhrases: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentTrainingPhrase]] = js.native
+  var trainingPhrases: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentTrainingPhrase]] = js.undefined
   
-  var webhookState: js.UndefOr[GoogleCloudDialogflowV2IntentWebhookState] = js.native
+  var webhookState: js.UndefOr[GoogleCloudDialogflowV2IntentWebhookState] = js.undefined
 }
 object GoogleCloudDialogflowV2Intent {
   

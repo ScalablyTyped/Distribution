@@ -4,22 +4,24 @@ import typings.roll.anon.Quantity
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("roll", JSImport.Namespace)
   @js.native
-  class ^ () extends Roll {
+  class ^ ()
+    extends StObject
+       with Roll {
     def this(seed: js.Function0[Double]) = this()
   }
   
-  @js.native
-  trait InvalidInputError extends Error {
+  trait InvalidInputError
+    extends StObject
+       with Error {
     
     @JSName("name")
-    var name_InvalidInputError: typings.roll.rollStrings.InvalidInputError = js.native
+    var name_InvalidInputError: typings.roll.rollStrings.InvalidInputError
   }
   object InvalidInputError {
     
@@ -57,14 +59,13 @@ object mod {
     def validate(input: String): Boolean = js.native
   }
   
-  @js.native
   trait RollObject extends StObject {
     
-    var quantity: Double = js.native
+    var quantity: Double
     
-    var sides: Double = js.native
+    var sides: Double
     
-    var transformations: js.Array[RollTransformation] = js.native
+    var transformations: js.Array[RollTransformation]
   }
   object RollObject {
     
@@ -91,16 +92,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RollOutput extends StObject {
     
-    var calculations: js.Array[Double] = js.native
+    var calculations: js.Array[Double]
     
-    var input: RollObject = js.native
+    var input: RollObject
     
-    var result: Double = js.native
+    var result: Double
     
-    var rolled: js.Array[Double] = js.native
+    var rolled: js.Array[Double]
   }
   object RollOutput {
     

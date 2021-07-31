@@ -2,17 +2,15 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceLocation extends StObject {
   
-  var end: Position = js.native
+  var end: Position
   
-  var source: js.UndefOr[String | Null] = js.native
+  var source: js.UndefOr[String | Null] = js.undefined
   
-  var start: Position = js.native
+  var start: Position
 }
 object SourceLocation {
   

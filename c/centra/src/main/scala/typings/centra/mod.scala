@@ -35,7 +35,6 @@ import typings.std.Error
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -178,20 +177,19 @@ object mod extends Shortcut {
     var url: URL_ = js.native
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var body: Buffer = js.native
+    var body: Buffer
     
-    var coreRes: IncomingMessage = js.native
+    var coreRes: IncomingMessage
     
-    var headers: IncomingHttpHeaders = js.native
+    var headers: IncomingHttpHeaders
     
-    def json(): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any]
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
-    def text(): js.Promise[String] = js.native
+    def text(): js.Promise[String]
   }
   object Response {
     
@@ -200,7 +198,7 @@ object mod extends Shortcut {
       body: Buffer,
       coreRes: IncomingMessage,
       headers: IncomingHttpHeaders,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       text: () => js.Promise[String]
     ): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], coreRes = coreRes.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), text = js.Any.fromFunction0(text))
@@ -220,7 +218,7 @@ object mod extends Shortcut {
       def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       @scala.inline
       def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])

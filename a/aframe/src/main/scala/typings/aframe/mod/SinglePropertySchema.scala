@@ -2,19 +2,17 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinglePropertySchema[T] extends StObject {
   
-  var default: js.UndefOr[T] = js.native
+  var default: js.UndefOr[T] = js.undefined
   
-  var parse: js.UndefOr[js.Function1[/* value */ String, T]] = js.native
+  var parse: js.UndefOr[js.Function1[/* value */ String, T]] = js.undefined
   
-  var stringify: js.UndefOr[js.Function1[/* value */ T, String]] = js.native
+  var stringify: js.UndefOr[js.Function1[/* value */ T, String]] = js.undefined
   
-  var `type`: js.UndefOr[PropertyTypes] = js.native
+  var `type`: js.UndefOr[PropertyTypes] = js.undefined
 }
 object SinglePropertySchema {
   
@@ -25,7 +23,7 @@ object SinglePropertySchema {
   }
   
   @scala.inline
-  implicit class SinglePropertySchemaMutableBuilder[Self <: SinglePropertySchema[_], T] (val x: Self with SinglePropertySchema[T]) extends AnyVal {
+  implicit class SinglePropertySchemaMutableBuilder[Self <: SinglePropertySchema[?], T] (val x: Self & SinglePropertySchema[T]) extends AnyVal {
     
     @scala.inline
     def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

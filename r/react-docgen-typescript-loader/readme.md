@@ -10,9 +10,9 @@ Webpack loader to generate docgen information from TypeScript React components.
 | ------------------ | :-------------: |
 | Full name          | react-docgen-typescript-loader |
 | Keywords           | storybook, react, docgen, typescript, webpack, loader |
-| # releases         | 14 |
-| # dependents       | 63 |
-| # downloads        | 14343623 |
+| # releases         | 12 |
+| # dependents       | 69 |
+| # downloads        | 27261534 |
 | # stars            | 0 |
 
 ## Links

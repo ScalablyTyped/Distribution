@@ -6,19 +6,22 @@ import typings.antvCoord.interfaceMod.ICoordinate
 import typings.antvCoord.interfaceMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
   
   @JSImport("@antv/coord/lib/coord/base", JSImport.Default)
   @js.native
-  abstract class default protected () extends Coordinate {
+  abstract class default protected ()
+    extends StObject
+       with Coordinate {
     def this(cfg: CoordinateCfg) = this()
   }
   
   @js.native
-  trait Coordinate extends ICoordinate {
+  trait Coordinate
+    extends StObject
+       with ICoordinate {
     
     /**
       * 将坐标点进行矩阵变换

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetRangesQuery
   * @see com.sun.star.sheet.SheetCellRanges
   */
-@js.native
-trait XCellRangesQuery extends XInterface {
+trait XCellRangesQuery
+  extends StObject
+     with XInterface {
   
   /**
     * queries all cells with different values in a specified row.
@@ -27,34 +27,34 @@ trait XCellRangesQuery extends XInterface {
     * @param aCompare contains a cell address with the row index used for comparison. Only this row index is of interest.
     * @returns all cells of the current cell range(s) which are different to the comparison cell of each column.
     */
-  def queryColumnDifferences(aCompare: CellAddress): XSheetCellRanges = js.native
+  def queryColumnDifferences(aCompare: CellAddress): XSheetCellRanges
   
   /**
     * queries all cells with the specified content type(s).
     * @param nContentFlags a combination of {@link CellFlags} flags.  Attention: Despite the {@link CellFlags} flags are `long` values, this method expects a
     * @returns all cells of the current cell range(s) with the specified content type(s).
     */
-  def queryContentCells(nContentFlags: Double): XSheetCellRanges = js.native
+  def queryContentCells(nContentFlags: Double): XSheetCellRanges
   
   /**
     * queries all empty cells.
     * @returns the empty cells of the current cell range(s).
     */
-  def queryEmptyCells(): XSheetCellRanges = js.native
+  def queryEmptyCells(): XSheetCellRanges
   
   /**
     * queries all formula cells with the specified result type.
     * @param nResultFlags a combination of {@link FormulaResult} flags.
     * @returns all formula cells of the current cell range(s) with the specified result type(s).
     */
-  def queryFormulaCells(nResultFlags: Double): XSheetCellRanges = js.native
+  def queryFormulaCells(nResultFlags: Double): XSheetCellRanges
   
   /**
     * intersects the current cell range(s) with the specified cell range.
     * @param aRange contains the cell range for intersection.
     * @returns all cells of the current cell range(s) which are contained in the passed cell range.
     */
-  def queryIntersection(aRange: CellRangeAddress): XSheetCellRanges = js.native
+  def queryIntersection(aRange: CellRangeAddress): XSheetCellRanges
   
   /**
     * queries all cells with different values in a specified column.
@@ -64,13 +64,13 @@ trait XCellRangesQuery extends XInterface {
     * @param aCompare contains a cell address with the column index used for comparison. Only this column index is of interest.
     * @returns all cells of the current cell range(s) which are different to the comparison cell of each row.
     */
-  def queryRowDifferences(aCompare: CellAddress): XSheetCellRanges = js.native
+  def queryRowDifferences(aCompare: CellAddress): XSheetCellRanges
   
   /**
     * queries all visible cells.
     * @returns the visible (not hidden) cells of the current cell range(s).
     */
-  def queryVisibleCells(): XSheetCellRanges = js.native
+  def queryVisibleCells(): XSheetCellRanges
 }
 object XCellRangesQuery {
   

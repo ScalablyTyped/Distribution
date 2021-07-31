@@ -8,7 +8,6 @@ import typings.rword.rwordStrings.small
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,18 +25,14 @@ object mod {
     /**
       * Randomly generates words from the words array
       */
-    @JSImport("rword", "rword.generate")
-    @js.native
-    def generate(): String | js.Array[String] = js.native
-    @JSImport("rword", "rword.generate")
-    @js.native
-    def generate(count: js.UndefOr[scala.Nothing], opt: GenerateOptions): String | js.Array[String] = js.native
-    @JSImport("rword", "rword.generate")
-    @js.native
-    def generate(count: Double): String | js.Array[String] = js.native
-    @JSImport("rword", "rword.generate")
-    @js.native
-    def generate(count: Double, opt: GenerateOptions): String | js.Array[String] = js.native
+    @scala.inline
+    def generate(): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String | js.Array[String]]
+    @scala.inline
+    def generate(count: Double): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(count.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+    @scala.inline
+    def generate(count: Double, opt: GenerateOptions): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(count.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
+    @scala.inline
+    def generate(count: Unit, opt: GenerateOptions): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(count.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
     
     /**
       * A simple generator that pulls words from a prefilled global pool. Should
@@ -45,12 +40,10 @@ object mod {
       *  this method can in certain instances be many times faster.
       * @param count - Words to return. Throws error if greater than `10`
       */
-    @JSImport("rword", "rword.generateFromPool")
-    @js.native
-    def generateFromPool(): String | js.Array[String] = js.native
-    @JSImport("rword", "rword.generateFromPool")
-    @js.native
-    def generateFromPool(count: Double): String | js.Array[String] = js.native
+    @scala.inline
+    def generateFromPool(): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFromPool")().asInstanceOf[String | js.Array[String]]
+    @scala.inline
+    def generateFromPool(count: Double): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFromPool")(count.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
     
     @JSImport("rword", "rword.globalPool")
     @js.native
@@ -61,35 +54,32 @@ object mod {
     /**
       * Load and shuffle word list
       */
-    @JSImport("rword", "rword.load")
-    @js.native
-    def load_big(list: big): Unit = js.native
-    @JSImport("rword", "rword.load")
-    @js.native
-    def load_small(list: small): Unit = js.native
+    @scala.inline
+    def load_big(list: big): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def load_small(list: small): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Shuffles words and globalPool arrays
       */
-    @JSImport("rword", "rword.shuffle")
-    @js.native
-    def shuffle(): Unit = js.native
+    @scala.inline
+    def shuffle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")().asInstanceOf[Unit]
   }
   
-  @js.native
   trait GenerateOptions extends StObject {
     
     /**
       * Sets the capitalization of the randomly chosen words
       */
-    var capitalize: js.UndefOr[none | first | all] = js.native
+    var capitalize: js.UndefOr[none | first | all] = js.undefined
     
     /**
       * Regex words must match to have a chance of being randomly chosen
       * @example "word"
       * @example /ing$/
       */
-    var contains: js.UndefOr[RegExp | String] = js.native
+    var contains: js.UndefOr[RegExp | String] = js.undefined
     
     /**
       * A length or range of lengths that a word must match for it to have a
@@ -97,7 +87,7 @@ object mod {
       * @example 5
       * @example "3-10"
       */
-    var length: js.UndefOr[String | Double] = js.native
+    var length: js.UndefOr[String | Double] = js.undefined
   }
   object GenerateOptions {
     

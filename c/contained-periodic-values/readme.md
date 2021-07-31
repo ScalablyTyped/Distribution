@@ -12,7 +12,7 @@ Find how many values of a discrete periodic function are contained in an interva
 | Keywords           | mathematics, math, period, periodic, contained, solution, function |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1005082 |
+| # downloads        | 1334771 |
 | # stars            | 0 |
 
 ## Links

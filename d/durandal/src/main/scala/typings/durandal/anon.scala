@@ -3,17 +3,15 @@ package typings.durandal
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Callback extends StObject {
     
-    def callback(fragment: String): Unit = js.native
+    def callback(fragment: String): Unit
     
-    var routePattern: RegExp = js.native
+    var routePattern: RegExp
   }
   object Callback {
     

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateBy extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait AggregateBy extends StObject {
     * supplied credentials must grant read access to this data type. The dataset in the response will have the same data source ID. Note: Data can be aggregated by either the dataTypeName
     * or the dataSourceId, not both.
     */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The data type to aggregate. All data sources providing this data type will contribute data to the aggregation. The response will contain a single dataset for this data type name.
     * The dataset will have a data source ID of derived::com.google.android.gms:aggregated. If the user has no data for this data type, an empty data set will be returned. Note: Data can
     * be aggregated by either the dataTypeName or the dataSourceId, not both.
     */
-  var dataTypeName: js.UndefOr[String] = js.native
+  var dataTypeName: js.UndefOr[String] = js.undefined
 }
 object AggregateBy {
   

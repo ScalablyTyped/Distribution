@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAtom extends StObject {
   
   /** List of `Job.inputs` that should be embedded in this atom. Only one input is supported. */
-  var inputs: js.UndefOr[js.Array[TextInput]] = js.native
+  var inputs: js.UndefOr[js.Array[TextInput]] = js.undefined
   
   /** Required. The `EditAtom.key` that references atom with text inputs in the `Job.edit_list`. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object TextAtom {
   

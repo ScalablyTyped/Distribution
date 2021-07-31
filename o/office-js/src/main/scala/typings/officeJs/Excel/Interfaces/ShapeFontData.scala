@@ -19,11 +19,9 @@ import typings.officeJs.officeJsStrings.WavyDouble
 import typings.officeJs.officeJsStrings.WavyHeavy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
-@js.native
 trait ShapeFontData extends StObject {
   
   /**
@@ -32,7 +30,7 @@ trait ShapeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait ShapeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait ShapeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait ShapeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait ShapeFontData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait ShapeFontData extends StObject {
     */
   var underline: js.UndefOr[
     ShapeFontUnderlineStyle | None | Single | typings.officeJs.officeJsStrings.Double | Heavy | Dotted | DottedHeavy | Dash | DashHeavy | DashLong | DashLongHeavy | DotDash | DotDashHeavy | DotDotDash | DotDotDashHeavy | Wavy | WavyHeavy | WavyDouble
-  ] = js.native
+  ] = js.undefined
 }
 object ShapeFontData {
   

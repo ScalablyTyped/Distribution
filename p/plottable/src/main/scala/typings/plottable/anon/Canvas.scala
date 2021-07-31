@@ -4,21 +4,19 @@ import typings.plottable.plottableStrings.canvas
 import typings.plottable.plottableStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canvas extends StObject {
   
-  var canvas: typings.plottable.plottableStrings.canvas = js.native
+  var canvas: typings.plottable.plottableStrings.canvas
   
-  var svg: typings.plottable.plottableStrings.svg = js.native
+  var svg: typings.plottable.plottableStrings.svg
 }
 object Canvas {
   
   @scala.inline
-  def apply(canvas: canvas, svg: svg): Canvas = {
-    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any])
+  def apply(): Canvas = {
+    val __obj = js.Dynamic.literal(canvas = "canvas", svg = "svg")
     __obj.asInstanceOf[Canvas]
   }
   

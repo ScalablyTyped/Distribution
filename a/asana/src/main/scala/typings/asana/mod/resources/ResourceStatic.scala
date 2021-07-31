@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.asana.mod.Dispatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResourceStatic
-  extends /**
+  extends StObject
+     with /**
   * @param dispatcher
   */
-Instantiable1[/* dispatcher */ Dispatcher, typings.asana.mod.resources.Resource] {
+Instantiable1[/* dispatcher */ Dispatcher, Resource] {
   
   /**
     * @type {number} Default number of items to get per page.
@@ -33,10 +33,10 @@ Instantiable1[/* dispatcher */ Dispatcher, typings.asana.mod.resources.Resource]
     * @param query?
     * @param dispatchOptions?
     */
-  def getCollection(dispatcher: js.Any, path: String): typings.bluebird.mod.^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any): typings.bluebird.mod.^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def getCollection(dispatcher: js.Any, path: String): typings.bluebird.mod.^[js.Any] = js.native
+  def getCollection(dispatcher: js.Any, path: String, query: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def getCollection(dispatcher: js.Any, path: String, query: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * Helper method for any request Promise from the Dispatcher, unwraps the `data`
@@ -46,5 +46,5 @@ Instantiable1[/* dispatcher */ Dispatcher, typings.asana.mod.resources.Resource]
     * @param promise
     * @return
     */
-  def unwrap(promise: js.Any): typings.bluebird.mod.^[_] = js.native
+  def unwrap(promise: js.Any): typings.bluebird.mod.^[js.Any] = js.native
 }

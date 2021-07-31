@@ -3,7 +3,6 @@ package typings.kdbxweb.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Header")
@@ -51,11 +50,13 @@ class Header () extends StObject {
 /* static members */
 object Header {
   
-  @JSImport("kdbxweb", "Header.create")
+  @JSImport("kdbxweb", "Header")
   @js.native
-  def create(): Header = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "Header.read")
-  @js.native
-  def read(stm: BinaryStream, ctx: Context): Header = js.native
+  @scala.inline
+  def create(): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Header]
+  
+  @scala.inline
+  def read(stm: BinaryStream, ctx: Context): Header = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(stm.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Header]
 }

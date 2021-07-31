@@ -2,14 +2,16 @@ package typings.drivelist
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("drivelist", "list")
+  @JSImport("drivelist", JSImport.Namespace)
   @js.native
-  def list(callback: js.Function2[/* error */ js.Any, /* drives */ js.Array[Drive], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def list(callback: js.Function2[/* error */ js.Any, /* drives */ js.Array[Drive], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.drivelist.drivelistStrings.SATA
@@ -41,49 +43,48 @@ object mod {
     def UNKNOWN: typings.drivelist.drivelistStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.drivelist.drivelistStrings.UNKNOWN]
   }
   
-  @js.native
   trait Drive extends StObject {
     
-    var blockSize: Double | Null = js.native
+    var blockSize: Double | Null
     
-    var busType: BusType = js.native
+    var busType: BusType
     
-    var busVersion: String | Null = js.native
+    var busVersion: String | Null
     
-    var description: String = js.native
+    var description: String
     
-    var device: String = js.native
+    var device: String
     
-    var devicePath: String | Null = js.native
+    var devicePath: String | Null
     
-    var enumerator: String = js.native
+    var enumerator: String
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var isCard: Boolean | Null = js.native
+    var isCard: Boolean | Null
     
-    var isReadOnly: Boolean = js.native
+    var isReadOnly: Boolean
     
-    var isRemovable: Boolean | Null = js.native
+    var isRemovable: Boolean | Null
     
-    var isSCSI: Boolean | Null = js.native
+    var isSCSI: Boolean | Null
     
-    var isSystem: Boolean = js.native
+    var isSystem: Boolean
     
-    var isUAS: Boolean | Null = js.native
+    var isUAS: Boolean | Null
     
-    var isUSB: Boolean | Null = js.native
+    var isUSB: Boolean | Null
     
-    var isVirtual: Boolean | Null = js.native
+    var isVirtual: Boolean | Null
     
-    var logicalBlockSize: Double | Null = js.native
+    var logicalBlockSize: Double | Null
     
-    var mountpoints: js.Array[MountPoint] = js.native
+    var mountpoints: js.Array[MountPoint]
     
-    var raw: String = js.native
+    var raw: String
     
     // can be null
-    var size: Double | Null = js.native
+    var size: Double | Null
   }
   object Drive {
     
@@ -99,7 +100,7 @@ object mod {
       mountpoints: js.Array[MountPoint],
       raw: String
     ): Drive = {
-      val __obj = js.Dynamic.literal(busType = busType.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], enumerator = enumerator.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], isReadOnly = isReadOnly.asInstanceOf[js.Any], isSystem = isSystem.asInstanceOf[js.Any], mountpoints = mountpoints.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(busType = busType.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], enumerator = enumerator.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], isReadOnly = isReadOnly.asInstanceOf[js.Any], isSystem = isSystem.asInstanceOf[js.Any], mountpoints = mountpoints.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], blockSize = null, busVersion = null, devicePath = null, isCard = null, isRemovable = null, isSCSI = null, isUAS = null, isUSB = null, isVirtual = null, logicalBlockSize = null, size = null)
       __obj.asInstanceOf[Drive]
     }
     
@@ -204,12 +205,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MountPoint extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object MountPoint {
     

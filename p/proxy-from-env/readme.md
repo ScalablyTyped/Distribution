@@ -11,8 +11,8 @@ Offers getProxyForUrl to get the proxy URL for a URL, respecting the *_PROXY (e.
 | Full name          | proxy-from-env |
 | Keywords           | proxy, http_proxy, https_proxy, no_proxy, environment |
 | # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 140884977 |
+| # dependents       | 85 |
+| # downloads        | 185938116 |
 | # stars            | 0 |
 
 ## Links

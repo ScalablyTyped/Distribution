@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.DeclaredPredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait DeclaredPredicate_
-  extends Flow
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait DeclaredPredicate_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowPredicate {
   
   @JSName("type")
-  var type_DeclaredPredicate_ : DeclaredPredicate = js.native
+  var type_DeclaredPredicate_ : DeclaredPredicate
   
-  var value: Flow = js.native
+  var value: Flow
 }
 object DeclaredPredicate_ {
   
   @scala.inline
-  def apply(`type`: DeclaredPredicate, value: Flow): DeclaredPredicate_ = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(value: Flow): DeclaredPredicate_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclaredPredicate")
     __obj.asInstanceOf[DeclaredPredicate_]
   }
   

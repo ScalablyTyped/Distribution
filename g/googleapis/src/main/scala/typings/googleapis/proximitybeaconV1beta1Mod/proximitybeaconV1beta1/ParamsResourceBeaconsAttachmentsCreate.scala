@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBeaconsAttachmentsCreate extends StandardParameters {
+trait ParamsResourceBeaconsAttachmentsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Beacon on which the attachment should be created. A beacon name has the
@@ -25,19 +25,19 @@ trait ParamsResourceBeaconsAttachmentsCreate extends StandardParameters {
     * AltBeacon. For Eddystone-EID beacons, you may use either the current EID
     * or the beacon's "stable" UID. Required.
     */
-  var beaconName: js.UndefOr[String] = js.native
+  var beaconName: js.UndefOr[String] = js.undefined
   
   /**
     * The project id of the project the attachment will belong to. If the
     * project id is not specified then the project making the request is used.
     * Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBeaconAttachment] = js.native
+  var requestBody: js.UndefOr[SchemaBeaconAttachment] = js.undefined
 }
 object ParamsResourceBeaconsAttachmentsCreate {
   

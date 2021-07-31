@@ -2,29 +2,27 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Team Drives.
   */
-@js.native
 trait SchemaTeamDriveList extends StObject {
   
   /**
     * The list of Team Drives.
     */
-  var items: js.UndefOr[js.Array[SchemaTeamDrive]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTeamDrive]] = js.undefined
   
   /**
     * This is always drive#teamDriveList
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of Team Drives.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaTeamDriveList {
   

@@ -5,7 +5,6 @@ import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressBarMod {
@@ -31,29 +30,29 @@ object progressBarMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IProgressBarProps
-    extends IProps
+    extends StObject
+       with IProps
        with IIntentProps {
     
     /**
       * Whether the background should animate.
       * @default true
       */
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the background should be striped.
       * @default true
       */
-    var stripes: js.UndefOr[Boolean] = js.native
+    var stripes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value between 0 and 1 (inclusive) representing how far along the operation is.
       * Values below 0 or above 1 will be interpreted as 0 or 1, respectively.
       * Omitting this prop will result in an "indeterminate" progress meter that fills the entire bar.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object IProgressBarProps {
     

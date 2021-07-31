@@ -12,35 +12,35 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XChartDocument extends XModel {
+trait XChartDocument
+  extends StObject
+     with XModel {
   
   /** retrieves the component that is able to create different chart type templates (components of type {@link ChartTypeTemplate} ) */
-  var ChartTypeManager: XChartTypeManager = js.native
+  var ChartTypeManager: XChartTypeManager
   
   /**
     * Returns the currently set data provider. This may be an internal one, if {@link createInternalDataProvider()} has been called before, or an external
     * one if XDataReceiver::attachDataProvider() has been called.
     */
-  val DataProvider: XDataProvider = js.native
+  val DataProvider: XDataProvider
   
   /**
     * Notes: this is preliminary, we need an API that supports more than one diagram. The method name getDiagram exists in the css.chart API, so there is
     * would be no way to chose either this or the other method from Basic (it would chose one or the other by random).
     */
-  var FirstDiagram: XDiagram = js.native
+  var FirstDiagram: XDiagram
   
   /**
     * Gives access to the page background appearance.
     * @returns the properties of the background area of the chart document.  The area's extent is equal to the document size. If you want to access properties o
     */
-  val PageBackground: XPropertySet = js.native
+  val PageBackground: XPropertySet
   
   /** Creates a default chart type for a brand-new chart object. */
-  def createDefaultChart(): Unit = js.native
+  def createDefaultChart(): Unit
   
   /**
     * creates an internal com::sun::star::chart2::XDataProvider that is handled by the chart document itself.
@@ -49,43 +49,43 @@ trait XChartDocument extends XModel {
     * @param bCloneExistingData if `TRUE` and a data provider was previously attached, its referred data will be copied to the new internal data provider. Not
     * @throws com::sun::star::util:CloseVetoException If the new data provider could not be created due to a failed removal of the former data provider.
     */
-  def createInternalDataProvider(bCloneExistingData: Boolean): Unit = js.native
+  def createInternalDataProvider(bCloneExistingData: Boolean): Unit
   
   /** retrieves the component that is able to create different chart type templates (components of type {@link ChartTypeTemplate} ) */
-  def getChartTypeManager(): XChartTypeManager = js.native
+  def getChartTypeManager(): XChartTypeManager
   
   /**
     * Returns the currently set data provider. This may be an internal one, if {@link createInternalDataProvider()} has been called before, or an external
     * one if XDataReceiver::attachDataProvider() has been called.
     */
-  def getDataProvider(): XDataProvider = js.native
+  def getDataProvider(): XDataProvider
   
   /**
     * Notes: this is preliminary, we need an API that supports more than one diagram. The method name getDiagram exists in the css.chart API, so there is
     * would be no way to chose either this or the other method from Basic (it would chose one or the other by random).
     */
-  def getFirstDiagram(): XDiagram = js.native
+  def getFirstDiagram(): XDiagram
   
   /**
     * Gives access to the page background appearance.
     * @returns the properties of the background area of the chart document.  The area's extent is equal to the document size. If you want to access properties o
     */
-  def getPageBackground(): XPropertySet = js.native
+  def getPageBackground(): XPropertySet
   
   /** @returns `TRUE` if the data provider set at the chart document is an internal one.  This is the case directly after {@link createInternalDataProvider()} h */
-  def hasInternalDataProvider(): Boolean = js.native
+  def hasInternalDataProvider(): Boolean
   
   /** Returns true if the chart is based on OpenGL */
-  def isOpenGLChart(): Boolean = js.native
+  def isOpenGLChart(): Boolean
   
   /** sets a new component that is able to create different chart type templates (components of type {@link ChartTypeTemplate} ) */
-  def setChartTypeManager(xNewManager: XChartTypeManager): Unit = js.native
+  def setChartTypeManager(xNewManager: XChartTypeManager): Unit
   
   /**
     * Notes: this is preliminary, we need an API that supports more than one diagram. The method name setDiagram exists in the css.chart API, so there is
     * would be no way to chose either this or the other method from Basic (it would chose one or the other by random).
     */
-  def setFirstDiagram(xDiagram: XDiagram): Unit = js.native
+  def setFirstDiagram(xDiagram: XDiagram): Unit
 }
 object XChartDocument {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlwaysInclude extends StObject {
   
-  var alwaysInclude: scala.Double = js.native
+  var alwaysInclude: scala.Double
   
-  var onlyIfLicensed: scala.Double = js.native
+  var onlyIfLicensed: scala.Double
   
-  var onlyIfUnlicensed: scala.Double = js.native
+  var onlyIfUnlicensed: scala.Double
 }
 object AlwaysInclude {
   

@@ -8,7 +8,6 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectionMod {
@@ -17,14 +16,15 @@ object projectionMod {
   @js.native
   val PROJECTION_PROPERTIES: js.Array[`type` | scale | translate] = js.native
   
-  @js.native
-  trait Projection extends BaseProjection {
+  trait Projection
+    extends StObject
+       with BaseProjection {
     
     /**
       * The projection’s translation offset as a two-element array `[tx, ty]`.
       */
     @JSName("translate")
-    var translate_Projection: js.UndefOr[Vector2[Double] | SignalRef] = js.native
+    var translate_Projection: js.UndefOr[Vector2[Double] | SignalRef] = js.undefined
   }
   object Projection {
     

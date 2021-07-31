@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * These targets implement the service {@link LinkTarget} .
   */
-@js.native
-trait XLinkTargetSupplier extends XInterface {
+trait XLinkTargetSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the names of possible links to children of this object inside a document object model. It implements the service {@link LinkTargets} . */
-  val Links: XNameAccess = js.native
+  val Links: XNameAccess
   
   /** @returns the names of possible links to children of this object inside a document object model. It implements the service {@link LinkTargets} . */
-  def getLinks(): XNameAccess = js.native
+  def getLinks(): XNameAccess
 }
 object XLinkTargetSupplier {
   

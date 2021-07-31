@@ -2,34 +2,32 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxIframeSettings extends StObject {
   
   /**
     * Iframe tag attributes
     */
-  var attr: js.UndefOr[FancyBoxPlainObject] = js.native
+  var attr: js.UndefOr[FancyBoxPlainObject] = js.undefined
   
   /**
     * Custom CSS styling for iframe wrapping element
     * You can use this to set custom iframe dimensions
     */
-  var css: js.UndefOr[FancyBoxPlainObject] = js.native
+  var css: js.UndefOr[FancyBoxPlainObject] = js.undefined
   
   /**
     * Preload iframe before displaying it
     * This allows to calculate iframe content width and height
     * (note: Due to "Same Origin Policy", you can't get cross domain data).
     */
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Iframe template
     */
-  var tpl: js.UndefOr[String] = js.native
+  var tpl: js.UndefOr[String] = js.undefined
 }
 object FancyBoxIframeSettings {
   

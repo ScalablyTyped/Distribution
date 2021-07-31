@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.pixiJs.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait Mesh extends Container {
+trait Mesh
+  extends StObject
+     with Container {
   
   /**
     * Standard non-batching way of rendering.

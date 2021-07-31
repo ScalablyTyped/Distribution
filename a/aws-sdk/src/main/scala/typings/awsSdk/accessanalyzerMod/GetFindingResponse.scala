@@ -2,16 +2,14 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingResponse extends StObject {
   
   /**
     * A finding object that contains finding details.
     */
-  var finding: js.UndefOr[Finding] = js.native
+  var finding: js.UndefOr[Finding] = js.undefined
 }
 object GetFindingResponse {
   

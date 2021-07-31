@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domWrapperMod {
@@ -17,10 +16,9 @@ object domWrapperMod {
   trait DomWrapper
     extends Component[DomWrapperProps, js.Object, js.Any]
   
-  @js.native
   trait DomWrapperProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object DomWrapperProps {
     

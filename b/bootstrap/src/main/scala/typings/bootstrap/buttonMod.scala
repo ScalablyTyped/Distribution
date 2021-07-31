@@ -3,29 +3,41 @@ package typings.bootstrap
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
   
   @JSImport("bootstrap/js/dist/button", JSImport.Default)
   @js.native
-  class default protected () extends Button {
+  class default protected ()
+    extends StObject
+       with Button {
     def this(element: Element) = this()
+    
+    /**
+      * Destroys an element's button.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Toggles push state. Gives the button the appearance that it has been activated.
+      */
+    /* CompleteClass */
+    override def toggle(): Unit = js.native
   }
   
-  @js.native
   trait Button extends StObject {
     
     /**
       * Destroys an element's button.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
     /**
       * Toggles push state. Gives the button the appearance that it has been activated.
       */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object Button {
     

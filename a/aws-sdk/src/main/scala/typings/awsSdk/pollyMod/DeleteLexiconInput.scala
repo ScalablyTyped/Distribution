@@ -2,16 +2,14 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLexiconInput extends StObject {
   
   /**
     * The name of the lexicon to delete. Must be an existing lexicon in the region.
     */
-  var Name: LexiconName = js.native
+  var Name: LexiconName
 }
 object DeleteLexiconInput {
   

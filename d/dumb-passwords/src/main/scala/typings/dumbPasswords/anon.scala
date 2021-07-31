@@ -2,19 +2,17 @@ package typings.dumbPasswords
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Frequency extends StObject {
     
-    var frequency: Double = js.native
+    var frequency: Double
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var password: String = js.native
+    var password: String
   }
   object Frequency {
     

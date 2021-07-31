@@ -17,31 +17,36 @@ import typings.libp2pCrypto.mod.keys.supportedKeys.secp256k1.Secp256k1PrivateKey
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("libp2p-crypto", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object aes {
+    
+    @JSImport("libp2p-crypto", "aes")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Create a new AES Cipher.
       * @param key The key, if length 16 then AES 128 is used. For length 32, AES 256 is used.
       * @param iv Must have length 16.
       */
-    @JSImport("libp2p-crypto", "aes.create")
-    @js.native
-    def create(key: Uint8Array, iv: Uint8Array): js.Promise[Cipher] = js.native
+    @scala.inline
+    def create(key: Uint8Array, iv: Uint8Array): js.Promise[Cipher] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cipher]]
     
     /**
       * AES Cipher in CTR mode.
       */
-    @js.native
     trait Cipher extends StObject {
       
-      def decrypt(data: Uint8Array): js.Promise[Uint8Array] = js.native
+      def decrypt(data: Uint8Array): js.Promise[Uint8Array]
       
-      def encrypt(data: Uint8Array): js.Promise[Uint8Array] = js.native
+      def encrypt(data: Uint8Array): js.Promise[Uint8Array]
     }
     object Cipher {
       
@@ -65,31 +70,33 @@ object mod {
   
   object hmac {
     
-    @JSImport("libp2p-crypto", "hmac.create")
+    @JSImport("libp2p-crypto", "hmac")
     @js.native
-    def create(hash: String, secret: Uint8Array): js.Promise[Digest] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(hash: String, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    
     /**
       * Create a new HMAC Digest.
       */
-    @JSImport("libp2p-crypto", "hmac.create")
-    @js.native
-    def create_SHA1(hash: SHA1, secret: Uint8Array): js.Promise[Digest] = js.native
-    @JSImport("libp2p-crypto", "hmac.create")
-    @js.native
-    def create_SHA256(hash: SHA256, secret: Uint8Array): js.Promise[Digest] = js.native
-    @JSImport("libp2p-crypto", "hmac.create")
-    @js.native
-    def create_SHA512(hash: SHA512, secret: Uint8Array): js.Promise[Digest] = js.native
+    @scala.inline
+    def create_SHA1(hash: SHA1, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    
+    @scala.inline
+    def create_SHA256(hash: SHA256, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
+    
+    @scala.inline
+    def create_SHA512(hash: SHA512, secret: Uint8Array): js.Promise[Digest] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Digest]]
     
     /**
       * HMAC Digest.
       */
-    @js.native
     trait Digest extends StObject {
       
-      def digest(data: Uint8Array): js.Promise[Uint8Array] = js.native
+      def digest(data: Uint8Array): js.Promise[Uint8Array]
       
-      var length: `20` | `32` | `64` | Double = js.native
+      var length: `20` | `32` | `64` | Double
     }
     object Digest {
       
@@ -113,96 +120,95 @@ object mod {
   
   object keys {
     
-    @JSImport("libp2p-crypto", "keys.generateEphemeralKeyPair")
+    @JSImport("libp2p-crypto", "keys")
     @js.native
-    def generateEphemeralKeyPair(curve: String): js.Promise[GenSharedKey] = js.native
-    @JSImport("libp2p-crypto", "keys.generateEphemeralKeyPair")
-    @js.native
-    def generateEphemeralKeyPair(curve: CurveType): js.Promise[GenSharedKey] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("libp2p-crypto", "keys.generateKeyPair")
-    @js.native
-    def generateKeyPair(`type`: String, bits: Double): js.Promise[PrivateKey] = js.native
-    @JSImport("libp2p-crypto", "keys.generateKeyPair")
-    @js.native
-    def generateKeyPair(`type`: KeyType, bits: Double): js.Promise[PrivateKey] = js.native
+    @scala.inline
+    def generateEphemeralKeyPair(curve: String): js.Promise[GenSharedKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEphemeralKeyPair")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenSharedKey]]
+    @scala.inline
+    def generateEphemeralKeyPair(curve: CurveType): js.Promise[GenSharedKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateEphemeralKeyPair")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenSharedKey]]
     
-    @JSImport("libp2p-crypto", "keys.generateKeyPairFromSeed")
-    @js.native
-    def generateKeyPairFromSeed(`type`: String, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = js.native
-    @JSImport("libp2p-crypto", "keys.generateKeyPairFromSeed")
-    @js.native
-    def generateKeyPairFromSeed(`type`: KeyType, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = js.native
-    @JSImport("libp2p-crypto", "keys.generateKeyPairFromSeed")
-    @js.native
-    def generateKeyPairFromSeed_Ed25519(`type`: Ed25519, seed: Uint8Array, bits: Double): js.Promise[Ed25519PrivateKey] = js.native
+    @scala.inline
+    def generateKeyPair(`type`: String, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
+    @scala.inline
+    def generateKeyPair(`type`: KeyType, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
     
-    @JSImport("libp2p-crypto", "keys.generateKeyPair")
-    @js.native
-    def generateKeyPair_Ed25519(`type`: Ed25519): js.Promise[Ed25519PrivateKey] = js.native
-    @JSImport("libp2p-crypto", "keys.generateKeyPair")
-    @js.native
-    def generateKeyPair_RSA(`type`: RSA, bits: Double): js.Promise[RsaPrivateKey] = js.native
-    @JSImport("libp2p-crypto", "keys.generateKeyPair")
-    @js.native
-    def generateKeyPair_secp256k1(`type`: secp256k1): js.Promise[Secp256k1PrivateKey] = js.native
+    @scala.inline
+    def generateKeyPairFromSeed(`type`: String, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
+    @scala.inline
+    def generateKeyPairFromSeed(`type`: KeyType, seed: Uint8Array, bits: Double): js.Promise[PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PrivateKey]]
     
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: String, hashType: String, secret: String): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: String, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: String, hashType: HashType, secret: String): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: String, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: CipherType, hashType: String, secret: String): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: CipherType, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: CipherType, hashType: HashType, secret: String): js.Promise[StretchPair] = js.native
-    @JSImport("libp2p-crypto", "keys.keyStretcher")
-    @js.native
-    def keyStretcher(cipherType: CipherType, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = js.native
+    @scala.inline
+    def generateKeyPairFromSeed_Ed25519(`type`: Ed25519, seed: Uint8Array, bits: Double): js.Promise[Ed25519PrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(`type`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Ed25519PrivateKey]]
+    
+    @scala.inline
+    def generateKeyPair_Ed25519(`type`: Ed25519): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
+    
+    @scala.inline
+    def generateKeyPair_RSA(`type`: RSA, bits: Double): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
+    
+    @scala.inline
+    def generateKeyPair_secp256k1(`type`: secp256k1): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Secp256k1PrivateKey]]
+    
+    /**
+      * Converts a PEM password protected private key into its representative object.
+      * @param pem Password protected private key in PEM format.
+      * @param password The password used to protect the key.
+      */
+    @scala.inline
+    def `import`(pem: String, password: String): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("_import")(pem.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
+    @scala.inline
+    def `import`(pem: String, password: String, format: String): js.Promise[RsaPrivateKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("_import")(pem.asInstanceOf[js.Any], password.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RsaPrivateKey]]
+    
+    @scala.inline
+    def keyStretcher(cipherType: String, hashType: String, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: String, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: String, hashType: HashType, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: String, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: CipherType, hashType: String, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: CipherType, hashType: String, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: CipherType, hashType: HashType, secret: String): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
+    @scala.inline
+    def keyStretcher(cipherType: CipherType, hashType: HashType, secret: Uint8Array): js.Promise[StretchPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StretchPair]]
     
     @JSImport("libp2p-crypto", "keys.keysPBM")
     @js.native
     val keysPBM: js.Any = js.native
     
-    @JSImport("libp2p-crypto", "keys.marshalPrivateKey")
-    @js.native
-    def marshalPrivateKey(key: PrivateKey): Uint8Array = js.native
-    @JSImport("libp2p-crypto", "keys.marshalPrivateKey")
-    @js.native
-    def marshalPrivateKey(key: PrivateKey, `type`: String): Uint8Array = js.native
-    @JSImport("libp2p-crypto", "keys.marshalPrivateKey")
-    @js.native
-    def marshalPrivateKey(key: PrivateKey, `type`: KeyType): Uint8Array = js.native
+    @scala.inline
+    def marshalPrivateKey(key: PrivateKey): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    @scala.inline
+    def marshalPrivateKey(key: PrivateKey, `type`: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def marshalPrivateKey(key: PrivateKey, `type`: KeyType): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPrivateKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
-    @JSImport("libp2p-crypto", "keys.marshalPublicKey")
-    @js.native
-    def marshalPublicKey(key: PublicKey): Uint8Array = js.native
-    @JSImport("libp2p-crypto", "keys.marshalPublicKey")
-    @js.native
-    def marshalPublicKey(key: PublicKey, `type`: String): Uint8Array = js.native
-    @JSImport("libp2p-crypto", "keys.marshalPublicKey")
-    @js.native
-    def marshalPublicKey(key: PublicKey, `type`: KeyType): Uint8Array = js.native
+    @scala.inline
+    def marshalPublicKey(key: PublicKey): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    @scala.inline
+    def marshalPublicKey(key: PublicKey, `type`: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    @scala.inline
+    def marshalPublicKey(key: PublicKey, `type`: KeyType): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("marshalPublicKey")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     object supportedKeys {
       
       object ed25519 {
         
+        @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519.Ed25519PrivateKey")
         @js.native
-        class Ed25519PrivateKey protected () extends PrivateKey {
+        class Ed25519PrivateKey protected ()
+          extends StObject
+             with PrivateKey {
           def this(key: Uint8Array, publicKey: Uint8Array) = this()
           
           @JSName("public")
@@ -211,34 +217,53 @@ object mod {
         
         @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519.Ed25519PublicKey")
         @js.native
-        class Ed25519PublicKey protected () extends PublicKey {
+        class Ed25519PublicKey protected ()
+          extends StObject
+             with PublicKey {
           def this(key: Uint8Array) = this()
           
+          /* CompleteClass */
+          override val bytes: Uint8Array = js.native
+          
           def encrypt(bytes: Uint8Array): Uint8Array = js.native
+          
+          /* CompleteClass */
+          override def equals(key: PublicKey): Boolean = js.native
+          
+          /* CompleteClass */
+          override def hash(): js.Promise[Uint8Array] = js.native
+          
+          /* CompleteClass */
+          override def marshal(): Uint8Array = js.native
+          
+          /* CompleteClass */
+          override def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
         }
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519.generateKeyPair")
-        @js.native
-        def generateKeyPair(): js.Promise[Ed25519PrivateKey] = js.native
+        @scala.inline
+        def generateKeyPair(): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[js.Promise[Ed25519PrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519.generateKeyPairFromSeed")
-        @js.native
-        def generateKeyPairFromSeed(seed: Uint8Array): js.Promise[Ed25519PrivateKey] = js.native
+        @scala.inline
+        def generateKeyPairFromSeed(seed: Uint8Array): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPairFromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519.unmarshalEd25519PrivateKey")
-        @js.native
-        def unmarshalEd25519PrivateKey(buf: Uint8Array): js.Promise[Ed25519PrivateKey] = js.native
+        @scala.inline
+        def unmarshalEd25519PrivateKey(buf: Uint8Array): js.Promise[Ed25519PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalEd25519PrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ed25519PrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.ed25519.unmarshalEd25519PublicKey")
-        @js.native
-        def unmarshalEd25519PublicKey(buf: Uint8Array): Ed25519PublicKey = js.native
+        @scala.inline
+        def unmarshalEd25519PublicKey(buf: Uint8Array): Ed25519PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalEd25519PublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[Ed25519PublicKey]
       }
       
       object rsa {
         
+        @JSImport("libp2p-crypto", "keys.supportedKeys.rsa")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @JSImport("libp2p-crypto", "keys.supportedKeys.rsa.RsaPrivateKey")
         @js.native
-        class RsaPrivateKey protected () extends PrivateKey {
+        class RsaPrivateKey protected ()
+          extends StObject
+             with PrivateKey {
           def this(key: js.Any, publicKey: Uint8Array) = this()
           
           def decrypt(bytes: Uint8Array): Uint8Array = js.native
@@ -251,34 +276,53 @@ object mod {
         
         @JSImport("libp2p-crypto", "keys.supportedKeys.rsa.RsaPublicKey")
         @js.native
-        class RsaPublicKey protected () extends PublicKey {
+        class RsaPublicKey protected ()
+          extends StObject
+             with PublicKey {
           def this(key: Uint8Array) = this()
           
+          /* CompleteClass */
+          override val bytes: Uint8Array = js.native
+          
           def encrypt(bytes: Uint8Array): Uint8Array = js.native
+          
+          /* CompleteClass */
+          override def equals(key: PublicKey): Boolean = js.native
+          
+          /* CompleteClass */
+          override def hash(): js.Promise[Uint8Array] = js.native
+          
+          /* CompleteClass */
+          override def marshal(): Uint8Array = js.native
+          
+          /* CompleteClass */
+          override def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
         }
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.rsa.fromJwk")
-        @js.native
-        def fromJwk(jwk: Uint8Array): js.Promise[RsaPrivateKey] = js.native
+        @scala.inline
+        def fromJwk(jwk: Uint8Array): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJwk")(jwk.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.rsa.generateKeyPair")
-        @js.native
-        def generateKeyPair(bits: Double): js.Promise[RsaPrivateKey] = js.native
+        @scala.inline
+        def generateKeyPair(bits: Double): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.rsa.unmarshalRsaPrivateKey")
-        @js.native
-        def unmarshalRsaPrivateKey(buf: Uint8Array): js.Promise[RsaPrivateKey] = js.native
+        @scala.inline
+        def unmarshalRsaPrivateKey(buf: Uint8Array): js.Promise[RsaPrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalRsaPrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaPrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.rsa.unmarshalRsaPublicKey")
-        @js.native
-        def unmarshalRsaPublicKey(buf: Uint8Array): RsaPublicKey = js.native
+        @scala.inline
+        def unmarshalRsaPublicKey(buf: Uint8Array): RsaPublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalRsaPublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[RsaPublicKey]
       }
       
       object secp256k1 {
         
+        @JSImport("libp2p-crypto", "keys.supportedKeys.secp256k1")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @JSImport("libp2p-crypto", "keys.supportedKeys.secp256k1.Secp256k1PrivateKey")
         @js.native
-        class Secp256k1PrivateKey protected () extends PrivateKey {
+        class Secp256k1PrivateKey protected ()
+          extends StObject
+             with PrivateKey {
           def this(key: Uint8Array, publicKey: Uint8Array) = this()
           
           @JSName("public")
@@ -287,63 +331,58 @@ object mod {
         
         @JSImport("libp2p-crypto", "keys.supportedKeys.secp256k1.Secp256k1PublicKey")
         @js.native
-        class Secp256k1PublicKey protected () extends PublicKey {
+        class Secp256k1PublicKey protected ()
+          extends StObject
+             with PublicKey {
           def this(key: Uint8Array) = this()
           
+          /* CompleteClass */
+          override val bytes: Uint8Array = js.native
+          
           def encrypt(bytes: Uint8Array): Uint8Array = js.native
+          
+          /* CompleteClass */
+          override def equals(key: PublicKey): Boolean = js.native
+          
+          /* CompleteClass */
+          override def hash(): js.Promise[Uint8Array] = js.native
+          
+          /* CompleteClass */
+          override def marshal(): Uint8Array = js.native
+          
+          /* CompleteClass */
+          override def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
         }
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.secp256k1.generateKeyPair")
-        @js.native
-        def generateKeyPair(): js.Promise[Secp256k1PrivateKey] = js.native
+        @scala.inline
+        def generateKeyPair(): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[js.Promise[Secp256k1PrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.secp256k1.unmarshalSecp256k1PrivateKey")
-        @js.native
-        def unmarshalSecp256k1PrivateKey(bytes: Uint8Array): js.Promise[Secp256k1PrivateKey] = js.native
+        @scala.inline
+        def unmarshalSecp256k1PrivateKey(bytes: Uint8Array): js.Promise[Secp256k1PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalSecp256k1PrivateKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Secp256k1PrivateKey]]
         
-        @JSImport("libp2p-crypto", "keys.supportedKeys.secp256k1.unmarshalSecp256k1PublicKey")
-        @js.native
-        def unmarshalSecp256k1PublicKey(bytes: Uint8Array): Secp256k1PublicKey = js.native
+        @scala.inline
+        def unmarshalSecp256k1PublicKey(bytes: Uint8Array): Secp256k1PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalSecp256k1PublicKey")(bytes.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PublicKey]
       }
     }
     
-    @JSImport("libp2p-crypto", "keys.unmarshalPrivateKey")
-    @js.native
-    def unmarshalPrivateKey(buf: Uint8Array): js.Promise[PrivateKey] = js.native
+    @scala.inline
+    def unmarshalPrivateKey(buf: Uint8Array): js.Promise[PrivateKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPrivateKey")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PrivateKey]]
     
-    @JSImport("libp2p-crypto", "keys.unmarshalPublicKey")
-    @js.native
-    def unmarshalPublicKey(buf: Uint8Array): PublicKey = js.native
-    
-    /**
-      * Converts a PEM password protected private key into its representative object.
-      * @param pem Password protected private key in PEM format.
-      * @param password The password used to protect the key.
-      */
-    @JSImport("libp2p-crypto", "keys._import")
-    @js.native
-    def `import`(pem: String, password: String): js.Promise[RsaPrivateKey] = js.native
-    @JSImport("libp2p-crypto", "keys._import")
-    @js.native
-    def `import`(pem: String, password: String, format: String): js.Promise[RsaPrivateKey] = js.native
+    @scala.inline
+    def unmarshalPublicKey(buf: Uint8Array): PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshalPublicKey")(buf.asInstanceOf[js.Any]).asInstanceOf[PublicKey]
   }
   
-  @JSImport("libp2p-crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: String, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = js.native
-  @JSImport("libp2p-crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: String, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = js.native
-  @JSImport("libp2p-crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: Uint8Array, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = js.native
-  @JSImport("libp2p-crypto", "pbkdf2")
-  @js.native
-  def pbkdf2(password: Uint8Array, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = js.native
+  @scala.inline
+  def pbkdf2(password: String, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pbkdf2(password: String, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pbkdf2(password: Uint8Array, salt: String, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def pbkdf2(password: Uint8Array, salt: Uint8Array, iterations: Double, keySize: Double, hash: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("libp2p-crypto", "randomBytes")
-  @js.native
-  def randomBytes(number: Double): Uint8Array = js.native
+  @scala.inline
+  def randomBytes(number: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(number.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
   /* Rewritten from type alias, can be one of: 
     - typings.libp2pCrypto.libp2pCryptoStrings.`AES-128`
@@ -439,8 +478,8 @@ object mod {
     /**
       * Exports the password protected key in the format specified.
       */
-    def export(password: String): js.Promise[String] = js.native
-    def export(password: String, format: String): js.Promise[String] = js.native
+    def `export`(password: String): js.Promise[String] = js.native
+    def `export`(password: String, format: String): js.Promise[String] = js.native
     @JSName("export")
     def export_pkcs8(password: String, format: `pkcs-8`): js.Promise[String] = js.native
     
@@ -462,18 +501,17 @@ object mod {
     def sign(data: Uint8Array): js.Promise[Uint8Array] = js.native
   }
   
-  @js.native
   trait PublicKey extends StObject {
     
-    val bytes: Uint8Array = js.native
+    val bytes: Uint8Array
     
-    def equals(key: PublicKey): Boolean = js.native
+    def equals(key: PublicKey): Boolean
     
-    def hash(): js.Promise[Uint8Array] = js.native
+    def hash(): js.Promise[Uint8Array]
     
-    def marshal(): Uint8Array = js.native
+    def marshal(): Uint8Array
     
-    def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean] = js.native
+    def verify(data: Uint8Array, sig: Uint8Array): js.Promise[Boolean]
   }
   object PublicKey {
     
@@ -510,15 +548,32 @@ object mod {
     }
   }
   
-  @js.native
   trait StretchPair extends StObject {
     
-    def k1(res: Uint8Array): Keystretcher = js.native
+    def k1(res: Uint8Array): Keystretcher
     @JSName("k1")
-    var k1_Original: Keystretcher = js.native
+    var k1_Original: Keystretcher
     
-    def k2(res: Uint8Array): Keystretcher = js.native
+    def k2(res: Uint8Array): Keystretcher
     @JSName("k2")
-    var k2_Original: Keystretcher = js.native
+    var k2_Original: Keystretcher
+  }
+  object StretchPair {
+    
+    @scala.inline
+    def apply(k1: Keystretcher, k2: Keystretcher): StretchPair = {
+      val __obj = js.Dynamic.literal(k1 = k1.asInstanceOf[js.Any], k2 = k2.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StretchPair]
+    }
+    
+    @scala.inline
+    implicit class StretchPairMutableBuilder[Self <: StretchPair] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setK1(value: Keystretcher): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setK2(value: Keystretcher): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
+    }
   }
 }

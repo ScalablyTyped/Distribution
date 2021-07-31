@@ -2,13 +2,11 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FusedBatchNormAttrs extends StObject {
   
-  var varianceEpsilon: Double = js.native
+  var varianceEpsilon: Double
 }
 object FusedBatchNormAttrs {
   

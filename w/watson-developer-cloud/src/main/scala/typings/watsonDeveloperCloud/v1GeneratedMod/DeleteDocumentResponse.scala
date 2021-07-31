@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DeleteDocumentResponse. */
-@js.native
 trait DeleteDocumentResponse extends StObject {
   
   /** The unique identifier of the document. */
-  var document_id: js.UndefOr[String] = js.native
+  var document_id: js.UndefOr[String] = js.undefined
   
   /** Status of the document. A deleted document has the status deleted. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object DeleteDocumentResponse {
   

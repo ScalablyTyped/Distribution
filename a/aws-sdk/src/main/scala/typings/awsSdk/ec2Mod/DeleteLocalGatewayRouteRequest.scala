@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLocalGatewayRouteRequest extends StObject {
   
   /**
     * The CIDR range for the route. This must match the CIDR for the route exactly.
     */
-  var DestinationCidrBlock: String = js.native
+  var DestinationCidrBlock: String
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: LocalGatewayRoutetableId = js.native
+  var LocalGatewayRouteTableId: LocalGatewayRoutetableId
 }
 object DeleteLocalGatewayRouteRequest {
   

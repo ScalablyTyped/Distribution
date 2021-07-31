@@ -2,25 +2,23 @@ package typings.browserReport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait City extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var code: String = js.native
+    var code: String
     
-    var latitude: String = js.native
+    var latitude: String
     
-    var longitude: String = js.native
+    var longitude: String
     
-    var name: String = js.native
+    var name: String
     
-    var timezone: String = js.native
+    var timezone: String
   }
   object City {
     
@@ -53,16 +51,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Colors extends StObject {
     
-    var colors: Double = js.native
+    var colors: Double
     
-    var dppx: Double = js.native
+    var dppx: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Colors {
     
@@ -89,12 +86,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -115,16 +111,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Layout extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var layout: Height = js.native
+    var layout: Height
     
-    var width: Double = js.native
+    var width: Double
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object Layout {
     
@@ -151,12 +146,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -177,10 +171,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Version extends StObject {
     
-    var version: String = js.native
+    var version: String
   }
   object Version {
     

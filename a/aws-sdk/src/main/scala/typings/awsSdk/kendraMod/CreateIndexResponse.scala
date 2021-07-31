@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIndexResponse extends StObject {
   
   /**
     * The unique identifier of the index. Use this identifier when you query an index, set up a data source, or index a document.
     */
-  var Id: js.UndefOr[IndexId] = js.native
+  var Id: js.UndefOr[IndexId] = js.undefined
 }
 object CreateIndexResponse {
   

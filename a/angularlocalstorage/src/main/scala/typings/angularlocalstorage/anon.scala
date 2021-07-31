@@ -2,17 +2,15 @@ package typings.angularlocalstorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DefaultValue extends StObject {
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var storeName: js.UndefOr[String] = js.native
+    var storeName: js.UndefOr[String] = js.undefined
   }
   object DefaultValue {
     

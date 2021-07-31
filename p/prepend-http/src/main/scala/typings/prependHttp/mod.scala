@@ -2,7 +2,6 @@ package typings.prependHttp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,21 +20,22 @@ object mod {
   //=> 'https://sindresorhus.com'
   ```
   */
-  @JSImport("prepend-http", JSImport.Namespace)
-  @js.native
-  def apply(url: String): String = js.native
-  @JSImport("prepend-http", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): String = js.native
+  @scala.inline
+  def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("prepend-http", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Prepend `https://` instead of `http://`.
     		@default true
     		*/
-    val https: js.UndefOr[Boolean] = js.native
+    val https: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLifecycleConfiguration extends StObject {
   
   /**
     * A lifecycle rule for individual objects in an Amazon S3 bucket.
     */
-  var Rules: LifecycleRules = js.native
+  var Rules: LifecycleRules
 }
 object BucketLifecycleConfiguration {
   

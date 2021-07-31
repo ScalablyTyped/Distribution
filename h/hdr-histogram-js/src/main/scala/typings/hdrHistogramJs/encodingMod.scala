@@ -4,36 +4,29 @@ import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encodingMod {
   
-  @JSImport("hdr-histogram-js/encoding", "decodeFromCompressedBase64")
+  @JSImport("hdr-histogram-js/encoding", JSImport.Namespace)
   @js.native
-  def decodeFromCompressedBase64(base64String: String): AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js/encoding", "decodeFromCompressedBase64")
-  @js.native
-  def decodeFromCompressedBase64(
-    base64String: String,
-    histogramConstr: js.UndefOr[scala.Nothing],
-    minBarForHighestTrackableValue: Double
-  ): AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js/encoding", "decodeFromCompressedBase64")
-  @js.native
-  def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): AbstractHistogram = js.native
-  @JSImport("hdr-histogram-js/encoding", "decodeFromCompressedBase64")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def decodeFromCompressedBase64(base64String: String): AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any]).asInstanceOf[AbstractHistogram]
+  @scala.inline
+  def decodeFromCompressedBase64(base64String: String, histogramConstr: Unit, minBarForHighestTrackableValue: Double): AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any], minBarForHighestTrackableValue.asInstanceOf[js.Any])).asInstanceOf[AbstractHistogram]
+  @scala.inline
+  def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any])).asInstanceOf[AbstractHistogram]
+  @scala.inline
   def decodeFromCompressedBase64(
     base64String: String,
     histogramConstr: HistogramConstructor,
     minBarForHighestTrackableValue: Double
-  ): AbstractHistogram = js.native
+  ): AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any], minBarForHighestTrackableValue.asInstanceOf[js.Any])).asInstanceOf[AbstractHistogram]
   
-  @JSImport("hdr-histogram-js/encoding", "encodeIntoBase64String")
-  @js.native
-  def encodeIntoBase64String(histogram: AbstractHistogram): String = js.native
-  @JSImport("hdr-histogram-js/encoding", "encodeIntoBase64String")
-  @js.native
-  def encodeIntoBase64String(histogram: AbstractHistogram, compressionLevel: Double): String = js.native
+  @scala.inline
+  def encodeIntoBase64String(histogram: AbstractHistogram): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeIntoBase64String(histogram: AbstractHistogram, compressionLevel: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any], compressionLevel.asInstanceOf[js.Any])).asInstanceOf[String]
 }

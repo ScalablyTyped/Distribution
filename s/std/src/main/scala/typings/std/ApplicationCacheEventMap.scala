@@ -2,27 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationCacheEventMap extends StObject {
   
-  var cached: Event = js.native
+  var cached: Event
   
-  var checking: Event = js.native
+  var checking: Event
   
-  var downloading: Event = js.native
+  var downloading: Event
   
-  var error: Event = js.native
+  var error: Event
   
-  var noupdate: Event = js.native
+  var noupdate: Event
   
-  var obsolete: Event = js.native
+  var obsolete: Event
   
-  var progress: ProgressEvent[ApplicationCache] = js.native
+  var progress: ProgressEvent[ApplicationCache]
   
-  var updateready: Event = js.native
+  var updateready: Event
 }
 object ApplicationCacheEventMap {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SslCertsCreateEphemeralRequest extends StObject {
   
   /** PEM encoded public key to include in the signed certificate. */
-  var public_key: js.UndefOr[String] = js.native
+  var public_key: js.UndefOr[String] = js.undefined
 }
 object SslCertsCreateEphemeralRequest {
   

@@ -2,26 +2,26 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationQueryMetadata extends AnimationMetadata {
+trait AnimationQueryMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * One or more animation step objects.
     */
-  var animation: AnimationMetadata | js.Array[AnimationMetadata] = js.native
+  var animation: AnimationMetadata | js.Array[AnimationMetadata]
   
   /**
     * A query options object.
     */
-  var options: AnimationQueryOptions | Null = js.native
+  var options: AnimationQueryOptions | Null
   
   /**
     *  The CSS selector for this query.
     */
-  var selector: String = js.native
+  var selector: String
 }
 object AnimationQueryMetadata {
   
@@ -31,7 +31,7 @@ object AnimationQueryMetadata {
     selector: String,
     `type`: AnimationMetadataType
   ): AnimationQueryMetadata = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationQueryMetadata]
   }

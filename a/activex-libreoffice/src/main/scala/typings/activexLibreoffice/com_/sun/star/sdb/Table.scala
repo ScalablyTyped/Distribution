@@ -11,20 +11,19 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the service {@link com.sun.star.sdbcx.Table} with additional display information, sorting, and filtering criteria. */
-@js.native
 trait Table
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.Table
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbcx.Table
      with DataSettings {
   
   /**
     * indicates the privileges for the table.
     * @see com.sun.star.sdbcx.Privilege
     */
-  var Privileges: Double = js.native
+  var Privileges: Double
 }
 object Table {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetCustomDataIdentifiersRequest extends StObject {
   
   /**
     * An array of strings that lists the unique identifiers for the custom data identifiers to retrieve information about.
     */
-  var ids: js.UndefOr[listOfString] = js.native
+  var ids: js.UndefOr[listOfString] = js.undefined
 }
 object BatchGetCustomDataIdentifiersRequest {
   

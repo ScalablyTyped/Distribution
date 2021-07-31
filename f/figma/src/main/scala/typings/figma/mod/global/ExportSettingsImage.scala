@@ -4,20 +4,20 @@ import typings.figma.figmaStrings.JPG
 import typings.figma.figmaStrings.PNG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportSettingsImage extends ExportSettings {
+trait ExportSettingsImage
+  extends StObject
+     with ExportSettings {
   
-  val constraint: js.UndefOr[ExportSettingsConstraints] = js.native
+  val constraint: js.UndefOr[ExportSettingsConstraints] = js.undefined
   
-  val contentsOnly: js.UndefOr[Boolean] = js.native
+  val contentsOnly: js.UndefOr[Boolean] = js.undefined
   
-  val format: JPG | PNG = js.native
+  val format: JPG | PNG
   
   // defaults to true
-  val suffix: js.UndefOr[String] = js.native
+  val suffix: js.UndefOr[String] = js.undefined
 }
 object ExportSettingsImage {
   

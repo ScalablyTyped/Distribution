@@ -7,7 +7,6 @@ import typings.webgme.webgmeStrings.FORKED
 import typings.webgme.webgmeStrings.SYNCED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmeStorage {
@@ -16,43 +15,42 @@ object GmeStorage {
   
   type CommitHashCallback = js.Function2[/* err */ Error | Null, /* result */ CommitHash, Unit]
   
-  @js.native
   trait CommitObject extends StObject {
     
     /**
       * Hash of the commit object, a.k.a commitHash.
       */
-    var _id: CommitHash = js.native
+    var _id: CommitHash
     
     /**
       * Commit message.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * Commits from where this commit evolved.
       */
-    var parents: js.Array[CommitHash] = js.native
+    var parents: js.Array[CommitHash]
     
     /**
       * Hash of the associated root object, a.k.a. rootHash.
       */
-    var root: ObjectHash = js.native
+    var root: ObjectHash
     
     /**
       * When the commit object was created (new Date()).getTime().
       */
-    var time: Double = js.native
+    var time: Double
     
     /**
       * A constant 'commit'.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Who performed the update.
       */
-    var updater: js.Array[String] = js.native
+    var updater: js.Array[String]
   }
   object CommitObject {
     
@@ -103,13 +101,12 @@ object GmeStorage {
     }
   }
   
-  @js.native
   trait CommitResult extends StObject {
     
     /** The commitHash for the commit. */
-    var hash: CommitHash = js.native
+    var hash: CommitHash
     
-    var status: js.UndefOr[SYNCED | FORKED | CANCELED] = js.native
+    var status: js.UndefOr[SYNCED | FORKED | CANCELED] = js.undefined
   }
   object CommitResult {
     

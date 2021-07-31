@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationManagerClientEnabledFeatures extends StObject {
   
   // Whether compliance policy is managed by Intune
-  var compliancePolicy: js.UndefOr[Boolean] = js.native
+  var compliancePolicy: js.UndefOr[Boolean] = js.undefined
   
   // Whether device configuration is managed by Intune
-  var deviceConfiguration: js.UndefOr[Boolean] = js.native
+  var deviceConfiguration: js.UndefOr[Boolean] = js.undefined
   
   // Whether inventory is managed by Intune
-  var inventory: js.UndefOr[Boolean] = js.native
+  var inventory: js.UndefOr[Boolean] = js.undefined
   
   // Whether modern application is managed by Intune
-  var modernApps: js.UndefOr[Boolean] = js.native
+  var modernApps: js.UndefOr[Boolean] = js.undefined
   
   // Whether resource access is managed by Intune
-  var resourceAccess: js.UndefOr[Boolean] = js.native
+  var resourceAccess: js.UndefOr[Boolean] = js.undefined
   
   // Whether Windows Update for Business is managed by Intune
-  var windowsUpdateForBusiness: js.UndefOr[Boolean] = js.native
+  var windowsUpdateForBusiness: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigurationManagerClientEnabledFeatures {
   

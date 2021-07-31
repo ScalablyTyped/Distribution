@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for EntityTypes.BatchUpdateEntityTypes.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesRequest extends StObject {
   
   /**
     * The collection of entity types to update or create.
     */
-  var entityTypeBatchInline: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1EntityTypeBatch] = js.native
+  var entityTypeBatchInline: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1EntityTypeBatch] = js.undefined
   
   /**
     * The URI to a Google Cloud Storage file containing entity types to update
@@ -22,7 +20,7 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesRequest extends St
     * EntityBatch type) or a JSON object. Note: The URI must start with
     * &quot;gs://&quot;.
     */
-  var entityTypeBatchUri: js.UndefOr[String] = js.native
+  var entityTypeBatchUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The language of entity synonyms defined in `entity_types`. If
@@ -31,12 +29,12 @@ trait SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesRequest extends St
     * are supported. Note: languages must be enabled in the agent before they
     * can be used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The mask to control which fields get updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesRequest {
   

@@ -2,7 +2,6 @@ package typings.rword
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object randomMod {
@@ -27,16 +26,14 @@ object randomMod {
     /**
       * Generate a random number between `min` (inclusive) and `max` (exclusive).
       */
-    @JSImport("rword/dist/lib/random", "Random.range")
-    @js.native
-    def range(min: Double, max: Double): Double = js.native
+    @scala.inline
+    def range(min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Generate a random number between `0` (inclusive) and `1` (exclusive). A
       *  drop in replacement for `Math.random()`
       */
-    @JSImport("rword/dist/lib/random", "Random.value")
-    @js.native
-    def value(): Double = js.native
+    @scala.inline
+    def value(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("value")().asInstanceOf[Double]
   }
 }

@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a mobile broadband device service. */
-@js.native
 trait MobileBroadbandDeviceServiceInformation extends StObject {
   
   /** Gets the unique device service identifier for the mobile broadband device. */
-  var deviceServiceId: String = js.native
+  var deviceServiceId: String
   
   /** Determines if the mobile broadband device service is able to read data. */
-  var isDataReadSupported: Boolean = js.native
+  var isDataReadSupported: Boolean
   
   /** Determines if the mobile broadband device service is able to write data. */
-  var isDataWriteSupported: Boolean = js.native
+  var isDataWriteSupported: Boolean
 }
 object MobileBroadbandDeviceServiceInformation {
   

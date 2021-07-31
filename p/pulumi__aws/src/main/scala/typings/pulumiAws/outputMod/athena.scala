@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object athena {
   
-  @js.native
   trait DatabaseEncryptionConfiguration extends StObject {
     
     /**
       * The type of key; one of `SSE_S3`, `SSE_KMS`, `CSE_KMS`
       */
-    var encryptionOption: String = js.native
+    var encryptionOption: String
     
     /**
       * The KMS key ARN or ID; required for key types `SSE_KMS` and `CSE_KMS`.
       */
-    var kmsKey: js.UndefOr[String] = js.native
+    var kmsKey: js.UndefOr[String] = js.undefined
   }
   object DatabaseEncryptionConfiguration {
     
@@ -42,28 +40,27 @@ object athena {
     }
   }
   
-  @js.native
   trait WorkgroupConfiguration extends StObject {
     
     /**
       * Integer for the upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan. Must be at least `10485760`.
       */
-    var bytesScannedCutoffPerQuery: js.UndefOr[Double] = js.native
+    var bytesScannedCutoffPerQuery: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean whether the settings for the workgroup override client-side settings. For more information, see [Workgroup Settings Override Client-Side Settings](https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html). Defaults to `true`.
       */
-    var enforceWorkgroupConfiguration: js.UndefOr[Boolean] = js.native
+    var enforceWorkgroupConfiguration: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean whether Amazon CloudWatch metrics are enabled for the workgroup. Defaults to `true`.
       */
-    var publishCloudwatchMetricsEnabled: js.UndefOr[Boolean] = js.native
+    var publishCloudwatchMetricsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configuration block with result settings. Documented below.
       */
-    var resultConfiguration: js.UndefOr[WorkgroupConfigurationResultConfiguration] = js.native
+    var resultConfiguration: js.UndefOr[WorkgroupConfigurationResultConfiguration] = js.undefined
   }
   object WorkgroupConfiguration {
     
@@ -102,18 +99,17 @@ object athena {
     }
   }
   
-  @js.native
   trait WorkgroupConfigurationResultConfiguration extends StObject {
     
     /**
       * Configuration block with encryption settings. Documented below.
       */
-    var encryptionConfiguration: js.UndefOr[WorkgroupConfigurationResultConfigurationEncryptionConfiguration] = js.native
+    var encryptionConfiguration: js.UndefOr[WorkgroupConfigurationResultConfigurationEncryptionConfiguration] = js.undefined
     
     /**
       * The location in Amazon S3 where your query results are stored, such as `s3://path/to/query/bucket/`. For more information, see [Queries and Query Result Files](https://docs.aws.amazon.com/athena/latest/ug/querying.html).
       */
-    var outputLocation: js.UndefOr[String] = js.native
+    var outputLocation: js.UndefOr[String] = js.undefined
   }
   object WorkgroupConfigurationResultConfiguration {
     
@@ -140,18 +136,17 @@ object athena {
     }
   }
   
-  @js.native
   trait WorkgroupConfigurationResultConfigurationEncryptionConfiguration extends StObject {
     
     /**
       * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (`SSE_S3`), server-side encryption with KMS-managed keys (`SSE_KMS`), or client-side encryption with KMS-managed keys (`CSE_KMS`) is used. If a query runs in a workgroup and the workgroup overrides client-side settings, then the workgroup's setting for encryption is used. It specifies whether query results must be encrypted, for all queries that run in this workgroup.
       */
-    var encryptionOption: js.UndefOr[String] = js.native
+    var encryptionOption: js.UndefOr[String] = js.undefined
     
     /**
       * For `SSE_KMS` and `CSE_KMS`, this is the KMS key Amazon Resource Name (ARN).
       */
-    var kmsKeyArn: js.UndefOr[String] = js.native
+    var kmsKeyArn: js.UndefOr[String] = js.undefined
   }
   object WorkgroupConfigurationResultConfigurationEncryptionConfiguration {
     

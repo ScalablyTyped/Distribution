@@ -2,51 +2,49 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Rule.
   */
-@js.native
 trait SchemaRule extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of conditions that make up this rule (implicit AND between
     * them).
     */
-  var condition: js.UndefOr[js.Array[SchemaCondition]] = js.native
+  var condition: js.UndefOr[js.Array[SchemaCondition]] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the GTM Rule as computed at storage time. This value
     * is recomputed whenever the rule is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Rule display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User notes on how to apply this rule in the container.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * The Rule ID uniquely identifies the GTM Rule.
     */
-  var ruleId: js.UndefOr[String] = js.native
+  var ruleId: js.UndefOr[String] = js.undefined
 }
 object SchemaRule {
   

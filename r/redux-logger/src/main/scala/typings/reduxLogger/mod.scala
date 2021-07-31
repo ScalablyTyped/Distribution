@@ -1,6 +1,5 @@
 package typings.reduxLogger
 
-import org.scalablytyped.runtime.Shortcut
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import typings.redux.mod.Middleware
@@ -8,21 +7,22 @@ import typings.reduxLogger.reduxLoggerBooleans.`false`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("redux-logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redux-logger", JSImport.Default)
   @js.native
   val default: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = js.native
   
-  @JSImport("redux-logger", "createLogger")
-  @js.native
-  def createLogger(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-logger", "createLogger")
-  @js.native
-  def createLogger(options: ReduxLoggerOptions): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  @scala.inline
+  def createLogger(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def createLogger(options: ReduxLoggerOptions): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
   @JSImport("redux-logger", "logger")
   @js.native
@@ -30,18 +30,17 @@ object mod extends Shortcut {
   
   type ActionToString = js.Function1[/* action */ js.Any, String]
   
-  @js.native
   trait ColorsObject extends StObject {
     
-    var action: js.UndefOr[Boolean | ActionToString] = js.native
+    var action: js.UndefOr[Boolean | ActionToString] = js.undefined
     
-    var error: js.UndefOr[Boolean | ErrorToString] = js.native
+    var error: js.UndefOr[Boolean | ErrorToString] = js.undefined
     
-    var nextState: js.UndefOr[Boolean | StateToString] = js.native
+    var nextState: js.UndefOr[Boolean | StateToString] = js.undefined
     
-    var prevState: js.UndefOr[Boolean | StateToString] = js.native
+    var prevState: js.UndefOr[Boolean | StateToString] = js.undefined
     
-    var title: js.UndefOr[Boolean | ActionToString] = js.native
+    var title: js.UndefOr[Boolean | ActionToString] = js.undefined
   }
   object ColorsObject {
     
@@ -103,16 +102,15 @@ object mod extends Shortcut {
   
   type ErrorToString = js.Function2[/* error */ js.Any, /* prevState */ js.Any, String]
   
-  @js.native
   trait LevelObject extends StObject {
     
-    var action: js.UndefOr[String | Boolean | ActionToString] = js.native
+    var action: js.UndefOr[String | Boolean | ActionToString] = js.undefined
     
-    var error: js.UndefOr[String | Boolean | ErrorToString] = js.native
+    var error: js.UndefOr[String | Boolean | ErrorToString] = js.undefined
     
-    var nextState: js.UndefOr[String | Boolean | StateToString] = js.native
+    var nextState: js.UndefOr[String | Boolean | StateToString] = js.undefined
     
-    var prevState: js.UndefOr[String | Boolean | StateToString] = js.native
+    var prevState: js.UndefOr[String | Boolean | StateToString] = js.undefined
   }
   object LevelObject {
     
@@ -163,22 +161,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait LogEntryObject extends StObject {
     
-    var action: js.UndefOr[String | Boolean | ActionToString] = js.native
+    var action: js.UndefOr[String | Boolean | ActionToString] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
     
-    var nextState: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+    var nextState: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
     
-    var prevState: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+    var prevState: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
     
-    var started: js.UndefOr[Double] = js.native
+    var started: js.UndefOr[Double] = js.undefined
     
-    var startedTime: js.UndefOr[Date] = js.native
+    var startedTime: js.UndefOr[Date] = js.undefined
     
-    var took: js.UndefOr[Double] = js.native
+    var took: js.UndefOr[Double] = js.undefined
   }
   object LogEntryObject {
     
@@ -201,19 +198,19 @@ object mod extends Shortcut {
       def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
       @scala.inline
-      def setError(value: /* error */ js.Any => _): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      def setError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       @scala.inline
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       @scala.inline
-      def setNextState(value: /* state */ js.Any => _): Self = StObject.set(x, "nextState", js.Any.fromFunction1(value))
+      def setNextState(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "nextState", js.Any.fromFunction1(value))
       
       @scala.inline
       def setNextStateUndefined: Self = StObject.set(x, "nextState", js.undefined)
       
       @scala.inline
-      def setPrevState(value: /* state */ js.Any => _): Self = StObject.set(x, "prevState", js.Any.fromFunction1(value))
+      def setPrevState(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "prevState", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPrevStateUndefined: Self = StObject.set(x, "prevState", js.undefined)
@@ -245,38 +242,37 @@ object mod extends Shortcut {
     Boolean
   ]
   
-  @js.native
   trait ReduxLoggerOptions extends StObject {
     
-    var actionTransformer: js.UndefOr[js.Function1[/* action */ js.Any, _]] = js.native
+    var actionTransformer: js.UndefOr[js.Function1[/* action */ js.Any, js.Any]] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean | LoggerPredicate] = js.native
+    var collapsed: js.UndefOr[Boolean | LoggerPredicate] = js.undefined
     
-    var colors: js.UndefOr[ColorsObject | `false`] = js.native
+    var colors: js.UndefOr[ColorsObject | `false`] = js.undefined
     
-    var diff: js.UndefOr[Boolean] = js.native
+    var diff: js.UndefOr[Boolean] = js.undefined
     
-    var diffPredicate: js.UndefOr[LoggerPredicate] = js.native
+    var diffPredicate: js.UndefOr[LoggerPredicate] = js.undefined
     
-    var duration: js.UndefOr[Boolean] = js.native
+    var duration: js.UndefOr[Boolean] = js.undefined
     
-    var errorTransformer: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.native
+    var errorTransformer: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
     
-    var level: js.UndefOr[String | ActionToString | LevelObject] = js.native
+    var level: js.UndefOr[String | ActionToString | LevelObject] = js.undefined
     
-    var logErrors: js.UndefOr[Boolean] = js.native
+    var logErrors: js.UndefOr[Boolean] = js.undefined
     
-    var logger: js.UndefOr[js.Any] = js.native
+    var logger: js.UndefOr[js.Any] = js.undefined
     
-    var predicate: js.UndefOr[LoggerPredicate] = js.native
+    var predicate: js.UndefOr[LoggerPredicate] = js.undefined
     
-    var stateTransformer: js.UndefOr[js.Function1[/* state */ js.Any, _]] = js.native
+    var stateTransformer: js.UndefOr[js.Function1[/* state */ js.Any, js.Any]] = js.undefined
     
-    var timestamp: js.UndefOr[Boolean] = js.native
+    var timestamp: js.UndefOr[Boolean] = js.undefined
     
     var titleFormatter: js.UndefOr[
         js.Function3[/* formattedAction */ js.Any, /* formattedTime */ String, /* took */ Double, String]
-      ] = js.native
+      ] = js.undefined
   }
   object ReduxLoggerOptions {
     
@@ -290,7 +286,7 @@ object mod extends Shortcut {
     implicit class ReduxLoggerOptionsMutableBuilder[Self <: ReduxLoggerOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActionTransformer(value: /* action */ js.Any => _): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
+      def setActionTransformer(value: /* action */ js.Any => js.Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
@@ -333,7 +329,7 @@ object mod extends Shortcut {
       def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
       @scala.inline
-      def setErrorTransformer(value: /* error */ js.Any => _): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction1(value))
+      def setErrorTransformer(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setErrorTransformerUndefined: Self = StObject.set(x, "errorTransformer", js.undefined)
@@ -368,7 +364,7 @@ object mod extends Shortcut {
       def setPredicateUndefined: Self = StObject.set(x, "predicate", js.undefined)
       
       @scala.inline
-      def setStateTransformer(value: /* state */ js.Any => _): Self = StObject.set(x, "stateTransformer", js.Any.fromFunction1(value))
+      def setStateTransformer(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "stateTransformer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setStateTransformerUndefined: Self = StObject.set(x, "stateTransformer", js.undefined)
@@ -388,9 +384,4 @@ object mod extends Shortcut {
   }
   
   type StateToString = js.Function1[/* state */ js.Any, String]
-  
-  type _To = Middleware[js.Object, js.Any, Dispatch[AnyAction]]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = default
 }

@@ -10,9 +10,9 @@ ECMAScript spec-compliant polyfill/shim for `globalThis`
 | ------------------ | :-------------: |
 | Full name          | globalthis |
 | Keywords           | window, self, global, globalThis, System.global, global object, global this value, ECMAScript, es-shim API, polyfill, shim |
-| # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 66793953 |
+| # releases         | 1 |
+| # dependents       | 24 |
+| # downloads        | 95990435 |
 | # stars            | 0 |
 
 ## Links

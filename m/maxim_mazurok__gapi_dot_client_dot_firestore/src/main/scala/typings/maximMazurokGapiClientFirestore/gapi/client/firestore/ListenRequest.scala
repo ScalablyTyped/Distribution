@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenRequest extends StObject {
   
   /** A target to add to this stream. */
-  var addTarget: js.UndefOr[Target] = js.native
+  var addTarget: js.UndefOr[Target] = js.undefined
   
   /** Labels associated with this target change. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.ListenRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.ListenRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The ID of a target to remove from this stream. */
-  var removeTarget: js.UndefOr[Double] = js.native
+  var removeTarget: js.UndefOr[Double] = js.undefined
 }
 object ListenRequest {
   
@@ -43,7 +41,7 @@ object ListenRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.ListenRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.ListenRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

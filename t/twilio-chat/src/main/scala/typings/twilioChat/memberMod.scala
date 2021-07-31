@@ -9,7 +9,6 @@ import typings.twilioChat.userdescriptorMod.UserDescriptor
 import typings.twilioChat.usersMod.Users
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memberMod {
@@ -97,7 +96,7 @@ object memberMod {
       * Remove Member from the Channel.
       * @returns {Promise<void|Error|SessionError>}
       */
-    def remove(): js.Promise[_] = js.native
+    def remove(): js.Promise[js.Any] = js.native
     
     def roleSid: String = js.native
     
@@ -166,12 +165,11 @@ object memberMod {
       def roleSid: typings.twilioChat.twilioChatStrings.roleSid = "roleSid".asInstanceOf[typings.twilioChat.twilioChatStrings.roleSid]
     }
     
-    @js.native
     trait UpdatedEventArgs extends StObject {
       
-      var member: Member = js.native
+      var member: Member
       
-      var updateReasons: js.Array[UpdateReason] = js.native
+      var updateReasons: js.Array[UpdateReason]
     }
     object UpdatedEventArgs {
       
@@ -196,26 +194,25 @@ object memberMod {
     }
   }
   
-  @js.native
   trait MemberDescriptor extends StObject {
     
-    var attributes: js.UndefOr[js.Object] = js.native
+    var attributes: js.UndefOr[js.Object] = js.undefined
     
-    var dateCreated: js.Any = js.native
+    var dateCreated: js.Any
     
-    var dateUpdated: js.Any = js.native
+    var dateUpdated: js.Any
     
-    var identity: String = js.native
+    var identity: String
     
-    var lastConsumedMessageIndex: Double = js.native
+    var lastConsumedMessageIndex: Double
     
-    var lastConsumptionTimestamp: Double = js.native
+    var lastConsumptionTimestamp: Double
     
-    var roleSid: js.UndefOr[String] = js.native
+    var roleSid: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
-    var userInfo: String = js.native
+    var userInfo: String
   }
   object MemberDescriptor {
     
@@ -273,12 +270,11 @@ object memberMod {
     }
   }
   
-  @js.native
   trait MemberServices extends StObject {
     
-    var session: Session = js.native
+    var session: Session
     
-    var users: Users = js.native
+    var users: Users
   }
   object MemberServices {
     

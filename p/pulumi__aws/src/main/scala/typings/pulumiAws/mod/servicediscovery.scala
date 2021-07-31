@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicediscovery {
@@ -31,11 +30,15 @@ object servicediscovery {
       */
     def this(name: String) = this()
     def this(name: String, args: HttpNamespaceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: HttpNamespaceArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object HttpNamespace {
+    
+    @JSImport("@pulumi/aws", "servicediscovery.HttpNamespace")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing HttpNamespace resource's state with the given name, ID, and optional extra
@@ -46,26 +49,21 @@ object servicediscovery {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.HttpNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.HttpNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.HttpNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HttpNamespaceState): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.HttpNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HttpNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.httpNamespaceMod.HttpNamespace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.httpNamespaceMod.HttpNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.httpNamespaceMod.HttpNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.httpNamespaceMod.HttpNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.httpNamespaceMod.HttpNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HttpNamespaceState): typings.pulumiAws.httpNamespaceMod.HttpNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.httpNamespaceMod.HttpNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HttpNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.httpNamespaceMod.HttpNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.httpNamespaceMod.HttpNamespace]
     
     /**
       * Returns true if the given object is an instance of HttpNamespace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.HttpNamespace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/httpNamespace.HttpNamespace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/httpNamespace.HttpNamespace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/httpNamespace.HttpNamespace */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace")
@@ -85,6 +83,10 @@ object servicediscovery {
   /* static members */
   object PrivateDnsNamespace {
     
+    @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PrivateDnsNamespace resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,26 +96,21 @@ object servicediscovery {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrivateDnsNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateDnsNamespaceMod.PrivateDnsNamespace]
     
     /**
       * Returns true if the given object is an instance of PrivateDnsNamespace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.PrivateDnsNamespace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace")
@@ -129,11 +126,15 @@ object servicediscovery {
       */
     def this(name: String) = this()
     def this(name: String, args: PublicDnsNamespaceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: PublicDnsNamespaceArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object PublicDnsNamespace {
+    
+    @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing PublicDnsNamespace resource's state with the given name, ID, and optional extra
@@ -144,26 +145,21 @@ object servicediscovery {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublicDnsNamespaceState, opts: CustomResourceOptions): typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicDnsNamespaceMod.PublicDnsNamespace]
     
     /**
       * Returns true if the given object is an instance of PublicDnsNamespace.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.PublicDnsNamespace.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "servicediscovery.Service")
@@ -179,11 +175,15 @@ object servicediscovery {
       */
     def this(name: String) = this()
     def this(name: String, args: ServiceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Service {
+    
+    @JSImport("@pulumi/aws", "servicediscovery.Service")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Service resource's state with the given name, ID, and optional extra
@@ -194,25 +194,20 @@ object servicediscovery {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.Service.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
-    @JSImport("@pulumi/aws", "servicediscovery.Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): typings.pulumiAws.servicediscoveryServiceMod.Service = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.servicediscoveryServiceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.servicediscoveryServiceMod.Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.servicediscoveryServiceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.servicediscoveryServiceMod.Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState): typings.pulumiAws.servicediscoveryServiceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.servicediscoveryServiceMod.Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): typings.pulumiAws.servicediscoveryServiceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.servicediscoveryServiceMod.Service]
     
     /**
       * Returns true if the given object is an instance of Service.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "servicediscovery.Service.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean]
   }
 }

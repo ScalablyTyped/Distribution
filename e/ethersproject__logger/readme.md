@@ -10,9 +10,9 @@ Logger utility functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/logger |
 | Keywords           | Ethereum, ethers |
-| # releases         | 19 |
-| # dependents       | 44 |
-| # downloads        | 1795897 |
+| # releases         | 21 |
+| # dependents       | 60 |
+| # downloads        | 2949611 |
 | # stars            | 0 |
 
 ## Links

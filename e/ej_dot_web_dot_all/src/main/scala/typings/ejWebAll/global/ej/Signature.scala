@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Signature")
 @js.native
 class Signature protected ()
-  extends typings.ejWebAll.ej.Signature {
+  extends StObject
+     with typings.ejWebAll.ej.Signature {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -34,15 +34,15 @@ object Signature {
   object SaveImageFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Signature.SaveImageFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Signature.SaveImageFormat & Double] = js.native
     
-    /* 2 */ val BMP: typings.ejWebAll.ej.Signature.SaveImageFormat.BMP with Double = js.native
+    /* 2 */ val BMP: typings.ejWebAll.ej.Signature.SaveImageFormat.BMP & Double = js.native
     
-    /* 1 */ val JPG: typings.ejWebAll.ej.Signature.SaveImageFormat.JPG with Double = js.native
+    /* 1 */ val JPG: typings.ejWebAll.ej.Signature.SaveImageFormat.JPG & Double = js.native
     
-    /* 0 */ val PNG: typings.ejWebAll.ej.Signature.SaveImageFormat.PNG with Double = js.native
+    /* 0 */ val PNG: typings.ejWebAll.ej.Signature.SaveImageFormat.PNG & Double = js.native
     
-    /* 3 */ val TIFF: typings.ejWebAll.ej.Signature.SaveImageFormat.TIFF with Double = js.native
+    /* 3 */ val TIFF: typings.ejWebAll.ej.Signature.SaveImageFormat.TIFF & Double = js.native
   }
   
   /* static member */

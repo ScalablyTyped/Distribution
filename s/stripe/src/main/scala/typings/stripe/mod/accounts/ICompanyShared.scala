@@ -5,26 +5,24 @@ import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompanyShared extends StObject {
   
   /**
     * The company’s primary address.
     */
-  var address: js.UndefOr[IAddress] = js.native
+  var address: js.UndefOr[IAddress] = js.undefined
   
   /**
     * The Kana variation of the company’s primary address (Japan only).
     */
-  var address_kana: js.UndefOr[IAddressKana] = js.native
+  var address_kana: js.UndefOr[IAddressKana] = js.undefined
   
   /**
     * The Kanji variation of the company’s primary address (Japan only).
     */
-  var address_kanji: js.UndefOr[IAddressKanji] = js.native
+  var address_kanji: js.UndefOr[IAddressKanji] = js.undefined
   
   /**
     * Whether the company’s directors have been provided. Set this Boolean
@@ -33,44 +31,44 @@ trait ICompanyShared extends StObject {
     * not automatically set to true after creating directors, so it needs to
     * be updated to indicate all directors have been provided.
     */
-  var directors_provided: js.UndefOr[Boolean] = js.native
+  var directors_provided: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The company’s legal name.
     * This can be unset by updating the value to null and then saving.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The Kana variation of the company’s legal name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
-  var name_kana: js.UndefOr[String] = js.native
+  var name_kana: js.UndefOr[String] = js.undefined
   
   /**
     * The Kanji variation of the company’s legal name (Japan only).
     * This can be unset by updating the value to null and then saving.
     */
-  var name_kanji: js.UndefOr[String] = js.native
+  var name_kanji: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the company’s owners have been provided. Set this Boolean
     * to true after creating all the company’s owners with the Persons API
     * for accounts with a relationship.owner requirement.
     */
-  var owners_provided: js.UndefOr[Boolean] = js.native
+  var owners_provided: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The company’s phone number (used for verification).
     * This can be unset by updating the value to null and then saving.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * The jurisdiction in which the tax_id is registered (Germany-based companies only).
     * This can be unset by updating the value to null and then saving.
     */
-  var tax_id_registrar: js.UndefOr[String] = js.native
+  var tax_id_registrar: js.UndefOr[String] = js.undefined
 }
 object ICompanyShared {
   

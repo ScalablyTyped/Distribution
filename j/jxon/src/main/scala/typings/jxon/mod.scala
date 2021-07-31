@@ -2,284 +2,148 @@ package typings.jxon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jxon", "build")
+  @JSImport("jxon", JSImport.Namespace)
   @js.native
-  def build(xMLParent: js.Any): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(
-    xMLParent: js.Any,
-    verbosity: js.UndefOr[scala.Nothing],
-    freeze: js.UndefOr[scala.Nothing],
-    nesteAttributes: Boolean
-  ): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(xMLParent: js.Any, verbosity: js.UndefOr[scala.Nothing], freeze: Boolean): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(xMLParent: js.Any, verbosity: js.UndefOr[scala.Nothing], freeze: Boolean, nesteAttributes: Boolean): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(xMLParent: js.Any, verbosity: VerbosityType): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(
-    xMLParent: js.Any,
-    verbosity: VerbosityType,
-    freeze: js.UndefOr[scala.Nothing],
-    nesteAttributes: Boolean
-  ): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Boolean): js.Object = js.native
-  @JSImport("jxon", "build")
-  @js.native
-  def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Boolean, nesteAttributes: Boolean): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jxon", "config")
-  @js.native
-  def config(cfg: ConfigOptions): Unit = js.native
+  @scala.inline
+  def build(xMLParent: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: Unit, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: Unit, freeze: Boolean, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: Unit, freeze: Unit, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: VerbosityType): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Boolean, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def build(xMLParent: js.Any, verbosity: VerbosityType, freeze: Unit, nesteAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(xMLParent.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nesteAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("jxon", "each")
-  @js.native
-  def each(obj: js.Any, func: FunctionType, thisArg: js.Any): Unit = js.native
+  @scala.inline
+  def config(cfg: ConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(objTree: js.Object): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(objTree: js.Object, namespaceURI: js.UndefOr[scala.Nothing], qualifiedName: String): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: String,
-    documentType: js.Object
-  ): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(objTree: js.Object, namespaceURI: String): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(
-    objTree: js.Object,
-    namespaceURI: String,
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(objTree: js.Object, namespaceURI: String, qualifiedName: String): String = js.native
-  @JSImport("jxon", "jsToString")
-  @js.native
-  def jsToString(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): String = js.native
+  @scala.inline
+  def each(obj: js.Any, func: FunctionType, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], func.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(objTree: js.Object): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(objTree: js.Object, namespaceURI: js.UndefOr[scala.Nothing], qualifiedName: String): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: String,
-    documentType: js.Object
-  ): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(objTree: js.Object, namespaceURI: String): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(
-    objTree: js.Object,
-    namespaceURI: String,
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String): js.Any = js.native
-  @JSImport("jxon", "jsToXml")
-  @js.native
-  def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): js.Any = js.native
+  @scala.inline
+  def jsToString(objTree: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: String, qualifiedName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def jsToString(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToString")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jxon", "stringToJs")
-  @js.native
-  def stringToJs(str: String): js.Object = js.native
+  @scala.inline
+  def jsToXml(objTree: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def jsToXml(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("jsToXml")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jxon", "stringToXml")
-  @js.native
-  def stringToXml(xmlStr: String): js.Any = js.native
+  @scala.inline
+  def stringToJs(str: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToJs")(str.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(objTree: js.Object): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(objTree: js.Object, namespaceURI: js.UndefOr[scala.Nothing], qualifiedName: String): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: String,
-    documentType: js.Object
-  ): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(objTree: js.Object, namespaceURI: String): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(
-    objTree: js.Object,
-    namespaceURI: String,
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(objTree: js.Object, namespaceURI: String, qualifiedName: String): String = js.native
-  @JSImport("jxon", "stringify")
-  @js.native
-  def stringify(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): String = js.native
+  @scala.inline
+  def stringToXml(xmlStr: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToXml")(xmlStr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(objTree: js.Object): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(objTree: js.Object, namespaceURI: js.UndefOr[scala.Nothing], qualifiedName: String): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(
-    objTree: js.Object,
-    namespaceURI: js.UndefOr[scala.Nothing],
-    qualifiedName: String,
-    documentType: js.Object
-  ): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(objTree: js.Object, namespaceURI: String): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(
-    objTree: js.Object,
-    namespaceURI: String,
-    qualifiedName: js.UndefOr[scala.Nothing],
-    documentType: js.Object
-  ): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String): js.Any = js.native
-  @JSImport("jxon", "unbuild")
-  @js.native
-  def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): js.Any = js.native
+  @scala.inline
+  def stringify(objTree: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: String, qualifiedName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(xmlDocument: js.Any): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(
-    xmlDocument: js.Any,
-    verbosity: js.UndefOr[scala.Nothing],
-    freeze: js.UndefOr[scala.Nothing],
-    nestedAttributes: Boolean
-  ): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(xmlDocument: js.Any, verbosity: js.UndefOr[scala.Nothing], freeze: Boolean): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(
-    xmlDocument: js.Any,
-    verbosity: js.UndefOr[scala.Nothing],
-    freeze: Boolean,
-    nestedAttributes: Boolean
-  ): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(
-    xmlDocument: js.Any,
-    verbosity: VerbosityType,
-    freeze: js.UndefOr[scala.Nothing],
-    nestedAttributes: Boolean
-  ): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Boolean): js.Object = js.native
-  @JSImport("jxon", "xmlToJs")
-  @js.native
-  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Boolean, nestedAttributes: Boolean): js.Object = js.native
+  @scala.inline
+  def unbuild(objTree: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: String, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: String, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbuild(objTree: js.Object, namespaceURI: Unit, qualifiedName: Unit, documentType: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbuild")(objTree.asInstanceOf[js.Any], namespaceURI.asInstanceOf[js.Any], qualifiedName.asInstanceOf[js.Any], documentType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("jxon", "xmlToString")
-  @js.native
-  def xmlToString(xmlObj: js.Any): String = js.native
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: Unit, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: Unit, freeze: Boolean, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: Unit, freeze: Unit, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Boolean, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def xmlToJs(xmlDocument: js.Any, verbosity: VerbosityType, freeze: Unit, nestedAttributes: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlToJs")(xmlDocument.asInstanceOf[js.Any], verbosity.asInstanceOf[js.Any], freeze.asInstanceOf[js.Any], nestedAttributes.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @js.native
+  @scala.inline
+  def xmlToString(xmlObj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToString")(xmlObj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait ConfigOptions extends StObject {
     
-    var attrKey: js.UndefOr[String] = js.native
+    var attrKey: js.UndefOr[String] = js.undefined
     
-    var attrPrefix: js.UndefOr[String] = js.native
+    var attrPrefix: js.UndefOr[String] = js.undefined
     
-    var autoDate: js.UndefOr[Boolean] = js.native
+    var autoDate: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePrefixedNodes: js.UndefOr[Boolean] = js.native
+    var ignorePrefixedNodes: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTags: js.UndefOr[Boolean] = js.native
+    var lowerCaseTags: js.UndefOr[Boolean] = js.undefined
     
-    var parseValues: js.UndefOr[Boolean] = js.native
+    var parseValues: js.UndefOr[Boolean] = js.undefined
     
-    var trueIsEmpty: js.UndefOr[Boolean] = js.native
+    var trueIsEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
   }
   object ConfigOptions {
     

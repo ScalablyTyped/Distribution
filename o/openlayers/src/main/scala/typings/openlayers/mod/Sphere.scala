@@ -3,7 +3,6 @@ package typings.openlayers.mod
 import typings.openlayers.mod.geom.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Sphere")
@@ -55,6 +54,10 @@ class Sphere protected () extends StObject {
 /* static members */
 object Sphere {
   
+  @JSImport("openlayers", "Sphere")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get the spherical area of a geometry.  This is the area (in meters) assuming
     * that polygon edges are segments of great circles on a sphere.
@@ -65,12 +68,10 @@ object Sphere {
     * @return The spherical area (in square meters).
     * @api
     */
-  @JSImport("openlayers", "Sphere.getArea")
-  @js.native
-  def getArea(geometry: Geometry): Double = js.native
-  @JSImport("openlayers", "Sphere.getArea")
-  @js.native
-  def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
+  @scala.inline
+  def getArea(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getArea")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Get the spherical length of a geometry.  This length is the sum of the
@@ -84,10 +85,8 @@ object Sphere {
     * @return The spherical length (in meters).
     * @api
     */
-  @JSImport("openlayers", "Sphere.getLength")
-  @js.native
-  def getLength(geometry: Geometry): Double = js.native
-  @JSImport("openlayers", "Sphere.getLength")
-  @js.native
-  def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
+  @scala.inline
+  def getLength(geometry: Geometry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(geometry.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

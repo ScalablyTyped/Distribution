@@ -12,12 +12,10 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.s3ColonReducedRedund
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTopicConfigurationDeprecatedMod {
   
-  @js.native
   trait TopicConfigurationDeprecated extends StObject {
     
     /**
@@ -25,7 +23,7 @@ object typesTopicConfigurationDeprecatedMod {
       */
     var Event: js.UndefOr[
         s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * _EventList shape
@@ -36,17 +34,17 @@ object typesTopicConfigurationDeprecatedMod {
         ]) | (Iterable[
           s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Optional unique identifier for configurations in a notification configuration. If you don't provide one, Amazon S3 will assign an ID.</p>
       */
-    var Id: js.UndefOr[String] = js.native
+    var Id: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Amazon SNS topic to which Amazon S3 will publish a message to report the specified events for the bucket.</p>
       */
-    var Topic: js.UndefOr[String] = js.native
+    var Topic: js.UndefOr[String] = js.undefined
   }
   object TopicConfigurationDeprecated {
     
@@ -98,8 +96,9 @@ object typesTopicConfigurationDeprecatedMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledTopicConfigurationDeprecated extends TopicConfigurationDeprecated {
+  trait UnmarshalledTopicConfigurationDeprecated
+    extends StObject
+       with TopicConfigurationDeprecated {
     
     /**
       * _EventList shape
@@ -109,7 +108,7 @@ object typesTopicConfigurationDeprecatedMod {
         js.Array[
           s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object UnmarshalledTopicConfigurationDeprecated {
     

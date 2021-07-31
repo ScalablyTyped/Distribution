@@ -12,7 +12,7 @@ Add prepare/unprepare async hooks to your Mocha test environment.
 | Keywords           | mocha, async, prepare |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 422992 |
+| # downloads        | 432034 |
 | # stars            | 0 |
 
 ## Links

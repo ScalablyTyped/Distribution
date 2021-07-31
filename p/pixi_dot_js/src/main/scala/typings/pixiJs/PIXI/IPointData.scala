@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   * @interface IPointData
   */
-@js.native
 trait IPointData extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait IPointData extends StObject {
     * @memberof PIXI.IPointData#
     * @member {number} x
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Y coord
     * @memberof PIXI.IPointData#
     * @member {number} y
     */
-  var y: Double = js.native
+  var y: Double
 }
 object IPointData {
   

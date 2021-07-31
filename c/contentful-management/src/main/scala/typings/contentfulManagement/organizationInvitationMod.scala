@@ -5,18 +5,20 @@ import typings.contentfulManagement.anon.MetaSysPropsorganizationM
 import typings.contentfulManagement.commonTypesMod.DefaultElements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationInvitationMod {
   
-  @JSImport("contentful-management/dist/typings/entities/organization-invitation", "wrapOrganizationInvitation")
+  @JSImport("contentful-management/dist/typings/entities/organization-invitation", JSImport.Namespace)
   @js.native
-  def wrapOrganizationInvitation(http: AxiosInstance, data: OrganizationInvitationProps): OrganizationInvitation = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def wrapOrganizationInvitation(http: AxiosInstance, data: OrganizationInvitationProps): OrganizationInvitation = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationInvitation")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[OrganizationInvitation]
+  
   trait OrganizationInvitation
-    extends OrganizationInvitationProps
+    extends StObject
+       with OrganizationInvitationProps
        with DefaultElements[OrganizationInvitationProps]
   object OrganizationInvitation {
     
@@ -34,18 +36,17 @@ object organizationInvitationMod {
     }
   }
   
-  @js.native
   trait OrganizationInvitationProps extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var firstName: String = js.native
+    var firstName: String
     
-    var lastName: String = js.native
+    var lastName: String
     
-    var role: String = js.native
+    var role: String
     
-    var sys: MetaSysPropsorganizationM = js.native
+    var sys: MetaSysPropsorganizationM
   }
   object OrganizationInvitationProps {
     

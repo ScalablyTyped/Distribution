@@ -2,16 +2,14 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchTags extends StObject {
   
   /**
     * Highlight both matching tags.
     */
-  var bothTags: js.UndefOr[Boolean] = js.native
+  var bothTags: js.UndefOr[Boolean] = js.undefined
 }
 object MatchTags {
   

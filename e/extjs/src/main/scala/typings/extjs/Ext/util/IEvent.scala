@@ -3,14 +3,14 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEvent extends IBase {
+trait IEvent
+  extends StObject
+     with IBase {
   
   /** [Property] (Boolean) */
-  var isEvent: js.UndefOr[Boolean] = js.native
+  var isEvent: js.UndefOr[Boolean] = js.undefined
 }
 object IEvent {
   

@@ -6,58 +6,59 @@ import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.renderMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleStyleMod {
   
+  @JSImport("ol/style/Style", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/style/Style", JSImport.Default)
   @js.native
-  class default () extends Style {
+  class default ()
+    extends StObject
+       with Style {
     def this(opt_options: Options) = this()
   }
   
-  @JSImport("ol/style/Style", "createDefaultStyle")
-  @js.native
-  def createDefaultStyle(feature: FeatureLike, resolution: Double): js.Array[Style] = js.native
+  @scala.inline
+  def createDefaultStyle(feature: FeatureLike, resolution: Double): js.Array[Style] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultStyle")(feature.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Style]]
   
-  @JSImport("ol/style/Style", "createEditingStyle")
-  @js.native
+  @scala.inline
   def createEditingStyle(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
-    */ typings.ol.olStrings.createEditingStyle with TopLevel[js.Any] = js.native
+    */ typings.ol.olStrings.createEditingStyle & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditingStyle")().asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
+    */ typings.ol.olStrings.createEditingStyle & TopLevel[js.Any]]
   
-  @JSImport("ol/style/Style", "toFunction")
-  @js.native
-  def toFunction(obj: js.Array[Style]): StyleFunction = js.native
-  @JSImport("ol/style/Style", "toFunction")
-  @js.native
-  def toFunction(obj: Style): StyleFunction = js.native
-  @JSImport("ol/style/Style", "toFunction")
-  @js.native
-  def toFunction(obj: StyleFunction): StyleFunction = js.native
+  @scala.inline
+  def toFunction(obj: js.Array[Style]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  @scala.inline
+  def toFunction(obj: Style): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  @scala.inline
+  def toFunction(obj: StyleFunction): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
   
   type GeometryFunction = js.Function1[
     /* p0 */ FeatureLike, 
     js.UndefOr[typings.ol.geometryMod.default | typings.ol.renderFeatureMod.default]
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var fill: js.UndefOr[typings.ol.fillMod.default] = js.native
+    var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
     
-    var geometry: js.UndefOr[String | typings.ol.geometryMod.default | GeometryFunction] = js.native
+    var geometry: js.UndefOr[String | typings.ol.geometryMod.default | GeometryFunction] = js.undefined
     
-    var image: js.UndefOr[typings.ol.styleImageMod.default] = js.native
+    var image: js.UndefOr[typings.ol.styleImageMod.default] = js.undefined
     
-    var renderer: js.UndefOr[RenderFunction] = js.native
+    var renderer: js.UndefOr[RenderFunction] = js.undefined
     
-    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
     
-    var text: js.UndefOr[typings.ol.textMod.default] = js.native
+    var text: js.UndefOr[typings.ol.textMod.default] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

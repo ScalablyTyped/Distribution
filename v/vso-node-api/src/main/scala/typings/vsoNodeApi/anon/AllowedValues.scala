@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowedValues extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var allowedValues: scala.Double = js.native
+  var allowedValues: scala.Double
   
-  var dependentFields: scala.Double = js.native
+  var dependentFields: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object AllowedValues {
   

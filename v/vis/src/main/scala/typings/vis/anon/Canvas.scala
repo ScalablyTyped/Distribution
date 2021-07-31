@@ -3,15 +3,13 @@ package typings.vis.anon
 import typings.vis.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canvas extends StObject {
   
-  var DOM: Position = js.native
+  var DOM: Position
   
-  var canvas: Position = js.native
+  var canvas: Position
 }
 object Canvas {
   

@@ -2,32 +2,30 @@ package typings.jui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFold extends StObject {
   
   /**
     * @cfg {Boolean} [autoFold=false]
     * When you click on a node, the node folding
     */
-  var autoFold: js.UndefOr[Boolean] = js.native
+  var autoFold: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [index=null]
     * Sets an enabled node
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Boolean} [multipanel=false]
     */
-  var multipanel: js.UndefOr[Boolean] = js.native
+  var multipanel: js.UndefOr[Boolean] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
 }
 object AutoFold {
   

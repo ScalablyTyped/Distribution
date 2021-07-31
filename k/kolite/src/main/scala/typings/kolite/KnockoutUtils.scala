@@ -2,13 +2,11 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutUtils extends StObject {
   
-  def wrapAccessor(accessor: js.Any): js.Function = js.native
+  def wrapAccessor(accessor: js.Any): js.Function
 }
 object KnockoutUtils {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostedZoneSummary extends StObject {
   
   /**
     * The Route 53 hosted zone ID of a private hosted zone that the specified VPC is associated with.
     */
-  var HostedZoneId: ResourceId = js.native
+  var HostedZoneId: ResourceId
   
   /**
     * The name of the private hosted zone, such as example.com.
     */
-  var Name: DNSName = js.native
+  var Name: DNSName
   
   /**
     * The owner of a private hosted zone that the specified VPC is associated with. The owner can be either an AWS account or an AWS service.
     */
-  var Owner: HostedZoneOwner = js.native
+  var Owner: HostedZoneOwner
 }
 object HostedZoneSummary {
   

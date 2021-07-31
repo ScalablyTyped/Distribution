@@ -3,17 +3,15 @@ package typings.babyparse
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BabyParse {
   
-  @js.native
   trait FileObject extends StObject {
     
-    var config: js.UndefOr[ParseConfig] = js.native
+    var config: js.UndefOr[ParseConfig] = js.undefined
     
-    var file: String = js.native
+    var file: String
   }
   object FileObject {
     
@@ -37,47 +35,46 @@ object BabyParse {
     }
   }
   
-  @js.native
   trait ParseConfig extends StObject {
     
     // default: false
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
     // default: undefined
-    var complete: js.UndefOr[js.Function1[/* results */ ParseResult, Unit]] = js.native
+    var complete: js.UndefOr[js.Function1[/* results */ ParseResult, Unit]] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
-    
-    // default: false
-    var download: js.UndefOr[Boolean] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     // default: false
-    var dynamicTyping: js.UndefOr[Boolean] = js.native
+    var download: js.UndefOr[Boolean] = js.undefined
+    
+    // default: false
+    var dynamicTyping: js.UndefOr[Boolean] = js.undefined
     
     // default: 0
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     // default: false
-    var fastMode: js.UndefOr[Boolean] = js.native
+    var fastMode: js.UndefOr[Boolean] = js.undefined
     
     // default: ""
-    var header: js.UndefOr[Boolean] = js.native
+    var header: js.UndefOr[Boolean] = js.undefined
     
     // default: ""
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     // default: false
-    var preview: js.UndefOr[Double] = js.native
+    var preview: js.UndefOr[Double] = js.undefined
     
     // default: false
-    var skipEmptyLines: js.UndefOr[Boolean] = js.native
+    var skipEmptyLines: js.UndefOr[Boolean] = js.undefined
     
     // default: undefined
     // Callbacks
-    var step: js.UndefOr[js.Function2[/* results */ ParseResult, /* parser */ Parser, Unit]] = js.native
+    var step: js.UndefOr[js.Function2[/* results */ ParseResult, /* parser */ Parser, Unit]] = js.undefined
     
     // default: ""
-    var worker: js.UndefOr[Boolean] = js.native
+    var worker: js.UndefOr[Boolean] = js.undefined
   }
   object ParseConfig {
     
@@ -170,19 +167,18 @@ object BabyParse {
     }
   }
   
-  @js.native
   trait ParseError extends StObject {
     
     // A generalization of the error
-    var code: String = js.native
+    var code: String
     
     // Standardized error code
-    var message: String = js.native
+    var message: String
     
     // Human-readable details
-    var row: Double = js.native
+    var row: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ParseError {
     
@@ -210,22 +206,21 @@ object BabyParse {
     }
   }
   
-  @js.native
   trait ParseMeta extends StObject {
     
     // Line break sequence used
-    var aborted: Boolean = js.native
+    var aborted: Boolean
     
-    var delimiter: String = js.native
+    var delimiter: String
     
     // Whether process was aborted
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
     // Delimiter used
-    var linebreak: String = js.native
+    var linebreak: String
     
     // Array of field names
-    var truncated: Boolean = js.native
+    var truncated: Boolean
   }
   object ParseMeta {
     
@@ -271,19 +266,18 @@ object BabyParse {
     * errors: is an array of errors
     * meta: contains extra information about the parse, such as delimiter used, the newline sequence, whether the process was aborted, etc. Properties in this object are not guaranteed to exist in all situations
     */
-  @js.native
   trait ParseResult extends StObject {
     
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
-    var errors: js.Array[ParseError] = js.native
+    var errors: js.Array[ParseError]
     
-    var meta: ParseMeta = js.native
+    var meta: ParseMeta
   }
   object ParseResult {
     
     @scala.inline
-    def apply(data: js.Array[_], errors: js.Array[ParseError], meta: ParseMeta): ParseResult = {
+    def apply(data: js.Array[js.Any], errors: js.Array[ParseError], meta: ParseMeta): ParseResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResult]
     }
@@ -292,7 +286,7 @@ object BabyParse {
     implicit class ParseResultMutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -308,17 +302,16 @@ object BabyParse {
     }
   }
   
-  @js.native
   trait Parser extends StObject {
     
     // Sets the abort flag
-    def abort(): Unit = js.native
+    def abort(): Unit
     
     // Gets the cursor position
-    def getCharIndex(): Double = js.native
+    def getCharIndex(): Double
     
     // Parses the input
-    def parse(input: String): js.Any = js.native
+    def parse(input: String): js.Any
   }
   object Parser {
     
@@ -343,7 +336,9 @@ object BabyParse {
   }
   
   @js.native
-  trait ParserConstructor extends Instantiable1[/* config */ ParseConfig, Parser]
+  trait ParserConstructor
+    extends StObject
+       with Instantiable1[/* config */ ParseConfig, Parser]
   
   @js.native
   trait Static extends StObject {
@@ -405,22 +400,21 @@ object BabyParse {
     /**
       * Unparses javascript data objects and returns a csv string
       */
-    def unparse(data: js.Array[js.Array[_] | js.Object]): String = js.native
-    def unparse(data: js.Array[js.Array[_] | js.Object], config: UnparseConfig): String = js.native
+    def unparse(data: js.Array[js.Array[js.Any] | js.Object]): String = js.native
+    def unparse(data: js.Array[js.Array[js.Any] | js.Object], config: UnparseConfig): String = js.native
     def unparse(data: UnparseObject): String = js.native
     def unparse(data: UnparseObject, config: UnparseConfig): String = js.native
   }
   
-  @js.native
   trait UnparseConfig extends StObject {
     
     // default: false
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     // default: ","
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
-    var quotes: js.UndefOr[Boolean | js.Array[Boolean]] = js.native
+    var quotes: js.UndefOr[Boolean | js.Array[Boolean]] = js.undefined
   }
   object UnparseConfig {
     
@@ -456,17 +450,16 @@ object BabyParse {
     }
   }
   
-  @js.native
   trait UnparseObject extends StObject {
     
-    var data: String | js.Array[_] = js.native
+    var data: String | js.Array[js.Any]
     
-    var fields: js.Array[_] = js.native
+    var fields: js.Array[js.Any]
   }
   object UnparseObject {
     
     @scala.inline
-    def apply(data: String | js.Array[_], fields: js.Array[_]): UnparseObject = {
+    def apply(data: String | js.Array[js.Any], fields: js.Array[js.Any]): UnparseObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnparseObject]
     }
@@ -475,13 +468,13 @@ object BabyParse {
     implicit class UnparseObjectMutableBuilder[Self <: UnparseObject] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
-      def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))

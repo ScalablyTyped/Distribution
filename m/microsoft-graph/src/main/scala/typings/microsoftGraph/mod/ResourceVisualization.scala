@@ -2,44 +2,42 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceVisualization extends StObject {
   
   /**
     * A string describing where the item is stored. For example, the name of a SharePoint site or the user name identifying
     * the owner of the OneDrive storing the item.
     */
-  var containerDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var containerDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Can be used for filtering by the type of container in which the file is stored. Such as Site or OneDriveBusiness.
-  var containerType: js.UndefOr[NullableOption[String]] = js.native
+  var containerType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A path leading to the folder in which the item is stored.
-  var containerWebUrl: js.UndefOr[NullableOption[String]] = js.native
+  var containerWebUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types.
     * Note that not all Media Mime Types are supported.
     */
-  var mediaType: js.UndefOr[NullableOption[String]] = js.native
+  var mediaType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A URL leading to the preview image for the item.
-  var previewImageUrl: js.UndefOr[NullableOption[String]] = js.native
+  var previewImageUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A preview text for the item.
-  var previewText: js.UndefOr[NullableOption[String]] = js.native
+  var previewText: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The item's title text.
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported
     * types.
     */
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ResourceVisualization {
   

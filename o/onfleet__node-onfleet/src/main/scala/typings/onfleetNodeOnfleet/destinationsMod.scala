@@ -4,23 +4,30 @@ import typings.onfleetNodeOnfleet.anon.Apartment
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object destinationsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Destinations", JSImport.Namespace)
   @js.native
-  class ^ () extends Destination
+  class ^ ()
+    extends StObject
+       with Destination {
+    
+    /* CompleteClass */
+    override def create(destination: CreateDestinationProps): js.Promise[OnfleetDestination] = js.native
+    
+    /* CompleteClass */
+    override def get(id: String): js.Promise[OnfleetDestination] = js.native
+  }
   
-  @js.native
   trait CreateDestinationProps extends StObject {
     
-    var address: DestinationAddress = js.native
+    var address: DestinationAddress
     
-    var location: js.UndefOr[Location] = js.native
+    var location: js.UndefOr[Location] = js.undefined
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
   }
   object CreateDestinationProps {
     
@@ -50,12 +57,11 @@ object destinationsMod {
     }
   }
   
-  @js.native
   trait Destination extends StObject {
     
-    def create(destination: CreateDestinationProps): js.Promise[OnfleetDestination] = js.native
+    def create(destination: CreateDestinationProps): js.Promise[OnfleetDestination]
     
-    def get(id: String): js.Promise[OnfleetDestination] = js.native
+    def get(id: String): js.Promise[OnfleetDestination]
   }
   object Destination {
     
@@ -93,26 +99,25 @@ object destinationsMod {
     * * In some countries, you may skip most address details (like city or state) if you provide a valid postalCode:
     *  for example, 325 Front Street W., M5V 3B5, CA will be geocoded correctly.
     */
-  @js.native
   trait DestinationAddress extends StObject {
     
-    var apartment: js.UndefOr[String] = js.native
+    var apartment: js.UndefOr[String] = js.undefined
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var number: String = js.native
+    var number: String
     
-    var postalCode: js.UndefOr[String] = js.native
+    var postalCode: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var street: String = js.native
+    var street: String
     
-    var unparsed: js.UndefOr[String] = js.native
+    var unparsed: js.UndefOr[String] = js.undefined
   }
   object DestinationAddress {
     
@@ -175,22 +180,21 @@ object destinationsMod {
   
   type Longitude = Double
   
-  @js.native
   trait OnfleetDestination extends StObject {
     
-    var address: Apartment = js.native
+    var address: Apartment
     
-    var id: String = js.native
+    var id: String
     
-    var location: Location = js.native
+    var location: Location
     
-    var metadata: js.Array[OnfleetMetadata] = js.native
+    var metadata: js.Array[OnfleetMetadata]
     
-    var notes: String = js.native
+    var notes: String
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
   }
   object OnfleetDestination {
     

@@ -2,23 +2,21 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Public extends StObject {
   
-  var public: Boolean = js.native
+  var public: Boolean
   
-  var publicly_queryable: Boolean = js.native
+  var publicly_queryable: Boolean
   
-  var show_admin_column: Boolean = js.native
+  var show_admin_column: Boolean
   
-  var show_in_nav_menus: Boolean = js.native
+  var show_in_nav_menus: Boolean
   
-  var show_in_quick_edit: Boolean = js.native
+  var show_in_quick_edit: Boolean
   
-  var show_ui: Boolean = js.native
+  var show_ui: Boolean
 }
 object Public {
   

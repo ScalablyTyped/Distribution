@@ -15,17 +15,15 @@ import typings.favicons.mod.IconOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Contents extends StObject {
     
-    var contents: Buffer = js.native
+    var contents: Buffer
     
-    var name: String = js.native
+    var name: String
   }
   object Contents {
     
@@ -47,52 +45,51 @@ object anon {
   }
   
   /* Inlined std.Partial<favicons.favicons.Configuration> */
-  @js.native
   trait PartialConfiguration extends StObject {
     
-    var appDescription: js.UndefOr[String | Null] = js.native
+    var appDescription: js.UndefOr[String | Null] = js.undefined
     
-    var appName: js.UndefOr[String | Null] = js.native
+    var appName: js.UndefOr[String | Null] = js.undefined
     
-    var appShortName: js.UndefOr[String | Null] = js.native
+    var appShortName: js.UndefOr[String | Null] = js.undefined
     
-    var appleStatusBarStyle: js.UndefOr[`black-translucent` | default | black] = js.native
+    var appleStatusBarStyle: js.UndefOr[`black-translucent` | default | black] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var developerName: js.UndefOr[String | Null] = js.native
+    var developerName: js.UndefOr[String | Null] = js.undefined
     
-    var developerURL: js.UndefOr[String | Null] = js.native
+    var developerURL: js.UndefOr[String | Null] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var display: js.UndefOr[fullscreen | standalone | `minimal-ui` | browser] = js.native
+    var display: js.UndefOr[fullscreen | standalone | `minimal-ui` | browser] = js.undefined
     
-    var icons: js.UndefOr[PartialandroidbooleanIcon] = js.native
+    var icons: js.UndefOr[PartialandroidbooleanIcon] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var loadManifestWithCredentials: js.UndefOr[Boolean] = js.native
+    var loadManifestWithCredentials: js.UndefOr[Boolean] = js.undefined
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var manifestRelativePaths: js.UndefOr[Boolean] = js.native
+    var manifestRelativePaths: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[any | natural | portrait | landscape] = js.native
+    var orientation: js.UndefOr[any | natural | portrait | landscape] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pipeHTML: js.UndefOr[Boolean] = js.native
+    var pipeHTML: js.UndefOr[Boolean] = js.undefined
     
-    var pixel_art: js.UndefOr[Boolean] = js.native
+    var pixel_art: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var start_url: js.UndefOr[String] = js.native
+    var start_url: js.UndefOr[String] = js.undefined
     
-    var theme_color: js.UndefOr[String] = js.native
+    var theme_color: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PartialConfiguration {
     
@@ -255,24 +252,23 @@ object anon {
   }
   
   /* Inlined std.Partial<{  android :boolean | favicons.favicons.IconOptions,   appleIcon :boolean | favicons.favicons.IconOptions,   appleStartup :boolean | favicons.favicons.IconOptions,   coast :boolean | favicons.favicons.IconOptions,   favicons :boolean | favicons.favicons.IconOptions,   firefox :boolean | favicons.favicons.IconOptions,   windows :boolean | favicons.favicons.IconOptions,   yandex :boolean | favicons.favicons.IconOptions}> */
-  @js.native
   trait PartialandroidbooleanIcon extends StObject {
     
-    var android: js.UndefOr[Boolean | IconOptions] = js.native
+    var android: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var appleIcon: js.UndefOr[Boolean | IconOptions] = js.native
+    var appleIcon: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var appleStartup: js.UndefOr[Boolean | IconOptions] = js.native
+    var appleStartup: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var coast: js.UndefOr[Boolean | IconOptions] = js.native
+    var coast: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var favicons: js.UndefOr[Boolean | IconOptions] = js.native
+    var favicons: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var firefox: js.UndefOr[Boolean | IconOptions] = js.native
+    var firefox: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var windows: js.UndefOr[Boolean | IconOptions] = js.native
+    var windows: js.UndefOr[Boolean | IconOptions] = js.undefined
     
-    var yandex: js.UndefOr[Boolean | IconOptions] = js.native
+    var yandex: js.UndefOr[Boolean | IconOptions] = js.undefined
   }
   object PartialandroidbooleanIcon {
     

@@ -2,15 +2,15 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IWorldDefinition extends ICompositeDefinition {
+trait IWorldDefinition
+  extends StObject
+     with ICompositeDefinition {
   
-  var bounds: js.UndefOr[IBound] = js.native
+  var bounds: js.UndefOr[IBound] = js.undefined
   
-  var gravity: js.UndefOr[Gravity] = js.native
+  var gravity: js.UndefOr[Gravity] = js.undefined
 }
 object IWorldDefinition {
   

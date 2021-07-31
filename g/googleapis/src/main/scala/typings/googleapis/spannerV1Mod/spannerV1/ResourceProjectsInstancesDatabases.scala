@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instances$Databases")
@@ -36,7 +35,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceProjectsInstancesDatabasesCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceProjectsInstancesDatabasesCreate,
@@ -68,7 +67,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def dropDatabase(): GaxiosPromise[SchemaEmpty] = js.native
   def dropDatabase(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def dropDatabase(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def dropDatabase(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def dropDatabase(params: ParamsResourceProjectsInstancesDatabasesDropdatabase): GaxiosPromise[SchemaEmpty] = js.native
   def dropDatabase(
     params: ParamsResourceProjectsInstancesDatabasesDropdatabase,
@@ -100,7 +99,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDatabase] = js.native
   def get(callback: BodyResponseCallback[SchemaDatabase]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatabase] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDatabase] = js.native
   def get(params: ParamsResourceProjectsInstancesDatabasesGet): GaxiosPromise[SchemaDatabase] = js.native
   def get(
     params: ParamsResourceProjectsInstancesDatabasesGet,
@@ -134,7 +133,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def getDdl(): GaxiosPromise[SchemaGetDatabaseDdlResponse] = js.native
   def getDdl(callback: BodyResponseCallback[SchemaGetDatabaseDdlResponse]): Unit = js.native
-  def getDdl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetDatabaseDdlResponse] = js.native
+  def getDdl(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetDatabaseDdlResponse] = js.native
   def getDdl(params: ParamsResourceProjectsInstancesDatabasesGetddl): GaxiosPromise[SchemaGetDatabaseDdlResponse] = js.native
   def getDdl(
     params: ParamsResourceProjectsInstancesDatabasesGetddl,
@@ -170,7 +169,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsInstancesDatabasesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsInstancesDatabasesGetiampolicy,
@@ -204,7 +203,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDatabasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDatabasesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDatabasesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDatabasesResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesDatabasesList): GaxiosPromise[SchemaListDatabasesResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesDatabasesList,
@@ -243,7 +242,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsInstancesDatabasesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsInstancesDatabasesSetiampolicy,
@@ -280,7 +279,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsInstancesDatabasesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsInstancesDatabasesTestiampermissions,
@@ -318,7 +317,7 @@ class ResourceProjectsInstancesDatabases protected () extends StObject {
     */
   def updateDdl(): GaxiosPromise[SchemaOperation] = js.native
   def updateDdl(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def updateDdl(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def updateDdl(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateDdl(params: ParamsResourceProjectsInstancesDatabasesUpdateddl): GaxiosPromise[SchemaOperation] = js.native
   def updateDdl(
     params: ParamsResourceProjectsInstancesDatabasesUpdateddl,

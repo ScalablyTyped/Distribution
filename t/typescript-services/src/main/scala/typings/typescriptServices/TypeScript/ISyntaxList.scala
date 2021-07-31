@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyntaxList extends ISyntaxElement {
+trait ISyntaxList
+  extends StObject
+     with ISyntaxElement {
   
-  def insertChildrenInto(array: js.Array[ISyntaxElement], index: Double): Unit = js.native
+  def insertChildrenInto(array: js.Array[ISyntaxElement], index: Double): Unit
   
-  def toArray(): js.Array[ISyntaxNodeOrToken] = js.native
+  def toArray(): js.Array[ISyntaxNodeOrToken]
 }
 object ISyntaxList {
   

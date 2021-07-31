@@ -3,37 +3,35 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapTimeInterval extends StObject {
   
-  def contains(interval: BootstrapTimeInterval): Boolean = js.native
+  def contains(interval: BootstrapTimeInterval): Boolean
   
-  def equals(interval: BootstrapTimeInterval): Boolean = js.native
+  def equals(interval: BootstrapTimeInterval): Boolean
   
-  def getAllDay(): Boolean = js.native
+  def getAllDay(): Boolean
   
-  def getDuration(): Double = js.native
+  def getDuration(): Double
   
-  def getEnd(): Date = js.native
+  def getEnd(): Date
   
-  def getStart(): Date = js.native
+  def getStart(): Date
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  def intersectsWith(interval: BootstrapTimeInterval): Boolean = js.native
+  def intersectsWith(interval: BootstrapTimeInterval): Boolean
   
-  def intersectsWithExcludingBounds(interval: BootstrapTimeInterval): Boolean = js.native
+  def intersectsWithExcludingBounds(interval: BootstrapTimeInterval): Boolean
   
-  def setAllDay(allDayValue: Boolean): Unit = js.native
+  def setAllDay(allDayValue: Boolean): Unit
   
-  def setDuration(value: Double): Unit = js.native
+  def setDuration(value: Double): Unit
   
-  def setEnd(value: Date): Unit = js.native
+  def setEnd(value: Date): Unit
   
-  def setStart(value: Date): Unit = js.native
+  def setStart(value: Date): Unit
 }
 object BootstrapTimeInterval {
   

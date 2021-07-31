@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.officeJsPreviewStrings.TableSelectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait TableSelectionChangedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait TableSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -29,7 +27,7 @@ trait TableSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var isInsideTable: Boolean = js.native
+  var isInsideTable: Boolean
   
   /**
     *
@@ -37,7 +35,7 @@ trait TableSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var tableId: String = js.native
+  var tableId: String
   
   /**
     *
@@ -45,7 +43,7 @@ trait TableSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: TableSelectionChanged = js.native
+  var `type`: TableSelectionChanged
   
   /**
     *
@@ -53,20 +51,14 @@ trait TableSelectionChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object TableSelectionChangedEventArgs {
   
   @scala.inline
-  def apply(
-    address: String,
-    isInsideTable: Boolean,
-    tableId: String,
-    `type`: TableSelectionChanged,
-    worksheetId: String
-  ): TableSelectionChangedEventArgs = {
+  def apply(address: String, isInsideTable: Boolean, tableId: String, worksheetId: String): TableSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], isInsideTable = isInsideTable.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TableSelectionChanged")
     __obj.asInstanceOf[TableSelectionChangedEventArgs]
   }
   

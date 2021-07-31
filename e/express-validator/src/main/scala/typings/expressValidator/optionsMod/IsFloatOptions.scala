@@ -2,13 +2,13 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IsFloatOptions extends MinMaxExtendedOptions {
+trait IsFloatOptions
+  extends StObject
+     with MinMaxExtendedOptions {
   
-  var locale: js.UndefOr[AlphanumericLocale] = js.native
+  var locale: js.UndefOr[AlphanumericLocale] = js.undefined
 }
 object IsFloatOptions {
   

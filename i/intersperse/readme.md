@@ -11,8 +11,8 @@ Add an object to an array between each element
 | Full name          | intersperse |
 | Keywords           | array, util, utility |
 | # releases         | 0 |
-| # dependents       | 85 |
-| # downloads        | 1784238 |
+| # dependents       | 105 |
+| # downloads        | 1922881 |
 | # stars            | 0 |
 
 ## Links

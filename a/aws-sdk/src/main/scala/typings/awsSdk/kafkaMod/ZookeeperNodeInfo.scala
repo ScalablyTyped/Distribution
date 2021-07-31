@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZookeeperNodeInfo extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait ZookeeperNodeInfo extends StObject {
     The attached elastic network interface of the broker.
     
     */
-  var AttachedENIId: js.UndefOr[string] = js.native
+  var AttachedENIId: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The virtual private cloud (VPC) IP address of the client.
     
     */
-  var ClientVpcIpAddress: js.UndefOr[string] = js.native
+  var ClientVpcIpAddress: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Endpoints for accessing the ZooKeeper.
     
     */
-  var Endpoints: js.UndefOr[listOfString] = js.native
+  var Endpoints: js.UndefOr[listOfString] = js.undefined
   
   /**
     * 
     The role-specific ID for Zookeeper.
     
     */
-  var ZookeeperId: js.UndefOr[double] = js.native
+  var ZookeeperId: js.UndefOr[double] = js.undefined
   
   /**
     * 
     The version of Zookeeper.
     
     */
-  var ZookeeperVersion: js.UndefOr[string] = js.native
+  var ZookeeperVersion: js.UndefOr[string] = js.undefined
 }
 object ZookeeperNodeInfo {
   

@@ -11,42 +11,40 @@ import typings.std.MouseEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Select/Select.SelectProps> */
-@js.native
 trait PartialSelectProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var emptyAriaLabel: js.UndefOr[String] = js.native
+  var emptyAriaLabel: js.UndefOr[String] = js.undefined
   
-  var formMessageProps: js.UndefOr[Record[String, _]] = js.native
+  var formMessageProps: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var includeEmptyOption: js.UndefOr[Boolean] = js.native
+  var includeEmptyOption: js.UndefOr[Boolean] = js.undefined
   
-  var innerRefClassName: js.UndefOr[String] = js.native
+  var innerRefClassName: js.UndefOr[String] = js.undefined
   
-  var listClassName: js.UndefOr[String] = js.native
+  var listClassName: js.UndefOr[String] = js.undefined
   
-  var listItemClassName: js.UndefOr[String] = js.native
+  var listItemClassName: js.UndefOr[String] = js.undefined
   
-  var listItemTextClassName: js.UndefOr[String] = js.native
+  var listItemTextClassName: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onSelect: js.UndefOr[
     js.Function2[
@@ -54,27 +52,27 @@ trait PartialSelectProps extends StObject {
       /* selectedOption */ Option, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var options: js.UndefOr[js.Array[Option]] = js.native
+  var options: js.UndefOr[js.Array[Option]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var popperClassName: js.UndefOr[String] = js.native
+  var popperClassName: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var referenceClassName: js.UndefOr[String] = js.native
+  var referenceClassName: js.UndefOr[String] = js.undefined
   
-  var selectedKey: js.UndefOr[String] = js.native
+  var selectedKey: js.UndefOr[String] = js.undefined
   
-  var textContentClassName: js.UndefOr[String] = js.native
+  var textContentClassName: js.UndefOr[String] = js.undefined
   
-  var triggerClassName: js.UndefOr[String] = js.native
+  var triggerClassName: js.UndefOr[String] = js.undefined
   
-  var validationState: js.UndefOr[State] = js.native
+  var validationState: js.UndefOr[State] = js.undefined
   
-  var wrapperProps: js.UndefOr[Record[String, _]] = js.native
+  var wrapperProps: js.UndefOr[Record[String, js.Any]] = js.undefined
 }
 object PartialSelectProps {
   
@@ -118,7 +116,7 @@ object PartialSelectProps {
     def setEmptyAriaLabelUndefined: Self = StObject.set(x, "emptyAriaLabel", js.undefined)
     
     @scala.inline
-    def setFormMessageProps(value: Record[String, _]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
+    def setFormMessageProps(value: Record[String, js.Any]): Self = StObject.set(x, "formMessageProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormMessagePropsUndefined: Self = StObject.set(x, "formMessageProps", js.undefined)
@@ -237,7 +235,7 @@ object PartialSelectProps {
     def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     
     @scala.inline
-    def setWrapperProps(value: Record[String, _]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
+    def setWrapperProps(value: Record[String, js.Any]): Self = StObject.set(x, "wrapperProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWrapperPropsUndefined: Self = StObject.set(x, "wrapperProps", js.undefined)

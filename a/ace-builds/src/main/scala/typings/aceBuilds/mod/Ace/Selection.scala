@@ -2,11 +2,12 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Selection extends EventEmitter {
+trait Selection
+  extends StObject
+     with EventEmitter {
   
   def addRange(range: Range): Unit = js.native
   

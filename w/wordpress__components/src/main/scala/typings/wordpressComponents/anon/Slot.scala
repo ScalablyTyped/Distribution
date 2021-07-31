@@ -3,10 +3,8 @@ package typings.wordpressComponents.anon
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slot extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait Slot extends StObject {
     *   app
     * );
     */
-  def Slot(): ReactElement = js.native
+  def Slot(): ReactElement
 }
 object Slot {
   

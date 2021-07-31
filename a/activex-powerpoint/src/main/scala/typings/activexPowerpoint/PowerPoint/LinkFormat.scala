@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkFormat extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoUpdate: PpUpdateOption = js.native
+  var AutoUpdate: PpUpdateOption
   
-  def BreakLink(): Unit = js.native
+  def BreakLink(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.LinkFormat_typekey")
-  var PowerPointDotLinkFormat_typekey: LinkFormat = js.native
+  var PowerPointDotLinkFormat_typekey: LinkFormat
   
-  var SourceFullName: String = js.native
+  var SourceFullName: String
   
-  def Update(): Unit = js.native
+  def Update(): Unit
 }
 object LinkFormat {
   

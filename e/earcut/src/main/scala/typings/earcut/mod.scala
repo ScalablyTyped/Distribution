@@ -5,7 +5,6 @@ import typings.earcut.anon.Dimensions
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,7 +28,7 @@ object mod extends Shortcut {
       * @example with 3d coords: earcut([10,0,1, 0,50,2, 60,60,3, 70,10,4], null, 3); // [1,0,3, 3,2,1]
       */
     def apply(vertices: ArrayLike[Double]): js.Array[Double] = js.native
-    def apply(vertices: ArrayLike[Double], holes: js.UndefOr[scala.Nothing], dimensions: Double): js.Array[Double] = js.native
+    def apply(vertices: ArrayLike[Double], holes: Unit, dimensions: Double): js.Array[Double] = js.native
     def apply(vertices: ArrayLike[Double], holes: ArrayLike[Double]): js.Array[Double] = js.native
     def apply(vertices: ArrayLike[Double], holes: ArrayLike[Double], dimensions: Double): js.Array[Double] = js.native
     
@@ -45,18 +44,13 @@ object mod extends Shortcut {
       * @example with 3d coords: earcut([10,0,1, 0,50,2, 60,60,3, 70,10,4], null, 3); // [1,0,3, 3,2,1]
       */
     def default(vertices: ArrayLike[Double]): js.Array[Double] = js.native
-    def default(vertices: ArrayLike[Double], holes: js.UndefOr[scala.Nothing], dimensions: Double): js.Array[Double] = js.native
+    def default(vertices: ArrayLike[Double], holes: Unit, dimensions: Double): js.Array[Double] = js.native
     def default(vertices: ArrayLike[Double], holes: ArrayLike[Double]): js.Array[Double] = js.native
     def default(vertices: ArrayLike[Double], holes: ArrayLike[Double], dimensions: Double): js.Array[Double] = js.native
     @JSName("default")
     var default_Original: EarcutStatic = js.native
     
-    def deviation(
-      vertices: ArrayLike[Double],
-      holes: js.UndefOr[scala.Nothing],
-      dimensions: Double,
-      triangles: ArrayLike[Double]
-    ): Double = js.native
+    def deviation(vertices: ArrayLike[Double], holes: Unit, dimensions: Double, triangles: ArrayLike[Double]): Double = js.native
     /**
       * Returns the relative difference between the total area of triangles and the area of the input polygon. 0 means the triangulation is fully correct.
       * @param vertices same as earcut

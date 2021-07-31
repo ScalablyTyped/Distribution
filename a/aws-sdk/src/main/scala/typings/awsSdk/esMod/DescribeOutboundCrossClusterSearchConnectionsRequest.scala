@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOutboundCrossClusterSearchConnectionsRequest extends StObject {
   
   /**
     *  A list of filters used to match properties for outbound cross-cluster search connection. Available Filter names for this operation are:  cross-cluster-search-connection-id destination-domain-info.domain-name destination-domain-info.owner-id destination-domain-info.region source-domain-info.domain-name  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * Set this value to limit the number of results returned. If not specified, defaults to 100.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.undefined
   
   /**
     *  NextToken is sent in case the earlier API call results contain the NextToken. It is used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
 }
 object DescribeOutboundCrossClusterSearchConnectionsRequest {
   

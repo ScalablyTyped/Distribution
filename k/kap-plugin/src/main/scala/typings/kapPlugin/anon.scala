@@ -21,15 +21,13 @@ import typings.kapPlugin.mod.Format
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FileType extends StObject {
     
-    var fileType: Format = js.native
+    var fileType: Format
   }
   object FileType {
     
@@ -53,7 +51,7 @@ object anon {
     def apply(url: GotUrl): GotPromise[String] = js.native
     def apply(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def apply(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def apply(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def apply(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     
     var CancelError: Instantiable0[typings.got.mod.CancelError] = js.native
     
@@ -74,7 +72,7 @@ object anon {
     def delete(url: GotUrl): GotPromise[String] = js.native
     def delete(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def delete(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def delete(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def delete(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("delete")
     var delete_Original: GotFn = js.native
     
@@ -91,44 +89,46 @@ object anon {
     def get(url: GotUrl): GotPromise[String] = js.native
     def get(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def get(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def get(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def get(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("get")
     var get_Original: GotFn = js.native
     
     def head(url: GotUrl): GotPromise[String] = js.native
     def head(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def head(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def head(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def head(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("head")
     var head_Original: GotFn = js.native
     
     def patch(url: GotUrl): GotPromise[String] = js.native
     def patch(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def patch(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def patch(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def patch(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("patch")
     var patch_Original: GotFn = js.native
     
     def post(url: GotUrl): GotPromise[String] = js.native
     def post(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def post(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def post(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def post(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("post")
     var post_Original: GotFn = js.native
     
     def put(url: GotUrl): GotPromise[String] = js.native
     def put(url: GotUrl, options: GotBodyOptions[Null | String]): GotPromise[String] = js.native
     def put(url: GotUrl, options: GotFormOptions[Null | String]): GotPromise[String] = js.native
-    def put(url: GotUrl, options: GotJSONOptions): GotPromise[_] = js.native
+    def put(url: GotUrl, options: GotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("put")
     var put_Original: GotFn = js.native
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex = js.native
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex = js.native
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead = js.native
   }
   
   @js.native
-  trait Typeofgot extends Typeof
+  trait Typeofgot
+    extends StObject
+       with Typeof
 }

@@ -4,33 +4,31 @@ import typings.tweenjsTweenJs.anon.In
 import typings.tweenjsTweenJs.anon.None
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofEasing extends StObject {
   
-  var Back: In = js.native
+  var Back: In
   
-  var Bounce: In = js.native
+  var Bounce: In
   
-  var Circular: In = js.native
+  var Circular: In
   
-  var Cubic: In = js.native
+  var Cubic: In
   
-  var Elastic: In = js.native
+  var Elastic: In
   
-  var Exponential: In = js.native
+  var Exponential: In
   
-  var Linear: None = js.native
+  var Linear: None
   
-  var Quadratic: In = js.native
+  var Quadratic: In
   
-  var Quartic: In = js.native
+  var Quartic: In
   
-  var Quintic: In = js.native
+  var Quintic: In
   
-  var Sinusoidal: In = js.native
+  var Sinusoidal: In
 }
 object TypeofEasing {
   

@@ -4,30 +4,29 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.srcImputeMod.ImputeParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImputeTransform
-  extends ImputeParams
+  extends StObject
+     with ImputeParams
      with Transform {
   
   /**
     * An optional array of fields by which to group the values.
     * Imputation will then be performed on a per-group basis.
     */
-  var groupby: js.UndefOr[js.Array[FieldName]] = js.native
+  var groupby: js.UndefOr[js.Array[FieldName]] = js.undefined
   
   /**
     * The data field for which the missing values should be imputed.
     */
-  var impute: FieldName = js.native
+  var impute: FieldName
   
   /**
     * A key field that uniquely identifies data objects within a group.
     * Missing key values (those occurring in the data but not in the current group) will be imputed.
     */
-  var key: FieldName = js.native
+  var key: FieldName
 }
 object ImputeTransform {
   

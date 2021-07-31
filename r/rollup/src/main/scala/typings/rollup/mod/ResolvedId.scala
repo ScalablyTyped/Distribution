@@ -3,15 +3,15 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.`no-treeshake`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResolvedId extends ModuleOptions {
+trait ResolvedId
+  extends StObject
+     with ModuleOptions {
   
-  var external: Boolean = js.native
+  var external: Boolean
   
-  var id: String = js.native
+  var id: String
 }
 object ResolvedId {
   

@@ -3,14 +3,16 @@ package typings.cssSelect
 import typings.cssSelect.typesMod.InternalSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object procedureMod {
   
-  @JSImport("css-select/lib/procedure", "isTraversal")
+  @JSImport("css-select/lib/procedure", JSImport.Namespace)
   @js.native
-  def isTraversal(t: InternalSelector): /* is css-what.css-what/lib/parse.Traversal */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isTraversal(t: InternalSelector): /* is css-what.css-what/lib/parse.Traversal */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTraversal")(t.asInstanceOf[js.Any]).asInstanceOf[/* is css-what.css-what/lib/parse.Traversal */ Boolean]
   
   /* Inlined std.Record<css-select.css-select/lib/types.InternalSelector['type'], number> */
   object procedure {

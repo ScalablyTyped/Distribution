@@ -10,7 +10,6 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbsMod {
@@ -44,8 +43,9 @@ object breadcrumbsMod {
     def defaultProps_=(x: PartialIBreadcrumbsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IBreadcrumbsProps extends IProps {
+  trait IBreadcrumbsProps
+    extends StObject
+       with IProps {
     
     /**
       * Callback invoked to render visible breadcrumbs. Best practice is to
@@ -53,13 +53,13 @@ object breadcrumbsMod {
       * supplied, that callback will be used for the current breadcrumb instead.
       * @default Breadcrumb
       */
-    var breadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.native
+    var breadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.undefined
     
     /**
       * Which direction the breadcrumbs should collapse from: start or end.
       * @default Boundary.START
       */
-    var collapseFrom: js.UndefOr[Boundary] = js.native
+    var collapseFrom: js.UndefOr[Boundary] = js.undefined
     
     /**
       * Callback invoked to render the current breadcrumb, which is the last
@@ -68,31 +68,31 @@ object breadcrumbsMod {
       * If this prop is omitted, `breadcrumbRenderer` will be invoked for the
       * current breadcrumb instead.
       */
-    var currentBreadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.native
+    var currentBreadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.undefined
     
     /**
       * All breadcrumbs to display. Breadcrumbs that do not fit in the container
       * will be rendered in an overflow menu instead.
       */
-    var items: js.Array[IBreadcrumbProps] = js.native
+    var items: js.Array[IBreadcrumbProps]
     
     /**
       * The minimum number of visible breadcrumbs that should never collapse into
       * the overflow menu, regardless of DOM dimensions.
       * @default 0
       */
-    var minVisibleItems: js.UndefOr[Double] = js.native
+    var minVisibleItems: js.UndefOr[Double] = js.undefined
     
     /**
       * Props to spread to `OverflowList`. Note that `items`,
       * `overflowRenderer`, and `visibleItemRenderer` cannot be changed.
       */
-    var overflowListProps: js.UndefOr[PartialIOverflowListProps] = js.native
+    var overflowListProps: js.UndefOr[PartialIOverflowListProps] = js.undefined
     
     /**
       * Props to spread to the `Popover` showing the overflow menu.
       */
-    var popoverProps: js.UndefOr[IPopoverProps] = js.native
+    var popoverProps: js.UndefOr[IPopoverProps] = js.undefined
   }
   object IBreadcrumbsProps {
     

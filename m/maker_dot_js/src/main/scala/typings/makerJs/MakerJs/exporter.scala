@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.anon.ScaleConversion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exporter {
@@ -13,12 +12,11 @@ object exporter {
     * Class to traverse an item 's models or paths and ultimately render each path.
     * @private
     */
-  @js.native
   trait Exporter extends StObject {
     
-    var beginModel: js.Any = js.native
+    var beginModel: js.Any
     
-    var endModel: js.Any = js.native
+    var endModel: js.Any
     
     /**
       * Export an object.
@@ -26,7 +24,7 @@ object exporter {
       * @param item The object to export. May be a path, an array of paths, a model, or an array of models.
       * @param offset The offset position of the object.
       */
-    def exportItem(itemId: String, itemToExport: js.Any, origin: IPoint): Unit = js.native
+    def exportItem(itemId: String, itemToExport: js.Any, origin: IPoint): Unit
     
     /**
       * Export a model.
@@ -34,7 +32,7 @@ object exporter {
       * @param modelToExport The model to export.
       * @param offset The offset position of the model.
       */
-    def exportModel(modelId: String, modelToExport: IModel, offset: IPoint): Unit = js.native
+    def exportModel(modelId: String, modelToExport: IModel, offset: IPoint): Unit
     
     /**
       * Export a path.
@@ -42,13 +40,13 @@ object exporter {
       * @param pathToExport The path to export.
       * @param offset The offset position of the path.
       */
-    def exportPath(id: String, pathToExport: IPath, offset: IPoint, layer: String): Unit = js.native
+    def exportPath(id: String, pathToExport: IPath, offset: IPoint, layer: String): Unit
     
-    var fixPath: js.Any = js.native
+    var fixPath: js.Any
     
-    var fixPoint: js.Any = js.native
+    var fixPoint: js.Any
     
-    var map: js.Any = js.native
+    var map: js.Any
   }
   object Exporter {
     
@@ -104,13 +102,12 @@ object exporter {
   /**
     * @private
     */
-  @js.native
   trait IExportOptions extends StObject {
     
     /**
       * Unit system to embed in exported file.
       */
-    var units: js.UndefOr[String] = js.native
+    var units: js.UndefOr[String] = js.undefined
   }
   object IExportOptions {
     
@@ -134,28 +131,29 @@ object exporter {
   /**
     * OpenJsCad export options.
     */
-  @js.native
-  trait IOpenJsCadOptions extends IFindLoopsOptions {
+  trait IOpenJsCadOptions
+    extends StObject
+       with IFindLoopsOptions {
     
     /**
       * Optional depth of 3D extrusion.
       */
-    var extrusion: js.UndefOr[Double] = js.native
+    var extrusion: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional size of curve facets.
       */
-    var facetSize: js.UndefOr[Double] = js.native
+    var facetSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional override of function name, default is "main".
       */
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
     /**
       * Optional options applied to specific first-child models by model id.
       */
-    var modelMap: js.UndefOr[IOpenJsCadOptionsMap] = js.native
+    var modelMap: js.UndefOr[IOpenJsCadOptionsMap] = js.undefined
   }
   object IOpenJsCadOptions {
     
@@ -199,18 +197,19 @@ object exporter {
   /**
     * PDF rendering options.
     */
-  @js.native
-  trait IPDFRenderOptions extends IExportOptions {
+  trait IPDFRenderOptions
+    extends StObject
+       with IExportOptions {
     
     /**
       * Rendered reference origin.
       */
-    var origin: js.UndefOr[IPoint] = js.native
+    var origin: js.UndefOr[IPoint] = js.undefined
     
     /**
       * SVG color of the rendered paths.
       */
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
   }
   object IPDFRenderOptions {
     
@@ -245,58 +244,59 @@ object exporter {
   /**
     * SVG rendering options.
     */
-  @js.native
-  trait ISVGRenderOptions extends IExportOptions {
+  trait ISVGRenderOptions
+    extends StObject
+       with IExportOptions {
     
     /**
       *  Indicate that the id's of paths should be rendered as SVG text elements.
       */
-    var annotate: js.UndefOr[Boolean] = js.native
+    var annotate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * SVG fill color.
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /**
       * SVG font size and font size units.
       */
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
     /**
       * Rendered reference origin.
       */
-    var origin: js.UndefOr[IPoint] = js.native
+    var origin: js.UndefOr[IPoint] = js.undefined
     
     /**
       * Scale of the SVG rendering.
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * SVG color of the rendered paths.
       */
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
     /**
       * SVG stroke width of paths. This may have a unit type suffix, if not, the value will be in the same unit system as the units property.
       */
-    var strokeWidth: js.UndefOr[String] = js.native
+    var strokeWidth: js.UndefOr[String] = js.undefined
     
     /**
       * Optional attributes to add to the root svg tag.
       */
-    var svgAttrs: js.UndefOr[IXmlTagAttrs] = js.native
+    var svgAttrs: js.UndefOr[IXmlTagAttrs] = js.undefined
     
     /**
       * Use SVG < path > elements instead of < line >, < circle > etc.
       */
-    var useSvgPathOnly: js.UndefOr[Boolean] = js.native
+    var useSvgPathOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Flag to use SVG viewbox.
       */
-    var viewBox: js.UndefOr[Boolean] = js.native
+    var viewBox: js.UndefOr[Boolean] = js.undefined
   }
   object ISVGRenderOptions {
     
@@ -381,39 +381,38 @@ object exporter {
     * Class for an XML tag.
     * @private
     */
-  @js.native
   trait XmlTag extends StObject {
     
-    var attrs: IXmlTagAttrs = js.native
+    var attrs: IXmlTagAttrs
     
     /**
       * Get the closing tag.
       */
-    def getClosingTag(): String = js.native
+    def getClosingTag(): String
     
     /**
       * Get the inner text.
       */
-    def getInnerText(): String = js.native
+    def getInnerText(): String
     
     /**
       * Get the opening tag.
       *
       * @param selfClose Flag to determine if opening tag should be self closing.
       */
-    def getOpeningTag(selfClose: Boolean): String = js.native
+    def getOpeningTag(selfClose: Boolean): String
     
     /**
       * Text between the opening and closing tags.
       */
-    var innerText: String = js.native
+    var innerText: String
     
     /**
       * Boolean to indicate that the innerText has been escaped.
       */
-    var innerTextEscaped: Boolean = js.native
+    var innerTextEscaped: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object XmlTag {
     

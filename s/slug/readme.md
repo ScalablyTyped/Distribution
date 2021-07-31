@@ -10,9 +10,9 @@ slugifies even utf-8 chars!
 | ------------------ | :-------------: |
 | Full name          | slug |
 | Keywords           | slugify, slug, string, utf8, utf-8, unicode, url |
-| # releases         | 26 |
-| # dependents       | 549 |
-| # downloads        | 5306061 |
+| # releases         | 22 |
+| # dependents       | 561 |
+| # downloads        | 5956990 |
 | # stars            | 106 |
 
 ## Links

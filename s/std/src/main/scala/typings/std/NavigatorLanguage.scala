@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorLanguage extends StObject {
   
-  val language: java.lang.String = js.native
+  val language: java.lang.String
   
-  val languages: js.Array[java.lang.String] = js.native
+  val languages: js.Array[java.lang.String]
 }
 object NavigatorLanguage {
   

@@ -2,16 +2,14 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/playparameters
-@js.native
 trait PlayParameters extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var kind: String = js.native
+  var kind: String
 }
 object PlayParameters {
   

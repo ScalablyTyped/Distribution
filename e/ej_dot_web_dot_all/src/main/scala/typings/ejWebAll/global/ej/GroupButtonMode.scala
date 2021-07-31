@@ -2,7 +2,6 @@ package typings.ejWebAll.global.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.GroupButtonMode")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object GroupButtonMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.GroupButtonMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.GroupButtonMode & Double] = js.native
   
-  /* 0 */ val CheckBox: typings.ejWebAll.ej.GroupButtonMode.CheckBox with Double = js.native
+  /* 0 */ val CheckBox: typings.ejWebAll.ej.GroupButtonMode.CheckBox & Double = js.native
   
-  /* 1 */ val RadioButton: typings.ejWebAll.ej.GroupButtonMode.RadioButton with Double = js.native
+  /* 1 */ val RadioButton: typings.ejWebAll.ej.GroupButtonMode.RadioButton & Double = js.native
 }

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarYearMod {
@@ -28,12 +27,14 @@ object calendarYearMod {
     var _renderGrid: js.Any = js.native
     
     var _renderHeader: js.Any = js.native
+    
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   
-  @js.native
   trait ICalendarYear extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object ICalendarYear {
     
@@ -51,14 +52,14 @@ object calendarYearMod {
     }
   }
   
-  @js.native
   trait ICalendarYearHeaderProps
-    extends ICalendarYearProps
+    extends StObject
+       with ICalendarYearProps
        with ICalendarYearRange {
     
-    var onSelectNext: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSelectNext: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSelectPrev: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSelectPrev: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ICalendarYearHeaderProps {
     
@@ -85,30 +86,29 @@ object calendarYearMod {
     }
   }
   
-  @js.native
   trait ICalendarYearProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var maxYear: js.UndefOr[Double] = js.native
+    var maxYear: js.UndefOr[Double] = js.undefined
     
-    var minYear: js.UndefOr[Double] = js.native
+    var minYear: js.UndefOr[Double] = js.undefined
     
-    var navigatedYear: js.UndefOr[Double] = js.native
+    var navigatedYear: js.UndefOr[Double] = js.undefined
     
-    var navigationIcons: js.UndefOr[ICalendarIconStrings] = js.native
+    var navigationIcons: js.UndefOr[ICalendarIconStrings] = js.undefined
     
-    var onHeaderSelect: js.UndefOr[js.Function1[/* focus */ Boolean, Unit]] = js.native
+    var onHeaderSelect: js.UndefOr[js.Function1[/* focus */ Boolean, Unit]] = js.undefined
     
-    var onRenderTitle: js.UndefOr[js.Function1[/* props */ ICalendarYearHeaderProps, ReactNode]] = js.native
+    var onRenderTitle: js.UndefOr[js.Function1[/* props */ ICalendarYearHeaderProps, ReactNode]] = js.undefined
     
-    var onRenderYear: js.UndefOr[js.Function1[/* year */ Double, ReactNode]] = js.native
+    var onRenderYear: js.UndefOr[js.Function1[/* year */ Double, ReactNode]] = js.undefined
     
-    var onSelectYear: js.UndefOr[js.Function1[/* year */ Double, Unit]] = js.native
+    var onSelectYear: js.UndefOr[js.Function1[/* year */ Double, Unit]] = js.undefined
     
-    var selectedYear: js.UndefOr[Double] = js.native
+    var selectedYear: js.UndefOr[Double] = js.undefined
     
-    var strings: js.UndefOr[ICalendarYearStrings] = js.native
+    var strings: js.UndefOr[ICalendarYearStrings] = js.undefined
   }
   object ICalendarYearProps {
     
@@ -189,12 +189,11 @@ object calendarYearMod {
     }
   }
   
-  @js.native
   trait ICalendarYearRange extends StObject {
     
-    var fromYear: Double = js.native
+    var fromYear: Double
     
-    var toYear: Double = js.native
+    var toYear: Double
   }
   object ICalendarYearRange {
     
@@ -217,14 +216,13 @@ object calendarYearMod {
   
   type ICalendarYearRangeToString = js.Function1[/* range */ ICalendarYearRange, String]
   
-  @js.native
   trait ICalendarYearState extends StObject {
     
-    var fromYear: Double = js.native
+    var fromYear: Double
     
-    var navigatedYear: js.UndefOr[Double] = js.native
+    var navigatedYear: js.UndefOr[Double] = js.undefined
     
-    var selectedYear: js.UndefOr[Double] = js.native
+    var selectedYear: js.UndefOr[Double] = js.undefined
   }
   object ICalendarYearState {
     
@@ -254,16 +252,15 @@ object calendarYearMod {
     }
   }
   
-  @js.native
   trait ICalendarYearStrings extends StObject {
     
-    var headerAriaLabelFormatString: js.UndefOr[String] = js.native
+    var headerAriaLabelFormatString: js.UndefOr[String] = js.undefined
     
-    var nextRangeAriaLabel: js.UndefOr[String | ICalendarYearRangeToString] = js.native
+    var nextRangeAriaLabel: js.UndefOr[String | ICalendarYearRangeToString] = js.undefined
     
-    var prevRangeAriaLabel: js.UndefOr[String | ICalendarYearRangeToString] = js.native
+    var prevRangeAriaLabel: js.UndefOr[String | ICalendarYearRangeToString] = js.undefined
     
-    var rangeAriaLabel: js.UndefOr[String | ICalendarYearRangeToString] = js.native
+    var rangeAriaLabel: js.UndefOr[String | ICalendarYearRangeToString] = js.undefined
   }
   object ICalendarYearStrings {
     

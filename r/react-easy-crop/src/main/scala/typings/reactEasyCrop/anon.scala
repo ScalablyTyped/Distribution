@@ -5,19 +5,17 @@ import typings.reactEasyCrop.typesMod.Area
 import typings.reactEasyCrop.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContainerClassName extends StObject {
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var cropAreaClassName: js.UndefOr[String] = js.native
+    var cropAreaClassName: js.UndefOr[String] = js.undefined
     
-    var mediaClassName: js.UndefOr[String] = js.native
+    var mediaClassName: js.UndefOr[String] = js.undefined
   }
   object ContainerClassName {
     
@@ -50,14 +48,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ContainerStyle extends StObject {
     
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var cropAreaStyle: js.UndefOr[CSSProperties] = js.native
+    var cropAreaStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var mediaStyle: js.UndefOr[CSSProperties] = js.native
+    var mediaStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object ContainerStyle {
     
@@ -90,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Crop extends StObject {
     
-    var crop: Point = js.native
+    var crop: Point
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object Crop {
     
@@ -116,12 +112,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CroppedAreaPercentages extends StObject {
     
-    var croppedAreaPercentages: Area = js.native
+    var croppedAreaPercentages: Area
     
-    var croppedAreaPixels: Area = js.native
+    var croppedAreaPixels: Area
   }
   object CroppedAreaPercentages {
     
@@ -142,12 +137,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

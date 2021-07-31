@@ -2,48 +2,46 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auroraDataApiAuroraDataApiConnectionCredentialsOptionsMod {
   
-  @js.native
   trait AuroraDataApiConnectionCredentialsOptions extends StObject {
     
     /**
       * Database name to connect to.
       */
-    val database: js.UndefOr[String] = js.native
+    val database: js.UndefOr[String] = js.undefined
     
     /**
       * Database host.
       */
-    val host: js.UndefOr[String] = js.native
+    val host: js.UndefOr[String] = js.undefined
     
     /**
       * Database password.
       */
-    val password: js.UndefOr[String] = js.native
+    val password: js.UndefOr[String] = js.undefined
     
     /**
       * Database host port.
       */
-    val port: js.UndefOr[Double] = js.native
+    val port: js.UndefOr[Double] = js.undefined
     
     /**
       * Object with ssl parameters or a string containing name of ssl profile.
       */
-    val ssl: js.UndefOr[js.Any] = js.native
+    val ssl: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Connection url where perform connection to.
       */
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
     
     /**
       * Database username.
       */
-    val username: js.UndefOr[String] = js.native
+    val username: js.UndefOr[String] = js.undefined
   }
   object AuroraDataApiConnectionCredentialsOptions {
     

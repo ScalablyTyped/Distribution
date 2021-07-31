@@ -4,33 +4,31 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesIdentityDescriptionMod {
   
-  @js.native
   trait IdentityDescription extends StObject {
     
     /**
       * <p>Date on which the identity was created.</p>
       */
-    var CreationDate: js.UndefOr[Date | String | Double] = js.native
+    var CreationDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: js.UndefOr[String] = js.native
+    var IdentityId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Date on which the identity was last modified.</p>
       */
-    var LastModifiedDate: js.UndefOr[Date | String | Double] = js.native
+    var LastModifiedDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>A set of optional name-value pairs that map provider names to provider tokens.</p>
       */
-    var Logins: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var Logins: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
   }
   object IdentityDescription {
     
@@ -72,26 +70,27 @@ object typesIdentityDescriptionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledIdentityDescription extends IdentityDescription {
+  trait UnmarshalledIdentityDescription
+    extends StObject
+       with IdentityDescription {
     
     /**
       * <p>Date on which the identity was created.</p>
       */
     @JSName("CreationDate")
-    var CreationDate_UnmarshalledIdentityDescription: js.UndefOr[Date] = js.native
+    var CreationDate_UnmarshalledIdentityDescription: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Date on which the identity was last modified.</p>
       */
     @JSName("LastModifiedDate")
-    var LastModifiedDate_UnmarshalledIdentityDescription: js.UndefOr[Date] = js.native
+    var LastModifiedDate_UnmarshalledIdentityDescription: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>A set of optional name-value pairs that map provider names to provider tokens.</p>
       */
     @JSName("Logins")
-    var Logins_UnmarshalledIdentityDescription: js.UndefOr[js.Array[String]] = js.native
+    var Logins_UnmarshalledIdentityDescription: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledIdentityDescription {
     

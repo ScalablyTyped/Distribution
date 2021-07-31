@@ -2,24 +2,22 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Instance.restore method
   */
-@js.native
 trait InstanceRestoreOptions extends StObject {
   
   /**
     * A function that gets executed while running the query to log the sql.
     */
-  var logging: js.UndefOr[Boolean | js.Function] = js.native
+  var logging: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Transaction to run query under
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
 }
 object InstanceRestoreOptions {
   

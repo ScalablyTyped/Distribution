@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLTransformsRequest extends StObject {
   
   /**
     * The filter transformation criteria.
     */
-  var Filter: js.UndefOr[TransformFilterCriteria] = js.native
+  var Filter: js.UndefOr[TransformFilterCriteria] = js.undefined
   
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A paginated token to offset the results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The sorting criteria.
     */
-  var Sort: js.UndefOr[TransformSortCriteria] = js.native
+  var Sort: js.UndefOr[TransformSortCriteria] = js.undefined
 }
 object GetMLTransformsRequest {
   

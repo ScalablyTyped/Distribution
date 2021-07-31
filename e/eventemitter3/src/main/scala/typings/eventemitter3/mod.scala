@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,8 @@ object mod extends Shortcut {
   @JSImport("eventemitter3", JSImport.Namespace)
   @js.native
   class ^[EventTypes /* <: ValidEventTypes */, Context /* <: js.Any */] ()
-    extends typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
+    extends StObject
+       with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
   @JSImport("eventemitter3", JSImport.Namespace)
   @js.native
   val ^ : EventEmitterStatic = js.native
@@ -50,13 +50,13 @@ object mod extends Shortcut {
     def listeners[T /* <: EventNames[EventTypes] */](event: T): js.Array[EventListener[EventTypes, T]] = js.native
     
     def off[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context, once: Boolean): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context, once: Boolean): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
     def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
     def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context, once: Boolean): this.type = js.native
-    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+    def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Unit, once: Boolean): this.type = js.native
     
     /**
       * Add a listener for a given event.
@@ -80,13 +80,13 @@ object mod extends Shortcut {
       * Remove the listeners of a given event.
       */
     def removeListener[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context, once: Boolean): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Context, once: Boolean): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
     def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
     def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context, once: Boolean): this.type = js.native
-    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
+    def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Unit, once: Boolean): this.type = js.native
   }
   @JSImport("eventemitter3", "EventEmitter")
   @js.native
@@ -96,7 +96,8 @@ object mod extends Shortcut {
   @JSImport("eventemitter3", "EventEmitter")
   @js.native
   class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
-    extends typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
+    extends StObject
+       with typings.eventemitter3.mod.EventEmitter[EventTypes, Context]
   
   /* static member */
   @JSImport("eventemitter3", "prefixed")
@@ -107,13 +108,14 @@ object mod extends Shortcut {
   
   type ArgumentMap[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] extends (args : ...any): void? std.Parameters<T[K]> : T[K] extends std.Array<any>? T[K] : std.Array<any>}
-    */ typings.eventemitter3.eventemitter3Strings.ArgumentMap with TopLevel[js.Any]
+    */ typings.eventemitter3.eventemitter3Strings.ArgumentMap & TopLevel[js.Any]
   
   type EventArgs[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = Parameters[EventListener[T, K]]
   
   @js.native
   trait EventEmitterStatic
-    extends Instantiable0[typings.eventemitter3.mod.EventEmitter[ValidEventTypes, js.Object]]
+    extends StObject
+       with Instantiable0[typings.eventemitter3.mod.EventEmitter[ValidEventTypes, js.Object]]
   
   type EventListener[T /* <: ValidEventTypes */, K /* <: EventNames[T] */] = js.Function1[
     /* import warning: importer.ImportType#apply Failed type conversion: eventemitter3.eventemitter3.ArgumentMap<std.Exclude<T, string | symbol>>[std.Extract<K, keyof T>] */ /* args */ js.Any, 
@@ -122,7 +124,7 @@ object mod extends Shortcut {
   
   type EventNames[T /* <: ValidEventTypes */] = (/* keyof T */ String) | T
   
-  type ListenerFn[Args /* <: js.Array[_] */] = js.Function1[/* args */ Args, Unit]
+  type ListenerFn[Args /* <: js.Array[js.Any] */] = js.Function1[/* args */ Args, Unit]
   
   type ValidEventTypes = String | js.Symbol | js.Object
   

@@ -5,10 +5,13 @@ import typings.node.netMod.SocketConstructorOpts
 import typings.node.nodeStrings.resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ttyMod {
+  
+  @JSImport("tty", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tty", "ReadStream")
   @js.native
@@ -50,9 +53,9 @@ object ttyMod {
       */
     def cursorTo(x: Double): Boolean = js.native
     def cursorTo(x: Double, callback: js.Function0[Unit]): Boolean = js.native
-    def cursorTo(x: Double, y: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Boolean = js.native
     def cursorTo(x: Double, y: Double): Boolean = js.native
     def cursorTo(x: Double, y: Double, callback: js.Function0[Unit]): Boolean = js.native
+    def cursorTo(x: Double, y: Unit, callback: js.Function0[Unit]): Boolean = js.native
     
     @JSName("emit")
     def emit_resize(event: resize): Boolean = js.native
@@ -93,9 +96,8 @@ object ttyMod {
     var rows: Double = js.native
   }
   
-  @JSImport("tty", "isatty")
-  @js.native
-  def isatty(fd: Double): Boolean = js.native
+  @scala.inline
+  def isatty(fd: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isatty")(fd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * -1 - to the left from cursor

@@ -2,17 +2,15 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JumpListSettings extends StObject {
   
   /**
     * The minimum number of items that will be shown in the Jump List (for a more
     * detailed description of this value see the MSDN docs).
     */
-  var minItems: Double = js.native
+  var minItems: Double
   
   /**
     * Array of `JumpListItem` objects that correspond to items that the user has
@@ -21,7 +19,7 @@ trait JumpListSettings extends StObject {
     * Windows will not display any custom category that contains any of the removed
     * items.
     */
-  var removedItems: js.Array[JumpListItem] = js.native
+  var removedItems: js.Array[JumpListItem]
 }
 object JumpListSettings {
   

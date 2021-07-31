@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleStatementNotStatementStatementAndStatement extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait RuleGroupRuleStatementNotStatementStatementAndStatement extends StObject {
     */
   var statements: Input[
     js.Array[Input[RuleGroupRuleStatementNotStatementStatementAndStatementStatement]]
-  ] = js.native
+  ]
 }
 object RuleGroupRuleStatementNotStatementStatementAndStatement {
   

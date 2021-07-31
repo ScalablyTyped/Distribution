@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CorrelationSubscription extends BaseElement {
+trait CorrelationSubscription
+  extends StObject
+     with BaseElement {
   
-  var correlationKeyRef: CorrelationKey = js.native
+  var correlationKeyRef: CorrelationKey
   
-  var correlationPropertyBinding: js.Array[CorrelationKey] = js.native
+  var correlationPropertyBinding: js.Array[CorrelationKey]
 }
 object CorrelationSubscription {
   

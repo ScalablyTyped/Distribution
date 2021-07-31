@@ -9,17 +9,15 @@ import typings.expo.expoStrings.year
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntervalMs extends StObject {
   
-  var intervalMs: js.UndefOr[Double] = js.native
+  var intervalMs: js.UndefOr[Double] = js.undefined
   
-  var repeat: js.UndefOr[minute | hour | day | week | month | year] = js.native
+  var repeat: js.UndefOr[minute | hour | day | week | month | year] = js.undefined
   
-  var time: js.UndefOr[Date | Double] = js.native
+  var time: js.UndefOr[Date | Double] = js.undefined
 }
 object IntervalMs {
   

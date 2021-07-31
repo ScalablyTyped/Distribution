@@ -6,43 +6,41 @@ import typings.reactCalendarTimeline.reactCalendarTimelineStrings.left
 import typings.reactCalendarTimeline.reactCalendarTimelineStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemContext extends StObject {
   
-  var canMove: Boolean = js.native
+  var canMove: Boolean
   
-  var canResizeLeft: Boolean = js.native
+  var canResizeLeft: Boolean
   
-  var canResizeRight: Boolean = js.native
+  var canResizeRight: Boolean
   
-  var dimensions: CollisionLeft = js.native
+  var dimensions: CollisionLeft
   
-  var dragGroupDelta: Double = js.native
+  var dragGroupDelta: Double
   
-  var dragStart: X = js.native
+  var dragStart: X
   
-  var dragTime: Double = js.native
+  var dragTime: Double
   
-  var dragging: Boolean = js.native
+  var dragging: Boolean
   
-  var resizeEdge: left | right = js.native
+  var resizeEdge: left | right
   
-  var resizeStart: Double = js.native
+  var resizeStart: Double
   
-  var resizeTime: Double = js.native
+  var resizeTime: Double
   
-  var resizing: Boolean = js.native
+  var resizing: Boolean
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var title: String = js.native
+  var title: String
   
-  var useResizeHandle: Boolean = js.native
+  var useResizeHandle: Boolean
   
-  var width: Boolean = js.native
+  var width: Boolean
 }
 object ItemContext {
   

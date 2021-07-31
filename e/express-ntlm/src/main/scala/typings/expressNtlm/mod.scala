@@ -9,38 +9,38 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-ntlm", JSImport.Namespace)
-  @js.native
-  def apply(): Handler = js.native
-  @JSImport("express-ntlm", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Handler = js.native
+  @scala.inline
+  def apply(): Handler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Handler]
+  @scala.inline
+  def apply(options: Options): Handler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
+  @JSImport("express-ntlm", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var badrequest: js.UndefOr[Handler] = js.native
+    var badrequest: js.UndefOr[Handler] = js.undefined
     
-    var debug: js.UndefOr[js.Function2[/* prefix */ String, /* message */ String, Unit]] = js.native
+    var debug: js.UndefOr[js.Function2[/* prefix */ String, /* message */ String, Unit]] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var domaincontroller: js.UndefOr[String | js.Array[String]] = js.native
+    var domaincontroller: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var forbidden: js.UndefOr[Handler] = js.native
+    var forbidden: js.UndefOr[Handler] = js.undefined
     
-    var internalservererror: js.UndefOr[Handler] = js.native
+    var internalservererror: js.UndefOr[Handler] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var tlsOptions: js.UndefOr[ConnectionOptions] = js.native
+    var tlsOptions: js.UndefOr[ConnectionOptions] = js.undefined
     
-    var unauthorized: js.UndefOr[Handler] = js.native
+    var unauthorized: js.UndefOr[Handler] = js.undefined
   }
   object Options {
     
@@ -120,14 +120,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestNtlm extends StObject {
     
-    var DomainName: js.UndefOr[String] = js.native
+    var DomainName: js.UndefOr[String] = js.undefined
     
-    var UserName: js.UndefOr[String] = js.native
+    var UserName: js.UndefOr[String] = js.undefined
     
-    var Workstation: js.UndefOr[String] = js.native
+    var Workstation: js.UndefOr[String] = js.undefined
   }
   object RequestNtlm {
     
@@ -164,10 +163,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var ntlm: js.UndefOr[RequestNtlm] = js.native
+        var ntlm: js.UndefOr[RequestNtlm] = js.undefined
       }
       object Request {
         

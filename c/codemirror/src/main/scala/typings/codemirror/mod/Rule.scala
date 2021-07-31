@@ -3,32 +3,30 @@ package typings.codemirror.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Based on https://codemirror.net/demo/simplemode.html
-@js.native
 trait Rule extends StObject {
   
-  var dedent: js.UndefOr[Boolean] = js.native
+  var dedent: js.UndefOr[Boolean] = js.undefined
   
-  var dedentIfLineStart: js.UndefOr[Boolean] = js.native
+  var dedentIfLineStart: js.UndefOr[Boolean] = js.undefined
   
-  var indent: js.UndefOr[Boolean] = js.native
+  var indent: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[js.Any] = js.native
+  var mode: js.UndefOr[js.Any] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var pop: js.UndefOr[Boolean] = js.native
+  var pop: js.UndefOr[Boolean] = js.undefined
   
-  var push: js.UndefOr[String] = js.native
+  var push: js.UndefOr[String] = js.undefined
   
-  var regex: js.UndefOr[String | RegExp] = js.native
+  var regex: js.UndefOr[String | RegExp] = js.undefined
   
-  var sol: js.UndefOr[Boolean] = js.native
+  var sol: js.UndefOr[Boolean] = js.undefined
   
-  var token: js.UndefOr[String | js.Array[String] | Null] = js.native
+  var token: js.UndefOr[String | js.Array[String] | Null] = js.undefined
 }
 object Rule {
   

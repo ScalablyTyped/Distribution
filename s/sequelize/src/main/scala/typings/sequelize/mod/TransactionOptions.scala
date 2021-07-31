@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,37 +9,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see sequelize.transaction()
   */
-@js.native
 trait TransactionOptions extends StObject {
   
-  var autocommit: js.UndefOr[Boolean] = js.native
+  var autocommit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the constraints to be deferred or immediately checked.
     */
   var deferrable: js.UndefOr[
     DeferrableSetImmediate | DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred
-  ] = js.native
+  ] = js.undefined
   
   /**
     *  See `Sequelize.Transaction.ISOLATION_LEVELS` for possible options
     */
-  var isolationLevel: js.UndefOr[TransactionIsolationLevel] = js.native
+  var isolationLevel: js.UndefOr[TransactionIsolationLevel] = js.undefined
   
   /**
     * A function that gets executed while running the query to log the sql.
     */
-  var logging: js.UndefOr[js.Function] = js.native
+  var logging: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Specify the parent transaction so that this transaction is nested or a save point within the parent
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
   
   /**
     *  See `Sequelize.Transaction.TYPES` for possible options
     */
-  var `type`: js.UndefOr[TransactionType] = js.native
+  var `type`: js.UndefOr[TransactionType] = js.undefined
 }
 object TransactionOptions {
   

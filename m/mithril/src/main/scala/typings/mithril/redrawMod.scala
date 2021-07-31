@@ -3,7 +3,6 @@ package typings.mithril
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redrawMod extends Shortcut {
@@ -12,12 +11,11 @@ object redrawMod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait Static extends StObject {
     
-    var redraw: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ js.Any = js.native
+    var redraw: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ js.Any
     
-    var render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any = js.native
+    var render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any
   }
   object Static {
     

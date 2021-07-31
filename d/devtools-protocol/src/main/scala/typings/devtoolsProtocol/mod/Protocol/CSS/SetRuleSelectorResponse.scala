@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRuleSelectorResponse extends StObject {
   
   /**
     * The resulting selector list after modification.
     */
-  var selectorList: SelectorList = js.native
+  var selectorList: SelectorList
 }
 object SetRuleSelectorResponse {
   

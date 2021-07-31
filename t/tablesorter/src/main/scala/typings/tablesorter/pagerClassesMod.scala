@@ -2,28 +2,26 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerClassesMod {
   
-  @js.native
   trait PagerClasses extends StObject {
     
     /**
       * A set of css-classes to apply to the container.
       */
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
     /**
       * The css-class to apply to disabled pager-controls.
       */
-    var disabled: js.UndefOr[String] = js.native
+    var disabled: js.UndefOr[String] = js.undefined
     
     /**
       * The css-class to apply to the table-row which displays the error-message in case of an ajax-error.
       */
-    var errorRow: js.UndefOr[String] = js.native
+    var errorRow: js.UndefOr[String] = js.undefined
   }
   object PagerClasses {
     

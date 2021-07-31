@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.PageForSpecialization")
@@ -37,9 +36,8 @@ object PageForSpecialization {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PageForSpecialization.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization]
   
   /**
     * Creates and returns a new PageForSpecialization instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object PageForSpecialization {
     *  6.0.0 to 7.16.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PageForSpecialization.createInGridEditButtonUnderPagesForSpecializations")
-  @js.native
-  def createInGridEditButtonUnderPagesForSpecializations(container: typings.mendixmodelsdk.pagesMod.pages.GridEditButton): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = js.native
+  @scala.inline
+  def createInGridEditButtonUnderPagesForSpecializations(container: typings.mendixmodelsdk.pagesMod.pages.GridEditButton): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridEditButtonUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization]
   
   /**
     * Creates and returns a new PageForSpecialization instance in the SDK and on the server.
@@ -63,9 +60,8 @@ object PageForSpecialization {
     *  7.17.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PageForSpecialization.createInPageClientActionUnderPagesForSpecializations")
-  @js.native
-  def createInPageClientActionUnderPagesForSpecializations(container: typings.mendixmodelsdk.pagesMod.pages.PageClientAction): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = js.native
+  @scala.inline
+  def createInPageClientActionUnderPagesForSpecializations(container: typings.mendixmodelsdk.pagesMod.pages.PageClientAction): typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageClientActionUnderPagesForSpecializations")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PageForSpecialization]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.PageForSpecialization.structureTypeName")

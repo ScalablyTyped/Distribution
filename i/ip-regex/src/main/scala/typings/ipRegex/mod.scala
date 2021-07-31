@@ -3,7 +3,6 @@ package typings.ipRegex
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,22 +29,22 @@ object mod {
   	//=> null
   	```
   	*/
+  @scala.inline
+  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  @scala.inline
+  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  
   @JSImport("ip-regex", JSImport.Namespace)
   @js.native
-  def apply(): RegExp = js.native
-  @JSImport("ip-regex", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RegExp = js.native
+  val ^ : js.Any = js.native
   
   /**
   	@returns A regex for matching IPv4.
   	*/
-  @JSImport("ip-regex", "v4")
-  @js.native
-  def v4(): RegExp = js.native
-  @JSImport("ip-regex", "v4")
-  @js.native
-  def v4(options: Options): RegExp = js.native
+  @scala.inline
+  def v4(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[RegExp]
+  @scala.inline
+  def v4(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   /**
   	@returns A regex for matching IPv6.
@@ -56,27 +55,24 @@ object mod {
   	//=> true
   	```
   	*/
-  @JSImport("ip-regex", "v6")
-  @js.native
-  def v6(): RegExp = js.native
-  @JSImport("ip-regex", "v6")
-  @js.native
-  def v6(options: Options): RegExp = js.native
+  @scala.inline
+  def v6(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[RegExp]
+  @scala.inline
+  def v6(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Only match an exact string. Useful with `RegExp#test()` to check if a string is an IP address. *(`false` matches any IP address in a string)*
     		@default false
     		*/
-    val exact: js.UndefOr[Boolean] = js.native
+    val exact: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Include boundaries in the regex. When `true`, `192.168.0.2000000000` will report as an invalid IPv4 address. If this option is not set, the mentioned IPv4 address would report as valid (ignoring the trailing zeros).
     		@default false
     		*/
-    val includeBoundaries: js.UndefOr[Boolean] = js.native
+    val includeBoundaries: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

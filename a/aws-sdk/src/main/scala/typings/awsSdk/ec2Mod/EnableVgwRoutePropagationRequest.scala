@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableVgwRoutePropagationRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the virtual private gateway that is attached to a VPC. The virtual private gateway must be attached to the same VPC that the routing tables are associated with. 
     */
-  var GatewayId: VpnGatewayId = js.native
+  var GatewayId: VpnGatewayId
   
   /**
     * The ID of the route table. The routing table must be associated with the same VPC that the virtual private gateway is attached to. 
     */
-  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId = js.native
+  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId
 }
 object EnableVgwRoutePropagationRequest {
   

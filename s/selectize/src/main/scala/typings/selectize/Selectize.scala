@@ -6,7 +6,6 @@ import typings.selectize.selectizeStrings.focus
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Selectize {
@@ -71,13 +70,9 @@ object Selectize {
       * new item, given the user input. Once this completes, it will be added to the item list.
       */
     def createItem(value: T): Unit = js.native
-    def createItem(
-      value: T,
-      triggerDropdown: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
     def createItem(value: T, triggerDropdown: Boolean): Unit = js.native
     def createItem(value: T, triggerDropdown: Boolean, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def createItem(value: T, triggerDropdown: Unit, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
     
     // Other
     // ------------------------------------------------------------------------------------------------------------
@@ -137,7 +132,7 @@ object Selectize {
       * Loads options by invoking the the provided function. The function should accept one argument (callback)
       * and invoke the callback with the results once they are available.
       */
-    def load(callback: js.Function1[/* results */ js.Any, _]): Unit = js.native
+    def load(callback: js.Function1[/* results */ js.Any, js.Any]): Unit = js.native
     
     /**
       * Disables user input on the control (note: the control can still receive focus).
@@ -235,35 +230,34 @@ object Selectize {
     * HTML (string) with a single root element. The "escape" argument is a function that takes a string and
     * escapes all special HTML characters. This is very important to use to prevent XSS vulnerabilities.
     */
-  @js.native
   trait ICustomRenderers[U] extends StObject {
     
     // An item the user has selected.
     var item: js.UndefOr[
         js.Function2[/* data */ U, /* escape */ js.Function1[/* input */ String, String], String]
-      ] = js.native
+      ] = js.undefined
     
     // The wrapper for an optgroup. The "html" property in the data will be the raw html of the optgroup's header
     // and options.
     var optgroup: js.UndefOr[
         js.Function2[/* data */ U, /* escape */ js.Function1[/* input */ String, String], String]
-      ] = js.native
+      ] = js.undefined
     
     // The header of an option group.
     var optgroup_header: js.UndefOr[
         js.Function2[/* data */ U, /* escape */ js.Function1[/* input */ String, String], String]
-      ] = js.native
+      ] = js.undefined
     
     // An option in the dropdown list of available options.
     var option: js.UndefOr[
         js.Function2[/* data */ U, /* escape */ js.Function1[/* input */ String, String], String]
-      ] = js.native
+      ] = js.undefined
     
     // The "create new" option at the bottom of the dropdown. The data contains one property: "input"
     // (which is what the user has typed).
     var option_create: js.UndefOr[
         js.Function2[/* data */ U, /* escape */ js.Function1[/* input */ String, String], String]
-      ] = js.native
+      ] = js.undefined
   }
   object ICustomRenderers {
     
@@ -274,7 +268,7 @@ object Selectize {
     }
     
     @scala.inline
-    implicit class ICustomRenderersMutableBuilder[Self <: ICustomRenderers[_], U] (val x: Self with ICustomRenderers[U]) extends AnyVal {
+    implicit class ICustomRenderersMutableBuilder[Self <: ICustomRenderers[?], U] (val x: Self & ICustomRenderers[U]) extends AnyVal {
       
       @scala.inline
       def setItem(value: (/* data */ U, /* escape */ js.Function1[/* input */ String, String]) => String): Self = StObject.set(x, "item", js.Any.fromFunction2(value))
@@ -310,7 +304,6 @@ object Selectize {
   
   // see https://github.com/brianreavis/selectize.js/blob/master/docs/usage.md
   // option identifiers are parameterized by T; data is parameterized by U
-  @js.native
   trait IOptions[T, U] extends StObject {
     
     /**
@@ -318,7 +311,7 @@ object Selectize {
       *
       * Default: false
       */
-    var addPrecedence: js.UndefOr[Boolean] = js.native
+    var addPrecedence: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, Selectize will treat any options with a "" value like normal. This defaults to false to
@@ -326,21 +319,21 @@ object Selectize {
       *
       * Default: false
       */
-    var allowEmptyOption: js.UndefOr[Boolean] = js.native
+    var allowEmptyOption: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the dropdown will be closed after a selection is made.
       *
       * Default: false
       */
-    var closeAfterSelect: js.UndefOr[Boolean] = js.native
+    var closeAfterSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Copy the original input classes to the Dropdown element.
       *
       * Default: true
       */
-    var copyClassesToDropdown: js.UndefOr[Boolean] = js.native
+    var copyClassesToDropdown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows the user to create a new items that aren't in the list of options.
@@ -349,7 +342,7 @@ object Selectize {
       *
       * Default: false
       */
-    var create: js.UndefOr[js.Any] = js.native
+    var create: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Specifies a RegExp or String containing a regular expression that the current search filter must match to
@@ -358,7 +351,7 @@ object Selectize {
       *
       * Default: null
       */
-    var createFilter: js.UndefOr[js.Any] = js.native
+    var createFilter: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If true, when user exits the field (clicks outside of input or presses ESC) new option is created and
@@ -366,14 +359,14 @@ object Selectize {
       *
       * Default: false
       */
-    var createOnBlur: js.UndefOr[Boolean] = js.native
+    var createOnBlur: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The <option> attribute from which to read JSON data about the option.
       *
       * Default: "data-data"
       */
-    var dataAttr: js.UndefOr[String] = js.native
+    var dataAttr: js.UndefOr[String] = js.undefined
     
     /**
       * The string to separate items by. This option is only used when Selectize is instantiated from a
@@ -381,21 +374,21 @@ object Selectize {
       *
       * Default: ','
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Enable or disable international character support.
       *
       * Default: true
       */
-    var diacritics: js.UndefOr[Boolean] = js.native
+    var diacritics: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the property to disabled option and optgroup.
       *
       * Default: 'disabled'
       */
-    var disabledField: js.UndefOr[String] = js.native
+    var disabledField: js.UndefOr[String] = js.undefined
     
     /**
       * The element the dropdown menu is appended to. This should be "body" or null.
@@ -403,28 +396,28 @@ object Selectize {
       *
       * Default: null
       */
-    var dropdownParent: js.UndefOr[String] = js.native
+    var dropdownParent: js.UndefOr[String] = js.undefined
     
     /**
       * If true, the items that are currently selected will not be shown in the dropdown list of available options.
       *
       * Default: false
       */
-    var hideSelected: js.UndefOr[Boolean] = js.native
+    var hideSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Toggles match highlighting within the dropdown menu.
       *
       * Default: true
       */
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     // General
     // ------------------------------------------------------------------------------------------------------------
     /**
       * An array of the initial selected values. By default this is populated from the original input element.
       */
-    var items: js.UndefOr[js.Array[T]] = js.native
+    var items: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * The name of the property to render as an option / item label (not needed when custom rendering
@@ -432,14 +425,14 @@ object Selectize {
       *
       * Default: "text"
       */
-    var labelField: js.UndefOr[String] = js.native
+    var labelField: js.UndefOr[String] = js.undefined
     
     // Callbacks
     // ------------------------------------------------------------------------------------------------------------
     /**
       * Invoked when new options should be loaded from the server.
       */
-    var load: js.UndefOr[js.Function2[/* query */ String, /* callback */ js.Function, _]] = js.native
+    var load: js.UndefOr[js.Function2[/* query */ String, /* callback */ js.Function, js.Any]] = js.undefined
     
     /**
       * The number of milliseconds to wait before requesting options from the server or null.
@@ -447,7 +440,7 @@ object Selectize {
       *
       * Default: 300
       */
-    var loadThrottle: js.UndefOr[Double] = js.native
+    var loadThrottle: js.UndefOr[Double] = js.undefined
     
     /**
       * If truthy, Selectize will make all optgroups be in the same order as they were added (by the `$order`
@@ -455,26 +448,26 @@ object Selectize {
       *
       * Default: false
       */
-    var lockOptgroupOrder: js.UndefOr[Boolean] = js.native
+    var lockOptgroupOrder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The max number of items the user can select.
       *
       * Default: Infinity
       */
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
     /**
       * The max number of items to render at once in the dropdown list of options.
       *
       * Default: 1000
       */
-    var maxOptions: js.UndefOr[Double] = js.native
+    var maxOptions: js.UndefOr[Double] = js.undefined
     
     /**
       * Invoked when the control loses focus.
       */
-    var onBlur: js.UndefOr[js.Function0[_]] = js.native
+    var onBlur: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Invoked when the value of the control changes.
@@ -482,81 +475,81 @@ object Selectize {
       * If single select, value is of type T.
       * If multi select, value is of type T[].
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
     /**
       * Invoked when the control is manually cleared via the clear() method.
       */
-    var onClear: js.UndefOr[js.Function0[_]] = js.native
+    var onClear: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Invoked when the user attempts to delete the current selection.
       */
-    var onDelete: js.UndefOr[js.Function1[/* values */ js.Array[T], _]] = js.native
+    var onDelete: js.UndefOr[js.Function1[/* values */ js.Array[T], js.Any]] = js.undefined
     
     /**
       * Invoked when the dropdown closes.
       */
-    var onDropdownClose: js.UndefOr[js.Function1[/* dropdown */ JQuery, _]] = js.native
+    var onDropdownClose: js.UndefOr[js.Function1[/* dropdown */ JQuery, js.Any]] = js.undefined
     
     /**
       * Invoked when the dropdown opens.
       */
-    var onDropdownOpen: js.UndefOr[js.Function1[/* dropdown */ JQuery, _]] = js.native
+    var onDropdownOpen: js.UndefOr[js.Function1[/* dropdown */ JQuery, js.Any]] = js.undefined
     
     /**
       * Invoked when the control gains focus.
       */
-    var onFocus: js.UndefOr[js.Function0[_]] = js.native
+    var onFocus: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Invoked once the control is completely initialized.
       */
-    var onInitialize: js.UndefOr[js.Function0[_]] = js.native
+    var onInitialize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * Invoked when an item is selected.
       */
-    var onItemAdd: js.UndefOr[js.Function2[/* value */ T, /* item */ JQuery, _]] = js.native
+    var onItemAdd: js.UndefOr[js.Function2[/* value */ T, /* item */ JQuery, js.Any]] = js.undefined
     
     /**
       * Invoked when an item is deselected.
       */
-    var onItemRemove: js.UndefOr[js.Function1[/* value */ T, _]] = js.native
+    var onItemRemove: js.UndefOr[js.Function1[/* value */ T, js.Any]] = js.undefined
     
     /**
       * Invoked when new options have been loaded and added to the control (via the "load" option or "load" API method).
       */
-    var onLoad: js.UndefOr[js.Function1[/* data */ js.Array[U], _]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* data */ js.Array[U], js.Any]] = js.undefined
     
     /**
       * Invoked when a new option is added to the available options list.
       */
-    var onOptionAdd: js.UndefOr[js.Function2[/* value */ T, /* data */ U, _]] = js.native
+    var onOptionAdd: js.UndefOr[js.Function2[/* value */ T, /* data */ U, js.Any]] = js.undefined
     
     /**
       * Invoked when an option is removed from the available options.
       */
-    var onOptionRemove: js.UndefOr[js.Function1[/* value */ T, _]] = js.native
+    var onOptionRemove: js.UndefOr[js.Function1[/* value */ T, js.Any]] = js.undefined
     
     /**
       * Invoked when the user types while filtering options.
       */
-    var onType: js.UndefOr[js.Function1[/* srt */ String, _]] = js.native
+    var onType: js.UndefOr[js.Function1[/* srt */ String, js.Any]] = js.undefined
     
     /**
       * Show the dropdown immediately when the control receives focus.
       *
       * Default: true
       */
-    var openOnFocus: js.UndefOr[Boolean] = js.native
+    var openOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the property to group items by.
       *
       * Default: "optgroup"
       */
-    var optgroupField: js.UndefOr[String] = js.native
+    var optgroupField: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the property to render as an option group label (not needed when custom rendering
@@ -564,7 +557,7 @@ object Selectize {
       *
       * Default: "label"
       */
-    var optgroupLabelField: js.UndefOr[String] = js.native
+    var optgroupLabelField: js.UndefOr[String] = js.undefined
     
     /**
       * An array of optgroup values that indicates the order they should be listed in in the dropdown.
@@ -572,21 +565,21 @@ object Selectize {
       *
       * Default: null
       */
-    var optgroupOrder: js.UndefOr[js.Array[String]] = js.native
+    var optgroupOrder: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The name of the option group property that serves as its unique identifier.
       *
       * Default: "value"
       */
-    var optgroupValueField: js.UndefOr[String] = js.native
+    var optgroupValueField: js.UndefOr[String] = js.undefined
     
     /**
       * Option groups that options will be bucketed into.
       * If your element is a <select> with <optgroup>s this property gets populated automatically.
       * Make sure each object in the array has a property named whatever "optgroupValueField" is set to.
       */
-    var optgroups: js.UndefOr[js.Array[U]] = js.native
+    var optgroups: js.UndefOr[js.Array[U]] = js.undefined
     
     // Data / Searching
     // ------------------------------------------------------------------------------------------------------------
@@ -597,27 +590,27 @@ object Selectize {
       *
       * Default: []
       */
-    var options: js.UndefOr[js.Array[U]] = js.native
+    var options: js.UndefOr[js.Array[U]] = js.undefined
     
     /**
       * If false, items created by the user will not show up as available options once they are unselected.
       *
       * Default: true
       */
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The placeholder of the control (displayed when nothing is selected / typed).
       * Defaults to input element's placeholder, unless this one is specified.
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Plugins to use
       *
       * Default: null
       */
-    var plugins: js.UndefOr[(js.Array[IPluginOption | String]) | StringDictionary[js.Any]] = js.native
+    var plugins: js.UndefOr[(js.Array[IPluginOption | String]) | StringDictionary[js.Any]] = js.undefined
     
     /**
       * If true, the "load" function will be called upon control initialization (with an empty search).
@@ -625,18 +618,18 @@ object Selectize {
       *
       * Default: false
       */
-    var preload: js.UndefOr[Boolean | focus] = js.native
+    var preload: js.UndefOr[Boolean | focus] = js.undefined
     
     // Rendering
     // ------------------------------------------------------------------------------------------------------------
-    var render: js.UndefOr[ICustomRenderers[U]] = js.native
+    var render: js.UndefOr[ICustomRenderers[U]] = js.undefined
     
     /**
       * Overrides the scoring function used to sort available options. The provided function should return a
       * function that returns a number greater than or equal to zero to represent the "score" of an item
       * (the function's first argument). If 0, the option is declared not a match.
       */
-    var score: js.UndefOr[js.Function1[/* search */ ISearch, js.Function1[/* item */ _, Double]]] = js.native
+    var score: js.UndefOr[js.Function1[/* search */ ISearch, js.Function1[/* item */ js.Any, Double]]] = js.undefined
     
     /**
       * The animation duration (in milliseconds) of the scroll animation triggered when going [up] and [down] in
@@ -644,28 +637,28 @@ object Selectize {
       *
       * Default: 60
       */
-    var scrollDuration: js.UndefOr[Double] = js.native
+    var scrollDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * When searching for multiple terms (separated by a space), this is the operator used. Can be "and" or "or".
       *
       * Default: "and"
       */
-    var searchConjunction: js.UndefOr[String] = js.native
+    var searchConjunction: js.UndefOr[String] = js.undefined
     
     /**
       * An array of property names to analyze when filtering options.
       *
       * Default: ["text"]
       */
-    var searchField: js.UndefOr[String | js.Array[String]] = js.native
+    var searchField: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * If true, the tab key will choose the currently selected item.
       *
       * Default: false
       */
-    var selectOnTab: js.UndefOr[Boolean] = js.native
+    var selectOnTab: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A single field or an array of fields to sort by. Each item in the array should be an object containing at
@@ -677,14 +670,14 @@ object Selectize {
       *
       * Default: "$order"
       */
-    var sortField: js.UndefOr[String | js.Array[Direction]] = js.native
+    var sortField: js.UndefOr[String | js.Array[Direction]] = js.undefined
     
     /**
       * The name of the property to use as the "value" when an item is selected.
       *
       * Default: "value"
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object IOptions {
     
@@ -695,7 +688,7 @@ object Selectize {
     }
     
     @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions[_, _], T, U] (val x: Self with (IOptions[T, U])) extends AnyVal {
+    implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?], T, U] (val x: Self & (IOptions[T, U])) extends AnyVal {
       
       @scala.inline
       def setAddPrecedence(value: Boolean): Self = StObject.set(x, "addPrecedence", value.asInstanceOf[js.Any])
@@ -797,7 +790,7 @@ object Selectize {
       def setLabelFieldUndefined: Self = StObject.set(x, "labelField", js.undefined)
       
       @scala.inline
-      def setLoad(value: (/* query */ String, /* callback */ js.Function) => _): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      def setLoad(value: (/* query */ String, /* callback */ js.Function) => js.Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLoadThrottle(value: Double): Self = StObject.set(x, "loadThrottle", value.asInstanceOf[js.Any])
@@ -827,85 +820,85 @@ object Selectize {
       def setMaxOptionsUndefined: Self = StObject.set(x, "maxOptions", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: () => _): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
+      def setOnBlur(value: () => js.Any): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* value */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnClear(value: () => _): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+      def setOnClear(value: () => js.Any): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
       @scala.inline
-      def setOnDelete(value: /* values */ js.Array[T] => _): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
+      def setOnDelete(value: /* values */ js.Array[T] => js.Any): Self = StObject.set(x, "onDelete", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
       @scala.inline
-      def setOnDropdownClose(value: /* dropdown */ JQuery => _): Self = StObject.set(x, "onDropdownClose", js.Any.fromFunction1(value))
+      def setOnDropdownClose(value: /* dropdown */ JQuery => js.Any): Self = StObject.set(x, "onDropdownClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDropdownCloseUndefined: Self = StObject.set(x, "onDropdownClose", js.undefined)
       
       @scala.inline
-      def setOnDropdownOpen(value: /* dropdown */ JQuery => _): Self = StObject.set(x, "onDropdownOpen", js.Any.fromFunction1(value))
+      def setOnDropdownOpen(value: /* dropdown */ JQuery => js.Any): Self = StObject.set(x, "onDropdownOpen", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDropdownOpenUndefined: Self = StObject.set(x, "onDropdownOpen", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: () => _): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
+      def setOnFocus(value: () => js.Any): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnInitialize(value: () => _): Self = StObject.set(x, "onInitialize", js.Any.fromFunction0(value))
+      def setOnInitialize(value: () => js.Any): Self = StObject.set(x, "onInitialize", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnInitializeUndefined: Self = StObject.set(x, "onInitialize", js.undefined)
       
       @scala.inline
-      def setOnItemAdd(value: (/* value */ T, /* item */ JQuery) => _): Self = StObject.set(x, "onItemAdd", js.Any.fromFunction2(value))
+      def setOnItemAdd(value: (/* value */ T, /* item */ JQuery) => js.Any): Self = StObject.set(x, "onItemAdd", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnItemAddUndefined: Self = StObject.set(x, "onItemAdd", js.undefined)
       
       @scala.inline
-      def setOnItemRemove(value: /* value */ T => _): Self = StObject.set(x, "onItemRemove", js.Any.fromFunction1(value))
+      def setOnItemRemove(value: /* value */ T => js.Any): Self = StObject.set(x, "onItemRemove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemRemoveUndefined: Self = StObject.set(x, "onItemRemove", js.undefined)
       
       @scala.inline
-      def setOnLoad(value: /* data */ js.Array[U] => _): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      def setOnLoad(value: /* data */ js.Array[U] => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
       @scala.inline
-      def setOnOptionAdd(value: (/* value */ T, /* data */ U) => _): Self = StObject.set(x, "onOptionAdd", js.Any.fromFunction2(value))
+      def setOnOptionAdd(value: (/* value */ T, /* data */ U) => js.Any): Self = StObject.set(x, "onOptionAdd", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnOptionAddUndefined: Self = StObject.set(x, "onOptionAdd", js.undefined)
       
       @scala.inline
-      def setOnOptionRemove(value: /* value */ T => _): Self = StObject.set(x, "onOptionRemove", js.Any.fromFunction1(value))
+      def setOnOptionRemove(value: /* value */ T => js.Any): Self = StObject.set(x, "onOptionRemove", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnOptionRemoveUndefined: Self = StObject.set(x, "onOptionRemove", js.undefined)
       
       @scala.inline
-      def setOnType(value: /* srt */ String => _): Self = StObject.set(x, "onType", js.Any.fromFunction1(value))
+      def setOnType(value: /* srt */ String => js.Any): Self = StObject.set(x, "onType", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTypeUndefined: Self = StObject.set(x, "onType", js.undefined)
@@ -995,7 +988,7 @@ object Selectize {
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
       @scala.inline
-      def setScore(value: /* search */ ISearch => js.Function1[/* item */ _, Double]): Self = StObject.set(x, "score", js.Any.fromFunction1(value))
+      def setScore(value: /* search */ ISearch => js.Function1[/* item */ js.Any, Double]): Self = StObject.set(x, "score", js.Any.fromFunction1(value))
       
       @scala.inline
       def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
@@ -1045,12 +1038,11 @@ object Selectize {
   }
   
   // see https://github.com/selectize/selectize.js/blob/master/docs/plugins.md
-  @js.native
   trait IPluginOption extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.Any = js.native
+    var options: js.Any
   }
   object IPluginOption {
     
@@ -1071,33 +1063,32 @@ object Selectize {
     }
   }
   
-  @js.native
   trait ISearch extends StObject {
     
     /**
       * A list of matched results. Each result is an object containing two properties: "score" and "id".
       */
-    var items: js.Array[ISearchResult] = js.native
+    var items: js.Array[ISearchResult]
     
     /**
       * Original search options.
       */
-    var options: js.Any = js.native
+    var options: js.Any
     
     /**
       * The raw user input
       */
-    var query: String = js.native
+    var query: String
     
     /**
       * An array containing parsed search tokens. A token is an object containing two properties: "string" and "regex".
       */
-    var tokens: js.Array[ISearchToken] = js.native
+    var tokens: js.Array[ISearchToken]
     
     /**
       * The total number of results.
       */
-    var total: Double = js.native
+    var total: Double
   }
   object ISearch {
     
@@ -1139,12 +1130,11 @@ object Selectize {
     }
   }
   
-  @js.native
   trait ISearchResult extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var score: Double = js.native
+    var score: Double
   }
   object ISearchResult {
     
@@ -1165,12 +1155,11 @@ object Selectize {
     }
   }
   
-  @js.native
   trait ISearchToken extends StObject {
     
-    var regex: RegExp = js.native
+    var regex: RegExp
     
-    var string: String = js.native
+    var string: String
   }
   object ISearchToken {
     

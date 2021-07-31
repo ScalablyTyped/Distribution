@@ -3,21 +3,19 @@ package typings.jestCucumber
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsMod {
   
-  @js.native
   trait ErrorOptions extends StObject {
     
-    var missingScenarioInFeature: Boolean = js.native
+    var missingScenarioInFeature: Boolean
     
-    var missingScenarioInStepDefinitions: Boolean = js.native
+    var missingScenarioInStepDefinitions: Boolean
     
-    var missingStepInFeature: Boolean = js.native
+    var missingStepInFeature: Boolean
     
-    var missingStepInStepDefinitions: Boolean = js.native
+    var missingStepInStepDefinitions: Boolean
   }
   object ErrorOptions {
     
@@ -49,12 +47,11 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait FeatureFromStepDefinitions extends StObject {
     
-    var scenarios: js.Array[ScenarioFromStepDefinitions] = js.native
+    var scenarios: js.Array[ScenarioFromStepDefinitions]
     
-    var title: String = js.native
+    var title: String
   }
   object FeatureFromStepDefinitions {
     
@@ -78,16 +75,15 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var errors: js.UndefOr[ErrorOptions | Boolean] = js.native
+    var errors: js.UndefOr[ErrorOptions | Boolean] = js.undefined
     
-    var loadRelativePath: js.UndefOr[Boolean] = js.native
+    var loadRelativePath: js.UndefOr[Boolean] = js.undefined
     
-    var scenarioNameTemplate: js.UndefOr[js.Function1[/* vars */ ScenarioNameTemplateVars, String]] = js.native
+    var scenarioNameTemplate: js.UndefOr[js.Function1[/* vars */ ScenarioNameTemplateVars, String]] = js.undefined
     
-    var tagFilter: js.UndefOr[String] = js.native
+    var tagFilter: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -126,18 +122,17 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ParsedFeature extends StObject {
     
-    var options: Options = js.native
+    var options: Options
     
-    var scenarioOutlines: js.Array[ParsedScenarioOutline] = js.native
+    var scenarioOutlines: js.Array[ParsedScenarioOutline]
     
-    var scenarios: js.Array[ParsedScenario] = js.native
+    var scenarios: js.Array[ParsedScenario]
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
-    var title: String = js.native
+    var title: String
   }
   object ParsedFeature {
     
@@ -182,18 +177,17 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ParsedScenario extends StObject {
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var skippedViaTagFilter: Boolean = js.native
+    var skippedViaTagFilter: Boolean
     
-    var steps: js.Array[ParsedStep] = js.native
+    var steps: js.Array[ParsedStep]
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
-    var title: String = js.native
+    var title: String
   }
   object ParsedScenario {
     
@@ -235,20 +229,19 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ParsedScenarioOutline extends StObject {
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var scenarios: js.Array[ParsedScenario] = js.native
+    var scenarios: js.Array[ParsedScenario]
     
-    var skippedViaTagFilter: Boolean = js.native
+    var skippedViaTagFilter: Boolean
     
-    var steps: js.Array[ParsedStep] = js.native
+    var steps: js.Array[ParsedStep]
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
-    var title: String = js.native
+    var title: String
   }
   object ParsedScenarioOutline {
     
@@ -297,16 +290,15 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ParsedStep extends StObject {
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var stepArgument: String | js.Object = js.native
+    var stepArgument: String | js.Object
     
-    var stepText: String = js.native
+    var stepText: String
   }
   object ParsedStep {
     
@@ -333,12 +325,11 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ScenarioFromStepDefinitions extends StObject {
     
-    var steps: js.Array[StepFromStepDefinitions] = js.native
+    var steps: js.Array[StepFromStepDefinitions]
     
-    var title: String = js.native
+    var title: String
   }
   object ScenarioFromStepDefinitions {
     
@@ -362,16 +353,15 @@ object modelsMod {
     }
   }
   
-  @js.native
   trait ScenarioNameTemplateVars extends StObject {
     
-    var featureTags: js.Array[String] = js.native
+    var featureTags: js.Array[String]
     
-    var featureTitle: String = js.native
+    var featureTitle: String
     
-    var scenarioTags: js.Array[String] = js.native
+    var scenarioTags: js.Array[String]
     
-    var scenarioTitle: String = js.native
+    var scenarioTitle: String
   }
   object ScenarioNameTemplateVars {
     
@@ -412,8 +402,8 @@ object modelsMod {
   @js.native
   trait StepFromStepDefinitions extends StObject {
     
-    def stepFunction(): Unit | js.Thenable[_] = js.native
-    def stepFunction(stepArguments: js.Any): Unit | js.Thenable[_] = js.native
+    def stepFunction(): Unit | js.Thenable[js.Any] = js.native
+    def stepFunction(stepArguments: js.Any): Unit | js.Thenable[js.Any] = js.native
     
     var stepMatcher: String | RegExp = js.native
   }

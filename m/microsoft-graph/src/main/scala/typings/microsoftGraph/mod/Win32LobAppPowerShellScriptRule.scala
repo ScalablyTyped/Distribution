@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Win32LobAppPowerShellScriptRule extends Win32LobAppRule {
+trait Win32LobAppPowerShellScriptRule
+  extends StObject
+     with Win32LobAppRule {
   
   // The script output comparison value. Do not specify a value if the rule is used for detection.
-  var comparisonValue: js.UndefOr[NullableOption[String]] = js.native
+  var comparisonValue: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name for the rule. Do not specify this value if the rule is used for detection.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A value indicating whether a signature check is enforced.
-  var enforceSignatureCheck: js.UndefOr[Boolean] = js.native
+  var enforceSignatureCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The script output comparison operation type. Use NotConfigured (the default value) if the rule is used for detection.
     * Possible values are: notConfigured, string, dateTime, integer, float, version, boolean.
     */
-  var operationType: js.UndefOr[Win32LobAppPowerShellScriptRuleOperationType] = js.native
+  var operationType: js.UndefOr[Win32LobAppPowerShellScriptRuleOperationType] = js.undefined
   
   /**
     * The script output operator. Use NotConfigured (the default value) if the rule is used for detection. Possible values
     * are: notConfigured, equal, notEqual, greaterThan, greaterThanOrEqual, lessThan, lessThanOrEqual.
     */
-  var operator: js.UndefOr[Win32LobAppRuleOperator] = js.native
+  var operator: js.UndefOr[Win32LobAppRuleOperator] = js.undefined
   
   // A value indicating whether the script should run as 32-bit.
-  var runAs32Bit: js.UndefOr[Boolean] = js.native
+  var runAs32Bit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The execution context of the script. Do not specify this value if the rule is used for detection. Script detection
     * rules will run in the same context as the associated app install context.
     */
-  var runAsAccount: js.UndefOr[NullableOption[RunAsAccountType]] = js.native
+  var runAsAccount: js.UndefOr[NullableOption[RunAsAccountType]] = js.undefined
   
   // The base64-encoded script content.
-  var scriptContent: js.UndefOr[NullableOption[String]] = js.native
+  var scriptContent: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Win32LobAppPowerShellScriptRule {
   

@@ -2,7 +2,6 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "ActionCodeURL")
@@ -24,7 +23,10 @@ class ActionCodeURL protected () extends StObject {
 /* static members */
 object ActionCodeURL {
   
-  @JSImport("@firebase/auth-types", "ActionCodeURL.parseLink")
+  @JSImport("@firebase/auth-types", "ActionCodeURL")
   @js.native
-  def parseLink(link: String): ActionCodeURL | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parseLink(link: String): ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[ActionCodeURL | Null]
 }

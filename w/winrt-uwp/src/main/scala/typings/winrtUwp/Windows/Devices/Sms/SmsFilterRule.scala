@@ -3,51 +3,49 @@ package typings.winrtUwp.Windows.Devices.Sms
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes an SMS filtering rule. */
-@js.native
 trait SmsFilterRule extends StObject {
   
   /** A list of broadcast channels that match this rule. */
-  var broadcastChannels: IVector[Double] = js.native
+  var broadcastChannels: IVector[Double]
   
   /** Gets a list of broadcast types for an SMS message that matches this rule. */
-  var broadcastTypes: IVector[SmsBroadcastType] = js.native
+  var broadcastTypes: IVector[SmsBroadcastType]
   
   /** The cellular class identifier for SMS messages that match this rule. */
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
   /** Gets a list of device identifiers for an SMS message that matches this rule. */
-  var deviceIds: IVector[String] = js.native
+  var deviceIds: IVector[String]
   
   /** Gets the IMSI prefixes for an SMS message that matches this rule. */
-  var imsiPrefixes: IVector[String] = js.native
+  var imsiPrefixes: IVector[String]
   
   /** Gets the message type of an SMS message that matches this filter rule. */
-  var messageType: SmsMessageType = js.native
+  var messageType: SmsMessageType
   
   /** Gets a list of port numbers associated with the SMS message that matches this rule. */
-  var portNumbers: IVector[Double] = js.native
+  var portNumbers: IVector[Double]
   
   /** Gets a list of protocol identifiers associated with the SMS message that matches this rule.. */
-  var protocolIds: IVector[Double] = js.native
+  var protocolIds: IVector[Double]
   
   /** Gets the sender numbers associated with an SMS message that matches this rule. */
-  var senderNumbers: IVector[String] = js.native
+  var senderNumbers: IVector[String]
   
   /** Gets the list of teleservice identifiers for an SMS message that matches this rule. */
-  var teleserviceIds: IVector[Double] = js.native
+  var teleserviceIds: IVector[Double]
   
   /** Gets a list of the text message prefixes for an SMS message that matches this filter. */
-  var textMessagePrefixes: IVector[String] = js.native
+  var textMessagePrefixes: IVector[String]
   
   /** Gets a list of WAP application identifiers for the SMS message that matches this rule. */
-  var wapApplicationIds: IVector[String] = js.native
+  var wapApplicationIds: IVector[String]
   
   /** Gets a list of WAP content types for the SMS message that matches this rule. */
-  var wapContentTypes: IVector[String] = js.native
+  var wapContentTypes: IVector[String]
 }
 object SmsFilterRule {
   

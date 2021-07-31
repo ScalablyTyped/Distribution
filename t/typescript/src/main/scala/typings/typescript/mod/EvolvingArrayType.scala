@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EvolvingArrayType extends ObjectType {
+trait EvolvingArrayType
+  extends StObject
+     with ObjectType {
   
-  var elementType: Type = js.native
+  var elementType: Type
   
-  var finalArrayType: js.UndefOr[Type] = js.native
+  var finalArrayType: js.UndefOr[Type] = js.undefined
 }
 object EvolvingArrayType {
   

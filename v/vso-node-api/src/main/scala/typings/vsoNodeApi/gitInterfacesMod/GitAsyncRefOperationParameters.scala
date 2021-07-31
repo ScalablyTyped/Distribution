@@ -2,31 +2,29 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitAsyncRefOperationParameters extends StObject {
   
   /**
     * Proposed target branch name for the cherry pick or revert operation.
     */
-  var generatedRefName: String = js.native
+  var generatedRefName: String
   
   /**
     * The target branch for the cherry pick or revert operation.
     */
-  var ontoRefName: String = js.native
+  var ontoRefName: String
   
   /**
     * The git repository for the cherry pick or revert operation.
     */
-  var repository: GitRepository = js.native
+  var repository: GitRepository
   
   /**
     * Details about the source of the cherry pick or revert operation (e.g. A pull request or a specific commit).
     */
-  var source: GitAsyncRefOperationSource = js.native
+  var source: GitAsyncRefOperationSource
 }
 object GitAsyncRefOperationParameters {
   

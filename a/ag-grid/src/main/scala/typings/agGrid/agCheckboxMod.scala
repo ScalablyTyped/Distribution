@@ -4,7 +4,6 @@ import typings.agGrid.componentMod.Component
 import typings.agGrid.eventsMod.AgEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object agCheckboxMod {
@@ -75,10 +74,11 @@ object agCheckboxMod {
     def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ChangeEvent extends AgEvent {
+  trait ChangeEvent
+    extends StObject
+       with AgEvent {
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object ChangeEvent {
     

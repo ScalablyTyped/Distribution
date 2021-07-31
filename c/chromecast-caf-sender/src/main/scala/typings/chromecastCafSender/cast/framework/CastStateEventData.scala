@@ -2,13 +2,13 @@ package typings.chromecastCafSender.cast.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CastStateEventData extends EventData {
+trait CastStateEventData
+  extends StObject
+     with EventData {
   
-  var castState: CastState = js.native
+  var castState: CastState
 }
 object CastStateEventData {
   

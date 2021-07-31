@@ -2,23 +2,21 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedDiff extends StObject {
   
-  var hunks: js.Array[Hunk] = js.native
+  var hunks: js.Array[Hunk]
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var newFileName: js.UndefOr[String] = js.native
+  var newFileName: js.UndefOr[String] = js.undefined
   
-  var newHeader: js.UndefOr[String] = js.native
+  var newHeader: js.UndefOr[String] = js.undefined
   
-  var oldFileName: js.UndefOr[String] = js.native
+  var oldFileName: js.UndefOr[String] = js.undefined
   
-  var oldHeader: js.UndefOr[String] = js.native
+  var oldHeader: js.UndefOr[String] = js.undefined
 }
 object ParsedDiff {
   

@@ -2,19 +2,17 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedElementTransition extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var fromId: String = js.native
+  var fromId: String
   
-  var interpolation: js.UndefOr[Interpolation] = js.native
+  var interpolation: js.UndefOr[Interpolation] = js.undefined
   
-  var toId: String = js.native
+  var toId: String
 }
 object SharedElementTransition {
   

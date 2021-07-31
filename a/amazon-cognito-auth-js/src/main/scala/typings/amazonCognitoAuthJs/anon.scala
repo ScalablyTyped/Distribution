@@ -2,15 +2,13 @@ package typings.amazonCognitoAuthJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContentType extends StObject {
     
-    var `Content-Type`: String = js.native
+    var `Content-Type`: String
   }
   object ContentType {
     

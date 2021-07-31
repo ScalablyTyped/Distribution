@@ -3,24 +3,22 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/block/Block.BlockPickerStylesProps> */
-@js.native
 trait PartialBlockPickerStylesP extends StObject {
   
-  var body: js.UndefOr[CSSProperties] = js.native
+  var body: js.UndefOr[CSSProperties] = js.undefined
   
-  var card: js.UndefOr[CSSProperties] = js.native
+  var card: js.UndefOr[CSSProperties] = js.undefined
   
-  var head: js.UndefOr[CSSProperties] = js.native
+  var head: js.UndefOr[CSSProperties] = js.undefined
   
-  var input: js.UndefOr[CSSProperties] = js.native
+  var input: js.UndefOr[CSSProperties] = js.undefined
   
-  var label: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.undefined
   
-  var triangle: js.UndefOr[CSSProperties] = js.native
+  var triangle: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialBlockPickerStylesP {
   

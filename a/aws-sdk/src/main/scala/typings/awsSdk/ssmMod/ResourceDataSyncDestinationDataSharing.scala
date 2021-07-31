@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncDestinationDataSharing extends StObject {
   
   /**
     * The sharing data type. Only Organization is supported.
     */
-  var DestinationDataSharingType: js.UndefOr[ResourceDataSyncDestinationDataSharingType] = js.native
+  var DestinationDataSharingType: js.UndefOr[ResourceDataSyncDestinationDataSharingType] = js.undefined
 }
 object ResourceDataSyncDestinationDataSharing {
   

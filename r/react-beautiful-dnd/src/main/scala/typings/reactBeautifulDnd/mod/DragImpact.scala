@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragImpact extends StObject {
   
-  var at: js.UndefOr[ImpactLocation] = js.native
+  var at: js.UndefOr[ImpactLocation] = js.undefined
   
-  var displaced: DisplacementGroups = js.native
+  var displaced: DisplacementGroups
   
-  var displacedBy: DisplacedBy = js.native
+  var displacedBy: DisplacedBy
 }
 object DragImpact {
   

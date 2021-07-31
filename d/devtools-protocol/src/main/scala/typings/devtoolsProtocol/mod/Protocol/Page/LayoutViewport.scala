@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutViewport extends StObject {
   
   /**
     * Height (CSS pixels), excludes scrollbar if present.
     */
-  var clientHeight: integer = js.native
+  var clientHeight: integer
   
   /**
     * Width (CSS pixels), excludes scrollbar if present.
     */
-  var clientWidth: integer = js.native
+  var clientWidth: integer
   
   /**
     * Horizontal offset relative to the document (CSS pixels).
     */
-  var pageX: integer = js.native
+  var pageX: integer
   
   /**
     * Vertical offset relative to the document (CSS pixels).
     */
-  var pageY: integer = js.native
+  var pageY: integer
 }
 object LayoutViewport {
   

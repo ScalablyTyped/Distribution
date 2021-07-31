@@ -2,7 +2,6 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,8 +12,12 @@ object GanttBarDateType extends StObject {
   
   // 0,
   @js.native
-  sealed trait End extends GanttBarDateType
+  sealed trait End
+    extends StObject
+       with GanttBarDateType
   
   @js.native
-  sealed trait Start extends GanttBarDateType
+  sealed trait Start
+    extends StObject
+       with GanttBarDateType
 }

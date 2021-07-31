@@ -5,7 +5,6 @@ import typings.reactSketchapp.propsMod.NumberProp
 import typings.reactSketchapp.propsMod.PathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rectMod {
@@ -17,22 +16,23 @@ object rectMod {
   
   type Rect = Component[RectProps, js.Object, js.Any]
   
-  @js.native
-  trait RectProps extends PathProps {
+  trait RectProps
+    extends StObject
+       with PathProps {
     
-    var height: NumberProp = js.native
+    var height: NumberProp
     
-    var rx: js.UndefOr[NumberProp] = js.native
+    var rx: js.UndefOr[NumberProp] = js.undefined
     
-    var ry: js.UndefOr[NumberProp] = js.native
+    var ry: js.UndefOr[NumberProp] = js.undefined
     
-    var width: NumberProp = js.native
+    var width: NumberProp
     
     @JSName("x")
-    var x_RectProps: NumberProp = js.native
+    var x_RectProps: NumberProp
     
     @JSName("y")
-    var y_RectProps: NumberProp = js.native
+    var y_RectProps: NumberProp
   }
   object RectProps {
     

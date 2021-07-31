@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskParameterValueExpression extends StObject {
   
   /**
     * This field contains an array of 0 or more strings, each 1 to 255 characters in length.
     */
-  var Values: js.UndefOr[MaintenanceWindowTaskParameterValueList] = js.native
+  var Values: js.UndefOr[MaintenanceWindowTaskParameterValueList] = js.undefined
 }
 object MaintenanceWindowTaskParameterValueExpression {
   

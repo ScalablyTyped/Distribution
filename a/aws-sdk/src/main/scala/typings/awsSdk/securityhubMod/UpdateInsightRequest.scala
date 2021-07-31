@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInsightRequest extends StObject {
   
   /**
     * The updated filters that define this insight.
     */
-  var Filters: js.UndefOr[AwsSecurityFindingFilters] = js.native
+  var Filters: js.UndefOr[AwsSecurityFindingFilters] = js.undefined
   
   /**
     * The updated GroupBy attribute that defines this insight.
     */
-  var GroupByAttribute: js.UndefOr[NonEmptyString] = js.native
+  var GroupByAttribute: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the insight that you want to update.
     */
-  var InsightArn: NonEmptyString = js.native
+  var InsightArn: NonEmptyString
   
   /**
     * The updated name for the insight.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
 }
 object UpdateInsightRequest {
   

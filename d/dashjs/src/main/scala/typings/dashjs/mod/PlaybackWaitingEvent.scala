@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.playbackWaiting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlaybackWaitingEvent extends Event {
+trait PlaybackWaitingEvent
+  extends StObject
+     with Event {
   
-  var playingTime: Double | Null = js.native
+  var playingTime: Double | Null
   
   @JSName("type")
-  var type_PlaybackWaitingEvent: playbackWaiting = js.native
+  var type_PlaybackWaitingEvent: playbackWaiting
 }
 object PlaybackWaitingEvent {
   
   @scala.inline
-  def apply(`type`: playbackWaiting): PlaybackWaitingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): PlaybackWaitingEvent = {
+    val __obj = js.Dynamic.literal(playingTime = null)
+    __obj.updateDynamic("type")("playbackWaiting")
     __obj.asInstanceOf[PlaybackWaitingEvent]
   }
   

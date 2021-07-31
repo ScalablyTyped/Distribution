@@ -3,125 +3,96 @@ package typings.d
 import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d", JSImport.Namespace)
-  @js.native
-  def apply(flags: Flags, value: js.Any): PropertyDescriptor = js.native
-  @JSImport("d", JSImport.Namespace)
-  @js.native
-  def apply(flags: Flags, value: js.Any, options: PropertyDescriptor): PropertyDescriptor = js.native
-  @JSImport("d", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any): PropertyDescriptor = js.native
-  @JSImport("d", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any, options: PropertyDescriptor): PropertyDescriptor = js.native
+  @scala.inline
+  def apply(flags: Flags, value: js.Any): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def apply(flags: Flags, value: js.Any, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def apply(value: js.Any): PropertyDescriptor = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def apply(value: js.Any, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
   
-  @JSImport("d", "gs")
+  @JSImport("d", JSImport.Namespace)
   @js.native
-  def gs(flags: GetSetFlags, get: js.UndefOr[scala.Nothing], set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ js.Any, js.Any], options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
   def gs(
     flags: GetSetFlags,
-    get: js.UndefOr[scala.Nothing],
-    set: js.Function1[/* repeated */ js.Any, _],
+    get: js.Function1[/* repeated */ js.Any, js.Any],
+    set: js.Function1[/* repeated */ js.Any, js.Any]
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(
+    flags: GetSetFlags,
+    get: js.Function1[/* repeated */ js.Any, js.Any],
+    set: js.Function1[/* repeated */ js.Any, js.Any],
     options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ js.Any, _], options: PropertyDescriptor): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
   def gs(
     flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, _],
-    set: js.UndefOr[scala.Nothing],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(
-    flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, _],
-    set: js.Function1[/* repeated */ js.Any, _]
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(
-    flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, _],
-    set: js.Function1[/* repeated */ js.Any, _],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(
-    flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, _],
+    get: js.Function1[/* repeated */ js.Any, js.Any],
     set: Null,
     options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(flags: GetSetFlags, get: Null, set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(
+    flags: GetSetFlags,
+    get: js.Function1[/* repeated */ js.Any, js.Any],
+    set: Unit,
+    options: PropertyDescriptor
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(flags: GetSetFlags, get: Null, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
   def gs(
     flags: GetSetFlags,
     get: Null,
-    set: js.Function1[/* repeated */ js.Any, _],
+    set: js.Function1[/* repeated */ js.Any, js.Any],
     options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(flags: GetSetFlags, options: PropertyDescriptor): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(get: js.UndefOr[scala.Nothing], set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(flags: GetSetFlags, get: Unit, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
   def gs(
-    get: js.UndefOr[scala.Nothing],
-    set: js.Function1[/* repeated */ js.Any, _],
+    flags: GetSetFlags,
+    get: Unit,
+    set: js.Function1[/* repeated */ js.Any, js.Any],
     options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(get: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(flags: GetSetFlags, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: js.Function1[/* repeated */ js.Any, js.Any], set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
   def gs(
-    get: js.Function1[/* repeated */ js.Any, _],
-    set: js.UndefOr[scala.Nothing],
+    get: js.Function1[/* repeated */ js.Any, js.Any],
+    set: js.Function1[/* repeated */ js.Any, js.Any],
     options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(get: js.Function1[/* repeated */ js.Any, _], set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(
-    get: js.Function1[/* repeated */ js.Any, _],
-    set: js.Function1[/* repeated */ js.Any, _],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(get: js.Function1[/* repeated */ js.Any, _], set: Null, options: PropertyDescriptor): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(get: Null, set: js.Function1[/* repeated */ js.Any, _]): PropertyDescriptor = js.native
-  @JSImport("d", "gs")
-  @js.native
-  def gs(get: Null, set: js.Function1[/* repeated */ js.Any, _], options: PropertyDescriptor): PropertyDescriptor = js.native
+  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: js.Function1[/* repeated */ js.Any, js.Any], set: Null, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: js.Function1[/* repeated */ js.Any, js.Any], set: Unit, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: Null, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: Null, set: js.Function1[/* repeated */ js.Any, js.Any], options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: Unit, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  @scala.inline
+  def gs(get: Unit, set: js.Function1[/* repeated */ js.Any, js.Any], options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
   
   /* Rewritten from type alias, can be one of: 
     - typings.d.dStrings.w

@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointConfigurationMod {
@@ -61,6 +60,10 @@ object endpointConfigurationMod {
   /* static members */
   object EndpointConfiguration {
     
+    @JSImport("@pulumi/aws/sagemaker/endpointConfiguration", "EndpointConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,29 +73,23 @@ object endpointConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sagemaker/endpointConfiguration", "EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EndpointConfiguration = js.native
-    @JSImport("@pulumi/aws/sagemaker/endpointConfiguration", "EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EndpointConfiguration = js.native
-    @JSImport("@pulumi/aws/sagemaker/endpointConfiguration", "EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointConfigurationState): EndpointConfiguration = js.native
-    @JSImport("@pulumi/aws/sagemaker/endpointConfiguration", "EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointConfigurationState, opts: CustomResourceOptions): EndpointConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointConfigurationState): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointConfigurationState, opts: CustomResourceOptions): EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointConfiguration]
     
     /**
       * Returns true if the given object is an instance of EndpointConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sagemaker/endpointConfiguration", "EndpointConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean]
   }
   
-  @js.native
   trait EndpointConfigurationArgs extends StObject {
     
     /**
@@ -100,17 +97,17 @@ object endpointConfigurationMod {
       */
     val dataCaptureConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationDataCaptureConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the endpoint configuration. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Fields are documented below.
@@ -119,12 +116,12 @@ object endpointConfigurationMod {
         js.Array[
           Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]
         ]
-      ] = js.native
+      ]
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EndpointConfigurationArgs {
     
@@ -181,30 +178,29 @@ object endpointConfigurationMod {
     }
   }
   
-  @js.native
   trait EndpointConfigurationState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) assigned by AWS to this endpoint configuration.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the parameters to capture input/output of Sagemaker models endpoints. Fields are documented below.
       */
     val dataCaptureConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationDataCaptureConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the endpoint configuration. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Fields are documented below.
@@ -215,12 +211,12 @@ object endpointConfigurationMod {
             Input[typings.pulumiAws.inputMod.sagemaker.EndpointConfigurationProductionVariant]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A mapping of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EndpointConfigurationState {
     

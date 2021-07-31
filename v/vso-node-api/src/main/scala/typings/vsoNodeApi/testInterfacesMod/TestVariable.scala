@@ -2,46 +2,44 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestVariable extends StObject {
   
   /**
     * Description of the test variable
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Id of the test variable
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Name of the test variable
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Project to which the test variable belongs
     */
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
   /**
     * Revision
     */
-  var revision: Double = js.native
+  var revision: Double
   
   /**
     * Url of the test variable
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * List of allowed values
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object TestVariable {
   

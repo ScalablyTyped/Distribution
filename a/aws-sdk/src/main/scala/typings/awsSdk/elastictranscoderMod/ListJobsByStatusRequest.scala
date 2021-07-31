@@ -2,26 +2,24 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsByStatusRequest extends StObject {
   
   /**
     *  To list jobs in chronological order by the date and time that they were submitted, enter true. To list jobs in reverse chronological order, enter false. 
     */
-  var Ascending: js.UndefOr[typings.awsSdk.elastictranscoderMod.Ascending] = js.native
+  var Ascending: js.UndefOr[typings.awsSdk.elastictranscoderMod.Ascending] = js.undefined
   
   /**
     *  When Elastic Transcoder returns more than one page of results, use pageToken in subsequent GET requests to get each successive page of results. 
     */
-  var PageToken: js.UndefOr[Id] = js.native
+  var PageToken: js.UndefOr[Id] = js.undefined
   
   /**
     * To get information about all of the jobs associated with the current AWS account that have a given status, specify the following status: Submitted, Progressing, Complete, Canceled, or Error.
     */
-  var Status: JobStatus = js.native
+  var Status: JobStatus
 }
 object ListJobsByStatusRequest {
   

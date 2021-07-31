@@ -6,14 +6,16 @@ import typings.enzyme.mod.ShallowWrapper
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(s: Instantiable1[/* nodes */ js.Array[Element], ShallowWrapper[js.Object, js.Object, js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].apply(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("@commercetools/enzyme-extensions", JSImport.Namespace)
   @js.native
-  def apply(s: Instantiable1[/* nodes */ js.Array[Element], ShallowWrapper[js.Object, js.Object, js.Object]]): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object enzymeAugmentingMod {
@@ -34,10 +36,9 @@ object mod {
       def until(selector: EnzymeSelector, options: UntilOptions): typings.commercetoolsEnzymeExtensions.mod.enzymeAugmentingMod.ShallowWrapper[P] = js.native
     }
     
-    @js.native
     trait UntilOptions extends StObject {
       
-      var maxDepth: Double = js.native
+      var maxDepth: Double
     }
     object UntilOptions {
       

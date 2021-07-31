@@ -3,7 +3,6 @@ package typings.xrm.Xrm
 import typings.xrm.XrmEnum.ViewType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,24 +35,23 @@ object Url {
     * "&key=value".
     * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
     */
-  @js.native
   trait DialogOpenParameters extends StObject {
     
     /**
       * The unique identifier of the dialog, in Guid format, which is valid for the entity described
       * by: {@link EntityName}
       */
-    var DialogId: String = js.native
+    var DialogId: String
     
     /**
       * The logical name of the entity.
       */
-    var EntityName: String = js.native
+    var EntityName: String
     
     /**
       * The unique identifier for the targeted record.
       */
-    var ObjectId: String = js.native
+    var ObjectId: String
   }
   object DialogOpenParameters {
     
@@ -85,7 +83,6 @@ object Url {
     * @remarks  A member for "pagetype" is not provided.  The value "entityrecord" is required in
     *           the URL, for forms. Example:  "pagetype=entityrecord"
     */
-  @js.native
   trait FormOpenParameters extends StObject {
     
     /**
@@ -94,12 +91,12 @@ object Url {
       * * "true"    (The command bar is displayed.)
       * * "false"   (The command bar is not displayed.)
       */
-    var cmdbar: js.UndefOr[CmdBarDisplay] = js.native
+    var cmdbar: js.UndefOr[CmdBarDisplay] = js.undefined
     
     /**
       * The logical name of the entity.
       */
-    var etn: String = js.native
+    var etn: String
     
     /**
       * Additional parameters can be provided to the request. This can only be used to provide
@@ -107,7 +104,7 @@ object Url {
       * customized for the form.  See example below for setting the selected form.
       * @example Example:  encodeURIComponent("formid={8c9f3e6f-7839-e211-831e-00155db7d98f}");
       */
-    var extraqs: js.UndefOr[String] = js.native
+    var extraqs: js.UndefOr[String] = js.undefined
     
     /**
       * Controls whether the Navigation bar is displayed on the form.
@@ -116,7 +113,7 @@ object Url {
       * * "off"     (The navigation bar is not displayed.)
       * * "entity"  (On an entity form, only the navigation options for related entities are available.)
       */
-    var navbar: js.UndefOr[NavBarDisplay] = js.native
+    var navbar: js.UndefOr[NavBarDisplay] = js.undefined
   }
   object FormOpenParameters {
     
@@ -199,7 +196,6 @@ object Url {
     *
     * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
     */
-  @js.native
   trait ReportOpenParameters extends StObject {
     
     /**
@@ -208,18 +204,18 @@ object Url {
       * * "run"       Executes the report with default filters.
       * * "filter"    Presents the user with the filter editor, and a "Run Report" button.
       */
-    var action: ReportAction = js.native
+    var action: ReportAction
     
     /**
       * The file name of the report.  For out-of-box reports, this parameter enables context-sensitive
       * help.
       */
-    var helpID: js.UndefOr[String] = js.native
+    var helpID: js.UndefOr[String] = js.undefined
     
     /**
       * The unique identifier, held in the report's 'reportid' attribute, in Guid format.
       */
-    var id: String = js.native
+    var id: String
   }
   object ReportOpenParameters {
     
@@ -254,7 +250,6 @@ object Url {
     * @remarks  A member for "pagetype" is not provided.  The value "entitylist" is required in
     *           the URL, for views. Example:  "pagetype=entitylist"
     */
-  @js.native
   trait ViewOpenParameters extends StObject {
     
     /**
@@ -263,12 +258,12 @@ object Url {
       * * "true"    (The command bar is displayed.)
       * * "false"   (The command bar is not displayed.)
       */
-    var cmdbar: js.UndefOr[CmdBarDisplay] = js.native
+    var cmdbar: js.UndefOr[CmdBarDisplay] = js.undefined
     
     /**
       * The logical name of the entity.
       */
-    var etn: String = js.native
+    var etn: String
     
     /**
       * Controls whether the Navigation bar is displayed on the form.
@@ -277,13 +272,13 @@ object Url {
       * * "off"     (The navigation bar is not displayed.)
       * * "entity"  (On an entity form, only the navigation options for related entities are available.)
       */
-    var navbar: js.UndefOr[NavBarDisplay] = js.native
+    var navbar: js.UndefOr[NavBarDisplay] = js.undefined
     
     /**
       * The unique identifier of a view, in Guid format, which is valid for the entity described by
       * {@link etn}.
       */
-    var viewid: String = js.native
+    var viewid: String
     
     /**
       * The type of view identified by {@link viewid}.
@@ -291,7 +286,7 @@ object Url {
       * * 1039    System View
       * * 4230    User View.
       */
-    var viewtype: ViewType = js.native
+    var viewtype: ViewType
   }
   object ViewOpenParameters {
     

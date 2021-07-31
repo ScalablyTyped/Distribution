@@ -9,7 +9,6 @@ import typings.ol.stateMod.State
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageCanvasMod {
@@ -34,22 +33,21 @@ object imageCanvasMod {
   trait ImageCanvasSource
     extends typings.ol.sourceImageMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var canvasFunction: js.UndefOr[FunctionType] = js.native
+    var canvasFunction: js.UndefOr[FunctionType] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var resolutions: js.UndefOr[js.Array[Double]] = js.native
+    var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
   }
   object Options {
     

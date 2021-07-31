@@ -2,14 +2,12 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a single promoted item id. It is a union of various possible
   * types.
   */
-@js.native
 trait SchemaPromotedItemId extends StObject {
   
   /**
@@ -17,26 +15,26 @@ trait SchemaPromotedItemId extends StObject {
     * take the recent upload. If missing, the channel is assumed to be the same
     * channel for which the invideoPromotion is set.
     */
-  var recentlyUploadedBy: js.UndefOr[String] = js.native
+  var recentlyUploadedBy: js.UndefOr[String] = js.undefined
   
   /**
     * Describes the type of the promoted item.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * If the promoted item represents a video, this field represents the unique
     * YouTube ID identifying it. This field will be present only if type has
     * the value video.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
   
   /**
     * If the promoted item represents a website, this field represents the url
     * pointing to the website. This field will be present only if type has the
     * value website.
     */
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaPromotedItemId {
   

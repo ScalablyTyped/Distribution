@@ -4,29 +4,27 @@ import typings.jpm.FFAddonSDK.NSIException
 import typings.jpm.passwordsMod.Credential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormSubmitURL extends StObject {
   
-  var formSubmitURL: js.UndefOr[String] = js.native
+  var formSubmitURL: js.UndefOr[String] = js.undefined
   
-  def onComplete(credentials: js.Array[Credential]): js.Any = js.native
+  def onComplete(credentials: js.Array[Credential]): js.Any
   
-  var onError: js.UndefOr[js.Function1[/* error */ NSIException, _]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ NSIException, js.Any]] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var passwordField: js.UndefOr[String] = js.native
+  var passwordField: js.UndefOr[String] = js.undefined
   
-  var realm: js.UndefOr[String] = js.native
+  var realm: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var usernameField: js.UndefOr[String] = js.native
+  var usernameField: js.UndefOr[String] = js.undefined
 }
 object FormSubmitURL {
   
@@ -49,7 +47,7 @@ object FormSubmitURL {
     def setOnComplete(value: js.Array[Credential] => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: /* error */ NSIException => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: /* error */ NSIException => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)

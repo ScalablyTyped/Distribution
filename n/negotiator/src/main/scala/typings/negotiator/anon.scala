@@ -2,15 +2,13 @@ package typings.negotiator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: typings.negotiator.mod.Headers = js.native
+    var headers: typings.negotiator.mod.Headers
   }
   object Headers {
     

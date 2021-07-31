@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallTranscriptionInfo extends StObject {
   
   // The state modified time in UTC.
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Possible values are: notStarted, active, inactive.
-  var state: js.UndefOr[CallTranscriptionState] = js.native
+  var state: js.UndefOr[CallTranscriptionState] = js.undefined
 }
 object CallTranscriptionInfo {
   

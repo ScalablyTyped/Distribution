@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistItemStatus extends StObject {
   
   /** This resource's privacy status. */
-  var privacyStatus: js.UndefOr[String] = js.native
+  var privacyStatus: js.UndefOr[String] = js.undefined
 }
 object PlaylistItemStatus {
   

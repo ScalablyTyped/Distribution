@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedGroupConfig extends StObject {
   
   /** Output only. The name of the Instance Group Manager for this group. */
-  var instanceGroupManagerName: js.UndefOr[String] = js.native
+  var instanceGroupManagerName: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of the Instance Template used for the Managed Instance Group. */
-  var instanceTemplateName: js.UndefOr[String] = js.native
+  var instanceTemplateName: js.UndefOr[String] = js.undefined
 }
 object ManagedGroupConfig {
   

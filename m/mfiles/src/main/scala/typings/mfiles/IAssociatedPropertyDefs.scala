@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAssociatedPropertyDefs extends StObject {
   
-  def Add(Index: Double, AssociatedPropertyDef: IAssociatedPropertyDef): Unit = js.native
+  def Add(Index: Double, AssociatedPropertyDef: IAssociatedPropertyDef): Unit
   
-  def Clone(): IAssociatedPropertyDefs = js.native
+  def Clone(): IAssociatedPropertyDefs
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IAssociatedPropertyDef = js.native
+  def Item(Index: Double): IAssociatedPropertyDef
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IAssociatedPropertyDefs {
   

@@ -2,14 +2,14 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Member
-@js.native
-trait GetMembersParameters extends GetObjectsParameters {
+trait GetMembersParameters
+  extends StObject
+     with GetObjectsParameters {
   
-  var spaceId: String = js.native
+  var spaceId: String
 }
 object GetMembersParameters {
   

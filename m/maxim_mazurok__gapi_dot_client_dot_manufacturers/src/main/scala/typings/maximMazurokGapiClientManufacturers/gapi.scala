@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientManufacturers.anon.Callback
 import typings.maximMazurokGapiClientManufacturers.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -16,10 +15,9 @@ object gapi {
     
     object manufacturers {
       
-      @js.native
       trait AccountsResource extends StObject {
         
-        var products: ProductsResource = js.native
+        var products: ProductsResource
       }
       object AccountsResource {
         
@@ -37,116 +35,115 @@ object gapi {
         }
       }
       
-      @js.native
       trait Attributes extends StObject {
         
         /** The additional images of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#addlimage. */
-        var additionalImageLink: js.UndefOr[js.Array[Image]] = js.native
+        var additionalImageLink: js.UndefOr[js.Array[Image]] = js.undefined
         
         /** The target age group of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#agegroup. */
-        var ageGroup: js.UndefOr[String] = js.native
+        var ageGroup: js.UndefOr[String] = js.undefined
         
         /** The brand name of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#brand. */
-        var brand: js.UndefOr[String] = js.native
+        var brand: js.UndefOr[String] = js.undefined
         
         /** The capacity of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#capacity. */
-        var capacity: js.UndefOr[Capacity] = js.native
+        var capacity: js.UndefOr[Capacity] = js.undefined
         
         /** The color of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#color. */
-        var color: js.UndefOr[String] = js.native
+        var color: js.UndefOr[String] = js.undefined
         
         /** The count of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#count. */
-        var count: js.UndefOr[Count] = js.native
+        var count: js.UndefOr[Count] = js.undefined
         
         /** The description of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#description. */
-        var description: js.UndefOr[String] = js.native
+        var description: js.UndefOr[String] = js.undefined
         
         /** The disclosure date of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#disclosure. */
-        var disclosureDate: js.UndefOr[String] = js.native
+        var disclosureDate: js.UndefOr[String] = js.undefined
         
         /** A list of excluded destinations. */
-        var excludedDestination: js.UndefOr[js.Array[String]] = js.native
+        var excludedDestination: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The rich format description of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#featuredesc. */
-        var featureDescription: js.UndefOr[js.Array[FeatureDescription]] = js.native
+        var featureDescription: js.UndefOr[js.Array[FeatureDescription]] = js.undefined
         
         /** The flavor of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#flavor. */
-        var flavor: js.UndefOr[String] = js.native
+        var flavor: js.UndefOr[String] = js.undefined
         
         /** The format of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#format. */
-        var format: js.UndefOr[String] = js.native
+        var format: js.UndefOr[String] = js.undefined
         
         /** The target gender of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#gender. */
-        var gender: js.UndefOr[String] = js.native
+        var gender: js.UndefOr[String] = js.undefined
         
         /** The Global Trade Item Number (GTIN) of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#gtin. */
-        var gtin: js.UndefOr[js.Array[String]] = js.native
+        var gtin: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The image of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#image. */
-        var imageLink: js.UndefOr[Image] = js.native
+        var imageLink: js.UndefOr[Image] = js.undefined
         
         /** A list of included destinations. */
-        var includedDestination: js.UndefOr[js.Array[String]] = js.native
+        var includedDestination: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The item group id of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#itemgroupid. */
-        var itemGroupId: js.UndefOr[String] = js.native
+        var itemGroupId: js.UndefOr[String] = js.undefined
         
         /** The material of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#material. */
-        var material: js.UndefOr[String] = js.native
+        var material: js.UndefOr[String] = js.undefined
         
         /** The Manufacturer Part Number (MPN) of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#mpn. */
-        var mpn: js.UndefOr[String] = js.native
+        var mpn: js.UndefOr[String] = js.undefined
         
         /** The pattern of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#pattern. */
-        var pattern: js.UndefOr[String] = js.native
+        var pattern: js.UndefOr[String] = js.undefined
         
         /** The details of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#productdetail. */
-        var productDetail: js.UndefOr[js.Array[ProductDetail]] = js.native
+        var productDetail: js.UndefOr[js.Array[ProductDetail]] = js.undefined
         
         /** The name of the group of products related to the product. For more information, see https://support.google.com/manufacturers/answer/6124116#productline. */
-        var productLine: js.UndefOr[String] = js.native
+        var productLine: js.UndefOr[String] = js.undefined
         
         /** The canonical name of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#productname. */
-        var productName: js.UndefOr[String] = js.native
+        var productName: js.UndefOr[String] = js.undefined
         
         /** The URL of the detail page of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#productpage. */
-        var productPageUrl: js.UndefOr[String] = js.native
+        var productPageUrl: js.UndefOr[String] = js.undefined
         
         /** The type or category of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#producttype. */
-        var productType: js.UndefOr[js.Array[String]] = js.native
+        var productType: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The release date of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#release. */
-        var releaseDate: js.UndefOr[String] = js.native
+        var releaseDate: js.UndefOr[String] = js.undefined
         
         /** Rich product content. For more information, see https://support.google.com/manufacturers/answer/9389865 */
-        var richProductContent: js.UndefOr[js.Array[String]] = js.native
+        var richProductContent: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The scent of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#scent. */
-        var scent: js.UndefOr[String] = js.native
+        var scent: js.UndefOr[String] = js.undefined
         
         /** The size of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#size. */
-        var size: js.UndefOr[String] = js.native
+        var size: js.UndefOr[String] = js.undefined
         
         /** The size system of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#sizesystem. */
-        var sizeSystem: js.UndefOr[String] = js.native
+        var sizeSystem: js.UndefOr[String] = js.undefined
         
         /** The size type of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#sizetype. */
-        var sizeType: js.UndefOr[String] = js.native
+        var sizeType: js.UndefOr[String] = js.undefined
         
         /** The suggested retail price (MSRP) of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#price. */
-        var suggestedRetailPrice: js.UndefOr[Price] = js.native
+        var suggestedRetailPrice: js.UndefOr[Price] = js.undefined
         
         /** The target client id. Should only be used in the accounts of the data partners. */
-        var targetClientId: js.UndefOr[String] = js.native
+        var targetClientId: js.UndefOr[String] = js.undefined
         
         /** The theme of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#theme. */
-        var theme: js.UndefOr[String] = js.native
+        var theme: js.UndefOr[String] = js.undefined
         
         /** The title of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#title. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /** The videos of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#video. */
-        var videoLink: js.UndefOr[js.Array[String]] = js.native
+        var videoLink: js.UndefOr[js.Array[String]] = js.undefined
       }
       object Attributes {
         
@@ -404,14 +401,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Capacity extends StObject {
         
         /** The unit of the capacity, i.e., MB, GB, or TB. */
-        var unit: js.UndefOr[String] = js.native
+        var unit: js.UndefOr[String] = js.undefined
         
         /** The numeric value of the capacity. */
-        var value: js.UndefOr[String] = js.native
+        var value: js.UndefOr[String] = js.undefined
       }
       object Capacity {
         
@@ -438,14 +434,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Count extends StObject {
         
         /** The unit in which these products are counted. */
-        var unit: js.UndefOr[String] = js.native
+        var unit: js.UndefOr[String] = js.undefined
         
         /** The numeric value of the number of products in a package. */
-        var value: js.UndefOr[String] = js.native
+        var value: js.UndefOr[String] = js.undefined
       }
       object Count {
         
@@ -472,14 +467,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait DestinationStatus extends StObject {
         
         /** The name of the destination. */
-        var destination: js.UndefOr[String] = js.native
+        var destination: js.UndefOr[String] = js.undefined
         
         /** The status of the destination. */
-        var status: js.UndefOr[String] = js.native
+        var status: js.UndefOr[String] = js.undefined
       }
       object DestinationStatus {
         
@@ -507,20 +501,18 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait FeatureDescription extends StObject {
         
         /** A short description of the feature. */
-        var headline: js.UndefOr[String] = js.native
+        var headline: js.UndefOr[String] = js.undefined
         
         /** An optional image describing the feature. */
-        var image: js.UndefOr[Image] = js.native
+        var image: js.UndefOr[Image] = js.undefined
         
         /** A detailed description of the feature. */
-        var text: js.UndefOr[String] = js.native
+        var text: js.UndefOr[String] = js.undefined
       }
       object FeatureDescription {
         
@@ -553,17 +545,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait Image extends StObject {
         
         /** The URL of the image. For crawled images, this is the provided URL. For uploaded images, this is a serving URL from Google if the image has been processed successfully. */
-        var imageUrl: js.UndefOr[String] = js.native
+        var imageUrl: js.UndefOr[String] = js.undefined
         
         /** The status of the image. @OutputOnly */
-        var status: js.UndefOr[String] = js.native
+        var status: js.UndefOr[String] = js.undefined
         
         /** The type of the image, i.e., crawled or uploaded. @OutputOnly */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object Image {
         
@@ -596,32 +587,31 @@ object gapi {
         }
       }
       
-      @js.native
       trait Issue extends StObject {
         
         /** If present, the attribute that triggered the issue. For more information about attributes, see https://support.google.com/manufacturers/answer/6124116. */
-        var attribute: js.UndefOr[String] = js.native
+        var attribute: js.UndefOr[String] = js.undefined
         
         /** Longer description of the issue focused on how to resolve it. */
-        var description: js.UndefOr[String] = js.native
+        var description: js.UndefOr[String] = js.undefined
         
         /** The destination this issue applies to. */
-        var destination: js.UndefOr[String] = js.native
+        var destination: js.UndefOr[String] = js.undefined
         
         /** What needs to happen to resolve the issue. */
-        var resolution: js.UndefOr[String] = js.native
+        var resolution: js.UndefOr[String] = js.undefined
         
         /** The severity of the issue. */
-        var severity: js.UndefOr[String] = js.native
+        var severity: js.UndefOr[String] = js.undefined
         
         /** The timestamp when this issue appeared. */
-        var timestamp: js.UndefOr[String] = js.native
+        var timestamp: js.UndefOr[String] = js.undefined
         
         /** Short title describing the nature of the issue. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
         
         /** The server-generated type of the issue, for example, “INCORRECT_TEXT_FORMATTING”, “IMAGE_NOT_SERVEABLE”, etc. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object Issue {
         
@@ -684,14 +674,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ListProductsResponse extends StObject {
         
         /** The token for the retrieval of the next page of product statuses. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** List of the products. */
-        var products: js.UndefOr[js.Array[Product]] = js.native
+        var products: js.UndefOr[js.Array[Product]] = js.undefined
       }
       object ListProductsResponse {
         
@@ -721,14 +710,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Price extends StObject {
         
         /** The numeric value of the price. */
-        var amount: js.UndefOr[String] = js.native
+        var amount: js.UndefOr[String] = js.undefined
         
         /** The currency in which the price is denoted. */
-        var currency: js.UndefOr[String] = js.native
+        var currency: js.UndefOr[String] = js.undefined
       }
       object Price {
         
@@ -755,36 +743,35 @@ object gapi {
         }
       }
       
-      @js.native
       trait Product extends StObject {
         
         /** Attributes of the product uploaded to the Manufacturer Center. Manually edited attributes are taken into account. */
-        var attributes: js.UndefOr[Attributes] = js.native
+        var attributes: js.UndefOr[Attributes] = js.undefined
         
         /** The content language of the product as a two-letter ISO 639-1 language code (for example, en). */
-        var contentLanguage: js.UndefOr[String] = js.native
+        var contentLanguage: js.UndefOr[String] = js.undefined
         
         /** The status of the destinations. */
-        var destinationStatuses: js.UndefOr[js.Array[DestinationStatus]] = js.native
+        var destinationStatuses: js.UndefOr[js.Array[DestinationStatus]] = js.undefined
         
         /** A server-generated list of issues associated with the product. */
-        var issues: js.UndefOr[js.Array[Issue]] = js.native
+        var issues: js.UndefOr[js.Array[Issue]] = js.undefined
         
         /**
           * Name in the format `{target_country}:{content_language}:{product_id}`. `target_country` - The target country of the product as a CLDR territory code (for example, US).
           * `content_language` - The content language of the product as a two-letter ISO 639-1 language code (for example, en). `product_id` - The ID of the product. For more information, see
           * https://support.google.com/manufacturers/answer/6124116#id.
           */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Parent ID in the format `accounts/{account_id}`. `account_id` - The ID of the Manufacturer Center account. */
-        var parent: js.UndefOr[String] = js.native
+        var parent: js.UndefOr[String] = js.undefined
         
         /** The ID of the product. For more information, see https://support.google.com/manufacturers/answer/6124116#id. */
-        var productId: js.UndefOr[String] = js.native
+        var productId: js.UndefOr[String] = js.undefined
         
         /** The target country of the product as a CLDR territory code (for example, US). */
-        var targetCountry: js.UndefOr[String] = js.native
+        var targetCountry: js.UndefOr[String] = js.undefined
       }
       object Product {
         
@@ -853,17 +840,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait ProductDetail extends StObject {
         
         /** The name of the attribute. */
-        var attributeName: js.UndefOr[String] = js.native
+        var attributeName: js.UndefOr[String] = js.undefined
         
         /** The value of the attribute. */
-        var attributeValue: js.UndefOr[String] = js.native
+        var attributeValue: js.UndefOr[String] = js.undefined
         
         /** A short section name that can be reused between multiple product details. */
-        var sectionName: js.UndefOr[String] = js.native
+        var sectionName: js.UndefOr[String] = js.undefined
       }
       object ProductDetail {
         

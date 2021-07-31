@@ -2,23 +2,21 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputGroup extends StObject {
   
   /**
     * Custom output group name optionally defined by the user.  Only letters, numbers, and the underscore character allowed; only 32 characters allowed.
     */
-  var Name: js.UndefOr[stringMax32] = js.native
+  var Name: js.UndefOr[stringMax32] = js.undefined
   
   /**
     * Settings associated with the output group.
     */
-  var OutputGroupSettings: typings.awsSdk.medialiveMod.OutputGroupSettings = js.native
+  var OutputGroupSettings: typings.awsSdk.medialiveMod.OutputGroupSettings
   
-  var Outputs: listOfOutput = js.native
+  var Outputs: listOfOutput
 }
 object OutputGroup {
   

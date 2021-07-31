@@ -2,21 +2,19 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MongoClientCommonOption extends StObject {
   
   /**
     * Do not make the db an event listener to the original connection.
     */
-  var noListener: js.UndefOr[Boolean] = js.native
+  var noListener: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control if you want to return a cached instance or have a new one created
     */
-  var returnNonCachedInstance: js.UndefOr[Boolean] = js.native
+  var returnNonCachedInstance: js.UndefOr[Boolean] = js.undefined
 }
 object MongoClientCommonOption {
   

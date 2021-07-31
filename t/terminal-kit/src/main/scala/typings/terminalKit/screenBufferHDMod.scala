@@ -5,7 +5,6 @@ import typings.terminalKit.anon.`1`
 import typings.terminalKit.screenBufferMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object screenBufferHDMod {
@@ -16,67 +15,67 @@ object screenBufferHDMod {
     def this(options: typings.terminalKit.anon.Blending) = this()
     def this(options: Options) = this()
   }
+  @JSImport("terminal-kit/ScreenBufferHD", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("terminal-kit/ScreenBufferHD", "loadImage")
-  @js.native
+  @scala.inline
   def loadImage(
     url: String,
     calback: js.Function2[/* error */ js.UndefOr[js.Any], /* image */ js.UndefOr[ScreenBufferHD], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @JSImport("terminal-kit/ScreenBufferHD", "loadImage")
-  @js.native
+  @scala.inline
   def loadImage(
     url: String,
     options: `0`,
     callback: js.Function2[/* error */ js.Any, /* image */ ScreenBufferHD, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Attributes extends StObject {
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var b: Double = js.native
+    var b: Double
     
-    var bgA: js.UndefOr[Double] = js.native
+    var bgA: js.UndefOr[Double] = js.undefined
     
-    var bgB: Double = js.native
+    var bgB: Double
     
-    var bgDefaultColor: js.UndefOr[Boolean] = js.native
+    var bgDefaultColor: js.UndefOr[Boolean] = js.undefined
     
-    var bgG: Double = js.native
+    var bgG: Double
     
-    var bgR: Double = js.native
+    var bgR: Double
     
-    var blink: js.UndefOr[Boolean] = js.native
+    var blink: js.UndefOr[Boolean] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var charTransparency: js.UndefOr[Boolean] = js.native
+    var charTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var defaultColor: js.UndefOr[Boolean] = js.native
+    var defaultColor: js.UndefOr[Boolean] = js.undefined
     
-    var dim: js.UndefOr[Boolean] = js.native
+    var dim: js.UndefOr[Boolean] = js.undefined
     
-    var g: Double = js.native
+    var g: Double
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var r: Double = js.native
+    var r: Double
     
-    var strike: js.UndefOr[Boolean] = js.native
+    var strike: js.UndefOr[Boolean] = js.undefined
     
-    var styleTransparency: js.UndefOr[Boolean] = js.native
+    var styleTransparency: js.UndefOr[Boolean] = js.undefined
     
-    var transparency: js.UndefOr[Boolean] = js.native
+    var transparency: js.UndefOr[Boolean] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object Attributes {
     
@@ -199,46 +198,104 @@ object screenBufferHDMod {
     }
   }
   
-  @js.native
   trait BlendFn extends StObject {
     
-    def hardLight(src: Double, dst: Double): Double = js.native
+    def hardLight(src: Double, dst: Double): Double
     @JSName("hardLight")
-    var hardLight_Original: BlendFunction = js.native
+    var hardLight_Original: BlendFunction
     
-    def multiply(src: Double, dst: Double): Double = js.native
+    def multiply(src: Double, dst: Double): Double
     @JSName("multiply")
-    var multiply_Original: BlendFunction = js.native
+    var multiply_Original: BlendFunction
     
-    def normal(src: Double, dst: Double): Double = js.native
+    def normal(src: Double, dst: Double): Double
     @JSName("normal")
-    var normal_Original: BlendFunction = js.native
+    var normal_Original: BlendFunction
     
-    def overlay(src: Double, dst: Double): Double = js.native
+    def overlay(src: Double, dst: Double): Double
     @JSName("overlay")
-    var overlay_Original: BlendFunction = js.native
+    var overlay_Original: BlendFunction
     
-    def screen(src: Double, dst: Double): Double = js.native
+    def screen(src: Double, dst: Double): Double
     @JSName("screen")
-    var screen_Original: BlendFunction = js.native
+    var screen_Original: BlendFunction
     
-    def softLight(src: Double, dst: Double): Double = js.native
+    def softLight(src: Double, dst: Double): Double
     @JSName("softLight")
-    var softLight_Original: BlendFunction = js.native
+    var softLight_Original: BlendFunction
+  }
+  object BlendFn {
+    
+    @scala.inline
+    def apply(
+      hardLight: (/* src */ Double, /* dst */ Double) => Double,
+      multiply: (/* src */ Double, /* dst */ Double) => Double,
+      normal: (/* src */ Double, /* dst */ Double) => Double,
+      overlay: (/* src */ Double, /* dst */ Double) => Double,
+      screen: (/* src */ Double, /* dst */ Double) => Double,
+      softLight: (/* src */ Double, /* dst */ Double) => Double
+    ): BlendFn = {
+      val __obj = js.Dynamic.literal(hardLight = js.Any.fromFunction2(hardLight), multiply = js.Any.fromFunction2(multiply), normal = js.Any.fromFunction2(normal), overlay = js.Any.fromFunction2(overlay), screen = js.Any.fromFunction2(screen), softLight = js.Any.fromFunction2(softLight))
+      __obj.asInstanceOf[BlendFn]
+    }
+    
+    @scala.inline
+    implicit class BlendFnMutableBuilder[Self <: BlendFn] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setHardLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "hardLight", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setMultiply(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setNormal(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "normal", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOverlay(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "overlay", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setScreen(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "screen", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setSoftLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "softLight", js.Any.fromFunction2(value))
+    }
   }
   
   type BlendFunction = js.Function2[/* src */ Double, /* dst */ Double, Double]
   
-  @js.native
-  trait Blending extends IsBlending {
+  trait Blending
+    extends StObject
+       with IsBlending {
     
-    var blendSrcFgWithDstBg: Boolean = js.native
+    var blendSrcFgWithDstBg: Boolean
     
-    def fn(src: Double, dst: Double): Double = js.native
+    def fn(src: Double, dst: Double): Double
     @JSName("fn")
-    var fn_Original: BlendFunction = js.native
+    var fn_Original: BlendFunction
     
-    var opacity: Double = js.native
+    var opacity: Double
+  }
+  object Blending {
+    
+    @scala.inline
+    def apply(blendSrcFgWithDstBg: Boolean, fn: (/* src */ Double, /* dst */ Double) => Double, opacity: Double): Blending = {
+      val __obj = js.Dynamic.literal(blendSrcFgWithDstBg = blendSrcFgWithDstBg.asInstanceOf[js.Any], fn = js.Any.fromFunction2(fn), opacity = opacity.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Blending]
+    }
+    
+    @scala.inline
+    implicit class BlendingMutableBuilder[Self <: Blending] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBlendSrcFgWithDstBg(value: Boolean): Self = StObject.set(x, "blendSrcFgWithDstBg", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFn(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 

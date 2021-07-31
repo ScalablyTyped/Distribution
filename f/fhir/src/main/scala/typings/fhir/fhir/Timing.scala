@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A timing schedule that specifies an event that may occur multiple times
   */
-@js.native
-trait Timing extends Element {
+trait Timing
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'event'.
     */
-  var _event: js.UndefOr[js.Array[Element]] = js.native
+  var _event: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * BID | TID | QID | AM | PM | QD | QOD | Q4H | Q6H +
     */
-  var code: js.UndefOr[CodeableConcept] = js.native
+  var code: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When the event occurs
     */
-  var event: js.UndefOr[js.Array[dateTime]] = js.native
+  var event: js.UndefOr[js.Array[dateTime]] = js.undefined
   
   /**
     * When the event is to occur
     */
-  var repeat: js.UndefOr[TimingRepeat] = js.native
+  var repeat: js.UndefOr[TimingRepeat] = js.undefined
 }
 object Timing {
   

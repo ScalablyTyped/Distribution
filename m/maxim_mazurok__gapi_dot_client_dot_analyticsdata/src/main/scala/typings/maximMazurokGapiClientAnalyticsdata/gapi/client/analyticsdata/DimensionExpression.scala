@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionExpression extends StObject {
   
   /** Used to combine dimension values to a single dimension. For example, dimension "country, city": concatenate(country, ", ", city). */
-  var concatenate: js.UndefOr[ConcatenateExpression] = js.native
+  var concatenate: js.UndefOr[ConcatenateExpression] = js.undefined
   
   /** Used to convert a dimension value to lower case. */
-  var lowerCase: js.UndefOr[CaseExpression] = js.native
+  var lowerCase: js.UndefOr[CaseExpression] = js.undefined
   
   /** Used to convert a dimension value to upper case. */
-  var upperCase: js.UndefOr[CaseExpression] = js.native
+  var upperCase: js.UndefOr[CaseExpression] = js.undefined
 }
 object DimensionExpression {
   

@@ -11,8 +11,8 @@ Check if your code is running as an npm script
 | Full name          | is-npm |
 | Keywords           | npm, yarn, is, check, detect, env, environment, run, script |
 | # releases         | 4 |
-| # dependents       | 46 |
-| # downloads        | 276394708 |
+| # dependents       | 60 |
+| # downloads        | 337522338 |
 | # stars            | 0 |
 
 ## Links

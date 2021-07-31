@@ -15,7 +15,6 @@ import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`2`
 import typings.reactNativeVectorIcons.reactNativeVectorIconsNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontAwesome5ProMod {
@@ -56,76 +55,47 @@ object fontAwesome5ProMod {
     @scala.inline
     def ToolbarAndroid_=(x: Instantiable0[ToolbarAndroid]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ToolbarAndroid")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(
-      name: String,
-      size: js.UndefOr[scala.Nothing],
-      color: js.UndefOr[scala.Nothing],
-      fa5Style: ValueOf[Brand]
-    ): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: Double, color: js.UndefOr[scala.Nothing], fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: Double, color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
+    @scala.inline
+    def getImageSource(name: String): js.Promise[ImageSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Double, color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Double, color: Unit, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Unit, color: String): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Unit, color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Unit, color: Unit, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
     
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(
-      name: String,
-      size: js.UndefOr[scala.Nothing],
-      color: js.UndefOr[scala.Nothing],
-      fa5Style: ValueOf[Brand]
-    ): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: js.UndefOr[scala.Nothing], color: String): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: js.UndefOr[scala.Nothing], color: String, fa5Style: ValueOf[Brand]): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: Double): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: Double, color: js.UndefOr[scala.Nothing], fa5Style: ValueOf[Brand]): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: Double, color: String): ImageSource = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: Double, color: String, fa5Style: ValueOf[Brand]): ImageSource = js.native
+    @scala.inline
+    def getImageSourceSync(name: String): ImageSource = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any]).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Double, color: String): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Double, color: String, fa5Style: ValueOf[Brand]): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Double, color: Unit, fa5Style: ValueOf[Brand]): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Unit, color: String): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Unit, color: String, fa5Style: ValueOf[Brand]): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Unit, color: Unit, fa5Style: ValueOf[Brand]): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any], fa5Style.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
     
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.hasIcon")
-    @js.native
-    def hasIcon(name: String): Boolean = js.native
+    @scala.inline
+    def hasIcon(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasIcon")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.loadFont")
-    @js.native
-    def loadFont(): js.Promise[Unit] = js.native
-    @JSImport("react-native-vector-icons/FontAwesome5Pro", "default.loadFont")
-    @js.native
-    def loadFont(file: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def loadFont(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")().asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def loadFont(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
   
   object FA5Style {

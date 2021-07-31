@@ -3,13 +3,11 @@ package typings.athenajs.mod
 import typings.athenajs.anon.InstantiableEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FXInstance extends StObject {
   
-  def addFX(fxName: String, FxClass: InstantiableEffect): Unit = js.native
+  def addFX(fxName: String, FxClass: InstantiableEffect): Unit
 }
 object FXInstance {
   

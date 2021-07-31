@@ -9,40 +9,40 @@ import typings.vegaTypings.vegaTypingsStrings.end
 import typings.vegaTypings.vegaTypingsStrings.label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LabelTransform extends _Transforms {
+trait LabelTransform
+  extends StObject
+     with _Transforms {
   
-  var anchor: js.UndefOr[js.Array[String] | String | SignalRef] = js.native
+  var anchor: js.UndefOr[js.Array[String] | String | SignalRef] = js.undefined
   
-  var as: js.UndefOr[(Vector7[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector7[String | SignalRef]) | SignalRef] = js.undefined
   
-  var avoidBaseMark: js.UndefOr[Boolean | SignalRef] = js.native
+  var avoidBaseMark: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var avoidMarks: js.UndefOr[js.Array[String]] = js.native
+  var avoidMarks: js.UndefOr[js.Array[String]] = js.undefined
   
-  var lineAnchor: js.UndefOr[begin | end | SignalRef] = js.native
+  var lineAnchor: js.UndefOr[begin | end | SignalRef] = js.undefined
   
-  var markIndex: js.UndefOr[Double] = js.native
+  var markIndex: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[js.Array[Double] | Double | SignalRef] = js.native
+  var offset: js.UndefOr[js.Array[Double] | Double | SignalRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var size: (Vector2[Double | SignalRef]) | SignalRef = js.native
+  var size: (Vector2[Double | SignalRef]) | SignalRef
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: label = js.native
+  var `type`: label
 }
 object LabelTransform {
   
   @scala.inline
-  def apply(size: (Vector2[Double | SignalRef]) | SignalRef, `type`: label): LabelTransform = {
+  def apply(size: (Vector2[Double | SignalRef]) | SignalRef): LabelTransform = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("label")
     __obj.asInstanceOf[LabelTransform]
   }
   

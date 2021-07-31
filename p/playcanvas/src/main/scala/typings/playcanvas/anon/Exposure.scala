@@ -2,43 +2,41 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exposure extends StObject {
   
-  var exposure: Double = js.native
+  var exposure: Double
   
-  var fog: String = js.native
+  var fog: String
   
-  var fog_color: js.Array[Double] = js.native
+  var fog_color: js.Array[Double]
   
-  var fog_density: Double = js.native
+  var fog_density: Double
   
-  var fog_end: Double = js.native
+  var fog_end: Double
   
-  var fog_start: Double = js.native
+  var fog_start: Double
   
-  var gamma_correction: Double = js.native
+  var gamma_correction: Double
   
-  var global_ambient: js.Array[Double] = js.native
+  var global_ambient: js.Array[Double]
   
-  var lightmapMaxResolution: Double = js.native
+  var lightmapMaxResolution: Double
   
-  var lightmapMode: Double = js.native
+  var lightmapMode: Double
   
-  var lightmapSizeMultiplier: Double = js.native
+  var lightmapSizeMultiplier: Double
   
-  var skybox: js.UndefOr[Double | Null] = js.native
+  var skybox: js.UndefOr[Double | Null] = js.undefined
   
-  var skyboxIntensity: Double = js.native
+  var skyboxIntensity: Double
   
-  var skyboxMip: Double = js.native
+  var skyboxMip: Double
   
-  var skyboxRotation: js.Array[Double] = js.native
+  var skyboxRotation: js.Array[Double]
   
-  var tonemapping: Double = js.native
+  var tonemapping: Double
 }
 object Exposure {
   

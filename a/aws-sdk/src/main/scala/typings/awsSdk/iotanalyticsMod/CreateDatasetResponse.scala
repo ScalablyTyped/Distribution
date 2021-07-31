@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetResponse extends StObject {
   
   /**
     * The ARN of the dataset.
     */
-  var datasetArn: js.UndefOr[DatasetArn] = js.native
+  var datasetArn: js.UndefOr[DatasetArn] = js.undefined
   
   /**
     * The name of the dataset.
     */
-  var datasetName: js.UndefOr[DatasetName] = js.native
+  var datasetName: js.UndefOr[DatasetName] = js.undefined
   
   /**
     * How long, in days, dataset contents are kept for the dataset.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
 }
 object CreateDatasetResponse {
   

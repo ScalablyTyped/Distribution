@@ -11,33 +11,31 @@ import typings.mjmlReact.mjmlReactStrings.left
 import typings.mjmlReact.mjmlReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlTableProps extends StObject {
   
-  var align: js.UndefOr[left | right | center] = js.native
+  var align: js.UndefOr[left | right | center] = js.undefined
   
-  var cellpadding: js.UndefOr[String] = js.native
+  var cellpadding: js.UndefOr[String] = js.undefined
   
-  var cellspacing: js.UndefOr[String] = js.native
+  var cellspacing: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.native
+  var color: js.UndefOr[ColorProperty] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String | Double] = js.native
+  var fontSize: js.UndefOr[String | Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[String | Double] = js.native
+  var lineHeight: js.UndefOr[String | Double] = js.undefined
   
-  var tableLayout: js.UndefOr[auto | fixed | initial | inherit] = js.native
+  var tableLayout: js.UndefOr[auto | fixed | initial | inherit] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object MjmlTableProps {
   

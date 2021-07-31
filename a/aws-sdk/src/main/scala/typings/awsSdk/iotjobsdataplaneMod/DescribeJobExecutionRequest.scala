@@ -2,31 +2,29 @@ package typings.awsSdk.iotjobsdataplaneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobExecutionRequest extends StObject {
   
   /**
     * Optional. A number that identifies a particular job execution on a particular device. If not specified, the latest job execution is returned.
     */
-  var executionNumber: js.UndefOr[ExecutionNumber] = js.native
+  var executionNumber: js.UndefOr[ExecutionNumber] = js.undefined
   
   /**
     * Optional. When set to true, the response contains the job document. The default is false.
     */
-  var includeJobDocument: js.UndefOr[IncludeJobDocument] = js.native
+  var includeJobDocument: js.UndefOr[IncludeJobDocument] = js.undefined
   
   /**
     * The unique identifier assigned to this job when it was created.
     */
-  var jobId: DescribeJobExecutionJobId = js.native
+  var jobId: DescribeJobExecutionJobId
   
   /**
     * The thing name associated with the device the job execution is running on.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object DescribeJobExecutionRequest {
   

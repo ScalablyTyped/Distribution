@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HTMLMediaElementEventMap extends HTMLElementEventMap {
+trait HTMLMediaElementEventMap
+  extends StObject
+     with HTMLElementEventMap {
   
-  var encrypted: MediaEncryptedEvent = js.native
+  var encrypted: MediaEncryptedEvent
   
-  var waitingforkey: Event = js.native
+  var waitingforkey: Event
 }
 object HTMLMediaElementEventMap {
   

@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait textarea extends baseview {
+trait textarea
+  extends StObject
+     with baseview {
   
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
@@ -70,7 +71,7 @@ trait textarea extends baseview {
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_textarea: textareaConfig = js.native

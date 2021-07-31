@@ -3,13 +3,11 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.rawHandlingMod.PhrasingContentSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenPhrasingContentSchema extends StObject {
   
-  val children: PhrasingContentSchema = js.native
+  val children: PhrasingContentSchema
 }
 object ChildrenPhrasingContentSchema {
   

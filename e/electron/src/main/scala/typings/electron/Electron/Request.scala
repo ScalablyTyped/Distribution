@@ -2,27 +2,25 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
-  var certificate: Certificate = js.native
+  var certificate: Certificate
   
   /**
     * Error code.
     */
-  var errorCode: Double = js.native
+  var errorCode: Double
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var validatedCertificate: Certificate = js.native
+  var validatedCertificate: Certificate
   
   /**
     * Verification result from chromium.
     */
-  var verificationResult: String = js.native
+  var verificationResult: String
 }
 object Request {
   

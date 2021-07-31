@@ -3,13 +3,11 @@ package typings.comDarktalkerCordovaScreenshot
 import typings.comDarktalkerCordovaScreenshot.com_.darktalker.cordova.screenshot.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  var screenshot: Plugin = js.native
+  var screenshot: Plugin
 }
 object Navigator {
   

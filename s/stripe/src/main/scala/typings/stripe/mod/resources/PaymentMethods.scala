@@ -14,7 +14,6 @@ import typings.stripe.mod.paymentMethods.IPaymentMethodType
 import typings.stripe.mod.paymentMethods.IPaymentMethodUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** https://stripe.com/docs/api/payment_methods */

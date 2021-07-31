@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,8 +21,12 @@ sealed trait OpenAs extends StObject
 object OpenAs extends StObject {
   
   @js.native
-  sealed trait FULL_SIZE extends OpenAs
+  sealed trait FULL_SIZE
+    extends StObject
+       with OpenAs
   
   @js.native
-  sealed trait OVERLAY extends OpenAs
+  sealed trait OVERLAY
+    extends StObject
+       with OpenAs
 }

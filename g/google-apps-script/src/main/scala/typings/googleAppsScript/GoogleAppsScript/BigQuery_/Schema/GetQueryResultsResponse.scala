@@ -2,35 +2,33 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryResultsResponse extends StObject {
   
-  var cacheHit: js.UndefOr[Boolean] = js.native
+  var cacheHit: js.UndefOr[Boolean] = js.undefined
   
-  var errors: js.UndefOr[js.Array[ErrorProto]] = js.native
+  var errors: js.UndefOr[js.Array[ErrorProto]] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var jobComplete: js.UndefOr[Boolean] = js.native
+  var jobComplete: js.UndefOr[Boolean] = js.undefined
   
-  var jobReference: js.UndefOr[JobReference] = js.native
+  var jobReference: js.UndefOr[JobReference] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var numDmlAffectedRows: js.UndefOr[String] = js.native
+  var numDmlAffectedRows: js.UndefOr[String] = js.undefined
   
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Array[TableRow]] = js.native
+  var rows: js.UndefOr[js.Array[TableRow]] = js.undefined
   
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
-  var totalRows: js.UndefOr[String] = js.native
+  var totalRows: js.UndefOr[String] = js.undefined
 }
 object GetQueryResultsResponse {
   

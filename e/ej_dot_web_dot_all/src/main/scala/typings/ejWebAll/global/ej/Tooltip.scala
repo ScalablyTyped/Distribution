@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Tooltip")
 @js.native
 class Tooltip protected ()
-  extends typings.ejWebAll.ej.Tooltip {
+  extends StObject
+     with typings.ejWebAll.ej.Tooltip {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,17 +27,17 @@ object Tooltip {
   object Associate extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.Associate with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.Associate & Double] = js.native
     
-    /* 3 */ val Axis: typings.ejWebAll.ej.Tooltip.Associate.Axis with Double = js.native
+    /* 3 */ val Axis: typings.ejWebAll.ej.Tooltip.Associate.Axis & Double = js.native
     
-    /* 2 */ val MouseEnter: typings.ejWebAll.ej.Tooltip.Associate.MouseEnter with Double = js.native
+    /* 2 */ val MouseEnter: typings.ejWebAll.ej.Tooltip.Associate.MouseEnter & Double = js.native
     
-    /* 1 */ val MouseFollow: typings.ejWebAll.ej.Tooltip.Associate.MouseFollow with Double = js.native
+    /* 1 */ val MouseFollow: typings.ejWebAll.ej.Tooltip.Associate.MouseFollow & Double = js.native
     
-    /* 0 */ val Target: typings.ejWebAll.ej.Tooltip.Associate.Target with Double = js.native
+    /* 0 */ val Target: typings.ejWebAll.ej.Tooltip.Associate.Target & Double = js.native
     
-    /* 4 */ val Window: typings.ejWebAll.ej.Tooltip.Associate.Window with Double = js.native
+    /* 4 */ val Window: typings.ejWebAll.ej.Tooltip.Associate.Window & Double = js.native
   }
   
   @JSGlobal("ej.Tooltip.CloseMode")
@@ -45,13 +45,13 @@ object Tooltip {
   object CloseMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.CloseMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.CloseMode & Double] = js.native
     
-    /* 1 */ val Auto: typings.ejWebAll.ej.Tooltip.CloseMode.Auto with Double = js.native
+    /* 1 */ val Auto: typings.ejWebAll.ej.Tooltip.CloseMode.Auto & Double = js.native
     
-    /* 2 */ val None: typings.ejWebAll.ej.Tooltip.CloseMode.None with Double = js.native
+    /* 2 */ val None: typings.ejWebAll.ej.Tooltip.CloseMode.None & Double = js.native
     
-    /* 0 */ val Sticky: typings.ejWebAll.ej.Tooltip.CloseMode.Sticky with Double = js.native
+    /* 0 */ val Sticky: typings.ejWebAll.ej.Tooltip.CloseMode.Sticky & Double = js.native
   }
   
   @JSGlobal("ej.Tooltip.Collision")
@@ -59,15 +59,15 @@ object Tooltip {
   object Collision extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.Collision with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.Collision & Double] = js.native
     
-    /* 1 */ val Fit: typings.ejWebAll.ej.Tooltip.Collision.Fit with Double = js.native
+    /* 1 */ val Fit: typings.ejWebAll.ej.Tooltip.Collision.Fit & Double = js.native
     
-    /* 0 */ val Flip: typings.ejWebAll.ej.Tooltip.Collision.Flip with Double = js.native
+    /* 0 */ val Flip: typings.ejWebAll.ej.Tooltip.Collision.Flip & Double = js.native
     
-    /* 2 */ val FlipFit: typings.ejWebAll.ej.Tooltip.Collision.FlipFit with Double = js.native
+    /* 2 */ val FlipFit: typings.ejWebAll.ej.Tooltip.Collision.FlipFit & Double = js.native
     
-    /* 3 */ val None: typings.ejWebAll.ej.Tooltip.Collision.None with Double = js.native
+    /* 3 */ val None: typings.ejWebAll.ej.Tooltip.Collision.None & Double = js.native
   }
   
   /* static member */
@@ -82,13 +82,13 @@ object Tooltip {
   object Trigger extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.Trigger with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.Trigger & Double] = js.native
     
-    /* 0 */ val Click: typings.ejWebAll.ej.Tooltip.Trigger.Click with Double = js.native
+    /* 0 */ val Click: typings.ejWebAll.ej.Tooltip.Trigger.Click & Double = js.native
     
-    /* 2 */ val Focus: typings.ejWebAll.ej.Tooltip.Trigger.Focus with Double = js.native
+    /* 2 */ val Focus: typings.ejWebAll.ej.Tooltip.Trigger.Focus & Double = js.native
     
-    /* 1 */ val Hover: typings.ejWebAll.ej.Tooltip.Trigger.Hover with Double = js.native
+    /* 1 */ val Hover: typings.ejWebAll.ej.Tooltip.Trigger.Hover & Double = js.native
   }
   
   @JSGlobal("ej.Tooltip.effect")
@@ -96,13 +96,13 @@ object Tooltip {
   object effect extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.effect with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tooltip.effect & Double] = js.native
     
-    /* 2 */ val Fade: typings.ejWebAll.ej.Tooltip.effect.Fade with Double = js.native
+    /* 2 */ val Fade: typings.ejWebAll.ej.Tooltip.effect.Fade & Double = js.native
     
-    /* 0 */ val None: typings.ejWebAll.ej.Tooltip.effect.None with Double = js.native
+    /* 0 */ val None: typings.ejWebAll.ej.Tooltip.effect.None & Double = js.native
     
-    /* 1 */ val Slide: typings.ejWebAll.ej.Tooltip.effect.Slide with Double = js.native
+    /* 1 */ val Slide: typings.ejWebAll.ej.Tooltip.effect.Slide & Double = js.native
   }
   
   /* static member */

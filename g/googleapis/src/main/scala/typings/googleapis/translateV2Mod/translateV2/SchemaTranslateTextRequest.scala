@@ -2,13 +2,11 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main translation request message for the Cloud Translation API.
   */
-@js.native
 trait SchemaTranslateTextRequest extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaTranslateTextRequest extends StObject {
     * value of &quot;html&quot; indicates HTML and a value of &quot;text&quot;
     * indicates plain-text.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The `model` type requested for this translation. Valid values are listed
     * in public documentation.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * The input text to translate. Repeat this parameter to perform translation
     * operations on multiple text inputs.
     */
-  var q: js.UndefOr[js.Array[String]] = js.native
+  var q: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The language of the source text, set to one of the language codes listed
@@ -36,13 +34,13 @@ trait SchemaTranslateTextRequest extends StObject {
     * will attempt to identify the source language automatically and return it
     * within the response.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The language to use for translation of the input text, set to one of the
     * language codes listed in Language Support.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object SchemaTranslateTextRequest {
   

@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,35 +16,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * automatically deploy the &quot;latest ready&quot; Revision from that
   * Configuration.
   */
-@js.native
 trait SchemaRoute extends StObject {
   
   /**
     * The API version for this call such as &quot;v1alpha1&quot;.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of this resource, in this case always &quot;Route&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata associated with this Route, including name, namespace, labels,
     * and annotations.
     */
-  var metadata: js.UndefOr[SchemaObjectMeta] = js.native
+  var metadata: js.UndefOr[SchemaObjectMeta] = js.undefined
   
   /**
     * Spec holds the desired state of the Route (from the client).
     */
-  var spec: js.UndefOr[SchemaRouteSpec] = js.native
+  var spec: js.UndefOr[SchemaRouteSpec] = js.undefined
   
   /**
     * Status communicates the observed state of the Route (from the
     * controller).
     */
-  var status: js.UndefOr[SchemaRouteStatus] = js.native
+  var status: js.UndefOr[SchemaRouteStatus] = js.undefined
 }
 object SchemaRoute {
   

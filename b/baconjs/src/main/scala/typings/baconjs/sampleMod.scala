@@ -5,26 +5,25 @@ import typings.baconjs.observableMod.Property
 import typings.baconjs.observableMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sampleMod {
   
-  @JSImport("baconjs/types/sample", "sampleP")
+  @JSImport("baconjs/types/sample", JSImport.Namespace)
   @js.native
-  def sampleP[V](samplee: Property[V], samplingInterval: Double): EventStream[V] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/sample", "sampledBy")
-  @js.native
-  def sampledBy[V, V2, R](samplee: default[V], sampler: default[V2], f: Combinator[V, V2, R]): default[R] = js.native
+  @scala.inline
+  def sampleP[V](samplee: Property[V], samplingInterval: Double): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleP")(samplee.asInstanceOf[js.Any], samplingInterval.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
-  @JSImport("baconjs/types/sample", "sampledByE")
-  @js.native
-  def sampledByE[V, V2, R](samplee: EventStream[V], sampler: default[V2], f: Combinator[V, V2, R]): default[R] = js.native
+  @scala.inline
+  def sampledBy[V, V2, R](samplee: default[V], sampler: default[V2], f: Combinator[V, V2, R]): default[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampledBy")(samplee.asInstanceOf[js.Any], sampler.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[default[R]]
   
-  @JSImport("baconjs/types/sample", "sampledByP")
-  @js.native
-  def sampledByP[V, V2, R](samplee: Property[V], sampler: default[V2], f: Combinator[V, V2, R]): default[R] = js.native
+  @scala.inline
+  def sampledByE[V, V2, R](samplee: EventStream[V], sampler: default[V2], f: Combinator[V, V2, R]): default[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampledByE")(samplee.asInstanceOf[js.Any], sampler.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[default[R]]
+  
+  @scala.inline
+  def sampledByP[V, V2, R](samplee: Property[V], sampler: default[V2], f: Combinator[V, V2, R]): default[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampledByP")(samplee.asInstanceOf[js.Any], sampler.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[default[R]]
   
   type Combinator[V, V2, R] = js.Function2[/* x */ V, /* y */ V2, R]
 }

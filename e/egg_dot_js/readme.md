@@ -12,7 +12,7 @@ node.js mvc framework
 | Keywords           | egg, framework, mvc, node, javascript, js, framework |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 562 |
+| # downloads        | 838 |
 | # stars            | 0 |
 
 ## Links

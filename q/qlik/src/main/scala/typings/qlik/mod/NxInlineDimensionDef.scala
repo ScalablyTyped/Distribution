@@ -5,23 +5,21 @@ import typings.qlik.qlikStrings.H
 import typings.qlik.qlikStrings.N
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxInlineDimensionDef extends StObject {
   
-  var qActiveField: Double = js.native
+  var qActiveField: Double
   
-  var qFieldDefs: js.Array[String] = js.native
+  var qFieldDefs: js.Array[String]
   
-  var qGrouping: N | H | C = js.native
+  var qGrouping: N | H | C
   
-  var qNumberPresentations: js.Array[FieldAttributes] = js.native
+  var qNumberPresentations: js.Array[FieldAttributes]
   
-  var qReverseSort: Boolean = js.native
+  var qReverseSort: Boolean
   
-  var qSortCriteries: js.Array[SortCriteria] = js.native
+  var qSortCriteries: js.Array[SortCriteria]
 }
 object NxInlineDimensionDef {
   

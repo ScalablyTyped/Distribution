@@ -2,41 +2,39 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolDescriptionType extends StObject {
   
   /**
     * The date the user pool description was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The ID in a user pool description.
     */
-  var Id: js.UndefOr[UserPoolIdType] = js.native
+  var Id: js.UndefOr[UserPoolIdType] = js.undefined
   
   /**
     * The AWS Lambda configuration information in a user pool description.
     */
-  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.native
+  var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
   /**
     * The date the user pool description was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The name in a user pool description.
     */
-  var Name: js.UndefOr[UserPoolNameType] = js.native
+  var Name: js.UndefOr[UserPoolNameType] = js.undefined
   
   /**
     * The user pool status in a user pool description.
     */
-  var Status: js.UndefOr[StatusType] = js.native
+  var Status: js.UndefOr[StatusType] = js.undefined
 }
 object UserPoolDescriptionType {
   

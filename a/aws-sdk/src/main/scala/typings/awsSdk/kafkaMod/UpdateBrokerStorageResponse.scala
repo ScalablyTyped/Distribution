@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBrokerStorageResponse extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait UpdateBrokerStorageResponse extends StObject {
     The Amazon Resource Name (ARN) of the cluster.
     
     */
-  var ClusterArn: js.UndefOr[string] = js.native
+  var ClusterArn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The Amazon Resource Name (ARN) of the cluster operation.
     
     */
-  var ClusterOperationArn: js.UndefOr[string] = js.native
+  var ClusterOperationArn: js.UndefOr[string] = js.undefined
 }
 object UpdateBrokerStorageResponse {
   

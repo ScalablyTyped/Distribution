@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarginStyle extends StObject {
   
   /**
     * This Boolean value controls whether to display sheet margins.
     */
-  var Show: js.UndefOr[scala.Boolean] = js.native
+  var Show: js.UndefOr[scala.Boolean] = js.undefined
 }
 object MarginStyle {
   

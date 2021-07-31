@@ -2,40 +2,36 @@ package typings.rcUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object warningMod {
   
-  @JSImport("rc-util/lib/warning", JSImport.Default)
+  @JSImport("rc-util/lib/warning", JSImport.Namespace)
   @js.native
-  def default(valid: Boolean, message: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-util/lib/warning", "call")
-  @js.native
+  @scala.inline
+  def default(valid: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(valid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def call(
     method: js.Function2[/* valid */ Boolean, /* message */ String, Unit],
     valid: Boolean,
     message: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(method.asInstanceOf[js.Any], valid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-util/lib/warning", "note")
-  @js.native
-  def note(valid: Boolean, message: String): Unit = js.native
+  @scala.inline
+  def note(valid: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("note")(valid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-util/lib/warning", "noteOnce")
-  @js.native
-  def noteOnce(valid: Boolean, message: String): Unit = js.native
+  @scala.inline
+  def noteOnce(valid: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noteOnce")(valid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-util/lib/warning", "resetWarned")
-  @js.native
-  def resetWarned(): Unit = js.native
+  @scala.inline
+  def resetWarned(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetWarned")().asInstanceOf[Unit]
   
-  @JSImport("rc-util/lib/warning", "warning")
-  @js.native
-  def warning(valid: Boolean, message: String): Unit = js.native
+  @scala.inline
+  def warning(valid: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(valid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-util/lib/warning", "warningOnce")
-  @js.native
-  def warningOnce(valid: Boolean, message: String): Unit = js.native
+  @scala.inline
+  def warningOnce(valid: Boolean, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warningOnce")(valid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

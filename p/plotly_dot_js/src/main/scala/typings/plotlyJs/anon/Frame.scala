@@ -3,15 +3,13 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
-  var frame: Duration = js.native
+  var frame: Duration
   
-  var transition: Transition = js.native
+  var transition: Transition
 }
 object Frame {
   

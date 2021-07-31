@@ -4,7 +4,6 @@ import typings.jsforce.streamingMod.Streaming
 import typings.jsforce.streamingMod.StreamingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicMod {

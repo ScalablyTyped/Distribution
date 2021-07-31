@@ -12,7 +12,7 @@ Calculate optimal subnet masks for standard and non-standard IP ranges
 | Keywords           | ip, subnet, network, netmask, calculator, mask |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 141966 |
+| # downloads        | 155390 |
 | # stars            | 1 |
 
 ## Links

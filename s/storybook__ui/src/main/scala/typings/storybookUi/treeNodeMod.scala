@@ -18,7 +18,6 @@ import typings.storybookUi.anon.PickDetailedHTMLPropsHTMLAbout
 import typings.storybookUi.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeNodeMod {
@@ -64,7 +63,7 @@ object treeNodeMod {
         Depth, 
         Theme
       ]
-    ]) with IsExpandable
+    ]) & IsExpandable
   ] = js.native
   
   @JSImport("@storybook/ui/dist/components/sidebar/TreeNode", "Path")

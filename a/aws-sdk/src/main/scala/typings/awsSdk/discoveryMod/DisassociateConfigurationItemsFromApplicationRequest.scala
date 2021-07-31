@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateConfigurationItemsFromApplicationRequest extends StObject {
   
   /**
     * Configuration ID of an application from which each item is disassociated.
     */
-  var applicationConfigurationId: ApplicationId = js.native
+  var applicationConfigurationId: ApplicationId
   
   /**
     * Configuration ID of each item to be disassociated from an application.
     */
-  var configurationIds: ConfigurationIdList = js.native
+  var configurationIds: ConfigurationIdList
 }
 object DisassociateConfigurationItemsFromApplicationRequest {
   

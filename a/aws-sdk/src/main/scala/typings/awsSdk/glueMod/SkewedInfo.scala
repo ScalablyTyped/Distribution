@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkewedInfo extends StObject {
   
   /**
     * A list of names of columns that contain skewed values.
     */
-  var SkewedColumnNames: js.UndefOr[NameStringList] = js.native
+  var SkewedColumnNames: js.UndefOr[NameStringList] = js.undefined
   
   /**
     * A mapping of skewed values to the columns that contain them.
     */
-  var SkewedColumnValueLocationMaps: js.UndefOr[LocationMap] = js.native
+  var SkewedColumnValueLocationMaps: js.UndefOr[LocationMap] = js.undefined
   
   /**
     * A list of values that appear so frequently as to be considered skewed.
     */
-  var SkewedColumnValues: js.UndefOr[ColumnValueStringList] = js.native
+  var SkewedColumnValues: js.UndefOr[ColumnValueStringList] = js.undefined
 }
 object SkewedInfo {
   

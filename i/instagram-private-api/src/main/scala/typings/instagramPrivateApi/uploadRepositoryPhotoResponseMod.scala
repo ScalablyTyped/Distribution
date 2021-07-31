@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadRepositoryPhotoResponseMod {
   
-  @js.native
   trait UploadRepositoryPhotoResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var upload_id: String = js.native
+    var upload_id: String
     
-    var xsharing_nonces: UploadRepositoryPhotoResponseXsharingNonces = js.native
+    var xsharing_nonces: UploadRepositoryPhotoResponseXsharingNonces
   }
   object UploadRepositoryPhotoResponseRootObject {
     
@@ -38,6 +36,5 @@ object uploadRepositoryPhotoResponseMod {
     }
   }
   
-  @js.native
   trait UploadRepositoryPhotoResponseXsharingNonces extends StObject
 }

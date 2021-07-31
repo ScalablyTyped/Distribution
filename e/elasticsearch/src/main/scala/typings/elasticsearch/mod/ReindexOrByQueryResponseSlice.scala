@@ -3,13 +3,13 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.anon.Bulk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReindexOrByQueryResponseSlice extends ReindexResponseBase {
+trait ReindexOrByQueryResponseSlice
+  extends StObject
+     with ReindexResponseBase {
   
-  var slice_id: Double = js.native
+  var slice_id: Double
 }
 object ReindexOrByQueryResponseSlice {
   

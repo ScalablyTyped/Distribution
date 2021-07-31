@@ -2,13 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
-  var variant: js.UndefOr[ResponsiveValue[String, ThemeType]] = js.native
+  var variant: js.UndefOr[ResponsiveValue[String, ThemeType]] = js.undefined
 }
 object ButtonStyleProps {
   
@@ -19,7 +17,7 @@ object ButtonStyleProps {
   }
   
   @scala.inline
-  implicit class ButtonStylePropsMutableBuilder[Self <: ButtonStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with ButtonStyleProps[ThemeType]) extends AnyVal {
+  implicit class ButtonStylePropsMutableBuilder[Self <: ButtonStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ButtonStyleProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setVariant(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])

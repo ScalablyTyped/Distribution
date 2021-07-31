@@ -8,7 +8,6 @@ import typings.akamaiEdgeworkers.anon.Domain
 import typings.akamaiEdgeworkers.anon.ToUTCString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,10 +38,10 @@ object mod {
   class Cookies () extends StObject {
     def this(header: String) = this()
     def this(header: js.Array[String]) = this()
-    def this(header: js.UndefOr[scala.Nothing], options: js.Object) = this()
     def this(header: String, options: js.Object) = this()
     def this(header: js.Array[String], options: js.Object) = this()
     def this(header: Null, options: js.Object) = this()
+    def this(header: Unit, options: js.Object) = this()
     
     /**
       * Adds a cookie.

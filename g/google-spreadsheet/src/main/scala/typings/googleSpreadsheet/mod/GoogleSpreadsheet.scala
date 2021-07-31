@@ -3,12 +3,13 @@ package typings.googleSpreadsheet.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheet")
 @js.native
-class GoogleSpreadsheet protected () extends SpreadsheetBasicProperties {
+class GoogleSpreadsheet protected ()
+  extends StObject
+     with SpreadsheetBasicProperties {
   /**
     * @description
     * create a new Spreadsheet doc

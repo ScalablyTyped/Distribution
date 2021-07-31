@@ -10,9 +10,9 @@ Parser for identifying Twemoji in text
 | ------------------ | :-------------: |
 | Full name          | twemoji-parser |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 1369826 |
+| # releases         | 7 |
+| # dependents       | 10 |
+| # downloads        | 2130250 |
 | # stars            | 0 |
 
 ## Links

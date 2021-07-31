@@ -7,13 +7,13 @@ import typings.vegaTypings.encodeMod.ColorRGB
 import typings.vegaTypings.encodeMod._ColorValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Color extends _ColorValueRef {
+trait Color
+  extends StObject
+     with _ColorValueRef {
   
-  var color: ColorRGB | ColorHSL | ColorLAB | ColorHCL = js.native
+  var color: ColorRGB | ColorHSL | ColorLAB | ColorHCL
 }
 object Color {
   

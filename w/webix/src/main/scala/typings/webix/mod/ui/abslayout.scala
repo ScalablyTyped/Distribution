@@ -3,13 +3,13 @@ package typings.webix.mod.ui
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.abslayout")
 @js.native
 class abslayout ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$skin")
   var $skin_Original_abslayout: WebixCallback = js.native
@@ -20,9 +20,12 @@ class abslayout ()
   def attachEvent(`type`: abslayoutEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: abslayoutEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_abslayout: abslayoutConfig = js.native

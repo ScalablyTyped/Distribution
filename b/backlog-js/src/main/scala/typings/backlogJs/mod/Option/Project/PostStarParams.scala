@@ -2,21 +2,19 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostStarParams extends StObject {
   
-  var commentId: js.UndefOr[Double] = js.native
+  var commentId: js.UndefOr[Double] = js.undefined
   
-  var issueId: js.UndefOr[Double] = js.native
+  var issueId: js.UndefOr[Double] = js.undefined
   
-  var pullRequestCommentId: js.UndefOr[Double] = js.native
+  var pullRequestCommentId: js.UndefOr[Double] = js.undefined
   
-  var pullRequestId: js.UndefOr[Double] = js.native
+  var pullRequestId: js.UndefOr[Double] = js.undefined
   
-  var wikiId: js.UndefOr[Double] = js.native
+  var wikiId: js.UndefOr[Double] = js.undefined
 }
 object PostStarParams {
   

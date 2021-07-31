@@ -3,19 +3,17 @@ package typings.yandexMaps.anon
 import typings.yandexMaps.yandexMapsStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
-  var bottom: js.UndefOr[Double | String | auto] = js.native
+  var bottom: js.UndefOr[Double | String | auto] = js.undefined
   
-  var left: js.UndefOr[Double | String | auto] = js.native
+  var left: js.UndefOr[Double | String | auto] = js.undefined
   
-  var right: js.UndefOr[Double | String | auto] = js.native
+  var right: js.UndefOr[Double | String | auto] = js.undefined
   
-  var top: js.UndefOr[Double | String | auto] = js.native
+  var top: js.UndefOr[Double | String | auto] = js.undefined
 }
 object Left {
   

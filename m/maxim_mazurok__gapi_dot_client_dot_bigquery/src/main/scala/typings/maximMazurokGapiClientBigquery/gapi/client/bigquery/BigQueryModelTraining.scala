@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigQueryModelTraining extends StObject {
   
   /** [Output-only, Beta] Index of current ML training iteration. Updated during create model query job to show job progress. */
-  var currentIteration: js.UndefOr[Double] = js.native
+  var currentIteration: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output-only, Beta] Expected number of iterations for the create model query job specified as num_iterations in the input query. The actual total number of iterations may be less
     * than this number due to early stop.
     */
-  var expectedTotalIterations: js.UndefOr[String] = js.native
+  var expectedTotalIterations: js.UndefOr[String] = js.undefined
 }
 object BigQueryModelTraining {
   

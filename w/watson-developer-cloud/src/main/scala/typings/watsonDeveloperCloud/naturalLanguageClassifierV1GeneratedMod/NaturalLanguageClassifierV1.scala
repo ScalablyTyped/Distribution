@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 import typings.ibmCloudSdkCore.mod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,8 +27,8 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def classify(params: ClassifyParams): js.Promise[_] | Unit = js.native
-  def classify(params: ClassifyParams, callback: Callback[Classification]): js.Promise[_] | Unit = js.native
+  def classify(params: ClassifyParams): js.Promise[js.Any] | Unit = js.native
+  def classify(params: ClassifyParams, callback: Callback[Classification]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Classify multiple phrases.
@@ -46,8 +45,8 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def classifyCollection(params: ClassifyCollectionParams): js.Promise[_] | Unit = js.native
-  def classifyCollection(params: ClassifyCollectionParams, callback: Callback[ClassificationCollection]): js.Promise[_] | Unit = js.native
+  def classifyCollection(params: ClassifyCollectionParams): js.Promise[js.Any] | Unit = js.native
+  def classifyCollection(params: ClassifyCollectionParams, callback: Callback[ClassificationCollection]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * manageClassifiers
@@ -71,8 +70,8 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createClassifier(params: CreateClassifierParams): js.Promise[_] | Unit = js.native
-  def createClassifier(params: CreateClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def createClassifier(params: CreateClassifierParams): js.Promise[js.Any] | Unit = js.native
+  def createClassifier(params: CreateClassifierParams, callback: Callback[Classifier]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete classifier.
@@ -83,8 +82,8 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteClassifier(params: DeleteClassifierParams): js.Promise[_] | Unit = js.native
-  def deleteClassifier(params: DeleteClassifierParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteClassifier(params: DeleteClassifierParams): js.Promise[js.Any] | Unit = js.native
+  def deleteClassifier(params: DeleteClassifierParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get information about a classifier.
@@ -97,8 +96,8 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getClassifier(params: GetClassifierParams): js.Promise[_] | Unit = js.native
-  def getClassifier(params: GetClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def getClassifier(params: GetClassifierParams): js.Promise[js.Any] | Unit = js.native
+  def getClassifier(params: GetClassifierParams, callback: Callback[Classifier]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List classifiers.
@@ -110,8 +109,8 @@ trait NaturalLanguageClassifierV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listClassifiers(): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: js.UndefOr[scala.Nothing], callback: Callback[ClassifierList]): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: ListClassifiersParams): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: ListClassifiersParams, callback: Callback[ClassifierList]): js.Promise[_] | Unit = js.native
+  def listClassifiers(): js.Promise[js.Any] | Unit = js.native
+  def listClassifiers(params: Unit, callback: Callback[ClassifierList]): js.Promise[js.Any] | Unit = js.native
+  def listClassifiers(params: ListClassifiersParams): js.Promise[js.Any] | Unit = js.native
+  def listClassifiers(params: ListClassifiersParams, callback: Callback[ClassifierList]): js.Promise[js.Any] | Unit = js.native
 }

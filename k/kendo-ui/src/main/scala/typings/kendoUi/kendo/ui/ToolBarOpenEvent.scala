@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToolBarOpenEvent extends ToolBarEvent {
+trait ToolBarOpenEvent
+  extends StObject
+     with ToolBarEvent {
   
-  var SplitButton: js.UndefOr[JQuery] = js.native
+  var SplitButton: js.UndefOr[JQuery] = js.undefined
 }
 object ToolBarOpenEvent {
   

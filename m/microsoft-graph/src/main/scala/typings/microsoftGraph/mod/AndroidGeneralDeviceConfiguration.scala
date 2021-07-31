@@ -2,170 +2,170 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AndroidGeneralDeviceConfiguration extends DeviceConfiguration {
+trait AndroidGeneralDeviceConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Indicates whether or not to block clipboard sharing to copy and paste between applications.
-  var appsBlockClipboardSharing: js.UndefOr[Boolean] = js.native
+  var appsBlockClipboardSharing: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block copy and paste within applications.
-  var appsBlockCopyPaste: js.UndefOr[Boolean] = js.native
+  var appsBlockCopyPaste: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the YouTube app.
-  var appsBlockYouTube: js.UndefOr[Boolean] = js.native
+  var appsBlockYouTube: js.UndefOr[Boolean] = js.undefined
   
   // List of apps to be hidden on the KNOX device. This collection can contain a maximum of 500 elements.
-  var appsHideList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var appsHideList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   // List of apps which can be installed on the KNOX device. This collection can contain a maximum of 500 elements.
-  var appsInstallAllowList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var appsInstallAllowList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   /**
     * List of apps which are blocked from being launched on the KNOX device. This collection can contain a maximum of 500
     * elements.
     */
-  var appsLaunchBlockList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var appsLaunchBlockList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   // Indicates whether or not to block Bluetooth.
-  var bluetoothBlocked: js.UndefOr[Boolean] = js.native
+  var bluetoothBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the use of the camera.
-  var cameraBlocked: js.UndefOr[Boolean] = js.native
+  var cameraBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block data roaming.
-  var cellularBlockDataRoaming: js.UndefOr[Boolean] = js.native
+  var cellularBlockDataRoaming: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block SMS/MMS messaging.
-  var cellularBlockMessaging: js.UndefOr[Boolean] = js.native
+  var cellularBlockMessaging: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block voice roaming.
-  var cellularBlockVoiceRoaming: js.UndefOr[Boolean] = js.native
+  var cellularBlockVoiceRoaming: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block syncing Wi-Fi tethering.
-  var cellularBlockWiFiTethering: js.UndefOr[Boolean] = js.native
+  var cellularBlockWiFiTethering: js.UndefOr[Boolean] = js.undefined
   
   // Type of list that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
-  var compliantAppListType: js.UndefOr[AppListType] = js.native
+  var compliantAppListType: js.UndefOr[AppListType] = js.undefined
   
   /**
     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection
     * can contain a maximum of 10000 elements.
     */
-  var compliantAppsList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var compliantAppsList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   // Indicates whether or not to allow device sharing mode.
-  var deviceSharingAllowed: js.UndefOr[Boolean] = js.native
+  var deviceSharingAllowed: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block diagnostic data submission.
-  var diagnosticDataBlockSubmission: js.UndefOr[Boolean] = js.native
+  var diagnosticDataBlockSubmission: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block user performing a factory reset.
-  var factoryResetBlocked: js.UndefOr[Boolean] = js.native
+  var factoryResetBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Google account auto sync.
-  var googleAccountBlockAutoSync: js.UndefOr[Boolean] = js.native
+  var googleAccountBlockAutoSync: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the Google Play store.
-  var googlePlayStoreBlocked: js.UndefOr[Boolean] = js.native
+  var googlePlayStoreBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of apps that will be allowed to run when the device is in Kiosk Mode. This collection can contain a maximum of
     * 500 elements.
     */
-  var kioskModeApps: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var kioskModeApps: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   // Indicates whether or not to block the screen sleep button while in Kiosk Mode.
-  var kioskModeBlockSleepButton: js.UndefOr[Boolean] = js.native
+  var kioskModeBlockSleepButton: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the volume buttons while in Kiosk Mode.
-  var kioskModeBlockVolumeButtons: js.UndefOr[Boolean] = js.native
+  var kioskModeBlockVolumeButtons: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block location services.
-  var locationServicesBlocked: js.UndefOr[Boolean] = js.native
+  var locationServicesBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Near-Field Communication.
-  var nfcBlocked: js.UndefOr[Boolean] = js.native
+  var nfcBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block fingerprint unlock.
-  var passwordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.native
+  var passwordBlockFingerprintUnlock: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Smart Lock and other trust agents.
-  var passwordBlockTrustAgents: js.UndefOr[Boolean] = js.native
+  var passwordBlockTrustAgents: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the password expires. Valid values 1 to 365
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of passwords. Valid values 4 to 16
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before the screen times out.
-  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block. Valid values 0 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to require a password.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of password that is required. Possible values are: deviceDefault, alphabetic, alphanumeric,
     * alphanumericWithSymbols, lowSecurityBiometric, numeric, numericComplex, any.
     */
-  var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[AndroidRequiredPasswordType] = js.undefined
   
   // Number of sign in failures allowed before factory reset. Valid values 1 to 16
-  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to block powering off the device.
-  var powerOffBlocked: js.UndefOr[Boolean] = js.native
+  var powerOffBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block screenshots.
-  var screenCaptureBlocked: js.UndefOr[Boolean] = js.native
+  var screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Require the Android Verify apps feature is turned on.
-  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.native
+  var securityRequireVerifyApps: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Google Backup.
-  var storageBlockGoogleBackup: js.UndefOr[Boolean] = js.native
+  var storageBlockGoogleBackup: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block removable storage usage.
-  var storageBlockRemovableStorage: js.UndefOr[Boolean] = js.native
+  var storageBlockRemovableStorage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require device encryption.
-  var storageRequireDeviceEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireDeviceEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require removable storage encryption.
-  var storageRequireRemovableStorageEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireRemovableStorageEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the use of the Voice Assistant.
-  var voiceAssistantBlocked: js.UndefOr[Boolean] = js.native
+  var voiceAssistantBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block voice dialing.
-  var voiceDialingBlocked: js.UndefOr[Boolean] = js.native
+  var voiceDialingBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the web browser's auto fill feature.
-  var webBrowserBlockAutofill: js.UndefOr[Boolean] = js.native
+  var webBrowserBlockAutofill: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block JavaScript within the web browser.
-  var webBrowserBlockJavaScript: js.UndefOr[Boolean] = js.native
+  var webBrowserBlockJavaScript: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block popups within the web browser.
-  var webBrowserBlockPopups: js.UndefOr[Boolean] = js.native
+  var webBrowserBlockPopups: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the web browser.
-  var webBrowserBlocked: js.UndefOr[Boolean] = js.native
+  var webBrowserBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Cookie settings within the web browser. Possible values are: browserDefault, blockAlways, allowCurrentWebSite,
     * allowFromWebsitesVisited, allowAlways.
     */
-  var webBrowserCookieSettings: js.UndefOr[WebBrowserCookieSettings] = js.native
+  var webBrowserCookieSettings: js.UndefOr[WebBrowserCookieSettings] = js.undefined
   
   // Indicates whether or not to block syncing Wi-Fi.
-  var wiFiBlocked: js.UndefOr[Boolean] = js.native
+  var wiFiBlocked: js.UndefOr[Boolean] = js.undefined
 }
 object AndroidGeneralDeviceConfiguration {
   

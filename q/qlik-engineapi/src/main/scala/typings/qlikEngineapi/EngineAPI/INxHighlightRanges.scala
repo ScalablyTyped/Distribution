@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxHighlightRanges...
   */
-@js.native
 trait INxHighlightRanges extends StObject {
   
   /**
     * Ranges of highlighted values
     */
-  var qRanges: js.Array[ICharRange] = js.native
+  var qRanges: js.Array[ICharRange]
 }
 object INxHighlightRanges {
   

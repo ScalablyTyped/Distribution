@@ -2,17 +2,15 @@ package typings.memoryFs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -33,22 +31,21 @@ object anon {
     }
   }
   
-  @js.native
   trait IsBlockDevice extends StObject {
     
-    def isBlockDevice(): Boolean = js.native
+    def isBlockDevice(): Boolean
     
-    def isCharacterDevice(): Boolean = js.native
+    def isCharacterDevice(): Boolean
     
-    def isDirectory(): Boolean = js.native
+    def isDirectory(): Boolean
     
-    def isFIFO(): Boolean = js.native
+    def isFIFO(): Boolean
     
-    def isFile(): Boolean = js.native
+    def isFile(): Boolean
     
-    def isSocket(): Boolean = js.native
+    def isSocket(): Boolean
     
-    def isSymbolicLink(): Boolean = js.native
+    def isSymbolicLink(): Boolean
   }
   object IsBlockDevice {
     

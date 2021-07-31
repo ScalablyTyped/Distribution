@@ -7,19 +7,17 @@ import typings.mathjs.mathjsStrings.none
 import typings.mathjs.mathjsStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUnitOptions extends StObject {
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var `override`: js.UndefOr[Boolean] = js.native
+  var `override`: js.UndefOr[Boolean] = js.undefined
   
-  var prefixes: js.UndefOr[none | short | long | binary_short | binary_long] = js.native
+  var prefixes: js.UndefOr[none | short | long | binary_short | binary_long] = js.undefined
 }
 object CreateUnitOptions {
   

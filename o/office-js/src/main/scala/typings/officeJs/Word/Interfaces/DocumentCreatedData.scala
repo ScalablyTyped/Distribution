@@ -2,11 +2,9 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
-@js.native
 trait DocumentCreatedData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DocumentCreatedData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var body: js.UndefOr[BodyData] = js.native
+  var body: js.UndefOr[BodyData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentCreatedData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.native
+  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DocumentCreatedData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var properties: js.UndefOr[DocumentPropertiesData] = js.native
+  var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait DocumentCreatedData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var saved: js.UndefOr[Boolean] = js.native
+  var saved: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait DocumentCreatedData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var sections: js.UndefOr[js.Array[SectionData]] = js.native
+  var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
 }
 object DocumentCreatedData {
   

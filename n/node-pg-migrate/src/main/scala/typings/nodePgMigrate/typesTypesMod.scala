@@ -1,11 +1,6 @@
 package typings.nodePgMigrate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodePgMigrate.anon.ReverseAddTypeAttributeFn
-import typings.nodePgMigrate.anon.ReverseCreateTypeFn
-import typings.nodePgMigrate.anon.ReverseRenameTypeAttributeFn
-import typings.nodePgMigrate.anon.ReverseRenameTypeFn
-import typings.nodePgMigrate.anon.ReverseRenameTypeValueFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.IfExistsOption
 import typings.nodePgMigrate.generalTypesMod.IfNotExistsOption
@@ -14,17 +9,22 @@ import typings.nodePgMigrate.generalTypesMod.Type
 import typings.nodePgMigrate.generalTypesMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTypesMod {
   
-  type AddTypeAttribute = AddTypeAttributeFn with ReverseAddTypeAttributeFn
+  @js.native
+  trait AddTypeAttribute extends AddTypeAttributeFn {
+    
+    def reverse(typeName: Name, attributeName: String, attributeType: Type & IfExistsOption): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: AddTypeAttributeFn = js.native
+  }
   
   type AddTypeAttributeFn = js.Function3[
     /* typeName */ Name, 
     /* attributeName */ String, 
-    /* attributeType */ Type with IfExistsOption, 
+    /* attributeType */ Type & IfExistsOption, 
     String | js.Array[String]
   ]
   
@@ -35,12 +35,13 @@ object typesTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
-  trait AddTypeValueOptions extends IfNotExistsOption {
+  trait AddTypeValueOptions
+    extends StObject
+       with IfNotExistsOption {
     
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
   }
   object AddTypeValueOptions {
     
@@ -67,11 +68,17 @@ object typesTypesMod {
     }
   }
   
-  type CreateType = CreateTypeFn with ReverseCreateTypeFn
+  @js.native
+  trait CreateType extends CreateTypeFn {
+    
+    def reverse(typeName: Name, values: (js.Array[Value] | StringDictionary[Type]) & DropOptions): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateTypeFn = js.native
+  }
   
   type CreateTypeFn = js.Function2[
     /* typeName */ Name, 
-    /* values */ (js.Array[Value] | StringDictionary[Type]) with DropOptions, 
+    /* values */ (js.Array[Value] | StringDictionary[Type]) & DropOptions, 
     String | js.Array[String]
   ]
   
@@ -88,9 +95,21 @@ object typesTypesMod {
     String | js.Array[String]
   ]
   
-  type RenameType = RenameTypeFn with ReverseRenameTypeFn
+  @js.native
+  trait RenameType extends RenameTypeFn {
+    
+    def reverse(typeName: Name, newTypeName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameTypeFn = js.native
+  }
   
-  type RenameTypeAttribute = RenameTypeAttributeFn with ReverseRenameTypeAttributeFn
+  @js.native
+  trait RenameTypeAttribute extends RenameTypeAttributeFn {
+    
+    def reverse(typeName: Name, attributeName: String, newAttributeName: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameTypeAttributeFn = js.native
+  }
   
   type RenameTypeAttributeFn = js.Function3[
     /* typeName */ Name, 
@@ -101,7 +120,13 @@ object typesTypesMod {
   
   type RenameTypeFn = js.Function2[/* typeName */ Name, /* newTypeName */ Name, String | js.Array[String]]
   
-  type RenameTypeValue = RenameTypeValueFn with ReverseRenameTypeValueFn
+  @js.native
+  trait RenameTypeValue extends RenameTypeValueFn {
+    
+    def reverse(typeName: Name, value: String, newValue: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameTypeValueFn = js.native
+  }
   
   type RenameTypeValueFn = js.Function3[
     /* typeName */ Name, 

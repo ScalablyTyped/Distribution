@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringBaselineConfig extends StObject {
   
   /**
     * The baseline constraint file in Amazon S3 that the current monitoring job should validated against.
     */
-  var ConstraintsResource: js.UndefOr[MonitoringConstraintsResource] = js.native
+  var ConstraintsResource: js.UndefOr[MonitoringConstraintsResource] = js.undefined
   
   /**
     * The baseline statistics file in Amazon S3 that the current monitoring job should be validated against.
     */
-  var StatisticsResource: js.UndefOr[MonitoringStatisticsResource] = js.native
+  var StatisticsResource: js.UndefOr[MonitoringStatisticsResource] = js.undefined
 }
 object MonitoringBaselineConfig {
   

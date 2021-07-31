@@ -2,29 +2,27 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Annotationlevel extends StObject {
   
-  var annotation_level: String = js.native
+  var annotation_level: String
   
-  var end_column: Double = js.native
+  var end_column: Double
   
-  var end_line: Double = js.native
+  var end_line: Double
   
-  var message: String = js.native
+  var message: String
   
-  var path: String = js.native
+  var path: String
   
-  var raw_details: String = js.native
+  var raw_details: String
   
-  var start_column: Double = js.native
+  var start_column: Double
   
-  var start_line: Double = js.native
+  var start_line: Double
   
-  var title: String = js.native
+  var title: String
 }
 object Annotationlevel {
   

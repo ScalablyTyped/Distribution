@@ -2,26 +2,24 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetHealthDescription extends StObject {
   
   /**
     * The port to use to connect with the target.
     */
-  var HealthCheckPort: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckPort] = js.native
+  var HealthCheckPort: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckPort] = js.undefined
   
   /**
     * The description of the target.
     */
-  var Target: js.UndefOr[TargetDescription] = js.native
+  var Target: js.UndefOr[TargetDescription] = js.undefined
   
   /**
     * The health information for the target.
     */
-  var TargetHealth: js.UndefOr[typings.awsSdk.elbv2Mod.TargetHealth] = js.native
+  var TargetHealth: js.UndefOr[typings.awsSdk.elbv2Mod.TargetHealth] = js.undefined
 }
 object TargetHealthDescription {
   

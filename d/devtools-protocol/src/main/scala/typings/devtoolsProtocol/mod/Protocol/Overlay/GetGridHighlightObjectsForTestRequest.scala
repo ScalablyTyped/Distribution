@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGridHighlightObjectsForTestRequest extends StObject {
   
   /**
     * Ids of the node to get highlight object for.
     */
-  var nodeIds: js.Array[NodeId] = js.native
+  var nodeIds: js.Array[NodeId]
 }
 object GetGridHighlightObjectsForTestRequest {
   

@@ -18,40 +18,46 @@ import typings.std.RegExp
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
   
-  @JSImport("@ionic/core/dist/types/utils/platform", "getPlatforms")
+  @JSImport("@ionic/core/dist/types/utils/platform", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
-  @JSImport("@ionic/core/dist/types/utils/platform", "getPlatforms")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
+  @scala.inline
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
   
   @JSImport("@ionic/core/dist/types/utils/platform", "isPlatform")
   @js.native
   val isPlatform: IsPlatformSignature = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/platform", "setupPlatforms")
-  @js.native
+  @scala.inline
   def setupPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
-  @JSImport("@ionic/core/dist/types/utils/platform", "setupPlatforms")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPlatforms")().asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
+  @scala.inline
   def setupPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPlatforms")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
   
-  @JSImport("@ionic/core/dist/types/utils/platform", "testUserAgent")
-  @js.native
-  def testUserAgent(win: Window, expr: RegExp): Boolean = js.native
+  @scala.inline
+  def testUserAgent(win: Window, expr: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testUserAgent")(win.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait IsPlatformSignature extends StObject {

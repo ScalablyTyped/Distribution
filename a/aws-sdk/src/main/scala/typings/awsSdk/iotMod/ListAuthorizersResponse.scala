@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAuthorizersResponse extends StObject {
   
   /**
     * The authorizers.
     */
-  var authorizers: js.UndefOr[Authorizers] = js.native
+  var authorizers: js.UndefOr[Authorizers] = js.undefined
   
   /**
     * A marker used to get the next set of results.
     */
-  var nextMarker: js.UndefOr[Marker] = js.native
+  var nextMarker: js.UndefOr[Marker] = js.undefined
 }
 object ListAuthorizersResponse {
   

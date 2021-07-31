@@ -18,7 +18,6 @@ import typings.std.HTMLDivElement
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stageMod {
@@ -140,10 +139,11 @@ object stageMod {
   @js.native
   val stages: js.Array[Stage] = js.native
   
-  @js.native
-  trait StageConfig extends ContainerConfig {
+  trait StageConfig
+    extends StObject
+       with ContainerConfig {
     
-    var container: HTMLDivElement | String = js.native
+    var container: HTMLDivElement | String
   }
   object StageConfig {
     

@@ -3,27 +3,27 @@ package typings.reactVis.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WhiskerSeriesPoint extends AbstractSeriesPoint {
+trait WhiskerSeriesPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var color: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String | Double] = js.undefined
   
-  var opacity: js.UndefOr[String | Double] = js.native
+  var opacity: js.UndefOr[String | Double] = js.undefined
   
-  var size: js.UndefOr[String | Double] = js.native
+  var size: js.UndefOr[String | Double] = js.undefined
   
-  var stroke: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var x: String | Double | Date = js.native
+  var x: String | Double | Date
   
-  var xVariance: js.UndefOr[String | Double] = js.native
+  var xVariance: js.UndefOr[String | Double] = js.undefined
   
-  var y: String | Double | Date = js.native
+  var y: String | Double | Date
   
-  var yVariance: js.UndefOr[String | Double] = js.native
+  var yVariance: js.UndefOr[String | Double] = js.undefined
 }
 object WhiskerSeriesPoint {
   

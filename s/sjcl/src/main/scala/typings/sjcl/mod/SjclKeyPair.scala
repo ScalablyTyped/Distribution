@@ -2,15 +2,13 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclKeyPair[P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] extends StObject {
   
-  var pub: P = js.native
+  var pub: P
   
-  var sec: S = js.native
+  var sec: S
 }
 object SjclKeyPair {
   
@@ -21,7 +19,7 @@ object SjclKeyPair {
   }
   
   @scala.inline
-  implicit class SjclKeyPairMutableBuilder[Self <: SjclKeyPair[_, _], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] (val x: Self with (SjclKeyPair[P, S])) extends AnyVal {
+  implicit class SjclKeyPairMutableBuilder[Self <: SjclKeyPair[?, ?], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] (val x: Self & (SjclKeyPair[P, S])) extends AnyVal {
     
     @scala.inline
     def setPub(value: P): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])

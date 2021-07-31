@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Media.Audio
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an echo effect definition supported by the audio graph. */
-@js.native
 trait EchoEffectDefinition extends StObject {
   
   /** Gets the activatable class ID for the echo effect definition object. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
   
   /** Gets or sets the delay supported by the echo effect definition. */
-  var delay: Double = js.native
+  var delay: Double
   
   /** Gets or sets the feedback included in the echo effect definition. */
-  var feedback: Double = js.native
+  var feedback: Double
   
   /** Gets or sets the properties supported by the echo effect definition. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
   /** Gets or sets the wet-dry audio voice mix for the echo effect definition. */
-  var wetDryMix: Double = js.native
+  var wetDryMix: Double
 }
 object EchoEffectDefinition {
   

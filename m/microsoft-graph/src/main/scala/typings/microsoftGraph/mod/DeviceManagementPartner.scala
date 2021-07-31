@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceManagementPartner extends Entity {
+trait DeviceManagementPartner
+  extends StObject
+     with Entity {
   
   // Partner display name
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether device management partner is configured or not
-  var isConfigured: js.UndefOr[Boolean] = js.native
+  var isConfigured: js.UndefOr[Boolean] = js.undefined
   
   // Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
-  var lastHeartbeatDateTime: js.UndefOr[String] = js.native
+  var lastHeartbeatDateTime: js.UndefOr[String] = js.undefined
   
   // Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp.
-  var partnerAppType: js.UndefOr[DeviceManagementPartnerAppType] = js.native
+  var partnerAppType: js.UndefOr[DeviceManagementPartnerAppType] = js.undefined
   
   // Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
-  var partnerState: js.UndefOr[DeviceManagementPartnerTenantState] = js.native
+  var partnerState: js.UndefOr[DeviceManagementPartnerTenantState] = js.undefined
   
   // Partner Single tenant App id
-  var singleTenantAppId: js.UndefOr[NullableOption[String]] = js.native
+  var singleTenantAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // DateTime in UTC when PartnerDevices will be marked as NonCompliant
-  var whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // DateTime in UTC when PartnerDevices will be removed
-  var whenPartnerDevicesWillBeRemovedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var whenPartnerDevicesWillBeRemovedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DeviceManagementPartner {
   

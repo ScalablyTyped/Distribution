@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientAnalytics.anon.LinkIdOauthtoken
 import typings.maximMazurokGapiClientAnalytics.anon.PrettyPrintProfileId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

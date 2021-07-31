@@ -3,10 +3,13 @@ package typings.awsSdk
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iniLoaderMod {
+  
+  @JSImport("aws-sdk/lib/shared-ini/ini-loader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("aws-sdk/lib/shared-ini/ini-loader", "IniLoader")
   @js.native
@@ -24,18 +27,16 @@ object iniLoaderMod {
     def loadFrom(options: LoadFileOptions): IniFileContent = js.native
   }
   
-  @JSImport("aws-sdk/lib/shared-ini/ini-loader", "parseFile")
-  @js.native
-  def parseFile(filename: String, isConfig: Boolean): IniFileContent = js.native
+  @scala.inline
+  def parseFile(filename: String, isConfig: Boolean): IniFileContent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filename.asInstanceOf[js.Any], isConfig.asInstanceOf[js.Any])).asInstanceOf[IniFileContent]
   
   type IniFileContent = StringDictionary[StringDictionary[String]]
   
-  @js.native
   trait LoadFileOptions extends StObject {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var isConfig: js.UndefOr[Boolean] = js.native
+    var isConfig: js.UndefOr[Boolean] = js.undefined
   }
   object LoadFileOptions {
     

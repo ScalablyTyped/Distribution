@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFieldLevelEncryptionProfileRequest extends StObject {
   
   /**
     * Request to update a field-level encryption profile. 
     */
-  var FieldLevelEncryptionProfileConfig: typings.awsSdk.cloudfrontMod.FieldLevelEncryptionProfileConfig = js.native
+  var FieldLevelEncryptionProfileConfig: typings.awsSdk.cloudfrontMod.FieldLevelEncryptionProfileConfig
   
   /**
     * The ID of the field-level encryption profile request. 
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The value of the ETag header that you received when retrieving the profile identity to update. For example: E2QWRUHAPOMQZL.
     */
-  var IfMatch: js.UndefOr[String] = js.native
+  var IfMatch: js.UndefOr[String] = js.undefined
 }
 object UpdateFieldLevelEncryptionProfileRequest {
   

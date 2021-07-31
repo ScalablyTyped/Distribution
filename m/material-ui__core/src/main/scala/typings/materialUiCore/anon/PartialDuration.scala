@@ -2,26 +2,24 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/transitions.Duration> */
-@js.native
 trait PartialDuration extends StObject {
   
-  var complex: js.UndefOr[Double] = js.native
+  var complex: js.UndefOr[Double] = js.undefined
   
-  var enteringScreen: js.UndefOr[Double] = js.native
+  var enteringScreen: js.UndefOr[Double] = js.undefined
   
-  var leavingScreen: js.UndefOr[Double] = js.native
+  var leavingScreen: js.UndefOr[Double] = js.undefined
   
-  var short: js.UndefOr[Double] = js.native
+  var short: js.UndefOr[Double] = js.undefined
   
-  var shorter: js.UndefOr[Double] = js.native
+  var shorter: js.UndefOr[Double] = js.undefined
   
-  var shortest: js.UndefOr[Double] = js.native
+  var shortest: js.UndefOr[Double] = js.undefined
   
-  var standard: js.UndefOr[Double] = js.native
+  var standard: js.UndefOr[Double] = js.undefined
 }
 object PartialDuration {
   

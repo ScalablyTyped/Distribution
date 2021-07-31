@@ -3,18 +3,18 @@ package typings.jqueryTimeentry
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
+trait ITimeEntryOptions
+  extends StObject
+     with ITimeEntryRegionalOptions {
   
   /**
     * Add content to display after each time field. This may contain HTML markup.
     *
     * default: ''
     */
-  var appendText: js.UndefOr[String] = js.native
+  var appendText: js.UndefOr[String] = js.undefined
   
   /**
     * A function that accepts the old and new times, and minimum and maximum times, and returns an updated time.
@@ -23,7 +23,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: null
     */
-  var beforeSetTime: js.UndefOr[js.Function] = js.native
+  var beforeSetTime: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A function that accepts an input field and returns a settings object containing new settings for the time
@@ -33,7 +33,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: null
     */
-  var beforeShow: js.UndefOr[js.Function] = js.native
+  var beforeShow: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The default time to show when no other value has been entered. This may be a Date object
@@ -45,7 +45,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: null
     */
-  var defaultTime: js.UndefOr[Date | Double | String] = js.native
+  var defaultTime: js.UndefOr[Date | Double | String] = js.undefined
   
   /**
     * The number of the portion of the time field to highlight initially.
@@ -53,7 +53,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: null
     */
-  var initialField: js.UndefOr[Double] = js.native
+  var initialField: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum time that may be selected, or null for no limit. See defaultTime for a description of the possible
@@ -64,7 +64,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: null
     */
-  var maxTime: js.UndefOr[Date | Double | js.Array[Double] | String] = js.native
+  var maxTime: js.UndefOr[Date | Double | js.Array[Double] | String] = js.undefined
   
   /**
     * The minimum time that may be selected, or null for no limit. See defaultTime for a description
@@ -72,7 +72,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: null
     */
-  var minTime: js.UndefOr[Date | Double | js.Array[Double] | String] = js.native
+  var minTime: js.UndefOr[Date | Double | js.Array[Double] | String] = js.undefined
   
   /**
     * Set to true to allow direct entry of a time from the keyboard without needing to type separators,
@@ -80,14 +80,14 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: false
     */
-  var noSeparatorEntry: js.UndefOr[Boolean] = js.native
+  var noSeparatorEntry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate whether or not the seconds part of the time should be displayed.
     *
     * default: False
     */
-  var showSeconds: js.UndefOr[Boolean] = js.native
+  var showSeconds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URL for an expanded spinner image to use, or '' for no expansion. The layout is the same as for
@@ -96,7 +96,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: ''
     */
-  var spinnerBigImage: js.UndefOr[String] = js.native
+  var spinnerBigImage: js.UndefOr[String] = js.undefined
   
   /**
     * The dimensions of the expanded spinner image for determining which "button" was clicked. The first two values
@@ -105,7 +105,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: [40, 40, 16]
     */
-  var spinnerBigSize: js.UndefOr[js.Array[Double]] = js.native
+  var spinnerBigSize: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The URL for the spinner images to use, or '' for no spinner. The file must contain seven images horizontally
@@ -114,14 +114,14 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: 'spinnerDefault.png'
     */
-  var spinnerImage: js.UndefOr[String] = js.native
+  var spinnerImage: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to have only the increment and decrement buttons on the spinner, or false for all the buttons.
     *
     * default: false
     */
-  var spinnerIncDecOnly: js.UndefOr[Boolean] = js.native
+  var spinnerIncDecOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The times in milliseconds for the auto-repeat feature on the increment and decrement spinner buttons.
@@ -130,7 +130,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: [500, 250]
     */
-  var spinnerRepeat: js.UndefOr[js.Array[Double]] = js.native
+  var spinnerRepeat: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The dimensions of the spinner image for determining which "button" was clicked. The first two values are the
@@ -139,7 +139,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: [20, 20, 8]
     */
-  var spinnerSize: js.UndefOr[js.Array[Double]] = js.native
+  var spinnerSize: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * true to have the tab key exit this field and move to the next one, or false to have the tab key step
@@ -147,7 +147,7 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: false
     */
-  var tabToExit: js.UndefOr[Boolean] = js.native
+  var tabToExit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The increment/decrement values for each of the time portions - hours, minutes, and seconds.
@@ -155,21 +155,21 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
     *
     * default: [1,1,1]
     */
-  var timeSteps: js.UndefOr[js.Array[Double]] = js.native
+  var timeSteps: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Indicate whether to restrict hours to just those in one day (false) or to allow for any value for hours (true).
     *
     * default: false
     */
-  var unlimitedHours: js.UndefOr[Boolean] = js.native
+  var unlimitedHours: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true to use the mouse wheel for increment/decrement if possible, or false to never use it.
     *
     * default: true
     */
-  var useMouseWheel: js.UndefOr[Boolean] = js.native
+  var useMouseWheel: js.UndefOr[Boolean] = js.undefined
 }
 object ITimeEntryOptions {
   

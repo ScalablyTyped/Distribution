@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlagsListResponse extends StObject {
   
   /** List of flags. */
-  var items: js.UndefOr[js.Array[Flag]] = js.native
+  var items: js.UndefOr[js.Array[Flag]] = js.undefined
   
   /** This is always *sql#flagsList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object FlagsListResponse {
   

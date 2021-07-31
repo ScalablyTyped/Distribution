@@ -2,13 +2,11 @@ package typings.twit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaParam extends StObject {
   
-  var file_path: String = js.native
+  var file_path: String
 }
 object MediaParam {
   

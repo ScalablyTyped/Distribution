@@ -3,18 +3,17 @@ package typings.grommet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictx
-  extends /* x */ StringDictionary[js.UndefOr[BorderSize]] {
+  extends StObject
+     with /* x */ StringDictionary[js.UndefOr[BorderSize]] {
   
-  var large: js.UndefOr[BorderSize] = js.native
+  var large: js.UndefOr[BorderSize] = js.undefined
   
-  var medium: js.UndefOr[BorderSize] = js.native
+  var medium: js.UndefOr[BorderSize] = js.undefined
   
-  var small: js.UndefOr[BorderSize] = js.native
+  var small: js.UndefOr[BorderSize] = js.undefined
 }
 object Dictx {
   

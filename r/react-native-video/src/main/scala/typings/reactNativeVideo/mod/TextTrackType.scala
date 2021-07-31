@@ -5,7 +5,6 @@ import typings.reactNativeVideo.reactNativeVideoStrings.applicationSlashttmlPlus
 import typings.reactNativeVideo.reactNativeVideoStrings.textSlashvtt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TextTrackType {

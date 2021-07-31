@@ -3,7 +3,6 @@ package typings.cassandraDriver.typesMod.types
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Duration")
@@ -18,13 +17,15 @@ class Duration protected () extends StObject {
 }
 object Duration {
   
-  /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Duration.fromBuffer")
+  @JSImport("cassandra-driver/lib/types", "types.Duration")
   @js.native
-  def fromBuffer(buffer: Buffer): Duration = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cassandra-driver/lib/types", "types.Duration.fromString")
-  @js.native
-  def fromString(input: String): Duration = js.native
+  @scala.inline
+  def fromBuffer(buffer: Buffer): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  
+  /* static member */
+  @scala.inline
+  def fromString(input: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(input.asInstanceOf[js.Any]).asInstanceOf[Duration]
 }

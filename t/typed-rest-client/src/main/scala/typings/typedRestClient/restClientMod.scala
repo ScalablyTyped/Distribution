@@ -8,7 +8,6 @@ import typings.typedRestClient.interfacesMod.IRequestHandler
 import typings.typedRestClient.interfacesMod.IRequestQueryParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restClientMod {
@@ -25,61 +24,15 @@ object restClientMod {
     */
   class RestClient () extends StObject {
     def this(userAgent: String) = this()
-    def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String) = this()
     def this(userAgent: String, baseUrl: String) = this()
     def this(userAgent: Null, baseUrl: String) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      baseUrl: js.UndefOr[scala.Nothing],
-      handlers: js.Array[IRequestHandler]
-    ) = this()
-    def this(userAgent: js.UndefOr[scala.Nothing], baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(userAgent: String, baseUrl: js.UndefOr[scala.Nothing], handlers: js.Array[IRequestHandler]) = this()
+    def this(userAgent: Unit, baseUrl: String) = this()
     def this(userAgent: String, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(userAgent: Null, baseUrl: js.UndefOr[scala.Nothing], handlers: js.Array[IRequestHandler]) = this()
+    def this(userAgent: String, baseUrl: Unit, handlers: js.Array[IRequestHandler]) = this()
     def this(userAgent: Null, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      baseUrl: js.UndefOr[scala.Nothing],
-      handlers: js.UndefOr[scala.Nothing],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      baseUrl: js.UndefOr[scala.Nothing],
-      handlers: js.Array[IRequestHandler],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      baseUrl: String,
-      handlers: js.UndefOr[scala.Nothing],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      baseUrl: String,
-      handlers: js.Array[IRequestHandler],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
-    def this(
-      userAgent: String,
-      baseUrl: js.UndefOr[scala.Nothing],
-      handlers: js.UndefOr[scala.Nothing],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
-    def this(
-      userAgent: String,
-      baseUrl: js.UndefOr[scala.Nothing],
-      handlers: js.Array[IRequestHandler],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
-    def this(
-      userAgent: String,
-      baseUrl: String,
-      handlers: js.UndefOr[scala.Nothing],
-      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
-    ) = this()
+    def this(userAgent: Null, baseUrl: Unit, handlers: js.Array[IRequestHandler]) = this()
+    def this(userAgent: Unit, baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(userAgent: Unit, baseUrl: Unit, handlers: js.Array[IRequestHandler]) = this()
     def this(
       userAgent: String,
       baseUrl: String,
@@ -87,27 +40,69 @@ object restClientMod {
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     def this(
-      userAgent: Null,
-      baseUrl: js.UndefOr[scala.Nothing],
-      handlers: js.UndefOr[scala.Nothing],
+      userAgent: String,
+      baseUrl: String,
+      handlers: Unit,
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: String,
+      baseUrl: Unit,
+      handlers: js.Array[IRequestHandler],
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: String,
+      baseUrl: Unit,
+      handlers: Unit,
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     def this(
       userAgent: Null,
-      baseUrl: js.UndefOr[scala.Nothing],
+      baseUrl: String,
       handlers: js.Array[IRequestHandler],
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     def this(
       userAgent: Null,
       baseUrl: String,
-      handlers: js.UndefOr[scala.Nothing],
+      handlers: Unit,
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     def this(
       userAgent: Null,
+      baseUrl: Unit,
+      handlers: js.Array[IRequestHandler],
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: Null,
+      baseUrl: Unit,
+      handlers: Unit,
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: Unit,
       baseUrl: String,
       handlers: js.Array[IRequestHandler],
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: Unit,
+      baseUrl: String,
+      handlers: Unit,
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: Unit,
+      baseUrl: Unit,
+      handlers: js.Array[IRequestHandler],
+      requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
+    ) = this()
+    def this(
+      userAgent: Unit,
+      baseUrl: Unit,
+      handlers: Unit,
       requestOptions: typings.typedRestClient.interfacesMod.IRequestOptions
     ) = this()
     
@@ -195,18 +190,17 @@ object restClientMod {
     def dateTimeDeserializer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dateTimeDeserializer")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IRequestOptions extends StObject {
     
-    var acceptHeader: js.UndefOr[String] = js.native
+    var acceptHeader: js.UndefOr[String] = js.undefined
     
-    var additionalHeaders: js.UndefOr[IHeaders] = js.native
+    var additionalHeaders: js.UndefOr[IHeaders] = js.undefined
     
-    var deserializeDates: js.UndefOr[Boolean] = js.native
+    var deserializeDates: js.UndefOr[Boolean] = js.undefined
     
-    var queryParameters: js.UndefOr[IRequestQueryParams] = js.native
+    var queryParameters: js.UndefOr[IRequestQueryParams] = js.undefined
     
-    var responseProcessor: js.UndefOr[js.Function] = js.native
+    var responseProcessor: js.UndefOr[js.Function] = js.undefined
   }
   object IRequestOptions {
     
@@ -251,25 +245,24 @@ object restClientMod {
     }
   }
   
-  @js.native
   trait IRestResponse[T] extends StObject {
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var result: T | Null = js.native
+    var result: T | Null
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object IRestResponse {
     
     @scala.inline
     def apply[T](headers: js.Object, statusCode: Double): IRestResponse[T] = {
-      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], result = null)
       __obj.asInstanceOf[IRestResponse[T]]
     }
     
     @scala.inline
-    implicit class IRestResponseMutableBuilder[Self <: IRestResponse[_], T] (val x: Self with IRestResponse[T]) extends AnyVal {
+    implicit class IRestResponseMutableBuilder[Self <: IRestResponse[?], T] (val x: Self & IRestResponse[T]) extends AnyVal {
       
       @scala.inline
       def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])

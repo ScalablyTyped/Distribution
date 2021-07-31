@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorImageBrowserMessages extends StObject {
   
-  var deleteFile: js.UndefOr[String] = js.native
+  var deleteFile: js.UndefOr[String] = js.undefined
   
-  var directoryNotFound: js.UndefOr[String] = js.native
+  var directoryNotFound: js.UndefOr[String] = js.undefined
   
-  var emptyFolder: js.UndefOr[String] = js.native
+  var emptyFolder: js.UndefOr[String] = js.undefined
   
-  var invalidFileType: js.UndefOr[String] = js.native
+  var invalidFileType: js.UndefOr[String] = js.undefined
   
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
-  var orderByName: js.UndefOr[String] = js.native
+  var orderByName: js.UndefOr[String] = js.undefined
   
-  var orderBySize: js.UndefOr[String] = js.native
+  var orderBySize: js.UndefOr[String] = js.undefined
   
-  var overwriteFile: js.UndefOr[String] = js.native
+  var overwriteFile: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var uploadFile: js.UndefOr[String] = js.native
+  var uploadFile: js.UndefOr[String] = js.undefined
 }
 object EditorImageBrowserMessages {
   

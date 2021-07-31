@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgColorPickerSplitButtonMethods extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait IgColorPickerSplitButtonMethods extends StObject {
     *
     * @param e
     */
-  def collapse(e: js.Object): js.Object = js.native
+  def collapse(e: js.Object): js.Object
   
   /**
     * Destroys the widget.
     */
-  def destroy(): js.Object = js.native
+  def destroy(): js.Object
   
   /**
     * Expands the widget.
     *
     * @param e
     */
-  def expand(e: js.Object): js.Object = js.native
+  def expand(e: js.Object): js.Object
   
   /**
     * Sets the color of the split button
     *
     * @param color The color value to be set.
     */
-  def setColor(color: String): js.Object = js.native
+  def setColor(color: String): js.Object
   
   /**
     * Switch to given igToolbar button.
     *
     * @param button . The button jQuery element.
     */
-  def switchToButton(button: js.Object): Unit = js.native
+  def switchToButton(button: js.Object): Unit
   
   /**
     * Toggle widget state between collapsed and expanded.
     *
     * @param e The igSplitButton to be expanded/collapsed.
     */
-  def toggle(e: js.Object): js.Object = js.native
+  def toggle(e: js.Object): js.Object
   
-  def widget(): Unit = js.native
+  def widget(): Unit
 }
 object IgColorPickerSplitButtonMethods {
   

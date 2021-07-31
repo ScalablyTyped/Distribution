@@ -10,9 +10,9 @@ JSON diff
 | ------------------ | :-------------: |
 | Full name          | json-diff |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 91 |
-| # downloads        | 5984808 |
+| # releases         | 0 |
+| # dependents       | 103 |
+| # downloads        | 9871764 |
 | # stars            | 11 |
 
 ## Links

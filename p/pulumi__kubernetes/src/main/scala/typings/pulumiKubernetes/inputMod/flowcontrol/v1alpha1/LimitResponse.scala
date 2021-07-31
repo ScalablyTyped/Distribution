@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LimitResponse defines how to handle requests that can not be executed right now.
   */
-@js.native
 trait LimitResponse extends StObject {
   
   /**
     * `queuing` holds the configuration parameters for queuing. This field may be non-empty only if `type` is `"Queue"`.
     */
-  var queuing: js.UndefOr[Input[QueuingConfiguration]] = js.native
+  var queuing: js.UndefOr[Input[QueuingConfiguration]] = js.undefined
   
   /**
     * `type` is "Queue" or "Reject". "Queue" means that requests that can not be executed upon arrival are held in a queue until they can be executed or a queuing limit is reached. "Reject" means that requests that can not be executed upon arrival are rejected. Required.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object LimitResponse {
   

@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.ApplicationModel.Resources.Core.ResourceCandidate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsResourceCandidate extends StObject {
   
-  /** The ResourceCandidate objects in the set that start at startIndex. */ var items: ResourceCandidate = js.native
+  /** The ResourceCandidate objects in the set that start at startIndex. */ var items: ResourceCandidate
   
-  /** The number of ResourceCandidate objects returned. */ var returnValue: Double = js.native
+  /** The number of ResourceCandidate objects returned. */ var returnValue: Double
 }
 object ItemsResourceCandidate {
   

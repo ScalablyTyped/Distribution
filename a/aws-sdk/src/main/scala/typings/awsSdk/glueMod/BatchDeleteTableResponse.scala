@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteTableResponse extends StObject {
   
   /**
     * A list of errors encountered in attempting to delete the specified tables.
     */
-  var Errors: js.UndefOr[TableErrors] = js.native
+  var Errors: js.UndefOr[TableErrors] = js.undefined
 }
 object BatchDeleteTableResponse {
   

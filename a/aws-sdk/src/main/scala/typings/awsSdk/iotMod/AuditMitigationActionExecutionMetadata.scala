@@ -2,56 +2,54 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditMitigationActionExecutionMetadata extends StObject {
   
   /**
     * The unique identifier for the mitigation action being applied by the task.
     */
-  var actionId: js.UndefOr[MitigationActionId] = js.native
+  var actionId: js.UndefOr[MitigationActionId] = js.undefined
   
   /**
     * The friendly name of the mitigation action being applied by the task.
     */
-  var actionName: js.UndefOr[MitigationActionName] = js.native
+  var actionName: js.UndefOr[MitigationActionName] = js.undefined
   
   /**
     * The date and time when the task was completed or canceled. Blank if the task is still running.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If an error occurred, the code that indicates which type of error occurred.
     */
-  var errorCode: js.UndefOr[ErrorCode] = js.native
+  var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
     * The unique identifier for the findings to which the task and associated mitigation action are applied.
     */
-  var findingId: js.UndefOr[FindingId] = js.native
+  var findingId: js.UndefOr[FindingId] = js.undefined
   
   /**
     * If an error occurred, a message that describes the error.
     */
-  var message: js.UndefOr[ErrorMessage] = js.native
+  var message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The date and time when the task was started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current status of the task being executed.
     */
-  var status: js.UndefOr[AuditMitigationActionsExecutionStatus] = js.native
+  var status: js.UndefOr[AuditMitigationActionsExecutionStatus] = js.undefined
   
   /**
     * The unique identifier for the task that applies the mitigation action.
     */
-  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.native
+  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.undefined
 }
 object AuditMitigationActionExecutionMetadata {
   

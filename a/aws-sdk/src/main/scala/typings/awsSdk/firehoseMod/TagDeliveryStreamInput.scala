@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagDeliveryStreamInput extends StObject {
   
   /**
     * The name of the delivery stream to which you want to add the tags.
     */
-  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName = js.native
+  var DeliveryStreamName: typings.awsSdk.firehoseMod.DeliveryStreamName
   
   /**
     * A set of key-value pairs to use to create the tags.
     */
-  var Tags: TagDeliveryStreamInputTagList = js.native
+  var Tags: TagDeliveryStreamInputTagList
 }
 object TagDeliveryStreamInput {
   

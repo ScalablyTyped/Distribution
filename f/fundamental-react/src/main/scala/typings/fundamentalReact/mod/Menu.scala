@@ -11,18 +11,16 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuProps> & {  displayName :'Menu',   Group :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuGroupProps> & {  displayName :'Menu.Group'},   Item :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuItemProps> & {  displayName :'Menu.Item'},   List :react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Menu/Menu.MenuListProps> & {  displayName :'Menu.List'}} */
 object Menu {
   
-  @JSImport("fundamental-react", "Menu")
-  @js.native
-  def apply(props: PropsWithChildren[MenuProps]): ReactElement | Null = js.native
-  @JSImport("fundamental-react", "Menu")
-  @js.native
-  def apply(props: PropsWithChildren[MenuProps], context: js.Any): ReactElement | Null = js.native
+  @scala.inline
+  def apply(props: PropsWithChildren[MenuProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def apply(props: PropsWithChildren[MenuProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  
   @JSImport("fundamental-react", "Menu")
   @js.native
   val ^ : js.Any = js.native

@@ -1,18 +1,15 @@
 package typings.tuyaPanelKit.mod
 
-import typings.tuyaPanelKit.anon.NavigationAny
 import typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationParam extends StObject {
   
-  var router: js.Array[NavigationRoute] = js.native
+  var router: js.Array[NavigationRoute]
   
-  var screenOptions: js.UndefOr[ScreenOptions] = js.native
+  var screenOptions: js.UndefOr[ScreenOptions] = js.undefined
 }
 object NavigationParam {
   
@@ -35,7 +32,7 @@ object NavigationParam {
     def setScreenOptions(value: ScreenOptions): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenOptionsFunction1(value: /* props */ NavigationAny => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
+    def setScreenOptionsFunction1(value: /* props */ typings.tuyaPanelKit.anon.NavigationRoute => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)

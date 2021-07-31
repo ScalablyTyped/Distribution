@@ -4,21 +4,19 @@ import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/tabs.SharedProps & {  $active :boolean | undefined} */
-@js.native
 trait SharedPropsactivebooleanu extends StObject {
   
   @JSName("$active")
-  var $active: js.UndefOr[Boolean] = js.native
+  var $active: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$disabled")
-  var $disabled: js.UndefOr[Boolean] = js.native
+  var $disabled: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$orientation")
-  var $orientation: js.UndefOr[horizontal | vertical] = js.native
+  var $orientation: js.UndefOr[horizontal | vertical] = js.undefined
 }
 object SharedPropsactivebooleanu {
   

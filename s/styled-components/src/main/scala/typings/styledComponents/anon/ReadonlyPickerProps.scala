@@ -28,134 +28,132 @@ import typings.styledComponents.styledComponentsStrings.radiobutton_unchecked
 import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.PickerProps> */
-@js.native
 trait ReadonlyPickerProps extends StObject {
   
-  val accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  val accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  val accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  val accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
-  val accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  val accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  val accessibilityHint: js.UndefOr[String] = js.native
+  val accessibilityHint: js.UndefOr[String] = js.undefined
   
-  val accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  val accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  val accessibilityLabel: js.UndefOr[String] = js.native
+  val accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
-  val accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  val accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  val accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
-  val accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  val accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
-  val accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  val accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
-  val accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  val accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
-  val accessible: js.UndefOr[Boolean] = js.native
+  val accessible: js.UndefOr[Boolean] = js.undefined
   
-  val collapsable: js.UndefOr[Boolean] = js.native
+  val collapsable: js.UndefOr[Boolean] = js.undefined
   
-  val enabled: js.UndefOr[Boolean] = js.native
+  val enabled: js.UndefOr[Boolean] = js.undefined
   
-  val focusable: js.UndefOr[Boolean] = js.native
+  val focusable: js.UndefOr[Boolean] = js.undefined
   
-  val hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  val hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
-  val hitSlop: js.UndefOr[Insets] = js.native
+  val hitSlop: js.UndefOr[Insets] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  val isTVSelectable: js.UndefOr[Boolean] = js.native
+  val isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
-  val itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  val itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  val mode: js.UndefOr[dialog | dropdown] = js.native
+  val mode: js.UndefOr[dialog | dropdown] = js.undefined
   
-  val nativeID: js.UndefOr[String] = js.native
+  val nativeID: js.UndefOr[String] = js.undefined
   
-  val needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  val needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
-  val onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  val onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
-  val onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  val onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  val onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  val onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  val onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  val onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onValueChange: js.UndefOr[js.Function2[/* itemValue */ js.Any, /* itemPosition */ Double, Unit]] = js.native
+  val onValueChange: js.UndefOr[js.Function2[/* itemValue */ js.Any, /* itemPosition */ Double, Unit]] = js.undefined
   
-  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
-  val prompt: js.UndefOr[String] = js.native
+  val prompt: js.UndefOr[String] = js.undefined
   
-  val removeClippedSubviews: js.UndefOr[Boolean] = js.native
+  val removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
-  val renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+  val renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
-  val selectedValue: js.UndefOr[js.Any] = js.native
+  val selectedValue: js.UndefOr[js.Any] = js.undefined
   
-  val shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+  val shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  val style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  val style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  val testID: js.UndefOr[String] = js.native
+  val testID: js.UndefOr[String] = js.undefined
   
-  val testId: js.UndefOr[String] = js.native
+  val testId: js.UndefOr[String] = js.undefined
   
-  val tvParallaxMagnification: js.UndefOr[Double] = js.native
+  val tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
-  val tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  val tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
-  val tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+  val tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   
-  val tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+  val tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
-  val tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+  val tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
 }
 object ReadonlyPickerProps {
   

@@ -2,30 +2,30 @@ package typings.tensorflowTfjsBackendWebgl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shaderCompilerMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/shader_compiler", "getCoordsDataType")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/shader_compiler", JSImport.Namespace)
   @js.native
-  def getCoordsDataType(rank: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/shader_compiler", "makeShader")
-  @js.native
+  @scala.inline
+  def getCoordsDataType(rank: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoordsDataType")(rank.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
   def makeShader(
     inputsInfo: js.Array[InputInfo],
     outputShape: ShapeInfo,
     userCode: String,
     usesPackedTextures: Boolean
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeShader")(inputsInfo.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], userCode.asInstanceOf[js.Any], usesPackedTextures.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait InputInfo extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var shapeInfo: ShapeInfo = js.native
+    var shapeInfo: ShapeInfo
   }
   object InputInfo {
     
@@ -46,18 +46,17 @@ object shaderCompilerMod {
     }
   }
   
-  @js.native
   trait ShapeInfo extends StObject {
     
-    var flatOffset: Double = js.native
+    var flatOffset: Double
     
-    var isPacked: Boolean = js.native
+    var isPacked: Boolean
     
-    var isUniform: Boolean = js.native
+    var isUniform: Boolean
     
-    var logicalShape: js.Array[Double] = js.native
+    var logicalShape: js.Array[Double]
     
-    var texShape: js.Tuple2[Double, Double] = js.native
+    var texShape: js.Tuple2[Double, Double]
   }
   object ShapeInfo {
     

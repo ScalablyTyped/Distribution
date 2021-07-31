@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2Tree extends StObject {
   
   /**
     * All the child directories: the directories referred to by the root and, recursively, all its children. In order to reconstruct the directory tree, the client must take the digests
     * of each of the child directories and then build up a tree starting from the `root`.
     */
-  var children: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2Directory]] = js.native
+  var children: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2Directory]] = js.undefined
   
   /** The root directory in the tree. */
-  var root: js.UndefOr[BuildBazelRemoteExecutionV2Directory] = js.native
+  var root: js.UndefOr[BuildBazelRemoteExecutionV2Directory] = js.undefined
 }
 object BuildBazelRemoteExecutionV2Tree {
   

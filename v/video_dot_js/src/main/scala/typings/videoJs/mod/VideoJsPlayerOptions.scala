@@ -10,65 +10,65 @@ import typings.videoJs.mod.videojs.TextTrackSettingsOptions
 import typings.videoJs.videoJsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VideoJsPlayerOptions extends ComponentOptions {
+trait VideoJsPlayerOptions
+  extends StObject
+     with ComponentOptions {
   
-  var aspectRatio: js.UndefOr[String] = js.native
+  var aspectRatio: js.UndefOr[String] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean | String] = js.native
+  var autoplay: js.UndefOr[Boolean | String] = js.undefined
   
-  var controlBar: js.UndefOr[ControlBarOptions | `false`] = js.native
+  var controlBar: js.UndefOr[ControlBarOptions | `false`] = js.undefined
   
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
-  var defaultVolume: js.UndefOr[Double] = js.native
+  var defaultVolume: js.UndefOr[Double] = js.undefined
   
-  var fluid: js.UndefOr[Boolean] = js.native
+  var fluid: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var html5: js.UndefOr[js.Any] = js.native
+  var html5: js.UndefOr[js.Any] = js.undefined
   
-  var inactivityTimeout: js.UndefOr[Double] = js.native
+  var inactivityTimeout: js.UndefOr[Double] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var languages: js.UndefOr[StringDictionary[LanguageTranslations]] = js.native
+  var languages: js.UndefOr[StringDictionary[LanguageTranslations]] = js.undefined
   
-  var liveui: js.UndefOr[Boolean] = js.native
+  var liveui: js.UndefOr[Boolean] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var muted: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.undefined
   
-  var nativeControlsForTouch: js.UndefOr[Boolean] = js.native
+  var nativeControlsForTouch: js.UndefOr[Boolean] = js.undefined
   
-  var notSupportedMessage: js.UndefOr[String] = js.native
+  var notSupportedMessage: js.UndefOr[String] = js.undefined
   
-  var playbackRates: js.UndefOr[js.Array[Double]] = js.native
+  var playbackRates: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var plugins: js.UndefOr[js.Object] = js.native
+  var plugins: js.UndefOr[js.Object] = js.undefined
   
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
-  var preload: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.undefined
   
-  var sourceOrder: js.UndefOr[Boolean] = js.native
+  var sourceOrder: js.UndefOr[Boolean] = js.undefined
   
-  var sources: js.UndefOr[js.Array[SourceObject]] = js.native
+  var sources: js.UndefOr[js.Array[SourceObject]] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var techOrder: js.UndefOr[js.Array[String]] = js.native
+  var techOrder: js.UndefOr[js.Array[String]] = js.undefined
   
-  var textTrackSettings: js.UndefOr[TextTrackSettingsOptions] = js.native
+  var textTrackSettings: js.UndefOr[TextTrackSettingsOptions] = js.undefined
   
-  var tracks: js.UndefOr[js.Array[TextTrackOptions]] = js.native
+  var tracks: js.UndefOr[js.Array[TextTrackOptions]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object VideoJsPlayerOptions {
   

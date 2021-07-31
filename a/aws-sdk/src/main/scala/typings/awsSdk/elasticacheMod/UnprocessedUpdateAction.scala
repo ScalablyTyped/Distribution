@@ -2,36 +2,34 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnprocessedUpdateAction extends StObject {
   
   /**
     * The ID of the cache cluster
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The error message that describes the reason the request was not processed
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The error type for requests that are not processed
     */
-  var ErrorType: js.UndefOr[String] = js.native
+  var ErrorType: js.UndefOr[String] = js.undefined
   
   /**
     * The replication group ID
     */
-  var ReplicationGroupId: js.UndefOr[String] = js.native
+  var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the service update
     */
-  var ServiceUpdateName: js.UndefOr[String] = js.native
+  var ServiceUpdateName: js.UndefOr[String] = js.undefined
 }
 object UnprocessedUpdateAction {
   

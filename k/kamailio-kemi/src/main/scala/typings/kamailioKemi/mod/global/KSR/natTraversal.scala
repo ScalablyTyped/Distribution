@@ -2,20 +2,20 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object natTraversal {
   
-  @JSGlobal("KSR.nat_traversal.client_nat_test")
+  @JSGlobal("KSR.nat_traversal")
   @js.native
-  def clientNatTest(tests: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.nat_traversal.fix_contact")
-  @js.native
-  def fixContact(): Double = js.native
+  @scala.inline
+  def clientNatTest(tests: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("client_nat_test")(tests.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.nat_traversal.nat_keepalive")
-  @js.native
-  def natKeepalive(): Double = js.native
+  @scala.inline
+  def fixContact(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fix_contact")().asInstanceOf[Double]
+  
+  @scala.inline
+  def natKeepalive(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nat_keepalive")().asInstanceOf[Double]
 }

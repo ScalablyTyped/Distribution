@@ -8,7 +8,6 @@ import typings.bbcodeToReact.anon.PartialOmitTagTypechildre
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -160,7 +159,6 @@ object mod extends Shortcut {
     * An optional interface can be provided for constructing the class
     * The class is NOT exported from the library.
     */
-  @js.native
   trait Renderer[optionType] extends StObject {
     
     /**
@@ -169,46 +167,46 @@ object mod extends Shortcut {
       * @param func: A function to be returned
       * @returns A function returning a string array
       */
-    def context(context: optionType, func: js.Function0[js.Array[String]]): js.Function0[js.Array[String]] = js.native
+    def context(context: optionType, func: js.Function0[js.Array[String]]): js.Function0[js.Array[String]]
     
     /**
       * An array storing objects with type "optionType"
       */
-    var contexts: js.Array[optionType] = js.native
+    var contexts: js.Array[optionType]
     
     /**
       * Process incoming value by regexp and return the output
       * @param value Input to be processed
       * @returns A processed string
       */
-    def cosmeticReplace(value: String): String = js.native
+    def cosmeticReplace(value: String): String
     
     /**
       * Process incoming value by regexp and return the output
       * @param value Input to be processed
       * @returns A processed string
       */
-    def escape(value: String): String = js.native
+    def escape(value: String): String
     
     /**
       * Process incoming value by regexp and return the output
       * @param value Input to be processed
       * @returns A processed string
       */
-    def linkify(value: String): String = js.native
+    def linkify(value: String): String
     
     /**
       * An object storing some essential flags and params,
       * with default value { linkify: false }
       */
-    var options: optionType = js.native
+    var options: optionType
     
     /**
       * Process incoming value by regexp and return the output
       * @param value Input to be processed
       * @returns A processed string
       */
-    def strip(value: String): String = js.native
+    def strip(value: String): String
   }
   object Renderer {
     
@@ -227,7 +225,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class RendererMutableBuilder[Self <: Renderer[_], optionType] (val x: Self with Renderer[optionType]) extends AnyVal {
+    implicit class RendererMutableBuilder[Self <: Renderer[?], optionType] (val x: Self & Renderer[optionType]) extends AnyVal {
       
       @scala.inline
       def setContext(value: (optionType, js.Function0[js.Array[String]]) => js.Function0[js.Array[String]]): Self = StObject.set(x, "context", js.Any.fromFunction2(value))
@@ -258,33 +256,32 @@ object mod extends Shortcut {
   /**
     * An interface for class member in "Tag"
     */
-  @js.native
   trait TagType extends StObject {
     
     /**
       * The children of a tag object, with type ReactNode array
       */
-    var children: js.Array[ReactNode] = js.native
+    var children: js.Array[ReactNode]
     
     /**
       * Tag name, with type string
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A "params" object for inner processing
       */
-    var params: js.Object = js.native
+    var params: js.Object
     
     /**
       * The parent of a tag object, with type ReactNode
       */
-    var parent: ReactNode = js.native
+    var parent: ReactNode
     
     /**
       * The inner text of a tag object, with type string
       */
-    var text: String = js.native
+    var text: String
   }
   object TagType {
     

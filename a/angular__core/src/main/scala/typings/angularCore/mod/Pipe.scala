@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pipe extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Pipe extends StObject {
     * Typically uses [lowerCamelCase](guide/glossary#case-types)
     * because the name cannot contain hyphens.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * When true, the pipe is pure, meaning that the
@@ -25,7 +23,7 @@ trait Pipe extends StObject {
     * In this case, the pipe is invoked on each change-detection cycle,
     * even if the arguments have not changed.
     */
-  var pure: js.UndefOr[Boolean] = js.native
+  var pure: js.UndefOr[Boolean] = js.undefined
 }
 object Pipe {
   

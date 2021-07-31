@@ -2,7 +2,6 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,10 +10,8 @@ object global {
     
     type Element = RaxElement[js.Any, js.Any]
     
-    @js.native
     trait ElementAttributesProperty extends StObject
     
-    @js.native
     trait ElementChildrenAttribute extends StObject
     
     @js.native
@@ -25,466 +22,465 @@ object global {
     
     type IntrinsicClassAttributes[T] = ClassAttributes[T]
     
-    @js.native
     trait IntrinsicElements extends StObject {
       
       // HTML
-      var a: DetailedHTMLProps[AnchorHTMLAttributes[typings.std.HTMLAnchorElement], typings.std.HTMLAnchorElement] = js.native
+      var a: DetailedHTMLProps[AnchorHTMLAttributes[typings.std.HTMLAnchorElement], typings.std.HTMLAnchorElement]
       
-      var abbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var abbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var ad: js.Any = js.native
+      var ad: js.Any
       
-      var address: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var address: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var animate: SVGProps[typings.std.SVGElement] = js.native
+      var animate: SVGProps[typings.std.SVGElement]
       
       // TODO: It is SVGAnimateElement but is not in TypeScript's lib.dom.d.ts for now.
-      var animateMotion: SVGProps[typings.std.SVGElement] = js.native
+      var animateMotion: SVGProps[typings.std.SVGElement]
       
-      var animateTransform: SVGProps[typings.std.SVGElement] = js.native
+      var animateTransform: SVGProps[typings.std.SVGElement]
       
-      var area: DetailedHTMLProps[AreaHTMLAttributes[typings.std.HTMLAreaElement], typings.std.HTMLAreaElement] = js.native
+      var area: DetailedHTMLProps[AreaHTMLAttributes[typings.std.HTMLAreaElement], typings.std.HTMLAreaElement]
       
-      var `aria-component`: js.Any = js.native
+      var `aria-component`: js.Any
       
-      var article: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var article: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var aside: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var aside: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var audio: DetailedHTMLProps[AudioHTMLAttributes[typings.std.HTMLAudioElement], typings.std.HTMLAudioElement] = js.native
+      var audio: DetailedHTMLProps[AudioHTMLAttributes[typings.std.HTMLAudioElement], typings.std.HTMLAudioElement]
       
-      var b: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var b: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var base: DetailedHTMLProps[BaseHTMLAttributes[typings.std.HTMLBaseElement], typings.std.HTMLBaseElement] = js.native
+      var base: DetailedHTMLProps[BaseHTMLAttributes[typings.std.HTMLBaseElement], typings.std.HTMLBaseElement]
       
-      var bdi: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var bdi: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var bdo: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var bdo: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var big: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var big: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var body: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBodyElement], typings.std.HTMLBodyElement] = js.native
+      var body: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBodyElement], typings.std.HTMLBodyElement]
       
-      var br: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBRElement], typings.std.HTMLBRElement] = js.native
+      var br: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBRElement], typings.std.HTMLBRElement]
       
-      var button: DetailedHTMLProps[ButtonHTMLAttributes[typings.std.HTMLButtonElement], typings.std.HTMLButtonElement] = js.native
+      var button: DetailedHTMLProps[ButtonHTMLAttributes[typings.std.HTMLButtonElement], typings.std.HTMLButtonElement]
       
-      var canvas: DetailedHTMLProps[CanvasHTMLAttributes[typings.std.HTMLCanvasElement], typings.std.HTMLCanvasElement] = js.native
+      var canvas: DetailedHTMLProps[CanvasHTMLAttributes[typings.std.HTMLCanvasElement], typings.std.HTMLCanvasElement]
       
-      var caption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var caption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var cell: js.Any = js.native
+      var cell: js.Any
       
       // TODO: It is SVGAnimateTransformElement but is not in TypeScript's lib.dom.d.ts for now.
-      var circle: SVGProps[typings.std.SVGCircleElement] = js.native
+      var circle: SVGProps[typings.std.SVGCircleElement]
       
-      var cite: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var cite: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var clipPath: SVGProps[typings.std.SVGClipPathElement] = js.native
+      var clipPath: SVGProps[typings.std.SVGClipPathElement]
       
-      var code: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var code: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
       var col: DetailedHTMLProps[
             ColHTMLAttributes[typings.std.HTMLTableColElement], 
             typings.std.HTMLTableColElement
-          ] = js.native
+          ]
       
       var colgroup: DetailedHTMLProps[
             ColgroupHTMLAttributes[typings.std.HTMLTableColElement], 
             typings.std.HTMLTableColElement
-          ] = js.native
+          ]
       
-      var `contact-button`: js.Any = js.native
+      var `contact-button`: js.Any
       
-      var `cover-image`: js.Any = js.native
+      var `cover-image`: js.Any
       
-      var `cover-view`: js.Any = js.native
+      var `cover-view`: js.Any
       
-      var data: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var data: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var datalist: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDataListElement], typings.std.HTMLDataListElement] = js.native
+      var datalist: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDataListElement], typings.std.HTMLDataListElement]
       
-      var dd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var dd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var defs: SVGProps[typings.std.SVGDefsElement] = js.native
+      var defs: SVGProps[typings.std.SVGDefsElement]
       
-      var del: DetailedHTMLProps[DelHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var del: DetailedHTMLProps[DelHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var desc: SVGProps[typings.std.SVGDescElement] = js.native
+      var desc: SVGProps[typings.std.SVGDescElement]
       
-      var details: DetailedHTMLProps[DetailsHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var details: DetailedHTMLProps[DetailsHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var dfn: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var dfn: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var dialog: DetailedHTMLProps[DialogHTMLAttributes[typings.std.HTMLDialogElement], typings.std.HTMLDialogElement] = js.native
+      var dialog: DetailedHTMLProps[DialogHTMLAttributes[typings.std.HTMLDialogElement], typings.std.HTMLDialogElement]
       
-      var div: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDivElement], typings.std.HTMLDivElement] = js.native
+      var div: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDivElement], typings.std.HTMLDivElement]
       
-      var dl: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDListElement], typings.std.HTMLDListElement] = js.native
+      var dl: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDListElement], typings.std.HTMLDListElement]
       
-      var dt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var dt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var ellipse: SVGProps[typings.std.SVGEllipseElement] = js.native
+      var ellipse: SVGProps[typings.std.SVGEllipseElement]
       
-      var em: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var em: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var embed: DetailedHTMLProps[EmbedHTMLAttributes[typings.std.HTMLEmbedElement], typings.std.HTMLEmbedElement] = js.native
+      var embed: DetailedHTMLProps[EmbedHTMLAttributes[typings.std.HTMLEmbedElement], typings.std.HTMLEmbedElement]
       
-      var feBlend: SVGProps[typings.std.SVGFEBlendElement] = js.native
+      var feBlend: SVGProps[typings.std.SVGFEBlendElement]
       
-      var feColorMatrix: SVGProps[typings.std.SVGFEColorMatrixElement] = js.native
+      var feColorMatrix: SVGProps[typings.std.SVGFEColorMatrixElement]
       
-      var feComponentTransfer: SVGProps[typings.std.SVGFEComponentTransferElement] = js.native
+      var feComponentTransfer: SVGProps[typings.std.SVGFEComponentTransferElement]
       
-      var feComposite: SVGProps[typings.std.SVGFECompositeElement] = js.native
+      var feComposite: SVGProps[typings.std.SVGFECompositeElement]
       
-      var feConvolveMatrix: SVGProps[typings.std.SVGFEConvolveMatrixElement] = js.native
+      var feConvolveMatrix: SVGProps[typings.std.SVGFEConvolveMatrixElement]
       
-      var feDiffuseLighting: SVGProps[typings.std.SVGFEDiffuseLightingElement] = js.native
+      var feDiffuseLighting: SVGProps[typings.std.SVGFEDiffuseLightingElement]
       
-      var feDisplacementMap: SVGProps[typings.std.SVGFEDisplacementMapElement] = js.native
+      var feDisplacementMap: SVGProps[typings.std.SVGFEDisplacementMapElement]
       
-      var feDistantLight: SVGProps[typings.std.SVGFEDistantLightElement] = js.native
+      var feDistantLight: SVGProps[typings.std.SVGFEDistantLightElement]
       
-      var feDropShadow: SVGProps[typings.std.SVGFEDropShadowElement] = js.native
+      var feDropShadow: SVGProps[typings.std.SVGFEDropShadowElement]
       
-      var feFlood: SVGProps[typings.std.SVGFEFloodElement] = js.native
+      var feFlood: SVGProps[typings.std.SVGFEFloodElement]
       
-      var feFuncA: SVGProps[typings.std.SVGFEFuncAElement] = js.native
+      var feFuncA: SVGProps[typings.std.SVGFEFuncAElement]
       
-      var feFuncB: SVGProps[typings.std.SVGFEFuncBElement] = js.native
+      var feFuncB: SVGProps[typings.std.SVGFEFuncBElement]
       
-      var feFuncG: SVGProps[typings.std.SVGFEFuncGElement] = js.native
+      var feFuncG: SVGProps[typings.std.SVGFEFuncGElement]
       
-      var feFuncR: SVGProps[typings.std.SVGFEFuncRElement] = js.native
+      var feFuncR: SVGProps[typings.std.SVGFEFuncRElement]
       
-      var feGaussianBlur: SVGProps[typings.std.SVGFEGaussianBlurElement] = js.native
+      var feGaussianBlur: SVGProps[typings.std.SVGFEGaussianBlurElement]
       
-      var feImage: SVGProps[typings.std.SVGFEImageElement] = js.native
+      var feImage: SVGProps[typings.std.SVGFEImageElement]
       
-      var feMerge: SVGProps[typings.std.SVGFEMergeElement] = js.native
+      var feMerge: SVGProps[typings.std.SVGFEMergeElement]
       
-      var feMergeNode: SVGProps[typings.std.SVGFEMergeNodeElement] = js.native
+      var feMergeNode: SVGProps[typings.std.SVGFEMergeNodeElement]
       
-      var feMorphology: SVGProps[typings.std.SVGFEMorphologyElement] = js.native
+      var feMorphology: SVGProps[typings.std.SVGFEMorphologyElement]
       
-      var feOffset: SVGProps[typings.std.SVGFEOffsetElement] = js.native
+      var feOffset: SVGProps[typings.std.SVGFEOffsetElement]
       
-      var fePointLight: SVGProps[typings.std.SVGFEPointLightElement] = js.native
+      var fePointLight: SVGProps[typings.std.SVGFEPointLightElement]
       
-      var feSpecularLighting: SVGProps[typings.std.SVGFESpecularLightingElement] = js.native
+      var feSpecularLighting: SVGProps[typings.std.SVGFESpecularLightingElement]
       
-      var feSpotLight: SVGProps[typings.std.SVGFESpotLightElement] = js.native
+      var feSpotLight: SVGProps[typings.std.SVGFESpotLightElement]
       
-      var feTile: SVGProps[typings.std.SVGFETileElement] = js.native
+      var feTile: SVGProps[typings.std.SVGFETileElement]
       
-      var feTurbulence: SVGProps[typings.std.SVGFETurbulenceElement] = js.native
+      var feTurbulence: SVGProps[typings.std.SVGFETurbulenceElement]
       
       var fieldset: DetailedHTMLProps[
             FieldsetHTMLAttributes[typings.std.HTMLFieldSetElement], 
             typings.std.HTMLFieldSetElement
-          ] = js.native
+          ]
       
-      var figcaption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var figcaption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var figure: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var figure: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var filter: SVGProps[typings.std.SVGFilterElement] = js.native
+      var filter: SVGProps[typings.std.SVGFilterElement]
       
-      var footer: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var footer: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var foreignObject: SVGProps[typings.std.SVGForeignObjectElement] = js.native
+      var foreignObject: SVGProps[typings.std.SVGForeignObjectElement]
       
-      var form: DetailedHTMLProps[FormHTMLAttributes[typings.std.HTMLFormElement], typings.std.HTMLFormElement] = js.native
+      var form: DetailedHTMLProps[FormHTMLAttributes[typings.std.HTMLFormElement], typings.std.HTMLFormElement]
       
-      var `functional-page-navigator`: js.Any = js.native
+      var `functional-page-navigator`: js.Any
       
-      var g: SVGProps[typings.std.SVGGElement] = js.native
+      var g: SVGProps[typings.std.SVGGElement]
       
-      var h1: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement] = js.native
+      var h1: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
       
-      var h2: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement] = js.native
+      var h2: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
       
-      var h3: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement] = js.native
+      var h3: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
       
-      var h4: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement] = js.native
+      var h4: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
       
-      var h5: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement] = js.native
+      var h5: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
       
-      var h6: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement] = js.native
+      var h6: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
       
-      var head: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadElement], typings.std.HTMLHeadElement] = js.native
+      var head: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadElement], typings.std.HTMLHeadElement]
       
-      var header: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var header: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var hgroup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var hgroup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var hr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHRElement], typings.std.HTMLHRElement] = js.native
+      var hr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHRElement], typings.std.HTMLHRElement]
       
-      var html: DetailedHTMLProps[HtmlHTMLAttributes[typings.std.HTMLHtmlElement], typings.std.HTMLHtmlElement] = js.native
+      var html: DetailedHTMLProps[HtmlHTMLAttributes[typings.std.HTMLHtmlElement], typings.std.HTMLHtmlElement]
       
-      var i: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var i: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var icon: js.Any = js.native
+      var icon: js.Any
       
-      var iframe: DetailedHTMLProps[IframeHTMLAttributes[typings.std.HTMLIFrameElement], typings.std.HTMLIFrameElement] = js.native
+      var iframe: DetailedHTMLProps[IframeHTMLAttributes[typings.std.HTMLIFrameElement], typings.std.HTMLIFrameElement]
       
-      var image: SVGProps[typings.std.SVGImageElement] = js.native
+      var image: SVGProps[typings.std.SVGImageElement]
       
-      var img: DetailedHTMLProps[ImgHTMLAttributes[typings.std.HTMLImageElement], typings.std.HTMLImageElement] = js.native
+      var img: DetailedHTMLProps[ImgHTMLAttributes[typings.std.HTMLImageElement], typings.std.HTMLImageElement]
       
-      var indicator: js.Any = js.native
+      var indicator: js.Any
       
-      var input: DetailedHTMLProps[InputHTMLAttributes[typings.std.HTMLInputElement], typings.std.HTMLInputElement] = js.native
+      var input: DetailedHTMLProps[InputHTMLAttributes[typings.std.HTMLInputElement], typings.std.HTMLInputElement]
       
-      var ins: DetailedHTMLProps[InsHTMLAttributes[typings.std.HTMLModElement], typings.std.HTMLModElement] = js.native
+      var ins: DetailedHTMLProps[InsHTMLAttributes[typings.std.HTMLModElement], typings.std.HTMLModElement]
       
-      var `ive-pusher`: js.Any = js.native
+      var `ive-pusher`: js.Any
       
-      var kbd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var kbd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var keygen: DetailedHTMLProps[KeygenHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var keygen: DetailedHTMLProps[KeygenHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var label: DetailedHTMLProps[LabelHTMLAttributes[typings.std.HTMLLabelElement], typings.std.HTMLLabelElement] = js.native
+      var label: DetailedHTMLProps[LabelHTMLAttributes[typings.std.HTMLLabelElement], typings.std.HTMLLabelElement]
       
-      var legend: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLLegendElement], typings.std.HTMLLegendElement] = js.native
+      var legend: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLLegendElement], typings.std.HTMLLegendElement]
       
-      var li: DetailedHTMLProps[LiHTMLAttributes[typings.std.HTMLLIElement], typings.std.HTMLLIElement] = js.native
+      var li: DetailedHTMLProps[LiHTMLAttributes[typings.std.HTMLLIElement], typings.std.HTMLLIElement]
       
-      var lifestyle: js.Any = js.native
+      var lifestyle: js.Any
       
-      var line: SVGProps[typings.std.SVGLineElement] = js.native
+      var line: SVGProps[typings.std.SVGLineElement]
       
-      var linearGradient: SVGProps[typings.std.SVGLinearGradientElement] = js.native
+      var linearGradient: SVGProps[typings.std.SVGLinearGradientElement]
       
-      var link: DetailedHTMLProps[LinkHTMLAttributes[typings.std.HTMLLinkElement], typings.std.HTMLLinkElement] = js.native
+      var link: DetailedHTMLProps[LinkHTMLAttributes[typings.std.HTMLLinkElement], typings.std.HTMLLinkElement]
       
       // weex
-      var list: js.Any = js.native
+      var list: js.Any
       
-      var `live-player`: js.Any = js.native
+      var `live-player`: js.Any
       
-      var loading: js.Any = js.native
+      var loading: js.Any
       
-      var main: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var main: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var map: DetailedHTMLProps[MapHTMLAttributes[typings.std.HTMLMapElement], typings.std.HTMLMapElement] = js.native
+      var map: DetailedHTMLProps[MapHTMLAttributes[typings.std.HTMLMapElement], typings.std.HTMLMapElement]
       
-      var mark: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var mark: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var marker: SVGProps[typings.std.SVGMarkerElement] = js.native
+      var marker: SVGProps[typings.std.SVGMarkerElement]
       
-      var mask: SVGProps[typings.std.SVGMaskElement] = js.native
+      var mask: SVGProps[typings.std.SVGMaskElement]
       
-      var menu: DetailedHTMLProps[MenuHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var menu: DetailedHTMLProps[MenuHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var menuitem: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var menuitem: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var meta: DetailedHTMLProps[MetaHTMLAttributes[typings.std.HTMLMetaElement], typings.std.HTMLMetaElement] = js.native
+      var meta: DetailedHTMLProps[MetaHTMLAttributes[typings.std.HTMLMetaElement], typings.std.HTMLMetaElement]
       
-      var metadata: SVGProps[typings.std.SVGMetadataElement] = js.native
+      var metadata: SVGProps[typings.std.SVGMetadataElement]
       
-      var meter: DetailedHTMLProps[MeterHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var meter: DetailedHTMLProps[MeterHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var `movable-area`: js.Any = js.native
+      var `movable-area`: js.Any
       
-      var `movable-view`: js.Any = js.native
+      var `movable-view`: js.Any
       
-      var mpath: SVGProps[typings.std.SVGElement] = js.native
+      var mpath: SVGProps[typings.std.SVGElement]
       
-      var nav: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var nav: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var `navigation-bar`: js.Any = js.native
+      var `navigation-bar`: js.Any
       
-      var navigator: js.Any = js.native
+      var navigator: js.Any
       
-      var noindex: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var noindex: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var noscript: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var noscript: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var `object`: DetailedHTMLProps[ObjectHTMLAttributes[typings.std.HTMLObjectElement], typings.std.HTMLObjectElement] = js.native
+      var `object`: DetailedHTMLProps[ObjectHTMLAttributes[typings.std.HTMLObjectElement], typings.std.HTMLObjectElement]
       
-      var ol: DetailedHTMLProps[OlHTMLAttributes[typings.std.HTMLOListElement], typings.std.HTMLOListElement] = js.native
+      var ol: DetailedHTMLProps[OlHTMLAttributes[typings.std.HTMLOListElement], typings.std.HTMLOListElement]
       
-      var `open-data`: js.Any = js.native
+      var `open-data`: js.Any
       
       var optgroup: DetailedHTMLProps[
             OptgroupHTMLAttributes[typings.std.HTMLOptGroupElement], 
             typings.std.HTMLOptGroupElement
-          ] = js.native
+          ]
       
-      var option: DetailedHTMLProps[OptionHTMLAttributes[typings.std.HTMLOptionElement], typings.std.HTMLOptionElement] = js.native
+      var option: DetailedHTMLProps[OptionHTMLAttributes[typings.std.HTMLOptionElement], typings.std.HTMLOptionElement]
       
-      var output: DetailedHTMLProps[OutputHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var output: DetailedHTMLProps[OutputHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var p: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLParagraphElement], typings.std.HTMLParagraphElement] = js.native
+      var p: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLParagraphElement], typings.std.HTMLParagraphElement]
       
-      var `page-meta`: js.Any = js.native
+      var `page-meta`: js.Any
       
-      var param: DetailedHTMLProps[ParamHTMLAttributes[typings.std.HTMLParamElement], typings.std.HTMLParamElement] = js.native
+      var param: DetailedHTMLProps[ParamHTMLAttributes[typings.std.HTMLParamElement], typings.std.HTMLParamElement]
       
-      var path: SVGProps[typings.std.SVGPathElement] = js.native
+      var path: SVGProps[typings.std.SVGPathElement]
       
-      var pattern: SVGProps[typings.std.SVGPatternElement] = js.native
+      var pattern: SVGProps[typings.std.SVGPatternElement]
       
-      var picker: js.Any = js.native
+      var picker: js.Any
       
-      var `picker-view`: js.Any = js.native
+      var `picker-view`: js.Any
       
-      var picture: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var picture: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var polygon: SVGProps[typings.std.SVGPolygonElement] = js.native
+      var polygon: SVGProps[typings.std.SVGPolygonElement]
       
-      var polyline: SVGProps[typings.std.SVGPolylineElement] = js.native
+      var polyline: SVGProps[typings.std.SVGPolylineElement]
       
-      var pre: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLPreElement], typings.std.HTMLPreElement] = js.native
+      var pre: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLPreElement], typings.std.HTMLPreElement]
       
       var progress: DetailedHTMLProps[
             ProgressHTMLAttributes[typings.std.HTMLProgressElement], 
             typings.std.HTMLProgressElement
-          ] = js.native
+          ]
       
-      var q: DetailedHTMLProps[QuoteHTMLAttributes[typings.std.HTMLQuoteElement], typings.std.HTMLQuoteElement] = js.native
+      var q: DetailedHTMLProps[QuoteHTMLAttributes[typings.std.HTMLQuoteElement], typings.std.HTMLQuoteElement]
       
-      var radialGradient: SVGProps[typings.std.SVGRadialGradientElement] = js.native
+      var radialGradient: SVGProps[typings.std.SVGRadialGradientElement]
       
-      var rect: SVGProps[typings.std.SVGRectElement] = js.native
+      var rect: SVGProps[typings.std.SVGRectElement]
       
-      var `recycle-list`: js.Any = js.native
+      var `recycle-list`: js.Any
       
-      var refresh: js.Any = js.native
+      var refresh: js.Any
       
-      var `rich-text`: js.Any = js.native
+      var `rich-text`: js.Any
       
-      var richtext: js.Any = js.native
+      var richtext: js.Any
       
-      var rp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var rp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var rt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var rt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var ruby: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var ruby: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var s: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var s: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var samp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var samp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var script: DetailedHTMLProps[ScriptHTMLAttributes[typings.std.HTMLScriptElement], typings.std.HTMLScriptElement] = js.native
+      var script: DetailedHTMLProps[ScriptHTMLAttributes[typings.std.HTMLScriptElement], typings.std.HTMLScriptElement]
       
-      var `scroll-view`: js.Any = js.native
+      var `scroll-view`: js.Any
       
-      var scroller: js.Any = js.native
+      var scroller: js.Any
       
-      var section: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var section: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var select: DetailedHTMLProps[SelectHTMLAttributes[typings.std.HTMLSelectElement], typings.std.HTMLSelectElement] = js.native
+      var select: DetailedHTMLProps[SelectHTMLAttributes[typings.std.HTMLSelectElement], typings.std.HTMLSelectElement]
       
-      var slider: js.Any = js.native
+      var slider: js.Any
       
       // MiniApp
-      var slot: js.Any = js.native
+      var slot: js.Any
       
-      var small: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var small: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var source: DetailedHTMLProps[SourceHTMLAttributes[typings.std.HTMLSourceElement], typings.std.HTMLSourceElement] = js.native
+      var source: DetailedHTMLProps[SourceHTMLAttributes[typings.std.HTMLSourceElement], typings.std.HTMLSourceElement]
       
-      var span: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLSpanElement], typings.std.HTMLSpanElement] = js.native
+      var span: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLSpanElement], typings.std.HTMLSpanElement]
       
-      var stop: SVGProps[typings.std.SVGStopElement] = js.native
+      var stop: SVGProps[typings.std.SVGStopElement]
       
-      var strong: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var strong: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var style: DetailedHTMLProps[StyleHTMLAttributes[typings.std.HTMLStyleElement], typings.std.HTMLStyleElement] = js.native
+      var style: DetailedHTMLProps[StyleHTMLAttributes[typings.std.HTMLStyleElement], typings.std.HTMLStyleElement]
       
-      var sub: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var sub: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var summary: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var summary: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var sup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var sup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
       // SVG
-      var svg: SVGProps[typings.std.SVGSVGElement] = js.native
+      var svg: SVGProps[typings.std.SVGSVGElement]
       
-      var swiper: js.Any = js.native
+      var swiper: js.Any
       
-      var `swiper-item`: js.Any = js.native
+      var `swiper-item`: js.Any
       
-      var switch: SVGProps[typings.std.SVGSwitchElement] = js.native
+      var switch: SVGProps[typings.std.SVGSwitchElement]
       
-      var symbol: SVGProps[typings.std.SVGSymbolElement] = js.native
+      var symbol: SVGProps[typings.std.SVGSymbolElement]
       
-      var table: DetailedHTMLProps[TableHTMLAttributes[typings.std.HTMLTableElement], typings.std.HTMLTableElement] = js.native
+      var table: DetailedHTMLProps[TableHTMLAttributes[typings.std.HTMLTableElement], typings.std.HTMLTableElement]
       
       var tbody: DetailedHTMLProps[
             HTMLAttributes[typings.std.HTMLTableSectionElement], 
             typings.std.HTMLTableSectionElement
-          ] = js.native
+          ]
       
       var td: DetailedHTMLProps[
             TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
             typings.std.HTMLTableDataCellElement
-          ] = js.native
+          ]
       
-      var text: SVGProps[typings.std.SVGTextElement] = js.native
+      var text: SVGProps[typings.std.SVGTextElement]
       
-      var textPath: SVGProps[typings.std.SVGTextPathElement] = js.native
+      var textPath: SVGProps[typings.std.SVGTextPathElement]
       
       var textarea: DetailedHTMLProps[
             TextareaHTMLAttributes[typings.std.HTMLTextAreaElement], 
             typings.std.HTMLTextAreaElement
-          ] = js.native
+          ]
       
       var tfoot: DetailedHTMLProps[
             HTMLAttributes[typings.std.HTMLTableSectionElement], 
             typings.std.HTMLTableSectionElement
-          ] = js.native
+          ]
       
       var th: DetailedHTMLProps[
             ThHTMLAttributes[typings.std.HTMLTableHeaderCellElement], 
             typings.std.HTMLTableHeaderCellElement
-          ] = js.native
+          ]
       
       var thead: DetailedHTMLProps[
             HTMLAttributes[typings.std.HTMLTableSectionElement], 
             typings.std.HTMLTableSectionElement
-          ] = js.native
+          ]
       
-      var time: DetailedHTMLProps[TimeHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var time: DetailedHTMLProps[TimeHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var title: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTitleElement], typings.std.HTMLTitleElement] = js.native
+      var title: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTitleElement], typings.std.HTMLTitleElement]
       
-      var tr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTableRowElement], typings.std.HTMLTableRowElement] = js.native
+      var tr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTableRowElement], typings.std.HTMLTableRowElement]
       
-      var track: DetailedHTMLProps[TrackHTMLAttributes[typings.std.HTMLTrackElement], typings.std.HTMLTrackElement] = js.native
+      var track: DetailedHTMLProps[TrackHTMLAttributes[typings.std.HTMLTrackElement], typings.std.HTMLTrackElement]
       
-      var tspan: SVGProps[typings.std.SVGTSpanElement] = js.native
+      var tspan: SVGProps[typings.std.SVGTSpanElement]
       
-      var u: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var u: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var ul: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLUListElement], typings.std.HTMLUListElement] = js.native
+      var ul: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLUListElement], typings.std.HTMLUListElement]
       
-      var use: SVGProps[typings.std.SVGUseElement] = js.native
+      var use: SVGProps[typings.std.SVGUseElement]
       
-      var `var`: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var `var`: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var video: DetailedHTMLProps[VideoHTMLAttributes[typings.std.HTMLVideoElement], typings.std.HTMLVideoElement] = js.native
+      var video: DetailedHTMLProps[VideoHTMLAttributes[typings.std.HTMLVideoElement], typings.std.HTMLVideoElement]
       
-      var view: SVGProps[typings.std.SVGViewElement] = js.native
+      var view: SVGProps[typings.std.SVGViewElement]
       
-      var waterfall: js.Any = js.native
+      var waterfall: js.Any
       
-      var wbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement] = js.native
+      var wbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
       
-      var web: js.Any = js.native
+      var web: js.Any
       
-      var `web-view`: js.Any = js.native
+      var `web-view`: js.Any
       
       var webview: DetailedHTMLProps[
             WebViewHTMLAttributes[typings.rax.HTMLWebViewElement], 
             typings.rax.HTMLWebViewElement
-          ] = js.native
+          ]
     }
     object IntrinsicElements {
       

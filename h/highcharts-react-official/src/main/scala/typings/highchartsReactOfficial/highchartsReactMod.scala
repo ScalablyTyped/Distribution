@@ -13,7 +13,6 @@ import typings.react.mod.PropsWithoutRef
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object highchartsReactMod {
@@ -22,12 +21,12 @@ object highchartsReactMod {
     
     @JSImport("highcharts-react-official/dist/highcharts-react", JSImport.Default)
     @js.native
-    val ^ : ForwardRefExoticComponent[PropsWithoutRef[Props] with RefAttributes[Chart]] = js.native
+    val ^ : ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[Chart]] = js.native
     
-    type _To = ForwardRefExoticComponent[PropsWithoutRef[Props] with RefAttributes[Chart]]
+    type _To = ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[Chart]]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: ForwardRefExoticComponent[PropsWithoutRef[Props] with RefAttributes[Chart]] = ^
+    override def _to: ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[Chart]] = ^
   }
   
   object HighchartsReact {
@@ -35,9 +34,9 @@ object highchartsReactMod {
     /**
       * Properties for a Highcharts component
       */
-    @js.native
     trait Props
-      extends /* *
+      extends StObject
+         with /* *
       *
       *  Properties
       *
@@ -50,7 +49,7 @@ object highchartsReactMod {
       /**
         * Flag for `Chart.update` call (Default: true)
         */
-      var allowChartUpdate: js.UndefOr[Boolean] = js.native
+      var allowChartUpdate: js.UndefOr[Boolean] = js.undefined
       
       /* *
         *
@@ -60,34 +59,34 @@ object highchartsReactMod {
       /**
         * Callback for the chart factory
         */
-      var callback: js.UndefOr[ChartCallbackFunction] = js.native
+      var callback: js.UndefOr[ChartCallbackFunction] = js.undefined
       
       /**
         * Reference to the chart factory (Default: chart)
         */
       var constructorType: js.UndefOr[
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81 */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Properties of the chart container
         */
-      var containerProps: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var containerProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
       
       /**
         * Highcharts namespace
         */
-      var highcharts: js.UndefOr[TypeofHighcharts] = js.native
+      var highcharts: js.UndefOr[TypeofHighcharts] = js.undefined
       
       /**
         * Immutably recreates the chart on receiving new props
         */
-      var immutable: js.UndefOr[Boolean] = js.native
+      var immutable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Highcharts options
         */
-      var options: js.UndefOr[Options] = js.native
+      var options: js.UndefOr[Options] = js.undefined
       
       /**
         * Flags for `Chart.update` call: redraw, oneToOne, and animation. (Default:
@@ -95,7 +94,7 @@ object highchartsReactMod {
         */
       var updateArgs: js.UndefOr[
             js.Array[Boolean] | (js.Tuple2[Boolean, Boolean]) | (js.Tuple3[Boolean, Boolean, Boolean])
-          ] = js.native
+          ] = js.undefined
     }
     object Props {
       

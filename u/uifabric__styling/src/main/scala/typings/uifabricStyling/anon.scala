@@ -2,7 +2,6 @@ package typings.uifabricStyling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -11,12 +10,11 @@ object anon {
   trait EdgeChromiumHighContrastSelector extends StObject
   
   /* Inlined std.Partial<@uifabric/styling.@uifabric/styling/lib/utilities/icons.IIconOptions> */
-  @js.native
   trait PartialIIconOptions extends StObject {
     
-    var disableWarnings: js.UndefOr[Boolean] = js.native
+    var disableWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var warnOnMissingIcons: js.UndefOr[Boolean] = js.native
+    var warnOnMissingIcons: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIIconOptions {
     

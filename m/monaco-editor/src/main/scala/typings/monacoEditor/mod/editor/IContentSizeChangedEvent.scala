@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContentSizeChangedEvent extends StObject {
   
-  val contentHeight: Double = js.native
+  val contentHeight: Double
   
-  val contentHeightChanged: Boolean = js.native
+  val contentHeightChanged: Boolean
   
-  val contentWidth: Double = js.native
+  val contentWidth: Double
   
-  val contentWidthChanged: Boolean = js.native
+  val contentWidthChanged: Boolean
 }
 object IContentSizeChangedEvent {
   

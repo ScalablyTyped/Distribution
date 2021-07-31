@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutVoiceConnectorEmergencyCallingConfigurationResponse extends StObject {
   
   /**
     * The emergency calling configuration details.
     */
-  var EmergencyCallingConfiguration: js.UndefOr[typings.awsSdk.chimeMod.EmergencyCallingConfiguration] = js.native
+  var EmergencyCallingConfiguration: js.UndefOr[typings.awsSdk.chimeMod.EmergencyCallingConfiguration] = js.undefined
 }
 object PutVoiceConnectorEmergencyCallingConfigurationResponse {
   

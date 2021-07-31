@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateDispatchEventEndpoint extends StObject {
   
   /**
     * JSON payload with extra information about the webhook event that your action or worklow may use.
     */
-  var client_payload: js.UndefOr[ReposCreateDispatchEventParamsClientPayload] = js.native
+  var client_payload: js.UndefOr[ReposCreateDispatchEventParamsClientPayload] = js.undefined
   
   /**
     * **Required:** A custom webhook event name.
     */
-  var event_type: String = js.native
+  var event_type: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposCreateDispatchEventEndpoint {
   

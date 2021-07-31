@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Sites")
@@ -28,7 +27,7 @@ class ResourceSites protected () extends StObject {
     */
   def add(): GaxiosPromise[Unit] = js.native
   def add(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def add(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def add(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def add(params: ParamsResourceSitesAdd): GaxiosPromise[Unit] = js.native
   def add(params: ParamsResourceSitesAdd, callback: BodyResponseCallback[Unit]): Unit = js.native
   def add(
@@ -55,7 +54,7 @@ class ResourceSites protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSitesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSitesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -80,7 +79,7 @@ class ResourceSites protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaWmxSite] = js.native
   def get(callback: BodyResponseCallback[SchemaWmxSite]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWmxSite] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWmxSite] = js.native
   def get(params: ParamsResourceSitesGet): GaxiosPromise[SchemaWmxSite] = js.native
   def get(params: ParamsResourceSitesGet, callback: BodyResponseCallback[SchemaWmxSite]): Unit = js.native
   def get(
@@ -108,7 +107,7 @@ class ResourceSites protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSitesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSitesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSitesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSitesListResponse] = js.native
   def list(params: ParamsResourceSitesList): GaxiosPromise[SchemaSitesListResponse] = js.native
   def list(params: ParamsResourceSitesList, callback: BodyResponseCallback[SchemaSitesListResponse]): Unit = js.native
   def list(

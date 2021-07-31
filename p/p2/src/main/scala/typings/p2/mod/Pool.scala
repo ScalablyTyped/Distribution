@@ -2,7 +2,6 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Pool")
@@ -12,7 +11,7 @@ class Pool () extends StObject {
   
   def get(): js.Any = js.native
   
-  var objects: js.Array[_] = js.native
+  var objects: js.Array[js.Any] = js.native
   
   def release(`object`: js.Any): Pool = js.native
   

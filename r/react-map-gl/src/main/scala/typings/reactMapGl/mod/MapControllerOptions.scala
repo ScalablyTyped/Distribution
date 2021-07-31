@@ -2,33 +2,31 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapControllerOptions extends StObject {
   
-  var doubleClickZoom: js.UndefOr[Boolean] = js.native
+  var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
   
-  var dragPan: js.UndefOr[Boolean] = js.native
+  var dragPan: js.UndefOr[Boolean] = js.undefined
   
-  var dragRotate: js.UndefOr[Boolean] = js.native
+  var dragRotate: js.UndefOr[Boolean] = js.undefined
   
-  var eventManager: js.UndefOr[js.Any] = js.native
+  var eventManager: js.UndefOr[js.Any] = js.undefined
   
-  var isInteractive: Boolean = js.native
+  var isInteractive: Boolean
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var onStateChange: js.UndefOr[js.Function1[/* state */ MapState, Unit]] = js.native
+  var onStateChange: js.UndefOr[js.Function1[/* state */ MapState, Unit]] = js.undefined
   
-  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
   
-  var scrollZoom: js.UndefOr[Boolean] = js.native
+  var scrollZoom: js.UndefOr[Boolean] = js.undefined
   
-  var touchRotate: js.UndefOr[Boolean] = js.native
+  var touchRotate: js.UndefOr[Boolean] = js.undefined
   
-  var touchZoom: js.UndefOr[Boolean] = js.native
+  var touchZoom: js.UndefOr[Boolean] = js.undefined
 }
 object MapControllerOptions {
   

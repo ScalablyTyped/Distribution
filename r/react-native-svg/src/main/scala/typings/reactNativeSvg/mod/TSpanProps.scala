@@ -2,21 +2,20 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSpanProps
-  extends CommonPathProps
+  extends StObject
+     with CommonPathProps
      with FontProps {
   
-  var dx: js.UndefOr[NumberArray] = js.native
+  var dx: js.UndefOr[NumberArray] = js.undefined
   
-  var dy: js.UndefOr[NumberArray] = js.native
+  var dy: js.UndefOr[NumberArray] = js.undefined
   
-  var inlineSize: js.UndefOr[NumberProp] = js.native
+  var inlineSize: js.UndefOr[NumberProp] = js.undefined
   
-  var rotate: js.UndefOr[NumberArray] = js.native
+  var rotate: js.UndefOr[NumberArray] = js.undefined
 }
 object TSpanProps {
   

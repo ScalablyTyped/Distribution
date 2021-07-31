@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param manager - WebXR Manager.
   */
 @js.native
-trait XrLightEstimation extends EventHandler {
+trait XrLightEstimation
+  extends StObject
+     with EventHandler {
   
   /**
     * True if estimated light information is available.

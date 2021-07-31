@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetApplicationRevisionsInput extends StObject {
   
   /**
     * The name of an AWS CodeDeploy application about which to get revision information.
     */
-  var applicationName: ApplicationName = js.native
+  var applicationName: ApplicationName
   
   /**
     * An array of RevisionLocation objects that specify information to get about the application revisions, including type and location. The maximum number of RevisionLocation objects you can specify is 25.
     */
-  var revisions: RevisionLocationList = js.native
+  var revisions: RevisionLocationList
 }
 object BatchGetApplicationRevisionsInput {
   

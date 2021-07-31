@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.networkfirewall
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRuleVariablesIpSet extends StObject {
   
   /**
     * A configuration block that defines a set of IP addresses. See IP Set below for details.
     */
-  var ipSet: Input[RuleGroupRuleGroupRuleVariablesIpSetIpSet] = js.native
+  var ipSet: Input[RuleGroupRuleGroupRuleVariablesIpSetIpSet]
   
   /**
     * A unique alphanumeric string to identify the `ipSet`.
     */
-  var key: Input[String] = js.native
+  var key: Input[String]
 }
 object RuleGroupRuleGroupRuleVariablesIpSet {
   

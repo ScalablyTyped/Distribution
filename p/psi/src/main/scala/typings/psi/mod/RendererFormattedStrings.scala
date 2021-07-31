@@ -2,43 +2,41 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RendererFormattedStrings extends StObject {
   
-  var auditGroupExpandTooltip: String = js.native
+  var auditGroupExpandTooltip: String
   
-  var crcInitialNavigation: String = js.native
+  var crcInitialNavigation: String
   
-  var crcLongestDurationLabel: String = js.native
+  var crcLongestDurationLabel: String
   
-  var errorLabel: String = js.native
+  var errorLabel: String
   
-  var errorMissingAuditInfo: String = js.native
+  var errorMissingAuditInfo: String
   
-  var labDataTitle: String = js.native
+  var labDataTitle: String
   
-  var lsPerformanceCategoryDescription: String = js.native
+  var lsPerformanceCategoryDescription: String
   
-  var manualAuditsGroupTitle: String = js.native
+  var manualAuditsGroupTitle: String
   
-  var notApplicableAuditsGroupTitle: String = js.native
+  var notApplicableAuditsGroupTitle: String
   
-  var opportunityResourceColumnLabel: String = js.native
+  var opportunityResourceColumnLabel: String
   
-  var opportunitySavingsColumnLabel: String = js.native
+  var opportunitySavingsColumnLabel: String
   
-  var passedAuditsGroupTitle: String = js.native
+  var passedAuditsGroupTitle: String
   
-  var scorescaleLabel: String = js.native
+  var scorescaleLabel: String
   
-  var toplevelWarningsMessage: String = js.native
+  var toplevelWarningsMessage: String
   
-  var varianceDisclaimer: String = js.native
+  var varianceDisclaimer: String
   
-  var warningHeader: String = js.native
+  var warningHeader: String
 }
 object RendererFormattedStrings {
   

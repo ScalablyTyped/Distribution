@@ -2,56 +2,54 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationCustomRuleMetadata extends StObject {
   
   /**
     * The description that you provide for organization config rule.
     */
-  var Description: js.UndefOr[StringWithCharLimit256Min0] = js.native
+  var Description: js.UndefOr[StringWithCharLimit256Min0] = js.undefined
   
   /**
     * A string, in JSON format, that is passed to organization config rule Lambda function.
     */
-  var InputParameters: js.UndefOr[StringWithCharLimit2048] = js.native
+  var InputParameters: js.UndefOr[StringWithCharLimit2048] = js.undefined
   
   /**
     * The lambda function ARN.
     */
-  var LambdaFunctionArn: StringWithCharLimit256 = js.native
+  var LambdaFunctionArn: StringWithCharLimit256
   
   /**
     * The maximum frequency with which AWS Config runs evaluations for a rule. Your custom rule is triggered when AWS Config delivers the configuration snapshot. For more information, see ConfigSnapshotDeliveryProperties.  By default, rules with a periodic trigger are evaluated every 24 hours. To change the frequency, specify a valid value for the MaximumExecutionFrequency parameter. 
     */
-  var MaximumExecutionFrequency: js.UndefOr[typings.awsSdk.configserviceMod.MaximumExecutionFrequency] = js.native
+  var MaximumExecutionFrequency: js.UndefOr[typings.awsSdk.configserviceMod.MaximumExecutionFrequency] = js.undefined
   
   /**
     * The type of notification that triggers AWS Config to run an evaluation for a rule. You can specify the following notification types:    ConfigurationItemChangeNotification - Triggers an evaluation when AWS Config delivers a configuration item as a result of a resource change.    OversizedConfigurationItemChangeNotification - Triggers an evaluation when AWS Config delivers an oversized configuration item. AWS Config may generate this notification type when a resource changes and the notification exceeds the maximum size allowed by Amazon SNS.    ScheduledNotification - Triggers a periodic evaluation at the frequency specified for MaximumExecutionFrequency.  
     */
-  var OrganizationConfigRuleTriggerTypes: typings.awsSdk.configserviceMod.OrganizationConfigRuleTriggerTypes = js.native
+  var OrganizationConfigRuleTriggerTypes: typings.awsSdk.configserviceMod.OrganizationConfigRuleTriggerTypes
   
   /**
     * The ID of the AWS resource that was evaluated.
     */
-  var ResourceIdScope: js.UndefOr[StringWithCharLimit768] = js.native
+  var ResourceIdScope: js.UndefOr[StringWithCharLimit768] = js.undefined
   
   /**
     * The type of the AWS resource that was evaluated.
     */
-  var ResourceTypesScope: js.UndefOr[typings.awsSdk.configserviceMod.ResourceTypesScope] = js.native
+  var ResourceTypesScope: js.UndefOr[typings.awsSdk.configserviceMod.ResourceTypesScope] = js.undefined
   
   /**
     * One part of a key-value pair that make up a tag. A key is a general label that acts like a category for more specific tag values. 
     */
-  var TagKeyScope: js.UndefOr[StringWithCharLimit128] = js.native
+  var TagKeyScope: js.UndefOr[StringWithCharLimit128] = js.undefined
   
   /**
     * The optional part of a key-value pair that make up a tag. A value acts as a descriptor within a tag category (key). 
     */
-  var TagValueScope: js.UndefOr[StringWithCharLimit256] = js.native
+  var TagValueScope: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object OrganizationCustomRuleMetadata {
   

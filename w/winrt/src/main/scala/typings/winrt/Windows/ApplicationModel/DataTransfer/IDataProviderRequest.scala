@@ -3,19 +3,17 @@ package typings.winrt.Windows.ApplicationModel.DataTransfer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataProviderRequest extends StObject {
   
-  var deadline: Date = js.native
+  var deadline: Date
   
-  var formatId: String = js.native
+  var formatId: String
   
-  def getDeferral(): DataProviderDeferral = js.native
+  def getDeferral(): DataProviderDeferral
   
-  def setData(value: js.Any): Unit = js.native
+  def setData(value: js.Any): Unit
 }
 object IDataProviderRequest {
   

@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.conditionMod.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragPanMod {
@@ -18,14 +17,13 @@ object dragPanMod {
   trait DragPan
     extends typings.ol.pointerMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var kinetic: js.UndefOr[typings.ol.kineticMod.default] = js.native
+    var kinetic: js.UndefOr[typings.ol.kineticMod.default] = js.undefined
     
-    var onFocusOnly: js.UndefOr[Boolean] = js.native
+    var onFocusOnly: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

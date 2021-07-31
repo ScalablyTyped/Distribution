@@ -2,36 +2,34 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoverInputSchemaRequest extends StObject {
   
   /**
     * The InputProcessingConfiguration to use to preprocess the records before discovering the schema of the records.
     */
-  var InputProcessingConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputProcessingConfiguration] = js.native
+  var InputProcessingConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputProcessingConfiguration] = js.undefined
   
   /**
     * Point at which you want Amazon Kinesis Analytics to start reading records from the specified streaming source discovery purposes.
     */
-  var InputStartingPositionConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputStartingPositionConfiguration] = js.native
+  var InputStartingPositionConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.InputStartingPositionConfiguration] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the streaming source.
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.ResourceARN] = js.undefined
   
   /**
     * ARN of the IAM role that Amazon Kinesis Analytics can assume to access the stream on your behalf.
     */
-  var RoleARN: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.RoleARN] = js.undefined
   
   /**
     * Specify this parameter to discover a schema from data in an Amazon S3 object.
     */
-  var S3Configuration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.S3Configuration] = js.native
+  var S3Configuration: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.S3Configuration] = js.undefined
 }
 object DiscoverInputSchemaRequest {
   

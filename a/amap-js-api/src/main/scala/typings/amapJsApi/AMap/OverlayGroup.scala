@@ -3,11 +3,12 @@ package typings.amapJsApi.AMap
 import typings.amapJsApi.ReferOverlayOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlayGroup[O /* <: Overlay[_] */, ExtraData] extends Overlay[ExtraData] {
+trait OverlayGroup[O /* <: Overlay[js.Any] */, ExtraData]
+  extends StObject
+     with Overlay[ExtraData] {
   
   /**
     * 添加单个覆盖物到集合中，不支持添加重复的覆盖物

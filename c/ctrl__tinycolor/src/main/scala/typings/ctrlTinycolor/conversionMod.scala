@@ -6,122 +6,91 @@ import typings.ctrlTinycolor.anon.NumberifyRGB
 import typings.ctrlTinycolor.interfacesMod.RGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversionMod {
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "convertDecimalToHex")
+  @JSImport("@ctrl/tinycolor/dist/conversion", JSImport.Namespace)
   @js.native
-  def convertDecimalToHex(d: String): String = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "convertDecimalToHex")
-  @js.native
-  def convertDecimalToHex(d: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "convertHexToDecimal")
-  @js.native
-  def convertHexToDecimal(h: String): Double = js.native
+  @scala.inline
+  def convertDecimalToHex(d: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDecimalToHex")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def convertDecimalToHex(d: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDecimalToHex")(d.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: String, s: String, l: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: String, s: String, l: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: String, s: Double, l: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: String, s: Double, l: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: Double, s: String, l: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: Double, s: String, l: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: Double, s: Double, l: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hslToRgb")
-  @js.native
-  def hslToRgb(h: Double, s: Double, l: Double): NumberifyRGB = js.native
+  @scala.inline
+  def convertHexToDecimal(h: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("convertHexToDecimal")(h.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: String, s: String, v: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: String, s: String, v: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: String, s: Double, v: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: String, s: Double, v: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: Double, s: String, v: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: Double, s: String, v: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: Double, s: Double, v: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "hsvToRgb")
-  @js.native
-  def hsvToRgb(h: Double, s: Double, v: Double): NumberifyRGB = js.native
+  @scala.inline
+  def hslToRgb(h: String, s: String, l: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: String, s: String, l: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: String, s: Double, l: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: String, s: Double, l: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: Double, s: String, l: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: Double, s: String, l: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: Double, s: Double, l: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hslToRgb(h: Double, s: Double, l: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hslToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "numberInputToObject")
-  @js.native
-  def numberInputToObject(color: Double): RGB = js.native
+  @scala.inline
+  def hsvToRgb(h: String, s: String, v: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: String, s: String, v: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: String, s: Double, v: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: String, s: Double, v: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: Double, s: String, v: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: Double, s: String, v: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: Double, s: Double, v: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def hsvToRgb(h: Double, s: Double, v: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsvToRgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "parseIntFromHex")
-  @js.native
-  def parseIntFromHex(`val`: String): Double = js.native
+  @scala.inline
+  def numberInputToObject(color: Double): RGB = ^.asInstanceOf[js.Dynamic].applyDynamic("numberInputToObject")(color.asInstanceOf[js.Any]).asInstanceOf[RGB]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToHex")
-  @js.native
-  def rgbToHex(r: Double, g: Double, b: Double, allow3Char: Boolean): String = js.native
+  @scala.inline
+  def parseIntFromHex(`val`: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseIntFromHex")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToHsl")
-  @js.native
-  def rgbToHsl(r: Double, g: Double, b: Double): NumberifyHSL = js.native
+  @scala.inline
+  def rgbToHex(r: Double, g: Double, b: Double, allow3Char: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToHex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], allow3Char.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToHsv")
-  @js.native
-  def rgbToHsv(r: Double, g: Double, b: Double): NumberifyHSV = js.native
+  @scala.inline
+  def rgbToHsl(r: Double, g: Double, b: Double): NumberifyHSL = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToHsl")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyHSL]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: String, g: String, b: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: String, g: String, b: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: String, g: Double, b: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: String, g: Double, b: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: Double, g: String, b: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: Double, g: String, b: Double): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: Double, g: Double, b: String): NumberifyRGB = js.native
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbToRgb")
-  @js.native
-  def rgbToRgb(r: Double, g: Double, b: Double): NumberifyRGB = js.native
+  @scala.inline
+  def rgbToHsv(r: Double, g: Double, b: Double): NumberifyHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToHsv")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyHSV]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbaToArgbHex")
-  @js.native
-  def rgbaToArgbHex(r: Double, g: Double, b: Double, a: Double): String = js.native
+  @scala.inline
+  def rgbToRgb(r: String, g: String, b: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: String, g: String, b: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: String, g: Double, b: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: String, g: Double, b: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: Double, g: String, b: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: Double, g: String, b: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: Double, g: Double, b: String): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
+  @scala.inline
+  def rgbToRgb(r: Double, g: Double, b: Double): NumberifyRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToRgb")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[NumberifyRGB]
   
-  @JSImport("@ctrl/tinycolor/dist/conversion", "rgbaToHex")
-  @js.native
-  def rgbaToHex(r: Double, g: Double, b: Double, a: Double, allow4Char: Boolean): String = js.native
+  @scala.inline
+  def rgbaToArgbHex(r: Double, g: Double, b: Double, a: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbaToArgbHex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def rgbaToHex(r: Double, g: Double, b: Double, a: Double, allow4Char: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbaToHex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], allow4Char.asInstanceOf[js.Any])).asInstanceOf[String]
 }

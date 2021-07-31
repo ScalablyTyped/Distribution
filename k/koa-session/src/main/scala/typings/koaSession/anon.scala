@@ -12,17 +12,15 @@ import typings.koaSession.mod.stores
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Changed extends StObject {
     
-    var changed: Boolean = js.native
+    var changed: Boolean
     
-    var rolling: js.UndefOr[Boolean] = js.native
+    var rolling: js.UndefOr[Boolean] = js.undefined
   }
   object Changed {
     
@@ -47,23 +45,24 @@ object anon {
   }
   
   @js.native
-  trait Instantiable extends Instantiable1[/* ctx */ Context, stores]
+  trait Instantiable
+    extends StObject
+       with Instantiable1[/* ctx */ Context, stores]
   
   /* Inlined std.Partial<koa-session.koa-session.Session> */
-  @js.native
   trait PartialSession extends StObject {
     
-    var inspect: js.UndefOr[js.Function0[js.Object]] = js.native
+    var inspect: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var maxAge: js.UndefOr[Double | session] = js.native
+    var maxAge: js.UndefOr[Double | session] = js.undefined
     
-    var populated: js.UndefOr[Boolean] = js.native
+    var populated: js.UndefOr[Boolean] = js.undefined
     
-    var save: js.UndefOr[js.Function0[Unit]] = js.native
+    var save: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var toJSON: js.UndefOr[js.Function0[js.Object]] = js.native
+    var toJSON: js.UndefOr[js.Function0[js.Object]] = js.undefined
   }
   object PartialSession {
     
@@ -115,24 +114,23 @@ object anon {
   }
   
   /* Inlined std.Partial<koa-session.koa-session.Session> & {  _expire :number | undefined,   _maxAge :number | undefined} */
-  @js.native
   trait PartialSessionexpirenumbe extends StObject {
     
-    var _expire: js.UndefOr[Double] = js.native
+    var _expire: js.UndefOr[Double] = js.undefined
     
-    var _maxAge: js.UndefOr[Double] = js.native
+    var _maxAge: js.UndefOr[Double] = js.undefined
     
-    var inspect: js.UndefOr[js.Function0[js.Object]] = js.native
+    var inspect: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var maxAge: js.UndefOr[Double | session] = js.native
+    var maxAge: js.UndefOr[Double | session] = js.undefined
     
-    var populated: js.UndefOr[Boolean] = js.native
+    var populated: js.UndefOr[Boolean] = js.undefined
     
-    var save: js.UndefOr[js.Function0[Unit]] = js.native
+    var save: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var toJSON: js.UndefOr[js.Function0[js.Object]] = js.native
+    var toJSON: js.UndefOr[js.Function0[js.Object]] = js.undefined
   }
   object PartialSessionexpirenumbe {
     
@@ -196,52 +194,51 @@ object anon {
   }
   
   /* Inlined std.Partial<koa-session.koa-session.opts> */
-  @js.native
   trait Partialopts extends StObject {
     
-    var ContextStore: js.UndefOr[Instantiable] = js.native
+    var ContextStore: js.UndefOr[Instantiable] = js.undefined
     
-    var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.native
+    var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.undefined
     
-    var decode: js.UndefOr[js.Function1[/* str */ String, js.Object]] = js.native
+    var decode: js.UndefOr[js.Function1[/* str */ String, js.Object]] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var encode: js.UndefOr[js.Function1[/* obj */ js.Object, String]] = js.native
+    var encode: js.UndefOr[js.Function1[/* obj */ js.Object, String]] = js.undefined
     
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
-    var externalKey: js.UndefOr[ExternalKeys] = js.native
+    var externalKey: js.UndefOr[ExternalKeys] = js.undefined
     
-    var genid: js.UndefOr[js.Function0[String]] = js.native
+    var genid: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var maxAge: js.UndefOr[Double | session] = js.native
+    var maxAge: js.UndefOr[Double | session] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var renew: js.UndefOr[Boolean] = js.native
+    var renew: js.UndefOr[Boolean] = js.undefined
     
-    var rolling: js.UndefOr[Boolean] = js.native
+    var rolling: js.UndefOr[Boolean] = js.undefined
     
-    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.native
+    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var secureProxy: js.UndefOr[Boolean] = js.native
+    var secureProxy: js.UndefOr[Boolean] = js.undefined
     
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
     
-    var store: js.UndefOr[stores] = js.native
+    var store: js.UndefOr[stores] = js.undefined
     
-    var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ PartialSession, Unit]] = js.native
+    var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ PartialSession, Unit]] = js.undefined
   }
   object Partialopts {
     
@@ -388,10 +385,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Rolling extends StObject {
     
-    var rolling: js.UndefOr[Boolean] = js.native
+    var rolling: js.UndefOr[Boolean] = js.undefined
   }
   object Rolling {
     

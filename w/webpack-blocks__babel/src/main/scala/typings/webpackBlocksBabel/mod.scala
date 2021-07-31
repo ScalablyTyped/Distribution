@@ -2,26 +2,26 @@ package typings.webpackBlocksBabel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@webpack-blocks/babel", JSImport.Namespace)
-  @js.native
-  def apply(): js.Any = js.native
-  @JSImport("@webpack-blocks/babel", JSImport.Namespace)
-  @js.native
-  def apply(options: babel): js.Any = js.native
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: babel): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
+  @JSImport("@webpack-blocks/babel", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait babel extends StObject {
     
-    var cacheDirectory: js.UndefOr[Boolean] = js.native
+    var cacheDirectory: js.UndefOr[Boolean] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
-    var presets: js.UndefOr[js.Array[String]] = js.native
+    var presets: js.UndefOr[js.Array[String]] = js.undefined
   }
   object babel {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteChannelRequest extends StObject {
   
   /**
     * ARN of the channel to be deleted.
     */
-  var arn: ChannelArn = js.native
+  var arn: ChannelArn
 }
 object DeleteChannelRequest {
   

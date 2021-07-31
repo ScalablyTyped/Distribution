@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterIdentity extends StObject {
   
   /**
     * Nested attribute containing [OpenID Connect](https://openid.net/connect/) identity provider information for the cluster.
     */
-  var oidcs: js.Array[ClusterIdentityOidc] = js.native
+  var oidcs: js.Array[ClusterIdentityOidc]
 }
 object ClusterIdentity {
   

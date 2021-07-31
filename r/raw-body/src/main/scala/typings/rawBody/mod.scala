@@ -7,56 +7,50 @@ import typings.rawBody.rawBodyBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
-  def apply(stream: Readable): js.Promise[Buffer] = js.native
+  @scala.inline
+  def apply(stream: Readable): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /**
     * Gets the entire buffer of a stream either as a `Buffer` or a string.
     * Validates the stream's length against an expected length and maximum
     * limit. Ideal for parsing request bodies.
     */
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
-  def apply(stream: Readable, callback: js.Function2[/* err */ RawBodyError, /* body */ Buffer, Unit]): Unit = js.native
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
-  def apply(stream: Readable, options: OptionsencodingEncoding): js.Promise[String] = js.native
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(stream: Readable, callback: js.Function2[/* err */ RawBodyError, /* body */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(stream: Readable, options: OptionsencodingEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def apply(
     stream: Readable,
     options: OptionsencodingEncoding,
     callback: js.Function2[/* err */ RawBodyError, /* body */ String, Unit]
-  ): Unit = js.native
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
-  def apply(stream: Readable, options: Encoding): js.Promise[String] = js.native
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(stream: Readable, options: Encoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def apply(
     stream: Readable,
     options: Encoding,
     callback: js.Function2[/* err */ RawBodyError, /* body */ String, Unit]
-  ): Unit = js.native
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
-  def apply(stream: Readable, options: Options): js.Promise[Buffer] = js.native
-  @JSImport("raw-body", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(stream: Readable, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def apply(
     stream: Readable,
     options: Options,
     callback: js.Function2[/* err */ RawBodyError, /* body */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("raw-body", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type Encoding = String | `true`
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -65,18 +59,18 @@ object mod {
       * likely, you want `utf-8`, so setting encoding to `true` will decode as
       * `utf-8`. You can use any type of encoding supported by `iconv-lite`.
       */
-    var encoding: js.UndefOr[Encoding | Null] = js.native
+    var encoding: js.UndefOr[Encoding | Null] = js.undefined
     
     /**
       * The expected length of the stream.
       */
-    var length: js.UndefOr[Double | String | Null] = js.native
+    var length: js.UndefOr[Double | String | Null] = js.undefined
     
     /**
       * The byte limit of the body. This is the number of bytes or any string
       * format supported by `bytes`, for example `1000`, `'500kb'` or `'3mb'`.
       */
-    var limit: js.UndefOr[Double | String | Null] = js.native
+    var limit: js.UndefOr[Double | String | Null] = js.undefined
   }
   object Options {
     
@@ -118,42 +112,43 @@ object mod {
     }
   }
   
-  @js.native
-  trait RawBodyError extends Error {
+  trait RawBodyError
+    extends StObject
+       with Error {
     
     /**
       * The encoding.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var expected: js.UndefOr[Double] = js.native
+    var expected: js.UndefOr[Double] = js.undefined
     
     /**
       * The expected length of the stream.
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /**
       * The limit in bytes.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * The received bytes.
       */
-    var received: js.UndefOr[Double] = js.native
+    var received: js.UndefOr[Double] = js.undefined
     
     /**
       * The corresponding status code for the error.
       */
-    var status: Double = js.native
+    var status: Double
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
     /**
       * The error type.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object RawBodyError {
     

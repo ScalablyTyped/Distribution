@@ -2,17 +2,15 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWrapper extends StObject {
   
   /** From object converter */
-  var fromObject: js.UndefOr[WrapperFromObjectConverter] = js.native
+  var fromObject: js.UndefOr[WrapperFromObjectConverter] = js.undefined
   
   /** To object converter */
-  var toObject: js.UndefOr[WrapperToObjectConverter] = js.native
+  var toObject: js.UndefOr[WrapperToObjectConverter] = js.undefined
 }
 object IWrapper {
   

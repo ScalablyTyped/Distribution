@@ -3,14 +3,12 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This resource represents a long-running operation that is the result of a
   * network API call.
   */
-@js.native
 trait SchemaOperation extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaOperation extends StObject {
     * `true`, the operation is completed, and either `error` or `response` is
     * available.
     */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field will always be not set if the operation is created by
@@ -26,28 +24,28 @@ trait SchemaOperation extends StObject {
     * error information for each device is set in
     * `response.perDeviceStatus.result.status`.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * This field will contain a `DevicesLongRunningOperationMetadata` object if
     * the operation is created by `claimAsync`, `unclaimAsync`, or
     * `updateMetadataAsync`.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The server-assigned name, which is only unique within the same service
     * that originally returns it. If you use the default HTTP mapping, the
     * `name` should have the format of `operations/some/unique/name`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * This field will contain a `DevicesLongRunningOperationResponse` object if
     * the operation is created by `claimAsync`, `unclaimAsync`, or
     * `updateMetadataAsync`.
     */
-  var response: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var response: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaOperation {
   

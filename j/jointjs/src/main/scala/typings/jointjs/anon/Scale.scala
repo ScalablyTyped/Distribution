@@ -2,15 +2,13 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale extends StObject {
   
-  def scale(d: Double): Double = js.native
+  def scale(d: Double): Double
   
-  var symbol: String = js.native
+  var symbol: String
 }
 object Scale {
   

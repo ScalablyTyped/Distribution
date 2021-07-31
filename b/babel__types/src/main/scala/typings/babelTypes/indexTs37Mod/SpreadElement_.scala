@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.SpreadElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait SpreadElement_
-  extends UnaryLike
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait SpreadElement_
+  extends StObject
+     with BaseNode
+     with UnaryLike {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_SpreadElement_ : SpreadElement = js.native
+  var type_SpreadElement_ : SpreadElement
 }
 object SpreadElement_ {
   
   @scala.inline
-  def apply(argument: Expression, `type`: SpreadElement): SpreadElement_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: Expression): SpreadElement_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("SpreadElement")
     __obj.asInstanceOf[SpreadElement_]
   }
   

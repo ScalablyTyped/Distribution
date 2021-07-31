@@ -17,24 +17,22 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.types.IColorSliderProps> */
-@js.native
 trait PartialIColorSliderProps extends StObject {
   
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.native
+  var componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.undefined
   
-  var isAlpha: js.UndefOr[Boolean] = js.native
+  var isAlpha: js.UndefOr[Boolean] = js.undefined
   
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   var onChange: js.UndefOr[
     js.Function2[
@@ -42,21 +40,21 @@ trait PartialIColorSliderProps extends StObject {
       /* newValue */ js.UndefOr[Double], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var overlayColor: js.UndefOr[String] = js.native
+  var overlayColor: js.UndefOr[String] = js.undefined
   
-  var overlayStyle: js.UndefOr[CSSProperties] = js.native
+  var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.undefined
   
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
   
-  var thumbColor: js.UndefOr[String] = js.native
+  var thumbColor: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[hue | alpha | transparency] = js.native
+  var `type`: js.UndefOr[hue | alpha | transparency] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object PartialIColorSliderProps {
   

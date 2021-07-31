@@ -4,25 +4,25 @@ import typings.dashjs.anon.MessageType
 import typings.dashjs.dashjsStrings.public_licenseRequestComplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LicenseRequestCompleteEvent extends Event {
+trait LicenseRequestCompleteEvent
+  extends StObject
+     with Event {
   
-  var data: MessageType = js.native
+  var data: MessageType
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_LicenseRequestCompleteEvent: public_licenseRequestComplete = js.native
+  var type_LicenseRequestCompleteEvent: public_licenseRequestComplete
 }
 object LicenseRequestCompleteEvent {
   
   @scala.inline
-  def apply(data: MessageType, `type`: public_licenseRequestComplete): LicenseRequestCompleteEvent = {
+  def apply(data: MessageType): LicenseRequestCompleteEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public_licenseRequestComplete")
     __obj.asInstanceOf[LicenseRequestCompleteEvent]
   }
   

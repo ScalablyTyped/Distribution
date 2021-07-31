@@ -3,14 +3,12 @@ package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A protocol buffer option, which can be attached to a message, field,
   * enumeration, etc.
   */
-@js.native
 trait SchemaOption extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaOption extends StObject {
     * `&quot;map_entry&quot;`. For custom options, it should be the
     * fully-qualified name. For example, `&quot;google.api.http&quot;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The option&#39;s value packed in an Any message. If the value is a
@@ -28,7 +26,7 @@ trait SchemaOption extends StObject {
     * it should be stored as an int32 value using the
     * google.protobuf.Int32Value type.
     */
-  var value: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var value: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaOption {
   

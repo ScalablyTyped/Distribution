@@ -26,10 +26,13 @@ import typings.tensorflowTfjsCore.tensorTypesMod.NamedVariableMap
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/engine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/engine", "ENGINE")
   @js.native
@@ -38,7 +41,8 @@ object engineMod {
   @JSImport("@tensorflow/tfjs-core/dist/engine", "Engine")
   @js.native
   class Engine protected ()
-    extends TensorTracker
+    extends StObject
+       with TensorTracker
        with DataMover {
     def this(ENV: Environment) = this()
     
@@ -110,12 +114,7 @@ object engineMod {
     def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]]): GradsValue[T] = js.native
     def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]], dy: T): GradsValue[T] = js.native
     def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]], dy: T, allowNoGradients: Boolean): GradsValue[T] = js.native
-    def gradients[T /* <: Tensor[Rank] */](
-      f: js.Function0[T],
-      xs: js.Array[Tensor[Rank]],
-      dy: js.UndefOr[scala.Nothing],
-      allowNoGradients: Boolean
-    ): GradsValue[T] = js.native
+    def gradients[T /* <: Tensor[Rank] */](f: js.Function0[T], xs: js.Array[Tensor[Rank]], dy: Unit, allowNoGradients: Boolean): GradsValue[T] = js.native
     
     def incRef(a: Tensor[Rank], backend: KernelBackend): Unit = js.native
     
@@ -144,6 +143,14 @@ object engineMod {
     def makeTensorFromDataId(dataId: DataId, shape: js.Array[Double], dtype: DataType, backend: KernelBackend): Tensor[Rank] = js.native
     
     def memory(): MemoryInfo = js.native
+    
+    /**
+      * To be called by backends whenever they see a dataId that they don't own.
+      * Upon calling this method, the mover will fetch the tensor from another
+      * backend and register it with the current active backend.
+      */
+    /* CompleteClass */
+    override def moveData(backend: KernelBackend, dataId: DataId): Unit = js.native
     
     var nextTensorId: js.Any = js.native
     
@@ -198,13 +205,6 @@ object engineMod {
       kernelName: String,
       inputs: NamedTensorMap,
       attrs: NamedAttrMap,
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
-    def runKernel(
-      kernelName: String,
-      inputs: NamedTensorMap,
-      attrs: NamedAttrMap,
       inputsToSave: js.Array[Tensor[Rank]]
     ): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     def runKernel(
@@ -212,6 +212,13 @@ object engineMod {
       inputs: NamedTensorMap,
       attrs: NamedAttrMap,
       inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+    def runKernel(
+      kernelName: String,
+      inputs: NamedTensorMap,
+      attrs: NamedAttrMap,
+      inputsToSave: Unit,
       outputsToSave: js.Array[Boolean]
     ): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     
@@ -223,136 +230,12 @@ object engineMod {
     def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
       forwardFunc: ForwardFunc[T],
       inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.Array[Tensor[Rank]]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.Array[Tensor[Rank]],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap,
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap,
-      inputsToSave: js.Array[Tensor[Rank]]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap,
-      inputsToSave: js.Array[Tensor[Rank]],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.Array[Tensor[Rank]]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.Array[Tensor[Rank]],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: NamedAttrMap
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: NamedAttrMap,
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: NamedAttrMap,
-      inputsToSave: js.Array[Tensor[Rank]]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.UndefOr[scala.Nothing],
-      kernelName: String,
-      attrs: NamedAttrMap,
-      inputsToSave: js.Array[Tensor[Rank]],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
       backwardsFunc: js.Function2[
           /* dy */ T, 
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ]
     ): T = js.native
     def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
@@ -363,108 +246,7 @@ object engineMod {
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.Array[Tensor[Rank]]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.Array[Tensor[Rank]],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap,
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap,
-      inputsToSave: js.Array[Tensor[Rank]]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: js.UndefOr[scala.Nothing],
-      attrs: NamedAttrMap,
-      inputsToSave: js.Array[Tensor[Rank]],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ],
       kernelName: String
     ): T = js.native
@@ -476,25 +258,10 @@ object engineMod {
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ],
       kernelName: String,
-      attrs: js.UndefOr[scala.Nothing],
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: String,
-      attrs: js.UndefOr[scala.Nothing],
+      attrs: Unit,
       inputsToSave: js.Array[Tensor[Rank]]
     ): T = js.native
     def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
@@ -505,10 +272,10 @@ object engineMod {
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ],
       kernelName: String,
-      attrs: js.UndefOr[scala.Nothing],
+      attrs: Unit,
       inputsToSave: js.Array[Tensor[Rank]],
       outputsToSave: js.Array[Boolean]
     ): T = js.native
@@ -520,7 +287,22 @@ object engineMod {
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: String,
+      attrs: Unit,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ],
       kernelName: String,
       attrs: NamedAttrMap
@@ -533,22 +315,7 @@ object engineMod {
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
-        ],
-      kernelName: String,
-      attrs: NamedAttrMap,
-      inputsToSave: js.UndefOr[scala.Nothing],
-      outputsToSave: js.Array[Boolean]
-    ): T = js.native
-    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
-      forwardFunc: ForwardFunc[T],
-      inputs: I,
-      backwardsFunc: js.Function2[
-          /* dy */ T, 
-          /* saved */ js.Array[Tensor[Rank]], 
-          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ],
       kernelName: String,
       attrs: NamedAttrMap,
@@ -562,11 +329,240 @@ object engineMod {
           /* saved */ js.Array[Tensor[Rank]], 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof I ]: (): I[P]}
-      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine with TopLevel[I]
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
         ],
       kernelName: String,
       attrs: NamedAttrMap,
       inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: String,
+      attrs: NamedAttrMap,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: Unit,
+      inputsToSave: js.Array[Tensor[Rank]]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: Unit,
+      inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: Unit,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: NamedAttrMap
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: NamedAttrMap,
+      inputsToSave: js.Array[Tensor[Rank]]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: NamedAttrMap,
+      inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: js.Function2[
+          /* dy */ T, 
+          /* saved */ js.Array[Tensor[Rank]], 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof I ]: (): I[P]}
+      */ typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Engine & TopLevel[I]
+        ],
+      kernelName: Unit,
+      attrs: NamedAttrMap,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](forwardFunc: ForwardFunc[T], inputs: I, backwardsFunc: Unit, kernelName: String): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: Unit,
+      inputsToSave: js.Array[Tensor[Rank]]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: Unit,
+      inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: Unit,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: NamedAttrMap
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: NamedAttrMap,
+      inputsToSave: js.Array[Tensor[Rank]]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: NamedAttrMap,
+      inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: String,
+      attrs: NamedAttrMap,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: Unit,
+      attrs: Unit,
+      inputsToSave: js.Array[Tensor[Rank]]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: Unit,
+      attrs: Unit,
+      inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: Unit,
+      attrs: Unit,
+      inputsToSave: Unit,
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](forwardFunc: ForwardFunc[T], inputs: I, backwardsFunc: Unit, kernelName: Unit, attrs: NamedAttrMap): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: Unit,
+      attrs: NamedAttrMap,
+      inputsToSave: js.Array[Tensor[Rank]]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: Unit,
+      attrs: NamedAttrMap,
+      inputsToSave: js.Array[Tensor[Rank]],
+      outputsToSave: js.Array[Boolean]
+    ): T = js.native
+    def runKernelFunc[T /* <: Tensor[Rank] | js.Array[Tensor[Rank]] */, I /* <: NamedTensorMap */](
+      forwardFunc: ForwardFunc[T],
+      inputs: I,
+      backwardsFunc: Unit,
+      kernelName: Unit,
+      attrs: NamedAttrMap,
+      inputsToSave: Unit,
       outputsToSave: js.Array[Boolean]
     ): T = js.native
     
@@ -631,56 +627,57 @@ object engineMod {
     def nextVariableId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextVariableId")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/engine", "add")
-  @js.native
-  def add(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
+  @scala.inline
+  def add(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/engine", "getOrMakeEngine")
-  @js.native
-  def getOrMakeEngine(): Engine = js.native
-  
-  type CustomGradientFunc[T /* <: Tensor[Rank] */] = js.Function1[/* repeated */ Tensor[Rank] | GradSaveFunc, GradFunc[T]]
+  @scala.inline
+  def getOrMakeEngine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrMakeEngine")().asInstanceOf[Engine]
   
   @js.native
+  trait CustomGradientFunc[T /* <: Tensor[Rank] */] extends StObject {
+    
+    def apply(inputs: (Tensor[Rank] | GradSaveFunc)*): GradFunc[T] = js.native
+  }
+  
   trait EngineState extends StObject {
     
-    var activeProfile: ProfileInfo = js.native
+    var activeProfile: ProfileInfo
     
-    var activeScope: ScopeState = js.native
+    var activeScope: ScopeState
     
-    var activeTape: js.Array[TapeNode] = js.native
+    var activeTape: js.Array[TapeNode]
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    var gradientDepth: Double = js.native
+    var gradientDepth: Double
     
-    var kernelDepth: Double = js.native
+    var kernelDepth: Double
     
-    var nextScopeId: Double = js.native
+    var nextScopeId: Double
     
-    var nextTapeNodeId: Double = js.native
+    var nextTapeNodeId: Double
     
-    var numBytes: Double = js.native
+    var numBytes: Double
     
-    var numDataBuffers: Double = js.native
+    var numDataBuffers: Double
     
     /**
       * Keeps track of the number of data moves during a kernel execution. We
       * maintain a stack since kernels can call other kernels, recursively.
       */
-    var numDataMovesStack: js.Array[Double] = js.native
+    var numDataMovesStack: js.Array[Double]
     
-    var numStringTensors: Double = js.native
+    var numStringTensors: Double
     
-    var numTensors: Double = js.native
+    var numTensors: Double
     
-    var profiling: Boolean = js.native
+    var profiling: Boolean
     
-    var registeredVariables: NamedVariableMap = js.native
+    var registeredVariables: NamedVariableMap
     
-    var scopeStack: js.Array[ScopeState] = js.native
+    var scopeStack: js.Array[ScopeState]
     
-    var tensorInfo: WeakMap[js.Object, Backend] = js.native
+    var tensorInfo: WeakMap[js.Object, Backend]
   }
   object EngineState {
     
@@ -775,26 +772,25 @@ object engineMod {
   
   type ForwardFunc[T] = js.Function2[/* backend */ KernelBackend, /* save */ js.UndefOr[GradSaveFunc], T]
   
-  @js.native
   trait KernelInfo extends StObject {
     
-    var bytesAdded: Double = js.native
+    var bytesAdded: Double
     
-    var extraInfo: String | js.Promise[String] = js.native
+    var extraInfo: String | js.Promise[String]
     
-    var inputShapes: js.Array[js.Array[Double]] = js.native
+    var inputShapes: js.Array[js.Array[Double]]
     
-    var kernelTimeMs: Double | Error | (js.Promise[Double | Error]) = js.native
+    var kernelTimeMs: Double | Error | (js.Promise[Double | Error])
     
-    var name: String = js.native
+    var name: String
     
-    var outputShapes: js.Array[js.Array[Double]] = js.native
+    var outputShapes: js.Array[js.Array[Double]]
     
-    var tensorsAdded: Double = js.native
+    var tensorsAdded: Double
     
-    var totalBytesSnapshot: Double = js.native
+    var totalBytesSnapshot: Double
     
-    var totalTensorsSnapshot: Double = js.native
+    var totalTensorsSnapshot: Double
   }
   object KernelInfo {
     
@@ -852,18 +848,17 @@ object engineMod {
     }
   }
   
-  @js.native
   trait MemoryInfo extends StObject {
     
-    var numBytes: Double = js.native
+    var numBytes: Double
     
-    var numDataBuffers: Double = js.native
+    var numDataBuffers: Double
     
-    var numTensors: Double = js.native
+    var numTensors: Double
     
-    var reasons: js.Array[String] = js.native
+    var reasons: js.Array[String]
     
-    var unreliable: js.UndefOr[Boolean] = js.native
+    var unreliable: js.UndefOr[Boolean] = js.undefined
   }
   object MemoryInfo {
     
@@ -899,18 +894,17 @@ object engineMod {
     }
   }
   
-  @js.native
   trait ProfileInfo extends StObject {
     
-    var kernels: js.Array[KernelInfo] = js.native
+    var kernels: js.Array[KernelInfo]
     
-    var newBytes: Double = js.native
+    var newBytes: Double
     
-    var newTensors: Double = js.native
+    var newTensors: Double
     
-    var peakBytes: Double = js.native
+    var peakBytes: Double
     
-    var result: TensorContainer = js.native
+    var result: TensorContainer
   }
   object ProfileInfo {
     
@@ -951,14 +945,13 @@ object engineMod {
   
   type ScopeFn[T /* <: TensorContainer */] = js.Function0[T]
   
-  @js.native
   trait ScopeState extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var track: js.Array[Tensor[Rank]] = js.native
+    var track: js.Array[Tensor[Rank]]
   }
   object ScopeState {
     
@@ -985,10 +978,11 @@ object engineMod {
     }
   }
   
-  @js.native
-  trait TimingInfo extends BackendTimingInfo {
+  trait TimingInfo
+    extends StObject
+       with BackendTimingInfo {
     
-    var wallMs: Double = js.native
+    var wallMs: Double
   }
   object TimingInfo {
     

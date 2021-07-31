@@ -3,15 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Status extends StObject {
   
-  var status: Failinfo = js.native
+  var status: Failinfo
   
-  var tst: ASN1Object = js.native
+  var tst: ASN1Object
 }
 object Status {
   

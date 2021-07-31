@@ -2,23 +2,21 @@ package typings.wiredep.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CssLess extends StObject {
   
   /**
     * @example:
     *  '@import "{{filePath}}";'
     */
-  var css: String = js.native
+  var css: String
   
   /**
     * @example:
     *  '@import "{{filePath}}";'
     */
-  var less: String = js.native
+  var less: String
 }
 object CssLess {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1Impact extends StObject {
   
   /** Category that is being targeted. */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /** Use with CategoryType.COST */
-  var costProjection: js.UndefOr[GoogleCloudRecommenderV1CostProjection] = js.native
+  var costProjection: js.UndefOr[GoogleCloudRecommenderV1CostProjection] = js.undefined
 }
 object GoogleCloudRecommenderV1Impact {
   

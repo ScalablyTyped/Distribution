@@ -2,18 +2,16 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List sources response.
   */
-@js.native
 trait SchemaListQuerySourcesResponse extends StObject {
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var sources: js.UndefOr[js.Array[SchemaQuerySource]] = js.native
+  var sources: js.UndefOr[js.Array[SchemaQuerySource]] = js.undefined
 }
 object SchemaListQuerySourcesResponse {
   

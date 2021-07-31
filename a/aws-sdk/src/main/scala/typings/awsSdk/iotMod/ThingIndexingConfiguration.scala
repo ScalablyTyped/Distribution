@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingIndexingConfiguration extends StObject {
   
   /**
     * Contains custom field names and their data type.
     */
-  var customFields: js.UndefOr[Fields] = js.native
+  var customFields: js.UndefOr[Fields] = js.undefined
   
   /**
     * Contains fields that are indexed and whose types are already known by the Fleet Indexing service.
     */
-  var managedFields: js.UndefOr[Fields] = js.native
+  var managedFields: js.UndefOr[Fields] = js.undefined
   
   /**
     * Thing connectivity indexing mode. Valid values are:    STATUS – Your thing index contains connectivity status. To enable thing connectivity indexing, thingIndexMode must not be set to OFF.   OFF - Thing connectivity status indexing is disabled.  
     */
-  var thingConnectivityIndexingMode: js.UndefOr[ThingConnectivityIndexingMode] = js.native
+  var thingConnectivityIndexingMode: js.UndefOr[ThingConnectivityIndexingMode] = js.undefined
   
   /**
     * Thing indexing mode. Valid values are:   REGISTRY – Your thing index contains registry data only.   REGISTRY_AND_SHADOW - Your thing index contains registry and shadow data.   OFF - Thing indexing is disabled.  
     */
-  var thingIndexingMode: ThingIndexingMode = js.native
+  var thingIndexingMode: ThingIndexingMode
 }
 object ThingIndexingConfiguration {
   

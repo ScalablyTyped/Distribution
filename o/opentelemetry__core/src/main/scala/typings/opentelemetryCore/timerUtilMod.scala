@@ -2,12 +2,14 @@ package typings.opentelemetryCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timerUtilMod {
   
-  @JSImport("@opentelemetry/core/build/src/platform/browser/timer-util", "unrefTimer")
+  @JSImport("@opentelemetry/core/build/src/platform/browser/timer-util", JSImport.Namespace)
   @js.native
-  def unrefTimer(timer: Double): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unrefTimer(timer: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unrefTimer")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

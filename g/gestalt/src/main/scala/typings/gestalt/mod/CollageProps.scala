@@ -4,25 +4,23 @@ import typings.gestalt.anon.Height
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollageProps extends StObject {
   
-  var columns: Double = js.native
+  var columns: Double
   
-  var cover: js.UndefOr[Boolean] = js.native
+  var cover: js.UndefOr[Boolean] = js.undefined
   
-  var gutter: js.UndefOr[Double] = js.native
+  var gutter: js.UndefOr[Double] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var layoutKey: js.UndefOr[Double] = js.native
+  var layoutKey: js.UndefOr[Double] = js.undefined
   
-  def renderImage(args: Height): ReactNode = js.native
+  def renderImage(args: Height): ReactNode
   
-  var width: Double = js.native
+  var width: Double
 }
 object CollageProps {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspaceBundlesRequest extends StObject {
   
   /**
     * The identifiers of the bundles. You cannot combine this parameter with any other filter.
     */
-  var BundleIds: js.UndefOr[BundleIdList] = js.native
+  var BundleIds: js.UndefOr[BundleIdList] = js.undefined
   
   /**
     * The token for the next set of results. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The owner of the bundles. You cannot combine this parameter with any other filter. Specify AMAZON to describe the bundles provided by AWS or null to describe the bundles that belong to your account.
     */
-  var Owner: js.UndefOr[BundleOwner] = js.native
+  var Owner: js.UndefOr[BundleOwner] = js.undefined
 }
 object DescribeWorkspaceBundlesRequest {
   

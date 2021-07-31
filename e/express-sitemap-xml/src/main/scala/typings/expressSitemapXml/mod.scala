@@ -7,7 +7,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,27 +15,28 @@ object mod {
     * Express middleware to serve {@link https://en.wikipedia.org/wiki/Sitemaps|`sitemap.xml`} from a list of URLs
     * Create a sitemap.xml middleware.
     */
+  @scala.inline
+  def apply(getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]], base: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(getUrls.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-sitemap-xml", JSImport.Namespace)
   @js.native
-  def apply(getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]], base: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * @async
     * Create an object where the keys are sitemap URLs to be served by the server
     * and the values are strings of sitemap XML content
     */
-  @JSImport("express-sitemap-xml", "buildSitemaps")
-  @js.native
-  def buildSitemaps(urls: js.Array[SitemapLeaf], base: String): js.Promise[Sitemap] = js.native
+  @scala.inline
+  def buildSitemaps(urls: js.Array[SitemapLeaf], base: String): js.Promise[Sitemap] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildSitemaps")(urls.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Sitemap]]
   
-  @js.native
   trait LeafObject extends StObject {
     
-    var changeFreq: js.UndefOr[String] = js.native
+    var changeFreq: js.UndefOr[String] = js.undefined
     
-    var lastMod: js.UndefOr[String | Date] = js.native
+    var lastMod: js.UndefOr[String | Date] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object LeafObject {
     

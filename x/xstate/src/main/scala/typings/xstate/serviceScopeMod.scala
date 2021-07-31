@@ -4,19 +4,19 @@ import typings.xstate.anon.ContextAny
 import typings.xstate.interpreterMod.Interpreter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceScopeMod {
   
-  @JSImport("xstate/lib/serviceScope", "consume")
+  @JSImport("xstate/lib/serviceScope", JSImport.Namespace)
   @js.native
-  def consume[T, TService /* <: Interpreter[_, _, _, ContextAny] */](fn: js.Function1[/* service */ TService, T]): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xstate/lib/serviceScope", "provide")
-  @js.native
-  def provide[T, TService /* <: Interpreter[_, _, _, ContextAny] */](service: TService, fn: js.Function1[/* service */ js.UndefOr[TService], T]): T = js.native
-  @JSImport("xstate/lib/serviceScope", "provide")
-  @js.native
-  def provide[T, TService /* <: Interpreter[_, _, _, ContextAny] */](service: js.UndefOr[scala.Nothing], fn: js.Function1[/* service */ js.UndefOr[TService], T]): T = js.native
+  @scala.inline
+  def consume[T, TService /* <: Interpreter[js.Any, js.Any, js.Any, ContextAny] */](fn: js.Function1[/* service */ TService, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("consume")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @scala.inline
+  def provide[T, TService /* <: Interpreter[js.Any, js.Any, js.Any, ContextAny] */](service: TService, fn: js.Function1[/* service */ js.UndefOr[TService], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("provide")(service.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def provide[T, TService /* <: Interpreter[js.Any, js.Any, js.Any, ContextAny] */](service: Unit, fn: js.Function1[/* service */ js.UndefOr[TService], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("provide")(service.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
 }

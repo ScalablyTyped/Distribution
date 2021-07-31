@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1PredictionOutput extends StObject {
   
   /** The number of data instances which resulted in errors. */
-  var errorCount: js.UndefOr[String] = js.native
+  var errorCount: js.UndefOr[String] = js.undefined
   
   /** Node hours used by the batch prediction job. */
-  var nodeHours: js.UndefOr[Double] = js.native
+  var nodeHours: js.UndefOr[Double] = js.undefined
   
   /** The output Google Cloud Storage location provided at the job creation time. */
-  var outputPath: js.UndefOr[String] = js.native
+  var outputPath: js.UndefOr[String] = js.undefined
   
   /** The number of generated predictions. */
-  var predictionCount: js.UndefOr[String] = js.native
+  var predictionCount: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1PredictionOutput {
   

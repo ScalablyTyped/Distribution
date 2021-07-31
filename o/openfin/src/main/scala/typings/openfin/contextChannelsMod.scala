@@ -11,10 +11,13 @@ import typings.openfin.openfinStrings.default
 import typings.openfin.openfinStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextChannelsMod {
+  
+  @JSImport("openfin/_v2/fdc3/contextChannels", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("openfin/_v2/fdc3/contextChannels", "AppChannel")
   @js.native
@@ -188,39 +191,35 @@ object contextChannelsMod {
   @js.native
   val defaultChannel: DefaultChannel_ = js.native
   
-  @JSImport("openfin/_v2/fdc3/contextChannels", "getChannelById")
-  @js.native
-  def getChannelById(channelId: ChannelId): js.Promise[Channel] = js.native
+  @scala.inline
+  def getChannelById(channelId: ChannelId): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @JSImport("openfin/_v2/fdc3/contextChannels", "getCurrentChannel")
-  @js.native
-  def getCurrentChannel(): js.Promise[Channel] = js.native
-  @JSImport("openfin/_v2/fdc3/contextChannels", "getCurrentChannel")
-  @js.native
-  def getCurrentChannel(identity: Identity): js.Promise[Channel] = js.native
+  @scala.inline
+  def getCurrentChannel(): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[Channel]]
+  @scala.inline
+  def getCurrentChannel(identity: Identity): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @JSImport("openfin/_v2/fdc3/contextChannels", "getOrCreateAppChannel")
-  @js.native
-  def getOrCreateAppChannel(name: String): js.Promise[AppChannel] = js.native
+  @scala.inline
+  def getOrCreateAppChannel(name: String): js.Promise[AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppChannel]]
   
-  @JSImport("openfin/_v2/fdc3/contextChannels", "getSystemChannels")
-  @js.native
-  def getSystemChannels(): js.Promise[js.Array[SystemChannel]] = js.native
+  @scala.inline
+  def getSystemChannels(): js.Promise[js.Array[SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[SystemChannel]]]
   
-  @js.native
-  trait AppChannelTransport extends ChannelTransport {
+  trait AppChannelTransport
+    extends StObject
+       with ChannelTransport {
     
-    var name: String = js.native
+    var name: String
     
     @JSName("type")
-    var type_AppChannelTransport: app = js.native
+    var type_AppChannelTransport: app
   }
   object AppChannelTransport {
     
     @scala.inline
-    def apply(id: ChannelId, name: String, `type`: app): AppChannelTransport = {
+    def apply(id: ChannelId, name: String): AppChannelTransport = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("app")
       __obj.asInstanceOf[AppChannelTransport]
     }
     
@@ -242,7 +241,6 @@ object contextChannelsMod {
   */
   trait Channel extends StObject
   
-  @js.native
   trait ChannelChangedEvent extends StObject {
     
     /**
@@ -251,28 +249,28 @@ object contextChannelsMod {
       * Will be `null` if the window has just been closed, and so is being removed from a channel without being added to
       * another.
       */
-    var channel: Channel | Null = js.native
+    var channel: Channel | Null
     
     /**
       * The window that has switched channel.
       */
-    var identity: Identity = js.native
+    var identity: Identity
     
     /**
       * The previous channel that the window belonged to.
       *
       * Will be `null` if the window has just been created, and so doesn't have a previous channel.
       */
-    var previousChannel: Channel | Null = js.native
+    var previousChannel: Channel | Null
     
-    var `type`: `channel-changed` = js.native
+    var `type`: `channel-changed`
   }
   object ChannelChangedEvent {
     
     @scala.inline
-    def apply(identity: Identity, `type`: `channel-changed`): ChannelChangedEvent = {
-      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(identity: Identity): ChannelChangedEvent = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], channel = null, previousChannel = null)
+      __obj.updateDynamic("type")("channel-changed")
       __obj.asInstanceOf[ChannelChangedEvent]
     }
     
@@ -300,15 +298,16 @@ object contextChannelsMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.openfin.mainMod.Listener because Already inherited */ @js.native
-  trait ChannelContextListener extends ContextListener {
+  - typings.openfin.mainMod.Listener because Already inherited */ trait ChannelContextListener
+    extends StObject
+       with ContextListener {
     
     /**
       * The channel that this listener is observing.
       *
       * Listener will trigger whenever a context is broadcast on this channel.
       */
-    var channel: Channel = js.native
+    var channel: Channel
   }
   object ChannelContextListener {
     
@@ -328,12 +327,11 @@ object contextChannelsMod {
   
   type ChannelId = String
   
-  @js.native
   trait ChannelTransport extends StObject {
     
-    var id: ChannelId = js.native
+    var id: ChannelId
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ChannelTransport {
     
@@ -355,35 +353,34 @@ object contextChannelsMod {
     }
   }
   
-  @js.native
   trait ChannelWindowAddedEvent extends StObject {
     
     /**
       * The channel that window now belongs to. Will always be the channel object that {@link ChannelBase.addEventListener} was
       * called on.
       */
-    var channel: Channel = js.native
+    var channel: Channel
     
     /**
       * The window that has just been added to the channel.
       */
-    var identity: Identity = js.native
+    var identity: Identity
     
     /**
       * The channel that the window belonged to previously.
       *
       * Will be `null` if this event is being fired on a newly-created window.
       */
-    var previousChannel: Channel | Null = js.native
+    var previousChannel: Channel | Null
     
-    var `type`: `window-added` = js.native
+    var `type`: `window-added`
   }
   object ChannelWindowAddedEvent {
     
     @scala.inline
-    def apply(channel: Channel, identity: Identity, `type`: `window-added`): ChannelWindowAddedEvent = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(channel: Channel, identity: Identity): ChannelWindowAddedEvent = {
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], previousChannel = null)
+      __obj.updateDynamic("type")("window-added")
       __obj.asInstanceOf[ChannelWindowAddedEvent]
     }
     
@@ -407,7 +404,6 @@ object contextChannelsMod {
     }
   }
   
-  @js.native
   trait ChannelWindowRemovedEvent extends StObject {
     
     /**
@@ -415,27 +411,27 @@ object contextChannelsMod {
       *
       * Will be `null` if the window is leaving the channel due to it being closed.
       */
-    var channel: Channel | Null = js.native
+    var channel: Channel | Null
     
     /**
       * The window that has just been removed from the channel.
       */
-    var identity: Identity = js.native
+    var identity: Identity
     
     /**
       * The channel that the window belonged to previously. Will always be the channel object that {@link ChannelBase.addEventListener} was
       * called on.
       */
-    var previousChannel: Channel = js.native
+    var previousChannel: Channel
     
-    var `type`: `window-removed` = js.native
+    var `type`: `window-removed`
   }
   object ChannelWindowRemovedEvent {
     
     @scala.inline
-    def apply(identity: Identity, previousChannel: Channel, `type`: `window-removed`): ChannelWindowRemovedEvent = {
-      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], previousChannel = previousChannel.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(identity: Identity, previousChannel: Channel): ChannelWindowRemovedEvent = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], previousChannel = previousChannel.asInstanceOf[js.Any], channel = null)
+      __obj.updateDynamic("type")("window-removed")
       __obj.asInstanceOf[ChannelWindowRemovedEvent]
     }
     
@@ -459,23 +455,22 @@ object contextChannelsMod {
     }
   }
   
-  @js.native
   trait DisplayMetadata extends StObject {
     
     /**
       * The color that should be associated with this channel when displaying this channel in a UI, e.g. `#FF0000`.
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * A URL of an image that can be used to display this channel
       */
-    var glyph: String = js.native
+    var glyph: String
     
     /**
       * A user-readable name for this channel, e.g. `"Red"`
       */
-    var name: String = js.native
+    var name: String
   }
   object DisplayMetadata {
     
@@ -499,20 +494,21 @@ object contextChannelsMod {
     }
   }
   
-  @js.native
-  trait SystemChannelTransport extends ChannelTransport {
+  trait SystemChannelTransport
+    extends StObject
+       with ChannelTransport {
     
     @JSName("type")
-    var type_SystemChannelTransport: system = js.native
+    var type_SystemChannelTransport: system
     
-    var visualIdentity: DisplayMetadata = js.native
+    var visualIdentity: DisplayMetadata
   }
   object SystemChannelTransport {
     
     @scala.inline
-    def apply(id: ChannelId, `type`: system, visualIdentity: DisplayMetadata): SystemChannelTransport = {
+    def apply(id: ChannelId, visualIdentity: DisplayMetadata): SystemChannelTransport = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], visualIdentity = visualIdentity.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("system")
       __obj.asInstanceOf[SystemChannelTransport]
     }
     

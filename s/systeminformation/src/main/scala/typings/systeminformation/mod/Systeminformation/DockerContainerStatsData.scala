@@ -4,35 +4,33 @@ import typings.systeminformation.anon.R
 import typings.systeminformation.anon.Rx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DockerContainerStatsData extends StObject {
   
-  var blockIO: R = js.native
+  var blockIO: R
   
-  var cpu_percent: Double = js.native
+  var cpu_percent: Double
   
-  var cpu_stats: js.Any = js.native
+  var cpu_stats: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var mem_limit: Double = js.native
+  var mem_limit: Double
   
-  var mem_percent: Double = js.native
+  var mem_percent: Double
   
-  var mem_usage: Double = js.native
+  var mem_usage: Double
   
-  var memory_stats: js.Any = js.native
+  var memory_stats: js.Any
   
-  var netIO: Rx = js.native
+  var netIO: Rx
   
-  var networks: js.Any = js.native
+  var networks: js.Any
   
-  var precpu_stats: js.Any = js.native
+  var precpu_stats: js.Any
   
-  var restartCount: Double = js.native
+  var restartCount: Double
 }
 object DockerContainerStatsData {
   

@@ -4,17 +4,15 @@ import typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccount
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxJobStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PFaxAccount extends StObject {
   
-  val bstrJobId: String = js.native
+  val bstrJobId: String
   
-  val pFaxAccount: FaxAccount = js.native
+  val pFaxAccount: FaxAccount
   
-  val pJobStatus: FaxJobStatus = js.native
+  val pJobStatus: FaxJobStatus
 }
 object PFaxAccount {
   

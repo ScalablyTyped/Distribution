@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCloseBroadcaster
   * @see XCloseListener
   */
-@js.native
-trait XCloseable extends XCloseBroadcaster {
+trait XCloseable
+  extends StObject
+     with XCloseBroadcaster {
   
   /**
     * try to close the object
@@ -52,7 +52,7 @@ trait XCloseable extends XCloseBroadcaster {
     * @see com.sun.star.lang.DisposedException
     * @throws CloseVetoException indicates that the closing object itself or any of its currently registered listeners disagree with this {@link close()} request.
     */
-  def close(DeliverOwnership: Boolean): Unit = js.native
+  def close(DeliverOwnership: Boolean): Unit
 }
 object XCloseable {
   

@@ -3,35 +3,33 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFCustomApplicationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomApplication extends StObject {
   
-  val ApplicationType: MFCustomApplicationType = js.native
+  val ApplicationType: MFCustomApplicationType
   
-  val ChecksumHash: String = js.native
+  val ChecksumHash: String
   
-  def Clone(): ICustomApplication = js.native
+  def Clone(): ICustomApplication
   
-  val Description: String = js.native
+  val Description: String
   
-  val Enabled: Boolean = js.native
+  val Enabled: Boolean
   
-  val ID: String = js.native
+  val ID: String
   
-  val MasterApplication: String = js.native
+  val MasterApplication: String
   
-  val Name: String = js.native
+  val Name: String
   
-  val Optional: Boolean = js.native
+  val Optional: Boolean
   
-  val Publisher: String = js.native
+  val Publisher: String
   
-  val RequireSystemAccess: Boolean = js.native
+  val RequireSystemAccess: Boolean
   
-  val Version: String = js.native
+  val Version: String
 }
 object ICustomApplication {
   

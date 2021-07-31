@@ -54,7 +54,6 @@ import typings.spotifyApi.SpotifyApi.UsersTopArtistsResponse
 import typings.spotifyApi.SpotifyApi.UsersTopTracksResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

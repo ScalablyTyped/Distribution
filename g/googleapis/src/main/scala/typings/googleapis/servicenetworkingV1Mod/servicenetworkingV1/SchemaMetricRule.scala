@@ -3,14 +3,12 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bind API methods to metrics. Binding a method to a metric causes that
   * metric&#39;s configured quota behaviors to apply to the method call.
   */
-@js.native
 trait SchemaMetricRule extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaMetricRule extends StObject {
     * name, and the values are the amount increased for the metric against
     * which the quota limits are defined. The value must not be negative.
     */
-  var metricCosts: js.UndefOr[StringDictionary[String]] = js.native
+  var metricCosts: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Selects the methods to which this rule applies.  Refer to selector for
     * syntax details.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricRule {
   

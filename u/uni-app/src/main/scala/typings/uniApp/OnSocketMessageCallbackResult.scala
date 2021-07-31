@@ -3,16 +3,14 @@ package typings.uniApp
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnSocketMessageCallbackResult extends StObject {
   
   /**
     * 服务器返回的消息
     */
-  var data: js.UndefOr[String | ArrayBuffer] = js.native
+  var data: js.UndefOr[String | ArrayBuffer] = js.undefined
 }
 object OnSocketMessageCallbackResult {
   

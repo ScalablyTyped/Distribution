@@ -5,29 +5,32 @@ import typings.grumblerScripts.declarationsMod.Values
 import typings.grumblerScripts.typesMod.WebpackConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("grumbler-scripts", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("grumbler-scripts", "ENV")
   @js.native
   object ENV extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.grumblerScripts.constantsMod.ENV with String] = js.native
+    def apply(value: String): js.UndefOr[typings.grumblerScripts.constantsMod.ENV & String] = js.native
     
-    /* "demo" */ val DEMO: typings.grumblerScripts.constantsMod.ENV.DEMO with String = js.native
+    /* "demo" */ val DEMO: typings.grumblerScripts.constantsMod.ENV.DEMO & String = js.native
     
-    /* "local" */ val LOCAL: typings.grumblerScripts.constantsMod.ENV.LOCAL with String = js.native
+    /* "local" */ val LOCAL: typings.grumblerScripts.constantsMod.ENV.LOCAL & String = js.native
     
-    /* "production" */ val PRODUCTION: typings.grumblerScripts.constantsMod.ENV.PRODUCTION with String = js.native
+    /* "production" */ val PRODUCTION: typings.grumblerScripts.constantsMod.ENV.PRODUCTION & String = js.native
     
-    /* "sandbox" */ val SANDBOX: typings.grumblerScripts.constantsMod.ENV.SANDBOX with String = js.native
+    /* "sandbox" */ val SANDBOX: typings.grumblerScripts.constantsMod.ENV.SANDBOX & String = js.native
     
-    /* "stage" */ val STAGE: typings.grumblerScripts.constantsMod.ENV.STAGE with String = js.native
+    /* "stage" */ val STAGE: typings.grumblerScripts.constantsMod.ENV.STAGE & String = js.native
     
-    /* "test" */ val TEST: typings.grumblerScripts.constantsMod.ENV.TEST with String = js.native
+    /* "test" */ val TEST: typings.grumblerScripts.constantsMod.ENV.TEST & String = js.native
   }
   
   @JSImport("grumbler-scripts", "__DEBUG__")
@@ -84,28 +87,21 @@ object mod {
   @js.native
   val __WINDOW__ : js.Any = js.native
   
-  @JSImport("grumbler-scripts", "getCurrentVersion")
-  @js.native
-  def getCurrentVersion(pkg: Version): String = js.native
+  @scala.inline
+  def getCurrentVersion(pkg: Version): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentVersion")(pkg.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("grumbler-scripts", "getKarmaConfig")
-  @js.native
-  def getKarmaConfig(karma: js.Object): js.Object = js.native
-  @JSImport("grumbler-scripts", "getKarmaConfig")
-  @js.native
-  def getKarmaConfig(karma: js.Object, cfg: js.Object): js.Object = js.native
+  @scala.inline
+  def getKarmaConfig(karma: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getKarmaConfig")(karma.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def getKarmaConfig(karma: js.Object, cfg: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getKarmaConfig")(karma.asInstanceOf[js.Any], cfg.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("grumbler-scripts", "getNextVersion")
-  @js.native
-  def getNextVersion(pkg: Version): String = js.native
-  @JSImport("grumbler-scripts", "getNextVersion")
-  @js.native
-  def getNextVersion(pkg: Version, level: String): String = js.native
+  @scala.inline
+  def getNextVersion(pkg: Version): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextVersion")(pkg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getNextVersion(pkg: Version, level: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextVersion")(pkg.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("grumbler-scripts", "getWebpackConfig")
-  @js.native
-  def getWebpackConfig(): js.Object = js.native
-  @JSImport("grumbler-scripts", "getWebpackConfig")
-  @js.native
-  def getWebpackConfig(options: WebpackConfigOptions): js.Object = js.native
+  @scala.inline
+  def getWebpackConfig(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebpackConfig")().asInstanceOf[js.Object]
+  @scala.inline
+  def getWebpackConfig(options: WebpackConfigOptions): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebpackConfig")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

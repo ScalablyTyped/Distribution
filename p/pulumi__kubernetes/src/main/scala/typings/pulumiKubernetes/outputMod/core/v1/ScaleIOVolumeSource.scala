@@ -2,64 +2,62 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ScaleIOVolumeSource represents a persistent ScaleIO volume
   */
-@js.native
 trait ScaleIOVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs".
     */
-  var fsType: String = js.native
+  var fsType: String
   
   /**
     * The host address of the ScaleIO API Gateway.
     */
-  var gateway: String = js.native
+  var gateway: String
   
   /**
     * The name of the ScaleIO Protection Domain for the configured storage.
     */
-  var protectionDomain: String = js.native
+  var protectionDomain: String
   
   /**
     * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * SecretRef references to the secret for ScaleIO user and other sensitive information. If this is not provided, Login operation will fail.
     */
-  var secretRef: LocalObjectReference = js.native
+  var secretRef: LocalObjectReference
   
   /**
     * Flag to enable/disable SSL communication with Gateway, default false
     */
-  var sslEnabled: Boolean = js.native
+  var sslEnabled: Boolean
   
   /**
     * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.
     */
-  var storageMode: String = js.native
+  var storageMode: String
   
   /**
     * The ScaleIO Storage Pool associated with the protection domain.
     */
-  var storagePool: String = js.native
+  var storagePool: String
   
   /**
     * The name of the storage system as configured in ScaleIO.
     */
-  var system: String = js.native
+  var system: String
   
   /**
     * The name of a volume already created in the ScaleIO system that is associated with this volume source.
     */
-  var volumeName: String = js.native
+  var volumeName: String
 }
 object ScaleIOVolumeSource {
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to control notification behavior of a broadcaster.
   * @since OOo 3.0
   */
-@js.native
-trait XBroadcaster extends XInterface {
+trait XBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * suspends broadcasts to the registered listeners.
@@ -20,7 +20,7 @@ trait XBroadcaster extends XInterface {
     * The calls to {@link XBroadcaster.lockBroadcasts()} and {@link XBroadcaster.unlockBroadcasts()} may be nested and even overlapping, but they must be in
     * pairs. While there is at least one lock remaining, no broadcasts are sent to registered listeners.
     */
-  def lockBroadcasts(): Unit = js.native
+  def lockBroadcasts(): Unit
   
   /**
     * resumes the broadcasts which were suspended by {@link XBroadcaster.lockBroadcasts()} .
@@ -31,7 +31,7 @@ trait XBroadcaster extends XInterface {
     * Pending broadcasts will be sent immediately after the last call to {@link XBroadcaster.lockBroadcasts()} is matched by a call to {@link
     * XBroadcaster.unlockBroadcasts()} . An implementation can decide to broadcast all pending notification in order or batch them in single broadcasts.
     */
-  def unlockBroadcasts(): Unit = js.native
+  def unlockBroadcasts(): Unit
 }
 object XBroadcaster {
   

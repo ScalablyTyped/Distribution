@@ -2,101 +2,99 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
   /**
     * The ID of the application that was deployed.
     */
-  var ApplicationId: js.UndefOr[Id] = js.native
+  var ApplicationId: js.UndefOr[Id] = js.undefined
   
   /**
     * The time the deployment completed. 
     */
-  var CompletedAt: js.UndefOr[Iso8601DateTime] = js.native
+  var CompletedAt: js.UndefOr[Iso8601DateTime] = js.undefined
   
   /**
     * Information about the source location of the configuration.
     */
-  var ConfigurationLocationUri: js.UndefOr[Uri] = js.native
+  var ConfigurationLocationUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * The name of the configuration.
     */
-  var ConfigurationName: js.UndefOr[Name] = js.native
+  var ConfigurationName: js.UndefOr[Name] = js.undefined
   
   /**
     * The ID of the configuration profile that was deployed.
     */
-  var ConfigurationProfileId: js.UndefOr[Id] = js.native
+  var ConfigurationProfileId: js.UndefOr[Id] = js.undefined
   
   /**
     * The configuration version that was deployed.
     */
-  var ConfigurationVersion: js.UndefOr[Version] = js.native
+  var ConfigurationVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * Total amount of time the deployment lasted.
     */
-  var DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.native
+  var DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined
   
   /**
     * The sequence number of the deployment.
     */
-  var DeploymentNumber: js.UndefOr[Integer] = js.native
+  var DeploymentNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the deployment strategy that was deployed.
     */
-  var DeploymentStrategyId: js.UndefOr[Id] = js.native
+  var DeploymentStrategyId: js.UndefOr[Id] = js.undefined
   
   /**
     * The description of the deployment.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The ID of the environment that was deployed.
     */
-  var EnvironmentId: js.UndefOr[Id] = js.native
+  var EnvironmentId: js.UndefOr[Id] = js.undefined
   
   /**
     * A list containing all events related to a deployment. The most recent events are displayed first.
     */
-  var EventLog: js.UndefOr[DeploymentEvents] = js.native
+  var EventLog: js.UndefOr[DeploymentEvents] = js.undefined
   
   /**
     * The amount of time AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic roll back.
     */
-  var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.native
+  var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined
   
   /**
     * The percentage of targets to receive a deployed configuration during each interval.
     */
-  var GrowthFactor: js.UndefOr[Percentage] = js.native
+  var GrowthFactor: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The algorithm used to define how percentage grew over time.
     */
-  var GrowthType: js.UndefOr[typings.awsSdk.appconfigMod.GrowthType] = js.native
+  var GrowthType: js.UndefOr[typings.awsSdk.appconfigMod.GrowthType] = js.undefined
   
   /**
     * The percentage of targets for which the deployment is available.
     */
-  var PercentageComplete: js.UndefOr[Percentage] = js.native
+  var PercentageComplete: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The time the deployment started.
     */
-  var StartedAt: js.UndefOr[Iso8601DateTime] = js.native
+  var StartedAt: js.UndefOr[Iso8601DateTime] = js.undefined
   
   /**
     * The state of the deployment.
     */
-  var State: js.UndefOr[DeploymentState] = js.native
+  var State: js.UndefOr[DeploymentState] = js.undefined
 }
 object Deployment {
   

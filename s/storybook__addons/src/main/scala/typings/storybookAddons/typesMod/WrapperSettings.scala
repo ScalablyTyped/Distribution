@@ -3,15 +3,13 @@ package typings.storybookAddons.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WrapperSettings extends StObject {
   
-  var options: OptionsParameter = js.native
+  var options: OptionsParameter
   
-  var parameters: StringDictionary[js.Any] = js.native
+  var parameters: StringDictionary[js.Any]
 }
 object WrapperSettings {
   

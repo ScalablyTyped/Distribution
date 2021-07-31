@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConversationMember extends Entity {
+trait ConversationMember
+  extends StObject
+     with Entity {
   
   // The display name of the user.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The roles for that user.
-  var roles: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var roles: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object ConversationMember {
   

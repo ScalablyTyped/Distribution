@@ -2,29 +2,27 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextLayoutLine extends StObject {
   
-  var ascender: Double = js.native
+  var ascender: Double
   
-  var capHeight: Double = js.native
+  var capHeight: Double
   
-  var descender: Double = js.native
+  var descender: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var text: String = js.native
+  var text: String
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var xHeight: Double = js.native
+  var xHeight: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object TextLayoutLine {
   

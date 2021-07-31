@@ -7,48 +7,42 @@ import typings.reactNativeAudio.reactNativeAudioStrings.Low
 import typings.reactNativeAudio.reactNativeAudioStrings.Medium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object AudioRecorder {
     
-    @JSImport("react-native-audio", "AudioRecorder.checkAuthorizationStatus")
+    @JSImport("react-native-audio", "AudioRecorder")
     @js.native
-    def checkAuthorizationStatus(): js.Promise[Boolean] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-audio", "AudioRecorder.onFinished")
-    @js.native
-    def onFinished(res: AudioFileURL): Unit = js.native
+    @scala.inline
+    def checkAuthorizationStatus(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAuthorizationStatus")().asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("react-native-audio", "AudioRecorder.onProgress")
-    @js.native
-    def onProgress(res: CurrentTime): Unit = js.native
+    @scala.inline
+    def onFinished(res: AudioFileURL): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onFinished")(res.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-audio", "AudioRecorder.pauseRecording")
-    @js.native
-    def pauseRecording(): js.Promise[String] = js.native
+    @scala.inline
+    def onProgress(res: CurrentTime): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onProgress")(res.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-audio", "AudioRecorder.prepareRecordingAtPath")
-    @js.native
-    def prepareRecordingAtPath(path: String, options: RecordingOptions): Unit | js.Promise[String] = js.native
+    @scala.inline
+    def pauseRecording(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseRecording")().asInstanceOf[js.Promise[String]]
     
-    @JSImport("react-native-audio", "AudioRecorder.requestAuthorization")
-    @js.native
-    def requestAuthorization(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def prepareRecordingAtPath(path: String, options: RecordingOptions): Unit | js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareRecordingAtPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[String]]
     
-    @JSImport("react-native-audio", "AudioRecorder.resumeRecording")
-    @js.native
-    def resumeRecording(): js.Promise[String] = js.native
+    @scala.inline
+    def requestAuthorization(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAuthorization")().asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("react-native-audio", "AudioRecorder.startRecording")
-    @js.native
-    def startRecording(): js.Promise[String] = js.native
+    @scala.inline
+    def resumeRecording(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("resumeRecording")().asInstanceOf[js.Promise[String]]
     
-    @JSImport("react-native-audio", "AudioRecorder.stopRecording")
-    @js.native
-    def stopRecording(): js.Promise[String] = js.native
+    @scala.inline
+    def startRecording(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("startRecording")().asInstanceOf[js.Promise[String]]
+    
+    @scala.inline
+    def stopRecording(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecording")().asInstanceOf[js.Promise[String]]
   }
   
   object AudioSource {
@@ -269,28 +263,27 @@ object mod {
     def vorbis: typings.reactNativeAudio.reactNativeAudioStrings.vorbis = "vorbis".asInstanceOf[typings.reactNativeAudio.reactNativeAudioStrings.vorbis]
   }
   
-  @js.native
   trait RecordingOptions extends StObject {
     
-    var AudioEncoding: js.UndefOr[AudioEncodingType] = js.native
+    var AudioEncoding: js.UndefOr[AudioEncodingType] = js.undefined
     
-    var AudioEncodingBitRate: js.UndefOr[Double] = js.native
+    var AudioEncodingBitRate: js.UndefOr[Double] = js.undefined
     
-    var AudioQuality: js.UndefOr[Low | Medium | High] = js.native
+    var AudioQuality: js.UndefOr[Low | Medium | High] = js.undefined
     
-    var AudioSource: js.UndefOr[Double] = js.native
+    var AudioSource: js.UndefOr[Double] = js.undefined
     
-    var Channels: js.UndefOr[Double] = js.native
+    var Channels: js.UndefOr[Double] = js.undefined
     
-    var IncludeBase64: js.UndefOr[Boolean] = js.native
+    var IncludeBase64: js.UndefOr[Boolean] = js.undefined
     
-    var MeasurementMode: js.UndefOr[Boolean] = js.native
+    var MeasurementMode: js.UndefOr[Boolean] = js.undefined
     
-    var MeteringEnabled: js.UndefOr[Boolean] = js.native
+    var MeteringEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var OutputFormat: js.UndefOr[String] = js.native
+    var OutputFormat: js.UndefOr[String] = js.undefined
     
-    var SampleRate: js.UndefOr[Double] = js.native
+    var SampleRate: js.UndefOr[Double] = js.undefined
   }
   object RecordingOptions {
     

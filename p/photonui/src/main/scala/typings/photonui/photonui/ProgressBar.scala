@@ -5,19 +5,19 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProgressBar extends Widget {
+trait ProgressBar
+  extends StObject
+     with Widget {
   
-  var orientation: String = js.native
+  var orientation: String
   
-  var pulsate: Boolean = js.native
+  var pulsate: Boolean
   
-  var textVisible: Boolean = js.native
+  var textVisible: Boolean
   
-  var value: Double = js.native
+  var value: Double
 }
 object ProgressBar {
   

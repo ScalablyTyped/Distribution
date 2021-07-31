@@ -2,28 +2,26 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
-  def action(params: js.Object): Unit | String = js.native
+  def action(params: js.Object): Unit | String
   
-  var collections: TransactionCollections | js.Array[String] = js.native
+  var collections: TransactionCollections | js.Array[String]
   
-  var intermediateCommitCount: js.UndefOr[Double] = js.native
+  var intermediateCommitCount: js.UndefOr[Double] = js.undefined
   
-  var intermediateCommitSize: js.UndefOr[Double] = js.native
+  var intermediateCommitSize: js.UndefOr[Double] = js.undefined
   
-  var lockTimeout: js.UndefOr[Double] = js.native
+  var lockTimeout: js.UndefOr[Double] = js.undefined
   
   // RocksDB
-  var maxTransactionsSize: js.UndefOr[Double] = js.native
+  var maxTransactionsSize: js.UndefOr[Double] = js.undefined
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
   
-  var waitForSync: js.UndefOr[Boolean] = js.native
+  var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
 object Transaction {
   

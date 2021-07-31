@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeCallbackResult extends StObject {
   
   /** 节点对应的 Node 实例 */
-  var node: IAnyObject = js.native
+  var node: IAnyObject
 }
 object NodeCallbackResult {
   

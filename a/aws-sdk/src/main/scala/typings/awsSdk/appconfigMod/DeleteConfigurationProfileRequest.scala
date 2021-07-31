@@ -2,21 +2,19 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConfigurationProfileRequest extends StObject {
   
   /**
     * The application ID that includes the configuration profile you want to delete.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The ID of the configuration profile you want to delete.
     */
-  var ConfigurationProfileId: Id = js.native
+  var ConfigurationProfileId: Id
 }
 object DeleteConfigurationProfileRequest {
   

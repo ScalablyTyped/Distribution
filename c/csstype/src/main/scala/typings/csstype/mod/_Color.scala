@@ -2,11 +2,10 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _Color
-  extends _Paint
+  extends StObject
      with _BackgroundColorProperty
      with _BorderBlockColorProperty
      with _BorderBlockEndColorProperty
@@ -51,6 +50,7 @@ trait _Color
      with _MsScrollbarTrackColorProperty
      with _OutlineColorProperty
      with _OutlineProperty[js.Any]
+     with _Paint
      with _ScrollbarColorProperty
      with _StopColorProperty
      with _TextDecorationColorProperty

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleOwnerProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait HandleOwnerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-HandleOwner.html#handles)
     */
-  var handles: js.UndefOr[HandlesProperties] = js.native
+  var handles: js.UndefOr[HandlesProperties] = js.undefined
 }
 object HandleOwnerProperties {
   

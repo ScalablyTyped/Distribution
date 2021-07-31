@@ -2,7 +2,6 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,7 +45,6 @@ trait JQueryCallback extends StObject {
     */
   def fire(arguments: js.Any*): JQueryCallback = js.native
   
-  def fireWith(context: js.UndefOr[scala.Nothing], args: js.Any*): JQueryCallback = js.native
   /**
     * Call all callbacks in a list with the given context and arguments.
     * 
@@ -54,6 +52,7 @@ trait JQueryCallback extends StObject {
     * @param arguments An argument, or array of arguments, to pass to the callbacks in the list.
     */
   def fireWith(context: js.Any, args: js.Any*): JQueryCallback = js.native
+  def fireWith(context: Unit, args: js.Any*): JQueryCallback = js.native
   
   /**
     * Determine if the callbacks have already been called at least once.

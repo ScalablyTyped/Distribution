@@ -2,23 +2,21 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigOptions extends StObject {
   
-  var epsilon: js.UndefOr[Double] = js.native
+  var epsilon: js.UndefOr[Double] = js.undefined
   
-  var matrix: js.UndefOr[String] = js.native
+  var matrix: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var parenthesis: js.UndefOr[String] = js.native
+  var parenthesis: js.UndefOr[String] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
-  var randomSeed: js.UndefOr[String] = js.native
+  var randomSeed: js.UndefOr[String] = js.undefined
 }
 object ConfigOptions {
   

@@ -8,17 +8,16 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is implemented by objects inside a document object model that can be the target of a link inside a document */
-@js.native
 trait LinkTarget
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XLinkTargetSupplier {
   
   /** contains a human readable name for this object that could be displayed in a user interface. */
-  var LinkDisplayName: String = js.native
+  var LinkDisplayName: String
 }
 object LinkTarget {
   

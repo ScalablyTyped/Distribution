@@ -2,15 +2,13 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpVersion extends StObject {
   
-  var major: Double = js.native
+  var major: Double
   
-  var minor: Double = js.native
+  var minor: Double
 }
 object HttpVersion {
   

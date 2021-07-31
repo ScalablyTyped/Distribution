@@ -3,478 +3,665 @@ package typings.svgTagNames
 import typings.svgTagNames.mod.SVGTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgTagNamesStrings {
   
   @js.native
-  sealed trait a extends SVGTags
+  sealed trait a
+    extends StObject
+       with SVGTags
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait altGlyph extends SVGTags
+  sealed trait altGlyph
+    extends StObject
+       with SVGTags
   @scala.inline
   def altGlyph: altGlyph = "altGlyph".asInstanceOf[altGlyph]
   
   @js.native
-  sealed trait altGlyphDef extends SVGTags
+  sealed trait altGlyphDef
+    extends StObject
+       with SVGTags
   @scala.inline
   def altGlyphDef: altGlyphDef = "altGlyphDef".asInstanceOf[altGlyphDef]
   
   @js.native
-  sealed trait altGlyphItem extends SVGTags
+  sealed trait altGlyphItem
+    extends StObject
+       with SVGTags
   @scala.inline
   def altGlyphItem: altGlyphItem = "altGlyphItem".asInstanceOf[altGlyphItem]
   
   @js.native
-  sealed trait animate extends SVGTags
+  sealed trait animate
+    extends StObject
+       with SVGTags
   @scala.inline
   def animate: animate = "animate".asInstanceOf[animate]
   
   @js.native
-  sealed trait animateColor extends SVGTags
+  sealed trait animateColor
+    extends StObject
+       with SVGTags
   @scala.inline
   def animateColor: animateColor = "animateColor".asInstanceOf[animateColor]
   
   @js.native
-  sealed trait animateMotion extends SVGTags
+  sealed trait animateMotion
+    extends StObject
+       with SVGTags
   @scala.inline
   def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
   
   @js.native
-  sealed trait animateTransform extends SVGTags
+  sealed trait animateTransform
+    extends StObject
+       with SVGTags
   @scala.inline
   def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
-  sealed trait animation extends SVGTags
+  sealed trait animation
+    extends StObject
+       with SVGTags
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]
   
   @js.native
-  sealed trait audio extends SVGTags
+  sealed trait audio
+    extends StObject
+       with SVGTags
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
-  sealed trait canvas extends SVGTags
+  sealed trait canvas
+    extends StObject
+       with SVGTags
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait circle extends SVGTags
+  sealed trait circle
+    extends StObject
+       with SVGTags
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait clipPath extends SVGTags
+  sealed trait clipPath
+    extends StObject
+       with SVGTags
   @scala.inline
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait `color-profile` extends SVGTags
+  sealed trait `color-profile`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `color-profile`: `color-profile` = "color-profile".asInstanceOf[`color-profile`]
   
   @js.native
-  sealed trait cursor extends SVGTags
+  sealed trait cursor
+    extends StObject
+       with SVGTags
   @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
-  sealed trait defs extends SVGTags
+  sealed trait defs
+    extends StObject
+       with SVGTags
   @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   
   @js.native
-  sealed trait desc extends SVGTags
+  sealed trait desc
+    extends StObject
+       with SVGTags
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait discard extends SVGTags
+  sealed trait discard
+    extends StObject
+       with SVGTags
   @scala.inline
   def discard: discard = "discard".asInstanceOf[discard]
   
   @js.native
-  sealed trait ellipse extends SVGTags
+  sealed trait ellipse
+    extends StObject
+       with SVGTags
   @scala.inline
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
-  sealed trait feBlend extends SVGTags
+  sealed trait feBlend
+    extends StObject
+       with SVGTags
   @scala.inline
   def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   
   @js.native
-  sealed trait feColorMatrix extends SVGTags
+  sealed trait feColorMatrix
+    extends StObject
+       with SVGTags
   @scala.inline
   def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
   
   @js.native
-  sealed trait feComponentTransfer extends SVGTags
+  sealed trait feComponentTransfer
+    extends StObject
+       with SVGTags
   @scala.inline
   def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
   
   @js.native
-  sealed trait feComposite extends SVGTags
+  sealed trait feComposite
+    extends StObject
+       with SVGTags
   @scala.inline
   def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
   
   @js.native
-  sealed trait feConvolveMatrix extends SVGTags
+  sealed trait feConvolveMatrix
+    extends StObject
+       with SVGTags
   @scala.inline
   def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
   
   @js.native
-  sealed trait feDiffuseLighting extends SVGTags
+  sealed trait feDiffuseLighting
+    extends StObject
+       with SVGTags
   @scala.inline
   def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
   
   @js.native
-  sealed trait feDisplacementMap extends SVGTags
+  sealed trait feDisplacementMap
+    extends StObject
+       with SVGTags
   @scala.inline
   def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
   
   @js.native
-  sealed trait feDistantLight extends SVGTags
+  sealed trait feDistantLight
+    extends StObject
+       with SVGTags
   @scala.inline
   def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
   
   @js.native
-  sealed trait feDropShadow extends SVGTags
+  sealed trait feDropShadow
+    extends StObject
+       with SVGTags
   @scala.inline
   def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
-  sealed trait feFlood extends SVGTags
+  sealed trait feFlood
+    extends StObject
+       with SVGTags
   @scala.inline
   def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
   
   @js.native
-  sealed trait feFuncA extends SVGTags
+  sealed trait feFuncA
+    extends StObject
+       with SVGTags
   @scala.inline
   def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
   
   @js.native
-  sealed trait feFuncB extends SVGTags
+  sealed trait feFuncB
+    extends StObject
+       with SVGTags
   @scala.inline
   def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
   
   @js.native
-  sealed trait feFuncG extends SVGTags
+  sealed trait feFuncG
+    extends StObject
+       with SVGTags
   @scala.inline
   def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
   
   @js.native
-  sealed trait feFuncR extends SVGTags
+  sealed trait feFuncR
+    extends StObject
+       with SVGTags
   @scala.inline
   def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
   
   @js.native
-  sealed trait feGaussianBlur extends SVGTags
+  sealed trait feGaussianBlur
+    extends StObject
+       with SVGTags
   @scala.inline
   def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
   
   @js.native
-  sealed trait feImage extends SVGTags
+  sealed trait feImage
+    extends StObject
+       with SVGTags
   @scala.inline
   def feImage: feImage = "feImage".asInstanceOf[feImage]
   
   @js.native
-  sealed trait feMerge extends SVGTags
+  sealed trait feMerge
+    extends StObject
+       with SVGTags
   @scala.inline
   def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
   
   @js.native
-  sealed trait feMergeNode extends SVGTags
+  sealed trait feMergeNode
+    extends StObject
+       with SVGTags
   @scala.inline
   def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
   
   @js.native
-  sealed trait feMorphology extends SVGTags
+  sealed trait feMorphology
+    extends StObject
+       with SVGTags
   @scala.inline
   def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
   
   @js.native
-  sealed trait feOffset extends SVGTags
+  sealed trait feOffset
+    extends StObject
+       with SVGTags
   @scala.inline
   def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
   
   @js.native
-  sealed trait fePointLight extends SVGTags
+  sealed trait fePointLight
+    extends StObject
+       with SVGTags
   @scala.inline
   def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
   
   @js.native
-  sealed trait feSpecularLighting extends SVGTags
+  sealed trait feSpecularLighting
+    extends StObject
+       with SVGTags
   @scala.inline
   def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
   
   @js.native
-  sealed trait feSpotLight extends SVGTags
+  sealed trait feSpotLight
+    extends StObject
+       with SVGTags
   @scala.inline
   def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
   
   @js.native
-  sealed trait feTile extends SVGTags
+  sealed trait feTile
+    extends StObject
+       with SVGTags
   @scala.inline
   def feTile: feTile = "feTile".asInstanceOf[feTile]
   
   @js.native
-  sealed trait feTurbulence extends SVGTags
+  sealed trait feTurbulence
+    extends StObject
+       with SVGTags
   @scala.inline
   def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   
   @js.native
-  sealed trait filter extends SVGTags
+  sealed trait filter
+    extends StObject
+       with SVGTags
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait font extends SVGTags
+  sealed trait font
+    extends StObject
+       with SVGTags
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   
   @js.native
-  sealed trait `font-face` extends SVGTags
+  sealed trait `font-face`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `font-face`: `font-face` = "font-face".asInstanceOf[`font-face`]
   
   @js.native
-  sealed trait `font-face-format` extends SVGTags
+  sealed trait `font-face-format`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `font-face-format`: `font-face-format` = "font-face-format".asInstanceOf[`font-face-format`]
   
   @js.native
-  sealed trait `font-face-name` extends SVGTags
+  sealed trait `font-face-name`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `font-face-name`: `font-face-name` = "font-face-name".asInstanceOf[`font-face-name`]
   
   @js.native
-  sealed trait `font-face-src` extends SVGTags
+  sealed trait `font-face-src`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `font-face-src`: `font-face-src` = "font-face-src".asInstanceOf[`font-face-src`]
   
   @js.native
-  sealed trait `font-face-uri` extends SVGTags
+  sealed trait `font-face-uri`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `font-face-uri`: `font-face-uri` = "font-face-uri".asInstanceOf[`font-face-uri`]
   
   @js.native
-  sealed trait foreignObject extends SVGTags
+  sealed trait foreignObject
+    extends StObject
+       with SVGTags
   @scala.inline
   def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   
   @js.native
-  sealed trait g extends SVGTags
+  sealed trait g
+    extends StObject
+       with SVGTags
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait glyph extends SVGTags
+  sealed trait glyph
+    extends StObject
+       with SVGTags
   @scala.inline
   def glyph: glyph = "glyph".asInstanceOf[glyph]
   
   @js.native
-  sealed trait glyphRef extends SVGTags
+  sealed trait glyphRef
+    extends StObject
+       with SVGTags
   @scala.inline
   def glyphRef: glyphRef = "glyphRef".asInstanceOf[glyphRef]
   
   @js.native
-  sealed trait handler extends SVGTags
+  sealed trait handler
+    extends StObject
+       with SVGTags
   @scala.inline
   def handler: handler = "handler".asInstanceOf[handler]
   
   @js.native
-  sealed trait hkern extends SVGTags
+  sealed trait hkern
+    extends StObject
+       with SVGTags
   @scala.inline
   def hkern: hkern = "hkern".asInstanceOf[hkern]
   
   @js.native
-  sealed trait iframe extends SVGTags
+  sealed trait iframe
+    extends StObject
+       with SVGTags
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
-  sealed trait image extends SVGTags
+  sealed trait image
+    extends StObject
+       with SVGTags
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait line extends SVGTags
+  sealed trait line
+    extends StObject
+       with SVGTags
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait linearGradient extends SVGTags
+  sealed trait linearGradient
+    extends StObject
+       with SVGTags
   @scala.inline
   def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
-  sealed trait listener extends SVGTags
+  sealed trait listener
+    extends StObject
+       with SVGTags
   @scala.inline
   def listener: listener = "listener".asInstanceOf[listener]
   
   @js.native
-  sealed trait marker extends SVGTags
+  sealed trait marker
+    extends StObject
+       with SVGTags
   @scala.inline
   def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait mask extends SVGTags
+  sealed trait mask
+    extends StObject
+       with SVGTags
   @scala.inline
   def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait metadata extends SVGTags
+  sealed trait metadata
+    extends StObject
+       with SVGTags
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   
   @js.native
-  sealed trait `missing-glyph` extends SVGTags
+  sealed trait `missing-glyph`
+    extends StObject
+       with SVGTags
   @scala.inline
   def `missing-glyph`: `missing-glyph` = "missing-glyph".asInstanceOf[`missing-glyph`]
   
   @js.native
-  sealed trait mpath extends SVGTags
+  sealed trait mpath
+    extends StObject
+       with SVGTags
   @scala.inline
   def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
-  sealed trait path extends SVGTags
+  sealed trait path
+    extends StObject
+       with SVGTags
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait pattern extends SVGTags
+  sealed trait pattern
+    extends StObject
+       with SVGTags
   @scala.inline
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
-  sealed trait polygon extends SVGTags
+  sealed trait polygon
+    extends StObject
+       with SVGTags
   @scala.inline
   def polygon: polygon = "polygon".asInstanceOf[polygon]
   
   @js.native
-  sealed trait polyline extends SVGTags
+  sealed trait polyline
+    extends StObject
+       with SVGTags
   @scala.inline
   def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait prefetch extends SVGTags
+  sealed trait prefetch
+    extends StObject
+       with SVGTags
   @scala.inline
   def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
   
   @js.native
-  sealed trait radialGradient extends SVGTags
+  sealed trait radialGradient
+    extends StObject
+       with SVGTags
   @scala.inline
   def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   
   @js.native
-  sealed trait rect extends SVGTags
+  sealed trait rect
+    extends StObject
+       with SVGTags
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait script extends SVGTags
+  sealed trait script
+    extends StObject
+       with SVGTags
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait set extends SVGTags
+  sealed trait set
+    extends StObject
+       with SVGTags
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait solidColor extends SVGTags
+  sealed trait solidColor
+    extends StObject
+       with SVGTags
   @scala.inline
   def solidColor: solidColor = "solidColor".asInstanceOf[solidColor]
   
   @js.native
-  sealed trait stop extends SVGTags
+  sealed trait stop
+    extends StObject
+       with SVGTags
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait style extends SVGTags
+  sealed trait style
+    extends StObject
+       with SVGTags
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait svg extends SVGTags
+  sealed trait svg
+    extends StObject
+       with SVGTags
   @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
-  sealed trait switch extends SVGTags
+  sealed trait switch
+    extends StObject
+       with SVGTags
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait symbol extends SVGTags
+  sealed trait symbol
+    extends StObject
+       with SVGTags
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait tbreak extends SVGTags
+  sealed trait tbreak
+    extends StObject
+       with SVGTags
   @scala.inline
   def tbreak: tbreak = "tbreak".asInstanceOf[tbreak]
   
   @js.native
-  sealed trait text extends SVGTags
+  sealed trait text
+    extends StObject
+       with SVGTags
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait textArea extends SVGTags
+  sealed trait textArea
+    extends StObject
+       with SVGTags
   @scala.inline
   def textArea: textArea = "textArea".asInstanceOf[textArea]
   
   @js.native
-  sealed trait textPath extends SVGTags
+  sealed trait textPath
+    extends StObject
+       with SVGTags
   @scala.inline
   def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
-  sealed trait title extends SVGTags
+  sealed trait title
+    extends StObject
+       with SVGTags
   @scala.inline
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait tref extends SVGTags
+  sealed trait tref
+    extends StObject
+       with SVGTags
   @scala.inline
   def tref: tref = "tref".asInstanceOf[tref]
   
   @js.native
-  sealed trait tspan extends SVGTags
+  sealed trait tspan
+    extends StObject
+       with SVGTags
   @scala.inline
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
-  sealed trait unknown extends SVGTags
+  sealed trait unknown
+    extends StObject
+       with SVGTags
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait use extends SVGTags
+  sealed trait use
+    extends StObject
+       with SVGTags
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   
   @js.native
-  sealed trait video extends SVGTags
+  sealed trait video
+    extends StObject
+       with SVGTags
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait view extends SVGTags
+  sealed trait view
+    extends StObject
+       with SVGTags
   @scala.inline
   def view: view = "view".asInstanceOf[view]
   
   @js.native
-  sealed trait vkern extends SVGTags
+  sealed trait vkern
+    extends StObject
+       with SVGTags
   @scala.inline
   def vkern: vkern = "vkern".asInstanceOf[vkern]
 }

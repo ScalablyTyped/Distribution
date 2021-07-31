@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,33 +13,32 @@ object mod {
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @js.native
   trait MatchInfo extends StObject {
     
     /**
       * Offset of matched text
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * Index of next char after the end of the matched text
       */
-    var lastIndex: Double = js.native
+    var lastIndex: Double
     
     /**
       * Link schema, can be empty for fuzzy links, or for protocol-neutral links
       */
-    var schema: String = js.native
+    var schema: String
     
     /**
       * Normalized text
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * Link, generated from matched text
       */
-    var url: String = js.native
+    var url: String
   }
   object MatchInfo {
     
@@ -70,10 +68,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * Custom anchor tag creator
@@ -82,25 +79,25 @@ object mod {
       */
     var componentDecorator: js.UndefOr[
         js.Function3[/* decoratedHref */ String, /* decoratedText */ String, /* key */ Double, ReactNode]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom href decorator or mapper on the matched (url) href
       * Default to no transformation
       */
-    var hrefDecorator: js.UndefOr[js.Function1[/* urlHref */ String, String]] = js.native
+    var hrefDecorator: js.UndefOr[js.Function1[/* urlHref */ String, String]] = js.undefined
     
     /**
       * Custom matcher for (url), that returns each match with the matching information
       * Default to https://github.com/markdown-it/linkify-it's LinkifyIt().tlds(tlds).match
       */
-    var matchDecorator: js.UndefOr[js.Function1[/* text */ String, js.Array[MatchInfo] | Null]] = js.native
+    var matchDecorator: js.UndefOr[js.Function1[/* text */ String, js.Array[MatchInfo] | Null]] = js.undefined
     
     /**
       * Custom text decorator or mapper on the matched (url) text
       * Default to no transformation
       */
-    var textDecorator: js.UndefOr[js.Function1[/* urlText */ String, String]] = js.native
+    var textDecorator: js.UndefOr[js.Function1[/* urlText */ String, String]] = js.undefined
   }
   object Props {
     

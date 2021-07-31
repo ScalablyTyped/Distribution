@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Instance failover request.
   */
-@js.native
 trait SchemaInstancesFailoverRequest extends StObject {
   
   /**
     * Failover Context.
     */
-  var failoverContext: js.UndefOr[SchemaFailoverContext] = js.native
+  var failoverContext: js.UndefOr[SchemaFailoverContext] = js.undefined
 }
 object SchemaInstancesFailoverRequest {
   

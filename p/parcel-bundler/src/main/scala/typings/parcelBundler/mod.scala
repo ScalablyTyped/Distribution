@@ -24,22 +24,22 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("parcel-bundler", JSImport.Namespace)
   @js.native
-  class ^ () extends ParcelBundler {
+  class ^ ()
+    extends StObject
+       with ParcelBundler {
     def this(entryFiles: String) = this()
     def this(entryFiles: js.Array[String]) = this()
-    def this(entryFiles: js.UndefOr[scala.Nothing], options: ParcelOptions) = this()
     def this(entryFiles: String, options: ParcelOptions) = this()
     def this(entryFiles: js.Array[String], options: ParcelOptions) = this()
+    def this(entryFiles: Unit, options: ParcelOptions) = this()
   }
   
-  @js.native
   trait HttpsOptions extends StObject {
     
     /**
@@ -47,14 +47,14 @@ object mod {
       *
       * @default "./ssl/c.crt"
       */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
     /**
       * Path to custom key
       *
       * @default "./ssl/k.key"
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object HttpsOptions {
     
@@ -83,64 +83,63 @@ object mod {
   
   type ParcelAsset = js.Any
   
-  @js.native
   trait ParcelBundle extends StObject {
     
     /**
       * A Set of all assets inside the bundle
       */
-    var assets: Set[_] = js.native
+    var assets: Set[js.Any]
     
     /**
       * A Set of all child bundles
       */
-    var childBundles: Set[_] = js.native
+    var childBundles: Set[js.Any]
     
     /**
       * The entryPoint of the bundle, used for generating the name and gathering assets.
       */
-    var entryAsset: js.Any = js.native
+    var entryAsset: js.Any
     
     /**
       * The name of the bundle (generated using Asset.generateBundleName() of entryAsset)
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A Map<Asset, number(line number inside the bundle)> of all the locations of the assets inside the bundle, used to generate accurate source maps
       */
-    var offsets: Map[ParcelAsset, Double] = js.native
+    var offsets: Map[ParcelAsset, Double]
     
     /**
       * The parent bundle, is null in case of the entry bundleany
       */
-    var parentBundle: js.UndefOr[js.Any] = js.native
+    var parentBundle: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A Set of all sibling bundles
       */
-    var siblingBundles: Set[_] = js.native
+    var siblingBundles: Set[js.Any]
     
     /**
       * A Map<String(Type: js, css, map, ...), Bundle> of all sibling bundles
       */
-    var siblingBundlesMap: Map[String, ParcelBundle] = js.native
+    var siblingBundlesMap: Map[String, ParcelBundle]
     
     /**
       * The type of assets it contains (e.g. js, css, map, ...)
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ParcelBundle {
     
     @scala.inline
     def apply(
-      assets: Set[_],
-      childBundles: Set[_],
+      assets: Set[js.Any],
+      childBundles: Set[js.Any],
       entryAsset: js.Any,
       name: String,
       offsets: Map[ParcelAsset, Double],
-      siblingBundles: Set[_],
+      siblingBundles: Set[js.Any],
       siblingBundlesMap: Map[String, ParcelBundle],
       `type`: String
     ): ParcelBundle = {
@@ -153,10 +152,10 @@ object mod {
     implicit class ParcelBundleMutableBuilder[Self <: ParcelBundle] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAssets(value: Set[_]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      def setAssets(value: Set[js.Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setChildBundles(value: Set[_]): Self = StObject.set(x, "childBundles", value.asInstanceOf[js.Any])
+      def setChildBundles(value: Set[js.Any]): Self = StObject.set(x, "childBundles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEntryAsset(value: js.Any): Self = StObject.set(x, "entryAsset", value.asInstanceOf[js.Any])
@@ -174,7 +173,7 @@ object mod {
       def setParentBundleUndefined: Self = StObject.set(x, "parentBundle", js.undefined)
       
       @scala.inline
-      def setSiblingBundles(value: Set[_]): Self = StObject.set(x, "siblingBundles", value.asInstanceOf[js.Any])
+      def setSiblingBundles(value: Set[js.Any]): Self = StObject.set(x, "siblingBundles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSiblingBundlesMap(value: Map[String, ParcelBundle]): Self = StObject.set(x, "siblingBundlesMap", value.asInstanceOf[js.Any])
@@ -187,17 +186,17 @@ object mod {
   @js.native
   trait ParcelBundler extends StObject {
     
-    def addAssetType(extension: String, path: String): Unit = js.native
+    def addAssetType(`extension`: String, path: String): Unit = js.native
     
     def addPackager(`type`: String, packager: String): Unit = js.native
     
     def bundle(): js.Promise[ParcelBundle] = js.native
     
     def middleware(): js.Function3[
-        /* req */ Request[ParamsDictionary, _, _, ParsedQs], 
-        /* res */ Response[_, Double], 
+        /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], 
+        /* res */ Response[js.Any, Double], 
         /* next */ NextFunction, 
-        _
+        js.Any
       ] = js.native
     
     @JSName("off")
@@ -219,32 +218,31 @@ object mod {
     def on_bundled(name: bundled, cb: js.Function1[/* bundle */ ParcelBundle, Unit]): Unit = js.native
     
     def serve(): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: js.UndefOr[scala.Nothing], https: js.UndefOr[scala.Nothing], host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: js.UndefOr[scala.Nothing], https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: js.UndefOr[scala.Nothing], https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     def serve(port: Double): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    def serve(port: Double, https: js.UndefOr[scala.Nothing], host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve(port: Double, https: Unit, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     def serve(port: Double, https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     def serve(port: Double, https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_false(port: js.UndefOr[scala.Nothing], https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
-    @JSName("serve")
-    def serve_false(port: js.UndefOr[scala.Nothing], https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve(port: Unit, https: Unit, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve(port: Unit, https: HttpsOptions): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve(port: Unit, https: HttpsOptions, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     @JSName("serve")
     def serve_false(port: Double, https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     @JSName("serve")
     def serve_false(port: Double, https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     @JSName("serve")
-    def serve_true(port: js.UndefOr[scala.Nothing], https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve_false(port: Unit, https: `false`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     @JSName("serve")
-    def serve_true(port: js.UndefOr[scala.Nothing], https: `true`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    def serve_false(port: Unit, https: `false`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     @JSName("serve")
     def serve_true(port: Double, https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
     @JSName("serve")
     def serve_true(port: Double, https: `true`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    @JSName("serve")
+    def serve_true(port: Unit, https: `true`): js.Promise[Server | typings.node.httpsMod.Server] = js.native
+    @JSName("serve")
+    def serve_true(port: Unit, https: `true`, host: String): js.Promise[Server | typings.node.httpsMod.Server] = js.native
   }
   
-  @js.native
   trait ParcelOptions extends StObject {
     
     /**
@@ -254,28 +252,28 @@ object mod {
       *
       * @default false
       */
-    var bundleNodeModules: js.UndefOr[`true` | `false`] = js.native
+    var bundleNodeModules: js.UndefOr[`true` | `false`] = js.undefined
     
     /**
       * Enabled or disables caching
       *
       * @default true
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The directory cache gets put in
       *
       * @default ".cache"
       */
-    var cacheDir: js.UndefOr[String] = js.native
+    var cacheDir: js.UndefOr[String] = js.undefined
     
     /**
       * Disable content hash from being included on the filename
       *
       * @default false
       */
-    var contentHash: js.UndefOr[Boolean] = js.native
+    var contentHash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prints a detailed report of the bundles, assets, filesizes and times
@@ -284,26 +282,26 @@ object mod {
       *
       * @default false
       */
-    var detailedReport: js.UndefOr[Boolean] = js.native
+    var detailedReport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Expose modules as UMD under this name, disabled by default
       */
-    var global: js.UndefOr[String] = js.native
+    var global: js.UndefOr[String] = js.undefined
     
     /**
       * Enable or disable HMR while watching
       *
       * @default false
       */
-    var hmr: js.UndefOr[`true` | `false`] = js.native
+    var hmr: js.UndefOr[`true` | `false`] = js.undefined
     
     /**
       * A hostname for hot module reload
       *
       * @default ""
       */
-    var hmrHostname: js.UndefOr[String] = js.native
+    var hmrHostname: js.UndefOr[String] = js.undefined
     
     /**
       * The port the HMR socket runs on
@@ -312,56 +310,56 @@ object mod {
       *
       * @default 0
       */
-    var hmrPort: js.UndefOr[`0` | Double] = js.native
+    var hmrPort: js.UndefOr[`0` | Double] = js.undefined
     
     /**
       * Define a custom {key, cert} pair
       *
       * Use true to generate one or false to use http
       */
-    var https: js.UndefOr[`true` | `false` | HttpsOptions] = js.native
+    var https: js.UndefOr[`true` | `false` | HttpsOptions] = js.undefined
     
     /**
       * 3 = log everything, 2 = log warnings & errors, 1 = log errors
       *
       * @default 3
       */
-    var logLevel: js.UndefOr[`3` | `2` | `1`] = js.native
+    var logLevel: js.UndefOr[`3` | `2` | `1`] = js.undefined
     
     /**
       * Minify files
       *
       * @default process.env.NODE_ENV === 'production'
       */
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The out directory to put the build files in
       *
       * @default "./dist"
       */
-    var outDir: js.UndefOr[String] = js.native
+    var outDir: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the outputFile
       *
       * @default "index.html"
       */
-    var outFile: js.UndefOr[String] = js.native
+    var outFile: js.UndefOr[String] = js.undefined
     
     /**
       * The url to server on
       *
       * @default "./"
       */
-    var publicUrl: js.UndefOr[String] = js.native
+    var publicUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Turn on experimental scope hoisting/tree shaking flag, for smaller production bundles
       *
       * @default false
       */
-    var scopeHoist: js.UndefOr[Boolean] = js.native
+    var scopeHoist: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable sourcemaps
@@ -370,19 +368,19 @@ object mod {
       *
       * @default true
       */
-    var sourceMaps: js.UndefOr[Boolean] = js.native
+    var sourceMaps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default "browser"
       */
-    var target: js.UndefOr[browser | node | electron] = js.native
+    var target: js.UndefOr[browser | node | electron] = js.undefined
     
     /**
       * Whether to watch the files and rebuild them on change
       *
       * @default process.env.NODE_ENV !== 'production'
       */
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object ParcelOptions {
     

@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serv
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait V1Beta1ProducerQuotaPolicy extends StObject {
   
   /** The cloud resource container at which the quota policy is created. The format is {container_type}/{container_number} */
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   /**
     * If this map is nonempty, then this policy applies only to specific values for dimensions defined in the limit unit. For example, an policy on a limit with the unit
@@ -23,26 +21,26 @@ trait V1Beta1ProducerQuotaPolicy extends StObject {
   var dimensions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The name of the metric to which this policy applies. An example name would be: `compute.googleapis.com/cpus` */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the producer policy. An example name would be:
     * `services/compute.googleapis.com/organizations/123/consumerQuotaMetrics/compute.googleapis.com%2Fcpus/limits/%2Fproject%2Fregion/producerQuotaPolicies/4a3f2c1d`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The quota policy value. Can be any nonnegative integer, or -1 (unlimited quota). */
-  var policyValue: js.UndefOr[String] = js.native
+  var policyValue: js.UndefOr[String] = js.undefined
   
   /**
     * The limit unit of the limit to which this policy applies. An example unit would be: `1/{project}/{region}` Note that `{project}` and `{region}` are not placeholders in this example;
     * the literal characters `{` and `}` occur in the string.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object V1Beta1ProducerQuotaPolicy {
   
@@ -65,7 +63,7 @@ object V1Beta1ProducerQuotaPolicy {
     def setDimensions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy & TopLevel[js.Any]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline

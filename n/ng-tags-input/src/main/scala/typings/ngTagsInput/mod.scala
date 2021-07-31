@@ -6,7 +6,6 @@ import typings.ngTagsInput.mod.angularAugmentingMod.ngTagsInput.TagsInputConfigu
 import typings.ngTagsInput.mod.angularAugmentingMod.ngTagsInput.TagsInputParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,32 +21,31 @@ object mod {
     
     object ngTagsInput {
       
-      @js.native
       trait AutocompleteParams extends StObject {
         
-        var debounceDelay: js.UndefOr[Double | Boolean] = js.native
+        var debounceDelay: js.UndefOr[Double | Boolean] = js.undefined
         
-        var displayProperty: js.UndefOr[String | Boolean] = js.native
+        var displayProperty: js.UndefOr[String | Boolean] = js.undefined
         
-        var highlightMatchedText: js.UndefOr[Boolean] = js.native
+        var highlightMatchedText: js.UndefOr[Boolean] = js.undefined
         
-        var loadOnDownArrow: js.UndefOr[Boolean] = js.native
+        var loadOnDownArrow: js.UndefOr[Boolean] = js.undefined
         
-        var loadOnEmpty: js.UndefOr[Boolean] = js.native
+        var loadOnEmpty: js.UndefOr[Boolean] = js.undefined
         
-        var loadOnFocus: js.UndefOr[Boolean] = js.native
+        var loadOnFocus: js.UndefOr[Boolean] = js.undefined
         
-        var matchClass: js.UndefOr[js.Any] = js.native
+        var matchClass: js.UndefOr[js.Any] = js.undefined
         
-        var maxResultsToShow: js.UndefOr[Double | Boolean] = js.native
+        var maxResultsToShow: js.UndefOr[Double | Boolean] = js.undefined
         
-        var minLength: js.UndefOr[Double | Boolean] = js.native
+        var minLength: js.UndefOr[Double | Boolean] = js.undefined
         
-        var selectFirstMatch: js.UndefOr[Boolean] = js.native
+        var selectFirstMatch: js.UndefOr[Boolean] = js.undefined
         
-        var source: js.UndefOr[js.Any] = js.native
+        var source: js.UndefOr[js.Any] = js.undefined
         
-        var template: js.UndefOr[String | Boolean] = js.native
+        var template: js.UndefOr[String | Boolean] = js.undefined
       }
       object AutocompleteParams {
         
@@ -135,7 +133,9 @@ object mod {
       }
       
       @js.native
-      trait TagsInputConfigurationProvider extends IServiceProvider {
+      trait TagsInputConfigurationProvider
+        extends StObject
+           with IServiceProvider {
         
         def setActiveInterpolation(directive: String, options: IAutocompleteParams): js.Any = js.native
         /**
@@ -155,76 +155,75 @@ object mod {
         def setTextAutosizeThreshold(threshold: Double): js.Any = js.native
       }
       
-      @js.native
       trait TagsInputParams extends StObject {
         
-        var addFromAutocompleteOnly: js.UndefOr[Boolean] = js.native
+        var addFromAutocompleteOnly: js.UndefOr[Boolean] = js.undefined
         
-        var addOnBlur: js.UndefOr[Boolean] = js.native
+        var addOnBlur: js.UndefOr[Boolean] = js.undefined
         
-        var addOnComma: js.UndefOr[Boolean] = js.native
+        var addOnComma: js.UndefOr[Boolean] = js.undefined
         
-        var addOnEnter: js.UndefOr[Boolean] = js.native
+        var addOnEnter: js.UndefOr[Boolean] = js.undefined
         
-        var addOnPaste: js.UndefOr[Boolean] = js.native
+        var addOnPaste: js.UndefOr[Boolean] = js.undefined
         
-        var addOnSpace: js.UndefOr[Boolean] = js.native
+        var addOnSpace: js.UndefOr[Boolean] = js.undefined
         
-        var allowLeftoverText: js.UndefOr[Boolean] = js.native
+        var allowLeftoverText: js.UndefOr[Boolean] = js.undefined
         
-        var allowedTagsPattern: js.UndefOr[String | Boolean] = js.native
+        var allowedTagsPattern: js.UndefOr[String | Boolean] = js.undefined
         
-        var displayProperty: js.UndefOr[String | Boolean] = js.native
+        var displayProperty: js.UndefOr[String | Boolean] = js.undefined
         
-        var enableEditingLastTag: js.UndefOr[Boolean] = js.native
+        var enableEditingLastTag: js.UndefOr[Boolean] = js.undefined
         
-        var keyProperty: js.UndefOr[String | Boolean] = js.native
+        var keyProperty: js.UndefOr[String | Boolean] = js.undefined
         
-        var maxLength: js.UndefOr[Double | Boolean] = js.native
+        var maxLength: js.UndefOr[Double | Boolean] = js.undefined
         
-        var maxTags: js.UndefOr[Double | Boolean] = js.native
+        var maxTags: js.UndefOr[Double | Boolean] = js.undefined
         
-        var minLength: js.UndefOr[Double | Boolean] = js.native
+        var minLength: js.UndefOr[Double | Boolean] = js.undefined
         
-        var minTags: js.UndefOr[Double | Boolean] = js.native
+        var minTags: js.UndefOr[Double | Boolean] = js.undefined
         
-        var ngModel: js.UndefOr[String] = js.native
+        var ngModel: js.UndefOr[String] = js.undefined
         
-        var onInvalidTag: js.UndefOr[js.Any] = js.native
+        var onInvalidTag: js.UndefOr[js.Any] = js.undefined
         
-        var onTagAdded: js.UndefOr[js.Any] = js.native
+        var onTagAdded: js.UndefOr[js.Any] = js.undefined
         
-        var onTagAdding: js.UndefOr[js.Any] = js.native
+        var onTagAdding: js.UndefOr[js.Any] = js.undefined
         
-        var onTagClicked: js.UndefOr[js.Any] = js.native
+        var onTagClicked: js.UndefOr[js.Any] = js.undefined
         
-        var onTagRemoved: js.UndefOr[js.Any] = js.native
+        var onTagRemoved: js.UndefOr[js.Any] = js.undefined
         
-        var onTagRemoving: js.UndefOr[js.Any] = js.native
+        var onTagRemoving: js.UndefOr[js.Any] = js.undefined
         
-        var pasteSplitPattern: js.UndefOr[String | Boolean] = js.native
+        var pasteSplitPattern: js.UndefOr[String | Boolean] = js.undefined
         
-        var placeholder: js.UndefOr[String | Boolean] = js.native
+        var placeholder: js.UndefOr[String | Boolean] = js.undefined
         
-        var removeTagSymbol: js.UndefOr[String | Boolean] = js.native
+        var removeTagSymbol: js.UndefOr[String | Boolean] = js.undefined
         
-        var replaceSpacesWithDashes: js.UndefOr[Boolean] = js.native
+        var replaceSpacesWithDashes: js.UndefOr[Boolean] = js.undefined
         
-        var spellcheck: js.UndefOr[Boolean] = js.native
+        var spellcheck: js.UndefOr[Boolean] = js.undefined
         
-        var tabindex: js.UndefOr[Double | Boolean] = js.native
+        var tabindex: js.UndefOr[Double | Boolean] = js.undefined
         
-        var tagClass: js.UndefOr[js.Any] = js.native
+        var tagClass: js.UndefOr[js.Any] = js.undefined
         
-        var template: js.UndefOr[String | Boolean] = js.native
+        var template: js.UndefOr[String | Boolean] = js.undefined
         
-        var templateScope: js.UndefOr[String | Boolean] = js.native
+        var templateScope: js.UndefOr[String | Boolean] = js.undefined
         
-        var text: js.UndefOr[String | Boolean] = js.native
+        var text: js.UndefOr[String | Boolean] = js.undefined
         
-        var `type`: js.UndefOr[String | Boolean] = js.native
+        var `type`: js.UndefOr[String | Boolean] = js.undefined
         
-        var useStrings: js.UndefOr[Boolean] = js.native
+        var useStrings: js.UndefOr[Boolean] = js.undefined
       }
       object TagsInputParams {
         

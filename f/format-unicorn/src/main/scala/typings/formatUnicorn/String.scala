@@ -2,13 +2,11 @@ package typings.formatUnicorn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String extends StObject {
   
-  def formatUnicorn(replacements: js.Object): java.lang.String = js.native
+  def formatUnicorn(replacements: js.Object): java.lang.String
 }
 object String {
   

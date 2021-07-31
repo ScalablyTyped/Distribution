@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobManifest extends StObject {
   
   /**
     * Contains the information required to locate the specified job's manifest.
     */
-  var Location: JobManifestLocation = js.native
+  var Location: JobManifestLocation
   
   /**
     * Describes the format of the specified job's manifest. If the manifest is in CSV format, also describes the columns contained within the manifest.
     */
-  var Spec: JobManifestSpec = js.native
+  var Spec: JobManifestSpec
 }
 object JobManifest {
   

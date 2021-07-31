@@ -2,15 +2,13 @@ package typings.spectacle.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentSlide extends StObject {
   
-  var currentSlide: Double = js.native
+  var currentSlide: Double
   
-  var numberOfSlides: Double = js.native
+  var numberOfSlides: Double
 }
 object CurrentSlide {
   

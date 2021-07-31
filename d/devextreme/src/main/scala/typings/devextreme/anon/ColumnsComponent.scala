@@ -6,39 +6,37 @@ import typings.devextreme.mod.DevExpress.ui.dxTreeList
 import typings.devextreme.mod.DevExpress.ui.dxTreeListColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnsComponent extends StObject {
   
-  var columns: js.UndefOr[js.Array[dxTreeListColumn]] = js.native
+  var columns: js.UndefOr[js.Array[dxTreeListColumn]] = js.undefined
   
-  var component: js.UndefOr[dxTreeList] = js.native
+  var component: js.UndefOr[dxTreeList] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var isNewRow: js.UndefOr[Boolean] = js.native
+  var isNewRow: js.UndefOr[Boolean] = js.undefined
   
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var rowElement: js.UndefOr[dxElement] = js.native
+  var rowElement: js.UndefOr[dxElement] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowType: js.UndefOr[String] = js.native
+  var rowType: js.UndefOr[String] = js.undefined
   
-  var values: js.UndefOr[js.Array[_]] = js.native
+  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object ColumnsComponent {
   
@@ -133,7 +131,7 @@ object ColumnsComponent {
     def setRowTypeUndefined: Self = StObject.set(x, "rowType", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

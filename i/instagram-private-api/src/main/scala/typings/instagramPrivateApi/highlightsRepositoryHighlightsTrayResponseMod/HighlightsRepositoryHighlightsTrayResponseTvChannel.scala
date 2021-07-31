@@ -2,27 +2,25 @@ package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryHighlightsTrayResponseTvChannel extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var items: js.Array[HighlightsRepositoryHighlightsTrayResponseItemsItem] = js.native
+  var items: js.Array[HighlightsRepositoryHighlightsTrayResponseItemsItem]
   
-  var max_id: Null = js.native
+  var max_id: Null
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
   
-  var seen_state: HighlightsRepositoryHighlightsTrayResponseSeenState = js.native
+  var seen_state: HighlightsRepositoryHighlightsTrayResponseSeenState
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var user_dict: HighlightsRepositoryHighlightsTrayResponseUserDict = js.native
+  var user_dict: HighlightsRepositoryHighlightsTrayResponseUserDict
 }
 object HighlightsRepositoryHighlightsTrayResponseTvChannel {
   

@@ -5,18 +5,16 @@ import typings.angularCompiler.r3AstMod.Visitor
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @angular/compiler.@angular/compiler/src/render3/r3_ast.Node & {  i18n :@angular/compiler.@angular/compiler/src/i18n/i18n_ast.I18nMeta | undefined} */
-@js.native
 trait Nodei18nI18nMetaundefined extends StObject {
   
-  var i18n: js.UndefOr[I18nMeta] = js.native
+  var i18n: js.UndefOr[I18nMeta] = js.undefined
   
-  var sourceSpan: ParseSourceSpan = js.native
+  var sourceSpan: ParseSourceSpan
   
-  def visit[Result](visitor: Visitor[Result]): Result = js.native
+  def visit[Result](visitor: Visitor[Result]): Result
 }
 object Nodei18nI18nMetaundefined {
   

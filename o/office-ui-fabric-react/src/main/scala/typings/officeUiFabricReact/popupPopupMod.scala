@@ -6,7 +6,6 @@ import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupPopupMod {
@@ -63,10 +62,9 @@ object popupPopupMod {
     def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPopupState extends StObject {
     
-    var needsVerticalScrollBar: js.UndefOr[Boolean] = js.native
+    var needsVerticalScrollBar: js.UndefOr[Boolean] = js.undefined
   }
   object IPopupState {
     

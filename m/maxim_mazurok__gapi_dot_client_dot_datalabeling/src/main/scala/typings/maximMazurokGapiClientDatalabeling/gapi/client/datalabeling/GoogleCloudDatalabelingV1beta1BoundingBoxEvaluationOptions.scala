@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends StObject {
   
   /**
     * Minimum [intersection-over-union (IOU)](/vision/automl/object-detection/docs/evaluate#intersection-over-union) required for 2 bounding boxes to be considered a match. This must be a
     * number between 0 and 1.
     */
-  var iouThreshold: js.UndefOr[Double] = js.native
+  var iouThreshold: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions {
   

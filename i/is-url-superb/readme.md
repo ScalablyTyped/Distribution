@@ -10,9 +10,9 @@ Check if a string is a URL
 | ------------------ | :-------------: |
 | Full name          | is-url-superb |
 | Keywords           | url, uri, string, validate, check, is |
-| # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 6368350 |
+| # releases         | 4 |
+| # dependents       | 75 |
+| # downloads        | 7665422 |
 | # stars            | 1 |
 
 ## Links

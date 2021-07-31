@@ -2,15 +2,13 @@ package typings.knockoutValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutValidationAsyncCallbackArgs extends StObject {
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  var message: String = js.native
+  var message: String
 }
 object KnockoutValidationAsyncCallbackArgs {
   

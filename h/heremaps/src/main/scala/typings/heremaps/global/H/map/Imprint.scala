@@ -4,7 +4,6 @@ import typings.heremaps.H.Map_
 import typings.heremaps.H.map.Imprint.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.Imprint")
 @js.native
 class Imprint protected ()
-  extends typings.heremaps.H.map.Imprint {
+  extends StObject
+     with typings.heremaps.H.map.Imprint {
   /**
     * Constructor
     * @param map {H.Map} - The map where the imprint is attached to

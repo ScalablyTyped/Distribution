@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesScopedList extends StObject {
   
   /** [Output Only] A list of instances contained in this scope. */
-  var instances: js.UndefOr[js.Array[Instance]] = js.native
+  var instances: js.UndefOr[js.Array[Instance]] = js.undefined
   
   /** [Output Only] Informational warning which replaces the list of instances when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object InstancesScopedList {
   

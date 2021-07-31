@@ -22,10 +22,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object efs {
+  
+  @JSImport("@pulumi/aws", "efs")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "efs.AccessPoint")
   @js.native
@@ -44,6 +47,10 @@ object efs {
   /* static members */
   object AccessPoint {
     
+    @JSImport("@pulumi/aws", "efs.AccessPoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AccessPoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,26 +60,21 @@ object efs {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "efs.AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    @JSImport("@pulumi/aws", "efs.AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    @JSImport("@pulumi/aws", "efs.AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.accessPointMod.AccessPoint = js.native
-    @JSImport("@pulumi/aws", "efs.AccessPoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.accessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accessPointMod.AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accessPointMod.AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessPointState): typings.pulumiAws.accessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accessPointMod.AccessPoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): typings.pulumiAws.accessPointMod.AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.accessPointMod.AccessPoint]
     
     /**
       * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "efs.AccessPoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "efs.FileSystem")
@@ -88,11 +90,15 @@ object efs {
       */
     def this(name: String) = this()
     def this(name: String, args: FileSystemArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: FileSystemArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object FileSystem {
+    
+    @JSImport("@pulumi/aws", "efs.FileSystem")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing FileSystem resource's state with the given name, ID, and optional extra
@@ -103,26 +109,21 @@ object efs {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "efs.FileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    @JSImport("@pulumi/aws", "efs.FileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    @JSImport("@pulumi/aws", "efs.FileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FileSystemState): typings.pulumiAws.fileSystemMod.FileSystem = js.native
-    @JSImport("@pulumi/aws", "efs.FileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemMod.FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemMod.FileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemMod.FileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FileSystemState): typings.pulumiAws.fileSystemMod.FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemMod.FileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FileSystemState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemMod.FileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemMod.FileSystem]
     
     /**
       * Returns true if the given object is an instance of FileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "efs.FileSystem.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "efs.FileSystemPolicy")
@@ -142,6 +143,10 @@ object efs {
   /* static members */
   object FileSystemPolicy {
     
+    @JSImport("@pulumi/aws", "efs.FileSystemPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FileSystemPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -151,26 +156,21 @@ object efs {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "efs.FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    @JSImport("@pulumi/aws", "efs.FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    @JSImport("@pulumi/aws", "efs.FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
-    @JSImport("@pulumi/aws", "efs.FileSystemPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FileSystemPolicyState): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FileSystemPolicyState, opts: CustomResourceOptions): typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.fileSystemPolicyMod.FileSystemPolicy]
     
     /**
       * Returns true if the given object is an instance of FileSystemPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "efs.FileSystemPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/fileSystemPolicy.FileSystemPolicy */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "efs.MountTarget")
@@ -190,6 +190,10 @@ object efs {
   /* static members */
   object MountTarget {
     
+    @JSImport("@pulumi/aws", "efs.MountTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MountTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -199,59 +203,44 @@ object efs {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "efs.MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.mountTargetMod.MountTarget = js.native
-    @JSImport("@pulumi/aws", "efs.MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.mountTargetMod.MountTarget = js.native
-    @JSImport("@pulumi/aws", "efs.MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MountTargetState): typings.pulumiAws.mountTargetMod.MountTarget = js.native
-    @JSImport("@pulumi/aws", "efs.MountTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MountTargetState, opts: CustomResourceOptions): typings.pulumiAws.mountTargetMod.MountTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.mountTargetMod.MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mountTargetMod.MountTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.mountTargetMod.MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mountTargetMod.MountTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MountTargetState): typings.pulumiAws.mountTargetMod.MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mountTargetMod.MountTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MountTargetState, opts: CustomResourceOptions): typings.pulumiAws.mountTargetMod.MountTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.mountTargetMod.MountTarget]
     
     /**
       * Returns true if the given object is an instance of MountTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "efs.MountTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "efs.getAccessPoint")
-  @js.native
-  def getAccessPoint(args: GetAccessPointArgs): js.Promise[GetAccessPointResult] = js.native
-  @JSImport("@pulumi/aws", "efs.getAccessPoint")
-  @js.native
-  def getAccessPoint(args: GetAccessPointArgs, opts: InvokeOptions): js.Promise[GetAccessPointResult] = js.native
+  @scala.inline
+  def getAccessPoint(args: GetAccessPointArgs): js.Promise[GetAccessPointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAccessPointResult]]
+  @scala.inline
+  def getAccessPoint(args: GetAccessPointArgs, opts: InvokeOptions): js.Promise[GetAccessPointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAccessPointResult]]
   
-  @JSImport("@pulumi/aws", "efs.getAccessPoints")
-  @js.native
-  def getAccessPoints(args: GetAccessPointsArgs): js.Promise[GetAccessPointsResult] = js.native
-  @JSImport("@pulumi/aws", "efs.getAccessPoints")
-  @js.native
-  def getAccessPoints(args: GetAccessPointsArgs, opts: InvokeOptions): js.Promise[GetAccessPointsResult] = js.native
+  @scala.inline
+  def getAccessPoints(args: GetAccessPointsArgs): js.Promise[GetAccessPointsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoints")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAccessPointsResult]]
+  @scala.inline
+  def getAccessPoints(args: GetAccessPointsArgs, opts: InvokeOptions): js.Promise[GetAccessPointsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoints")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAccessPointsResult]]
   
-  @JSImport("@pulumi/aws", "efs.getFileSystem")
-  @js.native
-  def getFileSystem(): js.Promise[GetFileSystemResult] = js.native
-  @JSImport("@pulumi/aws", "efs.getFileSystem")
-  @js.native
-  def getFileSystem(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
-  @JSImport("@pulumi/aws", "efs.getFileSystem")
-  @js.native
-  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = js.native
-  @JSImport("@pulumi/aws", "efs.getFileSystem")
-  @js.native
-  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
+  @scala.inline
+  def getFileSystem(): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")().asInstanceOf[js.Promise[GetFileSystemResult]]
+  @scala.inline
+  def getFileSystem(args: Unit, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
+  @scala.inline
+  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFileSystemResult]]
+  @scala.inline
+  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
   
-  @JSImport("@pulumi/aws", "efs.getMountTarget")
-  @js.native
-  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = js.native
-  @JSImport("@pulumi/aws", "efs.getMountTarget")
-  @js.native
-  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = js.native
+  @scala.inline
+  def getMountTarget(args: GetMountTargetArgs): js.Promise[GetMountTargetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetMountTargetResult]]
+  @scala.inline
+  def getMountTarget(args: GetMountTargetArgs, opts: InvokeOptions): js.Promise[GetMountTargetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMountTarget")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetMountTargetResult]]
 }

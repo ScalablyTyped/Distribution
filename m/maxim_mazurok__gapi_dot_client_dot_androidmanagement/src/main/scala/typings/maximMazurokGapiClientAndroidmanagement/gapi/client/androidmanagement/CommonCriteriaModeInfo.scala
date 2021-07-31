@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonCriteriaModeInfo extends StObject {
   
   /** Whether Common Criteria Mode is enabled. */
-  var commonCriteriaModeStatus: js.UndefOr[String] = js.native
+  var commonCriteriaModeStatus: js.UndefOr[String] = js.undefined
 }
 object CommonCriteriaModeInfo {
   

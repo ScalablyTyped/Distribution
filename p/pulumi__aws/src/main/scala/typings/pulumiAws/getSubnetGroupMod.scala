@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSubnetGroupMod {
   
-  @JSImport("@pulumi/aws/rds/getSubnetGroup", "getSubnetGroup")
+  @JSImport("@pulumi/aws/rds/getSubnetGroup", JSImport.Namespace)
   @js.native
-  def getSubnetGroup(args: GetSubnetGroupArgs): js.Promise[GetSubnetGroupResult] = js.native
-  @JSImport("@pulumi/aws/rds/getSubnetGroup", "getSubnetGroup")
-  @js.native
-  def getSubnetGroup(args: GetSubnetGroupArgs, opts: InvokeOptions): js.Promise[GetSubnetGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSubnetGroup(args: GetSubnetGroupArgs): js.Promise[GetSubnetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubnetGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSubnetGroupResult]]
+  @scala.inline
+  def getSubnetGroup(args: GetSubnetGroupArgs, opts: InvokeOptions): js.Promise[GetSubnetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubnetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSubnetGroupResult]]
+  
   trait GetSubnetGroupArgs extends StObject {
     
     /**
       * The name of the RDS database subnet group.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetSubnetGroupArgs {
     
@@ -39,40 +39,39 @@ object getSubnetGroupMod {
     }
   }
   
-  @js.native
   trait GetSubnetGroupResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) for the DB subnet group.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Provides the description of the DB subnet group.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * Provides the status of the DB subnet group.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * Contains a list of subnet identifiers.
       */
-    val subnetIds: js.Array[String] = js.native
+    val subnetIds: js.Array[String]
     
     /**
       * Provides the VPC ID of the subnet group.
       */
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetSubnetGroupResult {
     

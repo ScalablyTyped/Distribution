@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Affix extends StObject {
   
-  var affix: Boolean = js.native
+  var affix: Boolean
   
-  var showInkInFixed: Boolean = js.native
+  var showInkInFixed: Boolean
 }
 object Affix {
   

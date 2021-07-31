@@ -8,7 +8,6 @@ import typings.heremaps.H.util.Disposable
 import typings.heremaps.H.util.kinetics.IKinetics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** mapevents *****/
@@ -24,22 +23,21 @@ object mapevents {
     * @property dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
     * @property button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
     */
-  @js.native
   trait Pointer extends StObject {
     
-    var button: Button = js.native
+    var button: Button
     
-    var dragTarget: Object | Map_ = js.native
+    var dragTarget: Object | Map_
     
-    var id: Double = js.native
+    var id: Double
     
-    var target: Object | Map_ = js.native
+    var target: Object | Map_
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var viewportX: Double = js.native
+    var viewportX: Double
     
-    var viewportY: Double = js.native
+    var viewportY: Double
   }
   object Pointer {
     
@@ -69,19 +67,27 @@ object mapevents {
       
       /** Left mouse button or touch contact or pen contact */
       @js.native
-      sealed trait LEFT extends Button
+      sealed trait LEFT
+        extends StObject
+           with Button
       
       /** Middle mouse button */
       @js.native
-      sealed trait MIDDLE extends Button
+      sealed trait MIDDLE
+        extends StObject
+           with Button
       
       /** No button */
       @js.native
-      sealed trait NONE extends Button
+      sealed trait NONE
+        extends StObject
+           with Button
       
       /** Right mouse button or Pen barrel button */
       @js.native
-      sealed trait RIGHT extends Button
+      sealed trait RIGHT
+        extends StObject
+           with Button
     }
     
     /**
@@ -128,7 +134,9 @@ object mapevents {
     * @property DBLTAPZOOM {number} - Map zooms in or out in response to double click or double tap. For double tap if more that one touches are on the screen map will zoom out.
     */
   @js.native
-  trait Behavior extends Disposable {
+  trait Behavior
+    extends StObject
+       with Disposable {
     
     /**
       * This method disables the behavior functionality for the map
@@ -164,12 +172,11 @@ object mapevents {
       * @property kinetics {H.util.kinetics.IKinetics=} - The parameters for the kinetic movement.
       * @property enable {number=} - The bitmask of behaviors to enable like H.mapevents.Behavior.DRAGGING. All are enabled by default.
       */
-    @js.native
     trait Options extends StObject {
       
-      var enable: js.UndefOr[BitMask] = js.native
+      var enable: js.UndefOr[BitMask] = js.undefined
       
-      var kinetics: js.UndefOr[IKinetics] = js.native
+      var kinetics: js.UndefOr[IKinetics] = js.undefined
     }
     object Options {
       
@@ -207,15 +214,15 @@ object mapevents {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
-  @js.native
   trait ContextMenuEvent
-    extends typings.heremaps.H.util.Event {
+    extends StObject
+       with typings.heremaps.H.util.Event {
     
-    var originalEvent: Event = js.native
+    var originalEvent: Event
     
-    var viewportX: js.Array[ContextItem] = js.native
+    var viewportX: js.Array[ContextItem]
     
-    var viewportY: Double = js.native
+    var viewportY: Double
   }
   object ContextMenuEvent {
     
@@ -265,19 +272,19 @@ object mapevents {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
-  @js.native
   trait Event
-    extends typings.heremaps.H.util.Event {
+    extends StObject
+       with typings.heremaps.H.util.Event {
     
-    var changedPointers: js.Array[Pointer] = js.native
+    var changedPointers: js.Array[Pointer]
     
-    var currentPointer: Pointer = js.native
+    var currentPointer: Pointer
     
-    var originalEvent: Event = js.native
+    var originalEvent: Event
     
-    var pointers: js.Array[Pointer] = js.native
+    var pointers: js.Array[Pointer]
     
-    var targetPointers: js.Array[Pointer] = js.native
+    var targetPointers: js.Array[Pointer]
   }
   object Event {
     
@@ -335,7 +342,9 @@ object mapevents {
     * objects.
     */
   @js.native
-  trait MapEvents extends Disposable {
+  trait MapEvents
+    extends StObject
+       with Disposable {
     
     /**
       * This method destroys the MapEvents by removing all handlers from the map object. After calling this function mapEvents and map objects will not trigger any events. This object will be
@@ -361,17 +370,17 @@ object mapevents {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
-  @js.native
   trait WheelEvent
-    extends typings.heremaps.H.util.Event {
+    extends StObject
+       with typings.heremaps.H.util.Event {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var originalEvent: Event = js.native
+    var originalEvent: Event
     
-    var viewportX: Double = js.native
+    var viewportX: Double
     
-    var viewportY: Double = js.native
+    var viewportY: Double
   }
   object WheelEvent {
     

@@ -3,98 +3,96 @@ package typings.typeorm.typingsMod
 import typings.typeorm.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollStats extends StObject {
   
   /**
     * Average object size in bytes.
     */
-  var avgObjSize: scala.Double = js.native
+  var avgObjSize: scala.Double
   
   /**
     * This field will be “true” if the collection is capped.
     */
-  var capped: Boolean = js.native
+  var capped: Boolean
   
   /**
     * The number of objects or documents in this collection.
     */
-  var count: scala.Double = js.native
+  var count: scala.Double
   
   /**
     * A document that reports data from the WiredTiger storage engine for each index in the collection.
     * Other storage engines will return an empty document.
     */
-  var indexDetails: js.Any = js.native
+  var indexDetails: js.Any
   
   /**
     * Size of specific indexes in bytes.
     */
-  var indexSizes: Id = js.native
+  var indexSizes: Id
   
   /**
     * Size of the most recently created extent in bytes.
     */
-  var lastExtentSize: scala.Double = js.native
+  var lastExtentSize: scala.Double
   
   /**
     * Shows the maximum size of a capped collection.
     */
-  var maxSize: Boolean = js.native
+  var maxSize: Boolean
   
   /**
     * Number of indexes.
     */
-  var nindexes: scala.Double = js.native
+  var nindexes: scala.Double
   
   /**
     * Namespace.
     */
-  var ns: String = js.native
+  var ns: String
   
   /**
     * Number of extents (contiguously allocated chunks of datafile space).
     */
-  var numExtents: scala.Double = js.native
+  var numExtents: scala.Double
   
   /**
     *
     */
-  var ok: scala.Double = js.native
+  var ok: scala.Double
   
   /**
     * Padding can speed up updates if documents grow.
     */
-  var paddingFactor: scala.Double = js.native
+  var paddingFactor: scala.Double
   
   /**
     * Collection size in bytes.
     */
-  var size: scala.Double = js.native
+  var size: scala.Double
   
   /**
     * (Pre)allocated space for the collection in bytes.
     */
-  var storageSize: scala.Double = js.native
+  var storageSize: scala.Double
   
   /**
     * Total index size in bytes.
     */
-  var totalIndexSize: scala.Double = js.native
+  var totalIndexSize: scala.Double
   
   /**
     * A number that indicates the user-set flags on the collection. userFlags
     * only appears when using the mmapv1 storage engine.
     */
-  var userFlags: scala.Double = js.native
+  var userFlags: scala.Double
   
   /**
     * This document contains data reported directly by the WiredTiger engine and other data for internal diagnostic use.
     */
-  var wiredTiger: js.Any = js.native
+  var wiredTiger: js.Any
 }
 object CollStats {
   

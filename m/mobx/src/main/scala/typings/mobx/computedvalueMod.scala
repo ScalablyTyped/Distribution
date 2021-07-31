@@ -2,24 +2,30 @@ package typings.mobx
 
 import typings.mobx.comparerMod.IEqualsComparer
 import typings.mobx.coreObservableMod.IObservable
+import typings.mobx.derivationMod.IDerivation
 import typings.mobx.derivationMod.IDerivationState
 import typings.mobx.derivationMod.TraceMode
 import typings.mobx.internalMod.CaughtException
 import typings.mobx.observablevalueMod.IValueDidChange
 import typings.mobx.utilsMod.Lambda
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object computedvalueMod {
+  
+  @JSImport("mobx/lib/core/computedvalue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.mobx.coreObservableMod.IDepTreeNode because Already inherited
   - typings.mobx.derivationMod.IDerivation because var conflicts: name, observing. Inlined newObserving, dependenciesState, runId, unboundDepsCount, __mapid, onBecomeStale, isTracing, requiresObservable */ @JSImport("mobx/lib/core/computedvalue", "ComputedValue")
   @js.native
   class ComputedValue[T] protected ()
-    extends IObservable
+    extends StObject
+       with IObservable
        with IComputedValue[T] {
     /**
       * Create a new computed value based on a function expression.
@@ -43,10 +49,19 @@ object computedvalueMod {
     
     def derivation(): T = js.native
     
+    /* CompleteClass */
+    var diffValue: Double = js.native
+    
     @JSName("equals")
     var equals_FComputedValue: js.Any = js.native
     
+    /* CompleteClass */
+    var isBeingObserved: Boolean = js.native
+    
     var isComputing: Boolean = js.native
+    
+    /* CompleteClass */
+    var isPendingUnobservation: Boolean = js.native
     
     var isRunningSetter: Boolean = js.native
     
@@ -54,12 +69,35 @@ object computedvalueMod {
     
     var keepAlive: js.Any = js.native
     
+    /**
+      * Id of the derivation *run* that last accessed this observable.
+      * If this id equals the *run* id of the current derivation,
+      * the dependency is already established
+      */
+    /* CompleteClass */
+    var lastAccessedBy: Double = js.native
+    
+    /* CompleteClass */
+    var lowestObserverState: IDerivationState = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
     var newObserving: js.Array[IObservable] | Null = js.native
+    
+    /* CompleteClass */
+    var observers: Set[IDerivation] = js.native
     
     @JSName("observing")
     var observing_ComputedValue: js.Array[IObservable] = js.native
     
+    /* CompleteClass */
+    override def onBecomeObserved(): Unit = js.native
+    
     def onBecomeStale(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onBecomeUnobserved(): Unit = js.native
     
     def peek(): T = js.native
     
@@ -94,9 +132,8 @@ object computedvalueMod {
     def warnAboutUntrackedRead(): Unit = js.native
   }
   
-  @JSImport("mobx/lib/core/computedvalue", "isComputedValue")
-  @js.native
-  def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean = js.native
+  @scala.inline
+  def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputedValue")(x.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/core/computedvalue.ComputedValue<unknown> */ Boolean]
   
   @js.native
   trait IComputedValue[T] extends StObject {
@@ -109,23 +146,22 @@ object computedvalueMod {
     def set(value: T): Unit = js.native
   }
   
-  @js.native
   trait IComputedValueOptions[T] extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     @JSName("equals")
-    var equals_FIComputedValueOptions: js.UndefOr[IEqualsComparer[T]] = js.native
+    var equals_FIComputedValueOptions: js.UndefOr[IEqualsComparer[T]] = js.undefined
     
-    var get: js.UndefOr[js.Function0[T]] = js.native
+    var get: js.UndefOr[js.Function0[T]] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var requiresReaction: js.UndefOr[Boolean] = js.native
+    var requiresReaction: js.UndefOr[Boolean] = js.undefined
     
-    var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
+    var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   }
   object IComputedValueOptions {
     
@@ -136,7 +172,7 @@ object computedvalueMod {
     }
     
     @scala.inline
-    implicit class IComputedValueOptionsMutableBuilder[Self <: IComputedValueOptions[_], T] (val x: Self with IComputedValueOptions[T]) extends AnyVal {
+    implicit class IComputedValueOptionsMutableBuilder[Self <: IComputedValueOptions[?], T] (val x: Self & IComputedValueOptions[T]) extends AnyVal {
       
       @scala.inline
       def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

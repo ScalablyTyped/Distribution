@@ -3,20 +3,18 @@ package typings.webvrApi
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VREyeParameters extends StObject {
   
   /** @deprecated */
-  val fieldOfView: VRFieldOfView = js.native
+  val fieldOfView: VRFieldOfView
   
-  val offset: Float32Array = js.native
+  val offset: Float32Array
   
-  val renderHeight: Double = js.native
+  val renderHeight: Double
   
-  val renderWidth: Double = js.native
+  val renderWidth: Double
 }
 object VREyeParameters {
   

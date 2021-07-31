@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains progress information for a data retrieval operation. */
-@js.native
 trait RetrievalProgress extends StObject {
   
   /** The number of bytes that have been received in this data retrieval operation. */
-  var bytesRetrieved: Double = js.native
+  var bytesRetrieved: Double
   
   /** The total number of bytes to be received during this data retrieval operation. */
-  var totalBytesToRetrieve: Double = js.native
+  var totalBytesToRetrieve: Double
 }
 object RetrievalProgress {
   

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elb {
   
-  @js.native
   trait GetLoadBalancerAccessLogs extends StObject {
     
-    var bucket: String = js.native
+    var bucket: String
     
-    var bucketPrefix: String = js.native
+    var bucketPrefix: String
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var interval: Double = js.native
+    var interval: Double
   }
   object GetLoadBalancerAccessLogs {
     
@@ -43,18 +41,17 @@ object elb {
     }
   }
   
-  @js.native
   trait GetLoadBalancerHealthCheck extends StObject {
     
-    var healthyThreshold: Double = js.native
+    var healthyThreshold: Double
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var target: String = js.native
+    var target: String
     
-    var timeout: Double = js.native
+    var timeout: Double
     
-    var unhealthyThreshold: Double = js.native
+    var unhealthyThreshold: Double
   }
   object GetLoadBalancerHealthCheck {
     
@@ -90,18 +87,17 @@ object elb {
     }
   }
   
-  @js.native
   trait GetLoadBalancerListener extends StObject {
     
-    var instancePort: Double = js.native
+    var instancePort: Double
     
-    var instanceProtocol: String = js.native
+    var instanceProtocol: String
     
-    var lbPort: Double = js.native
+    var lbPort: Double
     
-    var lbProtocol: String = js.native
+    var lbProtocol: String
     
-    var sslCertificateId: String = js.native
+    var sslCertificateId: String
   }
   object GetLoadBalancerListener {
     
@@ -137,28 +133,27 @@ object elb {
     }
   }
   
-  @js.native
   trait LoadBalancerAccessLogs extends StObject {
     
     /**
       * The S3 bucket name to store the logs in.
       */
-    var bucket: String = js.native
+    var bucket: String
     
     /**
       * The S3 bucket prefix. Logs are stored in the root if not configured.
       */
-    var bucketPrefix: js.UndefOr[String] = js.native
+    var bucketPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean to enable / disable `accessLogs`. Default is `true`
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The publishing interval in minutes. Default: 60 minutes.
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
   }
   object LoadBalancerAccessLogs {
     
@@ -194,18 +189,17 @@ object elb {
     }
   }
   
-  @js.native
   trait LoadBalancerHealthCheck extends StObject {
     
     /**
       * The number of checks before the instance is declared healthy.
       */
-    var healthyThreshold: Double = js.native
+    var healthyThreshold: Double
     
     /**
       * The interval between checks.
       */
-    var interval: Double = js.native
+    var interval: Double
     
     /**
       * The target of the check. Valid pattern is "${PROTOCOL}:${PORT}${PATH}", where PROTOCOL
@@ -213,17 +207,17 @@ object elb {
       * * `HTTP`, `HTTPS` - PORT and PATH are required
       * * `TCP`, `SSL` - PORT is required, PATH is not supported
       */
-    var target: String = js.native
+    var target: String
     
     /**
       * The length of time before the check times out.
       */
-    var timeout: Double = js.native
+    var timeout: Double
     
     /**
       * The number of checks before the instance is declared unhealthy.
       */
-    var unhealthyThreshold: Double = js.native
+    var unhealthyThreshold: Double
   }
   object LoadBalancerHealthCheck {
     
@@ -259,36 +253,35 @@ object elb {
     }
   }
   
-  @js.native
   trait LoadBalancerListener extends StObject {
     
     /**
       * The port on the instance to route to
       */
-    var instancePort: Double = js.native
+    var instancePort: Double
     
     /**
       * The protocol to use to the instance. Valid
       * values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
       */
-    var instanceProtocol: String = js.native
+    var instanceProtocol: String
     
     /**
       * The port to listen on for the load balancer
       */
-    var lbPort: Double = js.native
+    var lbPort: Double
     
     /**
       * The protocol to listen on. Valid values are `HTTP`,
       * `HTTPS`, `TCP`, or `SSL`
       */
-    var lbProtocol: String = js.native
+    var lbProtocol: String
     
     /**
       * The ARN of an SSL certificate you have
       * uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lbProtocol` is either HTTPS or SSL**
       */
-    var sslCertificateId: js.UndefOr[String] = js.native
+    var sslCertificateId: js.UndefOr[String] = js.undefined
   }
   object LoadBalancerListener {
     
@@ -321,12 +314,11 @@ object elb {
     }
   }
   
-  @js.native
   trait LoadBalancerPolicyPolicyAttribute extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object LoadBalancerPolicyPolicyAttribute {
     
@@ -353,18 +345,17 @@ object elb {
     }
   }
   
-  @js.native
   trait SslNegotiationPolicyAttribute extends StObject {
     
     /**
       * The name of the attribute
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The value of the attribute
       */
-    var value: String = js.native
+    var value: String
   }
   object SslNegotiationPolicyAttribute {
     

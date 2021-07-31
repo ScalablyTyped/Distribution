@@ -2,61 +2,61 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlStyleMap extends KmlObject {
+trait KmlStyleMap
+  extends StObject
+     with KmlObject {
   
   /**
     * Defines highlighted styles for a placemark, so that the highlighted version appears when the user mouses over the icon in Google Earth.
     */
-  def getHighlightStyle(): KmlStyle = js.native
+  def getHighlightStyle(): KmlStyle
   
   /**
     * Defines highlighted styles for a placemark, so that the highlighted version appears when the user mouses over the icon in Google Earth.
     */
-  def getHighlightStyleUrl(): String = js.native
+  def getHighlightStyleUrl(): String
   
   /**
     * Defines a normal style for a placemark.
     */
-  def getNormalStyle(): KmlStyle = js.native
+  def getNormalStyle(): KmlStyle
   
   /**
     * Defines a normal style for a placemark.
     */
-  def getNormalStyleUrl(): String = js.native
+  def getNormalStyleUrl(): String
   
   /**
     * Defines highlighted styles for a placemark, so that the highlighted version appears when the user mouses over the icon in Google Earth.
     */
-  def setHighlightStyle(highlightStyle: KmlStyle): Unit = js.native
+  def setHighlightStyle(highlightStyle: KmlStyle): Unit
   
   /**
     * Defines highlighted styles for a placemark, so that the highlighted version appears when the user mouses over the icon in Google Earth.
     */
-  def setHighlightStyleUrl(highlightStyleUrl: String): Unit = js.native
+  def setHighlightStyleUrl(highlightStyleUrl: String): Unit
   
   /**
     * Defines a normal style for a placemark.
     */
-  def setNormalStyle(normalStyle: KmlStyle): Unit = js.native
+  def setNormalStyle(normalStyle: KmlStyle): Unit
   
   /**
     * Defines a normal style for a placemark.
     */
-  def setNormalStyleUrl(normalStyleUrl: String): Unit = js.native
+  def setNormalStyleUrl(normalStyleUrl: String): Unit
   
   /**
     * Sets both placemark styles.
     */
-  def setStyle(normalStyle: KmlStyle, highlightStyle: KmlStyle): Unit = js.native
+  def setStyle(normalStyle: KmlStyle, highlightStyle: KmlStyle): Unit
   
   /**
     * Sets both URLs for the placemark style.
     */
-  def setUrl(normalStyleUrl: String, highlightStyleUrl: String): Unit = js.native
+  def setUrl(normalStyleUrl: String, highlightStyleUrl: String): Unit
 }
 object KmlStyleMap {
   

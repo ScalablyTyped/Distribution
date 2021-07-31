@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3BucketPolicyMod {
@@ -39,6 +38,10 @@ object s3BucketPolicyMod {
   /* static members */
   object BucketPolicy {
     
+    @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BucketPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object s3BucketPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BucketPolicy = js.native
-    @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketPolicy = js.native
-    @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketPolicyState): BucketPolicy = js.native
-    @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketPolicyState, opts: CustomResourceOptions): BucketPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketPolicyState): BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketPolicyState, opts: CustomResourceOptions): BucketPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketPolicy]
     
     /**
       * Returns true if the given object is an instance of BucketPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ Boolean]
   }
   
-  @js.native
   trait BucketPolicyArgs extends StObject {
     
     /**
       * The name of the bucket to which to apply the policy.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * The text of the policy.
       */
-    val policy: Input[String | PolicyDocument] = js.native
+    val policy: Input[String | PolicyDocument]
   }
   object BucketPolicyArgs {
     
@@ -102,18 +99,17 @@ object s3BucketPolicyMod {
     }
   }
   
-  @js.native
   trait BucketPolicyState extends StObject {
     
     /**
       * The name of the bucket to which to apply the policy.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The text of the policy.
       */
-    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
   }
   object BucketPolicyState {
     

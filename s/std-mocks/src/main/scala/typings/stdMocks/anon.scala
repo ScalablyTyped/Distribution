@@ -3,20 +3,18 @@ package typings.stdMocks
 import typings.stdMocks.stdMocksBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std-mocks.std-mocks.Options & {  print :boolean | undefined} */
-  @js.native
   trait Optionsprintbooleanundefi extends StObject {
     
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
-    var stderr: js.UndefOr[Boolean] = js.native
+    var stderr: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsprintbooleanundefi {
     
@@ -50,17 +48,16 @@ object anon {
   }
   
   /* Inlined std-mocks.std-mocks.Options & {  stderr :false} */
-  @js.native
   trait Optionsstderrfalse extends StObject {
     
-    var stderr: js.UndefOr[Boolean] with `false` = js.native
+    var stderr: js.UndefOr[Boolean] & `false`
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
   }
   object Optionsstderrfalse {
     
     @scala.inline
-    def apply(stderr: js.UndefOr[Boolean] with `false`): Optionsstderrfalse = {
+    def apply(stderr: js.UndefOr[Boolean] & `false`): Optionsstderrfalse = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstderrfalse]
     }
@@ -69,7 +66,7 @@ object anon {
     implicit class OptionsstderrfalseMutableBuilder[Self <: Optionsstderrfalse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStderr(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      def setStderr(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
@@ -80,17 +77,16 @@ object anon {
   }
   
   /* Inlined std-mocks.std-mocks.Options & {  stdout :false} */
-  @js.native
   trait Optionsstdoutfalse extends StObject {
     
-    var stderr: js.UndefOr[Boolean] = js.native
+    var stderr: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] with `false` = js.native
+    var stdout: js.UndefOr[Boolean] & `false`
   }
   object Optionsstdoutfalse {
     
     @scala.inline
-    def apply(stdout: js.UndefOr[Boolean] with `false`): Optionsstdoutfalse = {
+    def apply(stdout: js.UndefOr[Boolean] & `false`): Optionsstdoutfalse = {
       val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstdoutfalse]
     }
@@ -105,22 +101,21 @@ object anon {
       def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
       @scala.inline
-      def setStdout(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      def setStdout(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std-mocks.std-mocks.Options & {  stdout :false,   stderr :false} */
-  @js.native
   trait Optionsstdoutfalsestderrf extends StObject {
     
-    var stderr: js.UndefOr[Boolean] with `false` = js.native
+    var stderr: js.UndefOr[Boolean] & `false`
     
-    var stdout: js.UndefOr[Boolean] with `false` = js.native
+    var stdout: js.UndefOr[Boolean] & `false`
   }
   object Optionsstdoutfalsestderrf {
     
     @scala.inline
-    def apply(stderr: js.UndefOr[Boolean] with `false`, stdout: js.UndefOr[Boolean] with `false`): Optionsstdoutfalsestderrf = {
+    def apply(stderr: js.UndefOr[Boolean] & `false`, stdout: js.UndefOr[Boolean] & `false`): Optionsstdoutfalsestderrf = {
       val __obj = js.Dynamic.literal(stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsstdoutfalsestderrf]
     }
@@ -129,17 +124,16 @@ object anon {
     implicit class OptionsstdoutfalsestderrfMutableBuilder[Self <: Optionsstdoutfalsestderrf] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStderr(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      def setStderr(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStdout(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      def setStdout(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Stderr extends StObject {
     
-    var stderr: js.Array[String] = js.native
+    var stderr: js.Array[String]
   }
   object Stderr {
     
@@ -160,12 +154,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StderrStdout extends StObject {
     
-    var stderr: js.Array[String] = js.native
+    var stderr: js.Array[String]
     
-    var stdout: js.Array[String] = js.native
+    var stdout: js.Array[String]
   }
   object StderrStdout {
     
@@ -192,10 +185,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stdout extends StObject {
     
-    var stdout: js.Array[String] = js.native
+    var stdout: js.Array[String]
   }
   object Stdout {
     

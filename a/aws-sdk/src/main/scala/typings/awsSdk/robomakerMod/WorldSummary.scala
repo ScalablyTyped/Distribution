@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorldSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the world.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world generation job.
     */
-  var generationJob: js.UndefOr[Arn] = js.native
+  var generationJob: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world template.
     */
-  var template: js.UndefOr[Arn] = js.native
+  var template: js.UndefOr[Arn] = js.undefined
 }
 object WorldSummary {
   

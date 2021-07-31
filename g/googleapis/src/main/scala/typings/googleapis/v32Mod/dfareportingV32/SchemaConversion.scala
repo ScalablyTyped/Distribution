@@ -2,26 +2,24 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Conversion represents when a user successfully performs a desired action
   * after seeing an ad.
   */
-@js.native
 trait SchemaConversion extends StObject {
   
   /**
     * Whether this particular request may come from a user under the age of 13,
     * under COPPA compliance.
     */
-  var childDirectedTreatment: js.UndefOr[Boolean] = js.native
+  var childDirectedTreatment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom floodlight variables.
     */
-  var customVariables: js.UndefOr[js.Array[SchemaCustomFloodlightVariable]] = js.native
+  var customVariables: js.UndefOr[js.Array[SchemaCustomFloodlightVariable]] = js.undefined
   
   /**
     * The alphanumeric encrypted user ID. When set, encryptionInfo should also
@@ -30,7 +28,7 @@ trait SchemaConversion extends StObject {
     * encryptedUserIdCandidates[] or mobileDeviceId or gclid is a required
     * field.
     */
-  var encryptedUserId: js.UndefOr[String] = js.native
+  var encryptedUserId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the alphanumeric encrypted user IDs. Any user ID with exposure
@@ -42,17 +40,17 @@ trait SchemaConversion extends StObject {
     * exclusive with encryptedUserId, mobileDeviceId and gclid. This or
     * encryptedUserId or mobileDeviceId or gclid is a required field.
     */
-  var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.native
+  var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Floodlight Activity ID of this conversion. This is a required field.
     */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /**
     * Floodlight Configuration ID of this conversion. This is a required field.
     */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * The Google click ID. This field is mutually exclusive with
@@ -60,20 +58,20 @@ trait SchemaConversion extends StObject {
     * encryptedUserId or encryptedUserIdCandidates[] or mobileDeviceId is a
     * required field.
     */
-  var gclid: js.UndefOr[String] = js.native
+  var gclid: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#conversion&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Whether Limit Ad Tracking is enabled. When set to true, the conversion
     * will be used for reporting but not targeting. This will prevent
     * remarketing.
     */
-  var limitAdTracking: js.UndefOr[Boolean] = js.native
+  var limitAdTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The mobile device ID. This field is mutually exclusive with
@@ -81,41 +79,41 @@ trait SchemaConversion extends StObject {
     * encryptedUserId or encryptedUserIdCandidates[] or gclid is a required
     * field.
     */
-  var mobileDeviceId: js.UndefOr[String] = js.native
+  var mobileDeviceId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the conversion was for a non personalized ad.
     */
-  var nonPersonalizedAd: js.UndefOr[Boolean] = js.native
+  var nonPersonalizedAd: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ordinal of the conversion. Use this field to control how conversions
     * of the same user and day are de-duplicated. This is a required field.
     */
-  var ordinal: js.UndefOr[String] = js.native
+  var ordinal: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity of the conversion.
     */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp of conversion, in Unix epoch micros. This is a required
     * field.
     */
-  var timestampMicros: js.UndefOr[String] = js.native
+  var timestampMicros: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this particular request may come from a user under the age of 16
     * (may differ by country), under compliance with the European Union&#39;s
     * General Data Protection Regulation (GDPR).
     */
-  var treatmentForUnderage: js.UndefOr[Boolean] = js.native
+  var treatmentForUnderage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the conversion.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SchemaConversion {
   

@@ -3,15 +3,13 @@ package typings.blueprintjsCore.anon
 import typings.blueprintjsCore.collapseMod.AnimationStates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var animationState: AnimationStates = js.native
+  var animationState: AnimationStates
   
-  var height: String = js.native
+  var height: String
 }
 object Height {
   

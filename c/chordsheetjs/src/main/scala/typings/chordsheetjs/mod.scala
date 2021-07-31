@@ -5,7 +5,6 @@ import typings.chordsheetjs.chordsheetjsStrings.none
 import typings.chordsheetjs.chordsheetjsStrings.verse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -366,13 +365,15 @@ object mod {
   /* static members */
   object Tag {
     
-    @JSImport("chordsheetjs", "Tag.parse")
+    @JSImport("chordsheetjs", "Tag")
     @js.native
-    def parse(tag: String): Tag | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("chordsheetjs", "Tag.parseWithRegex")
-    @js.native
-    def parseWithRegex(tag: String, regex: String): Tag | Null = js.native
+    @scala.inline
+    def parse(tag: String): Tag | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[Tag | Null]
+    
+    @scala.inline
+    def parseWithRegex(tag: String, regex: String): Tag | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithRegex")(tag.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[Tag | Null]
   }
   
   @JSImport("chordsheetjs", "TextFormatter")
@@ -414,10 +415,9 @@ object mod {
     def formatTopLine(line: Line): String | Null = js.native
   }
   
-  @js.native
   trait ChordSheetParserProps extends StObject {
     
-    var preserveWhitespace: Boolean = js.native
+    var preserveWhitespace: Boolean
   }
   object ChordSheetParserProps {
     
@@ -435,12 +435,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SongHeader extends StObject {
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var title: String = js.native
+    var title: String
   }
   object SongHeader {
     

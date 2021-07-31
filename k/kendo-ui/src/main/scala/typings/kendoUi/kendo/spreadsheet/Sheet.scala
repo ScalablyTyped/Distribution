@@ -4,11 +4,12 @@ import typings.kendoUi.kendo.Observable
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sheet extends Observable {
+trait Sheet
+  extends StObject
+     with Observable {
   
   def batch(callback: js.Function, changeEventArgs: js.Any): Unit = js.native
   
@@ -47,9 +48,9 @@ trait Sheet extends Observable {
   
   def range(ref: String): Range = js.native
   def range(rowIndex: Double, columnIndex: Double): Range = js.native
-  def range(rowIndex: Double, columnIndex: Double, rowCount: js.UndefOr[scala.Nothing], columnCount: Double): Range = js.native
   def range(rowIndex: Double, columnIndex: Double, rowCount: Double): Range = js.native
   def range(rowIndex: Double, columnIndex: Double, rowCount: Double, columnCount: Double): Range = js.native
+  def range(rowIndex: Double, columnIndex: Double, rowCount: Unit, columnCount: Double): Range = js.native
   
   def rowHeight(): Unit = js.native
   def rowHeight(index: Double): Unit = js.native

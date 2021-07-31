@@ -3,39 +3,37 @@ package typings.googleapis.anon
 import typings.googleapis.booksV1Mod.booksV1.SchemaDownloadAccessRestriction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessViewStatus extends StObject {
   
-  var accessViewStatus: js.UndefOr[String] = js.native
+  var accessViewStatus: js.UndefOr[String] = js.undefined
   
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var downloadAccess: js.UndefOr[SchemaDownloadAccessRestriction] = js.native
+  var downloadAccess: js.UndefOr[SchemaDownloadAccessRestriction] = js.undefined
   
-  var driveImportedContentLink: js.UndefOr[String] = js.native
+  var driveImportedContentLink: js.UndefOr[String] = js.undefined
   
-  var embeddable: js.UndefOr[Boolean] = js.native
+  var embeddable: js.UndefOr[Boolean] = js.undefined
   
-  var epub: js.UndefOr[AcsTokenLink] = js.native
+  var epub: js.UndefOr[AcsTokenLink] = js.undefined
   
-  var explicitOfflineLicenseManagement: js.UndefOr[Boolean] = js.native
+  var explicitOfflineLicenseManagement: js.UndefOr[Boolean] = js.undefined
   
-  var pdf: js.UndefOr[AcsTokenLink] = js.native
+  var pdf: js.UndefOr[AcsTokenLink] = js.undefined
   
-  var publicDomain: js.UndefOr[Boolean] = js.native
+  var publicDomain: js.UndefOr[Boolean] = js.undefined
   
-  var quoteSharingAllowed: js.UndefOr[Boolean] = js.native
+  var quoteSharingAllowed: js.UndefOr[Boolean] = js.undefined
   
-  var textToSpeechPermission: js.UndefOr[String] = js.native
+  var textToSpeechPermission: js.UndefOr[String] = js.undefined
   
-  var viewOrderUrl: js.UndefOr[String] = js.native
+  var viewOrderUrl: js.UndefOr[String] = js.undefined
   
-  var viewability: js.UndefOr[String] = js.native
+  var viewability: js.UndefOr[String] = js.undefined
   
-  var webReaderLink: js.UndefOr[String] = js.native
+  var webReaderLink: js.UndefOr[String] = js.undefined
 }
 object AccessViewStatus {
   

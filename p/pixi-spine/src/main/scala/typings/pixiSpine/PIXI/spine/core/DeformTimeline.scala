@@ -2,21 +2,21 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeformTimeline extends CurveTimeline {
+trait DeformTimeline
+  extends StObject
+     with CurveTimeline {
   
-  var attachment: VertexAttachment = js.native
+  var attachment: VertexAttachment
   
-  var frameVertices: js.Array[ArrayLike[Double]] = js.native
+  var frameVertices: js.Array[ArrayLike[Double]]
   
-  var frames: ArrayLike[Double] = js.native
+  var frames: ArrayLike[Double]
   
-  def setFrame(frameIndex: Double, time: Double, vertices: ArrayLike[Double]): Unit = js.native
+  def setFrame(frameIndex: Double, time: Double, vertices: ArrayLike[Double]): Unit
   
-  var slotIndex: Double = js.native
+  var slotIndex: Double
 }
 object DeformTimeline {
   

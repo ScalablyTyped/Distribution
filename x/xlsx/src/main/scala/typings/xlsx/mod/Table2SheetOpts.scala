@@ -2,25 +2,24 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table2SheetOpts
-  extends CommonOptions
+  extends StObject
+     with CommonOptions
      with DateNFOption {
   
   /** If true, hidden rows and cells will not be parsed */
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
   /** If true, plaintext parsing will not parse values */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If >0, read the first sheetRows rows
     * @default 0
     */
-  var sheetRows: js.UndefOr[Double] = js.native
+  var sheetRows: js.UndefOr[Double] = js.undefined
 }
 object Table2SheetOpts {
   

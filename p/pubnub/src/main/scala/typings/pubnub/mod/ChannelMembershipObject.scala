@@ -3,20 +3,18 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<pubnub.pubnub.v2ObjectData<MembershipCustom>, 'id'> */
-@js.native
 trait ChannelMembershipObject[MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */] extends StObject {
   
-  var channel: ChannelMetadataObject[ChannelCustom] | Id = js.native
+  var channel: ChannelMetadataObject[ChannelCustom] | Id
   
-  var custom: js.UndefOr[MembershipCustom | Null] = js.native
+  var custom: js.UndefOr[MembershipCustom | Null] = js.undefined
   
-  var eTag: String = js.native
+  var eTag: String
   
-  var updated: String = js.native
+  var updated: String
 }
 object ChannelMembershipObject {
   
@@ -27,7 +25,7 @@ object ChannelMembershipObject {
   }
   
   @scala.inline
-  implicit class ChannelMembershipObjectMutableBuilder[Self <: ChannelMembershipObject[_, _], MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */] (val x: Self with (ChannelMembershipObject[MembershipCustom, ChannelCustom])) extends AnyVal {
+  implicit class ChannelMembershipObjectMutableBuilder[Self <: ChannelMembershipObject[?, ?], MembershipCustom /* <: ObjectCustom */, ChannelCustom /* <: ObjectCustom */] (val x: Self & (ChannelMembershipObject[MembershipCustom, ChannelCustom])) extends AnyVal {
     
     @scala.inline
     def setChannel(value: ChannelMetadataObject[ChannelCustom] | Id): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])

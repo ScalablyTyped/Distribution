@@ -4,21 +4,22 @@ import typings.linkifyjs.anon.PartialGlobalEventHandler
 import typings.linkifyjs.mod.LinkEntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlMod {
   
-  @JSImport("linkifyjs/html", JSImport.Default)
+  @JSImport("linkifyjs/html", JSImport.Namespace)
   @js.native
-  def default(input: String): String = js.native
-  @JSImport("linkifyjs/html", JSImport.Default)
-  @js.native
-  def default(input: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(input: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options
-    extends typings.linkifyjs.mod.Options {
+    extends StObject
+       with typings.linkifyjs.mod.Options {
     
     /**
       * Add event listeners to newly created link elements.
@@ -30,7 +31,7 @@ object htmlMod {
       */
     var events: js.UndefOr[
         PartialGlobalEventHandler | (js.Function2[/* href */ String, /* type */ LinkEntityType, PartialGlobalEventHandler])
-      ] = js.native
+      ] = js.undefined
     
     /**
       *  Prevent linkify from trying to parse links in the specified tags.
@@ -39,7 +40,7 @@ object htmlMod {
       *
       *  @default []
       */
-    var ignoreTags: js.UndefOr[js.Array[String]] = js.native
+    var ignoreTags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

@@ -7,7 +7,6 @@ import typings.three.materialMod.Material
 import typings.three.planeMod.Plane
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planeHelperMod {
@@ -23,8 +22,8 @@ object planeHelperMod {
     	 */
     def this(plane: Plane) = this()
     def this(plane: Plane, size: Double) = this()
-    def this(plane: Plane, size: js.UndefOr[scala.Nothing], hex: Double) = this()
     def this(plane: Plane, size: Double, hex: Double) = this()
+    def this(plane: Plane, size: Unit, hex: Double) = this()
     
     var plane: Plane = js.native
     

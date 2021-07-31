@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spacedMod {
@@ -12,14 +11,13 @@ object spacedMod {
   @js.native
   val Spaced: FunctionComponent[SpacedProps] = js.native
   
-  @js.native
   trait ContainerProps extends StObject {
     
-    var col: js.UndefOr[Double] = js.native
+    var col: js.UndefOr[Double] = js.undefined
     
-    var outer: js.UndefOr[Double] = js.native
+    var outer: js.UndefOr[Double] = js.undefined
     
-    var row: js.UndefOr[Double] = js.native
+    var row: js.UndefOr[Double] = js.undefined
   }
   object ContainerProps {
     
@@ -52,14 +50,13 @@ object spacedMod {
     }
   }
   
-  @js.native
   trait SpacedProps extends StObject {
     
-    var col: js.UndefOr[Double] = js.native
+    var col: js.UndefOr[Double] = js.undefined
     
-    var outer: js.UndefOr[Double | Boolean] = js.native
+    var outer: js.UndefOr[Double | Boolean] = js.undefined
     
-    var row: js.UndefOr[Double] = js.native
+    var row: js.UndefOr[Double] = js.undefined
   }
   object SpacedProps {
     

@@ -15,7 +15,6 @@ import typings.kendoUi.kendo.dataviz.ui.TreeMapOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,67 +24,67 @@ trait TypeofuiArcGauge extends StObject {
     /* element */ Element, 
     /* options */ js.UndefOr[ArcGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.ArcGauge
-  ]) with TypeofArcGauge = js.native
+  ]) & TypeofArcGauge = js.native
   
   var Barcode: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[BarcodeOptions], 
     typings.kendoUi.kendo.dataviz.ui.Barcode
-  ]) with TypeofBarcode = js.native
+  ]) & TypeofBarcode = js.native
   
   var Chart: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[ChartOptions], 
     typings.kendoUi.kendo.dataviz.ui.Chart
-  ]) with TypeofChart = js.native
+  ]) & TypeofChart = js.native
   
   var Diagram: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[DiagramOptions], 
     typings.kendoUi.kendo.dataviz.ui.Diagram
-  ]) with TypeofDiagram = js.native
+  ]) & TypeofDiagram = js.native
   
   var LinearGauge: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[LinearGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.LinearGauge
-  ]) with TypeofLinearGauge = js.native
+  ]) & TypeofLinearGauge = js.native
   
   var Map: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[MapOptions], 
     typings.kendoUi.kendo.dataviz.ui.Map
-  ]) with TypeofMap = js.native
+  ]) & TypeofMap = js.native
   
   var QRCode: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[QRCodeOptions], 
     typings.kendoUi.kendo.dataviz.ui.QRCode
-  ]) with TypeofQRCode = js.native
+  ]) & TypeofQRCode = js.native
   
   var RadialGauge: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[RadialGaugeOptions], 
     typings.kendoUi.kendo.dataviz.ui.RadialGauge
-  ]) with TypeofRadialGauge = js.native
+  ]) & TypeofRadialGauge = js.native
   
   var Sparkline: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[SparklineOptions], 
     typings.kendoUi.kendo.dataviz.ui.Sparkline
-  ]) with TypeofSparkline = js.native
+  ]) & TypeofSparkline = js.native
   
   var StockChart: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[StockChartOptions], 
     typings.kendoUi.kendo.dataviz.ui.StockChart
-  ]) with TypeofStockChart = js.native
+  ]) & TypeofStockChart = js.native
   
   var TreeMap: (Instantiable2[
     /* element */ Element, 
     /* options */ js.UndefOr[TreeMapOptions], 
     typings.kendoUi.kendo.dataviz.ui.TreeMap
-  ]) with TypeofTreeMap = js.native
+  ]) & TypeofTreeMap = js.native
   
   def plugin(
     widget: /* import warning: importer.ImportType#apply Failed type conversion: typeof kendo.ui.Widget */ js.Any

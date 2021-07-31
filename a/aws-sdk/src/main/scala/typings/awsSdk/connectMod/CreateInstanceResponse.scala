@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the instance.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier for the instance.
     */
-  var Id: js.UndefOr[InstanceId] = js.native
+  var Id: js.UndefOr[InstanceId] = js.undefined
 }
 object CreateInstanceResponse {
   

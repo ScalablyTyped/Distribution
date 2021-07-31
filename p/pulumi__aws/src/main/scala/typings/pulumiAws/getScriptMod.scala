@@ -5,35 +5,35 @@ import typings.pulumiAws.inputMod.glue.GetScriptDagNode
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getScriptMod {
   
-  @JSImport("@pulumi/aws/glue/getScript", "getScript")
+  @JSImport("@pulumi/aws/glue/getScript", JSImport.Namespace)
   @js.native
-  def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] = js.native
-  @JSImport("@pulumi/aws/glue/getScript", "getScript")
-  @js.native
-  def getScript(args: GetScriptArgs, opts: InvokeOptions): js.Promise[GetScriptResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScript")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetScriptResult]]
+  @scala.inline
+  def getScript(args: GetScriptArgs, opts: InvokeOptions): js.Promise[GetScriptResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getScript")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetScriptResult]]
+  
   trait GetScriptArgs extends StObject {
     
     /**
       * A list of the edges in the DAG. Defined below.
       */
-    val dagEdges: js.Array[GetScriptDagEdge] = js.native
+    val dagEdges: js.Array[GetScriptDagEdge]
     
     /**
       * A list of the nodes in the DAG. Defined below.
       */
-    val dagNodes: js.Array[GetScriptDagNode] = js.native
+    val dagNodes: js.Array[GetScriptDagNode]
     
     /**
       * The programming language of the resulting code from the DAG. Defaults to `PYTHON`. Valid values are `PYTHON` and `SCALA`.
       */
-    val language: js.UndefOr[String] = js.native
+    val language: js.UndefOr[String] = js.undefined
   }
   object GetScriptArgs {
     
@@ -66,29 +66,28 @@ object getScriptMod {
     }
   }
   
-  @js.native
   trait GetScriptResult extends StObject {
     
-    val dagEdges: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagEdge] = js.native
+    val dagEdges: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagEdge]
     
-    val dagNodes: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagNode] = js.native
+    val dagNodes: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagNode]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val language: js.UndefOr[String] = js.native
+    val language: js.UndefOr[String] = js.undefined
     
     /**
       * The Python script generated from the DAG when the `language` argument is set to `PYTHON`.
       */
-    val pythonScript: String = js.native
+    val pythonScript: String
     
     /**
       * The Scala code generated from the DAG when the `language` argument is set to `SCALA`.
       */
-    val scalaCode: String = js.native
+    val scalaCode: String
   }
   object GetScriptResult {
     

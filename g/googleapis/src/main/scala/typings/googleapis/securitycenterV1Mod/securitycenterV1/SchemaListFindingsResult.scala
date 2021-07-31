@@ -2,24 +2,22 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result containing the Finding and its StateChange.
   */
-@js.native
 trait SchemaListFindingsResult extends StObject {
   
   /**
     * Finding matching the search request.
     */
-  var finding: js.UndefOr[SchemaFinding] = js.native
+  var finding: js.UndefOr[SchemaFinding] = js.undefined
   
   /**
     * State change of the finding between the points in time.
     */
-  var stateChange: js.UndefOr[String] = js.native
+  var stateChange: js.UndefOr[String] = js.undefined
 }
 object SchemaListFindingsResult {
   

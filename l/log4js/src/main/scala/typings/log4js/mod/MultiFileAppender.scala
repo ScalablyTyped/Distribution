@@ -3,29 +3,30 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.multiFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiFileAppender extends Appender {
+trait MultiFileAppender
+  extends StObject
+     with Appender {
   
   // the base part of the generated log filename
-  var base: String = js.native
+  var base: String
   
   // the suffix for the generated log filename.
-  var extension: String = js.native
+  var `extension`: String
   
   // the value to use to split files (see below).
-  var property: String = js.native
+  var property: String
   
-  var `type`: multiFile = js.native
+  var `type`: multiFile
 }
 object MultiFileAppender {
   
   @scala.inline
-  def apply(base: String, extension: String, property: String, `type`: multiFile): MultiFileAppender = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(base: String, `extension`: String, property: String): MultiFileAppender = {
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("multiFile")
     __obj.asInstanceOf[MultiFileAppender]
   }
   

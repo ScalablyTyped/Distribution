@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodSettingsMod {
@@ -50,6 +49,10 @@ object methodSettingsMod {
   /* static members */
   object MethodSettings {
     
+    @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MethodSettings resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -59,50 +62,44 @@ object methodSettingsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MethodSettings = js.native
-    @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MethodSettings = js.native
-    @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MethodSettingsState): MethodSettings = js.native
-    @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MethodSettingsState, opts: CustomResourceOptions): MethodSettings = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MethodSettingsState): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MethodSettingsState, opts: CustomResourceOptions): MethodSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MethodSettings]
     
     /**
       * Returns true if the given object is an instance of MethodSettings.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ Boolean]
   }
   
-  @js.native
   trait MethodSettingsArgs extends StObject {
     
     /**
       * Method path defined as `{resource_path}/{http_method}` for an individual method override, or `*&#47;*` for overriding all methods in the stage.
       */
-    val methodPath: Input[String] = js.native
+    val methodPath: Input[String]
     
     /**
       * The ID of the REST API
       */
-    val restApi: Input[String | RestApi] = js.native
+    val restApi: Input[String | RestApi]
     
     /**
       * The settings block, see below.
       */
-    val settings: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings] = js.native
+    val settings: Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]
     
     /**
       * The name of the stage
       */
-    val stageName: Input[String] = js.native
+    val stageName: Input[String]
   }
   object MethodSettingsArgs {
     
@@ -134,28 +131,27 @@ object methodSettingsMod {
     }
   }
   
-  @js.native
   trait MethodSettingsState extends StObject {
     
     /**
       * Method path defined as `{resource_path}/{http_method}` for an individual method override, or `*&#47;*` for overriding all methods in the stage.
       */
-    val methodPath: js.UndefOr[Input[String]] = js.native
+    val methodPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the REST API
       */
-    val restApi: js.UndefOr[Input[String | RestApi]] = js.native
+    val restApi: js.UndefOr[Input[String | RestApi]] = js.undefined
     
     /**
       * The settings block, see below.
       */
-    val settings: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]] = js.native
+    val settings: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.MethodSettingsSettings]] = js.undefined
     
     /**
       * The name of the stage
       */
-    val stageName: js.UndefOr[Input[String]] = js.native
+    val stageName: js.UndefOr[Input[String]] = js.undefined
   }
   object MethodSettingsState {
     

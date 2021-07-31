@@ -2,20 +2,18 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#core/animation
   *
   */
-@js.native
 trait AnimationFitOptions extends StObject {
   
-  var eles: CollectionArgument | Selector = js.native
+  var eles: CollectionArgument | Selector
   
   // to which the viewport will be fitted.
-  var padding: Double = js.native
+  var padding: Double
 }
 object AnimationFitOptions {
   

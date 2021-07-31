@@ -11,7 +11,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -88,7 +87,7 @@ trait EMR extends Service {
   ): Request[CancelStepsOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_EMR: ConfigBase with ClientConfiguration = js.native
+  var config_EMR: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a security configuration, which is stored in the service and can be specified when a cluster is created.

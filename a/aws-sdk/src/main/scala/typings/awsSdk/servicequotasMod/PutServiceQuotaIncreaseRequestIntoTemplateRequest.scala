@@ -2,31 +2,29 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutServiceQuotaIncreaseRequestIntoTemplateRequest extends StObject {
   
   /**
     * Specifies the AWS Region for the quota. 
     */
-  var AwsRegion: typings.awsSdk.servicequotasMod.AwsRegion = js.native
+  var AwsRegion: typings.awsSdk.servicequotasMod.AwsRegion
   
   /**
     * Specifies the new, increased value for the quota. 
     */
-  var DesiredValue: QuotaValue = js.native
+  var DesiredValue: QuotaValue
   
   /**
     * Specifies the service quota that you want to use.
     */
-  var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode = js.native
+  var QuotaCode: typings.awsSdk.servicequotasMod.QuotaCode
   
   /**
     * Specifies the service that you want to use.
     */
-  var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode = js.native
+  var ServiceCode: typings.awsSdk.servicequotasMod.ServiceCode
 }
 object PutServiceQuotaIncreaseRequestIntoTemplateRequest {
   

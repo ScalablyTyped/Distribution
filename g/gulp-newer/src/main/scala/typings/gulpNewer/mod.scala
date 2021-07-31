@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,23 +28,22 @@ object mod extends Shortcut {
     def apply(options: IOptions): ReadWriteStream = js.native
   }
   
-  @js.native
   trait IOptions extends StObject {
     
     /**
       * Path to destination directory or file.
       */
-    var dest: String = js.native
+    var dest: String
     
     /**
       * Source files will be matched to destination files with the provided extension.
       */
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
     /**
       * Map relative source paths to relative destination paths.
       */
-    var map: js.UndefOr[js.Function1[/* relativePath */ String, String]] = js.native
+    var map: js.UndefOr[js.Function1[/* relativePath */ String, String]] = js.undefined
   }
   object IOptions {
     

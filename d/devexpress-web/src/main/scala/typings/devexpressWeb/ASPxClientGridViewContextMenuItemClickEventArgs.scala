@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.ContextMenuItemClick event.
   */
-@js.native
-trait ASPxClientGridViewContextMenuItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientGridViewContextMenuItemClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Returns the processed element index.
     */
-  var elementIndex: Double = js.native
+  var elementIndex: Double
   
   /**
     * Specifies whether default context menu item click is handled manually, so no default processing is required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets the clicked context menu item.
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
   
   /**
     * Gets which grid element has been right clicked by the user.
     */
-  var objectType: String = js.native
+  var objectType: String
   
   /**
     * Specifies whether a postback or a callback is used to finally process the event on the server side.
     */
-  var usePostBack: Boolean = js.native
+  var usePostBack: Boolean
 }
 object ASPxClientGridViewContextMenuItemClickEventArgs {
   

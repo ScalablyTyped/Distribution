@@ -2,20 +2,18 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reference to a model within a model.
   */
-@js.native
 trait IRefModelInModel extends StObject {
   
-  var childId: String = js.native
+  var childId: String
   
-  var childModel: IModel = js.native
+  var childModel: IModel
   
-  var parentModel: IModel = js.native
+  var parentModel: IModel
 }
 object IRefModelInModel {
   

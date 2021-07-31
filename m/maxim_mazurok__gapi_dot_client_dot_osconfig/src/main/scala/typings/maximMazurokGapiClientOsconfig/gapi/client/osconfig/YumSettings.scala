@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YumSettings extends StObject {
   
   /** List of packages to exclude from update. These packages are excluded by using the yum `--exclude` flag. */
-  var excludes: js.UndefOr[js.Array[String]] = js.native
+  var excludes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An exclusive list of packages to be updated. These are the only packages that will be updated. If these packages are not installed, they will be ignored. This field must not be
     * specified with any other patch configuration fields.
     */
-  var exclusivePackages: js.UndefOr[js.Array[String]] = js.native
+  var exclusivePackages: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Will cause patch to run `yum update-minimal` instead. */
-  var minimal: js.UndefOr[Boolean] = js.native
+  var minimal: js.UndefOr[Boolean] = js.undefined
   
   /** Adds the `--security` flag to `yum update`. Not supported on all platforms. */
-  var security: js.UndefOr[Boolean] = js.native
+  var security: js.UndefOr[Boolean] = js.undefined
 }
 object YumSettings {
   

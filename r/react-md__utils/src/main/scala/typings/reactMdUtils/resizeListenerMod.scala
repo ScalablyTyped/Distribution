@@ -5,16 +5,18 @@ import typings.std.Event
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeListenerMod {
   
   object ResizeListener {
     
+    @scala.inline
+    def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].apply(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
+    
     @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener")
     @js.native
-    def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -43,14 +45,13 @@ object resizeListenerMod {
   }
   
   /* Inlined std.Omit<@react-md/utils.@react-md/utils/types/sizing/useResizeListener.ResizeListenerOptions, 'enabled'> */
-  @js.native
   trait ResizeListenerProps extends StObject {
     
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
-    var onResize: EventListener = js.native
+    var onResize: EventListener
     
-    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.native
+    var options: js.UndefOr[Boolean | AddEventListenerOptions] = js.undefined
   }
   object ResizeListenerProps {
     

@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute extends StObject {
   
   /**
     * The name of the HTTP endpoint common attribute.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * The value of the HTTP endpoint common attribute.
     */
-  var value: Input[String] = js.native
+  var value: Input[String]
 }
 object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceV1Exportassets extends StandardParameters {
+trait ParamsResourceV1Exportassets
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The relative name of the root asset. This can only be an
@@ -23,12 +23,12 @@ trait ParamsResourceV1Exportassets extends StandardParameters {
     * "projects/my-project-id"), or a project number (such as
     * "projects/12345"), or a folder number (such as "folders/123").
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaExportAssetsRequest] = js.native
+  var requestBody: js.UndefOr[SchemaExportAssetsRequest] = js.undefined
 }
 object ParamsResourceV1Exportassets {
   

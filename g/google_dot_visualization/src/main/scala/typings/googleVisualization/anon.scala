@@ -4,25 +4,23 @@ import typings.googleVisualization.google.visualization.LabelStyle
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BarLabelStyle extends StObject {
     
-    var barLabelStyle: js.UndefOr[LabelStyle] = js.native
+    var barLabelStyle: js.UndefOr[LabelStyle] = js.undefined
     
-    var colorByRowLabel: js.UndefOr[Boolean] = js.native
+    var colorByRowLabel: js.UndefOr[Boolean] = js.undefined
     
-    var groupByRowLabel: js.UndefOr[Boolean] = js.native
+    var groupByRowLabel: js.UndefOr[Boolean] = js.undefined
     
-    var rowLabelStyle: js.UndefOr[LabelStyle] = js.native
+    var rowLabelStyle: js.UndefOr[LabelStyle] = js.undefined
     
-    var showRowLabels: js.UndefOr[Boolean] = js.native
+    var showRowLabels: js.UndefOr[Boolean] = js.undefined
     
-    var singleColor: js.UndefOr[String] = js.native
+    var singleColor: js.UndefOr[String] = js.undefined
   }
   object BarLabelStyle {
     
@@ -73,30 +71,29 @@ object anon {
     }
   }
   
-  @js.native
   trait CellColor extends StObject {
     
-    var cellColor: js.Object = js.native
+    var cellColor: js.Object
     
-    var cellSize: Double = js.native
+    var cellSize: Double
     
-    var dayOfWeekLabel: js.Object = js.native
+    var dayOfWeekLabel: js.Object
     
-    var dayOfWeekRightSpace: Double = js.native
+    var dayOfWeekRightSpace: Double
     
-    var daysOfWeek: String = js.native
+    var daysOfWeek: String
     
-    var focusedCellColor: js.Object = js.native
+    var focusedCellColor: js.Object
     
-    var monthLabel: js.Object = js.native
+    var monthLabel: js.Object
     
-    var monthOutlineColor: js.Object = js.native
+    var monthOutlineColor: js.Object
     
-    var underMonthSpace: Double = js.native
+    var underMonthSpace: Double
     
-    var underYearSpace: Double = js.native
+    var underYearSpace: Double
     
-    var unusedMonthOutlineColor: js.Object = js.native
+    var unusedMonthOutlineColor: js.Object
   }
   object CellColor {
     
@@ -156,12 +153,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object Color {
     
@@ -188,22 +184,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Color1 extends StObject {
     
-    var color1: String = js.native
+    var color1: String
     
-    var color2: String = js.native
+    var color2: String
     
-    var useObjectBoundingBoxUnits: js.UndefOr[Boolean] = js.native
+    var useObjectBoundingBoxUnits: js.UndefOr[Boolean] = js.undefined
     
-    var x1: String = js.native
+    var x1: String
     
-    var x2: String = js.native
+    var x2: String
     
-    var y1: String = js.native
+    var y1: String
     
-    var y2: String = js.native
+    var y2: String
   }
   object Color1 {
     
@@ -242,16 +237,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Colors extends StObject {
     
-    var colors: js.Array[String] = js.native
+    var colors: js.Array[String]
     
-    var maxValue: Double = js.native
+    var maxValue: Double
     
-    var minValue: Double = js.native
+    var minValue: Double
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object Colors {
     
@@ -284,12 +278,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Date = js.native
+    var end: Date
     
-    var start: Date = js.native
+    var start: Date
   }
   object End {
     
@@ -310,10 +303,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsHtml extends StObject {
     
-    var isHtml: Boolean = js.native
+    var isHtml: Boolean
   }
   object IsHtml {
     
@@ -331,10 +323,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MapTypeId extends StObject {
     
-    var mapTypeId: Name = js.native
+    var mapTypeId: Name
   }
   object MapTypeId {
     
@@ -352,12 +343,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.Any = js.native
+    var max: js.Any
     
-    var min: js.Any = js.native
+    var min: js.Any
   }
   object Max {
     
@@ -378,12 +368,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var styles: js.UndefOr[js.Array[_]] = js.native
+    var styles: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Name {
     
@@ -403,7 +392,7 @@ object anon {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setStyles(value: js.Array[_]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      def setStyles(value: js.Array[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
@@ -413,10 +402,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: String = js.native
+    var style: String
   }
   object Style {
     
@@ -434,10 +422,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Type {
     

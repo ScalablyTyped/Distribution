@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Template")
@@ -31,7 +30,7 @@ class ResourceTemplate protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTemplateDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTemplateDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,7 +56,7 @@ class ResourceTemplate protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
   def get(params: ParamsResourceTemplateGet): GaxiosPromise[SchemaTemplate] = js.native
   def get(params: ParamsResourceTemplateGet, callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
   def get(
@@ -87,7 +86,7 @@ class ResourceTemplate protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaTemplate] = js.native
   def insert(callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
   def insert(params: ParamsResourceTemplateInsert): GaxiosPromise[SchemaTemplate] = js.native
   def insert(params: ParamsResourceTemplateInsert, callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
   def insert(
@@ -118,7 +117,7 @@ class ResourceTemplate protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTemplateList] = js.native
   def list(callback: BodyResponseCallback[SchemaTemplateList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTemplateList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTemplateList] = js.native
   def list(params: ParamsResourceTemplateList): GaxiosPromise[SchemaTemplateList] = js.native
   def list(params: ParamsResourceTemplateList, callback: BodyResponseCallback[SchemaTemplateList]): Unit = js.native
   def list(
@@ -149,7 +148,7 @@ class ResourceTemplate protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaTemplate] = js.native
   def patch(callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
   def patch(params: ParamsResourceTemplatePatch): GaxiosPromise[SchemaTemplate] = js.native
   def patch(params: ParamsResourceTemplatePatch, callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
   def patch(
@@ -180,7 +179,7 @@ class ResourceTemplate protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaTemplate] = js.native
   def update(callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTemplate] = js.native
   def update(params: ParamsResourceTemplateUpdate): GaxiosPromise[SchemaTemplate] = js.native
   def update(params: ParamsResourceTemplateUpdate, callback: BodyResponseCallback[SchemaTemplate]): Unit = js.native
   def update(

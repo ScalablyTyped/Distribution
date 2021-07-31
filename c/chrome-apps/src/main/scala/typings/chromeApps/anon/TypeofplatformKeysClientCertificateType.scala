@@ -9,16 +9,14 @@ import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofplatformKeysClientCertificateType extends StObject {
   
   /**
     * @enum
     */
-  val ClientCertificateType: ECDSASIGN = js.native
+  val ClientCertificateType: ECDSASIGN
   
   /**
     * @description
@@ -47,7 +45,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     certificate: ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * This function filters from a list of client certificates the ones that
@@ -60,7 +58,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     * @param callback Will provide *matches*: The list of certificates that match the request, that the
     *                 app has permission for and, if *interactive* is true, that were selected by the user.
     */
-  def selectClientCertificates(details: SelectDetails, callback: js.Function1[/* matches */ js.Array[Match], Unit]): Unit = js.native
+  def selectClientCertificates(details: SelectDetails, callback: js.Function1[/* matches */ js.Array[Match], Unit]): Unit
   
   /**
     * An implementation of WebCrypto's SubtleCrypto
@@ -68,7 +66,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     * certificates that are available to this app.
     * @see[SubtleCrypto]{@link http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface}
     */
-  def subtleCrypto(): SubtleCrypto = js.native
+  def subtleCrypto(): SubtleCrypto
   
   /**
     * Checks whether *details.serverCertificateChain* can be trusted
@@ -81,7 +79,7 @@ trait TypeofplatformKeysClientCertificateType extends StObject {
     * The implementation is supposed to respect the EKU serverAuth and to
     * support subject alternative names.
     */
-  def verifyTLSServerCertificate(details: VerificationDetails, callback: js.Function1[/* result */ VerificationResult, Unit]): Unit = js.native
+  def verifyTLSServerCertificate(details: VerificationDetails, callback: js.Function1[/* result */ VerificationResult, Unit]): Unit
 }
 object TypeofplatformKeysClientCertificateType {
   

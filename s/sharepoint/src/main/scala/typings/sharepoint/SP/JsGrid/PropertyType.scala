@@ -5,19 +5,18 @@ import typings.sharepoint.anon.BLimitToList
 import typings.sharepoint.anon.DataValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyType extends StObject
 object PropertyType {
   
-  @js.native
-  trait CheckBoxBoolean extends IPropertyType {
+  trait CheckBoxBoolean
+    extends StObject
+       with IPropertyType {
     
-    def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    def DataToLocalized(dataValue: js.Any): java.lang.String
     
-    def GetBool(dataValue: js.Any): Boolean = js.native
+    def GetBool(dataValue: js.Any): Boolean
   }
   object CheckBoxBoolean {
     
@@ -43,12 +42,13 @@ object PropertyType {
     }
   }
   
-  @js.native
-  trait DropDownBoolean extends IPropertyType {
+  trait DropDownBoolean
+    extends StObject
+       with IPropertyType {
     
-    def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    def DataToLocalized(dataValue: js.Any): java.lang.String
     
-    def GetBool(dataValue: js.Any): Boolean = js.native
+    def GetBool(dataValue: js.Any): Boolean
   }
   object DropDownBoolean {
     
@@ -74,17 +74,18 @@ object PropertyType {
     }
   }
   
-  @js.native
-  trait HyperLink extends IPropertyType {
+  trait HyperLink
+    extends StObject
+       with IPropertyType {
     
-    def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    def DataToLocalized(dataValue: js.Any): java.lang.String
     
-    def GetAddress(dataValue: js.Any): java.lang.String = js.native
+    def GetAddress(dataValue: js.Any): java.lang.String
     
     /** Returns string like this: '"http:// site.com, Site title"' */
-    def GetCopyValue(record: IRecord, dataValue: js.Any, locValue: java.lang.String): java.lang.String = js.native
+    def GetCopyValue(record: IRecord, dataValue: js.Any, locValue: java.lang.String): java.lang.String
     
-    var bHyperlink: Boolean = js.native
+    var bHyperlink: Boolean
   }
   object HyperLink {
     
@@ -118,8 +119,9 @@ object PropertyType {
     }
   }
   
-  @js.native
-  trait LookupTable extends ILookupPropertyType
+  trait LookupTable
+    extends StObject
+       with ILookupPropertyType
   object LookupTable {
     
     @scala.inline
@@ -139,8 +141,9 @@ object PropertyType {
     }
   }
   
-  @js.native
-  trait MultiValuePropType extends IMultiValuePropertyType
+  trait MultiValuePropType
+    extends StObject
+       with IMultiValuePropertyType
   object MultiValuePropType {
     
     @scala.inline
@@ -160,8 +163,9 @@ object PropertyType {
     }
   }
   
-  @js.native
-  trait String extends IPropertyType
+  trait String
+    extends StObject
+       with IPropertyType
   object String {
     
     @scala.inline
@@ -174,6 +178,5 @@ object PropertyType {
     }
   }
   
-  @js.native
   trait Utils extends StObject
 }

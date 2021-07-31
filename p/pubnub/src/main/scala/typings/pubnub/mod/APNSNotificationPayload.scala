@@ -2,17 +2,17 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait APNSNotificationPayload extends BaseNotificationPayload {
+trait APNSNotificationPayload
+  extends StObject
+     with BaseNotificationPayload {
   
-  var apnsPushType: js.UndefOr[String] = js.native
+  var apnsPushType: js.UndefOr[String] = js.undefined
   
-  var configurations: js.Array[APNS2Configuration] = js.native
+  var configurations: js.Array[APNS2Configuration]
   
-  var isSilent: Boolean = js.native
+  var isSilent: Boolean
 }
 object APNSNotificationPayload {
   

@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcGISMapServiceCapabilitiesExportMap extends Object {
+trait ArcGISMapServiceCapabilitiesExportMap
+  extends StObject
+     with Object {
   
   /**
     * Indicates if sublayers rendering can be modified or added using dynamic layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsDynamicLayers: Boolean = js.native
+  var supportsDynamicLayers: Boolean
   
   /**
     * Indicates if a sublayer supports modifying its renderer and/or data source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsModification: Boolean = js.native
+  var supportsModification: Boolean
   
   /**
     * Indicates if sublayers [definition expression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#definitionExpression) can be set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsSublayerDefinitionExpression: Boolean = js.native
+  var supportsSublayerDefinitionExpression: Boolean
   
   /**
     * Indicates if sublayers [visibility](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#visible) can be changed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsSublayerVisibility: Boolean = js.native
+  var supportsSublayerVisibility: Boolean
   
   /**
     * Indicates if sublayers can be added, removed, or reordered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
-  var supportsSublayersChanges: Boolean = js.native
+  var supportsSublayersChanges: Boolean
 }
 object ArcGISMapServiceCapabilitiesExportMap {
   

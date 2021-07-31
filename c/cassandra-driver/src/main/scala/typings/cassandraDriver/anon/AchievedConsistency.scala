@@ -5,25 +5,23 @@ import typings.cassandraDriver.typesMod.types.Uuid
 import typings.cassandraDriver.typesMod.types.consistencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AchievedConsistency extends StObject {
   
-  var achievedConsistency: consistencies = js.native
+  var achievedConsistency: consistencies
   
-  var customPayload: js.Any = js.native
+  var customPayload: js.Any
   
-  var queriedHost: String = js.native
+  var queriedHost: String
   
-  var speculativeExecutions: Double = js.native
+  var speculativeExecutions: Double
   
-  var traceId: Uuid = js.native
+  var traceId: Uuid
   
-  var triedHosts: StringDictionary[js.Any] = js.native
+  var triedHosts: StringDictionary[js.Any]
   
-  var warnings: js.Array[String] = js.native
+  var warnings: js.Array[String]
 }
 object AchievedConsistency {
   

@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMProgressEvent extends StObject {
   
   @JSName("MSHTML.DOMProgressEvent_typekey")
-  var MSHTMLDotDOMProgressEvent_typekey: DOMProgressEvent = js.native
+  var MSHTMLDotDOMProgressEvent_typekey: DOMProgressEvent
   
-  val bubbles: Boolean = js.native
+  val bubbles: Boolean
   
-  var cancelBubble: Boolean = js.native
+  var cancelBubble: Boolean
   
-  val cancelable: Boolean = js.native
+  val cancelable: Boolean
   
-  val currentTarget: IEventTarget = js.native
+  val currentTarget: IEventTarget
   
-  val defaultPrevented: Boolean = js.native
+  val defaultPrevented: Boolean
   
-  val eventPhase: Double = js.native
+  val eventPhase: Double
   
-  def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit = js.native
+  def initEvent(eventType: String, canBubble: Boolean, cancelable: Boolean): Unit
   
   def initProgressEvent(
     eventType: String,
@@ -32,29 +30,29 @@ trait DOMProgressEvent extends StObject {
     lengthComputableArg: Boolean,
     loadedArg: Double,
     totalArg: Double
-  ): Unit = js.native
+  ): Unit
   
-  val isTrusted: Boolean = js.native
+  val isTrusted: Boolean
   
-  val lengthComputable: Boolean = js.native
+  val lengthComputable: Boolean
   
-  val loaded: Double = js.native
+  val loaded: Double
   
-  def preventDefault(): Unit = js.native
+  def preventDefault(): Unit
   
-  val srcElement: IHTMLElement = js.native
+  val srcElement: IHTMLElement
   
-  def stopImmediatePropagation(): Unit = js.native
+  def stopImmediatePropagation(): Unit
   
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
   
-  val target: IEventTarget = js.native
+  val target: IEventTarget
   
-  val timeStamp: Double = js.native
+  val timeStamp: Double
   
-  val total: Double = js.native
+  val total: Double
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object DOMProgressEvent {
   

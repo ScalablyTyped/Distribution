@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderLeftProps[TLength] extends StObject {
   
   val borderLeft: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BorderLeftProps {
   
@@ -23,12 +21,12 @@ object BorderLeftProps {
   }
   
   @scala.inline
-  implicit class BorderLeftPropsMutableBuilder[Self <: BorderLeftProps[_], TLength] (val x: Self with BorderLeftProps[TLength]) extends AnyVal {
+  implicit class BorderLeftPropsMutableBuilder[Self <: BorderLeftProps[?], TLength] (val x: Self & BorderLeftProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBorderLeft(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BorderLeftProps {
     def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
     @scala.inline
-    def setBorderLeftVarargs(value: js.Any*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
+    def setBorderLeftVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
   }
 }

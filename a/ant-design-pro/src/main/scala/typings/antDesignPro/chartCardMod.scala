@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartCardMod {
@@ -17,21 +16,22 @@ object chartCardMod {
   
   type ChartCard = Component[IChartCardProps, js.Any, js.Any]
   
-  @js.native
-  trait IChartCardProps extends CardProps {
+  trait IChartCardProps
+    extends StObject
+       with CardProps {
     
-    var action: js.UndefOr[ReactNode] = js.native
+    var action: js.UndefOr[ReactNode] = js.undefined
     
-    var avatar: js.UndefOr[ReactNode] = js.native
+    var avatar: js.UndefOr[ReactNode] = js.undefined
     
-    var contentHeight: js.UndefOr[Double] = js.native
+    var contentHeight: js.UndefOr[Double] = js.undefined
     
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
     @JSName("title")
-    var title_IChartCardProps: ReactNode = js.native
+    var title_IChartCardProps: ReactNode
     
-    var total: js.UndefOr[ReactNode | Double | (js.Function0[ReactNode | Double])] = js.native
+    var total: js.UndefOr[ReactNode | Double | (js.Function0[ReactNode | Double])] = js.undefined
   }
   object IChartCardProps {
     

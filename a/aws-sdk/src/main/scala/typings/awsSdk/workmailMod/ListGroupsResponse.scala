@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGroupsResponse extends StObject {
   
   /**
     * The overview of groups for an organization.
     */
-  var Groups: js.UndefOr[typings.awsSdk.workmailMod.Groups] = js.native
+  var Groups: js.UndefOr[typings.awsSdk.workmailMod.Groups] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. The value is "null" when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.workmailMod.NextToken] = js.undefined
 }
 object ListGroupsResponse {
   

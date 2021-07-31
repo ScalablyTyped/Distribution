@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportResourcesRequest extends StObject {
   
   /** The content structure in the source location. If not specified, the server treats the input source files as BUNDLE. */
-  var contentStructure: js.UndefOr[String] = js.native
+  var contentStructure: js.UndefOr[String] = js.undefined
   
   /**
     * Cloud Storage source data location and import configuration. The Healthcare Service Agent account requires the `roles/storage.objectAdmin` role on the Cloud Storage location. Each
     * Cloud Storage object should be a text file that contains the format specified in ContentStructure.
     */
-  var gcsSource: js.UndefOr[GoogleCloudHealthcareV1FhirGcsSource] = js.native
+  var gcsSource: js.UndefOr[GoogleCloudHealthcareV1FhirGcsSource] = js.undefined
 }
 object ImportResourcesRequest {
   

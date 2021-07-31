@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the {@link Text} of a {@link TextFrame} .
   * @see TextFrame
   */
-@js.native
-trait XTextFrame extends XTextContent {
+trait XTextFrame
+  extends StObject
+     with XTextContent {
   
   /** @returns the text within this frame. The returned interface belongs to an object which implements the service {@link Text} . */
-  val Text: XText = js.native
+  val Text: XText
   
   /** @returns the text within this frame. The returned interface belongs to an object which implements the service {@link Text} . */
-  def getText(): XText = js.native
+  def getText(): XText
 }
 object XTextFrame {
   

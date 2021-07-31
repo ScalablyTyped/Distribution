@@ -2,7 +2,6 @@ package typings.byteRange
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,12 +11,14 @@ object mod {
     *
     * @param bytes Number of bytes to return the integer range for. Must be a positive integer.
     */
+  @scala.inline
+  def apply(bytes: Double): ByteRange = ^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any]).asInstanceOf[ByteRange]
+  @scala.inline
+  def apply(bytes: Double, options: Options): ByteRange = (^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ByteRange]
+  
   @JSImport("byte-range", JSImport.Namespace)
   @js.native
-  def apply(bytes: Double): ByteRange = js.native
-  @JSImport("byte-range", JSImport.Namespace)
-  @js.native
-  def apply(bytes: Double, options: Options): ByteRange = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Precomputed byte range for an signed 16 bit integer.
@@ -63,13 +64,12 @@ object mod {
   
   type ByteRange = js.Tuple2[Double, Double]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @default false
       */
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

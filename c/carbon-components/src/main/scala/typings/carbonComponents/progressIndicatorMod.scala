@@ -4,14 +4,15 @@ import typings.carbonComponents.anon.Element
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressIndicatorMod {
   
   @JSImport("carbon-components/components/progress-indicator/progress-indicator", JSImport.Default)
   @js.native
-  class default protected () extends ProgressIndicator {
+  class default protected ()
+    extends StObject
+       with ProgressIndicator {
     def this(element: js.Any, options: js.Any) = this()
   }
   object default {

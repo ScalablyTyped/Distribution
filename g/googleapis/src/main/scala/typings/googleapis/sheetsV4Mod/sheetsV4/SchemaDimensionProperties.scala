@@ -2,34 +2,32 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties about a dimension.
   */
-@js.native
 trait SchemaDimensionProperties extends StObject {
   
   /**
     * The developer metadata associated with a single row or column.
     */
-  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.undefined
   
   /**
     * True if this dimension is being filtered. This field is read-only.
     */
-  var hiddenByFilter: js.UndefOr[Boolean] = js.native
+  var hiddenByFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if this dimension is explicitly hidden.
     */
-  var hiddenByUser: js.UndefOr[Boolean] = js.native
+  var hiddenByUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The height (if a row) or width (if a column) of the dimension in pixels.
     */
-  var pixelSize: js.UndefOr[Double] = js.native
+  var pixelSize: js.UndefOr[Double] = js.undefined
 }
 object SchemaDimensionProperties {
   

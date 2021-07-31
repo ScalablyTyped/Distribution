@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a FileDescriptorSet. */
-@js.native
 trait IFileDescriptorSet extends StObject {
   
   /** FileDescriptorSet file */
-  var file: js.UndefOr[js.Array[IFileDescriptorProto] | Null] = js.native
+  var file: js.UndefOr[js.Array[IFileDescriptorProto] | Null] = js.undefined
 }
 object IFileDescriptorSet {
   

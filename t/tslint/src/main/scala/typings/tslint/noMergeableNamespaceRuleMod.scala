@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noMergeableNamespaceRuleMod {
@@ -22,9 +21,8 @@ object noMergeableNamespaceRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/noMergeableNamespaceRule", "Rule.failureStringFactory")
-    @js.native
-    def failureStringFactory(name: String, seenBeforeLine: Double): String = js.native
+    @scala.inline
+    def failureStringFactory(name: String, seenBeforeLine: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("failureStringFactory")(name.asInstanceOf[js.Any], seenBeforeLine.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noMergeableNamespaceRule", "Rule.metadata")
     @js.native

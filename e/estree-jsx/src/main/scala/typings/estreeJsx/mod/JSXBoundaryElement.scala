@@ -3,13 +3,13 @@ package typings.estreeJsx.mod
 import typings.estree.mod.BaseNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JSXBoundaryElement extends BaseNode {
+trait JSXBoundaryElement
+  extends StObject
+     with BaseNode {
   
-  var name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName = js.native
+  var name: JSXIdentifier | JSXMemberExpression | JSXNamespacedName
 }
 object JSXBoundaryElement {
   

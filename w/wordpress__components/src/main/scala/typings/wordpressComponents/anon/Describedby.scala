@@ -2,17 +2,15 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Describedby extends StObject {
   
   /**
     * If this property is added, it will be added to the modal content
     * div as aria-describedby.
     */
-  var describedby: js.UndefOr[String] = js.native
+  var describedby: js.UndefOr[String] = js.undefined
   
   /**
     * If this property is added, it will be added to the modal content
@@ -20,7 +18,7 @@ trait Describedby extends StObject {
     * modal is visually labelled.
     * @defaultValue "modal-heading"
     */
-  var labelledby: js.UndefOr[String] = js.native
+  var labelledby: js.UndefOr[String] = js.undefined
 }
 object Describedby {
   

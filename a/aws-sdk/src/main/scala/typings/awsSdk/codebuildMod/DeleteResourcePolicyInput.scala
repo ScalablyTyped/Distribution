@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourcePolicyInput extends StObject {
   
   /**
     *  The ARN of the resource that is associated with the resource policy. 
     */
-  var resourceArn: NonEmptyString = js.native
+  var resourceArn: NonEmptyString
 }
 object DeleteResourcePolicyInput {
   

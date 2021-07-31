@@ -9,7 +9,6 @@ import typings.reactSelect.typesMod.MenuPlacement
 import typings.reactSelect.typesMod.MenuPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSelectStrings {
@@ -25,7 +24,9 @@ object reactSelectStrings {
   def SelectComponentsProps: SelectComponentsProps = "SelectComponentsProps".asInstanceOf[SelectComponentsProps]
   
   @js.native
-  sealed trait absolute extends MenuPosition
+  sealed trait absolute
+    extends StObject
+       with MenuPosition
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   
@@ -35,52 +36,72 @@ object reactSelectStrings {
   def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait auto extends MenuPlacement
+  sealed trait auto
+    extends StObject
+       with MenuPlacement
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends MenuPlacement
+  sealed trait bottom
+    extends StObject
+       with MenuPlacement
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait clear extends ActionTypes
+  sealed trait clear
+    extends StObject
+       with ActionTypes
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait `create-option` extends ActionTypes
+  sealed trait `create-option`
+    extends StObject
+       with ActionTypes
   @scala.inline
   def `create-option`: `create-option` = "create-option".asInstanceOf[`create-option`]
   
   @js.native
-  sealed trait `deselect-option` extends ActionTypes
+  sealed trait `deselect-option`
+    extends StObject
+       with ActionTypes
   @scala.inline
   def `deselect-option`: `deselect-option` = "deselect-option".asInstanceOf[`deselect-option`]
   
   @js.native
-  sealed trait down extends FocusDirection
+  sealed trait down
+    extends StObject
+       with FocusDirection
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait exited extends TransitionState
+  sealed trait exited
+    extends StObject
+       with TransitionState
   @scala.inline
   def exited: exited = "exited".asInstanceOf[exited]
   
   @js.native
-  sealed trait exiting extends TransitionState
+  sealed trait exiting
+    extends StObject
+       with TransitionState
   @scala.inline
   def exiting: exiting = "exiting".asInstanceOf[exiting]
   
   @js.native
-  sealed trait first extends FocusDirection
+  sealed trait first
+    extends StObject
+       with FocusDirection
   @scala.inline
   def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait fixed extends MenuPosition
+  sealed trait fixed
+    extends StObject
+       with MenuPosition
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
@@ -95,12 +116,16 @@ object reactSelectStrings {
   def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait `input-blur` extends InputActionTypes
+  sealed trait `input-blur`
+    extends StObject
+       with InputActionTypes
   @scala.inline
   def `input-blur`: `input-blur` = "input-blur".asInstanceOf[`input-blur`]
   
   @js.native
-  sealed trait `input-change` extends InputActionTypes
+  sealed trait `input-change`
+    extends StObject
+       with InputActionTypes
   @scala.inline
   def `input-change`: `input-change` = "input-change".asInstanceOf[`input-change`]
   
@@ -110,7 +135,9 @@ object reactSelectStrings {
   def inputValue: inputValue = "inputValue".asInstanceOf[inputValue]
   
   @js.native
-  sealed trait last extends FocusDirection
+  sealed trait last
+    extends StObject
+       with FocusDirection
   @scala.inline
   def last: last = "last".asInstanceOf[last]
   
@@ -120,12 +147,16 @@ object reactSelectStrings {
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
-  sealed trait menu extends FormatOptionLabelContext
+  sealed trait menu
+    extends StObject
+       with FormatOptionLabelContext
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait `menu-close` extends InputActionTypes
+  sealed trait `menu-close`
+    extends StObject
+       with InputActionTypes
   @scala.inline
   def `menu-close`: `menu-close` = "menu-close".asInstanceOf[`menu-close`]
   
@@ -165,17 +196,23 @@ object reactSelectStrings {
   def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait pagedown extends FocusDirection
+  sealed trait pagedown
+    extends StObject
+       with FocusDirection
   @scala.inline
   def pagedown: pagedown = "pagedown".asInstanceOf[pagedown]
   
   @js.native
-  sealed trait pageup extends FocusDirection
+  sealed trait pageup
+    extends StObject
+       with FocusDirection
   @scala.inline
   def pageup: pageup = "pageup".asInstanceOf[pageup]
   
   @js.native
-  sealed trait `pop-value` extends ActionTypes
+  sealed trait `pop-value`
+    extends StObject
+       with ActionTypes
   @scala.inline
   def `pop-value`: `pop-value` = "pop-value".asInstanceOf[`pop-value`]
   
@@ -185,18 +222,23 @@ object reactSelectStrings {
   def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait `remove-value` extends ActionTypes
+  sealed trait `remove-value`
+    extends StObject
+       with ActionTypes
   @scala.inline
   def `remove-value`: `remove-value` = "remove-value".asInstanceOf[`remove-value`]
   
   @js.native
-  sealed trait `select-option` extends ActionTypes
+  sealed trait `select-option`
+    extends StObject
+       with ActionTypes
   @scala.inline
   def `select-option`: `select-option` = "select-option".asInstanceOf[`select-option`]
   
   @js.native
   sealed trait `set-value`
-    extends ActionTypes
+    extends StObject
+       with ActionTypes
        with InputActionTypes
   @scala.inline
   def `set-value`: `set-value` = "set-value".asInstanceOf[`set-value`]
@@ -207,17 +249,23 @@ object reactSelectStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait top extends MenuPlacement
+  sealed trait top
+    extends StObject
+       with MenuPlacement
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait up extends FocusDirection
+  sealed trait up
+    extends StObject
+       with FocusDirection
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait value extends FormatOptionLabelContext
+  sealed trait value
+    extends StObject
+       with FormatOptionLabelContext
   @scala.inline
   def value: value = "value".asInstanceOf[value]
 }

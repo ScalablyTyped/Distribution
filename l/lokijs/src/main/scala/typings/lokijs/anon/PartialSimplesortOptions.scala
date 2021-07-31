@@ -2,20 +2,18 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.SimplesortOptions> */
-@js.native
 trait PartialSimplesortOptions extends StObject {
   
-  var desc: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[Boolean] = js.undefined
   
-  var disableIndexIntersect: js.UndefOr[Boolean] = js.native
+  var disableIndexIntersect: js.UndefOr[Boolean] = js.undefined
   
-  var forceIndexIntersect: js.UndefOr[Boolean] = js.native
+  var forceIndexIntersect: js.UndefOr[Boolean] = js.undefined
   
-  var useJavascriptSorting: js.UndefOr[Boolean] = js.native
+  var useJavascriptSorting: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSimplesortOptions {
   

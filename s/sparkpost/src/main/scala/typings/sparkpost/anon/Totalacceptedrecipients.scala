@@ -2,17 +2,15 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Totalacceptedrecipients extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var total_accepted_recipients: Double = js.native
+  var total_accepted_recipients: Double
   
-  var total_rejected_recipients: Double = js.native
+  var total_rejected_recipients: Double
 }
 object Totalacceptedrecipients {
   

@@ -3,17 +3,15 @@ package typings.betterScroll.mod
 import typings.betterScroll.anon.Fn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EaseOption extends StObject {
   
-  var bounce: js.UndefOr[Fn] = js.native
+  var bounce: js.UndefOr[Fn] = js.undefined
   
-  var swipe: js.UndefOr[Fn] = js.native
+  var swipe: js.UndefOr[Fn] = js.undefined
   
-  var swipeBounce: js.UndefOr[Fn] = js.native
+  var swipeBounce: js.UndefOr[Fn] = js.undefined
 }
 object EaseOption {
   

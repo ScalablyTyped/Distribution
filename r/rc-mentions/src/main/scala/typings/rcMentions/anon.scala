@@ -2,28 +2,26 @@ package typings.rcMentions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<rc-mentions.rc-mentions/es/Mentions.MentionsState> */
-  @js.native
   trait PartialMentionsState extends StObject {
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var isFocus: js.UndefOr[Boolean] = js.native
+    var isFocus: js.UndefOr[Boolean] = js.undefined
     
-    var measureLocation: js.UndefOr[Double] = js.native
+    var measureLocation: js.UndefOr[Double] = js.undefined
     
-    var measurePrefix: js.UndefOr[String] = js.native
+    var measurePrefix: js.UndefOr[String] = js.undefined
     
-    var measureText: js.UndefOr[String | Null] = js.native
+    var measureText: js.UndefOr[String | Null] = js.undefined
     
-    var measuring: js.UndefOr[Boolean] = js.native
+    var measuring: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PartialMentionsState {
     
@@ -83,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SelectionLocation extends StObject {
     
-    var selectionLocation: Double = js.native
+    var selectionLocation: Double
     
-    var text: String = js.native
+    var text: String
   }
   object SelectionLocation {
     

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgMapBackgroundContent
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,29 +15,29 @@ trait IgMapBackgroundContent
   /**
     * Gets or sets the bing maps url
     */
-  var bingUrl: js.UndefOr[String] = js.native
+  var bingUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the type of the imagery.
     */
-  var imagerySet: js.UndefOr[String] = js.native
+  var imagerySet: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the key.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the parameter.
     */
-  var parameter: js.UndefOr[String] = js.native
+  var parameter: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the map tile image uri.
     *                 For Bing Maps this is populated by bing imagery.
     *                 For Open Street Map this option can accept custom URL for the tiles. Default is: 'tile.openstreetmap.org/{Z}/{X}/{Y}.png'. No protocol set means that 'http://' or 'https://' will be prepended automatically depending on the hosting site protocol. {Z} - denotes tile zoom, {X} - denotes tile horizontal position, {Y} - denotes tile vertical position.
     */
-  var tilePath: js.UndefOr[String] = js.native
+  var tilePath: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the background content for the map.
@@ -48,7 +47,7 @@ trait IgMapBackgroundContent
     * "cloudMade"  Specify the background content to display CloudMade geographic data.
     * "bing"  Specify the background content to BingMaps geographic data.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IgMapBackgroundContent {
   

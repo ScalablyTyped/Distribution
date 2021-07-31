@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebuggerResource extends StObject {
   
-  var debuggees: DebuggeesResource = js.native
+  var debuggees: DebuggeesResource
 }
 object DebuggerResource {
   

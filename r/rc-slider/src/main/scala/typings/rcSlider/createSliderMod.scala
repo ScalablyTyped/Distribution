@@ -6,12 +6,14 @@ import typings.rcSlider.interfaceMod.GenericSliderState
 import typings.react.mod.ComponentClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createSliderMod {
   
-  @JSImport("rc-slider/lib/common/createSlider", JSImport.Default)
+  @JSImport("rc-slider/lib/common/createSlider", JSImport.Namespace)
   @js.native
-  def default[Props /* <: GenericSliderProps */, State /* <: GenericSliderState */](Component: GenericSlider[Props, State]): ComponentClass[Props, State] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Props /* <: GenericSliderProps */, State /* <: GenericSliderState */](Component: GenericSlider[Props, State]): ComponentClass[Props, State] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Props, State]]
 }

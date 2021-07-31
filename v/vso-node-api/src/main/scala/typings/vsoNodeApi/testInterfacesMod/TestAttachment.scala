@@ -3,23 +3,21 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestAttachment extends StObject {
   
-  var attachmentType: AttachmentType = js.native
+  var attachmentType: AttachmentType
   
-  var comment: String = js.native
+  var comment: String
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var url: String = js.native
+  var url: String
 }
 object TestAttachment {
   

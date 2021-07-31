@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.CompressVertices
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GroundPrimitive")
@@ -49,18 +48,19 @@ class GroundPrimitive protected () extends StObject {
 }
 object GroundPrimitive {
   
-  /* static member */
-  @JSImport("cesium", "GroundPrimitive.initializeTerrainHeights")
+  @JSImport("cesium", "GroundPrimitive")
   @js.native
-  def initializeTerrainHeights(): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "GroundPrimitive.isSupported")
-  @js.native
-  def isSupported(scene: Scene): Boolean = js.native
+  @scala.inline
+  def initializeTerrainHeights(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeTerrainHeights")().asInstanceOf[js.Promise[js.Any]]
   
   /* static member */
-  @JSImport("cesium", "GroundPrimitive.supportsMaterials")
-  @js.native
-  def supportsMaterials(scene: Scene): Boolean = js.native
+  @scala.inline
+  def isSupported(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /* static member */
+  @scala.inline
+  def supportsMaterials(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsMaterials")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

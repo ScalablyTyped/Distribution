@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used with {@link XNativeNumberSupplier.convertToXmlAttributes()} and {@link XNativeNumberSupplier.convertFromXmlAttributes()}
   * @since OOo 1.1.2
   */
-@js.native
 trait NativeNumberXmlAttributes extends StObject {
   
-  var Format: String = js.native
+  var Format: String
   
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** The type of the number string, for example, "short" or "medium" or "long". */
-  var Style: String = js.native
+  var Style: String
 }
 object NativeNumberXmlAttributes {
   

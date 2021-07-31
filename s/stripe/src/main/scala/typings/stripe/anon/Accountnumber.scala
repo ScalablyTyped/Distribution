@@ -2,31 +2,29 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accountnumber extends StObject {
   
   /**
     * Account number to transfer funds to.
     */
-  var account_number: String = js.native
+  var account_number: String
   
   /**
     * Name of the bank associated with the routing number.
     */
-  var bank_name: String = js.native
+  var bank_name: String
   
   /**
     * Routing transit number for the bank account to transfer funds to.
     */
-  var routing_number: String = js.native
+  var routing_number: String
   
   /**
     * SWIFT code of the bank associated with the routing number.
     */
-  var swift_code: String = js.native
+  var swift_code: String
 }
 object Accountnumber {
   

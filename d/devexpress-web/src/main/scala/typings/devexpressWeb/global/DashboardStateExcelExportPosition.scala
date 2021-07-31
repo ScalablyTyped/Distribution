@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("DashboardStateExcelExportPosition")
 @js.native
 class DashboardStateExcelExportPosition ()
-  extends typings.devexpressWeb.DashboardStateExcelExportPosition
+  extends StObject
+     with typings.devexpressWeb.DashboardStateExcelExportPosition
 object DashboardStateExcelExportPosition {
   
   /**

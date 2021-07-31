@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureSummary extends StObject {
   
   /**
     * The worlds that failed.
     */
-  var failures: js.UndefOr[WorldFailures] = js.native
+  var failures: js.UndefOr[WorldFailures] = js.undefined
   
   /**
     * The total number of failures.
     */
-  var totalFailureCount: js.UndefOr[Integer] = js.native
+  var totalFailureCount: js.UndefOr[Integer] = js.undefined
 }
 object FailureSummary {
   

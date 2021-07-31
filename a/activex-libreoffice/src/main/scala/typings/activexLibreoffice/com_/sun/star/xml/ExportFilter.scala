@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link com.sun.star.xml.sax.XDocumentHandler} calls.
   * @since OOo 1.1.2
   */
-@js.native
 trait ExportFilter
-  extends XDocumentHandler
+  extends StObject
+     with XDocumentHandler
      with XExportFilter
 object ExportFilter {
   

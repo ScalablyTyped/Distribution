@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HideShareMenuOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[HideShareMenuCompleteCallback] = js.native
+  var complete: js.UndefOr[HideShareMenuCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[HideShareMenuFailCallback] = js.native
+  var fail: js.UndefOr[HideShareMenuFailCallback] = js.undefined
   
   /** 本接口为 Beta 版本，暂只在 Android 平台支持。需要隐藏的转发按钮名称列表，默认['shareAppMessage', 'shareTimeline']。按钮名称合法值包含 "shareAppMessage"、"shareTimeline" 两种
     *
     * 最低基础库： `2.11.3` */
-  var menus: js.UndefOr[js.Array[String]] = js.native
+  var menus: js.UndefOr[js.Array[String]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[HideShareMenuSuccessCallback] = js.native
+  var success: js.UndefOr[HideShareMenuSuccessCallback] = js.undefined
 }
 object HideShareMenuOption {
   

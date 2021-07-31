@@ -12,7 +12,7 @@ React component for messenger checkbox plugin
 | Keywords           | bot, chat, checkbox, component, facebook, messenger, react |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2246 |
+| # downloads        | 3635 |
 | # stars            | 0 |
 
 ## Links

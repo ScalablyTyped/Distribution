@@ -2,46 +2,44 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendCommandResult extends StObject {
   
   /**
     * Contains the details of the aborted transaction.
     */
-  var AbortTransaction: js.UndefOr[AbortTransactionResult] = js.native
+  var AbortTransaction: js.UndefOr[AbortTransactionResult] = js.undefined
   
   /**
     * Contains the details of the committed transaction.
     */
-  var CommitTransaction: js.UndefOr[CommitTransactionResult] = js.native
+  var CommitTransaction: js.UndefOr[CommitTransactionResult] = js.undefined
   
   /**
     * Contains the details of the ended session.
     */
-  var EndSession: js.UndefOr[EndSessionResult] = js.native
+  var EndSession: js.UndefOr[EndSessionResult] = js.undefined
   
   /**
     * Contains the details of the executed statement.
     */
-  var ExecuteStatement: js.UndefOr[ExecuteStatementResult] = js.native
+  var ExecuteStatement: js.UndefOr[ExecuteStatementResult] = js.undefined
   
   /**
     * Contains the details of the fetched page.
     */
-  var FetchPage: js.UndefOr[FetchPageResult] = js.native
+  var FetchPage: js.UndefOr[FetchPageResult] = js.undefined
   
   /**
     * Contains the details of the started session that includes a session token. This SessionToken is required for every subsequent command that is issued during the current session.
     */
-  var StartSession: js.UndefOr[StartSessionResult] = js.native
+  var StartSession: js.UndefOr[StartSessionResult] = js.undefined
   
   /**
     * Contains the details of the started transaction.
     */
-  var StartTransaction: js.UndefOr[StartTransactionResult] = js.native
+  var StartTransaction: js.UndefOr[StartTransactionResult] = js.undefined
 }
 object SendCommandResult {
   

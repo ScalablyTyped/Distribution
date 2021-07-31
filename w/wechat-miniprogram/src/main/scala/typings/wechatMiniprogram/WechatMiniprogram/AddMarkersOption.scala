@@ -2,31 +2,29 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddMarkersOption extends StObject {
   
   /** 是否先清空地图上所有 marker */
-  var clear: js.UndefOr[Boolean] = js.native
+  var clear: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[AddMarkersCompleteCallback] = js.native
+  var complete: js.UndefOr[AddMarkersCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[AddMarkersFailCallback] = js.native
+  var fail: js.UndefOr[AddMarkersFailCallback] = js.undefined
   
   /** 同传入 map 组件的 marker 属性 */
-  var markers: js.Array[_] = js.native
+  var markers: js.Array[js.Any]
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[AddMarkersSuccessCallback] = js.native
+  var success: js.UndefOr[AddMarkersSuccessCallback] = js.undefined
 }
 object AddMarkersOption {
   
   @scala.inline
-  def apply(markers: js.Array[_]): AddMarkersOption = {
+  def apply(markers: js.Array[js.Any]): AddMarkersOption = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddMarkersOption]
   }
@@ -53,7 +51,7 @@ object AddMarkersOption {
     def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setMarkers(value: js.Array[_]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))

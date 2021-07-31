@@ -3,53 +3,45 @@ package typings.ejson
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ejson", "clone")
+  @JSImport("ejson", JSImport.Namespace)
   @js.native
-  def clone_[T](obj: T): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ejson", "equals")
-  @js.native
-  def equals_(a: js.Any, b: js.Any): Boolean = js.native
-  @JSImport("ejson", "equals")
-  @js.native
-  def equals_(a: js.Any, b: js.Any, options: CloneOptions): Boolean = js.native
+  @scala.inline
+  def clone_[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("ejson", "fromJSONValue")
-  @js.native
-  def fromJSONValue(obj: String): js.Any = js.native
+  @scala.inline
+  def equals_(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def equals_(a: js.Any, b: js.Any, options: CloneOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ejson", "isBinary")
-  @js.native
-  def isBinary(value: js.Any): Boolean = js.native
+  @scala.inline
+  def fromJSONValue(obj: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSONValue")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ejson", "newBinary")
-  @js.native
-  def newBinary(len: Double): Uint8Array = js.native
+  @scala.inline
+  def isBinary(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinary")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ejson", "parse")
-  @js.native
-  def parse(str: String): js.Any = js.native
+  @scala.inline
+  def newBinary(len: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("newBinary")(len.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("ejson", "stringify")
-  @js.native
-  def stringify(obj: js.Any): String = js.native
-  @JSImport("ejson", "stringify")
-  @js.native
-  def stringify(obj: js.Any, options: StringifyOptions): String = js.native
+  @scala.inline
+  def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ejson", "toJSONValue")
-  @js.native
-  def toJSONValue(obj: js.Any): String = js.native
+  @scala.inline
+  def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(obj: js.Any, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def toJSONValue(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSONValue")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait CloneOptions extends StObject {
     
-    var keyOrderSensitive: Boolean = js.native
+    var keyOrderSensitive: Boolean
   }
   object CloneOptions {
     
@@ -67,12 +59,11 @@ object mod {
     }
   }
   
-  @js.native
   trait StringifyOptions extends StObject {
     
-    var canonical: Boolean = js.native
+    var canonical: Boolean
     
-    var indent: Boolean | Double | String = js.native
+    var indent: Boolean | Double | String
   }
   object StringifyOptions {
     

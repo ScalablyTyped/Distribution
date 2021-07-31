@@ -2,41 +2,39 @@ package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The JSON template for an Application resource.
   */
-@js.native
 trait SchemaApplication extends StObject {
   
   /**
     * Etag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The application&#39;s ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a DataTransfer Application Resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The application&#39;s name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of all possible transfer parameters for this application. These
     * parameters can be used to select the data of the user in this application
     * to be transfered.
     */
-  var transferParams: js.UndefOr[js.Array[SchemaApplicationTransferParam]] = js.native
+  var transferParams: js.UndefOr[js.Array[SchemaApplicationTransferParam]] = js.undefined
 }
 object SchemaApplication {
   

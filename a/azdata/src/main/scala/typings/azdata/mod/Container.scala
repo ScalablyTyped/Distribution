@@ -2,11 +2,12 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Container[TLayout, TItemLayout] extends Component {
+trait Container[TLayout, TItemLayout]
+  extends StObject
+     with Component {
   
   /**
     * Creates a child component and adds it to this container.

@@ -5,21 +5,21 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumericField extends Field {
+trait NumericField
+  extends StObject
+     with Field {
   
-  var decimalDigits: Double = js.native
+  var decimalDigits: Double
   
-  var decimalSymbol: String = js.native
+  var decimalSymbol: String
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var step: Double = js.native
+  var step: Double
 }
 object NumericField {
   

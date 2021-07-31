@@ -2,31 +2,29 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzeDocumentResponse extends StObject {
   
   /**
     * The version of the model used to analyze the document.
     */
-  var AnalyzeDocumentModelVersion: js.UndefOr[String] = js.native
+  var AnalyzeDocumentModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The items that are detected and analyzed by AnalyzeDocument.
     */
-  var Blocks: js.UndefOr[BlockList] = js.native
+  var Blocks: js.UndefOr[BlockList] = js.undefined
   
   /**
     * Metadata about the analyzed document. An example is the number of pages.
     */
-  var DocumentMetadata: js.UndefOr[typings.awsSdk.textractMod.DocumentMetadata] = js.native
+  var DocumentMetadata: js.UndefOr[typings.awsSdk.textractMod.DocumentMetadata] = js.undefined
   
   /**
     * Shows the results of the human in the loop evaluation.
     */
-  var HumanLoopActivationOutput: js.UndefOr[typings.awsSdk.textractMod.HumanLoopActivationOutput] = js.native
+  var HumanLoopActivationOutput: js.UndefOr[typings.awsSdk.textractMod.HumanLoopActivationOutput] = js.undefined
 }
 object AnalyzeDocumentResponse {
   

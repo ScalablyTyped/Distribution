@@ -2,34 +2,32 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Content of an item to be indexed and surfaced by Cloud Search.
   */
-@js.native
 trait SchemaItemContent extends StObject {
   
   /**
     * Upload reference ID of a previously uploaded content via write method.
     */
-  var contentDataRef: js.UndefOr[SchemaUploadItemRef] = js.native
+  var contentDataRef: js.UndefOr[SchemaUploadItemRef] = js.undefined
   
-  var contentFormat: js.UndefOr[String] = js.native
+  var contentFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Hashing info calculated and provided by the API client for content. Can
     * be used with the items.push method to calculate modified state. The
     * maximum length is 2048 characters.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * Content that is supplied inlined within the update method. The maximum
     * length is 102400 bytes (100 KiB).
     */
-  var inlineContent: js.UndefOr[String] = js.native
+  var inlineContent: js.UndefOr[String] = js.undefined
 }
 object SchemaItemContent {
   

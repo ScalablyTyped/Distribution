@@ -2,61 +2,59 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessPointDescription extends StObject {
   
   /**
     * The unique Amazon Resource Name (ARN) associated with the access point.
     */
-  var AccessPointArn: js.UndefOr[typings.awsSdk.efsMod.AccessPointArn] = js.native
+  var AccessPointArn: js.UndefOr[typings.awsSdk.efsMod.AccessPointArn] = js.undefined
   
   /**
     * The ID of the access point, assigned by Amazon EFS.
     */
-  var AccessPointId: js.UndefOr[typings.awsSdk.efsMod.AccessPointId] = js.native
+  var AccessPointId: js.UndefOr[typings.awsSdk.efsMod.AccessPointId] = js.undefined
   
   /**
     * The opaque string specified in the request to ensure idempotent creation.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.efsMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.efsMod.ClientToken] = js.undefined
   
   /**
     * The ID of the EFS file system that the access point applies to.
     */
-  var FileSystemId: js.UndefOr[typings.awsSdk.efsMod.FileSystemId] = js.native
+  var FileSystemId: js.UndefOr[typings.awsSdk.efsMod.FileSystemId] = js.undefined
   
   /**
     * Identifies the lifecycle phase of the access point.
     */
-  var LifeCycleState: js.UndefOr[typings.awsSdk.efsMod.LifeCycleState] = js.native
+  var LifeCycleState: js.UndefOr[typings.awsSdk.efsMod.LifeCycleState] = js.undefined
   
   /**
     * The name of the access point. This is the value of the Name tag.
     */
-  var Name: js.UndefOr[typings.awsSdk.efsMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.efsMod.Name] = js.undefined
   
   /**
     * Identified the AWS account that owns the access point resource.
     */
-  var OwnerId: js.UndefOr[AwsAccountId] = js.native
+  var OwnerId: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The full POSIX identity, including the user ID, group ID, and secondary group IDs on the access point that is used for all file operations by NFS clients using the access point.
     */
-  var PosixUser: js.UndefOr[typings.awsSdk.efsMod.PosixUser] = js.native
+  var PosixUser: js.UndefOr[typings.awsSdk.efsMod.PosixUser] = js.undefined
   
   /**
     * The directory on the Amazon EFS file system that the access point exposes as the root directory to NFS clients using the access point.
     */
-  var RootDirectory: js.UndefOr[typings.awsSdk.efsMod.RootDirectory] = js.native
+  var RootDirectory: js.UndefOr[typings.awsSdk.efsMod.RootDirectory] = js.undefined
   
   /**
     * The tags associated with the access point, presented as an array of Tag objects.
     */
-  var Tags: js.UndefOr[typings.awsSdk.efsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.efsMod.Tags] = js.undefined
 }
 object AccessPointDescription {
   

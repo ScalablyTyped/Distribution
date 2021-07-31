@@ -2,19 +2,17 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configurable extends StObject {
   
-  var configurable: js.UndefOr[Boolean] = js.native
+  var configurable: js.UndefOr[Boolean] = js.undefined
   
-  var multiple_mounts: js.UndefOr[Boolean] = js.native
+  var multiple_mounts: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var watchable: js.UndefOr[Boolean] = js.native
+  var watchable: js.UndefOr[Boolean] = js.undefined
 }
 object Configurable {
   

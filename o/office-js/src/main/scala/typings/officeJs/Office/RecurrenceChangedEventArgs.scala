@@ -3,10 +3,8 @@ package typings.officeJs.Office
 import typings.officeJs.officeJsStrings.olkRecurrenceChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurrenceChangedEventArgs extends StObject {
   
   /** 
@@ -14,21 +12,21 @@ trait RecurrenceChangedEventArgs extends StObject {
     * 
     * [Api set: Mailbox 1.7] 
     */ 
-  var recurrence: Recurrence = js.native
+  var recurrence: Recurrence
   
   /** 
     * Gets the type of the event. See `Office.EventType` for details. 
     * 
     * [Api set: Mailbox 1.7] 
     */ 
-  var `type`: olkRecurrenceChanged = js.native
+  var `type`: olkRecurrenceChanged
 }
 object RecurrenceChangedEventArgs {
   
   @scala.inline
-  def apply(recurrence: Recurrence, `type`: olkRecurrenceChanged): RecurrenceChangedEventArgs = {
+  def apply(recurrence: Recurrence): RecurrenceChangedEventArgs = {
     val __obj = js.Dynamic.literal(recurrence = recurrence.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("olkRecurrenceChanged")
     __obj.asInstanceOf[RecurrenceChangedEventArgs]
   }
   

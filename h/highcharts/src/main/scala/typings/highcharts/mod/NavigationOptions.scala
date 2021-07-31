@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional options to be merged
     * into all annotations.
     */
-  var annotationsOptions: js.UndefOr[AnnotationsOptions | NavigationAnnotationsOptions] = js.native
+  var annotationsOptions: js.UndefOr[AnnotationsOptions | NavigationAnnotationsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Bindings definitions for custom HTML buttons.
@@ -29,7 +27,7 @@ trait NavigationOptions extends StObject {
     *
     * - `end`: last event to be called after last step event
     */
-  var bindings: js.UndefOr[NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]] = js.native
+  var bindings: js.UndefOr[NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name where all
@@ -38,7 +36,7 @@ trait NavigationOptions extends StObject {
     *
     * Default value of versions < 7.0.4 `highcharts-bindings-wrapper`
     */
-  var bindingsClassName: js.UndefOr[String] = js.native
+  var bindingsClassName: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A collection of options for
@@ -47,26 +45,26 @@ trait NavigationOptions extends StObject {
     * In styled mode, the buttons are styled with the
     * `.highcharts-contextbutton` and `.highcharts-button-symbol` classes.
     */
-  var buttonOptions: js.UndefOr[NavigationButtonOptions] = js.native
+  var buttonOptions: js.UndefOr[NavigationButtonOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Events to communicate between Stock Tools and
     * custom GUI.
     */
-  var events: js.UndefOr[NavigationEventsOptions] = js.native
+  var events: js.UndefOr[NavigationEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
     * for icons. Change this to use icons from a different server.
     */
-  var iconsURL: js.UndefOr[String] = js.native
+  var iconsURL: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the hover state
     * of the individual items within the popup menu appearing by default when
     * the export icon is clicked. The menu items are rendered in HTML.
     */
-  var menuItemHoverStyle: js.UndefOr[CSSObject] = js.native
+  var menuItemHoverStyle: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the individual
@@ -74,14 +72,14 @@ trait NavigationOptions extends StObject {
     * clicked. The menu items are rendered in HTML. Font size defaults to
     * `11px` on desktop and `14px` on touch devices.
     */
-  var menuItemStyle: js.UndefOr[CSSObject] = js.native
+  var menuItemStyle: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the popup menu
     * appearing by default when the export icon is clicked. This menu is
     * rendered in HTML.
     */
-  var menuStyle: js.UndefOr[CSSObject] = js.native
+  var menuStyle: js.UndefOr[CSSObject] = js.undefined
 }
 object NavigationOptions {
   

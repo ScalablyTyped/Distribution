@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is not to be used anymore
   * @deprecated Deprecated
   */
-@js.native
-trait XDatabaseAccessListener extends XEventListener {
+trait XDatabaseAccessListener
+  extends StObject
+     with XEventListener {
   
-  def approveConnectionClosing(event: EventObject): Boolean = js.native
+  def approveConnectionClosing(event: EventObject): Boolean
   
-  def connectionChanged(event: EventObject): Unit = js.native
+  def connectionChanged(event: EventObject): Unit
   
-  def connectionClosing(event: EventObject): Unit = js.native
+  def connectionClosing(event: EventObject): Unit
 }
 object XDatabaseAccessListener {
   

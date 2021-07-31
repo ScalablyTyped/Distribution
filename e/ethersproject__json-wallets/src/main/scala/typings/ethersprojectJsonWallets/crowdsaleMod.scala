@@ -6,10 +6,13 @@ import typings.ethersprojectBytes.mod.Bytes
 import typings.ethersprojectProperties.mod.Description
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crowdsaleMod {
+  
+  @JSImport("@ethersproject/json-wallets/lib/crowdsale", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/json-wallets/lib/crowdsale", "CrowdsaleAccount")
   @js.native
@@ -18,32 +21,35 @@ object crowdsaleMod {
        with ExternallyOwnedAccount {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'address' | 'privateKey' | '_isCrowdsaleAccount' ]: @ethersproject/json-wallets.@ethersproject/json-wallets/lib/crowdsale._CrowdsaleAccount[K]}
-      */ typings.ethersprojectJsonWallets.ethersprojectJsonWalletsStrings.CrowdsaleAccount with TopLevel[_CrowdsaleAccount]) = this()
+      */ typings.ethersprojectJsonWallets.ethersprojectJsonWalletsStrings.CrowdsaleAccount & TopLevel[_CrowdsaleAccount]) = this()
     
     val _isCrowdsaleAccount: Boolean = js.native
+    
+    /* CompleteClass */
+    override val address: String = js.native
     
     def isCrowdsaleAccount(value: js.Any): /* is @ethersproject/json-wallets.@ethersproject/json-wallets/lib/crowdsale.CrowdsaleAccount */ Boolean = js.native
     
     val mnemonic: js.UndefOr[String] = js.native
     
     val path: js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override val privateKey: String = js.native
   }
   
-  @JSImport("@ethersproject/json-wallets/lib/crowdsale", "decrypt")
-  @js.native
-  def decrypt(json: String, password: String): ExternallyOwnedAccount = js.native
-  @JSImport("@ethersproject/json-wallets/lib/crowdsale", "decrypt")
-  @js.native
-  def decrypt(json: String, password: Bytes): ExternallyOwnedAccount = js.native
+  @scala.inline
+  def decrypt(json: String, password: String): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
+  @scala.inline
+  def decrypt(json: String, password: Bytes): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
   
-  @js.native
   trait _CrowdsaleAccount extends StObject {
     
-    var _isCrowdsaleAccount: Boolean = js.native
+    var _isCrowdsaleAccount: Boolean
     
-    var address: String = js.native
+    var address: String
     
-    var privateKey: String = js.native
+    var privateKey: String
   }
   object _CrowdsaleAccount {
     

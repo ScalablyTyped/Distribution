@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchDefaultExportNameRuleMod {
@@ -22,9 +21,8 @@ object matchDefaultExportNameRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(importName: String, exportName: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING(importName: String, exportName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(importName.asInstanceOf[js.Any], exportName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/matchDefaultExportNameRule", "Rule.metadata")
     @js.native

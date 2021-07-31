@@ -11,7 +11,6 @@ import typings.nodegit.nodegitNumbers.`8`
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blameMod {
@@ -39,6 +38,10 @@ object blameMod {
   /* static members */
   object Blame {
     
+    @JSImport("nodegit/blame", "Blame")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Retrieve the blame of a file
       *
@@ -46,20 +49,17 @@ object blameMod {
       * @param path - to the file to get the blame of
       * @param [options] - Options for the blame
       */
-    @JSImport("nodegit/blame", "Blame.file")
-    @js.native
-    def file(repo: Repository, path: String): js.Promise[Blame] = js.native
-    @JSImport("nodegit/blame", "Blame.file")
-    @js.native
-    def file(repo: Repository, path: String, options: BlameOptions): js.Promise[Blame] = js.native
+    @scala.inline
+    def file(repo: Repository, path: String): js.Promise[Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blame]]
+    @scala.inline
+    def file(repo: Repository, path: String, options: BlameOptions): js.Promise[Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blame]]
     
     /**
       * @param opts - The git_blame_options struct to initialize
       * @param version - Version of struct; pass GIT_BLAME_OPTIONS_VERSION
       */
-    @JSImport("nodegit/blame", "Blame.initOptions")
-    @js.native
-    def initOptions(opts: BlameOptions, version: Double): Double = js.native
+    @scala.inline
+    def initOptions(opts: BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`

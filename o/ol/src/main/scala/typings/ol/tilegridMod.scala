@@ -8,141 +8,89 @@ import typings.ol.tilecoordMod.TileCoord
 import typings.ol.tilegridTileGridMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilegridMod {
   
-  @JSImport("ol/tilegrid", "createForExtent")
+  @JSImport("ol/tilegrid", JSImport.Namespace)
   @js.native
-  def createForExtent(extent: Extent): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(
-    extent: Extent,
-    opt_maxZoom: js.UndefOr[scala.Nothing],
-    opt_tileSize: js.UndefOr[scala.Nothing],
-    opt_corner: Corner
-  ): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Double): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Double, opt_corner: Corner): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Size): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Size, opt_corner: Corner): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: Double): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: js.UndefOr[scala.Nothing], opt_corner: Corner): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Double): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Double, opt_corner: Corner): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size): default = js.native
-  @JSImport("ol/tilegrid", "createForExtent")
-  @js.native
-  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size, opt_corner: Corner): default = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(
-    projection: ProjectionLike,
-    opt_maxZoom: js.UndefOr[scala.Nothing],
-    opt_tileSize: js.UndefOr[scala.Nothing],
-    opt_corner: Corner
-  ): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Double): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(
-    projection: ProjectionLike,
-    opt_maxZoom: js.UndefOr[scala.Nothing],
-    opt_tileSize: Double,
-    opt_corner: Corner
-  ): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: js.UndefOr[scala.Nothing], opt_tileSize: Size): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(
-    projection: ProjectionLike,
-    opt_maxZoom: js.UndefOr[scala.Nothing],
-    opt_tileSize: Size,
-    opt_corner: Corner
-  ): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(
-    projection: ProjectionLike,
-    opt_maxZoom: Double,
-    opt_tileSize: js.UndefOr[scala.Nothing],
-    opt_corner: Corner
-  ): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Double): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Double, opt_corner: Corner): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Size): default = js.native
-  @JSImport("ol/tilegrid", "createForProjection")
-  @js.native
-  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Size, opt_corner: Corner): default = js.native
+  @scala.inline
+  def createForExtent(extent: Extent): default = ^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Double): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Double): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Double, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Unit, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Double, opt_tileSize: Size, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Unit, opt_tileSize: Double): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Unit, opt_tileSize: Double, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Unit, opt_tileSize: Unit, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Unit, opt_tileSize: Size): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForExtent(extent: Extent, opt_maxZoom: Unit, opt_tileSize: Size, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForExtent")(extent.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
   
-  @JSImport("ol/tilegrid", "createXYZ")
-  @js.native
-  def createXYZ(): default = js.native
-  @JSImport("ol/tilegrid", "createXYZ")
-  @js.native
-  def createXYZ(opt_options: XYZOptions): default = js.native
+  @scala.inline
+  def createForProjection(projection: ProjectionLike): default = ^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Double): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Double, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Unit, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Size): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Double, opt_tileSize: Size, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Unit, opt_tileSize: Double): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Unit, opt_tileSize: Double, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Unit, opt_tileSize: Unit, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Unit, opt_tileSize: Size): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createForProjection(projection: ProjectionLike, opt_maxZoom: Unit, opt_tileSize: Size, opt_corner: Corner): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createForProjection")(projection.asInstanceOf[js.Any], opt_maxZoom.asInstanceOf[js.Any], opt_tileSize.asInstanceOf[js.Any], opt_corner.asInstanceOf[js.Any])).asInstanceOf[default]
   
-  @JSImport("ol/tilegrid", "extentFromProjection")
-  @js.native
-  def extentFromProjection(projection: ProjectionLike): Extent = js.native
+  @scala.inline
+  def createXYZ(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")().asInstanceOf[default]
+  @scala.inline
+  def createXYZ(opt_options: XYZOptions): default = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")(opt_options.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  @JSImport("ol/tilegrid", "getForProjection")
-  @js.native
-  def getForProjection(projection: typings.ol.projectionMod.default): default = js.native
+  @scala.inline
+  def extentFromProjection(projection: ProjectionLike): Extent = ^.asInstanceOf[js.Dynamic].applyDynamic("extentFromProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Extent]
   
-  @JSImport("ol/tilegrid", "wrapX")
-  @js.native
-  def wrapX(tileGrid: default, tileCoord: TileCoord, projection: typings.ol.projectionMod.default): TileCoord = js.native
+  @scala.inline
+  def getForProjection(projection: typings.ol.projectionMod.default): default = ^.asInstanceOf[js.Dynamic].applyDynamic("getForProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  @js.native
+  @scala.inline
+  def wrapX(tileGrid: default, tileCoord: TileCoord, projection: typings.ol.projectionMod.default): TileCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapX")(tileGrid.asInstanceOf[js.Any], tileCoord.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[TileCoord]
+  
   trait XYZOptions extends StObject {
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var tileSize: js.UndefOr[Double | Size] = js.native
+    var tileSize: js.UndefOr[Double | Size] = js.undefined
   }
   object XYZOptions {
     

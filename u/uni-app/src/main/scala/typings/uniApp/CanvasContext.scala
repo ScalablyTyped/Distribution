@@ -19,7 +19,6 @@ import typings.uniApp.uniAppStrings.square
 import typings.uniApp.uniAppStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,108 +40,37 @@ trait CanvasContext extends StObject {
     * 根据控制点和半径绘制圆弧路径
     */
   def arcTo(): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: js.UndefOr[scala.Nothing],
-    x2: js.UndefOr[scala.Nothing],
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: js.UndefOr[scala.Nothing],
-    x2: js.UndefOr[scala.Nothing],
-    y2: Double
-  ): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: js.UndefOr[scala.Nothing],
-    x2: js.UndefOr[scala.Nothing],
-    y2: Double,
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: js.UndefOr[scala.Nothing],
-    x2: Double,
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: js.UndefOr[scala.Nothing],
-    x2: Double,
-    y2: Double,
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: Double): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: Double,
-    x2: js.UndefOr[scala.Nothing],
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: Double,
-    x2: js.UndefOr[scala.Nothing],
-    y2: Double,
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double): Unit = js.native
-  def arcTo(
-    x1: js.UndefOr[scala.Nothing],
-    y1: Double,
-    x2: Double,
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double): Unit = js.native
-  def arcTo(x1: js.UndefOr[scala.Nothing], y1: Double, x2: Double, y2: Double, radius: Double): Unit = js.native
   def arcTo(x1: Double): Unit = js.native
-  def arcTo(
-    x1: Double,
-    y1: js.UndefOr[scala.Nothing],
-    x2: js.UndefOr[scala.Nothing],
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: js.UndefOr[scala.Nothing], y2: Double): Unit = js.native
-  def arcTo(
-    x1: Double,
-    y1: js.UndefOr[scala.Nothing],
-    x2: js.UndefOr[scala.Nothing],
-    y2: Double,
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double): Unit = js.native
-  def arcTo(
-    x1: Double,
-    y1: js.UndefOr[scala.Nothing],
-    x2: Double,
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double): Unit = js.native
-  def arcTo(x1: Double, y1: js.UndefOr[scala.Nothing], x2: Double, y2: Double, radius: Double): Unit = js.native
   def arcTo(x1: Double, y1: Double): Unit = js.native
-  def arcTo(
-    x1: Double,
-    y1: Double,
-    x2: js.UndefOr[scala.Nothing],
-    y2: js.UndefOr[scala.Nothing],
-    radius: Double
-  ): Unit = js.native
-  def arcTo(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double): Unit = js.native
-  def arcTo(x1: Double, y1: Double, x2: js.UndefOr[scala.Nothing], y2: Double, radius: Double): Unit = js.native
   def arcTo(x1: Double, y1: Double, x2: Double): Unit = js.native
-  def arcTo(x1: Double, y1: Double, x2: Double, y2: js.UndefOr[scala.Nothing], radius: Double): Unit = js.native
   def arcTo(x1: Double, y1: Double, x2: Double, y2: Double): Unit = js.native
   def arcTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Double, x2: Double, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Double, x2: Unit, y2: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Double, x2: Unit, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Double, x2: Unit, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Double, y2: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Double, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Double, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Unit, y2: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Unit, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Double, y1: Unit, x2: Unit, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Double, y2: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Double, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Double, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Unit, y2: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Unit, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Double, x2: Unit, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Double, y2: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Double, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Double, y2: Unit, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Unit, y2: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Unit, y2: Double, radius: Double): Unit = js.native
+  def arcTo(x1: Unit, y1: Unit, x2: Unit, y2: Unit, radius: Double): Unit = js.native
   
   /**
     * 开始创建一个路径
@@ -165,26 +93,21 @@ trait CanvasContext extends StObject {
     * 清除画布上在该矩形区域内的内容
     */
   def clearRect(): Unit = js.native
-  def clearRect(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Unit = js.native
-  def clearRect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def clearRect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
-  def clearRect(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def clearRect(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def clearRect(x: js.UndefOr[scala.Nothing], y: Double, width: Double): Unit = js.native
-  def clearRect(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): Unit = js.native
   def clearRect(x: Double): Unit = js.native
-  def clearRect(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def clearRect(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def clearRect(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def clearRect(x: Double, y: Double): Unit = js.native
-  def clearRect(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def clearRect(x: Double, y: Double, width: Double): Unit = js.native
   def clearRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def clearRect(x: Double, y: Double, width: Unit, height: Double): Unit = js.native
+  def clearRect(x: Double, y: Unit, width: Double): Unit = js.native
+  def clearRect(x: Double, y: Unit, width: Double, height: Double): Unit = js.native
+  def clearRect(x: Double, y: Unit, width: Unit, height: Double): Unit = js.native
+  def clearRect(x: Unit, y: Double): Unit = js.native
+  def clearRect(x: Unit, y: Double, width: Double): Unit = js.native
+  def clearRect(x: Unit, y: Double, width: Double, height: Double): Unit = js.native
+  def clearRect(x: Unit, y: Double, width: Unit, height: Double): Unit = js.native
+  def clearRect(x: Unit, y: Unit, width: Double): Unit = js.native
+  def clearRect(x: Unit, y: Unit, width: Double, height: Double): Unit = js.native
+  def clearRect(x: Unit, y: Unit, width: Unit, height: Double): Unit = js.native
   
   /**
     * 从原始画布中剪切任意形状和尺寸
@@ -200,38 +123,33 @@ trait CanvasContext extends StObject {
     * 创建一个圆形的渐变颜色
     */
   def createCircularGradient(): CanvasGradient = js.native
-  def createCircularGradient(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], r: Double): CanvasGradient = js.native
-  def createCircularGradient(x: js.UndefOr[scala.Nothing], y: Double): CanvasGradient = js.native
-  def createCircularGradient(x: js.UndefOr[scala.Nothing], y: Double, r: Double): CanvasGradient = js.native
   def createCircularGradient(x: Double): CanvasGradient = js.native
-  def createCircularGradient(x: Double, y: js.UndefOr[scala.Nothing], r: Double): CanvasGradient = js.native
   def createCircularGradient(x: Double, y: Double): CanvasGradient = js.native
   def createCircularGradient(x: Double, y: Double, r: Double): CanvasGradient = js.native
+  def createCircularGradient(x: Double, y: Unit, r: Double): CanvasGradient = js.native
+  def createCircularGradient(x: Unit, y: Double): CanvasGradient = js.native
+  def createCircularGradient(x: Unit, y: Double, r: Double): CanvasGradient = js.native
+  def createCircularGradient(x: Unit, y: Unit, r: Double): CanvasGradient = js.native
   
   /**
     * 创建一个线性的渐变颜色
     */
   def createLinearGradient(): CanvasGradient = js.native
-  def createLinearGradient(
-    x0: js.UndefOr[scala.Nothing],
-    y0: js.UndefOr[scala.Nothing],
-    x1: js.UndefOr[scala.Nothing],
-    y1: Double
-  ): CanvasGradient = js.native
-  def createLinearGradient(x0: js.UndefOr[scala.Nothing], y0: js.UndefOr[scala.Nothing], x1: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: js.UndefOr[scala.Nothing], y0: js.UndefOr[scala.Nothing], x1: Double, y1: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: js.UndefOr[scala.Nothing], y0: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: js.UndefOr[scala.Nothing], y0: Double, x1: js.UndefOr[scala.Nothing], y1: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: js.UndefOr[scala.Nothing], y0: Double, x1: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: js.UndefOr[scala.Nothing], y0: Double, x1: Double, y1: Double): CanvasGradient = js.native
   def createLinearGradient(x0: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: Double, y0: js.UndefOr[scala.Nothing], x1: js.UndefOr[scala.Nothing], y1: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: Double, y0: js.UndefOr[scala.Nothing], x1: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: Double, y0: js.UndefOr[scala.Nothing], x1: Double, y1: Double): CanvasGradient = js.native
   def createLinearGradient(x0: Double, y0: Double): CanvasGradient = js.native
-  def createLinearGradient(x0: Double, y0: Double, x1: js.UndefOr[scala.Nothing], y1: Double): CanvasGradient = js.native
   def createLinearGradient(x0: Double, y0: Double, x1: Double): CanvasGradient = js.native
   def createLinearGradient(x0: Double, y0: Double, x1: Double, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Double, x1: Unit, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Unit, x1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Unit, x1: Double, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Double, y0: Unit, x1: Unit, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Double, x1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Double, x1: Double, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Double, x1: Unit, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Unit, x1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Unit, x1: Double, y1: Double): CanvasGradient = js.native
+  def createLinearGradient(x0: Unit, y0: Unit, x1: Unit, y1: Double): CanvasGradient = js.native
   
   /**
     * 对指定的图像创建模式的方法，可在指定的方向上重复元图像
@@ -239,29 +157,29 @@ trait CanvasContext extends StObject {
   def createPattern(): CanvasPattern | Null = js.native
   def createPattern(image: String): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_norepeat(image: js.UndefOr[scala.Nothing], repetition: `no-repeat`): CanvasPattern | Null = js.native
-  @JSName("createPattern")
   def createPattern_norepeat(image: String, repetition: `no-repeat`): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_repeat(image: js.UndefOr[scala.Nothing], repetition: repeat): CanvasPattern | Null = js.native
+  def createPattern_norepeat(image: Unit, repetition: `no-repeat`): CanvasPattern | Null = js.native
   @JSName("createPattern")
   def createPattern_repeat(image: String, repetition: repeat): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_repeatx(image: js.UndefOr[scala.Nothing], repetition: `repeat-x`): CanvasPattern | Null = js.native
+  def createPattern_repeat(image: Unit, repetition: repeat): CanvasPattern | Null = js.native
   @JSName("createPattern")
   def createPattern_repeatx(image: String, repetition: `repeat-x`): CanvasPattern | Null = js.native
   @JSName("createPattern")
-  def createPattern_repeaty(image: js.UndefOr[scala.Nothing], repetition: `repeat-y`): CanvasPattern | Null = js.native
+  def createPattern_repeatx(image: Unit, repetition: `repeat-x`): CanvasPattern | Null = js.native
   @JSName("createPattern")
   def createPattern_repeaty(image: String, repetition: `repeat-y`): CanvasPattern | Null = js.native
+  @JSName("createPattern")
+  def createPattern_repeaty(image: Unit, repetition: `repeat-y`): CanvasPattern | Null = js.native
   
   /**
     * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中
     */
   def draw(): Unit = js.native
-  def draw(reserve: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def draw(reserve: Boolean): Unit = js.native
   def draw(reserve: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  def draw(reserve: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * 绘制图像到画布
@@ -289,26 +207,21 @@ trait CanvasContext extends StObject {
     * 填充一个矩形
     */
   def fillRect(): Unit = js.native
-  def fillRect(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Unit = js.native
-  def fillRect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def fillRect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
-  def fillRect(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def fillRect(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def fillRect(x: js.UndefOr[scala.Nothing], y: Double, width: Double): Unit = js.native
-  def fillRect(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): Unit = js.native
   def fillRect(x: Double): Unit = js.native
-  def fillRect(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def fillRect(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def fillRect(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def fillRect(x: Double, y: Double): Unit = js.native
-  def fillRect(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def fillRect(x: Double, y: Double, width: Double): Unit = js.native
   def fillRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def fillRect(x: Double, y: Double, width: Unit, height: Double): Unit = js.native
+  def fillRect(x: Double, y: Unit, width: Double): Unit = js.native
+  def fillRect(x: Double, y: Unit, width: Double, height: Double): Unit = js.native
+  def fillRect(x: Double, y: Unit, width: Unit, height: Double): Unit = js.native
+  def fillRect(x: Unit, y: Double): Unit = js.native
+  def fillRect(x: Unit, y: Double, width: Double): Unit = js.native
+  def fillRect(x: Unit, y: Double, width: Double, height: Double): Unit = js.native
+  def fillRect(x: Unit, y: Double, width: Unit, height: Double): Unit = js.native
+  def fillRect(x: Unit, y: Unit, width: Double): Unit = js.native
+  def fillRect(x: Unit, y: Unit, width: Double, height: Double): Unit = js.native
+  def fillRect(x: Unit, y: Unit, width: Unit, height: Double): Unit = js.native
   
   /**
     * 填充色
@@ -319,26 +232,21 @@ trait CanvasContext extends StObject {
     * 在画布上绘制被填充的文本
     */
   def fillText(): Unit = js.native
-  def fillText(
-    text: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    maxWidth: Double
-  ): Unit = js.native
-  def fillText(text: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def fillText(text: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double, maxWidth: Double): Unit = js.native
-  def fillText(text: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
-  def fillText(text: js.UndefOr[scala.Nothing], x: Double, y: js.UndefOr[scala.Nothing], maxWidth: Double): Unit = js.native
-  def fillText(text: js.UndefOr[scala.Nothing], x: Double, y: Double): Unit = js.native
-  def fillText(text: js.UndefOr[scala.Nothing], x: Double, y: Double, maxWidth: Double): Unit = js.native
   def fillText(text: String): Unit = js.native
-  def fillText(text: String, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], maxWidth: Double): Unit = js.native
-  def fillText(text: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def fillText(text: String, x: js.UndefOr[scala.Nothing], y: Double, maxWidth: Double): Unit = js.native
   def fillText(text: String, x: Double): Unit = js.native
-  def fillText(text: String, x: Double, y: js.UndefOr[scala.Nothing], maxWidth: Double): Unit = js.native
   def fillText(text: String, x: Double, y: Double): Unit = js.native
   def fillText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
+  def fillText(text: String, x: Double, y: Unit, maxWidth: Double): Unit = js.native
+  def fillText(text: String, x: Unit, y: Double): Unit = js.native
+  def fillText(text: String, x: Unit, y: Double, maxWidth: Double): Unit = js.native
+  def fillText(text: String, x: Unit, y: Unit, maxWidth: Double): Unit = js.native
+  def fillText(text: Unit, x: Double): Unit = js.native
+  def fillText(text: Unit, x: Double, y: Double): Unit = js.native
+  def fillText(text: Unit, x: Double, y: Double, maxWidth: Double): Unit = js.native
+  def fillText(text: Unit, x: Double, y: Unit, maxWidth: Double): Unit = js.native
+  def fillText(text: Unit, x: Unit, y: Double): Unit = js.native
+  def fillText(text: Unit, x: Unit, y: Double, maxWidth: Double): Unit = js.native
+  def fillText(text: Unit, x: Unit, y: Unit, maxWidth: Double): Unit = js.native
   
   /**
     * 字体样式
@@ -380,9 +288,9 @@ trait CanvasContext extends StObject {
     * 增加一个新点，然后创建一条从上次指定点到目标点的线
     */
   def lineTo(): Unit = js.native
-  def lineTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def lineTo(x: Double): Unit = js.native
   def lineTo(x: Double, y: Double): Unit = js.native
+  def lineTo(x: Unit, y: Double): Unit = js.native
   
   /**
     * 线条的宽度
@@ -404,59 +312,49 @@ trait CanvasContext extends StObject {
     * 把路径移动到画布中的指定点，不创建线条
     */
   def moveTo(): Unit = js.native
-  def moveTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def moveTo(x: Double): Unit = js.native
   def moveTo(x: Double, y: Double): Unit = js.native
+  def moveTo(x: Unit, y: Double): Unit = js.native
   
   /**
     * 创建二次贝塞尔曲线路径
     */
   def quadraticCurveTo(): Unit = js.native
-  def quadraticCurveTo(
-    cpx: js.UndefOr[scala.Nothing],
-    cpy: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: Double
-  ): Unit = js.native
-  def quadraticCurveTo(cpx: js.UndefOr[scala.Nothing], cpy: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
-  def quadraticCurveTo(cpx: js.UndefOr[scala.Nothing], cpy: js.UndefOr[scala.Nothing], x: Double, y: Double): Unit = js.native
-  def quadraticCurveTo(cpx: js.UndefOr[scala.Nothing], cpy: Double): Unit = js.native
-  def quadraticCurveTo(cpx: js.UndefOr[scala.Nothing], cpy: Double, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def quadraticCurveTo(cpx: js.UndefOr[scala.Nothing], cpy: Double, x: Double): Unit = js.native
-  def quadraticCurveTo(cpx: js.UndefOr[scala.Nothing], cpy: Double, x: Double, y: Double): Unit = js.native
   def quadraticCurveTo(cpx: Double): Unit = js.native
-  def quadraticCurveTo(cpx: Double, cpy: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def quadraticCurveTo(cpx: Double, cpy: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
-  def quadraticCurveTo(cpx: Double, cpy: js.UndefOr[scala.Nothing], x: Double, y: Double): Unit = js.native
   def quadraticCurveTo(cpx: Double, cpy: Double): Unit = js.native
-  def quadraticCurveTo(cpx: Double, cpy: Double, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def quadraticCurveTo(cpx: Double, cpy: Double, x: Double): Unit = js.native
   def quadraticCurveTo(cpx: Double, cpy: Double, x: Double, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Double, cpy: Double, x: Unit, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Double, cpy: Unit, x: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Double, cpy: Unit, x: Double, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Double, cpy: Unit, x: Unit, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Double, x: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Double, x: Double, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Double, x: Unit, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Unit, x: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Unit, x: Double, y: Double): Unit = js.native
+  def quadraticCurveTo(cpx: Unit, cpy: Unit, x: Unit, y: Double): Unit = js.native
   
   /**
     * 创建一个矩形
     */
   def rect(): Unit = js.native
-  def rect(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Unit = js.native
-  def rect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def rect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
-  def rect(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def rect(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def rect(x: js.UndefOr[scala.Nothing], y: Double, width: Double): Unit = js.native
-  def rect(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): Unit = js.native
   def rect(x: Double): Unit = js.native
-  def rect(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def rect(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def rect(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def rect(x: Double, y: Double): Unit = js.native
-  def rect(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def rect(x: Double, y: Double, width: Double): Unit = js.native
   def rect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def rect(x: Double, y: Double, width: Unit, height: Double): Unit = js.native
+  def rect(x: Double, y: Unit, width: Double): Unit = js.native
+  def rect(x: Double, y: Unit, width: Double, height: Double): Unit = js.native
+  def rect(x: Double, y: Unit, width: Unit, height: Double): Unit = js.native
+  def rect(x: Unit, y: Double): Unit = js.native
+  def rect(x: Unit, y: Double, width: Double): Unit = js.native
+  def rect(x: Unit, y: Double, width: Double, height: Double): Unit = js.native
+  def rect(x: Unit, y: Double, width: Unit, height: Double): Unit = js.native
+  def rect(x: Unit, y: Unit, width: Double): Unit = js.native
+  def rect(x: Unit, y: Unit, width: Double, height: Double): Unit = js.native
+  def rect(x: Unit, y: Unit, width: Unit, height: Double): Unit = js.native
   
   /**
     * 恢复之前保存的绘图上下文
@@ -478,9 +376,9 @@ trait CanvasContext extends StObject {
     * 横纵坐标缩放
     */
   def scale(): Unit = js.native
-  def scale(scaleWidth: js.UndefOr[scala.Nothing], scaleHeight: Double): Unit = js.native
   def scale(scaleWidth: Double): Unit = js.native
   def scale(scaleWidth: Double, scaleHeight: Double): Unit = js.native
+  def scale(scaleWidth: Unit, scaleHeight: Double): Unit = js.native
   
   /**
     * 设置填充色
@@ -517,9 +415,9 @@ trait CanvasContext extends StObject {
     * 设置线条的宽度
     */
   def setLineDash(): Unit = js.native
-  def setLineDash(pattern: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
-  def setLineDash(pattern: js.Array[_]): Unit = js.native
-  def setLineDash(pattern: js.Array[_], offset: Double): Unit = js.native
+  def setLineDash(pattern: js.Array[js.Any]): Unit = js.native
+  def setLineDash(pattern: js.Array[js.Any], offset: Double): Unit = js.native
+  def setLineDash(pattern: Unit, offset: Double): Unit = js.native
   
   /**
     * 设置线条的交点样式
@@ -548,41 +446,21 @@ trait CanvasContext extends StObject {
     * 设置阴影样式
     */
   def setShadow(): Unit = js.native
-  def setShadow(
-    offsetX: js.UndefOr[scala.Nothing],
-    offsetY: js.UndefOr[scala.Nothing],
-    blur: js.UndefOr[scala.Nothing],
-    color: String
-  ): Unit = js.native
-  def setShadow(offsetX: js.UndefOr[scala.Nothing], offsetY: js.UndefOr[scala.Nothing], blur: Double): Unit = js.native
-  def setShadow(
-    offsetX: js.UndefOr[scala.Nothing],
-    offsetY: js.UndefOr[scala.Nothing],
-    blur: Double,
-    color: String
-  ): Unit = js.native
-  def setShadow(offsetX: js.UndefOr[scala.Nothing], offsetY: Double): Unit = js.native
-  def setShadow(
-    offsetX: js.UndefOr[scala.Nothing],
-    offsetY: Double,
-    blur: js.UndefOr[scala.Nothing],
-    color: String
-  ): Unit = js.native
-  def setShadow(offsetX: js.UndefOr[scala.Nothing], offsetY: Double, blur: Double): Unit = js.native
-  def setShadow(offsetX: js.UndefOr[scala.Nothing], offsetY: Double, blur: Double, color: String): Unit = js.native
   def setShadow(offsetX: Double): Unit = js.native
-  def setShadow(
-    offsetX: Double,
-    offsetY: js.UndefOr[scala.Nothing],
-    blur: js.UndefOr[scala.Nothing],
-    color: String
-  ): Unit = js.native
-  def setShadow(offsetX: Double, offsetY: js.UndefOr[scala.Nothing], blur: Double): Unit = js.native
-  def setShadow(offsetX: Double, offsetY: js.UndefOr[scala.Nothing], blur: Double, color: String): Unit = js.native
   def setShadow(offsetX: Double, offsetY: Double): Unit = js.native
-  def setShadow(offsetX: Double, offsetY: Double, blur: js.UndefOr[scala.Nothing], color: String): Unit = js.native
   def setShadow(offsetX: Double, offsetY: Double, blur: Double): Unit = js.native
   def setShadow(offsetX: Double, offsetY: Double, blur: Double, color: String): Unit = js.native
+  def setShadow(offsetX: Double, offsetY: Double, blur: Unit, color: String): Unit = js.native
+  def setShadow(offsetX: Double, offsetY: Unit, blur: Double): Unit = js.native
+  def setShadow(offsetX: Double, offsetY: Unit, blur: Double, color: String): Unit = js.native
+  def setShadow(offsetX: Double, offsetY: Unit, blur: Unit, color: String): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Double): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Double, blur: Double): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Double, blur: Double, color: String): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Double, blur: Unit, color: String): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Unit, blur: Double): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Unit, blur: Double, color: String): Unit = js.native
+  def setShadow(offsetX: Unit, offsetY: Unit, blur: Unit, color: String): Unit = js.native
   
   /**
     * 设置边框颜色
@@ -657,26 +535,21 @@ trait CanvasContext extends StObject {
     * 画一个矩形(非填充)
     */
   def strokeRect(): Unit = js.native
-  def strokeRect(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Unit = js.native
-  def strokeRect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def strokeRect(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
-  def strokeRect(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def strokeRect(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def strokeRect(x: js.UndefOr[scala.Nothing], y: Double, width: Double): Unit = js.native
-  def strokeRect(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): Unit = js.native
   def strokeRect(x: Double): Unit = js.native
-  def strokeRect(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-  def strokeRect(x: Double, y: js.UndefOr[scala.Nothing], width: Double): Unit = js.native
-  def strokeRect(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): Unit = js.native
   def strokeRect(x: Double, y: Double): Unit = js.native
-  def strokeRect(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def strokeRect(x: Double, y: Double, width: Double): Unit = js.native
   def strokeRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def strokeRect(x: Double, y: Double, width: Unit, height: Double): Unit = js.native
+  def strokeRect(x: Double, y: Unit, width: Double): Unit = js.native
+  def strokeRect(x: Double, y: Unit, width: Double, height: Double): Unit = js.native
+  def strokeRect(x: Double, y: Unit, width: Unit, height: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Double, width: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Double, width: Double, height: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Double, width: Unit, height: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Unit, width: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Unit, width: Double, height: Double): Unit = js.native
+  def strokeRect(x: Unit, y: Unit, width: Unit, height: Double): Unit = js.native
   
   /**
     * 边框颜色
@@ -687,32 +560,27 @@ trait CanvasContext extends StObject {
     * 给定的 (x, y) 位置绘制文本描边的方法
     */
   def strokeText(): Unit = js.native
-  def strokeText(
-    text: js.UndefOr[scala.Nothing],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    maxWidth: Double
-  ): Unit = js.native
-  def strokeText(text: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def strokeText(text: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double, maxWidth: Double): Unit = js.native
-  def strokeText(text: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
-  def strokeText(text: js.UndefOr[scala.Nothing], x: Double, y: js.UndefOr[scala.Nothing], maxWidth: Double): Unit = js.native
-  def strokeText(text: js.UndefOr[scala.Nothing], x: Double, y: Double): Unit = js.native
-  def strokeText(text: js.UndefOr[scala.Nothing], x: Double, y: Double, maxWidth: Double): Unit = js.native
   def strokeText(text: String): Unit = js.native
-  def strokeText(text: String, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], maxWidth: Double): Unit = js.native
-  def strokeText(text: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def strokeText(text: String, x: js.UndefOr[scala.Nothing], y: Double, maxWidth: Double): Unit = js.native
   def strokeText(text: String, x: Double): Unit = js.native
-  def strokeText(text: String, x: Double, y: js.UndefOr[scala.Nothing], maxWidth: Double): Unit = js.native
   def strokeText(text: String, x: Double, y: Double): Unit = js.native
   def strokeText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
+  def strokeText(text: String, x: Double, y: Unit, maxWidth: Double): Unit = js.native
+  def strokeText(text: String, x: Unit, y: Double): Unit = js.native
+  def strokeText(text: String, x: Unit, y: Double, maxWidth: Double): Unit = js.native
+  def strokeText(text: String, x: Unit, y: Unit, maxWidth: Double): Unit = js.native
+  def strokeText(text: Unit, x: Double): Unit = js.native
+  def strokeText(text: Unit, x: Double, y: Double): Unit = js.native
+  def strokeText(text: Unit, x: Double, y: Double, maxWidth: Double): Unit = js.native
+  def strokeText(text: Unit, x: Double, y: Unit, maxWidth: Double): Unit = js.native
+  def strokeText(text: Unit, x: Unit, y: Double): Unit = js.native
+  def strokeText(text: Unit, x: Unit, y: Double, maxWidth: Double): Unit = js.native
+  def strokeText(text: Unit, x: Unit, y: Unit, maxWidth: Double): Unit = js.native
   
   /**
     * 对当前坐标系的原点(0, 0)进行变换
     */
   def translate(): Unit = js.native
-  def translate(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def translate(x: Double): Unit = js.native
   def translate(x: Double, y: Double): Unit = js.native
+  def translate(x: Unit, y: Double): Unit = js.native
 }

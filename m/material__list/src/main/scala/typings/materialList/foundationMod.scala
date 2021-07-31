@@ -8,7 +8,6 @@ import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object foundationMod {
@@ -120,8 +119,8 @@ object foundationMod {
       * @return The index of the matched item, or -1 if no match.
       */
     def typeaheadMatchItem(nextChar: String): Double = js.native
-    def typeaheadMatchItem(nextChar: String, startingIndex: js.UndefOr[scala.Nothing], skipFocus: Boolean): Double = js.native
     def typeaheadMatchItem(nextChar: String, startingIndex: Double): Double = js.native
     def typeaheadMatchItem(nextChar: String, startingIndex: Double, skipFocus: Boolean): Double = js.native
+    def typeaheadMatchItem(nextChar: String, startingIndex: Unit, skipFocus: Boolean): Double = js.native
   }
 }

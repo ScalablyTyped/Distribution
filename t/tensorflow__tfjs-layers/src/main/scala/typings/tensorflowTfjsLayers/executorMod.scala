@@ -8,10 +8,13 @@ import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
 import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object executorMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "FeedDict")
   @js.native
@@ -85,46 +88,26 @@ object executorMod {
     def names(): js.Array[String] = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(
-    fetches: js.Array[SymbolicTensor],
-    feedDict: FeedDict,
-    kwargs: js.UndefOr[scala.Nothing],
-    probe: ExecutionProbe
-  ): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(
-    fetches: SymbolicTensor,
-    feedDict: FeedDict,
-    kwargs: js.UndefOr[scala.Nothing],
-    probe: ExecutionProbe
-  ): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "execute")
-  @js.native
-  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = js.native
+  @scala.inline
+  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: js.Array[SymbolicTensor], feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: SymbolicTensor, feedDict: FeedDict): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Unit, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
+  @scala.inline
+  def execute(fetches: SymbolicTensor, feedDict: FeedDict, kwargs: Kwargs, probe: ExecutionProbe): Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fetches.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any], kwargs.asInstanceOf[js.Any], probe.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank] | (js.Array[js.Array[Tensor[Rank]] | Tensor[Rank]])]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/executor", "getTopologicalSortAndRecipientCountsForOneFetch")
-  @js.native
-  def getTopologicalSortAndRecipientCountsForOneFetch(fetch: SymbolicTensor, feedDict: FeedDict): typings.tensorflowTfjsLayers.anon.RecipientMap = js.native
+  @scala.inline
+  def getTopologicalSortAndRecipientCountsForOneFetch(fetch: SymbolicTensor, feedDict: FeedDict): typings.tensorflowTfjsLayers.anon.RecipientMap = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopologicalSortAndRecipientCountsForOneFetch")(fetch.asInstanceOf[js.Any], feedDict.asInstanceOf[js.Any])).asInstanceOf[typings.tensorflowTfjsLayers.anon.RecipientMap]
   
-  @js.native
   trait ExecutionProbe extends StObject {
     
     /**
@@ -132,14 +115,14 @@ object executorMod {
       * execution. Tensor counts are measured at the beginning of every
       * step.
       */
-    var maxNumTensors: js.UndefOr[Double] = js.native
+    var maxNumTensors: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum number of tensors that exist during all steps of the
       * execution. Tensor counts are measured at the beginning of every
       * step.
       */
-    var minNumTensors: js.UndefOr[Double] = js.native
+    var minNumTensors: js.UndefOr[Double] = js.undefined
   }
   object ExecutionProbe {
     
@@ -166,12 +149,11 @@ object executorMod {
     }
   }
   
-  @js.native
   trait Feed extends StObject {
     
-    var key: SymbolicTensor = js.native
+    var key: SymbolicTensor
     
-    var value: Tensor[Rank] = js.native
+    var value: Tensor[Rank]
   }
   object Feed {
     

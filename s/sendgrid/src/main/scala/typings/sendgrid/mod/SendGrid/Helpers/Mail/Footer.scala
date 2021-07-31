@@ -3,25 +3,23 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 import typings.sendgrid.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Footer extends StObject {
   
-  def getEnable(): Boolean = js.native
+  def getEnable(): Boolean
   
-  def getHtml(): String = js.native
+  def getHtml(): String
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def setEnable(enabled: Boolean): Unit = js.native
+  def setEnable(enabled: Boolean): Unit
   
-  def setHtml(html: String): Unit = js.native
+  def setHtml(html: String): Unit
   
-  def setText(text: String): Unit = js.native
+  def setText(text: String): Unit
   
-  def toJSON(): Text = js.native
+  def toJSON(): Text
 }
 object Footer {
   

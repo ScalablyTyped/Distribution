@@ -7,24 +7,23 @@ import typings.nodePgMigrate.policiesTypesMod.DropPolicy
 import typings.nodePgMigrate.policiesTypesMod.RenamePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policiesMod {
   
-  @JSImport("node-pg-migrate/dist/operations/policies", "alterPolicy")
+  @JSImport("node-pg-migrate/dist/operations/policies", JSImport.Namespace)
   @js.native
-  def alterPolicy(mOptions: MigrationOptions): AlterPolicy = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/policies", "createPolicy")
-  @js.native
-  def createPolicy(mOptions: MigrationOptions): CreatePolicy = js.native
+  @scala.inline
+  def alterPolicy(mOptions: MigrationOptions): AlterPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("alterPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterPolicy]
   
-  @JSImport("node-pg-migrate/dist/operations/policies", "dropPolicy")
-  @js.native
-  def dropPolicy(mOptions: MigrationOptions): DropPolicy = js.native
+  @scala.inline
+  def createPolicy(mOptions: MigrationOptions): CreatePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreatePolicy]
   
-  @JSImport("node-pg-migrate/dist/operations/policies", "renamePolicy")
-  @js.native
-  def renamePolicy(mOptions: MigrationOptions): RenamePolicy = js.native
+  @scala.inline
+  def dropPolicy(mOptions: MigrationOptions): DropPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("dropPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropPolicy]
+  
+  @scala.inline
+  def renamePolicy(mOptions: MigrationOptions): RenamePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenamePolicy]
 }

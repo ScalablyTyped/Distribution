@@ -9,17 +9,17 @@ import typings.webidl2.webidl2Strings.record
 import typings.webidl2.webidl2Strings.sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AbstractNonUnionTypeDescription extends AbstractTypeDescription {
+trait AbstractNonUnionTypeDescription
+  extends StObject
+     with AbstractTypeDescription {
   
   /** String indicating the generic type (e.g. "Promise", "sequence"). The empty string otherwise. */
-  var generic: FrozenArray | ObservableArray | Promise | record | sequence | _empty = js.native
+  var generic: FrozenArray | ObservableArray | Promise | record | sequence | _empty
   
   /** Boolean indicating whether this is a union type or not. */
-  var union: `false` = js.native
+  var union: `false`
 }
 object AbstractNonUnionTypeDescription {
   
@@ -28,10 +28,10 @@ object AbstractNonUnionTypeDescription {
     extAttrs: js.Array[ExtendedAttribute],
     generic: FrozenArray | ObservableArray | Promise | record | sequence | _empty,
     nullable: Boolean,
-    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription,
-    union: `false`
+    parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription
   ): AbstractNonUnionTypeDescription = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = union.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], generic = generic.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], union = false)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[AbstractNonUnionTypeDescription]
   }
   

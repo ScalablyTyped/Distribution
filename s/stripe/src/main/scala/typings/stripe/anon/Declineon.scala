@@ -2,17 +2,15 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Declineon extends StObject {
   
   /**
     * Automatically declines certain charge types regardless of whether the card
     * issuer accepted or declined the charge.
     */
-  var decline_on: js.UndefOr[Avsfailure] = js.native
+  var decline_on: js.UndefOr[Avsfailure] = js.undefined
   
   /**
     * The default text that appears on credit card statements when a charge is
@@ -20,7 +18,7 @@ trait Declineon extends StObject {
     * charge. statement_descriptor_prefix is useful for maximizing descriptor space
     * for the dynamic portion.
     */
-  var statement_descriptor_prefix: js.UndefOr[String] = js.native
+  var statement_descriptor_prefix: js.UndefOr[String] = js.undefined
 }
 object Declineon {
   

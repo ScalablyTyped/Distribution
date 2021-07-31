@@ -10,10 +10,10 @@ A fast, simple & powerful blog framework, powered by Node.js.
 | ------------------ | :-------------: |
 | Full name          | hexo |
 | Keywords           | website, blog, cms, framework, hexo |
-| # releases         | 12 |
-| # dependents       | 50 |
-| # downloads        | 601263 |
-| # stars            | 47 |
+| # releases         | 13 |
+| # dependents       | 49 |
+| # downloads        | 669153 |
+| # stars            | 48 |
 
 ## Links
 - [Homepage](https://hexo.io/)

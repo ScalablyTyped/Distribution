@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayApplianceInfo extends StObject {
   
-  var documentData: js.UndefOr[js.Array[DisplayApplianceDocument]] = js.native
+  var documentData: js.UndefOr[js.Array[DisplayApplianceDocument]] = js.undefined
   
-  var documentPages: js.UndefOr[js.Array[DisplayApplianceDocumentPage]] = js.native
+  var documentPages: js.UndefOr[js.Array[DisplayApplianceDocumentPage]] = js.undefined
   
-  var envelopeData: js.UndefOr[DisplayApplianceEnvelope] = js.native
+  var envelopeData: js.UndefOr[DisplayApplianceEnvelope] = js.undefined
   
-  var pageData: js.UndefOr[js.Array[DisplayAppliancePage]] = js.native
+  var pageData: js.UndefOr[js.Array[DisplayAppliancePage]] = js.undefined
   
-  var recipientData: js.UndefOr[js.Array[DisplayApplianceRecipient]] = js.native
+  var recipientData: js.UndefOr[js.Array[DisplayApplianceRecipient]] = js.undefined
 }
 object DisplayApplianceInfo {
   

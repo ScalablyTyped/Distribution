@@ -2,17 +2,15 @@ package typings.web3EthContract
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
   }
   object Data {
     

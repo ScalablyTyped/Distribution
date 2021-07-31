@@ -2,7 +2,6 @@ package typings.vkOpenapi.vk.OpenAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Goal {
@@ -91,10 +90,9 @@ object Goal {
     def view_content: typings.vkOpenapi.vkOpenapiStrings.view_content = "view_content".asInstanceOf[typings.vkOpenapi.vkOpenapiStrings.view_content]
   }
   
-  @js.native
   trait GoalParams extends StObject {
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object GoalParams {
     

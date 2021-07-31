@@ -3,13 +3,14 @@ package typings.expoWebBrowser
 import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResultType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoWebBrowserStrings {
   
   @js.native
-  sealed trait cancel extends WebBrowserResultType
+  sealed trait cancel
+    extends StObject
+       with WebBrowserResultType
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
@@ -19,7 +20,9 @@ object expoWebBrowserStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait dismiss extends WebBrowserResultType
+  sealed trait dismiss
+    extends StObject
+       with WebBrowserResultType
   @scala.inline
   def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
   
@@ -34,12 +37,16 @@ object expoWebBrowserStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait locked extends WebBrowserResultType
+  sealed trait locked
+    extends StObject
+       with WebBrowserResultType
   @scala.inline
   def locked: locked = "locked".asInstanceOf[locked]
   
   @js.native
-  sealed trait opened extends WebBrowserResultType
+  sealed trait opened
+    extends StObject
+       with WebBrowserResultType
   @scala.inline
   def opened: opened = "opened".asInstanceOf[opened]
   

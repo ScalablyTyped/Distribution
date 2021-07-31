@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGroupsResponse extends StObject {
   
   /**
     * The list of groups.
     */
-  var Groups: js.UndefOr[GroupMetadataList] = js.native
+  var Groups: js.UndefOr[GroupMetadataList] = js.undefined
   
   /**
     * The marker to use when requesting the next set of results. If there are no additional results, the string is empty.
     */
-  var Marker: js.UndefOr[MarkerType] = js.native
+  var Marker: js.UndefOr[MarkerType] = js.undefined
 }
 object DescribeGroupsResponse {
   

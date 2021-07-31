@@ -2,15 +2,13 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storiesInsightsFeedResponseMod {
   
-  @js.native
   trait StoriesInsightsFeedResponseBusinessManager extends StObject {
     
-    var stories_unit: StoriesInsightsFeedResponseStoriesUnit = js.native
+    var stories_unit: StoriesInsightsFeedResponseStoriesUnit
   }
   object StoriesInsightsFeedResponseBusinessManager {
     
@@ -28,10 +26,9 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseData extends StObject {
     
-    var user: StoriesInsightsFeedResponseUser = js.native
+    var user: StoriesInsightsFeedResponseUser
   }
   object StoriesInsightsFeedResponseData {
     
@@ -49,12 +46,11 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseEdgesItem extends StObject {
     
-    var cursor: Null = js.native
+    var cursor: Null
     
-    var node: StoriesInsightsFeedResponseNode = js.native
+    var node: StoriesInsightsFeedResponseNode
   }
   object StoriesInsightsFeedResponseEdgesItem {
     
@@ -75,12 +71,11 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseInlineInsightsNode extends StObject {
     
-    var metrics: Null = js.native
+    var metrics: Null
     
-    var state: String = js.native
+    var state: String
   }
   object StoriesInsightsFeedResponseInlineInsightsNode {
     
@@ -101,32 +96,31 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseNode extends StObject {
     
-    var __typename: String = js.native
+    var __typename: String
     
-    var display_url: String = js.native
+    var display_url: String
     
-    var exits_count: Double = js.native
+    var exits_count: Double
     
-    var id: String = js.native
+    var id: String
     
-    var impression_count: Double = js.native
+    var impression_count: Double
     
-    var inline_insights_node: StoriesInsightsFeedResponseInlineInsightsNode = js.native
+    var inline_insights_node: StoriesInsightsFeedResponseInlineInsightsNode
     
-    var instagram_media_id: String = js.native
+    var instagram_media_id: String
     
-    var reach_count: Double = js.native
+    var reach_count: Double
     
-    var replies_count: Double = js.native
+    var replies_count: Double
     
-    var story_swipe_away_count: Double = js.native
+    var story_swipe_away_count: Double
     
-    var taps_back_count: Double = js.native
+    var taps_back_count: Double
     
-    var taps_forward_count: Double = js.native
+    var taps_forward_count: Double
   }
   object StoriesInsightsFeedResponseNode {
     
@@ -190,12 +184,11 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponsePageInfo extends StObject {
     
-    var end_cursor: String = js.native
+    var end_cursor: String
     
-    var has_next_page: Boolean = js.native
+    var has_next_page: Boolean
   }
   object StoriesInsightsFeedResponsePageInfo {
     
@@ -216,10 +209,9 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseRootObject extends StObject {
     
-    var data: StoriesInsightsFeedResponseData = js.native
+    var data: StoriesInsightsFeedResponseData
   }
   object StoriesInsightsFeedResponseRootObject {
     
@@ -237,12 +229,11 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseStories extends StObject {
     
-    var edges: js.Array[StoriesInsightsFeedResponseEdgesItem] = js.native
+    var edges: js.Array[StoriesInsightsFeedResponseEdgesItem]
     
-    var page_info: StoriesInsightsFeedResponsePageInfo = js.native
+    var page_info: StoriesInsightsFeedResponsePageInfo
   }
   object StoriesInsightsFeedResponseStories {
     
@@ -269,10 +260,9 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseStoriesUnit extends StObject {
     
-    var stories: StoriesInsightsFeedResponseStories = js.native
+    var stories: StoriesInsightsFeedResponseStories
   }
   object StoriesInsightsFeedResponseStoriesUnit {
     
@@ -290,12 +280,11 @@ object storiesInsightsFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoriesInsightsFeedResponseUser extends StObject {
     
-    var business_manager: StoriesInsightsFeedResponseBusinessManager = js.native
+    var business_manager: StoriesInsightsFeedResponseBusinessManager
     
-    var id: String = js.native
+    var id: String
   }
   object StoriesInsightsFeedResponseUser {
     

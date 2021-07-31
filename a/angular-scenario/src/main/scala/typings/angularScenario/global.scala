@@ -16,7 +16,6 @@ import typings.angularScenario.angularScenario.UsingFunction
 import typings.angularScenario.ng.IAngularStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -45,9 +44,8 @@ object global {
   @scala.inline
   def binding_=(x: BindingFunction): Unit = js.Dynamic.global.updateDynamic("binding")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("browser")
-  @js.native
-  def browser(): Browser = js.native
+  @scala.inline
+  def browser(): Browser = js.Dynamic.global.applyDynamic("browser")().asInstanceOf[Browser]
   
   @JSGlobal("ddescribe")
   @js.native
@@ -61,16 +59,13 @@ object global {
   @scala.inline
   def describe_=(x: RunFunctionWithDescription): Unit = js.Dynamic.global.updateDynamic("describe")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("element")
-  @js.native
-  def element(selector: String): Element = js.native
-  @JSGlobal("element")
-  @js.native
-  def element(selector: String, elementDescription: String): Element = js.native
+  @scala.inline
+  def element(selector: String): Element = js.Dynamic.global.applyDynamic("element")(selector.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def element(selector: String, elementDescription: String): Element = (js.Dynamic.global.applyDynamic("element")(selector.asInstanceOf[js.Any], elementDescription.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @JSGlobal("expect")
-  @js.native
-  def expect(expectation: Future): Expect = js.native
+  @scala.inline
+  def expect(expectation: Future): Expect = js.Dynamic.global.applyDynamic("expect")(expectation.asInstanceOf[js.Any]).asInstanceOf[Expect]
   
   @JSGlobal("iit")
   @js.native
@@ -78,9 +73,8 @@ object global {
   @scala.inline
   def iit_=(x: RunFunctionWithDescription): Unit = js.Dynamic.global.updateDynamic("iit")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("input")
-  @js.native
-  def input(ngModelBinding: String): Input = js.native
+  @scala.inline
+  def input(ngModelBinding: String): Input = js.Dynamic.global.applyDynamic("input")(ngModelBinding.asInstanceOf[js.Any]).asInstanceOf[Input]
   
   @JSGlobal("it")
   @js.native
@@ -94,16 +88,13 @@ object global {
   @scala.inline
   def pause_=(x: PauseFunction): Unit = js.Dynamic.global.updateDynamic("pause")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("repeater")
-  @js.native
-  def repeater(selector: String): Repeater = js.native
-  @JSGlobal("repeater")
-  @js.native
-  def repeater(selector: String, repeaterDescription: String): Repeater = js.native
+  @scala.inline
+  def repeater(selector: String): Repeater = js.Dynamic.global.applyDynamic("repeater")(selector.asInstanceOf[js.Any]).asInstanceOf[Repeater]
+  @scala.inline
+  def repeater(selector: String, repeaterDescription: String): Repeater = (js.Dynamic.global.applyDynamic("repeater")(selector.asInstanceOf[js.Any], repeaterDescription.asInstanceOf[js.Any])).asInstanceOf[Repeater]
   
-  @JSGlobal("select")
-  @js.native
-  def select(ngModelBinding: String): Select = js.native
+  @scala.inline
+  def select(ngModelBinding: String): Select = js.Dynamic.global.applyDynamic("select")(ngModelBinding.asInstanceOf[js.Any]).asInstanceOf[Select]
   
   @JSGlobal("sleep")
   @js.native
@@ -113,9 +104,7 @@ object global {
   
   @JSGlobal("using")
   @js.native
-  def using: UsingFunction = js.native
-  @scala.inline
-  def using_=(x: UsingFunction): Unit = js.Dynamic.global.updateDynamic("using")(x.asInstanceOf[js.Any])
+  val `using`: UsingFunction = js.native
   
   @JSGlobal("xdescribe")
   @js.native

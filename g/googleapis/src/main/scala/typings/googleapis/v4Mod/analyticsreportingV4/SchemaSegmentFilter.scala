@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * conditions to select the sessions or users. A sequence segment condition
   * can be used to select users or sessions based on sequential conditions.
   */
-@js.native
 trait SchemaSegmentFilter extends StObject {
   
   /**
@@ -25,20 +23,20 @@ trait SchemaSegmentFilter extends StObject {
     * [&quot;New York&quot;]                 }               }]             }]
     * },           &quot;not&quot;: &quot;True&quot;         }]       },
     */
-  var not: js.UndefOr[Boolean] = js.native
+  var not: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sequence conditions consist of one or more steps, where each step is
     * defined by one or more dimension/metric conditions. Multiple steps can be
     * combined with special sequence operators.
     */
-  var sequenceSegment: js.UndefOr[SchemaSequenceSegment] = js.native
+  var sequenceSegment: js.UndefOr[SchemaSequenceSegment] = js.undefined
   
   /**
     * A Simple segment conditions consist of one or more dimension/metric
     * conditions that can be combined
     */
-  var simpleSegment: js.UndefOr[SchemaSimpleSegment] = js.native
+  var simpleSegment: js.UndefOr[SchemaSimpleSegment] = js.undefined
 }
 object SchemaSegmentFilter {
   

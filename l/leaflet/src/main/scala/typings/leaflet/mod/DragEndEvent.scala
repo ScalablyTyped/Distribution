@@ -2,13 +2,13 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DragEndEvent extends LeafletEvent {
+trait DragEndEvent
+  extends StObject
+     with LeafletEvent {
   
-  var distance: Double = js.native
+  var distance: Double
 }
 object DragEndEvent {
   

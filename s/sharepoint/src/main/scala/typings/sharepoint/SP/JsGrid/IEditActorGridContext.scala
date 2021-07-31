@@ -4,25 +4,23 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditActorGridContext extends StObject {
   
-  def OnKeyDown(domEvent: DomEvent): Unit = js.native
+  def OnKeyDown(domEvent: DomEvent): Unit
   
-  var RTL: js.Any = js.native
+  var RTL: js.Any
   
-  var bLightFocus: Boolean = js.native
+  var bLightFocus: Boolean
   
-  var emptyValue: js.Any = js.native
+  var emptyValue: js.Any
   
-  var jsGridObj: JsGridControl = js.native
+  var jsGridObj: JsGridControl
   
-  var parentNode: HTMLElement = js.native
+  var parentNode: HTMLElement
   
-  var styleManager: IStyleManager = js.native
+  var styleManager: IStyleManager
 }
 object IEditActorGridContext {
   

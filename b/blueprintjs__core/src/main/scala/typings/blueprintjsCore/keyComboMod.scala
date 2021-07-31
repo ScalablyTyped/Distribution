@@ -4,7 +4,6 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyComboMod {
@@ -34,11 +33,12 @@ object keyComboMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IKeyComboProps extends IProps {
+  trait IKeyComboProps
+    extends StObject
+       with IProps {
     
     /** The key combo to display, such as `"cmd + s"`. */
-    var combo: String = js.native
+    var combo: String
     
     /**
       * Whether to render in a minimal style.
@@ -46,7 +46,7 @@ object keyComboMod {
       * If `true`, only the icon or short name of a key will be rendered with no wrapper styles.
       * @default false
       */
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
   }
   object IKeyComboProps {
     

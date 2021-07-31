@@ -1,9 +1,9 @@
 package typings.cordovaPluginContacts
 
 import typings.std.Date
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -12,7 +12,8 @@ object global {
   @JSGlobal("Contact")
   @js.native
   class Contact protected ()
-    extends typings.cordovaPluginContacts.Contact {
+    extends StObject
+       with typings.cordovaPluginContacts.Contact {
     /** Constructor of Contact object */
     def this(
       id: js.UndefOr[String],
@@ -30,13 +31,33 @@ object global {
       categories: js.UndefOr[typings.cordovaPluginContacts.ContactField],
       urls: js.UndefOr[js.Array[typings.cordovaPluginContacts.ContactField]]
     ) = this()
+    
+    /**
+      * Removes the contact from the device contacts database, otherwise executes an error callback with a ContactError object.
+      * @param onSuccess Success callback function invoked on success operation.
+      * @param onError Error callback function, invoked when an error occurs.
+      */
+    /* CompleteClass */
+    override def remove(onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    
+    /**
+      * Saves a new contact to the device contacts database, or updates an existing contact if a contact with the same id already exists.
+      * @param onSuccess Success callback function invoked on success operation with che Contact object.
+      * @param onError Error callback function, invoked when an error occurs.
+      */
+    /* CompleteClass */
+    override def save(
+      onSuccess: js.Function1[/* contact */ this.type, Unit],
+      onError: js.Function1[/* error */ Error, Unit]
+    ): Unit = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactAddress")
   @js.native
   class ContactAddress protected ()
-    extends typings.cordovaPluginContacts.ContactAddress {
+    extends StObject
+       with typings.cordovaPluginContacts.ContactAddress {
     /** Constructor of ContactAddress object */
     def this(
       pref: js.UndefOr[Boolean],
@@ -54,8 +75,17 @@ object global {
   @JSGlobal("ContactError")
   @js.native
   class ContactError protected ()
-    extends typings.cordovaPluginContacts.ContactError {
+    extends StObject
+       with typings.cordovaPluginContacts.ContactError {
     def this(code: Double) = this()
+    
+    /** Error code */
+    /* CompleteClass */
+    var code: Double = js.native
+    
+    /** Error message */
+    /* CompleteClass */
+    var message: String = js.native
   }
   object ContactError {
     
@@ -111,14 +141,27 @@ object global {
   @js.native
   /** Constructor for ContactField object */
   class ContactField ()
-    extends typings.cordovaPluginContacts.ContactField {
+    extends StObject
+       with typings.cordovaPluginContacts.ContactField {
     def this(`type`: String) = this()
-    def this(`type`: js.UndefOr[scala.Nothing], value: String) = this()
     def this(`type`: String, value: String) = this()
-    def this(`type`: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], pref: Boolean) = this()
-    def this(`type`: js.UndefOr[scala.Nothing], value: String, pref: Boolean) = this()
-    def this(`type`: String, value: js.UndefOr[scala.Nothing], pref: Boolean) = this()
+    def this(`type`: Unit, value: String) = this()
     def this(`type`: String, value: String, pref: Boolean) = this()
+    def this(`type`: String, value: Unit, pref: Boolean) = this()
+    def this(`type`: Unit, value: String, pref: Boolean) = this()
+    def this(`type`: Unit, value: Unit, pref: Boolean) = this()
+    
+    /** Set to true if this ContactField contains the user's preferred value. */
+    /* CompleteClass */
+    var pref: Boolean = js.native
+    
+    /** A string that indicates what type of field this is, home for example. */
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /** The value of the field, such as a phone number or email address. */
+    /* CompleteClass */
+    var value: String = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -126,25 +169,23 @@ object global {
   @js.native
   /** Constructor for ContactFindOptions object */
   class ContactFindOptions ()
-    extends typings.cordovaPluginContacts.ContactFindOptions {
+    extends StObject
+       with typings.cordovaPluginContacts.ContactFindOptions {
     def this(filter: String) = this()
-    def this(filter: js.UndefOr[scala.Nothing], multiple: Boolean) = this()
     def this(filter: String, multiple: Boolean) = this()
-    def this(
-      filter: js.UndefOr[scala.Nothing],
-      multiple: js.UndefOr[scala.Nothing],
-      desiredFields: js.Array[ContactFieldType]
-    ) = this()
-    def this(filter: js.UndefOr[scala.Nothing], multiple: Boolean, desiredFields: js.Array[ContactFieldType]) = this()
-    def this(filter: String, multiple: js.UndefOr[scala.Nothing], desiredFields: js.Array[ContactFieldType]) = this()
+    def this(filter: Unit, multiple: Boolean) = this()
     def this(filter: String, multiple: Boolean, desiredFields: js.Array[ContactFieldType]) = this()
+    def this(filter: String, multiple: Unit, desiredFields: js.Array[ContactFieldType]) = this()
+    def this(filter: Unit, multiple: Boolean, desiredFields: js.Array[ContactFieldType]) = this()
+    def this(filter: Unit, multiple: Unit, desiredFields: js.Array[ContactFieldType]) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactName")
   @js.native
   class ContactName protected ()
-    extends typings.cordovaPluginContacts.ContactName {
+    extends StObject
+       with typings.cordovaPluginContacts.ContactName {
     /** Constructor for ContactName object */
     def this(
       formatted: js.UndefOr[String],
@@ -161,123 +202,38 @@ object global {
   @js.native
   /** Constructor for ContactOrganization object */
   class ContactOrganization ()
-    extends typings.cordovaPluginContacts.ContactOrganization {
+    extends StObject
+       with typings.cordovaPluginContacts.ContactOrganization {
     def this(pref: Boolean) = this()
-    def this(pref: js.UndefOr[scala.Nothing], `type`: String) = this()
     def this(pref: Boolean, `type`: String) = this()
-    def this(pref: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], name: String) = this()
-    def this(pref: js.UndefOr[scala.Nothing], `type`: String, name: String) = this()
-    def this(pref: Boolean, `type`: js.UndefOr[scala.Nothing], name: String) = this()
+    def this(pref: Unit, `type`: String) = this()
     def this(pref: Boolean, `type`: String, name: String) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      department: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      name: String,
-      department: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: String,
-      name: js.UndefOr[scala.Nothing],
-      department: String
-    ) = this()
-    def this(pref: js.UndefOr[scala.Nothing], `type`: String, name: String, department: String) = this()
-    def this(
-      pref: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      department: String
-    ) = this()
-    def this(pref: Boolean, `type`: js.UndefOr[scala.Nothing], name: String, department: String) = this()
-    def this(pref: Boolean, `type`: String, name: js.UndefOr[scala.Nothing], department: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: String) = this()
+    def this(pref: Unit, `type`: String, name: String) = this()
+    def this(pref: Unit, `type`: Unit, name: String) = this()
     def this(pref: Boolean, `type`: String, name: String, department: String) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      department: String,
-      title: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      name: String,
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      name: String,
-      department: String,
-      title: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: String,
-      name: js.UndefOr[scala.Nothing],
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: String,
-      name: js.UndefOr[scala.Nothing],
-      department: String,
-      title: String
-    ) = this()
-    def this(
-      pref: js.UndefOr[scala.Nothing],
-      `type`: String,
-      name: String,
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(pref: js.UndefOr[scala.Nothing], `type`: String, name: String, department: String, title: String) = this()
-    def this(
-      pref: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(
-      pref: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      department: String,
-      title: String
-    ) = this()
-    def this(
-      pref: Boolean,
-      `type`: js.UndefOr[scala.Nothing],
-      name: String,
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(pref: Boolean, `type`: js.UndefOr[scala.Nothing], name: String, department: String, title: String) = this()
-    def this(
-      pref: Boolean,
-      `type`: String,
-      name: js.UndefOr[scala.Nothing],
-      department: js.UndefOr[scala.Nothing],
-      title: String
-    ) = this()
-    def this(pref: Boolean, `type`: String, name: js.UndefOr[scala.Nothing], department: String, title: String) = this()
-    def this(pref: Boolean, `type`: String, name: String, department: js.UndefOr[scala.Nothing], title: String) = this()
+    def this(pref: Boolean, `type`: String, name: Unit, department: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: String, department: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: Unit, department: String) = this()
+    def this(pref: Unit, `type`: String, name: String, department: String) = this()
+    def this(pref: Unit, `type`: String, name: Unit, department: String) = this()
+    def this(pref: Unit, `type`: Unit, name: String, department: String) = this()
+    def this(pref: Unit, `type`: Unit, name: Unit, department: String) = this()
     def this(pref: Boolean, `type`: String, name: String, department: String, title: String) = this()
+    def this(pref: Boolean, `type`: String, name: String, department: Unit, title: String) = this()
+    def this(pref: Boolean, `type`: String, name: Unit, department: String, title: String) = this()
+    def this(pref: Boolean, `type`: String, name: Unit, department: Unit, title: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: String, department: String, title: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: String, department: Unit, title: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: Unit, department: String, title: String) = this()
+    def this(pref: Boolean, `type`: Unit, name: Unit, department: Unit, title: String) = this()
+    def this(pref: Unit, `type`: String, name: String, department: String, title: String) = this()
+    def this(pref: Unit, `type`: String, name: String, department: Unit, title: String) = this()
+    def this(pref: Unit, `type`: String, name: Unit, department: String, title: String) = this()
+    def this(pref: Unit, `type`: String, name: Unit, department: Unit, title: String) = this()
+    def this(pref: Unit, `type`: Unit, name: String, department: String, title: String) = this()
+    def this(pref: Unit, `type`: Unit, name: String, department: Unit, title: String) = this()
+    def this(pref: Unit, `type`: Unit, name: Unit, department: String, title: String) = this()
+    def this(pref: Unit, `type`: Unit, name: Unit, department: Unit, title: String) = this()
   }
 }

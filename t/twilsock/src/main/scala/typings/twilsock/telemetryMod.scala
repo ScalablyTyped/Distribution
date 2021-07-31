@@ -4,7 +4,6 @@ import typings.twilsock.abstractmessageMod.AbstractMessage
 import typings.twilsock.protocolMod.Protocol.MessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object telemetryMod {
@@ -46,7 +45,7 @@ object telemetryMod {
       // relative to event send time
     title: String,
       details: String,
-      id: js.UndefOr[scala.Nothing],
+      id: String,
       // optional, default will be random assigned by backend
     `type`: String
     ) = this()
@@ -57,7 +56,7 @@ object telemetryMod {
       // relative to event send time
     title: String,
       details: String,
-      id: String,
+      id: Unit,
       // optional, default will be random assigned by backend
     `type`: String
     ) = this()

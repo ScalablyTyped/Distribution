@@ -3,11 +3,12 @@ package typings.typescript.mod
 import typings.typescript.anon.ExpressionWithTypeArgumen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSDocAugmentsTag extends JSDocTag {
+trait JSDocAugmentsTag
+  extends StObject
+     with JSDocTag {
   
   val `class`: ExpressionWithTypeArgumen = js.native
   

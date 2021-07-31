@@ -6,10 +6,8 @@ import typings.twineSugarcube.passageMod.PassageBase
 import typings.twineSugarcube.twineSugarcubeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Descriptions extends StObject {
   
   /**
@@ -42,7 +40,7 @@ trait Descriptions extends StObject {
     *     }
     * };
     */
-  var descriptions: `true` | StringDictionary[String] | DescriptionHandler | Null = js.native
+  var descriptions: `true` | StringDictionary[String] | DescriptionHandler | Null
   
   /**
     * Determines whether passage titles are combined with the story title, within the browser's/tab's titlebar, when
@@ -52,7 +50,7 @@ trait Descriptions extends StObject {
     * @example
     * Config.passages.displayTitles = true;
     */
-  var displayTitles: Boolean = js.native
+  var displayTitles: Boolean
   
   /**
     * Determines whether rendering passages have their leading/trailing newlines removed and all remaining sequences of
@@ -63,7 +61,7 @@ trait Descriptions extends StObject {
     * @example
     * Config.passages.nobr = true;
     */
-  var nobr: Boolean = js.native
+  var nobr: Boolean
   
   /**
     * Allows custom processing of passage text. The function is invoked each time the <Passage>.processText()
@@ -84,7 +82,7 @@ trait Descriptions extends StObject {
     *         return p.text.replace(/\bcat(s?)\b/g, 'dog$1');
     * };
     */
-  def onProcess(passage: PassageBase): String = js.native
+  def onProcess(passage: PassageBase): String
   
   /**
     * Sets the title of the initial passage, the very first passage which will be displayed.
@@ -93,7 +91,7 @@ trait Descriptions extends StObject {
     * @example
     * Config.passages.start = "That Other Starting Passage";
     */
-  var start: String = js.native
+  var start: String
   
   /**
     * Determines whether outgoing passage transitions are enabled. Valid values are the name of the property being
@@ -134,7 +132,7 @@ trait Descriptions extends StObject {
     *     opacity: 0;
     * }
     */
-  var transitionOut: String | Double = js.native
+  var transitionOut: String | Double
 }
 object Descriptions {
   
@@ -146,7 +144,7 @@ object Descriptions {
     start: String,
     transitionOut: String | Double
   ): Descriptions = {
-    val __obj = js.Dynamic.literal(displayTitles = displayTitles.asInstanceOf[js.Any], nobr = nobr.asInstanceOf[js.Any], onProcess = js.Any.fromFunction1(onProcess), start = start.asInstanceOf[js.Any], transitionOut = transitionOut.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayTitles = displayTitles.asInstanceOf[js.Any], nobr = nobr.asInstanceOf[js.Any], onProcess = js.Any.fromFunction1(onProcess), start = start.asInstanceOf[js.Any], transitionOut = transitionOut.asInstanceOf[js.Any], descriptions = null)
     __obj.asInstanceOf[Descriptions]
   }
   

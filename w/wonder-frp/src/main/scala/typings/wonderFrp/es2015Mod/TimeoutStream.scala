@@ -1,8 +1,8 @@
 package typings.wonderFrp.es2015Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/es2015", "TimeoutStream")
 @js.native
@@ -10,11 +10,13 @@ class TimeoutStream protected ()
   extends typings.wonderFrp.streamTimeoutStreamMod.TimeoutStream {
   def this(time: Double, scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/es2015", "TimeoutStream")
-@js.native
-object TimeoutStream extends js.Object {
-  def create(time: Double, scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler): typings.wonderFrp.streamTimeoutStreamMod.TimeoutStream = js.native
+object TimeoutStream {
+  
+  @JSImport("wonder-frp/dist/es2015", "TimeoutStream")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(time: Double, scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler): typings.wonderFrp.streamTimeoutStreamMod.TimeoutStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(time.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamTimeoutStreamMod.TimeoutStream]
 }
-

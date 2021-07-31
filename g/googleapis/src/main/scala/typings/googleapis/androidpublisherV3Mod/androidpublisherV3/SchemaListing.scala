@@ -2,38 +2,36 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListing extends StObject {
   
   /**
     * Full description of the app; this may be up to 4000 characters in length.
     */
-  var fullDescription: js.UndefOr[String] = js.native
+  var fullDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Language localization code (for example, &quot;de-AT&quot; for Austrian
     * German).
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Short description of the app (previously known as promo text); this may
     * be up to 80 characters in length.
     */
-  var shortDescription: js.UndefOr[String] = js.native
+  var shortDescription: js.UndefOr[String] = js.undefined
   
   /**
     * App&#39;s localized title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * URL of a promotional YouTube video for the app.
     */
-  var video: js.UndefOr[String] = js.native
+  var video: js.UndefOr[String] = js.undefined
 }
 object SchemaListing {
   

@@ -2,15 +2,13 @@ package typings.hlsParser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offset extends StObject {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var precise: Boolean = js.native
+  var precise: Boolean
 }
 object Offset {
   

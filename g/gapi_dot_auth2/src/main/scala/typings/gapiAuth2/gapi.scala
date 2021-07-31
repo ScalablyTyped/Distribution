@@ -8,7 +8,6 @@ import typings.gapiAuth2.gapiAuth2Strings.redirect
 import typings.gapiAuth2.gapiAuth2Strings.select_account
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -18,22 +17,21 @@ object gapi {
     /**
       * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2authresponse
       */
-    @js.native
     trait AuthResponse extends StObject {
       
-      var access_token: String = js.native
+      var access_token: String
       
-      var expires_at: Double = js.native
+      var expires_at: Double
       
-      var expires_in: Double = js.native
+      var expires_in: Double
       
-      var first_issued_at: Double = js.native
+      var first_issued_at: Double
       
-      var id_token: String = js.native
+      var id_token: String
       
-      var login_hint: String = js.native
+      var login_hint: String
       
-      var scope: String = js.native
+      var scope: String
     }
     object AuthResponse {
       
@@ -80,28 +78,27 @@ object gapi {
     /**
       * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2authorizeconfig
       */
-    @js.native
     trait AuthorizeConfig extends StObject {
       
-      var app_package_name: js.UndefOr[String] = js.native
+      var app_package_name: js.UndefOr[String] = js.undefined
       
-      var client_id: String = js.native
+      var client_id: String
       
-      var cookie_policy: js.UndefOr[String] = js.native
+      var cookie_policy: js.UndefOr[String] = js.undefined
       
-      var hosted_domain: js.UndefOr[String] = js.native
+      var hosted_domain: js.UndefOr[String] = js.undefined
       
-      var include_granted_scopes: js.UndefOr[Boolean] = js.native
+      var include_granted_scopes: js.UndefOr[Boolean] = js.undefined
       
-      var login_hint: js.UndefOr[String] = js.native
+      var login_hint: js.UndefOr[String] = js.undefined
       
-      var openid_realm: js.UndefOr[String] = js.native
+      var openid_realm: js.UndefOr[String] = js.undefined
       
-      var prompt: js.UndefOr[String] = js.native
+      var prompt: js.UndefOr[String] = js.undefined
       
-      var response_type: js.UndefOr[String] = js.native
+      var response_type: js.UndefOr[String] = js.undefined
       
-      var scope: String = js.native
+      var scope: String
     }
     object AuthorizeConfig {
       
@@ -173,26 +170,25 @@ object gapi {
     /**
       * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2authorizeresponse
       */
-    @js.native
     trait AuthorizeResponse extends StObject {
       
-      var access_token: String = js.native
+      var access_token: String
       
-      var code: String = js.native
+      var code: String
       
-      var error: String = js.native
+      var error: String
       
-      var error_subtype: String = js.native
+      var error_subtype: String
       
-      var expires_at: Double = js.native
+      var expires_at: Double
       
-      var expires_in: Double = js.native
+      var expires_in: Double
       
-      var first_issued_at: Double = js.native
+      var first_issued_at: Double
       
-      var id_token: String = js.native
+      var id_token: String
       
-      var scope: String = js.native
+      var scope: String
     }
     object AuthorizeResponse {
       
@@ -244,20 +240,19 @@ object gapi {
       }
     }
     
-    @js.native
     trait BasicProfile extends StObject {
       
-      def getEmail(): String = js.native
+      def getEmail(): String
       
-      def getFamilyName(): String = js.native
+      def getFamilyName(): String
       
-      def getGivenName(): String = js.native
+      def getGivenName(): String
       
-      def getId(): String = js.native
+      def getId(): String
       
-      def getImageUrl(): String = js.native
+      def getImageUrl(): String
       
-      def getName(): String = js.native
+      def getName(): String
     }
     object BasicProfile {
       
@@ -301,54 +296,53 @@ object gapi {
       * Interface that represents the different configuration parameters for the gapi.auth2.init method.
       * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2clientconfig
       */
-    @js.native
     trait ClientConfig extends StObject {
       
       /**
         * The app's client ID, found and created in the Google Developers Console.
         */
-      var client_id: js.UndefOr[String] = js.native
+      var client_id: js.UndefOr[String] = js.undefined
       
       /**
         * The domains for which to create sign-in cookies. Either a URI, single_host_origin, or none.
         * Defaults to single_host_origin if unspecified.
         */
-      var cookie_policy: js.UndefOr[String] = js.native
+      var cookie_policy: js.UndefOr[String] = js.undefined
       
       /**
         * Fetch users' basic profile information when they sign in. Adds 'profile' and 'email' to the requested scopes. True if unspecified.
         */
-      var fetch_basic_profile: js.UndefOr[Boolean] = js.native
+      var fetch_basic_profile: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The Google Apps domain to which users must belong to sign in. This is susceptible to modification by clients,
         * so be sure to verify the hosted domain property of the returned user. Use GoogleUser.getHostedDomain() on the client,
         * and the hd claim in the ID Token on the server to verify the domain is what you expected.
         */
-      var hosted_domain: js.UndefOr[String] = js.native
+      var hosted_domain: js.UndefOr[String] = js.undefined
       
       /**
         * Used only for OpenID 2.0 client migration. Set to the value of the realm that you are currently using for OpenID 2.0,
         * as described in <a href="https://developers.google.com/accounts/docs/OpenID#openid-connect">OpenID 2.0 (Migration)</a>.
         */
-      var openid_realm: js.UndefOr[String] = js.native
+      var openid_realm: js.UndefOr[String] = js.undefined
       
       /**
         * If using ux_mode='redirect', this parameter allows you to override the default redirect_uri that will be used at the end of the consent flow.
         * The default redirect_uri is the current URL stripped of query parameters and hash fragment.
         */
-      var redirect_uri: js.UndefOr[String] = js.native
+      var redirect_uri: js.UndefOr[String] = js.undefined
       
       /**
         * The scopes to request, as a space-delimited string. Optional if fetch_basic_profile is not set to false.
         */
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
       /**
         * The UX mode to use for the sign-in flow.
         * By default, it will open the consent flow in a popup.
         */
-      var ux_mode: js.UndefOr[popup | redirect] = js.native
+      var ux_mode: js.UndefOr[popup | redirect] = js.undefined
     }
     object ClientConfig {
       
@@ -411,7 +405,6 @@ object gapi {
       }
     }
     
-    @js.native
     trait CurrentUser extends StObject {
       
       /**
@@ -419,17 +412,17 @@ object gapi {
         * GoogleAuth instance, the current user has not been set. Use the currentUser.listen() method or the
         * GoogleAuth.then() to get an initialized GoogleAuth instance.
         */
-      def get(): GoogleUser = js.native
+      def get(): GoogleUser
       
       /**
         * Listen for changes in currentUser.
         */
-      def listen(listener: js.Function1[/* user */ GoogleUser, _]): Unit = js.native
+      def listen(listener: js.Function1[/* user */ GoogleUser, js.Any]): Unit
     }
     object CurrentUser {
       
       @scala.inline
-      def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, _] => Unit): CurrentUser = {
+      def apply(get: () => GoogleUser, listen: js.Function1[/* user */ GoogleUser, js.Any] => Unit): CurrentUser = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[CurrentUser]
       }
@@ -441,7 +434,7 @@ object gapi {
         def setGet(value: () => GoogleUser): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
         @scala.inline
-        def setListen(value: js.Function1[/* user */ GoogleUser, _] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        def setListen(value: js.Function1[/* user */ GoogleUser, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -459,8 +452,8 @@ object gapi {
       def attachClickHandler(
         container: js.Any,
         options: SigninOptions,
-        onsuccess: js.Function1[/* googleUser */ GoogleUser, _],
-        onfailure: js.Function1[/* reason */ String, _]
+        onsuccess: js.Function1[/* googleUser */ GoogleUser, js.Any],
+        onfailure: js.Function1[/* reason */ String, js.Any]
       ): js.Any = js.native
       
       var currentUser: CurrentUser = js.native
@@ -495,10 +488,10 @@ object gapi {
         * Calls the onInit function when the GoogleAuth object is fully initialized, or calls the onFailure function if
         * initialization fails.
         */
-      def `then`(onInit: js.Function1[/* googleAuth */ this.type, _]): js.Any = js.native
+      def `then`(onInit: js.Function1[/* googleAuth */ this.type, js.Any]): js.Any = js.native
       def `then`(
-        onInit: js.Function1[/* googleAuth */ this.type, _],
-        onFailure: js.Function1[/* reason */ Details, _]
+        onInit: js.Function1[/* googleAuth */ this.type, js.Any],
+        onFailure: js.Function1[/* reason */ Details, js.Any]
       ): js.Any = js.native
     }
     
@@ -579,23 +572,22 @@ object gapi {
       def signIn(options: SigninOptionsBuilder): js.Any = js.native
     }
     
-    @js.native
     trait IsSignedIn extends StObject {
       
       /**
         * Returns whether the current user is currently signed in.
         */
-      def get(): Boolean = js.native
+      def get(): Boolean
       
       /**
         * Listen for changes in the current user's sign-in state.
         */
-      def listen(listener: js.Function1[/* signedIn */ Boolean, _]): Unit = js.native
+      def listen(listener: js.Function1[/* signedIn */ Boolean, js.Any]): Unit
     }
     object IsSignedIn {
       
       @scala.inline
-      def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, _] => Unit): IsSignedIn = {
+      def apply(get: () => Boolean, listen: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): IsSignedIn = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), listen = js.Any.fromFunction1(listen))
         __obj.asInstanceOf[IsSignedIn]
       }
@@ -607,7 +599,7 @@ object gapi {
         def setGet(value: () => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
         @scala.inline
-        def setListen(value: js.Function1[/* signedIn */ Boolean, _] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+        def setListen(value: js.Function1[/* signedIn */ Boolean, js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       }
     }
     
@@ -616,14 +608,13 @@ object gapi {
       * Interface that represents the different configuration parameters for the GoogleAuth.grantOfflineAccess(options) method.
       * Reference: https://developers.google.com/api-client-library/javascript/reference/referencedocs#gapiauth2offlineaccessoptions
       */
-    @js.native
     trait OfflineAccessOptions extends StObject {
       
-      var app_package_name: js.UndefOr[String] = js.native
+      var app_package_name: js.UndefOr[String] = js.undefined
       
-      var prompt: js.UndefOr[select_account | consent] = js.native
+      var prompt: js.UndefOr[select_account | consent] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
     }
     object OfflineAccessOptions {
       
@@ -656,7 +647,6 @@ object gapi {
       }
     }
     
-    @js.native
     trait SigninOptions extends StObject {
       
       /**
@@ -664,14 +654,14 @@ object gapi {
         * See Android app installs from your web site:
         * https://developers.google.com/identity/sign-in/web/android-app-installs
         */
-      var app_package_name: js.UndefOr[String] = js.native
+      var app_package_name: js.UndefOr[String] = js.undefined
       
       /**
         *     Fetch users' basic profile information when they sign in.
         *     Adds 'profile', 'email' and 'openid' to the requested scopes.
         *     True if unspecified.
         */
-      var fetch_basic_profile: js.UndefOr[Boolean] = js.native
+      var fetch_basic_profile: js.UndefOr[Boolean] = js.undefined
       
       /**
         * When your app knows which user it is trying to authenticate, it can provide this parameter as a hint to the authentication server.
@@ -680,32 +670,32 @@ object gapi {
         * which is equivalent to the user's Google ID.
         * https://developers.google.com/identity/protocols/OpenIDConnect?hl=en#authenticationuriparameters
         */
-      var login_hint: js.UndefOr[String] = js.native
+      var login_hint: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies whether to prompt the user for re-authentication.
         * See OpenID Connect Request Parameters:
         * https://openid.net/specs/openid-connect-basic-1_0.html#RequestParameters
         */
-      var prompt: js.UndefOr[String] = js.native
+      var prompt: js.UndefOr[String] = js.undefined
       
       /**
         * If using ux_mode='redirect', this parameter allows you to override the default redirect_uri that will be used at the end of the consent flow.
         * The default redirect_uri is the current URL stripped of query parameters and hash fragment.
         */
-      var redirect_uri: js.UndefOr[String] = js.native
+      var redirect_uri: js.UndefOr[String] = js.undefined
       
       /**
         * The scopes to request, as a space-delimited string.
         * Optional if fetch_basic_profile is not set to false.
         */
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
       /**
         * The UX mode to use for the sign-in flow.
         * By default, it will open the consent flow in a popup.
         */
-      var ux_mode: js.UndefOr[popup | redirect] = js.native
+      var ux_mode: js.UndefOr[popup | redirect] = js.undefined
     }
     object SigninOptions {
       
@@ -762,18 +752,17 @@ object gapi {
       }
     }
     
-    @js.native
     trait SigninOptionsBuilder extends StObject {
       
-      def setAppPackageName(name: String): js.Any = js.native
+      def setAppPackageName(name: String): js.Any
       
-      def setFetchBasicProfile(fetch: Boolean): js.Any = js.native
+      def setFetchBasicProfile(fetch: Boolean): js.Any
       
-      def setLoginHint(hint: String): js.Any = js.native
+      def setLoginHint(hint: String): js.Any
       
-      def setPrompt(prompt: String): js.Any = js.native
+      def setPrompt(prompt: String): js.Any
       
-      def setScope(scope: String): js.Any = js.native
+      def setScope(scope: String): js.Any
     }
     object SigninOptionsBuilder {
       

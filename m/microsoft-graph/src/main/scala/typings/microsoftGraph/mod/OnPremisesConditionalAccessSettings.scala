@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnPremisesConditionalAccessSettings extends Entity {
+trait OnPremisesConditionalAccessSettings
+  extends StObject
+     with Entity {
   
   // Indicates if on premises conditional access is enabled for this organization
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the
     * conditional access policy.
     */
-  var excludedGroups: js.UndefOr[js.Array[String]] = js.native
+  var excludedGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User groups that will be targeted by on premises conditional access. All users in these groups will be required to have
     * mobile device managed and compliant for mail access.
     */
-  var includedGroups: js.UndefOr[js.Array[String]] = js.native
+  var includedGroups: js.UndefOr[js.Array[String]] = js.undefined
   
   // Override the default access rule when allowing a device to ensure access is granted.
-  var overrideDefaultRule: js.UndefOr[Boolean] = js.native
+  var overrideDefaultRule: js.UndefOr[Boolean] = js.undefined
 }
 object OnPremisesConditionalAccessSettings {
   

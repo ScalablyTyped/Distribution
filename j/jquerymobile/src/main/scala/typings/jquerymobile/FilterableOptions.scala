@@ -2,29 +2,27 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterableOptions extends StObject {
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var defaults: js.UndefOr[Boolean] = js.native
+  var defaults: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var enhanced: js.UndefOr[Boolean] = js.native
+  var enhanced: js.UndefOr[Boolean] = js.undefined
   
-  var filterCallback: js.UndefOr[js.Function2[/* index */ Double, /* searchValue */ js.UndefOr[String], Boolean]] = js.native
+  var filterCallback: js.UndefOr[js.Function2[/* index */ Double, /* searchValue */ js.UndefOr[String], Boolean]] = js.undefined
   
-  var filterPlaceholder: js.UndefOr[String] = js.native
+  var filterPlaceholder: js.UndefOr[String] = js.undefined
   
-  var filterReveal: js.UndefOr[Boolean] = js.native
+  var filterReveal: js.UndefOr[Boolean] = js.undefined
   
-  var filterTheme: js.UndefOr[String] = js.native
+  var filterTheme: js.UndefOr[String] = js.undefined
   
-  var input: js.Any = js.native
+  var input: js.Any
 }
 object FilterableOptions {
   

@@ -2,25 +2,23 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxButtonTypes extends StObject {
   
-  var close: String = js.native
+  var close: String
   
-  var download: String = js.native
+  var download: String
   
-  var fullScreen: String = js.native
+  var fullScreen: String
   
-  var share: String = js.native
+  var share: String
   
-  var slideShow: String = js.native
+  var slideShow: String
   
-  var thumbs: String = js.native
+  var thumbs: String
   
-  var zoom: String = js.native
+  var zoom: String
 }
 object FancyBoxButtonTypes {
   

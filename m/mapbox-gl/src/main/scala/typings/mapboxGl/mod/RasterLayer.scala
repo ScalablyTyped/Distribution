@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.raster
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RasterLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[RasterLayout] = js.native
+  var layout: js.UndefOr[RasterLayout] = js.undefined
   
-  var paint: js.UndefOr[RasterPaint] = js.native
+  var paint: js.UndefOr[RasterPaint] = js.undefined
   
-  var `type`: raster = js.native
+  var `type`: raster
 }
 object RasterLayer {
   
   @scala.inline
-  def apply(id: String, `type`: raster): RasterLayer = {
+  def apply(id: String): RasterLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("raster")
     __obj.asInstanceOf[RasterLayer]
   }
   

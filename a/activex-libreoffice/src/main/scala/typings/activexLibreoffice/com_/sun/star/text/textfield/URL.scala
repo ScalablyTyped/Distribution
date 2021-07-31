@@ -12,34 +12,34 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of text field that displays a {@link URL}
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait URL extends TextField_ {
+trait URL
+  extends StObject
+     with TextField_ {
   
   /** Specifies how the {@link URL} is formatted on output. */
-  var Format: Double = js.native
+  var Format: Double
   
   /**
     * contains the content that will be displayed to the user.
     *
     * If this string is empty, the `URL` will be shown.
     */
-  var Representation: String = js.native
+  var Representation: String
   
   /** Specifies the frame name in that the {@link URL} will be opened */
-  var TargetFrame: String = js.native
+  var TargetFrame: String
   
   /**
     * contains the unparsed original {@link URL} , for example, [http://me:pass@www.sun.de:8080/pub/test/foo.txt?a=b#xyz]{@link
     * url="http://me:pass@www.sun.de:8080/pub/test/foo.txt?a=b#xyz"}
     */
-  var URL: String = js.native
+  var URL: String
 }
 object URL {
   

@@ -11,8 +11,8 @@ JSON.parse with bigints support
 | Full name          | json-bigint |
 | Keywords           | JSON, bigint, bignumber, parse, json |
 | # releases         | 4 |
-| # dependents       | 180 |
-| # downloads        | 92807218 |
+| # dependents       | 223 |
+| # downloads        | 130553344 |
 | # stars            | 4 |
 
 ## Links

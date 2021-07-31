@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to decrement the left indentation of paragraphs in a selected range.
   */
-@js.native
-trait DecrementParagraphLeftIndentCommand extends CommandWithSimpleStateBase {
+trait DecrementParagraphLeftIndentCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DecrementParagraphLeftIndentCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DecrementParagraphLeftIndentCommand {
   

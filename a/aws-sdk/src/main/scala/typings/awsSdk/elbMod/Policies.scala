@@ -2,26 +2,24 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policies extends StObject {
   
   /**
     * The stickiness policies created using CreateAppCookieStickinessPolicy.
     */
-  var AppCookieStickinessPolicies: js.UndefOr[typings.awsSdk.elbMod.AppCookieStickinessPolicies] = js.native
+  var AppCookieStickinessPolicies: js.UndefOr[typings.awsSdk.elbMod.AppCookieStickinessPolicies] = js.undefined
   
   /**
     * The stickiness policies created using CreateLBCookieStickinessPolicy.
     */
-  var LBCookieStickinessPolicies: js.UndefOr[typings.awsSdk.elbMod.LBCookieStickinessPolicies] = js.native
+  var LBCookieStickinessPolicies: js.UndefOr[typings.awsSdk.elbMod.LBCookieStickinessPolicies] = js.undefined
   
   /**
     * The policies other than the stickiness policies.
     */
-  var OtherPolicies: js.UndefOr[PolicyNames] = js.native
+  var OtherPolicies: js.UndefOr[PolicyNames] = js.undefined
 }
 object Policies {
   

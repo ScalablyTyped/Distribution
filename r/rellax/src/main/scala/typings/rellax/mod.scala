@@ -10,7 +10,6 @@ import typings.std.HTMLElement
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,20 +22,47 @@ object mod extends Shortcut {
     * @param el Single element or string with selector of elements
     * @param options Options
     */
-  class ^ () extends RellaxInstance {
+  class ^ ()
+    extends StObject
+       with RellaxInstance {
     def this(el: String) = this()
     def this(el: Element) = this()
-    def this(el: js.UndefOr[scala.Nothing], options: RellaxOptions) = this()
     def this(el: String, options: RellaxOptions) = this()
+    def this(el: Unit, options: RellaxOptions) = this()
     def this(el: Element, options: RellaxOptions) = this()
+    
+    /**
+      * End Rellax and reset parallax elements to their original positions
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * Rellax elements
+      */
+    /* CompleteClass */
+    var elms: NodeListOf[Element] | js.Array[Element] = js.native
+    
+    /**
+      * Options
+      */
+    /* CompleteClass */
+    var options: RellaxOptions = js.native
+    
+    /**
+      * Destroy and create again parallax with previous settings
+      */
+    /* CompleteClass */
+    override def refresh(): Unit = js.native
   }
   @JSImport("rellax", JSImport.Namespace)
   @js.native
-  val ^ : Rellax = js.native
+  val ^ : js.Object & Rellax = js.native
   
   @js.native
   trait Rellax
-    extends /**
+    extends StObject
+       with /**
     * Inits and starts the Parallax animations
     * @param el Single element or string with selector of elements
     * @param options Options
@@ -44,7 +70,7 @@ object mod extends Shortcut {
   Instantiable0[RellaxInstance]
        with Instantiable1[(/* el */ Element) | (/* el */ String), RellaxInstance]
        with Instantiable2[
-          js.UndefOr[(/* el */ Element) | (/* el */ String)], 
+          (/* el */ Element) | (/* el */ String) | (/* el */ Unit), 
           /* options */ RellaxOptions, 
           RellaxInstance
         ] {
@@ -55,35 +81,34 @@ object mod extends Shortcut {
       * @param options Options
       */
     def apply(): RellaxInstance = js.native
-    def apply(el: js.UndefOr[scala.Nothing], options: RellaxOptions): RellaxInstance = js.native
     def apply(el: String): RellaxInstance = js.native
     def apply(el: String, options: RellaxOptions): RellaxInstance = js.native
+    def apply(el: Unit, options: RellaxOptions): RellaxInstance = js.native
     def apply(el: Element): RellaxInstance = js.native
     def apply(el: Element, options: RellaxOptions): RellaxInstance = js.native
   }
   
-  @js.native
   trait RellaxInstance extends StObject {
     
     /**
       * End Rellax and reset parallax elements to their original positions
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Rellax elements
       */
-    var elms: NodeListOf[Element] | js.Array[Element] = js.native
+    var elms: NodeListOf[Element] | js.Array[Element]
     
     /**
       * Options
       */
-    var options: RellaxOptions = js.native
+    var options: RellaxOptions
     
     /**
       * Destroy and create again parallax with previous settings
       */
-    def refresh(): Unit = js.native
+    def refresh(): Unit
   }
   object RellaxInstance {
     
@@ -118,54 +143,53 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RellaxOptions extends StObject {
     
     /**
       * Each breakpoint value represents the resolution for mobile, tablet, desktop respectively.
       */
-    var breakpoints: js.UndefOr[js.Tuple3[Double, Double, Double]] = js.native
+    var breakpoints: js.UndefOr[js.Tuple3[Double, Double, Double]] = js.undefined
     
     /**
       * Will run on every animation event
       * @param positions Object with x and y positions of the rellax element
       */
-    var callback: js.UndefOr[js.Function1[/* positions */ X, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* positions */ X, Unit]] = js.undefined
     
     /**
       * Enable the ability to center parallax elements in your viewport
       */
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable horizontal parallax. This feature is intended for panoramic style websites, where users scroll horizontally instead of vertically
       */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do we want rellax element to be relative to the mentioned wrapper.
       */
-    var relativeToWrapper: js.UndefOr[Boolean] = js.native
+    var relativeToWrapper: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow decimal pixel values
       */
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A negative value will make it move slower than regular scrolling, and a positive value will make it move faster
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable vertical parallax
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, the position of parallax elements is determined via the scroll position of the body. Passing in the wrapper property will tell Rellax to watch that element instead
       */
-    var wrapper: js.UndefOr[String | HTMLElement] = js.native
+    var wrapper: js.UndefOr[String | HTMLElement] = js.undefined
   }
   object RellaxOptions {
     
@@ -234,8 +258,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Rellax
+  type _To = js.Object & Rellax
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Rellax = ^
+  override def _to: js.Object & Rellax = ^
 }

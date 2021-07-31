@@ -12,30 +12,30 @@ import typings.stripejs.stripejsStrings.pii
 import typings.stripejs.stripejsStrings.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenMod {
   
-  @js.native
-  trait BankTokenData extends IBANTokenData {
+  trait BankTokenData
+    extends StObject
+       with IBANTokenData {
     
     /**
       * The bank account number
       */
-    var account_number: String = js.native
+    var account_number: String
     
     /**
       * The 2-digit country ISO code
       * @example 'US'
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * The routing transit number for the bank account
       * NOTE: This is optional if the {@link BankTokenData.currency} is 'eur'
       */
-    var routing_number: js.UndefOr[String] = js.native
+    var routing_number: js.UndefOr[String] = js.undefined
   }
   object BankTokenData {
     
@@ -68,24 +68,23 @@ object tokenMod {
     }
   }
   
-  @js.native
   trait IBANTokenData extends StObject {
     
     /**
       * The name of the person or business that owns the bank account.
       */
-    var account_holder_name: String = js.native
+    var account_holder_name: String
     
     /**
       * The type of entity that holds the account.
       */
-    var account_holder_type: individual | company = js.native
+    var account_holder_type: individual | company
     
     /**
       * Three-letter ISO code for the currency paid out to the bank account
       * @example 'usd'
       */
-    var currency: String = js.native
+    var currency: String
   }
   object IBANTokenData {
     
@@ -109,13 +108,12 @@ object tokenMod {
     }
   }
   
-  @js.native
   trait PiiTokenData extends StObject {
     
     /**
       * The personal ID number
       */
-    var personal_id_number: String = js.native
+    var personal_id_number: String
   }
   object PiiTokenData {
     
@@ -133,51 +131,50 @@ object tokenMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
     /**
       * Hash describing the bank account
       */
-    var bank_account: js.UndefOr[BankAccount] = js.native
+    var bank_account: js.UndefOr[BankAccount] = js.undefined
     
     /**
       * Hash describing the card used to make the charge
       */
-    var card: js.UndefOr[Card] = js.native
+    var card: js.UndefOr[Card] = js.undefined
     
     /**
       * IP address of the client that generated the token
       */
-    var client_ip: String = js.native
+    var client_ip: String
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch
       */
-    var created: String = js.native
+    var created: String
     
     /**
       * The unique identifier for the token
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * LIVE MODE = `true`
       * TEST MODE = `false`
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var `object`: token = js.native
+    var `object`: token
     
     /**
       * Type of the token
       */
-    var `type`: account | bank_account | card | pii = js.native
+    var `type`: account | bank_account | card | pii
     
     /**
       * Whether this token has already been used (tokens can be used only once)
       */
-    var used: Boolean = js.native
+    var used: Boolean
   }
   object Token {
     
@@ -187,12 +184,11 @@ object tokenMod {
       created: String,
       id: String,
       livemode: Boolean,
-      `object`: token,
       `type`: account | bank_account | card | pii,
       used: Boolean
     ): Token = {
       val __obj = js.Dynamic.literal(client_ip = client_ip.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("token")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
@@ -235,43 +231,42 @@ object tokenMod {
     }
   }
   
-  @js.native
   trait TokenData extends StObject {
     
-    var address_city: String = js.native
+    var address_city: String
     
     /**
       * A two character country code identifying the country
       * @example 'US'
       */
-    var address_country: js.UndefOr[String] = js.native
+    var address_country: js.UndefOr[String] = js.undefined
     
     /**
       * Fields for billing address information.
       */
-    var address_line1: String = js.native
+    var address_line1: String
     
-    var address_line2: js.UndefOr[String] = js.native
+    var address_line2: js.UndefOr[String] = js.undefined
     
-    var address_state: String = js.native
+    var address_state: String
     
-    var address_zip: String = js.native
+    var address_zip: String
     
     /**
       * The amount paid, not a decimal. In USD this is in cents.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * Used to add a card to an account
       * NOTE: Currently, the only supported currency for debit card payouts is 'usd'
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * The Cardholder name
       */
-    var name: String = js.native
+    var name: String
   }
   object TokenData {
     
@@ -331,18 +326,17 @@ object tokenMod {
     }
   }
   
-  @js.native
   trait TokenResult extends StObject {
     
     /**
       * There was an error. This includes client-side validation errors.
       */
-    var error: js.UndefOr[StripeError] = js.native
+    var error: js.UndefOr[StripeError] = js.undefined
     
     /**
       * The generated string that can be used for communication with the backend
       */
-    var token: js.UndefOr[Token] = js.native
+    var token: js.UndefOr[Token] = js.undefined
   }
   object TokenResult {
     

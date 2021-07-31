@@ -2,25 +2,23 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectPopoverInterfaceMod {
   
-  @js.native
   trait SelectPopoverOption extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var handler: js.UndefOr[js.Function0[Unit]] = js.native
+    var handler: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var value: String = js.native
+    var value: String
   }
   object SelectPopoverOption {
     

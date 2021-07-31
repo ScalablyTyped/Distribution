@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadableStreamReader[R] extends StObject {
   
-  def cancel(): js.Promise[Unit] = js.native
+  def cancel(): js.Promise[Unit]
   
-  def read(): js.Promise[ReadableStreamReadResult[R]] = js.native
+  def read(): js.Promise[ReadableStreamReadResult[R]]
   
-  def releaseLock(): Unit = js.native
+  def releaseLock(): Unit
 }
 object ReadableStreamReader {
   
@@ -27,7 +25,7 @@ object ReadableStreamReader {
   }
   
   @scala.inline
-  implicit class ReadableStreamReaderMutableBuilder[Self <: ReadableStreamReader[_], R] (val x: Self with ReadableStreamReader[R]) extends AnyVal {
+  implicit class ReadableStreamReaderMutableBuilder[Self <: ReadableStreamReader[?], R] (val x: Self & ReadableStreamReader[R]) extends AnyVal {
     
     @scala.inline
     def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))

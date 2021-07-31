@@ -2,20 +2,18 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Terms for Preferred Deals. Note that Preferred Deals cannot be created via
   * the API at this time, but can be returned in a get or list request.
   */
-@js.native
 trait SchemaNonGuaranteedFixedPriceTerms extends StObject {
   
   /**
     * Fixed price for the specified buyer.
     */
-  var fixedPrices: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.native
+  var fixedPrices: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.undefined
 }
 object SchemaNonGuaranteedFixedPriceTerms {
   

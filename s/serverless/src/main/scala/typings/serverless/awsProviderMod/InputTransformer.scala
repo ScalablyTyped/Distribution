@@ -3,15 +3,13 @@ package typings.serverless.awsProviderMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputTransformer extends StObject {
   
-  var inputPathsMap: StringDictionary[String] = js.native
+  var inputPathsMap: StringDictionary[String]
   
-  var inputTemplate: String = js.native
+  var inputTemplate: String
 }
 object InputTransformer {
   

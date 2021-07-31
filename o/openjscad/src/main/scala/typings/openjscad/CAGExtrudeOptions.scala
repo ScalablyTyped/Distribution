@@ -2,17 +2,15 @@ package typings.openjscad
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CAGExtrudeOptions extends StObject {
   
-  var offset: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var twistangle: js.UndefOr[Double] = js.native
+  var twistangle: js.UndefOr[Double] = js.undefined
   
-  var twiststeps: js.UndefOr[Double] = js.native
+  var twiststeps: js.UndefOr[Double] = js.undefined
 }
 object CAGExtrudeOptions {
   

@@ -16,129 +16,106 @@ import typings.tar.mod.ParseStream
 import typings.tar.mod.ReplaceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object archiveMod {
   
   object tar {
     
-    @JSImport("ionic/lib/utils/archive", "tar.Extract")
+    @JSImport("ionic/lib/utils/archive", "tar")
     @js.native
-    def Extract_(opts: String): ParseStream = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.Extract")
-    @js.native
-    def Extract_(opts: ExtractOptions): ParseStream = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ionic/lib/utils/archive", "tar.Pack")
-    @js.native
-    def Pack(): PackStream = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.Pack")
-    @js.native
-    def Pack(props: HeaderProperties): PackStream = js.native
+    @scala.inline
+    def Extract_(opts: String): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
+    @scala.inline
+    def Extract_(opts: ExtractOptions): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Extract")(opts.asInstanceOf[js.Any]).asInstanceOf[ParseStream]
     
-    @JSImport("ionic/lib/utils/archive", "tar.Parse")
-    @js.native
-    def Parse(): ParseStream = js.native
+    @scala.inline
+    def Pack(): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")().asInstanceOf[PackStream]
+    @scala.inline
+    def Pack(props: HeaderProperties): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")(props.asInstanceOf[js.Any]).asInstanceOf[PackStream]
+    
+    @scala.inline
+    def Parse(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[ParseStream]
     
     @JSImport("ionic/lib/utils/archive", "tar.blockSize")
     @js.native
     val blockSize: Double = js.native
     
-    @JSImport("ionic/lib/utils/archive", "tar.c")
-    @js.native
-    def c(options: CreateOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.c")
-    @js.native
+    @scala.inline
+    def c(options: CreateOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def c(
-      options: CreateOptions with FileOptions,
+      options: CreateOptions & FileOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.c")
-    @js.native
-    def c(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.c")
-    @js.native
-    def c_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.c")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def c(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def c_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    @scala.inline
     def c_Readable(
       options: CreateOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Readable = js.native
+    ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
-    @JSImport("ionic/lib/utils/archive", "tar.create")
-    @js.native
-    def create(options: CreateOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.create")
-    @js.native
+    @scala.inline
+    def create(options: CreateOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def create(
-      options: CreateOptions with FileOptions,
+      options: CreateOptions & FileOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.create")
-    @js.native
-    def create(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.create")
-    @js.native
-    def create_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.create")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def create(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def create_Readable(options: CreateOptions, fileList: js.Array[String]): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Readable]
+    @scala.inline
     def create_Readable(
       options: CreateOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Readable = js.native
+    ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
     
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
+    @scala.inline
+    def extract(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def extract(options: ExtractOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def extract(
-      options: ExtractOptions with FileOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract(
-      options: ExtractOptions with FileOptions,
+      options: ExtractOptions & FileOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract(options: ExtractOptionsFileOptions): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract_Writable(options: ExtractOptions): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract_Writable(
-      options: ExtractOptions,
-      fileList: js.UndefOr[scala.Nothing],
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def extract(
+      options: ExtractOptions & FileOptions,
+      fileList: Unit,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
-    def extract_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.extract")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def extract(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def extract_Writable(options: ExtractOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    @scala.inline
+    def extract_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
     def extract_Writable(
       options: ExtractOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def extract_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
     
     @JSImport("ionic/lib/utils/archive", "tar.fieldEnds")
     @js.native
@@ -247,58 +224,43 @@ object archiveMod {
       def uname_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uname")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
+    @scala.inline
+    def list(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[Writable]
+    @scala.inline
+    def list(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def list(options: ListOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def list(
-      options: ListOptions with FileOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(
-      options: ListOptions with FileOptions,
+      options: ListOptions & FileOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
     def list(
-      options: js.UndefOr[scala.Nothing],
-      fileList: js.UndefOr[scala.Nothing],
+      options: ListOptions & FileOptions,
+      fileList: Unit,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(options: js.UndefOr[scala.Nothing], fileList: js.Array[String]): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def list(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
     def list(
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(options: ListOptionsFileOptionssyn): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list_Writable(options: ListOptions with FileOptions): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.list")
-    @js.native
-    def list_Writable(options: ListOptions with FileOptions, fileList: js.Array[String]): Writable = js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def list(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def list_Writable(options: ListOptions & FileOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    @scala.inline
+    def list_Writable(options: ListOptions & FileOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
     
     object modes {
       
@@ -464,106 +426,107 @@ object archiveMod {
       def uid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uid")(x.asInstanceOf[js.Any])
     }
     
-    @JSImport("ionic/lib/utils/archive", "tar.r")
-    @js.native
-    def r(options: ReplaceOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.r")
-    @js.native
-    def r(
-      options: ReplaceOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.r")
-    @js.native
-    def r(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.r")
-    @js.native
+    @scala.inline
+    def r(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def r(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def r(
       options: ReplaceOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def r(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("ionic/lib/utils/archive", "tar.replace")
-    @js.native
-    def replace(options: ReplaceOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.replace")
-    @js.native
-    def replace(
-      options: ReplaceOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.replace")
-    @js.native
-    def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.replace")
-    @js.native
+    @scala.inline
+    def replace(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def replace(
       options: ReplaceOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def replace(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
+    @scala.inline
+    def t(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")().asInstanceOf[Writable]
+    @scala.inline
+    def t(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def t(options: ListOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def t(
-      options: ListOptions with FileOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(
-      options: ListOptions with FileOptions,
+      options: ListOptions & FileOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
     def t(
-      options: js.UndefOr[scala.Nothing],
-      fileList: js.UndefOr[scala.Nothing],
+      options: ListOptions & FileOptions,
+      fileList: Unit,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(options: js.UndefOr[scala.Nothing], fileList: js.Array[String]): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def t(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
     def t(
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(options: ListOptionsFileOptionssyn): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t_Writable(options: ListOptions with FileOptions): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.t")
-    @js.native
-    def t_Writable(options: ListOptions with FileOptions, fileList: js.Array[String]): Writable = js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def t(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def t_Writable(options: ListOptions & FileOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    @scala.inline
+    def t_Writable(options: ListOptions & FileOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
     
     object types {
       
       @JSImport("ionic/lib/utils/archive", "tar.types")
       @js.native
       val ^ : js.Any = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.0")
+      @js.native
+      val `0`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.1")
+      @js.native
+      val `1`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.2")
+      @js.native
+      val `2`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.3")
+      @js.native
+      val `3`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.4")
+      @js.native
+      val `4`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.5")
+      @js.native
+      val `5`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.6")
+      @js.native
+      val `6`: String = js.native
+      
+      @JSImport("ionic/lib/utils/archive", "tar.types.7")
+      @js.native
+      val `7`: String = js.native
       
       @JSImport("ionic/lib/utils/archive", "tar.types.A")
       @js.native
@@ -766,127 +729,66 @@ object archiveMod {
       def x: String = js.native
       @scala.inline
       def x_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("x")(x.asInstanceOf[js.Any])
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.0")
-      @js.native
-      val `0`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.1")
-      @js.native
-      val `1`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.2")
-      @js.native
-      val `2`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.3")
-      @js.native
-      val `3`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.4")
-      @js.native
-      val `4`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.5")
-      @js.native
-      val `5`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.6")
-      @js.native
-      val `6`: String = js.native
-      
-      @JSImport("ionic/lib/utils/archive", "tar.types.7")
-      @js.native
-      val `7`: String = js.native
     }
     
-    @JSImport("ionic/lib/utils/archive", "tar.u")
-    @js.native
-    def u(options: ReplaceOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.u")
-    @js.native
-    def u(
-      options: ReplaceOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.u")
-    @js.native
-    def u(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.u")
-    @js.native
+    @scala.inline
+    def u(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def u(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def u(
       options: ReplaceOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def u(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("ionic/lib/utils/archive", "tar.update")
-    @js.native
-    def update(options: ReplaceOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.update")
-    @js.native
-    def update(
-      options: ReplaceOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.update")
-    @js.native
-    def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.update")
-    @js.native
+    @scala.inline
+    def update(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def update(
       options: ReplaceOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def update(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
+    @scala.inline
+    def x(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def x(options: ExtractOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
     def x(
-      options: ExtractOptions with FileOptions,
-      fileList: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x(
-      options: ExtractOptions with FileOptions,
+      options: ExtractOptions & FileOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x(options: ExtractOptionsFileOptions): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x_Writable(options: ExtractOptions): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x_Writable(
-      options: ExtractOptions,
-      fileList: js.UndefOr[scala.Nothing],
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def x(
+      options: ExtractOptions & FileOptions,
+      fileList: Unit,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
-    def x_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
-    @JSImport("ionic/lib/utils/archive", "tar.x")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def x(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def x(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def x_Writable(options: ExtractOptions): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+    @scala.inline
+    def x_Writable(options: ExtractOptions, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
     def x_Writable(
       options: ExtractOptions,
       fileList: js.Array[String],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Writable = js.native
+    ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+    @scala.inline
+    def x_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   }
 }

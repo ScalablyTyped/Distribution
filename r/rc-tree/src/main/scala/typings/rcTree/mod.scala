@@ -7,7 +7,6 @@ import typings.rcTree.treeNodeMod.TreeNodeProps
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -128,9 +127,8 @@ object mod {
     }
     
     /* static member */
-    @JSImport("rc-tree", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: TreeProps, prevState: TreeState): PartialTreeState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: TreeProps, prevState: TreeState): PartialTreeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialTreeState]
   }
   
   @JSImport("rc-tree", "TreeNode")

@@ -5,28 +5,27 @@ import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeActionParams
-  extends WorkDoneProgressParams
+  extends StObject
+     with WorkDoneProgressParams
      with PartialResultParams {
   
   /**
     * Context carrying additional information.
     */
-  var context: CodeActionContext = js.native
+  var context: CodeActionContext
   
   /**
     * The range for which the command was invoked.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The document in which the command was invoked.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object CodeActionParams {
   

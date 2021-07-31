@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a set of asynchronous actions and operations that manage the wallet items in the wallet database. These can be used to read the existing items, or to add and remove items. */
@@ -44,7 +43,7 @@ trait WalletItemStore extends StObject {
     * @param kind The type of wallet item to retrieve.
     * @return An asynchronous operation that, on successful completion, returns the collection of wallet items of the specified type that are accessible by this app. If you use Asynchronous programming, the result type is a read-only list/vector of WalletItem items. (You can use APIs of IVectorView<WalletItem> for C++ or JavaScript, APIs of IReadOnlyList<WalletItem> for .NET.)
     */
-  def getItemsAsync(kind: WalletItemKind): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getItemsAsync(kind: WalletItemKind): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets an individual wallet item with the given ID from the wallet database. The item requested must be owned by this app.

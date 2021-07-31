@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,23 +23,31 @@ object AttachmentContentFormat extends StObject {
     * The content of the attachment is returned as a base64-encoded string.
     */
   @js.native
-  sealed trait Base64 extends AttachmentContentFormat
+  sealed trait Base64
+    extends StObject
+       with AttachmentContentFormat
   
   /**
     * The content of the attachment is returned as a string representing an .eml formatted file.
     */
   @js.native
-  sealed trait Eml extends AttachmentContentFormat
+  sealed trait Eml
+    extends StObject
+       with AttachmentContentFormat
   
   /**
     * The content of the attachment is returned as a string representing an .icalendar formatted file.
     */
   @js.native
-  sealed trait ICalendar extends AttachmentContentFormat
+  sealed trait ICalendar
+    extends StObject
+       with AttachmentContentFormat
   
   /**
     * The content of the attachment is returned as a string representing a URL.
     */
   @js.native
-  sealed trait Url extends AttachmentContentFormat
+  sealed trait Url
+    extends StObject
+       with AttachmentContentFormat
 }

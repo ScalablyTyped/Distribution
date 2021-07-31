@@ -2,13 +2,11 @@ package typings.chance.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Formatted extends StObject {
   
-  var formatted: Boolean = js.native
+  var formatted: Boolean
 }
 object Formatted {
   

@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesAllBuildDir extends StObject {
   
-  var enumValues: AllBuildDir = js.native
+  var enumValues: AllBuildDir
 }
 object EnumValuesAllBuildDir {
   

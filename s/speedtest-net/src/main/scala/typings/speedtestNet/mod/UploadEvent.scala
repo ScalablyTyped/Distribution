@@ -4,31 +4,30 @@ import typings.speedtestNet.speedtestNetStrings.upload
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sent when the test is in the upload phase. */
-@js.native
 trait UploadEvent
-  extends BaseEvent
+  extends StObject
+     with BaseEvent
      with SpeedTestEvent {
   
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
-  var progress: Double = js.native
+  var progress: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   @JSName("type")
-  var type_UploadEvent: upload = js.native
+  var type_UploadEvent: upload
   
-  var upload: DownloadUploadData = js.native
+  var upload: DownloadUploadData
 }
 object UploadEvent {
   
   @scala.inline
-  def apply(progress: Double, timestamp: Date, `type`: upload, upload: DownloadUploadData): UploadEvent = {
+  def apply(progress: Double, timestamp: Date, upload: DownloadUploadData): UploadEvent = {
     val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("upload")
     __obj.asInstanceOf[UploadEvent]
   }
   

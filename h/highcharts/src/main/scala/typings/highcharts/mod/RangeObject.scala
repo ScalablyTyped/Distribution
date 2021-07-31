@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeObject extends StObject {
   
   /**
     * Maximum number of the range.
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * Minimum number of the range.
     */
-  var min: Double = js.native
+  var min: Double
 }
 object RangeObject {
   

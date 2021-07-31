@@ -2,25 +2,23 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseUrl extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var create: js.UndefOr[Url] = js.native
+    var create: js.UndefOr[Url] = js.undefined
     
-    var destroy: js.UndefOr[Url] = js.native
+    var destroy: js.UndefOr[Url] = js.undefined
     
-    var idAttr: js.UndefOr[String] = js.native
+    var idAttr: js.UndefOr[String] = js.undefined
     
-    var read: js.UndefOr[Url] = js.native
+    var read: js.UndefOr[Url] = js.undefined
     
-    var update: js.UndefOr[Url] = js.native
+    var update: js.UndefOr[Url] = js.undefined
   }
   object BaseUrl {
     
@@ -71,16 +69,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Create extends StObject {
     
-    var create: js.UndefOr[Url] = js.native
+    var create: js.UndefOr[Url] = js.undefined
     
-    var destroy: js.UndefOr[Url] = js.native
+    var destroy: js.UndefOr[Url] = js.undefined
     
-    var read: js.UndefOr[Url] = js.native
+    var read: js.UndefOr[Url] = js.undefined
     
-    var update: js.UndefOr[Url] = js.native
+    var update: js.UndefOr[Url] = js.undefined
   }
   object Create {
     
@@ -119,10 +116,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Express extends StObject {
     
-    def express(): js.Any = js.native
+    def express(): js.Any
   }
   object Express {
     
@@ -140,10 +136,9 @@ object anon {
     }
   }
   
-  @js.native
   trait History extends StObject {
     
-    var history: String = js.native
+    var history: String
   }
   object History {
     
@@ -161,12 +156,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Route extends StObject {
     
-    var route: js.UndefOr[js.Any] = js.native
+    var route: js.UndefOr[js.Any] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Route {
     
@@ -193,10 +187,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Url {
     

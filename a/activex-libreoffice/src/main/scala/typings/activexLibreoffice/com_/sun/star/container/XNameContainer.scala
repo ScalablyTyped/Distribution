@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the generic interface for supporting the insertion and removal of named elements.
   * @see XContainer
   */
-@js.native
-trait XNameContainer extends XNameReplace {
+trait XNameContainer
+  extends StObject
+     with XNameReplace {
   
   /** inserts the given element at the specified name. */
-  def insertByName(aName: String, aElement: js.Any): Unit = js.native
+  def insertByName(aName: String, aElement: js.Any): Unit
   
   /** removes the element with the specified name. */
-  def removeByName(Name: String): Unit = js.native
+  def removeByName(Name: String): Unit
 }
 object XNameContainer {
   

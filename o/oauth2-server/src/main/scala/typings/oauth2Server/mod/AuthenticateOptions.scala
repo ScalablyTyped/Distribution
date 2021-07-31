@@ -2,31 +2,29 @@ package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticateOptions extends StObject {
   
   /**
     * Set the X-Accepted-OAuth-Scopes HTTP header on response objects.
     */
-  var addAcceptedScopesHeader: js.UndefOr[Boolean] = js.native
+  var addAcceptedScopesHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the X-OAuth-Scopes HTTP header on response objects.
     */
-  var addAuthorizedScopesHeader: js.UndefOr[Boolean] = js.native
+  var addAuthorizedScopesHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow clients to pass bearer tokens in the query string of a request.
     */
-  var allowBearerTokensInQueryString: js.UndefOr[Boolean] = js.native
+  var allowBearerTokensInQueryString: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The scope(s) to authenticate.
     */
-  var scope: js.UndefOr[String | js.Array[String]] = js.native
+  var scope: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object AuthenticateOptions {
   

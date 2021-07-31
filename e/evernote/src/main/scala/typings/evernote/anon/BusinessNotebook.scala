@@ -7,41 +7,39 @@ import typings.evernote.mod.Types.SharedNotebook
 import typings.evernote.mod.Types.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessNotebook extends StObject {
   
-  var businessNotebook: js.UndefOr[typings.evernote.mod.Types.BusinessNotebook] = js.native
+  var businessNotebook: js.UndefOr[typings.evernote.mod.Types.BusinessNotebook] = js.undefined
   
-  var contact: js.UndefOr[User] = js.native
+  var contact: js.UndefOr[User] = js.undefined
   
-  var defaultNotebook: js.UndefOr[Boolean] = js.native
+  var defaultNotebook: js.UndefOr[Boolean] = js.undefined
   
-  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var published: js.UndefOr[Boolean] = js.native
+  var published: js.UndefOr[Boolean] = js.undefined
   
-  var publishing: js.UndefOr[Publishing] = js.native
+  var publishing: js.UndefOr[Publishing] = js.undefined
   
-  var recipientSettings: js.UndefOr[NotebookRecipientSettings] = js.native
+  var recipientSettings: js.UndefOr[NotebookRecipientSettings] = js.undefined
   
-  var restrictions: js.UndefOr[NotebookRestrictions] = js.native
+  var restrictions: js.UndefOr[NotebookRestrictions] = js.undefined
   
-  var serviceCreated: js.UndefOr[Double] = js.native
+  var serviceCreated: js.UndefOr[Double] = js.undefined
   
-  var serviceUpdated: js.UndefOr[Double] = js.native
+  var serviceUpdated: js.UndefOr[Double] = js.undefined
   
-  var sharedNotebookIds: js.UndefOr[js.Array[Double]] = js.native
+  var sharedNotebookIds: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var sharedNotebooks: js.UndefOr[js.Array[SharedNotebook]] = js.native
+  var sharedNotebooks: js.UndefOr[js.Array[SharedNotebook]] = js.undefined
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
 }
 object BusinessNotebook {
   

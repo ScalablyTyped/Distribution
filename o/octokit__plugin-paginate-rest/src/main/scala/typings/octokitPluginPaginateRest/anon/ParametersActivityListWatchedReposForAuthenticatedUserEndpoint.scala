@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.ActivityListWatchedReposForAuthenticate
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityListWatchedReposForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint = js.native
+  var parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint
   
-  var response: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]
 }
 object ParametersActivityListWatchedReposForAuthenticatedUserEndpoint {
   

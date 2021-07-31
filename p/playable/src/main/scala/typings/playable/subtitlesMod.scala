@@ -5,14 +5,15 @@ import typings.playable.subtitlesTypesMod.ISubtitles
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subtitlesMod {
   
   @JSImport("playable/dist/src/modules/ui/subtitles/subtitles", JSImport.Default)
   @js.native
-  class default protected () extends Subtitles {
+  class default protected ()
+    extends StObject
+       with Subtitles {
     def this(hasRootContainerEngineEventEmitter: EventEmitterRootContainer) = this()
   }
   object default {
@@ -43,7 +44,9 @@ object subtitlesMod {
   }
   
   @js.native
-  trait Subtitles extends ISubtitles {
+  trait Subtitles
+    extends StObject
+       with ISubtitles {
     
     var _activeSubtitleIndex: js.Any = js.native
     

@@ -6,7 +6,6 @@ import typings.react.mod.StatelessComponent
 import typings.reduxForm.anon.Form
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formNameMod extends Shortcut {
@@ -19,10 +18,9 @@ object formNameMod extends Shortcut {
   @js.native
   val FormName: StatelessComponent[FormNameProps] = js.native
   
-  @js.native
   trait FormNameProps extends StObject {
     
-    def children(props: Form): ReactNode = js.native
+    def children(props: Form): ReactNode
   }
   object FormNameProps {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Volumes$Recommended")
@@ -32,7 +31,7 @@ class ResourceVolumesRecommended protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVolumes] = js.native
   def list(callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesRecommendedList): GaxiosPromise[SchemaVolumes] = js.native
   def list(params: ParamsResourceVolumesRecommendedList, callback: BodyResponseCallback[SchemaVolumes]): Unit = js.native
   def list(
@@ -64,7 +63,7 @@ class ResourceVolumesRecommended protected () extends StObject {
     */
   def rate(): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
   def rate(callback: BodyResponseCallback[SchemaBooksVolumesRecommendedRateResponse]): Unit = js.native
-  def rate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
+  def rate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
   def rate(params: ParamsResourceVolumesRecommendedRate): GaxiosPromise[SchemaBooksVolumesRecommendedRateResponse] = js.native
   def rate(
     params: ParamsResourceVolumesRecommendedRate,

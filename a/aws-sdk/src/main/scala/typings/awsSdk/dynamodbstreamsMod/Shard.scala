@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbstreamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shard extends StObject {
   
   /**
     * The shard ID of the current shard's parent.
     */
-  var ParentShardId: js.UndefOr[ShardId] = js.native
+  var ParentShardId: js.UndefOr[ShardId] = js.undefined
   
   /**
     * The range of possible sequence numbers for the shard.
     */
-  var SequenceNumberRange: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.SequenceNumberRange] = js.native
+  var SequenceNumberRange: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.SequenceNumberRange] = js.undefined
   
   /**
     * The system-generated identifier for this shard.
     */
-  var ShardId: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.ShardId] = js.native
+  var ShardId: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.ShardId] = js.undefined
 }
 object Shard {
   

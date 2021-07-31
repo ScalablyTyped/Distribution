@@ -2,62 +2,60 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
   /** When 'ACCOUNT' is chosen as search method, account_info needs to be specified. */
-  var accountInfo: js.UndefOr[AccountInfo] = js.native
+  var accountInfo: js.UndefOr[AccountInfo] = js.undefined
   
   /** The corpus to search. */
-  var corpus: js.UndefOr[String] = js.native
+  var corpus: js.UndefOr[String] = js.undefined
   
   /** The data source to search from. */
-  var dataScope: js.UndefOr[String] = js.native
+  var dataScope: js.UndefOr[String] = js.undefined
   
   /** For Drive search, specify more options in this field. */
-  var driveOptions: js.UndefOr[DriveOptions] = js.native
+  var driveOptions: js.UndefOr[DriveOptions] = js.undefined
   
   /** The end time range for the search query. These timestamps are in GMT and rounded down to the start of the given date. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** When 'ROOM' is chosen as search method, hangout_chats_info needs to be specified. (read-only) */
-  var hangoutsChatInfo: js.UndefOr[HangoutsChatInfo] = js.native
+  var hangoutsChatInfo: js.UndefOr[HangoutsChatInfo] = js.undefined
   
   /** For hangouts chat search, specify more options in this field. (read-only) */
-  var hangoutsChatOptions: js.UndefOr[HangoutsChatOptions] = js.native
+  var hangoutsChatOptions: js.UndefOr[HangoutsChatOptions] = js.undefined
   
   /** For mail search, specify more options in this field. */
-  var mailOptions: js.UndefOr[MailOptions] = js.native
+  var mailOptions: js.UndefOr[MailOptions] = js.undefined
   
   /**
     * The search method to use. This field is similar to the search_method field but is introduced to support shared drives. It supports all search method types. In case the search_method
     * is TEAM_DRIVE the response of this field will be SHARED_DRIVE only.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** When 'ORG_UNIT' is chosen as as search method, org_unit_info needs to be specified. */
-  var orgUnitInfo: js.UndefOr[OrgUnitInfo] = js.native
+  var orgUnitInfo: js.UndefOr[OrgUnitInfo] = js.undefined
   
   /** The search method to use. */
-  var searchMethod: js.UndefOr[String] = js.native
+  var searchMethod: js.UndefOr[String] = js.undefined
   
   /** When 'SHARED_DRIVE' is chosen as search method, shared_drive_info needs to be specified. */
-  var sharedDriveInfo: js.UndefOr[SharedDriveInfo] = js.native
+  var sharedDriveInfo: js.UndefOr[SharedDriveInfo] = js.undefined
   
   /** The start time range for the search query. These timestamps are in GMT and rounded down to the start of the given date. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** When 'TEAM_DRIVE' is chosen as search method, team_drive_info needs to be specified. */
-  var teamDriveInfo: js.UndefOr[TeamDriveInfo] = js.native
+  var teamDriveInfo: js.UndefOr[TeamDriveInfo] = js.undefined
   
   /** The corpus-specific search operators used to generate search results. */
-  var terms: js.UndefOr[String] = js.native
+  var terms: js.UndefOr[String] = js.undefined
   
   /** The time zone name. It should be an IANA TZ name, such as "America/Los_Angeles". For more information, see Time Zone. */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object Query {
   

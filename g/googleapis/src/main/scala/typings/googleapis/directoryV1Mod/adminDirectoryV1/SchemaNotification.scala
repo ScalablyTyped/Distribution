@@ -2,51 +2,49 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for a notification resource.
   */
-@js.native
 trait SchemaNotification extends StObject {
   
   /**
     * Body of the notification (Read-only)
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Address from which the notification is received (Read-only)
     */
-  var fromAddress: js.UndefOr[String] = js.native
+  var fromAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean indicating whether the notification is unread or not.
     */
-  var isUnread: js.UndefOr[Boolean] = js.native
+  var isUnread: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of the resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var notificationId: js.UndefOr[String] = js.native
+  var notificationId: js.UndefOr[String] = js.undefined
   
   /**
     * Time at which notification was sent (Read-only)
     */
-  var sendTime: js.UndefOr[String] = js.native
+  var sendTime: js.UndefOr[String] = js.undefined
   
   /**
     * Subject of the notification (Read-only)
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
 }
 object SchemaNotification {
   

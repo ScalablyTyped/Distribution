@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mail {
@@ -23,7 +22,6 @@ object mail {
     * @see com.sun.star.mail.XMailMessage
     * @since OOo 2.0
     */
-  @js.native
   trait MailAttachment extends StObject {
     
     /**
@@ -32,10 +30,10 @@ object mail {
       * of the data is a sequence of bytes.
       * @see com.sun.star.datatransfer.XTransferable
       */
-    var Data: XTransferable = js.native
+    var Data: XTransferable
     
     /** The name of the attachment as seen by the recipient of the mail message. ReadableName must not be empty. */
-    var ReadableName: String = js.native
+    var ReadableName: String
   }
   object MailAttachment {
     
@@ -63,8 +61,9 @@ object mail {
   type MailException = Exception
   
   /** @since OOo 2.0 */
-  @js.native
-  trait MailMessage extends XMailMessage {
+  trait MailMessage
+    extends StObject
+       with XMailMessage {
     
     /**
       * Constructs an instance of a mail message.
@@ -75,7 +74,7 @@ object mail {
       * @see com.sun.star.mail.XMailMessage
       * @see com.sun.star.datatransfer.XTransferable
       */
-    def create(sTo: String, sFrom: String, sSubject: String, xBody: XTransferable): Unit = js.native
+    def create(sTo: String, sFrom: String, sSubject: String, xBody: XTransferable): Unit
     
     /**
       * Constructs an instance of a mail message.
@@ -94,7 +93,7 @@ object mail {
       sSubject: String,
       xBody: XTransferable,
       aMailAttachment: MailAttachment
-    ): Unit = js.native
+    ): Unit
   }
   object MailMessage {
     
@@ -140,7 +139,9 @@ object mail {
   
   /** @since OOo 2.0 */
   @js.native
-  trait MailServiceProvider extends XMailServiceProvider {
+  trait MailServiceProvider
+    extends StObject
+       with XMailServiceProvider {
     
     /**
       * Creation method.
@@ -193,17 +194,18 @@ object mail {
     * @see com.sun.star.mail.XMailService
     * @since OOo 2.0
     */
-  @js.native
-  trait SendMailMessageFailedException extends Exception {
+  trait SendMailMessageFailedException
+    extends StObject
+       with Exception {
     
     /** The addresses which are invalid because they do not conform to [RFC   822]{@link url="http://www.ietf.org/rfc/rfc822.txt"} . */
-    var InvalidAddresses: SafeArray[String] = js.native
+    var InvalidAddresses: SafeArray[String]
     
     /** The addresses to which the mail message was sent successfully. */
-    var ValidSentAddresses: SafeArray[String] = js.native
+    var ValidSentAddresses: SafeArray[String]
     
     /** The addresses which are valid but to which the message was not sent. */
-    var ValidUnsentAddresses: SafeArray[String] = js.native
+    var ValidUnsentAddresses: SafeArray[String]
   }
   object SendMailMessageFailedException {
     
@@ -238,32 +240,33 @@ object mail {
     * interface may for instance show a dialog to query the user for the necessary data.
     * @since OOo 2.0
     */
-  @js.native
-  trait XAuthenticator extends XInterface {
+  trait XAuthenticator
+    extends StObject
+       with XInterface {
     
     /**
       * Will be called when the password of the user is needed.
       * @returns the password of the user.
       */
-    val Password: String = js.native
+    val Password: String
     
     /**
       * Will be called when the user name is needed.
       * @returns the user name.
       */
-    val UserName: String = js.native
+    val UserName: String
     
     /**
       * Will be called when the password of the user is needed.
       * @returns the password of the user.
       */
-    def getPassword(): String = js.native
+    def getPassword(): String
     
     /**
       * Will be called when the user name is needed.
       * @returns the user name.
       */
-    def getUserName(): String = js.native
+    def getUserName(): String
   }
   object XAuthenticator {
     
@@ -303,22 +306,23 @@ object mail {
     * @see com.sun.star.mail.XMailService
     * @since OOo 2.0
     */
-  @js.native
-  trait XConnectionListener extends XEventListener {
+  trait XConnectionListener
+    extends StObject
+       with XEventListener {
     
     /**
       * Invoked when the connection to the mail server is established.
       * @param aEvent [in] specific information regarding this event.
       * @see com.sun.star.lang.EventObject
       */
-    def connected(aEvent: EventObject): Unit = js.native
+    def connected(aEvent: EventObject): Unit
     
     /**
       * Invoked when the connection to the mail server is closed.
       * @param aEvent [in] specific information regarding this event.
       * @see com.sun.star.lang.EventObject
       */
-    def disconnected(aEvent: EventObject): Unit = js.native
+    def disconnected(aEvent: EventObject): Unit
   }
   object XConnectionListener {
     
@@ -351,48 +355,49 @@ object mail {
     * @see com.sun.star.mail.XMailService
     * @since OOo 2.0
     */
-  @js.native
-  trait XMailMessage extends XInterface {
+  trait XMailMessage
+    extends StObject
+       with XInterface {
     
     /**
       * Return a sequence of {@link MailAttachment} 's that will be attached to this mail message.
       * @see com.sun.star.mail.MailAttachment
       */
-    val Attachments: SafeArray[MailAttachment] = js.native
+    val Attachments: SafeArray[MailAttachment]
     
     /** Return a sequence of the e-mail addresses of all the BCC recipients of this mail message. */
-    val BccRecipients: SafeArray[String] = js.native
+    val BccRecipients: SafeArray[String]
     
     /**
       * The body of the mail message. It is expected that the transferable delivers the data as a string. Although a transferable may support multiple data
       * flavors only the first data flavor supplied will be used to retrieve the data and it is expected that the data will be provided as a string.
       * @see com.sun.star.datatransfer.XTransferable
       */
-    var Body: XTransferable = js.native
+    var Body: XTransferable
     
     /** Return a sequence of the e-mail addresses of all the Cc recipients of this mail message. */
-    val CcRecipients: SafeArray[String] = js.native
+    val CcRecipients: SafeArray[String]
     
     /** Return a sequence of the e-mail addresses of all recipients of this mail message. */
-    val Recipients: SafeArray[String] = js.native
+    val Recipients: SafeArray[String]
     
     /**
       * The e-mail address where replies on this mail message should be sent to. If the e-mail address doesn't conform to [RFC   822]{@link
       * url="http://www.ietf.org/rfc/rfc822.txt"} sending the mail message later will fail. If no ReplyToAddress is set replies go to the SenderAddress.
       */
-    var ReplyToAddress: String = js.native
+    var ReplyToAddress: String
     
     /**
       * The e-mail address of the sender of this mail message. The e-mail address has to conform to [RFC   822]{@link
       * url="http://www.ietf.org/rfc/rfc822.txt"} .
       */
-    var SenderAddress: String = js.native
+    var SenderAddress: String
     
     /** The display name of the sender of this mail message. */
-    var SenderName: String = js.native
+    var SenderName: String
     
     /** The subject of a mail message. */
-    var Subject: String = js.native
+    var Subject: String
     
     /**
       * Add a file attachment to a mail message.
@@ -400,43 +405,43 @@ object mail {
       * param aMailAttachment [in] specifies a file which should be attached to this mail message.
       * @see com.sun.star.mail.MailAttachment
       */
-    def addAttachment(aMailAttachment: MailAttachment): Unit = js.native
+    def addAttachment(aMailAttachment: MailAttachment): Unit
     
     /**
       * Add an BCC recipients e-mail address to the list of recipients of this mail message. If the e-mail address doesn't conform to [RFC   822]{@link
       * url="http://www.ietf.org/rfc/rfc822.txt"} sending the mail message will fail.
       * @param sRecipientAddress [in] the e-mail address of the BCC recipient.
       */
-    def addBccRecipient(sRecipientAddress: String): Unit = js.native
+    def addBccRecipient(sRecipientAddress: String): Unit
     
     /**
       * Add an Cc recipients e-mail address to the list of recipients of this mail message. If the e-mail address doesn't conform to [RFC   822]{@link
       * url="http://www.ietf.org/rfc/rfc822.txt"} sending the mail message will fail.
       * @param sRecipientAddress [in] the e-mail address of the Cc recipient.
       */
-    def addCcRecipient(sRecipientAddress: String): Unit = js.native
+    def addCcRecipient(sRecipientAddress: String): Unit
     
     /**
       * Add an recipients e-mail address to the list of recipients of this mail message. If the e-mail address doesn't conform to [RFC   822]{@link
       * url="http://www.ietf.org/rfc/rfc822.txt"} sending the mail message will fail.
       * @param sRecipientAddress [in] the e-mail address of the recipient.
       */
-    def addRecipient(sRecipientAddress: String): Unit = js.native
+    def addRecipient(sRecipientAddress: String): Unit
     
     /**
       * Return a sequence of {@link MailAttachment} 's that will be attached to this mail message.
       * @see com.sun.star.mail.MailAttachment
       */
-    def getAttachments(): SafeArray[MailAttachment] = js.native
+    def getAttachments(): SafeArray[MailAttachment]
     
     /** Return a sequence of the e-mail addresses of all the BCC recipients of this mail message. */
-    def getBccRecipients(): SafeArray[String] = js.native
+    def getBccRecipients(): SafeArray[String]
     
     /** Return a sequence of the e-mail addresses of all the Cc recipients of this mail message. */
-    def getCcRecipients(): SafeArray[String] = js.native
+    def getCcRecipients(): SafeArray[String]
     
     /** Return a sequence of the e-mail addresses of all recipients of this mail message. */
-    def getRecipients(): SafeArray[String] = js.native
+    def getRecipients(): SafeArray[String]
   }
   object XMailMessage {
     
@@ -527,8 +532,9 @@ object mail {
     * Represents a mail server abstraction.
     * @since OOo 2.0
     */
-  @js.native
-  trait XMailService extends XInterface {
+  trait XMailService
+    extends StObject
+       with XInterface {
     
     /**
       * Return the context of the current connection. The context contains information like the server name, port, connection type etc.
@@ -541,7 +547,7 @@ object mail {
       * @see com.sun.star.io.NotConnectedException
       * @throws com::sun::star::io::NotConnectedException if no connection is currently established.
       */
-    val CurrentConnectionContext: XCurrentContext = js.native
+    val CurrentConnectionContext: XCurrentContext
     
     /**
       * Returns all connection types which are supported to connect to the mail service. At least support insecure connections must be supported. Currently
@@ -549,14 +555,14 @@ object mail {
       * based connection
       * @returns a sequence of supported connection types.
       */
-    val SupportedConnectionTypes: SafeArray[String] = js.native
+    val SupportedConnectionTypes: SafeArray[String]
     
     /**
       * Register a connection listener.
       * @param xListener [in] a listener that will be informed about connection events.
       * @see com.sun.star.mail.XConnectionListener
       */
-    def addConnectionListener(xListener: XConnectionListener): Unit = js.native
+    def addConnectionListener(xListener: XConnectionListener): Unit
     
     /**
       * Connect to a mail service. Only one connection to a mail service can be established at a time.
@@ -580,13 +586,13 @@ object mail {
       * @throws com::sun::star::auth::AuthenticationException if the specified user could not be logged in.
       * @throws com::sun::star::mail::MailException for other errors during login.
       */
-    def connect(xConnectionContext: XCurrentContext, xAuthenticator: XAuthenticator): Unit = js.native
+    def connect(xConnectionContext: XCurrentContext, xAuthenticator: XAuthenticator): Unit
     
     /**
       * Disconnect from a mail service.
       * @throws com::sun::star::mail::MailException if errors occur during disconnecting.
       */
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
     /**
       * Return the context of the current connection. The context contains information like the server name, port, connection type etc.
@@ -599,7 +605,7 @@ object mail {
       * @see com.sun.star.io.NotConnectedException
       * @throws com::sun::star::io::NotConnectedException if no connection is currently established.
       */
-    def getCurrentConnectionContext(): XCurrentContext = js.native
+    def getCurrentConnectionContext(): XCurrentContext
     
     /**
       * Returns all connection types which are supported to connect to the mail service. At least support insecure connections must be supported. Currently
@@ -607,20 +613,20 @@ object mail {
       * based connection
       * @returns a sequence of supported connection types.
       */
-    def getSupportedConnectionTypes(): SafeArray[String] = js.native
+    def getSupportedConnectionTypes(): SafeArray[String]
     
     /**
       * Returns whether a connection to a mail service currently exist or not.
       * @returns `TRUE` if a connection to a mail service is established.
       */
-    def isConnected(): Boolean = js.native
+    def isConnected(): Boolean
     
     /**
       * Unregister a connection listener.
       * @param xListener [in] a listener that no longer need to be informed about connection events.
       * @see com.sun.star.mail.XConnectionListener
       */
-    def removeConnectionListener(xListener: XConnectionListener): Unit = js.native
+    def removeConnectionListener(xListener: XConnectionListener): Unit
   }
   object XMailService {
     
@@ -679,8 +685,9 @@ object mail {
     * A factory for creating different mail services.
     * @since OOo 2.0
     */
-  @js.native
-  trait XMailServiceProvider extends XInterface {
+  trait XMailServiceProvider
+    extends StObject
+       with XInterface {
     
     /**
       * A factory method.
@@ -689,7 +696,7 @@ object mail {
       * @see com.sun.star.mail.XMailServiceProvider
       * @see com.sun.star.mail.MailServiceType
       */
-    def create(aType: MailServiceType): XMailService = js.native
+    def create(aType: MailServiceType): XMailService
   }
   object XMailServiceProvider {
     
@@ -718,8 +725,9 @@ object mail {
     * @see com.sun.star.mail.XMailMessage
     * @since OOo 2.0
     */
-  @js.native
-  trait XSmtpService extends XMailService {
+  trait XSmtpService
+    extends StObject
+       with XMailService {
     
     /**
       * Send a mail message to its recipients.
@@ -734,7 +742,7 @@ object mail {
       * @throws com::sun::star::mail::MailException is thrown on other errors that may happen during sending. A possible reason may be for instance that a file a
       * @throws com::sun::star::datatransfer::UnsupportedFlavorException is thrown when the body of the mail message is provided in an unsupported mime content t
       */
-    def sendMailMessage(xMailMessage: XMailMessage): Unit = js.native
+    def sendMailMessage(xMailMessage: XMailMessage): Unit
   }
   object XSmtpService {
     

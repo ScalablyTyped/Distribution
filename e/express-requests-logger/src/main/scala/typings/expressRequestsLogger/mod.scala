@@ -13,7 +13,6 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,57 +20,58 @@ object mod {
   /**
     * Middleware for logging request/responses in Express apps
     */
-  @JSImport("express-requests-logger", JSImport.Namespace)
-  @js.native
-  def apply(): NextFunction = js.native
-  @JSImport("express-requests-logger", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): NextFunction = js.native
+  @scala.inline
+  def apply(): NextFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextFunction]
+  @scala.inline
+  def apply(options: Options): NextFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextFunction]
   
+  @JSImport("express-requests-logger", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CommonOptions extends StObject {
     
     /**
       * `true` - include request in audit, `false` - don't.
       * {@link https://github.com/PayU/express-request-logger#audit}
       */
-    var audit: js.UndefOr[Boolean] = js.native
+    var audit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * pass the fields you wish to exclude in the body of the requests (sensitive data like passwords, credit cards numbers etc..). * field - exclude all body
       * {@link https://github.com/PayU/express-request-logger#excludebody}
       */
-    var excludeBody: js.UndefOr[js.Array[String]] = js.native
+    var excludeBody: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * pass the header names you wish to exclude from the audit (senstitive data like authorization headers etc..). * field - exclude all headers
       * {@link https://github.com/PayU/express-request-logger#excludeheaders}
       */
-    var excludeHeaders: js.UndefOr[js.Array[String]] = js.native
+    var excludeHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * pass the fields you wish to mask in the body of the requests (sensitive data like passwords, credit cards numbers etc..).
       * {@link https://github.com/PayU/express-request-logger#maskbody}
       */
-    var maskBody: js.UndefOr[js.Array[String]] = js.native
+    var maskBody: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * pass the fields you wish to mask in the headers of the requests (senstitive data like authorization headers etc..).
       * {@link https://github.com/PayU/express-request-logger#maskheaders}
       */
-    var maskHeaders: js.UndefOr[js.Array[String]] = js.native
+    var maskHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * pass the fields you wish to mask in the query of the requests (sensitive data like passwords, credit cards numbers etc..).
       * {@link https://github.com/PayU/express-request-logger#maskquery}
       */
-    var maskQuery: js.UndefOr[js.Array[String]] = js.native
+    var maskQuery: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Restrict request body's logged content length (inputs other than positive integers will be ignored).
       * {@link https://github.com/PayU/express-request-logger#maxbodylength}
       */
-    var maxBodyLength: js.UndefOr[Double] = js.native
+    var maxBodyLength: js.UndefOr[Double] = js.undefined
   }
   object CommonOptions {
     
@@ -143,10 +143,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    def info(obj: js.Object, params: js.Any*): Unit = js.native
+    def info(obj: js.Object, params: js.Any*): Unit
   }
   object Logger {
     
@@ -167,8 +166,9 @@ object mod {
   /**
     * {@link https://github.com/PayU/express-request-logger#options}
     */
-  @js.native
-  trait Options extends CommonOptions {
+  trait Options
+    extends StObject
+       with CommonOptions {
     
     /**
       * Additional to mask options, you can add your own functionality to mask request body.
@@ -176,7 +176,9 @@ object mod {
       * The custom function gets the full express request and should return the masked body.
       * {@link https://github.com/PayU/express-request-logger#custommaskbodyfunc}
       */
-    var customMaskBodyFunc: js.UndefOr[js.Function1[/* req */ Request[ParamsDictionary, _, _, ParsedQs], String]] = js.native
+    var customMaskBodyFunc: js.UndefOr[
+        js.Function1[/* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], String]
+      ] = js.undefined
     
     /**
       * `true` - log once the request arrives (request details), and log after response is sent (both request and response).
@@ -184,32 +186,32 @@ object mod {
       * `false` - log only after the response is sent.
       * {@link https://github.com/PayU/express-request-logger#doubleaudit}
       */
-    var doubleAudit: js.UndefOr[Boolean] = js.native
+    var doubleAudit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if the request url matches one of the values in the array, the request/response won't be logged.
       * {@link https://github.com/PayU/express-request-logger#excludeurls}
       */
-    var excludeURLs: js.UndefOr[js.Array[String]] = js.native
+    var excludeURLs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The logger to use for logging the request/response.
       * Package tested only with `bunyan` logger, but should work with any logger which has a info method which takes an object.
       * {@link https://github.com/PayU/express-request-logger#logger}
       */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /**
       * Specific configuration for requests
       * {@link https://github.com/PayU/express-request-logger#request}
       */
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Specific configuration for responses
       * {@link https://github.com/PayU/express-request-logger#response}
       */
-    var response: js.UndefOr[ResponseOptions] = js.native
+    var response: js.UndefOr[ResponseOptions] = js.undefined
   }
   object Options {
     
@@ -223,7 +225,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCustomMaskBodyFunc(value: /* req */ Request[ParamsDictionary, _, _, ParsedQs] => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
+      def setCustomMaskBodyFunc(value: /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs] => String): Self = StObject.set(x, "customMaskBodyFunc", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomMaskBodyFuncUndefined: Self = StObject.set(x, "customMaskBodyFunc", js.undefined)
@@ -263,15 +265,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait ResponseOptions extends CommonOptions {
+  trait ResponseOptions
+    extends StObject
+       with CommonOptions {
     
     /**
       * Map of statusCodes to log levels.
       * By default the audit is logged with level 'info'.
       * It is possible to override it by configuration according to the statusCode of the response
       */
-    var levels: js.UndefOr[StatusCodeMap] = js.native
+    var levels: js.UndefOr[StatusCodeMap] = js.undefined
   }
   object ResponseOptions {
     
@@ -298,10 +301,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        val maxBodyLength: Double = js.native
+        val maxBodyLength: Double
       }
       object Request {
         
@@ -319,12 +321,11 @@ object mod {
         }
       }
       
-      @js.native
       trait Response extends StObject {
         
-        val maxBodyLength: Double = js.native
+        val maxBodyLength: Double
         
-        val timestamp: Date = js.native
+        val timestamp: Date
       }
       object Response {
         

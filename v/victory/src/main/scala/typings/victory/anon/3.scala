@@ -2,15 +2,13 @@ package typings.victory.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var x: js.UndefOr[Boolean] = js.native
+  var x: js.UndefOr[Boolean] = js.undefined
   
-  var y: js.UndefOr[Boolean] = js.native
+  var y: js.UndefOr[Boolean] = js.undefined
 }
 object `3` {
   

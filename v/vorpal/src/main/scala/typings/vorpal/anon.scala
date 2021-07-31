@@ -2,7 +2,6 @@ package typings.vorpal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -17,10 +16,9 @@ object anon {
     def done(): Unit = js.native
   }
   
-  @js.native
   trait Data extends StObject {
     
-    def data(): js.Promise[js.Array[java.lang.String]] = js.native
+    def data(): js.Promise[js.Array[java.lang.String]]
   }
   object Data {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait String extends StObject {
     
-    var string: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var string: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
   object String {
     

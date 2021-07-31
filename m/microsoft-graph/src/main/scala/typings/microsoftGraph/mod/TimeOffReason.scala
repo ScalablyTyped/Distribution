@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeOffReason extends ChangeTrackedEntity {
+trait TimeOffReason
+  extends StObject
+     with ChangeTrackedEntity {
   
   // The name of the timeOffReason. Required.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup;
     * phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required.
     */
-  var iconType: js.UndefOr[NullableOption[TimeOffReasonIconType]] = js.native
+  var iconType: js.UndefOr[NullableOption[TimeOffReasonIconType]] = js.undefined
   
   // Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
-  var isActive: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isActive: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object TimeOffReason {
   

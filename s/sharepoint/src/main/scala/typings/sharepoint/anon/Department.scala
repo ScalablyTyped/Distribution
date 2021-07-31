@@ -2,19 +2,17 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Department extends StObject {
   
-  var Department: String = js.native
+  var Department: String
   
-  var Email: String = js.native
+  var Email: String
   
-  var MobilePhone: String = js.native
+  var MobilePhone: String
   
-  var Title: String = js.native
+  var Title: String
 }
 object Department {
   

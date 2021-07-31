@@ -3,13 +3,11 @@ package typings.sharepoint.SP
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTimeResult extends StObject {
   
-  def get_value(): Date = js.native
+  def get_value(): Date
 }
 object DateTimeResult {
   

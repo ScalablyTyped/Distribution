@@ -6,32 +6,30 @@ import typings.std.RTCIceGatheringState
 import typings.std.RTCIceParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIceTransport extends StObject {
   
   //readonly role: RTCIceRole;
   //readonly component: RTCIceComponent;
   //readonly state: RTCIceTransportState;
-  val gatheringState: RTCIceGatheringState = js.native
+  val gatheringState: RTCIceGatheringState
   
-  def getLocalCandidates(): js.Array[RTCIceCandidate] = js.native
+  def getLocalCandidates(): js.Array[RTCIceCandidate]
   
-  def getLocalParameters(): RTCIceParameters | Null = js.native
+  def getLocalParameters(): RTCIceParameters | Null
   
-  def getRemoteCandidates(): js.Array[RTCIceCandidate] = js.native
+  def getRemoteCandidates(): js.Array[RTCIceCandidate]
   
-  def getRemoteParameters(): RTCIceParameters | Null = js.native
+  def getRemoteParameters(): RTCIceParameters | Null
   
-  def getSelectedCandidatePair(): RTCIceCandidatePair | Null = js.native
+  def getSelectedCandidatePair(): RTCIceCandidatePair | Null
   
-  var ongatheringstatechange: IceTransportEventHandler = js.native
+  var ongatheringstatechange: IceTransportEventHandler
   
-  var onselectedcandidatepairchange: IceTransportEventHandler = js.native
+  var onselectedcandidatepairchange: IceTransportEventHandler
   
-  var onstatechange: IceTransportEventHandler = js.native
+  var onstatechange: IceTransportEventHandler
 }
 object RTCIceTransport {
   
@@ -44,7 +42,7 @@ object RTCIceTransport {
     getRemoteParameters: () => RTCIceParameters | Null,
     getSelectedCandidatePair: () => RTCIceCandidatePair | Null
   ): RTCIceTransport = {
-    val __obj = js.Dynamic.literal(gatheringState = gatheringState.asInstanceOf[js.Any], getLocalCandidates = js.Any.fromFunction0(getLocalCandidates), getLocalParameters = js.Any.fromFunction0(getLocalParameters), getRemoteCandidates = js.Any.fromFunction0(getRemoteCandidates), getRemoteParameters = js.Any.fromFunction0(getRemoteParameters), getSelectedCandidatePair = js.Any.fromFunction0(getSelectedCandidatePair))
+    val __obj = js.Dynamic.literal(gatheringState = gatheringState.asInstanceOf[js.Any], getLocalCandidates = js.Any.fromFunction0(getLocalCandidates), getLocalParameters = js.Any.fromFunction0(getLocalParameters), getRemoteCandidates = js.Any.fromFunction0(getRemoteCandidates), getRemoteParameters = js.Any.fromFunction0(getRemoteParameters), getSelectedCandidatePair = js.Any.fromFunction0(getSelectedCandidatePair), ongatheringstatechange = null, onselectedcandidatepairchange = null, onstatechange = null)
     __obj.asInstanceOf[RTCIceTransport]
   }
   

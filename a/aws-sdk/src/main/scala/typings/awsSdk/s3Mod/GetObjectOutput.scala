@@ -2,163 +2,161 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectOutput extends StObject {
   
   /**
     * Indicates that a range of bytes was specified.
     */
-  var AcceptRanges: js.UndefOr[typings.awsSdk.s3Mod.AcceptRanges] = js.native
+  var AcceptRanges: js.UndefOr[typings.awsSdk.s3Mod.AcceptRanges] = js.undefined
   
   /**
     * Object data.
     */
-  var Body: js.UndefOr[typings.awsSdk.s3Mod.Body] = js.native
+  var Body: js.UndefOr[typings.awsSdk.s3Mod.Body] = js.undefined
   
   /**
     * Specifies caching behavior along the request/reply chain.
     */
-  var CacheControl: js.UndefOr[typings.awsSdk.s3Mod.CacheControl] = js.native
+  var CacheControl: js.UndefOr[typings.awsSdk.s3Mod.CacheControl] = js.undefined
   
   /**
     * Specifies presentational information for the object.
     */
-  var ContentDisposition: js.UndefOr[typings.awsSdk.s3Mod.ContentDisposition] = js.native
+  var ContentDisposition: js.UndefOr[typings.awsSdk.s3Mod.ContentDisposition] = js.undefined
   
   /**
     * Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
     */
-  var ContentEncoding: js.UndefOr[typings.awsSdk.s3Mod.ContentEncoding] = js.native
+  var ContentEncoding: js.UndefOr[typings.awsSdk.s3Mod.ContentEncoding] = js.undefined
   
   /**
     * The language the content is in.
     */
-  var ContentLanguage: js.UndefOr[typings.awsSdk.s3Mod.ContentLanguage] = js.native
+  var ContentLanguage: js.UndefOr[typings.awsSdk.s3Mod.ContentLanguage] = js.undefined
   
   /**
     * Size of the body in bytes.
     */
-  var ContentLength: js.UndefOr[typings.awsSdk.s3Mod.ContentLength] = js.native
+  var ContentLength: js.UndefOr[typings.awsSdk.s3Mod.ContentLength] = js.undefined
   
   /**
     * The portion of the object returned in the response.
     */
-  var ContentRange: js.UndefOr[typings.awsSdk.s3Mod.ContentRange] = js.native
+  var ContentRange: js.UndefOr[typings.awsSdk.s3Mod.ContentRange] = js.undefined
   
   /**
     * A standard MIME type describing the format of the object data.
     */
-  var ContentType: js.UndefOr[typings.awsSdk.s3Mod.ContentType] = js.native
+  var ContentType: js.UndefOr[typings.awsSdk.s3Mod.ContentType] = js.undefined
   
   /**
     * Specifies whether the object retrieved was (true) or was not (false) a Delete Marker. If false, this response header does not appear in the response.
     */
-  var DeleteMarker: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarker] = js.native
+  var DeleteMarker: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarker] = js.undefined
   
   /**
     * An ETag is an opaque identifier assigned by a web server to a specific version of a resource found at a URL.
     */
-  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.native
+  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
   
   /**
     * If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key-value pairs providing object expiration information. The value of the rule-id is URL encoded.
     */
-  var Expiration: js.UndefOr[typings.awsSdk.s3Mod.Expiration] = js.native
+  var Expiration: js.UndefOr[typings.awsSdk.s3Mod.Expiration] = js.undefined
   
   /**
     * The date and time at which the object is no longer cacheable.
     */
-  var Expires: js.UndefOr[typings.awsSdk.s3Mod.Expires] = js.native
+  var Expires: js.UndefOr[typings.awsSdk.s3Mod.Expires] = js.undefined
   
   /**
     * Last modified date of the object
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
   
   /**
     * A map of metadata to store with the object in S3.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.s3Mod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.s3Mod.Metadata] = js.undefined
   
   /**
     * This is set to the number of metadata entries not returned in x-amz-meta headers. This can happen if you create metadata using an API like SOAP that supports more flexible metadata than the REST API. For example, using SOAP, you can create metadata whose values are not legal HTTP headers.
     */
-  var MissingMeta: js.UndefOr[typings.awsSdk.s3Mod.MissingMeta] = js.native
+  var MissingMeta: js.UndefOr[typings.awsSdk.s3Mod.MissingMeta] = js.undefined
   
   /**
     * Indicates whether this object has an active legal hold. This field is only returned if you have permission to view an object's legal hold status. 
     */
-  var ObjectLockLegalHoldStatus: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockLegalHoldStatus] = js.native
+  var ObjectLockLegalHoldStatus: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockLegalHoldStatus] = js.undefined
   
   /**
     * The Object Lock mode currently in place for this object.
     */
-  var ObjectLockMode: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockMode] = js.native
+  var ObjectLockMode: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockMode] = js.undefined
   
   /**
     * The date and time when this object's Object Lock will expire.
     */
-  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockRetainUntilDate] = js.native
+  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockRetainUntilDate] = js.undefined
   
   /**
     * The count of parts this object has.
     */
-  var PartsCount: js.UndefOr[typings.awsSdk.s3Mod.PartsCount] = js.native
+  var PartsCount: js.UndefOr[typings.awsSdk.s3Mod.PartsCount] = js.undefined
   
   /**
     * Amazon S3 can return this if your request involves a bucket that is either a source or destination in a replication rule.
     */
-  var ReplicationStatus: js.UndefOr[typings.awsSdk.s3Mod.ReplicationStatus] = js.native
+  var ReplicationStatus: js.UndefOr[typings.awsSdk.s3Mod.ReplicationStatus] = js.undefined
   
-  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.native
+  var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
   
   /**
     * Provides information about object restoration operation and expiration time of the restored object copy.
     */
-  var Restore: js.UndefOr[typings.awsSdk.s3Mod.Restore] = js.native
+  var Restore: js.UndefOr[typings.awsSdk.s3Mod.Restore] = js.undefined
   
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.native
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round-trip message integrity verification of the customer-provided encryption key.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.native
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
     */
-  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.native
+  var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
   /**
     * The server-side encryption algorithm used when storing this object in Amazon S3 (for example, AES256, aws:kms).
     */
-  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.native
+  var ServerSideEncryption: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryption] = js.undefined
   
   /**
     * Provides storage class information of the object. Amazon S3 returns this header for all objects except for S3 Standard storage class objects.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.undefined
   
   /**
     * The number of tags, if any, on the object.
     */
-  var TagCount: js.UndefOr[typings.awsSdk.s3Mod.TagCount] = js.native
+  var TagCount: js.UndefOr[typings.awsSdk.s3Mod.TagCount] = js.undefined
   
   /**
     * Version of the object.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   
   /**
     * If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.
     */
-  var WebsiteRedirectLocation: js.UndefOr[typings.awsSdk.s3Mod.WebsiteRedirectLocation] = js.native
+  var WebsiteRedirectLocation: js.UndefOr[typings.awsSdk.s3Mod.WebsiteRedirectLocation] = js.undefined
 }
 object GetObjectOutput {
   

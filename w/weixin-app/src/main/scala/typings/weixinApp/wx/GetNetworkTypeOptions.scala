@@ -2,16 +2,15 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkTypeOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 接口调用成功，返回网络类型 networkType */
   @JSName("success")
-  def success_MGetNetworkTypeOptions(res: NetworkTypeData): Unit = js.native
+  def success_MGetNetworkTypeOptions(res: NetworkTypeData): Unit
 }
 object GetNetworkTypeOptions {
   

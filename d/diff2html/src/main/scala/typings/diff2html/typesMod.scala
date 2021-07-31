@@ -5,7 +5,6 @@ import typings.diff2html.typesMod.LineType.DELETE
 import typings.diff2html.typesMod.LineType.INSERT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -17,33 +16,38 @@ object typesMod {
   object LineType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[LineType with String] = js.native
+    def apply(value: String): js.UndefOr[LineType & String] = js.native
     
     @js.native
-    sealed trait CONTEXT extends LineType
-    /* "context" */ val CONTEXT: typings.diff2html.typesMod.LineType.CONTEXT with String = js.native
+    sealed trait CONTEXT
+      extends StObject
+         with LineType
+    /* "context" */ val CONTEXT: typings.diff2html.typesMod.LineType.CONTEXT & String = js.native
     
     @js.native
-    sealed trait DELETE extends LineType
-    /* "delete" */ val DELETE: typings.diff2html.typesMod.LineType.DELETE with String = js.native
+    sealed trait DELETE
+      extends StObject
+         with LineType
+    /* "delete" */ val DELETE: typings.diff2html.typesMod.LineType.DELETE & String = js.native
     
     @js.native
-    sealed trait INSERT extends LineType
-    /* "insert" */ val INSERT: typings.diff2html.typesMod.LineType.INSERT with String = js.native
+    sealed trait INSERT
+      extends StObject
+         with LineType
+    /* "insert" */ val INSERT: typings.diff2html.typesMod.LineType.INSERT & String = js.native
   }
   
-  @js.native
   trait DiffBlock extends StObject {
     
-    var header: String = js.native
+    var header: String
     
-    var lines: js.Array[DiffLine] = js.native
+    var lines: js.Array[DiffLine]
     
-    var newStartLine: Double = js.native
+    var newStartLine: Double
     
-    var oldStartLine: Double = js.native
+    var oldStartLine: Double
     
-    var oldStartLine2: js.UndefOr[Double] = js.native
+    var oldStartLine2: js.UndefOr[Double] = js.undefined
   }
   object DiffBlock {
     
@@ -79,48 +83,49 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait DiffFile extends DiffFileName {
+  trait DiffFile
+    extends StObject
+       with DiffFileName {
     
-    var addedLines: Double = js.native
+    var addedLines: Double
     
-    var blocks: js.Array[DiffBlock] = js.native
+    var blocks: js.Array[DiffBlock]
     
-    var changedPercentage: js.UndefOr[Double] = js.native
+    var changedPercentage: js.UndefOr[Double] = js.undefined
     
-    var checksumAfter: js.UndefOr[String] = js.native
+    var checksumAfter: js.UndefOr[String] = js.undefined
     
-    var checksumBefore: js.UndefOr[String | js.Array[String]] = js.native
+    var checksumBefore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var deletedFileMode: js.UndefOr[String] = js.native
+    var deletedFileMode: js.UndefOr[String] = js.undefined
     
-    var deletedLines: Double = js.native
+    var deletedLines: Double
     
-    var isBinary: js.UndefOr[Boolean] = js.native
+    var isBinary: js.UndefOr[Boolean] = js.undefined
     
-    var isCombined: Boolean = js.native
+    var isCombined: Boolean
     
-    var isCopy: js.UndefOr[Boolean] = js.native
+    var isCopy: js.UndefOr[Boolean] = js.undefined
     
-    var isDeleted: js.UndefOr[Boolean] = js.native
+    var isDeleted: js.UndefOr[Boolean] = js.undefined
     
-    var isGitDiff: Boolean = js.native
+    var isGitDiff: Boolean
     
-    var isNew: js.UndefOr[Boolean] = js.native
+    var isNew: js.UndefOr[Boolean] = js.undefined
     
-    var isRename: js.UndefOr[Boolean] = js.native
+    var isRename: js.UndefOr[Boolean] = js.undefined
     
-    var language: String = js.native
+    var language: String
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var newFileMode: js.UndefOr[String] = js.native
+    var newFileMode: js.UndefOr[String] = js.undefined
     
-    var newMode: js.UndefOr[String] = js.native
+    var newMode: js.UndefOr[String] = js.undefined
     
-    var oldMode: js.UndefOr[String | js.Array[String]] = js.native
+    var oldMode: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var unchangedPercentage: js.UndefOr[Double] = js.native
+    var unchangedPercentage: js.UndefOr[Double] = js.undefined
   }
   object DiffFile {
     
@@ -255,12 +260,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DiffFileName extends StObject {
     
-    var newName: String = js.native
+    var newName: String
     
-    var oldName: String = js.native
+    var oldName: String
   }
   object DiffFileName {
     
@@ -281,12 +285,11 @@ object typesMod {
     }
   }
   
-  type DiffLine = (DiffLineDeleted | DiffLineInserted | DiffLineContext) with DiffLineContent
+  type DiffLine = (DiffLineDeleted | DiffLineInserted | DiffLineContext) & DiffLineContent
   
-  @js.native
   trait DiffLineContent extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object DiffLineContent {
     
@@ -304,14 +307,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DiffLineContext extends StObject {
     
-    var newNumber: Double = js.native
+    var newNumber: Double
     
-    var oldNumber: Double = js.native
+    var oldNumber: Double
     
-    var `type`: CONTEXT = js.native
+    var `type`: CONTEXT
   }
   object DiffLineContext {
     
@@ -336,26 +338,28 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DiffLineDeleted extends StObject {
     
-    var newNumber: js.UndefOr[scala.Nothing] = js.native
+    var newNumber: Unit
     
-    var oldNumber: Double = js.native
+    var oldNumber: Double
     
-    var `type`: DELETE = js.native
+    var `type`: DELETE
   }
   object DiffLineDeleted {
     
     @scala.inline
-    def apply(oldNumber: Double, `type`: DELETE): DiffLineDeleted = {
-      val __obj = js.Dynamic.literal(oldNumber = oldNumber.asInstanceOf[js.Any])
+    def apply(newNumber: Unit, oldNumber: Double, `type`: DELETE): DiffLineDeleted = {
+      val __obj = js.Dynamic.literal(newNumber = newNumber.asInstanceOf[js.Any], oldNumber = oldNumber.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineDeleted]
     }
     
     @scala.inline
     implicit class DiffLineDeletedMutableBuilder[Self <: DiffLineDeleted] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setNewNumber(value: Unit): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOldNumber(value: Double): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
@@ -365,20 +369,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DiffLineInserted extends StObject {
     
-    var newNumber: Double = js.native
+    var newNumber: Double
     
-    var oldNumber: js.UndefOr[scala.Nothing] = js.native
+    var oldNumber: Unit
     
-    var `type`: INSERT = js.native
+    var `type`: INSERT
   }
   object DiffLineInserted {
     
     @scala.inline
-    def apply(newNumber: Double, `type`: INSERT): DiffLineInserted = {
-      val __obj = js.Dynamic.literal(newNumber = newNumber.asInstanceOf[js.Any])
+    def apply(newNumber: Double, oldNumber: Unit, `type`: INSERT): DiffLineInserted = {
+      val __obj = js.Dynamic.literal(newNumber = newNumber.asInstanceOf[js.Any], oldNumber = oldNumber.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffLineInserted]
     }
@@ -390,16 +393,18 @@ object typesMod {
       def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setOldNumber(value: Unit): Self = StObject.set(x, "oldNumber", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setType(value: INSERT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait DiffLineParts extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var prefix: String = js.native
+    var prefix: String
   }
   object DiffLineParts {
     

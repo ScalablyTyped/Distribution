@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reference to a user, group, or domain.
   */
-@js.native
 trait SchemaPrincipal extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaPrincipal extends StObject {
     * field must specify the group resource name with this format:
     * identitysources/{source_id}/groups/{ID}
     */
-  var groupResourceName: js.UndefOr[String] = js.native
+  var groupResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * This principal is a GSuite user, group or domain.
     */
-  var gsuitePrincipal: js.UndefOr[SchemaGSuitePrincipal] = js.native
+  var gsuitePrincipal: js.UndefOr[SchemaGSuitePrincipal] = js.undefined
   
   /**
     * This principal is a user identified using an external identity. The name
     * field must specify the user resource name with this format:
     * identitysources/{source_id}/users/{ID}
     */
-  var userResourceName: js.UndefOr[String] = js.native
+  var userResourceName: js.UndefOr[String] = js.undefined
 }
 object SchemaPrincipal {
   

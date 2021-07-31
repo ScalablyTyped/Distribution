@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object folderMoveMod extends Shortcut {
@@ -15,10 +14,11 @@ object folderMoveMod extends Shortcut {
   @js.native
   val default: SFC[FolderMoveProps] = js.native
   
-  @js.native
-  trait FolderMoveProps extends SVGAttributes[SVGElement] {
+  trait FolderMoveProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object FolderMoveProps {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUsagePlanRequest extends StObject {
   
   /**
     * [Required] The Id of the to-be-deleted usage plan.
     */
-  var usagePlanId: String = js.native
+  var usagePlanId: String
 }
 object DeleteUsagePlanRequest {
   

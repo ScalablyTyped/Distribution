@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation extends StObject {
   
   /**
     * The ARN for the S3 bucket containing the application code.
     */
-  var bucketArn: Input[String] = js.native
+  var bucketArn: Input[String]
   
   /**
     * The file key for the object containing the application code.
     */
-  var fileKey: Input[String] = js.native
+  var fileKey: Input[String]
   
   /**
     * The version of the object containing the application code.
     */
-  var objectVersion: js.UndefOr[Input[String]] = js.native
+  var objectVersion: js.UndefOr[Input[String]] = js.undefined
 }
 object ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation {
   

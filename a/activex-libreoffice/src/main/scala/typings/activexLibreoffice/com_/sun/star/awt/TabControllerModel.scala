@@ -8,13 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.io.XPersistObject
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a standard tab controller model. */
-@js.native
 trait TabControllerModel
-  extends XTabControllerModel
+  extends StObject
+     with XTabControllerModel
      with XPersistObject
 object TabControllerModel {
   

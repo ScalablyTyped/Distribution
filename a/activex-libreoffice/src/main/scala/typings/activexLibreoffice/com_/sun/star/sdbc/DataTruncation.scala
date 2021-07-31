@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The SQL state for a `DataTruncation` is `01004` .
   */
-@js.native
-trait DataTruncation extends SQLException {
+trait DataTruncation
+  extends StObject
+     with SQLException {
   
   /**
     * contains the number of bytes of data that should have been transferred. This number may be approximate if data conversions were being performed. The
     * value may be `-1` if the size is unknown.
     */
-  var DataSize: Double = js.native
+  var DataSize: Double
   
   /** is `TRUE` if a read was truncated. */
-  var DuringRead: Boolean = js.native
+  var DuringRead: Boolean
   
   /** is the index of the parameter or column value. */
-  var Index: Double = js.native
+  var Index: Double
   
   /** is `TRUE` if a parameter value is truncated. */
-  var IsParameter: Boolean = js.native
+  var IsParameter: Boolean
   
   /** contains the number of bytes of data actually transferred. The value may be `-1` if the size is unknown. */
-  var TransferSize: Double = js.native
+  var TransferSize: Double
 }
 object DataTruncation {
   

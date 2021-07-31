@@ -2,17 +2,15 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /** Author of the comment block */
-  var a: js.UndefOr[String] = js.native
+  var a: js.UndefOr[String] = js.undefined
   
   /** Plaintext of the comment */
-  var t: String = js.native
+  var t: String
 }
 object Comment {
   

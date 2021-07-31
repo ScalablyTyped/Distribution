@@ -6,10 +6,13 @@ import typings.stompjs.anon.Host
 import typings.stompjs.anon.Incoming
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("stompjs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("stompjs", "Client")
   @js.native
@@ -24,37 +27,41 @@ object mod {
     
     def commit(transaction: String): js.Any = js.native
     
-    def connect(headers: js.Object, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
+    def connect(headers: js.Object, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any]): js.Any = js.native
     def connect(
       headers: js.Object,
-      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
-      errorCallback: js.Function1[/* error */ Frame | String, _]
+      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any],
+      errorCallback: js.Function1[/* error */ Frame | String, js.Any]
     ): js.Any = js.native
-    def connect(headers: Host, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
+    def connect(headers: Host, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any]): js.Any = js.native
     def connect(
       headers: Host,
-      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
-      errorCallback: js.Function1[/* error */ Frame | String, _]
+      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any],
+      errorCallback: js.Function1[/* error */ Frame | String, js.Any]
     ): js.Any = js.native
-    def connect(login: String, passcode: String, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
     def connect(
       login: String,
       passcode: String,
-      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
-      errorCallback: js.UndefOr[scala.Nothing],
+      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any]
+    ): js.Any = js.native
+    def connect(
+      login: String,
+      passcode: String,
+      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any],
+      errorCallback: js.Function1[/* error */ Frame | String, js.Any]
+    ): js.Any = js.native
+    def connect(
+      login: String,
+      passcode: String,
+      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any],
+      errorCallback: js.Function1[/* error */ Frame | String, js.Any],
       host: String
     ): js.Any = js.native
     def connect(
       login: String,
       passcode: String,
-      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
-      errorCallback: js.Function1[/* error */ Frame | String, _]
-    ): js.Any = js.native
-    def connect(
-      login: String,
-      passcode: String,
-      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
-      errorCallback: js.Function1[/* error */ Frame | String, _],
+      connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], js.Any],
+      errorCallback: Unit,
       host: String
     ): js.Any = js.native
     
@@ -64,8 +71,8 @@ object mod {
     
     def debug(args: String*): js.Any = js.native
     
-    def disconnect(disconnectCallback: js.Function0[_]): js.Any = js.native
-    def disconnect(disconnectCallback: js.Function0[_], headers: js.Object): js.Any = js.native
+    def disconnect(disconnectCallback: js.Function0[js.Any]): js.Any = js.native
+    def disconnect(disconnectCallback: js.Function0[js.Any], headers: js.Object): js.Any = js.native
     
     var heartbeat: Incoming = js.native
     
@@ -75,14 +82,14 @@ object mod {
     def nack(messageID: String, subscription: String, headers: js.Object): js.Any = js.native
     
     def send(destination: String): js.Any = js.native
-    def send(destination: String, headers: js.UndefOr[scala.Nothing], body: String): js.Any = js.native
     def send(destination: String, headers: js.Object): js.Any = js.native
     def send(destination: String, headers: js.Object, body: String): js.Any = js.native
+    def send(destination: String, headers: Unit, body: String): js.Any = js.native
     
     def subscribe(destination: String): Subscription = js.native
-    def subscribe(destination: String, callback: js.UndefOr[scala.Nothing], headers: js.Object): Subscription = js.native
-    def subscribe(destination: String, callback: js.Function1[/* message */ Message, _]): Subscription = js.native
-    def subscribe(destination: String, callback: js.Function1[/* message */ Message, _], headers: js.Object): Subscription = js.native
+    def subscribe(destination: String, callback: js.Function1[/* message */ Message, js.Any]): Subscription = js.native
+    def subscribe(destination: String, callback: js.Function1[/* message */ Message, js.Any], headers: js.Object): Subscription = js.native
+    def subscribe(destination: String, callback: Unit, headers: js.Object): Subscription = js.native
     
     def unsubscribe(id: String): Unit = js.native
     
@@ -94,8 +101,8 @@ object mod {
   class Frame protected () extends StObject {
     def this(command: String) = this()
     def this(command: String, headers: js.Object) = this()
-    def this(command: String, headers: js.UndefOr[scala.Nothing], body: String) = this()
     def this(command: String, headers: js.Object, body: String) = this()
+    def this(command: String, headers: Unit, body: String) = this()
     
     var body: String = js.native
     
@@ -104,26 +111,24 @@ object mod {
   /* static members */
   object Frame {
     
-    @JSImport("stompjs", "Frame.marshall")
+    @JSImport("stompjs", "Frame")
     @js.native
-    def marshall(command: String): js.Any = js.native
-    @JSImport("stompjs", "Frame.marshall")
-    @js.native
-    def marshall(command: String, headers: js.UndefOr[scala.Nothing], body: String): js.Any = js.native
-    @JSImport("stompjs", "Frame.marshall")
-    @js.native
-    def marshall(command: String, headers: js.Object): js.Any = js.native
-    @JSImport("stompjs", "Frame.marshall")
-    @js.native
-    def marshall(command: String, headers: js.Object, body: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("stompjs", "Frame.sizeOfUTF8")
-    @js.native
-    def sizeOfUTF8(s: String): Double = js.native
+    @scala.inline
+    def marshall(command: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def marshall(command: String, headers: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def marshall(command: String, headers: js.Object, body: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def marshall(command: String, headers: Unit, body: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("stompjs", "Frame.unmarshall")
-    @js.native
-    def unmarshall(datas: js.Any): js.Any = js.native
+    @scala.inline
+    def sizeOfUTF8(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOfUTF8")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def unmarshall(datas: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(datas.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object VERSIONS {
@@ -150,40 +155,31 @@ object mod {
     @scala.inline
     def V1_2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_2")(x.asInstanceOf[js.Any])
     
-    @JSImport("stompjs", "VERSIONS.supportedVersions")
-    @js.native
-    def supportedVersions(): js.Array[String] = js.native
+    @scala.inline
+    def supportedVersions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedVersions")().asInstanceOf[js.Array[String]]
   }
   
-  @JSImport("stompjs", "clearInterval")
-  @js.native
-  def clearInterval(id: Timer): Unit = js.native
+  @scala.inline
+  def clearInterval(id: Timer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("stompjs", "client")
-  @js.native
-  def client(url: String): Client_ = js.native
-  @JSImport("stompjs", "client")
-  @js.native
-  def client(url: String, protocols: String): Client_ = js.native
-  @JSImport("stompjs", "client")
-  @js.native
-  def client(url: String, protocols: js.Array[String]): Client_ = js.native
+  @scala.inline
+  def client(url: String): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any]).asInstanceOf[Client_]
+  @scala.inline
+  def client(url: String, protocols: String): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any])).asInstanceOf[Client_]
+  @scala.inline
+  def client(url: String, protocols: js.Array[String]): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any])).asInstanceOf[Client_]
   
-  @JSImport("stompjs", "over")
-  @js.native
-  def over(ws: WebSocket): Client_ = js.native
+  @scala.inline
+  def over(ws: WebSocket): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("over")(ws.asInstanceOf[js.Any]).asInstanceOf[Client_]
   
-  @JSImport("stompjs", "overTCP")
-  @js.native
-  def overTCP(host: String, port: Double): Client_ = js.native
+  @scala.inline
+  def overTCP(host: String, port: Double): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("overTCP")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Client_]
   
-  @JSImport("stompjs", "overWS")
-  @js.native
-  def overWS(url: String): Client_ = js.native
+  @scala.inline
+  def overWS(url: String): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("overWS")(url.asInstanceOf[js.Any]).asInstanceOf[Client_]
   
-  @JSImport("stompjs", "setInterval")
-  @js.native
-  def setInterval(interval: Double, f: js.Function1[/* repeated */ js.Any, Unit]): Timer = js.native
+  @scala.inline
+  def setInterval(interval: Double, f: js.Function1[/* repeated */ js.Any, Unit]): Timer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(interval.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Timer]
   
   @js.native
   trait Message extends Frame {
@@ -195,12 +191,11 @@ object mod {
     def nack(headers: js.Object): js.Any = js.native
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object Subscription {
     

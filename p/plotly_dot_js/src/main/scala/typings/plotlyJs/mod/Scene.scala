@@ -17,35 +17,33 @@ import typings.plotlyJs.plotlyJsStrings.turntable
 import typings.plotlyJs.plotlyJsStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scene extends StObject {
   
-  var annotations: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign] = js.native
+  var annotations: PartialAnnotationsAlign | js.Array[PartialAnnotationsAlign]
   
-  var aspectmode: auto | cube | data | manual = js.native
+  var aspectmode: auto | cube | data | manual
   
-  var aspectratio: PartialPoint = js.native
+  var aspectratio: PartialPoint
   
-  var bgcolor: String = js.native
+  var bgcolor: String
   
-  var camera: PartialCamera = js.native
+  var camera: PartialCamera
   
-  var captureevents: Boolean = js.native
+  var captureevents: Boolean
   
-  var domain: PartialDomain = js.native
+  var domain: PartialDomain
   
-  var dragmode: orbit | turntable | zoom | pan | `false` = js.native
+  var dragmode: orbit | turntable | zoom | pan | `false`
   
-  var hovermode: closest | `false` = js.native
+  var hovermode: closest | `false`
   
-  var xaxis: PartialSceneAxisBackgroundcolor = js.native
+  var xaxis: PartialSceneAxisBackgroundcolor
   
-  var yaxis: PartialSceneAxisBackgroundcolor = js.native
+  var yaxis: PartialSceneAxisBackgroundcolor
   
-  var zaxis: PartialSceneAxisBackgroundcolor = js.native
+  var zaxis: PartialSceneAxisBackgroundcolor
 }
 object Scene {
   

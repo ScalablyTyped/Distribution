@@ -3,39 +3,37 @@ package typings.gherkin
 import typings.cucumberMessages.idGeneratorMod.NewId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait And extends StObject {
     
-    var and: js.Array[String] = js.native
+    var and: js.Array[String]
     
-    var background: js.Array[String] = js.native
+    var background: js.Array[String]
     
-    var but: js.Array[String] = js.native
+    var but: js.Array[String]
     
-    var examples: js.Array[String] = js.native
+    var examples: js.Array[String]
     
-    var feature: js.Array[String] = js.native
+    var feature: js.Array[String]
     
-    var given: js.Array[String] = js.native
+    var `given`: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var native: String = js.native
+    var native: String
     
-    var rule: js.Array[String] = js.native
+    var rule: js.Array[String]
     
-    var scenario: js.Array[String] = js.native
+    var scenario: js.Array[String]
     
-    var scenarioOutline: js.Array[String] = js.native
+    var scenarioOutline: js.Array[String]
     
-    var `then`: js.Array[String] = js.native
+    var `then`: js.Array[String]
     
-    var when: js.Array[String] = js.native
+    var when: js.Array[String]
   }
   object And {
     
@@ -46,7 +44,7 @@ object anon {
       but: js.Array[String],
       examples: js.Array[String],
       feature: js.Array[String],
-      given: js.Array[String],
+      `given`: js.Array[String],
       name: String,
       native: String,
       rule: js.Array[String],
@@ -55,7 +53,8 @@ object anon {
       `then`: js.Array[String],
       when: js.Array[String]
     ): And = {
-      val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], but = but.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], scenarioOutline = scenarioOutline.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], but = but.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], scenarioOutline = scenarioOutline.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.updateDynamic("given")(`given`.asInstanceOf[js.Any])
       __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
       __obj.asInstanceOf[And]
     }
@@ -137,12 +136,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var text: String = js.native
+    var text: String
   }
   object Column {
     
@@ -163,18 +161,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultDialect extends StObject {
     
-    var defaultDialect: js.UndefOr[String] = js.native
+    var defaultDialect: js.UndefOr[String] = js.undefined
     
-    var includeGherkinDocument: js.UndefOr[Boolean] = js.native
+    var includeGherkinDocument: js.UndefOr[Boolean] = js.undefined
     
-    var includePickles: js.UndefOr[Boolean] = js.native
+    var includePickles: js.UndefOr[Boolean] = js.undefined
     
-    var includeSource: js.UndefOr[Boolean] = js.native
+    var includeSource: js.UndefOr[Boolean] = js.undefined
     
-    var newId: js.UndefOr[NewId] = js.native
+    var newId: js.UndefOr[NewId] = js.undefined
   }
   object DefaultDialect {
     
@@ -219,12 +216,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Line extends StObject {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
   }
   object Line {
     

@@ -23,29 +23,27 @@ import typings.dogapi.dogapiStrings.user
 import typings.dogapi.dogapiStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Aggregationkey extends StObject {
     
-    var aggregation_key: js.UndefOr[String] = js.native
+    var aggregation_key: js.UndefOr[String] = js.undefined
     
-    var alert_type: js.UndefOr[error | warning | info | success] = js.native
+    var alert_type: js.UndefOr[error | warning | info | success] = js.undefined
     
-    var date_happened: js.UndefOr[Double] = js.native
+    var date_happened: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[normal | low] = js.native
+    var priority: js.UndefOr[normal | low] = js.undefined
     
     var source_type_name: js.UndefOr[
         nagios | hudson | jenkins | user | (`my apps`) | feed | chef | puppet | git | bitbucket | fabric | capistrano
-      ] = js.native
+      ] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Aggregationkey {
     
@@ -107,14 +105,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Apihost extends StObject {
     
-    var api_host: js.UndefOr[String] = js.native
+    var api_host: js.UndefOr[String] = js.undefined
     
-    var api_key: String = js.native
+    var api_key: String
     
-    var app_key: String = js.native
+    var app_key: String
   }
   object Apihost {
     
@@ -141,26 +138,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Datehappened extends StObject {
     
-    var date_happened: Double = js.native
+    var date_happened: Double
     
-    var handle: js.Any = js.native
+    var handle: js.Any
     
-    var id: js.BigInt = js.native
+    var id: js.BigInt
     
-    var priority: normal | low = js.native
+    var priority: normal | low
     
-    var related_event_id: Double | Null = js.native
+    var related_event_id: Double | Null
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
   }
   object Datehappened {
     
@@ -175,7 +171,7 @@ object anon {
       title: String,
       url: String
     ): Datehappened = {
-      val __obj = js.Dynamic.literal(date_happened = date_happened.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(date_happened = date_happened.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], related_event_id = null)
       __obj.asInstanceOf[Datehappened]
     }
     
@@ -217,16 +213,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var metric_type: js.UndefOr[gauge | count] = js.native
+    var metric_type: js.UndefOr[gauge | count] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `type`: js.UndefOr[gauge | rate | count] = js.native
+    var `type`: js.UndefOr[gauge | rate | count] = js.undefined
   }
   object Host {
     
@@ -268,18 +263,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Metric extends StObject {
     
-    var metric: String = js.native
+    var metric: String
     
-    var metric_type: js.UndefOr[String] = js.native
+    var metric_type: js.UndefOr[String] = js.undefined
     
-    var points: Double | (js.Array[Double | (js.Tuple2[String, Double])]) = js.native
+    var points: Double | (js.Array[Double | (js.Tuple2[String, Double])])
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Metric {
     

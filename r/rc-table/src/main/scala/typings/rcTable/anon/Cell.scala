@@ -3,17 +3,15 @@ package typings.rcTable.anon
 import typings.rcTable.interfaceMod.CustomizeComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cell extends StObject {
   
-  var cell: js.UndefOr[CustomizeComponent] = js.native
+  var cell: js.UndefOr[CustomizeComponent] = js.undefined
   
-  var row: js.UndefOr[CustomizeComponent] = js.native
+  var row: js.UndefOr[CustomizeComponent] = js.undefined
   
-  var wrapper: js.UndefOr[CustomizeComponent] = js.native
+  var wrapper: js.UndefOr[CustomizeComponent] = js.undefined
 }
 object Cell {
   

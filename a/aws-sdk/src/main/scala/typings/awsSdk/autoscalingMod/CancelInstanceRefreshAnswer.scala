@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelInstanceRefreshAnswer extends StObject {
   
   /**
     * The instance refresh ID.
     */
-  var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.native
+  var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object CancelInstanceRefreshAnswer {
   

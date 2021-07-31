@@ -5,19 +5,19 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Sort extends ClientValueObject {
+trait Sort
+  extends StObject
+     with ClientValueObject {
   
-  def get_direction(): SortDirection = js.native
+  def get_direction(): SortDirection
   
-  def get_property(): String = js.native
+  def get_property(): String
   
-  def set_direction(value: SortDirection): Unit = js.native
+  def set_direction(value: SortDirection): Unit
   
-  def set_property(value: String): Unit = js.native
+  def set_property(value: String): Unit
 }
 object Sort {
   

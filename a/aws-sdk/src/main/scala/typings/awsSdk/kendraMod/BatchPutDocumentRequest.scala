@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutDocumentRequest extends StObject {
   
   /**
     * One or more documents to add to the index.  Documents have the following file size limits.   5 MB total size for inline documents   50 MB total size for files from an S3 bucket   5 MB extracted text for any file   For more information about file size and transaction per second quotas, see Quotas.
     */
-  var Documents: DocumentList = js.native
+  var Documents: DocumentList
   
   /**
     * The identifier of the index to add the documents to. You need to create the index first using the CreateIndex operation.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * The Amazon Resource Name (ARN) of a role that is allowed to run the BatchPutDocument operation. For more information, see IAM Roles for Amazon Kendra.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
 }
 object BatchPutDocumentRequest {
   

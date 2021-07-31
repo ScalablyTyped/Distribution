@@ -3,11 +3,12 @@ package typings.otplibPresetV11
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Authenticator extends TOTP {
+trait Authenticator
+  extends StObject
+     with TOTP {
   
   var Authenticator: Instantiable0[typings.otplibPresetV11.Authenticator] = js.native
   

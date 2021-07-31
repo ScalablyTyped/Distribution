@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TpReceiptAddDataRequest.
   * @param [properties] Properties to set
   */
-class TpReceiptAddDataRequest () extends ITpReceiptAddDataRequest {
+class TpReceiptAddDataRequest ()
+  extends StObject
+     with ITpReceiptAddDataRequest {
   def this(properties: ITpReceiptAddDataRequest) = this()
   
   /** TpReceiptAddDataRequest contextId. */
@@ -36,17 +37,19 @@ class TpReceiptAddDataRequest () extends ITpReceiptAddDataRequest {
 /* static members */
 object TpReceiptAddDataRequest {
   
+  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new TpReceiptAddDataRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns TpReceiptAddDataRequest instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.create")
-  @js.native
-  def create(): TpReceiptAddDataRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.create")
-  @js.native
-  def create(properties: ITpReceiptAddDataRequest): TpReceiptAddDataRequest = js.native
+  @scala.inline
+  def create(): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TpReceiptAddDataRequest]
+  @scala.inline
+  def create(properties: ITpReceiptAddDataRequest): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TpReceiptAddDataRequest]
   
   /**
     * Decodes a TpReceiptAddDataRequest message from the specified reader or buffer.
@@ -56,18 +59,14 @@ object TpReceiptAddDataRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.decode")
-  @js.native
-  def decode(reader: Reader): TpReceiptAddDataRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): TpReceiptAddDataRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): TpReceiptAddDataRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): TpReceiptAddDataRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpReceiptAddDataRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): TpReceiptAddDataRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpReceiptAddDataRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpReceiptAddDataRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): TpReceiptAddDataRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpReceiptAddDataRequest]
   
   /**
     * Decodes a TpReceiptAddDataRequest message from the specified reader or buffer, length delimited.
@@ -76,12 +75,10 @@ object TpReceiptAddDataRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): TpReceiptAddDataRequest = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): TpReceiptAddDataRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpReceiptAddDataRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpReceiptAddDataRequest]
   
   /**
     * Encodes the specified TpReceiptAddDataRequest message. Does not implicitly {@link TpReceiptAddDataRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object TpReceiptAddDataRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.encode")
-  @js.native
-  def encode(message: ITpReceiptAddDataRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.encode")
-  @js.native
-  def encode(message: ITpReceiptAddDataRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ITpReceiptAddDataRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ITpReceiptAddDataRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified TpReceiptAddDataRequest message, length delimited. Does not implicitly {@link TpReceiptAddDataRequest.verify|verify} messages.
@@ -102,21 +97,18 @@ object TpReceiptAddDataRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITpReceiptAddDataRequest): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITpReceiptAddDataRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ITpReceiptAddDataRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ITpReceiptAddDataRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a TpReceiptAddDataRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TpReceiptAddDataRequest
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): TpReceiptAddDataRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): TpReceiptAddDataRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TpReceiptAddDataRequest]
   
   /**
     * Creates a plain object from a TpReceiptAddDataRequest message. Also converts values to other types if specified.
@@ -124,19 +116,16 @@ object TpReceiptAddDataRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.toObject")
-  @js.native
-  def toObject(message: TpReceiptAddDataRequest): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.toObject")
-  @js.native
-  def toObject(message: TpReceiptAddDataRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: TpReceiptAddDataRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: TpReceiptAddDataRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a TpReceiptAddDataRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "TpReceiptAddDataRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -3,7 +3,6 @@ package typings.imageSize
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -17,16 +16,15 @@ object interfaceMod {
     def validate(buffer: Buffer): Boolean = js.native
   }
   
-  @js.native
   trait ISize extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[Double] = js.native
+    var orientation: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ISize {
     
@@ -65,10 +63,11 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait ISizeCalculationResult extends ISize {
+  trait ISizeCalculationResult
+    extends StObject
+       with ISize {
     
-    var images: js.UndefOr[js.Array[ISize]] = js.native
+    var images: js.UndefOr[js.Array[ISize]] = js.undefined
   }
   object ISizeCalculationResult {
     

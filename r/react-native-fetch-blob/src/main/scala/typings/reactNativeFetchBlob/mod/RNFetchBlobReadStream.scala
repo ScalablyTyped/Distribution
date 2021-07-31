@@ -2,29 +2,27 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RNFetchBlobReadStream extends StObject {
   
-  var bufferSize: js.UndefOr[Double] = js.native
+  var bufferSize: js.UndefOr[Double] = js.undefined
   
-  var closed: Boolean = js.native
+  var closed: Boolean
   
-  var encoding: Encoding = js.native
+  var encoding: Encoding
   
-  def onData(fn: js.Function1[/* chunk */ String | js.Array[Double], Unit]): Unit = js.native
+  def onData(fn: js.Function1[/* chunk */ String | js.Array[Double], Unit]): Unit
   
-  def onEnd(fn: js.Function0[Unit]): Unit = js.native
+  def onEnd(fn: js.Function0[Unit]): Unit
   
-  def onError(fn: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def onError(fn: js.Function1[/* err */ js.Any, Unit]): Unit
   
-  def open(): Unit = js.native
+  def open(): Unit
   
-  var path: String = js.native
+  var path: String
   
-  var tick: Double = js.native
+  var tick: Double
 }
 object RNFetchBlobReadStream {
   

@@ -2,20 +2,18 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileWatchersInfo extends StObject {
   
   /** The path of the entry being observed. */
-  var entryPath: String = js.native
+  var entryPath: String
   
   /** Optional. Tag used by the last notification for the watcher.  */
-  var lastTag: js.UndefOr[String] = js.native
+  var lastTag: js.UndefOr[String] = js.undefined
   
   /** Whether watching should include all child entries recursively. It can be true for directories only. */
-  var recursive: Boolean = js.native
+  var recursive: Boolean
 }
 object FileWatchersInfo {
   

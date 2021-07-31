@@ -1,14 +1,12 @@
 package typings.mapboxGl.mod
 
-import typings.mapboxGl.mapboxGlStrings.vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorSourceImpl
-  extends VectorSource
+  extends StObject
+     with VectorSource
      with AnySourceImpl {
   
   /**
@@ -17,7 +15,7 @@ trait VectorSourceImpl
     * @param {string[]} tiles An array of one or more tile source URLs, as in the TileJSON spec.
     * @returns {VectorTileSource} this
     */
-  def setTiles(tiles: js.Array[String]): VectorSourceImpl = js.native
+  def setTiles(tiles: js.Array[String]): VectorSourceImpl
   
   /**
     * Sets the source `url` property and re-renders the map.
@@ -25,14 +23,14 @@ trait VectorSourceImpl
     * @param {string} url A URL to a TileJSON resource. Supported protocols are `http:`, `https:`, and `mapbox://<Tileset ID>`.
     * @returns {VectorTileSource} this
     */
-  def setUrl(url: String): VectorSourceImpl = js.native
+  def setUrl(url: String): VectorSourceImpl
 }
 object VectorSourceImpl {
   
   @scala.inline
-  def apply(setTiles: js.Array[String] => VectorSourceImpl, setUrl: String => VectorSourceImpl, `type`: vector): VectorSourceImpl = {
+  def apply(setTiles: js.Array[String] => VectorSourceImpl, setUrl: String => VectorSourceImpl): VectorSourceImpl = {
     val __obj = js.Dynamic.literal(setTiles = js.Any.fromFunction1(setTiles), setUrl = js.Any.fromFunction1(setUrl))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vector")
     __obj.asInstanceOf[VectorSourceImpl]
   }
   

@@ -4,25 +4,23 @@ import typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBro
 import typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalServerError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUnprocessedIdentityIdMod {
   
   type UnmarshalledUnprocessedIdentityId = UnprocessedIdentityId
   
-  @js.native
   trait UnprocessedIdentityId extends StObject {
     
     /**
       * <p>The error code indicating the type of error that occurred.</p>
       */
-    var ErrorCode: js.UndefOr[AccessDenied | InternalServerError | String] = js.native
+    var ErrorCode: js.UndefOr[AccessDenied | InternalServerError | String] = js.undefined
     
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: js.UndefOr[String] = js.native
+    var IdentityId: js.UndefOr[String] = js.undefined
   }
   object UnprocessedIdentityId {
     

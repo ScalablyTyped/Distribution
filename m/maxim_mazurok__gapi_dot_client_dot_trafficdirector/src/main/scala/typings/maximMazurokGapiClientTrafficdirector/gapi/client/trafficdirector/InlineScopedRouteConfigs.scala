@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineScopedRouteConfigs extends StObject {
   
   /** The timestamp when the scoped route config set was last updated. */
-  var lastUpdated: js.UndefOr[String] = js.native
+  var lastUpdated: js.UndefOr[String] = js.undefined
   
   /** The name assigned to the scoped route configurations. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The scoped route configurations. */
   var scopedRouteConfigs: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object InlineScopedRouteConfigs {
   
@@ -52,7 +50,7 @@ object InlineScopedRouteConfigs {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "scopedRouteConfigs", value.asInstanceOf[js.Any])
     
@@ -63,7 +61,7 @@ object InlineScopedRouteConfigs {
     def setScopedRouteConfigsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.InlineScopedRouteConfigs & TopLevel[js.Any])*
     ): Self = StObject.set(x, "scopedRouteConfigs", js.Array(value :_*))
   }
 }

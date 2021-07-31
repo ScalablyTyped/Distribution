@@ -4,35 +4,36 @@ import typings.bunyan.mod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bunyan-seq", "createStream")
+  @JSImport("bunyan-seq", JSImport.Namespace)
   @js.native
-  def createStream(config: Configuration): Stream = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createStream(config: Configuration): Stream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(config.asInstanceOf[js.Any]).asInstanceOf[Stream]
+  
   trait Configuration extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var batchSizeLimit: js.UndefOr[Double] = js.native
+    var batchSizeLimit: js.UndefOr[Double] = js.undefined
     
-    var eventSizeLimit: js.UndefOr[Double] = js.native
+    var eventSizeLimit: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var maxBatchingTime: js.UndefOr[Double] = js.native
+    var maxBatchingTime: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    var reemitErrorEvents: js.UndefOr[Boolean] = js.native
+    var reemitErrorEvents: js.UndefOr[Boolean] = js.undefined
     
-    var serverUrl: js.UndefOr[String] = js.native
+    var serverUrl: js.UndefOr[String] = js.undefined
   }
   object Configuration {
     

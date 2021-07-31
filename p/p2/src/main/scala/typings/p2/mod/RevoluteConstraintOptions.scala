@@ -2,19 +2,19 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RevoluteConstraintOptions extends ConstraintOptions {
+trait RevoluteConstraintOptions
+  extends StObject
+     with ConstraintOptions {
   
-  var localPivotA: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localPivotA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var localPivotB: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var localPivotB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var maxForce: js.UndefOr[Double] = js.native
+  var maxForce: js.UndefOr[Double] = js.undefined
   
-  var worldPivot: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var worldPivot: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object RevoluteConstraintOptions {
   

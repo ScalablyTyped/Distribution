@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * BackendService is proportional to the weight specified in each
   * WeightedBackendService
   */
-@js.native
 trait SchemaWeightedBackendService extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaWeightedBackendService extends StObject {
     * forwarding the request to backendService, the loadbalancer applies any
     * relevant headerActions specified as part of this backendServiceWeight.
     */
-  var backendService: js.UndefOr[String] = js.native
+  var backendService: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies changes to request and response headers that need to take
@@ -28,7 +26,7 @@ trait SchemaWeightedBackendService extends StObject {
     * effect before headerAction in the enclosing HttpRouteRule, PathMatcher
     * and UrlMap.
     */
-  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.undefined
   
   /**
     * Specifies the fraction of traffic sent to backendService, computed as
@@ -39,7 +37,7 @@ trait SchemaWeightedBackendService extends StObject {
     * BackendService&#39;s session affinity policy. The value must be between 0
     * and 1000
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object SchemaWeightedBackendService {
   

@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.MigrationsUnlockRepoForOrgRequestOption
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsUnlockRepoForOrgEndpoint extends StObject {
   
-  var parameters: MigrationsUnlockRepoForOrgEndpoint = js.native
+  var parameters: MigrationsUnlockRepoForOrgEndpoint
   
-  var request: MigrationsUnlockRepoForOrgRequestOptions = js.native
+  var request: MigrationsUnlockRepoForOrgRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersMigrationsUnlockRepoForOrgEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersMigrationsUnlockRepoForOrgEndpoint {
   def apply(
     parameters: MigrationsUnlockRepoForOrgEndpoint,
     request: MigrationsUnlockRepoForOrgRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersMigrationsUnlockRepoForOrgEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersMigrationsUnlockRepoForOrgEndpoint]
@@ -39,6 +37,6 @@ object ParametersMigrationsUnlockRepoForOrgEndpoint {
     def setRequest(value: MigrationsUnlockRepoForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

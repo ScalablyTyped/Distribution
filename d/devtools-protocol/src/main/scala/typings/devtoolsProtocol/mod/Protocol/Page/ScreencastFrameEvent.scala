@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreencastFrameEvent extends StObject {
   
   /**
     * Base64-encoded compressed image.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * Screencast frame metadata.
     */
-  var metadata: ScreencastFrameMetadata = js.native
+  var metadata: ScreencastFrameMetadata
   
   /**
     * Frame number.
     */
-  var sessionId: integer = js.native
+  var sessionId: integer
 }
 object ScreencastFrameEvent {
   

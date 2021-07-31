@@ -2,15 +2,13 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTopicResponse extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var topic: String = js.native
+  var topic: String
 }
 object CreateTopicResponse {
   

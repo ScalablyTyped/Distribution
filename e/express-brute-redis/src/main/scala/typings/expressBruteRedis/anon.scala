@@ -7,26 +7,24 @@ import typings.redis.mod.RetryStrategyOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined redis.redis.ClientOpts & {  client :redis.redis.RedisClient | undefined,   prefix :string | undefined,   host :string | undefined,   port :number | string | undefined} */
-  @js.native
   trait ClientOptsclientRedisClie extends StObject {
     
-    var auth_pass: js.UndefOr[String] = js.native
+    var auth_pass: js.UndefOr[String] = js.undefined
     
-    var client: js.UndefOr[RedisClient] = js.native
+    var client: js.UndefOr[RedisClient] = js.undefined
     
-    var connect_timeout: js.UndefOr[Double] = js.native
+    var connect_timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, client will run Redis **select** command on connect.
       * @default null
       */
-    var db: js.UndefOr[String | Double] = js.native
+    var db: js.UndefOr[String | Double] = js.undefined
     
     /**
       * If set to `true`, then replies will be sent to callbacks as Buffers.
@@ -36,13 +34,13 @@ object anon {
       * A subscriber has to either always return Strings or Buffers.
       * @default false
       */
-    var detect_buffers: js.UndefOr[Boolean] = js.native
+    var detect_buffers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, a client won't resubscribe after disconnecting.
       * @default false
       */
-    var disable_resubscribing: js.UndefOr[Boolean] = js.native
+    var disable_resubscribing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, if there is no active connection to the Redis server,
@@ -52,7 +50,7 @@ object anon {
       * or an error will be emitted if no callback is specified.
       * @default true
       */
-    var enable_offline_queue: js.UndefOr[Boolean] = js.native
+    var enable_offline_queue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can force using IPv6 if you set the family to **IPv6**.
@@ -61,15 +59,15 @@ object anon {
       * modules on how to use the family type.
       * @default IPv4
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * IP address of the Redis server.
       * @default 127.0.0.1
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var max_attempts: js.UndefOr[Double] = js.native
+    var max_attempts: js.UndefOr[Double] = js.undefined
     
     /**
       * When a connection is established to the Redis server,
@@ -81,9 +79,9 @@ object anon {
       * Setting `no_ready_check` to `true` will inhibit this check.
       * @default false
       */
-    var no_ready_check: js.UndefOr[Boolean] = js.native
+    var no_ready_check: js.UndefOr[Boolean] = js.undefined
     
-    var parser: js.UndefOr[String] = js.native
+    var parser: js.UndefOr[String] = js.undefined
     
     /**
       * If set, client will run Redis auth command on connect.
@@ -91,19 +89,19 @@ object anon {
       * **Note**: Node Redis < 2.5 must use `auth_pass`.
       * @default null
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * The UNIX socket string of the Redis server.
       * @default null
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Port of the Redis server.
       * @default 6379
       */
-    var port: js.UndefOr[Double] with (js.UndefOr[Double | String]) = js.native
+    var port: js.UndefOr[Double] & (js.UndefOr[Double | String])
     
     /**
       * A string used to prefix all used keys (e.g. namespace:test).
@@ -112,7 +110,7 @@ object anon {
       * and it would be impossible to determine the existing keys in Redis if this would be prefixed.
       * @default null
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Passing an object with renamed commands to use instead of the original functions.
@@ -121,9 +119,9 @@ object anon {
       * @see the [Redis security topics](http://redis.io/topics/security) for more info.
       * @default null
       */
-    var rename_commands: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var rename_commands: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var retry_max_delay: js.UndefOr[Double] = js.native
+    var retry_max_delay: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that receives an options object as parameter including the retry `attempt`,
@@ -157,7 +155,7 @@ object anon {
       *   }
       * });
       */
-    var retry_strategy: js.UndefOr[RetryStrategy] = js.native
+    var retry_strategy: js.UndefOr[RetryStrategy] = js.undefined
     
     /**
       * If set to `true`, all commands that were unfulfilled while the connection is lost
@@ -166,26 +164,26 @@ object anon {
       * This is especially useful if you use blocking commands.
       * @default false
       */
-    var retry_unfulfilled_commands: js.UndefOr[Boolean] = js.native
+    var retry_unfulfilled_commands: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, then all replies will be sent to callbacks as Buffers instead of Strings.
       * @default false
       */
-    var return_buffers: js.UndefOr[Boolean] = js.native
+    var return_buffers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial Delay in milliseconds.
       * This will also set the initial delay for keep-alive packets being sent to Redis.
       * @default 0
       */
-    var socket_initial_delay: js.UndefOr[Double] = js.native
+    var socket_initial_delay: js.UndefOr[Double] = js.undefined
     
     /**
       * If set to `true`, the keep-alive functionality is enabled on the underlying socket.
       * @default true
       */
-    var socket_keepalive: js.UndefOr[Boolean] = js.native
+    var socket_keepalive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to `true`, Node Redis will return Redis number values as Strings instead of javascript Numbers.
@@ -195,7 +193,7 @@ object anon {
       * the value of the `parser` option.
       * @default null
       */
-    var string_numbers: js.UndefOr[Boolean] = js.native
+    var string_numbers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object containing options to pass to
@@ -204,7 +202,7 @@ object anon {
       * (if, for example, it is set up to be accessible via a tunnel).
       * @default null
       */
-    var tls: js.UndefOr[js.Any] = js.native
+    var tls: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The URL of the Redis server.\
@@ -213,12 +211,12 @@ object anon {
       * More info avaliable at [IANA](http://www.iana.org/assignments/uri-schemes/prov/redis).
       * @default null
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ClientOptsclientRedisClie {
     
     @scala.inline
-    def apply(port: js.UndefOr[Double] with (js.UndefOr[Double | String])): ClientOptsclientRedisClie = {
+    def apply(port: js.UndefOr[Double] & (js.UndefOr[Double | String])): ClientOptsclientRedisClie = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOptsclientRedisClie]
     }
@@ -311,7 +309,7 @@ object anon {
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       @scala.inline
-      def setPort(value: js.UndefOr[Double] with (js.UndefOr[Double | String])): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      def setPort(value: js.UndefOr[Double] & (js.UndefOr[Double | String])): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])

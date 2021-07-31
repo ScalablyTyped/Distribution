@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImageVersionsResponse extends StObject {
   
   /** The list of supported ImageVersions in a location. */
-  var imageVersions: js.UndefOr[js.Array[ImageVersion]] = js.native
+  var imageVersions: js.UndefOr[js.Array[ImageVersion]] = js.undefined
   
   /** The page token used to query for the next page if one exists. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListImageVersionsResponse {
   

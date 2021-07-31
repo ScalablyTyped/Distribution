@@ -5,10 +5,13 @@ import typings.std.HTMLElement
 import typings.vegaTypings.runtimeMod.Loader_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererMod {
+  
+  @JSImport("vega-typings/types/runtime/renderer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-typings/types/runtime/renderer", "CanvasHandler")
   @js.native
@@ -28,18 +31,16 @@ object rendererMod {
     def resize(width: Double, height: Double, origin: js.Array[Double]): this.type = js.native
   }
   
-  @JSImport("vega-typings/types/runtime/renderer", "renderModule")
-  @js.native
-  def renderModule(moduleName: String, renderModule: RenderModule_): RenderModule_ = js.native
+  @scala.inline
+  def renderModule(moduleName: String, renderModule: RenderModule_): RenderModule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderModule")(moduleName.asInstanceOf[js.Any], renderModule.asInstanceOf[js.Any])).asInstanceOf[RenderModule_]
   
-  @js.native
   trait RenderModule_ extends StObject {
     
-    var handler: Handler = js.native
+    var handler: Handler
     
-    var headless: js.UndefOr[Renderer] = js.native
+    var headless: js.UndefOr[Renderer] = js.undefined
     
-    var renderer: Instantiable1[/* loader */ Loader_, Renderer] = js.native
+    var renderer: Instantiable1[/* loader */ Loader_, Renderer]
   }
   object RenderModule_ {
     

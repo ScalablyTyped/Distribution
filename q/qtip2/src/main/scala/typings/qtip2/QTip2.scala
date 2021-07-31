@@ -65,7 +65,6 @@ import typings.qtip2.qtip2Strings.toggle
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object QTip2 {
@@ -196,7 +195,7 @@ object QTip2 {
     def hide(event: Event): Api = js.native
     
     def reposition(): Api = js.native
-    def reposition(event: js.UndefOr[scala.Nothing], effect: Boolean): Api = js.native
+    def reposition(event: Unit, effect: Boolean): Api = js.native
     def reposition(event: Event): Api = js.native
     def reposition(event: Event, effect: Boolean): Api = js.native
     
@@ -372,21 +371,20 @@ object QTip2 {
     def show(event: Event): Api = js.native
     
     def toggle(): Api = js.native
-    def toggle(state: js.UndefOr[scala.Nothing], event: Event): Api = js.native
     def toggle(state: Boolean): Api = js.native
     def toggle(state: Boolean, event: Event): Api = js.native
+    def toggle(state: Unit, event: Event): Api = js.native
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var attr: js.UndefOr[String] = js.native
+    var attr: js.UndefOr[String] = js.undefined
     
-    var button: js.UndefOr[String | JQuery | Boolean] = js.native
+    var button: js.UndefOr[String | JQuery | Boolean] = js.undefined
     
-    var text: js.UndefOr[Text] = js.native
+    var text: js.UndefOr[Text] = js.undefined
     
-    var title: js.UndefOr[Title | typings.qtip2.anon.Text] = js.native
+    var title: js.UndefOr[Title | typings.qtip2.anon.Text] = js.undefined
   }
   object Content {
     
@@ -436,26 +434,25 @@ object QTip2 {
   /**
     * Events property
     */
-  @js.native
   trait Events extends StObject {
     
-    var blur: js.UndefOr[EventApiFunc] = js.native
+    var blur: js.UndefOr[EventApiFunc] = js.undefined
     
-    var focus: js.UndefOr[EventApiFunc] = js.native
+    var focus: js.UndefOr[EventApiFunc] = js.undefined
     
-    var hidden: js.UndefOr[EventApiFunc] = js.native
+    var hidden: js.UndefOr[EventApiFunc] = js.undefined
     
-    var hide: js.UndefOr[EventApiFunc] = js.native
+    var hide: js.UndefOr[EventApiFunc] = js.undefined
     
-    var move: js.UndefOr[EventApiFunc] = js.native
+    var move: js.UndefOr[EventApiFunc] = js.undefined
     
-    var render: js.UndefOr[EventApiFunc] = js.native
+    var render: js.UndefOr[EventApiFunc] = js.undefined
     
-    var show: js.UndefOr[EventApiFunc] = js.native
+    var show: js.UndefOr[EventApiFunc] = js.undefined
     
-    var toggle: js.UndefOr[EventApiFunc] = js.native
+    var toggle: js.UndefOr[EventApiFunc] = js.undefined
     
-    var visible: js.UndefOr[EventApiFunc] = js.native
+    var visible: js.UndefOr[EventApiFunc] = js.undefined
   }
   object Events {
     
@@ -527,24 +524,23 @@ object QTip2 {
   /**
     * Hide property
     */
-  @js.native
   trait Hide extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var distance: js.UndefOr[Double | Boolean] = js.native
+    var distance: js.UndefOr[Double | Boolean] = js.undefined
     
-    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.native
+    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.undefined
     
-    var event: js.UndefOr[String | Boolean] = js.native
+    var event: js.UndefOr[String | Boolean] = js.undefined
     
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
-    var inactive: js.UndefOr[Double | Boolean] = js.native
+    var inactive: js.UndefOr[Double | Boolean] = js.undefined
     
-    var leave: js.UndefOr[String | Boolean] = js.native
+    var leave: js.UndefOr[String | Boolean] = js.undefined
     
-    var target: js.UndefOr[JQuery | Boolean] = js.native
+    var target: js.UndefOr[JQuery | Boolean] = js.undefined
   }
   object Hide {
     
@@ -610,18 +606,17 @@ object QTip2 {
     }
   }
   
-  @js.native
   trait Modal extends StObject {
     
-    var blur: js.UndefOr[Boolean] = js.native
+    var blur: js.UndefOr[Boolean] = js.undefined
     
-    var effect: js.UndefOr[Boolean | (js.Function1[/* state */ js.Any, Unit])] = js.native
+    var effect: js.UndefOr[Boolean | (js.Function1[/* state */ js.Any, Unit])] = js.undefined
     
-    var escape: js.UndefOr[Boolean] = js.native
+    var escape: js.UndefOr[Boolean] = js.undefined
     
-    var on: js.UndefOr[Boolean] = js.native
+    var on: js.UndefOr[Boolean] = js.undefined
     
-    var stealfocus: js.UndefOr[Boolean] = js.native
+    var stealfocus: js.UndefOr[Boolean] = js.undefined
   }
   object Modal {
     
@@ -674,13 +669,13 @@ object QTip2 {
     
     def apply(): JQuery = js.native
     def apply(methodName: String): js.Any = js.native
-    def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: js.UndefOr[scala.Nothing], p2: js.Any, p3: js.Any): js.Any = js.native
     def apply(methodName: String, p1: js.Any): js.Any = js.native
-    def apply(methodName: String, p1: js.Any, p2: js.UndefOr[scala.Nothing], p3: js.Any): js.Any = js.native
     def apply(methodName: String, p1: js.Any, p2: js.Any): js.Any = js.native
     def apply(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any = js.native
+    def apply(methodName: String, p1: js.Any, p2: Unit, p3: js.Any): js.Any = js.native
+    def apply(methodName: String, p1: Unit, p2: js.Any): js.Any = js.native
+    def apply(methodName: String, p1: Unit, p2: js.Any, p3: js.Any): js.Any = js.native
+    def apply(methodName: String, p1: Unit, p2: Unit, p3: js.Any): js.Any = js.native
     def apply(methodName: api): Api = js.native
     def apply(methodName: blur): JQuery = js.native
     def apply(methodName: blur, event: Event): JQuery = js.native
@@ -830,38 +825,37 @@ object QTip2 {
     def apply(methodName: option, propertyName: suppress): Boolean = js.native
     def apply(methodName: option, propertyName: suppress, value: Boolean): Api = js.native
     def apply(methodName: reposition): JQuery = js.native
-    def apply(methodName: reposition, event: js.UndefOr[scala.Nothing], effect: Boolean): JQuery = js.native
+    def apply(methodName: reposition, event: Unit, effect: Boolean): JQuery = js.native
     def apply(methodName: reposition, event: Event): JQuery = js.native
     def apply(methodName: reposition, event: Event, effect: Boolean): JQuery = js.native
     def apply(methodName: show): JQuery = js.native
     def apply(methodName: show, event: Event): JQuery = js.native
     def apply(methodName: toggle): JQuery = js.native
-    def apply(methodName: toggle, state: js.UndefOr[scala.Nothing], event: Event): JQuery = js.native
     def apply(methodName: toggle, state: Boolean): JQuery = js.native
     def apply(methodName: toggle, state: Boolean, event: Event): JQuery = js.native
+    def apply(methodName: toggle, state: Unit, event: Event): JQuery = js.native
     def apply(options: QTipOptions): JQuery = js.native
     
     var defaults: QTipOptions = js.native
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var adjust: js.UndefOr[PositionAdjust] = js.native
+    var adjust: js.UndefOr[PositionAdjust] = js.undefined
     
-    var at: js.UndefOr[String | Boolean] = js.native
+    var at: js.UndefOr[String | Boolean] = js.undefined
     
-    var container: js.UndefOr[JQuery | Boolean] = js.native
+    var container: js.UndefOr[JQuery | Boolean] = js.undefined
     
     var effect: js.UndefOr[
         Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit])
-      ] = js.native
+      ] = js.undefined
     
-    var my: js.UndefOr[String | Boolean] = js.native
+    var my: js.UndefOr[String | Boolean] = js.undefined
     
-    var target: js.UndefOr[Target | Boolean] = js.native
+    var target: js.UndefOr[Target | Boolean] = js.undefined
     
-    var viewport: js.UndefOr[JQuery | Boolean] = js.native
+    var viewport: js.UndefOr[JQuery | Boolean] = js.undefined
   }
   object Position {
     
@@ -927,20 +921,19 @@ object QTip2 {
   /**
     * Position property
     */
-  @js.native
   trait PositionAdjust extends StObject {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var mouse: js.UndefOr[Boolean] = js.native
+    var mouse: js.UndefOr[Boolean] = js.undefined
     
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object PositionAdjust {
     
@@ -994,30 +987,29 @@ object QTip2 {
   /**
     * Options
     */
-  @js.native
   trait QTipOptions extends StObject {
     
-    var content: js.UndefOr[Text | Content] = js.native
+    var content: js.UndefOr[Text | Content] = js.undefined
     
-    var events: js.UndefOr[Events] = js.native
+    var events: js.UndefOr[Events] = js.undefined
     
-    var hide: js.UndefOr[String | JQuery | Hide] = js.native
+    var hide: js.UndefOr[String | JQuery | Hide] = js.undefined
     
-    var id: js.UndefOr[String | Boolean] = js.native
+    var id: js.UndefOr[String | Boolean] = js.undefined
     
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[js.Any] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[String | Position] = js.native
+    var position: js.UndefOr[String | Position] = js.undefined
     
-    var prerender: js.UndefOr[Boolean] = js.native
+    var prerender: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[String | Boolean | JQuery | Show] = js.native
+    var show: js.UndefOr[String | Boolean | JQuery | Show] = js.undefined
     
-    var style: js.UndefOr[String | Style] = js.native
+    var style: js.UndefOr[String | Style] = js.undefined
     
-    var suppress: js.UndefOr[Boolean] = js.native
+    var suppress: js.UndefOr[Boolean] = js.undefined
   }
   object QTipOptions {
     
@@ -1104,22 +1096,21 @@ object QTip2 {
   /**
     * Show property
     */
-  @js.native
   trait Show extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.native
+    var effect: js.UndefOr[Boolean | (js.Function1[/* offset */ js.Any, Unit])] = js.undefined
     
-    var event: js.UndefOr[String | Boolean] = js.native
+    var event: js.UndefOr[String | Boolean] = js.undefined
     
-    var modal: js.UndefOr[Boolean | Modal] = js.native
+    var modal: js.UndefOr[Boolean | Modal] = js.undefined
     
-    var ready: js.UndefOr[Boolean] = js.native
+    var ready: js.UndefOr[Boolean] = js.undefined
     
-    var solo: js.UndefOr[JQuery | String | Boolean] = js.native
+    var solo: js.UndefOr[JQuery | String | Boolean] = js.undefined
     
-    var target: js.UndefOr[JQuery | Boolean] = js.native
+    var target: js.UndefOr[JQuery | Boolean] = js.undefined
   }
   object Show {
     
@@ -1182,20 +1173,19 @@ object QTip2 {
   /**
     * Style property
     */
-  @js.native
   trait Style extends StObject {
     
-    var classes: js.UndefOr[String | Boolean] = js.native
+    var classes: js.UndefOr[String | Boolean] = js.undefined
     
-    var `def`: js.UndefOr[Boolean] = js.native
+    var `def`: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[String | Double | Boolean] = js.native
+    var height: js.UndefOr[String | Double | Boolean] = js.undefined
     
-    var tip: js.UndefOr[String | Boolean | Tip] = js.native
+    var tip: js.UndefOr[String | Boolean | Tip] = js.undefined
     
-    var widget: js.UndefOr[Boolean] = js.native
+    var widget: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String | Double | Boolean] = js.native
+    var width: js.UndefOr[String | Double | Boolean] = js.undefined
   }
   object Style {
     
@@ -1250,20 +1240,19 @@ object QTip2 {
   
   type Text = String | JQuery | EventApiFunc | Boolean | JQueryGenericPromise[js.Any]
   
-  @js.native
   trait Tip extends StObject {
     
-    var border: js.UndefOr[Double | Boolean] = js.native
+    var border: js.UndefOr[Double | Boolean] = js.undefined
     
-    var corner: js.UndefOr[String | Boolean] = js.native
+    var corner: js.UndefOr[String | Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var mimic: js.UndefOr[String | Boolean] = js.native
+    var mimic: js.UndefOr[String | Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Tip {
     

@@ -5,31 +5,29 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStorageFileStatics extends StObject {
   
   def createStreamedFileAsync(
     displayNameWithExtension: String,
     dataRequested: StreamedFileDataRequestedHandler,
     thumbnail: IRandomAccessStreamReference
-  ): IAsyncOperation[StorageFile] = js.native
+  ): IAsyncOperation[StorageFile]
   
-  def createStreamedFileFromUriAsync(displayNameWithExtension: String, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[StorageFile] = js.native
+  def createStreamedFileFromUriAsync(displayNameWithExtension: String, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[StorageFile]
   
-  def getFileFromApplicationUriAsync(uri: Uri): IAsyncOperation[StorageFile] = js.native
+  def getFileFromApplicationUriAsync(uri: Uri): IAsyncOperation[StorageFile]
   
-  def getFileFromPathAsync(path: String): IAsyncOperation[StorageFile] = js.native
+  def getFileFromPathAsync(path: String): IAsyncOperation[StorageFile]
   
   def replaceWithStreamedFileAsync(
     fileToReplace: IStorageFile,
     dataRequested: StreamedFileDataRequestedHandler,
     thumbnail: IRandomAccessStreamReference
-  ): IAsyncOperation[StorageFile] = js.native
+  ): IAsyncOperation[StorageFile]
   
-  def replaceWithStreamedFileFromUriAsync(fileToReplace: IStorageFile, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[StorageFile] = js.native
+  def replaceWithStreamedFileFromUriAsync(fileToReplace: IStorageFile, uri: Uri, thumbnail: IRandomAccessStreamReference): IAsyncOperation[StorageFile]
 }
 object IStorageFileStatics {
   

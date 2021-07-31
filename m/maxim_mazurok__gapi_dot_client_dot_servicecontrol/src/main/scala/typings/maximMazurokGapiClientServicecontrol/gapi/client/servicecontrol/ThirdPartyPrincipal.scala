@@ -3,18 +3,16 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyPrincipal extends StObject {
   
   /** Metadata about third party identity. */
   var thirdPartyClaims: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ThirdPartyPrincipal {
   
@@ -31,7 +29,7 @@ object ThirdPartyPrincipal {
     def setThirdPartyClaims(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.ThirdPartyPrincipal & TopLevel[js.Any]
     ): Self = StObject.set(x, "thirdPartyClaims", value.asInstanceOf[js.Any])
     
     @scala.inline

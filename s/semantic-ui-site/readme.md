@@ -12,7 +12,7 @@ Single component release of site
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2265 |
+| # downloads        | 1936 |
 | # stars            | 0 |
 
 ## Links

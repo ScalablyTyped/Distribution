@@ -5,15 +5,16 @@ import typings.cssModulesLoaderCore.anon.ToString
 import typings.postcss.mod.Plugin_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("css-modules-loader-core", JSImport.Namespace)
   @js.native
-  class ^ () extends Core {
-    def this(plugins: js.Array[Plugin_[_]]) = this()
+  class ^ ()
+    extends StObject
+       with Core {
+    def this(plugins: js.Array[Plugin_[js.Any]]) = this()
   }
   @JSImport("css-modules-loader-core", JSImport.Namespace)
   @js.native
@@ -58,30 +59,24 @@ object mod {
   trait Core extends StObject {
     
     def load(source: Source): js.Promise[Result] = js.native
-    def load(
-      source: Source,
-      sourcePath: js.UndefOr[scala.Nothing],
-      trace: js.UndefOr[scala.Nothing],
-      pathFetcher: PathFetcher
-    ): js.Promise[Result] = js.native
-    def load(source: Source, sourcePath: js.UndefOr[scala.Nothing], trace: String): js.Promise[Result] = js.native
-    def load(source: Source, sourcePath: js.UndefOr[scala.Nothing], trace: String, pathFetcher: PathFetcher): js.Promise[Result] = js.native
     def load(source: Source, sourcePath: String): js.Promise[Result] = js.native
-    def load(source: Source, sourcePath: String, trace: js.UndefOr[scala.Nothing], pathFetcher: PathFetcher): js.Promise[Result] = js.native
     def load(source: Source, sourcePath: String, trace: String): js.Promise[Result] = js.native
     def load(source: Source, sourcePath: String, trace: String, pathFetcher: PathFetcher): js.Promise[Result] = js.native
+    def load(source: Source, sourcePath: String, trace: Unit, pathFetcher: PathFetcher): js.Promise[Result] = js.native
+    def load(source: Source, sourcePath: Unit, trace: String): js.Promise[Result] = js.native
+    def load(source: Source, sourcePath: Unit, trace: String, pathFetcher: PathFetcher): js.Promise[Result] = js.native
+    def load(source: Source, sourcePath: Unit, trace: Unit, pathFetcher: PathFetcher): js.Promise[Result] = js.native
   }
   
   type ExportTokens = StringDictionary[String]
   
   type PathFetcher = js.Function3[/* file */ String, /* relativeTo */ String, /* depTrace */ String, Unit]
   
-  @js.native
   trait Result extends StObject {
     
-    var exportTokens: ExportTokens = js.native
+    var exportTokens: ExportTokens
     
-    var injectableSource: String = js.native
+    var injectableSource: String
   }
   object Result {
     

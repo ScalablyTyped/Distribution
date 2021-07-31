@@ -2,24 +2,22 @@ package typings.googleapis.languageV1Mod.languageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The syntax analysis request message.
   */
-@js.native
 trait SchemaAnalyzeSyntaxRequest extends StObject {
   
   /**
     * Input document.
     */
-  var document: js.UndefOr[SchemaDocument] = js.native
+  var document: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * The encoding type used by the API to calculate offsets.
     */
-  var encodingType: js.UndefOr[String] = js.native
+  var encodingType: js.UndefOr[String] = js.undefined
 }
 object SchemaAnalyzeSyntaxRequest {
   

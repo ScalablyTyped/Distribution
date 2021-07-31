@@ -7,29 +7,27 @@ import typings.astTypes.kindsMod.StatementKind
 import typings.astTypes.kindsMod.VariableDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Init extends StObject {
   
-  var body: StatementKind = js.native
+  var body: StatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var init: VariableDeclarationKind | ExpressionKind | Null = js.native
+  var init: VariableDeclarationKind | ExpressionKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var test: ExpressionKind | Null = js.native
+  var test: ExpressionKind | Null
   
-  var update: ExpressionKind | Null = js.native
+  var update: ExpressionKind | Null
 }
 object Init {
   
   @scala.inline
   def apply(body: StatementKind): Init = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], init = null, test = null, update = null)
     __obj.asInstanceOf[Init]
   }
   

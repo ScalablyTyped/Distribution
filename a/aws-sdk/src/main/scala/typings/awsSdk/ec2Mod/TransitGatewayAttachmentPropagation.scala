@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayAttachmentPropagation extends StObject {
   
   /**
     * The state of the propagation route table.
     */
-  var State: js.UndefOr[TransitGatewayPropagationState] = js.native
+  var State: js.UndefOr[TransitGatewayPropagationState] = js.undefined
   
   /**
     * The ID of the propagation route table.
     */
-  var TransitGatewayRouteTableId: js.UndefOr[String] = js.native
+  var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayAttachmentPropagation {
   

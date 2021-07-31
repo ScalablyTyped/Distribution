@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobDefinitionMod {
@@ -78,6 +77,10 @@ object jobDefinitionMod {
   /* static members */
   object JobDefinition {
     
+    @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing JobDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -87,67 +90,61 @@ object jobDefinitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): JobDefinition = js.native
-    @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): JobDefinition = js.native
-    @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobDefinitionState): JobDefinition = js.native
-    @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): JobDefinition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobDefinitionState): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): JobDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[JobDefinition]
     
     /**
       * Returns true if the given object is an instance of JobDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean]
   }
   
-  @js.native
   trait JobDefinitionArgs extends StObject {
     
     /**
       * A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
       * provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
       */
-    val containerProperties: js.UndefOr[Input[String]] = js.native
+    val containerProperties: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the job definition.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the parameter substitution placeholders to set in the job definition.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
       * Maximum number of `retryStrategy` is `1`.  Defined below.
       */
-    val retryStrategy: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]] = js.native
+    val retryStrategy: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
       */
-    val timeout: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]] = js.native
+    val timeout: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]] = js.undefined
     
     /**
       * The type of job definition.  Must be `container`
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object JobDefinitionArgs {
     
@@ -202,55 +199,54 @@ object jobDefinitionMod {
     }
   }
   
-  @js.native
   trait JobDefinitionState extends StObject {
     
     /**
       * The Amazon Resource Name of the job definition.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
       * provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
       */
-    val containerProperties: js.UndefOr[Input[String]] = js.native
+    val containerProperties: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the job definition.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the parameter substitution placeholders to set in the job definition.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
       * Maximum number of `retryStrategy` is `1`.  Defined below.
       */
-    val retryStrategy: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]] = js.native
+    val retryStrategy: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionRetryStrategy]] = js.undefined
     
     /**
       * The revision of the job definition.
       */
-    val revision: js.UndefOr[Input[Double]] = js.native
+    val revision: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
       */
-    val timeout: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]] = js.native
+    val timeout: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.JobDefinitionTimeout]] = js.undefined
     
     /**
       * The type of job definition.  Must be `container`
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object JobDefinitionState {
     

@@ -10,33 +10,31 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPickerGridCellTypesMod {
   
-  @js.native
   trait IColorCellProps extends StObject {
     
     /**
       * The CSS-compatible string to describe the color
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Arbitrary unique string associated with this option
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Index for this option
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Tooltip and aria label for this item
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
   }
   object IColorCellProps {
     
@@ -72,111 +70,110 @@ object colorPickerGridCellTypesMod {
     }
   }
   
-  @js.native
   trait IColorPickerGridCellProps extends StObject {
     
     /**
       * Width of the border that indicates a selected/hovered cell, in pixels.
       * @defaultvalue 2 if `cellWidth` is less than 24; otherwise 4
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * True if this cell should be rendered as a circle, false if it should be a square.
       * @default `true` (render as circle)
       */
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The CSS-compatible string to describe the color
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Whether this cell should be disabled
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Height of the cell, in pixels
       * @defaultvalue 20
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Used as a PREFIX for the cell's ID (the cell will not have this literal string as its ID).
       * @deprecated Deprecated due to misleading name. Use `idPrefix` instead.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Prefix for this cell's ID. Will be required in a future version once `id` is removed.
       */
-    var idPrefix: js.UndefOr[String] = js.native
+    var idPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Index for this option
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Item to render
       */
-    var item: IColorCellProps = js.native
+    var item: IColorCellProps
     
     /**
       * Tooltip and aria label for this item
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * Handler for when a color cell is clicked.
       */
-    var onClick: js.UndefOr[js.Function1[/* item */ IColorCellProps, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* item */ IColorCellProps, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* item */ IColorCellProps, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* item */ IColorCellProps, Unit]] = js.undefined
     
-    var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[IColorCellProps], Unit]] = js.native
+    var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[IColorCellProps], Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], Unit]] = js.undefined
     
     /**
       * Mouse enter handler. Returns true if the event should be processed, false otherwise.
       */
-    var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * Mouse move handler. Returns true if the event should be processed, false otherwise.
       */
-    var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
     
-    var onWheel: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * Whether this cell is currently selected
       */
-    var selected: Boolean = js.native
+    var selected: Boolean
     
     /**
       * Custom styles for the component.
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The theme object to use for styling.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Width of the cell, in pixels
       * @defaultvalue 20
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IColorPickerGridCellProps {
     
@@ -320,48 +317,47 @@ object colorPickerGridCellTypesMod {
     }
   }
   
-  @js.native
   trait IColorPickerGridCellStyleProps extends StObject {
     
     /**
       * The width of the border indicating a hovered or selected cell, in pixels.
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the svg color element should be rendered as a circle or not.
       */
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the component is disabled or not.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The height of this cell, in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the color being rendered is white or not. If it is white we show a border around it.
       */
-    var isWhite: js.UndefOr[Boolean] = js.native
+    var isWhite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the cell is currently selected or not.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme to apply to the cell.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
     
     /**
       * The width of this cell, in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IColorPickerGridCellStyleProps {
     
@@ -421,18 +417,17 @@ object colorPickerGridCellTypesMod {
     }
   }
   
-  @js.native
   trait IColorPickerGridCellStyles extends StObject {
     
     /**
       * Style to apply to a colorCell in the color picker.
       */
-    var colorCell: IStyle = js.native
+    var colorCell: IStyle
     
     /**
       * Style to apply to the svg element that renders the color.
       */
-    var svg: IStyle = js.native
+    var svg: IStyle
   }
   object IColorPickerGridCellStyles {
     

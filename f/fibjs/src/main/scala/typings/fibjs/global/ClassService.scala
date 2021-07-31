@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_Service")
 @js.native
 class ClassService protected ()
-  extends typings.fibjs.ClassService {
+  extends StObject
+     with typings.fibjs.ClassService {
   /**
     * 
     * @brief 系统服务管理对象构造函数
@@ -24,6 +24,10 @@ class ClassService protected ()
 }
 object ClassService {
   
+  @JSGlobal("Class_Service")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * 
     * @brief 安装服务到系统
@@ -36,18 +40,14 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.install")
-  @js.native
-  def install(name: String, cmd: String): Unit = js.native
-  @JSGlobal("Class_Service.install")
-  @js.native
-  def install(name: String, cmd: String, displayName: js.UndefOr[scala.Nothing], description: String): Unit = js.native
-  @JSGlobal("Class_Service.install")
-  @js.native
-  def install(name: String, cmd: String, displayName: String): Unit = js.native
-  @JSGlobal("Class_Service.install")
-  @js.native
-  def install(name: String, cmd: String, displayName: String, description: String): Unit = js.native
+  @scala.inline
+  def install(name: String, cmd: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def install(name: String, cmd: String, displayName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def install(name: String, cmd: String, displayName: String, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def install(name: String, cmd: String, displayName: Unit, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(name.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 
@@ -59,9 +59,8 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.isInstalled")
-  @js.native
-  def isInstalled(name: String): Boolean = js.native
+  @scala.inline
+  def isInstalled(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * 
@@ -73,9 +72,8 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.isRunning")
-  @js.native
-  def isRunning(name: String): Boolean = js.native
+  @scala.inline
+  def isRunning(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRunning")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * 
@@ -86,9 +84,8 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.remove")
-  @js.native
-  def remove(name: String): Unit = js.native
+  @scala.inline
+  def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 
@@ -99,9 +96,8 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.restart")
-  @js.native
-  def restart(name: String): Unit = js.native
+  @scala.inline
+  def restart(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 
@@ -112,9 +108,8 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.start")
-  @js.native
-  def start(name: String): Unit = js.native
+  @scala.inline
+  def start(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 
@@ -125,7 +120,6 @@ object ClassService {
     * 
     */
   /* static member */
-  @JSGlobal("Class_Service.stop")
-  @js.native
-  def stop(name: String): Unit = js.native
+  @scala.inline
+  def stop(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

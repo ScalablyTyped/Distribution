@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestGridSessionArtifact extends StObject {
   
   /**
     * The file name of the artifact.
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of artifact.
     */
-  var `type`: js.UndefOr[TestGridSessionArtifactType] = js.native
+  var `type`: js.UndefOr[TestGridSessionArtifactType] = js.undefined
   
   /**
     * A semi-stable URL to the content of the object.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object TestGridSessionArtifact {
   

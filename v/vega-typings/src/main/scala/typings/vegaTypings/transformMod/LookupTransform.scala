@@ -4,32 +4,32 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LookupTransform extends _Transforms {
+trait LookupTransform
+  extends StObject
+     with _Transforms {
   
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
   
-  var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   
-  var fields: js.Array[FieldRef] | SignalRef = js.native
+  var fields: js.Array[FieldRef] | SignalRef
   
-  var from: DataName = js.native
+  var from: DataName
   
-  var key: FieldRef = js.native
+  var key: FieldRef
   
-  var `type`: lookup = js.native
+  var `type`: lookup
   
-  var values: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var values: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
 }
 object LookupTransform {
   
   @scala.inline
-  def apply(fields: js.Array[FieldRef] | SignalRef, from: DataName, key: FieldRef, `type`: lookup): LookupTransform = {
+  def apply(fields: js.Array[FieldRef] | SignalRef, from: DataName, key: FieldRef): LookupTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("lookup")
     __obj.asInstanceOf[LookupTransform]
   }
   

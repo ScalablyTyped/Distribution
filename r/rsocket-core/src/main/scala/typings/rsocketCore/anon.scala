@@ -7,23 +7,21 @@ import typings.rsocketTypes.reactiveStreamTypesMod.ISubscription
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DataMimeType[D, M] extends StObject {
     
-    var dataMimeType: String = js.native
+    var dataMimeType: String
     
-    var keepAlive: Double = js.native
+    var keepAlive: Double
     
-    var lifetime: Double = js.native
+    var lifetime: Double
     
-    var metadataMimeType: String = js.native
+    var metadataMimeType: String
     
-    var payload: js.UndefOr[Payload[D, M]] = js.native
+    var payload: js.UndefOr[Payload[D, M]] = js.undefined
   }
   object DataMimeType {
     
@@ -34,7 +32,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMimeTypeMutableBuilder[Self <: DataMimeType[_, _], D, M] (val x: Self with (DataMimeType[D, M])) extends AnyVal {
+    implicit class DataMimeTypeMutableBuilder[Self <: DataMimeType[?, ?], D, M] (val x: Self & (DataMimeType[D, M])) extends AnyVal {
       
       @scala.inline
       def setDataMimeType(value: String): Self = StObject.set(x, "dataMimeType", value.asInstanceOf[js.Any])
@@ -57,16 +55,15 @@ object anon {
   }
   
   /* Inlined std.Error & {  source :rsocket-core.rsocket-core/RSocketFrame.ErrorSource} */
-  @js.native
   trait ErrorsourceErrorSource extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var source: ErrorSource = js.native
+    var source: ErrorSource
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object ErrorsourceErrorSource {
     
@@ -97,16 +94,15 @@ object anon {
   }
   
   /* Inlined std.Partial<rsocket-types.rsocket-types.ISubscriber<rsocket-types.rsocket-types.Frame>> */
-  @js.native
   trait PartialISubscriberFrame extends StObject {
     
-    var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var onNext: js.UndefOr[js.Function1[/* value */ Frame, Unit]] = js.native
+    var onNext: js.UndefOr[js.Function1[/* value */ Frame, Unit]] = js.undefined
     
-    var onSubscribe: js.UndefOr[js.Function1[/* subscription */ ISubscription, Unit]] = js.native
+    var onSubscribe: js.UndefOr[js.Function1[/* subscription */ ISubscription, Unit]] = js.undefined
   }
   object PartialISubscriberFrame {
     

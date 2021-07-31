@@ -5,17 +5,15 @@ import typings.plottable.interfacesMod.AttributeToAppliedProjector
 import typings.plottable.interfacesMod.AttributeToProjector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawStepMod {
   
-  @js.native
   trait AppliedDrawStep extends StObject {
     
-    var animator: IAnimator = js.native
+    var animator: IAnimator
     
-    var attrToAppliedProjector: AttributeToAppliedProjector = js.native
+    var attrToAppliedProjector: AttributeToAppliedProjector
   }
   object AppliedDrawStep {
     
@@ -36,12 +34,11 @@ object drawStepMod {
     }
   }
   
-  @js.native
   trait DrawStep extends StObject {
     
-    var animator: IAnimator = js.native
+    var animator: IAnimator
     
-    var attrToProjector: AttributeToProjector = js.native
+    var attrToProjector: AttributeToProjector
   }
   object DrawStep {
     

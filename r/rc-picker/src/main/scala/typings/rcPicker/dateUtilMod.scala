@@ -6,126 +6,113 @@ import typings.rcPicker.interfaceMod.NullableDateType
 import typings.rcPicker.interfaceMod.PickerMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateUtilMod {
+  
+  @JSImport("rc-picker/es/utils/dateUtil", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-picker/es/utils/dateUtil", "WEEK_DAY_COUNT")
   @js.native
   val WEEK_DAY_COUNT: /* 7 */ Double = js.native
   
-  @JSImport("rc-picker/es/utils/dateUtil", "formatValue")
-  @js.native
-  def formatValue[DateType](value: DateType, hasGenerateConfigLocaleFormat: GenerateConfig[DateType]): String = js.native
+  @scala.inline
+  def formatValue[DateType](value: DateType, hasGenerateConfigLocaleFormat: GenerateConfig[DateType]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValue")(value.asInstanceOf[js.Any], hasGenerateConfigLocaleFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "getClosingViewDate")
-  @js.native
+  @scala.inline
   def getClosingViewDate[DateType](
     viewDate: DateType,
     picker: PickerMode,
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
-  ): DateType = js.native
-  @JSImport("rc-picker/es/utils/dateUtil", "getClosingViewDate")
-  @js.native
+  ): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("getClosingViewDate")(viewDate.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[DateType]
+  @scala.inline
   def getClosingViewDate[DateType](
     viewDate: DateType,
     picker: PickerMode,
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     offset: Double
-  ): DateType = js.native
+  ): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("getClosingViewDate")(viewDate.asInstanceOf[js.Any], picker.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[DateType]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "getQuarter")
-  @js.native
-  def getQuarter[DateType](generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType], date: DateType): Double = js.native
+  @scala.inline
+  def getQuarter[DateType](generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType], date: DateType): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getQuarter")(generateConfig.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "getWeekStartDate")
-  @js.native
+  @scala.inline
   def getWeekStartDate[DateType](
     locale: String,
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     value: DateType
-  ): DateType = js.native
+  ): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekStartDate")(locale.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[DateType]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isEqual")
-  @js.native
+  @scala.inline
   def isEqual[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     value1: NullableDateType[DateType],
     value2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(generateConfig.asInstanceOf[js.Any], value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isInRange")
-  @js.native
+  @scala.inline
   def isInRange[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     startDate: NullableDateType[DateType],
     endDate: NullableDateType[DateType],
     current: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInRange")(generateConfig.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isNullEqual")
-  @js.native
-  def isNullEqual[T](value1: T, value2: T): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def isNullEqual[T](value1: T, value2: T): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isNullEqual")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameDate")
-  @js.native
+  @scala.inline
   def isSameDate[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     date1: NullableDateType[DateType],
     date2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDate")(generateConfig.asInstanceOf[js.Any], date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameDecade")
-  @js.native
+  @scala.inline
   def isSameDecade[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     decade1: NullableDateType[DateType],
     decade2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDecade")(generateConfig.asInstanceOf[js.Any], decade1.asInstanceOf[js.Any], decade2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameMonth")
-  @js.native
+  @scala.inline
   def isSameMonth[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     month1: NullableDateType[DateType],
     month2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(generateConfig.asInstanceOf[js.Any], month1.asInstanceOf[js.Any], month2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameQuarter")
-  @js.native
+  @scala.inline
   def isSameQuarter[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     quarter1: NullableDateType[DateType],
     quarter2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameQuarter")(generateConfig.asInstanceOf[js.Any], quarter1.asInstanceOf[js.Any], quarter2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameTime")
-  @js.native
+  @scala.inline
   def isSameTime[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     time1: NullableDateType[DateType],
     time2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameTime")(generateConfig.asInstanceOf[js.Any], time1.asInstanceOf[js.Any], time2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameWeek")
-  @js.native
+  @scala.inline
   def isSameWeek[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     locale: String,
     date1: NullableDateType[DateType],
     date2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameWeek")(generateConfig.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "isSameYear")
-  @js.native
+  @scala.inline
   def isSameYear[DateType](
     generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
     year1: NullableDateType[DateType],
     year2: NullableDateType[DateType]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameYear")(generateConfig.asInstanceOf[js.Any], year1.asInstanceOf[js.Any], year2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rc-picker/es/utils/dateUtil", "parseValue")
-  @js.native
-  def parseValue[DateType](value: String, hasGenerateConfigLocaleFormatList: FormatList[DateType]): DateType = js.native
+  @scala.inline
+  def parseValue[DateType](value: String, hasGenerateConfigLocaleFormatList: FormatList[DateType]): DateType = (^.asInstanceOf[js.Dynamic].applyDynamic("parseValue")(value.asInstanceOf[js.Any], hasGenerateConfigLocaleFormatList.asInstanceOf[js.Any])).asInstanceOf[DateType]
 }

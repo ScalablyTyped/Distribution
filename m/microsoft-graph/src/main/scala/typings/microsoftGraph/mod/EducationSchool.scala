@@ -2,49 +2,49 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EducationSchool extends EducationOrganization {
+trait EducationSchool
+  extends StObject
+     with EducationOrganization {
   
   // Address of the school.
-  var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.native
+  var address: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
   // Classes taught at the school. Nullable.
-  var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.native
+  var classes: js.UndefOr[NullableOption[js.Array[EducationClass]]] = js.undefined
   
   // Entity who created the school.
-  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // ID of school in syncing system.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // ID of principal in syncing system.
-  var externalPrincipalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalPrincipalId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var fax: js.UndefOr[NullableOption[String]] = js.native
+  var fax: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Highest grade taught.
-  var highestGrade: js.UndefOr[NullableOption[String]] = js.native
+  var highestGrade: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Lowest grade taught.
-  var lowestGrade: js.UndefOr[NullableOption[String]] = js.native
+  var lowestGrade: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Phone number of school.
-  var phone: js.UndefOr[NullableOption[String]] = js.native
+  var phone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Email address of the principal.
-  var principalEmail: js.UndefOr[NullableOption[String]] = js.native
+  var principalEmail: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the principal.
-  var principalName: js.UndefOr[NullableOption[String]] = js.native
+  var principalName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // School Number.
-  var schoolNumber: js.UndefOr[NullableOption[String]] = js.native
+  var schoolNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Users in the school. Nullable.
-  var users: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.native
+  var users: js.UndefOr[NullableOption[js.Array[EducationUser]]] = js.undefined
 }
 object EducationSchool {
   

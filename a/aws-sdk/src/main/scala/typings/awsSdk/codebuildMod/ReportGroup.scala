@@ -2,48 +2,46 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportGroup extends StObject {
   
   /**
     *  The ARN of a ReportGroup. 
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The date and time this ReportGroup was created. 
     */
-  var created: js.UndefOr[Timestamp] = js.native
+  var created: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  Information about the destination where the raw data of this ReportGroup is exported. 
     */
-  var exportConfig: js.UndefOr[ReportExportConfig] = js.native
+  var exportConfig: js.UndefOr[ReportExportConfig] = js.undefined
   
   /**
     *  The date and time this ReportGroup was last modified. 
     */
-  var lastModified: js.UndefOr[Timestamp] = js.native
+  var lastModified: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The name of a ReportGroup. 
     */
-  var name: js.UndefOr[ReportGroupName] = js.native
+  var name: js.UndefOr[ReportGroupName] = js.undefined
   
-  var status: js.UndefOr[ReportGroupStatusType] = js.native
+  var status: js.UndefOr[ReportGroupStatusType] = js.undefined
   
   /**
     *  A list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     *  The type of the ReportGroup. The one valid value is TEST. 
     */
-  var `type`: js.UndefOr[ReportType] = js.native
+  var `type`: js.UndefOr[ReportType] = js.undefined
 }
 object ReportGroup {
   

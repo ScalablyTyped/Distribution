@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMatcher extends StObject {
   
   /** If specified, at least one of the values in the list must match the value specified. */
-  var oneOf: js.UndefOr[ValueMatcher] = js.native
+  var oneOf: js.UndefOr[ValueMatcher] = js.undefined
 }
 object ListMatcher {
   

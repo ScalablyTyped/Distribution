@@ -2,56 +2,54 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamInfo extends StObject {
   
   /**
     * A time stamp that indicates when the stream was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * How long the stream retains data, in hours.
     */
-  var DataRetentionInHours: js.UndefOr[typings.awsSdk.kinesisvideoMod.DataRetentionInHours] = js.native
+  var DataRetentionInHours: js.UndefOr[typings.awsSdk.kinesisvideoMod.DataRetentionInHours] = js.undefined
   
   /**
     * The name of the device that is associated with the stream.
     */
-  var DeviceName: js.UndefOr[typings.awsSdk.kinesisvideoMod.DeviceName] = js.native
+  var DeviceName: js.UndefOr[typings.awsSdk.kinesisvideoMod.DeviceName] = js.undefined
   
   /**
     * The ID of the AWS Key Management Service (AWS KMS) key that Kinesis Video Streams uses to encrypt data on the stream.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.kinesisvideoMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.kinesisvideoMod.KmsKeyId] = js.undefined
   
   /**
     * The MediaType of the stream. 
     */
-  var MediaType: js.UndefOr[typings.awsSdk.kinesisvideoMod.MediaType] = js.native
+  var MediaType: js.UndefOr[typings.awsSdk.kinesisvideoMod.MediaType] = js.undefined
   
   /**
     * The status of the stream.
     */
-  var Status: js.UndefOr[typings.awsSdk.kinesisvideoMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.kinesisvideoMod.Status] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the stream.
     */
-  var StreamARN: js.UndefOr[ResourceARN] = js.native
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The name of the stream.
     */
-  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.native
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.undefined
   
   /**
     * The version of the stream.
     */
-  var Version: js.UndefOr[typings.awsSdk.kinesisvideoMod.Version] = js.native
+  var Version: js.UndefOr[typings.awsSdk.kinesisvideoMod.Version] = js.undefined
 }
 object StreamInfo {
   

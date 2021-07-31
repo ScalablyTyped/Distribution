@@ -4,21 +4,19 @@ import typings.rtpParser.rtpParserStrings.A
 import typings.rtpParser.rtpParserStrings.reserved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `18` extends StObject {
   
-  var mediaType: A = js.native
+  var mediaType: A
   
-  var name: reserved = js.native
+  var name: reserved
 }
 object `18` {
   
   @scala.inline
-  def apply(mediaType: A, name: reserved): `18` = {
-    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(): `18` = {
+    val __obj = js.Dynamic.literal(mediaType = "A", name = "reserved")
     __obj.asInstanceOf[`18`]
   }
   

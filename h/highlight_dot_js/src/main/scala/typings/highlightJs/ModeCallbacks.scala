@@ -3,18 +3,16 @@ package typings.highlightJs
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* modes */
-@js.native
 trait ModeCallbacks extends StObject {
   
   @JSName("on:begin")
-  var onColonbegin: js.UndefOr[ModeCallback] = js.native
+  var onColonbegin: js.UndefOr[ModeCallback] = js.undefined
   
   @JSName("on:end")
-  var onColonend: js.UndefOr[js.Function] = js.native
+  var onColonend: js.UndefOr[js.Function] = js.undefined
 }
 object ModeCallbacks {
   

@@ -2,7 +2,6 @@ package typings.reactNativeNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -22,21 +21,23 @@ object constantsMod {
   /* static members */
   object Constants {
     
-    @JSImport("react-native-navigation/lib/dist/adapters/Constants", "Constants.get")
+    @JSImport("react-native-navigation/lib/dist/adapters/Constants", "Constants")
     @js.native
-    def get(): js.Promise[NavigationConstants] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def get(): js.Promise[NavigationConstants] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[NavigationConstants]]
   }
   
-  @js.native
   trait NavigationConstants extends StObject {
     
-    var backButtonId: String = js.native
+    var backButtonId: String
     
-    var bottomTabsHeight: Double = js.native
+    var bottomTabsHeight: Double
     
-    var statusBarHeight: Double = js.native
+    var statusBarHeight: Double
     
-    var topBarHeight: Double = js.native
+    var topBarHeight: Double
   }
   object NavigationConstants {
     

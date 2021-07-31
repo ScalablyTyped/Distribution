@@ -8,7 +8,6 @@ import typings.chromeApps.chromeAppsStrings.textPlain
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -28,7 +27,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object clipboard {
   
-  @js.native
   trait AdditionalItems extends StObject {
     
     /**
@@ -37,7 +35,7 @@ object clipboard {
       * markup string if *type* is 'textHtml'.
       * The data can not exceed 2MB.
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * Type of the additional data item.
@@ -47,7 +45,7 @@ object clipboard {
         TEXTHTML, 
         /* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, 
         Exclude[/* keyof chrome-apps.anon.TEXTHTML */ TEXT_PLAIN | TEXT_HTML, textPlain | textHtml]
-      ] = js.native
+      ]
   }
   object AdditionalItems {
     

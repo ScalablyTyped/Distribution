@@ -7,10 +7,13 @@ import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activationsMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/activations", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Activation")
   @js.native
@@ -178,24 +181,18 @@ object activationsMod {
     val className: /* "tanh" */ String = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/activations", "deserializeActivation")
-  @js.native
-  def deserializeActivation(config: ConfigDict): Activation = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/activations", "deserializeActivation")
-  @js.native
-  def deserializeActivation(config: ConfigDict, customObjects: ConfigDict): Activation = js.native
+  @scala.inline
+  def deserializeActivation(config: ConfigDict): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeActivation")(config.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  @scala.inline
+  def deserializeActivation(config: ConfigDict, customObjects: ConfigDict): Activation = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeActivation")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Activation]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/activations", "getActivation")
-  @js.native
-  def getActivation(identifier: ConfigDict): Activation = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/activations", "getActivation")
-  @js.native
-  def getActivation(identifier: ActivationIdentifier): Activation = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/activations", "getActivation")
-  @js.native
-  def getActivation(identifier: Activation): Activation = js.native
+  @scala.inline
+  def getActivation(identifier: ConfigDict): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  @scala.inline
+  def getActivation(identifier: ActivationIdentifier): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
+  @scala.inline
+  def getActivation(identifier: Activation): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivation")(identifier.asInstanceOf[js.Any]).asInstanceOf[Activation]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/activations", "serializeActivation")
-  @js.native
-  def serializeActivation(activation: Activation): String = js.native
+  @scala.inline
+  def serializeActivation(activation: Activation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeActivation")(activation.asInstanceOf[js.Any]).asInstanceOf[String]
 }

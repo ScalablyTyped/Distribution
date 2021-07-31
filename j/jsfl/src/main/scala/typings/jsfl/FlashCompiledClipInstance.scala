@@ -2,25 +2,23 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashCompiledClipInstance extends StObject {
   
-  var accName: String = js.native
+  var accName: String
   
-  var actionScript: String = js.native
+  var actionScript: String
   
-  var description: String = js.native
+  var description: String
   
-  var forceSimple: Boolean = js.native
+  var forceSimple: Boolean
   
-  var shortcut: String = js.native
+  var shortcut: String
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var tabIndex: Double = js.native
+  var tabIndex: Double
 }
 object FlashCompiledClipInstance {
   

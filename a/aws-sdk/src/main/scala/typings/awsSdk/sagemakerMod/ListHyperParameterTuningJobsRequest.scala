@@ -2,61 +2,59 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHyperParameterTuningJobsRequest extends StObject {
   
   /**
     * A filter that returns only tuning jobs that were created after the specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only tuning jobs that were created before the specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only tuning jobs that were modified after the specified time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only tuning jobs that were modified before the specified time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum number of tuning jobs to return. The default value is 10.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A string in the tuning job name. This filter returns only tuning jobs whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[typings.awsSdk.sagemakerMod.NameContains] = js.native
+  var NameContains: js.UndefOr[typings.awsSdk.sagemakerMod.NameContains] = js.undefined
   
   /**
     * If the result of the previous ListHyperParameterTuningJobs request was truncated, the response includes a NextToken. To retrieve the next set of tuning jobs, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The field to sort results by. The default is Name.
     */
-  var SortBy: js.UndefOr[HyperParameterTuningJobSortByOptions] = js.native
+  var SortBy: js.UndefOr[HyperParameterTuningJobSortByOptions] = js.undefined
   
   /**
     * The sort order for results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A filter that returns only tuning jobs with the specified status.
     */
-  var StatusEquals: js.UndefOr[HyperParameterTuningJobStatus] = js.native
+  var StatusEquals: js.UndefOr[HyperParameterTuningJobStatus] = js.undefined
 }
 object ListHyperParameterTuningJobsRequest {
   

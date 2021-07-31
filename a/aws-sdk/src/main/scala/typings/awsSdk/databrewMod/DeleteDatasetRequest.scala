@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDatasetRequest extends StObject {
   
   /**
     * The name of the dataset to be deleted.
     */
-  var Name: DatasetName = js.native
+  var Name: DatasetName
 }
 object DeleteDatasetRequest {
   

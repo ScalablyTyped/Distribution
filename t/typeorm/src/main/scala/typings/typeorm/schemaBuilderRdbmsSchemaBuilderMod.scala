@@ -1,6 +1,7 @@
 package typings.typeorm
 
 import typings.typeorm.connectionConnectionMod.Connection
+import typings.typeorm.driverSqlInMemoryMod.SqlInMemory
 import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.optionsTableColumnOptionsMod.TableColumnOptions
@@ -8,14 +9,15 @@ import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.schemaBuilderSchemaBuilderMod.SchemaBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaBuilderRdbmsSchemaBuilderMod {
   
   @JSImport("typeorm/schema-builder/RdbmsSchemaBuilder", "RdbmsSchemaBuilder")
   @js.native
-  class RdbmsSchemaBuilder protected () extends SchemaBuilder {
+  class RdbmsSchemaBuilder protected ()
+    extends StObject
+       with SchemaBuilder {
     def this(connection: Connection) = this()
     
     /**
@@ -23,6 +25,12 @@ object schemaBuilderRdbmsSchemaBuilderMod {
       * Columns are created without keys.
       */
     /* protected */ def addNewColumns(): js.Promise[Unit] = js.native
+    
+    /**
+      * Creates complete schemas for the given entity metadatas.
+      */
+    /* CompleteClass */
+    override def build(): js.Promise[Unit] = js.native
     
     var connection: Connection = js.native
     
@@ -108,6 +116,12 @@ object schemaBuilderRdbmsSchemaBuilderMod {
       * Order of operations matter here.
       */
     /* protected */ def executeSchemaSyncOperationsInProperOrder(): js.Promise[Unit] = js.native
+    
+    /**
+      * Returns queries to be executed by schema builder.
+      */
+    /* CompleteClass */
+    override def log(): js.Promise[SqlInMemory] = js.native
     
     /**
       * Creates new columns from the given column metadatas.

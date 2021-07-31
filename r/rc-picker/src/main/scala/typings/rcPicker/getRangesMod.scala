@@ -8,35 +8,36 @@ import typings.rcPicker.rcPickerBooleans.`false`
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRangesMod {
   
-  @JSImport("rc-picker/es/utils/getRanges", JSImport.Default)
+  @JSImport("rc-picker/es/utils/getRanges", JSImport.Namespace)
   @js.native
-  def default(hasPrefixClsRangeListComponentsNeedConfirmButtonOnNowOnOkOkDisabledShowNowLocale: RangesProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasPrefixClsRangeListComponentsNeedConfirmButtonOnNowOnOkOkDisabledShowNowLocale: RangesProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsRangeListComponentsNeedConfirmButtonOnNowOnOkOkDisabledShowNowLocale.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait RangesProps extends StObject {
     
-    var components: js.UndefOr[Components] = js.native
+    var components: js.UndefOr[Components] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var needConfirmButton: Boolean = js.native
+    var needConfirmButton: Boolean
     
-    var okDisabled: js.UndefOr[Boolean] = js.native
+    var okDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var onNow: js.UndefOr[Null | js.Function0[Unit] | `false`] = js.native
+    var onNow: js.UndefOr[Null | js.Function0[Unit] | `false`] = js.undefined
     
-    var onOk: js.UndefOr[Null | js.Function0[Unit] | `false`] = js.native
+    var onOk: js.UndefOr[Null | js.Function0[Unit] | `false`] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var rangeList: js.UndefOr[RangeList] = js.native
+    var rangeList: js.UndefOr[RangeList] = js.undefined
     
-    var showNow: js.UndefOr[Boolean] = js.native
+    var showNow: js.UndefOr[Boolean] = js.undefined
   }
   object RangesProps {
     

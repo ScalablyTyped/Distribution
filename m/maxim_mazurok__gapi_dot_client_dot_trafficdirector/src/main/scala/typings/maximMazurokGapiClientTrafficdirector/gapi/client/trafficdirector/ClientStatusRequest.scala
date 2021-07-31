@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientStatusRequest extends StObject {
   
   /** Management server can use these match criteria to identify clients. The match follows OR semantics. */
-  var nodeMatchers: js.UndefOr[js.Array[NodeMatcher]] = js.native
+  var nodeMatchers: js.UndefOr[js.Array[NodeMatcher]] = js.undefined
 }
 object ClientStatusRequest {
   

@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.core
 import typings.openui5.sap.ui.base.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocaleData extends Object {
+trait LocaleData
+  extends StObject
+     with Object {
   
   /**
     * Returns the defined pattern for representing the calendar week number.
@@ -105,8 +106,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of day periods (AM, PM)
     */
-  def getDayPeriods(sWidth: String): js.Array[_] = js.native
-  def getDayPeriods(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getDayPeriods(sWidth: String): js.Array[js.Any] = js.native
+  def getDayPeriods(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Get standalone day periods in width "narrow", "abbreviated" or "wide"
@@ -115,8 +116,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of day periods (AM, PM)
     */
-  def getDayPeriodsStandAlone(sWidth: String): js.Array[_] = js.native
-  def getDayPeriodsStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getDayPeriodsStandAlone(sWidth: String): js.Array[js.Any] = js.native
+  def getDayPeriodsStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Get day names in width "narrow", "abbreviated" or "wide"
@@ -125,8 +126,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of day names (starting with Sunday)
     */
-  def getDays(sWidth: String): js.Array[_] = js.native
-  def getDays(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getDays(sWidth: String): js.Array[js.Any] = js.native
+  def getDays(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Get stand alone day names in width "narrow", "abbreviated" or "wide"
@@ -135,8 +136,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of day names (starting with Sunday)
     */
-  def getDaysStandAlone(sWidth: String): js.Array[_] = js.native
-  def getDaysStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getDaysStandAlone(sWidth: String): js.Array[js.Any] = js.native
+  def getDaysStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Returns the short decimal formats (like 1K, 1M....)
@@ -170,7 +171,7 @@ trait LocaleData extends Object {
     * @param sCalendarType the type of calendar
     * @returns the array of eras containing objects with either an _end or _start property with a date
     */
-  def getEraDates(sCalendarType: CalendarType): js.Array[_] = js.native
+  def getEraDates(sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Returns array of eras
@@ -179,8 +180,8 @@ trait LocaleData extends Object {
     * @param sCalendarType the type of calendar
     * @returns the array of eras
     */
-  def getEras(sWidth: String): js.Array[_] = js.native
-  def getEras(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getEras(sWidth: String): js.Array[js.Any] = js.native
+  def getEras(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Returns the day that usually is regarded as the first dayof a week in the current locale. Days are
@@ -218,8 +219,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of month names (starting with January)
     */
-  def getMonths(sWidth: String): js.Array[_] = js.native
-  def getMonths(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getMonths(sWidth: String): js.Array[js.Any] = js.native
+  def getMonths(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Get stand alone month names in width "narrow", "abbreviated" or "wide"
@@ -228,8 +229,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of month names (starting with January)
     */
-  def getMonthsStandAlone(sWidth: String): js.Array[_] = js.native
-  def getMonthsStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getMonthsStandAlone(sWidth: String): js.Array[js.Any] = js.native
+  def getMonthsStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Get number symbol "decimal", "group", "plusSign", "minusSign", "percentSign"
@@ -271,8 +272,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of quarters
     */
-  def getQuarters(sWidth: String): js.Array[_] = js.native
-  def getQuarters(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getQuarters(sWidth: String): js.Array[js.Any] = js.native
+  def getQuarters(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Get stand alone quarter names in width "narrow", "abbreviated" or "wide"
@@ -281,8 +282,8 @@ trait LocaleData extends Object {
     * either set in configuration or calculated from locale.
     * @returns array of quarters
     */
-  def getQuartersStandAlone(sWidth: String): js.Array[_] = js.native
-  def getQuartersStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[_] = js.native
+  def getQuartersStandAlone(sWidth: String): js.Array[js.Any] = js.native
+  def getQuartersStandAlone(sWidth: String, sCalendarType: CalendarType): js.Array[js.Any] = js.native
   
   /**
     * Returns the relative day resource pattern (like "Today", "Yesterday", "{0} days ago") based on the
@@ -352,9 +353,9 @@ trait LocaleData extends Object {
     * @returns the relative format pattern
     */
   def getRelativePattern(sScale: String, iDiff: Double): String = js.native
-  def getRelativePattern(sScale: String, iDiff: Double, bFuture: js.UndefOr[scala.Nothing], sStyle: String): String = js.native
   def getRelativePattern(sScale: String, iDiff: Double, bFuture: Boolean): String = js.native
   def getRelativePattern(sScale: String, iDiff: Double, bFuture: Boolean, sStyle: String): String = js.native
+  def getRelativePattern(sScale: String, iDiff: Double, bFuture: Unit, sStyle: String): String = js.native
   
   /**
     * Returns relative time patterns for the given scales as an array of objects containing scale, value
@@ -368,8 +369,8 @@ trait LocaleData extends Object {
     * "short" and "narrow".
     * @returns An array of all relative time patterns
     */
-  def getRelativePatterns(aScales: js.Array[String]): js.Array[_] = js.native
-  def getRelativePatterns(aScales: js.Array[String], sStyle: String): js.Array[_] = js.native
+  def getRelativePatterns(aScales: js.Array[String]): js.Array[js.Any] = js.native
+  def getRelativePatterns(aScales: js.Array[String], sStyle: String): js.Array[js.Any] = js.native
   
   /**
     * Returns the relative resource pattern with unit 'second' (like now, "in {0} seconds", "{0} seconds

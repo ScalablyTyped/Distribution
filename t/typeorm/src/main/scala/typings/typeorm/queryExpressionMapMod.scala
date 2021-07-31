@@ -32,7 +32,6 @@ import typings.typeorm.typeormStrings.select
 import typings.typeorm.typeormStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryExpressionMapMod {
@@ -179,7 +178,7 @@ object queryExpressionMapMod {
     /**
       * Entity (target) which relations will be updated.
       */
-    var of: js.Any | js.Array[_] = js.native
+    var of: js.Any | js.Array[js.Any] = js.native
     
     /**
       * OFFSET query.
@@ -219,7 +218,7 @@ object queryExpressionMapMod {
     /**
       * If QueryBuilder was created in a subquery mode then its parent QueryBuilder (who created subquery) will be stored here.
       */
-    var parentQueryBuilder: QueryBuilder[_] = js.native
+    var parentQueryBuilder: QueryBuilder[js.Any] = js.native
     
     /**
       * Indicates if QueryBuilder used to select entities and not a raw results.

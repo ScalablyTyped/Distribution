@@ -2,25 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCDataChannelInit extends StObject {
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var maxPacketLifeTime: js.UndefOr[Double] = js.native
+  var maxPacketLifeTime: js.UndefOr[Double] = js.undefined
   
-  var maxRetransmits: js.UndefOr[Double] = js.native
+  var maxRetransmits: js.UndefOr[Double] = js.undefined
   
-  var negotiated: js.UndefOr[scala.Boolean] = js.native
+  var negotiated: js.UndefOr[scala.Boolean] = js.undefined
   
-  var ordered: js.UndefOr[scala.Boolean] = js.native
+  var ordered: js.UndefOr[scala.Boolean] = js.undefined
   
-  var priority: js.UndefOr[RTCPriorityType] = js.native
+  var priority: js.UndefOr[RTCPriorityType] = js.undefined
   
-  var protocol: js.UndefOr[java.lang.String] = js.native
+  var protocol: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCDataChannelInit {
   

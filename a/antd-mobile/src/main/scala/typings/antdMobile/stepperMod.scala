@@ -5,7 +5,6 @@ import typings.antdMobile.stepperPropsTypeMod.StepPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepperMod {
@@ -27,14 +26,15 @@ object stepperMod {
     def defaultProps_=(x: FocusOnUpDown): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait StepProps extends StepPropsType {
+  trait StepProps
+    extends StObject
+       with StepPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showNumber: js.UndefOr[Boolean] = js.native
+    var showNumber: js.UndefOr[Boolean] = js.undefined
   }
   object StepProps {
     

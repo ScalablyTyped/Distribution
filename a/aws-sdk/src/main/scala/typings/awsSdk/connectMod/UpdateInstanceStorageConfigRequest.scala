@@ -2,28 +2,26 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInstanceStorageConfigRequest extends StObject {
   
   /**
     * The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.
     */
-  var AssociationId: typings.awsSdk.connectMod.AssociationId = js.native
+  var AssociationId: typings.awsSdk.connectMod.AssociationId
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * A valid resource type.
     */
-  var ResourceType: InstanceStorageResourceType = js.native
+  var ResourceType: InstanceStorageResourceType
   
-  var StorageConfig: InstanceStorageConfig = js.native
+  var StorageConfig: InstanceStorageConfig
 }
 object UpdateInstanceStorageConfigRequest {
   

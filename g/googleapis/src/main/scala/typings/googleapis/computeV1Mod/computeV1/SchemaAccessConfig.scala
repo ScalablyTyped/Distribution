@@ -2,28 +2,26 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An access configuration attached to an instance&#39;s network interface.
   * Only one access config per instance is supported.
   */
-@js.native
 trait SchemaAccessConfig extends StObject {
   
   /**
     * [Output Only] Type of the resource. Always compute#accessConfig for
     * access configs.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this access configuration. The default and recommended name
     * is External NAT but you can use any arbitrary string you would like. For
     * example, My external IP or Network Access.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An external IP address associated with this instance. Specify an unused
@@ -32,7 +30,7 @@ trait SchemaAccessConfig extends StObject {
     * specify a static external IP address, it must live in the same region as
     * the zone of the instance.
     */
-  var natIP: js.UndefOr[String] = js.native
+  var natIP: js.UndefOr[String] = js.undefined
   
   /**
     * This signifies the networking tier used for configuring this access
@@ -42,24 +40,24 @@ trait SchemaAccessConfig extends StObject {
     * with a valid external IP address is specified, it must match that of the
     * networkTier associated with the Address resource owning that IP.
     */
-  var networkTier: js.UndefOr[String] = js.native
+  var networkTier: js.UndefOr[String] = js.undefined
   
   /**
     * The DNS domain name for the public PTR record. This field can only be set
     * when the set_public_ptr field is enabled.
     */
-  var publicPtrDomainName: js.UndefOr[String] = js.native
+  var publicPtrDomainName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether a public DNS ?PTR? record should be created to map the
     * external IP address of the instance to a DNS domain name.
     */
-  var setPublicPtr: js.UndefOr[Boolean] = js.native
+  var setPublicPtr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of configuration. The default and only option is ONE_TO_ONE_NAT.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAccessConfig {
   

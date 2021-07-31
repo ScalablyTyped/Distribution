@@ -2,32 +2,30 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Camera extends StObject {
   
   /** field of view in radians */
-  var angle: AngleInRadians = js.native
+  var angle: AngleInRadians
   
   /** center of attention - the 3d point the camera is looking at. */
-  var coa: Vector3 = js.native
+  var coa: Vector3
   
   /** a 3d point locating the camera. */
-  var eye: Vector3 = js.native
+  var eye: Vector3
   
   /** far clipping plane distance */
-  var far: Double = js.native
+  var far: Double
   
   /** near clipping plane distance */
-  var near: Double = js.native
+  var near: Double
   
   /**
     * A unit vector pointing the cameras up direction. Note that using only eye and coa
     * would leave the roll of the camera unspecified.
     */
-  var up: Vector3 = js.native
+  var up: Vector3
 }
 object Camera {
   

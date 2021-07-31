@@ -2,21 +2,19 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICanvasDimensionsOptions extends StObject {
   
   /**
     * Set the given dimensions only as canvas backstore dimensions
     */
-  var backstoreOnly: js.UndefOr[Boolean] = js.native
+  var backstoreOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the given dimensions only as css dimensions
     */
-  var cssOnly: js.UndefOr[Boolean] = js.native
+  var cssOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ICanvasDimensionsOptions {
   

@@ -2,13 +2,11 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadioButtonsItemProps extends StObject {
   
-  var children: String = js.native
+  var children: String
 }
 object RadioButtonsItemProps {
   

@@ -2,26 +2,24 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetContentsOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SetContentsCompleteCallback] = js.native
+  var complete: js.UndefOr[SetContentsCompleteCallback] = js.undefined
   
   /** 表示内容的delta对象 */
-  var delta: js.UndefOr[IAnyObject] = js.native
+  var delta: js.UndefOr[IAnyObject] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[SetContentsFailCallback] = js.native
+  var fail: js.UndefOr[SetContentsFailCallback] = js.undefined
   
   /** 带标签的HTML内容 */
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SetContentsSuccessCallback] = js.native
+  var success: js.UndefOr[SetContentsSuccessCallback] = js.undefined
 }
 object SetContentsOption {
   

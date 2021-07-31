@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientComboBox.ItemFiltering and ASPxClientListBox.ItemFiltering events.
   */
-@js.native
-trait ASPxClientListEditItemFilteringEventArgs extends ASPxClientEventArgs {
+trait ASPxClientListEditItemFilteringEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a string that is a filter condition for the editor's items typed by a user.
     */
-  var filter: String = js.native
+  var filter: String
   
   /**
     * Specifies whether the item should be shown in the search result.
     */
-  var isFit: Boolean = js.native
+  var isFit: Boolean
   
   /**
     * Gets the editor item object related to the event.
     */
-  var item: ASPxClientListEditItem = js.native
+  var item: ASPxClientListEditItem
 }
 object ASPxClientListEditItemFilteringEventArgs {
   

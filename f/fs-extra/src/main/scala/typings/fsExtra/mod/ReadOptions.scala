@@ -2,21 +2,19 @@ package typings.fsExtra.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadOptions extends StObject {
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var flag: js.UndefOr[String] = js.native
+  var flag: js.UndefOr[String] = js.undefined
   
-  var fs: js.UndefOr[js.Object] = js.native
+  var fs: js.UndefOr[js.Object] = js.undefined
   
-  var reviver: js.UndefOr[js.Any] = js.native
+  var reviver: js.UndefOr[js.Any] = js.undefined
   
-  var throws: js.UndefOr[Boolean] = js.native
+  var throws: js.UndefOr[Boolean] = js.undefined
 }
 object ReadOptions {
   

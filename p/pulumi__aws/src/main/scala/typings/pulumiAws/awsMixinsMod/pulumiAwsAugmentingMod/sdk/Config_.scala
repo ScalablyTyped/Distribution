@@ -4,7 +4,6 @@ import typings.awsSdk.configMod.APIVersions
 import typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "sdk.Config")
@@ -15,5 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Config_ ()
   extends typings.awsSdk.mod.Config_ {
-  def this(options: typings.awsSdk.configBaseMod.ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
+  def this(options: typings.awsSdk.configBaseMod.ConfigurationOptions & ConfigurationServicePlaceholders & APIVersions) = this()
 }

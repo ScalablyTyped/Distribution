@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParenthesizedArrowFunctionExpression extends AST {
+trait ParenthesizedArrowFunctionExpression
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var callSignature: CallSignature = js.native
+  var callSignature: CallSignature
   
-  var expression: AST = js.native
+  var expression: AST
 }
 object ParenthesizedArrowFunctionExpression {
   

@@ -2,21 +2,19 @@ package typings.iostContract
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object IOSTContract {
   
-  @js.native
   trait Block extends StObject {
     
-    var number: Double = js.native
+    var number: Double
     
-    var parent_hash: String = js.native
+    var parent_hash: String
     
-    var time: Double = js.native
+    var time: Double
     
-    var witness: String = js.native
+    var witness: String
   }
   object Block {
     
@@ -71,20 +69,19 @@ object IOSTContract {
     def withdraw(to: String, amount: String, memo: String): Unit = js.native
   }
   
-  @js.native
   trait GlobalStorage extends StObject {
     
-    def globalGet(contract: String, key: String): String | Null = js.native
+    def globalGet(contract: String, key: String): String | Null
     
-    def globalHas(contract: String, key: String): Boolean = js.native
+    def globalHas(contract: String, key: String): Boolean
     
-    def globalMapGet(contract: String, key: String, field: String): String | Null = js.native
+    def globalMapGet(contract: String, key: String, field: String): String | Null
     
-    def globalMapHas(contract: String, key: String, field: String): Boolean = js.native
+    def globalMapHas(contract: String, key: String, field: String): Boolean
     
-    def globalMapKeys(contract: String, key: String): js.Array[String] = js.native
+    def globalMapKeys(contract: String, key: String): js.Array[String]
     
-    def globalMapLen(contract: String, key: String): Double = js.native
+    def globalMapLen(contract: String, key: String): Double
   }
   object GlobalStorage {
     
@@ -124,12 +121,11 @@ object IOSTContract {
     }
   }
   
-  @js.native
   trait IOSTCrypto extends StObject {
     
-    def sha3(data: String): String = js.native
+    def sha3(data: String): String
     
-    def verify(algo: String, message: String, signature: String, pubkey: String): Double = js.native
+    def verify(algo: String, message: String, signature: String, pubkey: String): Double
   }
   object IOSTCrypto {
     
@@ -178,25 +174,25 @@ object IOSTContract {
   
   @js.native
   trait Storage
-    extends LocalStorage
+    extends StObject
+       with LocalStorage
        with GlobalStorage
   
-  @js.native
   trait Tx extends StObject {
     
-    var auth_list: js.Object = js.native
+    var auth_list: js.Object
     
-    var expiration: Double = js.native
+    var expiration: Double
     
-    var gas_limit: Double = js.native
+    var gas_limit: Double
     
-    var gas_ratio: Double = js.native
+    var gas_ratio: Double
     
-    var hash: String = js.native
+    var hash: String
     
-    var publisher: String = js.native
+    var publisher: String
     
-    var time: Double = js.native
+    var time: Double
   }
   object Tx {
     

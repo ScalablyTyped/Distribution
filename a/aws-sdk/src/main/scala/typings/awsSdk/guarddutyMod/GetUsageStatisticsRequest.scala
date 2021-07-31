@@ -2,41 +2,39 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsageStatisticsRequest extends StObject {
   
   /**
     * The ID of the detector that specifies the GuardDuty service whose usage statistics you want to retrieve.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The maximum number of results to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.guarddutyMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.guarddutyMod.MaxResults] = js.undefined
   
   /**
     * A token to use for paginating results that are returned in the response. Set the value of this parameter to null for the first request to a list action. For subsequent calls, use the NextToken value returned from the previous request to continue listing results after the first page.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The currency unit you would like to view your usage statistics in. Current valid values are USD.
     */
-  var Unit: js.UndefOr[String] = js.native
+  var Unit: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the criteria used for querying usage.
     */
-  var UsageCriteria: typings.awsSdk.guarddutyMod.UsageCriteria = js.native
+  var UsageCriteria: typings.awsSdk.guarddutyMod.UsageCriteria
   
   /**
     * The type of usage statistics to retrieve.
     */
-  var UsageStatisticType: typings.awsSdk.guarddutyMod.UsageStatisticType = js.native
+  var UsageStatisticType: typings.awsSdk.guarddutyMod.UsageStatisticType
 }
 object GetUsageStatisticsRequest {
   

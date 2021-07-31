@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "DateHistogramAggregation")
 @js.native
-class DateHistogramAggregation protected () extends Aggregation {
+class DateHistogramAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation similar to the histogram except it can only be applied on
     date values.

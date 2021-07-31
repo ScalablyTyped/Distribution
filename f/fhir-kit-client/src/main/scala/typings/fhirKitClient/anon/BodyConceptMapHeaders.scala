@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ConceptMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyConceptMapHeaders extends StObject {
   
-  var body: ConceptMap = js.native
+  var body: ConceptMap
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ConceptMap = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ConceptMap
 }
 object BodyConceptMapHeaders {
   
   @scala.inline
-  def apply(body: ConceptMap, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.ConceptMap): BodyConceptMapHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ConceptMap, id: String): BodyConceptMapHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "ConceptMap")
     __obj.asInstanceOf[BodyConceptMapHeaders]
   }
   

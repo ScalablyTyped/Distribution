@@ -2,32 +2,30 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotionEffect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var ByX: Double = js.native
+  var ByX: Double
   
-  var ByY: Double = js.native
+  var ByY: Double
   
-  var FromX: Double = js.native
+  var FromX: Double
   
-  var FromY: Double = js.native
+  var FromY: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Path: String = js.native
+  var Path: String
   
   @JSName("PowerPoint.MotionEffect_typekey")
-  var PowerPointDotMotionEffect_typekey: MotionEffect = js.native
+  var PowerPointDotMotionEffect_typekey: MotionEffect
   
-  var ToX: Double = js.native
+  var ToX: Double
   
-  var ToY: Double = js.native
+  var ToY: Double
 }
 object MotionEffect {
   

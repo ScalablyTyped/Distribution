@@ -4,7 +4,6 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.gridRowMod.GridRow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridCellMod {
@@ -29,14 +28,13 @@ object gridCellMod {
     var rowIndex: Double = js.native
   }
   
-  @js.native
   trait GridCellDef extends StObject {
     
-    var column: Column = js.native
+    var column: Column
     
-    var floating: String = js.native
+    var floating: String
     
-    var rowIndex: Double = js.native
+    var rowIndex: Double
   }
   object GridCellDef {
     

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,12 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This struct collects all global attributes that apply to an animation target. An animation target is anything that is referenced from a given {@link
   * XAnimationNode} tree as a target object.
   */
-@js.native
 trait TargetProperties extends StObject {
   
-  var Properties: SafeArray[NamedValue] = js.native
+  var Properties: SafeArray[NamedValue]
   
-  var Target: js.Any = js.native
+  var Target: js.Any
 }
 object TargetProperties {
   

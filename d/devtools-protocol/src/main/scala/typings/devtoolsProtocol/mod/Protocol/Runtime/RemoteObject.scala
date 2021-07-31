@@ -34,56 +34,54 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteObject extends StObject {
   
   /**
     * Object class (constructor) name. Specified for `object` type values only.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var customPreview: js.UndefOr[CustomPreview] = js.native
+  var customPreview: js.UndefOr[CustomPreview] = js.undefined
   
   /**
     * String representation of the object.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Unique object identifier (for non-primitive values).
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * Preview containing abbreviated property values. Specified for `object` type values only.
     */
-  var preview: js.UndefOr[ObjectPreview] = js.native
+  var preview: js.UndefOr[ObjectPreview] = js.undefined
   
   /**
     * Object subtype hint. Specified for `object` or `wasm` type values only. (RemoteObjectSubtype enum)
     */
   var subtype: js.UndefOr[
     array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | i32 | i64 | f32 | f64 | v128 | externref
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Object type. (RemoteObjectType enum)
     */
-  var `type`: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm = js.native
+  var `type`: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm
   
   /**
     * Primitive value which can not be JSON-stringified does not have `value`, but gets this
     * property.
     */
-  var unserializableValue: js.UndefOr[UnserializableValue] = js.native
+  var unserializableValue: js.UndefOr[UnserializableValue] = js.undefined
   
   /**
     * Remote object value in case of primitive values or JSON values (if it was requested).
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object RemoteObject {
   

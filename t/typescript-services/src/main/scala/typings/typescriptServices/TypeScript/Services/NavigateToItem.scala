@@ -2,31 +2,29 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateToItem extends StObject {
   
-  var additionalSpans: js.Array[SpanInfo] = js.native
+  var additionalSpans: js.Array[SpanInfo]
   
-  var containerKind: String = js.native
+  var containerKind: String
   
-  var containerName: String = js.native
+  var containerName: String
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var kind: String = js.native
+  var kind: String
   
-  var kindModifiers: String = js.native
+  var kindModifiers: String
   
-  var limChar: Double = js.native
+  var limChar: Double
   
-  var matchKind: String = js.native
+  var matchKind: String
   
-  var minChar: Double = js.native
+  var minChar: Double
   
-  var name: String = js.native
+  var name: String
 }
 object NavigateToItem {
   

@@ -4,7 +4,6 @@ import typings.axios.mod.AxiosError
 import typings.postmark.errorsMod.PostmarkError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorHandlerMod {
@@ -37,7 +36,7 @@ object errorHandlerMod {
       *
       * @return {PostmarkError} - formatted Postmark error
       */
-    def buildRequestError(error: AxiosError[_]): PostmarkError = js.native
+    def buildRequestError(error: AxiosError[js.Any]): PostmarkError = js.native
     
     /**
       * Build Postmark error based on HTTP request status.

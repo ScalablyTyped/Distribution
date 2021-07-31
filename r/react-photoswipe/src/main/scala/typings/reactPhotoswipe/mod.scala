@@ -9,7 +9,6 @@ import typings.reactPhotoswipe.anon.X
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,10 +37,11 @@ object mod {
     def this(props: PhotoSwipeGalleryProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait PhotoSwipeGalleryItem extends Item {
+  trait PhotoSwipeGalleryItem
+    extends StObject
+       with Item {
     
-    var thumbnail: String = js.native
+    var thumbnail: String
   }
   object PhotoSwipeGalleryItem {
     
@@ -60,60 +60,59 @@ object mod {
   }
   
   /* Inlined parent std.Omit<react-photoswipe.react-photoswipe.PhotoSwipeProps, 'isOpen'> */
-  @js.native
   trait PhotoSwipeGalleryProps extends StObject {
     
-    var afterChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var afterChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var beforeChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * class name
       * @default pswp-gallery
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var close: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var destroy: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     var gettingData: js.UndefOr[
         js.Function3[/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     var imageLoadComplete: js.UndefOr[
         js.Function3[/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var initialZoomIn: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomIn: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var initialZoomInEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomInEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var initialZoomOut: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomOut: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var initialZoomOutEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomOutEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * is open
       * @default false
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * photoswipe item
       * {@link http://photoswipe.com/documentation/getting-started.html}
       */
-    var items: js.Array[PhotoSwipeGalleryItem] = js.native
+    var items: js.Array[PhotoSwipeGalleryItem]
     
-    var mouseUsed: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var mouseUsed: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var parseVerticalMargin: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* item */ Item, Unit]] = js.native
+    var parseVerticalMargin: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* item */ Item, Unit]] = js.undefined
     
     var preventDragEvent: js.UndefOr[
         js.Function4[
@@ -123,23 +122,23 @@ object mod {
           /* preventObj */ Prevent, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var resize: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var resize: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     var shareLinkClick: js.UndefOr[
         js.Function3[/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Thumbnail content
       * @default <img src={item.src} width='100' height='100'/>
       */
-    def thumbnailContent(item: PhotoSwipeGalleryItem): ReactNode = js.native
+    def thumbnailContent(item: PhotoSwipeGalleryItem): ReactNode
     
-    var unbindEvents: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var unbindEvents: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
-    var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ X, Unit]] = js.native
+    var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ X, Unit]] = js.undefined
   }
   object PhotoSwipeGalleryProps {
     
@@ -297,7 +296,6 @@ object mod {
     }
   }
   
-  @js.native
   trait PhotoSwipeProps extends StObject {
     
     /**
@@ -306,7 +304,7 @@ object mod {
       * (after content changed)
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var afterChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var afterChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -315,20 +313,20 @@ object mod {
       * Update UI here (like "1 of X" indicator)
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var beforeChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * class name
       * @default pswp
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Photoswipe event listener
       * Gallery starts closing
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var close: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -336,7 +334,7 @@ object mod {
       * Clean up your stuff here.
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var destroy: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -347,12 +345,12 @@ object mod {
       */
     var gettingData: js.UndefOr[
         js.Function3[/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * id
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -361,72 +359,72 @@ object mod {
       */
     var imageLoadComplete: js.UndefOr[
         js.Function3[/* instance */ PhotoSwipe, /* index */ Double, /* item */ Item, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Photoswipe event listener
       * Opening zoom in animation starting
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var initialZoomIn: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomIn: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
       * Opening zoom in animation finished
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var initialZoomInEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomInEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
       * Closing zoom out animation started
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var initialZoomOut: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomOut: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
       * Closing zoom out animation finished
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var initialZoomOutEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var initialZoomOutEnd: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * is open
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * photoswipe item
       * {@link http://photoswipe.com/documentation/getting-started.html}
       */
-    var items: js.Array[Item] = js.native
+    var items: js.Array[Item]
     
     /**
       * Photoswipe event listener
       * Mouse was used (triggers only once)
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var mouseUsed: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var mouseUsed: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Callback after PhotoSwipe close
       */
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * photoswipe options
       * {@link http://photoswipe.com/documentation/options.html}
       * @default {}
       */
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
     /**
       * Photoswipe event listener
       * Allows overriding vertical margin for individual items
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var parseVerticalMargin: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* item */ Item, Unit]] = js.native
+    var parseVerticalMargin: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* item */ Item, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -441,14 +439,14 @@ object mod {
           /* preventObj */ Prevent, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Photoswipe event listener
       * Viewport size changed
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var resize: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var resize: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -457,7 +455,7 @@ object mod {
       */
     var shareLinkClick: js.UndefOr[
         js.Function3[/* instance */ PhotoSwipe, /* e */ MouseEvent, /* item */ Item, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -465,7 +463,7 @@ object mod {
       * (triggers before closing animation)
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var unbindEvents: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.native
+    var unbindEvents: js.UndefOr[js.Function1[/* instance */ PhotoSwipe, Unit]] = js.undefined
     
     /**
       * Photoswipe event listener
@@ -480,7 +478,7 @@ object mod {
       * Look at the "Implementing inline gallery display" FAQ section for more info.
       * {@link https://photoswipe.com/documentation/api.html}
       */
-    var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ X, Unit]] = js.native
+    var updateScrollOffset: js.UndefOr[js.Function2[/* instance */ PhotoSwipe, /* _offset */ X, Unit]] = js.undefined
   }
   object PhotoSwipeProps {
     

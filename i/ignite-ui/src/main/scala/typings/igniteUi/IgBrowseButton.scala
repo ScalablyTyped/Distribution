@@ -3,24 +3,23 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgBrowseButton
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var autoselect: js.UndefOr[Boolean] = js.native
+  var autoselect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * M.H. 13 Feb 2014 Fix for bug #164347: Move input  from document body to the upload container
     */
-  var container: js.UndefOr[js.Any] = js.native
+  var container: js.UndefOr[js.Any] = js.undefined
   
-  var multipleFiles: js.UndefOr[Boolean] = js.native
+  var multipleFiles: js.UndefOr[Boolean] = js.undefined
 }
 object IgBrowseButton {
   

@@ -4,10 +4,8 @@ import typings.vscode.anon.Dispose
 import typings.vscode.anon.MementosetKeysForSynckeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionContext extends StObject {
   
   /**
@@ -19,37 +17,37 @@ trait ExtensionContext extends StObject {
     * @param relativePath A relative path to a resource contained in the extension.
     * @return The absolute path of the resource.
     */
-  def asAbsolutePath(relativePath: String): String = js.native
+  def asAbsolutePath(relativePath: String): String
   
   /**
     * Gets the extension's environment variable collection for this workspace, enabling changes
     * to be applied to terminal environment variables.
     */
-  val environmentVariableCollection: EnvironmentVariableCollection = js.native
+  val environmentVariableCollection: EnvironmentVariableCollection
   
   /**
     * The mode the extension is running in. This is specific to the current
     * extension. One extension may be in `ExtensionMode.Development` while
     * other extensions in the host run in `ExtensionMode.Release`.
     */
-  val extensionMode: ExtensionMode = js.native
+  val extensionMode: ExtensionMode
   
   /**
     * The absolute file path of the directory containing the extension. Shorthand
     * notation for [ExtensionContext.extensionUri.fsPath](#TextDocument.uri) (independent of the uri scheme).
     */
-  val extensionPath: String = js.native
+  val extensionPath: String
   
   /**
     * The uri of the directory containing the extension.
     */
-  val extensionUri: Uri = js.native
+  val extensionUri: Uri
   
   /**
     * A memento object that stores state independent
     * of the current opened [workspace](#workspace.workspaceFolders).
     */
-  val globalState: MementosetKeysForSynckeys = js.native
+  val globalState: MementosetKeysForSynckeys
   
   /**
     * An absolute file path in which the extension can store global state.
@@ -60,7 +58,7 @@ trait ExtensionContext extends StObject {
     *
     * @deprecated Use [globalStorageUri](#ExtensionContext.globalStorageUri) instead.
     */
-  val globalStoragePath: String = js.native
+  val globalStoragePath: String
   
   /**
     * The uri of a directory in which the extension can store global state.
@@ -72,7 +70,7 @@ trait ExtensionContext extends StObject {
     * @see [`workspace.fs`](#FileSystem) for how to read and write files and folders from
     *  an uri.
     */
-  val globalStorageUri: Uri = js.native
+  val globalStorageUri: Uri
   
   /**
     * An absolute file path of a directory in which the extension can create log files.
@@ -81,7 +79,7 @@ trait ExtensionContext extends StObject {
     *
     * @deprecated Use [logUri](#ExtensionContext.logUri) instead.
     */
-  val logPath: String = js.native
+  val logPath: String
   
   /**
     * The uri of a directory in which the extension can create log files.
@@ -91,7 +89,7 @@ trait ExtensionContext extends StObject {
     * @see [`workspace.fs`](#FileSystem) for how to read and write files and folders from
     *  an uri.
     */
-  val logUri: Uri = js.native
+  val logUri: Uri
   
   /**
     * An absolute file path of a workspace specific directory in which the extension
@@ -103,7 +101,7 @@ trait ExtensionContext extends StObject {
     *
     * @deprecated Use [storageUri](#ExtensionContext.storageUri) instead.
     */
-  val storagePath: js.UndefOr[String] = js.native
+  val storagePath: js.UndefOr[String] = js.undefined
   
   /**
     * The uri of a workspace specific directory in which the extension
@@ -117,19 +115,19 @@ trait ExtensionContext extends StObject {
     * @see [`workspace.fs`](#FileSystem) for how to read and write files and folders from
     *  an uri.
     */
-  val storageUri: js.UndefOr[Uri] = js.native
+  val storageUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * An array to which disposables can be added. When this
     * extension is deactivated the disposables will be disposed.
     */
-  val subscriptions: js.Array[Dispose] = js.native
+  val subscriptions: js.Array[Dispose]
   
   /**
     * A memento object that stores state in the context
     * of the currently opened [workspace](#workspace.workspaceFolders).
     */
-  val workspaceState: Memento = js.native
+  val workspaceState: Memento
 }
 object ExtensionContext {
   

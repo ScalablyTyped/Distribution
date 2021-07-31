@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -63,24 +62,23 @@ object mod {
     def right: typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right = "right".asInstanceOf[typings.reactLeafletSidebarv2.reactLeafletSidebarv2Strings.right]
   }
   
-  @js.native
   trait SidebarProps extends StObject {
     
-    var children: TabType = js.native
+    var children: TabType
     
-    var closeIcon: js.UndefOr[Icon] = js.native
+    var closeIcon: js.UndefOr[Icon] = js.undefined
     
-    var collapsed: Boolean = js.native
+    var collapsed: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* id */ String, Unit]] = js.undefined
     
-    var position: Position = js.native
+    var position: Position
     
-    var selected: String = js.native
+    var selected: String
   }
   object SidebarProps {
     
@@ -131,26 +129,25 @@ object mod {
     }
   }
   
-  @js.native
   trait TabProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var anchor: js.UndefOr[Anchor] = js.native
+    var anchor: js.UndefOr[Anchor] = js.undefined
     
-    var closeIcon: js.UndefOr[Icon] = js.native
+    var closeIcon: js.UndefOr[Icon] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var header: String = js.native
+    var header: String
     
-    var icon: Icon = js.native
+    var icon: Icon
     
-    var id: String = js.native
+    var id: String
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
   }
   object TabProps {
     

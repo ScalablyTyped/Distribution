@@ -2,19 +2,17 @@ package typings.yogaLayout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeStatic extends StObject {
   
-  def create(): YogaNode = js.native
+  def create(): YogaNode
   
-  def createDefault(): YogaNode = js.native
+  def createDefault(): YogaNode
   
-  def createWithConfig(config: YogaConfig): YogaNode = js.native
+  def createWithConfig(config: YogaConfig): YogaNode
   
-  def destroy(node: YogaNode): js.Any = js.native
+  def destroy(node: YogaNode): js.Any
 }
 object NodeStatic {
   

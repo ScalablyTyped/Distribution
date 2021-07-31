@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elbLoadBalancerCookieStickinessPolicyMod {
@@ -52,6 +51,10 @@ object elbLoadBalancerCookieStickinessPolicyMod {
   /* static members */
   object LoadBalancerCookieStickinessPolicy {
     
+    @JSImport("@pulumi/aws/elb/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LoadBalancerCookieStickinessPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,59 +64,53 @@ object elbLoadBalancerCookieStickinessPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elb/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LoadBalancerCookieStickinessPolicy = js.native
-    @JSImport("@pulumi/aws/elb/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LoadBalancerCookieStickinessPolicy = js.native
-    @JSImport("@pulumi/aws/elb/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LoadBalancerCookieStickinessPolicyState): LoadBalancerCookieStickinessPolicy = js.native
-    @JSImport("@pulumi/aws/elb/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LoadBalancerCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerCookieStickinessPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LoadBalancerCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerCookieStickinessPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LoadBalancerCookieStickinessPolicyState): LoadBalancerCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerCookieStickinessPolicy]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: LoadBalancerCookieStickinessPolicyState,
       opts: CustomResourceOptions
-    ): LoadBalancerCookieStickinessPolicy = js.native
+    ): LoadBalancerCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LoadBalancerCookieStickinessPolicy]
     
     /**
       * Returns true if the given object is an instance of LoadBalancerCookieStickinessPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elb/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerCookieStickinessPolicy.LoadBalancerCookieStickinessPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/loadBalancerCookieStickinessPolicy.LoadBalancerCookieStickinessPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/loadBalancerCookieStickinessPolicy.LoadBalancerCookieStickinessPolicy */ Boolean]
   }
   
-  @js.native
   trait LoadBalancerCookieStickinessPolicyArgs extends StObject {
     
     /**
       * The time period after which
       * the session cookie should be considered stale, expressed in seconds.
       */
-    val cookieExpirationPeriod: js.UndefOr[Input[Double]] = js.native
+    val cookieExpirationPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The load balancer port to which the policy
       * should be applied. This must be an active listener on the load
       * balancer.
       */
-    val lbPort: Input[Double] = js.native
+    val lbPort: Input[Double]
     
     /**
       * The load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: Input[String] = js.native
+    val loadBalancer: Input[String]
     
     /**
       * The name of the stickiness policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerCookieStickinessPolicyArgs {
     
@@ -146,32 +143,31 @@ object elbLoadBalancerCookieStickinessPolicyMod {
     }
   }
   
-  @js.native
   trait LoadBalancerCookieStickinessPolicyState extends StObject {
     
     /**
       * The time period after which
       * the session cookie should be considered stale, expressed in seconds.
       */
-    val cookieExpirationPeriod: js.UndefOr[Input[Double]] = js.native
+    val cookieExpirationPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The load balancer port to which the policy
       * should be applied. This must be an active listener on the load
       * balancer.
       */
-    val lbPort: js.UndefOr[Input[Double]] = js.native
+    val lbPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: js.UndefOr[Input[String]] = js.native
+    val loadBalancer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the stickiness policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object LoadBalancerCookieStickinessPolicyState {
     

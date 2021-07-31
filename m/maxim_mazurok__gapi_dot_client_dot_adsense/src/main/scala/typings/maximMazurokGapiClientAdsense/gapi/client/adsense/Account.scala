@@ -2,31 +2,29 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
-  var creation_time: js.UndefOr[String] = js.native
+  var creation_time: js.UndefOr[String] = js.undefined
   
   /** Unique identifier of this account. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Kind of resource this is, in this case adsense#account. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Name of this account. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Whether this account is premium. */
-  var premium: js.UndefOr[Boolean] = js.native
+  var premium: js.UndefOr[Boolean] = js.undefined
   
   /** Sub accounts of the this account. */
-  var subAccounts: js.UndefOr[js.Array[Account]] = js.native
+  var subAccounts: js.UndefOr[js.Array[Account]] = js.undefined
   
   /** AdSense timezone of this account. */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object Account {
   

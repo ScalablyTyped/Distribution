@@ -2,21 +2,19 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Left extends StObject {
   
-  var left: typings.baseui.baseuiNumbers.`0` = js.native
+  var left: typings.baseui.baseuiNumbers.`0`
   
-  var top: typings.baseui.baseuiNumbers.`0` = js.native
+  var top: typings.baseui.baseuiNumbers.`0`
 }
 object Left {
   
   @scala.inline
-  def apply(left: typings.baseui.baseuiNumbers.`0`, top: typings.baseui.baseuiNumbers.`0`): Left = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  def apply(): Left = {
+    val __obj = js.Dynamic.literal(left = 0, top = 0)
     __obj.asInstanceOf[Left]
   }
   

@@ -7,7 +7,6 @@ import typings.officeJs.officeJsStrings.Unhidden
 import typings.officeJs.officeJsStrings.WorksheetRowHiddenChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.11]
   */
-@js.native
 trait WorksheetRowHiddenChangedEventArgs extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait WorksheetRowHiddenChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -33,7 +31,7 @@ trait WorksheetRowHiddenChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var changeType: RowHiddenChangeType | Unhidden | Hidden = js.native
+  var changeType: RowHiddenChangeType | Unhidden | Hidden
   
   /**
     *
@@ -41,7 +39,7 @@ trait WorksheetRowHiddenChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -49,7 +47,7 @@ trait WorksheetRowHiddenChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var `type`: WorksheetRowHiddenChanged = js.native
+  var `type`: WorksheetRowHiddenChanged
   
   /**
     *
@@ -57,7 +55,7 @@ trait WorksheetRowHiddenChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetRowHiddenChangedEventArgs {
   
@@ -66,11 +64,10 @@ object WorksheetRowHiddenChangedEventArgs {
     address: String,
     changeType: RowHiddenChangeType | Unhidden | Hidden,
     source: EventSource | Local | Remote,
-    `type`: WorksheetRowHiddenChanged,
     worksheetId: String
   ): WorksheetRowHiddenChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetRowHiddenChanged")
     __obj.asInstanceOf[WorksheetRowHiddenChangedEventArgs]
   }
   

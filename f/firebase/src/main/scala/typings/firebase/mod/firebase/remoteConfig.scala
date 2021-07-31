@@ -3,7 +3,6 @@ package typings.firebase.mod.firebase
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -51,7 +50,6 @@ object remoteConfig {
     def silent: typings.firebase.firebaseStrings.silent = "silent".asInstanceOf[typings.firebase.firebaseStrings.silent]
   }
   
-  @js.native
   trait RemoteConfig extends StObject {
     
     /**
@@ -59,82 +57,82 @@ object remoteConfig {
       * Returns a promise which resolves to true if the current call activated the fetched configs.
       * If the fetched configs were already activated, the promise will resolve to false.
       */
-    def activate(): js.Promise[Boolean] = js.native
+    def activate(): js.Promise[Boolean]
     
     /**
       * Object containing default values for conigs.
       */
-    var defaultConfig: StringDictionary[String | Double | Boolean] = js.native
+    var defaultConfig: StringDictionary[String | Double | Boolean]
     
     /**
       * Ensures the last activated config are available to the getters.
       */
-    def ensureInitialized(): js.Promise[Unit] = js.native
+    def ensureInitialized(): js.Promise[Unit]
     
     /**
       * Fetches and caches configuration from the Remote Config service.
       */
-    def fetch(): js.Promise[Unit] = js.native
+    def fetch(): js.Promise[Unit]
     
     /**
       * Performs fetch and activate operations, as a convenience.
       * Returns a promise which resolves to true if the current call activated the fetched configs.
       * If the fetched configs were already activated, the promise will resolve to false.
       */
-    def fetchAndActivate(): js.Promise[Boolean] = js.native
+    def fetchAndActivate(): js.Promise[Boolean]
     
     /**
       * The Unix timestamp in milliseconds of the last <i>successful</i> fetch, or negative one if
       * the {@link RemoteConfig} instance either hasn't fetched or initialization
       * is incomplete.
       */
-    var fetchTimeMillis: Double = js.native
+    var fetchTimeMillis: Double
     
     /**
       * Gets all config.
       */
-    def getAll(): StringDictionary[Value] = js.native
+    def getAll(): StringDictionary[Value]
     
     /**
       * Gets the value for the given key as a boolean.
       *
       * Convenience method for calling <code>remoteConfig.getValue(key).asBoolean()</code>.
       */
-    def getBoolean(key: String): Boolean = js.native
+    def getBoolean(key: String): Boolean
     
     /**
       * Gets the value for the given key as a number.
       *
       * Convenience method for calling <code>remoteConfig.getValue(key).asNumber()</code>.
       */
-    def getNumber(key: String): Double = js.native
+    def getNumber(key: String): Double
     
     /**
       * Gets the value for the given key as a String.
       *
       * Convenience method for calling <code>remoteConfig.getValue(key).asString()</code>.
       */
-    def getString(key: String): String = js.native
+    def getString(key: String): String
     
     /**
       * Gets the {@link Value} for the given key.
       */
-    def getValue(key: String): Value = js.native
+    def getValue(key: String): Value
     
     /**
       * The status of the last fetch <i>attempt</i>.
       */
-    var lastFetchStatus: FetchStatus = js.native
+    var lastFetchStatus: FetchStatus
     
     /**
       * Defines the log level to use.
       */
-    def setLogLevel(logLevel: typings.firebase.mod.firebase.remoteConfig.LogLevel): Unit = js.native
+    def setLogLevel(logLevel: typings.firebase.mod.firebase.remoteConfig.LogLevel): Unit
     
     /**
       * Defines configuration for the Remote Config SDK.
       */
-    var settings: Settings = js.native
+    var settings: Settings
   }
   object RemoteConfig {
     
@@ -206,20 +204,19 @@ object remoteConfig {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * Defines the maximum amount of milliseconds to wait for a response when fetching
       * configuration from the Remote Config server. Defaults to 60000 (One minute).
       */
-    var fetchTimeoutMillis: Double = js.native
+    var fetchTimeoutMillis: Double
     
     /**
       * Defines the maximum age in milliseconds of an entry in the config cache before
       * it is considered stale. Defaults to 43200000 (Twelve hours).
       */
-    var minimumFetchIntervalMillis: Double = js.native
+    var minimumFetchIntervalMillis: Double
   }
   object Settings {
     
@@ -240,7 +237,6 @@ object remoteConfig {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
     /**
@@ -249,22 +245,22 @@ object remoteConfig {
       * The following values (case insensitive) are interpreted as true:
       * "1", "true", "t", "yes", "y", "on". Other values are interpreted as false.
       */
-    def asBoolean(): Boolean = js.native
+    def asBoolean(): Boolean
     
     /**
       * Gets the value as a number. Comparable to calling <code>Number(value) || 0</code>.
       */
-    def asNumber(): Double = js.native
+    def asNumber(): Double
     
     /**
       * Gets the value as a string.
       */
-    def asString(): String = js.native
+    def asString(): String
     
     /**
       * Gets the {@link ValueSource} for the given key.
       */
-    def getSource(): ValueSource = js.native
+    def getSource(): ValueSource
   }
   object Value {
     

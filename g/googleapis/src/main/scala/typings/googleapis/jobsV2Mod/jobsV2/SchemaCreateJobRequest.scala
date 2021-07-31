@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Create job request.
   */
-@js.native
 trait SchemaCreateJobRequest extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaCreateJobRequest extends StObject {
     * processing_options is set.  Optional.  If set to `true`, the service does
     * not attempt to resolve a more precise address for the job.
     */
-  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.native
+  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required.  The Job to be created.
     */
-  var job: js.UndefOr[SchemaJob] = js.native
+  var job: js.UndefOr[SchemaJob] = js.undefined
   
   /**
     * Optional.  Options for job processing.
     */
-  var processingOptions: js.UndefOr[SchemaJobProcessingOptions] = js.native
+  var processingOptions: js.UndefOr[SchemaJobProcessingOptions] = js.undefined
 }
 object SchemaCreateJobRequest {
   

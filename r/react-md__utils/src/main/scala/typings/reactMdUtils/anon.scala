@@ -9,22 +9,20 @@ import typings.reactMdUtils.useWidthMediaQueryMod.WidthMediaQuerys
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined @react-md/utils.@react-md/utils/types/sizing/useAppSizeMedia.AppSize & {  __initialized :boolean} */
-  @js.native
   trait AppSizeinitializedboolean extends StObject {
     
-    var __initialized: Boolean = js.native
+    var __initialized: Boolean
     
     /**
       * Boolean if currently matching a desktop screen by comparing the max width
       * of the device.
       */
-    var isDesktop: Boolean = js.native
+    var isDesktop: Boolean
     
     /**
       * Boolean if the app is considered to be in landscape mode. This will just
@@ -35,25 +33,25 @@ object anon {
       * recommended to use the `useOrientation` hook as well if you'd like to get
       * the current orientation type.
       */
-    var isLandscape: Boolean = js.native
+    var isLandscape: Boolean
     
     /**
       * Boolean if currently matching a large desktop screen by comparing the max
       * width of the device.
       */
-    var isLargeDesktop: Boolean = js.native
+    var isLargeDesktop: Boolean
     
     /**
       * Boolean if currently matching a phone by comparing the max width of the
       * device.
       */
-    var isPhone: Boolean = js.native
+    var isPhone: Boolean
     
     /**
       * Boolean if currently matching a tablet by comparing the max width of the
       * device.
       */
-    var isTablet: Boolean = js.native
+    var isTablet: Boolean
   }
   object AppSizeinitializedboolean {
     
@@ -94,24 +92,23 @@ object anon {
   }
   
   /* Inlined @react-md/utils.@react-md/utils/types/positioning/types.Coords & {  position :'fixed' | 'absolute',   transformOrigin :string | undefined} */
-  @js.native
   trait Coordspositionfixedabsolu extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var position: fixed | absolute = js.native
+    var position: fixed | absolute
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var transformOrigin: js.UndefOr[String] = js.native
+    var transformOrigin: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Coordspositionfixedabsolu {
     
@@ -171,10 +168,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Max extends WidthMediaQuerys {
+  trait Max
+    extends StObject
+       with WidthMediaQuerys {
     
-    var max: QuerySize = js.native
+    var max: QuerySize
   }
   object Max {
     
@@ -192,12 +190,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait MaxMin extends WidthMediaQuerys {
+  trait MaxMin
+    extends StObject
+       with WidthMediaQuerys {
     
-    var max: QuerySize = js.native
+    var max: QuerySize
     
-    var min: QuerySize = js.native
+    var min: QuerySize
   }
   object MaxMin {
     
@@ -218,10 +217,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Min extends WidthMediaQuerys {
+  trait Min
+    extends StObject
+       with WidthMediaQuerys {
     
-    var min: QuerySize = js.native
+    var min: QuerySize
   }
   object Min {
     
@@ -240,12 +240,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@react-md/utils.@react-md/utils/types/positioning/types.PositionAnchor> */
-  @js.native
   trait PartialPositionAnchor extends StObject {
     
-    var x: js.UndefOr[HorizontalPosition] = js.native
+    var x: js.UndefOr[HorizontalPosition] = js.undefined
     
-    var y: js.UndefOr[VerticalPosition] = js.native
+    var y: js.UndefOr[VerticalPosition] = js.undefined
   }
   object PartialPositionAnchor {
     
@@ -272,13 +271,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref[E /* <: HTMLElement */] extends StObject {
     
     /**
       * An optional ref that can be applied.
       */
-    var ref: js.UndefOr[typings.react.mod.Ref[E]] = js.native
+    var ref: js.UndefOr[typings.react.mod.Ref[E]] = js.undefined
   }
   object Ref {
     
@@ -289,7 +287,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class RefMutableBuilder[Self <: Ref[_], E /* <: HTMLElement */] (val x: Self with Ref[E]) extends AnyVal {
+    implicit class RefMutableBuilder[Self <: Ref[?], E /* <: HTMLElement */] (val x: Self & Ref[E]) extends AnyVal {
       
       @scala.inline
       def setRef(value: typings.react.mod.Ref[E]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])

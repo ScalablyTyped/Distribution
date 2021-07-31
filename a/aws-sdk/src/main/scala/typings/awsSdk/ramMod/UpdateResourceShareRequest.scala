@@ -2,31 +2,29 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResourceShareRequest extends StObject {
   
   /**
     * Indicates whether principals outside your AWS organization can be associated with a resource share.
     */
-  var allowExternalPrincipals: js.UndefOr[Boolean] = js.native
+  var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the resource share.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  var resourceShareArn: String = js.native
+  var resourceShareArn: String
 }
 object UpdateResourceShareRequest {
   

@@ -6,14 +6,16 @@ import typings.std.HTMLElement
 import typings.storybookUi.providerMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
   
-  @JSImport("@storybook/ui/dist", JSImport.Default)
+  @JSImport("@storybook/ui/dist", JSImport.Namespace)
   @js.native
-  def default(domNode: HTMLElement, provider: typings.storybookUi.providerMod.default): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(domNode: HTMLElement, provider: typings.storybookUi.providerMod.default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(domNode.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@storybook/ui/dist", "Provider")
   @js.native
@@ -23,12 +25,11 @@ object distMod {
   @js.native
   val Root: FunctionComponent[RootProps] = js.native
   
-  @js.native
   trait RootProps extends StObject {
     
-    var history: js.UndefOr[History] = js.native
+    var history: js.UndefOr[History] = js.undefined
     
-    var provider: default = js.native
+    var provider: default
   }
   object RootProps {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGatewayRouteOutput extends StObject {
   
   /**
     * The full description of your gateway route.
     */
-  var gatewayRoute: GatewayRouteData = js.native
+  var gatewayRoute: GatewayRouteData
 }
 object DescribeGatewayRouteOutput {
   

@@ -2,101 +2,99 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAutoMLJobResponse extends StObject {
   
   /**
     * Returns the job's ARN.
     */
-  var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn = js.native
+  var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn
   
   /**
     * Returns information on the job's artifacts found in AutoMLJobArtifacts.
     */
-  var AutoMLJobArtifacts: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArtifacts] = js.native
+  var AutoMLJobArtifacts: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArtifacts] = js.undefined
   
   /**
     * Returns the job's config.
     */
-  var AutoMLJobConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobConfig] = js.native
+  var AutoMLJobConfig: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobConfig] = js.undefined
   
   /**
     * Returns the name of a job.
     */
-  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName = js.native
+  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
   /**
     * Returns the job's objective.
     */
-  var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.native
+  var AutoMLJobObjective: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobObjective] = js.undefined
   
   /**
     * Returns the job's AutoMLJobSecondaryStatus.
     */
-  var AutoMLJobSecondaryStatus: typings.awsSdk.sagemakerMod.AutoMLJobSecondaryStatus = js.native
+  var AutoMLJobSecondaryStatus: typings.awsSdk.sagemakerMod.AutoMLJobSecondaryStatus
   
   /**
     * Returns the job's AutoMLJobStatus.
     */
-  var AutoMLJobStatus: typings.awsSdk.sagemakerMod.AutoMLJobStatus = js.native
+  var AutoMLJobStatus: typings.awsSdk.sagemakerMod.AutoMLJobStatus
   
   /**
     * Returns the job's BestCandidate.
     */
-  var BestCandidate: js.UndefOr[AutoMLCandidate] = js.native
+  var BestCandidate: js.UndefOr[AutoMLCandidate] = js.undefined
   
   /**
     * Returns the job's creation time.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * Returns the job's end time.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Returns the job's FailureReason.
     */
-  var FailureReason: js.UndefOr[AutoMLFailureReason] = js.native
+  var FailureReason: js.UndefOr[AutoMLFailureReason] = js.undefined
   
   /**
     * Returns the job's output from GenerateCandidateDefinitionsOnly.
     */
-  var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.native
+  var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.sagemakerMod.GenerateCandidateDefinitionsOnly] = js.undefined
   
   /**
     * Returns the job's input data config.
     */
-  var InputDataConfig: AutoMLInputDataConfig = js.native
+  var InputDataConfig: AutoMLInputDataConfig
   
   /**
     * Returns the job's last modified time.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * Returns the job's output data config.
     */
-  var OutputDataConfig: AutoMLOutputDataConfig = js.native
+  var OutputDataConfig: AutoMLOutputDataConfig
   
   /**
     * Returns the job's problem type.
     */
-  var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.native
+  var ProblemType: js.UndefOr[typings.awsSdk.sagemakerMod.ProblemType] = js.undefined
   
   /**
     * This contains ProblemType, AutoMLJobObjective and CompletionCriteria. They're auto-inferred values, if not provided by you. If you do provide them, then they'll be the same as provided.
     */
-  var ResolvedAttributes: js.UndefOr[typings.awsSdk.sagemakerMod.ResolvedAttributes] = js.native
+  var ResolvedAttributes: js.UndefOr[typings.awsSdk.sagemakerMod.ResolvedAttributes] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that has read permission to the input data location and write permission to the output data location in Amazon S3.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
 }
 object DescribeAutoMLJobResponse {
   

@@ -4,27 +4,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event used by a {@link XGridColumn} to notify changes in the column.
   * @since OOo 3.3
   */
-@js.native
-trait GridColumnEvent extends EventObject {
+trait GridColumnEvent
+  extends StObject
+     with EventObject {
   
   /** Contains the name of the attributes whose value changed. */
-  var AttributeName: String = js.native
+  var AttributeName: String
   
   /** Contains the index of the changed column */
-  var ColumnIndex: Double = js.native
+  var ColumnIndex: Double
   
   /** Contains the new value */
-  var NewValue: js.Any = js.native
+  var NewValue: js.Any
   
   /** Contains the old value */
-  var OldValue: js.Any = js.native
+  var OldValue: js.Any
 }
 object GridColumnEvent {
   

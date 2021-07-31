@@ -2,27 +2,25 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of how to set up the Android device prior to running the
   * test.
   */
-@js.native
 trait SchemaTestSetup extends StObject {
   
   /**
     * The device will be logged in on this account for the duration of the
     * test.
     */
-  var account: js.UndefOr[SchemaAccount] = js.native
+  var account: js.UndefOr[SchemaAccount] = js.undefined
   
   /**
     * APKs to install in addition to those being directly tested. Currently
     * capped at 100.
     */
-  var additionalApks: js.UndefOr[js.Array[SchemaApk]] = js.native
+  var additionalApks: js.UndefOr[js.Array[SchemaApk]] = js.undefined
   
   /**
     * List of directories on the device to upload to GCS at the end of the
@@ -33,18 +31,18 @@ trait SchemaTestSetup extends StObject {
     * to external storage, the system will replace it with the external storage
     * path prefix for that device.
     */
-  var directoriesToPull: js.UndefOr[js.Array[String]] = js.native
+  var directoriesToPull: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Environment variables to set for the test (only applicable for
     * instrumentation tests).
     */
-  var environmentVariables: js.UndefOr[js.Array[SchemaEnvironmentVariable]] = js.native
+  var environmentVariables: js.UndefOr[js.Array[SchemaEnvironmentVariable]] = js.undefined
   
   /**
     * List of files to push to the device before starting the test.
     */
-  var filesToPush: js.UndefOr[js.Array[SchemaDeviceFile]] = js.native
+  var filesToPush: js.UndefOr[js.Array[SchemaDeviceFile]] = js.undefined
   
   /**
     * The network traffic profile used for running the test. Available network
@@ -52,7 +50,7 @@ trait SchemaTestSetup extends StObject {
     * type when calling
     * TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
     */
-  var networkProfile: js.UndefOr[String] = js.native
+  var networkProfile: js.UndefOr[String] = js.undefined
 }
 object SchemaTestSetup {
   

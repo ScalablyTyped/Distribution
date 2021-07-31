@@ -3,17 +3,15 @@ package typings.math3d
 import typings.math3d.mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Angle extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var axis: Vector3 = js.native
+    var axis: Vector3
   }
   object Angle {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Columns extends StObject {
     
-    var columns: Double = js.native
+    var columns: Double
     
-    var rows: Double = js.native
+    var rows: Double
   }
   object Columns {
     
@@ -60,14 +57,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object X {
     

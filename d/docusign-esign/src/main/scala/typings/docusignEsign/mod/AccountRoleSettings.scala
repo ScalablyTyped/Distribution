@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountRoleSettings extends StObject {
   
   /**
     * When **true**, users have full administrative access to the account.
     */
-  var allowAccountManagement: js.UndefOr[String] = js.native
+  var allowAccountManagement: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowAccountManagement` property is editable.
@@ -19,12 +17,12 @@ trait AccountRoleSettings extends StObject {
     */
   var allowAccountManagementMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can manage documents by using the API.
     */
-  var allowApiAccess: js.UndefOr[String] = js.native
+  var allowApiAccess: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowApiAccess` property is editable.
@@ -32,12 +30,12 @@ trait AccountRoleSettings extends StObject {
     */
   var allowApiAccessMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can access the account by using the eSignature API.
     */
-  var allowApiAccessToAccount: js.UndefOr[String] = js.native
+  var allowApiAccessToAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowApiAccessToAccount` property is editable.
@@ -45,12 +43,12 @@ trait AccountRoleSettings extends StObject {
     */
   var allowApiAccessToAccountMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can send envelopes on behalf of others.
     */
-  var allowApiSendingOnBehalfOfOthers: js.UndefOr[String] = js.native
+  var allowApiSendingOnBehalfOfOthers: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowApiSendingOnBehalfOfOthers` property is editable.
@@ -58,12 +56,12 @@ trait AccountRoleSettings extends StObject {
     */
   var allowApiSendingOnBehalfOfOthersMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users may specify sequential signing recipients when they send documents by using the API.
     */
-  var allowApiSequentialSigning: js.UndefOr[String] = js.native
+  var allowApiSequentialSigning: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowApiSequentialSigning` property is editable.
@@ -71,24 +69,24 @@ trait AccountRoleSettings extends StObject {
     */
   var allowApiSequentialSigningMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     *  If **true**, auto-tagging is enabled for the account.
     */
-  var allowAutoTagging: js.UndefOr[String] = js.native
+  var allowAutoTagging: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowAutoTagging` property is editable.
     */
   var allowAutoTaggingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, bulk sending is enabled for users.
     */
-  var allowBulkSending: js.UndefOr[String] = js.native
+  var allowBulkSending: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowBulkSending` property is editable.
@@ -96,13 +94,13 @@ trait AccountRoleSettings extends StObject {
     */
   var allowBulkSendingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the DocuSign Desktop Client is enabled for users.
     *
     */
-  var allowDocuSignDesktopClient: js.UndefOr[String] = js.native
+  var allowDocuSignDesktopClient: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowDocuSignDesktopClient` property is editable.
@@ -110,24 +108,24 @@ trait AccountRoleSettings extends StObject {
     */
   var allowDocuSignDesktopClientMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can add electronic seal ([eSeal](https://support.docusign.com/en/guides/ndse-user-guide-apply-electronic-seals)) recipients.
     */
-  var allowESealRecipients: js.UndefOr[String] = js.native
+  var allowESealRecipients: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowESealRecipients` property is editable.
     */
   var allowESealRecipientsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can send envelopes.
     */
-  var allowEnvelopeSending: js.UndefOr[String] = js.native
+  var allowEnvelopeSending: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowEnvelopeSending` property is editable.
@@ -135,24 +133,24 @@ trait AccountRoleSettings extends StObject {
     */
   var allowEnvelopeSendingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, PowerForm Administrators can access all of the PowerForm envelopes associated with the account.
     */
-  var allowPowerFormsAdminToAccessAllPowerFormEnvelopes: js.UndefOr[String] = js.native
+  var allowPowerFormsAdminToAccessAllPowerFormEnvelopes: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowPowerFormsAdminToAccessAllPowerFormEnvelopes` property is editable.
     */
   var allowPowerFormsAdminToAccessAllPowerFormEnvelopesMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, senders can set the language of the email that is sent to recipients.
     */
-  var allowSendersToSetRecipientEmailLanguage: js.UndefOr[String] = js.native
+  var allowSendersToSetRecipientEmailLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowSendersToSetRecipientEmailLanguage` property is editable.
@@ -160,12 +158,12 @@ trait AccountRoleSettings extends StObject {
     */
   var allowSendersToSetRecipientEmailLanguageMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can add requests for attachments from signers.
     */
-  var allowSignerAttachments: js.UndefOr[String] = js.native
+  var allowSignerAttachments: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowSignerAttachments` property is editable.
@@ -173,24 +171,24 @@ trait AccountRoleSettings extends StObject {
     */
   var allowSignerAttachmentsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, senders can include supplemental documents.
     */
-  var allowSupplementalDocuments: js.UndefOr[String] = js.native
+  var allowSupplementalDocuments: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowSupplementalDocuments` property is editable.
     */
   var allowSupplementalDocumentsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the tagger palette is visible during the sending and correct flows and users can add tabs to documents.
     */
-  var allowTaggingInSendAndCorrect: js.UndefOr[String] = js.native
+  var allowTaggingInSendAndCorrect: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowTaggingInSendAndCorrect` property is editable.
@@ -198,25 +196,25 @@ trait AccountRoleSettings extends StObject {
     */
   var allowTaggingInSendAndCorrectMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var allowVaulting: js.UndefOr[String] = js.native
+  var allowVaulting: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var allowVaultingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can override the default account setting that controls whether recipients can sign documents on paper.
     * The option to overrride this setting occurs during the sending process on a per-envelope basis.
     */
-  var allowWetSigningOverride: js.UndefOr[String] = js.native
+  var allowWetSigningOverride: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowWetSigningOverride` property is editable.
@@ -224,7 +222,7 @@ trait AccountRoleSettings extends StObject {
     */
   var allowWetSigningOverrideMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the level of access that users have to the account's address book. Valid values are:
@@ -235,7 +233,7 @@ trait AccountRoleSettings extends StObject {
     * - `personalAndShared`
     *
     */
-  var allowedAddressBookAccess: js.UndefOr[String] = js.native
+  var allowedAddressBookAccess: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowedAddressBookAccess` property is editable.
@@ -243,13 +241,13 @@ trait AccountRoleSettings extends StObject {
     */
   var allowedAddressBookAccessMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var allowedClickwrapsAccess: js.UndefOr[String] = js.native
+  var allowedClickwrapsAccess: js.UndefOr[String] = js.undefined
   
   var allowedClickwrapsAccessMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the level of access that users have to account templates. Valid values are:
@@ -259,7 +257,7 @@ trait AccountRoleSettings extends StObject {
     * - `create`
     * - `share`
     */
-  var allowedTemplateAccess: js.UndefOr[String] = js.native
+  var allowedTemplateAccess: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowedTemplateAccess` property is editable.
@@ -267,12 +265,12 @@ trait AccountRoleSettings extends StObject {
     */
   var allowedTemplateAccessMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can be recipients of envelopes transferred to them by administrators of other accounts.
     */
-  var allowedToBeEnvelopeTransferRecipient: js.UndefOr[String] = js.native
+  var allowedToBeEnvelopeTransferRecipient: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowedToBeEnvelopeTransferRecipient` property is editable.
@@ -280,24 +278,24 @@ trait AccountRoleSettings extends StObject {
     */
   var allowedToBeEnvelopeTransferRecipientMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var canCreateWorkspaces: js.UndefOr[String] = js.native
+  var canCreateWorkspaces: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var canCreateWorkspacesMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users cannot upload documents.
     */
-  var disableDocumentUpload: js.UndefOr[String] = js.native
+  var disableDocumentUpload: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `disableDocumentUpload` property is editable.
@@ -305,12 +303,12 @@ trait AccountRoleSettings extends StObject {
     */
   var disableDocumentUploadMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can access the **Other Actions** menu.
     */
-  var disableOtherActions: js.UndefOr[String] = js.native
+  var disableOtherActions: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `disableOtherActions` property is editable.
@@ -318,14 +316,14 @@ trait AccountRoleSettings extends StObject {
     */
   var disableOtherActionsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, API request logging is enabled.
     *
     * **Note**: Logging limits apply.
     */
-  var enableApiRequestLogging: js.UndefOr[String] = js.native
+  var enableApiRequestLogging: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableApiRequestLogging` property is editable.
@@ -333,12 +331,12 @@ trait AccountRoleSettings extends StObject {
     */
   var enableApiRequestLoggingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, senders are notified when recipients view the documents that they send.
     */
-  var enableRecipientViewingNotifications: js.UndefOr[String] = js.native
+  var enableRecipientViewingNotifications: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableRecipientViewingNotifications` property is editable.
@@ -346,12 +344,12 @@ trait AccountRoleSettings extends StObject {
     */
   var enableRecipientViewingNotificationsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, the sequential signing user export interface is enabled.
     */
-  var enableSequentialSigningInterface: js.UndefOr[String] = js.native
+  var enableSequentialSigningInterface: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `enableSequentialSigningInterface` property is editable.
@@ -359,19 +357,19 @@ trait AccountRoleSettings extends StObject {
     */
   var enableSequentialSigningInterfaceMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var enableTransactionPointIntegration: js.UndefOr[String] = js.native
+  var enableTransactionPointIntegration: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var enableTransactionPointIntegrationMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The PowerForms rights associated with the account permission profile. Valid values are:
@@ -381,7 +379,7 @@ trait AccountRoleSettings extends StObject {
     * - `admin`
     *
     */
-  var powerFormRole: js.UndefOr[String] = js.native
+  var powerFormRole: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `powerFormRole` property is editable.
@@ -389,12 +387,12 @@ trait AccountRoleSettings extends StObject {
     */
   var powerFormRoleMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, senders receive emails about completed, self-signed documents that contain links to the completed documents instead of PDF attachments.
     */
-  var receiveCompletedSelfSignedDocumentsAsEmailLinks: js.UndefOr[String] = js.native
+  var receiveCompletedSelfSignedDocumentsAsEmailLinks: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `receiveCompletedSelfSignedDocumentsAsEmailLinks` property is editable.
@@ -402,19 +400,19 @@ trait AccountRoleSettings extends StObject {
     */
   var receiveCompletedSelfSignedDocumentsAsEmailLinksMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var signingUiVersionMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, senders can require recipients to accept supplemental documents.
     */
-  var supplementalDocumentsMustAccept: js.UndefOr[String] = js.native
+  var supplementalDocumentsMustAccept: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supplementalDocumentsMustAccept` property is editable.
@@ -422,12 +420,12 @@ trait AccountRoleSettings extends StObject {
     */
   var supplementalDocumentsMustAcceptMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, senders can require recipients to read supplemental documents.
     */
-  var supplementalDocumentsMustRead: js.UndefOr[String] = js.native
+  var supplementalDocumentsMustRead: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supplementalDocumentsMustRead` property is editable.
@@ -435,12 +433,12 @@ trait AccountRoleSettings extends StObject {
     */
   var supplementalDocumentsMustReadMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, users can require recipients to view supplemental documents.
     */
-  var supplementalDocumentsMustView: js.UndefOr[String] = js.native
+  var supplementalDocumentsMustView: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supplementalDocumentsMustView` property is editable.
@@ -448,43 +446,43 @@ trait AccountRoleSettings extends StObject {
     */
   var supplementalDocumentsMustViewMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var useNewDocuSignExperienceInterface: js.UndefOr[String] = js.native
+  var useNewDocuSignExperienceInterface: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var useNewDocuSignExperienceInterfaceMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var useNewSendingInterface: js.UndefOr[String] = js.native
+  var useNewSendingInterface: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var useNewSendingInterfaceMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var vaultingMode: js.UndefOr[String] = js.native
+  var vaultingMode: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var vaultingModeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object AccountRoleSettings {
   

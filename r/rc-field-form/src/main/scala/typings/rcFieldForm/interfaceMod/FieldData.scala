@@ -2,22 +2,20 @@ package typings.rcFieldForm.interfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<std.Omit<rc-field-form.rc-field-form/es/interface.InternalFieldData, 'name'>> */
-@js.native
 trait FieldData extends StObject {
   
-  var errors: js.UndefOr[js.Array[String]] = js.native
+  var errors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: NamePath = js.native
+  var name: NamePath
   
-  var touched: js.UndefOr[Boolean] = js.native
+  var touched: js.UndefOr[Boolean] = js.undefined
   
-  var validating: js.UndefOr[Boolean] = js.native
+  var validating: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[StoreValue] = js.native
+  var value: js.UndefOr[StoreValue] = js.undefined
 }
 object FieldData {
   

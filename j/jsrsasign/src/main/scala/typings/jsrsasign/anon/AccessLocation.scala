@@ -3,15 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.UriParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessLocation extends StObject {
   
-  var accessLocation: UriParam = js.native
+  var accessLocation: UriParam
   
-  var accessMethod: OidString = js.native
+  var accessMethod: OidString
 }
 object AccessLocation {
   

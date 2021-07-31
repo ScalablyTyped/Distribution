@@ -3,7 +3,6 @@ package typings.nodegit.mod
 import typings.nodegit.objectMod.Object.TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Object")
@@ -13,32 +12,30 @@ class Object ()
 /* static members */
 object Object {
   
-  @JSImport("nodegit", "Object.lookup")
+  @JSImport("nodegit", "Object")
   @js.native
-  def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid, `type`: TYPE): js.Promise[typings.nodegit.objectMod.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodegit", "Object.lookupPrefix")
-  @js.native
+  @scala.inline
+  def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid, `type`: TYPE): js.Promise[typings.nodegit.objectMod.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.objectMod.Object]]
+  
+  @scala.inline
   def lookupPrefix(
     repo: typings.nodegit.repositoryMod.Repository,
     id: typings.nodegit.oidMod.Oid,
     len: Double,
     `type`: TYPE
-  ): js.Promise[typings.nodegit.objectMod.Object] = js.native
+  ): js.Promise[typings.nodegit.objectMod.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.objectMod.Object]]
   
-  @JSImport("nodegit", "Object.size")
-  @js.native
-  def size(`type`: TYPE): Double = js.native
+  @scala.inline
+  def size(`type`: TYPE): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("nodegit", "Object.string2Type")
-  @js.native
-  def string2Type(str: String): TYPE = js.native
+  @scala.inline
+  def string2Type(str: String): TYPE = ^.asInstanceOf[js.Dynamic].applyDynamic("string2Type")(str.asInstanceOf[js.Any]).asInstanceOf[TYPE]
   
-  @JSImport("nodegit", "Object.type2String")
-  @js.native
-  def type2String(`type`: TYPE): String = js.native
+  @scala.inline
+  def type2String(`type`: TYPE): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type2String")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodegit", "Object.typeisloose")
-  @js.native
-  def typeisloose(`type`: TYPE): Double = js.native
+  @scala.inline
+  def typeisloose(`type`: TYPE): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("typeisloose")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

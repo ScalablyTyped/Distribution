@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafv2WebAclMod {
@@ -79,6 +78,10 @@ object wafv2WebAclMod {
   /* static members */
   object WebAcl {
     
+    @JSImport("@pulumi/aws/wafv2/webAcl", "WebAcl")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WebAcl resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,65 +91,59 @@ object wafv2WebAclMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafv2/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WebAcl = js.native
-    @JSImport("@pulumi/aws/wafv2/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WebAcl = js.native
-    @JSImport("@pulumi/aws/wafv2/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclState): WebAcl = js.native
-    @JSImport("@pulumi/aws/wafv2/webAcl", "WebAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): WebAcl = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclState): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebAclState, opts: CustomResourceOptions): WebAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebAcl]
     
     /**
       * Returns true if the given object is an instance of WebAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafv2/webAcl", "WebAcl.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/webAcl.WebAcl */ Boolean]
   }
   
-  @js.native
   trait WebAclArgs extends StObject {
     
     /**
       * The action to perform if none of the `rules` contained in the WebACL match. See Default Action below for details.
       */
-    val defaultAction: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction] = js.native
+    val defaultAction: Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]
     
     /**
       * A friendly description of the WebACL.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the WebACL.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The rule blocks used to identify the web requests that you want to `allow`, `block`, or `count`. See Rules below for details.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]] = js.undefined
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the region `us-east-1` (N. Virginia) on the AWS provider.
       */
-    val scope: Input[String] = js.native
+    val scope: Input[String]
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.
       */
-    val visibilityConfig: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig] = js.native
+    val visibilityConfig: Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]
   }
   object WebAclArgs {
     
@@ -201,55 +198,54 @@ object wafv2WebAclMod {
     }
   }
   
-  @js.native
   trait WebAclState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the IP Set that this statement references.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The web ACL capacity units (WCUs) currently being used by this web ACL.
       */
-    val capacity: js.UndefOr[Input[Double]] = js.native
+    val capacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The action to perform if none of the `rules` contained in the WebACL match. See Default Action below for details.
       */
-    val defaultAction: js.UndefOr[Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]] = js.native
+    val defaultAction: js.UndefOr[Input[typings.pulumiAws.inputMod.wafv2.WebAclDefaultAction]] = js.undefined
     
     /**
       * A friendly description of the WebACL.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
-    val lockToken: js.UndefOr[Input[String]] = js.native
+    val lockToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the WebACL.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The rule blocks used to identify the web requests that you want to `allow`, `block`, or `count`. See Rules below for details.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.wafv2.WebAclRule]]]] = js.undefined
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the region `us-east-1` (N. Virginia) on the AWS provider.
       */
-    val scope: js.UndefOr[Input[String]] = js.native
+    val scope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.
       */
-    val visibilityConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]] = js.native
+    val visibilityConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.wafv2.WebAclVisibilityConfig]] = js.undefined
   }
   object WebAclState {
     

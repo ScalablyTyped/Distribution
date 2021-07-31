@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WaveShaperOptions extends AudioNodeOptions {
+trait WaveShaperOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var curve: js.UndefOr[js.Array[Double] | Float32Array] = js.native
+  var curve: js.UndefOr[js.Array[Double] | Float32Array] = js.undefined
   
-  var oversample: js.UndefOr[OverSampleType] = js.native
+  var oversample: js.UndefOr[OverSampleType] = js.undefined
 }
 object WaveShaperOptions {
   

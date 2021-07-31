@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsubscribeInput extends StObject {
   
   /**
     * The ARN of the subscription to be deleted.
     */
-  var SubscriptionArn: subscriptionARN = js.native
+  var SubscriptionArn: subscriptionARN
 }
 object UnsubscribeInput {
   

@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.settingsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate")
@@ -45,9 +44,8 @@ object Certificate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate.create")
-  @js.native
-  def create(model: IModel): Certificate = js.native
+  @scala.inline
+  def create(model: IModel): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Certificate]
   
   /**
     * Creates and returns a new Certificate instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object Certificate {
     * of the parent CertificateSettings element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate.createIn")
-  @js.native
-  def createIn(container: CertificateSettings): Certificate = js.native
+  @scala.inline
+  def createIn(container: CertificateSettings): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Certificate]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate.structureTypeName")

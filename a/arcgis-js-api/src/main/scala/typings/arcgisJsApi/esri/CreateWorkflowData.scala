@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateWorkflowData extends Accessor {
+trait CreateWorkflowData
+  extends StObject
+     with Accessor {
   
   /**
     * This provides the feature template and layer when creating a new feature.

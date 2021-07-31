@@ -3,33 +3,29 @@ package typings.logkitty
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("logkitty/build/android/adb", "getAdbPath")
+  @JSImport("logkitty/build/android/adb", JSImport.Namespace)
   @js.native
-  def getAdbPath(): String = js.native
-  @JSImport("logkitty/build/android/adb", "getAdbPath")
-  @js.native
-  def getAdbPath(customPath: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("logkitty/build/android/adb", "getApplicationPid")
-  @js.native
-  def getApplicationPid(applicationId: String): Double = js.native
-  @JSImport("logkitty/build/android/adb", "getApplicationPid")
-  @js.native
-  def getApplicationPid(applicationId: String, adbPath: String): Double = js.native
+  @scala.inline
+  def getAdbPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdbPath")().asInstanceOf[String]
+  @scala.inline
+  def getAdbPath(customPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdbPath")(customPath.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("logkitty/build/android/adb", "runAndroidLoggingProcess")
-  @js.native
-  def runAndroidLoggingProcess(): ChildProcess = js.native
-  @JSImport("logkitty/build/android/adb", "runAndroidLoggingProcess")
-  @js.native
-  def runAndroidLoggingProcess(adbPath: String): ChildProcess = js.native
+  @scala.inline
+  def getApplicationPid(applicationId: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationPid")(applicationId.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getApplicationPid(applicationId: String, adbPath: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationPid")(applicationId.asInstanceOf[js.Any], adbPath.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("logkitty/build/android/adb", "spawnLogcatProcess")
-  @js.native
-  def spawnLogcatProcess(adbPath: String): ChildProcess = js.native
+  @scala.inline
+  def runAndroidLoggingProcess(): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("runAndroidLoggingProcess")().asInstanceOf[ChildProcess]
+  @scala.inline
+  def runAndroidLoggingProcess(adbPath: String): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("runAndroidLoggingProcess")(adbPath.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
+  
+  @scala.inline
+  def spawnLogcatProcess(adbPath: String): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("spawnLogcatProcess")(adbPath.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
 }

@@ -2,13 +2,13 @@ package typings.vexflow.mod.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.Music")
 @js.native
 class Music ()
-  extends typings.vexflow.Vex.Flow.Music
+  extends StObject
+     with typings.vexflow.Vex.Flow.Music
 object Music {
   
   @JSImport("vexflow", "Flow.Music.NUM_TONES")

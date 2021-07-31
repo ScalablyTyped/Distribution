@@ -2,45 +2,43 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var alb: js.UndefOr[AlbEvent] = js.native
+  var alb: js.UndefOr[AlbEvent] = js.undefined
   
-  var alexaSkill: js.UndefOr[AlexaSkill] = js.native
+  var alexaSkill: js.UndefOr[AlexaSkill] = js.undefined
   
-  var alexaSmartHome: js.UndefOr[AlexaSmartHome] = js.native
+  var alexaSmartHome: js.UndefOr[AlexaSmartHome] = js.undefined
   
-  var cloudFront: js.UndefOr[CloudFront] = js.native
+  var cloudFront: js.UndefOr[CloudFront] = js.undefined
   
-  var cloudwatchEvent: js.UndefOr[CloudwatchEvent] = js.native
+  var cloudwatchEvent: js.UndefOr[CloudwatchEvent] = js.undefined
   
-  var cloudwatchLog: js.UndefOr[CloudwatchLog] = js.native
+  var cloudwatchLog: js.UndefOr[CloudwatchLog] = js.undefined
   
-  var cognitoUserPool: js.UndefOr[CognitoUserPool] = js.native
+  var cognitoUserPool: js.UndefOr[CognitoUserPool] = js.undefined
   
-  var eventBridge: js.UndefOr[EventBridge] = js.native
+  var eventBridge: js.UndefOr[EventBridge] = js.undefined
   
-  var http: js.UndefOr[Http] = js.native
+  var http: js.UndefOr[Http] = js.undefined
   
-  var httpApi: js.UndefOr[HttpApiEvent] = js.native
+  var httpApi: js.UndefOr[HttpApiEvent] = js.undefined
   
-  var iot: js.UndefOr[Iot] = js.native
+  var iot: js.UndefOr[Iot] = js.undefined
   
-  var s3: js.UndefOr[S3] = js.native
+  var s3: js.UndefOr[S3] = js.undefined
   
-  var schedule: js.UndefOr[String | Schedule] = js.native
+  var schedule: js.UndefOr[String | Schedule] = js.undefined
   
-  var sns: js.UndefOr[Sns] = js.native
+  var sns: js.UndefOr[Sns] = js.undefined
   
-  var sqs: js.UndefOr[Sqs] = js.native
+  var sqs: js.UndefOr[Sqs] = js.undefined
   
-  var stream: js.UndefOr[Stream] = js.native
+  var stream: js.UndefOr[Stream] = js.undefined
   
-  var websocket: js.UndefOr[Websocket] = js.native
+  var websocket: js.UndefOr[Websocket] = js.undefined
 }
 object Event {
   

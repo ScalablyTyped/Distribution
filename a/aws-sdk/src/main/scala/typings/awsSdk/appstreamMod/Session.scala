@@ -2,61 +2,59 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
   /**
     * The authentication method. The user is authenticated using a streaming URL (API) or SAML 2.0 federation (SAML).
     */
-  var AuthenticationType: js.UndefOr[typings.awsSdk.appstreamMod.AuthenticationType] = js.native
+  var AuthenticationType: js.UndefOr[typings.awsSdk.appstreamMod.AuthenticationType] = js.undefined
   
   /**
     * Specifies whether a user is connected to the streaming session.
     */
-  var ConnectionState: js.UndefOr[SessionConnectionState] = js.native
+  var ConnectionState: js.UndefOr[SessionConnectionState] = js.undefined
   
   /**
     * The name of the fleet for the streaming session.
     */
-  var FleetName: String = js.native
+  var FleetName: String
   
   /**
     * The identifier of the streaming session.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The time when the streaming session is set to expire. This time is based on the MaxUserDurationinSeconds value, which determines the maximum length of time that a streaming session can run. A streaming session might end earlier than the time specified in SessionMaxExpirationTime, when the DisconnectTimeOutInSeconds elapses or the user chooses to end his or her session. If the DisconnectTimeOutInSeconds elapses, or the user chooses to end his or her session, the streaming instance is terminated and the streaming session ends.
     */
-  var MaxExpirationTime: js.UndefOr[Timestamp] = js.native
+  var MaxExpirationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The network details for the streaming session.
     */
-  var NetworkAccessConfiguration: js.UndefOr[typings.awsSdk.appstreamMod.NetworkAccessConfiguration] = js.native
+  var NetworkAccessConfiguration: js.UndefOr[typings.awsSdk.appstreamMod.NetworkAccessConfiguration] = js.undefined
   
   /**
     * The name of the stack for the streaming session.
     */
-  var StackName: String = js.native
+  var StackName: String
   
   /**
     * The time when a streaming instance is dedicated for the user.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current state of the streaming session.
     */
-  var State: SessionState = js.native
+  var State: SessionState
   
   /**
     * The identifier of the user for whom the session was created.
     */
-  var UserId: typings.awsSdk.appstreamMod.UserId = js.native
+  var UserId: typings.awsSdk.appstreamMod.UserId
 }
 object Session {
   

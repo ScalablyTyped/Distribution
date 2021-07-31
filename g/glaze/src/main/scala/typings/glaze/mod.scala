@@ -18,35 +18,34 @@ import typings.glaze.useStylingMod.ThemedStyle
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glaze", "StyleInjectorProvider")
+  @JSImport("glaze", JSImport.Namespace)
   @js.native
-  def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("glaze", "ThemeProvider")
-  @js.native
-  def ThemeProvider(hasThemeChildren: ThemeProviderProps): Element = js.native
+  @scala.inline
+  def StyleInjectorProvider(hasChildrenInjector: StyleInjectorProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StyleInjectorProvider")(hasChildrenInjector.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @scala.inline
+  def ThemeProvider(hasThemeChildren: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("glaze", "VirtualStyleInjector")
   @js.native
   class VirtualStyleInjector ()
     extends typings.glaze.styleInjectorMod.VirtualStyleInjector
   
-  @JSImport("glaze", "createTheme")
-  @js.native
+  @scala.inline
   def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) with StaticTheme
-  ): RuntimeTheme = js.native
-  @JSImport("glaze", "createTheme")
-  @js.native
+    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme
+  ): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
+  @scala.inline
   def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) with StaticTheme,
+    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme,
     localDebugName: String
-  ): RuntimeTheme = js.native
+  ): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
   
   object defaultTokens {
     
@@ -71,26 +70,25 @@ object mod {
     val shorthands: Inset = js.native
   }
   
-  @JSImport("glaze", "modularScale")
-  @js.native
+  @scala.inline
   def modularScale(ratio: Double): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
-    */ typings.glaze.glazeStrings.modularScale with TopLevel[js.Any] = js.native
-  @JSImport("glaze", "modularScale")
-  @js.native
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {readonly [ key in / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueOf<typeof defaultSteps, number> * / any ]: string}
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any]]
+  @scala.inline
   def modularScale[T /* <: Double */](ratio: Double, steps: js.Array[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ key in T ]: string}
-    */ typings.glaze.glazeStrings.modularScale with TopLevel[js.Any] = js.native
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("modularScale")(ratio.asInstanceOf[js.Any], steps.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {readonly [ key in T ]: string}
+    */ typings.glaze.glazeStrings.modularScale & TopLevel[js.Any]]
   
-  @JSImport("glaze", "setLogger")
-  @js.native
-  def setLogger(logger: PickConsoleLogLevel): Unit = js.native
+  @scala.inline
+  def setLogger(logger: PickConsoleLogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("glaze", "useStyling")
-  @js.native
-  def useStyling(): js.Function1[/* themedStyle */ ThemedStyle, String] = js.native
+  @scala.inline
+  def useStyling(): js.Function1[/* themedStyle */ ThemedStyle, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useStyling")().asInstanceOf[js.Function1[/* themedStyle */ ThemedStyle, String]]
   
-  @JSImport("glaze", "useTheme")
-  @js.native
-  def useTheme(): RuntimeTheme = js.native
+  @scala.inline
+  def useTheme(): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[RuntimeTheme]
 }

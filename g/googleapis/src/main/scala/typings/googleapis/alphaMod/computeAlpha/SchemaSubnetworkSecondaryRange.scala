@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a secondary IP range of a subnetwork.
   */
-@js.native
 trait SchemaSubnetworkSecondaryRange extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSubnetworkSecondaryRange extends StObject {
     * unique and non-overlapping with all primary and secondary IP ranges
     * within a network. Only IPv4 is supported.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * The name associated with this subnetwork secondary range, used when
@@ -25,14 +23,14 @@ trait SchemaSubnetworkSecondaryRange extends StObject {
     * characters long, and comply with RFC1035. The name must be unique within
     * the subnetwork.
     */
-  var rangeName: js.UndefOr[String] = js.native
+  var rangeName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of IP CIDR range to associate with this subnetwork secondary
     * range. The default is RFC_1918. When creating a subnetwork in non-RFC
     * 1918 range, this field must be set to NON_RFC_1918.
     */
-  var rangeType: js.UndefOr[String] = js.native
+  var rangeType: js.UndefOr[String] = js.undefined
 }
 object SchemaSubnetworkSecondaryRange {
   

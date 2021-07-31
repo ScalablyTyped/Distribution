@@ -16,48 +16,46 @@ import typings.reactNativeElements.reactNativeElementsStrings.small
 import typings.reactNativeElements.reactNativeElementsStrings.xlarge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.AvatarProps>> */
-@js.native
 trait RecursivePartialPartialAv extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var avatarStyle: js.UndefOr[RecursivePartial[js.UndefOr[ImageStyle]]] = js.native
+  var avatarStyle: js.UndefOr[RecursivePartial[js.UndefOr[ImageStyle]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var icon: js.UndefOr[RecursivePartial[js.UndefOr[AvatarIcon]]] = js.native
+  var icon: js.UndefOr[RecursivePartial[js.UndefOr[AvatarIcon]]] = js.undefined
   
-  var iconStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var iconStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.native
+  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.undefined
   
-  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var overlayContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var overlayContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var placeholderStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var placeholderStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var renderPlaceholderContent: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.native
+  var renderPlaceholderContent: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   
-  var rounded: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var rounded: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var size: js.UndefOr[RecursivePartial[js.UndefOr[small | medium | large | xlarge | Double]]] = js.native
+  var size: js.UndefOr[RecursivePartial[js.UndefOr[small | medium | large | xlarge | Double]]] = js.undefined
   
-  var source: js.UndefOr[RecursivePartial[js.UndefOr[ImageSourcePropType]]] = js.native
+  var source: js.UndefOr[RecursivePartial[js.UndefOr[ImageSourcePropType]]] = js.undefined
   
-  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
 }
 object RecursivePartialPartialAv {
   

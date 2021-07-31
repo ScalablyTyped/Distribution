@@ -4,23 +4,23 @@ import typings.metascraper.mod.Rule
 import typings.node.httpMod.ClientRequestArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("metascraper-clearbit", JSImport.Namespace)
-  @js.native
-  def apply(): Rule = js.native
-  @JSImport("metascraper-clearbit", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Rule = js.native
+  @scala.inline
+  def apply(): Rule = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Rule]
+  @scala.inline
+  def apply(options: Options): Rule = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
+  @JSImport("metascraper-clearbit", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /** Any option provided here will passed to `got#options`. */
-    var gotOpts: js.UndefOr[ClientRequestArgs] = js.native
+    var gotOpts: js.UndefOr[ClientRequestArgs] = js.undefined
   }
   object Options {
     

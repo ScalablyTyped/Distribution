@@ -2,33 +2,31 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountInfo extends StObject {
   
-  var countryCode: String = js.native
+  var countryCode: String
   
-  var email: String = js.native
+  var email: String
   
-  def json(): js.Object = js.native
+  def json(): js.Object
   
-  var name: String = js.native
+  var name: String
   
-  var privateBytes: Double = js.native
+  var privateBytes: Double
   
-  var publicAppUrl: String = js.native
+  var publicAppUrl: String
   
-  var quota: Double = js.native
+  var quota: Double
   
-  var referralUrl: String = js.native
+  var referralUrl: String
   
-  var sharedBytes: Double = js.native
+  var sharedBytes: Double
   
-  var uid: String = js.native
+  var uid: String
   
-  var usedQuota: Double = js.native
+  var usedQuota: Double
 }
 object AccountInfo {
   

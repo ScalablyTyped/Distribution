@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainDetails extends StObject {
   
   /**
     * The domain information for the AWS API call.
     */
-  var Domain: js.UndefOr[String] = js.native
+  var Domain: js.UndefOr[String] = js.undefined
 }
 object DomainDetails {
   

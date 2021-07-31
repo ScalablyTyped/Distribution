@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,9 +33,9 @@ trait Subdocuments extends StObject {
   def Item(Index: Double): Subdocument = js.native
   
   def Merge(): Unit = js.native
-  def Merge(FirstSubdocument: js.UndefOr[scala.Nothing], LastSubdocument: js.Any): Unit = js.native
   def Merge(FirstSubdocument: js.Any): Unit = js.native
   def Merge(FirstSubdocument: js.Any, LastSubdocument: js.Any): Unit = js.native
+  def Merge(FirstSubdocument: Unit, LastSubdocument: js.Any): Unit = js.native
   
   val Parent: js.Any = js.native
   

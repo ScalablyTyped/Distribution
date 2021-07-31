@@ -9,15 +9,13 @@ import typings.momentRange.mod.MomentRangeStaticMethods
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Adjacent extends StObject {
     
-    var adjacent: js.UndefOr[Boolean] = js.native
+    var adjacent: js.UndefOr[Boolean] = js.undefined
   }
   object Adjacent {
     
@@ -62,12 +59,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ExcludeEnd extends StObject {
     
-    var excludeEnd: js.UndefOr[Boolean] = js.native
+    var excludeEnd: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object ExcludeEnd {
     
@@ -94,12 +90,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ExcludeStart extends StObject {
     
-    var excludeEnd: js.UndefOr[Boolean] = js.native
+    var excludeEnd: js.UndefOr[Boolean] = js.undefined
     
-    var excludeStart: js.UndefOr[Boolean] = js.native
+    var excludeStart: js.UndefOr[Boolean] = js.undefined
   }
   object ExcludeStart {
     
@@ -126,12 +121,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Exclusive extends StObject {
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object Exclusive {
     
@@ -162,23 +156,27 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(): Moment = js.native
-    def apply(
-      inp: js.UndefOr[MomentInput],
-      format: js.UndefOr[MomentFormatSpecification],
-      language: js.UndefOr[scala.Nothing],
-      strict: Boolean
-    ): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
-    def apply(
-      inp: js.UndefOr[MomentInput],
-      format: js.UndefOr[MomentFormatSpecification],
-      language: String,
-      strict: Boolean
-    ): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: Unit, language: String): Moment = js.native
+    def apply(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, language: String): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, strict: Boolean): Moment = js.native
     def apply(inp: MomentInput): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, language: String): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, strict: Boolean): Moment = js.native
   }
   
   /* Inlined moment-range.moment-range.MomentRange & {None (inp : undefined, format : undefined, language : undefined, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : undefined, language : undefined, strict : boolean): moment.moment.Moment, None (inp : undefined, format : moment.moment.MomentFormatSpecification, language : undefined, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : moment.moment.MomentFormatSpecification, language : undefined, strict : boolean): moment.moment.Moment, None (inp : undefined, format : undefined, language : string, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : undefined, language : string, strict : boolean): moment.moment.Moment, None (inp : undefined, format : moment.moment.MomentFormatSpecification, language : string, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : moment.moment.MomentFormatSpecification, language : string, strict : boolean): moment.moment.Moment, None (inp : undefined, format : undefined, language : string): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : undefined, language : string): moment.moment.Moment, None (inp : undefined, format : moment.moment.MomentFormatSpecification, language : string): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : moment.moment.MomentFormatSpecification, language : string): moment.moment.Moment, None (inp : undefined, format : undefined, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : undefined, strict : boolean): moment.moment.Moment, None (inp : undefined, format : moment.moment.MomentFormatSpecification, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : moment.moment.MomentFormatSpecification, strict : boolean): moment.moment.Moment, None (inp : undefined, format : moment.moment.MomentFormatSpecification): moment.moment.Moment, None (inp : moment.moment.MomentInput, format : moment.moment.MomentFormatSpecification): moment.moment.Moment, None (inp : undefined, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput, strict : boolean): moment.moment.Moment, None (inp : moment.moment.MomentInput): moment.moment.Moment, None (): moment.moment.Moment} */
@@ -186,24 +184,28 @@ object anon {
   trait MomentRangeNoneinpundefin extends StObject {
     
     def apply(): Moment = js.native
-    def apply(args: js.Any*): MomentRangeStaticMethods with Moment = js.native
-    def apply(
-      inp: js.UndefOr[MomentInput],
-      format: js.UndefOr[MomentFormatSpecification],
-      language: js.UndefOr[scala.Nothing],
-      strict: Boolean
-    ): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
-    def apply(
-      inp: js.UndefOr[MomentInput],
-      format: js.UndefOr[MomentFormatSpecification],
-      language: String,
-      strict: Boolean
-    ): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
-    def apply(inp: js.UndefOr[MomentInput], strict: Boolean): Moment = js.native
+    def apply(args: js.Any*): MomentRangeStaticMethods & Moment = js.native
+    def apply(inp: Unit, format: Unit, language: String): Moment = js.native
+    def apply(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, language: String): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
+    def apply(inp: Unit, strict: Boolean): Moment = js.native
     def apply(inp: MomentInput): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, language: String): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
+    def apply(inp: MomentInput, strict: Boolean): Moment = js.native
     
     // @deprecated 4.0.0
     def parseZoneRange(isoTimeInterval: String): DateRange = js.native
@@ -219,19 +221,18 @@ object anon {
     def rangeFromISOString(isoTimeInterval: String): DateRange = js.native
     
     def rangeFromInterval(interval: Diff): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: js.UndefOr[scala.Nothing], date: Moment): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: js.UndefOr[scala.Nothing], date: Date): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double, date: Moment): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double, date: Date): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Unit, date: Moment): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Unit, date: Date): DateRange = js.native
   }
   
-  @js.native
   trait Step extends StObject {
     
-    var excludeStart: js.UndefOr[Boolean] = js.native
+    var excludeStart: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object Step {
     

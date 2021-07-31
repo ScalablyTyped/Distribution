@@ -3,14 +3,14 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.anon.IBaseButtonParametersOptiFloat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IListBoxParameters extends IButtonParameters {
+trait IListBoxParameters
+  extends StObject
+     with IButtonParameters {
   
   @JSName("options")
-  var options_IListBoxParameters: js.UndefOr[IBaseButtonParametersOptiFloat] = js.native
+  var options_IListBoxParameters: js.UndefOr[IBaseButtonParametersOptiFloat] = js.undefined
 }
 object IListBoxParameters {
   

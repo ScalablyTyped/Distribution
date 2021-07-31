@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCertificatesResponse extends StObject {
   
   /**
     * The Secure Sockets Layer (SSL) certificates associated with the replication instance.
     */
-  var Certificates: js.UndefOr[CertificateList] = js.native
+  var Certificates: js.UndefOr[CertificateList] = js.undefined
   
   /**
     * The pagination token.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object DescribeCertificatesResponse {
   

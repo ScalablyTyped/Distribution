@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectedBluetoothDevicesOptions extends StObject {
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 蓝牙设备主 service 的 uuid 列表
     */
-  var services: js.UndefOr[js.Array[_]] = js.native
+  var services: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 成功则返回本机蓝牙适配器状态
     */
-  var success: js.UndefOr[js.Function1[/* result */ GetConnectedBluetoothDevicesSuccess, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ GetConnectedBluetoothDevicesSuccess, Unit]] = js.undefined
 }
 object GetConnectedBluetoothDevicesOptions {
   
@@ -52,7 +50,7 @@ object GetConnectedBluetoothDevicesOptions {
     def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def setServices(value: js.Array[_]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    def setServices(value: js.Array[js.Any]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)

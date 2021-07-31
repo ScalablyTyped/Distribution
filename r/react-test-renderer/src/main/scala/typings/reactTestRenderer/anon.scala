@@ -2,15 +2,13 @@ package typings.reactTestRenderer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Deep extends StObject {
     
-    var deep: Boolean = js.native
+    var deep: Boolean
   }
   object Deep {
     

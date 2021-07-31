@@ -4,15 +4,16 @@ import typings.menubar.anon.PartialOptions
 import typings.menubar.typesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cleanOptionsMod {
   
-  @JSImport("menubar/lib/util/cleanOptions", "cleanOptions")
+  @JSImport("menubar/lib/util/cleanOptions", JSImport.Namespace)
   @js.native
-  def cleanOptions(): Options = js.native
-  @JSImport("menubar/lib/util/cleanOptions", "cleanOptions")
-  @js.native
-  def cleanOptions(opts: PartialOptions): Options = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def cleanOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanOptions")().asInstanceOf[Options]
+  @scala.inline
+  def cleanOptions(opts: PartialOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[Options]
 }

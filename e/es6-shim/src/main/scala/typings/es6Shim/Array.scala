@@ -2,7 +2,6 @@ package typings.es6Shim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,9 +38,9 @@ trait Array[T] extends StObject {
     * length+end.
     */
   def fill(value: T): Array[T] = js.native
-  def fill(value: T, start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
   def fill(value: T, start: Double): Array[T] = js.native
   def fill(value: T, start: Double, end: Double): Array[T] = js.native
+  def fill(value: T, start: Unit, end: Double): Array[T] = js.native
   
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnAddressAddress extends StObject {
   
   /** CLDR country code (e.g. "US"). */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** City, town or commune. May also include dependent localities or sublocalities (e.g. neighborhoods or suburbs). */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /** Postal code or ZIP (e.g. "94043"). */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /** Name of the recipient to address returns to. */
-  var recipientName: js.UndefOr[String] = js.native
+  var recipientName: js.UndefOr[String] = js.undefined
   
   /** Top-level administrative subdivision of the country. For example, a state like California ("CA") or a province like Quebec ("QC"). */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** Street-level part of the address. May be up to two lines, each line specified as an array element. */
-  var streetAddress: js.UndefOr[js.Array[String]] = js.native
+  var streetAddress: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ReturnAddressAddress {
   

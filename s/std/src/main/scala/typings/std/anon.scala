@@ -3,7 +3,6 @@ package typings.std
 import typings.std.stdStrings.byob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -19,22 +18,21 @@ object anon {
       ] = js.native
   }
   
-  @js.native
   trait CopyWithin extends StObject {
     
-    var copyWithin: scala.Boolean = js.native
+    var copyWithin: scala.Boolean
     
-    var entries: scala.Boolean = js.native
+    var entries: scala.Boolean
     
-    var fill: scala.Boolean = js.native
+    var fill: scala.Boolean
     
-    var find: scala.Boolean = js.native
+    var find: scala.Boolean
     
-    var findIndex: scala.Boolean = js.native
+    var findIndex: scala.Boolean
     
-    var keys: scala.Boolean = js.native
+    var keys: scala.Boolean
     
-    var values: scala.Boolean = js.native
+    var values: scala.Boolean
   }
   object CopyWithin {
     
@@ -78,12 +76,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Done[Arr] extends StObject {
     
-    var done: Arr = js.native
+    var done: Arr
     
-    var recur: Arr = js.native
+    var recur: Arr
   }
   object Done {
     
@@ -94,7 +91,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[_], Arr] (val x: Self with Done[Arr]) extends AnyVal {
+    implicit class DoneMutableBuilder[Self <: Done[?], Arr] (val x: Self & Done[Arr]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Arr): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
@@ -104,10 +101,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HighWaterMark extends StObject {
     
-    var highWaterMark: Double = js.native
+    var highWaterMark: Double
   }
   object HighWaterMark {
     
@@ -125,10 +121,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Item[T] extends StObject {
     
-    def Item(index: js.Any): T = js.native
+    def Item(index: js.Any): T
   }
   object Item {
     
@@ -139,19 +134,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item[_], T] (val x: Self with Item[T]) extends AnyVal {
+    implicit class ItemMutableBuilder[Self <: Item[?], T] (val x: Self & Item[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: js.Any => T): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    def Item(n: Double): java.lang.String = js.native
+    def Item(n: Double): java.lang.String
     
-    var length: Double = js.native
+    var length: Double
   }
   object Length {
     
@@ -186,16 +180,15 @@ object anon {
     var `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | Null] = js.native
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var mode: byob = js.native
+    var mode: byob
   }
   object Mode {
     
     @scala.inline
-    def apply(mode: byob): Mode = {
-      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+    def apply(): Mode = {
+      val __obj = js.Dynamic.literal(mode = "byob")
       __obj.asInstanceOf[Mode]
     }
     
@@ -207,12 +200,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Proxy[T /* <: js.Object */] extends StObject {
     
-    var proxy: T = js.native
+    var proxy: T
     
-    def revoke(): Unit = js.native
+    def revoke(): Unit
   }
   object Proxy {
     
@@ -223,7 +215,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ProxyMutableBuilder[Self <: Proxy[_], T /* <: js.Object */] (val x: Self with Proxy[T]) extends AnyVal {
+    implicit class ProxyMutableBuilder[Self <: Proxy[?], T /* <: js.Object */] (val x: Self & Proxy[T]) extends AnyVal {
       
       @scala.inline
       def setProxy(value: T): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
@@ -233,12 +225,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Readable[R, T] extends StObject {
     
-    var readable: ReadableStream[T] = js.native
+    var readable: ReadableStream[T]
     
-    var writable: WritableStream[R] = js.native
+    var writable: WritableStream[R]
   }
   object Readable {
     
@@ -249,7 +240,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ReadableMutableBuilder[Self <: Readable[_, _], R, T] (val x: Self with (Readable[R, T])) extends AnyVal {
+    implicit class ReadableMutableBuilder[Self <: Readable[?, ?], R, T] (val x: Self & (Readable[R, T])) extends AnyVal {
       
       @scala.inline
       def setReadable(value: ReadableStream[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
@@ -273,18 +264,17 @@ object anon {
     var search: js.Function1[/* string */ java.lang.String, Double] = js.native
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[scala.Nothing] = js.native
+    var size: Unit
   }
   object Size {
     
     @scala.inline
-    def apply(): Size = {
-      val __obj = js.Dynamic.literal()
+    def apply(size: Unit): Size = {
+      val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
@@ -296,6 +286,9 @@ object anon {
       
       @scala.inline
       def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
+      @scala.inline
+      def setSize(value: Unit): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

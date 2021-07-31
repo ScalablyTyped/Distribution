@@ -5,16 +5,15 @@ import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with RippleComponent {
   
   @JSName("onChange")
-  var onChange_SwitchProps: js.UndefOr[FormEventHandler[Switch]] = js.native
+  var onChange_SwitchProps: js.UndefOr[FormEventHandler[Switch]] = js.undefined
 }
 object SwitchProps {
   

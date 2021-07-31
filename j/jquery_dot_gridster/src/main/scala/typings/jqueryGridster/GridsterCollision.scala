@@ -2,17 +2,15 @@ package typings.jqueryGridster
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridsterCollision extends StObject {
   
-  def on_overlap(data: GridsterCollisionData): Unit = js.native
+  def on_overlap(data: GridsterCollisionData): Unit
   
-  def on_overlap_start(data: GridsterCollisionData): Unit = js.native
+  def on_overlap_start(data: GridsterCollisionData): Unit
   
-  def on_overlap_stop(data: GridsterCollisionData): Unit = js.native
+  def on_overlap_stop(data: GridsterCollisionData): Unit
 }
 object GridsterCollision {
   

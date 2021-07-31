@@ -2,31 +2,29 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAssetPropertyResponse extends StObject {
   
   /**
     * The ID of the asset.
     */
-  var assetId: ID = js.native
+  var assetId: ID
   
   /**
     * The ID of the asset model.
     */
-  var assetModelId: ID = js.native
+  var assetModelId: ID
   
   /**
     * The name of the asset.
     */
-  var assetName: Name = js.native
+  var assetName: Name
   
   /**
     * The asset property's definition, alias, and notification state.
     */
-  var assetProperty: Property = js.native
+  var assetProperty: Property
 }
 object DescribeAssetPropertyResponse {
   

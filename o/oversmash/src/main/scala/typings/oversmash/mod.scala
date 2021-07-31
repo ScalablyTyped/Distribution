@@ -4,17 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.oversmash.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("oversmash", JSImport.Default)
+  @JSImport("oversmash", JSImport.Namespace)
   @js.native
-  def default(): Options = js.native
-  @JSImport("oversmash", JSImport.Default)
-  @js.native
-  def default(callerOptions: CallerOptions): Options = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Options]
+  @scala.inline
+  def default(callerOptions: CallerOptions): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callerOptions.asInstanceOf[js.Any]).asInstanceOf[Options]
   
   @js.native
   sealed trait NormalizeNamesAs extends StObject
@@ -23,29 +24,32 @@ object mod {
   object NormalizeNamesAs extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[NormalizeNamesAs with String] = js.native
+    def apply(value: String): js.UndefOr[NormalizeNamesAs & String] = js.native
     
     @js.native
-    sealed trait camel extends NormalizeNamesAs
-    /* "camel" */ val camel: typings.oversmash.mod.NormalizeNamesAs.camel with String = js.native
+    sealed trait camel
+      extends StObject
+         with NormalizeNamesAs
+    /* "camel" */ val camel: typings.oversmash.mod.NormalizeNamesAs.camel & String = js.native
     
     @js.native
-    sealed trait snake extends NormalizeNamesAs
-    /* "snake" */ val snake: typings.oversmash.mod.NormalizeNamesAs.snake with String = js.native
+    sealed trait snake
+      extends StObject
+         with NormalizeNamesAs
+    /* "snake" */ val snake: typings.oversmash.mod.NormalizeNamesAs.snake & String = js.native
   }
   
-  @js.native
   trait Account extends StObject {
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var level: Double = js.native
+    var level: Double
     
-    var platform: String = js.native
+    var platform: String
     
-    var portrait: String = js.native
+    var portrait: String
     
-    var public: Boolean = js.native
+    var public: Boolean
   }
   object Account {
     
@@ -78,12 +82,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Achievement extends StObject {
     
-    var achieved: Boolean = js.native
+    var achieved: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object Achievement {
     
@@ -104,22 +107,21 @@ object mod {
     }
   }
   
-  @js.native
   trait CallerOptions extends StObject {
     
-    var defaultPlatform: String = js.native
+    var defaultPlatform: String
     
-    var normalizeNames: Boolean = js.native
+    var normalizeNames: Boolean
     
-    var normalizeNamesAs: NormalizeNamesAs = js.native
+    var normalizeNamesAs: NormalizeNamesAs
     
-    var normalizeValues: Boolean = js.native
+    var normalizeValues: Boolean
     
-    var percentsToInts: Boolean = js.native
+    var percentsToInts: Boolean
     
-    var portraitUrlTemplate: String = js.native
+    var portraitUrlTemplate: String
     
-    var requestOptions: RequestOptions = js.native
+    var requestOptions: RequestOptions
   }
   object CallerOptions {
     
@@ -163,14 +165,13 @@ object mod {
     }
   }
   
-  @js.native
   trait CompetitiveRank extends StObject {
     
-    var damage: js.UndefOr[Double] = js.native
+    var damage: js.UndefOr[Double] = js.undefined
     
-    var support: js.UndefOr[Double] = js.native
+    var support: js.UndefOr[Double] = js.undefined
     
-    var tank: js.UndefOr[Double] = js.native
+    var tank: js.UndefOr[Double] = js.undefined
   }
   object CompetitiveRank {
     
@@ -203,28 +204,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Game extends StObject {
     
-    var gamesLost: Double = js.native
+    var gamesLost: Double
     
-    var gamesPlayed: Double = js.native
+    var gamesPlayed: Double
     
-    var gamesTied: Double = js.native
+    var gamesTied: Double
     
-    var gamesWon: Double = js.native
+    var gamesWon: Double
     
-    var games_lost: Double = js.native
+    var games_lost: Double
     
-    var games_played: Double = js.native
+    var games_played: Double
     
-    var games_tied: Double = js.native
+    var games_tied: Double
     
-    var games_won: Double = js.native
+    var games_won: Double
     
-    var timePlayed: String = js.native
+    var timePlayed: String
     
-    var time_played: String = js.native
+    var time_played: String
   }
   object Game {
     
@@ -284,30 +284,29 @@ object mod {
   
   type Header = StringDictionary[String]
   
-  @js.native
   trait Hero extends StObject {
     
-    var assists: js.UndefOr[Statistic] = js.native
+    var assists: js.UndefOr[Statistic] = js.undefined
     
-    var average: js.UndefOr[Statistic] = js.native
+    var average: js.UndefOr[Statistic] = js.undefined
     
-    var awards: js.UndefOr[Statistic] = js.native
+    var awards: js.UndefOr[Statistic] = js.undefined
     
-    var best: js.UndefOr[Statistic] = js.native
+    var best: js.UndefOr[Statistic] = js.undefined
     
-    var combat: js.UndefOr[Statistic] = js.native
+    var combat: js.UndefOr[Statistic] = js.undefined
     
-    var game: js.UndefOr[Game] = js.native
+    var game: js.UndefOr[Game] = js.undefined
     
-    var hero: js.UndefOr[Statistic] = js.native
+    var hero: js.UndefOr[Statistic] = js.undefined
     
-    var misc: js.UndefOr[Statistic] = js.native
+    var misc: js.UndefOr[Statistic] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var rawName: String = js.native
+    var rawName: String
     
-    var raw_name: String = js.native
+    var raw_name: String
   }
   object Hero {
     
@@ -379,16 +378,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Player extends StObject {
     
-    var accounts: js.Array[Account] = js.native
+    var accounts: js.Array[Account]
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nameEscaped: String = js.native
+    var nameEscaped: String
     
-    var nameEscapedUrl: String = js.native
+    var nameEscapedUrl: String
   }
   object Player {
     
@@ -421,20 +419,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PlayerStats extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nameEscaped: String = js.native
+    var nameEscaped: String
     
-    var nameEscapedUrl: js.UndefOr[String] = js.native
+    var nameEscapedUrl: js.UndefOr[String] = js.undefined
     
-    var platform: String = js.native
+    var platform: String
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var stats: Stats = js.native
+    var stats: Stats
   }
   object PlayerStats {
     
@@ -476,12 +473,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var baseURL: String = js.native
+    var baseURL: String
     
-    var headers: Header = js.native
+    var headers: Header
   }
   object RequestOptions {
     
@@ -504,26 +500,25 @@ object mod {
   
   type Statistic = StringDictionary[String | Double | Null]
   
-  @js.native
   trait Stats extends StObject {
     
-    var achievements: js.Array[Achievement] = js.native
+    var achievements: js.Array[Achievement]
     
-    var competitive: GameMode = js.native
+    var competitive: GameMode
     
-    var competitiveRank: CompetitiveRank = js.native
+    var competitiveRank: CompetitiveRank
     
-    var competitive_rank: CompetitiveRank = js.native
+    var competitive_rank: CompetitiveRank
     
-    var endorsementLevel: Double = js.native
+    var endorsementLevel: Double
     
-    var endorsement_level: Double = js.native
+    var endorsement_level: Double
     
-    var gamesWon: Double = js.native
+    var gamesWon: Double
     
-    var games_won: Double = js.native
+    var games_won: Double
     
-    var quickplay: GameMode = js.native
+    var quickplay: GameMode
   }
   object Stats {
     

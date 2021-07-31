@@ -3,84 +3,82 @@ package typings.sharepoint
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callout extends StObject {
   
   /** Adds a link to the actions panel in the bottom part of the callout window */
-  def addAction(action: CalloutAction): Unit = js.native
+  def addAction(action: CalloutAction): Unit
   
   /** Adds event handler to the callout.
     @param eventName one of the following: "opened", "opening", "closing", "closed" */
-  def addEventCallback(eventName: String, callback: js.Function1[/* callout */ this.type, Unit]): Unit = js.native
+  def addEventCallback(eventName: String, callback: js.Function1[/* callout */ this.type, Unit]): Unit
   
   /** Hide the callout. Animation can be used only for IE9+ */
-  def close(useAnimation: Boolean): Unit = js.native
+  def close(useAnimation: Boolean): Unit
   
   /** Do not call this directly. Instead, use CalloutManager.remove */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /** Returns the callout actions menu */
-  def getActionMenu(): CalloutActionMenu = js.native
+  def getActionMenu(): CalloutActionMenu
   
   /** Returns the beak orientation defined for the callout during its creation. */
-  def getBeakOrientation(): String = js.native
+  def getBeakOrientation(): String
   
   /** Returns the bounding element defined for the callout during its creation. */
-  def getBoundingBox(): HTMLElement = js.native
+  def getBoundingBox(): HTMLElement
   
   /** Returns the contents of the callout. */
-  def getContent(): String = js.native
+  def getContent(): String
   
   /** Returns the content element of the callout. */
-  def getContentElement(): HTMLElement = js.native
+  def getContentElement(): HTMLElement
   
   /** Returns the content width defined for the callout during its creation. */
-  def getContentWidth(): Double = js.native
+  def getContentWidth(): Double
   
   /** Returns the ID of the callout. */
-  def getID(): String = js.native
+  def getID(): String
   
   /** Returns the launch point element of the callout. */
-  def getLaunchPoint(): HTMLElement = js.native
+  def getLaunchPoint(): HTMLElement
   
   /** Returns the object that represents open behaivor defined for the callout during its creation. */
-  def getOpenOptions(): CalloutOpenOptions = js.native
+  def getOpenOptions(): CalloutOpenOptions
   
   /** Returns the position algorithm function defined for the callout during its creation. */
-  def getPositionAlgorithm(): js.Any = js.native
+  def getPositionAlgorithm(): js.Any
   
   /** Returns the title of the callout. */
-  def getTitle(): String = js.native
+  def getTitle(): String
   
   /** Specifies wherever callout is in "Closed" state */
-  def isClosed(): Boolean = js.native
+  def isClosed(): Boolean
   
   /** Specifies wherever callout is in "Closing" state */
-  def isClosing(): Boolean = js.native
+  def isClosing(): Boolean
   
   /** Specifies wherever callout is in "Opened" state */
-  def isOpen(): Boolean = js.native
+  def isOpen(): Boolean
   
   /** Specifies wherever callout is in "Opened" or "Opening" state */
-  def isOpenOrOpening(): Boolean = js.native
+  def isOpenOrOpening(): Boolean
   
   /** Specifies wherever callout is in "Opening" state */
-  def isOpening(): Boolean = js.native
+  def isOpening(): Boolean
   
   /** Display the callout. Animation can be used only for IE9+ */
-  def open(useAnimation: Boolean): Unit = js.native
+  def open(useAnimation: Boolean): Unit
   
   /** Re-renders the actions menu. Call after the actions menu is changed. */
-  def refreshActions(): Unit = js.native
+  def refreshActions(): Unit
   
   /** Sets options for the callout. Not all options can be changed for the callout after its creation. */
-  def set(options: CalloutOptions): js.Any = js.native
+  def set(options: CalloutOptions): js.Any
   
   /** Display if hidden, hide if shown. */
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object Callout {
   

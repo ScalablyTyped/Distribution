@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,593 +15,987 @@ sealed trait AppBarIcon extends StObject
 object AppBarIcon extends StObject {
   
   @js.native
-  sealed trait accept extends AppBarIcon
+  sealed trait accept
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait accounts extends AppBarIcon
+  sealed trait accounts
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait add extends AppBarIcon
+  sealed trait add
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait addfriend extends AppBarIcon
+  sealed trait addfriend
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait admin extends AppBarIcon
+  sealed trait admin
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait aligncenter extends AppBarIcon
+  sealed trait aligncenter
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait alignleft extends AppBarIcon
+  sealed trait alignleft
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait alignright extends AppBarIcon
+  sealed trait alignright
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait allapps extends AppBarIcon
+  sealed trait allapps
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait attach extends AppBarIcon
+  sealed trait attach
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait attachcamera extends AppBarIcon
+  sealed trait attachcamera
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait audio extends AppBarIcon
+  sealed trait audio
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait back extends AppBarIcon
+  sealed trait back
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait backtowindow extends AppBarIcon
+  sealed trait backtowindow
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait blockcontact extends AppBarIcon
+  sealed trait blockcontact
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait bold extends AppBarIcon
+  sealed trait bold
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait bookmarks extends AppBarIcon
+  sealed trait bookmarks
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait browsephotos extends AppBarIcon
+  sealed trait browsephotos
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait bullets extends AppBarIcon
+  sealed trait bullets
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait calculator extends AppBarIcon
+  sealed trait calculator
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait calendar extends AppBarIcon
+  sealed trait calendar
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait calendarday extends AppBarIcon
+  sealed trait calendarday
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait calendarreply extends AppBarIcon
+  sealed trait calendarreply
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait calendarweek extends AppBarIcon
+  sealed trait calendarweek
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait camera extends AppBarIcon
+  sealed trait camera
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait cancel extends AppBarIcon
+  sealed trait cancel
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait caption extends AppBarIcon
+  sealed trait caption
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait cc extends AppBarIcon
+  sealed trait cc
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait cellphone extends AppBarIcon
+  sealed trait cellphone
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait characters extends AppBarIcon
+  sealed trait characters
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait clear extends AppBarIcon
+  sealed trait clear
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait clearselection extends AppBarIcon
+  sealed trait clearselection
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait clock extends AppBarIcon
+  sealed trait clock
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait closepane extends AppBarIcon
+  sealed trait closepane
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait comment extends AppBarIcon
+  sealed trait comment
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait contact extends AppBarIcon
+  sealed trait contact
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait contact2 extends AppBarIcon
+  sealed trait contact2
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait contactinfo extends AppBarIcon
+  sealed trait contactinfo
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait contactpresence extends AppBarIcon
+  sealed trait contactpresence
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait copy extends AppBarIcon
+  sealed trait copy
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait crop extends AppBarIcon
+  sealed trait crop
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait cut extends AppBarIcon
+  sealed trait cut
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait delete extends AppBarIcon
+  sealed trait delete
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait directions extends AppBarIcon
+  sealed trait directions
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait disableupdates extends AppBarIcon
+  sealed trait disableupdates
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait disconnectdrive extends AppBarIcon
+  sealed trait disconnectdrive
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait dislike extends AppBarIcon
+  sealed trait dislike
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait dockbottom extends AppBarIcon
+  sealed trait dockbottom
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait dockleft extends AppBarIcon
+  sealed trait dockleft
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait dockright extends AppBarIcon
+  sealed trait dockright
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait document extends AppBarIcon
+  sealed trait document
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait download extends AppBarIcon
+  sealed trait download
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait edit extends AppBarIcon
+  sealed trait edit
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait emoji extends AppBarIcon
+  sealed trait emoji
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait emoji2 extends AppBarIcon
+  sealed trait emoji2
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait favorite extends AppBarIcon
+  sealed trait favorite
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait filter extends AppBarIcon
+  sealed trait filter
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait find extends AppBarIcon
+  sealed trait find
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait flag extends AppBarIcon
+  sealed trait flag
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait folder extends AppBarIcon
+  sealed trait folder
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait font extends AppBarIcon
+  sealed trait font
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait fontcolor extends AppBarIcon
+  sealed trait fontcolor
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait fontdecrease extends AppBarIcon
+  sealed trait fontdecrease
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait fontincrease extends AppBarIcon
+  sealed trait fontincrease
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait fontsize extends AppBarIcon
+  sealed trait fontsize
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait forward extends AppBarIcon
+  sealed trait forward
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait fourbars extends AppBarIcon
+  sealed trait fourbars
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait fullscreen extends AppBarIcon
+  sealed trait fullscreen
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait globe extends AppBarIcon
+  sealed trait globe
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait go extends AppBarIcon
+  sealed trait go
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait gotostart extends AppBarIcon
+  sealed trait gotostart
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait gototoday extends AppBarIcon
+  sealed trait gototoday
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait hamburger extends AppBarIcon
+  sealed trait hamburger
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait hangup extends AppBarIcon
+  sealed trait hangup
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait help extends AppBarIcon
+  sealed trait help
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait hidebcc extends AppBarIcon
+  sealed trait hidebcc
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait highlight extends AppBarIcon
+  sealed trait highlight
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait home extends AppBarIcon
+  sealed trait home
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait `import` extends AppBarIcon
+  sealed trait `import`
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait importall extends AppBarIcon
+  sealed trait importall
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait important extends AppBarIcon
+  sealed trait important
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait italic extends AppBarIcon
+  sealed trait italic
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait keyboard extends AppBarIcon
+  sealed trait keyboard
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait leavechat extends AppBarIcon
+  sealed trait leavechat
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait left extends AppBarIcon
+  sealed trait left
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait library extends AppBarIcon
+  sealed trait library
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait like extends AppBarIcon
+  sealed trait like
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait likedislike extends AppBarIcon
+  sealed trait likedislike
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait link extends AppBarIcon
+  sealed trait link
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait list extends AppBarIcon
+  sealed trait list
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mail extends AppBarIcon
+  sealed trait mail
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mail2 extends AppBarIcon
+  sealed trait mail2
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mailforward extends AppBarIcon
+  sealed trait mailforward
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mailreply extends AppBarIcon
+  sealed trait mailreply
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mailreplyall extends AppBarIcon
+  sealed trait mailreplyall
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait manage extends AppBarIcon
+  sealed trait manage
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait map extends AppBarIcon
+  sealed trait map
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mapdrive extends AppBarIcon
+  sealed trait mapdrive
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mappin extends AppBarIcon
+  sealed trait mappin
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait memo extends AppBarIcon
+  sealed trait memo
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait message extends AppBarIcon
+  sealed trait message
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait microphone extends AppBarIcon
+  sealed trait microphone
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait more extends AppBarIcon
+  sealed trait more
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait movetofolder extends AppBarIcon
+  sealed trait movetofolder
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait musicinfo extends AppBarIcon
+  sealed trait musicinfo
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait mute extends AppBarIcon
+  sealed trait mute
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait newfolder extends AppBarIcon
+  sealed trait newfolder
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait newwindow extends AppBarIcon
+  sealed trait newwindow
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait next extends AppBarIcon
+  sealed trait next
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait onebar extends AppBarIcon
+  sealed trait onebar
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait openfile extends AppBarIcon
+  sealed trait openfile
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait openlocal extends AppBarIcon
+  sealed trait openlocal
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait openpane extends AppBarIcon
+  sealed trait openpane
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait openwith extends AppBarIcon
+  sealed trait openwith
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait orientation extends AppBarIcon
+  sealed trait orientation
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait otheruser extends AppBarIcon
+  sealed trait otheruser
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait outlinestar extends AppBarIcon
+  sealed trait outlinestar
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait page extends AppBarIcon
+  sealed trait page
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait page2 extends AppBarIcon
+  sealed trait page2
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait paste extends AppBarIcon
+  sealed trait paste
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait pause extends AppBarIcon
+  sealed trait pause
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait people extends AppBarIcon
+  sealed trait people
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait permissions extends AppBarIcon
+  sealed trait permissions
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait phone extends AppBarIcon
+  sealed trait phone
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait phonebook extends AppBarIcon
+  sealed trait phonebook
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait pictures extends AppBarIcon
+  sealed trait pictures
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait pin extends AppBarIcon
+  sealed trait pin
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait placeholder extends AppBarIcon
+  sealed trait placeholder
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait play extends AppBarIcon
+  sealed trait play
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait postupdate extends AppBarIcon
+  sealed trait postupdate
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait preview extends AppBarIcon
+  sealed trait preview
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait previewlink extends AppBarIcon
+  sealed trait previewlink
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait previous extends AppBarIcon
+  sealed trait previous
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait priority extends AppBarIcon
+  sealed trait priority
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait protecteddocument extends AppBarIcon
+  sealed trait protecteddocument
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait read extends AppBarIcon
+  sealed trait read
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait redo extends AppBarIcon
+  sealed trait redo
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait refresh extends AppBarIcon
+  sealed trait refresh
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait remote extends AppBarIcon
+  sealed trait remote
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait remove extends AppBarIcon
+  sealed trait remove
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait rename extends AppBarIcon
+  sealed trait rename
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait repair extends AppBarIcon
+  sealed trait repair
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait repeatall extends AppBarIcon
+  sealed trait repeatall
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait repeatone extends AppBarIcon
+  sealed trait repeatone
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait reporthacked extends AppBarIcon
+  sealed trait reporthacked
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait reshare extends AppBarIcon
+  sealed trait reshare
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait right extends AppBarIcon
+  sealed trait right
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait rotate extends AppBarIcon
+  sealed trait rotate
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait rotatecamera extends AppBarIcon
+  sealed trait rotatecamera
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait save extends AppBarIcon
+  sealed trait save
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait savelocal extends AppBarIcon
+  sealed trait savelocal
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait scan extends AppBarIcon
+  sealed trait scan
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait selectall extends AppBarIcon
+  sealed trait selectall
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait send extends AppBarIcon
+  sealed trait send
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait setlockscreen extends AppBarIcon
+  sealed trait setlockscreen
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait settile extends AppBarIcon
+  sealed trait settile
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait settings extends AppBarIcon
+  sealed trait settings
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait shop extends AppBarIcon
+  sealed trait shop
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait showbcc extends AppBarIcon
+  sealed trait showbcc
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait showresults extends AppBarIcon
+  sealed trait showresults
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait shuffle extends AppBarIcon
+  sealed trait shuffle
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait slideshow extends AppBarIcon
+  sealed trait slideshow
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait solidstar extends AppBarIcon
+  sealed trait solidstar
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait sort extends AppBarIcon
+  sealed trait sort
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait stop extends AppBarIcon
+  sealed trait stop
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait stopslideshow extends AppBarIcon
+  sealed trait stopslideshow
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait street extends AppBarIcon
+  sealed trait street
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait switch extends AppBarIcon
+  sealed trait switch
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait switchapps extends AppBarIcon
+  sealed trait switchapps
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait sync extends AppBarIcon
+  sealed trait sync
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait syncfolder extends AppBarIcon
+  sealed trait syncfolder
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait tag extends AppBarIcon
+  sealed trait tag
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait target extends AppBarIcon
+  sealed trait target
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait threebars extends AppBarIcon
+  sealed trait threebars
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait touchpointer extends AppBarIcon
+  sealed trait touchpointer
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait trim extends AppBarIcon
+  sealed trait trim
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait twobars extends AppBarIcon
+  sealed trait twobars
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait twopage extends AppBarIcon
+  sealed trait twopage
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait underline extends AppBarIcon
+  sealed trait underline
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait undo extends AppBarIcon
+  sealed trait undo
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait unfavorite extends AppBarIcon
+  sealed trait unfavorite
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait unpin extends AppBarIcon
+  sealed trait unpin
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait unsyncfolder extends AppBarIcon
+  sealed trait unsyncfolder
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait up extends AppBarIcon
+  sealed trait up
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait upload extends AppBarIcon
+  sealed trait upload
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait uploadskydrive extends AppBarIcon
+  sealed trait uploadskydrive
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait video extends AppBarIcon
+  sealed trait video
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait videochat extends AppBarIcon
+  sealed trait videochat
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait view extends AppBarIcon
+  sealed trait view
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait viewall extends AppBarIcon
+  sealed trait viewall
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait volume extends AppBarIcon
+  sealed trait volume
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait webcam extends AppBarIcon
+  sealed trait webcam
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait world extends AppBarIcon
+  sealed trait world
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait zerobars extends AppBarIcon
+  sealed trait zerobars
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait zoom extends AppBarIcon
+  sealed trait zoom
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait zoomin extends AppBarIcon
+  sealed trait zoomin
+    extends StObject
+       with AppBarIcon
   
   @js.native
-  sealed trait zoomout extends AppBarIcon
+  sealed trait zoomout
+    extends StObject
+       with AppBarIcon
 }

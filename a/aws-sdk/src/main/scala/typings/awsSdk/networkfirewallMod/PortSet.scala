@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortSet extends StObject {
   
   /**
     * The set of port ranges. 
     */
-  var Definition: js.UndefOr[VariableDefinitionList] = js.native
+  var Definition: js.UndefOr[VariableDefinitionList] = js.undefined
 }
 object PortSet {
   

@@ -3,31 +3,31 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityRefWithVote extends IdentityRef {
+trait IdentityRefWithVote
+  extends StObject
+     with IdentityRef {
   
   /**
     * Indicates if this is a required reviewer for this pull request. <br /> Branches can have policies that require particular reviewers are required for pull requests.
     */
-  var isRequired: Boolean = js.native
+  var isRequired: Boolean
   
   /**
     * URL to retrieve information about this identity
     */
-  var reviewerUrl: String = js.native
+  var reviewerUrl: String
   
   /**
     * Vote on a pull request:<br /> 10 - approved 5 - approved with suggestions 0 - no vote -5 - waiting for author -10 - rejected
     */
-  var vote: Double = js.native
+  var vote: Double
   
   /**
     * Groups or teams that that this reviewer contributed to. <br /> Groups and teams can be reviewers on pull requests but can not vote directly.  When a member of the group or team votes, that vote is rolled up into the group or team vote.  VotedFor is a list of such votes.
     */
-  var votedFor: js.Array[IdentityRefWithVote] = js.native
+  var votedFor: js.Array[IdentityRefWithVote]
 }
 object IdentityRefWithVote {
   

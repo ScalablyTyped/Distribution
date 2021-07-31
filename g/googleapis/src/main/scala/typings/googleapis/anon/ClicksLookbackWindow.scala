@@ -2,29 +2,27 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClicksLookbackWindow extends StObject {
   
-  var clicksLookbackWindow: js.UndefOr[Double] = js.native
+  var clicksLookbackWindow: js.UndefOr[Double] = js.undefined
   
-  var impressionsLookbackWindow: js.UndefOr[Double] = js.native
+  var impressionsLookbackWindow: js.UndefOr[Double] = js.undefined
   
-  var includeAttributedIPConversions: js.UndefOr[Boolean] = js.native
+  var includeAttributedIPConversions: js.UndefOr[Boolean] = js.undefined
   
-  var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.native
+  var includeUnattributedCookieConversions: js.UndefOr[Boolean] = js.undefined
   
-  var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.native
+  var includeUnattributedIPConversions: js.UndefOr[Boolean] = js.undefined
   
-  var maximumClickInteractions: js.UndefOr[Double] = js.native
+  var maximumClickInteractions: js.UndefOr[Double] = js.undefined
   
-  var maximumImpressionInteractions: js.UndefOr[Double] = js.native
+  var maximumImpressionInteractions: js.UndefOr[Double] = js.undefined
   
-  var maximumInteractionGap: js.UndefOr[Double] = js.native
+  var maximumInteractionGap: js.UndefOr[Double] = js.undefined
   
-  var pivotOnInteractionPath: js.UndefOr[Boolean] = js.native
+  var pivotOnInteractionPath: js.UndefOr[Boolean] = js.undefined
 }
 object ClicksLookbackWindow {
   

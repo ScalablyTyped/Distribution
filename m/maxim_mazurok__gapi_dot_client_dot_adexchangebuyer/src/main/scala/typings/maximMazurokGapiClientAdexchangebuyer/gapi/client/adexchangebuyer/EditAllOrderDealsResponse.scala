@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditAllOrderDealsResponse extends StObject {
   
   /** List of all deals in the proposal after edit. */
-  var deals: js.UndefOr[js.Array[MarketplaceDeal]] = js.native
+  var deals: js.UndefOr[js.Array[MarketplaceDeal]] = js.undefined
   
   /** The latest revision number after the update has been applied. */
-  var orderRevisionNumber: js.UndefOr[String] = js.native
+  var orderRevisionNumber: js.UndefOr[String] = js.undefined
 }
 object EditAllOrderDealsResponse {
   

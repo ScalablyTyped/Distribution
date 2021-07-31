@@ -6,7 +6,6 @@ import typings.firefoxWebextBrowser.browser.userScripts.RegisteredUserScript
 import typings.firefoxWebextBrowser.browser.userScripts.UserScriptOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,6 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Not allowed in: Devtools pages
   */
 object userScripts {
+  
+  @JSGlobal("browser.userScripts")
+  @js.native
+  val ^ : js.Any = js.native
   
   /* userScripts events */
   /**
@@ -30,7 +33,6 @@ object userScripts {
   /**
     * Register a user script programmatically given its `userScripts.UserScriptOptions`, and resolves to a `userScripts.RegisteredUserScript` instance
     */
-  @JSGlobal("browser.userScripts.register")
-  @js.native
-  def register(userScriptOptions: UserScriptOptions): js.Promise[RegisteredUserScript] = js.native
+  @scala.inline
+  def register(userScriptOptions: UserScriptOptions): js.Promise[RegisteredUserScript] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(userScriptOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RegisteredUserScript]]
 }

@@ -4,16 +4,16 @@ import typings.std.Partial
 import typings.xstate.typesMod.ActionTypes.Assign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AssignAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait AssignAction[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TEvent] {
   
-  var assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent]) = js.native
+  var assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent])
   
   @JSName("type")
-  var type_AssignAction: Assign = js.native
+  var type_AssignAction: Assign
 }
 object AssignAction {
   
@@ -25,7 +25,7 @@ object AssignAction {
   }
   
   @scala.inline
-  implicit class AssignActionMutableBuilder[Self <: AssignAction[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (AssignAction[TContext, TEvent])) extends AnyVal {
+  implicit class AssignActionMutableBuilder[Self <: AssignAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AssignAction[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setAssignment(value: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent])): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])

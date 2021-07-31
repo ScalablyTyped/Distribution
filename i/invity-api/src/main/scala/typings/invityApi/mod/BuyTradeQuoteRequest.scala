@@ -2,30 +2,28 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuyTradeQuoteRequest extends StObject {
   
   // BTC
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   // 1000 - will pay fiat amount
-  var cryptoStringAmount: js.UndefOr[String] = js.native
+  var cryptoStringAmount: js.UndefOr[String] = js.undefined
   
   // 0.3 - requested amount in crypto currency
-  var fiatCurrency: String = js.native
+  var fiatCurrency: String
   
   // true for cryptoAmount, false for fiatAmount
-  var fiatStringAmount: js.UndefOr[String] = js.native
+  var fiatStringAmount: js.UndefOr[String] = js.undefined
   
-  var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.native
+  var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.undefined
   
   // USD
-  var receiveCurrency: String = js.native
+  var receiveCurrency: String
   
-  var wantCrypto: Boolean = js.native
+  var wantCrypto: Boolean
 }
 object BuyTradeQuoteRequest {
   

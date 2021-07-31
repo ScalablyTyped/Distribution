@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsLastRoute extends Object {
+trait DirectionsLastRoute
+  extends StObject
+     with Object {
   
   /**
     * Array of graphics representing the point barriers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var barriers: js.Array[Graphic] = js.native
+  var barriers: js.Array[Graphic]
   
   /**
     * An array of messages serialized to JSON.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var messages: js.Array[DirectionsLastRouteMessages] = js.native
+  var messages: js.Array[DirectionsLastRouteMessages]
   
   /**
     * Array of graphics representing the polygon barriers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var polygonBarriers: js.Array[Graphic] = js.native
+  var polygonBarriers: js.Array[Graphic]
   
   /**
     * Array of graphics representing the polygon barriers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var polylineBarriers: js.Array[Graphic] = js.native
+  var polylineBarriers: js.Array[Graphic]
   
   /**
     * An array of [RouteResults](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var routeResults: RouteResult = js.native
+  var routeResults: RouteResult
 }
 object DirectionsLastRoute {
   

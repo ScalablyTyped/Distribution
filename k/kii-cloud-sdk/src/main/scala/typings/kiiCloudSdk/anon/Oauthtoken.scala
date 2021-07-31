@@ -3,15 +3,15 @@ package typings.kiiCloudSdk.anon
 import typings.kiiCloudSdk.KiiCloud.KiiSocialConnectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Oauthtoken extends KiiSocialConnectOptions {
+trait Oauthtoken
+  extends StObject
+     with KiiSocialConnectOptions {
   
-  var oauth_token: String = js.native
+  var oauth_token: String
   
-  var oauth_token_secret: String = js.native
+  var oauth_token_secret: String
 }
 object Oauthtoken {
   

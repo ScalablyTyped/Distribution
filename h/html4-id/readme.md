@@ -12,7 +12,7 @@ Create a valid HTML4 ID from an input value.
 | Keywords           | html, id, html4, css |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 532295 |
+| # downloads        | 658839 |
 | # stars            | 0 |
 
 ## Links

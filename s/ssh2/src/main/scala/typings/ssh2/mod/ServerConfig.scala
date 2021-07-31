@@ -4,35 +4,33 @@ import typings.node.Buffer
 import typings.ssh2Streams.mod.Algorithms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerConfig extends StObject {
   
   /** Explicit overrides for the default transport layer algorithms used for the connection. */
-  var algorithms: js.UndefOr[Algorithms] = js.native
+  var algorithms: js.UndefOr[Algorithms] = js.undefined
   
   /** A message that is sent to clients once, right before authentication begins. */
-  var banner: js.UndefOr[String] = js.native
+  var banner: js.UndefOr[String] = js.undefined
   
   /** A function that receives a single string argument to get detailed (local) debug information. */
-  var debug: js.UndefOr[js.Function1[/* information */ String, _]] = js.native
+  var debug: js.UndefOr[js.Function1[/* information */ String, js.Any]] = js.undefined
   
   /** A message that is sent to clients immediately upon connection, before handshaking begins. */
-  var greeting: js.UndefOr[String] = js.native
+  var greeting: js.UndefOr[String] = js.undefined
   
   /** This is the highWaterMark to use for the parser stream (default: `32 * 1024`). */
-  var highWaterMark: js.UndefOr[Double] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.undefined
   
   /** An array of host private keys. */
-  var hostKeys: js.Array[Buffer | String | EncryptedPrivateKey] = js.native
+  var hostKeys: js.Array[Buffer | String | EncryptedPrivateKey]
   
   /** A custom server software name/version identifier. */
-  var ident: js.UndefOr[String] = js.native
+  var ident: js.UndefOr[String] = js.undefined
   
   /** This is the maximum packet size that will be accepted. It should be 35000 bytes or larger to be compatible with other SSH2 implementations. */
-  var maxPacketSize: js.UndefOr[Double] = js.native
+  var maxPacketSize: js.UndefOr[Double] = js.undefined
 }
 object ServerConfig {
   
@@ -58,7 +56,7 @@ object ServerConfig {
     def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
     @scala.inline
-    def setDebug(value: /* information */ String => _): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)

@@ -3,7 +3,6 @@ package typings.openseadragon.mod
 import typings.openseadragon.anon.DefaultZoomLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Viewport")
@@ -93,31 +92,21 @@ class Viewport protected () extends StObject {
   def imageToViewportCoordinates(position: Point): Point = js.native
   
   def imageToViewportRectangle(imageX: Double): Rect = js.native
-  def imageToViewportRectangle(
-    imageX: Double,
-    imageY: js.UndefOr[scala.Nothing],
-    pixelWidth: js.UndefOr[scala.Nothing],
-    pixelHeight: Double
-  ): Rect = js.native
-  def imageToViewportRectangle(imageX: Double, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double): Rect = js.native
-  def imageToViewportRectangle(imageX: Double, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double): Rect = js.native
-  def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Double, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: Double, pixelWidth: Unit, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: Unit, pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: Unit, pixelWidth: Double, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Double, imageY: Unit, pixelWidth: Unit, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect): Rect = js.native
-  def imageToViewportRectangle(
-    imageX: Rect,
-    imageY: js.UndefOr[scala.Nothing],
-    pixelWidth: js.UndefOr[scala.Nothing],
-    pixelHeight: Double
-  ): Rect = js.native
-  def imageToViewportRectangle(imageX: Rect, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double): Rect = js.native
-  def imageToViewportRectangle(imageX: Rect, imageY: js.UndefOr[scala.Nothing], pixelWidth: Double, pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect, imageY: Double): Rect = js.native
-  def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: js.UndefOr[scala.Nothing], pixelHeight: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: Double): Rect = js.native
   def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: Double, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: Double, pixelWidth: Unit, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: Unit, pixelWidth: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: Unit, pixelWidth: Double, pixelHeight: Double): Rect = js.native
+  def imageToViewportRectangle(imageX: Rect, imageY: Unit, pixelWidth: Unit, pixelHeight: Double): Rect = js.native
   
   def imageToViewportZoom(imageZoom: Double): Double = js.native
   
@@ -180,12 +169,12 @@ class Viewport protected () extends StObject {
   def windowToViewportCoordinates(pixel: Point): Point = js.native
   
   def zoomBy(factor: Double): Viewport = js.native
-  def zoomBy(factor: Double, refPoint: js.UndefOr[scala.Nothing], immediately: Boolean): Viewport = js.native
+  def zoomBy(factor: Double, refPoint: Unit, immediately: Boolean): Viewport = js.native
   def zoomBy(factor: Double, refPoint: Point): Viewport = js.native
   def zoomBy(factor: Double, refPoint: Point, immediately: Boolean): Viewport = js.native
   
   def zoomTo(factor: Double): Viewport = js.native
-  def zoomTo(factor: Double, refPoint: js.UndefOr[scala.Nothing], immediately: Boolean): Viewport = js.native
+  def zoomTo(factor: Double, refPoint: Unit, immediately: Boolean): Viewport = js.native
   def zoomTo(factor: Double, refPoint: Point): Viewport = js.native
   def zoomTo(factor: Double, refPoint: Point, immediately: Boolean): Viewport = js.native
 }

@@ -2,17 +2,17 @@ package typings.extjs.Ext.layout.component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFieldSet extends IBody {
+trait IFieldSet
+  extends StObject
+     with IBody {
   
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
     * @param ownerContext Object
     */
   @JSName("beginLayoutCycle")
-  var beginLayoutCycle_IFieldSet: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayoutCycle_IFieldSet: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IFieldSet {
   

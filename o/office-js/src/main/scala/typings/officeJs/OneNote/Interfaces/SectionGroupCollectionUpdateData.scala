@@ -2,14 +2,12 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the SectionGroupCollection object, for use in "sectionGroupCollection.set({ ... })". */
-@js.native
 trait SectionGroupCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[SectionGroupData]] = js.native
+  var items: js.UndefOr[js.Array[SectionGroupData]] = js.undefined
 }
 object SectionGroupCollectionUpdateData {
   

@@ -2,86 +2,84 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /**
     * The cluster's backup policy.
     */
-  var BackupPolicy: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupPolicy] = js.native
+  var BackupPolicy: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupPolicy] = js.undefined
   
   /**
     * A policy that defines how the service retains backups.
     */
-  var BackupRetentionPolicy: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupRetentionPolicy] = js.native
+  var BackupRetentionPolicy: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.BackupRetentionPolicy] = js.undefined
   
   /**
     * Contains one or more certificates or a certificate signing request (CSR).
     */
-  var Certificates: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Certificates] = js.native
+  var Certificates: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Certificates] = js.undefined
   
   /**
     * The cluster's identifier (ID).
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.ClusterId] = js.undefined
   
   /**
     * The date and time when the cluster was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of HSM that the cluster contains.
     */
-  var HsmType: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.HsmType] = js.native
+  var HsmType: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.HsmType] = js.undefined
   
   /**
     * Contains information about the HSMs in the cluster.
     */
-  var Hsms: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Hsms] = js.native
+  var Hsms: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Hsms] = js.undefined
   
   /**
     * The default password for the cluster's Pre-Crypto Officer (PRECO) user.
     */
-  var PreCoPassword: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.PreCoPassword] = js.native
+  var PreCoPassword: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.PreCoPassword] = js.undefined
   
   /**
     * The identifier (ID) of the cluster's security group.
     */
-  var SecurityGroup: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.SecurityGroup] = js.native
+  var SecurityGroup: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.SecurityGroup] = js.undefined
   
   /**
     * The identifier (ID) of the backup used to create the cluster. This value exists only when the cluster was created from a backup.
     */
-  var SourceBackupId: js.UndefOr[BackupId] = js.native
+  var SourceBackupId: js.UndefOr[BackupId] = js.undefined
   
   /**
     * The cluster's state.
     */
-  var State: js.UndefOr[ClusterState] = js.native
+  var State: js.UndefOr[ClusterState] = js.undefined
   
   /**
     * A description of the cluster's state.
     */
-  var StateMessage: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.StateMessage] = js.native
+  var StateMessage: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.StateMessage] = js.undefined
   
   /**
     * A map from availability zone to the cluster’s subnet in that availability zone.
     */
-  var SubnetMapping: js.UndefOr[ExternalSubnetMapping] = js.native
+  var SubnetMapping: js.UndefOr[ExternalSubnetMapping] = js.undefined
   
   /**
     * The list of tags for the cluster.
     */
-  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.native
+  var TagList: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.TagList] = js.undefined
   
   /**
     * The identifier (ID) of the virtual private cloud (VPC) that contains the cluster.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.VpcId] = js.undefined
 }
 object Cluster {
   

@@ -6,12 +6,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsDeviceInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of DeviceInformation objects. */
 @js.native
-trait DeviceInformationCollection extends Array[DeviceInformation] {
+trait DeviceInformationCollection
+  extends StObject
+     with Array[DeviceInformation] {
   
   /**
     * Gets an object that can iterate through the enumerated DeviceInformation objects, starting with the first.

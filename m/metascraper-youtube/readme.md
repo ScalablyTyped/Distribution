@@ -4,19 +4,21 @@
 Typings are for version 5.14
 
 ## Library description:
-metascraper integration with YouTube
+Metascraper integration with YouTube
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metascraper-youtube |
 | Keywords           | metascraper, video, youtube |
-| # releases         | 93 |
+| # releases         | 110 |
 | # dependents       | 5 |
-| # downloads        | 85543 |
+| # downloads        | 76754 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-youtube)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-youtube)
     
 

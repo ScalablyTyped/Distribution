@@ -3,13 +3,14 @@ package typings.reactTether
 import typings.reactTether.mod.ReactTether._ContraintsTo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactTetherStrings {
   
   @js.native
-  sealed trait scrollParent extends _ContraintsTo
+  sealed trait scrollParent
+    extends StObject
+       with _ContraintsTo
   @scala.inline
   def scrollParent: scrollParent = "scrollParent".asInstanceOf[scrollParent]
   
@@ -19,7 +20,9 @@ object reactTetherStrings {
   def together: together = "together".asInstanceOf[together]
   
   @js.native
-  sealed trait window extends _ContraintsTo
+  sealed trait window
+    extends StObject
+       with _ContraintsTo
   @scala.inline
   def window: window = "window".asInstanceOf[window]
 }

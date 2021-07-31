@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Platformtypes")
@@ -31,7 +30,7 @@ class ResourcePlatformtypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPlatformType] = js.native
   def get(callback: BodyResponseCallback[SchemaPlatformType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlatformType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlatformType] = js.native
   def get(params: ParamsResourcePlatformtypesGet): GaxiosPromise[SchemaPlatformType] = js.native
   def get(params: ParamsResourcePlatformtypesGet, callback: BodyResponseCallback[SchemaPlatformType]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourcePlatformtypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlatformTypesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
   def list(params: ParamsResourcePlatformtypesList): GaxiosPromise[SchemaPlatformTypesListResponse] = js.native
   def list(
     params: ParamsResourcePlatformtypesList,

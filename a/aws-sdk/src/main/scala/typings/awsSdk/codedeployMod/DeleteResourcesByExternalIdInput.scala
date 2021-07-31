@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourcesByExternalIdInput extends StObject {
   
   /**
     * The unique ID of an external resource (for example, a CloudFormation stack ID) that is linked to one or more CodeDeploy resources.
     */
-  var externalId: js.UndefOr[ExternalId] = js.native
+  var externalId: js.UndefOr[ExternalId] = js.undefined
 }
 object DeleteResourcesByExternalIdInput {
   

@@ -2,14 +2,12 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response when clearing a range of values selected with DataFilters in a
   * spreadsheet.
   */
-@js.native
 trait SchemaBatchClearValuesByDataFilterResponse extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaBatchClearValuesByDataFilterResponse extends StObject {
     * will be the actual ranges  that were cleared, bounded to the sheet&#39;s
     * limits.)
     */
-  var clearedRanges: js.UndefOr[js.Array[String]] = js.native
+  var clearedRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The spreadsheet the updates were applied to.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SchemaBatchClearValuesByDataFilterResponse {
   

@@ -3,7 +3,6 @@ package typings.durandal
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,8 @@ object historyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("plugins/history", "activate")
-  @js.native
-  def activate(options: DurandalHistoryOptions): Boolean = js.native
+  @scala.inline
+  def activate(options: DurandalHistoryOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("activate")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("plugins/history", "active")
   @js.native
@@ -27,24 +25,19 @@ object historyMod {
   @scala.inline
   def active_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("active")(x.asInstanceOf[js.Any])
   
-  @JSImport("plugins/history", "checkUrl")
-  @js.native
-  def checkUrl(): Boolean = js.native
+  @scala.inline
+  def checkUrl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkUrl")().asInstanceOf[Boolean]
   
-  @JSImport("plugins/history", "deactivate")
-  @js.native
-  def deactivate(): Unit = js.native
+  @scala.inline
+  def deactivate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivate")().asInstanceOf[Unit]
   
-  @JSImport("plugins/history", "getFragment")
-  @js.native
-  def getFragment(fragment: String, forcePushState: Boolean): String = js.native
+  @scala.inline
+  def getFragment(fragment: String, forcePushState: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFragment")(fragment.asInstanceOf[js.Any], forcePushState.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("plugins/history", "getHash")
-  @js.native
-  def getHash(): String = js.native
-  @JSImport("plugins/history", "getHash")
-  @js.native
-  def getHash(window: Window): String = js.native
+  @scala.inline
+  def getHash(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHash")().asInstanceOf[String]
+  @scala.inline
+  def getHash(window: Window): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHash")(window.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("plugins/history", "interval")
   @js.native
@@ -52,21 +45,16 @@ object historyMod {
   @scala.inline
   def interval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interval")(x.asInstanceOf[js.Any])
   
-  @JSImport("plugins/history", "loadUrl")
-  @js.native
-  def loadUrl(): Boolean = js.native
+  @scala.inline
+  def loadUrl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loadUrl")().asInstanceOf[Boolean]
   
-  @JSImport("plugins/history", "navigate")
-  @js.native
-  def navigate(fragment: String): Boolean = js.native
-  @JSImport("plugins/history", "navigate")
-  @js.native
-  def navigate(fragment: String, options: DurandalNavigationOptions): Boolean = js.native
-  @JSImport("plugins/history", "navigate")
-  @js.native
-  def navigate(fragment: String, trigger: Boolean): Boolean = js.native
+  @scala.inline
+  def navigate(fragment: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(fragment.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def navigate(fragment: String, options: DurandalNavigationOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(fragment.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def navigate(fragment: String, trigger: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(fragment.asInstanceOf[js.Any], trigger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("plugins/history", "navigateBack")
-  @js.native
-  def navigateBack(): Unit = js.native
+  @scala.inline
+  def navigateBack(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")().asInstanceOf[Unit]
 }

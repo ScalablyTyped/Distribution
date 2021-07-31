@@ -11,10 +11,8 @@ import typings.node.httpMod.ServerResponse
 import typings.node.urlMod.Url
 import typings.std.Error
 import typings.std.RegExp
-import typings.trouter.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +22,14 @@ object mod {
     *
     * @see https://github.com/lukeed/polka
     */
+  @scala.inline
+  def apply(): Polka = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Polka]
+  @scala.inline
+  def apply(opts: Options): Polka = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Polka]
+  
   @JSImport("polka", JSImport.Namespace)
   @js.native
-  def apply(): Polka = js.native
-  @JSImport("polka", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Polka = js.native
+  val ^ : js.Any = js.native
   
   /**
     * A middleware function
@@ -44,7 +44,6 @@ object mod {
   /**
     * Polka options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -52,17 +51,17 @@ object mod {
       */
     var onError: js.UndefOr[
         js.Function4[/* err */ Error, /* req */ Request, /* res */ ServerResponse, /* next */ Next, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A handler when no route definitions were matched.
       */
-    var onNoMatch: js.UndefOr[js.Function2[/* req */ Request, /* res */ ServerResponse, Unit]] = js.native
+    var onNoMatch: js.UndefOr[js.Function2[/* req */ Request, /* res */ ServerResponse, Unit]] = js.undefined
     
     /**
       * The server instance to use when `polka.listen()` is called.
       */
-    var server: js.UndefOr[Server] = js.native
+    var server: js.UndefOr[Server] = js.undefined
   }
   object Options {
     
@@ -100,7 +99,7 @@ object mod {
     */
   @js.native
   trait Polka
-    extends ^[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] {
+    extends typings.trouter.mod.^[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] {
     
     /**
       * The main Polka `IncomingMessage` handler.
@@ -118,9 +117,9 @@ object mod {
       * All arguments are passed to server.listen directly with no changes.
       */
     def listen(args: js.Any*): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String): this.type = js.native
     def listen(port: Double): this.type = js.native
     def listen(port: Double, hostname: String): this.type = js.native
+    def listen(port: Unit, hostname: String): this.type = js.native
     
     /**
       * Parses the `req.url` property of the given request.
@@ -131,18 +130,18 @@ object mod {
       * Attach middleware(s) and/or sub-application(s) to the server.
       * These will execute before your routes' handlers.
       */
-    def use(handlers: (RequestHandler[ParamsDictionary, _, _, Query])*): this.type = js.native
+    def use(handlers: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])*): this.type = js.native
     /**
       * Attach middleware(s) and/or sub-application(s) to the server.
       * These will execute before your routes' handlers.
       */
     def use(
       pattern: String,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<RequestHandler> | Array<Polka> is not an array type */ handlers: js.Array[Polka | (RequestHandler[ParamsDictionary, _, _, Query])]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<RequestHandler> | Array<Polka> is not an array type */ handlers: js.Array[Polka | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])]
     ): this.type = js.native
     def use(
       pattern: RegExp,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<RequestHandler> | Array<Polka> is not an array type */ handlers: js.Array[Polka | (RequestHandler[ParamsDictionary, _, _, Query])]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param handlers because its type Array<RequestHandler> | Array<Polka> is not an array type */ handlers: js.Array[Polka | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])]
     ): this.type = js.native
   }
   

@@ -8,19 +8,21 @@ import typings.reactNativeAnimatable.mod.Animation
 import typings.reactNativeAnimatable.mod.CustomAnimation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type AnimationEvent = js.Function1[/* repeated */ js.Any, Unit]
-  
   @js.native
+  trait AnimationEvent extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
+  
   trait Animations extends StObject {
     
-    var animationIn: String = js.native
+    var animationIn: String
     
-    var animationOut: String = js.native
+    var animationOut: String
   }
   object Animations {
     
@@ -115,5 +117,5 @@ object typesMod {
     def pageSheet: typings.reactNativeModal.reactNativeModalStrings.pageSheet = "pageSheet".asInstanceOf[typings.reactNativeModal.reactNativeModalStrings.pageSheet]
   }
   
-  type SupportedAnimation = Animation | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])
+  type SupportedAnimation = Animation | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])
 }

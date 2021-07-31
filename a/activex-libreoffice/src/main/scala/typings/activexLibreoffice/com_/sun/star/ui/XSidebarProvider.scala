@@ -5,46 +5,46 @@ import typings.activexLibreoffice.com_.sun.star.frame.XFrame
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface of the sidebar
   * @since LibreOffice 5.1
   */
-@js.native
-trait XSidebarProvider extends XInterface {
+trait XSidebarProvider
+  extends StObject
+     with XInterface {
   
-  val Decks: XDecks = js.native
-  
-  /** Get the XFrame owner */
-  val Frame: XFrame = js.native
-  
-  /** Returns the sidebar object */
-  val Sidebar: XSidebar = js.native
-  
-  def getDecks(): XDecks = js.native
+  val Decks: XDecks
   
   /** Get the XFrame owner */
-  def getFrame(): XFrame = js.native
+  val Frame: XFrame
   
   /** Returns the sidebar object */
-  def getSidebar(): XSidebar = js.native
+  val Sidebar: XSidebar
+  
+  def getDecks(): XDecks
+  
+  /** Get the XFrame owner */
+  def getFrame(): XFrame
+  
+  /** Returns the sidebar object */
+  def getSidebar(): XSidebar
   
   /** Is the sidebar visible */
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
   /**
     * Display the sidebar
     * @param bVisible the requested visible state
     */
-  def setVisible(bVisible: Boolean): Unit = js.native
+  def setVisible(bVisible: Boolean): Unit
   
   /**
     * Decks container visibility
     * @param bVisible the requested visible state FALSE collapses the deck container horizontally. Then Only shows the deck TabBar selectorTRUE expands the de
     */
-  def showDecks(bVisible: Boolean): Unit = js.native
+  def showDecks(bVisible: Boolean): Unit
 }
 object XSidebarProvider {
   

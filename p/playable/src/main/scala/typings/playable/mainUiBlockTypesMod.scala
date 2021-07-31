@@ -3,27 +3,25 @@ package typings.playable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainUiBlockTypesMod {
   
-  @js.native
   trait IMainUIBlock extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def disableShowingContent(): Unit = js.native
+    def disableShowingContent(): Unit
     
-    def enableShowingContent(): Unit = js.native
+    def enableShowingContent(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def setShouldAlwaysShow(flag: Boolean): Unit = js.native
+    def setShouldAlwaysShow(flag: Boolean): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IMainUIBlock {
     
@@ -67,10 +65,9 @@ object mainUiBlockTypesMod {
     }
   }
   
-  @js.native
   trait IMainUIBlockAPI extends StObject {
     
-    var setMainUIShouldAlwaysShow: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.native
+    var setMainUIShouldAlwaysShow: js.UndefOr[js.Function1[/* flag */ Boolean, Unit]] = js.undefined
   }
   object IMainUIBlockAPI {
     
@@ -91,10 +88,9 @@ object mainUiBlockTypesMod {
     }
   }
   
-  @js.native
   trait IMainUIBlockViewConfig extends StObject {
     
-    var elements: IMainUIBlockViewElements = js.native
+    var elements: IMainUIBlockViewElements
   }
   object IMainUIBlockViewConfig {
     
@@ -112,14 +108,13 @@ object mainUiBlockTypesMod {
     }
   }
   
-  @js.native
   trait IMainUIBlockViewElements extends StObject {
     
-    var bottomBlock: HTMLElement = js.native
+    var bottomBlock: HTMLElement
     
-    var tooltipContainer: HTMLElement = js.native
+    var tooltipContainer: HTMLElement
     
-    var topBlock: HTMLElement = js.native
+    var topBlock: HTMLElement
   }
   object IMainUIBlockViewElements {
     
@@ -143,14 +138,13 @@ object mainUiBlockTypesMod {
     }
   }
   
-  @js.native
   trait IMainUIBlockViewStyles extends StObject {
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var mainUiBlock: String = js.native
+    var mainUiBlock: String
     
-    var tooltipContainerWrapper: String = js.native
+    var tooltipContainerWrapper: String
   }
   object IMainUIBlockViewStyles {
     

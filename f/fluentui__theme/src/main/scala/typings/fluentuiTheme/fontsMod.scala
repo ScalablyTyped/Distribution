@@ -4,10 +4,13 @@ import typings.fluentuiTheme.ifontstylesMod.IFontStyles
 import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontsMod {
+  
+  @JSImport("@fluentui/theme/lib/fonts", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@fluentui/theme/lib/fonts", "DefaultFontStyles")
   @js.native
@@ -272,14 +275,11 @@ object fontsMod {
     val WestEuropean: /* "Segoe UI Web (West European)" */ String = js.native
   }
   
-  @JSImport("@fluentui/theme/lib/fonts", "createFontStyles")
-  @js.native
-  def createFontStyles(): IFontStyles = js.native
-  @JSImport("@fluentui/theme/lib/fonts", "createFontStyles")
-  @js.native
-  def createFontStyles(localeCode: String): IFontStyles = js.native
+  @scala.inline
+  def createFontStyles(): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")().asInstanceOf[IFontStyles]
+  @scala.inline
+  def createFontStyles(localeCode: String): IFontStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("createFontStyles")(localeCode.asInstanceOf[js.Any]).asInstanceOf[IFontStyles]
   
-  @JSImport("@fluentui/theme/lib/fonts", "registerDefaultFontFaces")
-  @js.native
-  def registerDefaultFontFaces(baseUrl: String): Unit = js.native
+  @scala.inline
+  def registerDefaultFontFaces(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDefaultFontFaces")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

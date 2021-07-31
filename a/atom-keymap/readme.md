@@ -10,9 +10,9 @@ Atom's DOM-aware keymap module
 | ------------------ | :-------------: |
 | Full name          | atom-keymap |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 40822 |
+| # downloads        | 48945 |
 | # stars            | 1 |
 
 ## Links

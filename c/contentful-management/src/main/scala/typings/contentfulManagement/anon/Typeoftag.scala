@@ -8,21 +8,19 @@ import typings.contentfulManagement.tagMod.TagApi
 import typings.contentfulManagement.tagMod.TagProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeoftag extends StObject {
   
-  def default(http: AxiosInstance): TagApi = js.native
+  def default(http: AxiosInstance): TagApi
   
-  def createDeleteTag(http: AxiosInstance): js.Function0[js.Promise[Unit]] = js.native
+  def createDeleteTag(http: AxiosInstance): js.Function0[js.Promise[Unit]]
   
-  def createUpdateTag(http: AxiosInstance): js.Function0[js.Promise[Tag]] = js.native
+  def createUpdateTag(http: AxiosInstance): js.Function0[js.Promise[Tag]]
   
-  def wrapTag(http: AxiosInstance, data: TagProps): Tag = js.native
+  def wrapTag(http: AxiosInstance, data: TagProps): Tag
   
-  def wrapTagCollection(http: AxiosInstance, data: CollectionProp[TagProps]): Collection[Tag, TagProps] = js.native
+  def wrapTagCollection(http: AxiosInstance, data: CollectionProp[TagProps]): Collection[Tag, TagProps]
 }
 object Typeoftag {
   

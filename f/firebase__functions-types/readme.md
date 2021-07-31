@@ -10,9 +10,9 @@ Typings are for version 0.4.0
 | ------------------ | :-------------: |
 | Full name          | @firebase/functions-types |
 | Keywords           | - |
-| # releases         | 1114 |
-| # dependents       | 1 |
-| # downloads        | 29229010 |
+| # releases         | 1291 |
+| # dependents       | 2 |
+| # downloads        | 33402506 |
 | # stars            | 0 |
 
 ## Links

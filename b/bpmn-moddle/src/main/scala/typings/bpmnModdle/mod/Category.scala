@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Category extends BaseElement {
+trait Category
+  extends StObject
+     with BaseElement {
   
-  var categoryValue: CategoryValue = js.native
+  var categoryValue: CategoryValue
   
-  var name: String = js.native
+  var name: String
 }
 object Category {
   

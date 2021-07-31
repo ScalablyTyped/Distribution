@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobConfigurationLoad extends StObject {
   
   /**
@@ -15,26 +13,26 @@ trait SchemaJobConfigurationLoad extends StObject {
     * bad records, an invalid error is returned in the job result. The default
     * value is false. Only applicable to CSV, ignored for other formats.
     */
-  var allowJaggedRows: js.UndefOr[Boolean] = js.native
+  var allowJaggedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if BigQuery should allow quoted data sections that contain
     * newline characters in a CSV file. The default value is false.
     */
-  var allowQuotedNewlines: js.UndefOr[Boolean] = js.native
+  var allowQuotedNewlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Indicates if we should automatically infer the options and
     * schema for CSV and JSON sources.
     */
-  var autodetect: js.UndefOr[Boolean] = js.native
+  var autodetect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Beta] Clustering specification for the destination table. Must be
     * specified with time-based partitioning, data in the table will be first
     * partitioned and subsequently clustered.
     */
-  var clustering: js.UndefOr[SchemaClustering] = js.native
+  var clustering: js.UndefOr[SchemaClustering] = js.undefined
   
   /**
     * [Optional] Specifies whether the job is allowed to create new tables. The
@@ -44,23 +42,23 @@ trait SchemaJobConfigurationLoad extends StObject {
     * result. The default value is CREATE_IF_NEEDED. Creation, truncation and
     * append actions occur as one atomic update upon job completion.
     */
-  var createDisposition: js.UndefOr[String] = js.native
+  var createDisposition: js.UndefOr[String] = js.undefined
   
   /**
     * Custom encryption configuration (e.g., Cloud KMS keys).
     */
-  var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.native
+  var destinationEncryptionConfiguration: js.UndefOr[SchemaEncryptionConfiguration] = js.undefined
   
   /**
     * [Required] The destination table to load the data into.
     */
-  var destinationTable: js.UndefOr[SchemaTableReference] = js.native
+  var destinationTable: js.UndefOr[SchemaTableReference] = js.undefined
   
   /**
     * [Beta] [Optional] Properties with which to create the destination table
     * if it is new.
     */
-  var destinationTableProperties: js.UndefOr[SchemaDestinationTableProperties] = js.native
+  var destinationTableProperties: js.UndefOr[SchemaDestinationTableProperties] = js.undefined
   
   /**
     * [Optional] The character encoding of the data. The supported values are
@@ -68,7 +66,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * data after the raw, binary data has been split using the values of the
     * quote and fieldDelimiter properties.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The separator for fields in a CSV file. The separator can be
@@ -79,7 +77,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * supports the escape sequence &quot;\t&quot; to specify a tab separator.
     * The default value is a comma (&#39;,&#39;).
     */
-  var fieldDelimiter: js.UndefOr[String] = js.native
+  var fieldDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional, Experimental] If hive partitioning is enabled, which mode to
@@ -89,7 +87,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * -- requesting hive partitioning on an unsupported format will lead to an
     * error.
     */
-  var hivePartitioningMode: js.UndefOr[String] = js.native
+  var hivePartitioningMode: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Indicates if BigQuery should allow extra values that are not
@@ -100,7 +98,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * what BigQuery treats as an extra value: CSV: Trailing columns JSON: Named
     * values that don&#39;t match any column names
     */
-  var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
+  var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] The maximum number of bad records that BigQuery can ignore
@@ -109,7 +107,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * and JSON. The default value is 0, which requires that all records are
     * valid.
     */
-  var maxBadRecords: js.UndefOr[Double] = js.native
+  var maxBadRecords: js.UndefOr[Double] = js.undefined
   
   /**
     * [Optional] Specifies a string that represents a null value in a CSV file.
@@ -120,7 +118,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * for STRING and BYTE. For STRING and BYTE columns, BigQuery interprets the
     * empty string as an empty value.
     */
-  var nullMarker: js.UndefOr[String] = js.native
+  var nullMarker: js.UndefOr[String] = js.undefined
   
   /**
     * If sourceFormat is set to &quot;DATASTORE_BACKUP&quot;, indicates which
@@ -130,7 +128,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * property isn&#39;t found in the Cloud Datastore backup, an invalid error
     * is returned in the job result.
     */
-  var projectionFields: js.UndefOr[js.Array[String]] = js.native
+  var projectionFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Optional] The value that is used to quote data sections in a CSV file.
@@ -141,32 +139,32 @@ trait SchemaJobConfigurationLoad extends StObject {
     * string. If your data contains quoted newline characters, you must also
     * set the allowQuotedNewlines property to true.
     */
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
   /**
     * [TrustedTester] Range partitioning specification for this table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
-  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[SchemaRangePartitioning] = js.undefined
   
   /**
     * [Optional] The schema for the destination table. The schema can be
     * omitted if the destination table already exists, or if you&#39;re loading
     * data from Google Cloud Datastore.
     */
-  var schema: js.UndefOr[SchemaTableSchema] = js.native
+  var schema: js.UndefOr[SchemaTableSchema] = js.undefined
   
   /**
     * [Deprecated] The inline schema. For CSV schemas, specify as
     * &quot;Field1:Type1[,Field2:Type2]*&quot;. For example, &quot;foo:STRING,
     * bar:INTEGER, baz:FLOAT&quot;.
     */
-  var schemaInline: js.UndefOr[String] = js.native
+  var schemaInline: js.UndefOr[String] = js.undefined
   
   /**
     * [Deprecated] The format of the schemaInline property.
     */
-  var schemaInlineFormat: js.UndefOr[String] = js.native
+  var schemaInlineFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Allows the schema of the destination table to be updated as a side effect
@@ -180,14 +178,14 @@ trait SchemaJobConfigurationLoad extends StObject {
     * ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original
     * schema to nullable.
     */
-  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.native
+  var schemaUpdateOptions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Optional] The number of rows at the top of a CSV file that BigQuery will
     * skip when loading the data. The default value is 0. This property is
     * useful if you have header rows in the file that should be skipped.
     */
-  var skipLeadingRows: js.UndefOr[Double] = js.native
+  var skipLeadingRows: js.UndefOr[Double] = js.undefined
   
   /**
     * [Optional] The format of the data files. For CSV files, specify
@@ -197,7 +195,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * For parquet, specify &quot;PARQUET&quot;. For orc, specify
     * &quot;ORC&quot;. The default value is CSV.
     */
-  var sourceFormat: js.UndefOr[String] = js.native
+  var sourceFormat: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The fully-qualified URIs that point to your data in Google
@@ -210,20 +208,20 @@ trait SchemaJobConfigurationLoad extends StObject {
     * one URI can be specified. Also, the &#39;*&#39; wildcard character is not
     * allowed.
     */
-  var sourceUris: js.UndefOr[js.Array[String]] = js.native
+  var sourceUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Time-based partitioning specification for the destination table. Only one
     * of timePartitioning and rangePartitioning should be specified.
     */
-  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[SchemaTimePartitioning] = js.undefined
   
   /**
     * [Optional] If sourceFormat is set to &quot;AVRO&quot;, indicates whether
     * to enable interpreting logical types into their corresponding types (ie.
     * TIMESTAMP), instead of only using their raw types (ie. INTEGER).
     */
-  var useAvroLogicalTypes: js.UndefOr[Boolean] = js.native
+  var useAvroLogicalTypes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Specifies the action that occurs if the destination table
@@ -236,7 +234,7 @@ trait SchemaJobConfigurationLoad extends StObject {
     * is able to complete the job successfully. Creation, truncation and append
     * actions occur as one atomic update upon job completion.
     */
-  var writeDisposition: js.UndefOr[String] = js.native
+  var writeDisposition: js.UndefOr[String] = js.undefined
 }
 object SchemaJobConfigurationLoad {
   

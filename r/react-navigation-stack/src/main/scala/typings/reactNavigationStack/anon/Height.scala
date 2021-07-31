@@ -2,15 +2,13 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var route: typings.reactNavigationStack.vendorTypesMod.Route[String] = js.native
+  var route: typings.reactNavigationStack.vendorTypesMod.Route[String]
 }
 object Height {
   

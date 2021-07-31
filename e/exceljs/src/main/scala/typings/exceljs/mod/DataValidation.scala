@@ -8,38 +8,36 @@ import typings.exceljs.exceljsStrings.textLength
 import typings.exceljs.exceljsStrings.whole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataValidation extends StObject {
   
-  var allowBlank: js.UndefOr[Boolean] = js.native
+  var allowBlank: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var errorStyle: js.UndefOr[String] = js.native
+  var errorStyle: js.UndefOr[String] = js.undefined
   
-  var errorTitle: js.UndefOr[String] = js.native
+  var errorTitle: js.UndefOr[String] = js.undefined
   
-  var formulae: js.Array[_] = js.native
+  var formulae: js.Array[js.Any]
   
-  var operator: js.UndefOr[DataValidationOperator] = js.native
+  var operator: js.UndefOr[DataValidationOperator] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var promptTitle: js.UndefOr[String] = js.native
+  var promptTitle: js.UndefOr[String] = js.undefined
   
-  var showErrorMessage: js.UndefOr[Boolean] = js.native
+  var showErrorMessage: js.UndefOr[Boolean] = js.undefined
   
-  var showInputMessage: js.UndefOr[Boolean] = js.native
+  var showInputMessage: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: list | whole | decimal | date | textLength | custom = js.native
+  var `type`: list | whole | decimal | date | textLength | custom
 }
 object DataValidation {
   
   @scala.inline
-  def apply(formulae: js.Array[_], `type`: list | whole | decimal | date | textLength | custom): DataValidation = {
+  def apply(formulae: js.Array[js.Any], `type`: list | whole | decimal | date | textLength | custom): DataValidation = {
     val __obj = js.Dynamic.literal(formulae = formulae.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValidation]
@@ -73,7 +71,7 @@ object DataValidation {
     def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setFormulae(value: js.Array[_]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
+    def setFormulae(value: js.Array[js.Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))

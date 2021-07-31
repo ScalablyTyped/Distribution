@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,12 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#trip
   */
-@js.native
-trait TripWaypoint extends Waypoint {
+trait TripWaypoint
+  extends StObject
+     with Waypoint {
   
-  var trips_index: Double = js.native
+  var trips_index: Double
   
-  var waypoint_index: Double = js.native
+  var waypoint_index: Double
 }
 object TripWaypoint {
   

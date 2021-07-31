@@ -3,19 +3,17 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowStyleIOS extends StObject {
   
-  var shadowColor: js.UndefOr[ColorValue] = js.native
+  var shadowColor: js.UndefOr[ColorValue] = js.undefined
   
-  var shadowOffset: js.UndefOr[Height] = js.native
+  var shadowOffset: js.UndefOr[Height] = js.undefined
   
-  var shadowOpacity: js.UndefOr[Double] = js.native
+  var shadowOpacity: js.UndefOr[Double] = js.undefined
   
-  var shadowRadius: js.UndefOr[Double] = js.native
+  var shadowRadius: js.UndefOr[Double] = js.undefined
 }
 object ShadowStyleIOS {
   

@@ -9,15 +9,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.deviceOnline
 import typings.tuyaPanelKit.tuyaPanelKitStrings.dpData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayloadType extends StObject {
   
-  var payload: (Record[String, DpValue]) | (DevInfo[Record[String, DpType]]) | Boolean = js.native
+  var payload: (Record[String, DpValue]) | (DevInfo[Record[String, DpType]]) | Boolean
   
-  var `type`: dpData | devInfo_ | deviceOnline = js.native
+  var `type`: dpData | devInfo_ | deviceOnline
 }
 object PayloadType {
   

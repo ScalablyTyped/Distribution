@@ -2,85 +2,83 @@ package typings.kiwicomOrbitDesignTokens.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base extends StObject {
   
-  var borderRadius: String = js.native
+  var borderRadius: String
   
-  var boxShadowActionable: String = js.native
+  var boxShadowActionable: String
   
-  var boxShadowColorActionable: String = js.native
+  var boxShadowColorActionable: String
   
-  var boxShadowColorElevated: String = js.native
+  var boxShadowColorElevated: String
   
-  var boxShadowColorModal: String = js.native
+  var boxShadowColorModal: String
   
-  var boxShadowColorStatic: String = js.native
+  var boxShadowColorStatic: String
   
-  var boxShadowElevated: String = js.native
+  var boxShadowElevated: String
   
-  var boxShadowModal: String = js.native
+  var boxShadowModal: String
   
-  var boxShadowStatic: String = js.native
+  var boxShadowStatic: String
   
-  var durationFast: String = js.native
+  var durationFast: String
   
-  var durationNormal: String = js.native
+  var durationNormal: String
   
-  var durationSlow: String = js.native
+  var durationSlow: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSizeLg: String = js.native
+  var fontSizeLg: String
   
-  var fontSizeMd: String = js.native
+  var fontSizeMd: String
   
-  var fontSizeSm: String = js.native
+  var fontSizeSm: String
   
-  var fontWeightBold: String = js.native
+  var fontWeightBold: String
   
-  var fontWeightMedium: String = js.native
+  var fontWeightMedium: String
   
-  var fontWeightNormal: String = js.native
+  var fontWeightNormal: String
   
-  var lineHeight: String = js.native
+  var lineHeight: String
   
-  var opacityLarge: String = js.native
+  var opacityLarge: String
   
-  var opacityMedium: String = js.native
+  var opacityMedium: String
   
-  var opacitySmall: String = js.native
+  var opacitySmall: String
   
-  var size2xl: String = js.native
+  var size2xl: String
   
-  var sizeLg: String = js.native
+  var sizeLg: String
   
-  var sizeMd: String = js.native
+  var sizeMd: String
   
-  var sizeSm: String = js.native
+  var sizeSm: String
   
-  var sizeXl: String = js.native
+  var sizeXl: String
   
-  var space2xl: String = js.native
+  var space2xl: String
   
-  var space2xs: String = js.native
+  var space2xs: String
   
-  var space3xl: String = js.native
+  var space3xl: String
   
-  var spaceLg: String = js.native
+  var spaceLg: String
   
-  var spaceMd: String = js.native
+  var spaceMd: String
   
-  var spaceSm: String = js.native
+  var spaceSm: String
   
-  var spaceXl: String = js.native
+  var spaceXl: String
   
-  var spaceXs: String = js.native
+  var spaceXs: String
   
-  var transitionDefault: String = js.native
+  var transitionDefault: String
 }
 object Base {
   

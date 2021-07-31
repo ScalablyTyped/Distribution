@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteReplicationInstanceMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the replication instance to be deleted.
     */
-  var ReplicationInstanceArn: String = js.native
+  var ReplicationInstanceArn: String
 }
 object DeleteReplicationInstanceMessage {
   

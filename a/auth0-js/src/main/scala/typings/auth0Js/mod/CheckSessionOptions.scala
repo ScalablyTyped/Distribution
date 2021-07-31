@@ -2,16 +2,16 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckSessionOptions extends AuthorizeOptions {
+trait CheckSessionOptions
+  extends StObject
+     with AuthorizeOptions {
   
   /**
     * optional parameter for auth0 to use postMessage to communicate between the silent callback and the SPA.
     */
-  var usePostMessage: js.UndefOr[Boolean] = js.native
+  var usePostMessage: js.UndefOr[Boolean] = js.undefined
 }
 object CheckSessionOptions {
   

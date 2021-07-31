@@ -2,56 +2,54 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedInstancesModification extends StObject {
   
   /**
     * A unique, case-sensitive key supplied by the client to ensure that the request is idempotent. For more information, see Ensuring Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the modification request was created.
     */
-  var CreateDate: js.UndefOr[DateTime] = js.native
+  var CreateDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The time for the modification to become effective.
     */
-  var EffectiveDate: js.UndefOr[DateTime] = js.native
+  var EffectiveDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Contains target configurations along with their corresponding new Reserved Instance IDs.
     */
-  var ModificationResults: js.UndefOr[ReservedInstancesModificationResultList] = js.native
+  var ModificationResults: js.UndefOr[ReservedInstancesModificationResultList] = js.undefined
   
   /**
     * The IDs of one or more Reserved Instances.
     */
-  var ReservedInstancesIds: js.UndefOr[ReservedIntancesIds] = js.native
+  var ReservedInstancesIds: js.UndefOr[ReservedIntancesIds] = js.undefined
   
   /**
     * A unique ID for the Reserved Instance modification.
     */
-  var ReservedInstancesModificationId: js.UndefOr[String] = js.native
+  var ReservedInstancesModificationId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the Reserved Instances modification request.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the status.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the modification request was last updated.
     */
-  var UpdateDate: js.UndefOr[DateTime] = js.native
+  var UpdateDate: js.UndefOr[DateTime] = js.undefined
 }
 object ReservedInstancesModification {
   

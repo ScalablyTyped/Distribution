@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domainDkimMod {
@@ -43,6 +42,10 @@ object domainDkimMod {
   /* static members */
   object DomainDkim {
     
+    @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DomainDkim resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,35 +55,29 @@ object domainDkimMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DomainDkim = js.native
-    @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DomainDkim = js.native
-    @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainDkimState): DomainDkim = js.native
-    @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainDkimState, opts: CustomResourceOptions): DomainDkim = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainDkimState): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainDkimState, opts: CustomResourceOptions): DomainDkim = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DomainDkim]
     
     /**
       * Returns true if the given object is an instance of DomainDkim.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ Boolean]
   }
   
-  @js.native
   trait DomainDkimArgs extends StObject {
     
     /**
       * Verified domain name to generate DKIM tokens for.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
   }
   object DomainDkimArgs {
     
@@ -98,7 +95,6 @@ object domainDkimMod {
     }
   }
   
-  @js.native
   trait DomainDkimState extends StObject {
     
     /**
@@ -109,12 +105,12 @@ object domainDkimMod {
       * Find out more about verifying domains in Amazon SES
       * in the [AWS SES docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/easy-dkim-dns-records.html).
       */
-    val dkimTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val dkimTokens: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Verified domain name to generate DKIM tokens for.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainDkimState {
     

@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -69,28 +68,28 @@ trait Ajv extends StObject {
     * @return {PromiseLike<ValidateFunction>} validating function
     */
   def compileAsync(schema: js.Object): js.Thenable[ValidateFunction] = js.native
-  def compileAsync(
-    schema: js.Object,
-    meta: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, _]
-  ): js.Thenable[ValidateFunction] = js.native
   def compileAsync(schema: js.Object, meta: Boolean): js.Thenable[ValidateFunction] = js.native
   def compileAsync(
     schema: js.Object,
     meta: Boolean,
-    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, _]
+    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, js.Any]
+  ): js.Thenable[ValidateFunction] = js.native
+  def compileAsync(
+    schema: js.Object,
+    meta: Unit,
+    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, js.Any]
   ): js.Thenable[ValidateFunction] = js.native
   def compileAsync(schema: Boolean): js.Thenable[ValidateFunction] = js.native
-  def compileAsync(
-    schema: Boolean,
-    meta: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, _]
-  ): js.Thenable[ValidateFunction] = js.native
   def compileAsync(schema: Boolean, meta: Boolean): js.Thenable[ValidateFunction] = js.native
   def compileAsync(
     schema: Boolean,
     meta: Boolean,
-    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, _]
+    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, js.Any]
+  ): js.Thenable[ValidateFunction] = js.native
+  def compileAsync(
+    schema: Boolean,
+    meta: Unit,
+    callback: js.Function2[/* err */ Error, /* validate */ ValidateFunction, js.Any]
   ): js.Thenable[ValidateFunction] = js.native
   
   var errors: js.UndefOr[js.Array[ErrorObject] | Null] = js.native
@@ -102,10 +101,10 @@ trait Ajv extends StObject {
     * @return {string} human readable string with all errors descriptions
     */
   def errorsText(): String = js.native
-  def errorsText(errors: js.UndefOr[scala.Nothing], options: ErrorsTextOptions): String = js.native
   def errorsText(errors: js.Array[ErrorObject]): String = js.native
   def errorsText(errors: js.Array[ErrorObject], options: ErrorsTextOptions): String = js.native
   def errorsText(errors: Null, options: ErrorsTextOptions): String = js.native
+  def errorsText(errors: Unit, options: ErrorsTextOptions): String = js.native
   
   /**
     * Get keyword definition
@@ -144,7 +143,7 @@ trait Ajv extends StObject {
   def removeSchema(schemaKeyRef: Boolean): Ajv = js.native
   def removeSchema(schemaKeyRef: RegExp): Ajv = js.native
   
-  def validate(schemaKeyRef: String, data: js.Any): Boolean | js.Thenable[_] = js.native
+  def validate(schemaKeyRef: String, data: js.Any): Boolean | js.Thenable[js.Any] = js.native
   /**
     * Validate data using schema
     * Schema will be compiled and cached (using serialized JSON as key, [fast-json-stable-stringify](https://github.com/epoberezkin/fast-json-stable-stringify) is used to serialize by default).
@@ -152,8 +151,8 @@ trait Ajv extends StObject {
     * @param  {Any} data to be validated
     * @return {Boolean} validation result. Errors from the last validation will be available in `ajv.errors` (and also in compiled schema: `schema.errors`).
     */
-  def validate(schemaKeyRef: js.Object, data: js.Any): Boolean | js.Thenable[_] = js.native
-  def validate(schemaKeyRef: Boolean, data: js.Any): Boolean | js.Thenable[_] = js.native
+  def validate(schemaKeyRef: js.Object, data: js.Any): Boolean | js.Thenable[js.Any] = js.native
+  def validate(schemaKeyRef: Boolean, data: js.Any): Boolean | js.Thenable[js.Any] = js.native
   
   /**
     * Validate keyword

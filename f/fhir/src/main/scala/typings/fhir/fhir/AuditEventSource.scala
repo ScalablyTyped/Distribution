@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Audit Event Reporter
   */
-@js.native
-trait AuditEventSource extends BackboneElement {
+trait AuditEventSource
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'site'.
     */
-  var _site: js.UndefOr[Element] = js.native
+  var _site: js.UndefOr[Element] = js.undefined
   
   /**
     * The identity of source detecting the event
     */
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
   /**
     * Logical source location within the enterprise
     */
-  var site: js.UndefOr[String] = js.native
+  var site: js.UndefOr[String] = js.undefined
   
   /**
     * The type of source where event originated
     */
-  var `type`: js.UndefOr[js.Array[Coding]] = js.native
+  var `type`: js.UndefOr[js.Array[Coding]] = js.undefined
 }
 object AuditEventSource {
   

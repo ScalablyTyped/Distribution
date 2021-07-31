@@ -3,28 +3,27 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.EnumStringMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait EnumStringMember_
-  extends EnumMember
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait EnumStringMember_
+  extends StObject
+     with BaseNode
+     with EnumMember {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var init: StringLiteral_ = js.native
+  var init: StringLiteral_
   
   @JSName("type")
-  var type_EnumStringMember_ : EnumStringMember = js.native
+  var type_EnumStringMember_ : EnumStringMember
 }
 object EnumStringMember_ {
   
   @scala.inline
-  def apply(id: Identifier_, init: StringLiteral_, `type`: EnumStringMember): EnumStringMember_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, init: StringLiteral_): EnumStringMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumStringMember")
     __obj.asInstanceOf[EnumStringMember_]
   }
   

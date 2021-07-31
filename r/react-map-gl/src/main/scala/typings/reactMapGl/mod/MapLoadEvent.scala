@@ -3,15 +3,13 @@ package typings.reactMapGl.mod
 import typings.mapboxGl.mod.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLoadEvent extends StObject {
   
-  var target: Map = js.native
+  var target: Map
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object MapLoadEvent {
   

@@ -8,21 +8,19 @@ import typings.memfs.nodeMod.Link
 import typings.memfs.nodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var bigint: `true` = js.native
+    var bigint: `true`
   }
   object `0` {
     
     @scala.inline
-    def apply(bigint: `true`): `0` = {
-      val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(bigint = true)
       __obj.asInstanceOf[`0`]
     }
     
@@ -34,30 +32,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Atime extends StObject {
     
-    var atime: Double = js.native
+    var atime: Double
     
-    var ctime: Double = js.native
+    var ctime: Double
     
-    var data: String = js.native
+    var data: String
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var ino: Double = js.native
+    var ino: Double
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Double = js.native
+    var mtime: Double
     
-    var nlink: Double = js.native
+    var nlink: Double
     
-    var perm: Double = js.native
+    var perm: Double
     
-    var symlink: js.Array[String] = js.native
+    var symlink: js.Array[String]
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Atime {
     
@@ -120,16 +117,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bigint extends StObject {
     
-    var bigint: `false` = js.native
+    var bigint: `false`
   }
   object Bigint {
     
     @scala.inline
-    def apply(bigint: `false`): Bigint = {
-      val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
+    def apply(): Bigint = {
+      val __obj = js.Dynamic.literal(bigint = false)
       __obj.asInstanceOf[Bigint]
     }
     
@@ -141,100 +137,99 @@ object anon {
     }
   }
   
-  @js.native
   trait COPYFILEEXCL extends StObject {
     
-    var COPYFILE_EXCL: Double = js.native
+    var COPYFILE_EXCL: Double
     
-    var COPYFILE_FICLONE: Double = js.native
+    var COPYFILE_FICLONE: Double
     
-    var COPYFILE_FICLONE_FORCE: Double = js.native
+    var COPYFILE_FICLONE_FORCE: Double
     
-    var F_OK: Double = js.native
+    var F_OK: Double
     
-    var O_APPEND: Double = js.native
+    var O_APPEND: Double
     
-    var O_CREAT: Double = js.native
+    var O_CREAT: Double
     
-    var O_DIRECT: Double = js.native
+    var O_DIRECT: Double
     
-    var O_DIRECTORY: Double = js.native
+    var O_DIRECTORY: Double
     
-    var O_EXCL: Double = js.native
+    var O_EXCL: Double
     
-    var O_NOATIME: Double = js.native
+    var O_NOATIME: Double
     
-    var O_NOCTTY: Double = js.native
+    var O_NOCTTY: Double
     
-    var O_NOFOLLOW: Double = js.native
+    var O_NOFOLLOW: Double
     
-    var O_NONBLOCK: Double = js.native
+    var O_NONBLOCK: Double
     
-    var O_RDONLY: Double = js.native
+    var O_RDONLY: Double
     
-    var O_RDWR: Double = js.native
+    var O_RDWR: Double
     
-    var O_SYNC: Double = js.native
+    var O_SYNC: Double
     
-    var O_TRUNC: Double = js.native
+    var O_TRUNC: Double
     
-    var O_WRONLY: Double = js.native
+    var O_WRONLY: Double
     
-    var R_OK: Double = js.native
+    var R_OK: Double
     
-    var S_IFBLK: Double = js.native
+    var S_IFBLK: Double
     
-    var S_IFCHR: Double = js.native
+    var S_IFCHR: Double
     
-    var S_IFDIR: Double = js.native
+    var S_IFDIR: Double
     
-    var S_IFIFO: Double = js.native
+    var S_IFIFO: Double
     
-    var S_IFLNK: Double = js.native
+    var S_IFLNK: Double
     
-    var S_IFMT: Double = js.native
+    var S_IFMT: Double
     
-    var S_IFREG: Double = js.native
+    var S_IFREG: Double
     
-    var S_IFSOCK: Double = js.native
+    var S_IFSOCK: Double
     
-    var S_IRGRP: Double = js.native
+    var S_IRGRP: Double
     
-    var S_IROTH: Double = js.native
+    var S_IROTH: Double
     
-    var S_IRUSR: Double = js.native
+    var S_IRUSR: Double
     
-    var S_IRWXG: Double = js.native
+    var S_IRWXG: Double
     
-    var S_IRWXO: Double = js.native
+    var S_IRWXO: Double
     
-    var S_IRWXU: Double = js.native
+    var S_IRWXU: Double
     
-    var S_IWGRP: Double = js.native
+    var S_IWGRP: Double
     
-    var S_IWOTH: Double = js.native
+    var S_IWOTH: Double
     
-    var S_IWUSR: Double = js.native
+    var S_IWUSR: Double
     
-    var S_IXGRP: Double = js.native
+    var S_IXGRP: Double
     
-    var S_IXOTH: Double = js.native
+    var S_IXOTH: Double
     
-    var S_IXUSR: Double = js.native
+    var S_IXUSR: Double
     
-    var UV_FS_COPYFILE_EXCL: Double = js.native
+    var UV_FS_COPYFILE_EXCL: Double
     
-    var UV_FS_COPYFILE_FICLONE: Double = js.native
+    var UV_FS_COPYFILE_FICLONE: Double
     
-    var UV_FS_COPYFILE_FICLONE_FORCE: Double = js.native
+    var UV_FS_COPYFILE_FICLONE_FORCE: Double
     
-    var UV_FS_SYMLINK_DIR: Double = js.native
+    var UV_FS_SYMLINK_DIR: Double
     
-    var UV_FS_SYMLINK_JUNCTION: Double = js.native
+    var UV_FS_SYMLINK_JUNCTION: Double
     
-    var W_OK: Double = js.native
+    var W_OK: Double
     
-    var X_OK: Double = js.native
+    var X_OK: Double
   }
   object COPYFILEEXCL {
     
@@ -434,14 +429,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.Array[String] = js.native
+    var children: js.Array[String]
     
-    var ino: Double = js.native
+    var ino: Double
     
-    var steps: js.Array[String] = js.native
+    var steps: js.Array[String]
   }
   object Children {
     
@@ -471,14 +465,13 @@ object anon {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
-    var File: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File] = js.native
+    var File: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.File]
     
-    var Link: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.Link] = js.native
+    var Link: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.Link]
     
-    var Node: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.Node] = js.native
+    var Node: Instantiable1[/* args (repeated) */ js.Any, typings.memfs.nodeMod.Node]
   }
   object File {
     
@@ -513,6 +506,5 @@ object anon {
     var toPrimitive: js.Function1[string, String] = js.native
   }
   
-  @js.native
   trait ValueOf extends StObject
 }

@@ -2,30 +2,28 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseSelectState[Item] extends StObject {
   
-  var highlightedIndex: Double = js.native
+  var highlightedIndex: Double
   
-  var inputValue: String = js.native
+  var inputValue: String
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var selectedItem: Item | Null = js.native
+  var selectedItem: Item | Null
 }
 object UseSelectState {
   
   @scala.inline
   def apply[Item](highlightedIndex: Double, inputValue: String, isOpen: Boolean): UseSelectState[Item] = {
-    val __obj = js.Dynamic.literal(highlightedIndex = highlightedIndex.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(highlightedIndex = highlightedIndex.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], selectedItem = null)
     __obj.asInstanceOf[UseSelectState[Item]]
   }
   
   @scala.inline
-  implicit class UseSelectStateMutableBuilder[Self <: UseSelectState[_], Item] (val x: Self with UseSelectState[Item]) extends AnyVal {
+  implicit class UseSelectStateMutableBuilder[Self <: UseSelectState[?], Item] (val x: Self & UseSelectState[Item]) extends AnyVal {
     
     @scala.inline
     def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])

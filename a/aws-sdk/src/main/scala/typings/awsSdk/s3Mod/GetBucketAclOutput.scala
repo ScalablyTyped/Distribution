@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketAclOutput extends StObject {
   
   /**
     * A list of grants.
     */
-  var Grants: js.UndefOr[typings.awsSdk.s3Mod.Grants] = js.native
+  var Grants: js.UndefOr[typings.awsSdk.s3Mod.Grants] = js.undefined
   
   /**
     * Container for the bucket owner's display name and ID.
     */
-  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.undefined
 }
 object GetBucketAclOutput {
   

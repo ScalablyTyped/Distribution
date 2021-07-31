@@ -25,11 +25,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.ThreeTrafficLights2
 import typings.officeJsPreview.officeJsPreviewStrings.ThreeTriangles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the IconSetConditionalFormat object, for use in `iconSetConditionalFormat.set({ ... })`. */
-@js.native
 trait IconSetConditionalFormatUpdateData extends StObject {
   
   /**
@@ -38,7 +36,7 @@ trait IconSetConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var criteria: js.UndefOr[js.Array[ConditionalIconCriterion]] = js.native
+  var criteria: js.UndefOr[js.Array[ConditionalIconCriterion]] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait IconSetConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var reverseIconOrder: js.UndefOr[Boolean] = js.native
+  var reverseIconOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait IconSetConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var showIconOnly: js.UndefOr[Boolean] = js.native
+  var showIconOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait IconSetConditionalFormatUpdateData extends StObject {
     */
   var style: js.UndefOr[
     IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
-  ] = js.native
+  ] = js.undefined
 }
 object IconSetConditionalFormatUpdateData {
   

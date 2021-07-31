@@ -2,27 +2,25 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppMode extends StObject {
   
-  var appMode: Boolean = js.native
+  var appMode: Boolean
   
-  var browser: String = js.native
+  var browser: String
   
-  var device: String = js.native
+  var device: String
   
-  var flatVersion: Double = js.native
+  var flatVersion: Double
   
-  var majorVersion: String = js.native
+  var majorVersion: String
   
-  var minorVersion: String = js.native
+  var minorVersion: String
   
-  var name: String = js.native
+  var name: String
   
-  var tablet: js.Any = js.native
+  var tablet: js.Any
 }
 object AppMode {
   

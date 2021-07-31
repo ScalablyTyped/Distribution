@@ -2,35 +2,35 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetSourceParams extends GenericParams {
+trait GetSourceParams
+  extends StObject
+     with GenericParams {
   
-  var _source: NameList = js.native
+  var _source: NameList
   
-  var _sourceExclude: js.UndefOr[NameList] = js.native
+  var _sourceExclude: js.UndefOr[NameList] = js.undefined
   
-  var _sourceInclude: js.UndefOr[NameList] = js.native
+  var _sourceInclude: js.UndefOr[NameList] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var index: String = js.native
+  var index: String
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var realtime: js.UndefOr[Boolean] = js.native
+  var realtime: js.UndefOr[Boolean] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var versionType: js.UndefOr[VersionType] = js.native
+  var versionType: js.UndefOr[VersionType] = js.undefined
 }
 object GetSourceParams {
   

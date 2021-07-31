@@ -2,39 +2,37 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlListComponent extends StObject {
   
-  var AccessControlEntries: IAccessControlEntryContainer = js.native
+  var AccessControlEntries: IAccessControlEntryContainer
   
-  var CanDeactivate: Boolean = js.native
+  var CanDeactivate: Boolean
   
-  def Clone(): IAccessControlListComponent = js.native
+  def Clone(): IAccessControlListComponent
   
-  val CurrentUserBinding: Double = js.native
+  val CurrentUserBinding: Double
   
-  def GetACEByUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): IAccessControlEntryData = js.native
+  def GetACEByUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): IAccessControlEntryData
   
-  def GetACEKeyByUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): IAccessControlEntryKey = js.native
+  def GetACEKeyByUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): IAccessControlEntryKey
   
-  val HasCurrentUser: Boolean = js.native
+  val HasCurrentUser: Boolean
   
-  val HasCurrentUserBinding: Boolean = js.native
+  val HasCurrentUserBinding: Boolean
   
-  val HasNamedACLLink: Boolean = js.native
+  val HasNamedACLLink: Boolean
   
-  val HasPseudoUsers: Boolean = js.native
+  val HasPseudoUsers: Boolean
   
-  var IsActive: Boolean = js.native
+  var IsActive: Boolean
   
-  val NamedACLLink: Double = js.native
+  val NamedACLLink: Double
   
-  def ResetCurrentUserBinding(): Unit = js.native
+  def ResetCurrentUserBinding(): Unit
   
-  def ResetNamedACLLink(): Unit = js.native
+  def ResetNamedACLLink(): Unit
 }
 object IAccessControlListComponent {
   

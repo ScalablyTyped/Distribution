@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateSecurityProfileBehaviorsResponse extends StObject {
   
   /**
     * True if the behaviors were valid.
     */
-  var valid: js.UndefOr[Valid] = js.native
+  var valid: js.UndefOr[Valid] = js.undefined
   
   /**
     * The list of any errors found in the behaviors.
     */
-  var validationErrors: js.UndefOr[ValidationErrors] = js.native
+  var validationErrors: js.UndefOr[ValidationErrors] = js.undefined
 }
 object ValidateSecurityProfileBehaviorsResponse {
   

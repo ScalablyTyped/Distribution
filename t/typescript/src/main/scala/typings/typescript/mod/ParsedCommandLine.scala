@@ -2,29 +2,27 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedCommandLine extends StObject {
   
-  var compileOnSave: js.UndefOr[Boolean] = js.native
+  var compileOnSave: js.UndefOr[Boolean] = js.undefined
   
-  var errors: js.Array[Diagnostic] = js.native
+  var errors: js.Array[Diagnostic]
   
-  var fileNames: js.Array[java.lang.String] = js.native
+  var fileNames: js.Array[java.lang.String]
   
-  var options: CompilerOptions = js.native
+  var options: CompilerOptions
   
-  var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.native
+  var projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.undefined
   
-  var raw: js.UndefOr[js.Any] = js.native
+  var raw: js.UndefOr[js.Any] = js.undefined
   
-  var typeAcquisition: js.UndefOr[TypeAcquisition] = js.native
+  var typeAcquisition: js.UndefOr[TypeAcquisition] = js.undefined
   
-  var watchOptions: js.UndefOr[WatchOptions] = js.native
+  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
   
-  var wildcardDirectories: js.UndefOr[MapLike[WatchDirectoryFlags]] = js.native
+  var wildcardDirectories: js.UndefOr[MapLike[WatchDirectoryFlags]] = js.undefined
 }
 object ParsedCommandLine {
   

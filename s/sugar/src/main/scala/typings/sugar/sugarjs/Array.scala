@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.std.ArrayLike
+import typings.sugar.sugarjs.Object.ObjectMergeOptions
+import typings.sugar.sugarjs.Object.QueryStringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Array {
   
-  @js.native
   trait ArrayOptions extends StObject {
     
-    var sortCollate: js.UndefOr[typings.sugar.Function] = js.native
+    var sortCollate: js.UndefOr[typings.sugar.Function] = js.undefined
     
-    var sortEquivalents: js.UndefOr[js.Object] = js.native
+    var sortEquivalents: js.UndefOr[js.Object] = js.undefined
     
-    var sortIgnore: js.UndefOr[typings.sugar.RegExp] = js.native
+    var sortIgnore: js.UndefOr[typings.sugar.RegExp] = js.undefined
     
-    var sortIgnoreCase: js.UndefOr[Boolean] = js.native
+    var sortIgnoreCase: js.UndefOr[Boolean] = js.undefined
     
-    var sortNatural: js.UndefOr[Boolean] = js.native
+    var sortNatural: js.UndefOr[Boolean] = js.undefined
     
-    var sortOrder: js.UndefOr[java.lang.String] = js.native
+    var sortOrder: js.UndefOr[java.lang.String] = js.undefined
   }
   object ArrayOptions {
     
@@ -75,7 +75,80 @@ object Array {
     }
   }
   
-  type Chainable[T, RawValue] = (ChainableBase[T, RawValue]) with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.sugar.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined addAll, addAll, defaults, defaults, get, get, has, has, invert, invert, isArguments, isArray, isBoolean, isDate, isError, isFunction, isMap, isNumber, isObject, isRegExp, isSet, isString, keys, merge, merge, mergeAll, mergeAll, reject, reject, reject, reject, select, select, select, select, set, size, tap, toQueryString, toQueryString, values */ @js.native
+  trait Chainable[T, RawValue]
+    extends StObject
+       with ChainableBase[T, RawValue] {
+    
+    def addAll[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def addAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def defaults[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def defaults[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def get[T](key: java.lang.String): SugarDefaultChainable[T] = js.native
+    def get[T](key: java.lang.String, inherited: Boolean): SugarDefaultChainable[T] = js.native
+    
+    def has(key: java.lang.String): SugarDefaultChainable[Boolean] = js.native
+    def has(key: java.lang.String, inherited: Boolean): SugarDefaultChainable[Boolean] = js.native
+    
+    def invert(): SugarDefaultChainable[js.Object] = js.native
+    def invert(multi: Boolean): SugarDefaultChainable[js.Object] = js.native
+    
+    def isArguments(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isArray(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isBoolean(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isDate(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isError(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isFunction(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isMap(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isNumber(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isObject(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isRegExp(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isSet(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isString(): SugarDefaultChainable[Boolean] = js.native
+    
+    def keys[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    
+    def merge[T](source: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def merge[T](source: js.Object, options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def mergeAll[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def mergeAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: typings.sugar.RegExp): SugarDefaultChainable[js.Object] = js.native
+    
+    def select(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def select(find: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def select(find: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[js.Object] = js.native
+    def select(find: typings.sugar.RegExp): SugarDefaultChainable[js.Object] = js.native
+    
+    def set[T](key: java.lang.String, `val`: T): SugarDefaultChainable[js.Object] = js.native
+    
+    def size(): SugarDefaultChainable[Double] = js.native
+    
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    
+    def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
+    def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
+    
+    def values[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  }
   
   @js.native
   trait ChainableBase[T, RawValue] extends StObject {
@@ -123,30 +196,30 @@ object Array {
     ): SugarDefaultChainable[Boolean] = js.native
     
     def everyFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def everyFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def everyFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def everyFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def exclude(search: T): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def exclude(search: searchFn[T]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
     def fill(value: T): SugarDefaultChainable[this.type] = js.native
-    def fill(value: T, start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[this.type] = js.native
     def fill(value: T, start: Double): SugarDefaultChainable[this.type] = js.native
     def fill(value: T, start: Double, end: Double): SugarDefaultChainable[this.type] = js.native
+    def fill(value: T, start: Unit, end: Double): SugarDefaultChainable[this.type] = js.native
     
     def filter(search: T): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def filter(search: T, context: js.Any): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def filter(
-      search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], _]) | searchFn[T]
+      search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], js.Any]) | searchFn[T]
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def filter(
-      search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], _]) | searchFn[T],
+      search: (js.Function3[/* value */ T, /* index */ Double, /* array */ typings.sugar.Array[T], js.Any]) | searchFn[T],
       context: js.Any
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
     def filterFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def filterFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def filterFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def filterFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def find(search: T): SugarDefaultChainable[T] = js.native
     def find(search: T, context: js.Any): SugarDefaultChainable[T] = js.native
@@ -159,8 +232,8 @@ object Array {
     ): SugarDefaultChainable[T] = js.native
     
     def findFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def findFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def findFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def findFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def findIndex(search: T): SugarDefaultChainable[Double] = js.native
     def findIndex(search: T, context: js.Any): SugarDefaultChainable[Double] = js.native
@@ -173,8 +246,8 @@ object Array {
     ): SugarDefaultChainable[Double] = js.native
     
     def findIndexFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def findIndexFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def findIndexFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def findIndexFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def first(): SugarDefaultChainable[T] = js.native
     def first(num: Double): SugarDefaultChainable[T] = js.native
@@ -191,8 +264,8 @@ object Array {
     ): SugarDefaultChainable[Unit] = js.native
     
     def forEachFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def forEachFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def forEachFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def forEachFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def from(index: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
@@ -247,11 +320,11 @@ object Array {
     def lastIndexOf(searchElement: T, fromIndex: Double): SugarDefaultChainable[Double] = js.native
     
     def least[U](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def least[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def least[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def least[U](all: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def least[U](all: Boolean, map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def least[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def least[U](all: Unit, map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def least[U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def least[U](map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def least[U](map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
@@ -266,15 +339,15 @@ object Array {
     def map[U](map: java.lang.String, context: js.Any): SugarDefaultChainable[typings.sugar.Array[U]] = js.native
     
     def mapFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def mapFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def mapFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def mapFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def max[U](): SugarDefaultChainable[T] = js.native
-    def max[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[T] = js.native
-    def max[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def max[U](all: Boolean): SugarDefaultChainable[T] = js.native
     def max[U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
     def max[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def max[U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def max[U](map: java.lang.String): SugarDefaultChainable[T] = js.native
     def max[U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     
@@ -283,20 +356,20 @@ object Array {
     def median[U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
     
     def min[U](): SugarDefaultChainable[T] = js.native
-    def min[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[T] = js.native
-    def min[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def min[U](all: Boolean): SugarDefaultChainable[T] = js.native
     def min[U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
     def min[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def min[U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     def min[U](map: java.lang.String): SugarDefaultChainable[T] = js.native
     def min[U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
     
     def most[U](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def most[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def most[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def most[U](all: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def most[U](all: Boolean, map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def most[U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def most[U](all: Unit, map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def most[U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def most[U](map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def most[U](map: mapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
@@ -332,8 +405,8 @@ object Array {
     ): SugarDefaultChainable[T] = js.native
     
     def reduceFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def reduceFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def reduceFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def reduceFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def reduceRight(
       callbackfn: js.Function4[
@@ -356,8 +429,8 @@ object Array {
     ): SugarDefaultChainable[T] = js.native
     
     def reduceRightFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def reduceRightFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def reduceRightFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def reduceRightFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     @JSName("reduceRight")
     def reduceRight_U[U](
@@ -392,18 +465,18 @@ object Array {
     def reverse(): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
     def sample(): SugarDefaultChainable[T] = js.native
-    def sample(num: js.UndefOr[scala.Nothing], remove: Boolean): SugarDefaultChainable[T] = js.native
     def sample(num: Double): SugarDefaultChainable[T] = js.native
     def sample(num: Double, remove: Boolean): SugarDefaultChainable[T] = js.native
+    def sample(num: Unit, remove: Boolean): SugarDefaultChainable[T] = js.native
     
     def shift(): SugarDefaultChainable[js.UndefOr[T]] = js.native
     
     def shuffle(): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
     def slice(): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def slice(start: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def slice(start: Double, end: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def slice(start: Unit, end: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
     def some(search: T): SugarDefaultChainable[Boolean] = js.native
     def some(search: T, context: js.Any): SugarDefaultChainable[Boolean] = js.native
@@ -416,16 +489,16 @@ object Array {
     ): SugarDefaultChainable[Boolean] = js.native
     
     def someFromIndex(startIndex: Double, args: js.Any*): SugarDefaultChainable[T] = js.native
-    def someFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): SugarDefaultChainable[T] = js.native
     def someFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): SugarDefaultChainable[T] = js.native
+    def someFromIndex(startIndex: Double, loop: Unit, args: js.Any*): SugarDefaultChainable[T] = js.native
     
     def sort(): SugarDefaultChainable[this.type] = js.native
     def sort(compareFn: js.Function2[/* a */ T, /* b */ T, Double]): SugarDefaultChainable[this.type] = js.native
     
     def sortBy[U](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def sortBy[U](map: js.UndefOr[scala.Nothing], desc: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def sortBy[U](map: java.lang.String): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def sortBy[U](map: java.lang.String, desc: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def sortBy[U](map: Unit, desc: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def sortBy[U](map: sortMapFn[T, U]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def sortBy[U](map: sortMapFn[T, U], desc: Boolean): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
@@ -454,22 +527,23 @@ object Array {
   
   @js.native
   trait Constructor
-    extends SugarNamespace
+    extends StObject
+       with SugarNamespace
        with Instantiable0[Chainable[js.Object, typings.sugar.Array[js.Object]]]
        with Instantiable1[
           (/* obj */ ArrayLike[js.Object]) | (/* obj */ Double), 
           Chainable[js.Object, typings.sugar.Array[js.Object]]
         ]
        with Instantiable2[
-          js.UndefOr[(/* obj */ ArrayLike[js.Object]) | (/* obj */ Double)], 
+          (/* obj */ ArrayLike[js.Object]) | (/* obj */ Double) | (/* obj */ Unit), 
           /* clone */ Boolean, 
           Chainable[js.Object, typings.sugar.Array[js.Object]]
         ] {
     
     def apply[T](): Chainable[T, typings.sugar.Array[T]] = js.native
-    def apply[T](obj: js.UndefOr[scala.Nothing], clone: Boolean): Chainable[T, typings.sugar.Array[T]] = js.native
     def apply[T](obj: Double): Chainable[T, typings.sugar.Array[T]] = js.native
     def apply[T](obj: Double, clone: Boolean): Chainable[T, typings.sugar.Array[T]] = js.native
+    def apply[T](obj: Unit, clone: Boolean): Chainable[T, typings.sugar.Array[T]] = js.native
     def apply[T](obj: ArrayLike[T]): Chainable[T, typings.sugar.Array[T]] = js.native
     def apply[T](obj: ArrayLike[T], clone: Boolean): Chainable[T, typings.sugar.Array[T]] = js.native
     
@@ -505,9 +579,9 @@ object Array {
     def count[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): Double = js.native
     
     def create[T](): typings.sugar.Array[T] = js.native
-    def create[T](obj: js.UndefOr[scala.Nothing], clone: Boolean): typings.sugar.Array[T] = js.native
     def create[T](obj: Double): typings.sugar.Array[T] = js.native
     def create[T](obj: Double, clone: Boolean): typings.sugar.Array[T] = js.native
+    def create[T](obj: Unit, clone: Boolean): typings.sugar.Array[T] = js.native
     def create[T](obj: ArrayLike[T]): typings.sugar.Array[T] = js.native
     def create[T](obj: ArrayLike[T], clone: Boolean): typings.sugar.Array[T] = js.native
     
@@ -517,13 +591,8 @@ object Array {
     def every[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): Boolean = js.native
     
     def everyFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def everyFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def everyFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def everyFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def exclude[T](instance: typings.sugar.Array[T], search: T): typings.sugar.Array[T] = js.native
     def exclude[T](instance: typings.sugar.Array[T], search: searchFn[T]): typings.sugar.Array[T] = js.native
@@ -534,13 +603,8 @@ object Array {
     def filter[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): typings.sugar.Array[T] = js.native
     
     def filterFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def filterFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def filterFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def filterFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def find[T](instance: typings.sugar.Array[T], search: T): T = js.native
     def find[T](instance: typings.sugar.Array[T], search: T, context: js.Any): T = js.native
@@ -548,13 +612,8 @@ object Array {
     def find[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): T = js.native
     
     def findFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def findFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def findFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def findFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def findIndex[T](instance: typings.sugar.Array[T], search: T): Double = js.native
     def findIndex[T](instance: typings.sugar.Array[T], search: T, context: js.Any): Double = js.native
@@ -562,13 +621,8 @@ object Array {
     def findIndex[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): Double = js.native
     
     def findIndexFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def findIndexFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def findIndexFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def findIndexFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def first[T](instance: typings.sugar.Array[T]): T = js.native
     def first[T](instance: typings.sugar.Array[T], num: Double): T = js.native
@@ -577,13 +631,8 @@ object Array {
     def flatten[T](instance: typings.sugar.Array[T], limit: Double): typings.sugar.Array[T] = js.native
     
     def forEachFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def forEachFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def forEachFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def forEachFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def from[T](instance: typings.sugar.Array[T], index: Double): typings.sugar.Array[T] = js.native
     
@@ -633,11 +682,11 @@ object Array {
     def last[T](instance: typings.sugar.Array[T], num: Double): T = js.native
     
     def least[T, U](instance: typings.sugar.Array[T]): typings.sugar.Array[T] = js.native
-    def least[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: java.lang.String): typings.sugar.Array[T] = js.native
-    def least[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): typings.sugar.Array[T] = js.native
     def least[T, U](instance: typings.sugar.Array[T], all: Boolean): typings.sugar.Array[T] = js.native
     def least[T, U](instance: typings.sugar.Array[T], all: Boolean, map: java.lang.String): typings.sugar.Array[T] = js.native
     def least[T, U](instance: typings.sugar.Array[T], all: Boolean, map: mapFn[T, U]): typings.sugar.Array[T] = js.native
+    def least[T, U](instance: typings.sugar.Array[T], all: Unit, map: java.lang.String): typings.sugar.Array[T] = js.native
+    def least[T, U](instance: typings.sugar.Array[T], all: Unit, map: mapFn[T, U]): typings.sugar.Array[T] = js.native
     def least[T, U](instance: typings.sugar.Array[T], map: java.lang.String): typings.sugar.Array[T] = js.native
     def least[T, U](instance: typings.sugar.Array[T], map: mapFn[T, U]): typings.sugar.Array[T] = js.native
     
@@ -647,20 +696,15 @@ object Array {
     def map[T, U](instance: typings.sugar.Array[T], map: mapFn[T, U], context: js.Any): typings.sugar.Array[U] = js.native
     
     def mapFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def mapFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def mapFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def mapFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def max[T, U](instance: typings.sugar.Array[T]): T = js.native
-    def max[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-    def max[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
     def max[T, U](instance: typings.sugar.Array[T], all: Boolean): T = js.native
     def max[T, U](instance: typings.sugar.Array[T], all: Boolean, map: java.lang.String): T = js.native
     def max[T, U](instance: typings.sugar.Array[T], all: Boolean, map: mapFn[T, U]): T = js.native
+    def max[T, U](instance: typings.sugar.Array[T], all: Unit, map: java.lang.String): T = js.native
+    def max[T, U](instance: typings.sugar.Array[T], all: Unit, map: mapFn[T, U]): T = js.native
     def max[T, U](instance: typings.sugar.Array[T], map: java.lang.String): T = js.native
     def max[T, U](instance: typings.sugar.Array[T], map: mapFn[T, U]): T = js.native
     
@@ -669,20 +713,20 @@ object Array {
     def median[T, U](instance: typings.sugar.Array[T], map: mapFn[T, U]): Double = js.native
     
     def min[T, U](instance: typings.sugar.Array[T]): T = js.native
-    def min[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-    def min[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
     def min[T, U](instance: typings.sugar.Array[T], all: Boolean): T = js.native
     def min[T, U](instance: typings.sugar.Array[T], all: Boolean, map: java.lang.String): T = js.native
     def min[T, U](instance: typings.sugar.Array[T], all: Boolean, map: mapFn[T, U]): T = js.native
+    def min[T, U](instance: typings.sugar.Array[T], all: Unit, map: java.lang.String): T = js.native
+    def min[T, U](instance: typings.sugar.Array[T], all: Unit, map: mapFn[T, U]): T = js.native
     def min[T, U](instance: typings.sugar.Array[T], map: java.lang.String): T = js.native
     def min[T, U](instance: typings.sugar.Array[T], map: mapFn[T, U]): T = js.native
     
     def most[T, U](instance: typings.sugar.Array[T]): typings.sugar.Array[T] = js.native
-    def most[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: java.lang.String): typings.sugar.Array[T] = js.native
-    def most[T, U](instance: typings.sugar.Array[T], all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): typings.sugar.Array[T] = js.native
     def most[T, U](instance: typings.sugar.Array[T], all: Boolean): typings.sugar.Array[T] = js.native
     def most[T, U](instance: typings.sugar.Array[T], all: Boolean, map: java.lang.String): typings.sugar.Array[T] = js.native
     def most[T, U](instance: typings.sugar.Array[T], all: Boolean, map: mapFn[T, U]): typings.sugar.Array[T] = js.native
+    def most[T, U](instance: typings.sugar.Array[T], all: Unit, map: java.lang.String): typings.sugar.Array[T] = js.native
+    def most[T, U](instance: typings.sugar.Array[T], all: Unit, map: mapFn[T, U]): typings.sugar.Array[T] = js.native
     def most[T, U](instance: typings.sugar.Array[T], map: java.lang.String): typings.sugar.Array[T] = js.native
     def most[T, U](instance: typings.sugar.Array[T], map: mapFn[T, U]): typings.sugar.Array[T] = js.native
     
@@ -692,22 +736,12 @@ object Array {
     def none[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): Boolean = js.native
     
     def reduceFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def reduceFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def reduceFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def reduceFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def reduceRightFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def reduceRightFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def reduceRightFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def reduceRightFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def remove[T](instance: typings.sugar.Array[T], search: T): typings.sugar.Array[T] = js.native
     def remove[T](instance: typings.sugar.Array[T], search: searchFn[T]): typings.sugar.Array[T] = js.native
@@ -716,9 +750,9 @@ object Array {
     def removeAt[T](instance: typings.sugar.Array[T], start: Double, end: Double): typings.sugar.Array[T] = js.native
     
     def sample[T](instance: typings.sugar.Array[T]): T = js.native
-    def sample[T](instance: typings.sugar.Array[T], num: js.UndefOr[scala.Nothing], remove: Boolean): T = js.native
     def sample[T](instance: typings.sugar.Array[T], num: Double): T = js.native
     def sample[T](instance: typings.sugar.Array[T], num: Double, remove: Boolean): T = js.native
+    def sample[T](instance: typings.sugar.Array[T], num: Unit, remove: Boolean): T = js.native
     
     def setOption(name: java.lang.String, value: js.Any): Unit = js.native
     def setOption(options: ArrayOptions): Unit = js.native
@@ -731,18 +765,13 @@ object Array {
     def some[T](instance: typings.sugar.Array[T], search: searchFn[T], context: js.Any): Boolean = js.native
     
     def someFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, args: js.Any*): T = js.native
-    def someFromIndex[T](
-      instance: typings.sugar.Array[T],
-      startIndex: Double,
-      loop: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): T = js.native
     def someFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+    def someFromIndex[T](instance: typings.sugar.Array[T], startIndex: Double, loop: Unit, args: js.Any*): T = js.native
     
     def sortBy[T, U](instance: typings.sugar.Array[T]): typings.sugar.Array[T] = js.native
-    def sortBy[T, U](instance: typings.sugar.Array[T], map: js.UndefOr[scala.Nothing], desc: Boolean): typings.sugar.Array[T] = js.native
     def sortBy[T, U](instance: typings.sugar.Array[T], map: java.lang.String): typings.sugar.Array[T] = js.native
     def sortBy[T, U](instance: typings.sugar.Array[T], map: java.lang.String, desc: Boolean): typings.sugar.Array[T] = js.native
+    def sortBy[T, U](instance: typings.sugar.Array[T], map: Unit, desc: Boolean): typings.sugar.Array[T] = js.native
     def sortBy[T, U](instance: typings.sugar.Array[T], map: sortMapFn[T, U]): typings.sugar.Array[T] = js.native
     def sortBy[T, U](instance: typings.sugar.Array[T], map: sortMapFn[T, U], desc: Boolean): typings.sugar.Array[T] = js.native
     

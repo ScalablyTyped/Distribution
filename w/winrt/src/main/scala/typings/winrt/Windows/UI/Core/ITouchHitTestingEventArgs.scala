@@ -4,11 +4,12 @@ import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITouchHitTestingEventArgs extends ICoreWindowEventArgs {
+trait ITouchHitTestingEventArgs
+  extends StObject
+     with ICoreWindowEventArgs {
   
   var boundingBox: Rect = js.native
   

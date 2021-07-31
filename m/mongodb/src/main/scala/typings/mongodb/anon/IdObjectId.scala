@@ -3,13 +3,11 @@ package typings.mongodb.anon
 import typings.bson.mod.ObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdObjectId extends StObject {
   
-  var _id: ObjectId = js.native
+  var _id: ObjectId
 }
 object IdObjectId {
   

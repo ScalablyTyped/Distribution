@@ -2,7 +2,6 @@ package typings.vscode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,13 +20,13 @@ trait Thenable[T] extends StObject {
     * @returns A Promise for the completion of which ever callback is executed.
     */
   def `then`[TResult](): Thenable[TResult] = js.native
-  def `then`[TResult](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult] | Unit]
-  ): Thenable[TResult] = js.native
   def `then`[TResult](onfulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]]): Thenable[TResult] = js.native
   def `then`[TResult](
     onfulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult] | Unit]
+  ): Thenable[TResult] = js.native
+  def `then`[TResult](
+    onfulfilled: Unit,
     onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult] | Unit]
   ): Thenable[TResult] = js.native
 }

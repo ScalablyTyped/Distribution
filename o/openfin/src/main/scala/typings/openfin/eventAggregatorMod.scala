@@ -4,7 +4,6 @@ import typings.openfin.emitterMapMod.EmitterMap
 import typings.openfin.transportMod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventAggregatorMod {
@@ -13,6 +12,6 @@ object eventAggregatorMod {
   @js.native
   class EventAggregator () extends EmitterMap {
     
-    def dispatchEvent(message: Message[_]): Boolean = js.native
+    def dispatchEvent(message: Message[js.Any]): Boolean = js.native
   }
 }

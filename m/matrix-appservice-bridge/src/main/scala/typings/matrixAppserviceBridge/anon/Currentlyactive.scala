@@ -5,21 +5,19 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.online
 import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.unavailable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currentlyactive extends StObject {
   
-  var avatar_url: js.UndefOr[String] = js.native
+  var avatar_url: js.UndefOr[String] = js.undefined
   
-  var currently_active: js.UndefOr[Boolean] = js.native
+  var currently_active: js.UndefOr[Boolean] = js.undefined
   
-  var last_active_ago: js.UndefOr[Double] = js.native
+  var last_active_ago: js.UndefOr[Double] = js.undefined
   
-  var presence: online | offline | unavailable = js.native
+  var presence: online | offline | unavailable
   
-  var status_msg: js.UndefOr[String] = js.native
+  var status_msg: js.UndefOr[String] = js.undefined
 }
 object Currentlyactive {
   

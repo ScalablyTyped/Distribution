@@ -4,36 +4,34 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of this service correspond to the similar named attributes and subelements of the XML element {@link chart2} :increment in the {@link
   * chart2} file format.
   */
-@js.native
 trait LogicTargetModel extends StObject {
   
   /**
     * not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service {@link
     * com.sun.star.chart2.CoordinateSystem}
     */
-  var CoordinateSystems: SafeArray[XPropertySet] = js.native
+  var CoordinateSystems: SafeArray[XPropertySet]
   
   /** identifies an instance of this service within one chart document. */
-  var ID: String = js.native
+  var ID: String
   
   /**
     * identifies an instance of the service com::sun::star::chart2::LegendModel within one chart document. that instance is used to automatically calculate
     * missing properties
     */
-  var LegendID: String = js.native
+  var LegendID: String
   
   /**
     * MAYBEVOID, not BOUND nor CONSTRAINED in terms of Listener notifications, each element in the sequence must implement the service {@link
     * com.sun.star.chart2.LogicTargetModel}
     */
-  var LogicTargetModels: SafeArray[XPropertySet] = js.native
+  var LogicTargetModels: SafeArray[XPropertySet]
 }
 object LogicTargetModel {
   

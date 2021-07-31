@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumberError extends StObject {
   
   /**
     * The error code.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.chimeMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.chimeMod.ErrorCode] = js.undefined
   
   /**
     * The error message.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number ID for which the action failed.
     */
-  var PhoneNumberId: js.UndefOr[NonEmptyString] = js.native
+  var PhoneNumberId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object PhoneNumberError {
   

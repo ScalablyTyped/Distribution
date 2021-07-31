@@ -3,7 +3,6 @@ package typings.phonegap
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -36,20 +35,20 @@ trait Contact extends StObject {
   var photos: js.Array[ContactField] = js.native
   
   def remove(): Unit = js.native
-  def remove(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* contactError */ ContactError, Unit]): Unit = js.native
   def remove(onSuccess: js.Function1[/* contacts */ Contacts, Unit]): Unit = js.native
   def remove(
     onSuccess: js.Function1[/* contacts */ Contacts, Unit],
     onError: js.Function1[/* contactError */ ContactError, Unit]
   ): Unit = js.native
+  def remove(onSuccess: Unit, onError: js.Function1[/* contactError */ ContactError, Unit]): Unit = js.native
   
   def save(): Unit = js.native
-  def save(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* contactError */ ContactError, Unit]): Unit = js.native
   def save(onSuccess: js.Function1[/* contacts */ Contacts, Unit]): Unit = js.native
   def save(
     onSuccess: js.Function1[/* contacts */ Contacts, Unit],
     onError: js.Function1[/* contactError */ ContactError, Unit]
   ): Unit = js.native
+  def save(onSuccess: Unit, onError: js.Function1[/* contactError */ ContactError, Unit]): Unit = js.native
   
   var urls: js.Array[ContactField] = js.native
 }

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secretRotationMod {
@@ -52,6 +51,10 @@ object secretRotationMod {
   /* static members */
   object SecretRotation {
     
+    @JSImport("@pulumi/aws/secretsmanager/secretRotation", "SecretRotation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecretRotation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,47 +64,41 @@ object secretRotationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/secretsmanager/secretRotation", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SecretRotation = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secretRotation", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SecretRotation = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secretRotation", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretRotationState): SecretRotation = js.native
-    @JSImport("@pulumi/aws/secretsmanager/secretRotation", "SecretRotation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecretRotationState, opts: CustomResourceOptions): SecretRotation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretRotation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretRotation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretRotationState): SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecretRotation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecretRotationState, opts: CustomResourceOptions): SecretRotation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretRotation]
     
     /**
       * Returns true if the given object is an instance of SecretRotation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/secretsmanager/secretRotation", "SecretRotation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretRotation.SecretRotation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretRotation.SecretRotation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretRotation.SecretRotation */ Boolean]
   }
   
-  @js.native
   trait SecretRotationArgs extends StObject {
     
     /**
       * Specifies the ARN of the Lambda function that can rotate the secret.
       */
-    val rotationLambdaArn: Input[String] = js.native
+    val rotationLambdaArn: Input[String]
     
     /**
       * A structure that defines the rotation configuration for this secret. Defined below.
       */
-    val rotationRules: Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRotationRules] = js.native
+    val rotationRules: Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRotationRules]
     
     /**
       * Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.
       */
-    val secretId: Input[String] = js.native
+    val secretId: Input[String]
     
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SecretRotationArgs {
     
@@ -135,30 +132,29 @@ object secretRotationMod {
     }
   }
   
-  @js.native
   trait SecretRotationState extends StObject {
     
     /**
       * Specifies whether automatic rotation is enabled for this secret.
       */
-    val rotationEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val rotationEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the ARN of the Lambda function that can rotate the secret.
       */
-    val rotationLambdaArn: js.UndefOr[Input[String]] = js.native
+    val rotationLambdaArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A structure that defines the rotation configuration for this secret. Defined below.
       */
-    val rotationRules: js.UndefOr[Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRotationRules]] = js.native
+    val rotationRules: js.UndefOr[Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRotationRules]] = js.undefined
     
     /**
       * Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.
       */
-    val secretId: js.UndefOr[Input[String]] = js.native
+    val secretId: js.UndefOr[Input[String]] = js.undefined
     
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SecretRotationState {
     

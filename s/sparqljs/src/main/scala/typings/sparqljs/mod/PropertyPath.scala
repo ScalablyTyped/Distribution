@@ -9,28 +9,25 @@ import typings.sparqljs.sparqljsStrings.^
 import typings.sparqljs.sparqljsStrings.path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyPath extends StObject {
   
-  var items: js.Array[IriTerm | PropertyPath] = js.native
+  var items: js.Array[IriTerm | PropertyPath]
   
-  var pathType: Verticalline | Slash | ^ | Plussign | Asterisk | Exclamationmark = js.native
+  var pathType: Verticalline | Slash | ^ | Plussign | Asterisk | Exclamationmark
   
-  var `type`: path = js.native
+  var `type`: path
 }
 object PropertyPath {
   
   @scala.inline
   def apply(
     items: js.Array[IriTerm | PropertyPath],
-    pathType: Verticalline | Slash | ^ | Plussign | Asterisk | Exclamationmark,
-    `type`: path
+    pathType: Verticalline | Slash | ^ | Plussign | Asterisk | Exclamationmark
   ): PropertyPath = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], pathType = pathType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[PropertyPath]
   }
   

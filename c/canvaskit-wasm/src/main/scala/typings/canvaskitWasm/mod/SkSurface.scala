@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkSurface extends EmbindObject[SkSurface] {
+trait SkSurface
+  extends StObject
+     with EmbindObject[SkSurface] {
   
   /**
     * Call the given callback and save the result of that draw to a SkPicture with the

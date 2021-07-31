@@ -3,7 +3,6 @@ package typings.agGrid.mod
 import typings.agGrid.gridOptionsMod.GridOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ag-grid", "ComponentUtil")
@@ -77,35 +76,28 @@ object ComponentUtil {
   @scala.inline
   def STRING_PROPERTIES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING_PROPERTIES")(x.asInstanceOf[js.Any])
   
-  @JSImport("ag-grid", "ComponentUtil.copyAttributesToGridOptions")
-  @js.native
-  def copyAttributesToGridOptions(gridOptions: GridOptions, component: js.Any): GridOptions = js.native
-  @JSImport("ag-grid", "ComponentUtil.copyAttributesToGridOptions")
-  @js.native
-  def copyAttributesToGridOptions(gridOptions: GridOptions, component: js.Any, skipEventDeprecationCheck: Boolean): GridOptions = js.native
+  @scala.inline
+  def copyAttributesToGridOptions(gridOptions: GridOptions, component: js.Any): GridOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAttributesToGridOptions")(gridOptions.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[GridOptions]
+  @scala.inline
+  def copyAttributesToGridOptions(gridOptions: GridOptions, component: js.Any, skipEventDeprecationCheck: Boolean): GridOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAttributesToGridOptions")(gridOptions.asInstanceOf[js.Any], component.asInstanceOf[js.Any], skipEventDeprecationCheck.asInstanceOf[js.Any])).asInstanceOf[GridOptions]
   
-  @JSImport("ag-grid", "ComponentUtil.getCallbackForEvent")
-  @js.native
-  def getCallbackForEvent(eventName: String): String = js.native
+  @scala.inline
+  def getCallbackForEvent(eventName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCallbackForEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ag-grid", "ComponentUtil.getEventCallbacks")
-  @js.native
-  def getEventCallbacks(): js.Array[String] = js.native
+  @scala.inline
+  def getEventCallbacks(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventCallbacks")().asInstanceOf[js.Array[String]]
   
-  @JSImport("ag-grid", "ComponentUtil.processOnChange")
-  @js.native
+  @scala.inline
   def processOnChange(
     changes: js.Any,
     gridOptions: GridOptions,
     api: typings.agGrid.gridApiMod.GridApi,
     columnApi: typings.agGrid.columnApiMod.ColumnApi
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processOnChange")(changes.asInstanceOf[js.Any], gridOptions.asInstanceOf[js.Any], api.asInstanceOf[js.Any], columnApi.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ag-grid", "ComponentUtil.toBoolean")
-  @js.native
-  def toBoolean(value: js.Any): Boolean = js.native
+  @scala.inline
+  def toBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ag-grid", "ComponentUtil.toNumber")
-  @js.native
-  def toNumber(value: js.Any): Double = js.native
+  @scala.inline
+  def toNumber(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

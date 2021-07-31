@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDoughnutChartSeries
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,47 +16,47 @@ trait IgDoughnutChartSeries
     * Gets or sets the palette of brushes to use for coloring the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.native
+  var brushes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     */
-  var formatLabel: js.UndefOr[js.Any] = js.native
+  var formatLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart's legend.
     */
-  var formatLegendLabel: js.UndefOr[js.Any] = js.native
+  var formatLegendLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets whether all surface interactions with the plot area should be disabled.
     */
-  var isSurfaceInteractionDisabled: js.UndefOr[Boolean] = js.native
+  var isSurfaceInteractionDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the data source for the chart.
     */
-  var itemsSource: js.UndefOr[js.Any] = js.native
+  var itemsSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the pixel amount by which the labels are offset from the edge of the slices.
     */
-  var labelExtent: js.UndefOr[Double] = js.native
+  var labelExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color for labels rendered inside of the pie chart.
     */
-  var labelInnerColor: js.UndefOr[String] = js.native
+  var labelInnerColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the property name that contains the labels.
     */
-  var labelMemberPath: js.UndefOr[String] = js.native
+  var labelMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the color for labels rendered outside of the pie chart.
     */
-  var labelOuterColor: js.UndefOr[String] = js.native
+  var labelOuterColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the position of chart labels.
@@ -69,17 +68,17 @@ trait IgDoughnutChartSeries
     * "outsideEnd" Labels will be displayed outside the container.
     * "bestFit" Labels will automatically decide their location.
     */
-  var labelsPosition: js.UndefOr[String] = js.native
+  var labelsPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the margin between a label and its leader line. The default is 6 pixels.
     */
-  var leaderLineMargin: js.UndefOr[Double] = js.native
+  var leaderLineMargin: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the style for the leader lines.
     */
-  var leaderLineStyle: js.UndefOr[js.Any] = js.native
+  var leaderLineStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets what type of leader lines will be used for the outside end labels.
@@ -89,7 +88,7 @@ trait IgDoughnutChartSeries
     * "arc" A curved line is drawn between the slice and its label. The line follows makes a natural turn from the slice to the label.
     * "spline" A curved line is drawn between the slice and its label. The line starts radially from the slice and then turns to the label.
     */
-  var leaderLineType: js.UndefOr[String] = js.native
+  var leaderLineType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the leader lines are visible.
@@ -98,27 +97,27 @@ trait IgDoughnutChartSeries
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var leaderLineVisibility: js.UndefOr[String] = js.native
+  var leaderLineVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the legend used for the current chart.
     */
-  var legend: js.UndefOr[js.Any] = js.native
+  var legend: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the property name that contains the legend labels.
     */
-  var legendLabelMemberPath: js.UndefOr[String] = js.native
+  var legendLabelMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the label of the Others slice.
     */
-  var othersCategoryText: js.UndefOr[String] = js.native
+  var othersCategoryText: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the threshold value that determines if slices are grouped into the Others slice.
     */
-  var othersCategoryThreshold: js.UndefOr[Double] = js.native
+  var othersCategoryThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets whether to use numeric or percent-based threshold value.
@@ -127,39 +126,39 @@ trait IgDoughnutChartSeries
     * "number" Data value is compared directly to the value of OthersCategoryThreshold.
     * "percent" Data value is compared to OthersCategoryThreshold as a percentage of the total.
     */
-  var othersCategoryType: js.UndefOr[String] = js.native
+  var othersCategoryType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the palette of brushes to use for outlines on the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.native
+  var outlines: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.
     */
-  var radiusFactor: js.UndefOr[Double] = js.native
+  var radiusFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the style used when a slice is selected.
     */
-  var selectedStyle: js.UndefOr[js.Any] = js.native
+  var selectedStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Whether the series should render a tooltip.
     */
-  var showTooltip: js.UndefOr[Boolean] = js.native
+  var showTooltip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the starting angle of the chart.
     * The default zero value is equivalent to 3 o'clock.
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of template or the template itself that chart tooltip will use to render.
     */
-  var tooltipTemplate: js.UndefOr[String] = js.native
+  var tooltipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the current series type.
@@ -167,12 +166,12 @@ trait IgDoughnutChartSeries
     * Valid values:
     * "flat" Series has flat 1-dimensional data.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or Sets the property name that contains the values.
     */
-  var valueMemberPath: js.UndefOr[String] = js.native
+  var valueMemberPath: js.UndefOr[String] = js.undefined
 }
 object IgDoughnutChartSeries {
   

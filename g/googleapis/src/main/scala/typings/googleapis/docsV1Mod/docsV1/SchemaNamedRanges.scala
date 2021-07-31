@@ -2,25 +2,23 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of all the NamedRanges in the document that share a given
   * name.
   */
-@js.native
 trait SchemaNamedRanges extends StObject {
   
   /**
     * The name that all the named ranges share.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The NamedRanges that share the same name.
     */
-  var namedRanges: js.UndefOr[js.Array[SchemaNamedRange]] = js.native
+  var namedRanges: js.UndefOr[js.Array[SchemaNamedRange]] = js.undefined
 }
 object SchemaNamedRanges {
   

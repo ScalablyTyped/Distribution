@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopRequestSource extends StObject {
   
   /**
     * Specifies whether Amazon Rekognition or Amazon Textract are used as the integration source. The default field settings and JSON parsing rules are different based on the integration source. Valid values:
     */
-  var AwsManagedHumanLoopRequestSource: typings.awsSdk.sagemakerMod.AwsManagedHumanLoopRequestSource = js.native
+  var AwsManagedHumanLoopRequestSource: typings.awsSdk.sagemakerMod.AwsManagedHumanLoopRequestSource
 }
 object HumanLoopRequestSource {
   

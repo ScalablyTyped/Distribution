@@ -3,13 +3,11 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.IO.StreamHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TakeResponseBodyForInterceptionAsStreamResponse extends StObject {
   
-  var stream: StreamHandle = js.native
+  var stream: StreamHandle
 }
 object TakeResponseBodyForInterceptionAsStreamResponse {
   

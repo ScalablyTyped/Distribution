@@ -12,7 +12,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbSectionMod extends Shortcut {
@@ -29,9 +28,9 @@ object breadcrumbSectionMod extends Shortcut {
   @js.native
   val default: ComponentClass[BreadcrumbSectionProps, ComponentState] = js.native
   
-  @js.native
   trait BreadcrumbSectionProps
-    extends StrictBreadcrumbSectionProps
+    extends StObject
+       with StrictBreadcrumbSectionProps
        with /* key */ StringDictionary[js.Any]
   object BreadcrumbSectionProps {
     
@@ -42,29 +41,28 @@ object breadcrumbSectionMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictBreadcrumbSectionProps extends StObject {
     
     /** Style as the currently active section. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Render as an `a` tag instead of a `div` and adds the href attribute. */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /** Render as an `a` tag instead of a `div`. */
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called on click. When passed, the component will render as an `a`
@@ -79,7 +77,7 @@ object breadcrumbSectionMod extends Shortcut {
           /* data */ BreadcrumbSectionProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object StrictBreadcrumbSectionProps {
     

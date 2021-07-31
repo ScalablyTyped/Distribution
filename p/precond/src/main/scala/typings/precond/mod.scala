@@ -2,78 +2,61 @@ package typings.precond
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("precond", "checkArgument")
+  @JSImport("precond", JSImport.Namespace)
   @js.native
-  def checkArgument(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): Unit = js.native
-  @JSImport("precond", "checkArgument")
-  @js.native
-  def checkArgument(value: js.Any, message: String, formatArgs: js.Any*): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("precond", "checkIsArray")
-  @js.native
-  def checkIsArray(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsArray")
-  @js.native
-  def checkIsArray(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkArgument(value: js.Any, message: String, formatArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkArgument")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkArgument(value: js.Any, message: Unit, formatArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkArgument")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("precond", "checkIsBoolean")
-  @js.native
-  def checkIsBoolean(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsBoolean")
-  @js.native
-  def checkIsBoolean(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsArray(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsArray")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsArray(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsArray")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkIsDef")
-  @js.native
-  def checkIsDef(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsDef")
-  @js.native
-  def checkIsDef(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsBoolean(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsBoolean")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsBoolean(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsBoolean")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkIsDefAndNotNull")
-  @js.native
-  def checkIsDefAndNotNull(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsDefAndNotNull")
-  @js.native
-  def checkIsDefAndNotNull(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsDef(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsDef")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsDef(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsDef")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkIsFunction")
-  @js.native
-  def checkIsFunction(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsFunction")
-  @js.native
-  def checkIsFunction(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsDefAndNotNull(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsDefAndNotNull")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsDefAndNotNull(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsDefAndNotNull")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkIsNumber")
-  @js.native
-  def checkIsNumber(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsNumber")
-  @js.native
-  def checkIsNumber(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsFunction(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsFunction")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsFunction(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsFunction")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkIsObject")
-  @js.native
-  def checkIsObject(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsObject")
-  @js.native
-  def checkIsObject(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsNumber(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsNumber")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsNumber(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsNumber")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkIsString")
-  @js.native
-  def checkIsString(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): js.Any = js.native
-  @JSImport("precond", "checkIsString")
-  @js.native
-  def checkIsString(value: js.Any, message: String, formatArgs: js.Any*): js.Any = js.native
+  @scala.inline
+  def checkIsObject(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsObject")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsObject(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsObject")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("precond", "checkState")
-  @js.native
-  def checkState(value: js.Any, message: js.UndefOr[scala.Nothing], formatArgs: js.Any*): Unit = js.native
-  @JSImport("precond", "checkState")
-  @js.native
-  def checkState(value: js.Any, message: String, formatArgs: js.Any*): Unit = js.native
+  @scala.inline
+  def checkIsString(value: js.Any, message: String, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsString")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def checkIsString(value: js.Any, message: Unit, formatArgs: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsString")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def checkState(value: js.Any, message: String, formatArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkState")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkState(value: js.Any, message: Unit, formatArgs: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkState")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any], formatArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

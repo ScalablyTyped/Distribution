@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectFileAndVersion extends StObject {
   
-  val ObjectFile: IObjectFile = js.native
+  val ObjectFile: IObjectFile
   
-  val ObjectVersion: IObjectVersionAndProperties = js.native
+  val ObjectVersion: IObjectVersionAndProperties
 }
 object IObjectFileAndVersion {
   

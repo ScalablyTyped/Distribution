@@ -2,51 +2,49 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dataset extends StObject {
   
   /**
     * The creation date and time (in Unix time) of the dataset.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset that you want metadata for.
     */
-  var datasetArn: js.UndefOr[Arn] = js.native
+  var datasetArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
     */
-  var datasetGroupArn: js.UndefOr[Arn] = js.native
+  var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * One of the following values:   Interactions   Items   Users  
     */
-  var datasetType: js.UndefOr[DatasetType] = js.native
+  var datasetType: js.UndefOr[DatasetType] = js.undefined
   
   /**
     * A time stamp that shows when the dataset was updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the dataset.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The ARN of the associated schema.
     */
-  var schemaArn: js.UndefOr[Arn] = js.native
+  var schemaArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The status of the dataset. A dataset can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object Dataset {
   

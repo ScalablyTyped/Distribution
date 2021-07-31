@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object PrimitiveTypedTemplateArgument {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.PrimitiveTypedTemplateArgument.create")
-  @js.native
-  def create(model: IModel): PrimitiveTypedTemplateArgument = js.native
+  @scala.inline
+  def create(model: IModel): PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PrimitiveTypedTemplateArgument]
   
   /**
     * Creates and returns a new PrimitiveTypedTemplateArgument instance in the SDK and on the server.
@@ -61,9 +59,8 @@ object PrimitiveTypedTemplateArgument {
     *  8.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.PrimitiveTypedTemplateArgument.createIn")
-  @js.native
-  def createIn(container: TypedTemplate): PrimitiveTypedTemplateArgument = js.native
+  @scala.inline
+  def createIn(container: TypedTemplate): PrimitiveTypedTemplateArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[PrimitiveTypedTemplateArgument]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.PrimitiveTypedTemplateArgument.structureTypeName")

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,23 +14,37 @@ sealed trait ListBullet extends StObject
 object ListBullet extends StObject {
   
   @js.native
-  sealed trait arrow extends ListBullet
+  sealed trait arrow
+    extends StObject
+       with ListBullet
   
   @js.native
-  sealed trait checkmark extends ListBullet
+  sealed trait checkmark
+    extends StObject
+       with ListBullet
   
   @js.native
-  sealed trait custom extends ListBullet
+  sealed trait custom
+    extends StObject
+       with ListBullet
   
   @js.native
-  sealed trait diamonds extends ListBullet
+  sealed trait diamonds
+    extends StObject
+       with ListBullet
   
   @js.native
-  sealed trait hollow extends ListBullet
+  sealed trait hollow
+    extends StObject
+       with ListBullet
   
   @js.native
-  sealed trait solid extends ListBullet
+  sealed trait solid
+    extends StObject
+       with ListBullet
   
   @js.native
-  sealed trait square extends ListBullet
+  sealed trait square
+    extends StObject
+       with ListBullet
 }

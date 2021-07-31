@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait configRequestProxyRules extends Object {
+trait configRequestProxyRules
+  extends StObject
+     with Object {
   
   /**
     * The URL of the proxy.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
-  var proxyUrl: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.undefined
   
   /**
     * URL prefix for resources that need to be accessed through a specific proxy.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
-  var urlPrefix: js.UndefOr[String] = js.native
+  var urlPrefix: js.UndefOr[String] = js.undefined
 }
 object configRequestProxyRules {
   

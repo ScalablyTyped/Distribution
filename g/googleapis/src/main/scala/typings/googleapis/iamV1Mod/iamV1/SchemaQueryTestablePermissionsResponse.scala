@@ -2,25 +2,23 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response containing permissions which can be tested on a resource.
   */
-@js.native
 trait SchemaQueryTestablePermissionsResponse extends StObject {
   
   /**
     * To retrieve the next page of results, set
     * `QueryTestableRolesRequest.page_token` to this value.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The Permissions testable on the requested resource.
     */
-  var permissions: js.UndefOr[js.Array[SchemaPermission]] = js.native
+  var permissions: js.UndefOr[js.Array[SchemaPermission]] = js.undefined
 }
 object SchemaQueryTestablePermissionsResponse {
   

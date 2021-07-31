@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWatchOptions extends StObject {
   
   // server realtime data init & change event
-  def onChange(snapshot: ISnapshot): Unit = js.native
+  def onChange(snapshot: ISnapshot): Unit
   
   // error while connecting / listening
-  def onError(error: js.Any): Unit = js.native
+  def onError(error: js.Any): Unit
 }
 object IWatchOptions {
   

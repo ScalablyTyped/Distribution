@@ -3,15 +3,13 @@ package typings.popperjsCore.anon
 import typings.popperjsCore.typesMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reference extends StObject {
   
-  var popper: Rect = js.native
+  var popper: Rect
   
-  var reference: Rect = js.native
+  var reference: Rect
 }
 object Reference {
   

@@ -2,137 +2,135 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticipantStats extends StObject {
   
-  var assists: Double = js.native
+  var assists: Double
   
-  var champLevel: Double = js.native
+  var champLevel: Double
   
-  var combatPlayerScore: Double = js.native
+  var combatPlayerScore: Double
   
-  var deaths: Double = js.native
+  var deaths: Double
   
-  var doubleKills: Double = js.native
+  var doubleKills: Double
   
-  var firstBloodAssist: Boolean = js.native
+  var firstBloodAssist: Boolean
   
-  var firstBloodKill: Boolean = js.native
+  var firstBloodKill: Boolean
   
-  var firstInhibitorAssist: Boolean = js.native
+  var firstInhibitorAssist: Boolean
   
-  var firstInhibitorKill: Boolean = js.native
+  var firstInhibitorKill: Boolean
   
-  var firstTowerAssist: Boolean = js.native
+  var firstTowerAssist: Boolean
   
-  var firstTowerKill: Boolean = js.native
+  var firstTowerKill: Boolean
   
-  var goldEarned: Double = js.native
+  var goldEarned: Double
   
-  var goldSpent: Double = js.native
+  var goldSpent: Double
   
-  var inhibitorKills: Double = js.native
+  var inhibitorKills: Double
   
-  var item0: Double = js.native
+  var item0: Double
   
-  var item1: Double = js.native
+  var item1: Double
   
-  var item2: Double = js.native
+  var item2: Double
   
-  var item3: Double = js.native
+  var item3: Double
   
-  var item4: Double = js.native
+  var item4: Double
   
-  var item5: Double = js.native
+  var item5: Double
   
-  var item6: Double = js.native
+  var item6: Double
   
-  var killingSprees: Double = js.native
+  var killingSprees: Double
   
-  var kills: Double = js.native
+  var kills: Double
   
-  var largestCriticalStrike: Double = js.native
+  var largestCriticalStrike: Double
   
-  var largestKillingSpree: Double = js.native
+  var largestKillingSpree: Double
   
-  var largestMultiKill: Double = js.native
+  var largestMultiKill: Double
   
-  var magicDamageDealt: Double = js.native
+  var magicDamageDealt: Double
   
-  var magicDamageDealtToChampions: Double = js.native
+  var magicDamageDealtToChampions: Double
   
-  var magicDamageTaken: Double = js.native
+  var magicDamageTaken: Double
   
-  var minionsKilled: Double = js.native
+  var minionsKilled: Double
   
-  var neutralMinionsKilled: Double = js.native
+  var neutralMinionsKilled: Double
   
-  var neutralMinionsKilledEnemyJungle: Double = js.native
+  var neutralMinionsKilledEnemyJungle: Double
   
-  var neutralMinionsKilledTeamJungle: Double = js.native
+  var neutralMinionsKilledTeamJungle: Double
   
-  var nodeCapture: Double = js.native
+  var nodeCapture: Double
   
-  var nodeCaptureAssist: Double = js.native
+  var nodeCaptureAssist: Double
   
-  var nodeNeutralize: Double = js.native
+  var nodeNeutralize: Double
   
-  var nodeNeutralizeAssist: Double = js.native
+  var nodeNeutralizeAssist: Double
   
-  var objectivePlayerScore: Double = js.native
+  var objectivePlayerScore: Double
   
-  var pentaKills: Double = js.native
+  var pentaKills: Double
   
-  var physicalDamageDealt: Double = js.native
+  var physicalDamageDealt: Double
   
-  var physicalDamageDealtToChampions: Double = js.native
+  var physicalDamageDealtToChampions: Double
   
-  var physicalDamageTaken: Double = js.native
+  var physicalDamageTaken: Double
   
-  var quadraKills: Double = js.native
+  var quadraKills: Double
   
-  var sightWardsBoughtInGame: Double = js.native
+  var sightWardsBoughtInGame: Double
   
-  var teamObjective: Double = js.native
+  var teamObjective: Double
   
-  var totalDamageDealt: Double = js.native
+  var totalDamageDealt: Double
   
-  var totalDamageDealtToChampions: Double = js.native
+  var totalDamageDealtToChampions: Double
   
-  var totalDamageTaken: Double = js.native
+  var totalDamageTaken: Double
   
-  var totalHeal: Double = js.native
+  var totalHeal: Double
   
-  var totalPlayerScore: Double = js.native
+  var totalPlayerScore: Double
   
-  var totalScoreRank: Double = js.native
+  var totalScoreRank: Double
   
-  var totalTimeCrowdControlDealt: Double = js.native
+  var totalTimeCrowdControlDealt: Double
   
-  var totalUnitsHealed: Double = js.native
+  var totalUnitsHealed: Double
   
-  var towerKills: Double = js.native
+  var towerKills: Double
   
-  var tripleKills: Double = js.native
+  var tripleKills: Double
   
-  var trueDamageDealt: Double = js.native
+  var trueDamageDealt: Double
   
-  var trueDamageDealtToChampions: Double = js.native
+  var trueDamageDealtToChampions: Double
   
-  var trueDamageTaken: Double = js.native
+  var trueDamageTaken: Double
   
-  var unrealKills: Double = js.native
+  var unrealKills: Double
   
-  var visionWardsBoughtInGame: Double = js.native
+  var visionWardsBoughtInGame: Double
   
-  var wardsKilled: Double = js.native
+  var wardsKilled: Double
   
-  var wardsPlaced: Double = js.native
+  var wardsPlaced: Double
   
-  var winner: Boolean = js.native
+  var winner: Boolean
 }
 object ParticipantStats {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -42,7 +41,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait LoggerType extends Logger {
+  trait LoggerType
+    extends StObject
+       with Logger {
     
     def child(contextOrFunction: MessageContextType): LoggerType = js.native
     /**
@@ -457,18 +458,18 @@ object mod extends Shortcut {
     var warn_Original: Logger = js.native
   }
   
-  @js.native
   trait MessageContextType
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
     @JSName("package")
-    var _package: js.UndefOr[String] = js.native
+    var _package: js.UndefOr[String] = js.undefined
     
-    var application: js.UndefOr[String] = js.native
+    var application: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[Double] = js.native
+    var logLevel: js.UndefOr[Double] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
   }
   object MessageContextType {
     
@@ -509,18 +510,17 @@ object mod extends Shortcut {
   
   type MessageEventHandlerType = js.Function1[/* message */ MessageType, Unit]
   
-  @js.native
   trait MessageType extends StObject {
     
-    var context: MessageContextType = js.native
+    var context: MessageContextType
     
-    var message: String = js.native
+    var message: String
     
-    var sequence: Double = js.native
+    var sequence: Double
     
-    var time: Double = js.native
+    var time: Double
     
-    var version: String = js.native
+    var version: String
   }
   object MessageType {
     
@@ -550,12 +550,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait RoarrGlobalStateType extends WriterType {
+  trait RoarrGlobalStateType
+    extends StObject
+       with WriterType {
     
-    var sequence: Double = js.native
+    var sequence: Double
     
-    var versions: js.Array[String] = js.native
+    var versions: js.Array[String]
   }
   object RoarrGlobalStateType {
     
@@ -583,10 +584,9 @@ object mod extends Shortcut {
   
   type TranslateMessageFunctionType = js.Function1[/* message */ MessageType, MessageType]
   
-  @js.native
   trait WriterType extends StObject {
     
-    def write(message: String): Unit = js.native
+    def write(message: String): Unit
   }
   object WriterType {
     

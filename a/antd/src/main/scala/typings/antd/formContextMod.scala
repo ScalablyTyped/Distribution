@@ -11,7 +11,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formContextMod {
@@ -32,24 +31,23 @@ object formContextMod {
   @js.native
   val FormProvider: FC[FormProviderProps] = js.native
   
-  @js.native
   trait FormContextProps extends StObject {
     
-    var colon: js.UndefOr[Boolean] = js.native
+    var colon: js.UndefOr[Boolean] = js.undefined
     
-    def itemRef(name: js.Array[String | Double]): js.Function1[/* node */ ReactElement, Unit] = js.native
+    def itemRef(name: js.Array[String | Double]): js.Function1[/* node */ ReactElement, Unit]
     
-    var labelAlign: js.UndefOr[FormLabelAlign] = js.native
+    var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
     
-    var labelCol: js.UndefOr[ColProps] = js.native
+    var labelCol: js.UndefOr[ColProps] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var requiredMark: js.UndefOr[RequiredMark] = js.native
+    var requiredMark: js.UndefOr[RequiredMark] = js.undefined
     
-    var vertical: Boolean = js.native
+    var vertical: Boolean
     
-    var wrapperCol: js.UndefOr[ColProps] = js.native
+    var wrapperCol: js.UndefOr[ColProps] = js.undefined
   }
   object FormContextProps {
     
@@ -109,10 +107,9 @@ object formContextMod {
     }
   }
   
-  @js.native
   trait FormItemContextProps extends StObject {
     
-    def updateItemErrors(name: String, errors: js.Array[String]): Unit = js.native
+    def updateItemErrors(name: String, errors: js.Array[String]): Unit
   }
   object FormItemContextProps {
     
@@ -130,12 +127,11 @@ object formContextMod {
     }
   }
   
-  @js.native
   trait FormItemPrefixContextProps extends StObject {
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var status: js.UndefOr[ValidateStatus] = js.native
+    var status: js.UndefOr[ValidateStatus] = js.undefined
   }
   object FormItemPrefixContextProps {
     
@@ -160,12 +156,11 @@ object formContextMod {
   }
   
   /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/FormContext.FormProviderProps, 'validateMessages'> */
-  @js.native
   trait FormProviderProps extends StObject {
     
-    var onFormChange: js.UndefOr[js.Function2[/* name */ String, /* info */ FormChangeInfo, Unit]] = js.native
+    var onFormChange: js.UndefOr[js.Function2[/* name */ String, /* info */ FormChangeInfo, Unit]] = js.undefined
     
-    var onFormFinish: js.UndefOr[js.Function2[/* name */ String, /* info */ FormFinishInfo, Unit]] = js.native
+    var onFormFinish: js.UndefOr[js.Function2[/* name */ String, /* info */ FormFinishInfo, Unit]] = js.undefined
   }
   object FormProviderProps {
     

@@ -10,9 +10,9 @@ Video player based on HTML5Video
 | ------------------ | :-------------: |
 | Full name          | playable |
 | Keywords           | adaptive, dash, hls, html5, media, mpeg, mse, player, video |
-| # releases         | 34 |
+| # releases         | 20 |
 | # dependents       | 2 |
-| # downloads        | 40234 |
+| # downloads        | 54834 |
 | # stars            | 1 |
 
 ## Links

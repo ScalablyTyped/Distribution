@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateInstanceMarketOptionSpotOption extends StObject {
   
-  var blockDurationMinutes: Double = js.native
+  var blockDurationMinutes: Double
   
-  var instanceInterruptionBehavior: String = js.native
+  var instanceInterruptionBehavior: String
   
-  var maxPrice: String = js.native
+  var maxPrice: String
   
-  var spotInstanceType: String = js.native
+  var spotInstanceType: String
   
-  var validUntil: String = js.native
+  var validUntil: String
 }
 object GetLaunchTemplateInstanceMarketOptionSpotOption {
   

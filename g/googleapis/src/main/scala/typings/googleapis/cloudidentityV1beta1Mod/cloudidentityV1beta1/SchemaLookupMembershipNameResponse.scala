@@ -2,10 +2,8 @@ package typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLookupMembershipNameResponse extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaLookupMembershipNameResponse extends StObject {
     * unique id assigned to the Group to which Membership belongs to, and
     * `member_id` is the unique id assigned to the member.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLookupMembershipNameResponse {
   

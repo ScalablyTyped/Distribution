@@ -4,7 +4,6 @@ import typings.twilioChat.sessionMod.Session
 import typings.twilioChat.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkMod {
@@ -26,7 +25,7 @@ object networkMod {
     
     var executeWithRetry: js.Any = js.native
     
-    def get(url: String): js.Promise[_] = js.native
+    def get(url: String): js.Promise[js.Any] = js.native
     
     var isExpired: js.Any = js.native
     
@@ -39,12 +38,11 @@ object networkMod {
     var timer: js.Any = js.native
   }
   
-  @js.native
   trait NetworkServices extends StObject {
     
-    var session: Session = js.native
+    var session: Session
     
-    var transport: Transport = js.native
+    var transport: Transport
   }
   object NetworkServices {
     

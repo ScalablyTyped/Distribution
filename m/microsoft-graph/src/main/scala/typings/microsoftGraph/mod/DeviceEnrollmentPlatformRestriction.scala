@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceEnrollmentPlatformRestriction extends StObject {
   
   // Max OS version supported
-  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Min OS version supported
-  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Block personally owned devices from enrolling
-  var personalDeviceEnrollmentBlocked: js.UndefOr[Boolean] = js.native
+  var personalDeviceEnrollmentBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Block the platform from enrolling
-  var platformBlocked: js.UndefOr[Boolean] = js.native
+  var platformBlocked: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceEnrollmentPlatformRestriction {
   

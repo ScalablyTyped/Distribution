@@ -2,31 +2,29 @@ package typings.reactOnsenui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentStyle extends StObject {
   
-  var contentStyle: js.UndefOr[js.Any] = js.native
+  var contentStyle: js.UndefOr[js.Any] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onInfiniteScroll: js.UndefOr[js.Function1[/* doneCallback */ js.Function0[Unit], Unit]] = js.native
+  var onInfiniteScroll: js.UndefOr[js.Function1[/* doneCallback */ js.Function0[Unit], Unit]] = js.undefined
   
-  var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+  var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var renderBottomToolbar: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderBottomToolbar: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var renderFixed: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderFixed: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var renderModal: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderModal: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var renderToolbar: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderToolbar: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object ContentStyle {
   

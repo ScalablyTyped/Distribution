@@ -2,11 +2,12 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SparkLine extends Nvd3Element {
+trait SparkLine
+  extends StObject
+     with Nvd3Element {
   
   def animate(): Boolean = js.native
   def animate(value: Boolean): this.type = js.native

@@ -2,34 +2,28 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var operator: UpdateOperator = js.native
+  var operator: UpdateOperator
   
-  var prefix: Boolean = js.native
+  var prefix: Boolean
   
   @JSName("type")
-  var type_UpdateExpression: typings.estree.estreeStrings.UpdateExpression = js.native
+  var type_UpdateExpression: typings.estree.estreeStrings.UpdateExpression
 }
 object UpdateExpression {
   
   @scala.inline
-  def apply(
-    argument: Expression,
-    operator: UpdateOperator,
-    prefix: Boolean,
-    `type`: typings.estree.estreeStrings.UpdateExpression
-  ): UpdateExpression = {
+  def apply(argument: Expression, operator: UpdateOperator, prefix: Boolean): UpdateExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UpdateExpression")
     __obj.asInstanceOf[UpdateExpression]
   }
   

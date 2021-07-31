@@ -2,45 +2,43 @@ package typings.reactSketchapp.propsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformProps extends StObject {
   
-  var origin: js.UndefOr[NumberProp] = js.native
+  var origin: js.UndefOr[NumberProp] = js.undefined
   
-  var originX: js.UndefOr[NumberProp] = js.native
+  var originX: js.UndefOr[NumberProp] = js.undefined
   
-  var originY: js.UndefOr[NumberProp] = js.native
+  var originY: js.UndefOr[NumberProp] = js.undefined
   
-  var rotate: js.UndefOr[NumberProp] = js.native
+  var rotate: js.UndefOr[NumberProp] = js.undefined
   
-  var rotation: js.UndefOr[NumberProp] = js.native
+  var rotation: js.UndefOr[NumberProp] = js.undefined
   
-  var scale: js.UndefOr[NumberProp] = js.native
+  var scale: js.UndefOr[NumberProp] = js.undefined
   
-  var scaleX: js.UndefOr[NumberProp] = js.native
+  var scaleX: js.UndefOr[NumberProp] = js.undefined
   
-  var scaleY: js.UndefOr[NumberProp] = js.native
+  var scaleY: js.UndefOr[NumberProp] = js.undefined
   
-  var skew: js.UndefOr[NumberProp] = js.native
+  var skew: js.UndefOr[NumberProp] = js.undefined
   
-  var skewX: js.UndefOr[NumberProp] = js.native
+  var skewX: js.UndefOr[NumberProp] = js.undefined
   
-  var skewY: js.UndefOr[NumberProp] = js.native
+  var skewY: js.UndefOr[NumberProp] = js.undefined
   
-  var transform: js.UndefOr[js.Object | String] = js.native
+  var transform: js.UndefOr[js.Object | String] = js.undefined
   
-  var translate: js.UndefOr[NumberProp] = js.native
+  var translate: js.UndefOr[NumberProp] = js.undefined
   
-  var translateX: js.UndefOr[NumberProp] = js.native
+  var translateX: js.UndefOr[NumberProp] = js.undefined
   
-  var translateY: js.UndefOr[NumberProp] = js.native
+  var translateY: js.UndefOr[NumberProp] = js.undefined
   
-  var x: js.UndefOr[NumberProp] = js.native
+  var x: js.UndefOr[NumberProp] = js.undefined
   
-  var y: js.UndefOr[NumberProp] = js.native
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 object TransformProps {
   

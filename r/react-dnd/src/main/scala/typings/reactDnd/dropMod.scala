@@ -7,20 +7,21 @@ import typings.reactDnd.monitorsMod.DropTargetMonitor
 import typings.reactDnd.targetConnectorMod.TargetConnector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropMod {
   
-  @JSImport("react-dnd/lib/hooks/internal/drop", "useDropHandler")
+  @JSImport("react-dnd/lib/hooks/internal/drop", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useDropHandler[DragObject /* <: DragObjectWithType */, DropResult, CustomProps](
     spec: MutableRefObject[DropTargetHookSpec[DragObject, DropResult, CustomProps]],
     monitor: DropTargetMonitor,
     connector: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDropHandler")(spec.asInstanceOf[js.Any], monitor.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-dnd/lib/hooks/internal/drop", "useDropTargetMonitor")
-  @js.native
-  def useDropTargetMonitor(): js.Tuple2[DropTargetMonitor, TargetConnector] = js.native
+  @scala.inline
+  def useDropTargetMonitor(): js.Tuple2[DropTargetMonitor, TargetConnector] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropTargetMonitor")().asInstanceOf[js.Tuple2[DropTargetMonitor, TargetConnector]]
 }

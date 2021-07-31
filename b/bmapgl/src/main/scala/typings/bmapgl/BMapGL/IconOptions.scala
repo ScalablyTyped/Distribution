@@ -2,23 +2,21 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconOptions extends StObject {
   
-  var anchor: js.UndefOr[Size] = js.native
+  var anchor: js.UndefOr[Size] = js.undefined
   
-  var imageOffset: js.UndefOr[Size] = js.native
+  var imageOffset: js.UndefOr[Size] = js.undefined
   
-  var imageSize: js.UndefOr[Size] = js.native
+  var imageSize: js.UndefOr[Size] = js.undefined
   
-  var infoWindowAnchor: js.UndefOr[Size] = js.native
+  var infoWindowAnchor: js.UndefOr[Size] = js.undefined
   
-  var printImageUrl: js.UndefOr[String] = js.native
+  var printImageUrl: js.UndefOr[String] = js.undefined
   
-  var srcset: js.UndefOr[js.Object] = js.native
+  var srcset: js.UndefOr[js.Object] = js.undefined
 }
 object IconOptions {
   

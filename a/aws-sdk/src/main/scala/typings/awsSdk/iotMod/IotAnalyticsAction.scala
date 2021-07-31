@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IotAnalyticsAction extends StObject {
   
   /**
     * Whether to process the action as a batch. The default value is false. When batchMode is true and the rule SQL statement evaluates to an Array, each Array element is delivered as a separate message when passed by  BatchPutMessage  to the AWS IoT Analytics channel. The resulting array can't have more than 100 messages.
     */
-  var batchMode: js.UndefOr[BatchMode] = js.native
+  var batchMode: js.UndefOr[BatchMode] = js.undefined
   
   /**
     * (deprecated) The ARN of the IoT Analytics channel to which message data will be sent.
     */
-  var channelArn: js.UndefOr[AwsArn] = js.native
+  var channelArn: js.UndefOr[AwsArn] = js.undefined
   
   /**
     * The name of the IoT Analytics channel to which message data will be sent.
     */
-  var channelName: js.UndefOr[ChannelName] = js.native
+  var channelName: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * The ARN of the role which has a policy that grants IoT Analytics permission to send message data via IoT Analytics (iotanalytics:BatchPutMessage).
     */
-  var roleArn: js.UndefOr[AwsArn] = js.native
+  var roleArn: js.UndefOr[AwsArn] = js.undefined
 }
 object IotAnalyticsAction {
   

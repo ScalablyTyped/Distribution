@@ -4,21 +4,19 @@ import typings.storybookUi.storybookUiStrings.bottom
 import typings.storybookUi.storybookUiStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsToolshown extends StObject {
   
-  var isFullscreen: Boolean = js.native
+  var isFullscreen: Boolean
   
-  var isToolshown: Boolean = js.native
+  var isToolshown: Boolean
   
-  var panelPosition: bottom | right = js.native
+  var panelPosition: bottom | right
   
-  var showNav: Boolean = js.native
+  var showNav: Boolean
   
-  var showPanel: Boolean = js.native
+  var showPanel: Boolean
 }
 object IsToolshown {
   

@@ -3,39 +3,39 @@ package typings.phaser.spine
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedAssetManager extends Disposable {
+trait SharedAssetManager
+  extends StObject
+     with Disposable {
   
-  var clientAssets: js.Any = js.native
+  var clientAssets: js.Any
   
-  var errors: js.Any = js.native
+  var errors: js.Any
   
-  def get(clientId: String, path: String): js.Any = js.native
+  def get(clientId: String, path: String): js.Any
   
-  def getErrors(): Map[String] = js.native
+  def getErrors(): Map[String]
   
-  def hasErrors(): Boolean = js.native
+  def hasErrors(): Boolean
   
-  def isLoadingComplete(clientId: String): Boolean = js.native
+  def isLoadingComplete(clientId: String): Boolean
   
-  def loadJson(clientId: String, path: String): Unit = js.native
+  def loadJson(clientId: String, path: String): Unit
   
-  def loadText(clientId: String, path: String): Unit = js.native
+  def loadText(clientId: String, path: String): Unit
   
-  def loadTexture(clientId: String, textureLoader: js.Function1[/* image */ HTMLImageElement, _], path: String): Unit = js.native
+  def loadTexture(clientId: String, textureLoader: js.Function1[/* image */ HTMLImageElement, js.Any], path: String): Unit
   
-  var pathPrefix: js.Any = js.native
+  var pathPrefix: js.Any
   
-  var queueAsset: js.Any = js.native
+  var queueAsset: js.Any
   
-  var queuedAssets: js.Any = js.native
+  var queuedAssets: js.Any
   
-  var rawAssets: js.Any = js.native
+  var rawAssets: js.Any
   
-  var updateClientAssets: js.Any = js.native
+  var updateClientAssets: js.Any
 }
 object SharedAssetManager {
   
@@ -50,7 +50,7 @@ object SharedAssetManager {
     isLoadingComplete: String => Boolean,
     loadJson: (String, String) => Unit,
     loadText: (String, String) => Unit,
-    loadTexture: (String, js.Function1[/* image */ HTMLImageElement, _], String) => Unit,
+    loadTexture: (String, js.Function1[/* image */ HTMLImageElement, js.Any], String) => Unit,
     pathPrefix: js.Any,
     queueAsset: js.Any,
     queuedAssets: js.Any,
@@ -89,7 +89,7 @@ object SharedAssetManager {
     def setLoadText(value: (String, String) => Unit): Self = StObject.set(x, "loadText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadTexture(value: (String, js.Function1[/* image */ HTMLImageElement, _], String) => Unit): Self = StObject.set(x, "loadTexture", js.Any.fromFunction3(value))
+    def setLoadTexture(value: (String, js.Function1[/* image */ HTMLImageElement, js.Any], String) => Unit): Self = StObject.set(x, "loadTexture", js.Any.fromFunction3(value))
     
     @scala.inline
     def setPathPrefix(value: js.Any): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])

@@ -2,43 +2,41 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single MIME message part.
   */
-@js.native
 trait SchemaMessagePart extends StObject {
   
   /**
     * The message part body for this part, which may be empty for container
     * MIME message parts.
     */
-  var body: js.UndefOr[SchemaMessagePartBody] = js.native
+  var body: js.UndefOr[SchemaMessagePartBody] = js.undefined
   
   /**
     * The filename of the attachment. Only present if this message part
     * represents an attachment.
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * List of headers on this message part. For the top-level message part,
     * representing the entire message payload, it will contain the standard RFC
     * 2822 email headers such as To, From, and Subject.
     */
-  var headers: js.UndefOr[js.Array[SchemaMessagePartHeader]] = js.native
+  var headers: js.UndefOr[js.Array[SchemaMessagePartHeader]] = js.undefined
   
   /**
     * The MIME type of the message part.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The immutable ID of the message part.
     */
-  var partId: js.UndefOr[String] = js.native
+  var partId: js.UndefOr[String] = js.undefined
   
   /**
     * The child MIME message parts of this part. This only applies to container
@@ -46,7 +44,7 @@ trait SchemaMessagePart extends StObject {
     * message part types, such as text/plain, this field is empty. For more
     * information, see RFC 1521.
     */
-  var parts: js.UndefOr[js.Array[SchemaMessagePart]] = js.native
+  var parts: js.UndefOr[js.Array[SchemaMessagePart]] = js.undefined
 }
 object SchemaMessagePart {
   

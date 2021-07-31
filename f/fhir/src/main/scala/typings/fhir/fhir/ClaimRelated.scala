@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Related Claims which may be revelant to processing this claimn
   */
-@js.native
-trait ClaimRelated extends BackboneElement {
+trait ClaimRelated
+  extends StObject
+     with BackboneElement {
   
   /**
     * Reference to the related claim
     */
-  var claim: js.UndefOr[Reference] = js.native
+  var claim: js.UndefOr[Reference] = js.undefined
   
   /**
     * Related file or case reference
     */
-  var reference: js.UndefOr[Identifier] = js.native
+  var reference: js.UndefOr[Identifier] = js.undefined
   
   /**
     * How the reference claim is related
     */
-  var relationship: js.UndefOr[CodeableConcept] = js.native
+  var relationship: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ClaimRelated {
   

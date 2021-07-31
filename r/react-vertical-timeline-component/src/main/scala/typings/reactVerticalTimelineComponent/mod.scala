@@ -7,7 +7,6 @@ import typings.reactVerticalTimelineComponent.reactVerticalTimelineComponentStri
 import typings.reactVerticalTimelineComponent.reactVerticalTimelineComponentStrings.`2-columns`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,38 +35,37 @@ object mod {
     def this(props: VerticalTimelineElementProps, context: js.Any) = this()
   }
   
-  @js.native
   trait VerticalTimelineElementProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentArrowStyle: js.UndefOr[CSSProperties] = js.native
+    var contentArrowStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var contentStyle: js.UndefOr[CSSProperties] = js.native
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var dateClassName: js.UndefOr[String] = js.native
+    var dateClassName: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
     
-    var iconOnClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var iconOnClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var intersectionObserverProps: js.UndefOr[js.Any] = js.native
+    var intersectionObserverProps: js.UndefOr[js.Any] = js.undefined
     
-    var onTimelineElementClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTimelineElementClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var textClassName: js.UndefOr[String] = js.native
+    var textClassName: js.UndefOr[String] = js.undefined
   }
   object VerticalTimelineElementProps {
     
@@ -172,14 +170,13 @@ object mod {
     }
   }
   
-  @js.native
   trait VerticalTimelineProps extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[`1-column` | `2-columns`] = js.native
+    var layout: js.UndefOr[`1-column` | `2-columns`] = js.undefined
   }
   object VerticalTimelineProps {
     

@@ -3,13 +3,13 @@ package typings.nano.mod
 import typings.nano.anon.Rev
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DocumentResponseRow[D] extends DocumentResponseRowMeta {
+trait DocumentResponseRow[D]
+  extends StObject
+     with DocumentResponseRowMeta {
   
-  var doc: js.UndefOr[D with Document] = js.native
+  var doc: js.UndefOr[D & Document] = js.undefined
 }
 object DocumentResponseRow {
   
@@ -20,10 +20,10 @@ object DocumentResponseRow {
   }
   
   @scala.inline
-  implicit class DocumentResponseRowMutableBuilder[Self <: DocumentResponseRow[_], D] (val x: Self with DocumentResponseRow[D]) extends AnyVal {
+  implicit class DocumentResponseRowMutableBuilder[Self <: DocumentResponseRow[?], D] (val x: Self & DocumentResponseRow[D]) extends AnyVal {
     
     @scala.inline
-    def setDoc(value: D with Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)

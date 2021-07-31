@@ -10,10 +10,13 @@ import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subchannelMod {
+  
+  @JSImport("@grpc/grpc-js/build/src/subchannel", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@grpc/grpc-js/build/src/subchannel", "Subchannel")
   @js.native
@@ -209,17 +212,14 @@ object subchannelMod {
     var userAgent: js.Any = js.native
   }
   
-  @JSImport("@grpc/grpc-js/build/src/subchannel", "isTcpSubchannelAddress")
-  @js.native
-  def isTcpSubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean = js.native
+  @scala.inline
+  def isTcpSubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTcpSubchannelAddress")(address.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean]
   
-  @JSImport("@grpc/grpc-js/build/src/subchannel", "subchannelAddressEqual")
-  @js.native
-  def subchannelAddressEqual(address1: SubchannelAddress, address2: SubchannelAddress): Boolean = js.native
+  @scala.inline
+  def subchannelAddressEqual(address1: SubchannelAddress, address2: SubchannelAddress): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any], address2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@grpc/grpc-js/build/src/subchannel", "subchannelAddressToString")
-  @js.native
-  def subchannelAddressToString(address: SubchannelAddress): String = js.native
+  @scala.inline
+  def subchannelAddressToString(address: SubchannelAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressToString")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ConnectivityStateListener = js.Function3[
     /* subchannel */ Subchannel, 
@@ -228,10 +228,11 @@ object subchannelMod {
     Unit
   ]
   
-  @js.native
-  trait IpcSubchannelAddress extends SubchannelAddress {
+  trait IpcSubchannelAddress
+    extends StObject
+       with SubchannelAddress {
     
-    var path: String = js.native
+    var path: String
   }
   object IpcSubchannelAddress {
     
@@ -269,12 +270,13 @@ object subchannelMod {
     }
   }
   
-  @js.native
-  trait TcpSubchannelAddress extends SubchannelAddress {
+  trait TcpSubchannelAddress
+    extends StObject
+       with SubchannelAddress {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object TcpSubchannelAddress {
     

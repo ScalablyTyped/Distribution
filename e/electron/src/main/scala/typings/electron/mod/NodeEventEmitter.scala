@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* was `typeof imported_events.EventEmitter` */
@@ -43,10 +42,8 @@ object NodeEventEmitter {
   
   /** @deprecated since v4.0.0 */
   /* static member */
-  @JSImport("electron", "NodeEventEmitter.listenerCount")
-  @js.native
-  def listenerCount(emitter: EventEmitter, event: String): Double = js.native
-  @JSImport("electron", "NodeEventEmitter.listenerCount")
-  @js.native
-  def listenerCount(emitter: EventEmitter, event: js.Symbol): Double = js.native
+  @scala.inline
+  def listenerCount(emitter: EventEmitter, event: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def listenerCount(emitter: EventEmitter, event: js.Symbol): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

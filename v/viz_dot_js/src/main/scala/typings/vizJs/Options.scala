@@ -2,21 +2,19 @@ package typings.vizJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var engine: js.UndefOr[String] = js.native
+  var engine: js.UndefOr[String] = js.undefined
   
-  var files: js.UndefOr[js.Array[String]] = js.native
+  var files: js.UndefOr[js.Array[String]] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var images: js.UndefOr[js.Array[String]] = js.native
+  var images: js.UndefOr[js.Array[String]] = js.undefined
   
-  var yInvert: js.UndefOr[Boolean] = js.native
+  var yInvert: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

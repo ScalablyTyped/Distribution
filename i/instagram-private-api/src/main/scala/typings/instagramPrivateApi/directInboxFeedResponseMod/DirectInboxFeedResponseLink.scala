@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.directInboxFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectInboxFeedResponseLink extends StObject {
   
-  var client_context: String = js.native
+  var client_context: String
   
-  var link_context: DirectInboxFeedResponseLinkContext = js.native
+  var link_context: DirectInboxFeedResponseLinkContext
   
-  var mutation_token: String = js.native
+  var mutation_token: String
   
-  var text: String = js.native
+  var text: String
 }
 object DirectInboxFeedResponseLink {
   

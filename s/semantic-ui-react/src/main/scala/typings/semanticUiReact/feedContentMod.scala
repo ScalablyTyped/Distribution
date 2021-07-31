@@ -15,7 +15,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedContentMod extends Shortcut {
@@ -24,9 +23,9 @@ object feedContentMod extends Shortcut {
   @js.native
   val default: StatelessComponent[FeedContentProps] = js.native
   
-  @js.native
   trait FeedContentProps
-    extends StrictFeedContentProps
+    extends StObject
+       with StrictFeedContentProps
        with /* key */ StringDictionary[js.Any]
   object FeedContentProps {
     
@@ -37,35 +36,34 @@ object feedContentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictFeedContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** An event can contain a date. */
-    var date: js.UndefOr[SemanticShorthandItem[FeedDateProps]] = js.native
+    var date: js.UndefOr[SemanticShorthandItem[FeedDateProps]] = js.undefined
     
     /** Shorthand for FeedExtra with images. */
-    var extraImages: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.native
+    var extraImages: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.undefined
     
     /** Shorthand for FeedExtra with text. */
-    var extraText: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.native
+    var extraText: js.UndefOr[SemanticShorthandItem[FeedExtraProps]] = js.undefined
     
     /** Shorthand for FeedMeta. */
-    var meta: js.UndefOr[SemanticShorthandItem[FeedMetaProps]] = js.native
+    var meta: js.UndefOr[SemanticShorthandItem[FeedMetaProps]] = js.undefined
     
     /** Shorthand for FeedSummary. */
-    var summary: js.UndefOr[SemanticShorthandItem[FeedSummaryProps]] = js.native
+    var summary: js.UndefOr[SemanticShorthandItem[FeedSummaryProps]] = js.undefined
   }
   object StrictFeedContentProps {
     

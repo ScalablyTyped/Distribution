@@ -14,7 +14,6 @@ import typings.ts3NodejsLibrary.responseTypesMod.ChannelInfo
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
@@ -40,7 +39,7 @@ object channelMod {
       * A permission can be specified by permid or permsid.
       * @param perm permission object to set
       */
-    def createPerm(): Permission[_] = js.native
+    def createPerm(): Permission[js.Any] = js.native
     
     /**
       * Deletes an existing channel by ID.
@@ -144,18 +143,19 @@ object channelMod {
   /* static members */
   object TeamSpeakChannel {
     
+    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** retrieves the client id from a string or teamspeak client */
-    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel.getId")
-    @js.native
-    def getId[T /* <: ChannelType */](): js.UndefOr[String] = js.native
-    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel.getId")
-    @js.native
-    def getId[T /* <: ChannelType */](channel: T): js.UndefOr[String] = js.native
+    @scala.inline
+    def getId[T /* <: ChannelType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    @scala.inline
+    def getId[T /* <: ChannelType */](channel: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @JSImport("ts3-nodejs-library/lib/node/Channel", "TeamSpeakChannel.getMultipleIds")
-    @js.native
-    def getMultipleIds(channels: MultiChannelType): js.Array[String] = js.native
+    @scala.inline
+    def getMultipleIds(channels: MultiChannelType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(channels.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     type ChannelType = String | TeamSpeakChannel
     

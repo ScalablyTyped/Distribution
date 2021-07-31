@@ -2,15 +2,13 @@ package typings.baseui.inputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InternalState extends StObject {
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isMasked: js.UndefOr[Boolean] = js.native
+  var isMasked: js.UndefOr[Boolean] = js.undefined
 }
 object InternalState {
   

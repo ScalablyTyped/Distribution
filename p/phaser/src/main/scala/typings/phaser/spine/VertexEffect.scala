@@ -2,17 +2,15 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VertexEffect extends StObject {
   
-  def begin(skeleton: Skeleton): Unit = js.native
+  def begin(skeleton: Skeleton): Unit
   
-  def end(): Unit = js.native
+  def end(): Unit
   
-  def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): Unit = js.native
+  def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): Unit
 }
 object VertexEffect {
   

@@ -4,19 +4,17 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CacheSecretStorageKey extends StObject {
     
-    var cacheSecretStorageKey: js.UndefOr[js.Function2[/* keyId */ String, /* key */ Uint8Array, _]] = js.native
+    var cacheSecretStorageKey: js.UndefOr[js.Function2[/* keyId */ String, /* key */ Uint8Array, js.Any]] = js.undefined
     
     var getCrossSigningKey: js.UndefOr[
         js.Function2[/* keyType */ String, /* pubKey */ Uint8Array, js.Promise[Uint8Array]]
-      ] = js.native
+      ] = js.undefined
     
     var getSecretStorageKey: js.UndefOr[
         js.Function2[
@@ -24,7 +22,7 @@ object anon {
           /* name */ String, 
           js.Promise[(js.Tuple2[String, Uint8Array]) | Null]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSecretRequested: js.UndefOr[
         js.Function5[
@@ -35,11 +33,11 @@ object anon {
           /* deviceTrust */ js.Any, 
           js.Promise[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var saveCrossSigningKeys: js.UndefOr[js.Function1[/* keys */ Record[String, Uint8Array], _]] = js.native
+    var saveCrossSigningKeys: js.UndefOr[js.Function1[/* keys */ Record[String, Uint8Array], js.Any]] = js.undefined
     
-    var shouldUpgradeDeviceVerifications: js.UndefOr[js.Function1[/* users */ Record[String, _], js.Promise[js.Array[String]]]] = js.native
+    var shouldUpgradeDeviceVerifications: js.UndefOr[js.Function1[/* users */ Record[String, js.Any], js.Promise[js.Array[String]]]] = js.undefined
   }
   object CacheSecretStorageKey {
     
@@ -53,7 +51,7 @@ object anon {
     implicit class CacheSecretStorageKeyMutableBuilder[Self <: CacheSecretStorageKey] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCacheSecretStorageKey(value: (/* keyId */ String, /* key */ Uint8Array) => _): Self = StObject.set(x, "cacheSecretStorageKey", js.Any.fromFunction2(value))
+      def setCacheSecretStorageKey(value: (/* keyId */ String, /* key */ Uint8Array) => js.Any): Self = StObject.set(x, "cacheSecretStorageKey", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCacheSecretStorageKeyUndefined: Self = StObject.set(x, "cacheSecretStorageKey", js.undefined)
@@ -79,27 +77,26 @@ object anon {
       def setOnSecretRequestedUndefined: Self = StObject.set(x, "onSecretRequested", js.undefined)
       
       @scala.inline
-      def setSaveCrossSigningKeys(value: /* keys */ Record[String, Uint8Array] => _): Self = StObject.set(x, "saveCrossSigningKeys", js.Any.fromFunction1(value))
+      def setSaveCrossSigningKeys(value: /* keys */ Record[String, Uint8Array] => js.Any): Self = StObject.set(x, "saveCrossSigningKeys", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSaveCrossSigningKeysUndefined: Self = StObject.set(x, "saveCrossSigningKeys", js.undefined)
       
       @scala.inline
-      def setShouldUpgradeDeviceVerifications(value: /* users */ Record[String, _] => js.Promise[js.Array[String]]): Self = StObject.set(x, "shouldUpgradeDeviceVerifications", js.Any.fromFunction1(value))
+      def setShouldUpgradeDeviceVerifications(value: /* users */ Record[String, js.Any] => js.Promise[js.Array[String]]): Self = StObject.set(x, "shouldUpgradeDeviceVerifications", js.Any.fromFunction1(value))
       
       @scala.inline
       def setShouldUpgradeDeviceVerificationsUndefined: Self = StObject.set(x, "shouldUpgradeDeviceVerifications", js.undefined)
     }
   }
   
-  @js.native
   trait DeviceId extends StObject {
     
-    var deviceId: String = js.native
+    var deviceId: String
     
-    var olmDevice: PickleKey = js.native
+    var olmDevice: PickleKey
     
-    var userId: String = js.native
+    var userId: String
   }
   object DeviceId {
     
@@ -123,10 +120,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Keys extends StObject {
     
-    var keys: Record[String, Pubkey] = js.native
+    var keys: Record[String, Pubkey]
   }
   object Keys {
     
@@ -144,19 +140,18 @@ object anon {
     }
   }
   
-  @js.native
   trait PickleKey extends StObject {
     
-    var pickleKey: String = js.native
+    var pickleKey: String
     
-    var pickledAccount: String = js.native
+    var pickledAccount: String
     
-    var sessions: js.Array[Record[String, _]] = js.native
+    var sessions: js.Array[Record[String, js.Any]]
   }
   object PickleKey {
     
     @scala.inline
-    def apply(pickleKey: String, pickledAccount: String, sessions: js.Array[Record[String, _]]): PickleKey = {
+    def apply(pickleKey: String, pickledAccount: String, sessions: js.Array[Record[String, js.Any]]): PickleKey = {
       val __obj = js.Dynamic.literal(pickleKey = pickleKey.asInstanceOf[js.Any], pickledAccount = pickledAccount.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickleKey]
     }
@@ -171,26 +166,25 @@ object anon {
       def setPickledAccount(value: String): Self = StObject.set(x, "pickledAccount", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSessions(value: js.Array[Record[String, _]]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
+      def setSessions(value: js.Array[Record[String, js.Any]]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSessionsVarargs(value: (Record[String, js.Any])*): Self = StObject.set(x, "sessions", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Promise extends StObject {
     
-    var promise: js.Promise[_] = js.native
+    var promise: js.Promise[js.Any]
     
-    var reject: js.Any = js.native
+    var reject: js.Any
     
-    var resolve: js.Any = js.native
+    var resolve: js.Any
   }
   object Promise {
     
     @scala.inline
-    def apply(promise: js.Promise[_], reject: js.Any, resolve: js.Any): Promise = {
+    def apply(promise: js.Promise[js.Any], reject: js.Any, resolve: js.Any): Promise = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any])
       __obj.asInstanceOf[Promise]
     }
@@ -199,7 +193,7 @@ object anon {
     implicit class PromiseMutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPromise(value: js.Promise[_]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReject(value: js.Any): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
@@ -209,10 +203,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pubkey extends StObject {
     
-    var pubkey: Uint8Array = js.native
+    var pubkey: Uint8Array
   }
   object Pubkey {
     

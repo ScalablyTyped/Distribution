@@ -8,7 +8,6 @@ import typings.typescript.mod.FunctionExpression
 import typings.typescript.mod.SignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureCallMod {
@@ -20,6 +19,5 @@ object signatureCallMod {
     def this(owner: Converter) = this()
     
     def convert(context: Context, node: FunctionExpression): Reflection = js.native
-    def convert(context: Context, node: SignatureDeclaration): Reflection = js.native
   }
 }

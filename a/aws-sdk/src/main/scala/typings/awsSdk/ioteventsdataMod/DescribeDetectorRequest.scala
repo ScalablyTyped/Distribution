@@ -2,21 +2,19 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDetectorRequest extends StObject {
   
   /**
     * The name of the detector model whose detectors (instances) you want information about.
     */
-  var detectorModelName: DetectorModelName = js.native
+  var detectorModelName: DetectorModelName
   
   /**
     * A filter used to limit results to detectors (instances) created because of the given key ID.
     */
-  var keyValue: js.UndefOr[KeyValue] = js.native
+  var keyValue: js.UndefOr[KeyValue] = js.undefined
 }
 object DescribeDetectorRequest {
   

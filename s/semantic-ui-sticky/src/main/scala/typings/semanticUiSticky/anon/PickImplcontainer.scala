@@ -2,14 +2,12 @@ package typings.semanticUiSticky.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.Sticky.ErrorSettings._Impl, 'container'> */
-@js.native
 trait PickImplcontainer extends StObject {
   
-  var container: String = js.native
+  var container: String
 }
 object PickImplcontainer {
   

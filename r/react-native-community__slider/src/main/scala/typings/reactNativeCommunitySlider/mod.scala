@@ -6,7 +6,6 @@ import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,17 +27,22 @@ object mod {
   type SliderIOS = Slider
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactNative.mod.TVViewPropsIOS because Already inherited
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
   - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
   - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
+  - typings.reactNative.mod.TVViewPropsIOS because Already inherited
+  - js.Any because Already inherited
+  - typings.reactNative.mod.AccessibilityProps because Already inherited
   - typings.reactNative.mod.Touchable because Already inherited
   - typings.reactNative.mod.GestureResponderHandlers because Already inherited
   - typings.reactNative.mod.ViewPropsIOS because Already inherited
   - typings.reactNative.mod.ViewPropsAndroid because Already inherited
-  - typings.reactNative.mod.AccessibilityProps because Already inherited
+  - js.Object because Already inherited
   - typings.reactNative.mod.ViewProps because Already inherited
-  - typings.reactNativeCommunitySlider.mod.SliderPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined thumbTintColor */ @js.native
-  trait SliderProps extends SliderPropsIOS {
+  - typings.reactNativeCommunitySlider.mod.SliderPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined thumbTintColor */ trait SliderProps
+    extends StObject
+       with SliderPropsIOS {
     
     /**
       * A string of one or more words to be announced by the screen reader.
@@ -46,7 +50,7 @@ object mod {
       * Requires passing a value to `accessibilityIncrements` to work correctly.
       * Should be a plural word, as singular units will be handled.
       */
-    var accessibilityIncrements: js.UndefOr[js.Array[String]] = js.native
+    var accessibilityIncrements: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A string of one or more words to be announced by the screen reader.
@@ -54,71 +58,71 @@ object mod {
       * Requires passing a value to `accessibilityIncrements` to work correctly.
       * Should be a plural word, as singular units will be handled.
       */
-    var accessibilityUnits: js.UndefOr[String] = js.native
+    var accessibilityUnits: js.UndefOr[String] = js.undefined
     
     /**
       * If true the user won't be able to move the slider.
       * Default value is false.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Reverses the direction of the slider.
       */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The color used for the track to the right of the button.
       * Overrides the default blue gradient image.
       */
-    var maximumTrackTintColor: js.UndefOr[String] = js.native
+    var maximumTrackTintColor: js.UndefOr[String] = js.undefined
     
     /**
       * Initial maximum value of the slider. Default value is 1.
       */
-    var maximumValue: js.UndefOr[Double] = js.native
+    var maximumValue: js.UndefOr[Double] = js.undefined
     
     /**
       * The color used for the track to the left of the button.
       * Overrides the default blue gradient image.
       */
-    var minimumTrackTintColor: js.UndefOr[String] = js.native
+    var minimumTrackTintColor: js.UndefOr[String] = js.undefined
     
     /**
       * Initial minimum value of the slider. Default value is 0.
       */
-    var minimumValue: js.UndefOr[Double] = js.native
+    var minimumValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback called when the user finishes changing the value (e.g. when the slider is released).
       */
-    var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Callback that is called when the user picks up the slider.
       * The initial value is passed as an argument to the callback handler.
       */
-    var onSlidingStart: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onSlidingStart: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Callback continuously called while the user is dragging the slider.
       */
-    var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Reference object.
       */
-    var ref: js.UndefOr[MutableRefObject[SliderRef]] = js.native
+    var ref: js.UndefOr[MutableRefObject[SliderRef]] = js.undefined
     
     /**
       * Step value of the slider. The value should be between 0 and (maximumValue - minimumValue). Default value is 0.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Color of the foreground switch grip.
       */
-    var thumbTintColor: js.UndefOr[String] = js.native
+    var thumbTintColor: js.UndefOr[String] = js.undefined
     
     /**
       * Initial value of the slider. The value should be between minimumValue
@@ -127,7 +131,7 @@ object mod {
       * This is not a controlled component, you don't need to update
       * the value during dragging.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object SliderProps {
     
@@ -235,13 +239,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait SliderPropsAndroid extends ViewProps {
+  trait SliderPropsAndroid
+    extends StObject
+       with ViewProps {
     
     /**
       * Color of the foreground switch grip.
       */
-    var thumbTintColor: js.UndefOr[String] = js.native
+    var thumbTintColor: js.UndefOr[String] = js.undefined
   }
   object SliderPropsAndroid {
     
@@ -262,32 +267,33 @@ object mod {
     }
   }
   
-  @js.native
-  trait SliderPropsIOS extends ViewProps {
+  trait SliderPropsIOS
+    extends StObject
+       with ViewProps {
     
     /**
       * Assigns a maximum track image. Only static images are supported.
       * The leftmost pixel of the image will be stretched to fill the track.
       */
-    var maximumTrackImage: js.UndefOr[ImageURISource] = js.native
+    var maximumTrackImage: js.UndefOr[ImageURISource] = js.undefined
     
     /**
       * Assigns a minimum track image. Only static images are supported.
       * The rightmost pixel of the image will be stretched to fill the track.
       */
-    var minimumTrackImage: js.UndefOr[ImageURISource] = js.native
+    var minimumTrackImage: js.UndefOr[ImageURISource] = js.undefined
     
     /**
       * Sets an image for the thumb. Only static images are supported.
       */
-    var thumbImage: js.UndefOr[ImageURISource] = js.native
+    var thumbImage: js.UndefOr[ImageURISource] = js.undefined
     
     /**
       * Assigns a single image for the track. Only static images
       * are supported. The center pixel of the image will be stretched
       * to fill the track.
       */
-    var trackImage: js.UndefOr[ImageURISource] = js.native
+    var trackImage: js.UndefOr[ImageURISource] = js.undefined
   }
   object SliderPropsIOS {
     
@@ -326,10 +332,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SliderRef extends StObject {
     
-    def updateValue(value: Double): Unit = js.native
+    def updateValue(value: Double): Unit
   }
   object SliderRef {
     

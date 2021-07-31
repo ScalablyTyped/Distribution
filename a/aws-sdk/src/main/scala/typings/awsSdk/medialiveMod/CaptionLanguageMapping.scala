@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionLanguageMapping extends StObject {
   
   /**
     * The closed caption channel being described by this CaptionLanguageMapping.  Each channel mapping must have a unique channel number (maximum of 4)
     */
-  var CaptionChannel: integerMin1Max4 = js.native
+  var CaptionChannel: integerMin1Max4
   
   /**
     * Three character ISO 639-2 language code (see http://www.loc.gov/standards/iso639-2)
     */
-  var LanguageCode: stringMin3Max3 = js.native
+  var LanguageCode: stringMin3Max3
   
   /**
     * Textual description of language
     */
-  var LanguageDescription: stringMin1 = js.native
+  var LanguageDescription: stringMin1
 }
 object CaptionLanguageMapping {
   

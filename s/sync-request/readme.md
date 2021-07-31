@@ -11,8 +11,8 @@ Make synchronous web requests
 | Full name          | sync-request |
 | Keywords           | request, http, https, cache, browserify, synchronous, sync |
 | # releases         | 2 |
-| # dependents       | 599 |
-| # downloads        | 12080321 |
+| # dependents       | 624 |
+| # downloads        | 14698264 |
 | # stars            | 17 |
 
 ## Links

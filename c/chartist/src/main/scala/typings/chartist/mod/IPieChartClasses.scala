@@ -2,23 +2,21 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPieChartClasses extends StObject {
   
-  var chartDonut: js.UndefOr[String] = js.native
+  var chartDonut: js.UndefOr[String] = js.undefined
   
-  var chartPie: js.UndefOr[String] = js.native
+  var chartPie: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var series: js.UndefOr[String] = js.native
+  var series: js.UndefOr[String] = js.undefined
   
-  var sliceDonut: js.UndefOr[String] = js.native
+  var sliceDonut: js.UndefOr[String] = js.undefined
   
-  var slicePie: js.UndefOr[String] = js.native
+  var slicePie: js.UndefOr[String] = js.undefined
 }
 object IPieChartClasses {
   

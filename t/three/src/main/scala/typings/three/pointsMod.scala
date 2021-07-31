@@ -8,7 +8,6 @@ import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointsMod {
@@ -22,7 +21,7 @@ object pointsMod {
   class Points[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D {
     def this(geometry: TGeometry) = this()
     def this(geometry: TGeometry, material: TMaterial) = this()
-    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+    def this(geometry: Unit, material: TMaterial) = this()
     
     /**
     	 * An instance of Geometry or BufferGeometry, where each vertex designates the position of a particle in the system.

@@ -6,7 +6,6 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "HtmlBehaviorResource")
@@ -49,26 +48,11 @@ class HtmlBehaviorResource () extends StObject {
     * @return The Controller of this behavior.
     */
   def create(container: Container): Controller = js.native
-  def create(
-    container: Container,
-    instruction: js.UndefOr[scala.Nothing],
-    element: js.UndefOr[scala.Nothing],
-    bindings: js.Array[Binding]
-  ): Controller = js.native
-  def create(container: Container, instruction: js.UndefOr[scala.Nothing], element: Element): Controller = js.native
-  def create(
-    container: Container,
-    instruction: js.UndefOr[scala.Nothing],
-    element: Element,
-    bindings: js.Array[Binding]
-  ): Controller = js.native
+  def create(container: Container, instruction: Unit, element: Unit, bindings: js.Array[Binding]): Controller = js.native
+  def create(container: Container, instruction: Unit, element: Element): Controller = js.native
+  def create(container: Container, instruction: Unit, element: Element, bindings: js.Array[Binding]): Controller = js.native
   def create(container: Container, instruction: BehaviorInstruction): Controller = js.native
-  def create(
-    container: Container,
-    instruction: BehaviorInstruction,
-    element: js.UndefOr[scala.Nothing],
-    bindings: js.Array[Binding]
-  ): Controller = js.native
+  def create(container: Container, instruction: BehaviorInstruction, element: Unit, bindings: js.Array[Binding]): Controller = js.native
   def create(container: Container, instruction: BehaviorInstruction, element: Element): Controller = js.native
   def create(
     container: Container,
@@ -99,20 +83,15 @@ class HtmlBehaviorResource () extends StObject {
   def load(
     container: Container,
     target: js.Function,
-    loadContext: js.UndefOr[scala.Nothing],
-    viewStrategy: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
+    viewStrategy: Unit,
     transientView: Boolean
   ): js.Promise[HtmlBehaviorResource] = js.native
+  def load(container: Container, target: js.Function, loadContext: Unit, viewStrategy: ViewStrategy_): js.Promise[HtmlBehaviorResource] = js.native
   def load(
     container: Container,
     target: js.Function,
-    loadContext: js.UndefOr[scala.Nothing],
-    viewStrategy: ViewStrategy_
-  ): js.Promise[HtmlBehaviorResource] = js.native
-  def load(
-    container: Container,
-    target: js.Function,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     viewStrategy: ViewStrategy_,
     transientView: Boolean
   ): js.Promise[HtmlBehaviorResource] = js.native
@@ -121,7 +100,7 @@ class HtmlBehaviorResource () extends StObject {
     container: Container,
     target: js.Function,
     loadContext: ResourceLoadContext,
-    viewStrategy: js.UndefOr[scala.Nothing],
+    viewStrategy: Unit,
     transientView: Boolean
   ): js.Promise[HtmlBehaviorResource] = js.native
   def load(
@@ -151,15 +130,17 @@ class HtmlBehaviorResource () extends StObject {
 /* static members */
 object HtmlBehaviorResource {
   
+  @JSImport("aurelia-templating", "HtmlBehaviorResource")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Checks whether the provided name matches any naming conventions for HtmlBehaviorResource.
     * @param name The name of the potential resource.
     * @param existing An already existing resource that may need a convention name applied.
     */
-  @JSImport("aurelia-templating", "HtmlBehaviorResource.convention")
-  @js.native
-  def convention(name: String): HtmlBehaviorResource = js.native
-  @JSImport("aurelia-templating", "HtmlBehaviorResource.convention")
-  @js.native
-  def convention(name: String, existing: HtmlBehaviorResource): HtmlBehaviorResource = js.native
+  @scala.inline
+  def convention(name: String): HtmlBehaviorResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[HtmlBehaviorResource]
+  @scala.inline
+  def convention(name: String, existing: HtmlBehaviorResource): HtmlBehaviorResource = (^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[HtmlBehaviorResource]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transcript extends StObject {
   
   /**
     * The S3 object location of the redacted transcript. Use this URI to access the redacted transcript. If you specified an S3 bucket in the OutputBucketName field when you created the job, this is the URI of that bucket. If you chose to store the transcript in Amazon Transcribe, this is a shareable URL that provides secure access to that location.
     */
-  var RedactedTranscriptFileUri: js.UndefOr[Uri] = js.native
+  var RedactedTranscriptFileUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * The S3 object location of the transcript. Use this URI to access the transcript. If you specified an S3 bucket in the OutputBucketName field when you created the job, this is the URI of that bucket. If you chose to store the transcript in Amazon Transcribe, this is a shareable URL that provides secure access to that location.
     */
-  var TranscriptFileUri: js.UndefOr[Uri] = js.native
+  var TranscriptFileUri: js.UndefOr[Uri] = js.undefined
 }
 object Transcript {
   

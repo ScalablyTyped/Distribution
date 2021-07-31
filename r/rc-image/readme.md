@@ -10,9 +10,9 @@ React easy to use image component
 | ------------------ | :-------------: |
 | Full name          | rc-image |
 | Keywords           | react, react-component, react-image, image |
-| # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 487870 |
+| # releases         | 37 |
+| # dependents       | 16 |
+| # downloads        | 5008131 |
 | # stars            | 0 |
 
 ## Links

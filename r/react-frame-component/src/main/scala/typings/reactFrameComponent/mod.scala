@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLIFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,21 +32,22 @@ object mod {
   
   type FrameComponent = Component[FrameComponentProps, js.Object, js.Any]
   
-  @js.native
-  trait FrameComponentProps extends IframeHTMLAttributes[HTMLIFrameElement] {
+  trait FrameComponentProps
+    extends StObject
+       with IframeHTMLAttributes[HTMLIFrameElement] {
     
     @JSName("children")
-    var children_FrameComponentProps: ReactNode = js.native
+    var children_FrameComponentProps: ReactNode
     
-    var contentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
+    var contentDidMount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var contentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+    var contentDidUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var head: js.UndefOr[ReactNode] = js.native
+    var head: js.UndefOr[ReactNode] = js.undefined
     
-    var initialContent: js.UndefOr[String] = js.native
+    var initialContent: js.UndefOr[String] = js.undefined
     
-    var mountTarget: js.UndefOr[String] = js.native
+    var mountTarget: js.UndefOr[String] = js.undefined
   }
   object FrameComponentProps {
     
@@ -98,12 +98,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FrameContextProps extends StObject {
     
-    var document: js.UndefOr[js.Any] = js.native
+    var document: js.UndefOr[js.Any] = js.undefined
     
-    var window: js.UndefOr[js.Any] = js.native
+    var window: js.UndefOr[js.Any] = js.undefined
   }
   object FrameContextProps {
     

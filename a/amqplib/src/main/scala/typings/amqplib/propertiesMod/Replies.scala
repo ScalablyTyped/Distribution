@@ -2,15 +2,13 @@ package typings.amqplib.propertiesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Replies {
   
-  @js.native
   trait AssertExchange extends StObject {
     
-    var exchange: String = js.native
+    var exchange: String
   }
   object AssertExchange {
     
@@ -28,14 +26,13 @@ object Replies {
     }
   }
   
-  @js.native
   trait AssertQueue extends StObject {
     
-    var consumerCount: Double = js.native
+    var consumerCount: Double
     
-    var messageCount: Double = js.native
+    var messageCount: Double
     
-    var queue: String = js.native
+    var queue: String
   }
   object AssertQueue {
     
@@ -59,10 +56,9 @@ object Replies {
     }
   }
   
-  @js.native
   trait Consume extends StObject {
     
-    var consumerTag: String = js.native
+    var consumerTag: String
   }
   object Consume {
     
@@ -80,10 +76,9 @@ object Replies {
     }
   }
   
-  @js.native
   trait DeleteQueue extends StObject {
     
-    var messageCount: Double = js.native
+    var messageCount: Double
   }
   object DeleteQueue {
     
@@ -101,13 +96,11 @@ object Replies {
     }
   }
   
-  @js.native
   trait Empty extends StObject
   
-  @js.native
   trait PurgeQueue extends StObject {
     
-    var messageCount: Double = js.native
+    var messageCount: Double
   }
   object PurgeQueue {
     

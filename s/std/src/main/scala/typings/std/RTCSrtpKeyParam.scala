@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCSrtpKeyParam extends StObject {
   
-  var keyMethod: js.UndefOr[java.lang.String] = js.native
+  var keyMethod: js.UndefOr[java.lang.String] = js.undefined
   
-  var keySalt: js.UndefOr[java.lang.String] = js.native
+  var keySalt: js.UndefOr[java.lang.String] = js.undefined
   
-  var lifetime: js.UndefOr[java.lang.String] = js.native
+  var lifetime: js.UndefOr[java.lang.String] = js.undefined
   
-  var mkiLength: js.UndefOr[Double] = js.native
+  var mkiLength: js.UndefOr[Double] = js.undefined
   
-  var mkiValue: js.UndefOr[Double] = js.native
+  var mkiValue: js.UndefOr[Double] = js.undefined
 }
 object RTCSrtpKeyParam {
   

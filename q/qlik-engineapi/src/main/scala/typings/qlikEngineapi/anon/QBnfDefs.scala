@@ -3,15 +3,13 @@ package typings.qlikEngineapi.anon
 import typings.qlikEngineapi.EngineAPI.IBNFDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QBnfDefs extends StObject {
   
-  var qBnfDefs: IBNFDef = js.native
+  var qBnfDefs: IBNFDef
   
-  var qBnfHash: String = js.native
+  var qBnfHash: String
 }
 object QBnfDefs {
   

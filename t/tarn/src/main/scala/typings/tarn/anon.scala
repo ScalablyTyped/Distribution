@@ -3,17 +3,17 @@ package typings.tarn
 import typings.tarn.promiseInspectionMod.PromiseInspectionArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Error[T] extends PromiseInspectionArgs[T] {
+  trait Error[T]
+    extends StObject
+       with PromiseInspectionArgs[T] {
     
-    var error: js.UndefOr[typings.std.Error] = js.native
+    var error: js.UndefOr[typings.std.Error] = js.undefined
     
-    var value: T = js.native
+    var value: T
   }
   object Error {
     
@@ -24,7 +24,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error[_], T] (val x: Self with Error[T]) extends AnyVal {
+    implicit class ErrorMutableBuilder[Self <: Error[?], T] (val x: Self & Error[T]) extends AnyVal {
       
       @scala.inline
       def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -37,12 +37,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Value[T] extends PromiseInspectionArgs[T] {
+  trait Value[T]
+    extends StObject
+       with PromiseInspectionArgs[T] {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
     
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object Value {
     
@@ -53,7 +54,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[_], T] (val x: Self with Value[T]) extends AnyVal {
+    implicit class ValueMutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       @scala.inline
       def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

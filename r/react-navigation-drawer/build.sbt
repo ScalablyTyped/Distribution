@@ -1,19 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-navigation-drawer"
-version := "2.5.0-613798"
-scalaVersion := "2.13.3"
+version := "2.6.0-8cf0c6"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "react-native" % "0.63-dt-20200723Z-d06c5c",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "1.7.0-37590e",
-  "org.scalablytyped" %%% "react-navigation" % "4.4.0-70ffe0",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
+  "org.scalablytyped" %%% "react-native" % "0.63-dt-20201120Z-adb02e",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "1.8.0-e9d926",
+  "org.scalablytyped" %%% "react-navigation" % "4.4.3-8a4366",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

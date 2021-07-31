@@ -2,19 +2,17 @@ package typings.cadesplugin.CAPICOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
-  val Algorithm: OID = js.native
+  val Algorithm: OID
   
-  val EncodedKey: EncodedData = js.native
+  val EncodedKey: EncodedData
   
-  val EncodedParameters: EncodedData = js.native
+  val EncodedParameters: EncodedData
   
-  val Length: Double = js.native
+  val Length: Double
 }
 object PublicKey {
   

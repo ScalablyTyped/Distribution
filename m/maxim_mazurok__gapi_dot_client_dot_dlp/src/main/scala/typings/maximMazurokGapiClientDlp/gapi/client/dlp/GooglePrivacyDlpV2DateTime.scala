@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2DateTime extends StObject {
   
   /** One or more of the following must be set. Must be a valid date or time value. */
-  var date: js.UndefOr[GoogleTypeDate] = js.native
+  var date: js.UndefOr[GoogleTypeDate] = js.undefined
   
   /** Day of week */
-  var dayOfWeek: js.UndefOr[String] = js.native
+  var dayOfWeek: js.UndefOr[String] = js.undefined
   
   /** Time of day */
-  var time: js.UndefOr[GoogleTypeTimeOfDay] = js.native
+  var time: js.UndefOr[GoogleTypeTimeOfDay] = js.undefined
   
   /** Time zone */
-  var timeZone: js.UndefOr[GooglePrivacyDlpV2TimeZone] = js.native
+  var timeZone: js.UndefOr[GooglePrivacyDlpV2TimeZone] = js.undefined
 }
 object GooglePrivacyDlpV2DateTime {
   

@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomainDnsSrvRecord extends DomainDnsRecord {
+trait DomainDnsSrvRecord
+  extends StObject
+     with DomainDnsRecord {
   
   // Value to use when configuring the Target property of the SRV record at the DNS host.
-  var nameTarget: js.UndefOr[NullableOption[String]] = js.native
+  var nameTarget: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value to use when configuring the port property of the SRV record at the DNS host.
-  var port: js.UndefOr[NullableOption[Double]] = js.native
+  var port: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Value to use when configuring the priority property of the SRV record at the DNS host.
-  var priority: js.UndefOr[NullableOption[Double]] = js.native
+  var priority: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Value to use when configuring the protocol property of the SRV record at the DNS host.
-  var protocol: js.UndefOr[NullableOption[String]] = js.native
+  var protocol: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value to use when configuring the service property of the SRV record at the DNS host.
-  var service: js.UndefOr[NullableOption[String]] = js.native
+  var service: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value to use when configuring the weight property of the SRV record at the DNS host.
-  var weight: js.UndefOr[NullableOption[Double]] = js.native
+  var weight: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object DomainDnsSrvRecord {
   

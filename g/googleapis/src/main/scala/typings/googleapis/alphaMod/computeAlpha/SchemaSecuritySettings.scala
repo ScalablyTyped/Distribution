@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The authentication and authorization settings for a BackendService.
   */
-@js.native
 trait SchemaSecuritySettings extends StObject {
   
   /**
@@ -16,23 +14,23 @@ trait SchemaSecuritySettings extends StObject {
     * on backends, and if authenticated, which method/certificate will set the
     * request principal.
     */
-  var authenticationPolicy: js.UndefOr[SchemaAuthenticationPolicy] = js.native
+  var authenticationPolicy: js.UndefOr[SchemaAuthenticationPolicy] = js.undefined
   
   /**
     * Authorization config defines the Role Based Access Control (RBAC) config.
     */
-  var authorizationConfig: js.UndefOr[SchemaAuthorizationConfig] = js.native
+  var authorizationConfig: js.UndefOr[SchemaAuthorizationConfig] = js.undefined
   
   /**
     * TLS Settings for the backend service.
     */
-  var clientTlsSettings: js.UndefOr[SchemaClientTlsSettings] = js.native
+  var clientTlsSettings: js.UndefOr[SchemaClientTlsSettings] = js.undefined
   
   /**
     * The listener config of the XDS client is generated if the selector
     * matches the client.
     */
-  var serverSettingsSelector: js.UndefOr[SchemaServerSecuritySettingsSelector] = js.native
+  var serverSettingsSelector: js.UndefOr[SchemaServerSecuritySettingsSelector] = js.undefined
 }
 object SchemaSecuritySettings {
   

@@ -3,15 +3,13 @@ package typings.expoConfigureSplashScreen.anon
 import typings.expoConfigureSplashScreen.constantsMod.SplashScreenStatusBarStyleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hidden extends StObject {
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[SplashScreenStatusBarStyleType] = js.native
+  var style: js.UndefOr[SplashScreenStatusBarStyleType] = js.undefined
 }
 object Hidden {
   

@@ -4,11 +4,9 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Pickle.
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.Pickle.IPickleTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Pickle. */
-@js.native
 trait IPickle extends StObject {
   
   /**
@@ -16,32 +14,32 @@ trait IPickle extends StObject {
     * id of the pickle. A pickle constructed from `Examples` will have the first
     * id originating from the `Scenario` AST node, and the second from the `TableRow` AST node.
     */
-  var astNodeIds: js.UndefOr[js.Array[String] | Null] = js.native
+  var astNodeIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * A unique id for the pickle. This is a [SHA1](https://en.wikipedia.org/wiki/SHA-1) hash
     * from the source data and the `locations` of the pickle.
     * This ID will change if source the file is modified.
     */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** Pickle language */
-  var language: js.UndefOr[String | Null] = js.native
+  var language: js.UndefOr[String | Null] = js.undefined
   
   /** Pickle name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Pickle steps */
-  var steps: js.UndefOr[js.Array[IPickleStep] | Null] = js.native
+  var steps: js.UndefOr[js.Array[IPickleStep] | Null] = js.undefined
   
   /**
     * One or more tags. If this pickle is constructed from a Gherkin document,
     * It includes inherited tags from the `Feature` as well.
     */
-  var tags: js.UndefOr[js.Array[IPickleTag] | Null] = js.native
+  var tags: js.UndefOr[js.Array[IPickleTag] | Null] = js.undefined
   
   /** Pickle uri */
-  var uri: js.UndefOr[String | Null] = js.native
+  var uri: js.UndefOr[String | Null] = js.undefined
 }
 object IPickle {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageRuleType extends StObject {
   
   /**
     * The amount of storage allocated, in bytes.
     */
-  var StorageAllocatedInBytes: js.UndefOr[PositiveSizeType] = js.native
+  var StorageAllocatedInBytes: js.UndefOr[PositiveSizeType] = js.undefined
   
   /**
     * The type of storage.
     */
-  var StorageType: js.UndefOr[typings.awsSdk.workdocsMod.StorageType] = js.native
+  var StorageType: js.UndefOr[typings.awsSdk.workdocsMod.StorageType] = js.undefined
 }
 object StorageRuleType {
   

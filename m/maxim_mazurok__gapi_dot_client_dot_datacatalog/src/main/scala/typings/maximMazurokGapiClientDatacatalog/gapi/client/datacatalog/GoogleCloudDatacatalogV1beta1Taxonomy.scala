@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1Taxonomy extends StObject {
   
   /** Optional. A list of policy types that are activated for this taxonomy. If not set, defaults to an empty list. */
-  var activatedPolicyTypes: js.UndefOr[js.Array[String]] = js.native
+  var activatedPolicyTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Description of this taxonomy. It must: contain only unicode characters, tabs, newlines, carriage returns and page breaks; and be at most 2000 bytes long when encoded in
     * UTF-8. If not set, defaults to an empty description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. User defined name of this taxonomy. It must: contain only unicode letters, numbers, underscores, dashes and spaces; not start or end with spaces; and be at most 200 bytes
     * long when encoded in UTF-8.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. Resource name of this taxonomy, whose format is: "projects/{project_number}/locations/{location_id}/taxonomies/{id}". */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Number of policy tags contained in this taxonomy. */
-  var policyTagCount: js.UndefOr[Double] = js.native
+  var policyTagCount: js.UndefOr[Double] = js.undefined
   
   /** Output only. Timestamps about this taxonomy. Only create_time and update_time are used. */
-  var taxonomyTimestamps: js.UndefOr[GoogleCloudDatacatalogV1beta1SystemTimestamps] = js.native
+  var taxonomyTimestamps: js.UndefOr[GoogleCloudDatacatalogV1beta1SystemTimestamps] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1Taxonomy {
   

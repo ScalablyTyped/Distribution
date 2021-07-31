@@ -2,25 +2,23 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for a single person
   */
-@js.native
 trait SchemaPersonResponse extends StObject {
   
   /**
     * **DEPRECATED** (Please use status instead)  [HTTP 1.1 status code]
     * (http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
     */
-  var httpStatusCode: js.UndefOr[Double] = js.native
+  var httpStatusCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The person.
     */
-  var person: js.UndefOr[SchemaPerson] = js.native
+  var person: js.UndefOr[SchemaPerson] = js.undefined
   
   /**
     * The original requested resource name. May be different than the resource
@@ -28,12 +26,12 @@ trait SchemaPersonResponse extends StObject {
     * removing fields that link a contact and profile such as a verified email,
     * verified phone number, or a profile URL.
     */
-  var requestedResourceName: js.UndefOr[String] = js.native
+  var requestedResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the response.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object SchemaPersonResponse {
   

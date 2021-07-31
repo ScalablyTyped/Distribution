@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRevisionsCheck extends StandardParameters {
+trait ParamsResourceRevisionsCheck
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The revision of the client SDK used by your application. Format:
@@ -23,7 +23,7 @@ trait ParamsResourceRevisionsCheck extends StandardParameters {
     * - "ANDROID" - Client is running the Android SDK.  - "IOS" - Client is
     * running the iOS SDK.  - "WEB_APP" - Client is running as a Web App.
     */
-  var clientRevision: js.UndefOr[String] = js.native
+  var clientRevision: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceRevisionsCheck {
   

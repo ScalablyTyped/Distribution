@@ -2,15 +2,13 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingParametersStatus extends StObject {
   
-  var Options: ScalingParameters = js.native
+  var Options: ScalingParameters
   
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object ScalingParametersStatus {
   

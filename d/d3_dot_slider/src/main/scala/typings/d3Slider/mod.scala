@@ -6,25 +6,27 @@ import typings.d3Slider.d3SliderStrings.slide
 import typings.d3Slider.d3SliderStrings.slideend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @JSImport("d3", "slider")
+  @JSImport("d3", JSImport.Namespace)
   @js.native
-  def slider(): Slider_ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def slider(): Slider_ = ^.asInstanceOf[js.Dynamic].applyDynamic("slider")().asInstanceOf[Slider_]
   
   @js.native
   trait Slider_ extends StObject {
     
     def apply(
       sel: Selection_[
-          _, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+          js.Any, 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
           BaseType, 
-          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
         ]
     ): Unit = js.native
     

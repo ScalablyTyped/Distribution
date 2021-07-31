@@ -9,7 +9,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,32 +17,43 @@ object mod {
     * Response time header for node.js
     * Returns middleware that adds a X-Response-Time header to responses.
     */
-  @JSImport("response-time", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(): js.Function3[
     /* request */ IncomingMessage, 
     /* response */ ServerResponse, 
     /* callback */ js.Function1[/* err */ js.Any, Unit], 
-    _
-  ] = js.native
-  @JSImport("response-time", JSImport.Namespace)
-  @js.native
+    js.Any
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+    /* request */ IncomingMessage, 
+    /* response */ ServerResponse, 
+    /* callback */ js.Function1[/* err */ js.Any, Unit], 
+    js.Any
+  ]]
+  @scala.inline
   def apply(
     fn: js.Function3[
-      /* request */ Request_[ParamsDictionary, _, _, Query], 
-      /* response */ Response_[_], 
+      /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* response */ Response_[js.Any], 
       /* time */ Double, 
-      _
+      js.Any
     ]
-  ): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("response-time", JSImport.Namespace)
-  @js.native
+  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
   def apply(options: ResponseTimeOptions): js.Function3[
     /* request */ IncomingMessage, 
     /* response */ ServerResponse, 
     /* callback */ js.Function1[/* err */ js.Any, Unit], 
-    _
-  ] = js.native
+    js.Any
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* request */ IncomingMessage, 
+    /* response */ ServerResponse, 
+    /* callback */ js.Function1[/* err */ js.Any, Unit], 
+    js.Any
+  ]]
+  
+  @JSImport("response-time", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type ResponseTimeFunction = js.Function3[
     /* request */ IncomingMessage, 
@@ -52,14 +62,13 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait ResponseTimeOptions extends StObject {
     
-    var digits: js.UndefOr[Double] = js.native
+    var digits: js.UndefOr[Double] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[Boolean] = js.native
+    var suffix: js.UndefOr[Boolean] = js.undefined
   }
   object ResponseTimeOptions {
     

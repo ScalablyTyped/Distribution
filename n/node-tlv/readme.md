@@ -12,7 +12,7 @@ node tlv parser
 | Keywords           | TLV, DGI, Ber-TLV, EMV, ISO7816, SIMPLE-TLV, DOL |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 5282 |
+| # downloads        | 7017 |
 | # stars            | 0 |
 
 ## Links

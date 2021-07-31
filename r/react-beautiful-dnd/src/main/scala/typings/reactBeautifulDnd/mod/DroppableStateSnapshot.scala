@@ -2,19 +2,17 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableStateSnapshot extends StObject {
   
-  var draggingFromThisWith: js.UndefOr[DraggableId] = js.native
+  var draggingFromThisWith: js.UndefOr[DraggableId] = js.undefined
   
-  var draggingOverWith: js.UndefOr[DraggableId] = js.native
+  var draggingOverWith: js.UndefOr[DraggableId] = js.undefined
   
-  var isDraggingOver: Boolean = js.native
+  var isDraggingOver: Boolean
   
-  var isUsingPlaceholder: Boolean = js.native
+  var isUsingPlaceholder: Boolean
 }
 object DroppableStateSnapshot {
   

@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyntaxTokenReplacer extends SyntaxRewriter {
+trait SyntaxTokenReplacer
+  extends StObject
+     with SyntaxRewriter {
   
-  var token1: js.Any = js.native
+  var token1: js.Any
   
-  var token2: js.Any = js.native
+  var token2: js.Any
 }
 object SyntaxTokenReplacer {
   

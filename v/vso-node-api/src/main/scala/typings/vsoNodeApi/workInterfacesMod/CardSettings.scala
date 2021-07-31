@@ -2,16 +2,14 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardSettings extends StObject {
   
   /**
     * A collection of settings related to rendering of fields on cards
     */
-  var fields: CardFieldSettings = js.native
+  var fields: CardFieldSettings
 }
 object CardSettings {
   

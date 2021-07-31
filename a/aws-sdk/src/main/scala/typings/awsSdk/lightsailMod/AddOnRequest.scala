@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOnRequest extends StObject {
   
   /**
     * The add-on type.
     */
-  var addOnType: AddOnType = js.native
+  var addOnType: AddOnType
   
   /**
     * An object that represents additional parameters when enabling or modifying the automatic snapshot add-on.
     */
-  var autoSnapshotAddOnRequest: js.UndefOr[AutoSnapshotAddOnRequest] = js.native
+  var autoSnapshotAddOnRequest: js.UndefOr[AutoSnapshotAddOnRequest] = js.undefined
 }
 object AddOnRequest {
   

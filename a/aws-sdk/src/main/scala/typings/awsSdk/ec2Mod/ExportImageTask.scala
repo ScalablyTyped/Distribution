@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportImageTask extends StObject {
   
   /**
     * A description of the image being exported.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the export image task.
     */
-  var ExportImageTaskId: js.UndefOr[String] = js.native
+  var ExportImageTaskId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the image.
     */
-  var ImageId: js.UndefOr[String] = js.native
+  var ImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The percent complete of the export image task.
     */
-  var Progress: js.UndefOr[String] = js.native
+  var Progress: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the destination Amazon S3 bucket.
     */
-  var S3ExportLocation: js.UndefOr[ExportTaskS3Location] = js.native
+  var S3ExportLocation: js.UndefOr[ExportTaskS3Location] = js.undefined
   
   /**
     * The status of the export image task. The possible values are active, completed, deleting, and deleted.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The status message for the export image task.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the image being exported.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ExportImageTask {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ToolbarUpdating event.
   */
-@js.native
-trait ASPxClientFileManagerToolbarUpdatingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerToolbarUpdatingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the currently active file manager area.
     */
-  var activeAreaName: String = js.native
+  var activeAreaName: String
 }
 object ASPxClientFileManagerToolbarUpdatingEventArgs {
   

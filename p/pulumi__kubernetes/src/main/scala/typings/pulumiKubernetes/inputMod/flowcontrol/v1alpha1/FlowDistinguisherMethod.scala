@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FlowDistinguisherMethod specifies the method of a flow distinguisher.
   */
-@js.native
 trait FlowDistinguisherMethod extends StObject {
   
   /**
     * `type` is the type of flow distinguisher method The supported types are "ByUser" and "ByNamespace". Required.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object FlowDistinguisherMethod {
   

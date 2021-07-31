@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.postmanCollection.anon.Any
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -45,9 +44,8 @@ object Variable {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("postman-collection", "Variable.isVariable")
-  @js.native
-  def isVariable(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isVariable(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("postman-collection", "Variable.types")
   @js.native

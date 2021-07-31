@@ -11,8 +11,8 @@ Facebook token authentication strategy for Passport
 | Full name          | passport-facebook-token |
 | Keywords           | passport, facebook, auth, authn, authentication, identity |
 | # releases         | 2 |
-| # dependents       | 41 |
-| # downloads        | 678064 |
+| # dependents       | 43 |
+| # downloads        | 771193 |
 | # stars            | 6 |
 
 ## Links

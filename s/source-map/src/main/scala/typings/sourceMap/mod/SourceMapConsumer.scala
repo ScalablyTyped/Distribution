@@ -2,9 +2,9 @@ package typings.sourceMap.mod
 
 import typings.sourceMap.anon.MappedPositionbiasnumberu
 import typings.sourceMap.anon.Positionbiasnumberundefin
+import typings.sourceMap.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -60,13 +60,9 @@ trait SourceMapConsumer extends StObject {
     *        `SourceMapConsumer.GENERATED_ORDER`.
     */
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit]): Unit = js.native
-  def eachMapping(
-    callback: js.Function1[/* mapping */ MappingItem, Unit],
-    context: js.UndefOr[scala.Nothing],
-    order: Double
-  ): Unit = js.native
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any): Unit = js.native
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any, order: Double): Unit = js.native
+  def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: Unit, order: Double): Unit = js.native
   
   /**
     * Returns the generated line and column information for the original source,
@@ -124,4 +120,9 @@ trait SourceMapConsumer extends StObject {
     */
   def sourceContentFor(source: String): String | Null = js.native
   def sourceContentFor(source: String, returnNullOnMissing: Boolean): String | Null = js.native
+}
+object SourceMapConsumer {
+  
+  @scala.inline
+  def apply: SourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("SourceMapConsumer").asInstanceOf[SourceMapConsumerConstructor]
 }

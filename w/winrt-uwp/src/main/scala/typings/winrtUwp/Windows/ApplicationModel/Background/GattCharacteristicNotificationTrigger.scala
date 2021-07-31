@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 import typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task when an incoming change notification is received for a Bluetooth LE GATT characteristic. */
-@js.native
 trait GattCharacteristicNotificationTrigger extends StObject {
   
   /** Gets the GATT characteristic for which value change notifications are desired. */
-  var characteristic: GattCharacteristic = js.native
+  var characteristic: GattCharacteristic
 }
 object GattCharacteristicNotificationTrigger {
   

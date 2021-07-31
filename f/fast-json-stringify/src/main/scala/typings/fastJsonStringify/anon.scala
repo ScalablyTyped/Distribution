@@ -2,37 +2,35 @@ package typings.fastJsonStringify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllOf extends StObject {
     
     var allOf: js.UndefOr[
         js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
         ]
-      ] = js.native
+      ] = js.undefined
     
     var anyOf: js.UndefOr[
         js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
         ]
-      ] = js.native
+      ] = js.undefined
     
     var `else`: js.UndefOr[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
-      ] = js.native
+      ] = js.undefined
     
     var `if`: js.UndefOr[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
-      ] = js.native
+      ] = js.undefined
     
     var `then`: js.UndefOr[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias fast-json-stringify.fast-json-stringify.ObjectProperties */ js.Object
-      ] = js.native
+      ] = js.undefined
   }
   object AllOf {
     

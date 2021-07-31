@@ -10,9 +10,9 @@ Basic building blocks for Fluent UI React Component themes
 | ------------------ | :-------------: |
 | Full name          | @fluentui/theme |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 24 |
-| # downloads        | 361504 |
+| # releases         | 44 |
+| # dependents       | 26 |
+| # downloads        | 1013415 |
 | # stars            | 0 |
 
 ## Links

@@ -2,25 +2,23 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information regarding any resource causing the vulnerability such as
   * JavaScript sources, image, audio files, etc.
   */
-@js.native
 trait SchemaViolatingResource extends StObject {
   
   /**
     * The MIME type of this resource.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * URL of this violating resource.
     */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaViolatingResource {
   

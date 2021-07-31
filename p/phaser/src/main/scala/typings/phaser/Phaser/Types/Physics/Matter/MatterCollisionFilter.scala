@@ -2,7 +2,6 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,23 +26,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * category in its mask, i.e. `(categoryA & maskB) !== 0` and `(categoryB & maskA) !== 0`
   * are both true.
   */
-@js.native
 trait MatterCollisionFilter extends StObject {
   
   /**
     * A bit field that specifies the collision category this body belongs to. The category value should have only one bit set, for example `0x0001`. This means there are up to 32 unique collision categories available.
     */
-  var category: js.UndefOr[Double] = js.native
+  var category: js.UndefOr[Double] = js.undefined
   
   /**
     * An Integer `Number`, that specifies the collision group this body belongs to.
     */
-  var group: js.UndefOr[Double] = js.native
+  var group: js.UndefOr[Double] = js.undefined
   
   /**
     * A bit mask that specifies the collision categories this body may collide with.
     */
-  var mask: js.UndefOr[Double] = js.native
+  var mask: js.UndefOr[Double] = js.undefined
 }
 object MatterCollisionFilter {
   

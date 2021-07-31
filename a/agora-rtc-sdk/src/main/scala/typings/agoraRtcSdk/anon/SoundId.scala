@@ -2,15 +2,13 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoundId extends StObject {
   
-  var soundId: Double = js.native
+  var soundId: Double
   
-  var volume: Double = js.native
+  var volume: Double
 }
 object SoundId {
   

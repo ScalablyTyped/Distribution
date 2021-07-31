@@ -6,7 +6,6 @@ import typings.sipJs.anon.Parsed
 import typings.sipJs.grammarMod.NameAddrHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object incomingMessageMod {

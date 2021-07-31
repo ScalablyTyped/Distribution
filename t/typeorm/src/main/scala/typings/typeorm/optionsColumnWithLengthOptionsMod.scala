@@ -2,19 +2,17 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsColumnWithLengthOptionsMod {
   
-  @js.native
   trait ColumnWithLengthOptions extends StObject {
     
     /**
       * Column type's length.
       * For example type = "varchar" and length = "100" means ORM will create a column with type varchar(100).
       */
-    var length: js.UndefOr[String | Double] = js.native
+    var length: js.UndefOr[String | Double] = js.undefined
   }
   object ColumnWithLengthOptions {
     

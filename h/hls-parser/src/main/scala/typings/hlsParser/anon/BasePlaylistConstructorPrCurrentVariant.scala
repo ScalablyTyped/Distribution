@@ -5,30 +5,28 @@ import typings.hlsParser.mod.types.SessionData
 import typings.hlsParser.mod.types.Variant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined hls-parser.hls-parser.types.BasePlaylistConstructorProperties & {  variants :std.Array<hls-parser.hls-parser.types.Variant> | undefined,   currentVariant :number | undefined,   sessionDataList :std.Array<hls-parser.hls-parser.types.SessionData> | undefined,   sessionKeyList :std.Array<hls-parser.hls-parser.types.Key> | undefined,   source :string | undefined} */
-@js.native
 trait BasePlaylistConstructorPrCurrentVariant extends StObject {
   
-  var currentVariant: js.UndefOr[Double] = js.native
+  var currentVariant: js.UndefOr[Double] = js.undefined
   
-  var independentSegments: js.UndefOr[Boolean] = js.native
+  var independentSegments: js.UndefOr[Boolean] = js.undefined
   
-  var sessionDataList: js.UndefOr[js.Array[SessionData]] = js.native
+  var sessionDataList: js.UndefOr[js.Array[SessionData]] = js.undefined
   
-  var sessionKeyList: js.UndefOr[js.Array[Key]] = js.native
+  var sessionKeyList: js.UndefOr[js.Array[Key]] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Offset] = js.native
+  var start: js.UndefOr[Offset] = js.undefined
   
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
-  var variants: js.UndefOr[js.Array[Variant]] = js.native
+  var variants: js.UndefOr[js.Array[Variant]] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object BasePlaylistConstructorPrCurrentVariant {
   

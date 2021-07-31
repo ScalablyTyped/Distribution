@@ -7,7 +7,6 @@ import typings.semanticUiReact.commentActionMod.CommentActionProps
 import typings.semanticUiReact.commentCommentMod.CommentComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Comment extends Shortcut {

@@ -10,9 +10,9 @@ TypeScript typings for Google Play Game Services v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.games |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 935 |
+| # downloads        | 1033 |
 | # stars            | 0 |
 
 ## Links

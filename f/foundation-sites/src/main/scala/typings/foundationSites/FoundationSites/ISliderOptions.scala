@@ -2,39 +2,37 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISliderOptions extends StObject {
   
-  var binding: js.UndefOr[Boolean] = js.native
+  var binding: js.UndefOr[Boolean] = js.undefined
   
-  var clickSelect: js.UndefOr[Boolean] = js.native
+  var clickSelect: js.UndefOr[Boolean] = js.undefined
   
-  var decimal: js.UndefOr[Double] = js.native
+  var decimal: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var disabledClass: js.UndefOr[String] = js.native
+  var disabledClass: js.UndefOr[String] = js.undefined
   
-  var doubleSided: js.UndefOr[Boolean] = js.native
+  var doubleSided: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var initialEnd: js.UndefOr[Double] = js.native
+  var initialEnd: js.UndefOr[Double] = js.undefined
   
-  var initialStart: js.UndefOr[Double] = js.native
+  var initialStart: js.UndefOr[Double] = js.undefined
   
-  var moveTime: js.UndefOr[Double] = js.native
+  var moveTime: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object ISliderOptions {
   

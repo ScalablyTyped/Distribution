@@ -2,7 +2,6 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,22 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * around a contour of a shape, and return to the original half edge.  Half edges are ordered.
   * One half edge represents one side of the edge; the other half edge represents the other side.
   */
-@js.native
 trait FlashHalfEdge extends StObject {
   
-  def getEdge(): FlashEdge = js.native
+  def getEdge(): FlashEdge
   
-  def getNext(): FlashHalfEdge = js.native
+  def getNext(): FlashHalfEdge
   
-  def getOppositeHalfEdge(): FlashHalfEdge = js.native
+  def getOppositeHalfEdge(): FlashHalfEdge
   
-  def getPrev(): FlashHalfEdge = js.native
+  def getPrev(): FlashHalfEdge
   
-  def getVertex(): FlashVertex = js.native
+  def getVertex(): FlashVertex
   
-  var id: Double = js.native
+  var id: Double
   
-  var index: Double = js.native
+  var index: Double
 }
 object FlashHalfEdge {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamLocation extends StObject {
   
   /** The stream is a custom source. */
-  var customSourceLocation: js.UndefOr[CustomSourceLocation] = js.native
+  var customSourceLocation: js.UndefOr[CustomSourceLocation] = js.undefined
   
   /** The stream is a pubsub stream. */
-  var pubsubLocation: js.UndefOr[PubsubLocation] = js.native
+  var pubsubLocation: js.UndefOr[PubsubLocation] = js.undefined
   
   /** The stream is a streaming side input. */
-  var sideInputLocation: js.UndefOr[StreamingSideInputLocation] = js.native
+  var sideInputLocation: js.UndefOr[StreamingSideInputLocation] = js.undefined
   
   /** The stream is part of another computation within the current streaming Dataflow job. */
-  var streamingStageLocation: js.UndefOr[StreamingStageLocation] = js.native
+  var streamingStageLocation: js.UndefOr[StreamingStageLocation] = js.undefined
 }
 object StreamLocation {
   

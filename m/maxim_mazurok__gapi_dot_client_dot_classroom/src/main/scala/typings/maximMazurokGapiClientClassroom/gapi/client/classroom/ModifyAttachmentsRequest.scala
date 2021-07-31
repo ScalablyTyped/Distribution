@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyAttachmentsRequest extends StObject {
   
   /** Attachments to add. A student submission may not have more than 20 attachments. Form attachments are not supported. */
-  var addAttachments: js.UndefOr[js.Array[Attachment]] = js.native
+  var addAttachments: js.UndefOr[js.Array[Attachment]] = js.undefined
 }
 object ModifyAttachmentsRequest {
   

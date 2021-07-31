@@ -4,30 +4,28 @@ import typings.ionicCore.mod.ComponentRef
 import typings.ionicCore.mod.FrameworkDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonTab extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     * The component to display inside of the tab.
     */
-  var component: js.UndefOr[ComponentRef] = js.native
+  var component: js.UndefOr[ComponentRef] = js.undefined
   
-  var delegate: js.UndefOr[FrameworkDelegate] = js.native
+  var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
   
   /**
     * Set the active component for the tab
     */
-  def setActive(): js.Promise[Unit] = js.native
+  def setActive(): js.Promise[Unit]
   
   /**
     * A tab id must be provided for each `ion-tab`. It's used internally to reference the selected tab or by the router to switch between them.
     */
-  var tab: String = js.native
+  var tab: String
 }
 object IonTab {
   

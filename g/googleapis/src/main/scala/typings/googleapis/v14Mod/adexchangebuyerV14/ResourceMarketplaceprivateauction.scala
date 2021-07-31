@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Marketplaceprivateauction")
@@ -31,7 +30,7 @@ class ResourceMarketplaceprivateauction protected () extends StObject {
     */
   def updateproposal(): GaxiosPromise[Unit] = js.native
   def updateproposal(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def updateproposal(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def updateproposal(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def updateproposal(params: ParamsResourceMarketplaceprivateauctionUpdateproposal): GaxiosPromise[Unit] = js.native
   def updateproposal(
     params: ParamsResourceMarketplaceprivateauctionUpdateproposal,

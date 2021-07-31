@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWorkerBlockRequest extends StObject {
   
   /**
     * A message that explains the reason for unblocking the Worker. The Worker does not see this message.
     */
-  var Reason: js.UndefOr[String] = js.native
+  var Reason: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Worker to unblock.
     */
-  var WorkerId: CustomerId = js.native
+  var WorkerId: CustomerId
 }
 object DeleteWorkerBlockRequest {
   

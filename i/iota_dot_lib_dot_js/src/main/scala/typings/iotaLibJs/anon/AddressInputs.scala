@@ -2,15 +2,13 @@ package typings.iotaLibJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressInputs extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var inputs: js.Array[String] = js.native
+  var inputs: js.Array[String]
 }
 object AddressInputs {
   

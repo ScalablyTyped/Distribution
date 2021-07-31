@@ -2,23 +2,21 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructuredFormatting extends StObject {
   
   /** contains the main text of a prediction, usually the name of the place. */
-  var main_text: String = js.native
+  var main_text: String
   
   /**
     * contains an array with `offset` value and `length`. These describe the location of
     * the entered term in the prediction result text, so that the term can be highlighted if desired.
     */
-  var main_text_matched_substrings: js.Array[PredictionSubstring] = js.native
+  var main_text_matched_substrings: js.Array[PredictionSubstring]
   
   /** contains the secondary text of a prediction, usually the location of the place. */
-  var secondary_text: String = js.native
+  var secondary_text: String
 }
 object StructuredFormatting {
   

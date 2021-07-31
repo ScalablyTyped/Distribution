@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resources extends StObject {
   
   /** Number of CPU cores needed. */
-  var cpu: js.UndefOr[Double] = js.native
+  var cpu: js.UndefOr[Double] = js.undefined
   
   /** Disk size (GB) needed. */
-  var diskGb: js.UndefOr[Double] = js.native
+  var diskGb: js.UndefOr[Double] = js.undefined
   
   /** The name of the encryption key that is stored in Google Cloud KMS. Only should be used by Cloud Composer to encrypt the vm disk */
-  var kmsKeyReference: js.UndefOr[String] = js.native
+  var kmsKeyReference: js.UndefOr[String] = js.undefined
   
   /** Memory (GB) needed. */
-  var memoryGb: js.UndefOr[Double] = js.native
+  var memoryGb: js.UndefOr[Double] = js.undefined
   
   /** User specified volumes. */
-  var volumes: js.UndefOr[js.Array[Volume]] = js.native
+  var volumes: js.UndefOr[js.Array[Volume]] = js.undefined
 }
 object Resources {
   

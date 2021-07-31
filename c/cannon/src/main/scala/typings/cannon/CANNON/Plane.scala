@@ -2,19 +2,19 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Plane extends Shape {
+trait Plane
+  extends StObject
+     with Shape {
   
-  def calculateWorldAABB(pos: Vec3, quat: Quaternion, min: Double, max: Double): Unit = js.native
+  def calculateWorldAABB(pos: Vec3, quat: Quaternion, min: Double, max: Double): Unit
   
-  def computeWorldNormal(quat: Quaternion): Unit = js.native
+  def computeWorldNormal(quat: Quaternion): Unit
   
-  var worldNormal: Vec3 = js.native
+  var worldNormal: Vec3
   
-  var worldNormalNeedsUpdate: Boolean = js.native
+  var worldNormalNeedsUpdate: Boolean
 }
 object Plane {
   

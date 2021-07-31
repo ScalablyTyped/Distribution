@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.CellClick event.
   */
-@js.native
-trait ASPxClientSchedulerCellClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSchedulerCellClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets the time interval of the time cells related to the event.
     */
-  var interval: ASPxClientTimeInterval = js.native
+  var interval: ASPxClientTimeInterval
   
   /**
     * Gets the resource identifier associated with the cell related to the event.
     */
-  var resource: String = js.native
+  var resource: String
 }
 object ASPxClientSchedulerCellClickEventArgs {
   

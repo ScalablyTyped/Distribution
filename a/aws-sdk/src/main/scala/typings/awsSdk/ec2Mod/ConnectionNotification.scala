@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionNotification extends StObject {
   
   /**
     * The events for the notification. Valid values are Accept, Connect, Delete, and Reject.
     */
-  var ConnectionEvents: js.UndefOr[ValueStringList] = js.native
+  var ConnectionEvents: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ARN of the SNS topic for the notification.
     */
-  var ConnectionNotificationArn: js.UndefOr[String] = js.native
+  var ConnectionNotificationArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the notification.
     */
-  var ConnectionNotificationId: js.UndefOr[String] = js.native
+  var ConnectionNotificationId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the notification.
     */
-  var ConnectionNotificationState: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationState] = js.native
+  var ConnectionNotificationState: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationState] = js.undefined
   
   /**
     * The type of notification.
     */
-  var ConnectionNotificationType: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationType] = js.native
+  var ConnectionNotificationType: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationType] = js.undefined
   
   /**
     * The ID of the endpoint service.
     */
-  var ServiceId: js.UndefOr[String] = js.native
+  var ServiceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the VPC endpoint.
     */
-  var VpcEndpointId: js.UndefOr[String] = js.native
+  var VpcEndpointId: js.UndefOr[String] = js.undefined
 }
 object ConnectionNotification {
   

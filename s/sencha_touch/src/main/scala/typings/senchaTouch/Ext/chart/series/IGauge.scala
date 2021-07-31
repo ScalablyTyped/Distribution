@@ -3,217 +3,217 @@ package typings.senchaTouch.Ext.chart.series
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGauge extends ISeries {
+trait IGauge
+  extends StObject
+     with ISeries {
   
   /** [Config Option] (String) */
-  var angleField: js.UndefOr[String] = js.native
+  var angleField: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var donut: js.UndefOr[Double] = js.native
+  var donut: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of angleField
     * @returns String
     */
-  var getAngleField: js.UndefOr[js.Function0[String]] = js.native
+  var getAngleField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of center
     * @returns Array
     */
-  var getCenter: js.UndefOr[js.Function0[Array]] = js.native
+  var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of donut
     * @returns Number
     */
-  var getDonut: js.UndefOr[js.Function0[Double]] = js.native
+  var getDonut: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of field
     * @returns String
     */
-  var getField: js.UndefOr[js.Function0[String]] = js.native
+  var getField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of maximum
     * @returns Number
     */
-  var getMaximum: js.UndefOr[js.Function0[Double]] = js.native
+  var getMaximum: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of minimum
     * @returns Number
     */
-  var getMinimum: js.UndefOr[js.Function0[Double]] = js.native
+  var getMinimum: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of needle
     * @returns Boolean
     */
-  var getNeedle: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getNeedle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of needleLength
     * @returns Number
     */
-  var getNeedleLength: js.UndefOr[js.Function0[Double]] = js.native
+  var getNeedleLength: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of needleLengthRatio
     * @returns Number
     */
-  var getNeedleLengthRatio: js.UndefOr[js.Function0[Double]] = js.native
+  var getNeedleLengthRatio: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of needleWidth
     * @returns Number
     */
-  var getNeedleWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getNeedleWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of radius
     * @returns Number
     */
-  var getRadius: js.UndefOr[js.Function0[Double]] = js.native
+  var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of region
     * @returns Array
     */
-  var getRegion: js.UndefOr[js.Function0[Array]] = js.native
+  var getRegion: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of rotation
     * @returns Number
     */
-  var getRotation: js.UndefOr[js.Function0[Double]] = js.native
+  var getRotation: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of sectors
     * @returns Array
     */
-  var getSectors: js.UndefOr[js.Function0[Array]] = js.native
+  var getSectors: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of totalAngle
     * @returns Object
     */
-  var getTotalAngle: js.UndefOr[js.Function0[_]] = js.native
+  var getTotalAngle: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of value
     * @returns Number
     */
-  var getValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of wholeDisk
     * @returns Boolean
     */
-  var getWholeDisk: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getWholeDisk: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Number) */
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var needle: js.UndefOr[Boolean] = js.native
+  var needle: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var needleLength: js.UndefOr[Double] = js.native
+  var needleLength: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var needleLengthRatio: js.UndefOr[Double] = js.native
+  var needleLengthRatio: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var needleWidth: js.UndefOr[Double] = js.native
+  var needleWidth: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Array) */
-  var sectors: js.UndefOr[Array] = js.native
+  var sectors: js.UndefOr[Array] = js.undefined
   
   /** [Method] Sets the value of angleField
     * @param angleField String The new value.
     */
-  var setAngleField: js.UndefOr[js.Function1[/* angleField */ js.UndefOr[String], Unit]] = js.native
+  var setAngleField: js.UndefOr[js.Function1[/* angleField */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of center
     * @param center Array The new value.
     */
-  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.native
+  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of donut
     * @param donut Number The new value.
     */
-  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[Double], Unit]] = js.native
+  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of field
     * @param field String The new value.
     */
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.native
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of maximum
     * @param maximum Number The new value.
     */
-  var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.native
+  var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of minimum
     * @param minimum Number The new value.
     */
-  var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.native
+  var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of needle
     * @param needle Boolean The new value.
     */
-  var setNeedle: js.UndefOr[js.Function1[/* needle */ js.UndefOr[Boolean], Unit]] = js.native
+  var setNeedle: js.UndefOr[js.Function1[/* needle */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of needleLength
     * @param needleLength Number The new value.
     */
-  var setNeedleLength: js.UndefOr[js.Function1[/* needleLength */ js.UndefOr[Double], Unit]] = js.native
+  var setNeedleLength: js.UndefOr[js.Function1[/* needleLength */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of needleLengthRatio
     * @param needleLengthRatio Number The new value.
     */
-  var setNeedleLengthRatio: js.UndefOr[js.Function1[/* needleLengthRatio */ js.UndefOr[Double], Unit]] = js.native
+  var setNeedleLengthRatio: js.UndefOr[js.Function1[/* needleLengthRatio */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of needleWidth
     * @param needleWidth Number The new value.
     */
-  var setNeedleWidth: js.UndefOr[js.Function1[/* needleWidth */ js.UndefOr[Double], Unit]] = js.native
+  var setNeedleWidth: js.UndefOr[js.Function1[/* needleWidth */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of radius
     * @param radius Number The new value.
     */
-  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.native
+  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of region
     * @param region Array The new value.
     */
-  var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.native
+  var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of rotation
     * @param rotation Number The new value.
     */
-  var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.native
+  var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of sectors
     * @param sectors Array The new value.
     */
-  var setSectors: js.UndefOr[js.Function1[/* sectors */ js.UndefOr[Array], Unit]] = js.native
+  var setSectors: js.UndefOr[js.Function1[/* sectors */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of totalAngle
     * @param totalAngle Object The new value.
     */
-  var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of value
     * @param value Number The new value.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.native
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of wholeDisk
     * @param wholeDisk Boolean The new value.
     */
-  var setWholeDisk: js.UndefOr[js.Function1[/* wholeDisk */ js.UndefOr[Boolean], Unit]] = js.native
+  var setWholeDisk: js.UndefOr[js.Function1[/* wholeDisk */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var wholeDisk: js.UndefOr[Boolean] = js.native
+  var wholeDisk: js.UndefOr[Boolean] = js.undefined
 }
 object IGauge {
   
@@ -329,7 +329,7 @@ object IGauge {
     def setGetSectorsUndefined: Self = StObject.set(x, "getSectors", js.undefined)
     
     @scala.inline
-    def setGetTotalAngle(value: () => _): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
+    def setGetTotalAngle(value: () => js.Any): Self = StObject.set(x, "getTotalAngle", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTotalAngleUndefined: Self = StObject.set(x, "getTotalAngle", js.undefined)

@@ -15,24 +15,24 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextualMenuItemTypesMod {
   
-  @js.native
-  trait IContextualMenuItemProps extends HTMLAttributes[IContextualMenuItemProps] {
+  trait IContextualMenuItemProps
+    extends StObject
+       with HTMLAttributes[IContextualMenuItemProps] {
     
     /**
       * Classnames for different aspects of a menu item
       */
-    var classNames: IMenuItemClassNames = js.native
+    var classNames: IMenuItemClassNames
     
     /**
       * Optional callback to access the IContextualMenuRenderItem interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IContextualMenuRenderItem]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IContextualMenuRenderItem]] = js.undefined
     
     /**
       * This prop will get set by ContextualMenu and can be called to close the menu this item belongs to.
@@ -40,33 +40,33 @@ object contextualMenuItemTypesMod {
       */
     var dismissMenu: js.UndefOr[
         js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This prop will get set by ContextualMenu and can be called to close this item's subMenu, if present.
       */
-    var dismissSubMenu: js.UndefOr[js.Function0[Unit]] = js.native
+    var dismissSubMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * This prop will get set by the wrapping component and will return the element that wraps this ContextualMenuItem.
       * Used for openSubMenu.
       */
-    var getSubmenuTarget: js.UndefOr[js.Function0[js.UndefOr[HTMLElement]]] = js.native
+    var getSubmenuTarget: js.UndefOr[js.Function0[js.UndefOr[HTMLElement]]] = js.undefined
     
     /**
       * If this item has icons
       */
-    var hasIcons: js.UndefOr[Boolean] = js.native
+    var hasIcons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Index of the item
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * The item to display
       */
-    var item: IContextualMenuItem = js.native
+    var item: IContextualMenuItem
     
     /**
       * Click handler for the checkmark
@@ -77,22 +77,22 @@ object contextualMenuItemTypesMod {
           /* ev */ MouseEvent[HTMLElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This prop will get set by ContextualMenu and can be called to open this item's subMenu, if present.
       */
-    var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ HTMLElement, Unit]] = js.native
+    var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ HTMLElement, Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IContextualMenuItemStyleProps, IContextualMenuItemStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IContextualMenuItemStyleProps, IContextualMenuItemStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IContextualMenuItemProps {
     
@@ -212,68 +212,67 @@ object contextualMenuItemTypesMod {
     def renderSubMenuIcon(props: IContextualMenuItemProps, customClassNames: js.Array[String]): ReactNode = js.native
   }
   
-  @js.native
   trait IContextualMenuItemStyleProps extends StObject {
     
     /**
       * Whether or not the menu item is checked.
       */
-    var checked: Boolean = js.native
+    var checked: Boolean
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the menu item is disabled.
       */
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
     /**
       * The optional class name to apply to the divider element.
       */
-    var dividerClassName: js.UndefOr[String] = js.native
+    var dividerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not the menu item is expanded.
       */
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
     /**
       * The optional class name to apply to the icon element.
       */
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if a menu item is an anchor link.
       */
-    var isAnchorLink: Boolean = js.native
+    var isAnchorLink: Boolean
     
     /**
       * The optional class name to apply to the item element.
       */
-    var itemClassName: js.UndefOr[String] = js.native
+    var itemClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if the icon used is of the known set of icons.
       */
-    var knownIcon: Boolean = js.native
+    var knownIcon: Boolean
     
     /**
       * Whether or not the primary section of a split menu item is disabled.
       */
-    var primaryDisabled: js.UndefOr[Boolean] = js.native
+    var primaryDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The optional class name to apply to the sub-menu if present.
       */
-    var subMenuClassName: js.UndefOr[String] = js.native
+    var subMenuClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IContextualMenuItemStyleProps {
     
@@ -349,87 +348,88 @@ object contextualMenuItemTypesMod {
     }
   }
   
-  @js.native
-  trait IContextualMenuItemStyles extends IButtonStyles {
+  trait IContextualMenuItemStyles
+    extends StObject
+       with IButtonStyles {
     
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var anchorLink: IStyle = js.native
+    var anchorLink: IStyle
     
     /**
       * Default style for checkmark icons.
       */
-    var checkmarkIcon: IStyle = js.native
+    var checkmarkIcon: IStyle
     
     /**
       * Styles for a divider item of a ContextualMenu.
       */
-    var divider: IStyle = js.native
+    var divider: IStyle
     
     /**
       * Default icon color style for known icons.
       */
-    var iconColor: IStyle = js.native
+    var iconColor: IStyle
     
     /**
       * Styles for the icon element of a menu item.
       */
     @JSName("icon")
-    var icon_IContextualMenuItemStyles: IStyle = js.native
+    var icon_IContextualMenuItemStyles: IStyle
     
     /**
       * Styles for a menu item that is an anchor link.
       */
-    var item: IStyle = js.native
+    var item: IStyle
     
     /**
       * Styles for the label of a menu item.
       */
     @JSName("label")
-    var label_IContextualMenuItemStyles: IStyle = js.native
+    var label_IContextualMenuItemStyles: IStyle
     
     /**
       * Styles for the content inside the button/link of the menuItem.
       */
-    var linkContent: IStyle = js.native
+    var linkContent: IStyle
     
     /**
       * Styles for a menu item that is a link.
       */
-    var linkContentMenu: IStyle = js.native
+    var linkContentMenu: IStyle
     
     /**
       * Style for the root element.
       */
     @JSName("root")
-    var root_IContextualMenuItemStyles: IStyle = js.native
+    var root_IContextualMenuItemStyles: IStyle
     
     /**
       * Styles for the secondary text of a menu item.
       */
     @JSName("secondaryText")
-    var secondaryText_IContextualMenuItemStyles: IStyle = js.native
+    var secondaryText_IContextualMenuItemStyles: IStyle
     
     /**
       * Styles for the container of a split menu item.
       */
-    var splitContainer: IStyle = js.native
+    var splitContainer: IStyle
     
     /**
       * Styles for the menu portion of a split menu item.
       */
-    var splitMenu: IStyle = js.native
+    var splitMenu: IStyle
     
     /**
       * Styles for the primary portion of a split menu item.
       */
-    var splitPrimary: IStyle = js.native
+    var splitPrimary: IStyle
     
     /**
       * Styles for the submenu icon of a menu item.
       */
-    var subMenuIcon: IStyle = js.native
+    var subMenuIcon: IStyle
   }
   object IContextualMenuItemStyles {
     

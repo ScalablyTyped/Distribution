@@ -2,11 +2,9 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Page object, for use in "page.set({ ... })". */
-@js.native
 trait PageUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PageUpdateData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[PageViewUpdateData] = js.native
+  var view: js.UndefOr[PageViewUpdateData] = js.undefined
 }
 object PageUpdateData {
   

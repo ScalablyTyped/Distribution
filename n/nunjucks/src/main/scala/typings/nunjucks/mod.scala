@@ -8,25 +8,28 @@ import typings.nunjucks.mod.lib.TemplateError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("nunjucks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("nunjucks", "Environment")
   @js.native
   class Environment () extends StObject {
     def this(loader: js.Array[ILoader]) = this()
     def this(loader: ILoader) = this()
-    def this(loader: js.UndefOr[scala.Nothing], opts: ConfigureOptions) = this()
     def this(loader: js.Array[ILoader], opts: ConfigureOptions) = this()
     def this(loader: Null, opts: ConfigureOptions) = this()
+    def this(loader: Unit, opts: ConfigureOptions) = this()
     def this(loader: ILoader, opts: ConfigureOptions) = this()
     
     def addExtension(name: String, ext: Extension): Environment = js.native
     
-    def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, _]): Environment = js.native
-    def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, _], async: Boolean): Environment = js.native
+    def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, js.Any]): Environment = js.native
+    def addFilter(name: String, func: js.Function1[/* repeated */ js.Any, js.Any], async: Boolean): Environment = js.native
     
     def addGlobal(name: String, value: js.Any): Environment = js.native
     
@@ -34,14 +37,14 @@ object mod {
     
     def getExtension(name: String): Extension = js.native
     
-    def getFilter(name: String): js.Function1[/* repeated */ js.Any, _] = js.native
+    def getFilter(name: String): js.Function1[/* repeated */ js.Any, js.Any] = js.native
     
     def getGlobal(name: String): js.Any = js.native
     
     def getTemplate(name: String): Unit = js.native
-    def getTemplate(name: String, eagerCompile: js.UndefOr[scala.Nothing], callback: Callback[Error, Template]): Unit = js.native
     def getTemplate(name: String, eagerCompile: Boolean): Unit = js.native
     def getTemplate(name: String, eagerCompile: Boolean, callback: Callback[Error, Template]): Unit = js.native
+    def getTemplate(name: String, eagerCompile: Unit, callback: Callback[Error, Template]): Unit = js.native
     @JSName("getTemplate")
     def getTemplate_Template(name: String): Template = js.native
     @JSName("getTemplate")
@@ -54,9 +57,9 @@ object mod {
     def removeExtension(name: String): Unit = js.native
     
     def render(name: String): String = js.native
-    def render(name: String, context: js.UndefOr[scala.Nothing], callback: TemplateCallback[String]): Unit = js.native
     def render(name: String, context: js.Object): String = js.native
     def render(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
+    def render(name: String, context: Unit, callback: TemplateCallback[String]): Unit = js.native
     
     def renderString(name: String, context: js.Object): String = js.native
     def renderString(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
@@ -75,9 +78,9 @@ object mod {
   class FileSystemLoader () extends Loader {
     def this(searchPaths: String) = this()
     def this(searchPaths: js.Array[String]) = this()
-    def this(searchPaths: js.UndefOr[scala.Nothing], opts: FileSystemLoaderOptions) = this()
     def this(searchPaths: String, opts: FileSystemLoaderOptions) = this()
     def this(searchPaths: js.Array[String], opts: FileSystemLoaderOptions) = this()
+    def this(searchPaths: Unit, opts: FileSystemLoaderOptions) = this()
     
     var async: js.UndefOr[Boolean] = js.native
     
@@ -97,7 +100,7 @@ object mod {
     
     def isRelative(filename: String): Boolean = js.native
     
-    def on(name: String, func: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+    def on(name: String, func: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
     
     def resolve(from: String, to: String): String = js.native
   }
@@ -120,13 +123,13 @@ object mod {
   class Template protected () extends StObject {
     def this(src: String) = this()
     def this(src: String, env: Environment) = this()
-    def this(src: String, env: js.UndefOr[scala.Nothing], eagerCompile: Boolean) = this()
+    def this(src: String, env: Unit, eagerCompile: Boolean) = this()
     def this(src: String, env: Environment, eagerCompile: Boolean) = this()
     
     def render(): String = js.native
-    def render(context: js.UndefOr[scala.Nothing], callback: TemplateCallback[String]): Unit = js.native
     def render(context: js.Object): String = js.native
     def render(context: js.Object, callback: TemplateCallback[String]): Unit = js.native
+    def render(context: Unit, callback: TemplateCallback[String]): Unit = js.native
     @JSName("render")
     def render_Unit(): Unit = js.native
     @JSName("render")
@@ -146,44 +149,36 @@ object mod {
     def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
   }
   
-  @JSImport("nunjucks", "compile")
-  @js.native
-  def compile(src: String): Template = js.native
-  @JSImport("nunjucks", "compile")
-  @js.native
-  def compile(src: String, env: js.UndefOr[scala.Nothing], callback: TemplateCallback[Template]): Template = js.native
-  @JSImport("nunjucks", "compile")
-  @js.native
-  def compile(src: String, env: Environment): Template = js.native
-  @JSImport("nunjucks", "compile")
-  @js.native
-  def compile(src: String, env: Environment, callback: TemplateCallback[Template]): Template = js.native
+  @scala.inline
+  def compile(src: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(src.asInstanceOf[js.Any]).asInstanceOf[Template]
+  @scala.inline
+  def compile(src: String, env: Unit, callback: TemplateCallback[Template]): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(src.asInstanceOf[js.Any], env.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Template]
+  @scala.inline
+  def compile(src: String, env: Environment): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(src.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[Template]
+  @scala.inline
+  def compile(src: String, env: Environment, callback: TemplateCallback[Template]): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(src.asInstanceOf[js.Any], env.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Template]
   
-  @JSImport("nunjucks", "configure")
-  @js.native
-  def configure(options: ConfigureOptions): Environment = js.native
-  @JSImport("nunjucks", "configure")
-  @js.native
-  def configure(path: String): Environment = js.native
-  @JSImport("nunjucks", "configure")
-  @js.native
-  def configure(path: String, options: ConfigureOptions): Environment = js.native
-  @JSImport("nunjucks", "configure")
-  @js.native
-  def configure(path: js.Array[String]): Environment = js.native
-  @JSImport("nunjucks", "configure")
-  @js.native
-  def configure(path: js.Array[String], options: ConfigureOptions): Environment = js.native
+  @scala.inline
+  def configure(options: ConfigureOptions): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Environment]
+  @scala.inline
+  def configure(path: String): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(path.asInstanceOf[js.Any]).asInstanceOf[Environment]
+  @scala.inline
+  def configure(path: String, options: ConfigureOptions): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Environment]
+  @scala.inline
+  def configure(path: js.Array[String]): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(path.asInstanceOf[js.Any]).asInstanceOf[Environment]
+  @scala.inline
+  def configure(path: js.Array[String], options: ConfigureOptions): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("configure")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Environment]
   
-  @JSImport("nunjucks", "installJinjaCompat")
-  @js.native
-  def installJinjaCompat(): Unit = js.native
+  @scala.inline
+  def installJinjaCompat(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installJinjaCompat")().asInstanceOf[Unit]
   
   object lib {
     
     @JSImport("nunjucks", "lib.TemplateError")
     @js.native
-    class TemplateError protected () extends Error {
+    class TemplateError protected ()
+      extends StObject
+         with Error {
       def this(message: String, lineno: Double, colno: Double) = this()
       
       var cause: js.UndefOr[Error] = js.native
@@ -192,54 +187,48 @@ object mod {
       
       var lineno: Double = js.native
       
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
+      
       @JSName("stack")
       var stack_TemplateError: String = js.native
     }
   }
   
-  @JSImport("nunjucks", "precompile")
-  @js.native
-  def precompile(path: String): String = js.native
-  @JSImport("nunjucks", "precompile")
-  @js.native
-  def precompile(path: String, opts: PrecompileOptions): String = js.native
+  @scala.inline
+  def precompile(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def precompile(path: String, opts: PrecompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nunjucks", "precompileString")
-  @js.native
-  def precompileString(src: String): String = js.native
-  @JSImport("nunjucks", "precompileString")
-  @js.native
-  def precompileString(src: String, opts: PrecompileOptions): String = js.native
+  @scala.inline
+  def precompileString(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("precompileString")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def precompileString(src: String, opts: PrecompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("precompileString")(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nunjucks", "render")
-  @js.native
-  def render(name: String): String = js.native
-  @JSImport("nunjucks", "render")
-  @js.native
-  def render(name: String, context: js.UndefOr[scala.Nothing], callback: TemplateCallback[String]): Unit = js.native
-  @JSImport("nunjucks", "render")
-  @js.native
-  def render(name: String, context: js.Object): String = js.native
-  @JSImport("nunjucks", "render")
-  @js.native
-  def render(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
+  @scala.inline
+  def render(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def render(name: String, context: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(name: String, context: js.Object, callback: TemplateCallback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def render(name: String, context: Unit, callback: TemplateCallback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("nunjucks", "renderString")
-  @js.native
-  def renderString(src: String, context: js.Object): String = js.native
-  @JSImport("nunjucks", "renderString")
-  @js.native
-  def renderString(src: String, context: js.Object, callback: TemplateCallback[String]): Unit = js.native
-  @JSImport("nunjucks", "renderString")
-  @js.native
-  def renderString_Unit(src: String, context: js.Object): Unit = js.native
+  @scala.inline
+  def renderString(src: String, context: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(src.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def renderString(src: String, context: js.Object, callback: TemplateCallback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(src.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("nunjucks", "render")
-  @js.native
-  def render_Unit(name: String): Unit = js.native
-  @JSImport("nunjucks", "render")
-  @js.native
-  def render_Unit(name: String, context: js.Object): Unit = js.native
+  @scala.inline
+  def renderString_Unit(src: String, context: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(src.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def render_Unit(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def render_Unit(name: String, context: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object runtime {
     
@@ -256,26 +245,25 @@ object mod {
   
   type Callback[E, T] = js.Function2[/* err */ E | Null, /* res */ T | Null, Unit]
   
-  @js.native
   trait ConfigureOptions extends StObject {
     
-    var autoescape: js.UndefOr[Boolean] = js.native
+    var autoescape: js.UndefOr[Boolean] = js.undefined
     
-    var express: js.UndefOr[js.Object] = js.native
+    var express: js.UndefOr[js.Object] = js.undefined
     
-    var lstripBlocks: js.UndefOr[Boolean] = js.native
+    var lstripBlocks: js.UndefOr[Boolean] = js.undefined
     
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
-    var tags: js.UndefOr[BlockEnd] = js.native
+    var tags: js.UndefOr[BlockEnd] = js.undefined
     
-    var throwOnUndefined: js.UndefOr[Boolean] = js.native
+    var throwOnUndefined: js.UndefOr[Boolean] = js.undefined
     
-    var trimBlocks: js.UndefOr[Boolean] = js.native
+    var trimBlocks: js.UndefOr[Boolean] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
     
-    var web: js.UndefOr[Async] = js.native
+    var web: js.UndefOr[Async] = js.undefined
   }
   object ConfigureOptions {
     
@@ -344,13 +332,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Extension extends StObject {
     
     // Parser API is undocumented it is suggested to check the source: https://github.com/mozilla/nunjucks/blob/master/src/parser.js
-    def parse(parser: js.Any, nodes: js.Any, lexer: js.Any): js.Any = js.native
+    def parse(parser: js.Any, nodes: js.Any, lexer: js.Any): js.Any
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object Extension {
     
@@ -374,14 +361,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FileSystemLoaderOptions extends StObject {
     
     /**  if true, the system will avoid using a cache and templates will be recompiled every single time */
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
     /** if true, the system will automatically update templates when they are changed on the filesystem */
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object FileSystemLoaderOptions {
     
@@ -419,14 +405,13 @@ object mod {
     def getSource(name: String, callback: Callback[Error, LoaderSource]): Unit = js.native
   }
   
-  @js.native
   trait LoaderSource extends StObject {
     
-    var noCache: Boolean = js.native
+    var noCache: Boolean
     
-    var path: String = js.native
+    var path: String
     
-    var src: String = js.native
+    var src: String
   }
   object LoaderSource {
     
@@ -450,22 +435,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PrecompileOptions extends StObject {
     
-    var asFunction: js.UndefOr[Boolean] = js.native
+    var asFunction: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[Environment] = js.native
+    var env: js.UndefOr[Environment] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var wrapper: js.UndefOr[js.Function2[/* templates */ Name, /* opts */ this.type, String]] = js.native
+    var wrapper: js.UndefOr[js.Function2[/* templates */ Name, /* opts */ this.type, String]] = js.undefined
   }
   object PrecompileOptions {
     

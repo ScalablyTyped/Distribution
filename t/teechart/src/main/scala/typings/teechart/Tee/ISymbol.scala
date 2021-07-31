@@ -2,23 +2,21 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISymbol extends StObject {
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var height: Double = js.native
+  var height: Double
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object ISymbol {
   

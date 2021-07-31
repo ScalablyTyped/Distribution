@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDomainDeliverabilityCampaignsResponse extends StObject {
   
   /**
     * An array of responses, one for each campaign that used the domain to send email during the specified time range.
     */
-  var DomainDeliverabilityCampaigns: DomainDeliverabilityCampaignList = js.native
+  var DomainDeliverabilityCampaigns: DomainDeliverabilityCampaignList
   
   /**
     * A token that’s returned from a previous call to the ListDomainDeliverabilityCampaigns operation. This token indicates the position of the campaign in the list of campaigns.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.pinpointemailMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.pinpointemailMod.NextToken] = js.undefined
 }
 object ListDomainDeliverabilityCampaignsResponse {
   

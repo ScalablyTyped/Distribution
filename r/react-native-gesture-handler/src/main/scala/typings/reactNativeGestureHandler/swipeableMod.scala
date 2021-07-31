@@ -13,7 +13,6 @@ import typings.reactNativeGestureHandler.anon.Left
 import typings.reactNativeGestureHandler.anon.Right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeableMod {
@@ -133,78 +132,77 @@ object swipeableMod {
   }
   
   /* Inlined parent std.Pick<react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties, react-native-gesture-handler.react-native-gesture-handler/Swipeable.SwipeableExcludes> */
-  @js.native
   trait SwipeableProperties extends StObject {
     
-    var activeOffsetX: js.UndefOr[Double | js.Array[Double]] = js.native
+    var activeOffsetX: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var activeOffsetY: js.UndefOr[Double | js.Array[Double]] = js.native
+    var activeOffsetY: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var avgTouches: js.UndefOr[Boolean] = js.native
+    var avgTouches: js.UndefOr[Boolean] = js.undefined
     
-    var childrenContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var childrenContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var failOffsetX: js.UndefOr[Double | js.Array[Double]] = js.native
+    var failOffsetX: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var failOffsetY: js.UndefOr[Double | js.Array[Double]] = js.native
+    var failOffsetY: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
-    var hitSlop: js.UndefOr[Double | Bottom | Left | Right | Height | BottomHeight] = js.native
+    var hitSlop: js.UndefOr[Double | Bottom | Left | Right | Height | BottomHeight] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var leftThreshold: js.UndefOr[Double] = js.native
+    var leftThreshold: js.UndefOr[Double] = js.undefined
     
-    var maxDeltaX: js.UndefOr[Double] = js.native
+    var maxDeltaX: js.UndefOr[Double] = js.undefined
     
-    var maxDeltaY: js.UndefOr[Double] = js.native
+    var maxDeltaY: js.UndefOr[Double] = js.undefined
     
-    var maxPointers: js.UndefOr[Double] = js.native
+    var maxPointers: js.UndefOr[Double] = js.undefined
     
-    var minDeltaX: js.UndefOr[Double] = js.native
+    var minDeltaX: js.UndefOr[Double] = js.undefined
     
-    var minDeltaY: js.UndefOr[Double] = js.native
+    var minDeltaY: js.UndefOr[Double] = js.undefined
     
-    var minDist: js.UndefOr[Double] = js.native
+    var minDist: js.UndefOr[Double] = js.undefined
     
-    var minOffsetX: js.UndefOr[Double] = js.native
+    var minOffsetX: js.UndefOr[Double] = js.undefined
     
-    var minOffsetY: js.UndefOr[Double] = js.native
+    var minOffsetY: js.UndefOr[Double] = js.undefined
     
-    var minPointers: js.UndefOr[Double] = js.native
+    var minPointers: js.UndefOr[Double] = js.undefined
     
-    var minVelocity: js.UndefOr[Double] = js.native
+    var minVelocity: js.UndefOr[Double] = js.undefined
     
-    var minVelocityX: js.UndefOr[Double] = js.native
+    var minVelocityX: js.UndefOr[Double] = js.undefined
     
-    var minVelocityY: js.UndefOr[Double] = js.native
+    var minVelocityY: js.UndefOr[Double] = js.undefined
     
-    var onSwipeableClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableLeftOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableLeftOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableLeftWillOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableLeftWillOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableRightOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableRightOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableRightWillOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableRightWillOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableWillClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableWillClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSwipeableWillOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSwipeableWillOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var overshootFriction: js.UndefOr[Double] = js.native
+    var overshootFriction: js.UndefOr[Double] = js.undefined
     
-    var overshootLeft: js.UndefOr[Boolean] = js.native
+    var overshootLeft: js.UndefOr[Boolean] = js.undefined
     
-    var overshootRight: js.UndefOr[Boolean] = js.native
+    var overshootRight: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -222,7 +220,7 @@ object swipeableMod {
           /* dragAnimatedValue */ AnimatedInterpolation, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       *
@@ -240,17 +238,17 @@ object swipeableMod {
           /* dragAnimatedValue */ AnimatedInterpolation, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rightThreshold: js.UndefOr[Double] = js.native
+    var rightThreshold: js.UndefOr[Double] = js.undefined
     
-    var shouldCancelWhenOutside: js.UndefOr[Boolean] = js.native
+    var shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined
     
-    var simultaneousHandlers: js.UndefOr[Ref[_] | js.Array[Ref[_]]] = js.native
+    var simultaneousHandlers: js.UndefOr[Ref[js.Any] | js.Array[Ref[js.Any]]] = js.undefined
     
-    var useNativeAnimations: js.UndefOr[Boolean] = js.native
+    var useNativeAnimations: js.UndefOr[Boolean] = js.undefined
     
-    var waitFor: js.UndefOr[Ref[_] | js.Array[Ref[_]]] = js.native
+    var waitFor: js.UndefOr[Ref[js.Any] | js.Array[Ref[js.Any]]] = js.undefined
   }
   object SwipeableProperties {
     
@@ -520,10 +518,10 @@ object swipeableMod {
       def setShouldCancelWhenOutsideUndefined: Self = StObject.set(x, "shouldCancelWhenOutside", js.undefined)
       
       @scala.inline
-      def setSimultaneousHandlers(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
+      def setSimultaneousHandlers(value: Ref[js.Any] | js.Array[Ref[js.Any]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSimultaneousHandlersFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
+      def setSimultaneousHandlersFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSimultaneousHandlersNull: Self = StObject.set(x, "simultaneousHandlers", null)
@@ -541,10 +539,10 @@ object swipeableMod {
       def setUseNativeAnimationsUndefined: Self = StObject.set(x, "useNativeAnimations", js.undefined)
       
       @scala.inline
-      def setWaitFor(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
+      def setWaitFor(value: Ref[js.Any] | js.Array[Ref[js.Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWaitForFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+      def setWaitForFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
       
       @scala.inline
       def setWaitForNull: Self = StObject.set(x, "waitFor", null)

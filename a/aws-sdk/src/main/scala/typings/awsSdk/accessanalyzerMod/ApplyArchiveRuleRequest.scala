@@ -2,26 +2,24 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyArchiveRuleRequest extends StObject {
   
   /**
     * The Amazon resource name (ARN) of the analyzer.
     */
-  var analyzerArn: AnalyzerArn = js.native
+  var analyzerArn: AnalyzerArn
   
   /**
     * A client token.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the rule to apply.
     */
-  var ruleName: Name = js.native
+  var ruleName: Name
 }
 object ApplyArchiveRuleRequest {
   

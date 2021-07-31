@@ -3,14 +3,15 @@ package typings.js2xmlparser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "DeclarationOptions")
   @js.native
-  class DeclarationOptions () extends IDeclarationOptions {
+  class DeclarationOptions ()
+    extends StObject
+       with IDeclarationOptions {
     def this(declarationOptions: IDeclarationOptions) = this()
     
     @JSName("include")
@@ -19,7 +20,9 @@ object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "DtdOptions")
   @js.native
-  class DtdOptions protected () extends IDtdOptions {
+  class DtdOptions protected ()
+    extends StObject
+       with IDtdOptions {
     def this(validation: Boolean) = this()
     def this(validation: Boolean, dtdOptions: IDtdOptions) = this()
     
@@ -29,13 +32,17 @@ object optionsMod {
   
   @JSImport("js2xmlparser/lib/options", "FormatOptions")
   @js.native
-  class FormatOptions () extends IFormatOptions {
+  class FormatOptions ()
+    extends StObject
+       with IFormatOptions {
     def this(formatOptions: IFormatOptions) = this()
   }
   
   @JSImport("js2xmlparser/lib/options", "Options")
   @js.native
-  class Options () extends IOptions {
+  class Options ()
+    extends StObject
+       with IOptions {
     def this(options: IOptions) = this()
     
     @JSName("aliasString")
@@ -79,20 +86,25 @@ object optionsMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - org.scalablytyped.runtime.StObject because Already inherited
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("js2xmlparser/lib/options", "TypeHandlers")
   @js.native
-  class TypeHandlers () extends ITypeHandlers {
+  class TypeHandlers ()
+    extends StObject
+       with ITypeHandlers {
     def this(typeHandlers: ITypeHandlers) = this()
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - org.scalablytyped.runtime.StObject because Already inherited
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("js2xmlparser/lib/options", "WrapHandlers")
   @js.native
-  class WrapHandlers () extends IWrapHandlers {
+  class WrapHandlers ()
+    extends StObject
+       with IWrapHandlers {
     def this(wrapHandlers: IWrapHandlers) = this()
   }
   
-  @js.native
   trait IDeclarationOptions extends StObject {
     
     /**
@@ -100,26 +112,26 @@ object optionsMod {
       * this value must be a valid encoding. By default, no encoding attribute
       * is included.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to include a declaration in the generated XML. By default,
       * one is included.
       */
-    var include: js.UndefOr[Boolean] = js.native
+    var include: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The value of the standalone attribute to be included in the declaration.
       * If defined, this value must be "yes" or "no". By default, no standalone
       * attribute is included.
       */
-    var standalone: js.UndefOr[String] = js.native
+    var standalone: js.UndefOr[String] = js.undefined
     
     /**
       * The XML version to be included in the declaration. If defined, this
       * value must be a valid XML version number. Defaults to "1.0".
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IDeclarationOptions {
     
@@ -158,33 +170,32 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait IDtdOptions extends StObject {
     
     /**
       * Whether to include a DTD in the generated XML. By default, no DTD is
       * included.
       */
-    var include: js.UndefOr[Boolean] = js.native
+    var include: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the DTD. This value cannot be left undefined if `include`
       * is true.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The public identifier of the DTD, excluding quotation marks. If a public
       * identifier is provided, a system identifier must be provided as well.
       * By default, no public identifier is included.
       */
-    var pubId: js.UndefOr[String] = js.native
+    var pubId: js.UndefOr[String] = js.undefined
     
     /**
       * The system identifier of the DTD, excluding quotation marks. By default,
       * no system identifier is included.
       */
-    var sysId: js.UndefOr[String] = js.native
+    var sysId: js.UndefOr[String] = js.undefined
   }
   object IDtdOptions {
     
@@ -223,32 +234,31 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait IFormatOptions extends StObject {
     
     /**
       * Whether double quotes or single quotes should be used in XML attributes.
       * By default, single quotes are used.
       */
-    var doubleQuotes: js.UndefOr[Boolean] = js.native
+    var doubleQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The indent string used for pretty-printing. The default indent string is
       * four spaces.
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * The newline string used for pretty-printing. The default newline string
       * is "\n".
       */
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     /**
       * Whether pretty-printing is enabled. By default, pretty-printing is
       * enabled.
       */
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
   }
   object IFormatOptions {
     
@@ -287,7 +297,6 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
     /**
@@ -314,7 +323,7 @@ object optionsMod {
       *
       * The default alias string is `"="`.
       */
-    var aliasString: js.UndefOr[String] = js.native
+    var aliasString: js.UndefOr[String] = js.undefined
     
     /**
       * If an object or map contains a key that, when converted to a string,
@@ -352,7 +361,7 @@ object optionsMod {
       *
       * The default attribute string is `"@"`.
       */
-    var attributeString: js.UndefOr[String] = js.native
+    var attributeString: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to enclose any text containing the characters `<` or `&`
@@ -361,7 +370,7 @@ object optionsMod {
       *
       * By default, this is disabled.
       */
-    var cdataInvalidChars: js.UndefOr[Boolean] = js.native
+    var cdataInvalidChars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If an object or map contains a key that, when converted to a string, is
@@ -396,22 +405,22 @@ object optionsMod {
       *
       * By default, this is an empty array.
       */
-    var cdataKeys: js.UndefOr[js.Array[String]] = js.native
+    var cdataKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The options associated with the XML declaration.
       */
-    var declaration: js.UndefOr[IDeclarationOptions] = js.native
+    var declaration: js.UndefOr[IDeclarationOptions] = js.undefined
     
     /**
       * The options associated with the XML document type definition.
       */
-    var dtd: js.UndefOr[IDtdOptions] = js.native
+    var dtd: js.UndefOr[IDtdOptions] = js.undefined
     
     /**
       * The options associated with the formatting of the XML document.
       */
-    var format: js.UndefOr[IFormatOptions] = js.native
+    var format: js.UndefOr[IFormatOptions] = js.undefined
     
     /**
       * Whether to replace any characters that are not valid in XML in particular
@@ -423,7 +432,7 @@ object optionsMod {
       *
       * By default, this is disabled.
       */
-    var replaceInvalidChars: js.UndefOr[Boolean] = js.native
+    var replaceInvalidChars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If a value has a type (as defined by calling `Object.prototype.toString`
@@ -467,7 +476,7 @@ object optionsMod {
       *
       * The default value is an empty object.
       */
-    var typeHandlers: js.UndefOr[ITypeHandlers] = js.native
+    var typeHandlers: js.UndefOr[ITypeHandlers] = js.undefined
     
     /**
       * Whether to use a self-closing tag for empty elements.
@@ -483,7 +492,7 @@ object optionsMod {
       *
       * By default, this is enabled.
       */
-    var useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.native
+    var useSelfClosingTagIfEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to throw an exception if basic XML validation fails while
@@ -491,7 +500,7 @@ object optionsMod {
       *
       * By default, this is enabled.
       */
-    var validation: js.UndefOr[Boolean] = js.native
+    var validation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If an object or map contains a key that, when converted to a string,
@@ -517,7 +526,7 @@ object optionsMod {
       *
       * The default value is `"#"`.
       */
-    var valueString: js.UndefOr[String] = js.native
+    var valueString: js.UndefOr[String] = js.undefined
     
     /**
       * If an object or map contains a key that, when converted to a string, is
@@ -574,7 +583,7 @@ object optionsMod {
       *
       * The default value is an empty object.
       */
-    var wrapHandlers: js.UndefOr[IWrapHandlers] = js.native
+    var wrapHandlers: js.UndefOr[IWrapHandlers] = js.undefined
   }
   object IOptions {
     

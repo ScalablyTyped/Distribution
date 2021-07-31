@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackupProvider extends DataProvider {
+trait BackupProvider
+  extends StObject
+     with DataProvider {
   
-  def backup(connectionUri: String, backupInfo: StringDictionary[js.Any], taskExecutionMode: TaskExecutionMode): Thenable[BackupResponse] = js.native
+  def backup(connectionUri: String, backupInfo: StringDictionary[js.Any], taskExecutionMode: TaskExecutionMode): Thenable[BackupResponse]
   
-  def getBackupConfigInfo(connectionUri: String): Thenable[BackupConfigInfo] = js.native
+  def getBackupConfigInfo(connectionUri: String): Thenable[BackupConfigInfo]
 }
 object BackupProvider {
   

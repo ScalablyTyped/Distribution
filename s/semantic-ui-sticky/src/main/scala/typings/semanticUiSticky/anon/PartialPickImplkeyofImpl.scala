@@ -6,56 +6,54 @@ import typings.semanticUiSticky.SemanticUI.Sticky.ErrorSettings
 import typings.semanticUiSticky.semanticUiStickyBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sticky.SemanticUI.StickySettings._Impl, keyof semantic-ui-sticky.SemanticUI.StickySettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var bottomOffset: js.UndefOr[Double] = js.native
+  var bottomOffset: js.UndefOr[Double] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var context: js.UndefOr[`false` | String | JQuery] = js.native
+  var context: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var jitter: js.UndefOr[Double] = js.native
+  var jitter: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var observeChanges: js.UndefOr[Boolean] = js.native
+  var observeChanges: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var onBottom: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onBottom: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onReposition: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onReposition: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onScroll: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onScroll: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onStick: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onStick: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onTop: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onTop: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var onUnstick: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.native
+  var onUnstick: js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var pushing: js.UndefOr[Boolean] = js.native
+  var pushing: js.UndefOr[Boolean] = js.undefined
   
-  var scrollContext: js.UndefOr[String | JQuery] = js.native
+  var scrollContext: js.UndefOr[String | JQuery] = js.undefined
   
-  var setSize: js.UndefOr[Boolean] = js.native
+  var setSize: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

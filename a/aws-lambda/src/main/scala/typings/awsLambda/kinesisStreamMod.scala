@@ -3,15 +3,13 @@ package typings.awsLambda
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesisStreamMod {
   
-  @js.native
   trait KinesisStreamEvent extends StObject {
     
-    var Records: js.Array[KinesisStreamRecord] = js.native
+    var Records: js.Array[KinesisStreamRecord]
   }
   object KinesisStreamEvent {
     
@@ -34,24 +32,23 @@ object kinesisStreamMod {
   
   type KinesisStreamHandler = Handler[KinesisStreamEvent, Unit]
   
-  @js.native
   trait KinesisStreamRecord extends StObject {
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var eventID: String = js.native
+    var eventID: String
     
-    var eventName: String = js.native
+    var eventName: String
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventSourceARN: String = js.native
+    var eventSourceARN: String
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var invokeIdentityArn: String = js.native
+    var invokeIdentityArn: String
     
-    var kinesis: KinesisStreamRecordPayload = js.native
+    var kinesis: KinesisStreamRecordPayload
   }
   object KinesisStreamRecord {
     
@@ -99,18 +96,17 @@ object kinesisStreamMod {
     }
   }
   
-  @js.native
   trait KinesisStreamRecordPayload extends StObject {
     
-    var approximateArrivalTimestamp: Double = js.native
+    var approximateArrivalTimestamp: Double
     
-    var data: String = js.native
+    var data: String
     
-    var kinesisSchemaVersion: String = js.native
+    var kinesisSchemaVersion: String
     
-    var partitionKey: String = js.native
+    var partitionKey: String
     
-    var sequenceNumber: String = js.native
+    var sequenceNumber: String
   }
   object KinesisStreamRecordPayload {
     

@@ -5,55 +5,50 @@ import typings.node.inspectorMod.Profiler.FunctionCoverage
 import typings.v8ToIstanbul.anon.Sourcemap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(scriptPath: String): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(
-    scriptPath: String,
-    wrapperLength: js.UndefOr[scala.Nothing],
-    sources: js.UndefOr[scala.Nothing],
-    excludePath: js.Function1[/* path */ String, Boolean]
-  ): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(scriptPath: String, wrapperLength: js.UndefOr[scala.Nothing], sources: Sources): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(
-    scriptPath: String,
-    wrapperLength: js.UndefOr[scala.Nothing],
-    sources: Sources,
-    excludePath: js.Function1[/* path */ String, Boolean]
-  ): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(scriptPath: String, wrapperLength: Double): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(scriptPath: String): V8ToIstanbul = ^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any]).asInstanceOf[V8ToIstanbul]
+  @scala.inline
+  def apply(scriptPath: String, wrapperLength: Double): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  @scala.inline
   def apply(
     scriptPath: String,
     wrapperLength: Double,
-    sources: js.UndefOr[scala.Nothing],
+    sources: Unit,
     excludePath: js.Function1[/* path */ String, Boolean]
-  ): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
-  def apply(scriptPath: String, wrapperLength: Double, sources: Sources): V8ToIstanbul = js.native
-  @JSImport("v8-to-istanbul", JSImport.Namespace)
-  @js.native
+  ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  @scala.inline
+  def apply(scriptPath: String, wrapperLength: Double, sources: Sources): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  @scala.inline
   def apply(
     scriptPath: String,
     wrapperLength: Double,
     sources: Sources,
     excludePath: js.Function1[/* path */ String, Boolean]
-  ): V8ToIstanbul = js.native
+  ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  @scala.inline
+  def apply(
+    scriptPath: String,
+    wrapperLength: Unit,
+    sources: Unit,
+    excludePath: js.Function1[/* path */ String, Boolean]
+  ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  @scala.inline
+  def apply(scriptPath: String, wrapperLength: Unit, sources: Sources): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  @scala.inline
+  def apply(
+    scriptPath: String,
+    wrapperLength: Unit,
+    sources: Sources,
+    excludePath: js.Function1[/* path */ String, Boolean]
+  ): V8ToIstanbul = (^.asInstanceOf[js.Dynamic].apply(scriptPath.asInstanceOf[js.Any], wrapperLength.asInstanceOf[js.Any], sources.asInstanceOf[js.Any], excludePath.asInstanceOf[js.Any])).asInstanceOf[V8ToIstanbul]
+  
+  @JSImport("v8-to-istanbul", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.v8ToIstanbul.anon.Source
@@ -75,14 +70,13 @@ object mod {
     }
   }
   
-  @js.native
   trait V8ToIstanbul extends StObject {
     
-    def applyCoverage(blocks: js.Array[FunctionCoverage]): Unit = js.native
+    def applyCoverage(blocks: js.Array[FunctionCoverage]): Unit
     
-    def load(): js.Promise[Unit] = js.native
+    def load(): js.Promise[Unit]
     
-    def toIstanbul(): CoverageMapData = js.native
+    def toIstanbul(): CoverageMapData
   }
   object V8ToIstanbul {
     

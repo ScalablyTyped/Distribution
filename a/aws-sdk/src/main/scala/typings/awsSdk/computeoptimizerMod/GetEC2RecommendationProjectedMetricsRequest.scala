@@ -2,36 +2,34 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEC2RecommendationProjectedMetricsRequest extends StObject {
   
   /**
     * The time stamp of the last projected metrics data point to return.
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the instances for which to return recommendation projected metrics.
     */
-  var instanceArn: InstanceArn = js.native
+  var instanceArn: InstanceArn
   
   /**
     * The granularity, in seconds, of the projected metrics data points.
     */
-  var period: Period = js.native
+  var period: Period
   
   /**
     * The time stamp of the first projected metrics data point to return.
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
   
   /**
     * The statistic of the projected metrics.
     */
-  var stat: MetricStatistic = js.native
+  var stat: MetricStatistic
 }
 object GetEC2RecommendationProjectedMetricsRequest {
   

@@ -2,15 +2,13 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPress extends StObject {
   
-  var mode: String = js.native
+  var mode: String
   
-  def onPress(): Unit = js.native
+  def onPress(): Unit
 }
 object OnPress {
   

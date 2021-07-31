@@ -2,16 +2,14 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationStatusFilter extends StObject {
   
   /**
     * Filters the list operations result based on the status attribute.
     */
-  var Status: js.UndefOr[StatusValues] = js.native
+  var Status: js.UndefOr[StatusValues] = js.undefined
 }
 object OperationStatusFilter {
   

@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BackgroundSizeProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] e
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
     */
-  var backgroundSize: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var backgroundSize: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BackgroundSizeProps {
   
@@ -25,7 +23,7 @@ object BackgroundSizeProps {
   }
   
   @scala.inline
-  implicit class BackgroundSizePropsMutableBuilder[Self <: BackgroundSizeProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BackgroundSizeProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BackgroundSizePropsMutableBuilder[Self <: BackgroundSizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundSizeProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBackgroundSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])

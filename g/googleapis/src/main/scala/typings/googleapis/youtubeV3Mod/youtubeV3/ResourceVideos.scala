@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Videos")
@@ -31,7 +30,7 @@ class ResourceVideos protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceVideosDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceVideosDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,7 +57,7 @@ class ResourceVideos protected () extends StObject {
     */
   def getRating(): GaxiosPromise[SchemaVideoGetRatingResponse] = js.native
   def getRating(callback: BodyResponseCallback[SchemaVideoGetRatingResponse]): Unit = js.native
-  def getRating(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoGetRatingResponse] = js.native
+  def getRating(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVideoGetRatingResponse] = js.native
   def getRating(params: ParamsResourceVideosGetrating): GaxiosPromise[SchemaVideoGetRatingResponse] = js.native
   def getRating(
     params: ParamsResourceVideosGetrating,
@@ -100,7 +99,7 @@ class ResourceVideos protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaVideo] = js.native
   def insert(callback: BodyResponseCallback[SchemaVideo]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideo] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVideo] = js.native
   def insert(params: ParamsResourceVideosInsert): GaxiosPromise[SchemaVideo] = js.native
   def insert(params: ParamsResourceVideosInsert, callback: BodyResponseCallback[SchemaVideo]): Unit = js.native
   def insert(
@@ -141,7 +140,7 @@ class ResourceVideos protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVideoListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVideoListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVideoListResponse] = js.native
   def list(params: ParamsResourceVideosList): GaxiosPromise[SchemaVideoListResponse] = js.native
   def list(params: ParamsResourceVideosList, callback: BodyResponseCallback[SchemaVideoListResponse]): Unit = js.native
   def list(
@@ -172,7 +171,7 @@ class ResourceVideos protected () extends StObject {
     */
   def rate(): GaxiosPromise[Unit] = js.native
   def rate(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def rate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def rate(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def rate(params: ParamsResourceVideosRate): GaxiosPromise[Unit] = js.native
   def rate(params: ParamsResourceVideosRate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def rate(
@@ -198,7 +197,7 @@ class ResourceVideos protected () extends StObject {
     */
   def reportAbuse(): GaxiosPromise[Unit] = js.native
   def reportAbuse(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def reportAbuse(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def reportAbuse(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def reportAbuse(params: ParamsResourceVideosReportabuse): GaxiosPromise[Unit] = js.native
   def reportAbuse(params: ParamsResourceVideosReportabuse, callback: BodyResponseCallback[Unit]): Unit = js.native
   def reportAbuse(
@@ -229,7 +228,7 @@ class ResourceVideos protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaVideo] = js.native
   def update(callback: BodyResponseCallback[SchemaVideo]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideo] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVideo] = js.native
   def update(params: ParamsResourceVideosUpdate): GaxiosPromise[SchemaVideo] = js.native
   def update(params: ParamsResourceVideosUpdate, callback: BodyResponseCallback[SchemaVideo]): Unit = js.native
   def update(

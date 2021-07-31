@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidRoboTest extends StObject {
   
   /** The APK for the application under test. */
-  var appApk: js.UndefOr[FileReference] = js.native
+  var appApk: js.UndefOr[FileReference] = js.undefined
   
   /** A multi-apk app bundle for the application under test. */
-  var appBundle: js.UndefOr[AppBundle] = js.native
+  var appBundle: js.UndefOr[AppBundle] = js.undefined
   
   /** The initial activity that should be used to start the app. */
-  var appInitialActivity: js.UndefOr[String] = js.native
+  var appInitialActivity: js.UndefOr[String] = js.undefined
   
   /** The java package for the application under test. The default value is determined by examining the application's manifest. */
-  var appPackageId: js.UndefOr[String] = js.native
+  var appPackageId: js.UndefOr[String] = js.undefined
   
   /** The max depth of the traversal stack Robo can explore. Needs to be at least 2 to make Robo explore the app beyond the first activity. Default is 50. */
-  var maxDepth: js.UndefOr[Double] = js.native
+  var maxDepth: js.UndefOr[Double] = js.undefined
   
   /** The max number of steps Robo can execute. Default is no limit. */
-  var maxSteps: js.UndefOr[Double] = js.native
+  var maxSteps: js.UndefOr[Double] = js.undefined
   
   /** A set of directives Robo should apply during the crawl. This allows users to customize the crawl. For example, the username and password for a test account can be provided. */
-  var roboDirectives: js.UndefOr[js.Array[RoboDirective]] = js.native
+  var roboDirectives: js.UndefOr[js.Array[RoboDirective]] = js.undefined
   
   /** A JSON file with a sequence of actions Robo should perform as a prologue for the crawl. */
-  var roboScript: js.UndefOr[FileReference] = js.native
+  var roboScript: js.UndefOr[FileReference] = js.undefined
   
   /**
     * The intents used to launch the app for the crawl. If none are provided, then the main launcher activity is launched. If some are provided, then only those provided are launched (the
     * main launcher activity must be provided explicitly).
     */
-  var startingIntents: js.UndefOr[js.Array[RoboStartingIntent]] = js.native
+  var startingIntents: js.UndefOr[js.Array[RoboStartingIntent]] = js.undefined
 }
 object AndroidRoboTest {
   

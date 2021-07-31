@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlTestingToolsResource extends StObject {
   
-  var mobileFriendlyTest: MobileFriendlyTestResource = js.native
+  var mobileFriendlyTest: MobileFriendlyTestResource
 }
 object UrlTestingToolsResource {
   

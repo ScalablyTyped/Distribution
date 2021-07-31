@@ -2,27 +2,25 @@ package typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Config for SPEECH_TRANSCRIPTION.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig extends StObject {
   
   /**
     * *Optional* For file formats, such as MXF or MKV, supporting multiple
     * audio tracks, specify up to two tracks. Default: track 0.
     */
-  var audioTracks: js.UndefOr[js.Array[Double]] = js.native
+  var audioTracks: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * *Optional* If set, specifies the estimated number of speakers in the
     * conversation. If not set, defaults to &#39;2&#39;. Ignored unless
     * enable_speaker_diarization is set to true.
     */
-  var diarizationSpeakerCount: js.UndefOr[Double] = js.native
+  var diarizationSpeakerCount: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* If &#39;true&#39;, adds punctuation to recognition result
@@ -33,7 +31,7 @@ trait SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig extends
     * complimentary to all users. In the future this may be exclusively
     * available as a premium feature.&quot;
     */
-  var enableAutomaticPunctuation: js.UndefOr[Boolean] = js.native
+  var enableAutomaticPunctuation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* If &#39;true&#39;, enables speaker detection for each
@@ -44,14 +42,14 @@ trait SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig extends
     * tags as our models learn to identify the speakers in the conversation
     * over time.
     */
-  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.native
+  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* If `true`, the top result includes a list of words and the
     * confidence for those words. If `false`, no word-level confidence
     * information is returned. The default is `false`.
     */
-  var enableWordConfidence: js.UndefOr[Boolean] = js.native
+  var enableWordConfidence: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* If set to `true`, the server will attempt to filter out
@@ -59,7 +57,7 @@ trait SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig extends
     * word with asterisks, e.g. &quot;f***&quot;. If set to `false` or omitted,
     * profanities won&#39;t be filtered out.
     */
-  var filterProfanity: js.UndefOr[Boolean] = js.native
+  var filterProfanity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Required* The language of the supplied audio as a
@@ -68,7 +66,7 @@ trait SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig extends
     * Support](https://cloud.google.com/speech/docs/languages) for a list of
     * the currently supported language codes.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * *Optional* Maximum number of recognition hypotheses to be returned.
@@ -77,12 +75,12 @@ trait SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig extends
     * than `max_alternatives`. Valid values are `0`-`30`. A value of `0` or `1`
     * will return a maximum of one. If omitted, will return a maximum of one.
     */
-  var maxAlternatives: js.UndefOr[Double] = js.native
+  var maxAlternatives: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* A means to provide context to assist the speech recognition.
     */
-  var speechContexts: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2SpeechContext]] = js.native
+  var speechContexts: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1beta2SpeechContext]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1beta2SpeechTranscriptionConfig {
   

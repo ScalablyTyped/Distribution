@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetContentResponse extends StObject {
   
   /**
     * The version ID of the dataset contents that are being created.
     */
-  var versionId: js.UndefOr[DatasetContentVersion] = js.native
+  var versionId: js.UndefOr[DatasetContentVersion] = js.undefined
 }
 object CreateDatasetContentResponse {
   

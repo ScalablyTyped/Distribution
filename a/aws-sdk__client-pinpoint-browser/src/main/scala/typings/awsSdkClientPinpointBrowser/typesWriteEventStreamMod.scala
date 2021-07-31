@@ -2,14 +2,12 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWriteEventStreamMod {
   
   type UnmarshalledWriteEventStream = WriteEventStream
   
-  @js.native
   trait WriteEventStream extends StObject {
     
     /**
@@ -17,12 +15,12 @@ object typesWriteEventStreamMod {
       *  Firehose ARN: arn:aws:firehose:REGION:ACCOUNT_ID:deliverystream/STREAM_NAME
       *  Kinesis ARN: arn:aws:kinesis:REGION:ACCOUNT_ID:stream/STREAM_NAME
       */
-    var DestinationStreamArn: js.UndefOr[String] = js.native
+    var DestinationStreamArn: js.UndefOr[String] = js.undefined
     
     /**
       * The IAM role that authorizes Amazon Pinpoint to publish events to the stream in your account.
       */
-    var RoleArn: js.UndefOr[String] = js.native
+    var RoleArn: js.UndefOr[String] = js.undefined
   }
   object WriteEventStream {
     

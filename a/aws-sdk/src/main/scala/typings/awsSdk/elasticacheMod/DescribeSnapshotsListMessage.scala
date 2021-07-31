@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotsListMessage extends StObject {
   
   /**
     * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * A list of snapshots. Each item in the list contains detailed information about one snapshot.
     */
-  var Snapshots: js.UndefOr[SnapshotList] = js.native
+  var Snapshots: js.UndefOr[SnapshotList] = js.undefined
 }
 object DescribeSnapshotsListMessage {
   

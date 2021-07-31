@@ -2,18 +2,16 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 要显示在可视区域内的坐标点列表 */
-@js.native
 trait MapPostion extends StObject {
   
   /** 纬度 */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /** 经度 */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object MapPostion {
   

@@ -3,7 +3,6 @@ package typings.tensorflowTfjsLayers
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetStubMod {
@@ -21,6 +20,6 @@ object datasetStubMod {
   @js.native
   abstract class LazyIterator[T] () extends StObject {
     
-    def next(): js.Promise[IteratorResult[T, _]] = js.native
+    def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
   }
 }

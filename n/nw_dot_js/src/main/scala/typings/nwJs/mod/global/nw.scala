@@ -21,7 +21,6 @@ import typings.nwJs.nwJsStrings.open
 import typings.nwJs.nwJsStrings.reopen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nw {
@@ -110,7 +109,7 @@ object nw {
       * - (optional) args {string} the full command line of the program.
       */
     @JSName("on")
-    def on_open(event: open, listener: js.Function1[/* args */ js.UndefOr[String], _]): this.type = js.native
+    def on_open(event: open, listener: js.Function1[/* args */ js.UndefOr[String], js.Any]): this.type = js.native
     /**
       * This event is sent when the user clicks the dock icon for an already running application. This is a Mac specific feature.
       *
@@ -118,7 +117,7 @@ object nw {
       * @param listener {Function} The callback that handles the `reopen` event.
       */
     @JSName("on")
-    def on_reopen(event: reopen, listener: js.Function0[_]): this.type = js.native
+    def on_reopen(event: reopen, listener: js.Function0[js.Any]): this.type = js.native
     
     /**
       * Quit current app.
@@ -167,7 +166,6 @@ object nw {
   @scala.inline
   def App_=(x: App): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("App")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Clipboard extends StObject {
     
     /**
@@ -175,7 +173,7 @@ object nw {
       *
       * @returns {Clipboard} the clipboard object.
       */
-    def get(): clip = js.native
+    def get(): clip
   }
   object Clipboard {
     
@@ -319,7 +317,7 @@ object nw {
       * @param listener {Function} The callback that handles the `click` event.
       */
     @JSName("on")
-    def on_click(event: click, listener: js.Function0[_]): this.type = js.native
+    def on_click(event: click, listener: js.Function0[js.Any]): this.type = js.native
     
     /**
       * Get or set the `submenu` of a `MenuItem`, the `submenu` must be a `Menu` object.
@@ -375,7 +373,7 @@ object nw {
       * - (optional) screen {screen} screen object
       */
     @JSName("on")
-    def on_displayAdded(event: `displayAdded `, listener: js.Function1[/* screen */ screen, _]): this.type = js.native
+    def on_displayAdded(event: `displayAdded `, listener: js.Function1[/* screen */ screen, js.Any]): this.type = js.native
     /**
       * Emitted when the screen resolution, arrangement is changed.
       *
@@ -384,7 +382,7 @@ object nw {
       * - (optional) screen {screen} screen object
       */
     @JSName("on")
-    def on_displayBoundsChanged(event: displayBoundsChanged, listener: js.Function1[/* screen */ screen, _]): this.type = js.native
+    def on_displayBoundsChanged(event: displayBoundsChanged, listener: js.Function1[/* screen */ screen, js.Any]): this.type = js.native
     /**
       * Emitted when existing screen removed.
       *
@@ -393,7 +391,7 @@ object nw {
       * - (optional) screen {screen} screen object
       */
     @JSName("on")
-    def on_displayRemoved(event: `displayRemoved `, listener: js.Function1[/* screen */ screen, _]): this.type = js.native
+    def on_displayRemoved(event: `displayRemoved `, listener: js.Function1[/* screen */ screen, js.Any]): this.type = js.native
     
     /**
       * Get the array of screen (number of screen connected to the computer)
@@ -410,7 +408,6 @@ object nw {
   /**
     * `Shell` is a collection of APIs that do desktop related jobs.
     */
-  @js.native
   trait Shell extends StObject {
     
     /**
@@ -418,21 +415,21 @@ object nw {
       *
       * @param uri {string} A URL to open in system default manner.
       */
-    def openExternal(uri: String): Unit = js.native
+    def openExternal(uri: String): Unit
     
     /**
       * Open the given file_path in the desktop"s default manner.
       *
       * @param file_path {string} path to a local file
       */
-    def openItem(file_path: String): Unit = js.native
+    def openItem(file_path: String): Unit
     
     /**
       * Show the given file_path in the parent folder with file manager. If possible, select the file.
       *
       * @param file_path {string} path to a local file
       */
-    def showItemInFolder(file_path: String): Unit = js.native
+    def showItemInFolder(file_path: String): Unit
   }
   object Shell {
     
@@ -490,7 +487,7 @@ object nw {
       * @param listener {Function} The callback that handles the `active` event.
       */
     @JSName("on")
-    def on_active(event: active, listener: js.Function0[_]): this.type = js.native
+    def on_active(event: active, listener: js.Function0[js.Any]): this.type = js.native
     /**
       * Get or set the failed callback of a Shortcut. It will be called when application passes an invalid key, or failed to register the key.
       *
@@ -499,7 +496,7 @@ object nw {
       * - (optional) msg {string} Failure message
       */
     @JSName("on")
-    def on_failed(event: failed, listener: js.Function1[/* msg */ js.UndefOr[String], _]): this.type = js.native
+    def on_failed(event: failed, listener: js.Function1[/* msg */ js.UndefOr[String], js.Any]): this.type = js.native
   }
   
   @JSGlobal("nw.Tray")
@@ -539,7 +536,7 @@ object nw {
       * @param listener {Function} The callback that handles the `click` event.
       */
     @JSName("on")
-    def on_click(event: `click `, listener: js.Function0[_]): this.type = js.native
+    def on_click(event: `click `, listener: js.Function0[js.Any]): this.type = js.native
     
     /**
       * Remove the tray.
@@ -588,11 +585,7 @@ object nw {
       * - (Optional) new_win {object} New opened window object.
       */
     def open(url: String): Unit = js.native
-    def open(
-      url: String,
-      option: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* new_win */ js.UndefOr[win], Unit]
-    ): Unit = js.native
+    def open(url: String, option: Unit, callback: js.Function1[/* new_win */ js.UndefOr[win], Unit]): Unit = js.native
     def open(url: String, option: WindowOpenOption): Unit = js.native
     def open(url: String, option: WindowOpenOption, callback: js.Function1[/* new_win */ js.UndefOr[win], Unit]): Unit = js.native
   }
@@ -602,7 +595,6 @@ object nw {
   @scala.inline
   def Window_=(x: Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("nw.require")
-  @js.native
-  def require(id: String): js.Any = js.native
+  @scala.inline
+  def require(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

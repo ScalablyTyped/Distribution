@@ -11,8 +11,8 @@ EmojiOne is a complete set of emojis designed for the web. It includes libraries
 | Full name          | emojione |
 | Keywords           | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
 | # releases         | 2 |
-| # dependents       | 113 |
-| # downloads        | 1075761 |
+| # dependents       | 118 |
+| # downloads        | 1172871 |
 | # stars            | 11 |
 
 ## Links

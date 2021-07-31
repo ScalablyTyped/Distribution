@@ -3,27 +3,25 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.stackTypesMod.StackDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpeningRouteKeys extends StObject {
   
-  var closingRouteKeys: js.Array[String] = js.native
+  var closingRouteKeys: js.Array[String]
   
-  var descriptors: StackDescriptorMap = js.native
+  var descriptors: StackDescriptorMap
   
-  var openingRouteKeys: js.Array[String] = js.native
+  var openingRouteKeys: js.Array[String]
   
-  var previousDescriptors: StackDescriptorMap = js.native
-  
-  // tslint:disable-next-line array-type
-  var previousRoutes: js.Array[ReadonlykeystringnamestriKey] = js.native
-  
-  var replacingRouteKeys: js.Array[String] = js.native
+  var previousDescriptors: StackDescriptorMap
   
   // tslint:disable-next-line array-type
-  var routes: js.Array[ReadonlykeystringnamestriKey] = js.native
+  var previousRoutes: js.Array[ReadonlykeystringnamestriKey]
+  
+  var replacingRouteKeys: js.Array[String]
+  
+  // tslint:disable-next-line array-type
+  var routes: js.Array[ReadonlykeystringnamestriKey]
 }
 object OpeningRouteKeys {
   

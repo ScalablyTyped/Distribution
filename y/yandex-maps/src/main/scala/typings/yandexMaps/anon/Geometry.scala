@@ -2,13 +2,11 @@ package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry[TargetGeometry] extends StObject {
   
-  var geometry: js.UndefOr[TargetGeometry] = js.native
+  var geometry: js.UndefOr[TargetGeometry] = js.undefined
 }
 object Geometry {
   
@@ -19,7 +17,7 @@ object Geometry {
   }
   
   @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry[_], TargetGeometry] (val x: Self with Geometry[TargetGeometry]) extends AnyVal {
+  implicit class GeometryMutableBuilder[Self <: Geometry[?], TargetGeometry] (val x: Self & Geometry[TargetGeometry]) extends AnyVal {
     
     @scala.inline
     def setGeometry(value: TargetGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferenceDataSource extends StObject {
   
   /**
     * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.
     */
-  var ReferenceSchema: SourceSchema = js.native
+  var ReferenceSchema: SourceSchema
   
   /**
     * Identifies the S3 bucket and object that contains the reference data. A Kinesis Data Analytics application loads reference data only once. If the data changes, you call the UpdateApplication operation to trigger reloading of data into your application. 
     */
-  var S3ReferenceDataSource: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ReferenceDataSource] = js.native
+  var S3ReferenceDataSource: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3ReferenceDataSource] = js.undefined
   
   /**
     * The name of the in-application table to create.
     */
-  var TableName: InAppTableName = js.native
+  var TableName: InAppTableName
 }
 object ReferenceDataSource {
   

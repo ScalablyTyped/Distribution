@@ -2,32 +2,30 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `Type` indicates the type of a Cloud Spanner value, as might be stored in a
   * table cell or returned from an SQL query.
   */
-@js.native
 trait SchemaType extends StObject {
   
   /**
     * If code == ARRAY, then `array_element_type` is the type of the array
     * elements.
     */
-  var arrayElementType: js.UndefOr[SchemaType] = js.native
+  var arrayElementType: js.UndefOr[SchemaType] = js.undefined
   
   /**
     * Required. The TypeCode for this type.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * If code == STRUCT, then `struct_type` provides type information for the
     * struct&#39;s fields.
     */
-  var structType: js.UndefOr[SchemaStructType] = js.native
+  var structType: js.UndefOr[SchemaStructType] = js.undefined
 }
 object SchemaType {
   

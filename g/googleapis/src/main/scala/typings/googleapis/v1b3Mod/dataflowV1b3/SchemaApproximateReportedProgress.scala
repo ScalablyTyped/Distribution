@@ -2,13 +2,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A progress measurement of a WorkItem by a worker.
   */
-@js.native
 trait SchemaApproximateReportedProgress extends StObject {
   
   /**
@@ -19,18 +17,18 @@ trait SchemaApproximateReportedProgress extends StObject {
     * should equal the total amount of parallelism in this work item.  If
     * specified, must be finite.
     */
-  var consumedParallelism: js.UndefOr[SchemaReportedParallelism] = js.native
+  var consumedParallelism: js.UndefOr[SchemaReportedParallelism] = js.undefined
   
   /**
     * Completion as fraction of the input consumed, from 0.0 (beginning,
     * nothing consumed), to 1.0 (end of the input, entire input consumed).
     */
-  var fractionConsumed: js.UndefOr[Double] = js.native
+  var fractionConsumed: js.UndefOr[Double] = js.undefined
   
   /**
     * A Position within the work to represent a progress.
     */
-  var position: js.UndefOr[SchemaPosition] = js.native
+  var position: js.UndefOr[SchemaPosition] = js.undefined
   
   /**
     * Total amount of parallelism in the input of this task that remains, (i.e.
@@ -53,7 +51,7 @@ trait SchemaApproximateReportedProgress extends StObject {
     * perfectly splittable   input, this value should be 1, because apart from
     * the current task, no   additional remainder can be split off.
     */
-  var remainingParallelism: js.UndefOr[SchemaReportedParallelism] = js.native
+  var remainingParallelism: js.UndefOr[SchemaReportedParallelism] = js.undefined
 }
 object SchemaApproximateReportedProgress {
   

@@ -6,15 +6,16 @@ import typings.std.Pick
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("preact", "Component")
 @js.native
-abstract class Component[P, S] () extends AnyComponent[P, S] {
+abstract class Component[P, S] ()
+  extends StObject
+     with AnyComponent[P, S] {
   def this(props: P) = this()
   def this(props: P, context: js.Any) = this()
-  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+  def this(props: Unit, context: js.Any) = this()
   
   var base: js.UndefOr[Element | Text] = js.native
   
@@ -43,33 +44,31 @@ abstract class Component[P, S] () extends AnyComponent[P, S] {
   
   var getChildContext: js.UndefOr[js.Function0[js.Object]] = js.native
   
-  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* oldProps */ P, /* oldState */ S, _]] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* oldProps */ P, /* oldState */ S, js.Any]] = js.native
   
-  var props: RenderableProps[P, _] = js.native
+  var props: RenderableProps[P, js.Any] = js.native
   
   def render(): ComponentChild = js.native
-  def render(props: js.UndefOr[scala.Nothing], state: S): ComponentChild = js.native
-  def render(props: js.UndefOr[scala.Nothing], state: S, context: js.Any): ComponentChild = js.native
-  def render(props: js.UndefOr[scala.Nothing], state: js.UndefOr[scala.Nothing], context: js.Any): ComponentChild = js.native
-  def render(props: RenderableProps[P, _]): ComponentChild = js.native
-  def render(props: RenderableProps[P, _], state: S): ComponentChild = js.native
-  def render(props: RenderableProps[P, _], state: S, context: js.Any): ComponentChild = js.native
-  def render(props: RenderableProps[P, _], state: js.UndefOr[scala.Nothing], context: js.Any): ComponentChild = js.native
+  def render(props: Unit, state: S): ComponentChild = js.native
+  def render(props: Unit, state: S, context: js.Any): ComponentChild = js.native
+  def render(props: Unit, state: Unit, context: js.Any): ComponentChild = js.native
+  def render(props: RenderableProps[P, js.Any]): ComponentChild = js.native
+  def render(props: RenderableProps[P, js.Any], state: S): ComponentChild = js.native
+  def render(props: RenderableProps[P, js.Any], state: S, context: js.Any): ComponentChild = js.native
+  def render(props: RenderableProps[P, js.Any], state: Unit, context: js.Any): ComponentChild = js.native
   
   // From https://github.com/DefinitelyTyped/DefinitelyTyped/blob/e836acc75a78cf0655b5dfdbe81d69fdd4d8a252/types/react/index.d.ts#L402
   // // We MUST keep setState() as a unified signature because it allows proper checking of the method return type.
   // // See: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/18365#issuecomment-351013257
   def setState[K /* <: /* keyof S */ String */](): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Partial[S] | (Pick[S, K])): Unit = js.native
+  def setState[K /* <: /* keyof S */ String */](state: Partial[S] | (Pick[S, K]), callback: js.Function0[Unit]): Unit = js.native
   def setState[K /* <: /* keyof S */ String */](state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | Partial[S] | Null]): Unit = js.native
   def setState[K /* <: /* keyof S */ String */](
     state: js.Function2[/* prevState */ S, /* props */ P, (Pick[S, K]) | Partial[S] | Null],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def setState[K /* <: /* keyof S */ String */](state: Null, callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: /* keyof S */ String */](state: Partial[S]): Unit = js.native
-  def setState[K /* <: /* keyof S */ String */](state: Partial[S], callback: js.Function0[Unit]): Unit = js.native
-  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K]): Unit = js.native
-  def setState[K /* <: /* keyof S */ String */](state: Pick[S, K], callback: js.Function0[Unit]): Unit = js.native
   
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Boolean]

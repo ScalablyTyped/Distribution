@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.Configuration.FormatSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configuration extends Object {
+trait Configuration
+  extends StObject
+     with Object {
   
   /**
     * Applies multiple changes to the configuration at once.If the changed settings contain localization
@@ -304,7 +305,9 @@ trait Configuration extends Object {
 object Configuration {
   
   @js.native
-  trait FormatSettings extends Object {
+  trait FormatSettings
+    extends StObject
+       with Object {
     
     /**
       * Returns the currently set date pattern or undefined if no pattern has been defined.
@@ -327,7 +330,7 @@ object Configuration {
       * dateFormat, islamicMonthStart, gregDate. For details, please see {@link
       * #setLegacyDateCalendarCustomizing}
       */
-    def getLegacyDateCalendarCustomizing(): js.Array[_] = js.native
+    def getLegacyDateCalendarCustomizing(): js.Array[js.Any] = js.native
     
     /**
       * Returns the currently set legacy ABAP date format (its id) or undefined if none has been set.
@@ -387,7 +390,7 @@ object Configuration {
       * @param aMappings contains the customizing data for the support of Islamic calendar.
       * @returns Returns <code>this</code> to allow method chaining
       */
-    def setLegacyDateCalendarCustomizing(aMappings: js.Array[_]): FormatSettings = js.native
+    def setLegacyDateCalendarCustomizing(aMappings: js.Array[js.Any]): FormatSettings = js.native
     
     /**
       * Allows to specify one of the legacy ABAP date formats.This method modifies the date patterns for

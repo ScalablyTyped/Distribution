@@ -2,19 +2,17 @@ package typings.plottable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Y extends StObject {
   
-  var height: js.Any = js.native
+  var height: js.Any
   
-  var width: js.Any = js.native
+  var width: js.Any
   
-  var x: js.Any = js.native
+  var x: js.Any
   
-  var y: js.Any = js.native
+  var y: js.Any
 }
 object Y {
   

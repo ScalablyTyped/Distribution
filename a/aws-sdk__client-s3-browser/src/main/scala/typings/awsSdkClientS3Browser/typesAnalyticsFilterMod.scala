@@ -6,28 +6,26 @@ import typings.awsSdkClientS3Browser.typesTagMod.Tag
 import typings.awsSdkClientS3Browser.typesTagMod.UnmarshalledTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAnalyticsFilterMod {
   
-  @js.native
   trait AnalyticsFilter extends StObject {
     
     /**
       * <p>A conjunction (logical AND) of predicates, which is used in evaluating an analytics filter. The operator must have at least two predicates.</p>
       */
-    var And: js.UndefOr[AnalyticsAndOperator] = js.native
+    var And: js.UndefOr[AnalyticsAndOperator] = js.undefined
     
     /**
       * <p>The prefix to use when evaluating an analytics filter.</p>
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The tag to use when evaluating an analytics filter.</p>
       */
-    var Tag: js.UndefOr[typings.awsSdkClientS3Browser.typesTagMod.Tag] = js.native
+    var Tag: js.UndefOr[typings.awsSdkClientS3Browser.typesTagMod.Tag] = js.undefined
   }
   object AnalyticsFilter {
     
@@ -60,20 +58,21 @@ object typesAnalyticsFilterMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAnalyticsFilter extends AnalyticsFilter {
+  trait UnmarshalledAnalyticsFilter
+    extends StObject
+       with AnalyticsFilter {
     
     /**
       * <p>A conjunction (logical AND) of predicates, which is used in evaluating an analytics filter. The operator must have at least two predicates.</p>
       */
     @JSName("And")
-    var And_UnmarshalledAnalyticsFilter: js.UndefOr[UnmarshalledAnalyticsAndOperator] = js.native
+    var And_UnmarshalledAnalyticsFilter: js.UndefOr[UnmarshalledAnalyticsAndOperator] = js.undefined
     
     /**
       * <p>The tag to use when evaluating an analytics filter.</p>
       */
     @JSName("Tag")
-    var Tag_UnmarshalledAnalyticsFilter: js.UndefOr[UnmarshalledTag] = js.native
+    var Tag_UnmarshalledAnalyticsFilter: js.UndefOr[UnmarshalledTag] = js.undefined
   }
   object UnmarshalledAnalyticsFilter {
     

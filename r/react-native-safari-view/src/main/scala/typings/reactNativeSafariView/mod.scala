@@ -3,76 +3,73 @@ package typings.reactNativeSafariView
 import typings.reactNative.mod.EmitterSubscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("react-native-safari-view", "default.addEventListener")
+    @JSImport("react-native-safari-view", JSImport.Default)
     @js.native
-    def addEventListener(event: String, listener: js.Function0[Unit]): EmitterSubscription = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addEventListener(event: String, listener: js.Function0[Unit]): EmitterSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EmitterSubscription]
     
     /**
       * Dismisses the currently active Safari View
       */
-    @JSImport("react-native-safari-view", "default.dismiss")
-    @js.native
-    def dismiss(): Unit = js.native
+    @scala.inline
+    def dismiss(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[Unit]
     
     /**
       * Checks if Safari View is available on the device
       */
-    @JSImport("react-native-safari-view", "default.isAvailable")
-    @js.native
-    def isAvailable(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def isAvailable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("react-native-safari-view", "default.removeEventListener")
-    @js.native
-    def removeEventListener(event: String, listener: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def removeEventListener(event: String, listener: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Displays a Safari View with the provided URL
       *
       */
-    @JSImport("react-native-safari-view", "default.show")
-    @js.native
-    def show(options: SafariViewOptions): js.Promise[Boolean] = js.native
+    @scala.inline
+    def show(options: SafariViewOptions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   }
   
-  @js.native
   trait SafariViewOptions extends StObject {
     
     /**
       * A String containing a hex or rgba color to use for the background of the browser controls (only available on iOS 10 and higher)
       *
       */
-    var barTintColor: js.UndefOr[String] = js.native
+    var barTintColor: js.UndefOr[String] = js.undefined
     
     /**
       * A Boolean indicating to open the Safari View from the bottom
       *
       */
-    var fromBottom: js.UndefOr[Boolean] = js.native
+    var fromBottom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A Boolean indicating to use Safari's Reader Mode if available
       *
       */
-    var readerMode: js.UndefOr[Boolean] = js.native
+    var readerMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A String containing a hex or rgba color to use for the browser controls
       *
       */
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
     /**
       * A String containing the url you want to load in the Safari View
       *
       */
-    var url: String = js.native
+    var url: String
   }
   object SafariViewOptions {
     

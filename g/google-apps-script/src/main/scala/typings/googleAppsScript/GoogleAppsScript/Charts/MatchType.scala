@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,11 +26,17 @@ sealed trait MatchType extends StObject
 object MatchType extends StObject {
   
   @js.native
-  sealed trait ANY extends MatchType
+  sealed trait ANY
+    extends StObject
+       with MatchType
   
   @js.native
-  sealed trait EXACT extends MatchType
+  sealed trait EXACT
+    extends StObject
+       with MatchType
   
   @js.native
-  sealed trait PREFIX extends MatchType
+  sealed trait PREFIX
+    extends StObject
+       with MatchType
 }

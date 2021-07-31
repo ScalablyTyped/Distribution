@@ -3,7 +3,6 @@ package typings.reactNativeToastNative
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,46 +11,45 @@ object mod extends Shortcut {
   @js.native
   val default: ToastNative = js.native
   
-  @js.native
   trait Style extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     // iOS-only
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
     
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var letterSpacing: js.UndefOr[Double] = js.native
+    var letterSpacing: js.UndefOr[Double] = js.undefined
     
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
     // Android-only
-    var paddingLeft: js.UndefOr[Double] = js.native
+    var paddingLeft: js.UndefOr[Double] = js.undefined
     
-    var paddingRight: js.UndefOr[Double] = js.native
+    var paddingRight: js.UndefOr[Double] = js.undefined
     
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var xOffset: js.UndefOr[Double] = js.native
+    var xOffset: js.UndefOr[Double] = js.undefined
     
-    var yOffset: js.UndefOr[Double] = js.native
+    var yOffset: js.UndefOr[Double] = js.undefined
   }
   object Style {
     

@@ -11,8 +11,8 @@ Object.prototype.hasOwnProperty.call shortcut
 | Full name          | has |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 259 |
-| # downloads        | 607904660 |
+| # dependents       | 314 |
+| # downloads        | 762661668 |
 | # stars            | 11 |
 
 ## Links

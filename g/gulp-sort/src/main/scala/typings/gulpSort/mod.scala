@@ -4,29 +4,28 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /** Sort files in stream by path or any custom sort comparator */
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(comparator: IComparatorFunction): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(comparator.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(options: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   @JSImport("gulp-sort", JSImport.Namespace)
   @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-sort", JSImport.Namespace)
-  @js.native
-  def apply(comparator: IComparatorFunction): ReadWriteStream = js.native
-  @JSImport("gulp-sort", JSImport.Namespace)
-  @js.native
-  def apply(options: IOptions): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
   type IComparatorFunction = js.Function2[/* file1 */ File, /* file2 */ File, Double]
   
-  @js.native
   trait IOptions extends StObject {
     
     /** Whether to sort in ascending order, default is true */
-    var asc: js.UndefOr[Boolean] = js.native
+    var asc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function to compare two files.
@@ -35,7 +34,7 @@ object mod {
       * 0 if file1 is equivalent to file2, and
       * 1 if file1 should be after file2
       */
-    var comparator: js.UndefOr[IComparatorFunction] = js.native
+    var comparator: js.UndefOr[IComparatorFunction] = js.undefined
   }
   object IOptions {
     

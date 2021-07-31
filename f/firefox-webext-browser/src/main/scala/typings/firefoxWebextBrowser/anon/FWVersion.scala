@@ -2,23 +2,21 @@ package typings.firefoxWebextBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FWVersion extends StObject {
   
-  var FWVersion: String = js.native
+  var FWVersion: String
   
-  var HWVersion: String = js.native
+  var HWVersion: String
   
-  var isLoggedIn: String = js.native
+  var isLoggedIn: String
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var name: String = js.native
+  var name: String
   
-  var serial: String = js.native
+  var serial: String
 }
 object FWVersion {
   

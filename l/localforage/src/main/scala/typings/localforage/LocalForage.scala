@@ -2,11 +2,12 @@ package typings.localforage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalForage extends LocalForageDbMethods {
+trait LocalForage
+  extends StObject
+     with LocalForageDbMethods {
   
   var INDEXEDDB: String = js.native
   
@@ -31,17 +32,13 @@ trait LocalForage extends LocalForageDbMethods {
   def createInstance(options: LocalForageOptions): LocalForage = js.native
   
   def defineDriver(driver: LocalForageDriver): js.Promise[Unit] = js.native
-  def defineDriver(
-    driver: LocalForageDriver,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Unit] = js.native
   def defineDriver(driver: LocalForageDriver, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def defineDriver(
     driver: LocalForageDriver,
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* error */ js.Any, Unit]
   ): js.Promise[Unit] = js.native
+  def defineDriver(driver: LocalForageDriver, callback: Unit, errorCallback: js.Function1[/* error */ js.Any, Unit]): js.Promise[Unit] = js.native
   
   def driver(): String = js.native
   
@@ -62,29 +59,21 @@ trait LocalForage extends LocalForageDbMethods {
     * @param {string} driver
     */
   def setDriver(driver: String): js.Promise[Unit] = js.native
-  def setDriver(
-    driver: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Unit] = js.native
   def setDriver(driver: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def setDriver(
     driver: String,
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* error */ js.Any, Unit]
   ): js.Promise[Unit] = js.native
+  def setDriver(driver: String, callback: Unit, errorCallback: js.Function1[/* error */ js.Any, Unit]): js.Promise[Unit] = js.native
   def setDriver(driver: js.Array[String]): js.Promise[Unit] = js.native
-  def setDriver(
-    driver: js.Array[String],
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ js.Any, Unit]
-  ): js.Promise[Unit] = js.native
   def setDriver(driver: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def setDriver(
     driver: js.Array[String],
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* error */ js.Any, Unit]
   ): js.Promise[Unit] = js.native
+  def setDriver(driver: js.Array[String], callback: Unit, errorCallback: js.Function1[/* error */ js.Any, Unit]): js.Promise[Unit] = js.native
   
   def supports(driverName: String): Boolean = js.native
 }

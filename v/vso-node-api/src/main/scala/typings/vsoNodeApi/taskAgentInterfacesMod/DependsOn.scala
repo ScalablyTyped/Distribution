@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DependsOn extends StObject {
   
-  var input: String = js.native
+  var input: String
   
-  var map: js.Array[DependencyBinding] = js.native
+  var map: js.Array[DependencyBinding]
 }
 object DependsOn {
   

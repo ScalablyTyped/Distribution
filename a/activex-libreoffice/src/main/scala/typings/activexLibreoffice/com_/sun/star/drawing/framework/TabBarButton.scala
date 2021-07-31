@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For identification only the {@link ResourceId} is used, so for some methods of the {@link XTabBar} interface only the {@link ResourceId} member is
   * evaluated.
   */
-@js.native
 trait TabBarButton extends StObject {
   
   /**
@@ -19,10 +17,10 @@ trait TabBarButton extends StObject {
     *
     * The label is expected to be localized.
     */
-  var ButtonLabel: String = js.native
+  var ButtonLabel: String
   
   /** The localized help text that may be displayed in a tool tip. */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /**
     * {@link XResourceId} object of the resource that is requested to be displayed when the tab bar button is activated.
@@ -30,7 +28,7 @@ trait TabBarButton extends StObject {
     * For some methods of the {@link XTabBar} interface only this member is evaluated. That is because only this member is used to identify a tab bar
     * button.
     */
-  var ResourceId: XResourceId = js.native
+  var ResourceId: XResourceId
 }
 object TabBarButton {
   

@@ -2,7 +2,6 @@ package typings.bootstrapSlider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapSliderStrings {
@@ -18,7 +17,9 @@ object bootstrapSliderStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait change extends SliderEventType
+  sealed trait change
+    extends StObject
+       with SliderEventType
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   
@@ -43,27 +44,37 @@ object bootstrapSliderStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait slide extends SliderEventType
+  sealed trait slide
+    extends StObject
+       with SliderEventType
   @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait slideDisabled extends SliderEventType
+  sealed trait slideDisabled
+    extends StObject
+       with SliderEventType
   @scala.inline
   def slideDisabled: slideDisabled = "slideDisabled".asInstanceOf[slideDisabled]
   
   @js.native
-  sealed trait slideEnabled extends SliderEventType
+  sealed trait slideEnabled
+    extends StObject
+       with SliderEventType
   @scala.inline
   def slideEnabled: slideEnabled = "slideEnabled".asInstanceOf[slideEnabled]
   
   @js.native
-  sealed trait slideStart extends SliderEventType
+  sealed trait slideStart
+    extends StObject
+       with SliderEventType
   @scala.inline
   def slideStart: slideStart = "slideStart".asInstanceOf[slideStart]
   
   @js.native
-  sealed trait slideStop extends SliderEventType
+  sealed trait slideStop
+    extends StObject
+       with SliderEventType
   @scala.inline
   def slideStop: slideStop = "slideStop".asInstanceOf[slideStop]
   

@@ -5,24 +5,23 @@ import typings.prettier.prettierBooleans.`true`
 import typings.prettier.prettierStrings.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntArraySupportOption
-  extends BaseSupportOption[int]
+  extends StObject
+     with BaseSupportOption[int]
      with _SupportOption {
   
-  var default: js.Array[Value] = js.native
+  var default: js.Array[Value]
   
-  var array: `true` = js.native
+  var array: `true`
 }
 object IntArraySupportOption {
   
   @scala.inline
-  def apply(array: `true`, category: String, default: js.Array[Value], since: String, `type`: int): IntArraySupportOption = {
-    val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(category: String, default: js.Array[Value], since: String): IntArraySupportOption = {
+    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("int")
     __obj.asInstanceOf[IntArraySupportOption]
   }
   

@@ -3,7 +3,6 @@ package typings.typescriptServices.TypeScript
 import typings.typescriptServices.anon.DependencyList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -149,28 +148,13 @@ trait Emitter extends StObject {
   def emitLabeledStatement(statement: LabeledStatement): Unit = js.native
   
   def emitList(list: ISyntaxList2): Unit = js.native
-  def emitList(
-    list: ISyntaxList2,
-    useNewLineSeparator: js.UndefOr[scala.Nothing],
-    startInclusive: js.UndefOr[scala.Nothing],
-    endExclusive: Double
-  ): Unit = js.native
-  def emitList(list: ISyntaxList2, useNewLineSeparator: js.UndefOr[scala.Nothing], startInclusive: Double): Unit = js.native
-  def emitList(
-    list: ISyntaxList2,
-    useNewLineSeparator: js.UndefOr[scala.Nothing],
-    startInclusive: Double,
-    endExclusive: Double
-  ): Unit = js.native
   def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean): Unit = js.native
-  def emitList(
-    list: ISyntaxList2,
-    useNewLineSeparator: Boolean,
-    startInclusive: js.UndefOr[scala.Nothing],
-    endExclusive: Double
-  ): Unit = js.native
   def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean, startInclusive: Double): Unit = js.native
   def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean, startInclusive: Double, endExclusive: Double): Unit = js.native
+  def emitList(list: ISyntaxList2, useNewLineSeparator: Boolean, startInclusive: Unit, endExclusive: Double): Unit = js.native
+  def emitList(list: ISyntaxList2, useNewLineSeparator: Unit, startInclusive: Double): Unit = js.native
+  def emitList(list: ISyntaxList2, useNewLineSeparator: Unit, startInclusive: Double, endExclusive: Double): Unit = js.native
+  def emitList(list: ISyntaxList2, useNewLineSeparator: Unit, startInclusive: Unit, endExclusive: Double): Unit = js.native
   
   def emitLiteralExpression(expression: LiteralExpression): Unit = js.native
   
@@ -221,30 +205,7 @@ trait Emitter extends StObject {
   def emitScriptElements(sourceUnit: SourceUnit): Unit = js.native
   
   def emitSeparatedList(list: ISeparatedSyntaxList2): Unit = js.native
-  def emitSeparatedList(
-    list: ISeparatedSyntaxList2,
-    useNewLineSeparator: js.UndefOr[scala.Nothing],
-    startInclusive: js.UndefOr[scala.Nothing],
-    endExclusive: Double
-  ): Unit = js.native
-  def emitSeparatedList(
-    list: ISeparatedSyntaxList2,
-    useNewLineSeparator: js.UndefOr[scala.Nothing],
-    startInclusive: Double
-  ): Unit = js.native
-  def emitSeparatedList(
-    list: ISeparatedSyntaxList2,
-    useNewLineSeparator: js.UndefOr[scala.Nothing],
-    startInclusive: Double,
-    endExclusive: Double
-  ): Unit = js.native
   def emitSeparatedList(list: ISeparatedSyntaxList2, useNewLineSeparator: Boolean): Unit = js.native
-  def emitSeparatedList(
-    list: ISeparatedSyntaxList2,
-    useNewLineSeparator: Boolean,
-    startInclusive: js.UndefOr[scala.Nothing],
-    endExclusive: Double
-  ): Unit = js.native
   def emitSeparatedList(list: ISeparatedSyntaxList2, useNewLineSeparator: Boolean, startInclusive: Double): Unit = js.native
   def emitSeparatedList(
     list: ISeparatedSyntaxList2,
@@ -252,6 +213,20 @@ trait Emitter extends StObject {
     startInclusive: Double,
     endExclusive: Double
   ): Unit = js.native
+  def emitSeparatedList(
+    list: ISeparatedSyntaxList2,
+    useNewLineSeparator: Boolean,
+    startInclusive: Unit,
+    endExclusive: Double
+  ): Unit = js.native
+  def emitSeparatedList(list: ISeparatedSyntaxList2, useNewLineSeparator: Unit, startInclusive: Double): Unit = js.native
+  def emitSeparatedList(
+    list: ISeparatedSyntaxList2,
+    useNewLineSeparator: Unit,
+    startInclusive: Double,
+    endExclusive: Double
+  ): Unit = js.native
+  def emitSeparatedList(list: ISeparatedSyntaxList2, useNewLineSeparator: Unit, startInclusive: Unit, endExclusive: Double): Unit = js.native
   
   def emitSetAccessor(accessor: SetAccessor): Unit = js.native
   

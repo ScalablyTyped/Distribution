@@ -4,22 +4,21 @@ import typings.webidl2.webidl2Booleans.`false`
 import typings.webidl2.webidl2Strings.iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IterableDeclarationMemberType
-  extends AbstractDeclarationMemberType
+  extends StObject
+     with AbstractDeclarationMemberType
      with DeclarationMemberType {
   
   @JSName("idlType")
-  var idlType_IterableDeclarationMemberType: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription]) = js.native
+  var idlType_IterableDeclarationMemberType: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])
   
   @JSName("readonly")
-  var readonly_IterableDeclarationMemberType: `false` = js.native
+  var readonly_IterableDeclarationMemberType: `false`
   
   @JSName("type")
-  var type_IterableDeclarationMemberType: iterable = js.native
+  var type_IterableDeclarationMemberType: iterable
 }
 object IterableDeclarationMemberType {
   
@@ -29,12 +28,10 @@ object IterableDeclarationMemberType {
     async: Boolean,
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription]),
-    parent: InterfaceMixinType | InterfaceType,
-    readonly: `false`,
-    `type`: iterable
+    parent: InterfaceMixinType | InterfaceType
   ): IterableDeclarationMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = async.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = async.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = false)
+    __obj.updateDynamic("type")("iterable")
     __obj.asInstanceOf[IterableDeclarationMemberType]
   }
   

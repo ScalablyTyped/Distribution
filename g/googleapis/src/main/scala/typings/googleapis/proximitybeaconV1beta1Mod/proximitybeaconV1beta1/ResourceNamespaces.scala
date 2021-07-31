@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Namespaces")
@@ -36,7 +35,7 @@ class ResourceNamespaces protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListNamespacesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNamespacesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNamespacesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListNamespacesResponse] = js.native
   def list(params: ParamsResourceNamespacesList): GaxiosPromise[SchemaListNamespacesResponse] = js.native
   def list(params: ParamsResourceNamespacesList, callback: BodyResponseCallback[SchemaListNamespacesResponse]): Unit = js.native
   def list(
@@ -68,7 +67,7 @@ class ResourceNamespaces protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaNamespace] = js.native
   def update(callback: BodyResponseCallback[SchemaNamespace]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNamespace] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNamespace] = js.native
   def update(params: ParamsResourceNamespacesUpdate): GaxiosPromise[SchemaNamespace] = js.native
   def update(params: ParamsResourceNamespacesUpdate, callback: BodyResponseCallback[SchemaNamespace]): Unit = js.native
   def update(

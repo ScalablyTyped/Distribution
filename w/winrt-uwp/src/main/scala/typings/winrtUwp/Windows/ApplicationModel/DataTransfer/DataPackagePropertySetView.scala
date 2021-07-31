@@ -10,76 +10,74 @@ import typings.winrtUwp.Windows.UI.Color
 import typings.winrtUwp.anon.Second
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets the set of properties of a DataPackageView object. */
-@js.native
 trait DataPackagePropertySetView extends StObject {
   
   /** Gets the Uniform Resource Identifier (URI) of the app's location in the Windows Store. */
-  var applicationListingUri: Uri = js.native
+  var applicationListingUri: Uri
   
   /** Gets the name of the app that created the DataPackage object. */
-  var applicationName: String = js.native
+  var applicationName: String
   
   /** Gets the application link to the content from the source app. */
-  var contentSourceApplicationLink: Uri = js.native
+  var contentSourceApplicationLink: Uri
   
   /** Gets a web link to shared content that's currently displayed in the app. */
-  var contentSourceWebLink: Uri = js.native
+  var contentSourceWebLink: Uri
   
   /** Gets the text that describes the contents of the DataPackage . */
-  var description: String = js.native
+  var description: String
   
   /** Gets or sets the enterprise Id. */
-  var enterpriseId: String = js.native
+  var enterpriseId: String
   
   /** Gets a vector object that contains the types of files stored in the DataPackage object. */
-  var fileTypes: IVectorView[String] = js.native
+  var fileTypes: IVectorView[String]
   
   /**
     * Returns an iterator to enumerate the items in the property set.
     * @return The first item in the DataPackage object.
     */
-  def first(): IIterator[IKeyValuePair[_, _]] = js.native
+  def first(): IIterator[IKeyValuePair[js.Any, js.Any]]
   
   /**
     * Indicates whether the DataPackagePropertySetView object contains a specific property.
     * @param key The key.
     * @return True if the property set has an item with the specified key; otherwise false.
     */
-  def hasKey(key: String): Boolean = js.native
+  def hasKey(key: String): Boolean
   
   /** Gets a background color for the sharing app's Square30x30Logo . */
-  var logoBackgroundColor: Color = js.native
+  var logoBackgroundColor: Color
   
   /**
     * Retrieves the value of a specific property.
     * @param key The key.
     * @return The value, if an item with the specified key exists. Otherwise, an error code.
     */
-  def lookup(key: String): js.Any = js.native
+  def lookup(key: String): js.Any
   
   /** Gets the package family name of the source app. */
-  var packageFamilyName: String = js.native
+  var packageFamilyName: String
   
   /** Gets the number of items that are contained in the property set. */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Divides the object into two views
     */
-  def split(): Second = js.native
+  def split(): Second
   
   /** Gets the source app's logo. */
-  var square30x30Logo: IRandomAccessStreamReference = js.native
+  var square30x30Logo: IRandomAccessStreamReference
   
   /** Gets the thumbnail image for the DataPackageView . */
-  var thumbnail: RandomAccessStreamReference = js.native
+  var thumbnail: RandomAccessStreamReference
   
   /** Gets the text that displays as a title for the contents of the DataPackagePropertySetView object. */
-  var title: String = js.native
+  var title: String
 }
 object DataPackagePropertySetView {
   
@@ -92,7 +90,7 @@ object DataPackagePropertySetView {
     description: String,
     enterpriseId: String,
     fileTypes: IVectorView[String],
-    first: () => IIterator[IKeyValuePair[_, _]],
+    first: () => IIterator[IKeyValuePair[js.Any, js.Any]],
     hasKey: String => Boolean,
     logoBackgroundColor: Color,
     lookup: String => js.Any,
@@ -132,7 +130,7 @@ object DataPackagePropertySetView {
     def setFileTypes(value: IVectorView[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
     def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))

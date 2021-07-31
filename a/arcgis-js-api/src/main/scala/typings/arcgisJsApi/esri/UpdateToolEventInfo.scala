@@ -8,8 +8,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`rotate-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`rotate-stop`
 import typings.arcgisJsApi.arcgisJsApiStrings.`scale-start`
 import typings.arcgisJsApi.arcgisJsApiStrings.`scale-stop`
-import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-add`
-import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-remove`
 import typings.arcgisJsApi.arcgisJsApiStrings.move
 import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.rotate
@@ -17,7 +15,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.scale
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -91,11 +88,10 @@ object UpdateToolEventInfo {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: `vertex-add`,
     vertices: js.Array[VertexAddEventInfoVertices]
   ): typings.arcgisJsApi.esri.VertexAddEventInfo = {
     val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vertex-add")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.VertexAddEventInfo]
   }
   
@@ -105,11 +101,10 @@ object UpdateToolEventInfo {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     removed: js.Array[Graphic],
-    `type`: `vertex-remove`,
     vertices: js.Array[VertexRemoveEventInfoVertices]
   ): typings.arcgisJsApi.esri.VertexRemoveEventInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), removed = removed.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vertex-remove")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.VertexRemoveEventInfo]
   }
 }

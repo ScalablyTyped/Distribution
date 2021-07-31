@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TransformationOverview extends StObject {
   
   /** Transformations applied to the dataset. */
-  var transformationSummaries: js.UndefOr[js.Array[GooglePrivacyDlpV2TransformationSummary]] = js.native
+  var transformationSummaries: js.UndefOr[js.Array[GooglePrivacyDlpV2TransformationSummary]] = js.undefined
   
   /** Total size in bytes that were transformed in some way. */
-  var transformedBytes: js.UndefOr[String] = js.native
+  var transformedBytes: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2TransformationOverview {
   

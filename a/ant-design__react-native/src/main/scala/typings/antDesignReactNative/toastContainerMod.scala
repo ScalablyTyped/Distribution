@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.reactNative.mod.Animated.CompositeAnimation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastContainerMod {
@@ -44,20 +43,21 @@ object toastContainerMod {
     def componentWillUnmount_MToastContainer(): Unit = js.native
   }
   
-  @js.native
-  trait ToastProps extends WithThemeStyles[ToastStyle] {
+  trait ToastProps
+    extends StObject
+       with WithThemeStyles[ToastStyle] {
     
-    var content: String = js.native
+    var content: String
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToastProps {
     

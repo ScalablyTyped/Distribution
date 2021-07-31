@@ -2,31 +2,29 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLabelsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * Flag to request removal of all labels from the specified resource.
     */
-  var DeleteAll: js.UndefOr[BooleanType] = js.native
+  var DeleteAll: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * List of labels to delete from the resource.
     */
-  var Labels: js.UndefOr[SharedLabels] = js.native
+  var Labels: js.UndefOr[SharedLabels] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: ResourceIdType = js.native
+  var ResourceId: ResourceIdType
 }
 object DeleteLabelsRequest {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,19 +18,25 @@ object PivotLayoutType extends StObject {
     *
     */
   @js.native
-  sealed trait compact extends PivotLayoutType
+  sealed trait compact
+    extends StObject
+       with PivotLayoutType
   
   /**
     * Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
     *
     */
   @js.native
-  sealed trait outline extends PivotLayoutType
+  sealed trait outline
+    extends StObject
+       with PivotLayoutType
   
   /**
     * Inner fields' items are always on a new line relative to the outer fields' items.
     *
     */
   @js.native
-  sealed trait tabular extends PivotLayoutType
+  sealed trait tabular
+    extends StObject
+       with PivotLayoutType
 }

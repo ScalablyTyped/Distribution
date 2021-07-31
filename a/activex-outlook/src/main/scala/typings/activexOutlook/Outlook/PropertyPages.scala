@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyPages extends StObject {
   
-  def Add(Page: js.Any, Title: String): Unit = js.native
+  def Add(Page: js.Any, Title: String): Unit
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): js.Any = js.native
+  def Item(Index: js.Any): js.Any
   
   @JSName("Outlook.PropertyPages_typekey")
-  var OutlookDotPropertyPages_typekey: PropertyPages = js.native
+  var OutlookDotPropertyPages_typekey: PropertyPages
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object PropertyPages {
   

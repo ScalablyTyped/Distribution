@@ -4,10 +4,13 @@ import typings.node.Buffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formDataMod {
+  
+  @JSImport("sync-request/lib/FormData", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sync-request/lib/FormData", "FormData")
   @js.native
@@ -23,18 +26,16 @@ object formDataMod {
     def append(key: String, value: Blob, fileName: String): Unit = js.native
   }
   
-  @JSImport("sync-request/lib/FormData", "getFormDataEntries")
-  @js.native
-  def getFormDataEntries(fd: FormData): js.Array[FormDataEntry] = js.native
+  @scala.inline
+  def getFormDataEntries(fd: FormData): js.Array[FormDataEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormDataEntries")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Array[FormDataEntry]]
   
-  @js.native
   trait FormDataEntry extends StObject {
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var value: String | Blob | Buffer = js.native
+    var value: String | Blob | Buffer
   }
   object FormDataEntry {
     

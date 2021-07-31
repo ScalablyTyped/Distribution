@@ -4,13 +4,11 @@ import typings.googlepay.googlepayBooleans.`false`
 import typings.googlepay.googlepayBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional billing address parameters for the returned billing address.
   */
-@js.native
 trait BillingAddressParameters extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait BillingAddressParameters extends StObject {
     * customer data requests can increase friction during the checkout
     * process and can lead to a lower conversion rate.
     */
-  var format: BillingAddressFormat = js.native
+  var format: BillingAddressFormat
   
   /**
     * Whether billing phone number required.
@@ -37,7 +35,7 @@ trait BillingAddressParameters extends StObject {
     *
     * @default false
     */
-  var phoneNumberRequired: js.UndefOr[`false` | `true`] = js.native
+  var phoneNumberRequired: js.UndefOr[`false` | `true`] = js.undefined
 }
 object BillingAddressParameters {
   

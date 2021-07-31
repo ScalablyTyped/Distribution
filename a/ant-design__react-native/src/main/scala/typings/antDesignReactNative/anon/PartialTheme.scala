@@ -2,214 +2,212 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/style.Theme> */
-@js.native
 trait PartialTheme extends StObject {
   
-  var action_sheet_zindex: js.UndefOr[Double] = js.native
+  var action_sheet_zindex: js.UndefOr[Double] = js.undefined
   
-  var actionsheet_item_font_size: js.UndefOr[Double] = js.native
+  var actionsheet_item_font_size: js.UndefOr[Double] = js.undefined
   
-  var actionsheet_item_height: js.UndefOr[Double] = js.native
+  var actionsheet_item_height: js.UndefOr[Double] = js.undefined
   
-  var border_color_base: js.UndefOr[String] = js.native
+  var border_color_base: js.UndefOr[String] = js.undefined
   
-  var border_width_lg: js.UndefOr[Double] = js.native
+  var border_width_lg: js.UndefOr[Double] = js.undefined
   
-  var border_width_md: js.UndefOr[Double] = js.native
+  var border_width_md: js.UndefOr[Double] = js.undefined
   
-  var border_width_sm: js.UndefOr[Double] = js.native
+  var border_width_sm: js.UndefOr[Double] = js.undefined
   
-  var brand_error: js.UndefOr[String] = js.native
+  var brand_error: js.UndefOr[String] = js.undefined
   
-  var brand_important: js.UndefOr[String] = js.native
+  var brand_important: js.UndefOr[String] = js.undefined
   
-  var brand_primary: js.UndefOr[String] = js.native
+  var brand_primary: js.UndefOr[String] = js.undefined
   
-  var brand_primary_tap: js.UndefOr[String] = js.native
+  var brand_primary_tap: js.UndefOr[String] = js.undefined
   
-  var brand_success: js.UndefOr[String] = js.native
+  var brand_success: js.UndefOr[String] = js.undefined
   
-  var brand_wait: js.UndefOr[String] = js.native
+  var brand_wait: js.UndefOr[String] = js.undefined
   
-  var brand_warning: js.UndefOr[String] = js.native
+  var brand_warning: js.UndefOr[String] = js.undefined
   
-  var button_font_size: js.UndefOr[Double] = js.native
+  var button_font_size: js.UndefOr[Double] = js.undefined
   
-  var button_font_size_sm: js.UndefOr[Double] = js.native
+  var button_font_size_sm: js.UndefOr[Double] = js.undefined
   
-  var button_height: js.UndefOr[Double] = js.native
+  var button_height: js.UndefOr[Double] = js.undefined
   
-  var button_height_sm: js.UndefOr[Double] = js.native
+  var button_height_sm: js.UndefOr[Double] = js.undefined
   
-  var color_icon_base: js.UndefOr[String] = js.native
+  var color_icon_base: js.UndefOr[String] = js.undefined
   
-  var color_link: js.UndefOr[String] = js.native
+  var color_link: js.UndefOr[String] = js.undefined
   
-  var color_text_base: js.UndefOr[String] = js.native
+  var color_text_base: js.UndefOr[String] = js.undefined
   
-  var color_text_base_inverse: js.UndefOr[String] = js.native
+  var color_text_base_inverse: js.UndefOr[String] = js.undefined
   
-  var color_text_caption: js.UndefOr[String] = js.native
+  var color_text_caption: js.UndefOr[String] = js.undefined
   
-  var color_text_disabled: js.UndefOr[String] = js.native
+  var color_text_disabled: js.UndefOr[String] = js.undefined
   
-  var color_text_paragraph: js.UndefOr[String] = js.native
+  var color_text_paragraph: js.UndefOr[String] = js.undefined
   
-  var color_text_placeholder: js.UndefOr[String] = js.native
+  var color_text_placeholder: js.UndefOr[String] = js.undefined
   
-  var color_text_secondary: js.UndefOr[String] = js.native
+  var color_text_secondary: js.UndefOr[String] = js.undefined
   
-  var ease_in_out_quint: js.UndefOr[String] = js.native
+  var ease_in_out_quint: js.UndefOr[String] = js.undefined
   
-  var fill_base: js.UndefOr[String] = js.native
+  var fill_base: js.UndefOr[String] = js.undefined
   
-  var fill_body: js.UndefOr[String] = js.native
+  var fill_body: js.UndefOr[String] = js.undefined
   
-  var fill_disabled: js.UndefOr[String] = js.native
+  var fill_disabled: js.UndefOr[String] = js.undefined
   
-  var fill_grey: js.UndefOr[String] = js.native
+  var fill_grey: js.UndefOr[String] = js.undefined
   
-  var fill_mask: js.UndefOr[String] = js.native
+  var fill_mask: js.UndefOr[String] = js.undefined
   
-  var fill_tap: js.UndefOr[String] = js.native
+  var fill_tap: js.UndefOr[String] = js.undefined
   
-  var font_size_base: js.UndefOr[Double] = js.native
+  var font_size_base: js.UndefOr[Double] = js.undefined
   
-  var font_size_caption: js.UndefOr[Double] = js.native
+  var font_size_caption: js.UndefOr[Double] = js.undefined
   
-  var font_size_caption_sm: js.UndefOr[Double] = js.native
+  var font_size_caption_sm: js.UndefOr[Double] = js.undefined
   
-  var font_size_heading: js.UndefOr[Double] = js.native
+  var font_size_heading: js.UndefOr[Double] = js.undefined
   
-  var font_size_icontext: js.UndefOr[Double] = js.native
+  var font_size_icontext: js.UndefOr[Double] = js.undefined
   
-  var font_size_subhead: js.UndefOr[Double] = js.native
+  var font_size_subhead: js.UndefOr[Double] = js.undefined
   
-  var ghost_button_color: js.UndefOr[String] = js.native
+  var ghost_button_color: js.UndefOr[String] = js.undefined
   
-  var ghost_button_fill_tap: js.UndefOr[String] = js.native
+  var ghost_button_fill_tap: js.UndefOr[String] = js.undefined
   
-  var h_spacing_lg: js.UndefOr[Double] = js.native
+  var h_spacing_lg: js.UndefOr[Double] = js.undefined
   
-  var h_spacing_md: js.UndefOr[Double] = js.native
+  var h_spacing_md: js.UndefOr[Double] = js.undefined
   
-  var h_spacing_sm: js.UndefOr[Double] = js.native
+  var h_spacing_sm: js.UndefOr[Double] = js.undefined
   
-  var icon_size_lg: js.UndefOr[Double] = js.native
+  var icon_size_lg: js.UndefOr[Double] = js.undefined
   
-  var icon_size_md: js.UndefOr[Double] = js.native
+  var icon_size_md: js.UndefOr[Double] = js.undefined
   
-  var icon_size_sm: js.UndefOr[Double] = js.native
+  var icon_size_sm: js.UndefOr[Double] = js.undefined
   
-  var icon_size_xs: js.UndefOr[Double] = js.native
+  var icon_size_xs: js.UndefOr[Double] = js.undefined
   
-  var icon_size_xxs: js.UndefOr[Double] = js.native
+  var icon_size_xxs: js.UndefOr[Double] = js.undefined
   
-  var input_color_icon: js.UndefOr[String] = js.native
+  var input_color_icon: js.UndefOr[String] = js.undefined
   
-  var input_color_icon_tap: js.UndefOr[String] = js.native
+  var input_color_icon_tap: js.UndefOr[String] = js.undefined
   
-  var input_font_size: js.UndefOr[Double] = js.native
+  var input_font_size: js.UndefOr[Double] = js.undefined
   
-  var input_label_width: js.UndefOr[Double] = js.native
+  var input_label_width: js.UndefOr[Double] = js.undefined
   
-  var line_height_base: js.UndefOr[Double] = js.native
+  var line_height_base: js.UndefOr[Double] = js.undefined
   
-  var line_height_paragraph: js.UndefOr[Double] = js.native
+  var line_height_paragraph: js.UndefOr[Double] = js.undefined
   
-  var link_button_fill_tap: js.UndefOr[String] = js.native
+  var link_button_fill_tap: js.UndefOr[String] = js.undefined
   
-  var link_button_font_size: js.UndefOr[Double] = js.native
+  var link_button_font_size: js.UndefOr[Double] = js.undefined
   
-  var list_item_height: js.UndefOr[Double] = js.native
+  var list_item_height: js.UndefOr[Double] = js.undefined
   
-  var list_item_height_sm: js.UndefOr[Double] = js.native
+  var list_item_height_sm: js.UndefOr[Double] = js.undefined
   
-  var list_title_height: js.UndefOr[Double] = js.native
+  var list_title_height: js.UndefOr[Double] = js.undefined
   
-  var modal_button_font_size: js.UndefOr[Double] = js.native
+  var modal_button_font_size: js.UndefOr[Double] = js.undefined
   
-  var modal_button_height: js.UndefOr[Double] = js.native
+  var modal_button_height: js.UndefOr[Double] = js.undefined
   
-  var modal_font_size_heading: js.UndefOr[Double] = js.native
+  var modal_font_size_heading: js.UndefOr[Double] = js.undefined
   
-  var modal_zindex: js.UndefOr[Double] = js.native
+  var modal_zindex: js.UndefOr[Double] = js.undefined
   
-  var notice_bar_fill: js.UndefOr[String] = js.native
+  var notice_bar_fill: js.UndefOr[String] = js.undefined
   
-  var notice_bar_height: js.UndefOr[Double] = js.native
+  var notice_bar_height: js.UndefOr[Double] = js.undefined
   
-  var opacity_disabled: js.UndefOr[String] = js.native
+  var opacity_disabled: js.UndefOr[String] = js.undefined
   
-  var option_height: js.UndefOr[Double] = js.native
+  var option_height: js.UndefOr[Double] = js.undefined
   
-  var popup_zindex: js.UndefOr[Double] = js.native
+  var popup_zindex: js.UndefOr[Double] = js.undefined
   
-  var primary_button_fill: js.UndefOr[String] = js.native
+  var primary_button_fill: js.UndefOr[String] = js.undefined
   
-  var primary_button_fill_tap: js.UndefOr[String] = js.native
+  var primary_button_fill_tap: js.UndefOr[String] = js.undefined
   
-  var radius_lg: js.UndefOr[Double] = js.native
+  var radius_lg: js.UndefOr[Double] = js.undefined
   
-  var radius_md: js.UndefOr[Double] = js.native
+  var radius_md: js.UndefOr[Double] = js.undefined
   
-  var radius_sm: js.UndefOr[Double] = js.native
+  var radius_sm: js.UndefOr[Double] = js.undefined
   
-  var radius_xs: js.UndefOr[Double] = js.native
+  var radius_xs: js.UndefOr[Double] = js.undefined
   
-  var search_bar_fill: js.UndefOr[String] = js.native
+  var search_bar_fill: js.UndefOr[String] = js.undefined
   
-  var search_bar_font_size: js.UndefOr[Double] = js.native
+  var search_bar_font_size: js.UndefOr[Double] = js.undefined
   
-  var search_bar_height: js.UndefOr[Double] = js.native
+  var search_bar_height: js.UndefOr[Double] = js.undefined
   
-  var search_bar_input_height: js.UndefOr[Double] = js.native
+  var search_bar_input_height: js.UndefOr[Double] = js.undefined
   
-  var search_color_icon: js.UndefOr[String] = js.native
+  var search_color_icon: js.UndefOr[String] = js.undefined
   
-  var segmented_control_color: js.UndefOr[String] = js.native
+  var segmented_control_color: js.UndefOr[String] = js.undefined
   
-  var segmented_control_fill_tap: js.UndefOr[String] = js.native
+  var segmented_control_fill_tap: js.UndefOr[String] = js.undefined
   
-  var segmented_control_height: js.UndefOr[Double] = js.native
+  var segmented_control_height: js.UndefOr[Double] = js.undefined
   
-  var switch_fill: js.UndefOr[String] = js.native
+  var switch_fill: js.UndefOr[String] = js.undefined
   
-  var tab_bar_fill: js.UndefOr[String] = js.native
+  var tab_bar_fill: js.UndefOr[String] = js.undefined
   
-  var tab_bar_height: js.UndefOr[Double] = js.native
+  var tab_bar_height: js.UndefOr[Double] = js.undefined
   
-  var tabs_color: js.UndefOr[String] = js.native
+  var tabs_color: js.UndefOr[String] = js.undefined
   
-  var tabs_font_size_heading: js.UndefOr[Double] = js.native
+  var tabs_font_size_heading: js.UndefOr[Double] = js.undefined
   
-  var tabs_height: js.UndefOr[Double] = js.native
+  var tabs_height: js.UndefOr[Double] = js.undefined
   
-  var tag_height: js.UndefOr[Double] = js.native
+  var tag_height: js.UndefOr[Double] = js.undefined
   
-  var tag_small_height: js.UndefOr[Double] = js.native
+  var tag_small_height: js.UndefOr[Double] = js.undefined
   
-  var toast_fill: js.UndefOr[String] = js.native
+  var toast_fill: js.UndefOr[String] = js.undefined
   
-  var toast_zindex: js.UndefOr[Double] = js.native
+  var toast_zindex: js.UndefOr[Double] = js.undefined
   
-  var v_spacing_lg: js.UndefOr[Double] = js.native
+  var v_spacing_lg: js.UndefOr[Double] = js.undefined
   
-  var v_spacing_md: js.UndefOr[Double] = js.native
+  var v_spacing_md: js.UndefOr[Double] = js.undefined
   
-  var v_spacing_sm: js.UndefOr[Double] = js.native
+  var v_spacing_sm: js.UndefOr[Double] = js.undefined
   
-  var v_spacing_xl: js.UndefOr[Double] = js.native
+  var v_spacing_xl: js.UndefOr[Double] = js.undefined
   
-  var v_spacing_xs: js.UndefOr[Double] = js.native
+  var v_spacing_xs: js.UndefOr[Double] = js.undefined
   
-  var warning_button_fill: js.UndefOr[String] = js.native
+  var warning_button_fill: js.UndefOr[String] = js.undefined
   
-  var warning_button_fill_tap: js.UndefOr[String] = js.native
+  var warning_button_fill_tap: js.UndefOr[String] = js.undefined
 }
 object PartialTheme {
   

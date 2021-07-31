@@ -2,13 +2,11 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteResponse extends StObject {
   
-  var agents: js.Array[AgentResponse] = js.native
+  var agents: js.Array[AgentResponse]
 }
 object RouteResponse {
   

@@ -3,57 +3,55 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartValueAxisItem extends StObject {
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.native
+  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var crosshair: js.UndefOr[ChartValueAxisItemCrosshair] = js.native
+  var crosshair: js.UndefOr[ChartValueAxisItemCrosshair] = js.undefined
   
-  var labels: js.UndefOr[ChartValueAxisItemLabels] = js.native
+  var labels: js.UndefOr[ChartValueAxisItemLabels] = js.undefined
   
-  var line: js.UndefOr[ChartValueAxisItemLine] = js.native
+  var line: js.UndefOr[ChartValueAxisItemLine] = js.undefined
   
-  var majorGridLines: js.UndefOr[ChartValueAxisItemMajorGridLines] = js.native
+  var majorGridLines: js.UndefOr[ChartValueAxisItemMajorGridLines] = js.undefined
   
-  var majorTicks: js.UndefOr[ChartValueAxisItemMajorTicks] = js.native
+  var majorTicks: js.UndefOr[ChartValueAxisItemMajorTicks] = js.undefined
   
-  var majorUnit: js.UndefOr[Double] = js.native
+  var majorUnit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minorGridLines: js.UndefOr[ChartValueAxisItemMinorGridLines] = js.native
+  var minorGridLines: js.UndefOr[ChartValueAxisItemMinorGridLines] = js.undefined
   
-  var minorTicks: js.UndefOr[ChartValueAxisItemMinorTicks] = js.native
+  var minorTicks: js.UndefOr[ChartValueAxisItemMinorTicks] = js.undefined
   
-  var minorUnit: js.UndefOr[Double] = js.native
+  var minorUnit: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var narrowRange: js.UndefOr[Boolean] = js.native
+  var narrowRange: js.UndefOr[Boolean] = js.undefined
   
-  var notes: js.UndefOr[ChartValueAxisItemNotes] = js.native
+  var notes: js.UndefOr[ChartValueAxisItemNotes] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var plotBands: js.UndefOr[js.Array[ChartValueAxisItemPlotBand]] = js.native
+  var plotBands: js.UndefOr[js.Array[ChartValueAxisItemPlotBand]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[ChartValueAxisItemTitle] = js.native
+  var title: js.UndefOr[ChartValueAxisItemTitle] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ChartValueAxisItem {
   

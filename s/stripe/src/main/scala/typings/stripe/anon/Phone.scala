@@ -3,27 +3,25 @@ package typings.stripe.anon
 import typings.stripe.mod.IAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phone extends StObject {
   
-  var address: js.UndefOr[IAddress | Null] = js.native
+  var address: js.UndefOr[IAddress | Null] = js.undefined
   
-  var email: js.UndefOr[String | Null] = js.native
+  var email: js.UndefOr[String | Null] = js.undefined
   
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var phone: js.UndefOr[String | Null] = js.native
+  var phone: js.UndefOr[String | Null] = js.undefined
   
-  var verified_address: js.UndefOr[IAddress | Null] = js.native
+  var verified_address: js.UndefOr[IAddress | Null] = js.undefined
   
-  var verified_email: js.UndefOr[String | Null] = js.native
+  var verified_email: js.UndefOr[String | Null] = js.undefined
   
-  var verified_name: js.UndefOr[String | Null] = js.native
+  var verified_name: js.UndefOr[String | Null] = js.undefined
   
-  var verified_phone: js.UndefOr[String | Null] = js.native
+  var verified_phone: js.UndefOr[String | Null] = js.undefined
 }
 object Phone {
   

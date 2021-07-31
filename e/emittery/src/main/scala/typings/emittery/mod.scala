@@ -4,14 +4,18 @@ import typings.std.AsyncIterableIterator
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("emittery", JSImport.Namespace)
   @js.native
-  class ^ () extends Emittery
+  class ^ ()
+    extends StObject
+       with Emittery
+  @JSImport("emittery", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Async event emitter.
@@ -28,45 +32,14 @@ object mod {
   	*/
   @JSImport("emittery", "Typed")
   @js.native
-  class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: EventName */] () extends Emittery {
-    
-    def emit[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
-    def emit[Name /* <: EventNameFromDataMap[EventDataMap] */](
-      eventName: Name,
-      eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
-    ): js.Promise[Unit] = js.native
-    
-    def emitSerial[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
-    def emitSerial[Name /* <: EventNameFromDataMap[EventDataMap] */](
-      eventName: Name,
-      eventData: /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
-    ): js.Promise[Unit] = js.native
-    
-    def events[Name /* <: EventNameFromDataMap[EventDataMap] */](eventName: Name): AsyncIterableIterator[
-        /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
-      ] = js.native
+  class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: EventName */] ()
+    extends StObject
+       with Emittery {
     
     def off[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[Unit]): Unit = js.native
-    def off[Name /* <: EventNameFromDataMap[EventDataMap] */](
-      eventName: Name,
-      listener: js.Function1[
-          /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
-          Unit
-        ]
-    ): Unit = js.native
     
     def on[Name /* <: EmptyEvents */](eventName: Name, listener: js.Function0[Unit]): UnsubscribeFn = js.native
-    def on[Name /* <: EventNameFromDataMap[EventDataMap] */](
-      eventName: Name,
-      listener: js.Function1[
-          /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ /* eventData */ js.Any, 
-          Unit
-        ]
-    ): UnsubscribeFn = js.native
     
-    def once[Name /* <: EventNameFromDataMap[EventDataMap] */](eventName: Name): js.Promise[
-        /* import warning: importer.ImportType#apply Failed type conversion: EventDataMap[Name] */ js.Any
-      ] = js.native
     @JSName("once")
     def once_Name_EmptyEvents[Name /* <: EmptyEvents */](eventName: Name): js.Promise[Unit] = js.native
   }
@@ -130,18 +103,14 @@ object mod {
   	```
   	*/
   /* static member */
-  @JSImport("emittery", "mixin")
-  @js.native
-  def mixin(emitteryPropertyName: String): js.Function = js.native
-  @JSImport("emittery", "mixin")
-  @js.native
-  def mixin(emitteryPropertyName: String, methodNames: js.Array[String]): js.Function = js.native
-  @JSImport("emittery", "mixin")
-  @js.native
-  def mixin(emitteryPropertyName: js.Symbol): js.Function = js.native
-  @JSImport("emittery", "mixin")
-  @js.native
-  def mixin(emitteryPropertyName: js.Symbol, methodNames: js.Array[String]): js.Function = js.native
+  @scala.inline
+  def mixin(emitteryPropertyName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  @scala.inline
+  def mixin(emitteryPropertyName: String, methodNames: js.Array[String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  @scala.inline
+  def mixin(emitteryPropertyName: js.Symbol): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  @scala.inline
+  def mixin(emitteryPropertyName: js.Symbol, methodNames: js.Array[String]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(emitteryPropertyName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   @js.native
   trait Emittery extends StObject {
@@ -174,7 +143,7 @@ object mod {
     		});
     	```
     	*/
-    def anyEvent(): AsyncIterableIterator[_] = js.native
+    def anyEvent(): AsyncIterableIterator[js.Any] = js.native
     
     /**
     	Bind the given `methodNames`, or all `Emittery` methods if `methodNames` is not defined, into the `target` object.
@@ -279,7 +248,7 @@ object mod {
     		});
     	```
     	*/
-    def events(eventName: EventNames): AsyncIterableIterator[_] = js.native
+    def events(eventName: EventNames): AsyncIterableIterator[js.Any] = js.native
     
     /**
     	The number of listeners for the `eventName` or all events if not specified.
@@ -342,7 +311,7 @@ object mod {
     	Subscribe to be notified about any event.
     	@returns A method to unsubscribe.
     	*/
-    def onAny(listener: js.Function2[/* eventName */ EventName, /* eventData */ js.UndefOr[js.Any], _]): UnsubscribeFn = js.native
+    def onAny(listener: js.Function2[/* eventName */ EventName, /* eventData */ js.UndefOr[js.Any], js.Any]): UnsubscribeFn = js.native
     
     /**
     	Subscribe to one or more events only once. It will be unsubscribed after the first
@@ -366,7 +335,7 @@ object mod {
     def once(
       eventName: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Emittery.listenerAdded */ js.Any
     ): js.Promise[ListenerChangedData] = js.native
-    def once(eventName: EventNames): js.Promise[_] = js.native
+    def once(eventName: EventNames): js.Promise[js.Any] = js.native
   }
   
   type EventName = String | js.Symbol
@@ -381,7 +350,6 @@ object mod {
   /**
   	Maps event names to their emitted data type.
   	*/
-  @js.native
   trait Events extends StObject
   
   /**

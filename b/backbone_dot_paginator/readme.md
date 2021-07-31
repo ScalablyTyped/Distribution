@@ -11,8 +11,8 @@ A pageable Backbone.Collection superset. Supports server-side/client-side/infini
 | Full name          | backbone.paginator |
 | Keywords           | backbone |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 435713 |
+| # dependents       | 14 |
+| # downloads        | 438186 |
 | # stars            | 0 |
 
 ## Links

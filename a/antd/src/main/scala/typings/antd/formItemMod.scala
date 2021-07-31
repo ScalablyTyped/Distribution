@@ -19,45 +19,47 @@ import typings.react.mod.ReactNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formItemMod {
   
-  @JSImport("antd/lib/form/FormItem", JSImport.Default)
+  @JSImport("antd/lib/form/FormItem", JSImport.Namespace)
   @js.native
-  def default[Values](props: FormItemProps[Values]): ReactElement = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Values](props: FormItemProps[Values]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type ChildrenType[Values] = RenderChildren[Values] | ReactNode
   
-  @js.native
   trait FormItemProps[Values]
-    extends FormItemLabelProps
+    extends StObject
+       with FormItemLabelProps
        with FormItemInputProps
        with RcFieldProps {
     
-    var children: js.UndefOr[ChildrenType[Values]] = js.native
+    var children: js.UndefOr[ChildrenType[Values]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Auto passed by List render props. User should not use this. */
-    var fieldKey: js.UndefOr[Key | js.Array[Key]] = js.native
+    var fieldKey: js.UndefOr[Key | js.Array[Key]] = js.undefined
     
-    var hasFeedback: js.UndefOr[Boolean] = js.native
+    var hasFeedback: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var noStyle: js.UndefOr[Boolean] = js.native
+    var noStyle: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var validateStatus: js.UndefOr[ValidateStatus] = js.native
+    var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
   }
   object FormItemProps {
     
@@ -68,7 +70,7 @@ object formItemMod {
     }
     
     @scala.inline
-    implicit class FormItemPropsMutableBuilder[Self <: FormItemProps[_], Values] (val x: Self with FormItemProps[Values]) extends AnyVal {
+    implicit class FormItemPropsMutableBuilder[Self <: FormItemProps[?], Values] (val x: Self & FormItemProps[Values]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ChildrenType[Values]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
@@ -145,44 +147,43 @@ object formItemMod {
   }
   
   /* Inlined std.Omit<rc-field-form.rc-field-form/es/Field.FieldProps<any>, 'children'> */
-  @js.native
   trait RcFieldProps extends StObject {
     
-    var dependencies: js.UndefOr[js.Array[NamePath]] = js.native
+    var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
     
-    var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.native
+    var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
     
-    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.native
+    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
     
-    var initialValue: js.UndefOr[js.Any] = js.native
+    var initialValue: js.UndefOr[js.Any] = js.undefined
     
-    var isList: js.UndefOr[Boolean] = js.native
+    var isList: js.UndefOr[Boolean] = js.undefined
     
-    var isListField: js.UndefOr[Boolean] = js.native
+    var isListField: js.UndefOr[Boolean] = js.undefined
     
-    var messageVariables: js.UndefOr[Record[String, String]] = js.native
+    var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
     
-    var name: js.UndefOr[NamePath] = js.native
+    var name: js.UndefOr[NamePath] = js.undefined
     
     var normalize: js.UndefOr[
         js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
-      ] = js.native
+      ] = js.undefined
     
-    var onReset: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
     
-    var rules: js.UndefOr[js.Array[Rule]] = js.native
+    var rules: js.UndefOr[js.Array[Rule]] = js.undefined
     
-    var shouldUpdate: js.UndefOr[ShouldUpdate[_]] = js.native
+    var shouldUpdate: js.UndefOr[ShouldUpdate[js.Any]] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.native
+    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.native
+    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
     
-    var valuePropName: js.UndefOr[String] = js.native
+    var valuePropName: js.UndefOr[String] = js.undefined
   }
   object RcFieldProps {
     
@@ -277,10 +278,10 @@ object formItemMod {
       def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
       @scala.inline
-      def setShouldUpdate(value: ShouldUpdate[_]): Self = StObject.set(x, "shouldUpdate", value.asInstanceOf[js.Any])
+      def setShouldUpdate(value: ShouldUpdate[js.Any]): Self = StObject.set(x, "shouldUpdate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setShouldUpdateFunction3(value: (_, _, /* info */ Source) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction3(value))
+      def setShouldUpdateFunction3(value: (js.Any, js.Any, /* info */ Source) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction3(value))
       
       @scala.inline
       def setShouldUpdateUndefined: Self = StObject.set(x, "shouldUpdate", js.undefined)

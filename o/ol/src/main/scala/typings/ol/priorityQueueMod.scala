@@ -2,51 +2,87 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object priorityQueueMod {
   
   @JSImport("ol/structs/PriorityQueue", JSImport.Default)
   @js.native
-  class default[T] protected () extends PriorityQueue[T] {
+  class default[T] protected ()
+    extends StObject
+       with PriorityQueue[T] {
     def this(priorityFunction: js.Function1[/* p0 */ T, Double], keyFunction: js.Function1[/* p0 */ T, String]) = this()
+    
+    /**
+      * FIXME empty description for jsdoc
+      */
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * Remove and return the highest-priority element. O(log N).
+      */
+    /* CompleteClass */
+    override def dequeue(): T = js.native
+    
+    /**
+      * Enqueue an element. O(log N).
+      */
+    /* CompleteClass */
+    override def enqueue(element: T): Boolean = js.native
+    
+    /* CompleteClass */
+    override def getCount(): Double = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isKeyQueued(key: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isQueued(element: T): Boolean = js.native
+    
+    /**
+      * FIXME empty description for jsdoc
+      */
+    /* CompleteClass */
+    override def reprioritize(): Unit = js.native
   }
   
   @JSImport("ol/structs/PriorityQueue", "DROP")
   @js.native
   val DROP: Double = js.native
   
-  @js.native
   trait PriorityQueue[T] extends StObject {
     
     /**
       * FIXME empty description for jsdoc
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * Remove and return the highest-priority element. O(log N).
       */
-    def dequeue(): T = js.native
+    def dequeue(): T
     
     /**
       * Enqueue an element. O(log N).
       */
-    def enqueue(element: T): Boolean = js.native
+    def enqueue(element: T): Boolean
     
-    def getCount(): Double = js.native
+    def getCount(): Double
     
-    def isEmpty(): Boolean = js.native
+    def isEmpty(): Boolean
     
-    def isKeyQueued(key: String): Boolean = js.native
+    def isKeyQueued(key: String): Boolean
     
-    def isQueued(element: T): Boolean = js.native
+    def isQueued(element: T): Boolean
     
     /**
       * FIXME empty description for jsdoc
       */
-    def reprioritize(): Unit = js.native
+    def reprioritize(): Unit
   }
   object PriorityQueue {
     
@@ -66,7 +102,7 @@ object priorityQueueMod {
     }
     
     @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[_], T] (val x: Self with PriorityQueue[T]) extends AnyVal {
+    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

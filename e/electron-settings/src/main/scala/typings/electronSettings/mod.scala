@@ -6,7 +6,6 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,12 +16,13 @@ object mod extends Shortcut {
   
   @js.native
   trait JsonArray
-    extends Array[JsonValue]
+    extends StObject
+       with Array[JsonValue]
        with _JsonValue
   
-  @js.native
   trait JsonObject
-    extends /* x */ StringDictionary[JsonValue]
+    extends StObject
+       with /* x */ StringDictionary[JsonValue]
        with _JsonValue
   object JsonObject {
     
@@ -44,7 +44,9 @@ object mod extends Shortcut {
   type JsonValue = _JsonValue | String | Double | Boolean | Null
   
   @js.native
-  trait Settings extends EventEmitter {
+  trait Settings
+    extends StObject
+       with EventEmitter {
     
     /**
       * Clears the custom settings file path, if it exists.
@@ -97,9 +99,9 @@ object mod extends Shortcut {
       * @see #getAll
       */
     def get(keyPath: String): JsonValue = js.native
-    def get(keyPath: String, defaultValue: js.UndefOr[scala.Nothing], options: SettingsOptions): JsonValue = js.native
     def get(keyPath: String, defaultValue: js.Any): JsonValue = js.native
     def get(keyPath: String, defaultValue: js.Any, options: SettingsOptions): JsonValue = js.native
+    def get(keyPath: String, defaultValue: Unit, options: SettingsOptions): JsonValue = js.native
     
     /**
       * Returns all settings.
@@ -160,13 +162,12 @@ object mod extends Shortcut {
   
   type SettingsHandler = js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, js.Any]
   
-  @js.native
   trait SettingsObserver extends StObject {
     
     /**
       * Disposes of this Observer instance.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object SettingsObserver {
     
@@ -184,13 +185,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SettingsOptions extends StObject {
     
     /**
       * Prettify the JSON output. Defaults to `false`.
       */
-    var prettify: js.UndefOr[Boolean] = js.native
+    var prettify: js.UndefOr[Boolean] = js.undefined
   }
   object SettingsOptions {
     

@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enterprise {
@@ -30,17 +29,16 @@ object enterprise {
     */
   object networkingAttributes {
     
-    @js.native
     trait NetworkDetails extends StObject {
       
       /** Optional. The device's local IPv4 address (undefined if not configured). */
-      var ipv4: js.UndefOr[String] = js.native
+      var ipv4: js.UndefOr[String] = js.undefined
       
       /** Optional. The device's local IPv6 address (undefined if not configured). */
-      var ipv6: js.UndefOr[String] = js.native
+      var ipv6: js.UndefOr[String] = js.undefined
       
       /** The device's MAC address. */
-      var macAddress: String = js.native
+      var macAddress: String
     }
     object NetworkDetails {
       
@@ -83,21 +81,20 @@ object enterprise {
     */
   object platformKeys {
     
-    @js.native
     trait Token extends StObject {
       
       /**
         * Uniquely identifies this Token.
         * Static IDs are "user" and "system", referring to the platform's user-specific and the system-wide hardware token, respectively. Any other tokens (with other identifiers) might be returned by enterprise.platformKeys.getTokens.
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * Implements the WebCrypto's SubtleCrypto interface. The cryptographic operations, including key generation, are hardware-backed.
         * Only non-extractable RSASSA-PKCS1-V1_5 keys with modulusLength up to 2048 can be generated. Each key can be used for signing data at most once.
         * Keys generated on a specific Token cannot be used with any other Tokens, nor can they be used with window.crypto.subtle. Equally, Key objects created with window.crypto.subtle cannot be used with this interface.
         */
-      var subtleCrypto: SubtleCrypto = js.native
+      var subtleCrypto: SubtleCrypto
     }
     object Token {
       

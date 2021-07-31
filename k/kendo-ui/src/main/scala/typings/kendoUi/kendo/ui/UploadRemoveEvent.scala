@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadRemoveEvent extends UploadEvent {
+trait UploadRemoveEvent
+  extends StObject
+     with UploadEvent {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var files: js.UndefOr[js.Array[_]] = js.native
+  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
 }
 object UploadRemoveEvent {
   
@@ -32,7 +32,7 @@ object UploadRemoveEvent {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setFiles(value: js.Array[_]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)

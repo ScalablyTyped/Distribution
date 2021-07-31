@@ -3,7 +3,6 @@ package typings.reactMdTransition
 import typings.reactMdTransition.typesMod.TransitionKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdTransitionStrings {
@@ -94,7 +93,9 @@ object reactMdTransitionStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait in extends TransitionKeys
+  sealed trait in
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   
@@ -139,7 +140,9 @@ object reactMdTransitionStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait mountOnEnter extends TransitionKeys
+  sealed trait mountOnEnter
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def mountOnEnter: mountOnEnter = "mountOnEnter".asInstanceOf[mountOnEnter]
   
@@ -174,32 +177,44 @@ object reactMdTransitionStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onEnter extends TransitionKeys
+  sealed trait onEnter
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
   
   @js.native
-  sealed trait onEntered extends TransitionKeys
+  sealed trait onEntered
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def onEntered: onEntered = "onEntered".asInstanceOf[onEntered]
   
   @js.native
-  sealed trait onEntering extends TransitionKeys
+  sealed trait onEntering
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def onEntering: onEntering = "onEntering".asInstanceOf[onEntering]
   
   @js.native
-  sealed trait onExit extends TransitionKeys
+  sealed trait onExit
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def onExit: onExit = "onExit".asInstanceOf[onExit]
   
   @js.native
-  sealed trait onExited extends TransitionKeys
+  sealed trait onExited
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def onExited: onExited = "onExited".asInstanceOf[onExited]
   
   @js.native
-  sealed trait onExiting extends TransitionKeys
+  sealed trait onExiting
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def onExiting: onExiting = "onExiting".asInstanceOf[onExiting]
   
@@ -284,7 +299,9 @@ object reactMdTransitionStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait unmountOnExit extends TransitionKeys
+  sealed trait unmountOnExit
+    extends StObject
+       with TransitionKeys
   @scala.inline
   def unmountOnExit: unmountOnExit = "unmountOnExit".asInstanceOf[unmountOnExit]
   

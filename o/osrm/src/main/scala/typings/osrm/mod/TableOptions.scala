@@ -4,7 +4,6 @@ import typings.osrm.osrmStrings.distance
 import typings.osrm.osrmStrings.duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/node-osrm/blob/master/docs/api.md#table
   */
-@js.native
-trait TableOptions extends Options {
+trait TableOptions
+  extends StObject
+     with Options {
   
   /**
     * specify which table results to return.
     */
-  var annotations: js.UndefOr[js.Array[duration | distance]] = js.native
+  var annotations: js.UndefOr[js.Array[duration | distance]] = js.undefined
   
   /**
     * to use location with given index as destination. Default is to use all.
     */
-  var destinations: js.UndefOr[js.Array[Double]] = js.native
+  var destinations: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * to use location with given index as source. Default is to use all.
     */
-  var sources: js.UndefOr[js.Array[Double]] = js.native
+  var sources: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object TableOptions {
   

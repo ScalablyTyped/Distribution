@@ -10,24 +10,26 @@ import typings.std.Error
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: SessionOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  
   @JSImport("koa-generic-session", JSImport.Namespace)
   @js.native
-  def apply(options: SessionOptions): Middleware[DefaultState, DefaultContext] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("koa-generic-session", "MemoryStore")
   @js.native
   val MemoryStore: SessionStore = js.native
   
-  @js.native
   trait Session
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var cookie: js.Any = js.native
+    var cookie: js.Any
   }
   object Session {
     
@@ -45,14 +47,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SessionIdStore extends StObject {
     
-    def get(): js.Any = js.native
+    def get(): js.Any
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def set(sid: String, session: Session): Unit = js.native
+    def set(sid: String, session: Session): Unit
   }
   object SessionIdStore {
     
@@ -76,36 +77,35 @@ object mod {
     }
   }
   
-  @js.native
   trait SessionOptions extends StObject {
     
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.native
+    var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.undefined
     
-    var cookie: js.UndefOr[HttpOnly] = js.native
+    var cookie: js.UndefOr[HttpOnly] = js.undefined
     
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function3[/* error */ Error, /* type */ String, /* ctx */ Context, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function3[/* error */ Error, /* type */ String, /* ctx */ Context, Unit]] = js.undefined
     
-    var genSid: js.UndefOr[js.Function1[/* length */ Double, String]] = js.native
+    var genSid: js.UndefOr[js.Function1[/* length */ Double, String]] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var reconnectTimeout: js.UndefOr[Double] = js.native
+    var reconnectTimeout: js.UndefOr[Double] = js.undefined
     
-    var rolling: js.UndefOr[Boolean] = js.native
+    var rolling: js.UndefOr[Boolean] = js.undefined
     
-    var sessionIdStore: js.UndefOr[SessionIdStore] = js.native
+    var sessionIdStore: js.UndefOr[SessionIdStore] = js.undefined
     
-    var store: js.UndefOr[SessionStore] = js.native
+    var store: js.UndefOr[SessionStore] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Boolean]] = js.native
+    var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Boolean]] = js.undefined
   }
   object SessionOptions {
     
@@ -219,20 +219,19 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait Context extends StObject {
       
-      def regenerateSession(): Generator[_, _, _] = js.native
+      def regenerateSession(): Generator[js.Any, js.Any, js.Any]
       
-      var session: Session | Null = js.native
+      var session: Session | Null
       
-      var sessionSave: Boolean | Null = js.native
+      var sessionSave: Boolean | Null
     }
     object Context {
       
       @scala.inline
-      def apply(regenerateSession: () => Generator[_, _, _]): typings.koaGenericSession.mod.koaAugmentingMod.Context = {
-        val __obj = js.Dynamic.literal(regenerateSession = js.Any.fromFunction0(regenerateSession))
+      def apply(regenerateSession: () => Generator[js.Any, js.Any, js.Any]): typings.koaGenericSession.mod.koaAugmentingMod.Context = {
+        val __obj = js.Dynamic.literal(regenerateSession = js.Any.fromFunction0(regenerateSession), session = null, sessionSave = null)
         __obj.asInstanceOf[typings.koaGenericSession.mod.koaAugmentingMod.Context]
       }
       
@@ -240,7 +239,7 @@ object mod {
       implicit class ContextMutableBuilder[Self <: typings.koaGenericSession.mod.koaAugmentingMod.Context] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setRegenerateSession(value: () => Generator[_, _, _]): Self = StObject.set(x, "regenerateSession", js.Any.fromFunction0(value))
+        def setRegenerateSession(value: () => Generator[js.Any, js.Any, js.Any]): Self = StObject.set(x, "regenerateSession", js.Any.fromFunction0(value))
         
         @scala.inline
         def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])

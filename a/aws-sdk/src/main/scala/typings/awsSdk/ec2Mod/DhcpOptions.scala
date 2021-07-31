@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DhcpOptions extends StObject {
   
   /**
     * One or more DHCP options in the set.
     */
-  var DhcpConfigurations: js.UndefOr[DhcpConfigurationList] = js.native
+  var DhcpConfigurations: js.UndefOr[DhcpConfigurationList] = js.undefined
   
   /**
     * The ID of the set of DHCP options.
     */
-  var DhcpOptionsId: js.UndefOr[String] = js.native
+  var DhcpOptionsId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the DHCP options set.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags assigned to the DHCP options set.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object DhcpOptions {
   

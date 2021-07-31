@@ -3,24 +3,22 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever a player attacks an entity.
   */
-@js.native
 trait IPlayerAttackedEntityEventData extends StObject {
   
   /**
     * The entity that was attacked by the player
     */
-  var attacked_entity: IEntity = js.native
+  var attacked_entity: IEntity
   
   /**
     * The player that attacked an entity
     */
-  var player: IEntity = js.native
+  var player: IEntity
 }
 object IPlayerAttackedEntityEventData {
   

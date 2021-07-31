@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object AppointmentDetailsKind extends StObject {
   
   /** Content is in HTML markup. */
   @js.native
-  sealed trait html extends AppointmentDetailsKind
+  sealed trait html
+    extends StObject
+       with AppointmentDetailsKind
   
   /** Content is in plain text. */
   @js.native
-  sealed trait plainText extends AppointmentDetailsKind
+  sealed trait plainText
+    extends StObject
+       with AppointmentDetailsKind
 }

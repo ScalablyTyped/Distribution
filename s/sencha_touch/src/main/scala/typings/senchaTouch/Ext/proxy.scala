@@ -3,16 +3,16 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.data.proxy.IProxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxy {
   
-  @js.native
-  trait IClientProxy extends IProxy {
+  trait IClientProxy
+    extends StObject
+       with IProxy {
     
     /** [Method] Abstract function that must be implemented by each ClientProxy subclass  */
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IClientProxy {
     

@@ -2,19 +2,17 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Graph2dBarChartOption extends StObject {
   
-  var align: js.UndefOr[Graph2dBarChartAlign] = js.native
+  var align: js.UndefOr[Graph2dBarChartAlign] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var sideBySide: js.UndefOr[Boolean] = js.native
+  var sideBySide: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Graph2dBarChartOption {
   

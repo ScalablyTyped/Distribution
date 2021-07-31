@@ -2,26 +2,24 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamSelection extends StObject {
   
   /**
     * The maximum video bitrate (bps) to include in output.
     */
-  var MaxVideoBitsPerSecond: js.UndefOr[integer] = js.native
+  var MaxVideoBitsPerSecond: js.UndefOr[integer] = js.undefined
   
   /**
     * The minimum video bitrate (bps) to include in output.
     */
-  var MinVideoBitsPerSecond: js.UndefOr[integer] = js.native
+  var MinVideoBitsPerSecond: js.UndefOr[integer] = js.undefined
   
   /**
     * A directive that determines the order of streams in the output.
     */
-  var StreamOrder: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamOrder] = js.native
+  var StreamOrder: js.UndefOr[typings.awsSdk.mediapackagevodMod.StreamOrder] = js.undefined
 }
 object StreamSelection {
   

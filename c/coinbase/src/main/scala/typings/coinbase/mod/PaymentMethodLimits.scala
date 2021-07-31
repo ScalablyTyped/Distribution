@@ -2,19 +2,17 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodLimits extends StObject {
   
-  var buy: js.Array[PaymentMethodLimit] = js.native
+  var buy: js.Array[PaymentMethodLimit]
   
-  var deposit: js.Array[PaymentMethodLimit] = js.native
+  var deposit: js.Array[PaymentMethodLimit]
   
-  var instant_buy: js.Array[PaymentMethodLimit] = js.native
+  var instant_buy: js.Array[PaymentMethodLimit]
   
-  var sell: js.Array[PaymentMethodLimit] = js.native
+  var sell: js.Array[PaymentMethodLimit]
 }
 object PaymentMethodLimits {
   

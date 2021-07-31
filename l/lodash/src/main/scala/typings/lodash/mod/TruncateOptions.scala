@@ -3,26 +3,24 @@ package typings.lodash.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TruncateOptions extends StObject {
   
   /**
     * @see _.length
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * @see _.omission
     */
-  var omission: js.UndefOr[java.lang.String] = js.native
+  var omission: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * @see _.separator
     */
-  var separator: js.UndefOr[java.lang.String | RegExp] = js.native
+  var separator: js.UndefOr[java.lang.String | RegExp] = js.undefined
 }
 object TruncateOptions {
   

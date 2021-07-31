@@ -10,21 +10,19 @@ import typings.webpack.webpackStrings.verbose
 import typings.webpack.webpackStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Debug extends StObject {
   
   /**
   		 * Enable debug logging for specific loggers
   		 */
-  var debug: js.UndefOr[FilterTypes | Boolean] = js.native
+  var debug: js.UndefOr[FilterTypes | Boolean] = js.undefined
   
   /**
   		 * Log level
   		 */
-  var level: js.UndefOr[none | error | warn | info | log | verbose] = js.native
+  var level: js.UndefOr[none | error | warn | info | log | verbose] = js.undefined
 }
 object Debug {
   

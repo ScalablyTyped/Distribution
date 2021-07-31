@@ -3,21 +3,22 @@ package typings.nextServer
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPageFilesMod {
   
-  @JSImport("next-server/dist/server/get-page-files", "getPageFiles")
+  @JSImport("next-server/dist/server/get-page-files", JSImport.Namespace)
   @js.native
-  def getPageFiles(buildManifest: BuildManifest, page: String): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPageFiles(buildManifest: BuildManifest, page: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageFiles")(buildManifest.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait BuildManifest extends StObject {
     
-    var devFiles: js.Array[String] = js.native
+    var devFiles: js.Array[String]
     
-    var pages: StringDictionary[js.Array[String]] = js.native
+    var pages: StringDictionary[js.Array[String]]
   }
   object BuildManifest {
     

@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAnalysisSchemeRequest extends StObject {
   
   /**
     * The name of the analysis scheme you want to delete.
     */
-  var AnalysisSchemeName: StandardName = js.native
+  var AnalysisSchemeName: StandardName
   
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
 }
 object DeleteAnalysisSchemeRequest {
   

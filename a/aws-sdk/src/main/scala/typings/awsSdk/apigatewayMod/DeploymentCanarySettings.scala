@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentCanarySettings extends StObject {
   
   /**
     * The percentage (0.0-100.0) of traffic routed to the canary deployment.
     */
-  var percentTraffic: js.UndefOr[Double] = js.native
+  var percentTraffic: js.UndefOr[Double] = js.undefined
   
   /**
     * A stage variable overrides used for the canary release deployment. They can override existing stage variables or add new stage variables for the canary release deployment. These stage variables are represented as a string-to-string map between stage variable names and their values.
     */
-  var stageVariableOverrides: js.UndefOr[MapOfStringToString] = js.native
+  var stageVariableOverrides: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * A Boolean flag to indicate whether the canary release deployment uses the stage cache or not.
     */
-  var useStageCache: js.UndefOr[Boolean] = js.native
+  var useStageCache: js.UndefOr[Boolean] = js.undefined
 }
 object DeploymentCanarySettings {
   

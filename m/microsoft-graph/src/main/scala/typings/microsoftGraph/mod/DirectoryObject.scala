@@ -2,13 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectoryObject extends Entity {
+trait DirectoryObject
+  extends StObject
+     with Entity {
   
-  var deletedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var deletedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DirectoryObject {
   

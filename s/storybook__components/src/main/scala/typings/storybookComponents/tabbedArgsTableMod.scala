@@ -5,7 +5,6 @@ import typings.std.Record
 import typings.storybookComponents.argsTableArgsTableMod.ArgsTableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbedArgsTableMod {
@@ -14,10 +13,9 @@ object tabbedArgsTableMod {
   @js.native
   val TabbedArgsTable: FC[TabbedArgsTableProps] = js.native
   
-  @js.native
   trait TabbedArgsTableProps extends StObject {
     
-    var tabs: Record[String, ArgsTableProps] = js.native
+    var tabs: Record[String, ArgsTableProps]
   }
   object TabbedArgsTableProps {
     

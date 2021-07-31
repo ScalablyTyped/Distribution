@@ -2,17 +2,15 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProducerOptions extends StObject {
   
-  var ackTimeoutMs: js.UndefOr[Double] = js.native
+  var ackTimeoutMs: js.UndefOr[Double] = js.undefined
   
-  var partitionerType: js.UndefOr[Double] = js.native
+  var partitionerType: js.UndefOr[Double] = js.undefined
   
-  var requireAcks: js.UndefOr[Double] = js.native
+  var requireAcks: js.UndefOr[Double] = js.undefined
 }
 object ProducerOptions {
   

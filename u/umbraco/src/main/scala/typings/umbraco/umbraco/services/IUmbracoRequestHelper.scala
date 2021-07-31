@@ -6,7 +6,6 @@ import typings.umbraco.anon.ErrorMsg
 import typings.umbraco.mod.resources.IResourcePromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

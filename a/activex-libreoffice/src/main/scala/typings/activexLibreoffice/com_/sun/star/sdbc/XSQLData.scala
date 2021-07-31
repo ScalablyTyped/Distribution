@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface must be implemented by a service that is registered in a type mapping. It is expected that this interface will normally be implemented
   * by a tool. The methods in this interface are called by the driver and are never called by a programmer directly.
   */
-@js.native
-trait XSQLData extends XInterface {
+trait XSQLData
+  extends StObject
+     with XInterface {
   
   /**
     * returns the fully-qualified name of the SQL user-defined type that this object represents.
@@ -23,7 +23,7 @@ trait XSQLData extends XInterface {
     * @returns the name of the SQL type.
     * @throws SQLException if a database access error occurs.
     */
-  val SQLTypeName: String = js.native
+  val SQLTypeName: String
   
   /**
     * returns the fully-qualified name of the SQL user-defined type that this object represents.
@@ -32,7 +32,7 @@ trait XSQLData extends XInterface {
     * @returns the name of the SQL type.
     * @throws SQLException if a database access error occurs.
     */
-  def getSQLTypeName(): String = js.native
+  def getSQLTypeName(): String
   
   /**
     * populates this object with data read from the database.
@@ -50,7 +50,7 @@ trait XSQLData extends XInterface {
     * @see com.sun.star.sdbc.XSQLInput
     * @throws SQLException if a database access error occurs.
     */
-  def readSQL(stream: XSQLInput, typeName: String): Unit = js.native
+  def readSQL(stream: XSQLInput, typeName: String): Unit
   
   /**
     * writes this object to the given SQL data stream.
@@ -63,7 +63,7 @@ trait XSQLData extends XInterface {
     * @see com.sun.star.sdbc.XSQLOutput
     * @throws SQLException if a database access error occurs.
     */
-  def writeSQL(stream: XSQLOutput): Unit = js.native
+  def writeSQL(stream: XSQLOutput): Unit
 }
 object XSQLData {
   

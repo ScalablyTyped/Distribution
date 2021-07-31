@@ -10,8 +10,8 @@ JSON Schema based editor
 | Full name          | json-editor |
 | Keywords           | json, schema, jsonschema, editor |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 238908 |
+| # dependents       | 20 |
+| # downloads        | 256235 |
 | # stars            | 14 |
 
 ## Links

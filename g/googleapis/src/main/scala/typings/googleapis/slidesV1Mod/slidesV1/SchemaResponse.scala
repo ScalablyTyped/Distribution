@@ -2,75 +2,73 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single response from an update.
   */
-@js.native
 trait SchemaResponse extends StObject {
   
   /**
     * The result of creating an image.
     */
-  var createImage: js.UndefOr[SchemaCreateImageResponse] = js.native
+  var createImage: js.UndefOr[SchemaCreateImageResponse] = js.undefined
   
   /**
     * The result of creating a line.
     */
-  var createLine: js.UndefOr[SchemaCreateLineResponse] = js.native
+  var createLine: js.UndefOr[SchemaCreateLineResponse] = js.undefined
   
   /**
     * The result of creating a shape.
     */
-  var createShape: js.UndefOr[SchemaCreateShapeResponse] = js.native
+  var createShape: js.UndefOr[SchemaCreateShapeResponse] = js.undefined
   
   /**
     * The result of creating a Google Sheets chart.
     */
-  var createSheetsChart: js.UndefOr[SchemaCreateSheetsChartResponse] = js.native
+  var createSheetsChart: js.UndefOr[SchemaCreateSheetsChartResponse] = js.undefined
   
   /**
     * The result of creating a slide.
     */
-  var createSlide: js.UndefOr[SchemaCreateSlideResponse] = js.native
+  var createSlide: js.UndefOr[SchemaCreateSlideResponse] = js.undefined
   
   /**
     * The result of creating a table.
     */
-  var createTable: js.UndefOr[SchemaCreateTableResponse] = js.native
+  var createTable: js.UndefOr[SchemaCreateTableResponse] = js.undefined
   
   /**
     * The result of creating a video.
     */
-  var createVideo: js.UndefOr[SchemaCreateVideoResponse] = js.native
+  var createVideo: js.UndefOr[SchemaCreateVideoResponse] = js.undefined
   
   /**
     * The result of duplicating an object.
     */
-  var duplicateObject: js.UndefOr[SchemaDuplicateObjectResponse] = js.native
+  var duplicateObject: js.UndefOr[SchemaDuplicateObjectResponse] = js.undefined
   
   /**
     * The result of grouping objects.
     */
-  var groupObjects: js.UndefOr[SchemaGroupObjectsResponse] = js.native
+  var groupObjects: js.UndefOr[SchemaGroupObjectsResponse] = js.undefined
   
   /**
     * The result of replacing all shapes matching some criteria with an image.
     */
-  var replaceAllShapesWithImage: js.UndefOr[SchemaReplaceAllShapesWithImageResponse] = js.native
+  var replaceAllShapesWithImage: js.UndefOr[SchemaReplaceAllShapesWithImageResponse] = js.undefined
   
   /**
     * The result of replacing all shapes matching some criteria with a Google
     * Sheets chart.
     */
-  var replaceAllShapesWithSheetsChart: js.UndefOr[SchemaReplaceAllShapesWithSheetsChartResponse] = js.native
+  var replaceAllShapesWithSheetsChart: js.UndefOr[SchemaReplaceAllShapesWithSheetsChartResponse] = js.undefined
   
   /**
     * The result of replacing text.
     */
-  var replaceAllText: js.UndefOr[SchemaReplaceAllTextResponse] = js.native
+  var replaceAllText: js.UndefOr[SchemaReplaceAllTextResponse] = js.undefined
 }
 object SchemaResponse {
   

@@ -2,395 +2,199 @@ package typings.tcpPortUsed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tcp-port-used", "check")
+  @JSImport("tcp-port-used", JSImport.Namespace)
   @js.native
-  def check(port: Double): js.Promise[Boolean] = js.native
-  @JSImport("tcp-port-used", "check")
-  @js.native
-  def check(port: Double, host: String): js.Promise[Boolean] = js.native
-  @JSImport("tcp-port-used", "check")
-  @js.native
-  def check(port: TcpPortUsedOptions): js.Promise[Boolean] = js.native
-  @JSImport("tcp-port-used", "check")
-  @js.native
-  def check(port: TcpPortUsedOptions, host: String): js.Promise[Boolean] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: Double,
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: js.UndefOr[scala.Nothing], inUse: Boolean): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    inUse: Boolean,
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: js.UndefOr[scala.Nothing], inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    inUse: Boolean,
-    retryTimeMs: Double,
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: String): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: String,
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: String, inUse: js.UndefOr[scala.Nothing], retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: String,
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: Double,
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: String, inUse: Boolean): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: Double,
-    host: String,
-    inUse: Boolean,
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: String, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: Double, host: String, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: Double,
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: js.UndefOr[scala.Nothing], inUse: Boolean): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    inUse: Boolean,
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: js.UndefOr[scala.Nothing], inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    inUse: Boolean,
-    retryTimeMs: Double,
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: String): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: String,
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: js.UndefOr[scala.Nothing], retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: String,
-    inUse: js.UndefOr[scala.Nothing],
-    retryTimeMs: Double,
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(
-    port: TcpPortUsedOptions,
-    host: String,
-    inUse: Boolean,
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitForStatus")
-  @js.native
-  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def check(port: Double): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def check(port: Double, host: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def check(port: TcpPortUsedOptions): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def check(port: TcpPortUsedOptions, host: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: Double, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: Double, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: Double, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: TcpPortUsedOptions): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: TcpPortUsedOptions, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: TcpPortUsedOptions, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFree")
-  @js.native
-  def waitUntilFree(port: TcpPortUsedOptions, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitForStatus(port: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Boolean, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: String, inUse: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Boolean, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: Double, host: Unit, inUse: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Boolean, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: String, inUse: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Boolean, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Boolean, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Boolean, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForStatus(port: TcpPortUsedOptions, host: Unit, inUse: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForStatus")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], inUse.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double, host: js.UndefOr[scala.Nothing], retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double, host: js.UndefOr[scala.Nothing], retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double, host: String): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double, host: String, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double, host: String, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: Double, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: js.UndefOr[scala.Nothing], retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: js.UndefOr[scala.Nothing], retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilFreeOnHost")
-  @js.native
-  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitUntilFree(port: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: Double, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: Double, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: Double, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: TcpPortUsedOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: TcpPortUsedOptions, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: TcpPortUsedOptions, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFree(port: TcpPortUsedOptions, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFree")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: Double, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: Double, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: Double, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: TcpPortUsedOptions): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: TcpPortUsedOptions, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: TcpPortUsedOptions, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsed")
-  @js.native
-  def waitUntilUsed(port: TcpPortUsedOptions, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: String, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: String, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: Double, host: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilFreeOnHost(port: TcpPortUsedOptions, host: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilFreeOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double, host: js.UndefOr[scala.Nothing], retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double, host: js.UndefOr[scala.Nothing], retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double, host: String): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double, host: String, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double, host: String, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: Double, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(
-    port: TcpPortUsedOptions,
-    host: js.UndefOr[scala.Nothing],
-    retryTimeMs: js.UndefOr[scala.Nothing],
-    timeOutMs: Double
-  ): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: js.UndefOr[scala.Nothing], retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: js.UndefOr[scala.Nothing], retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double): js.Promise[Unit] = js.native
-  @JSImport("tcp-port-used", "waitUntilUsedOnHost")
-  @js.native
-  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitUntilUsed(port: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: Double, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: Double, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: Double, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: TcpPortUsedOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: TcpPortUsedOptions, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: TcpPortUsedOptions, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsed(port: TcpPortUsedOptions, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsed")(port.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: String, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: String, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: Double, host: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: String, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: Unit, retryTimeMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: Unit, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitUntilUsedOnHost(port: TcpPortUsedOptions, host: Unit, retryTimeMs: Unit, timeOutMs: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilUsedOnHost")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], retryTimeMs.asInstanceOf[js.Any], timeOutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait TcpPortUsedOptions extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var retryTimeMs: Double = js.native
+    var retryTimeMs: Double
     
-    var status: Boolean = js.native
+    var status: Boolean
     
-    var timeOutMs: Double = js.native
+    var timeOutMs: Double
   }
   object TcpPortUsedOptions {
     

@@ -3,7 +3,6 @@ package typings.angularBootstrapLightbox
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angular {
@@ -12,16 +11,15 @@ object angular {
     
     object lightbox {
       
-      @js.native
       trait IImageDimensionLimits extends StObject {
         
-        var maxHeight: js.UndefOr[Double] = js.native
+        var maxHeight: js.UndefOr[Double] = js.undefined
         
-        var maxWidth: js.UndefOr[Double] = js.native
+        var maxWidth: js.UndefOr[Double] = js.undefined
         
-        var minHeight: js.UndefOr[Double] = js.native
+        var minHeight: js.UndefOr[Double] = js.undefined
         
-        var minWidth: js.UndefOr[Double] = js.native
+        var minWidth: js.UndefOr[Double] = js.undefined
       }
       object IImageDimensionLimits {
         
@@ -60,16 +58,15 @@ object angular {
         }
       }
       
-      @js.native
       trait IImageDimensionParameter extends StObject {
         
-        var imageHeight: Double = js.native
+        var imageHeight: Double
         
-        var imageWidth: Double = js.native
+        var imageWidth: Double
         
-        var windowHeight: Double = js.native
+        var windowHeight: Double
         
-        var windowWidth: Double = js.native
+        var windowWidth: Double
       }
       object IImageDimensionParameter {
         
@@ -96,14 +93,13 @@ object angular {
         }
       }
       
-      @js.native
       trait ILightBoxProvider extends StObject {
         
-        def calculateImageDimensionLimits(dimensions: IImageDimensionParameter): IImageDimensionLimits = js.native
+        def calculateImageDimensionLimits(dimensions: IImageDimensionParameter): IImageDimensionLimits
         
-        def calculateModalDimensions(dimensions: IModalDimensionsParameter): IModalDimensions = js.native
+        def calculateModalDimensions(dimensions: IModalDimensionsParameter): IModalDimensions
         
-        var templateUrl: String = js.native
+        var templateUrl: String
       }
       object ILightBoxProvider {
         
@@ -138,18 +134,17 @@ object angular {
         def openModal(images: js.Array[ILightboxImageInfo], index: Double, modalParams: StringDictionary[js.Any]): Unit = js.native
       }
       
-      @js.native
       trait ILightboxImageInfo extends StObject {
         
-        var caption: js.UndefOr[String] = js.native
+        var caption: js.UndefOr[String] = js.undefined
         
-        var height: Double = js.native
+        var height: Double
         
-        var thumbUrl: js.UndefOr[String] = js.native
+        var thumbUrl: js.UndefOr[String] = js.undefined
         
-        var url: String = js.native
+        var url: String
         
-        var width: Double = js.native
+        var width: Double
       }
       object ILightboxImageInfo {
         
@@ -185,12 +180,11 @@ object angular {
         }
       }
       
-      @js.native
       trait IModalDimensions extends StObject {
         
-        var height: Double = js.native
+        var height: Double
         
-        var width: Double = js.native
+        var width: Double
       }
       object IModalDimensions {
         
@@ -211,16 +205,15 @@ object angular {
         }
       }
       
-      @js.native
       trait IModalDimensionsParameter extends StObject {
         
-        var imageDisplayHeight: Double = js.native
+        var imageDisplayHeight: Double
         
-        var imageDisplayWidth: Double = js.native
+        var imageDisplayWidth: Double
         
-        var windowHeight: Double = js.native
+        var windowHeight: Double
         
-        var windowWidth: Double = js.native
+        var windowWidth: Double
       }
       object IModalDimensionsParameter {
         

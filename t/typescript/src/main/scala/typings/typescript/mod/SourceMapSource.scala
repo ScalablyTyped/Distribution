@@ -2,19 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMapSource extends StObject {
   
-  var fileName: java.lang.String = js.native
+  var fileName: java.lang.String
   
-  def getLineAndCharacterOfPosition(pos: Double): LineAndCharacter = js.native
+  def getLineAndCharacterOfPosition(pos: Double): LineAndCharacter
   
-  var skipTrivia: js.UndefOr[js.Function1[/* pos */ Double, Double]] = js.native
+  var skipTrivia: js.UndefOr[js.Function1[/* pos */ Double, Double]] = js.undefined
   
-  var text: java.lang.String = js.native
+  var text: java.lang.String
 }
 object SourceMapSource {
   

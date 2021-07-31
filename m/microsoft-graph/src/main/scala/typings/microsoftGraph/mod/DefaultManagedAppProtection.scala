@@ -2,53 +2,53 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultManagedAppProtection extends ManagedAppProtection {
+trait DefaultManagedAppProtection
+  extends StObject
+     with ManagedAppProtection {
   
   /**
     * Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: useDeviceSettings,
     * afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
     */
-  var appDataEncryptionType: js.UndefOr[ManagedAppDataEncryptionType] = js.native
+  var appDataEncryptionType: js.UndefOr[ManagedAppDataEncryptionType] = js.undefined
   
   // List of apps to which the policy is deployed.
-  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.native
+  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.undefined
   
   // A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-  var customSettings: js.UndefOr[js.Array[KeyValuePair]] = js.native
+  var customSettings: js.UndefOr[js.Array[KeyValuePair]] = js.undefined
   
   // Count of apps to which the current policy is deployed.
-  var deployedAppCount: js.UndefOr[Double] = js.native
+  var deployedAppCount: js.UndefOr[Double] = js.undefined
   
   // Navigation property to deployment summary of the configuration.
-  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.native
+  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.undefined
   
   // When this setting is enabled, app level encryption is disabled if device level encryption is enabled. (Android only)
-  var disableAppEncryptionIfDeviceEncryptionIsEnabled: js.UndefOr[Boolean] = js.native
+  var disableAppEncryptionIfDeviceEncryptionIsEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether managed-app data should be encrypted. (Android only)
-  var encryptAppData: js.UndefOr[Boolean] = js.native
+  var encryptAppData: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True. (iOS Only)
-  var faceIdBlocked: js.UndefOr[Boolean] = js.native
+  var faceIdBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Define the oldest required Android security patch level a user can have to gain secure access to the app. (Android
     * only)
     */
-  var minimumRequiredPatchVersion: js.UndefOr[NullableOption[String]] = js.native
+  var minimumRequiredPatchVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Versions less than the specified version will block the managed app from accessing company data. (iOS Only)
-  var minimumRequiredSdkVersion: js.UndefOr[NullableOption[String]] = js.native
+  var minimumRequiredSdkVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Define the oldest recommended Android security patch level a user can have for secure access to the app. (Android only)
-  var minimumWarningPatchVersion: js.UndefOr[NullableOption[String]] = js.native
+  var minimumWarningPatchVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether screen capture is blocked. (Android only)
-  var screenCaptureBlocked: js.UndefOr[Boolean] = js.native
+  var screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined
 }
 object DefaultManagedAppProtection {
   

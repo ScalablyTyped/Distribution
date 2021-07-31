@@ -2,25 +2,23 @@ package typings.node.dnsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoaRecord extends StObject {
   
-  var expire: Double = js.native
+  var expire: Double
   
-  var hostmaster: String = js.native
+  var hostmaster: String
   
-  var minttl: Double = js.native
+  var minttl: Double
   
-  var nsname: String = js.native
+  var nsname: String
   
-  var refresh: Double = js.native
+  var refresh: Double
   
-  var retry: Double = js.native
+  var retry: Double
   
-  var serial: Double = js.native
+  var serial: Double
 }
 object SoaRecord {
   

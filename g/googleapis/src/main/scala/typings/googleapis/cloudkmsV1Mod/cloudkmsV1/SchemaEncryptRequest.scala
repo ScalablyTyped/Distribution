@@ -2,13 +2,11 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for KeyManagementService.Encrypt.
   */
-@js.native
 trait SchemaEncryptRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaEncryptRequest extends StObject {
     * the plaintext and additional_authenticated_data fields must be no larger
     * than 8KiB.
     */
-  var additionalAuthenticatedData: js.UndefOr[String] = js.native
+  var additionalAuthenticatedData: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The data to encrypt. Must be no larger than 64KiB.  The maximum
@@ -28,7 +26,7 @@ trait SchemaEncryptRequest extends StObject {
     * combined length of the plaintext and additional_authenticated_data fields
     * must be no larger than 8KiB.
     */
-  var plaintext: js.UndefOr[String] = js.native
+  var plaintext: js.UndefOr[String] = js.undefined
 }
 object SchemaEncryptRequest {
   

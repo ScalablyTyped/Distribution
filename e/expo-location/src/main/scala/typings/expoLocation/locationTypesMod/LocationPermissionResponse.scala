@@ -5,15 +5,15 @@ import typings.unimodulesPermissionsInterface.mod.PermissionResponse
 import typings.unimodulesPermissionsInterface.mod.PermissionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocationPermissionResponse extends PermissionResponse {
+trait LocationPermissionResponse
+  extends StObject
+     with PermissionResponse {
   
-  var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.native
+  var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.undefined
   
-  var ios: js.UndefOr[PermissionDetailsLocationIOS] = js.native
+  var ios: js.UndefOr[PermissionDetailsLocationIOS] = js.undefined
 }
 object LocationPermissionResponse {
   

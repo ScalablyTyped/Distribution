@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the track data obtained following a card swipe. */
-@js.native
 trait MagneticStripeReaderTrackData extends StObject {
   
   /** Gets the raw or decoded data from the swiped card. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   
   /** Gets the discretionary data from the swiped card. */
-  var discretionaryData: IBuffer = js.native
+  var discretionaryData: IBuffer
   
   /** Gets the encrypted data from the swiped card. */
-  var encryptedData: IBuffer = js.native
+  var encryptedData: IBuffer
 }
 object MagneticStripeReaderTrackData {
   

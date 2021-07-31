@@ -2,72 +2,70 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Evaluation extends StObject {
   
-  var ComputeTime: js.UndefOr[LongType] = js.native
+  var ComputeTime: js.UndefOr[LongType] = js.undefined
   
   /**
     * The time that the Evaluation was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.native
+  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The AWS user account that invoked the evaluation. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
     */
-  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.native
+  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.undefined
   
   /**
     * The ID of the DataSource that is used to evaluate the MLModel.
     */
-  var EvaluationDataSourceId: js.UndefOr[EntityId] = js.native
+  var EvaluationDataSourceId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The ID that is assigned to the Evaluation at creation.
     */
-  var EvaluationId: js.UndefOr[EntityId] = js.native
+  var EvaluationId: js.UndefOr[EntityId] = js.undefined
   
-  var FinishedAt: js.UndefOr[EpochTime] = js.native
+  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The location and name of the data in Amazon Simple Storage Server (Amazon S3) that is used in the evaluation.
     */
-  var InputDataLocationS3: js.UndefOr[S3Url] = js.native
+  var InputDataLocationS3: js.UndefOr[S3Url] = js.undefined
   
   /**
     * The time of the most recent edit to the Evaluation. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.native
+  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The ID of the MLModel that is the focus of the evaluation.
     */
-  var MLModelId: js.UndefOr[EntityId] = js.native
+  var MLModelId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * A description of the most recent details about evaluating the MLModel.
     */
-  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.undefined
   
   /**
     * A user-supplied name or description of the Evaluation. 
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
   
   /**
     * Measurements of how well the MLModel performed, using observations referenced by the DataSource. One of the following metrics is returned, based on the type of the MLModel:    BinaryAUC: A binary MLModel uses the Area Under the Curve (AUC) technique to measure performance.    RegressionRMSE: A regression MLModel uses the Root Mean Square Error (RMSE) technique to measure performance. RMSE measures the difference between predicted and actual values for a single variable.   MulticlassAvgFScore: A multiclass MLModel uses the F1 score technique to measure performance.     For more information about performance metrics, please see the Amazon Machine Learning Developer Guide. 
     */
-  var PerformanceMetrics: js.UndefOr[typings.awsSdk.machinelearningMod.PerformanceMetrics] = js.native
+  var PerformanceMetrics: js.UndefOr[typings.awsSdk.machinelearningMod.PerformanceMetrics] = js.undefined
   
-  var StartedAt: js.UndefOr[EpochTime] = js.native
+  var StartedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The status of the evaluation. This element can have one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to evaluate an MLModel.  INPROGRESS - The evaluation is underway.  FAILED - The request to evaluate an MLModel did not run to completion. It is not usable.  COMPLETED - The evaluation process completed successfully.  DELETED - The Evaluation is marked as deleted. It is not usable. 
     */
-  var Status: js.UndefOr[EntityStatus] = js.native
+  var Status: js.UndefOr[EntityStatus] = js.undefined
 }
 object Evaluation {
   

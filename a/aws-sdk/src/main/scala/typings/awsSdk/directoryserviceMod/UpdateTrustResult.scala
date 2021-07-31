@@ -2,18 +2,16 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTrustResult extends StObject {
   
-  var RequestId: js.UndefOr[typings.awsSdk.directoryserviceMod.RequestId] = js.native
+  var RequestId: js.UndefOr[typings.awsSdk.directoryserviceMod.RequestId] = js.undefined
   
   /**
     * Identifier of the trust relationship.
     */
-  var TrustId: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustId] = js.native
+  var TrustId: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustId] = js.undefined
 }
 object UpdateTrustResult {
   

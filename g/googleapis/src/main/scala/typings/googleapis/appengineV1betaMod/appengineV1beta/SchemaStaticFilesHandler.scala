@@ -3,7 +3,6 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which files in the application directory are static files, and which URLs
   * serve them.
   */
-@js.native
 trait SchemaStaticFilesHandler extends StObject {
   
   /**
@@ -22,44 +20,44 @@ trait SchemaStaticFilesHandler extends StObject {
     * uploads are charged against both your code and static data storage
     * resource quotas.
     */
-  var applicationReadable: js.UndefOr[Boolean] = js.native
+  var applicationReadable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Time a static file served by this handler should be cached by web proxies
     * and browsers.
     */
-  var expiration: js.UndefOr[String] = js.native
+  var expiration: js.UndefOr[String] = js.undefined
   
   /**
     * HTTP headers to use for all responses from these URLs.
     */
-  var httpHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var httpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * MIME type used to serve all files served by this handler.Defaults to
     * file-specific MIME types, which are derived from each file&#39;s filename
     * extension.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Path to the static files matched by the URL pattern, from the application
     * root directory. The path can refer to text matched in groupings in the
     * URL pattern.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this handler should match the request if the file referenced by
     * the handler does not exist.
     */
-  var requireMatchingFile: js.UndefOr[Boolean] = js.native
+  var requireMatchingFile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Regular expression that matches the file paths for all files that should
     * be referenced by this handler.
     */
-  var uploadPathRegex: js.UndefOr[String] = js.native
+  var uploadPathRegex: js.UndefOr[String] = js.undefined
 }
 object SchemaStaticFilesHandler {
   

@@ -3,39 +3,37 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectdPayload extends StObject {
   
   /** The end time of the interval. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The measurement metadata. Example: "process_id" -> 12345 */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.monitoring.gapi.client.monitoring.TypedValue}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.CollectdPayload with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.CollectdPayload & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The name of the plugin. Example: "disk". */
-  var plugin: js.UndefOr[String] = js.native
+  var plugin: js.UndefOr[String] = js.undefined
   
   /** The instance name of the plugin Example: "hdcl". */
-  var pluginInstance: js.UndefOr[String] = js.native
+  var pluginInstance: js.UndefOr[String] = js.undefined
   
   /** The start time of the interval. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The measurement type. Example: "memory". */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The measurement type instance. Example: "used". */
-  var typeInstance: js.UndefOr[String] = js.native
+  var typeInstance: js.UndefOr[String] = js.undefined
   
   /** The measured values during this time interval. Each value must have a different data_source_name. */
-  var values: js.UndefOr[js.Array[CollectdValue]] = js.native
+  var values: js.UndefOr[js.Array[CollectdValue]] = js.undefined
 }
 object CollectdPayload {
   
@@ -58,7 +56,7 @@ object CollectdPayload {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.monitoring.gapi.client.monitoring.TypedValue}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.CollectdPayload with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.CollectdPayload & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

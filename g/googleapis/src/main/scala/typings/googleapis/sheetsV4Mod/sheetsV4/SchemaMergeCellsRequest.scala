@@ -2,24 +2,22 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Merges all cells in the range.
   */
-@js.native
 trait SchemaMergeCellsRequest extends StObject {
   
   /**
     * How the cells should be merged.
     */
-  var mergeType: js.UndefOr[String] = js.native
+  var mergeType: js.UndefOr[String] = js.undefined
   
   /**
     * The range of cells to merge.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
 }
 object SchemaMergeCellsRequest {
   

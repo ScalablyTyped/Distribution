@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsQueuesList extends StandardParameters {
+trait ParamsResourceProjectsLocationsQueuesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * `filter` can be used to specify a subset of queues. Any Queue field can
@@ -26,7 +26,7 @@ trait ParamsResourceProjectsLocationsQueuesList extends StandardParameters {
     * Sample filter "state: PAUSED".  Note that using filters might cause fewer
     * queues than the requested page_size to be returned.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Requested page size.  The maximum page size is 9800. If unspecified, the
@@ -34,7 +34,7 @@ trait ParamsResourceProjectsLocationsQueuesList extends StandardParameters {
     * returned, even if more queues exist; use the next_page_token in the
     * response to determine if more queues exist.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying the page of results to return.  To request the first
@@ -43,13 +43,13 @@ trait ParamsResourceProjectsLocationsQueuesList extends StandardParameters {
     * the previous call to ListQueues method. It is an error to switch the
     * value of the filter while iterating through pages.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The location name. For example:
     * `projects/PROJECT_ID/locations/LOCATION_ID`
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsQueuesList {
   

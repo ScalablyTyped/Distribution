@@ -5,49 +5,37 @@ import typings.reactBeautifulDnd.reactBeautifulDndStrings.fixed
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggingStyle extends StObject {
   
-  var boxSizing: `border-box` = js.native
+  var boxSizing: `border-box`
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var pointerEvents: none = js.native
+  var pointerEvents: none
   
-  var position: fixed = js.native
+  var position: fixed
   
-  var top: Double = js.native
+  var top: Double
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
-  var transition: none = js.native
+  var transition: none
   
-  var width: Double = js.native
+  var width: Double
   
-  var zIndex: Double = js.native
+  var zIndex: Double
 }
 object DraggingStyle {
   
   @scala.inline
-  def apply(
-    boxSizing: `border-box`,
-    height: Double,
-    left: Double,
-    pointerEvents: none,
-    position: fixed,
-    top: Double,
-    transition: none,
-    width: Double,
-    zIndex: Double
-  ): DraggingStyle = {
-    val __obj = js.Dynamic.literal(boxSizing = boxSizing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pointerEvents = pointerEvents.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+  def apply(height: Double, left: Double, top: Double, width: Double, zIndex: Double): DraggingStyle = {
+    val __obj = js.Dynamic.literal(boxSizing = "border-box", height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], pointerEvents = "none", position = "fixed", top = top.asInstanceOf[js.Any], transition = "none", width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggingStyle]
   }
   

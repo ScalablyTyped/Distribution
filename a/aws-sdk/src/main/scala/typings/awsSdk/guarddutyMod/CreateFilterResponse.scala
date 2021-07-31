@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFilterResponse extends StObject {
   
   /**
     * The name of the successfully created filter.
     */
-  var Name: FilterName = js.native
+  var Name: FilterName
 }
 object CreateFilterResponse {
   

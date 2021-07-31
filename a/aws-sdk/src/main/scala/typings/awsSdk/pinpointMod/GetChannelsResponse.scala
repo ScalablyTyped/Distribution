@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetChannelsResponse extends StObject {
   
-  var ChannelsResponse: typings.awsSdk.pinpointMod.ChannelsResponse = js.native
+  var ChannelsResponse: typings.awsSdk.pinpointMod.ChannelsResponse
 }
 object GetChannelsResponse {
   

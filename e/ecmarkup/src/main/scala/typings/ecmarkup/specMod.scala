@@ -1,36 +1,29 @@
 package typings.ecmarkup
 
-import typings.ecmarkup.ecmarkupStrings.attr
-import typings.ecmarkup.ecmarkupStrings.contents
-import typings.ecmarkup.ecmarkupStrings.global
-import typings.ecmarkup.ecmarkupStrings.node
-import typings.ecmarkup.ecmarkupStrings.raw
 import typings.ecmarkup.mod.Options
 import typings.std.Element
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object specMod {
   
-  @js.native
   trait Spec extends StObject {
     
-    def exportBiblio(): js.Any = js.native
+    def exportBiblio(): js.Any
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var opts: Options = js.native
+    var opts: Options
     
-    var rootDir: String = js.native
+    var rootDir: String
     
-    var rootPath: String = js.native
+    var rootPath: String
     
-    var spec: this.type = js.native
+    var spec: this.type
     
-    def toHTML(): String = js.native
+    def toHTML(): String
   }
   object Spec {
     
@@ -85,30 +78,30 @@ object specMod {
   object Warning {
     
     @scala.inline
-    def Attr(attr: String, message: String, node: Element, ruleId: String, `type`: attr): typings.ecmarkup.anon.Attr = {
+    def Attr(attr: String, message: String, node: Element, ruleId: String): typings.ecmarkup.anon.Attr = {
       val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("attr")
       __obj.asInstanceOf[typings.ecmarkup.anon.Attr]
     }
     
     @scala.inline
-    def Column(column: Double, line: Double, message: String, ruleId: String, `type`: raw): typings.ecmarkup.anon.Column = {
+    def Column(column: Double, line: Double, message: String, ruleId: String): typings.ecmarkup.anon.Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("raw")
       __obj.asInstanceOf[typings.ecmarkup.anon.Column]
     }
     
     @scala.inline
-    def Message(message: String, ruleId: String, `type`: global): typings.ecmarkup.anon.Message = {
+    def Message(message: String, ruleId: String): typings.ecmarkup.anon.Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("global")
       __obj.asInstanceOf[typings.ecmarkup.anon.Message]
     }
     
     @scala.inline
-    def Node(message: String, node: Text | Element, ruleId: String, `type`: node): typings.ecmarkup.anon.Node = {
+    def Node(message: String, node: Text | Element, ruleId: String): typings.ecmarkup.anon.Node = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("node")
       __obj.asInstanceOf[typings.ecmarkup.anon.Node]
     }
     
@@ -118,11 +111,10 @@ object specMod {
       node: Text | Element,
       nodeRelativeColumn: Double,
       nodeRelativeLine: Double,
-      ruleId: String,
-      `type`: contents
+      ruleId: String
     ): typings.ecmarkup.anon.NodeRelativeColumn = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nodeRelativeColumn = nodeRelativeColumn.asInstanceOf[js.Any], nodeRelativeLine = nodeRelativeLine.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("contents")
       __obj.asInstanceOf[typings.ecmarkup.anon.NodeRelativeColumn]
     }
   }

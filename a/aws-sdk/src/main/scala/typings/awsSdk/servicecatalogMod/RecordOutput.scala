@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordOutput extends StObject {
   
   /**
     * The description of the output.
     */
-  var Description: js.UndefOr[typings.awsSdk.servicecatalogMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.servicecatalogMod.Description] = js.undefined
   
   /**
     * The output key.
     */
-  var OutputKey: js.UndefOr[typings.awsSdk.servicecatalogMod.OutputKey] = js.native
+  var OutputKey: js.UndefOr[typings.awsSdk.servicecatalogMod.OutputKey] = js.undefined
   
   /**
     * The output value.
     */
-  var OutputValue: js.UndefOr[typings.awsSdk.servicecatalogMod.OutputValue] = js.native
+  var OutputValue: js.UndefOr[typings.awsSdk.servicecatalogMod.OutputValue] = js.undefined
 }
 object RecordOutput {
   

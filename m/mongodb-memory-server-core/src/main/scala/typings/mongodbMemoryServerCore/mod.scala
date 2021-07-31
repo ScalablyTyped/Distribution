@@ -9,7 +9,6 @@ import typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServerOpt
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,16 +28,18 @@ object mod {
   /* static members */
   object default {
     
+    @JSImport("mongodb-memory-server-core", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
-    @JSImport("mongodb-memory-server-core", "default.create")
-    @js.native
-    def create(): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
-    @JSImport("mongodb-memory-server-core", "default.create")
-    @js.native
-    def create(opts: MongoMemoryServerOptsT): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
+    @scala.inline
+    def create(): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer]]
+    @scala.inline
+    def create(opts: MongoMemoryServerOptsT): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer]]
   }
   
   @JSImport("mongodb-memory-server-core", "MongoBinary")
@@ -62,18 +63,16 @@ object mod {
       * Check if specified version already exists in the cache
       * @param version The Version to check for
       */
-    @JSImport("mongodb-memory-server-core", "MongoBinary.getCachePath")
-    @js.native
-    def getCachePath(version: String): String = js.native
+    @scala.inline
+    def getCachePath(version: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCachePath")(version.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Probe download path and download the binary
       * @param options Options Configuring which binary to download and to which path
       * @returns The BinaryPath the binary has been downloaded to
       */
-    @JSImport("mongodb-memory-server-core", "MongoBinary.getDownloadPath")
-    @js.native
-    def getDownloadPath(options: RequiredMongoBinaryOpts): js.Promise[String] = js.native
+    @scala.inline
+    def getDownloadPath(options: RequiredMongoBinaryOpts): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDownloadPath")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
     /**
       * Probe all supported paths for an binary and return the binary path
@@ -81,21 +80,18 @@ object mod {
       * @throws {Error} if no valid BinaryPath has been found
       * @return The first found BinaryPath
       */
-    @JSImport("mongodb-memory-server-core", "MongoBinary.getPath")
-    @js.native
-    def getPath(): js.Promise[String] = js.native
-    @JSImport("mongodb-memory-server-core", "MongoBinary.getPath")
-    @js.native
-    def getPath(opts: MongoBinaryOpts): js.Promise[String] = js.native
+    @scala.inline
+    def getPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")().asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def getPath(opts: MongoBinaryOpts): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
     /**
       * Probe if the provided "systemBinary" is an existing path
       * @param systemBinary The Path to probe for an System-Binary
       * @return System Binary path or empty string
       */
-    @JSImport("mongodb-memory-server-core", "MongoBinary.getSystemPath")
-    @js.native
-    def getSystemPath(systemBinary: String): js.Promise[String] = js.native
+    @scala.inline
+    def getSystemPath(systemBinary: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemPath")(systemBinary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   }
   
   @JSImport("mongodb-memory-server-core", "MongoInstance")
@@ -121,9 +117,8 @@ object mod {
       * Create an new instance an call method "run"
       * @param opts Options passed to the new instance
       */
-    @JSImport("mongodb-memory-server-core", "MongoInstance.run")
-    @js.native
-    def run(opts: MongodOps): js.Promise[typings.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance] = js.native
+    @scala.inline
+    def run(opts: MongodOps): js.Promise[typings.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance]]
   }
   
   @JSImport("mongodb-memory-server-core", "MongoMemoryReplSet")
@@ -148,15 +143,17 @@ object mod {
   /* static members */
   object MongoMemoryServer {
     
+    @JSImport("mongodb-memory-server-core", "MongoMemoryServer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
-    @JSImport("mongodb-memory-server-core", "MongoMemoryServer.create")
-    @js.native
-    def create(): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
-    @JSImport("mongodb-memory-server-core", "MongoMemoryServer.create")
-    @js.native
-    def create(opts: MongoMemoryServerOptsT): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
+    @scala.inline
+    def create(): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer]]
+    @scala.inline
+    def create(opts: MongoMemoryServerOptsT): js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer]]
   }
 }

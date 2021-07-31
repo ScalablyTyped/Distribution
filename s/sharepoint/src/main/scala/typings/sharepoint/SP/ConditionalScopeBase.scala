@@ -2,23 +2,21 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalScopeBase extends StObject {
   
-  def customFromJson(initValue: js.Any): Boolean = js.native
+  def customFromJson(initValue: js.Any): Boolean
   
-  def fromJson(initValue: js.Any): Unit = js.native
+  def fromJson(initValue: js.Any): Unit
   
-  def get_testResult(): Boolean = js.native
+  def get_testResult(): Boolean
   
-  def startIfFalse(): js.Any = js.native
+  def startIfFalse(): js.Any
   
-  def startIfTrue(): js.Any = js.native
+  def startIfTrue(): js.Any
   
-  def startScope(): js.Any = js.native
+  def startScope(): js.Any
 }
 object ConditionalScopeBase {
   

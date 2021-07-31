@@ -2,25 +2,23 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartArea extends StObject {
   
-  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.native
+  var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
   
-  var bottom: js.UndefOr[Double | String] = js.native
+  var bottom: js.UndefOr[Double | String] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var left: js.UndefOr[Double | String] = js.native
+  var left: js.UndefOr[Double | String] = js.undefined
   
-  var right: js.UndefOr[Double | String] = js.native
+  var right: js.UndefOr[Double | String] = js.undefined
   
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ChartArea {
   

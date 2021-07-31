@@ -2,16 +2,14 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
   // live updates with the latest values
-  var frame: Rect = js.native
+  var frame: Rect
   
-  var scroll: ScrollDetails = js.native
+  var scroll: ScrollDetails
 }
 object Viewport {
   

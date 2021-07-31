@@ -2,20 +2,18 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new comment.
   */
-@js.native
 trait INewComment extends StObject {
   
   /**
     * The text of the comment. The maximum length of a comment is 10,000
     * characters.
     */
-  var message: String = js.native
+  var message: String
 }
 object INewComment {
   

@@ -11,14 +11,16 @@ import typings.useMediaAntdQuery.useMediaAntdQueryStrings.xs
 import typings.useMediaAntdQuery.useMediaAntdQueryStrings.xxl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("use-media-antd-query", JSImport.Default)
+  @JSImport("use-media-antd-query", JSImport.Namespace)
   @js.native
-  def default(): xs | sm | md | lg | xl | xxl = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): xs | sm | md | lg | xl | xxl = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[xs | sm | md | lg | xl | xxl]
   
   object MediaQueryEnum {
     
@@ -63,9 +65,8 @@ object mod {
     def xxl_=(x: MinWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("xxl")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("use-media-antd-query", "getScreenClassName")
-  @js.native
-  def getScreenClassName(): xs | sm | md | lg | xl | xxl = js.native
+  @scala.inline
+  def getScreenClassName(): xs | sm | md | lg | xl | xxl = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenClassName")().asInstanceOf[xs | sm | md | lg | xl | xxl]
   
   /* keyof use-media-antd-query.anon.Lg */ /* Rewritten from type alias, can be one of: 
     - typings.useMediaAntdQuery.useMediaAntdQueryStrings.xs

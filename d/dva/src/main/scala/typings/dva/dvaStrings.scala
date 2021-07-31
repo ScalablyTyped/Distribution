@@ -3,7 +3,6 @@ package typings.dva
 import typings.dva.mod.EffectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dvaStrings {
@@ -49,17 +48,23 @@ object dvaStrings {
   def staticContext: staticContext = "staticContext".asInstanceOf[staticContext]
   
   @js.native
-  sealed trait takeEvery extends EffectType
+  sealed trait takeEvery
+    extends StObject
+       with EffectType
   @scala.inline
   def takeEvery: takeEvery = "takeEvery".asInstanceOf[takeEvery]
   
   @js.native
-  sealed trait takeLatest extends EffectType
+  sealed trait takeLatest
+    extends StObject
+       with EffectType
   @scala.inline
   def takeLatest: takeLatest = "takeLatest".asInstanceOf[takeLatest]
   
   @js.native
-  sealed trait throttle extends EffectType
+  sealed trait throttle
+    extends StObject
+       with EffectType
   @scala.inline
   def throttle: throttle = "throttle".asInstanceOf[throttle]
   
@@ -74,7 +79,9 @@ object dvaStrings {
   def useRouteMatch: useRouteMatch = "useRouteMatch".asInstanceOf[useRouteMatch]
   
   @js.native
-  sealed trait watcher extends EffectType
+  sealed trait watcher
+    extends StObject
+       with EffectType
   @scala.inline
   def watcher: watcher = "watcher".asInstanceOf[watcher]
 }

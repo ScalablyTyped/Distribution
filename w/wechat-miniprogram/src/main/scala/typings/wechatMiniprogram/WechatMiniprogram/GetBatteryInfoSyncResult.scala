@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBatteryInfoSyncResult extends StObject {
   
   /** 是否正在充电中 */
-  var isCharging: Boolean = js.native
+  var isCharging: Boolean
   
   /** 设备电量，范围 1 - 100 */
-  var level: String = js.native
+  var level: String
 }
 object GetBatteryInfoSyncResult {
   

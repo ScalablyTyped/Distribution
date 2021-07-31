@@ -2,15 +2,15 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StyleSetOpts extends SetOpts {
+trait StyleSetOpts
+  extends StObject
+     with SetOpts {
   
   /** Whether or not to apply the new styles immediately. Defaults to updating the Ractive-managed style tag (true) */
   @JSName("apply")
-  var apply: js.UndefOr[Boolean] = js.native
+  var apply: js.UndefOr[Boolean] = js.undefined
 }
 object StyleSetOpts {
   

@@ -3,27 +3,43 @@ package typings.bufferhelper
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bufferhelper", JSImport.Namespace)
   @js.native
-  class ^ () extends BufferHelper
+  class ^ ()
+    extends StObject
+       with BufferHelper {
+    
+    /* CompleteClass */
+    override def concat(buffer: js.Any): BufferHelper = js.native
+    
+    /* CompleteClass */
+    override def empty(): BufferHelper = js.native
+    
+    /* CompleteClass */
+    override def load(stream: js.Any, callback: js.Function1[/* arg */ js.Any, js.Any]): Unit = js.native
+    
+    /* CompleteClass */
+    override def toBuffer(): Buffer = js.native
+    
+    /* CompleteClass */
+    override def toString(encoding: encoding): String = js.native
+  }
   
-  @js.native
   trait BufferHelper extends StObject {
     
-    def concat(buffer: js.Any): BufferHelper = js.native
+    def concat(buffer: js.Any): BufferHelper
     
-    def empty(): BufferHelper = js.native
+    def empty(): BufferHelper
     
-    def load(stream: js.Any, callback: js.Function1[/* arg */ js.Any, _]): Unit = js.native
+    def load(stream: js.Any, callback: js.Function1[/* arg */ js.Any, js.Any]): Unit
     
-    def toBuffer(): Buffer = js.native
+    def toBuffer(): Buffer
     
-    def toString(encoding: encoding): String = js.native
+    def toString(encoding: encoding): String
   }
   object BufferHelper {
     
@@ -31,7 +47,7 @@ object mod {
     def apply(
       concat: js.Any => BufferHelper,
       empty: () => BufferHelper,
-      load: (js.Any, js.Function1[/* arg */ js.Any, _]) => Unit,
+      load: (js.Any, js.Function1[/* arg */ js.Any, js.Any]) => Unit,
       toBuffer: () => Buffer,
       toString_ : encoding => String
     ): BufferHelper = {
@@ -50,7 +66,7 @@ object mod {
       def setEmpty(value: () => BufferHelper): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setLoad(value: (js.Any, js.Function1[/* arg */ js.Any, _]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      def setLoad(value: (js.Any, js.Function1[/* arg */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
       @scala.inline
       def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))

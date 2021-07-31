@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     *  An ARN of a CloudFront resource.
     */
-  var Resource: ResourceARN = js.native
+  var Resource: ResourceARN
   
   /**
     *  A complex type that contains zero or more Tag key elements.
     */
-  var TagKeys: typings.awsSdk.cloudfrontMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.cloudfrontMod.TagKeys
 }
 object UntagResourceRequest {
   

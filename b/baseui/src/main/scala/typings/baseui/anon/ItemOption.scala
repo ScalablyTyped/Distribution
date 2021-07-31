@@ -2,13 +2,11 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemOption extends StObject {
   
-  var item: typings.baseui.selectMod.Option = js.native
+  var item: typings.baseui.selectMod.Option
 }
 object ItemOption {
   

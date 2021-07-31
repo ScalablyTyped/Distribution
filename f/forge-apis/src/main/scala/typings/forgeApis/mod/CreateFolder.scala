@@ -2,15 +2,13 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFolder extends StObject {
   
-  var data: js.UndefOr[CreateFolderData] = js.native
+  var data: js.UndefOr[CreateFolderData] = js.undefined
   
-  var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.native
+  var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.undefined
 }
 object CreateFolder {
   

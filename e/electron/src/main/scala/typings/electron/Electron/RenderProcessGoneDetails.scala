@@ -9,16 +9,14 @@ import typings.electron.electronStrings.killed
 import typings.electron.electronStrings.oom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderProcessGoneDetails extends StObject {
   
   /**
     * The reason the render process is gone.  Possible values:
     */
-  var reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure` = js.native
+  var reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
 }
 object RenderProcessGoneDetails {
   

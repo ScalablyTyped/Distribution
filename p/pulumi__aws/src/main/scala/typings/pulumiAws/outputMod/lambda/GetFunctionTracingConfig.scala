@@ -2,13 +2,11 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionTracingConfig extends StObject {
   
-  var mode: String = js.native
+  var mode: String
 }
 object GetFunctionTracingConfig {
   

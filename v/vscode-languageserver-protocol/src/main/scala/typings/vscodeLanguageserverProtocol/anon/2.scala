@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait `2` extends StObject {
     * handle values outside its set gracefully and falls back
     * to a default value when unknown.
     */
-  var valueSet: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind] = js.native
+  var valueSet: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]
 }
 object `2` {
   

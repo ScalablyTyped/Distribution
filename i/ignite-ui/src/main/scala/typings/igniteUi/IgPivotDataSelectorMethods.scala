@@ -2,27 +2,25 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotDataSelectorMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.igpivotdataselector#options:language)
     * Note that this method is for rare scenarios, see [language](ui.igpivotdataselector#options:language) or [locale](ui.igpivotdataselector#options:locale) option setter
     */
-  def changeLocale(): Unit = js.native
+  def changeLocale(): Unit
   
   /**
     * Destroy is part of the jQuery UI widget API and does the following:
@@ -30,12 +28,12 @@ trait IgPivotDataSelectorMethods extends StObject {
     * 2. Unwrap any wrapping elements such as scrolling divs and other containers.
     * 3. Unbind all events that were bound.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Updates the data source.
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object IgPivotDataSelectorMethods {
   

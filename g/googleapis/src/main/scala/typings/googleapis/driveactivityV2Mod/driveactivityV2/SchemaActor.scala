@@ -2,39 +2,37 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The actor of a Drive activity.
   */
-@js.native
 trait SchemaActor extends StObject {
   
   /**
     * An administrator.
     */
-  var administrator: js.UndefOr[SchemaAdministrator] = js.native
+  var administrator: js.UndefOr[SchemaAdministrator] = js.undefined
   
   /**
     * An anonymous user.
     */
-  var anonymous: js.UndefOr[SchemaAnonymousUser] = js.native
+  var anonymous: js.UndefOr[SchemaAnonymousUser] = js.undefined
   
   /**
     * An account acting on behalf of another.
     */
-  var impersonation: js.UndefOr[SchemaImpersonation] = js.native
+  var impersonation: js.UndefOr[SchemaImpersonation] = js.undefined
   
   /**
     * A non-user actor (i.e. system triggered).
     */
-  var system: js.UndefOr[SchemaSystemEvent] = js.native
+  var system: js.UndefOr[SchemaSystemEvent] = js.undefined
   
   /**
     * An end user.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
 }
 object SchemaActor {
   

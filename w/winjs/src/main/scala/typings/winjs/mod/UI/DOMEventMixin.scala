@@ -2,7 +2,6 @@ package typings.winjs.mod.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,21 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 object DOMEventMixin {
   
-  @JSImport("winjs", "UI.DOMEventMixin.addEventListener")
+  @JSImport("winjs", "UI.DOMEventMixin")
   @js.native
-  def addEventListener(`type`: String, listener: js.Function): Unit = js.native
-  @JSImport("winjs", "UI.DOMEventMixin.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("winjs", "UI.DOMEventMixin.dispatchEvent")
-  @js.native
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  @scala.inline
+  def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("winjs", "UI.DOMEventMixin.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: js.Function): Unit = js.native
-  @JSImport("winjs", "UI.DOMEventMixin.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
+  @scala.inline
+  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

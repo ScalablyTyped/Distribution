@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactSketchapp.propsMod.NumberProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
@@ -17,22 +16,21 @@ object imageMod {
   
   type Image = Component[ImageProps, js.Object, js.Any]
   
-  @js.native
   trait ImageProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var height: NumberProp = js.native
+    var height: NumberProp
     
-    var href: String = js.native
+    var href: String
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var width: NumberProp = js.native
+    var width: NumberProp
     
-    var x: js.UndefOr[NumberProp] = js.native
+    var x: js.UndefOr[NumberProp] = js.undefined
     
-    var y: js.UndefOr[NumberProp] = js.native
+    var y: js.UndefOr[NumberProp] = js.undefined
   }
   object ImageProps {
     

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an error that occurred with a timed metadata track. */
-@js.native
 trait TimedMetadataTrackError extends StObject {
   
   /** Gets the error code associated with the timed metadata track error. */
-  var errorCode: TimedMetadataTrackErrorCode = js.native
+  var errorCode: TimedMetadataTrackErrorCode
   
   /** Gets the extended error code for the TimedMetadataTrackError . */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
 }
 object TimedMetadataTrackError {
   

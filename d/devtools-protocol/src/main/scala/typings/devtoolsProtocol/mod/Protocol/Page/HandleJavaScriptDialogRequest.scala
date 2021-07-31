@@ -2,22 +2,20 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleJavaScriptDialogRequest extends StObject {
   
   /**
     * Whether to accept or dismiss the dialog.
     */
-  var accept: Boolean = js.native
+  var accept: Boolean
   
   /**
     * The text to enter into the dialog prompt before accepting. Used only if this is a prompt
     * dialog.
     */
-  var promptText: js.UndefOr[String] = js.native
+  var promptText: js.UndefOr[String] = js.undefined
 }
 object HandleJavaScriptDialogRequest {
   

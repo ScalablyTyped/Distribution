@@ -4,23 +4,21 @@ import typings.cesium.mod.Resource
 import typings.cesium.mod.TileDiscardPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
-  var channel: Double = js.native
+  var channel: Double
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var maximumLevel: js.UndefOr[Double] = js.native
+  var maximumLevel: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.native
+  var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
   
-  var url: Resource | String = js.native
+  var url: Resource | String
 }
 object Channel {
   

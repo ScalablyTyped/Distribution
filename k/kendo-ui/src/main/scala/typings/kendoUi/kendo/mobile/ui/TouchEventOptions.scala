@@ -3,17 +3,15 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchEventOptions extends StObject {
   
-  var target: js.UndefOr[JQuery] = js.native
+  var target: js.UndefOr[JQuery] = js.undefined
   
-  var x: js.UndefOr[TouchAxis] = js.native
+  var x: js.UndefOr[TouchAxis] = js.undefined
   
-  var y: js.UndefOr[TouchAxis] = js.native
+  var y: js.UndefOr[TouchAxis] = js.undefined
 }
 object TouchEventOptions {
   

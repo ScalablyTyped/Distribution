@@ -2,76 +2,74 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxySession extends StObject {
   
   /**
     * The proxy session capabilities.
     */
-  var Capabilities: js.UndefOr[CapabilityList] = js.native
+  var Capabilities: js.UndefOr[CapabilityList] = js.undefined
   
   /**
     * The created timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The ended timestamp, in ISO 8601 format.
     */
-  var EndedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var EndedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The number of minutes allowed for the proxy session.
     */
-  var ExpiryMinutes: js.UndefOr[PositiveInteger] = js.native
+  var ExpiryMinutes: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
     * The preference for matching the country or area code of the proxy phone number with that of the first participant.
     */
-  var GeoMatchLevel: js.UndefOr[typings.awsSdk.chimeMod.GeoMatchLevel] = js.native
+  var GeoMatchLevel: js.UndefOr[typings.awsSdk.chimeMod.GeoMatchLevel] = js.undefined
   
   /**
     * The country and area code for the proxy phone number.
     */
-  var GeoMatchParams: js.UndefOr[typings.awsSdk.chimeMod.GeoMatchParams] = js.native
+  var GeoMatchParams: js.UndefOr[typings.awsSdk.chimeMod.GeoMatchParams] = js.undefined
   
   /**
     * The name of the proxy session.
     */
-  var Name: js.UndefOr[String128] = js.native
+  var Name: js.UndefOr[String128] = js.undefined
   
   /**
     * The preference for proxy phone number reuse, or stickiness, between the same participants across sessions.
     */
-  var NumberSelectionBehavior: js.UndefOr[typings.awsSdk.chimeMod.NumberSelectionBehavior] = js.native
+  var NumberSelectionBehavior: js.UndefOr[typings.awsSdk.chimeMod.NumberSelectionBehavior] = js.undefined
   
   /**
     * The proxy session participants.
     */
-  var Participants: js.UndefOr[typings.awsSdk.chimeMod.Participants] = js.native
+  var Participants: js.UndefOr[typings.awsSdk.chimeMod.Participants] = js.undefined
   
   /**
     * The proxy session ID.
     */
-  var ProxySessionId: js.UndefOr[NonEmptyString128] = js.native
+  var ProxySessionId: js.UndefOr[NonEmptyString128] = js.undefined
   
   /**
     * The status of the proxy session.
     */
-  var Status: js.UndefOr[ProxySessionStatus] = js.native
+  var Status: js.UndefOr[ProxySessionStatus] = js.undefined
   
   /**
     * The updated timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The Amazon Chime voice connector ID.
     */
-  var VoiceConnectorId: js.UndefOr[NonEmptyString128] = js.native
+  var VoiceConnectorId: js.UndefOr[NonEmptyString128] = js.undefined
 }
 object ProxySession {
   

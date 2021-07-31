@@ -2,44 +2,44 @@ package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait Color extends Base {
+trait Color
+  extends StObject
+     with Base {
   
-  var alpha: Double = js.native
+  var alpha: Double
   
-  var blue: Double = js.native
+  var blue: Double
   
-  var brightness: Double = js.native
+  var brightness: Double
   
-  def getRGB(): js.Array[Double] = js.native
+  def getRGB(): js.Array[Double]
   
-  def getRGBA(): js.Array[Double] = js.native
+  def getRGBA(): js.Array[Double]
   
-  var green: Double = js.native
+  var green: Double
   
-  var hexString: String = js.native
+  var hexString: String
   
-  var hue: Double = js.native
-  
-  // readonly
-  var red: Double = js.native
-  
-  var rgbString: String = js.native
+  var hue: Double
   
   // readonly
-  var rgbaString: String = js.native
+  var red: Double
   
-  var saturation: Double = js.native
+  var rgbString: String
   
-  def setHSB(hue: Double, saturation: Double, brightness: Double): Unit = js.native
+  // readonly
+  var rgbaString: String
   
-  def setRGB(red: Double, green: Double, blue: Double): Unit = js.native
+  var saturation: Double
   
-  def setRGBA(red: Double, green: Double, blue: Double, alpha: Double): Unit = js.native
+  def setHSB(hue: Double, saturation: Double, brightness: Double): Unit
+  
+  def setRGB(red: Double, green: Double, blue: Double): Unit
+  
+  def setRGBA(red: Double, green: Double, blue: Double, alpha: Double): Unit
 }
 object Color {
   

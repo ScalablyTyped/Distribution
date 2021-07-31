@@ -10,9 +10,9 @@ Provides a way to store the contents of a stream into a Uint8Array
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/stream-collector-node |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 402 |
-| # downloads        | 812108 |
+| # releases         | 19 |
+| # dependents       | 1 |
+| # downloads        | 1193919 |
 | # stars            | 0 |
 
 ## Links

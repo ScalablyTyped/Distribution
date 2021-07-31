@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDefaultBranchInput extends StObject {
   
   /**
     * The name of the branch to set as the default.
     */
-  var defaultBranchName: BranchName = js.native
+  var defaultBranchName: BranchName
   
   /**
     * The name of the repository to set or change the default branch for.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object UpdateDefaultBranchInput {
   

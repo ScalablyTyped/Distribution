@@ -10,7 +10,6 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -110,34 +109,33 @@ object mod {
   
   object mime {
     
-    @JSImport("node-static", "mime.define")
+    @JSImport("node-static", "mime")
     @js.native
-    def define(mimes: TypeMap): Unit = js.native
-    @JSImport("node-static", "mime.define")
-    @js.native
-    def define(mimes: TypeMap, force: Boolean): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("node-static", "mime.getExtension")
-    @js.native
-    def getExtension(mime: String): String | Null = js.native
+    @scala.inline
+    def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("node-static", "mime.getType")
-    @js.native
-    def getType(path: String): String | Null = js.native
+    @scala.inline
+    def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    
+    @scala.inline
+    def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @JSImport("node-static", "version")
   @js.native
   val version: js.Tuple3[Double, Double, Double] = js.native
   
-  @js.native
   trait ByteRange extends StObject {
     
-    var from: Double = js.native
+    var from: Double
     
-    var to: Double = js.native
+    var to: Double
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object ByteRange {
     
@@ -167,20 +165,19 @@ object mod {
   
   type Headers = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var cache: js.UndefOr[Double | Boolean] = js.native
+    var cache: js.UndefOr[Double | Boolean] = js.undefined
     
-    var `cache-control`: js.UndefOr[String] = js.native
+    var `cache-control`: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var indexFile: js.UndefOr[String] = js.native
+    var indexFile: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[String] = js.native
+    var server: js.UndefOr[String] = js.undefined
     
-    var serverInfo: js.UndefOr[Buffer] = js.native
+    var serverInfo: js.UndefOr[Buffer] = js.undefined
   }
   object Options {
     

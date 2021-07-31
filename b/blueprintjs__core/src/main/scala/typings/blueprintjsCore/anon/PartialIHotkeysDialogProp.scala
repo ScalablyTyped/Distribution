@@ -11,62 +11,60 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/hotkeys/hotkeysDialog.IHotkeysDialogProps> */
-@js.native
 trait PartialIHotkeysDialogProp extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var backdropClassName: js.UndefOr[String] = js.native
+  var backdropClassName: js.UndefOr[String] = js.undefined
   
-  var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+  var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
   
-  var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+  var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
   
-  var canOutsideClickClose: js.UndefOr[Boolean] = js.native
+  var canOutsideClickClose: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var enforceFocus: js.UndefOr[Boolean] = js.native
+  var enforceFocus: js.UndefOr[Boolean] = js.undefined
   
-  var globalHotkeysGroup: js.UndefOr[String] = js.native
+  var globalHotkeysGroup: js.UndefOr[String] = js.undefined
   
-  var hasBackdrop: js.UndefOr[Boolean] = js.native
+  var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[IconName | MaybeElement] = js.native
+  var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
   
-  var isCloseButtonShown: js.UndefOr[Boolean] = js.native
+  var isCloseButtonShown: js.UndefOr[Boolean] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var `lazy`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   
-  var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var portalClassName: js.UndefOr[String] = js.native
+  var portalClassName: js.UndefOr[String] = js.undefined
   
-  var portalContainer: js.UndefOr[HTMLElement] = js.native
+  var portalContainer: js.UndefOr[HTMLElement] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
   
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
-  var transitionName: js.UndefOr[String] = js.native
+  var transitionName: js.UndefOr[String] = js.undefined
   
-  var usePortal: js.UndefOr[Boolean] = js.native
+  var usePortal: js.UndefOr[Boolean] = js.undefined
 }
 object PartialIHotkeysDialogProp {
   

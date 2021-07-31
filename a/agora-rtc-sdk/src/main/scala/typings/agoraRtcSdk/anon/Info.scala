@@ -4,17 +4,15 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.error
 import typings.agoraRtcSdk.agoraRtcSdkStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Info extends StObject {
   
-  var info: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.undefined
   
-  var msg: String = js.native
+  var msg: String
   
-  var `type`: warning | error = js.native
+  var `type`: warning | error
 }
 object Info {
   

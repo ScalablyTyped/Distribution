@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DependencyRevision extends StObject {
   
   /**
     * The ID of the workflow or system.
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
   
   /**
     * The revision number of the workflow or system.
     */
-  var revisionNumber: js.UndefOr[Version] = js.native
+  var revisionNumber: js.UndefOr[Version] = js.undefined
 }
 object DependencyRevision {
   

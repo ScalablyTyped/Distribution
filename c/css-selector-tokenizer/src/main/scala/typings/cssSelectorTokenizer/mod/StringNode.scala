@@ -3,26 +3,25 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringNode
-  extends ValueNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with ValueNodeType {
   
-  var stringType: String = js.native
+  var stringType: String
   
-  var `type`: string = js.native
+  var `type`: string
   
-  var value: String = js.native
+  var value: String
 }
 object StringNode {
   
   @scala.inline
-  def apply(stringType: String, `type`: string, value: String): StringNode = {
+  def apply(stringType: String, value: String): StringNode = {
     val __obj = js.Dynamic.literal(stringType = stringType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringNode]
   }
   

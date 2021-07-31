@@ -4,29 +4,28 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface representing the token(s) and associated data.
   */
-@js.native
 trait Token
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var accessTokenExpiresAt: js.UndefOr[Date] = js.native
+  var accessTokenExpiresAt: js.UndefOr[Date] = js.undefined
   
-  var client: Client = js.native
+  var client: Client
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var refreshTokenExpiresAt: js.UndefOr[Date] = js.native
+  var refreshTokenExpiresAt: js.UndefOr[Date] = js.undefined
   
-  var scope: js.UndefOr[String | js.Array[String]] = js.native
+  var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var user: User = js.native
+  var user: User
 }
 object Token {
   

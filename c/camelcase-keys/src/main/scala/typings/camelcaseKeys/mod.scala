@@ -4,38 +4,38 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("camelcase-keys", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: StringDictionary[js.Any] */](input: T): T = js.native
-  @JSImport("camelcase-keys", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: StringDictionary[js.Any] */](input: T, options: Options): T = js.native
+  @scala.inline
+  def apply[T /* <: StringDictionary[js.Any] */](input: T): T = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def apply[T /* <: StringDictionary[js.Any] */](input: T, options: Options): T = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  @JSImport("camelcase-keys", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Recurse nested objects and objects in arrays.
     		@default false
     		*/
-    val deep: js.UndefOr[Boolean] = js.native
+    val deep: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Exclude keys from being camel-cased.
     		@default []
     		*/
-    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.native
+    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
     		Uppercase the first character as in `bye-bye` → `ByeBye`.
     		@default false
     		*/
-    val pascalCase: js.UndefOr[Boolean] = js.native
+    val pascalCase: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Exclude children at the given object paths in dot-notation from being camel-cased. For example, with an object like `{a: {b: '🦄'}}`, the object path to reach the unicorn is `'a.b'`.
@@ -67,7 +67,7 @@ object mod {
     		// }
     		```
     		*/
-    val stopPaths: js.UndefOr[js.Array[String]] = js.native
+    val stopPaths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

@@ -4,14 +4,15 @@ import typings.ionicCliFramework.definitionsMod.ValidationError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
   @JSImport("@ionic/cli-framework/errors", "BaseError")
   @js.native
-  abstract class BaseError protected () extends Error {
+  abstract class BaseError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     
     var code: js.UndefOr[String] = js.native
@@ -21,6 +22,12 @@ object errorsMod {
     var exitCode: js.UndefOr[Double] = js.native
     
     def inspect(): String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     @JSName("stack")
     var stack_BaseError: String = js.native

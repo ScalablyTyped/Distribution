@@ -3,13 +3,11 @@ package typings.azdata.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionInfo extends StObject {
   
-  var options: StringDictionary[js.Any] = js.native
+  var options: StringDictionary[js.Any]
 }
 object ConnectionInfo {
   

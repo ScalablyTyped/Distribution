@@ -2,77 +2,75 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for address.
   */
-@js.native
 trait SchemaUserAddress extends StObject {
   
   /**
     * Country.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * Country code.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * Custom type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * Extended Address.
     */
-  var extendedAddress: js.UndefOr[String] = js.native
+  var extendedAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Formatted address.
     */
-  var formatted: js.UndefOr[String] = js.native
+  var formatted: js.UndefOr[String] = js.undefined
   
   /**
     * Locality.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * Other parts of address.
     */
-  var poBox: js.UndefOr[String] = js.native
+  var poBox: js.UndefOr[String] = js.undefined
   
   /**
     * Postal code.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * If this is user&#39;s primary address. Only one entry could be marked as
     * primary.
     */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Region.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * User supplied address was structured. Structured addresses are NOT
     * supported at this time. You might be able to write structured addresses,
     * but any values will eventually be clobbered.
     */
-  var sourceIsStructured: js.UndefOr[Boolean] = js.native
+  var sourceIsStructured: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Street.
     */
-  var streetAddress: js.UndefOr[String] = js.native
+  var streetAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Each entry can have a type which indicates standard values of that entry.
@@ -81,7 +79,7 @@ trait SchemaUserAddress extends StObject {
     * Such type should have the CUSTOM value as type and also have a customType
     * value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserAddress {
   

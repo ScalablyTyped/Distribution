@@ -2,42 +2,40 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chat extends StObject {
   
   /**
     * @deprecated since version Telegram Bot API 4.4 - July 29, 2019
     */
-  var all_members_are_administrators: js.UndefOr[Boolean] = js.native
+  var all_members_are_administrators: js.UndefOr[Boolean] = js.undefined
   
-  var can_set_sticker_set: js.UndefOr[Boolean] = js.native
+  var can_set_sticker_set: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
-  var id: Double = js.native
+  var id: Double
   
-  var invite_link: js.UndefOr[String] = js.native
+  var invite_link: js.UndefOr[String] = js.undefined
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var permissions: js.UndefOr[ChatPermissions] = js.native
+  var permissions: js.UndefOr[ChatPermissions] = js.undefined
   
-  var photo: js.UndefOr[ChatPhoto] = js.native
+  var photo: js.UndefOr[ChatPhoto] = js.undefined
   
-  var pinned_message: js.UndefOr[Message] = js.native
+  var pinned_message: js.UndefOr[Message] = js.undefined
   
-  var sticker_set_name: js.UndefOr[String] = js.native
+  var sticker_set_name: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: ChatType = js.native
+  var `type`: ChatType
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object Chat {
   

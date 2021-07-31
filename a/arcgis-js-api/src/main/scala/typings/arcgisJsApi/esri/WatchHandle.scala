@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatchHandle extends Object {
+trait WatchHandle
+  extends StObject
+     with Object {
   
   /**
     * Removes the watch handle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html#WatchHandle)
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object WatchHandle {
   

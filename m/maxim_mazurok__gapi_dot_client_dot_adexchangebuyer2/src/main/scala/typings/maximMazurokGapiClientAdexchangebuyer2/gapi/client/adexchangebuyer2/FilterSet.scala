@@ -2,75 +2,73 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterSet extends StObject {
   
   /** An absolute date range, defined by a start date and an end date. Interpreted relative to Pacific time zone. */
-  var absoluteDateRange: js.UndefOr[AbsoluteDateRange] = js.native
+  var absoluteDateRange: js.UndefOr[AbsoluteDateRange] = js.undefined
   
   /**
     * The set of dimensions along which to break down the response; may be empty. If multiple dimensions are requested, the breakdown is along the Cartesian product of the requested
     * dimensions.
     */
-  var breakdownDimensions: js.UndefOr[js.Array[String]] = js.native
+  var breakdownDimensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The ID of the creative on which to filter; optional. This field may be set only for a filter set that accesses account-level troubleshooting data, i.e., one whose name matches the
     * `bidders/∗/accounts/∗/filterSets/ *` pattern.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the deal on which to filter; optional. This field may be set only for a filter set that accesses account-level troubleshooting data, i.e., one whose name matches the
     * `bidders/∗/accounts/∗/filterSets/ *` pattern.
     */
-  var dealId: js.UndefOr[String] = js.native
+  var dealId: js.UndefOr[String] = js.undefined
   
   /** The environment on which to filter; optional. */
-  var environment: js.UndefOr[String] = js.native
+  var environment: js.UndefOr[String] = js.undefined
   
   /** Creative format bidded on or allowed to bid on, can be empty. */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Creative formats bidded on or allowed to bid on, can be empty. Although this field is a list, it can only be populated with a single item. A HTTP 400 bad request error will be
     * returned in the response if you specify multiple items.
     */
-  var formats: js.UndefOr[js.Array[String]] = js.native
+  var formats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A user-defined name of the filter set. Filter set names must be unique globally and match one of the patterns: - `bidders/∗/filterSets/ *` (for accessing bidder-level troubleshooting
     * data) - `bidders/∗/accounts/∗/filterSets/ *` (for accessing account-level troubleshooting data) This field is required in create operations.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of platforms on which to filter; may be empty. The filters represented by multiple platforms are ORed together (i.e., if non-empty, results must match any one of the
     * platforms).
     */
-  var platforms: js.UndefOr[js.Array[String]] = js.native
+  var platforms: js.UndefOr[js.Array[String]] = js.undefined
   
   /** For Open Bidding partners only. The list of publisher identifiers on which to filter; may be empty. The filters represented by multiple publisher identifiers are ORed together. */
-  var publisherIdentifiers: js.UndefOr[js.Array[String]] = js.native
+  var publisherIdentifiers: js.UndefOr[js.Array[String]] = js.undefined
   
   /** An open-ended realtime time range, defined by the aggregation start timestamp. */
-  var realtimeTimeRange: js.UndefOr[RealtimeTimeRange] = js.native
+  var realtimeTimeRange: js.UndefOr[RealtimeTimeRange] = js.undefined
   
   /** A relative date range, defined by an offset from today and a duration. Interpreted relative to Pacific time zone. */
-  var relativeDateRange: js.UndefOr[RelativeDateRange] = js.native
+  var relativeDateRange: js.UndefOr[RelativeDateRange] = js.undefined
   
   /**
     * For Authorized Buyers only. The list of IDs of the seller (publisher) networks on which to filter; may be empty. The filters represented by multiple seller network IDs are ORed
     * together (i.e., if non-empty, results must match any one of the publisher networks). See
     * [seller-network-ids](https://developers.google.com/authorized-buyers/rtb/downloads/seller-network-ids) file for the set of existing seller network IDs.
     */
-  var sellerNetworkIds: js.UndefOr[js.Array[Double]] = js.native
+  var sellerNetworkIds: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** The granularity of time intervals if a time series breakdown is desired; optional. */
-  var timeSeriesGranularity: js.UndefOr[String] = js.native
+  var timeSeriesGranularity: js.UndefOr[String] = js.undefined
 }
 object FilterSet {
   

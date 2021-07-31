@@ -7,31 +7,30 @@ import typings.reactMdTable.configMod.TableRowConfiguration
 import typings.std.HTMLTableRowElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableRowMod {
   
   @JSImport("@react-md/table/types/TableRow", "TableRow")
   @js.native
-  val TableRow: ForwardRefExoticComponent[TableRowProps with RefAttributes[HTMLTableRowElement]] = js.native
+  val TableRow: ForwardRefExoticComponent[TableRowProps & RefAttributes[HTMLTableRowElement]] = js.native
   
-  @js.native
   trait TableRowProps
-    extends HTMLAttributes[HTMLTableRowElement]
+    extends StObject
+       with HTMLAttributes[HTMLTableRowElement]
        with TableRowConfiguration {
     
     /**
       * Boolean if the row should be clickable and update the cursor while hovered
       * to be a pointer.
       */
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the current row has been selected and should apply the selected
       * background-color.
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
   }
   object TableRowProps {
     

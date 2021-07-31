@@ -2,17 +2,15 @@ package typings.winrt.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKeyStorageProviderNamesStatics extends StObject {
   
-  var platformKeyStorageProvider: String = js.native
+  var platformKeyStorageProvider: String
   
-  var smartcardKeyStorageProvider: String = js.native
+  var smartcardKeyStorageProvider: String
   
-  var softwareKeyStorageProvider: String = js.native
+  var softwareKeyStorageProvider: String
 }
 object IKeyStorageProviderNamesStatics {
   

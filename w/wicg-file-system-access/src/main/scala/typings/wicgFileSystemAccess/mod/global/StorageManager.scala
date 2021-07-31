@@ -2,13 +2,11 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageManager extends StObject {
   
-  def getDirectory(): js.Promise[FileSystemDirectoryHandle] = js.native
+  def getDirectory(): js.Promise[FileSystemDirectoryHandle]
 }
 object StorageManager {
   

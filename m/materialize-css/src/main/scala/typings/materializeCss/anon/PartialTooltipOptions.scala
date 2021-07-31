@@ -6,28 +6,26 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.materializeCss.materializeCssStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.TooltipOptions> */
-@js.native
 trait PartialTooltipOptions extends StObject {
   
-  var enterDelay: js.UndefOr[Double] = js.native
+  var enterDelay: js.UndefOr[Double] = js.undefined
   
-  var exitDelay: js.UndefOr[Double] = js.native
+  var exitDelay: js.UndefOr[Double] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var inDuration: js.UndefOr[Double] = js.native
+  var inDuration: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var outDuration: js.UndefOr[Double] = js.native
+  var outDuration: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[top | right | bottom | left] = js.native
+  var position: js.UndefOr[top | right | bottom | left] = js.undefined
   
-  var transitionMovement: js.UndefOr[Double] = js.native
+  var transitionMovement: js.UndefOr[Double] = js.undefined
 }
 object PartialTooltipOptions {
   

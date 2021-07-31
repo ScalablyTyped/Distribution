@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The transformation to apply to the field.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2FieldTransformation extends StObject {
   
   /**
@@ -19,23 +17,23 @@ trait SchemaGooglePrivacyDlpV2FieldTransformation extends StObject {
     * zip code column for the same record is within a specific range. - Redact
     * a field if the date of birth field is greater than 85.
     */
-  var condition: js.UndefOr[SchemaGooglePrivacyDlpV2RecordCondition] = js.native
+  var condition: js.UndefOr[SchemaGooglePrivacyDlpV2RecordCondition] = js.undefined
   
   /**
     * Input field(s) to apply the transformation to. [required]
     */
-  var fields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
   /**
     * Treat the contents of the field as free text, and selectively transform
     * content that matches an `InfoType`.
     */
-  var infoTypeTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2InfoTypeTransformations] = js.native
+  var infoTypeTransformations: js.UndefOr[SchemaGooglePrivacyDlpV2InfoTypeTransformations] = js.undefined
   
   /**
     * Apply the transformation to the entire field.
     */
-  var primitiveTransformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.native
+  var primitiveTransformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2FieldTransformation {
   

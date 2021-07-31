@@ -3,34 +3,35 @@ package typings.featherRouteMatcher
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("feather-route-matcher", JSImport.Default)
+  @JSImport("feather-route-matcher", JSImport.Namespace)
   @js.native
-  def default[T](config: RouteConfig[T]): Matcher[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](config: RouteConfig[T]): Matcher[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Matcher[T]]
+  
   trait Match[T] extends StObject {
     
-    var page: T = js.native
+    var page: T
     
-    var params: StringDictionary[String] | Null = js.native
+    var params: StringDictionary[String] | Null
     
-    var url: String = js.native
+    var url: String
   }
   object Match {
     
     @scala.inline
     def apply[T](page: T, url: String): Match[T] = {
-      val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], params = null)
       __obj.asInstanceOf[Match[T]]
     }
     
     @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match[_], T] (val x: Self with Match[T]) extends AnyVal {
+    implicit class MatchMutableBuilder[Self <: Match[?], T] (val x: Self & Match[T]) extends AnyVal {
       
       @scala.inline
       def setPage(value: T): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

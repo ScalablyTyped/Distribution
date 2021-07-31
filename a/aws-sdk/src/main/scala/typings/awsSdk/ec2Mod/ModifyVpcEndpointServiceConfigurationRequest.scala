@@ -2,56 +2,54 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpcEndpointServiceConfigurationRequest extends StObject {
   
   /**
     * Indicates whether requests to create an endpoint to your service must be accepted.
     */
-  var AcceptanceRequired: js.UndefOr[Boolean] = js.native
+  var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of Gateway Load Balancers to add to your service configuration.
     */
-  var AddGatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var AddGatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of Network Load Balancers to add to your service configuration.
     */
-  var AddNetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var AddNetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Interface endpoint configuration) The private DNS name to assign to the endpoint service.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of Gateway Load Balancers to remove from your service configuration.
     */
-  var RemoveGatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var RemoveGatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of Network Load Balancers to remove from your service configuration.
     */
-  var RemoveNetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.native
+  var RemoveNetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * (Interface endpoint configuration) Removes the private DNS name of the endpoint service.
     */
-  var RemovePrivateDnsName: js.UndefOr[Boolean] = js.native
+  var RemovePrivateDnsName: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the service.
     */
-  var ServiceId: VpcEndpointServiceId = js.native
+  var ServiceId: VpcEndpointServiceId
 }
 object ModifyVpcEndpointServiceConfigurationRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTargetGroupOutput extends StObject {
   
   /**
     * Information about the target group.
     */
-  var TargetGroups: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroups] = js.native
+  var TargetGroups: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroups] = js.undefined
 }
 object CreateTargetGroupOutput {
   

@@ -10,9 +10,9 @@ Run webpack as a stream
 | ------------------ | :-------------: |
 | Full name          | webpack-stream |
 | Keywords           | gulpplugin, webpack, stream |
-| # releases         | 6 |
-| # dependents       | 322 |
-| # downloads        | 5933266 |
+| # releases         | 3 |
+| # dependents       | 327 |
+| # downloads        | 6081248 |
 | # stars            | 33 |
 
 ## Links

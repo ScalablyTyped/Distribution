@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEnvelope extends StObject {
   
   /**
     * The row of the recipient in the CSV file used to create the bulk recipient list.
     */
-  var bulkRecipientRow: js.UndefOr[String] = js.native
+  var bulkRecipientRow: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the status of the bulk send operation. Returned values can be:
@@ -20,39 +18,39 @@ trait BulkEnvelope extends StObject {
     * - `sent`
     * - `failed`
     */
-  var bulkStatus: js.UndefOr[String] = js.native
+  var bulkStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the recipient assigned to this envelope transaction.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * GUID of the bulk envelope.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving the envelope or envelopes.
     */
-  var envelopeUri: js.UndefOr[String] = js.native
+  var envelopeUri: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the recipient assigned to this envelope transaction.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time on which the bulk envelope was created.
     */
-  var submittedDateTime: js.UndefOr[String] = js.native
+  var submittedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the envelope transaction. The ID is a sender-generated value and is valid in the DocuSign system for 7 days.
@@ -60,7 +58,7 @@ trait BulkEnvelope extends StObject {
     * You can use the transaction ID to determine an envelope's status (queued, processing, sent, or failed) in cases where the Internet
     * connection is lost before envelope status is returned.
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
 }
 object BulkEnvelope {
   

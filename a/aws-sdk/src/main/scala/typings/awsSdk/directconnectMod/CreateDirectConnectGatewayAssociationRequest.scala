@@ -2,31 +2,29 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDirectConnectGatewayAssociationRequest extends StObject {
   
   /**
     * The Amazon VPC prefixes to advertise to the Direct Connect gateway This parameter is required when you create an association to a transit gateway. For information about how to set the prefixes, see Allowed Prefixes in the AWS Direct Connect User Guide.
     */
-  var addAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.native
+  var addAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   
   /**
     * The ID of the Direct Connect gateway.
     */
-  var directConnectGatewayId: DirectConnectGatewayId = js.native
+  var directConnectGatewayId: DirectConnectGatewayId
   
   /**
     * The ID of the virtual private gateway or transit gateway.
     */
-  var gatewayId: js.UndefOr[GatewayIdToAssociate] = js.native
+  var gatewayId: js.UndefOr[GatewayIdToAssociate] = js.undefined
   
   /**
     * The ID of the virtual private gateway.
     */
-  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.native
+  var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
 }
 object CreateDirectConnectGatewayAssociationRequest {
   

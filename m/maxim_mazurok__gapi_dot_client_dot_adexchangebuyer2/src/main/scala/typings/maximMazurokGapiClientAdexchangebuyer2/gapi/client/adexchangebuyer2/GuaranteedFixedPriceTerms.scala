@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GuaranteedFixedPriceTerms extends StObject {
   
   /** Fixed price for the specified buyer. */
-  var fixedPrices: js.UndefOr[js.Array[PricePerBuyer]] = js.native
+  var fixedPrices: js.UndefOr[js.Array[PricePerBuyer]] = js.undefined
   
   /** Guaranteed impressions as a percentage. This is the percentage of guaranteed looks that the buyer is guaranteeing to buy. */
-  var guaranteedImpressions: js.UndefOr[String] = js.native
+  var guaranteedImpressions: js.UndefOr[String] = js.undefined
   
   /** Count of guaranteed looks. Required for deal, optional for product. */
-  var guaranteedLooks: js.UndefOr[String] = js.native
+  var guaranteedLooks: js.UndefOr[String] = js.undefined
   
   /** Daily minimum looks for CPD deal types. */
-  var minimumDailyLooks: js.UndefOr[String] = js.native
+  var minimumDailyLooks: js.UndefOr[String] = js.undefined
 }
 object GuaranteedFixedPriceTerms {
   

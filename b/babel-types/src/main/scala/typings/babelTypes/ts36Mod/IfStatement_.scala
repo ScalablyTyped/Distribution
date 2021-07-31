@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.IfStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfStatement_
-  extends Node
+  extends StObject
+     with Node
      with Conditional
      with Statement {
   
-  var alternate: Statement = js.native
+  var alternate: Statement
   
-  var consequent: Statement = js.native
+  var consequent: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_IfStatement_ : IfStatement = js.native
+  var type_IfStatement_ : IfStatement
 }
 object IfStatement_ {
   
@@ -30,11 +29,10 @@ object IfStatement_ {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    test: Expression,
-    `type`: IfStatement
+    test: Expression
   ): IfStatement_ = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement_]
   }
   

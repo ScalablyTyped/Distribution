@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StopsByCount extends Object {
+trait StopsByCount
+  extends StObject
+     with Object {
   
   /**
     * Number of evenly spaced divisions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * The time period to divide.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByCount)
     */
-  var timeExtent: js.UndefOr[TimeExtent] = js.native
+  var timeExtent: js.UndefOr[TimeExtent] = js.undefined
 }
 object StopsByCount {
   

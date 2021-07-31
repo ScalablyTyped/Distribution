@@ -2,15 +2,13 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignUpOptions extends StObject {
   
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
-  var useMasterKey: js.UndefOr[Boolean] = js.native
+  var useMasterKey: js.UndefOr[Boolean] = js.undefined
 }
 object SignUpOptions {
   

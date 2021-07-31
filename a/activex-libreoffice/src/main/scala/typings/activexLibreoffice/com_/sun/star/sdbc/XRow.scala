@@ -10,12 +10,12 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to access data which is collected in a row. All methods raise a {@link com.sun.star.sdbc.SQLException} if a database access error occurs. */
-@js.native
-trait XRow extends XInterface {
+trait XRow
+  extends StObject
+     with XInterface {
   
   /**
     * gets a SQL ARRAY value from the current row of this `ResultSet` object.
@@ -23,7 +23,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getArray(columnIndex: Double): XArray = js.native
+  def getArray(columnIndex: Double): XArray
   
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
@@ -36,7 +36,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getBinaryStream(columnIndex: Double): XInputStream = js.native
+  def getBinaryStream(columnIndex: Double): XInputStream
   
   /**
     * gets a BLOB value in the current row.
@@ -44,7 +44,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getBlob(columnIndex: Double): XBlob = js.native
+  def getBlob(columnIndex: Double): XBlob
   
   /**
     * gets the value of a column in the current row as boolean.
@@ -52,7 +52,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getBoolean(columnIndex: Double): Boolean = js.native
+  def getBoolean(columnIndex: Double): Boolean
   
   /**
     * get the value of a column in the current row as a byte.
@@ -60,7 +60,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getByte(columnIndex: Double): Double = js.native
+  def getByte(columnIndex: Double): Double
   
   /**
     * gets the value of a column in the current row as a byte array. The bytes represent the raw values returned by the driver.
@@ -68,7 +68,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is empty.
     * @throws SQLException if a database access error occurs.
     */
-  def getBytes(columnIndex: Double): SafeArray[Double] = js.native
+  def getBytes(columnIndex: Double): SafeArray[Double]
   
   /**
     * gets the value of a column in the current row as a stream of uninterpreted bytes. The value can then be read in chunks from the stream. This method is
@@ -81,7 +81,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getCharacterStream(columnIndex: Double): XInputStream = js.native
+  def getCharacterStream(columnIndex: Double): XInputStream
   
   /**
     * gets a CLOB value in the current row of this `ResultSet` object.
@@ -89,7 +89,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getClob(columnIndex: Double): XClob = js.native
+  def getClob(columnIndex: Double): XClob
   
   /**
     * gets the value of a column in the current row as a date object.
@@ -97,7 +97,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getDate(columnIndex: Double): Date = js.native
+  def getDate(columnIndex: Double): Date
   
   /**
     * gets the value of a column in the current row as a double.
@@ -105,7 +105,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getDouble(columnIndex: Double): Double = js.native
+  def getDouble(columnIndex: Double): Double
   
   /**
     * gets the value of a column in the current row as a float.
@@ -113,7 +113,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getFloat(columnIndex: Double): Double = js.native
+  def getFloat(columnIndex: Double): Double
   
   /**
     * get the value of a column in the current row as an integer.
@@ -121,7 +121,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getInt(columnIndex: Double): Double = js.native
+  def getInt(columnIndex: Double): Double
   
   /**
     * get the value of a column in the current row as a long.
@@ -129,7 +129,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getLong(columnIndex: Double): Double = js.native
+  def getLong(columnIndex: Double): Double
   
   /**
     * returns the value of a column in the current row as an object. This method uses the given `Map` object for the custom mapping of the SQL structure or
@@ -139,7 +139,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getObject(columnIndex: Double, typeMap: XNameAccess): js.Any = js.native
+  def getObject(columnIndex: Double, typeMap: XNameAccess): js.Any
   
   /**
     * gets a REF(&lt;structured-type&gt;) column value from the current row.
@@ -147,7 +147,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getRef(columnIndex: Double): XRef = js.native
+  def getRef(columnIndex: Double): XRef
   
   /**
     * gets the value of a column in the current row as a short.
@@ -155,7 +155,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getShort(columnIndex: Double): Double = js.native
+  def getShort(columnIndex: Double): Double
   
   /**
     * gets the value of a column in the current row as a string.
@@ -163,7 +163,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getString(columnIndex: Double): String = js.native
+  def getString(columnIndex: Double): String
   
   /**
     * gets the value of a column in the current row as a time object.
@@ -171,7 +171,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getTime(columnIndex: Double): Time = js.native
+  def getTime(columnIndex: Double): Time
   
   /**
     * gets the value of a column in the current row as a datetime object.
@@ -179,7 +179,7 @@ trait XRow extends XInterface {
     * @returns the column value; if the value is SQL NULL, the result is null
     * @throws SQLException if a database access error occurs.
     */
-  def getTimestamp(columnIndex: Double): DateTime = js.native
+  def getTimestamp(columnIndex: Double): DateTime
   
   /**
     * reports whether the last column read had a value of SQL NULL. Note that you must first call getXXX on a column to try to read its value and then call
@@ -187,7 +187,7 @@ trait XRow extends XInterface {
     * @returns `TRUE` if last column read was SQL NULL and `FALSE` otherwise
     * @throws SQLException if a database access error occurs.
     */
-  def wasNull(): Boolean = js.native
+  def wasNull(): Boolean
 }
 object XRow {
   

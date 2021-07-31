@@ -3,43 +3,41 @@ package typings.postcss.mod
 import typings.postcss.anon.PickProcessOptionsmapfrom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessOptions extends StObject {
   
   /**
     * The path of the CSS source file. You should always set "from", because it is
     * used in source map generation and syntax error messages.
     */
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   /**
     * Source map options
     */
-  var map: js.UndefOr[SourceMapOptions | Boolean] = js.native
+  var map: js.UndefOr[SourceMapOptions | Boolean] = js.undefined
   
   /**
     * Function to generate AST by string.
     */
-  var parser: js.UndefOr[Parser] = js.native
+  var parser: js.UndefOr[Parser] = js.undefined
   
   /**
     * Class to generate string by AST.
     */
-  var stringifier: js.UndefOr[Stringifier] = js.native
+  var stringifier: js.UndefOr[Stringifier] = js.undefined
   
   /**
     * Object with parse and stringify.
     */
-  var syntax: js.UndefOr[Syntax] = js.native
+  var syntax: js.UndefOr[Syntax] = js.undefined
   
   /**
     * The path where you'll put the output CSS file. You should always set "to"
     * to generate correct source maps.
     */
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
 }
 object ProcessOptions {
   

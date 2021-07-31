@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceIndexStats extends StObject {
   
   /**
     * Date for which index stats were calculated. If the date of request is not the current date then stats calculated on the next day are returned. Stats are calculated close to mid
     * night in this case. If date of request is current date, then real time stats are returned.
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /** Number of items aggregrated by status code. */
-  var itemCountByStatus: js.UndefOr[js.Array[ItemCountByStatus]] = js.native
+  var itemCountByStatus: js.UndefOr[js.Array[ItemCountByStatus]] = js.undefined
 }
 object DataSourceIndexStats {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaConfig extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait SchemaConfig extends StObject {
     * CodeSystem table will have a column called `concept.concept` but not `concept.concept.concept`. If not specified or set to 0, the server will use the default value 2. The maximum
     * depth allowed is 5.
     */
-  var recursiveStructureDepth: js.UndefOr[String] = js.native
+  var recursiveStructureDepth: js.UndefOr[String] = js.undefined
   
   /** Specifies the output schema type. Schema type is required. */
-  var schemaType: js.UndefOr[String] = js.native
+  var schemaType: js.UndefOr[String] = js.undefined
 }
 object SchemaConfig {
   

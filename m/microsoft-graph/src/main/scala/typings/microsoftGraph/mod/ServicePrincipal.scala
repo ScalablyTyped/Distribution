@@ -2,97 +2,97 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServicePrincipal extends DirectoryObject {
+trait ServicePrincipal
+  extends StObject
+     with DirectoryObject {
   
   // true if the service principal account is enabled; otherwise, false.
-  var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var accountEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications
     * that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services
     * like Microsoft 365 call the application in the context of a document the user is working on.
     */
-  var addIns: js.UndefOr[js.Array[AddIn]] = js.native
+  var addIns: js.UndefOr[js.Array[AddIn]] = js.undefined
   
   /**
     * Used to retrieve service principals by subscription, identify resource group and full resource ids for managed
     * identities.
     */
-  var alternativeNames: js.UndefOr[js.Array[String]] = js.native
+  var alternativeNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var appDescription: js.UndefOr[NullableOption[String]] = js.native
+  var appDescription: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name exposed by the associated application.
-  var appDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the associated application (its appId property).
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Contains the tenant id where the application is registered. This is applicable only to service principals backed by
     * applications.
     */
-  var appOwnerOrganizationId: js.UndefOr[NullableOption[String]] = js.native
+  var appOwnerOrganizationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Principals (users, groups, and service principals) that are assigned to this service principal. Read-only.
-  var appRoleAssignedTo: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.native
+  var appRoleAssignedTo: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   /**
     * Specifies whether users or other service principals need to be granted an app role assignment for this service
     * principal before users can sign in or apps can get tokens. The default value is false. Not nullable.
     */
-  var appRoleAssignmentRequired: js.UndefOr[Boolean] = js.native
+  var appRoleAssignmentRequired: js.UndefOr[Boolean] = js.undefined
   
   // Applications that this service principal is assigned to. Read-only. Nullable.
-  var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.native
+  var appRoleAssignments: js.UndefOr[NullableOption[js.Array[AppRoleAssignment]]] = js.undefined
   
   /**
     * The roles exposed by the application which this service principal represents. For more information see the appRoles
     * property definition on the application entity. Not nullable.
     */
-  var appRoles: js.UndefOr[js.Array[AppRole]] = js.native
+  var appRoles: js.UndefOr[js.Array[AppRole]] = js.undefined
   
   // Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only.
-  var applicationTemplateId: js.UndefOr[NullableOption[String]] = js.native
+  var applicationTemplateId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The claimsMappingPolicies assigned to this service principal.
-  var claimsMappingPolicies: js.UndefOr[NullableOption[js.Array[ClaimsMappingPolicy]]] = js.native
+  var claimsMappingPolicies: js.UndefOr[NullableOption[js.Array[ClaimsMappingPolicy]]] = js.undefined
   
   // Directory objects created by this service principal. Read-only. Nullable.
-  var createdObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var createdObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
-  var delegatedPermissionClassifications: js.UndefOr[NullableOption[js.Array[DelegatedPermissionClassification]]] = js.native
+  var delegatedPermissionClassifications: js.UndefOr[NullableOption[js.Array[DelegatedPermissionClassification]]] = js.undefined
   
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The display name for the service principal.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint
     * endpoints that other applications can discover and use in their experiences.
     */
-  var endpoints: js.UndefOr[NullableOption[js.Array[Endpoint]]] = js.native
+  var endpoints: js.UndefOr[NullableOption[js.Array[Endpoint]]] = js.undefined
   
   // The homeRealmDiscoveryPolicies assigned to this service principal.
-  var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.native
+  var homeRealmDiscoveryPolicies: js.UndefOr[NullableOption[js.Array[HomeRealmDiscoveryPolicy]]] = js.undefined
   
   // Home page or landing page of the application.
-  var homepage: js.UndefOr[NullableOption[String]] = js.native
+  var homepage: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy
     * statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience.
     * For more info, see How to: Add Terms of service and privacy statement for registered Azure AD apps.
     */
-  var info: js.UndefOr[NullableOption[InformationalUrl]] = js.native
+  var info: js.UndefOr[NullableOption[InformationalUrl]] = js.undefined
   
   // The collection of key credentials associated with the service principal. Not nullable.
-  var keyCredentials: js.UndefOr[js.Array[KeyCredential]] = js.native
+  var keyCredentials: js.UndefOr[js.Array[KeyCredential]] = js.undefined
   
   /**
     * Specifies the URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to
@@ -100,67 +100,67 @@ trait ServicePrincipal extends DirectoryObject {
     * for applications configured with SAML-based single sign-on. The user launches the application from Microsoft 365, the
     * Azure AD My Apps, or the Azure AD SSO URL.
     */
-  var loginUrl: js.UndefOr[NullableOption[String]] = js.native
+  var loginUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect
     * front-channel, back-channel or SAML logout protocols.
     */
-  var logoutUrl: js.UndefOr[NullableOption[String]] = js.native
+  var logoutUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.
-  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var memberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
-  var notes: js.UndefOr[NullableOption[String]] = js.native
+  var notes: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the list of email addresses where Azure AD sends a notification when the active certificate is near the
     * expiration date. This is only for the certificates used to sign the SAML token issued for Azure AD Gallery
     * applications.
     */
-  var notificationEmailAddresses: js.UndefOr[js.Array[String]] = js.native
+  var notificationEmailAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
     * Read-only. Nullable.
     */
-  var oauth2PermissionGrants: js.UndefOr[NullableOption[js.Array[OAuth2PermissionGrant]]] = js.native
+  var oauth2PermissionGrants: js.UndefOr[NullableOption[js.Array[OAuth2PermissionGrant]]] = js.undefined
   
   /**
     * The delegated permissions exposed by the application. For more information see the oauth2PermissionScopes property on
     * the application entity's api property. Not nullable.
     */
-  var oauth2PermissionScopes: js.UndefOr[js.Array[PermissionScope]] = js.native
+  var oauth2PermissionScopes: js.UndefOr[js.Array[PermissionScope]] = js.undefined
   
   // Directory objects that are owned by this service principal. Read-only. Nullable.
-  var ownedObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var ownedObjects: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   /**
     * Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or
     * servicePrincipals who are allowed to modify this object. Read-only. Nullable.
     */
-  var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
   // The collection of password credentials associated with the service principal. Not nullable.
-  var passwordCredentials: js.UndefOr[js.Array[PasswordCredential]] = js.native
+  var passwordCredentials: js.UndefOr[js.Array[PasswordCredential]] = js.undefined
   
   /**
     * Specifies the single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to
     * launch the application from Microsoft 365 or the Azure AD My Apps. The supported values are password, saml, external,
     * and oidc.
     */
-  var preferredSingleSignOnMode: js.UndefOr[NullableOption[String]] = js.native
+  var preferredSingleSignOnMode: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var preferredTokenSigningKeyThumbprint: js.UndefOr[NullableOption[String]] = js.native
+  var preferredTokenSigningKeyThumbprint: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0
     * authorization codes and access tokens are sent to for the associated application. Not nullable.
     */
-  var replyUrls: js.UndefOr[js.Array[String]] = js.native
+  var replyUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   // The collection for settings related to saml single sign-on.
-  var samlSingleSignOnSettings: js.UndefOr[NullableOption[SamlSingleSignOnSettings]] = js.native
+  var samlSingleSignOnSettings: js.UndefOr[NullableOption[SamlSingleSignOnSettings]] = js.undefined
   
   /**
     * Contains the list of identifiersUris, copied over from the associated application. Additional values can be added to
@@ -169,34 +169,34 @@ trait ServicePrincipal extends DirectoryObject {
     * token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued
     * properties. Not nullable.
     */
-  var servicePrincipalNames: js.UndefOr[js.Array[String]] = js.native
+  var servicePrincipalNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Identifies if the service principal represents an application or a managed identity. This is set by Azure AD
     * internally. For a service principal that represents an application this is set as Application. For a service principal
     * that represent a managed identity this is set as ManagedIdentity.
     */
-  var servicePrincipalType: js.UndefOr[NullableOption[String]] = js.native
+  var servicePrincipalType: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var signInAudience: js.UndefOr[NullableOption[String]] = js.native
+  var signInAudience: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Custom strings that can be used to categorize and identify the service principal. Not nullable.
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD issues tokens for
     * this application encrypted using the key specified by this property. The application code that receives the encrypted
     * token must use the matching private key to decrypt the token before it can be used for the signed-in user.
     */
-  var tokenEncryptionKeyId: js.UndefOr[NullableOption[String]] = js.native
+  var tokenEncryptionKeyId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The tokenIssuancePolicies assigned to this service principal.
-  var tokenIssuancePolicies: js.UndefOr[NullableOption[js.Array[TokenIssuancePolicy]]] = js.native
+  var tokenIssuancePolicies: js.UndefOr[NullableOption[js.Array[TokenIssuancePolicy]]] = js.undefined
   
   // The tokenLifetimePolicies assigned to this service principal.
-  var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.native
+  var tokenLifetimePolicies: js.UndefOr[NullableOption[js.Array[TokenLifetimePolicy]]] = js.undefined
   
-  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.native
+  var transitiveMemberOf: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
 }
 object ServicePrincipal {
   

@@ -18,7 +18,6 @@ import typings.react.mod.Context
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionBackButtonMod {
@@ -26,7 +25,9 @@ object ionBackButtonMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ionic/react/dist/types/components/navigation/IonBackButton", "IonBackButton")
   @js.native
-  class IonBackButton protected () extends ClickButton {
+  class IonBackButton protected ()
+    extends StObject
+       with ClickButton {
     def this(props: ReadonlyProps) = this()
     def this(props: Props) = this()
     def this(props: Props, context: js.Any) = this()
@@ -43,32 +44,31 @@ object ionBackButtonMod {
   }
   
   /* Inlined std.Omit<@ionic/core.@ionic/core.JSX.IonBackButton, 'icon'> & @ionic/react.@ionic/react/dist/types/components/IonicReactProps.IonicReactProps & {  icon :{  ios :string,   md :string} | string | undefined,   ref :react.react.RefObject<@ionic/core.@ionic/core/dist/types/components.<global>.HTMLIonBackButtonElement> | undefined} */
-  @js.native
   trait Props extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[Color] = js.native
+    var color: js.UndefOr[Color] = js.undefined
     
-    var defaultHref: js.UndefOr[String] = js.native
+    var defaultHref: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[Ios | String] = js.native
+    var icon: js.UndefOr[Ios | String] = js.undefined
     
-    var mode: js.UndefOr[ios | md] = js.native
+    var mode: js.UndefOr[ios | md] = js.undefined
     
-    var ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.native
+    var ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.undefined
     
-    var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var text: js.UndefOr[String | Null] = js.native
+    var text: js.UndefOr[String | Null] = js.undefined
     
-    var `type`: js.UndefOr[submit | reset | button] = js.native
+    var `type`: js.UndefOr[submit | reset | button] = js.undefined
   }
   object Props {
     

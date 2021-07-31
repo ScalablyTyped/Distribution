@@ -7,7 +7,6 @@ import typings.three.textureMod.Texture
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meshNormalMaterialMod {
@@ -85,34 +84,35 @@ object meshNormalMaterialMod {
     var wireframeLinewidth: Double = js.native
   }
   
-  @js.native
-  trait MeshNormalMaterialParameters extends MaterialParameters {
+  trait MeshNormalMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var bumpMap: js.UndefOr[Texture | Null] = js.native
+    var bumpMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var bumpScale: js.UndefOr[Double] = js.native
+    var bumpScale: js.UndefOr[Double] = js.undefined
     
-    var displacementBias: js.UndefOr[Double] = js.native
+    var displacementBias: js.UndefOr[Double] = js.undefined
     
-    var displacementMap: js.UndefOr[Texture | Null] = js.native
+    var displacementMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var displacementScale: js.UndefOr[Double] = js.native
+    var displacementScale: js.UndefOr[Double] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.native
+    var morphNormals: js.UndefOr[Boolean] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
-    var normalMap: js.UndefOr[Texture | Null] = js.native
+    var normalMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var normalMapType: js.UndefOr[NormalMapTypes] = js.native
+    var normalMapType: js.UndefOr[NormalMapTypes] = js.undefined
     
-    var normalScale: js.UndefOr[Vector2] = js.native
+    var normalScale: js.UndefOr[Vector2] = js.undefined
     
-    var skinning: js.UndefOr[Boolean] = js.native
+    var skinning: js.UndefOr[Boolean] = js.undefined
     
-    var wireframe: js.UndefOr[Boolean] = js.native
+    var wireframe: js.UndefOr[Boolean] = js.undefined
     
-    var wireframeLinewidth: js.UndefOr[Double] = js.native
+    var wireframeLinewidth: js.UndefOr[Double] = js.undefined
   }
   object MeshNormalMaterialParameters {
     

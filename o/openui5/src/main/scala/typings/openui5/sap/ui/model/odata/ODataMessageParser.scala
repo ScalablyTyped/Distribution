@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.model.odata
 import typings.openui5.sap.ui.core.message.MessageParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataMessageParser extends MessageParser {
+trait ODataMessageParser
+  extends StObject
+     with MessageParser {
   
   /**
     * Returns the name of the header field that is used to parse the server messages

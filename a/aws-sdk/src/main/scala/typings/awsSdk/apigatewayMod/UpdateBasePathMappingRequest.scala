@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBasePathMappingRequest extends StObject {
   
   /**
     * [Required] The base path of the BasePathMapping resource to change. To specify an empty base path, set this parameter to '(none)'.
     */
-  var basePath: String = js.native
+  var basePath: String
   
   /**
     * [Required] The domain name of the BasePathMapping resource to change.
     */
-  var domainName: String = js.native
+  var domainName: String
   
   /**
     * A list of update operations to be applied to the specified resource and in the order specified in this list.
     */
-  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.native
+  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
 }
 object UpdateBasePathMappingRequest {
   

@@ -3,60 +3,50 @@ package typings.ethereumjsAbi
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ethereumjs-abi", "eventID")
+  @JSImport("ethereumjs-abi", JSImport.Namespace)
   @js.native
-  def eventID(name: String, types: js.Array[String]): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereumjs-abi", "fromSerpent")
-  @js.native
-  def fromSerpent(signature: String): js.Array[String] = js.native
+  @scala.inline
+  def eventID(name: String, types: js.Array[String]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("eventID")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "methodID")
-  @js.native
-  def methodID(name: String, types: js.Array[String]): Buffer = js.native
+  @scala.inline
+  def fromSerpent(signature: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSerpent")(signature.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("ethereumjs-abi", "rawDecode")
-  @js.native
-  def rawDecode(types: js.Array[String], data: Buffer): js.Array[_] = js.native
+  @scala.inline
+  def methodID(name: String, types: js.Array[String]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("methodID")(name.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "rawEncode")
-  @js.native
-  def rawEncode(types: js.Array[String], values: js.Array[_]): Buffer = js.native
+  @scala.inline
+  def rawDecode(types: js.Array[String], data: Buffer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("rawDecode")(types.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("ethereumjs-abi", "simpleDecode")
-  @js.native
-  def simpleDecode(signature: String, data: Buffer): js.Array[_] = js.native
+  @scala.inline
+  def rawEncode(types: js.Array[String], values: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("rawEncode")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "simpleEncode")
-  @js.native
-  def simpleEncode(signature: String, args: js.Any*): Buffer = js.native
+  @scala.inline
+  def simpleDecode(signature: String, data: Buffer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleDecode")(signature.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("ethereumjs-abi", "solidityPack")
-  @js.native
-  def solidityPack(types: js.Array[String], values: js.Array[_]): Buffer = js.native
+  @scala.inline
+  def simpleEncode(signature: String, args: js.Any*): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleEncode")(signature.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "solidityRIPEMD160")
-  @js.native
-  def solidityRIPEMD160(argTypes: js.Array[String], args: js.Array[_]): Buffer = js.native
+  @scala.inline
+  def solidityPack(types: js.Array[String], values: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("solidityPack")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "soliditySHA256")
-  @js.native
-  def soliditySHA256(argTypes: js.Array[String], args: js.Array[_]): Buffer = js.native
+  @scala.inline
+  def solidityRIPEMD160(argTypes: js.Array[String], args: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("solidityRIPEMD160")(argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "soliditySHA3")
-  @js.native
-  def soliditySHA3(argTypes: js.Array[String], args: js.Array[_]): Buffer = js.native
+  @scala.inline
+  def soliditySHA256(argTypes: js.Array[String], args: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("soliditySHA256")(argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "stringify")
-  @js.native
-  def stringify(types: js.Array[String], values: js.Array[_]): String = js.native
+  @scala.inline
+  def soliditySHA3(argTypes: js.Array[String], args: js.Array[js.Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("soliditySHA3")(argTypes.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-abi", "toSerpent")
-  @js.native
-  def toSerpent(types: js.Array[String]): String = js.native
+  @scala.inline
+  def stringify(types: js.Array[String], values: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(types.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def toSerpent(types: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSerpent")(types.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to increment the indent level of paragraphs in a selected range.
   */
-@js.native
-trait IncreaseIndentCommand extends CommandWithSimpleStateBase {
+trait IncreaseIndentCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the IncreaseIndentCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object IncreaseIndentCommand {
   

@@ -2,11 +2,12 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonStub[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpy[TArgs, TReturnValue] {
+trait SinonStub[TArgs /* <: js.Array[js.Any] */, TReturnValue]
+  extends StObject
+     with SinonSpy[TArgs, TReturnValue] {
   
   /**
     * Causes the original method wrapped into the stub to be called when none of the conditional stubs are matched.
@@ -82,7 +83,7 @@ trait SinonStub[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpy[TArgs
   /**
     * Replaces a new getter for this stub.
     */
-  def get(func: js.Function0[_]): SinonStub[TArgs, TReturnValue] = js.native
+  def get(func: js.Function0[js.Any]): SinonStub[TArgs, TReturnValue] = js.native
   
   /**
     * Defines the behavior of the stub on the @param n call. Useful for testing sequential interactions.

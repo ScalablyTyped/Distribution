@@ -2,24 +2,24 @@ package typings.twitterForWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for Twitter for Websites.
   */
-@js.native
-trait Twitter extends TwitterLike {
+trait Twitter
+  extends StObject
+     with TwitterLike {
   
   /**
     * Twitter events.
     */
-  var events: TwitterEvents = js.native
+  var events: TwitterEvents
   
   /**
     * Twitter widgets.
     */
-  var widgets: TwitterWidgets = js.native
+  var widgets: TwitterWidgets
 }
 object Twitter {
   

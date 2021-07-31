@@ -2,15 +2,13 @@ package typings.jpm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Combo extends StObject {
   
-  var combo: String = js.native
+  var combo: String
   
-  def onPress(): Unit = js.native
+  def onPress(): Unit
 }
 object Combo {
   

@@ -5,20 +5,20 @@ import typings.flowdoc.flowdocStrings.HOTSPOT
 import typings.flowdoc.flowdocStrings.LAYER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Layer extends Node {
+trait Layer
+  extends StObject
+     with Node {
   
-  var connections: js.UndefOr[js.Array[Connection]] = js.native
+  var connections: js.UndefOr[js.Array[Connection]] = js.undefined
   
-  var position: Point = js.native
+  var position: Point
   
-  var size: Size = js.native
+  var size: Size
   
   @JSName("type")
-  var type_Layer: LAYER | HOTSPOT = js.native
+  var type_Layer: LAYER | HOTSPOT
 }
 object Layer {
   

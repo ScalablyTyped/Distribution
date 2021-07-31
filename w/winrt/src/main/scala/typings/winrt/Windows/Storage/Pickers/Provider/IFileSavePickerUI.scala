@@ -3,25 +3,23 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileSavePickerUI extends StObject {
   
-  var allowedFileTypes: IVectorView[String] = js.native
+  var allowedFileTypes: IVectorView[String]
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var onfilenamechanged: js.Any = js.native
+  var onfilenamechanged: js.Any
   
-  var ontargetfilerequested: js.Any = js.native
+  var ontargetfilerequested: js.Any
   
-  var settingsIdentifier: String = js.native
+  var settingsIdentifier: String
   
-  var title: String = js.native
+  var title: String
   
-  def trySetFileName(value: String): SetFileNameResult = js.native
+  def trySetFileName(value: String): SetFileNameResult
 }
 object IFileSavePickerUI {
   

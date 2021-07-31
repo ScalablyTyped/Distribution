@@ -10,9 +10,9 @@ egg logger
 | ------------------ | :-------------: |
 | Full name          | egg-logger |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 80 |
-| # downloads        | 752984 |
+| # releases         | 5 |
+| # dependents       | 82 |
+| # downloads        | 1280931 |
 | # stars            | 0 |
 
 ## Links

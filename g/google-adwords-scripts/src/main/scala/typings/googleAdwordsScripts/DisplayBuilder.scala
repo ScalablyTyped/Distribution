@@ -2,18 +2,18 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Display
-@js.native
-trait DisplayBuilder[T] extends AdWordsBuilder[T] {
+trait DisplayBuilder[T]
+  extends StObject
+     with AdWordsBuilder[T] {
   
-  def exclude(): AdWordsOperation[T] = js.native
+  def exclude(): AdWordsOperation[T]
   
-  def withCpc(cpc: Double): T = js.native
+  def withCpc(cpc: Double): T
   
-  def withCpm(cpm: Double): T = js.native
+  def withCpm(cpm: Double): T
 }
 object DisplayBuilder {
   
@@ -29,7 +29,7 @@ object DisplayBuilder {
   }
   
   @scala.inline
-  implicit class DisplayBuilderMutableBuilder[Self <: DisplayBuilder[_], T] (val x: Self with DisplayBuilder[T]) extends AnyVal {
+  implicit class DisplayBuilderMutableBuilder[Self <: DisplayBuilder[?], T] (val x: Self & DisplayBuilder[T]) extends AnyVal {
     
     @scala.inline
     def setExclude(value: () => AdWordsOperation[T]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))

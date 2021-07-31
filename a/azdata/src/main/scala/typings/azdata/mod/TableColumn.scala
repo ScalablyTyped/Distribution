@@ -2,25 +2,23 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableColumn extends StObject {
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var headerCssClass: js.UndefOr[String] = js.native
+  var headerCssClass: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[CheckboxColumnOption | TextColumnOption] = js.native
+  var options: js.UndefOr[CheckboxColumnOption | TextColumnOption] = js.undefined
   
-  var toolTip: js.UndefOr[String] = js.native
+  var toolTip: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[ColumnType] = js.native
+  var `type`: js.UndefOr[ColumnType] = js.undefined
   
-  var value: String = js.native
+  var value: String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TableColumn {
   

@@ -2,7 +2,6 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,10 +12,10 @@ trait SchemaValidateFunction extends StObject {
     data: js.Any,
     parentSchema: js.UndefOr[js.Object],
     dataPath: js.UndefOr[String],
-    parentData: js.UndefOr[js.Object | js.Array[_]],
+    parentData: js.UndefOr[js.Object | js.Array[js.Any]],
     parentDataProperty: js.UndefOr[String | Double],
-    rootData: js.UndefOr[js.Object | js.Array[_]]
-  ): Boolean | js.Thenable[_] = js.native
+    rootData: js.UndefOr[js.Object | js.Array[js.Any]]
+  ): Boolean | js.Thenable[js.Any] = js.native
   
   var errors: js.UndefOr[js.Array[ErrorObject]] = js.native
 }

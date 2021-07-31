@@ -2,25 +2,23 @@ package typings.antdMobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentedControlPropsTypeMod {
   
-  @js.native
   trait SegmentedControlPropsType extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Array[String]] = js.native
+    var values: js.UndefOr[js.Array[String]] = js.undefined
   }
   object SegmentedControlPropsType {
     

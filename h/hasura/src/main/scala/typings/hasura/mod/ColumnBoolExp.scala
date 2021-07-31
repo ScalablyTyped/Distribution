@@ -2,29 +2,27 @@ package typings.hasura.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnBoolExp[T] extends StObject {
   
-  var _eq: js.UndefOr[T] = js.native
+  var _eq: js.UndefOr[T] = js.undefined
   
-  var _gt: js.UndefOr[T] = js.native
+  var _gt: js.UndefOr[T] = js.undefined
   
-  var _gte: js.UndefOr[T] = js.native
+  var _gte: js.UndefOr[T] = js.undefined
   
-  var _in: js.UndefOr[js.Array[T]] = js.native
+  var _in: js.UndefOr[js.Array[T]] = js.undefined
   
-  var _is_null: js.UndefOr[Boolean] = js.native
+  var _is_null: js.UndefOr[Boolean] = js.undefined
   
-  var _lt: js.UndefOr[T] = js.native
+  var _lt: js.UndefOr[T] = js.undefined
   
-  var _lte: js.UndefOr[T] = js.native
+  var _lte: js.UndefOr[T] = js.undefined
   
-  var _neq: js.UndefOr[T] = js.native
+  var _neq: js.UndefOr[T] = js.undefined
   
-  var _nin: js.UndefOr[js.Array[T]] = js.native
+  var _nin: js.UndefOr[js.Array[T]] = js.undefined
 }
 object ColumnBoolExp {
   
@@ -35,7 +33,7 @@ object ColumnBoolExp {
   }
   
   @scala.inline
-  implicit class ColumnBoolExpMutableBuilder[Self <: ColumnBoolExp[_], T] (val x: Self with ColumnBoolExp[T]) extends AnyVal {
+  implicit class ColumnBoolExpMutableBuilder[Self <: ColumnBoolExp[?], T] (val x: Self & ColumnBoolExp[T]) extends AnyVal {
     
     @scala.inline
     def set_eq(value: T): Self = StObject.set(x, "_eq", value.asInstanceOf[js.Any])

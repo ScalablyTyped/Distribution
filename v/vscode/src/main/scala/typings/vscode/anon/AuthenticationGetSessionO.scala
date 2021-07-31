@@ -3,11 +3,9 @@ package typings.vscode.anon
 import typings.vscode.vscodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vscode.vscode.AuthenticationGetSessionOptions & {  createIfNone :true} */
-@js.native
 trait AuthenticationGetSessionO extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait AuthenticationGetSessionO extends StObject {
     *
     * Defaults to false.
     */
-  var clearSessionPreference: js.UndefOr[Boolean] = js.native
+  var clearSessionPreference: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether login should be performed if there is no matching session.
@@ -30,12 +28,12 @@ trait AuthenticationGetSessionO extends StObject {
     *
     * Defaults to false.
     */
-  var createIfNone: js.UndefOr[Boolean] with `true` = js.native
+  var createIfNone: js.UndefOr[Boolean] & `true`
 }
 object AuthenticationGetSessionO {
   
   @scala.inline
-  def apply(createIfNone: js.UndefOr[Boolean] with `true`): AuthenticationGetSessionO = {
+  def apply(createIfNone: js.UndefOr[Boolean] & `true`): AuthenticationGetSessionO = {
     val __obj = js.Dynamic.literal(createIfNone = createIfNone.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationGetSessionO]
   }
@@ -50,6 +48,6 @@ object AuthenticationGetSessionO {
     def setClearSessionPreferenceUndefined: Self = StObject.set(x, "clearSessionPreference", js.undefined)
     
     @scala.inline
-    def setCreateIfNone(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
+    def setCreateIfNone(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "createIfNone", value.asInstanceOf[js.Any])
   }
 }

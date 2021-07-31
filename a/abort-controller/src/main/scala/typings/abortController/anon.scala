@@ -11,7 +11,6 @@ import typings.eventTargetShim.mod.EventTarget.PickEvent
 import typings.eventTargetShim.mod.EventTarget.RemoveOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -49,7 +48,7 @@ object anon {
     @JSName("dispatchEvent")
     def dispatchEvent_loose[TEventType /* <: EventType[Events, loose] */](event: EventData[Events, TEventType, loose]): Boolean = js.native
     
-    var onabort: FunctionListener[_] | Null = js.native
+    var onabort: FunctionListener[js.Any] | Null = js.native
     
     /**
       * Remove a given listener from this event target.

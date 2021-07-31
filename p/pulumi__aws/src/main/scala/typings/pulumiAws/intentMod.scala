@@ -14,7 +14,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intentMod {
@@ -142,6 +141,10 @@ object intentMod {
   /* static members */
   object Intent {
     
+    @JSImport("@pulumi/aws/lex/intent", "Intent")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Intent resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -151,29 +154,23 @@ object intentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lex/intent", "Intent.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Intent = js.native
-    @JSImport("@pulumi/aws/lex/intent", "Intent.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Intent = js.native
-    @JSImport("@pulumi/aws/lex/intent", "Intent.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntentState): Intent = js.native
-    @JSImport("@pulumi/aws/lex/intent", "Intent.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntentState, opts: CustomResourceOptions): Intent = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntentState): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntentState, opts: CustomResourceOptions): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Intent]
     
     /**
       * Returns true if the given object is an instance of Intent.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lex/intent", "Intent.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean]
   }
   
-  @js.native
   trait IntentArgs extends StObject {
     
     /**
@@ -183,31 +180,31 @@ object intentMod {
       * application, you can't specify this element. The `followUpPrompt` and `conclusionStatement` are
       * mutually exclusive. You can specify only one. Attributes are documented under statement.
       */
-    val conclusionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]] = js.native
+    val conclusionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]] = js.undefined
     
     /**
       * Prompts the user to confirm the intent. This question should
       * have a yes or no answer. You you must provide both the `rejectionStatement` and `confirmationPrompt`,
       * or neither. Attributes are documented under prompt.
       */
-    val confirmationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]] = js.native
+    val confirmationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]] = js.undefined
     
     /**
       * Determines if a new slot type version is created when the initial
       * resource is created and on each update. Defaults to `false`.
       */
-    val createVersion: js.UndefOr[Input[Boolean]] = js.native
+    val createVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A description of the bot. Must be less than or equal to 200 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies a Lambda function to invoke for each user input. You can
       * invoke this Lambda function to personalize user interaction. Attributes are documented under code_hook.
       */
-    val dialogCodeHook: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]] = js.native
+    val dialogCodeHook: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]] = js.undefined
     
     /**
       * Amazon Lex uses this prompt to solicit additional activity after
@@ -215,19 +212,19 @@ object intentMod {
       * user to order a drink. The `followUpPrompt` field and the `conclusionStatement` field are mutually
       * exclusive. You can specify only one. Attributes are documented under follow_up_prompt.
       */
-    val followUpPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]] = js.native
+    val followUpPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]] = js.undefined
     
     /**
       * Describes how the intent is fulfilled. For example, after a
       * user provides all of the information for a pizza order, `fulfillmentActivity` defines how the bot
       * places an order with a local pizza store. Attributes are documented under fulfillment_activity.
       */
-    val fulfillmentActivity: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity] = js.native
+    val fulfillmentActivity: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]
     
     /**
       * The name of the intent slot that you want to create. The name is case sensitive. Must be less than or equal to 100 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique identifier for the built-in intent to base this
@@ -235,27 +232,27 @@ object intentMod {
       * [Standard Built-in Intents](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/standard-intents)
       * in the Alexa Skills Kit.
       */
-    val parentIntentSignature: js.UndefOr[Input[String]] = js.native
+    val parentIntentSignature: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the user answers "no" to the question defined in the prompt field,
       * Amazon Lex responds with this statement to acknowledge that the intent was canceled. Attributes are
       * documented below under statement.
       */
-    val rejectionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]] = js.native
+    val rejectionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]] = js.undefined
     
     /**
       * If you know a specific pattern with which users might respond to
       * an Amazon Lex request for a slot value, you can provide those utterances to improve accuracy. This
       * is optional. In most cases, Amazon Lex is capable of understanding user utterances. Must have between 1 and 10 items in the list, and each item must be less than or equal to 200 characters in length.
       */
-    val sampleUtterances: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val sampleUtterances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An list of intent slots. At runtime, Amazon Lex elicits required slot values
       * from the user using prompts defined in the slots. Attributes are documented under slot.
       */
-    val slots: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]] = js.native
+    val slots: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]] = js.undefined
   }
   object IntentArgs {
     
@@ -345,19 +342,18 @@ object intentMod {
     }
   }
   
-  @js.native
   trait IntentState extends StObject {
     
     /**
       * The ARN of the Lex intent.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Checksum identifying the version of the intent that was created. The checksum is not
       * included as an argument because the resource will add it automatically when updating the intent.
       */
-    val checksum: js.UndefOr[Input[String]] = js.native
+    val checksum: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The statement that you want Amazon Lex to convey to the user
@@ -366,36 +362,36 @@ object intentMod {
       * application, you can't specify this element. The `followUpPrompt` and `conclusionStatement` are
       * mutually exclusive. You can specify only one. Attributes are documented under statement.
       */
-    val conclusionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]] = js.native
+    val conclusionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]] = js.undefined
     
     /**
       * Prompts the user to confirm the intent. This question should
       * have a yes or no answer. You you must provide both the `rejectionStatement` and `confirmationPrompt`,
       * or neither. Attributes are documented under prompt.
       */
-    val confirmationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]] = js.native
+    val confirmationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]] = js.undefined
     
     /**
       * Determines if a new slot type version is created when the initial
       * resource is created and on each update. Defaults to `false`.
       */
-    val createVersion: js.UndefOr[Input[Boolean]] = js.native
+    val createVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The date when the intent version was created.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the bot. Must be less than or equal to 200 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies a Lambda function to invoke for each user input. You can
       * invoke this Lambda function to personalize user interaction. Attributes are documented under code_hook.
       */
-    val dialogCodeHook: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]] = js.native
+    val dialogCodeHook: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]] = js.undefined
     
     /**
       * Amazon Lex uses this prompt to solicit additional activity after
@@ -403,24 +399,24 @@ object intentMod {
       * user to order a drink. The `followUpPrompt` field and the `conclusionStatement` field are mutually
       * exclusive. You can specify only one. Attributes are documented under follow_up_prompt.
       */
-    val followUpPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]] = js.native
+    val followUpPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]] = js.undefined
     
     /**
       * Describes how the intent is fulfilled. For example, after a
       * user provides all of the information for a pizza order, `fulfillmentActivity` defines how the bot
       * places an order with a local pizza store. Attributes are documented under fulfillment_activity.
       */
-    val fulfillmentActivity: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]] = js.native
+    val fulfillmentActivity: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]] = js.undefined
     
     /**
       * The date when the $LATEST version of this intent was updated.
       */
-    val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the intent slot that you want to create. The name is case sensitive. Must be less than or equal to 100 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique identifier for the built-in intent to base this
@@ -428,32 +424,32 @@ object intentMod {
       * [Standard Built-in Intents](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/standard-intents)
       * in the Alexa Skills Kit.
       */
-    val parentIntentSignature: js.UndefOr[Input[String]] = js.native
+    val parentIntentSignature: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the user answers "no" to the question defined in the prompt field,
       * Amazon Lex responds with this statement to acknowledge that the intent was canceled. Attributes are
       * documented below under statement.
       */
-    val rejectionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]] = js.native
+    val rejectionStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]] = js.undefined
     
     /**
       * If you know a specific pattern with which users might respond to
       * an Amazon Lex request for a slot value, you can provide those utterances to improve accuracy. This
       * is optional. In most cases, Amazon Lex is capable of understanding user utterances. Must have between 1 and 10 items in the list, and each item must be less than or equal to 200 characters in length.
       */
-    val sampleUtterances: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val sampleUtterances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An list of intent slots. At runtime, Amazon Lex elicits required slot values
       * from the user using prompts defined in the slots. Attributes are documented under slot.
       */
-    val slots: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]] = js.native
+    val slots: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]] = js.undefined
     
     /**
       * The version of the bot.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object IntentState {
     

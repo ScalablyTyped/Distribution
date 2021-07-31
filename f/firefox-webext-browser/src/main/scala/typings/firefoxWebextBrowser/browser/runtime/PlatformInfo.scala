@@ -2,24 +2,22 @@ package typings.firefoxWebextBrowser.browser.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object containing information about the current platform. */
-@js.native
 trait PlatformInfo extends StObject {
   
   /** The machine's processor architecture. */
-  var arch: PlatformArch = js.native
+  var arch: PlatformArch
   
   /**
     * The native client architecture. This may be different from arch on some platforms.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var nacl_arch: js.UndefOr[PlatformNaclArch] = js.native
+  var nacl_arch: js.UndefOr[PlatformNaclArch] = js.undefined
   
   /** The operating system the browser is running on. */
-  var os: PlatformOs = js.native
+  var os: PlatformOs
 }
 object PlatformInfo {
   

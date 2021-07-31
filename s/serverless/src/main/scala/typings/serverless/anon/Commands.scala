@@ -3,19 +3,17 @@ package typings.serverless.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commands extends StObject {
   
-  var commands: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var commands: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   
-  var lifecycleEvents: js.UndefOr[js.Array[String]] = js.native
+  var lifecycleEvents: js.UndefOr[js.Array[String]] = js.undefined
   
-  var options: js.UndefOr[StringDictionary[Required]] = js.native
+  var options: js.UndefOr[StringDictionary[Required]] = js.undefined
   
-  var usage: js.UndefOr[String] = js.native
+  var usage: js.UndefOr[String] = js.undefined
 }
 object Commands {
   

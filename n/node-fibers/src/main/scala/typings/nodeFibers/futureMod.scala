@@ -2,28 +2,29 @@ package typings.nodeFibers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object futureMod {
   
   @JSImport("fibers/future", JSImport.Namespace)
   @js.native
-  class ^ () extends Future
+  class ^ ()
+    extends StObject
+       with Future
+  @JSImport("fibers/future", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("fibers/future", "wait")
-  @js.native
-  def wait_(future_list: js.Array[Future]): js.Any = js.native
+  @scala.inline
+  def wait_(future_list: js.Array[Future]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future_list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   /* static member */
-  @JSImport("fibers/future", "wait")
-  @js.native
-  def wait_(future: Future): js.Any = js.native
+  @scala.inline
+  def wait_(future: Future): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(future.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("fibers/future", "wrap")
-  @js.native
-  def wrap(fn: js.Function): Future = js.native
+  @scala.inline
+  def wrap(fn: js.Function): Future = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[Future]
   
   @js.native
   trait Future extends StObject {

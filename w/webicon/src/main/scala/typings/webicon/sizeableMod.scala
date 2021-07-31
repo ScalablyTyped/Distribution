@@ -2,18 +2,16 @@ package typings.webicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sizeableMod {
   
-  @js.native
   trait Sizeable extends StObject {
     
     /**
       * The default size of the icon.
       */
-    var iconSize: js.UndefOr[Double] = js.native
+    var iconSize: js.UndefOr[Double] = js.undefined
   }
   object Sizeable {
     

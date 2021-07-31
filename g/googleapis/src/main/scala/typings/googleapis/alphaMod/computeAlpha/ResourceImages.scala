@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Images")
@@ -32,7 +31,7 @@ class ResourceImages protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceImagesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceImagesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceImages protected () extends StObject {
     */
   def deprecate(): GaxiosPromise[SchemaOperation] = js.native
   def deprecate(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def deprecate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def deprecate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deprecate(params: ParamsResourceImagesDeprecate): GaxiosPromise[SchemaOperation] = js.native
   def deprecate(params: ParamsResourceImagesDeprecate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def deprecate(
@@ -96,7 +95,7 @@ class ResourceImages protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaImage] = js.native
   def get(callback: BodyResponseCallback[SchemaImage]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImage] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImage] = js.native
   def get(params: ParamsResourceImagesGet): GaxiosPromise[SchemaImage] = js.native
   def get(params: ParamsResourceImagesGet, callback: BodyResponseCallback[SchemaImage]): Unit = js.native
   def get(
@@ -127,7 +126,7 @@ class ResourceImages protected () extends StObject {
     */
   def getFromFamily(): GaxiosPromise[SchemaImage] = js.native
   def getFromFamily(callback: BodyResponseCallback[SchemaImage]): Unit = js.native
-  def getFromFamily(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImage] = js.native
+  def getFromFamily(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImage] = js.native
   def getFromFamily(params: ParamsResourceImagesGetfromfamily): GaxiosPromise[SchemaImage] = js.native
   def getFromFamily(params: ParamsResourceImagesGetfromfamily, callback: BodyResponseCallback[SchemaImage]): Unit = js.native
   def getFromFamily(
@@ -158,7 +157,7 @@ class ResourceImages protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceImagesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceImagesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -191,7 +190,7 @@ class ResourceImages protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceImagesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceImagesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -229,7 +228,7 @@ class ResourceImages protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaImageList] = js.native
   def list(callback: BodyResponseCallback[SchemaImageList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImageList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImageList] = js.native
   def list(params: ParamsResourceImagesList): GaxiosPromise[SchemaImageList] = js.native
   def list(params: ParamsResourceImagesList, callback: BodyResponseCallback[SchemaImageList]): Unit = js.native
   def list(
@@ -261,7 +260,7 @@ class ResourceImages protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceImagesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceImagesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -293,7 +292,7 @@ class ResourceImages protected () extends StObject {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceImagesSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceImagesSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -324,7 +323,7 @@ class ResourceImages protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceImagesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceImagesTestiampermissions,

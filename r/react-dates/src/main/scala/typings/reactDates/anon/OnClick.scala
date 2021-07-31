@@ -8,23 +8,21 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClick extends StObject {
   
-  var ariaLabel: String = js.native
+  var ariaLabel: String
   
-  var onClick: MouseEventHandler[Element] = js.native
+  var onClick: MouseEventHandler[Element]
   
-  var ref: Ref[HTMLElement] = js.native
+  var ref: Ref[HTMLElement]
 }
 object OnClick {
   
   @scala.inline
   def apply(ariaLabel: String, onClick: MouseEvent[Element, NativeMouseEvent] => Unit): OnClick = {
-    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
+    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), ref = null)
     __obj.asInstanceOf[OnClick]
   }
   

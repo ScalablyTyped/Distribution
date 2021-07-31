@@ -12,7 +12,7 @@ Native “Hello, world!” addon, useful for testing
 | Keywords           | hello, world, native, addon, c, c++ |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 1829 |
+| # downloads        | 1822 |
 | # stars            | 0 |
 
 ## Links

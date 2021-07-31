@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileHash extends StObject {
   
   // File hash type. Possible values are: unknown, sha1, sha256, md5, authenticodeHash256, lsHash, ctph, peSha1, peSha256.
-  var hashType: js.UndefOr[NullableOption[FileHashType]] = js.native
+  var hashType: js.UndefOr[NullableOption[FileHashType]] = js.undefined
   
   // Value of the file hash.
-  var hashValue: js.UndefOr[NullableOption[String]] = js.native
+  var hashValue: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FileHash {
   

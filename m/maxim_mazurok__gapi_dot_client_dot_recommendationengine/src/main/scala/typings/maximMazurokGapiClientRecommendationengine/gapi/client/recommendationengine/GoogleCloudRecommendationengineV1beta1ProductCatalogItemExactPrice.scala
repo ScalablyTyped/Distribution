@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice extends StObject {
   
   /** Optional. Display price of the product. */
-  var displayPrice: js.UndefOr[Double] = js.native
+  var displayPrice: js.UndefOr[Double] = js.undefined
   
   /** Optional. Price of the product without any discount. If zero, by default set to be the 'displayPrice'. */
-  var originalPrice: js.UndefOr[Double] = js.native
+  var originalPrice: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice {
   

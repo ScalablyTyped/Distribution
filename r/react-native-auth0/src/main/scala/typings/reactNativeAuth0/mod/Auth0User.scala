@@ -2,37 +2,35 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0User[T] extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var email: String = js.native
+  var email: String
   
-  var emailVerified: Boolean = js.native
+  var emailVerified: Boolean
   
-  var identities: js.Array[_] = js.native
+  var identities: js.Array[js.Any]
   
-  var last_ip: js.UndefOr[String] = js.native
+  var last_ip: js.UndefOr[String] = js.undefined
   
-  var last_login: js.UndefOr[String] = js.native
+  var last_login: js.UndefOr[String] = js.undefined
   
-  var logins_count: Double = js.native
+  var logins_count: Double
   
-  var name: String = js.native
+  var name: String
   
-  var nickname: String = js.native
+  var nickname: String
   
-  var picture: js.UndefOr[String] = js.native
+  var picture: js.UndefOr[String] = js.undefined
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var userId: String = js.native
+  var userId: String
   
-  var userMetadata: js.UndefOr[T] = js.native
+  var userMetadata: js.UndefOr[T] = js.undefined
 }
 object Auth0User {
   
@@ -41,7 +39,7 @@ object Auth0User {
     created_at: String,
     email: String,
     emailVerified: Boolean,
-    identities: js.Array[_],
+    identities: js.Array[js.Any],
     logins_count: Double,
     name: String,
     nickname: String,
@@ -53,7 +51,7 @@ object Auth0User {
   }
   
   @scala.inline
-  implicit class Auth0UserMutableBuilder[Self <: Auth0User[_], T] (val x: Self with Auth0User[T]) extends AnyVal {
+  implicit class Auth0UserMutableBuilder[Self <: Auth0User[?], T] (val x: Self & Auth0User[T]) extends AnyVal {
     
     @scala.inline
     def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
@@ -65,7 +63,7 @@ object Auth0User {
     def setEmailVerified(value: Boolean): Self = StObject.set(x, "emailVerified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentities(value: js.Array[_]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+    def setIdentities(value: js.Array[js.Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIdentitiesVarargs(value: js.Any*): Self = StObject.set(x, "identities", js.Array(value :_*))

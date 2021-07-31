@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutGridMod {
@@ -17,19 +16,25 @@ object layoutGridMod {
   object ALIGNMENT extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ALIGNMENT with String] = js.native
+    def apply(value: String): js.UndefOr[ALIGNMENT & String] = js.native
     
     @js.native
-    sealed trait center extends ALIGNMENT
-    /* "center" */ val center: typings.baseui.layoutGridMod.ALIGNMENT.center with String = js.native
+    sealed trait center
+      extends StObject
+         with ALIGNMENT
+    /* "center" */ val center: typings.baseui.layoutGridMod.ALIGNMENT.center & String = js.native
     
     @js.native
-    sealed trait end extends ALIGNMENT
-    /* "flex-end" */ val end: typings.baseui.layoutGridMod.ALIGNMENT.end with String = js.native
+    sealed trait end
+      extends StObject
+         with ALIGNMENT
+    /* "flex-end" */ val end: typings.baseui.layoutGridMod.ALIGNMENT.end & String = js.native
     
     @js.native
-    sealed trait start extends ALIGNMENT
-    /* "flex-start" */ val start: typings.baseui.layoutGridMod.ALIGNMENT.start with String = js.native
+    sealed trait start
+      extends StObject
+         with ALIGNMENT
+    /* "flex-start" */ val start: typings.baseui.layoutGridMod.ALIGNMENT.start & String = js.native
   }
   
   @js.native
@@ -39,15 +44,19 @@ object layoutGridMod {
   object BEHAVIOR extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[BEHAVIOR with String] = js.native
+    def apply(value: String): js.UndefOr[BEHAVIOR & String] = js.native
     
     @js.native
-    sealed trait fixed extends BEHAVIOR
-    /* "fixed" */ val fixed: typings.baseui.layoutGridMod.BEHAVIOR.fixed with String = js.native
+    sealed trait fixed
+      extends StObject
+         with BEHAVIOR
+    /* "fixed" */ val fixed: typings.baseui.layoutGridMod.BEHAVIOR.fixed & String = js.native
     
     @js.native
-    sealed trait fluid extends BEHAVIOR
-    /* "fluid" */ val fluid: typings.baseui.layoutGridMod.BEHAVIOR.fluid with String = js.native
+    sealed trait fluid
+      extends StObject
+         with BEHAVIOR
+    /* "fluid" */ val fluid: typings.baseui.layoutGridMod.BEHAVIOR.fluid & String = js.native
   }
   
   @JSImport("baseui/layout-grid", "Cell")
@@ -66,12 +75,11 @@ object layoutGridMod {
   @js.native
   val StyledGrid: StyletronComponent[StyledGridProps] = js.native
   
-  @js.native
   trait CellOverrides extends StObject {
     
     var Cell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object CellOverrides {
     
@@ -94,20 +102,19 @@ object layoutGridMod {
     }
   }
   
-  @js.native
   trait CellProps extends StObject {
     
-    var align: js.UndefOr[Responsive[ALIGNMENT]] = js.native
+    var align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var order: js.UndefOr[Responsive[Double]] = js.native
+    var order: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var overrides: js.UndefOr[CellOverrides] = js.native
+    var overrides: js.UndefOr[CellOverrides] = js.undefined
     
-    var skip: js.UndefOr[Responsive[Double]] = js.native
+    var skip: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var span: js.UndefOr[Responsive[Double]] = js.native
+    var span: js.UndefOr[Responsive[Double]] = js.undefined
   }
   object CellProps {
     
@@ -170,12 +177,11 @@ object layoutGridMod {
     }
   }
   
-  @js.native
   trait GridOverrides extends StObject {
     
     var Grid: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object GridOverrides {
     
@@ -198,30 +204,29 @@ object layoutGridMod {
     }
   }
   
-  @js.native
   trait GridProps extends StObject {
     
-    var align: js.UndefOr[Responsive[ALIGNMENT]] = js.native
+    var align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
     
-    var behavior: js.UndefOr[BEHAVIOR] = js.native
+    var behavior: js.UndefOr[BEHAVIOR] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var gridColumns: js.UndefOr[Responsive[Double]] = js.native
+    var gridColumns: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var gridGaps: js.UndefOr[Responsive[Double]] = js.native
+    var gridGaps: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var gridGutters: js.UndefOr[Responsive[Double]] = js.native
+    var gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var gridMargins: js.UndefOr[Responsive[Double]] = js.native
+    var gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
     
-    var gridMaxWidth: js.UndefOr[Double] = js.native
+    var gridMaxWidth: js.UndefOr[Double] = js.undefined
     
     var gridUnit: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var overrides: js.UndefOr[GridOverrides] = js.native
+    var overrides: js.UndefOr[GridOverrides] = js.undefined
   }
   object GridProps {
     
@@ -315,34 +320,33 @@ object layoutGridMod {
   
   type Responsive[T] = T | js.Array[T]
   
-  @js.native
   trait StyledCellProps extends StObject {
     
     @JSName("$align")
-    var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.native
+    var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
     
     @JSName("$gridColumns")
-    var $gridColumns: js.UndefOr[Responsive[Double]] = js.native
+    var $gridColumns: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$gridGaps")
-    var $gridGaps: js.UndefOr[Responsive[Double]] = js.native
+    var $gridGaps: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$gridGutters")
-    var $gridGutters: js.UndefOr[Responsive[Double]] = js.native
+    var $gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$gridUnit")
     var $gridUnit: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     @JSName("$order")
-    var $order: js.UndefOr[Responsive[Double]] = js.native
+    var $order: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$skip")
-    var $skip: js.UndefOr[Responsive[Double]] = js.native
+    var $skip: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$span")
-    var $span: js.UndefOr[Responsive[Double]] = js.native
+    var $span: js.UndefOr[Responsive[Double]] = js.undefined
   }
   object StyledCellProps {
     
@@ -428,28 +432,27 @@ object layoutGridMod {
     }
   }
   
-  @js.native
   trait StyledGridProps extends StObject {
     
     @JSName("$align")
-    var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.native
+    var $align: js.UndefOr[Responsive[ALIGNMENT]] = js.undefined
     
     @JSName("$behavior")
-    var $behavior: js.UndefOr[BEHAVIOR] = js.native
+    var $behavior: js.UndefOr[BEHAVIOR] = js.undefined
     
     @JSName("$gridGutters")
-    var $gridGutters: js.UndefOr[Responsive[Double]] = js.native
+    var $gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$gridMargins")
-    var $gridMargins: js.UndefOr[Responsive[Double]] = js.native
+    var $gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
     
     @JSName("$gridMaxWidth")
-    var $gridMaxWidth: js.UndefOr[Double] = js.native
+    var $gridMaxWidth: js.UndefOr[Double] = js.undefined
     
     @JSName("$gridUnit")
     var $gridUnit: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object StyledGridProps {
     

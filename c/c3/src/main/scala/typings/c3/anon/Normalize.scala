@@ -2,10 +2,8 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Normalize extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Normalize extends StObject {
     *
     * **Note**: For stacking, the `data.groups` option should be set and have positive values. The yAxis will be set in percentage value (0 ~ 100%).
     */
-  var normalize: js.UndefOr[Boolean] = js.native
+  var normalize: js.UndefOr[Boolean] = js.undefined
 }
 object Normalize {
   

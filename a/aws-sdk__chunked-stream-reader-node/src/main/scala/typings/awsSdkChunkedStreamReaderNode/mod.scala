@@ -4,15 +4,16 @@ import typings.node.streamMod.Readable
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/chunked-stream-reader-node", "streamReader")
+  @JSImport("@aws-sdk/chunked-stream-reader-node", JSImport.Namespace)
   @js.native
-  def streamReader(stream: Readable, onChunk: js.Function1[/* chunk */ Uint8Array, Unit]): js.Promise[Unit] = js.native
-  @JSImport("@aws-sdk/chunked-stream-reader-node", "streamReader")
-  @js.native
-  def streamReader(stream: Readable, onChunk: js.Function1[/* chunk */ Uint8Array, Unit], chunkSize: Double): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def streamReader(stream: Readable, onChunk: js.Function1[/* chunk */ Uint8Array, Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamReader")(stream.asInstanceOf[js.Any], onChunk.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def streamReader(stream: Readable, onChunk: js.Function1[/* chunk */ Uint8Array, Unit], chunkSize: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamReader")(stream.asInstanceOf[js.Any], onChunk.asInstanceOf[js.Any], chunkSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

@@ -2,47 +2,45 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOrbitOptions extends StObject {
   
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var animInFromLeft: js.UndefOr[String] = js.native
+  var animInFromLeft: js.UndefOr[String] = js.undefined
   
-  var animInFromRight: js.UndefOr[String] = js.native
+  var animInFromRight: js.UndefOr[String] = js.undefined
   
-  var animOutToLeft: js.UndefOr[String] = js.native
+  var animOutToLeft: js.UndefOr[String] = js.undefined
   
-  var animOutToRight: js.UndefOr[String] = js.native
+  var animOutToRight: js.UndefOr[String] = js.undefined
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var boxOfBullets: js.UndefOr[String] = js.native
+  var boxOfBullets: js.UndefOr[String] = js.undefined
   
-  var bullets: js.UndefOr[Boolean] = js.native
+  var bullets: js.UndefOr[Boolean] = js.undefined
   
-  var containerClass: js.UndefOr[String] = js.native
+  var containerClass: js.UndefOr[String] = js.undefined
   
-  var infiniteWrap: js.UndefOr[Boolean] = js.native
+  var infiniteWrap: js.UndefOr[Boolean] = js.undefined
   
-  var navButtons: js.UndefOr[Boolean] = js.native
+  var navButtons: js.UndefOr[Boolean] = js.undefined
   
-  var nextClass: js.UndefOr[String] = js.native
+  var nextClass: js.UndefOr[String] = js.undefined
   
-  var pauseOnHover: js.UndefOr[Boolean] = js.native
+  var pauseOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var prevClass: js.UndefOr[String] = js.native
+  var prevClass: js.UndefOr[String] = js.undefined
   
-  var slideClass: js.UndefOr[String] = js.native
+  var slideClass: js.UndefOr[String] = js.undefined
   
-  var swipe: js.UndefOr[Boolean] = js.native
+  var swipe: js.UndefOr[Boolean] = js.undefined
   
-  var timerDelay: js.UndefOr[Double] = js.native
+  var timerDelay: js.UndefOr[Double] = js.undefined
   
-  var useMUI: js.UndefOr[Boolean] = js.native
+  var useMUI: js.UndefOr[Boolean] = js.undefined
 }
 object IOrbitOptions {
   

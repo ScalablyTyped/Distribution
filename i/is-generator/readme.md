@@ -11,8 +11,8 @@ Check whether a value is a generator or generator function
 | Full name          | is-generator |
 | Keywords           | generator, generator function, yield, function, await, es6, function* |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 17593259 |
+| # dependents       | 57 |
+| # downloads        | 22203683 |
 | # stars            | 1 |
 
 ## Links

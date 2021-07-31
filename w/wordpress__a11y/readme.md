@@ -10,13 +10,13 @@ Accessibility (a11y) utilities for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/a11y |
 | Keywords           | wordpress, gutenberg, accessibility, a11y, aria-live |
-| # releases         | 16 |
-| # dependents       | 13 |
-| # downloads        | 673731 |
+| # releases         | 18 |
+| # dependents       | 16 |
+| # downloads        | 809117 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/a11y/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/a11y/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fa11y)

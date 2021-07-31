@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.MultiColumnComboBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofMultiColumnComboBox extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): MultiColumnComboBox = js.native
+  def extend(proto: js.Object): MultiColumnComboBox
   
   /* static member */
-  var fn: MultiColumnComboBox = js.native
+  var fn: MultiColumnComboBox
 }
 object TypeofMultiColumnComboBox {
   

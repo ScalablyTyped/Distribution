@@ -20,7 +20,6 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.trace
 import typings.devtoolsProtocol.devtoolsProtocolStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

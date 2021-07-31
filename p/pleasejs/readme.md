@@ -11,7 +11,7 @@ JS library to generate random pleasing colors/color schemes
 | Keywords           | color, scheme, random |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 36004 |
+| # downloads        | 46703 |
 | # stars            | 3 |
 
 ## Links

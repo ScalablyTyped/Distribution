@@ -4,7 +4,6 @@ import typings.awsSdkTypes.httpMod.HeaderBag
 import typings.awsSdkTypes.httpMod.QueryParameterBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpRequestMod {
@@ -12,36 +11,54 @@ object httpRequestMod {
   @JSImport("@aws-sdk/protocol-http/dist/cjs/httpRequest", "HttpRequest")
   @js.native
   class HttpRequest protected ()
-    extends typings.awsSdkTypes.httpMod.HttpRequest {
+    extends StObject
+       with typings.awsSdkTypes.httpMod.HttpRequest {
     def this(options: HttpRequestOptions) = this()
+    
+    /* CompleteClass */
+    var headers: HeaderBag = js.native
+    
+    /* CompleteClass */
+    var hostname: String = js.native
+    
+    /* CompleteClass */
+    var method: String = js.native
+    
+    /* CompleteClass */
+    var path: String = js.native
+    
+    /* CompleteClass */
+    var protocol: String = js.native
   }
   /* static members */
   object HttpRequest {
     
-    @JSImport("@aws-sdk/protocol-http/dist/cjs/httpRequest", "HttpRequest.isInstance")
+    @JSImport("@aws-sdk/protocol-http/dist/cjs/httpRequest", "HttpRequest")
     @js.native
-    def isInstance(request: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isInstance(request: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(request.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean]
   }
   
   /* Inlined std.Partial<@aws-sdk/types.@aws-sdk/types.HttpMessage> & std.Partial<@aws-sdk/types.@aws-sdk/types.Endpoint> & {  method :string | undefined} */
-  @js.native
   trait HttpRequestOptions extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[HeaderBag] = js.native
+    var headers: js.UndefOr[HeaderBag] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[QueryParameterBag] = js.native
+    var query: js.UndefOr[QueryParameterBag] = js.undefined
   }
   object HttpRequestOptions {
     

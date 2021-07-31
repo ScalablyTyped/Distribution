@@ -3,18 +3,16 @@ package typings.vegaLite.anon
 import typings.vegaLite.channeldefMod.Conditional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionConditional extends StObject {
   
-  var condition: Conditional[_] = js.native
+  var condition: Conditional[js.Any]
 }
 object ConditionConditional {
   
   @scala.inline
-  def apply(condition: Conditional[_]): ConditionConditional = {
+  def apply(condition: Conditional[js.Any]): ConditionConditional = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionConditional]
   }
@@ -23,6 +21,6 @@ object ConditionConditional {
   implicit class ConditionConditionalMutableBuilder[Self <: ConditionConditional] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCondition(value: Conditional[_]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    def setCondition(value: Conditional[js.Any]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }
 }

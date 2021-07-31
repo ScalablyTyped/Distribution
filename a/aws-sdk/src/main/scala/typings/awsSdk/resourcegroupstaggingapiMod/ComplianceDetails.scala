@@ -2,26 +2,24 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceDetails extends StObject {
   
   /**
     * Whether a resource is compliant with the effective tag policy.
     */
-  var ComplianceStatus: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ComplianceStatus] = js.native
+  var ComplianceStatus: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ComplianceStatus] = js.undefined
   
   /**
     * These are keys defined in the effective policy that are on the resource with either incorrect case treatment or noncompliant values. 
     */
-  var KeysWithNoncompliantValues: js.UndefOr[TagKeyList] = js.native
+  var KeysWithNoncompliantValues: js.UndefOr[TagKeyList] = js.undefined
   
   /**
     * These tag keys on the resource are noncompliant with the effective tag policy.
     */
-  var NoncompliantKeys: js.UndefOr[TagKeyList] = js.native
+  var NoncompliantKeys: js.UndefOr[TagKeyList] = js.undefined
 }
 object ComplianceDetails {
   

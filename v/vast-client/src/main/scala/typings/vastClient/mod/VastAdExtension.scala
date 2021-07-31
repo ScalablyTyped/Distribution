@@ -2,15 +2,13 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastAdExtension extends StObject {
   
-  var attributes: VastAdAttributes = js.native
+  var attributes: VastAdAttributes
   
-  var children: js.Array[VastAdExtensionChild] = js.native
+  var children: js.Array[VastAdExtensionChild]
 }
 object VastAdExtension {
   

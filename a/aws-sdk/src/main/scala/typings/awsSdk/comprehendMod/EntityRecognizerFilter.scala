@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityRecognizerFilter extends StObject {
   
   /**
     * The status of an entity recognizer.
     */
-  var Status: js.UndefOr[ModelStatus] = js.native
+  var Status: js.UndefOr[ModelStatus] = js.undefined
   
   /**
     * Filters the list of entities based on the time that the list was submitted for processing. Returns only jobs submitted after the specified time. Jobs are returned in ascending order, oldest to newest.
     */
-  var SubmitTimeAfter: js.UndefOr[Timestamp] = js.native
+  var SubmitTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Filters the list of entities based on the time that the list was submitted for processing. Returns only jobs submitted before the specified time. Jobs are returned in descending order, newest to oldest.
     */
-  var SubmitTimeBefore: js.UndefOr[Timestamp] = js.native
+  var SubmitTimeBefore: js.UndefOr[Timestamp] = js.undefined
 }
 object EntityRecognizerFilter {
   

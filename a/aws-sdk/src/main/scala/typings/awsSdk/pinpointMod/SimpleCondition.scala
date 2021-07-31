@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleCondition extends StObject {
   
   /**
     * The dimension settings for the event that's associated with the activity.
     */
-  var EventCondition: js.UndefOr[typings.awsSdk.pinpointMod.EventCondition] = js.native
+  var EventCondition: js.UndefOr[typings.awsSdk.pinpointMod.EventCondition] = js.undefined
   
   /**
     * The segment that's associated with the activity.
     */
-  var SegmentCondition: js.UndefOr[typings.awsSdk.pinpointMod.SegmentCondition] = js.native
+  var SegmentCondition: js.UndefOr[typings.awsSdk.pinpointMod.SegmentCondition] = js.undefined
   
   /**
     * The dimension settings for the segment that's associated with the activity.
     */
-  var SegmentDimensions: js.UndefOr[typings.awsSdk.pinpointMod.SegmentDimensions] = js.native
+  var SegmentDimensions: js.UndefOr[typings.awsSdk.pinpointMod.SegmentDimensions] = js.undefined
 }
 object SimpleCondition {
   

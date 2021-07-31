@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputEventInit extends UIEventInit {
+trait InputEventInit
+  extends StObject
+     with UIEventInit {
   
-  var data: js.UndefOr[java.lang.String | Null] = js.native
+  var data: js.UndefOr[java.lang.String | Null] = js.undefined
   
-  var inputType: js.UndefOr[java.lang.String] = js.native
+  var inputType: js.UndefOr[java.lang.String] = js.undefined
   
-  var isComposing: js.UndefOr[scala.Boolean] = js.native
+  var isComposing: js.UndefOr[scala.Boolean] = js.undefined
 }
 object InputEventInit {
   

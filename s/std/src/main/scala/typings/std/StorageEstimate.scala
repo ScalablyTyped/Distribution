@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageEstimate extends StObject {
   
-  var quota: js.UndefOr[Double] = js.native
+  var quota: js.UndefOr[Double] = js.undefined
   
-  var usage: js.UndefOr[Double] = js.native
+  var usage: js.UndefOr[Double] = js.undefined
 }
 object StorageEstimate {
   

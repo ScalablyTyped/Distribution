@@ -3,11 +3,12 @@ package typings.mendixmodelsdk.javaactionsMod.javaactions
 import typings.mendixmodelsdk.codeactionsMod.codeactions.ICodeActionParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJavaActionParameter extends ICodeActionParameter {
+trait IJavaActionParameter
+  extends StObject
+     with ICodeActionParameter {
   
   /**
     * This property is required and cannot be set to null.

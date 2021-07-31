@@ -18,7 +18,6 @@ import typings.semanticUiReact.semanticUiReactStrings.equal
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formFormMod extends Shortcut {
@@ -28,7 +27,9 @@ object formFormMod extends Shortcut {
   val default: FormComponent = js.native
   
   @js.native
-  trait FormComponent extends FunctionComponent[FormProps] {
+  trait FormComponent
+    extends StObject
+       with FunctionComponent[FormProps] {
     
     var Button: StatelessComponent[FormButtonProps] = js.native
     
@@ -51,42 +52,43 @@ object formFormMod extends Shortcut {
   
   type FormProps = StrictFormProps
   
-  @js.native
-  trait StrictFormProps extends FormHTMLAttributes[HTMLFormElement] {
+  trait StrictFormProps
+    extends StObject
+       with FormHTMLAttributes[HTMLFormElement] {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Automatically show any error Message children. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** A form can have its color inverted for contrast. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Automatically show a loading indicator. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /** The HTML form submit handler. */
     @JSName("onSubmit")
-    var onSubmit_StrictFormProps: js.UndefOr[js.Function2[/* event */ FormEvent[HTMLFormElement], /* data */ FormProps, Unit]] = js.native
+    var onSubmit_StrictFormProps: js.UndefOr[js.Function2[/* event */ FormEvent[HTMLFormElement], /* data */ FormProps, Unit]] = js.undefined
     
     /** A comment can contain a form to reply to a comment. This may have arbitrary content. */
-    var reply: js.UndefOr[Boolean] = js.native
+    var reply: js.UndefOr[Boolean] = js.undefined
     
     /** A form can vary in size. */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
     /** Automatically show any success Message children. */
-    var success: js.UndefOr[Boolean] = js.native
+    var success: js.UndefOr[Boolean] = js.undefined
     
     /** A form can prevent itself from stacking on mobile. */
-    var unstackable: js.UndefOr[Boolean] = js.native
+    var unstackable: js.UndefOr[Boolean] = js.undefined
     
     /** Automatically show any warning Message children. */
-    var warning: js.UndefOr[Boolean] = js.native
+    var warning: js.UndefOr[Boolean] = js.undefined
     
     /** Forms can automatically divide fields to be equal width. */
-    var widths: js.UndefOr[equal] = js.native
+    var widths: js.UndefOr[equal] = js.undefined
   }
   object StrictFormProps {
     

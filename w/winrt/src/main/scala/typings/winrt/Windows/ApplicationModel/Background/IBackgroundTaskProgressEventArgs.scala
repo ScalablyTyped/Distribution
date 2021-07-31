@@ -2,15 +2,13 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTaskProgressEventArgs extends StObject {
   
-  var instanceId: String = js.native
+  var instanceId: String
   
-  var progress: Double = js.native
+  var progress: Double
 }
 object IBackgroundTaskProgressEventArgs {
   

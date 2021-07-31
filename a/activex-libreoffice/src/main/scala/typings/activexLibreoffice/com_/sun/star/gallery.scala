@@ -19,15 +19,14 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gallery {
   
   /** service to get access to the properties of a single Gallery item */
-  @js.native
   trait GalleryItem
-    extends XGalleryItem
+    extends StObject
+       with XGalleryItem
        with XPropertySet {
     
     /**
@@ -35,30 +34,30 @@ object gallery {
       *
       * This is an optional property and may not available for every item
       */
-    var Drawing: XComponent = js.native
+    var Drawing: XComponent
     
     /**
       * The type of the Gallery item
       * @see GalleryItemType
       */
-    var GalleryItemType: Double = js.native
+    var GalleryItemType: Double
     
     /**
       * the graphic content of the Gallery item
       *
       * This is an optional property and may not available for every item
       */
-    var Graphic: XGraphic = js.native
+    var Graphic: XGraphic
     
     /**
       * the thumbnail of the Gallery item
       *
       * The thumbnail may be either a pixel or a vector graphic
       */
-    var Thumbnail: XGraphic = js.native
+    var Thumbnail: XGraphic
     
     /** the title of the Gallery item */
-    var Title: String = js.native
+    var Title: String
     
     /**
       * the URL of the Gallery item
@@ -66,7 +65,7 @@ object gallery {
       * The interpretation of the URL depends on the type of the Gallery item. In case of graphic and media items, the URL is a "real" URL, in case of
       * drawings it is a private URL
       */
-    var URL: String = js.native
+    var URL: String
   }
   object GalleryItem {
     
@@ -154,9 +153,9 @@ object gallery {
     * provides access to a container of GalleryThemes and makes it possible for you to manipulate them.
     * @see XGalleryThemeProvider
     */
-  @js.native
   trait GalleryThemeProvider
-    extends XGalleryThemeProvider
+    extends StObject
+       with XGalleryThemeProvider
        with XInitialization
   object GalleryThemeProvider {
     
@@ -170,7 +169,7 @@ object gallery {
       getElementType: () => `type`,
       hasByName: String => Boolean,
       hasElements: () => Boolean,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       insertNewByName: String => XGalleryTheme,
       queryInterface: `type` => js.Any,
       release: () => Unit,
@@ -182,22 +181,23 @@ object gallery {
   }
   
   /** provides access to a single item of a Gallery theme. */
-  @js.native
-  trait XGalleryItem extends XInterface {
+  trait XGalleryItem
+    extends StObject
+       with XInterface {
     
     /**
       * retrieves the type of the Gallery item
       * @returns The type of the Gallery item
       * @see GalleryItemType
       */
-    val Type: Double = js.native
+    val Type: Double
     
     /**
       * retrieves the type of the Gallery item
       * @returns The type of the Gallery item
       * @see GalleryItemType
       */
-    def getType(): Double = js.native
+    def getType(): Double
   }
   object XGalleryItem {
     
@@ -231,20 +231,21 @@ object gallery {
     * @see com.sun.star.container.XIndexAccess
     * @see com.sun.star.sheet.DataPilotTable
     */
-  @js.native
-  trait XGalleryTheme extends XIndexAccess {
+  trait XGalleryTheme
+    extends StObject
+       with XIndexAccess {
     
     /**
       * retrieves the name of the Gallery theme
       * @returns The name of the Gallery theme
       */
-    val Name: String = js.native
+    val Name: String
     
     /**
       * retrieves the name of the Gallery theme
       * @returns The name of the Gallery theme
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * inserts an item
@@ -254,7 +255,7 @@ object gallery {
       * @see XGalleryItem
       * @see com.sun.star.lang.WrappedTargetException
       */
-    def insertDrawingByIndex(Drawing: XComponent, Index: Double): Double = js.native
+    def insertDrawingByIndex(Drawing: XComponent, Index: Double): Double
     
     /**
       * inserts an item
@@ -265,7 +266,7 @@ object gallery {
       * @see XGalleryItem
       * @see com.sun.star.lang.WrappedTargetException
       */
-    def insertGraphicByIndex(Graphic: XGraphic, Index: Double): Double = js.native
+    def insertGraphicByIndex(Graphic: XGraphic, Index: Double): Double
     
     /**
       * inserts an item
@@ -275,14 +276,14 @@ object gallery {
       * @see XGalleryItem
       * @see com.sun.star.lang.WrappedTargetException
       */
-    def insertURLByIndex(URL: String, Index: Double): Double = js.native
+    def insertURLByIndex(URL: String, Index: Double): Double
     
     /**
       * deletes an item from the collection
       * @param Index The position of the item to be removed. The position is zero based.
       * @see com.sun.star.container.NoSuchElementException
       */
-    def removeByIndex(Index: Double): Unit = js.native
+    def removeByIndex(Index: Double): Unit
     
     /**
       * updates the theme
@@ -290,7 +291,7 @@ object gallery {
       * This method iterates over each item of the Gallery theme and updates it accordingly. Main purpose is to automatically regenerate the thumbnails and to
       * remove invalid items, that is items who have got an URL that has become invalid. This method also optimizes underlying data structures.
       */
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object XGalleryTheme {
     
@@ -349,8 +350,9 @@ object gallery {
     * This interface extends the interface {@link com.sun.star.container.XNameAccess} which provides access to existing Gallery themes collection.
     * @see com.sun.star.container.XNameAccess
     */
-  @js.native
-  trait XGalleryThemeProvider extends XNameAccess {
+  trait XGalleryThemeProvider
+    extends StObject
+       with XNameAccess {
     
     /**
       * creates a new Gallery theme and adds it to the collection.
@@ -358,14 +360,14 @@ object gallery {
       * @returns {@link XGalleryTheme} The created theme interface
       * @see com.sun.star.container.ElementExistException
       */
-    def insertNewByName(ThemeName: String): XGalleryTheme = js.native
+    def insertNewByName(ThemeName: String): XGalleryTheme
     
     /**
       * deletes a Gallery theme from the collection.
       * @param ThemeName The name of the Gallery theme to be removed. The theme with the given name must exist.
       * @see com.sun.star.container.NoSuchElementException
       */
-    def removeByName(ThemeName: String): Unit = js.native
+    def removeByName(ThemeName: String): Unit
   }
   object XGalleryThemeProvider {
     

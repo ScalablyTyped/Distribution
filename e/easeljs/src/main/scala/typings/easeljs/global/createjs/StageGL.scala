@@ -6,13 +6,13 @@ import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.StageGL")
 @js.native
 class StageGL protected ()
-  extends typings.easeljs.createjs.StageGL {
+  extends StObject
+     with typings.easeljs.createjs.StageGL {
   def this(canvas: String) = this()
   def this(canvas: js.Object) = this()
   def this(canvas: HTMLCanvasElement) = this()
@@ -162,24 +162,15 @@ object StageGL {
   def WEBGL_MAX_INDEX_NUM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBGL_MAX_INDEX_NUM")(x.asInstanceOf[js.Any])
   
   // methods
-  @JSGlobal("createjs.StageGL.buildUVRects")
-  @js.native
-  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet): js.Object = js.native
-  @JSGlobal("createjs.StageGL.buildUVRects")
-  @js.native
-  def buildUVRects(
-    spritesheet: typings.easeljs.createjs.SpriteSheet,
-    target: js.UndefOr[scala.Nothing],
-    onlyTarget: Boolean
-  ): js.Object = js.native
-  @JSGlobal("createjs.StageGL.buildUVRects")
-  @js.native
-  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet, target: Double): js.Object = js.native
-  @JSGlobal("createjs.StageGL.buildUVRects")
-  @js.native
-  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet, target: Double, onlyTarget: Boolean): js.Object = js.native
+  @scala.inline
+  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("buildUVRects")(spritesheet.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet, target: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUVRects")(spritesheet.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet, target: Double, onlyTarget: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUVRects")(spritesheet.asInstanceOf[js.Any], target.asInstanceOf[js.Any], onlyTarget.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def buildUVRects(spritesheet: typings.easeljs.createjs.SpriteSheet, target: Unit, onlyTarget: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUVRects")(spritesheet.asInstanceOf[js.Any], target.asInstanceOf[js.Any], onlyTarget.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSGlobal("createjs.StageGL.isWebGLActive")
-  @js.native
-  def isWebGLActive(ctx: CanvasRenderingContext2D): Boolean = js.native
+  @scala.inline
+  def isWebGLActive(ctx: CanvasRenderingContext2D): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLActive")(ctx.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

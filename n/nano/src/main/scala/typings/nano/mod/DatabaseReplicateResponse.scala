@@ -2,27 +2,25 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
-@js.native
 trait DatabaseReplicateResponse extends StObject {
   
   // Replication history
-  var history: js.Array[DatabaseReplicationHistoryItem] = js.native
+  var history: js.Array[DatabaseReplicationHistoryItem]
   
   // Replication status
-  var ok: Boolean = js.native
+  var ok: Boolean
   
   // Replication protocol version
-  var replication_id_version: Double = js.native
+  var replication_id_version: Double
   
   // Unique session ID
-  var session_id: String = js.native
+  var session_id: String
   
   // Last sequence number read from source database
-  var source_last_seq: Double = js.native
+  var source_last_seq: Double
 }
 object DatabaseReplicateResponse {
   

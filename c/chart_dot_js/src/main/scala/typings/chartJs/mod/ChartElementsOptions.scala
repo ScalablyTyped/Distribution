@@ -2,19 +2,17 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartElementsOptions extends StObject {
   
-  var arc: js.UndefOr[ChartArcOptions] = js.native
+  var arc: js.UndefOr[ChartArcOptions] = js.undefined
   
-  var line: js.UndefOr[ChartLineOptions] = js.native
+  var line: js.UndefOr[ChartLineOptions] = js.undefined
   
-  var point: js.UndefOr[ChartPointOptions] = js.native
+  var point: js.UndefOr[ChartPointOptions] = js.undefined
   
-  var rectangle: js.UndefOr[ChartRectangleOptions] = js.native
+  var rectangle: js.UndefOr[ChartRectangleOptions] = js.undefined
 }
 object ChartElementsOptions {
   

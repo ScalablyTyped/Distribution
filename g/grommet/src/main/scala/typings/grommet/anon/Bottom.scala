@@ -6,19 +6,17 @@ import typings.grommet.grommetStrings.right
 import typings.grommet.grommetStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: js.UndefOr[top | typings.grommet.grommetStrings.bottom] = js.native
+  var bottom: js.UndefOr[top | typings.grommet.grommetStrings.bottom] = js.undefined
   
-  var left: js.UndefOr[typings.grommet.grommetStrings.left | right] = js.native
+  var left: js.UndefOr[typings.grommet.grommetStrings.left | right] = js.undefined
   
-  var right: js.UndefOr[left | typings.grommet.grommetStrings.right] = js.native
+  var right: js.UndefOr[left | typings.grommet.grommetStrings.right] = js.undefined
   
-  var top: js.UndefOr[typings.grommet.grommetStrings.top | bottom] = js.native
+  var top: js.UndefOr[typings.grommet.grommetStrings.top | bottom] = js.undefined
 }
 object Bottom {
   

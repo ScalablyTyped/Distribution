@@ -2,19 +2,17 @@ package typings.jsend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: js.UndefOr[Double] = js.native
+    var code: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Object] = js.native
+    var data: js.UndefOr[js.Object] = js.undefined
     
-    var message: String = js.native
+    var message: String
   }
   object Code {
     
@@ -44,10 +42,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Strict extends StObject {
     
-    var strict: Boolean = js.native
+    var strict: Boolean
   }
   object Strict {
     

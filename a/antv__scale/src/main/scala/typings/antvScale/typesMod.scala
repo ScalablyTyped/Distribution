@@ -2,52 +2,50 @@ package typings.antvScale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   /* Inlined std.Partial<{  field :string,   values :std.Array<any>,   min :any,   max :any,   minLimit :any | undefined,   maxLimit :any | undefined,   alias :string,   range :std.Array<number>,   base :number,   exponent :number,   nice :boolean,   ticks :std.Array<any>,   tickInterval :number,   minTickInterval :number,   tickCount :number,   maxTickCount :number, formatter (v : any, k : number | undefined): any,   tickMethod :string | @antv/scale.@antv/scale/lib/types.TickMethod,   mask :string | undefined}> */
-  @js.native
   trait ScaleConfig extends StObject {
     
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
-    var base: js.UndefOr[Double] = js.native
+    var base: js.UndefOr[Double] = js.undefined
     
-    var exponent: js.UndefOr[Double] = js.native
+    var exponent: js.UndefOr[Double] = js.undefined
     
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[js.Function2[/* v */ js.Any, /* k */ js.UndefOr[Double], _]] = js.native
+    var formatter: js.UndefOr[js.Function2[/* v */ js.Any, /* k */ js.UndefOr[Double], js.Any]] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[js.Any] = js.native
+    var max: js.UndefOr[js.Any] = js.undefined
     
-    var maxLimit: js.UndefOr[js.Any] = js.native
+    var maxLimit: js.UndefOr[js.Any] = js.undefined
     
-    var maxTickCount: js.UndefOr[Double] = js.native
+    var maxTickCount: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[js.Any] = js.native
+    var min: js.UndefOr[js.Any] = js.undefined
     
-    var minLimit: js.UndefOr[js.Any] = js.native
+    var minLimit: js.UndefOr[js.Any] = js.undefined
     
-    var minTickInterval: js.UndefOr[Double] = js.native
+    var minTickInterval: js.UndefOr[Double] = js.undefined
     
-    var nice: js.UndefOr[Boolean] = js.native
+    var nice: js.UndefOr[Boolean] = js.undefined
     
-    var range: js.UndefOr[js.Array[Double]] = js.native
+    var range: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var tickCount: js.UndefOr[Double] = js.native
+    var tickCount: js.UndefOr[Double] = js.undefined
     
-    var tickInterval: js.UndefOr[Double] = js.native
+    var tickInterval: js.UndefOr[Double] = js.undefined
     
-    var tickMethod: js.UndefOr[String | TickMethod] = js.native
+    var tickMethod: js.UndefOr[String | TickMethod] = js.undefined
     
-    var ticks: js.UndefOr[js.Array[_]] = js.native
+    var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ScaleConfig {
     
@@ -85,7 +83,7 @@ object typesMod {
       def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
       @scala.inline
-      def setFormatter(value: (/* v */ js.Any, /* k */ js.UndefOr[Double]) => _): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
+      def setFormatter(value: (/* v */ js.Any, /* k */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
@@ -169,7 +167,7 @@ object typesMod {
       def setTickMethodUndefined: Self = StObject.set(x, "tickMethod", js.undefined)
       
       @scala.inline
-      def setTicks(value: js.Array[_]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+      def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
@@ -178,7 +176,7 @@ object typesMod {
       def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -226,17 +224,16 @@ object typesMod {
     def timeCat: typings.antvScale.antvScaleStrings.timeCat = "timeCat".asInstanceOf[typings.antvScale.antvScaleStrings.timeCat]
   }
   
-  @js.native
   trait Tick extends StObject {
     
     /** 展示名 */
-    var text: String = js.native
+    var text: String
     
     /** 定义域值 */
-    var tickValue: String | Double = js.native
+    var tickValue: String | Double
     
     /** 值域值 */
-    var value: Double = js.native
+    var value: Double
   }
   object Tick {
     

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHistogramsResponse extends StObject {
   
   /**
     * Histograms.
     */
-  var histograms: js.Array[Histogram] = js.native
+  var histograms: js.Array[Histogram]
 }
 object GetHistogramsResponse {
   

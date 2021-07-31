@@ -8,116 +8,99 @@ import typings.nodemailer.smtpConnectionMod.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedMod {
   
-  @JSImport("nodemailer/lib/shared", "assign")
+  @JSImport("nodemailer/lib/shared", JSImport.Namespace)
   @js.native
-  def assign(target: js.Object, sources: js.Object*): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodemailer/lib/shared", "callbackPromise")
-  @js.native
-  def callbackPromise(resolve: js.Function1[/* repeated */ js.Any, Unit], reject: js.Function1[/* err */ Error, Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def assign(target: js.Object, sources: js.Object*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("nodemailer/lib/shared", "encodeXText")
-  @js.native
-  def encodeXText(str: String): String = js.native
+  @scala.inline
+  def callbackPromise(resolve: js.Function1[/* repeated */ js.Any, Unit], reject: js.Function1[/* err */ Error, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("callbackPromise")(resolve.asInstanceOf[js.Any], reject.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("nodemailer/lib/shared", "getLogger")
-  @js.native
-  def getLogger(): Logger = js.native
-  @JSImport("nodemailer/lib/shared", "getLogger")
-  @js.native
-  def getLogger(options: js.UndefOr[scala.Nothing], defaults: StringDictionary[js.Any]): Logger = js.native
-  @JSImport("nodemailer/lib/shared", "getLogger")
-  @js.native
-  def getLogger(options: StringDictionary[js.Any]): Logger = js.native
-  @JSImport("nodemailer/lib/shared", "getLogger")
-  @js.native
-  def getLogger(options: StringDictionary[js.Any], defaults: StringDictionary[js.Any]): Logger = js.native
+  @scala.inline
+  def encodeXText(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeXText")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/shared", "parseConnectionUrl")
-  @js.native
-  def parseConnectionUrl(url: String): Options = js.native
+  @scala.inline
+  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  @scala.inline
+  def getLogger(options: StringDictionary[js.Any]): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  @scala.inline
+  def getLogger(options: StringDictionary[js.Any], defaults: StringDictionary[js.Any]): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  @scala.inline
+  def getLogger(options: Unit, defaults: StringDictionary[js.Any]): Logger = (^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Logger]
   
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
-  def resolveContent(data: js.Array[_], key: String): js.Promise[Buffer | String] = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
+  @scala.inline
+  def parseConnectionUrl(url: String): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("parseConnectionUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Options]
+  
+  @scala.inline
+  def resolveContent(data: js.Array[js.Any], key: String): js.Promise[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | String]]
+  @scala.inline
   def resolveContent(
-    data: js.Array[_],
+    data: js.Array[js.Any],
     key: String,
     callback: js.Function2[/* err */ Error | Null, /* value */ Buffer | String, Unit]
-  ): Unit = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
-  def resolveContent(data: js.Array[_], key: Double): js.Promise[Buffer | String] = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolveContent(data: js.Array[js.Any], key: Double): js.Promise[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | String]]
+  @scala.inline
   def resolveContent(
-    data: js.Array[_],
+    data: js.Array[js.Any],
     key: Double,
     callback: js.Function2[/* err */ Error | Null, /* value */ Buffer | String, Unit]
-  ): Unit = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
-  def resolveContent(data: js.Object, key: String): js.Promise[Buffer | String] = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolveContent(data: js.Object, key: String): js.Promise[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | String]]
+  @scala.inline
   def resolveContent(
     data: js.Object,
     key: String,
     callback: js.Function2[/* err */ Error | Null, /* value */ Buffer | String, Unit]
-  ): Unit = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
-  def resolveContent(data: js.Object, key: Double): js.Promise[Buffer | String] = js.native
-  @JSImport("nodemailer/lib/shared", "resolveContent")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolveContent(data: js.Object, key: Double): js.Promise[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | String]]
+  @scala.inline
   def resolveContent(
     data: js.Object,
     key: Double,
     callback: js.Function2[/* err */ Error | Null, /* value */ Buffer | String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContent")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("nodemailer/lib/shared", "resolveHostname")
-  @js.native
-  def resolveHostname(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error | Null, /* value */ ResolveHostnameValue, Unit]
-  ): Unit = js.native
-  @JSImport("nodemailer/lib/shared", "resolveHostname")
-  @js.native
+  @scala.inline
   def resolveHostname(
     options: Null,
     callback: js.Function2[/* err */ Error | Null, /* value */ ResolveHostnameValue, Unit]
-  ): Unit = js.native
-  @JSImport("nodemailer/lib/shared", "resolveHostname")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHostname")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolveHostname(
+    options: Unit,
+    callback: js.Function2[/* err */ Error | Null, /* value */ ResolveHostnameValue, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHostname")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def resolveHostname(
     options: ResolveHostnameOptions,
     callback: js.Function2[/* err */ Error | Null, /* value */ ResolveHostnameValue, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveHostname")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Logger extends StObject {
     
-    def debug(params: js.Any*): Unit = js.native
+    def debug(params: js.Any*): Unit
     
-    def error(params: js.Any*): Unit = js.native
+    def error(params: js.Any*): Unit
     
-    def fatal(params: js.Any*): Unit = js.native
+    def fatal(params: js.Any*): Unit
     
-    def info(params: js.Any*): Unit = js.native
+    def info(params: js.Any*): Unit
     
-    def level(level: LoggerLevel): Unit = js.native
+    def level(level: LoggerLevel): Unit
     
-    def trace(params: js.Any*): Unit = js.native
+    def trace(params: js.Any*): Unit
     
-    def warn(params: js.Any*): Unit = js.native
+    def warn(params: js.Any*): Unit
   }
   object Logger {
     
@@ -191,12 +174,11 @@ object sharedMod {
     def warn: typings.nodemailer.nodemailerStrings.warn = "warn".asInstanceOf[typings.nodemailer.nodemailerStrings.warn]
   }
   
-  @js.native
   trait ResolveHostnameOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var servername: js.UndefOr[String | `false`] = js.native
+    var servername: js.UndefOr[String | `false`] = js.undefined
   }
   object ResolveHostnameOptions {
     
@@ -223,14 +205,13 @@ object sharedMod {
     }
   }
   
-  @js.native
   trait ResolveHostnameValue extends StObject {
     
-    var _cached: js.UndefOr[`true`] = js.native
+    var _cached: js.UndefOr[`true`] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var servername: String | `false` = js.native
+    var servername: String | `false`
   }
   object ResolveHostnameValue {
     

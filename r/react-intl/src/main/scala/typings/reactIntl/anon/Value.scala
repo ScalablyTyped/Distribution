@@ -4,15 +4,13 @@ import typings.react.mod.ReactElement
 import typings.std.Intl.NumberFormatPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  def children(`val`: js.Array[NumberFormatPart]): ReactElement | Null = js.native
+  def children(`val`: js.Array[NumberFormatPart]): ReactElement | Null
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any = js.native
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.FnCallValueOpts>[0] */ js.Any
 }
 object Value {
   

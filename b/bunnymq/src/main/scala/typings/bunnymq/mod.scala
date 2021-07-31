@@ -3,23 +3,24 @@ package typings.bunnymq
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bunnymq", JSImport.Namespace)
-  @js.native
-  def apply(): Instance = js.native
-  @JSImport("bunnymq", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Instance = js.native
+  @scala.inline
+  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  @scala.inline
+  def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
+  @JSImport("bunnymq", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Connection
-    extends /* address */ StringDictionary[js.Any] {
+    extends StObject
+       with /* address */ StringDictionary[js.Any] {
     
-    var startedAt: String = js.native
+    var startedAt: String
   }
   object Connection {
     
@@ -37,7 +38,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Consumer extends StObject {
     
     /**
@@ -46,7 +46,7 @@ object mod {
       * @param queue A named queue.
       * @param callback A callback.
       */
-    def consume[T](queue: String, callback: ConsumerCallback[T]): Unit = js.native
+    def consume[T](queue: String, callback: ConsumerCallback[T]): Unit
   }
   object Consumer {
     
@@ -64,7 +64,11 @@ object mod {
     }
   }
   
-  type ConsumerCallback[T] = js.Function1[/* repeated */ js.Any, T]
+  @js.native
+  trait ConsumerCallback[T] extends StObject {
+    
+    def apply(args: js.Any*): T = js.native
+  }
   
   @js.native
   trait Instance extends StObject {
@@ -92,58 +96,93 @@ object mod {
     def subscribe[T](queueName: String, callback: ConsumerCallback[T]): Unit = js.native
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    def debug(format: js.Any, args: js.Any*): Unit = js.native
+    def debug(format: js.Any, args: js.Any*): Unit
     @JSName("debug")
-    var debug_Original: LoggerOutput = js.native
+    var debug_Original: LoggerOutput
     
-    def error(format: js.Any, args: js.Any*): Unit = js.native
+    def error(format: js.Any, args: js.Any*): Unit
     @JSName("error")
-    var error_Original: LoggerOutput = js.native
+    var error_Original: LoggerOutput
     
-    def info(format: js.Any, args: js.Any*): Unit = js.native
+    def info(format: js.Any, args: js.Any*): Unit
     @JSName("info")
-    var info_Original: LoggerOutput = js.native
+    var info_Original: LoggerOutput
     
-    def log(format: js.Any, args: js.Any*): Unit = js.native
+    def log(format: js.Any, args: js.Any*): Unit
     @JSName("log")
-    var log_Original: LoggerOutput = js.native
+    var log_Original: LoggerOutput
     
-    def warn(format: js.Any, args: js.Any*): Unit = js.native
+    def warn(format: js.Any, args: js.Any*): Unit
     @JSName("warn")
-    var warn_Original: LoggerOutput = js.native
+    var warn_Original: LoggerOutput
+  }
+  object Logger {
+    
+    @scala.inline
+    def apply(
+      debug: LoggerOutput,
+      error: LoggerOutput,
+      info: LoggerOutput,
+      log: LoggerOutput,
+      warn: LoggerOutput
+    ): Logger = {
+      val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Logger]
+    }
+    
+    @scala.inline
+    implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDebug(value: LoggerOutput): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setError(value: LoggerOutput): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInfo(value: LoggerOutput): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLog(value: LoggerOutput): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarn(value: LoggerOutput): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    }
   }
   
-  type LoggerOutput = js.Function2[/* format */ js.Any, /* repeated */ js.Any, Unit]
-  
   @js.native
+  trait LoggerOutput extends StObject {
+    
+    def apply(format: js.Any, args: js.Any*): Unit = js.native
+  }
+  
   trait Options extends StObject {
     
-    var consumerSuffix: js.UndefOr[String] = js.native
+    var consumerSuffix: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * Number of fetched messages at once on the channel.
       *
       */
-    var prefetch: js.UndefOr[Double] = js.native
+    var prefetch: js.UndefOr[Double] = js.undefined
     
     /**
       * Requeue put back message into the broker if consumer crashes/trigger exception.
       *
       */
-    var requeue: js.UndefOr[Boolean] = js.native
+    var requeue: js.UndefOr[Boolean] = js.undefined
     
-    var rpcTimeout: js.UndefOr[Double] = js.native
+    var rpcTimeout: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[js.Any] = js.native
+    var transport: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     
@@ -220,14 +259,13 @@ object mod {
     def produce[T](queue: String, message: js.Any, options: ProducerOptions): js.Promise[T] = js.native
   }
   
-  @js.native
   trait ProducerOptions extends StObject {
     
-    var routingKey: js.UndefOr[String] = js.native
+    var routingKey: js.UndefOr[String] = js.undefined
     
-    var rpc: js.UndefOr[Boolean] = js.native
+    var rpc: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ProducerOptions {
     

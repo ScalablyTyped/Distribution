@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetResourceConfigResponse extends StObject {
   
   /**
     * A list that contains the current configuration of one or more resources.
     */
-  var baseConfigurationItems: js.UndefOr[BaseConfigurationItems] = js.native
+  var baseConfigurationItems: js.UndefOr[BaseConfigurationItems] = js.undefined
   
   /**
     * A list of resource keys that were not processed with the current response. The unprocessesResourceKeys value is in the same form as ResourceKeys, so the value can be directly provided to a subsequent BatchGetResourceConfig operation. If there are no unprocessed resource keys, the response contains an empty unprocessedResourceKeys list. 
     */
-  var unprocessedResourceKeys: js.UndefOr[ResourceKeys] = js.native
+  var unprocessedResourceKeys: js.UndefOr[ResourceKeys] = js.undefined
 }
 object BatchGetResourceConfigResponse {
   

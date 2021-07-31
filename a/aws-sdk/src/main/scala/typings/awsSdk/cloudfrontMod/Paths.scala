@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Paths extends StObject {
   
   /**
     * A complex type that contains a list of the paths that you want to invalidate.
     */
-  var Items: js.UndefOr[PathList] = js.native
+  var Items: js.UndefOr[PathList] = js.undefined
   
   /**
     * The number of invalidation paths specified for the objects that you want to invalidate.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object Paths {
   

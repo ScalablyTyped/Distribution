@@ -3,17 +3,15 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 import typings.std.HTMLCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontawesomeObject extends StObject {
   
-  val `abstract`: js.Array[AbstractElement] = js.native
+  val `abstract`: js.Array[AbstractElement]
   
-  val html: js.Array[String] = js.native
+  val html: js.Array[String]
   
-  val node: HTMLCollection = js.native
+  val node: HTMLCollection
 }
 object FontawesomeObject {
   

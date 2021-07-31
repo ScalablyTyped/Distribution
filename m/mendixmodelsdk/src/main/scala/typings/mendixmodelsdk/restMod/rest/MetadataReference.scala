@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,9 +59,8 @@ object MetadataReference {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.create")
-  @js.native
-  def create(model: IModel): MetadataReference = js.native
+  @scala.inline
+  def create(model: IModel): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -73,9 +71,8 @@ object MetadataReference {
     *  8.6.0 to 8.7.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.createIn")
-  @js.native
-  def createIn(container: ConsumedODataService): MetadataReference = js.native
+  @scala.inline
+  def createIn(container: ConsumedODataService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -86,9 +83,8 @@ object MetadataReference {
     *  8.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.createInConsumedKafkaServiceUnderMetadataReferences")
-  @js.native
-  def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): MetadataReference = js.native
+  @scala.inline
+  def createInConsumedKafkaServiceUnderMetadataReferences(container: ConsumedKafkaService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedKafkaServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -99,9 +95,8 @@ object MetadataReference {
     *  8.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.createInConsumedODataServiceUnderMetadataReferences")
-  @js.native
-  def createInConsumedODataServiceUnderMetadataReferences(container: ConsumedODataService): MetadataReference = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderMetadataReferences(container: ConsumedODataService): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /**
     * Creates and returns a new MetadataReference instance in the SDK and on the server.
@@ -112,9 +107,8 @@ object MetadataReference {
     *  8.8.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.createInMetadataReferenceUnderMetadataReferences")
-  @js.native
-  def createInMetadataReferenceUnderMetadataReferences(container: MetadataReference): MetadataReference = js.native
+  @scala.inline
+  def createInMetadataReferenceUnderMetadataReferences(container: MetadataReference): MetadataReference = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMetadataReferenceUnderMetadataReferences")(container.asInstanceOf[js.Any]).asInstanceOf[MetadataReference]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.MetadataReference.structureTypeName")

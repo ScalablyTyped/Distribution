@@ -4,48 +4,39 @@ import typings.utm.anon.Easting
 import typings.utm.anon.Latitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("utm", "fromLatLon")
+  @JSImport("utm", JSImport.Namespace)
   @js.native
-  def fromLatLon(latitude: Double, longitude: Double): Easting = js.native
-  @JSImport("utm", "fromLatLon")
-  @js.native
-  def fromLatLon(latitude: Double, longitude: Double, forceZoneNum: Double): Easting = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("utm", "toLatLon")
-  @js.native
-  def toLatLon(
-    easting: Double,
-    northing: Double,
-    zoneNum: Double,
-    zoneLetter: js.UndefOr[scala.Nothing],
-    northern: Boolean
-  ): Latitude = js.native
-  @JSImport("utm", "toLatLon")
-  @js.native
-  def toLatLon(
-    easting: Double,
-    northing: Double,
-    zoneNum: Double,
-    zoneLetter: js.UndefOr[scala.Nothing],
-    northern: Boolean,
-    strict: Boolean
-  ): Latitude = js.native
-  @JSImport("utm", "toLatLon")
-  @js.native
-  def toLatLon(easting: Double, northing: Double, zoneNum: Double, zoneLetter: String): Latitude = js.native
-  @JSImport("utm", "toLatLon")
-  @js.native
+  @scala.inline
+  def fromLatLon(latitude: Double, longitude: Double): Easting = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLon")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[Easting]
+  @scala.inline
+  def fromLatLon(latitude: Double, longitude: Double, forceZoneNum: Double): Easting = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLatLon")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], forceZoneNum.asInstanceOf[js.Any])).asInstanceOf[Easting]
+  
+  @scala.inline
+  def toLatLon(easting: Double, northing: Double, zoneNum: Double, zoneLetter: String): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("toLatLon")(easting.asInstanceOf[js.Any], northing.asInstanceOf[js.Any], zoneNum.asInstanceOf[js.Any], zoneLetter.asInstanceOf[js.Any])).asInstanceOf[Latitude]
+  @scala.inline
   def toLatLon(
     easting: Double,
     northing: Double,
     zoneNum: Double,
     zoneLetter: String,
-    northern: js.UndefOr[scala.Nothing],
+    northern: Unit,
     strict: Boolean
-  ): Latitude = js.native
+  ): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("toLatLon")(easting.asInstanceOf[js.Any], northing.asInstanceOf[js.Any], zoneNum.asInstanceOf[js.Any], zoneLetter.asInstanceOf[js.Any], northern.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Latitude]
+  @scala.inline
+  def toLatLon(easting: Double, northing: Double, zoneNum: Double, zoneLetter: Unit, northern: Boolean): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("toLatLon")(easting.asInstanceOf[js.Any], northing.asInstanceOf[js.Any], zoneNum.asInstanceOf[js.Any], zoneLetter.asInstanceOf[js.Any], northern.asInstanceOf[js.Any])).asInstanceOf[Latitude]
+  @scala.inline
+  def toLatLon(
+    easting: Double,
+    northing: Double,
+    zoneNum: Double,
+    zoneLetter: Unit,
+    northern: Boolean,
+    strict: Boolean
+  ): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("toLatLon")(easting.asInstanceOf[js.Any], northing.asInstanceOf[js.Any], zoneNum.asInstanceOf[js.Any], zoneLetter.asInstanceOf[js.Any], northern.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Latitude]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDashboardsResponse extends StObject {
   
   /**
     * A list that summarizes each dashboard in the project.
     */
-  var dashboardSummaries: DashboardSummaries = js.native
+  var dashboardSummaries: DashboardSummaries
   
   /**
     * The token for the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDashboardsResponse {
   

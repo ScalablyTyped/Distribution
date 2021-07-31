@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionContext extends StObject {
   
   /**
     * The system-generated unique ID that corresponds to an action's execution.
     */
-  var actionExecutionId: js.UndefOr[ActionExecutionId] = js.native
+  var actionExecutionId: js.UndefOr[ActionExecutionId] = js.undefined
   
   /**
     * The name of the action in the context of a job.
     */
-  var name: js.UndefOr[ActionName] = js.native
+  var name: js.UndefOr[ActionName] = js.undefined
 }
 object ActionContext {
   

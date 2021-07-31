@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchAnalyticsQueryResponse extends StObject {
   
   /** How the results were aggregated. */
-  var responseAggregationType: js.UndefOr[String] = js.native
+  var responseAggregationType: js.UndefOr[String] = js.undefined
   
   /** A list of rows grouped by the key values in the order given in the query. */
-  var rows: js.UndefOr[js.Array[ApiDataRow]] = js.native
+  var rows: js.UndefOr[js.Array[ApiDataRow]] = js.undefined
 }
 object SearchAnalyticsQueryResponse {
   

@@ -6,7 +6,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenParenToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "ParameterList")
@@ -20,12 +19,12 @@ class ParameterList protected ()
   ) = this()
   def this(
     openParenToken: typings.grammarkdown.nodesMod.Token[OpenParenToken | OpenBracketToken],
-    elements: js.UndefOr[scala.Nothing],
+    elements: js.Array[typings.grammarkdown.nodesMod.Parameter],
     closeParenToken: typings.grammarkdown.nodesMod.Token[CloseParenToken | CloseBracketToken]
   ) = this()
   def this(
     openParenToken: typings.grammarkdown.nodesMod.Token[OpenParenToken | OpenBracketToken],
-    elements: js.Array[typings.grammarkdown.nodesMod.Parameter],
+    elements: Unit,
     closeParenToken: typings.grammarkdown.nodesMod.Token[CloseParenToken | CloseBracketToken]
   ) = this()
 }

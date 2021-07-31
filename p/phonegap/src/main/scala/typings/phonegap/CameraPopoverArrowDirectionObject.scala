@@ -2,21 +2,19 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraPopoverArrowDirectionObject extends StObject {
   
-  var ARROW_ANY: Double = js.native
+  var ARROW_ANY: Double
   
-  var ARROW_DOWN: Double = js.native
+  var ARROW_DOWN: Double
   
-  var ARROW_LEFT: Double = js.native
+  var ARROW_LEFT: Double
   
-  var ARROW_RIGHT: Double = js.native
+  var ARROW_RIGHT: Double
   
-  var ARROW_UP: Double = js.native
+  var ARROW_UP: Double
 }
 object CameraPopoverArrowDirectionObject {
   

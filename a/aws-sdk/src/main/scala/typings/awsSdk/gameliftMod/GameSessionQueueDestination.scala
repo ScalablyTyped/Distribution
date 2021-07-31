@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameSessionQueueDestination extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is assigned to fleet or fleet alias. ARNs, which include a fleet ID or alias ID and a Region name, provide a unique identifier across all Regions. 
     */
-  var DestinationArn: js.UndefOr[ArnStringModel] = js.native
+  var DestinationArn: js.UndefOr[ArnStringModel] = js.undefined
 }
 object GameSessionQueueDestination {
   

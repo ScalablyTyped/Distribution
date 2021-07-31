@@ -8,7 +8,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -45,42 +44,41 @@ object iconMod {
     def setAnchor(anchor: js.Array[Double]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var anchor: js.UndefOr[js.Array[Double]] = js.native
+    var anchor: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var anchorOrigin: js.UndefOr[IconOrigin] = js.native
+    var anchorOrigin: js.UndefOr[IconOrigin] = js.undefined
     
-    var anchorXUnits: js.UndefOr[IconAnchorUnits] = js.native
+    var anchorXUnits: js.UndefOr[IconAnchorUnits] = js.undefined
     
-    var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.native
+    var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.undefined
     
-    var color: js.UndefOr[Color | String] = js.native
+    var color: js.UndefOr[Color | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var displacement: js.UndefOr[js.Array[Double]] = js.native
+    var displacement: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.native
+    var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.undefined
     
-    var imgSize: js.UndefOr[Size] = js.native
+    var imgSize: js.UndefOr[Size] = js.undefined
     
-    var offset: js.UndefOr[js.Array[Double]] = js.native
+    var offset: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var offsetOrigin: js.UndefOr[IconOrigin] = js.native
+    var offsetOrigin: js.UndefOr[IconOrigin] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var rotateWithView: js.UndefOr[Boolean] = js.native
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double | Size] = js.native
+    var scale: js.UndefOr[Double | Size] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object Options {
     

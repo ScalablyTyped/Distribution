@@ -4,10 +4,13 @@ import typings.ol.attributionMod.Options
 import typings.ol.attributionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlMod {
+  
+  @JSImport("ol/control", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/control", "Attribution")
   @js.native
@@ -78,27 +81,24 @@ object controlMod {
     def this(opt_options: typings.ol.zoomToExtentMod.Options) = this()
   }
   
-  @JSImport("ol/control", "defaults")
-  @js.native
-  def defaults(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
-  @JSImport("ol/control", "defaults")
-  @js.native
-  def defaults(opt_options: DefaultsOptions): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
+  @scala.inline
+  def defaults(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
+  @scala.inline
+  def defaults(opt_options: DefaultsOptions): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[typings.ol.collectionMod.default[typings.ol.controlControlMod.default]]
   
-  @js.native
   trait DefaultsOptions extends StObject {
     
-    var attribution: js.UndefOr[Boolean] = js.native
+    var attribution: js.UndefOr[Boolean] = js.undefined
     
-    var attributionOptions: js.UndefOr[Options] = js.native
+    var attributionOptions: js.UndefOr[Options] = js.undefined
     
-    var rotate: js.UndefOr[Boolean] = js.native
+    var rotate: js.UndefOr[Boolean] = js.undefined
     
-    var rotateOptions: js.UndefOr[typings.ol.rotateMod.Options] = js.native
+    var rotateOptions: js.UndefOr[typings.ol.rotateMod.Options] = js.undefined
     
-    var zoom: js.UndefOr[Boolean] = js.native
+    var zoom: js.UndefOr[Boolean] = js.undefined
     
-    var zoomOptions: js.UndefOr[typings.ol.zoomMod.Options] = js.native
+    var zoomOptions: js.UndefOr[typings.ol.zoomMod.Options] = js.undefined
   }
   object DefaultsOptions {
     

@@ -2,21 +2,19 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: Double | Null = js.native
+  var column: Double | Null
   
-  var line: Double | Null = js.native
+  var line: Double | Null
 }
 object Column {
   
   @scala.inline
   def apply(): Column = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(column = null, line = null)
     __obj.asInstanceOf[Column]
   }
   

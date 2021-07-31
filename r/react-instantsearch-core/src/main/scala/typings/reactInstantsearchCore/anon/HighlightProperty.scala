@@ -3,21 +3,19 @@ package typings.reactInstantsearchCore.anon
 import typings.reactInstantsearchCore.mod.Hit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightProperty[TDoc] extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var highlightProperty: String = js.native
+  var highlightProperty: String
   
-  var hit: Hit[TDoc] = js.native
+  var hit: Hit[TDoc]
   
-  var postTag: js.UndefOr[String] = js.native
+  var postTag: js.UndefOr[String] = js.undefined
   
-  var preTag: js.UndefOr[String] = js.native
+  var preTag: js.UndefOr[String] = js.undefined
 }
 object HighlightProperty {
   
@@ -28,7 +26,7 @@ object HighlightProperty {
   }
   
   @scala.inline
-  implicit class HighlightPropertyMutableBuilder[Self <: HighlightProperty[_], TDoc] (val x: Self with HighlightProperty[TDoc]) extends AnyVal {
+  implicit class HighlightPropertyMutableBuilder[Self <: HighlightProperty[?], TDoc] (val x: Self & HighlightProperty[TDoc]) extends AnyVal {
     
     @scala.inline
     def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])

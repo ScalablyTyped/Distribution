@@ -2,7 +2,6 @@ package typings.rfc6902
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointerMod {
@@ -38,22 +37,24 @@ object pointerMod {
   /* static members */
   object Pointer {
     
+    @JSImport("rfc6902/pointer", "Pointer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       `path` *must* be a properly escaped string.
       */
-    @JSImport("rfc6902/pointer", "Pointer.fromJSON")
-    @js.native
-    def fromJSON(path: String): Pointer = js.native
+    @scala.inline
+    def fromJSON(path: String): Pointer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(path.asInstanceOf[js.Any]).asInstanceOf[Pointer]
   }
   
-  @js.native
   trait PointerEvaluation extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var parent: js.Any = js.native
+    var parent: js.Any
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object PointerEvaluation {
     

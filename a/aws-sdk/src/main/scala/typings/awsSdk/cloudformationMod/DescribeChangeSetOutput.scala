@@ -2,106 +2,104 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChangeSetOutput extends StObject {
   
   /**
     * If you execute the change set, the list of capabilities that were explicitly acknowledged when the change set was created.
     */
-  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.native
+  var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.undefined
   
   /**
     * The ARN of the change set.
     */
-  var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.native
+  var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.undefined
   
   /**
     * The name of the change set.
     */
-  var ChangeSetName: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetName] = js.native
+  var ChangeSetName: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetName] = js.undefined
   
   /**
     * A list of Change structures that describes the resources AWS CloudFormation changes if you execute the change set.
     */
-  var Changes: js.UndefOr[typings.awsSdk.cloudformationMod.Changes] = js.native
+  var Changes: js.UndefOr[typings.awsSdk.cloudformationMod.Changes] = js.undefined
   
   /**
     * The start time when the change set was created, in UTC.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.cloudformationMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.cloudformationMod.CreationTime] = js.undefined
   
   /**
     * Information about the change set.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * If the change set execution status is AVAILABLE, you can execute the change set. If you can’t execute the change set, the status indicates why. For example, a change set might be in an UNAVAILABLE state because AWS CloudFormation is still creating it or in an OBSOLETE state because the stack was already updated.
     */
-  var ExecutionStatus: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionStatus] = js.native
+  var ExecutionStatus: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionStatus] = js.undefined
   
   /**
     * Verifies if IncludeNestedStacks is set to True.
     */
-  var IncludeNestedStacks: js.UndefOr[typings.awsSdk.cloudformationMod.IncludeNestedStacks] = js.native
+  var IncludeNestedStacks: js.UndefOr[typings.awsSdk.cloudformationMod.IncludeNestedStacks] = js.undefined
   
   /**
     * If the output exceeds 1 MB, a string that identifies the next page of changes. If there is no additional page, this value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * The ARNs of the Amazon Simple Notification Service (Amazon SNS) topics that will be associated with the stack if you execute the change set.
     */
-  var NotificationARNs: js.UndefOr[typings.awsSdk.cloudformationMod.NotificationARNs] = js.native
+  var NotificationARNs: js.UndefOr[typings.awsSdk.cloudformationMod.NotificationARNs] = js.undefined
   
   /**
     * A list of Parameter structures that describes the input parameters and their values used to create the change set. For more information, see the Parameter data type.
     */
-  var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.native
+  var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.undefined
   
   /**
     * Specifies the change set ID of the parent change set in the current nested change set hierarchy.
     */
-  var ParentChangeSetId: js.UndefOr[ChangeSetId] = js.native
+  var ParentChangeSetId: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
     * The rollback triggers for AWS CloudFormation to monitor during stack creation and updating operations, and for the specified monitoring period afterwards.
     */
-  var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.native
+  var RollbackConfiguration: js.UndefOr[typings.awsSdk.cloudformationMod.RollbackConfiguration] = js.undefined
   
   /**
     * Specifies the change set ID of the root change set in the current nested change set hierarchy.
     */
-  var RootChangeSetId: js.UndefOr[ChangeSetId] = js.native
+  var RootChangeSetId: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
     * The ARN of the stack that is associated with the change set.
     */
-  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
   
   /**
     * The name of the stack that is associated with the change set.
     */
-  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.native
+  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.undefined
   
   /**
     * The current status of the change set, such as CREATE_IN_PROGRESS, CREATE_COMPLETE, or FAILED.
     */
-  var Status: js.UndefOr[ChangeSetStatus] = js.native
+  var Status: js.UndefOr[ChangeSetStatus] = js.undefined
   
   /**
     * A description of the change set's status. For example, if your attempt to create a change set failed, AWS CloudFormation shows the error message.
     */
-  var StatusReason: js.UndefOr[ChangeSetStatusReason] = js.native
+  var StatusReason: js.UndefOr[ChangeSetStatusReason] = js.undefined
   
   /**
     * If you execute the change set, the tags that will be associated with the stack.
     */
-  var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.cloudformationMod.Tags] = js.undefined
 }
 object DescribeChangeSetOutput {
   

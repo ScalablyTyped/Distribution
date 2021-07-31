@@ -7,7 +7,6 @@ import typings.httpsnippet.httpsnippetBooleans.`false`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,9 @@ object mod {
   /*~ Write your module's methods and properties in this class */
   @JSImport("httpsnippet", JSImport.Namespace)
   @js.native
-  class ^ protected () extends HTTPSnippet {
+  class ^ protected ()
+    extends StObject
+       with HTTPSnippet {
     def this(data: Data) = this()
   }
   @JSImport("httpsnippet", JSImport.Namespace)
@@ -23,14 +24,12 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("httpsnippet", "addTarget")
-  @js.native
-  def addTarget(target: Target[String]): Unit = js.native
+  @scala.inline
+  def addTarget(target: Target[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("httpsnippet", "addTargetClient")
-  @js.native
-  def addTargetClient(target: String, client: TargetClient): Unit = js.native
+  @scala.inline
+  def addTargetClient(target: String, client: TargetClient): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTargetClient")(target.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("httpsnippet", "availableTargets")
@@ -40,9 +39,8 @@ object mod {
   def availableTargets_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableTargets")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("httpsnippet", "extName")
-  @js.native
-  def extName(target: String): String = js.native
+  @scala.inline
+  def extName(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extName")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Data = Har | Request
   
@@ -51,15 +49,15 @@ object mod {
   trait HTTPSnippet extends StObject {
     
     def convert(target: String): String | `false` = js.native
-    def convert(target: String, client: js.UndefOr[scala.Nothing], options: Options): String | `false` = js.native
     def convert(target: String, client: String): String | `false` = js.native
     def convert(target: String, client: String, options: Options): String | `false` = js.native
+    def convert(target: String, client: Unit, options: Options): String | `false` = js.native
     def convert(target: String, options: Options): String | `false` = js.native
   }
   
   type Options = js.Object
   
-  type Target[C /* <: String */] = Info[C] with (Record[C, TargetClient])
+  type Target[C /* <: String */] = Info[C] & (Record[C, TargetClient])
   
   @js.native
   trait TargetClient extends StObject {
@@ -69,16 +67,15 @@ object mod {
     var info: TargetClientInfo = js.native
   }
   
-  @js.native
   trait TargetClientInfo extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object TargetClientInfo {
     
@@ -111,16 +108,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TargetInfo[C /* <: String */] extends StObject {
     
-    var default: C = js.native
+    var default: C
     
-    var extname: String = js.native
+    var extname: String
     
-    var key: String = js.native
+    var key: String
     
-    var title: String = js.native
+    var title: String
   }
   object TargetInfo {
     
@@ -131,7 +127,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TargetInfoMutableBuilder[Self <: TargetInfo[_], C /* <: String */] (val x: Self with TargetInfo[C]) extends AnyVal {
+    implicit class TargetInfoMutableBuilder[Self <: TargetInfo[?], C /* <: String */] (val x: Self & TargetInfo[C]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: C): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

@@ -1,8 +1,9 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`9`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.Plussign1
 import typings.octokitTypes.octokitTypesStrings.`-1`
+import typings.octokitTypes.octokitTypesStrings.`squirrel-girl`
 import typings.octokitTypes.octokitTypesStrings.confused
 import typings.octokitTypes.octokitTypesStrings.eyes
 import typings.octokitTypes.octokitTypesStrings.heart
@@ -11,23 +12,20 @@ import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  team_id :number,   discussion_number :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes'} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
-@js.native
-trait ReactionsCreateForTeamDiscussionLegacyEndpoint extends StObject {
+trait ReactionsCreateForTeamDiscussionLegacyEndpoint
+  extends StObject
+     with RequiredPreview[`squirrel-girl`] {
   
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the team discussion.
     */
-  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes = js.native
+  var content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes
   
-  var discussion_number: Double = js.native
+  var discussion_number: Double
   
-  var mediaType: `9` = js.native
-  
-  var team_id: Double = js.native
+  var team_id: Double
 }
 object ReactionsCreateForTeamDiscussionLegacyEndpoint {
   
@@ -35,7 +33,7 @@ object ReactionsCreateForTeamDiscussionLegacyEndpoint {
   def apply(
     content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     discussion_number: Double,
-    mediaType: `9`,
+    mediaType: `0`[`squirrel-girl`],
     team_id: Double
   ): ReactionsCreateForTeamDiscussionLegacyEndpoint = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], discussion_number = discussion_number.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
@@ -50,9 +48,6 @@ object ReactionsCreateForTeamDiscussionLegacyEndpoint {
     
     @scala.inline
     def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])

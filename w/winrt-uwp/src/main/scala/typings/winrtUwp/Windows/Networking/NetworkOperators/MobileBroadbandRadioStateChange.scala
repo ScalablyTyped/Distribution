@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains details of a radio state change notification. */
-@js.native
 trait MobileBroadbandRadioStateChange extends StObject {
   
   /** Gets the device ID of the device whose radio state changed. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets the new state of the radio. */
-  var radioState: MobileBroadbandRadioState = js.native
+  var radioState: MobileBroadbandRadioState
 }
 object MobileBroadbandRadioStateChange {
   

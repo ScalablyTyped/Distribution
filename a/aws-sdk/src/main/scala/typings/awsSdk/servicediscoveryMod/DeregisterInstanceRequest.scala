@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterInstanceRequest extends StObject {
   
   /**
     * The value that you specified for Id in the RegisterInstance request.
     */
-  var InstanceId: ResourceId = js.native
+  var InstanceId: ResourceId
   
   /**
     * The ID of the service that the instance is associated with.
     */
-  var ServiceId: ResourceId = js.native
+  var ServiceId: ResourceId
 }
 object DeregisterInstanceRequest {
   

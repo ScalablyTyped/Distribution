@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartGroupRule extends StObject {
   
   /** A ChartDateTimeRule. */
-  var dateTimeRule: js.UndefOr[ChartDateTimeRule] = js.native
+  var dateTimeRule: js.UndefOr[ChartDateTimeRule] = js.undefined
   
   /** A ChartHistogramRule */
-  var histogramRule: js.UndefOr[ChartHistogramRule] = js.native
+  var histogramRule: js.UndefOr[ChartHistogramRule] = js.undefined
 }
 object ChartGroupRule {
   

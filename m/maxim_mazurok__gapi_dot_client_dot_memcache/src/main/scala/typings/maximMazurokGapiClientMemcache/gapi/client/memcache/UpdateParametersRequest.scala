@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateParametersRequest extends StObject {
   
   /** The parameters to apply to the instance. */
-  var parameters: js.UndefOr[MemcacheParameters] = js.native
+  var parameters: js.UndefOr[MemcacheParameters] = js.undefined
   
   /** Required. Mask of fields to update. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateParametersRequest {
   

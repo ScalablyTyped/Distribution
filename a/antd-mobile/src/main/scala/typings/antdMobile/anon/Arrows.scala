@@ -2,25 +2,23 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arrows extends StObject {
   
-  var arrows: Boolean = js.native
+  var arrows: Boolean
   
-  var autoplay: Boolean = js.native
+  var autoplay: Boolean
   
-  var cellAlign: String = js.native
+  var cellAlign: String
   
-  var dots: Boolean = js.native
+  var dots: Boolean
   
-  var infinite: Boolean = js.native
+  var infinite: Boolean
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var selectedIndex: Double = js.native
+  var selectedIndex: Double
 }
 object Arrows {
   

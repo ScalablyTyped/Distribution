@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `conditionalRangeFill.toJSON()`. */
-@js.native
 trait ConditionalRangeFillData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConditionalRangeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
 }
 object ConditionalRangeFillData {
   

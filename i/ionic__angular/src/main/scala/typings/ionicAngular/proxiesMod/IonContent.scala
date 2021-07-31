@@ -8,22 +8,22 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular/directives/proxies", "IonContent")
 @js.native
 class IonContent protected ()
-  extends typings.ionicCore.componentsMod.Components.IonContent {
-  def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
+  extends StObject
+     with typings.ionicCore.componentsMod.Components.IonContent {
+  def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
   var el: HTMLElement = js.native
   
-  var ionScroll: EventEmitter[CustomEvent[_]] = js.native
+  var ionScroll: EventEmitter[CustomEvent[js.Any]] = js.native
   
-  var ionScrollEnd: EventEmitter[CustomEvent[_]] = js.native
+  var ionScrollEnd: EventEmitter[CustomEvent[js.Any]] = js.native
   
-  var ionScrollStart: EventEmitter[CustomEvent[_]] = js.native
+  var ionScrollStart: EventEmitter[CustomEvent[js.Any]] = js.native
   
   var z: NgZone = js.native
 }

@@ -4,7 +4,6 @@ import typings.std.Map
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,18 +33,59 @@ object mod {
   	//=> {data: '🦄', rest: 'some random text'}
   	```
   	*/
-  class ^ () extends Subsume {
+  class ^ ()
+    extends StObject
+       with Subsume {
     def this(id: String) = this()
+    
+    /**
+    	@returns A wrapped version of `text` that you can embed in other content.
+    	*/
+    /* CompleteClass */
+    override def compose(string: String): String = js.native
+    
+    /**
+    	Used identifier.
+    	*/
+    /* CompleteClass */
+    var id: String = js.native
+    
+    /**
+    	Extract your embedded data from `text`.
+    	@returns An object with properties `.data` for your embedded data and `.rest` for everything else.
+    	*/
+    /* CompleteClass */
+    override def parse(string: String): ParseResult = js.native
+    
+    /**
+    	Postfix used in `.compose()`.
+    	*/
+    /* CompleteClass */
+    var postfix: String = js.native
+    
+    /**
+    	Prefix used in `.compose()`.
+    	*/
+    /* CompleteClass */
+    var prefix: String = js.native
+    
+    /**
+    	Regex used in `.parse()`.
+    	*/
+    /* CompleteClass */
+    var regex: RegExp = js.native
   }
+  @JSImport("subsume", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Extract embedded data with a specific `id` out of `text`.
   	Useful when `text` comes from an external source.
   	*/
   /* static member */
-  @JSImport("subsume", "parse")
-  @js.native
-  def parse(string: String, id: String): ParseResult = js.native
+  @scala.inline
+  def parse(string: String, id: String): ParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(string.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ParseResult]
   
   /**
   	Extract embedded data corresponding to all IDs in `idArray`, if specified. Otherwise it will extract embedded data for all top-level IDs.
@@ -67,19 +107,16 @@ object mod {
   	```
   	*/
   /* static member */
-  @JSImport("subsume", "parseAll")
-  @js.native
-  def parseAll(string: String): ParseResults = js.native
-  @JSImport("subsume", "parseAll")
-  @js.native
-  def parseAll(string: String, idArray: js.Array[String]): ParseResults = js.native
+  @scala.inline
+  def parseAll(string: String): ParseResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any]).asInstanceOf[ParseResults]
+  @scala.inline
+  def parseAll(string: String, idArray: js.Array[String]): ParseResults = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(string.asInstanceOf[js.Any], idArray.asInstanceOf[js.Any])).asInstanceOf[ParseResults]
   
-  @js.native
   trait ParseResult extends StObject {
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var rest: String = js.native
+    var rest: String
   }
   object ParseResult {
     
@@ -103,12 +140,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseResults extends StObject {
     
-    var data: Map[String, String] = js.native
+    var data: Map[String, String]
     
-    var rest: String = js.native
+    var rest: String
   }
   object ParseResults {
     
@@ -129,39 +165,38 @@ object mod {
     }
   }
   
-  @js.native
   trait Subsume extends StObject {
     
     /**
     	@returns A wrapped version of `text` that you can embed in other content.
     	*/
-    def compose(string: String): String = js.native
+    def compose(string: String): String
     
     /**
     	Used identifier.
     	*/
-    var id: String = js.native
+    var id: String
     
     /**
     	Extract your embedded data from `text`.
     	@returns An object with properties `.data` for your embedded data and `.rest` for everything else.
     	*/
-    def parse(string: String): ParseResult = js.native
+    def parse(string: String): ParseResult
     
     /**
     	Postfix used in `.compose()`.
     	*/
-    var postfix: String = js.native
+    var postfix: String
     
     /**
     	Prefix used in `.compose()`.
     	*/
-    var prefix: String = js.native
+    var prefix: String
     
     /**
     	Regex used in `.parse()`.
     	*/
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object Subsume {
     

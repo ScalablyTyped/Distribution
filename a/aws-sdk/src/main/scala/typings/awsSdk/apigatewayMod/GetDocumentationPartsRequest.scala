@@ -2,46 +2,44 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentationPartsRequest extends StObject {
   
   /**
     * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
     */
-  var limit: js.UndefOr[NullableInteger] = js.native
+  var limit: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The status of the API documentation parts to retrieve. Valid values are DOCUMENTED for retrieving DocumentationPart resources with content and UNDOCUMENTED for DocumentationPart resources without content.
     */
-  var locationStatus: js.UndefOr[LocationStatusType] = js.native
+  var locationStatus: js.UndefOr[LocationStatusType] = js.undefined
   
   /**
     * The name of API entities of the to-be-retrieved documentation parts.
     */
-  var nameQuery: js.UndefOr[String] = js.native
+  var nameQuery: js.UndefOr[String] = js.undefined
   
   /**
     * The path of API entities of the to-be-retrieved documentation parts.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The current pagination position in the paged result set.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * The type of API entities of the to-be-retrieved documentation parts. 
     */
-  var `type`: js.UndefOr[DocumentationPartType] = js.native
+  var `type`: js.UndefOr[DocumentationPartType] = js.undefined
 }
 object GetDocumentationPartsRequest {
   

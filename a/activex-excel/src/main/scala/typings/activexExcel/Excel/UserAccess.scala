@@ -2,20 +2,18 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAccess extends StObject {
   
-  var AllowEdit: Boolean = js.native
+  var AllowEdit: Boolean
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.UserAccess_typekey")
-  var ExcelDotUserAccess_typekey: UserAccess = js.native
+  var ExcelDotUserAccess_typekey: UserAccess
   
-  val Name: String = js.native
+  val Name: String
 }
 object UserAccess {
   

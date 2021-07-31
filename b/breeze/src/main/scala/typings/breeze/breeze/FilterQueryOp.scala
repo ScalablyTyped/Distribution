@@ -4,35 +4,35 @@ import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterQueryOp extends IEnum {
+trait FilterQueryOp
+  extends StObject
+     with IEnum {
   
-  var All: FilterQueryOpSymbol = js.native
+  var All: FilterQueryOpSymbol
   
-  var Any: FilterQueryOpSymbol = js.native
+  var Any: FilterQueryOpSymbol
   
-  var Contains: FilterQueryOpSymbol = js.native
+  var Contains: FilterQueryOpSymbol
   
-  var EndsWith: FilterQueryOpSymbol = js.native
+  var EndsWith: FilterQueryOpSymbol
   
-  var Equals: FilterQueryOpSymbol = js.native
+  var Equals: FilterQueryOpSymbol
   
-  var GreaterThan: FilterQueryOpSymbol = js.native
+  var GreaterThan: FilterQueryOpSymbol
   
-  var GreaterThanOrEqual: FilterQueryOpSymbol = js.native
+  var GreaterThanOrEqual: FilterQueryOpSymbol
   
-  var IsTypeOf: FilterQueryOpSymbol = js.native
+  var IsTypeOf: FilterQueryOpSymbol
   
-  var LessThan: FilterQueryOpSymbol = js.native
+  var LessThan: FilterQueryOpSymbol
   
-  var LessThanOrEqual: FilterQueryOpSymbol = js.native
+  var LessThanOrEqual: FilterQueryOpSymbol
   
-  var NotEquals: FilterQueryOpSymbol = js.native
+  var NotEquals: FilterQueryOpSymbol
   
-  var StartsWith: FilterQueryOpSymbol = js.native
+  var StartsWith: FilterQueryOpSymbol
 }
 object FilterQueryOp {
   

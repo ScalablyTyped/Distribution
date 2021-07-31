@@ -2,53 +2,51 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseProduct extends StObject {
   
-  var can_see_insights_for_viewer: Boolean = js.native
+  var can_see_insights_for_viewer: Boolean
   
-  var can_share_to_story: Boolean = js.native
+  var can_share_to_story: Boolean
   
-  var checkout_style: String = js.native
+  var checkout_style: String
   
-  var compound_product_id: String = js.native
+  var compound_product_id: String
   
-  var current_price: String = js.native
+  var current_price: String
   
-  var current_price_stripped: String = js.native
+  var current_price_stripped: String
   
-  var description: String = js.native
+  var description: String
   
-  var external_url: String = js.native
+  var external_url: String
   
-  var full_price: String = js.native
+  var full_price: String
   
-  var full_price_stripped: String = js.native
+  var full_price_stripped: String
   
-  var has_viewer_saved: Boolean = js.native
+  var has_viewer_saved: Boolean
   
-  var launch_information: js.UndefOr[TopicalExploreFeedResponseLaunchInformation] = js.native
+  var launch_information: js.UndefOr[TopicalExploreFeedResponseLaunchInformation] = js.undefined
   
-  var main_image: TopicalExploreFeedResponseMainImage = js.native
+  var main_image: TopicalExploreFeedResponseMainImage
   
-  var merchant: TopicalExploreFeedResponseMerchant = js.native
+  var merchant: TopicalExploreFeedResponseMerchant
   
-  var name: String = js.native
+  var name: String
   
-  var price: String = js.native
+  var price: String
   
-  var product_id: String = js.native
+  var product_id: String
   
-  var retailer_id: String = js.native
+  var retailer_id: String
   
-  var review_status: String = js.native
+  var review_status: String
   
-  var rich_text_description: js.UndefOr[js.Array[TopicalExploreFeedResponseRichTextDescriptionItem]] = js.native
+  var rich_text_description: js.UndefOr[js.Array[TopicalExploreFeedResponseRichTextDescriptionItem]] = js.undefined
   
-  var thumbnail_image: TopicalExploreFeedResponseThumbnailImage = js.native
+  var thumbnail_image: TopicalExploreFeedResponseThumbnailImage
 }
 object TopicalExploreFeedResponseProduct {
   

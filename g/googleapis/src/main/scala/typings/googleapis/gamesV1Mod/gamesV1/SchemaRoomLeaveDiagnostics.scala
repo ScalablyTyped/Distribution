@@ -2,37 +2,35 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for room leave diagnostics.
   */
-@js.native
 trait SchemaRoomLeaveDiagnostics extends StObject {
   
   /**
     * Android network subtype.
     * http://developer.android.com/reference/android/net/NetworkInfo.html#getSubtype()
     */
-  var androidNetworkSubtype: js.UndefOr[Double] = js.native
+  var androidNetworkSubtype: js.UndefOr[Double] = js.undefined
   
   /**
     * Android network type.
     * http://developer.android.com/reference/android/net/NetworkInfo.html#getType()
     */
-  var androidNetworkType: js.UndefOr[Double] = js.native
+  var androidNetworkType: js.UndefOr[Double] = js.undefined
   
   /**
     * iOS network type as defined in Reachability.h.
     */
-  var iosNetworkType: js.UndefOr[Double] = js.native
+  var iosNetworkType: js.UndefOr[Double] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomLeaveDiagnostics.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The MCC+MNC code for the client&#39;s network connection. On Android:
@@ -40,7 +38,7 @@ trait SchemaRoomLeaveDiagnostics extends StObject {
     * On iOS, see:
     * https://developer.apple.com/library/ios/documentation/NetworkingInternet/Reference/CTCarrier/Reference/Reference.html
     */
-  var networkOperatorCode: js.UndefOr[String] = js.native
+  var networkOperatorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the carrier of the client&#39;s network connection. On
@@ -49,17 +47,17 @@ trait SchemaRoomLeaveDiagnostics extends StObject {
     * On iOS:
     * https://developer.apple.com/library/ios/documentation/NetworkingInternet/Reference/CTCarrier/Reference/Reference.html#//apple_ref/occ/instp/CTCarrier/carrierName
     */
-  var networkOperatorName: js.UndefOr[String] = js.native
+  var networkOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Diagnostics about all peer sessions.
     */
-  var peerSession: js.UndefOr[js.Array[SchemaPeerSessionDiagnostics]] = js.native
+  var peerSession: js.UndefOr[js.Array[SchemaPeerSessionDiagnostics]] = js.undefined
   
   /**
     * Whether or not sockets were used.
     */
-  var socketsUsed: js.UndefOr[Boolean] = js.native
+  var socketsUsed: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaRoomLeaveDiagnostics {
   

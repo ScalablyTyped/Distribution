@@ -3,26 +3,26 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.categoryFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CategoryFilterAppender extends Appender {
+trait CategoryFilterAppender
+  extends StObject
+     with Appender {
   
   // the name of the appender to filter. see https://log4js-node.github.io/log4js-node/layouts.html
-  var appender: js.UndefOr[String] = js.native
+  var appender: js.UndefOr[String] = js.undefined
   
   // the category (or categories if you provide an array of values) that will be excluded from the appender.
-  var exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var `type`: categoryFilter = js.native
+  var `type`: categoryFilter
 }
 object CategoryFilterAppender {
   
   @scala.inline
-  def apply(`type`: categoryFilter): CategoryFilterAppender = {
+  def apply(): CategoryFilterAppender = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("categoryFilter")
     __obj.asInstanceOf[CategoryFilterAppender]
   }
   

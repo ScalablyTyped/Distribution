@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlForecast extends Generic {
+trait MlForecast
+  extends StObject
+     with Generic {
   
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
-  var expires_in: js.UndefOr[String] = js.native
+  var expires_in: js.UndefOr[String] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var max_model_memory: js.UndefOr[String] = js.native
+  var max_model_memory: js.UndefOr[String] = js.undefined
 }
 object MlForecast {
   

@@ -2,13 +2,11 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableAutofillOnKeyPress extends StObject {
   
-  var enableAutofillOnKeyPress: js.Array[Double] = js.native
+  var enableAutofillOnKeyPress: js.Array[Double]
 }
 object EnableAutofillOnKeyPress {
   

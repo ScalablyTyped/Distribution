@@ -2,20 +2,18 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a &quot;feature instance&quot;.
   */
-@js.native
 trait SchemaFeatureInstance extends StObject {
   
   /**
     * The feature that this is an instance of. A calendar resource may have
     * multiple instances of a feature.
     */
-  var feature: js.UndefOr[SchemaFeature] = js.native
+  var feature: js.UndefOr[SchemaFeature] = js.undefined
 }
 object SchemaFeatureInstance {
   

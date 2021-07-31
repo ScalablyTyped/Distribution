@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -187,13 +186,12 @@ object mod extends Shortcut {
     */
   type FlatPaths = StringDictionary[js.Any]
   
-  @js.native
   trait SetOptions extends StObject {
     
     /**
       * force overwrite defined non-object keys into objects if needed
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object SetOptions {
     
@@ -214,13 +212,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait TransformOptions extends StObject {
     
     /**
       * Use a custom delimiter for path
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
   }
   object TransformOptions {
     

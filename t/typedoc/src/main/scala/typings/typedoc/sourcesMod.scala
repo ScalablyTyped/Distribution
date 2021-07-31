@@ -2,7 +2,6 @@ package typings.typedoc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourcesMod {
@@ -12,8 +11,8 @@ object sourcesMod {
   class SourceDirectory ()
     extends typings.typedoc.directoryMod.SourceDirectory {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], parent: typings.typedoc.directoryMod.SourceDirectory) = this()
     def this(name: String, parent: typings.typedoc.directoryMod.SourceDirectory) = this()
+    def this(name: Unit, parent: typings.typedoc.directoryMod.SourceDirectory) = this()
   }
   
   @JSImport("typedoc/dist/lib/models/sources", "SourceFile")

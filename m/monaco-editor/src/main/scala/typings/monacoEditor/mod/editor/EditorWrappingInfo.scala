@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorWrappingInfo extends StObject {
   
-  val isDominatedByLongLines: Boolean = js.native
+  val isDominatedByLongLines: Boolean
   
-  val isViewportWrapping: Boolean = js.native
+  val isViewportWrapping: Boolean
   
-  val isWordWrapMinified: Boolean = js.native
+  val isWordWrapMinified: Boolean
   
-  val wrappingColumn: Double = js.native
+  val wrappingColumn: Double
 }
 object EditorWrappingInfo {
   

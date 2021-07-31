@@ -2,27 +2,25 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IParserResult extends StObject {
   
   /** Package name, if declared */
   @JSName("package")
-  var _package: js.UndefOr[String] = js.native
+  var _package: js.UndefOr[String] = js.undefined
   
   /** Imports, if any */
-  var imports: js.UndefOr[js.Array[String]] = js.native
+  var imports: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Populated root instance */
-  var root: Root = js.native
+  var root: Root
   
   /** Syntax, if specified (either `"proto2"` or `"proto3"`) */
-  var syntax: js.UndefOr[String] = js.native
+  var syntax: js.UndefOr[String] = js.undefined
   
   /** Weak imports, if any */
-  var weakImports: js.UndefOr[js.Array[String]] = js.native
+  var weakImports: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IParserResult {
   

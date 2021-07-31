@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotSlowstochasticParamsOptions extends StObject {
   
   /**
     * (Highstock) Periods for Slow Stochastic oscillator: [%K, %D, SMA(%D)].
     */
-  var periods: js.UndefOr[js.Tuple3[Double, Double, Double]] = js.native
+  var periods: js.UndefOr[js.Tuple3[Double, Double, Double]] = js.undefined
 }
 object PlotSlowstochasticParamsOptions {
   

@@ -4,39 +4,37 @@ import typings.wechatMiniprogram.wechatMiniprogramNumbers.`0`
 import typings.wechatMiniprogram.wechatMiniprogramNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseInvoiceTitleSuccessCallbackResult extends StObject {
   
   /** 银行账号 */
-  var bankAccount: String = js.native
+  var bankAccount: String
   
   /** 银行名称 */
-  var bankName: String = js.native
+  var bankName: String
   
   /** 单位地址 */
-  var companyAddress: String = js.native
+  var companyAddress: String
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 抬头税号 */
-  var taxNumber: String = js.native
+  var taxNumber: String
   
   /** 手机号码 */
-  var telephone: String = js.native
+  var telephone: String
   
   /** 抬头名称 */
-  var title: String = js.native
+  var title: String
   
   /** 抬头类型
     *
     * 可选值：
     * - 0: 单位;
     * - 1: 个人; */
-  var `type`: `0` | `1` = js.native
+  var `type`: `0` | `1`
 }
 object ChooseInvoiceTitleSuccessCallbackResult {
   

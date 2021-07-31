@@ -3,19 +3,16 @@ package typings.ol
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assertionErrorMod {
   
   @JSImport("ol/AssertionError", JSImport.Default)
   @js.native
-  class default protected () extends AssertionError {
+  class default protected ()
+    extends StObject
+       with AssertionError {
     def this(code: Double) = this()
-  }
-  
-  @js.native
-  trait AssertionError extends Error {
     
     /**
       * Error code. The meaning of the code can be found on
@@ -23,7 +20,27 @@ object assertionErrorMod {
       * the version found in the OpenLayers script's header comment if a version
       * other than the latest is used).
       */
+    /* CompleteClass */
     var code: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  trait AssertionError
+    extends StObject
+       with Error {
+    
+    /**
+      * Error code. The meaning of the code can be found on
+      * https://openlayers.org/en/latest/doc/errors/ (replace latest with
+      * the version found in the OpenLayers script's header comment if a version
+      * other than the latest is used).
+      */
+    var code: Double
   }
   object AssertionError {
     

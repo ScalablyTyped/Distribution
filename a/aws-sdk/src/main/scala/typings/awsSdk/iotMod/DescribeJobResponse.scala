@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobResponse extends StObject {
   
   /**
     * An S3 link to the job document.
     */
-  var documentSource: js.UndefOr[JobDocumentSource] = js.native
+  var documentSource: js.UndefOr[JobDocumentSource] = js.undefined
   
   /**
     * Information about the job.
     */
-  var job: js.UndefOr[Job] = js.native
+  var job: js.UndefOr[Job] = js.undefined
 }
 object DescribeJobResponse {
   

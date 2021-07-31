@@ -7,27 +7,26 @@ import typings.serverless.anon.MethodString
 import typings.serverless.anon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateMod {
   
-  @JSImport("serverless/plugins/aws/package/compile/events/apiGateway/lib/validate", "getHttp")
+  @JSImport("serverless/plugins/aws/package/compile/events/apiGateway/lib/validate", JSImport.Namespace)
   @js.native
-  def getHttp[T /* <: js.Object */](event: Http[T], functionName: String): Method | T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("serverless/plugins/aws/package/compile/events/apiGateway/lib/validate", "getHttpMethod")
-  @js.native
-  def getHttpMethod(http: MethodString, functionName: String): HttpMethod = js.native
+  @scala.inline
+  def getHttp[T /* <: js.Object */](event: Http[T], functionName: String): Method | T = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttp")(event.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Method | T]
   
-  @JSImport("serverless/plugins/aws/package/compile/events/apiGateway/lib/validate", "getHttpPath")
-  @js.native
-  def getHttpPath(http: Path, functionName: String): String = js.native
+  @scala.inline
+  def getHttpMethod(http: MethodString, functionName: String): HttpMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpMethod")(http.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[HttpMethod]
   
-  @js.native
+  @scala.inline
+  def getHttpPath(http: Path, functionName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpPath")(http.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ApiGatewayEvent extends StObject {
     
-    var http: String | Authorizer = js.native
+    var http: String | Authorizer
   }
   object ApiGatewayEvent {
     

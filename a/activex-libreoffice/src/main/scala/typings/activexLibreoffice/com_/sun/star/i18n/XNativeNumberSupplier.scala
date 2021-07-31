@@ -5,28 +5,28 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Methods to convert between strings of ASCII Arabic digits and native numeral strings.
   * @since OOo 1.1.2
   */
-@js.native
-trait XNativeNumberSupplier extends XInterface {
+trait XNativeNumberSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * Convert XML attributes to a NatNum value.
     * @returns One of {@link NativeNumberMode}
     */
-  def convertFromXmlAttributes(aAttr: NativeNumberXmlAttributes): Double = js.native
+  def convertFromXmlAttributes(aAttr: NativeNumberXmlAttributes): Double
   
   /**
     * Convert a specific NatNum/Locale combination to attributes used in the XML file format.
     * @param nNativeNumberMode One of {@link NativeNumberMode} values.
     * @param aLocale The locale.
     */
-  def convertToXmlAttributes(aLocale: Locale, nNativeNumberMode: Double): NativeNumberXmlAttributes = js.native
+  def convertToXmlAttributes(aLocale: Locale, nNativeNumberMode: Double): NativeNumberXmlAttributes
   
   /**
     * Returns native number string for given number string.
@@ -34,14 +34,14 @@ trait XNativeNumberSupplier extends XInterface {
     * @param nNativeNumberMode One of {@link NativeNumberMode} values.
     * @param aLocale The locale.
     */
-  def getNativeNumberString(aNumberString: String, aLocale: Locale, nNativeNumberMode: Double): String = js.native
+  def getNativeNumberString(aNumberString: String, aLocale: Locale, nNativeNumberMode: Double): String
   
   /**
     * Check if the NatNum is valid for the given locale.
     * @param nNativeNumberMode One of {@link NativeNumberMode} values.
     * @param aLocale The locale.
     */
-  def isValidNatNum(aLocale: Locale, nNativeNumberMode: Double): Boolean = js.native
+  def isValidNatNum(aLocale: Locale, nNativeNumberMode: Double): Boolean
 }
 object XNativeNumberSupplier {
   

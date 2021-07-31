@@ -3,53 +3,51 @@ package typings.awsSdkClientCodecommitNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommentMod {
   
-  @js.native
   trait Comment extends StObject {
     
     /**
       * <p>The Amazon Resource Name (ARN) of the person who posted the comment.</p>
       */
-    var authorArn: js.UndefOr[String] = js.native
+    var authorArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A unique, client-generated idempotency token that when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request will return information about the initial request that used that token.</p>
       */
-    var clientRequestToken: js.UndefOr[String] = js.native
+    var clientRequestToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The system-generated comment ID.</p>
       */
-    var commentId: js.UndefOr[String] = js.native
+    var commentId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The content of the comment.</p>
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date and time the comment was created, in timestamp format.</p>
       */
-    var creationDate: js.UndefOr[Date | String | Double] = js.native
+    var creationDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>A Boolean value indicating whether the comment has been deleted.</p>
       */
-    var deleted: js.UndefOr[Boolean] = js.native
+    var deleted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>The ID of the comment for which this comment is a reply, if any.</p>
       */
-    var inReplyTo: js.UndefOr[String] = js.native
+    var inReplyTo: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date and time the comment was most recently modified, in timestamp format.</p>
       */
-    var lastModifiedDate: js.UndefOr[Date | String | Double] = js.native
+    var lastModifiedDate: js.UndefOr[Date | String | Double] = js.undefined
   }
   object Comment {
     
@@ -112,20 +110,21 @@ object typesCommentMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledComment extends Comment {
+  trait UnmarshalledComment
+    extends StObject
+       with Comment {
     
     /**
       * <p>The date and time the comment was created, in timestamp format.</p>
       */
     @JSName("creationDate")
-    var creationDate_UnmarshalledComment: js.UndefOr[Date] = js.native
+    var creationDate_UnmarshalledComment: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The date and time the comment was most recently modified, in timestamp format.</p>
       */
     @JSName("lastModifiedDate")
-    var lastModifiedDate_UnmarshalledComment: js.UndefOr[Date] = js.native
+    var lastModifiedDate_UnmarshalledComment: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledComment {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPermissionPolicyRequest extends StObject {
   
   /**
     * The policy to attach to the specified RuleGroup.
     */
-  var Policy: PolicyString = js.native
+  var Policy: PolicyString
   
   /**
     * The Amazon Resource Name (ARN) of the RuleGroup to which you want to attach the policy.
     */
-  var ResourceArn: typings.awsSdk.wafMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafMod.ResourceArn
 }
 object PutPermissionPolicyRequest {
   

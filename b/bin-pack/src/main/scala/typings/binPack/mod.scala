@@ -2,25 +2,25 @@ package typings.binPack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T /* <: Bin */](bins: js.Array[T]): PackResult[T] = ^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any]).asInstanceOf[PackResult[T]]
+  @scala.inline
+  def apply[T /* <: Bin */](bins: js.Array[T], options: Options): PackResult[T] = (^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackResult[T]]
+  
   @JSImport("bin-pack", JSImport.Namespace)
   @js.native
-  def apply[T /* <: Bin */](bins: js.Array[T]): PackResult[T] = js.native
-  @JSImport("bin-pack", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Bin */](bins: js.Array[T], options: Options): PackResult[T] = js.native
+  val ^ : js.Any = js.native
   
   /** Specifies the dimensions of a bin to pack. */
-  @js.native
   trait Bin extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bin {
     
@@ -42,11 +42,10 @@ object mod {
   }
   
   /** Packing options. */
-  @js.native
   trait Options extends StObject {
     
     /** Use inPlace=true to add x,y fields to the bins argument. */
-    var inPlace: js.UndefOr[Boolean] = js.native
+    var inPlace: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -68,17 +67,16 @@ object mod {
   }
   
   /** The return value from the pack function. */
-  @js.native
   trait PackResult[T] extends StObject {
     
     /** Height of the bounding box around all bins. */
-    var height: Double = js.native
+    var height: Double
     
     /** List of packed bins. */
-    var items: js.Array[PackedItem[T]] = js.native
+    var items: js.Array[PackedItem[T]]
     
     /** Width of the bounding box around all bins. */
-    var width: Double = js.native
+    var width: Double
   }
   object PackResult {
     
@@ -89,7 +87,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PackResultMutableBuilder[Self <: PackResult[_], T] (val x: Self with PackResult[T]) extends AnyVal {
+    implicit class PackResultMutableBuilder[Self <: PackResult[?], T] (val x: Self & PackResult[T]) extends AnyVal {
       
       @scala.inline
       def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
@@ -106,23 +104,22 @@ object mod {
   }
   
   /** Describes the location of a packed bin. */
-  @js.native
   trait PackedItem[T] extends StObject {
     
     /** Height of the bin. */
-    var height: Double = js.native
+    var height: Double
     
     /** The original bin object. */
-    var item: T = js.native
+    var item: T
     
     /** Width of the bin. */
-    var width: Double = js.native
+    var width: Double
     
     /** X coordinate of the packed bin. */
-    var x: Double = js.native
+    var x: Double
     
     /** Y coordinate of the packed bin. */
-    var y: Double = js.native
+    var y: Double
   }
   object PackedItem {
     
@@ -133,7 +130,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PackedItemMutableBuilder[Self <: PackedItem[_], T] (val x: Self with PackedItem[T]) extends AnyVal {
+    implicit class PackedItemMutableBuilder[Self <: PackedItem[?], T] (val x: Self & PackedItem[T]) extends AnyVal {
       
       @scala.inline
       def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

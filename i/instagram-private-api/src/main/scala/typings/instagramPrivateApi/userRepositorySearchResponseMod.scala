@@ -2,23 +2,21 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userRepositorySearchResponseMod {
   
-  @js.native
   trait UserRepositorySearchResponseFriendshipStatus extends StObject {
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object UserRepositorySearchResponseFriendshipStatus {
     
@@ -54,18 +52,17 @@ object userRepositorySearchResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositorySearchResponseRootObject extends StObject {
     
-    var has_more: Boolean = js.native
+    var has_more: Boolean
     
-    var num_results: Double = js.native
+    var num_results: Double
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var status: String = js.native
+    var status: String
     
-    var users: js.Array[UserRepositorySearchResponseUsersItem] = js.native
+    var users: js.Array[UserRepositorySearchResponseUsersItem]
   }
   object UserRepositorySearchResponseRootObject {
     
@@ -104,40 +101,39 @@ object userRepositorySearchResponseMod {
     }
   }
   
-  @js.native
   trait UserRepositorySearchResponseUsersItem extends StObject {
     
-    var byline: String = js.native
+    var byline: String
     
-    var follower_count: Double = js.native
+    var follower_count: Double
     
-    var friendship_status: UserRepositorySearchResponseFriendshipStatus = js.native
+    var friendship_status: UserRepositorySearchResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var latest_reel_media: js.UndefOr[Double] = js.native
+    var latest_reel_media: js.UndefOr[Double] = js.undefined
     
-    var mutual_followers_count: Double = js.native
+    var mutual_followers_count: Double
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var search_social_context: js.UndefOr[String] = js.native
+    var search_social_context: js.UndefOr[String] = js.undefined
     
-    var social_context: js.UndefOr[String] = js.native
+    var social_context: js.UndefOr[String] = js.undefined
     
-    var unseen_count: js.UndefOr[Double] = js.native
+    var unseen_count: js.UndefOr[Double] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object UserRepositorySearchResponseUsersItem {
     

@@ -5,10 +5,8 @@ import typings.vegaLite.utilMod.Dict
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datasets extends StObject {
   
   /**
@@ -16,24 +14,24 @@ trait Datasets extends StObject {
     * @format uri
     */
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.native
+  var $schema: js.UndefOr[String] = js.undefined
   
   /**
     * Vega-Lite configuration object. This property can only be defined at the top-level of a specification.
     */
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.native
+  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
   
   /**
     * A global data store for named datasets. This is a mapping from names to inline datasets.
     * This can be an array of objects or primitive values or a string. Arrays of primitive values are ingested as objects with a `data` property.
     */
-  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.native
+  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.undefined
   
   /**
     * Optional metadata that will be passed to Vega.
     * This object is completely ignored by Vega and Vega-Lite and can be used for custom metadata.
     */
-  var usermeta: js.UndefOr[Dict[_]] = js.native
+  var usermeta: js.UndefOr[Dict[js.Any]] = js.undefined
 }
 object Datasets {
   
@@ -65,7 +63,7 @@ object Datasets {
     def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
     
     @scala.inline
-    def setUsermeta(value: Dict[_]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+    def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)

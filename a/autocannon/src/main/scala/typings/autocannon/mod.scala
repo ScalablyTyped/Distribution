@@ -50,30 +50,29 @@ import typings.node.httpMod.IncomingHttpHeaders
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("autocannon", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Result] = js.native
+  @scala.inline
+  def apply(options: Options): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   /**
     * Start autocannon against the given target.
     */
+  @scala.inline
+  def apply(options: Options, callback: js.Function2[/* err */ js.Any, /* result */ Result, js.Any]): Instance = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  
   @JSImport("autocannon", JSImport.Namespace)
   @js.native
-  def apply(options: Options, callback: js.Function2[/* err */ js.Any, /* result */ Result, _]): Instance = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Track the progress of your autocannon.
     */
-  @JSImport("autocannon", "track")
-  @js.native
-  def track(instance: Instance): Unit = js.native
-  @JSImport("autocannon", "track")
-  @js.native
-  def track(instance: Instance, options: TrackingOptions): Unit = js.native
+  @scala.inline
+  def track(instance: Instance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def track(instance: Instance, options: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(instance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This object is passed as the first parameter of both the `setupClient` function and the `response` event from an autocannon instance.
@@ -81,7 +80,9 @@ object mod {
     * You can use this to modify the requests you are sending while benchmarking.
     */
   @js.native
-  trait Client extends EventEmitter {
+  trait Client
+    extends StObject
+       with EventEmitter {
     
     /**
       * Emitted when a request sent from this client has received the body of a reply.
@@ -123,8 +124,8 @@ object mod {
       * @param body - should be a `String` or `Buffer`, or `undefined` if you want to remove the body.
       */
     def setHeadersAndBody(): Unit = js.native
-    def setHeadersAndBody(headers: js.UndefOr[scala.Nothing], body: String): Unit = js.native
-    def setHeadersAndBody(headers: js.UndefOr[scala.Nothing], body: Buffer): Unit = js.native
+    def setHeadersAndBody(headers: Unit, body: String): Unit = js.native
+    def setHeadersAndBody(headers: Unit, body: Buffer): Unit = js.native
     def setHeadersAndBody(headers: IncomingHttpHeaders): Unit = js.native
     def setHeadersAndBody(headers: IncomingHttpHeaders, body: String): Unit = js.native
     def setHeadersAndBody(headers: IncomingHttpHeaders, body: Buffer): Unit = js.native
@@ -145,70 +146,69 @@ object mod {
     def setRequests(newRequests: js.Array[Request]): Unit = js.native
   }
   
-  @js.native
   trait Histogram extends StObject {
     
     /** The average (mean) value. */
-    var average: Double = js.native
+    var average: Double
     
     /** The highest value for this statistic. */
-    var max: Double = js.native
+    var max: Double
     
     /** The average (mean) value */
-    var mean: Double = js.native
+    var mean: Double
     
     /** The lowest value for this statistic. */
-    var min: Double = js.native
+    var min: Double
     
     /** The 0.001st percentile value for this statistic. */
-    var p0_001: Double = js.native
+    var p0_001: Double
     
     /** The 0.01st percentile value for this statistic. */
-    var p0_01: Double = js.native
+    var p0_01: Double
     
     /** The 0.1st percentile value for this statistic. */
-    var p0_1: Double = js.native
+    var p0_1: Double
     
     /** The 1st percentile value for this statistic. */
-    var p1: Double = js.native
+    var p1: Double
     
     /** The 10th percentile value for this statistic. */
-    var p10: Double = js.native
+    var p10: Double
     
     /** The 25th percentile value for this statistic. */
-    var p25: Double = js.native
+    var p25: Double
     
     /** The 2.5th percentile value for this statistic. */
-    var p2_5: Double = js.native
+    var p2_5: Double
     
     /** The 50th percentile value for this statistic. */
-    var p50: Double = js.native
+    var p50: Double
     
     /** The 75th percentile value for this statistic. */
-    var p75: Double = js.native
+    var p75: Double
     
     /** The 90th percentile value for this statistic. */
-    var p90: Double = js.native
+    var p90: Double
     
     /** The 97.5th percentile value for this statistic. */
-    var p97_5: Double = js.native
+    var p97_5: Double
     
     /** The 99th percentile value for this statistic. */
-    var p99: Double = js.native
+    var p99: Double
     
     /** The 99.9th percentile value for this statistic. */
-    var p99_9: Double = js.native
+    var p99_9: Double
     
     /** The 99.99th percentile value for this statistic. */
-    var p99_99: Double = js.native
+    var p99_99: Double
     
     /** The 99.999th percentile value for this statistic. */
-    var p99_999: Double = js.native
+    var p99_999: Double
     
     /** The standard deviation. */
-    var stddev: Double = js.native
+    var stddev: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Histogram {
     
@@ -312,7 +312,9 @@ object mod {
     * Autocannon instance/event emitter for tracking progress, etc.
     */
   @js.native
-  trait Instance extends EventEmitter {
+  trait Instance
+    extends StObject
+       with EventEmitter {
     
     // tslint:disable-line:unified-signatures
     /**
@@ -358,7 +360,6 @@ object mod {
     def on_tick(event: tick, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -366,14 +367,14 @@ object mod {
       * This overrides duration and takes precedence, so the test won't end
       * until the amount of requests needed to be completed are completed.
       */
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
     /**
       * The threshold of the number of errors when making the requests to the server before this instance bail's out.
       * This instance will take all existing results so far and aggregate them into the results.
       * If none passed here, the instance will ignore errors and never bail out.
       */
-    var bailout: js.UndefOr[Double] = js.native
+    var bailout: js.UndefOr[Double] = js.undefined
     
     /**
       * A `String` or a `Buffer` containing the body of the request.
@@ -385,64 +386,64 @@ object mod {
       *
       * Leave undefined for an empty body.
       */
-    var body: js.UndefOr[String | Buffer] = js.native
+    var body: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * A `Number` stating the rate of requests to make per second from each individual connection.
       * No rate limiting by default.
       */
-    var connectionRate: js.UndefOr[Double] = js.native
+    var connectionRate: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of concurrent connections.
       * @default 10
       */
-    var connections: js.UndefOr[Double] = js.native
+    var connections: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of seconds to run the autocannon.
       * Can be a [timestring](https://www.npmjs.com/package/timestring).
       * @default 10
       */
-    var duration: js.UndefOr[Double | String] = js.native
+    var duration: js.UndefOr[Double | String] = js.undefined
     
     /**
       * A `Boolean` which allows you to disable tracking non 2xx code responses in latency and bytes per second calculations.
       * @default false
       */
-    var excludeErrorStats: js.UndefOr[Boolean] = js.native
+    var excludeErrorStats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A `Boolean` which allows you to setup an instance of autocannon that restarts indefinitely after emiting results with the `done` event.
       * Useful for efficiently restarting your instance. To stop running forever, you must cause a `SIGINT` or call the `.stop()` function on your instance.
       * @default false
       */
-    var forever: js.UndefOr[Boolean] = js.native
+    var forever: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An `Object` containing the headers of the request.
       * @default {}
       */
-    var headers: js.UndefOr[IncomingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
     /**
       * A `Boolean` which enables the replacement of `[<id>]` tags within the request body with a randomly generated ID,
       * allowing for unique fields to be sent with requests.
       * @default false
       */
-    var idReplacement: js.UndefOr[Boolean] = js.native
+    var idReplacement: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A `Number` stating the max requests to make per connection.
       * `amount` takes precedence if both are set.
       */
-    var maxConnectionRequests: js.UndefOr[Double] = js.native
+    var maxConnectionRequests: js.UndefOr[Double] = js.undefined
     
     /**
       * A `Number` stating the max requests to make overall.
       * Can't be less than `connections`.
       */
-    var maxOverallRequests: js.UndefOr[Double] = js.native
+    var maxOverallRequests: js.UndefOr[Double] = js.undefined
     
     /**
       * The http method to use.
@@ -450,27 +451,27 @@ object mod {
       */
     var method: js.UndefOr[
         ACL | BIND | CHECKOUT | CONNECT | COPY | DELETE | GET | HEAD | LINK | LOCK | `M-SEARCH` | MERGE | MKACTIVITY | MKCALENDAR | MKCOL | MOVE | NOTIFY | OPTIONS | PATCH | POST | PROPFIND | PROPPATCH | PURGE | PUT | REBIND | REPORT | SEARCH | SOURCE | SUBSCRIBE | TRACE | UNBIND | UNLINK | UNLOCK | UNSUBSCRIBE
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A `Number` stating the rate of requests to make per second from all connections.
       * `connectionRate` takes precedence if both are set.
       * No rate limiting by default.
       */
-    var overallRate: js.UndefOr[Double] = js.native
+    var overallRate: js.UndefOr[Double] = js.undefined
     
     /**
       *  The number of [pipelined requests](https://en.wikipedia.org/wiki/HTTP_pipelining) for each connection.
       * Will cause the `Client` API to throw when greater than 1
       * @default 1
       */
-    var pipelining: js.UndefOr[Double] = js.native
+    var pipelining: js.UndefOr[Double] = js.undefined
     
     /**
       * A `Number` which makes the individual connections disconnect and reconnect to the server
       * whenever it has sent that number of requests.
       */
-    var reconnectRate: js.UndefOr[Double] = js.native
+    var reconnectRate: js.UndefOr[Double] = js.undefined
     
     /**
       * An `Array` of `Objects` which represents the sequence of requests to make while benchmarking.
@@ -479,12 +480,12 @@ object mod {
       * The `Objects` in this array can have `body`, `headers`, `method`, or `path` attributes, which overwrite those that are passed in this `opts` object.
       * Therefore, the ones in this (`opts`) object take precedence and should be viewed as defaults.
       */
-    var requests: js.UndefOr[js.Array[Request]] = js.native
+    var requests: js.UndefOr[js.Array[Request]] = js.undefined
     
     /**
       * A `String` identifying the server name for the SNI (Server Name Indication) TLS extension.
       */
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
     /**
       * A `Function` which will be passed the Client object for each connection to be made.
@@ -494,29 +495,29 @@ object mod {
       *
       * @default noop(){}
       */
-    var setupClient: js.UndefOr[js.Function1[/* client */ Client, Unit]] = js.native
+    var setupClient: js.UndefOr[js.Function1[/* client */ Client, Unit]] = js.undefined
     
     /**
       * A path to a Unix Domain Socket or a Windows Named Pipe.
       * A `url` is still required in order to send the correct Host header and path.
       */
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
     /**
       * The number of seconds to wait for a response before timeout.
       * @default 10
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * A `String` to be added to the results for identification.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The given target. Can be http or https.
       */
-    var url: String = js.native
+    var url: String
   }
   object Options {
     
@@ -671,18 +672,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var body: js.UndefOr[String | Buffer] = js.native
+    var body: js.UndefOr[String | Buffer] = js.undefined
     
-    var headers: js.UndefOr[IncomingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
     var method: js.UndefOr[
         ACL | BIND | CHECKOUT | CONNECT | COPY | DELETE | GET | HEAD | LINK | LOCK | `M-SEARCH` | MERGE | MKACTIVITY | MKCALENDAR | MKCOL | MOVE | NOTIFY | OPTIONS | PATCH | POST | PROPFIND | PROPPATCH | PURGE | PUT | REBIND | REPORT | SEARCH | SOURCE | SUBSCRIBE | TRACE | UNBIND | UNLINK | UNLOCK | UNSUBSCRIBE
-      ] = js.native
+      ] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object Request {
     
@@ -726,65 +726,64 @@ object mod {
   /**
     * The results object emitted by `done` and passed to the `autocannon()` callback.
     */
-  @js.native
   trait Result extends StObject {
     
     /** The number of 1xx response status codes received. */
-    var `1XX`: Double = js.native
+    var `1XX`: Double
     
     /** The number of 2xx response status codes received. */
-    var `2XX`: Double = js.native
+    var `2XX`: Double
     
     /** The number of 3xx response status codes received. */
-    var `3XX`: Double = js.native
+    var `3XX`: Double
     
     /** The number of 4xx response status codes received. */
-    var `4XX`: Double = js.native
+    var `4XX`: Double
     
     /** The number of 5xx response status codes received. */
-    var `5XX`: Double = js.native
+    var `5XX`: Double
     
     /** The amount of connections used (value of `options.connections`). */
-    var connections: Double = js.native
+    var connections: Double
     
     /** The amount of time the test took, **in seconds**. */
-    var duration: Double = js.native
+    var duration: Double
     
     /** The number of connection errors (including timeouts) that occurred. */
-    var errors: Double = js.native
+    var errors: Double
     
     /** A Date object representing when the test ended. */
-    var finish: Date = js.native
+    var finish: Date
     
     /** A histogram object containing statistics about response latency. */
-    var latency: Histogram = js.native
+    var latency: Histogram
     
     /** The number of non-2xx response status codes received. */
-    var non2xx: Double = js.native
+    var non2xx: Double
     
     /** The number of pipelined requests used per connection (value of `options.pipelining`). */
-    var pipelining: Double = js.native
+    var pipelining: Double
     
     /** A histogram object containing statistics about the amount of requests that were sent per second. */
-    var requests: Histogramsentnumber = js.native
+    var requests: Histogramsentnumber
     
     /** The UNIX Domain Socket or Windows Named Pipe that was targeted, or `undefined`. */
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
     /** A Date object representing when the test started. */
-    var start: Date = js.native
+    var start: Date
     
     /** A histogram object containing statistics about the response data throughput per second. */
-    var throughput: Histogram = js.native
+    var throughput: Histogram
     
     /** The number of connection timeouts that occurred. */
-    var timeouts: Double = js.native
+    var timeouts: Double
     
     /** Value of the `title` option passed to `autocannon()`. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** The URL that was targeted. */
-    var url: String = js.native
+    var url: String
   }
   object Result {
     
@@ -885,38 +884,37 @@ object mod {
     }
   }
   
-  @js.native
   trait TrackingOptions extends StObject {
     
     /**
       * The stream to output to.
       * @default process.stderr
       */
-    var outputStream: js.UndefOr[WritableStream] = js.native
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * A `String` defining the format of the progress display output. Must be valid input for the [progress bar module](https://www.npmjs.com/package/progress).
       * @default 'running [:bar] :percent'
       */
-    var progressBarString: js.UndefOr[String] = js.native
+    var progressBarString: js.UndefOr[String] = js.undefined
     
     /**
       * A truthy value to enable the rendering of the advanced latency table.
       * @default false
       */
-    var renderLatencyTable: js.UndefOr[Boolean] = js.native
+    var renderLatencyTable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A truthy value to enable the rendering of the progress bar.
       * @default true
       */
-    var renderProgressBar: js.UndefOr[Boolean] = js.native
+    var renderProgressBar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A truthy value to enable the rendering of the results table.
       * @default true
       */
-    var renderResultsTable: js.UndefOr[Boolean] = js.native
+    var renderResultsTable: js.UndefOr[Boolean] = js.undefined
   }
   object TrackingOptions {
     

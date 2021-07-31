@@ -4,15 +4,13 @@ import typings.qlikEngineapi.EngineAPI.ISourceKeyRecord
 import typings.qlikEngineapi.EngineAPI.ITableRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Qk extends StObject {
   
-  var qk: js.Array[ISourceKeyRecord] = js.native
+  var qk: js.Array[ISourceKeyRecord]
   
-  var qtr: js.Array[ITableRecord] = js.native
+  var qtr: js.Array[ITableRecord]
 }
 object Qk {
   

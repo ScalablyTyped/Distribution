@@ -5,7 +5,6 @@ import typings.react.mod.Props
 import typings.uifabricUtilities.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delayedRenderMod {
@@ -38,14 +37,14 @@ object delayedRenderMod {
     def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDelayedRenderProps
-    extends Props[js.Object] {
+    extends StObject
+       with Props[js.Object] {
     
     /**
       * Number of milliseconds to delay rendering children.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
   }
   object IDelayedRenderProps {
     
@@ -66,13 +65,12 @@ object delayedRenderMod {
     }
   }
   
-  @js.native
   trait IDelayedRenderState extends StObject {
     
     /**
       * Whether the component is rendered or not.
       */
-    var isRendered: Boolean = js.native
+    var isRendered: Boolean
   }
   object IDelayedRenderState {
     

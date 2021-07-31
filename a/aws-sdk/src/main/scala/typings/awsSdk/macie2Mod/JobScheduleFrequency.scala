@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobScheduleFrequency extends StObject {
   
   /**
     * Specifies a daily recurrence pattern for running the job.
     */
-  var dailySchedule: js.UndefOr[DailySchedule] = js.native
+  var dailySchedule: js.UndefOr[DailySchedule] = js.undefined
   
   /**
     * Specifies a monthly recurrence pattern for running the job.
     */
-  var monthlySchedule: js.UndefOr[MonthlySchedule] = js.native
+  var monthlySchedule: js.UndefOr[MonthlySchedule] = js.undefined
   
   /**
     * Specifies a weekly recurrence pattern for running the job.
     */
-  var weeklySchedule: js.UndefOr[WeeklySchedule] = js.native
+  var weeklySchedule: js.UndefOr[WeeklySchedule] = js.undefined
 }
 object JobScheduleFrequency {
   

@@ -2,25 +2,23 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitBlobRef extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * SHA1 hash of git object
     */
-  var objectId: String = js.native
+  var objectId: String
   
   /**
     * Size of blob content (in bytes)
     */
-  var size: Double = js.native
+  var size: Double
   
-  var url: String = js.native
+  var url: String
 }
 object GitBlobRef {
   

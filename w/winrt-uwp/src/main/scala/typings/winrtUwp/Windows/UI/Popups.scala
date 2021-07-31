@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for context menus and message dialogs. */
@@ -21,11 +20,15 @@ object Popups {
     
     /** Ignore user input for a short period. This enables browsers to defend against clickjacking. */
     @js.native
-    sealed trait acceptUserInputAfterDelay extends MessageDialogOptions
+    sealed trait acceptUserInputAfterDelay
+      extends StObject
+         with MessageDialogOptions
     
     /** No options are specified and default behavior is used. */
     @js.native
-    sealed trait none extends MessageDialogOptions
+    sealed trait none
+      extends StObject
+         with MessageDialogOptions
   }
   
   @js.native
@@ -37,69 +40,98 @@ object Popups {
     
     /** Place the context menu above the selection rectangle. */
     @js.native
-    sealed trait default extends Placement
+    sealed trait default
+      extends StObject
+         with Placement
     
     /** Place the context menu above the selection rectangle. */
     @js.native
-    sealed trait above extends Placement
+    sealed trait above
+      extends StObject
+         with Placement
     
     /** Place the context menu below the selection rectangle. */
     @js.native
-    sealed trait below extends Placement
+    sealed trait below
+      extends StObject
+         with Placement
     
     /** Place the context menu to the left of the selection rectangle. */
     @js.native
-    sealed trait left extends Placement
+    sealed trait left
+      extends StObject
+         with Placement
     
     /** Place the context menu to the right of the selection rectangle. */
     @js.native
-    sealed trait right extends Placement
+    sealed trait right
+      extends StObject
+         with Placement
   }
   
   /** Represents a command in a context menu or message dialog box. */
-  @js.native
   trait IUICommand extends StObject {
     
     /** Gets or sets the identifier of the command. */
-    var id: js.Any = js.native
+    var id: js.Any
     
     /** Gets or sets the handler for the event that is fired when the user invokes the command. */
-    def invoked(command: IUICommand): Unit = js.native
+    def invoked(command: IUICommand): Unit
     /** Gets or sets the handler for the event that is fired when the user invokes the command. */
     @JSName("invoked")
-    var invoked_Original: UICommandInvokedHandler = js.native
+    var invoked_Original: UICommandInvokedHandler
     
     /** Gets or sets the label for the command. */
-    var label: String = js.native
+    var label: String
+  }
+  object IUICommand {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IUICommand]
+    }
+    
+    @scala.inline
+    implicit class IUICommandMutableBuilder[Self <: IUICommand] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents a dialog. The dialog has a command bar that can support up to three commands. If you don't specify any commands, then a default command is added to close the dialog. */
-  @js.native
   trait MessageDialog extends StObject {
     
     /** Gets or sets the index of the command you want to use as the cancel command. This is the command that fires when users press the ESC key. */
-    var cancelCommandIndex: Double = js.native
+    var cancelCommandIndex: Double
     
     /** Gets an array of commands that appear in the command bar of the message dialog. These commands makes the dialog actionable. */
-    var commands: IVector[IUICommand] = js.native
+    var commands: IVector[IUICommand]
     
     /** Gets or sets the message to be displayed to the user. */
-    var content: String = js.native
+    var content: String
     
     /** Gets or sets the index of the command you want to use as the default. This is the command that fires by default when users press the ENTER key. */
-    var defaultCommandIndex: Double = js.native
+    var defaultCommandIndex: Double
     
     /** Gets or sets the options for a MessageDialog . */
-    var options: MessageDialogOptions = js.native
+    var options: MessageDialogOptions
     
     /**
       * Begins an asynchronous operation showing a dialog.
       * @return An object that represents the asynchronous operation. For more on the async pattern, see Asynchronous programming.
       */
-    def showAsync(): IPromiseWithIAsyncOperation[IUICommand] = js.native
+    def showAsync(): IPromiseWithIAsyncOperation[IUICommand]
     
     /** Gets or sets the title to display on the dialog, if any. */
-    var title: String = js.native
+    var title: String
   }
   object MessageDialog {
     
@@ -173,39 +205,79 @@ object Popups {
   }
   
   /** Represents a command in a context menu. */
-  @js.native
   trait UICommand extends StObject {
     
     /** Gets or sets the identifier of the command. */
-    var id: js.Any = js.native
+    var id: js.Any
     
     /** Gets or sets the handler for the event that is fired when the user selects the UICommand . */
-    def invoked(command: IUICommand): Unit = js.native
+    def invoked(command: IUICommand): Unit
     /** Gets or sets the handler for the event that is fired when the user selects the UICommand . */
     @JSName("invoked")
-    var invoked_Original: UICommandInvokedHandler = js.native
+    var invoked_Original: UICommandInvokedHandler
     
     /** Gets or sets the label for the command. */
-    var label: String = js.native
+    var label: String
+  }
+  object UICommand {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UICommand]
+    }
+    
+    @scala.inline
+    implicit class UICommandMutableBuilder[Self <: UICommand] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Represents a callback function that handles the event that is fired when the user invokes a context menu command. */
   type UICommandInvokedHandler = js.Function1[/* command */ IUICommand, Unit]
   
   /** Represents a command separator in a context menu. */
-  @js.native
   trait UICommandSeparator extends StObject {
     
     /** Gets or sets the identifier of the command separator. */
-    var id: js.Any = js.native
+    var id: js.Any
     
     /** Gets or sets the handler for the event that is fired for the command separator. */
-    def invoked(command: IUICommand): Unit = js.native
+    def invoked(command: IUICommand): Unit
     /** Gets or sets the handler for the event that is fired for the command separator. */
     @JSName("invoked")
-    var invoked_Original: UICommandInvokedHandler = js.native
+    var invoked_Original: UICommandInvokedHandler
     
     /** Gets or sets the label for the command separator. */
-    var label: String = js.native
+    var label: String
+  }
+  object UICommandSeparator {
+    
+    @scala.inline
+    def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UICommandSeparator]
+    }
+    
+    @scala.inline
+    implicit class UICommandSeparatorMutableBuilder[Self <: UICommandSeparator] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    }
   }
 }

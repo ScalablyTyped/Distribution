@@ -3,20 +3,19 @@ package typings.watsonDeveloperCloud.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An intent identified in the user input. */
-@js.native
 trait RuntimeIntent
-  extends /** DialogNodeOutput accepts additional properties. */
+  extends StObject
+     with /** DialogNodeOutput accepts additional properties. */
 /* propName */ StringDictionary[js.Any] {
   
   /** A decimal percentage that represents Watson's confidence in the intent. */
-  var confidence: Double = js.native
+  var confidence: Double
   
   /** The name of the recognized intent. */
-  var intent: String = js.native
+  var intent: String
 }
 object RuntimeIntent {
   

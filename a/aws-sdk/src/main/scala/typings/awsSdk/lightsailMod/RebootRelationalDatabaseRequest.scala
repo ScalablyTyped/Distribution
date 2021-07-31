@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebootRelationalDatabaseRequest extends StObject {
   
   /**
     * The name of your database to reboot.
     */
-  var relationalDatabaseName: ResourceName = js.native
+  var relationalDatabaseName: ResourceName
 }
 object RebootRelationalDatabaseRequest {
   

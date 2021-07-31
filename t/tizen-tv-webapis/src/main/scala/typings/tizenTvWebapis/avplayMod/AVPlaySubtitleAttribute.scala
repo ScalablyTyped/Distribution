@@ -2,17 +2,15 @@ package typings.tizenTvWebapis.avplayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AVPlaySubtitleAttribute extends StObject {
   
-  var attr_type: String = js.native
+  var attr_type: String
   
-  var start_pos: Double = js.native
+  var start_pos: Double
   
-  var stop_pos: Double = js.native
+  var stop_pos: Double
 }
 object AVPlaySubtitleAttribute {
   

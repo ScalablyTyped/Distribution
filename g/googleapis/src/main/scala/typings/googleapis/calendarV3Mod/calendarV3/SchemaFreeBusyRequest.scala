@@ -2,44 +2,42 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFreeBusyRequest extends StObject {
   
   /**
     * Maximal number of calendars for which FreeBusy information is to be
     * provided. Optional. Maximum value is 50.
     */
-  var calendarExpansionMax: js.UndefOr[Double] = js.native
+  var calendarExpansionMax: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximal number of calendar identifiers to be provided for a single group.
     * Optional. An error is returned for a group with more members than this
     * value. Maximum value is 100.
     */
-  var groupExpansionMax: js.UndefOr[Double] = js.native
+  var groupExpansionMax: js.UndefOr[Double] = js.undefined
   
   /**
     * List of calendars and/or groups to query.
     */
-  var items: js.UndefOr[js.Array[SchemaFreeBusyRequestItem]] = js.native
+  var items: js.UndefOr[js.Array[SchemaFreeBusyRequestItem]] = js.undefined
   
   /**
     * The end of the interval for the query formatted as per RFC3339.
     */
-  var timeMax: js.UndefOr[String] = js.native
+  var timeMax: js.UndefOr[String] = js.undefined
   
   /**
     * The start of the interval for the query formatted as per RFC3339.
     */
-  var timeMin: js.UndefOr[String] = js.native
+  var timeMin: js.UndefOr[String] = js.undefined
   
   /**
     * Time zone used in the response. Optional. The default is UTC.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaFreeBusyRequest {
   

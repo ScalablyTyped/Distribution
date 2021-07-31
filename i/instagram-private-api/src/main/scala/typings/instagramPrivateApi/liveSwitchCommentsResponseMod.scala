@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveSwitchCommentsResponseMod {
   
-  @js.native
   trait LiveSwitchCommentsResponseRootObject extends StObject {
     
-    var comment_muted: Double = js.native
+    var comment_muted: Double
     
-    var status: String = js.native
+    var status: String
   }
   object LiveSwitchCommentsResponseRootObject {
     

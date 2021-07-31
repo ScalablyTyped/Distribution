@@ -2,15 +2,13 @@ package typings.webpagetest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Location extends StObject {
     
-    var location: js.Array[typings.webpagetest.mod.Location] = js.native
+    var location: js.Array[typings.webpagetest.mod.Location]
   }
   object Location {
     
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var response: typings.webpagetest.mod.Response[Location] = js.native
+    var response: typings.webpagetest.mod.Response[Location]
   }
   object Response {
     

@@ -2,14 +2,12 @@ package typings.semanticUiRating.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-rating.SemanticUI.RatingSettings._Impl, 'verbose'> */
-@js.native
 trait PickImplverbose extends StObject {
   
-  var verbose: Boolean = js.native
+  var verbose: Boolean
 }
 object PickImplverbose {
   

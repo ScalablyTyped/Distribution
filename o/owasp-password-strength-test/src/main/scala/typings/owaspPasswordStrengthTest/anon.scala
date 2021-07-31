@@ -2,24 +2,22 @@ package typings.owaspPasswordStrengthTest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<owasp-password-strength-test.owasp-password-strength-test.TestConfig> */
-  @js.native
   trait PartialTestConfig extends StObject {
     
-    var allowPassphrases: js.UndefOr[Boolean] = js.native
+    var allowPassphrases: js.UndefOr[Boolean] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var minOptionalTestsToPass: js.UndefOr[Double] = js.native
+    var minOptionalTestsToPass: js.UndefOr[Double] = js.undefined
     
-    var minPhraseLength: js.UndefOr[Double] = js.native
+    var minPhraseLength: js.UndefOr[Double] = js.undefined
   }
   object PartialTestConfig {
     

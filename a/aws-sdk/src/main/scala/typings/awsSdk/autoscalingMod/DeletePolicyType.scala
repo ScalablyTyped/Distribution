@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePolicyType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.native
+  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The name or Amazon Resource Name (ARN) of the policy.
     */
-  var PolicyName: ResourceName = js.native
+  var PolicyName: ResourceName
 }
 object DeletePolicyType {
   

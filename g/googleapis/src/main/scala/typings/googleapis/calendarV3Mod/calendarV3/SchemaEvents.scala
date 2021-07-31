@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaEvents extends StObject {
   
   /**
@@ -21,63 +19,63 @@ trait SchemaEvents extends StObject {
     * all of the permissions of the writer role with the additional ability to
     * see and manipulate ACLs.
     */
-  var accessRole: js.UndefOr[String] = js.native
+  var accessRole: js.UndefOr[String] = js.undefined
   
   /**
     * The default reminders on the calendar for the authenticated user. These
     * reminders apply to all events on this calendar that do not explicitly
     * override them (i.e. do not have reminders.useDefault set to True).
     */
-  var defaultReminders: js.UndefOr[js.Array[SchemaEventReminder]] = js.native
+  var defaultReminders: js.UndefOr[js.Array[SchemaEventReminder]] = js.undefined
   
   /**
     * Description of the calendar. Read-only.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the collection.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * List of events on the calendar.
     */
-  var items: js.UndefOr[js.Array[SchemaEvent]] = js.native
+  var items: js.UndefOr[js.Array[SchemaEvent]] = js.undefined
   
   /**
     * Type of the collection (&quot;calendar#events&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. Omitted if no further
     * results are available, in which case nextSyncToken is provided.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Token used at a later point in time to retrieve only the entries that
     * have changed since this result was returned. Omitted if further results
     * are available, in which case nextPageToken is provided.
     */
-  var nextSyncToken: js.UndefOr[String] = js.native
+  var nextSyncToken: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the calendar. Read-only.
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
   /**
     * The time zone of the calendar. Read-only.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /**
     * Last modification time of the calendar (as a RFC3339 timestamp).
     * Read-only.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaEvents {
   

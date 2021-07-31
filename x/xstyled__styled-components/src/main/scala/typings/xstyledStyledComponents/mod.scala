@@ -208,10 +208,13 @@ import typings.xstyledSystem.mod.AliasKey
 import typings.xstyledSystem.mod.ResponsiveValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@xstyled/styled-components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Support for xxBoxes, i.e. aBox, articleBox
     * List of dom elements from Styled Components:
@@ -219,8 +222,7 @@ object mod {
   /* Inlined styled-components.styled-components.StyledInterface & {  aBox :styled-components.styled-components.ThemedStyledFunction<'a', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   abbrBox :styled-components.styled-components.ThemedStyledFunction<'abbr', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   addressBox :styled-components.styled-components.ThemedStyledFunction<'address', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   areaBox :styled-components.styled-components.ThemedStyledFunction<'area', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   articleBox :styled-components.styled-components.ThemedStyledFunction<'article', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   asideBox :styled-components.styled-components.ThemedStyledFunction<'aside', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   audioBox :styled-components.styled-components.ThemedStyledFunction<'audio', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   bBox :styled-components.styled-components.ThemedStyledFunction<'b', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   baseBox :styled-components.styled-components.ThemedStyledFunction<'base', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   bdiBox :styled-components.styled-components.ThemedStyledFunction<'bdi', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   bdoBox :styled-components.styled-components.ThemedStyledFunction<'bdo', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   bigBox :styled-components.styled-components.ThemedStyledFunction<'big', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   blockquoteBox :styled-components.styled-components.ThemedStyledFunction<'blockquote', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   bodyBox :styled-components.styled-components.ThemedStyledFunction<'body', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   brBox :styled-components.styled-components.ThemedStyledFunction<'br', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   buttonBox :styled-components.styled-components.ThemedStyledFunction<'button', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   canvasBox :styled-components.styled-components.ThemedStyledFunction<'canvas', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   captionBox :styled-components.styled-components.ThemedStyledFunction<'caption', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   citeBox :styled-components.styled-components.ThemedStyledFunction<'cite', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   codeBox :styled-components.styled-components.ThemedStyledFunction<'code', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   colBox :styled-components.styled-components.ThemedStyledFunction<'col', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   colgroupBox :styled-components.styled-components.ThemedStyledFunction<'colgroup', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   dataBox :styled-components.styled-components.ThemedStyledFunction<'data', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   datalistBox :styled-components.styled-components.ThemedStyledFunction<'datalist', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   ddBox :styled-components.styled-components.ThemedStyledFunction<'dd', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   delBox :styled-components.styled-components.ThemedStyledFunction<'del', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   detailsBox :styled-components.styled-components.ThemedStyledFunction<'details', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   dfnBox :styled-components.styled-components.ThemedStyledFunction<'dfn', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   dialogBox :styled-components.styled-components.ThemedStyledFunction<'dialog', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   divBox :styled-components.styled-components.ThemedStyledFunction<'div', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   dlBox :styled-components.styled-components.ThemedStyledFunction<'dl', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   dtBox :styled-components.styled-components.ThemedStyledFunction<'dt', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   emBox :styled-components.styled-components.ThemedStyledFunction<'em', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   embedBox :styled-components.styled-components.ThemedStyledFunction<'embed', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   fieldsetBox :styled-components.styled-components.ThemedStyledFunction<'fieldset', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   figcaptionBox :styled-components.styled-components.ThemedStyledFunction<'figcaption', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   figureBox :styled-components.styled-components.ThemedStyledFunction<'figure', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   footerBox :styled-components.styled-components.ThemedStyledFunction<'footer', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   formBox :styled-components.styled-components.ThemedStyledFunction<'form', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   h1Box :styled-components.styled-components.ThemedStyledFunction<'h1', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   h2Box :styled-components.styled-components.ThemedStyledFunction<'h2', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   h3Box :styled-components.styled-components.ThemedStyledFunction<'h3', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   h4Box :styled-components.styled-components.ThemedStyledFunction<'h4', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   h5Box :styled-components.styled-components.ThemedStyledFunction<'h5', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   h6Box :styled-components.styled-components.ThemedStyledFunction<'h6', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   headBox :styled-components.styled-components.ThemedStyledFunction<'head', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   headerBox :styled-components.styled-components.ThemedStyledFunction<'header', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   hgroupBox :styled-components.styled-components.ThemedStyledFunction<'hgroup', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   hrBox :styled-components.styled-components.ThemedStyledFunction<'hr', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   htmlBox :styled-components.styled-components.ThemedStyledFunction<'html', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   iBox :styled-components.styled-components.ThemedStyledFunction<'i', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   iframeBox :styled-components.styled-components.ThemedStyledFunction<'iframe', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   imgBox :styled-components.styled-components.ThemedStyledFunction<'img', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   inputBox :styled-components.styled-components.ThemedStyledFunction<'input', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   insBox :styled-components.styled-components.ThemedStyledFunction<'ins', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   kbdBox :styled-components.styled-components.ThemedStyledFunction<'kbd', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   keygenBox :styled-components.styled-components.ThemedStyledFunction<'keygen', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   labelBox :styled-components.styled-components.ThemedStyledFunction<'label', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   legendBox :styled-components.styled-components.ThemedStyledFunction<'legend', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   liBox :styled-components.styled-components.ThemedStyledFunction<'li', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   linkBox :styled-components.styled-components.ThemedStyledFunction<'link', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   mainBox :styled-components.styled-components.ThemedStyledFunction<'main', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   mapBox :styled-components.styled-components.ThemedStyledFunction<'map', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   markBox :styled-components.styled-components.ThemedStyledFunction<'mark', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   menuBox :styled-components.styled-components.ThemedStyledFunction<'menu', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   menuitemBox :styled-components.styled-components.ThemedStyledFunction<'menuitem', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   metaBox :styled-components.styled-components.ThemedStyledFunction<'meta', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   meterBox :styled-components.styled-components.ThemedStyledFunction<'meter', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   navBox :styled-components.styled-components.ThemedStyledFunction<'nav', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   noscriptBox :styled-components.styled-components.ThemedStyledFunction<'noscript', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   objectBox :styled-components.styled-components.ThemedStyledFunction<'object', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   olBox :styled-components.styled-components.ThemedStyledFunction<'ol', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   optgroupBox :styled-components.styled-components.ThemedStyledFunction<'optgroup', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   optionBox :styled-components.styled-components.ThemedStyledFunction<'option', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   outputBox :styled-components.styled-components.ThemedStyledFunction<'output', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   pBox :styled-components.styled-components.ThemedStyledFunction<'p', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   paramBox :styled-components.styled-components.ThemedStyledFunction<'param', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   pictureBox :styled-components.styled-components.ThemedStyledFunction<'picture', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   preBox :styled-components.styled-components.ThemedStyledFunction<'pre', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   progressBox :styled-components.styled-components.ThemedStyledFunction<'progress', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   qBox :styled-components.styled-components.ThemedStyledFunction<'q', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   rpBox :styled-components.styled-components.ThemedStyledFunction<'rp', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   rtBox :styled-components.styled-components.ThemedStyledFunction<'rt', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   rubyBox :styled-components.styled-components.ThemedStyledFunction<'ruby', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   sBox :styled-components.styled-components.ThemedStyledFunction<'s', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   sampBox :styled-components.styled-components.ThemedStyledFunction<'samp', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   scriptBox :styled-components.styled-components.ThemedStyledFunction<'script', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   sectionBox :styled-components.styled-components.ThemedStyledFunction<'section', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   selectBox :styled-components.styled-components.ThemedStyledFunction<'select', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   smallBox :styled-components.styled-components.ThemedStyledFunction<'small', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   sourceBox :styled-components.styled-components.ThemedStyledFunction<'source', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   spanBox :styled-components.styled-components.ThemedStyledFunction<'span', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   strongBox :styled-components.styled-components.ThemedStyledFunction<'strong', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   styleBox :styled-components.styled-components.ThemedStyledFunction<'style', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   subBox :styled-components.styled-components.ThemedStyledFunction<'sub', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   summaryBox :styled-components.styled-components.ThemedStyledFunction<'summary', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   supBox :styled-components.styled-components.ThemedStyledFunction<'sup', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   tableBox :styled-components.styled-components.ThemedStyledFunction<'table', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   tbodyBox :styled-components.styled-components.ThemedStyledFunction<'tbody', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   tdBox :styled-components.styled-components.ThemedStyledFunction<'td', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   textareaBox :styled-components.styled-components.ThemedStyledFunction<'textarea', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   tfootBox :styled-components.styled-components.ThemedStyledFunction<'tfoot', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   thBox :styled-components.styled-components.ThemedStyledFunction<'th', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   theadBox :styled-components.styled-components.ThemedStyledFunction<'thead', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   timeBox :styled-components.styled-components.ThemedStyledFunction<'time', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   titleBox :styled-components.styled-components.ThemedStyledFunction<'title', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   trBox :styled-components.styled-components.ThemedStyledFunction<'tr', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   trackBox :styled-components.styled-components.ThemedStyledFunction<'track', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   uBox :styled-components.styled-components.ThemedStyledFunction<'u', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   ulBox :styled-components.styled-components.ThemedStyledFunction<'ul', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   varBox :styled-components.styled-components.ThemedStyledFunction<'var', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   videoBox :styled-components.styled-components.ThemedStyledFunction<'video', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   wbrBox :styled-components.styled-components.ThemedStyledFunction<'wbr', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   circleBox :styled-components.styled-components.ThemedStyledFunction<'circle', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   clipPathBox :styled-components.styled-components.ThemedStyledFunction<'clipPath', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   defsBox :styled-components.styled-components.ThemedStyledFunction<'defs', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   ellipseBox :styled-components.styled-components.ThemedStyledFunction<'ellipse', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   foreignObjectBox :styled-components.styled-components.ThemedStyledFunction<'foreignObject', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   gBox :styled-components.styled-components.ThemedStyledFunction<'g', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   imageBox :styled-components.styled-components.ThemedStyledFunction<'image', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   lineBox :styled-components.styled-components.ThemedStyledFunction<'line', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   linearGradientBox :styled-components.styled-components.ThemedStyledFunction<'linearGradient', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   markerBox :styled-components.styled-components.ThemedStyledFunction<'marker', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   maskBox :styled-components.styled-components.ThemedStyledFunction<'mask', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   pathBox :styled-components.styled-components.ThemedStyledFunction<'path', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   patternBox :styled-components.styled-components.ThemedStyledFunction<'pattern', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   polygonBox :styled-components.styled-components.ThemedStyledFunction<'polygon', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   polylineBox :styled-components.styled-components.ThemedStyledFunction<'polyline', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   radialGradientBox :styled-components.styled-components.ThemedStyledFunction<'radialGradient', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   rectBox :styled-components.styled-components.ThemedStyledFunction<'rect', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   stopBox :styled-components.styled-components.ThemedStyledFunction<'stop', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   svgBox :styled-components.styled-components.ThemedStyledFunction<'svg', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   textBox :styled-components.styled-components.ThemedStyledFunction<'text', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>,   tspanBox :styled-components.styled-components.ThemedStyledFunction<'tspan', styled-components.styled-components.DefaultTheme, @xstyled/styled-components.@xstyled/styled-components.BoxProps, never>} */
   object default {
     
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
@@ -230,9 +232,13 @@ object mod {
         AnyIfEmpty[DefaultTheme], 
         js.Object, 
         scala.Nothing
-      ] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[
+        typings.xstyledStyledComponents.xstyledStyledComponentsStrings.`object`, 
+        AnyIfEmpty[DefaultTheme], 
+        js.Object, 
+        scala.Nothing
+      ]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
@@ -242,1225 +248,1057 @@ object mod {
         AnyIfEmpty[DefaultTheme], 
         js.Object, 
         scala.Nothing
-      ] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[
+        typings.xstyledStyledComponents.xstyledStyledComponentsStrings.`var`, 
+        AnyIfEmpty[DefaultTheme], 
+        js.Object, 
+        scala.Nothing
+      ]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: a
-    ): ThemedStyledFunction[a, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[a, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[a, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: abbr
-    ): ThemedStyledFunction[abbr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[abbr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[abbr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: address
-    ): ThemedStyledFunction[address, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[address, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[address, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: animate
-    ): ThemedStyledFunction[animate, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[animate, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[animate, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: animateMotion
-    ): ThemedStyledFunction[animateMotion, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[animateMotion, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[animateMotion, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: animateTransform
-    ): ThemedStyledFunction[animateTransform, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[animateTransform, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[animateTransform, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: area
-    ): ThemedStyledFunction[area, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[area, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[area, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: article
-    ): ThemedStyledFunction[article, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[article, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[article, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: aside
-    ): ThemedStyledFunction[aside, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[aside, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[aside, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: audio
-    ): ThemedStyledFunction[audio, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[audio, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[audio, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: b
-    ): ThemedStyledFunction[b, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[b, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[b, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: base
-    ): ThemedStyledFunction[base, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[base, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[base, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: bdi
-    ): ThemedStyledFunction[bdi, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[bdi, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[bdi, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: bdo
-    ): ThemedStyledFunction[bdo, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[bdo, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[bdo, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: big
-    ): ThemedStyledFunction[big, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[big, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[big, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: blockquote
-    ): ThemedStyledFunction[blockquote, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[blockquote, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[blockquote, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: body
-    ): ThemedStyledFunction[body, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[body, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[body, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: br
-    ): ThemedStyledFunction[br, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[br, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[br, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: button
-    ): ThemedStyledFunction[button, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[button, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[button, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: canvas
-    ): ThemedStyledFunction[canvas, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[canvas, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[canvas, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: caption
-    ): ThemedStyledFunction[caption, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[caption, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[caption, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: circle
-    ): ThemedStyledFunction[circle, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[circle, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[circle, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: cite
-    ): ThemedStyledFunction[cite, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[cite, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[cite, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: clipPath
-    ): ThemedStyledFunction[clipPath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[clipPath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[clipPath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: code
-    ): ThemedStyledFunction[code, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[code, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[code, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: col
-    ): ThemedStyledFunction[col, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[col, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[col, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: colgroup
-    ): ThemedStyledFunction[colgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[colgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[colgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: data
-    ): ThemedStyledFunction[data, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[data, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[data, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: datalist
-    ): ThemedStyledFunction[datalist, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[datalist, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[datalist, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: dd
-    ): ThemedStyledFunction[dd, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[dd, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[dd, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: defs
-    ): ThemedStyledFunction[defs, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[defs, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[defs, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: del
-    ): ThemedStyledFunction[del, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[del, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[del, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: desc
-    ): ThemedStyledFunction[desc, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[desc, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[desc, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: details
-    ): ThemedStyledFunction[details, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[details, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[details, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: dfn
-    ): ThemedStyledFunction[dfn, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[dfn, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[dfn, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: dialog
-    ): ThemedStyledFunction[dialog, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[dialog, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[dialog, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: div
-    ): ThemedStyledFunction[div, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[div, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[div, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: dl
-    ): ThemedStyledFunction[dl, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[dl, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[dl, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: dt
-    ): ThemedStyledFunction[dt, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[dt, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[dt, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: ellipse
-    ): ThemedStyledFunction[ellipse, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[ellipse, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[ellipse, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: em
-    ): ThemedStyledFunction[em, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[em, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[em, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: embed
-    ): ThemedStyledFunction[embed, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[embed, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[embed, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feBlend
-    ): ThemedStyledFunction[feBlend, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feBlend, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feBlend, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feColorMatrix
-    ): ThemedStyledFunction[feColorMatrix, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feColorMatrix, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feColorMatrix, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feComponentTransfer
-    ): ThemedStyledFunction[feComponentTransfer, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feComponentTransfer, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feComponentTransfer, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feComposite
-    ): ThemedStyledFunction[feComposite, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feComposite, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feComposite, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feConvolveMatrix
-    ): ThemedStyledFunction[feConvolveMatrix, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feConvolveMatrix, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feConvolveMatrix, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feDiffuseLighting
-    ): ThemedStyledFunction[feDiffuseLighting, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feDiffuseLighting, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feDiffuseLighting, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feDisplacementMap
-    ): ThemedStyledFunction[feDisplacementMap, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feDisplacementMap, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feDisplacementMap, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feDistantLight
-    ): ThemedStyledFunction[feDistantLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feDistantLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feDistantLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feDropShadow
-    ): ThemedStyledFunction[feDropShadow, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feDropShadow, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feDropShadow, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feFlood
-    ): ThemedStyledFunction[feFlood, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feFlood, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feFlood, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feFuncA
-    ): ThemedStyledFunction[feFuncA, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feFuncA, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feFuncA, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feFuncB
-    ): ThemedStyledFunction[feFuncB, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feFuncB, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feFuncB, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feFuncG
-    ): ThemedStyledFunction[feFuncG, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feFuncG, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feFuncG, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feFuncR
-    ): ThemedStyledFunction[feFuncR, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feFuncR, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feFuncR, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feGaussianBlur
-    ): ThemedStyledFunction[feGaussianBlur, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feGaussianBlur, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feGaussianBlur, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feImage
-    ): ThemedStyledFunction[feImage, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feImage, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feImage, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feMerge
-    ): ThemedStyledFunction[feMerge, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feMerge, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feMerge, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feMergeNode
-    ): ThemedStyledFunction[feMergeNode, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feMergeNode, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feMergeNode, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feMorphology
-    ): ThemedStyledFunction[feMorphology, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feMorphology, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feMorphology, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feOffset
-    ): ThemedStyledFunction[feOffset, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feOffset, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feOffset, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: fePointLight
-    ): ThemedStyledFunction[fePointLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[fePointLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[fePointLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feSpecularLighting
-    ): ThemedStyledFunction[feSpecularLighting, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feSpecularLighting, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feSpecularLighting, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feSpotLight
-    ): ThemedStyledFunction[feSpotLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feSpotLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feSpotLight, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feTile
-    ): ThemedStyledFunction[feTile, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feTile, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feTile, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: feTurbulence
-    ): ThemedStyledFunction[feTurbulence, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[feTurbulence, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[feTurbulence, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: fieldset
-    ): ThemedStyledFunction[fieldset, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[fieldset, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[fieldset, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: figcaption
-    ): ThemedStyledFunction[figcaption, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[figcaption, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[figcaption, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: figure
-    ): ThemedStyledFunction[figure, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[figure, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[figure, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: filter
-    ): ThemedStyledFunction[filter, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[filter, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[filter, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: footer
-    ): ThemedStyledFunction[footer, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[footer, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[footer, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: foreignObject
-    ): ThemedStyledFunction[foreignObject, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[foreignObject, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[foreignObject, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: form
-    ): ThemedStyledFunction[form, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[form, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[form, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: g
-    ): ThemedStyledFunction[g, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[g, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[g, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: h1
-    ): ThemedStyledFunction[h1, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[h1, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[h1, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: h2
-    ): ThemedStyledFunction[h2, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[h2, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[h2, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: h3
-    ): ThemedStyledFunction[h3, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[h3, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[h3, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: h4
-    ): ThemedStyledFunction[h4, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[h4, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[h4, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: h5
-    ): ThemedStyledFunction[h5, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[h5, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[h5, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: h6
-    ): ThemedStyledFunction[h6, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[h6, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[h6, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: head
-    ): ThemedStyledFunction[head, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[head, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[head, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: header
-    ): ThemedStyledFunction[header, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[header, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[header, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: hgroup
-    ): ThemedStyledFunction[hgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[hgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[hgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: hr
-    ): ThemedStyledFunction[hr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[hr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[hr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: html
-    ): ThemedStyledFunction[html, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[html, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[html, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: i
-    ): ThemedStyledFunction[i, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[i, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[i, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: iframe
-    ): ThemedStyledFunction[iframe, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[iframe, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[iframe, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: image
-    ): ThemedStyledFunction[image, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[image, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[image, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: img
-    ): ThemedStyledFunction[img, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[img, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[img, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: input
-    ): ThemedStyledFunction[input, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[input, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[input, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: ins
-    ): ThemedStyledFunction[ins, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[ins, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[ins, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: kbd
-    ): ThemedStyledFunction[kbd, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[kbd, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[kbd, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: keygen
-    ): ThemedStyledFunction[keygen, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[keygen, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[keygen, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: label
-    ): ThemedStyledFunction[label, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[label, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[label, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: legend
-    ): ThemedStyledFunction[legend, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[legend, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[legend, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: li
-    ): ThemedStyledFunction[li, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[li, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[li, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: line
-    ): ThemedStyledFunction[line, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[line, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[line, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: linearGradient
-    ): ThemedStyledFunction[linearGradient, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[linearGradient, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[linearGradient, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: link
-    ): ThemedStyledFunction[link, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[link, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[link, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: main
-    ): ThemedStyledFunction[main, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[main, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[main, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: map
-    ): ThemedStyledFunction[map, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[map, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[map, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: mark
-    ): ThemedStyledFunction[mark, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[mark, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[mark, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: marker
-    ): ThemedStyledFunction[marker, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[marker, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[marker, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: mask
-    ): ThemedStyledFunction[mask, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[mask, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[mask, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: menu
-    ): ThemedStyledFunction[menu, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[menu, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[menu, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: menuitem
-    ): ThemedStyledFunction[menuitem, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[menuitem, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[menuitem, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: meta
-    ): ThemedStyledFunction[meta, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[meta, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[meta, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: metadata
-    ): ThemedStyledFunction[metadata, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[metadata, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[metadata, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: meter
-    ): ThemedStyledFunction[meter, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[meter, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[meter, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: mpath
-    ): ThemedStyledFunction[mpath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[mpath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[mpath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: nav
-    ): ThemedStyledFunction[nav, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[nav, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[nav, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: noindex
-    ): ThemedStyledFunction[noindex, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[noindex, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[noindex, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: noscript
-    ): ThemedStyledFunction[noscript, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[noscript, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[noscript, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: ol
-    ): ThemedStyledFunction[ol, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[ol, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[ol, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: optgroup
-    ): ThemedStyledFunction[optgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[optgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[optgroup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: option
-    ): ThemedStyledFunction[option, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[option, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[option, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: output
-    ): ThemedStyledFunction[output, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[output, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[output, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: p
-    ): ThemedStyledFunction[p, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[p, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[p, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: param
-    ): ThemedStyledFunction[param, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[param, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[param, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: path
-    ): ThemedStyledFunction[path, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[path, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[path, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: pattern
-    ): ThemedStyledFunction[pattern, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[pattern, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[pattern, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: picture
-    ): ThemedStyledFunction[picture, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[picture, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[picture, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: polygon
-    ): ThemedStyledFunction[polygon, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[polygon, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[polygon, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: polyline
-    ): ThemedStyledFunction[polyline, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[polyline, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[polyline, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: pre
-    ): ThemedStyledFunction[pre, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[pre, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[pre, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: progress
-    ): ThemedStyledFunction[progress, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[progress, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[progress, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: q
-    ): ThemedStyledFunction[q, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[q, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[q, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: radialGradient
-    ): ThemedStyledFunction[radialGradient, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[radialGradient, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[radialGradient, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: rect
-    ): ThemedStyledFunction[rect, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[rect, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[rect, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: rp
-    ): ThemedStyledFunction[rp, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[rp, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[rp, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: rt
-    ): ThemedStyledFunction[rt, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[rt, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[rt, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: ruby
-    ): ThemedStyledFunction[ruby, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[ruby, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[ruby, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: s
-    ): ThemedStyledFunction[s, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[s, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[s, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: samp
-    ): ThemedStyledFunction[samp, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[samp, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[samp, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: script
-    ): ThemedStyledFunction[script, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[script, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[script, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: section
-    ): ThemedStyledFunction[section, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[section, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[section, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: select
-    ): ThemedStyledFunction[select, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[select, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[select, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: slot
-    ): ThemedStyledFunction[slot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[slot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[slot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: small
-    ): ThemedStyledFunction[small, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[small, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[small, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: source
-    ): ThemedStyledFunction[source, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[source, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[source, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: span
-    ): ThemedStyledFunction[span, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[span, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[span, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: stop
-    ): ThemedStyledFunction[stop, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[stop, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[stop, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: strong
-    ): ThemedStyledFunction[strong, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[strong, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[strong, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: style
-    ): ThemedStyledFunction[style, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[style, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[style, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: sub
-    ): ThemedStyledFunction[sub, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[sub, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[sub, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: summary
-    ): ThemedStyledFunction[summary, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[summary, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[summary, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: sup
-    ): ThemedStyledFunction[sup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[sup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[sup, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: svg
-    ): ThemedStyledFunction[svg, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[svg, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[svg, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: switch
-    ): ThemedStyledFunction[switch, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[switch, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[switch, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: symbol
-    ): ThemedStyledFunction[symbol, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[symbol, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[symbol, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: table
-    ): ThemedStyledFunction[table, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[table, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[table, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: tbody
-    ): ThemedStyledFunction[tbody, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[tbody, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[tbody, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: td
-    ): ThemedStyledFunction[td, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[td, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[td, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: template
-    ): ThemedStyledFunction[template, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[template, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[template, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: text
-    ): ThemedStyledFunction[text, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[text, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[text, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: textPath
-    ): ThemedStyledFunction[textPath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[textPath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[textPath, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: textarea
-    ): ThemedStyledFunction[textarea, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[textarea, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[textarea, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: tfoot
-    ): ThemedStyledFunction[tfoot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[tfoot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[tfoot, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: th
-    ): ThemedStyledFunction[th, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[th, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[th, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: thead
-    ): ThemedStyledFunction[thead, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[thead, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[thead, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: time
-    ): ThemedStyledFunction[time, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[time, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[time, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: title
-    ): ThemedStyledFunction[title, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[title, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[title, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: tr
-    ): ThemedStyledFunction[tr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[tr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[tr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: track
-    ): ThemedStyledFunction[track, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[track, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[track, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: tspan
-    ): ThemedStyledFunction[tspan, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[tspan, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[tspan, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: u
-    ): ThemedStyledFunction[u, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[u, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[u, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: ul
-    ): ThemedStyledFunction[ul, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[ul, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[ul, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: use
-    ): ThemedStyledFunction[use, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[use, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[use, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: video
-    ): ThemedStyledFunction[video, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[video, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[video, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: view
-    ): ThemedStyledFunction[view, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[view, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[view, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: wbr
-    ): ThemedStyledFunction[wbr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
+    ): ThemedStyledFunction[wbr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[wbr, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
     def apply(
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: webview
-    ): ThemedStyledFunction[webview, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
-    @JSImport("@xstyled/styled-components", JSImport.Default)
-    @js.native
-    def apply[C /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](
+    ): ThemedStyledFunction[webview, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[webview, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    @scala.inline
+    def apply[C /* <: (ComponentClass[js.Any, ComponentState]) | FunctionComponent[js.Any] */](
       // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
     // causes tests to fail in TS 3.1
     component: C
-    ): ThemedStyledFunction[C, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = js.native
+    ): ThemedStyledFunction[C, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ThemedStyledFunction[C, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]]
+    
     @JSImport("@xstyled/styled-components", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -3291,6 +3129,15 @@ object mod {
     @scala.inline
     def noscript_=(x: ThemedStyledFunction[noscript, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noscript")(x.asInstanceOf[js.Any])
     
+    @JSImport("@xstyled/styled-components", "default.object")
+    @js.native
+    val `object`: ThemedStyledFunction[
+        typings.xstyledStyledComponents.xstyledStyledComponentsStrings.`object`, 
+        AnyIfEmpty[DefaultTheme], 
+        js.Object, 
+        scala.Nothing
+      ] = js.native
+    
     @JSImport("@xstyled/styled-components", "default.objectBox")
     @js.native
     def objectBox: ThemedStyledFunction[
@@ -4257,6 +4104,15 @@ object mod {
     @scala.inline
     def use_=(x: ThemedStyledFunction[use, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("use")(x.asInstanceOf[js.Any])
     
+    @JSImport("@xstyled/styled-components", "default.var")
+    @js.native
+    val `var`: ThemedStyledFunction[
+        typings.xstyledStyledComponents.xstyledStyledComponentsStrings.`var`, 
+        AnyIfEmpty[DefaultTheme], 
+        js.Object, 
+        scala.Nothing
+      ] = js.native
+    
     @JSImport("@xstyled/styled-components", "default.varBox")
     @js.native
     def varBox: ThemedStyledFunction[
@@ -4332,24 +4188,6 @@ object mod {
       ] = js.native
     @scala.inline
     def webview_=(x: ThemedStyledFunction[webview, AnyIfEmpty[DefaultTheme], js.Object, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("webview")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@xstyled/styled-components", "default.object")
-    @js.native
-    val `object`: ThemedStyledFunction[
-        typings.xstyledStyledComponents.xstyledStyledComponentsStrings.`object`, 
-        AnyIfEmpty[DefaultTheme], 
-        js.Object, 
-        scala.Nothing
-      ] = js.native
-    
-    @JSImport("@xstyled/styled-components", "default.var")
-    @js.native
-    val `var`: ThemedStyledFunction[
-        typings.xstyledStyledComponents.xstyledStyledComponentsStrings.`var`, 
-        AnyIfEmpty[DefaultTheme], 
-        js.Object, 
-        scala.Nothing
-      ] = js.native
   }
   
   @JSImport("@xstyled/styled-components", "Box")
@@ -4409,1245 +4247,1228 @@ object mod {
   @js.native
   val ThemeProvider: ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]] = js.native
   
-  @JSImport("@xstyled/styled-components", "breakpoints")
-  @js.native
-  def breakpoints(styles: BreakpointObject[FlattenSimpleInterpolation | String]): TemplateStringsArray = js.native
+  @scala.inline
+  def breakpoints(styles: BreakpointObject[FlattenSimpleInterpolation | String]): TemplateStringsArray = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoints")(styles.asInstanceOf[js.Any]).asInstanceOf[TemplateStringsArray]
   
-  @JSImport("@xstyled/styled-components", "createGlobalStyle")
-  @js.native
-  def createGlobalStyle[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
-  @JSImport("@xstyled/styled-components", "createGlobalStyle")
-  @js.native
-  def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = js.native
-  @JSImport("@xstyled/styled-components", "createGlobalStyle")
-  @js.native
+  @scala.inline
+  def createGlobalStyle[P /* <: js.Object */](first: TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[GlobalStyleComponent[P, DefaultTheme]]
+  @scala.inline
+  def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*): GlobalStyleComponent[P, DefaultTheme] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[GlobalStyleComponent[P, DefaultTheme]]
+  @scala.inline
   def createGlobalStyle[P /* <: js.Object */](
     first: InterpolationFunction[ThemedStyledProps[P, DefaultTheme]],
     interpolations: (Interpolation[ThemedStyledProps[P, DefaultTheme]])*
-  ): GlobalStyleComponent[P, DefaultTheme] = js.native
+  ): GlobalStyleComponent[P, DefaultTheme] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGlobalStyle")(first.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[GlobalStyleComponent[P, DefaultTheme]]
   
   @JSImport("@xstyled/styled-components", "css")
   @js.native
   val css: ThemedCssFunction[DefaultTheme] = js.native
   
-  @JSImport("@xstyled/styled-components", "getColorModeInitScriptElement")
-  @js.native
-  def getColorModeInitScriptElement(): ReactElement = js.native
+  @scala.inline
+  def getColorModeInitScriptElement(): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorModeInitScriptElement")().asInstanceOf[ReactElement]
   
-  @JSImport("@xstyled/styled-components", "getColorModeInitScriptTag")
-  @js.native
-  def getColorModeInitScriptTag(options: Target): String = js.native
+  @scala.inline
+  def getColorModeInitScriptTag(options: Target): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorModeInitScriptTag")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@xstyled/styled-components", "isStyledComponent")
-  @js.native
-  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = js.native
+  @scala.inline
+  def isStyledComponent(target: js.Any): /* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStyledComponent")(target.asInstanceOf[js.Any]).asInstanceOf[/* is styled-components.styled-components.StyledComponent<any, any, {}, never> */ Boolean]
   
-  @JSImport("@xstyled/styled-components", "keyframes")
-  @js.native
-  def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = js.native
-  @JSImport("@xstyled/styled-components", "keyframes")
-  @js.native
-  def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = js.native
+  @scala.inline
+  def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[Keyframes_]
+  @scala.inline
+  def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[Keyframes_]
   
-  @JSImport("@xstyled/styled-components", "useBreakpoint")
-  @js.native
-  def useBreakpoint(): BreakpointName = js.native
+  @scala.inline
+  def useBreakpoint(): BreakpointName = ^.asInstanceOf[js.Dynamic].applyDynamic("useBreakpoint")().asInstanceOf[BreakpointName]
   
-  @JSImport("@xstyled/styled-components", "useBreakpoints")
-  @js.native
-  def useBreakpoints(): DefaultBreakpoints = js.native
+  @scala.inline
+  def useBreakpoints(): DefaultBreakpoints = ^.asInstanceOf[js.Dynamic].applyDynamic("useBreakpoints")().asInstanceOf[DefaultBreakpoints]
   
-  @JSImport("@xstyled/styled-components", "useColorMode")
-  @js.native
-  def useColorMode(): js.Tuple2[String, js.Function1[/* colorMode */ String, Unit]] = js.native
+  @scala.inline
+  def useColorMode(): js.Tuple2[String, js.Function1[/* colorMode */ String, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useColorMode")().asInstanceOf[js.Tuple2[String, js.Function1[/* colorMode */ String, Unit]]]
   
-  @JSImport("@xstyled/styled-components", "useDown")
-  @js.native
-  def useDown(_bereakpointName: BreakpointName): Boolean = js.native
+  @scala.inline
+  def useDown(_bereakpointName: BreakpointName): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useDown")(_bereakpointName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@xstyled/styled-components", "useTheme")
-  @js.native
-  def useTheme(): DefaultTheme = js.native
+  @scala.inline
+  def useTheme(): DefaultTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[DefaultTheme]
   
-  @JSImport("@xstyled/styled-components", "useUp")
-  @js.native
-  def useUp(_bereakpointName: BreakpointName): Boolean = js.native
+  @scala.inline
+  def useUp(_bereakpointName: BreakpointName): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useUp")(_bereakpointName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@xstyled/styled-components", "useViewportWidth")
-  @js.native
-  def useViewportWidth(): Double | String = js.native
+  @scala.inline
+  def useViewportWidth(): Double | String = ^.asInstanceOf[js.Dynamic].applyDynamic("useViewportWidth")().asInstanceOf[Double | String]
   
   @JSImport("@xstyled/styled-components", "withTheme")
   @js.native
   val withTheme: WithThemeFnInterface[DefaultTheme] = js.native
   
   /* Inlined @xstyled/styled-components.@xstyled/styled-components.WithBreakpointArgs<@xstyled/system.@xstyled/system.SystemProps> */
-  @js.native
   trait BoxProps extends StObject {
     
     var alignContent: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignItems: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignSelf: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var background: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundColor: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundImage: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPosition: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundRepeat: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundSize: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var bg: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var border: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottom: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomColor: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderColor: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderLeft: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftColor: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRadius: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRight: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRightColor: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderStyle: js.UndefOr[
         (ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any) | Double
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any) | Double
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTop: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTopColor: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderWidth: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var bottom: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxShadow: js.UndefOr[
         (ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var col: js.UndefOr[
         (ResponsiveValue[String | Double | Boolean]) | (BreakpointObject[js.UndefOr[ResponsiveValue[String | Double | Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
-    var color: js.UndefOr[js.Any | BreakpointObject[js.UndefOr[_]]] = js.native
+    var color: js.UndefOr[js.Any | BreakpointObject[js.UndefOr[js.Any]]] = js.undefined
     
     var display: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flex: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexBasis: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexDirection: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexGrow: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexShrink: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexWrap: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontFamily: js.UndefOr[
         (ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Double
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Double
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontSize: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontStyle: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontWeight: js.UndefOr[
         (ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | AliasKey
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | AliasKey
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var gridArea: js.UndefOr[ResponsiveValue[String] | BreakpointObject[js.UndefOr[ResponsiveValue[String]]]] = js.native
+    var gridArea: js.UndefOr[ResponsiveValue[String] | BreakpointObject[js.UndefOr[ResponsiveValue[String]]]] = js.undefined
     
     var gridAutoColumns: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridAutoFlow: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridAutoRows: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridColumn: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridColumnGap: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridGap: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridRow: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridRowGap: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateAreas: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateColumns: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateRows: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var height: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifyContent: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifyItems: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifySelf: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var left: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var letterSpacing: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var lineHeight: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var m: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var margin: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginBottom: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginLeft: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginRight: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginTop: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxHeight: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxWidth: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mb: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var minHeight: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var minWidth: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var ml: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mr: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mt: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mx: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var my: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var opacity: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var order: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflow: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var p: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var padding: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingBottom: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingLeft: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingRight: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingTop: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pb: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pl: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var position: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pr: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pt: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var px: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var py: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var right: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var row: js.UndefOr[
         (ResponsiveValue[String | Double | Boolean]) | (BreakpointObject[js.UndefOr[ResponsiveValue[String | Double | Boolean]]])
-      ] = js.native
+      ] = js.undefined
     
     var size: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textAlign: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textShadow: js.UndefOr[
         (ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textTransform: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var top: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transition: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var verticalAlign: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var width: js.UndefOr[
         (ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ js.Any
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ js.Any
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
     
     var zIndex: js.UndefOr[
         (ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | AliasKey
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
         ]) | (BreakpointObject[
           js.UndefOr[
             ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | AliasKey
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
             ]
           ]
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object BoxProps {
     
@@ -5663,11 +5484,11 @@ object mod {
       @scala.inline
       def setAlignContent(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any
                 ]
               ]
             ])
@@ -5677,16 +5498,18 @@ object mod {
       def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
       
       @scala.inline
-      def setAlignContentVarargs(value: js.Any*): Self = StObject.set(x, "alignContent", js.Array(value :_*))
+      def setAlignContentVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignContent */ js.Any)*
+      ): Self = StObject.set(x, "alignContent", js.Array(value :_*))
       
       @scala.inline
       def setAlignItems(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any
                 ]
               ]
             ])
@@ -5696,16 +5519,18 @@ object mod {
       def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
       @scala.inline
-      def setAlignItemsVarargs(value: js.Any*): Self = StObject.set(x, "alignItems", js.Array(value :_*))
+      def setAlignItemsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any)*
+      ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
       
       @scala.inline
       def setAlignSelf(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any
                 ]
               ]
             ])
@@ -5715,16 +5540,18 @@ object mod {
       def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
       @scala.inline
-      def setAlignSelfVarargs(value: js.Any*): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
+      def setAlignSelfVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignSelf */ js.Any)*
+      ): Self = StObject.set(x, "alignSelf", js.Array(value :_*))
       
       @scala.inline
       def setBackground(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any
                 ]
               ]
             ])
@@ -5733,11 +5560,11 @@ object mod {
       @scala.inline
       def setBackgroundColor(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5747,16 +5574,18 @@ object mod {
       def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
       @scala.inline
-      def setBackgroundColorVarargs(value: js.Any*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+      def setBackgroundColorVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
       
       @scala.inline
       def setBackgroundImage(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any
                 ]
               ]
             ])
@@ -5766,16 +5595,18 @@ object mod {
       def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
       
       @scala.inline
-      def setBackgroundImageVarargs(value: js.Any*): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
+      def setBackgroundImageVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ js.Any)*
+      ): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
       
       @scala.inline
       def setBackgroundPosition(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5785,16 +5616,18 @@ object mod {
       def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
       
       @scala.inline
-      def setBackgroundPositionVarargs(value: js.Any*): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
+      def setBackgroundPositionVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundPosition<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
       
       @scala.inline
       def setBackgroundRepeat(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any
                 ]
               ]
             ])
@@ -5804,16 +5637,18 @@ object mod {
       def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
       
       @scala.inline
-      def setBackgroundRepeatVarargs(value: js.Any*): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
+      def setBackgroundRepeatVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any)*
+      ): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
       
       @scala.inline
       def setBackgroundSize(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5823,22 +5658,26 @@ object mod {
       def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
       
       @scala.inline
-      def setBackgroundSizeVarargs(value: js.Any*): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
+      def setBackgroundSizeVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
       
       @scala.inline
       def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
       @scala.inline
-      def setBackgroundVarargs(value: js.Any*): Self = StObject.set(x, "background", js.Array(value :_*))
+      def setBackgroundVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any)*
+      ): Self = StObject.set(x, "background", js.Array(value :_*))
       
       @scala.inline
       def setBg(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5848,16 +5687,18 @@ object mod {
       def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
       @scala.inline
-      def setBgVarargs(value: js.Any*): Self = StObject.set(x, "bg", js.Array(value :_*))
+      def setBgVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "bg", js.Array(value :_*))
       
       @scala.inline
       def setBorder(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5866,11 +5707,11 @@ object mod {
       @scala.inline
       def setBorderBottom(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5879,11 +5720,11 @@ object mod {
       @scala.inline
       def setBorderBottomColor(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
                 ]
               ]
             ])
@@ -5893,22 +5734,26 @@ object mod {
       def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
       
       @scala.inline
-      def setBorderBottomColorVarargs(value: js.Any*): Self = StObject.set(x, "borderBottomColor", js.Array(value :_*))
+      def setBorderBottomColorVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
+      ): Self = StObject.set(x, "borderBottomColor", js.Array(value :_*))
       
       @scala.inline
       def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
       
       @scala.inline
-      def setBorderBottomVarargs(value: js.Any*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
+      def setBorderBottomVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
       
       @scala.inline
       def setBorderColor(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
                 ]
               ]
             ])
@@ -5918,16 +5763,18 @@ object mod {
       def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
       @scala.inline
-      def setBorderColorVarargs(value: js.Any*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
+      def setBorderColorVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
+      ): Self = StObject.set(x, "borderColor", js.Array(value :_*))
       
       @scala.inline
       def setBorderLeft(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5936,11 +5783,11 @@ object mod {
       @scala.inline
       def setBorderLeftColor(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
                 ]
               ]
             ])
@@ -5950,22 +5797,26 @@ object mod {
       def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
       
       @scala.inline
-      def setBorderLeftColorVarargs(value: js.Any*): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
+      def setBorderLeftColorVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
+      ): Self = StObject.set(x, "borderLeftColor", js.Array(value :_*))
       
       @scala.inline
       def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
       
       @scala.inline
-      def setBorderLeftVarargs(value: js.Any*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
+      def setBorderLeftVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
       
       @scala.inline
       def setBorderRadius(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5975,16 +5826,18 @@ object mod {
       def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
       @scala.inline
-      def setBorderRadiusVarargs(value: js.Any*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
+      def setBorderRadiusVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
       
       @scala.inline
       def setBorderRight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -5993,11 +5846,11 @@ object mod {
       @scala.inline
       def setBorderRightColor(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
                 ]
               ]
             ])
@@ -6007,22 +5860,26 @@ object mod {
       def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
       
       @scala.inline
-      def setBorderRightColorVarargs(value: js.Any*): Self = StObject.set(x, "borderRightColor", js.Array(value :_*))
+      def setBorderRightColorVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
+      ): Self = StObject.set(x, "borderRightColor", js.Array(value :_*))
       
       @scala.inline
       def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
       
       @scala.inline
-      def setBorderRightVarargs(value: js.Any*): Self = StObject.set(x, "borderRight", js.Array(value :_*))
+      def setBorderRightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "borderRight", js.Array(value :_*))
       
       @scala.inline
       def setBorderStyle(
         value: (ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any) | Double
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _) | Double
+                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any) | Double
                 ]
               ]
             ])
@@ -6032,16 +5889,18 @@ object mod {
       def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
       @scala.inline
-      def setBorderStyleVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "borderStyle", js.Array(value :_*))
+      def setBorderStyleVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any) | Double)*
+      ): Self = StObject.set(x, "borderStyle", js.Array(value :_*))
       
       @scala.inline
       def setBorderTop(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6050,11 +5909,11 @@ object mod {
       @scala.inline
       def setBorderTopColor(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any
                 ]
               ]
             ])
@@ -6064,28 +5923,34 @@ object mod {
       def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
       
       @scala.inline
-      def setBorderTopColorVarargs(value: js.Any*): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
+      def setBorderTopColorVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderColor */ js.Any)*
+      ): Self = StObject.set(x, "borderTopColor", js.Array(value :_*))
       
       @scala.inline
       def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
       
       @scala.inline
-      def setBorderTopVarargs(value: js.Any*): Self = StObject.set(x, "borderTop", js.Array(value :_*))
+      def setBorderTopVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "borderTop", js.Array(value :_*))
       
       @scala.inline
       def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
       @scala.inline
-      def setBorderVarargs(value: js.Any*): Self = StObject.set(x, "border", js.Array(value :_*))
+      def setBorderVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "border", js.Array(value :_*))
       
       @scala.inline
       def setBorderWidth(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6095,16 +5960,18 @@ object mod {
       def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
       @scala.inline
-      def setBorderWidthVarargs(value: js.Any*): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
+      def setBorderWidthVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
       
       @scala.inline
       def setBottom(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6114,16 +5981,18 @@ object mod {
       def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
       @scala.inline
-      def setBottomVarargs(value: js.Any*): Self = StObject.set(x, "bottom", js.Array(value :_*))
+      def setBottomVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Bottom<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "bottom", js.Array(value :_*))
       
       @scala.inline
       def setBoxShadow(
         value: (ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
                 ]
               ]
             ])
@@ -6133,7 +6002,9 @@ object mod {
       def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
       
       @scala.inline
-      def setBoxShadowVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
+      def setBoxShadowVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double)*
+      ): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
       
       @scala.inline
       def setCol(
@@ -6147,7 +6018,7 @@ object mod {
       def setColVarargs(value: (String | Double | Boolean)*): Self = StObject.set(x, "col", js.Array(value :_*))
       
       @scala.inline
-      def setColor(value: js.Any | BreakpointObject[js.UndefOr[_]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      def setColor(value: js.Any | BreakpointObject[js.UndefOr[js.Any]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -6155,11 +6026,11 @@ object mod {
       @scala.inline
       def setDisplay(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any
                 ]
               ]
             ])
@@ -6169,16 +6040,18 @@ object mod {
       def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
       @scala.inline
-      def setDisplayVarargs(value: js.Any*): Self = StObject.set(x, "display", js.Array(value :_*))
+      def setDisplayVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any)*
+      ): Self = StObject.set(x, "display", js.Array(value :_*))
       
       @scala.inline
       def setFlex(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6187,11 +6060,11 @@ object mod {
       @scala.inline
       def setFlexBasis(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6201,16 +6074,18 @@ object mod {
       def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
       
       @scala.inline
-      def setFlexBasisVarargs(value: js.Any*): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
+      def setFlexBasisVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexBasis<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "flexBasis", js.Array(value :_*))
       
       @scala.inline
       def setFlexDirection(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any
                 ]
               ]
             ])
@@ -6220,16 +6095,18 @@ object mod {
       def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
       
       @scala.inline
-      def setFlexDirectionVarargs(value: js.Any*): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
+      def setFlexDirectionVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any)*
+      ): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
       
       @scala.inline
       def setFlexGrow(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
                 ]
               ]
             ])
@@ -6239,16 +6116,18 @@ object mod {
       def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
       
       @scala.inline
-      def setFlexGrowVarargs(value: js.Any*): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
+      def setFlexGrowVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any)*
+      ): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
       
       @scala.inline
       def setFlexShrink(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any
                 ]
               ]
             ])
@@ -6258,22 +6137,26 @@ object mod {
       def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
       
       @scala.inline
-      def setFlexShrinkVarargs(value: js.Any*): Self = StObject.set(x, "flexShrink", js.Array(value :_*))
+      def setFlexShrinkVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any)*
+      ): Self = StObject.set(x, "flexShrink", js.Array(value :_*))
       
       @scala.inline
       def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
       @scala.inline
-      def setFlexVarargs(value: js.Any*): Self = StObject.set(x, "flex", js.Array(value :_*))
+      def setFlexVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "flex", js.Array(value :_*))
       
       @scala.inline
       def setFlexWrap(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
                 ]
               ]
             ])
@@ -6283,16 +6166,18 @@ object mod {
       def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
       @scala.inline
-      def setFlexWrapVarargs(value: js.Any*): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
+      def setFlexWrapVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any)*
+      ): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
       
       @scala.inline
       def setFontFamily(
         value: (ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Double
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _) | Double
+                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Double
                 ]
               ]
             ])
@@ -6302,16 +6187,18 @@ object mod {
       def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
       @scala.inline
-      def setFontFamilyVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
+      def setFontFamilyVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any) | Double)*
+      ): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
       
       @scala.inline
       def setFontSize(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6321,16 +6208,18 @@ object mod {
       def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
       @scala.inline
-      def setFontSizeVarargs(value: js.Any*): Self = StObject.set(x, "fontSize", js.Array(value :_*))
+      def setFontSizeVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "fontSize", js.Array(value :_*))
       
       @scala.inline
       def setFontStyle(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any
                 ]
               ]
             ])
@@ -6340,16 +6229,18 @@ object mod {
       def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
       @scala.inline
-      def setFontStyleVarargs(value: js.Any*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
+      def setFontStyleVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any)*
+      ): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
       
       @scala.inline
       def setFontWeight(
         value: (ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | AliasKey
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | AliasKey
+                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey
                 ]
               ]
             ])
@@ -6359,7 +6250,9 @@ object mod {
       def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
       @scala.inline
-      def setFontWeightVarargs(value: (js.Any | AliasKey)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+      def setFontWeightVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | AliasKey)*
+      ): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
       
       @scala.inline
       def setGridArea(value: ResponsiveValue[String] | BreakpointObject[js.UndefOr[ResponsiveValue[String]]]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
@@ -6373,11 +6266,11 @@ object mod {
       @scala.inline
       def setGridAutoColumns(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6387,16 +6280,18 @@ object mod {
       def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
       
       @scala.inline
-      def setGridAutoColumnsVarargs(value: js.Any*): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
+      def setGridAutoColumnsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
       
       @scala.inline
       def setGridAutoFlow(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
                 ]
               ]
             ])
@@ -6406,16 +6301,18 @@ object mod {
       def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
       
       @scala.inline
-      def setGridAutoFlowVarargs(value: js.Any*): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
+      def setGridAutoFlowVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any)*
+      ): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
       
       @scala.inline
       def setGridAutoRows(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6425,16 +6322,18 @@ object mod {
       def setGridAutoRowsUndefined: Self = StObject.set(x, "gridAutoRows", js.undefined)
       
       @scala.inline
-      def setGridAutoRowsVarargs(value: js.Any*): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
+      def setGridAutoRowsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoRows<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridAutoRows", js.Array(value :_*))
       
       @scala.inline
       def setGridColumn(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any
                 ]
               ]
             ])
@@ -6443,11 +6342,11 @@ object mod {
       @scala.inline
       def setGridColumnGap(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6457,22 +6356,26 @@ object mod {
       def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
       
       @scala.inline
-      def setGridColumnGapVarargs(value: js.Any*): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
+      def setGridColumnGapVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumnGap<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridColumnGap", js.Array(value :_*))
       
       @scala.inline
       def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
       
       @scala.inline
-      def setGridColumnVarargs(value: js.Any*): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
+      def setGridColumnVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any)*
+      ): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
       
       @scala.inline
       def setGridGap(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6482,16 +6385,18 @@ object mod {
       def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
       
       @scala.inline
-      def setGridGapVarargs(value: js.Any*): Self = StObject.set(x, "gridGap", js.Array(value :_*))
+      def setGridGapVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridGap", js.Array(value :_*))
       
       @scala.inline
       def setGridRow(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any
                 ]
               ]
             ])
@@ -6500,11 +6405,11 @@ object mod {
       @scala.inline
       def setGridRowGap(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6514,22 +6419,26 @@ object mod {
       def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
       
       @scala.inline
-      def setGridRowGapVarargs(value: js.Any*): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
+      def setGridRowGapVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRowGap<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridRowGap", js.Array(value :_*))
       
       @scala.inline
       def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
       
       @scala.inline
-      def setGridRowVarargs(value: js.Any*): Self = StObject.set(x, "gridRow", js.Array(value :_*))
+      def setGridRowVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ js.Any)*
+      ): Self = StObject.set(x, "gridRow", js.Array(value :_*))
       
       @scala.inline
       def setGridTemplateAreas(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
                 ]
               ]
             ])
@@ -6539,16 +6448,18 @@ object mod {
       def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
       
       @scala.inline
-      def setGridTemplateAreasVarargs(value: js.Any*): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
+      def setGridTemplateAreasVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any)*
+      ): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
       
       @scala.inline
       def setGridTemplateColumns(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6558,16 +6469,18 @@ object mod {
       def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
       
       @scala.inline
-      def setGridTemplateColumnsVarargs(value: js.Any*): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
+      def setGridTemplateColumnsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
       
       @scala.inline
       def setGridTemplateRows(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6577,16 +6490,18 @@ object mod {
       def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
       
       @scala.inline
-      def setGridTemplateRowsVarargs(value: js.Any*): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
+      def setGridTemplateRowsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateRows<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "gridTemplateRows", js.Array(value :_*))
       
       @scala.inline
       def setHeight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6596,16 +6511,18 @@ object mod {
       def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       @scala.inline
-      def setHeightVarargs(value: js.Any*): Self = StObject.set(x, "height", js.Array(value :_*))
+      def setHeightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "height", js.Array(value :_*))
       
       @scala.inline
       def setJustifyContent(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any
                 ]
               ]
             ])
@@ -6615,16 +6532,18 @@ object mod {
       def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
       
       @scala.inline
-      def setJustifyContentVarargs(value: js.Any*): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
+      def setJustifyContentVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any)*
+      ): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
       
       @scala.inline
       def setJustifyItems(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any
                 ]
               ]
             ])
@@ -6634,16 +6553,18 @@ object mod {
       def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
       
       @scala.inline
-      def setJustifyItemsVarargs(value: js.Any*): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
+      def setJustifyItemsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any)*
+      ): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
       
       @scala.inline
       def setJustifySelf(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any
                 ]
               ]
             ])
@@ -6653,16 +6574,18 @@ object mod {
       def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
       
       @scala.inline
-      def setJustifySelfVarargs(value: js.Any*): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
+      def setJustifySelfVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifySelf */ js.Any)*
+      ): Self = StObject.set(x, "justifySelf", js.Array(value :_*))
       
       @scala.inline
       def setLeft(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6672,16 +6595,18 @@ object mod {
       def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
       @scala.inline
-      def setLeftVarargs(value: js.Any*): Self = StObject.set(x, "left", js.Array(value :_*))
+      def setLeftVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Left<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "left", js.Array(value :_*))
       
       @scala.inline
       def setLetterSpacing(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6691,16 +6616,18 @@ object mod {
       def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
       @scala.inline
-      def setLetterSpacingVarargs(value: js.Any*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
+      def setLetterSpacingVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
       
       @scala.inline
       def setLineHeight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6710,16 +6637,18 @@ object mod {
       def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
       @scala.inline
-      def setLineHeightVarargs(value: js.Any*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
+      def setLineHeightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
       
       @scala.inline
       def setM(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6729,16 +6658,18 @@ object mod {
       def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
       @scala.inline
-      def setMVarargs(value: js.Any*): Self = StObject.set(x, "m", js.Array(value :_*))
+      def setMVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "m", js.Array(value :_*))
       
       @scala.inline
       def setMargin(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6747,11 +6678,11 @@ object mod {
       @scala.inline
       def setMarginBottom(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6761,16 +6692,18 @@ object mod {
       def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
       @scala.inline
-      def setMarginBottomVarargs(value: js.Any*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
+      def setMarginBottomVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
       
       @scala.inline
       def setMarginLeft(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6780,16 +6713,18 @@ object mod {
       def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
       @scala.inline
-      def setMarginLeftVarargs(value: js.Any*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
+      def setMarginLeftVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
       
       @scala.inline
       def setMarginRight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6799,16 +6734,18 @@ object mod {
       def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
       @scala.inline
-      def setMarginRightVarargs(value: js.Any*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
+      def setMarginRightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "marginRight", js.Array(value :_*))
       
       @scala.inline
       def setMarginTop(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6818,22 +6755,26 @@ object mod {
       def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
       @scala.inline
-      def setMarginTopVarargs(value: js.Any*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
+      def setMarginTopVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "marginTop", js.Array(value :_*))
       
       @scala.inline
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setMarginVarargs(value: js.Any*): Self = StObject.set(x, "margin", js.Array(value :_*))
+      def setMarginVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "margin", js.Array(value :_*))
       
       @scala.inline
       def setMaxHeight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6843,16 +6784,18 @@ object mod {
       def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
       @scala.inline
-      def setMaxHeightVarargs(value: js.Any*): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
+      def setMaxHeightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxHeight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "maxHeight", js.Array(value :_*))
       
       @scala.inline
       def setMaxWidth(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6862,16 +6805,18 @@ object mod {
       def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
       @scala.inline
-      def setMaxWidthVarargs(value: js.Any*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+      def setMaxWidthVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
       
       @scala.inline
       def setMb(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6881,16 +6826,18 @@ object mod {
       def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
       @scala.inline
-      def setMbVarargs(value: js.Any*): Self = StObject.set(x, "mb", js.Array(value :_*))
+      def setMbVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginBottom<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "mb", js.Array(value :_*))
       
       @scala.inline
       def setMinHeight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6900,16 +6847,18 @@ object mod {
       def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
       @scala.inline
-      def setMinHeightVarargs(value: js.Any*): Self = StObject.set(x, "minHeight", js.Array(value :_*))
+      def setMinHeightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinHeight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "minHeight", js.Array(value :_*))
       
       @scala.inline
       def setMinWidth(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6919,16 +6868,18 @@ object mod {
       def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
       @scala.inline
-      def setMinWidthVarargs(value: js.Any*): Self = StObject.set(x, "minWidth", js.Array(value :_*))
+      def setMinWidthVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
       
       @scala.inline
       def setMl(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6938,16 +6889,18 @@ object mod {
       def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
       
       @scala.inline
-      def setMlVarargs(value: js.Any*): Self = StObject.set(x, "ml", js.Array(value :_*))
+      def setMlVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "ml", js.Array(value :_*))
       
       @scala.inline
       def setMr(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6957,16 +6910,18 @@ object mod {
       def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
       
       @scala.inline
-      def setMrVarargs(value: js.Any*): Self = StObject.set(x, "mr", js.Array(value :_*))
+      def setMrVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginRight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "mr", js.Array(value :_*))
       
       @scala.inline
       def setMt(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6976,16 +6931,18 @@ object mod {
       def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
       @scala.inline
-      def setMtVarargs(value: js.Any*): Self = StObject.set(x, "mt", js.Array(value :_*))
+      def setMtVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "mt", js.Array(value :_*))
       
       @scala.inline
       def setMx(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -6995,16 +6952,18 @@ object mod {
       def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
       
       @scala.inline
-      def setMxVarargs(value: js.Any*): Self = StObject.set(x, "mx", js.Array(value :_*))
+      def setMxVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "mx", js.Array(value :_*))
       
       @scala.inline
       def setMy(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7014,16 +6973,18 @@ object mod {
       def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
       
       @scala.inline
-      def setMyVarargs(value: js.Any*): Self = StObject.set(x, "my", js.Array(value :_*))
+      def setMyVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "my", js.Array(value :_*))
       
       @scala.inline
       def setOpacity(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any
                 ]
               ]
             ])
@@ -7033,16 +6994,18 @@ object mod {
       def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
       @scala.inline
-      def setOpacityVarargs(value: js.Any*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      def setOpacityVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any)*
+      ): Self = StObject.set(x, "opacity", js.Array(value :_*))
       
       @scala.inline
       def setOrder(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any
                 ]
               ]
             ])
@@ -7052,16 +7015,18 @@ object mod {
       def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
       @scala.inline
-      def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
+      def setOrderVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Order */ js.Any)*
+      ): Self = StObject.set(x, "order", js.Array(value :_*))
       
       @scala.inline
       def setOverflow(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
                 ]
               ]
             ])
@@ -7071,16 +7036,18 @@ object mod {
       def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
       @scala.inline
-      def setOverflowVarargs(value: js.Any*): Self = StObject.set(x, "overflow", js.Array(value :_*))
+      def setOverflowVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any)*
+      ): Self = StObject.set(x, "overflow", js.Array(value :_*))
       
       @scala.inline
       def setP(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7090,16 +7057,18 @@ object mod {
       def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
       @scala.inline
-      def setPVarargs(value: js.Any*): Self = StObject.set(x, "p", js.Array(value :_*))
+      def setPVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "p", js.Array(value :_*))
       
       @scala.inline
       def setPadding(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7108,11 +7077,11 @@ object mod {
       @scala.inline
       def setPaddingBottom(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7122,16 +7091,18 @@ object mod {
       def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
       @scala.inline
-      def setPaddingBottomVarargs(value: js.Any*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
+      def setPaddingBottomVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
       
       @scala.inline
       def setPaddingLeft(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7141,16 +7112,18 @@ object mod {
       def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
       @scala.inline
-      def setPaddingLeftVarargs(value: js.Any*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
+      def setPaddingLeftVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
       
       @scala.inline
       def setPaddingRight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7160,16 +7133,18 @@ object mod {
       def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
       @scala.inline
-      def setPaddingRightVarargs(value: js.Any*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
+      def setPaddingRightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
       
       @scala.inline
       def setPaddingTop(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7179,22 +7154,26 @@ object mod {
       def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
       @scala.inline
-      def setPaddingTopVarargs(value: js.Any*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
+      def setPaddingTopVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
       
       @scala.inline
       def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
       @scala.inline
-      def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      def setPaddingVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Padding<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "padding", js.Array(value :_*))
       
       @scala.inline
       def setPb(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7204,16 +7183,18 @@ object mod {
       def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
       
       @scala.inline
-      def setPbVarargs(value: js.Any*): Self = StObject.set(x, "pb", js.Array(value :_*))
+      def setPbVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingBottom<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "pb", js.Array(value :_*))
       
       @scala.inline
       def setPl(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7223,16 +7204,18 @@ object mod {
       def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
       
       @scala.inline
-      def setPlVarargs(value: js.Any*): Self = StObject.set(x, "pl", js.Array(value :_*))
+      def setPlVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "pl", js.Array(value :_*))
       
       @scala.inline
       def setPosition(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any
                 ]
               ]
             ])
@@ -7242,16 +7225,18 @@ object mod {
       def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
       @scala.inline
-      def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+      def setPositionVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any)*
+      ): Self = StObject.set(x, "position", js.Array(value :_*))
       
       @scala.inline
       def setPr(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7261,16 +7246,18 @@ object mod {
       def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
       
       @scala.inline
-      def setPrVarargs(value: js.Any*): Self = StObject.set(x, "pr", js.Array(value :_*))
+      def setPrVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingRight<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "pr", js.Array(value :_*))
       
       @scala.inline
       def setPt(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7280,16 +7267,18 @@ object mod {
       def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
       
       @scala.inline
-      def setPtVarargs(value: js.Any*): Self = StObject.set(x, "pt", js.Array(value :_*))
+      def setPtVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "pt", js.Array(value :_*))
       
       @scala.inline
       def setPx(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7299,16 +7288,18 @@ object mod {
       def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
       
       @scala.inline
-      def setPxVarargs(value: js.Any*): Self = StObject.set(x, "px", js.Array(value :_*))
+      def setPxVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingLeft<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "px", js.Array(value :_*))
       
       @scala.inline
       def setPy(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7318,16 +7309,18 @@ object mod {
       def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
       
       @scala.inline
-      def setPyVarargs(value: js.Any*): Self = StObject.set(x, "py", js.Array(value :_*))
+      def setPyVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.PaddingTop<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "py", js.Array(value :_*))
       
       @scala.inline
       def setRight(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7337,7 +7330,9 @@ object mod {
       def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
       @scala.inline
-      def setRightVarargs(value: js.Any*): Self = StObject.set(x, "right", js.Array(value :_*))
+      def setRightVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Right<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "right", js.Array(value :_*))
       
       @scala.inline
       def setRow(
@@ -7353,11 +7348,11 @@ object mod {
       @scala.inline
       def setSize(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7367,16 +7362,18 @@ object mod {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setSizeVarargs(value: js.Any*): Self = StObject.set(x, "size", js.Array(value :_*))
+      def setSizeVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "size", js.Array(value :_*))
       
       @scala.inline
       def setTextAlign(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any
                 ]
               ]
             ])
@@ -7386,16 +7383,18 @@ object mod {
       def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
       @scala.inline
-      def setTextAlignVarargs(value: js.Any*): Self = StObject.set(x, "textAlign", js.Array(value :_*))
+      def setTextAlignVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any)*
+      ): Self = StObject.set(x, "textAlign", js.Array(value :_*))
       
       @scala.inline
       def setTextShadow(
         value: (ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double
+                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
                 ]
               ]
             ])
@@ -7405,16 +7404,18 @@ object mod {
       def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
       
       @scala.inline
-      def setTextShadowVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "textShadow", js.Array(value :_*))
+      def setTextShadowVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double)*
+      ): Self = StObject.set(x, "textShadow", js.Array(value :_*))
       
       @scala.inline
       def setTextTransform(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
                 ]
               ]
             ])
@@ -7424,16 +7425,18 @@ object mod {
       def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
       
       @scala.inline
-      def setTextTransformVarargs(value: js.Any*): Self = StObject.set(x, "textTransform", js.Array(value :_*))
+      def setTextTransformVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any)*
+      ): Self = StObject.set(x, "textTransform", js.Array(value :_*))
       
       @scala.inline
       def setTop(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7443,16 +7446,18 @@ object mod {
       def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
       @scala.inline
-      def setTopVarargs(value: js.Any*): Self = StObject.set(x, "top", js.Array(value :_*))
+      def setTopVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "top", js.Array(value :_*))
       
       @scala.inline
       def setTransition(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7462,16 +7467,18 @@ object mod {
       def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
       @scala.inline
-      def setTransitionVarargs(value: js.Any*): Self = StObject.set(x, "transition", js.Array(value :_*))
+      def setTransitionVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "transition", js.Array(value :_*))
       
       @scala.inline
       def setVerticalAlign(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7481,16 +7488,18 @@ object mod {
       def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
       @scala.inline
-      def setVerticalAlignVarargs(value: js.Any*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+      def setVerticalAlignVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
       
       @scala.inline
       def setWidth(
         value: (ResponsiveValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ js.Any
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ _
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ js.Any
                 ]
               ]
             ])
@@ -7500,16 +7509,18 @@ object mod {
       def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
       @scala.inline
-      def setWidthVarargs(value: js.Any*): Self = StObject.set(x, "width", js.Array(value :_*))
+      def setWidthVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Width<TLength> */ js.Any)*
+      ): Self = StObject.set(x, "width", js.Array(value :_*))
       
       @scala.inline
       def setZIndex(
         value: (ResponsiveValue[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | AliasKey
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
             ]) | (BreakpointObject[
               js.UndefOr[
                 ResponsiveValue[
-                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | AliasKey
+                  (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
                 ]
               ]
             ])
@@ -7519,7 +7530,9 @@ object mod {
       def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
       
       @scala.inline
-      def setZIndexVarargs(value: (js.Any | AliasKey)*): Self = StObject.set(x, "zIndex", js.Array(value :_*))
+      def setZIndexVarargs(
+        value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey)*
+      ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
     }
   }
   
@@ -7533,18 +7546,17 @@ object mod {
   trait BreakpointName extends StObject
   
   /* Inlined {[ Key in @xstyled/styled-components.@xstyled/styled-components.BreakpointName ]:? ArgType} */
-  @js.native
   trait BreakpointObject[ArgType] extends StObject {
     
-    var lg: js.UndefOr[ArgType] = js.native
+    var lg: js.UndefOr[ArgType] = js.undefined
     
-    var md: js.UndefOr[ArgType] = js.native
+    var md: js.UndefOr[ArgType] = js.undefined
     
-    var sm: js.UndefOr[ArgType] = js.native
+    var sm: js.UndefOr[ArgType] = js.undefined
     
-    var xl: js.UndefOr[ArgType] = js.native
+    var xl: js.UndefOr[ArgType] = js.undefined
     
-    var xs: js.UndefOr[ArgType] = js.native
+    var xs: js.UndefOr[ArgType] = js.undefined
   }
   object BreakpointObject {
     
@@ -7555,7 +7567,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BreakpointObjectMutableBuilder[Self <: BreakpointObject[_], ArgType] (val x: Self with BreakpointObject[ArgType]) extends AnyVal {
+    implicit class BreakpointObjectMutableBuilder[Self <: BreakpointObject[?], ArgType] (val x: Self & BreakpointObject[ArgType]) extends AnyVal {
       
       @scala.inline
       def setLg(value: ArgType): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
@@ -7589,14 +7601,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ColorModeProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var target: HTMLElement = js.native
+    var target: HTMLElement
     
-    var targetSelector: String = js.native
+    var targetSelector: String
   }
   object ColorModeProviderProps {
     
@@ -7623,18 +7634,17 @@ object mod {
     }
   }
   
-  @js.native
   trait DefaultBreakpoints extends StObject {
     
-    var lg: js.Any = js.native
+    var lg: js.Any
     
-    var md: js.Any = js.native
+    var md: js.Any
     
-    var sm: js.Any = js.native
+    var sm: js.Any
     
-    var xl: js.Any = js.native
+    var xl: js.Any
     
-    var xs: js.Any = js.native
+    var xs: js.Any
   }
   object DefaultBreakpoints {
     
@@ -7669,5 +7679,5 @@ object mod {
     */
   type WithBreakpointArgs[Props] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ Key in keyof Props ]:? Props[Key] | @xstyled/styled-components.@xstyled/styled-components.BreakpointObject<Props[Key]>}
-    */ typings.xstyledStyledComponents.xstyledStyledComponentsStrings.WithBreakpointArgs with TopLevel[js.Any]
+    */ typings.xstyledStyledComponents.xstyledStyledComponentsStrings.WithBreakpointArgs & TopLevel[js.Any]
 }

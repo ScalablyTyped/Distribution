@@ -16,7 +16,6 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusZoneTypesMod {
@@ -28,30 +27,38 @@ object focusZoneTypesMod {
   object FocusZoneDirection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FocusZoneDirection with Double] = js.native
+    def apply(value: Double): js.UndefOr[FocusZoneDirection & Double] = js.native
     
     /** React to all arrows. */
     @js.native
-    sealed trait bidirectional extends FocusZoneDirection
-    /* 2 */ val bidirectional: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.bidirectional with Double = js.native
+    sealed trait bidirectional
+      extends StObject
+         with FocusZoneDirection
+    /* 2 */ val bidirectional: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.bidirectional & Double = js.native
     
     /**
       * React to all arrows. Navigate next item in DOM on right/down arrow keys and previous - left/up arrow keys.
       * Right and Left arrow keys are swapped in RTL mode.
       */
     @js.native
-    sealed trait domOrder extends FocusZoneDirection
-    /* 3 */ val domOrder: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.domOrder with Double = js.native
+    sealed trait domOrder
+      extends StObject
+         with FocusZoneDirection
+    /* 3 */ val domOrder: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.domOrder & Double = js.native
     
     /** Only react to left/right arrows. */
     @js.native
-    sealed trait horizontal extends FocusZoneDirection
-    /* 1 */ val horizontal: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.horizontal with Double = js.native
+    sealed trait horizontal
+      extends StObject
+         with FocusZoneDirection
+    /* 1 */ val horizontal: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.horizontal & Double = js.native
     
     /** Only react to up/down arrows. */
     @js.native
-    sealed trait vertical extends FocusZoneDirection
-    /* 0 */ val vertical: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.vertical with Double = js.native
+    sealed trait vertical
+      extends StObject
+         with FocusZoneDirection
+    /* 0 */ val vertical: typings.fluentuiReactFocus.focusZoneTypesMod.FocusZoneDirection.vertical & Double = js.native
   }
   
   /* Inlined {  none :0,   all :1,   inputOnly :2}[keyof {  none :0,   all :1,   inputOnly :2}] */
@@ -110,7 +117,7 @@ object focusZoneTypesMod {
       * @returns True if focus could be set to an active element, false if no operation was taken.
       */
     def focusElement(): Boolean = js.native
-    def focusElement(childElement: js.UndefOr[scala.Nothing], forceAlignment: Boolean): Boolean = js.native
+    def focusElement(childElement: Unit, forceAlignment: Boolean): Boolean = js.native
     def focusElement(childElement: HTMLElement): Boolean = js.native
     def focusElement(childElement: HTMLElement, forceAlignment: Boolean): Boolean = js.native
     
@@ -128,11 +135,12 @@ object focusZoneTypesMod {
     def setFocusAlignment(point: Point): Unit = js.native
   }
   
-  @js.native
-  trait IFocusZoneProps extends HTMLAttributes[HTMLElement | FocusZone] {
+  trait IFocusZoneProps
+    extends StObject
+       with HTMLAttributes[HTMLElement | FocusZone] {
     
     /** Allows focus to park on root when focus is in the `FocusZone` at render time. */
-    var allowFocusRoot: js.UndefOr[Boolean] = js.native
+    var allowFocusRoot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows tab key to be handled to tab through a list of items in the focus zone,
@@ -141,93 +149,93 @@ object focusZoneTypesMod {
       * @deprecated Use `handleTabKey` instead.
       *
       */
-    var allowTabKey: js.UndefOr[Boolean] = js.native
+    var allowTabKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the aria-describedby attribute.
       * @deprecated Directly use the `aria-describedby` attribute instead
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the aria-labelledby attribute.
       * @deprecated Directly use the `aria-labelledby` attribute instead
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * A component that should be used as the root element of the FocusZone component.
       */
-    var as: js.UndefOr[ElementType[_]] = js.native
+    var as: js.UndefOr[ElementType[js.Any]] = js.undefined
     
     /**
       * Determines whether to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes
       * when determining how to move focus
       * @defaultvalue false
       */
-    var checkForNoWrap: js.UndefOr[Boolean] = js.native
+    var checkForNoWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional callback to access the IFocusZone interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IFocusZone]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IFocusZone]] = js.undefined
     
     /**
       * Optionally provide a selector for identifying the initial active element.
       * @deprecated Use `defaultTabbableElement` instead.
       */
-    var defaultActiveElement: js.UndefOr[String] = js.native
+    var defaultActiveElement: js.UndefOr[String] = js.undefined
     
     /**
       * Optionally defines the initial tabbable element inside the FocusZone.
       * If a string is passed then it is treated as a selector for identifying the initial tabbable element.
       * If a function is passed then it uses the root element as a parameter to return the initial tabbable element.
       */
-    var defaultTabbableElement: js.UndefOr[String | (js.Function1[/* root */ HTMLElement, HTMLElement])] = js.native
+    var defaultTabbableElement: js.UndefOr[String | (js.Function1[/* root */ HTMLElement, HTMLElement])] = js.undefined
     
     /**
       * Defines which arrows to react to.
       * @defaultvalue FocusZoneDirection.bidirectional
       */
-    var direction: js.UndefOr[FocusZoneDirection] = js.native
+    var direction: js.UndefOr[FocusZoneDirection] = js.undefined
     
     /**
       * If set, the FocusZone will not be tabbable and keyboard navigation will be disabled.
       * This does not affect disabled attribute of any child.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the FocusZone should allow focus events to propagate past the FocusZone.
       * @deprecated Use `stopFocusPropagation` instead.
       */
-    var doNotAllowFocusEventToPropagate: js.UndefOr[Boolean] = js.native
+    var doNotAllowFocusEventToPropagate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional callback to access the root DOM element.
       * @deprecated Temporary solution which will be replaced with ref in the V8 release.
       */
-    var elementRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var elementRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
     /**
       * Element type the root element will use. Default is "div".
       * @deprecated Use 'as' instead.
       */
-    var elementType: js.UndefOr[js.Any] = js.native
+    var elementType: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Allows tab key to be handled to tab through a list of items in the focus zone,
       * an unfortunate side effect is that users will not be able to tab out of the focus zone
       * and have to hit escape or some other key.
       */
-    var handleTabKey: js.UndefOr[FocusZoneTabbableElements] = js.native
+    var handleTabKey: js.UndefOr[FocusZoneTabbableElements] = js.undefined
     
     /**
       * If set, will cycle to the beginning of the targets once the user navigates to the
       * next target while at the end, and to the end when navigate to the previous at the beginning.
       */
-    var isCircularNavigation: js.UndefOr[Boolean] = js.native
+    var isCircularNavigation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If provided, this callback will be executed on keypresses to determine if the user
@@ -235,7 +243,7 @@ object focusZoneTypesMod {
       * set focus.
       * @deprecated Use `shouldEnterInnerZone` instead.
       */
-    var isInnerZoneKeystroke: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLElement], Boolean]] = js.native
+    var isInnerZoneKeystroke: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLElement], Boolean]] = js.undefined
     
     /**
       * Callback for when one of immediate children elements gets active by getting focused
@@ -247,7 +255,7 @@ object focusZoneTypesMod {
           /* ev */ js.UndefOr[FocusEvent[HTMLElement]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback method for determining if focus should indeed be set on the given element.
@@ -255,96 +263,96 @@ object focusZoneTypesMod {
       * @returns True if focus should be set to the given element, false to avoid setting focus.
       * @deprecated Use `shouldReceiveFocus` instead.
       */
-    var onBeforeFocus: js.UndefOr[js.Function1[/* childElement */ js.UndefOr[HTMLElement], Boolean]] = js.native
+    var onBeforeFocus: js.UndefOr[js.Function1[/* childElement */ js.UndefOr[HTMLElement], Boolean]] = js.undefined
     
     /**
       * Callback to notify creators that focus has been set on the FocusZone
       * @deprecated Use `onFocus` instead.
       */
-    var onFocusNotification: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocusNotification: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback called when "focus" event triggered in FocusZone.
       * @param event - React's original FocusEvent.
       */
     @JSName("onFocus")
-    var onFocus_IFocusZoneProps: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement | FocusZone], Unit]] = js.native
+    var onFocus_IFocusZoneProps: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement | FocusZone], Unit]] = js.undefined
     
     /**
       * Determines whether to disable the paging support for Page Up and Page Down keyboard scenarios.
       * @defaultvalue false
       */
-    var pagingSupportDisabled: js.UndefOr[Boolean] = js.native
+    var pagingSupportDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, FocusZone prevents the default behavior of Keyboard events when changing focus between elements.
       * @defaultvalue false
       */
-    var preventDefaultWhenHandled: js.UndefOr[Boolean] = js.native
+    var preventDefaultWhenHandled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, prevents the FocusZone from attempting to restore the focus to the inner element when the focus is on the
       * root element after componentDidUpdate.
       * @defaultvalue false
       */
-    var preventFocusRestoration: js.UndefOr[Boolean] = js.native
+    var preventFocusRestoration: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.
       * @deprecated DIV props provided to the FocusZone will be mixed into the root element.
       */
-    var rootProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var rootProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
     /**
       * Callback function that will be executed on keypresses to determine if the user intends to navigate into
       * the inner (nested) zone. Returning true will ask the first inner zone to set focus.
       */
-    var shouldEnterInnerZone: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLElement], Boolean]] = js.native
+    var shouldEnterInnerZone: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLElement], Boolean]] = js.undefined
     
     /**
       * If true and FocusZone's root element (container) receives focus, the focus will land either on the
       * defaultTabbableElement (if set) or on the first tabbable element of this FocusZone.
       * Usually a case for nested focus zones, when the nested focus zone's container is a focusable element.
       */
-    var shouldFocusInnerElementWhenReceivedFocus: js.UndefOr[Boolean] = js.native
+    var shouldFocusInnerElementWhenReceivedFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if a default tabbable element should be force focused on FocusZone mount.
       * @default false
       */
-    var shouldFocusOnMount: js.UndefOr[Boolean] = js.native
+    var shouldFocusOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback method to determine if the input element should lose focus on arrow keys
       *  @param inputElement - The input element which is to loose focus.
       *  @returns True if input element should loose focus or false otherwise.
       */
-    var shouldInputLoseFocusOnArrowKey: js.UndefOr[js.Function1[/* inputElement */ HTMLInputElement, Boolean]] = js.native
+    var shouldInputLoseFocusOnArrowKey: js.UndefOr[js.Function1[/* inputElement */ HTMLInputElement, Boolean]] = js.undefined
     
     /**
       * Determines whether the FocusZone will walk up the DOM trying to invoke click callbacks on focusable elements on
       * Enter and Space keydowns to ensure accessibility for tags that don't guarantee this behavior.
       * @defaultvalue true
       */
-    var shouldRaiseClicks: js.UndefOr[Boolean] = js.native
+    var shouldRaiseClicks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback method for determining if focus should indeed be set on the given element.
       * @param element - The child element within the zone to focus.
       * @returns True if focus should be set to the given element, false to avoid setting focus.
       */
-    var shouldReceiveFocus: js.UndefOr[js.Function1[/* childElement */ js.UndefOr[HTMLElement], Boolean]] = js.native
+    var shouldReceiveFocus: js.UndefOr[js.Function1[/* childElement */ js.UndefOr[HTMLElement], Boolean]] = js.undefined
     
     /**
       * If true and TAB key is not handled by FocusZone, resets current active element to null value.
       * For example, when roving index is not desirable and focus should always reset to the default tabbable element.
       */
-    var shouldResetActiveElementWhenTabFromZone: js.UndefOr[Boolean] = js.native
+    var shouldResetActiveElementWhenTabFromZone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the FocusZone should allow focus events to propagate past the FocusZone.
       */
-    var stopFocusPropagation: js.UndefOr[Boolean] = js.native
+    var stopFocusPropagation: js.UndefOr[Boolean] = js.undefined
   }
   object IFocusZoneProps {
     
@@ -382,7 +390,7 @@ object focusZoneTypesMod {
       def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
       @scala.inline
-      def setAs(value: ElementType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)

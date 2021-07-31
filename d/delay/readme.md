@@ -10,9 +10,9 @@ Delay a promise a specified amount of time
 | ------------------ | :-------------: |
 | Full name          | delay |
 | Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird, threshold, range, random |
-| # releases         | 6 |
-| # dependents       | 479 |
-| # downloads        | 13563138 |
+| # releases         | 4 |
+| # dependents       | 537 |
+| # downloads        | 16941134 |
 | # stars            | 13 |
 
 ## Links

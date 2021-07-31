@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface enables the object to be registered as interceptor to change context menus or prevent them from being executed. */
-@js.native
-trait XContextMenuInterceptor extends XInterface {
+trait XContextMenuInterceptor
+  extends StObject
+     with XInterface {
   
   /**
     * notifies the interceptor about the request to execute a ContextMenu. The interceptor has to decide whether the menu should be executed with or without
     * being modified or may ignore the call.
     */
-  def notifyContextMenuExecute(aEvent: ContextMenuExecuteEvent): ContextMenuInterceptorAction = js.native
+  def notifyContextMenuExecute(aEvent: ContextMenuExecuteEvent): ContextMenuInterceptorAction
 }
 object XContextMenuInterceptor {
   

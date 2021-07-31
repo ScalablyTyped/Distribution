@@ -3,21 +3,19 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintTaskOptionDetails extends StObject {
   
-  def createItemListOption(optionId: String, displayName: String): PrintCustomItemListOptionDetails = js.native
+  def createItemListOption(optionId: String, displayName: String): PrintCustomItemListOptionDetails
   
-  def createTextOption(optionId: String, displayName: String): PrintCustomTextOptionDetails = js.native
+  def createTextOption(optionId: String, displayName: String): PrintCustomTextOptionDetails
   
-  var onbeginvalidation: js.Any = js.native
+  var onbeginvalidation: js.Any
   
-  var onoptionchanged: js.Any = js.native
+  var onoptionchanged: js.Any
   
-  var options: IMapView[String, IPrintOptionDetails] = js.native
+  var options: IMapView[String, IPrintOptionDetails]
 }
 object IPrintTaskOptionDetails {
   

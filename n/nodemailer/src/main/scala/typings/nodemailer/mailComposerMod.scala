@@ -5,7 +5,6 @@ import typings.nodemailer.mailerMod.Options
 import typings.nodemailer.nodemailerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailComposerMod {
@@ -13,26 +12,45 @@ object mailComposerMod {
   /** Creates the object for composing a MimeNode instance out from the mail options */
   @JSImport("nodemailer/lib/mail-composer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MailComposer {
+  class ^ protected ()
+    extends StObject
+       with MailComposer {
     def this(mail: Options) = this()
+    
+    /** Builds MimeNode instance */
+    /* CompleteClass */
+    override def compile(): typings.nodemailer.mimeNodeMod.^ = js.native
+    
+    /** List alternatives. Resulting objects can be used as input for MimeNode nodes */
+    /* CompleteClass */
+    override def getAlternatives(): js.Array[Attachment] = js.native
+    
+    /** List all attachments. Resulting attachment objects can be used as input for MimeNode nodes */
+    /* CompleteClass */
+    override def getAttachments(findRelated: Boolean): js.Array[Attachment] = js.native
+    
+    /* CompleteClass */
+    var mail: Options = js.native
+    
+    /* CompleteClass */
+    var message: typings.nodemailer.mimeNodeMod.^ | `false` = js.native
   }
   
   /** Creates the object for composing a MimeNode instance out from the mail options */
-  @js.native
   trait MailComposer extends StObject {
     
     /** Builds MimeNode instance */
-    def compile(): typings.nodemailer.mimeNodeMod.^ = js.native
+    def compile(): typings.nodemailer.mimeNodeMod.^
     
     /** List alternatives. Resulting objects can be used as input for MimeNode nodes */
-    def getAlternatives(): js.Array[Attachment] = js.native
+    def getAlternatives(): js.Array[Attachment]
     
     /** List all attachments. Resulting attachment objects can be used as input for MimeNode nodes */
-    def getAttachments(findRelated: Boolean): js.Array[Attachment] = js.native
+    def getAttachments(findRelated: Boolean): js.Array[Attachment]
     
-    var mail: Options = js.native
+    var mail: Options
     
-    var message: typings.nodemailer.mimeNodeMod.^ | `false` = js.native
+    var message: typings.nodemailer.mimeNodeMod.^ | `false`
   }
   object MailComposer {
     

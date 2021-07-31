@@ -2,22 +2,21 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeDateFilter
-  extends Filter
+  extends StObject
+     with Filter
      with ConcreteFilter {
   
   /** The date period of the filter. See PeriodType Enum for the values in the enum. */
-  def getPeriod(): PeriodType = js.native
+  def getPeriod(): PeriodType
   
   /** The range of the date filter (years, months, etc.). See DateRangeType Enum for the values in the enum. */
-  def getRange(): DateRangeType = js.native
+  def getRange(): DateRangeType
   
   /** When getRange returns LASTN or NEXTN, this is the N value (how many years, months, etc.). */
-  def getRangeN(): Double = js.native
+  def getRangeN(): Double
 }
 object RelativeDateFilter {
   

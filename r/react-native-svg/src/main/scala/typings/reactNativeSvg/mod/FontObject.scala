@@ -2,39 +2,37 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontObject extends StObject {
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[String] = js.native
+  var fontFeatureSettings: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[NumberProp] = js.native
+  var fontSize: js.UndefOr[NumberProp] = js.undefined
   
-  var fontStretch: js.UndefOr[FontStretch] = js.native
+  var fontStretch: js.UndefOr[FontStretch] = js.undefined
   
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
-  var fontVariant: js.UndefOr[FontVariant] = js.native
+  var fontVariant: js.UndefOr[FontVariant] = js.undefined
   
-  var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.native
+  var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
   
-  var fontVariationSettings: js.UndefOr[String] = js.native
+  var fontVariationSettings: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
-  var kerning: js.UndefOr[NumberProp] = js.native
+  var kerning: js.UndefOr[NumberProp] = js.undefined
   
-  var letterSpacing: js.UndefOr[NumberProp] = js.native
+  var letterSpacing: js.UndefOr[NumberProp] = js.undefined
   
-  var textAnchor: js.UndefOr[TextAnchor] = js.native
+  var textAnchor: js.UndefOr[TextAnchor] = js.undefined
   
-  var textDecoration: js.UndefOr[TextDecoration] = js.native
+  var textDecoration: js.UndefOr[TextDecoration] = js.undefined
   
-  var wordSpacing: js.UndefOr[NumberProp] = js.native
+  var wordSpacing: js.UndefOr[NumberProp] = js.undefined
 }
 object FontObject {
   

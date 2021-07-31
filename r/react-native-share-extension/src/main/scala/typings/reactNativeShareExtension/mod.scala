@@ -5,7 +5,6 @@ import typings.reactNativeShareExtension.reactNativeShareExtensionStrings.images
 import typings.reactNativeShareExtension.reactNativeShareExtensionStrings.textSlashplain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,12 +13,11 @@ object mod extends Shortcut {
   @js.native
   val default: ShareExtension = js.native
   
-  @js.native
   trait ShareData extends StObject {
     
-    var `type`: textSlashplain | imagesSlashAsterisk = js.native
+    var `type`: textSlashplain | imagesSlashAsterisk
     
-    var value: String = js.native
+    var value: String
   }
   object ShareData {
     
@@ -41,14 +39,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ShareExtension extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def data(): js.Promise[ShareData] = js.native
+    def data(): js.Promise[ShareData]
     
-    def openURL(uri: String): Unit = js.native
+    def openURL(uri: String): Unit
   }
   object ShareExtension {
     

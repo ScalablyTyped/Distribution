@@ -3,7 +3,6 @@ package typings.aureliaTemplating.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "Animator")
@@ -63,7 +62,7 @@ class Animator () extends StObject {
     * @param sequence An array of effectNames or classNames
     * @returns Resolved when all animations are done
     */
-  def runSequence(animations: js.Array[_]): js.Promise[Boolean] = js.native
+  def runSequence(animations: js.Array[js.Any]): js.Promise[Boolean] = js.native
   
   /**
     * Unregister an effect (for JS based animators)

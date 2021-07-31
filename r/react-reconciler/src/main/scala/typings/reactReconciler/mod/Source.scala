@@ -2,16 +2,14 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // shared/ReactElementType
-@js.native
 trait Source extends StObject {
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var lineNumber: Double = js.native
+  var lineNumber: Double
 }
 object Source {
   

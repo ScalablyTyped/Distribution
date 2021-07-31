@@ -2,41 +2,39 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomVerificationEmailTemplateRequest extends StObject {
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is not successfully verified.
     */
-  var FailureRedirectionURL: typings.awsSdk.sesMod.FailureRedirectionURL = js.native
+  var FailureRedirectionURL: typings.awsSdk.sesMod.FailureRedirectionURL
   
   /**
     * The email address that the custom verification email is sent from.
     */
-  var FromEmailAddress: FromAddress = js.native
+  var FromEmailAddress: FromAddress
   
   /**
     * The URL that the recipient of the verification email is sent to if his or her address is successfully verified.
     */
-  var SuccessRedirectionURL: typings.awsSdk.sesMod.SuccessRedirectionURL = js.native
+  var SuccessRedirectionURL: typings.awsSdk.sesMod.SuccessRedirectionURL
   
   /**
     * The content of the custom verification email. The total size of the email must be less than 10 MB. The message body may contain HTML, with some limitations. For more information, see Custom Verification Email Frequently Asked Questions in the Amazon SES Developer Guide.
     */
-  var TemplateContent: typings.awsSdk.sesMod.TemplateContent = js.native
+  var TemplateContent: typings.awsSdk.sesMod.TemplateContent
   
   /**
     * The name of the custom verification email template.
     */
-  var TemplateName: typings.awsSdk.sesMod.TemplateName = js.native
+  var TemplateName: typings.awsSdk.sesMod.TemplateName
   
   /**
     * The subject line of the custom verification email.
     */
-  var TemplateSubject: Subject = js.native
+  var TemplateSubject: Subject
 }
 object CreateCustomVerificationEmailTemplateRequest {
   

@@ -3,27 +3,25 @@ package typings.inboxsdk.mod.Conversations
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentPanelDescriptor extends StObject {
   
-  var appIconUrl: js.UndefOr[String] = js.native
+  var appIconUrl: js.UndefOr[String] = js.undefined
   
-  var appName: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.undefined
   
-  var el: HTMLElement = js.native
+  var el: HTMLElement
   
-  var hideTitleBar: js.UndefOr[Boolean] = js.native
+  var hideTitleBar: js.UndefOr[Boolean] = js.undefined
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var orderHint: js.UndefOr[Double] = js.native
+  var orderHint: js.UndefOr[Double] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object ContentPanelDescriptor {
   

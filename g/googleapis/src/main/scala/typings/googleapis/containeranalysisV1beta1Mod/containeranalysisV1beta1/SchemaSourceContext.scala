@@ -3,35 +3,33 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A SourceContext is a reference to a tree of files. A SourceContext together
   * with a path point to a unique revision of a single file or directory.
   */
-@js.native
 trait SchemaSourceContext extends StObject {
   
   /**
     * A SourceContext referring to a revision in a Google Cloud Source Repo.
     */
-  var cloudRepo: js.UndefOr[SchemaCloudRepoSourceContext] = js.native
+  var cloudRepo: js.UndefOr[SchemaCloudRepoSourceContext] = js.undefined
   
   /**
     * A SourceContext referring to a Gerrit project.
     */
-  var gerrit: js.UndefOr[SchemaGerritSourceContext] = js.native
+  var gerrit: js.UndefOr[SchemaGerritSourceContext] = js.undefined
   
   /**
     * A SourceContext referring to any third party Git repo (e.g., GitHub).
     */
-  var git: js.UndefOr[SchemaGitSourceContext] = js.native
+  var git: js.UndefOr[SchemaGitSourceContext] = js.undefined
   
   /**
     * Labels with user defined metadata.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaSourceContext {
   

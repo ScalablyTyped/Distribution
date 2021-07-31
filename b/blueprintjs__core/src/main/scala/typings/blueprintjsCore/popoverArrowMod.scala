@@ -5,7 +5,6 @@ import typings.react.mod.FunctionComponent
 import typings.reactPopper.mod.PopperArrowProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverArrowMod {
@@ -14,12 +13,11 @@ object popoverArrowMod {
   @js.native
   val PopoverArrow: FunctionComponent[IPopoverArrowProps] = js.native
   
-  @js.native
   trait IPopoverArrowProps extends StObject {
     
-    var arrowProps: PopperArrowProps = js.native
+    var arrowProps: PopperArrowProps
     
-    var placement: Placement = js.native
+    var placement: Placement
   }
   object IPopoverArrowProps {
     

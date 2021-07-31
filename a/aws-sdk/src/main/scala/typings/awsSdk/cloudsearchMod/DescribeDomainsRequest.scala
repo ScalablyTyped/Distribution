@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainsRequest extends StObject {
   
   /**
     * The names of the domains you want to include in the response.
     */
-  var DomainNames: js.UndefOr[DomainNameList] = js.native
+  var DomainNames: js.UndefOr[DomainNameList] = js.undefined
 }
 object DescribeDomainsRequest {
   

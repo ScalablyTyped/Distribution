@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionReference extends StObject {
   
   /**
     * The type of task (task or task group).
     */
-  var definitionType: String = js.native
+  var definitionType: String
   
   /**
     * The ID of the task.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The version of the task.
     */
-  var versionSpec: String = js.native
+  var versionSpec: String
 }
 object TaskDefinitionReference {
   

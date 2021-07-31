@@ -3,15 +3,37 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object structuredListMod {
   
   @JSImport("carbon-components/components/structured-list/structured-list", JSImport.Default)
   @js.native
-  class default protected () extends StructuredList {
+  class default protected ()
+    extends StObject
+       with StructuredList {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _direction(evt: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _getInput(index: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _handleClick(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleInputChecked(index: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleKeydownArrow(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleKeydownChecked(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _nextIndex(array: js.Any, arrayItem: js.Any, direction: js.Any): js.Any = js.native
   }
   object default {
     
@@ -28,22 +50,21 @@ object structuredListMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait StructuredList extends StObject {
+  - Dropped any */ trait StructuredList extends StObject {
     
-    def _direction(evt: js.Any): js.Any = js.native
+    def _direction(evt: js.Any): js.Any
     
-    def _getInput(index: js.Any): js.Any = js.native
+    def _getInput(index: js.Any): js.Any
     
-    def _handleClick(evt: js.Any): Unit = js.native
+    def _handleClick(evt: js.Any): Unit
     
-    def _handleInputChecked(index: js.Any): Unit = js.native
+    def _handleInputChecked(index: js.Any): Unit
     
-    def _handleKeydownArrow(evt: js.Any): Unit = js.native
+    def _handleKeydownArrow(evt: js.Any): Unit
     
-    def _handleKeydownChecked(evt: js.Any): Unit = js.native
+    def _handleKeydownChecked(evt: js.Any): Unit
     
-    def _nextIndex(array: js.Any, arrayItem: js.Any, direction: js.Any): js.Any = js.native
+    def _nextIndex(array: js.Any, arrayItem: js.Any, direction: js.Any): js.Any
   }
   object StructuredList {
     

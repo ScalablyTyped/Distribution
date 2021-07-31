@@ -3,24 +3,22 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterEffect extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.FilterEffect_typekey")
-  var PowerPointDotFilterEffect_typekey: FilterEffect = js.native
+  var PowerPointDotFilterEffect_typekey: FilterEffect
   
-  var Reveal: MsoTriState = js.native
+  var Reveal: MsoTriState
   
-  var Subtype: MsoAnimFilterEffectSubtype = js.native
+  var Subtype: MsoAnimFilterEffectSubtype
   
-  var Type: MsoAnimFilterEffectType = js.native
+  var Type: MsoAnimFilterEffectType
 }
 object FilterEffect {
   

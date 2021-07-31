@@ -5,7 +5,6 @@ import typings.heredatalens.H.datalens.QueryTileProvider.Zoom
 import typings.heredatalens.H.datalens.Service.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Blending of buckets is implemented via kernel density estimation (KDE) with a Gaussian kernel.
   */
 @js.native
-trait HeatmapLayer extends RasterLayer {
+trait HeatmapLayer
+  extends StObject
+     with RasterLayer {
   
   /**
     * @param zoom - zoom level
@@ -37,11 +38,15 @@ object HeatmapLayer {
     
     /** Specifies that the average aggregation was applied to the bucket value */
     @js.native
-    sealed trait AVERAGE extends Aggregation
+    sealed trait AVERAGE
+      extends StObject
+         with Aggregation
     
     /** Specifies that the sum aggregation was applied to the bucket value */
     @js.native
-    sealed trait SUM extends Aggregation
+    sealed trait SUM
+      extends StObject
+         with Aggregation
   }
   
   @js.native
@@ -56,15 +61,21 @@ object HeatmapLayer {
     
     /** Decibel (dB) scale */
     @js.native
-    sealed trait DB extends InputScale
+    sealed trait DB
+      extends StObject
+         with InputScale
     
     /** Linear scale */
     @js.native
-    sealed trait LINEAR extends InputScale
+    sealed trait LINEAR
+      extends StObject
+         with InputScale
     
     /** Logarithmic scale */
     @js.native
-    sealed trait LOG extends InputScale
+    sealed trait LOG
+      extends StObject
+         with InputScale
   }
   
   /**
@@ -85,14 +96,13 @@ object HeatmapLayer {
     * For example, a bandwidth of 10@zoom1 turns to 20@zoom2 and 5@zoom0. A zoomIncrementFactor of 0 effectively equals the bandwidth number, ignoring the provided zoom level.
     * A zoomIncrementFactor of 0.5 mean a bandwidth increase of 50% compared to a factor of 1. So a bandwidth of 10@zoom1 computes to 15@zoom2.
     */
-  @js.native
   trait BandwidthStop extends StObject {
     
-    var value: Double = js.native
+    var value: Double
     
-    var zoom: Double = js.native
+    var zoom: Double
     
-    var zoomIncrementFactor: js.UndefOr[Double] = js.native
+    var zoomIncrementFactor: js.UndefOr[Double] = js.undefined
   }
   object BandwidthStop {
     
@@ -126,20 +136,19 @@ object HeatmapLayer {
     * To collect the rows for a tile including buffer, the rows must be translated to HeatmapLayer.TilePoint. This translation must be specified with the rowToTilePoint callback.
     * Other options define the blending options for the heat map.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * Specifies which type of aggregation was applied (eg. type of aggregation function for bucket in the Data Lens query).
       * Possible values are SUM or AVERAGE. If the aggregation type is AVERAGE , then an averaged heat map is rendered.
       */
-    var aggregation: js.UndefOr[Aggregation] = js.native
+    var aggregation: js.UndefOr[Aggregation] = js.undefined
     
     /**
       * Defines the alpha mask value as a function of the normalized count.
       * You can use D3.js library scale functions with the domain [0, 1] and the range [0, 1].
       */
-    var alphaScale: js.UndefOr[js.Function1[/* scale */ Double, Double]] = js.native
+    var alphaScale: js.UndefOr[js.Function1[/* scale */ Double, Double]] = js.undefined
     
     /**
       * Describes the bandwidth behavior in relation to current zoom level A numeric value sets it static across all levels
@@ -148,19 +157,19 @@ object HeatmapLayer {
       * Alternatively defines the level of smoothing as a function of the zoom level. The callback must return a value in pixels.
       * The cut-off of the Gaussian kernel is defined as 3 * bandwidth , a multiple (default 3) of bandwidth.
       */
-    var bandwidth: js.UndefOr[Bandwidth | BandwidthStop | js.Array[BandwidthStop] | BandwidthCallback] = js.native
+    var bandwidth: js.UndefOr[Bandwidth | BandwidthStop | js.Array[BandwidthStop] | BandwidthCallback] = js.undefined
     
     /**
       * Defines a color palette as a function of the normalized value.
       * You can use D3.js library scale functions with the domain [0, 1].
       */
-    var colorScale: js.UndefOr[js.Function1[/* scale */ Double, String]] = js.native
+    var colorScale: js.UndefOr[js.Function1[/* scale */ Double, String]] = js.undefined
     
     /**
       * Defines the range for the density alpha mask as a function of the zoom level.
       * When defined, the density alpha mask is applied. The returned value must be an array of 2 numbers.
       */
-    var countRange: js.UndefOr[js.Function1[/* zoom */ Zoom, js.Array[Double]]] = js.native
+    var countRange: js.UndefOr[js.Function1[/* zoom */ Zoom, js.Array[Double]]] = js.undefined
     
     /** Defines how the input tile data is split by rows. You can specify this callback to define client-side aggregation and filtering. This callback is called for each tile. */
     var dataToRows: js.UndefOr[
@@ -171,23 +180,23 @@ object HeatmapLayer {
           /* zoom */ Zoom, 
           js.Array[Row]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Defines the scale (eg logarithmic scale) of the TilePoint value.
       * Note: if the value is not in a linear scale, then the aggregation in the source query must be defined with respect to the scale type.
       * For example, before applying the average aggregation function in a query, the value must be transformed to the linear scale. This guarantees correct linear averaging of values.
       */
-    var inputScale: js.UndefOr[InputScale] = js.native
+    var inputScale: js.UndefOr[InputScale] = js.undefined
     
     /** Defines how the row is translated to the HeatmapLayer.TilePoint. This callback is called for each row that is returned from dataToRows. */
-    def rowToTilePoint(row: Row, x: X, y: Y): TilePoint = js.native
+    def rowToTilePoint(row: Row, x: X, y: Y): TilePoint
     
     /**
       * Defines the range for the color scale as a function of the zoom level.
       * The returned value must be an array of 2 numbers.
       */
-    var valueRange: js.UndefOr[js.Function1[/* zoom */ Zoom, js.Array[Double]]] = js.native
+    var valueRange: js.UndefOr[js.Function1[/* zoom */ Zoom, js.Array[Double]]] = js.undefined
   }
   object Options {
     
@@ -266,14 +275,13 @@ object HeatmapLayer {
     * Each row is transformed into TilePoint and then rendered on a heat map. By default each row is an Object where property names correspond to data column names.
     * This representation can be changed with the dataToRows callback.
     */
-  @js.native
   trait Row extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var tx: js.UndefOr[Double] = js.native
+    var tx: js.UndefOr[Double] = js.undefined
     
-    var ty: js.UndefOr[Double] = js.native
+    var ty: js.UndefOr[Double] = js.undefined
   }
   object Row {
     
@@ -310,23 +318,22 @@ object HeatmapLayer {
     * Defines the input data format for heat map rendering.
     * For heat map rendering, each row of data must be represented as a point within the map tile.
     */
-  @js.native
   trait TilePoint extends StObject {
     
     /** Number of contributors to the value at the point (eg number of rows in a bucket) */
-    var count: Double = js.native
+    var count: Double
     
     /** Reference to source data row */
-    var data: js.UndefOr[Row] = js.native
+    var data: js.UndefOr[Row] = js.undefined
     
     /** Value at the point (eg aggregated bucket value) */
-    var value: Double = js.native
+    var value: Double
     
     /** Row relative to tile */
-    var x: Double = js.native
+    var x: Double
     
     /** Column relative to tile */
-    var y: Double = js.native
+    var y: Double
   }
   object TilePoint {
     

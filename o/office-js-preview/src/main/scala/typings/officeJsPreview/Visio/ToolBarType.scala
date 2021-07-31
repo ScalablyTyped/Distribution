@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,9 @@ object ToolBarType extends StObject {
     *
     */
   @js.native
-  sealed trait commandBar extends ToolBarType
+  sealed trait commandBar
+    extends StObject
+       with ToolBarType
   
   /**
     *
@@ -31,7 +32,9 @@ object ToolBarType extends StObject {
     *
     */
   @js.native
-  sealed trait pageNavigationBar extends ToolBarType
+  sealed trait pageNavigationBar
+    extends StObject
+       with ToolBarType
   
   /**
     *
@@ -39,5 +42,7 @@ object ToolBarType extends StObject {
     *
     */
   @js.native
-  sealed trait statusBar extends ToolBarType
+  sealed trait statusBar
+    extends StObject
+       with ToolBarType
 }

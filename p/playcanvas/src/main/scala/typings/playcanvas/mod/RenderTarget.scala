@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.AutoResolve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,6 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "RenderTarget")
 @js.native
 class RenderTarget protected ()
-  extends typings.playcanvas.pc.RenderTarget {
+  extends StObject
+     with typings.playcanvas.pc.RenderTarget {
   def this(options: AutoResolve) = this()
 }

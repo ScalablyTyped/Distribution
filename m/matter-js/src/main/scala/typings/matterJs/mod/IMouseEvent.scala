@@ -5,14 +5,14 @@ import typings.matterJs.matterJsStrings.mousemove
 import typings.matterJs.matterJsStrings.mouseup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMouseEvent[T] extends IEvent[T] {
+trait IMouseEvent[T]
+  extends StObject
+     with IEvent[T] {
   
   @JSName("name")
-  var name_IMouseEvent: mousedown | mousemove | mouseup = js.native
+  var name_IMouseEvent: mousedown | mousemove | mouseup
 }
 object IMouseEvent {
   
@@ -23,7 +23,7 @@ object IMouseEvent {
   }
   
   @scala.inline
-  implicit class IMouseEventMutableBuilder[Self <: IMouseEvent[_], T] (val x: Self with IMouseEvent[T]) extends AnyVal {
+  implicit class IMouseEventMutableBuilder[Self <: IMouseEvent[?], T] (val x: Self & IMouseEvent[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: mousedown | mousemove | mouseup): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XFormattedString extends XInterface {
+trait XFormattedString
+  extends StObject
+     with XInterface {
   
-  var String: java.lang.String = js.native
+  var String: java.lang.String
   
-  def getString(): String = js.native
+  def getString(): String
   
-  def setString(String: String): Unit = js.native
+  def setString(String: String): Unit
 }
 object XFormattedString {
   

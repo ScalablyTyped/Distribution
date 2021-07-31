@@ -2,17 +2,15 @@ package typings.smartFoxServer.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
   /**
     * Sets the current logging level.
     * @param {number} level The minimum logging level.
     */
-  def setLevel(level: Double): Unit = js.native
+  def setLevel(level: Double): Unit
 }
 object Logger {
   

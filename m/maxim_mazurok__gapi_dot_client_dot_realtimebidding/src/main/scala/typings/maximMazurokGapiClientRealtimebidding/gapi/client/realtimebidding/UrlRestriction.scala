@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlRestriction extends StObject {
   
   /** End date (if specified) of the URL restriction. End date should be later than the start date for the date range to be valid. */
-  var endDate: js.UndefOr[Date] = js.native
+  var endDate: js.UndefOr[Date] = js.undefined
   
   /** The restriction type for the specified URL. */
-  var restrictionType: js.UndefOr[String] = js.native
+  var restrictionType: js.UndefOr[String] = js.undefined
   
   /** Start date (if specified) of the URL restriction. */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
   
   /** Required. The URL to use for applying the restriction on the user list. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object UrlRestriction {
   

@@ -7,7 +7,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formGroupMod {
@@ -35,49 +34,49 @@ object formGroupMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IFormGroupProps
-    extends IIntentProps
+    extends StObject
+       with IIntentProps
        with IProps {
     
     /**
       * A space-delimited list of class names to pass along to the
       * `Classes.FORM_CONTENT` element that contains `children`.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Whether form group should appear as non-interactive.
       * Remember that `input` elements must be disabled separately.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional helper text. The given content will be wrapped in
       * `Classes.FORM_HELPER_TEXT` and displayed beneath `children`.
       * Helper text color is determined by the `intent`.
       */
-    var helperText: js.UndefOr[ReactNode] = js.native
+    var helperText: js.UndefOr[ReactNode] = js.undefined
     
     /** Whether to render the label and children on a single line. */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /** Label of this form group. */
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * `id` attribute of the labelable form element that this `FormGroup` controls,
       * used as `<label for>` attribute.
       */
-    var labelFor: js.UndefOr[String] = js.native
+    var labelFor: js.UndefOr[String] = js.undefined
     
     /**
       * Optional secondary text that appears after the label.
       */
-    var labelInfo: js.UndefOr[ReactNode] = js.native
+    var labelInfo: js.UndefOr[ReactNode] = js.undefined
     
     /** CSS properties to apply to the root element. */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IFormGroupProps {
     

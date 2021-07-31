@@ -2,7 +2,6 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,16 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Specification](https://tc39.es/ecma402/#table-relativetimeformat-resolvedoptions-properties)
   */
-@js.native
 trait ResolvedRelativeTimeFormatOptions extends StObject {
   
-  var locale: BCP47LanguageTag = js.native
+  var locale: BCP47LanguageTag
   
-  var numberingSystem: String = js.native
+  var numberingSystem: String
   
-  var numeric: RelativeTimeFormatNumeric = js.native
+  var numeric: RelativeTimeFormatNumeric
   
-  var style: RelativeTimeFormatStyle = js.native
+  var style: RelativeTimeFormatStyle
 }
 object ResolvedRelativeTimeFormatOptions {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientsUpdateSummary extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RecipientsUpdateSummary extends StObject {
     js.Array[
       /* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object RecipientsUpdateSummary {
   

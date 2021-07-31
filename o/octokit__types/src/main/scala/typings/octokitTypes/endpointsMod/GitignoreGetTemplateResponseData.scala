@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitignoreGetTemplateResponseData extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var source: String = js.native
+  var source: String
 }
 object GitignoreGetTemplateResponseData {
   

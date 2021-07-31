@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalGatewayRouteTable extends StObject {
   
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the local gateway route table.
     */
-  var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.native
+  var LocalGatewayRouteTableArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The ID of the local gateway route table.
     */
-  var LocalGatewayRouteTableId: js.UndefOr[String] = js.native
+  var LocalGatewayRouteTableId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID that owns the local gateway route table.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the local gateway route table.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * The tags assigned to the local gateway route table.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object LocalGatewayRouteTable {
   

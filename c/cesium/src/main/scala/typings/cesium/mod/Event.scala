@@ -3,12 +3,11 @@ package typings.cesium.mod
 import typings.cesium.mod.Event.RemoveCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Event")
 @js.native
-class Event[T /* <: js.Array[_] */] () extends StObject {
+class Event[T /* <: js.Array[js.Any] */] () extends StObject {
   
   def addEventListener(listener: js.Function1[/* args */ T, Unit]): RemoveCallback = js.native
   def addEventListener(listener: js.Function1[/* args */ T, Unit], scope: js.Any): RemoveCallback = js.native

@@ -2,7 +2,6 @@ package typings.koPlus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -47,17 +46,16 @@ object KoPlus {
     def `then`(resolve: js.Function, reject: js.Function): Command = js.native
   }
   
-  @js.native
   trait CommandOptions extends StObject {
     
     // [required] sets the command action method
-    var action: js.Function = js.native
+    var action: js.Function
     
     // [optional] function to determine if command can be executed
-    var canExecute: js.UndefOr[js.Function0[Boolean]] = js.native
+    var canExecute: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     // [optional] context to use in the command
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
   }
   object CommandOptions {
     
@@ -88,8 +86,9 @@ object KoPlus {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> * / any */ @js.native
-  trait Editable[T] extends EditableFunctions
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<T> * / any */ trait Editable[T]
+    extends StObject
+       with EditableFunctions
   object Editable {
     
     @scala.inline
@@ -105,9 +104,9 @@ object KoPlus {
     }
   }
   
-  @js.native
   trait EditableArray[T]
-    extends KnockoutObservableArray[T]
+    extends StObject
+       with KnockoutObservableArray[T]
        with EditableFunctions
   object EditableArray {
     
@@ -137,18 +136,17 @@ object KoPlus {
     def makeEditable(target: js.Any): Unit = js.native
   }
   
-  @js.native
   trait EditableFunctions extends StObject {
     
-    def beginEdit(): Unit = js.native
+    def beginEdit(): Unit
     
-    def cancelEdit(): Unit = js.native
+    def cancelEdit(): Unit
     
-    def endEdit(): Unit = js.native
+    def endEdit(): Unit
     
-    var isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+    var isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     
-    def rollback(): Unit = js.native
+    def rollback(): Unit
   }
   object EditableFunctions {
     

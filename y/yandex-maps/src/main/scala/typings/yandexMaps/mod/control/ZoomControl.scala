@@ -2,21 +2,26 @@ package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.mod.IChild
 import typings.yandexMaps.mod.IControlParent
+import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IOptionManager
 import typings.yandexMaps.mod.Map_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
 - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "control.ZoomControl")
 @js.native
-class ZoomControl () extends IChild[IControlParent] {
+class ZoomControl ()
+  extends StObject
+     with IChild[IControlParent] {
   def this(parameters: IZoomControlParameters) = this()
   
   def clear(): Unit = js.native
+  
+  /* CompleteClass */
+  var events: IEventManager[js.Object] = js.native
   
   def getMap(): Map_ = js.native
   

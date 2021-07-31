@@ -3,31 +3,31 @@ package typings.spotifyApi.SpotifyApi
 import typings.spotifyApi.spotifyApiStrings.playlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base Playlist Object. Does not in itself exist in Spotify Web Api,
   * but needs to be made since the tracks types vary in the Full and Simplified versions.
   */
-@js.native
-trait PlaylistBaseObject extends ContextObject {
+trait PlaylistBaseObject
+  extends StObject
+     with ContextObject {
   
   /**
     * Returns `true` if context is not search and the owner allows other users to modify the playlist.
     * Otherwise returns `false`.
     */
-  var collaborative: Boolean = js.native
+  var collaborative: Boolean
   
   /**
     * The playlist description. Only returned for modified, verified playlists, otherwise null.
     */
-  var description: String | Null = js.native
+  var description: String | Null
   
   /**
     * The [Spotify ID](https://developer.spotify.com/documentation/web-api/#spotify-uris-and-ids) for the playlist.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Images for the playlist. The array may be empty or contain up to three images.
@@ -35,17 +35,17 @@ trait PlaylistBaseObject extends ContextObject {
     * See [Working with Playlists](https://developer.spotify.com/documentation/general/guides/working-with-playlists/).
     * Note: If returned, the source URL for the image (`url`) is temporary and will expire in less than a day.
     */
-  var images: js.Array[ImageObject] = js.native
+  var images: js.Array[ImageObject]
   
   /**
     * The name of the playlist.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The user who owns the playlist.
     */
-  var owner: UserObjectPublic = js.native
+  var owner: UserObjectPublic
   
   /**
     * The playlist’s public/private status:
@@ -53,16 +53,16 @@ trait PlaylistBaseObject extends ContextObject {
     * `false` the playlist is private,
     * or `null` the playlist status is not relevant.
     */
-  var public: Boolean | Null = js.native
+  var public: Boolean | Null
   
   /**
     * The version identifier for the current playlist. Can be supplied in other requests to target a specific playlist version:
     * see [Remove tracks from a playlist](https://developer.spotify.com/documentation/web-api/reference/playlists/remove-tracks-playlist/).
     */
-  var snapshot_id: String = js.native
+  var snapshot_id: String
   
   @JSName("type")
-  var type_PlaylistBaseObject: playlist = js.native
+  var type_PlaylistBaseObject: playlist
 }
 object PlaylistBaseObject {
   
@@ -76,11 +76,10 @@ object PlaylistBaseObject {
     name: String,
     owner: UserObjectPublic,
     snapshot_id: String,
-    `type`: playlist,
     uri: String
   ): PlaylistBaseObject = {
-    val __obj = js.Dynamic.literal(collaborative = collaborative.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], snapshot_id = snapshot_id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collaborative = collaborative.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], snapshot_id = snapshot_id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], description = null, public = null)
+    __obj.updateDynamic("type")("playlist")
     __obj.asInstanceOf[PlaylistBaseObject]
   }
   

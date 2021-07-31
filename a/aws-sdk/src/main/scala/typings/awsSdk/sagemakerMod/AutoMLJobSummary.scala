@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLJobSummary extends StObject {
   
   /**
     * The ARN of the job.
     */
-  var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn = js.native
+  var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn
   
   /**
     * The name of the object you are requesting.
     */
-  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName = js.native
+  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
   /**
     * The job's secondary status.
     */
-  var AutoMLJobSecondaryStatus: typings.awsSdk.sagemakerMod.AutoMLJobSecondaryStatus = js.native
+  var AutoMLJobSecondaryStatus: typings.awsSdk.sagemakerMod.AutoMLJobSecondaryStatus
   
   /**
     * The job's status.
     */
-  var AutoMLJobStatus: typings.awsSdk.sagemakerMod.AutoMLJobStatus = js.native
+  var AutoMLJobStatus: typings.awsSdk.sagemakerMod.AutoMLJobStatus
   
   /**
     * When the job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The end time of an AutoML job.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The failure reason of a job.
     */
-  var FailureReason: js.UndefOr[AutoMLFailureReason] = js.native
+  var FailureReason: js.UndefOr[AutoMLFailureReason] = js.undefined
   
   /**
     * When the job was last modified.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
 }
 object AutoMLJobSummary {
   

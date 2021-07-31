@@ -2,23 +2,21 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SageMakerMachineLearningModelResourceData extends StObject {
   
   /**
     * The absolute local path of the resource inside the Lambda environment.
     */
-  var DestinationPath: js.UndefOr[string] = js.native
+  var DestinationPath: js.UndefOr[string] = js.undefined
   
-  var OwnerSetting: js.UndefOr[ResourceDownloadOwnerSetting] = js.native
+  var OwnerSetting: js.UndefOr[ResourceDownloadOwnerSetting] = js.undefined
   
   /**
     * The ARN of the Amazon SageMaker training job that represents the source model.
     */
-  var SageMakerJobArn: js.UndefOr[string] = js.native
+  var SageMakerJobArn: js.UndefOr[string] = js.undefined
 }
 object SageMakerMachineLearningModelResourceData {
   

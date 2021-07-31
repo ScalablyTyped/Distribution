@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This service does not represent the chart document model itself, but the object in the table that contains this chart document.
   */
-@js.native
 trait TableChart
-  extends XTableChart
+  extends StObject
+     with XTableChart
      with XEmbeddedObjectSupplier
      with XNamed
 object TableChart {

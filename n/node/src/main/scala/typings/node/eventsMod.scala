@@ -4,7 +4,6 @@ import typings.node.anon.Once
 import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
@@ -16,7 +15,8 @@ object eventsMod {
   @JSImport("events", "EventEmitter")
   @js.native
   class EventEmitter ()
-    extends typings.node.eventsMod.global.NodeJS.EventEmitter {
+    extends StObject
+       with typings.node.eventsMod.global.NodeJS.EventEmitter {
     def this(options: EventEmitterOptions) = this()
   }
   object EventEmitter {
@@ -48,12 +48,10 @@ object eventsMod {
     
     /** @deprecated since v4.0.0 */
     /* static member */
-    @JSImport("events", "EventEmitter.listenerCount")
-    @js.native
-    def listenerCount(emitter: EventEmitter, event: java.lang.String): Double = js.native
-    @JSImport("events", "EventEmitter.listenerCount")
-    @js.native
-    def listenerCount(emitter: EventEmitter, event: js.Symbol): Double = js.native
+    @scala.inline
+    def listenerCount(emitter: EventEmitter, event: java.lang.String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def listenerCount(emitter: EventEmitter, event: js.Symbol): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("events", "captureRejectionSymbol")
@@ -82,19 +80,15 @@ object eventsMod {
   @js.native
   val errorMonitor: js.Symbol = js.native
   
-  @JSImport("events", "on")
-  @js.native
-  def on(emitter: EventEmitter, event: java.lang.String): AsyncIterableIterator[_] = js.native
+  @scala.inline
+  def on(emitter: EventEmitter, event: java.lang.String): AsyncIterableIterator[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[js.Any]]
   
-  @JSImport("events", "once")
-  @js.native
-  def once(emitter: DOMEventTarget, event: java.lang.String): js.Promise[js.Array[_]] = js.native
-  @JSImport("events", "once")
-  @js.native
-  def once(emitter: NodeEventTarget, event: java.lang.String): js.Promise[js.Array[_]] = js.native
-  @JSImport("events", "once")
-  @js.native
-  def once(emitter: NodeEventTarget, event: js.Symbol): js.Promise[js.Array[_]] = js.native
+  @scala.inline
+  def once(emitter: DOMEventTarget, event: java.lang.String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def once(emitter: NodeEventTarget, event: java.lang.String): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  @scala.inline
+  def once(emitter: NodeEventTarget, event: js.Symbol): js.Promise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   @js.native
   trait DOMEventTarget extends StObject {
@@ -103,13 +97,12 @@ object eventsMod {
     def addEventListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, Unit], opts: Once): js.Any = js.native
   }
   
-  @js.native
   trait EventEmitterOptions extends StObject {
     
     /**
       * Enables automatic capturing of promise rejection.
       */
-    var captureRejections: js.UndefOr[Boolean] = js.native
+    var captureRejections: js.UndefOr[Boolean] = js.undefined
   }
   object EventEmitterOptions {
     

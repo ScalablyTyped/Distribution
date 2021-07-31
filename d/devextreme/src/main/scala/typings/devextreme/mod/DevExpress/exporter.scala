@@ -7,43 +7,41 @@ import typings.devextreme.devextremeStrings.singleAccounting
 import typings.devextreme.devextremeStrings.single_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exporter {
   
-  @js.native
   trait ExcelFont extends StObject {
     
     /**
       * [descr:ExcelFont.bold]
       */
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExcelFont.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExcelFont.italic]
       */
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:ExcelFont.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ExcelFont.size]
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:ExcelFont.underline]
       */
-    var underline: js.UndefOr[double | doubleAccounting | none | single_ | singleAccounting] = js.native
+    var underline: js.UndefOr[double | doubleAccounting | none | single_ | singleAccounting] = js.undefined
   }
   object ExcelFont {
     

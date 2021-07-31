@@ -5,10 +5,13 @@ import typings.debug.mod.Debugger
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMod {
+  
+  @JSImport("builder-util/out/log", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("builder-util/out/log", "Logger")
   @js.native
@@ -56,30 +59,30 @@ object logMod {
   /* static members */
   object Logger {
     
-    @JSImport("builder-util/out/log", "Logger.createMessage")
+    @JSImport("builder-util/out/log", "Logger")
     @js.native
-    def createMessage(message: String, fields: Null, level: LogLevel, color: js.Function1[/* it */ String, String]): String = js.native
-    @JSImport("builder-util/out/log", "Logger.createMessage")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createMessage(message: String, fields: Null, level: LogLevel, color: js.Function1[/* it */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def createMessage(
       message: String,
       fields: Null,
       level: LogLevel,
       color: js.Function1[/* it */ String, String],
       messagePadding: Double
-    ): String = js.native
-    @JSImport("builder-util/out/log", "Logger.createMessage")
-    @js.native
-    def createMessage(message: String, fields: Fields, level: LogLevel, color: js.Function1[/* it */ String, String]): String = js.native
-    @JSImport("builder-util/out/log", "Logger.createMessage")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any], messagePadding.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def createMessage(message: String, fields: Fields, level: LogLevel, color: js.Function1[/* it */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def createMessage(
       message: String,
       fields: Fields,
       level: LogLevel,
       color: js.Function1[/* it */ String, String],
       messagePadding: Double
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMessage")(message.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], level.asInstanceOf[js.Any], color.asInstanceOf[js.Any], messagePadding.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("builder-util/out/log", "PADDING")
@@ -94,12 +97,10 @@ object logMod {
   @js.native
   val log: Logger = js.native
   
-  @JSImport("builder-util/out/log", "setPrinter")
-  @js.native
-  def setPrinter(): Unit = js.native
-  @JSImport("builder-util/out/log", "setPrinter")
-  @js.native
-  def setPrinter(value: js.Function1[/* message */ String, Unit]): Unit = js.native
+  @scala.inline
+  def setPrinter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")().asInstanceOf[Unit]
+  @scala.inline
+  def setPrinter(value: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrinter")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Fields = StringDictionary[js.Any]
   

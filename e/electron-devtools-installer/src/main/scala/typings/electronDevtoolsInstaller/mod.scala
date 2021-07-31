@@ -2,29 +2,26 @@ package typings.electronDevtoolsInstaller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-devtools-installer", JSImport.Default)
+  @JSImport("electron-devtools-installer", JSImport.Namespace)
   @js.native
-  def default(extensionReference: String): js.Promise[String] = js.native
-  @JSImport("electron-devtools-installer", JSImport.Default)
-  @js.native
-  def default(extensionReference: String, forceDownload: Boolean): js.Promise[String] = js.native
-  @JSImport("electron-devtools-installer", JSImport.Default)
-  @js.native
-  def default(extensionReference: js.Array[ExtensionReference | String]): js.Promise[String] = js.native
-  @JSImport("electron-devtools-installer", JSImport.Default)
-  @js.native
-  def default(extensionReference: js.Array[ExtensionReference | String], forceDownload: Boolean): js.Promise[String] = js.native
-  @JSImport("electron-devtools-installer", JSImport.Default)
-  @js.native
-  def default(extensionReference: ExtensionReference): js.Promise[String] = js.native
-  @JSImport("electron-devtools-installer", JSImport.Default)
-  @js.native
-  def default(extensionReference: ExtensionReference, forceDownload: Boolean): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(extensionReference: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(extensionReference: String, forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(extensionReference: js.Array[ExtensionReference | String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(extensionReference: js.Array[ExtensionReference | String], forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(extensionReference: ExtensionReference): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def default(extensionReference: ExtensionReference, forceDownload: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(extensionReference.asInstanceOf[js.Any], forceDownload.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("electron-devtools-installer", "ANGULARJS_BATARANG")
   @js.native
@@ -70,12 +67,11 @@ object mod {
   @js.native
   val VUEJS_DEVTOOLS: ExtensionReference = js.native
   
-  @js.native
   trait ExtensionReference extends StObject {
     
-    var electron: String = js.native
+    var electron: String
     
-    var id: String = js.native
+    var id: String
   }
   object ExtensionReference {
     

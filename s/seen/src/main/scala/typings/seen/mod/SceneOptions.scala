@@ -2,25 +2,23 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var camera: js.UndefOr[Camera] = js.native
+  var camera: js.UndefOr[Camera] = js.undefined
   
-  var cullBackfaces: js.UndefOr[Boolean] = js.native
+  var cullBackfaces: js.UndefOr[Boolean] = js.undefined
   
-  var fractionalPoints: js.UndefOr[Boolean] = js.native
+  var fractionalPoints: js.UndefOr[Boolean] = js.undefined
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
   
-  var shader: js.UndefOr[Shader] = js.native
+  var shader: js.UndefOr[Shader] = js.undefined
   
-  var viewport: js.UndefOr[Viewport] = js.native
+  var viewport: js.UndefOr[Viewport] = js.undefined
 }
 object SceneOptions {
   

@@ -2,31 +2,29 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTemplateSelectorItem extends StObject {
   
-  def GetClassID(): Double = js.native
+  def GetClassID(): Double
   
-  def GetClassName(): String = js.native
+  def GetClassName(): String
   
-  def GetGroupID(): Double = js.native
+  def GetGroupID(): Double
   
-  def GetGroupName(): String = js.native
+  def GetGroupName(): String
   
-  def GetID(): String = js.native
+  def GetID(): String
   
-  def GetIconURL(): String = js.native
+  def GetIconURL(): String
   
-  def GetName(): String = js.native
+  def GetName(): String
   
-  def GetTemplateID(): Double = js.native
+  def GetTemplateID(): Double
   
-  def IsBlankItem(): Boolean = js.native
+  def IsBlankItem(): Boolean
   
-  def IsDefaultTemplateForClass(): Boolean = js.native
+  def IsDefaultTemplateForClass(): Boolean
 }
 object IObjectTemplateSelectorItem {
   

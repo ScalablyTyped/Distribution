@@ -2,77 +2,75 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateOriginEndpointResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) assigned to the OriginEndpoint.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
-  var Authorization: js.UndefOr[typings.awsSdk.mediapackageMod.Authorization] = js.native
+  var Authorization: js.UndefOr[typings.awsSdk.mediapackageMod.Authorization] = js.undefined
   
   /**
     * The ID of the Channel the OriginEndpoint is associated with.
     */
-  var ChannelId: js.UndefOr[string] = js.native
+  var ChannelId: js.UndefOr[string] = js.undefined
   
-  var CmafPackage: js.UndefOr[typings.awsSdk.mediapackageMod.CmafPackage] = js.native
+  var CmafPackage: js.UndefOr[typings.awsSdk.mediapackageMod.CmafPackage] = js.undefined
   
-  var DashPackage: js.UndefOr[typings.awsSdk.mediapackageMod.DashPackage] = js.native
+  var DashPackage: js.UndefOr[typings.awsSdk.mediapackageMod.DashPackage] = js.undefined
   
   /**
     * A short text description of the OriginEndpoint.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
-  var HlsPackage: js.UndefOr[typings.awsSdk.mediapackageMod.HlsPackage] = js.native
+  var HlsPackage: js.UndefOr[typings.awsSdk.mediapackageMod.HlsPackage] = js.undefined
   
   /**
     * The ID of the OriginEndpoint.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * A short string appended to the end of the OriginEndpoint URL.
     */
-  var ManifestName: js.UndefOr[string] = js.native
+  var ManifestName: js.UndefOr[string] = js.undefined
   
-  var MssPackage: js.UndefOr[typings.awsSdk.mediapackageMod.MssPackage] = js.native
+  var MssPackage: js.UndefOr[typings.awsSdk.mediapackageMod.MssPackage] = js.undefined
   
   /**
     * Control whether origination of video is allowed for this OriginEndpoint. If set to ALLOW, the OriginEndpoint
   may by requested, pursuant to any other form of access control. If set to DENY, the OriginEndpoint may not be
   requested. This can be helpful for Live to VOD harvesting, or for temporarily disabling origination
     */
-  var Origination: js.UndefOr[typings.awsSdk.mediapackageMod.Origination] = js.native
+  var Origination: js.UndefOr[typings.awsSdk.mediapackageMod.Origination] = js.undefined
   
   /**
     * Maximum duration (seconds) of content to retain for startover playback.
   If not specified, startover playback will be disabled for the OriginEndpoint.
     */
-  var StartoverWindowSeconds: js.UndefOr[integer] = js.native
+  var StartoverWindowSeconds: js.UndefOr[integer] = js.undefined
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackageMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackageMod.Tags] = js.undefined
   
   /**
     * Amount of delay (seconds) to enforce on the playback of live content.
   If not specified, there will be no time delay in effect for the OriginEndpoint.
     */
-  var TimeDelaySeconds: js.UndefOr[integer] = js.native
+  var TimeDelaySeconds: js.UndefOr[integer] = js.undefined
   
   /**
     * The URL of the packaged OriginEndpoint for consumption.
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
   
   /**
     * A list of source IP CIDR blocks that will be allowed to access the OriginEndpoint.
     */
-  var Whitelist: js.UndefOr[listOfString] = js.native
+  var Whitelist: js.UndefOr[listOfString] = js.undefined
 }
 object UpdateOriginEndpointResponse {
   

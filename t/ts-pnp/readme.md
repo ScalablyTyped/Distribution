@@ -10,9 +10,9 @@ plug'n'play resolver for TypeScript
 | ------------------ | :-------------: |
 | Full name          | ts-pnp |
 | Keywords           | typescript, yarn, plugnplay, pnp |
-| # releases         | 12 |
-| # dependents       | 985 |
-| # downloads        | 179983462 |
+| # releases         | 10 |
+| # dependents       | 1152 |
+| # downloads        | 262367973 |
 | # stars            | 0 |
 
 ## Links

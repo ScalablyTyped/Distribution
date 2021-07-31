@@ -2,17 +2,15 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentLink extends StObject {
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var linkToDestination: js.UndefOr[String] = js.native
+  var linkToDestination: js.UndefOr[String] = js.undefined
   
-  var linkToPage: js.UndefOr[Double] = js.native
+  var linkToPage: js.UndefOr[Double] = js.undefined
 }
 object ContentLink {
   

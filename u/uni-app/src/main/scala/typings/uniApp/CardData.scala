@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardData extends StObject {
   
   /**
     * 用户领取到卡券的扩展参数，与调用时传入的参数相同
     */
-  var cardExt: js.UndefOr[String] = js.native
+  var cardExt: js.UndefOr[String] = js.undefined
   
   /**
     * 用户领取到卡券的id
     */
-  var cardId: js.UndefOr[String] = js.native
+  var cardId: js.UndefOr[String] = js.undefined
   
   /**
     * 加密 code，为用户领取到卡券的code加密后的字符串
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * 是否成功
     */
-  var isSuccess: js.UndefOr[Boolean] = js.native
+  var isSuccess: js.UndefOr[Boolean] = js.undefined
 }
 object CardData {
   

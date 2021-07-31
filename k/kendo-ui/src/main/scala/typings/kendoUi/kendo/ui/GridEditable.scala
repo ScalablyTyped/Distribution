@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridEditable extends StObject {
   
-  var cancelDelete: js.UndefOr[String] = js.native
+  var cancelDelete: js.UndefOr[String] = js.undefined
   
-  var confirmDelete: js.UndefOr[String] = js.native
+  var confirmDelete: js.UndefOr[String] = js.undefined
   
-  var confirmation: js.UndefOr[Boolean | String | js.Function] = js.native
+  var confirmation: js.UndefOr[Boolean | String | js.Function] = js.undefined
   
-  var createAt: js.UndefOr[String] = js.native
+  var createAt: js.UndefOr[String] = js.undefined
   
-  var destroy: js.UndefOr[Boolean] = js.native
+  var destroy: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.native
+  var window: js.UndefOr[js.Any] = js.undefined
 }
 object GridEditable {
   

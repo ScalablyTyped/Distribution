@@ -2,24 +2,22 @@ package typings.nodeSpriteGenerator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {  x :number,   y :number} & node-sprite-generator.node-sprite-generator.Image */
-  @js.native
   trait xnumberynumberImage extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object xnumberynumberImage {
     

@@ -1,6 +1,5 @@
 package typings.reduxPromiseMiddleware
 
-import org.scalablytyped.runtime.Shortcut
 import typings.redux.mod.Action
 import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
@@ -11,10 +10,13 @@ import typings.reduxPromiseMiddleware.mod.ActionType.Pending
 import typings.reduxPromiseMiddleware.mod.ActionType.Rejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("redux-promise-middleware", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("redux-promise-middleware", JSImport.Default)
   @js.native
@@ -27,33 +29,38 @@ object mod extends Shortcut {
   object ActionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ActionType with String] = js.native
+    def apply(value: String): js.UndefOr[ActionType & String] = js.native
     
     @js.native
-    sealed trait Fulfilled extends ActionType
-    /* "FULFILLED" */ val Fulfilled: typings.reduxPromiseMiddleware.mod.ActionType.Fulfilled with String = js.native
+    sealed trait Fulfilled
+      extends StObject
+         with ActionType
+    /* "FULFILLED" */ val Fulfilled: typings.reduxPromiseMiddleware.mod.ActionType.Fulfilled & String = js.native
     
     @js.native
-    sealed trait Pending extends ActionType
-    /* "PENDING" */ val Pending: typings.reduxPromiseMiddleware.mod.ActionType.Pending with String = js.native
+    sealed trait Pending
+      extends StObject
+         with ActionType
+    /* "PENDING" */ val Pending: typings.reduxPromiseMiddleware.mod.ActionType.Pending & String = js.native
     
     @js.native
-    sealed trait Rejected extends ActionType
-    /* "REJECTED" */ val Rejected: typings.reduxPromiseMiddleware.mod.ActionType.Rejected with String = js.native
+    sealed trait Rejected
+      extends StObject
+         with ActionType
+    /* "REJECTED" */ val Rejected: typings.reduxPromiseMiddleware.mod.ActionType.Rejected & String = js.native
   }
   
-  @JSImport("redux-promise-middleware", "createPromise")
-  @js.native
-  def createPromise(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("redux-promise-middleware", "createPromise")
-  @js.native
-  def createPromise(config: Config): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  @scala.inline
+  def createPromise(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def createPromise(config: Config): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromise")(config.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
-  @js.native
-  trait AsyncAction extends FluxStandardAction {
+  trait AsyncAction
+    extends StObject
+       with FluxStandardAction {
     
     @JSName("payload")
-    var payload_AsyncAction: js.UndefOr[AsyncPayload] = js.native
+    var payload_AsyncAction: js.UndefOr[AsyncPayload] = js.undefined
   }
   object AsyncAction {
     
@@ -83,12 +90,11 @@ object mod extends Shortcut {
   
   type AsyncPayload = js.Promise[js.Any] | AsyncFunction | Data
   
-  @js.native
   trait Config extends StObject {
     
-    var promiseTypeDelimiter: js.UndefOr[String] = js.native
+    var promiseTypeDelimiter: js.UndefOr[String] = js.undefined
     
-    var promiseTypeSuffixes: js.UndefOr[js.Tuple3[PendingActionType, FulfilledActionType, RejectedActionType]] = js.native
+    var promiseTypeSuffixes: js.UndefOr[js.Tuple3[PendingActionType, FulfilledActionType, RejectedActionType]] = js.undefined
   }
   object Config {
     
@@ -115,15 +121,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FluxStandardAction
-    extends Action[js.Any] {
+    extends StObject
+       with Action[js.Any] {
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.native
+    var meta: js.UndefOr[js.Any] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
   }
   object FluxStandardAction {
     
@@ -163,9 +169,4 @@ object mod extends Shortcut {
   type PendingActionType = Pending | String
   
   type RejectedActionType = Rejected | String
-  
-  type _To = Middleware[js.Object, js.Any, Dispatch[AnyAction]]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: Middleware[js.Object, js.Any, Dispatch[AnyAction]] = default
 }

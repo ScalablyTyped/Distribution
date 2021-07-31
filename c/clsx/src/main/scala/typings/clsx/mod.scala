@@ -4,17 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("clsx", JSImport.Default)
+  @JSImport("clsx", JSImport.Namespace)
   @js.native
-  def default(classes: ClassValue*): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(classes: ClassValue*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
-  trait ClassArray extends Array[ClassValue]
+  trait ClassArray
+    extends StObject
+       with Array[ClassValue]
   
   type ClassDictionary = StringDictionary[js.Any]
   

@@ -3,21 +3,19 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to describe which atoms the user wants to know about.
   * @see com.sun.star.util.XAtomServer
   */
-@js.native
 trait AtomClassRequest extends StObject {
   
   /** the class of the atoms described in member {@link AtomClassRequest.atoms()} . */
-  var atomClass: Double = js.native
+  var atomClass: Double
   
   /** the atoms requested from class {@link AtomClassRequest.atomClass()} . */
-  var atoms: SafeArray[Double] = js.native
+  var atoms: SafeArray[Double]
 }
 object AtomClassRequest {
   

@@ -2,27 +2,25 @@ package typings.webAnimationsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputedTimingProperties extends StObject {
   
-  var activeDuration: Double = js.native
+  var activeDuration: Double
   
-  var currentIteration: Double | Null = js.native
+  var currentIteration: Double | Null
   
-  var endTime: Double = js.native
+  var endTime: Double
   
-  var localTime: Double | Null = js.native
+  var localTime: Double | Null
   
-  var progress: Double | Null = js.native
+  var progress: Double | Null
 }
 object ComputedTimingProperties {
   
   @scala.inline
   def apply(activeDuration: Double, endTime: Double): ComputedTimingProperties = {
-    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeDuration = activeDuration.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], currentIteration = null, localTime = null, progress = null)
     __obj.asInstanceOf[ComputedTimingProperties]
   }
   

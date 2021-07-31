@@ -19,88 +19,86 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps> */
-@js.native
 trait WeakValidationMapSubPopup extends StObject {
   
-  var activeKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var activeKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var builtinPlacements: js.UndefOr[Validator[js.UndefOr[BuiltinPlacements | Null]]] = js.native
+  var builtinPlacements: js.UndefOr[Validator[js.UndefOr[BuiltinPlacements | Null]]] = js.undefined
   
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var defaultActiveFirst: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var defaultActiveFirst: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var defaultOpenKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.native
+  var defaultOpenKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.undefined
   
-  var defaultSelectedKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.native
+  var defaultSelectedKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.undefined
   
-  var direction: js.UndefOr[Validator[js.UndefOr[ltr | rtl | Null]]] = js.native
+  var direction: js.UndefOr[Validator[js.UndefOr[ltr | rtl | Null]]] = js.undefined
   
-  var eventKey: js.UndefOr[Validator[js.UndefOr[typings.react.mod.Key | Null]]] = js.native
+  var eventKey: js.UndefOr[Validator[js.UndefOr[typings.react.mod.Key | Null]]] = js.undefined
   
-  var expandIcon: js.UndefOr[Validator[js.UndefOr[Null | RenderIconType]]] = js.native
+  var expandIcon: js.UndefOr[Validator[js.UndefOr[Null | RenderIconType]]] = js.undefined
   
-  var focusable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var focusable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var forceSubMenuRender: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var forceSubMenuRender: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var inlineIndent: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var inlineIndent: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var itemIcon: js.UndefOr[Validator[js.UndefOr[Null | RenderIconType]]] = js.native
+  var itemIcon: js.UndefOr[Validator[js.UndefOr[Null | RenderIconType]]] = js.undefined
   
-  var level: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var level: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var manualRef: js.UndefOr[Validator[js.UndefOr[LegacyFunctionRef | Null]]] = js.native
+  var manualRef: js.UndefOr[Validator[js.UndefOr[LegacyFunctionRef | Null]]] = js.undefined
   
-  var mode: js.UndefOr[Validator[js.UndefOr[MenuMode | Null]]] = js.native
+  var mode: js.UndefOr[Validator[js.UndefOr[MenuMode | Null]]] = js.undefined
   
-  var motion: js.UndefOr[Validator[js.UndefOr[CSSMotionProps | Null]]] = js.native
+  var motion: js.UndefOr[Validator[js.UndefOr[CSSMotionProps | Null]]] = js.undefined
   
-  var multiple: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var multiple: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var onClick: js.UndefOr[Validator[js.UndefOr[MenuClickEventHandler | Null]]] = js.native
+  var onClick: js.UndefOr[Validator[js.UndefOr[MenuClickEventHandler | Null]]] = js.undefined
   
-  var onDeselect: js.UndefOr[Validator[js.UndefOr[Null | SelectEventHandler]]] = js.native
+  var onDeselect: js.UndefOr[Validator[js.UndefOr[Null | SelectEventHandler]]] = js.undefined
   
-  var onDestroy: js.UndefOr[Validator[js.UndefOr[DestroyEventHandler | Null]]] = js.native
+  var onDestroy: js.UndefOr[Validator[js.UndefOr[DestroyEventHandler | Null]]] = js.undefined
   
-  var onOpenChange: js.UndefOr[Validator[js.UndefOr[Null | OpenEventHandler]]] = js.native
+  var onOpenChange: js.UndefOr[Validator[js.UndefOr[Null | OpenEventHandler]]] = js.undefined
   
-  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | SelectEventHandler]]] = js.native
+  var onSelect: js.UndefOr[Validator[js.UndefOr[Null | SelectEventHandler]]] = js.undefined
   
-  var openKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.native
+  var openKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.undefined
   
-  var overflowedIndicator: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var overflowedIndicator: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   
-  var parentMenu: js.UndefOr[Validator[js.UndefOr[Null | ReactInstance]]] = js.native
+  var parentMenu: js.UndefOr[Validator[js.UndefOr[Null | ReactInstance]]] = js.undefined
   
-  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var selectedKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.native
+  var selectedKeys: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Null]]] = js.undefined
   
-  var store: js.UndefOr[Validator[js.UndefOr[MiniStore | Null]]] = js.native
+  var store: js.UndefOr[Validator[js.UndefOr[MiniStore | Null]]] = js.undefined
   
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
   
-  var subMenuCloseDelay: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var subMenuCloseDelay: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var subMenuOpenDelay: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
+  var subMenuOpenDelay: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var theme: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var theme: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var triggerSubMenuAction: js.UndefOr[Validator[js.UndefOr[Null | TriggerSubMenuAction]]] = js.native
+  var triggerSubMenuAction: js.UndefOr[Validator[js.UndefOr[Null | TriggerSubMenuAction]]] = js.undefined
   
-  var visible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var visible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
 object WeakValidationMapSubPopup {
   

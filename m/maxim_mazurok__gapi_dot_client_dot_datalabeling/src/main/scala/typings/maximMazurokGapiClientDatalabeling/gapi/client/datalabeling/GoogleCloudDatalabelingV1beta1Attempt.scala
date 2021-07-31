@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1Attempt extends StObject {
   
-  var attemptTime: js.UndefOr[String] = js.native
+  var attemptTime: js.UndefOr[String] = js.undefined
   
   /** Details of errors that occurred. */
-  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.native
+  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1Attempt {
   

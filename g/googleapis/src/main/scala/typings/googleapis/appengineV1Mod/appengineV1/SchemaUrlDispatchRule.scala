@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rules to match an HTTP request and dispatch that request to a service.
   */
-@js.native
 trait SchemaUrlDispatchRule extends StObject {
   
   /**
@@ -16,20 +14,20 @@ trait SchemaUrlDispatchRule extends StObject {
     * specified before a period: &quot;*.&quot;.Defaults to matching all
     * domains: &quot;*&quot;.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Pathname within the host. Must start with a &quot;/&quot;. A single
     * &quot;*&quot; can be included at the end of the path.The sum of the
     * lengths of the domain and path may not exceed 100 characters.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Resource ID of a service in this application that should serve the
     * matched request. The service must already exist. Example: default.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaUrlDispatchRule {
   

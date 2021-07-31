@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** creates a {@link CachedContentResultSet} . */
-@js.native
-trait XCachedContentResultSetFactory extends XInterface {
+trait XCachedContentResultSetFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a remote optimized {@link com.sun.star.sdbc.XResultSet} .
@@ -18,7 +18,7 @@ trait XCachedContentResultSetFactory extends XInterface {
     * @param xMapping can be used for optimization of remote access via the interface {@link XContentAccess} of the {@link CachedContentResultSet} . This para
     * @returns an instance of service {@link CachedContentResultSet} .
     */
-  def createCachedContentResultSet(xSource: XResultSet, xMapping: XContentIdentifierMapping): XResultSet = js.native
+  def createCachedContentResultSet(xSource: XResultSet, xMapping: XContentIdentifierMapping): XResultSet
 }
 object XCachedContentResultSetFactory {
   

@@ -4,17 +4,15 @@ import typings.antvDataSet.antvDataSetStrings.ASC
 import typings.antvDataSet.antvDataSetStrings.DESC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortByMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var order: js.UndefOr[ASC | DESC] = js.native
+    var order: js.UndefOr[ASC | DESC] = js.undefined
   }
   object Options {
     

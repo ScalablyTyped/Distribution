@@ -2,15 +2,13 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverrideContext extends StObject {
   
-  var bindingContext: js.Any = js.native
+  var bindingContext: js.Any
   
-  var parentOverrideContext: js.UndefOr[OverrideContext] = js.native
+  var parentOverrideContext: js.UndefOr[OverrideContext] = js.undefined
 }
 object OverrideContext {
   

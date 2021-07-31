@@ -5,19 +5,17 @@ import typings.three.threeStrings.Horizontal
 import typings.three.threeStrings.Vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRPlane extends StObject {
   
-  var lastChangedTime: Double = js.native
+  var lastChangedTime: Double
   
-  var orientation: Horizontal | Vertical = js.native
+  var orientation: Horizontal | Vertical
   
-  var planeSpace: XRSpace = js.native
+  var planeSpace: XRSpace
   
-  var polygon: js.Array[DOMPointReadOnly] = js.native
+  var polygon: js.Array[DOMPointReadOnly]
 }
 object XRPlane {
   

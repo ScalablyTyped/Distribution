@@ -2,16 +2,14 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ExpressionResult...
   */
-@js.native
 trait IExpressionResult extends StObject {
   
-  var qBadFieldNames: js.Array[INxRange] = js.native
+  var qBadFieldNames: js.Array[INxRange]
 }
 object IExpressionResult {
   

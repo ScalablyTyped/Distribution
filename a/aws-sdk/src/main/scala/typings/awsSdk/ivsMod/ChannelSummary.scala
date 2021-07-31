@@ -2,36 +2,34 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSummary extends StObject {
   
   /**
     * Channel ARN.
     */
-  var arn: js.UndefOr[ChannelArn] = js.native
+  var arn: js.UndefOr[ChannelArn] = js.undefined
   
   /**
     * Whether the channel is authorized.
     */
-  var authorized: js.UndefOr[IsAuthorized] = js.native
+  var authorized: js.UndefOr[IsAuthorized] = js.undefined
   
   /**
     * Channel latency mode. Default: LOW.
     */
-  var latencyMode: js.UndefOr[ChannelLatencyMode] = js.native
+  var latencyMode: js.UndefOr[ChannelLatencyMode] = js.undefined
   
   /**
     * Channel name.
     */
-  var name: js.UndefOr[ChannelName] = js.native
+  var name: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * Array of 1-50 maps, each of the form string:string (key:value).
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object ChannelSummary {
   

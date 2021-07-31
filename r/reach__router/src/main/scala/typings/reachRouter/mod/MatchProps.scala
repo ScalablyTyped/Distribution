@@ -3,15 +3,13 @@ package typings.reachRouter.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchProps[TParams] extends StObject {
   
-  var children: MatchRenderFn[TParams] = js.native
+  var children: MatchRenderFn[TParams]
   
-  var path: String = js.native
+  var path: String
 }
 object MatchProps {
   
@@ -22,7 +20,7 @@ object MatchProps {
   }
   
   @scala.inline
-  implicit class MatchPropsMutableBuilder[Self <: MatchProps[_], TParams] (val x: Self with MatchProps[TParams]) extends AnyVal {
+  implicit class MatchPropsMutableBuilder[Self <: MatchProps[?], TParams] (val x: Self & MatchProps[TParams]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: /* props */ MatchRenderProps[TParams] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

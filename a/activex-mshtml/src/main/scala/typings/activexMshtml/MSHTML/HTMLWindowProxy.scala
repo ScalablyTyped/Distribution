@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -272,41 +271,21 @@ trait HTMLWindowProxy extends StObject {
     * @param replace [replace=false]
     */
   def open(): IHTMLWindow2 = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: Boolean
-  ): IHTMLWindow2 = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], features: String): IHTMLWindow2 = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    features: String,
-    replace: Boolean
-  ): IHTMLWindow2 = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: String): IHTMLWindow2 = js.native
-  def open(
-    url: js.UndefOr[scala.Nothing],
-    name: String,
-    features: js.UndefOr[scala.Nothing],
-    replace: Boolean
-  ): IHTMLWindow2 = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: String, features: String): IHTMLWindow2 = js.native
-  def open(url: js.UndefOr[scala.Nothing], name: String, features: String, replace: Boolean): IHTMLWindow2 = js.native
   def open(url: String): IHTMLWindow2 = js.native
-  def open(
-    url: String,
-    name: js.UndefOr[scala.Nothing],
-    features: js.UndefOr[scala.Nothing],
-    replace: Boolean
-  ): IHTMLWindow2 = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: String): IHTMLWindow2 = js.native
-  def open(url: String, name: js.UndefOr[scala.Nothing], features: String, replace: Boolean): IHTMLWindow2 = js.native
   def open(url: String, name: String): IHTMLWindow2 = js.native
-  def open(url: String, name: String, features: js.UndefOr[scala.Nothing], replace: Boolean): IHTMLWindow2 = js.native
   def open(url: String, name: String, features: String): IHTMLWindow2 = js.native
   def open(url: String, name: String, features: String, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: String, name: String, features: Unit, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: String, name: Unit, features: String): IHTMLWindow2 = js.native
+  def open(url: String, name: Unit, features: String, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: String, name: Unit, features: Unit, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: Unit, name: String): IHTMLWindow2 = js.native
+  def open(url: Unit, name: String, features: String): IHTMLWindow2 = js.native
+  def open(url: Unit, name: String, features: String, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: Unit, name: String, features: Unit, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: Unit, name: Unit, features: String): IHTMLWindow2 = js.native
+  def open(url: Unit, name: Unit, features: String, replace: Boolean): IHTMLWindow2 = js.native
+  def open(url: Unit, name: Unit, features: Unit, replace: Boolean): IHTMLWindow2 = js.native
   
   var opener: js.Any = js.native
   
@@ -334,9 +313,9 @@ trait HTMLWindowProxy extends StObject {
     * @param defstr [defstr='undefined']
     */
   def prompt(): js.Any = js.native
-  def prompt(message: js.UndefOr[scala.Nothing], defstr: String): js.Any = js.native
   def prompt(message: String): js.Any = js.native
   def prompt(message: String, defstr: String): js.Any = js.native
+  def prompt(message: Unit, defstr: String): js.Any = js.native
   
   def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit = js.native
   
@@ -377,19 +356,19 @@ trait HTMLWindowProxy extends StObject {
   def showHelp(helpURL: String, helpArg: js.Any, features: String): Unit = js.native
   
   def showModalDialog(dialog: String): js.Any = js.native
-  def showModalDialog(dialog: String, varArgIn: js.UndefOr[scala.Nothing], varOptions: js.Any): js.Any = js.native
   def showModalDialog(dialog: String, varArgIn: js.Any): js.Any = js.native
   def showModalDialog(dialog: String, varArgIn: js.Any, varOptions: js.Any): js.Any = js.native
+  def showModalDialog(dialog: String, varArgIn: Unit, varOptions: js.Any): js.Any = js.native
   
   /** @param url [url=''] */
   def showModelessDialog(): IHTMLWindow2 = js.native
-  def showModelessDialog(url: js.UndefOr[scala.Nothing], varArgIn: js.UndefOr[scala.Nothing], options: js.Any): IHTMLWindow2 = js.native
-  def showModelessDialog(url: js.UndefOr[scala.Nothing], varArgIn: js.Any): IHTMLWindow2 = js.native
-  def showModelessDialog(url: js.UndefOr[scala.Nothing], varArgIn: js.Any, options: js.Any): IHTMLWindow2 = js.native
   def showModelessDialog(url: String): IHTMLWindow2 = js.native
-  def showModelessDialog(url: String, varArgIn: js.UndefOr[scala.Nothing], options: js.Any): IHTMLWindow2 = js.native
   def showModelessDialog(url: String, varArgIn: js.Any): IHTMLWindow2 = js.native
   def showModelessDialog(url: String, varArgIn: js.Any, options: js.Any): IHTMLWindow2 = js.native
+  def showModelessDialog(url: String, varArgIn: Unit, options: js.Any): IHTMLWindow2 = js.native
+  def showModelessDialog(url: Unit, varArgIn: js.Any): IHTMLWindow2 = js.native
+  def showModelessDialog(url: Unit, varArgIn: js.Any, options: js.Any): IHTMLWindow2 = js.native
+  def showModelessDialog(url: Unit, varArgIn: Unit, options: js.Any): IHTMLWindow2 = js.native
   
   var status: String = js.native
   

@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the WeekDaysCheckEdit control.
   */
-@js.native
-trait ASPxClientWeekDaysCheckEdit extends ASPxClientControl {
+trait ASPxClientWeekDaysCheckEdit
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Gets the selection state of the week day check boxes.
     */
-  def GetValue(): ASPxClientWeekDays = js.native
+  def GetValue(): ASPxClientWeekDays
   
   /**
     * Gets the selection state of the week day check boxes.
     * @param value An ASPxClientWeekDays object specifying the selection state of the week day check boxes.
     */
-  def SetValue(value: ASPxClientWeekDays): Unit = js.native
+  def SetValue(value: ASPxClientWeekDays): Unit
 }
 object ASPxClientWeekDaysCheckEdit {
   

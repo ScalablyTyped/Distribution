@@ -4,31 +4,31 @@ import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HillshadePaint extends AnyPaint {
+trait HillshadePaint
+  extends StObject
+     with AnyPaint {
   
-  var `hillshade-accent-color`: js.UndefOr[String | Expression] = js.native
+  var `hillshade-accent-color`: js.UndefOr[String | Expression] = js.undefined
   
-  var `hillshade-accent-color-transition`: js.UndefOr[Transition] = js.native
+  var `hillshade-accent-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `hillshade-exaggeration`: js.UndefOr[Double | Expression] = js.native
+  var `hillshade-exaggeration`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `hillshade-exaggeration-transition`: js.UndefOr[Transition] = js.native
+  var `hillshade-exaggeration-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `hillshade-highlight-color`: js.UndefOr[String | Expression] = js.native
+  var `hillshade-highlight-color`: js.UndefOr[String | Expression] = js.undefined
   
-  var `hillshade-highlight-color-transition`: js.UndefOr[Transition] = js.native
+  var `hillshade-highlight-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `hillshade-illumination-anchor`: js.UndefOr[map | viewport] = js.native
+  var `hillshade-illumination-anchor`: js.UndefOr[map | viewport] = js.undefined
   
-  var `hillshade-illumination-direction`: js.UndefOr[Double | Expression] = js.native
+  var `hillshade-illumination-direction`: js.UndefOr[Double | Expression] = js.undefined
   
-  var `hillshade-shadow-color`: js.UndefOr[String | Expression] = js.native
+  var `hillshade-shadow-color`: js.UndefOr[String | Expression] = js.undefined
   
-  var `hillshade-shadow-color-transition`: js.UndefOr[Transition] = js.native
+  var `hillshade-shadow-color-transition`: js.UndefOr[Transition] = js.undefined
 }
 object HillshadePaint {
   

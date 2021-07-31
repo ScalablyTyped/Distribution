@@ -5,40 +5,37 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istyleoptionsMod.IStyleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleToClassNameMod {
   
-  @JSImport("@uifabric/merge-styles/lib/styleToClassName", "applyRegistration")
+  @JSImport("@uifabric/merge-styles/lib/styleToClassName", JSImport.Namespace)
   @js.native
-  def applyRegistration(registration: IRegistration): Unit = js.native
-  @JSImport("@uifabric/merge-styles/lib/styleToClassName", "applyRegistration")
-  @js.native
-  def applyRegistration(registration: IRegistration, specificityMultiplier: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/merge-styles/lib/styleToClassName", "serializeRuleEntries")
-  @js.native
-  def serializeRuleEntries(options: IStyleOptions, ruleEntries: StringDictionary[String | Double]): String = js.native
+  @scala.inline
+  def applyRegistration(registration: IRegistration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyRegistration")(registration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def applyRegistration(registration: IRegistration, specificityMultiplier: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyRegistration")(registration.asInstanceOf[js.Any], specificityMultiplier.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/merge-styles/lib/styleToClassName", "styleToClassName")
-  @js.native
-  def styleToClassName(options: IStyleOptions, args: IStyle*): String = js.native
+  @scala.inline
+  def serializeRuleEntries(options: IStyleOptions, ruleEntries: StringDictionary[String | Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeRuleEntries")(options.asInstanceOf[js.Any], ruleEntries.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@uifabric/merge-styles/lib/styleToClassName", "styleToRegistration")
-  @js.native
-  def styleToRegistration(options: IStyleOptions, args: IStyle*): js.UndefOr[IRegistration] = js.native
+  @scala.inline
+  def styleToClassName(options: IStyleOptions, args: IStyle*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("styleToClassName")(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def styleToRegistration(options: IStyleOptions, args: IStyle*): js.UndefOr[IRegistration] = (^.asInstanceOf[js.Dynamic].applyDynamic("styleToRegistration")(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IRegistration]]
+  
   trait IRegistration extends StObject {
     
-    var args: js.Array[IStyle] = js.native
+    var args: js.Array[IStyle]
     
-    var className: String = js.native
+    var className: String
     
-    var key: String = js.native
+    var key: String
     
-    var rulesToInsert: js.Array[String] = js.native
+    var rulesToInsert: js.Array[String]
   }
   object IRegistration {
     

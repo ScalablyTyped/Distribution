@@ -2,31 +2,29 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitSliderOptions extends StObject {
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var `autoplay-interval`: js.UndefOr[Double] = js.native
+  var `autoplay-interval`: js.UndefOr[Double] = js.undefined
   
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var finite: js.UndefOr[Boolean] = js.native
+  var finite: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var `pause-on-hover`: js.UndefOr[Boolean] = js.native
+  var `pause-on-hover`: js.UndefOr[Boolean] = js.undefined
   
-  var sets: js.UndefOr[Boolean] = js.native
+  var sets: js.UndefOr[Boolean] = js.undefined
   
-  var velocity: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Double] = js.undefined
 }
 object UIkitSliderOptions {
   

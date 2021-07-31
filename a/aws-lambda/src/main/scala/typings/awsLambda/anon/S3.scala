@@ -4,15 +4,15 @@ import typings.awsLambda.cloudfrontMod.CloudFrontCustomOrigin
 import typings.awsLambda.cloudfrontMod.CloudFrontOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait S3 extends CloudFrontOrigin {
+trait S3
+  extends StObject
+     with CloudFrontOrigin {
   
-  var custom: CloudFrontCustomOrigin = js.native
+  var custom: CloudFrontCustomOrigin
   
-  var s3: js.UndefOr[scala.Nothing] = js.native
+  var s3: js.UndefOr[scala.Nothing] = js.undefined
 }
 object S3 {
   

@@ -2,15 +2,13 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  var x: js.Array[Double] = js.native
+  var x: js.Array[Double]
   
-  var y: js.Array[Double] = js.native
+  var y: js.Array[Double]
 }
 object X {
   

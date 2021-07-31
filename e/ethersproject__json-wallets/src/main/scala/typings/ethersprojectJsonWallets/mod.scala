@@ -7,112 +7,90 @@ import typings.ethersprojectJsonWallets.keystoreMod.KeystoreAccount
 import typings.ethersprojectJsonWallets.keystoreMod.ProgressCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/json-wallets", "decryptCrowdsale")
+  @JSImport("@ethersproject/json-wallets", JSImport.Namespace)
   @js.native
-  def decryptCrowdsale(json: String, password: String): ExternallyOwnedAccount = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptCrowdsale")
-  @js.native
-  def decryptCrowdsale(json: String, password: Bytes): ExternallyOwnedAccount = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/json-wallets", "decryptJsonWallet")
-  @js.native
-  def decryptJsonWallet(json: String, password: String): js.Promise[ExternallyOwnedAccount] = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptJsonWallet")
-  @js.native
-  def decryptJsonWallet(json: String, password: String, progressCallback: ProgressCallback): js.Promise[ExternallyOwnedAccount] = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptJsonWallet")
-  @js.native
-  def decryptJsonWallet(json: String, password: Bytes): js.Promise[ExternallyOwnedAccount] = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptJsonWallet")
-  @js.native
-  def decryptJsonWallet(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[ExternallyOwnedAccount] = js.native
+  @scala.inline
+  def decryptCrowdsale(json: String, password: String): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptCrowdsale")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
+  @scala.inline
+  def decryptCrowdsale(json: String, password: Bytes): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptCrowdsale")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
   
-  @JSImport("@ethersproject/json-wallets", "decryptJsonWalletSync")
-  @js.native
-  def decryptJsonWalletSync(json: String, password: String): ExternallyOwnedAccount = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptJsonWalletSync")
-  @js.native
-  def decryptJsonWalletSync(json: String, password: Bytes): ExternallyOwnedAccount = js.native
+  @scala.inline
+  def decryptJsonWallet(json: String, password: String): js.Promise[ExternallyOwnedAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptJsonWallet")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExternallyOwnedAccount]]
+  @scala.inline
+  def decryptJsonWallet(json: String, password: String, progressCallback: ProgressCallback): js.Promise[ExternallyOwnedAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptJsonWallet")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExternallyOwnedAccount]]
+  @scala.inline
+  def decryptJsonWallet(json: String, password: Bytes): js.Promise[ExternallyOwnedAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptJsonWallet")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExternallyOwnedAccount]]
+  @scala.inline
+  def decryptJsonWallet(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[ExternallyOwnedAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptJsonWallet")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ExternallyOwnedAccount]]
   
-  @JSImport("@ethersproject/json-wallets", "decryptKeystore")
-  @js.native
-  def decryptKeystore(json: String, password: String): js.Promise[KeystoreAccount] = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptKeystore")
-  @js.native
-  def decryptKeystore(json: String, password: String, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptKeystore")
-  @js.native
-  def decryptKeystore(json: String, password: Bytes): js.Promise[KeystoreAccount] = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptKeystore")
-  @js.native
-  def decryptKeystore(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = js.native
+  @scala.inline
+  def decryptJsonWalletSync(json: String, password: String): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptJsonWalletSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
+  @scala.inline
+  def decryptJsonWalletSync(json: String, password: Bytes): ExternallyOwnedAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptJsonWalletSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[ExternallyOwnedAccount]
   
-  @JSImport("@ethersproject/json-wallets", "decryptKeystoreSync")
-  @js.native
-  def decryptKeystoreSync(json: String, password: String): KeystoreAccount = js.native
-  @JSImport("@ethersproject/json-wallets", "decryptKeystoreSync")
-  @js.native
-  def decryptKeystoreSync(json: String, password: Bytes): KeystoreAccount = js.native
+  @scala.inline
+  def decryptKeystore(json: String, password: String): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKeystore")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  @scala.inline
+  def decryptKeystore(json: String, password: String, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKeystore")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  @scala.inline
+  def decryptKeystore(json: String, password: Bytes): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKeystore")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
+  @scala.inline
+  def decryptKeystore(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[KeystoreAccount] = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKeystore")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeystoreAccount]]
   
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
-  def encryptKeystore(account: ExternallyOwnedAccount, password: String): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
+  @scala.inline
+  def decryptKeystoreSync(json: String, password: String): KeystoreAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKeystoreSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KeystoreAccount]
+  @scala.inline
+  def decryptKeystoreSync(json: String, password: Bytes): KeystoreAccount = (^.asInstanceOf[js.Dynamic].applyDynamic("decryptKeystoreSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KeystoreAccount]
+  
+  @scala.inline
+  def encryptKeystore(account: ExternallyOwnedAccount, password: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def encryptKeystore(
     account: ExternallyOwnedAccount,
     password: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     progressCallback: ProgressCallback
-  ): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
-  def encryptKeystore(account: ExternallyOwnedAccount, password: String, options: EncryptOptions): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def encryptKeystore(account: ExternallyOwnedAccount, password: String, options: EncryptOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def encryptKeystore(
     account: ExternallyOwnedAccount,
     password: String,
     options: EncryptOptions,
     progressCallback: ProgressCallback
-  ): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
-  def encryptKeystore(account: ExternallyOwnedAccount, password: Bytes): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def encryptKeystore(account: ExternallyOwnedAccount, password: Bytes): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def encryptKeystore(
     account: ExternallyOwnedAccount,
     password: Bytes,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     progressCallback: ProgressCallback
-  ): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
-  def encryptKeystore(account: ExternallyOwnedAccount, password: Bytes, options: EncryptOptions): js.Promise[String] = js.native
-  @JSImport("@ethersproject/json-wallets", "encryptKeystore")
-  @js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def encryptKeystore(account: ExternallyOwnedAccount, password: Bytes, options: EncryptOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def encryptKeystore(
     account: ExternallyOwnedAccount,
     password: Bytes,
     options: EncryptOptions,
     progressCallback: ProgressCallback
-  ): js.Promise[String] = js.native
+  ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encryptKeystore")(account.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("@ethersproject/json-wallets", "getJsonWalletAddress")
-  @js.native
-  def getJsonWalletAddress(json: String): String = js.native
+  @scala.inline
+  def getJsonWalletAddress(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsonWalletAddress")(json.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/json-wallets", "isCrowdsaleWallet")
-  @js.native
-  def isCrowdsaleWallet(json: String): Boolean = js.native
+  @scala.inline
+  def isCrowdsaleWallet(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrowdsaleWallet")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ethersproject/json-wallets", "isKeystoreWallet")
-  @js.native
-  def isKeystoreWallet(json: String): Boolean = js.native
+  @scala.inline
+  def isKeystoreWallet(json: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeystoreWallet")(json.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

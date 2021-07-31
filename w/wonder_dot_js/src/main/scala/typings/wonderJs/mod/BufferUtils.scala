@@ -1,18 +1,20 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "BufferUtils")
 @js.native
 class BufferUtils ()
   extends typings.wonderJs.bufferUtilsMod.BufferUtils
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "BufferUtils")
-@js.native
-object BufferUtils extends js.Object {
-  def convertArrayToArrayBuffer(`type`: typings.wonderJs.evariabletypeMod.EVariableType, value: js.Array[_]): typings.wonderJs.arrayBufferMod.ArrayBuffer = js.native
+object BufferUtils {
+  
+  @JSImport("wonder.js/dist/es2015", "BufferUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convertArrayToArrayBuffer(`type`: typings.wonderJs.evariabletypeMod.EVariableType, value: js.Array[js.Any]): typings.wonderJs.arrayBufferMod.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.arrayBufferMod.ArrayBuffer]
 }
-

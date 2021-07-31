@@ -2,15 +2,13 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale extends StObject {
   
-  var scale: typings.vegaTypings.encodeMod.Field = js.native
+  var scale: typings.vegaTypings.encodeMod.Field
   
-  var value: String | Double | Boolean = js.native
+  var value: String | Double | Boolean
 }
 object Scale {
   

@@ -4,7 +4,6 @@ import typings.evernote.anon.CcAddresses
 import typings.evernote.mod.Types.Note
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.NoteEmailParameters")

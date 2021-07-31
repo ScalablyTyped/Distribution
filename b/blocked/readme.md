@@ -12,7 +12,7 @@ check if the event loop is blocked
 | Keywords           | block, event, loop, performance |
 | # releases         | 2 |
 | # dependents       | 23 |
-| # downloads        | 1978828 |
+| # downloads        | 2427515 |
 | # stars            | 50 |
 
 ## Links

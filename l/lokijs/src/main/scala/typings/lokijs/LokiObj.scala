@@ -3,16 +3,14 @@ package typings.lokijs
 import typings.lokijs.anon.Created
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LokiObj extends StObject {
   
   @JSName("$loki")
-  var $loki: Double = js.native
+  var $loki: Double
   
-  var meta: Created = js.native
+  var meta: Created
 }
 object LokiObj {
   

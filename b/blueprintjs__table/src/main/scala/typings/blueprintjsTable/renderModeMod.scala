@@ -2,7 +2,6 @@ package typings.blueprintjsTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderModeMod {
@@ -14,7 +13,7 @@ object renderModeMod {
   object RenderMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RenderMode with String] = js.native
+    def apply(value: String): js.UndefOr[RenderMode & String] = js.native
     
     /**
       * Renders cells in batches across multiple animation frames. This improves
@@ -23,8 +22,10 @@ object renderModeMod {
       * as successive batches of cells finish rendering.
       */
     @js.native
-    sealed trait BATCH extends RenderMode
-    /* "batch" */ val BATCH: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH with String = js.native
+    sealed trait BATCH
+      extends StObject
+         with RenderMode
+    /* "batch" */ val BATCH: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH & String = js.native
     
     /**
       * Renders all cells synchronously on initial mount, then renders cells in
@@ -33,8 +34,10 @@ object renderModeMod {
       * wihout slowing scrolling performance to a crawl.
       */
     @js.native
-    sealed trait BATCH_ON_UPDATE extends RenderMode
-    /* "batch-on-update" */ val BATCH_ON_UPDATE: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH_ON_UPDATE with String = js.native
+    sealed trait BATCH_ON_UPDATE
+      extends StObject
+         with RenderMode
+    /* "batch-on-update" */ val BATCH_ON_UPDATE: typings.blueprintjsTable.renderModeMod.RenderMode.BATCH_ON_UPDATE & String = js.native
     
     /**
       * Disables the batch-rendering behavior, rendering all cells synchronously
@@ -42,7 +45,9 @@ object renderModeMod {
       * on tables with complex cells.
       */
     @js.native
-    sealed trait NONE extends RenderMode
-    /* "none" */ val NONE: typings.blueprintjsTable.renderModeMod.RenderMode.NONE with String = js.native
+    sealed trait NONE
+      extends StObject
+         with RenderMode
+    /* "none" */ val NONE: typings.blueprintjsTable.renderModeMod.RenderMode.NONE & String = js.native
   }
 }

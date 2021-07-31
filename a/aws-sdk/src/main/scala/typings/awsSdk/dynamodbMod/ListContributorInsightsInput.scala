@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContributorInsightsInput extends StObject {
   
   /**
     * Maximum number of results to return per page.
     */
-  var MaxResults: js.UndefOr[ListContributorInsightsLimit] = js.native
+  var MaxResults: js.UndefOr[ListContributorInsightsLimit] = js.undefined
   
   /**
     * A token to for the desired page, if there is one.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
     * The name of the table.
     */
-  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.native
+  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.undefined
 }
 object ListContributorInsightsInput {
   

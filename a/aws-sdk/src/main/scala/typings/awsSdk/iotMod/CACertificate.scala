@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CACertificate extends StObject {
   
   /**
     * The ARN of the CA certificate.
     */
-  var certificateArn: js.UndefOr[CertificateArn] = js.native
+  var certificateArn: js.UndefOr[CertificateArn] = js.undefined
   
   /**
     * The ID of the CA certificate.
     */
-  var certificateId: js.UndefOr[CertificateId] = js.native
+  var certificateId: js.UndefOr[CertificateId] = js.undefined
   
   /**
     * The date the CA certificate was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The status of the CA certificate. The status value REGISTER_INACTIVE is deprecated and should not be used.
     */
-  var status: js.UndefOr[CACertificateStatus] = js.native
+  var status: js.UndefOr[CACertificateStatus] = js.undefined
 }
 object CACertificate {
   

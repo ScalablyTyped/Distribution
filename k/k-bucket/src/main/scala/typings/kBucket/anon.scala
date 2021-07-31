@@ -6,25 +6,23 @@ import typings.kBucket.mod.Distance_
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Arbiter[T /* <: Contact */] extends StObject {
     
-    var arbiter: js.UndefOr[Arbiter_[T]] = js.native
+    var arbiter: js.UndefOr[Arbiter_[T]] = js.undefined
     
-    var distance: js.UndefOr[Distance_] = js.native
+    var distance: js.UndefOr[Distance_] = js.undefined
     
-    var localNodeId: js.UndefOr[Uint8Array] = js.native
+    var localNodeId: js.UndefOr[Uint8Array] = js.undefined
     
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[js.Any] = js.undefined
     
-    var numberOfNodesPerKBucket: js.UndefOr[Double] = js.native
+    var numberOfNodesPerKBucket: js.UndefOr[Double] = js.undefined
     
-    var numberOfNodesToPing: js.UndefOr[Double] = js.native
+    var numberOfNodesToPing: js.UndefOr[Double] = js.undefined
   }
   object Arbiter {
     
@@ -35,7 +33,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ArbiterMutableBuilder[Self <: Arbiter[_], T /* <: Contact */] (val x: Self with Arbiter[T]) extends AnyVal {
+    implicit class ArbiterMutableBuilder[Self <: Arbiter[?], T /* <: Contact */] (val x: Self & Arbiter[T]) extends AnyVal {
       
       @scala.inline
       def setArbiter(value: (T, T) => T): Self = StObject.set(x, "arbiter", js.Any.fromFunction2(value))

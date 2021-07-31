@@ -2,12 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OffscreenCanvasRenderingContext2D
-  extends CanvasCompositing
+  extends StObject
+     with CanvasCompositing
      with CanvasDrawImage
      with CanvasDrawPath
      with CanvasFillStrokeStyles

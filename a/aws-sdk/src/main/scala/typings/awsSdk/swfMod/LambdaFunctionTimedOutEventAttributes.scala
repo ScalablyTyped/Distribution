@@ -2,26 +2,24 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaFunctionTimedOutEventAttributes extends StObject {
   
   /**
     * The ID of the LambdaFunctionScheduled event that was recorded when this activity task was scheduled. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var scheduledEventId: EventId = js.native
+  var scheduledEventId: EventId
   
   /**
     * The ID of the ActivityTaskStarted event that was recorded when this activity task started. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
   
   /**
     * The type of the timeout that caused this event.
     */
-  var timeoutType: js.UndefOr[LambdaFunctionTimeoutType] = js.native
+  var timeoutType: js.UndefOr[LambdaFunctionTimeoutType] = js.undefined
 }
 object LambdaFunctionTimedOutEventAttributes {
   

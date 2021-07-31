@@ -10,9 +10,9 @@ Simple and complete React hooks testing utilities that encourage good testing pr
 | ------------------ | :-------------: |
 | Full name          | @testing-library/react-hooks |
 | Keywords           | testing, react, hooks, unit, integration |
-| # releases         | 19 |
-| # dependents       | 50 |
-| # downloads        | 21779929 |
+| # releases         | 42 |
+| # dependents       | 66 |
+| # downloads        | 31426390 |
 | # stars            | 0 |
 
 ## Links

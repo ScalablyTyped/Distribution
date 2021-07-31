@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/datastore/v1", "datastore_v1.Resource$Projects")
@@ -30,7 +29,7 @@ class ResourceProjects protected () extends StObject {
     */
   def allocateIds(): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
   def allocateIds(callback: BodyResponseCallback[SchemaAllocateIdsResponse]): Unit = js.native
-  def allocateIds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
+  def allocateIds(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
   def allocateIds(params: ParamsResourceProjectsAllocateids): GaxiosPromise[SchemaAllocateIdsResponse] = js.native
   def allocateIds(
     params: ParamsResourceProjectsAllocateids,
@@ -63,7 +62,7 @@ class ResourceProjects protected () extends StObject {
     */
   def beginTransaction(): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(callback: BodyResponseCallback[SchemaBeginTransactionResponse]): Unit = js.native
-  def beginTransaction(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
+  def beginTransaction(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(params: ParamsResourceProjectsBegintransaction): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(
     params: ParamsResourceProjectsBegintransaction,
@@ -97,7 +96,7 @@ class ResourceProjects protected () extends StObject {
     */
   def commit(): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(callback: BodyResponseCallback[SchemaCommitResponse]): Unit = js.native
-  def commit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
+  def commit(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(params: ParamsResourceProjectsCommit): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(params: ParamsResourceProjectsCommit, callback: BodyResponseCallback[SchemaCommitResponse]): Unit = js.native
   def commit(
@@ -134,21 +133,21 @@ class ResourceProjects protected () extends StObject {
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
-  def export(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(params: ParamsResourceProjectsExport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(
+  def `export`(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def `export`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(params: ParamsResourceProjectsExport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(
     params: ParamsResourceProjectsExport,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
-  def export(
+  def `export`(
     params: ParamsResourceProjectsExport,
     options: BodyResponseCallback[SchemaGoogleLongrunningOperation],
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
-  def export(params: ParamsResourceProjectsExport, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
-  def export(
+  def `export`(params: ParamsResourceProjectsExport, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `export`(
     params: ParamsResourceProjectsExport,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
@@ -173,7 +172,7 @@ class ResourceProjects protected () extends StObject {
     */
   def `import`(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def `import`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def `import`(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(params: ParamsResourceProjectsImport): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def `import`(
     params: ParamsResourceProjectsImport,
@@ -208,7 +207,7 @@ class ResourceProjects protected () extends StObject {
     */
   def lookup(): GaxiosPromise[SchemaLookupResponse] = js.native
   def lookup(callback: BodyResponseCallback[SchemaLookupResponse]): Unit = js.native
-  def lookup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLookupResponse] = js.native
+  def lookup(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLookupResponse] = js.native
   def lookup(params: ParamsResourceProjectsLookup): GaxiosPromise[SchemaLookupResponse] = js.native
   def lookup(params: ParamsResourceProjectsLookup, callback: BodyResponseCallback[SchemaLookupResponse]): Unit = js.native
   def lookup(
@@ -241,7 +240,7 @@ class ResourceProjects protected () extends StObject {
     */
   def reserveIds(): GaxiosPromise[SchemaReserveIdsResponse] = js.native
   def reserveIds(callback: BodyResponseCallback[SchemaReserveIdsResponse]): Unit = js.native
-  def reserveIds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReserveIdsResponse] = js.native
+  def reserveIds(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReserveIdsResponse] = js.native
   def reserveIds(params: ParamsResourceProjectsReserveids): GaxiosPromise[SchemaReserveIdsResponse] = js.native
   def reserveIds(params: ParamsResourceProjectsReserveids, callback: BodyResponseCallback[SchemaReserveIdsResponse]): Unit = js.native
   def reserveIds(
@@ -271,7 +270,7 @@ class ResourceProjects protected () extends StObject {
     */
   def rollback(): GaxiosPromise[SchemaRollbackResponse] = js.native
   def rollback(callback: BodyResponseCallback[SchemaRollbackResponse]): Unit = js.native
-  def rollback(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRollbackResponse] = js.native
+  def rollback(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRollbackResponse] = js.native
   def rollback(params: ParamsResourceProjectsRollback): GaxiosPromise[SchemaRollbackResponse] = js.native
   def rollback(params: ParamsResourceProjectsRollback, callback: BodyResponseCallback[SchemaRollbackResponse]): Unit = js.native
   def rollback(
@@ -301,7 +300,7 @@ class ResourceProjects protected () extends StObject {
     */
   def runQuery(): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(callback: BodyResponseCallback[SchemaRunQueryResponse]): Unit = js.native
-  def runQuery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRunQueryResponse] = js.native
+  def runQuery(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(params: ParamsResourceProjectsRunquery): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(params: ParamsResourceProjectsRunquery, callback: BodyResponseCallback[SchemaRunQueryResponse]): Unit = js.native
   def runQuery(

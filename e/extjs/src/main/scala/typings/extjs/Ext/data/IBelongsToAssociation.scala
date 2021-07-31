@@ -2,24 +2,23 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBelongsToAssociation
-  extends typings.extjs.Ext.data.association.IAssociation {
+  extends StObject
+     with typings.extjs.Ext.data.association.IAssociation {
   
   /** [Config Option] (String) */
-  var foreignKey: js.UndefOr[String] = js.native
+  var foreignKey: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var getterName: js.UndefOr[String] = js.native
+  var getterName: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var setterName: js.UndefOr[String] = js.native
+  var setterName: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IBelongsToAssociation {
   

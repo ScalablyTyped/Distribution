@@ -2,57 +2,55 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowGuests extends StObject {
   
   /**
     * Generate a guest account for non-authenticated connections.
     *    config.authentication.allowGuests = true;
     */
-  var allowGuests: Boolean = js.native
+  var allowGuests: Boolean
   
   /**
     * Allow clients to create new users via the REST api.
     *    config.authentication.allowUserRegistration = true;
     */
-  var allowUserRegistration: Boolean = js.native
+  var allowUserRegistration: Boolean
   
-  var authorizer: Options = js.native
+  var authorizer: Options
   
   /**
     * If true certain parts will require that users are authenticated.
     *    config.authentication.enable = false;
     */
-  var enable: Boolean = js.native
+  var enable: Boolean
   
   /**
     * User account which non-authenticated connections will access the storage.
     *    config.authentication.guestAccount = 'guest';
     */
-  var guestAccount: String = js.native
+  var guestAccount: String
   
-  var jwt: Algorithm = js.native
+  var jwt: Algorithm
   
   /**
     * Where clients are redirected if not authenticated.
     *    config.authentication.logInUrl = '/profile/login';
     */
-  var logInUrl: String = js.native
+  var logInUrl: String
   
   /**
     * Where clients are redirected after logout.
     *   config.authentication.logOutUrl = '/profile/login';
     */
-  var logOutUrl: String = js.native
+  var logOutUrl: String
   
   /**
     * Strength of the salting of the users' passwords bcrypt.
     *   config.authentication.salts = 10;
     */
-  var salts: Double = js.native
+  var salts: Double
 }
 object AllowGuests {
   

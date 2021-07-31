@@ -2,42 +2,43 @@ package typings.findDuplicatedPropertyKeys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(content: String): js.Array[PropertyInfo] = ^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[PropertyInfo]]
+  
   @JSImport("find-duplicated-property-keys", JSImport.Namespace)
   @js.native
-  def apply(content: String): js.Array[PropertyInfo] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait PropertyInfo extends StObject {
     
     /**
       * Is this property an array
       */
-    var isArray: Boolean = js.native
+    var isArray: Boolean
     
     /**
       *  The key name of the duplicated property
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The number of property keys having the same key and parent object
       */
-    var occurrence: Double = js.native
+    var occurrence: Double
     
     /**
       * The parent object of a property key
       */
-    var parent: PropertyInfo = js.native
+    var parent: PropertyInfo
     
     /**
       * Returns a list of property keys, which represents the path to the property key of the current object.
       */
-    def propertyPath(): js.Array[String] = js.native
+    def propertyPath(): js.Array[String]
   }
   object PropertyInfo {
     

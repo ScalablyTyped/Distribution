@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProtectedRangeRequest extends StObject {
   
   /** The ID of the protected range to delete. */
-  var protectedRangeId: js.UndefOr[Double] = js.native
+  var protectedRangeId: js.UndefOr[Double] = js.undefined
 }
 object DeleteProtectedRangeRequest {
   

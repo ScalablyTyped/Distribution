@@ -1,15 +1,23 @@
 package typings.angularCompiler
 
+import typings.angularCompiler.mlParserAstMod.Attribute
+import typings.angularCompiler.mlParserAstMod.Comment
+import typings.angularCompiler.mlParserAstMod.Element
+import typings.angularCompiler.mlParserAstMod.Expansion
+import typings.angularCompiler.mlParserAstMod.ExpansionCase
 import typings.angularCompiler.mlParserAstMod.Node
 import typings.angularCompiler.mlParserAstMod.Text
 import typings.angularCompiler.mlParserAstMod.Visitor
 import typings.angularCompiler.mlParserParserMod.ParseTreeResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlWhitespacesMod {
+  
+  @JSImport("@angular/compiler/src/ml_parser/html_whitespaces", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/ml_parser/html_whitespaces", "PRESERVE_WS_ATTR_NAME")
   @js.native
@@ -17,26 +25,42 @@ object htmlWhitespacesMod {
   
   @JSImport("@angular/compiler/src/ml_parser/html_whitespaces", "WhitespaceVisitor")
   @js.native
-  class WhitespaceVisitor () extends Visitor {
+  class WhitespaceVisitor ()
+    extends StObject
+       with Visitor {
+    
+    /* CompleteClass */
+    override def visitAttribute(attribute: Attribute, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitComment(comment: Comment, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitElement(element: Element, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitExpansion(expansion: Expansion, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitExpansionCase(expansionCase: ExpansionCase, context: js.Any): js.Any = js.native
     
     def visitText(text: Text): js.Any = js.native
+    /* CompleteClass */
+    override def visitText(text: Text, context: js.Any): js.Any = js.native
     def visitText(text: Text, context: SiblingVisitorContext): js.Any = js.native
   }
   
-  @JSImport("@angular/compiler/src/ml_parser/html_whitespaces", "removeWhitespaces")
-  @js.native
-  def removeWhitespaces(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = js.native
+  @scala.inline
+  def removeWhitespaces(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = ^.asInstanceOf[js.Dynamic].applyDynamic("removeWhitespaces")(htmlAstWithErrors.asInstanceOf[js.Any]).asInstanceOf[ParseTreeResult]
   
-  @JSImport("@angular/compiler/src/ml_parser/html_whitespaces", "replaceNgsp")
-  @js.native
-  def replaceNgsp(value: String): String = js.native
+  @scala.inline
+  def replaceNgsp(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceNgsp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait SiblingVisitorContext extends StObject {
     
-    var next: js.UndefOr[Node] = js.native
+    var next: js.UndefOr[Node] = js.undefined
     
-    var prev: js.UndefOr[Node] = js.native
+    var prev: js.UndefOr[Node] = js.undefined
   }
   object SiblingVisitorContext {
     

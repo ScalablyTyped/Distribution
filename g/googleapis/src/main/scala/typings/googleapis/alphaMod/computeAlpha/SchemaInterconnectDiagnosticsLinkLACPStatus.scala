@@ -2,23 +2,21 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInterconnectDiagnosticsLinkLACPStatus extends StObject {
   
   /**
     * System ID of the port on Google?s side of the LACP exchange.
     */
-  var googleSystemId: js.UndefOr[String] = js.native
+  var googleSystemId: js.UndefOr[String] = js.undefined
   
   /**
     * System ID of the port on the neighbor?s side of the LACP exchange.
     */
-  var neighborSystemId: js.UndefOr[String] = js.native
+  var neighborSystemId: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectDiagnosticsLinkLACPStatus {
   

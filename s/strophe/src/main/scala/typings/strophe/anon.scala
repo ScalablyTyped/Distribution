@@ -2,15 +2,13 @@ package typings.strophe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MatchBare extends StObject {
     
-    var matchBare: Boolean = js.native
+    var matchBare: Boolean
   }
   object MatchBare {
     

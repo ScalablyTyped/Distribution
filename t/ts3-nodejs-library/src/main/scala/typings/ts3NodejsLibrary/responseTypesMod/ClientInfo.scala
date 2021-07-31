@@ -4,135 +4,135 @@ import typings.ts3NodejsLibrary.enumMod.ClientType
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientInfo extends ResponseEntry {
+trait ClientInfo
+  extends StObject
+     with ResponseEntry {
   
-  var cid: String = js.native
+  var cid: String
   
-  var clientAway: Boolean = js.native
+  var clientAway: Boolean
   
-  var clientAwayMessage: js.UndefOr[String] = js.native
+  var clientAwayMessage: js.UndefOr[String] = js.undefined
   
-  var clientBadges: String = js.native
+  var clientBadges: String
   
-  var clientBase64HashClientUID: String = js.native
+  var clientBase64HashClientUID: String
   
-  var clientChannelGroupId: String = js.native
+  var clientChannelGroupId: String
   
-  var clientChannelGroupInheritedChannelId: String = js.native
+  var clientChannelGroupInheritedChannelId: String
   
-  var clientCountry: String = js.native
+  var clientCountry: String
   
-  var clientCreated: Double = js.native
+  var clientCreated: Double
   
-  var clientDatabaseId: Double = js.native
+  var clientDatabaseId: Double
   
-  var clientDefaultChannel: String = js.native
+  var clientDefaultChannel: String
   
-  var clientDefaultToken: String = js.native
+  var clientDefaultToken: String
   
-  var clientDescription: String = js.native
+  var clientDescription: String
   
-  var clientFlagAvatar: String = js.native
+  var clientFlagAvatar: String
   
-  var clientIconId: String = js.native
+  var clientIconId: String
   
-  var clientIdleTime: Double = js.native
+  var clientIdleTime: Double
   
-  var clientInputHardware: Double = js.native
+  var clientInputHardware: Double
   
-  var clientInputMuted: Double = js.native
+  var clientInputMuted: Double
   
-  var clientIntegrations: String = js.native
+  var clientIntegrations: String
   
-  var clientIsChannelCommander: Boolean = js.native
+  var clientIsChannelCommander: Boolean
   
-  var clientIsPrioritySpeaker: Boolean = js.native
+  var clientIsPrioritySpeaker: Boolean
   
-  var clientIsRecording: Boolean = js.native
+  var clientIsRecording: Boolean
   
-  var clientIsTalker: Boolean = js.native
+  var clientIsTalker: Boolean
   
-  var clientLastconnected: Double = js.native
+  var clientLastconnected: Double
   
-  var clientLoginName: String = js.native
+  var clientLoginName: String
   
-  var clientMetaData: String = js.native
+  var clientMetaData: String
   
-  var clientMonthBytesDownloaded: Double = js.native
+  var clientMonthBytesDownloaded: Double
   
-  var clientMonthBytesUploaded: Double = js.native
+  var clientMonthBytesUploaded: Double
   
-  var clientMyteamspeakAvatar: String = js.native
+  var clientMyteamspeakAvatar: String
   
-  var clientMyteamspeakId: String = js.native
+  var clientMyteamspeakId: String
   
-  var clientNeededServerqueryViewPower: Double = js.native
+  var clientNeededServerqueryViewPower: Double
   
-  var clientNickname: String = js.native
+  var clientNickname: String
   
-  var clientNicknamePhonetic: String = js.native
+  var clientNicknamePhonetic: String
   
-  var clientOutputHardware: Double = js.native
+  var clientOutputHardware: Double
   
-  var clientOutputMuted: Double = js.native
+  var clientOutputMuted: Double
   
-  var clientOutputonlyMuted: Double = js.native
+  var clientOutputonlyMuted: Double
   
-  var clientPlatform: String = js.native
+  var clientPlatform: String
   
-  var clientSecurityHash: String = js.native
+  var clientSecurityHash: String
   
-  var clientServergroups: js.Array[String] = js.native
+  var clientServergroups: js.Array[String]
   
-  var clientSignedBadges: String = js.native
+  var clientSignedBadges: String
   
-  var clientTalkPower: Double = js.native
+  var clientTalkPower: Double
   
-  var clientTalkRequest: Boolean = js.native
+  var clientTalkRequest: Boolean
   
-  var clientTalkRequestMsg: String = js.native
+  var clientTalkRequestMsg: String
   
-  var clientTotalBytesDownloaded: Double = js.native
+  var clientTotalBytesDownloaded: Double
   
-  var clientTotalBytesUploaded: Double = js.native
+  var clientTotalBytesUploaded: Double
   
-  var clientTotalconnections: Double = js.native
+  var clientTotalconnections: Double
   
-  var clientType: ClientType = js.native
+  var clientType: ClientType
   
-  var clientUniqueIdentifier: String = js.native
+  var clientUniqueIdentifier: String
   
-  var clientVersion: String = js.native
+  var clientVersion: String
   
-  var clientVersionSign: String = js.native
+  var clientVersionSign: String
   
-  var connectionBandwidthReceivedLastMinuteTotal: Double = js.native
+  var connectionBandwidthReceivedLastMinuteTotal: Double
   
-  var connectionBandwidthReceivedLastSecondTotal: Double = js.native
+  var connectionBandwidthReceivedLastSecondTotal: Double
   
-  var connectionBandwidthSentLastMinuteTotal: Double = js.native
+  var connectionBandwidthSentLastMinuteTotal: Double
   
-  var connectionBandwidthSentLastSecondTotal: Double = js.native
+  var connectionBandwidthSentLastSecondTotal: Double
   
-  var connectionBytesReceivedTotal: Double = js.native
+  var connectionBytesReceivedTotal: Double
   
-  var connectionBytesSentTotal: Double = js.native
+  var connectionBytesSentTotal: Double
   
-  var connectionClientIp: String = js.native
+  var connectionClientIp: String
   
-  var connectionConnectedTime: Double = js.native
+  var connectionConnectedTime: Double
   
-  var connectionFiletransferBandwidthReceived: Double = js.native
+  var connectionFiletransferBandwidthReceived: Double
   
-  var connectionFiletransferBandwidthSent: Double = js.native
+  var connectionFiletransferBandwidthSent: Double
   
-  var connectionPacketsReceivedTotal: Double = js.native
+  var connectionPacketsReceivedTotal: Double
   
-  var connectionPacketsSentTotal: Double = js.native
+  var connectionPacketsSentTotal: Double
 }
 object ClientInfo {
   

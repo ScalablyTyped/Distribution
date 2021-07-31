@@ -2,30 +2,25 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberLiteral extends Node {
+trait NumberLiteral
+  extends StObject
+     with Node {
   
-  var original: Double = js.native
+  var original: Double
   
   @JSName("type")
-  var type_NumberLiteral: typings.handlebars.handlebarsStrings.NumberLiteral = js.native
+  var type_NumberLiteral: typings.handlebars.handlebarsStrings.NumberLiteral
   
-  var value: Double = js.native
+  var value: Double
 }
 object NumberLiteral {
   
   @scala.inline
-  def apply(
-    loc: SourceLocation,
-    original: Double,
-    `type`: typings.handlebars.handlebarsStrings.NumberLiteral,
-    value: Double
-  ): NumberLiteral = {
+  def apply(loc: SourceLocation, original: Double, value: Double): NumberLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NumberLiteral")
     __obj.asInstanceOf[NumberLiteral]
   }
   

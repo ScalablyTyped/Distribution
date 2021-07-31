@@ -2,25 +2,23 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextChange extends StObject {
   
-  var newExtent: Point = js.native
+  var newExtent: Point
   
-  var newRange: Range = js.native
+  var newRange: Range
   
-  var newText: String = js.native
+  var newText: String
   
-  var oldExtent: Point = js.native
+  var oldExtent: Point
   
-  var oldRange: Range = js.native
+  var oldRange: Range
   
-  var oldText: String = js.native
+  var oldText: String
   
-  var start: Point = js.native
+  var start: Point
 }
 object TextChange {
   

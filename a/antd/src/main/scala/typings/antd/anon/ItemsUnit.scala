@@ -3,33 +3,31 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsUnit extends StObject {
   
-  var itemUnit: String = js.native
+  var itemUnit: String
   
-  var itemsUnit: String = js.native
+  var itemsUnit: String
   
-  var notFoundContent: ReactNode = js.native
+  var notFoundContent: ReactNode
   
-  var remove: String = js.native
+  var remove: String
   
-  var removeAll: String = js.native
+  var removeAll: String
   
-  var removeCurrent: String = js.native
+  var removeCurrent: String
   
-  var searchPlaceholder: String = js.native
+  var searchPlaceholder: String
   
-  var selectAll: String = js.native
+  var selectAll: String
   
-  var selectCurrent: String = js.native
+  var selectCurrent: String
   
-  var selectInvert: String = js.native
+  var selectInvert: String
   
-  var titles: js.Array[String] = js.native
+  var titles: js.Array[String]
 }
 object ItemsUnit {
   

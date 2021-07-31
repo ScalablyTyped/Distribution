@@ -2,15 +2,13 @@ package typings.calidation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleValidatorConfig[T /* <: js.Object */] extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var validateIf: js.UndefOr[(js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean] = js.native
+  var validateIf: js.UndefOr[(js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean] = js.undefined
 }
 object SimpleValidatorConfig {
   
@@ -21,7 +19,7 @@ object SimpleValidatorConfig {
   }
   
   @scala.inline
-  implicit class SimpleValidatorConfigMutableBuilder[Self <: SimpleValidatorConfig[_], T /* <: js.Object */] (val x: Self with SimpleValidatorConfig[T]) extends AnyVal {
+  implicit class SimpleValidatorConfigMutableBuilder[Self <: SimpleValidatorConfig[?], T /* <: js.Object */] (val x: Self & SimpleValidatorConfig[T]) extends AnyVal {
     
     @scala.inline
     def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])

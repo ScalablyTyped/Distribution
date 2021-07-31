@@ -4,27 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.minimatch.mod.IMinimatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fixturify", "readSync")
+  @JSImport("fixturify", JSImport.Namespace)
   @js.native
-  def readSync(dir: String): DirJSON = js.native
-  @JSImport("fixturify", "readSync")
-  @js.native
-  def readSync(dir: String, options: js.UndefOr[scala.Nothing], relativeRoot: String): DirJSON = js.native
-  @JSImport("fixturify", "readSync")
-  @js.native
-  def readSync(dir: String, options: Options): DirJSON = js.native
-  @JSImport("fixturify", "readSync")
-  @js.native
-  def readSync(dir: String, options: Options, relativeRoot: String): DirJSON = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fixturify", "writeSync")
-  @js.native
-  def writeSync(dir: String, obj: DirJSON): Unit = js.native
+  @scala.inline
+  def readSync(dir: String): DirJSON = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any]).asInstanceOf[DirJSON]
+  @scala.inline
+  def readSync(dir: String, options: Unit, relativeRoot: String): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relativeRoot.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
+  @scala.inline
+  def readSync(dir: String, options: Options): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
+  @scala.inline
+  def readSync(dir: String, options: Options, relativeRoot: String): DirJSON = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], relativeRoot.asInstanceOf[js.Any])).asInstanceOf[DirJSON]
+  
+  @scala.inline
+  def writeSync(dir: String, obj: DirJSON): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(dir.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     A recursive JSON representation of a directory. This representation includes
@@ -43,8 +41,9 @@ object mod {
     }
     ```
     */
-  @js.native
-  trait DirJSON extends /* filename */ StringDictionary[DirJSON | String | Null]
+  trait DirJSON
+    extends StObject
+       with /* filename */ StringDictionary[DirJSON | String | Null]
   object DirJSON {
     
     @scala.inline
@@ -54,14 +53,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var exclude: js.UndefOr[js.Array[IMinimatch | String]] = js.native
+    var exclude: js.UndefOr[js.Array[IMinimatch | String]] = js.undefined
     
-    var ignoreEmptyDirs: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyDirs: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[js.Array[IMinimatch | String]] = js.native
+    var include: js.UndefOr[js.Array[IMinimatch | String]] = js.undefined
   }
   object Options {
     

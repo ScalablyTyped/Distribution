@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLoggingOptionsResponse extends StObject {
   
   /**
     * The logging level.
     */
-  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: js.UndefOr[AwsArn] = js.native
+  var roleArn: js.UndefOr[AwsArn] = js.undefined
 }
 object GetLoggingOptionsResponse {
   

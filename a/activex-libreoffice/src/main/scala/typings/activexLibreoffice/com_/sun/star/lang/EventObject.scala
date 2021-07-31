@@ -3,15 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.lang
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the base for all event objects and identifies the source of the event. */
-@js.native
 trait EventObject extends StObject {
   
   /** refers to the object that fired the event. */
-  var Source: XInterface = js.native
+  var Source: XInterface
 }
 object EventObject {
   

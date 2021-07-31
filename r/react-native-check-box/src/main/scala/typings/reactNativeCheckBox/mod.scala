@@ -8,7 +8,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,38 +19,37 @@ object mod {
   
   type CheckBox = Component[CheckBoxProps, js.Object, js.Any]
   
-  @js.native
   trait CheckBoxProps extends StObject {
     
-    var checkBoxColor: js.UndefOr[String] = js.native
+    var checkBoxColor: js.UndefOr[String] = js.undefined
     
-    var checkedCheckBoxColor: js.UndefOr[String] = js.native
+    var checkedCheckBoxColor: js.UndefOr[String] = js.undefined
     
-    var checkedImage: js.UndefOr[ReactElement] = js.native
+    var checkedImage: js.UndefOr[ReactElement] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isChecked: Boolean = js.native
+    var isChecked: Boolean
     
-    var leftText: js.UndefOr[String] = js.native
+    var leftText: js.UndefOr[String] = js.undefined
     
-    var leftTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var leftTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var leftTextView: js.UndefOr[ReactNode] = js.native
+    var leftTextView: js.UndefOr[ReactNode] = js.undefined
     
-    def onClick(): Unit = js.native
+    def onClick(): Unit
     
-    var rightText: js.UndefOr[String] = js.native
+    var rightText: js.UndefOr[String] = js.undefined
     
-    var rightTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var rightTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var rightTextView: js.UndefOr[ReactNode] = js.native
+    var rightTextView: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var unCheckedImage: js.UndefOr[ReactElement] = js.native
+    var unCheckedImage: js.UndefOr[ReactElement] = js.undefined
     
-    var uncheckedCheckBoxColor: js.UndefOr[String] = js.native
+    var uncheckedCheckBoxColor: js.UndefOr[String] = js.undefined
   }
   object CheckBoxProps {
     

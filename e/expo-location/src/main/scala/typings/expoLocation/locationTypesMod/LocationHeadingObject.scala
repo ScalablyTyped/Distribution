@@ -2,17 +2,15 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationHeadingObject extends StObject {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var magHeading: Double = js.native
+  var magHeading: Double
   
-  var trueHeading: Double = js.native
+  var trueHeading: Double
 }
 object LocationHeadingObject {
   

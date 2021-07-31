@@ -4,48 +4,39 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.signalrNoJquery.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("signalr-no-jquery", "hubConnection")
+  @JSImport("signalr-no-jquery", JSImport.Namespace)
   @js.native
-  def hubConnection(): Connection = js.native
-  @JSImport("signalr-no-jquery", "hubConnection")
-  @js.native
-  def hubConnection(url: js.UndefOr[scala.Nothing], options: Options): Connection = js.native
-  @JSImport("signalr-no-jquery", "hubConnection")
-  @js.native
-  def hubConnection(url: String): Connection = js.native
-  @JSImport("signalr-no-jquery", "hubConnection")
-  @js.native
-  def hubConnection(url: String, options: Options): Connection = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: js.UndefOr[scala.Nothing], qs: js.UndefOr[scala.Nothing], logging: js.Any): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: js.UndefOr[scala.Nothing], qs: js.Any): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: js.UndefOr[scala.Nothing], qs: js.Any, logging: js.Any): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: String): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: String, qs: js.UndefOr[scala.Nothing], logging: js.Any): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: String, qs: js.Any): js.Any = js.native
-  @JSImport("signalr-no-jquery", "signalR")
-  @js.native
-  def signalR(url: String, qs: js.Any, logging: js.Any): js.Any = js.native
+  @scala.inline
+  def hubConnection(): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")().asInstanceOf[Connection]
+  @scala.inline
+  def hubConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  @scala.inline
+  def hubConnection(url: String, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  @scala.inline
+  def hubConnection(url: Unit, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  
+  @scala.inline
+  def signalR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")().asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: String, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: String, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: String, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: Unit, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: Unit, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def signalR(url: Unit, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait Connection extends StObject {
@@ -67,26 +58,25 @@ object mod {
     def reconnecting(callback: js.Function0[Unit]): Unit = js.native
     
     def start(): js.Any = js.native
-    def start(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Any = js.native
     def start(options: js.Any): js.Any = js.native
     def start(options: js.Any, callback: js.Function0[Unit]): js.Any = js.native
+    def start(options: Unit, callback: js.Function0[Unit]): js.Any = js.native
     
     def stop(): Unit = js.native
-    def stop(async: js.UndefOr[scala.Nothing], notifyServer: Boolean): Unit = js.native
     def stop(async: Boolean): Unit = js.native
     def stop(async: Boolean, notifyServer: Boolean): Unit = js.native
+    def stop(async: Unit, notifyServer: Boolean): Unit = js.native
     
     var transport: Name = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
-    var qs: js.UndefOr[String] = js.native
+    var qs: js.UndefOr[String] = js.undefined
     
-    var useDefaultPath: js.UndefOr[Boolean] = js.native
+    var useDefaultPath: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -135,7 +125,7 @@ object mod {
       *
       * @param methodName The name of the server hub method.
       */
-    def invoke(methodName: String, args: js.Any*): js.Promise[_] = js.native
+    def invoke(methodName: String, args: js.Any*): js.Promise[js.Any] = js.native
     
     /**
       * Removes the callback invocation request from the server hub for the given event name.

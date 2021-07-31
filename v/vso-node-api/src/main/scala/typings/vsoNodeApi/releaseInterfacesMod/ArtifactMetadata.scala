@@ -2,21 +2,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactMetadata extends StObject {
   
   /**
     * Sets alias of artifact.
     */
-  var alias: String = js.native
+  var alias: String
   
   /**
     * Sets instance reference of artifact. e.g. for build artifact it is build number.
     */
-  var instanceReference: BuildVersion = js.native
+  var instanceReference: BuildVersion
 }
 object ArtifactMetadata {
   

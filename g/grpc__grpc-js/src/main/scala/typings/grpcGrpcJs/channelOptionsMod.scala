@@ -3,14 +3,16 @@ package typings.grpcGrpcJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelOptionsMod {
   
-  @JSImport("@grpc/grpc-js/build/src/channel-options", "channelOptionsEqual")
+  @JSImport("@grpc/grpc-js/build/src/channel-options", JSImport.Namespace)
   @js.native
-  def channelOptionsEqual(options1: ChannelOptions, options2: ChannelOptions): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def channelOptionsEqual(options1: ChannelOptions, options2: ChannelOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelOptionsEqual")(options1.asInstanceOf[js.Any], options2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object recognizedOptions {
     
@@ -117,57 +119,57 @@ object channelOptionsMod {
     def grpcUseLocalSubchannelPool_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grpc.use_local_subchannel_pool")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ChannelOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     @JSName("grpc.default_authority")
-    var grpcDotdefault_authority: js.UndefOr[String] = js.native
+    var grpcDotdefault_authority: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.enable_http_proxy")
-    var grpcDotenable_http_proxy: js.UndefOr[Double] = js.native
+    var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.http_connect_creds")
-    var grpcDothttp_connect_creds: js.UndefOr[String] = js.native
+    var grpcDothttp_connect_creds: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.http_connect_target")
-    var grpcDothttp_connect_target: js.UndefOr[String] = js.native
+    var grpcDothttp_connect_target: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.initial_reconnect_backoff_ms")
-    var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.native
+    var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_time_ms")
-    var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.native
+    var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_timeout_ms")
-    var grpcDotkeepalive_timeout_ms: js.UndefOr[Double] = js.native
+    var grpcDotkeepalive_timeout_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_concurrent_streams")
-    var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.native
+    var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_receive_message_length")
-    var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.native
+    var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_reconnect_backoff_ms")
-    var grpcDotmax_reconnect_backoff_ms: js.UndefOr[Double] = js.native
+    var grpcDotmax_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_send_message_length")
-    var grpcDotmax_send_message_length: js.UndefOr[Double] = js.native
+    var grpcDotmax_send_message_length: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.primary_user_agent")
-    var grpcDotprimary_user_agent: js.UndefOr[String] = js.native
+    var grpcDotprimary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.secondary_user_agent")
-    var grpcDotsecondary_user_agent: js.UndefOr[String] = js.native
+    var grpcDotsecondary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.service_config")
-    var grpcDotservice_config: js.UndefOr[String] = js.native
+    var grpcDotservice_config: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.ssl_target_name_override")
-    var grpcDotssl_target_name_override: js.UndefOr[String] = js.native
+    var grpcDotssl_target_name_override: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.use_local_subchannel_pool")
-    var grpcDotuse_local_subchannel_pool: js.UndefOr[Double] = js.native
+    var grpcDotuse_local_subchannel_pool: js.UndefOr[Double] = js.undefined
   }
   object ChannelOptions {
     

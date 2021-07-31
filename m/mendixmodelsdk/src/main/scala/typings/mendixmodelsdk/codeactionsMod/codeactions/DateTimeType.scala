@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object DateTimeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.DateTimeType.create")
-  @js.native
-  def create(model: IModel): DateTimeType = js.native
+  @scala.inline
+  def create(model: IModel): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object DateTimeType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.DateTimeType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): DateTimeType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -78,9 +75,8 @@ object DateTimeType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.DateTimeType.createInCodeActionUnderActionReturnType")
-  @js.native
-  def createInCodeActionUnderActionReturnType(container: CodeAction): DateTimeType = js.native
+  @scala.inline
+  def createInCodeActionUnderActionReturnType(container: CodeAction): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.DateTimeType.structureTypeName")

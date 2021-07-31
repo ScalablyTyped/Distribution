@@ -2,15 +2,15 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowAlertRequestedEvent extends WindowEvent {
+trait WindowAlertRequestedEvent
+  extends StObject
+     with WindowEvent {
   
-  var message: String = js.native
+  var message: String
   
-  var url: String = js.native
+  var url: String
 }
 object WindowAlertRequestedEvent {
   

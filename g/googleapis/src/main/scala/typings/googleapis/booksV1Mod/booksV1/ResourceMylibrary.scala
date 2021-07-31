@@ -3,7 +3,6 @@ package typings.googleapis.booksV1Mod.booksV1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary")

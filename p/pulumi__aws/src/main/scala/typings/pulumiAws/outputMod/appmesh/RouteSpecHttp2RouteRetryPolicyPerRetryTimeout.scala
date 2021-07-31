@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteRetryPolicyPerRetryTimeout extends StObject {
   
   /**
     * Retry unit. Valid values: `ms`, `s`.
     */
-  var unit: String = js.native
+  var unit: String
   
   /**
     * Retry value.
     */
-  var value: Double = js.native
+  var value: Double
 }
 object RouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
   

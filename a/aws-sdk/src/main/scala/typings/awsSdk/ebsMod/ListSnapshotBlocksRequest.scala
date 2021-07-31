@@ -2,31 +2,29 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSnapshotBlocksRequest extends StObject {
   
   /**
     * The number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.ebsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.ebsMod.MaxResults] = js.undefined
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[PageToken] = js.native
+  var NextToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * The ID of the snapshot from which to get block indexes and block tokens.
     */
-  var SnapshotId: typings.awsSdk.ebsMod.SnapshotId = js.native
+  var SnapshotId: typings.awsSdk.ebsMod.SnapshotId
   
   /**
     * The block index from which the list should start. The list in the response will start from this block index or the next valid block index in the snapshot.
     */
-  var StartingBlockIndex: js.UndefOr[BlockIndex] = js.native
+  var StartingBlockIndex: js.UndefOr[BlockIndex] = js.undefined
 }
 object ListSnapshotBlocksRequest {
   

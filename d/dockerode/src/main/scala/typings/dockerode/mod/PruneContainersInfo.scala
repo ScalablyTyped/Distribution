@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PruneContainersInfo extends StObject {
   
-  var ContainersDeleted: js.Array[String] = js.native
+  var ContainersDeleted: js.Array[String]
   
-  var SpaceReclaimed: Double = js.native
+  var SpaceReclaimed: Double
 }
 object PruneContainersInfo {
   

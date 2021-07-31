@@ -2,21 +2,19 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUnmappedIdentity extends StObject {
   
   /**
     * The resource name for an external user.
     */
-  var externalIdentity: js.UndefOr[SchemaPrincipal] = js.native
+  var externalIdentity: js.UndefOr[SchemaPrincipal] = js.undefined
   
   /**
     * The resolution status for the external identity.
     */
-  var resolutionStatusCode: js.UndefOr[String] = js.native
+  var resolutionStatusCode: js.UndefOr[String] = js.undefined
 }
 object SchemaUnmappedIdentity {
   

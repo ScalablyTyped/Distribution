@@ -4,21 +4,20 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelsMod {
   
   object Models {
     
-    @js.native
     trait TabData
-      extends /** for user's custom extends */
+      extends StObject
+         with /** for user's custom extends */
     /* key */ StringDictionary[js.Any] {
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var title: ReactNode = js.native
+      var title: ReactNode
     }
     object TabData {
       

@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Termination extends StObject {
   
   /**
     * The countries to which calls are allowed, in ISO 3166-1 alpha-2 format. Required.
     */
-  var CallingRegions: js.UndefOr[CallingRegionList] = js.native
+  var CallingRegions: js.UndefOr[CallingRegionList] = js.undefined
   
   /**
     * The IP addresses allowed to make calls, in CIDR format. Required.
     */
-  var CidrAllowedList: js.UndefOr[StringList] = js.native
+  var CidrAllowedList: js.UndefOr[StringList] = js.undefined
   
   /**
     * The limit on calls per second. Max value based on account service quota. Default value of 1.
     */
-  var CpsLimit: js.UndefOr[typings.awsSdk.chimeMod.CpsLimit] = js.native
+  var CpsLimit: js.UndefOr[typings.awsSdk.chimeMod.CpsLimit] = js.undefined
   
   /**
     * The default caller ID phone number.
     */
-  var DefaultPhoneNumber: js.UndefOr[E164PhoneNumber] = js.native
+  var DefaultPhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
   
   /**
     * When termination settings are disabled, outbound calls can not be made.
     */
-  var Disabled: js.UndefOr[Boolean] = js.native
+  var Disabled: js.UndefOr[Boolean] = js.undefined
 }
 object Termination {
   

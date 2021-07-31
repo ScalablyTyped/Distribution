@@ -12,7 +12,7 @@ Implementation of the Graham Scan algorithm to calculate a convex hull from a gi
 | Keywords           | convex, hull |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 76708 |
+| # downloads        | 150599 |
 | # stars            | 0 |
 
 ## Links

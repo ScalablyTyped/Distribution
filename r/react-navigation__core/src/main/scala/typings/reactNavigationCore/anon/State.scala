@@ -2,13 +2,11 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var state: js.UndefOr[PartialStateNavigationSta] = js.native
+  var state: js.UndefOr[PartialStateNavigationSta] = js.undefined
 }
 object State {
   

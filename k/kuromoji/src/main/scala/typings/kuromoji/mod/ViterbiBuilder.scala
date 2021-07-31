@@ -3,19 +3,17 @@ package typings.kuromoji.mod
 import typings.doublearray.doublearray.DoubleArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViterbiBuilder extends StObject {
   
-  def build(sentence_str: String): ViterbiLattice = js.native
+  def build(sentence_str: String): ViterbiLattice
   
-  var token_info_dictionary: TokenInfoDictionary = js.native
+  var token_info_dictionary: TokenInfoDictionary
   
-  var trie: DoubleArray = js.native
+  var trie: DoubleArray
   
-  var unknown_dictionary: UnknownDictionary = js.native
+  var unknown_dictionary: UnknownDictionary
 }
 object ViterbiBuilder {
   

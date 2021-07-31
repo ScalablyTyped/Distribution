@@ -2,13 +2,11 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the geographic scope of a contest.
   */
-@js.native
 trait SchemaElectoralDistrict extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaElectoralDistrict extends StObject {
     * 34th State Senate district would have id &quot;34&quot; and a scope of
     * stateUpper.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kgForeignKey: js.UndefOr[String] = js.native
+  var kgForeignKey: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the district.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic scope of this district. If unspecified the district&#39;s
@@ -31,7 +29,7 @@ trait SchemaElectoralDistrict extends StObject {
     * stateUpper, stateLower, countywide, judicial, schoolBoard, cityWide,
     * township, countyCouncil, cityCouncil, ward, special
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object SchemaElectoralDistrict {
   

@@ -2,17 +2,15 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IErrorTranslateArgs extends StObject {
   
-  var CustomMessage: js.UndefOr[IErrorCustomMessage] = js.native
+  var CustomMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
   
-  var MessageArgs: js.Any = js.native
+  var MessageArgs: js.Any
   
-  var TranslateId: String = js.native
+  var TranslateId: String
 }
 object IErrorTranslateArgs {
   

@@ -3,29 +3,29 @@ package typings.reactNativeElements.mod
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleProps extends TouchableWithoutFeedbackProps {
+trait ScaleProps
+  extends StObject
+     with TouchableWithoutFeedbackProps {
   
-  var activeScale: js.UndefOr[Double] = js.native
+  var activeScale: js.UndefOr[Double] = js.undefined
   
-  var defaultNumber: js.UndefOr[Double] = js.native
+  var defaultNumber: js.UndefOr[Double] = js.undefined
   
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
-  var pressInFriction: js.UndefOr[Double] = js.native
+  var pressInFriction: js.UndefOr[Double] = js.undefined
   
-  var pressInTension: js.UndefOr[Double] = js.native
+  var pressInTension: js.UndefOr[Double] = js.undefined
   
-  var pressOutFriction: js.UndefOr[Double] = js.native
+  var pressOutFriction: js.UndefOr[Double] = js.undefined
   
-  var pressOutTension: js.UndefOr[Double] = js.native
+  var pressOutTension: js.UndefOr[Double] = js.undefined
   
-  var tension: js.UndefOr[Double] = js.native
+  var tension: js.UndefOr[Double] = js.undefined
   
-  var useNativeDriver: js.UndefOr[Boolean] = js.native
+  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
 }
 object ScaleProps {
   

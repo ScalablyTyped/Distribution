@@ -4,21 +4,21 @@
 Typings are for version 1.1
 
 ## Library description:
-Content-range header formatter.
+Content-Range header formatter .
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | content-range |
 | Keywords           | content-range, header, formatter, parser |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 8 |
-| # downloads        | 176290 |
+| # downloads        | 189063 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/gregberge/react-merge-refs#readme)
-- [Bugs](https://github.com/gregberge/react-merge-refs/issues)
-- [Repository](https://github.com/gregberge/react-merge-refs)
+- [Homepage](https://github.com/gregberge/content-range#readme)
+- [Bugs](https://github.com/gregberge/content-range/issues)
+- [Repository](https://github.com/gregberge/content-range)
 - [Npm](https://www.npmjs.com/package/content-range)
     
 

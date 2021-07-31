@@ -6,7 +6,6 @@ import typings.electron.Electron.DesktopCapturer
 import typings.electron.Electron.Shell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Common {
@@ -14,7 +13,8 @@ object Common {
   @JSImport("electron", "Common.NativeImage")
   @js.native
   class NativeImage_ ()
-    extends typings.electron.Electron.NativeImage_
+    extends StObject
+       with typings.electron.Electron.NativeImage_
   
   @JSImport("electron", "Common.clipboard")
   @js.native
@@ -32,7 +32,8 @@ object Common {
   @JSImport("electron", "Common.nativeImage")
   @js.native
   class nativeImage ()
-    extends typings.electron.Electron.NativeImage_
+    extends StObject
+       with typings.electron.Electron.NativeImage_
   
   @JSImport("electron", "Common.shell")
   @js.native

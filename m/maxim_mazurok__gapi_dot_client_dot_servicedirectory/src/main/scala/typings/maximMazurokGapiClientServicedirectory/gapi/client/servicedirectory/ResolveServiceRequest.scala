@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveServiceRequest extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait ResolveServiceRequest extends StObject {
     * Endpoints that have a label with the key "owner", this is the same as "metadata:owner" * "metadata.protocol=gRPC" returns Endpoints that have key/value "protocol=gRPC" *
     * "metadata.owner!=sd AND metadata.foo=bar" returns Endpoints that have "owner" field in metadata with a value that is not "sd" AND have the key/value foo=bar.
     */
-  var endpointFilter: js.UndefOr[String] = js.native
+  var endpointFilter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The maximum number of endpoints to return. Defaults to 25. Maximum is 100. If a value less than one is specified, the Default is used. If a value greater than the Maximum
     * is specified, the Maximum is used.
     */
-  var maxEndpoints: js.UndefOr[Double] = js.native
+  var maxEndpoints: js.UndefOr[Double] = js.undefined
 }
 object ResolveServiceRequest {
   

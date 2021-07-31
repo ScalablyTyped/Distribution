@@ -3,35 +3,35 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.decisionMod.TransactionDecisionArgument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoogleActionsV2TransactionDecisionValue extends TransactionDecisionArgument {
+trait GoogleActionsV2TransactionDecisionValue
+  extends StObject
+     with TransactionDecisionArgument {
   
   /**
     * If `check_result` is NOT `ResultType.OK`, the rest of the fields in
     * this message should be ignored.
     */
-  var checkResult: js.UndefOr[GoogleActionsV2TransactionRequirementsCheckResult] = js.native
+  var checkResult: js.UndefOr[GoogleActionsV2TransactionRequirementsCheckResult] = js.undefined
   
   /**
     * If user requests for delivery address update, this field includes the
     * new delivery address. This field will be present only when `user_decision`
     * is `DELIVERY_ADDRESS_UPDATED`.
     */
-  var deliveryAddress: js.UndefOr[GoogleActionsV2Location] = js.native
+  var deliveryAddress: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * The order that user has approved. This field will be present only when
     * `user_decision` is `ORDER_ACCEPTED`.
     */
-  var order: js.UndefOr[GoogleActionsV2OrdersOrder] = js.native
+  var order: js.UndefOr[GoogleActionsV2OrdersOrder] = js.undefined
   
   /**
     * User decision regarding the proposed order.
     */
-  var userDecision: js.UndefOr[GoogleActionsV2TransactionDecisionValueUserDecision] = js.native
+  var userDecision: js.UndefOr[GoogleActionsV2TransactionDecisionValueUserDecision] = js.undefined
 }
 object GoogleActionsV2TransactionDecisionValue {
   

@@ -17,7 +17,6 @@ import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardContentMod extends Shortcut {
@@ -26,9 +25,9 @@ object cardContentMod extends Shortcut {
   @js.native
   val default: StatelessComponent[CardContentProps] = js.native
   
-  @js.native
   trait CardContentProps
-    extends StrictCardContentProps
+    extends StObject
+       with StrictCardContentProps
        with /* key */ StringDictionary[js.Any]
   object CardContentProps {
     
@@ -39,35 +38,34 @@ object cardContentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCardContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for CardDescription. */
-    var description: js.UndefOr[SemanticShorthandItem[CardDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[CardDescriptionProps]] = js.undefined
     
     /** A card can contain extra content meant to be formatted separately from the main content. */
-    var extra: js.UndefOr[Boolean] = js.native
+    var extra: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for CardHeader. */
-    var header: js.UndefOr[SemanticShorthandItem[CardHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[CardHeaderProps]] = js.undefined
     
     /** Shorthand for CardMeta. */
-    var meta: js.UndefOr[SemanticShorthandItem[CardMetaProps]] = js.native
+    var meta: js.UndefOr[SemanticShorthandItem[CardMetaProps]] = js.undefined
     
     /** A card content can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.native
+    var textAlign: js.UndefOr[center | left | right] = js.undefined
   }
   object StrictCardContentProps {
     

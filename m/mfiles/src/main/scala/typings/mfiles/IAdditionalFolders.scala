@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAdditionalFolders extends StObject {
   
-  def Add(Index: Double, AdditionalFolder: IAdditionalFolder): Unit = js.native
+  def Add(Index: Double, AdditionalFolder: IAdditionalFolder): Unit
   
-  def Clone(): IAdditionalFolders = js.native
+  def Clone(): IAdditionalFolders
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IAdditionalFolder = js.native
+  def Item(Index: Double): IAdditionalFolder
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IAdditionalFolders {
   

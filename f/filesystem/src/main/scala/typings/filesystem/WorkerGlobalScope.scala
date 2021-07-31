@@ -2,12 +2,13 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.filesystem.LocalFileSystemSync because var conflicts: PERSISTENT, TEMPORARY. Inlined requestFileSystemSync, resolveLocalFileSystemSyncURL, webkitRequestFileSystemSync */ @js.native
-trait WorkerGlobalScope extends LocalFileSystem {
+trait WorkerGlobalScope
+  extends StObject
+     with LocalFileSystem {
   
   /**
     * Requests a filesystem in which to store application data.

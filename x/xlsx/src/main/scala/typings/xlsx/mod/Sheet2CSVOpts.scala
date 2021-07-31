@@ -2,32 +2,32 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Sheet2CSVOpts extends DateNFOption {
+trait Sheet2CSVOpts
+  extends StObject
+     with DateNFOption {
   
   /** Field Separator ("delimiter") */
-  var FS: js.UndefOr[String] = js.native
+  var FS: js.UndefOr[String] = js.undefined
   
   /** Record Separator ("row separator") */
-  var RS: js.UndefOr[String] = js.native
+  var RS: js.UndefOr[String] = js.undefined
   
   /** Include blank lines in the CSV output */
-  var blankrows: js.UndefOr[Boolean] = js.native
+  var blankrows: js.UndefOr[Boolean] = js.undefined
   
   /** Force quotes around fields */
-  var forceQuotes: js.UndefOr[Boolean] = js.native
+  var forceQuotes: js.UndefOr[Boolean] = js.undefined
   
   /** if true, return raw numbers; if false, return formatted numbers */
-  var rawNumbers: js.UndefOr[Boolean] = js.native
+  var rawNumbers: js.UndefOr[Boolean] = js.undefined
   
   /** Skip hidden rows and columns in the CSV output */
-  var skipHidden: js.UndefOr[Boolean] = js.native
+  var skipHidden: js.UndefOr[Boolean] = js.undefined
   
   /** Remove trailing field separators in each record */
-  var strip: js.UndefOr[Boolean] = js.native
+  var strip: js.UndefOr[Boolean] = js.undefined
 }
 object Sheet2CSVOpts {
   

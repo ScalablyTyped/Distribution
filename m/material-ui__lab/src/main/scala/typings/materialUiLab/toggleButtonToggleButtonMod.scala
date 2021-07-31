@@ -3,7 +3,6 @@ package typings.materialUiLab
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toggleButtonToggleButtonMod {
@@ -53,7 +52,7 @@ object toggleButtonToggleButtonMod {
     def sizeSmall: typings.materialUiLab.materialUiLabStrings.sizeSmall = "sizeSmall".asInstanceOf[typings.materialUiLab.materialUiLabStrings.sizeSmall]
   }
   
-  type ToggleButtonProps[D /* <: ElementType[_] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<ToggleButtonTypeMap<P, D>, D> */ js.Any
+  type ToggleButtonProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<ToggleButtonTypeMap<P, D>, D> */ js.Any
   
-  type ToggleButtonTypeMap[P, D /* <: ElementType[_] */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendButtonBaseTypeMap<{  props :P & {  disableFocusRipple :boolean | undefined,   selected :boolean | undefined,   size :'small' | 'medium' | 'large' | undefined,   value :any | undefined},   defaultComponent :D,   classKey :ToggleButtonClassKey}> */ js.Any
+  type ToggleButtonTypeMap[P, D /* <: ElementType[js.Any] */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendButtonBaseTypeMap<{  props :P & {  disableFocusRipple :boolean | undefined,   selected :boolean | undefined,   size :'small' | 'medium' | 'large' | undefined,   value :any | undefined},   defaultComponent :D,   classKey :ToggleButtonClassKey}> */ js.Any
 }

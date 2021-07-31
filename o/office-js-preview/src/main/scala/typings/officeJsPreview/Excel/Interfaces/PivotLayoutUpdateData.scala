@@ -10,11 +10,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Outline
 import typings.officeJsPreview.officeJsPreviewStrings.Tabular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
-@js.native
 trait PivotLayoutUpdateData extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait PivotLayoutUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var altTextDescription: js.UndefOr[String] = js.native
+  var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait PivotLayoutUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var altTextTitle: js.UndefOr[String] = js.native
+  var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFormat: js.UndefOr[Boolean] = js.native
+  var autoFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait PivotLayoutUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var emptyCellText: js.UndefOr[String] = js.native
+  var emptyCellText: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var enableFieldList: js.UndefOr[Boolean] = js.native
+  var enableFieldList: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -78,7 +76,7 @@ trait PivotLayoutUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var fillEmptyCells: js.UndefOr[Boolean] = js.native
+  var fillEmptyCells: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var layoutType: js.UndefOr[PivotLayoutType | Compact | Tabular | Outline] = js.native
+  var layoutType: js.UndefOr[PivotLayoutType | Compact | Tabular | Outline] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait PivotLayoutUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var pivotStyle: js.UndefOr[PivotTableStyleUpdateData] = js.native
+  var pivotStyle: js.UndefOr[PivotTableStyleUpdateData] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var preserveFormatting: js.UndefOr[Boolean] = js.native
+  var preserveFormatting: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -111,7 +109,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showColumnGrandTotals: js.UndefOr[Boolean] = js.native
+  var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -120,7 +118,7 @@ trait PivotLayoutUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var showFieldHeaders: js.UndefOr[Boolean] = js.native
+  var showFieldHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -128,7 +126,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showRowGrandTotals: js.UndefOr[Boolean] = js.native
+  var showRowGrandTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -136,7 +134,7 @@ trait PivotLayoutUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var subtotalLocation: js.UndefOr[SubtotalLocationType | AtTop | AtBottom | Off] = js.native
+  var subtotalLocation: js.UndefOr[SubtotalLocationType | AtTop | AtBottom | Off] = js.undefined
 }
 object PivotLayoutUpdateData {
   

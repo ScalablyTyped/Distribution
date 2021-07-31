@@ -8,7 +8,6 @@ import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmente
 import typings.reactNativeCommunitySegmentedControl.reactNativeCommunitySegmentedControlStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,23 +16,22 @@ object mod {
   @js.native
   class default () extends SegmentedControl
   
-  @js.native
   trait FontStyle extends StObject {
     
     /**
       * Font Color of Segmented Control when Active
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Font Family of the Segmented Control when Active
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * Font Size of Segmented Control when Active
       */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
   }
   object FontStyle {
     
@@ -66,12 +64,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait NativeSegmentedControlIOSChangeEvent extends TargetedEvent {
+  trait NativeSegmentedControlIOSChangeEvent
+    extends StObject
+       with TargetedEvent {
     
-    var selectedSegmentIndex: Double = js.native
+    var selectedSegmentIndex: Double
     
-    var value: String = js.native
+    var value: String
   }
   object NativeSegmentedControlIOSChangeEvent {
     
@@ -119,41 +118,42 @@ object mod {
     */
   type SegmentedControlComponent = Component[SegmentedControlProps, js.Object, js.Any]
   
-  @js.native
-  trait SegmentedControlProps extends ViewProps {
+  trait SegmentedControlProps
+    extends StObject
+       with ViewProps {
     
     /**
       * Active Font style properties of the Segmented Control
       */
-    var activeFontStyle: js.UndefOr[FontStyle] = js.native
+    var activeFontStyle: js.UndefOr[FontStyle] = js.undefined
     
     /**
       * (iOS 13+ only)
       * Overrides the control's appearance irrespective of the OS theme
       */
-    var appearance: js.UndefOr[dark | light] = js.native
+    var appearance: js.UndefOr[dark | light] = js.undefined
     
     /**
       * (iOS 13+ only)
       * Background color of the control.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * If false the user won't be able to interact with the control. Default value is true.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Font style properties of the Segmented Control
       */
-    var fontStyle: js.UndefOr[FontStyle] = js.native
+    var fontStyle: js.UndefOr[FontStyle] = js.undefined
     
     /**
       * If true, then selecting a segment won't persist visually.
       * The onValueChange callback will still work as expected.
       */
-    var momentary: js.UndefOr[Boolean] = js.native
+    var momentary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback that is called when the user taps a segment;
@@ -161,27 +161,27 @@ object mod {
       */
     var onChange: js.UndefOr[
         js.Function1[/* event */ NativeSyntheticEvent[NativeSegmentedControlIOSChangeEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when the user taps a segment; passes the segment's value as an argument
       */
-    var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     /**
       * The index in props.values of the segment to be (pre)selected.
       */
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Accent color of the control.
       */
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
     /**
       * The labels for the control's segment buttons, in order.
       */
-    var values: js.UndefOr[js.Array[String]] = js.native
+    var values: js.UndefOr[js.Array[String]] = js.undefined
   }
   object SegmentedControlProps {
     

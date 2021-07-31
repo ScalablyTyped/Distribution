@@ -9,30 +9,27 @@ import typings.node.Buffer
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lzma-native", "Compressor")
+  @JSImport("lzma-native", JSImport.Namespace)
   @js.native
-  def Compressor(): JSLzmaStream = js.native
-  @JSImport("lzma-native", "Compressor")
-  @js.native
-  def Compressor(preset: js.UndefOr[scala.Nothing], options: LzmaOptions): JSLzmaStream = js.native
-  @JSImport("lzma-native", "Compressor")
-  @js.native
-  def Compressor(preset: Preset): JSLzmaStream = js.native
-  @JSImport("lzma-native", "Compressor")
-  @js.native
-  def Compressor(preset: Preset, options: LzmaOptions): JSLzmaStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lzma-native", "Decompressor")
-  @js.native
-  def Decompressor(): JSLzmaStream = js.native
-  @JSImport("lzma-native", "Decompressor")
-  @js.native
-  def Decompressor(options: LzmaOptions): JSLzmaStream = js.native
+  @scala.inline
+  def Compressor(): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Compressor")().asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def Compressor(preset: Unit, options: LzmaOptions): JSLzmaStream = (^.asInstanceOf[js.Dynamic].applyDynamic("Compressor")(preset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def Compressor(preset: Preset): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Compressor")(preset.asInstanceOf[js.Any]).asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def Compressor(preset: Preset, options: LzmaOptions): JSLzmaStream = (^.asInstanceOf[js.Dynamic].applyDynamic("Compressor")(preset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSLzmaStream]
+  
+  @scala.inline
+  def Decompressor(): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompressor")().asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def Decompressor(options: LzmaOptions): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Decompressor")(options.asInstanceOf[js.Any]).asInstanceOf[JSLzmaStream]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stream.Transform * / any */ @JSImport("lzma-native", "JSLzmaStream")
@@ -50,188 +47,124 @@ object mod {
     def totalOut(): Double = js.native
   }
   
-  @JSImport("lzma-native", "LZMA")
-  @js.native
-  def LZMA(): Compress = js.native
+  @scala.inline
+  def LZMA(): Compress = ^.asInstanceOf[js.Dynamic].applyDynamic("LZMA")().asInstanceOf[Compress]
   
-  @JSImport("lzma-native", "checkSize")
-  @js.native
-  def checkSize(check: Check): Double = js.native
+  @scala.inline
+  def checkSize(check: Check): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSize")(check.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: String): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(
-    buf: String,
-    options: js.UndefOr[scala.Nothing],
-    on_finish: js.Function1[/* result */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: String, options: LzmaOptions): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: String, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: String, options: Preset): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: String, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: Buffer): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(
-    buf: Buffer,
-    options: js.UndefOr[scala.Nothing],
-    on_finish: js.Function1[/* result */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: Buffer, options: LzmaOptions): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: Buffer, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: Buffer, options: Preset): Unit = js.native
-  @JSImport("lzma-native", "compress")
-  @js.native
-  def compress(buf: Buffer, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def compress(buf: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: String, options: Unit, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: String, options: LzmaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: String, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: String, options: Preset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: String, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: Buffer, options: Unit, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: Buffer, options: LzmaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: Buffer, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: Buffer, options: Preset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(buf: Buffer, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lzma-native", "crc32")
-  @js.native
-  def crc32(input: String): String = js.native
-  @JSImport("lzma-native", "crc32")
-  @js.native
-  def crc32(input: String, encoding: js.UndefOr[scala.Nothing], previous: Double): String = js.native
-  @JSImport("lzma-native", "crc32")
-  @js.native
-  def crc32(input: String, encoding: String): String = js.native
-  @JSImport("lzma-native", "crc32")
-  @js.native
-  def crc32(input: String, encoding: String, previous: Double): String = js.native
+  @scala.inline
+  def crc32(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def crc32(input: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def crc32(input: String, encoding: String, previous: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def crc32(input: String, encoding: Unit, previous: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("lzma-native", "createCompressor")
-  @js.native
-  def createCompressor(): JSLzmaStream = js.native
-  @JSImport("lzma-native", "createCompressor")
-  @js.native
-  def createCompressor(options: LzmaOptions): JSLzmaStream = js.native
+  @scala.inline
+  def createCompressor(): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompressor")().asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def createCompressor(options: LzmaOptions): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createCompressor")(options.asInstanceOf[js.Any]).asInstanceOf[JSLzmaStream]
   
-  @JSImport("lzma-native", "createDecompressor")
-  @js.native
-  def createDecompressor(): JSLzmaStream = js.native
-  @JSImport("lzma-native", "createDecompressor")
-  @js.native
-  def createDecompressor(options: LzmaOptions): JSLzmaStream = js.native
+  @scala.inline
+  def createDecompressor(): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecompressor")().asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def createDecompressor(options: LzmaOptions): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecompressor")(options.asInstanceOf[js.Any]).asInstanceOf[JSLzmaStream]
   
-  @JSImport("lzma-native", "createStream")
-  @js.native
-  def createStream(coder: Coders): JSLzmaStream = js.native
-  @JSImport("lzma-native", "createStream")
-  @js.native
-  def createStream(coder: Coders, options: LzmaOptions): JSLzmaStream = js.native
+  @scala.inline
+  def createStream(coder: Coders): JSLzmaStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(coder.asInstanceOf[js.Any]).asInstanceOf[JSLzmaStream]
+  @scala.inline
+  def createStream(coder: Coders, options: LzmaOptions): JSLzmaStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(coder.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSLzmaStream]
   
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: String): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(
-    buf: String,
-    options: js.UndefOr[scala.Nothing],
-    on_finish: js.Function1[/* result */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: String, options: LzmaOptions): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: String, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: String, options: Preset): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: String, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: Buffer): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(
-    buf: Buffer,
-    options: js.UndefOr[scala.Nothing],
-    on_finish: js.Function1[/* result */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: Buffer, options: LzmaOptions): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: Buffer, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: Buffer, options: Preset): Unit = js.native
-  @JSImport("lzma-native", "decompress")
-  @js.native
-  def decompress(buf: Buffer, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def decompress(buf: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: String, options: Unit, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: String, options: LzmaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: String, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: String, options: Preset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: String, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: Buffer, options: Unit, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: Buffer, options: LzmaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: Buffer, options: LzmaOptions, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: Buffer, options: Preset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decompress(buf: Buffer, options: Preset, on_finish: js.Function1[/* result */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buf.asInstanceOf[js.Any], options.asInstanceOf[js.Any], on_finish.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lzma-native", "easyDecoderMemusage")
-  @js.native
-  def easyDecoderMemusage(preset: Preset): Double = js.native
+  @scala.inline
+  def easyDecoderMemusage(preset: Preset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easyDecoderMemusage")(preset.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("lzma-native", "easyEncoderMemusage")
-  @js.native
-  def easyEncoderMemusage(preset: Preset): Double = js.native
+  @scala.inline
+  def easyEncoderMemusage(preset: Preset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easyEncoderMemusage")(preset.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("lzma-native", "isXZ")
-  @js.native
-  def isXZ(buf: String): Boolean = js.native
-  @JSImport("lzma-native", "isXZ")
-  @js.native
-  def isXZ(buf: Buffer): Boolean = js.native
+  @scala.inline
+  def isXZ(buf: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXZ")(buf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isXZ(buf: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXZ")(buf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("lzma-native", "parseFileIndex")
-  @js.native
-  def parseFileIndex(options: FileOptions): Unit = js.native
-  @JSImport("lzma-native", "parseFileIndex")
-  @js.native
+  @scala.inline
+  def parseFileIndex(options: FileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndex")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def parseFileIndex(
     options: FileOptions,
     callback: js.Function2[/* err */ js.Any, /* info */ js.UndefOr[StreamInfo], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndex")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lzma-native", "parseFileIndexFD")
-  @js.native
-  def parseFileIndexFD(fileDescriptor: Double): Unit = js.native
-  @JSImport("lzma-native", "parseFileIndexFD")
-  @js.native
+  @scala.inline
+  def parseFileIndexFD(fileDescriptor: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndexFD")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def parseFileIndexFD(
     fileDescriptor: Double,
     callback: js.Function2[/* err */ js.Any, /* info */ js.UndefOr[StreamInfo], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFileIndexFD")(fileDescriptor.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("lzma-native", "rawDecoderMemusage")
-  @js.native
-  def rawDecoderMemusage(preset: Preset): Double = js.native
+  @scala.inline
+  def rawDecoderMemusage(preset: Preset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rawDecoderMemusage")(preset.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("lzma-native", "rawEncoderMemusage")
-  @js.native
-  def rawEncoderMemusage(preset: Preset): Double = js.native
+  @scala.inline
+  def rawEncoderMemusage(preset: Preset): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rawEncoderMemusage")(preset.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("lzma-native", "versionNumber")
-  @js.native
-  def versionNumber(): Double = js.native
+  @scala.inline
+  def versionNumber(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("versionNumber")().asInstanceOf[Double]
   
-  @JSImport("lzma-native", "versionString")
-  @js.native
-  def versionString(): String = js.native
+  @scala.inline
+  def versionString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("versionString")().asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.lzmaNative.lzmaNativeStrings.CHECK_CRC32
@@ -289,14 +222,13 @@ object mod {
     def streamEncoder: typings.lzmaNative.lzmaNativeStrings.streamEncoder = "streamEncoder".asInstanceOf[typings.lzmaNative.lzmaNativeStrings.streamEncoder]
   }
   
-  @js.native
   trait FileOptions extends StObject {
     
-    var fileSize: Double = js.native
+    var fileSize: Double
     
-    var memlimit: js.UndefOr[Double] = js.native
+    var memlimit: js.UndefOr[Double] = js.undefined
     
-    def read(count: Double, offset: Double, cb: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Unit = js.native
+    def read(count: Double, offset: Double, cb: js.Function2[/* err */ js.Any, /* buffer */ Buffer, Unit]): Unit
   }
   object FileOptions {
     
@@ -326,26 +258,25 @@ object mod {
     }
   }
   
-  @js.native
   trait LzmaOptions extends StObject {
     
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
-    var bufsize: js.UndefOr[Double] = js.native
+    var bufsize: js.UndefOr[Double] = js.undefined
     
-    var check: js.UndefOr[Check] = js.native
+    var check: js.UndefOr[Check] = js.undefined
     
-    var flags: js.UndefOr[TELL_NO_CHECK | TELL_UNSUPPORTED_CHECK | TELL_ANY_CHECK | CONCATENATED] = js.native
+    var flags: js.UndefOr[TELL_NO_CHECK | TELL_UNSUPPORTED_CHECK | TELL_ANY_CHECK | CONCATENATED] = js.undefined
     
-    var memlimit: js.UndefOr[Double] = js.native
+    var memlimit: js.UndefOr[Double] = js.undefined
     
-    var preset: js.UndefOr[Preset] = js.native
+    var preset: js.UndefOr[Preset] = js.undefined
     
-    var synchronous: js.UndefOr[Boolean] = js.native
+    var synchronous: js.UndefOr[Boolean] = js.undefined
     
-    var threads: js.UndefOr[Double] = js.native
+    var threads: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object LzmaOptions {
     
@@ -460,22 +391,21 @@ object mod {
     def `9`: typings.lzmaNative.lzmaNativeNumbers.`9` = 9.asInstanceOf[typings.lzmaNative.lzmaNativeNumbers.`9`]
   }
   
-  @js.native
   trait StreamInfo extends StObject {
     
-    var blocks: Double = js.native
+    var blocks: Double
     
-    var checks: Double = js.native
+    var checks: Double
     
-    var fileSize: Double = js.native
+    var fileSize: Double
     
-    var memlimit: Double = js.native
+    var memlimit: Double
     
-    var streamPadding: Double = js.native
+    var streamPadding: Double
     
-    var streams: Double = js.native
+    var streams: Double
     
-    var uncompressedSize: Double = js.native
+    var uncompressedSize: Double
   }
   object StreamInfo {
     

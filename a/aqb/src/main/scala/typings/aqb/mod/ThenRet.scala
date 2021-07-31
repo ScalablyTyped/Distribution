@@ -2,17 +2,15 @@ package typings.aqb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThenRet extends StObject {
   
-  def `else`(y: js.Any): TernaryOperation = js.native
+  def `else`(y: js.Any): TernaryOperation
   
-  var else_ : TernaryOperation = js.native
+  var else_ : TernaryOperation
   
-  def otherwise(y: js.Any): TernaryOperation = js.native
+  def otherwise(y: js.Any): TernaryOperation
 }
 object ThenRet {
   

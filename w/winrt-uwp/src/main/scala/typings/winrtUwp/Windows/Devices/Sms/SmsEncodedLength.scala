@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This structure represents information about the length of an SmsTextMessage object when it is encoded as a PDU. */
-@js.native
 trait SmsEncodedLength extends StObject {
   
   /** The number of bytes in the last segment of the encoded message. */
-  var byteCountLastSegment: Double = js.native
+  var byteCountLastSegment: Double
   
   /** The number of bytes in each segment of the message. */
-  var bytesPerSegment: Double = js.native
+  var bytesPerSegment: Double
   
   /** The number of characters in the last segment of the encoded message. */
-  var characterCountLastSegment: Double = js.native
+  var characterCountLastSegment: Double
   
   /** The estimated number of characters that can fit in one segment of the message. */
-  var charactersPerSegment: Double = js.native
+  var charactersPerSegment: Double
   
   /** The number of segments needed to encode the message. */
-  var segmentCount: Double = js.native
+  var segmentCount: Double
 }
 object SmsEncodedLength {
   

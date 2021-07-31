@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualServiceSpecProvider extends StObject {
   
   /**
     * The virtual node associated with a virtual service.
     */
-  var virtualNode: js.UndefOr[Input[VirtualServiceSpecProviderVirtualNode]] = js.native
+  var virtualNode: js.UndefOr[Input[VirtualServiceSpecProviderVirtualNode]] = js.undefined
   
   /**
     * The virtual router associated with a virtual service.
     */
-  var virtualRouter: js.UndefOr[Input[VirtualServiceSpecProviderVirtualRouter]] = js.native
+  var virtualRouter: js.UndefOr[Input[VirtualServiceSpecProviderVirtualRouter]] = js.undefined
 }
 object VirtualServiceSpecProvider {
   

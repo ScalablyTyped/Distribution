@@ -2,13 +2,11 @@ package typings.reactNavigation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationOptionsOptions[Options] extends StObject {
   
-  var navigationOptions: Options = js.native
+  var navigationOptions: Options
 }
 object NavigationOptionsOptions {
   
@@ -19,7 +17,7 @@ object NavigationOptionsOptions {
   }
   
   @scala.inline
-  implicit class NavigationOptionsOptionsMutableBuilder[Self <: NavigationOptionsOptions[_], Options] (val x: Self with NavigationOptionsOptions[Options]) extends AnyVal {
+  implicit class NavigationOptionsOptionsMutableBuilder[Self <: NavigationOptionsOptions[?], Options] (val x: Self & NavigationOptionsOptions[Options]) extends AnyVal {
     
     @scala.inline
     def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])

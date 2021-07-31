@@ -12,7 +12,7 @@ get value at property, don't throw if parent is undefined
 | Keywords           | object, safe, get, no-dependencies, just |
 | # releases         | 5 |
 | # dependents       | 15 |
-| # downloads        | 337113 |
+| # downloads        | 442435 |
 | # stars            | 0 |
 
 ## Links

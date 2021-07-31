@@ -2,29 +2,25 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait UserDefinedTypeName
-  extends TypeName
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with TypeName {
   
-  var namePath: String = js.native
+  var namePath: String
   
   @JSName("type")
-  var type_UserDefinedTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName = js.native
+  var type_UserDefinedTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName
 }
 object UserDefinedTypeName {
   
   @scala.inline
-  def apply(
-    namePath: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.UserDefinedTypeName
-  ): UserDefinedTypeName = {
+  def apply(namePath: String): UserDefinedTypeName = {
     val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UserDefinedTypeName")
     __obj.asInstanceOf[UserDefinedTypeName]
   }
   

@@ -2,16 +2,16 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuItemsConfig extends WxBaseRequestConfig {
+trait MenuItemsConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 要隐藏/显示的菜单项，只能隐藏“传播类”和“保护类”按钮
     */
-  var menuList: js.Array[String] = js.native
+  var menuList: js.Array[String]
 }
 object MenuItemsConfig {
   

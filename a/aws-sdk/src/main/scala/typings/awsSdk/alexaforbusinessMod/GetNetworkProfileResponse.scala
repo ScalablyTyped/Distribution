@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkProfileResponse extends StObject {
   
   /**
     * The network profile associated with a device.
     */
-  var NetworkProfile: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NetworkProfile] = js.native
+  var NetworkProfile: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NetworkProfile] = js.undefined
 }
 object GetNetworkProfileResponse {
   

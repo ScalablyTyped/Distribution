@@ -2,27 +2,25 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramShapeConnector extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var fill: js.UndefOr[String | DiagramShapeConnectorFill] = js.native
+  var fill: js.UndefOr[String | DiagramShapeConnectorFill] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[DiagramShapeConnectorHover] = js.native
+  var hover: js.UndefOr[DiagramShapeConnectorHover] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[js.Function] = js.native
+  var position: js.UndefOr[js.Function] = js.undefined
   
-  var stroke: js.UndefOr[String | DiagramShapeConnectorStroke] = js.native
+  var stroke: js.UndefOr[String | DiagramShapeConnectorStroke] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DiagramShapeConnector {
   

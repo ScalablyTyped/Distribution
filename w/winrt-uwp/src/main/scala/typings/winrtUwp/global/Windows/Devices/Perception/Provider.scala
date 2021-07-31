@@ -5,14 +5,18 @@ import typings.winrtUwp.Windows.Devices.Perception.Provider.IPerceptionFrameProv
 import typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionStartFaceAuthenticationHandler
 import typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionStopFaceAuthenticationHandler
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
+import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
+import typings.winrtUwp.Windows.Foundation.Deferral
+import typings.winrtUwp.Windows.Foundation.IMemoryBuffer
 import typings.winrtUwp.Windows.Foundation.Numerics.Quaternion
 import typings.winrtUwp.Windows.Foundation.Numerics.Vector3
 import typings.winrtUwp.Windows.Foundation.Size
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapPixelFormat
+import typings.winrtUwp.Windows.Media.VideoFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains types for implementing providers of perception frames. */
@@ -22,7 +26,8 @@ object Provider {
   @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind")
   @js.native
   abstract class KnownPerceptionFrameKind ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.KnownPerceptionFrameKind
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.KnownPerceptionFrameKind
   object KnownPerceptionFrameKind {
     
     @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind")
@@ -58,19 +63,25 @@ object Provider {
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionControlGroup")
   @js.native
   class PerceptionControlGroup protected ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup {
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup {
     /**
       * Creates a PerceptionControlGroup containing the IPerceptionFrameProviders with the ids specified.
       * @param ids A list of the unique identifiers associated with the grouped IPerceptionFrameProviders. To be controllable, the id must match the associated PerceptionFrameProviderInfo::Id property.
       */
     def this(ids: IIterable[String]) = this()
+    
+    /** The id(s) of the IPerceptionFrameProvider(s) controlled by this group. */
+    /* CompleteClass */
+    var frameProviderIds: IVectorView[String] = js.native
   }
   
   /** A description of the physical position and orientation of a device specified by the IPerceptionFrameProvider's unique identifier (PerceptionFrameProviderInfo::Id) sharing a common coordinate frame of other PerceptionCorrelations that will be combined into a PerceptionCorrelationGroup. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionCorrelation")
   @js.native
   class PerceptionCorrelation protected ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelation {
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelation {
     /**
       * Initializes a new PerceptionCorrelation instance.
       * @param targetId The unique identifier of the IPerceptionFrameProvider being described.
@@ -78,25 +89,43 @@ object Provider {
       * @param orientation The orientation of the device in a common coordinate frame of all members of a PerceptionCorrelationGroup.
       */
     def this(targetId: String, position: Vector3, orientation: Quaternion) = this()
+    
+    /** The orientation of the device in the common coordinate frame shared by other PerceptionCorrelations in the PerceptionCorrelationGroup. */
+    /* CompleteClass */
+    var orientation: Quaternion = js.native
+    
+    /** The position of the device in the common coordinate frame shared by other PerceptionCorrelations in the PerceptionCorrelationGroup. */
+    /* CompleteClass */
+    var position: Vector3 = js.native
+    
+    /** The unique identifier of the described device. */
+    /* CompleteClass */
+    var targetId: String = js.native
   }
   
   /** A collection of PerceptionCorrelations describing multiple unique providers in a common coordinate frame. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionCorrelationGroup")
   @js.native
   class PerceptionCorrelationGroup protected ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup {
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup {
     /**
       * Initializes a new PerceptionCorrelationGroup from a collection of one or more PerceptionCorrelation objects describing multiple providers in a common coordinate frame.
       * @param relativeLocations The collection of PerceptionCorrelations describing multiple providers in a common coordinate frame.
       */
     def this(relativeLocations: IIterable[typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelation]) = this()
+    
+    /** The collection of PerceptionCorrelations describing multiple unique providers in a common coordinate frame. */
+    /* CompleteClass */
+    var relativeLocations: IVectorView[typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelation] = js.native
   }
   
   /** A group of unique identifiers specifying IPerceptionFrameProviders that share handlers for entering and exiting Face Authentication mode. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup")
   @js.native
   class PerceptionFaceAuthenticationGroup protected ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup {
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup {
     /**
       * Initializes a new PerceptionFaceAuthenticationGroup instance.
       * @param ids The collection of unique identifiers which maps to IPerceptionFrameProviders via PerceptionFrameProviderInfo::Id.
@@ -108,27 +137,72 @@ object Provider {
       startHandler: PerceptionStartFaceAuthenticationHandler,
       stopHandler: PerceptionStopFaceAuthenticationHandler
     ) = this()
+    
+    /** The id(s) of the IPerceptionFrameProvider(s) referenced by this group. */
+    /* CompleteClass */
+    var frameProviderIds: IVectorView[String] = js.native
   }
   
   /** Represents a frame of data from the device. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrame")
   @js.native
   abstract class PerceptionFrame ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame {
+    
+    /** The actual bytes of the frame which can be consumed as described by the Properties of the IPerceptionFrameProvider which produced the frame. */
+    /* CompleteClass */
+    var frameData: IMemoryBuffer = js.native
+    
+    /** Gets the Properties for this frame. */
+    /* CompleteClass */
+    var properties: ValueSet = js.native
+    
+    /** Gets or sets the Relative Time of this frame relative to other frames from this IPerceptionFrameProvider. */
+    /* CompleteClass */
+    var relativeTime: Double = js.native
+  }
   
   /** A specific set of properties describing a unique IPerceptionFrameProvider. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo")
   @js.native
   /** Initializes a new PerceptionFrameProviderInfo instance. */
   class PerceptionFrameProviderInfo ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo {
+    
+    /** Gets or sets the descriptor of the kind of FrameProvider categorically, for example, "com.contoso.depthcamera.x500". */
+    /* CompleteClass */
+    var deviceKind: String = js.native
+    
+    /** Gets or sets the friendly name for the device, for example, "Contoso Depth Camera x500". */
+    /* CompleteClass */
+    var displayName: String = js.native
+    
+    /** Gets or sets the type of frames the device creates. */
+    /* CompleteClass */
+    var frameKind: String = js.native
+    
+    /** Gets or sets a value indicating whether the device enumerates via FindAllAsync or device-added events on source watchers. */
+    /* CompleteClass */
+    var hidden: Boolean = js.native
+    
+    /** Gets or sets the unique identifier of the IPerceptionFrameProvider. */
+    /* CompleteClass */
+    var id: String = js.native
+  }
   
   /** Static methods for managing IPerceptionFrameProvider registration and unregistration, PerceptionFaceAuthenticationGroup registration and unregistration, PerceptionControlGroup registration and unregistration, PerceptionCorrelationGroup registration and unregistration, IPerceptionFrameProvider availablity, and publishing a new PerceptionFrame for an IPerceptionFrameProvider. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService")
   @js.native
   abstract class PerceptionFrameProviderManagerService ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService
   object PerceptionFrameProviderManagerService {
+    
+    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Sends the PerceptionFrame to the service to tell any apps listening for frames for the provided provider. Frames aren't expected to be published before IPerceptionFrameProvider::Start() is called or after IPerceptionFrameProvider::Stop() is called.
@@ -136,12 +210,11 @@ object Provider {
       * @param frame The PerceptionFrame that was produced and should be sent to apps.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.publishFrameForProvider")
-    @js.native
+    @scala.inline
     def publishFrameForProvider(
       provider: IPerceptionFrameProvider,
       frame: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishFrameForProvider")(provider.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Registers a PerceptionControlGroup associated with the IPerceptionFrameProviderManager.
@@ -149,12 +222,11 @@ object Provider {
       * @param controlGroup The group of IPerceptionFrameProvider(s) to control atomically.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.registerControlGroup")
-    @js.native
+    @scala.inline
     def registerControlGroup(
       manager: IPerceptionFrameProviderManager,
       controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerControlGroup")(manager.asInstanceOf[js.Any], controlGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Registers a PerceptionCorrelationGroup associated with the IPerceptionFrameProviderManager.
@@ -162,12 +234,11 @@ object Provider {
       * @param correlationGroup The group of PerceptionCorrelations(s) to control atomically.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.registerCorrelationGroup")
-    @js.native
+    @scala.inline
     def registerCorrelationGroup(
       manager: IPerceptionFrameProviderManager,
       correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCorrelationGroup")(manager.asInstanceOf[js.Any], correlationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Registers a PerceptionFaceAuthenticationGroup associated with the given IPerceptionProviderManager.
@@ -175,12 +246,11 @@ object Provider {
       * @param faceAuthenticationGroup The group of IPerceptionFrameProvider(s) to atomically control.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.registerFaceAuthenticationGroup")
-    @js.native
+    @scala.inline
     def registerFaceAuthenticationGroup(
       manager: IPerceptionFrameProviderManager,
       faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFaceAuthenticationGroup")(manager.asInstanceOf[js.Any], faceAuthenticationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Registers the PerceptionFrameProviderInfo in association with the given IPerceptionFrameProviderManager.
@@ -188,12 +258,11 @@ object Provider {
       * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the available IPerceptionFrameProvider.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.registerFrameProviderInfo")
-    @js.native
+    @scala.inline
     def registerFrameProviderInfo(
       manager: IPerceptionFrameProviderManager,
       frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFrameProviderInfo")(manager.asInstanceOf[js.Any], frameProviderInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes the registration of a previously registered PerceptionControlGroup.
@@ -201,12 +270,11 @@ object Provider {
       * @param controlGroup The group of IPerceptionFrameProvider(s) to prevent from being controlled.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.unregisterControlGroup")
-    @js.native
+    @scala.inline
     def unregisterControlGroup(
       manager: IPerceptionFrameProviderManager,
       controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterControlGroup")(manager.asInstanceOf[js.Any], controlGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Unregisters a PerceptionCorrelationGroup associated with the IPerceptionFrameProviderManager.
@@ -214,12 +282,11 @@ object Provider {
       * @param correlationGroup The PerceptionCorrelationGroup to unregister.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.unregisterCorrelationGroup")
-    @js.native
+    @scala.inline
     def unregisterCorrelationGroup(
       manager: IPerceptionFrameProviderManager,
       correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCorrelationGroup")(manager.asInstanceOf[js.Any], correlationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Unregisters a PerceptionFaceAuthenticationGroup in association with the given IPerceptionProviderManager.
@@ -227,12 +294,11 @@ object Provider {
       * @param faceAuthenticationGroup The PerceptionFaceAuthenticationGroup to unregister.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.unregisterFaceAuthenticationGroup")
-    @js.native
+    @scala.inline
     def unregisterFaceAuthenticationGroup(
       manager: IPerceptionFrameProviderManager,
       faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFaceAuthenticationGroup")(manager.asInstanceOf[js.Any], faceAuthenticationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Unregisters the PerceptionFrameProviderInfo in association with the given IPerceptionProviderManager.
@@ -240,12 +306,11 @@ object Provider {
       * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the IPerceptionFrameProvider.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.unregisterFrameProviderInfo")
-    @js.native
+    @scala.inline
     def unregisterFrameProviderInfo(
       manager: IPerceptionFrameProviderManager,
       frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFrameProviderInfo")(manager.asInstanceOf[js.Any], frameProviderInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets whether or not the IPerceptionFrameProvider is available.
@@ -253,22 +318,43 @@ object Provider {
       * @param available Whether or not the provider is available.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService.updateAvailabilityForProvider")
-    @js.native
-    def updateAvailabilityForProvider(provider: IPerceptionFrameProvider, available: Boolean): Unit = js.native
+    @scala.inline
+    def updateAvailabilityForProvider(provider: IPerceptionFrameProvider, available: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAvailabilityForProvider")(provider.asInstanceOf[js.Any], available.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** A request from an app that's in control of this IPerceptionFrameProvider to update a property. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest")
   @js.native
   abstract class PerceptionPropertyChangeRequest ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionPropertyChangeRequest {
+    
+    /**
+      * Gets a Windows::Foundation::Deferral object to allow background processing if needed.
+      * @return The Deferral object.
+      */
+    /* CompleteClass */
+    override def getDeferral(): Deferral = js.native
+    
+    /** Gets the name of the property to change. */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** Sets the new status of the request after processing the request. */
+    /* CompleteClass */
+    var status: typings.winrtUwp.Windows.Devices.Perception.PerceptionFrameSourcePropertyChangeStatus = js.native
+    
+    /** Gets the requested new value of the property. */
+    /* CompleteClass */
+    var value: js.Any = js.native
+  }
   
   /** An allocator that can create PerceptionFrames directly which can be written into or copied from Windows::Media::VideoFrame into a PerceptionFrame. */
   @JSGlobal("Windows.Devices.Perception.Provider.PerceptionVideoFrameAllocator")
   @js.native
   class PerceptionVideoFrameAllocator protected ()
-    extends typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionVideoFrameAllocator {
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionVideoFrameAllocator {
     /**
       * Initializes a new PerceptionVideoFrameAllocator with the required properties for use by the IPerceptionFrameProvider to create PerceptionFrames published via PerceptionFrameProviderManagerService::PublishFrameForProvider.
       * @param maxOutstandingFrameCountForWrite This is the number of buffers in flight required by the FrameProvider to produce its * frames at framerate. The suggestion is at least 2.
@@ -282,5 +368,24 @@ object Provider {
       resolution: Size,
       alpha: BitmapAlphaMode
     ) = this()
+    
+    /**
+      * Creates an empty PerceptionFrame with the properties specified when creating the PerceptionVideoFrameAllocator.
+      * @return The empty frame with the properties specified when creating the PerceptionVideoFrameAllocator.
+      */
+    /* CompleteClass */
+    override def allocateFrame(): typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame = js.native
+    
+    /** Releases system resources that are exposed by a Windows Runtime object. */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /**
+      * Creates a deep copy of the video FrameProvider with the bytes already filled in with the resulting PerceptionFrame.
+      * @param frame The input frame from which to copy the pixel data.
+      * @return The resulting filled PerceptionFrame.
+      */
+    /* CompleteClass */
+    override def copyFromVideoFrame(frame: VideoFrame): typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame = js.native
   }
 }

@@ -1,19 +1,18 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DevicePixelRatio extends js.Object {
+trait DevicePixelRatio extends StObject {
   
-  var devicePixelRatio: js.UndefOr[Double] = js.native
+  var devicePixelRatio: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var renderer: js.UndefOr[String] = js.native
+  var renderer: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object DevicePixelRatio {
   
@@ -24,42 +23,30 @@ object DevicePixelRatio {
   }
   
   @scala.inline
-  implicit class DevicePixelRatioOps[Self <: DevicePixelRatio] (val x: Self) extends AnyVal {
+  implicit class DevicePixelRatioMutableBuilder[Self <: DevicePixelRatio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevicePixelRatio(value: Double): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicePixelRatioUndefined: Self = StObject.set(x, "devicePixelRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePixelRatio(value: Double): Self = this.set("devicePixelRatio", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDevicePixelRatio: Self = this.set("devicePixelRatio", js.undefined)
+    def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: String): Self = this.set("renderer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

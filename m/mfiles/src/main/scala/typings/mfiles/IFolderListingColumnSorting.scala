@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderListingColumnSorting extends StObject {
   
-  def Clone(): IFolderListingColumnSorting = js.native
+  def Clone(): IFolderListingColumnSorting
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Index: Double = js.native
+  var Index: Double
   
-  var SortAscending: Boolean = js.native
+  var SortAscending: Boolean
 }
 object IFolderListingColumnSorting {
   

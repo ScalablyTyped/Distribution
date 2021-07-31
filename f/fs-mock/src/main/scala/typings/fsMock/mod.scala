@@ -19,14 +19,15 @@ import typings.node.fsMod.WriteStream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fs-mock", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FS {
+  class ^ protected ()
+    extends StObject
+       with FS {
     def this(content: js.Any) = this()
     def this(content: js.Any, opts: Opts) = this()
   }
@@ -109,7 +110,7 @@ object mod {
     def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
     
     def fstat(fd: Double): Unit = js.native
-    def fstat(fd: Double, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+    def fstat(fd: Double, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = js.native
     
     def fstatSync(fd: Double): Stats = js.native
     
@@ -172,7 +173,7 @@ object mod {
     def linkSync(srcpath: String, dstpath: String): Unit = js.native
     
     def lstat(path: String): Unit = js.native
-    def lstat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+    def lstat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = js.native
     
     def lstatSync(path: String): Stats = js.native
     
@@ -188,20 +189,24 @@ object mod {
     def mkdirSync(path: String, mode: Double): Unit = js.native
     
     def open(path: String, flags: String): Unit = js.native
-    def open(path: String, flags: String, callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]): Unit = js.native
+    def open(
+      path: String,
+      flags: String,
+      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, js.Any]
+    ): Unit = js.native
     def open(path: String, flags: String, mode: String): Unit = js.native
     def open(
       path: String,
       flags: String,
       mode: String,
-      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]
+      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, js.Any]
     ): Unit = js.native
     def open(path: String, flags: String, mode: Double): Unit = js.native
     def open(
       path: String,
       flags: String,
       mode: Double,
-      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, _]
+      callback: js.Function2[/* err */ ErrnoException, /* fd */ Double, js.Any]
     ): Unit = js.native
     
     def openSync(path: String, flags: String): Double = js.native
@@ -248,7 +253,7 @@ object mod {
     def readdirSync(path: String): js.Array[String] = js.native
     
     def readlink(path: String): Unit = js.native
-    def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, _]): Unit = js.native
+    def readlink(path: String, callback: js.Function2[/* err */ ErrnoException, /* linkString */ String, js.Any]): Unit = js.native
     
     def readlinkSync(path: String): String = js.native
     
@@ -256,9 +261,9 @@ object mod {
     def realpath(
       path: String,
       cache: StringDictionary[String],
-      callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
+      callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, js.Any]
     ): Unit = js.native
-    def realpath(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
+    def realpath(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, js.Any]): Unit = js.native
     
     def realpathSync(path: String): String = js.native
     def realpathSync(path: String, cache: StringDictionary[String]): String = js.native
@@ -278,22 +283,22 @@ object mod {
     def rmdirSync(path: String): Unit = js.native
     
     def stat(path: String): Unit = js.native
-    def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, _]): Unit = js.native
+    def stat(path: String, callback: js.Function2[/* err */ ErrnoException, /* stats */ Stats, js.Any]): Unit = js.native
     
     def statSync(path: String): Stats = js.native
     
     def symlink(srcpath: String, dstpath: String): Unit = js.native
-    def symlink(
-      srcpath: String,
-      dstpath: String,
-      `type`: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
-    ): Unit = js.native
     def symlink(srcpath: String, dstpath: String, `type`: String): Unit = js.native
     def symlink(
       srcpath: String,
       dstpath: String,
       `type`: String,
+      callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
+    ): Unit = js.native
+    def symlink(
+      srcpath: String,
+      dstpath: String,
+      `type`: Unit,
       callback: js.Function1[/* err */ js.UndefOr[ErrnoException], Unit]
     ): Unit = js.native
     
@@ -335,12 +340,12 @@ object mod {
     def utimesSync(path: String, atime: Date, mtime: Date): Unit = js.native
     
     def watch(filename: String): FSWatcher = js.native
-    def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, _]): FSWatcher = js.native
+    def watch(filename: String, listener: js.Function2[/* event */ String, /* filename */ String, js.Any]): FSWatcher = js.native
     def watch(filename: String, options: Persistent): FSWatcher = js.native
     def watch(
       filename: String,
       options: Persistent,
-      listener: js.Function2[/* event */ String, /* filename */ String, _]
+      listener: js.Function2[/* event */ String, /* filename */ String, js.Any]
     ): FSWatcher = js.native
     
     def watchFile(filename: String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
@@ -384,14 +389,13 @@ object mod {
     def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
   }
   
-  @js.native
   trait Opts extends StObject {
     
-    var drives: js.UndefOr[js.Array[String]] = js.native
+    var drives: js.UndefOr[js.Array[String]] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var windows: js.UndefOr[Boolean] = js.native
+    var windows: js.UndefOr[Boolean] = js.undefined
   }
   object Opts {
     

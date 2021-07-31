@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedDeviceOverview extends Entity {
+trait ManagedDeviceOverview
+  extends StObject
+     with Entity {
   
   // Distribution of Exchange Access State in Intune
-  var deviceExchangeAccessStateSummary: js.UndefOr[NullableOption[DeviceExchangeAccessStateSummary]] = js.native
+  var deviceExchangeAccessStateSummary: js.UndefOr[NullableOption[DeviceExchangeAccessStateSummary]] = js.undefined
   
   // Device operating system summary.
-  var deviceOperatingSystemSummary: js.UndefOr[NullableOption[DeviceOperatingSystemSummary]] = js.native
+  var deviceOperatingSystemSummary: js.UndefOr[NullableOption[DeviceOperatingSystemSummary]] = js.undefined
   
   // The number of devices enrolled in both MDM and EAS
-  var dualEnrolledDeviceCount: js.UndefOr[Double] = js.native
+  var dualEnrolledDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Total enrolled device count. Does not include PC devices managed via Intune PC Agent
-  var enrolledDeviceCount: js.UndefOr[Double] = js.native
+  var enrolledDeviceCount: js.UndefOr[Double] = js.undefined
   
   // The number of devices enrolled in MDM
-  var mdmEnrolledCount: js.UndefOr[Double] = js.native
+  var mdmEnrolledCount: js.UndefOr[Double] = js.undefined
 }
 object ManagedDeviceOverview {
   

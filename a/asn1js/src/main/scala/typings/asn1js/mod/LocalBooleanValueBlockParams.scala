@@ -3,17 +3,17 @@ package typings.asn1js.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalBooleanValueBlockParams extends LocalBaseBlockParams {
+trait LocalBooleanValueBlockParams
+  extends StObject
+     with LocalBaseBlockParams {
   
-  var isHexOnly: js.UndefOr[scala.Boolean] = js.native
+  var isHexOnly: js.UndefOr[scala.Boolean] = js.undefined
   
-  var value: js.UndefOr[scala.Boolean] = js.native
+  var value: js.UndefOr[scala.Boolean] = js.undefined
   
-  var valueHex: js.UndefOr[ArrayBuffer] = js.native
+  var valueHex: js.UndefOr[ArrayBuffer] = js.undefined
 }
 object LocalBooleanValueBlockParams {
   

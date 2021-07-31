@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentControlListEntry extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Index: Double = js.native
+  var Index: Double
   
-  def MoveDown(): Unit = js.native
+  def MoveDown(): Unit
   
-  def MoveUp(): Unit = js.native
+  def MoveUp(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var Text: String = js.native
+  var Text: String
   
-  var Value: String = js.native
+  var Value: String
   
   @JSName("Word.ContentControlListEntry_typekey")
-  var WordDotContentControlListEntry_typekey: ContentControlListEntry = js.native
+  var WordDotContentControlListEntry_typekey: ContentControlListEntry
 }
 object ContentControlListEntry {
   

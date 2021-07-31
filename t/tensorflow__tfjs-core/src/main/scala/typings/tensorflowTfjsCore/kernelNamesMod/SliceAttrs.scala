@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliceAttrs extends StObject {
   
-  var begin: Double | js.Array[Double] = js.native
+  var begin: Double | js.Array[Double]
   
-  var size: Double | js.Array[Double] = js.native
+  var size: Double | js.Array[Double]
 }
 object SliceAttrs {
   

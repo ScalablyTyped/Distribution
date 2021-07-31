@@ -3,105 +3,103 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.TreeListDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, Unit]] = js.native
+  var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, Unit]] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ TreeListCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ TreeListCancelEvent, Unit]] = js.undefined
   
-  var cellClose: js.UndefOr[js.Function1[/* e */ TreeListCellCloseEvent, Unit]] = js.native
+  var cellClose: js.UndefOr[js.Function1[/* e */ TreeListCellCloseEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ TreeListChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ TreeListChangeEvent, Unit]] = js.undefined
   
-  var collapse: js.UndefOr[js.Function1[/* e */ TreeListCollapseEvent, Unit]] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ TreeListCollapseEvent, Unit]] = js.undefined
   
-  var columnHide: js.UndefOr[js.Function1[/* e */ TreeListColumnHideEvent, Unit]] = js.native
+  var columnHide: js.UndefOr[js.Function1[/* e */ TreeListColumnHideEvent, Unit]] = js.undefined
   
-  var columnLock: js.UndefOr[js.Function1[/* e */ TreeListColumnLockEvent, Unit]] = js.native
+  var columnLock: js.UndefOr[js.Function1[/* e */ TreeListColumnLockEvent, Unit]] = js.undefined
   
-  var columnMenu: js.UndefOr[Boolean | TreeListColumnMenu] = js.native
+  var columnMenu: js.UndefOr[Boolean | TreeListColumnMenu] = js.undefined
   
-  var columnMenuInit: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuInitEvent, Unit]] = js.native
+  var columnMenuInit: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuInitEvent, Unit]] = js.undefined
   
-  var columnMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuOpenEvent, Unit]] = js.native
+  var columnMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuOpenEvent, Unit]] = js.undefined
   
-  var columnReorder: js.UndefOr[js.Function1[/* e */ TreeListColumnReorderEvent, Unit]] = js.native
+  var columnReorder: js.UndefOr[js.Function1[/* e */ TreeListColumnReorderEvent, Unit]] = js.undefined
   
-  var columnResize: js.UndefOr[js.Function1[/* e */ TreeListColumnResizeEvent, Unit]] = js.native
+  var columnResize: js.UndefOr[js.Function1[/* e */ TreeListColumnResizeEvent, Unit]] = js.undefined
   
-  var columnShow: js.UndefOr[js.Function1[/* e */ TreeListColumnShowEvent, Unit]] = js.native
+  var columnShow: js.UndefOr[js.Function1[/* e */ TreeListColumnShowEvent, Unit]] = js.undefined
   
-  var columnUnlock: js.UndefOr[js.Function1[/* e */ TreeListColumnUnlockEvent, Unit]] = js.native
+  var columnUnlock: js.UndefOr[js.Function1[/* e */ TreeListColumnUnlockEvent, Unit]] = js.undefined
   
-  var columns: js.UndefOr[js.Array[TreeListColumn]] = js.native
+  var columns: js.UndefOr[js.Array[TreeListColumn]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ TreeListDataBindingEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ TreeListDataBindingEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ TreeListDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ TreeListDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | TreeListDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | TreeListDataSource] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ TreeListDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ TreeListDragEvent, Unit]] = js.undefined
   
-  var dragend: js.UndefOr[js.Function1[/* e */ TreeListDragendEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ TreeListDragendEvent, Unit]] = js.undefined
   
-  var dragstart: js.UndefOr[js.Function1[/* e */ TreeListDragstartEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ TreeListDragstartEvent, Unit]] = js.undefined
   
-  var drop: js.UndefOr[js.Function1[/* e */ TreeListDropEvent, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* e */ TreeListDropEvent, Unit]] = js.undefined
   
-  var edit: js.UndefOr[js.Function1[/* e */ TreeListEditEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ TreeListEditEvent, Unit]] = js.undefined
   
-  var editable: js.UndefOr[Boolean | TreeListEditable] = js.native
+  var editable: js.UndefOr[Boolean | TreeListEditable] = js.undefined
   
-  var excel: js.UndefOr[TreeListExcel] = js.native
+  var excel: js.UndefOr[TreeListExcel] = js.undefined
   
-  var excelExport: js.UndefOr[js.Function1[/* e */ TreeListExcelExportEvent, Unit]] = js.native
+  var excelExport: js.UndefOr[js.Function1[/* e */ TreeListExcelExportEvent, Unit]] = js.undefined
   
-  var expand: js.UndefOr[js.Function1[/* e */ TreeListExpandEvent, Unit]] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ TreeListExpandEvent, Unit]] = js.undefined
   
-  var filterMenuInit: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuInitEvent, Unit]] = js.native
+  var filterMenuInit: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuInitEvent, Unit]] = js.undefined
   
-  var filterMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuOpenEvent, Unit]] = js.native
+  var filterMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuOpenEvent, Unit]] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | TreeListFilterable] = js.native
+  var filterable: js.UndefOr[Boolean | TreeListFilterable] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var messages: js.UndefOr[TreeListMessages] = js.native
+  var messages: js.UndefOr[TreeListMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var pageable: js.UndefOr[Boolean | TreeListPageable] = js.native
+  var pageable: js.UndefOr[Boolean | TreeListPageable] = js.undefined
   
-  var pdf: js.UndefOr[TreeListPdf] = js.native
+  var pdf: js.UndefOr[TreeListPdf] = js.undefined
   
-  var pdfExport: js.UndefOr[js.Function1[/* e */ TreeListPdfExportEvent, Unit]] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ TreeListPdfExportEvent, Unit]] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ TreeListRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ TreeListRemoveEvent, Unit]] = js.undefined
   
-  var reorderable: js.UndefOr[Boolean] = js.native
+  var reorderable: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[js.Function1[/* e */ TreeListSaveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ TreeListSaveEvent, Unit]] = js.undefined
   
-  var saveChanges: js.UndefOr[js.Function1[/* e */ TreeListSaveChangesEvent, Unit]] = js.native
+  var saveChanges: js.UndefOr[js.Function1[/* e */ TreeListSaveChangesEvent, Unit]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean | js.Any] = js.native
+  var scrollable: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | String] = js.native
+  var selectable: js.UndefOr[Boolean | String] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | TreeListSortable] = js.native
+  var sortable: js.UndefOr[Boolean | TreeListSortable] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | js.Any] = js.native
+  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | js.Any] = js.undefined
 }
 object TreeListOptions {
   

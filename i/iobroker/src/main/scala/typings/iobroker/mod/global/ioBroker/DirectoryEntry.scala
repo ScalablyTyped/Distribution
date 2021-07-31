@@ -3,25 +3,23 @@ package typings.iobroker.mod.global.ioBroker
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: Add definition
-@js.native
 trait DirectoryEntry extends StObject {
   
-  var acl: js.Any = js.native
+  var acl: js.Any
   
-  var createdAt: Double = js.native
+  var createdAt: Double
   
-  var file: String = js.native
+  var file: String
   
-  var isDir: Boolean = js.native
+  var isDir: Boolean
   
   // access control list object
-  var modifiedAt: Double = js.native
+  var modifiedAt: Double
   
-  var stats: Stats = js.native
+  var stats: Stats
 }
 object DirectoryEntry {
   

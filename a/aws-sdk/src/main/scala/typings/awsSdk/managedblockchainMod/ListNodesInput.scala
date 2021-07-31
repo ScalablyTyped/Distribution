@@ -2,36 +2,34 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNodesInput extends StObject {
   
   /**
     * The maximum number of nodes to list.
     */
-  var MaxResults: js.UndefOr[NodeListMaxResults] = js.native
+  var MaxResults: js.UndefOr[NodeListMaxResults] = js.undefined
   
   /**
     * The unique identifier of the member who owns the nodes to list.
     */
-  var MemberId: ResourceIdString = js.native
+  var MemberId: ResourceIdString
   
   /**
     * The unique identifier of the network for which to list nodes.
     */
-  var NetworkId: ResourceIdString = js.native
+  var NetworkId: ResourceIdString
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * An optional status specifier. If provided, only nodes currently in this status are listed.
     */
-  var Status: js.UndefOr[NodeStatus] = js.native
+  var Status: js.UndefOr[NodeStatus] = js.undefined
 }
 object ListNodesInput {
   

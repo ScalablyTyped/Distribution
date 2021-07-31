@@ -2,21 +2,19 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information for an interconnect attachment when this belongs to an
   * interconnect of type DEDICATED.
   */
-@js.native
 trait SchemaInterconnectAttachmentPrivateInfo extends StObject {
   
   /**
     * [Output Only] 802.1q encapsulation tag to be used for traffic between
     * Google and the customer, going to and from this network and region.
     */
-  var tag8021q: js.UndefOr[Double] = js.native
+  var tag8021q: js.UndefOr[Double] = js.undefined
 }
 object SchemaInterconnectAttachmentPrivateInfo {
   

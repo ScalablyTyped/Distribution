@@ -3,25 +3,23 @@ package typings.hasura.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseOrderByAggregate[T] extends StObject {
   
-  var count: js.UndefOr[ScalarOrderBy] = js.native
+  var count: js.UndefOr[ScalarOrderBy] = js.undefined
   
   var max: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.BaseOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
   
   var min: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.BaseOrderByAggregate with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
+  ] = js.undefined
 }
 object BaseOrderByAggregate {
   
@@ -32,7 +30,7 @@ object BaseOrderByAggregate {
   }
   
   @scala.inline
-  implicit class BaseOrderByAggregateMutableBuilder[Self <: BaseOrderByAggregate[_], T] (val x: Self with BaseOrderByAggregate[T]) extends AnyVal {
+  implicit class BaseOrderByAggregateMutableBuilder[Self <: BaseOrderByAggregate[?], T] (val x: Self & BaseOrderByAggregate[T]) extends AnyVal {
     
     @scala.inline
     def setCount(value: ScalarOrderBy): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
@@ -44,7 +42,7 @@ object BaseOrderByAggregate {
     def setMax(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.BaseOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -54,7 +52,7 @@ object BaseOrderByAggregate {
     def setMin(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.BaseOrderByAggregate with TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
     ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline

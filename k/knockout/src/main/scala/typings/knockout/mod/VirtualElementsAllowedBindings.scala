@@ -3,29 +3,29 @@ package typings.knockout.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VirtualElementsAllowedBindings extends /* name */ StringDictionary[Boolean] {
+trait VirtualElementsAllowedBindings
+  extends StObject
+     with /* name */ StringDictionary[Boolean] {
   
-  var component: Boolean = js.native
+  var component: Boolean
   
-  var foreach: Boolean = js.native
+  var foreach: Boolean
   
-  var `if`: Boolean = js.native
+  var `if`: Boolean
   
-  var ifnot: Boolean = js.native
+  var ifnot: Boolean
   
-  var let: Boolean = js.native
+  var let: Boolean
   
-  var template: Boolean = js.native
+  var template: Boolean
   
-  var text: Boolean = js.native
+  var text: Boolean
   
-  var using: Boolean = js.native
+  var `using`: Boolean
   
-  var `with`: Boolean = js.native
+  var `with`: Boolean
 }
 object VirtualElementsAllowedBindings {
   
@@ -38,11 +38,12 @@ object VirtualElementsAllowedBindings {
     let: Boolean,
     template: Boolean,
     text: Boolean,
-    using: Boolean,
+    `using`: Boolean,
     `with`: Boolean
   ): VirtualElementsAllowedBindings = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], foreach = foreach.asInstanceOf[js.Any], ifnot = ifnot.asInstanceOf[js.Any], let = let.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], using = using.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], foreach = foreach.asInstanceOf[js.Any], ifnot = ifnot.asInstanceOf[js.Any], let = let.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
+    __obj.updateDynamic("using")(`using`.asInstanceOf[js.Any])
     __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualElementsAllowedBindings]
   }

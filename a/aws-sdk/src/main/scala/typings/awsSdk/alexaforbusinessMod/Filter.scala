@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * The key of a filter.
     */
-  var Key: FilterKey = js.native
+  var Key: FilterKey
   
   /**
     * The values of a filter.
     */
-  var Values: FilterValueList = js.native
+  var Values: FilterValueList
 }
 object Filter {
   

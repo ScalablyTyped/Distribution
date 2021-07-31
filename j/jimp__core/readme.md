@@ -12,7 +12,7 @@ Jimp core
 | Keywords           | - |
 | # releases         | 101 |
 | # dependents       | 3 |
-| # downloads        | 38559827 |
+| # downloads        | 43341106 |
 | # stars            | 0 |
 
 ## Links

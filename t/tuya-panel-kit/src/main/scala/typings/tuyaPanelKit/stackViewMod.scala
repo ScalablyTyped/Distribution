@@ -8,13 +8,11 @@ import typings.tuyaPanelKit.anon.ReadonlyState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.routersTypesMod.Route
 import typings.tuyaPanelKit.stackRouterMod.StackNavigationState
-import typings.tuyaPanelKit.stackTypesMod.StackCardMode
 import typings.tuyaPanelKit.stackTypesMod.StackDescriptorMap
-import typings.tuyaPanelKit.stackTypesMod.StackHeaderMode
+import typings.tuyaPanelKit.stackTypesMod.StackNavigationConfig
 import typings.tuyaPanelKit.stackTypesMod.StackNavigationHelpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackViewMod {
@@ -25,38 +23,24 @@ object stackViewMod {
   /* static members */
   object default {
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack/views/Stack/StackView", "default.getDerivedStateFromProps")
+    @JSImport("tuya-panel-kit/@react-navigation/stack/views/Stack/StackView", JSImport.Default)
     @js.native
-    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | OpeningRouteKeys = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | OpeningRouteKeys = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClosingRouteKeys | OpeningRouteKeys]
   }
   
   // tslint:disable-next-line strict-export-declare-modifiers
-  /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationConfig & {  state :tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackNavigationState<tuya-panel-kit.tuya-panel-kit/@react-navigation/native.ParamListBase>,   navigation :tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationHelpers,   descriptors :tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackDescriptorMap} */
-  @js.native
-  trait Props extends StObject {
+  trait Props
+    extends StObject
+       with StackNavigationConfig {
     
-    var descriptors: StackDescriptorMap = js.native
+    var descriptors: StackDescriptorMap
     
-    /**
-      * Whether inactive screens should be detached from the view hierarchy to save memory.
-      * Make sure to call `enableScreens` from `react-native-screens` to make it work.
-      * Defaults to `true` on Android, depends on the version of `react-native-screens` on iOS.
-      */
-    var detachInactiveScreens: js.UndefOr[Boolean] = js.native
+    var navigation: StackNavigationHelpers
     
-    var headerMode: js.UndefOr[StackHeaderMode] = js.native
-    
-    /**
-      * If `false`, the keyboard will NOT automatically dismiss when navigating to a new screen.
-      * Defaults to `true`.
-      */
-    var keyboardHandlingEnabled: js.UndefOr[Boolean] = js.native
-    
-    var mode: js.UndefOr[StackCardMode] = js.native
-    
-    var navigation: StackNavigationHelpers = js.native
-    
-    var state: StackNavigationState[ParamListBase] = js.native
+    var state: StackNavigationState[ParamListBase]
   }
   object Props {
     
@@ -75,30 +59,6 @@ object stackViewMod {
       
       @scala.inline
       def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
-      
-      @scala.inline
-      def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHeaderModeUndefined: Self = StObject.set(x, "headerMode", js.undefined)
-      
-      @scala.inline
-      def setKeyboardHandlingEnabled(value: Boolean): Self = StObject.set(x, "keyboardHandlingEnabled", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKeyboardHandlingEnabledUndefined: Self = StObject.set(x, "keyboardHandlingEnabled", js.undefined)
-      
-      @scala.inline
-      def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
       def setNavigation(value: StackNavigationHelpers): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
@@ -136,24 +96,23 @@ object stackViewMod {
   }
   
   // tslint:disable-next-line interface-over-type-literal strict-export-declare-modifiers
-  @js.native
   trait State extends StObject {
     
-    var closingRouteKeys: js.Array[String] = js.native
+    var closingRouteKeys: js.Array[String]
     
-    var descriptors: StackDescriptorMap = js.native
+    var descriptors: StackDescriptorMap
     
-    var openingRouteKeys: js.Array[String] = js.native
+    var openingRouteKeys: js.Array[String]
     
-    var previousDescriptors: StackDescriptorMap = js.native
-    
-    // tslint:disable-next-line array-type
-    var previousRoutes: js.Array[Route[String, js.UndefOr[js.Object]]] = js.native
-    
-    var replacingRouteKeys: js.Array[String] = js.native
+    var previousDescriptors: StackDescriptorMap
     
     // tslint:disable-next-line array-type
-    var routes: js.Array[Route[String, js.UndefOr[js.Object]]] = js.native
+    var previousRoutes: js.Array[Route[String, js.UndefOr[js.Object]]]
+    
+    var replacingRouteKeys: js.Array[String]
+    
+    // tslint:disable-next-line array-type
+    var routes: js.Array[Route[String, js.UndefOr[js.Object]]]
   }
   object State {
     

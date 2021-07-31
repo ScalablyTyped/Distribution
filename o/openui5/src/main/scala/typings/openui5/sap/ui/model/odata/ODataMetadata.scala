@@ -4,11 +4,12 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataMetadata extends EventProvider {
+trait ODataMetadata
+  extends StObject
+     with EventProvider {
   
   /**
     * Attach event-handler <code>fnFunction</code> to the 'failed' event of this
@@ -97,12 +98,12 @@ trait ODataMetadata extends EventProvider {
     * Returns a promise for the loaded state of the metadata
     * @returns returns a promise on metadata loaded state
     */
-  def loaded(): JQueryPromise[_] = js.native
+  def loaded(): JQueryPromise[js.Any] = js.native
   
   /**
     * Refreshes the metadata creating a new request to the server.Returns a new promise which can be
     * resolved or rejected depending on the metadata loading state.
     * @returns returns a promise on metadata loaded state
     */
-  def refresh(): JQueryPromise[_] = js.native
+  def refresh(): JQueryPromise[js.Any] = js.native
 }

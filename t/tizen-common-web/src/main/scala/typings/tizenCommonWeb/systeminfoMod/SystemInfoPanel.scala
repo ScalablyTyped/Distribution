@@ -2,21 +2,21 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoPanel extends SystemInfoProperty {
+trait SystemInfoPanel
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * The height of the panel in pixels.
     */
-  val panelHeight: Double = js.native
+  val panelHeight: Double
   
   /**
     * The width of the panel in pixels.
     */
-  val panelWidth: Double = js.native
+  val panelWidth: Double
 }
 object SystemInfoPanel {
   

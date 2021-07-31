@@ -2,27 +2,26 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchCases extends StObject {
   
   /**
     * the required condition joi type.
     */
-  var is: SchemaLike = js.native
+  var is: SchemaLike
   
   /**
     * the alternative schema type if the condition is true.
     */
-  var `then`: SchemaLike = js.native
+  var `then`: SchemaLike
 }
 object SwitchCases {
   
   @scala.inline
   def apply(): SwitchCases = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(is = null)
+    __obj.updateDynamic("then")(null)
     __obj.asInstanceOf[SwitchCases]
   }
   

@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISignaturePromptInfoMetadataBased extends StObject {
   
-  def Clone(): ISignaturePromptInfoMetadataBased = js.native
+  def Clone(): ISignaturePromptInfoMetadataBased
   
-  var IsReferencedBySignatureObject: Boolean = js.native
+  var IsReferencedBySignatureObject: Boolean
   
-  var MeaningPropertyID: Double = js.native
+  var MeaningPropertyID: Double
   
-  var PromptInfoLookupPropertyID: Double = js.native
+  var PromptInfoLookupPropertyID: Double
   
-  var ReasonPropertyID: Double = js.native
+  var ReasonPropertyID: Double
 }
 object ISignaturePromptInfoMetadataBased {
   

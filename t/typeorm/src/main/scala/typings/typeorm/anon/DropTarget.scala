@@ -2,13 +2,11 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropTarget extends StObject {
   
-  var dropTarget: js.UndefOr[Boolean] = js.native
+  var dropTarget: js.UndefOr[Boolean] = js.undefined
 }
 object DropTarget {
   

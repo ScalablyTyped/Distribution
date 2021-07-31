@@ -2,7 +2,6 @@ package typings.poi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("poi", JSImport.Namespace)
 @js.native
-class ^ () extends PoiCore {
+class ^ ()
+  extends StObject
+     with PoiCore {
   def this(argv: js.Array[String]) = this()
 }

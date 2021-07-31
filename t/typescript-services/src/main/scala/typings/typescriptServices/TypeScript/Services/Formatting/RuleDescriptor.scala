@@ -3,15 +3,13 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleDescriptor extends StObject {
   
-  var LeftTokenRange: TokenRange = js.native
+  var LeftTokenRange: TokenRange
   
-  var RightTokenRange: TokenRange = js.native
+  var RightTokenRange: TokenRange
 }
 object RuleDescriptor {
   

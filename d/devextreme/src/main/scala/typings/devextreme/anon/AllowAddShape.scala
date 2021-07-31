@@ -2,29 +2,27 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowAddShape extends StObject {
   
-  var allowAddShape: js.UndefOr[Boolean] = js.native
+  var allowAddShape: js.UndefOr[Boolean] = js.undefined
   
-  var allowChangeConnection: js.UndefOr[Boolean] = js.native
+  var allowChangeConnection: js.UndefOr[Boolean] = js.undefined
   
-  var allowChangeConnectorPoints: js.UndefOr[Boolean] = js.native
+  var allowChangeConnectorPoints: js.UndefOr[Boolean] = js.undefined
   
-  var allowChangeConnectorText: js.UndefOr[Boolean] = js.native
+  var allowChangeConnectorText: js.UndefOr[Boolean] = js.undefined
   
-  var allowChangeShapeText: js.UndefOr[Boolean] = js.native
+  var allowChangeShapeText: js.UndefOr[Boolean] = js.undefined
   
-  var allowDeleteConnector: js.UndefOr[Boolean] = js.native
+  var allowDeleteConnector: js.UndefOr[Boolean] = js.undefined
   
-  var allowDeleteShape: js.UndefOr[Boolean] = js.native
+  var allowDeleteShape: js.UndefOr[Boolean] = js.undefined
   
-  var allowMoveShape: js.UndefOr[Boolean] = js.native
+  var allowMoveShape: js.UndefOr[Boolean] = js.undefined
   
-  var allowResizeShape: js.UndefOr[Boolean] = js.native
+  var allowResizeShape: js.UndefOr[Boolean] = js.undefined
 }
 object AllowAddShape {
   

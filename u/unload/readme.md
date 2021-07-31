@@ -10,9 +10,9 @@ Execute code when the js-process exits. On all javascript-environments
 | ------------------ | :-------------: |
 | Full name          | unload |
 | Keywords           | unload, exit, onunload, SIGINT, uncaughtException, beforeExit |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 1203945 |
+| # releases         | 3 |
+| # dependents       | 7 |
+| # downloads        | 1733613 |
 | # stars            | 0 |
 
 ## Links

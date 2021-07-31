@@ -5,117 +5,115 @@ import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait switchButtonConfig extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var badge: js.UndefOr[Double | String] = js.native
+  var badge: js.UndefOr[Double | String] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var bottomLabel: js.UndefOr[String] = js.native
+  var bottomLabel: js.UndefOr[String] = js.undefined
   
-  var bottomPadding: js.UndefOr[Double] = js.native
+  var bottomPadding: js.UndefOr[Double] = js.undefined
   
-  var checkValue: js.UndefOr[String] = js.native
+  var checkValue: js.UndefOr[String] = js.undefined
   
-  var click: js.UndefOr[WebixCallback] = js.native
+  var click: js.UndefOr[WebixCallback] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var customCheckbox: js.UndefOr[Boolean] = js.native
+  var customCheckbox: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.native
+  var format: js.UndefOr[js.Any] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var inputAlign: js.UndefOr[String] = js.native
+  var inputAlign: js.UndefOr[String] = js.undefined
   
-  var inputHeight: js.UndefOr[Double] = js.native
+  var inputHeight: js.UndefOr[Double] = js.undefined
   
-  var inputWidth: js.UndefOr[Double] = js.native
+  var inputWidth: js.UndefOr[Double] = js.undefined
   
-  var invalid: js.UndefOr[Boolean] = js.native
+  var invalid: js.UndefOr[Boolean] = js.undefined
   
-  var invalidMessage: js.UndefOr[String] = js.native
+  var invalidMessage: js.UndefOr[String] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelAlign: js.UndefOr[String] = js.native
+  var labelAlign: js.UndefOr[String] = js.undefined
   
-  var labelPosition: js.UndefOr[String] = js.native
+  var labelPosition: js.UndefOr[String] = js.undefined
   
-  var labelRight: js.UndefOr[String] = js.native
+  var labelRight: js.UndefOr[String] = js.undefined
   
-  var labelWidth: js.UndefOr[Double] = js.native
+  var labelWidth: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var pattern: js.UndefOr[js.Any] = js.native
+  var pattern: js.UndefOr[js.Any] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var popup: js.UndefOr[String] = js.native
+  var popup: js.UndefOr[String] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var relatedAction: js.UndefOr[String] = js.native
+  var relatedAction: js.UndefOr[String] = js.undefined
   
-  var relatedView: js.UndefOr[String] = js.native
+  var relatedView: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var suggest: js.UndefOr[js.Any] = js.native
+  var suggest: js.UndefOr[js.Any] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var uncheckValue: js.UndefOr[String] = js.native
+  var uncheckValue: js.UndefOr[String] = js.undefined
   
-  var validate: js.UndefOr[WebixCallback] = js.native
+  var validate: js.UndefOr[WebixCallback] = js.undefined
   
-  var validateEvent: js.UndefOr[String] = js.native
+  var validateEvent: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object switchButtonConfig {
   
@@ -177,7 +175,7 @@ object switchButtonConfig {
     def setCheckValueUndefined: Self = StObject.set(x, "checkValue", js.undefined)
     
     @scala.inline
-    def setClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    def setClick(value: WebixCallback): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
@@ -417,7 +415,7 @@ object switchButtonConfig {
     def setUncheckValueUndefined: Self = StObject.set(x, "uncheckValue", js.undefined)
     
     @scala.inline
-    def setValidate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    def setValidate(value: WebixCallback): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValidateEvent(value: String): Self = StObject.set(x, "validateEvent", value.asInstanceOf[js.Any])

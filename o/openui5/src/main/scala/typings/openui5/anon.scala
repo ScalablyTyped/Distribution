@@ -2,33 +2,31 @@ package typings.openui5
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofBindingMode extends StObject {
     
     /**
       * BindingMode default means that the binding mode of the model is used
       */
-    var Default: js.Any = js.native
+    var Default: js.Any
     
     /**
       * BindingMode one time means value is only read from the model once
       */
-    var OneTime: js.Any = js.native
+    var OneTime: js.Any
     
     /**
       * BindingMode one way means from model to view
       */
-    var OneWay: js.Any = js.native
+    var OneWay: js.Any
     
     /**
       * BindingMode two way means from model to view and vice versa
       */
-    var TwoWay: js.Any = js.native
+    var TwoWay: js.Any
   }
   object TypeofBindingMode {
     
@@ -55,18 +53,17 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofBlockBackgroundType extends StObject {
     
     /**
       * Background is transparent
       */
-    var Default: js.Any = js.native
+    var Default: js.Any
     
     /**
       * Background is with predefined light colors
       */
-    var Light: js.Any = js.native
+    var Light: js.Any
   }
   object TypeofBlockBackgroundType {
     
@@ -144,33 +141,32 @@ object anon {
     val tils: js.Any = js.native
   }
   
-  @js.native
   trait TypeofCountMode extends StObject {
     
     /**
       * Count is retrieved by a separate request upfront and inline with each data request
       */
-    var Both: js.Any = js.native
+    var Both: js.Any
     
     /**
       * Count is retrieved by adding $inlinecount=allpages and is included in the data request
       */
-    var Inline: js.Any = js.native
+    var Inline: js.Any
     
     /**
       * Count is retrieved by adding $inlinecount=allpages and is included in every data request
       */
-    var InlineRepeat: js.Any = js.native
+    var InlineRepeat: js.Any
     
     /**
       * Count is not requested from the server
       */
-    var None: js.Any = js.native
+    var None: js.Any
     
     /**
       * Count is retrieved by sending a separate $count request, before requesting data
       */
-    var Request: js.Any = js.native
+    var Request: js.Any
   }
   object TypeofCountMode {
     
@@ -200,68 +196,67 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofDock extends StObject {
     
     /**
       */
-    var BeginBottom: js.Any = js.native
+    var BeginBottom: js.Any
     
     /**
       */
-    var BeginCenter: js.Any = js.native
+    var BeginCenter: js.Any
     
     /**
       */
-    var BeginTop: js.Any = js.native
+    var BeginTop: js.Any
     
     /**
       */
-    var CenterBottom: js.Any = js.native
+    var CenterBottom: js.Any
     
     /**
       */
-    var CenterCenter: js.Any = js.native
+    var CenterCenter: js.Any
     
     /**
       */
-    var CenterTop: js.Any = js.native
+    var CenterTop: js.Any
     
     /**
       */
-    var EndBottom: js.Any = js.native
+    var EndBottom: js.Any
     
     /**
       */
-    var EndCenter: js.Any = js.native
+    var EndCenter: js.Any
     
     /**
       */
-    var EndTop: js.Any = js.native
+    var EndTop: js.Any
     
     /**
       */
-    var LeftBottom: js.Any = js.native
+    var LeftBottom: js.Any
     
     /**
       */
-    var LeftCenter: js.Any = js.native
+    var LeftCenter: js.Any
     
     /**
       */
-    var LeftTop: js.Any = js.native
+    var LeftTop: js.Any
     
     /**
       */
-    var RightBottom: js.Any = js.native
+    var RightBottom: js.Any
     
     /**
       */
-    var RightCenter: js.Any = js.native
+    var RightCenter: js.Any
     
     /**
       */
-    var RightTop: js.Any = js.native
+    var RightTop: js.Any
   }
   object TypeofDock {
     
@@ -337,7 +332,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofFilterOperator extends StObject {
     
     /**
@@ -345,52 +339,52 @@ object anon {
       * example,when filtering a list of Names with BT "A", "B", all Names starting with "A" will beincluded
       * as well as the name "B" itself, but no other name starting with "B".
       */
-    var BT: js.Any = js.native
+    var BT: js.Any
     
     /**
       * FilterOperator contains
       */
-    var Contains: js.Any = js.native
+    var Contains: js.Any
     
     /**
       * FilterOperator equals
       */
-    var EQ: js.Any = js.native
+    var EQ: js.Any
     
     /**
       * FilterOperator ends with
       */
-    var EndsWith: js.Any = js.native
+    var EndsWith: js.Any
     
     /**
       * FilterOperator greater or equals
       */
-    var GE: js.Any = js.native
+    var GE: js.Any
     
     /**
       * FilterOperator greater than
       */
-    var GT: js.Any = js.native
+    var GT: js.Any
     
     /**
       * FilterOperator less or equals
       */
-    var LE: js.Any = js.native
+    var LE: js.Any
     
     /**
       * FilterOperator less than
       */
-    var LT: js.Any = js.native
+    var LT: js.Any
     
     /**
       * FilterOperator not equals
       */
-    var NE: js.Any = js.native
+    var NE: js.Any
     
     /**
       * FilterOperator starts with
       */
-    var StartsWith: js.Any = js.native
+    var StartsWith: js.Any
   }
   object TypeofFilterOperator {
     
@@ -446,18 +440,17 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofFilterType extends StObject {
     
     /**
       * Filters which are changed by the application
       */
-    var Application: js.Any = js.native
+    var Application: js.Any
     
     /**
       * Filters which are set by the different controls
       */
-    var Control: js.Any = js.native
+    var Control: js.Any
   }
   object TypeofFilterType {
     
@@ -478,28 +471,27 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofReadyState extends StObject {
     
     /**
       * The connection has been closed or could not be opened.
       */
-    var CLOSED: js.Any = js.native
+    var CLOSED: js.Any
     
     /**
       * The connection is going through the closing handshake.
       */
-    var CLOSING: js.Any = js.native
+    var CLOSING: js.Any
     
     /**
       * The connection has not yet been established.
       */
-    var CONNECTING: js.Any = js.native
+    var CONNECTING: js.Any
     
     /**
       * The WebSocket connection is established and communication is possible.
       */
-    var OPEN: js.Any = js.native
+    var OPEN: js.Any
   }
   object TypeofReadyState {
     

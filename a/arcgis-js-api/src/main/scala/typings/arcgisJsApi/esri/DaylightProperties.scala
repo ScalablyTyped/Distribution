@@ -4,53 +4,53 @@ import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.season
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DaylightProperties extends WidgetProperties {
+trait DaylightProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * Controls whether the widget displays a date or a season picker.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#dateOrSeason)
     */
-  var dateOrSeason: js.UndefOr[season | date] = js.native
+  var dateOrSeason: js.UndefOr[season | date] = js.undefined
   
   /**
     * Controls the speed of the daytime and date animation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#playSpeedMultiplier)
     */
-  var playSpeedMultiplier: js.UndefOr[Double] = js.native
+  var playSpeedMultiplier: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets steps, or intervals, on the time slider to restrict the times of the day that can be selected when dragging the thumb.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#timeSliderSteps)
     */
-  var timeSliderSteps: js.UndefOr[Double | js.Array[Double]] = js.native
+  var timeSliderSteps: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
     * The view model for the Daylight widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#viewModel)
     */
-  var viewModel: js.UndefOr[DaylightViewModelProperties] = js.native
+  var viewModel: js.UndefOr[DaylightViewModelProperties] = js.undefined
   
   /**
     * This property provides the ability to display or hide the individual elements of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[DaylightVisibleElements] = js.native
+  var visibleElements: js.UndefOr[DaylightVisibleElements] = js.undefined
 }
 object DaylightProperties {
   

@@ -3,12 +3,10 @@ package typings.samchon
 import typings.samchon.invokeMod.Invoke
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iprotocolMod {
   
-  @js.native
   trait IProtocol extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object iprotocolMod {
       *
       * @param invoke Invoke message to send
       */
-    def replyData(invoke: Invoke): Unit = js.native
+    def replyData(invoke: Invoke): Unit
     
     /**
       * Handling replied message.
@@ -27,7 +25,7 @@ object iprotocolMod {
       *
       * @param invoke An {@link Invoke} message has received.
       */
-    def sendData(invoke: Invoke): Unit = js.native
+    def sendData(invoke: Invoke): Unit
   }
   object IProtocol {
     

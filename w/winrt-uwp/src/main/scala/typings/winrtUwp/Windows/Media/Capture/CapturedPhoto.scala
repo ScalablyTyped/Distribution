@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a photo taken from a capture device such as a webcam attached. */
-@js.native
 trait CapturedPhoto extends StObject {
   
   /** Gets the photo data, represented as CapturedFrame object, associated with the CapturedPhoto object. */
-  var frame: CapturedFrame = js.native
+  var frame: CapturedFrame
   
   /** Represents a thumbnail image of the capture photo. */
-  var thumbnail: CapturedFrame = js.native
+  var thumbnail: CapturedFrame
 }
 object CapturedPhoto {
   

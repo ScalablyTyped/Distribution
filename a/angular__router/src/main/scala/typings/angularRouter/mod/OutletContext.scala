@@ -4,14 +4,13 @@ import typings.angularCore.mod.ComponentFactoryResolver
 import typings.angularCore.mod.ComponentRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "OutletContext")
 @js.native
 class OutletContext () extends StObject {
   
-  var attachRef: ComponentRef[_] | Null = js.native
+  var attachRef: ComponentRef[js.Any] | Null = js.native
   
   var children: ChildrenOutletContexts = js.native
   

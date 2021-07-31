@@ -5,7 +5,6 @@ import typings.chrome.chrome.fileBrowserHandler.SelectionParams
 import typings.chrome.chrome.fileBrowserHandler.SelectionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -29,7 +28,6 @@ object fileBrowserHandler {
   @scala.inline
   def onExecute_=(x: FileBrowserHandlerExecuteEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExecute")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.fileBrowserHandler.selectFile")
-  @js.native
-  def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
+  @scala.inline
+  def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectFile")(selectionParams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

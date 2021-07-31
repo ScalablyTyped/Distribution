@@ -3,21 +3,19 @@ package typings.htmlValidator.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicOptions extends StObject {
   
-  var headers: js.UndefOr[Record[String, String]] = js.native
+  var headers: js.UndefOr[Record[String, String]] = js.undefined
   
-  var ignore: js.UndefOr[String | js.Array[String]] = js.native
+  var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var isFragment: js.UndefOr[Boolean] = js.native
+  var isFragment: js.UndefOr[Boolean] = js.undefined
   
-  var isLocal: js.UndefOr[Boolean] = js.native
+  var isLocal: js.UndefOr[Boolean] = js.undefined
   
-  var validator: js.UndefOr[js.Object] = js.native
+  var validator: js.UndefOr[js.Object] = js.undefined
 }
 object BasicOptions {
   

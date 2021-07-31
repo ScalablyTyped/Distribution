@@ -3,23 +3,21 @@ package typings.protonNative.mod
 import typings.protonNative.anon.BackgroundColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyledTextProps extends StObject {
   
-  var style: js.UndefOr[BackgroundColor] = js.native
+  var style: js.UndefOr[BackgroundColor] = js.undefined
   
   /**
     * The x coordinate of the text's top left corner. (Only in a top level text component.)
     */
-  var x: js.UndefOr[Double | String] = js.native
+  var x: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The y coordinate of the text's top left corner. (Only in a top level text component.)
     */
-  var y: js.UndefOr[Double | String] = js.native
+  var y: js.UndefOr[Double | String] = js.undefined
 }
 object StyledTextProps {
   

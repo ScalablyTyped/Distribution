@@ -10,9 +10,9 @@ A tiny (240B to 501B) and fast utility to "deep clone" Objects, Arrays, Dates, R
 | ------------------ | :-------------: |
 | Full name          | klona |
 | Keywords           | clone, copy, deep, extend, recursive, object |
-| # releases         | 10 |
-| # dependents       | 19 |
-| # downloads        | 4044017 |
+| # releases         | 12 |
+| # dependents       | 38 |
+| # downloads        | 49347786 |
 | # stars            | 0 |
 
 ## Links

@@ -3,27 +3,25 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicListenerState extends StObject {
   
   /** The timestamp when the Listener was last successfully updated. */
-  var lastUpdated: js.UndefOr[String] = js.native
+  var lastUpdated: js.UndefOr[String] = js.undefined
   
   /** The listener config. */
   var listener: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicListenerState with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicListenerState & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * This is the per-resource version information. This version is currently taken from the :ref:`version_info ` field at the time that the listener was loaded. In the future, discrete
     * per-listener versions may be supported by the API.
     */
-  var versionInfo: js.UndefOr[String] = js.native
+  var versionInfo: js.UndefOr[String] = js.undefined
 }
 object DynamicListenerState {
   
@@ -46,7 +44,7 @@ object DynamicListenerState {
     def setListener(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicListenerState with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicListenerState & TopLevel[js.Any]
     ): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline

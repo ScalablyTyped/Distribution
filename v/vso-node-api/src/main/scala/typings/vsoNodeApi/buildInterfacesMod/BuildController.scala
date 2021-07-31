@@ -3,43 +3,43 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildController extends XamlBuildControllerReference {
+trait BuildController
+  extends StObject
+     with XamlBuildControllerReference {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The date the controller was created.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * The description of the controller.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Indicates whether the controller is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * The status of the controller.
     */
-  var status: ControllerStatus = js.native
+  var status: ControllerStatus
   
   /**
     * The date the controller was last updated.
     */
-  var updatedDate: Date = js.native
+  var updatedDate: Date
   
   /**
     * The controller's URI.
     */
-  var uri: String = js.native
+  var uri: String
 }
 object BuildController {
   

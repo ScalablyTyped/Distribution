@@ -10,9 +10,9 @@ Normalize and fix common issues with Romaji-based Japanese names.
 | ------------------ | :-------------: |
 | Full name          | romaji-name |
 | Keywords           | ja, jp, japanese, romaji, language |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 567 |
+| # downloads        | 749 |
 | # stars            | 1 |
 
 ## Links

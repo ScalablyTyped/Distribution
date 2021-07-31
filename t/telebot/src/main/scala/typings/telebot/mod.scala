@@ -27,7 +27,6 @@ import typings.telebot.anon.`0`
 import typings.telebot.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,10 +34,14 @@ object mod {
   @JSImport("telebot", JSImport.Namespace)
   @js.native
   class ^ protected ()
-    extends typings.telebot.mod.telebot {
+    extends StObject
+       with typings.telebot.mod.telebot {
     def this(config: String) = this()
     def this(config: typings.telebot.mod.config) = this()
   }
+  @JSImport("telebot", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("telebot", "AnswerList")
   @js.native
@@ -111,30 +114,28 @@ object mod {
   }
   
   /* static member */
-  @JSImport("telebot", "addMethods")
-  @js.native
-  def addMethods(methods: (genericCb | js.Any)*): js.Any = js.native
+  @scala.inline
+  def addMethods(methods: (genericCb | js.Any)*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait config extends StObject {
     
-    var allowedUpdates: js.UndefOr[js.Array[String]] = js.native
+    var allowedUpdates: js.UndefOr[js.Array[String]] = js.undefined
     
     // Optional. Plugin folder location relative to telebot package.
-    var pluginConfig: js.UndefOr[js.Any] = js.native
+    var pluginConfig: js.UndefOr[js.Any] = js.undefined
     
     // Optional. Use build-in plugins from pluginFolder.
-    var pluginFolder: js.UndefOr[String] = js.native
+    var pluginFolder: js.UndefOr[String] = js.undefined
     
     // Required. Telegram Bot API token.
-    var polling: js.UndefOr[Interval] = js.native
+    var polling: js.UndefOr[Interval] = js.undefined
     
-    var token: String = js.native
+    var token: String
     
     // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
-    var usePlugins: js.UndefOr[js.Array[String]] = js.native
+    var usePlugins: js.UndefOr[js.Array[String]] = js.undefined
     
-    var webhook: js.UndefOr[Cert] = js.native
+    var webhook: js.UndefOr[Cert] = js.undefined
   }
   object config {
     
@@ -194,16 +195,19 @@ object mod {
     }
   }
   
-  type genericCb = js.Function1[/* repeated */ js.Any, js.Any]
-  
   @js.native
+  trait genericCb extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
+  
   trait module extends StObject {
     
-    var defaultConfig: js.Any = js.native
+    var defaultConfig: js.Any
     
-    var id: String = js.native
+    var id: String
     
-    def plugin(args: js.Any*): Unit = js.native
+    def plugin(args: js.Any*): Unit
   }
   object module {
     
@@ -267,10 +271,10 @@ object mod {
     def editMessageText(config: InlineMsgId, text: String): js.Any | Boolean = js.native
     def editMessageText(config: MessageId, text: String): js.Any | Boolean = js.native
     
-    def event(types: String, data: js.Any): js.Promise[_] = js.native
-    def event(types: String, data: js.Any, self: js.Any): js.Promise[_] = js.native
-    def event(types: js.Array[String], data: js.Any): js.Promise[_] = js.native
-    def event(types: js.Array[String], data: js.Any, self: js.Any): js.Promise[_] = js.native
+    def event(types: String, data: js.Any): js.Promise[js.Any] = js.native
+    def event(types: String, data: js.Any, self: js.Any): js.Promise[js.Any] = js.native
+    def event(types: js.Array[String], data: js.Any): js.Promise[js.Any] = js.native
+    def event(types: js.Array[String], data: js.Any, self: js.Any): js.Promise[js.Any] = js.native
     
     def forwardMessage(chat_id: String, from_chat_id: String, message_id: Double): js.Any = js.native
     def forwardMessage(chat_id: String, from_chat_id: String, message_id: Double, opt: `0`): js.Any = js.native
@@ -284,8 +288,8 @@ object mod {
     def getChat(chat_id: String): js.Any = js.native
     def getChat(chat_id: Double): js.Any = js.native
     
-    def getChatAdministrators(chat_id: String): js.Array[_] | js.Any = js.native
-    def getChatAdministrators(chat_id: Double): js.Array[_] | js.Any = js.native
+    def getChatAdministrators(chat_id: String): js.Array[js.Any] | js.Any = js.native
+    def getChatAdministrators(chat_id: Double): js.Array[js.Any] | js.Any = js.native
     
     def getChatMember(chat_id: String, user_id: Double): js.Any = js.native
     def getChatMember(chat_id: Double, user_id: Double): js.Any = js.native
@@ -295,8 +299,8 @@ object mod {
     
     def getFile(file_id: String): js.Any = js.native
     
-    def getGameHighScores(user_id: Double): js.Array[_] = js.native
-    def getGameHighScores(user_id: Double, opt: InlineMessageId): js.Array[_] = js.native
+    def getGameHighScores(user_id: Double): js.Array[js.Any] = js.native
+    def getGameHighScores(user_id: Double, opt: InlineMessageId): js.Array[js.Any] = js.native
     
     // Telegram API
     def getMe(): js.Any = js.native
@@ -312,13 +316,13 @@ object mod {
     def inlineButton(text: String): js.Any = js.native
     def inlineButton(text: String, opt: js.Any): js.Any = js.native
     
-    def inlineKeyboard(inlineButtons: js.Array[js.Array[_]]): js.Any = js.native
+    def inlineKeyboard(inlineButtons: js.Array[js.Array[js.Any]]): js.Any = js.native
     
-    def inlineQueryKeyboard(config: js.Array[js.Array[_]]): js.Any = js.native
+    def inlineQueryKeyboard(config: js.Array[js.Array[js.Any]]): js.Any = js.native
     
     // methods.js
-    def keyboard(buttons: js.Array[js.Array[_]]): js.Any = js.native
-    def keyboard(buttons: js.Array[js.Array[_]], opt: js.Any): js.Any = js.native
+    def keyboard(buttons: js.Array[js.Array[js.Any]]): js.Any = js.native
+    def keyboard(buttons: js.Array[js.Array[js.Any]], opt: js.Any): js.Any = js.native
     
     def kickChatMember(chat_id: String, user_id: Double): Boolean = js.native
     def kickChatMember(chat_id: Double, user_id: Double): Boolean = js.native
@@ -342,13 +346,13 @@ object mod {
     
     def properties(form: js.Any, opt: js.Any): js.Any = js.native
     
-    def receiveUpdates(updateList: js.Array[_]): js.Promise[_] = js.native
+    def receiveUpdates(updateList: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     def removeEvent(`type`: String, fn: genericCb): Boolean = js.native
     
     def removeMod(name: String, fn: genericCb): Boolean = js.native
     
-    def request(url: String, form: js.Any, data: js.Any): js.Promise[_] = js.native
+    def request(url: String, form: js.Any, data: js.Any): js.Promise[js.Any] = js.native
     
     def sendAction(chat_id: String, action: String): Boolean = js.native
     def sendAction(chat_id: Double, action: String): Boolean = js.native
@@ -371,25 +375,13 @@ object mod {
     def sendAudio(chat_id: Double, file: ReadableStream, opt: Duration): js.Any = js.native
     
     def sendContact(chat_id: String, number: String, firstName: String): js.Any = js.native
-    def sendContact(
-      chat_id: String,
-      number: String,
-      firstName: String,
-      lastName: js.UndefOr[scala.Nothing],
-      opt: NotificationReplyMarkup
-    ): js.Any = js.native
     def sendContact(chat_id: String, number: String, firstName: String, lastName: String): js.Any = js.native
     def sendContact(chat_id: String, number: String, firstName: String, lastName: String, opt: NotificationReplyMarkup): js.Any = js.native
+    def sendContact(chat_id: String, number: String, firstName: String, lastName: Unit, opt: NotificationReplyMarkup): js.Any = js.native
     def sendContact(chat_id: Double, number: String, firstName: String): js.Any = js.native
-    def sendContact(
-      chat_id: Double,
-      number: String,
-      firstName: String,
-      lastName: js.UndefOr[scala.Nothing],
-      opt: NotificationReplyMarkup
-    ): js.Any = js.native
     def sendContact(chat_id: Double, number: String, firstName: String, lastName: String): js.Any = js.native
     def sendContact(chat_id: Double, number: String, firstName: String, lastName: String, opt: NotificationReplyMarkup): js.Any = js.native
+    def sendContact(chat_id: Double, number: String, firstName: String, lastName: Unit, opt: NotificationReplyMarkup): js.Any = js.native
     
     def sendDocument(chat_id: String, file: String): js.Any = js.native
     def sendDocument(chat_id: String, file: String, opt: Caption): js.Any = js.native
@@ -532,28 +524,13 @@ object mod {
     def setGameScore(user_id: Double, score: Double, opt: ChatId): Boolean | Error | js.Any = js.native
     
     def setWebhook(url: String): Boolean = js.native
-    def setWebhook(
-      url: String,
-      certificate: js.UndefOr[scala.Nothing],
-      allowed_updates: js.UndefOr[scala.Nothing],
-      max_connections: Double
-    ): Boolean = js.native
-    def setWebhook(url: String, certificate: js.UndefOr[scala.Nothing], allowed_updates: js.Array[String]): Boolean = js.native
-    def setWebhook(
-      url: String,
-      certificate: js.UndefOr[scala.Nothing],
-      allowed_updates: js.Array[String],
-      max_connections: Double
-    ): Boolean = js.native
     def setWebhook(url: String, certificate: js.Any): Boolean = js.native
-    def setWebhook(
-      url: String,
-      certificate: js.Any,
-      allowed_updates: js.UndefOr[scala.Nothing],
-      max_connections: Double
-    ): Boolean = js.native
     def setWebhook(url: String, certificate: js.Any, allowed_updates: js.Array[String]): Boolean = js.native
     def setWebhook(url: String, certificate: js.Any, allowed_updates: js.Array[String], max_connections: Double): Boolean = js.native
+    def setWebhook(url: String, certificate: js.Any, allowed_updates: Unit, max_connections: Double): Boolean = js.native
+    def setWebhook(url: String, certificate: Unit, allowed_updates: js.Array[String]): Boolean = js.native
+    def setWebhook(url: String, certificate: Unit, allowed_updates: js.Array[String], max_connections: Double): Boolean = js.native
+    def setWebhook(url: String, certificate: Unit, allowed_updates: Unit, max_connections: Double): Boolean = js.native
     
     def start(args: js.Any*): Unit = js.native
     

@@ -4,46 +4,45 @@ import typings.materializeCss.anon.PartialDatepickerOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("materialize-css", "Datepicker")
 @js.native
 class Datepicker ()
-  extends typings.materializeCss.M.Datepicker
+  extends StObject
+     with typings.materializeCss.M.Datepicker
 object Datepicker {
+  
+  @JSImport("materialize-css", "Datepicker")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Get Instance
     */
   /* static member */
-  @JSImport("materialize-css", "Datepicker.getInstance")
-  @js.native
-  def getInstance(elem: Element): typings.materializeCss.M.Datepicker = js.native
+  @scala.inline
+  def getInstance(elem: Element): typings.materializeCss.M.Datepicker = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Datepicker]
   
   /**
     * Init Datepickers
     */
   /* static member */
-  @JSImport("materialize-css", "Datepicker.init")
-  @js.native
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
-  ): js.Array[typings.materializeCss.M.Datepicker] = js.native
-  @JSImport("materialize-css", "Datepicker.init")
-  @js.native
+  ): js.Array[typings.materializeCss.M.Datepicker] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Datepicker]]
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialDatepickerOptions
-  ): js.Array[typings.materializeCss.M.Datepicker] = js.native
+  ): js.Array[typings.materializeCss.M.Datepicker] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Datepicker]]
   /**
     * Init Datepicker
     */
   /* static member */
-  @JSImport("materialize-css", "Datepicker.init")
-  @js.native
-  def init(els: Element): typings.materializeCss.M.Datepicker = js.native
-  @JSImport("materialize-css", "Datepicker.init")
-  @js.native
-  def init(els: Element, options: PartialDatepickerOptions): typings.materializeCss.M.Datepicker = js.native
+  @scala.inline
+  def init(els: Element): typings.materializeCss.M.Datepicker = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Datepicker]
+  @scala.inline
+  def init(els: Element, options: PartialDatepickerOptions): typings.materializeCss.M.Datepicker = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Datepicker]
 }

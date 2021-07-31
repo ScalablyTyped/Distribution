@@ -2,63 +2,61 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonAxe extends StObject {
   
-  var afterBuildTicks: js.UndefOr[js.Function2[/* scale */ js.Any, /* ticks */ js.Array[Double], js.Array[Double]]] = js.native
+  var afterBuildTicks: js.UndefOr[js.Function2[/* scale */ js.Any, /* ticks */ js.Array[Double], js.Array[Double]]] = js.undefined
   
-  var afterCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var afterUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeSetDimension: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeTickToLabelConversion: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var beforeUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeUpdate: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var bounds: js.UndefOr[String] = js.native
+  var bounds: js.UndefOr[String] = js.undefined
   
-  var display: js.UndefOr[Boolean | String] = js.native
+  var display: js.UndefOr[Boolean | String] = js.undefined
   
-  var gridLines: js.UndefOr[GridLineOptions] = js.native
+  var gridLines: js.UndefOr[GridLineOptions] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var offset: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.native
+  var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.undefined
   
-  var stacked: js.UndefOr[Boolean] = js.native
+  var stacked: js.UndefOr[Boolean] = js.undefined
   
-  var ticks: js.UndefOr[TickOptions] = js.native
+  var ticks: js.UndefOr[TickOptions] = js.undefined
   
-  var time: js.UndefOr[TimeScale] = js.native
+  var time: js.UndefOr[TimeScale] = js.undefined
   
-  var `type`: js.UndefOr[ScaleType | String] = js.native
+  var `type`: js.UndefOr[ScaleType | String] = js.undefined
 }
 object CommonAxe {
   

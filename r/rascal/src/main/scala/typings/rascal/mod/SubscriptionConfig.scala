@@ -4,37 +4,35 @@ import typings.amqplib.propertiesMod.Options.Consume
 import typings.rascal.anon.Counter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionConfig extends StObject {
   
-  var autoCreated: js.UndefOr[Boolean] = js.native
+  var autoCreated: js.UndefOr[Boolean] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var deferCloseChannel: js.UndefOr[Double] = js.native
+  var deferCloseChannel: js.UndefOr[Double] = js.undefined
   
-  var encryption: js.UndefOr[String] = js.native
+  var encryption: js.UndefOr[String] = js.undefined
   
-  var handler: js.UndefOr[String] = js.native
+  var handler: js.UndefOr[String] = js.undefined
   
-  var handlers: js.UndefOr[js.Array[String]] = js.native
+  var handlers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var options: js.UndefOr[Consume] = js.native
+  var options: js.UndefOr[Consume] = js.undefined
   
-  var prefetch: js.UndefOr[Double] = js.native
+  var prefetch: js.UndefOr[Double] = js.undefined
   
-  var queue: js.UndefOr[String] = js.native
+  var queue: js.UndefOr[String] = js.undefined
   
-  var recovery: js.UndefOr[js.Any] = js.native
+  var recovery: js.UndefOr[js.Any] = js.undefined
   
-  var redeliveries: js.UndefOr[Counter] = js.native
+  var redeliveries: js.UndefOr[Counter] = js.undefined
   
-  var retry: js.UndefOr[RetryConfig | Boolean] = js.native
+  var retry: js.UndefOr[RetryConfig | Boolean] = js.undefined
   
-  var vhost: js.UndefOr[String] = js.native
+  var vhost: js.UndefOr[String] = js.undefined
 }
 object SubscriptionConfig {
   

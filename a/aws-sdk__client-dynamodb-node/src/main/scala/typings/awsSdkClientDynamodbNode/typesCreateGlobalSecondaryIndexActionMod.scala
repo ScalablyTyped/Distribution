@@ -9,33 +9,31 @@ import typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.Unmarshall
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateGlobalSecondaryIndexActionMod {
   
-  @js.native
   trait CreateGlobalSecondaryIndexAction extends StObject {
     
     /**
       * <p>The name of the global secondary index to be created.</p>
       */
-    var IndexName: String = js.native
+    var IndexName: String
     
     /**
       * <p>The key schema for the global secondary index.</p>
       */
-    var KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement] = js.native
+    var KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]
     
     /**
       * <p>Represents attributes that are copied (projected) from the table into an index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.</p>
       */
-    var Projection: typings.awsSdkClientDynamodbNode.typesProjectionMod.Projection = js.native
+    var Projection: typings.awsSdkClientDynamodbNode.typesProjectionMod.Projection
     
     /**
       * <p>Represents the provisioned throughput settings for the specified global secondary index.</p> <p>For current minimum and maximum provisioned throughput values, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
       */
-    var ProvisionedThroughput: typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput = js.native
+    var ProvisionedThroughput: typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput
   }
   object CreateGlobalSecondaryIndexAction {
     
@@ -70,26 +68,27 @@ object typesCreateGlobalSecondaryIndexActionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCreateGlobalSecondaryIndexAction extends CreateGlobalSecondaryIndexAction {
+  trait UnmarshalledCreateGlobalSecondaryIndexAction
+    extends StObject
+       with CreateGlobalSecondaryIndexAction {
     
     /**
       * <p>The key schema for the global secondary index.</p>
       */
     @JSName("KeySchema")
-    var KeySchema_UnmarshalledCreateGlobalSecondaryIndexAction: js.Array[UnmarshalledKeySchemaElement] = js.native
+    var KeySchema_UnmarshalledCreateGlobalSecondaryIndexAction: js.Array[UnmarshalledKeySchemaElement]
     
     /**
       * <p>Represents attributes that are copied (projected) from the table into an index. These are in addition to the primary key attributes and index key attributes, which are automatically projected.</p>
       */
     @JSName("Projection")
-    var Projection_UnmarshalledCreateGlobalSecondaryIndexAction: UnmarshalledProjection = js.native
+    var Projection_UnmarshalledCreateGlobalSecondaryIndexAction: UnmarshalledProjection
     
     /**
       * <p>Represents the provisioned throughput settings for the specified global secondary index.</p> <p>For current minimum and maximum provisioned throughput values, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
       */
     @JSName("ProvisionedThroughput")
-    var ProvisionedThroughput_UnmarshalledCreateGlobalSecondaryIndexAction: UnmarshalledProvisionedThroughput = js.native
+    var ProvisionedThroughput_UnmarshalledCreateGlobalSecondaryIndexAction: UnmarshalledProvisionedThroughput
   }
   object UnmarshalledCreateGlobalSecondaryIndexAction {
     

@@ -2,22 +2,20 @@ package typings.firefoxWebextBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ js.Any, _] */] extends StObject {
+trait WebExtEvent[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
   
-  def addListener(cb: TCallback): Unit = js.native
+  def addListener(cb: TCallback): Unit
   
-  def hasListener(cb: TCallback): Boolean = js.native
+  def hasListener(cb: TCallback): Boolean
   
-  def removeListener(cb: TCallback): Unit = js.native
+  def removeListener(cb: TCallback): Unit
 }
 object WebExtEvent {
   
   @scala.inline
-  def apply[TCallback /* <: js.Function1[/* repeated */ js.Any, _] */](
+  def apply[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     addListener: TCallback => Unit,
     hasListener: TCallback => Boolean,
     removeListener: TCallback => Unit
@@ -27,7 +25,7 @@ object WebExtEvent {
   }
   
   @scala.inline
-  implicit class WebExtEventMutableBuilder[Self <: WebExtEvent[_], TCallback /* <: js.Function1[/* repeated */ js.Any, _] */] (val x: Self with WebExtEvent[TCallback]) extends AnyVal {
+  implicit class WebExtEventMutableBuilder[Self <: WebExtEvent[?], TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & WebExtEvent[TCallback]) extends AnyVal {
     
     @scala.inline
     def setAddListener(value: TCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))

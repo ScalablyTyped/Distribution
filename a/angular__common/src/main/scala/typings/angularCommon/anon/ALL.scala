@@ -2,201 +2,199 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALL extends StObject {
   
-  var ALL: js.Array[String] = js.native
+  var ALL: js.Array[String]
   
-  var AOA: js.Array[scala.Nothing] = js.native
+  var AOA: js.Array[scala.Nothing]
   
-  var ARS: js.Array[scala.Nothing] = js.native
+  var ARS: js.Array[scala.Nothing]
   
-  var AUD: js.Array[String] = js.native
+  var AUD: js.Array[String]
   
-  var BAM: js.Array[scala.Nothing] = js.native
+  var BAM: js.Array[scala.Nothing]
   
-  var BBD: js.Array[scala.Nothing] = js.native
+  var BBD: js.Array[scala.Nothing]
   
-  var BDT: js.Array[scala.Nothing] = js.native
+  var BDT: js.Array[scala.Nothing]
   
-  var BMD: js.Array[scala.Nothing] = js.native
+  var BMD: js.Array[scala.Nothing]
   
-  var BND: js.Array[scala.Nothing] = js.native
+  var BND: js.Array[scala.Nothing]
   
-  var BOB: js.Array[scala.Nothing] = js.native
+  var BOB: js.Array[scala.Nothing]
   
-  var BRL: js.Array[scala.Nothing] = js.native
+  var BRL: js.Array[scala.Nothing]
   
-  var BSD: js.Array[scala.Nothing] = js.native
+  var BSD: js.Array[scala.Nothing]
   
-  var BWP: js.Array[scala.Nothing] = js.native
+  var BWP: js.Array[scala.Nothing]
   
-  var BYN: js.Array[scala.Nothing] = js.native
+  var BYN: js.Array[scala.Nothing]
   
-  var BZD: js.Array[scala.Nothing] = js.native
+  var BZD: js.Array[scala.Nothing]
   
-  var CAD: js.Array[String] = js.native
+  var CAD: js.Array[String]
   
-  var CLP: js.Array[scala.Nothing] = js.native
+  var CLP: js.Array[scala.Nothing]
   
-  var CNY: js.Array[String] = js.native
+  var CNY: js.Array[String]
   
-  var COP: js.Array[scala.Nothing] = js.native
+  var COP: js.Array[scala.Nothing]
   
-  var CRC: js.Array[scala.Nothing] = js.native
+  var CRC: js.Array[scala.Nothing]
   
-  var CUC: js.Array[scala.Nothing] = js.native
+  var CUC: js.Array[scala.Nothing]
   
-  var CUP: js.Array[scala.Nothing] = js.native
+  var CUP: js.Array[scala.Nothing]
   
-  var CZK: js.Array[scala.Nothing] = js.native
+  var CZK: js.Array[scala.Nothing]
   
-  var DKK: js.Array[scala.Nothing] = js.native
+  var DKK: js.Array[scala.Nothing]
   
-  var DOP: js.Array[scala.Nothing] = js.native
+  var DOP: js.Array[scala.Nothing]
   
-  var EGP: js.Array[scala.Nothing] = js.native
+  var EGP: js.Array[scala.Nothing]
   
-  var EUR: js.Array[String] = js.native
+  var EUR: js.Array[String]
   
-  var FJD: js.Array[scala.Nothing] = js.native
+  var FJD: js.Array[scala.Nothing]
   
-  var FKP: js.Array[scala.Nothing] = js.native
+  var FKP: js.Array[scala.Nothing]
   
-  var GBP: js.Array[String] = js.native
+  var GBP: js.Array[String]
   
-  var GEL: js.Array[scala.Nothing] = js.native
+  var GEL: js.Array[scala.Nothing]
   
-  var GIP: js.Array[scala.Nothing] = js.native
+  var GIP: js.Array[scala.Nothing]
   
-  var GNF: js.Array[scala.Nothing] = js.native
+  var GNF: js.Array[scala.Nothing]
   
-  var GTQ: js.Array[scala.Nothing] = js.native
+  var GTQ: js.Array[scala.Nothing]
   
-  var GYD: js.Array[scala.Nothing] = js.native
+  var GYD: js.Array[scala.Nothing]
   
-  var HKD: js.Array[String] = js.native
+  var HKD: js.Array[String]
   
-  var HNL: js.Array[scala.Nothing] = js.native
+  var HNL: js.Array[scala.Nothing]
   
-  var HRK: js.Array[scala.Nothing] = js.native
+  var HRK: js.Array[scala.Nothing]
   
-  var HUF: js.Array[scala.Nothing] = js.native
+  var HUF: js.Array[scala.Nothing]
   
-  var IDR: js.Array[scala.Nothing] = js.native
+  var IDR: js.Array[scala.Nothing]
   
-  var ILS: js.Array[String] = js.native
+  var ILS: js.Array[String]
   
-  var INR: js.Array[String] = js.native
+  var INR: js.Array[String]
   
-  var ISK: js.Array[scala.Nothing] = js.native
+  var ISK: js.Array[scala.Nothing]
   
-  var JMD: js.Array[scala.Nothing] = js.native
+  var JMD: js.Array[scala.Nothing]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var KHR: js.Array[scala.Nothing] = js.native
+  var KHR: js.Array[scala.Nothing]
   
-  var KMF: js.Array[scala.Nothing] = js.native
+  var KMF: js.Array[scala.Nothing]
   
-  var KPW: js.Array[scala.Nothing] = js.native
+  var KPW: js.Array[scala.Nothing]
   
-  var KRW: js.Array[String] = js.native
+  var KRW: js.Array[String]
   
-  var KYD: js.Array[scala.Nothing] = js.native
+  var KYD: js.Array[scala.Nothing]
   
-  var KZT: js.Array[scala.Nothing] = js.native
+  var KZT: js.Array[scala.Nothing]
   
-  var LAK: js.Array[scala.Nothing] = js.native
+  var LAK: js.Array[scala.Nothing]
   
-  var LBP: js.Array[scala.Nothing] = js.native
+  var LBP: js.Array[scala.Nothing]
   
-  var LKR: js.Array[scala.Nothing] = js.native
+  var LKR: js.Array[scala.Nothing]
   
-  var LRD: js.Array[scala.Nothing] = js.native
+  var LRD: js.Array[scala.Nothing]
   
-  var MGA: js.Array[scala.Nothing] = js.native
+  var MGA: js.Array[scala.Nothing]
   
-  var MKD: js.Array[String] = js.native
+  var MKD: js.Array[String]
   
-  var MMK: js.Array[scala.Nothing] = js.native
+  var MMK: js.Array[scala.Nothing]
   
-  var MNT: js.Array[scala.Nothing] = js.native
+  var MNT: js.Array[scala.Nothing]
   
-  var MUR: js.Array[scala.Nothing] = js.native
+  var MUR: js.Array[scala.Nothing]
   
-  var MXN: js.Array[String] = js.native
+  var MXN: js.Array[String]
   
-  var MYR: js.Array[scala.Nothing] = js.native
+  var MYR: js.Array[scala.Nothing]
   
-  var NAD: js.Array[scala.Nothing] = js.native
+  var NAD: js.Array[scala.Nothing]
   
-  var NGN: js.Array[scala.Nothing] = js.native
+  var NGN: js.Array[scala.Nothing]
   
-  var NIO: js.Array[scala.Nothing] = js.native
+  var NIO: js.Array[scala.Nothing]
   
-  var NOK: js.Array[scala.Nothing] = js.native
+  var NOK: js.Array[scala.Nothing]
   
-  var NPR: js.Array[scala.Nothing] = js.native
+  var NPR: js.Array[scala.Nothing]
   
-  var NZD: js.Array[String] = js.native
+  var NZD: js.Array[String]
   
-  var PHP: js.Array[scala.Nothing] = js.native
+  var PHP: js.Array[scala.Nothing]
   
-  var PKR: js.Array[scala.Nothing] = js.native
+  var PKR: js.Array[scala.Nothing]
   
-  var PLN: js.Array[scala.Nothing] = js.native
+  var PLN: js.Array[scala.Nothing]
   
-  var PYG: js.Array[scala.Nothing] = js.native
+  var PYG: js.Array[scala.Nothing]
   
-  var RON: js.Array[scala.Nothing] = js.native
+  var RON: js.Array[scala.Nothing]
   
-  var RUB: js.Array[scala.Nothing] = js.native
+  var RUB: js.Array[scala.Nothing]
   
-  var RWF: js.Array[scala.Nothing] = js.native
+  var RWF: js.Array[scala.Nothing]
   
-  var SBD: js.Array[scala.Nothing] = js.native
+  var SBD: js.Array[scala.Nothing]
   
-  var SEK: js.Array[scala.Nothing] = js.native
+  var SEK: js.Array[scala.Nothing]
   
-  var SGD: js.Array[scala.Nothing] = js.native
+  var SGD: js.Array[scala.Nothing]
   
-  var SHP: js.Array[scala.Nothing] = js.native
+  var SHP: js.Array[scala.Nothing]
   
-  var SRD: js.Array[scala.Nothing] = js.native
+  var SRD: js.Array[scala.Nothing]
   
-  var SSP: js.Array[scala.Nothing] = js.native
+  var SSP: js.Array[scala.Nothing]
   
-  var STN: js.Array[scala.Nothing] = js.native
+  var STN: js.Array[scala.Nothing]
   
-  var SYP: js.Array[scala.Nothing] = js.native
+  var SYP: js.Array[scala.Nothing]
   
-  var THB: js.Array[String] = js.native
+  var THB: js.Array[String]
   
-  var TOP: js.Array[scala.Nothing] = js.native
+  var TOP: js.Array[scala.Nothing]
   
-  var TRY: js.Array[scala.Nothing] = js.native
+  var TRY: js.Array[scala.Nothing]
   
-  var TTD: js.Array[scala.Nothing] = js.native
+  var TTD: js.Array[scala.Nothing]
   
-  var TWD: js.Array[String] = js.native
+  var TWD: js.Array[String]
   
-  var UAH: js.Array[scala.Nothing] = js.native
+  var UAH: js.Array[scala.Nothing]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
   
-  var UYU: js.Array[scala.Nothing] = js.native
+  var UYU: js.Array[scala.Nothing]
   
-  var VND: js.Array[String] = js.native
+  var VND: js.Array[String]
   
-  var XCD: js.Array[String] = js.native
+  var XCD: js.Array[String]
   
-  var ZAR: js.Array[scala.Nothing] = js.native
+  var ZAR: js.Array[scala.Nothing]
   
-  var ZMW: js.Array[scala.Nothing] = js.native
+  var ZMW: js.Array[scala.Nothing]
 }
 object ALL {
   

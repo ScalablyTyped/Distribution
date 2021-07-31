@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketCorsRequest extends StObject {
   
   /**
     * Specifies the bucket impacted by the corsconfiguration.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * Describes the cross-origin access configuration for objects in an Amazon S3 bucket. For more information, see Enabling Cross-Origin Resource Sharing in the Amazon Simple Storage Service Developer Guide.
     */
-  var CORSConfiguration: typings.awsSdk.s3Mod.CORSConfiguration = js.native
+  var CORSConfiguration: typings.awsSdk.s3Mod.CORSConfiguration
   
   /**
     * The base64-encoded 128-bit MD5 digest of the data. This header must be used as a message integrity check to verify that the request body was not corrupted in transit. For more information, go to RFC 1864.  For requests made using the AWS Command Line Interface (CLI) or AWS SDKs, this field is calculated automatically.
     */
-  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.native
+  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.undefined
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
 }
 object PutBucketCorsRequest {
   

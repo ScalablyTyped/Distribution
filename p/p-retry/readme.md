@@ -10,9 +10,9 @@ Retry a promise-returning or async function
 | ------------------ | :-------------: |
 | Full name          | p-retry |
 | Keywords           | promise, retry, retries, operation, failed, rejected, try, exponential, backoff, attempt, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 6 |
-| # dependents       | 198 |
-| # downloads        | 226416332 |
+| # releases         | 4 |
+| # dependents       | 231 |
+| # downloads        | 310029344 |
 | # stars            | 3 |
 
 ## Links

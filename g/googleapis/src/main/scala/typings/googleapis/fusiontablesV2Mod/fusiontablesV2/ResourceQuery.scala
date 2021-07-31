@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fusiontables/v2", "fusiontables_v2.Resource$Query")
@@ -33,7 +32,7 @@ class ResourceQuery protected () extends StObject {
     */
   def sql(): GaxiosPromise[SchemaSqlresponse] = js.native
   def sql(callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
-  def sql(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSqlresponse] = js.native
+  def sql(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSqlresponse] = js.native
   def sql(params: ParamsResourceQuerySql): GaxiosPromise[SchemaSqlresponse] = js.native
   def sql(params: ParamsResourceQuerySql, callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
   def sql(
@@ -65,7 +64,7 @@ class ResourceQuery protected () extends StObject {
     */
   def sqlGet(): GaxiosPromise[SchemaSqlresponse] = js.native
   def sqlGet(callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
-  def sqlGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSqlresponse] = js.native
+  def sqlGet(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSqlresponse] = js.native
   def sqlGet(params: ParamsResourceQuerySqlget): GaxiosPromise[SchemaSqlresponse] = js.native
   def sqlGet(params: ParamsResourceQuerySqlget, callback: BodyResponseCallback[SchemaSqlresponse]): Unit = js.native
   def sqlGet(

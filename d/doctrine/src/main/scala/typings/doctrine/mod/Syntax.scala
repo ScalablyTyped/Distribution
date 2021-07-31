@@ -19,7 +19,6 @@ import typings.doctrine.doctrineStrings.UnionType
 import typings.doctrine.doctrineStrings.VoidLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Syntax {

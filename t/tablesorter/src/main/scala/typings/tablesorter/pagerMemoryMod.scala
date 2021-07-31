@@ -3,38 +3,36 @@ package typings.tablesorter
 import typings.tablesorter.sortDefinitionMod.SortDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerMemoryMod {
   
-  @js.native
   trait PagerMemory extends StObject {
     
     /**
       * The currently applied filters.
       */
-    var currentFilters: js.Array[String] = js.native
+    var currentFilters: js.Array[String]
     
     /**
       * The page-number.
       */
-    var page: Double = js.native
+    var page: Double
     
     /**
       * The size of a page.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * The sorting.
       */
-    var sortList: js.Array[SortDefinition] = js.native
+    var sortList: js.Array[SortDefinition]
     
     /**
       * The total amount of rows.
       */
-    var totalRows: Double = js.native
+    var totalRows: Double
   }
   object PagerMemory {
     

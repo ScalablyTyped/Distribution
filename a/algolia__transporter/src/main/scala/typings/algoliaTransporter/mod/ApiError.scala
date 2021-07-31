@@ -1,30 +1,24 @@
 package typings.algoliaTransporter.mod
 
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Error & { readonly status :number,  readonly transporterStackTrace :std.Array<@algolia/transporter.@algolia/transporter.StackFrame>} */
-@js.native
-trait ApiError extends StObject {
-  
-  var message: String = js.native
-  
-  var name: String = js.native
-  
-  var stack: js.UndefOr[String] = js.native
+trait ApiError
+  extends StObject
+     with Error {
   
   /**
     * The http status code.
     */
-  val status: Double = js.native
+  val status: Double
   
   /**
     * Contains report of stack frames of the
     * execution of a certain request.
     */
-  val transporterStackTrace: js.Array[StackFrame] = js.native
+  val transporterStackTrace: js.Array[StackFrame]
 }
 object ApiError {
   
@@ -36,18 +30,6 @@ object ApiError {
   
   @scala.inline
   implicit class ApiErrorMutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
     def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])

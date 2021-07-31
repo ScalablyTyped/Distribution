@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutInventoryResult extends StObject {
   
   /**
     * Information about the request.
     */
-  var Message: js.UndefOr[PutInventoryMessage] = js.native
+  var Message: js.UndefOr[PutInventoryMessage] = js.undefined
 }
 object PutInventoryResult {
   

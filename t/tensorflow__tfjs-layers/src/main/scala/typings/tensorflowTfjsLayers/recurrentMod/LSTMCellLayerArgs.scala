@@ -3,11 +3,11 @@ package typings.tensorflowTfjsLayers.recurrentMod
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LSTMCellLayerArgs extends SimpleRNNCellLayerArgs {
+trait LSTMCellLayerArgs
+  extends StObject
+     with SimpleRNNCellLayerArgs {
   
   /**
     * Implementation mode, either 1 or 2.
@@ -22,7 +22,7 @@ trait LSTMCellLayerArgs extends SimpleRNNCellLayerArgs {
     * Note: For superior performance, TensorFlow.js always uses implementation
     * 2, regardless of the actual value of this configuration field.
     */
-  var implementation: js.UndefOr[Double] = js.native
+  var implementation: js.UndefOr[Double] = js.undefined
   
   /**
     * Activation function to use for the recurrent step.
@@ -31,7 +31,7 @@ trait LSTMCellLayerArgs extends SimpleRNNCellLayerArgs {
     *
     * If `null`, no activation is applied.
     */
-  var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.native
+  var recurrentActivation: js.UndefOr[ActivationIdentifier] = js.undefined
   
   /**
     * If `true`, add 1 to the bias of the forget gate at initialization.
@@ -40,7 +40,7 @@ trait LSTMCellLayerArgs extends SimpleRNNCellLayerArgs {
     * [Jozefowicz et
     * al.](http://www.jmlr.org/proceedings/papers/v37/jozefowicz15.pdf).
     */
-  var unitForgetBias: js.UndefOr[Boolean] = js.native
+  var unitForgetBias: js.UndefOr[Boolean] = js.undefined
 }
 object LSTMCellLayerArgs {
   

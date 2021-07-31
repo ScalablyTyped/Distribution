@@ -10,9 +10,9 @@ Gatsby Telemetry
 | ------------------ | :-------------: |
 | Full name          | gatsby-telemetry |
 | Keywords           | telemetry |
-| # releases         | 209 |
+| # releases         | 210 |
 | # dependents       | 15 |
-| # downloads        | 20666004 |
+| # downloads        | 21130941 |
 | # stars            | 0 |
 
 ## Links

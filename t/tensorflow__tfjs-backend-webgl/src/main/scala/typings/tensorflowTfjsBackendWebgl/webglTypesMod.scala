@@ -3,33 +3,31 @@ package typings.tensorflowTfjsBackendWebgl
 import typings.std.WebGLQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webglTypesMod {
   
-  @js.native
   trait WebGL1DisjointQueryTimerExtension extends StObject {
     
-    var GPU_DISJOINT_EXT: Double = js.native
+    var GPU_DISJOINT_EXT: Double
     
-    var QUERY_RESULT_AVAILABLE_EXT: Double = js.native
+    var QUERY_RESULT_AVAILABLE_EXT: Double
     
-    var QUERY_RESULT_EXT: Double = js.native
+    var QUERY_RESULT_EXT: Double
     
-    var TIME_ELAPSED_EXT: Double = js.native
+    var TIME_ELAPSED_EXT: Double
     
-    def beginQueryEXT(ext: Double, query: WebGLQuery): Unit = js.native
+    def beginQueryEXT(ext: Double, query: WebGLQuery): Unit
     
-    def createQueryEXT(): js.Object = js.native
+    def createQueryEXT(): js.Object
     
-    def deleteQueryEXT(query: WebGLQuery): Unit = js.native
+    def deleteQueryEXT(query: WebGLQuery): Unit
     
-    def endQueryEXT(ext: Double): Unit = js.native
+    def endQueryEXT(ext: Double): Unit
     
-    def getQueryObjectEXT(query: WebGLQuery, queryResultAvailableExt: Double): Double = js.native
+    def getQueryObjectEXT(query: WebGLQuery, queryResultAvailableExt: Double): Double
     
-    def isQueryEXT(query: WebGLQuery): Boolean = js.native
+    def isQueryEXT(query: WebGLQuery): Boolean
   }
   object WebGL1DisjointQueryTimerExtension {
     
@@ -85,12 +83,11 @@ object webglTypesMod {
     }
   }
   
-  @js.native
   trait WebGL2DisjointQueryTimerExtension extends StObject {
     
-    var GPU_DISJOINT_EXT: Double = js.native
+    var GPU_DISJOINT_EXT: Double
     
-    var TIME_ELAPSED_EXT: Double = js.native
+    var TIME_ELAPSED_EXT: Double
   }
   object WebGL2DisjointQueryTimerExtension {
     
@@ -111,22 +108,21 @@ object webglTypesMod {
     }
   }
   
-  @js.native
   trait WebGLContextAttributes extends StObject {
     
-    var alpha: js.UndefOr[Boolean] = js.native
+    var alpha: js.UndefOr[Boolean] = js.undefined
     
-    var antialias: js.UndefOr[Boolean] = js.native
+    var antialias: js.UndefOr[Boolean] = js.undefined
     
-    var depth: js.UndefOr[Boolean] = js.native
+    var depth: js.UndefOr[Boolean] = js.undefined
     
-    var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.native
+    var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
     
-    var premultipliedAlpha: js.UndefOr[Boolean] = js.native
+    var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
     
-    var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+    var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
     
-    var stencil: js.UndefOr[Boolean] = js.native
+    var stencil: js.UndefOr[Boolean] = js.undefined
   }
   object WebGLContextAttributes {
     

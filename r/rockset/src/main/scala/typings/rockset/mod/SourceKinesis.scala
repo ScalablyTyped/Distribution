@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceKinesis extends StObject {
   
   // AWS region name of Kinesis stream, by default us-west-2 is used
-  var aws_region: js.UndefOr[String] = js.native
+  var aws_region: js.UndefOr[String] = js.undefined
   
   // name of kinesis stream
-  var stream_name: String = js.native
+  var stream_name: String
 }
 object SourceKinesis {
   

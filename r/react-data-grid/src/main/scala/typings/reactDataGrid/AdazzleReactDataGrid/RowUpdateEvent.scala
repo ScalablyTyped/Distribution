@@ -2,35 +2,33 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a row update. Generic event type returns untyped row, use parameterized type with the row type as the parameter
   * @default T = any
   */
-@js.native
 trait RowUpdateEvent[T] extends StObject {
   
   /**
     * The name of the column that was updated.
     */
-  var cellKey: String = js.native
+  var cellKey: String
   
   /**
     * The name of the key pressed to trigger the event ('Tab', 'Enter', etc.).
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The index of the updated row.
     */
-  var rowIdx: Double = js.native
+  var rowIdx: Double
   
   /**
     * The columns that were updated and their values.
     */
-  var updated: T = js.native
+  var updated: T
 }
 object RowUpdateEvent {
   
@@ -41,7 +39,7 @@ object RowUpdateEvent {
   }
   
   @scala.inline
-  implicit class RowUpdateEventMutableBuilder[Self <: RowUpdateEvent[_], T] (val x: Self with RowUpdateEvent[T]) extends AnyVal {
+  implicit class RowUpdateEventMutableBuilder[Self <: RowUpdateEvent[?], T] (val x: Self & RowUpdateEvent[T]) extends AnyVal {
     
     @scala.inline
     def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])

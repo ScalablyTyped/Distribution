@@ -3,43 +3,41 @@ package typings.mysql2
 import typings.mysql2.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldPacketMod {
   
-  @js.native
   trait FieldPacket extends StObject {
     
-    var default: js.Any = js.native
+    var default: js.Any
     
-    var catalog: String = js.native
+    var catalog: String
     
-    var charsetNr: Double = js.native
+    var charsetNr: Double
     
-    var constructor: `0` = js.native
+    var constructor: `0`
     
-    var db: String = js.native
+    var db: String
     
-    var decimals: Double = js.native
+    var decimals: Double
     
-    var flags: Double = js.native
+    var flags: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: String = js.native
+    var name: String
     
-    var orgName: String = js.native
+    var orgName: String
     
-    var orgTable: String = js.native
+    var orgTable: String
     
-    var protocol41: Boolean = js.native
+    var protocol41: Boolean
     
-    var table: String = js.native
+    var table: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var zerofill: Boolean = js.native
+    var zerofill: Boolean
   }
   object FieldPacket {
     

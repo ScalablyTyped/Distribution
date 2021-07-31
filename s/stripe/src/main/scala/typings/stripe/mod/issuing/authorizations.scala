@@ -29,7 +29,6 @@ import typings.stripe.stripeStrings.webhook_declined
 import typings.stripe.stripeStrings.webhook_timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorizations {
@@ -81,110 +80,111 @@ object authorizations {
   /**
     * When an issued card is used to make a purchase, an Issuing Authorization object is created. Authorizations must be approved for the purchase to be completed successfully.
     */
-  @js.native
-  trait IAuthorization extends IResourceObject {
+  trait IAuthorization
+    extends StObject
+       with IResourceObject {
     
     /**
       * Whether the authorization has been approved.
       */
-    var approved: Boolean = js.native
+    var approved: Boolean
     
     /**
       * How the card details were provided. One of chip, contactless, keyed_in, online, or swipe.
       */
-    var authorization_method: AuthorizationMethod = js.native
+    var authorization_method: AuthorizationMethod
     
     /**
       * The amount that has been authorized. This will be 0 when the object is created, and increase after it has been approved.
       */
-    var authorized_amount: Double = js.native
+    var authorized_amount: Double
     
     /**
       * The currency that was presented to the cardholder for the authorization. Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var authorized_currency: String = js.native
+    var authorized_currency: String
     
-    var balance_transactions: js.Array[IBalanceTransaction] = js.native
+    var balance_transactions: js.Array[IBalanceTransaction]
     
     /**
       * Show child attributes
       */
-    var card: IIssuingCard = js.native
+    var card: IIssuingCard
     
     /**
       * The cardholder to whom this authorization belongs.
       */
-    var cardholder: String | ICardholder = js.native
+    var cardholder: String | ICardholder
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * The amount the authorization is expected to be in held_currency. When Stripe holds funds from you, this is the amount reserved for the authorization. This will be 0 when the object is created, and increase after it has been approved. For multi-currency transactions, held_amount can be used to determine the expected exchange rate.
       */
-    var held_amount: Double = js.native
+    var held_amount: Double
     
     /**
       * The currency of the held amount. This will always be the card currency.
       */
-    var held_currency: String = js.native
+    var held_currency: String
     
-    var is_held_amount_controllable: Boolean = js.native
+    var is_held_amount_controllable: Boolean
     
     /**
       * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var merchant_data: MerchantData = js.native
+    var merchant_data: MerchantData
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * String representing the object’s type. Objects of the same type share the same value.
       */
     @JSName("object")
-    var object_IAuthorization: issuingDotauthorization = js.native
+    var object_IAuthorization: issuingDotauthorization
     
     /**
       * The amount the user is requesting to be authorized. This field will only be non-zero during an issuing.authorization.request webhook.
       */
-    var pending_authorized_amount: Double = js.native
+    var pending_authorized_amount: Double
     
     /**
       * The additional amount Stripe will hold if the authorization is approved. This field will only be non-zero during an issuing.authorization.request webhook.
       */
-    var pending_held_amount: Double = js.native
+    var pending_held_amount: Double
     
     /**
       * Show child attributes
       */
-    var request_history: js.Array[RequestHistory] = js.native
+    var request_history: js.Array[RequestHistory]
     
     /**
       * One of closed, pending, or reversed.
       */
-    var status: AuthorizationStatus = js.native
+    var status: AuthorizationStatus
     
     /**
       * Show child attributes
       */
-    var transactions: js.Array[ITransaction] = js.native
+    var transactions: js.Array[ITransaction]
     
     /**
       * Show child attributes
       */
-    var verification_data: VerificationData = js.native
+    var verification_data: VerificationData
     
     /**
       * What, if any, digital wallet was used for this authorization. One of apple_pay, google_pay, or samsung_pay.
       */
-    var wallet_provider: WalletProvider = js.native
+    var wallet_provider: WalletProvider
   }
   object IAuthorization {
     
@@ -205,7 +205,6 @@ object authorizations {
       livemode: Boolean,
       merchant_data: MerchantData,
       metadata: IMetadata,
-      `object`: issuingDotauthorization,
       pending_authorized_amount: Double,
       pending_held_amount: Double,
       request_history: js.Array[RequestHistory],
@@ -215,7 +214,7 @@ object authorizations {
       wallet_provider: WalletProvider
     ): IAuthorization = {
       val __obj = js.Dynamic.literal(approved = approved.asInstanceOf[js.Any], authorization_method = authorization_method.asInstanceOf[js.Any], authorized_amount = authorized_amount.asInstanceOf[js.Any], authorized_currency = authorized_currency.asInstanceOf[js.Any], balance_transactions = balance_transactions.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], cardholder = cardholder.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], held_amount = held_amount.asInstanceOf[js.Any], held_currency = held_currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_held_amount_controllable = is_held_amount_controllable.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], merchant_data = merchant_data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], pending_authorized_amount = pending_authorized_amount.asInstanceOf[js.Any], pending_held_amount = pending_held_amount.asInstanceOf[js.Any], request_history = request_history.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], verification_data = verification_data.asInstanceOf[js.Any], wallet_provider = wallet_provider.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("issuing.authorization")
       __obj.asInstanceOf[IAuthorization]
     }
     
@@ -299,19 +298,18 @@ object authorizations {
     }
   }
   
-  @js.native
   trait IAuthorizationApproveOptions extends StObject {
     
     /**
       * If the authorization’s is_held_amount_controllable property is true, you may provide this value to control how much to hold for the authorization.
       * Must be positive (use decline to decline an authorization request).
       */
-    var held_amount: js.UndefOr[Double] = js.native
+    var held_amount: js.UndefOr[Double] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
   }
   object IAuthorizationApproveOptions {
     
@@ -338,13 +336,12 @@ object authorizations {
     }
   }
   
-  @js.native
   trait IAuthorizationDeclineOptions extends StObject {
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
   }
   object IAuthorizationDeclineOptions {
     
@@ -365,43 +362,42 @@ object authorizations {
     }
   }
   
-  @js.native
   trait IAuthorizationListOptions extends StObject {
     
     /**
       * Only return issuing transactions that belong to the given card.
       */
-    var card: js.UndefOr[String] = js.native
+    var card: js.UndefOr[String] = js.undefined
     
     /**
       * Only return authorizations belonging to the given cardholder.
       */
-    var cardholder: js.UndefOr[String] = js.native
+    var cardholder: js.UndefOr[String] = js.undefined
     
     /**
       * A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp, or it can be a dictionary with the following options:
       */
-    var created: js.UndefOr[String | ICreated] = js.native
+    var created: js.UndefOr[String | ICreated] = js.undefined
     
     /**
       * A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with obj_bar, your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list.
       */
-    var ending_before: js.UndefOr[String] = js.native
+    var ending_before: js.UndefOr[String] = js.undefined
     
     /**
       * A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list.
       */
-    var starting_after: js.UndefOr[String] = js.native
+    var starting_after: js.UndefOr[String] = js.undefined
     
     /**
       * Only return authorizations with the given status. One of pending, closed, or reversed.
       */
-    var status: js.UndefOr[AuthorizationStatus] = js.native
+    var status: js.UndefOr[AuthorizationStatus] = js.undefined
   }
   object IAuthorizationListOptions {
     
@@ -458,13 +454,12 @@ object authorizations {
     }
   }
   
-  @js.native
   trait IAuthorizationUpdateOptions extends StObject {
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
   }
   object IAuthorizationUpdateOptions {
     
@@ -485,48 +480,47 @@ object authorizations {
     }
   }
   
-  @js.native
   trait MerchantData extends StObject {
     
     /**
       * A categorization of the seller’s type of business. See our merchant categories guide for a list of possible values.
       */
-    var category: String = js.native
+    var category: String
     
     /**
       * City where the seller is located
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * Country where the seller is located
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Name of the seller
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Identifier assigned to the seller by the card brand
       */
-    var network_id: String = js.native
+    var network_id: String
     
     /**
       * Postal code where the seller is located
       */
-    var postal_code: String = js.native
+    var postal_code: String
     
     /**
       * State where the seller is located
       */
-    var state: String = js.native
+    var state: String
     
     /**
       * The url an online purchase was made from
       */
-    var url: String = js.native
+    var url: String
   }
   object MerchantData {
     
@@ -574,48 +568,47 @@ object authorizations {
     }
   }
   
-  @js.native
   trait RequestHistory extends StObject {
     
     /**
       * Whether this request was approved.
       */
-    var approved: Boolean = js.native
+    var approved: Boolean
     
     /**
       * The amount that was authorized at the time of this request
       */
-    var authorized_amount: Double = js.native
+    var authorized_amount: Double
     
     /**
       * The currency that was presented to the cardholder for the authorization. Three-letter ISO currency code, in lowercase. Must be a supported currency.
       */
-    var authorized_currency: String = js.native
+    var authorized_currency: String
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * The amount Stripe held from your account to fund the authorization, if the request was approved
       */
-    var held_amount: Double = js.native
+    var held_amount: Double
     
     /**
       * The currency of the held amount
       */
-    var held_currency: String = js.native
+    var held_currency: String
     
     /**
       * One of authentication_failed, authorization_controls, card_active, card_inactive, insufficient_funds, account_compliance_disabled, account_inactive, suspected_fraud, webhook_approved, webhook_declined, or webhook_timeout.
       */
-    var reason: authentication_failed | authorization_controls | card_active | card_inactive | insufficient_funds | account_compliance_disabled | account_inactive | suspected_fraud | webhook_approved | webhook_declined | webhook_timeout = js.native
+    var reason: authentication_failed | authorization_controls | card_active | card_inactive | insufficient_funds | account_compliance_disabled | account_inactive | suspected_fraud | webhook_approved | webhook_declined | webhook_timeout
     
     /**
       * When an authorization is declined due to authorization_controls, this array contains details about the authorization controls that were violated. Otherwise, it is empty.
       */
-    var violated_authorization_controls: Entity = js.native
+    var violated_authorization_controls: Entity
   }
   object RequestHistory {
     
@@ -665,28 +658,27 @@ object authorizations {
     }
   }
   
-  @js.native
   trait VerificationData extends StObject {
     
     /**
       * One of match, mismatch, or not_provided.
       */
-    var address_line1_check: `match` | mismatch | not_provided = js.native
+    var address_line1_check: `match` | mismatch | not_provided
     
     /**
       * One of match, mismatch, or not_provided.
       */
-    var address_zip_check: `match` | mismatch | not_provided = js.native
+    var address_zip_check: `match` | mismatch | not_provided
     
     /**
       * One of exempt, failure, none, or success.
       */
-    var authentication: exempt | failure | none | success = js.native
+    var authentication: exempt | failure | none | success
     
     /**
       * One of match, mismatch, or not_provided.
       */
-    var cvc_check: `match` | mismatch | not_provided = js.native
+    var cvc_check: `match` | mismatch | not_provided
   }
   object VerificationData {
     

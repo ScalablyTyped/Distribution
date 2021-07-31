@@ -2,24 +2,22 @@ package typings.googleapis.resellerV1Mod.resellerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for resellernotify getwatchdetails response.
   */
-@js.native
 trait SchemaResellernotifyGetwatchdetailsResponse extends StObject {
   
   /**
     * List of registered service accounts.
     */
-  var serviceAccountEmailAddresses: js.UndefOr[js.Array[String]] = js.native
+  var serviceAccountEmailAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Topic name of the PubSub
     */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object SchemaResellernotifyGetwatchdetailsResponse {
   

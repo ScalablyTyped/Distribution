@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobManifestLocation extends StObject {
   
   /**
     * The ETag for the specified manifest object.
     */
-  var ETag: NonEmptyMaxLength1024String = js.native
+  var ETag: NonEmptyMaxLength1024String
   
   /**
     * The Amazon Resource Name (ARN) for a manifest object.
     */
-  var ObjectArn: S3KeyArnString = js.native
+  var ObjectArn: S3KeyArnString
   
   /**
     * The optional version ID to identify a specific version of the manifest object.
     */
-  var ObjectVersionId: js.UndefOr[S3ObjectVersionId] = js.native
+  var ObjectVersionId: js.UndefOr[S3ObjectVersionId] = js.undefined
 }
 object JobManifestLocation {
   

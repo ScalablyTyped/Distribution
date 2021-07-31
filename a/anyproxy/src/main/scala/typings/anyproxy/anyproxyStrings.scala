@@ -3,7 +3,6 @@ package typings.anyproxy
 import typings.anyproxy.mod.NetworkType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anyproxyStrings {
@@ -14,12 +13,16 @@ object anyproxyStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait http extends NetworkType
+  sealed trait http
+    extends StObject
+       with NetworkType
   @scala.inline
   def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait https extends NetworkType
+  sealed trait https
+    extends StObject
+       with NetworkType
   @scala.inline
   def https: https = "https".asInstanceOf[https]
   

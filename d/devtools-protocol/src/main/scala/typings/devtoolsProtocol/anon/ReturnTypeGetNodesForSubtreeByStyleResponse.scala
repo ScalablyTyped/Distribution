@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetNodesForSubtreeByStyleReques
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetNodesForSubtreeByStyleResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetNodesForSubtreeByStyleResponse extends StObject {
   
-  var paramsType: js.Array[GetNodesForSubtreeByStyleRequest] = js.native
+  var paramsType: js.Array[GetNodesForSubtreeByStyleRequest]
   
-  var returnType: GetNodesForSubtreeByStyleResponse = js.native
+  var returnType: GetNodesForSubtreeByStyleResponse
 }
 object ReturnTypeGetNodesForSubtreeByStyleResponse {
   

@@ -2,17 +2,15 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailRequired extends StObject {
   
-  var emailRequired: js.UndefOr[Boolean] = js.native
+  var emailRequired: js.UndefOr[Boolean] = js.undefined
   
-  var merchantInfo: js.UndefOr[MerchantId] = js.native
+  var merchantInfo: js.UndefOr[MerchantId] = js.undefined
   
-  var transactionInfo: CurrencyCode = js.native
+  var transactionInfo: CurrencyCode
 }
 object EmailRequired {
   

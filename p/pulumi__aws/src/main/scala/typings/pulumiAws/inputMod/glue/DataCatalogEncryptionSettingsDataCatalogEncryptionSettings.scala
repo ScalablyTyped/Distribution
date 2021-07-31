@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettings extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettings extends StObjec
     */
   var connectionPasswordEncryption: Input[
     DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption
-  ] = js.native
+  ]
   
   /**
     * Specifies the encryption-at-rest configuration for the Data Catalog. see Encryption At Rest.
     */
-  var encryptionAtRest: Input[DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest] = js.native
+  var encryptionAtRest: Input[DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest]
 }
 object DataCatalogEncryptionSettingsDataCatalogEncryptionSettings {
   

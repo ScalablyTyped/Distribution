@@ -6,11 +6,12 @@ import typings.openui5.sap.ui.unified.CalendarLegend
 import typings.openui5.sap.ui.unified.DateTypeRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatePicker extends InputBase {
+trait DatePicker
+  extends StObject
+     with InputBase {
   
   /**
     * Adds some <code>specialDate</code> to the aggregation <code>specialDates</code>.

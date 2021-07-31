@@ -2,35 +2,33 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var city: String = js.native
+  var city: String
   
-  var country: String = js.native
+  var country: String
   
-  var countryCode: String = js.native
+  var countryCode: String
   
-  var extendedAddress: String = js.native
+  var extendedAddress: String
   
-  var formattedType: String = js.native
+  var formattedType: String
   
-  var formattedValue: String = js.native
+  var formattedValue: String
   
-  var metadata: FieldMetadata = js.native
+  var metadata: FieldMetadata
   
-  var poBox: String = js.native
+  var poBox: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var region: String = js.native
+  var region: String
   
-  var streetAddress: String = js.native
+  var streetAddress: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Address {
   

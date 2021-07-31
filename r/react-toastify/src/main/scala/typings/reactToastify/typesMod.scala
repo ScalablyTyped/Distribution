@@ -23,17 +23,15 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type ClassName = (js.Function1[/* context */ js.UndefOr[DefaultClassName], String]) | String
   
-  @js.native
   trait ClearWaitingQueueParams extends StObject {
     
-    var containerId: js.UndefOr[Id] = js.native
+    var containerId: js.UndefOr[Id] = js.undefined
   }
   object ClearWaitingQueueParams {
     
@@ -54,7 +52,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait CommonOptions extends StObject {
     
     /**
@@ -62,104 +59,104 @@ object typesMod {
       * Use `false` to prevent the toast from closing.
       * `Default: 5000`
       */
-    var autoClose: js.UndefOr[Double | `false`] = js.native
+    var autoClose: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * An optional css class to set for the toast content.
       */
-    var bodyClassName: js.UndefOr[ToastClassName] = js.native
+    var bodyClassName: js.UndefOr[ToastClassName] = js.undefined
     
     /**
       * An optional inline style to apply for the toast content.
       */
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Pass a custom close button.
       * To remove the close button pass `false`
       */
-    var closeButton: js.UndefOr[ReactElement | (js.Function1[/* props */ js.Any, ReactElement]) | Boolean] = js.native
+    var closeButton: js.UndefOr[ReactElement | (js.Function1[/* props */ js.Any, ReactElement]) | Boolean] = js.undefined
     
     /**
       * Remove the toast when clicked.
       * `Default: true`
       */
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set id to handle multiple container
       */
-    var containerId: js.UndefOr[Id] = js.native
+    var containerId: js.UndefOr[Id] = js.undefined
     
     /**
       * Allow toast to be draggable
       * `Default: true`
       */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The percentage of the toast's width it takes for a drag to dismiss a toast
       * `Default: 80`
       */
-    var draggablePercent: js.UndefOr[Double] = js.native
+    var draggablePercent: js.UndefOr[Double] = js.undefined
     
     /**
       * Hide or show the progress bar.
       * `Default: false`
       */
-    var hideProgressBar: js.UndefOr[Boolean] = js.native
+    var hideProgressBar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fired when clicking inside toaster
       */
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * Pause the toast when the window loose focus.
       * `Default: true`
       */
-    var pauseOnFocusLoss: js.UndefOr[Boolean] = js.native
+    var pauseOnFocusLoss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pause the timer when the mouse hover the toast.
       * `Default: true`
       */
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the default position to use.
       * `One of: 'top-right', 'top-center', 'top-left', 'bottom-right', 'bottom-center', 'bottom-left'`
       * `Default: 'top-right'`
       */
-    var position: js.UndefOr[ToastPosition] = js.native
+    var position: js.UndefOr[ToastPosition] = js.undefined
     
     /**
       * An optional css class to set for the progress bar.
       */
-    var progressClassName: js.UndefOr[ToastClassName] = js.native
+    var progressClassName: js.UndefOr[ToastClassName] = js.undefined
     
     /**
       * An optional style to set for the progress bar.
       */
-    var progressStyle: js.UndefOr[CSSProperties] = js.native
+    var progressStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Define the ARIA role for the toast
       * `Default: alert`
       *  https://www.w3.org/WAI/PF/aria/roles
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Support right to left display.
       * `Default: false`
       */
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass a custom transition built with react-transition-group.
       */
-    var transition: js.UndefOr[ToastTransition] = js.native
+    var transition: js.UndefOr[ToastTransition] = js.undefined
   }
   object CommonOptions {
     
@@ -294,74 +291,73 @@ object typesMod {
   type Id = Double | String
   
   /* Inlined parent std.Partial<react-toastify.react-toastify/dist/types.ToastProps> */
-  @js.native
   trait NotValidatedToastProps extends StObject {
     
-    var autoClose: js.UndefOr[Double | `false`] = js.native
+    var autoClose: js.UndefOr[Double | `false`] = js.undefined
     
-    var bodyClassName: js.UndefOr[ToastClassName] = js.native
+    var bodyClassName: js.UndefOr[ToastClassName] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var children: js.UndefOr[ToastContent] = js.native
+    var children: js.UndefOr[ToastContent] = js.undefined
     
-    var className: js.UndefOr[ToastClassName] = js.native
+    var className: js.UndefOr[ToastClassName] = js.undefined
     
-    var closeButton: js.UndefOr[ReactElement | (js.Function1[/* props */ js.Any, ReactElement]) | Boolean] = js.native
+    var closeButton: js.UndefOr[ReactElement | (js.Function1[/* props */ js.Any, ReactElement]) | Boolean] = js.undefined
     
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var closeToast: js.UndefOr[js.Function0[Unit]] = js.native
+    var closeToast: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var containerId: js.UndefOr[Id] = js.native
+    var containerId: js.UndefOr[Id] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var deleteToast: js.UndefOr[js.Function0[Unit]] = js.native
+    var deleteToast: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var draggablePercent: js.UndefOr[Double] = js.native
+    var draggablePercent: js.UndefOr[Double] = js.undefined
     
-    var hideProgressBar: js.UndefOr[Boolean] = js.native
+    var hideProgressBar: js.UndefOr[Boolean] = js.undefined
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Id] = js.native
+    var key: js.UndefOr[Id] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.undefined
     
-    var pauseOnFocusLoss: js.UndefOr[Boolean] = js.native
+    var pauseOnFocusLoss: js.UndefOr[Boolean] = js.undefined
     
-    var pauseOnHover: js.UndefOr[Boolean] = js.native
+    var pauseOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[ToastPosition] = js.native
+    var position: js.UndefOr[ToastPosition] = js.undefined
     
-    var progress: js.UndefOr[Double | String] = js.native
+    var progress: js.UndefOr[Double | String] = js.undefined
     
-    var progressClassName: js.UndefOr[ToastClassName] = js.native
+    var progressClassName: js.UndefOr[ToastClassName] = js.undefined
     
-    var progressStyle: js.UndefOr[CSSProperties] = js.native
+    var progressStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var staleId: js.UndefOr[Id] = js.native
+    var staleId: js.UndefOr[Id] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var toastId: Id = js.native
+    var toastId: Id
     
-    var transition: js.UndefOr[ToastTransition] = js.native
+    var transition: js.UndefOr[ToastTransition] = js.undefined
     
-    var `type`: js.UndefOr[TypeOptions] = js.native
+    var `type`: js.UndefOr[TypeOptions] = js.undefined
     
-    var updateId: js.UndefOr[Id] = js.native
+    var updateId: js.UndefOr[Id] = js.undefined
   }
   object NotValidatedToastProps {
     
@@ -588,14 +584,13 @@ object typesMod {
   
   type Nullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] | null}
-    */ typings.reactToastify.reactToastifyStrings.Nullable with TopLevel[T]
+    */ typings.reactToastify.reactToastifyStrings.Nullable & TopLevel[T]
   
-  @js.native
   trait Toast extends StObject {
     
-    var content: ToastContent = js.native
+    var content: ToastContent
     
-    var props: ToastProps = js.native
+    var props: ToastProps
   }
   object Toast {
     
@@ -624,45 +619,46 @@ object typesMod {
   
   type ToastClassName = (js.Function1[/* context */ js.UndefOr[Position], String]) | String
   
-  @js.native
-  trait ToastContainerProps extends CommonOptions {
+  trait ToastContainerProps
+    extends StObject
+       with CommonOptions {
     
     /**
       * An optional css class to set.
       */
-    var className: js.UndefOr[ClassName] = js.native
+    var className: js.UndefOr[ClassName] = js.undefined
     
     /**
       * Show the toast only if it includes containerId and it's the same as containerId
       * `Default: false`
       */
-    var enableMultiContainer: js.UndefOr[Boolean] = js.native
+    var enableMultiContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limit the number of toast displayed at the same time
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether or not to display the newest toast on top.
       * `Default: false`
       */
-    var newestOnTop: js.UndefOr[Boolean] = js.native
+    var newestOnTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional inline style to apply.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * An optional css class for the toast.
       */
-    var toastClassName: js.UndefOr[ToastClassName] = js.native
+    var toastClassName: js.UndefOr[ToastClassName] = js.undefined
     
     /**
       * An optional inline style to apply for the toast.
       */
-    var toastStyle: js.UndefOr[CSSProperties] = js.native
+    var toastStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object ToastContainerProps {
     
@@ -727,10 +723,9 @@ object typesMod {
   
   type ToastContent = ReactNode | (js.Function1[/* props */ ToastContentProps, ReactNode])
   
-  @js.native
   trait ToastContentProps extends StObject {
     
-    var closeToast: js.UndefOr[js.Function0[Unit]] = js.native
+    var closeToast: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ToastContentProps {
     
@@ -751,54 +746,55 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ToastOptions extends CommonOptions {
+  trait ToastOptions
+    extends StObject
+       with CommonOptions {
     
     /**
       * An optional css class to set.
       */
-    var className: js.UndefOr[ToastClassName] = js.native
+    var className: js.UndefOr[ToastClassName] = js.undefined
     
     /**
       * Add a delay in ms before the toast appear.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Called when toast is unmounted.
       */
-    var onClose: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.undefined
     
     /**
       * Called when toast is mounted.
       */
-    var onOpen: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* props */ js.Object, Unit]] = js.undefined
     
     /**
       * Set the percentage for the controlled progress bar. `Value must be between 0 and 1.`
       */
-    var progress: js.UndefOr[Double | String] = js.native
+    var progress: js.UndefOr[Double | String] = js.undefined
     
     /**
       * An optional inline style to apply.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Set a custom `toastId`
       */
-    var toastId: js.UndefOr[Id] = js.native
+    var toastId: js.UndefOr[Id] = js.undefined
     
     /**
       * Set the toast type.
       * `One of: 'info', 'success', 'warning', 'error', 'default'`
       */
-    var `type`: js.UndefOr[TypeOptions] = js.native
+    var `type`: js.UndefOr[TypeOptions] = js.undefined
     
     /**
       * Used during update
       */
-    var updateId: js.UndefOr[Id] = js.native
+    var updateId: js.UndefOr[Id] = js.undefined
   }
   object ToastOptions {
     
@@ -900,32 +896,33 @@ object typesMod {
     def `top-right`: typings.reactToastify.reactToastifyStrings.`top-right` = "top-right".asInstanceOf[typings.reactToastify.reactToastifyStrings.`top-right`]
   }
   
-  @js.native
-  trait ToastProps extends ToastOptions {
+  trait ToastProps
+    extends StObject
+       with ToastOptions {
     
-    var children: js.UndefOr[ToastContent] = js.native
+    var children: js.UndefOr[ToastContent] = js.undefined
     
-    def closeToast(): Unit = js.native
+    def closeToast(): Unit
     
-    def deleteToast(): Unit = js.native
+    def deleteToast(): Unit
     
     @JSName("draggablePercent")
-    var draggablePercent_ToastProps: Double = js.native
+    var draggablePercent_ToastProps: Double
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var key: Id = js.native
+    var key: Id
     
     @JSName("position")
-    var position_ToastProps: ToastPosition = js.native
+    var position_ToastProps: ToastPosition
     
-    var staleId: js.UndefOr[Id] = js.native
+    var staleId: js.UndefOr[Id] = js.undefined
     
     @JSName("toastId")
-    var toastId_ToastProps: Id = js.native
+    var toastId_ToastProps: Id
     
     @JSName("transition")
-    var transition_ToastProps: ToastTransition = js.native
+    var transition_ToastProps: ToastTransition
   }
   object ToastProps {
     
@@ -992,22 +989,21 @@ object typesMod {
   
   type ToastTransition = FC[ToastTransitionProps] | (ComponentClass[ToastTransitionProps, ComponentState])
   
-  @js.native
   trait ToastTransitionProps extends StObject {
     
-    var appear: Boolean = js.native
+    var appear: Boolean
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    def done(): Unit = js.native
+    def done(): Unit
     
-    var in: Boolean = js.native
+    var in: Boolean
     
-    var nodeRef: RefObject[HTMLElement] = js.native
+    var nodeRef: RefObject[HTMLElement]
     
-    var position: ToastPosition | String = js.native
+    var position: ToastPosition | String
     
-    var preventExitTransition: Boolean = js.native
+    var preventExitTransition: Boolean
   }
   object ToastTransitionProps {
     
@@ -1084,68 +1080,67 @@ object typesMod {
   }
   
   /* Inlined parent react-toastify.react-toastify/dist/types.Nullable<react-toastify.react-toastify/dist/types.ToastOptions> */
-  @js.native
   trait UpdateOptions extends StObject {
     
-    var autoClose: js.UndefOr[Double | `false` | Null] = js.native
+    var autoClose: js.UndefOr[Double | `false` | Null] = js.undefined
     
-    var bodyClassName: js.UndefOr[ToastClassName | Null] = js.native
+    var bodyClassName: js.UndefOr[ToastClassName | Null] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties | Null] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties | Null] = js.undefined
     
-    var className: js.UndefOr[ToastClassName | Null] = js.native
+    var className: js.UndefOr[ToastClassName | Null] = js.undefined
     
-    var closeButton: js.UndefOr[ReactElement | (js.Function1[/* props */ js.Any, ReactElement]) | Boolean | Null] = js.native
+    var closeButton: js.UndefOr[ReactElement | (js.Function1[/* props */ js.Any, ReactElement]) | Boolean | Null] = js.undefined
     
-    var closeOnClick: js.UndefOr[Boolean | Null] = js.native
+    var closeOnClick: js.UndefOr[Boolean | Null] = js.undefined
     
-    var containerId: js.UndefOr[Id | Null] = js.native
+    var containerId: js.UndefOr[Id | Null] = js.undefined
     
-    var delay: js.UndefOr[Double | Null] = js.native
+    var delay: js.UndefOr[Double | Null] = js.undefined
     
-    var draggable: js.UndefOr[Boolean | Null] = js.native
+    var draggable: js.UndefOr[Boolean | Null] = js.undefined
     
-    var draggablePercent: js.UndefOr[Double | Null] = js.native
+    var draggablePercent: js.UndefOr[Double | Null] = js.undefined
     
-    var hideProgressBar: js.UndefOr[Boolean | Null] = js.native
+    var hideProgressBar: js.UndefOr[Boolean | Null] = js.undefined
     
-    var onClick: js.UndefOr[(js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]) | Null] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]) | Null] = js.undefined
     
-    var onClose: js.UndefOr[(js.Function1[/* props */ js.Object, Unit]) | Null] = js.native
+    var onClose: js.UndefOr[(js.Function1[/* props */ js.Object, Unit]) | Null] = js.undefined
     
-    var onOpen: js.UndefOr[(js.Function1[/* props */ js.Object, Unit]) | Null] = js.native
+    var onOpen: js.UndefOr[(js.Function1[/* props */ js.Object, Unit]) | Null] = js.undefined
     
-    var pauseOnFocusLoss: js.UndefOr[Boolean | Null] = js.native
+    var pauseOnFocusLoss: js.UndefOr[Boolean | Null] = js.undefined
     
-    var pauseOnHover: js.UndefOr[Boolean | Null] = js.native
+    var pauseOnHover: js.UndefOr[Boolean | Null] = js.undefined
     
-    var position: js.UndefOr[ToastPosition | Null] = js.native
+    var position: js.UndefOr[ToastPosition | Null] = js.undefined
     
-    var progress: js.UndefOr[Double | String | Null] = js.native
+    var progress: js.UndefOr[Double | String | Null] = js.undefined
     
-    var progressClassName: js.UndefOr[ToastClassName | Null] = js.native
+    var progressClassName: js.UndefOr[ToastClassName | Null] = js.undefined
     
-    var progressStyle: js.UndefOr[CSSProperties | Null] = js.native
+    var progressStyle: js.UndefOr[CSSProperties | Null] = js.undefined
     
     /**
       * Used to update a toast.
       * Pass any valid ReactNode(string, number, component)
       */
-    var render: js.UndefOr[ToastContent] = js.native
+    var render: js.UndefOr[ToastContent] = js.undefined
     
-    var role: js.UndefOr[String | Null] = js.native
+    var role: js.UndefOr[String | Null] = js.undefined
     
-    var rtl: js.UndefOr[Boolean | Null] = js.native
+    var rtl: js.UndefOr[Boolean | Null] = js.undefined
     
-    var style: js.UndefOr[CSSProperties | Null] = js.native
+    var style: js.UndefOr[CSSProperties | Null] = js.undefined
     
-    var toastId: js.UndefOr[Id | Null] = js.native
+    var toastId: js.UndefOr[Id | Null] = js.undefined
     
-    var transition: js.UndefOr[ToastTransition | Null] = js.native
+    var transition: js.UndefOr[ToastTransition | Null] = js.undefined
     
-    var `type`: js.UndefOr[TypeOptions | Null] = js.native
+    var `type`: js.UndefOr[TypeOptions | Null] = js.undefined
     
-    var updateId: js.UndefOr[Id | Null] = js.native
+    var updateId: js.UndefOr[Id | Null] = js.undefined
   }
   object UpdateOptions {
     

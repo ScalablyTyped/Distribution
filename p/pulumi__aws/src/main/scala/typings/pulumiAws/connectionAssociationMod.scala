@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionAssociationMod {
@@ -38,6 +37,10 @@ object connectionAssociationMod {
   /* static members */
   object ConnectionAssociation {
     
+    @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ConnectionAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object connectionAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ConnectionAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConnectionAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionAssociationState): ConnectionAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionAssociationState, opts: CustomResourceOptions): ConnectionAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionAssociationState): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionAssociationState, opts: CustomResourceOptions): ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConnectionAssociation]
     
     /**
       * Returns true if the given object is an instance of ConnectionAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean]
   }
   
-  @js.native
   trait ConnectionAssociationArgs extends StObject {
     
     /**
       * The ID of the connection.
       */
-    val connectionId: Input[String] = js.native
+    val connectionId: Input[String]
     
     /**
       * The ID of the LAG with which to associate the connection.
       */
-    val lagId: Input[String] = js.native
+    val lagId: Input[String]
   }
   object ConnectionAssociationArgs {
     
@@ -101,18 +98,17 @@ object connectionAssociationMod {
     }
   }
   
-  @js.native
   trait ConnectionAssociationState extends StObject {
     
     /**
       * The ID of the connection.
       */
-    val connectionId: js.UndefOr[Input[String]] = js.native
+    val connectionId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the LAG with which to associate the connection.
       */
-    val lagId: js.UndefOr[Input[String]] = js.native
+    val lagId: js.UndefOr[Input[String]] = js.undefined
   }
   object ConnectionAssociationState {
     

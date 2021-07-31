@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationSessionAccountInformation extends StObject {
   
   /**
     * The unique identifier of the account.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The human-readable name of the account.
     */
-  val label: String = js.native
+  val label: String
 }
 object AuthenticationSessionAccountInformation {
   

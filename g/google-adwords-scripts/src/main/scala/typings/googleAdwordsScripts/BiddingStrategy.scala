@@ -2,12 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Bidding Strategies
 @js.native
-trait BiddingStrategy extends hasStats {
+trait BiddingStrategy
+  extends StObject
+     with hasStats {
   
   def adGroups(): AdWordsSelector[AdGroup] = js.native
   

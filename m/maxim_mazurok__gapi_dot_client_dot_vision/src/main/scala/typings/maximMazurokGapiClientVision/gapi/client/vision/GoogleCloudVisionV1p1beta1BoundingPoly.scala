@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p1beta1BoundingPoly extends StObject {
   
   /** The bounding polygon normalized vertices. */
-  var normalizedVertices: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1NormalizedVertex]] = js.native
+  var normalizedVertices: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1NormalizedVertex]] = js.undefined
   
   /** The bounding polygon vertices. */
-  var vertices: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1Vertex]] = js.native
+  var vertices: js.UndefOr[js.Array[GoogleCloudVisionV1p1beta1Vertex]] = js.undefined
 }
 object GoogleCloudVisionV1p1beta1BoundingPoly {
   

@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathEndCap extends StObject {
   
-  var fill: js.UndefOr[String | PathEndCapFill] = js.native
+  var fill: js.UndefOr[String | PathEndCapFill] = js.undefined
   
-  var stroke: js.UndefOr[String | PathEndCapStroke] = js.native
+  var stroke: js.UndefOr[String | PathEndCapStroke] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PathEndCap {
   

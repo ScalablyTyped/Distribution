@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointsmsvoiceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigurationSetEventDestinationsResponse extends StObject {
   
-  var EventDestinations: js.UndefOr[typings.awsSdk.pinpointsmsvoiceMod.EventDestinations] = js.native
+  var EventDestinations: js.UndefOr[typings.awsSdk.pinpointsmsvoiceMod.EventDestinations] = js.undefined
 }
 object GetConfigurationSetEventDestinationsResponse {
   

@@ -3,7 +3,6 @@ package typings.reactSketchapp
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
@@ -15,11 +14,11 @@ object pathMod {
   
   type Path = Component[PathProps, js.Object, js.Any]
   
-  @js.native
   trait PathProps
-    extends typings.reactSketchapp.propsMod.PathProps {
+    extends StObject
+       with typings.reactSketchapp.propsMod.PathProps {
     
-    var d: String = js.native
+    var d: String
   }
   object PathProps {
     

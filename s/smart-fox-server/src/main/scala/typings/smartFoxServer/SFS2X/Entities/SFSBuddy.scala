@@ -3,10 +3,8 @@ package typings.smartFoxServer.SFS2X.Entities
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFSBuddy extends StObject {
   
   /**
@@ -14,68 +12,68 @@ trait SFSBuddy extends StObject {
     * @param  {string}  varName The name of the Buddy Variable whose existance must be checked.
     * @return {boolean}         Returns: true if a Buddy Variable with the passed name is set for this buddy.
     */
-  def containsVariable(varName: String): Boolean = js.native
+  def containsVariable(varName: String): Boolean
   
   /**
     * Returns the nickname of this buddy. If the nickname is not set, null is returned.
     * @return {string} Returns: The nickname of the buddy.
     */
-  def getNickName(): String = js.native
+  def getNickName(): String
   
   /**
     * Retrieves the list of persistent Buddy Variables for this buddy.
     * @return {Variables.SFSBuddyVariable[]} Returns: An array of SFSBuddyVariable objects.
     */
-  def getOfflineVariables(): js.Array[SFSBuddyVariable] = js.native
+  def getOfflineVariables(): js.Array[SFSBuddyVariable]
   
   /**
     * Retrieves the list of non-persistent Buddy Variables for this buddy.
     * @return {Variables.SFSBuddyVariable[]} Returns: An array of SFSBuddyVariable objects.
     */
-  def getOnlineVariables(): js.Array[SFSBuddyVariable] = js.native
+  def getOnlineVariables(): js.Array[SFSBuddyVariable]
   
   /**
     * Returns the custom state of this buddy. Examples of custom states are "Available", "Busy", "Be right back", etc. If the custom state is not set, null is returned.
     * @return {string} Returns: The custom state of the buddy.
     */
-  def getState(): String = js.native
+  def getState(): String
   
   /**
     * Retrieves a Buddy Variable from its name.
     * @param  {string}                     varName The name of the Buddy Variable to be retrieved.
     * @return {Variables.SFSBuddyVariable}         Returns: The object representing the Buddy Variable, or null if no Buddy Variable with the passed name is associated to this buddy.
     */
-  def getVariable(varName: String): SFSBuddyVariable = js.native
+  def getVariable(varName: String): SFSBuddyVariable
   
   /**
     * Retrieves all the Buddy Variables of this user.
     * @return {Variables.SFSBuddyVariable[]} Returns: The list of SFSBuddyVariable objects associated to the buddy.
     */
-  def getVariables(): js.Array[SFSBuddyVariable] = js.native
+  def getVariables(): js.Array[SFSBuddyVariable]
   
   /** @type {number} Indicates the id of this buddy. */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Indicates whether this buddy is blocked in the current user's buddy list or not. A buddy can be blocked by means of a BlockBuddyRequest request.
     * @return {boolean} Returns: true if the buddy is blocked.
     */
-  def isBlocked(): Boolean = js.native
+  def isBlocked(): Boolean
   
   /**
     * Indicates whether this buddy is online in the Buddy List system or not.
     * @return {boolean} Returns: true if the buddy is online.
     */
-  def isOnline(): Boolean = js.native
+  def isOnline(): Boolean
   
   /**
     * Indicates whether this buddy is temporary (non-persistent) in the current user's buddy list or not.
     * @return {boolean} Returns: true if the buddy is temporary.
     */
-  def isTemp(): Boolean = js.native
+  def isTemp(): Boolean
   
   /** @type {string} Indicates the name of this buddy. */
-  var name: String = js.native
+  var name: String
 }
 object SFSBuddy {
   

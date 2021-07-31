@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,10 +37,10 @@ trait Ticker extends StObject {
     * @param {number} [priority=PIXI.UPDATE_PRIORITY.NORMAL] - The priority for emitting
     * @returns {PIXI.Ticker} This instance of a ticker
     */
-  def add(fn: js.Function1[/* repeated */ js.Any, _]): Ticker = js.native
-  def add(fn: js.Function1[/* repeated */ js.Any, _], context: js.UndefOr[scala.Nothing], priority: Double): Ticker = js.native
-  def add(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): Ticker = js.native
-  def add(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, priority: Double): Ticker = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, js.Any]): Ticker = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): Ticker = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any, priority: Double): Ticker = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, js.Any], context: Unit, priority: Double): Ticker = js.native
   
   /**
     * Add a handler for the tick event which is only execute once.
@@ -51,10 +50,10 @@ trait Ticker extends StObject {
     * @param {number} [priority=PIXI.UPDATE_PRIORITY.NORMAL] - The priority for emitting
     * @returns {PIXI.Ticker} This instance of a ticker
     */
-  def addOnce(fn: js.Function1[/* repeated */ js.Any, _]): Ticker = js.native
-  def addOnce(fn: js.Function1[/* repeated */ js.Any, _], context: js.UndefOr[scala.Nothing], priority: Double): Ticker = js.native
-  def addOnce(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): Ticker = js.native
-  def addOnce(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, priority: Double): Ticker = js.native
+  def addOnce(fn: js.Function1[/* repeated */ js.Any, js.Any]): Ticker = js.native
+  def addOnce(fn: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): Ticker = js.native
+  def addOnce(fn: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any, priority: Double): Ticker = js.native
+  def addOnce(fn: js.Function1[/* repeated */ js.Any, js.Any], context: Unit, priority: Double): Ticker = js.native
   
   /**
     * Whether or not this ticker should invoke the method
@@ -163,8 +162,8 @@ trait Ticker extends StObject {
     * @param {*} [context] - The listener context to be removed
     * @returns {PIXI.Ticker} This instance of a ticker
     */
-  def remove(fn: js.Function1[/* repeated */ js.Any, _]): Ticker = js.native
-  def remove(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): Ticker = js.native
+  def remove(fn: js.Function1[/* repeated */ js.Any, js.Any]): Ticker = js.native
+  def remove(fn: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): Ticker = js.native
   
   /**
     * Factor of current {@link PIXI.Ticker#deltaTime}.

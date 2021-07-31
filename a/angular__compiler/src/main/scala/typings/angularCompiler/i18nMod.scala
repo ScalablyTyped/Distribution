@@ -9,10 +9,13 @@ import typings.angularCompiler.srcUtilMod.Console
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nMod {
+  
+  @JSImport("@angular/compiler/src/i18n", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/i18n", "Extractor")
   @js.native
@@ -28,12 +31,14 @@ object i18nMod {
   /* static members */
   object Extractor {
     
-    @JSImport("@angular/compiler/src/i18n", "Extractor.create")
+    @JSImport("@angular/compiler/src/i18n", "Extractor")
     @js.native
-    def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = js.native
-    @JSImport("@angular/compiler/src/i18n", "Extractor.create")
-    @js.native
-    def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(host: ExtractorHost): typings.angularCompiler.anon.Extractor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.anon.Extractor]
+    @scala.inline
+    def create(host: ExtractorHost, locale: String): typings.angularCompiler.anon.Extractor = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(host.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompiler.anon.Extractor]
   }
   
   @JSImport("@angular/compiler/src/i18n", "I18NHtmlParser")
@@ -42,26 +47,8 @@ object i18nMod {
     extends typings.angularCompiler.i18nHtmlParserMod.I18NHtmlParser {
     def this(_htmlParser: HtmlParser) = this()
     def this(_htmlParser: HtmlParser, translations: String) = this()
-    def this(_htmlParser: HtmlParser, translations: js.UndefOr[scala.Nothing], translationsFormat: String) = this()
     def this(_htmlParser: HtmlParser, translations: String, translationsFormat: String) = this()
-    def this(
-      _htmlParser: HtmlParser,
-      translations: js.UndefOr[scala.Nothing],
-      translationsFormat: js.UndefOr[scala.Nothing],
-      missingTranslation: MissingTranslationStrategy
-    ) = this()
-    def this(
-      _htmlParser: HtmlParser,
-      translations: js.UndefOr[scala.Nothing],
-      translationsFormat: String,
-      missingTranslation: MissingTranslationStrategy
-    ) = this()
-    def this(
-      _htmlParser: HtmlParser,
-      translations: String,
-      translationsFormat: js.UndefOr[scala.Nothing],
-      missingTranslation: MissingTranslationStrategy
-    ) = this()
+    def this(_htmlParser: HtmlParser, translations: Unit, translationsFormat: String) = this()
     def this(
       _htmlParser: HtmlParser,
       translations: String,
@@ -70,28 +57,32 @@ object i18nMod {
     ) = this()
     def this(
       _htmlParser: HtmlParser,
-      translations: js.UndefOr[scala.Nothing],
-      translationsFormat: js.UndefOr[scala.Nothing],
-      missingTranslation: js.UndefOr[scala.Nothing],
-      console: Console
+      translations: String,
+      translationsFormat: Unit,
+      missingTranslation: MissingTranslationStrategy
     ) = this()
     def this(
       _htmlParser: HtmlParser,
-      translations: js.UndefOr[scala.Nothing],
-      translationsFormat: js.UndefOr[scala.Nothing],
-      missingTranslation: MissingTranslationStrategy,
-      console: Console
-    ) = this()
-    def this(
-      _htmlParser: HtmlParser,
-      translations: js.UndefOr[scala.Nothing],
+      translations: Unit,
       translationsFormat: String,
-      missingTranslation: js.UndefOr[scala.Nothing],
+      missingTranslation: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: Unit,
+      translationsFormat: Unit,
+      missingTranslation: MissingTranslationStrategy
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: String,
+      translationsFormat: String,
+      missingTranslation: Unit,
       console: Console
     ) = this()
     def this(
       _htmlParser: HtmlParser,
-      translations: js.UndefOr[scala.Nothing],
+      translations: String,
       translationsFormat: String,
       missingTranslation: MissingTranslationStrategy,
       console: Console
@@ -99,28 +90,42 @@ object i18nMod {
     def this(
       _htmlParser: HtmlParser,
       translations: String,
-      translationsFormat: js.UndefOr[scala.Nothing],
-      missingTranslation: js.UndefOr[scala.Nothing],
+      translationsFormat: Unit,
+      missingTranslation: Unit,
       console: Console
     ) = this()
     def this(
       _htmlParser: HtmlParser,
       translations: String,
-      translationsFormat: js.UndefOr[scala.Nothing],
+      translationsFormat: Unit,
       missingTranslation: MissingTranslationStrategy,
       console: Console
     ) = this()
     def this(
       _htmlParser: HtmlParser,
-      translations: String,
+      translations: Unit,
       translationsFormat: String,
-      missingTranslation: js.UndefOr[scala.Nothing],
+      missingTranslation: Unit,
       console: Console
     ) = this()
     def this(
       _htmlParser: HtmlParser,
-      translations: String,
+      translations: Unit,
       translationsFormat: String,
+      missingTranslation: MissingTranslationStrategy,
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: Unit,
+      translationsFormat: Unit,
+      missingTranslation: Unit,
+      console: Console
+    ) = this()
+    def this(
+      _htmlParser: HtmlParser,
+      translations: Unit,
+      translationsFormat: Unit,
       missingTranslation: MissingTranslationStrategy,
       console: Console
     ) = this()
@@ -168,10 +173,8 @@ object i18nMod {
   class Xtb ()
     extends typings.angularCompiler.xtbMod.Xtb
   
-  @JSImport("@angular/compiler/src/i18n", "computeMsgId")
-  @js.native
-  def computeMsgId(msg: String): String = js.native
-  @JSImport("@angular/compiler/src/i18n", "computeMsgId")
-  @js.native
-  def computeMsgId(msg: String, meaning: String): String = js.native
+  @scala.inline
+  def computeMsgId(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMsgId")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computeMsgId(msg: String, meaning: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMsgId")(msg.asInstanceOf[js.Any], meaning.asInstanceOf[js.Any])).asInstanceOf[String]
 }

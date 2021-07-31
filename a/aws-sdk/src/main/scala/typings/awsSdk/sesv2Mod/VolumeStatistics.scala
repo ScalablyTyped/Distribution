@@ -2,31 +2,29 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeStatistics extends StObject {
   
   /**
     * The total number of emails that arrived in recipients' inboxes.
     */
-  var InboxRawCount: js.UndefOr[Volume] = js.native
+  var InboxRawCount: js.UndefOr[Volume] = js.undefined
   
   /**
     * An estimate of the percentage of emails sent from the current domain that will arrive in recipients' inboxes.
     */
-  var ProjectedInbox: js.UndefOr[Volume] = js.native
+  var ProjectedInbox: js.UndefOr[Volume] = js.undefined
   
   /**
     * An estimate of the percentage of emails sent from the current domain that will arrive in recipients' spam or junk mail folders.
     */
-  var ProjectedSpam: js.UndefOr[Volume] = js.native
+  var ProjectedSpam: js.UndefOr[Volume] = js.undefined
   
   /**
     * The total number of emails that arrived in recipients' spam or junk mail folders.
     */
-  var SpamRawCount: js.UndefOr[Volume] = js.native
+  var SpamRawCount: js.UndefOr[Volume] = js.undefined
 }
 object VolumeStatistics {
   

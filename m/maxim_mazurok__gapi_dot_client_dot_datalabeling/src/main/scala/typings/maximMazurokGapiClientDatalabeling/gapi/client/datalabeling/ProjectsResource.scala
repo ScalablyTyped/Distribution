@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var annotationSpecSets: AnnotationSpecSetsResource = js.native
+  var annotationSpecSets: AnnotationSpecSetsResource
   
-  var datasets: DatasetsResource = js.native
+  var datasets: DatasetsResource
   
-  var evaluationJobs: EvaluationJobsResource = js.native
+  var evaluationJobs: EvaluationJobsResource
   
-  var evaluations: EvaluationsResource = js.native
+  var evaluations: EvaluationsResource
   
-  var instructions: InstructionsResource = js.native
+  var instructions: InstructionsResource
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
 }
 object ProjectsResource {
   

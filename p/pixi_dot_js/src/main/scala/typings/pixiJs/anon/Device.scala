@@ -2,19 +2,17 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
-  var device: Boolean = js.native
+  var device: Boolean
   
-  var ipod: Boolean = js.native
+  var ipod: Boolean
   
-  var phone: Boolean = js.native
+  var phone: Boolean
   
-  var tablet: Boolean = js.native
+  var tablet: Boolean
 }
 object Device {
   

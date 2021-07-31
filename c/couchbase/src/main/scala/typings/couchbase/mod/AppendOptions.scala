@@ -3,26 +3,24 @@ package typings.couchbase.mod
 import typings.couchbase.mod.Bucket.CAS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppendOptions extends StObject {
   
   /**
     * The CAS value to check. If the item on the server contains a different CAS value, the operation will fail. Note that if this option is undefined, no comparison will be performed.
     */
-  var cas: js.UndefOr[CAS] = js.native
+  var cas: js.UndefOr[CAS] = js.undefined
   
   /**
     * Ensures this operation is persisted to this many nodes.
     */
-  var persist_to: js.UndefOr[Double] = js.native
+  var persist_to: js.UndefOr[Double] = js.undefined
   
   /**
     *     Ensures this operation is replicated to this many nodes.
     */
-  var replicate_to: js.UndefOr[Double] = js.native
+  var replicate_to: js.UndefOr[Double] = js.undefined
 }
 object AppendOptions {
   

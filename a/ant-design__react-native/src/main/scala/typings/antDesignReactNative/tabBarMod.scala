@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarMod {
@@ -68,7 +67,7 @@ object tabBarMod {
   trait TabBar
     extends Component[TabBarNativeProps, js.Any, js.Any] {
     
-    def getPanes(styles: ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]], content: Boolean): js.Array[_] = js.native
+    def getPanes(styles: ReturnType[js.Function1[/* theme */ Theme, TabBarStyle]], content: Boolean): js.Array[js.Any] = js.native
   }
   object TabBar {
     
@@ -76,10 +75,11 @@ object tabBarMod {
     type Item = typings.antDesignReactNative.tabBarItemMod.default
   }
   
-  @js.native
-  trait TabBarNativeProps extends TabBarProps {
+  trait TabBarNativeProps
+    extends StObject
+       with TabBarProps {
     
-    var styles: js.UndefOr[TabBarStyle] = js.native
+    var styles: js.UndefOr[TabBarStyle] = js.undefined
   }
   object TabBarNativeProps {
     

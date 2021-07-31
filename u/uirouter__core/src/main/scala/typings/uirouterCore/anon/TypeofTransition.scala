@@ -7,12 +7,12 @@ import typings.uirouterCore.targetStateMod.TargetState
 import typings.uirouterCore.transitionTransitionMod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTransition
-  extends Instantiable3[
+  extends StObject
+     with Instantiable3[
       /* fromPath */ js.Array[PathNode], 
       /* targetState */ TargetState, 
       /* router */ UIRouter, 

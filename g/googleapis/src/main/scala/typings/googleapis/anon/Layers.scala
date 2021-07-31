@@ -2,13 +2,11 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layers extends StObject {
   
-  var layers: js.UndefOr[js.Array[VolumeAnnotationsVersion]] = js.native
+  var layers: js.UndefOr[js.Array[VolumeAnnotationsVersion]] = js.undefined
 }
 object Layers {
   

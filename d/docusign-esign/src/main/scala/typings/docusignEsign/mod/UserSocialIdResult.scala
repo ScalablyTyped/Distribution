@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSocialIdResult extends StObject {
   
   /**
     * Contains properties that map a DocuSign user to a social account such as Facebook or Yahoo.
     */
-  var socialAccountInformation: js.UndefOr[js.Array[SocialAccountInformation]] = js.native
+  var socialAccountInformation: js.UndefOr[js.Array[SocialAccountInformation]] = js.undefined
   
   /**
     * The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
     * `userId` can represent another user whom the Administrator is accessing.
     *
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object UserSocialIdResult {
   

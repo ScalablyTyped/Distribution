@@ -9,31 +9,31 @@ import typings.statsdClient.anon.GetExpressMiddleware
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("statsd-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StatsdClient {
+  class ^ protected ()
+    extends StObject
+       with StatsdClient {
     def this(options: HttpOptions) = this()
     def this(options: TcpOptions) = this()
     def this(options: UdpOptions) = this()
   }
   
-  @js.native
   trait CommonOptions extends StObject {
     
     /**
       * Print what is being sent to stderr (default false).
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prefix all stats with this value (default "").
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Dual-use timer. Will flush metrics every interval. For UDP,
@@ -42,19 +42,19 @@ object mod {
       * the socket after socketTimeoutsToClose number of timeouts
       * have elapsed without activity.
       */
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Object of string key/value pairs which will be appended on
       * to all StatsD payloads (excluding raw payloads)
       * (default {})
       */
-    var tags: js.UndefOr[Tags] = js.native
+    var tags: js.UndefOr[Tags] = js.undefined
     
     /**
       * User specifically wants to use tcp (default false)
       */
-    var tcp: js.UndefOr[Boolean] = js.native
+    var tcp: js.UndefOr[Boolean] = js.undefined
   }
   object CommonOptions {
     
@@ -99,14 +99,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ExpressMiddlewareOptions extends StObject {
     
     /**
       * Metric name to use for reporting if a matching route is not
       * found (default "unknown_express_route").
       */
-    var notFoundRouteName: js.UndefOr[String] = js.native
+    var notFoundRouteName: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback called after reporting metrics for an
@@ -116,17 +115,17 @@ object mod {
         js.Function4[
           /* client */ StatsdClient, 
           /* startTime */ Date, 
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
-          /* res */ Response_[_], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Enables inclusion of per-URL response code and timing
       * metrics (default false).
       */
-    var timeByUrl: js.UndefOr[Boolean] = js.native
+    var timeByUrl: js.UndefOr[Boolean] = js.undefined
   }
   object ExpressMiddlewareOptions {
     
@@ -147,7 +146,7 @@ object mod {
       
       @scala.inline
       def setOnResponseEnd(
-        value: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Unit
+        value: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Unit
       ): Self = StObject.set(x, "onResponseEnd", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -161,23 +160,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait HttpOptions extends CommonOptions {
+  trait HttpOptions
+    extends StObject
+       with CommonOptions {
     
     /**
       * Additional headers to send (default {}).
       */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Where to send the stats (default localhost).
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * What HTTP method to use (default "PUT").
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
   }
   object HttpOptions {
     
@@ -219,9 +219,9 @@ object mod {
     def counter(metric: String, delta: Double, tags: Tags): this.type = js.native
     
     def decrement(metric: String): this.type = js.native
-    def decrement(metric: String, delta: js.UndefOr[scala.Nothing], tags: Tags): this.type = js.native
     def decrement(metric: String, delta: Double): this.type = js.native
     def decrement(metric: String, delta: Double, tags: Tags): this.type = js.native
+    def decrement(metric: String, delta: Unit, tags: Tags): this.type = js.native
     
     def formatTags(): String = js.native
     def formatTags(tags: Tags): String = js.native
@@ -240,9 +240,9 @@ object mod {
     def histogram(name: String, value: Double, tags: Tags): this.type = js.native
     
     def increment(metric: String): this.type = js.native
-    def increment(metric: String, delta: js.UndefOr[scala.Nothing], tags: Tags): this.type = js.native
     def increment(metric: String, delta: Double): this.type = js.native
     def increment(metric: String, delta: Double, tags: Tags): this.type = js.native
+    def increment(metric: String, delta: Unit, tags: Tags): this.type = js.native
     
     def raw(rawData: String): this.type = js.native
     
@@ -257,25 +257,26 @@ object mod {
   
   type Tags = StringDictionary[String | Double]
   
-  @js.native
-  trait TcpOptions extends CommonOptions {
+  trait TcpOptions
+    extends StObject
+       with CommonOptions {
     
     /**
       * Where to send the stats (default localhost).
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Port to contact the statsd-daemon on (default 8125).
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of timeouts in which the socket auto-closes if it
       * has been inactive. (default 10; 1 to auto-close after a
       * single timeout).
       */
-    var socketTimeoutsToClose: Double = js.native
+    var socketTimeoutsToClose: Double
   }
   object TcpOptions {
     
@@ -305,18 +306,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait UdpOptions extends CommonOptions {
+  trait UdpOptions
+    extends StObject
+       with CommonOptions {
     
     /**
       * Where to send the stats (default localhost).
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Port to contact the statsd-daemon on (default 8125).
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object UdpOptions {
     

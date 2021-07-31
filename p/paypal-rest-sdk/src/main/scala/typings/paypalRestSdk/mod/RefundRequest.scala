@@ -2,29 +2,27 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefundRequest extends StObject {
   
-  var amount: js.UndefOr[Amount] = js.native
+  var amount: js.UndefOr[Amount] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var invoice_number: js.UndefOr[String] = js.native
+  var invoice_number: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[Item]] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var payer_info: js.UndefOr[PayerInfo] = js.native
+  var payer_info: js.UndefOr[PayerInfo] = js.undefined
   
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
-  var refund_advice: js.UndefOr[Boolean] = js.native
+  var refund_advice: js.UndefOr[Boolean] = js.undefined
   
-  var refund_source: js.UndefOr[String] = js.native
+  var refund_source: js.UndefOr[String] = js.undefined
   
-  var supplementary_data: js.UndefOr[js.Array[_]] = js.native
+  var supplementary_data: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object RefundRequest {
   
@@ -89,7 +87,7 @@ object RefundRequest {
     def setRefund_sourceUndefined: Self = StObject.set(x, "refund_source", js.undefined)
     
     @scala.inline
-    def setSupplementary_data(value: js.Array[_]): Self = StObject.set(x, "supplementary_data", value.asInstanceOf[js.Any])
+    def setSupplementary_data(value: js.Array[js.Any]): Self = StObject.set(x, "supplementary_data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSupplementary_dataUndefined: Self = StObject.set(x, "supplementary_data", js.undefined)

@@ -3,29 +3,44 @@ package typings.nodelibFsWalk
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
   
   @JSImport("@nodelib/fs.walk/out/providers/stream", JSImport.Default)
   @js.native
-  class default protected () extends StreamProvider {
+  class default protected ()
+    extends StObject
+       with StreamProvider {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
+    
+    /* CompleteClass */
+    override val _reader: typings.nodelibFsWalk.readersAsyncMod.default = js.native
+    
+    /* CompleteClass */
+    override val _root: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _settings: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _stream: Readable = js.native
+    
+    /* CompleteClass */
+    override def read(): Readable = js.native
   }
   
-  @js.native
   trait StreamProvider extends StObject {
     
-    val _reader: typings.nodelibFsWalk.readersAsyncMod.default = js.native
+    val _reader: typings.nodelibFsWalk.readersAsyncMod.default
     
-    val _root: js.Any = js.native
+    val _root: js.Any
     
-    val _settings: js.Any = js.native
+    val _settings: js.Any
     
-    val _stream: Readable = js.native
+    val _stream: Readable
     
-    def read(): Readable = js.native
+    def read(): Readable
   }
   object StreamProvider {
     

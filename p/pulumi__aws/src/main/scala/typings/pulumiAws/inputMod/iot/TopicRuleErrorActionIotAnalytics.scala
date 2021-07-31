@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionIotAnalytics extends StObject {
   
   /**
     * Name of AWS IOT Analytics channel.
     */
-  var channelName: Input[String] = js.native
+  var channelName: Input[String]
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
 }
 object TopicRuleErrorActionIotAnalytics {
   

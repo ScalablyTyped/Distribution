@@ -2,15 +2,13 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetrieveMessage extends StObject {
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var problem: String = js.native
+  var problem: String
 }
 object RetrieveMessage {
   

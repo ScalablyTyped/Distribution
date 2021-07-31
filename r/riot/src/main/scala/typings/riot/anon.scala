@@ -4,19 +4,17 @@ import typings.riotjsDomBindings.mod.AttributeExpressionData
 import typings.riotjsDomBindings.mod.SlotBindingData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes[InitialProps] extends StObject {
     
-    var attributes: js.UndefOr[js.Array[AttributeExpressionData]] = js.native
+    var attributes: js.UndefOr[js.Array[AttributeExpressionData]] = js.undefined
     
-    var props: js.UndefOr[InitialProps] = js.native
+    var props: js.UndefOr[InitialProps] = js.undefined
     
-    var slots: js.UndefOr[js.Array[SlotBindingData]] = js.native
+    var slots: js.UndefOr[js.Array[SlotBindingData]] = js.undefined
   }
   object Attributes {
     
@@ -27,7 +25,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes[_], InitialProps] (val x: Self with Attributes[InitialProps]) extends AnyVal {
+    implicit class AttributesMutableBuilder[Self <: Attributes[?], InitialProps] (val x: Self & Attributes[InitialProps]) extends AnyVal {
       
       @scala.inline
       def setAttributes(value: js.Array[AttributeExpressionData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
@@ -55,14 +53,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ParentScope extends StObject {
     
-    var attributes: js.Array[AttributeExpressionData] = js.native
+    var attributes: js.Array[AttributeExpressionData]
     
-    var parentScope: js.Any = js.native
+    var parentScope: js.Any
     
-    var slots: js.Array[SlotBindingData] = js.native
+    var slots: js.Array[SlotBindingData]
   }
   object ParentScope {
     

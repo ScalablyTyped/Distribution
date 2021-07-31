@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MaxAggregation")
 @js.native
-class MaxAggregation protected () extends Aggregation {
+class MaxAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that keeps track and returns the maximum value among the
     numeric values extracted from the aggregated documents.

@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilteringEventUIParam extends StObject {
   
   /**
     * Used to obtain reference to array which contains expressions supported by [$.ig.DataSource](ig.datasource).
     */
-  var expression: js.UndefOr[js.Any] = js.native
+  var expression: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to igCombo.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object FilteringEventUIParam {
   

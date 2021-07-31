@@ -4,32 +4,29 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolsMod {
   
-  @JSImport("bip174/src/lib/converter/tools", "keyValToBuffer")
+  @JSImport("bip174/src/lib/converter/tools", JSImport.Namespace)
   @js.native
-  def keyValToBuffer(keyVal: KeyValue): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bip174/src/lib/converter/tools", "keyValsToBuffer")
-  @js.native
-  def keyValsToBuffer(keyVals: js.Array[KeyValue]): Buffer = js.native
+  @scala.inline
+  def keyValToBuffer(keyVal: KeyValue): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keyValToBuffer")(keyVal.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bip174/src/lib/converter/tools", "range")
-  @js.native
-  def range(n: Double): js.Array[Double] = js.native
+  @scala.inline
+  def keyValsToBuffer(keyVals: js.Array[KeyValue]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("keyValsToBuffer")(keyVals.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bip174/src/lib/converter/tools", "readUInt64LE")
-  @js.native
-  def readUInt64LE(buffer: Buffer, offset: Double): Double = js.native
+  @scala.inline
+  def range(n: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(n.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("bip174/src/lib/converter/tools", "reverseBuffer")
-  @js.native
-  def reverseBuffer(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def readUInt64LE(buffer: Buffer, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt64LE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bip174/src/lib/converter/tools", "writeUInt64LE")
-  @js.native
-  def writeUInt64LE(buffer: Buffer, value: Double, offset: Double): Double = js.native
+  @scala.inline
+  def reverseBuffer(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def writeUInt64LE(buffer: Buffer, value: Double, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt64LE")(buffer.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

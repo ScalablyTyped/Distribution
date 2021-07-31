@@ -2,23 +2,21 @@ package typings.reactJoyride.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreState extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var controlled: Boolean = js.native
+  var controlled: Boolean
   
-  var index: Double = js.native
+  var index: Double
   
-  var lifecycle: String = js.native
+  var lifecycle: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var status: String = js.native
+  var status: String
 }
 object StoreState {
   

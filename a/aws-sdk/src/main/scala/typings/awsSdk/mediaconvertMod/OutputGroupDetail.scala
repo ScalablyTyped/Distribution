@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputGroupDetail extends StObject {
   
   /**
     * Details about the output
     */
-  var OutputDetails: js.UndefOr[listOfOutputDetail] = js.native
+  var OutputDetails: js.UndefOr[listOfOutputDetail] = js.undefined
 }
 object OutputGroupDetail {
   

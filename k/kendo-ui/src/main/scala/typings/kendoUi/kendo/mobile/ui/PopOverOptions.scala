@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopOverOptions extends StObject {
   
-  var close: js.UndefOr[js.Function1[/* e */ PopOverCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ PopOverCloseEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ PopOverOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ PopOverOpenEvent, Unit]] = js.undefined
   
-  var pane: js.UndefOr[PopOverPane] = js.native
+  var pane: js.UndefOr[PopOverPane] = js.undefined
   
-  var popup: js.UndefOr[PopOverPopup] = js.native
+  var popup: js.UndefOr[PopOverPopup] = js.undefined
 }
 object PopOverOptions {
   

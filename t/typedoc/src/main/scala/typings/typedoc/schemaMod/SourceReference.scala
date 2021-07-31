@@ -2,19 +2,18 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.SourceReference, 'fileName' | 'line' | 'character'> */
-@js.native
 trait SourceReference
-  extends __ModelToObject[js.Any] {
+  extends StObject
+     with __ModelToObject[js.Any] {
   
-  var character: ModelToObject[Double] | Double = js.native
+  var character: ModelToObject[Double] | Double
   
-  var fileName: ModelToObject[String] | String = js.native
+  var fileName: ModelToObject[String] | String
   
-  var line: ModelToObject[Double] | Double = js.native
+  var line: ModelToObject[Double] | Double
 }
 object SourceReference {
   

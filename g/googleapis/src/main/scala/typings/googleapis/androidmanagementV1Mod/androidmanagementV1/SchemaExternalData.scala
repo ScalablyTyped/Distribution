@@ -2,14 +2,12 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data hosted at an external location. The data is to be downloaded by
   * Android Device Policy and verified against the hash.
   */
-@js.native
 trait SchemaExternalData extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaExternalData extends StObject {
     * content doesn&#39;t match this hash, Android Device Policy won&#39;t use
     * the data.
     */
-  var sha256Hash: js.UndefOr[String] = js.native
+  var sha256Hash: js.UndefOr[String] = js.undefined
   
   /**
     * The absolute URL to the data, which must use either the http or https
@@ -26,7 +24,7 @@ trait SchemaExternalData extends StObject {
     * random component in the URL may be used to prevent attackers from
     * discovering the URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaExternalData {
   

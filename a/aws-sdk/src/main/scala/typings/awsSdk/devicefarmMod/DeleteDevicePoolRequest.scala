@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDevicePoolRequest extends StObject {
   
   /**
     * Represents the Amazon Resource Name (ARN) of the Device Farm device pool to delete.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
 }
 object DeleteDevicePoolRequest {
   

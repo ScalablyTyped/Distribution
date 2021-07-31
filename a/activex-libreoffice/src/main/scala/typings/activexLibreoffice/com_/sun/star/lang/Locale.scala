@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.lang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Each implementation that performs locale-sensitive operations allows you to get all the available objects of that type. Use the {@link
   * com.sun.star.resource.XLocale} interface to set the locale.
   */
-@js.native
 trait Locale extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait Locale extends StObject {
     *
     * If this field contains an empty string, the meaning depends on the context.
     */
-  var Country: String = js.native
+  var Country: String
   
   /**
     * specifies an **ISO 639 Language Code** .
@@ -46,7 +44,7 @@ trait Locale extends StObject {
     * Since LibreOffice 4.2, if the locale can not be represented using only ISO 639 and ISO 3166 codes this field contains the ISO 639-3 reserved for local
     * use code "<strong>qlt</strong>" and a **BCP 47** language tag is present in the Variant field.
     */
-  var Language: String = js.native
+  var Language: String
   
   /**
     * specifies a **BCP 47** Language Tag.
@@ -59,7 +57,7 @@ trait Locale extends StObject {
     * Earlier versions of the documentation mentioned "vendor and; browser-specific" codes but that was never supported. Use of any arbitrary strings in the
     * Variant field that do not form a valid BCP 47 language tag is **strongly deprecated** .
     */
-  var Variant: String = js.native
+  var Variant: String
 }
 object Locale {
   

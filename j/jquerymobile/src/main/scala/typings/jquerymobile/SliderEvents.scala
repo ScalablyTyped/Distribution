@@ -3,17 +3,15 @@ package typings.jquerymobile
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderEvents extends StObject {
   
-  var create: js.UndefOr[JQueryMobileEvent] = js.native
+  var create: js.UndefOr[JQueryMobileEvent] = js.undefined
   
-  var slidestart: js.UndefOr[JQueryMobileEvent] = js.native
+  var slidestart: js.UndefOr[JQueryMobileEvent] = js.undefined
   
-  var slidestop: js.UndefOr[JQueryMobileEvent] = js.native
+  var slidestop: js.UndefOr[JQueryMobileEvent] = js.undefined
 }
 object SliderEvents {
   

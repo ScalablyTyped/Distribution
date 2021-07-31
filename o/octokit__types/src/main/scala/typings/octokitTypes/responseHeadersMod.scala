@@ -3,48 +3,47 @@ package typings.octokitTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseHeadersMod {
   
-  @js.native
   trait ResponseHeaders
-    extends /* header */ StringDictionary[js.UndefOr[String | Double]] {
+    extends StObject
+       with /* header */ StringDictionary[js.UndefOr[String | Double]] {
     
-    var `cache-control`: js.UndefOr[String] = js.native
+    var `cache-control`: js.UndefOr[String] = js.undefined
     
-    var `content-length`: js.UndefOr[Double] = js.native
+    var `content-length`: js.UndefOr[Double] = js.undefined
     
-    var `content-type`: js.UndefOr[String] = js.native
+    var `content-type`: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var etag: js.UndefOr[String] = js.native
+    var etag: js.UndefOr[String] = js.undefined
     
-    var `last-modified`: js.UndefOr[String] = js.native
+    var `last-modified`: js.UndefOr[String] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[String] = js.native
+    var server: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var vary: js.UndefOr[String] = js.native
+    var vary: js.UndefOr[String] = js.undefined
     
-    var `x-github-mediatype`: js.UndefOr[String] = js.native
+    var `x-github-mediatype`: js.UndefOr[String] = js.undefined
     
-    var `x-github-request-id`: js.UndefOr[String] = js.native
+    var `x-github-request-id`: js.UndefOr[String] = js.undefined
     
-    var `x-oauth-scopes`: js.UndefOr[String] = js.native
+    var `x-oauth-scopes`: js.UndefOr[String] = js.undefined
     
-    var `x-ratelimit-limit`: js.UndefOr[String] = js.native
+    var `x-ratelimit-limit`: js.UndefOr[String] = js.undefined
     
-    var `x-ratelimit-remaining`: js.UndefOr[String] = js.native
+    var `x-ratelimit-remaining`: js.UndefOr[String] = js.undefined
     
-    var `x-ratelimit-reset`: js.UndefOr[String] = js.native
+    var `x-ratelimit-reset`: js.UndefOr[String] = js.undefined
   }
   object ResponseHeaders {
     

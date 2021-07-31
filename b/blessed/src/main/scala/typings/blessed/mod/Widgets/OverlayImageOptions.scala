@@ -2,33 +2,33 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OverlayImageOptions extends BoxOptions {
+trait OverlayImageOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * Render the file as ANSI art instead of using w3m to overlay Internally uses the
     * ANSIImage element. See the ANSIImage element for more information/options. (Default: true).
     */
-  var ansi: Boolean = js.native
+  var ansi: Boolean
   
   /**
     * Path to image.
     */
-  var file: String = js.native
+  var file: String
   
   /**
     * Whether to search /usr, /bin, and /lib for w3mimgdisplay (Default: true).
     */
-  var search: String = js.native
+  var search: String
   
   /**
     * Path to w3mimgdisplay. If a proper w3mimgdisplay path is not given, blessed will
     * search the entire disk for the binary.
     */
-  var w3m: String = js.native
+  var w3m: String
 }
 object OverlayImageOptions {
   

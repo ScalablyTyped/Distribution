@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallback
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.DisplayCallbackConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,7 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: http://codebeautify.org/xmltojson
   */
 @js.native
-trait DynamicBitmapText extends BitmapText {
+trait DynamicBitmapText
+  extends StObject
+     with BitmapText {
   
   /**
     * The data object that is populated during rendering, then passed to the displayCallback.

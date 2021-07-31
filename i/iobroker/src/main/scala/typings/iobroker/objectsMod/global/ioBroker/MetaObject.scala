@@ -4,26 +4,25 @@ import typings.iobroker.iobrokerStrings.meta
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_MetaObject: MetaCommon = js.native
+  var common_MetaObject: MetaCommon
   
   @JSName("type")
-  var type_MetaObject: meta = js.native
+  var type_MetaObject: meta
 }
 object MetaObject {
   
   @scala.inline
-  def apply(_id: String, common: MetaCommon, native: Record[String, _], `type`: meta): MetaObject = {
+  def apply(_id: String, common: MetaCommon, native: Record[String, js.Any]): MetaObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("meta")
     __obj.asInstanceOf[MetaObject]
   }
   

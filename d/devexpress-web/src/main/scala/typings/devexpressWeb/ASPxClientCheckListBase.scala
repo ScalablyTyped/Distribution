@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base type for the ASPxClientCheckBoxList and ASPxClientRadioButtonList objects.
   */
-@js.native
-trait ASPxClientCheckListBase extends ASPxClientListEdit {
+trait ASPxClientCheckListBase
+  extends StObject
+     with ASPxClientListEdit {
   
   /**
     * Returns the editor's item specified by its index. An ASPxClientListEditItem object that is the item located at the specified index.
     * @param index An integer value specifying the zero-based index of the item to be retrieved.
     */
-  def GetItem(index: Double): ASPxClientListEditItem = js.native
+  def GetItem(index: Double): ASPxClientListEditItem
   
   /**
     * Gets the number of items contained in the editor's item collection.
     */
-  def GetItemCount(): Double = js.native
+  def GetItemCount(): Double
 }
 object ASPxClientCheckListBase {
   

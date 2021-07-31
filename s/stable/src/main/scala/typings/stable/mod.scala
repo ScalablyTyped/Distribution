@@ -2,24 +2,23 @@ package typings.stable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("stable", JSImport.Namespace)
-  @js.native
-  def apply[T](array: js.Array[T]): js.Array[T] = js.native
-  @JSImport("stable", JSImport.Namespace)
-  @js.native
-  def apply[T](array: js.Array[T], comparator: Comparator[T]): js.Array[T] = js.native
+  @scala.inline
+  def apply[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def apply[T](array: js.Array[T], comparator: Comparator[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("stable", "inplace")
+  @JSImport("stable", JSImport.Namespace)
   @js.native
-  def inplace[T](array: js.Array[T]): js.Array[T] = js.native
-  @JSImport("stable", "inplace")
-  @js.native
-  def inplace[T](array: js.Array[T], comparator: Comparator[T]): js.Array[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def inplace[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("inplace")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def inplace[T](array: js.Array[T], comparator: Comparator[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("inplace")(array.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   type Comparator[T] = js.Function2[/* a */ T, /* b */ T, Boolean | Double]
 }

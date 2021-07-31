@@ -3,17 +3,12 @@ package typings.mongodb.mod
 import typings.mongodb.anon.Coll
 import typings.mongodb.anon.RemovedFields
 import typings.mongodb.anon.`5`
-import typings.mongodb.mongodbStrings.delete
 import typings.mongodb.mongodbStrings.drop
 import typings.mongodb.mongodbStrings.dropDatabase
 import typings.mongodb.mongodbStrings.insert
-import typings.mongodb.mongodbStrings.invalidate
-import typings.mongodb.mongodbStrings.rename
 import typings.mongodb.mongodbStrings.replace
-import typings.mongodb.mongodbStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -40,20 +35,14 @@ object ChangeEvent {
   }
   
   @scala.inline
-  def ChangeEventDelete[TSchema /* <: js.Object */](
-    _id: ResumeToken,
-    clusterTime: typings.bson.mod.Timestamp,
-    documentKey: `5`[TSchema],
-    ns: Coll,
-    operationType: delete
-  ): typings.mongodb.mod.ChangeEventDelete[TSchema] = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+  def ChangeEventDelete[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, documentKey: `5`[TSchema], ns: Coll): typings.mongodb.mod.ChangeEventDelete[TSchema] = {
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "delete")
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventDelete[TSchema]]
   }
   
   @scala.inline
-  def ChangeEventInvalidate[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): typings.mongodb.mod.ChangeEventInvalidate[TSchema] = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+  def ChangeEventInvalidate[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp): typings.mongodb.mod.ChangeEventInvalidate[TSchema] = {
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = "invalidate")
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventInvalidate[TSchema]]
   }
   
@@ -69,14 +58,8 @@ object ChangeEvent {
   }
   
   @scala.inline
-  def ChangeEventRename[TSchema /* <: js.Object */](
-    _id: ResumeToken,
-    clusterTime: typings.bson.mod.Timestamp,
-    ns: Coll,
-    operationType: rename,
-    to: Coll
-  ): typings.mongodb.mod.ChangeEventRename[TSchema] = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+  def ChangeEventRename[TSchema /* <: js.Object */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, ns: Coll, to: Coll): typings.mongodb.mod.ChangeEventRename[TSchema] = {
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "rename", to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventRename[TSchema]]
   }
   
@@ -86,10 +69,9 @@ object ChangeEvent {
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `5`[TSchema],
     ns: Coll,
-    operationType: update,
     updateDescription: RemovedFields[TSchema]
   ): typings.mongodb.mod.ChangeEventUpdate[TSchema] = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], updateDescription = updateDescription.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "update", updateDescription = updateDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongodb.mod.ChangeEventUpdate[TSchema]]
   }
 }

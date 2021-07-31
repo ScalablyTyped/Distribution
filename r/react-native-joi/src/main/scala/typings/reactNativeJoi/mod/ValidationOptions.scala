@@ -3,53 +3,51 @@ package typings.reactNativeJoi.mod
 import typings.reactNativeJoi.anon.Arrays
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationOptions extends StObject {
   
   /**
     * when true, stops validation on the first error, otherwise returns all the errors found. Defaults to true.
     */
-  var abortEarly: js.UndefOr[Boolean] = js.native
+  var abortEarly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when true, allows object to contain unknown keys which are ignored. Defaults to false.
     */
-  var allowUnknown: js.UndefOr[Boolean] = js.native
+  var allowUnknown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * provides an external data set to be used in references
     */
-  var context: js.UndefOr[Context] = js.native
+  var context: js.UndefOr[Context] = js.undefined
   
   /**
     * when true, attempts to cast values to the required types (e.g. a string to a number). Defaults to true.
     */
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * overrides individual error messages. Defaults to no override ({}).
     */
-  var language: js.UndefOr[LanguageRootOptions] = js.native
+  var language: js.UndefOr[LanguageRootOptions] = js.undefined
   
   /**
     * when true, do not apply default values. Defaults to false.
     */
-  var noDefaults: js.UndefOr[Boolean] = js.native
+  var noDefaults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * sets the default presence requirements. Supported modes: 'optional', 'required', and 'forbidden'. Defaults to 'optional'.
     */
   var presence: js.UndefOr[
     typings.reactNativeJoi.reactNativeJoiStrings.optional | typings.reactNativeJoi.reactNativeJoiStrings.required | typings.reactNativeJoi.reactNativeJoiStrings.forbidden
-  ] = js.native
+  ] = js.undefined
   
   /**
     * when true, ignores unknown keys with a function value. Defaults to false.
     */
-  var skipFunctions: js.UndefOr[Boolean] = js.native
+  var skipFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * remove unknown elements from objects and arrays. Defaults to false
@@ -57,7 +55,7 @@ trait ValidationOptions extends StObject {
     * - when an object:
     *      - objects - set to true to remove unknown keys from objects
     */
-  var stripUnknown: js.UndefOr[Boolean | Arrays] = js.native
+  var stripUnknown: js.UndefOr[Boolean | Arrays] = js.undefined
 }
 object ValidationOptions {
   

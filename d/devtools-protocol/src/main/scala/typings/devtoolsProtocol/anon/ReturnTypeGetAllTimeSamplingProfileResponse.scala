@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Memory.GetAllTimeSamplingProfileResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetAllTimeSamplingProfileResponse extends StObject {
   
-  var paramsType: js.Array[js.Any] = js.native
+  var paramsType: js.Array[js.Any]
   
-  var returnType: GetAllTimeSamplingProfileResponse = js.native
+  var returnType: GetAllTimeSamplingProfileResponse
 }
 object ReturnTypeGetAllTimeSamplingProfileResponse {
   

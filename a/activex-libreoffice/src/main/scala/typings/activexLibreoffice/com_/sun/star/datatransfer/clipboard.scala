@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clipboard {
@@ -21,11 +20,12 @@ object clipboard {
     * A clipboard uses this object to notify its listeners of content changes.
     * @see com.sun.star.datatransfer.clipboard.XClipboardListener
     */
-  @js.native
-  trait ClipboardEvent extends EventObject {
+  trait ClipboardEvent
+    extends StObject
+       with EventObject {
     
     /** The current content of the clipboard. */
-    var Contents: XTransferable = js.native
+    var Contents: XTransferable
   }
   object ClipboardEvent {
     
@@ -47,9 +47,9 @@ object clipboard {
     * The clipboard manager is a one-instance service that holds a list of all known clipboard instances.
     * @see XClipboardManager
     */
-  @js.native
   trait ClipboardManager
-    extends XClipboardManager
+    extends StObject
+       with XClipboardManager
        with XComponent
   object ClipboardManager {
     
@@ -72,9 +72,9 @@ object clipboard {
   }
   
   /** A generic clipboard service is a simple container for transferable objects. */
-  @js.native
   trait GenericClipboard
-    extends XClipboardEx
+    extends StObject
+       with XClipboardEx
        with XClipboardNotifier
        with XInitialization
        with XComponent
@@ -92,7 +92,7 @@ object clipboard {
       getContents: () => XTransferable,
       getName: () => String,
       getRenderingCapabilities: () => Double,
-      initialize: SeqEquiv[_] => Unit,
+      initialize: SeqEquiv[js.Any] => Unit,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       removeClipboardListener: XClipboardListener => Unit,
@@ -124,34 +124,35 @@ object clipboard {
   /** The system clipboard service builds a bridge to the OS specific clipboard interfaces. */
   type SystemClipboard = XSystemClipboard
   
-  @js.native
-  trait XClipboard extends XInterface {
+  trait XClipboard
+    extends StObject
+       with XInterface {
     
     /**
       * To get the current content of the clipboard.
       * @returns The transferable object representing the current content of this clipboard.
       * @see com.sun.star.datatransfer.XTransferable
       */
-    val Contents: XTransferable = js.native
+    val Contents: XTransferable
     
     /**
       * To get the name of the clipboard instance.
       * @returns The name of this clipboard object. If the returned string is empty the clipboard instance is the system clipboard.
       */
-    val Name: String = js.native
+    val Name: String
     
     /**
       * To get the current content of the clipboard.
       * @returns The transferable object representing the current content of this clipboard.
       * @see com.sun.star.datatransfer.XTransferable
       */
-    def getContents(): XTransferable = js.native
+    def getContents(): XTransferable
     
     /**
       * To get the name of the clipboard instance.
       * @returns The name of this clipboard object. If the returned string is empty the clipboard instance is the system clipboard.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Sets the current contents of the clipboard to the specified transferable object and registers the specified clipboard owner as the owner of the new
@@ -161,7 +162,7 @@ object clipboard {
       * @see com.sun.star.datatransfer.XTransferable
       * @see com.sun.star.datatransfer.clipboard.XClipboardOwner
       */
-    def setContents(xTrans: XTransferable, xClipboardOwner: XClipboardOwner): Unit = js.native
+    def setContents(xTrans: XTransferable, xClipboardOwner: XClipboardOwner): Unit
   }
   object XClipboard {
     
@@ -204,22 +205,23 @@ object clipboard {
     * The extended clipboard interface.
     * @see com.sun.star.datatransfer.clipboard.XClipboard
     */
-  @js.native
-  trait XClipboardEx extends XClipboard {
+  trait XClipboardEx
+    extends StObject
+       with XClipboard {
     
     /**
       * To determine the supported rendering capabilities of the clipboard instance.
       * @returns A set of flags describing the rendering capabilities of the clipboard instance.
       * @see RenderingCapabilities
       */
-    val RenderingCapabilities: Double = js.native
+    val RenderingCapabilities: Double
     
     /**
       * To determine the supported rendering capabilities of the clipboard instance.
       * @returns A set of flags describing the rendering capabilities of the clipboard instance.
       * @see RenderingCapabilities
       */
-    def getRenderingCapabilities(): Double = js.native
+    def getRenderingCapabilities(): Double
   }
   object XClipboardEx {
     
@@ -255,8 +257,9 @@ object clipboard {
     * Should be implemented by a clipboard factory that simplifies the creation of multiple clipboard instances.
     * @see com.sun.star.datatransfer.clipboard.XClipboard
     */
-  @js.native
-  trait XClipboardFactory extends XInterface {
+  trait XClipboardFactory
+    extends StObject
+       with XInterface {
     
     /**
       * Creates a new named clipboard instance.
@@ -264,7 +267,7 @@ object clipboard {
       * @returns A newly created instance of a {@link GenericClipboard} implementation.
       * @throws com::sun::star::lang::IllegalArgumentException If an empty string is passed as clipboard name.
       */
-    def createClipboard(aName: String): XClipboard = js.native
+    def createClipboard(aName: String): XClipboard
   }
   object XClipboardFactory {
     
@@ -288,15 +291,16 @@ object clipboard {
   }
   
   /** Interface to be implemented to receive notifications on clipboard content changes. */
-  @js.native
-  trait XClipboardListener extends XEventListener {
+  trait XClipboardListener
+    extends StObject
+       with XEventListener {
     
     /**
       * The content of the clipboard has changed.
       * @param event The event object containing the new clipboard content.
       * @see com.sun.star.datatransfer.clipboard.ClipboardEvent
       */
-    def changedContents(event: ClipboardEvent): Unit = js.native
+    def changedContents(event: ClipboardEvent): Unit
   }
   object XClipboardListener {
     
@@ -324,8 +328,9 @@ object clipboard {
     * This interface is used to retrieve, add, or remove clipboard instances.
     * @see com.sun.star.datatransfer.clipboard.XClipboard
     */
-  @js.native
-  trait XClipboardManager extends XInterface {
+  trait XClipboardManager
+    extends StObject
+       with XInterface {
     
     /**
       * Add a clipboard instance to the manager's list.
@@ -333,7 +338,7 @@ object clipboard {
       * @throws com::sun::star::IllegalArgumentException if xClipboard is not a valid clipboard.
       * @throws com::sun::star::container::ElementExistsException if a clipboard with the name of xClipboard already exists.
       */
-    def addClipboard(xClipboard: XClipboard): Unit = js.native
+    def addClipboard(xClipboard: XClipboard): Unit
     
     /**
       * Get a clipboard instance by name.
@@ -341,19 +346,19 @@ object clipboard {
       * @returns The clipboard object with the specified name.
       * @throws com::sun::star::container::NoSuchElementException if no clipboard with the specified name exists.
       */
-    def getClipboard(aName: String): XClipboard = js.native
+    def getClipboard(aName: String): XClipboard
     
     /**
       * Get a list of a managed clipboards.
       * @returns A sequence of the names of all available clipboards.
       */
-    def listClipboardNames(): SafeArray[String] = js.native
+    def listClipboardNames(): SafeArray[String]
     
     /**
       * Removes the clipboard with the specified name from the list.
       * @param aName The name of the clipboard to remove.
       */
-    def removeClipboard(aName: String): Unit = js.native
+    def removeClipboard(aName: String): Unit
   }
   object XClipboardManager {
     
@@ -388,20 +393,21 @@ object clipboard {
     }
   }
   
-  @js.native
-  trait XClipboardNotifier extends XInterface {
+  trait XClipboardNotifier
+    extends StObject
+       with XInterface {
     
     /**
       * Requests notifications on clipboard content changes.
       * @param listener The object receiving the notifications.
       */
-    def addClipboardListener(listener: XClipboardListener): Unit = js.native
+    def addClipboardListener(listener: XClipboardListener): Unit
     
     /**
       * Removes listener from notification list.
       * @param listener The object to remove from notification list.
       */
-    def removeClipboardListener(listener: XClipboardListener): Unit = js.native
+    def removeClipboardListener(listener: XClipboardListener): Unit
   }
   object XClipboardNotifier {
     
@@ -432,8 +438,9 @@ object clipboard {
     * The owner of a transferable object may pass this interface to the clipboard instance.
     * @see com.sun.star.datatransfer.clipboard.XClipboard
     */
-  @js.native
-  trait XClipboardOwner extends XInterface {
+  trait XClipboardOwner
+    extends StObject
+       with XInterface {
     
     /**
       * Notifies the transferable object source that it is no longer the owner of the clipboard.
@@ -442,7 +449,7 @@ object clipboard {
       * @see com.sun.star.datatransfer.clipboard.XClipboard
       * @see com.sun.star.datatransfer.XTransferable
       */
-    def lostOwnership(xClipboard: XClipboard, xTrans: XTransferable): Unit = js.native
+    def lostOwnership(xClipboard: XClipboard, xTrans: XTransferable): Unit
   }
   object XClipboardOwner {
     
@@ -469,11 +476,12 @@ object clipboard {
     * An interface for flushable clipboards may optionally be implemented by a system clipboard service.
     * @see com.sun.star.datatransfer.clipboard.SystemClipboard
     */
-  @js.native
-  trait XFlushableClipboard extends XInterface {
+  trait XFlushableClipboard
+    extends StObject
+       with XInterface {
     
     /** Renders the current content of the clipboard to the system so that it is available even if the source application no longer exist. */
-    def flushClipboard(): Unit = js.native
+    def flushClipboard(): Unit
   }
   object XFlushableClipboard {
     
@@ -500,9 +508,9 @@ object clipboard {
     * Provides a unified interface for new-style service {@link SystemClipboard} .
     * @since LibreOffice 4.2
     */
-  @js.native
   trait XSystemClipboard
-    extends XClipboardEx
+    extends StObject
+       with XClipboardEx
        with XClipboardNotifier
        with XFlushableClipboard
        with XComponent

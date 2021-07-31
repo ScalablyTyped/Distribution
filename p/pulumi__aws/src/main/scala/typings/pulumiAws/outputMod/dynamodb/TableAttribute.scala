@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableAttribute extends StObject {
   
   /**
     * The name of the index
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object TableAttribute {
   

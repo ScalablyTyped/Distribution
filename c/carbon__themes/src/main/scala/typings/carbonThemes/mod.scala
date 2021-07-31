@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.carbonThemes.anon.G10
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,106 +12,105 @@ object mod extends Shortcut {
   @js.native
   val default: ThemePackage = js.native
   
-  @js.native
   trait Theme extends StObject {
     
-    var active01: String = js.native
+    var active01: String
     
-    var activeDanger: String = js.native
+    var activeDanger: String
     
-    var activePrimary: String = js.native
+    var activePrimary: String
     
-    var activeSecondary: String = js.native
+    var activeSecondary: String
     
-    var activeTertiary: String = js.native
+    var activeTertiary: String
     
-    var activeUI: String = js.native
+    var activeUI: String
     
-    var brand01: String = js.native
+    var brand01: String
     
-    var brand02: String = js.native
+    var brand02: String
     
-    var brand03: String = js.native
+    var brand03: String
     
-    var disabled01: String = js.native
+    var disabled01: String
     
-    var disabled02: String = js.native
+    var disabled02: String
     
-    var disabled03: String = js.native
+    var disabled03: String
     
-    var field01: String = js.native
+    var field01: String
     
-    var field02: String = js.native
+    var field02: String
     
-    var focus: String = js.native
+    var focus: String
     
-    var highlight: String = js.native
+    var highlight: String
     
-    var hoverDanger: String = js.native
+    var hoverDanger: String
     
-    var hoverField: String = js.native
+    var hoverField: String
     
-    var hoverPrimary: String = js.native
+    var hoverPrimary: String
     
-    var hoverPrimaryText: String = js.native
+    var hoverPrimaryText: String
     
-    var hoverRow: String = js.native
+    var hoverRow: String
     
-    var hoverSecondary: String = js.native
+    var hoverSecondary: String
     
-    var hoverSelectedUI: String = js.native
+    var hoverSelectedUI: String
     
-    var hoverTertiary: String = js.native
+    var hoverTertiary: String
     
-    var hoverUI: String = js.native
+    var hoverUI: String
     
-    var icon01: String = js.native
+    var icon01: String
     
-    var icon02: String = js.native
+    var icon02: String
     
-    var interactive01: String = js.native
+    var interactive01: String
     
-    var interactive02: String = js.native
+    var interactive02: String
     
-    var interactive03: String = js.native
+    var interactive03: String
     
-    var inverse01: String = js.native
+    var inverse01: String
     
-    var inverse02: String = js.native
+    var inverse02: String
     
-    var overlay01: String = js.native
+    var overlay01: String
     
-    var selectedUI: String = js.native
+    var selectedUI: String
     
-    var support01: String = js.native
+    var support01: String
     
-    var support02: String = js.native
+    var support02: String
     
-    var support03: String = js.native
+    var support03: String
     
-    var support04: String = js.native
+    var support04: String
     
-    var text01: String = js.native
+    var text01: String
     
-    var text02: String = js.native
+    var text02: String
     
-    var text03: String = js.native
+    var text03: String
     
-    var text04: String = js.native
+    var text04: String
     
-    var ui01: String = js.native
+    var ui01: String
     
-    var ui02: String = js.native
+    var ui02: String
     
-    var ui03: String = js.native
+    var ui03: String
     
-    var ui04: String = js.native
+    var ui04: String
     
-    var ui05: String = js.native
+    var ui05: String
     
-    var uiBackground: String = js.native
+    var uiBackground: String
     
-    var visitedLink: String = js.native
+    var visitedLink: String
   }
   object Theme {
     
@@ -325,117 +323,19 @@ object mod extends Shortcut {
   }
   
   // The default theme is included as a top level export
-  /* Inlined {  white :@carbon/themes.@carbon/themes.Theme,   g10 :@carbon/themes.@carbon/themes.Theme,   g100 :@carbon/themes.@carbon/themes.Theme,   g90 :@carbon/themes.@carbon/themes.Theme,   themes :{  g10 :@carbon/themes.@carbon/themes.Theme,   g100 :@carbon/themes.@carbon/themes.Theme,   g90 :@carbon/themes.@carbon/themes.Theme,   white :@carbon/themes.@carbon/themes.Theme}} & @carbon/themes.@carbon/themes.Theme */
-  @js.native
-  trait ThemePackage extends StObject {
+  trait ThemePackage
+    extends StObject
+       with Theme {
     
-    var active01: String = js.native
+    var g10: Theme
     
-    var activeDanger: String = js.native
+    var g100: Theme
     
-    var activePrimary: String = js.native
+    var g90: Theme
     
-    var activeSecondary: String = js.native
+    var themes: G10
     
-    var activeTertiary: String = js.native
-    
-    var activeUI: String = js.native
-    
-    var brand01: String = js.native
-    
-    var brand02: String = js.native
-    
-    var brand03: String = js.native
-    
-    var disabled01: String = js.native
-    
-    var disabled02: String = js.native
-    
-    var disabled03: String = js.native
-    
-    var field01: String = js.native
-    
-    var field02: String = js.native
-    
-    var focus: String = js.native
-    
-    var g10: Theme = js.native
-    
-    var g100: Theme = js.native
-    
-    var g90: Theme = js.native
-    
-    var highlight: String = js.native
-    
-    var hoverDanger: String = js.native
-    
-    var hoverField: String = js.native
-    
-    var hoverPrimary: String = js.native
-    
-    var hoverPrimaryText: String = js.native
-    
-    var hoverRow: String = js.native
-    
-    var hoverSecondary: String = js.native
-    
-    var hoverSelectedUI: String = js.native
-    
-    var hoverTertiary: String = js.native
-    
-    var hoverUI: String = js.native
-    
-    var icon01: String = js.native
-    
-    var icon02: String = js.native
-    
-    var interactive01: String = js.native
-    
-    var interactive02: String = js.native
-    
-    var interactive03: String = js.native
-    
-    var inverse01: String = js.native
-    
-    var inverse02: String = js.native
-    
-    var overlay01: String = js.native
-    
-    var selectedUI: String = js.native
-    
-    var support01: String = js.native
-    
-    var support02: String = js.native
-    
-    var support03: String = js.native
-    
-    var support04: String = js.native
-    
-    var text01: String = js.native
-    
-    var text02: String = js.native
-    
-    var text03: String = js.native
-    
-    var text04: String = js.native
-    
-    var themes: G10 = js.native
-    
-    var ui01: String = js.native
-    
-    var ui02: String = js.native
-    
-    var ui03: String = js.native
-    
-    var ui04: String = js.native
-    
-    var ui05: String = js.native
-    
-    var uiBackground: String = js.native
-    
-    var visitedLink: String = js.native
-    
-    var white: Theme = js.native
+    var white: Theme
   }
   object ThemePackage {
     
@@ -504,51 +404,6 @@ object mod extends Shortcut {
     implicit class ThemePackageMutableBuilder[Self <: ThemePackage] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActive01(value: String): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActiveDanger(value: String): Self = StObject.set(x, "activeDanger", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActivePrimary(value: String): Self = StObject.set(x, "activePrimary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActiveSecondary(value: String): Self = StObject.set(x, "activeSecondary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActiveTertiary(value: String): Self = StObject.set(x, "activeTertiary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActiveUI(value: String): Self = StObject.set(x, "activeUI", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBrand01(value: String): Self = StObject.set(x, "brand01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBrand02(value: String): Self = StObject.set(x, "brand02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBrand03(value: String): Self = StObject.set(x, "brand03", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisabled01(value: String): Self = StObject.set(x, "disabled01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisabled02(value: String): Self = StObject.set(x, "disabled02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDisabled03(value: String): Self = StObject.set(x, "disabled03", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setField01(value: String): Self = StObject.set(x, "field01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setField02(value: String): Self = StObject.set(x, "field02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setG10(value: Theme): Self = StObject.set(x, "g10", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -558,109 +413,7 @@ object mod extends Shortcut {
       def setG90(value: Theme): Self = StObject.set(x, "g90", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverDanger(value: String): Self = StObject.set(x, "hoverDanger", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverField(value: String): Self = StObject.set(x, "hoverField", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverPrimary(value: String): Self = StObject.set(x, "hoverPrimary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverPrimaryText(value: String): Self = StObject.set(x, "hoverPrimaryText", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverRow(value: String): Self = StObject.set(x, "hoverRow", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverSecondary(value: String): Self = StObject.set(x, "hoverSecondary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverSelectedUI(value: String): Self = StObject.set(x, "hoverSelectedUI", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverTertiary(value: String): Self = StObject.set(x, "hoverTertiary", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHoverUI(value: String): Self = StObject.set(x, "hoverUI", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIcon01(value: String): Self = StObject.set(x, "icon01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIcon02(value: String): Self = StObject.set(x, "icon02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInteractive01(value: String): Self = StObject.set(x, "interactive01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInteractive02(value: String): Self = StObject.set(x, "interactive02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInteractive03(value: String): Self = StObject.set(x, "interactive03", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInverse01(value: String): Self = StObject.set(x, "inverse01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInverse02(value: String): Self = StObject.set(x, "inverse02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOverlay01(value: String): Self = StObject.set(x, "overlay01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSelectedUI(value: String): Self = StObject.set(x, "selectedUI", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSupport01(value: String): Self = StObject.set(x, "support01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSupport02(value: String): Self = StObject.set(x, "support02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSupport03(value: String): Self = StObject.set(x, "support03", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSupport04(value: String): Self = StObject.set(x, "support04", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setText01(value: String): Self = StObject.set(x, "text01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setText02(value: String): Self = StObject.set(x, "text02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setText03(value: String): Self = StObject.set(x, "text03", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setText04(value: String): Self = StObject.set(x, "text04", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setThemes(value: G10): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUi01(value: String): Self = StObject.set(x, "ui01", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUi02(value: String): Self = StObject.set(x, "ui02", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUi03(value: String): Self = StObject.set(x, "ui03", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUi04(value: String): Self = StObject.set(x, "ui04", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUi05(value: String): Self = StObject.set(x, "ui05", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUiBackground(value: String): Self = StObject.set(x, "uiBackground", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVisitedLink(value: String): Self = StObject.set(x, "visitedLink", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWhite(value: Theme): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsplumb.jsplumbStrings.TopLeft
   - typings.jsplumb.jsplumbStrings.TopRight
 */
-trait AnchorStaticId extends _AnchorId
+trait AnchorStaticId
+  extends StObject
+     with _AnchorId
 object AnchorStaticId {
   
   @scala.inline

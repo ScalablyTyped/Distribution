@@ -2,71 +2,69 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobRequest extends StObject {
   
   /**
     * Allows you to create criteria to abort a job.
     */
-  var abortConfig: js.UndefOr[AbortConfig] = js.native
+  var abortConfig: js.UndefOr[AbortConfig] = js.undefined
   
   /**
     * A short text description of the job.
     */
-  var description: js.UndefOr[JobDescription] = js.native
+  var description: js.UndefOr[JobDescription] = js.undefined
   
   /**
     * The job document.  If the job document resides in an S3 bucket, you must use a placeholder link when specifying the document. The placeholder link is of the following form:  ${aws:iot:s3-presigned-url:https://s3.amazonaws.com/bucket/key}  where bucket is your bucket name and key is the object in the bucket to which you are linking. 
     */
-  var document: js.UndefOr[JobDocument] = js.native
+  var document: js.UndefOr[JobDocument] = js.undefined
   
   /**
     * An S3 link to the job document.
     */
-  var documentSource: js.UndefOr[JobDocumentSource] = js.native
+  var documentSource: js.UndefOr[JobDocumentSource] = js.undefined
   
   /**
     * Allows you to create a staged rollout of the job.
     */
-  var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.native
+  var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.undefined
   
   /**
     * A job identifier which must be unique for your AWS account. We recommend using a UUID. Alpha-numeric characters, "-" and "_" are valid for use here.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
-  var namespaceId: js.UndefOr[NamespaceId] = js.native
+  var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
   /**
     * Configuration information for pre-signed S3 URLs.
     */
-  var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.native
+  var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
   
   /**
     * Metadata which can be used to manage the job.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Specifies whether the job will continue to run (CONTINUOUS), or will be complete after all those things specified as targets have completed the job (SNAPSHOT). If continuous, the job may also be run on a thing when a change is detected in a target. For example, a job will run on a thing when the thing is added to a target group, even after the job was completed by all things originally in the group.
     */
-  var targetSelection: js.UndefOr[TargetSelection] = js.native
+  var targetSelection: js.UndefOr[TargetSelection] = js.undefined
   
   /**
     * A list of things and thing groups to which the job should be sent.
     */
-  var targets: JobTargets = js.native
+  var targets: JobTargets
   
   /**
     * Specifies the amount of time each device has to finish its execution of the job. The timer is started when the job execution status is set to IN_PROGRESS. If the job execution status is not set to another terminal state before the time expires, it will be automatically set to TIMED_OUT.
     */
-  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.native
+  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
 }
 object CreateJobRequest {
   

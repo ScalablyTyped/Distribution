@@ -14,38 +14,36 @@ import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import typings.mangopay2NodejsSdk.typesMod.ValueOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object payIn {
   
-  @js.native
   trait BankAccountData extends StObject {
     
     /**
       * The BIC of the bank account
       */
-    var BIC: String = js.native
+    var BIC: String
     
     /**
       * The IBAN of the bank account
       */
-    var IBAN: String = js.native
+    var IBAN: String
     
     /**
       * The address of the owner of the bank account
       */
-    var OwnerAddress: String = js.native
+    var OwnerAddress: String
     
     /**
       * The name of the owner of the bank account
       */
-    var OwnerName: String = js.native
+    var OwnerName: String
     
     /**
       * The type of bank account
       */
-    var Type: ValueOf[IBankAccountType] = js.native
+    var Type: ValueOf[IBankAccountType]
   }
   object BankAccountData {
     
@@ -81,36 +79,36 @@ object payIn {
     }
   }
   
-  @js.native
   trait BankWireDirectPayInData
-    extends BasePayInData
+    extends StObject
+       with BasePayInData
        with PayInData {
     
     /**
       * Bank account details
       */
-    var BankAccount: BankAccountData = js.native
+    var BankAccount: BankAccountData
     
     /**
       * The declared debited funds
       */
-    var DeclaredDebitedFunds: MoneyData = js.native
+    var DeclaredDebitedFunds: MoneyData
     
     /**
       * The declared fees
       */
-    var DeclaredFees: MoneyData = js.native
+    var DeclaredFees: MoneyData
     
     @JSName("ExecutionType")
-    var ExecutionType_BankWireDirectPayInData: DIRECT = js.native
+    var ExecutionType_BankWireDirectPayInData: DIRECT
     
     @JSName("PaymentType")
-    var PaymentType_BankWireDirectPayInData: BANK_WIRE = js.native
+    var PaymentType_BankWireDirectPayInData: BANK_WIRE
     
     /**
       * Wire reference
       */
-    var WireReference: String = js.native
+    var WireReference: String
   }
   object BankWireDirectPayInData {
     
@@ -127,11 +125,9 @@ object payIn {
       DeclaredDebitedFunds: MoneyData,
       DeclaredFees: MoneyData,
       ExecutionDate: Timestamp,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: BANK_WIRE,
       ResultCode: String,
       ResultMessage: String,
       Status: TransactionStatus,
@@ -139,7 +135,7 @@ object payIn {
       Type: TransactionType,
       WireReference: String
     ): BankWireDirectPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], BankAccount = BankAccount.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], DeclaredDebitedFunds = DeclaredDebitedFunds.asInstanceOf[js.Any], DeclaredFees = DeclaredFees.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], WireReference = WireReference.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], BankAccount = BankAccount.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], DeclaredDebitedFunds = DeclaredDebitedFunds.asInstanceOf[js.Any], DeclaredFees = DeclaredFees.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "BANK_WIRE", ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], WireReference = WireReference.asInstanceOf[js.Any])
       __obj.asInstanceOf[BankWireDirectPayInData]
     }
     
@@ -166,83 +162,84 @@ object payIn {
     }
   }
   
-  @js.native
-  trait BasePayInData extends EntityBaseData {
+  trait BasePayInData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * Details about the funds that are being credited (DebitedFunds – Fees = CreditedFunds)
       */
-    var CreditedFunds: MoneyData = js.native
+    var CreditedFunds: MoneyData
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: String = js.native
+    var CreditedUserId: String
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
     /**
       * The ID of the wallet that was debited
       */
-    var DebitedWalletId: String = js.native
+    var DebitedWalletId: String
     
     /**
       * When the transaction happened
       */
-    var ExecutionDate: Timestamp = js.native
+    var ExecutionDate: Timestamp
     
     /**
       * The type of execution for the payin
       */
-    var ExecutionType: PayInExecutionType = js.native
+    var ExecutionType: PayInExecutionType
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
     /**
       * The nature of the transaction
       */
-    var Nature: TransactionNature = js.native
+    var Nature: TransactionNature
     
     /**
       * The type of payin
       */
-    var PaymentType: PayInPaymentType = js.native
+    var PaymentType: PayInPaymentType
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The status of the transaction
       */
-    var Status: TransactionStatus = js.native
+    var Status: TransactionStatus
     
     /**
       * The type of the transaction
       */
-    var Type: TransactionType = js.native
+    var Type: TransactionType
   }
   object BasePayInData {
     
@@ -321,58 +318,58 @@ object payIn {
     }
   }
   
-  @js.native
   trait CardDirectPayInData
-    extends BasePayInData
+    extends StObject
+       with BasePayInData
        with PayInData {
     
     /**
       * Contains useful information related to the user billing
       */
-    var Billing: BillingData = js.native
+    var Billing: BillingData
     
     /**
       * The ID of a card
       */
-    var CardId: String = js.native
+    var CardId: String
     
     @JSName("ExecutionType")
-    var ExecutionType_CardDirectPayInData: DIRECT = js.native
+    var ExecutionType_CardDirectPayInData: DIRECT
     
     @JSName("PaymentType")
-    var PaymentType_CardDirectPayInData: CARD = js.native
+    var PaymentType_CardDirectPayInData: CARD
     
     /**
       * The SecureMode corresponds to '3D secure' for CB Visa and MasterCard. This field lets you activate it manually. The field lets you activate it
       * automatically with "DEFAULT" (Secured Mode will be activated from €50 or when MANGOPAY detects there is a higher risk ), "FORCE" (if you wish to specifically force the secured mode).
       */
-    var SecureMode: typings.mangopay2NodejsSdk.mod.SecureMode = js.native
+    var SecureMode: typings.mangopay2NodejsSdk.mod.SecureMode
     
     /**
       * The value is 'true' if the SecureMode was used
       */
-    var SecureModeNeeded: Boolean = js.native
+    var SecureModeNeeded: Boolean
     
     /**
       * This is the URL where to redirect users to proceed to 3D secure validation
       */
-    var SecureModeRedirectURL: String = js.native
+    var SecureModeRedirectURL: String
     
     /**
       * This is the URL where users are automatically redirected after 3D secure validation (if activated)
       */
-    var SecureModeReturnURL: String = js.native
+    var SecureModeReturnURL: String
     
     /**
       * Contains information related to security and fraud
       */
-    var SecurityInfo: SecurityInfoData = js.native
+    var SecurityInfo: SecurityInfoData
     
     /**
       * A custom description to appear on the user's bank statement. It can be up to 10 characters long, and can only include alphanumeric
       * characters or spaces. See here for important info. Note that each bank handles this information differently, some show less or no information.
       */
-    var StatementDescriptor: String = js.native
+    var StatementDescriptor: String
   }
   object CardDirectPayInData {
     
@@ -388,11 +385,9 @@ object payIn {
       DebitedFunds: MoneyData,
       DebitedWalletId: String,
       ExecutionDate: Timestamp,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: CARD,
       ResultCode: String,
       ResultMessage: String,
       SecureMode: SecureMode,
@@ -405,7 +400,7 @@ object payIn {
       Tag: String,
       Type: TransactionType
     ): CardDirectPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], Billing = Billing.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], SecureModeNeeded = SecureModeNeeded.asInstanceOf[js.Any], SecureModeRedirectURL = SecureModeRedirectURL.asInstanceOf[js.Any], SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any], SecurityInfo = SecurityInfo.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], Billing = Billing.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "CARD", ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], SecureModeNeeded = SecureModeNeeded.asInstanceOf[js.Any], SecureModeRedirectURL = SecureModeRedirectURL.asInstanceOf[js.Any], SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any], SecurityInfo = SecurityInfo.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardDirectPayInData]
     }
     
@@ -444,18 +439,18 @@ object payIn {
     }
   }
   
-  @js.native
   trait CardPreAuthorizedPayInData
-    extends BasePayInData
+    extends StObject
+       with BasePayInData
        with PayInData {
     
     @JSName("ExecutionType")
-    var ExecutionType_CardPreAuthorizedPayInData: DIRECT = js.native
+    var ExecutionType_CardPreAuthorizedPayInData: DIRECT
     
     @JSName("PaymentType")
-    var PaymentType_CardPreAuthorizedPayInData: PREAUTHORIZED = js.native
+    var PaymentType_CardPreAuthorizedPayInData: PREAUTHORIZED
     
-    var PreauthorizationId: String = js.native
+    var PreauthorizationId: String
   }
   object CardPreAuthorizedPayInData {
     
@@ -469,11 +464,9 @@ object payIn {
       DebitedFunds: MoneyData,
       DebitedWalletId: String,
       ExecutionDate: Timestamp,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: PREAUTHORIZED,
       PreauthorizationId: String,
       ResultCode: String,
       ResultMessage: String,
@@ -481,7 +474,7 @@ object payIn {
       Tag: String,
       Type: TransactionType
     ): CardPreAuthorizedPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], PreauthorizationId = PreauthorizationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "PREAUTHORIZED", PreauthorizationId = PreauthorizationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardPreAuthorizedPayInData]
     }
     
@@ -499,53 +492,53 @@ object payIn {
     }
   }
   
-  @js.native
   trait CardWebPayInData
-    extends BasePayInData
+    extends StObject
+       with BasePayInData
        with PayInData {
     
     /**
       * The type of card
       */
-    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType = js.native
+    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType
     
     /**
       * The language to use for the payment page - needs to be the ISO code of the language
       */
-    var Culture: CountryISO = js.native
+    var Culture: CountryISO
     
     @JSName("ExecutionType")
-    var ExecutionType_CardWebPayInData: WEB = js.native
+    var ExecutionType_CardWebPayInData: WEB
     
     @JSName("PaymentType")
-    var PaymentType_CardWebPayInData: CARD = js.native
+    var PaymentType_CardWebPayInData: CARD
     
     /**
       * The URL to redirect to user to for them to proceed with the payment
       */
-    var RedirectURL: String = js.native
+    var RedirectURL: String
     
     /**
       * The URL to redirect to after payment (whether successful or not)
       */
-    var ReturnURL: String = js.native
+    var ReturnURL: String
     
     /**
       * The SecureMode corresponds to '3D secure' for CB Visa and MasterCard. This field lets you activate it manually. The field lets you activate it
       * automatically with "DEFAULT" (Secured Mode will be activated from €50 or when MANGOPAY detects there is a higher risk ), "FORCE" (if you wish to specifically force the secured mode).
       */
-    var SecureMode: typings.mangopay2NodejsSdk.mod.SecureMode = js.native
+    var SecureMode: typings.mangopay2NodejsSdk.mod.SecureMode
     
     /**
       * A custom description to appear on the user's bank statement. It can be up to 10 characters long, and can only include alphanumeric characters or spaces.
       * See here for important info. Note that each bank handles this information differently, some show less or no information.
       */
-    var StatementDescriptor: String = js.native
+    var StatementDescriptor: String
     
     /**
       * The URL to use for the payment page template
       */
-    var TemplateURL: String = js.native
+    var TemplateURL: String
   }
   object CardWebPayInData {
     
@@ -561,11 +554,9 @@ object payIn {
       DebitedFunds: MoneyData,
       DebitedWalletId: String,
       ExecutionDate: Timestamp,
-      ExecutionType: WEB,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: CARD,
       RedirectURL: String,
       ResultCode: String,
       ResultMessage: String,
@@ -577,7 +568,7 @@ object payIn {
       TemplateURL: String,
       Type: TransactionType
     ): CardWebPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardType = CardType.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], Culture = Culture.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], RedirectURL = RedirectURL.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], ReturnURL = ReturnURL.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TemplateURL = TemplateURL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardType = CardType.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], Culture = Culture.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "WEB", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "CARD", RedirectURL = RedirectURL.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], ReturnURL = ReturnURL.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TemplateURL = TemplateURL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[CardWebPayInData]
     }
     
@@ -614,24 +605,23 @@ object payIn {
   }
   
   /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.PickPartialRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.payIn.BankWireDirectPayInData, 'Tag', 'AuthorId' | 'CreditedUserId' | 'CreditedWalletId' | 'DeclaredDebitedFunds' | 'DeclaredFees'> */
-  @js.native
   trait CreateBankWireDirectPayIn extends StObject {
     
-    var AuthorId: String = js.native
+    var AuthorId: String
     
-    var CreditedUserId: String = js.native
+    var CreditedUserId: String
     
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
-    var DeclaredDebitedFunds: MoneyData = js.native
+    var DeclaredDebitedFunds: MoneyData
     
-    var DeclaredFees: MoneyData = js.native
+    var DeclaredFees: MoneyData
     
-    var ExecutionType: DIRECT = js.native
+    var ExecutionType: DIRECT
     
-    var PaymentType: BANK_WIRE = js.native
+    var PaymentType: BANK_WIRE
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateBankWireDirectPayIn {
     
@@ -641,11 +631,9 @@ object payIn {
       CreditedUserId: String,
       CreditedWalletId: String,
       DeclaredDebitedFunds: MoneyData,
-      DeclaredFees: MoneyData,
-      ExecutionType: DIRECT,
-      PaymentType: BANK_WIRE
+      DeclaredFees: MoneyData
     ): CreateBankWireDirectPayIn = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DeclaredDebitedFunds = DeclaredDebitedFunds.asInstanceOf[js.Any], DeclaredFees = DeclaredFees.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DeclaredDebitedFunds = DeclaredDebitedFunds.asInstanceOf[js.Any], DeclaredFees = DeclaredFees.asInstanceOf[js.Any], ExecutionType = "DIRECT", PaymentType = "BANK_WIRE")
       __obj.asInstanceOf[CreateBankWireDirectPayIn]
     }
     
@@ -681,64 +669,63 @@ object payIn {
     }
   }
   
-  @js.native
   trait CreateCardDirectPayIn extends StObject {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * Contains useful information related to the user billing
       */
-    var Billing: js.UndefOr[BillingData] = js.native
+    var Billing: js.UndefOr[BillingData] = js.undefined
     
     /**
       * The ID of a card
       */
-    var CardId: String = js.native
+    var CardId: String
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: js.UndefOr[String] = js.native
+    var CreditedUserId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
-    var ExecutionType: DIRECT = js.native
+    var ExecutionType: DIRECT
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
-    var PaymentType: CARD = js.native
+    var PaymentType: CARD
     
     /**
       * The SecureMode corresponds to '3D secure' for CB Visa and MasterCard. This field lets you activate it manually. The field lets you activate it automatically
       *  with "DEFAULT" (Secured Mode will be activated from €50 or when MANGOPAY detects there is a higher risk ), "FORCE" (if you wish to specifically force the secured mode).
       */
-    var SecureMode: js.UndefOr[typings.mangopay2NodejsSdk.mod.SecureMode] = js.native
+    var SecureMode: js.UndefOr[typings.mangopay2NodejsSdk.mod.SecureMode] = js.undefined
     
     /**
       * This is the URL where users are automatically redirected after 3D secure validation (if activated)
       */
-    var SecureModeReturnURL: String = js.native
+    var SecureModeReturnURL: String
     
     /**
       * A custom description to appear on the user's bank statement. It can be up to 10 characters long, and can only include alphanumeric characters or spaces.
       * See here for important info. Note that each bank handles this information differently, some show less or no information.
       */
-    var StatementDescriptor: js.UndefOr[String] = js.native
+    var StatementDescriptor: js.UndefOr[String] = js.undefined
   }
   object CreateCardDirectPayIn {
     
@@ -748,12 +735,10 @@ object payIn {
       CardId: String,
       CreditedWalletId: String,
       DebitedFunds: MoneyData,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
-      PaymentType: CARD,
       SecureModeReturnURL: String
     ): CreateCardDirectPayIn = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], PaymentType = "CARD", SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateCardDirectPayIn]
     }
     
@@ -810,47 +795,46 @@ object payIn {
     }
   }
   
-  @js.native
   trait CreateCardPreAuthorizedPayIn extends StObject {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: js.UndefOr[String] = js.native
+    var CreditedUserId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
-    var ExecutionType: DIRECT = js.native
+    var ExecutionType: DIRECT
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
-    var PaymentType: PREAUTHORIZED = js.native
+    var PaymentType: PREAUTHORIZED
     
     /**
       * The ID of the Preauthorization object
       */
-    var PreauthorizationId: String = js.native
+    var PreauthorizationId: String
     
     /**
       * Custom data that you can add to this item
       */
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateCardPreAuthorizedPayIn {
     
@@ -859,12 +843,10 @@ object payIn {
       AuthorId: String,
       CreditedWalletId: String,
       DebitedFunds: MoneyData,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
-      PaymentType: PREAUTHORIZED,
       PreauthorizationId: String
     ): CreateCardPreAuthorizedPayIn = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], PreauthorizationId = PreauthorizationId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], PaymentType = "PREAUTHORIZED", PreauthorizationId = PreauthorizationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateCardPreAuthorizedPayIn]
     }
     
@@ -906,71 +888,70 @@ object payIn {
     }
   }
   
-  @js.native
   trait CreateCardWebPayIn extends StObject {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * The type of card
       */
-    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType = js.native
+    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: js.UndefOr[String] = js.native
+    var CreditedUserId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * The language to use for the payment page - needs to be the ISO code of the language
       */
-    var Culture: CountryISO = js.native
+    var Culture: CountryISO
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
-    var ExecutionType: WEB = js.native
+    var ExecutionType: WEB
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
-    var PaymentType: CARD = js.native
+    var PaymentType: CARD
     
     /**
       * The URL to redirect to after payment (whether successful or not)
       */
-    var ReturnURL: String = js.native
+    var ReturnURL: String
     
     /**
       * The SecureMode corresponds to '3D secure' for CB Visa and MasterCard. This field lets you activate it manually.
       * The field lets you activate it automatically with "DEFAULT" (Secured Mode will be activated from €50 or when MANGOPAY detects
       * there is a higher risk ), "FORCE" (if you wish to specifically force the secured mode).
       */
-    var SecureMode: js.UndefOr[typings.mangopay2NodejsSdk.mod.SecureMode] = js.native
+    var SecureMode: js.UndefOr[typings.mangopay2NodejsSdk.mod.SecureMode] = js.undefined
     
     /**
       * A custom description to appear on the user's bank statement. It can be up to 10 characters long, and
       * can only include alphanumeric characters or spaces. See here for important info. Note that each bank handles this information differently, some show less or no information.
       */
-    var StatementDescriptor: js.UndefOr[String] = js.native
+    var StatementDescriptor: js.UndefOr[String] = js.undefined
     
     /**
       * A URL to an SSL page to allow you to customise the payment page. Must be in the format: array("PAYLINE"=>"https://...") and meet all the
       * specifications listed here. Note that only a template for Payline is currently available
       */
-    var TemplateURLOptions: js.UndefOr[typings.mangopay2NodejsSdk.mod.payIn.TemplateURLOptions] = js.native
+    var TemplateURLOptions: js.UndefOr[typings.mangopay2NodejsSdk.mod.payIn.TemplateURLOptions] = js.undefined
   }
   object CreateCardWebPayIn {
     
@@ -981,12 +962,10 @@ object payIn {
       CreditedWalletId: String,
       Culture: CountryISO,
       DebitedFunds: MoneyData,
-      ExecutionType: WEB,
       Fees: MoneyData,
-      PaymentType: CARD,
       ReturnURL: String
     ): CreateCardWebPayIn = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardType = CardType.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], Culture = Culture.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], ReturnURL = ReturnURL.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardType = CardType.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], Culture = Culture.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], ExecutionType = "WEB", Fees = Fees.asInstanceOf[js.Any], PaymentType = "CARD", ReturnURL = ReturnURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateCardWebPayIn]
     }
     
@@ -1068,11 +1047,9 @@ object payIn {
       DeclaredDebitedFunds: MoneyData,
       DeclaredFees: MoneyData,
       ExecutionDate: Timestamp,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: BANK_WIRE,
       ResultCode: String,
       ResultMessage: String,
       Status: TransactionStatus,
@@ -1080,7 +1057,7 @@ object payIn {
       Type: TransactionType,
       WireReference: String
     ): typings.mangopay2NodejsSdk.mod.payIn.BankWireDirectPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], BankAccount = BankAccount.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], DeclaredDebitedFunds = DeclaredDebitedFunds.asInstanceOf[js.Any], DeclaredFees = DeclaredFees.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], WireReference = WireReference.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], BankAccount = BankAccount.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], DeclaredDebitedFunds = DeclaredDebitedFunds.asInstanceOf[js.Any], DeclaredFees = DeclaredFees.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "BANK_WIRE", ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], WireReference = WireReference.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.payIn.BankWireDirectPayInData]
     }
     
@@ -1096,11 +1073,9 @@ object payIn {
       DebitedFunds: MoneyData,
       DebitedWalletId: String,
       ExecutionDate: Timestamp,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: CARD,
       ResultCode: String,
       ResultMessage: String,
       SecureMode: SecureMode,
@@ -1113,7 +1088,7 @@ object payIn {
       Tag: String,
       Type: TransactionType
     ): typings.mangopay2NodejsSdk.mod.payIn.CardDirectPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], Billing = Billing.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], SecureModeNeeded = SecureModeNeeded.asInstanceOf[js.Any], SecureModeRedirectURL = SecureModeRedirectURL.asInstanceOf[js.Any], SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any], SecurityInfo = SecurityInfo.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], Billing = Billing.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "CARD", ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], SecureModeNeeded = SecureModeNeeded.asInstanceOf[js.Any], SecureModeRedirectURL = SecureModeRedirectURL.asInstanceOf[js.Any], SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any], SecurityInfo = SecurityInfo.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.payIn.CardDirectPayInData]
     }
     
@@ -1127,11 +1102,9 @@ object payIn {
       DebitedFunds: MoneyData,
       DebitedWalletId: String,
       ExecutionDate: Timestamp,
-      ExecutionType: DIRECT,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: PREAUTHORIZED,
       PreauthorizationId: String,
       ResultCode: String,
       ResultMessage: String,
@@ -1139,7 +1112,7 @@ object payIn {
       Tag: String,
       Type: TransactionType
     ): typings.mangopay2NodejsSdk.mod.payIn.CardPreAuthorizedPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], PreauthorizationId = PreauthorizationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "DIRECT", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "PREAUTHORIZED", PreauthorizationId = PreauthorizationId.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.payIn.CardPreAuthorizedPayInData]
     }
     
@@ -1155,11 +1128,9 @@ object payIn {
       DebitedFunds: MoneyData,
       DebitedWalletId: String,
       ExecutionDate: Timestamp,
-      ExecutionType: WEB,
       Fees: MoneyData,
       Id: String,
       Nature: TransactionNature,
-      PaymentType: CARD,
       RedirectURL: String,
       ResultCode: String,
       ResultMessage: String,
@@ -1171,7 +1142,7 @@ object payIn {
       TemplateURL: String,
       Type: TransactionType
     ): typings.mangopay2NodejsSdk.mod.payIn.CardWebPayInData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardType = CardType.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], Culture = Culture.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = ExecutionType.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = PaymentType.asInstanceOf[js.Any], RedirectURL = RedirectURL.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], ReturnURL = ReturnURL.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TemplateURL = TemplateURL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardType = CardType.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], Culture = Culture.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], ExecutionType = "WEB", Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], PaymentType = "CARD", RedirectURL = RedirectURL.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], ReturnURL = ReturnURL.asInstanceOf[js.Any], SecureMode = SecureMode.asInstanceOf[js.Any], StatementDescriptor = StatementDescriptor.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TemplateURL = TemplateURL.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mangopay2NodejsSdk.mod.payIn.CardWebPayInData]
     }
   }
@@ -1222,10 +1193,9 @@ object payIn {
     def PREAUTHORIZED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED = "PREAUTHORIZED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZED]
   }
   
-  @js.native
   trait TemplateURLOptions extends StObject {
     
-    var Payline: String = js.native
+    var Payline: String
   }
   object TemplateURLOptions {
     

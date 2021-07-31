@@ -10,23 +10,24 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createSliderWithTooltipMod {
   
-  @JSImport("rc-slider/lib/createSliderWithTooltip", JSImport.Default)
+  @JSImport("rc-slider/lib/createSliderWithTooltip", JSImport.Namespace)
   @js.native
-  def default[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[Props]]
+  
   trait ComponentWrapperProps extends StObject {
     
-    var getTooltipContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getTooltipContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var tipFormatter: js.UndefOr[js.Function1[/* value */ Double, ReactNode]] = js.native
+    var tipFormatter: js.UndefOr[js.Function1[/* value */ Double, ReactNode]] = js.undefined
     
-    var tipProps: js.UndefOr[Overlay] = js.native
+    var tipProps: js.UndefOr[Overlay] = js.undefined
   }
   object ComponentWrapperProps {
     
@@ -59,10 +60,9 @@ object createSliderWithTooltipMod {
     }
   }
   
-  @js.native
   trait ComponentWrapperState extends StObject {
     
-    var visibles: Record[Double, Boolean] = js.native
+    var visibles: Record[Double, Boolean]
   }
   object ComponentWrapperState {
     

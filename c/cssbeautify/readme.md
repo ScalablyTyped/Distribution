@@ -11,8 +11,8 @@ Reindent and reformat CSS.
 | Full name          | cssbeautify |
 | Keywords           | cssbeautify, css, formatter |
 | # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 1714278 |
+| # dependents       | 62 |
+| # downloads        | 1764055 |
 | # stars            | 6 |
 
 ## Links

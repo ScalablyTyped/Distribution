@@ -24,17 +24,15 @@ import typings.std.HTMLInputElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioMod {
   
-  @js.native
   trait ALIGN extends StObject {
     
-    var horizontal: typings.baseui.baseuiStrings.horizontal = js.native
+    var horizontal: typings.baseui.baseuiStrings.horizontal
     
-    var vertical: typings.baseui.baseuiStrings.vertical = js.native
+    var vertical: typings.baseui.baseuiStrings.vertical
   }
   object ALIGN {
     
@@ -89,10 +87,9 @@ object radioMod {
     def this(props: RadioGroupProps, context: js.Any) = this()
   }
   
-  @js.native
   trait STATE_TYPE extends StObject {
     
-    var change: CHANGE = js.native
+    var change: CHANGE
   }
   object STATE_TYPE {
     
@@ -156,12 +153,11 @@ object radioMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait RadioGroupOverrides extends StObject {
     
     var RadioGroupRoot: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object RadioGroupOverrides {
     
@@ -184,48 +180,47 @@ object radioMod {
     }
   }
   
-  @js.native
   trait RadioGroupProps extends StObject {
     
-    var align: js.UndefOr[horizontal | vertical] = js.native
+    var align: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var isError: js.UndefOr[Boolean] = js.native
+    var isError: js.UndefOr[Boolean] = js.undefined
     
-    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.native
+    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.native
+    var overrides: js.UndefOr[RadioOverrides & RadioGroupOverrides] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object RadioGroupProps {
     
@@ -341,7 +336,7 @@ object radioMod {
       def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
       @scala.inline
-      def setOverrides(value: RadioOverrides with RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      def setOverrides(value: RadioOverrides & RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
@@ -360,32 +355,31 @@ object radioMod {
     }
   }
   
-  @js.native
   trait RadioOverrides extends StObject {
     
     var Description: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Input: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Label: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var RadioMarkInner: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var RadioMarkOuter: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object RadioOverrides {
     
@@ -448,54 +442,53 @@ object radioMod {
     }
   }
   
-  @js.native
   trait RadioProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
-    var isError: js.UndefOr[Boolean] = js.native
+    var isError: js.UndefOr[Boolean] = js.undefined
     
-    var isFocusVisible: js.UndefOr[Boolean] = js.native
+    var isFocusVisible: js.UndefOr[Boolean] = js.undefined
     
-    var isFocused: js.UndefOr[Boolean] = js.native
+    var isFocused: js.UndefOr[Boolean] = js.undefined
     
-    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.native
+    var labelPlacement: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.native
+    var overrides: js.UndefOr[RadioOverrides & RadioGroupOverrides] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[String] = js.native
+    var tabIndex: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object RadioProps {
     
@@ -629,7 +622,7 @@ object radioMod {
       def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
       @scala.inline
-      def setOverrides(value: RadioOverrides with RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      def setOverrides(value: RadioOverrides & RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
@@ -654,12 +647,11 @@ object radioMod {
     }
   }
   
-  @js.native
   trait RadioState extends StObject {
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var isHovered: Boolean = js.native
+    var isHovered: Boolean
   }
   object RadioState {
     
@@ -680,10 +672,9 @@ object radioMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object State {
     
@@ -712,20 +703,19 @@ object radioMod {
     State
   ]
   
-  @js.native
   trait StatefulContainerProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.native
+    var overrides: js.UndefOr[RadioOverrides & RadioGroupOverrides] = js.undefined
     
-    var stateReducer: StateReducer = js.native
+    var stateReducer: StateReducer
   }
   object StatefulContainerProps {
     
@@ -765,7 +755,7 @@ object radioMod {
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOverrides(value: RadioOverrides with RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      def setOverrides(value: RadioOverrides & RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
@@ -777,22 +767,21 @@ object radioMod {
     }
   }
   
-  @js.native
   trait StatefulRadioGroupProps extends StObject {
     
-    var align: js.UndefOr[horizontal | vertical] = js.native
+    var align: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.native
+    var overrides: js.UndefOr[RadioOverrides & RadioGroupOverrides] = js.undefined
   }
   object StatefulRadioGroupProps {
     
@@ -842,7 +831,7 @@ object radioMod {
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOverrides(value: RadioOverrides with RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      def setOverrides(value: RadioOverrides & RadioGroupOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)

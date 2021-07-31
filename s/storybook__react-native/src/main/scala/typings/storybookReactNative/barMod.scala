@@ -3,7 +3,6 @@ package typings.storybookReactNative
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object barMod {
@@ -16,12 +15,11 @@ object barMod {
   trait Bar
     extends PureComponent[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    def onPress(id: Double): Unit = js.native
+    def onPress(id: Double): Unit
   }
   object Props {
     

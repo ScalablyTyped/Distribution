@@ -8,7 +8,6 @@ import typings.mobservable.interfacesMod.IObjectChange
 import typings.mobservable.interfacesMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observableobjectMod {
@@ -26,7 +25,7 @@ object observableobjectMod {
     
     var mode: js.Any = js.native
     
-    def observe(callback: js.Function1[/* changes */ IObjectChange[_, _], Unit]): Lambda = js.native
+    def observe(callback: js.Function1[/* changes */ IObjectChange[js.Any, js.Any], Unit]): Lambda = js.native
     
     def set(propName: js.Any, value: js.Any): Unit = js.native
     
@@ -37,8 +36,11 @@ object observableobjectMod {
   /* static members */
   object ObservableObject {
     
-    @JSImport("mobservable/lib/observableobject", "ObservableObject.asReactive")
+    @JSImport("mobservable/lib/observableobject", "ObservableObject")
     @js.native
-    def asReactive(target: js.Any, context: IContextInfoStruct, mode: ValueMode): ObservableObject = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def asReactive(target: js.Any, context: IContextInfoStruct, mode: ValueMode): ObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("asReactive")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[ObservableObject]
   }
 }

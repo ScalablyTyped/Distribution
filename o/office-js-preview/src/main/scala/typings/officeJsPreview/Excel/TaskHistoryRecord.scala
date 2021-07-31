@@ -19,7 +19,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait TaskHistoryRecord extends ClientObject {
+trait TaskHistoryRecord
+  extends StObject
+     with ClientObject {
   
   /**
     *

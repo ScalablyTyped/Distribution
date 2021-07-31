@@ -2,17 +2,15 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Published extends StObject {
   
-  var additions: js.Array[DraggableDimension] = js.native
+  var additions: js.Array[DraggableDimension]
   
-  var modified: js.Array[DroppablePublish] = js.native
+  var modified: js.Array[DroppablePublish]
   
-  var removals: js.Array[DraggableId] = js.native
+  var removals: js.Array[DraggableId]
 }
 object Published {
   

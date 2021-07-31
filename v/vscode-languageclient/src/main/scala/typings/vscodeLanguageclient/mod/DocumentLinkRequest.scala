@@ -6,7 +6,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.DocumentLinkParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentLinkRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DocumentLinkRequest {

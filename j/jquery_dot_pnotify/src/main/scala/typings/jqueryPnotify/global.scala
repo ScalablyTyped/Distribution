@@ -2,7 +2,6 @@ package typings.jqueryPnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("PNotify")
   @js.native
   class PNotify ()
-    extends typings.jqueryPnotify.PNotify {
+    extends StObject
+       with typings.jqueryPnotify.PNotify {
     def this(options: PNotifyOptions) = this()
   }
   @JSGlobal("PNotify")

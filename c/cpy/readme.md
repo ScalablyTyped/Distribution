@@ -10,9 +10,9 @@ Copy files
 | ------------------ | :-------------: |
 | Full name          | cpy |
 | Keywords           | copy, cp, cpy, file, files, clone, fs, stream, glob, file-system, ncp, fast, quick, data, content, contents, cpx, directory, directories |
-| # releases         | 6 |
-| # dependents       | 161 |
-| # downloads        | 8117708 |
+| # releases         | 8 |
+| # dependents       | 187 |
+| # downloads        | 17064212 |
 | # stars            | 11 |
 
 ## Links

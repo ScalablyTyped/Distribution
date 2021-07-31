@@ -4,25 +4,23 @@ import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `toneChat` operation. */
-@js.native
 trait ToneChatParams extends StObject {
   
   /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can use different languages for **Content-Language** and **Accept-Language**. */
-  var accept_language: js.UndefOr[AcceptLanguage | String] = js.native
+  var accept_language: js.UndefOr[AcceptLanguage | String] = js.undefined
   
   /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
-  var content_language: js.UndefOr[ContentLanguage | String] = js.native
+  var content_language: js.UndefOr[ContentLanguage | String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** An array of `Utterance` objects that provides the input content that the service is to analyze. */
-  var utterances: js.Array[Utterance] = js.native
+  var utterances: js.Array[Utterance]
 }
 object ToneChatParams {
   

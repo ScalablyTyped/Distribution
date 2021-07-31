@@ -8,10 +8,13 @@ import typings.react.mod.ReactNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcUtilsMod {
+  
+  @JSImport("react-intl/src/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Pick<react-intl.react-intl/src/types.IntlConfig, 'formats' | 'messages' | 'timeZone' | 'textComponent' | 'defaultLocale' | 'defaultFormats' | 'onError'> */
   object DEFAULT_INTL_CONFIG {
@@ -69,16 +72,13 @@ object srcUtilsMod {
     def timeZone_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeZone")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-intl/src/utils", "assignUniqueKeysToParts")
-  @js.native
+  @scala.inline
   def assignUniqueKeysToParts(
     formatXMLElementFn: FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])]
-  ): FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])] = js.native
+  ): FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])] = ^.asInstanceOf[js.Dynamic].applyDynamic("assignUniqueKeysToParts")(formatXMLElementFn.asInstanceOf[js.Any]).asInstanceOf[FormatXMLElementFn[ReactNode, String | ReactNode | (js.Array[String | ReactNode])]]
   
-  @JSImport("react-intl/src/utils", "invariantIntlContext")
-  @js.native
-  def invariantIntlContext(): /* asserts intl */ Boolean = js.native
-  @JSImport("react-intl/src/utils", "invariantIntlContext")
-  @js.native
-  def invariantIntlContext(intl: js.Any): /* asserts intl */ Boolean = js.native
+  @scala.inline
+  def invariantIntlContext(): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")().asInstanceOf[/* asserts intl */ Boolean]
+  @scala.inline
+  def invariantIntlContext(intl: js.Any): /* asserts intl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariantIntlContext")(intl.asInstanceOf[js.Any]).asInstanceOf[/* asserts intl */ Boolean]
 }

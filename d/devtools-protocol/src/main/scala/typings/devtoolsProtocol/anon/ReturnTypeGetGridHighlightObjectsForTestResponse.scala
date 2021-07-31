@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Overlay.GetGridHighlightObjectsForT
 import typings.devtoolsProtocol.mod.Protocol.Overlay.GetGridHighlightObjectsForTestResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetGridHighlightObjectsForTestResponse extends StObject {
   
-  var paramsType: js.Array[GetGridHighlightObjectsForTestRequest] = js.native
+  var paramsType: js.Array[GetGridHighlightObjectsForTestRequest]
   
-  var returnType: GetGridHighlightObjectsForTestResponse = js.native
+  var returnType: GetGridHighlightObjectsForTestResponse
 }
 object ReturnTypeGetGridHighlightObjectsForTestResponse {
   

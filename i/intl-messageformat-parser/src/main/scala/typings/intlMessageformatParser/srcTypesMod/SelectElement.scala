@@ -4,15 +4,14 @@ import typings.intlMessageformatParser.srcTypesMod.TYPE.select
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectElement
-  extends BaseElement[select]
+  extends StObject
+     with BaseElement[select]
      with _MessageFormatElement {
   
-  var options: Record[String, PluralOrSelectOption] = js.native
+  var options: Record[String, PluralOrSelectOption]
 }
 object SelectElement {
   

@@ -2,15 +2,13 @@ package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawType extends StObject {
   
-  var rawType: js.Symbol = js.native
+  var rawType: js.Symbol
   
-  var toPostgres: js.Symbol = js.native
+  var toPostgres: js.Symbol
 }
 object RawType {
   

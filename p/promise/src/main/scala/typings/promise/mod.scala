@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,7 +16,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("promise", JSImport.Namespace)
   @js.native
-  class Class[T] protected () extends ThenPromise[T] {
+  class Class[T] protected ()
+    extends StObject
+       with ThenPromise[T] {
     /**
       * Creates a new ThenPromise.
       * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -27,7 +28,7 @@ object mod extends Shortcut {
     def this(executor: js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[T | Thenable[T]], Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
-            _
+            js.Any
           ]) = this()
   }
   
@@ -52,10 +53,13 @@ object mod extends Shortcut {
       * @param onrejected The callback to execute when the ThenPromise is rejected.
       */
     def done(): Unit = js.native
-    def done(onfulfilled: js.UndefOr[scala.Nothing], onrejected: js.Function1[/* reason */ js.Any, _]): Unit = js.native
-    def done(onfulfilled: js.Function1[/* value */ T, _]): Unit = js.native
-    def done(onfulfilled: js.Function1[/* value */ T, _], onrejected: js.Function1[/* reason */ js.Any, _]): Unit = js.native
-    def done(onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, _]): Unit = js.native
+    def done(onfulfilled: js.Function1[/* value */ T, js.Any]): Unit = js.native
+    def done(
+      onfulfilled: js.Function1[/* value */ T, js.Any],
+      onrejected: js.Function1[/* reason */ js.Any, js.Any]
+    ): Unit = js.native
+    def done(onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
+    def done(onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, js.Any]): Unit = js.native
     
     /**
       * Calls a node.js style callback.  If none is provided, the promise is returned.
@@ -71,21 +75,19 @@ object mod extends Shortcut {
       * @returns A ThenPromise for the completion of which ever callback is executed.
       */
     def `then`[TResult1, TResult2](): ThenPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
-    ): ThenPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]]): ThenPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
     ): ThenPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): ThenPromise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): ThenPromise[TResult1 | TResult2] = js.native
   }
   
   @js.native
   trait ThenPromiseConstructor
-    extends /**
+    extends StObject
+       with /**
     * Creates a new ThenPromise.
     * @param executor A callback used to initialize the promise. This callback is passed two arguments:
     * a resolve callback used resolve the promise with a value or the result of another promise,
@@ -235,7 +237,7 @@ object mod extends Shortcut {
     ): ThenPromise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
     
     // Extensions specific to then/promise
-    def denodeify(fn: js.Function): js.Function1[/* repeated */ js.Any, ThenPromise[_]] = js.native
+    def denodeify(fn: js.Function): js.Function1[/* repeated */ js.Any, ThenPromise[js.Any]] = js.native
     
     def nodeify(fn: js.Function): js.Function = js.native
     
@@ -411,16 +413,13 @@ object mod extends Shortcut {
       * @returns A ThenPromise for the completion of which ever callback is executed.
       */
     def `then`[TResult1, TResult2](): Thenable[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
-    ): Thenable[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]]): Thenable[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
     ): Thenable[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): Thenable[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]): Thenable[TResult1 | TResult2] = js.native
   }
   
   type _To = ThenPromiseConstructor

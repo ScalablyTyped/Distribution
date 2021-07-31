@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Dlpjobs")
@@ -32,7 +31,7 @@ class ResourceProjectsDlpjobs protected () extends StObject {
     */
   def cancel(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def cancel(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def cancel(params: ParamsResourceProjectsDlpjobsCancel): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def cancel(
     params: ParamsResourceProjectsDlpjobsCancel,
@@ -72,7 +71,7 @@ class ResourceProjectsDlpjobs protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def create(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DlpJob]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def create(params: ParamsResourceProjectsDlpjobsCreate): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def create(
     params: ParamsResourceProjectsDlpjobsCreate,
@@ -108,7 +107,7 @@ class ResourceProjectsDlpjobs protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsDlpjobsDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsDlpjobsDelete,
@@ -142,7 +141,7 @@ class ResourceProjectsDlpjobs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def get(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DlpJob]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def get(params: ParamsResourceProjectsDlpjobsGet): GaxiosPromise[SchemaGooglePrivacyDlpV2DlpJob] = js.native
   def get(
     params: ParamsResourceProjectsDlpjobsGet,
@@ -181,7 +180,7 @@ class ResourceProjectsDlpjobs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGooglePrivacyDlpV2ListDlpJobsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ListDlpJobsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListDlpJobsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ListDlpJobsResponse] = js.native
   def list(params: ParamsResourceProjectsDlpjobsList): GaxiosPromise[SchemaGooglePrivacyDlpV2ListDlpJobsResponse] = js.native
   def list(
     params: ParamsResourceProjectsDlpjobsList,

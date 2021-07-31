@@ -2,10 +2,8 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleSheets extends StObject {
   
   def Add(
@@ -13,20 +11,20 @@ trait StyleSheets extends StObject {
     LinkType: WdStyleSheetLinkType,
     Title: String,
     Precedence: WdStyleSheetPrecedence
-  ): StyleSheet = js.native
+  ): StyleSheet
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): StyleSheet = js.native
+  def Item(Index: js.Any): StyleSheet
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.StyleSheets_typekey")
-  var WordDotStyleSheets_typekey: StyleSheets = js.native
+  var WordDotStyleSheets_typekey: StyleSheets
 }
 object StyleSheets {
   

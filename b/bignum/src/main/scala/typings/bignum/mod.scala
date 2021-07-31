@@ -3,14 +3,15 @@ package typings.bignum
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bignum", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BigNum {
+  class ^ protected ()
+    extends StObject
+       with BigNum {
     /** Create a new BigNum from n and a base. */
     def this(n: String) = this()
     /** Create a new BigNum from n. */
@@ -18,34 +19,30 @@ object mod {
     def this(n: BigNum) = this()
     def this(n: String, base: Double) = this()
   }
-  
-  @JSImport("bignum", "abs")
+  @JSImport("bignum", JSImport.Namespace)
   @js.native
-  def abs(n: BigNumCompatible): BigNum = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bignum", "add")
-  @js.native
-  def add(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def abs(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "and")
-  @js.native
-  def and(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def add(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "bitLength")
-  @js.native
-  def bitLength(n: BigNumCompatible): Double = js.native
+  @scala.inline
+  def and(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "cmp")
-  @js.native
-  def cmp(left: BigNumCompatible, right: BigNumCompatible): Double = js.native
+  @scala.inline
+  def bitLength(n: BigNumCompatible): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bitLength")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bignum", "div")
-  @js.native
-  def div(dividend: BigNumCompatible, divisor: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def cmp(left: BigNumCompatible, right: BigNumCompatible): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bignum", "eq")
-  @js.native
-  def eq_(left: BigNumCompatible, right: BigNumCompatible): Boolean = js.native
+  @scala.inline
+  def div(dividend: BigNumCompatible, divisor: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(dividend.asInstanceOf[js.Any], divisor.asInstanceOf[js.Any])).asInstanceOf[BigNum]
+  
+  @scala.inline
+  def eq_(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a new BigNum from a Buffer.
@@ -53,70 +50,54 @@ object mod {
     * The default options are: {endian: 'big', size: 1}.
     */
   /* static member */
-  @JSImport("bignum", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: Buffer): BigNum = js.native
-  @JSImport("bignum", "fromBuffer")
-  @js.native
-  def fromBuffer(buffer: Buffer, options: BufferOptions): BigNum = js.native
+  @scala.inline
+  def fromBuffer(buffer: Buffer): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  @scala.inline
+  def fromBuffer(buffer: Buffer, options: BufferOptions): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "gcd")
-  @js.native
-  def gcd(left: BigNumCompatible, right: BigNum): BigNum = js.native
+  @scala.inline
+  def gcd(left: BigNumCompatible, right: BigNum): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "ge")
-  @js.native
-  def ge(left: BigNumCompatible, right: BigNumCompatible): Boolean = js.native
+  @scala.inline
+  def ge(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ge")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("bignum", "gt")
-  @js.native
-  def gt(left: BigNumCompatible, right: BigNumCompatible): Boolean = js.native
+  @scala.inline
+  def gt(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("bignum", "invertm")
-  @js.native
-  def invertm(n: BigNumCompatible, m: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def invertm(n: BigNumCompatible, m: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("invertm")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
   /** Return true if num is identified as a BigNum instance. Otherwise, return false. */
   /* static member */
-  @JSImport("bignum", "isBigNum")
-  @js.native
-  def isBigNum(num: js.Any): Boolean = js.native
+  @scala.inline
+  def isBigNum(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNum")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("bignum", "jacobi")
-  @js.native
-  def jacobi(a: BigNumCompatible, n: BigNum): Double = js.native
+  @scala.inline
+  def jacobi(a: BigNumCompatible, n: BigNum): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jacobi")(a.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bignum", "le")
-  @js.native
-  def le(left: BigNumCompatible, right: BigNumCompatible): Boolean = js.native
+  @scala.inline
+  def le(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("le")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("bignum", "lt")
-  @js.native
-  def lt(left: BigNumCompatible, right: BigNumCompatible): Boolean = js.native
+  @scala.inline
+  def lt(left: BigNumCompatible, right: BigNumCompatible): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("bignum", "mod")
-  @js.native
-  def mod(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def mod(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "mul")
-  @js.native
-  def mul(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def mul(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "neg")
-  @js.native
-  def neg(n: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def neg(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "or")
-  @js.native
-  def or(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def or(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "pow")
-  @js.native
-  def pow(base: BigNumCompatible, exponent: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def pow(base: BigNumCompatible, exponent: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "powm")
-  @js.native
-  def powm(base: BigNumCompatible, exponent: BigNumCompatible, m: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def powm(base: BigNumCompatible, exponent: BigNumCompatible, m: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("powm")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
   /**
     * Generate a probable prime of length bits.
@@ -124,50 +105,38 @@ object mod {
     * If safe is true, it will be a "safe" prime of the form p=2p'+1 where p' is also prime.
     */
   /* static member */
-  @JSImport("bignum", "prime")
-  @js.native
-  def prime(bits: Double): BigNum = js.native
-  @JSImport("bignum", "prime")
-  @js.native
-  def prime(bits: Double, safe: Boolean): BigNum = js.native
+  @scala.inline
+  def prime(bits: Double): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("prime")(bits.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  @scala.inline
+  def prime(bits: Double, safe: Boolean): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("prime")(bits.asInstanceOf[js.Any], safe.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "probPrime")
-  @js.native
-  def probPrime(n: BigNumCompatible): Boolean | String = js.native
+  @scala.inline
+  def probPrime(n: BigNumCompatible): Boolean | String = ^.asInstanceOf[js.Dynamic].applyDynamic("probPrime")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean | String]
   
-  @JSImport("bignum", "rand")
-  @js.native
-  def rand(n: BigNumCompatible): BigNum = js.native
-  @JSImport("bignum", "rand")
-  @js.native
-  def rand(n: BigNumCompatible, upperBound: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def rand(n: BigNumCompatible): BigNum = ^.asInstanceOf[js.Dynamic].applyDynamic("rand")(n.asInstanceOf[js.Any]).asInstanceOf[BigNum]
+  @scala.inline
+  def rand(n: BigNumCompatible, upperBound: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(n.asInstanceOf[js.Any], upperBound.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "shiftLeft")
-  @js.native
-  def shiftLeft(n: BigNumCompatible, bits: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def shiftLeft(n: BigNumCompatible, bits: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftLeft")(n.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "shiftRight")
-  @js.native
-  def shiftRight(n: BigNumCompatible, bits: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def shiftRight(n: BigNumCompatible, bits: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftRight")(n.asInstanceOf[js.Any], bits.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "sub")
-  @js.native
-  def sub(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def sub(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
-  @JSImport("bignum", "toBuffer")
-  @js.native
-  def toBuffer(n: BigNumCompatible): Buffer = js.native
-  @JSImport("bignum", "toBuffer")
-  @js.native
-  def toBuffer(n: BigNumCompatible, options: BufferOptions): Buffer = js.native
+  @scala.inline
+  def toBuffer(n: BigNumCompatible): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def toBuffer(n: BigNumCompatible, options: BufferOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(n.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("bignum", "toNumber")
-  @js.native
-  def toNumber(n: BigNumCompatible): Double = js.native
+  @scala.inline
+  def toNumber(n: BigNumCompatible): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bignum", "xor")
-  @js.native
-  def xor(left: BigNumCompatible, right: BigNumCompatible): BigNum = js.native
+  @scala.inline
+  def xor(left: BigNumCompatible, right: BigNumCompatible): BigNum = (^.asInstanceOf[js.Dynamic].applyDynamic("xor")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BigNum]
   
   @js.native
   trait BigNum extends StObject {
@@ -193,9 +162,6 @@ object mod {
     
     /** Return a new BigNum containing the instance value integrally divided by n. */
     def div(n: BigNumCompatible): BigNum = js.native
-    
-    /** Return a boolean: whether the instance value is equal to n (== n). */
-    def eq(n: BigNumCompatible): Boolean = js.native
     
     /** Return the greatest common divisor of the current BigNum with n as a new BigNum. */
     def gcd(n: BigNum): BigNum = js.native
@@ -289,14 +255,13 @@ object mod {
   /** Anything that can be converted to BigNum. */
   type BigNumCompatible = BigNum | Double | String
   
-  @js.native
   trait BufferOptions extends StObject {
     
     /** Can be either 'big' or 'little'. Also accepts 1 for big and -1 for little. Doesn't matter when size = 1. */
-    var endian: String | Double = js.native
+    var endian: String | Double
     
     /** Number of bytes per word, or 'auto' to flip entire Buffer. */
-    var size: Double | String = js.native
+    var size: Double | String
   }
   object BufferOptions {
     

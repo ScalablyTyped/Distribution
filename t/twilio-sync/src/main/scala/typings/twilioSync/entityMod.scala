@@ -7,7 +7,6 @@ import typings.twilioSync.servicesMod.Storage
 import typings.twilioSync.syncerrorMod.SyncError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityMod {
@@ -78,14 +77,13 @@ object entityMod {
     def uniqueName: String = js.native
   }
   
-  @js.native
   trait EntityServices extends StObject {
     
-    var network: Network = js.native
+    var network: Network
     
-    var router: Router = js.native
+    var router: Router
     
-    var storage: Storage = js.native
+    var storage: Storage
   }
   object EntityServices {
     

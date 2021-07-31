@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,39 +14,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The values used are relative. So it is not necessary to know the width of the object. The sum of the relative width values depends on the object and
   * is defined in "ReferenceValue."
   */
-@js.native
-trait XTextColumns extends XInterface {
+trait XTextColumns
+  extends StObject
+     with XInterface {
   
   /** @returns the number of columns. */
-  var ColumnCount: Double = js.native
+  var ColumnCount: Double
   
   /**
     * returns the column description of the object.
     * @see TextColumn
     */
-  var Columns: SafeArray[TextColumn] = js.native
+  var Columns: SafeArray[TextColumn]
   
   /** @returns the sum of all values.  As described above, the width values are relative. */
-  val ReferenceValue: Double = js.native
+  val ReferenceValue: Double
   
   /** @returns the number of columns. */
-  def getColumnCount(): Double = js.native
+  def getColumnCount(): Double
   
   /**
     * returns the column description of the object.
     * @see TextColumn
     */
-  def getColumns(): SafeArray[TextColumn] = js.native
+  def getColumns(): SafeArray[TextColumn]
   
   /** @returns the sum of all values.  As described above, the width values are relative. */
-  def getReferenceValue(): Double = js.native
+  def getReferenceValue(): Double
   
   /**
     * sets the number of columns.
     *
     * The minimum is 1 column.
     */
-  def setColumnCount(nColumns: Double): Unit = js.native
+  def setColumnCount(nColumns: Double): Unit
   
   /**
     * sets the descriptors of all columns.
@@ -55,7 +55,7 @@ trait XTextColumns extends XInterface {
     * The number of members in the sequence must be the same as the number of columns of the object.
     * @see TextColumn
     */
-  def setColumns(Columns: SeqEquiv[TextColumn]): Unit = js.native
+  def setColumns(Columns: SeqEquiv[TextColumn]): Unit
 }
 object XTextColumns {
   

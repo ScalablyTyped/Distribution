@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,7 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait AnimatedSprite extends Sprite {
+trait AnimatedSprite
+  extends StObject
+     with Sprite {
   
   /**
     * The speed that the AnimatedSprite will play at. Higher is faster, lower is slower.
@@ -187,12 +188,11 @@ object AnimatedSprite {
     * @property {PIXI.Texture} texture - The {@link PIXI.Texture} of the frame
     * @property {number} time - the duration of the frame in ms
     */
-  @js.native
   trait FrameObject extends StObject {
     
-    var texture: Texture = js.native
+    var texture: Texture
     
-    var time: Double = js.native
+    var time: Double
   }
   object FrameObject {
     

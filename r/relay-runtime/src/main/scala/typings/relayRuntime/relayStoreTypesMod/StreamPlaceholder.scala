@@ -6,36 +6,35 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StreamPlaceholder extends IncrementalDataPlaceholder {
+trait StreamPlaceholder
+  extends StObject
+     with IncrementalDataPlaceholder {
   
-  val kind: stream_ = js.native
+  val kind: stream_
   
-  val label: String = js.native
+  val label: String
   
-  val node: NormalizationSelectableNode = js.native
+  val node: NormalizationSelectableNode
   
-  val parentID: DataID = js.native
+  val parentID: DataID
   
-  val path: js.Array[String] = js.native
+  val path: js.Array[String]
   
-  val variables: Variables = js.native
+  val variables: Variables
 }
 object StreamPlaceholder {
   
   @scala.inline
   def apply(
-    kind: stream_,
     label: String,
     node: NormalizationSelectableNode,
     parentID: DataID,
     path: js.Array[String],
     variables: Variables
   ): StreamPlaceholder = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentID = parentID.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = "stream", label = label.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentID = parentID.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamPlaceholder]
   }
   

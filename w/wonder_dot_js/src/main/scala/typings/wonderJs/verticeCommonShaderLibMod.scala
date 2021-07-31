@@ -4,24 +4,28 @@ import typings.wonderJs.engineMaterialMod.EngineMaterial
 import typings.wonderJs.engineShaderLibMod.EngineShaderLib
 import typings.wonderJs.programMod.Program
 import typings.wonderJs.quadCommandMod.QuadCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/VerticeCommonShaderLib", JSImport.Namespace)
-@js.native
-object verticeCommonShaderLibMod extends js.Object {
+object verticeCommonShaderLibMod {
+  
+  @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/VerticeCommonShaderLib", "VerticeCommonShaderLib")
   @js.native
   class VerticeCommonShaderLib () extends EngineShaderLib {
+    
     def sendShaderVariables(program: Program, cmd: QuadCommand, material: EngineMaterial): Unit = js.native
+    
     def setShaderDefinition(cmd: QuadCommand, material: EngineMaterial): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object VerticeCommonShaderLib extends js.Object {
-    def create(): VerticeCommonShaderLib = js.native
+  object VerticeCommonShaderLib {
+    
+    @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/VerticeCommonShaderLib", "VerticeCommonShaderLib")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): VerticeCommonShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[VerticeCommonShaderLib]
   }
-  
 }
-

@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNotificationConfigurationType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (Amazon SNS) topic.
     */
-  var TopicARN: ResourceName = js.native
+  var TopicARN: ResourceName
 }
 object DeleteNotificationConfigurationType {
   

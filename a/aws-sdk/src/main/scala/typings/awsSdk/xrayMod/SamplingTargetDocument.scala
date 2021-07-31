@@ -2,36 +2,34 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingTargetDocument extends StObject {
   
   /**
     * The percentage of matching requests to instrument, after the reservoir is exhausted.
     */
-  var FixedRate: js.UndefOr[Double] = js.native
+  var FixedRate: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of seconds for the service to wait before getting sampling targets again.
     */
-  var Interval: js.UndefOr[NullableInteger] = js.native
+  var Interval: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The number of requests per second that X-Ray allocated for this service.
     */
-  var ReservoirQuota: js.UndefOr[NullableInteger] = js.native
+  var ReservoirQuota: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * When the reservoir quota expires.
     */
-  var ReservoirQuotaTTL: js.UndefOr[Timestamp] = js.native
+  var ReservoirQuotaTTL: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the sampling rule.
     */
-  var RuleName: js.UndefOr[String] = js.native
+  var RuleName: js.UndefOr[String] = js.undefined
 }
 object SamplingTargetDocument {
   

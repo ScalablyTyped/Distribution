@@ -2,51 +2,49 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateComment extends StObject {
   
-  var checkIsStarred: `677` = js.native
+  var checkIsStarred: `677`
   
-  var create: `678` = js.native
+  var create: `678`
   
-  var createComment: `679` = js.native
+  var createComment: `679`
   
-  var delete: `680` = js.native
+  var delete: `680`
   
-  var deleteComment: `681` = js.native
+  var deleteComment: `681`
   
-  var fork: `682` = js.native
+  var fork: `682`
   
-  var get: `683` = js.native
+  var get: `683`
   
-  var getComment: `684` = js.native
+  var getComment: `684`
   
-  var getRevision: `685` = js.native
+  var getRevision: `685`
   
-  var list: `686` = js.native
+  var list: `686`
   
-  var listComments: `687` = js.native
+  var listComments: `687`
   
-  var listCommits: `688` = js.native
+  var listCommits: `688`
   
-  var listForUser: `689` = js.native
+  var listForUser: `689`
   
-  var listForks: `690` = js.native
+  var listForks: `690`
   
-  var listPublic: `691` = js.native
+  var listPublic: `691`
   
-  var listStarred: `692` = js.native
+  var listStarred: `692`
   
-  var star: `693` = js.native
+  var star: `693`
   
-  var unstar: `694` = js.native
+  var unstar: `694`
   
-  var update: `695` = js.native
+  var update: `695`
   
-  var updateComment: `696` = js.native
+  var updateComment: `696`
 }
 object CreateComment {
   

@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNodeStackTracesResponse extends StObject {
   
   /**
     * Creation stack trace, if available.
     */
-  var creation: js.UndefOr[StackTrace] = js.native
+  var creation: js.UndefOr[StackTrace] = js.undefined
 }
 object GetNodeStackTracesResponse {
   

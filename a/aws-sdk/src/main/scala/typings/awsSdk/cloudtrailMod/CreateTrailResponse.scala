@@ -2,76 +2,74 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrailResponse extends StObject {
   
   /**
     * Specifies the Amazon Resource Name (ARN) of the log group to which CloudTrail logs will be delivered.
     */
-  var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.native
+  var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
     */
-  var CloudWatchLogsRoleArn: js.UndefOr[String] = js.native
+  var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the trail is publishing events from global services such as IAM to the log files.
     */
-  var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.native
+  var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the trail exists in one region or in all regions.
     */
-  var IsMultiRegionTrail: js.UndefOr[Boolean] = js.native
+  var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the trail is an organization trail.
     */
-  var IsOrganizationTrail: js.UndefOr[Boolean] = js.native
+  var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether log file integrity validation is enabled.
     */
-  var LogFileValidationEnabled: js.UndefOr[Boolean] = js.native
+  var LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the name of the trail.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the Amazon S3 bucket designated for publishing log files.
     */
-  var S3BucketName: js.UndefOr[String] = js.native
+  var S3BucketName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files.
     */
-  var S3KeyPrefix: js.UndefOr[String] = js.native
+  var S3KeyPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:  arn:aws:sns:us-east-2:123456789012:MyTopic 
     */
-  var SnsTopicARN: js.UndefOr[String] = js.native
+  var SnsTopicARN: js.UndefOr[String] = js.undefined
   
   /**
     * This field is no longer in use. Use SnsTopicARN.
     */
-  var SnsTopicName: js.UndefOr[String] = js.native
+  var SnsTopicName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the ARN of the trail that was created. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
     */
-  var TrailARN: js.UndefOr[String] = js.native
+  var TrailARN: js.UndefOr[String] = js.undefined
 }
 object CreateTrailResponse {
   

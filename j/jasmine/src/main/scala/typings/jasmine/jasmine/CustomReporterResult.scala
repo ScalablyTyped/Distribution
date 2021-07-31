@@ -2,25 +2,23 @@ package typings.jasmine.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomReporterResult extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var failedExpectations: js.UndefOr[js.Array[FailedExpectation]] = js.native
+  var failedExpectations: js.UndefOr[js.Array[FailedExpectation]] = js.undefined
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var id: String = js.native
+  var id: String
   
-  var passedExpectations: js.UndefOr[js.Array[PassedExpectation]] = js.native
+  var passedExpectations: js.UndefOr[js.Array[PassedExpectation]] = js.undefined
   
-  var pendingReason: js.UndefOr[String] = js.native
+  var pendingReason: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object CustomReporterResult {
   

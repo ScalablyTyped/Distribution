@@ -9,26 +9,24 @@ import typings.cookie.cookieStrings.strict
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cookie", "parse")
+  @JSImport("cookie", JSImport.Namespace)
   @js.native
-  def parse(str: String): StringDictionary[String] = js.native
-  @JSImport("cookie", "parse")
-  @js.native
-  def parse(str: String, options: CookieParseOptions): StringDictionary[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cookie", "serialize")
-  @js.native
-  def serialize(name: String, value: String): String = js.native
-  @JSImport("cookie", "serialize")
-  @js.native
-  def serialize(name: String, value: String, options: CookieSerializeOptions): String = js.native
+  @scala.inline
+  def parse(str: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  @scala.inline
+  def parse(str: String, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
   
-  @js.native
+  @scala.inline
+  def serialize(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def serialize(name: String, value: String, options: CookieSerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait CookieParseOptions extends StObject {
     
     /**
@@ -43,7 +41,7 @@ object mod {
       * *Note* if an error is thrown from this function, the original, non-decoded
       * cookie value will be returned as the cookie's value.
       */
-    var decode: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var decode: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
   }
   object CookieParseOptions {
     
@@ -64,7 +62,6 @@ object mod {
     }
   }
   
-  @js.native
   trait CookieSerializeOptions extends StObject {
     
     /**
@@ -72,7 +69,7 @@ object mod {
       * domain is set, and most clients will consider the cookie to apply to only
       * the current domain.
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies a function that will be used to encode a cookie's value. Since
@@ -84,7 +81,7 @@ object mod {
       * encode a JavaScript string into UTF-8 byte sequences and then URL-encode
       * any that fall outside of the cookie range.
       */
-    var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.native
+    var encode: js.UndefOr[js.Function1[/* value */ String, String]] = js.undefined
     
     /**
       * Specifies the `Date` object to be the value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.1|`Expires` `Set-Cookie` attribute}. By default,
@@ -96,7 +93,7 @@ object mod {
       * possible not all clients by obey this, so if both are set, they should
       * point to the same date and time.
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * Specifies the boolean value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.6|`HttpOnly` `Set-Cookie` attribute}.
@@ -106,7 +103,7 @@ object mod {
       * *Note* be careful when setting this to true, as compliant clients will
       * not allow client-side JavaScript to see the cookie in `document.cookie`.
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies the number (in seconds) to be the value for the `Max-Age`
@@ -118,13 +115,13 @@ object mod {
       * possible not all clients by obey this, so if both are set, they should
       * point to the same date and time.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.4|`Path` `Set-Cookie` attribute}.
       * By default, the path is considered the "default path".
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the boolean or string to be the value for the {@link https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1.2.7|`SameSite` `Set-Cookie` attribute}.
@@ -143,7 +140,7 @@ object mod {
       *
       * *note* This is an attribute that has not yet been fully standardized, and may change in the future. This also means many clients may ignore this attribute until they understand it.
       */
-    var sameSite: js.UndefOr[`true` | `false` | lax | strict | none] = js.native
+    var sameSite: js.UndefOr[`true` | `false` | lax | strict | none] = js.undefined
     
     /**
       * Specifies the boolean value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.5|`Secure` `Set-Cookie` attribute}. When truthy, the
@@ -153,7 +150,7 @@ object mod {
       * not send the cookie back to the server in the future if the browser does
       * not have an HTTPS connection.
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object CookieSerializeOptions {
     

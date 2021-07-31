@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.oauthJs.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OAuth {
@@ -14,18 +13,17 @@ object OAuth {
     *   {tokenSecret: "lakjsdflkj...", consumerSecret: "QOUEWRI..", accessorSecret: "xcmvzc..."}
     * The accessorSecret property is optional.
     */
-  @js.native
   trait Accessor extends StObject {
     
-    var accessorSecret: js.UndefOr[String] = js.native
+    var accessorSecret: js.UndefOr[String] = js.undefined
     
-    var consumerKey: String = js.native
+    var consumerKey: String
     
-    var consumerSecret: String = js.native
+    var consumerSecret: String
     
-    var token: String = js.native
+    var token: String
     
-    var tokenSecret: String = js.native
+    var tokenSecret: String
   }
   object Accessor {
     
@@ -62,14 +60,13 @@ object OAuth {
     * An OAuth message is represented as an object like this:
     *   { method: "GET", action: "http://server.com/path", parameters: ... }
     */
-  @js.native
   trait Message extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var method: String = js.native
+    var method: String
     
-    var parameters: ParameterListOrMap = js.native
+    var parameters: ParameterListOrMap
   }
   object Message {
     
@@ -104,18 +101,17 @@ object OAuth {
   /** A map {name: value, name2: value2}. */
   type ParameterMap = StringDictionary[String]
   
-  @js.native
   trait SignatureMethod extends StObject {
     
-    def getSignature(baseString: String): String = js.native
+    def getSignature(baseString: String): String
     
     /** Set the key string for signing. */
-    def initialize(name: String, accessor: Accessor): Unit = js.native
+    def initialize(name: String, accessor: Accessor): Unit
     
-    var key: String = js.native
+    var key: String
     
     /** Add a signature to the message. */
-    def sign(message: Message): String = js.native
+    def sign(message: Message): String
   }
   object SignatureMethod {
     
@@ -147,33 +143,32 @@ object OAuth {
     }
   }
   
-  @js.native
   trait SignatureMethodStatic extends StObject {
     
     /** A map from signature method name to constructor. */
-    var REGISTERED: StringDictionary[Instantiable] = js.native
+    var REGISTERED: StringDictionary[Instantiable]
     
     /**
       * Generate a signature base string from a Message object.
       * @see {@link https://tools.ietf.org/html/rfc5849#section-3.4.1}
       * @param message Source of the signature base string.
       */
-    def getBaseString(message: Message): String = js.native
+    def getBaseString(message: Message): String
     
     /**
       * Create a subclass of OAuth.SignatureMethod, with the given getSignature function.
       * @param getSignatureFunction
       */
-    def makeSubclass(getSignatureFunction: js.Function1[/* baseString */ String, String]): Instantiable = js.native
+    def makeSubclass(getSignatureFunction: js.Function1[/* baseString */ String, String]): Instantiable
     
     /** Instantiate a SignatureMethod for the given method name. */
-    def newMethod(name: String, accessor: Accessor): SignatureMethod = js.native
+    def newMethod(name: String, accessor: Accessor): SignatureMethod
     
-    def normalizeParameters(parameters: ParameterListOrMap): String = js.native
+    def normalizeParameters(parameters: ParameterListOrMap): String
     
-    def normalizeUrl(url: String): String = js.native
+    def normalizeUrl(url: String): String
     
-    def parseUri(str: String): Uri = js.native
+    def parseUri(str: String): Uri
     
     /**
       * Subsequently, the given constructor will be used for the named methods.
@@ -181,9 +176,9 @@ object OAuth {
       * The resulting object should usually implement getSignature(baseString).
       * You can easily define such a constructor by calling makeSubclass method.
       */
-    def registerMethodClass(names: js.Array[String], classConstructor: Instantiable): Unit = js.native
+    def registerMethodClass(names: js.Array[String], classConstructor: Instantiable): Unit
     
-    def sign(message: Message, accessor: Accessor): Unit = js.native
+    def sign(message: Message, accessor: Accessor): Unit
   }
   object SignatureMethodStatic {
     
@@ -235,36 +230,35 @@ object OAuth {
     }
   }
   
-  @js.native
   trait Uri extends StObject {
     
-    var anchor: String = js.native
+    var anchor: String
     
-    var authority: String = js.native
+    var authority: String
     
-    var directory: String = js.native
+    var directory: String
     
-    var file: String = js.native
+    var file: String
     
-    var host: String = js.native
+    var host: String
     
-    var password: String = js.native
+    var password: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: String = js.native
+    var port: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var query: String = js.native
+    var query: String
     
-    var relative: String = js.native
+    var relative: String
     
-    var source: String = js.native
+    var source: String
     
-    var user: String = js.native
+    var user: String
     
-    var userInfo: String = js.native
+    var userInfo: String
   }
   object Uri {
     

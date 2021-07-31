@@ -5,7 +5,6 @@ import typings.otplibCore.utilsMod.CreateDigest
 import typings.otplibCore.utilsMod.HexString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

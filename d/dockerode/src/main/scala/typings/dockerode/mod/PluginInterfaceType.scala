@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginInterfaceType extends StObject {
   
-  var Capability: String = js.native
+  var Capability: String
   
-  var Prefix: String = js.native
+  var Prefix: String
   
-  var Version: String = js.native
+  var Version: String
 }
 object PluginInterfaceType {
   

@@ -4,13 +4,13 @@ import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AfterFindRequest extends TriggerRequest {
+trait AfterFindRequest
+  extends StObject
+     with TriggerRequest {
   
-  var objects: js.Array[Object[Attributes]] = js.native
+  var objects: js.Array[Object[Attributes]]
 }
 object AfterFindRequest {
   

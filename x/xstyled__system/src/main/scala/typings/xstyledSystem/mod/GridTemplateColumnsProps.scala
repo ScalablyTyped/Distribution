@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridTemplateColumnsProps[TLength] extends StObject {
   
   val gridTemplateColumns: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GridTemplateColumnsProps {
   
@@ -23,12 +21,12 @@ object GridTemplateColumnsProps {
   }
   
   @scala.inline
-  implicit class GridTemplateColumnsPropsMutableBuilder[Self <: GridTemplateColumnsProps[_], TLength] (val x: Self with GridTemplateColumnsProps[TLength]) extends AnyVal {
+  implicit class GridTemplateColumnsPropsMutableBuilder[Self <: GridTemplateColumnsProps[?], TLength] (val x: Self & GridTemplateColumnsProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setGridTemplateColumns(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object GridTemplateColumnsProps {
     def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
     @scala.inline
-    def setGridTemplateColumnsVarargs(value: js.Any*): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
+    def setGridTemplateColumnsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeployablePatchSnapshotForInstanceRequest extends StObject {
   
   /**
     * The ID of the instance for which the appropriate patch snapshot should be retrieved.
     */
-  var InstanceId: typings.awsSdk.ssmMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
   /**
     * The user-defined snapshot ID.
     */
-  var SnapshotId: typings.awsSdk.ssmMod.SnapshotId = js.native
+  var SnapshotId: typings.awsSdk.ssmMod.SnapshotId
 }
 object GetDeployablePatchSnapshotForInstanceRequest {
   

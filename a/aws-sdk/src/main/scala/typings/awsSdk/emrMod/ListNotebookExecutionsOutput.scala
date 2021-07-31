@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotebookExecutionsOutput extends StObject {
   
   /**
     * A pagination token that a subsequent ListNotebookExecutions can use to determine the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
   
   /**
     * A list of notebook executions.
     */
-  var NotebookExecutions: js.UndefOr[NotebookExecutionSummaryList] = js.native
+  var NotebookExecutions: js.UndefOr[NotebookExecutionSummaryList] = js.undefined
 }
 object ListNotebookExecutionsOutput {
   

@@ -7,7 +7,6 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayWrapperComponentMod {
@@ -53,14 +52,15 @@ object overlayWrapperComponentMod {
     def NO_ROWS_WRAPPER_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_ROWS_WRAPPER_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IOverlayWrapperComp extends IComponent[IOverlayWrapperParams] {
+  trait IOverlayWrapperComp
+    extends StObject
+       with IComponent[IOverlayWrapperParams] {
     
-    def hideOverlay(eOverlayWrapper: HTMLElement): Unit = js.native
+    def hideOverlay(eOverlayWrapper: HTMLElement): Unit
     
-    def showLoadingOverlay(eOverlayWrapper: HTMLElement): Unit = js.native
+    def showLoadingOverlay(eOverlayWrapper: HTMLElement): Unit
     
-    def showNoRowsOverlay(eOverlayWrapper: HTMLElement): Unit = js.native
+    def showNoRowsOverlay(eOverlayWrapper: HTMLElement): Unit
   }
   object IOverlayWrapperComp {
     
@@ -89,6 +89,5 @@ object overlayWrapperComponentMod {
     }
   }
   
-  @js.native
   trait IOverlayWrapperParams extends StObject
 }

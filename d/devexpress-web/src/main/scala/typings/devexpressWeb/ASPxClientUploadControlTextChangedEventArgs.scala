@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientUploadControl.TextChanged client event that allows you to respond to an end-user changing an edit box's text.
   */
-@js.native
-trait ASPxClientUploadControlTextChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientUploadControlTextChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the index of a file input element within the ASPxUploadControl.
     */
-  var inputIndex: Double = js.native
+  var inputIndex: Double
 }
 object ASPxClientUploadControlTextChangedEventArgs {
   

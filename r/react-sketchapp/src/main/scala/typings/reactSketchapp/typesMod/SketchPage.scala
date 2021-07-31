@@ -2,17 +2,15 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchPage extends StObject {
   
-  def layers(): js.Array[SketchLayer] = js.native
+  def layers(): js.Array[SketchLayer]
   
-  def name(): NSString = js.native
+  def name(): NSString
   
-  def setName(name: String): Unit = js.native
+  def setName(name: String): Unit
 }
 object SketchPage {
   

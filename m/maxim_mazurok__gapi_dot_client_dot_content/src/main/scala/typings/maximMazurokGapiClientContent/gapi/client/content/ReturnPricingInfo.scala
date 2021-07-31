@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnPricingInfo extends StObject {
   
   /**
     * Default option for whether merchant should charge the customer for return shipping costs, based on customer selected return reason and merchant's return policy for the items being
     * returned.
     */
-  var chargeReturnShippingFee: js.UndefOr[Boolean] = js.native
+  var chargeReturnShippingFee: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum return shipping costs that may be charged to the customer depending on merchant's assessment of the return reason and the merchant's return policy for the items being
     * returned.
     */
-  var maxReturnShippingFee: js.UndefOr[MonetaryAmount] = js.native
+  var maxReturnShippingFee: js.UndefOr[MonetaryAmount] = js.undefined
   
   /** Total amount that can be refunded for the items in this return. It represents the total amount received by the merchant for the items, after applying merchant coupons. */
-  var refundableItemsTotalAmount: js.UndefOr[MonetaryAmount] = js.native
+  var refundableItemsTotalAmount: js.UndefOr[MonetaryAmount] = js.undefined
   
   /** Maximum amount that can be refunded for the original shipping fee. */
-  var refundableShippingAmount: js.UndefOr[MonetaryAmount] = js.native
+  var refundableShippingAmount: js.UndefOr[MonetaryAmount] = js.undefined
   
   /** Total amount already refunded by the merchant. It includes all types of refunds (items, shipping, etc.) Not provided if no refund has been applied yet. */
-  var totalRefundedAmount: js.UndefOr[MonetaryAmount] = js.native
+  var totalRefundedAmount: js.UndefOr[MonetaryAmount] = js.undefined
 }
 object ReturnPricingInfo {
   

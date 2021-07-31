@@ -2,41 +2,39 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileUploadAbortedEventUIParam extends StObject {
   
   /**
     * Gets the unique identifier of the file.
     */
-  var fileId: js.UndefOr[Double] = js.native
+  var fileId: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the name of the uploaded file.
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the current file status.
     */
-  var fileStatus: js.UndefOr[Double] = js.native
+  var fileStatus: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the igUpload widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the file size of the uploaded file.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the uploaded bytes.
     */
-  var uploadedBytes: js.UndefOr[Double] = js.native
+  var uploadedBytes: js.UndefOr[Double] = js.undefined
 }
 object FileUploadAbortedEventUIParam {
   

@@ -6,51 +6,51 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrderreturnsList extends StandardParameters {
+trait ParamsResourceOrderreturnsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Obtains order returns created before this date (inclusively), in ISO 8601
     * format.
     */
-  var createdEndDate: js.UndefOr[String] = js.native
+  var createdEndDate: js.UndefOr[String] = js.undefined
   
   /**
     * Obtains order returns created after this date (inclusively), in ISO 8601
     * format.
     */
-  var createdStartDate: js.UndefOr[String] = js.native
+  var createdStartDate: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of order returns to return in the response, used for
     * paging. The default value is 25 returns per page, and the maximum allowed
     * value is 250 returns per page.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the account that manages the order. This cannot be a
     * multi-client account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * Return the results in the specified order.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrderreturnsList {
   

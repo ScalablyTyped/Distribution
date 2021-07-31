@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Signal extends BaseElement {
+trait Signal
+  extends StObject
+     with BaseElement {
   
-  var name: String = js.native
+  var name: String
   
-  var structureRef: ItemDefinition = js.native
+  var structureRef: ItemDefinition
 }
 object Signal {
   

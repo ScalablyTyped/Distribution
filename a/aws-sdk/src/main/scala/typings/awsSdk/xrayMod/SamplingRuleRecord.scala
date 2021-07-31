@@ -2,26 +2,24 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingRuleRecord extends StObject {
   
   /**
     * When the rule was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * When the rule was last modified.
     */
-  var ModifiedAt: js.UndefOr[Timestamp] = js.native
+  var ModifiedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The sampling rule.
     */
-  var SamplingRule: js.UndefOr[typings.awsSdk.xrayMod.SamplingRule] = js.native
+  var SamplingRule: js.UndefOr[typings.awsSdk.xrayMod.SamplingRule] = js.undefined
 }
 object SamplingRuleRecord {
   

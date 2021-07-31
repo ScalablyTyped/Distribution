@@ -2,17 +2,15 @@ package typings.leafletRoutingMachine.mod.Routing_
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaypointsSplicedEvent extends StObject {
   
-  var added: js.Array[Waypoint_] = js.native
+  var added: js.Array[Waypoint_]
   
-  var index: Double = js.native
+  var index: Double
   
-  var nRemoved: Double = js.native
+  var nRemoved: Double
 }
 object WaypointsSplicedEvent {
   

@@ -1,11 +1,9 @@
 package typings.pSettle
 
 import org.scalablytyped.runtime.TopLevel
-import typings.pSettle.pSettleStrings.^
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,25 +37,34 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-settle", JSImport.Namespace)
-  @js.native
-  def apply[ValueType /* <: js.Array[_] */](array: ValueType): js.Promise[
+  @scala.inline
+  def apply[ValueType /* <: js.Array[js.Any] */](array: ValueType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
-    */ ^ with TopLevel[ValueType]
-  ] = js.native
-  @JSImport("p-settle", JSImport.Namespace)
-  @js.native
-  def apply[ValueType /* <: js.Array[_] */](array: ValueType, options: Options): js.Promise[
+    */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
+  ] = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
-    */ ^ with TopLevel[ValueType]
-  ] = js.native
+    */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
+  ]]
+  @scala.inline
+  def apply[ValueType /* <: js.Array[js.Any] */](array: ValueType, options: Options): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
+    */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
+  ] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {-readonly [ P in keyof ValueType ]: p-settle.p-settle.PromiseResult<p-settle.p-settle.Awaited<p-settle.p-settle.ReturnValue<ValueType[P]>>>}
+    */ typings.pSettle.pSettleStrings.^ & TopLevel[ValueType]
+  ]]
+  
+  @JSImport("p-settle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // TODO: Use the native version when TS supports it (should be in v4).
   type Awaited[T] = T
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -66,7 +73,7 @@ object mod {
     		Note: This only limits concurrency for elements that are async functions, not promises.
     		@default Infinity
     		*/
-    val concurrency: js.UndefOr[Double] = js.native
+    val concurrency: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

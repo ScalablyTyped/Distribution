@@ -10,9 +10,9 @@ useMemo and useCallback but with a stable cache
 | ------------------ | :-------------: |
 | Full name          | use-memo-one |
 | Keywords           | memoization, react, useMemo, useCallback, memoize-one |
-| # releases         | 15 |
-| # dependents       | 47 |
-| # downloads        | 17238867 |
+| # releases         | 14 |
+| # dependents       | 59 |
+| # downloads        | 24909597 |
 | # stars            | 0 |
 
 ## Links

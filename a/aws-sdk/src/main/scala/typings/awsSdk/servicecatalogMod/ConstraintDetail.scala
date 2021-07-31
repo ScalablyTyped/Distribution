@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstraintDetail extends StObject {
   
   /**
     * The identifier of the constraint.
     */
-  var ConstraintId: js.UndefOr[Id] = js.native
+  var ConstraintId: js.UndefOr[Id] = js.undefined
   
   /**
     * The description of the constraint.
     */
-  var Description: js.UndefOr[ConstraintDescription] = js.native
+  var Description: js.UndefOr[ConstraintDescription] = js.undefined
   
   /**
     * The owner of the constraint.
     */
-  var Owner: js.UndefOr[AccountId] = js.native
+  var Owner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The identifier of the portfolio the product resides in. The constraint applies only to the instance of the product that lives within this portfolio.
     */
-  var PortfolioId: js.UndefOr[Id] = js.native
+  var PortfolioId: js.UndefOr[Id] = js.undefined
   
   /**
     * The identifier of the product the constraint applies to. Note that a constraint applies to a specific instance of a product within a certain portfolio.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The type of constraint.    LAUNCH     NOTIFICATION    STACKSET    TEMPLATE   
     */
-  var Type: js.UndefOr[ConstraintType] = js.native
+  var Type: js.UndefOr[ConstraintType] = js.undefined
 }
 object ConstraintDetail {
   

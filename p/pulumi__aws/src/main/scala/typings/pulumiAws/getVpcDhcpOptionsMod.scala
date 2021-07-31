@@ -5,41 +5,39 @@ import typings.pulumiAws.inputMod.ec2.GetVpcDhcpOptionsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcDhcpOptionsMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpcDhcpOptions", "getVpcDhcpOptions")
+  @JSImport("@pulumi/aws/ec2/getVpcDhcpOptions", JSImport.Namespace)
   @js.native
-  def getVpcDhcpOptions(): js.Promise[GetVpcDhcpOptionsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcDhcpOptions", "getVpcDhcpOptions")
-  @js.native
-  def getVpcDhcpOptions(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcDhcpOptionsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcDhcpOptions", "getVpcDhcpOptions")
-  @js.native
-  def getVpcDhcpOptions(args: GetVpcDhcpOptionsArgs): js.Promise[GetVpcDhcpOptionsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpcDhcpOptions", "getVpcDhcpOptions")
-  @js.native
-  def getVpcDhcpOptions(args: GetVpcDhcpOptionsArgs, opts: InvokeOptions): js.Promise[GetVpcDhcpOptionsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcDhcpOptions(): js.Promise[GetVpcDhcpOptionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcDhcpOptions")().asInstanceOf[js.Promise[GetVpcDhcpOptionsResult]]
+  @scala.inline
+  def getVpcDhcpOptions(args: Unit, opts: InvokeOptions): js.Promise[GetVpcDhcpOptionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcDhcpOptions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcDhcpOptionsResult]]
+  @scala.inline
+  def getVpcDhcpOptions(args: GetVpcDhcpOptionsArgs): js.Promise[GetVpcDhcpOptionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcDhcpOptions")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcDhcpOptionsResult]]
+  @scala.inline
+  def getVpcDhcpOptions(args: GetVpcDhcpOptionsArgs, opts: InvokeOptions): js.Promise[GetVpcDhcpOptionsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcDhcpOptions")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcDhcpOptionsResult]]
+  
   trait GetVpcDhcpOptionsArgs extends StObject {
     
     /**
       * The EC2 DHCP Options ID.
       */
-    val dhcpOptionsId: js.UndefOr[String] = js.native
+    val dhcpOptionsId: js.UndefOr[String] = js.undefined
     
     /**
       * List of custom filters as described below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcDhcpOptionsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcDhcpOptionsFilter]] = js.undefined
     
     /**
       * A map of tags assigned to the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcDhcpOptionsArgs {
     
@@ -75,60 +73,59 @@ object getVpcDhcpOptionsMod {
     }
   }
   
-  @js.native
   trait GetVpcDhcpOptionsResult extends StObject {
     
     /**
       * The ARN of the DHCP Options Set.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * EC2 DHCP Options ID
       */
-    val dhcpOptionsId: String = js.native
+    val dhcpOptionsId: String
     
     /**
       * The suffix domain name to used when resolving non Fully Qualified Domain Names. e.g. the `search` value in the `/etc/resolv.conf` file.
       */
-    val domainName: String = js.native
+    val domainName: String
     
     /**
       * List of name servers.
       */
-    val domainNameServers: js.Array[String] = js.native
+    val domainNameServers: js.Array[String]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcDhcpOptionsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcDhcpOptionsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * List of NETBIOS name servers.
       */
-    val netbiosNameServers: js.Array[String] = js.native
+    val netbiosNameServers: js.Array[String]
     
     /**
       * The NetBIOS node type (1, 2, 4, or 8). For more information about these node types, see [RFC 2132](http://www.ietf.org/rfc/rfc2132.txt).
       */
-    val netbiosNodeType: String = js.native
+    val netbiosNodeType: String
     
     /**
       * List of NTP servers.
       */
-    val ntpServers: js.Array[String] = js.native
+    val ntpServers: js.Array[String]
     
     /**
       * The ID of the AWS account that owns the DHCP options set.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * A map of tags assigned to the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetVpcDhcpOptionsResult {
     

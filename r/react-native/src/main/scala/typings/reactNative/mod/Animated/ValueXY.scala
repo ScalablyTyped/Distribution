@@ -5,7 +5,6 @@ import typings.reactNative.anon.X
 import typings.reactNative.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "Animated.ValueXY")

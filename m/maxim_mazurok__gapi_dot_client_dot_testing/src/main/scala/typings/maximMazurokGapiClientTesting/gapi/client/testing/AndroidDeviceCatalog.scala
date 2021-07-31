@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidDeviceCatalog extends StObject {
   
   /** The set of supported Android device models. */
-  var models: js.UndefOr[js.Array[AndroidModel]] = js.native
+  var models: js.UndefOr[js.Array[AndroidModel]] = js.undefined
   
   /** The set of supported runtime configurations. */
-  var runtimeConfiguration: js.UndefOr[AndroidRuntimeConfiguration] = js.native
+  var runtimeConfiguration: js.UndefOr[AndroidRuntimeConfiguration] = js.undefined
   
   /** The set of supported Android OS versions. */
-  var versions: js.UndefOr[js.Array[AndroidVersion]] = js.native
+  var versions: js.UndefOr[js.Array[AndroidVersion]] = js.undefined
 }
 object AndroidDeviceCatalog {
   

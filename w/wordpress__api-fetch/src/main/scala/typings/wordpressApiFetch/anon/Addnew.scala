@@ -2,73 +2,71 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Addnew extends StObject {
   
-  var add_new: String = js.native
+  var add_new: String
   
-  var add_new_item: String = js.native
+  var add_new_item: String
   
-  var all_items: String = js.native
+  var all_items: String
   
-  var archives: String = js.native
+  var archives: String
   
-  var attributes: String = js.native
+  var attributes: String
   
-  var edit_item: String = js.native
+  var edit_item: String
   
-  var featured_image: String = js.native
+  var featured_image: String
   
-  var filter_items_list: String = js.native
+  var filter_items_list: String
   
-  var insert_into_item: String = js.native
+  var insert_into_item: String
   
-  var item_published: String = js.native
+  var item_published: String
   
-  var item_published_privately: String = js.native
+  var item_published_privately: String
   
-  var item_reverted_to_draft: String = js.native
+  var item_reverted_to_draft: String
   
-  var item_scheduled: String = js.native
+  var item_scheduled: String
   
-  var item_updated: String = js.native
+  var item_updated: String
   
-  var items_list: String = js.native
+  var items_list: String
   
-  var items_list_navigation: String = js.native
+  var items_list_navigation: String
   
-  var menu_name: String = js.native
+  var menu_name: String
   
-  var name: String = js.native
+  var name: String
   
-  var name_admin_bar: String = js.native
+  var name_admin_bar: String
   
-  var new_item: String = js.native
+  var new_item: String
   
-  var not_found: String = js.native
+  var not_found: String
   
-  var not_found_in_trash: String = js.native
+  var not_found_in_trash: String
   
-  var parent_item_colon: String = js.native
+  var parent_item_colon: String
   
-  var remove_featured_image: String = js.native
+  var remove_featured_image: String
   
-  var search_items: String = js.native
+  var search_items: String
   
-  var set_featured_image: String = js.native
+  var set_featured_image: String
   
-  var singular_name: String = js.native
+  var singular_name: String
   
-  var uploaded_to_this_item: String = js.native
+  var uploaded_to_this_item: String
   
-  var use_featured_image: String = js.native
+  var use_featured_image: String
   
-  var view_item: String = js.native
+  var view_item: String
   
-  var view_items: String = js.native
+  var view_items: String
 }
 object Addnew {
   

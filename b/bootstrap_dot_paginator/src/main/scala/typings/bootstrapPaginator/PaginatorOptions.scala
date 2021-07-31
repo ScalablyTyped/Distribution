@@ -2,25 +2,23 @@ package typings.bootstrapPaginator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginatorOptions extends StObject {
   
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
-  var bootstrapMajorVersion: js.UndefOr[Double] = js.native
+  var bootstrapMajorVersion: js.UndefOr[Double] = js.undefined
   
-  var bootstrapTooltipOptions: js.UndefOr[js.Object] = js.native
+  var bootstrapTooltipOptions: js.UndefOr[js.Object] = js.undefined
   
-  var currentPage: js.UndefOr[Double] = js.native
+  var currentPage: js.UndefOr[Double] = js.undefined
   
-  var itemContainerClass: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.native
+  var itemContainerClass: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.undefined
   
-  var itemTexts: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.native
+  var itemTexts: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.undefined
   
-  var numberOfPages: js.UndefOr[Double] = js.native
+  var numberOfPages: js.UndefOr[Double] = js.undefined
   
   var onPageChanged: js.UndefOr[
     js.Function4[
@@ -30,7 +28,7 @@ trait PaginatorOptions extends StObject {
       /* page */ Double, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onPageClicked: js.UndefOr[
     js.Function4[
@@ -40,19 +38,19 @@ trait PaginatorOptions extends StObject {
       /* page */ Double, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var pageUrl: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.native
+  var pageUrl: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.undefined
   
-  var shouldShowPage: js.UndefOr[Boolean] = js.native
+  var shouldShowPage: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var tooltipTitles: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.native
+  var tooltipTitles: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.undefined
   
-  var totalPages: js.UndefOr[Double] = js.native
+  var totalPages: js.UndefOr[Double] = js.undefined
   
-  var useBootstrapTooltip: js.UndefOr[Boolean] = js.native
+  var useBootstrapTooltip: js.UndefOr[Boolean] = js.undefined
 }
 object PaginatorOptions {
   

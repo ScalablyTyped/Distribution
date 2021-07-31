@@ -8,27 +8,25 @@ import typings.stripeV3.stripeV3Strings.samsung_pay
 import typings.stripeV3.stripeV3Strings.visa_checkout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amexexpresscheckout extends StObject {
   
-  var amex_express_checkout: js.UndefOr[js.Any] = js.native
+  var amex_express_checkout: js.UndefOr[js.Any] = js.undefined
   
-  var apple_pay: js.UndefOr[js.Any] = js.native
+  var apple_pay: js.UndefOr[js.Any] = js.undefined
   
-  var dynamic_last4: js.UndefOr[js.Any] = js.native
+  var dynamic_last4: js.UndefOr[js.Any] = js.undefined
   
-  var google_pay: js.UndefOr[js.Any] = js.native
+  var google_pay: js.UndefOr[js.Any] = js.undefined
   
-  var masterpass: js.UndefOr[js.Any] = js.native
+  var masterpass: js.UndefOr[js.Any] = js.undefined
   
-  var samsung_pay: js.UndefOr[js.Any] = js.native
+  var samsung_pay: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout = js.native
+  var `type`: amex_express_checkout | apple_pay | google_pay | masterpass | samsung_pay | visa_checkout
   
-  var visa_checkout: js.UndefOr[js.Any] = js.native
+  var visa_checkout: js.UndefOr[js.Any] = js.undefined
 }
 object Amexexpresscheckout {
   

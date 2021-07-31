@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomField extends StObject {
   
   /**
@@ -14,48 +12,48 @@ trait CustomField extends StObject {
     * - `text` (default)
     * - `list`
     */
-  var customFieldType: js.UndefOr[String] = js.native
+  var customFieldType: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The id of the custom field.
     */
-  var fieldId: js.UndefOr[String] = js.native
+  var fieldId: js.UndefOr[String] = js.undefined
   
   /**
     * For a list custom field, this is an array of strings that represent the items in a list.
     *
     * Maximum Length: 2,000 characters.
     */
-  var listItems: js.UndefOr[js.Array[String]] = js.native
+  var listItems: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the custom field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the signer must complete the custom field.
     */
-  var required: js.UndefOr[String] = js.native
+  var required: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the custom field displays at the top of the Certificate of Completion.
     */
-  var show: js.UndefOr[String] = js.native
+  var show: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the value of the custom field.
     *
     * Maximum Length: 2,000 characters.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CustomField {
   

@@ -7,14 +7,19 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserFilesMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "BrowserDownloads")
   @js.native
-  class BrowserDownloads_ () extends IOHandler {
+  class BrowserDownloads_ ()
+    extends StObject
+       with IOHandler {
     def this(fileNamePrefix: String) = this()
     
     val jsonAnchor: js.Any = js.native
@@ -36,18 +41,15 @@ object browserFilesMod {
     val URL_SCHEME: /* "downloads://" */ String = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "browserDownloads")
-  @js.native
-  def browserDownloads(): IOHandler = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "browserDownloads")
-  @js.native
-  def browserDownloads(fileNamePrefix: String): IOHandler = js.native
+  @scala.inline
+  def browserDownloads(): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserDownloads")().asInstanceOf[IOHandler]
+  @scala.inline
+  def browserDownloads(fileNamePrefix: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserDownloads")(fileNamePrefix.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "browserDownloadsRouter")
   @js.native
   val browserDownloadsRouter: IORouter = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "browserFiles")
-  @js.native
-  def browserFiles(files: js.Array[File]): IOHandler = js.native
+  @scala.inline
+  def browserFiles(files: js.Array[File]): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserFiles")(files.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
 }

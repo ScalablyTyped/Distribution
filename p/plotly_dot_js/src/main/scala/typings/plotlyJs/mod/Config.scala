@@ -14,56 +14,54 @@ import typings.plotlyJs.plotlyJsStrings.resetPlussignautosize
 import typings.plotlyJs.plotlyJsStrings.transparent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
   /** DO autosize once regardless of layout.autosize (use default width or height values otherwise) */
-  var autosizable: Boolean = js.native
+  var autosizable: Boolean
   
   /** display the mode bar (true, false, or 'hover') */
-  var displayModeBar: hover | Boolean = js.native
+  var displayModeBar: hover | Boolean
   
   /** add the plotly logo on the end of the mode bar */
-  var displaylogo: Boolean = js.native
+  var displaylogo: Boolean
   
   /** double click interaction (false, 'reset', 'autosize' or 'reset+autosize') */
-  var doubleClick: resetPlussignautosize | reset | autosize | `false` = js.native
+  var doubleClick: resetPlussignautosize | reset | autosize | `false`
   
   /** we can edit titles, move annotations, etc */
-  var editable: Boolean = js.native
+  var editable: Boolean
   
-  var edits: PartialEdits = js.native
+  var edits: PartialEdits
   
   /** if we DO autosize, do we fill the container or the screen? */
-  var fillFrame: Boolean = js.native
+  var fillFrame: Boolean
   
   /** if we DO autosize, set the frame margins in percents of plot size */
-  var frameMargins: Double = js.native
+  var frameMargins: Double
   
   /** Set global transform to be applied to all traces with no specification needed */
-  var globalTransforms: js.Array[_] = js.native
+  var globalTransforms: js.Array[js.Any]
   
   /** text appearing in the sendData link */
-  var linkText: String = js.native
+  var linkText: String
   
   /** Which localization should we use? Should be a string like 'en' or 'en-US' */
-  var locale: String = js.native
+  var locale: String
   
   /**
     * Turn all console logging on or off (errors will be thrown)
     * This should ONLY be set via Plotly.setPlotConfig
     */
-  var logging: Boolean | `0` | `1` | `2` = js.native
+  var logging: Boolean | `0` | `1` | `2`
   
   /**
     * Mapbox access token (required to plot mapbox trace types)
     * If using an Mapbox Atlas server, set this option to '',
     * so that plotly.js won't attempt to authenticate to the public Mapbox server.
     */
-  var mapboxAccessToken: String = js.native
+  var mapboxAccessToken: String
   
   /**
     * fully custom mode bar buttons as nested array, where the outer
@@ -71,57 +69,57 @@ trait Config extends StObject {
     * buttons config objects or names of default buttons
     * (see ./components/modebar/buttons.js for more info)
     */
-  var modeBarButtons: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false` = js.native
+  var modeBarButtons: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`
   
   /** add mode bar button using config objects (see ./components/modebar/buttons.js for list of arguments) */
-  var modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons] = js.native
+  var modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons]
   
   /** remove mode bar button by name (see ./components/modebar/buttons.js for the list of names) */
-  var modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons] = js.native
+  var modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons]
   
   /** increase the pixel ratio for Gl plot images */
-  var plotGlPixelRatio: Double = js.native
+  var plotGlPixelRatio: Double
   
   /**
     * When set it determines base URL for the 'Edit in Chart Studio' `showEditInChartStudio`/`showSendToCloud` mode bar button and the showLink/sendData on-graph link.
     * To enable sending your data to Chart Studio Cloud, you need to set both `plotlyServerURL` to 'https://chart-studio.plotly.com' and also set `showSendToCloud` to true.
     * @default ''
     */
-  var plotlyServerURL: String = js.native
+  var plotlyServerURL: String
   
   /** set the length of the undo/redo queue */
-  var queueLength: Double = js.native
+  var queueLength: Double
   
   /** Make the chart responsive to window size */
-  var responsive: Boolean = js.native
+  var responsive: Boolean
   
   /** mousewheel or two-finger scroll zooms the plot */
-  var scrollZoom: Boolean = js.native
+  var scrollZoom: Boolean
   
   /** if we show a link, does it contain data or just link to a plotly file? */
-  var sendData: Boolean = js.native
+  var sendData: Boolean
   
   /**
     * function to add the background color to a different container
     * or 'opaque' to ensure there's white behind it
     */
-  def setBackground(): String | opaque | transparent = js.native
+  def setBackground(): String | opaque | transparent
   
   /** enable axis pan/zoom drag handles */
-  var showAxisDragHandles: Boolean = js.native
+  var showAxisDragHandles: Boolean
   
   /** enable direct range entry at the pan/zoom drag points (drag handles must be enabled above) */
-  var showAxisRangeEntryBoxes: Boolean = js.native
+  var showAxisRangeEntryBoxes: Boolean
   
   /**
     * Same as `showSendToCloud`, but use a pencil icon instead of a floppy-disk.
     * Note that if both `showSendToCloud` and `showEditInChartStudio` are turned, only `showEditInChartStudio` will be honored.
     * @default false
     */
-  var showEditInChartStudio: Boolean = js.native
+  var showEditInChartStudio: Boolean
   
   /** link to open this plot in plotly */
-  var showLink: Boolean = js.native
+  var showLink: Boolean
   
   /**
     * Should we include a ModeBar button, labeled "Edit in Chart Studio",
@@ -132,22 +130,22 @@ trait Config extends StObject {
     * However that server does not persist your data until you arrive at the Chart Studio and explicitly click "Save".
     * @default false
     */
-  var showSendToCloud: Boolean = js.native
+  var showSendToCloud: Boolean
   
   /** false or function adding source(s) to linkText <text> */
-  var showSources: Boolean = js.native
+  var showSources: Boolean
   
   /** new users see some hints about interactivity */
-  var showTips: Boolean = js.native
+  var showTips: Boolean
   
   /** no interactivity, for export or image generation */
-  var staticPlot: Boolean = js.native
+  var staticPlot: Boolean
   
   /** override the defaults for the toImageButton */
-  var toImageButtonOptions: Partialfilenamestringscal = js.native
+  var toImageButtonOptions: Partialfilenamestringscal
   
   /** URL to topojson files used in geo charts */
-  var topojsonURL: String = js.native
+  var topojsonURL: String
 }
 object Config {
   
@@ -161,7 +159,7 @@ object Config {
     edits: PartialEdits,
     fillFrame: Boolean,
     frameMargins: Double,
-    globalTransforms: js.Array[_],
+    globalTransforms: js.Array[js.Any],
     linkText: String,
     locale: String,
     logging: Boolean | `0` | `1` | `2`,
@@ -219,7 +217,7 @@ object Config {
     def setFrameMargins(value: Double): Self = StObject.set(x, "frameMargins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTransforms(value: js.Array[_]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
+    def setGlobalTransforms(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGlobalTransformsVarargs(value: js.Any*): Self = StObject.set(x, "globalTransforms", js.Array(value :_*))

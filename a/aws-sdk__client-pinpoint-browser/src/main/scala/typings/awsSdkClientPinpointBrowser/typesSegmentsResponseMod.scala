@@ -5,23 +5,21 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentResponseMod.UnmarshalledS
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentsResponseMod {
   
-  @js.native
   trait SegmentsResponse extends StObject {
     
     /**
       * The list of segments.
       */
-    var Item: js.UndefOr[js.Array[SegmentResponse] | Iterable[SegmentResponse]] = js.native
+    var Item: js.UndefOr[js.Array[SegmentResponse] | Iterable[SegmentResponse]] = js.undefined
     
     /**
       * An identifier used to retrieve the next page of results. The token is null if no additional pages exist.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   object SegmentsResponse {
     
@@ -51,14 +49,15 @@ object typesSegmentsResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentsResponse extends SegmentsResponse {
+  trait UnmarshalledSegmentsResponse
+    extends StObject
+       with SegmentsResponse {
     
     /**
       * The list of segments.
       */
     @JSName("Item")
-    var Item_UnmarshalledSegmentsResponse: js.UndefOr[js.Array[UnmarshalledSegmentResponse]] = js.native
+    var Item_UnmarshalledSegmentsResponse: js.UndefOr[js.Array[UnmarshalledSegmentResponse]] = js.undefined
   }
   object UnmarshalledSegmentsResponse {
     

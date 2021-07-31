@@ -2,21 +2,19 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICreateRuleOptions extends StObject {
   
-  var correlationIdFilter: String = js.native
+  var correlationIdFilter: String
   
-  var falseFilter: String = js.native
+  var falseFilter: String
   
-  var sqlExpressionFilter: String = js.native
+  var sqlExpressionFilter: String
   
-  var sqlRuleAction: String = js.native
+  var sqlRuleAction: String
   
-  var trueFilter: String = js.native
+  var trueFilter: String
 }
 object ICreateRuleOptions {
   

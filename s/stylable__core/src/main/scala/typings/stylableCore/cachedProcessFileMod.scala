@@ -5,25 +5,26 @@ import typings.stylableCore.anon.Mtime
 import typings.stylableCore.stylableCoreStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cachedProcessFileMod {
   
-  @JSImport("@stylable/core/cjs/cached-process-file", "cachedProcessFile")
+  @JSImport("@stylable/core/cjs/cached-process-file", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def cachedProcessFile[T](
     processor: processFn[T],
     fs: MinimalFS,
     resolvePath: js.Function2[/* path */ String, /* context */ js.UndefOr[String], String]
-  ): FileProcessor[T] = js.native
+  ): FileProcessor[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cachedProcessFile")(processor.asInstanceOf[js.Any], fs.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[FileProcessor[T]]
   
-  @js.native
   trait CacheItem[T] extends StObject {
     
-    var stat: Mtime = js.native
+    var stat: Mtime
     
-    var value: T = js.native
+    var value: T
   }
   object CacheItem {
     
@@ -34,7 +35,7 @@ object cachedProcessFileMod {
     }
     
     @scala.inline
-    implicit class CacheItemMutableBuilder[Self <: CacheItem[_], T] (val x: Self with CacheItem[T]) extends AnyVal {
+    implicit class CacheItemMutableBuilder[Self <: CacheItem[?], T] (val x: Self & CacheItem[T]) extends AnyVal {
       
       @scala.inline
       def setStat(value: Mtime): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
@@ -54,9 +55,9 @@ object cachedProcessFileMod {
     var postProcessors: js.Array[js.Function2[/* value */ T, /* path */ String, T]] = js.native
     
     def process(fullpath: String): T = js.native
-    def process(fullpath: String, ignoreCache: js.UndefOr[scala.Nothing], context: String): T = js.native
     def process(fullpath: String, ignoreCache: Boolean): T = js.native
     def process(fullpath: String, ignoreCache: Boolean, context: String): T = js.native
+    def process(fullpath: String, ignoreCache: Unit, context: String): T = js.native
     
     def processContent(content: String, fullpath: String): T = js.native
     
@@ -64,15 +65,14 @@ object cachedProcessFileMod {
     def resolvePath(path: String, context: String): String = js.native
   }
   
-  @js.native
   trait MinimalFS extends StObject {
     
     @JSName("readFileSync")
-    def readFileSync_utf8(fullpath: String, encoding: utf8): String = js.native
+    def readFileSync_utf8(fullpath: String, encoding: utf8): String
     
-    def readlinkSync(path: String): String = js.native
+    def readlinkSync(path: String): String
     
-    def statSync(fullpath: String): Mtime = js.native
+    def statSync(fullpath: String): Mtime
   }
   object MinimalFS {
     

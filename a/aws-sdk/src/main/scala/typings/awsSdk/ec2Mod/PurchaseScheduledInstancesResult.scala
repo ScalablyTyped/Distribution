@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseScheduledInstancesResult extends StObject {
   
   /**
     * Information about the Scheduled Instances.
     */
-  var ScheduledInstanceSet: js.UndefOr[PurchasedScheduledInstanceSet] = js.native
+  var ScheduledInstanceSet: js.UndefOr[PurchasedScheduledInstanceSet] = js.undefined
 }
 object PurchaseScheduledInstancesResult {
   

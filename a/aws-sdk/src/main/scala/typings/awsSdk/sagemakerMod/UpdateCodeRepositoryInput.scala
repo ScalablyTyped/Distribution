@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCodeRepositoryInput extends StObject {
   
   /**
     * The name of the Git repository to update.
     */
-  var CodeRepositoryName: EntityName = js.native
+  var CodeRepositoryName: EntityName
   
   /**
     * The configuration of the git repository, including the URL and the Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the credentials used to access the repository. The secret must have a staging label of AWSCURRENT and must be in the following format:  {"username": UserName, "password": Password} 
     */
-  var GitConfig: js.UndefOr[GitConfigForUpdate] = js.native
+  var GitConfig: js.UndefOr[GitConfigForUpdate] = js.undefined
 }
 object UpdateCodeRepositoryInput {
   

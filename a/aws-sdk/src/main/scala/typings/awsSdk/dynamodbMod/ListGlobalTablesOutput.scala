@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGlobalTablesOutput extends StObject {
   
   /**
     * List of global table names.
     */
-  var GlobalTables: js.UndefOr[GlobalTableList] = js.native
+  var GlobalTables: js.UndefOr[GlobalTableList] = js.undefined
   
   /**
     * Last evaluated global table name.
     */
-  var LastEvaluatedGlobalTableName: js.UndefOr[TableName] = js.native
+  var LastEvaluatedGlobalTableName: js.UndefOr[TableName] = js.undefined
 }
 object ListGlobalTablesOutput {
   

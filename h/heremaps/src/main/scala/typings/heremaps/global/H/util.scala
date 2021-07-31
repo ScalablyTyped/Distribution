@@ -1,9 +1,9 @@
 package typings.heremaps.global.H
 
 import typings.heremaps.H.util.ContextItem.Options
+import typings.heremaps.H.util.Request.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** util *****/
@@ -17,7 +17,8 @@ object util {
   @JSGlobal("H.util.Cache")
   @js.native
   class Cache protected ()
-    extends typings.heremaps.H.util.Cache {
+    extends StObject
+       with typings.heremaps.H.util.Cache {
     /**
       * Constructor
       * @param maxSize {number} - the maximum size of the cache
@@ -28,12 +29,12 @@ object util {
     def this(maxSize: Double, opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit]) = this()
     def this(
       maxSize: Double,
-      opt_onDrop: js.UndefOr[scala.Nothing],
+      opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],
       opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
     ) = this()
     def this(
       maxSize: Double,
-      opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],
+      opt_onDrop: Unit,
       opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
     ) = this()
   }
@@ -48,7 +49,8 @@ object util {
   @JSGlobal("H.util.ChangeEvent")
   @js.native
   class ChangeEvent protected ()
-    extends typings.heremaps.H.util.ChangeEvent {
+    extends StObject
+       with typings.heremaps.H.util.ChangeEvent {
     /**
       * Constructor
       * @param type {string} - The type of the event
@@ -56,6 +58,30 @@ object util {
       * @param oldValue {*} - The previous value of the property
       */
     def this(`type`: String, newValue: js.Any, oldValue: js.Any) = this()
+    
+    /* CompleteClass */
+    var currentTarget: js.Any = js.native
+    
+    /* CompleteClass */
+    var defaultPrevented: Boolean = js.native
+    
+    /**
+      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /**
+      * Stops propagation for current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /* CompleteClass */
+    var target: js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
   }
   
   /**
@@ -69,7 +95,8 @@ object util {
     * @param opt_options {H.util.ContextItem.Options=} - The values to initialize this context item
     */
   class ContextItem ()
-    extends typings.heremaps.H.util.ContextItem {
+    extends StObject
+       with typings.heremaps.H.util.ContextItem {
     def this(opt_options: Options) = this()
   }
   object ContextItem {
@@ -95,7 +122,8 @@ object util {
     * Constructor
     */
   class Disposable ()
-    extends typings.heremaps.H.util.Disposable
+    extends StObject
+       with typings.heremaps.H.util.Disposable
   
   /**
     * Base Event class which is used for all events dispatched by any EventTarget within the api.
@@ -107,7 +135,8 @@ object util {
   @JSGlobal("H.util.Event")
   @js.native
   class Event protected ()
-    extends typings.heremaps.H.util.Event {
+    extends StObject
+       with typings.heremaps.H.util.Event {
     /**
       * Constructor
       * @param type {string} - Event Type.
@@ -115,6 +144,30 @@ object util {
       */
     def this(`type`: String) = this()
     def this(`type`: String, opt_target: js.Any) = this()
+    
+    /* CompleteClass */
+    var currentTarget: js.Any = js.native
+    
+    /* CompleteClass */
+    var defaultPrevented: Boolean = js.native
+    
+    /**
+      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /**
+      * Stops propagation for current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /* CompleteClass */
+    var target: js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
   }
   
   /**
@@ -126,7 +179,8 @@ object util {
     * Constructor
     */
   class EventTarget ()
-    extends typings.heremaps.H.util.EventTarget
+    extends StObject
+       with typings.heremaps.H.util.EventTarget
   
   /**
     * This class represents an list of ordered entries which dispatches events when the list is modified.
@@ -138,7 +192,8 @@ object util {
   @JSGlobal("H.util.OList")
   @js.native
   class OList ()
-    extends typings.heremaps.H.util.OList
+    extends StObject
+       with typings.heremaps.H.util.OList
   object OList {
     
     /**
@@ -151,7 +206,8 @@ object util {
     @JSGlobal("H.util.OList.Event")
     @js.native
     class Event protected ()
-      extends typings.heremaps.H.util.OList.Event {
+      extends StObject
+         with typings.heremaps.H.util.OList.Event {
       /**
         * Constructor
         * @param list {H.util.OList} - The OList instance which is emitting the event
@@ -169,6 +225,30 @@ object util {
         removed: js.Any,
         moved: js.Any
       ) = this()
+      
+      /* CompleteClass */
+      var currentTarget: js.Any = js.native
+      
+      /* CompleteClass */
+      var defaultPrevented: Boolean = js.native
+      
+      /**
+        * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
+        */
+      /* CompleteClass */
+      override def preventDefault(): Unit = js.native
+      
+      /**
+        * Stops propagation for current event.
+        */
+      /* CompleteClass */
+      override def stopPropagation(): Unit = js.native
+      
+      /* CompleteClass */
+      var target: js.Any = js.native
+      
+      /* CompleteClass */
+      var `type`: String = js.native
     }
   }
   
@@ -183,10 +263,39 @@ object util {
     * @param opt_total {number=} - The total number of processing steps to complete this request, default is 1
     */
   class Request ()
-    extends typings.heremaps.H.util.Request {
+    extends StObject
+       with typings.heremaps.H.util.Request {
     def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit]) = this()
-    def this(opt_onprogress: js.UndefOr[scala.Nothing], opt_total: Double) = this()
     def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit], opt_total: Double) = this()
+    def this(opt_onprogress: Unit, opt_total: Double) = this()
+    
+    /**
+      * Returns the number of processingsteps which have been failed
+      * @returns {number}
+      */
+    /* CompleteClass */
+    override def getFailed(): Double = js.native
+    
+    /**
+      * Returns the number of steps which are already processed by this request
+      * @returns {number}
+      */
+    /* CompleteClass */
+    override def getProcessed(): Double = js.native
+    
+    /**
+      * Returns the state of this request
+      * @returns {H.util.Request.State}
+      */
+    /* CompleteClass */
+    override def getState(): State = js.native
+    
+    /**
+      * Returns the number of processing steps to complete this request
+      * @returns {number}
+      */
+    /* CompleteClass */
+    override def getTotal(): Double = js.native
   }
   object Request {
     
@@ -198,17 +307,17 @@ object util {
     object State extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.util.Request.State with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.util.Request.State & Double] = js.native
       
-      /* 3 */ val CANCELLED: typings.heremaps.H.util.Request.State.CANCELLED with Double = js.native
+      /* 3 */ val CANCELLED: typings.heremaps.H.util.Request.State.CANCELLED & Double = js.native
       
-      /* 2 */ val COMPLETE: typings.heremaps.H.util.Request.State.COMPLETE with Double = js.native
+      /* 2 */ val COMPLETE: typings.heremaps.H.util.Request.State.COMPLETE & Double = js.native
       
-      /* 4 */ val ERROR: typings.heremaps.H.util.Request.State.ERROR with Double = js.native
+      /* 4 */ val ERROR: typings.heremaps.H.util.Request.State.ERROR & Double = js.native
       
-      /* 0 */ val PENDING: typings.heremaps.H.util.Request.State.PENDING with Double = js.native
+      /* 0 */ val PENDING: typings.heremaps.H.util.Request.State.PENDING & Double = js.native
       
-      /* 1 */ val PROCESSING: typings.heremaps.H.util.Request.State.PROCESSING with Double = js.native
+      /* 1 */ val PROCESSING: typings.heremaps.H.util.Request.State.PROCESSING & Double = js.native
     }
   }
   
@@ -220,8 +329,13 @@ object util {
     @JSGlobal("H.util.animation.ease")
     @js.native
     class ease ()
-      extends typings.heremaps.H.util.animation.ease
+      extends StObject
+         with typings.heremaps.H.util.animation.ease
     object ease {
+      
+      @JSGlobal("H.util.animation.ease")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * This function defines ease in and out with slope.
@@ -229,9 +343,8 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @JSGlobal("H.util.animation.ease.EASE_IN_OUT_QUINT")
-      @js.native
-      def EASE_IN_OUT_QUINT(`val`: Double): Double = js.native
+      @scala.inline
+      def EASE_IN_OUT_QUINT(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_IN_OUT_QUINT")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines quadratic ease in.
@@ -239,9 +352,8 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @JSGlobal("H.util.animation.ease.EASE_IN_QUAD")
-      @js.native
-      def EASE_IN_QUAD(`val`: Double): Double = js.native
+      @scala.inline
+      def EASE_IN_QUAD(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_IN_QUAD")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines ease out with circ function.
@@ -249,9 +361,8 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @JSGlobal("H.util.animation.ease.EASE_OUT_CIRC")
-      @js.native
-      def EASE_OUT_CIRC(`val`: Double): Double = js.native
+      @scala.inline
+      def EASE_OUT_CIRC(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_OUT_CIRC")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines quadratic ease out.
@@ -259,9 +370,8 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @JSGlobal("H.util.animation.ease.EASE_OUT_QUAD")
-      @js.native
-      def EASE_OUT_QUAD(`val`: Double): Double = js.native
+      @scala.inline
+      def EASE_OUT_QUAD(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("EASE_OUT_QUAD")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * This function defines linear ease.
@@ -269,9 +379,8 @@ object util {
         * @returns {number} - the translated value
         */
       /* static member */
-      @JSGlobal("H.util.animation.ease.LINEAR")
-      @js.native
-      def LINEAR(`val`: Double): Double = js.native
+      @scala.inline
+      def LINEAR(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEAR")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
     }
   }
   

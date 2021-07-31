@@ -2,33 +2,31 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorldExportJobRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The IAM role that the world export process uses to access the Amazon S3 bucket and put the export.
     */
-  var iamRole: IamRole = js.native
+  var iamRole: IamRole
   
-  var outputLocation: OutputLocation = js.native
+  var outputLocation: OutputLocation
   
   /**
     * A map that contains tag keys and tag values that are attached to the world export job.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * A list of Amazon Resource Names (arns) that correspond to worlds to export.
     */
-  var worlds: Arns = js.native
+  var worlds: Arns
 }
 object CreateWorldExportJobRequest {
   

@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorMatrixHelpers extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait ColorMatrixHelpers extends StObject {
     * @param outer
     * @param inner
     */
-  def concat(outer: SkColorMatrix, inner: SkColorMatrix): SkColorMatrix = js.native
+  def concat(outer: SkColorMatrix, inner: SkColorMatrix): SkColorMatrix
   
   /**
     * Returns an identity SkColorMatrix.
     */
-  def identity(): SkColorMatrix = js.native
+  def identity(): SkColorMatrix
   
   /**
     * Sets the 4 "special" params that will translate the colors after they are multiplied
@@ -29,7 +27,7 @@ trait ColorMatrixHelpers extends StObject {
     * @param db - delta blue
     * @param da - delta alpha
     */
-  def postTranslate(m: SkColorMatrix, dr: Double, dg: Double, db: Double, da: Double): SkColorMatrix = js.native
+  def postTranslate(m: SkColorMatrix, dr: Double, dg: Double, db: Double, da: Double): SkColorMatrix
   
   /**
     * Returns a new SkColorMatrix that is rotated around a given axis.
@@ -37,7 +35,7 @@ trait ColorMatrixHelpers extends StObject {
     * @param sine - sin(angle)
     * @param cosine - cos(angle)
     */
-  def rotated(axis: Double, sine: Double, cosine: Double): SkColorMatrix = js.native
+  def rotated(axis: Double, sine: Double, cosine: Double): SkColorMatrix
   
   /**
     * Returns a new SkColorMatrix that scales the colors as specified.
@@ -46,7 +44,7 @@ trait ColorMatrixHelpers extends StObject {
     * @param blueScale
     * @param alphaScale
     */
-  def scaled(redScale: Double, greenScale: Double, blueScale: Double, alphaScale: Double): SkColorMatrix = js.native
+  def scaled(redScale: Double, greenScale: Double, blueScale: Double, alphaScale: Double): SkColorMatrix
 }
 object ColorMatrixHelpers {
   

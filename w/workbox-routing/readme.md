@@ -10,9 +10,9 @@ A service worker helper library to route request URLs to handlers.
 | ------------------ | :-------------: |
 | Full name          | workbox-routing |
 | Keywords           | workbox, workboxjs, service worker, sw, router, routing |
-| # releases         | 31 |
-| # dependents       | 16 |
-| # downloads        | 102583237 |
+| # releases         | 29 |
+| # dependents       | 20 |
+| # downloads        | 118546552 |
 | # stars            | 0 |
 
 ## Links

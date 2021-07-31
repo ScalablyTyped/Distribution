@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ClientEventsGetResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientEventsGetResponse extends StObject {
   
   /** ClientEventsGetResponse events */
-  var events: js.UndefOr[js.Array[IEvent] | Null] = js.native
+  var events: js.UndefOr[js.Array[IEvent] | Null] = js.undefined
   
   /** ClientEventsGetResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientEventsGetResponse {
   

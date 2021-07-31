@@ -2,24 +2,23 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhileStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
   @JSName("type")
-  var type_WhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement = js.native
+  var type_WhileStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement
 }
 object WhileStatement {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement): WhileStatement = {
+  def apply(): WhileStatement = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[WhileStatement]
   }
   

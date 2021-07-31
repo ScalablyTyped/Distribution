@@ -3,22 +3,23 @@ package typings.luminoAlgorithm
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduceMod {
   
-  @JSImport("@lumino/algorithm/types/reduce", "reduce")
+  @JSImport("@lumino/algorithm/types/reduce", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def reduce[T](
     `object`: IterableOrArrayLike[T],
     fn: js.Function3[/* accumulator */ T, /* value */ T, /* index */ Double, T]
-  ): T = js.native
-  @JSImport("@lumino/algorithm/types/reduce", "reduce")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def reduce[T, U](
     `object`: IterableOrArrayLike[T],
     fn: js.Function3[/* accumulator */ U, /* value */ T, /* index */ Double, U],
     initial: U
-  ): U = js.native
+  ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initial.asInstanceOf[js.Any])).asInstanceOf[U]
 }

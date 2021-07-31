@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,11 +22,17 @@ sealed trait BUFFER_BITS extends StObject
 object BUFFER_BITS extends StObject {
   
   @js.native
-  sealed trait COLOR extends BUFFER_BITS
+  sealed trait COLOR
+    extends StObject
+       with BUFFER_BITS
   
   @js.native
-  sealed trait DEPTH extends BUFFER_BITS
+  sealed trait DEPTH
+    extends StObject
+       with BUFFER_BITS
   
   @js.native
-  sealed trait STENCIL extends BUFFER_BITS
+  sealed trait STENCIL
+    extends StObject
+       with BUFFER_BITS
 }

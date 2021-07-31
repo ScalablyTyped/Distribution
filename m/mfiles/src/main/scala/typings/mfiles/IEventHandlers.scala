@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventHandlers extends StObject {
   
-  def Add(Index: Double, EventHandler: IEventHandler): Unit = js.native
+  def Add(Index: Double, EventHandler: IEventHandler): Unit
   
-  def Clone(): IEventHandlers = js.native
+  def Clone(): IEventHandlers
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetIndexByGUID(EventHandlerGUID: String): Double = js.native
+  def GetIndexByGUID(EventHandlerGUID: String): Double
   
-  def Item(Index: Double): IEventHandler = js.native
+  def Item(Index: Double): IEventHandler
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IEventHandlers {
   

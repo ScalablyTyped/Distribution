@@ -5,36 +5,34 @@ import typings.i18n.i18n.HashedList
 import typings.i18n.i18n.TranslateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<i18n.i18nAPI> */
-  @js.native
   trait Partiali18nAPI extends StObject {
     
     var __ : js.UndefOr[
         js.Function2[/* phraseOrOptions */ String | TranslateOptions, /* repeated */ String, String]
-      ] = js.native
+      ] = js.undefined
     
-    var __h: js.UndefOr[js.Function1[/* phrase */ String, js.Array[HashedList]]] = js.native
+    var __h: js.UndefOr[js.Function1[/* phrase */ String, js.Array[HashedList]]] = js.undefined
     
-    var __l: js.UndefOr[js.Function1[/* phrase */ String, js.Array[String]]] = js.native
+    var __l: js.UndefOr[js.Function1[/* phrase */ String, js.Array[String]]] = js.undefined
     
     var __mf: js.UndefOr[
         js.Function2[/* phraseOrOptions */ String | TranslateOptions, /* repeated */ js.Any, String]
-      ] = js.native
+      ] = js.undefined
     
-    var __n: js.UndefOr[js.Function2[/* phrase */ String, /* count */ Double, String]] = js.native
+    var __n: js.UndefOr[js.Function2[/* phrase */ String, /* count */ Double, String]] = js.undefined
     
-    var getCatalog: js.UndefOr[js.Function0[GlobalCatalog]] = js.native
+    var getCatalog: js.UndefOr[js.Function0[GlobalCatalog]] = js.undefined
     
-    var getLocale: js.UndefOr[js.Function0[String]] = js.native
+    var getLocale: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var setLocale: js.UndefOr[js.Function1[/* locale */ String, Unit]] = js.native
+    var setLocale: js.UndefOr[js.Function1[/* locale */ String, Unit]] = js.undefined
   }
   object Partiali18nAPI {
     

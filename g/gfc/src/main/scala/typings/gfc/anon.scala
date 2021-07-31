@@ -3,17 +3,15 @@ package typings.gfc
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Contents extends StObject {
     
-    var contents: js.UndefOr[String] = js.native
+    var contents: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Contents {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Stderr extends StObject {
     
-    var stderr: String | Buffer = js.native
+    var stderr: String | Buffer
     
-    var stdout: String | Buffer = js.native
+    var stdout: String | Buffer
   }
   object Stderr {
     

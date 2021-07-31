@@ -11,8 +11,8 @@ JavaScript is all like _You images done yet or what?_
 | Full name          | imagesloaded |
 | Keywords           | images, loaded, ui, dom, jquery-plugin |
 | # releases         | 0 |
-| # dependents       | 136 |
-| # downloads        | 6686220 |
+| # dependents       | 147 |
+| # downloads        | 7595424 |
 | # stars            | 10 |
 
 ## Links

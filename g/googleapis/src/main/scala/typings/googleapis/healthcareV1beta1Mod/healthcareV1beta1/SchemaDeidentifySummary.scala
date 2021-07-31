@@ -2,24 +2,22 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a detailed summary of the Deidentify operation.
   */
-@js.native
 trait SchemaDeidentifySummary extends StObject {
   
   /**
     * Number of resources successfully processed.
     */
-  var successResourceCount: js.UndefOr[String] = js.native
+  var successResourceCount: js.UndefOr[String] = js.undefined
   
   /**
     * Number of stores successfully processed.
     */
-  var successStoreCount: js.UndefOr[String] = js.native
+  var successStoreCount: js.UndefOr[String] = js.undefined
 }
 object SchemaDeidentifySummary {
   

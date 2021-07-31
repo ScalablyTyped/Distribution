@@ -20,7 +20,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,7 +50,7 @@ object mod {
         Unit
       ] = js.native
     
-    var context: BaseContext with CustomT = js.native
+    var context: BaseContext & CustomT = js.native
     
     /**
       * Initialize a new context.
@@ -77,72 +76,37 @@ object mod {
       */
     def listen(): Server = js.native
     def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(handle: js.Any, backlog: Double): Server = js.native
     def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(handle: js.Any, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(options: ListenOptions): Server = js.native
     def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String): Server = js.native
-    def listen(path: String, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String, backlog: Double): Server = js.native
     def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(path: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String, backlog: Double): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: String,
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
     def listen(port: Double): Server = js.native
     def listen(port: Double, backlog: Double): Server = js.native
     def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double, hostname: String): Server = js.native
-    def listen(
-      port: Double,
-      hostname: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
     def listen(port: Double, hostname: String, backlog: Double): Server = js.native
     def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: String): Server = js.native
+    def listen(port: Unit, hostname: String, backlog: Double): Server = js.native
+    def listen(port: Unit, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double): Server = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     
     var maxIpsCount: Double = js.native
     
@@ -178,12 +142,13 @@ object mod {
       *
       * Old-style middleware will be converted.
       */
-    def use[NewStateT, NewCustomT](middleware: Middleware[StateT with NewStateT, CustomT with NewCustomT]): Application[StateT with NewStateT, CustomT with NewCustomT] = js.native
+    def use[NewStateT, NewCustomT](middleware: Middleware[StateT & NewStateT, CustomT & NewCustomT]): Application[StateT & NewStateT, CustomT & NewCustomT] = js.native
   }
   
   @js.native
   trait BaseContext
-    extends ContextDelegatedRequest
+    extends StObject
+       with ContextDelegatedRequest
        with ContextDelegatedResponse {
     
     /**
@@ -201,47 +166,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String, opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
     def assert(value: js.Any, status: Double): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: Double, msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -265,7 +190,47 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
+    def assert(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
     def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: String): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, opts: js.Object): Unit = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -302,9 +267,9 @@ object mod {
       * See: https://github.com/jshttp/http-errors
       */
     def `throw`(message: String): scala.Nothing = js.native
-    def `throw`(message: String, code: js.UndefOr[scala.Nothing], properties: js.Object): scala.Nothing = js.native
     def `throw`(message: String, code: Double): scala.Nothing = js.native
     def `throw`(message: String, code: Double, properties: js.Object): scala.Nothing = js.native
+    def `throw`(message: String, code: Unit, properties: js.Object): scala.Nothing = js.native
     def `throw`(properties: (Double | String | js.Object)*): scala.Nothing = js.native
     def `throw`(status: Double): scala.Nothing = js.native
     
@@ -320,7 +285,9 @@ object mod {
   }
   
   @js.native
-  trait BaseRequest extends ContextDelegatedRequest {
+  trait BaseRequest
+    extends StObject
+       with ContextDelegatedRequest {
     
     /**
       * Get the charset when present or undefined.
@@ -350,7 +317,9 @@ object mod {
   }
   
   @js.native
-  trait BaseResponse extends ContextDelegatedResponse {
+  trait BaseResponse
+    extends StObject
+       with ContextDelegatedResponse {
     
     /**
       * Return response header. If the header is not set, will return an empty
@@ -416,7 +385,8 @@ object mod {
   /* Inlined parent koa.koa.ParameterizedContext<koa.koa.DefaultState, koa.koa.DefaultContext> */
   @js.native
   trait Context
-    extends /**
+    extends StObject
+       with /**
     * Custom properties.
     */
   /* key */ StringDictionary[js.Any] {
@@ -535,47 +505,7 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String, opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
     def assert(value: js.Any, status: Double): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: Double, msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -599,7 +529,47 @@ object mod {
       *
       * See: https://github.com/jshttp/http-assert
       */
+    def assert(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
     def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: String): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, opts: js.Object): Unit = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -615,9 +585,9 @@ object mod {
       * Optionally specify the filename of the download and some options.
       */
     def attachment(): Unit = js.native
-    def attachment(filename: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
     def attachment(filename: String): Unit = js.native
     def attachment(filename: String, options: Options): Unit = js.native
+    def attachment(filename: Unit, options: Options): Unit = js.native
     
     /**
       * Get/Set response body.
@@ -933,9 +903,9 @@ object mod {
       * See: https://github.com/jshttp/http-errors
       */
     def `throw`(message: String): scala.Nothing = js.native
-    def `throw`(message: String, code: js.UndefOr[scala.Nothing], properties: js.Object): scala.Nothing = js.native
     def `throw`(message: String, code: Double): scala.Nothing = js.native
     def `throw`(message: String, code: Double, properties: js.Object): scala.Nothing = js.native
+    def `throw`(message: String, code: Unit, properties: js.Object): scala.Nothing = js.native
     def `throw`(properties: (Double | String | js.Object)*): scala.Nothing = js.native
     def `throw`(status: Double): scala.Nothing = js.native
     
@@ -1276,9 +1246,9 @@ object mod {
       * Optionally specify the filename of the download and some options.
       */
     def attachment(): Unit = js.native
-    def attachment(filename: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
     def attachment(filename: String): Unit = js.native
     def attachment(filename: String, options: Options): Unit = js.native
+    def attachment(filename: Unit, options: Options): Unit = js.native
     
     /**
       * Get/Set response body.
@@ -1403,9 +1373,9 @@ object mod {
     * This interface can be augmented by users to add types to Koa's default context
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Lifted 0 members from Set(koa.koa.DefaultContextExtends) */ @js.native
-  trait DefaultContext
-    extends /**
+  - Lifted 0 members from Set(koa.koa.DefaultContextExtends) */ trait DefaultContext
+    extends StObject
+       with /**
     * Custom properties.
     */
   /* key */ StringDictionary[js.Any]
@@ -1428,7 +1398,9 @@ object mod {
   type DefaultStateExtends = js.Any
   
   @js.native
-  trait ExtendableContext extends BaseContext {
+  trait ExtendableContext
+    extends StObject
+       with BaseContext {
     
     var accept: Accepts = js.native
     
@@ -1456,10 +1428,12 @@ object mod {
   
   type Next = js.Function0[js.Promise[js.Any]]
   
-  type ParameterizedContext[StateT, CustomT] = ExtendableContext with State[StateT] with CustomT
+  type ParameterizedContext[StateT, CustomT] = ExtendableContext & State[StateT] & CustomT
   
   @js.native
-  trait Request extends BaseRequest {
+  trait Request
+    extends StObject
+       with BaseRequest {
     
     var accept: Accepts = js.native
     
@@ -1477,7 +1451,9 @@ object mod {
   }
   
   @js.native
-  trait Response extends BaseResponse {
+  trait Response
+    extends StObject
+       with BaseResponse {
     
     var app: Application[DefaultState, DefaultContext] = js.native
     

@@ -9,7 +9,6 @@ import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.
 import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.windows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
@@ -58,7 +57,7 @@ object platformMod {
   type PlatformSelect = js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ platform in @unimodules/react-native-adapter.@unimodules/react-native-adapter/build/Platform.PlatformSelectOSType ]:? any}
-    */ /* specifics */ typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.PlatformSelect with TopLevel[js.Any], 
+    */ /* specifics */ typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.PlatformSelect & TopLevel[js.Any], 
     js.Any
   ]
   

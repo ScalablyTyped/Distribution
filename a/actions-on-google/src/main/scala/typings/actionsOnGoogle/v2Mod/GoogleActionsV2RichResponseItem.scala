@@ -3,51 +3,51 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.richMod._RichResponseItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoogleActionsV2RichResponseItem extends _RichResponseItem {
+trait GoogleActionsV2RichResponseItem
+  extends StObject
+     with _RichResponseItem {
   
   /**
     * A basic card.
     */
-  var basicCard: js.UndefOr[GoogleActionsV2UiElementsBasicCard] = js.native
+  var basicCard: js.UndefOr[GoogleActionsV2UiElementsBasicCard] = js.undefined
   
   /**
     * Carousel browse card, use collection_browse instead..
     */
-  var carouselBrowse: js.UndefOr[GoogleActionsV2UiElementsCarouselBrowse] = js.native
+  var carouselBrowse: js.UndefOr[GoogleActionsV2UiElementsCarouselBrowse] = js.undefined
   
   /**
     * Html response used to render on Canvas.
     */
-  var htmlResponse: js.UndefOr[GoogleActionsV2UiElementsHtmlResponse] = js.native
+  var htmlResponse: js.UndefOr[GoogleActionsV2UiElementsHtmlResponse] = js.undefined
   
   /**
     * Response indicating a set of media to be played.
     */
-  var mediaResponse: js.UndefOr[GoogleActionsV2MediaResponse] = js.native
+  var mediaResponse: js.UndefOr[GoogleActionsV2MediaResponse] = js.undefined
   
   /**
     * Optional named identifier of this Item.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Voice and text-only response.
     */
-  var simpleResponse: js.UndefOr[GoogleActionsV2SimpleResponse] = js.native
+  var simpleResponse: js.UndefOr[GoogleActionsV2SimpleResponse] = js.undefined
   
   /**
     * Structured payload to be processed by Google.
     */
-  var structuredResponse: js.UndefOr[GoogleActionsV2StructuredResponse] = js.native
+  var structuredResponse: js.UndefOr[GoogleActionsV2StructuredResponse] = js.undefined
   
   /**
     * Table card.
     */
-  var tableCard: js.UndefOr[GoogleActionsV2UiElementsTableCard] = js.native
+  var tableCard: js.UndefOr[GoogleActionsV2UiElementsTableCard] = js.undefined
 }
 object GoogleActionsV2RichResponseItem {
   

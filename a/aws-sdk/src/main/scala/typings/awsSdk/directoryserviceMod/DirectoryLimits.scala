@@ -2,56 +2,54 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryLimits extends StObject {
   
   /**
     * The current number of cloud directories in the Region.
     */
-  var CloudOnlyDirectoriesCurrentCount: js.UndefOr[Limit] = js.native
+  var CloudOnlyDirectoriesCurrentCount: js.UndefOr[Limit] = js.undefined
   
   /**
     * The maximum number of cloud directories allowed in the Region.
     */
-  var CloudOnlyDirectoriesLimit: js.UndefOr[Limit] = js.native
+  var CloudOnlyDirectoriesLimit: js.UndefOr[Limit] = js.undefined
   
   /**
     * Indicates if the cloud directory limit has been reached.
     */
-  var CloudOnlyDirectoriesLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.CloudOnlyDirectoriesLimitReached] = js.native
+  var CloudOnlyDirectoriesLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.CloudOnlyDirectoriesLimitReached] = js.undefined
   
   /**
     * The current number of AWS Managed Microsoft AD directories in the region.
     */
-  var CloudOnlyMicrosoftADCurrentCount: js.UndefOr[Limit] = js.native
+  var CloudOnlyMicrosoftADCurrentCount: js.UndefOr[Limit] = js.undefined
   
   /**
     * The maximum number of AWS Managed Microsoft AD directories allowed in the region.
     */
-  var CloudOnlyMicrosoftADLimit: js.UndefOr[Limit] = js.native
+  var CloudOnlyMicrosoftADLimit: js.UndefOr[Limit] = js.undefined
   
   /**
     * Indicates if the AWS Managed Microsoft AD directory limit has been reached.
     */
-  var CloudOnlyMicrosoftADLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.native
+  var CloudOnlyMicrosoftADLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.undefined
   
   /**
     * The current number of connected directories in the Region.
     */
-  var ConnectedDirectoriesCurrentCount: js.UndefOr[Limit] = js.native
+  var ConnectedDirectoriesCurrentCount: js.UndefOr[Limit] = js.undefined
   
   /**
     * The maximum number of connected directories allowed in the Region.
     */
-  var ConnectedDirectoriesLimit: js.UndefOr[Limit] = js.native
+  var ConnectedDirectoriesLimit: js.UndefOr[Limit] = js.undefined
   
   /**
     * Indicates if the connected directory limit has been reached.
     */
-  var ConnectedDirectoriesLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.ConnectedDirectoriesLimitReached] = js.native
+  var ConnectedDirectoriesLimitReached: js.UndefOr[typings.awsSdk.directoryserviceMod.ConnectedDirectoriesLimitReached] = js.undefined
 }
 object DirectoryLimits {
   

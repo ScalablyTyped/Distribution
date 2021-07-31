@@ -2,43 +2,41 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaEntityOembedResponseMod {
   
-  @js.native
   trait MediaEntityOembedResponse extends StObject {
     
-    var author_id: Double = js.native
+    var author_id: Double
     
-    var author_name: String = js.native
+    var author_name: String
     
-    var author_url: String = js.native
+    var author_url: String
     
-    var height: Null = js.native
+    var height: Null
     
-    var html: String = js.native
+    var html: String
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var provider_name: String = js.native
+    var provider_name: String
     
-    var provider_url: String = js.native
+    var provider_url: String
     
-    var thumbnail_height: Double = js.native
+    var thumbnail_height: Double
     
-    var thumbnail_url: String = js.native
+    var thumbnail_url: String
     
-    var thumbnail_width: Double = js.native
+    var thumbnail_width: Double
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var version: String = js.native
+    var version: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaEntityOembedResponse {
     

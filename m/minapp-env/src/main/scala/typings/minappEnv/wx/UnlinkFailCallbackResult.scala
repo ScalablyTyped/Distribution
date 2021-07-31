@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlinkFailCallbackResult extends StObject {
   
   /** 错误信息
@@ -14,7 +12,7 @@ trait UnlinkFailCallbackResult extends StObject {
     * - 'fail permission denied, open ${path}': 指定的 path 路径没有读权限;
     * - 'fail no such file or directory ${path}': 文件不存在;
     * - 'fail operation not permitted, unlink ${filePath}': 传入的 filePath 是一个目录; */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object UnlinkFailCallbackResult {
   

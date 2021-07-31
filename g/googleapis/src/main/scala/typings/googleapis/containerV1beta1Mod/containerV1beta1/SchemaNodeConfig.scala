@@ -3,13 +3,11 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters that describe the nodes in a cluster.
   */
-@js.native
 trait SchemaNodeConfig extends StObject {
   
   /**
@@ -17,27 +15,27 @@ trait SchemaNodeConfig extends StObject {
     * https://cloud.google.com/compute/docs/gpus for more information about
     * support for GPUs.
     */
-  var accelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var accelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
   /**
     * Size of the disk attached to each node, specified in GB. The smallest
     * allowed disk size is 10GB.  If unspecified, the default disk size is
     * 100GB.
     */
-  var diskSizeGb: js.UndefOr[Double] = js.native
+  var diskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Type of the disk attached to each node (e.g. &#39;pd-standard&#39; or
     * &#39;pd-ssd&#39;)  If unspecified, the default disk type is
     * &#39;pd-standard&#39;
     */
-  var diskType: js.UndefOr[String] = js.native
+  var diskType: js.UndefOr[String] = js.undefined
   
   /**
     * The image type to use for this node. Note that for a given image type,
     * the latest version of it will be used.
     */
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
   /**
     * The map of Kubernetes labels (key/value pairs) to be applied to each
@@ -48,7 +46,7 @@ trait SchemaNodeConfig extends StObject {
     * For more information, including usage and the valid values, see:
     * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The number of local SSD disks to be attached to the node.  The limit for
@@ -57,14 +55,14 @@ trait SchemaNodeConfig extends StObject {
     * https://cloud.google.com/compute/docs/disks/local-ssd#local_ssd_limits
     * for more information.
     */
-  var localSsdCount: js.UndefOr[Double] = js.native
+  var localSsdCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of a Google Compute Engine [machine
     * type](/compute/docs/machine-types) (e.g. `n1-standard-1`).  If
     * unspecified, the default machine type is `n1-standard-1`.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key/value pairs assigned to instances in the cluster.  Keys
@@ -83,7 +81,7 @@ trait SchemaNodeConfig extends StObject {
     * size must be less than or equal to 32 KB.  The total size of all keys and
     * values must be less than 512 KB.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Minimum CPU platform to be used by this instance. The instance may be
@@ -95,7 +93,7 @@ trait SchemaNodeConfig extends StObject {
     * min CPU
     * platform](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform)
     */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
   
   /**
     * The set of Google API scopes to be made available on all of the node VMs
@@ -109,21 +107,21 @@ trait SchemaNodeConfig extends StObject {
     * unless Cloud Logging or Cloud Monitoring are enabled, in which case their
     * required scopes will be added.
     */
-  var oauthScopes: js.UndefOr[js.Array[String]] = js.native
+  var oauthScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the nodes are created as preemptible VM instances. See:
     * https://cloud.google.com/compute/docs/instances/preemptible for more
     * inforamtion about preemptible VM instances.
     */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Google Cloud Platform Service Account to be used by the node VMs. If
     * no Service Account is specified, the &quot;default&quot; service account
     * is used.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * The list of instance tags applied to all nodes. Tags are used to identify
@@ -131,19 +129,19 @@ trait SchemaNodeConfig extends StObject {
     * client during cluster or node pool creation. Each tag within the list
     * must comply with RFC1035.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of kubernetes taints to be applied to each node.  For more
     * information, including usage and the valid values, see:
     * https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
     */
-  var taints: js.UndefOr[js.Array[SchemaNodeTaint]] = js.native
+  var taints: js.UndefOr[js.Array[SchemaNodeTaint]] = js.undefined
   
   /**
     * The workload metadata configuration for this node.
     */
-  var workloadMetadataConfig: js.UndefOr[SchemaWorkloadMetadataConfig] = js.native
+  var workloadMetadataConfig: js.UndefOr[SchemaWorkloadMetadataConfig] = js.undefined
 }
 object SchemaNodeConfig {
   

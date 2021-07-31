@@ -2,14 +2,19 @@ package typings.domParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("dom-parser", JSImport.Namespace)
   @js.native
-  class ^ () extends DomParser
+  class ^ ()
+    extends StObject
+       with DomParser {
+    
+    /* CompleteClass */
+    override def parseFromString(html: String): Dom = js.native
+  }
   
   @js.native
   sealed trait NodeType extends StObject
@@ -18,27 +23,30 @@ object mod {
   object NodeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NodeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[NodeType & Double] = js.native
     
     @js.native
-    sealed trait ELEMENT_NODE extends NodeType
-    /* 1 */ val ELEMENT_NODE: typings.domParser.mod.NodeType.ELEMENT_NODE with Double = js.native
+    sealed trait ELEMENT_NODE
+      extends StObject
+         with NodeType
+    /* 1 */ val ELEMENT_NODE: typings.domParser.mod.NodeType.ELEMENT_NODE & Double = js.native
     
     @js.native
-    sealed trait TEXT_NODE extends NodeType
-    /* 3 */ val TEXT_NODE: typings.domParser.mod.NodeType.TEXT_NODE with Double = js.native
+    sealed trait TEXT_NODE
+      extends StObject
+         with NodeType
+    /* 3 */ val TEXT_NODE: typings.domParser.mod.NodeType.TEXT_NODE & Double = js.native
   }
   
-  @js.native
   trait DOMSearchable extends StObject {
     
-    def getElementById(id: String): Node | Null = js.native
+    def getElementById(id: String): Node | Null
     
-    def getElementsByClassName(className: String): js.Array[Node] | Null = js.native
+    def getElementsByClassName(className: String): js.Array[Node] | Null
     
-    def getElementsByName(name: String): js.Array[Node] | Null = js.native
+    def getElementsByName(name: String): js.Array[Node] | Null
     
-    def getElementsByTagName(tagName: String): js.Array[Node] | Null = js.native
+    def getElementsByTagName(tagName: String): js.Array[Node] | Null
   }
   object DOMSearchable {
     
@@ -70,10 +78,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Dom extends DOMSearchable {
+  trait Dom
+    extends StObject
+       with DOMSearchable {
     
-    def getElementsByAttribute(attribute: String): js.Array[Node] | Null = js.native
+    def getElementsByAttribute(attribute: String): js.Array[Node] | Null
   }
   object Dom {
     
@@ -97,10 +106,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DomParser extends StObject {
     
-    def parseFromString(html: String): Dom = js.native
+    def parseFromString(html: String): Dom
   }
   object DomParser {
     
@@ -118,30 +126,31 @@ object mod {
     }
   }
   
-  @js.native
-  trait Node extends DOMSearchable {
+  trait Node
+    extends StObject
+       with DOMSearchable {
     
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
-    var childNodes: js.Array[Node] = js.native
+    var childNodes: js.Array[Node]
     
-    var firstChild: Node | Null = js.native
+    var firstChild: Node | Null
     
-    def getAttribute(name: String): String | Null = js.native
+    def getAttribute(name: String): String | Null
     
-    var innerHTML: String = js.native
+    var innerHTML: String
     
-    var lastChild: Node | Null = js.native
+    var lastChild: Node | Null
     
-    var nodeName: String = js.native
+    var nodeName: String
     
-    var nodeType: NodeType = js.native
+    var nodeType: NodeType
     
-    var outerHTML: String = js.native
+    var outerHTML: String
     
-    var parentNode: Node | Null = js.native
+    var parentNode: Node | Null
     
-    var textContent: String = js.native
+    var textContent: String
   }
   object Node {
     
@@ -160,7 +169,7 @@ object mod {
       outerHTML: String,
       textContent: String
     ): Node = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], getAttribute = js.Any.fromFunction1(getAttribute), getElementById = js.Any.fromFunction1(getElementById), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByName = js.Any.fromFunction1(getElementsByName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), innerHTML = innerHTML.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], outerHTML = outerHTML.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], getAttribute = js.Any.fromFunction1(getAttribute), getElementById = js.Any.fromFunction1(getElementById), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByName = js.Any.fromFunction1(getElementsByName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), innerHTML = innerHTML.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], outerHTML = outerHTML.asInstanceOf[js.Any], textContent = textContent.asInstanceOf[js.Any], firstChild = null, lastChild = null, parentNode = null)
       __obj.asInstanceOf[Node]
     }
     

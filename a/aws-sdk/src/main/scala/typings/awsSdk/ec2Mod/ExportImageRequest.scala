@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportImageRequest extends StObject {
   
   /**
     * Token to enable idempotency for export image requests.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the image being exported. The maximum length is 255 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The disk image format.
     */
-  var DiskImageFormat: typings.awsSdk.ec2Mod.DiskImageFormat = js.native
+  var DiskImageFormat: typings.awsSdk.ec2Mod.DiskImageFormat
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the image.
     */
-  var ImageId: typings.awsSdk.ec2Mod.ImageId = js.native
+  var ImageId: typings.awsSdk.ec2Mod.ImageId
   
   /**
     * The name of the role that grants VM Import/Export permission to export images to your Amazon S3 bucket. If this parameter is not specified, the default role is named 'vmimport'.
     */
-  var RoleName: js.UndefOr[String] = js.native
+  var RoleName: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the destination Amazon S3 bucket. The bucket must exist and grant WRITE and READ_ACP permissions to the AWS account vm-import-export@amazon.com.
     */
-  var S3ExportLocation: ExportTaskS3LocationRequest = js.native
+  var S3ExportLocation: ExportTaskS3LocationRequest
   
   /**
     * The tags to apply to the image being exported.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object ExportImageRequest {
   

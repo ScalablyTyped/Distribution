@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerListCustomersResponse extends StObject {
   
   /** The customer accounts the calling user is a member of. */
-  var customers: js.UndefOr[js.Array[Company]] = js.native
+  var customers: js.UndefOr[js.Array[Company]] = js.undefined
   
   /** A token used to access the next page of results. Omitted if no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object CustomerListCustomersResponse {
   

@@ -3,12 +3,12 @@ package typings.hapiHapi.mod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]
-  extends Array[js.UndefOr[ServerRegisterPluginObject[T | U | V | W | X | Y | Z]]] {
+  extends StObject
+     with Array[js.UndefOr[ServerRegisterPluginObject[T | U | V | W | X | Y | Z]]] {
   
   var `0`: ServerRegisterPluginObject[T] = js.native
   

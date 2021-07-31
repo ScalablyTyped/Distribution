@@ -3,21 +3,19 @@ package typings.vscode.mod
 import typings.vscode.anon.Dark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickInputButton extends StObject {
   
   /**
     * Icon for the button.
     */
-  val iconPath: Uri | Dark | ThemeIcon = js.native
+  val iconPath: Uri | Dark | ThemeIcon
   
   /**
     * An optional tooltip.
     */
-  val tooltip: js.UndefOr[String] = js.native
+  val tooltip: js.UndefOr[String] = js.undefined
 }
 object QuickInputButton {
   

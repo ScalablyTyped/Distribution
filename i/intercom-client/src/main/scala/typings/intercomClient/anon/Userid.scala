@@ -5,16 +5,15 @@ import typings.intercomClient.userMod.UserIdIdentifier
 import typings.intercomClient.visitorMod.VisitorIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Userid
-  extends UserIdIdentifier
+  extends StObject
      with LeadIdentifier
+     with UserIdIdentifier
      with VisitorIdentifier {
   
-  var user_id: String = js.native
+  var user_id: String
 }
 object Userid {
   

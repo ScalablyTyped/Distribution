@@ -6,21 +6,19 @@ import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonFabList extends StObject {
   
   /**
     * If `true`, the fab list will show all fab buttons in the list.
     */
-  var activated: js.UndefOr[Boolean] = js.native
+  var activated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The side the fab list will show on relative to the main fab button.
     */
-  var side: js.UndefOr[start | end | top | bottom] = js.native
+  var side: js.UndefOr[start | end | top | bottom] = js.undefined
 }
 object IonFabList {
   

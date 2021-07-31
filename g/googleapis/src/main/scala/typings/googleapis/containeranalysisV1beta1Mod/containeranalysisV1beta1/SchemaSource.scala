@@ -3,13 +3,11 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Source describes the location of the source used for the build.
   */
-@js.native
 trait SchemaSource extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaSource extends StObject {
     * remotes or submodules. This list will not include the context specified
     * in the context field.
     */
-  var additionalContexts: js.UndefOr[js.Array[SchemaSourceContext]] = js.native
+  var additionalContexts: js.UndefOr[js.Array[SchemaSourceContext]] = js.undefined
   
   /**
     * If provided, the input binary artifacts for the build came from this
     * location.
     */
-  var artifactStorageSourceUri: js.UndefOr[String] = js.native
+  var artifactStorageSourceUri: js.UndefOr[String] = js.undefined
   
   /**
     * If provided, the source code used for the build came from this location.
     */
-  var context: js.UndefOr[SchemaSourceContext] = js.native
+  var context: js.UndefOr[SchemaSourceContext] = js.undefined
   
   /**
     * Hash(es) of the build source, which can be used to verify that the
@@ -39,7 +37,7 @@ trait SchemaSource extends StObject {
     * such as a gzipped tarfile (.tar.gz), the FileHash will be for the single
     * path to that file.
     */
-  var fileHashes: js.UndefOr[StringDictionary[SchemaFileHashes]] = js.native
+  var fileHashes: js.UndefOr[StringDictionary[SchemaFileHashes]] = js.undefined
 }
 object SchemaSource {
   

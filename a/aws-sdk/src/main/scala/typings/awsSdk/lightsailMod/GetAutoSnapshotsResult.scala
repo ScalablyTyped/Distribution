@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAutoSnapshotsResult extends StObject {
   
   /**
     * An array of objects that describe the automatic snapshots that are available for the specified source instance or disk.
     */
-  var autoSnapshots: js.UndefOr[AutoSnapshotDetailsList] = js.native
+  var autoSnapshots: js.UndefOr[AutoSnapshotDetailsList] = js.undefined
   
   /**
     * The name of the source instance or disk for the automatic snapshots.
     */
-  var resourceName: js.UndefOr[ResourceName] = js.native
+  var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The resource type (e.g., Instance or Disk).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object GetAutoSnapshotsResult {
   

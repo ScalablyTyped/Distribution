@@ -32,7 +32,6 @@ import typings.validator.mod.validator.PostalCodeLocale
 import typings.validator.mod.validator.UUIDVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -335,7 +334,7 @@ trait ValidatorJSType extends StObject {
     *
     * @param values - Allowed values.
     */
-  def isIn(str: String, values: js.Array[_]): Boolean = js.native
+  def isIn(str: String, values: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Check if the string is an integer.
@@ -412,9 +411,9 @@ trait ValidatorJSType extends StObject {
     * @param [options] - Options
     */
   def isMobilePhone(str: String): Boolean = js.native
-  def isMobilePhone(str: String, locale: js.UndefOr[scala.Nothing], options: IsMobilePhoneOptions): Boolean = js.native
   def isMobilePhone(str: String, locale: js.Array[MobilePhoneLocale]): Boolean = js.native
   def isMobilePhone(str: String, locale: js.Array[MobilePhoneLocale], options: IsMobilePhoneOptions): Boolean = js.native
+  def isMobilePhone(str: String, locale: Unit, options: IsMobilePhoneOptions): Boolean = js.native
   def isMobilePhone(str: String, locale: MobilePhoneLocale): Boolean = js.native
   def isMobilePhone(str: String, locale: MobilePhoneLocale, options: IsMobilePhoneOptions): Boolean = js.native
   

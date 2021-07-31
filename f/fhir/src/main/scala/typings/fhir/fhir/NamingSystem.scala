@@ -2,125 +2,125 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * System of unique identification
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait NamingSystem extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait NamingSystem
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'kind'.
     */
-  var _kind: js.UndefOr[Element] = js.native
+  var _kind: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.native
+  var _publisher: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'responsible'.
     */
-  var _responsible: js.UndefOr[Element] = js.native
+  var _responsible: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'usage'.
     */
-  var _usage: js.UndefOr[Element] = js.native
+  var _usage: js.UndefOr[Element] = js.undefined
   
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Date this was last changed
     */
-  var date: dateTime = js.native
+  var date: dateTime
   
   /**
     * Natural language description of the naming system
     */
-  var description: js.UndefOr[markdown] = js.native
+  var description: js.UndefOr[markdown] = js.undefined
   
   /**
     * Intended jurisdiction for naming system (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * codesystem | identifier | root
     */
-  var kind: code = js.native
+  var kind: code
   
   /**
     * Name for this naming system (computer friendly)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * Use this instead
     */
-  var replacedBy: js.UndefOr[Reference] = js.native
+  var replacedBy: js.UndefOr[Reference] = js.undefined
   
   /**
     * Who maintains system namespace?
     */
-  var responsible: js.UndefOr[String] = js.native
+  var responsible: js.UndefOr[String] = js.undefined
   
   /**
     * draft | active | retired | unknown
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * e.g. driver,  provider,  patient, bank etc.
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Unique identifiers used for system
     */
-  var uniqueId: js.Array[NamingSystemUniqueId] = js.native
+  var uniqueId: js.Array[NamingSystemUniqueId]
   
   /**
     * How/where is it used
     */
-  var usage: js.UndefOr[String] = js.native
+  var usage: js.UndefOr[String] = js.undefined
   
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
 }
 object NamingSystem {
   

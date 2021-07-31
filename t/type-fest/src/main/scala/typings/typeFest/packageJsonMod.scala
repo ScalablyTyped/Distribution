@@ -11,8 +11,12 @@ import typings.typeFest.literalUnionMod.LiteralUnion
 import typings.typeFest.packageJsonMod.PackageJson.BugsLocation
 import typings.typeFest.packageJsonMod.PackageJson.Dependency
 import typings.typeFest.packageJsonMod.PackageJson.DirectoryLocations
+import typings.typeFest.packageJsonMod.PackageJson.JSPMConfiguration
+import typings.typeFest.packageJsonMod.PackageJson.NonStandardEntryPoints
 import typings.typeFest.packageJsonMod.PackageJson.Person
 import typings.typeFest.packageJsonMod.PackageJson.Scripts
+import typings.typeFest.packageJsonMod.PackageJson.TypeScriptConfiguration
+import typings.typeFest.packageJsonMod.PackageJson.YarnConfiguration
 import typings.typeFest.typeFestBooleans.`false`
 import typings.typeFest.typeFestStrings.Dot
 import typings.typeFest.typeFestStrings.Exclamationmarkaix
@@ -53,52 +57,49 @@ import typings.typeFest.typeFestStrings.x32
 import typings.typeFest.typeFestStrings.x64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packageJsonMod {
   
-  /* Inlined {  name :string | undefined,   version :string | undefined,   description :string | undefined,   keywords :std.Array<string> | undefined,   homepage :type-fest.type-fest.LiteralUnion<'.', string> | undefined,   bugs :type-fest.type-fest/source/package-json.PackageJson.BugsLocation | undefined,   license :string | undefined,   licenses :std.Array<{  type :string | undefined,   url :string | undefined}> | undefined,   author :type-fest.type-fest/source/package-json.PackageJson.Person | undefined,   contributors :std.Array<type-fest.type-fest/source/package-json.PackageJson.Person> | undefined,   maintainers :std.Array<type-fest.type-fest/source/package-json.PackageJson.Person> | undefined,   files :std.Array<string> | undefined,   main :string | undefined,   bin :string | {[binary: string] : string} | undefined,   man :string | std.Array<string> | undefined,   directories :type-fest.type-fest/source/package-json.PackageJson.DirectoryLocations | undefined,   repository :string | {  type :string,   url :string} | undefined,   scripts :type-fest.type-fest/source/package-json.PackageJson.Scripts | undefined,   config :{[configKey: string] : unknown} | undefined,   dependencies :type-fest.type-fest/source/package-json.PackageJson.Dependency | undefined,   devDependencies :type-fest.type-fest/source/package-json.PackageJson.Dependency | undefined,   optionalDependencies :type-fest.type-fest/source/package-json.PackageJson.Dependency | undefined,   peerDependencies :type-fest.type-fest/source/package-json.PackageJson.Dependency | undefined,   bundledDependencies :std.Array<string> | undefined,   bundleDependencies :std.Array<string> | undefined,   engines :{[ EngineName in 'npm' | 'node' | string ]: string} | undefined,   engineStrict :boolean | undefined,   os :std.Array<type-fest.type-fest.LiteralUnion<'aix' | 'darwin' | 'freebsd' | 'linux' | 'openbsd' | 'sunos' | 'win32' | '!aix' | '!darwin' | '!freebsd' | '!linux' | '!openbsd' | '!sunos' | '!win32', string>> | undefined,   cpu :std.Array<type-fest.type-fest.LiteralUnion<'arm' | 'arm64' | 'ia32' | 'mips' | 'mipsel' | 'ppc' | 'ppc64' | 's390' | 's390x' | 'x32' | 'x64' | '!arm' | '!arm64' | '!ia32' | '!mips' | '!mipsel' | '!ppc' | '!ppc64' | '!s390' | '!s390x' | '!x32' | '!x64', string>> | undefined,   preferGlobal :boolean | undefined,   private :boolean | undefined,   publishConfig :{[config: string] : unknown} | undefined, [key: string] : unknown} & type-fest.type-fest/source/package-json.PackageJson.NonStandardEntryPoints & type-fest.type-fest/source/package-json.PackageJson.TypeScriptConfiguration & type-fest.type-fest/source/package-json.PackageJson.YarnConfiguration & type-fest.type-fest/source/package-json.PackageJson.JSPMConfiguration */
-  @js.native
   trait PackageJson
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with NonStandardEntryPoints
+       with TypeScriptConfiguration
+       with YarnConfiguration
+       with JSPMConfiguration
+       with /* key */ StringDictionary[js.Any] {
     
-    var author: js.UndefOr[Person] = js.native
+    var author: js.UndefOr[Person] = js.undefined
     
     /**
     	The executable files that should be installed into the `PATH`.
     	*/
-    var bin: js.UndefOr[String | StringDictionary[String]] = js.native
-    
-    /**
-    		A hint to JavaScript bundlers or component tools when packaging modules for client side use.
-    		*/
-    var browser: js.UndefOr[String | (StringDictionary[String | `false`])] = js.native
+    var bin: js.UndefOr[String | StringDictionary[String]] = js.undefined
     
     /**
     	The URL to the package's issue tracker and/or the email address to which issues should be reported.
     	*/
-    var bugs: js.UndefOr[BugsLocation] = js.native
+    var bugs: js.UndefOr[BugsLocation] = js.undefined
     
     /**
     	Alias of `bundledDependencies`.
     	*/
-    var bundleDependencies: js.UndefOr[js.Array[String]] = js.native
+    var bundleDependencies: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	Package names that are bundled when the package is published.
     	*/
-    var bundledDependencies: js.UndefOr[js.Array[String]] = js.native
+    var bundledDependencies: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	Is used to set configuration parameters used in package scripts that persist across upgrades.
     	*/
-    var config: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var config: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
     	A list of people who contributed to the package.
     	*/
-    var contributors: js.UndefOr[js.Array[Person]] = js.native
+    var contributors: js.UndefOr[js.Array[Person]] = js.undefined
     
     /**
     	CPU architectures the module runs on.
@@ -110,32 +111,32 @@ object packageJsonMod {
             String
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
     	The dependencies of the package.
     	*/
-    var dependencies: js.UndefOr[Dependency] = js.native
+    var dependencies: js.UndefOr[Dependency] = js.undefined
     
     /**
     	Package description, listed in `npm search`.
     	*/
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
     	Additional tooling dependencies that are not required for the package to work. Usually test, build, or documentation tooling.
     	*/
-    var devDependencies: js.UndefOr[Dependency] = js.native
+    var devDependencies: js.UndefOr[Dependency] = js.undefined
     
     /**
     	Indicates the structure of the package.
     	*/
-    var directories: js.UndefOr[DirectoryLocations] = js.native
+    var directories: js.UndefOr[DirectoryLocations] = js.undefined
     
     /**
     	@deprecated
     	*/
-    var engineStrict: js.UndefOr[Boolean] = js.native
+    var engineStrict: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Engines that this package runs on.
@@ -143,79 +144,58 @@ object packageJsonMod {
     var engines: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ EngineName in 'npm' | 'node' | string ]: string}
-      */ typings.typeFest.typeFestStrings.PackageJson with TopLevel[js.Any]
-      ] = js.native
-    
-    /**
-    		A module ID with untranspiled code that is the primary entry point to the program.
-    		*/
-    var esnext: js.UndefOr[String | DictmoduleName] = js.native
+      */ typings.typeFest.typeFestStrings.PackageJson & TopLevel[js.Any]
+      ] = js.undefined
     
     /**
     	The files included in the package.
     	*/
-    var files: js.UndefOr[js.Array[String]] = js.native
-    
-    /**
-    		If your package only allows one version of a given dependency, and you’d like to enforce the same behavior as `yarn install --flat` on the command line, set this to `true`.
-    		Note that if your `package.json` contains `"flat": true` and other packages depend on yours (e.g. you are building a library rather than an application), those other packages will also need `"flat": true` in their `package.json` or be installed with `yarn install --flat` on the command-line.
-    		*/
-    var flat: js.UndefOr[Boolean] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	The URL to the package's homepage.
     	*/
-    var homepage: js.UndefOr[LiteralUnion[Dot, String]] = js.native
-    
-    /**
-    		JSPM configuration.
-    		*/
-    var jspm: js.UndefOr[PackageJson] = js.native
+    var homepage: js.UndefOr[LiteralUnion[Dot, String]] = js.undefined
     
     /**
     	Keywords associated with package, listed in `npm search`.
     	*/
-    var keywords: js.UndefOr[js.Array[String]] = js.native
+    var keywords: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     	The license for the package.
     	*/
-    var license: js.UndefOr[String] = js.native
+    var license: js.UndefOr[String] = js.undefined
     
     /**
     	The licenses for the package.
     	*/
-    var licenses: js.UndefOr[js.Array[Type]] = js.native
+    var licenses: js.UndefOr[js.Array[Type]] = js.undefined
     
     /**
     	The module ID that is the primary entry point to the program.
     	*/
-    var main: js.UndefOr[String] = js.native
+    var main: js.UndefOr[String] = js.undefined
     
     /**
     	A list of people who maintain the package.
     	*/
-    var maintainers: js.UndefOr[js.Array[Person]] = js.native
+    var maintainers: js.UndefOr[js.Array[Person]] = js.undefined
     
     /**
     	Filenames to put in place for the `man` program to find.
     	*/
-    var man: js.UndefOr[String | js.Array[String]] = js.native
-    
-    /**
-    		An ECMAScript module ID that is the primary entry point to the program.
-    		*/
-    var module: js.UndefOr[String] = js.native
+    var man: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
     	The name of the package.
     	*/
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
     	Dependencies that are skipped if they fail to install.
     	*/
-    var optionalDependencies: js.UndefOr[Dependency] = js.native
+    var optionalDependencies: js.UndefOr[Dependency] = js.undefined
     
     /**
     	Operating systems the module runs on.
@@ -227,59 +207,43 @@ object packageJsonMod {
             String
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
     	Dependencies that will usually be required by the package user directly or via another dependency.
     	*/
-    var peerDependencies: js.UndefOr[Dependency] = js.native
+    var peerDependencies: js.UndefOr[Dependency] = js.undefined
     
     /**
     	If set to `true`, a warning will be shown if package is installed locally. Useful if the package is primarily a command-line application that should be installed globally.
     	@deprecated
     	*/
-    var preferGlobal: js.UndefOr[Boolean] = js.native
+    var preferGlobal: js.UndefOr[Boolean] = js.undefined
     
     /**
     	If set to `true`, then npm will refuse to publish it.
     	*/
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * A set of config values that will be used at publish-time. It's especially handy to set the tag, registry or access, to ensure that a given package is not tagged with 'latest', published to the global public registry or that a scoped module is private by default.
     	 */
-    var publishConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var publishConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
     	Location for the code repository.
     	*/
-    var repository: js.UndefOr[String | Url] = js.native
-    
-    /**
-    		Selective version resolutions. Allows the definition of custom package versions inside dependencies without manual edits in the `yarn.lock` file.
-    		*/
-    var resolutions: js.UndefOr[Dependency] = js.native
+    var repository: js.UndefOr[String | Url] = js.undefined
     
     /**
     	Script commands that are run at various times in the lifecycle of the package. The key is the lifecycle event, and the value is the command to run at that point.
     	*/
-    var scripts: js.UndefOr[Scripts] = js.native
-    
-    /**
-    		Location of the bundled TypeScript declaration file.
-    		*/
-    var types: js.UndefOr[String] = js.native
-    
-    /**
-    		Location of the bundled TypeScript declaration file. Alias of `types`.
-    		*/
-    @JSName("typings")
-    var typings_ : js.UndefOr[String] = js.native
+    var scripts: js.UndefOr[Scripts] = js.undefined
     
     /**
     	Package version, parseable by [`node-semver`](https://github.com/npm/node-semver).
     	*/
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PackageJson {
     
@@ -293,39 +257,39 @@ object packageJsonMod {
     
     type Dependency = StringDictionary[String]
     
-    @js.native
     trait DirectoryLocations
-      extends /* key */ StringDictionary[js.Any] {
+      extends StObject
+         with /* directoryType */ StringDictionary[js.Any] {
       
       /**
       		Location for executable scripts. Sugar to generate entries in the `bin` property by walking the folder.
       		*/
-      var bin: js.UndefOr[String] = js.native
+      var bin: js.UndefOr[String] = js.undefined
       
       /**
       		Location for Markdown files.
       		*/
-      var doc: js.UndefOr[String] = js.native
+      var doc: js.UndefOr[String] = js.undefined
       
       /**
       		Location for example scripts.
       		*/
-      var example: js.UndefOr[String] = js.native
+      var example: js.UndefOr[String] = js.undefined
       
       /**
       		Location for the bulk of the library.
       		*/
-      var lib: js.UndefOr[String] = js.native
+      var lib: js.UndefOr[String] = js.undefined
       
       /**
       		Location for man pages. Sugar to generate a `man` array by walking the folder.
       		*/
-      var man: js.UndefOr[String] = js.native
+      var man: js.UndefOr[String] = js.undefined
       
       /**
       		Location for test files.
       		*/
-      var test: js.UndefOr[String] = js.native
+      var test: js.UndefOr[String] = js.undefined
     }
     object DirectoryLocations {
       
@@ -376,13 +340,12 @@ object packageJsonMod {
       }
     }
     
-    @js.native
     trait JSPMConfiguration extends StObject {
       
       /**
       		JSPM configuration.
       		*/
-      var jspm: js.UndefOr[PackageJson] = js.native
+      var jspm: js.UndefOr[PackageJson] = js.undefined
     }
     object JSPMConfiguration {
       
@@ -403,23 +366,22 @@ object packageJsonMod {
       }
     }
     
-    @js.native
     trait NonStandardEntryPoints extends StObject {
       
       /**
       		A hint to JavaScript bundlers or component tools when packaging modules for client side use.
       		*/
-      var browser: js.UndefOr[String | (StringDictionary[String | `false`])] = js.native
+      var browser: js.UndefOr[String | (StringDictionary[String | `false`])] = js.undefined
       
       /**
       		A module ID with untranspiled code that is the primary entry point to the program.
       		*/
-      var esnext: js.UndefOr[String | DictmoduleName] = js.native
+      var esnext: js.UndefOr[String | DictmoduleName] = js.undefined
       
       /**
       		An ECMAScript module ID that is the primary entry point to the program.
       		*/
-      var module: js.UndefOr[String] = js.native
+      var module: js.UndefOr[String] = js.undefined
     }
     object NonStandardEntryPoints {
       
@@ -466,12 +428,6 @@ object packageJsonMod {
       
       @scala.inline
       def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
-      
-      @scala.inline
-      def setBrowser(value: String | (StringDictionary[String | `false`])): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
       @scala.inline
       def setBugs(value: BugsLocation): Self = StObject.set(x, "bugs", value.asInstanceOf[js.Any])
@@ -567,17 +523,11 @@ object packageJsonMod {
       def setEngines(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ EngineName in 'npm' | 'node' | string ]: string}
-        */ typings.typeFest.typeFestStrings.PackageJson with TopLevel[js.Any]
+        */ typings.typeFest.typeFestStrings.PackageJson & TopLevel[js.Any]
       ): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnginesUndefined: Self = StObject.set(x, "engines", js.undefined)
-      
-      @scala.inline
-      def setEsnext(value: String | DictmoduleName): Self = StObject.set(x, "esnext", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEsnextUndefined: Self = StObject.set(x, "esnext", js.undefined)
       
       @scala.inline
       def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
@@ -589,22 +539,10 @@ object packageJsonMod {
       def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
       @scala.inline
-      def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
-      
-      @scala.inline
       def setHomepage(value: LiteralUnion[Dot, String]): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHomepageUndefined: Self = StObject.set(x, "homepage", js.undefined)
-      
-      @scala.inline
-      def setJspm(value: PackageJson): Self = StObject.set(x, "jspm", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setJspmUndefined: Self = StObject.set(x, "jspm", js.undefined)
       
       @scala.inline
       def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
@@ -653,12 +591,6 @@ object packageJsonMod {
       
       @scala.inline
       def setManVarargs(value: String*): Self = StObject.set(x, "man", js.Array(value :_*))
-      
-      @scala.inline
-      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -724,28 +656,10 @@ object packageJsonMod {
       def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
       @scala.inline
-      def setResolutions(value: Dependency): Self = StObject.set(x, "resolutions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
-      
-      @scala.inline
       def setScripts(value: Scripts): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
-      
-      @scala.inline
-      def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
-      
-      @scala.inline
-      def setTypings_(value: String): Self = StObject.set(x, "typings", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTypings_Undefined: Self = StObject.set(x, "typings", js.undefined)
       
       @scala.inline
       def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
@@ -756,148 +670,149 @@ object packageJsonMod {
     
     type Person = String | Email
     
-    @js.native
-    trait Scripts extends /* scriptName */ StringDictionary[String] {
+    trait Scripts
+      extends StObject
+         with /* scriptName */ StringDictionary[String] {
       
       /**
       		Run **after** the package is installed.
       		*/
-      var install: js.UndefOr[String] = js.native
+      var install: js.UndefOr[String] = js.undefined
       
       /**
       		Run **after** the package is installed and after `install`.
       		*/
-      var postinstall: js.UndefOr[String] = js.native
+      var postinstall: js.UndefOr[String] = js.undefined
       
       /**
       		Run **after** the tarball has been generated and moved to its final destination.
       		*/
-      var postpack: js.UndefOr[String] = js.native
+      var postpack: js.UndefOr[String] = js.undefined
       
       /**
       		Run **after** the package is published.
       		*/
-      var postpublish: js.UndefOr[String] = js.native
+      var postpublish: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm restart` command, after `restart`. Note: `npm restart` will run the `stop` and `start` scripts if no `restart` script is provided.
       		*/
-      var postrestart: js.UndefOr[String] = js.native
+      var postrestart: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm start` command, after `start`.
       		*/
-      var poststart: js.UndefOr[String] = js.native
+      var poststart: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm stop` command, after `stop`.
       		*/
-      var poststop: js.UndefOr[String] = js.native
+      var poststop: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm test` command, after `test`.
       		*/
-      var posttest: js.UndefOr[String] = js.native
+      var posttest: js.UndefOr[String] = js.undefined
       
       /**
       		Run **after** the package is uninstalled.
       		*/
-      var postuninstall: js.UndefOr[String] = js.native
+      var postuninstall: js.UndefOr[String] = js.undefined
       
       /**
       		Run **after** bump the package version.
       		*/
-      var postversion: js.UndefOr[String] = js.native
+      var postversion: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** the package is installed.
       		*/
-      var preinstall: js.UndefOr[String] = js.native
+      var preinstall: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** a tarball is packed (on `npm pack`, `npm publish`, and when installing git dependencies).
       		*/
-      var prepack: js.UndefOr[String] = js.native
+      var prepack: js.UndefOr[String] = js.undefined
       
       /**
       		Run both **before** the package is packed and published, and on local `npm install` without any arguments. This is run **after** `prepublish`, but **before** `prepublishOnly`.
       		*/
-      var prepare: js.UndefOr[String] = js.native
+      var prepare: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** the package is published (Also run on local `npm install` without any arguments).
       		*/
-      var prepublish: js.UndefOr[String] = js.native
+      var prepublish: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** the package is prepared and packed, **only** on `npm publish`.
       		*/
-      var prepublishOnly: js.UndefOr[String] = js.native
+      var prepublishOnly: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm restart` command, before `restart`. Note: `npm restart` will run the `stop` and `start` scripts if no `restart` script is provided.
       		*/
-      var prerestart: js.UndefOr[String] = js.native
+      var prerestart: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm start` command, before `start`.
       		*/
-      var prestart: js.UndefOr[String] = js.native
+      var prestart: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm stop` command, before `stop`.
       		*/
-      var prestop: js.UndefOr[String] = js.native
+      var prestop: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm test` command, before `test`.
       		*/
-      var pretest: js.UndefOr[String] = js.native
+      var pretest: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** the package is uninstalled and before `uninstall`.
       		*/
-      var preuninstall: js.UndefOr[String] = js.native
+      var preuninstall: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** bump the package version and before `version`.
       		*/
-      var preversion: js.UndefOr[String] = js.native
+      var preversion: js.UndefOr[String] = js.undefined
       
       /**
       		Run **after** the package is published.
       		*/
-      var publish: js.UndefOr[String] = js.native
+      var publish: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm restart` command. Note: `npm restart` will run the `stop` and `start` scripts if no `restart` script is provided.
       		*/
-      var restart: js.UndefOr[String] = js.native
+      var restart: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm start` command.
       		*/
-      var start: js.UndefOr[String] = js.native
+      var start: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm stop` command.
       		*/
-      var stop: js.UndefOr[String] = js.native
+      var stop: js.UndefOr[String] = js.undefined
       
       /**
       		Run with the `npm test` command.
       		*/
-      var test: js.UndefOr[String] = js.native
+      var test: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** the package is uninstalled.
       		*/
-      var uninstall: js.UndefOr[String] = js.native
+      var uninstall: js.UndefOr[String] = js.undefined
       
       /**
       		Run **before** bump the package version.
       		*/
-      var version: js.UndefOr[String] = js.native
+      var version: js.UndefOr[String] = js.undefined
     }
     object Scripts {
       
@@ -1080,19 +995,18 @@ object packageJsonMod {
       }
     }
     
-    @js.native
     trait TypeScriptConfiguration extends StObject {
       
       /**
       		Location of the bundled TypeScript declaration file.
       		*/
-      var types: js.UndefOr[String] = js.native
+      var types: js.UndefOr[String] = js.undefined
       
       /**
       		Location of the bundled TypeScript declaration file. Alias of `types`.
       		*/
       @JSName("typings")
-      var typings_ : js.UndefOr[String] = js.native
+      var typings_ : js.UndefOr[String] = js.undefined
     }
     object TypeScriptConfiguration {
       
@@ -1119,19 +1033,18 @@ object packageJsonMod {
       }
     }
     
-    @js.native
     trait YarnConfiguration extends StObject {
       
       /**
       		If your package only allows one version of a given dependency, and you’d like to enforce the same behavior as `yarn install --flat` on the command line, set this to `true`.
       		Note that if your `package.json` contains `"flat": true` and other packages depend on yours (e.g. you are building a library rather than an application), those other packages will also need `"flat": true` in their `package.json` or be installed with `yarn install --flat` on the command-line.
       		*/
-      var flat: js.UndefOr[Boolean] = js.native
+      var flat: js.UndefOr[Boolean] = js.undefined
       
       /**
       		Selective version resolutions. Allows the definition of custom package versions inside dependencies without manual edits in the `yarn.lock` file.
       		*/
-      var resolutions: js.UndefOr[Dependency] = js.native
+      var resolutions: js.UndefOr[Dependency] = js.undefined
     }
     object YarnConfiguration {
       

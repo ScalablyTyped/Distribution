@@ -2,7 +2,6 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &lt;p&gt;See https://developer.android.com/guide/app-bundle/build for
   * guidance on building App Bundles.
   */
-@js.native
 trait SchemaAppBundle extends StObject {
   
   /**
     * .aab file representing the app bundle under test.
     */
-  var bundleLocation: js.UndefOr[SchemaFileReference] = js.native
+  var bundleLocation: js.UndefOr[SchemaFileReference] = js.undefined
 }
 object SchemaAppBundle {
   

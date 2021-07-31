@@ -2,29 +2,27 @@ package typings.googleapis.dnsV2beta1Mod.dnsV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaChange extends StObject {
   
-  var additions: js.UndefOr[js.Array[SchemaResourceRecordSet]] = js.native
+  var additions: js.UndefOr[js.Array[SchemaResourceRecordSet]] = js.undefined
   
-  var deletions: js.UndefOr[js.Array[SchemaResourceRecordSet]] = js.native
+  var deletions: js.UndefOr[js.Array[SchemaResourceRecordSet]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isServing: js.UndefOr[Boolean] = js.native
+  var isServing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#change&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaChange {
   

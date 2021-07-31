@@ -9,29 +9,30 @@ import typings.antd.antdStrings.square
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
   
-  @JSImport("antd/lib/skeleton/Element", JSImport.Default)
+  @JSImport("antd/lib/skeleton/Element", JSImport.Namespace)
   @js.native
-  def default(props: SkeletonElementProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: SkeletonElementProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait SkeletonElementProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square | round] = js.native
+    var shape: js.UndefOr[circle | square | round] = js.undefined
     
-    var size: js.UndefOr[large | small | default | Double] = js.native
+    var size: js.UndefOr[large | small | default | Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SkeletonElementProps {
     

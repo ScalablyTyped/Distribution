@@ -17,7 +17,6 @@ import typings.antvGBase.typesMod.ShapeAttrs
 import typings.antvGBase.typesMod.ShapeBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
@@ -65,31 +64,13 @@ object elementMod {
       * @param {number}   delay    动画延迟时间
       */
     def animate(onFrame: OnFrame, duration: Double): js.Any = js.native
-    def animate(
-      onFrame: OnFrame,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
-    def animate(onFrame: OnFrame, duration: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-    def animate(
-      onFrame: OnFrame,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      delay: Double
-    ): js.Any = js.native
     def animate(onFrame: OnFrame, duration: Double, easing: String): js.Any = js.native
-    def animate(
-      onFrame: OnFrame,
-      duration: Double,
-      easing: String,
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
     def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function): js.Any = js.native
     def animate(onFrame: OnFrame, duration: Double, easing: String, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: String, callback: Unit, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(onFrame: OnFrame, duration: Double, easing: Unit, callback: Unit, delay: Double): js.Any = js.native
     /**
       * 执行动画
       * @param {ElementAttrs} toAttrs 动画最终状态
@@ -105,31 +86,13 @@ object elementMod {
       * @param {number}       delay 动画延迟时间
       */
     def animate(toAttrs: ElementAttrs, duration: Double): js.Any = js.native
-    def animate(
-      toAttrs: ElementAttrs,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
-    def animate(toAttrs: ElementAttrs, duration: Double, easing: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-    def animate(
-      toAttrs: ElementAttrs,
-      duration: Double,
-      easing: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      delay: Double
-    ): js.Any = js.native
     def animate(toAttrs: ElementAttrs, duration: Double, easing: String): js.Any = js.native
-    def animate(
-      toAttrs: ElementAttrs,
-      duration: Double,
-      easing: String,
-      callback: js.UndefOr[scala.Nothing],
-      delay: Double
-    ): js.Any = js.native
     def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function): js.Any = js.native
     def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: String, callback: Unit, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: js.Function, delay: Double): js.Any = js.native
+    def animate(toAttrs: ElementAttrs, duration: Double, easing: Unit, callback: Unit, delay: Double): js.Any = js.native
     
     def applyMatrix(matrix: js.Array[Double]): Unit = js.native
     
@@ -522,7 +485,6 @@ object elementMod {
       * @return {IElement} 元素
       */
     def translate(): this.type = js.native
-    def translate(translateX: js.UndefOr[scala.Nothing], translateY: Double): this.type = js.native
     /**
       * 移动元素
       * @param {number} translateX x 轴方向的移动距离
@@ -531,6 +493,7 @@ object elementMod {
       */
     def translate(translateX: Double): IElement = js.native
     def translate(translateX: Double, translateY: Double): IElement = js.native
+    def translate(translateX: Unit, translateY: Double): this.type = js.native
     @JSName("translate")
     def translate_This(translateX: Double): this.type = js.native
     @JSName("translate")

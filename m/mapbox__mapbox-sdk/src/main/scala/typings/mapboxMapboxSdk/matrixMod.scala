@@ -7,24 +7,24 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matrixMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/matrix", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/matrix", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): MatrixService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/matrix", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): MatrixService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): MatrixService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MatrixService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): MatrixService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MatrixService]
+  
   trait Destination extends StObject {
     
-    var location: js.Array[Double] = js.native
+    var location: js.Array[Double]
     
-    var name: String = js.native
+    var name: String
   }
   object Destination {
     
@@ -48,18 +48,17 @@ object matrixMod {
     }
   }
   
-  @js.native
   trait MatrixRequest extends StObject {
     
-    var annotations: js.UndefOr[DirectionsAnnotation] = js.native
+    var annotations: js.UndefOr[DirectionsAnnotation] = js.undefined
     
-    var destinations: js.UndefOr[js.Array[Double]] = js.native
+    var destinations: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var points: js.Array[Point] = js.native
+    var points: js.Array[Point]
     
-    var profile: js.UndefOr[DirectionsProfile] = js.native
+    var profile: js.UndefOr[DirectionsProfile] = js.undefined
     
-    var sources: js.UndefOr[js.Array[Double]] = js.native
+    var sources: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object MatrixRequest {
     
@@ -110,18 +109,17 @@ object matrixMod {
     }
   }
   
-  @js.native
   trait MatrixResponse extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var destinations: js.Array[Destination] = js.native
+    var destinations: js.Array[Destination]
     
-    var distances: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+    var distances: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
     
-    var durations: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+    var durations: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
     
-    var sources: js.Array[Destination] = js.native
+    var sources: js.Array[Destination]
   }
   object MatrixResponse {
     
@@ -169,14 +167,13 @@ object matrixMod {
     }
   }
   
-  @js.native
   trait MatrixService extends StObject {
     
     /**
       * Get a duration and/or distance matrix showing travel times and distances between coordinates.
       * @param request
       */
-    def getMatrix(request: MatrixRequest): MapiRequest = js.native
+    def getMatrix(request: MatrixRequest): MapiRequest
   }
   object MatrixService {
     

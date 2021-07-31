@@ -10,9 +10,9 @@ A lib for generating Style Sheets with JavaScript.
 | ------------------ | :-------------: |
 | Full name          | jss |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js |
-| # releases         | 38 |
-| # dependents       | 414 |
-| # downloads        | 71137518 |
+| # releases         | 30 |
+| # dependents       | 420 |
+| # downloads        | 78627202 |
 | # stars            | 7 |
 
 ## Links

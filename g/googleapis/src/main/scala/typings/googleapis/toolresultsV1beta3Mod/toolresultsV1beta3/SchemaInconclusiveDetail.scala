@@ -2,10 +2,8 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInconclusiveDetail extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaInconclusiveDetail extends StObject {
     * determined. For example, the user pressed ctrl-c which sent a kill signal
     * to the test runner while the test was running.
     */
-  var abortedByUser: js.UndefOr[Boolean] = js.native
+  var abortedByUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the test runner could not determine success or failure because the
@@ -21,7 +19,7 @@ trait SchemaInconclusiveDetail extends StObject {
     * failed.  For example, a mobile test requires provisioning a device where
     * the test executes, and that provisioning can fail.
     */
-  var infrastructureFailure: js.UndefOr[Boolean] = js.native
+  var infrastructureFailure: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInconclusiveDetail {
   

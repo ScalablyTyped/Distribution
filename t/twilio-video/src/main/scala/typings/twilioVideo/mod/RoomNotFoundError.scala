@@ -4,7 +4,6 @@ import typings.twilioVideo.twilioVideoNumbers.`53106`
 import typings.twilioVideo.twilioVideoStrings.`Room not found`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "RoomNotFoundError")

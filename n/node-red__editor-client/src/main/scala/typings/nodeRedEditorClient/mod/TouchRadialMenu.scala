@@ -3,15 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchRadialMenu extends StObject {
   
-  def active(): Boolean = js.native
+  def active(): Boolean
   
-  def show(obj: HTMLElement, pos: js.Array[Double], options: js.Object): Unit = js.native
+  def show(obj: HTMLElement, pos: js.Array[Double], options: js.Object): Unit
 }
 object TouchRadialMenu {
   

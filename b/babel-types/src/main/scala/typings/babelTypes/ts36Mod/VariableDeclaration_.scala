@@ -6,21 +6,20 @@ import typings.babelTypes.babelTypesStrings.const
 import typings.babelTypes.babelTypesStrings.let
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableDeclaration_
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Statement {
   
-  var declarations: js.Array[VariableDeclarator_] = js.native
+  var declarations: js.Array[VariableDeclarator_]
   
-  var kind: `var` | let | const = js.native
+  var kind: `var` | let | const
   
   @JSName("type")
-  var type_VariableDeclaration_ : VariableDeclaration = js.native
+  var type_VariableDeclaration_ : VariableDeclaration
 }
 object VariableDeclaration_ {
   
@@ -30,11 +29,10 @@ object VariableDeclaration_ {
     end: Double,
     kind: `var` | let | const,
     loc: SourceLocation,
-    start: Double,
-    `type`: VariableDeclaration
+    start: Double
   ): VariableDeclaration_ = {
     val __obj = js.Dynamic.literal(declarations = declarations.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclaration")
     __obj.asInstanceOf[VariableDeclaration_]
   }
   

@@ -3,17 +3,15 @@ package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an output report. */
-@js.native
 trait HidOutputReport extends StObject {
   
   /** Retrieves, or sets, the data associated with a given output report. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   
-  var getBooleanControl: js.Any = js.native
+  var getBooleanControl: js.Any
   
   /* unmapped type */
   /**
@@ -21,9 +19,9 @@ trait HidOutputReport extends StObject {
     * @param controlDescription Describes the Boolean control.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
+  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl
   
-  var getNumericControl: js.Any = js.native
+  var getNumericControl: js.Any
   
   /* unmapped type */
   /**
@@ -31,10 +29,10 @@ trait HidOutputReport extends StObject {
     * @param controlDescription Describes the numeric control.
     * @return A HidNumericControl object.
     */
-  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
+  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl
   
   /** Retrieves the identifier associated with a given output report. */
-  var id: Double = js.native
+  var id: Double
 }
 object HidOutputReport {
   

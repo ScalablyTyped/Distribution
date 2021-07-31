@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingOperations extends StObject {
   
   // A property that indicates that an operation that might update the binary content of a file is pending completion.
-  var pendingContentUpdate: js.UndefOr[NullableOption[PendingContentUpdate]] = js.native
+  var pendingContentUpdate: js.UndefOr[NullableOption[PendingContentUpdate]] = js.undefined
 }
 object PendingOperations {
   

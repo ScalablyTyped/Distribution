@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClientEventRequest extends StObject {
   
   /** Required. Events issued when end user interacts with customer's application that uses Cloud Talent Solution. */
-  var clientEvent: js.UndefOr[ClientEvent] = js.native
+  var clientEvent: js.UndefOr[ClientEvent] = js.undefined
 }
 object CreateClientEventRequest {
   

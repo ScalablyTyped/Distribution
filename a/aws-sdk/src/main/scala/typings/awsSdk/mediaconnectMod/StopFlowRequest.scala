@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopFlowRequest extends StObject {
   
   /**
     * The ARN of the flow that you want to stop.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
 }
 object StopFlowRequest {
   

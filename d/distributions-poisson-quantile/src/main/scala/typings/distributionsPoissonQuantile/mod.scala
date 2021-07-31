@@ -21,68 +21,54 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: js.Array[Double], options: Optionsdtypeundefined): js.Array[Double] = js.native
+  @scala.inline
+  def apply(p: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def apply(p: js.Array[Double], options: Optionsdtypeundefined): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   /**
     * Evaluates the quantile function for a Poisson distribution.
     * @param p input value
     * @param options function options
     * @returns quantile function value(s)
     */
+  @scala.inline
+  def apply(p: Double): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
+  @scala.inline
+  def apply(p: Double, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
+  @scala.inline
+  def apply(p: Data): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypefloat32): Float32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypefloat64undefi): Float64Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeint16): Int16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeint32): Int32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeint8): Int8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeuint16): Uint16Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeuint32): Uint32Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeuint8): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def apply(p: Data, options: Optionsdtypeuint8clamped): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+  @scala.inline
+  def apply(p: Data, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
+  @scala.inline
+  def apply(p: MatrixLike): Double | Data | Matrix = ^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any]).asInstanceOf[Double | Data | Matrix]
+  @scala.inline
+  def apply(p: MatrixLike, options: Options): Double | Data | Matrix = (^.asInstanceOf[js.Dynamic].apply(p.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Data | Matrix]
+  
   @JSImport("distributions-poisson-quantile", JSImport.Namespace)
   @js.native
-  def apply(p: Double): Double | Data | Matrix = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Double, options: Options): Double | Data | Matrix = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data): Double | Data | Matrix = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypefloat32): Float32Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypefloat64undefi): Float64Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeint16): Int16Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeint32): Int32Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeint8): Int8Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeuint16): Uint16Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeuint32): Uint32Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeuint8): Uint8Array = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Optionsdtypeuint8clamped): Uint8ClampedArray = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: Data, options: Options): Double | Data | Matrix = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: MatrixLike): Double | Data | Matrix = js.native
-  @JSImport("distributions-poisson-quantile", JSImport.Namespace)
-  @js.native
-  def apply(p: MatrixLike, options: Options): Double | Data | Matrix = js.native
+  val ^ : js.Any = js.native
   
   type Data = js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
   
@@ -180,20 +166,19 @@ object mod {
   type MatrixCallback = js.Function4[/* d */ Double, /* i */ Double, /* j */ Double, /* idx */ Double, Double]
   
   // derived from https://github.com/validate-io/matrix-like
-  @js.native
   trait MatrixLike extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var dtype: String = js.native
+    var dtype: String
     
-    var length: Double = js.native
+    var length: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var shape: js.Object = js.native
+    var shape: js.Object
     
-    var strides: js.Object = js.native
+    var strides: js.Object
   }
   object MatrixLike {
     
@@ -233,26 +218,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** accessor function for accessing array values */
-    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, _]] = js.native
+    var accessor: js.UndefOr[js.Function2[/* d */ Data, /* i */ Double, js.Any]] = js.undefined
     
     /** boolean indicating if the function should return a new data structure, default=true */
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
     /** output data type, default="float64" */
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** mean parameter, default=1 */
-    var lambda: js.UndefOr[Double] = js.native
+    var lambda: js.UndefOr[Double] = js.undefined
     
     /** deep get/set key path */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** deep get/set key path separator, default="." */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -266,7 +250,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAccessor(value: (/* d */ Data, /* i */ Double) => _): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
+      def setAccessor(value: (/* d */ Data, /* i */ Double) => js.Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)

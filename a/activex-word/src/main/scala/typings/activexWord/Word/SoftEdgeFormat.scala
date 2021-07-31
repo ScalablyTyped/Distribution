@@ -3,24 +3,22 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoSoftEdgeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftEdgeFormat extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Radius: Double = js.native
+  var Radius: Double
   
-  var Type: MsoSoftEdgeType = js.native
+  var Type: MsoSoftEdgeType
   
   @JSName("Word.SoftEdgeFormat_typekey")
-  var WordDotSoftEdgeFormat_typekey: SoftEdgeFormat = js.native
+  var WordDotSoftEdgeFormat_typekey: SoftEdgeFormat
 }
 object SoftEdgeFormat {
   

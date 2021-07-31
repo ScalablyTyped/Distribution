@@ -7,39 +7,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ruler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleBarProperties extends WidgetProperties {
+trait ScaleBarProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The style for the scale bar.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#style)
     */
-  var style: js.UndefOr[ruler | line] = js.native
+  var style: js.UndefOr[ruler | line] = js.undefined
   
   /**
     * Units to use for the scale bar.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
     */
-  var unit: js.UndefOr[`non-metric` | metric | dual] = js.native
+  var unit: js.UndefOr[`non-metric` | metric | dual] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#viewModel)
     */
-  var viewModel: js.UndefOr[ScaleBarViewModelProperties] = js.native
+  var viewModel: js.UndefOr[ScaleBarViewModelProperties] = js.undefined
 }
 object ScaleBarProperties {
   

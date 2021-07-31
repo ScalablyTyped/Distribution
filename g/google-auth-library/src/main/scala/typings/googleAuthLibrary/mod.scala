@@ -11,7 +11,6 @@ import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
 import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,11 +20,11 @@ object mod {
   object CodeChallengeMethod extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod with String] = js.native
+    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod & String] = js.native
     
-    /* "plain" */ val Plain: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.Plain with String = js.native
+    /* "plain" */ val Plain: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.Plain & String = js.native
     
-    /* "S256" */ val S256: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.S256 with String = js.native
+    /* "S256" */ val S256: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.S256 & String = js.native
   }
   
   @JSImport("google-auth-library", "Compute")
@@ -61,17 +60,17 @@ object mod {
   object GCPEnv extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.envDetectMod.GCPEnv with String] = js.native
+    def apply(value: String): js.UndefOr[typings.googleAuthLibrary.envDetectMod.GCPEnv & String] = js.native
     
-    /* "APP_ENGINE" */ val APP_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.APP_ENGINE with String = js.native
+    /* "APP_ENGINE" */ val APP_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.APP_ENGINE & String = js.native
     
-    /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_FUNCTIONS with String = js.native
+    /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_FUNCTIONS & String = js.native
     
-    /* "COMPUTE_ENGINE" */ val COMPUTE_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.COMPUTE_ENGINE with String = js.native
+    /* "COMPUTE_ENGINE" */ val COMPUTE_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.COMPUTE_ENGINE & String = js.native
     
-    /* "KUBERNETES_ENGINE" */ val KUBERNETES_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.KUBERNETES_ENGINE with String = js.native
+    /* "KUBERNETES_ENGINE" */ val KUBERNETES_ENGINE: typings.googleAuthLibrary.envDetectMod.GCPEnv.KUBERNETES_ENGINE & String = js.native
     
-    /* "NONE" */ val NONE: typings.googleAuthLibrary.envDetectMod.GCPEnv.NONE with String = js.native
+    /* "NONE" */ val NONE: typings.googleAuthLibrary.envDetectMod.GCPEnv.NONE & String = js.native
   }
   
   @JSImport("google-auth-library", "GoogleAuth")
@@ -204,8 +203,8 @@ object mod {
   class LoginTicket ()
     extends typings.googleAuthLibrary.loginticketMod.LoginTicket {
     def this(env: String) = this()
-    def this(env: js.UndefOr[scala.Nothing], pay: TokenPayload) = this()
     def this(env: String, pay: TokenPayload) = this()
+    def this(env: Unit, pay: TokenPayload) = this()
   }
   
   @JSImport("google-auth-library", "OAuth2Client")
@@ -224,15 +223,19 @@ object mod {
     extends typings.googleAuthLibrary.oauth2clientMod.OAuth2Client {
     def this(clientId: String) = this()
     def this(options: OAuth2ClientOptions) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, redirectUri: String) = this()
-    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], redirectUri: String) = this()
+    def this(clientId: Unit, clientSecret: String) = this()
     def this(clientId: String, clientSecret: String, redirectUri: String) = this()
+    def this(clientId: String, clientSecret: Unit, redirectUri: String) = this()
+    def this(clientId: Unit, clientSecret: String, redirectUri: String) = this()
+    def this(clientId: Unit, clientSecret: Unit, redirectUri: String) = this()
   }
   /* static members */
   object OAuth2Client {
+    
+    @JSImport("google-auth-library", "OAuth2Client")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Clock skew - five minutes in seconds
@@ -305,9 +308,8 @@ object mod {
       * Generates an URL to revoke the given token.
       * @param token The existing token to be revoked.
       */
-    @JSImport("google-auth-library", "OAuth2Client.getRevokeTokenUrl")
-    @js.native
-    def getRevokeTokenUrl(token: String): String = js.native
+    @scala.inline
+    def getRevokeTokenUrl(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRevokeTokenUrl")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("google-auth-library", "UserRefreshClient")
@@ -323,12 +325,12 @@ object mod {
     extends typings.googleAuthLibrary.refreshclientMod.UserRefreshClient {
     def this(clientId: String) = this()
     def this(options: UserRefreshClientOptions) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
     def this(clientId: String, clientSecret: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
-    def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, refreshToken: String) = this()
-    def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
+    def this(clientId: Unit, clientSecret: String) = this()
     def this(clientId: String, clientSecret: String, refreshToken: String) = this()
+    def this(clientId: String, clientSecret: Unit, refreshToken: String) = this()
+    def this(clientId: Unit, clientSecret: String, refreshToken: String) = this()
+    def this(clientId: Unit, clientSecret: Unit, refreshToken: String) = this()
   }
   
   object auth extends Shortcut {
@@ -348,9 +350,12 @@ object mod {
     /* static members */
     object DefaultTransporterCls {
       
-      @JSImport("google-auth-library", "auth.DefaultTransporter.constructor")
+      @JSImport("google-auth-library", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     type _To = typings.googleAuthLibrary.googleauthMod.GoogleAuth

@@ -3,46 +3,44 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.rpcMessagePortMod.RpcMessagePort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcMessageChannelMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcMessageChannel", "createRpcMessageChannel")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcMessageChannel", JSImport.Namespace)
   @js.native
-  def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort): RpcMessageChannel = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcMessageChannel", "createRpcMessageChannel")
-  @js.native
-  def createRpcMessageChannel(
-    servicePort: RpcMessagePort,
-    clientPort: RpcMessagePort,
-    linkPorts: js.UndefOr[scala.Nothing],
-    unlinkPorts: js.Function0[js.Promise[Unit]]
-  ): RpcMessageChannel = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcMessageChannel", "createRpcMessageChannel")
-  @js.native
-  def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort, linkPorts: js.Function0[js.Promise[Unit]]): RpcMessageChannel = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/RpcMessageChannel", "createRpcMessageChannel")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  @scala.inline
+  def createRpcMessageChannel(servicePort: RpcMessagePort, clientPort: RpcMessagePort, linkPorts: js.Function0[js.Promise[Unit]]): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  @scala.inline
   def createRpcMessageChannel(
     servicePort: RpcMessagePort,
     clientPort: RpcMessagePort,
     linkPorts: js.Function0[js.Promise[Unit]],
     unlinkPorts: js.Function0[js.Promise[Unit]]
-  ): RpcMessageChannel = js.native
+  ): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any], unlinkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  @scala.inline
+  def createRpcMessageChannel(
+    servicePort: RpcMessagePort,
+    clientPort: RpcMessagePort,
+    linkPorts: Unit,
+    unlinkPorts: js.Function0[js.Promise[Unit]]
+  ): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcMessageChannel")(servicePort.asInstanceOf[js.Any], clientPort.asInstanceOf[js.Any], linkPorts.asInstanceOf[js.Any], unlinkPorts.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
   
-  @js.native
   trait RpcMessageChannel extends StObject {
     
-    val clientPort: RpcMessagePort = js.native
+    val clientPort: RpcMessagePort
     
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
     
-    def isOpen(): Boolean = js.native
+    def isOpen(): Boolean
     
-    def open(): js.Promise[Unit] = js.native
+    def open(): js.Promise[Unit]
     
-    val servicePort: RpcMessagePort = js.native
+    val servicePort: RpcMessagePort
   }
   object RpcMessageChannel {
     

@@ -3,7 +3,6 @@ package typings.ionicons
 import typings.ionicons.stencilPublicRuntimeMod.ListenTargetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioniconsStrings {
@@ -44,7 +43,9 @@ object ioniconsStrings {
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait body extends ListenTargetOptions
+  sealed trait body
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   
@@ -59,7 +60,9 @@ object ioniconsStrings {
   def central: central = "central".asInstanceOf[central]
   
   @js.native
-  sealed trait document extends ListenTargetOptions
+  sealed trait document
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
@@ -159,7 +162,9 @@ object ioniconsStrings {
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
-  sealed trait parent extends ListenTargetOptions
+  sealed trait parent
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def parent: parent = "parent".asInstanceOf[parent]
   
@@ -214,7 +219,9 @@ object ioniconsStrings {
   def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
-  sealed trait window extends ListenTargetOptions
+  sealed trait window
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   

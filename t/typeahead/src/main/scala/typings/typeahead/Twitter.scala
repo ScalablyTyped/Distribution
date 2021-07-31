@@ -2,7 +2,6 @@ package typings.typeahead
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Twitter {
@@ -12,53 +11,52 @@ object Twitter {
     /**
       * Used for overriding the default class names.
       */
-    @js.native
     trait ClassNames extends StObject {
       
       /**
         * Added to suggestion element when menu cursor moves to said suggestion.Defaults to tt- cursor.
         */
-      var cursor: js.UndefOr[String] = js.native
+      var cursor: js.UndefOr[String] = js.undefined
       
       /**
         * Added to dataset elements.to Defaults to tt- dataset.
         */
-      var dataset: js.UndefOr[String] = js.native
+      var dataset: js.UndefOr[String] = js.undefined
       
       /**
         * Added to menu element when it contains no content.Defaults to tt- empty.
         */
-      var empty: js.UndefOr[String] = js.native
+      var empty: js.UndefOr[String] = js.undefined
       
       /**
         * Added to the element that wraps highlighted text.Defaults to tt- highlight.
         */
-      var highlight: js.UndefOr[String] = js.native
+      var highlight: js.UndefOr[String] = js.undefined
       
       /**
         * Added to hint input.Defaults to tt- hint.
         */
-      var hint: js.UndefOr[String] = js.native
+      var hint: js.UndefOr[String] = js.undefined
       
       /**
         * Added to input that's initialized into a typeahead. Defaults to tt-input.
         */
-      var input: js.UndefOr[String] = js.native
+      var input: js.UndefOr[String] = js.undefined
       
       /**
         * Added to menu element.Defaults to tt- menu.
         */
-      var menu: js.UndefOr[String] = js.native
+      var menu: js.UndefOr[String] = js.undefined
       
       /**
         * Added to menu element when it is opened.Defaults to tt- open.
         */
-      var open: js.UndefOr[String] = js.native
+      var open: js.UndefOr[String] = js.undefined
       
       /**
         * Added to suggestion elements.Defaults to tt- suggestion.
         */
-      var suggestion: js.UndefOr[String] = js.native
+      var suggestion: js.UndefOr[String] = js.undefined
     }
     object ClassNames {
       
@@ -138,7 +136,6 @@ object Twitter {
       * searches, trends, and accounts  that would be a great use case for using
       * multiple datasets.
       */
-    @js.native
     trait Dataset[T] extends StObject {
       
       /**
@@ -147,7 +144,7 @@ object Twitter {
         * source i.e. if the source function expects 3 arguments, async will
         * be set to true.
         */
-      var async: js.UndefOr[Boolean] = js.native
+      var async: js.UndefOr[Boolean] = js.undefined
       
       /**
         * For a given suggestion, determines the string representation of it.
@@ -156,12 +153,12 @@ object Twitter {
         * that transforms a suggestion object into a string.
         * Defaults to stringifying the suggestion.
         */
-      var display: js.UndefOr[String | (js.Function1[/* obj */ T, String])] = js.native
+      var display: js.UndefOr[String | (js.Function1[/* obj */ T, String])] = js.undefined
       
       /**
         * The max number of suggestions to be displayed. Defaults to 5.
         */
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
       /**
         * The name of the dataset.
@@ -169,7 +166,7 @@ object Twitter {
         * Must only consist of underscores, dashes, letters (a-z), and numbers.
         * Defaults to a random number.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * The backing data source for suggestions.
@@ -184,14 +181,14 @@ object Twitter {
             /* syncResults */ js.Function1[/* result */ js.Array[T], Unit], 
             /* asyncResults */ js.UndefOr[js.Function1[/* result */ js.Array[T], Unit]], 
             Unit
-          ]) = js.native
+          ])
       
       /**
         * A hash of templates to be used when rendering the dataset. Note a
         * precompiled template is a function that takes a JavaScript object as
         * its first argument and returns a HTML string.
         */
-      var templates: js.UndefOr[Templates[T]] = js.native
+      var templates: js.UndefOr[Templates[T]] = js.undefined
     }
     object Dataset {
       
@@ -209,7 +206,7 @@ object Twitter {
       }
       
       @scala.inline
-      implicit class DatasetMutableBuilder[Self <: Dataset[_], T] (val x: Self with Dataset[T]) extends AnyVal {
+      implicit class DatasetMutableBuilder[Self <: Dataset[?], T] (val x: Self & Dataset[T]) extends AnyVal {
         
         @scala.inline
         def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
@@ -261,31 +258,30 @@ object Twitter {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Used for overriding the default class names.
         */
-      var classNames: js.UndefOr[ClassNames] = js.native
+      var classNames: js.UndefOr[ClassNames] = js.undefined
       
       /**
         * If true, when suggestions are rendered, pattern matches for the current query in text nodes will be wrapped in a strong element with its class set to {{classNames.highlight}}.
         * Defaults to false.
         */
-      var highlight: js.UndefOr[Boolean] = js.native
+      var highlight: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If false, the typeahead will not show a hint.
         * Defaults to true.
         */
-      var hint: js.UndefOr[Boolean] = js.native
+      var hint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The minimum character length needed before suggestions start getting rendered.
         * Defaults to 1.
         */
-      var minLength: js.UndefOr[Double] = js.native
+      var minLength: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -329,7 +325,6 @@ object Twitter {
       * precompiled template is a function that takes a JavaScript object as
       * its first argument and returns a HTML string.
       */
-    @js.native
     trait Templates[T] extends StObject {
       
       /**
@@ -339,7 +334,7 @@ object Twitter {
         */
       var footer: js.UndefOr[
             String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Rendered at the top of the dataset when suggestions are present. Can be either a HTML string or
@@ -348,28 +343,28 @@ object Twitter {
         */
       var header: js.UndefOr[
             String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Rendered when 0 suggestions are available for the given query.
         * Can be either a HTML string or a precompiled template.
         * If it's a precompiled template, the passed in context will contain query.
         */
-      var notFound: js.UndefOr[String | (js.Function1[/* query */ String, String])] = js.native
+      var notFound: js.UndefOr[String | (js.Function1[/* query */ String, String])] = js.undefined
       
       /**
         * Rendered when 0 synchronous suggestions are available but asynchronous suggestions are expected.
         * Can be either a HTML string or a precompiled template.
         * If it's a precompiled template, the passed in context will contain query.
         */
-      var pending: js.UndefOr[String | (js.Function1[/* query */ String, String])] = js.native
+      var pending: js.UndefOr[String | (js.Function1[/* query */ String, String])] = js.undefined
       
       /**
         * Used to render a single suggestion. If set, this has to be a precompiled template.
         * The associated suggestion object will serve as the context.
         * Defaults to the value of display wrapped in a div tag i.e. <div>{{value}}</div>.
         */
-      var suggestion: js.UndefOr[js.Function1[/* suggestion */ T, String]] = js.native
+      var suggestion: js.UndefOr[js.Function1[/* suggestion */ T, String]] = js.undefined
     }
     object Templates {
       
@@ -380,7 +375,7 @@ object Twitter {
       }
       
       @scala.inline
-      implicit class TemplatesMutableBuilder[Self <: Templates[_], T] (val x: Self with Templates[T]) extends AnyVal {
+      implicit class TemplatesMutableBuilder[Self <: Templates[?], T] (val x: Self & Templates[T]) extends AnyVal {
         
         @scala.inline
         def setFooter(value: String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])

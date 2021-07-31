@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OddColor extends StObject {
   
-  var evenColor: js.UndefOr[Property] = js.native
+  var evenColor: js.UndefOr[Property] = js.undefined
   
-  var oddColor: js.UndefOr[Property] = js.native
+  var oddColor: js.UndefOr[Property] = js.undefined
   
-  var offset: js.UndefOr[Property] = js.native
+  var offset: js.UndefOr[Property] = js.undefined
   
-  var orientation: js.UndefOr[Property] = js.native
+  var orientation: js.UndefOr[Property] = js.undefined
   
-  var repeat: js.UndefOr[Property] = js.native
+  var repeat: js.UndefOr[Property] = js.undefined
 }
 object OddColor {
   

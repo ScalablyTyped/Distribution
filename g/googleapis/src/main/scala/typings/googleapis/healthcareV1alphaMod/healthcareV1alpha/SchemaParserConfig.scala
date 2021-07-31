@@ -2,26 +2,24 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration for the parser. It determines how the server parses the
   * messages.
   */
-@js.native
 trait SchemaParserConfig extends StObject {
   
   /**
     * Determines whether messages with no header are allowed.
     */
-  var allowNullHeader: js.UndefOr[Boolean] = js.native
+  var allowNullHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Byte(s) to be used as the segment terminator. If this is unset,
     * &#39;\r&#39; will be used as segment terminator.
     */
-  var segmentTerminator: js.UndefOr[String] = js.native
+  var segmentTerminator: js.UndefOr[String] = js.undefined
 }
 object SchemaParserConfig {
   

@@ -19,14 +19,15 @@ import typings.mendixmodelsdk.versionChecksMod.Version
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractModelMod {
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/AbstractModel", "AbstractModel")
   @js.native
-  abstract class AbstractModel protected () extends IAbstractModel {
+  abstract class AbstractModel protected ()
+    extends StObject
+       with IAbstractModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
     
     def getFile(filePath: String, outFilePath: String, callback: IVoidCallback, errorCallback: IErrorCallback): Unit = js.native
@@ -38,13 +39,8 @@ object abstractModelMod {
     def id_MAbstractModel: String = js.native
     
     def loadUnitById[T /* <: IAbstractUnit */](id: String): js.Promise[T] = js.native
-    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: js.UndefOr[scala.Nothing], callback: ICallback[T]): Unit = js.native
-    def loadUnitById[T /* <: IAbstractUnit */](
-      id: String,
-      forceRefresh: js.UndefOr[scala.Nothing],
-      callback: ICallback[T],
-      errorCallback: IErrorCallback
-    ): Unit = js.native
+    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Unit, callback: ICallback[T]): Unit = js.native
+    def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Unit, callback: ICallback[T], errorCallback: IErrorCallback): Unit = js.native
     
     def root: IStructuralUnit = js.native
   }
@@ -153,7 +149,7 @@ object abstractModelMod {
       */
     def getAppUpdateStatus(jobId: String, callback: ICallback[IDeployJobStatus], errorCallback: IErrorCallback): Unit = js.native
     
-    def getFile(filePath: String, outFilePath: String): js.Promise[_] = js.native
+    def getFile(filePath: String, outFilePath: String): js.Promise[js.Any] = js.native
     /**
       * Downloads the file specified by the supplied filepath.
       * If filePath is empty, the raw response body will be provided in the callback
@@ -182,7 +178,7 @@ object abstractModelMod {
       callback: js.Function1[/* response */ js.UndefOr[js.Array[String]], Unit],
       errorCallback: IErrorCallback
     ): Unit = js.native
-    def getFiles(options: IGetFilesOptions): js.Promise[js.Array[String] | _] = js.native
+    def getFiles(options: IGetFilesOptions): js.Promise[js.Array[String] | js.Any] = js.native
     def getFiles(
       options: IGetFilesOptions,
       callback: js.Function1[/* response */ js.UndefOr[js.Array[String] | js.Any], Unit],

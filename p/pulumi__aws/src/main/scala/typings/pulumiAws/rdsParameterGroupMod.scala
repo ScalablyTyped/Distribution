@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsParameterGroupMod {
@@ -65,6 +64,10 @@ object rdsParameterGroupMod {
   /* static members */
   object ParameterGroup {
     
+    @JSImport("@pulumi/aws/rds/parameterGroup", "ParameterGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ParameterGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -74,60 +77,54 @@ object rdsParameterGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/parameterGroup", "ParameterGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ParameterGroup = js.native
-    @JSImport("@pulumi/aws/rds/parameterGroup", "ParameterGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ParameterGroup = js.native
-    @JSImport("@pulumi/aws/rds/parameterGroup", "ParameterGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ParameterGroupState): ParameterGroup = js.native
-    @JSImport("@pulumi/aws/rds/parameterGroup", "ParameterGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): ParameterGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ParameterGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ParameterGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ParameterGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParameterGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ParameterGroupState): ParameterGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ParameterGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): ParameterGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParameterGroup]
     
     /**
       * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/parameterGroup", "ParameterGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/parameterGroup.ParameterGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/parameterGroup.ParameterGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/parameterGroup.ParameterGroup */ Boolean]
   }
   
-  @js.native
   trait ParameterGroupArgs extends StObject {
     
     /**
       * The description of the DB parameter group. Defaults to "Managed by Pulumi".
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The family of the DB parameter group.
       */
-    val family: Input[String] = js.native
+    val family: Input[String]
     
     /**
       * The name of the DB parameter.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html) after initial creation of the group.
       */
-    val parameters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.ParameterGroupParameter]]]] = js.native
+    val parameters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.ParameterGroupParameter]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ParameterGroupArgs {
     
@@ -178,43 +175,42 @@ object rdsParameterGroupMod {
     }
   }
   
-  @js.native
   trait ParameterGroupState extends StObject {
     
     /**
       * The ARN of the db parameter group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the DB parameter group. Defaults to "Managed by Pulumi".
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The family of the DB parameter group.
       */
-    val family: js.UndefOr[Input[String]] = js.native
+    val family: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the DB parameter.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of DB parameters to apply. Note that parameters may differ from a family to an other. Full list of all parameters can be discovered via [`aws rds describe-db-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-parameters.html) after initial creation of the group.
       */
-    val parameters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.ParameterGroupParameter]]]] = js.native
+    val parameters: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.rds.ParameterGroupParameter]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ParameterGroupState {
     

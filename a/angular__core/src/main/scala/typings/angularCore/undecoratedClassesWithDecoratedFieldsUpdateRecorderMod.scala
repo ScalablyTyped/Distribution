@@ -5,19 +5,19 @@ import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.NamedImports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object undecoratedClassesWithDecoratedFieldsUpdateRecorderMod {
   
-  @js.native
-  trait UpdateRecorder extends ImportManagerUpdateRecorder {
+  trait UpdateRecorder
+    extends StObject
+       with ImportManagerUpdateRecorder {
     
-    def addClassDecorator(node: ClassDeclaration, text: String): Unit = js.native
+    def addClassDecorator(node: ClassDeclaration, text: String): Unit
     
-    def addClassTodo(node: ClassDeclaration, message: String): Unit = js.native
+    def addClassTodo(node: ClassDeclaration, message: String): Unit
     
-    def commitUpdate(): Unit = js.native
+    def commitUpdate(): Unit
   }
   object UpdateRecorder {
     

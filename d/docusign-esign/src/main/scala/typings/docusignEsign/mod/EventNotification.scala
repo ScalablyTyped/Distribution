@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventNotification extends StObject {
   
   /**
@@ -15,89 +13,89 @@ trait EventNotification extends StObject {
     */
   var envelopeEvents: js.UndefOr[
     js.Array[/* For which envelope events should your webhook be called? */ EnvelopeEvent]
-  ] = js.native
+  ] = js.undefined
   
-  var eventData: js.UndefOr[ConnectEventData] = js.native
+  var eventData: js.UndefOr[ConnectEventData] = js.undefined
   
   /**
     * When set to **true**, the Connect Service includes the Certificate of Completion with completed envelopes.
     */
-  var includeCertificateOfCompletion: js.UndefOr[String] = js.native
+  var includeCertificateOfCompletion: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the Connect service will digitally sign the XML data. The signature will be included in the XML message.
     */
-  var includeCertificateWithSoap: js.UndefOr[String] = js.native
+  var includeCertificateWithSoap: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the Document Fields associated with the envelope's documents are included in the notification messages.
     * Document Fields are optional custom name-value pairs added to documents using the API.
     */
-  var includeDocumentFields: js.UndefOr[String] = js.native
+  var includeDocumentFields: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the XML webhook messages will include the envelope's PDF documents. Including the PDF documents will greatly increase
     * the size of the notification messages. Ensure that your listener can handle incoming messages that are 25MB or larger.
     */
-  var includeDocuments: js.UndefOr[String] = js.native
+  var includeDocuments: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, if the envelope is voided, the Connect Service notification will include the void reason, as entered by the person that voided the envelope.
     */
-  var includeEnvelopeVoidReason: js.UndefOr[String] = js.native
+  var includeEnvelopeVoidReason: js.UndefOr[String] = js.undefined
   
-  var includeHMAC: js.UndefOr[String] = js.native
+  var includeHMAC: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Connect will include the sender account as Custom Field in the data.
     */
-  var includeSenderAccountAsCustomField: js.UndefOr[String] = js.native
+  var includeSenderAccountAsCustomField: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the envelope's time zone information is included in the webhook messages.
     */
-  var includeTimeZone: js.UndefOr[String] = js.native
+  var includeTimeZone: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the webhook messages are logged. They can be viewed on the DocuSign Administration Web Tool in the Connect section. Logged messages can also be
     * downloaded via the [ConnectEvents resource](https://developers.docusign.com/esign-rest-api/reference/Connect/ConnectEvents).
     */
-  var loggingEnabled: js.UndefOr[String] = js.native
+  var loggingEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * An array of recipient event statuses that will trigger Connect to send notifications to your webhook listener at the url endpoint specified in the `url` property.
     *
     * To receive notifications, you must include either an `envelopeEvents` node or a `recipientEvents` node. You do not need to specify both.
     */
-  var recipientEvents: js.UndefOr[js.Array[RecipientEvent]] = js.native
+  var recipientEvents: js.UndefOr[js.Array[RecipientEvent]] = js.undefined
   
   /**
     * When set to **true**, the DocuSign Connect service checks that the message was received and retries on failures.
     */
-  var requireAcknowledgment: js.UndefOr[String] = js.native
+  var requireAcknowledgment: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, Mutual TLS will be enabled for notifications. Mutual TLS must be initiated by the listener (the customer's web server) during the TLS handshake protocol.
     */
-  var signMessageWithX509Cert: js.UndefOr[String] = js.native
+  var signMessageWithX509Cert: js.UndefOr[String] = js.undefined
   
   /**
     * The namespace of the SOAP interface.
     *
     * The namespace value must be set if useSoapexport interface is set to true.
     */
-  var soapNameSpace: js.UndefOr[String] = js.native
+  var soapNameSpace: js.UndefOr[String] = js.undefined
   
   /**
     * The endpoint to which webhook notification messages are sent via an HTTPS POST request. The url must start with https. The customer's web server must use an SSL/TLS
     * certificate whose CA is in the Microsoft list of trusted CAs. Self-signed certificates are not ok. Free certificates from Let's Encrypt can be used.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the notifications are sent to your endpoint as SOAP requests.
     */
-  var useSoapInterface: js.UndefOr[String] = js.native
+  var useSoapInterface: js.UndefOr[String] = js.undefined
 }
 object EventNotification {
   

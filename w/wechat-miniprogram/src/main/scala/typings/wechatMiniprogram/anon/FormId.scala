@@ -3,18 +3,16 @@ package typings.wechatMiniprogram.anon
 import typings.wechatMiniprogram.WechatMiniprogram.IAnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormId extends StObject {
   
-  var formId: js.UndefOr[js.Any] = js.native
+  var formId: js.UndefOr[js.Any] = js.undefined
   
-  var target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject] = js.native
+  var target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject]
   
   /** 表单中的数据，需要在表单组件中加上 name 来作为 key。 */
-  var value: IAnyObject = js.native
+  var value: IAnyObject
 }
 object FormId {
   

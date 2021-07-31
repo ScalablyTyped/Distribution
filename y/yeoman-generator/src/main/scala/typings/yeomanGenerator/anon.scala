@@ -14,12 +14,10 @@ import typings.memFsEditor.mod.WriteJsonSpace
 import typings.yeomanGenerator.storageMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Email extends StObject {
     
     /**
@@ -27,14 +25,14 @@ object anon {
       * (it'll take what Git will use in the current context)
       * @return configured git email or undefined
       */
-    def email(): String = js.native
+    def email(): String
     
     /**
       * Retrieves user's name from Git in the global scope or the project scope
       * (it'll take what Git will use in the current context)
       * @return configured git name or undefined
       */
-    def name(): String = js.native
+    def name(): String
   }
   object Email {
     
@@ -55,18 +53,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ExportOption extends StObject {
     
     /**
       * A value indicating whether an option should be exported for this question.
       */
-    var exportOption: js.UndefOr[Boolean | js.Object] = js.native
+    var exportOption: js.UndefOr[Boolean | js.Object] = js.undefined
     
     /**
       * The storage to store the answers.
       */
-    var storage: js.UndefOr[^] = js.native
+    var storage: js.UndefOr[^] = js.undefined
   }
   object ExportOption {
     
@@ -105,29 +102,11 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(from: FilePaths, to: String): Unit = js.native
-    def apply(
-      from: FilePaths,
-      to: String,
-      options: js.UndefOr[scala.Nothing],
-      context: js.UndefOr[scala.Nothing],
-      templateOptions: Options
-    ): Unit = js.native
-    def apply(from: FilePaths, to: String, options: js.UndefOr[scala.Nothing], context: Data): Unit = js.native
-    def apply(
-      from: FilePaths,
-      to: String,
-      options: js.UndefOr[scala.Nothing],
-      context: Data,
-      templateOptions: Options
-    ): Unit = js.native
+    def apply(from: FilePaths, to: String, options: Unit, context: Unit, templateOptions: Options): Unit = js.native
+    def apply(from: FilePaths, to: String, options: Unit, context: Data): Unit = js.native
+    def apply(from: FilePaths, to: String, options: Unit, context: Data, templateOptions: Options): Unit = js.native
     def apply(from: FilePaths, to: String, options: CopyOptions): Unit = js.native
-    def apply(
-      from: FilePaths,
-      to: String,
-      options: CopyOptions,
-      context: js.UndefOr[scala.Nothing],
-      templateOptions: Options
-    ): Unit = js.native
+    def apply(from: FilePaths, to: String, options: CopyOptions, context: Unit, templateOptions: Options): Unit = js.native
     def apply(from: FilePaths, to: String, options: CopyOptions, context: Data): Unit = js.native
     def apply(from: FilePaths, to: String, options: CopyOptions, context: Data, templateOptions: Options): Unit = js.native
   }
@@ -136,8 +115,9 @@ object anon {
   trait FnCallFilepathContentsReplacerSpace extends StObject {
     
     def apply(filepath: String, contents: js.Any): String = js.native
-    def apply(filepath: String, contents: js.Any, replacer: js.UndefOr[WriteJsonReplacer], space: WriteJsonSpace): String = js.native
+    def apply(filepath: String, contents: js.Any, replacer: Unit, space: WriteJsonSpace): String = js.native
     def apply(filepath: String, contents: js.Any, replacer: WriteJsonReplacer): String = js.native
+    def apply(filepath: String, contents: js.Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
   }
   
   @js.native
@@ -161,12 +141,11 @@ object anon {
     def apply(from: FilePaths, to: String, options: WithGlobOptions): Unit = js.native
   }
   
-  @js.native
   trait Git extends StObject {
     
-    val git: Email = js.native
+    val git: Email
     
-    val github: Username = js.native
+    val github: Username
   }
   object Git {
     
@@ -187,13 +166,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Store extends StObject {
     
     /**
       * A value indicating whether to store the user's previous answer.
       */
-    var store: js.UndefOr[Boolean] = js.native
+    var store: js.UndefOr[Boolean] = js.undefined
   }
   object Store {
     
@@ -214,7 +192,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Username extends StObject {
     
     /**
@@ -222,7 +199,7 @@ object anon {
       * @return Resolved with the GitHub username or rejected if unable to
       *         get the information
       */
-    def username(): js.Promise[String] = js.native
+    def username(): js.Promise[String]
   }
   object Username {
     

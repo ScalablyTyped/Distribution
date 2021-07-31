@@ -2,20 +2,18 @@ package typings.appleMusicApi.AppleMusicApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/relationship
-@js.native
 trait Relationship[ResourceType] extends StObject {
   
-  var data: js.Array[ResourceType] = js.native
+  var data: js.Array[ResourceType]
   
-  var href: String = js.native
+  var href: String
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
 }
 object Relationship {
   
@@ -26,7 +24,7 @@ object Relationship {
   }
   
   @scala.inline
-  implicit class RelationshipMutableBuilder[Self <: Relationship[_], ResourceType] (val x: Self with Relationship[ResourceType]) extends AnyVal {
+  implicit class RelationshipMutableBuilder[Self <: Relationship[?], ResourceType] (val x: Self & Relationship[ResourceType]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[ResourceType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

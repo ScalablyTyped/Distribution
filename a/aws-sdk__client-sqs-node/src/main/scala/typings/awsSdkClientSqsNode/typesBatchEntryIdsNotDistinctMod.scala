@@ -5,25 +5,24 @@ import typings.awsSdkClientSqsNode.deleteMessageBatchExceptionsUnionMod.DeleteMe
 import typings.awsSdkClientSqsNode.sendMessageBatchExceptionsUnionMod.SendMessageBatchExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBatchEntryIdsNotDistinctMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BatchEntryIdsNotDistinctDetails> * / any */ @js.native
-  trait BatchEntryIdsNotDistinct
-    extends ChangeMessageVisibilityBatchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BatchEntryIdsNotDistinctDetails> * / any */ trait BatchEntryIdsNotDistinct
+    extends StObject
+       with ChangeMessageVisibilityBatchExceptionsUnion
        with DeleteMessageBatchExceptionsUnion
        with SendMessageBatchExceptionsUnion {
     
-    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchEntryIdsNotDistinct = js.native
+    var name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchEntryIdsNotDistinct
   }
   object BatchEntryIdsNotDistinct {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchEntryIdsNotDistinct): BatchEntryIdsNotDistinct = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BatchEntryIdsNotDistinct = {
+      val __obj = js.Dynamic.literal(name = "BatchEntryIdsNotDistinct")
       __obj.asInstanceOf[BatchEntryIdsNotDistinct]
     }
     
@@ -35,6 +34,5 @@ object typesBatchEntryIdsNotDistinctMod {
     }
   }
   
-  @js.native
   trait BatchEntryIdsNotDistinctDetails extends StObject
 }

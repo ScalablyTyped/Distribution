@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/fitness/v1", "fitness_v1.Resource$Users$Datasources")
@@ -38,7 +37,7 @@ class ResourceUsersDatasources protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaDataSource] = js.native
   def create(callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
   def create(params: ParamsResourceUsersDatasourcesCreate): GaxiosPromise[SchemaDataSource] = js.native
   def create(params: ParamsResourceUsersDatasourcesCreate, callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
   def create(
@@ -73,7 +72,7 @@ class ResourceUsersDatasources protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaDataSource] = js.native
   def delete(callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
   def delete(params: ParamsResourceUsersDatasourcesDelete): GaxiosPromise[SchemaDataSource] = js.native
   def delete(params: ParamsResourceUsersDatasourcesDelete, callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
   def delete(
@@ -103,7 +102,7 @@ class ResourceUsersDatasources protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDataSource] = js.native
   def get(callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
   def get(params: ParamsResourceUsersDatasourcesGet): GaxiosPromise[SchemaDataSource] = js.native
   def get(params: ParamsResourceUsersDatasourcesGet, callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
   def get(
@@ -136,7 +135,7 @@ class ResourceUsersDatasources protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDataSourcesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(params: ParamsResourceUsersDatasourcesList): GaxiosPromise[SchemaListDataSourcesResponse] = js.native
   def list(
     params: ParamsResourceUsersDatasourcesList,
@@ -173,7 +172,7 @@ class ResourceUsersDatasources protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaDataSource] = js.native
   def update(callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDataSource] = js.native
   def update(params: ParamsResourceUsersDatasourcesUpdate): GaxiosPromise[SchemaDataSource] = js.native
   def update(params: ParamsResourceUsersDatasourcesUpdate, callback: BodyResponseCallback[SchemaDataSource]): Unit = js.native
   def update(

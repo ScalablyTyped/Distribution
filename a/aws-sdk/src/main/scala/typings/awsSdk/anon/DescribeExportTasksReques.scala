@@ -7,25 +7,23 @@ import typings.awsSdk.ec2Mod.FilterList
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeExportTasksRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeExportTasksReques extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The export task IDs.
     */
-  var ExportTaskIds: js.UndefOr[ExportTaskIdStringList] = js.native
+  var ExportTaskIds: js.UndefOr[ExportTaskIdStringList] = js.undefined
   
   /**
     * the filters for the export tasks.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
 }
 object DescribeExportTasksReques {
   

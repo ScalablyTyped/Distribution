@@ -2,15 +2,13 @@ package typings.grommetIcons
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Colors extends StObject {
     
-    var colors: Icon = js.native
+    var colors: Icon
   }
   object Colors {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Icon extends StObject {
     
-    var icon: String = js.native
+    var icon: String
   }
   object Icon {
     
@@ -49,16 +46,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Large extends StObject {
     
-    var large: String = js.native
+    var large: String
     
-    var medium: String = js.native
+    var medium: String
     
-    var small: String = js.native
+    var small: String
     
-    var xlarge: String = js.native
+    var xlarge: String
   }
   object Large {
     
@@ -85,10 +81,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var size: Large = js.native
+    var size: Large
   }
   object Size {
     

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1TagField extends StObject {
   
   /** Holds the value for a tag field with boolean type. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The display name of this field. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Holds the value for a tag field with double type. */
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
   /** Holds the value for a tag field with enum type. This value must be one of the allowed values in the definition of this enum. */
-  var enumValue: js.UndefOr[GoogleCloudDatacatalogV1beta1TagFieldEnumValue] = js.native
+  var enumValue: js.UndefOr[GoogleCloudDatacatalogV1beta1TagFieldEnumValue] = js.undefined
   
   /**
     * Output only. The order of this field with respect to other fields in this tag. It can be set in Tag. For example, a higher value can indicate a more important field. The value can
     * be negative. Multiple fields can have the same order, and field orders within a tag do not have to be sequential.
     */
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
   /** Holds the value for a tag field with string type. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
   /** Holds the value for a tag field with timestamp type. */
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1TagField {
   

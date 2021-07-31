@@ -9,7 +9,6 @@ import typings.nodegit.nodegitNumbers.`64`
 import typings.nodegit.nodegitNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credMod {
@@ -25,29 +24,27 @@ object credMod {
   /* static members */
   object Cred {
     
-    @JSImport("nodegit/cred", "Cred.defaultNew")
+    @JSImport("nodegit/cred", "Cred")
     @js.native
-    def defaultNew(): Cred = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/cred", "Cred.sshKeyFromAgent")
-    @js.native
-    def sshKeyFromAgent(username: String): Cred = js.native
+    @scala.inline
+    def defaultNew(): Cred = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultNew")().asInstanceOf[Cred]
     
-    @JSImport("nodegit/cred", "Cred.sshKeyMemoryNew")
-    @js.native
-    def sshKeyMemoryNew(username: String, publicKey: String, privateKey: String, passphrase: String): js.Promise[Cred] = js.native
+    @scala.inline
+    def sshKeyFromAgent(username: String): Cred = ^.asInstanceOf[js.Dynamic].applyDynamic("sshKeyFromAgent")(username.asInstanceOf[js.Any]).asInstanceOf[Cred]
     
-    @JSImport("nodegit/cred", "Cred.sshKeyNew")
-    @js.native
-    def sshKeyNew(username: String, publicKey: String, privateKey: String, passphrase: String): Cred = js.native
+    @scala.inline
+    def sshKeyMemoryNew(username: String, publicKey: String, privateKey: String, passphrase: String): js.Promise[Cred] = (^.asInstanceOf[js.Dynamic].applyDynamic("sshKeyMemoryNew")(username.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Cred]]
     
-    @JSImport("nodegit/cred", "Cred.usernameNew")
-    @js.native
-    def usernameNew(username: String): js.Promise[Cred] = js.native
+    @scala.inline
+    def sshKeyNew(username: String, publicKey: String, privateKey: String, passphrase: String): Cred = (^.asInstanceOf[js.Dynamic].applyDynamic("sshKeyNew")(username.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Cred]
     
-    @JSImport("nodegit/cred", "Cred.userpassPlaintextNew")
-    @js.native
-    def userpassPlaintextNew(username: String, password: String): Cred = js.native
+    @scala.inline
+    def usernameNew(username: String): js.Promise[Cred] = ^.asInstanceOf[js.Dynamic].applyDynamic("usernameNew")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Cred]]
+    
+    @scala.inline
+    def userpassPlaintextNew(username: String, password: String): Cred = (^.asInstanceOf[js.Dynamic].applyDynamic("userpassPlaintextNew")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Cred]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`1`

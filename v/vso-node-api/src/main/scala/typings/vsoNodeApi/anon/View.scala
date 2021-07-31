@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait View extends StObject {
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var edit: scala.Double = js.native
+  var edit: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var view: scala.Double = js.native
+  var view: scala.Double
 }
 object View {
   

@@ -3,37 +3,35 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartPdf extends StObject {
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var creator: js.UndefOr[String] = js.native
+  var creator: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var forceProxy: js.UndefOr[Boolean] = js.native
+  var forceProxy: js.UndefOr[Boolean] = js.undefined
   
-  var keywords: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[String] = js.undefined
   
-  var landscape: js.UndefOr[Boolean] = js.native
+  var landscape: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[ChartPdfMargin] = js.native
+  var margin: js.UndefOr[ChartPdfMargin] = js.undefined
   
-  var paperSize: js.UndefOr[String | js.Any] = js.native
+  var paperSize: js.UndefOr[String | js.Any] = js.undefined
   
-  var proxyTarget: js.UndefOr[String] = js.native
+  var proxyTarget: js.UndefOr[String] = js.undefined
   
-  var proxyURL: js.UndefOr[String] = js.native
+  var proxyURL: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ChartPdf {
   

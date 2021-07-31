@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientChat.anon.Name
 import typings.maximMazurokGapiClientChat.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -3,10 +3,8 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.usb.DeviceFilterStrict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FiltersArray extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait FiltersArray extends StObject {
     * A device only needs to match one of the provided filters.
     * A vendorId is required and only one of productId or interfaceClass may be provided.
     */
-  var filters: js.Array[DeviceFilterStrict] = js.native
+  var filters: js.Array[DeviceFilterStrict]
 }
 object FiltersArray {
   

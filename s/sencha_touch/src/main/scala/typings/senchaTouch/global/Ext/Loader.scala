@@ -3,13 +3,13 @@ package typings.senchaTouch.global.Ext
 import typings.senchaTouch.Ext.ILoader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Loader")
 @js.native
 class Loader ()
-  extends typings.senchaTouch.Ext.Loader
+  extends StObject
+     with typings.senchaTouch.Ext.Loader
 /* static members */
 object Loader {
   
@@ -21,12 +21,10 @@ object Loader {
     * @param paths Object a set of className: path mappings
     * @returns Ext.Loader this
     */
-  @JSGlobal("Ext.Loader.addClassPathMappings")
-  @js.native
-  def addClassPathMappings(): ILoader = js.native
-  @JSGlobal("Ext.Loader.addClassPathMappings")
-  @js.native
-  def addClassPathMappings(paths: typings.senchaTouch.Ext.Object): ILoader = js.native
+  @scala.inline
+  def addClassPathMappings(): ILoader = ^.asInstanceOf[js.Dynamic].applyDynamic("addClassPathMappings")().asInstanceOf[ILoader]
+  @scala.inline
+  def addClassPathMappings(paths: typings.senchaTouch.Ext.Object): ILoader = ^.asInstanceOf[js.Dynamic].applyDynamic("addClassPathMappings")(paths.asInstanceOf[js.Any]).asInstanceOf[ILoader]
   
   /** [Config Option] (Boolean) */
   @JSGlobal("Ext.Loader.disableCaching")
@@ -54,34 +52,28 @@ object Loader {
     * @param excludes Array
     * @returns Object object contains require method for chaining.
     */
-  @JSGlobal("Ext.Loader.exclude")
-  @js.native
-  def exclude(): js.Any = js.native
-  @JSGlobal("Ext.Loader.exclude")
-  @js.native
-  def exclude(excludes: typings.senchaTouch.Ext.Array): js.Any = js.native
+  @scala.inline
+  def exclude(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")().asInstanceOf[js.Any]
+  @scala.inline
+  def exclude(excludes: typings.senchaTouch.Ext.Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(excludes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Get the config value corresponding to the specified name
     * @param name String The config property name.
     * @returns Object/Mixed
     */
-  @JSGlobal("Ext.Loader.getConfig")
-  @js.native
-  def getConfig(): js.Any = js.native
-  @JSGlobal("Ext.Loader.getConfig")
-  @js.native
-  def getConfig(name: java.lang.String): js.Any = js.native
+  @scala.inline
+  def getConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[js.Any]
+  @scala.inline
+  def getConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Translates a className to a file path by adding the the proper prefix and converting the  s to  s
     * @param className String
     * @returns String path
     */
-  @JSGlobal("Ext.Loader.getPath")
-  @js.native
-  def getPath(): java.lang.String = js.native
-  @JSGlobal("Ext.Loader.getPath")
-  @js.native
-  def getPath(className: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def getPath(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")().asInstanceOf[java.lang.String]
+  @scala.inline
+  def getPath(className: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(className.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /** [Property] (Array) */
   @JSGlobal("Ext.Loader.history")
@@ -95,30 +87,22 @@ object Loader {
     * @param scope Object The execution scope (this) of the callback function.
     * @param withDomReady Boolean Whether or not to wait for document DOM ready as well.
     */
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], withDomReady: Boolean): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.UndefOr[scala.Nothing], scope: js.Any, withDomReady: Boolean): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.Any, scope: js.UndefOr[scala.Nothing], withDomReady: Boolean): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.onReady")
-  @js.native
-  def onReady(fn: js.Any, scope: js.Any, withDomReady: Boolean): Unit = js.native
+  @scala.inline
+  def onReady(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onReady")().asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: js.Any, scope: js.Any, withDomReady: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], withDomReady.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: js.Any, scope: Unit, withDomReady: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], withDomReady.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: Unit, scope: js.Any, withDomReady: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], withDomReady.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def onReady(fn: Unit, scope: Unit, withDomReady: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onReady")(fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], withDomReady.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Config Option] (Object) */
   @JSGlobal("Ext.Loader.paths")
@@ -133,110 +117,66 @@ object Loader {
     * @param scope Object The execution scope (this) of the callback function.
     * @param excludes String/Array Classes to be excluded, useful when being used with expressions.
     */
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(
-    expressions: js.UndefOr[scala.Nothing],
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(
-    expressions: js.UndefOr[scala.Nothing],
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.Any,
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(
-    expressions: js.UndefOr[scala.Nothing],
-    fn: js.Any,
-    scope: js.UndefOr[scala.Nothing],
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(
-    expressions: js.Any,
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, excludes: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any, fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], excludes: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.require")
-  @js.native
-  def require(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
+  @scala.inline
+  def require(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("require")().asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: js.Any, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: Unit, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: js.Any, fn: Unit, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: js.Any, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: Unit, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def require(expressions: Unit, fn: Unit, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("require")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Set the configuration for the loader
     * @param name Object/String The config object to override the default values or name of a single config setting when also passing the second parameter.
     * @param value Mixed The value for the config setting.
     * @returns Ext.Loader this
     */
-  @JSGlobal("Ext.Loader.setConfig")
-  @js.native
-  def setConfig(): ILoader = js.native
-  @JSGlobal("Ext.Loader.setConfig")
-  @js.native
-  def setConfig(name: js.UndefOr[scala.Nothing], value: js.Any): ILoader = js.native
-  @JSGlobal("Ext.Loader.setConfig")
-  @js.native
-  def setConfig(name: js.Any): ILoader = js.native
-  @JSGlobal("Ext.Loader.setConfig")
-  @js.native
-  def setConfig(name: js.Any, value: js.Any): ILoader = js.native
+  @scala.inline
+  def setConfig(): ILoader = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")().asInstanceOf[ILoader]
+  @scala.inline
+  def setConfig(name: js.Any): ILoader = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(name.asInstanceOf[js.Any]).asInstanceOf[ILoader]
+  @scala.inline
+  def setConfig(name: js.Any, value: js.Any): ILoader = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ILoader]
+  @scala.inline
+  def setConfig(name: Unit, value: js.Any): ILoader = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ILoader]
   
   /** [Method] Sets the path of a namespace
     * @param name String/Object See flexSetter
     * @param path String See flexSetter
     * @returns Ext.Loader this
     */
-  @JSGlobal("Ext.Loader.setPath")
-  @js.native
-  def setPath(): ILoader = js.native
-  @JSGlobal("Ext.Loader.setPath")
-  @js.native
-  def setPath(name: js.UndefOr[scala.Nothing], path: java.lang.String): ILoader = js.native
-  @JSGlobal("Ext.Loader.setPath")
-  @js.native
-  def setPath(name: js.Any): ILoader = js.native
-  @JSGlobal("Ext.Loader.setPath")
-  @js.native
-  def setPath(name: js.Any, path: java.lang.String): ILoader = js.native
+  @scala.inline
+  def setPath(): ILoader = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")().asInstanceOf[ILoader]
+  @scala.inline
+  def setPath(name: js.Any): ILoader = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(name.asInstanceOf[js.Any]).asInstanceOf[ILoader]
+  @scala.inline
+  def setPath(name: js.Any, path: java.lang.String): ILoader = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[ILoader]
+  @scala.inline
+  def setPath(name: Unit, path: java.lang.String): ILoader = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[ILoader]
   
   /** [Method] Synchronously loads all classes by the given names and all their direct dependencies optionally executes the given c
     * @param expressions String/Array Can either be a string or an array of string
@@ -244,72 +184,36 @@ object Loader {
     * @param scope Object The execution scope (this) of the callback function
     * @param excludes String/Array Classes to be excluded, useful when being used with expressions
     */
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(
-    expressions: js.UndefOr[scala.Nothing],
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(
-    expressions: js.UndefOr[scala.Nothing],
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.Any,
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(
-    expressions: js.UndefOr[scala.Nothing],
-    fn: js.Any,
-    scope: js.UndefOr[scala.Nothing],
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(
-    expressions: js.Any,
-    fn: js.UndefOr[scala.Nothing],
-    scope: js.UndefOr[scala.Nothing],
-    excludes: js.Any
-  ): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, excludes: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any, fn: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], excludes: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
-  @JSGlobal("Ext.Loader.syncRequire")
-  @js.native
-  def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = js.native
+  @scala.inline
+  def syncRequire(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")().asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: js.Any, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: Unit, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: js.Any, fn: Unit, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: js.Any, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: js.Any, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: js.Any, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: Unit, scope: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: Unit, scope: js.Any, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def syncRequire(expressions: Unit, fn: Unit, scope: Unit, excludes: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncRequire")(expressions.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

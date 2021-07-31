@@ -3,7 +3,6 @@ package typings.angularXeditable
 import typings.angular.mod.IFormController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -12,7 +11,9 @@ object mod {
   object xeditable {
     
     @js.native
-    trait IEditableFormController extends IFormController {
+    trait IEditableFormController
+      extends StObject
+         with IFormController {
       
       /**
         * Sets focus on form field specified by `name`.<br/>
@@ -60,52 +61,51 @@ object mod {
       def $submit(): Unit = js.native
     }
     
-    @js.native
     trait IEditableOptions extends StObject {
       
       /**
         * How input elements get activated. Possible values: `focus|select|none`.
         */
-      var activate: String = js.native
+      var activate: String
       
       /*
         * Event, on which the edit mode gets activated.
         * Can be any event.
         */
-      var activationEvent: String = js.native
+      var activationEvent: String
       
       /**
         * Default value for `blur` attribute of single editable element.
         * Can be `cancel|submit|ignore`.
         */
-      var blurElem: String = js.native
+      var blurElem: String
       
       /**
         * Default value for `blur` attribute of editable form.
         * Can be `cancel|submit|ignore`.
         */
-      var blurForm: String = js.native
+      var blurForm: String
       
       /**
         * Whether to show buttons for single editalbe element.
         * Possible values `right` (default), `no`.
         */
-      var buttons: String = js.native
+      var buttons: String
       
       /**
         * Icon Set. Possible values `font-awesome`, `default`.
         */
-      var icon_set: String = js.native
+      var icon_set: String
       
       /**
         * Whether to disable x-editable. Can be overloaded on each element.
         */
-      var isDisabled: Boolean = js.native
+      var isDisabled: Boolean
       
       /**
         * Theme. Possible values `bs3`, `bs2`, `default`
         */
-      var theme: String = js.native
+      var theme: String
     }
     object IEditableOptions {
       

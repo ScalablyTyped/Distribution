@@ -13,10 +13,13 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("ink", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * `<Box>` is an essential Ink component to build your layout. It's like `<div style="display: flex">` in the browser.
@@ -54,9 +57,9 @@ object mod {
     */
   object Static {
     
-    @JSImport("ink", "Static")
-    @js.native
-    def apply[T](props: typings.ink.staticMod.Props[T]): Element = js.native
+    @scala.inline
+    def apply[T](props: typings.ink.staticMod.Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("ink", "Static")
     @js.native
     val ^ : js.Any = js.native
@@ -85,9 +88,8 @@ object mod {
   @js.native
   val Transform: FC[typings.ink.transformMod.Props] = js.native
   
-  @JSImport("ink", "measureElement")
-  @js.native
-  def measureElement(node: DOMElement): Output = js.native
+  @scala.inline
+  def measureElement(node: DOMElement): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("measureElement")(node.asInstanceOf[js.Any]).asInstanceOf[Output]
   
   /**
     * Mount a component and render the output.
@@ -96,9 +98,8 @@ object mod {
   @js.native
   val render: RenderFunction = js.native
   
-  @JSImport("ink", "useApp")
-  @js.native
-  def useApp(): typings.ink.appContextMod.Props = js.native
+  @scala.inline
+  def useApp(): typings.ink.appContextMod.Props = ^.asInstanceOf[js.Dynamic].applyDynamic("useApp")().asInstanceOf[typings.ink.appContextMod.Props]
   
   /**
     * Component that uses `useFocus` hook becomes "focusable" to Ink,
@@ -108,20 +109,17 @@ object mod {
     * This hook returns an object with `isFocused` boolean property, which
     * determines if this component is focused or not.
     */
-  @JSImport("ink", "useFocus")
-  @js.native
-  def useFocus(): typings.ink.useFocusMod.Output = js.native
-  @JSImport("ink", "useFocus")
-  @js.native
-  def useFocus(hasIsActiveAutoFocus: Input): typings.ink.useFocusMod.Output = js.native
+  @scala.inline
+  def useFocus(): typings.ink.useFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")().asInstanceOf[typings.ink.useFocusMod.Output]
+  @scala.inline
+  def useFocus(hasIsActiveAutoFocus: Input): typings.ink.useFocusMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocus")(hasIsActiveAutoFocus.asInstanceOf[js.Any]).asInstanceOf[typings.ink.useFocusMod.Output]
   
   /**
     * This hook exposes methods to enable or disable focus management for all
     * components or manually switch focus to next or previous components.
     */
-  @JSImport("ink", "useFocusManager")
-  @js.native
-  def useFocusManager(): typings.ink.useFocusManagerMod.Output = js.native
+  @scala.inline
+  def useFocusManager(): typings.ink.useFocusManagerMod.Output = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")().asInstanceOf[typings.ink.useFocusManagerMod.Output]
   
   /**
     * This hook is used for handling user input.
@@ -147,22 +145,17 @@ object mod {
     * };
     * ```
     */
-  @JSImport("ink", "useInput")
-  @js.native
-  def useInput(inputHandler: Handler): Unit = js.native
-  @JSImport("ink", "useInput")
-  @js.native
-  def useInput(inputHandler: Handler, options: Options): Unit = js.native
+  @scala.inline
+  def useInput(inputHandler: Handler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useInput")(inputHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def useInput(inputHandler: Handler, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useInput")(inputHandler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ink", "useStderr")
-  @js.native
-  def useStderr(): typings.ink.stderrContextMod.Props = js.native
+  @scala.inline
+  def useStderr(): typings.ink.stderrContextMod.Props = ^.asInstanceOf[js.Dynamic].applyDynamic("useStderr")().asInstanceOf[typings.ink.stderrContextMod.Props]
   
-  @JSImport("ink", "useStdin")
-  @js.native
-  def useStdin(): typings.ink.stdinContextMod.Props = js.native
+  @scala.inline
+  def useStdin(): typings.ink.stdinContextMod.Props = ^.asInstanceOf[js.Dynamic].applyDynamic("useStdin")().asInstanceOf[typings.ink.stdinContextMod.Props]
   
-  @JSImport("ink", "useStdout")
-  @js.native
-  def useStdout(): typings.ink.stdoutContextMod.Props = js.native
+  @scala.inline
+  def useStdout(): typings.ink.stdoutContextMod.Props = ^.asInstanceOf[js.Dynamic].applyDynamic("useStdout")().asInstanceOf[typings.ink.stdoutContextMod.Props]
 }

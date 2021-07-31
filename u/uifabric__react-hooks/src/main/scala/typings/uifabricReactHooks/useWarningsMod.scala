@@ -10,20 +10,21 @@ import typings.uifabricUtilities.warnControlledUsageMod.IWarnControlledUsagePara
 import typings.uifabricUtilities.warnWarnMod.ISettingsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useWarningsMod {
   
-  @JSImport("@uifabric/react-hooks/lib/useWarnings", "useWarnings")
+  @JSImport("@uifabric/react-hooks/lib/useWarnings", JSImport.Namespace)
   @js.native
-  def useWarnings[P](options: IWarningOptions[P]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useWarnings[P](options: IWarningOptions[P]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useWarnings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait IWarningOptions[P] extends StObject {
     
     /** Warns when props are required if a condition is met */
-    var conditionallyRequired: js.UndefOr[js.Array[Condition]] = js.native
+    var conditionallyRequired: js.UndefOr[js.Array[Condition]] = js.undefined
     
     /**
       * Check for and warn on the following error conditions with a form component:
@@ -40,28 +41,28 @@ object useWarningsMod {
           IWarnControlledUsageParams[P], 
           valueProp | defaultValueProp | onChangeProp | readOnlyProp
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Warns when deprecated props are being used. Each key is a prop name and each value is
       * either undefined or a replacement prop name.
       */
-    var deprecations: js.UndefOr[ISettingsMap[P]] = js.native
+    var deprecations: js.UndefOr[ISettingsMap[P]] = js.undefined
     
     /**
       * Warns when two props which are mutually exclusive are both being used.
       * The key is one prop name and the value is the other.
       */
-    var mutuallyExclusive: js.UndefOr[ISettingsMap[P]] = js.native
+    var mutuallyExclusive: js.UndefOr[ISettingsMap[P]] = js.undefined
     
     /** Name of the component */
-    var name: String = js.native
+    var name: String
     
     /** Generic messages */
-    var other: js.UndefOr[js.Array[String]] = js.native
+    var other: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Current component props */
-    var props: P = js.native
+    var props: P
   }
   object IWarningOptions {
     
@@ -72,7 +73,7 @@ object useWarningsMod {
     }
     
     @scala.inline
-    implicit class IWarningOptionsMutableBuilder[Self <: IWarningOptions[_], P] (val x: Self with IWarningOptions[P]) extends AnyVal {
+    implicit class IWarningOptionsMutableBuilder[Self <: IWarningOptions[?], P] (val x: Self & IWarningOptions[P]) extends AnyVal {
       
       @scala.inline
       def setConditionallyRequired(value: js.Array[Condition]): Self = StObject.set(x, "conditionallyRequired", value.asInstanceOf[js.Any])

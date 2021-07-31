@@ -16,22 +16,20 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lib {
   
-  @js.native
   trait Base extends StObject {
     
     //arguments of create() is same as init(). This is true for all subclasses
-    def create(args: js.Any*): Base = js.native
+    def create(args: js.Any*): Base
     
-    def extend(overrides: js.Object): js.Object = js.native
+    def extend(overrides: js.Object): js.Object
     
-    def init(args: js.Any*): Unit = js.native
+    def init(args: js.Any*): Unit
     
-    def mixIn(properties: js.Object): Unit = js.native
+    def mixIn(properties: js.Object): Unit
   }
   object Base {
     
@@ -67,10 +65,12 @@ object lib {
   type BlockCipher = IStreamCipher[IBlockCipherCfg]
   
   @js.native
-  trait BlockCipherMode extends Base {
+  trait BlockCipherMode
+    extends StObject
+       with Base {
     
     def create(): BlockCipherMode = js.native
-    def create(cipher: js.UndefOr[scala.Nothing], iv: js.Array[Double]): BlockCipherMode = js.native
+    def create(cipher: Unit, iv: js.Array[Double]): BlockCipherMode = js.native
     def create(cipher: Cipher): BlockCipherMode = js.native
     def create(cipher: Cipher, iv: js.Array[Double]): BlockCipherMode = js.native
     
@@ -79,15 +79,16 @@ object lib {
     def createEncryptor(cipher: Cipher, iv: js.Array[Double]): IBlockCipherEncryptor = js.native
     
     def init(): Unit = js.native
-    def init(cipher: js.UndefOr[scala.Nothing], iv: js.Array[Double]): Unit = js.native
+    def init(cipher: Unit, iv: js.Array[Double]): Unit = js.native
     def init(cipher: Cipher): Unit = js.native
     def init(cipher: Cipher, iv: js.Array[Double]): Unit = js.native
   }
   
-  @js.native
-  trait BufferedBlockAlgorithm extends Base {
+  trait BufferedBlockAlgorithm
+    extends StObject
+       with Base {
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object BufferedBlockAlgorithm {
     
@@ -117,7 +118,8 @@ object lib {
   
   @js.native
   trait CipherParams
-    extends Base
+    extends StObject
+       with Base
        with CipherParamsData {
     
     def create(): CipherParams = js.native
@@ -129,26 +131,25 @@ object lib {
     def toString(formatter: IFormatter): String = js.native
   }
   
-  @js.native
   trait CipherParamsData extends StObject {
     
-    var algorithm: js.UndefOr[Cipher] = js.native
+    var algorithm: js.UndefOr[Cipher] = js.undefined
     
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
-    var ciphertext: js.UndefOr[WordArray] = js.native
+    var ciphertext: js.UndefOr[WordArray] = js.undefined
     
-    var formatter: js.UndefOr[IFormatter] = js.native
+    var formatter: js.UndefOr[IFormatter] = js.undefined
     
-    var iv: js.UndefOr[WordArray] = js.native
+    var iv: js.UndefOr[WordArray] = js.undefined
     
-    var key: js.UndefOr[WordArray] = js.native
+    var key: js.UndefOr[WordArray] = js.undefined
     
-    var mode: js.UndefOr[IBlockCipherModeImpl] = js.native
+    var mode: js.UndefOr[IBlockCipherModeImpl] = js.undefined
     
-    var padding: js.UndefOr[IPaddingImpl] = js.native
+    var padding: js.UndefOr[IPaddingImpl] = js.undefined
     
-    var salt: js.UndefOr[WordArray] = js.native
+    var salt: js.UndefOr[WordArray] = js.undefined
   }
   object CipherParamsData {
     
@@ -221,15 +222,14 @@ object lib {
   
   type HasherHelper = IHasherHelper[js.Object]
   
-  @js.native
   trait IBlockCipherCfg extends StObject {
     
-    var iv: js.UndefOr[WordArray] = js.native
+    var iv: js.UndefOr[WordArray] = js.undefined
     
-    var mode: js.UndefOr[IBlockCipherModeImpl] = js.native
+    var mode: js.UndefOr[IBlockCipherModeImpl] = js.undefined
     
     //default CBC
-    var padding: js.UndefOr[IPaddingImpl] = js.native
+    var padding: js.UndefOr[IPaddingImpl] = js.undefined
   }
   object IBlockCipherCfg {
     
@@ -264,20 +264,22 @@ object lib {
   
   //tparam C - Configuration type
   @js.native
-  trait ICipher[C] extends BufferedBlockAlgorithm {
+  trait ICipher[C]
+    extends StObject
+       with BufferedBlockAlgorithm {
     
     def _createHelper(cipher: Cipher): ICipherHelper[C] = js.native
     
     var cfg: C = js.native
     
     def create(): ICipher[C] = js.native
-    def create(xformMode: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], cfg: C): ICipher[C] = js.native
-    def create(xformMode: js.UndefOr[scala.Nothing], key: WordArray): ICipher[C] = js.native
-    def create(xformMode: js.UndefOr[scala.Nothing], key: WordArray, cfg: C): ICipher[C] = js.native
     def create(xformMode: Double): ICipher[C] = js.native
-    def create(xformMode: Double, key: js.UndefOr[scala.Nothing], cfg: C): ICipher[C] = js.native
+    def create(xformMode: Double, key: Unit, cfg: C): ICipher[C] = js.native
     def create(xformMode: Double, key: WordArray): ICipher[C] = js.native
     def create(xformMode: Double, key: WordArray, cfg: C): ICipher[C] = js.native
+    def create(xformMode: Unit, key: Unit, cfg: C): ICipher[C] = js.native
+    def create(xformMode: Unit, key: WordArray): ICipher[C] = js.native
+    def create(xformMode: Unit, key: WordArray, cfg: C): ICipher[C] = js.native
     
     def createDecryptor(key: WordArray): ICipher[C] = js.native
     def createDecryptor(key: WordArray, cfg: C): ICipher[C] = js.native
@@ -289,13 +291,13 @@ object lib {
     def finalize(dataUpdate: WordArray): WordArray = js.native
     
     def init(): Unit = js.native
-    def init(xformMode: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], cfg: C): Unit = js.native
-    def init(xformMode: js.UndefOr[scala.Nothing], key: WordArray): Unit = js.native
-    def init(xformMode: js.UndefOr[scala.Nothing], key: WordArray, cfg: C): Unit = js.native
     def init(xformMode: Double): Unit = js.native
-    def init(xformMode: Double, key: js.UndefOr[scala.Nothing], cfg: C): Unit = js.native
+    def init(xformMode: Double, key: Unit, cfg: C): Unit = js.native
     def init(xformMode: Double, key: WordArray): Unit = js.native
     def init(xformMode: Double, key: WordArray, cfg: C): Unit = js.native
+    def init(xformMode: Unit, key: Unit, cfg: C): Unit = js.native
+    def init(xformMode: Unit, key: WordArray): Unit = js.native
+    def init(xformMode: Unit, key: WordArray, cfg: C): Unit = js.native
     
     var ivSize: Double = js.native
     
@@ -330,7 +332,9 @@ object lib {
   
   //tparam C - Configuration type
   @js.native
-  trait IHasher[C] extends BufferedBlockAlgorithm {
+  trait IHasher[C]
+    extends StObject
+       with BufferedBlockAlgorithm {
     
     def _createHelper(hasher: Hasher): IHasherHelper[C] = js.native
     
@@ -373,7 +377,9 @@ object lib {
   }
   
   @js.native
-  trait IPasswordBasedCipher[C /* <: IPasswordBasedCipherCfg */] extends Base {
+  trait IPasswordBasedCipher[C /* <: IPasswordBasedCipherCfg */]
+    extends StObject
+       with Base {
     
     var cfg: C = js.native
     
@@ -388,10 +394,11 @@ object lib {
     def encrypt(cipher: Cipher, message: WordArray, password: String, cfg: C): CipherParams = js.native
   }
   
-  @js.native
-  trait IPasswordBasedCipherCfg extends ISerializableCipherCfg {
+  trait IPasswordBasedCipherCfg
+    extends StObject
+       with ISerializableCipherCfg {
     
-    var kdf: js.UndefOr[IKdfImpl] = js.native
+    var kdf: js.UndefOr[IKdfImpl] = js.undefined
   }
   object IPasswordBasedCipherCfg {
     
@@ -414,7 +421,9 @@ object lib {
   
   //tparam C - Configuration type
   @js.native
-  trait ISerializableCipher[C /* <: ISerializableCipherCfg */] extends Base {
+  trait ISerializableCipher[C /* <: ISerializableCipherCfg */]
+    extends StObject
+       with Base {
     
     var cfg: C = js.native
     
@@ -429,17 +438,16 @@ object lib {
     def encrypt(cipher: Cipher, message: WordArray, key: WordArray, cfg: C): CipherParams = js.native
   }
   
-  @js.native
   trait ISerializableCipherCfg extends StObject {
     
-    var format: js.UndefOr[IFormatter] = js.native
+    var format: js.UndefOr[IFormatter] = js.undefined
     
     //default OpenSSLFormatter
-    var iv: js.UndefOr[WordArray] = js.native
+    var iv: js.UndefOr[WordArray] = js.undefined
     
-    var mode: js.UndefOr[IBlockCipherModeImpl] = js.native
+    var mode: js.UndefOr[IBlockCipherModeImpl] = js.undefined
     
-    var padding: js.UndefOr[IPaddingImpl] = js.native
+    var padding: js.UndefOr[IPaddingImpl] = js.undefined
   }
   object ISerializableCipherCfg {
     
@@ -479,25 +487,26 @@ object lib {
   }
   
   @js.native
-  trait IStreamCipher[C] extends ICipher[C] {
+  trait IStreamCipher[C]
+    extends StObject
+       with ICipher[C] {
     
     var blockSize: Double = js.native
     
     var drop: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait LibStatic extends StObject {
     
-    var Base: typings.cryptojs.CryptoJS.lib.Base = js.native
+    var Base: typings.cryptojs.CryptoJS.lib.Base
     
-    var CipherParams: typings.cryptojs.CryptoJS.lib.CipherParams = js.native
+    var CipherParams: typings.cryptojs.CryptoJS.lib.CipherParams
     
-    var PasswordBasedCipher: typings.cryptojs.CryptoJS.lib.PasswordBasedCipher = js.native
+    var PasswordBasedCipher: typings.cryptojs.CryptoJS.lib.PasswordBasedCipher
     
-    var SerializableCipher: typings.cryptojs.CryptoJS.lib.SerializableCipher = js.native
+    var SerializableCipher: typings.cryptojs.CryptoJS.lib.SerializableCipher
     
-    var WordArray: typings.cryptojs.CryptoJS.lib.WordArray = js.native
+    var WordArray: typings.cryptojs.CryptoJS.lib.WordArray
   }
   object LibStatic {
     
@@ -542,7 +551,9 @@ object lib {
   type StreamCipher = IStreamCipher[js.Object]
   
   @js.native
-  trait WordArray extends Base {
+  trait WordArray
+    extends StObject
+       with Base {
     
     def clamp(): Unit = js.native
     
@@ -550,15 +561,15 @@ object lib {
     
     def create(): WordArray = js.native
     def create(typedArray: SomeArray): WordArray = js.native
-    def create(words: js.UndefOr[scala.Nothing], sigBytes: Double): WordArray = js.native
     def create(words: js.Array[Double]): WordArray = js.native
     def create(words: js.Array[Double], sigBytes: Double): WordArray = js.native
+    def create(words: Unit, sigBytes: Double): WordArray = js.native
     
     def init(): Unit = js.native
     def init(typedArray: SomeArray): Unit = js.native
-    def init(words: js.UndefOr[scala.Nothing], sigBytes: Double): Unit = js.native
     def init(words: js.Array[Double]): Unit = js.native
     def init(words: js.Array[Double], sigBytes: Double): Unit = js.native
+    def init(words: Unit, sigBytes: Double): Unit = js.native
     
     def random(nBytes: Double): WordArray = js.native
     

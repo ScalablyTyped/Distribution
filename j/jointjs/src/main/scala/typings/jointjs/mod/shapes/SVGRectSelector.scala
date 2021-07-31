@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGRectAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGRectSelector extends Selectors {
+trait SVGRectSelector
+  extends StObject
+     with Selectors {
   
-  var rect: js.UndefOr[SVGRectAttributes] = js.native
+  var rect: js.UndefOr[SVGRectAttributes] = js.undefined
 }
 object SVGRectSelector {
   

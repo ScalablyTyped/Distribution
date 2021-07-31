@@ -7,32 +7,30 @@ import typings.reactSortableTree.mod.TreeNode
 import typings.reactSortableTree.treeDataUtilsMod.GetNodeKeyFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & {  getNodeKey :react-sortable-tree.react-sortable-tree/utils/tree-data-utils.GetNodeKeyFunction,   searchQuery :string | number | undefined, searchMethod (data : react-sortable-tree.react-sortable-tree.SearchData): boolean,   searchFocusOffset :number | undefined,   expandAllMatchPaths :boolean | undefined,   expandFocusMatchPaths :boolean | undefined} */
-@js.native
 trait FullTreegetNodeKeyGetNodeExpandAllMatchPaths extends StObject {
   
-  var expandAllMatchPaths: js.UndefOr[Boolean] = js.native
+  var expandAllMatchPaths: js.UndefOr[Boolean] = js.undefined
   
-  var expandFocusMatchPaths: js.UndefOr[Boolean] = js.native
+  var expandFocusMatchPaths: js.UndefOr[Boolean] = js.undefined
   
-  var getNodeKey: GetNodeKeyFunction = js.native
+  var getNodeKey: GetNodeKeyFunction
   
-  var searchFocusOffset: js.UndefOr[Double] = js.native
+  var searchFocusOffset: js.UndefOr[Double] = js.undefined
   
-  def searchMethod(data: SearchData): Boolean = js.native
+  def searchMethod(data: SearchData): Boolean
   
-  var searchQuery: js.UndefOr[String | Double] = js.native
+  var searchQuery: js.UndefOr[String | Double] = js.undefined
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
 }
 object FullTreegetNodeKeyGetNodeExpandAllMatchPaths {
   
   @scala.inline
   def apply(
-    getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
+    getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
     searchMethod: SearchData => Boolean,
     treeData: js.Array[TreeItem]
   ): FullTreegetNodeKeyGetNodeExpandAllMatchPaths = {
@@ -56,7 +54,7 @@ object FullTreegetNodeKeyGetNodeExpandAllMatchPaths {
     def setExpandFocusMatchPathsUndefined: Self = StObject.set(x, "expandFocusMatchPaths", js.undefined)
     
     @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex with TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSearchFocusOffset(value: Double): Self = StObject.set(x, "searchFocusOffset", value.asInstanceOf[js.Any])

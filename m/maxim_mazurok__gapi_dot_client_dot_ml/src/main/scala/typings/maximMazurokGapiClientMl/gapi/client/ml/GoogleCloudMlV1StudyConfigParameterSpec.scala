@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1StudyConfigParameterSpec extends StObject {
   
   /** The value spec for a 'CATEGORICAL' parameter. */
-  var categoricalValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec] = js.native
+  var categoricalValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec] = js.undefined
   
   /**
     * A child node is active if the parameter's value matches the child node's matching_parent_values. If two items in child_parameter_specs have the same name, they must have disjoint
     * matching_parent_values.
     */
-  var childParameterSpecs: js.UndefOr[js.Array[GoogleCloudMlV1StudyConfigParameterSpec]] = js.native
+  var childParameterSpecs: js.UndefOr[js.Array[GoogleCloudMlV1StudyConfigParameterSpec]] = js.undefined
   
   /** The value spec for a 'DISCRETE' parameter. */
-  var discreteValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecDiscreteValueSpec] = js.native
+  var discreteValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecDiscreteValueSpec] = js.undefined
   
   /** The value spec for a 'DOUBLE' parameter. */
-  var doubleValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec] = js.native
+  var doubleValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec] = js.undefined
   
   /** The value spec for an 'INTEGER' parameter. */
-  var integerValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec] = js.native
+  var integerValueSpec: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec] = js.undefined
   
   /** Required. The parameter name must be unique amongst all ParameterSpecs. */
-  var parameter: js.UndefOr[String] = js.native
+  var parameter: js.UndefOr[String] = js.undefined
   
-  var parentCategoricalValues: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecMatchingParentCategoricalValueSpec] = js.native
+  var parentCategoricalValues: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecMatchingParentCategoricalValueSpec] = js.undefined
   
-  var parentDiscreteValues: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec] = js.native
+  var parentDiscreteValues: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecMatchingParentDiscreteValueSpec] = js.undefined
   
-  var parentIntValues: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecMatchingParentIntValueSpec] = js.native
+  var parentIntValues: js.UndefOr[GoogleCloudMlV1StudyConfigParameterSpecMatchingParentIntValueSpec] = js.undefined
   
   /** How the parameter should be scaled. Leave unset for categorical parameters. */
-  var scaleType: js.UndefOr[String] = js.native
+  var scaleType: js.UndefOr[String] = js.undefined
   
   /** Required. The type of the parameter. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1StudyConfigParameterSpec {
   

@@ -12,27 +12,28 @@ import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestSubscriptionMod {
   
-  @JSImport("relay-runtime/lib/subscription/requestSubscription", "requestSubscription")
+  @JSImport("relay-runtime/lib/subscription/requestSubscription", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def requestSubscription[TSubscription /* <: OperationType */](
     environment: Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @js.native
   trait GraphQLSubscriptionConfig[TSubscription /* <: OperationType */] extends StObject {
     
-    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.native
+    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.undefined
     
-    var onCompleted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     var onNext: js.UndefOr[
         js.Function1[
@@ -41,17 +42,17 @@ object requestSubscriptionMod {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var subscription: GraphQLTaggedNode = js.native
+    var subscription: GraphQLTaggedNode
     
     var updater: js.UndefOr[
         SelectorStoreUpdater[
           /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['response'] */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['variables'] */ js.Any = js.native
+    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TSubscription['variables'] */ js.Any
   }
   object GraphQLSubscriptionConfig {
     
@@ -65,7 +66,7 @@ object requestSubscriptionMod {
     }
     
     @scala.inline
-    implicit class GraphQLSubscriptionConfigMutableBuilder[Self <: GraphQLSubscriptionConfig[_], TSubscription /* <: OperationType */] (val x: Self with GraphQLSubscriptionConfig[TSubscription]) extends AnyVal {
+    implicit class GraphQLSubscriptionConfigMutableBuilder[Self <: GraphQLSubscriptionConfig[?], TSubscription /* <: OperationType */] (val x: Self & GraphQLSubscriptionConfig[TSubscription]) extends AnyVal {
       
       @scala.inline
       def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])

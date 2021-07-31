@@ -3,15 +3,13 @@ package typings.datatablesNetColreorder
 import typings.datatablesNetColreorder.anon.Move
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
-    var colReorder: Move = js.native
+    var colReorder: Move
   }
   object Api {
     
@@ -29,33 +27,32 @@ object DataTables {
     }
   }
   
-  @js.native
   trait ColReorderSettings extends StObject {
     
     /*
       * Number of columns (counting from the left) to disallow reordering of, '0' in default
       */
-    var fixedColumnsLeft: js.UndefOr[Double] = js.native
+    var fixedColumnsLeft: js.UndefOr[Double] = js.undefined
     
     /*
       * Number of columns (counting from the right) to disallow reordering of, '0' in default
       */
-    var fixedColumnsRight: js.UndefOr[Double] = js.native
+    var fixedColumnsRight: js.UndefOr[Double] = js.undefined
     
     /*
       * Set a default order for the columns in the table
       */
-    var order: js.UndefOr[js.Array[Double]] = js.native
+    var order: js.UndefOr[js.Array[Double]] = js.undefined
     
     /*
       * Enable / disable live reordering of columns during a drag, 'true' in default
       */
-    var realtime: js.UndefOr[Boolean] = js.native
+    var realtime: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Callback after reorder
       */
-    def reorderCallback(): Unit = js.native
+    def reorderCallback(): Unit
   }
   object ColReorderSettings {
     
@@ -100,13 +97,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /*
       * colReorder extension options
       */
-    var colReorder: js.UndefOr[Boolean | ColReorderSettings] = js.native
+    var colReorder: js.UndefOr[Boolean | ColReorderSettings] = js.undefined
   }
   object Settings {
     

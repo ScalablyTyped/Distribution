@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.permissionPermissionMod.PermissionOptions
 import typings.actionsOnGoogle.updateMod.UpdatePermissionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionMod {

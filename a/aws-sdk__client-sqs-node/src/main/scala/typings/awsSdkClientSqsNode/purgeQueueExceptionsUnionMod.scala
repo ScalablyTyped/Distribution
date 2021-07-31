@@ -2,7 +2,6 @@ package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object purgeQueueExceptionsUnionMod {
@@ -15,14 +14,14 @@ object purgeQueueExceptionsUnionMod {
   object PurgeQueueExceptionsUnion {
     
     @scala.inline
-    def PurgeQueueInProgress(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.PurgeQueueInProgress): typings.awsSdkClientSqsNode.typesPurgeQueueInProgressMod.PurgeQueueInProgress = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def PurgeQueueInProgress(): typings.awsSdkClientSqsNode.typesPurgeQueueInProgressMod.PurgeQueueInProgress = {
+      val __obj = js.Dynamic.literal(name = "PurgeQueueInProgress")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesPurgeQueueInProgressMod.PurgeQueueInProgress]
     }
     
     @scala.inline
-    def QueueDoesNotExist(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDoesNotExist): typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def QueueDoesNotExist(): typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist = {
+      val __obj = js.Dynamic.literal(name = "QueueDoesNotExist")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesQueueDoesNotExistMod.QueueDoesNotExist]
     }
   }

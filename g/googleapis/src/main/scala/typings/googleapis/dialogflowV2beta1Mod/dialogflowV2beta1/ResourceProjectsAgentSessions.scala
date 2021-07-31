@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Sessions")
@@ -32,7 +31,7 @@ class ResourceProjectsAgentSessions protected () extends StObject {
     */
   def deleteContexts(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def deleteContexts(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def deleteContexts(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(params: ParamsResourceProjectsAgentSessionsDeletecontexts): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(
     params: ParamsResourceProjectsAgentSessionsDeletecontexts,
@@ -68,7 +67,7 @@ class ResourceProjectsAgentSessions protected () extends StObject {
     */
   def detectIntent(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
   def detectIntent(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]): Unit = js.native
-  def detectIntent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
+  def detectIntent(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
   def detectIntent(params: ParamsResourceProjectsAgentSessionsDetectintent): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
   def detectIntent(
     params: ParamsResourceProjectsAgentSessionsDetectintent,

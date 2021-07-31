@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the Strip class.
   */
-@js.native
-trait ASPxClientStrip extends ASPxClientWebChartElementNamed {
+trait ASPxClientStrip
+  extends StObject
+     with ASPxClientWebChartElementNamed {
   
   /**
     * Gets the axis that owns the current strip object.
     */
-  var axis: ASPxClientAxis = js.native
+  var axis: ASPxClientAxis
   
   /**
     * Gets the maximum value of the strip's range.
     */
-  var maxValue: js.Any = js.native
+  var maxValue: js.Any
   
   /**
     * Gets the minimum value of the strip's range.
     */
-  var minValue: js.Any = js.native
+  var minValue: js.Any
 }
 object ASPxClientStrip {
   

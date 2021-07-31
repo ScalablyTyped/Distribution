@@ -2,21 +2,21 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMatrixColumnOwner extends ILocalizableOwner {
+trait IMatrixColumnOwner
+  extends StObject
+     with ILocalizableOwner {
   
-  def getCellType(): String = js.native
+  def getCellType(): String
   
-  def getRequiredText(): String = js.native
+  def getRequiredText(): String
   
-  def onColumnCellTypeChanged(column: MatrixDropdownColumn): Unit = js.native
+  def onColumnCellTypeChanged(column: MatrixDropdownColumn): Unit
   
-  def onColumnPropertyChanged(column: MatrixDropdownColumn, name: String, newValue: js.Any): Unit = js.native
+  def onColumnPropertyChanged(column: MatrixDropdownColumn, name: String, newValue: js.Any): Unit
   
-  def onShowInMultipleColumnsChanged(column: MatrixDropdownColumn): Unit = js.native
+  def onShowInMultipleColumnsChanged(column: MatrixDropdownColumn): Unit
 }
 object IMatrixColumnOwner {
   

@@ -5,7 +5,6 @@ import typings.node.asyncHooksMod.AsyncResource
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,5 +38,5 @@ object mod {
     def eventEmitter: EventEmitter = js.native
   }
   
-  type Options = EventEmitterOptions with AsyncResourceOptions with Name
+  type Options = EventEmitterOptions & AsyncResourceOptions & Name
 }

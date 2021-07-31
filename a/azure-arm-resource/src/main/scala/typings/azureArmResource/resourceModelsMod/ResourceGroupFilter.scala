@@ -2,21 +2,19 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceGroupFilter extends StObject {
   
   /**
     * The tag name.
     */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
   
   /**
     * The tag value.
     */
-  var tagValue: js.UndefOr[String] = js.native
+  var tagValue: js.UndefOr[String] = js.undefined
 }
 object ResourceGroupFilter {
   

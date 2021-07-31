@@ -4,17 +4,15 @@ import typings.zchatBrowser.zchatBrowserStrings.offline
 import typings.zchatBrowser.zchatBrowserStrings.online
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Department extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var status: online | offline = js.native
+  var status: online | offline
 }
 object Department {
   

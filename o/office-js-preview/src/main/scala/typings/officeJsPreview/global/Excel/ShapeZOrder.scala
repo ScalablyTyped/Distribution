@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,13 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShapeZOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeZOrder with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ShapeZOrder & String] = js.native
   
-  /* "BringForward" */ val bringForward: typings.officeJsPreview.Excel.ShapeZOrder.bringForward with String = js.native
+  /* "BringForward" */ val bringForward: typings.officeJsPreview.Excel.ShapeZOrder.bringForward & String = js.native
   
-  /* "BringToFront" */ val bringToFront: typings.officeJsPreview.Excel.ShapeZOrder.bringToFront with String = js.native
+  /* "BringToFront" */ val bringToFront: typings.officeJsPreview.Excel.ShapeZOrder.bringToFront & String = js.native
   
-  /* "SendBackward" */ val sendBackward: typings.officeJsPreview.Excel.ShapeZOrder.sendBackward with String = js.native
+  /* "SendBackward" */ val sendBackward: typings.officeJsPreview.Excel.ShapeZOrder.sendBackward & String = js.native
   
-  /* "SendToBack" */ val sendToBack: typings.officeJsPreview.Excel.ShapeZOrder.sendToBack with String = js.native
+  /* "SendToBack" */ val sendToBack: typings.officeJsPreview.Excel.ShapeZOrder.sendToBack & String = js.native
 }

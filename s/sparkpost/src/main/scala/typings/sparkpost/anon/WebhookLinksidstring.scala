@@ -2,16 +2,14 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined sparkpost.sparkpost.WebhookLinks & {  id :string} */
-@js.native
 trait WebhookLinksidstring extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var links: js.Array[Href] = js.native
+  var links: js.Array[Href]
 }
 object WebhookLinksidstring {
   

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.ContentRemoved event.
   */
-@js.native
-trait ASPxClientRichEditContentRemovedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditContentRemovedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the text buffer interval related to the removed content.
     */
-  var interval: Interval = js.native
+  var interval: Interval
   
   /**
     * Gets the active sub-document's identifier.
     */
-  var subDocumentId: Double = js.native
+  var subDocumentId: Double
 }
 object ASPxClientRichEditContentRemovedEventArgs {
   

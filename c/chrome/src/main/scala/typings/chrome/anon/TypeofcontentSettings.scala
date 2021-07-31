@@ -15,37 +15,35 @@ import typings.chrome.chrome.contentSettings.PopupsContentSetting
 import typings.chrome.chrome.contentSettings.PpapiBrokerContentSetting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofcontentSettings extends StObject {
   
-  var automaticDownloads: MultipleAutomaticDownloadsContentSetting = js.native
+  var automaticDownloads: MultipleAutomaticDownloadsContentSetting
   
-  var camera: CameraContentSetting = js.native
+  var camera: CameraContentSetting
   
-  var cookies: CookieContentSetting = js.native
+  var cookies: CookieContentSetting
   
-  var fullscreen: FullscreenContentSetting = js.native
+  var fullscreen: FullscreenContentSetting
   
-  var images: ImagesContentSetting = js.native
+  var images: ImagesContentSetting
   
-  var javascript: JavascriptContentSetting = js.native
+  var javascript: JavascriptContentSetting
   
-  var location: LocationContentSetting = js.native
+  var location: LocationContentSetting
   
-  var microphone: MicrophoneContentSetting = js.native
+  var microphone: MicrophoneContentSetting
   
-  var mouselock: MouselockContentSetting = js.native
+  var mouselock: MouselockContentSetting
   
-  var notifications: NotificationsContentSetting = js.native
+  var notifications: NotificationsContentSetting
   
-  var plugins: PluginsContentSetting = js.native
+  var plugins: PluginsContentSetting
   
-  var popups: PopupsContentSetting = js.native
+  var popups: PopupsContentSetting
   
-  var unsandboxedPlugins: PpapiBrokerContentSetting = js.native
+  var unsandboxedPlugins: PpapiBrokerContentSetting
 }
 object TypeofcontentSettings {
   

@@ -2,31 +2,29 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelAxisAlignedBoundingBox extends StObject {
   
   /**
     * Height of the bounding box.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Width of the bounding box.
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * Horizontal coordinate of the top left corner.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Vertical coordinate of the top left corner.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object RaphaelAxisAlignedBoundingBox {
   

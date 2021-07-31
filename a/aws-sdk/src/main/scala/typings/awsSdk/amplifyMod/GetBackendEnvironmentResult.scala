@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackendEnvironmentResult extends StObject {
   
   /**
     *  Describes the backend environment for an Amplify app. 
     */
-  var backendEnvironment: BackendEnvironment = js.native
+  var backendEnvironment: BackendEnvironment
 }
 object GetBackendEnvironmentResult {
   

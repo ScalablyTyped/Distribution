@@ -2,21 +2,19 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var root: String = js.native
+  var root: String
   
-  var saveAgainButton: String = js.native
+  var saveAgainButton: String
   
-  var saving: String = js.native
+  var saving: String
   
-  var success: String = js.native
+  var success: String
 }
 object Error {
   

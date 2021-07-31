@@ -2,46 +2,44 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Embeddable extends StObject {
   
   /**
     * This value indicates whether the video can be embedded on another website.
     */
-  var embeddable: Boolean = js.native
+  var embeddable: Boolean
   
   /**
     * This value explains why a video failed to upload. This property is only present if the uploadStatus property indicates that the upload failed.
     */
-  var failureReason: String = js.native
+  var failureReason: String
   
   /**
     * The videos license.
     */
-  var license: String = js.native
+  var license: String
   
   /**
     * The videos privacy status.
     */
-  var privacyStatus: String = js.native
+  var privacyStatus: String
   
   /**
     * This value indicates whether the extended video statistics on the videos watch page are publicly viewable. By default, those statistics are viewable, and statistics like a videos viewcount and ratings will still be publicly visible even if this propertys value is set to false.
     */
-  var publicStatsViewable: Boolean = js.native
+  var publicStatsViewable: Boolean
   
   /**
     * This value explains why YouTube rejected an uploaded video. This property is only present if the uploadStatus property indicates that the upload was rejected.
     */
-  var rejectionReason: String = js.native
+  var rejectionReason: String
   
   /**
     * The status of the uploaded video.
     */
-  var uploadStatus: String = js.native
+  var uploadStatus: String
 }
 object Embeddable {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a ConnectionReceived event on a StreamSocketListener object. */
-@js.native
 trait StreamSocketListenerConnectionReceivedEventArgs extends StObject {
   
   /** The StreamSocket object created when a connection is received by the StreamSocketListener object. */
-  var socket: StreamSocket = js.native
+  var socket: StreamSocket
 }
 object StreamSocketListenerConnectionReceivedEventArgs {
   

@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Overlay
-  extends /* x */ StringDictionary[js.Any] {
+  extends StObject
+     with /* x */ StringDictionary[js.Any] {
   
   def addEventListener(event: String, handler: Callback): Unit = js.native
   

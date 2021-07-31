@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FunctionType extends AST {
+trait FunctionType
+  extends StObject
+     with AST {
   
-  var parameterList: ParameterList = js.native
+  var parameterList: ParameterList
   
-  var `type`: AST = js.native
+  var `type`: AST
   
-  var typeParameterList: TypeParameterList = js.native
+  var typeParameterList: TypeParameterList
 }
 object FunctionType {
   

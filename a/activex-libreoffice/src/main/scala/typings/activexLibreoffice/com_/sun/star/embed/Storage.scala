@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A root storage should be retrieved by using {@link StorageFactory} service. Substorages are created through {@link XStorage} interface of a parent
   * storage.
   */
-@js.native
 trait Storage
-  extends BaseStorage
+  extends StObject
+     with BaseStorage
      with XTransactedObject
      with XTransactionBroadcaster
      with XEncryptionProtectedSource {
@@ -31,7 +30,7 @@ trait Storage
     * In case it is set to `TRUE` the storage itself and/or a tree of substorages contain encrypted streams. Usually in case this property is supported the
     * implementation supports {@link XEncryptionProtectedSource} interface.
     */
-  var HasEncryptedEntries: Boolean = js.native
+  var HasEncryptedEntries: Boolean
   
   /**
     * allows to detect if the storage contains non-encrypted entries.
@@ -39,13 +38,13 @@ trait Storage
     * In case it is set to `TRUE` the storage itself and/or a tree of substorages contains non-encrypted streams. Usually in case this property is supported
     * the implementation supports {@link XEncryptionProtectedSource} interface.
     */
-  var HasNonEncryptedEntries: Boolean = js.native
+  var HasNonEncryptedEntries: Boolean
   
   /** allows to detect whether the storage is a root one. */
-  var IsRoot: Boolean = js.native
+  var IsRoot: Boolean
   
   /** allows to get and set the media type of the storage. */
-  var MediaType: String = js.native
+  var MediaType: String
   
   /**
     * allows to detect whether mediatype is detected by using fallback approach.
@@ -56,13 +55,13 @@ trait Storage
     * case is in application hands. It is up to user of the storage to decide whether they accept the fallback approach for an implementation of this
     * service, outputs a warning or an error.
     */
-  var MediaTypeFallbackIsUsed: Boolean = js.native
+  var MediaTypeFallbackIsUsed: Boolean
   
   /** allows to detect whether storage is open in "repair package" mode or not. */
-  var RepairPackage: Boolean = js.native
+  var RepairPackage: Boolean
   
   /** allows to get and set the version of the format related to the MediaType. */
-  var Version: String = js.native
+  var Version: String
 }
 object Storage {
   

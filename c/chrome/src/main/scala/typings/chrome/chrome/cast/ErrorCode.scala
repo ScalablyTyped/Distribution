@@ -2,7 +2,6 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,32 +11,52 @@ sealed trait ErrorCode extends StObject
 object ErrorCode extends StObject {
   
   @js.native
-  sealed trait API_NOT_INITIALIZED extends ErrorCode
+  sealed trait API_NOT_INITIALIZED
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait CANCEL extends ErrorCode
+  sealed trait CANCEL
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait CHANNEL_ERROR extends ErrorCode
+  sealed trait CHANNEL_ERROR
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait EXTENSION_MISSING extends ErrorCode
+  sealed trait EXTENSION_MISSING
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait EXTENSION_NOT_COMPATIBLE extends ErrorCode
+  sealed trait EXTENSION_NOT_COMPATIBLE
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait INVALID_PARAMETER extends ErrorCode
+  sealed trait INVALID_PARAMETER
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait LOAD_MEDIA_FAILED extends ErrorCode
+  sealed trait LOAD_MEDIA_FAILED
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait RECEIVER_UNAVAILABLE extends ErrorCode
+  sealed trait RECEIVER_UNAVAILABLE
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait SESSION_ERROR extends ErrorCode
+  sealed trait SESSION_ERROR
+    extends StObject
+       with ErrorCode
   
   @js.native
-  sealed trait TIMEOUT extends ErrorCode
+  sealed trait TIMEOUT
+    extends StObject
+       with ErrorCode
 }

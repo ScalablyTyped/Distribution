@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDiscovery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Oauth2 extends StObject {
   
   /** OAuth 2.0 authentication information. */
-  var oauth2: js.UndefOr[Scopes] = js.native
+  var oauth2: js.UndefOr[Scopes] = js.undefined
 }
 object Oauth2 {
   

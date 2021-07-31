@@ -11,7 +11,6 @@ import typings.reactVirtualizedSelect.anon.Option
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,16 +20,15 @@ object mod {
   class default[TValue] ()
     extends PureComponent[VirtualizedSelectProps[TValue], js.Object, js.Any]
   
-  @js.native
   trait AdditionalVirtualizedSelectProps[TValue] extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var optionHeight: js.UndefOr[Double | (js.Function1[/* options */ Option[TValue], Double])] = js.native
+    var optionHeight: js.UndefOr[Double | (js.Function1[/* options */ Option[TValue], Double])] = js.undefined
     
-    var optionRenderer: js.UndefOr[js.Function1[/* options */ VirtualizedOptionRenderOptions[TValue], Element]] = js.native
+    var optionRenderer: js.UndefOr[js.Function1[/* options */ VirtualizedOptionRenderOptions[TValue], Element]] = js.undefined
     
-    var selectComponent: js.UndefOr[(ComponentClass[_, ComponentState]) | StatelessComponent[_]] = js.native
+    var selectComponent: js.UndefOr[(ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]] = js.undefined
   }
   object AdditionalVirtualizedSelectProps {
     
@@ -41,7 +39,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AdditionalVirtualizedSelectPropsMutableBuilder[Self <: AdditionalVirtualizedSelectProps[_], TValue] (val x: Self with AdditionalVirtualizedSelectProps[TValue]) extends AnyVal {
+    implicit class AdditionalVirtualizedSelectPropsMutableBuilder[Self <: AdditionalVirtualizedSelectProps[?], TValue] (val x: Self & AdditionalVirtualizedSelectProps[TValue]) extends AnyVal {
       
       @scala.inline
       def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
@@ -65,37 +63,36 @@ object mod {
       def setOptionRendererUndefined: Self = StObject.set(x, "optionRenderer", js.undefined)
       
       @scala.inline
-      def setSelectComponent(value: (ComponentClass[_, ComponentState]) | StatelessComponent[_]): Self = StObject.set(x, "selectComponent", value.asInstanceOf[js.Any])
+      def setSelectComponent(value: (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "selectComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectComponentUndefined: Self = StObject.set(x, "selectComponent", js.undefined)
     }
   }
   
-  @js.native
   trait VirtualizedOptionRenderOptions[T] extends StObject {
     
-    def focusOption(option: T): Unit = js.native
+    def focusOption(option: T): Unit
     
-    var focusedOption: T = js.native
+    var focusedOption: T
     
-    var focusedOptionIndex: Double = js.native
+    var focusedOptionIndex: Double
     
-    var key: String = js.native
+    var key: String
     
-    var labelKey: /* keyof T */ String = js.native
+    var labelKey: /* keyof T */ String
     
-    var listProps: ListProps = js.native
+    var listProps: ListProps
     
-    var option: T = js.native
+    var option: T
     
-    var options: js.Array[T] = js.native
+    var options: js.Array[T]
     
-    def selectValue(option: T): Unit = js.native
+    def selectValue(option: T): Unit
     
-    var style: Record[String, String] = js.native
+    var style: Record[String, String]
     
-    var valueArray: js.Array[T] = js.native
+    var valueArray: js.Array[T]
   }
   object VirtualizedOptionRenderOptions {
     
@@ -118,7 +115,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class VirtualizedOptionRenderOptionsMutableBuilder[Self <: VirtualizedOptionRenderOptions[_], T] (val x: Self with VirtualizedOptionRenderOptions[T]) extends AnyVal {
+    implicit class VirtualizedOptionRenderOptionsMutableBuilder[Self <: VirtualizedOptionRenderOptions[?], T] (val x: Self & VirtualizedOptionRenderOptions[T]) extends AnyVal {
       
       @scala.inline
       def setFocusOption(value: T => Unit): Self = StObject.set(x, "focusOption", js.Any.fromFunction1(value))
@@ -163,5 +160,5 @@ object mod {
   
   type VirtualizedSelect[TValue] = PureComponent[VirtualizedSelectProps[TValue], js.Object, js.Any]
   
-  type VirtualizedSelectProps[TValue] = ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) with AdditionalVirtualizedSelectProps[TValue] with Async) | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) with AdditionalVirtualizedSelectProps[TValue])
+  type VirtualizedSelectProps[TValue] = ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) & AdditionalVirtualizedSelectProps[TValue] & Async) | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) & AdditionalVirtualizedSelectProps[TValue])
 }

@@ -2,26 +2,24 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Snippet of the search result, which summarizes the content of the resulting
   * page.
   */
-@js.native
 trait SchemaSnippet extends StObject {
   
   /**
     * The matched ranges in the snippet.
     */
-  var matchRanges: js.UndefOr[js.Array[SchemaMatchRange]] = js.native
+  var matchRanges: js.UndefOr[js.Array[SchemaMatchRange]] = js.undefined
   
   /**
     * The snippet of the document. The snippet of the document. May contain
     * escaped HTML character that should be unescaped prior to rendering.
     */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
 }
 object SchemaSnippet {
   

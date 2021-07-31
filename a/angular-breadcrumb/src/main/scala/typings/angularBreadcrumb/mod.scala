@@ -5,7 +5,6 @@ import typings.angularBreadcrumb.anon.Label
 import typings.angularBreadcrumb.mod.angularAugmentingMod.ui.IState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,13 +23,12 @@ object mod extends Shortcut {
     
     object ncy {
       
-      @js.native
       trait breadcrumbProvider extends StObject {
         
         /**
           * Setter for options defined in a module.config block
           **/
-        def setOptions(options: breadcrumbProviderOptions): Unit = js.native
+        def setOptions(options: breadcrumbProviderOptions): Unit
       }
       object breadcrumbProvider {
         
@@ -48,28 +46,27 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait breadcrumbProviderOptions extends StObject {
         
         /**
           * If true, abstract states are included in the breadcrumb. This option has a lower priority than the state-specific option skip
           **/
-        var includeAbstract: js.UndefOr[Boolean] = js.native
+        var includeAbstract: js.UndefOr[Boolean] = js.undefined
         
         /**
           * An existing state's name to be the state is the first step of the breadcrumb
           **/
-        var prefixStateName: js.UndefOr[String] = js.native
+        var prefixStateName: js.UndefOr[String] = js.undefined
         
         /**
           * Contains a predefined template's name; 'bootstrap3' (default), 'bootstrap2' or HTML for a custom template. This property is ignored if templateUrl is defined.
           **/
-        var template: js.UndefOr[String] = js.native
+        var template: js.UndefOr[String] = js.undefined
         
         /**
           * Contains the path to a template file. This property takes precedence over the template property.
           **/
-        var templateUrl: js.UndefOr[String] = js.native
+        var templateUrl: js.UndefOr[String] = js.undefined
       }
       object breadcrumbProviderOptions {
         
@@ -108,18 +105,17 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait breadcrumbService extends StObject {
         
         /**
           * Return the last step of the breadcrumb, generally the one relative to the current state, expect if it is configured as skipped (the method returns its parent). As getStatesChain, the state object is enriched with ncyBreadcrumbLink.
           **/
-        def getLastStep(): IState = js.native
+        def getLastStep(): IState
         
         /**
           * Returns the state chain to the current state (i.e. all the steps of the breadcrumb). It's an array of state object enriched with the module-specific property ncyBreadcrumbLink (the href for the breadcrumb step).
           **/
-        def getStatesChain(): js.Array[IState] = js.native
+        def getStatesChain(): js.Array[IState]
       }
       object breadcrumbService {
         
@@ -143,14 +139,13 @@ object mod extends Shortcut {
     
     object ui {
       
-      @js.native
       trait IState extends StObject {
         
-        var ncyBreadcrumb: js.UndefOr[Label] = js.native
+        var ncyBreadcrumb: js.UndefOr[Label] = js.undefined
         
-        var ncyBreadcrumbLabel: js.UndefOr[String] = js.native
+        var ncyBreadcrumbLabel: js.UndefOr[String] = js.undefined
         
-        var ncyBreadcrumbLink: js.UndefOr[String] = js.native
+        var ncyBreadcrumbLink: js.UndefOr[String] = js.undefined
       }
       object IState {
         

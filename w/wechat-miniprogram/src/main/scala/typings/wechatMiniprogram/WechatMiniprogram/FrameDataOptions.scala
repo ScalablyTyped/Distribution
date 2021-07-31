@@ -3,27 +3,25 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 视频帧数据，若取不到则返回 null。当缓冲区为空的时候可能暂停取不到数据。 */
-@js.native
 trait FrameDataOptions extends StObject {
   
   /** 帧数据 */
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
   /** 帧数据高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 帧原始 dts */
-  var pkDts: Double = js.native
+  var pkDts: Double
   
   /** 帧原始 pts */
-  var pkPts: Double = js.native
+  var pkPts: Double
   
   /** 帧数据宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object FrameDataOptions {
   

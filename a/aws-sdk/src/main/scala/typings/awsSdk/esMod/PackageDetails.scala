@@ -2,50 +2,48 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageDetails extends StObject {
   
-  var AvailablePackageVersion: js.UndefOr[PackageVersion] = js.native
+  var AvailablePackageVersion: js.UndefOr[PackageVersion] = js.undefined
   
   /**
     * Timestamp which tells creation date of the package.
     */
-  var CreatedAt: js.UndefOr[typings.awsSdk.esMod.CreatedAt] = js.native
+  var CreatedAt: js.UndefOr[typings.awsSdk.esMod.CreatedAt] = js.undefined
   
   /**
     * Additional information if the package is in an error state. Null otherwise.
     */
-  var ErrorDetails: js.UndefOr[typings.awsSdk.esMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.esMod.ErrorDetails] = js.undefined
   
-  var LastUpdatedAt: js.UndefOr[LastUpdated] = js.native
+  var LastUpdatedAt: js.UndefOr[LastUpdated] = js.undefined
   
   /**
     * User-specified description of the package.
     */
-  var PackageDescription: js.UndefOr[typings.awsSdk.esMod.PackageDescription] = js.native
+  var PackageDescription: js.UndefOr[typings.awsSdk.esMod.PackageDescription] = js.undefined
   
   /**
     * Internal ID of the package.
     */
-  var PackageID: js.UndefOr[typings.awsSdk.esMod.PackageID] = js.native
+  var PackageID: js.UndefOr[typings.awsSdk.esMod.PackageID] = js.undefined
   
   /**
     * User specified name of the package.
     */
-  var PackageName: js.UndefOr[typings.awsSdk.esMod.PackageName] = js.native
+  var PackageName: js.UndefOr[typings.awsSdk.esMod.PackageName] = js.undefined
   
   /**
     * Current state of the package. Values are COPYING/COPY_FAILED/AVAILABLE/DELETING/DELETE_FAILED
     */
-  var PackageStatus: js.UndefOr[typings.awsSdk.esMod.PackageStatus] = js.native
+  var PackageStatus: js.UndefOr[typings.awsSdk.esMod.PackageStatus] = js.undefined
   
   /**
     * Currently supports only TXT-DICTIONARY.
     */
-  var PackageType: js.UndefOr[typings.awsSdk.esMod.PackageType] = js.native
+  var PackageType: js.UndefOr[typings.awsSdk.esMod.PackageType] = js.undefined
 }
 object PackageDetails {
   

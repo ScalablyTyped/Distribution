@@ -5,7 +5,6 @@ import typings.firebaseStorage.srcReferenceMod.Reference
 import typings.firebaseStorageTypes.mod.FullMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcMetadataMod {
@@ -16,37 +15,37 @@ object srcMetadataMod {
   /**
     * The full set of object metadata, including read-only properties.
     */
-  @js.native
   trait Metadata
-    extends FullMetadata
+    extends StObject
+       with FullMetadata
        with /* prop */ StringDictionary[js.Any] {
     
     @JSName("cacheControl")
-    var cacheControl_Metadata: js.UndefOr[String] = js.native
+    var cacheControl_Metadata: js.UndefOr[String] = js.undefined
     
     @JSName("contentDisposition")
-    var contentDisposition_Metadata: js.UndefOr[String] = js.native
+    var contentDisposition_Metadata: js.UndefOr[String] = js.undefined
     
     @JSName("contentEncoding")
-    var contentEncoding_Metadata: js.UndefOr[String] = js.native
+    var contentEncoding_Metadata: js.UndefOr[String] = js.undefined
     
     @JSName("contentLanguage")
-    var contentLanguage_Metadata: js.UndefOr[String] = js.native
+    var contentLanguage_Metadata: js.UndefOr[String] = js.undefined
     
     @JSName("contentType")
-    var contentType_Metadata: js.UndefOr[String] = js.native
+    var contentType_Metadata: js.UndefOr[String] = js.undefined
     
     @JSName("customMetadata")
-    var customMetadata_Metadata: js.UndefOr[StringDictionary[String]] = js.native
+    var customMetadata_Metadata: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var downloadTokens: js.UndefOr[js.Array[String]] = js.native
+    var downloadTokens: js.UndefOr[js.Array[String]] = js.undefined
     
     @JSName("md5Hash")
-    var md5Hash_Metadata: js.UndefOr[String] = js.native
+    var md5Hash_Metadata: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Reference] = js.native
+    var ref: js.UndefOr[Reference] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Metadata {
     

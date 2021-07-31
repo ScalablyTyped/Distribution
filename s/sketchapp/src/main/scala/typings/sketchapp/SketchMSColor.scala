@@ -3,27 +3,25 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSColor extends StObject {
   
-  var _class: color = js.native
+  var _class: color
   
-  var alpha: Double = js.native
+  var alpha: Double
   
-  var blue: Double = js.native
+  var blue: Double
   
-  var green: Double = js.native
+  var green: Double
   
-  var red: Double = js.native
+  var red: Double
 }
 object SketchMSColor {
   
   @scala.inline
-  def apply(_class: color, alpha: Double, blue: Double, green: Double, red: Double): SketchMSColor = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
+  def apply(alpha: Double, blue: Double, green: Double, red: Double): SketchMSColor = {
+    val __obj = js.Dynamic.literal(_class = "color", alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSColor]
   }
   

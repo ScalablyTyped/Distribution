@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,44 +13,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is used as a return value for some of the hyphenator functions.
   * @see com.sun.star.linguistic2.XHyphenator
   */
-@js.native
-trait XHyphenatedWord extends XInterface {
+trait XHyphenatedWord
+  extends StObject
+     with XInterface {
   
   /** @returns the position of the hyphen in the hyphenated word.  The value has to be in the range from 0 (after the first character) to m-2 (before the last c */
-  val HyphenPos: Double = js.native
+  val HyphenPos: Double
   
   /** @returns the hyphenated word as it should be written (without the hyphen character). */
-  val HyphenatedWord: String = js.native
+  val HyphenatedWord: String
   
   /** @returns the position where hyphenation was applied in the word.  The value has to be in the range from 0 (after the first character) to n-2 (before the l */
-  val HyphenationPos: Double = js.native
+  val HyphenationPos: Double
   
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
     */
-  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns the word that was hyphenated. */
-  val Word: String = js.native
+  val Word: String
   
   /** @returns the position of the hyphen in the hyphenated word.  The value has to be in the range from 0 (after the first character) to m-2 (before the last c */
-  def getHyphenPos(): Double = js.native
+  def getHyphenPos(): Double
   
   /** @returns the hyphenated word as it should be written (without the hyphen character). */
-  def getHyphenatedWord(): String = js.native
+  def getHyphenatedWord(): String
   
   /** @returns the position where hyphenation was applied in the word.  The value has to be in the range from 0 (after the first character) to n-2 (before the l */
-  def getHyphenationPos(): Double = js.native
+  def getHyphenationPos(): Double
   
   /**
     * @returns the language of the hyphenated word.
     * @see com.sun.star.lang.Locale
     */
-  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns the word that was hyphenated. */
-  def getWord(): String = js.native
+  def getWord(): String
   
   /**
     * is used to query if the hyphenation result is an alternative spelling.
@@ -59,7 +59,7 @@ trait XHyphenatedWord extends XInterface {
     * A hyphenation result is an alternative spelling if the hyphenated word is different from the word that was hyphenated.
     * @returns `TRUE` if it is an alternative spelling, `FALSE` otherwise.
     */
-  def isAlternativeSpelling(): Boolean = js.native
+  def isAlternativeSpelling(): Boolean
 }
 object XHyphenatedWord {
   

@@ -10,9 +10,9 @@ The best regular expression (regex) for matching hex color values from string.
 | ------------------ | :-------------: |
 | Full name          | hex-color-regex |
 | Keywords           | color, colors, css, expr, expression, expressions, hex, match, matching, regex, regexp, regexps, regular, web |
-| # releases         | 1 |
-| # dependents       | 23 |
-| # downloads        | 203789747 |
+| # releases         | 0 |
+| # dependents       | 32 |
+| # downloads        | 273436482 |
 | # stars            | 1 |
 
 ## Links

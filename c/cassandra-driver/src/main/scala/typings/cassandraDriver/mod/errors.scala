@@ -3,7 +3,6 @@ package typings.cassandraDriver.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errors {
@@ -28,11 +27,19 @@ object errors {
   
   @JSImport("cassandra-driver", "errors.DriverError")
   @js.native
-  abstract class DriverError protected () extends Error {
+  abstract class DriverError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: String, constructor: js.Any) = this()
     
     var info: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("cassandra-driver", "errors.DriverInternalError")

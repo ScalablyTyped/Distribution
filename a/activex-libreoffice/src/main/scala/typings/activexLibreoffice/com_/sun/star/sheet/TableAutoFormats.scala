@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * There is only one instance of this collection, containing all AutoFormats usable in spreadsheet and text tables.
   */
-@js.native
 trait TableAutoFormats
-  extends XNameContainer
+  extends StObject
+     with XNameContainer
      with XIndexAccess
      with XEnumerationAccess
 object TableAutoFormats {

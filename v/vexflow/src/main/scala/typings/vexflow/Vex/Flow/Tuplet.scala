@@ -3,35 +3,33 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tuplet extends StObject {
   
-  def attach(): Unit = js.native
+  def attach(): Unit
   
-  def detach(): Unit = js.native
+  def detach(): Unit
   
-  def draw(): Unit = js.native
+  def draw(): Unit
   
-  def getBeatsOccupied(): Double = js.native
+  def getBeatsOccupied(): Double
   
-  def getNoteCount(): Double = js.native
+  def getNoteCount(): Double
   
-  def getNotes(): js.Array[StaveNote] = js.native
+  def getNotes(): js.Array[StaveNote]
   
-  def resolveGlyphs(): Unit = js.native
+  def resolveGlyphs(): Unit
   
-  def setBeatsOccupied(beats: Double): Unit = js.native
+  def setBeatsOccupied(beats: Double): Unit
   
-  def setBracketed(bracketed: Boolean): Tuplet = js.native
+  def setBracketed(bracketed: Boolean): Tuplet
   
-  def setContext(context: IRenderContext): Tuplet = js.native
+  def setContext(context: IRenderContext): Tuplet
   
-  def setRatioed(ratioed: Boolean): Tuplet = js.native
+  def setRatioed(ratioed: Boolean): Tuplet
   
-  def setTupletLocation(location: Double): Tuplet = js.native
+  def setTupletLocation(location: Double): Tuplet
 }
 object Tuplet {
   

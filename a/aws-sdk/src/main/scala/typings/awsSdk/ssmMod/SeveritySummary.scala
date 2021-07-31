@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeveritySummary extends StObject {
   
   /**
     * The total number of resources or compliance items that have a severity level of critical. Critical severity is determined by the organization that published the compliance items.
     */
-  var CriticalCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var CriticalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   
   /**
     * The total number of resources or compliance items that have a severity level of high. High severity is determined by the organization that published the compliance items.
     */
-  var HighCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var HighCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   
   /**
     * The total number of resources or compliance items that have a severity level of informational. Informational severity is determined by the organization that published the compliance items.
     */
-  var InformationalCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var InformationalCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   
   /**
     * The total number of resources or compliance items that have a severity level of low. Low severity is determined by the organization that published the compliance items.
     */
-  var LowCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var LowCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   
   /**
     * The total number of resources or compliance items that have a severity level of medium. Medium severity is determined by the organization that published the compliance items.
     */
-  var MediumCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var MediumCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
   
   /**
     * The total number of resources or compliance items that have a severity level of unspecified. Unspecified severity is determined by the organization that published the compliance items.
     */
-  var UnspecifiedCount: js.UndefOr[ComplianceSummaryCount] = js.native
+  var UnspecifiedCount: js.UndefOr[ComplianceSummaryCount] = js.undefined
 }
 object SeveritySummary {
   

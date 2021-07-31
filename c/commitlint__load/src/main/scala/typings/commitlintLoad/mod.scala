@@ -6,14 +6,16 @@ import typings.commitlintLoad.commitlintLoadNumbers.`2`
 import typings.commitlintLoad.commitlintLoadStrings.lowercase_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@commitlint/load", JSImport.Default)
+  @JSImport("@commitlint/load", JSImport.Namespace)
   @js.native
-  def default(): js.Promise[CommitlintConfig] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): js.Promise[CommitlintConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[CommitlintConfig]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.commitlintLoad.commitlintLoadStrings.always
@@ -83,12 +85,11 @@ object mod {
     def uppercase: typings.commitlintLoad.commitlintLoadStrings.uppercase = "uppercase".asInstanceOf[typings.commitlintLoad.commitlintLoadStrings.uppercase]
   }
   
-  @js.native
   trait CommitlintConfig extends StObject {
     
-    var `extends`: js.UndefOr[js.Array[String]] = js.native
+    var `extends`: js.UndefOr[js.Array[String]] = js.undefined
     
-    var rules: Rules = js.native
+    var rules: Rules
   }
   object CommitlintConfig {
     
@@ -135,66 +136,65 @@ object mod {
   
   type Rule[T] = js.Tuple3[Level | `0` | `1` | `2`, Applicability, T]
   
-  @js.native
   trait Rules extends StObject {
     
-    var `body-leading-blank`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+    var `body-leading-blank`: js.UndefOr[Rule[Unit]] = js.undefined
     
-    var `body-max-length`: js.UndefOr[Rule[Double]] = js.native
+    var `body-max-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `body-max-line-length`: js.UndefOr[Rule[Double]] = js.native
+    var `body-max-line-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `body-min-length`: js.UndefOr[Rule[Double]] = js.native
+    var `body-min-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `footer-leading-blank`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+    var `footer-leading-blank`: js.UndefOr[Rule[Unit]] = js.undefined
     
-    var `footer-max-length`: js.UndefOr[Rule[Double]] = js.native
+    var `footer-max-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `footer-max-line-length`: js.UndefOr[Rule[Double]] = js.native
+    var `footer-max-line-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `footer-min-length`: js.UndefOr[Rule[Double]] = js.native
+    var `footer-min-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `header-case`: js.UndefOr[Rule[Case]] = js.native
+    var `header-case`: js.UndefOr[Rule[Case]] = js.undefined
     
-    var `header-full-stop`: js.UndefOr[Rule[String]] = js.native
+    var `header-full-stop`: js.UndefOr[Rule[String]] = js.undefined
     
-    var `header-max-length`: js.UndefOr[Rule[Double]] = js.native
+    var `header-max-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `header-min-length`: js.UndefOr[Rule[Double]] = js.native
+    var `header-min-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `references-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+    var `references-empty`: js.UndefOr[Rule[Unit]] = js.undefined
     
-    var `scope-case`: js.UndefOr[Rule[Case]] = js.native
+    var `scope-case`: js.UndefOr[Rule[Case]] = js.undefined
     
-    var `scope-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+    var `scope-empty`: js.UndefOr[Rule[Unit]] = js.undefined
     
-    var `scope-enum`: js.UndefOr[Rule[js.Array[String]]] = js.native
+    var `scope-enum`: js.UndefOr[Rule[js.Array[String]]] = js.undefined
     
-    var `scope-max-length`: js.UndefOr[Rule[Double]] = js.native
+    var `scope-max-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `scope-min-length`: js.UndefOr[Rule[Double]] = js.native
+    var `scope-min-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `signed-off-by`: js.UndefOr[Rule[String]] = js.native
+    var `signed-off-by`: js.UndefOr[Rule[String]] = js.undefined
     
-    var `subject-case`: js.UndefOr[Rule[Case | js.Array[Case]]] = js.native
+    var `subject-case`: js.UndefOr[Rule[Case | js.Array[Case]]] = js.undefined
     
-    var `subject-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+    var `subject-empty`: js.UndefOr[Rule[Unit]] = js.undefined
     
-    var `subject-full-stop`: js.UndefOr[Rule[String]] = js.native
+    var `subject-full-stop`: js.UndefOr[Rule[String]] = js.undefined
     
-    var `subject-max-length`: js.UndefOr[Rule[Double]] = js.native
+    var `subject-max-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `subject-min-length`: js.UndefOr[Rule[Double]] = js.native
+    var `subject-min-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `type-case`: js.UndefOr[Rule[Case]] = js.native
+    var `type-case`: js.UndefOr[Rule[Case]] = js.undefined
     
-    var `type-empty`: js.UndefOr[Rule[js.UndefOr[scala.Nothing]]] = js.native
+    var `type-empty`: js.UndefOr[Rule[Unit]] = js.undefined
     
-    var `type-enum`: js.UndefOr[Rule[js.Array[String]]] = js.native
+    var `type-enum`: js.UndefOr[Rule[js.Array[String]]] = js.undefined
     
-    var `type-max-length`: js.UndefOr[Rule[Double]] = js.native
+    var `type-max-length`: js.UndefOr[Rule[Double]] = js.undefined
     
-    var `type-min-length`: js.UndefOr[Rule[Double]] = js.native
+    var `type-min-length`: js.UndefOr[Rule[Double]] = js.undefined
   }
   object Rules {
     
@@ -208,7 +208,7 @@ object mod {
     implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def `setBody-leading-blank`(value: Rule[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "body-leading-blank", value.asInstanceOf[js.Any])
+      def `setBody-leading-blank`(value: Rule[Unit]): Self = StObject.set(x, "body-leading-blank", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setBody-leading-blankUndefined`: Self = StObject.set(x, "body-leading-blank", js.undefined)
@@ -232,7 +232,7 @@ object mod {
       def `setBody-min-lengthUndefined`: Self = StObject.set(x, "body-min-length", js.undefined)
       
       @scala.inline
-      def `setFooter-leading-blank`(value: Rule[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "footer-leading-blank", value.asInstanceOf[js.Any])
+      def `setFooter-leading-blank`(value: Rule[Unit]): Self = StObject.set(x, "footer-leading-blank", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setFooter-leading-blankUndefined`: Self = StObject.set(x, "footer-leading-blank", js.undefined)
@@ -280,7 +280,7 @@ object mod {
       def `setHeader-min-lengthUndefined`: Self = StObject.set(x, "header-min-length", js.undefined)
       
       @scala.inline
-      def `setReferences-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "references-empty", value.asInstanceOf[js.Any])
+      def `setReferences-empty`(value: Rule[Unit]): Self = StObject.set(x, "references-empty", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setReferences-emptyUndefined`: Self = StObject.set(x, "references-empty", js.undefined)
@@ -292,7 +292,7 @@ object mod {
       def `setScope-caseUndefined`: Self = StObject.set(x, "scope-case", js.undefined)
       
       @scala.inline
-      def `setScope-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "scope-empty", value.asInstanceOf[js.Any])
+      def `setScope-empty`(value: Rule[Unit]): Self = StObject.set(x, "scope-empty", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setScope-emptyUndefined`: Self = StObject.set(x, "scope-empty", js.undefined)
@@ -328,7 +328,7 @@ object mod {
       def `setSubject-caseUndefined`: Self = StObject.set(x, "subject-case", js.undefined)
       
       @scala.inline
-      def `setSubject-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "subject-empty", value.asInstanceOf[js.Any])
+      def `setSubject-empty`(value: Rule[Unit]): Self = StObject.set(x, "subject-empty", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setSubject-emptyUndefined`: Self = StObject.set(x, "subject-empty", js.undefined)
@@ -358,7 +358,7 @@ object mod {
       def `setType-caseUndefined`: Self = StObject.set(x, "type-case", js.undefined)
       
       @scala.inline
-      def `setType-empty`(value: Rule[js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "type-empty", value.asInstanceOf[js.Any])
+      def `setType-empty`(value: Rule[Unit]): Self = StObject.set(x, "type-empty", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setType-emptyUndefined`: Self = StObject.set(x, "type-empty", js.undefined)

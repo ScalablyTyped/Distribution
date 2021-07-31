@@ -2,11 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullTypeParameterSymbol extends PullTypeSymbol {
+trait PullTypeParameterSymbol
+  extends StObject
+     with PullTypeSymbol {
   
   var _constraint: js.Any = js.native
   
@@ -17,6 +18,9 @@ trait PullTypeParameterSymbol extends PullTypeSymbol {
   /* private */ def getConstraintRecursively(visitedTypeParameters: js.Any): js.Any = js.native
   
   def getDefaultConstraint(semanticInfoChain: SemanticInfoChain): PullTypeSymbol = js.native
+  
+  /* InferMemberOverrides */
+  override def getIsSpecialized(): Boolean = js.native
   
   def setConstraint(constraintType: PullTypeSymbol): Unit = js.native
 }

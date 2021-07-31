@@ -2,63 +2,61 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellData extends StObject {
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var columns: js.UndefOr[js.Array[js.Object]] = js.native
+  var columns: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var escapedLabel: js.UndefOr[String] = js.native
+  var escapedLabel: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hierarchy: js.UndefOr[Hierarchy] = js.native
+  var hierarchy: js.UndefOr[Hierarchy] = js.undefined
   
-  var isClassicTotalRow: js.UndefOr[Boolean] = js.native
+  var isClassicTotalRow: js.UndefOr[Boolean] = js.undefined
   
-  var isDrillThrough: js.UndefOr[Boolean] = js.native
+  var isDrillThrough: js.UndefOr[Boolean] = js.undefined
   
-  var isGrandTotal: js.UndefOr[Boolean] = js.native
+  var isGrandTotal: js.UndefOr[Boolean] = js.undefined
   
-  var isGrandTotalColumn: js.UndefOr[Boolean] = js.native
+  var isGrandTotalColumn: js.UndefOr[Boolean] = js.undefined
   
-  var isGrandTotalRow: js.UndefOr[Boolean] = js.native
+  var isGrandTotalRow: js.UndefOr[Boolean] = js.undefined
   
-  var isTotal: js.UndefOr[Boolean] = js.native
+  var isTotal: js.UndefOr[Boolean] = js.undefined
   
-  var isTotalColumn: js.UndefOr[Boolean] = js.native
+  var isTotalColumn: js.UndefOr[Boolean] = js.undefined
   
-  var isTotalRow: js.UndefOr[Boolean] = js.native
+  var isTotalRow: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var measure: js.UndefOr[MeasureObject] = js.native
+  var measure: js.UndefOr[MeasureObject] = js.undefined
   
-  var member: js.UndefOr[Member] = js.native
+  var member: js.UndefOr[Member] = js.undefined
   
-  var recordId: js.UndefOr[String | js.Array[String]] = js.native
+  var recordId: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var rowData: js.UndefOr[js.Array[CellData]] = js.native
+  var rowData: js.UndefOr[js.Array[CellData]] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rows: js.UndefOr[js.Array[js.Object]] = js.native
+  var rows: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object CellData {
   

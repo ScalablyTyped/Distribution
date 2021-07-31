@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValues
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows inserting and appending paragraphs. */
-@js.native
-trait XParagraphAppend extends XInterface {
+trait XParagraphAppend
+  extends StObject
+     with XInterface {
   
   /**
     * appends a new and empty paragraph at the end of the text.
@@ -18,7 +18,7 @@ trait XParagraphAppend extends XInterface {
     * The properties are applied to the last paragraph before the new paragraph is inserted.
     * @param CharacterAndParagraphProperties can contain all the properties defined by the service {@link Paragraph} .
     */
-  def finishParagraph(CharacterAndParagraphProperties: PropertyValues): XTextRange = js.native
+  def finishParagraph(CharacterAndParagraphProperties: PropertyValues): XTextRange
   
   /**
     * inserts a new and empty paragraph to the text at a given position.
@@ -28,7 +28,7 @@ trait XParagraphAppend extends XInterface {
     * @param TextRange specifies the position of the insertion.
     * @since LibreOffice 4.0
     */
-  def finishParagraphInsert(CharacterAndParagraphProperties: PropertyValues, TextRange: XTextRange): XTextRange = js.native
+  def finishParagraphInsert(CharacterAndParagraphProperties: PropertyValues, TextRange: XTextRange): XTextRange
 }
 object XParagraphAppend {
   

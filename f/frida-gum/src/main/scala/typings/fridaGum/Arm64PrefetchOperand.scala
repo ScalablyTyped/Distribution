@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.prefetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arm64PrefetchOperand
-  extends Arm64BaseOperand
+  extends StObject
+     with Arm64BaseOperand
      with Arm64Operand {
   
-  var `type`: prefetch = js.native
+  var `type`: prefetch
   
-  var value: Double = js.native
+  var value: Double
 }
 object Arm64PrefetchOperand {
   
   @scala.inline
-  def apply(`type`: prefetch, value: Double): Arm64PrefetchOperand = {
+  def apply(value: Double): Arm64PrefetchOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("prefetch")
     __obj.asInstanceOf[Arm64PrefetchOperand]
   }
   

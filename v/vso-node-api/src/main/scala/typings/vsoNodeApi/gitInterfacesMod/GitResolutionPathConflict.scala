@@ -2,15 +2,15 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitResolutionPathConflict extends GitResolution {
+trait GitResolutionPathConflict
+  extends StObject
+     with GitResolution {
   
-  var action: GitResolutionPathConflictAction = js.native
+  var action: GitResolutionPathConflictAction
   
-  var renamePath: String = js.native
+  var renamePath: String
 }
 object GitResolutionPathConflict {
   

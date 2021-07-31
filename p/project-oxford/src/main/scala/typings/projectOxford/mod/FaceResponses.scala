@@ -4,19 +4,17 @@ import typings.projectOxford.anon.Confidence
 import typings.projectOxford.anon.Pitch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FaceResponses {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var age: Double = js.native
+    var age: Double
     
-    var gender: String = js.native
+    var gender: String
     
-    var headPose: Pitch = js.native
+    var headPose: Pitch
   }
   object Attributes {
     
@@ -40,16 +38,15 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait Detect extends StObject {
     
-    var attributes: Attributes = js.native
+    var attributes: Attributes
     
-    var faceId: String = js.native
+    var faceId: String
     
-    var faceLandmarks: FaceLandmarks = js.native
+    var faceLandmarks: FaceLandmarks
     
-    var faceRectangle: FaceRectangle = js.native
+    var faceRectangle: FaceRectangle
   }
   object Detect {
     
@@ -76,62 +73,61 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait FaceLandmarks extends StObject {
     
-    var eyeLeftBottom: point = js.native
+    var eyeLeftBottom: point
     
-    var eyeLeftInner: point = js.native
+    var eyeLeftInner: point
     
-    var eyeLeftOuter: point = js.native
+    var eyeLeftOuter: point
     
-    var eyeLeftTop: point = js.native
+    var eyeLeftTop: point
     
-    var eyeRightBottom: point = js.native
+    var eyeRightBottom: point
     
-    var eyeRightInner: point = js.native
+    var eyeRightInner: point
     
-    var eyeRightOuter: point = js.native
+    var eyeRightOuter: point
     
-    var eyeRightTop: point = js.native
+    var eyeRightTop: point
     
-    var eyebrowLeftInner: point = js.native
+    var eyebrowLeftInner: point
     
-    var eyebrowLeftOuter: point = js.native
+    var eyebrowLeftOuter: point
     
-    var eyebrowRightInner: point = js.native
+    var eyebrowRightInner: point
     
-    var eyebrowRightOuter: point = js.native
+    var eyebrowRightOuter: point
     
-    var mouthLeft: point = js.native
+    var mouthLeft: point
     
-    var mouthRight: point = js.native
+    var mouthRight: point
     
-    var noseLeftAlarOutTip: point = js.native
+    var noseLeftAlarOutTip: point
     
-    var noseLeftAlarTop: point = js.native
+    var noseLeftAlarTop: point
     
-    var noseRightAlarOutTip: point = js.native
+    var noseRightAlarOutTip: point
     
-    var noseRightAlarTop: point = js.native
+    var noseRightAlarTop: point
     
-    var noseRootLeft: point = js.native
+    var noseRootLeft: point
     
-    var noseRootRight: point = js.native
+    var noseRootRight: point
     
-    var noseTip: point = js.native
+    var noseTip: point
     
-    var pupilLeft: point = js.native
+    var pupilLeft: point
     
-    var pupilRight: point = js.native
+    var pupilRight: point
     
-    var underLipBottom: point = js.native
+    var underLipBottom: point
     
-    var underLipTop: point = js.native
+    var underLipTop: point
     
-    var upperLipBottom: point = js.native
+    var upperLipBottom: point
     
-    var upperLipTop: point = js.native
+    var upperLipTop: point
   }
   object FaceLandmarks {
     
@@ -255,16 +251,15 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait FaceRectangle extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object FaceRectangle {
     
@@ -291,12 +286,11 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait Grouping extends StObject {
     
-    var groups: js.Array[String] = js.native
+    var groups: js.Array[String]
     
-    var messyGroup: js.Array[String] = js.native
+    var messyGroup: js.Array[String]
   }
   object Grouping {
     
@@ -323,12 +317,11 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait Identify extends StObject {
     
-    var candidates: js.Array[Confidence] = js.native
+    var candidates: js.Array[Confidence]
     
-    var faceId: String = js.native
+    var faceId: String
   }
   object Identify {
     
@@ -352,10 +345,9 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait Similar extends StObject {
     
-    var faceIds: js.Array[String] = js.native
+    var faceIds: js.Array[String]
   }
   object Similar {
     
@@ -376,12 +368,11 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait Verify extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var isIdentical: Boolean = js.native
+    var isIdentical: Boolean
   }
   object Verify {
     
@@ -402,12 +393,11 @@ object FaceResponses {
     }
   }
   
-  @js.native
   trait point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object point {
     

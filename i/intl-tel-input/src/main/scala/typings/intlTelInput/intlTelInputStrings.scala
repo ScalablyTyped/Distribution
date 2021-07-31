@@ -3,68 +3,91 @@ package typings.intlTelInput
 import typings.intlTelInput.mod.intlTelInputUtils.placeholderNumberType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intlTelInputStrings {
   
   @js.native
-  sealed trait FIXED_LINE extends placeholderNumberType
+  sealed trait FIXED_LINE
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def FIXED_LINE: FIXED_LINE = "FIXED_LINE".asInstanceOf[FIXED_LINE]
   
   @js.native
-  sealed trait FIXED_LINE_OR_MOBILE extends placeholderNumberType
+  sealed trait FIXED_LINE_OR_MOBILE
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def FIXED_LINE_OR_MOBILE: FIXED_LINE_OR_MOBILE = "FIXED_LINE_OR_MOBILE".asInstanceOf[FIXED_LINE_OR_MOBILE]
   
   @js.native
-  sealed trait MOBILE extends placeholderNumberType
+  sealed trait MOBILE
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def MOBILE: MOBILE = "MOBILE".asInstanceOf[MOBILE]
   
   @js.native
-  sealed trait PAGER extends placeholderNumberType
+  sealed trait PAGER
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def PAGER: PAGER = "PAGER".asInstanceOf[PAGER]
   
   @js.native
-  sealed trait PERSONAL_NUMBER extends placeholderNumberType
+  sealed trait PERSONAL_NUMBER
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def PERSONAL_NUMBER: PERSONAL_NUMBER = "PERSONAL_NUMBER".asInstanceOf[PERSONAL_NUMBER]
   
   @js.native
-  sealed trait PREMIUM_RATE extends placeholderNumberType
+  sealed trait PREMIUM_RATE
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def PREMIUM_RATE: PREMIUM_RATE = "PREMIUM_RATE".asInstanceOf[PREMIUM_RATE]
   
   @js.native
-  sealed trait SHARED_COST extends placeholderNumberType
+  sealed trait SHARED_COST
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def SHARED_COST: SHARED_COST = "SHARED_COST".asInstanceOf[SHARED_COST]
   
   @js.native
-  sealed trait TOLL_FREE extends placeholderNumberType
+  sealed trait TOLL_FREE
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def TOLL_FREE: TOLL_FREE = "TOLL_FREE".asInstanceOf[TOLL_FREE]
   
   @js.native
-  sealed trait UAN extends placeholderNumberType
+  sealed trait UAN
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def UAN: UAN = "UAN".asInstanceOf[UAN]
   
   @js.native
-  sealed trait UNKNOWN extends placeholderNumberType
+  sealed trait UNKNOWN
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait VOICEMAIL extends placeholderNumberType
+  sealed trait VOICEMAIL
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def VOICEMAIL: VOICEMAIL = "VOICEMAIL".asInstanceOf[VOICEMAIL]
   
   @js.native
-  sealed trait VOIP extends placeholderNumberType
+  sealed trait VOIP
+    extends StObject
+       with placeholderNumberType
   @scala.inline
   def VOIP: VOIP = "VOIP".asInstanceOf[VOIP]
   

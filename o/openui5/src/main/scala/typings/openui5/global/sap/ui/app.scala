@@ -3,7 +3,6 @@ package typings.openui5.global.sap.ui
 import typings.openui5.sap.ui.base.ManagedObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
@@ -11,7 +10,8 @@ object app {
   @JSGlobal("sap.ui.app.Application")
   @js.native
   abstract class Application protected ()
-    extends typings.openui5.sap.ui.app.Application {
+    extends StObject
+       with typings.openui5.sap.ui.app.Application {
     /**
       * Abstract application class. Extend this class to create a central application class.Only one
       * instance is allowed.Accepts an object literal <code>mSettings</code> that defines initialproperty
@@ -30,7 +30,9 @@ object app {
   
   @JSGlobal("sap.ui.app.MockServer")
   @js.native
-  abstract class MockServer protected () extends ManagedObject {
+  abstract class MockServer protected ()
+    extends StObject
+       with ManagedObject {
     /**
       * Creates a mocked server. This helps to mock all or some backend calls, e.g. for OData/JSON Models or
       * simple XHR calls, withoutchanging the application code. This class can also be used for qunit tests.
@@ -42,7 +44,7 @@ object app {
       */
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
-    def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
+    def this(sId: String, mSettings: Unit, oScope: js.Any) = this()
   }
 }

@@ -2,18 +2,16 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Node args
   */
-@js.native
 trait INodeArgs extends StObject {
   
-  var node: js.Any = js.native
+  var node: js.Any
   
-  var section: js.Any = js.native
+  var section: js.Any
 }
 object INodeArgs {
   

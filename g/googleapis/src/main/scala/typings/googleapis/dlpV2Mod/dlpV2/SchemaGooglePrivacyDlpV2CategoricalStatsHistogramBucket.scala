@@ -2,37 +2,35 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket extends StObject {
   
   /**
     * Total number of values in this bucket.
     */
-  var bucketSize: js.UndefOr[String] = js.native
+  var bucketSize: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of distinct values in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.native
+  var bucketValueCount: js.UndefOr[String] = js.undefined
   
   /**
     * Sample of value frequencies in this bucket. The total number of values
     * returned per bucket is capped at 20.
     */
-  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ValueFrequency]] = js.native
+  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2ValueFrequency]] = js.undefined
   
   /**
     * Lower bound on the value frequency of the values in this bucket.
     */
-  var valueFrequencyLowerBound: js.UndefOr[String] = js.native
+  var valueFrequencyLowerBound: js.UndefOr[String] = js.undefined
   
   /**
     * Upper bound on the value frequency of the values in this bucket.
     */
-  var valueFrequencyUpperBound: js.UndefOr[String] = js.native
+  var valueFrequencyUpperBound: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket {
   

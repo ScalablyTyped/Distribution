@@ -2,31 +2,29 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildConfiguration extends StObject {
   
-  var branchName: String = js.native
+  var branchName: String
   
-  var buildDefinitionId: Double = js.native
+  var buildDefinitionId: Double
   
-  var flavor: String = js.native
+  var flavor: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var number: String = js.native
+  var number: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
-  var repositoryId: Double = js.native
+  var repositoryId: Double
   
-  var sourceVersion: String = js.native
+  var sourceVersion: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object BuildConfiguration {
   

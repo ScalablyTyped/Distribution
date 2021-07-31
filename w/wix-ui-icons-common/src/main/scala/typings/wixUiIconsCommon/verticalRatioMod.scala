@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object verticalRatioMod extends Shortcut {
@@ -15,10 +14,11 @@ object verticalRatioMod extends Shortcut {
   @js.native
   val default: SFC[VerticalRatioProps] = js.native
   
-  @js.native
-  trait VerticalRatioProps extends SVGAttributes[SVGElement] {
+  trait VerticalRatioProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object VerticalRatioProps {
     

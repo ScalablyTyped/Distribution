@@ -12,7 +12,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,16 +20,15 @@ object mod extends Shortcut {
   @js.native
   val default: Fontkit = js.native
   
-  @js.native
   trait BBOX extends StObject {
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
   }
   object BBOX {
     
@@ -110,97 +108,23 @@ object mod extends Shortcut {
       * Returns a GlyphRun object, which includes an array of Glyphs and GlyphPositions for the given string.
       */
     def layout(string: String): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.UndefOr[scala.Nothing],
-      script: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      direction: String
-    ): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.UndefOr[scala.Nothing],
-      script: js.UndefOr[scala.Nothing],
-      language: String
-    ): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.UndefOr[scala.Nothing],
-      script: js.UndefOr[scala.Nothing],
-      language: String,
-      direction: String
-    ): GlyphRun = js.native
-    def layout(string: String, features: js.UndefOr[scala.Nothing], script: String): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.UndefOr[scala.Nothing],
-      script: String,
-      language: js.UndefOr[scala.Nothing],
-      direction: String
-    ): GlyphRun = js.native
-    def layout(string: String, features: js.UndefOr[scala.Nothing], script: String, language: String): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.UndefOr[scala.Nothing],
-      script: String,
-      language: String,
-      direction: String
-    ): GlyphRun = js.native
     def layout(string: String, features: js.Array[String]): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.Array[String],
-      script: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      direction: String
-    ): GlyphRun = js.native
-    def layout(string: String, features: js.Array[String], script: js.UndefOr[scala.Nothing], language: String): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.Array[String],
-      script: js.UndefOr[scala.Nothing],
-      language: String,
-      direction: String
-    ): GlyphRun = js.native
     def layout(string: String, features: js.Array[String], script: String): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: js.Array[String],
-      script: String,
-      language: js.UndefOr[scala.Nothing],
-      direction: String
-    ): GlyphRun = js.native
     def layout(string: String, features: js.Array[String], script: String, language: String): GlyphRun = js.native
     def layout(string: String, features: js.Array[String], script: String, language: String, direction: String): GlyphRun = js.native
+    def layout(string: String, features: js.Array[String], script: String, language: Unit, direction: String): GlyphRun = js.native
+    def layout(string: String, features: js.Array[String], script: Unit, language: String): GlyphRun = js.native
+    def layout(string: String, features: js.Array[String], script: Unit, language: String, direction: String): GlyphRun = js.native
+    def layout(string: String, features: js.Array[String], script: Unit, language: Unit, direction: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: String, language: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: String, language: String, direction: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: String, language: Unit, direction: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: Unit, language: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: Unit, language: String, direction: String): GlyphRun = js.native
+    def layout(string: String, features: Unit, script: Unit, language: Unit, direction: String): GlyphRun = js.native
     def layout(string: String, features: Record[String, Boolean]): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: Record[String, Boolean],
-      script: js.UndefOr[scala.Nothing],
-      language: js.UndefOr[scala.Nothing],
-      direction: String
-    ): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: Record[String, Boolean],
-      script: js.UndefOr[scala.Nothing],
-      language: String
-    ): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: Record[String, Boolean],
-      script: js.UndefOr[scala.Nothing],
-      language: String,
-      direction: String
-    ): GlyphRun = js.native
     def layout(string: String, features: Record[String, Boolean], script: String): GlyphRun = js.native
-    def layout(
-      string: String,
-      features: Record[String, Boolean],
-      script: String,
-      language: js.UndefOr[scala.Nothing],
-      direction: String
-    ): GlyphRun = js.native
     def layout(string: String, features: Record[String, Boolean], script: String, language: String): GlyphRun = js.native
     def layout(
       string: String,
@@ -209,6 +133,22 @@ object mod extends Shortcut {
       language: String,
       direction: String
     ): GlyphRun = js.native
+    def layout(
+      string: String,
+      features: Record[String, Boolean],
+      script: String,
+      language: Unit,
+      direction: String
+    ): GlyphRun = js.native
+    def layout(string: String, features: Record[String, Boolean], script: Unit, language: String): GlyphRun = js.native
+    def layout(
+      string: String,
+      features: Record[String, Boolean],
+      script: Unit,
+      language: String,
+      direction: String
+    ): GlyphRun = js.native
+    def layout(string: String, features: Record[String, Boolean], script: Unit, language: Unit, direction: String): GlyphRun = js.native
     
     /** the amount of space that should be included between lines */
     var lineGap: Double = js.native
@@ -276,14 +216,13 @@ object mod extends Shortcut {
     def openSync(filename: String, postscriptName: String): Font = js.native
   }
   
-  @js.native
   trait Glyph extends StObject {
     
     /** the glyph’s advance width */
-    var advanceWidth: Double = js.native
+    var advanceWidth: Double
     
     /** the glyph’s bounding box, i.e. the rectangle that encloses the glyph outline as tightly as possible. */
-    var bbox: BBOX = js.native
+    var bbox: BBOX
     
     /**
       * The glyph’s control box.
@@ -294,26 +233,26 @@ object mod extends Shortcut {
       * See [here](http://www.freetype.org/freetype2/docs/glyphs/glyphs-6.html#section-2)
       * for a more detailed description.
       */
-    var cbox: BBOX = js.native
+    var cbox: BBOX
     
     /**
       * An array of unicode code points that are represented by this glyph.
       * There can be multiple code points in the case of ligatures and other glyphs
       * that represent multiple visual characters.
       */
-    var codePoints: js.Array[Double] = js.native
+    var codePoints: js.Array[Double]
     
     /** the glyph id in the font */
-    var id: Double = js.native
+    var id: Double
     
     /** is a ligature glyph (multiple character, spacing glyph) */
-    var isLigature: Boolean = js.native
+    var isLigature: Boolean
     
     /** is a mark glyph (non-spacing combining glyph) */
-    var isMark: Boolean = js.native
+    var isMark: Boolean
     
     /** a vector Path object representing the glyph */
-    var path: Path = js.native
+    var path: Path
   }
   object Glyph {
     
@@ -364,20 +303,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait GlyphPosition extends StObject {
     
     /** The amount to move the virtual pen in the X direction after rendering this glyph. */
-    var xAdvance: Double = js.native
+    var xAdvance: Double
     
     /** The offset from the pen position in the X direction at which to render this glyph. */
-    var xOffset: Double = js.native
+    var xOffset: Double
     
     /** The amount to move the virtual pen in the Y direction after rendering this glyph. */
-    var yAdvance: Double = js.native
+    var yAdvance: Double
     
     /** The offset from the pen position in the Y direction at which to render this glyph. */
-    var yOffset: Double = js.native
+    var yOffset: Double
   }
   object GlyphPosition {
     
@@ -404,56 +342,55 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait GlyphRun extends StObject {
     
     /**
       * The total advance height of the run.
       */
-    var advanceHeight: Double = js.native
+    var advanceHeight: Double
     
     /**
       * The total advance width of the run.
       */
-    var advanceWidth: Double = js.native
+    var advanceWidth: Double
     
     /**
       * The bounding box containing all glyphs in the run.
       */
-    var bbox: BBOX = js.native
+    var bbox: BBOX
     
     /**
       * The direction requested for shaping, as passed in (either ltr or rtl).
       * If `null`, the default direction of the script is used.
       */
-    var direction: String = js.native
+    var direction: String
     
     /**
       * The features requested during shaping. This is a combination of user
       * specified features and features chosen by the shaper.
       */
-    var features: Record[String, Boolean] = js.native
+    var features: Record[String, Boolean]
     
     /**
       * An array of Glyph objects in the run
       */
-    var glyphs: js.Array[Glyph] = js.native
+    var glyphs: js.Array[Glyph]
     
     /**
       * The language requested for shaping, as passed in. If `null`, the default language for the
       * script was used.
       */
-    var language: String = js.native
+    var language: String
     
     /**
       * An array of GlyphPosition objects for each glyph in the run
       */
-    var positions: js.Array[GlyphPosition] = js.native
+    var positions: js.Array[GlyphPosition]
     
     /**
       * The script that was requested for shaping. This was either passed in or detected automatically.
       */
-    var script: String = js.native
+    var script: String
   }
   object GlyphRun {
     
@@ -553,12 +490,11 @@ object mod extends Shortcut {
     def translate(x: Double, y: Double): this.type = js.native
   }
   
-  @js.native
   trait PathCommand extends StObject {
     
-    var args: js.Array[Double] = js.native
+    var args: js.Array[Double]
     
-    var command: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath = js.native
+    var command: moveTo | lineTo | quadraticCurveTo | bezierCurveTo | closePath
   }
   object PathCommand {
     

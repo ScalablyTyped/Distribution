@@ -3,23 +3,21 @@ package typings.slugify
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var lower: js.UndefOr[Boolean] = js.native
+    var lower: js.UndefOr[Boolean] = js.undefined
     
-    var remove: js.UndefOr[RegExp] = js.native
+    var remove: js.UndefOr[RegExp] = js.undefined
     
-    var replacement: js.UndefOr[String] = js.native
+    var replacement: js.UndefOr[String] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Locale {
     

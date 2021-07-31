@@ -3,23 +3,21 @@ package typings.rcTable.anon
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnScroll extends StObject {
   
-  def onScroll(info: CurrentTargetScrollLeft): Unit = js.native
+  def onScroll(info: CurrentTargetScrollLeft): Unit
   
-  var ref: Ref[ScrollLeft] = js.native
+  var ref: Ref[ScrollLeft]
   
-  var scrollbarSize: Double = js.native
+  var scrollbarSize: Double
 }
 object OnScroll {
   
   @scala.inline
   def apply(onScroll: CurrentTargetScrollLeft => Unit, scrollbarSize: Double): OnScroll = {
-    val __obj = js.Dynamic.literal(onScroll = js.Any.fromFunction1(onScroll), scrollbarSize = scrollbarSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onScroll = js.Any.fromFunction1(onScroll), scrollbarSize = scrollbarSize.asInstanceOf[js.Any], ref = null)
     __obj.asInstanceOf[OnScroll]
   }
   

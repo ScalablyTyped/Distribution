@@ -2,17 +2,15 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppAppArgs extends StObject {
   
-  var app: String = js.native
+  var app: String
   
-  var appArgs: js.UndefOr[String] = js.native
+  var appArgs: js.UndefOr[String] = js.undefined
   
-  var channelId: String = js.native
+  var channelId: String
 }
 object AppAppArgs {
   

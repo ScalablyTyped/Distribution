@@ -3,101 +3,99 @@ package typings.microsoftGraph.mod.CallRecords
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceInfo extends StObject {
   
   // Name of the capture device driver used by the media endpoint.
-  var captureDeviceDriver: js.UndefOr[NullableOption[String]] = js.native
+  var captureDeviceDriver: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the capture device used by the media endpoint.
-  var captureDeviceName: js.UndefOr[NullableOption[String]] = js.native
+  var captureDeviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Fraction of the call that the media endpoint detected the capture device was not working properly.
-  var captureNotFunctioningEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var captureNotFunctioningEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Fraction of the call that the media endpoint detected the CPU resources available were insufficient and caused poor
     * quality of the audio sent and received.
     */
-  var cpuInsufficentEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var cpuInsufficentEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Fraction of the call that the media endpoint detected clipping in the captured audio that caused poor quality of the
     * audio being sent.
     */
-  var deviceClippingEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var deviceClippingEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Fraction of the call that the media endpoint detected glitches or gaps in the audio played or captured that caused poor
     * quality of the audio being sent or received.
     */
-  var deviceGlitchEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var deviceGlitchEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of times during the call that the media endpoint detected howling or screeching audio.
-  var howlingEventCount: js.UndefOr[NullableOption[Double]] = js.native
+  var howlingEventCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The root mean square (RMS) of the incoming signal of up to the first 30 seconds of the call.
-  var initialSignalLevelRootMeanSquare: js.UndefOr[NullableOption[Double]] = js.native
+  var initialSignalLevelRootMeanSquare: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Fraction of the call that the media endpoint detected low speech level that caused poor quality of the audio being
     * sent.
     */
-  var lowSpeechLevelEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var lowSpeechLevelEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Fraction of the call that the media endpoint detected low speech to noise level that caused poor quality of the audio
     * being sent.
     */
-  var lowSpeechToNoiseEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var lowSpeechToNoiseEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Glitches per 5 minute interval for the media endpoint's microphone.
-  var micGlitchRate: js.UndefOr[NullableOption[Double]] = js.native
+  var micGlitchRate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Average energy level of received audio for audio classified as mono noise or left channel of stereo noise by the media
     * endpoint.
     */
-  var receivedNoiseLevel: js.UndefOr[NullableOption[Double]] = js.native
+  var receivedNoiseLevel: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Average energy level of received audio for audio classified as mono speech, or left channel of stereo speech by the
     * media endpoint.
     */
-  var receivedSignalLevel: js.UndefOr[NullableOption[Double]] = js.native
+  var receivedSignalLevel: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Name of the render device driver used by the media endpoint.
-  var renderDeviceDriver: js.UndefOr[NullableOption[String]] = js.native
+  var renderDeviceDriver: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Name of the render device used by the media endpoint.
-  var renderDeviceName: js.UndefOr[NullableOption[String]] = js.native
+  var renderDeviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Fraction of the call that media endpoint detected device render is muted.
-  var renderMuteEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var renderMuteEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Fraction of the call that the media endpoint detected the render device was not working properly.
-  var renderNotFunctioningEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var renderNotFunctioningEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Fraction of the call that media endpoint detected device render volume is set to 0.
-  var renderZeroVolumeEventRatio: js.UndefOr[NullableOption[Double]] = js.native
+  var renderZeroVolumeEventRatio: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Average energy level of sent audio for audio classified as mono noise or left channel of stereo noise by the media
     * endpoint.
     */
-  var sentNoiseLevel: js.UndefOr[NullableOption[Double]] = js.native
+  var sentNoiseLevel: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Average energy level of sent audio for audio classified as mono speech, or left channel of stereo speech by the media
     * endpoint.
     */
-  var sentSignalLevel: js.UndefOr[NullableOption[Double]] = js.native
+  var sentSignalLevel: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Glitches per 5 minute internal for the media endpoint's loudspeaker.
-  var speakerGlitchRate: js.UndefOr[NullableOption[Double]] = js.native
+  var speakerGlitchRate: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object DeviceInfo {
   

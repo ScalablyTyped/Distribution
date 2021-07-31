@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsInput extends StObject {
   
   /**
     * The ID of the pipeline.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
   
   /**
     * The tags to add, as key/value pairs.
     */
-  var tags: tagList = js.native
+  var tags: tagList
 }
 object AddTagsInput {
   

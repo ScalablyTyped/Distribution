@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceManagementWebpropertyuserlinksUpdate extends StandardParameters {
+trait ParamsResourceManagementWebpropertyuserlinksUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Account ID to update the account-user link for.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Link ID to update the account-user link for.
     */
-  var linkId: js.UndefOr[String] = js.native
+  var linkId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaEntityUserLink] = js.native
+  var requestBody: js.UndefOr[SchemaEntityUserLink] = js.undefined
   
   /**
     * Web property ID to update the account-user link for.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceManagementWebpropertyuserlinksUpdate {
   

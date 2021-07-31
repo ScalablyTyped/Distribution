@@ -4,51 +4,44 @@ import typings.jsonpack.anon.Floats
 import typings.jsonpack.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsonpack", "pack")
+  @JSImport("jsonpack", JSImport.Namespace)
   @js.native
-  def pack(json: String): DebugObject = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack(json: String, options: PackDebugOptions): DebugObject = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack(json: String, options: PackOptions): String = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack(json: js.Object): DebugObject = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack(json: js.Object, options: PackDebugOptions): DebugObject = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack(json: js.Object, options: PackOptions): String = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack_String(json: String): String = js.native
-  @JSImport("jsonpack", "pack")
-  @js.native
-  def pack_String(json: js.Object): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsonpack", "unpack")
-  @js.native
-  def unpack[T](packed: String): T = js.native
-  @JSImport("jsonpack", "unpack")
-  @js.native
-  def unpack[T](packed: String, options: PackOptions): T = js.native
+  @scala.inline
+  def pack(json: String): DebugObject = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any]).asInstanceOf[DebugObject]
+  @scala.inline
+  def pack(json: String, options: PackDebugOptions): DebugObject = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebugObject]
+  @scala.inline
+  def pack(json: String, options: PackOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def pack(json: js.Object): DebugObject = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any]).asInstanceOf[DebugObject]
+  @scala.inline
+  def pack(json: js.Object, options: PackDebugOptions): DebugObject = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DebugObject]
+  @scala.inline
+  def pack(json: js.Object, options: PackOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def pack_String(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def pack_String(json: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def unpack[T](packed: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(packed.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def unpack[T](packed: String, options: PackOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(packed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   trait DebugObject extends StObject {
     
-    var ast: js.Array[Index] = js.native
+    var ast: js.Array[Index]
     
-    var dictionary: Floats = js.native
+    var dictionary: Floats
     
-    var packed: String = js.native
+    var packed: String
   }
   object DebugObject {
     
@@ -75,10 +68,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait PackDebugOptions extends PackOptions {
+  trait PackDebugOptions
+    extends StObject
+       with PackOptions {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
   }
   object PackDebugOptions {
     
@@ -99,10 +93,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PackOptions extends StObject {
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PackOptions {
     

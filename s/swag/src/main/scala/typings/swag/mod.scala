@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.swag.anon.TypeofHandlebars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,10 +12,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : SwagStatic = js.native
   
-  @js.native
   trait SwagStatic extends StObject {
     
-    def registerHelpers(handlebars: TypeofHandlebars): Unit = js.native
+    def registerHelpers(handlebars: TypeofHandlebars): Unit
   }
   object SwagStatic {
     

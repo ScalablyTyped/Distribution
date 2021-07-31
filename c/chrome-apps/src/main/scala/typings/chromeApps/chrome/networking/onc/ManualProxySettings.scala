@@ -2,23 +2,21 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManualProxySettings[M, P] extends StObject {
   
   /** Settings for FTP proxy. */
-  var FTPProxy: js.UndefOr[P] = js.native
+  var FTPProxy: js.UndefOr[P] = js.undefined
   
   /** Settings for HTTP proxy. */
-  var HTTPProxy: js.UndefOr[P] = js.native
+  var HTTPProxy: js.UndefOr[P] = js.undefined
   
   /** Settings for SOCKS proxy. */
-  var SOCKS: js.UndefOr[P] = js.native
+  var SOCKS: js.UndefOr[P] = js.undefined
   
   /** Settings for secure HTTP proxy. */
-  var SecureHTTPProxy: js.UndefOr[P] = js.native
+  var SecureHTTPProxy: js.UndefOr[P] = js.undefined
 }
 object ManualProxySettings {
   
@@ -29,7 +27,7 @@ object ManualProxySettings {
   }
   
   @scala.inline
-  implicit class ManualProxySettingsMutableBuilder[Self <: ManualProxySettings[_, _], M, P] (val x: Self with (ManualProxySettings[M, P])) extends AnyVal {
+  implicit class ManualProxySettingsMutableBuilder[Self <: ManualProxySettings[?, ?], M, P] (val x: Self & (ManualProxySettings[M, P])) extends AnyVal {
     
     @scala.inline
     def setFTPProxy(value: P): Self = StObject.set(x, "FTPProxy", value.asInstanceOf[js.Any])

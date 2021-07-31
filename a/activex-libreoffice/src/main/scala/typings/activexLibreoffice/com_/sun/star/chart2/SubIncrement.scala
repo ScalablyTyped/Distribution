@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubIncrement extends StObject {
   
   /** should contain nothing for **auto** , or an integer value for an explicit interval count. */
-  var IntervalCount: js.Any = js.native
+  var IntervalCount: js.Any
   
   /** should contain nothing for **auto** , or a boolean value for an explicit setting. */
-  var PostEquidistant: js.Any = js.native
+  var PostEquidistant: js.Any
 }
 object SubIncrement {
   

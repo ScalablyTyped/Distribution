@@ -91,190 +91,188 @@ import typings.storybookUi.storybookUiStrings.vertical
 import typings.storybookUi.storybookUiStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  theme :@storybook/theming.@storybook/theming.Theme | undefined,   children :react.react.ReactNode | undefined} & @storybook/ui.@storybook/ui/dist/components/sidebar/Heading.HeadingProps & react.react.ClassAttributes<std.HTMLDivElement> & react.react.HTMLAttributes<std.HTMLDivElement> & std.Pick<std.Pick<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'hidden' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'translate' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'color' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css'>, 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'hidden' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'translate' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'color' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css'> */
-@js.native
 trait themeThemeundefinedchildr extends StObject {
   
   // RDFa Attributes
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
   // Standard HTML Attributes
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
-  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
-  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
-  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
     * @see aria-pressed @see aria-selected.
     */
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
   /**
     * Defines the total number of columns in a table, grid, or treegrid.
     * @see aria-colindex.
     */
-  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
     * @see aria-colcount @see aria-colspan.
     */
-  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-colindex @see aria-rowspan.
     */
-  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies the element (or elements) whose contents or presence are controlled by the current element.
     * @see aria-owns.
     */
-  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.undefined
   
   /** Indicates the element that represents the current item within a container or set of related elements. */
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
   
   /**
     * Identifies the element (or elements) that describes the object.
     * @see aria-labelledby
     */
-  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the element that provides a detailed, extended description for the object.
     * @see aria-describedby.
     */
-  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
     * @see aria-hidden @see aria-readonly.
     */
-  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates what functions can be performed when a dragged object is released on the drop target.
     * @deprecated in ARIA 1.1
     */
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
   /**
     * Identifies the element that provides an error message for the object.
     * @see aria-invalid @see aria-describedby.
     */
-  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
   /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
-  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
     * allows assistive technology to override the general default of reading in document source order.
     */
-  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates an element's "grabbed" state in a drag-and-drop operation.
     * @deprecated in ARIA 1.1
     */
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
   /**
     * Indicates whether the element is exposed to an accessibility API.
     * @see aria-disabled.
     */
-  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the entered value does not conform to the format expected by the application.
     * @see aria-errormessage.
     */
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
   /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines a string value that labels the current element.
     * @see aria-labelledby.
     */
-  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the element (or elements) that labels the current element.
     * @see aria-describedby.
     */
-  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.undefined
   
   /** Defines the hierarchical level of an element within a structure. */
-  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.undefined
   
   /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
   /** Indicates whether an element is modal when displayed. */
-  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates whether a text box accepts multiple lines of input or only a single line. */
-  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates that the user may select more than one item from the current selectable descendants. */
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
     * between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
     * @see aria-controls.
     */
-  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
     * A hint could be a sample value or a brief description of the expected format.
     */
-  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
     * @see aria-setsize.
     */
-  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the current "pressed" state of toggle buttons.
     * @see aria-checked @see aria-selected.
     */
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
   /**
     * Indicates that the element is not editable, but is otherwise operable.
     * @see aria-disabled.
     */
-  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
@@ -282,511 +280,511 @@ trait themeThemeundefinedchildr extends StObject {
     */
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-  ] = js.native
+  ] = js.undefined
   
   /** Indicates that user input is required on the element before a form may be submitted. */
-  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.undefined
   
   /** Defines a human-readable, author-localized description for the role of an element. */
-  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the total number of rows in a table, grid, or treegrid.
     * @see aria-rowindex.
     */
-  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
     * @see aria-rowcount @see aria-rowspan.
     */
-  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
     * @see aria-rowindex @see aria-colspan.
     */
-  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the current "selected" state of various widgets.
     * @see aria-checked @see aria-pressed.
     */
-  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
     * @see aria-posinset.
     */
-  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
   /** Indicates if items in a table or grid are sorted in ascending or descending order. */
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
   
   /** Defines the maximum allowed value for a range widget. */
-  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
   /** Defines the minimum allowed value for a range widget. */
-  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the current value for a range widget.
     * @see aria-valuetext.
     */
-  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
   
   /** Defines the human readable text alternative of aria-valuenow for a range widget. */
-  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.undefined
   
   // Non-standard Attributes
-  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.undefined
   
-  var autoCorrect: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.undefined
   
-  var autoSave: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
-  var contextMenu: js.UndefOr[String] = js.native
+  var contextMenu: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
   // React-specific Attributes
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Booleanish] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.native
+  var inlist: js.UndefOr[js.Any] = js.undefined
   
   // Living Standard
   /**
     * Hints at the type of data that might be entered by the user while editing the element or its contents
     * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
     */
-  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
   /**
     * Specify that a standard HTML element should behave like a defined custom built-in element
     * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
     */
-  var is: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.undefined
   
-  var itemID: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.undefined
   
-  var itemProp: js.UndefOr[String] = js.native
+  var itemProp: js.UndefOr[String] = js.undefined
   
-  var itemRef: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.undefined
   
-  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.undefined
   
-  var itemType: js.UndefOr[String] = js.native
+  var itemType: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[typings.react.mod.Key | Null] = js.native
+  var key: js.UndefOr[typings.react.mod.Key | Null] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var menu: MenuList = js.native
+  var menu: MenuList
   
-  var menuHighlighted: js.UndefOr[Boolean] = js.native
+  var menuHighlighted: js.UndefOr[Boolean] = js.undefined
   
   // Media Events
-  var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onAbortCapture: js.UndefOr[js.Any] = js.native
+  var onAbortCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   
-  var onAnimationEndCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Any] = js.undefined
   
   // Animation Events
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   
-  var onAnimationStartCapture: js.UndefOr[js.Any] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Any] = js.undefined
   
   // MouseEvents
-  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[js.Any] = js.native
+  var onAuxClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onBeforeInputCapture: js.UndefOr[js.Any] = js.native
+  var onBeforeInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[js.Any] = js.native
+  var onBlurCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCanPlayCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.native
+  var onCanPlayThroughCapture: js.UndefOr[js.Any] = js.undefined
   
   // Form Events
-  var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onChangeCapture: js.UndefOr[js.Any] = js.native
+  var onChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onClickCapture: js.UndefOr[js.Any] = js.native
+  var onClickCapture: js.UndefOr[js.Any] = js.undefined
   
   // Composition Events
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCompositionEndCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[js.Any] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Any] = js.undefined
   
   // Clipboard Events
-  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCopyCapture: js.UndefOr[js.Any] = js.native
+  var onCopyCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onCutCapture: js.UndefOr[js.Any] = js.native
+  var onCutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDoubleClickCapture: js.UndefOr[js.Any] = js.native
+  var onDoubleClickCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragCapture: js.UndefOr[js.Any] = js.native
+  var onDragCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragEndCapture: js.UndefOr[js.Any] = js.native
+  var onDragEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[js.Any] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragExitCapture: js.UndefOr[js.Any] = js.native
+  var onDragExitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragOverCapture: js.UndefOr[js.Any] = js.native
+  var onDragOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[js.Any] = js.native
+  var onDragStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDropCapture: js.UndefOr[js.Any] = js.native
+  var onDropCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[js.Any] = js.native
+  var onDurationChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onEmptiedCapture: js.UndefOr[js.Any] = js.native
+  var onEmptiedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[js.Any] = js.native
+  var onEncryptedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onEndedCapture: js.UndefOr[js.Any] = js.native
+  var onEndedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[js.Any] = js.native
+  var onErrorCapture: js.UndefOr[js.Any] = js.undefined
   
   // Focus Events
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   
-  var onFocusCapture: js.UndefOr[js.Any] = js.native
+  var onFocusCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onInputCapture: js.UndefOr[js.Any] = js.native
+  var onInputCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onInvalidCapture: js.UndefOr[js.Any] = js.native
+  var onInvalidCapture: js.UndefOr[js.Any] = js.undefined
   
   // also a Media Event
   // Keyboard Events
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[js.Any] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onKeyPressCapture: js.UndefOr[js.Any] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[js.Any] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Any] = js.undefined
   
   // Image Events
-  var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onLoadCapture: js.UndefOr[js.Any] = js.native
+  var onLoadCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[js.Any] = js.native
+  var onLoadStartCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onLoadedDataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedDataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.native
+  var onLoadedMetadataCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseDownCapture: js.UndefOr[js.Any] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[js.Any] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseOutCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[js.Any] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMouseUpCapture: js.UndefOr[js.Any] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[js.Any] = js.native
+  var onPasteCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPauseCapture: js.UndefOr[js.Any] = js.native
+  var onPauseCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPlayCapture: js.UndefOr[js.Any] = js.native
+  var onPlayCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPlayingCapture: js.UndefOr[js.Any] = js.native
+  var onPlayingCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[js.Any] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Any] = js.undefined
   
   // Pointer Events
-  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerDownCapture: js.UndefOr[js.Any] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[js.Any] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[js.Any] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerOutCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[js.Any] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPointerUpCapture: js.UndefOr[js.Any] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onProgressCapture: js.UndefOr[js.Any] = js.native
+  var onProgressCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onRateChangeCapture: js.UndefOr[js.Any] = js.native
+  var onRateChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onResetCapture: js.UndefOr[js.Any] = js.native
+  var onResetCapture: js.UndefOr[js.Any] = js.undefined
   
   // UI Events
-  var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   
-  var onScrollCapture: js.UndefOr[js.Any] = js.native
+  var onScrollCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[js.Any] = js.native
+  var onSeekedCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onSeekingCapture: js.UndefOr[js.Any] = js.native
+  var onSeekingCapture: js.UndefOr[js.Any] = js.undefined
   
   // Selection Events
-  var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onSelectCapture: js.UndefOr[js.Any] = js.native
+  var onSelectCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onStalledCapture: js.UndefOr[js.Any] = js.native
+  var onStalledCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[js.Any] = js.native
+  var onSubmitCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onSuspendCapture: js.UndefOr[js.Any] = js.native
+  var onSuspendCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.native
+  var onTimeUpdateCapture: js.UndefOr[js.Any] = js.undefined
   
   // Touch Events
-  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   
-  var onTouchCancelCapture: js.UndefOr[js.Any] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Any] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   
-  var onTouchMoveCapture: js.UndefOr[js.Any] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[js.Any] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Any] = js.undefined
   
   // Transition Events
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
   
-  var onTransitionEndCapture: js.UndefOr[js.Any] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.native
+  var onVolumeChangeCapture: js.UndefOr[js.Any] = js.undefined
   
-  var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[js.Any] = js.native
+  var onWaitingCapture: js.UndefOr[js.Any] = js.undefined
   
   // Wheel Events
-  var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   
-  var onWheelCapture: js.UndefOr[js.Any] = js.native
+  var onWheelCapture: js.UndefOr[js.Any] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   // Unknown
-  var radioGroup: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.native
+  var ref: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
   
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var security: js.UndefOr[String] = js.native
+  var security: js.UndefOr[String] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
-  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[Theme] = js.native
+  var theme: js.UndefOr[Theme] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var translate: js.UndefOr[yes | no] = js.native
+  var translate: js.UndefOr[yes | no] = js.undefined
   
-  var typeof: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[on | off] = js.native
+  var unselectable: js.UndefOr[on | off] = js.undefined
   
-  var vocab: js.UndefOr[String] = js.native
+  var vocab: js.UndefOr[String] = js.undefined
 }
 object themeThemeundefinedchildr {
   

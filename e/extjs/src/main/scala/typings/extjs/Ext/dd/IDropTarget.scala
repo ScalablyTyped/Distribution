@@ -3,20 +3,20 @@ package typings.extjs.Ext.dd
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDropTarget extends IDDTarget {
+trait IDropTarget
+  extends StObject
+     with IDDTarget {
   
   /** [Config Option] (String) */
-  var ddGroup: js.UndefOr[String] = js.native
+  var ddGroup: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var dropAllowed: js.UndefOr[String] = js.native
+  var dropAllowed: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var dropNotAllowed: js.UndefOr[String] = js.native
+  var dropNotAllowed: js.UndefOr[String] = js.undefined
   
   /** [Method] The function a Ext dd DragSource calls once to notify this drop target that the dragged item has been dropped on it
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop target
@@ -31,7 +31,7 @@ trait IDropTarget extends IDDTarget {
       /* data */ js.UndefOr[js.Any], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] The function a Ext dd DragSource calls once to notify this drop target that the source is now over the target
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop target
@@ -46,7 +46,7 @@ trait IDropTarget extends IDDTarget {
       /* data */ js.UndefOr[js.Any], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] The function a Ext dd DragSource calls once to notify this drop target that the source has been dragged out of the ta
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop target
@@ -60,7 +60,7 @@ trait IDropTarget extends IDDTarget {
       /* data */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] The function a Ext dd DragSource calls continuously while it is being dragged over the target
     * @param source Ext.dd.DragSource The drag source that was dragged over this drop target
@@ -75,10 +75,10 @@ trait IDropTarget extends IDDTarget {
       /* data */ js.UndefOr[js.Any], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var overClass: js.UndefOr[String] = js.native
+  var overClass: js.UndefOr[String] = js.undefined
 }
 object IDropTarget {
   

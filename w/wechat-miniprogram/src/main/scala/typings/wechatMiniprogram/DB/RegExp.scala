@@ -2,15 +2,13 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExp extends StObject {
   
-  val options: String = js.native
+  val options: String
   
-  val regexp: String = js.native
+  val regexp: String
 }
 object RegExp {
   

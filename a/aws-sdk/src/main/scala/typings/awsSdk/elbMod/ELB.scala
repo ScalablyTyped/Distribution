@@ -10,7 +10,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -58,7 +57,7 @@ trait ELB extends Service {
   ): Request[AttachLoadBalancerToSubnetsOutput, AWSError] = js.native
   
   @JSName("config")
-  var config_ELB: ConfigBase with ClientConfiguration = js.native
+  var config_ELB: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Specifies the health check settings to use when evaluating the health state of your EC2 instances. For more information, see Configure Health Checks for Your Load Balancer in the Classic Load Balancers Guide.

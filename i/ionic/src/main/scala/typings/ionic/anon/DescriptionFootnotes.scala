@@ -2,19 +2,17 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescriptionFootnotes extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var footnotes: js.Array[Url] = js.native
+  var footnotes: js.Array[Url]
   
-  var name: String = js.native
+  var name: String
   
-  var summary: String = js.native
+  var summary: String
 }
 object DescriptionFootnotes {
   

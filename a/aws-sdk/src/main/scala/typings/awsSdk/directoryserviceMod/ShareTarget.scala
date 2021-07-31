@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareTarget extends StObject {
   
   /**
     * Identifier of the directory consumer account.
     */
-  var Id: TargetId = js.native
+  var Id: TargetId
   
   /**
     * Type of identifier to be used in the Id field.
     */
-  var Type: TargetType = js.native
+  var Type: TargetType
 }
 object ShareTarget {
   

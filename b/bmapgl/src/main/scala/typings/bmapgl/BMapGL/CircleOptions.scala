@@ -2,29 +2,27 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleOptions extends StObject {
   
-  var enableClicking: js.UndefOr[Boolean] = js.native
+  var enableClicking: js.UndefOr[Boolean] = js.undefined
   
-  var enableEditing: js.UndefOr[Boolean] = js.native
+  var enableEditing: js.UndefOr[Boolean] = js.undefined
   
-  var enableMassClear: js.UndefOr[Boolean] = js.native
+  var enableMassClear: js.UndefOr[Boolean] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeStyle: js.UndefOr[String] = js.native
+  var strokeStyle: js.UndefOr[String] = js.undefined
   
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
 }
 object CircleOptions {
   

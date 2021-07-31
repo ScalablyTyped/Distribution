@@ -2,77 +2,75 @@ package typings.instagramPrivateApi.tagFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFeedResponseRankedItemsItem extends StObject {
   
-  var can_view_more_preview_comments: js.UndefOr[Boolean] = js.native
+  var can_view_more_preview_comments: js.UndefOr[Boolean] = js.undefined
   
-  var can_viewer_reshare: Boolean = js.native
+  var can_viewer_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: TagFeedResponseCaption = js.native
+  var caption: TagFeedResponseCaption
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var comment_count: js.UndefOr[Double] = js.native
+  var comment_count: js.UndefOr[Double] = js.undefined
   
-  var comment_likes_enabled: js.UndefOr[Boolean] = js.native
+  var comment_likes_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var comment_threading_enabled: js.UndefOr[Boolean] = js.native
+  var comment_threading_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var comments_disabled: js.UndefOr[Boolean] = js.native
+  var comments_disabled: js.UndefOr[Boolean] = js.undefined
   
-  var device_timestamp: String | Double = js.native
+  var device_timestamp: String | Double
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_liked: Boolean = js.native
+  var has_liked: Boolean
   
-  var has_more_comments: js.UndefOr[Boolean] = js.native
+  var has_more_comments: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: TagFeedResponseImageVersions2 = js.native
+  var image_versions2: TagFeedResponseImageVersions2
   
-  var lat: js.UndefOr[Double | String] = js.native
+  var lat: js.UndefOr[Double | String] = js.undefined
   
-  var like_count: Double = js.native
+  var like_count: Double
   
-  var lng: js.UndefOr[Double | String] = js.native
+  var lng: js.UndefOr[Double | String] = js.undefined
   
-  var location: js.UndefOr[TagFeedResponseLocation] = js.native
+  var location: js.UndefOr[TagFeedResponseLocation] = js.undefined
   
-  var max_num_visible_preview_comments: js.UndefOr[Double] = js.native
+  var max_num_visible_preview_comments: js.UndefOr[Double] = js.undefined
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var next_max_id: js.UndefOr[String] = js.native
+  var next_max_id: js.UndefOr[String] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var preview_comments: js.UndefOr[js.Array[TagFeedResponsePreviewCommentsItem]] = js.native
+  var preview_comments: js.UndefOr[js.Array[TagFeedResponsePreviewCommentsItem]] = js.undefined
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var user: TagFeedResponseUser = js.native
+  var user: TagFeedResponseUser
   
-  var usertags: js.UndefOr[TagFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[TagFeedResponseUsertags] = js.undefined
 }
 object TagFeedResponseRankedItemsItem {
   

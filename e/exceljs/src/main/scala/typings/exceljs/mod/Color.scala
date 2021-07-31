@@ -2,21 +2,19 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
   /**
   	 * Hex string for alpha-red-green-blue e.g. FF00FF00
   	 */
-  var argb: String = js.native
+  var argb: String
   
   /**
   	 * Choose a theme by index
   	 */
-  var theme: Double = js.native
+  var theme: Double
 }
 object Color {
   

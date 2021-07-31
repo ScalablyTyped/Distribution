@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEventTrackerRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that receives the event data.
     */
-  var datasetGroupArn: Arn = js.native
+  var datasetGroupArn: Arn
   
   /**
     * The name for the event tracker.
     */
-  var name: Name = js.native
+  var name: Name
 }
 object CreateEventTrackerRequest {
   

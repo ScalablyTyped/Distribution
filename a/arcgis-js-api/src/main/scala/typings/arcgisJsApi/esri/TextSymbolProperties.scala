@@ -10,123 +10,123 @@ import typings.arcgisJsApi.arcgisJsApiStrings.right
 import typings.arcgisJsApi.arcgisJsApiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextSymbolProperties extends SymbolProperties {
+trait TextSymbolProperties
+  extends StObject
+     with SymbolProperties {
   
   /**
     * The angle of the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#angle)
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * The background color of the label's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#backgroundColor)
     */
-  var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The border color of the label's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#borderLineColor)
     */
-  var borderLineColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var borderLineColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The border size or width of the label's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#borderLineSize)
     */
-  var borderLineSize: js.UndefOr[Double] = js.native
+  var borderLineSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#font)
     */
-  var font: js.UndefOr[FontProperties] = js.native
+  var font: js.UndefOr[FontProperties] = js.undefined
   
   /**
     * The color of the text symbol's halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#haloColor)
     */
-  var haloColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var haloColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The size in points of the text symbol's halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#haloSize)
     */
-  var haloSize: js.UndefOr[Double | String] = js.native
+  var haloSize: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Adjusts the horizontal alignment of the text in multi-lines.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
     */
-  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.native
+  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.undefined
   
   /**
     * Determines whether to adjust the spacing between characters in the text string.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#kerning)
     */
-  var kerning: js.UndefOr[Boolean] = js.native
+  var kerning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The height of the space between each line of text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineHeight)
     */
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum length in points for each line of text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineWidth)
     */
-  var lineWidth: js.UndefOr[Double | String] = js.native
+  var lineWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Determines whether every character in the text string is rotated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#rotated)
     */
-  var rotated: js.UndefOr[Boolean] = js.native
+  var rotated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text string to display in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#text)
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Adjusts the vertical alignment of the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#verticalAlignment)
     */
-  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.native
+  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.undefined
   
   /**
     * The offset on the x-axis in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#xoffset)
     */
-  var xoffset: js.UndefOr[Double | String] = js.native
+  var xoffset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The offset on the y-axis in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#yoffset)
     */
-  var yoffset: js.UndefOr[Double | String] = js.native
+  var yoffset: js.UndefOr[Double | String] = js.undefined
 }
 object TextSymbolProperties {
   

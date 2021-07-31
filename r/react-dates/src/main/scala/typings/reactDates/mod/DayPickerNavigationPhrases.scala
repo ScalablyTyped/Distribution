@@ -2,15 +2,13 @@ package typings.reactDates.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DayPickerNavigationPhrases extends StObject {
   
-  var jumpToNextMonth: js.UndefOr[String] = js.native
+  var jumpToNextMonth: js.UndefOr[String] = js.undefined
   
-  var jumpToPrevMonth: js.UndefOr[String] = js.native
+  var jumpToPrevMonth: js.UndefOr[String] = js.undefined
 }
 object DayPickerNavigationPhrases {
   

@@ -4,45 +4,43 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDateTimeFormatter extends StObject {
   
-  var calendar: String = js.native
+  var calendar: String
   
-  var clock: String = js.native
+  var clock: String
   
-  def format(value: Date): String = js.native
+  def format(value: Date): String
   
-  var geographicRegion: String = js.native
+  var geographicRegion: String
   
-  var includeDay: DayFormat = js.native
+  var includeDay: DayFormat
   
-  var includeDayOfWeek: DayOfWeekFormat = js.native
+  var includeDayOfWeek: DayOfWeekFormat
   
-  var includeHour: HourFormat = js.native
+  var includeHour: HourFormat
   
-  var includeMinute: MinuteFormat = js.native
+  var includeMinute: MinuteFormat
   
-  var includeMonth: MonthFormat = js.native
+  var includeMonth: MonthFormat
   
-  var includeSecond: SecondFormat = js.native
+  var includeSecond: SecondFormat
   
-  var includeYear: YearFormat = js.native
+  var includeYear: YearFormat
   
-  var languages: IVectorView[String] = js.native
+  var languages: IVectorView[String]
   
-  var numeralSystem: String = js.native
+  var numeralSystem: String
   
-  var patterns: IVectorView[String] = js.native
+  var patterns: IVectorView[String]
   
-  var resolvedGeographicRegion: String = js.native
+  var resolvedGeographicRegion: String
   
-  var resolvedLanguage: String = js.native
+  var resolvedLanguage: String
   
-  var template: String = js.native
+  var template: String
 }
 object IDateTimeFormatter {
   

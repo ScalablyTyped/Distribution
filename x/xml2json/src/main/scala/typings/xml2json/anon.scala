@@ -4,35 +4,33 @@ import typings.xml2json.xml2jsonBooleans.`false`
 import typings.xml2json.xml2jsonBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {  object :false | undefined} & xml2json.xml2json.JsonOptions */
-  @js.native
   trait objectfalseundefinedJsonO extends StObject {
     
     /**
       * Changes the default textNode property from $t to _t when option is set to true.
       * Alternatively a string can be specified which will override $t to what ever the string is.
       */
-    var alternateTextNode: js.UndefOr[Boolean | String] = js.native
+    var alternateTextNode: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * XML child nodes are always treated as arrays.
       * You can specify a selective array of nodes for this to apply to instead of the whole document.
       */
-    var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Makes type coercion.
       * i.e.: numbers and booleans present in attributes and element values are converted from string to its correspondent data types.
       * Coerce can be optionally defined as an object with specific methods of coercion based on attribute name or tag name, with fallback to default coercion.
       */
-    var coerce: js.UndefOr[Boolean] = js.native
+    var coerce: js.UndefOr[Boolean] = js.undefined
     
-    var `object`: js.UndefOr[`false`] = js.native
+    var `object`: js.UndefOr[`false`] = js.undefined
     
     /**
       * Returns a Javascript object instead of a JSON string.
@@ -42,7 +40,7 @@ object anon {
       * Makes the JSON reversible to XML.
       * xml2json tranforms CDATA content to JSON, but it doesn't generate a reversible structure.
       */
-    var reversible: js.UndefOr[Boolean] = js.native
+    var reversible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sanitizes the following characters present in element values (default true):
@@ -59,13 +57,13 @@ object anon {
       * };
       * @example
       */
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Removes leading and trailing whitespaces as well as line terminators in element values.
       * Defaults to true.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object objectfalseundefinedJsonO {
     
@@ -126,29 +124,28 @@ object anon {
   }
   
   /* Inlined {  object :true} & xml2json.xml2json.JsonOptions */
-  @js.native
   trait objecttrueJsonOptions extends StObject {
     
     /**
       * Changes the default textNode property from $t to _t when option is set to true.
       * Alternatively a string can be specified which will override $t to what ever the string is.
       */
-    var alternateTextNode: js.UndefOr[Boolean | String] = js.native
+    var alternateTextNode: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * XML child nodes are always treated as arrays.
       * You can specify a selective array of nodes for this to apply to instead of the whole document.
       */
-    var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var arrayNotation: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Makes type coercion.
       * i.e.: numbers and booleans present in attributes and element values are converted from string to its correspondent data types.
       * Coerce can be optionally defined as an object with specific methods of coercion based on attribute name or tag name, with fallback to default coercion.
       */
-    var coerce: js.UndefOr[Boolean] = js.native
+    var coerce: js.UndefOr[Boolean] = js.undefined
     
-    var `object`: `true` = js.native
+    var `object`: `true`
     
     /**
       * Returns a Javascript object instead of a JSON string.
@@ -158,7 +155,7 @@ object anon {
       * Makes the JSON reversible to XML.
       * xml2json tranforms CDATA content to JSON, but it doesn't generate a reversible structure.
       */
-    var reversible: js.UndefOr[Boolean] = js.native
+    var reversible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sanitizes the following characters present in element values (default true):
@@ -175,20 +172,20 @@ object anon {
       * };
       * @example
       */
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Removes leading and trailing whitespaces as well as line terminators in element values.
       * Defaults to true.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object objecttrueJsonOptions {
     
     @scala.inline
-    def apply(`object`: `true`): objecttrueJsonOptions = {
+    def apply(): objecttrueJsonOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")(true)
       __obj.asInstanceOf[objecttrueJsonOptions]
     }
     

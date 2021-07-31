@@ -2,21 +2,19 @@ package typings.awsSdk.applicationautoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScheduledActionsResponse extends StObject {
   
   /**
     * The token required to get the next set of results. This value is null if there are no more results to return.
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
   
   /**
     * Information about the scheduled actions.
     */
-  var ScheduledActions: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ScheduledActions] = js.native
+  var ScheduledActions: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ScheduledActions] = js.undefined
 }
 object DescribeScheduledActionsResponse {
   

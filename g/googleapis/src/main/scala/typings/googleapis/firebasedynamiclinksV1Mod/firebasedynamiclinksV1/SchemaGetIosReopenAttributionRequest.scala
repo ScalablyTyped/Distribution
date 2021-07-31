@@ -2,20 +2,18 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for iSDK to get reopen attribution for app universal link open
   * deeplinking. This endpoint is meant for only iOS requests.
   */
-@js.native
 trait SchemaGetIosReopenAttributionRequest extends StObject {
   
   /**
     * APP bundle ID.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * FDL link to be verified from an app universal link open. The FDL link can
@@ -23,13 +21,13 @@ trait SchemaGetIosReopenAttributionRequest extends StObject {
     * or 2) long FDL. e.g. &lt;app_code&gt;.page.link/?{query params}, or 3)
     * Invite FDL. e.g. &lt;app_code&gt;.page.link/i/&lt;invite_id_or_alias&gt;
     */
-  var requestedLink: js.UndefOr[String] = js.native
+  var requestedLink: js.UndefOr[String] = js.undefined
   
   /**
     * Google SDK version. Version takes the form
     * &quot;$major.$minor.$patch&quot;
     */
-  var sdkVersion: js.UndefOr[String] = js.native
+  var sdkVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaGetIosReopenAttributionRequest {
   

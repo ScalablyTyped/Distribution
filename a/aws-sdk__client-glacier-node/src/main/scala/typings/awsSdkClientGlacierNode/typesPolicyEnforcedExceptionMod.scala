@@ -3,22 +3,22 @@ package typings.awsSdkClientGlacierNode
 import typings.awsSdkClientGlacierNode.initiateJobExceptionsUnionMod.InitiateJobExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPolicyEnforcedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PolicyEnforcedExceptionDetails> * / any */ @js.native
-  trait PolicyEnforcedException extends InitiateJobExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PolicyEnforcedExceptionDetails> * / any */ trait PolicyEnforcedException
+    extends StObject
+       with InitiateJobExceptionsUnion {
     
-    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.PolicyEnforcedException = js.native
+    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.PolicyEnforcedException
   }
   object PolicyEnforcedException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.PolicyEnforcedException): PolicyEnforcedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PolicyEnforcedException = {
+      val __obj = js.Dynamic.literal(name = "PolicyEnforcedException")
       __obj.asInstanceOf[PolicyEnforcedException]
     }
     
@@ -30,23 +30,22 @@ object typesPolicyEnforcedExceptionMod {
     }
   }
   
-  @js.native
   trait PolicyEnforcedExceptionDetails extends StObject {
     
     /**
       * <p>PolicyEnforcedException</p>
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * <p>InitiateJob request denied by current data retrieval policy.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Client</p>
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PolicyEnforcedExceptionDetails {
     

@@ -3,13 +3,14 @@ package typings.daterangepicker
 import typings.daterangepicker.mod.DatepickerEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object daterangepickerStrings {
   
   @js.native
-  sealed trait applyDotdaterangepicker extends DatepickerEvents
+  sealed trait applyDotdaterangepicker
+    extends StObject
+       with DatepickerEvents
   @scala.inline
   def applyDotdaterangepicker: applyDotdaterangepicker = "apply.daterangepicker".asInstanceOf[applyDotdaterangepicker]
   
@@ -19,7 +20,9 @@ object daterangepickerStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait cancelDotdaterangepicker extends DatepickerEvents
+  sealed trait cancelDotdaterangepicker
+    extends StObject
+       with DatepickerEvents
   @scala.inline
   def cancelDotdaterangepicker: cancelDotdaterangepicker = "cancel.daterangepicker".asInstanceOf[cancelDotdaterangepicker]
   
@@ -39,12 +42,16 @@ object daterangepickerStrings {
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait hideCalendarDotdaterangepicker extends DatepickerEvents
+  sealed trait hideCalendarDotdaterangepicker
+    extends StObject
+       with DatepickerEvents
   @scala.inline
   def hideCalendarDotdaterangepicker: hideCalendarDotdaterangepicker = "hideCalendar.daterangepicker".asInstanceOf[hideCalendarDotdaterangepicker]
   
   @js.native
-  sealed trait hideDotdaterangepicker extends DatepickerEvents
+  sealed trait hideDotdaterangepicker
+    extends StObject
+       with DatepickerEvents
   @scala.inline
   def hideDotdaterangepicker: hideDotdaterangepicker = "hide.daterangepicker".asInstanceOf[hideDotdaterangepicker]
   
@@ -59,12 +66,16 @@ object daterangepickerStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait showCalendarDotdaterangepicker extends DatepickerEvents
+  sealed trait showCalendarDotdaterangepicker
+    extends StObject
+       with DatepickerEvents
   @scala.inline
   def showCalendarDotdaterangepicker: showCalendarDotdaterangepicker = "showCalendar.daterangepicker".asInstanceOf[showCalendarDotdaterangepicker]
   
   @js.native
-  sealed trait showDotdaterangepicker extends DatepickerEvents
+  sealed trait showDotdaterangepicker
+    extends StObject
+       with DatepickerEvents
   @scala.inline
   def showDotdaterangepicker: showDotdaterangepicker = "show.daterangepicker".asInstanceOf[showDotdaterangepicker]
   

@@ -3,7 +3,6 @@ package typings.quixote
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,15 +10,22 @@ object mod {
   @JSImport("quixote", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends typings.quixote.mod.Quixote
+    extends StObject
+       with typings.quixote.mod.Quixote {
+    
+    /* CompleteClass */
+    override def createFrame(
+      options: QuixoteFrameOptions,
+      callback: js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]
+    ): QFrame = js.native
+  }
   
-  @js.native
   trait Quixote extends StObject {
     
     def createFrame(
       options: QuixoteFrameOptions,
       callback: js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]
-    ): QFrame = js.native
+    ): QFrame
   }
   object Quixote {
     

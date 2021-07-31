@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestEntriesRequest
 import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestEntriesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeRequestEntriesResponse extends StObject {
   
-  var paramsType: js.Array[RequestEntriesRequest] = js.native
+  var paramsType: js.Array[RequestEntriesRequest]
   
-  var returnType: RequestEntriesResponse = js.native
+  var returnType: RequestEntriesResponse
 }
 object ReturnTypeRequestEntriesResponse {
   

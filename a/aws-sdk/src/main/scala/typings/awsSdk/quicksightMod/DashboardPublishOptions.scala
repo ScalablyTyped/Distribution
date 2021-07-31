@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashboardPublishOptions extends StObject {
   
   /**
     * Ad hoc (one-time) filtering option.
     */
-  var AdHocFilteringOption: js.UndefOr[typings.awsSdk.quicksightMod.AdHocFilteringOption] = js.native
+  var AdHocFilteringOption: js.UndefOr[typings.awsSdk.quicksightMod.AdHocFilteringOption] = js.undefined
   
   /**
     * Export to .csv option.
     */
-  var ExportToCSVOption: js.UndefOr[typings.awsSdk.quicksightMod.ExportToCSVOption] = js.native
+  var ExportToCSVOption: js.UndefOr[typings.awsSdk.quicksightMod.ExportToCSVOption] = js.undefined
   
   /**
     * Sheet controls option.
     */
-  var SheetControlsOption: js.UndefOr[typings.awsSdk.quicksightMod.SheetControlsOption] = js.native
+  var SheetControlsOption: js.UndefOr[typings.awsSdk.quicksightMod.SheetControlsOption] = js.undefined
 }
 object DashboardPublishOptions {
   

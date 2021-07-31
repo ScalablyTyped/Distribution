@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object AppCaptureHistoricalBufferLengthUnit extends StObject {
   
   /** Megabytes */
   @js.native
-  sealed trait megabytes extends AppCaptureHistoricalBufferLengthUnit
+  sealed trait megabytes
+    extends StObject
+       with AppCaptureHistoricalBufferLengthUnit
   
   /** Seconds */
   @js.native
-  sealed trait seconds extends AppCaptureHistoricalBufferLengthUnit
+  sealed trait seconds
+    extends StObject
+       with AppCaptureHistoricalBufferLengthUnit
 }

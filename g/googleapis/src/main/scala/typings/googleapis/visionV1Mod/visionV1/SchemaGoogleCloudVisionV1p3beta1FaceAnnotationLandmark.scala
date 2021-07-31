@@ -2,24 +2,22 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A face-specific landmark (for example, a face feature).
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p3beta1FaceAnnotationLandmark extends StObject {
   
   /**
     * Face landmark position.
     */
-  var position: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1Position] = js.native
+  var position: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1Position] = js.undefined
   
   /**
     * Face landmark type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p3beta1FaceAnnotationLandmark {
   

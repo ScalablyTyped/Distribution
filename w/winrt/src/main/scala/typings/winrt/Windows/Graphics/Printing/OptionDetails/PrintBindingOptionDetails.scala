@@ -3,17 +3,17 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintBindingOptionDetails extends IPrintItemListOptionDetails
+trait PrintBindingOptionDetails
+  extends StObject
+     with IPrintItemListOptionDetails
 object PrintBindingOptionDetails {
   
   @scala.inline
   def apply(
     errorText: String,
-    items: IVectorView[_],
+    items: IVectorView[js.Any],
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,

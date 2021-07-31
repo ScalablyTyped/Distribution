@@ -14,83 +14,112 @@ import typings.ionic.libProjectMod.ProjectDetailsErrorCode
 import typings.ionic.npmMod.PkgManagerCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicStrings {
   
   @js.native
-  sealed trait DELETE extends HttpMethod
+  sealed trait DELETE
+    extends StObject
+       with HttpMethod
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait ERR_INVALID_PROJECT_FILE extends ProjectDetailsErrorCode
+  sealed trait ERR_INVALID_PROJECT_FILE
+    extends StObject
+       with ProjectDetailsErrorCode
   @scala.inline
   def ERR_INVALID_PROJECT_FILE: ERR_INVALID_PROJECT_FILE = "ERR_INVALID_PROJECT_FILE".asInstanceOf[ERR_INVALID_PROJECT_FILE]
   
   @js.native
-  sealed trait ERR_INVALID_PROJECT_TYPE extends ProjectDetailsErrorCode
+  sealed trait ERR_INVALID_PROJECT_TYPE
+    extends StObject
+       with ProjectDetailsErrorCode
   @scala.inline
   def ERR_INVALID_PROJECT_TYPE: ERR_INVALID_PROJECT_TYPE = "ERR_INVALID_PROJECT_TYPE".asInstanceOf[ERR_INVALID_PROJECT_TYPE]
   
   @js.native
-  sealed trait ERR_MISSING_PROJECT_TYPE extends ProjectDetailsErrorCode
+  sealed trait ERR_MISSING_PROJECT_TYPE
+    extends StObject
+       with ProjectDetailsErrorCode
   @scala.inline
   def ERR_MISSING_PROJECT_TYPE: ERR_MISSING_PROJECT_TYPE = "ERR_MISSING_PROJECT_TYPE".asInstanceOf[ERR_MISSING_PROJECT_TYPE]
   
   @js.native
-  sealed trait ERR_MULTI_MISSING_CONFIG extends ProjectDetailsErrorCode
+  sealed trait ERR_MULTI_MISSING_CONFIG
+    extends StObject
+       with ProjectDetailsErrorCode
   @scala.inline
   def ERR_MULTI_MISSING_CONFIG: ERR_MULTI_MISSING_CONFIG = "ERR_MULTI_MISSING_CONFIG".asInstanceOf[ERR_MULTI_MISSING_CONFIG]
   
   @js.native
-  sealed trait ERR_MULTI_MISSING_ID extends ProjectDetailsErrorCode
+  sealed trait ERR_MULTI_MISSING_ID
+    extends StObject
+       with ProjectDetailsErrorCode
   @scala.inline
   def ERR_MULTI_MISSING_ID: ERR_MULTI_MISSING_ID = "ERR_MULTI_MISSING_ID".asInstanceOf[ERR_MULTI_MISSING_ID]
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait GET
+    extends StObject
+       with HttpMethod
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends HttpMethod
+  sealed trait HEAD
+    extends StObject
+       with HttpMethod
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait OPTIONS extends HttpMethod
+  sealed trait OPTIONS
+    extends StObject
+       with HttpMethod
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait PATCH extends HttpMethod
+  sealed trait PATCH
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends HttpMethod
+  sealed trait POST
+    extends StObject
+       with HttpMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PURGE extends HttpMethod
+  sealed trait PURGE
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PURGE: PURGE = "PURGE".asInstanceOf[PURGE]
   
   @js.native
-  sealed trait PUT extends HttpMethod
+  sealed trait PUT
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait android extends KnownPlatform
+  sealed trait android
+    extends StObject
+       with KnownPlatform
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait angular extends ProjectType
+  sealed trait angular
+    extends StObject
+       with ProjectType
   @scala.inline
   def angular: angular = "angular".asInstanceOf[angular]
   
@@ -100,43 +129,58 @@ object ionicStrings {
   def app: app = "app".asInstanceOf[app]
   
   @js.native
-  sealed trait bare extends ProjectType
+  sealed trait bare
+    extends StObject
+       with ProjectType
   @scala.inline
   def bare: bare = "bare".asInstanceOf[bare]
   
   @js.native
-  sealed trait bitbucket_cloud extends AssociationType
+  sealed trait bitbucket_cloud
+    extends StObject
+       with AssociationType
   @scala.inline
   def bitbucket_cloud: bitbucket_cloud = "bitbucket_cloud".asInstanceOf[bitbucket_cloud]
   
   @js.native
-  sealed trait bitbucket_server extends AssociationType
+  sealed trait bitbucket_server
+    extends StObject
+       with AssociationType
   @scala.inline
   def bitbucket_server: bitbucket_server = "bitbucket_server".asInstanceOf[bitbucket_server]
   
   @js.native
-  sealed trait browser extends KnownPlatform
+  sealed trait browser
+    extends StObject
+       with KnownPlatform
   @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait buildColonafter extends HookName
+  sealed trait buildColonafter
+    extends StObject
+       with HookName
   @scala.inline
   def buildColonafter: buildColonafter = "build:after".asInstanceOf[buildColonafter]
   
   @js.native
-  sealed trait buildColonbefore extends HookName
+  sealed trait buildColonbefore
+    extends StObject
+       with HookName
   @scala.inline
   def buildColonbefore: buildColonbefore = "build:before".asInstanceOf[buildColonbefore]
   
   @js.native
-  sealed trait canary extends DistTag
+  sealed trait canary
+    extends StObject
+       with DistTag
   @scala.inline
   def canary: canary = "canary".asInstanceOf[canary]
   
   @js.native
   sealed trait capacitor
-    extends InfoItemGroup
+    extends StObject
+       with InfoItemGroup
        with IntegrationName
   @scala.inline
   def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
@@ -148,18 +192,23 @@ object ionicStrings {
   
   @js.native
   sealed trait cordova
-    extends InfoItemGroup
+    extends StObject
+       with InfoItemGroup
        with IntegrationName
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   
   @js.native
-  sealed trait custom extends ProjectType
+  sealed trait custom
+    extends StObject
+       with ProjectType
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait dedupe extends PkgManagerCommand
+  sealed trait dedupe
+    extends StObject
+       with PkgManagerCommand
   @scala.inline
   def dedupe: dedupe = "dedupe".asInstanceOf[dedupe]
   
@@ -169,12 +218,16 @@ object ionicStrings {
   def development: development = "development".asInstanceOf[development]
   
   @js.native
-  sealed trait enterprise extends IntegrationName
+  sealed trait enterprise
+    extends StObject
+       with IntegrationName
   @scala.inline
   def enterprise: enterprise = "enterprise".asInstanceOf[enterprise]
   
   @js.native
-  sealed trait environment extends InfoItemGroup
+  sealed trait environment
+    extends StObject
+       with InfoItemGroup
   @scala.inline
   def environment: environment = "environment".asInstanceOf[environment]
   
@@ -184,7 +237,9 @@ object ionicStrings {
   def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait github extends AssociationType
+  sealed trait github
+    extends StObject
+       with AssociationType
   @scala.inline
   def github: github = "github".asInstanceOf[github]
   
@@ -194,37 +249,51 @@ object ionicStrings {
   def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait icon extends KnownResourceType
+  sealed trait icon
+    extends StObject
+       with KnownResourceType
   @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait info extends PkgManagerCommand
+  sealed trait info
+    extends StObject
+       with PkgManagerCommand
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait install extends PkgManagerCommand
+  sealed trait install
+    extends StObject
+       with PkgManagerCommand
   @scala.inline
   def install: install = "install".asInstanceOf[install]
   
   @js.native
-  sealed trait ionic extends InfoItemGroup
+  sealed trait ionic
+    extends StObject
+       with InfoItemGroup
   @scala.inline
   def ionic: ionic = "ionic".asInstanceOf[ionic]
   
   @js.native
-  sealed trait `ionic-angular` extends ProjectType
+  sealed trait `ionic-angular`
+    extends StObject
+       with ProjectType
   @scala.inline
   def `ionic-angular`: `ionic-angular` = "ionic-angular".asInstanceOf[`ionic-angular`]
   
   @js.native
-  sealed trait ionic1 extends ProjectType
+  sealed trait ionic1
+    extends StObject
+       with ProjectType
   @scala.inline
   def ionic1: ionic1 = "ionic1".asInstanceOf[ionic1]
   
   @js.native
-  sealed trait ios extends KnownPlatform
+  sealed trait ios
+    extends StObject
+       with KnownPlatform
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   
@@ -234,7 +303,9 @@ object ionicStrings {
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait latest extends DistTag
+  sealed trait latest
+    extends StObject
+       with DistTag
   @scala.inline
   def latest: latest = "latest".asInstanceOf[latest]
   
@@ -249,7 +320,9 @@ object ionicStrings {
   def multiapp: multiapp = "multiapp".asInstanceOf[multiapp]
   
   @js.native
-  sealed trait npm extends NpmClient
+  sealed trait npm
+    extends StObject
+       with NpmClient
   @scala.inline
   def npm: npm = "npm".asInstanceOf[npm]
   
@@ -269,7 +342,9 @@ object ionicStrings {
   def project: project = "project".asInstanceOf[project]
   
   @js.native
-  sealed trait react extends ProjectType
+  sealed trait react
+    extends StObject
+       with ProjectType
   @scala.inline
   def react: react = "react".asInstanceOf[react]
   
@@ -279,7 +354,9 @@ object ionicStrings {
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait rebuild extends PkgManagerCommand
+  sealed trait rebuild
+    extends StObject
+       with PkgManagerCommand
   @scala.inline
   def rebuild: rebuild = "rebuild".asInstanceOf[rebuild]
   
@@ -289,17 +366,23 @@ object ionicStrings {
   def repo: repo = "repo".asInstanceOf[repo]
   
   @js.native
-  sealed trait run extends PkgManagerCommand
+  sealed trait run
+    extends StObject
+       with PkgManagerCommand
   @scala.inline
   def run: run = "run".asInstanceOf[run]
   
   @js.native
-  sealed trait serveColonafter extends HookName
+  sealed trait serveColonafter
+    extends StObject
+       with HookName
   @scala.inline
   def serveColonafter: serveColonafter = "serve:after".asInstanceOf[serveColonafter]
   
   @js.native
-  sealed trait serveColonbefore extends HookName
+  sealed trait serveColonbefore
+    extends StObject
+       with HookName
   @scala.inline
   def serveColonbefore: serveColonbefore = "serve:before".asInstanceOf[serveColonbefore]
   
@@ -309,7 +392,9 @@ object ionicStrings {
   def serveColonready: serveColonready = "serve:ready".asInstanceOf[serveColonready]
   
   @js.native
-  sealed trait splash extends KnownResourceType
+  sealed trait splash
+    extends StObject
+       with KnownResourceType
   @scala.inline
   def splash: splash = "splash".asInstanceOf[splash]
   
@@ -319,7 +404,9 @@ object ionicStrings {
   def `ssl-commands`: `ssl-commands` = "ssl-commands".asInstanceOf[`ssl-commands`]
   
   @js.native
-  sealed trait system extends InfoItemGroup
+  sealed trait system
+    extends StObject
+       with InfoItemGroup
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   
@@ -329,12 +416,16 @@ object ionicStrings {
   def telemetry: telemetry = "telemetry".asInstanceOf[telemetry]
   
   @js.native
-  sealed trait testing extends DistTag
+  sealed trait testing
+    extends StObject
+       with DistTag
   @scala.inline
   def testing: testing = "testing".asInstanceOf[testing]
   
   @js.native
-  sealed trait uninstall extends PkgManagerCommand
+  sealed trait uninstall
+    extends StObject
+       with PkgManagerCommand
   @scala.inline
   def uninstall: uninstall = "uninstall".asInstanceOf[uninstall]
   
@@ -349,7 +440,9 @@ object ionicStrings {
   def `update-check`: `update-check` = "update-check".asInstanceOf[`update-check`]
   
   @js.native
-  sealed trait utility extends InfoItemGroup
+  sealed trait utility
+    extends StObject
+       with InfoItemGroup
   @scala.inline
   def utility: utility = "utility".asInstanceOf[utility]
   
@@ -359,22 +452,30 @@ object ionicStrings {
   def `viewport-fit-not-set`: `viewport-fit-not-set` = "viewport-fit-not-set".asInstanceOf[`viewport-fit-not-set`]
   
   @js.native
-  sealed trait vue extends ProjectType
+  sealed trait vue
+    extends StObject
+       with ProjectType
   @scala.inline
   def vue: vue = "vue".asInstanceOf[vue]
   
   @js.native
-  sealed trait windows extends KnownPlatform
+  sealed trait windows
+    extends StObject
+       with KnownPlatform
   @scala.inline
   def windows: windows = "windows".asInstanceOf[windows]
   
   @js.native
-  sealed trait wp8 extends KnownPlatform
+  sealed trait wp8
+    extends StObject
+       with KnownPlatform
   @scala.inline
   def wp8: wp8 = "wp8".asInstanceOf[wp8]
   
   @js.native
-  sealed trait yarn extends NpmClient
+  sealed trait yarn
+    extends StObject
+       with NpmClient
   @scala.inline
   def yarn: yarn = "yarn".asInstanceOf[yarn]
 }

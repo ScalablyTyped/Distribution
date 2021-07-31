@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesSearch extends StandardParameters {
+trait ParamsResourceServicesSearch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of results returned by this request. Currently, the
@@ -23,20 +23,20 @@ trait ParamsResourceServicesSearch extends StandardParameters {
     * provided is a number larger than 1000, it's automatically set to 1000.
     * Optional.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The continuation token, which is used to page through large result sets.
     * To get the next page of results, set this parameter to the value of
     * `nextPageToken` from the previous response.  Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Service for which search is performed. services/{service} {service} the
     * name of a service, for example 'service.googleapis.com'.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Set a query `{expression}` for querying tenancy units. Your
@@ -52,7 +52,7 @@ trait ParamsResourceServicesSearch extends StandardParameters {
     * included in the result set. For example, `tenant_resources.tag=xyz AND
     * tenant_resources.resource=projects/123456`  Optional.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceServicesSearch {
   

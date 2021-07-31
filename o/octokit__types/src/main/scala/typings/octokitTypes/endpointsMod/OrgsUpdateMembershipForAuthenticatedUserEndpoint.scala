@@ -3,25 +3,23 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.active
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsUpdateMembershipForAuthenticatedUserEndpoint extends StObject {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * The state that the membership should be in. Only `"active"` will be accepted.
     */
-  var state: active = js.native
+  var state: active
 }
 object OrgsUpdateMembershipForAuthenticatedUserEndpoint {
   
   @scala.inline
-  def apply(org_ : String, state: active): OrgsUpdateMembershipForAuthenticatedUserEndpoint = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+  def apply(org_ : String): OrgsUpdateMembershipForAuthenticatedUserEndpoint = {
+    val __obj = js.Dynamic.literal(state = "active")
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateMembershipForAuthenticatedUserEndpoint]
   }

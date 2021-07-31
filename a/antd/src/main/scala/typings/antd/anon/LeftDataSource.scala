@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.antd.transferMod.TransferItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeftDataSource[RecordType /* <: TransferItem */] extends StObject {
   
-  var leftDataSource: js.Array[RecordType] = js.native
+  var leftDataSource: js.Array[RecordType]
   
-  var rightDataSource: js.Array[RecordType] = js.native
+  var rightDataSource: js.Array[RecordType]
 }
 object LeftDataSource {
   
@@ -22,7 +20,7 @@ object LeftDataSource {
   }
   
   @scala.inline
-  implicit class LeftDataSourceMutableBuilder[Self <: LeftDataSource[_], RecordType /* <: TransferItem */] (val x: Self with LeftDataSource[RecordType]) extends AnyVal {
+  implicit class LeftDataSourceMutableBuilder[Self <: LeftDataSource[?], RecordType /* <: TransferItem */] (val x: Self & LeftDataSource[RecordType]) extends AnyVal {
     
     @scala.inline
     def setLeftDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])

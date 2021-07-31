@@ -117,10 +117,13 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
+  
+  @JSImport("@ionic/react/dist/types/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/react/dist/types/components", "CreateAnimation")
   @js.native
@@ -147,7 +150,9 @@ object componentsMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ionic/react/dist/types/components", "IonBackButton")
   @js.native
-  class IonBackButton protected () extends ClickButton {
+  class IonBackButton protected ()
+    extends StObject
+       with ClickButton {
     def this(props: ReadonlyProps) = this()
     def this(props: Props) = this()
     def this(props: Props, context: js.Any) = this()
@@ -528,44 +533,36 @@ object componentsMod {
     def this(value: String) = this()
   }
   
-  @JSImport("@ionic/react/dist/types/components", "createAnimation")
-  @js.native
-  def createAnimation(): Animation = js.native
-  @JSImport("@ionic/react/dist/types/components", "createAnimation")
-  @js.native
-  def createAnimation(animationId: String): Animation = js.native
+  @scala.inline
+  def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
+  @scala.inline
+  def createAnimation(animationId: String): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animationId.asInstanceOf[js.Any]).asInstanceOf[Animation]
   
-  @JSImport("@ionic/react/dist/types/components", "createGesture")
-  @js.native
-  def createGesture(config: GestureConfig): Gesture = js.native
+  @scala.inline
+  def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
   
-  @JSImport("@ionic/react/dist/types/components", "getConfig")
-  @js.native
-  def getConfig(): Config_ | Null = js.native
+  @scala.inline
+  def getConfig(): Config_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config_ | Null]
   
-  @JSImport("@ionic/react/dist/types/components", "getPlatforms")
-  @js.native
+  @scala.inline
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
   
-  @JSImport("@ionic/react/dist/types/components", "iosTransitionAnimation")
-  @js.native
-  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = js.native
+  @scala.inline
+  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
-  @JSImport("@ionic/react/dist/types/components", "isPlatform")
-  @js.native
-  def isPlatform(platform: Platforms): Boolean = js.native
+  @scala.inline
+  def isPlatform(platform: Platforms): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatform")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/react/dist/types/components", "mdTransitionAnimation")
-  @js.native
-  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = js.native
+  @scala.inline
+  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdTransitionAnimation")(_underscore.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
-  @JSImport("@ionic/react/dist/types/components", "setupConfig")
-  @js.native
-  def setupConfig(config: IonicConfig): js.Any = js.native
+  @scala.inline
+  def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/react/dist/types/components", "useIonRouter")
-  @js.native
-  def useIonRouter(): IonRouterContextState = js.native
+  @scala.inline
+  def useIonRouter(): IonRouterContextState = ^.asInstanceOf[js.Dynamic].applyDynamic("useIonRouter")().asInstanceOf[IonRouterContextState]
 }

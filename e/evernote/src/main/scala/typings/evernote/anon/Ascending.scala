@@ -2,27 +2,25 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ascending extends StObject {
   
-  var ascending: js.UndefOr[Boolean] = js.native
+  var ascending: js.UndefOr[Boolean] = js.undefined
   
-  var emphasized: js.UndefOr[String] = js.native
+  var emphasized: js.UndefOr[String] = js.undefined
   
-  var inactive: js.UndefOr[Boolean] = js.native
+  var inactive: js.UndefOr[Boolean] = js.undefined
   
-  var notebookGuid: js.UndefOr[String] = js.native
+  var notebookGuid: js.UndefOr[String] = js.undefined
   
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
-  var tagGuids: js.UndefOr[js.Array[String]] = js.native
+  var tagGuids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
-  var words: js.UndefOr[String] = js.native
+  var words: js.UndefOr[String] = js.undefined
 }
 object Ascending {
   

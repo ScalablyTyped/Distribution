@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.AutoTextContainer
   * @see com.sun.star.text.AutoTextGroup
   */
-@js.native
 trait AutoTextEntry
-  extends XText
+  extends StObject
      with XAutoTextEntry
+     with XText
 object AutoTextEntry {
   
   @scala.inline

@@ -2,7 +2,6 @@ package typings.testConsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,22 +14,41 @@ object mod {
   @js.native
   val stdout: TestStream = js.native
   
-  @js.native
   trait Inspector extends StObject {
     
-    var output: Output = js.native
+    var output: Output
     
-    def restore(): Unit = js.native
+    def restore(): Unit
     @JSName("restore")
-    var restore_Original: Restore = js.native
+    var restore_Original: Restore
+  }
+  object Inspector {
+    
+    @scala.inline
+    def apply(output: Output, restore: () => Unit): Inspector = {
+      val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], restore = js.Any.fromFunction0(restore))
+      __obj.asInstanceOf[Inspector]
+    }
+    
+    @scala.inline
+    implicit class InspectorMutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+      
+      @scala.inline
+      def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    }
   }
   
   type NoOutputCallback = js.Function0[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var isTTY: js.UndefOr[Boolean] = js.native
+    var isTTY: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

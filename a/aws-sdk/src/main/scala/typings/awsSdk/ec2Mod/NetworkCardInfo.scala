@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkCardInfo extends StObject {
   
   /**
     * The maximum number of network interfaces for the network card.
     */
-  var MaximumNetworkInterfaces: js.UndefOr[MaxNetworkInterfaces] = js.native
+  var MaximumNetworkInterfaces: js.UndefOr[MaxNetworkInterfaces] = js.undefined
   
   /**
     * The index of the network card.
     */
-  var NetworkCardIndex: js.UndefOr[typings.awsSdk.ec2Mod.NetworkCardIndex] = js.native
+  var NetworkCardIndex: js.UndefOr[typings.awsSdk.ec2Mod.NetworkCardIndex] = js.undefined
   
   /**
     * The network performance of the network card.
     */
-  var NetworkPerformance: js.UndefOr[typings.awsSdk.ec2Mod.NetworkPerformance] = js.native
+  var NetworkPerformance: js.UndefOr[typings.awsSdk.ec2Mod.NetworkPerformance] = js.undefined
 }
 object NetworkCardInfo {
   

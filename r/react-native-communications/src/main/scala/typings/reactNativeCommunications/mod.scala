@@ -2,148 +2,106 @@ package typings.reactNativeCommunications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-communications", "email")
+  @JSImport("react-native-communications", JSImport.Namespace)
   @js.native
-  def email(): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String], subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String], subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String], subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: Null, subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: Null, subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: js.Array[String], bcc: Null, subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: js.Array[String], subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: js.Array[String], subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: js.Array[String], subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: Null, subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: Null, subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: js.Array[String], cc: Null, bcc: Null, subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: js.Array[String], subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: js.Array[String], subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: js.Array[String], subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: Null, subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: Null, subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: js.Array[String], bcc: Null, subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: js.Array[String]): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: js.Array[String], subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: js.Array[String], subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: js.Array[String], subject: Null, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: Null, subject: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: Null, subject: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "email")
-  @js.native
-  def email(to: Null, cc: Null, bcc: Null, subject: Null, body: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-communications", "phonecall")
-  @js.native
-  def phonecall(phoneNumber: String, isPrompt: Boolean): Unit = js.native
+  @scala.inline
+  def email(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String], subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String], subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: js.Array[String], subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: Null, subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: Null, subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: js.Array[String], bcc: Null, subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: js.Array[String], subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: js.Array[String], subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: js.Array[String], subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: Null, subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: Null, subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: js.Array[String], cc: Null, bcc: Null, subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: js.Array[String], subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: js.Array[String], subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: js.Array[String], subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: Null, subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: Null, subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: js.Array[String], bcc: Null, subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: js.Array[String], subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: js.Array[String], subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: js.Array[String], subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: Null, subject: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: Null, subject: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def email(to: Null, cc: Null, bcc: Null, subject: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("email")(to.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], bcc.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-native-communications", "text")
-  @js.native
-  def text(): Unit = js.native
-  @JSImport("react-native-communications", "text")
-  @js.native
-  def text(phoneNumber: js.UndefOr[scala.Nothing], body: String): Unit = js.native
-  @JSImport("react-native-communications", "text")
-  @js.native
-  def text(phoneNumber: String): Unit = js.native
-  @JSImport("react-native-communications", "text")
-  @js.native
-  def text(phoneNumber: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "text")
-  @js.native
-  def text(phoneNumber: Null, body: String): Unit = js.native
+  @scala.inline
+  def phonecall(phoneNumber: String, isPrompt: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("phonecall")(phoneNumber.asInstanceOf[js.Any], isPrompt.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-native-communications", "textWithoutEncoding")
-  @js.native
-  def textWithoutEncoding(): Unit = js.native
-  @JSImport("react-native-communications", "textWithoutEncoding")
-  @js.native
-  def textWithoutEncoding(phoneNumber: js.UndefOr[scala.Nothing], body: String): Unit = js.native
-  @JSImport("react-native-communications", "textWithoutEncoding")
-  @js.native
-  def textWithoutEncoding(phoneNumber: String): Unit = js.native
-  @JSImport("react-native-communications", "textWithoutEncoding")
-  @js.native
-  def textWithoutEncoding(phoneNumber: String, body: String): Unit = js.native
-  @JSImport("react-native-communications", "textWithoutEncoding")
-  @js.native
-  def textWithoutEncoding(phoneNumber: Null, body: String): Unit = js.native
+  @scala.inline
+  def text(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[Unit]
+  @scala.inline
+  def text(phoneNumber: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(phoneNumber.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def text(phoneNumber: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(phoneNumber.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def text(phoneNumber: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(phoneNumber.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def text(phoneNumber: Unit, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(phoneNumber.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-native-communications", "web")
-  @js.native
-  def web(): Unit = js.native
-  @JSImport("react-native-communications", "web")
-  @js.native
-  def web(address: String): Unit = js.native
+  @scala.inline
+  def textWithoutEncoding(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textWithoutEncoding")().asInstanceOf[Unit]
+  @scala.inline
+  def textWithoutEncoding(phoneNumber: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textWithoutEncoding")(phoneNumber.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def textWithoutEncoding(phoneNumber: String, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("textWithoutEncoding")(phoneNumber.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def textWithoutEncoding(phoneNumber: Null, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("textWithoutEncoding")(phoneNumber.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def textWithoutEncoding(phoneNumber: Unit, body: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("textWithoutEncoding")(phoneNumber.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def web(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("web")().asInstanceOf[Unit]
+  @scala.inline
+  def web(address: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("web")(address.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

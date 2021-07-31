@@ -2,93 +2,91 @@ package typings.instagramPrivateApi.reelsTrayFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsTrayFeedResponseItemsItem extends StObject {
   
-  var attribution: js.UndefOr[ReelsTrayFeedResponseAttribution] = js.native
+  var attribution: js.UndefOr[ReelsTrayFeedResponseAttribution] = js.undefined
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: Null = js.native
+  var caption: Null
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var caption_position: Double = js.native
+  var caption_position: Double
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var creative_config: js.UndefOr[ReelsTrayFeedResponseCreativeConfig] = js.native
+  var creative_config: js.UndefOr[ReelsTrayFeedResponseCreativeConfig] = js.undefined
   
-  var device_timestamp: Double | String = js.native
+  var device_timestamp: Double | String
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: js.UndefOr[Boolean] = js.native
+  var has_audio: js.UndefOr[Boolean] = js.undefined
   
-  var has_shared_to_fb: Double = js.native
+  var has_shared_to_fb: Double
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: ReelsTrayFeedResponseImageVersions2 = js.native
+  var image_versions2: ReelsTrayFeedResponseImageVersions2
   
-  var imported_taken_at: js.UndefOr[Double] = js.native
+  var imported_taken_at: js.UndefOr[Double] = js.undefined
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var is_pride_media: Boolean = js.native
+  var is_pride_media: Boolean
   
-  var is_reel_media: Boolean = js.native
+  var is_reel_media: Boolean
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var reel_mentions: js.UndefOr[js.Array[ReelsTrayFeedResponseReelMentionsItem]] = js.native
+  var reel_mentions: js.UndefOr[js.Array[ReelsTrayFeedResponseReelMentionsItem]] = js.undefined
   
-  var show_one_tap_fb_share_tooltip: Boolean = js.native
+  var show_one_tap_fb_share_tooltip: Boolean
   
-  var story_locations: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryLocationsItem]] = js.native
+  var story_locations: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryLocationsItem]] = js.undefined
   
-  var story_polls: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryPollsItem]] = js.native
+  var story_polls: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryPollsItem]] = js.undefined
   
-  var story_questions: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryQuestionsItem]] = js.native
+  var story_questions: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryQuestionsItem]] = js.undefined
   
-  var story_quizs: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryQuizsItem]] = js.native
+  var story_quizs: js.UndefOr[js.Array[ReelsTrayFeedResponseStoryQuizsItem]] = js.undefined
   
-  var supports_reel_reactions: Boolean = js.native
+  var supports_reel_reactions: Boolean
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var user: ReelsTrayFeedResponseUser = js.native
+  var user: ReelsTrayFeedResponseUser
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[ReelsTrayFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[ReelsTrayFeedResponseVideoVersionsItem]] = js.undefined
 }
 object ReelsTrayFeedResponseItemsItem {
   

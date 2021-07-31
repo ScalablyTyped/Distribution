@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,7 +40,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.rollOffFactor = 1] - The factor used in the falloff equation.
   */
 @js.native
-trait SoundInstance3d extends SoundInstance {
+trait SoundInstance3d
+  extends StObject
+     with SoundInstance {
   
   /**
     * Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be:

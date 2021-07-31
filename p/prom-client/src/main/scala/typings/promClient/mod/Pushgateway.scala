@@ -5,7 +5,6 @@ import typings.promClient.mod.Pushgateway.Parameters
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Pushgateway")
@@ -18,8 +17,8 @@ class Pushgateway protected () extends StObject {
   	 */
   def this(url: String) = this()
   def this(url: String, options: js.Any) = this()
-  def this(url: String, options: js.UndefOr[scala.Nothing], registry: Registry) = this()
   def this(url: String, options: js.Any, registry: Registry) = this()
+  def this(url: String, options: Unit, registry: Registry) = this()
   
   /**
   	 * Delete all metrics for jobName
@@ -68,18 +67,17 @@ class Pushgateway protected () extends StObject {
 }
 object Pushgateway {
   
-  @js.native
   trait Parameters extends StObject {
     
     /**
     		 * Label sets used in the url when making a request to the Pushgateway,
     		 */
-    var groupings: js.UndefOr[StringDictionary[String]] = js.native
+    var groupings: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
     		 * Jobname that is pushing the metric
     		 */
-    var jobName: String = js.native
+    var jobName: String
   }
   object Parameters {
     

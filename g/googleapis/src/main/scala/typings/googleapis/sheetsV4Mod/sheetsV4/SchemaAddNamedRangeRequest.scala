@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a named range to the spreadsheet.
   */
-@js.native
 trait SchemaAddNamedRangeRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaAddNamedRangeRequest extends StObject {
     * set, an id will be randomly generated. (It is an error to specify the ID
     * of a range that already exists.)
     */
-  var namedRange: js.UndefOr[SchemaNamedRange] = js.native
+  var namedRange: js.UndefOr[SchemaNamedRange] = js.undefined
 }
 object SchemaAddNamedRangeRequest {
   

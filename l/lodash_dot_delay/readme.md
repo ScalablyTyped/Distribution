@@ -12,7 +12,7 @@ The lodash method `_.delay` exported as a module.
 | Keywords           | lodash-modularized, delay |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 440232 |
+| # downloads        | 478895 |
 | # stars            | 0 |
 
 ## Links

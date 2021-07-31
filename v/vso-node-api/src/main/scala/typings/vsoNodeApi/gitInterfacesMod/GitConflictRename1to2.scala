@@ -4,23 +4,23 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitConflictRename1to2 extends GitConflict {
+trait GitConflictRename1to2
+  extends StObject
+     with GitConflict {
   
-  var baseBlob: GitBlobRef = js.native
+  var baseBlob: GitBlobRef
   
-  var resolution: GitResolutionRename1to2 = js.native
+  var resolution: GitResolutionRename1to2
   
-  var sourceBlob: GitBlobRef = js.native
+  var sourceBlob: GitBlobRef
   
-  var sourceNewPath: String = js.native
+  var sourceNewPath: String
   
-  var targetBlob: GitBlobRef = js.native
+  var targetBlob: GitBlobRef
   
-  var targetNewPath: String = js.native
+  var targetNewPath: String
 }
 object GitConflictRename1to2 {
   

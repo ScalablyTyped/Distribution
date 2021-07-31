@@ -4,119 +4,92 @@ import typings.secp256k1.anon.Recid
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("secp256k1", "ecdh")
+  @JSImport("secp256k1", JSImport.Namespace)
   @js.native
-  def ecdh(publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "ecdh")
-  @js.native
-  def ecdh(publicKey: Uint8Array, privateKey: Uint8Array, opt: ecdhOptions): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("secp256k1", "ecdsaRecover")
-  @js.native
-  def ecdsaRecover(signature: Uint8Array, recid: Double, message: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "ecdsaRecover")
-  @js.native
-  def ecdsaRecover(signature: Uint8Array, recid: Double, message: Uint8Array, compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def ecdh(publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdh")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def ecdh(publicKey: Uint8Array, privateKey: Uint8Array, opt: ecdhOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdh")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "ecdsaSign")
-  @js.native
-  def ecdsaSign(message: Uint8Array, privateKey: Uint8Array): Recid = js.native
-  @JSImport("secp256k1", "ecdsaSign")
-  @js.native
-  def ecdsaSign(message: Uint8Array, privateKey: Uint8Array, options: SignOptions): Recid = js.native
+  @scala.inline
+  def ecdsaRecover(signature: Uint8Array, recid: Double, message: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaRecover")(signature.asInstanceOf[js.Any], recid.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def ecdsaRecover(signature: Uint8Array, recid: Double, message: Uint8Array, compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaRecover")(signature.asInstanceOf[js.Any], recid.asInstanceOf[js.Any], message.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "ecdsaVerify")
-  @js.native
-  def ecdsaVerify(signature: Uint8Array, message: Uint8Array, publicKey: Uint8Array): Boolean = js.native
+  @scala.inline
+  def ecdsaSign(message: Uint8Array, privateKey: Uint8Array): Recid = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaSign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Recid]
+  @scala.inline
+  def ecdsaSign(message: Uint8Array, privateKey: Uint8Array, options: SignOptions): Recid = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaSign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Recid]
   
-  @JSImport("secp256k1", "privateKeyExport")
-  @js.native
-  def privateKeyExport(privateKey: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "privateKeyExport")
-  @js.native
-  def privateKeyExport(privateKey: Uint8Array, compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def ecdsaVerify(signature: Uint8Array, message: Uint8Array, publicKey: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ecdsaVerify")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("secp256k1", "privateKeyImport")
-  @js.native
-  def privateKeyImport(privateKey: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def privateKeyExport(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyExport")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def privateKeyExport(privateKey: Uint8Array, compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyExport")(privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "privateKeyModInverse")
-  @js.native
-  def privateKeyModInverse(privateKey: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def privateKeyImport(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyImport")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "privateKeyNegate")
-  @js.native
-  def privateKeyNegate(privateKey: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def privateKeyModInverse(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyModInverse")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "privateKeyTweakAdd")
-  @js.native
-  def privateKeyTweakAdd(privateKey: Uint8Array, tweak: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def privateKeyNegate(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyNegate")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "privateKeyTweakMul")
-  @js.native
-  def privateKeyTweakMul(privateKey: Uint8Array, tweak: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def privateKeyTweakAdd(privateKey: Uint8Array, tweak: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyTweakAdd")(privateKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "privateKeyVerify")
-  @js.native
-  def privateKeyVerify(privateKey: Uint8Array): Boolean = js.native
+  @scala.inline
+  def privateKeyTweakMul(privateKey: Uint8Array, tweak: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyTweakMul")(privateKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "publicKeyCombine")
-  @js.native
-  def publicKeyCombine(publicKeys: js.Array[Uint8Array]): Uint8Array = js.native
-  @JSImport("secp256k1", "publicKeyCombine")
-  @js.native
-  def publicKeyCombine(publicKeys: js.Array[Uint8Array], compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def privateKeyVerify(privateKey: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyVerify")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("secp256k1", "publicKeyConvert")
-  @js.native
-  def publicKeyConvert(publicKey: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "publicKeyConvert")
-  @js.native
-  def publicKeyConvert(publicKey: Uint8Array, compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def publicKeyCombine(publicKeys: js.Array[Uint8Array]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyCombine")(publicKeys.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def publicKeyCombine(publicKeys: js.Array[Uint8Array], compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyCombine")(publicKeys.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "publicKeyCreate")
-  @js.native
-  def publicKeyCreate(privateKey: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "publicKeyCreate")
-  @js.native
-  def publicKeyCreate(privateKey: Uint8Array, compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def publicKeyConvert(publicKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyConvert")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def publicKeyConvert(publicKey: Uint8Array, compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyConvert")(publicKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "publicKeyTweakAdd")
-  @js.native
-  def publicKeyTweakAdd(publicKey: Uint8Array, tweak: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "publicKeyTweakAdd")
-  @js.native
-  def publicKeyTweakAdd(publicKey: Uint8Array, tweak: Uint8Array, compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def publicKeyCreate(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyCreate")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def publicKeyCreate(privateKey: Uint8Array, compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyCreate")(privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "publicKeyTweakMul")
-  @js.native
-  def publicKeyTweakMul(publicKey: Uint8Array, tweak: Uint8Array): Uint8Array = js.native
-  @JSImport("secp256k1", "publicKeyTweakMul")
-  @js.native
-  def publicKeyTweakMul(publicKey: Uint8Array, tweak: Uint8Array, compressed: Boolean): Uint8Array = js.native
+  @scala.inline
+  def publicKeyTweakAdd(publicKey: Uint8Array, tweak: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyTweakAdd")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def publicKeyTweakAdd(publicKey: Uint8Array, tweak: Uint8Array, compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyTweakAdd")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "publicKeyVerify")
-  @js.native
-  def publicKeyVerify(publicKey: Uint8Array): Boolean = js.native
+  @scala.inline
+  def publicKeyTweakMul(publicKey: Uint8Array, tweak: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyTweakMul")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def publicKeyTweakMul(publicKey: Uint8Array, tweak: Uint8Array, compressed: Boolean): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyTweakMul")(publicKey.asInstanceOf[js.Any], tweak.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "signatureExport")
-  @js.native
-  def signatureExport(signature: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def publicKeyVerify(publicKey: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyVerify")(publicKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("secp256k1", "signatureImport")
-  @js.native
-  def signatureImport(signature: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def signatureExport(signature: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureExport")(signature.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("secp256k1", "signatureNormalize")
-  @js.native
-  def signatureNormalize(signature: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def signatureImport(signature: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureImport")(signature.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @js.native
+  @scala.inline
+  def signatureNormalize(signature: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureNormalize")(signature.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
   trait SignOptions extends StObject {
     
     /**
@@ -124,7 +97,7 @@ object mod {
       *
       * By default is `null`.
       */
-    var data: js.UndefOr[Uint8Array] = js.native
+    var data: js.UndefOr[Uint8Array] = js.undefined
     
     /** Nonce generator. By default it is rfc6979 */
     var noncefn: js.UndefOr[
@@ -136,7 +109,7 @@ object mod {
           /* attempt */ Double, 
           Uint8Array
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SignOptions {
     
@@ -165,18 +138,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ecdhOptions extends StObject {
     
-    var data: js.UndefOr[Uint8Array] = js.native
+    var data: js.UndefOr[Uint8Array] = js.undefined
     
     var hashfn: js.UndefOr[
         js.Function3[/* x */ Uint8Array, /* y */ Uint8Array, /* data */ Uint8Array, Uint8Array]
-      ] = js.native
+      ] = js.undefined
     
-    var xbuf: js.UndefOr[Uint8Array] = js.native
+    var xbuf: js.UndefOr[Uint8Array] = js.undefined
     
-    var ybuf: js.UndefOr[Uint8Array] = js.native
+    var ybuf: js.UndefOr[Uint8Array] = js.undefined
   }
   object ecdhOptions {
     

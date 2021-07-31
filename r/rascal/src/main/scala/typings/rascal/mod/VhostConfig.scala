@@ -6,35 +6,33 @@ import typings.rascal.rascalStrings.fixed
 import typings.rascal.rascalStrings.random
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VhostConfig extends StObject {
   
-  var assert: js.UndefOr[Boolean] = js.native
+  var assert: js.UndefOr[Boolean] = js.undefined
   
-  var bindings: js.UndefOr[StringDictionary[BindingConfig] | js.Array[String]] = js.native
+  var bindings: js.UndefOr[StringDictionary[BindingConfig] | js.Array[String]] = js.undefined
   
-  var check: js.UndefOr[Boolean] = js.native
+  var check: js.UndefOr[Boolean] = js.undefined
   
-  var connection: js.UndefOr[ConnectionConfig] = js.native
+  var connection: js.UndefOr[ConnectionConfig] = js.undefined
   
-  var connectionStrategy: js.UndefOr[random | fixed] = js.native
+  var connectionStrategy: js.UndefOr[random | fixed] = js.undefined
   
-  var connections: js.UndefOr[js.Array[ConnectionConfig]] = js.native
+  var connections: js.UndefOr[js.Array[ConnectionConfig]] = js.undefined
   
-  var exchanges: js.UndefOr[StringDictionary[ExchangeConfig] | js.Array[String]] = js.native
+  var exchanges: js.UndefOr[StringDictionary[ExchangeConfig] | js.Array[String]] = js.undefined
   
-  var namespace: js.UndefOr[String | Boolean] = js.native
+  var namespace: js.UndefOr[String | Boolean] = js.undefined
   
-  var publicationChannelPools: js.UndefOr[ConfirmPool] = js.native
+  var publicationChannelPools: js.UndefOr[ConfirmPool] = js.undefined
   
-  var publications: js.UndefOr[StringDictionary[PublicationConfig]] = js.native
+  var publications: js.UndefOr[StringDictionary[PublicationConfig]] = js.undefined
   
-  var queues: js.UndefOr[StringDictionary[QueueConfig] | js.Array[String]] = js.native
+  var queues: js.UndefOr[StringDictionary[QueueConfig] | js.Array[String]] = js.undefined
   
-  var subscriptions: js.UndefOr[StringDictionary[SubscriptionConfig]] = js.native
+  var subscriptions: js.UndefOr[StringDictionary[SubscriptionConfig]] = js.undefined
 }
 object VhostConfig {
   

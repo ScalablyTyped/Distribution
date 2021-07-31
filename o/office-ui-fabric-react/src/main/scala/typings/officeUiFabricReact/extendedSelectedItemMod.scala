@@ -6,7 +6,6 @@ import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extendedSelectedItemMod {
@@ -22,10 +21,9 @@ object extendedSelectedItemMod {
     var persona: RefObject[HTMLDivElement] = js.native
   }
   
-  @js.native
   trait IPeoplePickerItemState extends StObject {
     
-    var contextualMenuVisible: Boolean = js.native
+    var contextualMenuVisible: Boolean
   }
   object IPeoplePickerItemState {
     

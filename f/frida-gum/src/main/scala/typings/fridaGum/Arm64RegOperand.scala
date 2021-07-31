@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.reg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arm64RegOperand
-  extends Arm64BaseOperand
+  extends StObject
+     with Arm64BaseOperand
      with Arm64Operand {
   
-  var `type`: reg = js.native
+  var `type`: reg
   
-  var value: Arm64Register = js.native
+  var value: Arm64Register
 }
 object Arm64RegOperand {
   
   @scala.inline
-  def apply(`type`: reg, value: Arm64Register): Arm64RegOperand = {
+  def apply(value: Arm64Register): Arm64RegOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reg")
     __obj.asInstanceOf[Arm64RegOperand]
   }
   

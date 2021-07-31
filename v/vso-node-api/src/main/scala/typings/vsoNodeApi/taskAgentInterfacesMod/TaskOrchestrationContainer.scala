@@ -3,23 +3,23 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskOrchestrationContainer extends TaskOrchestrationItem {
+trait TaskOrchestrationContainer
+  extends StObject
+     with TaskOrchestrationItem {
   
-  var children: js.Array[TaskOrchestrationItem] = js.native
+  var children: js.Array[TaskOrchestrationItem]
   
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
-  var data: StringDictionary[String] = js.native
+  var data: StringDictionary[String]
   
-  var maxConcurrency: Double = js.native
+  var maxConcurrency: Double
   
-  var parallel: Boolean = js.native
+  var parallel: Boolean
   
-  var rollback: TaskOrchestrationContainer = js.native
+  var rollback: TaskOrchestrationContainer
 }
 object TaskOrchestrationContainer {
   

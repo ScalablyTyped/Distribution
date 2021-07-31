@@ -2,34 +2,32 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a DimensionValue resource.
   */
-@js.native
 trait SchemaDimensionValue extends StObject {
   
   /**
     * The name of the dimension.
     */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /**
     * The eTag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID associated with the value if available.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of resource this is, in this case dfareporting#dimensionValue.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Determines how the &#39;value&#39; field is matched when filtering. If
@@ -39,12 +37,12 @@ trait SchemaDimensionValue extends StObject {
     * dimensions (&#39;dfa:paidSearch*&#39;) allow a matchType other than
     * EXACT.
     */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the dimension.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaDimensionValue {
   

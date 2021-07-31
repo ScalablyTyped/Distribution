@@ -11,14 +11,15 @@ import typings.winrtUwp.anon.ItemsTimedMetadataTrack
 import typings.winrtUwp.winrtUwpStrings.presentationmodechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a read-only list of timed metadata tracks. */
 @js.native
-trait MediaPlaybackTimedMetadataTrackList extends Array[TimedMetadataTrack] {
+trait MediaPlaybackTimedMetadataTrackList
+  extends StObject
+     with Array[TimedMetadataTrack] {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_presentationmodechanged(
     `type`: presentationmodechanged,
@@ -58,13 +59,13 @@ trait MediaPlaybackTimedMetadataTrackList extends Array[TimedMetadataTrack] {
   
   /** Occurs when the presentation mode of the MediaPlaybackTimedMetadataTrackList changes. */
   def onpresentationmodechanged(
-    ev: TimedMetadataPresentationModeChangedEventArgs with WinRTEvent[MediaPlaybackTimedMetadataTrackList]
+    ev: TimedMetadataPresentationModeChangedEventArgs & WinRTEvent[MediaPlaybackTimedMetadataTrackList]
   ): Unit = js.native
   /** Occurs when the presentation mode of the MediaPlaybackTimedMetadataTrackList changes. */
   @JSName("onpresentationmodechanged")
   var onpresentationmodechanged_Original: TypedEventHandler[MediaPlaybackTimedMetadataTrackList, TimedMetadataPresentationModeChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_presentationmodechanged(
     `type`: presentationmodechanged,

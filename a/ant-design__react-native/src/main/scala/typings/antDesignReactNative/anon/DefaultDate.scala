@@ -2,15 +2,13 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultDate extends StObject {
   
-  var date: js.Any = js.native
+  var date: js.Any
   
-  var defaultDate: js.Any = js.native
+  var defaultDate: js.Any
 }
 object DefaultDate {
   

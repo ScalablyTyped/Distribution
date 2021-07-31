@@ -2,51 +2,49 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherLinks extends StObject {
   
   /**
     * URL for company website
     */
-  var company: Link = js.native
+  var company: Link
   
   /**
     * URL for publisher logo if CDN is down
     */
-  var fallbackLogo: Link = js.native
+  var fallbackLogo: Link
   
   /**
     * URL for publisher LinkedIn profile
     */
-  var linkedIn: Link = js.native
+  var linkedIn: Link
   
   /**
     * CDN URL for publisher logo
     */
-  var logo: Link = js.native
+  var logo: Link
   
   /**
     * URL for publisher public profile page
     */
-  var profile: Link = js.native
+  var profile: Link
   
   /**
     * URL for source code repo
     */
-  var sourceCode: Link = js.native
+  var sourceCode: Link
   
   /**
     * URL or email id for support
     */
-  var support: Link = js.native
+  var support: Link
   
   /**
     * URL for Twitter handle of publisher company
     */
-  var twitter: Link = js.native
+  var twitter: Link
 }
 object PublisherLinks {
   

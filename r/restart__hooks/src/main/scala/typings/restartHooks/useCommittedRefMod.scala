@@ -3,10 +3,13 @@ package typings.restartHooks
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useCommittedRefMod {
+  
+  @JSImport("@restart/hooks/cjs/useCommittedRef", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a `Ref` whose value is updated in an effect, ensuring the most recent
@@ -17,7 +20,6 @@ object useCommittedRefMod {
     *
     * @param value The `Ref` value
     */
-  @JSImport("@restart/hooks/cjs/useCommittedRef", JSImport.Default)
-  @js.native
-  def default[TValue](value: TValue): MutableRefObject[TValue] = js.native
+  @scala.inline
+  def default[TValue](value: TValue): MutableRefObject[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[TValue]]
 }

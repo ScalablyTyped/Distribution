@@ -2,31 +2,29 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /**
     * The ARN of the certificate associated with the device.
     */
-  var CertificateArn: string = js.native
+  var CertificateArn: string
   
   /**
     * A descriptive or arbitrary ID for the device. This value must be unique within the device definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * If true, the device's local shadow will be automatically synced with the cloud.
     */
-  var SyncShadow: js.UndefOr[boolean] = js.native
+  var SyncShadow: js.UndefOr[boolean] = js.undefined
   
   /**
     * The thing ARN of the device.
     */
-  var ThingArn: string = js.native
+  var ThingArn: string
 }
 object Device {
   

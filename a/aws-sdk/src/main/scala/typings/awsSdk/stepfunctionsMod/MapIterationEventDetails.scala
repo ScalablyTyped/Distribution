@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapIterationEventDetails extends StObject {
   
   /**
     * The index of the array belonging to the Map state iteration.
     */
-  var index: js.UndefOr[UnsignedInteger] = js.native
+  var index: js.UndefOr[UnsignedInteger] = js.undefined
   
   /**
     * The name of the iteration’s parent Map state.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object MapIterationEventDetails {
   

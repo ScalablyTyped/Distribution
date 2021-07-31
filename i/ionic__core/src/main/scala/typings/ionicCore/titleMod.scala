@@ -9,14 +9,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
   
   @JSImport("@ionic/core/dist/types/components/title/title", "ToolbarTitle")
   @js.native
-  class ToolbarTitle () extends ComponentInterface {
+  class ToolbarTitle ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

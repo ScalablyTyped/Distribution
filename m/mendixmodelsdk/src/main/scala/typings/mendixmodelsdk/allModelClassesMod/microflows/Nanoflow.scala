@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,9 +36,8 @@ object Nanoflow {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Nanoflow.createIn")
-  @js.native
-  def createIn(container: IFolderBase): typings.mendixmodelsdk.microflowsMod.microflows.Nanoflow = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): typings.mendixmodelsdk.microflowsMod.microflows.Nanoflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.Nanoflow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.Nanoflow.structureTypeName")

@@ -8,13 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a grid control data model whose data can be modified and sorted. */
-@js.native
 trait XSortableMutableGridDataModel
-  extends XMutableGridDataModel
+  extends StObject
+     with XMutableGridDataModel
      with XSortableGridData
 object XSortableMutableGridDataModel {
   
@@ -26,17 +25,17 @@ object XSortableMutableGridDataModel {
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     addGridDataListener: XGridDataListener => Unit,
-    addRow: (js.Any, SeqEquiv[_]) => Unit,
-    addRows: (SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit,
+    addRow: (js.Any, SeqEquiv[js.Any]) => Unit,
+    addRows: (SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit,
     createClone: () => XCloneable,
     dispose: () => Unit,
     getCellData: (Double, Double) => js.Any,
     getCellToolTip: (Double, Double) => js.Any,
     getCurrentSortOrder: () => Pair[Double, Boolean],
-    getRowData: Double => SafeArray[_],
+    getRowData: Double => SafeArray[js.Any],
     getRowHeading: Double => js.Any,
-    insertRow: (Double, js.Any, SeqEquiv[_]) => Unit,
-    insertRows: (Double, SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit,
+    insertRow: (Double, js.Any, SeqEquiv[js.Any]) => Unit,
+    insertRows: (Double, SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeAllRows: () => Unit,
@@ -47,7 +46,7 @@ object XSortableMutableGridDataModel {
     sortByColumn: (Double, Boolean) => Unit,
     updateCellData: (Double, Double, js.Any) => Unit,
     updateCellToolTip: (Double, Double, js.Any) => Unit,
-    updateRowData: (SeqEquiv[Double], Double, SeqEquiv[_]) => Unit,
+    updateRowData: (SeqEquiv[Double], Double, SeqEquiv[js.Any]) => Unit,
     updateRowHeading: (Double, js.Any) => Unit,
     updateRowToolTip: (Double, js.Any) => Unit
   ): XSortableMutableGridDataModel = {

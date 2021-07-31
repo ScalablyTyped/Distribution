@@ -3,58 +3,56 @@ package typings.jqueryTagsmanager
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITagsManagerOptions extends StObject {
   
-  var AjaxPush: js.UndefOr[String] = js.native
+  var AjaxPush: js.UndefOr[String] = js.undefined
   
-  var CapitalizeFirstLetter: js.UndefOr[Boolean] = js.native
+  var CapitalizeFirstLetter: js.UndefOr[Boolean] = js.undefined
   
-  var backspace: js.UndefOr[js.Array[Double]] = js.native
+  var backspace: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var blinkBGColor_1: js.UndefOr[String] = js.native
+  var blinkBGColor_1: js.UndefOr[String] = js.undefined
   
-  var blinkBGColor_2: js.UndefOr[String] = js.native
+  var blinkBGColor_2: js.UndefOr[String] = js.undefined
   
-  var deleteTagsOnBackspace: js.UndefOr[Boolean] = js.native
+  var deleteTagsOnBackspace: js.UndefOr[Boolean] = js.undefined
   
   //url
-  var delimeters: js.UndefOr[js.Array[Double]] = js.native
+  var delimeters: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var hiddenTagListId: js.UndefOr[String] = js.native
+  var hiddenTagListId: js.UndefOr[String] = js.undefined
   
-  var hiddenTagListName: js.UndefOr[String] = js.native
+  var hiddenTagListName: js.UndefOr[String] = js.undefined
   
-  var isClearInputOnEsc: js.UndefOr[Boolean] = js.native
+  var isClearInputOnEsc: js.UndefOr[Boolean] = js.undefined
   
-  var maxTags: js.UndefOr[Double] = js.native
+  var maxTags: js.UndefOr[Double] = js.undefined
   
-  var prefilled: js.UndefOr[js.Any] = js.native
+  var prefilled: js.UndefOr[js.Any] = js.undefined
   
-  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.native
+  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
   
-  var tagClass: js.UndefOr[String] = js.native
+  var tagClass: js.UndefOr[String] = js.undefined
   
-  var tagCloseIcon: js.UndefOr[String] = js.native
+  var tagCloseIcon: js.UndefOr[String] = js.undefined
   
-  var tagsContainer: js.UndefOr[HTMLElement] = js.native
+  var tagsContainer: js.UndefOr[HTMLElement] = js.undefined
   
-  var typeahead: js.UndefOr[Boolean] = js.native
+  var typeahead: js.UndefOr[Boolean] = js.undefined
   
-  var typeaheadAjaxPolling: js.UndefOr[Boolean] = js.native
+  var typeaheadAjaxPolling: js.UndefOr[Boolean] = js.undefined
   
-  var typeaheadAjaxSource: js.UndefOr[String] = js.native
+  var typeaheadAjaxSource: js.UndefOr[String] = js.undefined
   
-  var typeaheadDelegate: js.UndefOr[js.Function] = js.native
+  var typeaheadDelegate: js.UndefOr[js.Function] = js.undefined
   
-  var typeaheadOverrides: js.UndefOr[ITypeaheadOverrides] = js.native
+  var typeaheadOverrides: js.UndefOr[ITypeaheadOverrides] = js.undefined
   
-  var typeaheadSource: js.UndefOr[js.Any] = js.native
+  var typeaheadSource: js.UndefOr[js.Any] = js.undefined
   
-  var validator: js.UndefOr[js.Function] = js.native
+  var validator: js.UndefOr[js.Function] = js.undefined
 }
 object ITagsManagerOptions {
   

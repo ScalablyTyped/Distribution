@@ -27,22 +27,20 @@ import typings.officeJs.officeJsStrings.RightToLeft
 import typings.officeJs.officeJsStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined office-js.Office.AsyncContextOptions & {  isInline :boolean} */
-  @js.native
   trait AsyncContextOptionsisInli extends StObject {
     
     /**
       * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
       * that is passed to a callback.
       */
-    var asyncContext: js.UndefOr[js.Any] = js.native
+    var asyncContext: js.UndefOr[js.Any] = js.undefined
     
-    var isInline: Boolean = js.native
+    var isInline: Boolean
   }
   object AsyncContextOptionsisInli {
     
@@ -67,16 +65,15 @@ object anon {
   }
   
   /* Inlined office-js.Office.AsyncContextOptions & {  isRest :boolean | undefined} */
-  @js.native
   trait AsyncContextOptionsisRest extends StObject {
     
     /**
       * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
       * that is passed to a callback.
       */
-    var asyncContext: js.UndefOr[js.Any] = js.native
+    var asyncContext: js.UndefOr[js.Any] = js.undefined
     
-    var isRest: js.UndefOr[Boolean] = js.native
+    var isRest: js.UndefOr[Boolean] = js.undefined
   }
   object AsyncContextOptionsisRest {
     
@@ -104,7 +101,6 @@ object anon {
   }
   
   /* Inlined office-js.Excel.CellPropertiesFormatLoadOptions & {  rowHeight :boolean | undefined} */
-  @js.native
   trait CellPropertiesFormatLoadO extends StObject {
     
     /**
@@ -113,7 +109,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var autoIndent: js.UndefOr[Boolean] = js.native
+    var autoIndent: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -121,7 +117,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.native
+    var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.undefined
     
     /**
       *
@@ -129,7 +125,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.native
+    var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.undefined
     
     /**
       *
@@ -137,7 +133,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.native
+    var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.undefined
     
     /**
       *
@@ -145,7 +141,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var horizontalAlignment: js.UndefOr[Boolean] = js.native
+    var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -153,7 +149,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var indentLevel: js.UndefOr[Boolean] = js.native
+    var indentLevel: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -161,7 +157,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var protection: js.UndefOr[Boolean] = js.native
+    var protection: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -169,9 +165,9 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var readingOrder: js.UndefOr[Boolean] = js.native
+    var readingOrder: js.UndefOr[Boolean] = js.undefined
     
-    var rowHeight: js.UndefOr[Boolean] = js.native
+    var rowHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -179,7 +175,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var shrinkToFit: js.UndefOr[Boolean] = js.native
+    var shrinkToFit: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -187,7 +183,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var textOrientation: js.UndefOr[Boolean] = js.native
+    var textOrientation: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -195,7 +191,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardHeight: js.UndefOr[Boolean] = js.native
+    var useStandardHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -203,7 +199,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardWidth: js.UndefOr[Boolean] = js.native
+    var useStandardWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -211,7 +207,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var verticalAlignment: js.UndefOr[Boolean] = js.native
+    var verticalAlignment: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -219,7 +215,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var wrapText: js.UndefOr[Boolean] = js.native
+    var wrapText: js.UndefOr[Boolean] = js.undefined
   }
   object CellPropertiesFormatLoadO {
     
@@ -325,7 +321,6 @@ object anon {
   }
   
   /* Inlined office-js.Excel.CellPropertiesFormatLoadOptions & {  columnWidth :boolean | undefined} */
-  @js.native
   trait CellPropertiesFormatLoadOAutoIndent extends StObject {
     
     /**
@@ -334,7 +329,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var autoIndent: js.UndefOr[Boolean] = js.native
+    var autoIndent: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -342,9 +337,9 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.native
+    var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.undefined
     
-    var columnWidth: js.UndefOr[Boolean] = js.native
+    var columnWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -352,7 +347,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.native
+    var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.undefined
     
     /**
       *
@@ -360,7 +355,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.native
+    var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.undefined
     
     /**
       *
@@ -368,7 +363,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var horizontalAlignment: js.UndefOr[Boolean] = js.native
+    var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -376,7 +371,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var indentLevel: js.UndefOr[Boolean] = js.native
+    var indentLevel: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -384,7 +379,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var protection: js.UndefOr[Boolean] = js.native
+    var protection: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -392,7 +387,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var readingOrder: js.UndefOr[Boolean] = js.native
+    var readingOrder: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -400,7 +395,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var shrinkToFit: js.UndefOr[Boolean] = js.native
+    var shrinkToFit: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -408,7 +403,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var textOrientation: js.UndefOr[Boolean] = js.native
+    var textOrientation: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -416,7 +411,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardHeight: js.UndefOr[Boolean] = js.native
+    var useStandardHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -424,7 +419,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardWidth: js.UndefOr[Boolean] = js.native
+    var useStandardWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -432,7 +427,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var verticalAlignment: js.UndefOr[Boolean] = js.native
+    var verticalAlignment: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -440,7 +435,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var wrapText: js.UndefOr[Boolean] = js.native
+    var wrapText: js.UndefOr[Boolean] = js.undefined
   }
   object CellPropertiesFormatLoadOAutoIndent {
     
@@ -546,7 +541,6 @@ object anon {
   }
   
   /* Inlined office-js.Excel.CellPropertiesFormat & {  columnWidth :number | undefined} */
-  @js.native
   trait CellPropertiesFormatcolum extends StObject {
     
     /**
@@ -555,7 +549,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var autoIndent: js.UndefOr[Boolean] = js.native
+    var autoIndent: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -563,9 +557,9 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var borders: js.UndefOr[CellBorderCollection] = js.native
+    var borders: js.UndefOr[CellBorderCollection] = js.undefined
     
-    var columnWidth: js.UndefOr[Double] = js.native
+    var columnWidth: js.UndefOr[Double] = js.undefined
     
     /**
       *
@@ -573,7 +567,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var fill: js.UndefOr[CellPropertiesFill] = js.native
+    var fill: js.UndefOr[CellPropertiesFill] = js.undefined
     
     /**
       *
@@ -581,7 +575,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var font: js.UndefOr[CellPropertiesFont] = js.native
+    var font: js.UndefOr[CellPropertiesFont] = js.undefined
     
     /**
       *
@@ -591,7 +585,7 @@ object anon {
       */
     var horizontalAlignment: js.UndefOr[
         HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
-      ] = js.native
+      ] = js.undefined
     
     /**
       *
@@ -599,7 +593,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var indentLevel: js.UndefOr[Double] = js.native
+    var indentLevel: js.UndefOr[Double] = js.undefined
     
     /**
       *
@@ -607,7 +601,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var protection: js.UndefOr[CellPropertiesProtection] = js.native
+    var protection: js.UndefOr[CellPropertiesProtection] = js.undefined
     
     /**
       *
@@ -615,7 +609,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.native
+    var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
     
     /**
       *
@@ -623,7 +617,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var shrinkToFit: js.UndefOr[Boolean] = js.native
+    var shrinkToFit: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -631,7 +625,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var textOrientation: js.UndefOr[Double] = js.native
+    var textOrientation: js.UndefOr[Double] = js.undefined
     
     /**
       *
@@ -639,7 +633,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardHeight: js.UndefOr[Boolean] = js.native
+    var useStandardHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -647,7 +641,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardWidth: js.UndefOr[Boolean] = js.native
+    var useStandardWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -655,7 +649,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
     
     /**
       *
@@ -663,7 +657,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var wrapText: js.UndefOr[Boolean] = js.native
+    var wrapText: js.UndefOr[Boolean] = js.undefined
   }
   object CellPropertiesFormatcolum {
     
@@ -771,7 +765,6 @@ object anon {
   }
   
   /* Inlined office-js.Excel.CellPropertiesFormat & {  rowHeight :number | undefined} */
-  @js.native
   trait CellPropertiesFormatrowHe extends StObject {
     
     /**
@@ -780,7 +773,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var autoIndent: js.UndefOr[Boolean] = js.native
+    var autoIndent: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -788,7 +781,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var borders: js.UndefOr[CellBorderCollection] = js.native
+    var borders: js.UndefOr[CellBorderCollection] = js.undefined
     
     /**
       *
@@ -796,7 +789,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var fill: js.UndefOr[CellPropertiesFill] = js.native
+    var fill: js.UndefOr[CellPropertiesFill] = js.undefined
     
     /**
       *
@@ -804,7 +797,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var font: js.UndefOr[CellPropertiesFont] = js.native
+    var font: js.UndefOr[CellPropertiesFont] = js.undefined
     
     /**
       *
@@ -814,7 +807,7 @@ object anon {
       */
     var horizontalAlignment: js.UndefOr[
         HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
-      ] = js.native
+      ] = js.undefined
     
     /**
       *
@@ -822,7 +815,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var indentLevel: js.UndefOr[Double] = js.native
+    var indentLevel: js.UndefOr[Double] = js.undefined
     
     /**
       *
@@ -830,7 +823,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var protection: js.UndefOr[CellPropertiesProtection] = js.native
+    var protection: js.UndefOr[CellPropertiesProtection] = js.undefined
     
     /**
       *
@@ -838,9 +831,9 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.native
+    var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
     
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       *
@@ -848,7 +841,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var shrinkToFit: js.UndefOr[Boolean] = js.native
+    var shrinkToFit: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -856,7 +849,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var textOrientation: js.UndefOr[Double] = js.native
+    var textOrientation: js.UndefOr[Double] = js.undefined
     
     /**
       *
@@ -864,7 +857,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardHeight: js.UndefOr[Boolean] = js.native
+    var useStandardHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -872,7 +865,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var useStandardWidth: js.UndefOr[Boolean] = js.native
+    var useStandardWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       *
@@ -880,7 +873,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.native
+    var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
     
     /**
       *
@@ -888,7 +881,7 @@ object anon {
       *
       * [Api set: ExcelApi 1.9]
       */
-    var wrapText: js.UndefOr[Boolean] = js.native
+    var wrapText: js.UndefOr[Boolean] = js.undefined
   }
   object CellPropertiesFormatrowHe {
     
@@ -995,12 +988,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Cells extends StObject {
     
-    var cells: js.Any = js.native
+    var cells: js.Any
     
-    var format: js.Any = js.native
+    var format: js.Any
   }
   object Cells {
     
@@ -1021,10 +1013,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: Double = js.native
+    var error: Double
   }
   object Error {
     
@@ -1042,12 +1033,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Expand extends StObject {
     
-    var expand: js.UndefOr[String] = js.native
+    var expand: js.UndefOr[String] = js.undefined
     
-    var select: js.UndefOr[String] = js.native
+    var select: js.UndefOr[String] = js.undefined
   }
   object Expand {
     
@@ -1074,12 +1064,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: HostType = js.native
+    var host: HostType
     
-    var platform: PlatformType = js.native
+    var platform: PlatformType
   }
   object Host {
     
@@ -1100,22 +1089,21 @@ object anon {
     }
   }
   
-  @js.native
   trait IgnorePunct extends StObject {
     
-    var ignorePunct: js.UndefOr[Boolean] = js.native
+    var ignorePunct: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreSpace: js.UndefOr[Boolean] = js.native
+    var ignoreSpace: js.UndefOr[Boolean] = js.undefined
     
-    var matchCase: js.UndefOr[Boolean] = js.native
+    var matchCase: js.UndefOr[Boolean] = js.undefined
     
-    var matchPrefix: js.UndefOr[Boolean] = js.native
+    var matchPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var matchSuffix: js.UndefOr[Boolean] = js.native
+    var matchSuffix: js.UndefOr[Boolean] = js.undefined
     
-    var matchWholeWord: js.UndefOr[Boolean] = js.native
+    var matchWholeWord: js.UndefOr[Boolean] = js.undefined
     
-    var matchWildcards: js.UndefOr[Boolean] = js.native
+    var matchWildcards: js.UndefOr[Boolean] = js.undefined
   }
   object IgnorePunct {
     
@@ -1172,10 +1160,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String | Boolean = js.native
+    var message: String | Boolean
   }
   object Message {
     

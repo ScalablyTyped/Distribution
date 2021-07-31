@@ -3,7 +3,6 @@ package typings.rrule
 import typings.rrule.typesMod._ByWeekday
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object weekdayMod {
@@ -14,7 +13,9 @@ object weekdayMod {
   
   @JSImport("rrule/dist/esm/src/weekday", "Weekday")
   @js.native
-  class Weekday protected () extends _ByWeekday {
+  class Weekday protected ()
+    extends StObject
+       with _ByWeekday {
     def this(weekday: Double) = this()
     def this(weekday: Double, n: Double) = this()
     
@@ -31,9 +32,12 @@ object weekdayMod {
   /* static members */
   object Weekday {
     
-    @JSImport("rrule/dist/esm/src/weekday", "Weekday.fromStr")
+    @JSImport("rrule/dist/esm/src/weekday", "Weekday")
     @js.native
-    def fromStr(str: WeekdayStr): Weekday = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromStr(str: WeekdayStr): Weekday = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStr")(str.asInstanceOf[js.Any]).asInstanceOf[Weekday]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -45,7 +49,9 @@ object weekdayMod {
     - typings.rrule.rruleStrings.SA
     - typings.rrule.rruleStrings.SU
   */
-  trait WeekdayStr extends _ByWeekday
+  trait WeekdayStr
+    extends StObject
+       with _ByWeekday
   object WeekdayStr {
     
     @scala.inline

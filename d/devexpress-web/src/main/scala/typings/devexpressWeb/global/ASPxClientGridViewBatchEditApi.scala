@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientGridViewBatchEditApi")
 @js.native
 class ASPxClientGridViewBatchEditApi ()
-  extends typings.devexpressWeb.ASPxClientGridViewBatchEditApi
+  extends StObject
+     with typings.devexpressWeb.ASPxClientGridViewBatchEditApi

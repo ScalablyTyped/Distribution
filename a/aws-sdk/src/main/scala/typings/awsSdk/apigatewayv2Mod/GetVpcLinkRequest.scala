@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVpcLinkRequest extends StObject {
   
   /**
     * The ID of the VPC link.
     */
-  var VpcLinkId: string = js.native
+  var VpcLinkId: string
 }
 object GetVpcLinkRequest {
   

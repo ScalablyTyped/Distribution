@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRiskConfigurationRequest extends StObject {
   
   /**
     * The account takeover risk configuration.
     */
-  var AccountTakeoverRiskConfiguration: js.UndefOr[AccountTakeoverRiskConfigurationType] = js.native
+  var AccountTakeoverRiskConfiguration: js.UndefOr[AccountTakeoverRiskConfigurationType] = js.undefined
   
   /**
     * The app client ID. If ClientId is null, then the risk configuration is mapped to userPoolId. When the client ID is null, the same risk configuration is applied to all the clients in the userPool. Otherwise, ClientId is mapped to the client. When the client ID is not null, the user pool configuration is overridden and the risk configuration for the client is used instead.
     */
-  var ClientId: js.UndefOr[ClientIdType] = js.native
+  var ClientId: js.UndefOr[ClientIdType] = js.undefined
   
   /**
     * The compromised credentials risk configuration.
     */
-  var CompromisedCredentialsRiskConfiguration: js.UndefOr[CompromisedCredentialsRiskConfigurationType] = js.native
+  var CompromisedCredentialsRiskConfiguration: js.UndefOr[CompromisedCredentialsRiskConfigurationType] = js.undefined
   
   /**
     * The configuration to override the risk decision.
     */
-  var RiskExceptionConfiguration: js.UndefOr[RiskExceptionConfigurationType] = js.native
+  var RiskExceptionConfiguration: js.UndefOr[RiskExceptionConfigurationType] = js.undefined
   
   /**
     * The user pool ID. 
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object SetRiskConfigurationRequest {
   

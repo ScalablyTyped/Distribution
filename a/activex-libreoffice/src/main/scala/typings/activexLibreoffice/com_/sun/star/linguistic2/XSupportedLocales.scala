@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,20 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.lang.Locale
   * @see com.sun.star.uno.XInterface
   */
-@js.native
-trait XSupportedLocales extends XInterface {
+trait XSupportedLocales
+  extends StObject
+     with XInterface {
   
   /** @returns the sequence of all supported languages. */
-  val Locales: SafeArray[Locale] = js.native
+  val Locales: SafeArray[Locale]
   
   /** @returns the sequence of all supported languages. */
-  def getLocales(): SafeArray[Locale] = js.native
+  def getLocales(): SafeArray[Locale]
   
   /**
     * @param aLocale specifies the language being checked for support by the object.
     * @returns `TRUE` if the language is supported, otherwise `FALSE` .
     */
-  def hasLocale(aLocale: Locale): Boolean = js.native
+  def hasLocale(aLocale: Locale): Boolean
 }
 object XSupportedLocales {
   

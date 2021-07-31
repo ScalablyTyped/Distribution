@@ -2,17 +2,15 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Names extends StObject {
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
   
-  var namesAbbr: js.Array[String] = js.native
+  var namesAbbr: js.Array[String]
   
-  var namesShort: js.Array[String] = js.native
+  var namesShort: js.Array[String]
 }
 object Names {
   

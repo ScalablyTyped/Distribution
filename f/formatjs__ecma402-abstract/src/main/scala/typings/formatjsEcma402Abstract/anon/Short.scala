@@ -3,17 +3,15 @@ package typings.formatjsEcma402Abstract.anon
 import typings.formatjsEcma402Abstract.dateTimeMod.EraData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Short extends StObject {
   
-  var long: EraData = js.native
+  var long: EraData
   
-  var narrow: EraData = js.native
+  var narrow: EraData
   
-  var short: EraData = js.native
+  var short: EraData
 }
 object Short {
   

@@ -3,35 +3,33 @@ package typings.braintreeWeb.anon
 import typings.braintreeWeb.paypalMod.PayPalShippingAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingAgreementDescription extends StObject {
   
-  var amount: js.UndefOr[String | Double] = js.native
+  var amount: js.UndefOr[String | Double] = js.undefined
   
-  var billingAgreementDescription: js.UndefOr[String] = js.native
+  var billingAgreementDescription: js.UndefOr[String] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var enableShippingAddress: js.UndefOr[Boolean] = js.native
+  var enableShippingAddress: js.UndefOr[Boolean] = js.undefined
   
-  var flow: String = js.native
+  var flow: String
   
-  var intent: js.UndefOr[String] = js.native
+  var intent: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var offerCredit: js.UndefOr[Boolean] = js.native
+  var offerCredit: js.UndefOr[Boolean] = js.undefined
   
-  var shippingAddressEditable: js.UndefOr[Boolean] = js.native
+  var shippingAddressEditable: js.UndefOr[Boolean] = js.undefined
   
-  var shippingAddressOverride: js.UndefOr[PayPalShippingAddress] = js.native
+  var shippingAddressOverride: js.UndefOr[PayPalShippingAddress] = js.undefined
   
-  var useraction: js.UndefOr[String] = js.native
+  var useraction: js.UndefOr[String] = js.undefined
 }
 object BillingAgreementDescription {
   

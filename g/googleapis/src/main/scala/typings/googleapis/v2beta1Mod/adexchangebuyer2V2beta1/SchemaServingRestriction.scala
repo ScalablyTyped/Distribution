@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,33 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * user or publisher geo, a platform, an HTTPS vs HTTP request, or the type of
   * auction).
   */
-@js.native
 trait SchemaServingRestriction extends StObject {
   
   /**
     * The contexts for the restriction.
     */
-  var contexts: js.UndefOr[js.Array[SchemaServingContext]] = js.native
+  var contexts: js.UndefOr[js.Array[SchemaServingContext]] = js.undefined
   
   /**
     * Disapproval bound to this restriction. Only present if
     * status=DISAPPROVED. Can be used to filter the response of the
     * creatives.list method.
     */
-  var disapproval: js.UndefOr[SchemaDisapproval] = js.native
+  var disapproval: js.UndefOr[SchemaDisapproval] = js.undefined
   
   /**
     * Any disapprovals bound to this restriction. Only present if
     * status=DISAPPROVED. Can be used to filter the response of the
     * creatives.list method. Deprecated; please use disapproval field instead.
     */
-  var disapprovalReasons: js.UndefOr[js.Array[SchemaDisapproval]] = js.native
+  var disapprovalReasons: js.UndefOr[js.Array[SchemaDisapproval]] = js.undefined
   
   /**
     * The status of the creative in this context (for example, it has been
     * explicitly disapproved or is pending review).
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaServingRestriction {
   

@@ -4,15 +4,13 @@ import typings.activexExcel.Excel.PivotTable
 import typings.activexExcel.Excel.Workbook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetWb extends StObject {
   
-  val Target: PivotTable = js.native
+  val Target: PivotTable
   
-  val Wb: Workbook = js.native
+  val Wb: Workbook
 }
 object TargetWb {
   

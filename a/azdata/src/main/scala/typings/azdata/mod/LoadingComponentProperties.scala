@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingComponentProperties extends StObject {
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
-  var loadingCompletedText: js.UndefOr[String] = js.native
+  var loadingCompletedText: js.UndefOr[String] = js.undefined
   
-  var loadingText: js.UndefOr[String] = js.native
+  var loadingText: js.UndefOr[String] = js.undefined
   
-  var showText: js.UndefOr[Boolean] = js.native
+  var showText: js.UndefOr[Boolean] = js.undefined
 }
 object LoadingComponentProperties {
   

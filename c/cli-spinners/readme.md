@@ -10,9 +10,9 @@ Spinners for use in the terminal
 | ------------------ | :-------------: |
 | Full name          | cli-spinners |
 | Keywords           | cli, spinner, spinners, terminal, term, console, ascii, unicode, loading, indicator, progress, busy, wait, idle, json |
-| # releases         | 6 |
-| # dependents       | 302 |
-| # downloads        | 226868005 |
+| # releases         | 7 |
+| # dependents       | 347 |
+| # downloads        | 288582107 |
 | # stars            | 23 |
 
 ## Links

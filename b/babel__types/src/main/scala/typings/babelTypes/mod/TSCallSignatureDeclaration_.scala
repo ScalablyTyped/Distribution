@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSCallSignatureDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSCallSignatureDeclaration_
-  extends TSTypeElement
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSCallSignatureDeclaration_
+  extends StObject
+     with BaseNode
+     with TSTypeElement {
   
-  var parameters: js.Array[Identifier_ | RestElement_] = js.native
+  var parameters: js.Array[Identifier_ | RestElement_]
   
-  var typeAnnotation: TSTypeAnnotation_ | Null = js.native
+  var typeAnnotation: TSTypeAnnotation_ | Null
   
-  var typeParameters: TSTypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSCallSignatureDeclaration_ : TSCallSignatureDeclaration = js.native
+  var type_TSCallSignatureDeclaration_ : TSCallSignatureDeclaration
 }
 object TSCallSignatureDeclaration_ {
   
   @scala.inline
-  def apply(parameters: js.Array[Identifier_ | RestElement_], `type`: TSCallSignatureDeclaration): TSCallSignatureDeclaration_ = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration_ = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSCallSignatureDeclaration")
     __obj.asInstanceOf[TSCallSignatureDeclaration_]
   }
   

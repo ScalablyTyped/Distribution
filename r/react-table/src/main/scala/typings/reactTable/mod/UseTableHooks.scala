@@ -2,12 +2,10 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in string ]: any} */ @js.native
-trait UseTableHooks[D /* <: js.Object */] extends StObject {
+- Dropped {[ P in string ]: any} */ trait UseTableHooks[D /* <: js.Object */] extends StObject {
   
   var allColumns: js.Array[
     js.Function2[
@@ -15,11 +13,15 @@ trait UseTableHooks[D /* <: js.Object */] extends StObject {
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       js.Array[Column[D]]
     ]
-  ] = js.native
+  ]
   
   var allColumnsDeps: js.Array[
-    js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
-  ] = js.native
+    js.Function2[
+      /* deps */ js.Array[js.Any], 
+      /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+      js.Array[js.Any]
+    ]
+  ]
   
   var columns: js.Array[
     js.Function2[
@@ -27,27 +29,31 @@ trait UseTableHooks[D /* <: js.Object */] extends StObject {
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       js.Array[Column[D]]
     ]
-  ] = js.native
+  ]
   
   var columnsDeps: js.Array[
-    js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
-  ] = js.native
+    js.Function2[
+      /* deps */ js.Array[js.Any], 
+      /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+      js.Array[js.Any]
+    ]
+  ]
   
-  var getCellProps: js.Array[CellPropGetter[D]] = js.native
+  var getCellProps: js.Array[CellPropGetter[D]]
   
-  var getFooterGroupProps: js.Array[FooterGroupPropGetter[D]] = js.native
+  var getFooterGroupProps: js.Array[FooterGroupPropGetter[D]]
   
-  var getFooterProps: js.Array[FooterPropGetter[D]] = js.native
+  var getFooterProps: js.Array[FooterPropGetter[D]]
   
-  var getHeaderGroupProps: js.Array[HeaderGroupPropGetter[D]] = js.native
+  var getHeaderGroupProps: js.Array[HeaderGroupPropGetter[D]]
   
-  var getHeaderProps: js.Array[HeaderPropGetter[D]] = js.native
+  var getHeaderProps: js.Array[HeaderPropGetter[D]]
   
-  var getRowProps: js.Array[RowPropGetter[D]] = js.native
+  var getRowProps: js.Array[RowPropGetter[D]]
   
-  var getTableBodyProps: js.Array[TableBodyPropGetter[D]] = js.native
+  var getTableBodyProps: js.Array[TableBodyPropGetter[D]]
   
-  var getTableProps: js.Array[TablePropGetter[D]] = js.native
+  var getTableProps: js.Array[TablePropGetter[D]]
   
   var headerGroups: js.Array[
     js.Function2[
@@ -55,15 +61,19 @@ trait UseTableHooks[D /* <: js.Object */] extends StObject {
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       js.Array[HeaderGroup[D]]
     ]
-  ] = js.native
+  ]
   
   var headerGroupsDeps: js.Array[
-    js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
-  ] = js.native
+    js.Function2[
+      /* deps */ js.Array[js.Any], 
+      /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+      js.Array[js.Any]
+    ]
+  ]
   
   var prepareRow: js.Array[
     js.Function2[/* row */ Row[D], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], Unit]
-  ] = js.native
+  ]
   
   var stateReducers: js.Array[
     js.Function4[
@@ -73,7 +83,7 @@ trait UseTableHooks[D /* <: js.Object */] extends StObject {
       /* instance */ js.UndefOr[TableInstance[D]], 
       js.UndefOr[ReducerTableState[D]]
     ]
-  ] = js.native
+  ]
   
   var useControlledState: js.Array[
     js.Function2[
@@ -81,17 +91,17 @@ trait UseTableHooks[D /* <: js.Object */] extends StObject {
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       TableState[D]
     ]
-  ] = js.native
+  ]
   
-  var useFinalInstance: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]] = js.native
+  var useFinalInstance: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]
   
-  var useInstance: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]] = js.native
+  var useInstance: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]
   
-  var useInstanceBeforeDimensions: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]] = js.native
+  var useInstanceBeforeDimensions: js.Array[js.Function1[/* instance */ TableInstance[D], Unit]]
   
   var useOptions: js.Array[
     js.Function2[/* options */ TableOptions[D], /* args */ TableOptions[D], TableOptions[D]]
-  ] = js.native
+  ]
   
   var visibleColumns: js.Array[
     js.Function2[
@@ -99,11 +109,15 @@ trait UseTableHooks[D /* <: js.Object */] extends StObject {
       /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
       js.Array[Column[D]]
     ]
-  ] = js.native
+  ]
   
   var visibleColumnsDeps: js.Array[
-    js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
-  ] = js.native
+    js.Function2[
+      /* deps */ js.Array[js.Any], 
+      /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+      js.Array[js.Any]
+    ]
+  ]
 }
 object UseTableHooks {
   
@@ -117,7 +131,11 @@ object UseTableHooks {
       ]
     ],
     allColumnsDeps: js.Array[
-      js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+      js.Function2[
+        /* deps */ js.Array[js.Any], 
+        /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+        js.Array[js.Any]
+      ]
     ],
     columns: js.Array[
       js.Function2[
@@ -127,7 +145,11 @@ object UseTableHooks {
       ]
     ],
     columnsDeps: js.Array[
-      js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+      js.Function2[
+        /* deps */ js.Array[js.Any], 
+        /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+        js.Array[js.Any]
+      ]
     ],
     getCellProps: js.Array[CellPropGetter[D]],
     getFooterGroupProps: js.Array[FooterGroupPropGetter[D]],
@@ -145,7 +167,11 @@ object UseTableHooks {
       ]
     ],
     headerGroupsDeps: js.Array[
-      js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+      js.Function2[
+        /* deps */ js.Array[js.Any], 
+        /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+        js.Array[js.Any]
+      ]
     ],
     prepareRow: js.Array[
       js.Function2[/* row */ Row[D], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], Unit]
@@ -180,7 +206,11 @@ object UseTableHooks {
       ]
     ],
     visibleColumnsDeps: js.Array[
-      js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+      js.Function2[
+        /* deps */ js.Array[js.Any], 
+        /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+        js.Array[js.Any]
+      ]
     ]
   ): UseTableHooks[D] = {
     val __obj = js.Dynamic.literal(allColumns = allColumns.asInstanceOf[js.Any], allColumnsDeps = allColumnsDeps.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], columnsDeps = columnsDeps.asInstanceOf[js.Any], getCellProps = getCellProps.asInstanceOf[js.Any], getFooterGroupProps = getFooterGroupProps.asInstanceOf[js.Any], getFooterProps = getFooterProps.asInstanceOf[js.Any], getHeaderGroupProps = getHeaderGroupProps.asInstanceOf[js.Any], getHeaderProps = getHeaderProps.asInstanceOf[js.Any], getRowProps = getRowProps.asInstanceOf[js.Any], getTableBodyProps = getTableBodyProps.asInstanceOf[js.Any], getTableProps = getTableProps.asInstanceOf[js.Any], headerGroups = headerGroups.asInstanceOf[js.Any], headerGroupsDeps = headerGroupsDeps.asInstanceOf[js.Any], prepareRow = prepareRow.asInstanceOf[js.Any], stateReducers = stateReducers.asInstanceOf[js.Any], useControlledState = useControlledState.asInstanceOf[js.Any], useFinalInstance = useFinalInstance.asInstanceOf[js.Any], useInstance = useInstance.asInstanceOf[js.Any], useInstanceBeforeDimensions = useInstanceBeforeDimensions.asInstanceOf[js.Any], useOptions = useOptions.asInstanceOf[js.Any], visibleColumns = visibleColumns.asInstanceOf[js.Any], visibleColumnsDeps = visibleColumnsDeps.asInstanceOf[js.Any])
@@ -188,7 +218,7 @@ object UseTableHooks {
   }
   
   @scala.inline
-  implicit class UseTableHooksMutableBuilder[Self <: UseTableHooks[_], D /* <: js.Object */] (val x: Self with UseTableHooks[D]) extends AnyVal {
+  implicit class UseTableHooksMutableBuilder[Self <: UseTableHooks[?], D /* <: js.Object */] (val x: Self & UseTableHooks[D]) extends AnyVal {
     
     @scala.inline
     def setAllColumns(
@@ -204,7 +234,11 @@ object UseTableHooks {
     @scala.inline
     def setAllColumnsDeps(
       value: js.Array[
-          js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+          js.Function2[
+            /* deps */ js.Array[js.Any], 
+            /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+            js.Array[js.Any]
+          ]
         ]
     ): Self = StObject.set(x, "allColumnsDeps", value.asInstanceOf[js.Any])
     
@@ -240,7 +274,11 @@ object UseTableHooks {
     @scala.inline
     def setColumnsDeps(
       value: js.Array[
-          js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+          js.Function2[
+            /* deps */ js.Array[js.Any], 
+            /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+            js.Array[js.Any]
+          ]
         ]
     ): Self = StObject.set(x, "columnsDeps", value.asInstanceOf[js.Any])
     
@@ -324,7 +362,11 @@ object UseTableHooks {
     @scala.inline
     def setHeaderGroupsDeps(
       value: js.Array[
-          js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+          js.Function2[
+            /* deps */ js.Array[js.Any], 
+            /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+            js.Array[js.Any]
+          ]
         ]
     ): Self = StObject.set(x, "headerGroupsDeps", value.asInstanceOf[js.Any])
     
@@ -442,7 +484,11 @@ object UseTableHooks {
     @scala.inline
     def setVisibleColumnsDeps(
       value: js.Array[
-          js.Function2[/* deps */ js.Array[_], /* meta */ Meta[D, scala.Nothing, MetaBase[D]], js.Array[_]]
+          js.Function2[
+            /* deps */ js.Array[js.Any], 
+            /* meta */ Meta[D, scala.Nothing, MetaBase[D]], 
+            js.Array[js.Any]
+          ]
         ]
     ): Self = StObject.set(x, "visibleColumnsDeps", value.asInstanceOf[js.Any])
     

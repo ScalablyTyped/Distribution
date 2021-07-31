@@ -2,10 +2,8 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reason extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Reason extends StObject {
     *
     * This is displayed in the code actions UI.
     */
-  val reason: String = js.native
+  val reason: String
 }
 object Reason {
   

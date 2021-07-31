@@ -6,7 +6,6 @@ import typings.rmcTabs.anon.PropsTypechildrenReactNod
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPaneMod {
@@ -47,20 +46,19 @@ object tabPaneMod {
     def defaultProps_=(x: FixX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PropsType extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var fixX: js.UndefOr[Boolean] = js.native
+    var fixX: js.UndefOr[Boolean] = js.undefined
     
-    var fixY: js.UndefOr[Boolean] = js.native
+    var fixY: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
   }
   object PropsType {
     

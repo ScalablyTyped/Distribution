@@ -2,7 +2,6 @@ package typings.jqueryDynatree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,7 +47,7 @@ trait DynaTree extends StObject {
   
   def selectKey(key: String, flag: String): DynaTreeNode = js.native
   
-  def serializeArray(stopOnParents: Boolean): js.Array[_] = js.native
+  def serializeArray(stopOnParents: Boolean): js.Array[js.Any] = js.native
   
   def toDict(): js.Any = js.native
   def toDict(includeRoot: Boolean): js.Any = js.native

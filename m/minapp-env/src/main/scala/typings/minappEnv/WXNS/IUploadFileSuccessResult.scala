@@ -2,15 +2,15 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IUploadFileSuccessResult extends CommonAPIResult {
+trait IUploadFileSuccessResult
+  extends StObject
+     with CommonAPIResult {
   
-  var data: String = js.native
+  var data: String
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object IUploadFileSuccessResult {
   

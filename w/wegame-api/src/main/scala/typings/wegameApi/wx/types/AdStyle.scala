@@ -2,41 +2,39 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdStyle extends StObject {
   
   /**
     * banner 广告组件的高度
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * 广告组件的左上角横坐标
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * banner 广告组件经过缩放后真实的高度
     */
-  var realHeight: Double = js.native
+  var realHeight: Double
   
   /**
     * banner 广告组件经过缩放后真实的宽度
     */
-  var realWidth: Double = js.native
+  var realWidth: Double
   
   /**
     * banner 广告组件的左上角纵坐标
     */
-  var top: Double = js.native
+  var top: Double
   
   /**
     * banner 广告组件的宽度。最小 300，最大至 屏幕宽度（屏幕宽度可以通过 wx.getSystemInfoSync() 获取）。
     */
-  var width: Double = js.native
+  var width: Double
 }
 object AdStyle {
   

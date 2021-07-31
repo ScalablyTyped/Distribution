@@ -3,55 +3,53 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildDefinitionStep extends StObject {
   
   /**
     * Indicates whether this step should run even if a previous step fails.
     */
-  var alwaysRun: Boolean = js.native
+  var alwaysRun: Boolean
   
   /**
     * A condition that determines whether this step should run.
     */
-  var condition: String = js.native
+  var condition: String
   
   /**
     * Indicates whether the phase should continue even if this step fails.
     */
-  var continueOnError: Boolean = js.native
+  var continueOnError: Boolean
   
   /**
     * The display name for this step.
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * Indicates whether the step is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var environment: StringDictionary[String] = js.native
+  var environment: StringDictionary[String]
   
-  var inputs: StringDictionary[String] = js.native
+  var inputs: StringDictionary[String]
   
   /**
     * The reference name for this step.
     */
-  var refName: String = js.native
+  var refName: String
   
   /**
     * The task associated with this step.
     */
-  var task: TaskDefinitionReference = js.native
+  var task: TaskDefinitionReference
   
   /**
     * The time, in minutes, that this step is allowed to run.
     */
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
 }
 object BuildDefinitionStep {
   

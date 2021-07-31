@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskSnapshotInfo extends StObject {
   
   /**
     * The size of the disk in GB (e.g., 32).
     */
-  var sizeInGb: js.UndefOr[integer] = js.native
+  var sizeInGb: js.UndefOr[integer] = js.undefined
 }
 object DiskSnapshotInfo {
   

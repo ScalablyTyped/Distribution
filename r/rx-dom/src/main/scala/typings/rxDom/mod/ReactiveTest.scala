@@ -2,7 +2,6 @@ package typings.rxDom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactiveTest {
@@ -31,9 +30,8 @@ object ReactiveTest {
     * @param ticks Recorded virtual time the OnCompleted notification occurs.
     * @return Recorded OnCompleted notification.
     */
-  @JSImport("rx-dom", "ReactiveTest.onCompleted")
-  @js.native
-  def onCompleted(ticks: Double): typings.rx.Rx.Recorded = js.native
+  @scala.inline
+  def onCompleted(ticks: Double): typings.rx.Rx.Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Recorded]
   
   /**
     * Factory method for an OnError notification record at a given time with a given error.
@@ -45,9 +43,8 @@ object ReactiveTest {
     * @param exception Recorded exception stored in the OnError notification.
     * @return Recorded OnError notification.
     */
-  @JSImport("rx-dom", "ReactiveTest.onError")
-  @js.native
-  def onError(ticks: Double, exception: js.Any): typings.rx.Rx.Recorded = js.native
+  @scala.inline
+  def onError(ticks: Double, exception: js.Any): typings.rx.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Recorded]
   /**
     * Factory method for an OnError notification record at a given time with a given error.
     *
@@ -58,9 +55,8 @@ object ReactiveTest {
     * @param exception Recorded exception stored in the OnError notification.
     * @return Recorded OnError notification.
     */
-  @JSImport("rx-dom", "ReactiveTest.onError")
-  @js.native
-  def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): typings.rx.Rx.Recorded = js.native
+  @scala.inline
+  def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): typings.rx.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Recorded]
   
   /**
     * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
@@ -72,9 +68,8 @@ object ReactiveTest {
     * @param value Recorded value stored in the OnNext notification or a predicate.
     * @return Recorded OnNext notification.
     */
-  @JSImport("rx-dom", "ReactiveTest.onNext")
-  @js.native
-  def onNext(ticks: Double, predicate: js.Function1[/* value */ js.Any, Boolean]): typings.rx.Rx.Recorded = js.native
+  @scala.inline
+  def onNext(ticks: Double, predicate: js.Function1[/* value */ js.Any, Boolean]): typings.rx.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Recorded]
   /**
     * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
     *
@@ -85,9 +80,8 @@ object ReactiveTest {
     * @param value Recorded value stored in the OnNext notification or a predicate.
     * @return Recorded OnNext notification.
     */
-  @JSImport("rx-dom", "ReactiveTest.onNext")
-  @js.native
-  def onNext(ticks: Double, value: js.Any): typings.rx.Rx.Recorded = js.native
+  @scala.inline
+  def onNext(ticks: Double, value: js.Any): typings.rx.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Recorded]
   
   /**
     * Factory method for a subscription record based on a given subscription and disposal time.
@@ -96,12 +90,10 @@ object ReactiveTest {
     * @param end Virtual time indicating when the subscription was disposed.
     * @return Subscription object.
     */
-  @JSImport("rx-dom", "ReactiveTest.subscribe")
-  @js.native
-  def subscribe(subscribeAt: Double): typings.rx.Rx.Subscription = js.native
-  @JSImport("rx-dom", "ReactiveTest.subscribe")
-  @js.native
-  def subscribe(subscribeAt: Double, unsubscribeAt: Double): typings.rx.Rx.Subscription = js.native
+  @scala.inline
+  def subscribe(subscribeAt: Double): typings.rx.Rx.Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[typings.rx.Rx.Subscription]
+  @scala.inline
+  def subscribe(subscribeAt: Double, unsubscribeAt: Double): typings.rx.Rx.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[typings.rx.Rx.Subscription]
   
   /** Default virtual time used to subscribe to observable sequences in unit tests. */
   @JSImport("rx-dom", "ReactiveTest.subscribed")

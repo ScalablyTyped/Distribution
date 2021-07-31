@@ -6,13 +6,11 @@ import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.Unauthorized
 import typings.appleMapkitJsBrowser.appleMapkitJsBrowserStrings.`Too Many Requests`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitializationEvent extends StObject {
   
-  var status: Initialized | Refreshed | Unauthorized | (`Too Many Requests`) = js.native
+  var status: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)
 }
 object InitializationEvent {
   

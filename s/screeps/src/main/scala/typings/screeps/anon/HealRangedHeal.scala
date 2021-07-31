@@ -2,21 +2,19 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealRangedHeal extends StObject {
   
-  var heal: typings.screeps.screepsNumbers.`4` = js.native
+  var heal: typings.screeps.screepsNumbers.`4`
   
-  var rangedHeal: typings.screeps.screepsNumbers.`4` = js.native
+  var rangedHeal: typings.screeps.screepsNumbers.`4`
 }
 object HealRangedHeal {
   
   @scala.inline
-  def apply(heal: typings.screeps.screepsNumbers.`4`, rangedHeal: typings.screeps.screepsNumbers.`4`): HealRangedHeal = {
-    val __obj = js.Dynamic.literal(heal = heal.asInstanceOf[js.Any], rangedHeal = rangedHeal.asInstanceOf[js.Any])
+  def apply(): HealRangedHeal = {
+    val __obj = js.Dynamic.literal(heal = 4, rangedHeal = 4)
     __obj.asInstanceOf[HealRangedHeal]
   }
   

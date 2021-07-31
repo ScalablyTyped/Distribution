@@ -6,7 +6,6 @@ import typings.qlikEngineapi.anon.QFolder
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The handle member in the JSON request for all methods listed in this section is -1.
   */
 @js.native
-trait IGlobal extends IGeneratedAPI {
+trait IGlobal
+  extends StObject
+     with IGeneratedAPI {
   
   /**
     * Sets an abort flag on all pending and ongoing requests in the current engine session.
@@ -97,8 +98,8 @@ trait IGlobal extends IGeneratedAPI {
     * >> This parameter is optional.
     * >> The default value is Main.
     */
-  def createApp(qAppName: String): js.Promise[_] = js.native
-  def createApp(qAppName: String, qLocalizedScriptMainSection: String): js.Promise[_] = js.native
+  def createApp(qAppName: String): js.Promise[js.Any] = js.native
+  def createApp(qAppName: String, qLocalizedScriptMainSection: String): js.Promise[js.Any] = js.native
   
   // ?Result
   /**
@@ -118,72 +119,67 @@ trait IGlobal extends IGeneratedAPI {
     * @returns - A Promise of App
     */
   def createDocEx(qDocName: String): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: js.UndefOr[scala.Nothing],
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: String
-  ): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: String,
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
-  def createDocEx(qDocName: String, qUserName: js.UndefOr[scala.Nothing], qPassword: String): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: String,
-    qSerial: js.UndefOr[scala.Nothing],
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
-  def createDocEx(qDocName: String, qUserName: js.UndefOr[scala.Nothing], qPassword: String, qSerial: String): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: String,
-    qSerial: String,
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
   def createDocEx(qDocName: String, qUserName: String): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: String,
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: js.UndefOr[scala.Nothing],
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
-  def createDocEx(qDocName: String, qUserName: String, qPassword: js.UndefOr[scala.Nothing], qSerial: String): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: String,
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: String,
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
   def createDocEx(qDocName: String, qUserName: String, qPassword: String): js.Promise[IApp] = js.native
-  def createDocEx(
-    qDocName: String,
-    qUserName: String,
-    qPassword: String,
-    qSerial: js.UndefOr[scala.Nothing],
-    qLocalizedScriptMainSection: String
-  ): js.Promise[IApp] = js.native
   def createDocEx(qDocName: String, qUserName: String, qPassword: String, qSerial: String): js.Promise[IApp] = js.native
   def createDocEx(
     qDocName: String,
     qUserName: String,
     qPassword: String,
     qSerial: String,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: String,
+    qPassword: String,
+    qSerial: Unit,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(qDocName: String, qUserName: String, qPassword: Unit, qSerial: String): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: String,
+    qPassword: Unit,
+    qSerial: String,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: String,
+    qPassword: Unit,
+    qSerial: Unit,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(qDocName: String, qUserName: Unit, qPassword: String): js.Promise[IApp] = js.native
+  def createDocEx(qDocName: String, qUserName: Unit, qPassword: String, qSerial: String): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: Unit,
+    qPassword: String,
+    qSerial: String,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: Unit,
+    qPassword: String,
+    qSerial: Unit,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(qDocName: String, qUserName: Unit, qPassword: Unit, qSerial: String): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: Unit,
+    qPassword: Unit,
+    qSerial: String,
+    qLocalizedScriptMainSection: String
+  ): js.Promise[IApp] = js.native
+  def createDocEx(
+    qDocName: String,
+    qUserName: Unit,
+    qPassword: Unit,
+    qSerial: Unit,
     qLocalizedScriptMainSection: String
   ): js.Promise[IApp] = js.native
   
@@ -587,68 +583,21 @@ trait IGlobal extends IGeneratedAPI {
     * @returns A Promise of App
     */
   def openDoc(qDocName: String): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: js.UndefOr[scala.Nothing],
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: String
-  ): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: String,
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
-  def openDoc(qDocName: String, qUserName: js.UndefOr[scala.Nothing], qPassword: String): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: String,
-    qSerial: js.UndefOr[scala.Nothing],
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
-  def openDoc(qDocName: String, qUserName: js.UndefOr[scala.Nothing], qPassword: String, qSerial: String): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: js.UndefOr[scala.Nothing],
-    qPassword: String,
-    qSerial: String,
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
   def openDoc(qDocName: String, qUserName: String): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: String,
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: js.UndefOr[scala.Nothing],
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
-  def openDoc(qDocName: String, qUserName: String, qPassword: js.UndefOr[scala.Nothing], qSerial: String): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: String,
-    qPassword: js.UndefOr[scala.Nothing],
-    qSerial: String,
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
   def openDoc(qDocName: String, qUserName: String, qPassword: String): js.Promise[IApp] = js.native
-  def openDoc(
-    qDocName: String,
-    qUserName: String,
-    qPassword: String,
-    qSerial: js.UndefOr[scala.Nothing],
-    qNoData: Boolean
-  ): js.Promise[IApp] = js.native
   def openDoc(qDocName: String, qUserName: String, qPassword: String, qSerial: String): js.Promise[IApp] = js.native
   def openDoc(qDocName: String, qUserName: String, qPassword: String, qSerial: String, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: String, qPassword: String, qSerial: Unit, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: String, qPassword: Unit, qSerial: String): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: String, qPassword: Unit, qSerial: String, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: String, qPassword: Unit, qSerial: Unit, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: String): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: String, qSerial: String): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: String, qSerial: String, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: String, qSerial: Unit, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: Unit, qSerial: String): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: Unit, qSerial: String, qNoData: Boolean): js.Promise[IApp] = js.native
+  def openDoc(qDocName: String, qUserName: Unit, qPassword: Unit, qSerial: Unit, qNoData: Boolean): js.Promise[IApp] = js.native
   
   /**
     * @deprecated since version 12.20.0

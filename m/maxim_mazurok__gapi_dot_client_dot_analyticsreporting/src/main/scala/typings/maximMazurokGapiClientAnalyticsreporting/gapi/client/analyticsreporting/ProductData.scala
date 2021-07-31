@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductData extends StObject {
   
   /** The total revenue from purchased product items. */
-  var itemRevenue: js.UndefOr[Double] = js.native
+  var itemRevenue: js.UndefOr[Double] = js.undefined
   
   /** The product name, supplied by the e-commerce tracking application, for the purchased items. */
-  var productName: js.UndefOr[String] = js.native
+  var productName: js.UndefOr[String] = js.undefined
   
   /** Total number of this product units in the transaction. */
-  var productQuantity: js.UndefOr[String] = js.native
+  var productQuantity: js.UndefOr[String] = js.undefined
   
   /** Unique code that represents the product. */
-  var productSku: js.UndefOr[String] = js.native
+  var productSku: js.UndefOr[String] = js.undefined
 }
 object ProductData {
   

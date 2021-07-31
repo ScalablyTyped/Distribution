@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetPageScaleFactorRequest extends StObject {
   
   /**
     * Page scale factor.
     */
-  var pageScaleFactor: Double = js.native
+  var pageScaleFactor: Double
 }
 object SetPageScaleFactorRequest {
   

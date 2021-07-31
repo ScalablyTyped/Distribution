@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.tlsMod.TLSSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,9 +25,9 @@ object mod extends Shortcut {
       * @param port VNDB port
       */
     def start(): js.Promise[typings.vndb.mod.vndb] = js.native
-    def start(host: js.UndefOr[scala.Nothing], port: Double): js.Promise[typings.vndb.mod.vndb] = js.native
     def start(host: String): js.Promise[typings.vndb.mod.vndb] = js.native
     def start(host: String, port: Double): js.Promise[typings.vndb.mod.vndb] = js.native
+    def start(host: Unit, port: Double): js.Promise[typings.vndb.mod.vndb] = js.native
   }
   
   type _To = VNDB_
@@ -39,21 +38,20 @@ object mod extends Shortcut {
   /**
     * Object containing the socket and methods to interact with it
     */
-  @js.native
   trait vndb extends StObject {
     
     /**
       * Close the connection to the VNDB API
       */
-    def end(): js.Promise[Unit] = js.native
+    def end(): js.Promise[Unit]
     
-    var socket: TLSSocket = js.native
+    var socket: TLSSocket
     
     /**
       * Send a message to the VNDB API, according to https://vndb.org/d11
       * @param message message to send to the VNDB API
       */
-    def write(message: String): js.Promise[String] = js.native
+    def write(message: String): js.Promise[String]
   }
   object vndb {
     

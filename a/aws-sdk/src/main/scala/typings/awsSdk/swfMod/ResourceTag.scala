@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTag extends StObject {
   
   /**
     * The key of a tag.
     */
-  var key: ResourceTagKey = js.native
+  var key: ResourceTagKey
   
   /**
     * The value of a tag.
     */
-  var value: js.UndefOr[ResourceTagValue] = js.native
+  var value: js.UndefOr[ResourceTagValue] = js.undefined
 }
 object ResourceTag {
   

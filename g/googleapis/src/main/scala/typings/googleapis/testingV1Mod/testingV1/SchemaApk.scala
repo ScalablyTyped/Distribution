@@ -2,25 +2,23 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Android package file to install.
   */
-@js.native
 trait SchemaApk extends StObject {
   
   /**
     * The path to an APK to be installed on the device before the test begins.
     */
-  var location: js.UndefOr[SchemaFileReference] = js.native
+  var location: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * The java package for the APK to be installed. Value is determined by
     * examining the application&#39;s manifest.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object SchemaApk {
   

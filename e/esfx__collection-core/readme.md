@@ -11,8 +11,8 @@ A low-level Symbol-based API for defining common collection behaviors.
 | Full name          | @esfx/collection-core |
 | Keywords           | - |
 | # releases         | 15 |
-| # dependents       | 9 |
-| # downloads        | 29613 |
+| # dependents       | 15 |
+| # downloads        | 22966 |
 | # stars            | 0 |
 
 ## Links

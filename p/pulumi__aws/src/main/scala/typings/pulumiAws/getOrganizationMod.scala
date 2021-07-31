@@ -6,75 +6,75 @@ import typings.pulumiAws.outputMod.organizations.GetOrganizationRoot
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOrganizationMod {
   
-  @JSImport("@pulumi/aws/organizations/getOrganization", "getOrganization")
+  @JSImport("@pulumi/aws/organizations/getOrganization", JSImport.Namespace)
   @js.native
-  def getOrganization(): js.Promise[GetOrganizationResult] = js.native
-  @JSImport("@pulumi/aws/organizations/getOrganization", "getOrganization")
-  @js.native
-  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOrganization(): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")().asInstanceOf[js.Promise[GetOrganizationResult]]
+  @scala.inline
+  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationResult]]
+  
   trait GetOrganizationResult extends StObject {
     
     /**
       * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
       */
-    val accounts: js.Array[GetOrganizationAccount] = js.native
+    val accounts: js.Array[GetOrganizationAccount]
     
     /**
       * ARN of the root
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * A list of AWS service principal names that have integration enabled with your organization. Organization must have `featureSet` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
       */
-    val awsServiceAccessPrincipals: js.Array[String] = js.native
+    val awsServiceAccessPrincipals: js.Array[String]
     
     /**
       * A list of Organizations policy types that are enabled in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
       */
-    val enabledPolicyTypes: js.Array[String] = js.native
+    val enabledPolicyTypes: js.Array[String]
     
     /**
       * The FeatureSet of the organization.
       */
-    val featureSet: String = js.native
+    val featureSet: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The Amazon Resource Name (ARN) of the account that is designated as the master account for the organization.
       */
-    val masterAccountArn: String = js.native
+    val masterAccountArn: String
     
     /**
       * The email address that is associated with the AWS account that is designated as the master account for the organization.
       */
-    val masterAccountEmail: String = js.native
+    val masterAccountEmail: String
     
     /**
       * The unique identifier (ID) of the master account of an organization.
       */
-    val masterAccountId: String = js.native
+    val masterAccountId: String
     
     /**
       * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
       */
-    val nonMasterAccounts: js.Array[GetOrganizationNonMasterAccount] = js.native
+    val nonMasterAccounts: js.Array[GetOrganizationNonMasterAccount]
     
     /**
       * List of organization roots. All elements have these attributes:
       */
-    val roots: js.Array[GetOrganizationRoot] = js.native
+    val roots: js.Array[GetOrganizationRoot]
   }
   object GetOrganizationResult {
     

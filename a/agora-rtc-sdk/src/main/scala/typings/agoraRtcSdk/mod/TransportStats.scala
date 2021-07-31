@@ -11,7 +11,6 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.wifi
 import typings.agoraRtcSdk.agoraRtcSdkStrings.wimax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If {@link getTransportStats} is called successfully, this interface provides the statistics.
   */
-@js.native
 trait TransportStats extends StObject {
   
   /**
@@ -42,13 +40,13 @@ trait TransportStats extends StObject {
     */
   val NetworkType: js.UndefOr[
     bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED
-  ] = js.native
+  ] = js.undefined
   
   /** The estimated available bandwidth for sending the stream, in Kbps. */
-  val OutgoingAvailableBandwidth: js.UndefOr[String] = js.native
+  val OutgoingAvailableBandwidth: js.UndefOr[String] = js.undefined
   
   /** RTT (Round-Trip Time) between the SDK and the access node of the SD-RTN, in ms. */
-  val RTT: js.UndefOr[String] = js.native
+  val RTT: js.UndefOr[String] = js.undefined
 }
 object TransportStats {
   

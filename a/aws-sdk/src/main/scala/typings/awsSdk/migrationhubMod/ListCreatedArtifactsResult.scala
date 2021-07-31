@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCreatedArtifactsResult extends StObject {
   
   /**
     * List of created artifacts up to the maximum number of results specified in the request.
     */
-  var CreatedArtifactList: js.UndefOr[typings.awsSdk.migrationhubMod.CreatedArtifactList] = js.native
+  var CreatedArtifactList: js.UndefOr[typings.awsSdk.migrationhubMod.CreatedArtifactList] = js.undefined
   
   /**
     * If there are more created artifacts than the max result, return the next token to be passed to the next call as a bookmark of where to start from.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object ListCreatedArtifactsResult {
   

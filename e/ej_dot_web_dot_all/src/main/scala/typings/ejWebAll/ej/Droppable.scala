@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Droppable extends Widget_ {
+trait Droppable
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -15,24 +16,23 @@ trait Droppable extends Widget_ {
 }
 object Droppable {
   
-  @js.native
   trait DropEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the autocomplete model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the element which accepts the droppable element.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DropEventArgs {
     
@@ -71,30 +71,29 @@ object Droppable {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Used to accept the specified draggable items.
       * @Default {null}
       */
-    var accept: js.UndefOr[js.Any] = js.native
+    var accept: js.UndefOr[js.Any] = js.undefined
     
     /** This event is triggered when the mouse up is moved during the dragging.
       */
-    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.native
+    var drop: js.UndefOr[js.Function1[/* e */ DropEventArgs, Unit]] = js.undefined
     
     /** This event is triggered when the mouse is moved out.
       */
-    var out: js.UndefOr[js.Function1[/* e */ OutEventArgs, Unit]] = js.native
+    var out: js.UndefOr[js.Function1[/* e */ OutEventArgs, Unit]] = js.undefined
     
     /** This event is triggered when the mouse is moved over.
       */
-    var over: js.UndefOr[js.Function1[/* e */ OverEventArgs, Unit]] = js.native
+    var over: js.UndefOr[js.Function1[/* e */ OverEventArgs, Unit]] = js.undefined
     
     /** Used to group sets of droppable items, in addition to droppable's accept option. A draggable with the same scope value as a droppable will be accepted by the droppable.
       * @Default {'default'}
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -139,24 +138,23 @@ object Droppable {
     }
   }
   
-  @js.native
   trait OutEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the autocomplete model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the mouse out over the element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OutEventArgs {
     
@@ -195,24 +193,23 @@ object Droppable {
     }
   }
   
-  @js.native
   trait OverEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the autocomplete model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the mouse over the element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OverEventArgs {
     

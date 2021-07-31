@@ -4,19 +4,17 @@ import typings.awsSdkClientCognitoIdentity.mod.CognitoIdentityClient
 import typings.awsSdkCredentialProviderCognitoIdentity.loginsMod.Logins
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cognitoProviderParametersMod {
   
-  @js.native
   trait CognitoProviderParameters extends StObject {
     
     /**
       * The SDK client with which the credential provider will contact the Amazon
       * Cognito service.
       */
-    var client: CognitoIdentityClient = js.native
+    var client: CognitoIdentityClient
     
     /**
       * The Amazon Resource Name (ARN) of the role to be assumed when multiple
@@ -24,7 +22,7 @@ object cognitoProviderParametersMod {
       * a SAML-based identity provider. This parameter is optional for identity
       * providers that do not support role customization.
       */
-    var customRoleArn: js.UndefOr[String] = js.native
+    var customRoleArn: js.UndefOr[String] = js.undefined
     
     /**
       * A set of key-value pairs that map external identity provider names to
@@ -34,7 +32,7 @@ object cognitoProviderParametersMod {
       * Logins should not be specified when trying to get credentials for an
       * unauthenticated identity.
       */
-    var logins: js.UndefOr[Logins] = js.native
+    var logins: js.UndefOr[Logins] = js.undefined
   }
   object CognitoProviderParameters {
     

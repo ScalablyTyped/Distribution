@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobScopeTerm extends StObject {
   
   /**
     * A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job.
     */
-  var simpleScopeTerm: js.UndefOr[SimpleScopeTerm] = js.native
+  var simpleScopeTerm: js.UndefOr[SimpleScopeTerm] = js.undefined
   
   /**
     * A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job.
     */
-  var tagScopeTerm: js.UndefOr[TagScopeTerm] = js.native
+  var tagScopeTerm: js.UndefOr[TagScopeTerm] = js.undefined
 }
 object JobScopeTerm {
   

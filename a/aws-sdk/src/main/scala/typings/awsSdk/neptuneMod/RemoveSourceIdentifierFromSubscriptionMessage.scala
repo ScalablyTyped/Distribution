@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveSourceIdentifierFromSubscriptionMessage extends StObject {
   
   /**
     *  The source identifier to be removed from the subscription, such as the DB instance identifier for a DB instance or the name of a security group.
     */
-  var SourceIdentifier: String = js.native
+  var SourceIdentifier: String
   
   /**
     * The name of the event notification subscription you want to remove a source identifier from.
     */
-  var SubscriptionName: String = js.native
+  var SubscriptionName: String
 }
 object RemoveSourceIdentifierFromSubscriptionMessage {
   

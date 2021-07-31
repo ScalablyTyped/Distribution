@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.rowMod.PanelRow.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowMod {
@@ -24,7 +23,6 @@ object rowMod {
   
   object PanelRow {
     
-    @js.native
     trait Props extends StObject {
       
       /**
@@ -32,7 +30,7 @@ object rowMod {
         * classes of the wrapper div. If no `className` is passed only
         * `components-panel__row` is used.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
     }
     object Props {
       

@@ -2,31 +2,29 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateModelVersionResult extends StObject {
   
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[modelIdentifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.undefined
   
   /**
     * The model type.
     */
-  var modelType: js.UndefOr[ModelTypeEnum] = js.native
+  var modelType: js.UndefOr[ModelTypeEnum] = js.undefined
   
   /**
     * The model version number of the model version updated.
     */
-  var modelVersionNumber: js.UndefOr[floatVersionString] = js.native
+  var modelVersionNumber: js.UndefOr[floatVersionString] = js.undefined
   
   /**
     * The status of the updated model version.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object UpdateModelVersionResult {
   

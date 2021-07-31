@@ -2,7 +2,6 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Convex")
@@ -36,7 +35,10 @@ class Convex () extends Shape {
 /* static members */
 object Convex {
   
-  @JSImport("p2", "Convex.triangleArea")
+  @JSImport("p2", "Convex")
   @js.native
-  def triangleArea(a: js.Array[Double], b: js.Array[Double], c: js.Array[Double]): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def triangleArea(a: js.Array[Double], b: js.Array[Double], c: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("triangleArea")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -2,20 +2,18 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * UpdateMasterRequest updates the master of the cluster.
   */
-@js.native
 trait SchemaUpdateMasterRequest extends StObject {
   
   /**
     * Deprecated. The name of the cluster to upgrade. This field has been
     * deprecated and replaced by the name field.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The Kubernetes version to change the master to.  Users may specify either
@@ -27,27 +25,27 @@ trait SchemaUpdateMasterRequest extends StObject {
     * picks an explicit Kubernetes version - &quot;-&quot;: picks the default
     * Kubernetes version
     */
-  var masterVersion: js.UndefOr[String] = js.native
+  var masterVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The name (project, location, cluster) of the cluster to update. Specified
     * in the format &#39;projects/x/locations/x/clusters/ *&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The Google Developers Console [project ID or project
     * number](https://support.google.com/cloud/answer/6158840). This field has
     * been deprecated and replaced by the name field.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the cluster resides. This
     * field has been deprecated and replaced by the name field.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateMasterRequest {
   

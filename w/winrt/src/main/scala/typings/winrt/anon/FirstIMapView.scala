@@ -4,15 +4,13 @@ import typings.winrt.Windows.ApplicationModel.Resources.Core.ResourceMap
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstIMapView extends StObject {
   
-  var first: IMapView[String, ResourceMap] = js.native
+  var first: IMapView[String, ResourceMap]
   
-  var second: IMapView[String, ResourceMap] = js.native
+  var second: IMapView[String, ResourceMap]
 }
 object FirstIMapView {
   

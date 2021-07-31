@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDashboardsOutput extends StObject {
   
   /**
     * The list of matching dashboards.
     */
-  var DashboardEntries: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardEntries] = js.native
+  var DashboardEntries: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardEntries] = js.undefined
   
   /**
     * The token that marks the start of the next batch of returned results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
 }
 object ListDashboardsOutput {
   

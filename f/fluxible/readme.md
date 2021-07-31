@@ -12,7 +12,7 @@ A pluggable container for isomorphic flux applications
 | Keywords           | yahoo, flux, react, fluxible, isomorphic |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 134614 |
+| # downloads        | 173627 |
 | # stars            | 3 |
 
 ## Links

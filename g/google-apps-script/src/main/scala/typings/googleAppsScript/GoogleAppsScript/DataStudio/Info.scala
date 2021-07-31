@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,12 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setId("info1")
   *       .setText("This text gives some context on the configuration.");
   */
-@js.native
 trait Info extends StObject {
   
-  def setId(id: String): Info = js.native
+  def setId(id: String): Info
   
-  def setText(text: String): Info = js.native
+  def setText(text: String): Info
 }
 object Info {
   

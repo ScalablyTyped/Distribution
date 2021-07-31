@@ -7,29 +7,29 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object middlewareMod {
   
-  @JSImport("aws-serverless-express/middleware", "eventContext")
+  @JSImport("aws-serverless-express/middleware", JSImport.Namespace)
   @js.native
-  def eventContext(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("aws-serverless-express/middleware", "eventContext")
-  @js.native
-  def eventContext(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def eventContext(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventContext")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def eventContext(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventContext")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   // tslint:disable-line:ban-types
   type NonFunctionProperties[T] = Pick[T, NonFunctionPropertyNames[T]]
   
   type NonFunctionPropertyNames[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   
-  @js.native
   trait Options extends StObject {
     
-    var deleteHeaders: js.UndefOr[Boolean] = js.native
+    var deleteHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var reqPropKey: js.UndefOr[String] = js.native
+    var reqPropKey: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -59,10 +59,9 @@ object middlewareMod {
   /* augmented module */
   object httpAugmentingMod {
     
-    @js.native
     trait IncomingMessage extends StObject {
       
-      var apiGateway: js.UndefOr[Context] = js.native
+      var apiGateway: js.UndefOr[Context] = js.undefined
     }
     object IncomingMessage {
       

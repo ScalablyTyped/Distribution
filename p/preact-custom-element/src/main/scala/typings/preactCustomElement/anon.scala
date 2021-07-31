@@ -2,15 +2,13 @@ package typings.preactCustomElement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Shadow extends StObject {
     
-    var shadow: Boolean = js.native
+    var shadow: Boolean
   }
   object Shadow {
     

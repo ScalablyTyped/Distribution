@@ -20,7 +20,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagespeedonlineV2Mod {
@@ -82,7 +81,7 @@ object pagespeedonlineV2Mod {
         */
       def runpagespeed(): GaxiosPromise[SchemaResult] = js.native
       def runpagespeed(callback: BodyResponseCallback[SchemaResult]): Unit = js.native
-      def runpagespeed(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResult] = js.native
+      def runpagespeed(params: Unit, options: MethodOptions): GaxiosPromise[SchemaResult] = js.native
       def runpagespeed(params: ParamsResourcePagespeedapiRunpagespeed): GaxiosPromise[SchemaResult] = js.native
       def runpagespeed(params: ParamsResourcePagespeedapiRunpagespeed, callback: BodyResponseCallback[SchemaResult]): Unit = js.native
       def runpagespeed(
@@ -98,16 +97,17 @@ object pagespeedonlineV2Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v2 = js.native
+      var version: v2
     }
     object Options {
       
       @scala.inline
-      def apply(version: v2): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v2")
         __obj.asInstanceOf[Options]
       }
       
@@ -119,44 +119,45 @@ object pagespeedonlineV2Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourcePagespeedapiRunpagespeed extends StandardParameters {
+    trait ParamsResourcePagespeedapiRunpagespeed
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Indicates if third party resources should be filtered out before
         * PageSpeed analysis.
         */
-      var filter_third_party_resources: js.UndefOr[Boolean] = js.native
+      var filter_third_party_resources: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The locale used to localize formatted results
         */
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
       /**
         * A PageSpeed rule to run; if none are given, all rules are run
         */
-      var rule: js.UndefOr[js.Array[String]] = js.native
+      var rule: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Indicates if binary data containing a screenshot should be included
         */
-      var screenshot: js.UndefOr[Boolean] = js.native
+      var screenshot: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The analysis strategy to use
         */
-      var strategy: js.UndefOr[String] = js.native
+      var strategy: js.UndefOr[String] = js.undefined
       
       /**
         * The URL to fetch and analyze
         */
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object ParamsResourcePagespeedapiRunpagespeed {
       
@@ -216,13 +217,12 @@ object pagespeedonlineV2Mod {
       }
     }
     
-    @js.native
     trait SchemaPagespeedApiFormatStringV2 extends StObject {
       
       /**
         * List of arguments for the format string.
         */
-      var args: js.UndefOr[js.Array[Rects]] = js.native
+      var args: js.UndefOr[js.Array[Rects]] = js.undefined
       
       /**
         * A localized format string with {{FOO}} placeholders, where &#39;FOO&#39;
@@ -230,7 +230,7 @@ object pagespeedonlineV2Mod {
         * HYPERLINK arguments, the format string will instead contain {{BEGIN_FOO}}
         * and {{END_FOO}} for the argument with key &#39;FOO&#39;.
         */
-      var format: js.UndefOr[String] = js.native
+      var format: js.UndefOr[String] = js.undefined
     }
     object SchemaPagespeedApiFormatStringV2 {
       
@@ -260,39 +260,38 @@ object pagespeedonlineV2Mod {
       }
     }
     
-    @js.native
     trait SchemaPagespeedApiImageV2 extends StObject {
       
       /**
         * Image data base64 encoded.
         */
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
       /**
         * Height of screenshot in pixels.
         */
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
       /**
         * Unique string key, if any, identifying this image.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * Mime type of image data (e.g. &quot;image/jpeg&quot;).
         */
-      var mime_type: js.UndefOr[String] = js.native
+      var mime_type: js.UndefOr[String] = js.undefined
       
       /**
         * The region of the page that is captured by this image, with dimensions
         * measured in CSS pixels.
         */
-      var page_rect: js.UndefOr[Left] = js.native
+      var page_rect: js.UndefOr[Left] = js.undefined
       
       /**
         * Width of screenshot in pixels.
         */
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object SchemaPagespeedApiImageV2 {
       
@@ -343,68 +342,67 @@ object pagespeedonlineV2Mod {
       }
     }
     
-    @js.native
     trait SchemaResult extends StObject {
       
       /**
         * The captcha verify result
         */
-      var captchaResult: js.UndefOr[String] = js.native
+      var captchaResult: js.UndefOr[String] = js.undefined
       
       /**
         * Localized PageSpeed results. Contains a ruleResults entry for each
         * PageSpeed rule instantiated and run by the server.
         */
-      var formattedResults: js.UndefOr[RuleResults] = js.native
+      var formattedResults: js.UndefOr[RuleResults] = js.undefined
       
       /**
         * Canonicalized and final URL for the document, after following page
         * redirects (if any).
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * List of rules that were specified in the request, but which the server
         * did not know how to instantiate.
         */
-      var invalidRules: js.UndefOr[js.Array[String]] = js.native
+      var invalidRules: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * Kind of result.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Summary statistics for the page, such as number of JavaScript bytes,
         * number of HTML bytes, etc.
         */
-      var pageStats: js.UndefOr[CssResponseBytes] = js.native
+      var pageStats: js.UndefOr[CssResponseBytes] = js.undefined
       
       /**
         * Response code for the document. 200 indicates a normal page load. 4xx/5xx
         * indicates an error.
         */
-      var responseCode: js.UndefOr[Double] = js.native
+      var responseCode: js.UndefOr[Double] = js.undefined
       
       /**
         * A map with one entry for each rule group in these results.
         */
-      var ruleGroups: js.UndefOr[StringDictionary[Score]] = js.native
+      var ruleGroups: js.UndefOr[StringDictionary[Score]] = js.undefined
       
       /**
         * Base64-encoded screenshot of the page that was analyzed.
         */
-      var screenshot: js.UndefOr[SchemaPagespeedApiImageV2] = js.native
+      var screenshot: js.UndefOr[SchemaPagespeedApiImageV2] = js.undefined
       
       /**
         * Title of the page, as displayed in the browser&#39;s title bar.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
       /**
         * The version of PageSpeed used to generate these results.
         */
-      var version: js.UndefOr[Major] = js.native
+      var version: js.UndefOr[Major] = js.undefined
     }
     object SchemaResult {
       
@@ -488,46 +486,45 @@ object pagespeedonlineV2Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

@@ -2,83 +2,83 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Team extends Entity {
+trait Team
+  extends StObject
+     with Entity {
   
   // The collection of channels &amp; messages associated with the team.
-  var channels: js.UndefOr[NullableOption[js.Array[Channel]]] = js.native
+  var channels: js.UndefOr[NullableOption[js.Array[Channel]]] = js.undefined
   
   /**
     * An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured
     * set in the tenant's directory.
     */
-  var classification: js.UndefOr[NullableOption[String]] = js.native
+  var classification: js.UndefOr[NullableOption[String]] = js.undefined
   
   // An optional description for the team.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the team.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Settings to configure use of Giphy, memes, and stickers in the team.
-  var funSettings: js.UndefOr[NullableOption[TeamFunSettings]] = js.native
+  var funSettings: js.UndefOr[NullableOption[TeamFunSettings]] = js.undefined
   
-  var group: js.UndefOr[NullableOption[Group]] = js.native
+  var group: js.UndefOr[NullableOption[Group]] = js.undefined
   
   // Settings to configure whether guests can create, update, or delete channels in the team.
-  var guestSettings: js.UndefOr[NullableOption[TeamGuestSettings]] = js.native
+  var guestSettings: js.UndefOr[NullableOption[TeamGuestSettings]] = js.undefined
   
   // The apps installed in this team.
-  var installedApps: js.UndefOr[NullableOption[js.Array[TeamsAppInstallation]]] = js.native
+  var installedApps: js.UndefOr[NullableOption[js.Array[TeamsAppInstallation]]] = js.undefined
   
   // A unique ID for the team that has been used in a few places such as the audit log/Office 365 Management Activity API.
-  var internalId: js.UndefOr[NullableOption[String]] = js.native
+  var internalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether this team is in read-only mode.
-  var isArchived: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isArchived: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the
     * team.
     */
-  var memberSettings: js.UndefOr[NullableOption[TeamMemberSettings]] = js.native
+  var memberSettings: js.UndefOr[NullableOption[TeamMemberSettings]] = js.undefined
   
   // Members and owners of the team.
-  var members: js.UndefOr[NullableOption[js.Array[ConversationMember]]] = js.native
+  var members: js.UndefOr[NullableOption[js.Array[ConversationMember]]] = js.undefined
   
   // Settings to configure messaging and mentions in the team.
-  var messagingSettings: js.UndefOr[NullableOption[TeamMessagingSettings]] = js.native
+  var messagingSettings: js.UndefOr[NullableOption[TeamMessagingSettings]] = js.undefined
   
   // The async operations that ran or are running on this team.
-  var operations: js.UndefOr[NullableOption[js.Array[TeamsAsyncOperation]]] = js.native
+  var operations: js.UndefOr[NullableOption[js.Array[TeamsAsyncOperation]]] = js.undefined
   
   // The general channel for the team.
-  var primaryChannel: js.UndefOr[NullableOption[Channel]] = js.native
+  var primaryChannel: js.UndefOr[NullableOption[Channel]] = js.undefined
   
   // The schedule of shifts for this team.
-  var schedule: js.UndefOr[NullableOption[Schedule]] = js.native
+  var schedule: js.UndefOr[NullableOption[Schedule]] = js.undefined
   
   /**
     * Optional. Indicates whether the team is intended for a particular use case. Each team specialization has access to
     * unique behaviors and experiences targeted to its use case.
     */
-  var specialization: js.UndefOr[NullableOption[TeamSpecialization]] = js.native
+  var specialization: js.UndefOr[NullableOption[TeamSpecialization]] = js.undefined
   
   // The template this team was created from. See available templates.
-  var template: js.UndefOr[NullableOption[TeamsTemplate]] = js.native
+  var template: js.UndefOr[NullableOption[TeamsTemplate]] = js.undefined
   
   // The visibility of the group and team. Defaults to Public.
-  var visibility: js.UndefOr[NullableOption[TeamVisibilityType]] = js.native
+  var visibility: js.UndefOr[NullableOption[TeamVisibilityType]] = js.undefined
   
   /**
     * A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a
     * team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not
     * parsed.
     */
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Team {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterInstanceTagAttributeRequest extends StObject {
   
   /**
     * Indicates whether to register all tag keys in the current Region. Specify true to register all tag keys.
     */
-  var IncludeAllTagsOfInstance: js.UndefOr[Boolean] = js.native
+  var IncludeAllTagsOfInstance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tag keys to register.
     */
-  var InstanceTagKeys: js.UndefOr[InstanceTagKeySet] = js.native
+  var InstanceTagKeys: js.UndefOr[InstanceTagKeySet] = js.undefined
 }
 object RegisterInstanceTagAttributeRequest {
   

@@ -2,23 +2,21 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseRootObject extends StObject {
   
-  var auto_load_more_enabled: Boolean = js.native
+  var auto_load_more_enabled: Boolean
   
-  var items: js.Array[SavedFeedResponseItemsItem] = js.native
+  var items: js.Array[SavedFeedResponseItemsItem]
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
   
-  var next_max_id: String = js.native
+  var next_max_id: String
   
-  var num_results: Double = js.native
+  var num_results: Double
   
-  var status: String = js.native
+  var status: String
 }
 object SavedFeedResponseRootObject {
   

@@ -8,50 +8,48 @@ import typings.amapJsApi.AMap.StrokeLineJoin
 import typings.amapJsApi.AMap.StrokeStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<amap-js-api.AMap.Rectangle.Options<any>> */
-@js.native
 trait PartialOptionsany extends StObject {
   
-  var bounds: js.UndefOr[Bounds] = js.native
+  var bounds: js.UndefOr[Bounds] = js.undefined
   
-  var bubble: js.UndefOr[Boolean] = js.native
+  var bubble: js.UndefOr[Boolean] = js.undefined
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var extData: js.UndefOr[js.Any] = js.native
+  var extData: js.UndefOr[js.Any] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var lineCap: js.UndefOr[StrokeLineCap] = js.native
+  var lineCap: js.UndefOr[StrokeLineCap] = js.undefined
   
-  var lineJoin: js.UndefOr[StrokeLineJoin] = js.native
+  var lineJoin: js.UndefOr[StrokeLineJoin] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var path: js.UndefOr[js.Array[js.Array[LocationValue] | LocationValue]] = js.native
+  var path: js.UndefOr[js.Array[js.Array[LocationValue] | LocationValue]] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeDasharray: js.UndefOr[js.Array[Double]] = js.native
+  var strokeDasharray: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeStyle: js.UndefOr[StrokeStyle] = js.native
+  var strokeStyle: js.UndefOr[StrokeStyle] = js.undefined
   
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object PartialOptionsany {
   

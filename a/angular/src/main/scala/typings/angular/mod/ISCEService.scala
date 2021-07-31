@@ -2,51 +2,49 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // SCEService
 // see http://docs.angularjs.org/api/ng/service/$sce
 ///////////////////////////////////////////////////////////////////////////
-@js.native
 trait ISCEService extends StObject {
   
-  def getTrusted(`type`: String, mayBeTrusted: js.Any): js.Any = js.native
+  def getTrusted(`type`: String, mayBeTrusted: js.Any): js.Any
   
-  def getTrustedCss(value: js.Any): js.Any = js.native
+  def getTrustedCss(value: js.Any): js.Any
   
-  def getTrustedHtml(value: js.Any): js.Any = js.native
+  def getTrustedHtml(value: js.Any): js.Any
   
-  def getTrustedJs(value: js.Any): js.Any = js.native
+  def getTrustedJs(value: js.Any): js.Any
   
-  def getTrustedResourceUrl(value: js.Any): js.Any = js.native
+  def getTrustedResourceUrl(value: js.Any): js.Any
   
-  def getTrustedUrl(value: js.Any): js.Any = js.native
+  def getTrustedUrl(value: js.Any): js.Any
   
-  def isEnabled(): Boolean = js.native
+  def isEnabled(): Boolean
   
-  def parse(`type`: String, expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, _] = js.native
+  def parse(`type`: String, expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]
   
-  def parseAsCss(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, _] = js.native
+  def parseAsCss(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]
   
-  def parseAsHtml(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, _] = js.native
+  def parseAsHtml(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]
   
-  def parseAsJs(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, _] = js.native
+  def parseAsJs(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]
   
-  def parseAsResourceUrl(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, _] = js.native
+  def parseAsResourceUrl(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]
   
-  def parseAsUrl(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, _] = js.native
+  def parseAsUrl(expression: String): js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]
   
-  def trustAs(`type`: String, value: js.Any): js.Any = js.native
+  def trustAs(`type`: String, value: js.Any): js.Any
   
-  def trustAsHtml(value: js.Any): js.Any = js.native
+  def trustAsHtml(value: js.Any): js.Any
   
-  def trustAsJs(value: js.Any): js.Any = js.native
+  def trustAsJs(value: js.Any): js.Any
   
-  def trustAsResourceUrl(value: js.Any): js.Any = js.native
+  def trustAsResourceUrl(value: js.Any): js.Any
   
-  def trustAsUrl(value: js.Any): js.Any = js.native
+  def trustAsUrl(value: js.Any): js.Any
 }
 object ISCEService {
   
@@ -59,12 +57,12 @@ object ISCEService {
     getTrustedResourceUrl: js.Any => js.Any,
     getTrustedUrl: js.Any => js.Any,
     isEnabled: () => Boolean,
-    parse: (String, String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
-    parseAsCss: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
-    parseAsHtml: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
-    parseAsJs: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
-    parseAsResourceUrl: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
-    parseAsUrl: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _],
+    parse: (String, String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any],
+    parseAsCss: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any],
+    parseAsHtml: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any],
+    parseAsJs: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any],
+    parseAsResourceUrl: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any],
+    parseAsUrl: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any],
     trustAs: (String, js.Any) => js.Any,
     trustAsHtml: js.Any => js.Any,
     trustAsJs: js.Any => js.Any,
@@ -100,22 +98,22 @@ object ISCEService {
     def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParse(value: (String, String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, _]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+    def setParse(value: (String, String) => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setParseAsCss(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _]): Self = StObject.set(x, "parseAsCss", js.Any.fromFunction1(value))
+    def setParseAsCss(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsCss", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseAsHtml(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _]): Self = StObject.set(x, "parseAsHtml", js.Any.fromFunction1(value))
+    def setParseAsHtml(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsHtml", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseAsJs(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _]): Self = StObject.set(x, "parseAsJs", js.Any.fromFunction1(value))
+    def setParseAsJs(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsJs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseAsResourceUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _]): Self = StObject.set(x, "parseAsResourceUrl", js.Any.fromFunction1(value))
+    def setParseAsResourceUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsResourceUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParseAsUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, _]): Self = StObject.set(x, "parseAsUrl", js.Any.fromFunction1(value))
+    def setParseAsUrl(value: String => js.Function2[/* context */ js.Any, /* locals */ js.Any, js.Any]): Self = StObject.set(x, "parseAsUrl", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))

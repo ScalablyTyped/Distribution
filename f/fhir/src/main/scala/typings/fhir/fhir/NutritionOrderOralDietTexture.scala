@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Required  texture modifications
   */
-@js.native
-trait NutritionOrderOralDietTexture extends BackboneElement {
+trait NutritionOrderOralDietTexture
+  extends StObject
+     with BackboneElement {
   
   /**
     * Concepts that are used to identify an entity that is ingested for nutritional purposes
     */
-  var foodType: js.UndefOr[CodeableConcept] = js.native
+  var foodType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Code to indicate how to alter the texture of the foods, e.g. pureed
     */
-  var modifier: js.UndefOr[CodeableConcept] = js.native
+  var modifier: js.UndefOr[CodeableConcept] = js.undefined
 }
 object NutritionOrderOralDietTexture {
   

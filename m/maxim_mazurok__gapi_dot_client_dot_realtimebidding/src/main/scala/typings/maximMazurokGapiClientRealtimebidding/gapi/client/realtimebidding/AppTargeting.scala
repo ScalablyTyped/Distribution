@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppTargeting extends StObject {
   
   /** Lists of included and excluded mobile app categories as defined in https://developers.google.com/adwords/api/docs/appendix/mobileappcategories.csv. */
-  var mobileAppCategoryTargeting: js.UndefOr[NumericTargetingDimension] = js.native
+  var mobileAppCategoryTargeting: js.UndefOr[NumericTargetingDimension] = js.undefined
   
   /** Targeted app IDs. App IDs can refer to those found in an app store or ones that are not published in an app store. A maximum of 30,000 app IDs can be targeted. */
-  var mobileAppTargeting: js.UndefOr[StringTargetingDimension] = js.native
+  var mobileAppTargeting: js.UndefOr[StringTargetingDimension] = js.undefined
 }
 object AppTargeting {
   

@@ -3,17 +3,15 @@ package typings.grpc.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtobufTypeDefinition extends StObject {
   
-  var fileDescriptorProtos: js.Array[Buffer] = js.native
+  var fileDescriptorProtos: js.Array[Buffer]
   
-  var format: String = js.native
+  var format: String
   
-  var `type`: js.Object = js.native
+  var `type`: js.Object
 }
 object ProtobufTypeDefinition {
   

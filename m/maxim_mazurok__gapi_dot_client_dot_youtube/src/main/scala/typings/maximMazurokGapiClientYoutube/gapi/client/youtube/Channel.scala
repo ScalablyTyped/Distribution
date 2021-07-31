@@ -3,54 +3,52 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /** The auditionDetails object encapsulates channel data that is relevant for YouTube Partners during the audition process. */
-  var auditDetails: js.UndefOr[ChannelAuditDetails] = js.native
+  var auditDetails: js.UndefOr[ChannelAuditDetails] = js.undefined
   
   /** The brandingSettings object encapsulates information about the branding of the channel. */
-  var brandingSettings: js.UndefOr[ChannelBrandingSettings] = js.native
+  var brandingSettings: js.UndefOr[ChannelBrandingSettings] = js.undefined
   
   /** The contentDetails object encapsulates information about the channel's content. */
-  var contentDetails: js.UndefOr[ChannelContentDetails] = js.native
+  var contentDetails: js.UndefOr[ChannelContentDetails] = js.undefined
   
   /** The contentOwnerDetails object encapsulates channel data that is relevant for YouTube Partners linked with the channel. */
-  var contentOwnerDetails: js.UndefOr[ChannelContentOwnerDetails] = js.native
+  var contentOwnerDetails: js.UndefOr[ChannelContentOwnerDetails] = js.undefined
   
   /** The conversionPings object encapsulates information about conversion pings that need to be respected by the channel. */
-  var conversionPings: js.UndefOr[ChannelConversionPings] = js.native
+  var conversionPings: js.UndefOr[ChannelConversionPings] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the channel. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#channel". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Localizations for different languages */
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Channel with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Channel & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The snippet object contains basic details about the channel, such as its title, description, and thumbnail images. */
-  var snippet: js.UndefOr[ChannelSnippet] = js.native
+  var snippet: js.UndefOr[ChannelSnippet] = js.undefined
   
   /** The statistics object encapsulates statistics for the channel. */
-  var statistics: js.UndefOr[ChannelStatistics] = js.native
+  var statistics: js.UndefOr[ChannelStatistics] = js.undefined
   
   /** The status object encapsulates information about the privacy status of the channel. */
-  var status: js.UndefOr[ChannelStatus] = js.native
+  var status: js.UndefOr[ChannelStatus] = js.undefined
   
   /** The topicDetails object encapsulates information about Freebase topics associated with the channel. */
-  var topicDetails: js.UndefOr[ChannelTopicDetails] = js.native
+  var topicDetails: js.UndefOr[ChannelTopicDetails] = js.undefined
 }
 object Channel {
   
@@ -115,7 +113,7 @@ object Channel {
     def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Channel with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Channel & TopLevel[js.Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline

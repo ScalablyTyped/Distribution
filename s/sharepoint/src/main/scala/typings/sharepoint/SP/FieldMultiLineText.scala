@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldMultiLineText extends Field {
+trait FieldMultiLineText
+  extends StObject
+     with Field {
   
   def get_allowHyperlink(): Boolean = js.native
   

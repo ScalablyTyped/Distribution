@@ -2,66 +2,64 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebACL extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Web ACL that you want to associate with the resource.
     */
-  var ARN: ResourceArn = js.native
+  var ARN: ResourceArn
   
   /**
     * The web ACL capacity units (WCUs) currently being used by this web ACL.  AWS WAF uses WCUs to calculate and control the operating resources that are used to run your rules, rule groups, and web ACLs. AWS WAF calculates capacity differently for each rule type, to reflect the relative cost of each rule. Simple rules that cost little to run use fewer WCUs than more complex rules that use more processing power. Rule group capacity is fixed at creation, which helps users plan their web ACL WCU usage when they use a rule group. The WCU limit for web ACLs is 1,500. 
     */
-  var Capacity: js.UndefOr[ConsumedCapacity] = js.native
+  var Capacity: js.UndefOr[ConsumedCapacity] = js.undefined
   
   /**
     * The action to perform if none of the Rules contained in the WebACL match. 
     */
-  var DefaultAction: typings.awsSdk.wafv2Mod.DefaultAction = js.native
+  var DefaultAction: typings.awsSdk.wafv2Mod.DefaultAction
   
   /**
     * A description of the Web ACL that helps with identification. You cannot change the description of a Web ACL after you create it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * A unique identifier for the WebACL. This ID is returned in the responses to create and list commands. You use this ID to do things like get, update, and delete a WebACL.
     */
-  var Id: EntityId = js.native
+  var Id: EntityId
   
   /**
     * Indicates whether this web ACL is managed by AWS Firewall Manager. If true, then only AWS Firewall Manager can delete the web ACL or any Firewall Manager rule groups in the web ACL. 
     */
-  var ManagedByFirewallManager: js.UndefOr[Boolean] = js.native
+  var ManagedByFirewallManager: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the Web ACL. You cannot change the name of a Web ACL after you create it.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
   /**
     * The last set of rules for AWS WAF to process in the web ACL. This is defined in an AWS Firewall Manager WAF policy and contains only rule group references. You can't alter these. Any rules and rule groups that you define for the web ACL are prioritized before these.  In the Firewall Manager WAF policy, the Firewall Manager administrator can define a set of rule groups to run first in the web ACL and a set of rule groups to run last. Within each set, the administrator prioritizes the rule groups, to determine their relative processing order.
     */
-  var PostProcessFirewallManagerRuleGroups: js.UndefOr[FirewallManagerRuleGroups] = js.native
+  var PostProcessFirewallManagerRuleGroups: js.UndefOr[FirewallManagerRuleGroups] = js.undefined
   
   /**
     * The first set of rules for AWS WAF to process in the web ACL. This is defined in an AWS Firewall Manager WAF policy and contains only rule group references. You can't alter these. Any rules and rule groups that you define for the web ACL are prioritized after these.  In the Firewall Manager WAF policy, the Firewall Manager administrator can define a set of rule groups to run first in the web ACL and a set of rule groups to run last. Within each set, the administrator prioritizes the rule groups, to determine their relative processing order.
     */
-  var PreProcessFirewallManagerRuleGroups: js.UndefOr[FirewallManagerRuleGroups] = js.native
+  var PreProcessFirewallManagerRuleGroups: js.UndefOr[FirewallManagerRuleGroups] = js.undefined
   
   /**
     * The Rule statements used to identify the web requests that you want to allow, block, or count. Each rule includes one top-level statement that AWS WAF uses to identify matching web requests, and parameters that govern how AWS WAF handles them. 
     */
-  var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.native
+  var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.undefined
   
   /**
     * Defines and enables Amazon CloudWatch metrics and web request sample collection. 
     */
-  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig = js.native
+  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig
 }
 object WebACL {
   

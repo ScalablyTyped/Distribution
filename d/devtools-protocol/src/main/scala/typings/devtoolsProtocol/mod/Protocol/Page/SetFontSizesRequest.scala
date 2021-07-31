@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetFontSizesRequest extends StObject {
   
   /**
     * Specifies font sizes to set. If a font size is not specified, it won't be changed.
     */
-  var fontSizes: FontSizes = js.native
+  var fontSizes: FontSizes
 }
 object SetFontSizesRequest {
   

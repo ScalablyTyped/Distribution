@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdHocSubProcess extends SubProcess {
+trait AdHocSubProcess
+  extends StObject
+     with SubProcess {
   
-  var cancelRemainingInstances: Boolean = js.native
+  var cancelRemainingInstances: Boolean
   
-  var completionCondition: Expression = js.native
+  var completionCondition: Expression
   
-  var ordering: AdHocOrdering = js.native
+  var ordering: AdHocOrdering
 }
 object AdHocSubProcess {
   

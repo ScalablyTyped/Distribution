@@ -2,21 +2,19 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModBan extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var moderator: String = js.native
+  var moderator: String
   
-  var reason: String = js.native
+  var reason: String
   
-  var ref: String = js.native
+  var ref: String
   
-  var username: String = js.native
+  var username: String
 }
 object ModBan {
   

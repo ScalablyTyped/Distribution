@@ -4,12 +4,13 @@ import typings.joi.joiStrings.negative
 import typings.joi.joiStrings.positive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.joi.mod._Schema because Already inherited */ @js.native
-trait NumberSchema extends AnySchema {
+trait NumberSchema
+  extends StObject
+     with AnySchema {
   
   /**
     * Specifies that the value must be greater than limit.

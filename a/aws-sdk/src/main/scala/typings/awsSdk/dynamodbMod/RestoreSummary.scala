@@ -2,31 +2,29 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreSummary extends StObject {
   
   /**
     * Point in time or source backup time.
     */
-  var RestoreDateTime: Date = js.native
+  var RestoreDateTime: Date
   
   /**
     * Indicates if a restore is in progress or not.
     */
-  var RestoreInProgress: typings.awsSdk.dynamodbMod.RestoreInProgress = js.native
+  var RestoreInProgress: typings.awsSdk.dynamodbMod.RestoreInProgress
   
   /**
     * The Amazon Resource Name (ARN) of the backup from which the table was restored.
     */
-  var SourceBackupArn: js.UndefOr[BackupArn] = js.native
+  var SourceBackupArn: js.UndefOr[BackupArn] = js.undefined
   
   /**
     * The ARN of the source table of the backup that is being restored.
     */
-  var SourceTableArn: js.UndefOr[TableArn] = js.native
+  var SourceTableArn: js.UndefOr[TableArn] = js.undefined
 }
 object RestoreSummary {
   

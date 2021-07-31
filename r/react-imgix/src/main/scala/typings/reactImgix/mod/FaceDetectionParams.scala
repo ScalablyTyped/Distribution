@@ -2,17 +2,15 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FaceDetectionParams extends StObject {
   
-  var faceindex: js.UndefOr[ImgixParamType] = js.native
+  var faceindex: js.UndefOr[ImgixParamType] = js.undefined
   
-  var facepad: js.UndefOr[ImgixParamType] = js.native
+  var facepad: js.UndefOr[ImgixParamType] = js.undefined
   
-  var faces: js.UndefOr[ImgixParamType] = js.native
+  var faces: js.UndefOr[ImgixParamType] = js.undefined
 }
 object FaceDetectionParams {
   

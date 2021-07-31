@@ -1,7 +1,7 @@
 package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.anon.Position
-import typings.instagramPrivateApi.anon.StorystickeridsAny
+import typings.instagramPrivateApi.anon.Storystickerids
 import typings.instagramPrivateApi.instagramPrivateApiStrings.once
 import typings.instagramPrivateApi.instagramPrivateApiStrings.replayable
 import typings.instagramPrivateApi.instagramPrivateApiStrings.story
@@ -18,25 +18,23 @@ import typings.instagramPrivateApi.mediaConfigureStoryOptionsMod.StorySlider
 import typings.instagramPrivateApi.stickerBuilderMod.StickerBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postingOptionsMod {
   
-  @js.native
   trait PostingLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var external_id: String = js.native
+    var external_id: String
     
-    var external_id_source: String = js.native
+    var external_id_source: String
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var name: String = js.native
+    var name: String
   }
   object PostingLocation {
     
@@ -76,14 +74,13 @@ object postingOptionsMod {
     }
   }
   
-  @js.native
   trait PostingStoryLocationSticker extends StObject {
     
-    var latitude: String = js.native
+    var latitude: String
     
-    var longitude: String = js.native
+    var longitude: String
     
-    var sticker: StoryLocation = js.native
+    var sticker: StoryLocation
   }
   object PostingStoryLocationSticker {
     
@@ -107,44 +104,43 @@ object postingOptionsMod {
     }
   }
   
-  @js.native
   trait PostingStoryOptions extends StObject {
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var chat: js.UndefOr[StoryChat] = js.native
+    var chat: js.UndefOr[StoryChat] = js.undefined
     
-    var countdown: js.UndefOr[StoryCountdown] = js.native
+    var countdown: js.UndefOr[StoryCountdown] = js.undefined
     
-    var hashtags: js.UndefOr[js.Array[StoryHashtag]] = js.native
+    var hashtags: js.UndefOr[js.Array[StoryHashtag]] = js.undefined
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[PostingStoryLocationSticker] = js.native
+    var location: js.UndefOr[PostingStoryLocationSticker] = js.undefined
     
-    var media: js.UndefOr[StoryAttachedMedia] = js.native
+    var media: js.UndefOr[StoryAttachedMedia] = js.undefined
     
-    var mentions: js.UndefOr[js.Array[StoryMention]] = js.native
+    var mentions: js.UndefOr[js.Array[StoryMention]] = js.undefined
     
-    var poll: js.UndefOr[StoryPoll] = js.native
+    var poll: js.UndefOr[StoryPoll] = js.undefined
     
-    var question: js.UndefOr[StoryQuestion] = js.native
+    var question: js.UndefOr[StoryQuestion] = js.undefined
     
-    var quiz: js.UndefOr[StoryQuiz] = js.native
+    var quiz: js.UndefOr[StoryQuiz] = js.undefined
     
-    var recipientUsers: js.UndefOr[js.Array[String]] = js.native
+    var recipientUsers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var replyType: js.UndefOr[story | String] = js.native
+    var replyType: js.UndefOr[story | String] = js.undefined
     
-    var slider: js.UndefOr[StorySlider] = js.native
+    var slider: js.UndefOr[StorySlider] = js.undefined
     
-    var stickerConfig: js.UndefOr[(js.Any with StorystickeridsAny) | StickerBuilder] = js.native
+    var stickerConfig: js.UndefOr[(js.Any & Storystickerids) | StickerBuilder] = js.undefined
     
-    var threadIds: js.UndefOr[js.Array[String]] = js.native
+    var threadIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var toBesties: js.UndefOr[Boolean] = js.native
+    var toBesties: js.UndefOr[Boolean] = js.undefined
     
-    var viewMode: js.UndefOr[replayable | once | String] = js.native
+    var viewMode: js.UndefOr[replayable | once | String] = js.undefined
   }
   object PostingStoryOptions {
     
@@ -251,7 +247,7 @@ object postingOptionsMod {
       def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
       
       @scala.inline
-      def setStickerConfig(value: (js.Any with StorystickeridsAny) | StickerBuilder): Self = StObject.set(x, "stickerConfig", value.asInstanceOf[js.Any])
+      def setStickerConfig(value: (js.Any & Storystickerids) | StickerBuilder): Self = StObject.set(x, "stickerConfig", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStickerConfigUndefined: Self = StObject.set(x, "stickerConfig", js.undefined)
@@ -279,10 +275,9 @@ object postingOptionsMod {
     }
   }
   
-  @js.native
   trait PostingUsertags extends StObject {
     
-    var in: js.Array[Position] = js.native
+    var in: js.Array[Position]
   }
   object PostingUsertags {
     

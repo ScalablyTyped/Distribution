@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Core extends StObject {
   
-  var core: Limit = js.native
+  var core: Limit
   
-  var graphql: Limit = js.native
+  var graphql: Limit
   
-  var integration_manifest: Limit = js.native
+  var integration_manifest: Limit
   
-  var search: Limit = js.native
+  var search: Limit
 }
 object Core {
   

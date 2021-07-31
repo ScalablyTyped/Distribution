@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeadLetterSourceQueuesResult extends StObject {
   
   /**
     * Pagination token to include in the next request. Token value is null if there are no additional results to request, or if you did not set MaxResults in the request.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of source queue URLs that have the RedrivePolicy queue attribute configured with a dead-letter queue.
     */
-  var queueUrls: QueueUrlList = js.native
+  var queueUrls: QueueUrlList
 }
 object ListDeadLetterSourceQueuesResult {
   

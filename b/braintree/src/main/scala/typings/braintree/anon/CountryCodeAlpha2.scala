@@ -2,37 +2,35 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountryCodeAlpha2 extends StObject {
   
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
-  var countryCodeAlpha2: js.UndefOr[String] = js.native
+  var countryCodeAlpha2: js.UndefOr[String] = js.undefined
   
-  var countryCodeAlpha3: js.UndefOr[String] = js.native
+  var countryCodeAlpha3: js.UndefOr[String] = js.undefined
   
-  var countryCodeNumeric: js.UndefOr[String] = js.native
+  var countryCodeNumeric: js.UndefOr[String] = js.undefined
   
-  var countryName: js.UndefOr[String] = js.native
+  var countryName: js.UndefOr[String] = js.undefined
   
-  var extendedAddress: js.UndefOr[String] = js.native
+  var extendedAddress: js.UndefOr[String] = js.undefined
   
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[UpdateExisting] = js.native
+  var options: js.UndefOr[UpdateExisting] = js.undefined
   
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
-  var streetAddress: js.UndefOr[String] = js.native
+  var streetAddress: js.UndefOr[String] = js.undefined
 }
 object CountryCodeAlpha2 {
   

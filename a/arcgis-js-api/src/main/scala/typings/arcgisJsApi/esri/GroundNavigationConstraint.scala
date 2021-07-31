@@ -6,18 +6,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroundNavigationConstraint extends AnonymousAccessor {
+trait GroundNavigationConstraint
+  extends StObject
+     with AnonymousAccessor {
   
   /**
     * The type of the constraint.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
     */
-  var `type`: `stay-above` | none = js.native
+  var `type`: `stay-above` | none
 }
 object GroundNavigationConstraint {
   
@@ -28,7 +28,7 @@ object GroundNavigationConstraint {
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
       js.Function2[/* propertyName */ String, /* value */ js.Any, GroundNavigationConstraint]
-    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], GroundNavigationConstraint]]),
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], GroundNavigationConstraint]]),
     `type`: `stay-above` | none
   ): GroundNavigationConstraint = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])

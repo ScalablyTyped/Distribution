@@ -2,25 +2,23 @@ package typings.gatsbyTelemetry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BundleStats extends StObject {
     
-    var bundleStats: js.UndefOr[js.Any] = js.native
+    var bundleStats: js.UndefOr[js.Any] = js.undefined
     
-    var clientsCount: js.UndefOr[Double] = js.native
+    var clientsCount: js.UndefOr[Double] = js.undefined
     
-    var pageDataStats: js.UndefOr[js.Any] = js.native
+    var pageDataStats: js.UndefOr[js.Any] = js.undefined
     
-    var pagesCount: js.UndefOr[Double] = js.native
+    var pagesCount: js.UndefOr[Double] = js.undefined
     
-    var paths: js.UndefOr[js.Array[js.UndefOr[String]]] = js.native
+    var paths: js.UndefOr[js.Array[js.UndefOr[String]]] = js.undefined
     
-    var queryStats: js.UndefOr[js.Any] = js.native
+    var queryStats: js.UndefOr[js.Any] = js.undefined
   }
   object BundleStats {
     
@@ -74,12 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dependencies extends StObject {
     
-    var dependencies: js.UndefOr[js.Array[String]] = js.native
+    var dependencies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var devDependencies: js.UndefOr[js.Array[String]] = js.native
+    var devDependencies: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Dependencies {
     
@@ -112,10 +109,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stack extends StObject {
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object Stack {
     

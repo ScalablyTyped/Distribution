@@ -2,25 +2,23 @@ package typings.rangyinputs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RangyInputs {
   
-  @js.native
   trait Selection extends StObject {
     
     /**  The character index of the end position of the selection */
-    var end: Double = js.native
+    var end: Double
     
     /** The number of characters selected */
-    var length: Double = js.native
+    var length: Double
     
     /** The character index of the start position of the selection */
-    var start: Double = js.native
+    var start: Double
     
     /** The selected Text */
-    var text: String = js.native
+    var text: String
   }
   object Selection {
     

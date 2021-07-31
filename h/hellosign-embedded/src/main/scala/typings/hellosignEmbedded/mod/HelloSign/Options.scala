@@ -17,37 +17,35 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.zh_CN
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var allowCancel: js.UndefOr[Boolean] = js.native
+  var allowCancel: js.UndefOr[Boolean] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[HTMLElement] = js.native
+  var container: js.UndefOr[HTMLElement] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var hideHeader: js.UndefOr[Boolean] = js.native
+  var hideHeader: js.UndefOr[Boolean] = js.undefined
   
   var locale: js.UndefOr[
     sv_SE | ja_JP | es_ES | da_DK | zh_CN | nl_NL | es_MX | de_DE | pl_PL | en_US | it_IT | pt_BR | fr_FR | cs_CZ
-  ] = js.native
+  ] = js.undefined
   
-  var redirectTo: js.UndefOr[String] = js.native
+  var redirectTo: js.UndefOr[String] = js.undefined
   
-  var requestingEmail: js.UndefOr[String] = js.native
+  var requestingEmail: js.UndefOr[String] = js.undefined
   
-  var skipDomainVerification: js.UndefOr[Boolean] = js.native
+  var skipDomainVerification: js.UndefOr[Boolean] = js.undefined
   
-  var testMode: js.UndefOr[Boolean] = js.native
+  var testMode: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var whiteLabeling: js.UndefOr[js.Object] = js.native
+  var whiteLabeling: js.UndefOr[js.Object] = js.undefined
 }
 object Options {
   

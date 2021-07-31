@@ -2,20 +2,20 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // User
-@js.native
-trait UserData extends ObjectData {
+trait UserData
+  extends StObject
+     with ObjectData {
   
-  var email: js.UndefOr[String | Null] = js.native
+  var email: js.UndefOr[String | Null] = js.undefined
   
-  var externalId: js.UndefOr[String | Null] = js.native
+  var externalId: js.UndefOr[String | Null] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var profileUrl: js.UndefOr[String | Null] = js.native
+  var profileUrl: js.UndefOr[String | Null] = js.undefined
 }
 object UserData {
   

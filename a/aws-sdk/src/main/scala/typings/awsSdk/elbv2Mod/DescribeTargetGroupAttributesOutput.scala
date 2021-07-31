@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTargetGroupAttributesOutput extends StObject {
   
   /**
     * Information about the target group attributes
     */
-  var Attributes: js.UndefOr[TargetGroupAttributes] = js.native
+  var Attributes: js.UndefOr[TargetGroupAttributes] = js.undefined
 }
 object DescribeTargetGroupAttributesOutput {
   

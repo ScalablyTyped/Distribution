@@ -5,14 +5,12 @@ import typings.cytoscape.anon.ComponentsCut
 import typings.cytoscape.anon.Cut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.closenessCentralityNormalized
   * trivial
   */
-@js.native
 trait CollectionAlgorithms extends StObject {
   
   /**
@@ -20,23 +18,23 @@ trait CollectionAlgorithms extends StObject {
     * This finds the shortest path from the root node to the goal node.
     * http://js.cytoscape.org/#eles.aStar
     */
-  def aStar(options: SearchAStarOptions): SearchAStarResult = js.native
+  def aStar(options: SearchAStarOptions): SearchAStarResult
   
   /**
     * Perform the Bellman-Ford search algorithm on the elements in the collection.
     * This finds the shortest path from the starting node to all other nodes in the collection.
     * http://js.cytoscape.org/#eles.bellmanFord
     */
-  def bellmanFord(options: SearchBellmanFordOptions): SearchBellmanFordResult = js.native
+  def bellmanFord(options: SearchBellmanFordOptions): SearchBellmanFordResult
   
   /**
     * Considering only the elements in the calling collection,
     * calculate the betweenness centrality of the nodes.
     * http://js.cytoscape.org/#eles.betweennessCentrality
     */
-  def betweennessCentrality(options: SearchBetweennessOptions): SearchBetweennessResult = js.native
+  def betweennessCentrality(options: SearchBetweennessOptions): SearchBetweennessResult
   
-  def bfs(options: SearchFirstOptions): SearchFirstResult = js.native
+  def bfs(options: SearchFirstOptions): SearchFirstResult
   
   /**
     * Perform a breadth-first search within the elements in the collection.
@@ -44,130 +42,130 @@ trait CollectionAlgorithms extends StObject {
     * http://js.cytoscape.org/#eles.breadthFirstSearch
     * @alias bfs
     */
-  def breadthFirstSearch(options: SearchFirstOptions): SearchFirstResult = js.native
+  def breadthFirstSearch(options: SearchFirstOptions): SearchFirstResult
   
   /**
     * Considering only the elements in the calling collection,
     * calculate the closeness centrality of the specified root node.
     * http://js.cytoscape.org/#eles.closenessCentrality
     */
-  def closenessCentrality(options: SearchClosenessCentralityOptions): Double = js.native
+  def closenessCentrality(options: SearchClosenessCentralityOptions): Double
   
   /**
     * Considering only the elements in the calling collection,
     * calculate the closeness centrality of the nodes.
     * http://js.cytoscape.org/#eles.closenessCentralityNormalized
     */
-  def closenessCentralityNormalized(options: SearchClosenessCentralityNormalizedOptions): SearchDegreeCentralityNormalizedResultDirected | SearchDegreeCentralityNormalizedResultUndirected = js.native
+  def closenessCentralityNormalized(options: SearchClosenessCentralityNormalizedOptions): SearchDegreeCentralityNormalizedResultDirected | SearchDegreeCentralityNormalizedResultUndirected
   
   /**
     * Considering only the elements in the calling collection,
     * calculate the degree centrality of the specified root node.
     * http://js.cytoscape.org/#eles.degreeCentrality
     */
-  def degreeCentrality(options: SearchDegreeCentralityOptions): SearchDegreeCentralityResultDirected | SearchDegreeCentralityResultUndirected = js.native
+  def degreeCentrality(options: SearchDegreeCentralityOptions): SearchDegreeCentralityResultDirected | SearchDegreeCentralityResultUndirected
   
   /**
     * Considering only the elements in the calling collection,
     * calculate the normalised degree centrality of the nodes.
     * http://js.cytoscape.org/#eles.degreeCentralityNormalized
     */
-  def degreeCentralityNormalized(options: SearchDegreeCentralityNormalizedOptions): SearchDegreeCentralityNormalizedResultDirected | SearchDegreeCentralityNormalizedResultUndirected = js.native
+  def degreeCentralityNormalized(options: SearchDegreeCentralityNormalizedOptions): SearchDegreeCentralityNormalizedResultDirected | SearchDegreeCentralityNormalizedResultUndirected
   
   /**
     * Perform a depth-first search within the elements in the collection.
     * http://js.cytoscape.org/#eles.depthFirstSearch
     * @alias dfs
     */
-  def depthFirstSearch(options: SearchFirstOptions): SearchFirstResult = js.native
+  def depthFirstSearch(options: SearchFirstOptions): SearchFirstResult
   
-  def dfs(options: SearchFirstOptions): SearchFirstResult = js.native
+  def dfs(options: SearchFirstOptions): SearchFirstResult
   
   /**
     * Perform Dijkstra's algorithm on the elements in the collection.
     * This finds the shortest paths to all other nodes in the collection from the root node.
     * http://js.cytoscape.org/#eles.dijkstra
     */
-  def dijkstra(options: SearchDijkstraOptions): SearchDijkstraResult = js.native
+  def dijkstra(options: SearchDijkstraOptions): SearchDijkstraResult
   
   /**
     * Perform the Floyd Warshall search algorithm on the elements in the collection.
     * This finds the shortest path between all pairs of nodes.
     * http://js.cytoscape.org/#eles.floydWarshall
     */
-  def floydWarshall(options: SearchFloydWarshallOptions): SearchFloydWarshallResult = js.native
+  def floydWarshall(options: SearchFloydWarshallOptions): SearchFloydWarshallResult
   
   /**
     * finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def hopcroftTarjanBiconnected(): Cut = js.native
+  def hopcroftTarjanBiconnected(): Cut
   
   /**
     * Finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def hopcroftTarjanBiconnectedComponents(): Cut = js.native
+  def hopcroftTarjanBiconnectedComponents(): Cut
   
   /**
     * Finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def htb(): Cut = js.native
+  def htb(): Cut
   
   /**
     * Finds the biconnected components in an undirected graph,
     * as well as their respective cut vertices, using an algorithm due to Hopcroft and Tarjan.
     * http://js.cytoscape.org/#eles.hopcroftTarjanBiconnected
     */
-  def htbc(): Cut = js.native
+  def htbc(): Cut
   
   /**
     * Finds the minimum cut in a graph using the Karger-Stein algorithm.
     * The optimal result is found with a high probability, but without guarantee.
     * http://js.cytoscape.org/#eles.kargerStein
     */
-  def kargerStein(): Components = js.native
+  def kargerStein(): Components
   
   /**
     * Perform Kruskal's algorithm on the elements in the collection,
     * returning the minimum spanning tree, assuming undirected edges.
     * http://js.cytoscape.org/#eles.kruskal
     */
-  def kruskal(handler: js.Function1[/* edge */ EdgeCollection, Double]): CollectionReturnValue = js.native
+  def kruskal(handler: js.Function1[/* edge */ EdgeCollection, Double]): CollectionReturnValue
   
   /**
     * Rank the nodes in the collection using the Page Rank algorithm.
     * http://js.cytoscape.org/#eles.pageRank
     */
-  def pageRank(options: SearchPageRankOptions): SearchPageRankResult = js.native
+  def pageRank(options: SearchPageRankOptions): SearchPageRankResult
   
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tarjanStronglyConnected(): ComponentsCut = js.native
+  def tarjanStronglyConnected(): ComponentsCut
   
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tarjanStronglyConnectedComponents(): ComponentsCut = js.native
+  def tarjanStronglyConnectedComponents(): ComponentsCut
   
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tsc(): ComponentsCut = js.native
+  def tsc(): ComponentsCut
   
   /**
     * Finds the strongly connected components of a directed graph using Tarjan's algorithm.
     * http://js.cytoscape.org/#eles.tarjanStronglyConnected
     */
-  def tscc(): ComponentsCut = js.native
+  def tscc(): ComponentsCut
 }
 object CollectionAlgorithms {
   

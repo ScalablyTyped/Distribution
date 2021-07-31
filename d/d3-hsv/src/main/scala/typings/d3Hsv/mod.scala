@@ -6,45 +6,42 @@ import typings.d3Color.mod.Color_
 import typings.d3Color.mod.RGBColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("d3-hsv", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("d3-hsv", "hsv")
   @js.native
   val hsv: HSVColorFactory = js.native
   
-  @JSImport("d3-hsv", "interpolateHsv")
-  @js.native
-  def interpolateHsv(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-hsv", "interpolateHsv")
-  @js.native
-  def interpolateHsv(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-hsv", "interpolateHsv")
-  @js.native
-  def interpolateHsv(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-hsv", "interpolateHsv")
-  @js.native
-  def interpolateHsv(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHsv(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsv(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsv(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsv(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @JSImport("d3-hsv", "interpolateHsvLong")
-  @js.native
-  def interpolateHsvLong(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-hsv", "interpolateHsvLong")
-  @js.native
-  def interpolateHsvLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-hsv", "interpolateHsvLong")
-  @js.native
-  def interpolateHsvLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-hsv", "interpolateHsvLong")
-  @js.native
-  def interpolateHsvLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = js.native
+  @scala.inline
+  def interpolateHsvLong(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsvLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsvLong(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsvLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsvLong(a: ColorCommonInstance, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsvLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
+  def interpolateHsvLong(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateHsvLong")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
   type ColorSpaceObjectWithHSV = ColorSpaceObject | HSVColor
   
   @js.native
-  trait HSVColor extends Color_ {
+  trait HSVColor
+    extends StObject
+       with Color_ {
     
     /**
       * Returns a brighter copy of this color.

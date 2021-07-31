@@ -2,14 +2,15 @@ package typings.parkMiller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("park-miller", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ParkMiller {
+  class ^ protected ()
+    extends StObject
+       with ParkMiller {
     /**
     	[Park-Miller](https://en.wikipedia.org/wiki/Lehmer_random_number_generator) pseudorandom number generator (PRNG).
     	@param seed - [Initialization seed.](https://en.wikipedia.org/wiki/Random_seed)
@@ -22,20 +23,34 @@ object mod {
     	```
     	*/
     def this(seed: Double) = this()
+    
+    /* CompleteClass */
+    override def boolean(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def float(): Double = js.native
+    
+    /* CompleteClass */
+    override def floatInRange(min: Double, max: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def integer(): Double = js.native
+    
+    /* CompleteClass */
+    override def integerInRange(min: Double, max: Double): Double = js.native
   }
   
-  @js.native
   trait ParkMiller extends StObject {
     
-    def boolean(): Boolean = js.native
+    def boolean(): Boolean
     
-    def float(): Double = js.native
+    def float(): Double
     
-    def floatInRange(min: Double, max: Double): Double = js.native
+    def floatInRange(min: Double, max: Double): Double
     
-    def integer(): Double = js.native
+    def integer(): Double
     
-    def integerInRange(min: Double, max: Double): Double = js.native
+    def integerInRange(min: Double, max: Double): Double
   }
   object ParkMiller {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventSourceMappingRequest extends StObject {
   
   /**
     * The identifier of the event source mapping.
     */
-  var UUID: String = js.native
+  var UUID: String
 }
 object GetEventSourceMappingRequest {
   

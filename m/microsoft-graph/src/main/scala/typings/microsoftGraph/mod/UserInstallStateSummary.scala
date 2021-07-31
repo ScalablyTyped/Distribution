@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserInstallStateSummary extends Entity {
+trait UserInstallStateSummary
+  extends StObject
+     with Entity {
   
   // The install state of the eBook.
-  var deviceStates: js.UndefOr[NullableOption[js.Array[DeviceInstallState]]] = js.native
+  var deviceStates: js.UndefOr[NullableOption[js.Array[DeviceInstallState]]] = js.undefined
   
   // Failed Device Count.
-  var failedDeviceCount: js.UndefOr[Double] = js.native
+  var failedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Installed Device Count.
-  var installedDeviceCount: js.UndefOr[Double] = js.native
+  var installedDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Not installed device count.
-  var notInstalledDeviceCount: js.UndefOr[Double] = js.native
+  var notInstalledDeviceCount: js.UndefOr[Double] = js.undefined
   
   // User name.
-  var userName: js.UndefOr[NullableOption[String]] = js.native
+  var userName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object UserInstallStateSummary {
   

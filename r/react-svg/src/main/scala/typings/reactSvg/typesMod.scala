@@ -15,32 +15,31 @@ import typings.tanemSvgInjector.typesMod.Errback
 import typings.tanemSvgInjector.typesMod.EvalScripts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait BaseProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var afterInjection: js.UndefOr[Errback] = js.native
+    var afterInjection: js.UndefOr[Errback] = js.undefined
     
-    var beforeInjection: js.UndefOr[BeforeEach] = js.native
+    var beforeInjection: js.UndefOr[BeforeEach] = js.undefined
     
-    var evalScripts: js.UndefOr[EvalScripts] = js.native
+    var evalScripts: js.UndefOr[EvalScripts] = js.undefined
     
-    var fallback: js.UndefOr[ReactType[_]] = js.native
+    var fallback: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var loading: js.UndefOr[ReactType[_]] = js.native
+    var loading: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var renumerateIRIElements: js.UndefOr[Boolean] = js.native
+    var renumerateIRIElements: js.UndefOr[Boolean] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var useRequestCache: js.UndefOr[Boolean] = js.native
+    var useRequestCache: js.UndefOr[Boolean] = js.undefined
     
-    var wrapper: js.UndefOr[div | span] = js.native
+    var wrapper: js.UndefOr[div | span] = js.undefined
   }
   object BaseProps {
     
@@ -72,13 +71,13 @@ object typesMod {
       def setEvalScriptsUndefined: Self = StObject.set(x, "evalScripts", js.undefined)
       
       @scala.inline
-      def setFallback(value: ReactType[_]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      def setFallback(value: ReactType[js.Any]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
       @scala.inline
-      def setLoading(value: ReactType[_]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      def setLoading(value: ReactType[js.Any]): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
@@ -106,14 +105,13 @@ object typesMod {
     }
   }
   
-  type Props = BaseProps with (DetailedHTMLProps[HTMLAttributes[WrapperType], WrapperType])
+  type Props = BaseProps & (DetailedHTMLProps[HTMLAttributes[WrapperType], WrapperType])
   
-  @js.native
   trait State extends StObject {
     
-    var hasError: Boolean = js.native
+    var hasError: Boolean
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
   }
   object State {
     

@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   */
-@js.native
 trait PaymentOptions extends StObject {
   
   /**
@@ -37,18 +35,18 @@ trait PaymentOptions extends StObject {
     *
     * @default "TEST"
     */
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
   /**
     * This object provides information about the merchant that requests
     * payment data.
     */
-  var merchantInfo: js.UndefOr[MerchantInfo] = js.native
+  var merchantInfo: js.UndefOr[MerchantInfo] = js.undefined
   
   /**
     * This object declares the callbacks used for Dynamic Price Updates.
     */
-  var paymentDataCallbacks: js.UndefOr[PaymentDataCallbacks] = js.native
+  var paymentDataCallbacks: js.UndefOr[PaymentDataCallbacks] = js.undefined
 }
 object PaymentOptions {
   

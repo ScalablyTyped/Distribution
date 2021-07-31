@@ -1,18 +1,11 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
-import typings.blueprintjsCore.intentMod.Intent
-import typings.blueprintjsCore.propsMod.IActionProps
-import typings.blueprintjsCore.propsMod.ILinkProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsCore.propsMod.MaybeElement
 import typings.blueprintjsCore.toastMod.IToastProps
-import typings.blueprintjsIcons.iconNameMod.IconName
-import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toasterMod {
@@ -54,18 +47,14 @@ object toasterMod {
       * Create a new `Toaster` instance that can be shared around your application.
       * The `Toaster` will be rendered into a new element appended to the given container.
       */
-    @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster.create")
-    @js.native
-    def create(): IToaster = js.native
-    @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster.create")
-    @js.native
-    def create(props: js.UndefOr[scala.Nothing], container: HTMLElement): IToaster = js.native
-    @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster.create")
-    @js.native
-    def create(props: IToasterProps): IToaster = js.native
-    @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster.create")
-    @js.native
-    def create(props: IToasterProps, container: HTMLElement): IToaster = js.native
+    @scala.inline
+    def create(): IToaster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IToaster]
+    @scala.inline
+    def create(props: Unit, container: HTMLElement): IToaster = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[IToaster]
+    @scala.inline
+    def create(props: IToasterProps): IToaster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any]).asInstanceOf[IToaster]
+    @scala.inline
+    def create(props: IToasterProps, container: HTMLElement): IToaster = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[IToaster]
     
     @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster.defaultProps")
     @js.native
@@ -80,44 +69,11 @@ object toasterMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  /* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/components/toast/toast.IToastProps & {  key :string} */
-  @js.native
-  trait IToastOptions extends StObject {
+  trait IToastOptions
+    extends StObject
+       with IToastProps {
     
-    /**
-      * Action rendered as a minimal `AnchorButton`. The toast is dismissed automatically when the
-      * user clicks the action button. Note that the `intent` prop is ignored (the action button
-      * cannot have its own intent color that might conflict with the toast's intent). Omit this
-      * prop to omit the action button.
-      */
-    var action: js.UndefOr[IActionProps with ILinkProps] = js.native
-    
-    /** A space-delimited list of class names to pass along to a child element. */
-    var className: js.UndefOr[String] = js.native
-    
-    /** Name of a Blueprint UI icon (or an icon element) to render before the message. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
-    
-    /** Visual intent color to apply to element. */
-    var intent: js.UndefOr[Intent] = js.native
-    
-    var key: String = js.native
-    
-    /** Message to display in the body of the toast. */
-    var message: ReactNode = js.native
-    
-    /**
-      * Callback invoked when the toast is dismissed, either by the user or by the timeout.
-      * The value of the argument indicates whether the toast was closed because the timeout expired.
-      */
-    var onDismiss: js.UndefOr[js.Function1[/* didTimeoutExpire */ Boolean, Unit]] = js.native
-    
-    /**
-      * Milliseconds to wait before automatically dismissing toast.
-      * Providing a value less than or equal to 0 will disable the timeout (this is discouraged).
-      * @default 5000
-      */
-    var timeout: js.UndefOr[Double] = js.native
+    var key: String
   }
   object IToastOptions {
     
@@ -131,52 +87,7 @@ object toasterMod {
     implicit class IToastOptionsMutableBuilder[Self <: IToastOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAction(value: IActionProps with ILinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
-      
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      @scala.inline
-      def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
-      
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-      
-      @scala.inline
-      def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
-      
-      @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
-      
-      @scala.inline
-      def setOnDismiss(value: /* didTimeoutExpire */ Boolean => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
-      
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -201,8 +112,9 @@ object toasterMod {
     def show(props: IToastProps, key: String): String = js.native
   }
   
-  @js.native
-  trait IToasterProps extends IProps {
+  trait IToasterProps
+    extends StObject
+       with IProps {
     
     /**
       * Whether a toast should acquire application focus when it first opens.
@@ -210,13 +122,13 @@ object toasterMod {
       * Note that `enforceFocus` is always disabled for `Toaster`s.
       * @default false
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether pressing the `esc` key should clear all active toasts.
       * @default true
       */
-    var canEscapeKeyClear: js.UndefOr[Boolean] = js.native
+    var canEscapeKeyClear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum number of active toasts that can be displayed at once.
@@ -224,13 +136,13 @@ object toasterMod {
       * When the limit is about to be exceeded, the oldest active toast is removed.
       * @default undefined
       */
-    var maxToasts: js.UndefOr[Double] = js.native
+    var maxToasts: js.UndefOr[Double] = js.undefined
     
     /**
       * Position of `Toaster` within its container.
       * @default Position.TOP
       */
-    var position: js.UndefOr[ToasterPosition] = js.native
+    var position: js.UndefOr[ToasterPosition] = js.undefined
     
     /**
       * Whether the toaster should be rendered into a new element attached to `document.body`.
@@ -240,7 +152,7 @@ object toasterMod {
       * to the container.
       * @default true
       */
-    var usePortal: js.UndefOr[Boolean] = js.native
+    var usePortal: js.UndefOr[Boolean] = js.undefined
   }
   object IToasterProps {
     
@@ -285,10 +197,9 @@ object toasterMod {
     }
   }
   
-  @js.native
   trait IToasterState extends StObject {
     
-    var toasts: js.Array[IToastOptions] = js.native
+    var toasts: js.Array[IToastOptions]
   }
   object IToasterState {
     

@@ -2,27 +2,27 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormatCodeOptions extends EditorOptions {
+trait FormatCodeOptions
+  extends StObject
+     with EditorOptions {
   
-  var InsertSpaceAfterCommaDelimiter: Boolean = js.native
+  var InsertSpaceAfterCommaDelimiter: Boolean
   
-  var InsertSpaceAfterFunctionKeywordForAnonymousFunctions: Boolean = js.native
+  var InsertSpaceAfterFunctionKeywordForAnonymousFunctions: Boolean
   
-  var InsertSpaceAfterKeywordsInControlFlowStatements: Boolean = js.native
+  var InsertSpaceAfterKeywordsInControlFlowStatements: Boolean
   
-  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: Boolean = js.native
+  var InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: Boolean
   
-  var InsertSpaceAfterSemicolonInForStatements: Boolean = js.native
+  var InsertSpaceAfterSemicolonInForStatements: Boolean
   
-  var InsertSpaceBeforeAndAfterBinaryOperators: Boolean = js.native
+  var InsertSpaceBeforeAndAfterBinaryOperators: Boolean
   
-  var PlaceOpenBraceOnNewLineForControlBlocks: Boolean = js.native
+  var PlaceOpenBraceOnNewLineForControlBlocks: Boolean
   
-  var PlaceOpenBraceOnNewLineForFunctions: Boolean = js.native
+  var PlaceOpenBraceOnNewLineForFunctions: Boolean
 }
 object FormatCodeOptions {
   

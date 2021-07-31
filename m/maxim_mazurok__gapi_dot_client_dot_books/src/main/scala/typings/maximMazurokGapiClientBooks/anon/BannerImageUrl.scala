@@ -2,31 +2,29 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BannerImageUrl extends StObject {
   
-  var bannerImageUrl: js.UndefOr[String] = js.native
+  var bannerImageUrl: js.UndefOr[String] = js.undefined
   
-  var eligibleForSubscription: js.UndefOr[Boolean] = js.native
+  var eligibleForSubscription: js.UndefOr[Boolean] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var isComplete: js.UndefOr[Boolean] = js.native
+  var isComplete: js.UndefOr[Boolean] = js.undefined
   
-  var seriesFormatType: js.UndefOr[String] = js.native
+  var seriesFormatType: js.UndefOr[String] = js.undefined
   
-  var seriesId: js.UndefOr[String] = js.native
+  var seriesId: js.UndefOr[String] = js.undefined
   
-  var seriesSubscriptionReleaseInfo: js.UndefOr[CancelTime] = js.native
+  var seriesSubscriptionReleaseInfo: js.UndefOr[CancelTime] = js.undefined
   
-  var seriesType: js.UndefOr[String] = js.native
+  var seriesType: js.UndefOr[String] = js.undefined
   
-  var subscriptionId: js.UndefOr[String] = js.native
+  var subscriptionId: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object BannerImageUrl {
   

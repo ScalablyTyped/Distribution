@@ -6,7 +6,6 @@ import typings.sharepoint.anon.High
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Administration {
@@ -18,20 +17,30 @@ object Administration {
   object SearchObjectLevel extends StObject {
     
     @js.native
-    sealed trait spSite extends SearchObjectLevel
+    sealed trait spSite
+      extends StObject
+         with SearchObjectLevel
     
     @js.native
-    sealed trait spSiteSubscription extends SearchObjectLevel
+    sealed trait spSiteSubscription
+      extends StObject
+         with SearchObjectLevel
     
     @js.native
-    sealed trait spWeb extends SearchObjectLevel
+    sealed trait spWeb
+      extends StObject
+         with SearchObjectLevel
     
     @js.native
-    sealed trait ssa extends SearchObjectLevel
+    sealed trait ssa
+      extends StObject
+         with SearchObjectLevel
   }
   
   @js.native
-  trait DocumentCrawlLog extends ClientObject {
+  trait DocumentCrawlLog
+    extends StObject
+       with ClientObject {
     
     def getCrawledUrls(
       getCountOnly: Boolean,

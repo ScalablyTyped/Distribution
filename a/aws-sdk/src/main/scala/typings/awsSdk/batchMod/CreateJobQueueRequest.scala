@@ -2,36 +2,34 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobQueueRequest extends StObject {
   
   /**
     * The set of compute environments mapped to a job queue and their order relative to each other. The job scheduler uses this parameter to determine which compute environment should execute a given job. Compute environments must be in the VALID state before you can associate them with a job queue. You can associate up to three compute environments with a job queue.
     */
-  var computeEnvironmentOrder: ComputeEnvironmentOrders = js.native
+  var computeEnvironmentOrder: ComputeEnvironmentOrders
   
   /**
     * The name of the job queue.
     */
-  var jobQueueName: String = js.native
+  var jobQueueName: String
   
   /**
     * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with the same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
     */
-  var priority: Integer = js.native
+  var priority: Integer
   
   /**
     * The state of the job queue. If the job queue state is ENABLED, it is able to accept jobs. If the job queue state is DISABLED, new jobs cannot be added to the queue, but jobs already in the queue can finish.
     */
-  var state: js.UndefOr[JQState] = js.native
+  var state: js.UndefOr[JQState] = js.undefined
   
   /**
     * The tags that you apply to the job queue to help you categorize and organize your resources. Each tag consists of a key and an optional value. For more information, see Tagging AWS Resources in AWS General Reference.
     */
-  var tags: js.UndefOr[TagrisTagsMap] = js.native
+  var tags: js.UndefOr[TagrisTagsMap] = js.undefined
 }
 object CreateJobQueueRequest {
   

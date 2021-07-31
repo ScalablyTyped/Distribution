@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginItemSettings extends StObject {
   
   /**
@@ -16,9 +14,9 @@ trait LoginItemSettings extends StObject {
     *
     * @platform win32
     */
-  var executableWillLaunchAtLogin: Boolean = js.native
+  var executableWillLaunchAtLogin: Boolean
   
-  var launchItems: js.Array[LaunchItems] = js.native
+  var launchItems: js.Array[LaunchItems]
   
   /**
     * `true` if the app is set to open as hidden at login. This setting is not
@@ -26,12 +24,12 @@ trait LoginItemSettings extends StObject {
     *
     * @platform darwin
     */
-  var openAsHidden: Boolean = js.native
+  var openAsHidden: Boolean
   
   /**
     * `true` if the app is set to open at login.
     */
-  var openAtLogin: Boolean = js.native
+  var openAtLogin: Boolean
   
   /**
     * `true` if the app was opened as a login item that should restore the state from
@@ -41,7 +39,7 @@ trait LoginItemSettings extends StObject {
     *
     * @platform darwin
     */
-  var restoreState: Boolean = js.native
+  var restoreState: Boolean
   
   /**
     * `true` if the app was opened as a hidden login item. This indicates that the app
@@ -50,7 +48,7 @@ trait LoginItemSettings extends StObject {
     *
     * @platform darwin
     */
-  var wasOpenedAsHidden: Boolean = js.native
+  var wasOpenedAsHidden: Boolean
   
   /**
     * `true` if the app was opened at login automatically. This setting is not
@@ -58,7 +56,7 @@ trait LoginItemSettings extends StObject {
     *
     * @platform darwin
     */
-  var wasOpenedAtLogin: Boolean = js.native
+  var wasOpenedAtLogin: Boolean
 }
 object LoginItemSettings {
   

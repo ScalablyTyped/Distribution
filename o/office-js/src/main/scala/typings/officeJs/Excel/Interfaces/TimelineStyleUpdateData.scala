@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
-@js.native
 trait TimelineStyleUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TimelineStyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object TimelineStyleUpdateData {
   

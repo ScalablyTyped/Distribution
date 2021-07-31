@@ -7,16 +7,18 @@ import typings.awsSdkClientKinesisBrowser.typesDescribeStreamInputMod.DescribeSt
 import typings.awsSdkClientKinesisBrowser.typesDescribeStreamOutputMod.DescribeStreamOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object describeStreamCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/DescribeStreamCommand", "DescribeStreamCommand")
   @js.native
-  class DescribeStreamCommand protected () extends Command[
+  class DescribeStreamCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DescribeStreamInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object describeStreamCommandMod {
         ] {
     def this(input: DescribeStreamInput) = this()
     
+    /* CompleteClass */
+    override val input: DescribeStreamInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DescribeStreamInput, DescribeStreamOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: KinesisResolvedConfiguration
+    ): Handler[DescribeStreamInput, DescribeStreamOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: KinesisResolvedConfiguration,
+      options: js.Any
     ): Handler[DescribeStreamInput, DescribeStreamOutput] = js.native
   }
 }

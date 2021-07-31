@@ -2,41 +2,39 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositorySummary extends StObject {
   
   /**
     *  The AWS account ID that manages the repository. 
     */
-  var administratorAccount: js.UndefOr[AccountId] = js.native
+  var administratorAccount: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The ARN of the repository. 
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The description of the repository. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     *  The name of the domain that contains the repository. 
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The name of the repository. 
     */
-  var name: js.UndefOr[RepositoryName] = js.native
+  var name: js.UndefOr[RepositoryName] = js.undefined
 }
 object RepositorySummary {
   

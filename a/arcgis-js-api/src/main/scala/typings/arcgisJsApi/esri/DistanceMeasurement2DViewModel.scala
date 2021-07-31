@@ -16,11 +16,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceMeasurement2DViewModel extends Accessor {
+trait DistanceMeasurement2DViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * Clears the current measurement.

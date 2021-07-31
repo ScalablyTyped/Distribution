@@ -2,20 +2,27 @@ package typings.nodeSass.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyncContext extends Context {
+trait SyncContext
+  extends StObject
+     with Context {
   
   @JSName("callback")
-  var callback_SyncContext: js.UndefOr[scala.Nothing] = js.native
+  var callback_SyncContext: Unit
 }
 object SyncContext {
   
   @scala.inline
-  def apply(options: Options): SyncContext = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+  def apply(callback: Unit, options: Options): SyncContext = {
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncContext]
+  }
+  
+  @scala.inline
+  implicit class SyncContextMutableBuilder[Self <: SyncContext] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCallback(value: Unit): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }
 }

@@ -2,59 +2,59 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transaction Related Information
   */
-@js.native
-trait BundleEntryResponse extends BackboneElement {
+trait BundleEntryResponse
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'etag'.
     */
-  var _etag: js.UndefOr[Element] = js.native
+  var _etag: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'lastModified'.
     */
-  var _lastModified: js.UndefOr[Element] = js.native
+  var _lastModified: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'location'.
     */
-  var _location: js.UndefOr[Element] = js.native
+  var _location: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * The etag for the resource (if relevant)
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Server's date time modified
     */
-  var lastModified: js.UndefOr[instant] = js.native
+  var lastModified: js.UndefOr[instant] = js.undefined
   
   /**
     * The location, if the operation returns a location
     */
-  var location: js.UndefOr[uri] = js.native
+  var location: js.UndefOr[uri] = js.undefined
   
   /**
     * OperationOutcome with hints and warnings (for batch/transaction)
     */
-  var outcome: js.UndefOr[Resource] = js.native
+  var outcome: js.UndefOr[Resource] = js.undefined
   
   /**
     * Status response code (text optional)
     */
-  var status: String = js.native
+  var status: String
 }
 object BundleEntryResponse {
   

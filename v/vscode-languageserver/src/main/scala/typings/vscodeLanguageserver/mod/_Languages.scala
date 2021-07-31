@@ -5,17 +5,15 @@ import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _Languages extends StObject {
   
-  def attachPartialResultProgress[PR](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[PR], params: PartialResultParams): js.UndefOr[ResultProgress[PR]] = js.native
+  def attachPartialResultProgress[PR](`type`: typings.vscodeLanguageserverProtocol.mod.ProgressType[PR], params: PartialResultParams): js.UndefOr[ResultProgress[PR]]
   
-  def attachWorkDoneProgress(params: WorkDoneProgressParams): typings.vscodeLanguageserver.progressMod.WorkDoneProgress = js.native
+  def attachWorkDoneProgress(params: WorkDoneProgressParams): typings.vscodeLanguageserver.progressMod.WorkDoneProgress
   
-  var connection: IConnection = js.native
+  var connection: IConnection
 }
 object _Languages {
   

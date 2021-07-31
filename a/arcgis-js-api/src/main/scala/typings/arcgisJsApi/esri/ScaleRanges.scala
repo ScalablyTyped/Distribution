@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleRanges extends Accessor {
+trait ScaleRanges
+  extends StObject
+     with Accessor {
   
   /**
     * Clamps the scale to the closest minScale or maxScale on the scale range.

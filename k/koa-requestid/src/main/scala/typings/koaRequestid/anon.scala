@@ -3,19 +3,17 @@ package typings.koaRequestid
 import typings.koaRequestid.koaRequestidBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Expose extends StObject {
     
-    var expose: js.UndefOr[String | `false`] = js.native
+    var expose: js.UndefOr[String | `false`] = js.undefined
     
-    var header: js.UndefOr[String | `false`] = js.native
+    var header: js.UndefOr[String | `false`] = js.undefined
     
-    var query: js.UndefOr[String | `false`] = js.native
+    var query: js.UndefOr[String | `false`] = js.undefined
   }
   object Expose {
     

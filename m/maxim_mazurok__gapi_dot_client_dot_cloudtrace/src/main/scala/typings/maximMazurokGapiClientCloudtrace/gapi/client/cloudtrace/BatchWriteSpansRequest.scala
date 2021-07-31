@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchWriteSpansRequest extends StObject {
   
   /** Required. A list of new spans. The span names must not match existing spans, or the results are undefined. */
-  var spans: js.UndefOr[js.Array[Span]] = js.native
+  var spans: js.UndefOr[js.Array[Span]] = js.undefined
 }
 object BatchWriteSpansRequest {
   

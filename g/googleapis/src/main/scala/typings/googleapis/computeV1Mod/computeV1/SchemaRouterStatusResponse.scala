@@ -2,18 +2,16 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRouterStatusResponse extends StObject {
   
   /**
     * Type of resource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var result: js.UndefOr[SchemaRouterStatus] = js.native
+  var result: js.UndefOr[SchemaRouterStatus] = js.undefined
 }
 object SchemaRouterStatusResponse {
   

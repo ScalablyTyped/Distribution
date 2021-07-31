@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,119 +16,118 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * native theming, this changes, as here the general button look is drawn by the system's theming engine, while the text is drawn by OpenOffice.org. In
   * this case, the button respects the `ButtonRolloverTextColor` when painting its text.
   */
-@js.native
 trait XStyleSettings extends StObject {
   
-  var ActiveBorderColor: Color = js.native
+  var ActiveBorderColor: Color
   
-  var ActiveColor: Color = js.native
+  var ActiveColor: Color
   
-  var ActiveTabColor: Color = js.native
+  var ActiveTabColor: Color
   
-  var ActiveTextColor: Color = js.native
+  var ActiveTextColor: Color
   
-  var ApplicationFont: FontDescriptor = js.native
+  var ApplicationFont: FontDescriptor
   
-  var ButtonRolloverTextColor: Color = js.native
+  var ButtonRolloverTextColor: Color
   
-  var ButtonTextColor: Color = js.native
+  var ButtonTextColor: Color
   
-  var CheckedColor: Color = js.native
+  var CheckedColor: Color
   
-  var DarkShadowColor: Color = js.native
+  var DarkShadowColor: Color
   
-  var DeactiveBorderColor: Color = js.native
+  var DeactiveBorderColor: Color
   
-  var DeactiveColor: Color = js.native
+  var DeactiveColor: Color
   
-  var DeactiveTextColor: Color = js.native
+  var DeactiveTextColor: Color
   
-  var DialogColor: Color = js.native
+  var DialogColor: Color
   
-  var DialogTextColor: Color = js.native
+  var DialogTextColor: Color
   
-  var DisableColor: Color = js.native
+  var DisableColor: Color
   
-  var FaceColor: Color = js.native
+  var FaceColor: Color
   
-  var FaceGradientColor: Color = js.native
+  var FaceGradientColor: Color
   
-  var FieldColor: Color = js.native
+  var FieldColor: Color
   
-  var FieldFont: FontDescriptor = js.native
+  var FieldFont: FontDescriptor
   
-  var FieldRolloverTextColor: Color = js.native
+  var FieldRolloverTextColor: Color
   
-  var FieldTextColor: Color = js.native
+  var FieldTextColor: Color
   
-  var FloatTitleFont: FontDescriptor = js.native
+  var FloatTitleFont: FontDescriptor
   
-  var GroupFont: FontDescriptor = js.native
+  var GroupFont: FontDescriptor
   
-  var GroupTextColor: Color = js.native
+  var GroupTextColor: Color
   
-  var HelpColor: Color = js.native
+  var HelpColor: Color
   
-  var HelpFont: FontDescriptor = js.native
+  var HelpFont: FontDescriptor
   
-  var HelpTextColor: Color = js.native
+  var HelpTextColor: Color
   
   /** controls whether the an UI component should use a high-contrast mode */
-  var HighContrastMode: Boolean = js.native
+  var HighContrastMode: Boolean
   
-  var HighlightColor: Color = js.native
+  var HighlightColor: Color
   
-  var HighlightTextColor: Color = js.native
+  var HighlightTextColor: Color
   
-  var InactiveTabColor: Color = js.native
+  var InactiveTabColor: Color
   
-  var LabelFont: FontDescriptor = js.native
+  var LabelFont: FontDescriptor
   
-  var LabelTextColor: Color = js.native
+  var LabelTextColor: Color
   
-  var LightColor: Color = js.native
+  var LightColor: Color
   
-  var MenuBarColor: Color = js.native
+  var MenuBarColor: Color
   
-  var MenuBarTextColor: Color = js.native
+  var MenuBarTextColor: Color
   
-  var MenuBorderColor: Color = js.native
+  var MenuBorderColor: Color
   
-  var MenuColor: Color = js.native
+  var MenuColor: Color
   
-  var MenuFont: FontDescriptor = js.native
+  var MenuFont: FontDescriptor
   
-  var MenuHighlightColor: Color = js.native
+  var MenuHighlightColor: Color
   
-  var MenuHighlightTextColor: Color = js.native
+  var MenuHighlightTextColor: Color
   
-  var MenuTextColor: Color = js.native
+  var MenuTextColor: Color
   
-  var MonoColor: Color = js.native
+  var MonoColor: Color
   
-  var PushButtonFont: FontDescriptor = js.native
+  var PushButtonFont: FontDescriptor
   
-  var RadioCheckFont: FontDescriptor = js.native
+  var RadioCheckFont: FontDescriptor
   
-  var RadioCheckTextColor: Color = js.native
+  var RadioCheckTextColor: Color
   
-  var SeparatorColor: Color = js.native
+  var SeparatorColor: Color
   
-  var ShadowColor: Color = js.native
+  var ShadowColor: Color
   
-  var TitleFont: FontDescriptor = js.native
+  var TitleFont: FontDescriptor
   
-  var ToolFont: FontDescriptor = js.native
+  var ToolFont: FontDescriptor
   
-  var WindowColor: Color = js.native
+  var WindowColor: Color
   
-  var WindowTextColor: Color = js.native
+  var WindowTextColor: Color
   
-  var WorkspaceColor: Color = js.native
+  var WorkspaceColor: Color
   
-  def addStyleChangeListener(Listener: XStyleChangeListener): Unit = js.native
+  def addStyleChangeListener(Listener: XStyleChangeListener): Unit
   
-  def removeStyleChangeListener(Listener: XStyleChangeListener): Unit = js.native
+  def removeStyleChangeListener(Listener: XStyleChangeListener): Unit
 }
 object XStyleSettings {
   

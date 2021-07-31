@@ -3,15 +3,13 @@ package typings.googleMaps.mod
 import typings.googleMaps.anon.PartialPlaceSearchResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindPlaceFromTextResponse extends StObject {
   
-  var candidates: js.Array[PartialPlaceSearchResult] = js.native
+  var candidates: js.Array[PartialPlaceSearchResult]
   
-  var status: SearchResponseStatus = js.native
+  var status: SearchResponseStatus
 }
 object FindPlaceFromTextResponse {
   

@@ -12,13 +12,15 @@ import typings.std.Intl.DateTimeFormatPart
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimeMod {
   
-  @JSImport("@formatjs/intl/lib/src/dateTime", "formatDate")
+  @JSImport("@formatjs/intl/lib/src/dateTime", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def formatDate(
     config: TimeZone,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -29,10 +31,9 @@ object dateTimeMod {
         String
       ]
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl/lib/src/dateTime", "formatDateTimeRange")
-  @js.native
+  @scala.inline
   def formatDateTimeRange(
     config: OnErrorTimeZone,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -44,10 +45,9 @@ object dateTimeMod {
         String
       ]
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDateTimeRange")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasFromToOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl/lib/src/dateTime", "formatDateToParts")
-  @js.native
+  @scala.inline
   def formatDateToParts(
     config: TimeZone,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -58,10 +58,9 @@ object dateTimeMod {
         String
       ]
     ]
-  ): js.Array[DateTimeFormatPart] = js.native
+  ): js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDateToParts")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[DateTimeFormatPart]]
   
-  @JSImport("@formatjs/intl/lib/src/dateTime", "formatTime")
-  @js.native
+  @scala.inline
   def formatTime(
     config: TimeZone,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -72,10 +71,9 @@ object dateTimeMod {
         String
       ]
     ]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@formatjs/intl/lib/src/dateTime", "formatTimeToParts")
-  @js.native
+  @scala.inline
   def formatTimeToParts(
     config: TimeZone,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
@@ -86,36 +84,34 @@ object dateTimeMod {
         js.Array[DateTimeFormatPart]
       ]
     ]
-  ): js.Array[DateTimeFormatPart] = js.native
+  ): js.Array[DateTimeFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTimeToParts")(config.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], hasValueOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[DateTimeFormatPart]]
   
-  @JSImport("@formatjs/intl/lib/src/dateTime", "getFormatter")
-  @js.native
+  @scala.inline
   def getFormatter(
     hasLocaleFormatsOnErrorTimeZone: TimeZone,
     `type`: date,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.DateTimeFormat['format']>[0] | string, opts : @formatjs/intl.@formatjs/intl/lib/src/types.FormatDateOptions | undefined): string>[1] */ js.Any
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/intl/lib/src/dateTime", "getFormatter")
-  @js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  @scala.inline
   def getFormatter(
     hasLocaleFormatsOnErrorTimeZone: TimeZone,
     `type`: time,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat],
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : std.Parameters<std.Intl.DateTimeFormat['format']>[0] | string, opts : @formatjs/intl.@formatjs/intl/lib/src/types.FormatDateOptions | undefined): string>[1] */ js.Any
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/intl/lib/src/dateTime", "getFormatter")
-  @js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  
+  @scala.inline
   def getFormatter_date(
     hasLocaleFormatsOnErrorTimeZone: TimeZone,
     `type`: date,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat]
-  ): DateTimeFormat = js.native
-  @JSImport("@formatjs/intl/lib/src/dateTime", "getFormatter")
-  @js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
+  
+  @scala.inline
   def getFormatter_time(
     hasLocaleFormatsOnErrorTimeZone: TimeZone,
     `type`: time,
     getDateTimeFormat: js.Function1[/* args */ ConstructorParameters[TypeofDateTimeFormat], DateTimeFormat]
-  ): DateTimeFormat = js.native
+  ): DateTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatter")(hasLocaleFormatsOnErrorTimeZone.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], getDateTimeFormat.asInstanceOf[js.Any])).asInstanceOf[DateTimeFormat]
 }

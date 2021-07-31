@@ -6,7 +6,6 @@ import typings.agGrid.iRowModelMod.RowBounds
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientSideRowModelMod {
@@ -150,7 +149,7 @@ object clientSideRowModelMod {
     
     def setDatasource(datasource: js.Any): Unit = js.native
     
-    def setRowData(rowData: js.Array[_]): Unit = js.native
+    def setRowData(rowData: js.Array[js.Any]): Unit = js.native
     
     var sortStage: js.Any = js.native
     
@@ -162,12 +161,11 @@ object clientSideRowModelMod {
     var valueService: js.Any = js.native
   }
   
-  @js.native
   trait BatchTransactionItem extends StObject {
     
-    def callback(res: RowNodeTransaction): Unit = js.native
+    def callback(res: RowNodeTransaction): Unit
     
-    var rowDataTransaction: RowDataTransaction = js.native
+    var rowDataTransaction: RowDataTransaction
   }
   object BatchTransactionItem {
     
@@ -188,24 +186,23 @@ object clientSideRowModelMod {
     }
   }
   
-  @js.native
   trait RefreshModelParams extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var groupState: js.UndefOr[js.Any] = js.native
+    var groupState: js.UndefOr[js.Any] = js.undefined
     
-    var keepEditingRows: js.UndefOr[Boolean] = js.native
+    var keepEditingRows: js.UndefOr[Boolean] = js.undefined
     
-    var keepRenderedRows: js.UndefOr[Boolean] = js.native
+    var keepRenderedRows: js.UndefOr[Boolean] = js.undefined
     
-    var newData: js.UndefOr[Boolean] = js.native
+    var newData: js.UndefOr[Boolean] = js.undefined
     
-    var rowNodeOrder: js.UndefOr[StringDictionary[Double]] = js.native
+    var rowNodeOrder: js.UndefOr[StringDictionary[Double]] = js.undefined
     
-    var rowNodeTransactions: js.UndefOr[js.Array[RowNodeTransaction]] = js.native
+    var rowNodeTransactions: js.UndefOr[js.Array[RowNodeTransaction]] = js.undefined
     
-    var step: Double = js.native
+    var step: Double
   }
   object RefreshModelParams {
     
@@ -268,16 +265,15 @@ object clientSideRowModelMod {
     }
   }
   
-  @js.native
   trait RowDataTransaction extends StObject {
     
-    var add: js.UndefOr[js.Array[_]] = js.native
+    var add: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var addIndex: js.UndefOr[Double] = js.native
+    var addIndex: js.UndefOr[Double] = js.undefined
     
-    var remove: js.UndefOr[js.Array[_]] = js.native
+    var remove: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var update: js.UndefOr[js.Array[_]] = js.native
+    var update: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object RowDataTransaction {
     
@@ -291,7 +287,7 @@ object clientSideRowModelMod {
     implicit class RowDataTransactionMutableBuilder[Self <: RowDataTransaction] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdd(value: js.Array[_]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      def setAdd(value: js.Array[js.Any]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAddIndex(value: Double): Self = StObject.set(x, "addIndex", value.asInstanceOf[js.Any])
@@ -306,7 +302,7 @@ object clientSideRowModelMod {
       def setAddVarargs(value: js.Any*): Self = StObject.set(x, "add", js.Array(value :_*))
       
       @scala.inline
-      def setRemove(value: js.Array[_]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      def setRemove(value: js.Array[js.Any]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
@@ -315,7 +311,7 @@ object clientSideRowModelMod {
       def setRemoveVarargs(value: js.Any*): Self = StObject.set(x, "remove", js.Array(value :_*))
       
       @scala.inline
-      def setUpdate(value: js.Array[_]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      def setUpdate(value: js.Array[js.Any]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
@@ -325,14 +321,13 @@ object clientSideRowModelMod {
     }
   }
   
-  @js.native
   trait RowNodeTransaction extends StObject {
     
-    var add: js.Array[RowNode] = js.native
+    var add: js.Array[RowNode]
     
-    var remove: js.Array[RowNode] = js.native
+    var remove: js.Array[RowNode]
     
-    var update: js.Array[RowNode] = js.native
+    var update: js.Array[RowNode]
   }
   object RowNodeTransaction {
     

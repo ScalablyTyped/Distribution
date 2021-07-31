@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorInfo extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ErrorInfo extends StObject {
     A number describing the error programmatically.
     
     */
-  var ErrorCode: js.UndefOr[string] = js.native
+  var ErrorCode: js.UndefOr[string] = js.undefined
   
   /**
     * 
     An optional field to provide more details about the error.
     
     */
-  var ErrorString: js.UndefOr[string] = js.native
+  var ErrorString: js.UndefOr[string] = js.undefined
 }
 object ErrorInfo {
   

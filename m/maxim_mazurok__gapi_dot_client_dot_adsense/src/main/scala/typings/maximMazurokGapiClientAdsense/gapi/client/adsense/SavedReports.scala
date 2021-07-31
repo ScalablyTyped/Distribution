@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedReports extends StObject {
   
   /** ETag of this response for caching purposes. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The saved reports returned in this list response. */
-  var items: js.UndefOr[js.Array[SavedReport]] = js.native
+  var items: js.UndefOr[js.Array[SavedReport]] = js.undefined
   
   /** Kind of list this is, in this case adsense#savedReports. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Continuation token used to page through saved reports. To retrieve the next page of results, set the next request's "pageToken" value to this. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SavedReports {
   

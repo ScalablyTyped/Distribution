@@ -2,17 +2,15 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircuitFactory_ extends StObject {
   
-  def getCache(): js.Array[CircuitBreaker] = js.native
+  def getCache(): js.Array[CircuitBreaker]
   
-  def getOrCreate(config: CirctuiBreakerConfig): CircuitBreaker = js.native
+  def getOrCreate(config: CirctuiBreakerConfig): CircuitBreaker
   
-  def resetCache(): Unit = js.native
+  def resetCache(): Unit
 }
 object CircuitFactory_ {
   

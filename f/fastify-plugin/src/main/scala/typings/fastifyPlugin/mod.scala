@@ -6,43 +6,39 @@ import typings.fastify.utilsMod.RawServerDefault
 import typings.fastifyPlugin.anon.Fastify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fastify-plugin", JSImport.Default)
+  @JSImport("fastify-plugin", JSImport.Namespace)
   @js.native
-  def default[Options](fn: FastifyPluginAsync[Options, RawServerDefault]): FastifyPluginAsync[Options, RawServerDefault] = js.native
-  @JSImport("fastify-plugin", JSImport.Default)
-  @js.native
-  def default[Options](fn: FastifyPluginAsync[Options, RawServerDefault], options: String): FastifyPluginAsync[Options, RawServerDefault] = js.native
-  @JSImport("fastify-plugin", JSImport.Default)
-  @js.native
-  def default[Options](fn: FastifyPluginAsync[Options, RawServerDefault], options: PluginMetadata): FastifyPluginAsync[Options, RawServerDefault] = js.native
-  @JSImport("fastify-plugin", JSImport.Default)
-  @js.native
-  def default[Options](fn: FastifyPluginCallback[Options, RawServerDefault]): FastifyPluginCallback[Options, RawServerDefault] = js.native
-  @JSImport("fastify-plugin", JSImport.Default)
-  @js.native
-  def default[Options](fn: FastifyPluginCallback[Options, RawServerDefault], options: String): FastifyPluginCallback[Options, RawServerDefault] = js.native
-  @JSImport("fastify-plugin", JSImport.Default)
-  @js.native
-  def default[Options](fn: FastifyPluginCallback[Options, RawServerDefault], options: PluginMetadata): FastifyPluginCallback[Options, RawServerDefault] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[Options](fn: FastifyPluginAsync[Options, RawServerDefault]): FastifyPluginAsync[Options, RawServerDefault] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FastifyPluginAsync[Options, RawServerDefault]]
+  @scala.inline
+  def default[Options](fn: FastifyPluginAsync[Options, RawServerDefault], options: String): FastifyPluginAsync[Options, RawServerDefault] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginAsync[Options, RawServerDefault]]
+  @scala.inline
+  def default[Options](fn: FastifyPluginAsync[Options, RawServerDefault], options: PluginMetadata): FastifyPluginAsync[Options, RawServerDefault] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginAsync[Options, RawServerDefault]]
+  @scala.inline
+  def default[Options](fn: FastifyPluginCallback[Options, RawServerDefault]): FastifyPluginCallback[Options, RawServerDefault] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[FastifyPluginCallback[Options, RawServerDefault]]
+  @scala.inline
+  def default[Options](fn: FastifyPluginCallback[Options, RawServerDefault], options: String): FastifyPluginCallback[Options, RawServerDefault] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginCallback[Options, RawServerDefault]]
+  @scala.inline
+  def default[Options](fn: FastifyPluginCallback[Options, RawServerDefault], options: PluginMetadata): FastifyPluginCallback[Options, RawServerDefault] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FastifyPluginCallback[Options, RawServerDefault]]
+  
   trait PluginMetadata extends StObject {
     
     /** Decorator dependencies for this plugin */
-    var decorators: js.UndefOr[Fastify] = js.native
+    var decorators: js.UndefOr[Fastify] = js.undefined
     
     /** The plugin dependencies */
-    var dependencies: js.UndefOr[js.Array[String]] = js.native
+    var dependencies: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Bare-minimum version of Fastify for your plugin, just add the semver range that you need. */
-    var fastify: js.UndefOr[String] = js.native
+    var fastify: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object PluginMetadata {
     

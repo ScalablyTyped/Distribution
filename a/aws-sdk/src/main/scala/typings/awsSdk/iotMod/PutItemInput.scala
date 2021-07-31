@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutItemInput extends StObject {
   
   /**
     * The table where the message data will be written.
     */
-  var tableName: TableName = js.native
+  var tableName: TableName
 }
 object PutItemInput {
   

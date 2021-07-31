@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -65,7 +64,7 @@ trait IgGridSortingMethods extends StObject {
     * @param exprs array of sorting expressions. If not set then the method uses expressions defined in sorting settings of the data source.
     */
   def sortMultiple(): Unit = js.native
-  def sortMultiple(exprs: js.Array[_]): Unit = js.native
+  def sortMultiple(exprs: js.Array[js.Any]): Unit = js.native
   
   /**
     * Removes sorting for the grid column with the specified columnKey/columnIndex and updates the UI.

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The model of an {@link UnoControlSpinButton} control must support the {@link UnoControlSpinButtonModel} service.
   */
-@js.native
 trait UnoControlSpinButton
-  extends UnoControl
+  extends StObject
+     with UnoControl
      with XSpinValue
 object UnoControlSpinButton {
   

@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoComplete extends Widget {
+trait AutoComplete
+  extends StObject
+     with Widget {
   
   def close(): Unit = js.native
   

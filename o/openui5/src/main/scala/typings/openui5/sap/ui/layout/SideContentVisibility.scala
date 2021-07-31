@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.layout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait SideContentVisibility extends StObject
 object SideContentVisibility extends StObject {
   
   @js.native
-  sealed trait AlwaysShow extends SideContentVisibility
+  sealed trait AlwaysShow
+    extends StObject
+       with SideContentVisibility
   
   @js.native
-  sealed trait NeverShow extends SideContentVisibility
+  sealed trait NeverShow
+    extends StObject
+       with SideContentVisibility
   
   @js.native
-  sealed trait ShowAboveL extends SideContentVisibility
+  sealed trait ShowAboveL
+    extends StObject
+       with SideContentVisibility
   
   @js.native
-  sealed trait ShowAboveM extends SideContentVisibility
+  sealed trait ShowAboveM
+    extends StObject
+       with SideContentVisibility
   
   @js.native
-  sealed trait ShowAboveS extends SideContentVisibility
+  sealed trait ShowAboveS
+    extends StObject
+       with SideContentVisibility
 }

@@ -4,12 +4,10 @@ import typings.cssSelect.anon.Type
 import typings.cssWhat.parseMod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Adapter[Node, ElementNode /* <: Node */] extends StObject {
     
     /**
@@ -19,86 +17,86 @@ object typesMod {
       * `a === b`.
       */
     @JSName("equals")
-    var equals_FAdapter: js.UndefOr[js.Function2[/* a */ Node, /* b */ Node, Boolean]] = js.native
+    var equals_FAdapter: js.UndefOr[js.Function2[/* a */ Node, /* b */ Node, Boolean]] = js.undefined
     
     /**
       * Does at least one of passed element nodes pass the test predicate?
       */
-    def existsOne(test: Predicate[ElementNode], elems: js.Array[Node]): Boolean = js.native
+    def existsOne(test: Predicate[ElementNode], elems: js.Array[Node]): Boolean
     
     /**
       * Finds all of the element nodes in the array that match the test predicate,
       * as well as any of their children that match it.
       */
-    def findAll(test: Predicate[ElementNode], nodes: js.Array[Node]): js.Array[ElementNode] = js.native
+    def findAll(test: Predicate[ElementNode], nodes: js.Array[Node]): js.Array[ElementNode]
     
     /**
       * Finds the first node in the array that matches the test predicate, or one
       * of its children.
       */
-    def findOne(test: Predicate[ElementNode], elems: js.Array[Node]): ElementNode | Null = js.native
+    def findOne(test: Predicate[ElementNode], elems: js.Array[Node]): ElementNode | Null
     
     /**
       * Get the attribute value.
       */
-    def getAttributeValue(elem: ElementNode, name: String): js.UndefOr[String] = js.native
+    def getAttributeValue(elem: ElementNode, name: String): js.UndefOr[String]
     
     /**
       * Get the node's children
       */
-    def getChildren(node: Node): js.Array[Node] = js.native
+    def getChildren(node: Node): js.Array[Node]
     
     /**
       * Get the name of the tag
       */
-    def getName(elem: ElementNode): String = js.native
+    def getName(elem: ElementNode): String
     
     /**
       * Get the parent of the node
       */
-    def getParent(node: ElementNode): ElementNode | Null = js.native
+    def getParent(node: ElementNode): ElementNode | Null
     
     /**
       * Get the siblings of the node. Note that unlike jQuery's `siblings` method,
       * this is expected to include the current node as well
       */
-    def getSiblings(node: Node): js.Array[Node] = js.native
+    def getSiblings(node: Node): js.Array[Node]
     
     /**
       * Get the text content of the node, and its children if it has any.
       */
-    def getText(node: Node): String = js.native
+    def getText(node: Node): String
     
     /**
       * Does the element have the named attribute?
       */
-    def hasAttrib(elem: ElementNode, name: String): Boolean = js.native
+    def hasAttrib(elem: ElementNode, name: String): Boolean
     
     /**
       * Is the element in active state?
       */
-    var isActive: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.native
+    var isActive: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.undefined
     
     /**
       * Is the element in hovered state?
       */
-    var isHovered: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.native
+    var isHovered: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.undefined
     
     /**
       *  Is the node a tag?
       */
-    def isTag(node: Node): /* is ElementNode */ Boolean = js.native
+    def isTag(node: Node): /* is ElementNode */ Boolean
     
     /**
       * Is the element in visited state?
       */
-    var isVisited: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.native
+    var isVisited: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.undefined
     
     /**
       * Takes an array of nodes, and removes any duplicates, as well as any
       * nodes whose ancestors are also in the array.
       */
-    def removeSubsets(nodes: js.Array[Node]): js.Array[Node] = js.native
+    def removeSubsets(nodes: js.Array[Node]): js.Array[Node]
   }
   object Adapter {
     
@@ -122,7 +120,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter[_, _], Node, ElementNode /* <: Node */] (val x: Self with (Adapter[Node, ElementNode])) extends AnyVal {
+    implicit class AdapterMutableBuilder[Self <: Adapter[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (Adapter[Node, ElementNode])) extends AnyVal {
       
       @scala.inline
       def setEquals_(value: (/* a */ Node, /* b */ Node) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
@@ -201,13 +199,14 @@ object typesMod {
     var shouldTestNextSiblings: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
-  trait InternalOptions[Node, ElementNode /* <: Node */] extends Options[Node, ElementNode] {
+  trait InternalOptions[Node, ElementNode /* <: Node */]
+    extends StObject
+       with Options[Node, ElementNode] {
     
     @JSName("adapter")
-    var adapter_InternalOptions: Adapter[Node, ElementNode] = js.native
+    var adapter_InternalOptions: Adapter[Node, ElementNode]
     
-    def equals(a: Node, b: Node): Boolean = js.native
+    def equals(a: Node, b: Node): Boolean
   }
   object InternalOptions {
     
@@ -219,7 +218,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class InternalOptionsMutableBuilder[Self <: InternalOptions[_, _], Node, ElementNode /* <: Node */] (val x: Self with (InternalOptions[Node, ElementNode])) extends AnyVal {
+    implicit class InternalOptionsMutableBuilder[Self <: InternalOptions[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (InternalOptions[Node, ElementNode])) extends AnyVal {
       
       @scala.inline
       def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
@@ -231,14 +230,13 @@ object typesMod {
   
   type InternalSelector = Selector | Type
   
-  @js.native
   trait Options[Node, ElementNode /* <: Node */] extends StObject {
     
     /**
       * The adapter to use when interacting with the backing DOM structure. By
       * default it uses the `domutils` module.
       */
-    var adapter: js.UndefOr[Adapter[Node, ElementNode]] = js.native
+    var adapter: js.UndefOr[Adapter[Node, ElementNode]] = js.undefined
     
     /**
       * Allow css-select to cache results for some selectors, sometimes greatly
@@ -246,29 +244,29 @@ object typesMod {
       * change in between queries with the same compiled selector.
       * Defaults to `true`.
       */
-    var cacheResults: js.UndefOr[Boolean] = js.native
+    var cacheResults: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The context of the current query. Used to limit the scope of searches.
       * Can be matched directly using the `:scope` pseudo-selector.
       */
-    var context: js.UndefOr[ElementNode | js.Array[ElementNode]] = js.native
+    var context: js.UndefOr[ElementNode | js.Array[ElementNode]] = js.undefined
     
     /**
       * The last function in the stack, will be called with the last element
       * that's looked at.
       */
-    var rootFunc: js.UndefOr[js.Function1[/* element */ ElementNode, Boolean]] = js.native
+    var rootFunc: js.UndefOr[js.Function1[/* element */ ElementNode, Boolean]] = js.undefined
     
     /**
       * Limits the module to only use CSS3 selectors. Default: false.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When enabled, tag names will be case-sensitive. Default: false.
       */
-    var xmlMode: js.UndefOr[Boolean] = js.native
+    var xmlMode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -279,7 +277,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], Node, ElementNode /* <: Node */] (val x: Self with (Options[Node, ElementNode])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (Options[Node, ElementNode])) extends AnyVal {
       
       @scala.inline
       def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])

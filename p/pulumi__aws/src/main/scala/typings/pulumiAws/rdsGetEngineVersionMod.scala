@@ -3,40 +3,40 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsGetEngineVersionMod {
   
-  @JSImport("@pulumi/aws/rds/getEngineVersion", "getEngineVersion")
+  @JSImport("@pulumi/aws/rds/getEngineVersion", JSImport.Namespace)
   @js.native
-  def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = js.native
-  @JSImport("@pulumi/aws/rds/getEngineVersion", "getEngineVersion")
-  @js.native
-  def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getEngineVersion(args: GetEngineVersionArgs): js.Promise[GetEngineVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  @scala.inline
+  def getEngineVersion(args: GetEngineVersionArgs, opts: InvokeOptions): js.Promise[GetEngineVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEngineVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetEngineVersionResult]]
+  
   trait GetEngineVersionArgs extends StObject {
     
     /**
       * DB engine. Engine values include `aurora`, `aurora-mysql`, `aurora-postgresql`, `docdb`, `mariadb`, `mysql`, `neptune`, `oracle-ee`, `oracle-se`, `oracle-se1`, `oracle-se2`, `postgres`, `sqlserver-ee`, `sqlserver-ex`, `sqlserver-se`, and `sqlserver-web`.
       */
-    val engine: String = js.native
+    val engine: String
     
     /**
       * The name of a specific DB parameter group family. Examples of parameter group families are `mysql8.0`, `mariadb10.4`, and `postgres12`.
       */
-    val parameterGroupFamily: js.UndefOr[String] = js.native
+    val parameterGroupFamily: js.UndefOr[String] = js.undefined
     
     /**
       * Ordered list of preferred engine versions. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned. If both the `version` and `preferredVersions` arguments are not configured, the data source will return the default version for the engine.
       */
-    val preferredVersions: js.UndefOr[js.Array[String]] = js.native
+    val preferredVersions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Version of the DB engine. For example, `5.7.22`, `10.1.34`, and `12.3`. If both the `version` and `preferredVersions` arguments are not configured, the data source will return the default version for the engine.
       */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object GetEngineVersionArgs {
     
@@ -75,91 +75,90 @@ object rdsGetEngineVersionMod {
     }
   }
   
-  @js.native
   trait GetEngineVersionResult extends StObject {
     
     /**
       * The default character set for new instances of this engine version.
       */
-    val defaultCharacterSet: String = js.native
+    val defaultCharacterSet: String
     
-    val engine: String = js.native
+    val engine: String
     
     /**
       * The description of the database engine.
       */
-    val engineDescription: String = js.native
+    val engineDescription: String
     
     /**
       * Set of log types that the database engine has available for export to CloudWatch Logs.
       */
-    val exportableLogTypes: js.Array[String] = js.native
+    val exportableLogTypes: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val parameterGroupFamily: String = js.native
+    val parameterGroupFamily: String
     
-    val preferredVersions: js.UndefOr[js.Array[String]] = js.native
+    val preferredVersions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The status of the DB engine version, either available or deprecated.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * Set of the character sets supported by this engine.
       */
-    val supportedCharacterSets: js.Array[String] = js.native
+    val supportedCharacterSets: js.Array[String]
     
     /**
       * Set of features supported by the DB engine.
       */
-    val supportedFeatureNames: js.Array[String] = js.native
+    val supportedFeatureNames: js.Array[String]
     
     /**
       * Set of the supported DB engine modes.
       */
-    val supportedModes: js.Array[String] = js.native
+    val supportedModes: js.Array[String]
     
     /**
       * Set of the time zones supported by this engine.
       */
-    val supportedTimezones: js.Array[String] = js.native
+    val supportedTimezones: js.Array[String]
     
     /**
       * Indicates whether you can use Aurora global databases with a specific DB engine version.
       */
-    val supportsGlobalDatabases: Boolean = js.native
+    val supportsGlobalDatabases: Boolean
     
     /**
       * Indicates whether the engine version supports exporting the log types specified by `exportableLogTypes` to CloudWatch Logs.
       */
-    val supportsLogExportsToCloudwatch: Boolean = js.native
+    val supportsLogExportsToCloudwatch: Boolean
     
     /**
       * Indicates whether you can use Aurora parallel query with a specific DB engine version.
       */
-    val supportsParallelQuery: Boolean = js.native
+    val supportsParallelQuery: Boolean
     
     /**
       * Indicates whether the database engine version supports read replicas.
       */
-    val supportsReadReplica: Boolean = js.native
+    val supportsReadReplica: Boolean
     
     /**
       * Set of engine versions that this database engine version can be upgraded to.
       */
-    val validUpgradeTargets: js.Array[String] = js.native
+    val validUpgradeTargets: js.Array[String]
     
-    val version: String = js.native
+    val version: String
     
     /**
       * The description of the database engine version.
       */
-    val versionDescription: String = js.native
+    val versionDescription: String
   }
   object GetEngineVersionResult {
     

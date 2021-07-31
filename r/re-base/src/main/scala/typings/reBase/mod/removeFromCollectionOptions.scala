@@ -2,10 +2,8 @@ package typings.reBase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait removeFromCollectionOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait removeFromCollectionOptions extends StObject {
     * can chain any Firestore queries you want to perform. See
     * [Using Firestore Queries](https://github.com/tylermcginnis/re-base#firestorequeries).
     */
-  var query: js.UndefOr[js.Function0[Unit]] = js.native
+  var query: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object removeFromCollectionOptions {
   

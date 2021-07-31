@@ -2,13 +2,11 @@ package typings.rbx.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transparent extends StObject {
   
-  var transparent: Boolean = js.native
+  var transparent: Boolean
 }
 object Transparent {
   

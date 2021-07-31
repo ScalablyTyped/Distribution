@@ -11,7 +11,7 @@ Generate 1D and 2D barcodes
 | Keywords           | barcode, datamatrix, code39, code128, codabar, qr code, qr, code, upc, upc-a, upc-e |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 40913 |
+| # downloads        | 52995 |
 | # stars            | 3 |
 
 ## Links

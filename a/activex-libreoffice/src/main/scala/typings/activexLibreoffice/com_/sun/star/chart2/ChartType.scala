@@ -9,13 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** {@link ChartType} service */
-@js.native
 trait ChartType
-  extends XChartType
+  extends StObject
+     with XChartType
      with XDataSeriesContainer
      with XPropertySet
 object ChartType {

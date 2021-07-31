@@ -3,13 +3,11 @@ package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 import typings.instagramPrivateApi.anon.WebUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoryCta extends StObject {
   
-  var links: js.Array[WebUri] = js.native
+  var links: js.Array[WebUri]
 }
 object StoryCta {
   

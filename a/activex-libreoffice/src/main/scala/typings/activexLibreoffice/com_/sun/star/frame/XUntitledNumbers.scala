@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** knows all currently used and all free numbers for using with untitled but counted objects. */
-@js.native
-trait XUntitledNumbers extends XInterface {
+trait XUntitledNumbers
+  extends StObject
+     with XInterface {
   
   /**
     * returns the localized string value to be used for untitled objects in combination with the leased number.
@@ -18,7 +18,7 @@ trait XUntitledNumbers extends XInterface {
     * string.
     * @returns the localized string for untitled components.
     */
-  val UntitledPrefix: String = js.native
+  val UntitledPrefix: String
   
   /**
     * returns the localized string value to be used for untitled objects in combination with the leased number.
@@ -27,7 +27,7 @@ trait XUntitledNumbers extends XInterface {
     * string.
     * @returns the localized string for untitled components.
     */
-  def getUntitledPrefix(): String = js.native
+  def getUntitledPrefix(): String
   
   /**
     * callee has to lease a number before they can use it within in its own title.
@@ -37,7 +37,7 @@ trait XUntitledNumbers extends XInterface {
     * @returns the new number for these object or 0 if no further numbers are available.
     * @throws [IllegalArgumentException] if an invalid object reference was provided to this method.
     */
-  def leaseNumber(xComponent: XInterface): Double = js.native
+  def leaseNumber(xComponent: XInterface): Double
   
   /**
     * has to be used to mark those number as "free for using".
@@ -48,14 +48,14 @@ trait XUntitledNumbers extends XInterface {
     * @param nNumber specify number for release.
     * @throws [IllegalArgumentException] if the given number is the special value 0.
     */
-  def releaseNumber(nNumber: Double): Unit = js.native
+  def releaseNumber(nNumber: Double): Unit
   
   /**
     * does the same then releaseNumber () but it searches the corresponding number for the specified component and deregister it.
     * @param xComponent the component for deregistration.
     * @throws [IllegalArgumentException] if an invalid object reference was provided to this method.
     */
-  def releaseNumberForComponent(xComponent: XInterface): Unit = js.native
+  def releaseNumberForComponent(xComponent: XInterface): Unit
 }
 object XUntitledNumbers {
   

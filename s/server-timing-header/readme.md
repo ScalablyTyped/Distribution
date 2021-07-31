@@ -12,7 +12,7 @@ Allow you add metrics via Server-Timing header
 | Keywords           | expressjs, performance, server, timing, servertiming, server-timing, monitor, monitoring, speed, middleware, express |
 | # releases         | 18 |
 | # dependents       | 0 |
-| # downloads        | 14557 |
+| # downloads        | 20686 |
 | # stars            | 0 |
 
 ## Links

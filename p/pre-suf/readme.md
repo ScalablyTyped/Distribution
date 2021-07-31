@@ -12,7 +12,7 @@ Manipulate strings with prefixes and suffixes.
 | Keywords           | pre-suf, prefix, suffix, string, replace, leading, ending, remove, ensure |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 27723 |
+| # downloads        | 31611 |
 | # stars            | 0 |
 
 ## Links

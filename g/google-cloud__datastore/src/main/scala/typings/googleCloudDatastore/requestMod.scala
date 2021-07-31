@@ -10,7 +10,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
@@ -70,12 +69,11 @@ object requestMod {
   
   type CommitCallback = js.Function2[/* err */ Error, /* result */ CommitResponse, Unit]
   
-  @js.native
   trait CommitResponse extends StObject {
     
-    var indexUpdates: Double = js.native
+    var indexUpdates: Double
     
-    var mutationResults: js.Array[MutationResult] = js.native
+    var mutationResults: js.Array[MutationResult]
   }
   object CommitResponse {
     
@@ -103,14 +101,13 @@ object requestMod {
   
   type GetCallback[T] = js.Function2[/* err */ Error, /* entity */ T, Unit]
   
-  @js.native
   trait MutationResult extends StObject {
     
-    var conflictDetected: Boolean = js.native
+    var conflictDetected: Boolean
     
-    var key: DatastoreKey = js.native
+    var key: DatastoreKey
     
-    var version: Double = js.native
+    var version: Double
   }
   object MutationResult {
     

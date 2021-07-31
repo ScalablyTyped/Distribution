@@ -14,26 +14,24 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.types.IColorRectangleProps> */
-@js.native
 trait PartialIColorRectanglePro extends StObject {
   
-  var ariaDescription: js.UndefOr[String] = js.native
+  var ariaDescription: js.UndefOr[String] = js.undefined
   
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
-  var ariaValueFormat: js.UndefOr[String] = js.native
+  var ariaValueFormat: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[IColor] = js.native
+  var color: js.UndefOr[IColor] = js.undefined
   
-  var componentRef: js.UndefOr[IRefObject[IColorRectangle]] = js.native
+  var componentRef: js.UndefOr[IRefObject[IColorRectangle]] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
   var onChange: js.UndefOr[
     js.Function2[
@@ -41,11 +39,11 @@ trait PartialIColorRectanglePro extends StObject {
       /* color */ IColor, 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var styles: js.UndefOr[IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]] = js.undefined
   
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
 }
 object PartialIColorRectanglePro {
   

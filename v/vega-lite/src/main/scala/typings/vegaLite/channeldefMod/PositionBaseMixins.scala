@@ -3,10 +3,8 @@ package typings.vegaLite.channeldefMod
 import typings.vegaLite.srcStackMod.StackOffset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionBaseMixins extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait PositionBaseMixins extends StObject {
     *
     * __See also:__ [`stack`](https://vega.github.io/vega-lite/docs/stack.html) documentation.
     */
-  var stack: js.UndefOr[StackOffset | Null | Boolean] = js.native
+  var stack: js.UndefOr[StackOffset | Null | Boolean] = js.undefined
 }
 object PositionBaseMixins {
   

@@ -10,15 +10,14 @@ import typings.awsSdkClientCodecommitNode.postCommentForComparedCommitExceptions
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidCommitIdExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCommitIdExceptionDetails> * / any */ @js.native
-  trait InvalidCommitIdException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCommitIdExceptionDetails> * / any */ trait InvalidCommitIdException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with GetCommentsForComparedCommitExceptionsUnion
        with GetCommentsForPullRequestExceptionsUnion
        with GetCommitExceptionsUnion
@@ -27,15 +26,13 @@ object typesInvalidCommitIdExceptionMod {
        with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitIdException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitIdException
   }
   object InvalidCommitIdException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitIdException
-    ): InvalidCommitIdException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidCommitIdException = {
+      val __obj = js.Dynamic.literal(name = "InvalidCommitIdException")
       __obj.asInstanceOf[InvalidCommitIdException]
     }
     
@@ -49,6 +46,5 @@ object typesInvalidCommitIdExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidCommitIdExceptionDetails extends StObject
 }

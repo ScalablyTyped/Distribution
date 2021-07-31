@@ -4,19 +4,18 @@ import typings.vegaTypings.onEventsMod._Update
 import typings.vegaTypings.transformMod.TransformField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exprMod {
   
   type Expr = String
   
-  @js.native
   trait ExprRef
-    extends TransformField
+    extends StObject
+       with TransformField
        with _Update {
     
-    var expr: Expr = js.native
+    var expr: Expr
   }
   object ExprRef {
     

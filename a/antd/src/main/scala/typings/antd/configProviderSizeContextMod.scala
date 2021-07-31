@@ -5,7 +5,6 @@ import typings.react.mod.Context
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configProviderSizeContextMod extends Shortcut {
@@ -18,10 +17,9 @@ object configProviderSizeContextMod extends Shortcut {
   @js.native
   val SizeContextProvider: FC[SizeContextProps] = js.native
   
-  @js.native
   trait SizeContextProps extends StObject {
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
   }
   object SizeContextProps {
     
@@ -46,7 +44,7 @@ object configProviderSizeContextMod extends Shortcut {
     - typings.antd.antdStrings.small
     - typings.antd.antdStrings.middle
     - typings.antd.antdStrings.large
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type SizeType = js.UndefOr[_SizeType]
   

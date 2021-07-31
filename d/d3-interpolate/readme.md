@@ -11,8 +11,8 @@ Interpolate numbers, colors, strings, arrays, objects, whatever!
 | Full name          | d3-interpolate |
 | Keywords           | d3, d3-module, interpolate, interpolation, color |
 | # releases         | 6 |
-| # dependents       | 340 |
-| # downloads        | 75801106 |
+| # dependents       | 393 |
+| # downloads        | 97118583 |
 | # stars            | 1 |
 
 ## Links

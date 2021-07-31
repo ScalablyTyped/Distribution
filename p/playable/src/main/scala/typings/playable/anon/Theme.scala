@@ -6,19 +6,17 @@ import typings.playable.textMapTypesMod.ITextMap
 import typings.playable.themeTypesMod.IThemeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var textMap: ITextMap = js.native
+  var textMap: ITextMap
   
-  var theme: IThemeService = js.native
+  var theme: IThemeService
 }
 object Theme {
   

@@ -2,13 +2,13 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXmlText extends IXmlCharacterData {
+trait IXmlText
+  extends StObject
+     with IXmlCharacterData {
   
-  def splitText(offset: Double): IXmlText = js.native
+  def splitText(offset: Double): IXmlText
 }
 object IXmlText {
   

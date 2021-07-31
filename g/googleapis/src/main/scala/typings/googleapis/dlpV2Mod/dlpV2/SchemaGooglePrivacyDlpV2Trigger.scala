@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What event needs to occur for a new job to be started.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Trigger extends StObject {
   
   /**
     * Create a job on a repeating basis based on the elapse of time.
     */
-  var schedule: js.UndefOr[SchemaGooglePrivacyDlpV2Schedule] = js.native
+  var schedule: js.UndefOr[SchemaGooglePrivacyDlpV2Schedule] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Trigger {
   

@@ -3,32 +3,31 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ArrayPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ArrayPattern_
-  extends LVal
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ArrayPattern_
+  extends StObject
      with BaseNode
+     with LVal
      with Pattern
      with PatternLike {
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var elements: js.Array[Null | PatternLike] = js.native
+  var elements: js.Array[Null | PatternLike]
   
-  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_ArrayPattern_ : ArrayPattern = js.native
+  var type_ArrayPattern_ : ArrayPattern
 }
 object ArrayPattern_ {
   
   @scala.inline
-  def apply(elements: js.Array[Null | PatternLike], `type`: ArrayPattern): ArrayPattern_ = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(elements: js.Array[Null | PatternLike]): ArrayPattern_ = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[ArrayPattern_]
   }
   

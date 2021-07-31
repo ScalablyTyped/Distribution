@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec extends StObject {
   
   /** Must be specified if type is `DOUBLE`. Maximum value of the parameter. */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /** Must be specified if type is `DOUBLE`. Minimum value of the parameter. */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1StudyConfigParameterSpecDoubleValueSpec {
   

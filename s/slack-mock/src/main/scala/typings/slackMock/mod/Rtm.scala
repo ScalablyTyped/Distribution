@@ -2,24 +2,22 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // RTM
-@js.native
 trait Rtm[T] extends StObject {
   
-  var calls: js.Array[RtmCall[T]] = js.native
+  var calls: js.Array[RtmCall[T]]
   
-  var clients: js.Array[typings.ws.mod.^] = js.native
+  var clients: js.Array[typings.ws.mod.^]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def send(token: String, message: T): js.Promise[Unit] = js.native
+  def send(token: String, message: T): js.Promise[Unit]
   
-  def startServer(token: String): Unit = js.native
+  def startServer(token: String): Unit
   
-  def stopServer(token: String): Unit = js.native
+  def stopServer(token: String): Unit
 }
 object Rtm {
   
@@ -37,7 +35,7 @@ object Rtm {
   }
   
   @scala.inline
-  implicit class RtmMutableBuilder[Self <: Rtm[_], T] (val x: Self with Rtm[T]) extends AnyVal {
+  implicit class RtmMutableBuilder[Self <: Rtm[?], T] (val x: Self & Rtm[T]) extends AnyVal {
     
     @scala.inline
     def setCalls(value: js.Array[RtmCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])

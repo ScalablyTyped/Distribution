@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRoutingProfileResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the routing profile.
     */
-  var RoutingProfileArn: js.UndefOr[ARN] = js.native
+  var RoutingProfileArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the routing profile.
     */
-  var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.native
+  var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.undefined
 }
 object CreateRoutingProfileResponse {
   

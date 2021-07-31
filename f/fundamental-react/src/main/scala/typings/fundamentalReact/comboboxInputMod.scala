@@ -10,7 +10,6 @@ import typings.std.HTMLDivElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboboxInputMod extends Shortcut {
@@ -19,34 +18,34 @@ object comboboxInputMod extends Shortcut {
   @js.native
   val default: FunctionComponent[ComboboxInputProps] = js.native
   
-  @js.native
   trait ComboboxInputProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var buttonProps: js.UndefOr[js.Object] = js.native
+    var buttonProps: js.UndefOr[js.Object] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
-    var list: ReactNode = js.native
+    var list: ReactNode
     
     /* An object containing a `Menu` component. */
-    var menu: ReactElement = js.native
+    var menu: ReactElement
     
     var onClick: js.UndefOr[
         js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[js.Object] = js.native
+    var popoverProps: js.UndefOr[js.Object] = js.undefined
     
-    var validationState: js.UndefOr[State] = js.native
+    var validationState: js.UndefOr[State] = js.undefined
   }
   object ComboboxInputProps {
     

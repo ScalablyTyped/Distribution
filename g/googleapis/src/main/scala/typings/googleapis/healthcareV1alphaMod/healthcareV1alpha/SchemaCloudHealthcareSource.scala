@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud Healthcare API resource.
   */
-@js.native
 trait SchemaCloudHealthcareSource extends StObject {
   
   /**
     * Full path of a Cloud Healthcare API resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaCloudHealthcareSource {
   

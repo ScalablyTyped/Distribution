@@ -2,15 +2,13 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertySet extends StObject {
   
-  var propertySet: js.UndefOr[String] = js.native
+  var propertySet: js.UndefOr[String] = js.undefined
   
-  var stateProperties: js.UndefOr[js.Array[_]] = js.native
+  var stateProperties: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object PropertySet {
   
@@ -30,7 +28,7 @@ object PropertySet {
     def setPropertySetUndefined: Self = StObject.set(x, "propertySet", js.undefined)
     
     @scala.inline
-    def setStateProperties(value: js.Array[_]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
+    def setStateProperties(value: js.Array[js.Any]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStatePropertiesUndefined: Self = StObject.set(x, "stateProperties", js.undefined)

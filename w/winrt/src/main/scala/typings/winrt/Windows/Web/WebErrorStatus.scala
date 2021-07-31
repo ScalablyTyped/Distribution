@@ -2,7 +2,6 @@ package typings.winrt.Windows.Web
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,161 +11,267 @@ sealed trait WebErrorStatus extends StObject
 object WebErrorStatus extends StObject {
   
   @js.native
-  sealed trait badGateway extends WebErrorStatus
+  sealed trait badGateway
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait badRequest extends WebErrorStatus
+  sealed trait badRequest
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait cannotConnect extends WebErrorStatus
+  sealed trait cannotConnect
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait certificateCommonNameIsIncorrect extends WebErrorStatus
+  sealed trait certificateCommonNameIsIncorrect
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait certificateContainsErrors extends WebErrorStatus
+  sealed trait certificateContainsErrors
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait certificateExpired extends WebErrorStatus
+  sealed trait certificateExpired
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait certificateIsInvalid extends WebErrorStatus
+  sealed trait certificateIsInvalid
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait certificateRevoked extends WebErrorStatus
+  sealed trait certificateRevoked
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait conflict extends WebErrorStatus
+  sealed trait conflict
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait connectionAborted extends WebErrorStatus
+  sealed trait connectionAborted
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait connectionReset extends WebErrorStatus
+  sealed trait connectionReset
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait disconnected extends WebErrorStatus
+  sealed trait disconnected
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait errorHttpInvalidServerResponse extends WebErrorStatus
+  sealed trait errorHttpInvalidServerResponse
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait expectationFailed extends WebErrorStatus
+  sealed trait expectationFailed
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait forbidden extends WebErrorStatus
+  sealed trait forbidden
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait found extends WebErrorStatus
+  sealed trait found
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait gatewayTimeout extends WebErrorStatus
+  sealed trait gatewayTimeout
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait gone extends WebErrorStatus
+  sealed trait gone
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait hostNameNotResolved extends WebErrorStatus
+  sealed trait hostNameNotResolved
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait httpToHttpsOnRedirection extends WebErrorStatus
+  sealed trait httpToHttpsOnRedirection
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait httpVersionNotSupported extends WebErrorStatus
+  sealed trait httpVersionNotSupported
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait httpsToHttpOnRedirection extends WebErrorStatus
+  sealed trait httpsToHttpOnRedirection
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait internalServerError extends WebErrorStatus
+  sealed trait internalServerError
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait lengthRequired extends WebErrorStatus
+  sealed trait lengthRequired
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait methodNotAllowed extends WebErrorStatus
+  sealed trait methodNotAllowed
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait movedPermanently extends WebErrorStatus
+  sealed trait movedPermanently
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait multipleChoices extends WebErrorStatus
+  sealed trait multipleChoices
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait notAcceptable extends WebErrorStatus
+  sealed trait notAcceptable
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait notFound extends WebErrorStatus
+  sealed trait notFound
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait notImplemented extends WebErrorStatus
+  sealed trait notImplemented
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait notModified extends WebErrorStatus
+  sealed trait notModified
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait operationCanceled extends WebErrorStatus
+  sealed trait operationCanceled
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait paymentRequired extends WebErrorStatus
+  sealed trait paymentRequired
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait preconditionFailed extends WebErrorStatus
+  sealed trait preconditionFailed
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait proxyAuthenticationRequired extends WebErrorStatus
+  sealed trait proxyAuthenticationRequired
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait redirectFailed extends WebErrorStatus
+  sealed trait redirectFailed
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait requestEntityTooLarge extends WebErrorStatus
+  sealed trait requestEntityTooLarge
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait requestTimeout extends WebErrorStatus
+  sealed trait requestTimeout
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait requestUriTooLong extends WebErrorStatus
+  sealed trait requestUriTooLong
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait requestedRangeNotSatisfiable extends WebErrorStatus
+  sealed trait requestedRangeNotSatisfiable
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait seeOther extends WebErrorStatus
+  sealed trait seeOther
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait serverUnreachable extends WebErrorStatus
+  sealed trait serverUnreachable
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait serviceUnavailable extends WebErrorStatus
+  sealed trait serviceUnavailable
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait temporaryRedirect extends WebErrorStatus
+  sealed trait temporaryRedirect
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait timeout extends WebErrorStatus
+  sealed trait timeout
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unauthorized extends WebErrorStatus
+  sealed trait unauthorized
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unexpectedClientError extends WebErrorStatus
+  sealed trait unexpectedClientError
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unexpectedRedirection extends WebErrorStatus
+  sealed trait unexpectedRedirection
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unexpectedServerError extends WebErrorStatus
+  sealed trait unexpectedServerError
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unexpectedStatusCode extends WebErrorStatus
+  sealed trait unexpectedStatusCode
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unknown extends WebErrorStatus
+  sealed trait unknown
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait unsupportedMediaType extends WebErrorStatus
+  sealed trait unsupportedMediaType
+    extends StObject
+       with WebErrorStatus
   
   @js.native
-  sealed trait useProxy extends WebErrorStatus
+  sealed trait useProxy
+    extends StObject
+       with WebErrorStatus
 }

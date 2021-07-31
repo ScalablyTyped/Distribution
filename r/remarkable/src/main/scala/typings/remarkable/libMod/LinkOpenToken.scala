@@ -3,32 +3,32 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.link_open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait LinkOpenToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait LinkOpenToken
+  extends StObject
+     with TagToken {
   
   /**
     * Link url.
     */
-  var href: String = js.native
+  var href: String
   
   /**
     * Link title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_LinkOpenToken: link_open = js.native
+  var type_LinkOpenToken: link_open
 }
 object LinkOpenToken {
   
   @scala.inline
-  def apply(href: String, level: Double, `type`: link_open): LinkOpenToken = {
+  def apply(href: String, level: Double): LinkOpenToken = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("link_open")
     __obj.asInstanceOf[LinkOpenToken]
   }
   

@@ -5,26 +5,24 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Generator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Generator]
+  @scala.inline
+  def apply(callback: Callback): Generator = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Generator]
+  @scala.inline
+  def apply(options: Unit, callback: Callback): Generator = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator]
+  @scala.inline
+  def apply(options: Options): Generator = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Generator]
+  @scala.inline
+  def apply(options: Options, callback: Callback): Generator = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator]
+  
   @JSImport("csv-generate", JSImport.Namespace)
   @js.native
-  def apply(): Generator = js.native
-  @JSImport("csv-generate", JSImport.Namespace)
-  @js.native
-  def apply(callback: Callback): Generator = js.native
-  @JSImport("csv-generate", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], callback: Callback): Generator = js.native
-  @JSImport("csv-generate", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Generator = js.native
-  @JSImport("csv-generate", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: Callback): Generator = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("csv-generate", "Generator")
   @js.native
@@ -38,86 +36,85 @@ object mod {
   
   type MatcherFunc = js.Function1[/* value */ js.Any, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Define the number of generated fields and the generation method.
       */
-    var columns: js.UndefOr[Double | js.Array[String]] = js.native
+    var columns: js.UndefOr[Double | js.Array[String]] = js.undefined
     
     /**
       * Set the field delimiter.
       */
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Period to run in milliseconds.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * If specified, then buffers will be decoded to strings using the specified encoding.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * When to stop the generation.
       */
-    var end: js.UndefOr[Double | Date] = js.native
+    var end: js.UndefOr[Double | Date] = js.undefined
     
     /**
       * One or multiple characters to print at the end of the file; only apply when objectMode is disabled.
       */
-    var eof: js.UndefOr[Boolean | String] = js.native
+    var eof: js.UndefOr[Boolean | String] = js.undefined
     
-    var fixedSize: js.UndefOr[Boolean] = js.native
+    var fixedSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Generate buffers equals length as defined by the `highWaterMark` option.
       */
-    var fixed_size: js.UndefOr[Boolean] = js.native
+    var fixed_size: js.UndefOr[Boolean] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of bytes to store in the internal buffer before ceasing to read from the underlying resource.
       */
-    var high_water_mark: js.UndefOr[Double] = js.native
+    var high_water_mark: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of lines or records to generate.
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var maxWordLength: js.UndefOr[Double] = js.native
+    var maxWordLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of characters per word. 
       */
-    var max_word_length: js.UndefOr[Double] = js.native
+    var max_word_length: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this stream should behave as a stream of objects.
       */
-    var object_mode: js.UndefOr[Boolean] = js.native
+    var object_mode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One or multiple characters used to delimit records.
       */
-    var row_delimiter: js.UndefOr[String] = js.native
+    var row_delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Generate idempotent random characters if a number provided.
       */
-    var seed: js.UndefOr[Boolean | Double] = js.native
+    var seed: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * The time to wait between the generation of each records
       */
-    var sleep: js.UndefOr[Double] = js.native
+    var sleep: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -3,13 +3,11 @@ package typings.cordovaPluginInsomnia
 import typings.cordovaPluginInsomnia.InsomniaPlugin.Insomnia
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plugins extends StObject {
   
-  var insomnia: Insomnia = js.native
+  var insomnia: Insomnia
 }
 object Plugins {
   

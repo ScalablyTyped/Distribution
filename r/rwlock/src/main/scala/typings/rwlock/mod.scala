@@ -3,27 +3,27 @@ package typings.rwlock
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("rwlock", JSImport.Namespace)
   @js.native
-  class ^ () extends ReadWriteLock
+  class ^ ()
+    extends StObject
+       with ReadWriteLock
   
   type AsyncCallback = js.Function2[/* err */ Error, /* release */ Release, Unit]
   
   type Callback = js.Function1[/* release */ Release, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var timeoutCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var timeoutCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Options {
     
@@ -71,7 +71,9 @@ object mod {
   }
   
   @js.native
-  trait ReadWriteLock extends ReadWriteGeneric[Callback] {
+  trait ReadWriteLock
+    extends StObject
+       with ReadWriteGeneric[Callback] {
     
     var async: ReadWriteGeneric[AsyncCallback] = js.native
   }

@@ -5,7 +5,6 @@ import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`1`
 import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkedMapMod {

@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveViewBox extends PluginConfig {
+trait PluginRemoveViewBox
+  extends StObject
+     with PluginConfig {
   
-  var removeViewBox: Boolean | js.Object = js.native
+  var removeViewBox: Boolean | js.Object
 }
 object PluginRemoveViewBox {
   

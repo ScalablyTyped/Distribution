@@ -5,15 +5,13 @@ import typings.reactOnsenui.reactOnsenuiStrings.center
 import typings.reactOnsenui.reactOnsenuiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerticalAlign extends StObject {
   
-  var verticalAlign: js.UndefOr[top | bottom | center] = js.native
+  var verticalAlign: js.UndefOr[top | bottom | center] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object VerticalAlign {
   

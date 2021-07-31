@@ -4,17 +4,15 @@ import typings.node.Buffer
 import typings.nodeSass.anon.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var css: Buffer = js.native
+  var css: Buffer
   
-  var map: Buffer = js.native
+  var map: Buffer
   
-  var stats: Duration = js.native
+  var stats: Duration
 }
 object Result {
   

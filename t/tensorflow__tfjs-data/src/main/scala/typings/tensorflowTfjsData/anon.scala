@@ -4,17 +4,15 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Spectrogram extends StObject {
     
-    var spectrogram: Tensor3D = js.native
+    var spectrogram: Tensor3D
     
-    var waveform: Tensor2D = js.native
+    var waveform: Tensor2D
   }
   object Spectrogram {
     

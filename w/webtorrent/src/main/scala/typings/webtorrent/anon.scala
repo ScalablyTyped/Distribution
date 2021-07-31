@@ -4,19 +4,17 @@ import typings.std.File
 import typings.webtorrent.mod.Torrent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Autoplay extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
-    var maxBlobLength: js.UndefOr[Double] = js.native
+    var maxBlobLength: js.UndefOr[Double] = js.undefined
   }
   object Autoplay {
     
@@ -49,12 +47,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -75,14 +72,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Files extends StObject {
     
-    var files: js.Array[File] = js.native
+    var files: js.Array[File]
     
-    var length: Double = js.native
+    var length: Double
     
-    var torrent: Torrent = js.native
+    var torrent: Torrent
   }
   object Files {
     

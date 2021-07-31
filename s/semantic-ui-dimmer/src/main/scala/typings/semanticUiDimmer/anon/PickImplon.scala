@@ -5,14 +5,12 @@ import typings.semanticUiDimmer.semanticUiDimmerStrings.click
 import typings.semanticUiDimmer.semanticUiDimmerStrings.hover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl, 'on'> */
-@js.native
 trait PickImplon extends StObject {
   
-  var on: `false` | hover | click = js.native
+  var on: `false` | hover | click
 }
 object PickImplon {
   

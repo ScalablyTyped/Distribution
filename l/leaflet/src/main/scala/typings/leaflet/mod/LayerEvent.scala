@@ -2,14 +2,14 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerEvent extends LeafletEvent {
+trait LayerEvent
+  extends StObject
+     with LeafletEvent {
   
   @JSName("layer")
-  var layer_LayerEvent: Layer = js.native
+  var layer_LayerEvent: Layer
 }
 object LayerEvent {
   

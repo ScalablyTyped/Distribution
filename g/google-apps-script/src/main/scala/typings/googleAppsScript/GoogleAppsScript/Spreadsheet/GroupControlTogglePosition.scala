@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait GroupControlTogglePosition extends StObject
 object GroupControlTogglePosition extends StObject {
   
   @js.native
-  sealed trait AFTER extends GroupControlTogglePosition
+  sealed trait AFTER
+    extends StObject
+       with GroupControlTogglePosition
   
   @js.native
-  sealed trait BEFORE extends GroupControlTogglePosition
+  sealed trait BEFORE
+    extends StObject
+       with GroupControlTogglePosition
 }

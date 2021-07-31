@@ -2,15 +2,13 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogButton extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object DialogButton {
   

@@ -2,7 +2,6 @@ package typings.nodeObjectHash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectSorterMod {
@@ -12,17 +11,18 @@ object objectSorterMod {
     * @param options object transformation options
     * @returns function that transforms object to strings
     */
+  @scala.inline
+  def apply(): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, String]]
+  @scala.inline
+  def apply(options: SorterOptions): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, String]]
+  
   @JSImport("node-object-hash/dist/objectSorter", JSImport.Namespace)
   @js.native
-  def apply(): js.Function1[/* obj */ js.Any, String] = js.native
-  @JSImport("node-object-hash/dist/objectSorter", JSImport.Namespace)
-  @js.native
-  def apply(options: SorterOptions): js.Function1[/* obj */ js.Any, String] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Advanced coerce options
     */
-  @js.native
   trait CoerceOptions extends StObject {
     
     /**
@@ -37,7 +37,7 @@ object objectSorterMod {
       * false !== '0'
       * @default true
       */
-    var boolean: js.UndefOr[Boolean] = js.native
+    var boolean: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` dates may equal the same formatted strings
@@ -47,7 +47,7 @@ object objectSorterMod {
       * // coerce.date = false
       * @default true
       */
-    var date: js.UndefOr[Boolean] = js.native
+    var date: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` functions may equal the same formatted strings
@@ -57,7 +57,7 @@ object objectSorterMod {
       * // coerce.function = false
       * @default true
       */
-    var function: js.UndefOr[Boolean] = js.native
+    var function: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` null will be equal to empty string
@@ -69,7 +69,7 @@ object objectSorterMod {
       * null !== ''
       * @default true
       */
-    var `null`: js.UndefOr[Boolean] = js.native
+    var `null`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` converts numbers to strings
@@ -81,7 +81,7 @@ object objectSorterMod {
       * 1 !== '1';
       * @default true
       */
-    var number: js.UndefOr[Boolean] = js.native
+    var number: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` set will be coerced to array
@@ -91,7 +91,7 @@ object objectSorterMod {
       * // coerce.set = false
       * @default true
       */
-    var set: js.UndefOr[Boolean] = js.native
+    var set: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` strings and coerced string will be equal to coerced numbers, booleans, etc
@@ -103,7 +103,7 @@ object objectSorterMod {
       * '1' !== 1
       * @default true
       */
-    var string: js.UndefOr[Boolean] = js.native
+    var string: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` all symbols will have eual representation
@@ -115,7 +115,7 @@ object objectSorterMod {
       * Symbol.for('a') !== Symbol.for('b')
       * @default true
       */
-    var symbol: js.UndefOr[Boolean] = js.native
+    var symbol: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` undefined will be equal to empty string
@@ -127,7 +127,7 @@ object objectSorterMod {
       * undefined !== ''
       * @default true
       */
-    var undefined: js.UndefOr[Boolean] = js.native
+    var undefined: js.UndefOr[Boolean] = js.undefined
   }
   object CoerceOptions {
     
@@ -199,28 +199,27 @@ object objectSorterMod {
   /**
     * Advanced sort options
     */
-  @js.native
   trait SortOptions extends StObject {
     
     /**
       * If `true` sort array entries before hash
       */
-    var array: js.UndefOr[Boolean] = js.native
+    var array: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` sort map entries before hash
       */
-    var map: js.UndefOr[Boolean] = js.native
+    var map: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` sort object entries before hash
       */
-    var `object`: js.UndefOr[Boolean] = js.native
+    var `object`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` sort set entries before hash
       */
-    var set: js.UndefOr[Boolean] = js.native
+    var set: js.UndefOr[Boolean] = js.undefined
   }
   object SortOptions {
     
@@ -262,7 +261,6 @@ object objectSorterMod {
   /**
     * Object sorter options
     */
-  @js.native
   trait SorterOptions extends StObject {
     
     /**
@@ -270,21 +268,21 @@ object objectSorterMod {
       * Advanced coerce options could be provided as object
       * @default true
       */
-    var coerce: js.UndefOr[Boolean | CoerceOptions] = js.native
+    var coerce: js.UndefOr[Boolean | CoerceOptions] = js.undefined
     
     /**
       * If `true` enables sorting.
       * Advanced sorting options could be provided as object
       * @default true
       */
-    var sort: js.UndefOr[Boolean | SortOptions] = js.native
+    var sort: js.UndefOr[Boolean | SortOptions] = js.undefined
     
     /**
       * If `true` enables trimming and multiple whitespace replacement.
       * Advanced sorting options could be provided as object.
       * @default false
       */
-    var trim: js.UndefOr[Boolean | TrimOptions] = js.native
+    var trim: js.UndefOr[Boolean | TrimOptions] = js.undefined
   }
   object SorterOptions {
     
@@ -320,18 +318,17 @@ object objectSorterMod {
   /**
     * Advanced trim options
     */
-  @js.native
   trait TrimOptions extends StObject {
     
     /**
       * If `true` replaces multiple space with one and trims whitespaces in function body
       */
-    var function: js.UndefOr[Boolean] = js.native
+    var function: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` replaces multiple space with one and trims whitespaces in strings
       */
-    var string: js.UndefOr[Boolean] = js.native
+    var string: js.UndefOr[Boolean] = js.undefined
   }
   object TrimOptions {
     

@@ -12,7 +12,7 @@ Easy website screenshots (Clone of webshot package, supports Node v12+)
 | Keywords           | screenshot, screengrab |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 16266 |
+| # downloads        | 60460 |
 | # stars            | 0 |
 
 ## Links

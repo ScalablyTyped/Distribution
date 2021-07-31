@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureDnsSettingsRequest extends StObject {
   
   /** Fields of the `DnsSettings` to update. */
-  var dnsSettings: js.UndefOr[DnsSettings] = js.native
+  var dnsSettings: js.UndefOr[DnsSettings] = js.undefined
   
   /**
     * Required. The field mask describing which fields to update as a comma-separated list. For example, if only the name servers are being updated for an existing Custom DNS
     * configuration, the `update_mask` would be `"custom_dns.name_servers"`. When changing the DNS provider from one type to another, pass the new provider's field name as part of the
     * field mask. For example, when changing from a Google Domains DNS configuration to a Custom DNS configuration, the `update_mask` would be `"custom_dns"`. //
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Validate the request without actually updating the DNS settings. */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigureDnsSettingsRequest {
   

@@ -3,13 +3,11 @@ package typings.jqueryFinger
 import typings.jqueryFinger.JQueryFinger.JQueryFingerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var Finger: JQueryFingerOptions = js.native
+  var Finger: JQueryFingerOptions
 }
 object JQueryStatic {
   

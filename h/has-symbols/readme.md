@@ -11,8 +11,8 @@ Determine if the JS environment has Symbol support. Supports spec, or shams.
 | Full name          | has-symbols |
 | Keywords           | Symbol, symbols, typeof, sham, polyfill, native, core-js, ES6 |
 | # releases         | 2 |
-| # dependents       | 70 |
-| # downloads        | 649216552 |
+| # dependents       | 111 |
+| # downloads        | 811116377 |
 | # stars            | 0 |
 
 ## Links

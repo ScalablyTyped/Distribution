@@ -13,31 +13,29 @@ import typings.activexStdole.stdole.EXCEPINFO
 import typings.activexStdole.stdole.GUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
   
   type CommandBarButtonInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait CommandBarButtonInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object CommandBarButtonInvokeParameter {
     
@@ -87,24 +85,23 @@ object EventHelperTypes {
   
   type CommandBarComboBoxInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait CommandBarComboBoxInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object CommandBarComboBoxInvokeParameter {
     
@@ -154,24 +151,23 @@ object EventHelperTypes {
   
   type CommandBarsInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait CommandBarsInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object CommandBarsInvokeParameter {
     
@@ -221,24 +217,23 @@ object EventHelperTypes {
   
   type CustomTaskPaneInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait CustomTaskPaneInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object CustomTaskPaneInvokeParameter {
     
@@ -288,24 +283,23 @@ object EventHelperTypes {
   
   type CustomXMLPartInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait CustomXMLPartInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object CustomXMLPartInvokeParameter {
     
@@ -355,24 +349,23 @@ object EventHelperTypes {
   
   type CustomXMLPartsInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait CustomXMLPartsInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object CustomXMLPartsInvokeParameter {
     

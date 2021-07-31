@@ -4,7 +4,6 @@ import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowContainerComponentMod {
@@ -55,14 +54,13 @@ object rowContainerComponentMod {
     var visible: js.Any = js.native
   }
   
-  @js.native
   trait RowContainerComponentParams extends StObject {
     
-    var eContainer: HTMLElement = js.native
+    var eContainer: HTMLElement
     
-    var eViewport: js.UndefOr[HTMLElement] = js.native
+    var eViewport: js.UndefOr[HTMLElement] = js.undefined
     
-    var hideWhenNoChildren: js.UndefOr[Boolean] = js.native
+    var hideWhenNoChildren: js.UndefOr[Boolean] = js.undefined
   }
   object RowContainerComponentParams {
     

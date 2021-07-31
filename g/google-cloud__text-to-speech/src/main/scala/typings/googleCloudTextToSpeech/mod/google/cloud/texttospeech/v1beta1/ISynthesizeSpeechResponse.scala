@@ -3,21 +3,19 @@ package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SynthesizeSpeechResponse. */
-@js.native
 trait ISynthesizeSpeechResponse extends StObject {
   
   /** SynthesizeSpeechResponse audioConfig */
-  var audioConfig: js.UndefOr[IAudioConfig | Null] = js.native
+  var audioConfig: js.UndefOr[IAudioConfig | Null] = js.undefined
   
   /** SynthesizeSpeechResponse audioContent */
-  var audioContent: js.UndefOr[Uint8Array | String | Null] = js.native
+  var audioContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
   
   /** SynthesizeSpeechResponse timepoints */
-  var timepoints: js.UndefOr[js.Array[ITimepoint] | Null] = js.native
+  var timepoints: js.UndefOr[js.Array[ITimepoint] | Null] = js.undefined
 }
 object ISynthesizeSpeechResponse {
   

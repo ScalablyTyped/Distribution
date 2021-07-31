@@ -2,25 +2,23 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullResponse extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var `job-attributes-tag`: js.UndefOr[js.Object] = js.native
+  var `job-attributes-tag`: js.UndefOr[js.Object] = js.undefined
   
-  var `operation-attributes-tag`: OperationAttributes = js.native
+  var `operation-attributes-tag`: OperationAttributes
   
-  var `printer-attributes-tag`: js.UndefOr[PrinterDescription] = js.native
+  var `printer-attributes-tag`: js.UndefOr[PrinterDescription] = js.undefined
   
-  var statusCode: StatusCode = js.native
+  var statusCode: StatusCode
   
-  var `unsupported-attributes`: js.UndefOr[js.Array[String]] = js.native
+  var `unsupported-attributes`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var version: IPPVersion = js.native
+  var version: IPPVersion
 }
 object FullResponse {
   

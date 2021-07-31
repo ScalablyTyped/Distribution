@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * range of characters within a Text
   * element to be represented in search results, document selections, and named ranges.
   */
-@js.native
 trait RangeElement extends StObject {
   
-  def getElement(): Element = js.native
+  def getElement(): Element
   
-  def getEndOffsetInclusive(): Integer = js.native
+  def getEndOffsetInclusive(): Integer
   
-  def getStartOffset(): Integer = js.native
+  def getStartOffset(): Integer
   
-  def isPartial(): Boolean = js.native
+  def isPartial(): Boolean
 }
 object RangeElement {
   

@@ -5,24 +5,24 @@ import typings.node.fsMod.Stats
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("serve-index", JSImport.Namespace)
-  @js.native
-  def apply(path: String): Handler = js.native
-  @JSImport("serve-index", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: Options): Handler = js.native
+  @scala.inline
+  def apply(path: String): Handler = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  @scala.inline
+  def apply(path: String, options: Options): Handler = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Handler]
   
+  @JSImport("serve-index", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait File extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var stat: Stats = js.native
+    var stat: Stats
   }
   object File {
     
@@ -43,24 +43,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Locals extends StObject {
     
-    var directory: String = js.native
+    var directory: String
     
-    var displayIcons: Boolean = js.native
+    var displayIcons: Boolean
     
-    var fileList: js.Array[File] = js.native
+    var fileList: js.Array[File]
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var stat: Stats = js.native
+    var stat: Stats
     
-    var style: String = js.native
+    var style: String
     
-    var viewName: String = js.native
+    var viewName: String
   }
   object Locals {
     
@@ -111,7 +110,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     var filter: js.UndefOr[
@@ -122,19 +120,19 @@ object mod {
           /* dir */ String, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[Boolean] = js.native
+    var icons: js.UndefOr[Boolean] = js.undefined
     
-    var stylesheet: js.UndefOr[String] = js.native
+    var stylesheet: js.UndefOr[String] = js.undefined
     
     var template: js.UndefOr[
         String | (js.Function2[/* locals */ Locals, /* callback */ templateCallback, Unit])
-      ] = js.native
+      ] = js.undefined
     
-    var view: js.UndefOr[String] = js.native
+    var view: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Who should participate in the action
   */
-@js.native
-trait PlanDefinitionActionParticipant extends BackboneElement {
+trait PlanDefinitionActionParticipant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * E.g. Nurse, Surgeon, Parent, etc
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * patient | practitioner | related-person
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object PlanDefinitionActionParticipant {
   

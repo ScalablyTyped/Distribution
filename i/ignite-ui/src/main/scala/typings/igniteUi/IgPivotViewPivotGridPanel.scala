@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotViewPivotGridPanel
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,17 +15,17 @@ trait IgPivotViewPivotGridPanel
   /**
     * Determines if the panel containing the igPivotGrid will initially collapsed.
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if the panel containing the igPivotGrid will be collapsible.
     */
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if the panel containing the igPivotGrid will be resizable.
     */
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the size of the igPivotGrid panel.
@@ -36,7 +35,7 @@ trait IgPivotViewPivotGridPanel
     * "number" The size can be set as a number.
     * "null" will automatically size the panel.
     */
-  var size: js.UndefOr[String | Double] = js.native
+  var size: js.UndefOr[String | Double] = js.undefined
 }
 object IgPivotViewPivotGridPanel {
   

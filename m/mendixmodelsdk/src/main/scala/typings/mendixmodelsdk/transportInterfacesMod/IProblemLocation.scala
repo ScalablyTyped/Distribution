@@ -2,21 +2,19 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProblemLocation extends StObject {
   
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
-  var elementId: js.UndefOr[String] = js.native
+  var elementId: js.UndefOr[String] = js.undefined
   
-  var module: js.UndefOr[String] = js.native
+  var module: js.UndefOr[String] = js.undefined
   
-  var unitId: js.UndefOr[String] = js.native
+  var unitId: js.UndefOr[String] = js.undefined
 }
 object IProblemLocation {
   

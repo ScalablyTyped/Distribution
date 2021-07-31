@@ -2,41 +2,39 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummarizedCounter extends StObject {
   
   /**
     * The average value of the counter for a specified time period.
     */
-  var Average: js.UndefOr[Double] = js.native
+  var Average: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum value of the counter for a specified time period.
     */
-  var Max: js.UndefOr[Double] = js.native
+  var Max: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of counters for a specified time period.
     */
-  var N: js.UndefOr[Integer] = js.native
+  var N: js.UndefOr[Integer] = js.undefined
   
   /**
     * The counter name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The total of counter values for a specified time period.
     */
-  var Sum: js.UndefOr[Double] = js.native
+  var Sum: js.UndefOr[Double] = js.undefined
   
   /**
     * The unit of the counters.
     */
-  var Unit: js.UndefOr[String] = js.native
+  var Unit: js.UndefOr[String] = js.undefined
 }
 object SummarizedCounter {
   

@@ -4,18 +4,16 @@ import typings.googleAppsScript.GoogleAppsScript.Base.User
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Internal interfaces
-@js.native
 trait AppsScriptEvent extends StObject {
   
-  var authMode: AuthMode = js.native
+  var authMode: AuthMode
   
-  var triggerUid: String = js.native
+  var triggerUid: String
   
-  var user: User = js.native
+  var user: User
 }
 object AppsScriptEvent {
   

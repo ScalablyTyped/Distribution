@@ -6,7 +6,6 @@ import typings.std.Uint8Array
 import typings.xmlCore.typesMod.XmlBufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "Convert")
@@ -16,21 +15,21 @@ class Convert ()
 /* static members */
 object Convert {
   
-  @JSImport("xadesjs", "Convert.Base64Padding")
+  @JSImport("xadesjs", "Convert")
   @js.native
-  def Base64Padding(base64: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xadesjs", "Convert.FromBase64")
-  @js.native
-  def FromBase64(base64Text: String): Uint8Array = js.native
+  @scala.inline
+  def Base64Padding(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Padding")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xadesjs", "Convert.FromBase64Url")
-  @js.native
-  def FromBase64Url(base64url: String): Uint8Array = js.native
+  @scala.inline
+  def FromBase64(base64Text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64Text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("xadesjs", "Convert.FromBinary")
-  @js.native
-  def FromBinary(text: String): Uint8Array = js.native
+  @scala.inline
+  def FromBase64Url(base64url: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def FromBinary(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
   /**
     * Converts Date to string
@@ -41,9 +40,8 @@ object Convert {
     *
     * @memberOf Convert
     */
-  @JSImport("xadesjs", "Convert.FromDateTime")
-  @js.native
-  def FromDateTime(dateTime: Date): String = js.native
+  @scala.inline
+  def FromDateTime(dateTime: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts HEX string to buffer
@@ -54,32 +52,25 @@ object Convert {
     *
     * @memberOf Convert
     */
-  @JSImport("xadesjs", "Convert.FromHex")
-  @js.native
-  def FromHex(hexString: String): Uint8Array = js.native
+  @scala.inline
+  def FromHex(hexString: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("xadesjs", "Convert.FromString")
-  @js.native
-  def FromString(str: String): Uint8Array = js.native
-  @JSImport("xadesjs", "Convert.FromString")
-  @js.native
-  def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = js.native
+  @scala.inline
+  def FromString(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("xadesjs", "Convert.FromUtf8String")
-  @js.native
-  def FromUtf8String(text: String): Uint8Array = js.native
+  @scala.inline
+  def FromUtf8String(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("xadesjs", "Convert.ToBase64")
-  @js.native
-  def ToBase64(buf: Uint8Array): String = js.native
+  @scala.inline
+  def ToBase64(buf: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xadesjs", "Convert.ToBase64Url")
-  @js.native
-  def ToBase64Url(data: Uint8Array): String = js.native
+  @scala.inline
+  def ToBase64Url(data: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xadesjs", "Convert.ToBinary")
-  @js.native
-  def ToBinary(buffer: Uint8Array): String = js.native
+  @scala.inline
+  def ToBinary(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts string to Date
@@ -90,27 +81,22 @@ object Convert {
     *
     * @memberOf Convert
     */
-  @JSImport("xadesjs", "Convert.ToDateTime")
-  @js.native
-  def ToDateTime(dateTime: String): Date = js.native
+  @scala.inline
+  def ToDateTime(dateTime: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[Date]
   
   /**
     * Converts buffer to HEX string
     * @param  {BufferSource} buffer Incoming buffer
     * @returns string
     */
-  @JSImport("xadesjs", "Convert.ToHex")
-  @js.native
-  def ToHex(buffer: Uint8Array): String = js.native
+  @scala.inline
+  def ToHex(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("xadesjs", "Convert.ToString")
-  @js.native
-  def ToString(buffer: BufferSource): String = js.native
-  @JSImport("xadesjs", "Convert.ToString")
-  @js.native
-  def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = js.native
+  @scala.inline
+  def ToString(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("xadesjs", "Convert.ToUtf8String")
-  @js.native
-  def ToUtf8String(buffer: Uint8Array): String = js.native
+  @scala.inline
+  def ToUtf8String(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -21,67 +21,65 @@ import typings.react.mod.TouchEventHandler
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupMod extends Shortcut {
   
   @JSImport("rc-trigger/es/Popup", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PopupProps with RefAttributes[PopupInnerRef]] = js.native
+  val default: ForwardRefExoticComponent[PopupProps & RefAttributes[PopupInnerRef]] = js.native
   
-  @js.native
   trait PopupProps extends StObject {
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
-    var animation: AnimationType = js.native
+    var animation: AnimationType
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
-    var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.native
+    var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.undefined
     
-    var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: AnimationType = js.native
+    var maskAnimation: AnimationType
     
-    var maskMotion: CSSMotionProps = js.native
+    var maskMotion: CSSMotionProps
     
-    var maskTransitionName: TransitionNameType = js.native
+    var maskTransitionName: TransitionNameType
     
-    var mobile: js.UndefOr[MobileConfig] = js.native
+    var mobile: js.UndefOr[MobileConfig] = js.undefined
     
-    var motion: CSSMotionProps = js.native
+    var motion: CSSMotionProps
     
-    var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.native
+    var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
-    var point: js.UndefOr[Point] = js.native
+    var point: js.UndefOr[Point] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var stretch: js.UndefOr[StretchType] = js.native
+    var stretch: js.UndefOr[StretchType] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionName: TransitionNameType = js.native
+    var transitionName: TransitionNameType
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object PopupProps {
     
@@ -233,8 +231,8 @@ object popupMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PopupProps with RefAttributes[PopupInnerRef]]
+  type _To = ForwardRefExoticComponent[PopupProps & RefAttributes[PopupInnerRef]]
   
   /* This means you don't have to write `default`, but can instead just say `popupMod.foo` */
-  override def _to: ForwardRefExoticComponent[PopupProps with RefAttributes[PopupInnerRef]] = default
+  override def _to: ForwardRefExoticComponent[PopupProps & RefAttributes[PopupInnerRef]] = default
 }

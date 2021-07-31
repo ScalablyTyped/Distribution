@@ -2,7 +2,6 @@ package typings.umbraco
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,11 +16,11 @@ object mod {
     object Direction extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.Direction with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.Direction & Double] = js.native
       
-      /* 0 */ val Ascending: typings.umbraco.umbraco.resources.Direction.Ascending with Double = js.native
+      /* 0 */ val Ascending: typings.umbraco.umbraco.resources.Direction.Ascending & Double = js.native
       
-      /* 1 */ val Descending: typings.umbraco.umbraco.resources.Direction.Descending with Double = js.native
+      /* 1 */ val Descending: typings.umbraco.umbraco.resources.Direction.Descending & Double = js.native
     }
     
     /**
@@ -32,11 +31,11 @@ object mod {
     object LogType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.LogType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.LogType & Double] = js.native
       
-      /* 0 */ val Debug: typings.umbraco.umbraco.resources.LogType.Debug with Double = js.native
+      /* 0 */ val Debug: typings.umbraco.umbraco.resources.LogType.Debug & Double = js.native
       
-      /* 1 */ val Info: typings.umbraco.umbraco.resources.LogType.Info with Double = js.native
+      /* 1 */ val Info: typings.umbraco.umbraco.resources.LogType.Info & Double = js.native
     }
     
     /**
@@ -47,19 +46,18 @@ object mod {
     object OrderItemsBy extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.OrderItemsBy with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.resources.OrderItemsBy & Double] = js.native
       
-      /* 0 */ val SortOrder: typings.umbraco.umbraco.resources.OrderItemsBy.SortOrder with Double = js.native
+      /* 0 */ val SortOrder: typings.umbraco.umbraco.resources.OrderItemsBy.SortOrder & Double = js.native
     }
     
-    @js.native
     trait IResourcePromise extends StObject {
       
-      var data: js.Any = js.native
+      var data: js.Any
       
-      var errorMsg: String = js.native
+      var errorMsg: String
       
-      var status: Double = js.native
+      var status: Double
     }
     object IResourcePromise {
       
@@ -94,15 +92,15 @@ object mod {
     object NotificationType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.services.NotificationType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.umbraco.umbraco.services.NotificationType & Double] = js.native
       
-      /* 1 */ val error: typings.umbraco.umbraco.services.NotificationType.error with Double = js.native
+      /* 1 */ val error: typings.umbraco.umbraco.services.NotificationType.error & Double = js.native
       
-      /* 3 */ val info: typings.umbraco.umbraco.services.NotificationType.info with Double = js.native
+      /* 3 */ val info: typings.umbraco.umbraco.services.NotificationType.info & Double = js.native
       
-      /* 0 */ val success: typings.umbraco.umbraco.services.NotificationType.success with Double = js.native
+      /* 0 */ val success: typings.umbraco.umbraco.services.NotificationType.success & Double = js.native
       
-      /* 2 */ val warning: typings.umbraco.umbraco.services.NotificationType.warning with Double = js.native
+      /* 2 */ val warning: typings.umbraco.umbraco.services.NotificationType.warning & Double = js.native
     }
   }
 }

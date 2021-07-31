@@ -2,19 +2,17 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of setting the project configuration.
   */
-@js.native
 trait SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse extends StObject {
   
   /**
     * Project ID of the relying party.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartySetProjectConfigResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourceDataSyncRequest extends StObject {
   
   /**
     * The name of the configuration to delete.
     */
-  var SyncName: ResourceDataSyncName = js.native
+  var SyncName: ResourceDataSyncName
   
   /**
     * Specify the type of resource data sync to delete.
     */
-  var SyncType: js.UndefOr[ResourceDataSyncType] = js.native
+  var SyncType: js.UndefOr[ResourceDataSyncType] = js.undefined
 }
 object DeleteResourceDataSyncRequest {
   

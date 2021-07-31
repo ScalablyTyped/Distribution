@@ -2,20 +2,18 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies FHIR paths to match, and how to handle de-identification of
   * matching fields.
   */
-@js.native
 trait SchemaFieldMetadata extends StObject {
   
   /**
     * Deidentify action for one field.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * List of paths to FHIR fields to be redacted. Each path is a
@@ -27,7 +25,7 @@ trait SchemaFieldMetadata extends StObject {
     * AdministrativeGenderCode, Code, Date, DateTime, Decimal, HumanName, Id,
     * LanguageCode, Markdown, MimeTypeCode, Oid, String, Uri, Uuid, Xhtml.
     */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaFieldMetadata {
   

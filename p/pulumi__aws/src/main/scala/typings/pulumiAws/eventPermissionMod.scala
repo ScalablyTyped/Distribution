@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventPermissionMod {
@@ -54,6 +53,10 @@ object eventPermissionMod {
   /* static members */
   object EventPermission {
     
+    @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventPermission resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,55 +66,49 @@ object eventPermissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventPermission = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventPermission = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventPermissionState): EventPermission = js.native
-    @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventPermissionState, opts: CustomResourceOptions): EventPermission = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventPermissionState): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventPermissionState, opts: CustomResourceOptions): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
     
     /**
       * Returns true if the given object is an instance of EventPermission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean]
   }
   
-  @js.native
   trait EventPermissionArgs extends StObject {
     
     /**
       * The action that you are enabling the other account to perform. Defaults to `events:PutEvents`.
       */
-    val action: js.UndefOr[Input[String]] = js.native
+    val action: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
       */
-    val condition: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]] = js.native
+    val condition: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]] = js.undefined
     
     /**
       * The event bus to set the permissions on. If you omit this, the permissions are set on the `default` event bus.
       */
-    val eventBusName: js.UndefOr[Input[String]] = js.native
+    val eventBusName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
       */
-    val principal: Input[String] = js.native
+    val principal: Input[String]
     
     /**
       * An identifier string for the external account that you are granting permissions to.
       */
-    val statementId: Input[String] = js.native
+    val statementId: Input[String]
   }
   object EventPermissionArgs {
     
@@ -150,33 +147,32 @@ object eventPermissionMod {
     }
   }
   
-  @js.native
   trait EventPermissionState extends StObject {
     
     /**
       * The action that you are enabling the other account to perform. Defaults to `events:PutEvents`.
       */
-    val action: js.UndefOr[Input[String]] = js.native
+    val action: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
       */
-    val condition: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]] = js.native
+    val condition: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]] = js.undefined
     
     /**
       * The event bus to set the permissions on. If you omit this, the permissions are set on the `default` event bus.
       */
-    val eventBusName: js.UndefOr[Input[String]] = js.native
+    val eventBusName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
       */
-    val principal: js.UndefOr[Input[String]] = js.native
+    val principal: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An identifier string for the external account that you are granting permissions to.
       */
-    val statementId: js.UndefOr[Input[String]] = js.native
+    val statementId: js.UndefOr[Input[String]] = js.undefined
   }
   object EventPermissionState {
     

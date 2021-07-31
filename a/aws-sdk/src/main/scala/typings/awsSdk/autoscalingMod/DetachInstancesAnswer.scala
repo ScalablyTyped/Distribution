@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachInstancesAnswer extends StObject {
   
   /**
     * The activities related to detaching the instances from the Auto Scaling group.
     */
-  var Activities: js.UndefOr[typings.awsSdk.autoscalingMod.Activities] = js.native
+  var Activities: js.UndefOr[typings.awsSdk.autoscalingMod.Activities] = js.undefined
 }
 object DetachInstancesAnswer {
   

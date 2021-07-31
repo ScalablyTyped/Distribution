@@ -3,15 +3,13 @@ package typings.thrift.mod
 import typings.thrift.mod.Thrift.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSet extends StObject {
   
-  var etype: Type = js.native
+  var etype: Type
   
-  var size: Double = js.native
+  var size: Double
 }
 object TSet {
   

@@ -2,26 +2,24 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A product label represented as a key-value pair.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p4beta1ProductKeyValue extends StObject {
   
   /**
     * The key of the label attached to the product. Cannot be empty and cannot
     * exceed 128 bytes.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the label attached to the product. Cannot be empty and
     * cannot exceed 128 bytes.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p4beta1ProductKeyValue {
   

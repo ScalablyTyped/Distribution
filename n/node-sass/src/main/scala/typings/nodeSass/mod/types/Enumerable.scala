@@ -2,17 +2,15 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enumerable extends StObject {
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def getValue(index: Double): Value = js.native
+  def getValue(index: Double): Value
   
-  def setValue(index: Double, value: Value): Unit = js.native
+  def setValue(index: Double, value: Value): Unit
 }
 object Enumerable {
   

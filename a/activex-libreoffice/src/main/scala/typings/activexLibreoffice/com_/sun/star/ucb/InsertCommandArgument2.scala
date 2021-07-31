@@ -3,18 +3,18 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The argument for the command "insert" augmented with some properties */
-@js.native
-trait InsertCommandArgument2 extends InsertCommandArgument {
+trait InsertCommandArgument2
+  extends StObject
+     with InsertCommandArgument {
   
   /** contains the Document Id of the document to insert */
-  var DocumentId: String = js.native
+  var DocumentId: String
   
   /** contains the MIME type of the document to insert */
-  var MimeType: String = js.native
+  var MimeType: String
 }
 object InsertCommandArgument2 {
   

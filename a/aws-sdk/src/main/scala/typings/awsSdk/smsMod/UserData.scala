@@ -2,16 +2,14 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserData extends StObject {
   
   /**
     * Amazon S3 location of the user-data script.
     */
-  var s3Location: js.UndefOr[S3Location] = js.native
+  var s3Location: js.UndefOr[S3Location] = js.undefined
 }
 object UserData {
   

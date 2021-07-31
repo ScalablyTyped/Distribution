@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuotaSettings extends StObject {
   
   /**
     * The maximum number of requests that can be made in a given time period.
     */
-  var limit: js.UndefOr[Integer] = js.native
+  var limit: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of requests subtracted from the given limit in the initial time period.
     */
-  var offset: js.UndefOr[Integer] = js.native
+  var offset: js.UndefOr[Integer] = js.undefined
   
   /**
     * The time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
     */
-  var period: js.UndefOr[QuotaPeriodType] = js.native
+  var period: js.UndefOr[QuotaPeriodType] = js.undefined
 }
 object QuotaSettings {
   

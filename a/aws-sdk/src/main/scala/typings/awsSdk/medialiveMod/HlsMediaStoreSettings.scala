@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsMediaStoreSettings extends StObject {
   
   /**
     * Number of seconds to wait before retrying connection to the CDN if the connection is lost.
     */
-  var ConnectionRetryInterval: js.UndefOr[integerMin0] = js.native
+  var ConnectionRetryInterval: js.UndefOr[integerMin0] = js.undefined
   
   /**
     * Size in seconds of file cache for streaming outputs.
     */
-  var FilecacheDuration: js.UndefOr[integerMin0Max600] = js.native
+  var FilecacheDuration: js.UndefOr[integerMin0Max600] = js.undefined
   
   /**
     * When set to temporal, output files are stored in non-persistent memory for faster reading and writing.
     */
-  var MediaStoreStorageClass: js.UndefOr[HlsMediaStoreStorageClass] = js.native
+  var MediaStoreStorageClass: js.UndefOr[HlsMediaStoreStorageClass] = js.undefined
   
   /**
     * Number of retry attempts that will be made before the Live Event is put into an error state.
     */
-  var NumRetries: js.UndefOr[integerMin0] = js.native
+  var NumRetries: js.UndefOr[integerMin0] = js.undefined
   
   /**
     * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
     */
-  var RestartDelay: js.UndefOr[integerMin0Max15] = js.native
+  var RestartDelay: js.UndefOr[integerMin0Max15] = js.undefined
 }
 object HlsMediaStoreSettings {
   

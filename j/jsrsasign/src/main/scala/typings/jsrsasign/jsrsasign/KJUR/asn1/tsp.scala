@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,10 +23,9 @@ object tsp {
     * @param params associative array of parameters
     * @description
     */
-  @js.native
   trait AbstractTSAAdapter extends StObject {
     
-    def getTSTHex(msgHex: String, hashAlg: String): Unit = js.native
+    def getTSTHex(msgHex: String, hashAlg: String): Unit
   }
   object AbstractTSAAdapter {
     
@@ -60,8 +58,9 @@ object tsp {
     *                                 millis: 500,
     *                                 micros: 500});
     */
-  @js.native
-  trait Accuracy extends ASN1Object
+  trait Accuracy
+    extends StObject
+       with ASN1Object
   object Accuracy {
     
     @scala.inline
@@ -96,10 +95,9 @@ object tsp {
     *
     * Those values are provided by initial parameters.
     */
-  @js.native
   trait FixedTSAAdapter extends StObject {
     
-    def getTSTHex(msgHex: String, hashAlg: String): String = js.native
+    def getTSTHex(msgHex: String, hashAlg: String): String
   }
   object FixedTSAAdapter {
     
@@ -130,8 +128,9 @@ object tsp {
     * o = new KJUR.asn1.tsp.MessageImprint({hashAlg: 'sha1',
     *                                       hashValue: '1f3dea...'});
     */
-  @js.native
-  trait MessageImprint extends ASN1Object
+  trait MessageImprint
+    extends StObject
+       with ASN1Object
   object MessageImprint {
     
     @scala.inline
@@ -214,10 +213,9 @@ object tsp {
     * @param params associative array of parameters
     * @description
     */
-  @js.native
   trait SimpleTSAAdapter extends StObject {
     
-    def getTSTHex(msgHex: String, hashAlg: String): String = js.native
+    def getTSTHex(msgHex: String, hashAlg: String): String
   }
   object SimpleTSAAdapter {
     
@@ -263,8 +261,9 @@ object tsp {
     *     tsa:       {str: '/C=US/O=TSA1'}   // OPTION
     * });
     */
-  @js.native
-  trait TSTInfo extends ASN1Object
+  trait TSTInfo
+    extends StObject
+       with ASN1Object
   object TSTInfo {
     
     @scala.inline
@@ -298,10 +297,11 @@ object tsp {
     *    extensions       [0] IMPLICIT Extensions   OPTIONAL  }
     * ```
     */
-  @js.native
-  trait TimeStampReq extends ASN1Object {
+  trait TimeStampReq
+    extends StObject
+       with ASN1Object {
     
-    def setMessageImprint(params: MessageImprint): Unit = js.native
+    def setMessageImprint(params: MessageImprint): Unit
   }
   object TimeStampReq {
     

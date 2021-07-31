@@ -3,36 +3,35 @@ package typings.iobroker.mod.global.ioBroker
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<iobroker.iobroker.<global>.ioBroker.State, 'val'>> & std.Pick<iobroker.iobroker.<global>.ioBroker.State, 'val'> */
-@js.native
 trait SettableState extends StObject {
   
-  var ack: js.UndefOr[Boolean] = js.native
+  var ack: js.UndefOr[Boolean] = js.undefined
   
-  var c: js.UndefOr[String] = js.native
+  var c: js.UndefOr[String] = js.undefined
   
-  var expire: js.UndefOr[Double] = js.native
+  var expire: js.UndefOr[Double] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var lc: js.UndefOr[Double] = js.native
+  var lc: js.UndefOr[Double] = js.undefined
   
-  var q: js.UndefOr[StateQuality] = js.native
+  var q: js.UndefOr[StateQuality] = js.undefined
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
-  var `val`: String | Double | Boolean | js.Array[_] | (Record[String, _]) | Null = js.native
+  var `val`: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any]) | Null
 }
 object SettableState {
   
   @scala.inline
   def apply(): SettableState = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("val")(null)
     __obj.asInstanceOf[SettableState]
   }
   
@@ -88,7 +87,7 @@ object SettableState {
     def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def setVal(value: String | Double | Boolean | js.Array[_] | (Record[String, _])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValNull: Self = StObject.set(x, "val", null)

@@ -4,19 +4,17 @@ import typings.pgPromise.pgSubsetMod.IClient
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILostContext[C /* <: IClient */] extends StObject {
   
-  var client: C = js.native
+  var client: C
   
-  var cn: String = js.native
+  var cn: String
   
-  var dc: js.Any = js.native
+  var dc: js.Any
   
-  var start: Date = js.native
+  var start: Date
 }
 object ILostContext {
   
@@ -27,7 +25,7 @@ object ILostContext {
   }
   
   @scala.inline
-  implicit class ILostContextMutableBuilder[Self <: ILostContext[_], C /* <: IClient */] (val x: Self with ILostContext[C]) extends AnyVal {
+  implicit class ILostContextMutableBuilder[Self <: ILostContext[?], C /* <: IClient */] (val x: Self & ILostContext[C]) extends AnyVal {
     
     @scala.inline
     def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])

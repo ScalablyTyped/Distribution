@@ -2,22 +2,22 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Declarative event action that redirects a network request.  */
-@js.native
-trait RedirectRequest extends OnRequestActions {
+trait RedirectRequest
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectRequest = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectRequest
 }
 object RedirectRequest {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.RedirectRequest): RedirectRequest = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): RedirectRequest = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectRequest")
     __obj.asInstanceOf[RedirectRequest]
   }
   

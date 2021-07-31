@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluationMetrics extends StObject {
   
   /** Populated for ARIMA models. */
-  var arimaForecastingMetrics: js.UndefOr[ArimaForecastingMetrics] = js.native
+  var arimaForecastingMetrics: js.UndefOr[ArimaForecastingMetrics] = js.undefined
   
   /** Populated for binary classification/classifier models. */
-  var binaryClassificationMetrics: js.UndefOr[BinaryClassificationMetrics] = js.native
+  var binaryClassificationMetrics: js.UndefOr[BinaryClassificationMetrics] = js.undefined
   
   /** Populated for clustering models. */
-  var clusteringMetrics: js.UndefOr[ClusteringMetrics] = js.native
+  var clusteringMetrics: js.UndefOr[ClusteringMetrics] = js.undefined
   
   /** Populated for multi-class classification/classifier models. */
-  var multiClassClassificationMetrics: js.UndefOr[MultiClassClassificationMetrics] = js.native
+  var multiClassClassificationMetrics: js.UndefOr[MultiClassClassificationMetrics] = js.undefined
   
   /** Populated for implicit feedback type matrix factorization models. */
-  var rankingMetrics: js.UndefOr[RankingMetrics] = js.native
+  var rankingMetrics: js.UndefOr[RankingMetrics] = js.undefined
   
   /** Populated for regression models and explicit feedback type matrix factorization models. */
-  var regressionMetrics: js.UndefOr[RegressionMetrics] = js.native
+  var regressionMetrics: js.UndefOr[RegressionMetrics] = js.undefined
 }
 object EvaluationMetrics {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountTabSettings extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait AccountTabSettings extends StObject {
     *
     * **Note**: Only Admin users can change this setting.
     */
-  var allowTabOrder: js.UndefOr[String] = js.native
+  var allowTabOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowTabOrder` property is editable.
@@ -21,12 +19,12 @@ trait AccountTabSettings extends StObject {
     */
   var allowTabOrderMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, approve and decline tabs are enabled.
     */
-  var approveDeclineTabsEnabled: js.UndefOr[String] = js.native
+  var approveDeclineTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `approveDeclineTabs` property is editable.
@@ -34,12 +32,12 @@ trait AccountTabSettings extends StObject {
     */
   var approveDeclineTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, [calculated fields](https://support.docusign.com/en/guides/ndse-user-guide-calculated-fields) are enabled for tabs.
     */
-  var calculatedFieldsEnabled: js.UndefOr[String] = js.native
+  var calculatedFieldsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `calculatedFields` property is editable.
@@ -47,24 +45,24 @@ trait AccountTabSettings extends StObject {
     */
   var calculatedFieldsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Metadata that indicates whether the `checkBoxTabs` property is editable.
     */
   var checkBoxTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, checkbox tabs are enabled.
     */
-  var checkboxTabsEnabled: js.UndefOr[String] = js.native
+  var checkboxTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, regular expressions are enabled for tabs that contain data fields.
     */
-  var dataFieldRegexEnabled: js.UndefOr[String] = js.native
+  var dataFieldRegexEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `dataFieldRegex` property is editable.
@@ -72,12 +70,12 @@ trait AccountTabSettings extends StObject {
     */
   var dataFieldRegexMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, setting character limits for input fields is enabled.
     */
-  var dataFieldSizeEnabled: js.UndefOr[String] = js.native
+  var dataFieldSizeEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `dataFieldSize` property is editable.
@@ -85,30 +83,30 @@ trait AccountTabSettings extends StObject {
     */
   var dataFieldSizeMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
-  var drawTabsEnabled: js.UndefOr[String] = js.native
+  var drawTabsEnabled: js.UndefOr[String] = js.undefined
   
   var drawTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var firstLastEmailTabsEnabled: js.UndefOr[String] = js.native
+  var firstLastEmailTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var firstLastEmailTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, list tabs are enabled.
     */
-  var listTabsEnabled: js.UndefOr[String] = js.native
+  var listTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `listTabs` property is editable.
@@ -116,12 +114,12 @@ trait AccountTabSettings extends StObject {
     */
   var listTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, note tabs are enabled.
     */
-  var noteTabsEnabled: js.UndefOr[String] = js.native
+  var noteTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `noteTabs` property is editable.
@@ -129,12 +127,12 @@ trait AccountTabSettings extends StObject {
     */
   var noteTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, radio button tabs are enabled.
     */
-  var radioTabsEnabled: js.UndefOr[String] = js.native
+  var radioTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `radioTabs` property is editable.
@@ -142,12 +140,12 @@ trait AccountTabSettings extends StObject {
     */
   var radioTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, saving custom tabs is enabled.
     */
-  var savingCustomTabsEnabled: js.UndefOr[String] = js.native
+  var savingCustomTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `savingCustomTabs` property is editable.
@@ -155,24 +153,24 @@ trait AccountTabSettings extends StObject {
     */
   var savingCustomTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var senderToChangeTabAssignmentsEnabled: js.UndefOr[String] = js.native
+  var senderToChangeTabAssignmentsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var senderToChangeTabAssignmentsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, shared custom tabs are enabled.
     */
-  var sharedCustomTabsEnabled: js.UndefOr[String] = js.native
+  var sharedCustomTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `sharedCustomTabs` property is editable.
@@ -180,7 +178,7 @@ trait AccountTabSettings extends StObject {
     */
   var sharedCustomTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, [data
@@ -189,7 +187,7 @@ trait AccountTabSettings extends StObject {
     * **Note**: Only Admin users can change this setting.
     *
     */
-  var tabDataLabelEnabled: js.UndefOr[String] = js.native
+  var tabDataLabelEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabDataLabel` property is editable.
@@ -197,19 +195,19 @@ trait AccountTabSettings extends StObject {
     */
   var tabDataLabelMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var tabLocationEnabled: js.UndefOr[String] = js.native
+  var tabLocationEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var tabLocationMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, tab locking is enabled.
@@ -217,7 +215,7 @@ trait AccountTabSettings extends StObject {
     * **Note**: Only Admin users can change this setting.
     *
     */
-  var tabLockingEnabled: js.UndefOr[String] = js.native
+  var tabLockingEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabLocking` property is editable.
@@ -225,19 +223,19 @@ trait AccountTabSettings extends StObject {
     */
   var tabLockingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var tabScaleEnabled: js.UndefOr[String] = js.native
+  var tabScaleEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
   var tabScaleMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When set to **true**, text formatting (such as font type, font size,
@@ -247,7 +245,7 @@ trait AccountTabSettings extends StObject {
     * **Note**: Only Admin users can change this setting.
     *
     */
-  var tabTextFormattingEnabled: js.UndefOr[String] = js.native
+  var tabTextFormattingEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `tabTextFormatting` property is editable.
@@ -255,12 +253,12 @@ trait AccountTabSettings extends StObject {
     */
   var tabTextFormattingMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When **true**, text tabs are enabled.
     */
-  var textTabsEnabled: js.UndefOr[String] = js.native
+  var textTabsEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `textTabs` property is editable.
@@ -268,7 +266,7 @@ trait AccountTabSettings extends StObject {
     */
   var textTabsMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
 }
 object AccountTabSettings {
   

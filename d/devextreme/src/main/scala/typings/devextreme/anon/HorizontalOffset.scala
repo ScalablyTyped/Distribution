@@ -6,29 +6,27 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.mod.DevExpress.viz.dxSankeyNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HorizontalOffset extends StObject {
   
-  var border: js.UndefOr[ColorVisible] = js.native
+  var border: js.UndefOr[ColorVisible] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ dxSankeyNode, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ dxSankeyNode, String]] = js.undefined
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var horizontalOffset: js.UndefOr[Double] = js.native
+  var horizontalOffset: js.UndefOr[Double] = js.undefined
   
-  var overlappingBehavior: js.UndefOr[ellipsis | hide | none] = js.native
+  var overlappingBehavior: js.UndefOr[ellipsis | hide | none] = js.undefined
   
-  var shadow: js.UndefOr[Blur] = js.native
+  var shadow: js.UndefOr[Blur] = js.undefined
   
-  var useNodeColors: js.UndefOr[Boolean] = js.native
+  var useNodeColors: js.UndefOr[Boolean] = js.undefined
   
-  var verticalOffset: js.UndefOr[Double] = js.native
+  var verticalOffset: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object HorizontalOffset {
   

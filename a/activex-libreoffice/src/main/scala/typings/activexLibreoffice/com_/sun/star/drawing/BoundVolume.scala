@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a three-dimensional boundary volume with two positions. */
-@js.native
 trait BoundVolume extends StObject {
   
   /** this is the maximum position inside the boundary volume. */
-  var max: Position3D = js.native
+  var max: Position3D
   
   /** this is the minimum position inside the boundary volume. */
-  var min: Position3D = js.native
+  var min: Position3D
 }
 object BoundVolume {
   

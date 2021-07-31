@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCloudFrontOriginAccessIdentityRequest extends StObject {
   
   /**
     * The origin access identity's ID.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The value of the ETag header you received from a previous GET or PUT request. For example: E2QWRUHAPOMQZL.
     */
-  var IfMatch: js.UndefOr[String] = js.native
+  var IfMatch: js.UndefOr[String] = js.undefined
 }
 object DeleteCloudFrontOriginAccessIdentityRequest {
   

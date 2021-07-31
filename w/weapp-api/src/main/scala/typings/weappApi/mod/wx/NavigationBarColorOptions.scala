@@ -2,20 +2,20 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationBarColorOptions extends CommonCallbackOptions {
+trait NavigationBarColorOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  动画效果
-  var animation: NavigationBarColorAnimationOptions = js.native
+  var animation: NavigationBarColorAnimationOptions
   
   // 背景颜色值，有效值为十六进制颜色
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   // 前景颜色值，包括按钮、标题、状态栏的颜色，仅支持 #ffffff 和 #000000
-  var frontColor: String = js.native
+  var frontColor: String
 }
 object NavigationBarColorOptions {
   

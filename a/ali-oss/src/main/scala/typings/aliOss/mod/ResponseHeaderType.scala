@@ -2,17 +2,15 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseHeaderType extends StObject {
   
-  var `cache-control`: js.UndefOr[String] = js.native
+  var `cache-control`: js.UndefOr[String] = js.undefined
   
-  var `content-disposition`: js.UndefOr[String] = js.native
+  var `content-disposition`: js.UndefOr[String] = js.undefined
   
-  var `content-type`: js.UndefOr[String] = js.native
+  var `content-type`: js.UndefOr[String] = js.undefined
 }
 object ResponseHeaderType {
   

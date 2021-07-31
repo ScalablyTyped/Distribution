@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeParametersResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * Parameters returned by the request.
     */
-  var Parameters: js.UndefOr[ParameterMetadataList] = js.native
+  var Parameters: js.UndefOr[ParameterMetadataList] = js.undefined
 }
 object DescribeParametersResult {
   

@@ -2,71 +2,69 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeModification extends StObject {
   
   /**
     * The modification completion or failure time.
     */
-  var EndTime: js.UndefOr[DateTime] = js.native
+  var EndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The current modification state. The modification state is null for unmodified volumes.
     */
-  var ModificationState: js.UndefOr[VolumeModificationState] = js.native
+  var ModificationState: js.UndefOr[VolumeModificationState] = js.undefined
   
   /**
     * The original IOPS rate of the volume.
     */
-  var OriginalIops: js.UndefOr[Integer] = js.native
+  var OriginalIops: js.UndefOr[Integer] = js.undefined
   
   /**
     * The original size of the volume, in GiB.
     */
-  var OriginalSize: js.UndefOr[Integer] = js.native
+  var OriginalSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The original EBS volume type of the volume.
     */
-  var OriginalVolumeType: js.UndefOr[VolumeType] = js.native
+  var OriginalVolumeType: js.UndefOr[VolumeType] = js.undefined
   
   /**
     * The modification progress, from 0 to 100 percent complete.
     */
-  var Progress: js.UndefOr[Long] = js.native
+  var Progress: js.UndefOr[Long] = js.undefined
   
   /**
     * The modification start time.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A status message about the modification progress or failure.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The target IOPS rate of the volume.
     */
-  var TargetIops: js.UndefOr[Integer] = js.native
+  var TargetIops: js.UndefOr[Integer] = js.undefined
   
   /**
     * The target size of the volume, in GiB.
     */
-  var TargetSize: js.UndefOr[Integer] = js.native
+  var TargetSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The target EBS volume type of the volume.
     */
-  var TargetVolumeType: js.UndefOr[VolumeType] = js.native
+  var TargetVolumeType: js.UndefOr[VolumeType] = js.undefined
   
   /**
     * The ID of the volume.
     */
-  var VolumeId: js.UndefOr[String] = js.native
+  var VolumeId: js.UndefOr[String] = js.undefined
 }
 object VolumeModification {
   

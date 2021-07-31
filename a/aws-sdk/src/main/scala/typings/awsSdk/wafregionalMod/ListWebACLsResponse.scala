@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWebACLsResponse extends StObject {
   
   /**
     * If you have more WebACL objects than the number that you specified for Limit in the request, the response includes a NextMarker value. To list more WebACL objects, submit another ListWebACLs request, and specify the NextMarker value from the response in the NextMarker value in the next request.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.undefined
   
   /**
     * An array of WebACLSummary objects.
     */
-  var WebACLs: js.UndefOr[WebACLSummaries] = js.native
+  var WebACLs: js.UndefOr[WebACLSummaries] = js.undefined
 }
 object ListWebACLsResponse {
   

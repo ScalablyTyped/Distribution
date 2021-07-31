@@ -2,20 +2,18 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to delete developer metadata.
   */
-@js.native
 trait SchemaDeleteDeveloperMetadataRequest extends StObject {
   
   /**
     * The data filter describing the criteria used to select which developer
     * metadata entry to delete.
     */
-  var dataFilter: js.UndefOr[SchemaDataFilter] = js.native
+  var dataFilter: js.UndefOr[SchemaDataFilter] = js.undefined
 }
 object SchemaDeleteDeveloperMetadataRequest {
   

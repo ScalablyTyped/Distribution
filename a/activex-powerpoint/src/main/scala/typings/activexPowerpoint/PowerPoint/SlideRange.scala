@@ -9,7 +9,6 @@ import typings.activexOffice.Office.ThemeColor
 import typings.activexOffice.Office.ThemeColorScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -54,9 +53,9 @@ trait SlideRange extends StObject {
     * @param number [ScaleHeight=0]
     */
   def Export(FileName: String, FilterName: String): Unit = js.native
-  def Export(FileName: String, FilterName: String, ScaleWidth: js.UndefOr[scala.Nothing], ScaleHeight: Double): Unit = js.native
   def Export(FileName: String, FilterName: String, ScaleWidth: Double): Unit = js.native
   def Export(FileName: String, FilterName: String, ScaleWidth: Double, ScaleHeight: Double): Unit = js.native
+  def Export(FileName: String, FilterName: String, ScaleWidth: Unit, ScaleHeight: Double): Unit = js.native
   
   var FollowMasterBackground: MsoTriState = js.native
   
@@ -92,9 +91,9 @@ trait SlideRange extends StObject {
     * @param boolean [UseSlideOrder=false]
     */
   def PublishSlides(SlideLibraryUrl: String): Unit = js.native
-  def PublishSlides(SlideLibraryUrl: String, Overwrite: js.UndefOr[scala.Nothing], UseSlideOrder: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean, UseSlideOrder: Boolean): Unit = js.native
+  def PublishSlides(SlideLibraryUrl: String, Overwrite: Unit, UseSlideOrder: Boolean): Unit = js.native
   
   def Scripts(Index: js.Any): Script = js.native
   @JSName("Scripts")

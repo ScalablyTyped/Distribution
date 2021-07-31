@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait TextShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     */
   var textShadow: js.UndefOr[
     ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double, 
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object TextShadowProps {
   
@@ -31,12 +29,12 @@ object TextShadowProps {
   }
   
   @scala.inline
-  implicit class TextShadowPropsMutableBuilder[Self <: TextShadowProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with TextShadowProps[ThemeType]) extends AnyVal {
+  implicit class TextShadowPropsMutableBuilder[Self <: TextShadowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & TextShadowProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setTextShadow(
       value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ _) | Double, 
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double, 
           ThemeType
         ]
     ): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
@@ -48,6 +46,8 @@ object TextShadowProps {
     def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
     @scala.inline
-    def setTextShadowVarargs(value: ((js.Any | Double) | Null)*): Self = StObject.set(x, "textShadow", js.Array(value :_*))
+    def setTextShadowVarargs(
+      value: (((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double) | Null)*
+    ): Self = StObject.set(x, "textShadow", js.Array(value :_*))
   }
 }

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A classified interaction request. */
-@js.native
-trait ClassifiedInteractionRequest extends Exception {
+trait ClassifiedInteractionRequest
+  extends StObject
+     with Exception {
   
   /** The classification of the request. */
-  var Classification: InteractionClassification = js.native
+  var Classification: InteractionClassification
 }
 object ClassifiedInteractionRequest {
   

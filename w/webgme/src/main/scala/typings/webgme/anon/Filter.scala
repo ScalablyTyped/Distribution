@@ -3,13 +3,11 @@ package typings.webgme.anon
 import typings.webgme.GmeCommon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var filter: js.Array[Path] = js.native
+  var filter: js.Array[Path]
 }
 object Filter {
   
